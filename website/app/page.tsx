@@ -18,6 +18,8 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
   const [loading, setLoading] = useState(true)
   const [showingSearch, setShowingSearch] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [itemsPerPage, setItemsPerPage] = useState(50)
 
   useEffect(() => {
     // Load soldier data from all units
@@ -52,6 +54,7 @@ export default function Home() {
     }
 
     setShowingSearch(true)
+    setCurrentPage(1) // Reset to first page when search changes
     const term = searchTerm.toLowerCase()
     const filtered = allSoldiers.filter(soldier => {
       const fullName = `${soldier.last_name} ${soldier.middle_name} ${soldier.first_name}`.toLowerCase()
@@ -60,6 +63,22 @@ export default function Home() {
     })
     setFilteredSoldiers(filtered)
   }, [searchTerm, allSoldiers])
+
+  // Pagination calculations
+  const totalPages = Math.ceil(filteredSoldiers.length / itemsPerPage)
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
+  const currentSoldiers = filteredSoldiers.slice(startIndex, endIndex)
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleItemsPerPageChange = (newItemsPerPage: number) => {
+    setItemsPerPage(newItemsPerPage)
+    setCurrentPage(1) // Reset to first page when changing items per page
+  }
 
   const formatSoldierName = (soldier: Soldier) => {
     const parts = [soldier.last_name]
@@ -108,20 +127,87 @@ export default function Home() {
               Nema rezultata za "{searchTerm}"
             </div>
           ) : (
-            <div className="soldiers-grid">
-              {filteredSoldiers.map((soldier, index) => (
-                <div key={index} className="soldier-card">
-                  <div className="soldier-name">
-                    {formatSoldierName(soldier)}
-                  </div>
-                  {soldier.additional_info && (
-                    <div className="soldier-info">
-                      {soldier.additional_info}
-                    </div>
-                  )}
+            <>
+              {/* Per-page selector */}
+              <div className="pagination-controls" style={{ marginTop: '1.5rem', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                  <span style={{ color: '#6B1A1A', fontWeight: 'bold' }}>Prikaži po stranici:</span>
+                  {[50, 100, 200].map(count => (
+                    <button
+                      key={count}
+                      onClick={() => handleItemsPerPageChange(count)}
+                      className={itemsPerPage === count ? 'page-button active' : 'page-button'}
+                    >
+                      {count}
+                    </button>
+                  ))}
+                  <span style={{ marginLeft: 'auto', color: '#6B1A1A' }}>
+                    Stranica {currentPage} od {totalPages}
+                  </span>
                 </div>
-              ))}
-            </div>
+              </div>
+
+              <div className="soldiers-grid">
+                {currentSoldiers.map((soldier, index) => (
+                  <div key={startIndex + index} className="soldier-card">
+                    <div className="soldier-name">
+                      {formatSoldierName(soldier)}
+                    </div>
+                    {soldier.additional_info && (
+                      <div className="soldier-info">
+                        {soldier.additional_info}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="pagination" style={{ marginTop: '2rem' }}>
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="page-button"
+                  >
+                    ← Prethodna
+                  </button>
+
+                  {Array.from({ length: Math.min(totalPages, 10) }, (_, i) => {
+                    // Show first few, last few, and pages around current
+                    const pageNum = i + 1
+                    const showPage =
+                      pageNum <= 3 ||
+                      pageNum > totalPages - 3 ||
+                      (pageNum >= currentPage - 1 && pageNum <= currentPage + 1)
+
+                    if (!showPage && (pageNum === 4 || pageNum === totalPages - 3)) {
+                      return <span key={pageNum} style={{ padding: '0 0.5rem' }}>...</span>
+                    }
+
+                    if (!showPage) return null
+
+                    return (
+                      <button
+                        key={pageNum}
+                        onClick={() => handlePageChange(pageNum)}
+                        className={currentPage === pageNum ? 'page-button active' : 'page-button'}
+                      >
+                        {pageNum}
+                      </button>
+                    )
+                  })}
+
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="page-button"
+                  >
+                    Sledeća →
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </>
       ) : (
