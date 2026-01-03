@@ -18,7 +18,7 @@ export default function RootLayout({
         <header className="header">
           <div className="container">
             <h1>Naši Heroji</h1>
-            <p>1st Lika Proletarian Brigade "Marko Orešković"</p>
+            <p>Partizanska memorijalna baza podataka</p>
           </div>
         </header>
         <Navigation />
@@ -27,7 +27,7 @@ export default function RootLayout({
         </main>
         <footer className="footer">
           <div className="container">
-            <p>In memory of 9,368 heroes who fought for freedom</p>
+            <p>U spomen na sve heroje koji su se borili za slobodu</p>
           </div>
         </footer>
       </body>

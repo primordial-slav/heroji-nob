@@ -1,30 +1,30 @@
 export default function About() {
   return (
     <div className="page-content">
-      <h1 className="page-title">About This Memorial</h1>
+      <h1 className="page-title">O ovom memorijalu</h1>
 
       <div className="content-box">
-        <h2>The 1st Lika Proletarian Brigade "Marko Orešković"</h2>
+        <h2>Partizanske jedinice NOV-a</h2>
         <p>
-          This memorial website honors the brave soldiers who served in the 1st Lika
-          Proletarian Brigade during World War II. The brigade was formed in June 1942
-          and played a crucial role in the Yugoslav Partisan resistance movement.
+          Ovaj memorijalni sajt čuva uspomenu na hrabre borce koji su služili u
+          partizanskim jedinicama Narodnooslobodilačke vojske Jugoslavije tokom
+          Drugog svetskog rata.
         </p>
 
-        <h3>Our Mission</h3>
+        <h3>Naša misija</h3>
         <p>
-          To preserve the memory of over 9,000 heroes who fought for freedom and to
-          ensure their stories are never forgotten.
+          Da sačuvamo sećanje na hiljade heroja koji su se borili za slobodu i
+          da osiguramo da njihove priče nikada ne budu zaboravljene.
         </p>
 
-        <h3>The Database</h3>
+        <h3>Baza podataka</h3>
         <p>
-          This database contains detailed records of 9,368 soldiers who served in the
-          brigade, including their names, units, locations, and service information.
+          Ova baza podataka sadrži detaljne zapise o borcima različitih jedinica,
+          uključujući njihova imena, jedinice, lokacije i informacije o službi.
         </p>
 
         <div className="placeholder-notice">
-          <p><em>More content coming soon...</em></p>
+          <p><em>Više sadržaja uskoro...</em></p>
         </div>
       </div>
     </div>

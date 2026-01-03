@@ -15,13 +15,13 @@ export default function Navigation() {
       <div className="container">
         <div className="nav-links">
           <Link href="/" className={isActive('/')}>
-            Home
+            Početna
           </Link>
           <Link href="/about" className={isActive('/about')}>
-            About
+            O nama
           </Link>
           <Link href="/contact" className={isActive('/contact')}>
-            Contact
+            Kontakt
           </Link>
         </div>
       </div>
