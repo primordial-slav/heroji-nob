@@ -88,7 +88,7 @@ export default function Home() {
 
         <div className="stats">
           <div className="stat-item">
-            <div className="stat-label">Ukupno heroja</div>
+            <div className="stat-label">Ukupno boraca</div>
             <div className="stat-value">{totalSoldiers.toLocaleString()}</div>
           </div>
           {showingSearch && (

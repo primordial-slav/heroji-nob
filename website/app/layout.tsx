@@ -3,8 +3,8 @@ import './globals.css'
 import Navigation from './components/Navigation'
 
 export const metadata: Metadata = {
-  title: 'Naši Heroji - 1st Lika Proletarian Brigade',
-  description: 'Memorial website honoring the soldiers of the 1st Lika Proletarian Brigade',
+  title: 'Naši Borci - Partizanska Baza Podataka',
+  description: 'Baza podataka boraca partizanskog pokreta',
 }
 
 export default function RootLayout({
@@ -16,9 +16,10 @@ export default function RootLayout({
     <html lang="sr">
       <body>
         <header className="header">
-          <div className="container">
-            <h1>Naši Heroji</h1>
-            <p>Partizanska memorijalna baza podataka</p>
+          <div className="header-overlay"></div>
+          <div className="container header-content">
+            <h1>Naši Borci</h1>
+            <p>Baza podataka boraca partizanskog pokreta</p>
           </div>
         </header>
         <Navigation />
