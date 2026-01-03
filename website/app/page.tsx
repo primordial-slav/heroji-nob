@@ -20,17 +20,27 @@ export default function Home() {
   const [showingSearch, setShowingSearch] = useState(false)
 
   useEffect(() => {
-    // Load all soldier data
-    fetch('/soldiers.json')
-      .then(res => res.json())
-      .then(data => {
-        setAllSoldiers(data)
+    // Load soldier data from all units
+    const loadAllSoldiers = async () => {
+      try {
+        const allSoldiersData: Soldier[] = []
+
+        // Fetch data from each unit
+        for (const unit of units) {
+          const response = await fetch(unit.dataFile)
+          const data = await response.json()
+          allSoldiersData.push(...data)
+        }
+
+        setAllSoldiers(allSoldiersData)
         setLoading(false)
-      })
-      .catch(err => {
+      } catch (err) {
         console.error('Error loading soldiers:', err)
         setLoading(false)
-      })
+      }
+    }
+
+    loadAllSoldiers()
   }, [])
 
   useEffect(() => {
