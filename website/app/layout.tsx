@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Navigation from './components/Navigation'
 
 export const metadata: Metadata = {
   title: 'Naši Heroji - 1st Lika Proletarian Brigade',
@@ -20,6 +21,7 @@ export default function RootLayout({
             <p>1st Lika Proletarian Brigade "Marko Orešković"</p>
           </div>
         </header>
+        <Navigation />
         <main className="container">
           {children}
         </main>
