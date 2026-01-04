@@ -25,10 +25,15 @@ def is_new_entry(line):
     if len(line) <= 2 and line.isupper():
         return False
 
-    # Check if it starts with all-caps word (last name)
-    # Should be all caps, at least 2 chars, followed by space and a capitalized word (first name)
-    pattern = r'^[A-ZČĆŽŠĐ]{2,}(\s+[A-ZČĆŽŠĐ]{2,})*\s+[A-ZČĆŽŠĐ][a-zčćžšđ]'
-    return bool(re.match(pattern, line))
+    # Pattern 1: All caps last name(s), optional middle initial(s) with periods, capitalized first name
+    # Examples: "KOVAČEVIĆ Marko", "APOSTOLOVIĆ M. Slobodan", "KOVAČEVIĆ MILIĆ Marko"
+    pattern1 = r'^[A-ZČĆŽŠĐ]{2,}(\s+[A-ZČĆŽŠĐ]{2,})*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
+
+    # Pattern 2: ALL CAPS names (for names that are entirely capitalized)
+    # Examples: "KOVAČEVIĆ JOCO", "MARKOVIĆ PETAR"
+    pattern2 = r'^[A-ZČĆŽŠĐ]{2,}\s+[A-ZČĆŽŠĐ]{2,}(\s*,|\s+[A-ZČĆŽŠĐ])'
+
+    return bool(re.match(pattern1, line)) or bool(re.match(pattern2, line))
 
 
 def parse_soldier_entry(entry_text):

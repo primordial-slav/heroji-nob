@@ -22,11 +22,14 @@ def extract_text_from_pdfs(pdf_paths):
 
 def is_new_entry(line):
     """Check if a line starts a new soldier entry"""
-    # Pattern 1: ALL CAPS last name(s) followed by a capitalized first name (e.g., "ABRAMOVIĆ Miloša SLAVKA")
-    pattern1 = r'^[A-ZČĆŽŠĐ]{2,}(\s+[A-ZČĆŽŠĐ]{2,})*\s+[A-ZČĆŽŠĐ][a-zčćžšđ]'
-    # Pattern 2: ALL CAPS last name followed by ALL CAPS first name (e.g., "ABRAMOV JOCO")
-    # Must be followed by comma or have at least one more word after
+    # Pattern 1: All caps last name(s), optional middle initial(s) with periods, capitalized first name
+    # Examples: "KOVAČEVIĆ Marko", "APOSTOLOVIĆ M. Slobodan", "KOVAČEVIĆ MILIĆ Marko"
+    pattern1 = r'^[A-ZČĆŽŠĐ]{2,}(\s+[A-ZČĆŽŠĐ]{2,})*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
+
+    # Pattern 2: ALL CAPS names (for names that are entirely capitalized)
+    # Examples: "KOVAČEVIĆ JOCO", "MARKOVIĆ PETAR"
     pattern2 = r'^[A-ZČĆŽŠĐ]{2,}\s+[A-ZČĆŽŠĐ]{2,}(\s*,|\s+[A-ZČĆŽŠĐ])'
+
     return bool(re.match(pattern1, line)) or bool(re.match(pattern2, line))
 
 def parse_soldier_entry(entry_text):
