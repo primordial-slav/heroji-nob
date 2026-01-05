@@ -23,6 +23,8 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
   const [loading, setLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage, setItemsPerPage] = useState(50)
+  const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
+  const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
     // Load soldier data for this unit
@@ -77,6 +79,16 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
     if (soldier.middle_name) parts.push(soldier.middle_name)
     if (soldier.first_name) parts.push(soldier.first_name)
     return parts.join(' ')
+  }
+
+  const handleSoldierClick = (soldier: Soldier) => {
+    setSelectedSoldier(soldier)
+    setShowModal(true)
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+    setSelectedSoldier(null)
   }
 
   if (loading) {
@@ -153,7 +165,12 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
 
           <div className="soldiers-grid">
             {currentSoldiers.map((soldier, index) => (
-              <div key={startIndex + index} className="soldier-card">
+              <div
+                key={startIndex + index}
+                className="soldier-card"
+                onClick={() => handleSoldierClick(soldier)}
+                style={{ cursor: 'pointer' }}
+              >
                 <div className="soldier-name">
                   {formatSoldierName(soldier)}
                 </div>
@@ -212,6 +229,46 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
             </div>
           )}
         </>
+      )}
+
+      {/* Soldier Detail Modal */}
+      {showModal && selectedSoldier && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>×</button>
+            <h2 className="modal-title">{formatSoldierName(selectedSoldier)}</h2>
+            <div className="modal-details">
+              <div className="modal-detail-row">
+                <span className="modal-label">Datum rođenja:</span>
+                <span className="modal-value">none</span>
+              </div>
+              <div className="modal-detail-row">
+                <span className="modal-label">Mesto rođenja:</span>
+                <span className="modal-value">none</span>
+              </div>
+              <div className="modal-detail-row">
+                <span className="modal-label">Datum smrti:</span>
+                <span className="modal-value">none</span>
+              </div>
+              <div className="modal-detail-row">
+                <span className="modal-label">Mesto smrti:</span>
+                <span className="modal-value">none</span>
+              </div>
+              <div className="modal-detail-row">
+                <span className="modal-label">Jedinica:</span>
+                <span className="modal-value">{unit.name}</span>
+              </div>
+              <div className="modal-detail-row">
+                <span className="modal-label">Dodatni komentari:</span>
+                <span className="modal-value">none</span>
+              </div>
+              <div className="modal-detail-row">
+                <span className="modal-label">Dodatni mediji:</span>
+                <span className="modal-value">none</span>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   )
