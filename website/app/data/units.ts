@@ -35,6 +35,15 @@ export const units: Unit[] = [
     image: '/images/ljubljanska-brigada.jpg',
     soldierCount: 3079,
     dataFile: '/ljubljanska-soldiers.json'
+  },
+  {
+    id: 'druga-licka-brigada',
+    name: 'Druga lička proleterska brigada',
+    nameEn: '2nd Lika Proletarian Brigade',
+    description: 'Formirana 1942. godine. Spisak poginulih, umrlih i nestalih boraca.',
+    image: '/images/druga_licka.jpg',
+    soldierCount: 1509,
+    dataFile: '/druga-licka-soldiers.json'
   }
   // Add more units here as you get more data
 ]
