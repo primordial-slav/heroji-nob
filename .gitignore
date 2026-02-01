@@ -1,7 +1,31 @@
 # Large raw data files
 01-data/raw/*.pdf
-01-data/processed/extracted_text.txt
-01-data/processed/prva_proleterska_extracted.txt
+01-data/raw/*.jpg
+01-data/raw/*.png
+01-data/raw/*.txt
+
+# Sensitive files
+01-data/openai-api.txt
+
+# Database (large binary)
+01-data/soldiers.db
+
+# Large source files
+01-data/brigades/
+
+# Generated exports (can regenerate)
+01-data/exports/
+01-data/archive/
+01-data/temp/
+
+# Old processed folder
+01-data/processed/
+
+# Logs
+logs/
+
+# Misc
+nul
 
 # Python
 __pycache__/
