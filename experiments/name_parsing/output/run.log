@@ -1,0 +1,100 @@
+============================================================
+NAME PARSING ANALYSIS
+============================================================
+Loaded 1000 samples to analyze
+Batch 1/40: 25 analyzed | Tokens: 8,249 | ETA: 1823s
+Batch 2/40: 25 analyzed | Tokens: 16,442 | ETA: 1688s
+Batch 3/40: 25 analyzed | Tokens: 24,900 | ETA: 1617s
+Batch 4/40: 25 analyzed | Tokens: 33,117 | ETA: 1533s
+Batch 5/40: 25 analyzed | Tokens: 41,689 | ETA: 1464s
+Batch 6/40: 25 analyzed | Tokens: 50,271 | ETA: 1409s
+Batch 7/40: 25 analyzed | Tokens: 58,477 | ETA: 1354s
+Batch 8/40: 25 analyzed | Tokens: 66,850 | ETA: 1314s
+Batch 9/40: 25 analyzed | Tokens: 75,017 | ETA: 1266s
+Batch 10/40: 25 analyzed | Tokens: 83,475 | ETA: 1230s
+Batch 11/40: 25 analyzed | Tokens: 91,755 | ETA: 1178s
+Batch 12/40: 25 analyzed | Tokens: 100,071 | ETA: 1128s
+Batch 13/40: 25 analyzed | Tokens: 108,157 | ETA: 1089s
+Batch 14/40: 25 analyzed | Tokens: 116,567 | ETA: 1051s
+Batch 15/40: 25 analyzed | Tokens: 124,971 | ETA: 1004s
+Batch 16/40: 25 analyzed | Tokens: 133,182 | ETA: 962s
+Batch 17/40: 25 analyzed | Tokens: 141,551 | ETA: 919s
+Batch 18/40: 25 analyzed | Tokens: 149,990 | ETA: 881s
+Batch 19/40: 25 analyzed | Tokens: 158,273 | ETA: 840s
+Batch 20/40: 25 analyzed | Tokens: 166,734 | ETA: 802s
+Batch 21/40: 25 analyzed | Tokens: 174,765 | ETA: 760s
+Batch 22/40: 25 analyzed | Tokens: 183,074 | ETA: 721s
+Batch 23/40: 25 analyzed | Tokens: 191,555 | ETA: 680s
+Batch 24/40: 25 analyzed | Tokens: 199,879 | ETA: 641s
+Batch 25/40: 25 analyzed | Tokens: 208,403 | ETA: 603s
+Batch 26/40: 25 analyzed | Tokens: 216,596 | ETA: 561s
+Batch 27/40: 25 analyzed | Tokens: 224,839 | ETA: 524s
+Batch 28/40: 25 analyzed | Tokens: 233,210 | ETA: 485s
+Batch 29/40: 25 analyzed | Tokens: 241,447 | ETA: 444s
+Batch 30/40: 25 analyzed | Tokens: 249,837 | ETA: 404s
+Batch 31/40: 25 analyzed | Tokens: 258,196 | ETA: 363s
+Batch 32/40: 25 analyzed | Tokens: 266,483 | ETA: 321s
+Batch 33/40: 25 analyzed | Tokens: 272,318 | ETA: 279s
+Batch 34/40: 25 analyzed | Tokens: 278,197 | ETA: 237s
+Batch 35/40: 25 analyzed | Tokens: 283,999 | ETA: 196s
+Batch 36/40: 25 analyzed | Tokens: 290,030 | ETA: 156s
+Batch 37/40: 25 analyzed | Tokens: 295,806 | ETA: 116s
+Batch 38/40: 25 analyzed | Tokens: 301,837 | ETA: 77s
+Batch 39/40: 25 analyzed | Tokens: 307,635 | ETA: 38s
+Batch 40/40: 25 analyzed | Tokens: 313,644 | ETA: 0s
+
+Building reference tables...
+
+Saving analysis_results.xlsx...
+Saving reference_genitive.json...
+Saving reference_genitive.csv...
+Saving reference_ethnic_patterns.json...
+Saving summary_stats.json...
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Total analyzed: 1000
+Processing time: 1522.5s
+Total tokens: 313,644
+
+Confidence breakdown:
+  high: 442 (44.2%)
+  medium: 545 (54.5%)
+  low: 13 (1.3%)
+
+Ethnicity breakdown:
+  Serbian: 531
+  Slovenian: 137
+  Croatian: 108
+  Unknown: 75
+  Montenegrin: 64
+  Italian: 52
+  Bosnian: 9
+  Albanian: 8
+  Jewish: 5
+  Hungarian: 5
+  Muslim: 5
+  Macedonian: 1
+
+Error types found:
+  missing_fathers_name: 621
+  correct: 144
+  father_merged_with_first: 138
+  genitive_not_converted: 76
+  not_a_name: 15
+  ethnic_pattern: 5
+  abbreviated: 1
+
+Women identified: 211
+Nicknames found: 544
+Correctly parsed: 144
+
+Genitive mappings collected: 24
+
+Output files:
+  experiments\name_parsing\output\analysis_results.xlsx
+  experiments\name_parsing\output\reference_genitive.json
+  experiments\name_parsing\output\reference_genitive.csv
+  experiments\name_parsing\output\reference_ethnic_patterns.json
+  experiments\name_parsing\output\summary_stats.json

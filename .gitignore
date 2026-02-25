@@ -24,6 +24,10 @@
 # Logs
 logs/
 
+# Pipeline workspaces (intermediate processing files)
+pipeline/workspaces/*
+!pipeline/workspaces/.gitignore
+
 # Misc
 nul
 

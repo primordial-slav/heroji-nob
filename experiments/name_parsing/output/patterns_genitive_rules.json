@@ -1,0 +1,100 @@
+[
+  {
+    "pattern": "Genitive ending in -a",
+    "description": "Most common: names ending in consonant add -a in genitive",
+    "examples": [
+      "Božidara -> Božidar",
+      "Milivoja -> Milivoje",
+      "Dragutina -> Dragutin",
+      "Vojislava -> Vojislav",
+      "Nastadina -> Nastadin",
+      "Ljubomira -> Ljubomir",
+      "Stojana -> Stojan",
+      "Dragića -> Dragić",
+      "Radoja -> Radoj",
+      "Milorada -> Milorad"
+    ],
+    "transformations": {
+      "ra -> ar": 21,
+      "ja -> je": 8,
+      "na -> in": 17,
+      "va -> av": 17,
+      "ra -> ir": 25,
+      "na -> an": 62,
+      "ća -> ić": 4,
+      "ja -> oj": 7,
+      "da -> ad": 9,
+      "ka -> ko": 33,
+      "đa -> đe": 3,
+      "ša -> oš": 7,
+      "la -> lo": 14,
+      "ja -> lo": 2,
+      "va -> ov": 5,
+      "ta -> to": 1,
+      "fa -> ef": 1,
+      "na -> en": 5,
+      "ra -> or": 3,
+      "ta -> at": 1,
+      "ta -> že": 1,
+      "ma -> im": 3,
+      "ša -> iš": 1,
+      "ba -> ub": 3,
+      "la -> el": 3,
+      "ma -> am": 3,
+      "na -> on": 3,
+      "va -> an": 2,
+      "ka -> ik": 1,
+      "da -> id": 1,
+      "fa -> uf": 1,
+      "ta -> st": 1,
+      "na -> un": 3,
+      "ra -> ro": 1,
+      "va -> is": 1,
+      "ta -> it": 1,
+      "ta -> le": 1,
+      "na -> me": 1,
+      "ia -> im": 1,
+      "ka -> ak": 1
+    }
+  },
+  {
+    "pattern": "Genitive ending in -e",
+    "description": "Names ending in -a change to -e in genitive (Nikola -> Nikole)",
+    "examples": [
+      "Ljube -> Ljuba",
+      "Đure -> Đura",
+      "Nikole -> Nikola",
+      "Peje -> Peja",
+      "Tase -> Tasa",
+      "Tome -> Toma",
+      "Nikole -> Nikola",
+      "Sime -> Sima",
+      "Nike -> Niko",
+      "Avde -> Avdo"
+    ]
+  },
+  {
+    "pattern": "Possessive -ov/-ev",
+    "description": "Possessive adjective form (Miloš -> Milošev, Vojin -> Vojinov)",
+    "examples": [
+      "JOVAN -> Jovan",
+      "Juriševec -> JURIŠEVEC"
+    ]
+  },
+  {
+    "pattern": "No change",
+    "description": "Some names appear in nominative form already",
+    "examples": [
+      "Jovo",
+      "Vasilije",
+      "Pavia",
+      "Mariano",
+      "Ivana",
+      "Jovana",
+      "Bake",
+      "Blagoja",
+      "Rade",
+      "Krste"
+    ]
+  }
+]

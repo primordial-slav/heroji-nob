@@ -36,8 +36,10 @@ CREATE TABLE IF NOT EXISTS soldiers (
     soldier_id TEXT PRIMARY KEY,  -- 10-digit ID: BBBBNNNNNN
     brigade_code INTEGER NOT NULL,
     sequence_num INTEGER NOT NULL,
+    source_position INTEGER,  -- 0-based line index from source file
 
     -- Original parsed data
+    raw_data TEXT,  -- Original raw line from source
     last_name TEXT,
     middle_name TEXT,
     first_name TEXT,
@@ -45,11 +47,13 @@ CREATE TABLE IF NOT EXISTS soldiers (
 
     -- AI extraction status
     ai_processed INTEGER DEFAULT 0,  -- 0=no, 1=yes
+    ai_process_count INTEGER DEFAULT 0,  -- Number of times processed
     ai_confidence TEXT,  -- high, medium, low
     ai_parsing_issues TEXT,  -- comma-separated issues
 
     -- AI extracted fields
     ai_fathers_name TEXT,
+    ai_nickname TEXT,
     ai_birth_year TEXT,
     ai_birthplace TEXT,
     ai_military_unit TEXT,
@@ -78,6 +82,7 @@ CREATE INDEX IF NOT EXISTS idx_soldiers_first_name ON soldiers(first_name);
 CREATE INDEX IF NOT EXISTS idx_soldiers_ai_processed ON soldiers(ai_processed);
 CREATE INDEX IF NOT EXISTS idx_soldiers_ai_confidence ON soldiers(ai_confidence);
 CREATE INDEX IF NOT EXISTS idx_soldiers_updated ON soldiers(updated_at);
+CREATE INDEX IF NOT EXISTS idx_soldiers_source_position ON soldiers(brigade_code, source_position);
 
 -- Full-text search virtual table
 CREATE VIRTUAL TABLE IF NOT EXISTS soldiers_fts USING fts5(

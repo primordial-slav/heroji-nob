@@ -1,0 +1,37 @@
+{
+  "total_analyzed": 1000,
+  "confidence_breakdown": {
+    "high": 556,
+    "medium": 438,
+    "low": 6
+  },
+  "ethnicity_breakdown": {
+    "Montenegrin": 62,
+    "Croatian": 116,
+    "Serbian": 530,
+    "Macedonian": 1,
+    "Bosnian": 11,
+    "Italian": 52,
+    "Jewish": 5,
+    "Hungarian": 5,
+    "Albanian": 4,
+    "Muslim": 16,
+    "Slovenian": 165,
+    "Unknown": 33
+  },
+  "error_type_counts": {
+    "missing_fathers_name": 477,
+    "genitive_not_converted": 310,
+    "correct": 177,
+    "ethnic_pattern": 2,
+    "ocr_error": 1,
+    "abbreviated": 1,
+    "father_merged_with_first": 24,
+    "not_a_name": 8
+  },
+  "female_count": 144,
+  "nickname_count": 123,
+  "correct_count": 177,
+  "total_tokens": 327119,
+  "processing_time_seconds": 1553.7180960178375
+}

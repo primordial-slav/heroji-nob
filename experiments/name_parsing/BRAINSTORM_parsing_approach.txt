@@ -1,0 +1,520 @@
+================================================================================
+NAME PARSING PIPELINE - BRAINSTORMING
+================================================================================
+Date: 2025-02-08
+Participants: Boris + Claude
+
+================================================================================
+CURRENT APPROACH
+================================================================================
+
+PDF → Script parses text → GPT processes each soldier/batch → Fill table
+
+Problems identified:
+- One-size-fits-all parsing doesn't work
+- Different sources have different formats
+- AI makes mistakes without source context
+- No feedback loop for corrections
+
+================================================================================
+KEY CHALLENGES
+================================================================================
+
+1. SOURCE VARIATION
+   - Different books have different name ordering
+   - Some sources more structured than others
+   - Cyrillic vs Latin script
+   - Varying data completeness (some fields missing)
+
+2. NAME COMPLEXITY
+   - Yugoslav naming: LASTNAME FathersName(genitive) FIRSTNAME
+   - But Slovenians: LASTNAME FIRSTNAME (no patronymic)
+   - Italians: LASTNAME FIRSTNAME MIDDLENAME
+   - Hungarians: FAMILYNAME GIVENNAME
+   - Muslims/Albanians: Different patterns entirely
+   - Nicknames: Only sometimes present
+
+3. CASE TRANSFORMATIONS
+   - Serbian genitive: Milana → Milan, Nikole → Nikola
+   - BUT: Italians don't use genitive (Mariano stays Mariano)
+   - Need to know WHEN to transform and when NOT to
+
+4. DATA QUALITY ISSUES
+   - OCR errors: Đ→D, Č→C, Š→S
+   - Unicode failures: diacritics become garbage
+   - Two soldiers merged into one line
+   - Place names parsed as person names
+   - Incomplete lines
+
+5. CONTEXT MATTERS
+   - A book about Slovenian brigade = mostly Slovenian names
+   - A book about Prva Proleterska = mixed ethnicities
+   - Understanding source helps interpret ambiguous cases
+
+================================================================================
+PROPOSED NEW APPROACH: TWO-PHASE PARSING
+================================================================================
+
+PHASE 1: SOURCE PROFILING (do once per book)
+--------------------------------------------
+Before parsing any soldiers, analyze the source:
+
+1. Take a sample (50-100 lines) from the book
+2. Have AI analyze the sample to determine:
+   - Name ordering pattern (LAST FATHER FIRST vs LAST FIRST vs other)
+   - Script used (Cyrillic/Latin/mixed)
+   - Typical ethnicity distribution
+   - Data completeness level
+   - Common formatting patterns
+   - Field delimiters (comma, semicolon, etc.)
+
+3. Create a "source profile" JSON:
+   {
+     "source_id": "prva_proleterska_vol1",
+     "name_pattern": "LAST FATHER(gen) FIRST",
+     "script": "latin",
+     "ethnicities": ["serbian", "croatian", "montenegrin", "italian"],
+     "has_patronymic": true,
+     "typical_fields": ["name", "birth_year", "birthplace", "unit", "death_info"],
+     "examples": [...]
+   }
+
+PHASE 2: SOLDIER PARSING (with context)
+---------------------------------------
+For each soldier/batch, include the source profile in the prompt:
+
+1. Pre-processing layer:
+   - Fix encoding issues (normalize Unicode)
+   - Transliterate Cyrillic if needed
+   - Detect potential line merges (two soldiers in one)
+   - Flag obvious non-name data
+
+2. AI parsing with context:
+   - Pass source profile to AI
+   - Pass a few good examples from THIS source
+   - AI knows what to expect based on profile
+   - AI adapts parsing to source patterns
+
+3. Post-processing validation:
+   - Check against known name lists
+   - Validate genitive→nominative transformations
+   - Flag anomalies for review
+   - Cross-reference with reference tables
+
+================================================================================
+ETHNICITY-AWARE TRANSFORMATION RULES
+================================================================================
+
+APPLY genitive→nominative:
+- Serbian/Croatian/Bosnian/Montenegrin names
+- When middle word ends in: -a, -e, -ov, -ev, -in
+
+DO NOT apply transformation:
+- Slovenian (no patronymic tradition)
+- Italian (first + middle name, not patronymic)
+- When name is clearly not Slavic
+
+DETECTION HEURISTICS:
+- Name ends in -ić, -ović, -ević = Slavic, likely has patronymic
+- Name is Franc, Anton, Janez = Slovenian, no patronymic
+- Name is Giovanni, Giuseppe, Mario = Italian
+- Name is István, János = Hungarian
+- Name is Ibrahim, Isuf = Albanian/Muslim
+
+================================================================================
+HANDLING EDGE CASES
+================================================================================
+
+TWO SOLDIERS IN ONE LINE:
+- Detect by: multiple birth years, multiple death dates, unusual length
+- Split before AI processing
+- Mark as "needs_review" if uncertain
+
+UNICODE/OCR ERRORS:
+- Pre-processing: normalize common substitutions
+- AI instruction: "Watch for OCR errors like D instead of Đ"
+- Post-processing: flag names with suspicious characters
+
+NICKNAMES:
+- Only flag as nickname if TWO names appear after father's name
+- Format in source: "PETROVIĆ Milana MARKO MARE"
+- AI should recognize diminutives (Raco for Radomir, Mare for Marko)
+
+MISSING DATA:
+- Don't invent data that isn't there
+- Mark fields as empty, not guessed
+- Confidence score reflects completeness
+
+================================================================================
+REFERENCE TABLES TO BUILD
+================================================================================
+
+1. genitive_to_nominative.json
+   - Verified mappings: {"Milana": "Milan", "Nikole": "Nikola", ...}
+   - Used for validation and correction
+
+2. first_names_by_ethnicity.json
+   - Serbian: ["Marko", "Nikola", "Dragan", ...]
+   - Slovenian: ["Franc", "Janez", "Anton", ...]
+   - Helps detect ethnicity and validate names
+
+3. common_nicknames.json
+   - {"Radomir": ["Raco", "Raka"], "Marko": ["Mare"], ...}
+
+4. ocr_corrections.json
+   - {"Dordevic": "Đorđević", "Cedo": "Čedo", ...}
+
+5. place_names.json
+   - List of known place names (to avoid parsing as person names)
+
+================================================================================
+CHOSEN APPROACH: FIELD-BY-FIELD VALIDATION AFTER AI
+================================================================================
+
+Boris selected option 3: Let AI parse, then validate each field.
+
+FLOW:
+-----
+Raw line → AI parses → Validator checks each field → Flag issues → Human reviews flags
+
+VALIDATION CHECKS TO BUILD:
+---------------------------
+
+1. FIRST NAME VALIDATION
+   - Check against known first names list (by ethnicity)
+   - If not in list: flag as "unknown_first_name"
+   - Build list from confirmed correct parses over time
+   - Example: "BRANISLAV" → check Serbian male names → found → OK
+   - Example: "Dragutina" → check names → not found → FLAG (this is genitive!)
+
+2. FATHER'S NAME VALIDATION
+   - Check if value looks like genitive (ends in -a, -e, -ov, etc.)
+   - If genitive: lookup nominative in our table
+   - If nominative found: OK, also store the mapping
+   - If not found: flag as "unknown_genitive" for human to add
+   - Example: "Milana" → genitive table → "Milan" → OK
+   - Example: "Xyz" → not in table → FLAG
+
+3. LAST NAME VALIDATION
+   - Check against known surnames (optional, large list)
+   - Check it's not a place name (compare to places list)
+   - Check format (usually ends in -ić, -ović, etc. for Slavic)
+   - Example: "PETROVIĆ" → looks like surname → OK
+   - Example: "Beograd" → is a city name → FLAG
+
+4. CROSS-FIELD VALIDATION
+   - If first_name looks like genitive AND father is empty → swap?
+   - If first_name == last_name → FLAG
+   - If nickname is a full name (not diminutive) → FLAG
+
+5. ETHNICITY CONSISTENCY
+   - If detected as Slovenian but has father's name → FLAG
+   - If detected as Italian but father's name has Slavic genitive → FLAG
+   - Cross-check name patterns with claimed ethnicity
+
+6. DATA QUALITY FLAGS
+   - Birth year outside 1880-1935 → FLAG
+   - Death year outside 1941-1945 → FLAG
+   - Age at death < 14 or > 70 → FLAG
+   - Line suspiciously long (might be 2 soldiers merged) → FLAG
+
+
+REFERENCE TABLES NEEDED:
+------------------------
+
+1. first_names_male.txt      - Known male first names (by ethnicity)
+2. first_names_female.txt    - Known female first names (by ethnicity)
+3. genitive_to_nominative.json - Verified genitive mappings
+4. surnames.txt              - Known surnames (optional)
+5. places.txt                - Place names (to avoid confusion)
+6. nicknames.json            - Known nickname mappings
+7. ocr_fixes.json            - Common OCR error corrections
+
+
+VALIDATION OUTPUT:
+------------------
+
+For each soldier, produce:
+{
+  "soldier_id": "...",
+  "parsed": {
+    "last_name": "PETROVIĆ",
+    "first_name": "MARKO",
+    "fathers_name": "Milan",
+    ...
+  },
+  "validation": {
+    "first_name_valid": true,
+    "fathers_name_valid": true,
+    "flags": [],
+    "confidence": "high"
+  }
+}
+
+OR if issues:
+
+{
+  "soldier_id": "...",
+  "parsed": {
+    "last_name": "MITIĆ",
+    "first_name": "Božidara",  ← AI made a mistake
+    "fathers_name": "",
+    ...
+  },
+  "validation": {
+    "first_name_valid": false,  ← Caught it!
+    "flags": ["first_name_looks_like_genitive", "missing_fathers_name"],
+    "confidence": "low"
+  }
+}
+
+
+FEEDBACK LOOP:
+--------------
+
+1. Human reviews flagged records
+2. Human corrects mistakes
+3. Corrections update reference tables:
+   - New first name added to list
+   - New genitive mapping added
+   - New surname confirmed
+4. Next batch benefits from updated tables
+5. Over time, fewer flags as tables grow
+
+
+================================================================================
+IMPLEMENTATION STEPS (REVISED)
+================================================================================
+
+PHASE 1: BUILD REFERENCE TABLES
+1. [x] Extract first names from current analysis (done - patterns_first_names.json)
+2. [x] Extract genitive mappings (done - patterns_genitive_raw.json)
+3. [ ] Clean up and verify these tables (human review needed)
+4. [ ] Add place names list (to avoid confusion)
+5. [ ] Add common OCR fixes
+
+PHASE 2: BUILD VALIDATOR
+6. [ ] Create validator.py with all checks above
+7. [ ] Test on our 1000-sample analysis
+8. [ ] See how many errors it catches
+
+PHASE 3: INTEGRATE INTO PIPELINE
+9. [ ] AI parses → Validator runs → Flags generated
+10. [ ] Build review interface for flagged records
+11. [ ] Build feedback loop (corrections → tables)
+
+PHASE 4: TEST ON NEW SOURCES
+12. [ ] Try on Prva Lička brigade
+13. [ ] Try on Druga Lička brigade
+14. [ ] Iterate based on results
+
+================================================================================
+MORE SPECIFIC PARSING RULES (Boris feedback: need to be explicit)
+================================================================================
+
+Problem: Even with context, AI made basic mistakes (first name as nickname).
+Solution: Explicit step-by-step rules, not vague guidelines.
+
+STEP-BY-STEP PARSING ALGORITHM:
+-------------------------------
+
+For Yugoslav/Serbian pattern "LASTNAME FathersName(gen) FIRSTNAME":
+
+STEP 1: SPLIT THE LINE
+- Split on first comma → name_part, rest_of_data
+- Example: "PETROVIĆ Milana MARKO, 1922, Beograd"
+  → name_part = "PETROVIĆ Milana MARKO"
+  → rest = "1922, Beograd..."
+
+STEP 2: IDENTIFY LAST NAME
+- First word (usually ALL CAPS) = LAST NAME
+- Example: "PETROVIĆ Milana MARKO" → last_name = "PETROVIĆ"
+
+STEP 3: COUNT REMAINING WORDS
+- After removing last name, count remaining words
+- Example: "Milana MARKO" → 2 words
+
+STEP 4: APPLY RULES BASED ON WORD COUNT
+
+IF 1 WORD REMAINING:
+  → That word is FIRST NAME
+  → Father's name = empty
+  → Nickname = empty
+  Example: "PETROVIĆ MARKO" → first=MARKO, father=none
+
+IF 2 WORDS REMAINING:
+  → LAST word is FIRST NAME
+  → FIRST word is likely FATHER'S NAME (check if genitive)
+  → Nickname = empty
+  Example: "PETROVIĆ Milana MARKO" → first=MARKO, father=Milan
+
+IF 3+ WORDS REMAINING:
+  → LAST word is FIRST NAME
+  → SECOND-TO-LAST might be NICKNAME (if short/diminutive)
+  → FIRST word is FATHER'S NAME
+  Example: "PETROVIĆ Milana MARKO MARE" → first=MARKO, nick=MARE, father=Milan
+
+STEP 5: GENITIVE DETECTION
+- Check if father's name candidate ends in: -a, -e, -ov, -ev, -in
+- If yes, convert to nominative
+- If no (like "Jovo"), keep as-is
+
+STEP 6: VALIDATE
+- Is first_name a known name? (check reference list)
+- Is father's name plausible? (not a place name, not a title)
+- Flag if uncertain
+
+
+EXPLICIT NEGATIVE EXAMPLES (what NOT to do):
+--------------------------------------------
+
+WRONG: "MORAVČEVIĆ Dragutina BRANISLAV"
+  → first_name: Dragutina, nickname: BRANISLAV
+
+CORRECT:
+  → first_name: BRANISLAV, father: Dragutin (from Dragutina)
+
+WRONG: "MITIĆ Božidara ILIJA"
+  → first_name: Božidara, nickname: ILIJA
+
+CORRECT:
+  → first_name: ILIJA, father: Božidar (from Božidara)
+
+RULE: The nickname field should RARELY be filled.
+      Only use it when there are 3+ name words after the last name.
+
+
+ETHNICITY-SPECIFIC OVERRIDES:
+-----------------------------
+
+SLOVENIAN SOURCE:
+- Pattern: LASTNAME FIRSTNAME (only 2 words typically)
+- No patronymic expected
+- "Kovač Franc" → last=Kovač, first=Franc, father=NONE
+
+ITALIAN NAMES:
+- Pattern: LASTNAME FIRSTNAME [MIDDLENAME]
+- No genitive transformation
+- "DE ROSA Giovanni LUIGI" → last=DE ROSA, first=Giovanni, middle=LUIGI
+- Do NOT mark LUIGI as nickname, it's a middle name
+
+WHEN NO FATHER'S NAME EXISTS:
+- If only 2 words in name part, there's no father's name
+- Don't invent one from the last name
+- "KRIVOŠIJA BRANKO" → last=KRIVOŠIJA, first=BRANKO, father=NONE
+
+
+REALITY CHECK (Boris feedback):
+-------------------------------
+
+"You're looking at a sample size and see a logical pattern, but when I get
+to the meat of it, it makes a ton of mistakes."
+
+The data is MESSIER than samples suggest:
+- NOT always comma-separated
+- Father's names sometimes absent, sometimes present
+- Lots of abnormalities in how names are written
+- PDF parsing errors on top of everything
+- Real-world data doesn't follow clean patterns
+
+So: Pure rule-based WON'T work because data is too inconsistent.
+But: Pure AI ALSO makes mistakes even with good prompts.
+
+THE REAL PROBLEM:
+We need AI because the data is messy.
+But AI makes mistakes.
+And we can't easily catch those mistakes automatically.
+
+POSSIBLE APPROACHES:
+
+1. ACCEPT IMPERFECTION + HUMAN REVIEW
+   - AI parses everything
+   - Confidence scores on each field
+   - Low confidence → human review queue
+   - Learn from corrections
+
+2. MULTI-PASS APPROACH
+   - Pass 1: AI extracts what it's confident about
+   - Pass 2: Human reviews uncertain cases
+   - Pass 3: Use corrections to re-process similar cases
+
+3. COMPARISON APPROACH
+   - Run same data through AI twice with different prompts
+   - Compare results
+   - Differences = likely errors = human review
+
+4. FIELD-BY-FIELD VALIDATION
+   - After AI parses, validate each field separately
+   - Is this a known first name? Check list.
+   - Is this a valid birth year (1880-1935)?
+   - Does father's genitive → nominative exist in our table?
+   - Flag mismatches
+
+5. EXAMPLE-HEAVY PROMPTING
+   - For each source, manually parse 20-30 examples correctly
+   - Include ALL of them in the prompt as few-shot examples
+   - AI mimics the pattern from examples, not from rules
+
+
+MAYBE: RULE-BASED PRE-PROCESSING?
+---------------------------------
+
+NOTE: Given the messiness, pure rules won't work. But rules might help
+VALIDATE AI output, not replace it.
+
+Instead of relying on AI for everything, we could:
+
+1. Use REGEX to split: last_name, middle_words, first_name
+2. Use DICTIONARY LOOKUP to check if middle_word is genitive
+3. Use AI ONLY for ambiguous cases or validation
+
+This reduces AI mistakes by giving it less room to be creative.
+
+Example rule-based approach:
+```
+def parse_name(name_part, source_profile):
+    words = name_part.split()
+    last_name = words[0]
+
+    if len(words) == 2:
+        return {last_name, first_name=words[1], father=None}
+
+    if len(words) == 3:
+        middle = words[1]
+        first = words[2]
+
+        # Check if middle is genitive
+        if is_genitive(middle):  # dictionary lookup
+            father = genitive_to_nominative(middle)
+            return {last_name, first_name=first, father=father}
+        else:
+            # Ambiguous - ask AI or flag for review
+            ...
+```
+
+================================================================================
+OPEN QUESTIONS
+================================================================================
+
+- Should we use different AI models for different tasks?
+  (cheaper model for pre-processing, better model for parsing)
+
+- How to handle truly ambiguous cases?
+  (flag for human review vs make best guess)
+
+- Should we store "raw" and "corrected" versions?
+  (for audit trail and learning)
+
+- How to measure parsing quality over time?
+  (accuracy metrics, error rates by source)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Review this document
+2. Prioritize which improvements to implement first
+3. Test on Druga Lička and Prva Lička brigades
+4. Iterate based on results
+
+================================================================================

@@ -1,0 +1,176 @@
+You are extracting soldier information from Yugoslav WWII Partisan brigade records.
+
+## Context
+
+These are historical records from WWII Yugoslav Partisan brigades. The text may have:
+- OCR errors (broken words, strange characters)
+- Line breaks in the middle of words (like "pogi-nuo" instead of "poginuo")
+- Spaces incorrectly inserted in surnames (like "MIJAJLO VIĆ" instead of "MIJAJLOVIĆ")
+- Mixed formats (some entries more detailed than others)
+- Serbian/Croatian language with special characters (č, ć, š, ž, đ)
+
+### Common OCR Errors to Watch For
+- Surnames split before -VIĆ/-OVIĆ suffix: "STANKO VIĆ" → "STANKOVIĆ"
+- Italian surnames split: "CARD ARO" → "CARDARO", "INSEL VINI" → "INSELVINI"
+- First names split: "SELM AN" → "SELMAN"
+
+## Fields to Extract
+
+For EACH soldier, extract these fields (use empty string "" if not found):
+
+1. **last_name**: Family name/surname
+2. **first_name**: Given name (the soldier's actual first name)
+3. **fathers_name**: Father's name (convert to nominative form - see below)
+4. **nickname**: Nickname if present (rare - only when there are TWO names after father's name)
+5. **birth_year**: Year of birth (just the 4-digit year)
+5. **birthplace**: Place of birth (village, town, region)
+6. **military_unit**: Battalion, company (e.g., "3. bataljon", "1. četa")
+7. **rank_or_role**: Military rank or role (e.g., "borac", "vodnik", "komandir", "bolničar")
+8. **death_date**: Date of death if mentioned
+9. **death_place**: Place of death if mentioned
+10. **death_cause**: How they died (poginuo=killed, umro=died, nestao=missing)
+11. **other_info**: Any other relevant info (ethnicity, occupation, when joined NOB, etc.)
+12. **confidence**: "high", "medium", or "low"
+13. **parsing_issues**: List any problems (e.g., "OCR error", "unclear format", "incomplete data")
+
+## CRITICAL: Name Order Pattern
+
+### Format: LASTNAME Father's_genitive FIRSTNAME
+
+The name pattern is: **LASTNAME** + **Father's name (genitive)** + **FIRSTNAME**
+
+Examples:
+- "BUBALO Rade MARKO" → last=BUBALO, father=Rade, first=MARKO
+- "ADAMOVIĆ Dmitra DANILO" → last=ADAMOVIĆ, father=Dmitar, first=DANILO
+- "ĐEKIĆ Živanov Sreten" → last=ĐEKIĆ, father=Živan, first=Sreten
+- "KALINIĆ Marka Dragan" → last=KALINIĆ, father=Marko, first=Dragan
+
+### KEY RULE
+The **middle** position is ALWAYS the father's name.
+The **last** name part (before any comma or biographical info) is the soldier's FIRST NAME.
+
+### Convert Father's Name to Nominative Form
+
+The source text has father's names in genitive case. Convert them:
+
+**Common -a endings:**
+- Lazara → Lazar
+- Milorada → Milorad
+- Petra → Petar
+- Dmitra → Dmitar
+- Marka → Marko
+- Jovana → Jovan
+- Milana → Milan
+- Ivana → Ivan
+- Dušana → Dušan
+- Bogdana → Bogdan
+- Teodora → Teodor
+- Dobrosava → Dobrosav
+- Velimira → Velimir
+- Velizara → Velizar
+- Dragomira → Dragomir
+- Ljubomira → Ljubomir
+- Borivoja → Borivoj
+- Momčila → Momčilo
+- Ibrahima → Ibrahim
+
+**-e endings (from names ending in -a/-o):**
+- Đure → Đuro
+- Krste → Krsto
+- Koste → Kosta
+- Riste → Risto
+- Milije → Milija
+- Miloja → Miloje
+- Mateje → Mateja
+
+**-a endings (from names ending in -o):**
+- Janka → Janko
+- Ranka → Ranko
+- Mila → Milo
+- Mirka → Mirko
+- Mate → Mato (Croatian)
+
+**Possessive -ov/-ev/-in:**
+- Živanov → Živan
+- Petrov → Petar
+- Radovanov → Radovan
+
+### Nicknames (RARE)
+A nickname ONLY appears when there are TWO names after the father's name:
+- "SEKULIĆ Batrića BLAŽO SELJO" → first=BLAŽO, nickname=SELJO
+- "BOŽOVIĆ Pavia RADOMIR RACO" → first=RADOMIR, nickname=RACO
+
+If there's only ONE name after the father's name, that's the first name with NO nickname.
+DO NOT put the first name in the nickname field.
+
+### When Father's Name is Absent
+Sometimes there's no father's name (only 2 name parts):
+- "KRIVOŠIJA BRANKO" → last=KRIVOŠIJA, first=BRANKO, fathers_name=""
+- "Kovač Franc" → last=Kovač, first=Franc, fathers_name=""
+
+### Slovenian Names
+Slovenian names often have no patronymic (father's name):
+- Pattern: LASTNAME FIRSTNAME
+- Names like Franc, Janez, Anton, Jožef are typically Slovenian
+
+### Italian Names
+Italian soldiers follow: LASTNAME FathersName FIRSTNAME
+- The middle name is the father's name (NOT in genitive case)
+- No genitive transformation needed for Italian names
+
+Examples:
+- "DE ROSA Mariano SALVADORE" → last=DE ROSA, father=Mariano, first=SALVADORE
+- "CALESSENI Giuseppe NUNZIO" → last=CALESSENI, father=Giuseppe, first=NUNZIO
+- "SPADON Felice GIOCONDO" → last=SPADON, father=Felice, first=GIOCONDO
+- "ZANELLATI Enrico ALDO" → last=ZANELLATI, father=Enrico, first=ALDO
+- "BACCHERINI Adamo VIRGILIO" → last=BACCHERINI, father=Adamo, first=VIRGILIO
+- "PIANO Giuseppe ANTONIO" → last=PIANO, father=Giuseppe, first=ANTONIO
+
+Common Italian father's names: Giuseppe, Giovanni, Francesco, Antonio, Angelo, Felice, Valentino, Enrico, Adamo, Alfredo, Ermenegildo
+
+## Common Terms
+
+- "rođen/rođena" = born
+- "poginuo/poginula" = killed in action
+- "umro/umrla" = died (often from illness/wounds)
+- "nestao/nestala" = missing
+- "u NOB od" = in the People's Liberation War since (join date)
+- "s." or "selo" = village
+- "borac" = fighter/soldier
+- "komandir" = commander
+- "komesar" = commissar
+- "bolničar" = medic
+- "kurir" = courier
+
+## Response Format
+
+Return JSON:
+```json
+{
+  "soldiers": [
+    {
+      "input_index": 0,
+      "last_name": "ADAMOVIĆ",
+      "first_name": "DANILO",
+      "fathers_name": "Dmitar",
+      "nickname": "",
+      "birth_year": "1920",
+      "birthplace": "s. Korenica",
+      "military_unit": "3. bataljon",
+      "rank_or_role": "borac",
+      "death_date": "15.01.1943",
+      "death_place": "Kozara",
+      "death_cause": "poginuo",
+      "other_info": "Srbin, zemljoradnik",
+      "confidence": "high",
+      "parsing_issues": []
+    }
+  ]
+}
+```
+
+## Confidence Levels
+
+- **high**: All key fields clear, standard format, no OCR issues
+- **medium**: Some fields unclear or missing, minor OCR issues
+- **low**: Major parsing problems, multiple fields uncertain, needs human review
