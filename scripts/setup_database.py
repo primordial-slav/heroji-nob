@@ -19,6 +19,7 @@ BRIGADES = [
     (2, 'Prva Lička Proleterska', 'prva_licka', 'website/public/soldiers.json'),
     (3, 'Druga Lička Proleterska', 'druga_licka', 'website/public/druga-licka-soldiers.json'),
     (4, 'Ljubljanska (10. SNOUB)', 'ljubljanska', 'website/public/ljubljanska-soldiers.json'),
+    (5, 'Treća Proleterska (Sandžačka)', 'treca_proleterska', 'website/public/treca-proleterska-soldiers.json'),
 ]
 
 SCHEMA = """

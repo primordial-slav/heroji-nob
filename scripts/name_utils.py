@@ -55,6 +55,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    5: {
+        'name': 'Treća Proleterska (Sandžačka)',
+        'json_file': 'treca-proleterska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
 }
 
 

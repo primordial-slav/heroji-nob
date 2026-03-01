@@ -44,6 +44,15 @@ export const units: Unit[] = [
     image: '/images/druga_licka.jpg',
     soldierCount: 1509,
     dataFile: '/druga-licka-soldiers.json'
+  },
+  {
+    id: 'treca-proleterska-brigada',
+    name: 'Treća proleterska (sandžačka) brigada',
+    nameEn: '3rd Proletarian (Sandžak) Brigade',
+    description: 'Formirana 5. juna 1942. godine. Spisak boraca i starešina na dan formiranja brigade.',
+    image: '/images/treca-proleterska-brigada.jpg',
+    soldierCount: 870,
+    dataFile: '/treca-proleterska-soldiers.json'
   }
   // Add more units here as you get more data
 ]

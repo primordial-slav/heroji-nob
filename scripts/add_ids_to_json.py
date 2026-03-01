@@ -31,6 +31,11 @@ BRIGADES = [
         'name': 'Ljubljanska (10. SNOUB)',
         'json_file': 'website/public/ljubljanska-soldiers.json'
     },
+    {
+        'code': 5,
+        'name': 'Treća Proleterska (Sandžačka)',
+        'json_file': 'website/public/treca-proleterska-soldiers.json'
+    },
 ]
 
 
