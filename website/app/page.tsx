@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { units } from './data/units'
 import { useFuseSearch } from './lib/useFuseSearch'
 import type { Soldier } from './lib/types'
+import SoldierModal from './components/SoldierModal'
 
 export default function Home() {
   const [allSoldiers, setAllSoldiers] = useState<Soldier[]>([])
@@ -250,38 +251,10 @@ export default function Home() {
 
       {/* Soldier Detail Modal */}
       {showModal && selectedSoldier && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>×</button>
-            <h2 className="modal-title">{selectedSoldier.full_name}</h2>
-            <div className="modal-details">
-              {selectedSoldier.fathers_name && (
-                <div className="modal-detail-row">
-                  <span className="modal-label">Ime oca:</span>
-                  <span className="modal-value">{selectedSoldier.fathers_name}</span>
-                </div>
-              )}
-              {selectedSoldier.birth_year && (
-                <div className="modal-detail-row">
-                  <span className="modal-label">Godina rođenja:</span>
-                  <span className="modal-value">{selectedSoldier.birth_year}</span>
-                </div>
-              )}
-              {selectedSoldier.unit && (
-                <div className="modal-detail-row">
-                  <span className="modal-label">Jedinica:</span>
-                  <span className="modal-value">{selectedSoldier.unit}</span>
-                </div>
-              )}
-              {selectedSoldier.additional_info && (
-                <div className="modal-detail-row">
-                  <span className="modal-label">Dodatne informacije:</span>
-                  <span className="modal-value">{selectedSoldier.additional_info}</span>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
+        <SoldierModal
+          soldier={selectedSoldier}
+          onClose={closeModal}
+        />
       )}
     </div>
   )

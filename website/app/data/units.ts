@@ -6,6 +6,7 @@ export interface Unit {
   image: string
   soldierCount: number
   dataFile: string
+  pdfFiles: string[]
 }
 
 export const units: Unit[] = [
@@ -16,7 +17,8 @@ export const units: Unit[] = [
     description: 'Formirana juna 1942. godine',
     image: '/images/prva-licka-brigada.jpg',
     soldierCount: 9797,
-    dataFile: '/soldiers.json'
+    dataFile: '/soldiers.json',
+    pdfFiles: ['/pdfs/prva-licka-proleterska.pdf']
   },
   {
     id: 'prva-proleterska-brigada',
@@ -25,7 +27,8 @@ export const units: Unit[] = [
     description: 'Formirana 21. decembra 1941. godine',
     image: '/images/prva-proleterska-brigada.jpg',
     soldierCount: 13600,
-    dataFile: '/prva-proleterska-soldiers.json'
+    dataFile: '/prva-proleterska-soldiers.json',
+    pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf']
   },
   {
     id: 'ljubljanska-brigada',
@@ -34,7 +37,8 @@ export const units: Unit[] = [
     description: 'Formirana 11. septembra 1943. godine',
     image: '/images/ljubljanska-brigada.jpg',
     soldierCount: 3079,
-    dataFile: '/ljubljanska-soldiers.json'
+    dataFile: '/ljubljanska-soldiers.json',
+    pdfFiles: ['/pdfs/ljubljanska-brigada.pdf']
   },
   {
     id: 'druga-licka-brigada',
@@ -43,7 +47,8 @@ export const units: Unit[] = [
     description: 'Formirana 1942. godine. Spisak poginulih, umrlih i nestalih boraca.',
     image: '/images/druga_licka.jpg',
     soldierCount: 1509,
-    dataFile: '/druga-licka-soldiers.json'
+    dataFile: '/druga-licka-soldiers.json',
+    pdfFiles: ['/pdfs/druga-licka-spisak.pdf']
   },
   {
     id: 'treca-proleterska-brigada',
@@ -52,7 +57,8 @@ export const units: Unit[] = [
     description: 'Formirana 5. juna 1942. godine. Spisak boraca i starešina na dan formiranja brigade.',
     image: '/images/treca-proleterska-brigada.jpg',
     soldierCount: 870,
-    dataFile: '/treca-proleterska-soldiers.json'
+    dataFile: '/treca-proleterska-soldiers.json',
+    pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf']
   }
   // Add more units here as you get more data
 ]
