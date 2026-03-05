@@ -3,7 +3,7 @@ import './globals.css'
 import Navigation from './components/Navigation'
 
 export const metadata: Metadata = {
-  title: 'Naši Borci - Partizanska Baza Podataka',
+  title: 'Knjiga Boraca - Partizanska Baza Podataka',
   description: 'Baza podataka boraca partizanskog pokreta',
 }
 
@@ -18,7 +18,7 @@ export default function RootLayout({
         <header className="header">
           <div className="header-overlay"></div>
           <div className="container header-content">
-            <h1>Naši Borci</h1>
+            <h1>Knjiga Boraca</h1>
             <p>Baza podataka boraca partizanskog pokreta</p>
           </div>
         </header>
