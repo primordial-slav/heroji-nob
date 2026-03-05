@@ -4,13 +4,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Unit } from '@/app/data/units'
-
-interface Soldier {
-  last_name: string
-  middle_name: string
-  first_name: string
-  additional_info: string
-}
+import { useFuseSearch } from '@/app/lib/useFuseSearch'
+import type { Soldier } from '@/app/lib/types'
 
 interface UnitPageClientProps {
   unit: Unit
@@ -18,13 +13,16 @@ interface UnitPageClientProps {
 
 export default function UnitPageClient({ unit }: UnitPageClientProps) {
   const [soldiers, setSoldiers] = useState<Soldier[]>([])
-  const [filteredSoldiers, setFilteredSoldiers] = useState<Soldier[]>([])
-  const [searchTerm, setSearchTerm] = useState('')
   const [loading, setLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage, setItemsPerPage] = useState(50)
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
   const [showModal, setShowModal] = useState(false)
+
+  const { results, searchTerm, setSearchTerm } = useFuseSearch(
+    soldiers,
+    { showAllOnEmpty: true }
+  )
 
   useEffect(() => {
     // Load soldier data for this unit
@@ -32,7 +30,6 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
       .then(res => res.json())
       .then(data => {
         setSoldiers(data)
-        setFilteredSoldiers(data)
         setLoading(false)
       })
       .catch(err => {
@@ -41,28 +38,16 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
       })
   }, [unit])
 
+  // Reset page when results change
   useEffect(() => {
-    // Filter soldiers based on search term
-    if (!searchTerm) {
-      setFilteredSoldiers(soldiers)
-      return
-    }
-
-    setCurrentPage(1) // Reset to first page when search changes
-    const term = searchTerm.toLowerCase()
-    const filtered = soldiers.filter(soldier => {
-      const fullName = `${soldier.last_name} ${soldier.middle_name} ${soldier.first_name}`.toLowerCase()
-      const info = soldier.additional_info.toLowerCase()
-      return fullName.includes(term) || info.includes(term)
-    })
-    setFilteredSoldiers(filtered)
-  }, [searchTerm, soldiers])
+    setCurrentPage(1)
+  }, [results])
 
   // Pagination calculations
-  const totalPages = Math.ceil(filteredSoldiers.length / itemsPerPage)
+  const totalPages = Math.ceil(results.length / itemsPerPage)
   const startIndex = (currentPage - 1) * itemsPerPage
   const endIndex = startIndex + itemsPerPage
-  const currentSoldiers = filteredSoldiers.slice(startIndex, endIndex)
+  const currentSoldiers = results.slice(startIndex, endIndex)
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page)
@@ -133,12 +118,12 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
           </div>
           <div className="stat-item">
             <div className="stat-label">Rezultati pretrage</div>
-            <div className="stat-value">{filteredSoldiers.length.toLocaleString()}</div>
+            <div className="stat-value">{results.length.toLocaleString()}</div>
           </div>
         </div>
       </section>
 
-      {filteredSoldiers.length === 0 ? (
+      {results.length === 0 ? (
         <div className="no-results">
           Nema rezultata za "{searchTerm}"
         </div>
@@ -236,36 +221,30 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeModal}>×</button>
-            <h2 className="modal-title">{formatSoldierName(selectedSoldier)}</h2>
+            <h2 className="modal-title">{selectedSoldier.full_name}</h2>
             <div className="modal-details">
-              <div className="modal-detail-row">
-                <span className="modal-label">Datum rođenja:</span>
-                <span className="modal-value">none</span>
-              </div>
-              <div className="modal-detail-row">
-                <span className="modal-label">Mesto rođenja:</span>
-                <span className="modal-value">none</span>
-              </div>
-              <div className="modal-detail-row">
-                <span className="modal-label">Datum smrti:</span>
-                <span className="modal-value">none</span>
-              </div>
-              <div className="modal-detail-row">
-                <span className="modal-label">Mesto smrti:</span>
-                <span className="modal-value">none</span>
-              </div>
+              {selectedSoldier.fathers_name && (
+                <div className="modal-detail-row">
+                  <span className="modal-label">Ime oca:</span>
+                  <span className="modal-value">{selectedSoldier.fathers_name}</span>
+                </div>
+              )}
+              {selectedSoldier.birth_year && (
+                <div className="modal-detail-row">
+                  <span className="modal-label">Godina rođenja:</span>
+                  <span className="modal-value">{selectedSoldier.birth_year}</span>
+                </div>
+              )}
               <div className="modal-detail-row">
                 <span className="modal-label">Jedinica:</span>
                 <span className="modal-value">{unit.name}</span>
               </div>
-              <div className="modal-detail-row">
-                <span className="modal-label">Dodatni komentari:</span>
-                <span className="modal-value">none</span>
-              </div>
-              <div className="modal-detail-row">
-                <span className="modal-label">Dodatni mediji:</span>
-                <span className="modal-value">none</span>
-              </div>
+              {selectedSoldier.additional_info && (
+                <div className="modal-detail-row">
+                  <span className="modal-label">Dodatne informacije:</span>
+                  <span className="modal-value">{selectedSoldier.additional_info}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
