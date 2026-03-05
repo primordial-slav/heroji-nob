@@ -433,6 +433,88 @@ def extract_prva_licka(pdf_path, json_path):
     return soldiers
 
 
+def normalize_name(name):
+    """Normalize a name for fuzzy matching: lowercase, strip diacritics, remove punctuation."""
+    import unicodedata
+    if not name:
+        return ''
+    # Lowercase
+    name = name.lower().strip()
+    # Strip diacritics
+    nfkd = unicodedata.normalize('NFKD', name)
+    name = ''.join(c for c in nfkd if not unicodedata.combining(c))
+    # Remove punctuation and extra spaces
+    name = re.sub(r'[^\w\s]', '', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
+def match_positions_by_name(positions, soldiers_json):
+    """
+    Match extracted PDF positions to soldiers by name instead of index.
+    Used for Ljubljanska where column order differs from JSON order.
+    """
+    if not positions:
+        print("  WARNING: No positions extracted!")
+        return soldiers_json
+
+    # Build a lookup: normalized name -> list of positions
+    # Each position's text_preview starts with the soldier name
+    pos_by_name = {}
+    for pos in positions:
+        preview = pos['text_preview']
+        # Extract the name part (first two words typically: "Surname Firstname")
+        parts = preview.split(',')[0].strip().split()
+        if len(parts) >= 2:
+            # Try "Surname Firstname" key
+            key = normalize_name(parts[0] + ' ' + parts[1])
+        elif len(parts) == 1:
+            key = normalize_name(parts[0])
+        else:
+            continue
+
+        if key not in pos_by_name:
+            pos_by_name[key] = []
+        pos_by_name[key].append(pos)
+
+    matched = 0
+    unmatched = 0
+
+    for soldier in soldiers_json:
+        # Build the lookup key from JSON soldier data
+        last = soldier.get('last_name', '')
+        first = soldier.get('first_name', '')
+        full = soldier.get('full_name', '')
+
+        # Try last_name + first_name
+        key = normalize_name(last + ' ' + first)
+        pos_list = pos_by_name.get(key)
+
+        # Fallback: try from full_name (first two words)
+        if not pos_list and full:
+            full_parts = full.split()
+            if len(full_parts) >= 2:
+                key2 = normalize_name(full_parts[0] + ' ' + full_parts[1])
+                pos_list = pos_by_name.get(key2)
+                if pos_list:
+                    key = key2
+
+        if pos_list:
+            # Use the first available match, then remove it to handle duplicates
+            pos = pos_list.pop(0)
+            if not pos_list:
+                del pos_by_name[key]
+            soldier['pdf_page'] = pos['page']
+            soldier['pdf_y'] = round(pos['top'], 1)
+            soldier['pdf_file'] = pos['pdf_file']
+            matched += 1
+        else:
+            unmatched += 1
+
+    print(f"  Name-matched: {matched}, Unmatched: {unmatched} (positions: {len(positions)}, soldiers: {len(soldiers_json)})")
+    return soldiers_json
+
+
 def extract_ljubljanska(pdf_path, json_path):
     """Extract positions for Ljubljanska Brigada (two-column layout)."""
     print(f"\n{'='*60}")
@@ -464,7 +546,6 @@ def extract_ljubljanska(pdf_path, json_path):
                 continue
 
             page_width = float(page.width)
-            page_height = float(page.height)
             mid_x = page_width / 2
 
             # Check for start marker
@@ -472,7 +553,6 @@ def extract_ljubljanska(pdf_path, json_path):
             if not found_start:
                 if 'SEZNAM BORCEV' in page_text:
                     found_start = True
-                    # Continue processing this page
                 else:
                     continue
 
@@ -532,7 +612,15 @@ def extract_ljubljanska(pdf_path, json_path):
         soldiers = json.load(f)
 
     print(f"  Existing JSON has {len(soldiers)} soldiers")
-    soldiers = match_positions_to_soldiers(positions, soldiers)
+
+    # Clear any old position data before re-matching
+    for s in soldiers:
+        s.pop('pdf_page', None)
+        s.pop('pdf_y', None)
+        s.pop('pdf_file', None)
+
+    # Use name-based matching for Ljubljanska (two-column order differs from JSON order)
+    soldiers = match_positions_by_name(positions, soldiers)
 
     return soldiers
 
