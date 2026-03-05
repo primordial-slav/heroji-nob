@@ -21,6 +21,9 @@ export default function Navigation() {
           <Link href="/about" className={isActive('/about')}>
             O nama
           </Link>
+          <Link href="/izvori" className={isActive('/izvori')}>
+            Izvori
+          </Link>
           <Link href="/contact" className={isActive('/contact')}>
             Kontakt
           </Link>

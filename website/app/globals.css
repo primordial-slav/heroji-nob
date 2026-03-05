@@ -943,7 +943,7 @@ body::before {
 }
 
 .pdf-viewer-scroll {
-  max-height: 450px;
+  max-height: 250px;
   overflow: auto;
   position: relative;
   display: flex;
@@ -1012,9 +1012,153 @@ body::before {
   border-radius: 0 3px 3px 0;
 }
 
+/* PDF Viewer footer link */
+.pdf-viewer-footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  background: var(--bg-surface-alt);
+  border-top: 1px solid var(--border-light);
+}
+
+.pdf-viewer-footer a {
+  color: var(--text-accent);
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+
+.pdf-viewer-footer a:hover {
+  color: var(--text-accent-secondary);
+  text-decoration: underline;
+}
+
 /* Wider modal when PDF viewer is present */
 .modal-content.has-pdf {
   max-width: 800px;
+}
+
+/* ========== Izvori (Sources) Page ========== */
+.sources-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.source-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.source-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--shadow-md);
+}
+
+.source-card-thumb {
+  width: 100%;
+  max-height: 260px;
+  overflow: hidden;
+  background: var(--bg-surface-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.source-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.source-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem 1.1rem;
+}
+
+.source-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0 0 0.3rem;
+  line-height: 1.3;
+}
+
+.source-card-author {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 0.4rem;
+  font-style: italic;
+}
+
+.source-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.source-card-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: auto;
+}
+
+.source-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 4px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.source-btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: var(--header-text);
+  border: none;
+}
+
+.source-btn-primary:hover {
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+  box-shadow: 0 2px 6px var(--shadow-md);
+}
+
+.source-btn-secondary {
+  background: transparent;
+  color: var(--text-accent);
+  border: 1px solid var(--border-accent);
+}
+
+.source-btn-secondary:hover {
+  background: var(--bg-surface-alt);
+  border-color: var(--border-accent-dark);
 }
 
 /* ========== Responsive ========== */
@@ -1032,7 +1176,7 @@ body::before {
   }
 
   .pdf-viewer-scroll {
-    max-height: 300px;
+    max-height: 180px;
   }
 
   .modal-content.has-pdf {
@@ -1049,5 +1193,14 @@ body::before {
     padding: 0.35rem 0.5rem;
     font-size: 0.7rem;
     gap: 0.25rem;
+  }
+
+  .sources-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .source-card-thumb {
+    aspect-ratio: 5 / 4;
   }
 }

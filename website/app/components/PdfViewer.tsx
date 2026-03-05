@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useCallback } from 'react'
+import Link from 'next/link'
 import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
@@ -13,12 +14,13 @@ interface PdfViewerProps {
   pageNumber: number       // 1-indexed page to show
   yPosition: number        // Y coordinate in PDF points to scroll to
   xPosition: number        // X coordinate in PDF points from left edge
+  sourceHref?: string      // Link to the Sources page anchor for "View full document"
 }
 
-export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }: PdfViewerProps) {
+export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition, sourceHref }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
-  const [scale, setScale] = useState(2.0)
+  const [scale, setScale] = useState(2.25)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -56,7 +58,7 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }:
   const zoomOut = () => setScale(s => Math.max(0.5, s - 0.25))
   const resetView = () => {
     setCurrentPage(pageNumber)
-    setScale(2.0)
+    setScale(2.25)
     setLoading(true)
   }
 
@@ -138,6 +140,15 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }:
           )}
         </div>
       </div>
+
+      {/* Footer with link to full document */}
+      {sourceHref && (
+        <div className="pdf-viewer-footer">
+          <Link href={sourceHref}>
+            Pogledaj ceo dokument &rarr;
+          </Link>
+        </div>
+      )}
     </div>
   )
 }

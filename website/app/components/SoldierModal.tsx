@@ -14,6 +14,9 @@ interface SoldierModalProps {
 
 export default function SoldierModal({ soldier, unitName, onClose }: SoldierModalProps) {
   const hasPdfData = soldier.pdf_page != null && soldier.pdf_file != null
+  const sourceHref = soldier.pdf_file
+    ? `/izvori#${soldier.pdf_file.replace('.pdf', '')}`
+    : undefined
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -63,6 +66,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
                 pageNumber={soldier.pdf_page!}
                 yPosition={soldier.pdf_y ?? 0}
                 xPosition={soldier.pdf_x ?? 0}
+                sourceHref={sourceHref}
               />
             </Suspense>
           </div>

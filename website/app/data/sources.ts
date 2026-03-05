@@ -1,0 +1,75 @@
+export interface PdfSource {
+  id: string
+  title: string
+  author: string
+  pdfPath: string
+  thumbnail: string
+  brigadeName: string
+  description?: string
+}
+
+export const sources: PdfSource[] = [
+  {
+    id: 'prva-licka-proleterska',
+    title: 'Prva lička proleterska brigada',
+    author: 'Rajko Šarenac (ur.)',
+    pdfPath: '/pdfs/prva-licka-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-licka-proleterska.jpg',
+    brigadeName: 'Prva lička proleterska brigada "Marko Orešković"',
+    description: 'Monografija, Biblioteka Ratna prošlost naroda i narodnosti Jugoslavije, knj. 322'
+  },
+  {
+    id: 'prva-proleterska-1',
+    title: 'Prva proleterska brigada — tom 1',
+    author: 'Veljko Miladinović (ur.)',
+    pdfPath: '/pdfs/prva-proleterska-1.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-proleterska-1.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Spisak boraca — prvi tom (A–I)'
+  },
+  {
+    id: 'prva-proleterska-2',
+    title: 'Prva proleterska brigada — tom 2',
+    author: 'Veljko Miladinović (ur.)',
+    pdfPath: '/pdfs/prva-proleterska-2.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-proleterska-2.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Spisak boraca — drugi tom (I–O)'
+  },
+  {
+    id: 'prva-proleterska-3',
+    title: 'Prva proleterska brigada — tom 3',
+    author: 'Veljko Miladinović (ur.)',
+    pdfPath: '/pdfs/prva-proleterska-3.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-proleterska-3.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Spisak boraca — treći tom (O–Ž)'
+  },
+  {
+    id: 'druga-licka-spisak',
+    title: 'Druga lička proleterska brigada — spisak poginulih',
+    author: 'Vojnoistorijski institut',
+    pdfPath: '/pdfs/druga-licka-spisak.pdf',
+    thumbnail: '/images/pdf-thumbs/druga-licka-spisak.jpg',
+    brigadeName: 'Druga lička proleterska brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca i starešina brigade'
+  },
+  {
+    id: 'treca-proleterska-brigada',
+    title: 'Treća proleterska (sandžačka) brigada',
+    author: 'Žarko Vidović',
+    pdfPath: '/pdfs/treca-proleterska-brigada.pdf',
+    thumbnail: '/images/pdf-thumbs/treca-proleterska-brigada.jpg',
+    brigadeName: 'Treća proleterska (sandžačka) brigada',
+    description: 'Monografija, Biblioteka Ratna prošlost naših naroda, knj. 144'
+  },
+  {
+    id: 'ljubljanska-brigada',
+    title: '10. slovenska NOV brigada „Ljubljanska"',
+    author: 'Boris Vojlah',
+    pdfPath: '/pdfs/ljubljanska-brigada.pdf',
+    thumbnail: '/images/pdf-thumbs/ljubljanska-brigada.jpg',
+    brigadeName: '10. slovenska narodnoosvobodilna udarna brigada "Ljubljanska"',
+    description: 'Monografija Ljubljanske brigade'
+  }
+]
