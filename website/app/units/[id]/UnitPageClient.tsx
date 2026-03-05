@@ -132,7 +132,7 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
           {/* Per-page selector */}
           <div className="pagination-controls" style={{ marginTop: '1.5rem', marginBottom: '1rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-              <span style={{ color: '#6B1A1A', fontWeight: 'bold' }}>Prikaži po stranici:</span>
+              <span style={{ color: 'var(--text-accent-secondary)', fontWeight: 'bold' }}>Prikaži po stranici:</span>
               {[50, 100, 200].map(count => (
                 <button
                   key={count}
@@ -142,7 +142,7 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
                   {count}
                 </button>
               ))}
-              <span style={{ marginLeft: 'auto', color: '#6B1A1A' }}>
+              <span style={{ marginLeft: 'auto', color: 'var(--text-accent-secondary)' }}>
                 Stranica {currentPage} od {totalPages}
               </span>
             </div>
