@@ -52,10 +52,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
 
         {/* PDF Viewer Section */}
         {hasPdfData && (
-          <div style={{ marginTop: '1rem' }}>
-            <div className="modal-detail-row" style={{ marginBottom: '0.5rem' }}>
-              <span className="modal-label">Izvorni dokument:</span>
-            </div>
+          <div style={{ marginTop: '1.25rem' }}>
             <Suspense fallback={
               <div className="pdf-viewer-loading" style={{ padding: '2rem', textAlign: 'center' }}>
                 Učitavanje pregledača...

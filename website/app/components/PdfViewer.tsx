@@ -27,10 +27,7 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }:
   const onPageRenderSuccess = useCallback(() => {
     setLoading(false)
     if (containerRef.current && currentPage === pageNumber) {
-      // PDF coordinates are in points (72 points = 1 inch)
-      // react-pdf renders at the given scale, so multiply yPosition by scale
       const scrollTarget = yPosition * scale
-      // Center the view: scroll so the soldier's line is ~1/3 from the top
       const containerHeight = containerRef.current.clientHeight
       const scrollTop = Math.max(0, scrollTarget - containerHeight / 3)
       containerRef.current.scrollTop = scrollTop
@@ -73,24 +70,34 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }:
 
   return (
     <div className="pdf-viewer-container">
-      {/* Toolbar */}
-      <div className="pdf-viewer-toolbar">
-        <button onClick={goToPrevPage} disabled={currentPage <= 1} title="Prethodna strana">
-          &#8249;
-        </button>
-        <span className="pdf-viewer-page-info">
-          Strana {currentPage}{numPages ? ` / ${numPages}` : ''}
+      {/* Archival header */}
+      <div className="pdf-viewer-header">
+        <span className="pdf-viewer-header-star">&#9733;</span>
+        <span className="pdf-viewer-header-title">Izvorni dokument</span>
+        <span className="pdf-viewer-header-page">
+          str. {currentPage}{numPages ? ` / ${numPages}` : ''}
         </span>
-        <button onClick={goToNextPage} disabled={currentPage >= (numPages || 1)} title="Sledeća strana">
-          &#8250;
-        </button>
-        <span className="pdf-viewer-separator">|</span>
-        <button onClick={zoomOut} title="Umanji">&#8722;</button>
-        <span className="pdf-viewer-zoom-info">{Math.round(scale * 100)}%</span>
-        <button onClick={zoomIn} title="Uvećaj">&#43;</button>
+      </div>
+
+      {/* Controls */}
+      <div className="pdf-viewer-toolbar">
+        <div className="pdf-viewer-controls-group">
+          <button onClick={goToPrevPage} disabled={currentPage <= 1} title="Prethodna strana">
+            &#9664;
+          </button>
+          <button onClick={goToNextPage} disabled={currentPage >= (numPages || 1)} title="Sledeća strana">
+            &#9654;
+          </button>
+        </div>
+        <span className="pdf-viewer-separator" />
+        <div className="pdf-viewer-controls-group">
+          <button onClick={zoomOut} title="Umanji">&#8722;</button>
+          <span className="pdf-viewer-zoom-info">{Math.round(scale * 100)}%</span>
+          <button onClick={zoomIn} title="Uvećaj">&#43;</button>
+        </div>
         {currentPage !== pageNumber && (
           <>
-            <span className="pdf-viewer-separator">|</span>
+            <span className="pdf-viewer-separator" />
             <button onClick={resetView} title="Vrati na poziciju borca" className="pdf-viewer-reset-btn">
               &#8634; Nazad
             </button>
@@ -100,7 +107,7 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }:
 
       {/* Scrollable PDF area */}
       <div className="pdf-viewer-scroll" ref={containerRef}>
-        {loading && <div className="pdf-viewer-loading">Učitavanje PDF-a...</div>}
+        {loading && <div className="pdf-viewer-loading">Učitavanje dokumenta...</div>}
         <div style={{ position: 'relative' }}>
           <Document
             file={pdfFile}
