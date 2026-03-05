@@ -940,9 +940,31 @@ body::before {
   position: absolute;
   pointer-events: none;
   z-index: 10;
-  background-color: rgba(255, 220, 50, 0.3);
-  border: 2px solid rgba(200, 160, 0, 0.7);
-  border-radius: 3px;
+  background-color: rgba(255, 220, 50, 0.25);
+  border-top: 2px solid rgba(200, 160, 0, 0.8);
+  border-bottom: 2px solid rgba(200, 160, 0, 0.8);
+}
+
+.pdf-highlight-box::before,
+.pdf-highlight-box::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 6px;
+  border: 2px solid rgba(200, 160, 0, 0.8);
+}
+
+.pdf-highlight-box::before {
+  left: -2px;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.pdf-highlight-box::after {
+  right: -2px;
+  border-left: none;
+  border-radius: 0 3px 3px 0;
 }
 
 /* Wider modal when PDF viewer is present */
