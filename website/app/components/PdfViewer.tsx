@@ -20,7 +20,7 @@ interface PdfViewerProps {
 export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition, sourceHref }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
-  const [scale, setScale] = useState(2.25)
+  const [scale, setScale] = useState(2.0)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -58,7 +58,7 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition, s
   const zoomOut = () => setScale(s => Math.max(0.5, s - 0.25))
   const resetView = () => {
     setCurrentPage(pageNumber)
-    setScale(2.25)
+    setScale(2.0)
     setLoading(true)
   }
 

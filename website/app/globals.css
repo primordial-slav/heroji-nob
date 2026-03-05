@@ -943,7 +943,7 @@ body::before {
 }
 
 .pdf-viewer-scroll {
-  max-height: 250px;
+  max-height: 125px;
   overflow: auto;
   position: relative;
   display: flex;
@@ -1176,7 +1176,7 @@ body::before {
   }
 
   .pdf-viewer-scroll {
-    max-height: 180px;
+    max-height: 90px;
   }
 
   .modal-content.has-pdf {
