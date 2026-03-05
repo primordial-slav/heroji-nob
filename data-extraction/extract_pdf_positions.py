@@ -89,35 +89,24 @@ def extract_lines_with_positions(page, y_tolerance=3):
     return lines
 
 
-def match_positions_to_soldiers(positions, soldiers_json, tolerance=0.8):
+def match_positions_to_soldiers(positions, soldiers_json):
     """
-    Match extracted positions to existing soldier JSON records.
-
-    Strategy: The positions list and soldiers_json should be in the same order
-    since they come from the same source. We match by index.
-    If counts don't match, we try fuzzy text matching as fallback.
+    Match extracted positions to existing soldier JSON records by name.
+    Falls back to index-based matching only if name matching fails badly.
     """
     if not positions:
         print("  WARNING: No positions extracted!")
         return soldiers_json
 
-    # Simple index-based matching
-    matched = 0
-    unmatched = 0
+    # Clear old position data
+    for s in soldiers_json:
+        s.pop('pdf_page', None)
+        s.pop('pdf_y', None)
+        s.pop('pdf_x', None)
+        s.pop('pdf_file', None)
 
-    for i, soldier in enumerate(soldiers_json):
-        if i < len(positions):
-            pos = positions[i]
-            soldier['pdf_page'] = pos['page']
-            soldier['pdf_y'] = round(pos['top'], 1)
-            soldier['pdf_file'] = pos['pdf_file']
-            matched += 1
-        else:
-            unmatched += 1
-
-    print(f"  Matched: {matched}, Unmatched: {unmatched} (positions: {len(positions)}, soldiers: {len(soldiers_json)})")
-
-    return soldiers_json
+    # Always use name-based matching for robustness
+    return match_positions_by_name(positions, soldiers_json)
 
 
 # ============================================================
@@ -158,6 +147,7 @@ def extract_druga_licka(pdf_path, json_path):
                     positions.append({
                         'page': page_num,
                         'top': line['top'],
+                        'x0': line.get('x0', 0),
                         'pdf_file': pdf_filename,
                         'text_preview': text[:80]
                     })
@@ -265,6 +255,7 @@ def extract_treca_proleterska(pdf_path, json_path):
                     positions.append({
                         'page': page_num,
                         'top': line['top'],
+                        'x0': line.get('x0', 0),
                         'pdf_file': pdf_filename,
                         'text_preview': text[:80]
                     })
@@ -344,6 +335,7 @@ def extract_prva_proleterska(pdf_paths, json_path):
                         positions.append({
                             'page': page_num,
                             'top': line['top'],
+                            'x0': line.get('x0', 0),
                             'pdf_file': pdf_filename,
                             'text_preview': text[:80]
                         })
@@ -415,6 +407,7 @@ def extract_prva_licka(pdf_path, json_path):
                     positions.append({
                         'page': page_num,
                         'top': line['top'],
+                        'x0': line.get('x0', 0),
                         'pdf_file': pdf_filename,
                         'text_preview': text[:80]
                     })
@@ -506,6 +499,7 @@ def match_positions_by_name(positions, soldiers_json):
                 del pos_by_name[key]
             soldier['pdf_page'] = pos['page']
             soldier['pdf_y'] = round(pos['top'], 1)
+            soldier['pdf_x'] = round(pos.get('x0', 0), 1)
             soldier['pdf_file'] = pos['pdf_file']
             matched += 1
         else:
@@ -602,6 +596,7 @@ def extract_ljubljanska(pdf_path, json_path):
                         positions.append({
                             'page': page_num,
                             'top': line['top'],
+                            'x0': col_words[0]['x0'],
                             'pdf_file': pdf_filename,
                             'text_preview': text[:80]
                         })
@@ -612,15 +607,7 @@ def extract_ljubljanska(pdf_path, json_path):
         soldiers = json.load(f)
 
     print(f"  Existing JSON has {len(soldiers)} soldiers")
-
-    # Clear any old position data before re-matching
-    for s in soldiers:
-        s.pop('pdf_page', None)
-        s.pop('pdf_y', None)
-        s.pop('pdf_file', None)
-
-    # Use name-based matching for Ljubljanska (two-column order differs from JSON order)
-    soldiers = match_positions_by_name(positions, soldiers)
+    soldiers = match_positions_to_soldiers(positions, soldiers)
 
     return soldiers
 

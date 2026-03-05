@@ -65,6 +65,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
                 pdfFile={`/pdfs/${soldier.pdf_file}`}
                 pageNumber={soldier.pdf_page!}
                 yPosition={soldier.pdf_y ?? 0}
+                xPosition={soldier.pdf_x ?? 0}
               />
             </Suspense>
           </div>

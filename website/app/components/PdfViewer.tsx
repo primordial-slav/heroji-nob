@@ -12,9 +12,10 @@ interface PdfViewerProps {
   pdfFile: string          // URL path like "/pdfs/prva-proleterska-1.pdf"
   pageNumber: number       // 1-indexed page to show
   yPosition: number        // Y coordinate in PDF points to scroll to
+  xPosition: number        // X coordinate in PDF points from left edge
 }
 
-export default function PdfViewer({ pdfFile, pageNumber, yPosition }: PdfViewerProps) {
+export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
   const [scale, setScale] = useState(1.5)
@@ -116,16 +117,17 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition }: PdfViewerP
             />
           </Document>
 
-          {/* Highlight indicator for the soldier's position */}
+          {/* Highlight box at the soldier's position */}
           {currentPage === pageNumber && !loading && (
             <div
-              className="pdf-viewer-highlight"
+              className="pdf-highlight-box"
               style={{
-                top: `${yPosition * scale}px`,
+                top: `${(yPosition - 2) * scale}px`,
+                left: `${Math.max(0, xPosition - 5) * scale}px`,
+                width: xPosition > 200 ? `${250 * scale}px` : `${400 * scale}px`,
+                height: `${18 * scale}px`,
               }}
-            >
-              <div className="pdf-highlight-bar" />
-            </div>
+            />
           )}
         </div>
       </div>
