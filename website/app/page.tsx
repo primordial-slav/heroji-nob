@@ -114,7 +114,7 @@ export default function Home() {
   return (
     <div>
       <section className="search-section">
-        <h2 style={{ marginBottom: '1rem' }}>Pretraži partizane</h2>
+        <h2 style={{ marginBottom: '1rem' }}>Pretraži borce</h2>
         <input
           type="text"
           className="search-input"
