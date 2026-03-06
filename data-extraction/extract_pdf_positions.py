@@ -520,7 +520,13 @@ def extract_ljubljanska(pdf_path, json_path):
     pdf_filename = 'ljubljanska-brigada.pdf'
 
     def is_soldier_entry(text):
-        return bool(re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ]', text))
+        # Normal: "Surname Firstname" with uppercase first char
+        if re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ]', text):
+            return True
+        # OCR fix: lowercase diacritical first char (š, ž, č, ć, đ)
+        if re.match(r'^[šžčćđ][a-zčćžšđ]{2,}\s+[A-ZČĆŽŠĐ][a-zčćžšđ]', text):
+            return True
+        return False
 
     positions = []
     found_start = False
@@ -541,8 +547,9 @@ def extract_ljubljanska(pdf_path, json_path):
             if not words:
                 continue
 
-            page_width = float(page.width)
-            mid_x = page_width / 2
+            # Column boundary: left column max x0 ≈ 264, right column min x0 ≈ 293
+            # Use 280 as threshold (midpoint of the gap between columns)
+            col_boundary = 280
 
             # Check for start marker
             page_text = page.extract_text() or ''
@@ -557,8 +564,8 @@ def extract_ljubljanska(pdf_path, json_path):
                 break
 
             # For two-column layout, split words into left and right columns
-            left_words = [w for w in words if w['x0'] < mid_x]
-            right_words = [w for w in words if w['x0'] >= mid_x]
+            left_words = [w for w in words if w['x0'] < col_boundary]
+            right_words = [w for w in words if w['x0'] >= col_boundary]
 
             # Process each column separately
             for col_words in [left_words, right_words]:

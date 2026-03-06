@@ -1,164 +1,185 @@
+"""
+Parser for Ljubljanska (10. SNOUB) brigade soldier data.
+
+The PDF has a two-column layout. Previous versions used extract_text() which
+merges both columns into single lines, causing soldiers from the right column
+to get merged into entries from the left column.
+
+This version uses extract_words() to get word positions, then splits into
+left/right columns by x-coordinate before grouping into lines. This gives
+clean per-column text and eliminates cross-column merging.
+
+PDF structure:
+  - Page 394: "SEZNAM BORCEV" header
+  - Pages 396-447: Soldier list (two columns per page)
+  - Page 448+: "Kazalo osebnih imen" (name index)
+
+Soldier entry format (Slovenian):
+  Surname Firstname - PartisanName, year, place, info
+  e.g. "Amon Ervin - Žarko, 1914, Kranj, utonil 22.8.1944 v Krki"
+"""
 import pdfplumber
 import csv
 import json
 import re
+import sys
+import os
 
-def extract_text_from_pdf(pdf_path):
-    """Extract text from all pages of the PDF"""
-    pages_text = []
+sys.stdout.reconfigure(encoding='utf-8')
+
+# Page range for soldier list
+SOLDIER_START_PAGE = 396
+SOLDIER_END_PAGE = 447
+
+
+def is_soldier_entry(text):
+    """Check if a line starts a new soldier entry.
+
+    Slovenian format: Capitalized Surname followed by capitalized Firstname.
+    Examples: "Abranovič Jože", "Amon Ervin - Žarko, 1914"
+
+    Also handles OCR errors where diacritical characters get lowercased:
+    "špiler Anton" (should be "Špiler"), "šrok Prane" (should be "Šrok")
+    """
+    text = text.strip()
+    if not text:
+        return False
+
+    # Skip single-letter section headers (A, B, C, ...)
+    if len(text) <= 2 and text.isupper():
+        return False
+
+    # Skip page numbers
+    if re.match(r'^\d{1,3}$', text):
+        return False
+
+    # Pattern 1: Normal capitalized surname + space + capitalized first name
+    # Includes Slovenian diacritics: č, ć, ž, š, đ
+    if re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ]', text):
+        return True
+
+    # Pattern 2: OCR error - lowercase diacritical first character (š, ž, č, ć, đ)
+    # followed by rest of surname (3+ chars) and capitalized first name
+    # Examples: "špiler Anton", "šrok Prane", "špolar Ivan"
+    if re.match(r'^[šžčćđ][a-zčćžšđ]{2,}\s+[A-ZČĆŽŠĐ][a-zčćžšđ]', text):
+        return True
+
+    return False
+
+
+def group_words_into_lines(words, y_tolerance=4):
+    """Group words into lines based on Y-coordinate proximity.
+
+    Returns list of dicts: [{'text': '...', 'top': float, 'x0': float}, ...]
+    """
+    if not words:
+        return []
+
+    words = sorted(words, key=lambda w: (w['top'], w['x0']))
+    lines = []
+    current_line = [words[0]]
+    current_top = words[0]['top']
+
+    for w in words[1:]:
+        if abs(w['top'] - current_top) <= y_tolerance:
+            current_line.append(w)
+        else:
+            current_line.sort(key=lambda ww: ww['x0'])
+            text = ' '.join(ww['text'] for ww in current_line)
+            avg_top = sum(ww['top'] for ww in current_line) / len(current_line)
+            x0 = current_line[0]['x0']
+            lines.append({'text': text.strip(), 'top': avg_top, 'x0': x0})
+            current_line = [w]
+            current_top = w['top']
+
+    if current_line:
+        current_line.sort(key=lambda ww: ww['x0'])
+        text = ' '.join(ww['text'] for ww in current_line)
+        avg_top = sum(ww['top'] for ww in current_line) / len(current_line)
+        x0 = current_line[0]['x0']
+        lines.append({'text': text.strip(), 'top': avg_top, 'x0': x0})
+
+    return lines
+
+
+def extract_soldiers_from_pdf(pdf_path):
+    """Extract soldier entries using word-level two-column splitting."""
+    all_entries = []  # List of raw entry strings
+
     with pdfplumber.open(pdf_path) as pdf:
         total_pages = len(pdf.pages)
         print(f"Total pages: {total_pages}")
+        print(f"Processing soldier list pages {SOLDIER_START_PAGE}-{SOLDIER_END_PAGE}")
 
-        for i, page in enumerate(pdf.pages):
-            if i % 50 == 0:
-                print(f"Processing page {i+1}/{total_pages}...")
-            text = page.extract_text()
-            if text:
-                pages_text.append(text)
+        for page_idx in range(SOLDIER_START_PAGE - 1, min(SOLDIER_END_PAGE, total_pages)):
+            page_num = page_idx + 1
+            page = pdf.pages[page_idx]
 
-    return pages_text
-
-def smart_split_two_columns(line):
-    """
-    Intelligently split a line that contains two soldier entries from a two-column layout.
-    Strategy: Look for patterns where two capitalized names appear close together,
-    indicating the boundary between left and right columns.
-    """
-    # Pattern: Find positions where we have "Name1 Name2" where both are capitalized
-    # and Name2 starts a new entry (followed by year or more names)
-
-    # Find all capitalized words (potential last names)
-    cap_pattern = r'[A-ZČĆŽŠĐ][a-zčćžšđčćžšđ]+'
-    matches = list(re.finditer(cap_pattern, line))
-
-    if len(matches) < 3:
-        # Not enough matches for two columns
-        return [line]
-
-    # Look for the split point: where we have a capitalized word followed by another
-    # capitalized word that likely starts a new entry
-    # Heuristic: If we see "Word1 Word2" where Word2 is followed by a comma and numbers (birth year),
-    # or followed by another capitalized word, it's likely a new entry
-
-    for i in range(1, len(matches) - 1):
-        # Check if this could be the start of the right column
-        pos = matches[i].start()
-        # Get text after this position
-        after = line[pos:]
-
-        # Check if it looks like the start of a new entry:
-        # Pattern: "LastName FirstName, year" or "LastName FirstName - Partisan"
-        if re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+\s*[-,]', after):
-            # This looks like a new entry
-            left = line[:pos].strip()
-            right = after.strip()
-            return [left, right]
-
-    # If no clear split found, return as is
-    return [line]
-
-def parse_soldiers(pages_text):
-    """Parse soldier information from extracted text"""
-    soldiers = []
-
-    # Combine all pages into one text
-    full_text = '\n'.join(pages_text)
-    lines = full_text.split('\n')
-
-    # Find where the actual soldier list starts
-    start_index = 0
-    for i, line in enumerate(lines):
-        if 'SEZNAM BORCEV' in line:
-            # Skip the introduction and start from the "A" section
-            for j in range(i, min(i + 60, len(lines))):
-                # Look for first actual name entry (starts with "A " or similar)
-                if re.match(r'^[A-Z]\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+', lines[j]):
-                    start_index = j
-                    print(f"Found soldier list starting at line {start_index}")
-                    break
-            if start_index > 0:
+            # Check for end marker
+            page_text = page.extract_text() or ''
+            if 'Kazalo osebnih' in page_text or 'Kazalo krajevnih' in page_text:
+                print(f"  Found index on page {page_num}, stopping")
                 break
 
-    if start_index == 0:
-        print("Warning: Could not find soldier list start. Starting from beginning.")
+            # Get word-level data
+            words = page.extract_words(
+                x_tolerance=3,
+                y_tolerance=3,
+                keep_blank_chars=True
+            )
 
-    lines = lines[start_index:]
+            if not words:
+                continue
 
-    # Parse soldiers by processing lines and handling two-column layout
-    left_entry = []
-    right_entry = []
+            # Column boundary: left column max x0 ≈ 264, right column min x0 ≈ 293
+            # Use 280 as threshold (midpoint of the gap between columns)
+            col_boundary = 280
 
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
+            # Split words into left and right columns
+            left_words = [w for w in words if w['x0'] < col_boundary]
+            right_words = [w for w in words if w['x0'] >= col_boundary]
 
-        # Stop at table of contents
-        if 'Kazalo' in line or 'kazalo' in line or 'KAZALO' in line:
-            break
+            # Process each column independently
+            for col_name, col_words in [('L', left_words), ('R', right_words)]:
+                if not col_words:
+                    continue
 
-        # Try to split into two columns
-        split_lines = smart_split_two_columns(line)
+                lines = group_words_into_lines(col_words)
 
-        if len(split_lines) == 2:
-            # We have both columns
-            left_part = split_lines[0]
-            right_part = split_lines[1]
+                for line in lines:
+                    text = line['text'].strip()
+                    if not text:
+                        continue
 
-            # Check if left_part is a new entry or continuation
-            if re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ]', left_part):
-                # New entry on left
-                if left_entry:
-                    # Save previous left entry
-                    soldiers.append(parse_soldier_entry(' '.join(left_entry)))
-                left_entry = [left_part]
-            else:
-                # Continuation of left entry
-                left_entry.append(left_part)
+                    # Skip page numbers at bottom
+                    if re.match(r'^\d{1,3}$', text):
+                        continue
 
-            # Check if right_part is a new entry or continuation
-            if re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ]', right_part):
-                # New entry on right
-                if right_entry:
-                    # Save previous right entry
-                    soldiers.append(parse_soldier_entry(' '.join(right_entry)))
-                right_entry = [right_part]
-            else:
-                # Continuation of right entry
-                right_entry.append(right_part)
+                    if is_soldier_entry(text):
+                        # Start a new entry
+                        all_entries.append(text)
+                    else:
+                        # Continuation of previous entry
+                        if all_entries:
+                            all_entries[-1] += ' ' + text
 
-        else:
-            # Single column or unclear - check if it's a new entry
-            if re.match(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ]', line):
-                # Looks like a new entry - save to left column by default
-                if left_entry:
-                    soldiers.append(parse_soldier_entry(' '.join(left_entry)))
-                left_entry = [line]
-            else:
-                # Continuation - add to left entry
-                if left_entry:
-                    left_entry.append(line)
+            if page_num % 10 == 0:
+                print(f"  Page {page_num}... ({len(all_entries)} entries so far)")
 
-    # Don't forget last entries
-    if left_entry:
-        soldiers.append(parse_soldier_entry(' '.join(left_entry)))
-    if right_entry:
-        soldiers.append(parse_soldier_entry(' '.join(right_entry)))
+    print(f"  Extracted {len(all_entries)} raw entries")
+    return all_entries
 
-    # Filter out invalid entries
-    soldiers = [s for s in soldiers if s['last_name']]
-
-    return soldiers
 
 def parse_soldier_entry(entry_text):
-    """Parse a single soldier entry into structured data"""
-    # Slovenian format: Last_name First_name - Partisan_name, year, place, additional info
-    # Example: "Abranovič Jože, 1920, Ljubljana"
-    # Example: "Amon Ervin - Žarko, 1914, Kranj, utonil 22.8.1944 v Krki"
-    # Example: "Kočevar Franc. 1926. Suhor, Metlika" (name stops at year)
+    """Parse a single soldier entry into structured data.
 
-    # First, separate the name from additional info
+    Slovenian format: Surname Firstname - PartisanName, year, place, info
+    Examples:
+        "Abranovič Jože, 1920, Ljubljana"
+        "Amon Ervin - Žarko, 1914, Kranj, utonil 22.8.1944 v Krki"
+        "Kočevar Franc. 1926. Suhor, Metlika"
+    """
+    # Separate the name from additional info
     # Strategy: Look for year patterns (4 digits) which indicate start of additional info
 
     # Split by comma to get rough separation
@@ -167,11 +188,10 @@ def parse_soldier_entry(entry_text):
     rest_info = parts[1].strip() if len(parts) > 1 else ''
 
     # Check if name_and_maybe_year contains a year (4 digits)
-    # Pattern: Look for year like "1926" or "1926."
     year_match = re.search(r'\b(19\d{2}|18\d{2})\b', name_and_maybe_year)
 
     if year_match:
-        # Split at the year - everything before is name, year and after is additional info
+        # Split at the year
         year_start = year_match.start()
         name_part = name_and_maybe_year[:year_start].strip()
         year_and_rest = name_and_maybe_year[year_start:].strip()
@@ -182,7 +202,6 @@ def parse_soldier_entry(entry_text):
         else:
             additional_info = year_and_rest
     else:
-        # No year found in first part, use original split
         name_part = name_and_maybe_year
         additional_info = rest_info
 
@@ -202,7 +221,6 @@ def parse_soldier_entry(entry_text):
 
     # Remove partisan name if present (after dash)
     if '-' in name_part:
-        # Split on dash to separate real name from partisan name
         before_dash = name_part.split('-')[0].strip()
         name_words = before_dash.split()
 
@@ -231,7 +249,6 @@ def parse_soldier_entry(entry_text):
             'additional_info': additional_info
         }
     else:
-        # 3 or more: last name, middle name(s), first name
         return {
             'last_name': name_words[0],
             'middle_name': ' '.join(name_words[1:-1]),
@@ -239,44 +256,69 @@ def parse_soldier_entry(entry_text):
             'additional_info': additional_info
         }
 
+
 def save_to_csv(soldiers, output_path):
-    """Save soldiers data to CSV file"""
+    """Save soldiers data to CSV file."""
     with open(output_path, 'w', newline='', encoding='utf-8-sig') as csvfile:
         fieldnames = ['last_name', 'middle_name', 'first_name', 'additional_info']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
         writer.writeheader()
         for soldier in soldiers:
             writer.writerow(soldier)
-
     print(f"Saved {len(soldiers)} soldiers to {output_path}")
+
 
 def save_to_json(soldiers, output_path):
-    """Save soldiers data to JSON file"""
+    """Save soldiers data to JSON file."""
     with open(output_path, 'w', encoding='utf-8') as jsonfile:
         json.dump(soldiers, jsonfile, ensure_ascii=False, indent=2)
-
     print(f"Saved {len(soldiers)} soldiers to {output_path}")
 
+
 if __name__ == '__main__':
-    # Use already extracted text to save time
-    extracted_text_path = '../01-data/processed/ljubljanska_extracted.txt'
+    pdf_path = '../website/public/pdfs/ljubljanska-brigada.pdf'
 
-    print("Loading extracted text...")
-    with open(extracted_text_path, 'r', encoding='utf-8') as f:
-        text = f.read()
-    pages_text = text.split('\n')
+    if not os.path.exists(pdf_path):
+        pdf_path = 'website/public/pdfs/ljubljanska-brigada.pdf'
+        if not os.path.exists(pdf_path):
+            print("Error: PDF not found!")
+            sys.exit(1)
 
-    print("\nParsing soldiers with improved two-column handling...")
-    soldiers = parse_soldiers([text])
+    print("Extracting soldiers from PDF using word-level column splitting...")
+    raw_entries = extract_soldiers_from_pdf(pdf_path)
+
+    print("\nParsing soldier entries...")
+    soldiers = []
+    for entry in raw_entries:
+        soldier = parse_soldier_entry(entry)
+        if soldier['last_name']:
+            soldiers.append(soldier)
 
     print(f"\nTotal soldiers found: {len(soldiers)}")
 
-    # Save to CSV and JSON
+    # Check for entries with very long additional_info (likely still merged)
+    long_entries = [s for s in soldiers if len(s.get('additional_info', '')) > 200]
+    print(f"Entries with additional_info > 200 chars: {len(long_entries)}")
+    if long_entries:
+        print("\nSuspect entries (possibly merged):")
+        for s in long_entries[:5]:
+            name = f"{s['last_name']} {s['first_name']}"
+            print(f"  {name}: {s['additional_info'][:120]}...")
+
+    # Show first 10 entries
+    print("\nFirst 10 entries:")
+    for i, s in enumerate(soldiers[:10], 1):
+        name = f"{s['last_name']} {s['first_name']}"
+        info = s['additional_info'][:60] if s['additional_info'] else "(no info)"
+        print(f"  {i}. {name}")
+        print(f"     {info}")
+
+    # Save
+    os.makedirs('../01-data/processed', exist_ok=True)
     csv_path = '../01-data/processed/ljubljanska_soldiers_v2.csv'
     json_path = '../website/public/ljubljanska-soldiers.json'
 
     save_to_csv(soldiers, csv_path)
     save_to_json(soldiers, json_path)
 
-    print("\nDone! Check the CSV file to verify the data quality.")
+    print("\nDone!")
