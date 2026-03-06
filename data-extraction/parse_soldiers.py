@@ -25,15 +25,19 @@ def is_new_entry(line):
     if len(line) <= 2 and line.isupper():
         return False
 
-    # Pattern 1: All caps last name(s), optional middle initial(s) with periods, capitalized first name
+    # Pattern 1: All caps last name(s) (may be hyphenated), optional middle initial(s), capitalized first name
     # Examples: "KOVAČEVIĆ Marko", "APOSTOLOVIĆ M. Slobodan", "KOVAČEVIĆ MILIĆ Marko"
-    pattern1 = r'^[A-ZČĆŽŠĐ]{2,}(\s+[A-ZČĆŽŠĐ]{2,})*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
+    pattern1 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+(\s+[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+)*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
 
-    # Pattern 2: ALL CAPS names (for names that are entirely capitalized)
-    # Examples: "KOVAČEVIĆ JOCO", "MARKOVIĆ PETAR"
-    pattern2 = r'^[A-ZČĆŽŠĐ]{2,}\s+[A-ZČĆŽŠĐ]{2,}(\s*,|\s+[A-ZČĆŽŠĐ])'
+    # Pattern 2: ALL CAPS names with optional middle initials, may end with asterisk
+    # Examples: "KOVAČEVIĆ JOCO,", "MAMUŠIN P. MIJO,", "JAKŠIĆ-KERKEZ M. SMILJA,"
+    pattern2 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ]{2,}\*?(\s*,|\s+[A-ZČĆŽŠĐ])'
 
-    return bool(re.match(pattern1, line)) or bool(re.match(pattern2, line))
+    # Pattern 3: Names ending with asterisk (strong boundary signal)
+    # Examples: "GUJANIČIĆ BOGDAN*", "TANOVIĆ SLOBODANKA DANA*"
+    pattern3 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+(\s+[A-ZČĆŽŠĐ]{2,})+\*'
+
+    return bool(re.match(pattern1, line)) or bool(re.match(pattern2, line)) or bool(re.match(pattern3, line))
 
 
 def parse_soldier_entry(entry_text):

@@ -285,8 +285,9 @@ def extract_prva_proleterska(pdf_paths, json_path):
 
     def is_new_entry(text):
         pattern1 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+(\s+[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+)*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
-        pattern2 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+\s+[A-ZČĆŽŠĐ]{2,}(\s*,|\s+[A-ZČĆŽŠĐ])'
-        return bool(re.match(pattern1, text)) or bool(re.match(pattern2, text))
+        pattern2 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ]{2,}\*?(\s*,|\s+[A-ZČĆŽŠĐ])'
+        pattern3 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+(\s+[A-ZČĆŽŠĐ]{2,})+\*'
+        return bool(re.match(pattern1, text)) or bool(re.match(pattern2, text)) or bool(re.match(pattern3, text))
 
     positions = []
     found_start = False
@@ -366,9 +367,10 @@ def extract_prva_licka(pdf_path, json_path):
             return False
         if len(text) <= 2 and text.isupper():
             return False
-        pattern1 = r'^[A-ZČĆŽŠĐ]{2,}(\s+[A-ZČĆŽŠĐ]{2,})*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
-        pattern2 = r'^[A-ZČĆŽŠĐ]{2,}\s+[A-ZČĆŽŠĐ]{2,}(\s*,|\s+[A-ZČĆŽŠĐ])'
-        return bool(re.match(pattern1, text)) or bool(re.match(pattern2, text))
+        pattern1 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+(\s+[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+)*\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ][a-zčćžšđ]'
+        pattern2 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+\s+([A-ZČĆŽŠĐ]\.?\s+)*[A-ZČĆŽŠĐ]{2,}\*?(\s*,|\s+[A-ZČĆŽŠĐ])'
+        pattern3 = r'^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\-]+(\s+[A-ZČĆŽŠĐ]{2,})+\*'
+        return bool(re.match(pattern1, text)) or bool(re.match(pattern2, text)) or bool(re.match(pattern3, text))
 
     positions = []
     # The soldier list starts deep in this PDF (around page 557+ based on line 28107)
