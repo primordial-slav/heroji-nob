@@ -1,6 +1,6 @@
 'use client'
 
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import type { Soldier } from '@/app/lib/types'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
@@ -17,6 +17,35 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
   const sourceHref = soldier.pdf_file
     ? `/izvori#${soldier.pdf_file.replace('.pdf', '')}`
     : undefined
+
+  const [showReportForm, setShowReportForm] = useState(false)
+  const [reportText, setReportText] = useState('')
+  const [reportStatus, setReportStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+
+  const handleReport = async () => {
+    if (!reportText.trim()) return
+    setReportStatus('sending')
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/boris.papic96@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `Prijava greške: ${soldier.full_name} (${soldier.soldier_id})`,
+          Borac: soldier.full_name,
+          ID: soldier.soldier_id,
+          Jedinica: unitName || soldier.unit || '',
+          'Opis greške': reportText,
+        }),
+      })
+      if (res.ok) {
+        setReportStatus('sent')
+      } else {
+        setReportStatus('error')
+      }
+    } catch {
+      setReportStatus('error')
+    }
+  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -53,18 +82,52 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
           )}
         </div>
 
-        {/* Report Error Button */}
-        <a
-          href={`mailto:boris.papic96@gmail.com?subject=${encodeURIComponent(
-            `Prijava greške: ${soldier.full_name} (${soldier.soldier_id})`
-          )}&body=${encodeURIComponent(
-            `Borac: ${soldier.full_name}\nID: ${soldier.soldier_id}\nJedinica: ${unitName || soldier.unit || ''}\n\nOpis greške:\n`
-          )}`}
-          className="report-error-link"
-          onClick={(e) => e.stopPropagation()}
-        >
-          Prijavi grešku
-        </a>
+        {/* Report Error */}
+        {!showReportForm && reportStatus !== 'sent' && (
+          <button
+            className="report-error-link"
+            onClick={() => setShowReportForm(true)}
+          >
+            Prijavi grešku
+          </button>
+        )}
+
+        {showReportForm && reportStatus === 'idle' && (
+          <div className="report-form">
+            <textarea
+              className="report-textarea"
+              placeholder="Opišite grešku..."
+              value={reportText}
+              onChange={(e) => setReportText(e.target.value)}
+              rows={3}
+            />
+            <div className="report-actions">
+              <button
+                className="report-submit"
+                onClick={handleReport}
+                disabled={!reportText.trim()}
+              >
+                Pošalji
+              </button>
+              <button
+                className="report-cancel"
+                onClick={() => { setShowReportForm(false); setReportText('') }}
+              >
+                Otkaži
+              </button>
+            </div>
+          </div>
+        )}
+
+        {reportStatus === 'sending' && (
+          <p className="report-status">Slanje...</p>
+        )}
+        {reportStatus === 'sent' && (
+          <p className="report-status report-success">Hvala na prijavi!</p>
+        )}
+        {reportStatus === 'error' && (
+          <p className="report-status report-error-msg">Greška pri slanju. Pokušajte ponovo.</p>
+        )}
 
         {/* PDF Viewer Section */}
         {hasPdfData && (
