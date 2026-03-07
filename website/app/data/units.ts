@@ -75,7 +75,7 @@ export const units: Unit[] = [
     name: '2. dalmatinska proleterska udarna brigada',
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. godine. Popis boraca brigade.',
-    image: '/images/placeholder.jpg',
+    image: '/images/2-dalmatinska-brigada.jpg',
     soldierCount: 5877,
     dataFile: '/2-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf']
@@ -85,7 +85,7 @@ export const units: Unit[] = [
     name: '4. splitska udarna brigada',
     nameEn: '4th Split Assault Brigade',
     description: 'Formirana septembra 1943. godine. Popis poginulih i preživjelih boraca.',
-    image: '/images/placeholder.jpg',
+    image: '/images/4-splitska-brigada.jpg',
     soldierCount: 3092,
     dataFile: '/4-splitska-soldiers.json',
     pdfFiles: ['/pdfs/4-splitska-brigada.pdf']
@@ -95,7 +95,7 @@ export const units: Unit[] = [
     name: 'Prva vojvođanska brigada',
     nameEn: '1st Vojvodina Brigade',
     description: 'Formirana 1944. godine. Spisak boraca brigade.',
-    image: '/images/placeholder.jpg',
+    image: '/images/prva-vojvodjanska-brigada.jpg',
     soldierCount: 1487,
     dataFile: '/prva-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/prva-vojvodjanska.pdf']

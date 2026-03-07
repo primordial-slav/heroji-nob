@@ -86,7 +86,7 @@ export const sources: PdfSource[] = [
     title: '2. dalmatinska proleterska udarna brigada',
     author: 'Nikola Anić',
     pdfPath: '/pdfs/2-dalmatinska-proleterska.pdf',
-    thumbnail: '/images/pdf-thumbs/placeholder.jpg',
+    thumbnail: '/images/2-dalmatinska-brigada.jpg',
     brigadeName: '2. dalmatinska proleterska udarna brigada',
     description: 'Popis boraca 2. dalmatinske proleterske brigade NOVJ'
   },
@@ -95,7 +95,7 @@ export const sources: PdfSource[] = [
     title: '4. splitska udarna brigada',
     author: 'Vinko Uvodić (ur.)',
     pdfPath: '/pdfs/4-splitska-brigada.pdf',
-    thumbnail: '/images/pdf-thumbs/placeholder.jpg',
+    thumbnail: '/images/4-splitska-brigada.jpg',
     brigadeName: '4. splitska udarna brigada',
     description: 'Popis poginulih i preživjelih boraca brigade'
   },
@@ -104,7 +104,7 @@ export const sources: PdfSource[] = [
     title: 'Prva vojvođanska brigada',
     author: 'Vojnoistorijski institut',
     pdfPath: '/pdfs/prva-vojvodjanska.pdf',
-    thumbnail: '/images/pdf-thumbs/placeholder.jpg',
+    thumbnail: '/images/prva-vojvodjanska-brigada.jpg',
     brigadeName: 'Prva vojvođanska brigada',
     description: 'Spisak boraca Prve vojvođanske brigade'
   }
