@@ -11,5 +11,16 @@
       "additional_info": "verski referent brigade, rođen 1883, Nova Varoš; veteran iz balkanskih ratova i prvog svetskog rata. Umro 1949. u Beogradu."
     },
     "reason": "Section header 'NA RADU PRI STABU BRIGADE' was parsed as a soldier name. Real soldier is KARAMATIJEVIĆ JEVSTATIJE from the additional_info."
+  },
+  {
+    "id": 2,
+    "action": "edit",
+    "soldier_id": "0005000050",
+    "fields": {
+      "last_name": "Pavlović",
+      "first_name": "Ristan",
+      "additional_info": "borac, rođen 1887, Babine, Prijepolje, učitelj. Poginuo juna 1943."
+    },
+    "reason": "Next soldier's garbled OCR name and info were merged into this entry. Cleaned to only Pavlović's own data. The merged soldier (female, rođena 1917, Kordun, učiteljica) has an unreadable name due to OCR interleaving."
   }
 ]
