@@ -728,6 +728,214 @@ def extract_13_proleterska(pdf_path, json_path):
     return soldiers
 
 
+def extract_2_dalmatinska(pdf_path, json_path):
+    """Extract positions for 2. Dalmatinska Proleterska Brigada (numbered entries, single column)."""
+    print(f"\n{'='*60}")
+    print(f"2. DALMATINSKA PROLETERSKA BRIGADA")
+    print(f"{'='*60}")
+
+    pdf_filename = '2-dalmatinska-proleterska.pdf'
+    START_PAGE = 2
+    END_PAGE = 197
+
+    positions = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        print(f"  Total pages: {len(pdf.pages)}, processing {START_PAGE}-{END_PAGE}")
+
+        for page_idx in range(START_PAGE - 1, min(END_PAGE, len(pdf.pages))):
+            page = pdf.pages[page_idx]
+            page_num = page_idx + 1
+            lines = extract_lines_with_positions(page)
+
+            for line in lines:
+                text = line['text'].strip()
+                if not text:
+                    continue
+
+                # Skip page numbers and headers
+                if re.match(r'^\d{1,3}$', text):
+                    continue
+                if text.startswith('POPIS BORACA 2. DALMATINS'):
+                    continue
+
+                # Entry starts with a number followed by period: "1. LASTNAME..."
+                entry_match = re.match(r'^\d{1,4}\.\s+(.+)', text)
+                if entry_match:
+                    name_part = entry_match.group(1)
+                    positions.append({
+                        'page': page_num,
+                        'top': line['top'],
+                        'x0': line.get('x0', 0),
+                        'pdf_file': pdf_filename,
+                        'text_preview': name_part[:80]
+                    })
+
+    print(f"  Found {len(positions)} soldier positions")
+
+    with open(json_path, 'r', encoding='utf-8') as f:
+        soldiers = json.load(f)
+
+    print(f"  Existing JSON has {len(soldiers)} soldiers")
+    soldiers = match_positions_to_soldiers(positions, soldiers)
+
+    return soldiers
+
+
+def extract_4_splitska(pdf_path, json_path):
+    """Extract positions for 4. Splitska Udarna Brigada (numbered entries, two sections)."""
+    print(f"\n{'='*60}")
+    print(f"4. SPLITSKA UDARNA BRIGADA")
+    print(f"{'='*60}")
+
+    pdf_filename = '4-splitska-brigada.pdf'
+    # Section 1: Poginuli (killed) pages 4-22
+    # Section 2: Preživjeli (survivors) pages 23-110
+    START_PAGE = 4
+    END_PAGE = 110
+
+    positions = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        print(f"  Total pages: {len(pdf.pages)}, processing {START_PAGE}-{END_PAGE}")
+
+        for page_idx in range(START_PAGE - 1, min(END_PAGE, len(pdf.pages))):
+            page = pdf.pages[page_idx]
+            page_num = page_idx + 1
+            lines = extract_lines_with_positions(page)
+
+            for line in lines:
+                text = line['text'].strip()
+                if not text:
+                    continue
+
+                # Skip page numbers and headers
+                if re.match(r'^\d{1,3}$', text):
+                    continue
+                if 'POGINULI' in text and 'UMRLI' in text:
+                    continue
+                if text.startswith('POPIS PREŽIVJELIH'):
+                    continue
+
+                # Entry starts with a number followed by period: "1. LASTNAME..."
+                entry_match = re.match(r'^\d{1,4}\.\s+(.+)', text)
+                if entry_match:
+                    name_part = entry_match.group(1)
+                    positions.append({
+                        'page': page_num,
+                        'top': line['top'],
+                        'x0': line.get('x0', 0),
+                        'pdf_file': pdf_filename,
+                        'text_preview': name_part[:80]
+                    })
+
+    print(f"  Found {len(positions)} soldier positions")
+
+    with open(json_path, 'r', encoding='utf-8') as f:
+        soldiers = json.load(f)
+
+    print(f"  Existing JSON has {len(soldiers)} soldiers")
+    soldiers = match_positions_to_soldiers(positions, soldiers)
+
+    return soldiers
+
+
+def extract_prva_vojvodjanska(pdf_path, json_path):
+    """Extract positions for Prva Vojvođanska Brigada (two-column, no numbers)."""
+    print(f"\n{'='*60}")
+    print(f"PRVA VOJVOĐANSKA BRIGADA")
+    print(f"{'='*60}")
+
+    pdf_filename = 'prva-vojvodjanska.pdf'
+    START_PAGE = 2
+    END_PAGE = 33
+    COL_SPLIT_X = 195
+
+    positions = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        print(f"  Total pages: {len(pdf.pages)}, processing {START_PAGE}-{END_PAGE}")
+
+        for page_idx in range(START_PAGE - 1, min(END_PAGE, len(pdf.pages))):
+            page = pdf.pages[page_idx]
+            page_num = page_idx + 1
+
+            words = page.extract_words(
+                x_tolerance=3,
+                y_tolerance=3,
+                keep_blank_chars=True
+            )
+
+            if not words:
+                continue
+
+            left_words = [w for w in words if w['x0'] < COL_SPLIT_X]
+            right_words = [w for w in words if w['x0'] >= COL_SPLIT_X]
+
+            for col_words, col_start_x in [(left_words, 47), (right_words, 200)]:
+                if not col_words:
+                    continue
+
+                # Group into lines by Y
+                col_words.sort(key=lambda w: (w['top'], w['x0']))
+                lines = []
+                current_line = [col_words[0]]
+                current_top = col_words[0]['top']
+
+                for w in col_words[1:]:
+                    if abs(w['top'] - current_top) <= 4:
+                        current_line.append(w)
+                    else:
+                        current_line.sort(key=lambda ww: ww['x0'])
+                        text = ' '.join(ww['text'] for ww in current_line)
+                        avg_top = sum(ww['top'] for ww in current_line) / len(current_line)
+                        lines.append({'text': text, 'top': avg_top, 'x0': current_line[0]['x0']})
+                        current_line = [w]
+                        current_top = w['top']
+
+                if current_line:
+                    current_line.sort(key=lambda ww: ww['x0'])
+                    text = ' '.join(ww['text'] for ww in current_line)
+                    avg_top = sum(ww['top'] for ww in current_line) / len(current_line)
+                    lines.append({'text': text, 'top': avg_top, 'x0': current_line[0]['x0']})
+
+                for line in lines:
+                    text = line['text'].strip()
+                    if not text:
+                        continue
+
+                    # Skip headers and page numbers
+                    if 'SPISAK BORACA' in text or 'VOJVOĐANSKE' in text or 'BRIGADE' in text:
+                        continue
+                    if re.match(r'^\d{1,3}$', text):
+                        continue
+
+                    # Detect new entry: line starts near column margin AND first word is capitalized
+                    x_near_margin = abs(line['x0'] - col_start_x) < 15
+                    if x_near_margin:
+                        first_word = text.split()[0] if text.split() else ''
+                        if first_word and first_word[0].isupper() and len(first_word) > 1:
+                            cont_words = {'Sahranjen', 'Sahra', 'Poginuo', 'Pogi', 'Umro', 'Mjesto', 'Mesto', 'Ranjen'}
+                            if not any(first_word.startswith(cw) for cw in cont_words):
+                                positions.append({
+                                    'page': page_num,
+                                    'top': line['top'],
+                                    'x0': line.get('x0', 0),
+                                    'pdf_file': pdf_filename,
+                                    'text_preview': text[:80]
+                                })
+
+    print(f"  Found {len(positions)} soldier positions")
+
+    with open(json_path, 'r', encoding='utf-8') as f:
+        soldiers = json.load(f)
+
+    print(f"  Existing JSON has {len(soldiers)} soldiers")
+    soldiers = match_positions_to_soldiers(positions, soldiers)
+
+    return soldiers
+
+
 def save_updated_json(soldiers, output_path):
     """Save soldiers with position metadata to JSON."""
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -743,7 +951,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description='Extract PDF positions for soldier entries')
     parser.add_argument('--brigade', type=str, default='all',
-                       choices=['druga-licka', 'treca', 'prva-proleterska', 'prva-licka', 'ljubljanska', '13-proleterska', 'all'],
+                       choices=['druga-licka', 'treca', 'prva-proleterska', 'prva-licka', 'ljubljanska', '13-proleterska', '2-dalmatinska', '4-splitska', 'prva-vojvodjanska', 'all'],
                        help='Which brigade to process (default: all)')
     parser.add_argument('--sample', type=int, default=0,
                        help='Print N sample positions for verification')
@@ -792,6 +1000,21 @@ def main():
             'pdf': pdf_dir / '13-proleterska-spisak.pdf',
             'json': json_dir / '13-proleterska-soldiers.json',
             'func': lambda p, j: extract_13_proleterska(p, j),
+        },
+        '2-dalmatinska': {
+            'pdf': pdf_dir / '2-dalmatinska-proleterska.pdf',
+            'json': json_dir / '2-dalmatinska-soldiers.json',
+            'func': lambda p, j: extract_2_dalmatinska(p, j),
+        },
+        '4-splitska': {
+            'pdf': pdf_dir / '4-splitska-brigada.pdf',
+            'json': json_dir / '4-splitska-soldiers.json',
+            'func': lambda p, j: extract_4_splitska(p, j),
+        },
+        'prva-vojvodjanska': {
+            'pdf': pdf_dir / 'prva-vojvodjanska.pdf',
+            'json': json_dir / 'prva-vojvodjanska-soldiers.json',
+            'func': lambda p, j: extract_prva_vojvodjanska(p, j),
         },
     }
 
