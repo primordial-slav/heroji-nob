@@ -53,6 +53,19 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
           )}
         </div>
 
+        {/* Report Error Button */}
+        <a
+          href={`mailto:boris.papic96@gmail.com?subject=${encodeURIComponent(
+            `Prijava greške: ${soldier.full_name} (${soldier.soldier_id})`
+          )}&body=${encodeURIComponent(
+            `Borac: ${soldier.full_name}\nID: ${soldier.soldier_id}\nJedinica: ${unitName || soldier.unit || ''}\n\nOpis greške:\n`
+          )}`}
+          className="report-error-link"
+          onClick={(e) => e.stopPropagation()}
+        >
+          Prijavi grešku
+        </a>
+
         {/* PDF Viewer Section */}
         {hasPdfData && (
           <div style={{ marginTop: '1.25rem' }}>
