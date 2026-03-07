@@ -128,17 +128,25 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, yPositionEnd
           </Document>
 
           {/* Highlight box at the soldier's position */}
-          {currentPage === pageNumber && !loading && (
-            <div
-              className="pdf-highlight-box"
-              style={{
-                top: `${(yPosition - 2) * scale}px`,
-                left: `${Math.max(0, xPosition - 5) * scale}px`,
-                width: xPosition > 200 ? `${250 * scale}px` : `${400 * scale}px`,
-                height: `${(yPositionEnd ? yPositionEnd - yPosition + 4 : 18) * scale}px`,
-              }}
-            />
-          )}
+          {currentPage === pageNumber && !loading && (() => {
+            const rawHeight = yPositionEnd && yPositionEnd > yPosition
+              ? yPositionEnd - yPosition + 4
+              : 14
+            const highlightHeight = Math.max(14, rawHeight) * scale
+            // For two-column PDFs (x > 150), use narrower width to stay in column
+            const highlightWidth = xPosition > 150 ? 200 : 250
+            return (
+              <div
+                className="pdf-highlight-box"
+                style={{
+                  top: `${(yPosition - 2) * scale}px`,
+                  left: `${Math.max(0, xPosition - 5) * scale}px`,
+                  width: `${highlightWidth * scale}px`,
+                  height: `${highlightHeight}px`,
+                }}
+              />
+            )
+          })()}
         </div>
       </div>
 

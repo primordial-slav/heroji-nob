@@ -91,33 +91,39 @@ def extract_lines_with_positions(page, y_tolerance=3):
 
 def compute_end_positions(positions):
     """
-    For each position, compute end_top = top of next entry on same page/column.
-    This allows the highlight box to span the full entry height.
+    For each position, compute end_top = top of next entry in the SAME column
+    on the same page. Uses X-proximity (within 50pts) to detect same-column
+    entries, which works for any column layout without hardcoded boundaries.
     """
     if not positions:
         return positions
 
-    # Sort by (pdf_file, page, top) to get sequential order
-    positions.sort(key=lambda p: (p.get('pdf_file', ''), p['page'], p['top']))
+    # Group positions by (pdf_file, page)
+    from collections import defaultdict
+    page_groups = defaultdict(list)
+    for pos in positions:
+        key = (pos.get('pdf_file', ''), pos['page'])
+        page_groups[key].append(pos)
 
-    for i in range(len(positions)):
-        pos = positions[i]
-        # Look for the next position on the same page
-        if i + 1 < len(positions):
-            next_pos = positions[i + 1]
-            if next_pos['page'] == pos['page'] and next_pos.get('pdf_file') == pos.get('pdf_file'):
-                # Only use next entry if it's reasonably close (same column or nearby)
-                # For two-column layouts, next entry on same page might be in other column
-                # Use it if the gap is reasonable (< 200 points)
-                gap = next_pos['top'] - pos['top']
-                if 0 < gap < 200:
-                    pos['end_top'] = next_pos['top'] - 1
-                else:
-                    pos['end_top'] = pos['top'] + 30  # default ~2 lines
+    for key, page_positions in page_groups.items():
+        # Sort by x then y to process column by column
+        page_positions.sort(key=lambda p: p['top'])
+
+        for i, pos in enumerate(page_positions):
+            # Find next entry in the same column (x within 50pts) on same page
+            best_next_top = None
+            for j in range(i + 1, len(page_positions)):
+                candidate = page_positions[j]
+                # Same column: X positions within 50pts of each other
+                if abs(candidate.get('x0', 0) - pos.get('x0', 0)) < 50:
+                    if candidate['top'] > pos['top']:
+                        best_next_top = candidate['top']
+                        break
+
+            if best_next_top is not None:
+                pos['end_top'] = best_next_top - 1
             else:
                 pos['end_top'] = pos['top'] + 30
-        else:
-            pos['end_top'] = pos['top'] + 30
 
     return positions
 
