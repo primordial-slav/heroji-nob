@@ -19,6 +19,8 @@ BRIGADE_CODES = {
     2: "Prva Lička Proleterska",
     3: "Druga Lička Proleterska",
     4: "Ljubljanska (10. SNOUB)",
+    5: "Treća Proleterska (Sandžačka)",
+    6: '13. Proleterska "Rade Končar"',
     # Add new brigades here with next available code
 }
 

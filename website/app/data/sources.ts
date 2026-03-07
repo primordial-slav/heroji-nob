@@ -71,5 +71,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/ljubljanska-brigada.jpg',
     brigadeName: '10. slovenska narodnoosvobodilna udarna brigada "Ljubljanska"',
     description: 'Monografija Ljubljanske brigade'
+  },
+  {
+    id: '13-proleterska-spisak',
+    title: 'Trinaesta proleterska brigada „Rade Končar"',
+    author: 'Todor Radošević (ur.)',
+    pdfPath: '/pdfs/13-proleterska-spisak.pdf',
+    thumbnail: '/images/pdf-thumbs/13-proleterska-spisak.jpg',
+    brigadeName: '13. proleterska udarna brigada "Rade Končar"',
+    description: 'Spisak palih i preživjelih boraca (treći dio monografije)'
   }
 ]

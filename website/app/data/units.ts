@@ -59,6 +59,16 @@ export const units: Unit[] = [
     soldierCount: 859,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf']
+  },
+  {
+    id: '13-proleterska-brigada',
+    name: '13. proleterska udarna brigada "Rade Končar"',
+    nameEn: '13th Proletarian Assault Brigade "Rade Končar"',
+    description: 'Formirana 7. novembra 1942. godine. Spisak palih i preživjelih boraca.',
+    image: '/images/13-proleterska-brigada.jpg',
+    soldierCount: 7936,
+    dataFile: '/13-proleterska-soldiers.json',
+    pdfFiles: ['/pdfs/13-proleterska-spisak.pdf']
   }
   // Add more units here as you get more data
 ]

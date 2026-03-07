@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~29,400 WWII Yugoslav partisan soldiers across 5 brigades. Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~37,300 WWII Yugoslav partisan soldiers across 6 brigades. Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -16,6 +16,7 @@ Historical archive website for searching ~29,400 WWII Yugoslav partisan soldiers
 | 3 | Druga Lička | via `scripts/` | `druga-licka-soldiers.json` | 1 PDF | 1,509 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,172 |
 | 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 859 |
+| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 7,936 |
 
 Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`.
 

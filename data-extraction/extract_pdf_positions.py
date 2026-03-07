@@ -455,22 +455,31 @@ def match_positions_by_name(positions, soldiers_json):
 
     # Build a lookup: normalized name -> list of positions
     # Each position's text_preview starts with the soldier name
+    # For brigades with father's names (genitive), the format is:
+    #   "LAST_NAME Father's_gen FIRST_NAME, ..."
+    # So we index by multiple keys: word[0]+word[1], word[0]+word[2], etc.
     pos_by_name = {}
-    for pos in positions:
-        preview = pos['text_preview']
-        # Extract the name part (first two words typically: "Surname Firstname")
-        parts = preview.split(',')[0].strip().split()
-        if len(parts) >= 2:
-            # Try "Surname Firstname" key
-            key = normalize_name(parts[0] + ' ' + parts[1])
-        elif len(parts) == 1:
-            key = normalize_name(parts[0])
-        else:
-            continue
 
+    def add_pos_key(key, pos):
         if key not in pos_by_name:
             pos_by_name[key] = []
         pos_by_name[key].append(pos)
+
+    for pos in positions:
+        preview = pos['text_preview']
+        parts = preview.split(',')[0].strip().split()
+
+        if len(parts) >= 2:
+            # Primary key: word[0] + word[1] (Surname + Father/First)
+            add_pos_key(normalize_name(parts[0] + ' ' + parts[1]), pos)
+
+        if len(parts) >= 3:
+            # Secondary key: word[0] + word[2] (Surname + First, skipping father's genitive)
+            # This handles "ALEKSIĆ Velisava LEPOSAVA" -> key "aleksic leposava"
+            add_pos_key(normalize_name(parts[0] + ' ' + parts[2]), pos)
+
+        if len(parts) == 1:
+            add_pos_key(normalize_name(parts[0]), pos)
 
     matched = 0
     unmatched = 0
@@ -621,6 +630,104 @@ def extract_ljubljanska(pdf_path, json_path):
     return soldiers
 
 
+def extract_13_proleterska(pdf_path, json_path):
+    """Extract positions for 13. Proleterska Brigada 'Rade Končar' (two-column layout)."""
+    print(f"\n{'='*60}")
+    print(f"13. PROLETERSKA BRIGADA 'RADE KONČAR'")
+    print(f"{'='*60}")
+
+    pdf_filename = '13-proleterska-spisak.pdf'
+    START_PAGE = 4
+    END_PAGE = 109
+    COL_BOUNDARY = 290
+
+    def is_soldier_entry(text):
+        """Check if line starts a new soldier entry (ALL CAPS last name)."""
+        text = text.strip()
+        if not text or len(text) <= 2:
+            return False
+        if re.match(r'^\d{1,4}$', text):
+            return False
+        match = re.match(r'^([A-ZČĆŽŠĐa-zčćžšđ\-]{2,})\s+(.+)', text)
+        if not match:
+            return False
+        first_word = match.group(1)
+        upper_count = sum(1 for c in first_word if c.isupper() or c in 'ČĆŽŠĐ')
+        return len(first_word) > 0 and upper_count / len(first_word) >= 0.7 and upper_count >= 2
+
+    positions = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        print(f"  Total pages: {len(pdf.pages)}, processing {START_PAGE}-{END_PAGE}")
+
+        for page_idx in range(START_PAGE - 1, min(END_PAGE, len(pdf.pages))):
+            page = pdf.pages[page_idx]
+            page_num = page_idx + 1
+
+            words = page.extract_words(
+                x_tolerance=3,
+                y_tolerance=3,
+                keep_blank_chars=True
+            )
+
+            if not words:
+                continue
+
+            left_words = [w for w in words if w['x0'] < COL_BOUNDARY]
+            right_words = [w for w in words if w['x0'] >= COL_BOUNDARY]
+
+            for col_words in [left_words, right_words]:
+                if not col_words:
+                    continue
+
+                # Group into lines by Y
+                col_words.sort(key=lambda w: (w['top'], w['x0']))
+                lines = []
+                current_line = [col_words[0]]
+                current_top = col_words[0]['top']
+
+                for w in col_words[1:]:
+                    if abs(w['top'] - current_top) <= 4:
+                        current_line.append(w)
+                    else:
+                        current_line.sort(key=lambda ww: ww['x0'])
+                        text = ' '.join(ww['text'] for ww in current_line)
+                        avg_top = sum(ww['top'] for ww in current_line) / len(current_line)
+                        lines.append({'text': text, 'top': avg_top, 'x0': current_line[0]['x0']})
+                        current_line = [w]
+                        current_top = w['top']
+
+                if current_line:
+                    current_line.sort(key=lambda ww: ww['x0'])
+                    text = ' '.join(ww['text'] for ww in current_line)
+                    avg_top = sum(ww['top'] for ww in current_line) / len(current_line)
+                    lines.append({'text': text, 'top': avg_top, 'x0': current_line[0]['x0']})
+
+                for line in lines:
+                    text = line['text'].strip()
+                    if not text:
+                        continue
+
+                    if is_soldier_entry(text):
+                        positions.append({
+                            'page': page_num,
+                            'top': line['top'],
+                            'x0': line.get('x0', 0),
+                            'pdf_file': pdf_filename,
+                            'text_preview': text[:80]
+                        })
+
+    print(f"  Found {len(positions)} soldier positions")
+
+    with open(json_path, 'r', encoding='utf-8') as f:
+        soldiers = json.load(f)
+
+    print(f"  Existing JSON has {len(soldiers)} soldiers")
+    soldiers = match_positions_to_soldiers(positions, soldiers)
+
+    return soldiers
+
+
 def save_updated_json(soldiers, output_path):
     """Save soldiers with position metadata to JSON."""
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -636,7 +743,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description='Extract PDF positions for soldier entries')
     parser.add_argument('--brigade', type=str, default='all',
-                       choices=['druga-licka', 'treca', 'prva-proleterska', 'prva-licka', 'ljubljanska', 'all'],
+                       choices=['druga-licka', 'treca', 'prva-proleterska', 'prva-licka', 'ljubljanska', '13-proleterska', 'all'],
                        help='Which brigade to process (default: all)')
     parser.add_argument('--sample', type=int, default=0,
                        help='Print N sample positions for verification')
@@ -680,6 +787,11 @@ def main():
             'pdf': pdf_dir / 'ljubljanska-brigada.pdf',
             'json': json_dir / 'ljubljanska-soldiers.json',
             'func': lambda p, j: extract_ljubljanska(p, j),
+        },
+        '13-proleterska': {
+            'pdf': pdf_dir / '13-proleterska-spisak.pdf',
+            'json': json_dir / '13-proleterska-soldiers.json',
+            'func': lambda p, j: extract_13_proleterska(p, j),
         },
     }
 

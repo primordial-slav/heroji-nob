@@ -64,6 +64,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_last',
     },
+    6: {
+        'name': '13. Proleterska "Rade Končar"',
+        'json_file': '13-proleterska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 
