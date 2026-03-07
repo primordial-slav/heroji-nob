@@ -89,6 +89,39 @@ def extract_lines_with_positions(page, y_tolerance=3):
     return lines
 
 
+def compute_end_positions(positions):
+    """
+    For each position, compute end_top = top of next entry on same page/column.
+    This allows the highlight box to span the full entry height.
+    """
+    if not positions:
+        return positions
+
+    # Sort by (pdf_file, page, top) to get sequential order
+    positions.sort(key=lambda p: (p.get('pdf_file', ''), p['page'], p['top']))
+
+    for i in range(len(positions)):
+        pos = positions[i]
+        # Look for the next position on the same page
+        if i + 1 < len(positions):
+            next_pos = positions[i + 1]
+            if next_pos['page'] == pos['page'] and next_pos.get('pdf_file') == pos.get('pdf_file'):
+                # Only use next entry if it's reasonably close (same column or nearby)
+                # For two-column layouts, next entry on same page might be in other column
+                # Use it if the gap is reasonable (< 200 points)
+                gap = next_pos['top'] - pos['top']
+                if 0 < gap < 200:
+                    pos['end_top'] = next_pos['top'] - 1
+                else:
+                    pos['end_top'] = pos['top'] + 30  # default ~2 lines
+            else:
+                pos['end_top'] = pos['top'] + 30
+        else:
+            pos['end_top'] = pos['top'] + 30
+
+    return positions
+
+
 def match_positions_to_soldiers(positions, soldiers_json):
     """
     Match extracted positions to existing soldier JSON records by name.
@@ -103,7 +136,11 @@ def match_positions_to_soldiers(positions, soldiers_json):
         s.pop('pdf_page', None)
         s.pop('pdf_y', None)
         s.pop('pdf_x', None)
+        s.pop('pdf_y_end', None)
         s.pop('pdf_file', None)
+
+    # Compute end positions for highlight height
+    positions = compute_end_positions(positions)
 
     # Always use name-based matching for robustness
     return match_positions_by_name(positions, soldiers_json)
@@ -511,6 +548,7 @@ def match_positions_by_name(positions, soldiers_json):
             soldier['pdf_page'] = pos['page']
             soldier['pdf_y'] = round(pos['top'], 1)
             soldier['pdf_x'] = round(pos.get('x0', 0), 1)
+            soldier['pdf_y_end'] = round(pos.get('end_top', pos['top'] + 30), 1)
             soldier['pdf_file'] = pos['pdf_file']
             matched += 1
         else:

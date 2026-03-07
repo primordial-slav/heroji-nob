@@ -13,11 +13,12 @@ interface PdfViewerProps {
   pdfFile: string          // URL path like "/pdfs/prva-proleterska-1.pdf"
   pageNumber: number       // 1-indexed page to show
   yPosition: number        // Y coordinate in PDF points to scroll to
+  yPositionEnd?: number    // Y coordinate of the next entry (for highlight height)
   xPosition: number        // X coordinate in PDF points from left edge
   sourceHref?: string      // Link to the Sources page anchor for "View full document"
 }
 
-export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition, sourceHref }: PdfViewerProps) {
+export default function PdfViewer({ pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, sourceHref }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
   const [scale, setScale] = useState(2.0)
@@ -134,7 +135,7 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition, s
                 top: `${(yPosition - 2) * scale}px`,
                 left: `${Math.max(0, xPosition - 5) * scale}px`,
                 width: xPosition > 200 ? `${250 * scale}px` : `${400 * scale}px`,
-                height: `${18 * scale}px`,
+                height: `${(yPositionEnd ? yPositionEnd - yPosition + 4 : 18) * scale}px`,
               }}
             />
           )}
