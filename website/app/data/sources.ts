@@ -80,5 +80,32 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/13-proleterska-spisak.jpg',
     brigadeName: '13. proleterska udarna brigada "Rade Končar"',
     description: 'Spisak palih i preživjelih boraca (treći dio monografije)'
+  },
+  {
+    id: '2-dalmatinska-proleterska',
+    title: '2. dalmatinska proleterska udarna brigada',
+    author: 'Nikola Anić',
+    pdfPath: '/pdfs/2-dalmatinska-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/placeholder.jpg',
+    brigadeName: '2. dalmatinska proleterska udarna brigada',
+    description: 'Popis boraca 2. dalmatinske proleterske brigade NOVJ'
+  },
+  {
+    id: '4-splitska-brigada',
+    title: '4. splitska udarna brigada',
+    author: 'Vinko Uvodić (ur.)',
+    pdfPath: '/pdfs/4-splitska-brigada.pdf',
+    thumbnail: '/images/pdf-thumbs/placeholder.jpg',
+    brigadeName: '4. splitska udarna brigada',
+    description: 'Popis poginulih i preživjelih boraca brigade'
+  },
+  {
+    id: 'prva-vojvodjanska',
+    title: 'Prva vojvođanska brigada',
+    author: 'Vojnoistorijski institut',
+    pdfPath: '/pdfs/prva-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/placeholder.jpg',
+    brigadeName: 'Prva vojvođanska brigada',
+    description: 'Spisak boraca Prve vojvođanske brigade'
   }
 ]

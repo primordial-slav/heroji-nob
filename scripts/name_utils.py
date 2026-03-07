@@ -73,6 +73,33 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    7: {
+        'name': '2. Dalmatinska Proleterska',
+        'json_file': '2-dalmatinska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
+    8: {
+        'name': '4. Splitska Udarna',
+        'json_file': '4-splitska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
+    9: {
+        'name': 'Prva Vojvođanska',
+        'json_file': 'prva-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

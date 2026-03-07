@@ -35,6 +35,21 @@ export const BRIGADE_MAP: Record<number, BrigadeConfig> = {
     dataFile: '13-proleterska-soldiers.json',
     pdfFiles: ['13-proleterska-spisak.pdf'],
   },
+  7: {
+    name: '2. Dalmatinska Proleterska',
+    dataFile: '2-dalmatinska-soldiers.json',
+    pdfFiles: ['2-dalmatinska-proleterska.pdf'],
+  },
+  8: {
+    name: '4. Splitska Udarna',
+    dataFile: '4-splitska-soldiers.json',
+    pdfFiles: ['4-splitska-brigada.pdf'],
+  },
+  9: {
+    name: 'Prva Vojvođanska',
+    dataFile: 'prva-vojvodjanska-soldiers.json',
+    pdfFiles: ['prva-vojvodjanska.pdf'],
+  },
 }
 
 export function getBrigadeCode(soldierId: string): number {
