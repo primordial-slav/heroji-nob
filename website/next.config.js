@@ -3,9 +3,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  experimental: {
-    esmExternals: 'loose',
-  },
+  serverExternalPackages: [],
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;

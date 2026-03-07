@@ -9,8 +9,9 @@ export function generateStaticParams() {
   }))
 }
 
-export default function UnitPage({ params }: { params: { id: string } }) {
-  const unit = units.find(u => u.id === params.id)
+export default async function UnitPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const unit = units.find(u => u.id === id)
 
   if (!unit) {
     return (
