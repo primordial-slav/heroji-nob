@@ -41,8 +41,7 @@ export default function Home() {
 
         setAllSoldiers(allSoldiersData)
         setLoading(false)
-      } catch (err) {
-        console.error('Error loading soldiers:', err)
+      } catch {
         setLoading(false)
       }
     }

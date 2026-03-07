@@ -33,8 +33,7 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
         setSoldiers(data)
         setLoading(false)
       })
-      .catch(err => {
-        console.error('Error loading soldiers:', err)
+      .catch(() => {
         setLoading(false)
       })
   }, [unit])
