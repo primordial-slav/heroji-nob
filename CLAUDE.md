@@ -26,9 +26,32 @@ When fixing parsing bugs or adding brigades, run these steps in order:
 1. **Parse**: `python data-extraction/parse_<brigade>.py` — extracts soldiers from PDF
 2. **Normalize**: `python scripts/normalize_all_json.py --apply` — cleans names, extracts birth years, converts genitive father's names to nominative
 3. **Extract positions**: `python data-extraction/extract_pdf_positions.py --brigade <name>` — matches soldiers to PDF page/Y coordinates for the viewer
-4. **Update count**: Edit `website/app/data/units.ts` soldierCount to match new total
+4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits). Also auto-updates soldierCount in `units.ts`.
 5. **Build**: `cd website && npm run build` — verify no errors
 6. **Push**: `git push origin main && git push prod main`
+
+Corrections run LAST before build so they always win over automated pipeline output.
+
+## Corrections System
+
+For fixing individual soldier records (OCR errors, merged entries, duplicates) without re-running the parser:
+
+- **File**: `corrections.json` (project root) — array of correction objects
+- **Script**: `scripts/apply_corrections.py` — applies corrections to brigade JSONs
+- **Actions**: `edit` (update fields), `delete` (remove record), `split` (replace one record with N new records)
+- **Dry run by default**: Run without `--apply` to preview changes
+- **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount
+
+```json
+[
+  {"id": 1, "action": "edit", "soldier_id": "0001005432", "fields": {"last_name": "Kovačević"}, "reason": "OCR error"},
+  {"id": 2, "action": "delete", "soldier_id": "0004002633", "reason": "Duplicate of 0004002634"},
+  {"id": 3, "action": "split", "soldier_id": "0004002415", "into": [
+    {"last_name": "Štefane", "first_name": "Vinko", "additional_info": "Kovača vas"},
+    {"last_name": "Štrajher", "first_name": "Ignac", "additional_info": "1917, Trbovlje"}
+  ], "reason": "Two soldiers merged into one entry"}
+]
+```
 
 ## Soldier JSON Schema
 
@@ -91,6 +114,10 @@ data-extraction/                  # PDF parsing scripts
 scripts/                          # Data transformation
   normalize_all_json.py           # Unified normalization (all brigades)
   name_utils.py                   # Name parsing, genitive conversion, brigade configs
+  apply_corrections.py            # Applies corrections.json to soldier JSONs
+  soldier_id_utils.py             # Soldier ID generation/parsing
+
+corrections.json                  # Individual record corrections (edit/delete/split)
 ```
 
 ## Tech Stack
