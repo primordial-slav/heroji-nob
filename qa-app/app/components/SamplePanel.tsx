@@ -14,11 +14,11 @@ export default function SamplePanel({ title, type, onStatsChanged }: SamplePanel
   const [samples, setSamples] = useState<SoldierSample[]>([])
   const [count, setCount] = useState(10)
   const [loading, setLoading] = useState(false)
-  const [dismissed, setDismissed] = useState<Set<string>>(new Set())
+  const [removed, setRemoved] = useState<Set<string>>(new Set())
 
   const fetchSamples = useCallback(async (n: number) => {
     setLoading(true)
-    setDismissed(new Set())
+    setRemoved(new Set())
     try {
       const res = await fetch(`/api/samples?type=${type}&count=${n}`)
       const data = await res.json()
@@ -37,12 +37,11 @@ export default function SamplePanel({ title, type, onStatsChanged }: SamplePanel
 
   const handleRefresh = () => fetchSamples(count)
 
-  const handleDismiss = (soldierId: string) => {
-    setDismissed(prev => new Set(prev).add(soldierId))
-    onStatsChanged()
+  const handleRemove = (soldierId: string) => {
+    setRemoved(prev => new Set(prev).add(soldierId))
   }
 
-  const visibleSamples = samples.filter(s => !dismissed.has(s.soldier.soldier_id))
+  const visibleSamples = samples.filter(s => !removed.has(s.soldier.soldier_id))
 
   return (
     <div className="sample-panel">
@@ -73,8 +72,8 @@ export default function SamplePanel({ title, type, onStatsChanged }: SamplePanel
             key={sample.soldier.soldier_id}
             sample={sample}
             detection={type}
-            onDismiss={handleDismiss}
-            onReviewed={onStatsChanged}
+            onRemove={handleRemove}
+            onStatsChanged={onStatsChanged}
           />
         ))}
         {!loading && samples.length > 0 && visibleSamples.length === 0 && (

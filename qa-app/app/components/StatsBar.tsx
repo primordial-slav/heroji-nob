@@ -44,10 +44,6 @@ export default function StatsBar({ refreshKey }: StatsBarProps) {
         <span className="stat-value">{stats.correct}</span>
         <span className="stat-label">Correct</span>
       </div>
-      <div className="stat stat-dismissed">
-        <span className="stat-value">{stats.dismissed}</span>
-        <span className="stat-label">Dismissed</span>
-      </div>
     </div>
   )
 }

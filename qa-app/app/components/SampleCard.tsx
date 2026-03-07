@@ -10,17 +10,16 @@ const PdfViewer = lazy(() => import('./PdfViewer'))
 interface SampleCardProps {
   sample: SoldierSample
   detection: 'suspicious' | 'random'
-  onDismiss: (soldierId: string) => void
-  onReviewed: () => void
+  onRemove: (soldierId: string) => void
+  onStatsChanged: () => void
 }
 
-export default function SampleCard({ sample, detection, onDismiss, onReviewed }: SampleCardProps) {
+export default function SampleCard({ sample, detection, onRemove, onStatsChanged }: SampleCardProps) {
   const { soldier, brigadeName, brigadeCode, flags } = sample
   const [showPdf, setShowPdf] = useState(false)
   const hasPdf = soldier.pdf_page && soldier.pdf_file && soldier.pdf_y
 
   const handleDismiss = async () => {
-    // Save as dismissed in DB
     await fetch('/api/reviews', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -33,7 +32,13 @@ export default function SampleCard({ sample, detection, onDismiss, onReviewed }:
         soldier_data: JSON.stringify(soldier),
       }),
     })
-    onDismiss(soldier.soldier_id)
+    onRemove(soldier.soldier_id)
+    onStatsChanged()
+  }
+
+  const handleReviewed = () => {
+    onRemove(soldier.soldier_id)
+    onStatsChanged()
   }
 
   return (
@@ -108,7 +113,7 @@ export default function SampleCard({ sample, detection, onDismiss, onReviewed }:
         soldierData={JSON.stringify(soldier)}
         detection={detection}
         flagsDetail={JSON.stringify(flags)}
-        onSaved={onReviewed}
+        onSaved={handleReviewed}
       />
     </div>
   )

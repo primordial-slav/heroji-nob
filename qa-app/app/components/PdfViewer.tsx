@@ -17,7 +17,7 @@ interface PdfViewerProps {
 export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
-  const [scale, setScale] = useState(1.5)
+  const [scale, setScale] = useState(1.0)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -35,7 +35,7 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, xPosition }:
   const goToNextPage = () => { setLoading(true); setCurrentPage(p => Math.min(numPages || p, p + 1)) }
   const zoomIn = () => setScale(s => Math.min(3, s + 0.25))
   const zoomOut = () => setScale(s => Math.max(0.5, s - 0.25))
-  const resetView = () => { setCurrentPage(pageNumber); setScale(1.5); setLoading(true) }
+  const resetView = () => { setCurrentPage(pageNumber); setScale(1.0); setLoading(true) }
 
   if (error) {
     return <div className="pdf-error">PDF not available</div>
