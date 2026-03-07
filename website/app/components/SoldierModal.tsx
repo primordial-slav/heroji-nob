@@ -26,7 +26,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
     if (!reportText.trim()) return
     setReportStatus('sending')
     try {
-      const res = await fetch('https://formsubmit.co/ajax/boris.papic96@gmail.com', {
+      const res = await fetch(`https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({

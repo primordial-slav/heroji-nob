@@ -6,6 +6,7 @@ Also tracks parsing confidence and errors.
 
 import sys
 import json
+import os
 import random
 from pathlib import Path
 
@@ -189,18 +190,16 @@ def load_soldiers_with_raw_text():
 
 
 def main():
-    # Load API key
-    api_key = None
-    key_file = Path("01-data/openai-api.txt")
-    if key_file.exists():
-        content = key_file.read_text().strip()
-        if content.startswith('OPENAI_API_KEY='):
-            api_key = content.split('=', 1)[1]
-        else:
-            api_key = content
+    # Load API key (env var first, file fallback)
+    api_key = os.environ.get('OPENAI_API_KEY')
+    if not api_key:
+        key_file = Path("01-data/openai-api.txt")
+        if key_file.exists():
+            content = key_file.read_text().strip()
+            api_key = content.split('=', 1)[1] if content.startswith('OPENAI_API_KEY=') else content
 
     if not api_key:
-        print("ERROR: OPENAI_API_KEY not found in 01-data/openai-api.txt")
+        print("ERROR: Set OPENAI_API_KEY env var or create 01-data/openai-api.txt")
         return
 
     client = OpenAI(api_key=api_key)

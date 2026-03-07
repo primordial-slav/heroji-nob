@@ -13,6 +13,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 import json
+import os
 import sqlite3
 import time
 import pandas as pd
@@ -27,8 +28,11 @@ BATCH_SIZE = 30
 
 
 def load_api_key():
+    key = os.environ.get('OPENAI_API_KEY')
+    if key:
+        return key
     if not API_KEY_FILE.exists():
-        raise FileNotFoundError(f"API key file not found: {API_KEY_FILE}")
+        raise FileNotFoundError(f"Set OPENAI_API_KEY env var or create {API_KEY_FILE}")
     content = API_KEY_FILE.read_text().strip()
     if content.startswith('OPENAI_API_KEY='):
         return content.split('=', 1)[1]

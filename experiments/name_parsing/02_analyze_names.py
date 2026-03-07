@@ -19,6 +19,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 import json
+import os
 import time
 import argparse
 import pandas as pd
@@ -162,7 +163,12 @@ Here are the records to analyze:
 
 
 def load_api_key():
-    """Load OpenAI API key."""
+    """Load OpenAI API key from env var or file fallback."""
+    key = os.environ.get('OPENAI_API_KEY')
+    if key:
+        return key
+    if not API_KEY_FILE.exists():
+        raise FileNotFoundError(f"Set OPENAI_API_KEY env var or create {API_KEY_FILE}")
     content = API_KEY_FILE.read_text().strip()
     if content.startswith('OPENAI_API_KEY='):
         return content.split('=', 1)[1]

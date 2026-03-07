@@ -5,6 +5,7 @@ Batched processing for cost efficiency.
 
 import sys
 import json
+import os
 import time
 from pathlib import Path
 
@@ -85,10 +86,16 @@ def extract_soldiers_batch(client, soldiers_batch):
 
 
 def main():
-    # Load API key
-    key_file = Path("01-data/openai-api.txt")
-    content = key_file.read_text().strip()
-    api_key = content.split('=', 1)[1] if '=' in content else content
+    # Load API key (env var first, file fallback)
+    api_key = os.environ.get('OPENAI_API_KEY')
+    if not api_key:
+        key_file = Path("01-data/openai-api.txt")
+        if key_file.exists():
+            content = key_file.read_text().strip()
+            api_key = content.split('=', 1)[1] if content.startswith('OPENAI_API_KEY=') else content
+    if not api_key:
+        print("ERROR: Set OPENAI_API_KEY env var or create 01-data/openai-api.txt")
+        return
     client = OpenAI(api_key=api_key)
 
     # Load Prva Lička soldiers

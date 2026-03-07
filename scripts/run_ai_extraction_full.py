@@ -8,6 +8,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 import json
+import os
 import sqlite3
 import time
 from pathlib import Path
@@ -230,18 +231,16 @@ def main():
     log("AI EXTRACTION - FULL DATABASE")
     log("=" * 70)
 
-    # Load API key
-    api_key = None
-    key_file = Path("01-data/openai-api.txt")
-    if key_file.exists():
-        content = key_file.read_text().strip()
-        if content.startswith('OPENAI_API_KEY='):
-            api_key = content.split('=', 1)[1]
-        else:
-            api_key = content
+    # Load API key (env var first, file fallback)
+    api_key = os.environ.get('OPENAI_API_KEY')
+    if not api_key:
+        key_file = Path("01-data/openai-api.txt")
+        if key_file.exists():
+            content = key_file.read_text().strip()
+            api_key = content.split('=', 1)[1] if content.startswith('OPENAI_API_KEY=') else content
 
     if not api_key:
-        log("ERROR: OPENAI_API_KEY not found in 01-data/openai-api.txt")
+        log("ERROR: Set OPENAI_API_KEY env var or create 01-data/openai-api.txt")
         return
 
     client = OpenAI(api_key=api_key)
