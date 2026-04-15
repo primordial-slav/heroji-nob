@@ -353,5 +353,17 @@
       "rank": "bolničarka"
     },
     "reason": "Extracted ethnicity and rank from additional_info. No parsing or aesthetic issues."
+  },
+  {
+    "id": 35,
+    "action": "edit",
+    "soldier_id": "0001000006",
+    "fields": {
+      "ethnicity": "Srbin",
+      "occupation": "zemljoradnik",
+      "unit_detail": "I bataljon",
+      "rank": "borac"
+    },
+    "reason": "Extracted structured fields including unit_detail from additional_info."
   }
 ]
