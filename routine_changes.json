@@ -1,0 +1,157 @@
+[
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0007001066",
+    "brigade": "2. Dalmatinska Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "last_name": { "old": "Clcerić", "new": "Cicerić" },
+      "fathers_name": { "old": "", "new": "Blaž" }
+    },
+    "reason": "OCR rendered uppercase I as lowercase l in 'ClCERIĆ'. Father's name 'Blaža' (genitive of Blaž) visible in PDF at page 37, y=244.5 but missing from record.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0002007853",
+    "brigade": "Prva Lička",
+    "action": "edit",
+    "field_changes": {
+      "last_name": { "old": "Smouanović", "new": "Smiljanović" },
+      "additional_info": { "old": "1923, Karlovac, poginuo 12. 8. 1942. u Jezera- nima", "new": "1923, Karlovac, poginuo 12. 8. 1942. u Jezeranima" }
+    },
+    "reason": "OCR corrupted SMILJANOVIĆ → SMOUANOVIĆ (ILJ→OU). Verified against SMILJANIĆ entry at y=487.6 on same PDF page 846. Line-break hyphen 'Jezera- nima' joined to 'Jezeranima'.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0002000599",
+    "brigade": "Prva Lička",
+    "action": "edit",
+    "field_changes": {
+      "first_name": { "old": "Osredaka", "new": "Filip" },
+      "middle_name": { "old": "Filip iz", "new": "" },
+      "fathers_name": { "old": "Filip iz", "new": "" },
+      "additional_info": { "old": "u NOB od 1941, čuveni mitraljezac u 1. bataljonu, desetar u 2. četi 3. bataljona", "new": "iz Osredaka, u NOB od 1941, čuveni mitraljezac u 1. bataljonu, desetar u 2. četi 3. bataljona" }
+    },
+    "reason": "Parser treated 'iz Osredaka' (from Osredak village) as name components. 'Filip iz' became middle/father's name and 'Osredaka' became first_name. Real name is Bokan Filip.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0001003303",
+    "brigade": "Prva Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "last_name": { "old": "Glomazić-leković", "new": "Glomazić-Leković" },
+      "additional_info": { "old": "1924, Novaković, Žab- ljak, Crna Gora, Crnogorka, u NOB od 1941, u brigadi od maja 1942, I bataljon, omladinski rukovodilac divizije", "new": "1924, Novaković, Žabljak, Crna Gora, Crnogorka, u NOB od 1941, u brigadi od maja 1942, I bataljon, omladinski rukovodilac divizije" }
+    },
+    "reason": "Lowercase 'l' in hyphenated surname 'Glomazić-leković' corrected to 'Glomazić-Leković'. Line-break hyphen 'Žab- ljak' joined to 'Žabljak'.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0002005437",
+    "brigade": "Prva Lička",
+    "action": "edit",
+    "field_changes": {
+      "first_name": { "old": "Pera", "new": "Petar" },
+      "middle_name": { "old": "Stevana Petar", "new": "" },
+      "fathers_name": { "old": "Stevana Petar", "new": "Stevan" },
+      "additional_info": { "old": "5. 2. 1925, Krš, Perušić, zemljoradnik, Srbin, u NOB od 1942, stariji vodnik, 4. bataljon", "new": "zvan Pera, 5. 2. 1925, Krš, Perušić, zemljoradnik, Srbin, u NOB od 1942, stariji vodnik, 4. bataljon" }
+    },
+    "reason": "Parser placed 'Petar' into fathers_name alongside genitive 'Stevana'. Father is Stevan (nominative of Stevana), first name is Petar, 'Pera' is the common Serbian diminutive preserved in additional_info.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0006002702",
+    "brigade": "13. Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "additional_info": { "old": "1921. Žman, Zadar'. Poginuo u Petrovoj gori, Kordun, 1943. kao ranjenik.", "new": "1921. Žman, Zadar. Poginuo u Petrovoj gori, Kordun, 1943. kao ranjenik." }
+    },
+    "reason": "Trailing OCR apostrophe artifact removed from 'Zadar''.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0006000677",
+    "brigade": "13. Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "additional_info": { "old": "1917.  Dragoševci, Ozalj.", "new": "1917. Dragoševci, Ozalj." }
+    },
+    "reason": "Double space after '1917.' normalized to single space.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0007000938",
+    "brigade": "2. Dalmatinska Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "last_name": { "old": "Cvetić Đorđe", "new": "Cvetić" },
+      "first_name": { "old": "Šuica", "new": "Đorđe" },
+      "additional_info": { "old": "Srbin, zemljoradnik. Član KPJ. U NOV od ve- ljače 1942. komandir čete. Poginuo 7. 6. 1943. NA Gornjim Barama, Sutjeska.", "new": "1913. Šuica, Duvno. Srbin, zemljoradnik. Član KPJ. U NOV od veljače 1942. komandir čete. Poginuo 7. 6. 1943. na Gornjim Barama, Sutjeska." },
+      "birth_year": { "old": "", "new": "1913" }
+    },
+    "reason": "Major parsing error: 'Đorđe' (first name) merged into last_name field, birthplace 'Šuica' treated as first_name. PDF page 32, y=658.7 shows 'CVETIĆ ĐORĐE. 1913. Šuica, Duvno.' Also fixed line-break hyphen 've- ljače'→'veljače' and OCR uppercase 'NA'→'na'.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0005000289",
+    "brigade": "Treća Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "last_name": { "old": "Simovic", "new": "Simović" }
+    },
+    "reason": "Missing diacritical mark on ć. PDF page 398 has 'SIMOVIC' without háček — standard Serbian spelling is 'Simović'.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0002003693",
+    "brigade": "Prva Lička",
+    "action": "edit",
+    "field_changes": {
+      "fathers_name": { "old": "Ljubisava", "new": "Ljubisav" }
+    },
+    "reason": "Father's name still in genitive form 'Ljubisava'. Nominative is 'Ljubisav' (-isava → -isav). PDF page 692, y=643.4 shows 'Ljubisava' (genitive as printed in book).",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0001013960",
+    "brigade": "Prva Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "additional_info": { "old": "Srbin, zemljoradnik, u NOB od 1944, u brigadi od 1944, prištapske jedinice, borac '1055", "new": "Srbin, zemljoradnik, u NOB od 1944, u brigadi od 1944, prištapske jedinice, borac" }
+    },
+    "reason": "Stray PDF reference ''1055' at y=564, x=338 (margin annotation, separate from entry at y=532-543) was merged into additional_info. Removed.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0001000806",
+    "brigade": "Prva Proleterska",
+    "action": "edit",
+    "field_changes": {
+      "additional_info": { "old": "1922, Bujačić, Valjevo, Srbija, Srbin, zemljoradnik, u NOB od septembra 1944, u brigadi od septembra 1944, III bataljon, borac 73", "new": "1922, Bujačić, Valjevo, Srbija, Srbin, zemljoradnik, u NOB od septembra 1944, u brigadi od septembra 1944, III bataljon, borac" }
+    },
+    "reason": "Stray PDF page number '73' at x=349, y=565 (far-right margin) merged into end of additional_info after 'borac'. Removed.",
+    "source": "daily-soldier-validation"
+  },
+  {
+    "date": "2026-04-15",
+    "soldier_id": "0008002941",
+    "brigade": "4. Splitska Udarna",
+    "action": "edit",
+    "field_changes": {
+      "additional_info": { "old": ". . , Split. . . , komesar", "new": "Split, komesar" }
+    },
+    "reason": "Original PDF has placeholder dots for missing birth date and ethnicity ('r. . . , Split. . . , komesar'). Cleaned dots for readability while preserving the available data (Split, komesar).",
+    "source": "daily-soldier-validation"
+  }
+]

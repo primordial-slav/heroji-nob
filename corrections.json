@@ -22,5 +22,146 @@
       "additional_info": "borac, rođen 1887, Babine, Prijepolje, učitelj. Poginuo juna 1943."
     },
     "reason": "Next soldier's garbled OCR name and info were merged into this entry. Cleaned to only Pavlović's own data. The merged soldier (female, rođena 1917, Kordun, učiteljica) has an unreadable name due to OCR interleaving."
+  },
+  {
+    "id": 3,
+    "action": "edit",
+    "soldier_id": "0001004877",
+    "fields": {
+      "last_name": "Kadrijević",
+      "first_name": "Sejdi",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "OCR split surname KADRIJEVIĆ into three words (KAD RIJE VIĆ), causing parser to treat fragments as middle/father's name."
+  },
+  {
+    "id": 4,
+    "action": "edit",
+    "soldier_id": "0007001066",
+    "fields": {
+      "last_name": "Cicerić",
+      "fathers_name": "Blaž"
+    },
+    "reason": "OCR rendered uppercase I as lowercase l, producing 'ClCERIĆ' instead of 'CICERIĆ'. Father's name 'Blaža' (genitive) visible in PDF but not captured by parser."
+  },
+  {
+    "id": 5,
+    "action": "edit",
+    "soldier_id": "0002007853",
+    "fields": {
+      "last_name": "Smiljanović",
+      "additional_info": "1923, Karlovac, poginuo 12. 8. 1942. u Jezeranima"
+    },
+    "reason": "OCR corrupted SMILJANOVIĆ to SMOUANOVIĆ (ILJ→OU). Correct spelling confirmed by nearby SMILJANIĆ entry on same PDF page. Also fixed line-break hyphen artifact 'Jezera- nima' → 'Jezeranima'."
+  },
+  {
+    "id": 6,
+    "action": "edit",
+    "soldier_id": "0002000599",
+    "fields": {
+      "first_name": "Filip",
+      "middle_name": "",
+      "fathers_name": "",
+      "additional_info": "iz Osredaka, u NOB od 1941, čuveni mitraljezac u 1. bataljonu, desetar u 2. četi 3. bataljona"
+    },
+    "reason": "Parser treated 'iz Osredaka' (from Osredak) as name components. 'Filip iz' became middle_name/fathers_name and 'Osredaka' became first_name. Real name is Bokan Filip, from the village of Osredak."
+  },
+  {
+    "id": 7,
+    "action": "edit",
+    "soldier_id": "0001003303",
+    "fields": {
+      "last_name": "Glomazić-Leković",
+      "additional_info": "1924, Novaković, Žabljak, Crna Gora, Crnogorka, u NOB od 1941, u brigadi od maja 1942, I bataljon, omladinski rukovodilac divizije"
+    },
+    "reason": "Lowercase 'l' in hyphenated surname 'Glomazić-leković' should be 'Glomazić-Leković'. Line-break hyphen 'Žab- ljak' joined to 'Žabljak'."
+  },
+  {
+    "id": 8,
+    "action": "edit",
+    "soldier_id": "0002005437",
+    "fields": {
+      "first_name": "Petar",
+      "middle_name": "",
+      "fathers_name": "Stevan",
+      "additional_info": "zvan Pera, 5. 2. 1925, Krš, Perušić, zemljoradnik, Srbin, u NOB od 1942, stariji vodnik, 4. bataljon"
+    },
+    "reason": "Parser placed 'Petar' into fathers_name alongside genitive 'Stevana'. Correct parse: father is Stevan (from genitive Stevana), first name is Petar, 'Pera' is the common Serbian diminutive/nickname."
+  },
+  {
+    "id": 9,
+    "action": "edit",
+    "soldier_id": "0006002702",
+    "fields": {
+      "additional_info": "1921. Žman, Zadar. Poginuo u Petrovoj gori, Kordun, 1943. kao ranjenik."
+    },
+    "reason": "Trailing OCR apostrophe artifact in 'Zadar'' removed."
+  },
+  {
+    "id": 10,
+    "action": "edit",
+    "soldier_id": "0006000677",
+    "fields": {
+      "additional_info": "1917. Dragoševci, Ozalj."
+    },
+    "reason": "Double space after '1917.' normalized to single space."
+  },
+  {
+    "id": 11,
+    "action": "edit",
+    "soldier_id": "0007000938",
+    "fields": {
+      "last_name": "Cvetić",
+      "first_name": "Đorđe",
+      "additional_info": "1913. Šuica, Duvno. Srbin, zemljoradnik. Član KPJ. U NOV od veljače 1942. komandir čete. Poginuo 7. 6. 1943. na Gornjim Barama, Sutjeska.",
+      "birth_year": "1913"
+    },
+    "reason": "Major parsing error: first name 'Đorđe' merged into last_name ('Cvetić Đorđe'), birthplace 'Šuica' parsed as first_name. Fixed name fields, added birth_year 1913, joined line-break 've- ljače'→'veljače', lowercased OCR artifact 'NA'→'na'."
+  },
+  {
+    "id": 12,
+    "action": "edit",
+    "soldier_id": "0005000289",
+    "fields": {
+      "last_name": "Simović"
+    },
+    "reason": "Missing diacritical mark: 'Simovic' → 'Simović'. OCR dropped the háček on ć. Standard Serbian surname spelling confirmed."
+  },
+  {
+    "id": 13,
+    "action": "edit",
+    "soldier_id": "0002003693",
+    "fields": {
+      "fathers_name": "Ljubisav"
+    },
+    "reason": "Father's name still in genitive form 'Ljubisava'. Nominative is 'Ljubisav' (standard Serbian male name, -isava → -isav)."
+  },
+  {
+    "id": 14,
+    "action": "edit",
+    "soldier_id": "0001013960",
+    "fields": {
+      "additional_info": "Srbin, zemljoradnik, u NOB od 1944, u brigadi od 1944, prištapske jedinice, borac"
+    },
+    "reason": "Stray PDF reference number ''1055' at different y-position (margin annotation) was merged into additional_info. Removed."
+  },
+  {
+    "id": 15,
+    "action": "edit",
+    "soldier_id": "0001000806",
+    "fields": {
+      "additional_info": "1922, Bujačić, Valjevo, Srbija, Srbin, zemljoradnik, u NOB od septembra 1944, u brigadi od septembra 1944, III bataljon, borac"
+    },
+    "reason": "Stray PDF page number '73' at far-right margin (x=349, y=565) merged into end of additional_info after 'borac'. Removed."
+  },
+  {
+    "id": 16,
+    "action": "edit",
+    "soldier_id": "0008002941",
+    "fields": {
+      "additional_info": "Split, komesar"
+    },
+    "reason": "Original PDF has placeholder dots for missing birth date and ethnicity ('r. . . , Split. . . , komesar'). Cleaned dots for readability while preserving available data."
   }
 ]
