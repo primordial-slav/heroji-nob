@@ -8,6 +8,14 @@ export interface Soldier {
   full_name: string
   birth_year: string
   unit?: string
+  // Structured fields extracted from additional_info (optional - not all records have these)
+  birth_place?: string
+  ethnicity?: string
+  occupation?: string
+  rank?: string
+  death_date?: string
+  death_place?: string
+  death_type?: string     // e.g. "poginuo", "umro"
   // PDF source position metadata (optional - may not be available for all records)
   pdf_page?: number       // 1-indexed page number in the source PDF
   pdf_y?: number          // Y coordinate in PDF points from page top

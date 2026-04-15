@@ -68,10 +68,50 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
               <span className="modal-value">{soldier.birth_year}</span>
             </div>
           )}
+          {soldier.birth_place && (
+            <div className="modal-detail-row">
+              <span className="modal-label">Mjesto rođenja:</span>
+              <span className="modal-value">{soldier.birth_place}</span>
+            </div>
+          )}
+          {soldier.ethnicity && (
+            <div className="modal-detail-row">
+              <span className="modal-label">Narodnost:</span>
+              <span className="modal-value">{soldier.ethnicity}</span>
+            </div>
+          )}
+          {soldier.occupation && (
+            <div className="modal-detail-row">
+              <span className="modal-label">Zanimanje:</span>
+              <span className="modal-value">{soldier.occupation}</span>
+            </div>
+          )}
+          {soldier.rank && (
+            <div className="modal-detail-row">
+              <span className="modal-label">Čin:</span>
+              <span className="modal-value">{soldier.rank}</span>
+            </div>
+          )}
           {(unitName || soldier.unit) && (
             <div className="modal-detail-row">
               <span className="modal-label">Jedinica:</span>
               <span className="modal-value">{unitName || soldier.unit}</span>
+            </div>
+          )}
+          {soldier.death_date && (
+            <div className="modal-detail-row">
+              <span className="modal-label">
+                {soldier.death_type === 'umro' ? 'Datum smrti:' : 'Datum pogibije:'}
+              </span>
+              <span className="modal-value">{soldier.death_date}</span>
+            </div>
+          )}
+          {soldier.death_place && (
+            <div className="modal-detail-row">
+              <span className="modal-label">
+                {soldier.death_type === 'umro' ? 'Mjesto smrti:' : 'Mjesto pogibije:'}
+              </span>
+              <span className="modal-value">{soldier.death_place}</span>
             </div>
           )}
           {soldier.additional_info && (
