@@ -163,5 +163,195 @@
       "additional_info": "Split, komesar"
     },
     "reason": "Original PDF has placeholder dots for missing birth date and ethnicity ('r. . . , Split. . . , komesar'). Cleaned dots for readability while preserving available data."
+  },
+  {
+    "id": 17,
+    "action": "edit",
+    "soldier_id": "0002004150",
+    "fields": {
+      "first_name": "Nikola",
+      "middle_name": "",
+      "fathers_name": "Sava",
+      "additional_info": "zvan Nidžo Karina, 21. 10. 1919, Velika Popina, Gračac, sezonski radnik, 1. bataljon, komandir voda, poginuo februara 1943. na Zuleševici"
+    },
+    "reason": "Major parse error: parser took last word of multi-name sequence 'Savin Nikola Nidžo Karina' as first_name. Real first name is Nikola (father Sava, from possessive 'Savin'); 'Nidžo' and 'Karina' are wartime nicknames moved to additional_info."
+  },
+  {
+    "id": 18,
+    "action": "edit",
+    "soldier_id": "0003000299",
+    "fields": {
+      "additional_info": "rođen 1923. u T. Korenica. Borac omladinske čete 4. bataljona. Poginuo u Tušiloviću (Kordun) 24.10.1942. godine"
+    },
+    "reason": "Line-break hyphen artifact 'bata- ljona' joined to 'bataljona'."
+  },
+  {
+    "id": 19,
+    "action": "edit",
+    "soldier_id": "0002006812",
+    "fields": {
+      "additional_info": "24. 6. 1924, Badovašnica, Šabac, zemljoradnik, zastavnik, delegat voda"
+    },
+    "reason": "Line-break hyphen artifact 'zastav- nik' joined to 'zastavnik'."
+  },
+  {
+    "id": 20,
+    "action": "edit",
+    "soldier_id": "0003001067",
+    "fields": {
+      "fathers_name": "Dobrosav"
+    },
+    "reason": "Father's name still in genitive 'Dobrosava'. Nominative is 'Dobrosav' (standard Serbian male name). PDF format 'RAKIĆ Dobrosava MOMIR' uses genitive."
+  },
+  {
+    "id": 21,
+    "action": "edit",
+    "soldier_id": "0002004151",
+    "fields": {
+      "additional_info": "1920, Srb, Donji Lapac, u prvom sastavu 1. bataljona, poginuo 1942. u Lapcu"
+    },
+    "reason": "Line-break hyphen artifact 'bataljo- na' joined to 'bataljona'."
+  },
+  {
+    "id": 22,
+    "action": "edit",
+    "soldier_id": "0003000311",
+    "fields": {
+      "last_name": "Drezgić",
+      "first_name": "Dušan"
+    },
+    "reason": "Major parse error: first_name empty, 'Dušan' merged into last_name field as 'Drezgić Dušan'. Nearby entries (0003000309-0003000313) all parse correctly."
+  },
+  {
+    "id": 23,
+    "action": "edit",
+    "soldier_id": "0001008431",
+    "fields": {
+      "fathers_name": "Radoslav"
+    },
+    "reason": "Father's name still in genitive 'Radoslava'. Nominative is 'Radoslav' (standard Serbian male name, -ava → -av). middle_name retains original genitive form as expected."
+  },
+  {
+    "id": 24,
+    "action": "edit",
+    "soldier_id": "0003001080",
+    "fields": {
+      "additional_info": "rođen 1923. u D. Lapcu. Borac. Poginuo na Zelengori 1943. godine"
+    },
+    "reason": "Line-break hyphen 'go- dine' joined to 'godine'. Uppercased place name 'D. LAPCU' normalized to 'D. Lapcu' to match mixed-case convention in biographical text."
+  },
+  {
+    "id": 25,
+    "action": "edit",
+    "soldier_id": "0006006844",
+    "fields": {
+      "additional_info": "1924. Budinjak, Samobor. Poginuo 20. IV. 1945. kod Nove Kapele."
+    },
+    "reason": "Missing period after day number in date '20 IV.' corrected to '20. IV.' to match brigade-wide date formatting convention (e.g. '1. IV.', '16. IV.', '21. IV.')."
+  },
+  {
+    "id": 26,
+    "action": "edit",
+    "soldier_id": "0001003713",
+    "fields": {
+      "first_name": "Radomir",
+      "middle_name": "",
+      "fathers_name": "Milan",
+      "additional_info": "zvan Rade, 1920, Donji Milanovac, Majdanpek, Srbija, Srbin, radnik, livac, član KPJ od 1942, u NOB od 1941, u brigadi od decembra 1941, VI bataljon, zam. polit. komesara brigade",
+      "birth_place": "Donji Milanovac, Majdanpek",
+      "ethnicity": "Srbin",
+      "occupation": "radnik, livac",
+      "rank": "zam. polit. komesara brigade"
+    },
+    "reason": "Major parse error: first_name 'Milana RADOMIR RADE' contains father's genitive, first name, and nickname merged. Father is Milan (from genitive Milana), first name is Radomir, Rade is a nickname. Also fixed OCR comma in 'polit,' → 'polit.' (abbreviation period). Extracted structured fields."
+  },
+  {
+    "id": 27,
+    "action": "edit",
+    "soldier_id": "0006004174",
+    "fields": {
+      "additional_info": "Kalenić, Ub. Nestao 17. 1. 1945. kod Tovarnika.",
+      "birth_place": "Kalenić, Ub",
+      "death_date": "17. 1. 1945.",
+      "death_place": "Tovarnik",
+      "death_type": "nestao"
+    },
+    "reason": "Double space 'Kalenić,  Ub' fixed. Date '17.1 1945' reformatted to '17. 1. 1945.' with proper spacing. Extracted structured fields."
+  },
+  {
+    "id": 28,
+    "action": "edit",
+    "soldier_id": "0008001817",
+    "fields": {
+      "additional_info": "Cista Velika, Imotski, borac",
+      "birth_place": "Cista Velika, Imotski",
+      "rank": "borac"
+    },
+    "reason": "Cleaned placeholder dots '..' for missing birth date and ethnicity (same pattern as correction #16). Extracted structured fields."
+  },
+  {
+    "id": 29,
+    "action": "edit",
+    "soldier_id": "0008001573",
+    "fields": {
+      "additional_info": "1910, borac",
+      "rank": "borac"
+    },
+    "reason": "Cleaned placeholder dots '.., ..' for missing birth place and ethnicity. Extracted rank."
+  },
+  {
+    "id": 30,
+    "action": "edit",
+    "soldier_id": "0006003401",
+    "fields": {
+      "birth_place": "Sušak, Rijeka"
+    },
+    "reason": "Extracted birth_place from additional_info. No other issues."
+  },
+  {
+    "id": 31,
+    "action": "edit",
+    "soldier_id": "0007000502",
+    "fields": {
+      "birth_place": "Radučić, Knin",
+      "ethnicity": "Srbin",
+      "occupation": "zemljoradnik",
+      "death_date": "10. 6. 1943.",
+      "death_place": "Sutjeska",
+      "death_type": "poginuo"
+    },
+    "reason": "Extracted structured fields from additional_info. No parsing or aesthetic issues."
+  },
+  {
+    "id": 32,
+    "action": "edit",
+    "soldier_id": "0006002514",
+    "fields": {
+      "birth_place": "Cvetke, Kraljevo"
+    },
+    "reason": "Extracted birth_place from additional_info. No other issues."
+  },
+  {
+    "id": 33,
+    "action": "edit",
+    "soldier_id": "0007001291",
+    "fields": {
+      "birth_place": "Pridvorje, Gruda",
+      "ethnicity": "Hrvat",
+      "occupation": "zemljoradnik",
+      "death_date": "3. 1. 1945.",
+      "death_type": "nestao"
+    },
+    "reason": "Extracted structured fields from additional_info. No parsing or aesthetic issues."
+  },
+  {
+    "id": 34,
+    "action": "edit",
+    "soldier_id": "0001000122",
+    "fields": {
+      "ethnicity": "Srpkinja",
+      "rank": "bolničarka"
+    },
+    "reason": "Extracted ethnicity and rank from additional_info. No parsing or aesthetic issues."
   }
 ]
