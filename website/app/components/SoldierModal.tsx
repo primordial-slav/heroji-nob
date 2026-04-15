@@ -98,6 +98,12 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
               <span className="modal-value">{unitName || soldier.unit}</span>
             </div>
           )}
+          {soldier.unit_detail && (
+            <div className="modal-detail-row">
+              <span className="modal-label">Podjedinica:</span>
+              <span className="modal-value">{soldier.unit_detail}</span>
+            </div>
+          )}
           {soldier.death_date && (
             <div className="modal-detail-row">
               <span className="modal-label">

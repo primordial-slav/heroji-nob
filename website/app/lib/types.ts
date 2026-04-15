@@ -13,6 +13,7 @@ export interface Soldier {
   ethnicity?: string
   occupation?: string
   rank?: string
+  unit_detail?: string    // sub-unit info: battalion, company, platoon, etc.
   death_date?: string
   death_place?: string
   death_type?: string     // e.g. "poginuo", "umro"
