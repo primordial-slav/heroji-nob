@@ -3927,5 +3927,483 @@
       "death_type": "poginuo"
     },
     "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 319,
+    "action": "edit",
+    "soldier_id": "0003001453",
+    "fields": {
+      "fathers_name": "Božo",
+      "additional_info": "rođen 1920. u s. Kestenova Korita - D. Lapac. Borac 3. čete, 1. bataljona. Poginuo na Udbini 1942. godine",
+      "birth_place": "Kestenova Korita, Donji Lapac",
+      "death_place": "Udbina",
+      "death_type": "poginuo",
+      "unit_detail": "3. četa, 1. bataljon",
+      "rank": "borac"
+    },
+    "reason": "Genitive father name Bože→Božo. Extracted structured fields from additional_info."
+  },
+  {
+    "id": 320,
+    "action": "edit",
+    "soldier_id": "0001001965",
+    "fields": {
+      "fathers_name": "Risto",
+      "birth_place": "Štrpci, Prnjavor",
+      "ethnicity": "Srbin",
+      "occupation": "zemljoradnik",
+      "unit_detail": "IV bataljon",
+      "rank": "borac",
+      "death_type": "poginuo",
+      "death_date": "16. 05. 1943",
+      "death_place": "Bijelo Polje"
+    },
+    "reason": "Genitive father name Riste→Risto. Extracted structured fields."
+  },
+  {
+    "id": 321,
+    "action": "edit",
+    "soldier_id": "0001002747",
+    "fields": {
+      "birth_place": "Štrpci, Prnjavor",
+      "ethnicity": "Srbin",
+      "occupation": "zemljoradnik",
+      "unit_detail": "III bataljon",
+      "rank": "borac",
+      "death_type": "poginuo",
+      "death_date": "00. 06. 1943",
+      "death_place": "na Sutjesci"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 322,
+    "action": "edit",
+    "soldier_id": "0007004547",
+    "fields": {
+      "birth_date": "25. 7. 1925",
+      "birth_place": "Mali Iž, Zadar",
+      "ethnicity": "Hrvat",
+      "occupation": "zemljoradnik",
+      "death_type": "poginuo",
+      "death_date": "7. 6. 1943",
+      "death_place": "Gornje Bare, Sutjeska"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 323,
+    "action": "edit",
+    "soldier_id": "0004002617",
+    "fields": {
+      "birth_place": "Iška vas, Ig"
+    },
+    "reason": "Extracted birth_place from additional_info."
+  },
+  {
+    "id": 324,
+    "action": "edit",
+    "soldier_id": "0001013284",
+    "fields": {
+      "birth_place": "Beograd",
+      "ethnicity": "Srbin",
+      "unit_detail": "I bataljon",
+      "rank": "borac"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 325,
+    "action": "edit",
+    "soldier_id": "0009000815",
+    "fields": {
+      "last_name": "Milutinović",
+      "full_name": "Milutinović Vasa",
+      "death_type": "umro"
+    },
+    "reason": "Missing diacritics Milutinovic→Milutinović. Extracted death_type."
+  },
+  {
+    "id": 326,
+    "action": "edit",
+    "soldier_id": "0001003519",
+    "fields": {
+      "birth_place": "D. Galjipovci, Prnjavor",
+      "ethnicity": "Srbin",
+      "occupation": "zemljoradnik",
+      "unit_detail": "IV bataljon",
+      "rank": "borac"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 327,
+    "action": "edit",
+    "soldier_id": "0007004711",
+    "fields": {
+      "birth_date": "12. 10. 1921",
+      "birth_place": "Dicmo, Sinj",
+      "ethnicity": "Hrvat",
+      "occupation": "zemljoradnik"
+    },
+    "reason": "Extracted structured fields. Note: additional_info appears truncated at source."
+  },
+  {
+    "id": 328,
+    "action": "edit",
+    "soldier_id": "0007001846",
+    "fields": {
+      "birth_date": "13. 7. 1926",
+      "birth_place": "Dunave, Dubrovnik",
+      "ethnicity": "Hrvat",
+      "occupation": "zemljoradnik"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 329,
+    "action": "edit",
+    "soldier_id": "0003001266",
+    "fields": {
+      "fathers_name": "Miloš",
+      "additional_info": "rođen 1921. u s. Bunić, T. Korenica. Delegat voda u 4. bataljonu. Poginuo u napadu na Gračac 15. 1. 1943. godine",
+      "birth_place": "Bunić, T. Korenica",
+      "unit_detail": "4. bataljon",
+      "rank": "delegat voda",
+      "death_type": "poginuo",
+      "death_date": "15. 1. 1943",
+      "death_place": "Gračac"
+    },
+    "reason": "Genitive father name Miloša→Miloš. Fixed line-break hyphens in additional_info. Extracted structured fields."
+  },
+  {
+    "id": 330,
+    "action": "edit",
+    "soldier_id": "0006001888",
+    "fields": {
+      "birth_place": "Jabučje, Lajkovac",
+      "death_type": "poginuo",
+      "death_date": "6. 5. 1945",
+      "death_place": "kod Vrbovca"
+    },
+    "reason": "Extracted structured fields. Converted Roman numeral V→5 in death_date."
+  },
+  {
+    "id": 331,
+    "action": "edit",
+    "soldier_id": "0004003049",
+    "fields": {
+      "birth_place": "Novo mesto",
+      "death_type": "poginuo",
+      "death_place": "Mokrc"
+    },
+    "reason": "Extracted structured fields from Slovenian text (padel = poginuo)."
+  },
+  {
+    "id": 332,
+    "action": "edit",
+    "soldier_id": "0004002478",
+    "fields": {
+      "birth_place": "Štjak, Štanjel"
+    },
+    "reason": "Extracted birth_place from additional_info."
+  },
+  {
+    "id": 333,
+    "action": "edit",
+    "soldier_id": "0001014046",
+    "fields": {
+      "birth_place": "Mahala, Bijelo Polje",
+      "ethnicity": "Crnogorka",
+      "occupation": "učenica",
+      "unit_detail": "III bataljon",
+      "rank": "bolničarka",
+      "death_type": "nestala",
+      "death_date": "03. 06. 1943",
+      "death_place": "na Sutjesci"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 334,
+    "action": "edit",
+    "soldier_id": "0007004337",
+    "fields": {
+      "last_name": "Radić",
+      "first_name": "Nikola",
+      "full_name": "Radić Nikola"
+    },
+    "reason": "Parser placed full name into last_name field with empty first_name. Split into correct fields."
+  },
+  {
+    "id": 335,
+    "action": "edit",
+    "soldier_id": "0006004197",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "full_name": "Milanović Milorad"
+    },
+    "reason": "Parser placed text 'Ostali podaci nepoznati' (other data unknown) into middle_name and fathers_name. Cleared metadata from name fields."
+  },
+  {
+    "id": 336,
+    "action": "edit",
+    "soldier_id": "0001004150",
+    "fields": {
+      "birth_place": "Žirci, Kolašin",
+      "ethnicity": "Crnogorac",
+      "occupation": "učenik",
+      "unit_detail": "I bataljon",
+      "rank": "borac",
+      "death_type": "poginuo",
+      "death_date": "09. 05. 1942",
+      "death_place": "Škara kod Mojkovca"
+    },
+    "reason": "Extracted structured fields from additional_info."
+  },
+  {
+    "id": 337,
+    "action": "delete",
+    "soldier_id": "0009001387",
+    "reason": "Catastrophically garbled entry: line-break fragment 'Ču-' as last_name, additional_info contains dozens of concatenated soldiers. Unsalvageable without manual PDF re-parsing."
+  },
+  {
+    "id": 338,
+    "action": "edit",
+    "soldier_id": "0002000373",
+    "fields": {
+      "rank": "vodnik"
+    },
+    "reason": "Extract rank from additional_info"
+  },
+  {
+    "id": 339,
+    "action": "edit",
+    "soldier_id": "0008001270",
+    "fields": {
+      "last_name": "Gaće",
+      "first_name": "Filip",
+      "birth_place": "Zagvozd, Imotski",
+      "unit_detail": "4. bataljon",
+      "rank": "borac",
+      "death_type": "nestao",
+      "death_date": "27. 11. 1944",
+      "death_place": "Roško polje"
+    },
+    "reason": "Fix parse error (Filip in last_name, R in first_name); extract structured fields"
+  },
+  {
+    "id": 340,
+    "action": "edit",
+    "soldier_id": "0007005439",
+    "fields": {
+      "additional_info": "1924. Zagarač, Danilovgrad. Crnogorac, zemljoradnik. U NOV od 10. 6. 1944. u 2. dalm. brigadi. Poginuo 8. 10. na Rikalu, Trebinje.",
+      "birth_place": "Zagarač, Danilovgrad",
+      "ethnicity": "Crnogorac",
+      "occupation": "zemljoradnik",
+      "death_type": "poginuo",
+      "death_place": "Rikalu, Trebinje"
+    },
+    "reason": "Fix line-break hyphen (zemljo- radnik); extract structured fields"
+  },
+  {
+    "id": 341,
+    "action": "edit",
+    "soldier_id": "0002000112",
+    "fields": {
+      "birth_place": "Selce, Senj",
+      "unit_detail": "Jurišna četa"
+    },
+    "reason": "Extract birth_place and unit_detail from additional_info"
+  },
+  {
+    "id": 342,
+    "action": "edit",
+    "soldier_id": "0007002304",
+    "fields": {
+      "last_name": "Karlović",
+      "first_name": "Ivan",
+      "birth_date": "21. 6. 1925",
+      "birth_place": "Dubrovnik",
+      "ethnicity": "Hrvat",
+      "occupation": "trgovački pomoćnik"
+    },
+    "reason": "Fix parse error (Karlović split as Karlo Vić); extract structured fields"
+  },
+  {
+    "id": 343,
+    "action": "edit",
+    "soldier_id": "0002006139",
+    "fields": {
+      "birth_date": "14. 1. 1922",
+      "birth_place": "Vrebac, Gospić",
+      "occupation": "krojač",
+      "rank": "borac"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 344,
+    "action": "edit",
+    "soldier_id": "0007003928",
+    "fields": {
+      "birth_place": "Komolac, Dubrovnik",
+      "ethnicity": "Hrvat",
+      "occupation": "zemljoradnik"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 345,
+    "action": "edit",
+    "soldier_id": "0002003606",
+    "fields": {
+      "additional_info": "1923, Visuć, Udbina, domaćica, u NOB od 1942, 1. bataljon",
+      "birth_place": "Visuć, Udbina",
+      "occupation": "domaćica",
+      "unit_detail": "1. bataljon"
+    },
+    "reason": "Fix line-break hyphen (ba- taljon); extract structured fields"
+  },
+  {
+    "id": 346,
+    "action": "edit",
+    "soldier_id": "0006000694",
+    "fields": {
+      "additional_info": "1921. Babajić, Ljig.",
+      "birth_place": "Babajić, Ljig"
+    },
+    "reason": "Fix trailing line-break hyphen (Ljig-); extract birth_place"
+  },
+  {
+    "id": 347,
+    "action": "edit",
+    "soldier_id": "0007000944",
+    "fields": {
+      "last_name": "Cvijanović",
+      "first_name": "Ilija",
+      "additional_info": "14.7. Plavno. Srbin. Član SKOJ-a od 25.5.1942. KPJ od 25. 11. 1943. U NOV od 3. 10. 1942. u 2. dalm. brigadi. Srpnja 1943. upućen u bolnicu na Majevicu, a zatim u 16. vojvođansku diviziju.",
+      "birth_place": "Plavno",
+      "ethnicity": "Srbin"
+    },
+    "reason": "Fix major parse error (data in first_name field); fix line-break hyphen (bol- nicu); extract structured fields"
+  },
+  {
+    "id": 348,
+    "action": "edit",
+    "soldier_id": "0001012284",
+    "fields": {
+      "last_name": "Šuperak",
+      "first_name": "Ika",
+      "fathers_name": "Ivan",
+      "birth_place": "Gradina Lozovac, Šibenik",
+      "ethnicity": "Hrvatica",
+      "occupation": "omladinka",
+      "unit_detail": "VI bataljon",
+      "rank": "pomoćnik komesara čete"
+    },
+    "reason": "Fix line-break hyphen in last_name (Šupe-rak); fix first_name parse (Ivana IKA IKICA); extract structured fields"
+  },
+  {
+    "id": 349,
+    "action": "edit",
+    "soldier_id": "0007001284",
+    "fields": {
+      "birth_place": "Pridvorje, Dubrovnik",
+      "ethnicity": "Hrvat",
+      "occupation": "zemljoradnik",
+      "death_type": "nestao",
+      "death_date": "3. 1. 1945"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 350,
+    "action": "edit",
+    "soldier_id": "0006000962",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "birth_place": "Vrapče, Zagreb",
+      "death_type": "poginuo",
+      "death_date": "9. 4. 1945",
+      "death_place": "Lipovac, Slavonija"
+    },
+    "reason": "Fix parse error (place name Vrapče in middle_name/fathers_name); extract structured fields"
+  },
+  {
+    "id": 351,
+    "action": "edit",
+    "soldier_id": "0003001468",
+    "fields": {
+      "birth_place": "Tuk, Titova Korenica",
+      "unit_detail": "4. bataljon",
+      "rank": "borac",
+      "death_type": "poginuo",
+      "death_date": "24. 10. 1942",
+      "death_place": "Tušilović, Kordun"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 352,
+    "action": "edit",
+    "soldier_id": "0002007479",
+    "fields": {
+      "unit_detail": "2. četa, 1. bataljon"
+    },
+    "reason": "Extract unit_detail from additional_info"
+  },
+  {
+    "id": 353,
+    "action": "edit",
+    "soldier_id": "0003000344",
+    "fields": {
+      "birth_place": "Popovac, Niš",
+      "unit_detail": "2. četa, 2. bataljon",
+      "rank": "borac",
+      "death_type": "poginuo",
+      "death_date": "28. 4. 1945",
+      "death_place": "Sokolovac"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 354,
+    "action": "edit",
+    "soldier_id": "0001014067",
+    "fields": {
+      "ethnicity": "Srbin",
+      "unit_detail": "VI bataljon"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 355,
+    "action": "edit",
+    "soldier_id": "0002001177",
+    "fields": {
+      "birth_date": "6. 9. 1904",
+      "birth_place": "Ploča, Gračac",
+      "occupation": "zemljoradnik"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 356,
+    "action": "edit",
+    "soldier_id": "0001005673",
+    "fields": {
+      "ethnicity": "Srbin",
+      "rank": "vodnik"
+    },
+    "reason": "Extract structured fields from additional_info"
+  },
+  {
+    "id": 357,
+    "action": "delete",
+    "soldier_id": "0008003092",
+    "reason": "Not a soldier. Parser picked up author name 'Mamula Branko' from bibliography/references section at end of 4. Splitska PDF. 53,000+ chars of bibliographic citations parsed as additional_info."
   }
 ]

@@ -86,7 +86,7 @@ export const units: Unit[] = [
     nameEn: '4th Split Assault Brigade',
     description: 'Formirana septembra 1943. godine. Popis poginulih i preživjelih boraca.',
     image: '/images/4-splitska-brigada.jpg',
-    soldierCount: 3092,
+    soldierCount: 3091,
     dataFile: '/4-splitska-soldiers.json',
     pdfFiles: ['/pdfs/4-splitska-brigada.pdf']
   },
@@ -96,7 +96,7 @@ export const units: Unit[] = [
     nameEn: '1st Vojvodina Brigade',
     description: 'Formirana 1944. godine. Spisak boraca brigade.',
     image: '/images/prva-vojvodjanska-brigada.jpg',
-    soldierCount: 1487,
+    soldierCount: 1486,
     dataFile: '/prva-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/prva-vojvodjanska.pdf']
   }
