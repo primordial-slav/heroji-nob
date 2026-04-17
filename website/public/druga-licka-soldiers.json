@@ -564,14 +564,19 @@
     "middle_name": "Gojka",
     "first_name": "Dane",
     "additional_info": "rođen 1927. u s. Arapov Dol-Ličko Petrovo Selo. Borac 2. bataljona. Poginuo kod Kupresa 1944. godine",
-    "fathers_name": "Gojka",
+    "fathers_name": "Gojko",
     "full_name": "Babić Gojka Dane",
     "birth_year": "1927",
     "pdf_page": 2,
     "pdf_y": 596.7,
     "pdf_x": 121.8,
     "pdf_y_end": 613.0,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "s. Arapov Dol, Ličko Petrovo Selo",
+    "unit_detail": "2. bataljon",
+    "rank": "borac",
+    "death_place": "Kupres",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0003000040",
@@ -1521,14 +1526,20 @@
     "last_name": "Božanić",
     "middle_name": "Luke",
     "first_name": "Rade",
-    "additional_info": "rođen u s. Debelo Brdo T. Korenica. Borac 4. bataljona. Poginuo kpd Gračaca 15. 01. 1943. godine",
+    "additional_info": "rođen u s. Debelo Brdo T. Korenica. Borac 4. bataljona. Poginuo kod Gračaca 15. 01. 1943. godine",
     "fathers_name": "Luka",
     "full_name": "Božanić Luke Rade",
     "pdf_page": 5,
     "pdf_y": 154.4,
     "pdf_x": 120.9,
     "pdf_y_end": 171.4,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "s. Debelo Brdo, T. Korenica",
+    "unit_detail": "4. bataljon",
+    "rank": "borac",
+    "death_date": "15. 01. 1943.",
+    "death_place": "Gračac",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0003000105",
@@ -3410,13 +3421,19 @@
     "middle_name": "Jovice",
     "first_name": "Dragiša",
     "additional_info": "rođen u Široka Kula - Gospić. Komandir voda 2. bataljona »Ognjen Priča«. Poginuo na S. Furjanu - Lađevac - Kordun 3. 11. 1942. godine",
-    "fathers_name": "Jovice",
+    "fathers_name": "Jovica",
     "full_name": "Čubrić Jovice Dragiša",
     "pdf_page": 9,
     "pdf_y": 503.9,
     "pdf_x": 122.6,
     "pdf_y_end": 520.9,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Široka Kula, Gospić",
+    "rank": "komandir voda",
+    "unit_detail": "2. bataljon \"Ognjen Priča\"",
+    "death_date": "3. 11. 1942.",
+    "death_place": "S. Furjan, Lađevac, Kordun",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0003000232",
@@ -4317,7 +4334,7 @@
     "last_name": "Dušen",
     "middle_name": "Gavre",
     "first_name": "Nikola",
-    "additional_info": "rođen 1915. Borac prateće čete. Poginuo na Turbetu 1943. go- dine",
+    "additional_info": "rođen 1915. Borac prateće čete. Poginuo na Turbetu 1943. godine",
     "fathers_name": "Gavre",
     "full_name": "Dušen Gavre Nikola",
     "birth_year": "1915",
@@ -4325,7 +4342,11 @@
     "pdf_y": 650.0,
     "pdf_x": 120.7,
     "pdf_y_end": 667.0,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "rank": "borac",
+    "unit_detail": "prateća četa",
+    "death_type": "poginuo",
+    "death_place": "Turbe"
   },
   {
     "soldier_id": "0003000293",
@@ -4703,7 +4724,12 @@
     "pdf_y": 605.9,
     "pdf_x": 124.8,
     "pdf_y_end": 622.9,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "s. Brotinja",
+    "unit_detail": "2. četa, 1. bataljon",
+    "rank": "borac",
+    "death_place": "Jezerani",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0003000318",
@@ -5107,7 +5133,13 @@
     "pdf_y": 135.5,
     "pdf_x": 125.4,
     "pdf_y_end": 152.3,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Popovac, Niš",
+    "unit_detail": "2. četa, 2. bataljon",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "28. 4. 1945",
+    "death_place": "Sokolovac"
   },
   {
     "soldier_id": "0003000345",
@@ -10522,18 +10554,23 @@
   },
   {
     "soldier_id": "0003000709",
-    "last_name": "Milovanovic",
+    "last_name": "Milovanović",
     "middle_name": "Stavre",
     "first_name": "Tihomir",
-    "additional_info": "rođen 1926. u s. Varoš - Svrljig. Borac 2. čete 2. ba- taljona. Nestao na sremskom frontu 1945. godine",
+    "additional_info": "rođen 1926. u s. Varoš - Svrljig. Borac 2. čete 2. bataljona. Nestao na sremskom frontu 1945. godine",
     "fathers_name": "Stavre",
-    "full_name": "Milovanovic Stavre Tihomir",
+    "full_name": "Milovanović Stavre Tihomir",
     "birth_year": "1926",
     "pdf_page": 27,
     "pdf_y": 190.1,
     "pdf_x": 116.0,
     "pdf_y_end": 206.9,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "s. Varoš, Svrljig",
+    "unit_detail": "2. četa, 2. bataljon",
+    "rank": "borac",
+    "death_place": "sremski front",
+    "death_type": "nestao"
   },
   {
     "soldier_id": "0003000710",
@@ -10809,9 +10846,9 @@
   },
   {
     "soldier_id": "0003000728",
-    "last_name": "Milićanin Branko",
+    "last_name": "Milićanin",
     "middle_name": "",
-    "first_name": "",
+    "first_name": "Branko",
     "additional_info": "Borac 1. čete 2. bataljona. Ranjen, umro, sahranjen u s. Strašinci 12. 04. 1945. godine",
     "fathers_name": "",
     "full_name": "Milićanin Branko",
@@ -10819,7 +10856,12 @@
     "pdf_y": 566.7,
     "pdf_x": 117.4,
     "pdf_y_end": 583.7,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon",
+    "death_type": "umro",
+    "death_date": "12. 04. 1945.",
+    "death_place": "Strašinci"
   },
   {
     "soldier_id": "0003000729",
@@ -11397,7 +11439,7 @@
     "last_name": "Mirić",
     "middle_name": "Dmitra",
     "first_name": "Branko",
-    "additional_info": "rođen 1924. u s. Krbavica - T. Korenica. Delegat voda 2. bata- ljona. Poginuo u Bilaju kod Gospića 1942. godine",
+    "additional_info": "rođen 1924. u s. Krbavica - T. Korenica. Delegat voda 2. bataljona. Poginuo u Bilaju kod Gospića 1942. godine",
     "fathers_name": "Dmitar",
     "full_name": "Mirić Dmitra Branko",
     "birth_year": "1924",
@@ -11405,7 +11447,12 @@
     "pdf_y": 220.4,
     "pdf_x": 117.3,
     "pdf_y_end": 238.4,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Krbavica, Titova Korenica",
+    "rank": "delegat voda",
+    "unit_detail": "2. bataljon",
+    "death_type": "poginuo",
+    "death_place": "Bilaj, Gospić"
   },
   {
     "soldier_id": "0003000769",
@@ -12124,18 +12171,22 @@
   },
   {
     "soldier_id": "0003000817",
-    "last_name": "Obrado Vic",
-    "middle_name": "Nikole",
+    "last_name": "Obradović",
+    "middle_name": "Nikola",
     "first_name": "Stevo",
     "additional_info": "rođen 1925. u G. Lapac. Borac 2. čete 1. bataljona. Nestao u Bosni 1944. godine",
     "fathers_name": "Nikola",
-    "full_name": "Obrado Vic Nikole Stevo",
+    "full_name": "Obradović Nikola Stevo",
     "birth_year": "1925",
     "pdf_page": 31,
     "pdf_y": 160.9,
     "pdf_x": 114.0,
     "pdf_y_end": 177.7,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Gornji Lapac",
+    "rank": "borac",
+    "unit_detail": "2. četa, 1. bataljon",
+    "death_type": "nestao"
   },
   {
     "soldier_id": "0003000818",
@@ -15454,17 +15505,23 @@
   },
   {
     "soldier_id": "0003001041",
-    "last_name": "Radojćić Momćilo",
+    "last_name": "Radojčić",
     "middle_name": "",
-    "first_name": "",
-    "additional_info": "rođen u s. Sovkori-Azbukovač. Borac 2. čete 3. bataljona. Pogi- nuo na Vrbanji 11.4. 1945",
+    "first_name": "Momčilo",
+    "additional_info": "rođen u s. Sovkori-Azbukovač. Borac 2. čete 3. bataljona. Poginuo na Vrbanji 11. 4. 1945",
     "fathers_name": "",
-    "full_name": "Radojćić Momćilo",
+    "full_name": "Radojčić Momčilo",
     "pdf_page": 38,
     "pdf_y": 583.3,
     "pdf_x": 126.9,
     "pdf_y_end": 600.3,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "s. Sovkori, Azbukovač",
+    "unit_detail": "2. četa, 3. bataljon",
+    "rank": "borac",
+    "death_place": "Vrbanja",
+    "death_date": "11. 4. 1945",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0003001042",
@@ -18798,15 +18855,21 @@
     "last_name": "Škorić",
     "middle_name": "Miloša",
     "first_name": "Nikola",
-    "additional_info": "rođen 1921. u s. Bunić- T. Korenica. Delegat voda u 4. bataljo- nu. Poginuo u napadu na Gračac 15. 1. 1943. godine",
-    "fathers_name": "Miloša",
+    "additional_info": "rođen 1921. u s. Bunić, T. Korenica. Delegat voda u 4. bataljonu. Poginuo u napadu na Gračac 15. 1. 1943. godine",
+    "fathers_name": "Miloš",
     "full_name": "Škorić Miloša Nikola",
     "birth_year": "1921",
     "pdf_page": 46,
     "pdf_y": 541.4,
     "pdf_x": 122.1,
     "pdf_y_end": 558.4,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Bunić, T. Korenica",
+    "unit_detail": "4. bataljon",
+    "rank": "delegat voda",
+    "death_type": "poginuo",
+    "death_date": "15. 1. 1943",
+    "death_place": "Gračac"
   },
   {
     "soldier_id": "0003001267",
@@ -19326,17 +19389,22 @@
   {
     "soldier_id": "0003001302",
     "last_name": "Tišma",
-    "middle_name": "Radovana",
+    "middle_name": "Radovan",
     "first_name": "Stevo",
     "additional_info": "rođen 1923. u s. Dnopolje-D. Lapac. Borac 2. čete 1. bataljona. Poginuo kod Bugojna u Bosni 1944. godine",
     "fathers_name": "Radovan",
-    "full_name": "Tišma Radovana Stevo",
+    "full_name": "Tišma Radovan Stevo",
     "birth_year": "1923",
     "pdf_page": 48,
     "pdf_y": 163.3,
     "pdf_x": 116.0,
     "pdf_y_end": 180.3,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Dnopolje, Donji Lapac",
+    "rank": "borac",
+    "unit_detail": "2. četa, 1. bataljon",
+    "death_place": "kod Bugojna",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0003001303",
@@ -21563,14 +21631,19 @@
     "middle_name": "Bože",
     "first_name": "Stevo",
     "additional_info": "rođen 1920. u s. Kestenova Korita - D. Lapac. Borac 3. čete, 1. bataljona. Poginuo na Udbini 1942. godine",
-    "fathers_name": "Bože",
+    "fathers_name": "Božo",
     "full_name": "Zobenica Bože Stevo",
     "birth_year": "1920",
     "pdf_page": 53,
     "pdf_y": 449.1,
     "pdf_x": 115.1,
     "pdf_y_end": 466.1,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Kestenova Korita, Donji Lapac",
+    "death_place": "Udbina",
+    "death_type": "poginuo",
+    "unit_detail": "3. četa, 1. bataljon",
+    "rank": "borac"
   },
   {
     "soldier_id": "0003001454",
@@ -21794,7 +21867,13 @@
     "pdf_y": 217.9,
     "pdf_x": 126.8,
     "pdf_y_end": 234.6,
-    "pdf_file": "druga-licka-spisak.pdf"
+    "pdf_file": "druga-licka-spisak.pdf",
+    "birth_place": "Tuk, Titova Korenica",
+    "unit_detail": "4. bataljon",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "24. 10. 1942",
+    "death_place": "Tušilović, Kordun"
   },
   {
     "soldier_id": "0003001469",

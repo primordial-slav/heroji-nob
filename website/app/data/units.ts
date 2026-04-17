@@ -16,7 +16,7 @@ export const units: Unit[] = [
     nameEn: '1st Lika Proletarian Brigade "Marko Orešković"',
     description: 'Formirana juna 1942. godine',
     image: '/images/prva-licka-brigada.jpg',
-    soldierCount: 9798,
+    soldierCount: 9801,
     dataFile: '/soldiers.json',
     pdfFiles: ['/pdfs/prva-licka-proleterska.pdf']
   },
@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941. godine',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 14070,
+    soldierCount: 14071,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf']
   },
@@ -36,7 +36,7 @@ export const units: Unit[] = [
     nameEn: '10th Slovenian People\'s Liberation Assault Brigade "Ljubljana"',
     description: 'Formirana 11. septembra 1943. godine',
     image: '/images/ljubljanska-brigada.jpg',
-    soldierCount: 3172,
+    soldierCount: 3170,
     dataFile: '/ljubljanska-soldiers.json',
     pdfFiles: ['/pdfs/ljubljanska-brigada.pdf']
   },
@@ -56,7 +56,7 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. godine. Spisak boraca i starešina na dan formiranja brigade.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 859,
+    soldierCount: 861,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf']
   },
@@ -66,7 +66,7 @@ export const units: Unit[] = [
     nameEn: '13th Proletarian Assault Brigade "Rade Končar"',
     description: 'Formirana 7. novembra 1942. godine. Spisak palih i preživjelih boraca.',
     image: '/images/13-proleterska-brigada.jpg',
-    soldierCount: 7937,
+    soldierCount: 7938,
     dataFile: '/13-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/13-proleterska-spisak.pdf']
   },
@@ -76,7 +76,7 @@ export const units: Unit[] = [
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. godine. Popis boraca brigade.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 5876,
+    soldierCount: 5875,
     dataFile: '/2-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf']
   },
@@ -86,7 +86,7 @@ export const units: Unit[] = [
     nameEn: '4th Split Assault Brigade',
     description: 'Formirana septembra 1943. godine. Popis poginulih i preživjelih boraca.',
     image: '/images/4-splitska-brigada.jpg',
-    soldierCount: 3091,
+    soldierCount: 3090,
     dataFile: '/4-splitska-soldiers.json',
     pdfFiles: ['/pdfs/4-splitska-brigada.pdf']
   },

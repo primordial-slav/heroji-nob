@@ -1763,9 +1763,12 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Brestač",
-    "additional_info": "zemljoradnik, borac, umro u diviziskoj bol- nici",
+    "additional_info": "zemljoradnik, borac, umro u divizijskoj bolnici",
     "birth_year": "",
-    "soldier_id": "0009000121"
+    "soldier_id": "0009000121",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "umro"
   },
   {
     "last_name": "Brigade",
@@ -1923,7 +1926,7 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Budurin Mirko",
-    "additional_info": "1924, Bašaid, zem- ljoradnik, borac",
+    "additional_info": "1924, Bašaid, zemljoradnik, borac",
     "birth_year": "1924",
     "soldier_id": "0009000132",
     "pdf_page": 5,
@@ -4611,7 +4614,8 @@
     "pdf_y": 285.7,
     "pdf_x": 204.0,
     "pdf_y_end": 293.3,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "death_type": "umro"
   },
   {
     "last_name": "Grujić",
@@ -8819,14 +8823,19 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Krsmanović Bogdanka",
-    "additional_info": "1923, šid, domaćica, borac, poginula u Bosni",
+    "additional_info": "1923, Šid, domaćica, borac, poginula u Bosni",
     "birth_year": "1923",
     "soldier_id": "0009000597",
     "pdf_page": 16,
     "pdf_y": 83.5,
     "pdf_x": 207.1,
     "pdf_y_end": 108.9,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "birth_place": "Šid",
+    "occupation": "domaćica",
+    "rank": "borac",
+    "death_place": "Bosna",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Krsmanović",
@@ -12014,11 +12023,11 @@
     "pdf_file": "prva-vojvodjanska.pdf"
   },
   {
-    "last_name": "Milutinovic",
+    "last_name": "Milutinović",
     "first_name": "Vasa",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Milutinovic Vasa",
+    "full_name": "Milutinović Vasa",
     "additional_info": "umro",
     "birth_year": "",
     "soldier_id": "0009000815",
@@ -12026,7 +12035,8 @@
     "pdf_y": 270.1,
     "pdf_x": 212.5,
     "pdf_y_end": 277.9,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "death_type": "umro"
   },
   {
     "last_name": "Milčević",
@@ -13464,14 +13474,17 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Ninković Svetozar",
-    "additional_info": "1921, zemljo- radnik, borac, mesto smrti: Međelišće",
+    "additional_info": "1921, zemljoradnik, borac, mesto smrti: Međelišće",
     "birth_year": "1921",
     "soldier_id": "0009000913",
     "pdf_page": 22,
     "pdf_y": 299.3,
     "pdf_x": 209.2,
     "pdf_y_end": 324.6,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_place": "Međelišće"
   },
   {
     "last_name": "Ninlkov",
@@ -14959,7 +14972,7 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Petrović Ilija",
-    "additional_info": "1925, Grtk (Mitro- vica), borac, umro u divizij- skoj bolnici, Panduri",
+    "additional_info": "1925, Grtk (Mitrovica), borac, umro u divizijskoj bolnici, Panduri",
     "birth_year": "1925",
     "soldier_id": "0009001015",
     "pdf_page": 24,
@@ -16345,16 +16358,19 @@
     "last_name": "Sremac",
     "first_name": "Dragutin",
     "middle_name": "",
-    "fathers_name": "",
+    "fathers_name": "Drago",
     "full_name": "Sremac Dragutin",
-    "additional_info": "Dra- ga, 1911, Progar, zemljoradnik, umro",
+    "additional_info": "Draga, 1911, Progar, zemljoradnik, umro",
     "birth_year": "1911",
     "soldier_id": "0009001110",
     "pdf_page": 28,
     "pdf_y": 342.3,
     "pdf_x": 55.1,
     "pdf_y_end": 367.6,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "birth_place": "Progar",
+    "occupation": "zemljoradnik",
+    "death_type": "umro"
   },
   {
     "last_name": "Sremska",
@@ -18718,13 +18734,14 @@
   },
   {
     "last_name": "Vladisavljev",
-    "first_name": "Mati ja",
+    "first_name": "Matija",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Vladisavljev Mati ja",
+    "full_name": "Vladisavljev Matija",
     "additional_info": "borac",
     "birth_year": "",
-    "soldier_id": "0009001271"
+    "soldier_id": "0009001271",
+    "rank": "borac"
   },
   {
     "last_name": "Vladisavljević",
@@ -20427,16 +20444,6 @@
     "pdf_file": "prva-vojvodjanska.pdf"
   },
   {
-    "last_name": "Ču-",
-    "first_name": "",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Ču-",
-    "additional_info": "umro 1965. Radošević Majko, umro 29. Radulović Slavko, 1923, Surčin, zemljoradnik, kunir Radusin Rade, komandir voda, u ranjavan Ragan Arfurl 1926, Stari Vrbas 21. (Kula), mesto smrti: Bistrica Raičević Gojko, 1922, Crna Gora, komandir čete, mesto smrti: Kaitanići {?) Rajačtić Boža Rajić Petar, Sivac Rajić Vasa, borac Rajlković Đorđe, borac Raj-nić (Jaca) Dragan, 1919, Irig, komesar bat al j ona Rakić (Živa) Sredoje, 1924, No- vo Miloševo, zemljoradnik, bo- rac, vodnik Rakić (Sava) Slobodan, 1926, No-",
-    "birth_year": "1965",
-    "soldier_id": "0009001387"
-  },
-  {
     "last_name": "Čuha",
     "first_name": "Jan",
     "middle_name": "",
@@ -20457,14 +20464,19 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Čuk Ivan",
-    "additional_info": "1917, šašinci (Ruma), mehaničar, borac, poginuo i sa- hranjen u Grgurevcima",
+    "additional_info": "1917, Šašinci (Ruma), mehaničar, borac, poginuo i sahranjen u Grgurevcima",
     "birth_year": "1917",
     "soldier_id": "0009001389",
     "pdf_page": 6,
     "pdf_y": 500.9,
     "pdf_x": 60.3,
     "pdf_y_end": 530.9,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "birth_place": "Šašinci, Ruma",
+    "occupation": "mehaničar",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_place": "Grgurevci"
   },
   {
     "last_name": "Čunat",
@@ -20479,7 +20491,12 @@
     "pdf_y": 430.9,
     "pdf_x": 214.6,
     "pdf_y_end": 464.5,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "birth_place": "Gornji Lapac",
+    "occupation": "radnik",
+    "rank": "borac",
+    "death_place": "Potočare",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Đakov",
@@ -20657,14 +20674,18 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Đorkić Milorad",
-    "additional_info": "1920. zemljorad- nik, politički komesar, poginuo u Prnjavoru, sahranjen na po- ložaju",
+    "additional_info": "1920. zemljoradnik, politički komesar, poginuo u Prnjavoru, sahranjen na položaju",
     "birth_year": "1920",
     "soldier_id": "0009001403",
     "pdf_page": 8,
     "pdf_y": 88.7,
     "pdf_x": 210.4,
     "pdf_y_end": 123.0,
-    "pdf_file": "prva-vojvodjanska.pdf"
+    "pdf_file": "prva-vojvodjanska.pdf",
+    "occupation": "zemljoradnik",
+    "rank": "politički komesar",
+    "death_place": "Prnjavor",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Đorđev",
@@ -21112,12 +21133,12 @@
     "pdf_file": "prva-vojvodjanska.pdf"
   },
   {
-    "last_name": "Š/tirukelj",
-    "first_name": "Dobrić Ka tica",
+    "last_name": "Štirukelj",
+    "first_name": "Katica",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Š/tirukelj Dobrić Ka tica",
-    "additional_info": "",
+    "full_name": "Štirukelj Katica",
+    "additional_info": "djev. Dobrić",
     "birth_year": "",
     "soldier_id": "0009001434",
     "pdf_page": 30,
