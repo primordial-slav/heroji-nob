@@ -326,18 +326,21 @@
   },
   {
     "soldier_id": "0005000023",
-    "last_name": "Kujovic",
+    "last_name": "Kujović",
     "middle_name": "",
     "first_name": "Vaso",
     "additional_info": "rođen 1929. Pale, Ravna Reka, Bijelo Polje, poginuo na Sutjesci.",
     "fathers_name": "",
-    "full_name": "Kujovic Vaso",
+    "full_name": "Kujović Vaso",
     "birth_year": "1929",
     "pdf_page": 378,
     "pdf_y": 144.9,
     "pdf_x": 87.8,
     "pdf_y_end": 177.0,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Pale, Ravna Reka, Bijelo Polje",
+    "death_type": "poginuo",
+    "death_place": "Sutjeska"
   },
   {
     "soldier_id": "0005000024",
@@ -524,7 +527,7 @@
     "last_name": "Hadrovic",
     "middle_name": "",
     "first_name": "Munir",
-    "additional_info": "borac, rođen 1922, Bijelo Polje, radnik; član KPJ od 1942. Po- ginuo 1944.",
+    "additional_info": "borac, rođen 1922, Bijelo Polje, radnik; član KPJ od 1942. Poginuo 1944.",
     "fathers_name": "",
     "full_name": "Hadrovic Munir",
     "birth_year": "1922",
@@ -532,7 +535,11 @@
     "pdf_y": 109.7,
     "pdf_x": 69.9,
     "pdf_y_end": 143.0,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Bijelo Polje",
+    "occupation": "radnik",
+    "rank": "borac",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000037",
@@ -1294,7 +1301,12 @@
     "pdf_y": 188.4,
     "pdf_x": 73.7,
     "pdf_y_end": 230.3,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Kaona, Čačak",
+    "occupation": "student medicine",
+    "rank": "referent saniteta",
+    "death_place": "Nova Varoš",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000088",
@@ -1328,18 +1340,20 @@
   },
   {
     "soldier_id": "0005000090",
-    "last_name": "Đajic",
+    "last_name": "Đajić",
     "middle_name": "",
     "first_name": "Jela",
     "additional_info": "bolničarka, rođena 1921, domaćica; član SKOJ-a.",
     "fathers_name": "",
-    "full_name": "Đajic Jela",
+    "full_name": "Đajić Jela",
     "birth_year": "1921",
     "pdf_page": 383,
     "pdf_y": 291.8,
     "pdf_x": 73.7,
     "pdf_y_end": 324.9,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "bolničarka",
+    "occupation": "domaćica"
   },
   {
     "soldier_id": "0005000091",
@@ -1733,18 +1747,21 @@
   },
   {
     "soldier_id": "0005000118",
-    "last_name": "Lekovic",
+    "last_name": "Leković",
     "middle_name": "",
     "first_name": "Ljubomir",
     "additional_info": "borac, rođen 1915, Radoinja, Nova Varoš, radnik.",
     "fathers_name": "",
-    "full_name": "Lekovic Ljubomir",
+    "full_name": "Leković Ljubomir",
     "birth_year": "1915",
     "pdf_page": 385,
     "pdf_y": 464.8,
     "pdf_x": 77.0,
     "pdf_y_end": 495.3,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Radoinja, Nova Varoš",
+    "occupation": "radnik"
   },
   {
     "soldier_id": "0005000119",
@@ -2014,7 +2031,13 @@
     "pdf_y": 139.2,
     "pdf_x": 74.9,
     "pdf_y_end": 168.9,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Drmanovići, Nova Varoš",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_date": "13. 6. 1943",
+    "death_place": "Sutjeska",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000137",
@@ -2416,33 +2439,43 @@
   },
   {
     "soldier_id": "0005000164",
-    "last_name": "Boškovic",
+    "last_name": "Bošković",
     "middle_name": "",
     "first_name": "Arso",
     "additional_info": "desetar 4. desetine, rođen 1910, Radoinja, zemljoradnik; član KPJ od 1941. Poginuo 5. avgusta 1942. u Livnu.",
     "fathers_name": "",
-    "full_name": "Boškovic Arso",
+    "full_name": "Bošković Arso",
     "birth_year": "1910",
     "pdf_page": 389,
     "pdf_y": 220.1,
     "pdf_x": 78.8,
     "pdf_y_end": 253.4,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "desetar",
+    "unit_detail": "4. desetina",
+    "birth_place": "Radoinja",
+    "occupation": "zemljoradnik",
+    "death_date": "5. 8. 1942",
+    "death_place": "Livno",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000165",
-    "last_name": "Abdulagic",
+    "last_name": "Abdulagić",
     "middle_name": "",
     "first_name": "Jusuf",
     "additional_info": "borac, rođen 1920. Sjeverni, Priboj, radnik; član SKOJ-a.",
     "fathers_name": "",
-    "full_name": "Abdulagic Jusuf",
+    "full_name": "Abdulagić Jusuf",
     "birth_year": "1920",
     "pdf_page": 389,
     "pdf_y": 254.4,
     "pdf_x": 78.1,
     "pdf_y_end": 284.3,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Sjeverin, Priboj",
+    "occupation": "radnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000166",
@@ -2611,18 +2644,24 @@
   },
   {
     "soldier_id": "0005000177",
-    "last_name": "Đurišic",
+    "last_name": "Đurišić",
     "middle_name": "",
     "first_name": "Branko",
     "additional_info": "borac, rođen 1916, Nova Varoš, zemljoradnik; kandidat za člana KPJ. Poginuo na Sutjesci 13. juna 1943.",
     "fathers_name": "",
-    "full_name": "Đurišic Branko",
+    "full_name": "Đurišić Branko",
     "birth_year": "1916",
     "pdf_page": 390,
     "pdf_y": 202.8,
     "pdf_x": 80.3,
     "pdf_y_end": 268.3,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Nova Varoš",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_date": "13. 6. 1943",
+    "death_place": "Sutjeska",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000178",
@@ -2650,7 +2689,13 @@
     "pdf_y": 269.3,
     "pdf_x": 80.8,
     "pdf_y_end": 300.2,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Nova Varoš",
+    "occupation": "radnik",
+    "rank": "borac",
+    "death_date": "13. juna 1943",
+    "death_place": "Sutjeska",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000180",
@@ -2658,14 +2703,17 @@
     "middle_name": "Murat",
     "first_name": "Murco",
     "additional_info": "borac, rođen 1921, Nova Varoš, radnik.",
-    "fathers_name": "",
+    "fathers_name": "Murat",
     "full_name": "Juković Murat Murco",
     "birth_year": "1921",
     "pdf_page": 390,
     "pdf_y": 301.2,
     "pdf_x": 80.3,
     "pdf_y_end": 326.1,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Nova Varoš",
+    "occupation": "radnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000181",
@@ -2699,18 +2747,24 @@
   },
   {
     "soldier_id": "0005000183",
-    "last_name": "Karamatijevic",
+    "last_name": "Karamatijević",
     "middle_name": "Prvoslav",
     "first_name": "Pivo",
     "additional_info": "borac, rođen 1908, Nova Varoš; nastavnik, kandidat za člana KPJ. Umro 1963. u Beogradu.",
-    "fathers_name": "",
-    "full_name": "Karamatijevic Prvoslav Pivo",
+    "fathers_name": "Prvoslav",
+    "full_name": "Karamatijević Prvoslav Pivo",
     "birth_year": "1908",
     "pdf_page": 390,
     "pdf_y": 393.9,
     "pdf_x": 80.3,
     "pdf_y_end": 427.2,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Nova Varoš",
+    "occupation": "nastavnik",
+    "rank": "borac",
+    "death_type": "umro",
+    "death_date": "1963",
+    "death_place": "Beograd"
   },
   {
     "soldier_id": "0005000184",
@@ -3069,18 +3123,24 @@
   },
   {
     "soldier_id": "0005000208",
-    "last_name": "Hadzimurtezič",
+    "last_name": "Hadžimurtezić",
     "middle_name": "",
     "first_name": "Hajro",
-    "additional_info": "borac, rođen 1908, Nova Varoš, radnik; član KPJ od 1941. Po- ginuo kao intendant bataljona, kod Konjica, marta 1943.",
+    "additional_info": "borac, rođen 1908, Nova Varoš, radnik; član KPJ od 1941. Poginuo kao intendant bataljona, kod Konjica, marta 1943.",
     "fathers_name": "",
-    "full_name": "Hadzimurtezič Hajro",
+    "full_name": "Hadžimurtezić Hajro",
     "birth_year": "1908",
     "pdf_page": 392,
     "pdf_y": 297.6,
     "pdf_x": 83.5,
     "pdf_y_end": 330.7,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Nova Varoš",
+    "occupation": "radnik",
+    "rank": "intendant bataljona",
+    "death_date": "marta 1943",
+    "death_place": "kod Konjica",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000209",
@@ -3263,18 +3323,24 @@
   },
   {
     "soldier_id": "0005000221",
-    "last_name": "Cukovic",
+    "last_name": "Cuković",
     "middle_name": "",
     "first_name": "Mihailo",
-    "additional_info": "desetar 4. desetine, rođen 1924, Radoinja, Nova Varoš, zemljoradnik: član KPJ od 1942. Poginuo 5. avgusta 1942. u Livnu.",
+    "additional_info": "desetar 4. desetine, rođen 1924, Radoinja, Nova Varoš, zemljoradnik, član KPJ od 1942. Poginuo 5. avgusta 1942. u Livnu.",
     "fathers_name": "",
-    "full_name": "Cukovic Mihailo",
+    "full_name": "Cuković Mihailo",
     "birth_year": "1924",
     "pdf_page": 393,
     "pdf_y": 317.5,
     "pdf_x": 86.3,
     "pdf_y_end": 350.8,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Radoinja, Nova Varoš",
+    "occupation": "zemljoradnik",
+    "rank": "desetar",
+    "death_date": "5. avgusta 1942.",
+    "death_place": "Livno",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000222",
@@ -3323,18 +3389,24 @@
   },
   {
     "soldier_id": "0005000225",
-    "last_name": "Blagojevic",
+    "last_name": "Blagojević",
     "middle_name": "",
     "first_name": "Dobrosav",
     "additional_info": "borac, rođen 1924, Radoinja, Nova Varoš, zemljoradnik; član SKOJ-a. Poginuo 13. juna 1943. na Sutjesci.",
     "fathers_name": "",
-    "full_name": "Blagojevic Dobrosav",
+    "full_name": "Blagojević Dobrosav",
     "birth_year": "1924",
     "pdf_page": 393,
     "pdf_y": 455.0,
     "pdf_x": 85.8,
     "pdf_y_end": 490.2,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Radoinja, Nova Varoš",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_date": "13. 6. 1943",
+    "death_place": "Sutjeska",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000226",
@@ -3353,13 +3425,18 @@
   },
   {
     "soldier_id": "0005000227",
-    "last_name": "BORISAVLJEVie",
+    "last_name": "Borisavljević",
     "middle_name": "",
     "first_name": "Slobodan",
     "additional_info": "borac, rođen 1913, Nova Varoš, učitelj. Poginuo u Rutošima 1943.",
     "fathers_name": "",
-    "full_name": "BORISAVLJEVie Slobodan",
-    "birth_year": "1913"
+    "full_name": "Borisavljević Slobodan",
+    "birth_year": "1913",
+    "birth_place": "Nova Varoš",
+    "occupation": "učitelj",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_place": "Rutoši"
   },
   {
     "soldier_id": "0005000228",
@@ -3953,7 +4030,10 @@
     "pdf_y": 109.6,
     "pdf_x": 71.4,
     "pdf_y_end": 134.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Visoko",
+    "occupation": "radnik"
   },
   {
     "soldier_id": "0005000269",
@@ -4226,18 +4306,21 @@
   },
   {
     "soldier_id": "0005000287",
-    "last_name": "Mršovic",
+    "last_name": "Mršović",
     "middle_name": "",
     "first_name": "Neđeljko",
     "additional_info": "borac, rođen 1920, Kruševo, Pljevlja, zemljoradnik.",
     "fathers_name": "",
-    "full_name": "Mršovic Neđeljko",
+    "full_name": "Mršović Neđeljko",
     "birth_year": "1920",
     "pdf_page": 398,
     "pdf_y": 396.9,
     "pdf_x": 86.1,
     "pdf_y_end": 429.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Kruševo, Pljevlja",
+    "occupation": "zemljoradnik"
   },
   {
     "soldier_id": "0005000288",
@@ -4386,18 +4469,23 @@
   },
   {
     "soldier_id": "0005000298",
-    "last_name": "Obradovic",
+    "last_name": "Obradović",
     "middle_name": "",
     "first_name": "Doko",
     "additional_info": "borac, rođen 1907, Pljevalja, finans. Umro 1952. u Beogradu.",
     "fathers_name": "",
-    "full_name": "Obradovic Doko",
+    "full_name": "Obradović Doko",
     "birth_year": "1907",
     "pdf_page": 399,
     "pdf_y": 381.5,
     "pdf_x": 69.8,
     "pdf_y_end": 418.4,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Pljevlja",
+    "rank": "borac",
+    "occupation": "finans.",
+    "death_type": "umro",
+    "death_place": "Beograd"
   },
   {
     "soldier_id": "0005000299",
@@ -4416,33 +4504,45 @@
   },
   {
     "soldier_id": "0005000300",
-    "last_name": "Jakic",
+    "last_name": "Jakić",
     "middle_name": "",
     "first_name": "Milijana",
     "additional_info": "vodna bolničarka, rođena 1918, Dobra Sela, Šavnik, domaćica; član SKOJ-a. Umrla 1956. u Beogradu.",
     "fathers_name": "",
-    "full_name": "Jakic Milijana",
+    "full_name": "Jakić Milijana",
     "birth_year": "1918",
     "pdf_page": 399,
     "pdf_y": 447.3,
     "pdf_x": 70.0,
     "pdf_y_end": 481.1,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Dobra Sela, Šavnik",
+    "occupation": "domaćica",
+    "rank": "vodna bolničarka",
+    "death_type": "umro",
+    "death_place": "Beograd"
   },
   {
     "soldier_id": "0005000301",
-    "last_name": "Maricevic",
+    "last_name": "Maričević",
     "middle_name": "",
     "first_name": "Branko",
     "additional_info": "desetar 1. desetine, rođen 1922, Vrbovo, Prijepolje, đak gimnazije, član KPJ od 1942. Teško ranjen nesrećnim slučajem 5. juna 1942. u Popratištu, kod Šćepan-Polja, gde je odmah podlegao ranama.",
     "fathers_name": "",
-    "full_name": "Maricevic Branko",
+    "full_name": "Maričević Branko",
     "birth_year": "1922",
     "pdf_page": 399,
     "pdf_y": 482.1,
     "pdf_x": 69.8,
     "pdf_y_end": 512.1,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Vrbovo, Prijepolje",
+    "death_date": "5. 6. 1942.",
+    "death_place": "Popratište, Šćepan-Polje",
+    "death_type": "umro",
+    "occupation": "đak gimnazije",
+    "rank": "desetar",
+    "unit_detail": "1. desetina"
   },
   {
     "soldier_id": "0005000302",
@@ -4612,7 +4712,10 @@
     "pdf_y": 471.3,
     "pdf_x": 80.2,
     "pdf_y_end": 500.7,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Lađana, Pljevlja",
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000313",
@@ -4880,18 +4983,21 @@
   },
   {
     "soldier_id": "0005000331",
-    "last_name": "Gošovic",
+    "last_name": "Gošović",
     "middle_name": "",
     "first_name": "Blaga",
     "additional_info": "borac, rođena 1912, Kržanja, Podgorica (Titograd), profesor; član KPJ od 1941.",
     "fathers_name": "",
-    "full_name": "Gošovic Blaga",
+    "full_name": "Gošović Blaga",
     "birth_year": "1912",
     "pdf_page": 402,
     "pdf_y": 246.7,
     "pdf_x": 78.4,
     "pdf_y_end": 262.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Kržanja, Podgorica",
+    "occupation": "profesor",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000332",
@@ -4936,7 +5042,10 @@
     "pdf_y": 349.2,
     "pdf_x": 77.9,
     "pdf_y_end": 382.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Ritošići, Priboj",
+    "occupation": "đak učiteljske škole",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000335",
@@ -5245,7 +5354,13 @@
     "pdf_page": 404,
     "pdf_y": 325.3,
     "pdf_x": 83.7,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Šumani, Pljevlja",
+    "occupation": "zemljoradnik",
+    "rank": "četni ekonom",
+    "death_date": "13. juna 1943.",
+    "death_place": "Sutjeska",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000861",
@@ -5378,7 +5493,10 @@
     "pdf_y": 229.9,
     "pdf_x": 74.5,
     "pdf_y_end": 259.4,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Meljak, Pljevlja",
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000363",
@@ -6506,18 +6624,21 @@
   },
   {
     "soldier_id": "0005000439",
-    "last_name": "Teric",
+    "last_name": "Terić",
     "middle_name": "",
     "first_name": "Vojin",
     "additional_info": "politički komesar, rođen 1914, Polja, Kolašin, službenik; član KPJ od 1942.",
     "fathers_name": "",
-    "full_name": "Teric Vojin",
+    "full_name": "Terić Vojin",
     "birth_year": "1914",
     "pdf_page": 411,
     "pdf_y": 347.5,
     "pdf_x": 66.6,
     "pdf_y_end": 373.4,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Polja, Kolašin",
+    "occupation": "službenik",
+    "rank": "politički komesar"
   },
   {
     "soldier_id": "0005000440",
@@ -6707,7 +6828,12 @@
     "pdf_y": 339.6,
     "pdf_x": 79.0,
     "pdf_y_end": 366.2,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Lučice, Prijepolje",
+    "occupation": "učitelj",
+    "rank": "borac",
+    "death_type": "umro",
+    "death_place": "Beograd"
   },
   {
     "soldier_id": "0005000453",
@@ -6893,15 +7019,21 @@
     "last_name": "Dučić",
     "middle_name": "Branko",
     "first_name": "Duka",
-    "additional_info": "borac, rođen 1920, Drenova, Prijepolje, radnik; član SKOJ-a. Po- ginuo 24. aprila 1944. na Bojnoj njivi, kod Mojkovca, kao koman- dir čete.",
-    "fathers_name": "",
+    "additional_info": "borac, rođen 1920, Drenova, Prijepolje, radnik; član SKOJ-a. Poginuo 24. aprila 1944. na Bojnoj njivi, kod Mojkovca, kao komandir čete.",
+    "fathers_name": "Branko",
     "full_name": "Dučić Branko Duka",
     "birth_year": "1920",
     "pdf_page": 413,
     "pdf_y": 315.1,
     "pdf_x": 72.3,
     "pdf_y_end": 356.9,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Drenova, Prijepolje",
+    "occupation": "radnik",
+    "rank": "komandir čete",
+    "death_type": "poginuo",
+    "death_date": "24. aprila 1944",
+    "death_place": "Bojna njiva, Mojkovac"
   },
   {
     "soldier_id": "0005000466",
@@ -7010,18 +7142,21 @@
   },
   {
     "soldier_id": "0005000473",
-    "last_name": "Hadzović",
+    "last_name": "Hadžović",
     "middle_name": "",
     "first_name": "Emin",
     "additional_info": "borac, rođen 1908, Prijepolje, radnik; član KPJ od 1940.",
     "fathers_name": "",
-    "full_name": "Hadzović Emin",
+    "full_name": "Hadžović Emin",
     "birth_year": "1908",
     "pdf_page": 414,
     "pdf_y": 177.1,
     "pdf_x": 80.2,
     "pdf_y_end": 207.6,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Prijepolje",
+    "occupation": "radnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000474",
@@ -7111,7 +7246,12 @@
     "pdf_y": 385.0,
     "pdf_x": 80.7,
     "pdf_y_end": 418.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Ivanje, Prijepolje",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_place": "Jabuka, Prijepolje",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000480",
@@ -7688,18 +7828,23 @@
   },
   {
     "soldier_id": "0005000519",
-    "last_name": "Dulovic",
+    "last_name": "Dulović",
     "middle_name": "",
     "first_name": "Mirjana",
-    "additional_info": "borac, rođena 1906, Morača, Kolašin, domaćica; od 3. avgusta bo- rac 4. bataljona. Umrla posle rata u Bijelom Polju.",
+    "additional_info": "borac, rođena 1906, Morača, Kolašin, domaćica; od 3. avgusta borac 4. bataljona. Umrla posle rata u Bijelom Polju.",
     "fathers_name": "",
-    "full_name": "Dulovic Mirjana",
+    "full_name": "Dulović Mirjana",
     "birth_year": "1906",
     "pdf_page": 417,
     "pdf_y": 452.9,
     "pdf_x": 74.2,
     "pdf_y_end": 477.8,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Morača, Kolašin",
+    "occupation": "domaćica",
+    "rank": "borac",
+    "unit_detail": "4. bataljon",
+    "death_type": "umro"
   },
   {
     "soldier_id": "0005000520",
@@ -7900,7 +8045,11 @@
     "pdf_y": 420.7,
     "pdf_x": 83.9,
     "pdf_y_end": 450.2,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Bijelo Polje",
+    "occupation": "student filozofije",
+    "rank": "borac",
+    "unit_detail": "4. bataljon"
   },
   {
     "soldier_id": "0005000533",
@@ -8068,18 +8217,23 @@
   },
   {
     "soldier_id": "0005000544",
-    "last_name": "Radojevic",
+    "last_name": "Radojević",
     "middle_name": "",
     "first_name": "Krsto",
     "additional_info": "borac, rođen 1886, Maoče, Kolašin, veteran iz prvog svetskog rata; predsednik Sreskog NOO za Bijelo Polje. Poginuo 10. juna 1942. na Rudinama, u Pivi. Sahranjen u Kruševu.",
     "fathers_name": "",
-    "full_name": "Radojevic Krsto",
+    "full_name": "Radojević Krsto",
     "birth_year": "1886",
     "pdf_page": 419,
     "pdf_y": 413.7,
     "pdf_x": 73.7,
     "pdf_y_end": 451.6,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Maoče, Kolašin",
+    "death_date": "10. 6. 1942",
+    "death_place": "Rudine, Piva",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000545",
@@ -8356,7 +8510,7 @@
     "last_name": "Ćetković",
     "middle_name": "",
     "first_name": "Rajko",
-    "additional_info": "vodnik, rođen 1914, Kolašin, student agronomije; član KPJ. Napu- stio jedinicu 2/3. avgusta 1942, predao se četnicima, interniran u Nemačku i po završetku rata vratio se u rodno mesto.",
+    "additional_info": "vodnik, rođen 1914, Kolašin, student agronomije; član KPJ. Napustio jedinicu 2/3. avgusta 1942, predao se četnicima, interniran u Nemačku i po završetku rata vratio se u rodno mesto.",
     "fathers_name": "",
     "full_name": "Ćetković Rajko",
     "birth_year": "1914",
@@ -8364,7 +8518,10 @@
     "pdf_y": 229.9,
     "pdf_x": 79.6,
     "pdf_y_end": 272.1,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "vodnik",
+    "birth_place": "Kolašin",
+    "occupation": "student agronomije"
   },
   {
     "soldier_id": "0005000564",
@@ -8533,18 +8690,22 @@
   },
   {
     "soldier_id": "0005000575",
-    "last_name": "Bulatovic",
+    "last_name": "Bulatović",
     "middle_name": "",
     "first_name": "Ilija",
     "additional_info": "intendant, rođen 1912, Oklade, Bijelo Polje, radnik; član KPJ od 1936. Poginuo 1949.",
     "fathers_name": "",
-    "full_name": "Bulatovic Ilija",
+    "full_name": "Bulatović Ilija",
     "birth_year": "1912",
     "pdf_page": 422,
     "pdf_y": 366.5,
     "pdf_x": 77.9,
     "pdf_y_end": 399.8,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Oklade, Bijelo Polje",
+    "occupation": "radnik",
+    "rank": "intendant",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000576",
@@ -9541,7 +9702,11 @@
     "pdf_y": 147.8,
     "pdf_x": 88.8,
     "pdf_y_end": 181.4,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Bijelo Polje",
+    "occupation": "đak gimnazije",
+    "rank": "borac",
+    "death_type": "umro"
   },
   {
     "soldier_id": "0005000643",
@@ -10343,18 +10508,21 @@
   },
   {
     "soldier_id": "0005000697",
-    "last_name": "Rudic",
+    "last_name": "Rudić",
     "middle_name": "",
     "first_name": "Milena",
     "additional_info": "borac, rođena 1923, Ravna Rijeka, Bijelo Polje, domaćica, član SKOJ-a.",
     "fathers_name": "",
-    "full_name": "Rudic Milena",
+    "full_name": "Rudić Milena",
     "birth_year": "1923",
     "pdf_page": 432,
     "pdf_y": 334.0,
     "pdf_x": 80.2,
     "pdf_y_end": 364.9,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Ravna Rijeka, Bijelo Polje",
+    "occupation": "domaćica",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000698",
@@ -10388,18 +10556,21 @@
   },
   {
     "soldier_id": "0005000700",
-    "last_name": "Sošic",
+    "last_name": "Sošić",
     "middle_name": "",
     "first_name": "Milovan",
     "additional_info": "borac, rođen 1920, Rakita, Bijelo Polje, zemljoradnik.",
     "fathers_name": "",
-    "full_name": "Sošic Milovan",
+    "full_name": "Sošić Milovan",
     "birth_year": "1920",
     "pdf_page": 432,
     "pdf_y": 429.5,
     "pdf_x": 80.2,
     "pdf_y_end": 463.1,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Rakita, Bijelo Polje",
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000701",
@@ -10714,7 +10885,10 @@
     "pdf_y": 292.3,
     "pdf_x": 78.6,
     "pdf_y_end": 325.8,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Goražde, Berane",
+    "occupation": "đak gimnazije",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000722",
@@ -10774,7 +10948,12 @@
     "pdf_y": 431.2,
     "pdf_x": 78.9,
     "pdf_y_end": 459.3,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Ržanica, Berane",
+    "death_place": "kod Spuža",
+    "death_type": "poginuo",
+    "rank": "borac",
+    "occupation": "đak gimnazije"
   },
   {
     "soldier_id": "0005000726",
@@ -10841,7 +11020,7 @@
     "last_name": "Nedić",
     "middle_name": "",
     "first_name": "Veliša",
-    "additional_info": "borac, rođen 1916, Pešca, Berane, đak gimnazije. Poginuo septem- bra 1943, kod Kadine Vode, u Bosanskoj krajini.",
+    "additional_info": "borac, rođen 1916, Pešca, Berane, đak gimnazije. Poginuo septembra 1943, kod Kadine Vode, u Bosanskoj krajini.",
     "fathers_name": "",
     "full_name": "Nedić Veliša",
     "birth_year": "1916",
@@ -10849,7 +11028,12 @@
     "pdf_y": 140.6,
     "pdf_x": 76.5,
     "pdf_y_end": 174.2,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Pešca, Berane",
+    "occupation": "đak gimnazije",
+    "rank": "borac",
+    "death_place": "Kadina Voda, Bosanska krajina",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000731",
@@ -10958,18 +11142,21 @@
   },
   {
     "soldier_id": "0005000738",
-    "last_name": "Milicevic",
-    "middle_name": "Budimir",
+    "last_name": "Milićević",
+    "middle_name": "",
     "first_name": "Budo",
     "additional_info": "zamenik komandanta, rođen 1915, Pljevlja, učitelj; član KPJ od 1940.",
-    "fathers_name": "",
-    "full_name": "Milicevic Budimir Budo",
+    "fathers_name": "Budimir",
+    "full_name": "Milićević Budo",
     "birth_year": "1915",
     "pdf_page": 435,
     "pdf_y": 436.1,
     "pdf_x": 76.0,
     "pdf_y_end": 487.4,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Pljevlja",
+    "rank": "zamenik komandanta",
+    "occupation": "učitelj"
   },
   {
     "soldier_id": "0005000739",
@@ -11222,18 +11409,31 @@
     "pdf_file": "treca-proleterska-brigada.pdf"
   },
   {
-    "soldier_id": "0005000756",
+    "soldier_id": "0005000863",
     "last_name": "Ćosović",
     "middle_name": "",
     "first_name": "Milun",
-    "additional_info": "borac, rođen 1900, Kosanica, Pljevlja, zemljoradnik. Poginuo 13. juna 1943. na Sutjesci. BARAC JOVAN — vodnik 1. voda, rođen 1917, Glisnica, Pljevlja, zemljoradnik; kan- didat za člana KPJ. Dezertirao za vreme bitke na Sutjesci. Streljan kao dezerter oktobra 1943. u Pljevljima.",
     "fathers_name": "",
     "full_name": "Ćosović Milun",
+    "additional_info": "borac, rođen 1900, Kosanica, Pljevlja, zemljoradnik. Poginuo 13. juna 1943. na Sutjesci.",
     "birth_year": "1900",
     "pdf_page": 437,
     "pdf_y": 225.1,
     "pdf_x": 71.4,
-    "pdf_y_end": 260.1,
+    "pdf_file": "treca-proleterska-brigada.pdf"
+  },
+  {
+    "soldier_id": "0005000864",
+    "last_name": "Barac",
+    "middle_name": "",
+    "first_name": "Jovan",
+    "fathers_name": "",
+    "full_name": "Barac Jovan",
+    "additional_info": "vodnik 1. voda, rođen 1917, Glisnica, Pljevlja, zemljoradnik; kandidat za člana KPJ. Dezertirao za vreme bitke na Sutjesci. Streljan kao dezerter oktobra 1943. u Pljevljima.",
+    "birth_year": "1917",
+    "pdf_page": 437,
+    "pdf_y": 225.1,
+    "pdf_x": 71.4,
     "pdf_file": "treca-proleterska-brigada.pdf"
   },
   {
@@ -11409,7 +11609,10 @@
     "pdf_y": 252.0,
     "pdf_x": 78.5,
     "pdf_y_end": 285.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Miošići, Sarajevo",
+    "occupation": "zemljoradnik"
   },
   {
     "soldier_id": "0005000769",
@@ -11713,18 +11916,23 @@
   },
   {
     "soldier_id": "0005000790",
-    "last_name": "Tripkovic",
+    "last_name": "Tripković",
     "middle_name": "",
     "first_name": "Miladin",
     "additional_info": "borac, rođen 1928, Sjetlina, Sarajevo; član SKOJ-a. Poginuo 13. juna 1943. na Sutjesci.",
     "fathers_name": "",
-    "full_name": "Tripkovic Miladin",
+    "full_name": "Tripković Miladin",
     "birth_year": "1928",
     "pdf_page": 440,
     "pdf_y": 297.4,
     "pdf_x": 81.2,
     "pdf_y_end": 330.5,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Sjetlina, Sarajevo",
+    "rank": "borac",
+    "death_date": "13. juna 1943.",
+    "death_place": "Sutjeska",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000791",
@@ -11798,18 +12006,21 @@
   },
   {
     "soldier_id": "0005000796",
-    "last_name": "Durakovic",
+    "last_name": "Duraković",
     "middle_name": "",
     "first_name": "Šemso",
     "additional_info": "borac, rođen 1910, Poblaće, Pljevlja, zemljoradnik.",
     "fathers_name": "",
-    "full_name": "Durakovic Šemso",
+    "full_name": "Duraković Šemso",
     "birth_year": "1910",
     "pdf_page": 441,
     "pdf_y": 75.3,
     "pdf_x": 76.2,
     "pdf_y_end": 101.6,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Poblaće, Pljevlja",
+    "occupation": "zemljoradnik"
   },
   {
     "soldier_id": "0005000797",
@@ -12218,7 +12429,11 @@
     "pdf_y": 148.0,
     "pdf_x": 72.4,
     "pdf_y_end": 176.0,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Vrbica, Pljevlja",
+    "occupation": "zemljoradnik",
+    "rank": "desetar",
+    "death_type": "umro"
   },
   {
     "soldier_id": "0005000825",
@@ -12446,18 +12661,21 @@
   },
   {
     "soldier_id": "0005000840",
-    "last_name": "Karadzic",
+    "last_name": "Karadžić",
     "middle_name": "",
     "first_name": "Relja",
     "additional_info": "borac, rođen 1925, Pljevlja, đak gimnazije; član SKOJ-a.",
     "fathers_name": "",
-    "full_name": "Karadzic Relja",
+    "full_name": "Karadžić Relja",
     "birth_year": "1925",
     "pdf_page": 444,
     "pdf_y": 332.3,
     "pdf_x": 84.8,
     "pdf_y_end": 366.1,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "birth_place": "Pljevlja",
+    "occupation": "đak gimnazije",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000841",
@@ -12636,18 +12854,23 @@
   },
   {
     "soldier_id": "0005000853",
-    "last_name": "Lakovic",
+    "last_name": "Laković",
     "middle_name": "",
     "first_name": "Budo",
-    "additional_info": "borac rođen 1922, Cajniče, radnik; član SKOJ-a. Poginuo juna 1943, u bici na Sutjesci.",
+    "additional_info": "borac rođen 1922, Čajniče, radnik; član SKOJ-a. Poginuo juna 1943, u bici na Sutjesci.",
     "fathers_name": "",
-    "full_name": "Lakovic Budo",
+    "full_name": "Laković Budo",
     "birth_year": "1922",
     "pdf_page": 445,
     "pdf_y": 314.6,
     "pdf_x": 74.5,
     "pdf_y_end": 349.9,
-    "pdf_file": "treca-proleterska-brigada.pdf"
+    "pdf_file": "treca-proleterska-brigada.pdf",
+    "rank": "borac",
+    "birth_place": "Čajniče",
+    "occupation": "radnik",
+    "death_type": "poginuo",
+    "death_place": "Sutjeska"
   },
   {
     "soldier_id": "0005000854",

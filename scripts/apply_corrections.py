@@ -95,7 +95,7 @@ def get_next_sequence(soldiers, brigade_code):
     return max_seq + 1
 
 
-def rebuild_computed_fields(soldier):
+def rebuild_computed_fields(soldier, skip_birth_year=False):
     """Recalculate full_name and birth_year from other fields."""
     # Rebuild full_name
     parts = [soldier.get('last_name', '')]
@@ -105,12 +105,13 @@ def rebuild_computed_fields(soldier):
         parts.append(soldier['first_name'])
     soldier['full_name'] = ' '.join(p for p in parts if p)
 
-    # Rebuild birth_year from additional_info
-    info = soldier.get('additional_info', '')
-    if info:
-        _, birth_year = extract_birth_info(info)
-        if birth_year:
-            soldier['birth_year'] = birth_year
+    # Rebuild birth_year from additional_info (unless correction explicitly set it)
+    if not skip_birth_year:
+        info = soldier.get('additional_info', '')
+        if info:
+            _, birth_year = extract_birth_info(info)
+            if birth_year:
+                soldier['birth_year'] = birth_year
 
     return soldier
 
@@ -128,7 +129,9 @@ def apply_edit(soldiers, correction):
             for key, value in fields.items():
                 s[key] = value
 
-            s = rebuild_computed_fields(s)
+            # Skip birth_year rebuild if correction explicitly sets it
+            skip_birth_year = 'birth_year' in fields
+            s = rebuild_computed_fields(s, skip_birth_year=skip_birth_year)
             soldiers[i] = s
 
             name_after = s.get('full_name', '')
@@ -190,6 +193,10 @@ def apply_split(soldiers, correction):
     next_seq = get_next_sequence(soldiers, brigade_code)
     new_records = []
 
+    standard_keys = {'last_name', 'middle_name', 'first_name', 'fathers_name',
+                      'full_name', 'additional_info', 'birth_year',
+                      'pdf_page', 'pdf_y', 'pdf_x', 'pdf_file'}
+
     for j, entry in enumerate(into):
         new_soldier = {
             'soldier_id': generate_soldier_id(brigade_code, next_seq + j),
@@ -207,6 +214,10 @@ def apply_split(soldiers, correction):
         for key in ('pdf_page', 'pdf_y', 'pdf_x', 'pdf_file'):
             if key in entry:
                 new_soldier[key] = entry[key]
+        # Copy extra structured fields (birth_place, ethnicity, etc.)
+        for key, val in entry.items():
+            if key not in standard_keys and key not in new_soldier:
+                new_soldier[key] = val
 
         new_soldier = rebuild_computed_fields(new_soldier)
         new_records.append(new_soldier)
