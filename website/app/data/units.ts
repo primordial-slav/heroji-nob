@@ -36,7 +36,7 @@ export const units: Unit[] = [
     nameEn: '10th Slovenian People\'s Liberation Assault Brigade "Ljubljana"',
     description: 'Formirana 11. septembra 1943. godine',
     image: '/images/ljubljanska-brigada.jpg',
-    soldierCount: 3170,
+    soldierCount: 3169,
     dataFile: '/ljubljanska-soldiers.json',
     pdfFiles: ['/pdfs/ljubljanska-brigada.pdf']
   },
@@ -99,6 +99,26 @@ export const units: Unit[] = [
     soldierCount: 1486,
     dataFile: '/prva-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/prva-vojvodjanska.pdf']
+  },
+  {
+    id: '5-kozaracka-brigada',
+    name: '5. krajiška (kozaračka) udarna brigada',
+    nameEn: '5th Krajina (Kozara) Assault Brigade',
+    description: 'Formirana 23. septembra 1942. godine na Kozari. Spisak poginulih, nestalih i umrlih boraca i rukovodilaca.',
+    image: '/images/peta-kozaracka-brigada.jpg',
+    soldierCount: 1007,
+    dataFile: '/5-kozaracka-soldiers.json',
+    pdfFiles: ['/pdfs/5-kozaracka.pdf']
+  },
+  {
+    id: '2-vojvodjanska-brigada',
+    name: '2. vojvođanska udarna brigada',
+    nameEn: '2nd Vojvodina Assault Brigade',
+    description: 'Formirana 20. aprila 1943. godine na Majevici. Spisak boraca i starešina brigade od formiranja do kraja rata.',
+    image: '/images/druga-vojvodjanska-brigada.jpg',
+    soldierCount: 2141,
+    dataFile: '/2-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/2-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]

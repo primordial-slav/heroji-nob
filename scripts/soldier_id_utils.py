@@ -24,6 +24,16 @@ BRIGADE_CODES = {
     7: '2. Dalmatinska Proleterska',
     8: '4. Splitska Udarna',
     9: 'Prva Vojvođanska',
+    10: '3. Krajiška Proleterska',
+    11: '4. Krajiška',
+    12: '5. Kozaračka Krajiška',
+    13: '6. Krajiška',
+    14: '8. Krajiška',
+    15: '1. Šumadijska',
+    16: '17. Slavonska Udarna',
+    17: '18. Slavonska Udarna',
+    18: '2. Vojvođanska',
+    19: '25. Srpska Divizija',
     # Add new brigades here with next available code
 }
 

@@ -10761,5 +10761,21 @@
       "death_place": "Pliva, Jajce"
     },
     "reason": "Extract birth_place, ethnicity, occupation, unit_detail, rank, death_type, death_date, death_place"
+  },
+  {
+    "id": 3573,
+    "action": "edit",
+    "soldier_id": "0004002762",
+    "fields": {
+      "additional_info": "1920, Brode pri Škofji Loki",
+      "pdf_y_end": 270.6
+    },
+    "reason": "Birthplace continued on the next line, which was parsed as a separate soldier (0004002763 'Škofji Loki'); highlight extended to cover both lines"
+  },
+  {
+    "id": 3574,
+    "action": "delete",
+    "soldier_id": "0004002763",
+    "reason": "Not a soldier: tail of 0004002762 Tavčar Janez's entry ('1920, Brode pri Škofji Loki')"
   }
 ]

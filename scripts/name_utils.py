@@ -100,6 +100,100 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    10: {
+        'name': '3. Krajiška Proleterska',
+        'json_file': '3-krajiska-proleterska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',   # "LASTNAME Father's-genitive FIRSTNAME, info"
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
+    11: {
+        'name': '4. Krajiška',
+        'json_file': '4-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',   # Cyrillic: "АБАЏИЋ Етхема НАСИХ, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+        'script': 'cyrillic',
+    },
+    12: {
+        'name': '5. Kozaračka Krajiška',
+        'json_file': '5-kozaracka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',   # "ACIMOVIC MILORAD, borac, rođen 1921..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
+    13: {
+        'name': '6. Krajiška',
+        'json_file': '6-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
+    14: {
+        'name': '8. Krajiška',
+        'json_file': '8-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',   # "ABDIHODŽIĆ (R) ASIM, rođen 1929..."
+        'has_fathers_name': True,     # father's initial in parens
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_last',
+    },
+    15: {
+        'name': '1. Šumadijska',
+        'json_file': '1-sumadijska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'rich',        # multi-line biographic entries in Cyrillic
+        'has_fathers_name': True,
+        'fathers_name_form': 'both_parents',  # "АБАФИ Ћирила и Станиславе БРАНИСЛАВ (БРАНКО)"
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
+    16: {
+        'name': '17. Slavonska Udarna',
+        'json_file': '17-slavonska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'two_column_terse',  # Two-column city-grouped: "M. BOŠKO, rođen 1914, ..."
+        'has_fathers_name': True,     # middle initial with dot
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_last',
+    },
+    17: {
+        'name': '18. Slavonska Udarna',
+        'json_file': '18-slavonska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'table',       # Table format: Prezime | Rođenje | Poginuo
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
+    18: {
+        'name': '2. Vojvođanska',
+        'json_file': '2-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # Cyrillic: "АВАКУМОВИЋ СТЕВАНА ВУКАШИН, рођен 1919..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+        'script': 'cyrillic',
+    },
+    19: {
+        'name': '25. Srpska Divizija',
+        'json_file': '25-srpska-divizija-soldiers.json',
+        'language': 'sr',
+        'name_format': 'numbered',    # "1. ИВАНОВИЋ АЛЕКСАНДАР, борац 3. чете..."
+        'has_fathers_name': False,    # rare, mostly no father's name
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
 }
 
 

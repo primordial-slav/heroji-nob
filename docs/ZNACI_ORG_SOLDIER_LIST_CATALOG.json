@@ -1,0 +1,23 @@
+{
+  "source": "https://znaci.org/",
+  "surveyed_at": "2026-09-27",
+  "method": "Fetched all unit-monograph landing pages (brigade/division/odred/korpus/bataljon) from znaci.org homepage listing, then scanned each book's table of contents for keywords matching soldier-list sections (SPISAK BORACA, POPIS BORACA, SPISAK PALIH/POGINULIH/UMRLIH/PREŽIVJELIH/PRIPADNIKA, IMENIK BORACA, REGISTER BORCEV, POIMENIČNI, etc.).",
+  "totals": {
+    "unit_monographs_scanned": 211,
+    "with_soldier_list": 97,
+    "with_dedicated_pdf_section": 43,
+    "list_embedded_in_larger_pdf": 54,
+    "already_ingested": 9
+  },
+  "already_ingested": [
+    {"brigade_code": 1, "brigade": "Prva Proleterska", "source_book": "PRVA PROLETERSKA BRIGADA - ZBORNIK SEĆANJA (knjiga 4) - SPISAK BORACA", "page": "https://znaci.org/00001/97.htm"},
+    {"brigade_code": 2, "brigade": "Prva Lička \"Marko Orešković\"", "source_book": "Jovo Popović: PRVA LIČKA PROLETERSKA BRIGADA \"MARKO OREŠKOVIĆ\"", "page": "https://znaci.org/00001/137.htm"},
+    {"brigade_code": 3, "brigade": "Druga Lička", "source_book": "Ðorde Orlović: DRUGA LIČKA PROLETERSKA BRIGADA (spisak poginulih) or SJEĆANJA BORACA (110)", "page": "https://znaci.org/00001/160.htm"},
+    {"brigade_code": 4, "brigade": "Ljubljanska (10. SNOUB)", "source_book": "Damijan Guštin: LJUBLJANSKA BRIGADA (slovenščina)", "page": "https://znaci.org/"},
+    {"brigade_code": 5, "brigade": "Treća Proleterska (Sandžačka)", "source_book": "Žarko Vidović: TREĆA PROLETERSKA BRIGADA", "page": "https://znaci.org/00001/164.htm"},
+    {"brigade_code": 6, "brigade": "13. Proleterska \"Rade Končar\"", "source_book": "Todor Radošević: TRINAESTA PROLETERSKA BRIGADA \"RADE KONČAR\"", "page": "https://znaci.org/00001/69.htm"},
+    {"brigade_code": 7, "brigade": "2. Dalmatinska Proleterska", "source_book": "Branko B. Obradović: DRUGA DALMATINSKA PROLETERSKA BRIGADA - MONOGRAFIJA", "page": "https://znaci.org/00001/33.htm"},
+    {"brigade_code": 8, "brigade": "4. Splitska Udarna", "source_book": "Mate Šalov: ČETVRTA DALMATINSKA (SPLITSKA) BRIGADA", "page": "https://znaci.org/00001/89.htm"},
+    {"brigade_code": 9, "brigade": "Prva Vojvođanska", "source_book": "Đorđe Vasić - Sreta Savić: PRVA VOJVOĐANSKA BRIGADA", "page": "https://znaci.org/00003/375.htm"}
+  ]
+}

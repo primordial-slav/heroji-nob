@@ -107,5 +107,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/prva-vojvodjanska.jpg',
     brigadeName: 'Prva vojvođanska brigada',
     description: 'Spisak boraca Prve vojvođanske brigade'
+  },
+  {
+    id: '5-kozaracka',
+    title: 'Peta kozaračka brigada',
+    author: 'Lj. Borojević, D. Samardžija, R. Bašić',
+    pdfPath: '/pdfs/5-kozaracka.pdf',
+    thumbnail: '/images/pdf-thumbs/5-kozaracka.jpg',
+    brigadeName: '5. krajiška (kozaračka) udarna brigada',
+    description: 'Spisak poginulih, nestalih i umrlih boraca i rukovodilaca brigade'
+  },
+  {
+    id: '2-vojvodjanska',
+    title: 'Druga vojvođanska NOU brigada',
+    author: 'Žarko Atanacković',
+    pdfPath: '/pdfs/2-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/2-vojvodjanska.jpg',
+    brigadeName: '2. vojvođanska udarna brigada',
+    description: 'Spisak boraca i starešina 2. vojvođanske brigade'
   }
 ]

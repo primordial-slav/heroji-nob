@@ -7,6 +7,10 @@ PDF viewer to jump directly to the soldier's entry.
 
 Uses pdfplumber's word-level extraction (extract_words) to get precise
 coordinates, then matches entries to existing soldier JSON records.
+
+All coordinates go through pdf_coords.viewer_words so they are in the page
+space the website's PDF viewer draws in, whichever pdfplumber version runs
+this script (see pdf_coords.py).
 """
 
 import re
@@ -25,6 +29,8 @@ except ImportError:
     subprocess.check_call(['pip', 'install', 'pdfplumber'])
     import pdfplumber
 
+from pdf_coords import viewer_words
+
 
 # ============================================================
 # Generic word-level extraction utilities
@@ -39,7 +45,7 @@ def extract_lines_with_positions(page, y_tolerance=3):
 
     Returns: list of dicts: {'text': str, 'top': float, 'page_height': float}
     """
-    words = page.extract_words(
+    words = viewer_words(page,
         x_tolerance=3,
         y_tolerance=y_tolerance,
         keep_blank_chars=True
@@ -591,7 +597,7 @@ def extract_ljubljanska(pdf_path, json_path):
             page_num = page_idx + 1
 
             # Get word-level data for this page
-            words = page.extract_words(
+            words = viewer_words(page,
                 x_tolerance=3,
                 y_tolerance=3,
                 keep_blank_chars=True
@@ -708,7 +714,7 @@ def extract_13_proleterska(pdf_path, json_path):
             page = pdf.pages[page_idx]
             page_num = page_idx + 1
 
-            words = page.extract_words(
+            words = viewer_words(page,
                 x_tolerance=3,
                 y_tolerance=3,
                 keep_blank_chars=True
@@ -904,7 +910,7 @@ def extract_prva_vojvodjanska(pdf_path, json_path):
             page = pdf.pages[page_idx]
             page_num = page_idx + 1
 
-            words = page.extract_words(
+            words = viewer_words(page,
                 x_tolerance=3,
                 y_tolerance=3,
                 keep_blank_chars=True
