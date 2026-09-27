@@ -317,7 +317,7 @@ def parse_standard_entry(text: str) -> dict:
             if tok.rstrip('*').endswith(','):
                 break
         words = [t.strip('.,;:*') for t in tokens[:n]]
-        info = ' '.join(tokens[n:]).lstrip(' ,;:*-–—').strip()
+        info = ' '.join(tokens[n:]).lstrip(' .,;:*-–—').strip()
         last = words[0] if words else ''
         rest = words[1:]
         father = rest.pop(0) if len(rest) >= 2 and rest[0].endswith(_GENITIVE_ENDINGS) else ''
@@ -355,7 +355,7 @@ def parse_standard_entry(text: str) -> dict:
     if nick:
         prefix.append(f"zvani {title_case(nick)}")
 
-    info = rest.lstrip(' ,;:*-–—').strip()
+    info = rest.lstrip(' .,;:*-–—').strip()
     if prefix:
         info = '; '.join(prefix) + (f'; {info}' if info else '')
     return _record(m.group('last'), ' '.join(given), father, info, _asterisk=asterisk, **extra)
