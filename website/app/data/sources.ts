@@ -125,5 +125,86 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/2-vojvodjanska.jpg',
     brigadeName: '2. vojvođanska udarna brigada',
     description: 'Spisak boraca i starešina 2. vojvođanske brigade'
+  },
+  {
+    id: '8-krajiska',
+    title: 'Osma krajiška NOU brigada',
+    author: 'Izudin Čaušević',
+    pdfPath: '/pdfs/8-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/8-krajiska.jpg',
+    brigadeName: '8. krajiška udarna brigada',
+    description: 'Spisak poginulih i umrlih u toku NOR-a iz 8. krajiške brigade'
+  },
+  {
+    id: '6-krajiska',
+    title: 'Šesta krajiška NOU brigada',
+    author: 'Branko Damjanović, Savo Popović',
+    pdfPath: '/pdfs/6-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/6-krajiska.jpg',
+    brigadeName: '6. krajiška udarna brigada',
+    description: 'Spisak poginulih i umrlih boraca i starješina brigade, s dopunskim spiskom'
+  },
+  {
+    id: '4-krajiska',
+    title: 'Četvrta krajiška NOU brigada',
+    author: 'Rade Zorić',
+    pdfPath: '/pdfs/4-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/4-krajiska.jpg',
+    brigadeName: '4. krajiška udarna brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca i starešina 4. krajiške brigade'
+  },
+  {
+    id: '3-krajiska-proleterska',
+    title: 'Treća krajiška proleterska brigada',
+    author: 'Savo Trikić',
+    pdfPath: '/pdfs/3-krajiska-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/3-krajiska-proleterska.jpg',
+    brigadeName: '3. krajiška proleterska udarna brigada',
+    description: 'Spisak palih boraca Treće proleterske krajiške brigade s osnovnim matičnim podacima'
+  },
+  {
+    id: '17-slavonska-poginuli',
+    title: 'Sedamnaesta slavonska brigada — poginuli',
+    author: 'Zdravko B. Cvetković',
+    pdfPath: '/pdfs/17-slavonska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/17-slavonska-poginuli.jpg',
+    brigadeName: '17. slavonska udarna brigada',
+    description: 'Spisak poginulih boraca 17. udarne brigade'
+  },
+  {
+    id: '17-slavonska-prezivjeli',
+    title: 'Sedamnaesta slavonska brigada — preživjeli',
+    author: 'Zdravko B. Cvetković',
+    pdfPath: '/pdfs/17-slavonska-prezivjeli.pdf',
+    thumbnail: '/images/pdf-thumbs/17-slavonska-prezivjeli.jpg',
+    brigadeName: '17. slavonska udarna brigada',
+    description: 'Spisak preživjelih boraca 17. udarne brigade'
+  },
+  {
+    id: '25-srpska-divizija',
+    title: '25. srpska NOU divizija',
+    author: 'Milojica Pantelić',
+    pdfPath: '/pdfs/25-srpska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/25-srpska-divizija.jpg',
+    brigadeName: '25. srpska udarna divizija',
+    description: 'Spisak poginulih boraca i rukovodilaca 25. divizije'
+  },
+  {
+    id: '1-sumadijska',
+    title: 'Prva šumadijska brigada',
+    author: 'Isidor Đuković',
+    pdfPath: '/pdfs/1-sumadijska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-sumadijska.jpg',
+    brigadeName: '1. šumadijska brigada',
+    description: 'Spiskovi poginulih boraca i starešina i boraca koji su preživeli rat'
+  },
+  {
+    id: '18-slavonska',
+    title: '18. slavonska brigada',
+    author: 'Rade Roksandić, Zdravko B. Cvetković',
+    pdfPath: '/pdfs/18-slavonska.pdf',
+    thumbnail: '/images/pdf-thumbs/18-slavonska.jpg',
+    brigadeName: '18. slavonska udarna brigada',
+    description: 'Spisak poginulih i umrlih boraca i rukovodilaca 18. udarne brigade i spisak preživelih boraca'
   }
 ]

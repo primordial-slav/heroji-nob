@@ -92,7 +92,7 @@ def main():
     form_counts = Counter(s.get('fathers_name') for d in brigades.values() for s in d)
     new, mapping, undecided = [], Counter(), Counter()
     for code, soldiers in brigades.items():
-        if not BRIGADE_CONFIGS[code].get('has_fathers_name'):
+        if not BRIGADE_CONFIGS[code].get('has_fathers_name') or BRIGADE_CONFIGS[code].get('fathers_name_form') == 'nominative':
             continue
         for s in soldiers:
             g = s.get('fathers_name') or ''

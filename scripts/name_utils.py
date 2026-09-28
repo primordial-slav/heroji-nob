@@ -97,7 +97,7 @@ BRIGADE_CONFIGS = {
         'language': 'sr',
         'name_format': 'standard',
         'has_fathers_name': True,
-        'fathers_name_form': 'genitive',
+        'fathers_name_form': 'nominative',   # "Bogdanov (Božidar) Aleksandar": father in parens, nominative
         'original_casing': 'title',
     },
     10: {
@@ -651,7 +651,10 @@ def normalize_soldier(record, brigade_code):
     # --- Step 4: Convert genitive father's name to nominative ---
     fathers_name_nominative = ''
     if config.get('has_fathers_name') and middle_name:
-        fathers_name_nominative = genitive_to_nominative(middle_name)
+        if config.get('fathers_name_form') == 'nominative':
+            fathers_name_nominative = middle_name
+        else:
+            fathers_name_nominative = genitive_to_nominative(middle_name)
         if not fathers_name_nominative:
             fathers_name_nominative = middle_name
 
@@ -701,6 +704,8 @@ def extract_birth_info(additional_info):
         return '', ''
 
     info = additional_info.strip()
+    # Skip a leading alias clause: "zvani Maćo; 1923, ...", "ili Atanas; 3. 5. 1926, ...", "(Nikola); ..."
+    info = re.sub(r'^(?:zvan[ai]?\b|ili\b|rođ\.|u jednom dokumentu|\()[^;]{0,60};\s*', '', info)
 
     # Only look before death keywords
     death_keywords = ['poginuo', 'poginula', 'padel', 'padla',
@@ -740,8 +745,8 @@ def extract_birth_info(additional_info):
         year = match.group(1)
         return year, year
 
-    # Pattern 5: "rođen(a) YYYY" embedded in text
-    match = re.search(r'rođen[a]?\s+(\d{4})', search_text)
+    # Pattern 5: "rođen(a) YYYY" embedded in text, also "Rođen 20. II 1923", "rođen 20. septembra 1921"
+    match = re.search(r'[Rr]ođen[a]?\s+(?:je\s+)?(?:\d{1,2}\.\s*(?:[IVX]+|\d{1,2})\.?\s*|\d{1,2}\.\s*[a-zčćžšđ]+\s+)?(\d{4})', search_text)
     if match:
         year = match.group(1)
         return year, year

@@ -8,6 +8,11 @@ updates soldierCount in website/app/data/units.ts.
 Designed to run as the LAST step before build, after normalize and
 extract_pdf_positions, so corrections always win.
 
+Afterwards, empty structured fields (birth_place, death_date, rank, ...) are read
+from each record's additional_info (scripts/extract_structured_fields.py). When a
+correction rewrites additional_info, values that had been read from the old text
+are dropped and read again from the new one; values set by corrections stay.
+
 Usage:
     python scripts/apply_corrections.py              # dry run
     python scripts/apply_corrections.py --apply      # apply changes
@@ -16,6 +21,8 @@ Correction actions:
     edit   - Update fields on an existing soldier
     delete - Remove a soldier record
     split  - Replace one merged record with multiple new records
+    add    - Insert a soldier the parser missed, after the record `soldier_id`,
+             under the fixed id `new_id` (skipped if that id already exists)
 """
 import sys
 import os
@@ -31,6 +38,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from name_utils import BRIGADE_CONFIGS, extract_birth_info
 from soldier_id_utils import generate_soldier_id, parse_soldier_id
+import extract_structured_fields as structured
 
 
 def load_corrections(corrections_path):
@@ -52,8 +60,11 @@ def load_corrections(corrections_path):
         if 'action' not in c:
             print(f"  WARNING: Correction #{i} missing 'action', skipping")
             continue
-        if c['action'] not in ('edit', 'delete', 'split'):
+        if c['action'] not in ('edit', 'delete', 'split', 'add'):
             print(f"  WARNING: Correction #{i} unknown action '{c['action']}', skipping")
+            continue
+        if c['action'] == 'add' and ('record' not in c or 'new_id' not in c):
+            print(f"  WARNING: Correction #{i} add missing 'record' or 'new_id', skipping")
             continue
         if 'soldier_id' not in c:
             print(f"  WARNING: Correction #{i} missing 'soldier_id', skipping")
@@ -116,6 +127,9 @@ def rebuild_computed_fields(soldier, skip_birth_year=False):
     return soldier
 
 
+MANUAL_FIELDS = {}   # soldier_id -> structured fields some correction sets explicitly
+
+
 def apply_edit(soldiers, correction):
     """Apply an edit correction. Returns (soldiers, applied)."""
     sid = correction['soldier_id']
@@ -125,9 +139,13 @@ def apply_edit(soldiers, correction):
         if s.get('soldier_id') == sid:
             reason = correction.get('reason', '')
             name_before = s.get('full_name', f"{s.get('last_name', '')} {s.get('first_name', '')}")
+            old_info = s.get('additional_info', '')
 
             for key, value in fields.items():
                 s[key] = value
+            if 'additional_info' in fields and fields['additional_info'] != old_info:
+                # re-read from the new text below; fields any correction sets for this soldier stay
+                structured.forget_stale(s, old_info, keep=MANUAL_FIELDS.get(sid, set()) | set(fields))
 
             # Skip birth_year rebuild if correction explicitly sets it
             skip_birth_year = 'birth_year' in fields
@@ -160,6 +178,25 @@ def apply_delete(soldiers, correction):
 
     print(f"    WARNING: Soldier {sid} not found for delete")
     return soldiers, False
+
+
+def apply_add(soldiers, correction):
+    """Apply an add correction. Returns (soldiers, applied). Idempotent: skipped once new_id exists."""
+    new_id = correction['new_id']
+    if any(s.get('soldier_id') == new_id for s in soldiers):
+        return soldiers, False
+
+    record = {'soldier_id': new_id, 'last_name': '', 'middle_name': '', 'first_name': '', 'fathers_name': '',
+              'full_name': '', 'additional_info': '', 'birth_year': ''}
+    record.update(correction['record'])
+    record = rebuild_computed_fields(record, skip_birth_year='birth_year' in correction['record'])
+
+    anchor = next((i for i, s in enumerate(soldiers) if s.get('soldier_id') == correction['soldier_id']), len(soldiers) - 1)
+    soldiers.insert(anchor + 1, record)
+    print(f"    ADD {new_id}: {record['full_name']}")
+    if correction.get('reason'):
+        print(f"         Reason: {correction['reason']}")
+    return soldiers, True
 
 
 def apply_split(soldiers, correction):
@@ -285,11 +322,17 @@ def main():
 
     print(f"Found {len(corrections)} correction(s)\n")
 
+    for c in corrections:
+        set_fields = set(c.get('fields', {})) | set(c.get('record', {}))
+        MANUAL_FIELDS.setdefault(c['soldier_id'], set()).update(set_fields & set(structured.FIELDS))
+
     # Group corrections by brigade
     by_brigade = {}
     for c in corrections:
         brigade_code = get_brigade_code_from_id(c['soldier_id'])
         by_brigade.setdefault(brigade_code, []).append(c)
+
+    live_files = structured.live_json_files()   # brigades on the site (preview-only brigades are left alone)
 
     # Track count changes for units.ts
     count_updates = {}  # brigade_code -> new_count
@@ -323,6 +366,8 @@ def main():
                 soldiers, applied = apply_delete(soldiers, c)
             elif action == 'split':
                 soldiers, applied, _ = apply_split(soldiers, c)
+            elif action == 'add':
+                soldiers, applied = apply_add(soldiers, c)
             else:
                 applied = False
 
@@ -333,6 +378,11 @@ def main():
 
         total_applied += applied_count
         new_count = len(soldiers)
+
+        if applied_count > 0 and json_path.name in live_files:
+            filled = structured.fill(soldiers)
+            if filled:
+                print(f"    Structured fields read from the bio for {filled} record(s)")
 
         if new_count != original_count:
             count_updates[brigade_code] = new_count

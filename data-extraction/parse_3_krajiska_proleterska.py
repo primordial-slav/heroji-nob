@@ -1,26 +1,34 @@
 """
-Parser stub: 3. Krajiška Proleterska Brigada.
+Parser: 3. Krajiška Proleterska Brigada (brigade code 10).
 
 Source: Savo Trikić — "TREĆA KRAJIŠKA PROLETERSKA BRIGADA"
         znaci.org/00001/224_18.pdf  →  website/public/pdfs/3-krajiska-proleterska.pdf
-Chapter: "Spisak palih boraca 3. proleterske krajiške brigade s osnovnim
-         matičnim podacima poginulih od 22. 8. 1942. do 15. 5. 1945."
+Chapter: "Spisak palih boraca Treće proleterske krajiške brigade s osnovnim matičnim
+         podacima poginulih" — pages 3-126, two columns, Latin. Pages 1-2 are sources,
+         127-129 the table of contents.
 
-Format observations (verify before running):
-- 130 pages total, list starts on p.3 (p.1-2 = title + intro).
-- Two-column Latin layout, entries flow alphabetically down each column.
-- Standard "LASTNAME Fathers-genitive FIRSTNAME, rođen YEAR, ..." with rich
-  bio: mesto, zanimanje, nacionalnost, u NOB od DATE, ulazak u Brigadu,
-  fate (poginuo DATE mesto). Multi-line continuations common.
-- Column split appears near x≈300 based on similar VII-series layouts;
-  measure before wiring the real parser.
-
-TODO:
-  1. Confirm start/end pages + column split X.
-  2. Add city/section-header skip patterns if present.
-  3. Test parse_standard_entry against samples; adapt if needed.
+Entry format:
+    ČOVIĆ Miodraga PETRONIJE, rođen 1924. ..., zemljoradnik, Srbin, u NOB i u Brigadi od
+    1942, borac, poginuo 11. 6. 1944. kod Kupresa
+The column gutter moves between odd and even pages, so it is found per page (col_split_x='auto').
 """
-from _parser_scaffold import run_parser
+import re
+from _parser_scaffold import repair_lj_ocr, restore_diacritics, run_parser
+
+INTRO_END_Y = {3: None}      # p.3 opens with the chapter title and an explanatory note
+TITLE = re.compile(r'^(?:Spisak palih boraca|proleterske krajiške brigade|s osnovnim matičnim|podacima poginulih|\*|'
+                   r'Osim popisa|i borci koji|Prema raspoloživoj|podaci:|tina i SR|NOB i u Brigadu|nost na kojoj|gde je sahranjen|[A-ZČĆŽŠĐ]$)')
+
+
+def keep_line(ln: dict) -> bool:
+    t = ln['text'].strip().replace('­', '-')
+    if ln['page'] == 3 and TITLE.match(t):
+        return False
+    if re.fullmatch(r'[A-ZČĆŽŠĐ]', t) or re.match(r'^(?:NA)?RODNI HEROJ', t):   # section letters; photo captions
+        return False
+    ln['text'] = t
+    return True
+
 
 if __name__ == '__main__':
     run_parser(
@@ -28,8 +36,10 @@ if __name__ == '__main__':
         brigade_code=10,
         output_path='website/public/3-krajiska-proleterska-soldiers.json',
         start_page=3,
-        end_page=None,           # auto-detect end
+        end_page=126,
         layout='two_column',
-        col_split_x=300,         # TUNE: verify with a peek
+        col_split_x='auto',
         script='latin',
+        line_filter=keep_line,
+        post_fn=lambda soldiers: repair_lj_ocr(restore_diacritics(soldiers)),
     )

@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~47,800 WWII Yugoslav partisan soldiers across 9 brigades. Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~64,300 WWII Yugoslav partisan soldiers across 19 units (18 brigades and one division). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -11,17 +11,28 @@ Historical archive website for searching ~47,800 WWII Yugoslav partisan soldiers
 
 | Code | Name | Parser | JSON | PDF | Count |
 |------|------|--------|------|-----|-------|
-| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,068 |
-| 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,797 |
-| 3 | Druga Lička | via `scripts/` | `druga-licka-soldiers.json` | 1 PDF | 1,509 |
-| 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,172 |
-| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 859 |
-| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 7,936 |
-| 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,877 |
-| 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,092 |
-| 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,487 |
+| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,100 |
+| 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,804 |
+| 3 | Druga Lička | via `scripts/` | `druga-licka-soldiers.json` | 1 PDF | 1,483 |
+| 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,164 |
+| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 862 |
+| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,321 |
+| 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,530 |
+| 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,080 |
+| 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,592 |
+| 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` | `3-krajiska-proleterska-soldiers.json` | 1 PDF (two columns) | 2,267 |
+| 11 | 4. Krajiška | `data-extraction/parse_4_krajiska.py` | `4-krajiska-soldiers.json` | 1 PDF (Cyrillic) | 1,650 |
+| 12 | 5. Kozaračka | `data-extraction/parse_5_kozaracka.py` | `5-kozaracka-soldiers.json` | 1 PDF | 1,007 |
+| 13 | 6. Krajiška | `data-extraction/parse_6_krajiska.py` | `6-krajiska-soldiers.json` | 1 PDF | 1,822 |
+| 14 | 8. Krajiška | `data-extraction/parse_8_krajiska.py` | `8-krajiska-soldiers.json` | 1 PDF | 1,171 |
+| 15 | 1. Šumadijska | `data-extraction/parse_1_sumadijska.py` | `1-sumadijska-soldiers.json` | 1 PDF (Cyrillic) | 308 |
+| 16 | 17. Slavonska | `data-extraction/parse_17_slavonska.py` | `17-slavonska-soldiers.json` | 2 PDFs (fallen, survivors) | 3,611 |
+| 17 | 18. Slavonska | `data-extraction/parse_18_slavonska.py` (table reader) | `18-slavonska-soldiers.json` | 1 PDF | 1,548 |
+| 18 | 2. Vojvođanska | `data-extraction/parse_2_vojvodjanska.py` | `2-vojvodjanska-soldiers.json` | 1 PDF (Cyrillic) | 2,141 |
+| 19 | 25. Srpska divizija | `data-extraction/parse_25_srpska_divizija.py` | `25-srpska-divizija-soldiers.json` | 1 PDF (Cyrillic) | 877 |
 
-Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`.
+Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-19 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
+Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
 ## Data Pipeline
 
@@ -30,11 +41,13 @@ When fixing parsing bugs or adding brigades, run these steps in order:
 1. **Parse**: `python data-extraction/parse_<brigade>.py` — extracts soldiers from PDF
 2. **Normalize**: `python scripts/normalize_all_json.py --apply` — cleans names, extracts birth years, converts genitive father's names to nominative
 3. **Extract positions**: `python data-extraction/extract_pdf_positions.py --brigade <name>` — matches soldiers to PDF page/Y coordinates for the viewer
-4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits). Also auto-updates soldierCount in `units.ts`.
+4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits, adds). Also auto-updates soldierCount in `units.ts`, then fills empty structured fields from each bio (see below).
 5. **Build**: `cd website && npm run build` — verify no errors
 6. **Push**: `git push origin main && git push prod main`
 
 Corrections run LAST before build so they always win over automated pipeline output.
+
+**Structured fields** (`birth_place`, `ethnicity`, `occupation`, `rank`, `unit_detail`, `death_type`, `death_date`, `death_place`) are read from `additional_info` by `scripts/extract_structured_fields.py` (per-book rules; death places are put in the nominative only when that form is a known place). Only empty fields are filled; values set in corrections are never overwritten. `apply_corrections.py` runs it automatically; run the script alone for coverage stats and samples (`--brigade N --sample 20`), or with `--apply` for brigades that had no corrections.
 
 ## Corrections System
 
@@ -42,9 +55,10 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 
 - **File**: `corrections.json` (project root) — array of correction objects
 - **Script**: `scripts/apply_corrections.py` — applies corrections to brigade JSONs
-- **Actions**: `edit` (update fields), `delete` (remove record), `split` (replace one record with N new records)
+- **Actions**: `edit` (update fields), `delete` (remove record), `split` (replace one record with N new records), `add` (insert a soldier the parser missed, with a fixed `new_id`, right after `soldier_id`)
 - **Dry run by default**: Run without `--apply` to preview changes
-- **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount
+- **Idempotent**: re-applying the whole file is a no-op (an `add` whose `new_id` exists is skipped)
+- **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount. Include `birth_year` in `fields` to pin it.
 
 ```json
 [
@@ -53,7 +67,12 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
   {"id": 3, "action": "split", "soldier_id": "0004002415", "into": [
     {"last_name": "Štefane", "first_name": "Vinko", "additional_info": "Kovača vas"},
     {"last_name": "Štrajher", "first_name": "Ignac", "additional_info": "1917, Trbovlje"}
-  ], "reason": "Two soldiers merged into one entry"}
+  ], "reason": "Two soldiers merged into one entry"},
+  {"id": 4, "action": "add", "soldier_id": "0009000108", "new_id": "0009001594", "record": {
+    "last_name": "Bogdanov", "middle_name": "Božidar", "fathers_name": "Božidar", "first_name": "Aleksandar",
+    "additional_info": "1924, Bavanište (Kovin), dimničar, borac, nestao", "birth_year": "1924",
+    "pdf_file": "prva-vojvodjanska.pdf", "pdf_page": 4, "pdf_y": 496.9, "pdf_x": 47.9
+  }, "reason": "Missing soldier: PDF page never parsed"}
 ]
 ```
 

@@ -102,10 +102,25 @@ def extract_lines_single_column(pdf_path: str, start_page: int, end_page: int | 
     return lines
 
 
-def extract_lines_two_column(pdf_path: str, start_page: int, end_page: int | None, col_split_x: float) -> list[dict]:
+def find_gutter(page, offset: tuple[float, float], lo_frac: float = 0.35, hi_frac: float = 0.65) -> float:
+    """The x (viewer space) in the middle band of the page that the fewest words cross —
+    the column gutter. Books alternate the gutter between odd and even pages."""
+    dx = offset[0]
+    words = page.extract_words(keep_blank_chars=False)
+    width = float(page.width)
+    best = None
+    for x in range(int(width * lo_frac), int(width * hi_frac)):
+        cover = sum(1 for w in words if w['x0'] - dx - 1 <= x <= w['x1'] - dx + 1)
+        if best is None or cover < best[0]:
+            best = (cover, x)
+    return float(best[1]) if best else width / 2
+
+
+def extract_lines_two_column(pdf_path: str, start_page: int, end_page: int | None, col_split_x) -> list[dict]:
     """Split each page at col_split_x (by char x0) and return lines in reading
     order: left column, then right column, then the next page — so entries that
-    wrap across a column or page boundary stay contiguous."""
+    wrap across a column or page boundary stay contiguous.
+    col_split_x='auto' finds the gutter on every page (find_gutter)."""
     lines: list[dict] = []
     with pdfplumber.open(pdf_path) as pdf:
         stop = min(end_page, len(pdf.pages)) if end_page else len(pdf.pages)
@@ -114,8 +129,9 @@ def extract_lines_two_column(pdf_path: str, start_page: int, end_page: int | Non
             offset = viewer_offset(page)
             dx = offset[0]
             # col_split_x is in viewer coordinates, like everything the scaffold emits
-            lpage = page.filter(lambda o: o.get('object_type') != 'char' or o['x0'] - dx < col_split_x)
-            rpage = page.filter(lambda o: o.get('object_type') != 'char' or o['x0'] - dx >= col_split_x)
+            split = find_gutter(page, offset) if col_split_x == 'auto' else col_split_x
+            lpage = page.filter(lambda o: o.get('object_type') != 'char' or o['x0'] - dx < split)
+            rpage = page.filter(lambda o: o.get('object_type') != 'char' or o['x0'] - dx >= split)
             lines.extend(_page_lines(lpage, page_num + 1, offset))
             lines.extend(_page_lines(rpage, page_num + 1, offset))
     return lines
@@ -155,8 +171,8 @@ def _fix_caps_token(tok: str) -> str:
 
 _CAPS_WORD = re.compile(rf'[{U}]{{3,}}')
 
-# Scan specks before a name: "| KRSTIĆ", "! KUDRA", "* KUZMANOVIĆ", "1 MANIĆANIN", "I RISTIĆ"
-_LEADING_JUNK = re.compile(rf'^(?:[^\w\s(]+|\d|[Iil])\s+(?=[{U}]{{3,}})')
+# Scan specks before a name: "| KRSTIĆ", "! KUDRA", "* KUZMANOVIĆ", "1 MANIĆANIN", "I RISTIĆ", "'PURIĆ"
+_LEADING_JUNK = re.compile(rf'^(?:[^\w\s(]+\s*|(?:\d|[Iil])\s+)(?=[{U}]{{3,}})')
 
 
 def garbled_name_start(text: str) -> bool:
@@ -411,6 +427,76 @@ def restore_diacritics(soldiers: list[dict], min_share: float = 0.8) -> list[dic
         s['fathers_name'] = s['middle_name']
         s['full_name'] = ' '.join(p for p in (s['last_name'], s['middle_name'], s['first_name']) if p)
     print(f"  restored diacritics in {changed} name fields")
+    return soldiers
+
+
+def repair_cyrillic_ocr(soldiers: list[dict], ik_is_ic: bool = False) -> list[dict]:
+    """Cyrillic scans where Ћ at the end of a surname comes out as Б/Е/Н/К/В (АДАМОВИБ, АДАМОВИЕ,
+    АДАМОВИН) and Ђ at the start of a name as Б (БУРО). "-ib"/"-ie" never end a surname, so they always
+    become "-ić"; "-in"/"-ik"/"-iv"/"-ih" only when the name is unknown as printed and known with "-ić".
+    A leading B becomes Đ when only the Đ spelling is known (Buro → Đuro)."""
+    ref = _load_name_reference()
+    count = lambda field, v: sum((ref.get(field, {}).get(_fold(v).lower()) or {}).values())
+    known = lambda field, v: count(field, v) > 0
+    changed = 0
+    for s in soldiers:
+        last = s.get('last_name') or ''
+        parts = []
+        for p in last.split('-'):
+            if re.search(r'i[beđ]$', p) or re.search(r'[oe]vi[nkvh]$', p) or (ik_is_ic and re.search(r'i[kv]$', p)):
+                p = p[:-1] + 'ć'                                   # -ović/-ević are never -ovin/-evik
+            elif re.search(r'i[nkvh]$', p) and count('last_name', p[:-1] + 'ć') >= 10 * max(count('last_name', p), 1):
+                p = p[:-1] + 'ć'
+            parts.append(p)
+        new_last = '-'.join(parts)
+        if new_last != last:
+            s['last_name'] = new_last
+            changed += 1
+        for field in ('last_name', 'first_name', 'middle_name'):
+            v = s.get(field) or ''
+            if not re.search('[Bb]', v) or known(field, v):
+                continue
+            # any one or two B's may be a misread Đ (or D): БОРБЕ → ĐORĐE, БУРАБ → ĐURAĐ, АБАМОВИЋ → Adamović
+            spots = [i for i, ch in enumerate(v) if ch in 'Bb']
+            best = None
+            for k in (1, 2):
+                for combo in __import__('itertools').combinations(spots, k):
+                    for repl in ('Đđ', 'Dd'):
+                        cand = ''.join((repl[0] if ch == 'B' else repl[1]) if i in combo else ch for i, ch in enumerate(v))
+                        n = (ref.get(field, {}).get(_fold(cand).lower()) or {}).get(cand, 0)   # exact spelling: fold(đ) == d
+                        if n >= (3 if field == 'last_name' else 2) and (best is None or n > best[0]):
+                            best = (n, cand)
+            if best:
+                s[field] = best[1]
+                changed += 1
+        s['fathers_name'] = s.get('middle_name', '')
+        s['full_name'] = ' '.join(p for p in (s['last_name'], s['middle_name'], s['first_name']) if p)
+    print(f"  repaired Cyrillic OCR in {changed} name fields")
+    return soldiers
+
+
+def repair_lj_ocr(soldiers: list[dict]) -> list[dict]:
+    """Some scans read "LJ" as "U" (KRAGUU, UUBO, VUEVIĆ). A name that is unknown as printed but known
+    with one "u" read back as "lj" takes the known spelling (Kragulj, Ljubo, Vljević)."""
+    ref = _load_name_reference()
+    changed = 0
+    for s in soldiers:
+        for field in ('last_name', 'first_name'):
+            v = s.get(field) or ''
+            counts = ref.get(field, {})
+            if not v or 'u' not in v.lower() or counts.get(_fold(v).lower()):
+                continue
+            low = _fold(v).lower()
+            found = Counter()
+            for i, ch in enumerate(low):
+                if ch == 'u':
+                    for spelling, n in counts.get(low[:i] + 'lj' + low[i + 1:], {}).items():
+                        found[spelling] += n
+            if found and sum(found.values()) >= 2:
+                s[field] = found.most_common(1)[0][0]
+                changed += 1
+        s['full_name'] = ' '.join(p for p in (s['last_name'], s['middle_name'], s['first_name']) if p)
+    print(f"  repaired LJ->U OCR in {changed} name fields")
     return soldiers
 
 
