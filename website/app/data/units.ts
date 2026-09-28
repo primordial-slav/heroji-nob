@@ -66,7 +66,7 @@ export const units: Unit[] = [
     nameEn: '13th Proletarian Assault Brigade "Rade Končar"',
     description: 'Formirana 7. novembra 1942. godine. Spisak palih i preživjelih boraca.',
     image: '/images/13-proleterska-brigada.jpg',
-    soldierCount: 8336,
+    soldierCount: 8255,
     dataFile: '/13-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/13-proleterska-spisak.pdf']
   },

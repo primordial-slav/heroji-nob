@@ -16,7 +16,7 @@ Historical archive website for searching ~64,300 WWII Yugoslav partisan soldiers
 | 3 | Druga Lička | via `scripts/` | `druga-licka-soldiers.json` | 1 PDF | 1,487 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,133 |
 | 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 894 |
-| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,336 |
+| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,255 |
 | 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,542 |
 | 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,093 |
 | 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,592 |
@@ -107,7 +107,7 @@ PDF text extraction has recurring patterns that break name-boundary detection:
 - **Two-column layouts**: Ljubljanska PDF has left/right columns. Use `extract_words()` with x-coordinate splitting at x=280, NOT `extract_text()` which merges columns.
 - **Leading punctuation**: Lines starting with `- `, `^ `, `^-` before names (Treća Proleterska). Strip with `clean_line()`.
 - **OCR-corrupted diacritics**: `DROBNJAKOVie` instead of `DROBNJAKOVIĆ`. Use 70% uppercase threshold heuristic.
-- **Duplicated scan pages**: `prva-licka-proleterska.pdf` pages 913-914 repeat 911-912, and `prva-proleterska-1.pdf` pages 176-177 repeat 174-175; records read from the copies were deleted in corrections. Check new PDFs for repeated pages before parsing.
+- **Duplicated scan pages**: `prva-licka-proleterska.pdf` pages 913-914 repeat 911-912, `prva-proleterska-1.pdf` pages 176-177 repeat 174-175, and `13-proleterska-spisak.pdf` page 105 is a shifted rescan of page 103 (a whole-page hash misses it; compare entry lines); records read from the copies were deleted in corrections. Check new PDFs for repeated pages before parsing.
 - **Glued entries**: a missed entry start leaves the next soldier inside the previous bio ("... na planini Tari. DONOVIĆ (ili DONOVSKI) PANTA Pane, komandir ..."); two-column pages can also mix the columns. Fix with an `edit` that trims the bio plus an `add`.
 
 ## Project Structure
