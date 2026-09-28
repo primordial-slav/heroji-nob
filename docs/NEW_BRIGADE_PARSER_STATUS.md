@@ -6,16 +6,16 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 
 | Code | Unit | Soldiers | Lists in the book | Notes |
 |-----:|---|---:|---|---|
-| 10 | 3. Krajiška Proleterska | 2,267 | fallen | Two columns; gutter found per page (`col_split_x='auto'`); "NARODNI HEROJ" photo captions dropped |
-| 11 | 4. Krajiška | 1,650 | fallen, died, missing | Cyrillic, poor OCR: `repair_cyrillic_ocr` (Ћ read as Б/Е/Н/К/В, Ђ as Б), "roćen" → rođen, Л read as "Ј1", О read as 0; pp. 106-128 are photo captions |
+| 10 | 3. Krajiška Proleterska | 2,268 | fallen | Two columns; gutter found per page (`col_split_x='auto'`); "NARODNI HEROJ" photo captions dropped |
+| 11 | 4. Krajiška | 1,657 | fallen, died, missing | Cyrillic, poor OCR: `repair_cyrillic_ocr` (Ћ read as Б/Е/Н/К/В, Ђ as Б), "roćen" → rođen, Л read as "Ј1", О read as 0; pp. 106-128 are photo captions |
 | 12 | 5. Kozaračka | 1,007 | fallen, missing, died | Diacritics restored against brigades 1-9 |
 | 13 | 6. Krajiška | 1,822 | fallen + "Dopunski spisak" + "Naknadno prikupljeni podaci" | Single column (not two); the book itself lists ~30 soldiers twice (both kept, each links to its own entry) |
 | 14 | 8. Krajiška | 1,171 | fallen, died | Garbled father's initials ("(£>)", "(š)") repaired before grouping; TOC from p.58 dropped |
-| 15 | 1. Šumadijska | 308 | fallen; survivors | Both parents given: the mother goes to the bio ("majka Stanislava; ..."), as do nicknames |
+| 15 | 1. Šumadijska | 310 | fallen; survivors | Both parents given: the mother goes to the bio ("majka Stanislava; ..."), as do nicknames |
 | 16 | 17. Slavonska | 3,611 | fallen (759); survivors (2,852) | Two PDFs, two columns; municipality headings added to the bio as "(općina X)" |
 | 17 | 18. Slavonska | 1,548 | fallen (table, 357); survivors (1,191) | Custom table reader (`parse_18_slavonska.py`); survivors' street addresses and house numbers left out; pp. 58-66 of the scan are an unrelated publication |
-| 18 | 2. Vojvođanska | 2,141 | soldiers and officers | `*` marks killed/died → `death_type` |
-| 19 | 25. Srpska divizija | 877 | fallen | Numbered 1-883; alias notes ("(ili RAJKOV)", "(moguće X)", "(?)") move to the bio as "ili X;" |
+| 18 | 2. Vojvođanska | 2,143 | soldiers and officers | `*` marks killed/died → `death_type` |
+| 19 | 25. Srpska divizija | 881 | fallen | Numbered 1-883; alias notes ("(ili RAJKOV)", "(moguće X)", "(?)") move to the bio as "ili X;" |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 
