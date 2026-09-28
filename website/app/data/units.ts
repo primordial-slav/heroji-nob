@@ -16,7 +16,7 @@ export const units: Unit[] = [
     nameEn: '1st Lika Proletarian Brigade "Marko Orešković"',
     description: 'Formirana juna 1942. godine',
     image: '/images/prva-licka-brigada.jpg',
-    soldierCount: 9754,
+    soldierCount: 9757,
     dataFile: '/soldiers.json',
     pdfFiles: ['/pdfs/prva-licka-proleterska.pdf']
   },
@@ -56,7 +56,7 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. godine. Spisak boraca i starešina na dan formiranja brigade.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 892,
+    soldierCount: 894,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf']
   },
@@ -136,7 +136,7 @@ export const units: Unit[] = [
     nameEn: '6th Krajina Assault Brigade',
     description: 'Formirana 14. oktobra 1942. godine od jedinica Prvog krajiškog NOP odreda. Spisak poginulih i umrlih boraca i starješina brigade.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 1822,
+    soldierCount: 1825,
     dataFile: '/6-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/6-krajiska.pdf']
   },
@@ -146,7 +146,7 @@ export const units: Unit[] = [
     nameEn: '4th Krajina Assault Brigade',
     description: 'Formirana 9. septembra 1942. godine u Tičevu kod Bosanskog Grahova. Spisak poginulih, umrlih i nestalih boraca i starešina brigade.',
     image: '/images/cetvrta-krajiska-brigada.jpg',
-    soldierCount: 1657,
+    soldierCount: 1663,
     dataFile: '/4-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/4-krajiska.pdf']
   },
@@ -166,7 +166,7 @@ export const units: Unit[] = [
     nameEn: '17th Slavonia Assault Brigade',
     description: 'Formirana 30. decembra 1942. godine u rejonu Voćina. Spiskovi poginulih i preživjelih boraca brigade, po općinama.',
     image: '/images/17-slavonska-brigada.jpg',
-    soldierCount: 3611,
+    soldierCount: 3613,
     dataFile: '/17-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/17-slavonska-poginuli.pdf', '/pdfs/17-slavonska-prezivjeli.pdf']
   },
@@ -186,7 +186,7 @@ export const units: Unit[] = [
     nameEn: '1st Šumadija Brigade',
     description: 'Formirana 5. oktobra 1943. godine. Spiskovi poginulih boraca i starešina i boraca koji su preživeli rat.',
     image: '/images/pdf-thumbs/1-sumadijska.jpg',
-    soldierCount: 310,
+    soldierCount: 319,
     dataFile: '/1-sumadijska-soldiers.json',
     pdfFiles: ['/pdfs/1-sumadijska.pdf']
   },

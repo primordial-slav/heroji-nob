@@ -111,6 +111,10 @@ SPECIAL_UNITS = [
     (re.compile(r'\bomladinsk(?:a|e|oj) čet[aei]', re.I), 'omladinska četa'),
     (re.compile(r'\bbataljon(?:a|u)? Garibaldi', re.I), 'bataljon Garibaldi'),
     (re.compile(r'\bprištapsk(?:e|ih) jedinic', re.I), 'prištapske jedinice'),
+    (re.compile(r'\b(izviđačk|inžinjerijsk|protivtenkovsk|protivavionsk|protivoklopn|prištapsk|sanitetsk|mitraljesk)(?:a|e|oj)\s+čet[aei]\b', re.I), '{}a četa'),
+    (re.compile(r'\bčet[aei]\s+za\s+vezu\b', re.I), 'četa za vezu'),
+    (re.compile(r'\b(protivtenkovsk|protivavionsk|artiljerijsk)(?:a|e|oj)\s+baterij[aei]\b', re.I), '{}a baterija'),
+    (re.compile(r'\bintendantur(?:a|e|i)\b', re.I), 'intendantura'),
 ]
 
 PREP = r'(?:u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izmedu|prema|pred|za|iz|na putu za|u selu|u s\.|s\.|selo|u rejonu|rejon)'
@@ -189,9 +193,12 @@ class Extractor:
             elif re.match(r'^\s*(?:\.\s*)+', t):
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
-        if re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
+        from_place = code == 2 and re.match(rf'^iz\s+[{U}]', t) is not None   # Prva lička: "iz Zavlake, Donji Lapac" (where he came from)
+        if from_place:
+            t = t[3:]
+        elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
             t = ''                                                            # "1944. kod Tovarnika." is not a birthplace
-        locative = re.match(r'^u\s+(?!s\.?\s|selu)', t) is not None          # "rođen u Donjem Lapcu" (locative)
+        locative = from_place or re.match(r'^u\s+(?!s\.?\s|selu)', t) is not None   # "rođen u Donjem Lapcu" (locative)
         t = re.sub(r'^(?:u\s+selu|u\s+s\.?|u|s\.?|selo|g\.)\s+', '', t)
         t = re.sub(r'\s[—–-]\s', ', ', t)                                     # "Studenec - Ig", "Brajići — Boka kotorska"
         if code == 3:
@@ -209,6 +216,7 @@ class Extractor:
                 place.append(tail.group(1))
                 break
             if (s in ETHNIC or looks_ethnic(s) or s.lower() in self.occupations or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
+                    or any(rx.search(s) for rx, _ in SPECIAL_UNITS)
                     or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s) or len(s) > 40 or len(s.split()) > 4
                     or not re.match(rf'^(?:[{U}]|\((?=[{U}])|(?:s|sv|st)\.\s[{U}])', s)):
                 break
@@ -281,6 +289,7 @@ class Extractor:
         ('ju', 'j'), ('ju', 'je'), ('om', 'o'), ('em', 'e'), ('i', 'a'), ('i', 'e'), ('oj', 'a'), ('oj', 'o'), ('om', 'i'), ('om', ''), ('em', 'i'),
         ('eg', 'i'), ('og', 'i'), ('og', 'o'), ('e', 'a'), ('a', ''), ('a', 'o'), ('a', 'e'), ('a', 'i'), ('ova', 'ovi'), ('eva', 'evi'), ('aca', 'ci'),
         ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('ca', 'ac'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
+        ('aka', 'ci'), ('ra', 'ar'),
     ]
 
     def _variants(self, word: str) -> set[str]:
@@ -344,7 +353,7 @@ class Extractor:
         for rx, fmt in SPECIAL_UNITS:
             m = rx.search(t)
             if m:
-                val = fmt.format(m.group(1)) if '{}' in fmt else fmt
+                val = fmt.format(m.group(1).lower()) if '{}' in fmt else fmt
                 parts.append(val)
                 seen.add('bataljon' if 'bataljon' in val else 'četa')
         order = {'vod': 0, 'desetina': 0, 'četa': 1, 'bataljon': 2}
