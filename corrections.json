@@ -503698,5 +503698,83 @@
       "pdf_y_end": 444.7
     },
     "reason": "Bio held the page footnote (p.2, smaller type below the last entry: \"* Spisak poginulih, umrlih i nestalih boraca i starešina 4. krajiške NOU brigade napravljen je na osnovu knjiga ranjenih, ...\"); removed, and the highlight now ends at the entry's last line (434.7 + 10) instead of the footnote's"
+  },
+  {
+    "id": 47208,
+    "action": "edit",
+    "soldier_id": "0004002753",
+    "fields": {
+      "last_name": "Švirt",
+      "additional_info": "1912, Jelše pri Otočcu, Novo mesto",
+      "birth_year": "1912"
+    },
+    "reason": "Glued entry: the next entry, \"Tadej evič Ivan, 1917, Kraslca, Bakar, SR Hrvatska, padel 20.4.1944 pri Ribnici\" (p.440, right column, first under the T heading), was read into this bio; trimmed, and added as its own record. Surname: printed in the Š section between Švigelj and the T heading (OCR lost the caron); \"Novo meato\" is OCR for Novo mesto"
+  },
+  {
+    "id": 47209,
+    "action": "add",
+    "soldier_id": "0004002753",
+    "new_id": "0004003177",
+    "record": {
+      "last_name": "Tadejevič",
+      "middle_name": "",
+      "first_name": "Ivan",
+      "fathers_name": "",
+      "additional_info": "1917, Krasica, Bakar, SR Hrvatska, padel 20.4.1944 pri Ribnici",
+      "birth_year": "1917",
+      "pdf_file": "ljubljanska-brigada.pdf",
+      "pdf_page": 440,
+      "pdf_y": 573.6,
+      "pdf_x": 309.6
+    },
+    "reason": "Missing soldier: entry \"Tadej evič Ivan, 1917, Kraslca, Bakar, SR Hrvatska, padel 20.4.1944 pri Ribnici\" (p.440, right column) was glued onto the previous bio (0004002753 Švirt Franc); OCR \"Kraslca\" is Krasica (Bakar)"
+  },
+  {
+    "id": 47210,
+    "action": "edit",
+    "soldier_id": "0004003010",
+    "fields": {
+      "additional_info": "",
+      "birth_year": ""
+    },
+    "reason": "Glued entries: the next two entries on p.445, \"VraneAič Franc, 1916, Pribl nei, Adleilčl, Črnomelj\" and \"VraneAič Peter, 1900, Trebnje\", were read into this bio; the book prints \"Vrančič Franc\" with no details, so the bio is empty (both added as their own records)"
+  },
+  {
+    "id": 47211,
+    "action": "add",
+    "soldier_id": "0004003010",
+    "new_id": "0004003178",
+    "record": {
+      "last_name": "Vranešič",
+      "middle_name": "",
+      "first_name": "Franc",
+      "fathers_name": "",
+      "additional_info": "1916, Priblišče, Adlešiči, Črnomelj",
+      "birth_year": "1916",
+      "pdf_file": "ljubljanska-brigada.pdf",
+      "pdf_page": 445,
+      "pdf_y": 285.2,
+      "pdf_x": 139.9
+    },
+    "reason": "Missing soldier: entry \"VraneAič Franc, 1916, Pribl nei, Adleilčl, Črnomelj\" (p.445) was glued onto 0004003010 Vrančič Franc; this OCR reads š as \"A\" (VraneAič = Vranešič), and \"Pribl nei, Adleilčl\" is Priblišče, Adlešiči"
+  },
+  {
+    "id": 47212,
+    "action": "add",
+    "soldier_id": "0004003178",
+    "new_id": "0004003179",
+    "record": {
+      "last_name": "Vranešič",
+      "middle_name": "",
+      "first_name": "Peter",
+      "fathers_name": "",
+      "additional_info": "1900, Trebnje",
+      "birth_year": "1900",
+      "pdf_file": "ljubljanska-brigada.pdf",
+      "pdf_page": 445,
+      "pdf_y": 303.5,
+      "pdf_x": 140.0
+    },
+    "reason": "Missing soldier: entry \"VraneAič Peter, 1900, Trebnje\" (p.445) was glued onto 0004003010 Vrančič Franc; this OCR reads š as \"A\" (VraneAič = Vranešič)"
   }
 ]
