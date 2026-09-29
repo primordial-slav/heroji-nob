@@ -41,13 +41,15 @@ When fixing parsing bugs or adding brigades, run these steps in order:
 1. **Parse**: `python data-extraction/parse_<brigade>.py` — extracts soldiers from PDF
 2. **Normalize**: `python scripts/normalize_all_json.py --apply` — cleans names, extracts birth years, converts genitive father's names to nominative
 3. **Extract positions**: `python data-extraction/extract_pdf_positions.py --brigade <name>` — matches soldiers to PDF page/Y coordinates for the viewer
-4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits, adds). Also auto-updates soldierCount in `units.ts`, then fills empty structured fields from each bio (see below).
+4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits, adds). Also auto-updates soldierCount in `units.ts`, then fills empty structured fields from each bio, then recomputes every unit's entry boxes (see below).
 5. **Build**: `cd website && npm run build` — verify no errors
 6. **Push**: `git push origin main && git push prod main`
 
 Corrections run LAST before build so they always win over automated pipeline output.
 
 **Structured fields** (`birth_place`, `ethnicity`, `occupation`, `rank`, `unit_detail`, `death_type`, `death_date`, `death_place`) are read from `additional_info` by `scripts/extract_structured_fields.py` (per-book rules; death places are put in the nominative only when that form is a known place). Only empty fields are filled; values set in corrections are never overwritten. `apply_corrections.py` runs it automatically; run the script alone for coverage stats and samples (`--brigade N --sample 20`), or with `--apply` for brigades that had no corrections.
+
+**Entry boxes** (`pdf_x_end`, `pdf_y_end`, and `pdf_x_left` where the box's left edge isn't `pdf_x`) are the box the PDF viewer highlights. `data-extraction/entry_boxes.py` computes them from the PDF text: from the entry start (`pdf_x`/`pdf_y`) down its column until the next known entry, a line that starts a new entry by the book's indentation (hanging, first-line or flush, measured per book and page), a gap, or the column end. `apply_corrections.py` runs it last, for every unit on the site, so boxes always follow the final positions; they are never taken from corrections (don't set `pdf_y_end` there). Run it alone with `python data-extraction/entry_boxes.py [--brigade N] [--apply]`. Page lines are cached in `data-extraction/.cache/` (gitignored); the first run reads ~2,800 pages (~2 min).
 
 ## Corrections System
 
@@ -91,9 +93,13 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
   "pdf_page": 42,
   "pdf_y": 310.5,
   "pdf_x": 72.0,
-  "pdf_file": "prva-proleterska-1.pdf"
+  "pdf_file": "prva-proleterska-1.pdf",
+  "pdf_x_end": 368.4,
+  "pdf_y_end": 339.8
 }
 ```
+
+`pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`.
 
 Soldier IDs: 10 digits — first 4 = brigade code (0001-0005), last 6 = sequence.
 
@@ -135,6 +141,7 @@ website/                          # Next.js 14 frontend
 data-extraction/                  # PDF parsing scripts
   parse_*.py                      # One parser per brigade
   extract_pdf_positions.py        # Maps soldiers → PDF coordinates
+  entry_boxes.py                  # Each entry's highlight box (run by apply_corrections.py)
 
 scripts/                          # Data transformation
   normalize_all_json.py           # Unified normalization (all brigades)
