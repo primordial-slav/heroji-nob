@@ -194,6 +194,15 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    20: {
+        'name': '4. Banijska',
+        'json_file': '4-banijska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOVIĆ Petra JANKO, rođen 1919. u Segestinu (Dvor na Uni)"
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

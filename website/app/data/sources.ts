@@ -206,5 +206,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/18-slavonska.jpg',
     brigadeName: '18. slavonska udarna brigada',
     description: 'Spisak poginulih i umrlih boraca i rukovodilaca 18. udarne brigade i spisak preživelih boraca'
+  },
+  {
+    id: '4-banijska',
+    title: 'Četvrta banijska brigada — zbornik sjećanja',
+    author: 'Zbornik sjećanja',
+    pdfPath: '/pdfs/4-banijska.pdf',
+    thumbnail: '/images/pdf-thumbs/4-banijska.jpg',
+    brigadeName: '4. banijska brigada',
+    description: 'Spisak boraca 4. banijske brigade'
   }
 ]

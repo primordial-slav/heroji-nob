@@ -199,6 +199,16 @@ export const units: Unit[] = [
     soldierCount: 1548,
     dataFile: '/18-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/18-slavonska.pdf']
+  },
+  {
+    id: '4-banijska-brigada',
+    name: '4. banijska brigada',
+    nameEn: '4th Banija Brigade',
+    description: 'Brigada 7. udarne divizije. Spisak boraca iz zbornika sjećanja „Četvrta banijska brigada“.',
+    image: '/images/pdf-thumbs/4-banijska.jpg',
+    soldierCount: 0,
+    dataFile: '/4-banijska-soldiers.json',
+    pdfFiles: ['/pdfs/4-banijska.pdf']
   }
   // Add more units here as you get more data
 ]
