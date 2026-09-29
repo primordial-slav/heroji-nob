@@ -20,9 +20,19 @@ function normalizingGetFn(
   return value != null ? String(value) : ''
 }
 
+// full_name puts the father's name between surname and first name ("Kokalj Anrejev Rudolf"),
+// so "Kokalj Rudolf" or "Rudolf Kokalj" would miss it. Index both two-name orders as well.
+function nameVariants(soldier: Soldier): string[] {
+  const last = soldier.last_name?.trim()
+  const first = soldier.first_name?.trim()
+  if (!last || !first) return []
+  return [`${last} ${first}`, `${first} ${last}`].map(removeDiacritics)
+}
+
 const FUSE_OPTIONS: IFuseOptions<Soldier> = {
   keys: [
     { name: 'full_name', weight: 0.6 },
+    { name: 'name_variants', weight: 0.6, getFn: nameVariants },
     { name: 'additional_info', weight: 0.2 },
     { name: 'birth_year', weight: 0.1 },
     { name: 'unit', weight: 0.1 },
