@@ -662,7 +662,9 @@ def normalize_soldier(record, brigade_code):
     result['last_name'] = last_name
     result['first_name'] = first_name
     result['middle_name'] = middle_name  # keep original field (now title-cased)
-    result['fathers_name'] = fathers_name_nominative  # new field: nominative form
+    # Nominative form. Parsers that emit the father only in fathers_name (middle_name empty)
+    # must not lose it here - keep theirs when middle_name gives nothing.
+    result['fathers_name'] = fathers_name_nominative or clean_name_field(record.get('fathers_name', ''))
 
     # Update full_name
     name_parts = [last_name, middle_name, first_name]

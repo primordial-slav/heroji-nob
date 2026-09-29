@@ -26,6 +26,17 @@ BRIGADE_CODE = 7
 START_PAGE = 2
 END_PAGE = 197
 
+# "SURNAME FIRST [(Nick)], Father[-Name] [(nick)]" followed by ".", "," or a date.
+# No period or digit may come before the comma (else that comma is inside the biography).
+_U, _L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
+FATHER_RE = re.compile(
+    rf"^(?P<name>[^,.\d]{{3,80}}?)\s*,\s*(?P<father>[{_U}][{_L}]+(?:-[{_U}][{_L}]+)?)"
+    rf"\s*(?:\([^)]*\))?\s*(?=[.,]|\s+\d)")
+# Words the book prints in the father's slot that are not names (entries with no father)
+NOT_FATHERS = {'Talijan', 'Hrvat', 'Poginuo', 'Split', 'Šibenik', 'Sinj', 'Trogir', 'Solin', 'Muć',
+               'Zagvozd', 'Makovac', 'Jesenice', 'Zrmanja', 'Ruišta', 'Ivoševci', 'Mrcine', 'Jeklenica',
+               'Avieno', 'Nedima', 'Orličev'}
+
 
 def extract_entries_from_pdf(pdf_path):
     """Extract raw text and split into numbered entries."""
@@ -91,65 +102,45 @@ def parse_entry(entry):
     fathers_name = ''
     additional_info = ''
 
-    # Split at first comma to separate "LASTNAME FIRSTNAME" from "Father. rest"
-    comma_idx = text.find(',')
-    if comma_idx > 0:
-        name_part = text[:comma_idx].strip()
-        rest = text[comma_idx + 1:].strip()
-
-        # Name part: "LASTNAME FIRSTNAME" or "LASTNAME-LASTNAME FIRSTNAME"
-        # Sometimes: "B AGO VIĆ ANTUN" (spaces in OCR)
-        name_words = name_part.split()
-        if len(name_words) >= 2:
-            # Last word(s) are first name (title case), rest is last name (ALL CAPS)
-            # Find where last name ends and first name begins
-            # Last name words are ALL CAPS, first name starts with uppercase then lowercase
-            last_parts = []
-            first_parts = []
-            found_first = False
-            for w in name_words:
-                if not found_first and (w.isupper() or is_ocr_uppercase(w)):
-                    last_parts.append(w)
-                else:
-                    found_first = True
-                    first_parts.append(w)
-
-            if first_parts:
-                last_name = ' '.join(last_parts)
-                first_name = ' '.join(first_parts)
-            else:
-                # All words look uppercase - take last word as first name
-                last_name = ' '.join(name_words[:-1])
-                first_name = name_words[-1]
-        elif len(name_words) == 1:
-            last_name = name_words[0]
-
-        # Father's name is between comma and first period in the rest
-        # "Petra. Gornje Polje..." -> father="Petra", info="Gornje Polje..."
-        # "Mate. 18. 10 1914. Biorine..." -> father="Mate", info="18. 10 1914. Biorine..."
-        # Handle: "Father. rest" or "Father (nickname). rest"
-        period_match = re.match(r'^([A-ZČĆŽŠĐa-zčćžšđ\s\-\(\)]+?)\.\s*(.*)', rest)
-        if period_match:
-            fathers_name = period_match.group(1).strip()
-            additional_info = period_match.group(2).strip()
-        else:
-            additional_info = rest
+    # The first comma ends the name only when nothing but the name comes before it and a
+    # father's name follows ("ALFIREV STIPE, Grge. 1914. ..."). Otherwise the book prints no
+    # father and the comma belongs to the biography ("BARADA TOMO. Seget Donji, Trogir. ...",
+    # "BELAMARIĆ MARICA, žena Jere. 1902. ..."), which must stay in additional_info.
+    father_match = FATHER_RE.match(text)
+    if father_match and father_match.group('father') not in NOT_FATHERS:
+        name_part = father_match.group('name')
+        fathers_name = father_match.group('father')
+        # drop a nickname printed after the father, and the separator before the bio
+        additional_info = text[father_match.end():].lstrip(' .,')
     else:
-        # No comma - try period split
-        period_idx = text.find('.')
-        if period_idx > 0:
-            name_part = text[:period_idx].strip()
-            additional_info = text[period_idx + 1:].strip()
-            words = name_part.split()
-            if len(words) >= 2:
-                last_name = words[0]
-                first_name = ' '.join(words[1:])
+        name_end = re.match(r'^[^.,]*', text).end()
+        name_part = text[:name_end]
+        additional_info = text[name_end:].lstrip(' .,')
+
+    # Name part: "LASTNAME FIRSTNAME" or "LASTNAME-LASTNAME FIRSTNAME"
+    # Sometimes: "B AGO VIĆ ANTUN" (spaces in OCR). Nicknames "(Dane)" are not kept.
+    name_words = re.sub(r'\s*\([^)]*\)', '', name_part).split()
+    if len(name_words) >= 2:
+        # Last name words are ALL CAPS, first name starts with uppercase then lowercase
+        last_parts = []
+        first_parts = []
+        found_first = False
+        for w in name_words:
+            if not found_first and (w.isupper() or is_ocr_uppercase(w)):
+                last_parts.append(w)
             else:
-                last_name = name_part
+                found_first = True
+                first_parts.append(w)
+
+        if first_parts:
+            last_name = ' '.join(last_parts)
+            first_name = ' '.join(first_parts)
         else:
-            words = text.split()
-            last_name = words[0] if words else text
-            first_name = ' '.join(words[1:]) if len(words) > 1 else ''
+            # All words look uppercase - take last word as first name
+            last_name = ' '.join(name_words[:-1])
+            first_name = name_words[-1]
+    elif len(name_words) == 1:
+        last_name = name_words[0]
 
     # Clean up names
     last_name = title_case_name(last_name)
@@ -173,10 +164,12 @@ def parse_entry(entry):
 
     full_name = f"{last_name} {first_name}".strip()
 
+    # The printed (genitive) father goes in middle_name, as in the other parsers:
+    # normalize_all_json derives the nominative fathers_name from it.
     return {
         'last_name': last_name,
         'first_name': first_name,
-        'middle_name': '',
+        'middle_name': fathers_name,
         'fathers_name': fathers_name,
         'full_name': full_name,
         'additional_info': additional_info,

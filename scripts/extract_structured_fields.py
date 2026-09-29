@@ -407,7 +407,8 @@ def build_extractor(brigades) -> Extractor:
                 occ[words[i + 1]] += 1
         if s.get('occupation'):
             occ[s['occupation'].lower()] += 3
-    occupations = Counter({w: n for w, n in occ.items() if n >= 2 and not RANK_RE.fullmatch(w) and w not in ('u', 'i', 'borac')
+    # 'grad' is the abbreviation in "grad. tehničar" (građevinski); as an occupation it would match "St. Grad"
+    occupations = Counter({w: n for w, n in occ.items() if n >= 2 and not RANK_RE.fullmatch(w) and w not in ('u', 'i', 'borac', 'grad')
                            and not UNIT_RE.search(w) and not any(rx.search(w) for rx, _ in SPECIAL_UNITS)})
     # known places (nominative): existing birth/death places, then birthplaces the extractor itself reads
     places = Counter()
