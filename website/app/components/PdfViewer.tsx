@@ -12,13 +12,27 @@ pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
 interface PdfViewerProps {
   pdfFile: string          // URL path like "/pdfs/prva-proleterska-1.pdf"
   pageNumber: number       // 1-indexed page to show
-  yPosition: number        // Y coordinate in PDF points to scroll to
-  yPositionEnd?: number    // Y coordinate of the next entry (for highlight height)
-  xPosition: number        // X coordinate in PDF points from left edge
+  yPosition: number        // Y of the entry's first line, in PDF points from the page top
+  yPositionEnd?: number    // Bottom of the entry's last line on the page
+  xPosition: number        // X of the entry's first line, in PDF points from the left edge
+  xPositionLeft?: number   // Left edge of the entry when it isn't xPosition
+  xPositionEnd?: number    // Right edge of the entry's text
   sourceHref?: string      // Link to the Sources page anchor for "View full document"
 }
 
-export default function PdfViewer({ pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, sourceHref }: PdfViewerProps) {
+// Highlight box around the soldier's entry, in PDF points. The extent comes
+// from data-extraction/entry_boxes.py; records without one get a one-line box.
+function highlightBox(x: number, y: number, xLeft?: number, xEnd?: number, yEnd?: number) {
+  const left = xLeft ?? x
+  const right = xEnd != null && xEnd > left ? xEnd : left + (x > 150 ? 200 : 250)
+  const bottom = yEnd != null && yEnd > y ? yEnd : y + 11
+  const padX = 3, padY = 2
+  return { left: left - padX, top: y - padY, width: right - left + 2 * padX, height: bottom - y + 2 * padY }
+}
+
+export default function PdfViewer({
+  pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, xPositionLeft, xPositionEnd, sourceHref,
+}: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
   const [scale, setScale] = useState(2.0)
@@ -127,22 +141,17 @@ export default function PdfViewer({ pdfFile, pageNumber, yPosition, yPositionEnd
             />
           </Document>
 
-          {/* Highlight box at the soldier's position */}
+          {/* Highlight box around the soldier's entry */}
           {currentPage === pageNumber && !loading && (() => {
-            const rawHeight = yPositionEnd && yPositionEnd > yPosition
-              ? yPositionEnd - yPosition + 4
-              : 14
-            const highlightHeight = Math.max(14, rawHeight) * scale
-            // For two-column PDFs (x > 150), use narrower width to stay in column
-            const highlightWidth = xPosition > 150 ? 200 : 250
+            const box = highlightBox(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd)
             return (
               <div
                 className="pdf-highlight-box"
                 style={{
-                  top: `${(yPosition - 2) * scale}px`,
-                  left: `${Math.max(0, xPosition - 5) * scale}px`,
-                  width: `${highlightWidth * scale}px`,
-                  height: `${highlightHeight}px`,
+                  top: `${box.top * scale}px`,
+                  left: `${Math.max(0, box.left) * scale}px`,
+                  width: `${box.width * scale}px`,
+                  height: `${box.height * scale}px`,
                 }}
               />
             )

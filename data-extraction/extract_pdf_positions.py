@@ -149,6 +149,8 @@ def match_positions_to_soldiers(positions, soldiers_json):
         s.pop('pdf_y', None)
         s.pop('pdf_x', None)
         s.pop('pdf_y_end', None)
+        s.pop('pdf_x_end', None)
+        s.pop('pdf_x_left', None)
         s.pop('pdf_file', None)
 
     # Compute end positions for highlight height

@@ -27,7 +27,7 @@ All pass `normalize_all_json.py --brigade <code>`; structured fields are filled 
 - Two columns with a fixed split or `col_split_x='auto'` (per-page gutter: the x the fewest words cross)
 - Nicknames and maiden names go to `additional_info` (`zvani Branko`, `rođ. Ćosić`), because `normalize_all_json` strips parentheticals from name fields
 - Birth year via `name_utils.extract_birth_info` (never the first year found; also "Rođen 20. II 1923", and after an alias clause like "zvani X; ")
-- PDF coordinates in the viewer's page space via `pdf_coords.viewer_offset` (identical on pdfplumber 0.9 and 0.11); `pdf_y_end` from the entry's last line on the page
+- PDF coordinates in the viewer's page space via `pdf_coords.viewer_offset` (identical on pdfplumber 0.9 and 0.11); `pdf_y_end` from the entry's last line on the page (replaced at the end of the pipeline by `entry_boxes.py`, which also sets `pdf_x_end`)
 - Optional hooks: `line_filter` (headings, footnotes, back matter, per-book OCR repairs), `post_fn`, `parse_entry_fn`, `asterisk_marks_death`
 - Post-processing helpers, all checked against the names already on the site: `restore_diacritics` (ACIMOVIC → Aćimović), `repair_lj_ocr` (KRAGUU → Kragulj), `repair_cyrillic_ocr` (АДАМОВИБ → Adamović, БОРБЕ → Đorđe)
 

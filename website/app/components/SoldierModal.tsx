@@ -189,6 +189,8 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
                 yPosition={soldier.pdf_y ?? 0}
                 yPositionEnd={soldier.pdf_y_end}
                 xPosition={soldier.pdf_x ?? 0}
+                xPositionLeft={soldier.pdf_x_left}
+                xPositionEnd={soldier.pdf_x_end}
                 sourceHref={sourceHref}
               />
             </Suspense>

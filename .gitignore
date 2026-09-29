@@ -32,6 +32,9 @@ pipeline/workspaces/*
 nul
 temp_photos/
 
+# Page lines cached by data-extraction/entry_boxes.py
+data-extraction/.cache/
+
 # Claude Code local settings
 .claude/settings.local.json
 

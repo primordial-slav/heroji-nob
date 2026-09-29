@@ -13,6 +13,11 @@ from each record's additional_info (scripts/extract_structured_fields.py). When 
 correction rewrites additional_info, values that had been read from the old text
 are dropped and read again from the new one; values set by corrections stay.
 
+Last, every unit on the site gets its entries' highlight boxes (pdf_x_end,
+pdf_y_end, pdf_x_left) recomputed from the PDFs by data-extraction/entry_boxes.py,
+so they follow the final positions. Those fields are always computed: a value a
+correction sets for them is overwritten.
+
 Usage:
     python scripts/apply_corrections.py              # dry run
     python scripts/apply_corrections.py --apply      # apply changes
@@ -33,12 +38,17 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
-# Add scripts dir for imports
+# Add scripts dir for imports (and data-extraction, for entry_boxes; at module
+# level so entry_boxes' worker processes can import it too)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data-extraction'))
 
 from name_utils import BRIGADE_CONFIGS, extract_birth_info
 from soldier_id_utils import generate_soldier_id, parse_soldier_id
 import extract_structured_fields as structured
+import entry_boxes
+
+POSITION_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y')
 
 
 def load_corrections(corrections_path):
@@ -141,6 +151,10 @@ def apply_edit(soldiers, correction):
             name_before = s.get('full_name', f"{s.get('last_name', '')} {s.get('first_name', '')}")
             old_info = s.get('additional_info', '')
 
+            if any(k in fields for k in POSITION_FIELDS):
+                # the old box belongs to the old position; entry_boxes draws the new one
+                for k in entry_boxes.BOX_FIELDS:
+                    s.pop(k, None)
             for key, value in fields.items():
                 s[key] = value
             if 'additional_info' in fields and fields['additional_info'] != old_info:
@@ -317,9 +331,6 @@ def main():
 
     print("Loading corrections...")
     corrections = load_corrections(corrections_path)
-    if not corrections:
-        return
-
     print(f"Found {len(corrections)} correction(s)\n")
 
     for c in corrections:
@@ -334,13 +345,17 @@ def main():
 
     live_files = structured.live_json_files()   # brigades on the site (preview-only brigades are left alone)
 
+    live_codes = {code for code, cfg in BRIGADE_CONFIGS.items() if cfg['json_file'] in live_files}
+    box_cache = entry_boxes.PageCache()
+
     # Track count changes for units.ts
     count_updates = {}  # brigade_code -> new_count
     total_applied = 0
     total_skipped = 0
 
-    # Process each brigade
-    for brigade_code, brigade_corrections in sorted(by_brigade.items()):
+    # Process each brigade with corrections, and every brigade on the site (entry boxes)
+    for brigade_code in sorted(set(by_brigade) | live_codes):
+        brigade_corrections = by_brigade.get(brigade_code, [])
         config = BRIGADE_CONFIGS.get(brigade_code)
         brigade_name = config['name'] if config else f"Brigade {brigade_code}"
         json_path = get_json_path_for_brigade(brigade_code, public_dir)
@@ -353,8 +368,10 @@ def main():
         print(f"\n  {brigade_name} ({json_path.name}):")
 
         with open(json_path, 'r', encoding='utf-8') as f:
-            soldiers = json.load(f)
+            original_text = f.read()
+        soldiers = json.loads(original_text)
         original_count = len(soldiers)
+        original_boxes = entry_boxes.box_snapshot(soldiers)
 
         applied_count = 0
         for c in brigade_corrections:
@@ -388,10 +405,19 @@ def main():
             count_updates[brigade_code] = new_count
             print(f"    Count: {original_count} -> {new_count} ({new_count - original_count:+d})")
 
-        if args.apply and applied_count > 0:
+        if json_path.name in live_files:
+            box_stats = entry_boxes.fill_boxes(soldiers, box_cache)
+            changed = sum(1 for sid, box in entry_boxes.box_snapshot(soldiers).items()
+                          if original_boxes.get(sid) != box)
+            print(f"    Entry boxes: {entry_boxes.describe(box_stats, changed)}")
+
+        new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
+        if args.apply and new_text != original_text:
             with open(json_path, 'w', encoding='utf-8') as f:
-                json.dump(soldiers, f, ensure_ascii=False, indent=2)
+                f.write(new_text)
             print(f"    Written: {json_path}")
+
+    box_cache.save()
 
     # Update units.ts counts
     if args.apply and count_updates:
