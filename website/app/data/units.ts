@@ -206,9 +206,19 @@ export const units: Unit[] = [
     nameEn: '4th Banija Brigade',
     description: 'Brigada 7. udarne divizije. Spisak boraca iz zbornika sjećanja „Četvrta banijska brigada“.',
     image: '/images/pdf-thumbs/4-banijska.jpg',
-    soldierCount: 0,
+    soldierCount: 2147,
     dataFile: '/4-banijska-soldiers.json',
     pdfFiles: ['/pdfs/4-banijska.pdf']
+  },
+  {
+    id: '4-srpska-brigada',
+    name: '4. srpska udarna brigada',
+    nameEn: '4th Serbian Assault Brigade',
+    description: 'Spisak boraca iz monografije Milorada Gončina „Četvrta srpska udarna brigada“, uz neidentifikovane borce i strane državljane.',
+    image: '/images/pdf-thumbs/4-srpska.jpg',
+    soldierCount: 6322,
+    dataFile: '/4-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/4-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

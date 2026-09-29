@@ -203,6 +203,16 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    21: {
+        'name': '4. Srpska',
+        'json_file': '4-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АВРАМОВИЋ Владимира ДРАГИША, рођен 1920. Голобок, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
 }
 
 
@@ -442,6 +452,10 @@ def clean_name_field(name):
         return ''
 
     name = name.strip()
+
+    # the books' mark for an unknown name
+    if re.fullmatch(r'N\.\s*N\.?', name):
+        return 'N. N.'
 
     # Remove parenthetical content (partisan aliases etc.)
     # e.g., "(Adola)" → remove

@@ -215,5 +215,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/4-banijska.jpg',
     brigadeName: '4. banijska brigada',
     description: 'Spisak boraca 4. banijske brigade'
+  },
+  {
+    id: '4-srpska',
+    title: 'Četvrta srpska udarna brigada',
+    author: 'Milorad Gončin',
+    pdfPath: '/pdfs/4-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/4-srpska.jpg',
+    brigadeName: '4. srpska udarna brigada',
+    description: 'Spisak boraca Četvrte srpske udarne brigade'
   }
 ]

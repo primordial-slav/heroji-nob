@@ -291,9 +291,12 @@ def update_units_ts(units_ts_path, count_updates):
     units.ts format per brigade block:
         soldierCount: 3172,
         dataFile: '/ljubljanska-soldiers.json',
+
+    Returns {brigade_code: (old, new)} for the counts that changed.
     """
+    changed = {}
     if not count_updates:
-        return
+        return changed
 
     with open(units_ts_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -305,11 +308,16 @@ def update_units_ts(units_ts_path, count_updates):
         json_file = config['json_file']
 
         # Pattern: soldierCount number on line before dataFile reference
-        pattern = rf"(soldierCount:\s*)\d+(,\s*\n\s*dataFile:\s*'/{re.escape(json_file)}')"
-        content = re.sub(pattern, rf"\g<1>{new_count}\g<2>", content)
+        pattern = rf"(soldierCount:\s*)(\d+)(,\s*\n\s*dataFile:\s*'/{re.escape(json_file)}')"
+        m = re.search(pattern, content)
+        if m and int(m.group(2)) != new_count:
+            changed[brigade_code] = (int(m.group(2)), new_count)
+            content = re.sub(pattern, rf"\g<1>{new_count}\g<3>", content)
 
-    with open(units_ts_path, 'w', encoding='utf-8') as f:
-        f.write(content)
+    if changed:
+        with open(units_ts_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+    return changed
 
 
 def main():
@@ -401,8 +409,9 @@ def main():
             if filled:
                 print(f"    Structured fields read from the bio for {filled} record(s)")
 
+        # units.ts follows the file, also when a re-parse (not a correction) changed its size
+        count_updates[brigade_code] = new_count
         if new_count != original_count:
-            count_updates[brigade_code] = new_count
             print(f"    Count: {original_count} -> {new_count} ({new_count - original_count:+d})")
 
         if json_path.name in live_files:
@@ -420,19 +429,21 @@ def main():
     box_cache.save()
 
     # Update units.ts counts
+    changed = {}
     if args.apply and count_updates:
-        print(f"\n  Updating units.ts soldier counts...")
-        update_units_ts(units_ts_path, count_updates)
-        for bc, nc in count_updates.items():
+        changed = update_units_ts(units_ts_path, count_updates)
+        if changed:
+            print(f"\n  Updated units.ts soldier counts:")
+        for bc, (oc, nc) in changed.items():
             name = BRIGADE_CONFIGS.get(bc, {}).get('name', f'Brigade {bc}')
-            print(f"    {name}: soldierCount -> {nc}")
+            print(f"    {name}: soldierCount {oc} -> {nc}")
 
     # Summary
     print(f"\n{'='*50}")
     print(f"  Applied: {total_applied}")
     print(f"  Skipped: {total_skipped}")
-    if count_updates:
-        print(f"  Counts updated: {len(count_updates)} brigade(s)")
+    if changed:
+        print(f"  Counts updated: {len(changed)} brigade(s)")
     print(f"{'='*50}")
 
     if not args.apply and total_applied > 0:

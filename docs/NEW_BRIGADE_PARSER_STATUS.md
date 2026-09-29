@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–20 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–21 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -17,6 +17,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 18 | 2. Vojvođanska | 2,143 | soldiers and officers | `*` marks killed/died → `death_type` |
 | 19 | 25. Srpska divizija | 881 | fallen | Numbered 1-883; alias notes ("(ili RAJKOV)", "(moguće X)", "(?)") move to the bio as "ili X;" |
 | 20 | 4. Banijska | 2,147 | soldiers (one list) | Entries start at the page's left margin; one-name entries ("ANDREJ, rodom iz SSSR", Soviet volunteers) and mixed-case given names ("GRUBOR Gojko") get their own name parser; OCR-split surnames rejoined ("CA VIĆ" → Čavić) |
+| 21 | 4. Srpska | 6,322 | soldiers (one list), then unidentified soldiers (N. N.) and foreign volunteers | Cyrillic; margin entry starts (page margins measured before reading, so a continuation line at the top of a page isn't an entry); the scan's own misreads fixed in given, father and surnames (и read as н/п/нј, л as т/ч/јј, т as г: Mnjlana → Milana, Sganković → Stanković); "(и X)" is another surname |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 

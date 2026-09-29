@@ -520,6 +520,7 @@ def run_parser(
     asterisk_marks_death: bool = False,
     line_filter: Callable[[dict], bool] | None = None,
     post_fn: Callable[[list[dict]], list[dict]] | None = None,
+    prepare_fn: Callable[[list[dict]], None] | None = None,
 ) -> list[dict]:
     """
     Common runner. Extract → group → parse → assign IDs → save.
@@ -528,6 +529,7 @@ def run_parser(
     record death_type from the entry text (left unset if the text doesn't say).
     line_filter: return False to drop a line ({text, x, y, page, file}) before
     grouping — for footnotes, running headers, back matter.
+    prepare_fn: sees each source's lines before line_filter (e.g. to measure page margins).
 
     Returns list of soldier dicts (also written to output_path).
     """
@@ -551,6 +553,8 @@ def run_parser(
             ln['file'] = Path(p).name
             if script == 'cyrillic':
                 ln['text'] = cyrillic_to_latin(ln['text'])
+        if prepare_fn:
+            prepare_fn(lines)
         if line_filter:
             lines = [ln for ln in lines if line_filter(ln)]
         all_entries.extend(group_into_entries(lines, entry_start_re, skip_re=skip_re))
