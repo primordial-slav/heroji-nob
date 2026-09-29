@@ -213,6 +213,16 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    22: {
+        'name': '7. Vojvođanska',
+        'json_file': '7-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АБАДОВИЋ АНТУН, 1908, Валпово, 11.12.1944, Белишће, пог., борац 7. ВУБ."
+        'has_fathers_name': True,     # a few: "СИМИЋ КОСТЕ АЛЕКСАНДАР"
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
 }
 
 

@@ -224,5 +224,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/4-srpska.jpg',
     brigadeName: '4. srpska udarna brigada',
     description: 'Spisak boraca Četvrte srpske udarne brigade'
+  },
+  {
+    id: '7-vojvodjanska',
+    title: 'Sedma vojvođanska udarna brigada',
+    author: 'Nikola Božić',
+    pdfPath: '/pdfs/7-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/7-vojvodjanska.jpg',
+    brigadeName: '7. vojvođanska udarna brigada',
+    description: 'Spisak boraca 7. vojvođanske udarne brigade (preživeli, poginuli i umrli posle rata)'
   }
 ]

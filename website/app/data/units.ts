@@ -219,6 +219,16 @@ export const units: Unit[] = [
     soldierCount: 6322,
     dataFile: '/4-srpska-soldiers.json',
     pdfFiles: ['/pdfs/4-srpska.pdf']
+  },
+  {
+    id: '7-vojvodjanska-brigada',
+    name: '7. vojvođanska udarna brigada',
+    nameEn: '7th Vojvodina Assault Brigade',
+    description: 'Spisak boraca iz monografije Nikole Božića „Sedma vojvođanska udarna brigada“ (preživeli, poginuli i umrli posle rata), uz borce 4. (ruskog) bataljona.',
+    image: '/images/pdf-thumbs/7-vojvodjanska.jpg',
+    soldierCount: 3577,
+    dataFile: '/7-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/7-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]
