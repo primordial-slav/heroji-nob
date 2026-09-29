@@ -11,25 +11,25 @@ Historical archive website for searching ~64,300 WWII Yugoslav partisan soldiers
 
 | Code | Name | Parser | JSON | PDF | Count |
 |------|------|--------|------|-----|-------|
-| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,090 |
-| 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,757 |
+| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,060 |
+| 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,814 |
 | 3 | Druga Lička | via `scripts/` | `druga-licka-soldiers.json` | 1 PDF | 1,487 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,133 |
-| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 894 |
-| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,255 |
-| 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,542 |
-| 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,093 |
+| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 897 |
+| 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,261 |
+| 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,546 |
+| 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,097 |
 | 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,592 |
 | 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` | `3-krajiska-proleterska-soldiers.json` | 1 PDF (two columns) | 2,268 |
 | 11 | 4. Krajiška | `data-extraction/parse_4_krajiska.py` | `4-krajiska-soldiers.json` | 1 PDF (Cyrillic) | 1,663 |
 | 12 | 5. Kozaračka | `data-extraction/parse_5_kozaracka.py` | `5-kozaracka-soldiers.json` | 1 PDF | 1,007 |
 | 13 | 6. Krajiška | `data-extraction/parse_6_krajiska.py` | `6-krajiska-soldiers.json` | 1 PDF | 1,825 |
 | 14 | 8. Krajiška | `data-extraction/parse_8_krajiska.py` | `8-krajiska-soldiers.json` | 1 PDF | 1,171 |
-| 15 | 1. Šumadijska | `data-extraction/parse_1_sumadijska.py` | `1-sumadijska-soldiers.json` | 1 PDF (Cyrillic) | 319 |
+| 15 | 1. Šumadijska | `data-extraction/parse_1_sumadijska.py` | `1-sumadijska-soldiers.json` | 1 PDF (Cyrillic) | 320 |
 | 16 | 17. Slavonska | `data-extraction/parse_17_slavonska.py` | `17-slavonska-soldiers.json` | 2 PDFs (fallen, survivors) | 3,613 |
 | 17 | 18. Slavonska | `data-extraction/parse_18_slavonska.py` (table reader) | `18-slavonska-soldiers.json` | 1 PDF | 1,548 |
 | 18 | 2. Vojvođanska | `data-extraction/parse_2_vojvodjanska.py` | `2-vojvodjanska-soldiers.json` | 1 PDF (Cyrillic) | 2,143 |
-| 19 | 25. Srpska divizija | `data-extraction/parse_25_srpska_divizija.py` | `25-srpska-divizija-soldiers.json` | 1 PDF (Cyrillic) | 881 |
+| 19 | 25. Srpska divizija | `data-extraction/parse_25_srpska_divizija.py` | `25-srpska-divizija-soldiers.json` | 1 PDF (Cyrillic) | 882 |
 
 Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-19 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
@@ -107,8 +107,11 @@ PDF text extraction has recurring patterns that break name-boundary detection:
 - **Two-column layouts**: Ljubljanska PDF has left/right columns. Use `extract_words()` with x-coordinate splitting at x=280, NOT `extract_text()` which merges columns.
 - **Leading punctuation**: Lines starting with `- `, `^ `, `^-` before names (Treća Proleterska). Strip with `clean_line()`.
 - **OCR-corrupted diacritics**: `DROBNJAKOVie` instead of `DROBNJAKOVIĆ`. Use 70% uppercase threshold heuristic.
-- **Duplicated scan pages**: `prva-licka-proleterska.pdf` pages 913-914 repeat 911-912, `prva-proleterska-1.pdf` pages 176-177 repeat 174-175, and `13-proleterska-spisak.pdf` page 105 is a shifted rescan of page 103 (a whole-page hash misses it; compare entry lines); records read from the copies were deleted in corrections. Check new PDFs for repeated pages before parsing.
-- **Glued entries**: a missed entry start leaves the next soldier inside the previous bio ("... na planini Tari. DONOVIĆ (ili DONOVSKI) PANTA Pane, komandir ..."); two-column pages can also mix the columns. Fix with an `edit` that trims the bio plus an `add`.
+- **Lowercase l for capital I**: `ZlVKOVlC`, `LJUBlClC` (mostly 4. Splitska and 17. Slavonska). An `l` between consonants or before a final `-c` is an `I`; restore lost carons only from spellings the corpus agrees on. Slovenian surnames like Brulc and Drolc are real.
+- **Duplicated scan pages**: `prva-licka-proleterska.pdf` pages 913-914 repeat 911-912, `prva-proleterska-1.pdf` pages 176-177 repeat 174-175, `13-proleterska-spisak.pdf` page 105 is a shifted rescan of page 103 (a whole-page hash misses it; compare entry lines), and the Prva proleterska volumes overlap by a page (`-2.pdf` page 1 = `-1.pdf` page 309, `-3.pdf` page 1 = `-2.pdf` page 355); records read from the copies were deleted in corrections. Some books also print an entry twice on purpose or by mistake (13. Proleterska, Prva lička, Prva proleterska); those are kept as printed. Check new PDFs for repeated pages before parsing.
+- **Glued entries**: a missed entry start leaves the next soldier inside the previous bio ("... na planini Tari. DONOVIĆ (ili DONOVSKI) PANTA Pane, komandir ..."); two-column pages can also mix the columns. In Prva lička a bracket after the surname ("BALAĆ (udana BASTA) Danina Milica") hid ~60 entry starts this way. Fix with an `edit` that trims the bio plus an `add`. Before adding a "missing" soldier, check that the parser didn't keep them under a garbled name — several earlier adds duplicated such records.
+- **Missing text-layer lines**: the 13. Proleterska text layer drops some printed lines entirely (e.g. VUJIČIĆ Rade RADE, DABIĆ Vase ŽIVKO); check the page image (`crop` the page) before concluding an entry doesn't exist.
+- **4. Splitska name format**: `N. SURNAME (FATHER) FIRST (NICKNAME), r. ...` — the first parenthesis is the father (genitive), a parenthesis after the given name is a nickname (`zvani X; ...`).
 
 ## Project Structure
 

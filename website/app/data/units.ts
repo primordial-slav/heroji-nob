@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941. godine',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 14061,
+    soldierCount: 14060,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf']
   },
@@ -66,7 +66,7 @@ export const units: Unit[] = [
     nameEn: '13th Proletarian Assault Brigade "Rade Končar"',
     description: 'Formirana 7. novembra 1942. godine. Spisak palih i preživjelih boraca.',
     image: '/images/13-proleterska-brigada.jpg',
-    soldierCount: 8260,
+    soldierCount: 8261,
     dataFile: '/13-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/13-proleterska-spisak.pdf']
   },
