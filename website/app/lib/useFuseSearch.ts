@@ -2,20 +2,20 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Fuse, { IFuseOptions, FuseResult } from 'fuse.js'
-import { removeDiacritics } from './diacritics'
+import { normalizeForSearch } from './diacritics'
 import type { Soldier } from './types'
 
-// Custom getFn that normalizes diacritics during indexing
+// Custom getFn that normalizes diacritics (and dj → d) during indexing
 function normalizingGetFn(
   obj: Record<string, unknown>,
   path: string | string[]
 ): string | string[] {
   const value = Fuse.config.getFn(obj, path)
   if (Array.isArray(value)) {
-    return value.map((v) => removeDiacritics(String(v)))
+    return value.map((v) => normalizeForSearch(String(v)))
   }
   if (typeof value === 'string') {
-    return removeDiacritics(value)
+    return normalizeForSearch(value)
   }
   return value != null ? String(value) : ''
 }
@@ -26,7 +26,7 @@ function nameVariants(soldier: Soldier): string[] {
   const last = soldier.last_name?.trim()
   const first = soldier.first_name?.trim()
   if (!last || !first) return []
-  return [`${last} ${first}`, `${first} ${last}`].map(removeDiacritics)
+  return [`${last} ${first}`, `${first} ${last}`].map(normalizeForSearch)
 }
 
 const FUSE_OPTIONS: IFuseOptions<Soldier> = {
@@ -97,7 +97,7 @@ export function useFuseSearch(
       return
     }
 
-    const normalizedQuery = removeDiacritics(debouncedTerm.trim())
+    const normalizedQuery = normalizeForSearch(debouncedTerm.trim())
     const fuseResults: FuseResult<Soldier>[] =
       fuseRef.current.search(normalizedQuery)
     setResults(fuseResults.map((r) => r.item))
