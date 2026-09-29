@@ -521,6 +521,8 @@ def run_parser(
     line_filter: Callable[[dict], bool] | None = None,
     post_fn: Callable[[list[dict]], list[dict]] | None = None,
     prepare_fn: Callable[[list[dict]], None] | None = None,
+    id_start: int = 1,
+    keep_other_sources: bool = False,
 ) -> list[dict]:
     """
     Common runner. Extract → group → parse → assign IDs → save.
@@ -530,6 +532,8 @@ def run_parser(
     line_filter: return False to drop a line ({text, x, y, page, file}) before
     grouping — for footnotes, running headers, back matter.
     prepare_fn: sees each source's lines before line_filter (e.g. to measure page margins).
+    id_start, keep_other_sources: add another book to a unit whose file already holds records from other
+    PDFs — this run's records get IDs from id_start and replace only the records read from this run's PDFs.
 
     Returns list of soldier dicts (also written to output_path).
     """
@@ -583,7 +587,7 @@ def run_parser(
     if post_fn:
         soldiers = post_fn(soldiers)
     soldiers.sort(key=lambda s: (s['last_name'].lower(), s['first_name'].lower()))
-    soldiers = assign_ids_to_soldiers(soldiers, brigade_code)
+    soldiers = assign_ids_to_soldiers(soldiers, brigade_code, id_start)
 
     with_birth = sum(1 for s in soldiers if s['birth_year'])
     with_father = sum(1 for s in soldiers if s['fathers_name'])
@@ -593,9 +597,19 @@ def run_parser(
         for s in soldiers[:3] + soldiers[-2:]:
             print(f"    {s['soldier_id']} — {s['full_name']}  ({s['additional_info'][:60]})")
 
+    out = soldiers
+    if keep_other_sources and Path(output_path).exists():
+        mine = {Path(src['pdf_path']).name for src in sources}
+        with open(output_path, encoding='utf-8') as f:
+            kept = [s for s in json.load(f) if s.get('pdf_file') not in mine]
+        clash = {s['soldier_id'] for s in kept} & {s['soldier_id'] for s in soldiers}
+        assert not clash, f"IDs from id_start={id_start} are already used: {sorted(clash)[:5]}"
+        out = kept + soldiers
+        print(f"  kept {len(kept)} records from other sources")
+
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(soldiers, f, ensure_ascii=False, indent=2)
+        json.dump(out, f, ensure_ascii=False, indent=2)
     print(f"  → {output_path}")
 
     return soldiers

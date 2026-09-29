@@ -44,11 +44,11 @@ export const units: Unit[] = [
     id: 'druga-licka-brigada',
     name: 'Druga lička proleterska brigada',
     nameEn: '2nd Lika Proletarian Brigade',
-    description: 'Formirana 1942. godine. Spisak poginulih, umrlih i nestalih boraca.',
+    description: 'Formirana 1942. godine. Spisak poginulih, umrlih i nestalih boraca i spisak preživjelih boraca i starješina.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 1487,
+    soldierCount: 6036,
     dataFile: '/druga-licka-soldiers.json',
-    pdfFiles: ['/pdfs/druga-licka-spisak.pdf']
+    pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf']
   },
   {
     id: 'treca-proleterska-brigada',

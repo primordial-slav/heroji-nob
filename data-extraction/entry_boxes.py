@@ -68,6 +68,7 @@ TWO_COLUMN = {
     '17-slavonska-poginuli.pdf',
     '17-slavonska-prezivjeli.pdf',
     '3-krajiska-proleterska.pdf',
+    'druga-licka-sjecanja-prezivjeli.pdf',
     'ljubljanska-brigada.pdf',
     'prva-vojvodjanska.pdf',
 }
