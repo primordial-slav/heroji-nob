@@ -146,6 +146,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
               value={reportText}
               onChange={(e) => setReportText(e.target.value)}
               rows={3}
+              maxLength={2000}
             />
             <div className="report-actions">
               <button
