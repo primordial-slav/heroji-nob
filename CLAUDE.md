@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~80,900 WWII Yugoslav partisan soldiers across 22 units (21 brigades and one division). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~82,900 WWII Yugoslav partisan soldiers across 23 units (22 brigades and one division). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -33,8 +33,9 @@ Historical archive website for searching ~80,900 WWII Yugoslav partisan soldiers
 | 20 | 4. Banijska | `data-extraction/parse_4_banijska.py` | `4-banijska-soldiers.json` | 1 PDF | 2,147 |
 | 21 | 4. Srpska | `data-extraction/parse_4_srpska.py` | `4-srpska-soldiers.json` | 1 PDF (Cyrillic) | 6,322 |
 | 22 | 7. Vojvođanska | `data-extraction/parse_7_vojvodjanska.py` | `7-vojvodjanska-soldiers.json` | 1 PDF (Cyrillic) | 3,577 |
+| 23 | 19. Birčanska | `data-extraction/parse_19_bircanska.py` | `19-bircanska-soldiers.json` | 1 PDF (Cyrillic, two columns) | 1,982 |
 
-Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-22 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
+Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-23 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
 A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
@@ -105,7 +106,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 
 `pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`.
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0022), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0023), last 6 = sequence.
 
 ## Known OCR Issues
 

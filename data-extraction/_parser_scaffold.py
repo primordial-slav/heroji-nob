@@ -475,6 +475,50 @@ def repair_cyrillic_ocr(soldiers: list[dict], ik_is_ic: bool = False) -> list[di
     return soldiers
 
 
+MUSLIM_NAMES = {'Vahid', 'Ibro', 'Ibra', 'Ibrahim', 'Nezir', 'Musa', 'Mehmed', 'Sakib', 'Šaban', 'Husa', 'Alija',
+                'Ilijaš', 'Čelim', 'Rifat', 'Sulejman', 'Kadro', 'Mujo', 'Suljo', 'Hasan', 'Huso', 'Salih', 'Osman',
+                'Ahmet', 'Adem', 'Omer', 'Mustafa', 'Smajo', 'Avdo', 'Halil', 'Ismet', 'Hamdija', 'Muharem', 'Ramiz',
+                'Safet', 'Asim', 'Hamid', 'Idriz', 'Jusuf', 'Meho', 'Rasim', 'Redžep', 'Selim', 'Sejdo', 'Emin'}
+# books whose scans never read a capital Ћ: their names are no evidence for the spelling of others
+CAPITAL_C_MISREAD = ('4-krajiska-soldiers.json', '7-vojvodjanska-soldiers.json', '19-bircanska-soldiers.json')
+
+
+def repair_capital_c(soldiers: list[dict]) -> list[dict]:
+    """For Cyrillic scans that never read a capital Ћ as Ћ (7. Vojvođanska: ИН ×1653, ИБ, ИЕ, ИК, ИЋ ×0): at the
+    end of a surname it comes out as Н, Б, Е or К, and at the start as Н, while real "-in" surnames are ~4% of
+    the Vojvodina lists. repair_cyrillic_ocr fixes "-ib"/"-ie" and "-in" where "-ić" is far more common; here
+    a surname that no other unit knows is repaired when the repaired spelling is known: "-in" → "-ić" (Stojšin
+    → Stojšić, Avdin → Avdić) and a leading N → Ć (Nirić → Ćirić). Known "-in" surnames (Vujin, Lukin) and
+    demonyms (Bugarin) stay, except for Bosniak soldiers (Alibašin Ibro → Alibašić). Given names: Б read for
+    Ђ (Bura → Đura) when the Đ spelling is far more common."""
+    ref, first = Counter(), Counter()
+    for f in Path('website/public').glob('*soldiers.json'):
+        if f.name not in CAPITAL_C_MISREAD:
+            for s in json.loads(f.read_text(encoding='utf-8')):
+                ref[s['last_name']] += 1
+                first[s['first_name']] += 1
+    n = 0
+    for s in soldiers:
+        parts = s['last_name'].split('-')
+        for i, p in enumerate(parts):
+            q = p
+            if q.startswith('N') and not ref[q] and ref['Ć' + q[1:]]:
+                q = 'Ć' + q[1:]
+            if q.endswith('in') and not q.endswith('anin') and not ref[q] and \
+                    (ref[q[:-1] + 'ć'] >= 2 or s['first_name'] in MUSLIM_NAMES):
+                q = q[:-1] + 'ć'
+            n += q != p
+            parts[i] = q
+        s['last_name'] = '-'.join(parts)
+        g = s['first_name']
+        if g.startswith('B') and first['Đ' + g[1:]] >= 10 * max(first[g], 1):
+            s['first_name'] = 'Đ' + g[1:]
+            n += 1
+        s['full_name'] = ' '.join(x for x in (s['last_name'], s.get('middle_name') or '', s['first_name']) if x)
+    print(f'  capital Ћ/Ђ restored in {n} names')
+    return soldiers
+
+
 def repair_lj_ocr(soldiers: list[dict]) -> list[dict]:
     """Some scans read "LJ" as "U" (KRAGUU, UUBO, VUEVIĆ). A name that is unknown as printed but known
     with one "u" read back as "lj" takes the known spelling (Kragulj, Ljubo, Vljević)."""

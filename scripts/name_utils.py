@@ -223,6 +223,16 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    23: {
+        'name': '19. Birčanska',
+        'json_file': '19-bircanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АВДИЋ СМАЈЕ ЈУСУФ, рођен 1911. године у Тузли, Муслиман, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
 }
 
 

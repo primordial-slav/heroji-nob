@@ -242,5 +242,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/7-vojvodjanska.jpg',
     brigadeName: '7. vojvođanska udarna brigada',
     description: 'Spisak boraca 7. vojvođanske udarne brigade (preživeli, poginuli i umrli posle rata)'
+  },
+  {
+    id: '19-bircanska',
+    title: 'Devetnaesta birčanska NOU brigada',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/19-bircanska.pdf',
+    thumbnail: '/images/pdf-thumbs/19-bircanska.jpg',
+    brigadeName: '19. birčanska brigada',
+    description: 'Spisak boraca 19. birčanske brigade'
   }
 ]

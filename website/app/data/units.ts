@@ -229,6 +229,16 @@ export const units: Unit[] = [
     soldierCount: 3577,
     dataFile: '/7-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/7-vojvodjanska.pdf']
+  },
+  {
+    id: '19-bircanska-brigada',
+    name: '19. birčanska brigada',
+    nameEn: '19th Birač Brigade',
+    description: 'Spisak boraca iz monografije „Devetnaesta birčanska NOU brigada“.',
+    image: '/images/pdf-thumbs/19-bircanska.jpg',
+    soldierCount: 1982,
+    dataFile: '/19-bircanska-soldiers.json',
+    pdfFiles: ['/pdfs/19-bircanska.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -9,7 +9,8 @@ pp. 150-154 the book's table of contents and imprint. No fathers' names:
     АБАДОВИЋ АНТУН, 1908, Валпово, 11.12.1944, Белишће, пог., борац 7. ВУБ.
     АЛЕКСАНДРОВИЧ С. ВИКТОР, 1907, Кимзи, СССР, борац 4. (руског) батаљона, 2.07.1944.
 Continuation lines are indented ~17pt, so entries start at the left margin (_margin_entries).
-The OCR reads a capital Ћ as Н/Б/Е and Ђ as Б (АБАДОВИН, ШИЛИБ БОКА = Šilić Đoka): repair_cyrillic_ocr.
+The OCR never reads a capital Ћ (Н/Б/Е/К) and reads Ђ as Б (АБАДОВИН, ШИЛИБ БОКА = Šilić Đoka):
+repair_cyrillic_ocr, repair_capital_c.
 """
 import glob
 import json
@@ -17,7 +18,7 @@ import re
 from collections import Counter
 
 from _margin_entries import MarginEntries, fix_cyrillic_ocr_line, lone_names_to_given, split_leading_aliases
-from _parser_scaffold import repair_cyrillic_ocr, repair_lj_ocr, restore_diacritics, run_parser
+from _parser_scaffold import repair_capital_c, repair_cyrillic_ocr, repair_lj_ocr, restore_diacritics, run_parser
 
 P1_FOOTNOTE_Y = 275          # p. 1: "* Jedan od najtežih i najodgovornijih zadataka ..." down to the page end
 me = MarginEntries()
@@ -41,47 +42,6 @@ def name_counts():
             first[s['first_name']] += 1
             last[s['last_name']] += 1
     return first, last
-
-
-MUSLIM_NAMES = {'Vahid', 'Ibro', 'Ibra', 'Ibrahim', 'Nezir', 'Musa', 'Mehmed', 'Sakib', 'Šaban', 'Husa', 'Alija',
-                'Ilijaš', 'Čelim', 'Rifat', 'Sulejman', 'Kadro', 'Mujo', 'Suljo', 'Hasan', 'Huso', 'Salih', 'Osman',
-                'Ahmet', 'Adem', 'Omer', 'Mustafa', 'Smajo', 'Avdo', 'Halil', 'Ismet', 'Hamdija', 'Muharem', 'Ramiz',
-                'Safet', 'Asim', 'Hamid', 'Idriz', 'Jusuf', 'Meho', 'Rasim', 'Redžep', 'Selim', 'Sejdo', 'Emin'}
-
-
-def final_c(soldiers: list[dict]) -> list[dict]:
-    """This scan never reads a capital Ћ as Ћ: at the end of a surname it comes out as Н (×1653), Б, Е or К,
-    and at the start as Н, while real "-in" surnames are ~4% of the other Vojvodina lists. So a surname
-    that no other unit knows is repaired when the repaired spelling is known: "-in" → "-ić" (Stojšin →
-    Stojšić, Avdin → Avdić) and a leading N → Ć (Nirić → Ćirić, Nurčin → Ćurčin). Known "-in" surnames
-    (Vujin, Lukin) and demonyms (Bugarin) stay, except for Bosniak soldiers (Alibašin Ibro → Alibašić).
-    Given names: Б read for Ђ (Bura → Đura) when the Đ spelling is far more common."""
-    ref, first = Counter(), Counter()
-    for f in glob.glob('website/public/*soldiers.json'):
-        if not f.endswith(('7-vojvodjanska-soldiers.json', '4-krajiska-soldiers.json')):     # same misread there
-            for s in json.load(open(f, encoding='utf-8')):
-                ref[s['last_name']] += 1
-                first[s['first_name']] += 1
-    n = 0
-    for s in soldiers:
-        parts = s['last_name'].split('-')
-        for i, p in enumerate(parts):
-            q = p
-            if q.startswith('N') and not ref[q] and ref['Ć' + q[1:]]:
-                q = 'Ć' + q[1:]
-            if q.endswith('in') and not q.endswith('anin') and not ref[q] and \
-                    (ref[q[:-1] + 'ć'] >= 2 or s['first_name'] in MUSLIM_NAMES):
-                q = q[:-1] + 'ć'
-            n += q != p
-            parts[i] = q
-        s['last_name'] = '-'.join(parts)
-        g = s['first_name']
-        if g.startswith('B') and first['Đ' + g[1:]] >= 10 * max(first[g], 1):
-            s['first_name'] = 'Đ' + g[1:]
-            n += 1
-        s['full_name'] = ' '.join(x for x in (s['last_name'], s.get('middle_name') or '', s['first_name']) if x)
-    print(f'  capital Ћ/Ђ restored in {n} names')
-    return soldiers
 
 
 SURNAME_END = re.compile(r'(?:ić|in|ov|ev|ski|ački|ac|ak)$')
@@ -143,7 +103,7 @@ def tidy_names(soldiers: list[dict], first_counts: Counter, last_counts: Counter
 
 
 def post(soldiers: list[dict]) -> list[dict]:
-    soldiers = final_c(repair_lj_ocr(restore_diacritics(repair_cyrillic_ocr(soldiers))))
+    soldiers = repair_capital_c(repair_lj_ocr(restore_diacritics(repair_cyrillic_ocr(soldiers))))
     first, last = name_counts()
     return tidy_names(lone_names_to_given(split_leading_aliases(soldiers), first, last), first, last)
 

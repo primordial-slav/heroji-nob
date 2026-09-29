@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–22 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–23 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -19,6 +19,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 20 | 4. Banijska | 2,147 | soldiers (one list) | Entries start at the page's left margin; one-name entries ("ANDREJ, rodom iz SSSR", Soviet volunteers) and mixed-case given names ("GRUBOR Gojko") get their own name parser; OCR-split surnames rejoined ("CA VIĆ" → Čavić) |
 | 21 | 4. Srpska | 6,322 | soldiers (one list), then unidentified soldiers (N. N.) and foreign volunteers | Cyrillic; margin entry starts (page margins measured before reading, so a continuation line at the top of a page isn't an entry); the scan's own misreads fixed in given, father and surnames (и read as н/п/нј, л as т/ч/јј, т as г: Mnjlana → Milana, Sganković → Stanković); "(и X)" is another surname |
 | 22 | 7. Vojvođanska | 3,577 | soldiers (one list: survivors, fallen, died after the war; 4. (Russian) battalion included) | Cyrillic; no fathers except a few Novi Sad entries ("SIMIĆ KOSTE ALEKSANDAR"). The scan never reads a capital Ћ: final Ћ comes out as Н/Б/Е/К and initial Ћ as Н, so a surname in "-in" unknown elsewhere becomes "-ić" when that spelling is known (real Vojvodina "-in" names stay); a given name before an uncommon word is name + nickname ("JEREMIĆ EVICA KANA") |
+| 23 | 19. Birčanska | 1,982 | soldiers (one list) | Cyrillic, two columns (auto gutter). Capital Ћ never read (shared `repair_capital_c`, plus "-in" → "-ić" for this Bosnian brigade unless the soldier is from Vojvodina); lowercase н read as и in the bios, repaired against the other books' vocabulary ("godiie" → "godine"); Љ as "Л>"; a name broken across lines or a surname alone on its line is joined to the entry; NAME-NICKNAME split by known given names |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 
