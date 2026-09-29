@@ -123,7 +123,7 @@ website/                          # Next.js 14 frontend
       Navigation.tsx              # Top nav bar
     lib/
       useFuseSearch.ts            # Fuzzy search hook (diacritics-aware)
-      diacritics.ts               # č→c, š→s normalization for search
+      diacritics.ts               # č→c, š→s, đ/dj→d normalization for search
       types.ts                    # Soldier interface
     data/
       units.ts                    # Brigade definitions (counts, files, names)
