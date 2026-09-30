@@ -287,5 +287,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/14-srpska.jpg',
     brigadeName: '14. srpska udarna brigada',
     description: 'Spisak poginulih boraca i starešina odreda i 14. srpske brigade'
+  },
+  {
+    id: '7-crnogorska-omladinska',
+    title: 'Sedma crnogorska omladinska brigada „Budo Tomović“ — spisak poginulih',
+    author: 'Mitar Đurišić',
+    pdfPath: '/pdfs/7-crnogorska-omladinska.pdf',
+    thumbnail: '/images/pdf-thumbs/7-crnogorska.jpg',
+    brigadeName: '7. crnogorska omladinska brigada',
+    description: 'Spisak poginulih boraca 7. crnogorske omladinske NOU brigade'
   }
 ]

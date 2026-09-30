@@ -279,6 +279,16 @@ export const units: Unit[] = [
     soldierCount: 1006,
     dataFile: '/14-srpska-soldiers.json',
     pdfFiles: ['/pdfs/14-srpska.pdf']
+  },
+  {
+    id: '7-crnogorska-brigada',
+    name: '7. crnogorska omladinska brigada „Budo Tomović“',
+    nameEn: '7th Montenegrin Youth Brigade',
+    description: 'Spisak poginulih boraca iz monografije Mitra Đurišića „Sedma crnogorska omladinska brigada »Budo Tomović«“.',
+    image: '/images/pdf-thumbs/7-crnogorska.jpg',
+    soldierCount: 439,
+    dataFile: '/7-crnogorska-soldiers.json',
+    pdfFiles: ['/pdfs/7-crnogorska-omladinska.pdf']
   }
   // Add more units here as you get more data
 ]

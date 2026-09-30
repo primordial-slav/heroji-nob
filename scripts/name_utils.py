@@ -271,6 +271,15 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    28: {
+        'name': '7. Crnogorska omladinska',
+        'json_file': '7-crnogorska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a table: "AVDIĆ / Hajradina / ĆAZIM | 1926, Biševo, Rožaj | 4. bataljon | ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 
