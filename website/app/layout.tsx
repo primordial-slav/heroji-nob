@@ -48,11 +48,6 @@ export default function RootLayout({
           <main className="container">
             {children}
           </main>
-          <footer className="footer">
-            <div className="container">
-              <p>U spomen na sve heroje koji su se borili za slobodu</p>
-            </div>
-          </footer>
         </ThemeProvider>
       </body>
     </html>
