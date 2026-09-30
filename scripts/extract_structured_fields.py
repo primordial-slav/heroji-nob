@@ -267,6 +267,7 @@ class Extractor:
         rest = text[m.end():]
         # the death clause runs to the end of its sentence, or to "sahranjen" / a new clause
         clause = sentences(rest)[0] if rest.strip() else ''
+        clause = clause.split(';')[0]                                        # "poginuo u NOB; zvani ...": a note follows
         clause = re.split(r'[,;]?\s*(?:sahranjen|sahranjena|pokopan|pokopana|mesto sahrane|mjesto sahrane|a sahranjen|ostao na|nije sahranjen)', clause)[0]
         dm = DATE_RE.search(clause)
         if dm and not 1941 <= int(re.search(YEAR, dm.group(0)).group(0)) <= 2000:
@@ -277,7 +278,7 @@ class Extractor:
             out['death_date'] = date
             clause = clause[:dm.start()] + ' ' + clause[dm.end():]
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
-        clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u ratu|u NOR-u)\b\s*', '', clause)
+        clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u ratu|u NO[BR](?:-[iu])?)(?![\w-])\s*', '', clause)
         clause = re.sub(r'(?:,\s*|\s+)(?:i tu|gde|gdje|protiv|dok|pošto|jer|kada|kad)\b.*$', '', clause)   # "kod Vrbovca i tu", "..., gdje je i"
         clause = re.sub(r'\s*\((?:nema|drugih|nedostaju|ostali)[^)]*\)?', '', clause)
         clause = re.sub(rf'^[{U}]\.,\s*', '', clause.strip())                # "S., Soljani" (OCR)
