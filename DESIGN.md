@@ -140,7 +140,7 @@ A restrained palette: warm neutrals do almost all the work, one Partisan red own
 Both are self-hosted through next/font with Latin, Latin Extended and Cyrillic subsets, so č ć đ š ž and Cyrillic names render in the real faces.
 
 ### Hierarchy
-- **Page title** (400, 1.875rem, PT Serif): unit page and Izvori titles; the home band's "Pronađite borca po imenu" uses the heading size.
+- **Page title** (400, 1.875rem, PT Serif): unit page and Izvori titles; the home band's heading ("Pretraga boraca") uses the heading size.
 - **Heading** (400, 1.5rem, PT Serif): section heads such as "Jedinice", the record name in the popup (1.25rem there).
 - **Name** (700 surname + 400 given names, 1.0625rem, PT Serif): result rows and unit card names. The surname is always bold and first.
 - **Body** (400, 0.9375rem / 15px, Golos Text, line-height 1.55): bios, descriptions, UI text.
@@ -155,7 +155,7 @@ Both are self-hosted through next/font with Latin, Latin Extended and Cyrillic s
 
 One centred column (max 72rem) with a 24px side gutter (16px on phones). Content that runs full width (the home band photograph, the unit page photograph) aligns its text with the column edge.
 
-- **Home:** red band with the heading, one sentence, the search field (max 34rem) and example searches; under it "Jedinice" as a grid of photo cards, three per row on desktop (min 20rem per card), one per row on phones. When the visitor searches, results replace the cards in place.
+- **Home:** red band with a short heading, the search field (max 34rem) and example searches; under it "Jedinice" as a grid of photo cards, three per row on desktop (min 20rem per card), one per row on phones. When the visitor searches, results replace the cards in place.
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
 - **Record popup:** max 40rem wide; unit photo strip, name, unit, book line, details as a two-column label/value list, then the scanned page ("Strana u knjizi").
