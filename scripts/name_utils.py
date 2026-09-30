@@ -334,6 +334,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    35: {
+        'name': '32. Zagorska divizija',
+        'json_file': '32-divizija-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # names only: "*Adamić Đure Franjo" (a star: fallen; a dash: missing)
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

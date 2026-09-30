@@ -349,6 +349,16 @@ export const units: Unit[] = [
     soldierCount: 1117,
     dataFile: '/21-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/21-slavonska.pdf']
+  },
+  {
+    id: '32-zagorska-divizija',
+    name: '32. zagorska divizija',
+    nameEn: '32nd Zagorje Division',
+    description: 'Iz knjige „32. divizija“: spisak boraca 32. divizije i Zapadne grupe odreda. Samo imena; zvjezdica označava poginule, crtica nestale.',
+    image: '/images/pdf-thumbs/32-divizija.jpg',
+    soldierCount: 10041,
+    dataFile: '/32-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/32-divizija.pdf']
   }
   // Add more units here as you get more data
 ]

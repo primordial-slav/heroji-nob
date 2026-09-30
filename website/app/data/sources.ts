@@ -359,5 +359,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/21-slavonska.jpg',
     brigadeName: '21. slavonska brigada',
     description: 'Spisak poginulih, umrlih i nestalih boraca i starješina Dvadeset prve udarne slavonske brigade'
+  },
+  {
+    id: '32-divizija',
+    title: '32. divizija — spisak boraca',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/32-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/32-divizija.jpg',
+    brigadeName: '32. zagorska divizija',
+    description: 'Spisak boraca 32. divizije i Zapadne grupe odreda (poginuli označeni zvjezdicom, nestali crticom)'
   }
 ]
