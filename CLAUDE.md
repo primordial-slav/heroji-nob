@@ -60,6 +60,10 @@ Corrections run LAST before build so they always win over automated pipeline out
 
 **Entry boxes** (`pdf_x_end`, `pdf_y_end`, and `pdf_x_left` where the box's left edge isn't `pdf_x`) are the box the PDF viewer highlights. `data-extraction/entry_boxes.py` computes them from the PDF text: from the entry start (`pdf_x`/`pdf_y`) down its column until the next known entry, a line that starts a new entry by the book's indentation (hanging, first-line or flush, measured per book and page), a gap, or the column end. `apply_corrections.py` runs it last, for every unit on the site, so boxes always follow the final positions; they are never taken from corrections (don't set `pdf_y_end` there). Run it alone with `python data-extraction/entry_boxes.py [--brigade N] [--apply]`. Page lines are cached in `data-extraction/.cache/` (gitignored); the first run reads ~2,800 pages (~2 min). Two-column books must be listed in `entry_boxes.TWO_COLUMN`; after adding one, delete its cached pages (`data-extraction/.cache/entry_boxes/<pdf>.json`), which were read as one column.
 
+## Unit Photos
+
+A unit's card photo must show a group of that unit's own soldiers, and the photo's description must name the unit. They come from the znaci.org photo gallery; `docs/UNIT_PHOTOS.md` lists each photo's source and description, plus which units have none that qualifies. When adding a unit, add it to `UNITS` in `scripts/find_unit_photos.py` and run `--candidates <key>`. It lists every photo tagged with or captioned for the unit, with contact sheets and the museum caption cards of photos that have no typed description. Then set `photo` and run `--apply <key>`. If the gallery has nothing, the unit's own book on znaci.org often has captioned photos: `--book <key> 00001/267.pdf` lists each photo with the caption printed under it (set `book=` instead of `photo`). Many site photos from before this rule turned out to be other units (`--identify` matches site images against the gallery).
+
 ## Corrections System
 
 For fixing individual soldier records (OCR errors, merged entries, duplicates) without re-running the parser:

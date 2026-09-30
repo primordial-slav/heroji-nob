@@ -175,7 +175,7 @@ export const units: Unit[] = [
     name: '25. srpska udarna divizija',
     nameEn: '25th Serbian Assault Division',
     description: 'Formirana 21. juna 1944. godine kod sela Jošanice u Pustoj reci. Spisak poginulih boraca i rukovodilaca divizije (16, 18. i 19. srpska brigada).',
-    image: '/images/pdf-thumbs/25-srpska-divizija.jpg',
+    image: '/images/25-srpska-divizija.jpg',
     soldierCount: 882,
     dataFile: '/25-srpska-divizija-soldiers.json',
     pdfFiles: ['/pdfs/25-srpska-divizija.pdf']
@@ -185,7 +185,7 @@ export const units: Unit[] = [
     name: '1. šumadijska brigada',
     nameEn: '1st Šumadija Brigade',
     description: 'Formirana 5. oktobra 1943. godine. Spiskovi poginulih boraca i starešina i boraca koji su preživeli rat.',
-    image: '/images/pdf-thumbs/1-sumadijska.jpg',
+    image: '/images/1-sumadijska-brigada.jpg',
     soldierCount: 320,
     dataFile: '/1-sumadijska-soldiers.json',
     pdfFiles: ['/pdfs/1-sumadijska.pdf']
@@ -205,7 +205,7 @@ export const units: Unit[] = [
     name: '4. banijska brigada',
     nameEn: '4th Banija Brigade',
     description: 'Brigada 7. udarne divizije. Spisak boraca iz zbornika sjećanja „Četvrta banijska brigada“.',
-    image: '/images/pdf-thumbs/4-banijska.jpg',
+    image: '/images/4-banijska-brigada.jpg',
     soldierCount: 2147,
     dataFile: '/4-banijska-soldiers.json',
     pdfFiles: ['/pdfs/4-banijska.pdf']
@@ -215,7 +215,7 @@ export const units: Unit[] = [
     name: '4. srpska udarna brigada',
     nameEn: '4th Serbian Assault Brigade',
     description: 'Spisak boraca iz monografije Milorada Gončina „Četvrta srpska udarna brigada“, uz neidentifikovane borce i strane državljane.',
-    image: '/images/pdf-thumbs/4-srpska.jpg',
+    image: '/images/4-srpska-brigada.jpg',
     soldierCount: 6322,
     dataFile: '/4-srpska-soldiers.json',
     pdfFiles: ['/pdfs/4-srpska.pdf']
@@ -225,7 +225,7 @@ export const units: Unit[] = [
     name: '7. vojvođanska udarna brigada',
     nameEn: '7th Vojvodina Assault Brigade',
     description: 'Spisak boraca iz monografije Nikole Božića „Sedma vojvođanska udarna brigada“ (preživeli, poginuli i umrli posle rata), uz borce 4. (ruskog) bataljona.',
-    image: '/images/pdf-thumbs/7-vojvodjanska.jpg',
+    image: '/images/7-vojvodjanska-brigada.jpg',
     soldierCount: 3577,
     dataFile: '/7-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/7-vojvodjanska.pdf']
@@ -235,7 +235,7 @@ export const units: Unit[] = [
     name: '19. birčanska brigada',
     nameEn: '19th Birač Brigade',
     description: 'Spisak boraca iz monografije „Devetnaesta birčanska NOU brigada“.',
-    image: '/images/pdf-thumbs/19-bircanska.jpg',
+    image: '/images/19-bircanska-brigada.jpg',
     soldierCount: 1982,
     dataFile: '/19-bircanska-soldiers.json',
     pdfFiles: ['/pdfs/19-bircanska.pdf']
@@ -245,7 +245,7 @@ export const units: Unit[] = [
     name: '2. krajiška udarna brigada',
     nameEn: '2nd Krajina Assault Brigade',
     description: 'Formirana 2. avgusta 1942. godine. Spisak poginulih i umrlih boraca i rukovodilaca iz monografije Milorada Gončina.',
-    image: '/images/pdf-thumbs/2-krajiska.jpg',
+    image: '/images/2-krajiska-brigada.jpg',
     soldierCount: 1549,
     dataFile: '/2-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/2-krajiska.pdf']
@@ -255,7 +255,7 @@ export const units: Unit[] = [
     name: 'Tuzlanski NOP odred',
     nameEn: 'Tuzla Partisan Detachment',
     description: 'Spisak boraca iz monografije „Tuzlanski narodnooslobodilački partizanski odred“ (1988), mnogi sa fotografijom.',
-    image: '/images/pdf-thumbs/tuzlanski-odred.jpg',
+    image: '/images/tuzlanski-odred.jpg',
     soldierCount: 1110,
     dataFile: '/tuzlanski-odred-soldiers.json',
     pdfFiles: ['/pdfs/tuzlanski-odred.pdf']

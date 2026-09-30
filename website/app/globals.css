@@ -679,6 +679,7 @@ body::before {
 }
 
 .unit-header-img {
+  object-fit: cover;
   border-radius: 4px;
   border: 3px solid var(--border-accent);
   box-shadow: 0 3px 6px var(--shadow-lg);
