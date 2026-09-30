@@ -193,9 +193,10 @@ class Extractor:
             elif re.match(r'^\s*(?:\.\s*)+', t):
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
-        from_place = code == 2 and re.match(rf'^iz\s+[{U}]', t) is not None   # Prva lička: "iz Zavlake, Donji Lapac" (where he came from)
+        # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
+        from_place = code in (2, 31) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
-            t = t[3:]
+            t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
             t = ''                                                            # "1944. kod Tovarnika." is not a birthplace
         locative = from_place or re.match(r'^u\s+(?!s\.?\s|selu)', t) is not None   # "rođen u Donjem Lapcu" (locative)

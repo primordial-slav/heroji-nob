@@ -323,5 +323,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/25-brodska-sastav.jpg',
     brigadeName: '25. brodska brigada',
     description: 'Spisak boraca i rukovodilaca koji su bili u Brodskoj brigadi u oktobru 1943. godine'
+  },
+  {
+    id: '25-srpska-brigada',
+    title: '25. srpska brigada — spiskovi poginulih i ranjenih',
+    author: 'Milorad Madić, Dušan Jončić',
+    pdfPath: '/pdfs/25-srpska-brigada.pdf',
+    thumbnail: '/images/pdf-thumbs/25-srpska-brigada.jpg',
+    brigadeName: '25. srpska brigada',
+    description: 'Spisak poginulih i spisak ranjenih boraca i rukovodilaca 25. srpske brigade'
   }
 ]

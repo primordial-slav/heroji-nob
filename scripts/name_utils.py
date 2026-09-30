@@ -298,6 +298,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    31: {
+        'name': '25. Srpska brigada',
+        'json_file': '25-srpska-brigada-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "KRSTIĆ P. Najdan iz Gostuše, srez nišavski, borac ..."
+        'has_fathers_name': True,     # the father's initial only
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

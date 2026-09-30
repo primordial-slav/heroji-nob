@@ -309,6 +309,16 @@ export const units: Unit[] = [
     soldierCount: 926,
     dataFile: '/25-brodska-soldiers.json',
     pdfFiles: ['/pdfs/25-brodska-poginuli.pdf', '/pdfs/25-brodska-sastav.pdf']
+  },
+  {
+    id: '25-srpska-brigada',
+    name: '25. srpska brigada',
+    nameEn: '25th Serbian Brigade',
+    description: 'Iz monografije Milorada Madića i Dušana Jončića „25. srpska brigada“: spiskovi poginulih i ranjenih boraca i rukovodilaca, sačinjeni prema ratnim spiskovima brigade.',
+    image: '/images/pdf-thumbs/25-srpska-brigada.jpg',
+    soldierCount: 368,
+    dataFile: '/25-srpska-brigada-soldiers.json',
+    pdfFiles: ['/pdfs/25-srpska-brigada.pdf']
   }
   // Add more units here as you get more data
 ]
