@@ -289,6 +289,16 @@ export const units: Unit[] = [
     soldierCount: 439,
     dataFile: '/7-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/7-crnogorska-omladinska.pdf']
+  },
+  {
+    id: '17-majevicka-brigada',
+    name: '17. majevička brigada',
+    nameEn: '17th Majevica Brigade',
+    description: 'Spisak boraca Trećeg majevičkog NOP odreda i 17. majevičke NOU brigade poginulih i umrlih u NOR.',
+    image: '/images/pdf-thumbs/17-majevicka.jpg',
+    soldierCount: 898,
+    dataFile: '/17-majevicka-soldiers.json',
+    pdfFiles: ['/pdfs/17-majevicka.pdf']
   }
   // Add more units here as you get more data
 ]

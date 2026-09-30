@@ -280,6 +280,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    29: {
+        'name': '17. Majevička',
+        'json_file': '17-majevicka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADŽIĆ (RADENKO) NEDELJKO, rođen 1927. godine u selu Drežnik, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'nominative',
+        'original_casing': 'upper_last',
+    },
 }
 
 

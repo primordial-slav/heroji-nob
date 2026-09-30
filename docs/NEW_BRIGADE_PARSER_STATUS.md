@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–28 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–29 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -25,6 +25,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 26 | Užički NOP odred | 1,282 | the fallen, 1941-1945 | Margin entry starts; the text layer mixes Cyrillic, Latin and Latin look-alikes of Cyrillic capitals ("ABPAMOBHR", "Bu 4hrebhr" = Вучићевић), decoded against corpus names; Ћ read as К/В in Latin-read names (`ik_is_ic`); a running head on some pages is dropped; nicknames after the given name go to "zvani" |
 | 27 | 14. Srpska | 1,006 | the fallen (odred and brigade) | Cyrillic; margin entry starts; the birth year opens the bracket after the name ("(1921, Manjinac, ...)"); a nickname after the given name goes to "zvani" |
 | 28 | 7. Crnogorska omladinska | 439 | the fallen (a numbered table) | A five-column table (no. / name / born / unit / killed), one row per soldier, the name cell stacked SURNAME / Father / GIVEN. `read_rows` takes each page's column edges from its header row of column numbers (odd and even pages differ); a row starts at a caps line once the row has its surname and given name, or at a numbered caps line the next line follows at the line pitch (row numbers are sometimes read on the row's last line, and a blank father line leaves the same gap as a new row). Page 4's right column is cut off in the scan |
+| 29 | 17. Majevička | 898 | the fallen and died (with the 3rd Majevica detachment) | "SURNAME (FATHER) GIVEN [zv. NICK], rođen ..." with the father in the nominative (`fathers_name_form: 'nominative'`); an entry's first line is indented; OCR-spaced surnames rejoined ("MI JATO VIĆ"), double surnames with a spaced dash joined ("LUKIĆ — VEJNOVIĆ (VOJO)"), l read for I in caps names; one-name entries (Italian volunteers) become given names |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 

@@ -43,6 +43,7 @@ BRIGADE_CODES = {
     26: 'Užički NOP odred',
     27: '14. Srpska',
     28: '7. Crnogorska omladinska',
+    29: '17. Majevička',
     # Add new brigades here with next available code
 }
 

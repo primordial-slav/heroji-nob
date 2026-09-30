@@ -296,5 +296,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/7-crnogorska.jpg',
     brigadeName: '7. crnogorska omladinska brigada',
     description: 'Spisak poginulih boraca 7. crnogorske omladinske NOU brigade'
+  },
+  {
+    id: '17-majevicka',
+    title: 'Sedamnaesta majevička NOU brigada — spisak poginulih i umrlih',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/17-majevicka.pdf',
+    thumbnail: '/images/pdf-thumbs/17-majevicka.jpg',
+    brigadeName: '17. majevička brigada',
+    description: 'Spisak boraca Trećeg majevičkog NOP odreda i 17. majevičke NOU brigade poginulih i umrlih u NOR'
   }
 ]
