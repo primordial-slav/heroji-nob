@@ -251,5 +251,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/19-bircanska.jpg',
     brigadeName: '19. birčanska brigada',
     description: 'Spisak boraca 19. birčanske brigade'
+  },
+  {
+    id: '2-krajiska',
+    title: 'Druga krajiška narodnooslobodilačka udarna brigada',
+    author: 'Milorad Gončin',
+    pdfPath: '/pdfs/2-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/2-krajiska.jpg',
+    brigadeName: '2. krajiška udarna brigada',
+    description: 'Spisak poginulih i umrlih boraca i rukovodilaca 2. krajiške brigade u toku NOR-a'
   }
 ]

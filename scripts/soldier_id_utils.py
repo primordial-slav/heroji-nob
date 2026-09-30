@@ -38,6 +38,7 @@ BRIGADE_CODES = {
     21: '4. Srpska',
     22: '7. Vojvođanska',
     23: '19. Birčanska',
+    24: '2. Krajiška',
     # Add new brigades here with next available code
 }
 

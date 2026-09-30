@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–23 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–24 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -20,6 +20,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 21 | 4. Srpska | 6,322 | soldiers (one list), then unidentified soldiers (N. N.) and foreign volunteers | Cyrillic; margin entry starts (page margins measured before reading, so a continuation line at the top of a page isn't an entry); the scan's own misreads fixed in given, father and surnames (и read as н/п/нј, л as т/ч/јј, т as г: Mnjlana → Milana, Sganković → Stanković); "(и X)" is another surname |
 | 22 | 7. Vojvođanska | 3,577 | soldiers (one list: survivors, fallen, died after the war; 4. (Russian) battalion included) | Cyrillic; no fathers except a few Novi Sad entries ("SIMIĆ KOSTE ALEKSANDAR"). The scan never reads a capital Ћ: final Ћ comes out as Н/Б/Е/К and initial Ћ as Н, so a surname in "-in" unknown elsewhere becomes "-ić" when that spelling is known (real Vojvodina "-in" names stay); a given name before an uncommon word is name + nickname ("JEREMIĆ EVICA KANA") |
 | 23 | 19. Birčanska | 1,982 | soldiers (one list) | Cyrillic, two columns (auto gutter). Capital Ћ never read (shared `repair_capital_c`, plus "-in" → "-ić" for this Bosnian brigade unless the soldier is from Vojvodina); lowercase н read as и in the bios, repaired against the other books' vocabulary ("godiie" → "godine"); Љ as "Л>"; a name broken across lines or a surname alone on its line is joined to the entry; NAME-NICKNAME split by known given names |
+| 24 | 2. Krajiška | 1,549 | fallen and died (the book counts 1,565) | Margin entry starts. Every even page is cropped at the left edge: surnames that lost 1-3 letters are rebuilt from the alphabetical range between the neighbouring (uncropped) pages and known surnames; the book sorts Đ before DŽ. Pages 58-59 are a rescan of 56-57 and are skipped. OCR-spaced names rejoined ("MILO RAD", "KA URIN") |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 

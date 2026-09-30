@@ -239,6 +239,16 @@ export const units: Unit[] = [
     soldierCount: 1982,
     dataFile: '/19-bircanska-soldiers.json',
     pdfFiles: ['/pdfs/19-bircanska.pdf']
+  },
+  {
+    id: '2-krajiska-brigada',
+    name: '2. krajiška udarna brigada',
+    nameEn: '2nd Krajina Assault Brigade',
+    description: 'Formirana 2. avgusta 1942. godine. Spisak poginulih i umrlih boraca i rukovodilaca iz monografije Milorada Gončina.',
+    image: '/images/pdf-thumbs/2-krajiska.jpg',
+    soldierCount: 1549,
+    dataFile: '/2-krajiska-soldiers.json',
+    pdfFiles: ['/pdfs/2-krajiska.pdf']
   }
   // Add more units here as you get more data
 ]

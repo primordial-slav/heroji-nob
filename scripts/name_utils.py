@@ -233,6 +233,15 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    24: {
+        'name': '2. Krajiška',
+        'json_file': '2-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOVIĆ Pere JANKO, rođen 1922., u Volaru, Prijedor, Srbin, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 
