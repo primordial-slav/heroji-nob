@@ -269,6 +269,16 @@ export const units: Unit[] = [
     soldierCount: 1282,
     dataFile: '/uzicki-odred-soldiers.json',
     pdfFiles: ['/pdfs/uzicki-odred.pdf']
+  },
+  {
+    id: '14-srpska-brigada',
+    name: '14. srpska udarna brigada',
+    nameEn: '14th Serbian Assault Brigade',
+    description: 'Spisak poginulih boraca i starešina Niškog NOP odreda i 14. srpske (niške) brigade.',
+    image: '/images/pdf-thumbs/14-srpska.jpg',
+    soldierCount: 1006,
+    dataFile: '/14-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/14-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

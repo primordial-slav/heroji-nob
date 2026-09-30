@@ -278,5 +278,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/uzicki-odred.jpg',
     brigadeName: 'Užički NOP odred',
     description: 'Spisak boraca Užičkog NOP odreda poginulih u narodnooslobodilačkom ratu 1941-1945.'
+  },
+  {
+    id: '14-srpska',
+    title: 'Četrnaesta srpska (niška) NO brigada — spisak poginulih',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/14-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/14-srpska.jpg',
+    brigadeName: '14. srpska udarna brigada',
+    description: 'Spisak poginulih boraca i starešina odreda i 14. srpske brigade'
   }
 ]

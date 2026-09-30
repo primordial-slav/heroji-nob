@@ -261,6 +261,16 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    27: {
+        'name': '14. Srpska',
+        'json_file': '14-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АДАМОВИЋ Петра ВОЈИСЛАВ (рођен 1923. у селу Витовница, ...)"
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
 }
 
 
