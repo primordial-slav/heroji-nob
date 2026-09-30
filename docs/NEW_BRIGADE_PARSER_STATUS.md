@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–25 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–26 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -22,6 +22,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 23 | 19. Birčanska | 1,982 | soldiers (one list) | Cyrillic, two columns (auto gutter). Capital Ћ never read (shared `repair_capital_c`, plus "-in" → "-ić" for this Bosnian brigade unless the soldier is from Vojvodina); lowercase н read as и in the bios, repaired against the other books' vocabulary ("godiie" → "godine"); Љ as "Л>"; a name broken across lines or a surname alone on its line is joined to the entry; NAME-NICKNAME split by known given names |
 | 24 | 2. Krajiška | 1,549 | fallen and died (the book counts 1,565) | Margin entry starts. Every even page is cropped at the left edge: surnames that lost 1-3 letters are rebuilt from the alphabetical range between the neighbouring (uncropped) pages and known surnames; the book sorts Đ before DŽ. Pages 58-59 are a rescan of 56-57 and are skipped. OCR-spaced names rejoined ("MILO RAD", "KA URIN") |
 | 25 | Tuzlanski NOP odred | 1,110 | soldiers (one list; many with a portrait) | Pages are a grid of cells, not columns of text: `read_cells` (an `extract_fn` for run_parser) finds each page's gutter as the widest word-free band and a cell as lines sharing a left edge; beside a portrait the name is stacked and letter-spaced ("M EH MED"). Fathers are possessives (Omerov, Mujin), converted by `convert_fathers_genitive.py` (`fathers_name_form: 'possessive'`); the birth year follows the duty ("borac, 1921. Lukavac") |
+| 26 | Užički NOP odred | 1,282 | the fallen, 1941-1945 | Margin entry starts; the text layer mixes Cyrillic, Latin and Latin look-alikes of Cyrillic capitals ("ABPAMOBHR", "Bu 4hrebhr" = Вучићевић), decoded against corpus names; Ћ read as К/В in Latin-read names (`ik_is_ic`); a running head on some pages is dropped; nicknames after the given name go to "zvani" |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 

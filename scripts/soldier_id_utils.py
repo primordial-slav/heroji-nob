@@ -40,6 +40,7 @@ BRIGADE_CODES = {
     23: '19. Birčanska',
     24: '2. Krajiška',
     25: 'Tuzlanski NOP odred',
+    26: 'Užički NOP odred',
     # Add new brigades here with next available code
 }
 

@@ -269,5 +269,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/tuzlanski-odred.jpg',
     brigadeName: 'Tuzlanski NOP odred',
     description: 'Spisak boraca Tuzlanskog NOP odreda'
+  },
+  {
+    id: 'uzicki-odred',
+    title: 'Užički partizanski odred „Dimitrije Tucović“ — spisak poginulih boraca',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/uzicki-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/uzicki-odred.jpg',
+    brigadeName: 'Užički NOP odred',
+    description: 'Spisak boraca Užičkog NOP odreda poginulih u narodnooslobodilačkom ratu 1941-1945.'
   }
 ]

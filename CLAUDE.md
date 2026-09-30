@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~85,600 WWII Yugoslav partisan soldiers across 25 units (23 brigades, one division and one detachment). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~86,800 WWII Yugoslav partisan soldiers across 26 units (23 brigades, one division and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -36,8 +36,9 @@ Historical archive website for searching ~85,600 WWII Yugoslav partisan soldiers
 | 23 | 19. Birčanska | `data-extraction/parse_19_bircanska.py` | `19-bircanska-soldiers.json` | 1 PDF (Cyrillic, two columns) | 1,982 |
 | 24 | 2. Krajiška | `data-extraction/parse_2_krajiska.py` | `2-krajiska-soldiers.json` | 1 PDF | 1,549 |
 | 25 | Tuzlanski NOP odred | `data-extraction/parse_tuzlanski_odred.py` (cell grid) | `tuzlanski-odred-soldiers.json` | 1 PDF (two columns of cells with portraits) | 1,110 |
+| 26 | Užički NOP odred | `data-extraction/parse_uzicki_odred.py` | `uzicki-odred-soldiers.json` | 1 PDF (Cyrillic, mixed scripts) | 1,282 |
 
-Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-25 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
+Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-26 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
 A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
@@ -108,7 +109,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 
 `pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`.
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0025), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0026), last 6 = sequence.
 
 ## Known OCR Issues
 
@@ -124,6 +125,7 @@ PDF text extraction has recurring patterns that break name-boundary detection:
 - **Duplicated scan pages**: `prva-licka-proleterska.pdf` pages 913-914 repeat 911-912, `2-krajiska.pdf` pages 58-59 rescan 56-57 (skipped by the parser), `prva-proleterska-1.pdf` pages 176-177 repeat 174-175, `13-proleterska-spisak.pdf` page 105 is a shifted rescan of page 103 (a whole-page hash misses it; compare entry lines), and the Prva proleterska volumes overlap by a page (`-2.pdf` page 1 = `-1.pdf` page 309, `-3.pdf` page 1 = `-2.pdf` page 355); records read from the copies were deleted in corrections. Some books also print an entry twice on purpose or by mistake (13. Proleterska, Prva lička, Prva proleterska); those are kept as printed. Check new PDFs for repeated pages before parsing.
 - **Glued entries**: a missed entry start leaves the next soldier inside the previous bio ("... na planini Tari. DONOVIĆ (ili DONOVSKI) PANTA Pane, komandir ..."); two-column pages can also mix the columns. In Prva lička a bracket after the surname ("BALAĆ (udana BASTA) Danina Milica") hid ~60 entry starts this way. Fix with an `edit` that trims the bio plus an `add`. Before adding a "missing" soldier, check that the parser didn't keep them under a garbled name — several earlier adds duplicated such records.
 - **Cropped scans**: `2-krajiska.pdf` cuts the left edge of every even page, so surnames lose their first letter(s); the parser rebuilds them from the alphabetical order and corpus surnames, and leaves a remnant when neither decides (~100 of 760).
+- **Latin look-alikes for Cyrillic**: the `uzicki-odred.pdf` text layer spells some Cyrillic names with the Latin letters they look like ("ABPAMOBHR" = АВРАМОВИЋ, "4" for Ч, "A>" for Љ); `parse_uzicki_odred.decode` reads them back, choosing among ambiguous letters (A = А/Л/Д, H = Н/И) by the names the corpus knows.
 - **Missing text-layer lines**: the 13. Proleterska text layer drops some printed lines entirely (e.g. VUJIČIĆ Rade RADE, DABIĆ Vase ŽIVKO); check the page image (`crop` the page) before concluding an entry doesn't exist.
 - **4. Splitska name format**: `N. SURNAME (FATHER) FIRST (NICKNAME), r. ...` — the first parenthesis is the father (genitive), a parenthesis after the given name is a nickname (`zvani X; ...`).
 

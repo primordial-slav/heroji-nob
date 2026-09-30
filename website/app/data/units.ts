@@ -259,6 +259,16 @@ export const units: Unit[] = [
     soldierCount: 1110,
     dataFile: '/tuzlanski-odred-soldiers.json',
     pdfFiles: ['/pdfs/tuzlanski-odred.pdf']
+  },
+  {
+    id: 'uzicki-odred',
+    name: 'Užički NOP odred „Dimitrije Tucović“',
+    nameEn: 'Užice Partisan Detachment',
+    description: 'Spisak boraca Užičkog partizanskog odreda poginulih u narodnooslobodilačkom ratu 1941-1945.',
+    image: '/images/pdf-thumbs/uzicki-odred.jpg',
+    soldierCount: 1282,
+    dataFile: '/uzicki-odred-soldiers.json',
+    pdfFiles: ['/pdfs/uzicki-odred.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -251,6 +251,16 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'possessive',    # mostly "Omerov", "Mujin"; some genitives ("Bege")
         'original_casing': 'upper_last',
     },
+    26: {
+        'name': 'Užički NOP odred',
+        'json_file': 'uzicki-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АВРАМОВИЋ Рајка СВЕТОЛИК Љубо, борац 3. рачанске чете, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
 }
 
 
