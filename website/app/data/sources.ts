@@ -305,5 +305,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/17-majevicka.jpg',
     brigadeName: '17. majevička brigada',
     description: 'Spisak boraca Trećeg majevičkog NOP odreda i 17. majevičke NOU brigade poginulih i umrlih u NOR'
+  },
+  {
+    id: '25-brodska-poginuli',
+    title: 'Brodska brigada — spisak poginulih boraca',
+    author: 'Nail Redžić',
+    pdfPath: '/pdfs/25-brodska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/25-brodska.jpg',
+    brigadeName: '25. brodska brigada',
+    description: 'Spisak poginulih boraca Brodske brigade 28. divizije'
+  },
+  {
+    id: '25-brodska-sastav',
+    title: 'Brodska brigada — sastav u oktobru 1943.',
+    author: 'Nail Redžić',
+    pdfPath: '/pdfs/25-brodska-sastav.pdf',
+    thumbnail: '/images/pdf-thumbs/25-brodska-sastav.jpg',
+    brigadeName: '25. brodska brigada',
+    description: 'Spisak boraca i rukovodilaca koji su bili u Brodskoj brigadi u oktobru 1943. godine'
   }
 ]

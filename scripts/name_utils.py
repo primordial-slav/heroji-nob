@@ -289,6 +289,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'nominative',
         'original_casing': 'upper_last',
     },
+    30: {
+        'name': '25. Brodska',
+        'json_file': '25-brodska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ACIMOVIĆ DRAGUTIN, rođen 1921, Badovinci, ..." / "BALENOVIĆ MIJO — borac, ..."
+        'has_fathers_name': True,     # a few in the roster: "ŽIVIĆ ANTUNA MIŠO"
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

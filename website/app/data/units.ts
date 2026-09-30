@@ -299,6 +299,16 @@ export const units: Unit[] = [
     soldierCount: 898,
     dataFile: '/17-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/17-majevicka.pdf']
+  },
+  {
+    id: '25-brodska-brigada',
+    name: '25. brodska brigada',
+    nameEn: '25th Brod Brigade',
+    description: 'Iz monografije Naila Redžića „Brodska brigada“: spisak poginulih boraca i spisak boraca i rukovodilaca u brigadi u oktobru 1943.',
+    image: '/images/pdf-thumbs/25-brodska.jpg',
+    soldierCount: 926,
+    dataFile: '/25-brodska-soldiers.json',
+    pdfFiles: ['/pdfs/25-brodska-poginuli.pdf', '/pdfs/25-brodska-sastav.pdf']
   }
   // Add more units here as you get more data
 ]
