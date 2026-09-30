@@ -178,8 +178,9 @@ class Extractor:
         head = t[:m.start()] if m else ''
         if m:
             t = t[m.start():]
-        elif code == 15:
-            t = ''                                                        # 1. šumadijska always says "Rođen ..."
+        elif code in (15, 35):
+            t = ''                                                        # 1. šumadijska always says "Rođen ..."; the
+                                                                          # 32. division's roster has names only
         elif code in (25, 32):
             # the duty, the year of birth, the birthplace: "borac, 1920, Valjak - Orahovica, u NOB od ..." (Tuzlanski
             # odred, 21. tuzlanska); a year after the enlistment or the death is no year of birth

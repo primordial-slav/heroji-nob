@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~104,800 WWII Yugoslav partisan soldiers across 36 units (31 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~105,800 WWII Yugoslav partisan soldiers across 37 units (32 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -47,8 +47,9 @@ Historical archive website for searching ~104,800 WWII Yugoslav partisan soldier
 | 34 | 21. Slavonska | `data-extraction/parse_21_slavonska.py` | `21-slavonska-soldiers.json` | 1 PDF | 1,117 |
 | 35 | 32. Zagorska divizija | `data-extraction/parse_32_divizija.py` (roster) | `32-divizija-soldiers.json` | 1 PDF (names only, four columns) | 10,041 |
 | 36 | 1. Dalmatinska | `data-extraction/parse_1_dalmatinska.py` | `1-dalmatinska-soldiers.json` | web page (znaci.org; no scan) | 2,165 |
+| 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 387-423) | 981 |
 
-Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-36 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
+Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-37 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
 A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
@@ -67,7 +68,7 @@ Corrections run LAST before build so they always win over automated pipeline out
 
 **Structured fields** (`birth_place`, `ethnicity`, `occupation`, `rank`, `unit_detail`, `death_type`, `death_date`, `death_place`) are read from `additional_info` by `scripts/extract_structured_fields.py` (per-book rules; death places are put in the nominative only when that form is a known place). Only empty fields are filled; values set in corrections are never overwritten. `apply_corrections.py` runs it automatically; run the script alone for coverage stats and samples (`--brigade N --sample 20`), or with `--apply` for brigades that had no corrections.
 
-**Entry boxes** (`pdf_x_end`, `pdf_y_end`, and `pdf_x_left` where the box's left edge isn't `pdf_x`) are the box the PDF viewer highlights. `data-extraction/entry_boxes.py` computes them from the PDF text: from the entry start (`pdf_x`/`pdf_y`) down its column until the next known entry, a line that starts a new entry by the book's indentation (hanging, first-line or flush, measured per book and page), a gap, or the column end. `apply_corrections.py` runs it last, for every unit on the site, so boxes always follow the final positions; they are never taken from corrections (don't set `pdf_y_end` there). Run it alone with `python data-extraction/entry_boxes.py [--brigade N] [--apply]`. Page lines are cached in `data-extraction/.cache/` (gitignored); the first run reads ~2,800 pages (~2 min). Two-column books must be listed in `entry_boxes.TWO_COLUMN`; after adding one, delete its cached pages (`data-extraction/.cache/entry_boxes/<pdf>.json`), which were read as one column.
+**Entry boxes** (`pdf_x_end`, `pdf_y_end`, and `pdf_x_left` where the box's left edge isn't `pdf_x`) are the box the PDF viewer highlights. `data-extraction/entry_boxes.py` computes them from the PDF text: from the entry start (`pdf_x`/`pdf_y`) down its column until the next known entry, a line that starts a new entry by the book's indentation (hanging, first-line or flush, measured per book and page), a gap, or the column end. `apply_corrections.py` runs it last, for every unit on the site, so boxes always follow the final positions; they are never taken from corrections (don't set `pdf_y_end` there). Run it alone with `python data-extraction/entry_boxes.py [--brigade N] [--apply]`. Page lines are cached in `data-extraction/.cache/` (gitignored); the first run reads ~2,800 pages (~2 min). Two-column books must be listed in `entry_boxes.TWO_COLUMN`, books with more columns in `MULTI_COLUMN` (the 32. division's four-column roster), and lists that give each soldier one line in `ONE_LINE_ENTRIES` (else a box runs down the column); after adding one, delete its cached pages (`data-extraction/.cache/entry_boxes/<pdf>.json`), which were read as one column.
 
 ## Unit Photos
 
@@ -124,7 +125,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 `pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`.
 A list published only as a web page (1. Dalmatinska) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0036), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0037), last 6 = sequence.
 
 ## Known OCR Issues
 

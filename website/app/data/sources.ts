@@ -377,5 +377,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-dalmatinska.jpg',
     brigadeName: '1. dalmatinska proleterska brigada',
     description: 'Spisak boraca Prve dalmatinske proleterske NOU brigade poginulih u toku narodnooslobodilačkog rata (tekst na znaci.org, bez skenirane knjige)'
+  },
+  {
+    id: '16-slavonska-omladinska',
+    title: '16. slavonska omladinska NOU brigada „Jože Vlahović“ — spiskovi poginulih',
+    author: 'Stevo Pravdić, Nail Redžić',
+    pdfPath: '/pdfs/16-slavonska-omladinska.pdf',
+    thumbnail: '/images/pdf-thumbs/16-slavonska-omladinska.jpg',
+    brigadeName: '16. slavonska omladinska brigada „Jože Vlahović“',
+    description: 'Spisak poginulih boraca i rukovodilaca brigade; spisak poginulih u Pokuplju i na Žumberku (str. 387-423 knjige)'
   }
 ]

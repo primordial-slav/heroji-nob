@@ -352,6 +352,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    37: {
+        'name': '16. Slavonska omladinska',
+        'json_file': '16-slavonska-omladinska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "ABRAMOVIC Pero, rođen 1903. u Rezovcu kod Virovitice, poginuo ..."
+        'has_fathers_name': False,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

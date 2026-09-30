@@ -74,6 +74,14 @@ TWO_COLUMN = {
     'prva-vojvodjanska.pdf',
     'tuzlanski-odred.pdf',
 }
+# Books printed in more columns: {file: columns}; gutter k is looked for around k/columns of the width
+MULTI_COLUMN = {
+    '32-divizija.pdf': 4,           # a roster, names only
+}
+
+
+def page_columns(pdf_file: str) -> int:
+    return 2 if pdf_file in TWO_COLUMN else MULTI_COLUMN.get(pdf_file, 1)
 
 
 def find_gutter(words: list[dict], width: float, lo_frac: float = 0.35, hi_frac: float = 0.65) -> float:
@@ -146,18 +154,23 @@ def group_lines(words: list[dict]) -> list[dict]:
     return out
 
 
-def read_page(page, two_column: bool) -> dict:
-    """{'columns': [[line, ...], ...], 'split': x or None, 'width', 'height'} in viewer coordinates."""
+def read_page(page, columns: int = 1) -> dict:
+    """{'columns': [[line, ...], ...], 'split': x (or [x, ...] for more than two columns) or None,
+    'width', 'height'} in viewer coordinates."""
     from pdf_coords import viewer_words
     words = [w for w in viewer_words(page, keep_blank_chars=False) if w['text'].strip()]
     for w in words:     # pdfplumber versions differ in the last bits; don't let that flip a rounding
         for k in ('x0', 'x1', 'top', 'bottom'):
             w[k] = round(w[k], 2)
     width, height = float(page.width), float(page.height)
-    if two_column and words:
+    if columns == 2 and words:
         split = find_gutter(words, width)
         cols = [[w for w in words if (w['x0'] + w['x1']) / 2 < split],
                 [w for w in words if (w['x0'] + w['x1']) / 2 >= split]]
+    elif columns > 2 and words:
+        split = [find_gutter(words, width, k / columns - 0.1, k / columns + 0.1) for k in range(1, columns)]
+        mid = lambda w: (w['x0'] + w['x1']) / 2
+        cols = [[w for w in words if sum(mid(w) >= g for g in split) == c] for c in range(columns)]
     else:
         split, cols = None, [words]
     return {'columns': [group_lines(c) for c in cols], 'split': split,
@@ -174,7 +187,7 @@ def _read_pages(job) -> dict[str, dict]:
                 out[str(p)] = None
                 continue
             page = pdf.pages[p - 1]
-            out[str(p)] = read_page(page, Path(path).name in TWO_COLUMN)
+            out[str(p)] = read_page(page, page_columns(Path(path).name))
             # pdfplumber keeps every parsed page in memory otherwise (0.9 has no close())
             (getattr(page, 'close', None) or page.flush_cache)()
     return out
@@ -256,6 +269,7 @@ class PageCache:
 # the data), rather than continuing the entry above it.
 ONE_LINE_ENTRIES = {
     '18-slavonska.pdf': range(30, 55),     # survivors
+    '32-divizija.pdf': range(1, 42),       # the roster: one name a line, four columns
 }
 
 
@@ -348,8 +362,11 @@ def entry_lines(col: list[dict], li: int, starts: set, layout: dict, one_line: b
     for lj in range(li + 1, len(col)):
         ln, prev = col[lj], lines[-1]
         step = ln['top'] - prev['top']
-        if step < 0.5 * layout['pitch']:
-            lines.append(ln)          # a piece of the line above (skewed scan)
+        # a piece of the line above (skewed scan); in a list of one-line entries only if it overlaps that line,
+        # since the pitch measured on such a book's few continuation lines can be twice its line spacing
+        piece_step = 0.5 * (prev['bottom'] - prev['top']) if one_line else 0.5 * layout['pitch']
+        if step < piece_step:
+            lines.append(ln)
             continue
         if lj in starts:
             return lines, 'next'

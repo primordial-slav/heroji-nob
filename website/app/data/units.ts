@@ -369,6 +369,16 @@ export const units: Unit[] = [
     soldierCount: 2165,
     dataFile: '/1-dalmatinska-soldiers.json',
     pdfFiles: []
+  },
+  {
+    id: '16-slavonska-omladinska-brigada',
+    name: '16. slavonska omladinska brigada „Jože Vlahović“',
+    nameEn: '16th Slavonian Youth Brigade "Jože Vlahović"',
+    description: 'Iz monografije Steve Pravdića i Naila Redžića: spisak poginulih boraca i rukovodilaca brigade i spisak poginulih u Pokuplju i na Žumberku.',
+    image: '/images/pdf-thumbs/16-slavonska-omladinska.jpg',
+    soldierCount: 981,
+    dataFile: '/16-slavonska-omladinska-soldiers.json',
+    pdfFiles: ['/pdfs/16-slavonska-omladinska.pdf']
   }
   // Add more units here as you get more data
 ]

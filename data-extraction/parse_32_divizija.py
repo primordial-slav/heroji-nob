@@ -13,7 +13,9 @@ read_lines hands run_parser one line per name, each column top to bottom.
 import glob
 import json
 import re
+import sys
 from collections import Counter
+from pathlib import Path
 
 import pdfplumber
 
@@ -25,6 +27,7 @@ MARK = '⁣'
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 STAR, DASH = r'[*’‘\'•"„”]', r'[-–—]'
 _last: Counter = Counter()
+_fathers: Counter = Counter()        # fathers' names (nominative) the corpus knows
 
 
 def _lines(words: list[dict]) -> list[list[dict]]:
@@ -116,7 +119,19 @@ def parse_entry(text: str) -> dict:
             fate = 'poginuo u NOB'
         text = text[m.end():]
     text = text.translate(str.maketrans('àèìòùäÌ}', 'aeiouall', '■')).replace('}', '')   # "Andrò", "MÌaden"
-    notes = re.findall(r'\(([^)]*)\)', text)
+    notes, bracket_father = [], ''
+    for inner in re.findall(r'\(([^)]*)\)', text):
+        inner = inner.strip()
+        if re.fullmatch(rf'[{U}][{L}]+', inner):
+            # "Vucek Josip (Josipa)": the father's name in the genitive; "Blagić Ivo (Pop)": a nickname
+            nominative = max((inner[:-1] + e for e in ('', 'o', 'a', 'e') if inner[:-1] + e != inner),
+                             key=lambda n: _fathers[n]) if inner[-1] in 'ae' else ''     # not "Jovica" itself
+            if nominative and _fathers[nominative] >= 5 and not bracket_father:
+                bracket_father = inner
+            else:
+                notes.append('zvani ' + inner)
+        else:
+            notes.append(inner)                                            # "iz Ludbrega", "braća"
     text = re.sub(r'\s*\([^)]*\)?', '', text)
     nick = re.findall(r'»([^«]*)«?', text)                                 # "Turčić »Ćoso«"
     text = re.sub(r'\s*»[^«]*«?', '', text)
@@ -148,7 +163,7 @@ def parse_entry(text: str) -> dict:
     toks = [t[0].upper() + t[1:] if t[0].islower() and len(t) > 2 else t for t in toks]   # "čuček Marko": a lost capital
     last = toks[0] if toks else ''
     given = toks[-1] if len(toks) > 1 else ''
-    father = ' '.join(toks[1:-1]).rstrip('.') if len(toks) > 2 else ''
+    father = ' '.join(toks[1:-1]).rstrip('.') if len(toks) > 2 else bracket_father
     info = '; '.join(x for x in (fate, *notes) if x)
     return _record(last, given, father, info)
 
@@ -174,19 +189,27 @@ def carons(soldiers: list[dict]) -> list[dict]:
     return soldiers
 
 
+def _earlier_units() -> list[str]:
+    """The corpus: the units on the site before this one (codes below 35). Units added later must not change
+    what this parser reads (its IDs follow the names' order, and corrections refer to the IDs)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'scripts'))
+    from name_utils import BRIGADE_CONFIGS
+    return [f'website/public/{cfg["json_file"]}' for code, cfg in BRIGADE_CONFIGS.items() if code < 35]
+
+
+_first: Counter = Counter()
+
+
 def post(soldiers: list[dict]) -> list[dict]:
-    first = Counter()
-    for f in glob.glob('website/public/*soldiers.json'):
-        if not f.endswith('32-divizija-soldiers.json'):
-            first.update(s['first_name'] for s in json.load(open(f, encoding='utf-8')))
-    return lone_names_to_given(repair_lj_ocr(restore_diacritics(carons(soldiers))), first, _last)
+    return lone_names_to_given(repair_lj_ocr(restore_diacritics(carons(soldiers))), _first, _last)
 
 
 if __name__ == '__main__':
-    for f in glob.glob('website/public/*soldiers.json'):
-        if not f.endswith('32-divizija-soldiers.json'):
-            for s in json.load(open(f, encoding='utf-8')):
-                _last[s['last_name']] += 1
+    for f in _earlier_units():
+        for s in json.load(open(f, encoding='utf-8')):
+            _last[s['last_name']] += 1
+            _first[s['first_name']] += 1
+            _fathers[s.get('fathers_name') or ''] += 1
     run_parser(
         pdf_path='website/public/pdfs/32-divizija.pdf',
         brigade_code=35,
