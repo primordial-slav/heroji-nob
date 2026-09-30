@@ -66,6 +66,30 @@ interface SoldierIndex {
   unitMembers: number[][]
   /** Position of each soldier's unit in the units index, -1 if none */
   unitOf: Int32Array
+  /** wordText of each soldier's full_name and additional_info, filled in as searches need them */
+  nameText: (string | undefined)[]
+  infoText: (string | undefined)[]
+}
+
+const NON_WORD = /[^a-z0-9À-ɏ]+/g
+
+/** " rolic vojislava milomir ": a text's words, normalized, lowercased and space-delimited */
+function wordText(text: string | undefined): string {
+  return ` ${normalizeForSearch(text ?? '').toLowerCase().replace(NON_WORD, ' ').trim()} `
+}
+
+/**
+ * How well one query word matches a soldier: 0 = a whole word of the name,
+ * 1 = the start of a name word, 2 = the start of a word in the bio (so
+ * "Gračac" also finds "u Gračacu"), 3 = inside a name word, 4 = only fuzzily.
+ */
+function wordRank(index: SoldierIndex, idx: number, word: string): number {
+  const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(index.data[idx].full_name))
+  if (name.includes(` ${word} `)) return 0
+  if (name.includes(` ${word}`)) return 1
+  const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(index.data[idx].additional_info))
+  if (info.includes(` ${word}`)) return 2
+  return name.includes(word) ? 3 : 4
 }
 
 export function createSoldierIndex(data: Soldier[]): SoldierIndex {
@@ -88,18 +112,31 @@ export function createSoldierIndex(data: Soldier[]): SoldierIndex {
     units: new Fuse(Array.from(unitPos.keys(), (unit) => ({ unit })), FUSE_OPTIONS),
     unitMembers,
     unitOf,
+    nameText: new Array(data.length),
+    infoText: new Array(data.length),
   }
 }
 
 /**
- * Same results in the same order as a single Fuse over FUSE_OPTIONS. Fuse
- * scores a soldier as the product of one factor per matching key, taken in key
- * order, so the `unit` factor (last key) multiplies the product of the others,
- * and a soldier matching by unit alone scores just that factor. The units index
- * has the same keys and only `unit` filled in, so its score is that factor.
+ * The results of a single Fuse over FUSE_OPTIONS, best word matches first.
+ *
+ * Fuse scores every exact substring match alike and then prefers shorter
+ * fields, so for "rolic" Korolić Stojan came before Rolić Vojislava Milomir,
+ * and for "Gračac" people named Gravac or Gračan came before everyone from
+ * Gračac. Results are therefore sorted by the sum of each query word's
+ * wordRank, and in Fuse's order within the same sum.
+ *
+ * Fuse scores a soldier as the product of one factor per matching key, taken
+ * in key order, so the `unit` factor (last key) multiplies the product of the
+ * others, and a soldier matching by unit alone scores just that factor. The
+ * units index has the same keys and only `unit` filled in, so its score is
+ * that factor.
  */
 export function searchSoldiers(index: SoldierIndex, query: string): Soldier[] {
   const { data, unitMembers, unitOf } = index
+  const words = query.toLowerCase().split(NON_WORD).filter(Boolean)
+  const rankOf = (idx: number) =>
+    words.reduce((sum, word) => sum + wordRank(index, idx, word), 0)
 
   // 0 = no match; a unit factor is always > 0
   const unitFactor = new Float64Array(unitMembers.length)
@@ -107,22 +144,22 @@ export function searchSoldiers(index: SoldierIndex, query: string): Soldier[] {
     unitFactor[hit.refIndex] = hit.score!
   }
 
-  const results: { idx: number; score: number }[] = []
+  const results: { idx: number; rank: number; score: number }[] = []
   const found = new Uint8Array(data.length)
   for (const { refIndex: idx, score } of index.soldiers.search(query)) {
     const factor = unitOf[idx] >= 0 ? unitFactor[unitOf[idx]] : 0
-    results.push({ idx, score: factor ? score! * factor : score! })
+    results.push({ idx, rank: rankOf(idx), score: factor ? score! * factor : score! })
     found[idx] = 1
   }
   unitFactor.forEach((factor, pos) => {
     if (!factor) return
     for (const idx of unitMembers[pos]) {
-      if (!found[idx]) results.push({ idx, score: factor })
+      if (!found[idx]) results.push({ idx, rank: rankOf(idx), score: factor })
     }
   })
 
-  // Fuse's default order: by score, then by position in data
-  results.sort((a, b) => a.score - b.score || a.idx - b.idx)
+  // Within a rank, Fuse's default order: by score, then by position in data
+  results.sort((a, b) => a.rank - b.rank || a.score - b.score || a.idx - b.idx)
   return results.map((r) => data[r.idx])
 }
 
