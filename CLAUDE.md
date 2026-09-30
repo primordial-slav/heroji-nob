@@ -31,15 +31,15 @@ Historical archive website for searching ~102,700 WWII Yugoslav partisan soldier
 | 18 | 2. Vojvođanska | `data-extraction/parse_2_vojvodjanska.py` | `2-vojvodjanska-soldiers.json` | 1 PDF (Cyrillic) | 2,143 |
 | 19 | 25. Srpska divizija | `data-extraction/parse_25_srpska_divizija.py` | `25-srpska-divizija-soldiers.json` | 1 PDF (Cyrillic) | 882 |
 | 20 | 4. Banijska | `data-extraction/parse_4_banijska.py` | `4-banijska-soldiers.json` | 1 PDF | 2,147 |
-| 21 | 4. Srpska | `data-extraction/parse_4_srpska.py` | `4-srpska-soldiers.json` | 1 PDF (Cyrillic) | 6,322 |
+| 21 | 4. Srpska | `data-extraction/parse_4_srpska.py` | `4-srpska-soldiers.json` | 1 PDF (Cyrillic) | 6,323 |
 | 22 | 7. Vojvođanska | `data-extraction/parse_7_vojvodjanska.py` | `7-vojvodjanska-soldiers.json` | 1 PDF (Cyrillic) | 3,577 |
-| 23 | 19. Birčanska | `data-extraction/parse_19_bircanska.py` | `19-bircanska-soldiers.json` | 1 PDF (Cyrillic, two columns) | 1,982 |
+| 23 | 19. Birčanska | `data-extraction/parse_19_bircanska.py` | `19-bircanska-soldiers.json` | 1 PDF (Cyrillic, two columns) | 1,987 |
 | 24 | 2. Krajiška | `data-extraction/parse_2_krajiska.py` | `2-krajiska-soldiers.json` | 1 PDF | 1,549 |
 | 25 | Tuzlanski NOP odred | `data-extraction/parse_tuzlanski_odred.py` (cell grid) | `tuzlanski-odred-soldiers.json` | 1 PDF (two columns of cells with portraits) | 1,110 |
 | 26 | Užički NOP odred | `data-extraction/parse_uzicki_odred.py` | `uzicki-odred-soldiers.json` | 1 PDF (Cyrillic, mixed scripts) | 1,282 |
 | 27 | 14. Srpska | `data-extraction/parse_14_srpska.py` | `14-srpska-soldiers.json` | 1 PDF (Cyrillic) | 1,006 |
 | 28 | 7. Crnogorska omladinska | `data-extraction/parse_7_crnogorska.py` (table) | `7-crnogorska-soldiers.json` | 1 PDF (table, Cyrillic and Latin) | 439 |
-| 29 | 17. Majevička | `data-extraction/parse_17_majevicka.py` | `17-majevicka-soldiers.json` | 1 PDF | 898 |
+| 29 | 17. Majevička | `data-extraction/parse_17_majevicka.py` | `17-majevicka-soldiers.json` | 1 PDF | 900 |
 | 30 | 25. Brodska | `data-extraction/parse_25_brodska.py` | `25-brodska-soldiers.json` | 2 PDFs (fallen; roster Oct 1943) | 926 |
 | 31 | 25. Srpska brigada | `data-extraction/parse_25_srpska_brigada.py` | `25-srpska-brigada-soldiers.json` | 1 PDF (Cyrillic; fallen and wounded) | 368 |
 | 32 | 21. Tuzlanska | `data-extraction/parse_21_tuzlanska.py` | `21-tuzlanska-soldiers.json` | 1 PDF | 211 |

@@ -216,7 +216,7 @@ export const units: Unit[] = [
     nameEn: '4th Serbian Assault Brigade',
     description: 'Spisak boraca iz monografije Milorada Gončina „Četvrta srpska udarna brigada“, uz neidentifikovane borce i strane državljane.',
     image: '/images/4-srpska-brigada.jpg',
-    soldierCount: 6322,
+    soldierCount: 6323,
     dataFile: '/4-srpska-soldiers.json',
     pdfFiles: ['/pdfs/4-srpska.pdf']
   },
@@ -236,7 +236,7 @@ export const units: Unit[] = [
     nameEn: '19th Birač Brigade',
     description: 'Spisak boraca iz monografije „Devetnaesta birčanska NOU brigada“.',
     image: '/images/19-bircanska-brigada.jpg',
-    soldierCount: 1982,
+    soldierCount: 1987,
     dataFile: '/19-bircanska-soldiers.json',
     pdfFiles: ['/pdfs/19-bircanska.pdf']
   },
@@ -296,7 +296,7 @@ export const units: Unit[] = [
     nameEn: '17th Majevica Brigade',
     description: 'Spisak boraca Trećeg majevičkog NOP odreda i 17. majevičke NOU brigade poginulih i umrlih u NOR.',
     image: '/images/pdf-thumbs/17-majevicka.jpg',
-    soldierCount: 898,
+    soldierCount: 900,
     dataFile: '/17-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/17-majevicka.pdf']
   },
