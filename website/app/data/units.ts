@@ -246,7 +246,7 @@ export const units: Unit[] = [
     nameEn: '2nd Krajina Assault Brigade',
     description: 'Formirana 2. avgusta 1942. godine. Spisak poginulih i umrlih boraca i rukovodilaca iz monografije Milorada Gončina.',
     image: '/images/2-krajiska-brigada.jpg',
-    soldierCount: 1549,
+    soldierCount: 1566,
     dataFile: '/2-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/2-krajiska.pdf']
   },
