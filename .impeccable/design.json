@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T10:40:00+02:00",
+  "title": "Design System: Knjiga boraca",
+  "extensions": {
+    "colorMeta": {
+      "partisan-red": { "role": "primary", "displayName": "Partisan Red", "tonalRamp": ["#2a0a0b", "#4a1214", "#6a181b", "#9a2226", "#b8474a", "#d07c7d", "#e6b3b2", "#f6e4e3"] },
+      "red-ink": { "role": "primary", "displayName": "Red Ink" },
+      "ground": { "role": "neutral", "displayName": "Warm Ground", "tonalRamp": ["#121110", "#242220", "#45413c", "#6e6962", "#9c968e", "#c9c4bc", "#e4e1db", "#f0eeea"] },
+      "surface": { "role": "neutral", "displayName": "Card Surface" },
+      "ink": { "role": "neutral", "displayName": "Ink" },
+      "highlight": { "role": "tertiary", "displayName": "Highlighter (scan only)" }
+    },
+    "typographyMeta": {
+      "name": { "displayName": "Name", "purpose": "Soldier and unit names; surname bold, given names regular." },
+      "heading": { "displayName": "Heading", "purpose": "Section heads and the record name; regular weight." },
+      "page-title": { "displayName": "Page title", "purpose": "Unit page and Izvori titles; the largest size on the site." },
+      "body": { "displayName": "Body", "purpose": "Bios, descriptions, UI text." },
+      "small": { "displayName": "Small", "purpose": "Labels, counts, captions, photo credit." }
+    },
+    "shadows": [
+      { "name": "popup-lift", "value": "0 24px 48px -12px rgba(0, 0, 0, 0.45)", "purpose": "Record popup only, over the dark overlay." },
+      { "name": "search-hairline", "value": "0 1px 2px rgba(0, 0, 0, 0.18)", "purpose": "Lets the white search field sit on the band photograph." }
+    ],
+    "motion": [
+      { "name": "state-change", "value": "0.15s ease-out", "purpose": "Colour and border changes on hover and focus." },
+      { "name": "photo-zoom", "value": "transform 0.4s ease-out, scale 1.04 to 1.06", "purpose": "Gentle zoom on unit card photographs on hover." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action on a surface, e.g. Otvori PDF or Pošalji prijavu.",
+      "html": "<button class=\"ds-btn-primary\">Otvori PDF</button>",
+      "css": ".ds-btn-primary { background: #9a2226; color: #fff; height: 36px; padding: 0 12px; border: 1px solid transparent; border-radius: 2px; font: 500 13px 'Golos Text', 'Segoe UI', sans-serif; cursor: pointer; transition: background-color 0.15s ease-out; } .ds-btn-primary:hover { background: #7b1a1d; } .ds-btn-primary:focus-visible { outline: 2px solid #1c1a18; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary actions such as Preuzmi or Otkaži.",
+      "html": "<button class=\"ds-btn-secondary\">Preuzmi</button>",
+      "css": ".ds-btn-secondary { background: transparent; color: #1c1a18; height: 36px; padding: 0 12px; border: 1px solid #b6b0a8; border-radius: 2px; font: 500 13px 'Golos Text', 'Segoe UI', sans-serif; cursor: pointer; transition: border-color 0.15s ease-out; } .ds-btn-secondary:hover { border-color: #1c1a18; } .ds-btn-secondary:focus-visible { outline: 2px solid #1c1a18; outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-input",
+      "description": "The name search, white on the red band or framed on the unit page.",
+      "html": "<div class=\"ds-search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"m16 16 4.5 4.5\"/></svg><input placeholder=\"Prezime, ime ili mesto\"></div>",
+      "css": ".ds-search { position: relative; max-width: 34rem; background: #9a2226; padding: 16px; } .ds-search svg { position: absolute; left: 30px; top: 50%; transform: translateY(-50%); color: #58534d; } .ds-search input { width: 100%; height: 44px; padding: 0 16px 0 40px; background: #fbfaf8; color: #1c1a18; border: 2px solid transparent; border-radius: 2px; font: 400 15px 'Golos Text', 'Segoe UI', sans-serif; box-shadow: 0 1px 2px rgba(0,0,0,0.18); } .ds-search input:focus { outline: none; border-color: #1c1a18; }"
+    },
+    {
+      "name": "Unit Card",
+      "kind": "card",
+      "refersTo": "unit-card",
+      "description": "A brigade on the home page: the black-and-white photograph is the card.",
+      "html": "<a class=\"ds-unit-card\" href=\"#\"><div class=\"ds-unit-photo\"></div><div class=\"ds-unit-body\"><h3>Prva lička proleterska brigada „Marko Orešković“</h3><p>Formirana juna 1942. godine</p><p class=\"ds-unit-count\">9.814 boraca</p></div></a>",
+      "css": ".ds-unit-card { display: block; width: 20rem; background: #fbfaf8; color: #1c1a18; text-decoration: none; } .ds-unit-photo { aspect-ratio: 4 / 3; background: #e4e1db; filter: grayscale(1) contrast(1.04); } .ds-unit-body { padding: 12px 16px 16px; } .ds-unit-body h3 { margin: 0; font: 700 17px/1.3 'PT Serif', Georgia, serif; } .ds-unit-body p { margin: 4px 0 0; font: 400 15px/1.45 'Golos Text', sans-serif; color: #58534d; } .ds-unit-body .ds-unit-count { padding-top: 8px; color: #8e1f20; } .ds-unit-card:hover h3 { color: #8e1f20; } .ds-unit-card:focus-visible { outline: 2px solid #1c1a18; outline-offset: 3px; }"
+    },
+    {
+      "name": "Result Row",
+      "kind": "custom",
+      "description": "One person in search results, written as the book prints it.",
+      "html": "<button class=\"ds-result\"><span class=\"ds-result-name\"><b>Abramović</b> Milorada Petar</span><span class=\"ds-result-info\">29. 12. 1924, Belotić, Bogatić, zemljoradnik, u NOB od 15. 9. 1944, četa za vezu</span><span class=\"ds-result-unit\">Prva lička proleterska brigada „Marko Orešković“</span></button>",
+      "css": ".ds-result { display: block; width: 100%; text-align: left; background: transparent; border: 0; border-bottom: 1px solid #d8d4cd; padding: 12px; cursor: pointer; transition: background-color 0.15s ease-out; } .ds-result:hover { background: #fbfaf8; } .ds-result:hover .ds-result-name { color: #8e1f20; } .ds-result-name { display: block; font: 400 17px/1.3 'PT Serif', Georgia, serif; color: #1c1a18; } .ds-result-name b { font-weight: 700; } .ds-result-info { display: block; margin-top: 2px; font: 400 15px/1.5 'Golos Text', sans-serif; color: #58534d; } .ds-result-unit { display: block; margin-top: 4px; font: 400 13px 'Golos Text', sans-serif; color: #58534d; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Red cloth and brigade photographs",
+    "overview": "Knjiga boraca is where a family member types a remembered name and finds one person in the printed rosters of Partisan units. The design keeps that job in front: a solid Partisan red band holds the search, the brigades' own black-and-white photographs carry the feeling, and every record ends with the scanned line from the book. Everything else stays quiet: neutral ground, ink text, 1px rules, square corners, small restrained type.\n\nThe photographs are the only emotional material. They are real, black and white, and shown large: behind the red band on the home page (multiplied into the red), as the whole top of each unit card, full width on a unit page, and as a strip above a person's record. There is no decoration beyond them.",
+    "keyCharacteristics": [
+      "A solid red band (header, and on the home page the search) with one brigade photograph multiplied into it.",
+      "Black-and-white brigade photographs, large, never thumbnails.",
+      "Names in PT Serif, surname first and bold, as the books print them; everything else in Golos Text.",
+      "Neutral ground, ink text, hairline rules, square corners, no shadows except the record popup.",
+      "Small, calm type scale; nothing shouts."
+    ],
+    "rules": [
+      { "name": "The One Red Rule", "body": "Red is for the band, the primary action and links. It never fills cards, never tints text blocks, and never appears as a decorative border.", "section": "colors" },
+      { "name": "The Photograph Carries the Feeling Rule", "body": "Emotion comes from the real brigade photographs, shown in black and white. Do not add colour washes, textures, stars or symbols to supply feeling instead.", "section": "colors" },
+      { "name": "The Surname First Rule", "body": "Names are written as the books print them: surname (bold), then father's name and given name (regular). Never reorder to \"First Last\" in lists.", "section": "typography" },
+      { "name": "The Quiet Scale Rule", "body": "The largest text on any page is 1.875rem. Headings are regular weight; bold is reserved for surnames and counts.", "section": "typography" },
+      { "name": "The Flat Page Rule", "body": "Cards, rows and panels have no shadow and never lift on hover. Hover changes colour or border, never position.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do show real brigade photographs large and in black and white.",
+      "Do write names surname first, surname bold, in PT Serif.",
+      "Do keep every record one click from its scanned line in the book.",
+      "Do use Serbo-Croatian typography: „…“ quotes, dates like 29. 12. 1924, dot thousands (9.814).",
+      "Do keep both themes working; the dark theme is a warm near-black with a deepened red."
+    ],
+    "donts": [
+      "Don't add statistics blocks, totals tiles or charts.",
+      "Don't order or group units by formation date.",
+      "Don't add stars, glow, fake paper or scanline textures, or other wartime costume.",
+      "Don't add eyebrow labels above headings, coloured side borders on cards, gradient text, or hover lift.",
+      "Don't set text larger than 1.875rem or make headings bold."
+    ]
+  }
+}

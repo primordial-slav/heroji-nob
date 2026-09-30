@@ -1,11 +1,28 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { Golos_Text, PT_Serif } from 'next/font/google'
 import './globals.css'
 import Navigation from './components/Navigation'
+import ThemeToggle from './components/ThemeToggle'
 import { ThemeProvider } from './lib/ThemeContext'
 
+// Self-hosted at build time; both faces cover Serbo-Croatian Latin and Cyrillic
+const golos = Golos_Text({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-golos',
+  display: 'swap',
+})
+const ptSerif = PT_Serif({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  weight: ['400', '700'],
+  variable: '--font-pt-serif',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Knjiga Boraca - Partizanska Baza Podataka',
-  description: 'Baza podataka boraca partizanskog pokreta',
+  title: 'Knjiga boraca',
+  description: 'Spiskovi boraca partizanskih jedinica, pretraživi po imenu, sa stranom iz knjige uz svaki zapis.',
 }
 
 // Inline script to prevent FOUC by setting data-theme before React hydrates
@@ -28,31 +45,22 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="sr" suppressHydrationWarning>
+    <html lang="sr-Latn" className={`${golos.variable} ${ptSerif.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
         <ThemeProvider>
-          <header className="header">
-            <div className="header-overlay"></div>
-            <div className="container header-content">
-              <h1>Knjiga Boraca</h1>
-              <p>Baza podataka boraca partizanskog pokreta</p>
+          <header className="masthead">
+            <div className="container masthead-bar">
+              <Link href="/" className="site-name">Knjiga boraca</Link>
+              <Navigation />
+              <ThemeToggle />
             </div>
           </header>
-          <Navigation />
-          <main className="container">
+          <main>
             {children}
           </main>
-          <footer className="footer">
-            <div className="container">
-              <p>U spomen na sve heroje koji su se borili za slobodu</p>
-            </div>
-          </footer>
         </ThemeProvider>
       </body>
     </html>

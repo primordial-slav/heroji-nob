@@ -15,7 +15,7 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
 
   if (!unit) {
     return (
-      <div className="page-content">
+      <div className="container page-content">
         <h1 className="page-title">Jedinica nije pronađena</h1>
         <Link href="/" className="back-link">← Nazad na početnu</Link>
       </div>

@@ -2,34 +2,30 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import ThemeToggle from './ThemeToggle'
+
+const LINKS = [
+  { href: '/', label: 'Početna' },
+  { href: '/izvori', label: 'Izvori' },
+]
 
 export default function Navigation() {
   const pathname = usePathname()
 
-  const isActive = (path: string) => {
-    return pathname === path ? 'nav-link active' : 'nav-link'
-  }
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' || pathname.startsWith('/units') : pathname === href
 
   return (
-    <nav className="navigation">
-      <div className="container">
-        <div className="nav-links">
-          <Link href="/" className={isActive('/')}>
-            Početna
-          </Link>
-          <Link href="/about" className={isActive('/about')}>
-            O nama
-          </Link>
-          <Link href="/izvori" className={isActive('/izvori')}>
-            Izvori
-          </Link>
-          <Link href="/contact" className={isActive('/contact')}>
-            Kontakt
-          </Link>
-          <ThemeToggle />
-        </div>
-      </div>
+    <nav className="nav" aria-label="Glavna navigacija">
+      {LINKS.map(({ href, label }) => (
+        <Link
+          key={href}
+          href={href}
+          className={isActive(href) ? 'nav-link active' : 'nav-link'}
+          aria-current={isActive(href) ? 'page' : undefined}
+        >
+          {label}
+        </Link>
+      ))}
     </nav>
   )
 }

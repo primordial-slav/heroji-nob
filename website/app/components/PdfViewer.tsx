@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useLayoutEffect } from 'react'
 import Link from 'next/link'
+import { ChevronLeftIcon, ChevronRightIcon, MinusIcon, PlusIcon, TargetIcon } from './Icons'
 import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
@@ -38,21 +39,36 @@ export default function PdfViewer({
 }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
-  const [scale, setScale] = useState(2.0)
+  const [scale, setScale] = useState<number | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
+  const fitScale = useRef(2)
+
+  // Start at the zoom where the whole highlighted entry fits the viewer's width (between 100% and 200%)
+  useLayoutEffect(() => {
+    const width = containerRef.current?.clientWidth ?? 0
+    const box = highlightBox(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd)
+    const fit = width > 0 ? (width - 24) / box.width : 2
+    // On phones a full-width fit makes the print too small to read; lead with the start of the entry instead
+    const floor = width > 0 && width < 420 ? 1.4 : 1
+    fitScale.current = Math.round(Math.min(2, Math.max(floor, fit)) * 20) / 20
+    setScale(fitScale.current)
+  }, [xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd])
 
   // When the PDF page renders, scroll to the soldier's Y position
   const onPageRenderSuccess = useCallback(() => {
     setLoading(false)
-    if (containerRef.current && currentPage === pageNumber) {
+    if (containerRef.current && scale != null && currentPage === pageNumber) {
       const scrollTarget = yPosition * scale
       const containerHeight = containerRef.current.clientHeight
       const scrollTop = Math.max(0, scrollTarget - containerHeight / 3)
       containerRef.current.scrollTop = scrollTop
+      // Bring the start of the entry into view when the page is wider than the viewer
+      const box = highlightBox(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd)
+      containerRef.current.scrollLeft = Math.max(0, box.left * scale - 12)
     }
-  }, [yPosition, scale, currentPage, pageNumber])
+  }, [xPosition, xPositionLeft, xPositionEnd, yPosition, yPositionEnd, scale, currentPage, pageNumber])
 
   const onDocumentLoadSuccess = ({ numPages: n }: { numPages: number }) => {
     setNumPages(n)
@@ -72,63 +88,52 @@ export default function PdfViewer({
     setLoading(true)
     setCurrentPage(p => Math.min(numPages || p, p + 1))
   }
-  const zoomIn = () => setScale(s => Math.min(3, s + 0.25))
-  const zoomOut = () => setScale(s => Math.max(0.5, s - 0.25))
+  const zoomIn = () => setScale(s => Math.min(3, (s ?? 2) + 0.25))
+  const zoomOut = () => setScale(s => Math.max(0.5, (s ?? 2) - 0.25))
   const resetView = () => {
     setCurrentPage(pageNumber)
-    setScale(2.0)
+    setScale(fitScale.current)
     setLoading(true)
   }
 
   if (error) {
     return (
       <div className="pdf-viewer-error">
-        Izvorni PDF dokument nije dostupan.
+        Strana iz knjige trenutno ne može da se prikaže.
       </div>
     )
   }
 
   return (
     <div className="pdf-viewer-container">
-      {/* Archival header */}
-      <div className="pdf-viewer-header">
-        <span className="pdf-viewer-header-star">&#9733;</span>
-        <span className="pdf-viewer-header-title">Izvorni dokument</span>
-        <span className="pdf-viewer-header-page">
-          str. {currentPage}{numPages ? ` / ${numPages}` : ''}
-        </span>
-      </div>
-
-      {/* Controls */}
       <div className="pdf-viewer-toolbar">
         <div className="pdf-viewer-controls-group">
-          <button onClick={goToPrevPage} disabled={currentPage <= 1} title="Prethodna strana">
-            &#9664;
+          <button onClick={goToPrevPage} disabled={currentPage <= 1} aria-label="Prethodna strana">
+            <ChevronLeftIcon />
           </button>
-          <button onClick={goToNextPage} disabled={currentPage >= (numPages || 1)} title="Sledeća strana">
-            &#9654;
+          <span className="pdf-viewer-page">
+            str. {currentPage}{numPages ? ` / ${numPages}` : ''}
+          </span>
+          <button onClick={goToNextPage} disabled={currentPage >= (numPages || 1)} aria-label="Sledeća strana">
+            <ChevronRightIcon />
           </button>
-        </div>
-        <span className="pdf-viewer-separator" />
-        <div className="pdf-viewer-controls-group">
-          <button onClick={zoomOut} title="Umanji">&#8722;</button>
-          <span className="pdf-viewer-zoom-info">{Math.round(scale * 100)}%</span>
-          <button onClick={zoomIn} title="Uvećaj">&#43;</button>
-        </div>
-        {currentPage !== pageNumber && (
-          <>
-            <span className="pdf-viewer-separator" />
-            <button onClick={resetView} title="Vrati na poziciju borca" className="pdf-viewer-reset-btn">
-              &#8634; Nazad
+          {currentPage !== pageNumber && (
+            <button onClick={resetView}>
+              <TargetIcon size={16} /> Nazad na zapis
             </button>
-          </>
-        )}
+          )}
+        </div>
+        <div className="pdf-viewer-controls-group">
+          <button onClick={zoomOut} aria-label="Umanji"><MinusIcon /></button>
+          <span className="pdf-viewer-zoom-info">{scale != null ? `${Math.round(scale * 100)}%` : ''}</span>
+          <button onClick={zoomIn} aria-label="Uvećaj"><PlusIcon /></button>
+        </div>
       </div>
 
       {/* Scrollable PDF area */}
       <div className="pdf-viewer-scroll" ref={containerRef}>
-        {loading && <div className="pdf-viewer-loading">Učitavanje dokumenta...</div>}
-        <div style={{ position: 'relative' }}>
+        {loading && <div className="pdf-viewer-loading">Učitavanje strane…</div>}
+        {scale != null && <div className="pdf-viewer-page-wrap">
           <Document
             file={pdfFile}
             options={pdfOptions}
@@ -160,15 +165,13 @@ export default function PdfViewer({
               />
             )
           })()}
-        </div>
+        </div>}
       </div>
 
       {/* Footer with link to full document */}
       {sourceHref && (
         <div className="pdf-viewer-footer">
-          <Link href={sourceHref}>
-            Pogledaj ceo dokument &rarr;
-          </Link>
+          <Link href={sourceHref}>Cela knjiga na strani Izvori</Link>
         </div>
       )}
     </div>
