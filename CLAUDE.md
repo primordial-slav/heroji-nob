@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~105,800 WWII Yugoslav partisan soldiers across 37 units (32 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~106,600 WWII Yugoslav partisan soldiers across 38 units (33 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -48,8 +48,9 @@ Historical archive website for searching ~105,800 WWII Yugoslav partisan soldier
 | 35 | 32. Zagorska divizija | `data-extraction/parse_32_divizija.py` (roster) | `32-divizija-soldiers.json` | 1 PDF (names only, four columns) | 10,041 |
 | 36 | 1. Dalmatinska | `data-extraction/parse_1_dalmatinska.py` | `1-dalmatinska-soldiers.json` | web page (znaci.org; no scan) | 2,165 |
 | 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 387-423) | 981 |
+| 38 | 8. Crnogorska | `data-extraction/parse_8_crnogorska.py` | `8-crnogorska-soldiers.json` | 1 PDF (Cyrillic; book pp. 471-501, 509-510) | 730 |
 
-Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-37 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
+Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
 A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
@@ -125,7 +126,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 `pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`.
 A list published only as a web page (1. Dalmatinska) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0037), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0038), last 6 = sequence.
 
 ## Known OCR Issues
 
@@ -142,6 +143,7 @@ PDF text extraction has recurring patterns that break name-boundary detection:
 - **Glued entries**: a missed entry start leaves the next soldier inside the previous bio ("... na planini Tari. DONOVIĆ (ili DONOVSKI) PANTA Pane, komandir ..."); two-column pages can also mix the columns. In Prva lička a bracket after the surname ("BALAĆ (udana BASTA) Danina Milica") hid ~60 entry starts this way. Fix with an `edit` that trims the bio plus an `add`. Before adding a "missing" soldier, check that the parser didn't keep them under a garbled name — several earlier adds duplicated such records.
 - **Cropped scans**: `2-krajiska.pdf` cuts the left edge of every even page, so surnames lose their first letter(s); the parser rebuilds them from the alphabetical order and corpus surnames, page by page against coarse bounds. Corrections then fixed 102 more by choosing each even page's surnames together, in the order between the uncropped pages; about 30 remnants that neither decides stay as printed ("Ra", "Ljcić"). Seventeen soldiers whose cropped entry start was missed had been glued into the previous bio (split out as adds).
 - **Latin look-alikes for Cyrillic**: the `uzicki-odred.pdf` text layer spells some Cyrillic names with the Latin letters they look like ("ABPAMOBHR" = АВРАМОВИЋ, "4" for Ч, "A>" for Љ); `parse_uzicki_odred.decode` reads them back, choosing among ambiguous letters (A = А/Л/Д, H = Н/И) by the names the corpus knows.
+- **Ђ and Ћ read as Б or Н**: in `8-crnogorska.pdf` the Đ names come out as B names ("Bukić" = Đukić) and the Ć names as B or N names ("Nirić" = Ćirić); `parse_8_crnogorska.letter_sections` gives them the letter back where the alphabetical list is at Đ or Ć (this book puts Ć after C). Inside a name Ћ is often К or Н ("Pavinević" = Pavićević).
 - **Missing text-layer lines**: the 13. Proleterska text layer drops some printed lines entirely (e.g. VUJIČIĆ Rade RADE, DABIĆ Vase ŽIVKO); check the page image (`crop` the page) before concluding an entry doesn't exist.
 - **4. Splitska name format**: `N. SURNAME (FATHER) FIRST (NICKNAME), r. ...` — the first parenthesis is the father (genitive), a parenthesis after the given name is a nickname (`zvani X; ...`).
 

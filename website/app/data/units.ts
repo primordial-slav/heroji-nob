@@ -379,6 +379,16 @@ export const units: Unit[] = [
     soldierCount: 981,
     dataFile: '/16-slavonska-omladinska-soldiers.json',
     pdfFiles: ['/pdfs/16-slavonska-omladinska.pdf']
+  },
+  {
+    id: '8-crnogorska-brigada',
+    name: '8. crnogorska brigada',
+    nameEn: '8th Montenegrin Brigade',
+    description: 'Iz zbornika sjećanja „Osma crnogorska NOU brigada“ (1978): spisak palih boraca i starješina brigade i dopunski spisak palih koji je poslao Opštinski odbor SUBNOR-a Ub.',
+    image: '/images/pdf-thumbs/8-crnogorska.jpg',
+    soldierCount: 730,
+    dataFile: '/8-crnogorska-soldiers.json',
+    pdfFiles: ['/pdfs/8-crnogorska.pdf']
   }
   // Add more units here as you get more data
 ]

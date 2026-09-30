@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–37 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–38 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -34,6 +34,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 35 | 32. Zagorska divizija | 10,041 | the roster of the division and the Western group of detachments (names only; 2,204 fallen, 165 missing) | Four columns of names a page between photographs: "*Surname [Father] Given". A star (read as *, ‘, ’, ", ■ or 4) marks the fallen, a dash the missing. `read_lines` takes the column edges from where text runs start, drops 6pt photo captions, joins pieces under 2pt apart ("Pi jetro"), attaches a lone mark to the name after it, and a line "(iz Ludbrega)" / "iz s. G. Voča" to the name above. Ž (and some Š, Č) carons restored from the Ž section order, "Šćurić Mato i Martin" split in two |
 | 36 | 1. Dalmatinska | 2,165 | the fallen | Published by znaci.org only as a web page (32_1.htm, a saved copy in `data-extraction/sources/`): numbered paragraphs "N. Surname [F.] Given [\"Nick\"], rođen ...". Records carry `source_url` instead of a PDF position; the soldier dialog links the list and the Sources page opens it. Dalmatian double and family surnames kept ("Separović Markota", "Kljaković-Gašpić"); nicknames in quotes, after a dash or glued ("Matija-Mešara"); given names the OCR damaged repaired against the corpus ("Jnre" → Jure) |
 | 37 | 16. Slavonska omladinska | 981 | the fallen, and the fallen in Pokuplje and Žumberak (a second list) | "SURNAME Given [Nick], rođen ..." with hanging indents (`_margin_entries`), cut from the whole book (znaci.org 00002/407.pdf) to its two lists; titles, footnotes and the printer's signature dropped; OCR-split surnames joined ("HR SEK", "KATUN AR"), a second given name a nickname unless it is a genitive (then the father) |
+| 38 | 8. Crnogorska | 730 | the fallen, and forty more the SUBNOR committee of Ub sent after the book was printed (the afterword) | "SURNAME Father GIVEN, rođen ..." with flush entries (`_margin_entries`), cut from the whole book (znaci.org 00001/275.pdf); page 2 cut to its left half (the scan's facing page is black); Ђ and Ћ read as Б or Н restored from the list's letter sections, lost first letters from the alphabetical order and the corpus, the garbled "rođen" repaired |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 

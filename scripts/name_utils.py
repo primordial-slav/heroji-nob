@@ -361,6 +361,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    38: {
+        'name': '8. Crnogorska',
+        'json_file': '8-crnogorska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АДАМОВИЋ Владимира АЛЕКСАНДАР, рођен у Туларима, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

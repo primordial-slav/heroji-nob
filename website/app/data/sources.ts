@@ -386,5 +386,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/16-slavonska-omladinska.jpg',
     brigadeName: '16. slavonska omladinska brigada „Jože Vlahović“',
     description: 'Spisak poginulih boraca i rukovodilaca brigade; spisak poginulih u Pokuplju i na Žumberku (str. 387-423 knjige)'
+  },
+  {
+    id: '8-crnogorska',
+    title: 'Osma crnogorska NOU brigada — zbornik sjećanja',
+    author: 'Boško Brajović i dr. (ur.)',
+    pdfPath: '/pdfs/8-crnogorska.pdf',
+    thumbnail: '/images/pdf-thumbs/8-crnogorska.jpg',
+    brigadeName: '8. crnogorska brigada',
+    description: 'Spisak palih drugova boraca i starješina brigade (str. 471-501 knjige) i dopunski spisak palih iz Uba (str. 509-510)'
   }
 ]

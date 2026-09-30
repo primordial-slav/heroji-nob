@@ -52,6 +52,7 @@ BRIGADE_CODES = {
     35: '32. Zagorska divizija',
     36: '1. Dalmatinska',
     37: '16. Slavonska omladinska',
+    38: '8. Crnogorska',
     # Add new brigades here with next available code
 }
 
