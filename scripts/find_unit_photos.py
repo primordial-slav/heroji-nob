@@ -117,7 +117,10 @@ UNITS = {
     "4-splitska-brigada": dict(
         name="4. dalmatinska (splitska) brigada", tags=["4-dalmatinska-udarna-brigada"],
         caption=nth(4, r"dalmatinsk") + r"|splitsk\w+\s+brigad", photo=None,
-        note="Current image is znaci 3966, 'Odlazak Splićana u partizane posle kapitulacije Italije, 1943' (card), which doesn't name the brigade. The only photo that does is 13383, a studio portrait of four of its leaders ('Grupa rukovodilaca 4. splitske brigade januara 1945')."),
+        book=dict(pdf="00001/89_5.pdf", page=14, xref=63, caption="Postrojavanje 4. bataljona, Rujani, travanj 1944."),
+        descreen=1.2,
+        note="A battalion of the brigade, in its own book. The gallery's only photo naming the brigade is a studio portrait of four leaders (13383); "
+             "the image here before was znaci 3966, Split volunteers in 1943, which doesn't name the brigade."),
     "prva-vojvodjanska-brigada": dict(
         name="1. vojvođanska brigada", tags=["1-vojvodjanska-udarna-brigada"],
         caption=nth(1, r"vojvo(?:đ|dj|d)ansk"), photo=14761, card="Borci 1. bataljona 1. vojvodjanske brigade prilikom oslobodjenja Loznice 24.09.1944."),
@@ -128,7 +131,9 @@ UNITS = {
     "druga-vojvodjanska-brigada": dict(
         name="2. vojvođanska brigada", tags=["2-vojvodjanska-udarna-brigada"],
         caption=nth(2, r"vojvo(?:đ|dj|d)ansk"), photo=None,
-        note="Current image is znaci 3413, 'Pokret vojvođanskih jedinica kroz Bosnu' (tagged with the 1., 2. and 3. vojvođanska brigades), which doesn't name the brigade."),
+        book=dict(pdf="00001/72_4.pdf", page=4, xref=15, caption="Jun 1943. Borci 2. vojvođanske NOU brigade u Virču"),
+        descreen=1.4,
+        note="The image here before was znaci 3413, 'Pokret vojvođanskih jedinica kroz Bosnu', which doesn't name the brigade."),
     "osma-krajiska-brigada": dict(
         name="8. krajiška brigada", tags=["8-krajiska-brigada"],
         caption=nth(8, r"kraji[sš]k"), photo=5046, note="The brigade's artillery; the only photo naming the brigade."),
@@ -182,7 +187,10 @@ UNITS = {
         caption=nth(12, r"dalmatinsk") + "|" + nth(1, r"oto[cč]k"), photo=5084),
     "14-srpska-brigada": dict(
         name="14. srpska brigada", tags=["14-srpska-udarna-brigada"],
-        caption=nth(14, r"srpsk\w+\s+(?:nou\s+|udarn\w+\s+)?brigad"), photo=None),
+        caption=nth(14, r"srpsk\w+\s+(?:nou\s+|udarn\w+\s+)?brigad"), photo=None,
+        book=dict(pdf="00001/66_5.pdf", page=18, xref=83,
+                  caption="Brigada na maršu kroz Kragujevac krajem oktobra 1944."),
+        descreen=0.8),
     "17-majevicka-brigada": dict(
         name="17. majevička brigada", tags=["17-majevicka-udarna-brigada"],
         caption=nth(17, r"majevi[cč]k"), photo=4853),
@@ -194,22 +202,35 @@ UNITS = {
         caption=nth(21, r"slavonsk"), photo=15707),
     "21-tuzlanska-brigada": dict(
         name="21. tuzlanska brigada", tags=["21-tuzlanska-udarna-brigada"],
-        caption=nth(21, r"\(?tuzlansk") + r"|tuzlansk\w+\s+brigad", photo=None),
+        caption=nth(21, r"\(?tuzlansk") + r"|tuzlansk\w+\s+brigad", photo=None,
+        book=dict(pdf="00001/250_3.pdf", page=18, xref=175, caption="Borci Brigade na ulicama Sarajeva"),
+        note="From the book's first photo section (Sarajevo, April 1945)."),
     "25-brodska-brigada": dict(
         name="25. slavonska (brodska) brigada", tags=["25-slavonska-udarna-brigada-brodska"],
-        caption=nth(25, r"(?:slavonsk|brodsk)") + r"|brodsk\w+\s+brigad", photo=None),
+        caption=nth(25, r"(?:slavonsk|brodsk)") + r"|brodsk\w+\s+brigad", photo=None,
+        book=dict(pdf="00001/262_5.pdf", page=42, xref=179, caption="April 1944 — Prvi vod 1. čete 1. bataljona"),
+        note="A platoon of the brigade, in its own book. The photos whose captions name the brigade (entering Šabac, crossing the Vrbas) show mostly crowd and a ferry."),
     "25-srpska-brigada": dict(
         name="25. srpska (1. pirotska) brigada", tags=["25-srpska-brigada-1-pirotska"],
-        caption=nth(25, r"srpsk\w+\s+(?:nou\s+)?brigad") + "|" + nth(1, r"pirotsk"), photo=None),
+        caption=nth(25, r"srpsk\w+\s+(?:nou\s+)?brigad") + "|" + nth(1, r"pirotsk"), photo=None,
+        book=dict(pdf="00001/215_5.pdf", page=59, xref=363,
+                  caption="Defile jedinica 25. brigade, u Orahovcu, na proslavi 27. marta (1945)"),
+        descreen=1.4),
     "3-makedonska-brigada": dict(
         name="3. makedonska brigada", tags=["3-makedonska-udarna-brigada"],
         caption=nth(3, r"makedonsk"), photo=13204),
-    "32-divizija": dict(
+    "32-zagorska-divizija": dict(
         name="32. zagorska divizija", tags=["32-zagorska-divizija-novj"],
-        caption=nth(32, r"(?:zagorsk\w+\s+)?divizij") + r"|zagorsk\w+\s+divizij", photo=None, note="The only photo naming the division is the funeral of its commander Petar Biškup (12136)."),
-    "53-divizija": dict(
+        caption=nth(32, r"(?:zagorsk\w+\s+)?divizij") + r"|zagorsk\w+\s+divizij", photo=None,
+        book=dict(pdf="00003/542.pdf", page=454, xref=2359,
+                  caption="Kolona Brigade »Matija Gubec« ulazi u Zagreb 10. maja 1945. godine"),
+        note="Matija Gubec was one of the division's brigades; in this book the caption sits above the photo."),
+    "53-srednjobosanska-divizija": dict(
         name="53. srednjobosanska divizija", tags=["53-srednjobosanska-divizija-novj"],
-        caption=nth(53, r"(?:srednjobosansk\w+\s+)?divizij"), photo=None),
+        caption=nth(53, r"(?:srednjobosansk\w+\s+)?divizij"), photo=None,
+        book=dict(pdf="00003/712.pdf", page=175, xref=1055,
+                  caption="Bataljon pri štabu 53. divizije na željezničkoj stanici u Teslicu, pred polazak u akciju na ustaško uporište u selu Sivši, marta 1945. godine"),
+        crop=(0.0, 0.0, 1.0, 0.74)),
     "7-crnogorska-omladinska-brigada": dict(
         name="7. crnogorska omladinska brigada \"Budo Tomović\"",
         tags=["7-crnogorska-omladinska-brigada-budo-tomovic"],
@@ -224,7 +245,10 @@ UNITS = {
     "uzicki-odred": dict(
         name="Užički partizanski odred \"Dimitrije Tucović\"",
         tags=["uzicki-partizanski-odred-dimitrije-tucovic"],
-        caption=r"u[zž]i[cč]k\w+\s+(?:partizansk\w+\s+)?odred|dimitrij\w+ tucovi", photo=None, note="Photos tagged with the odred show 1941 Užice scenes and portraits, none a group of its fighters."),
+        caption=r"u[zž]i[cč]k\w+\s+(?:partizansk\w+\s+)?odred|dimitrij\w+ tucovi", photo=None,
+        book=dict(pdf="00001/196_7.pdf", page=8, xref=67,
+                  caption="Jedinice Užičkog odreda, postrojene na užičkoj žitnoj pijaci, spremne za smotru pred komandantom Dušanom Jerkovićem"),
+        note="From the book's photo chapter (1941)."),
 }
 
 # Words that suggest a group of soldiers; words that suggest something else.
@@ -592,11 +616,13 @@ def write_doc():
         (on_site if "/images/%s.jpg" % key in units_ts else ready).append(row)
     header = ["| Unit | Image | Photo | Description |", "|---|---|---|---|"]
     lines += ["", "## On the site", ""] + header + on_site
-    lines += ["", "## Ready for units not on the site yet",
-              "", "Point the unit's `image` in `units.ts` at `/images/<Image>` when it's added.", ""] + header + ready
-    lines += ["", "## No qualifying photo", "",
-              "These units keep their current image (the book's first page, or a photo flagged below).", "",
-              "| Unit | Why |", "|---|---|"] + missing
+    if ready:
+        lines += ["", "## Ready for units not on the site yet",
+                  "", "Point the unit's `image` in `units.ts` at `/images/<Image>` when it's added.", ""] + header + ready
+    if missing:
+        lines += ["", "## No qualifying photo", "",
+                  "These units keep their current image (the book's first page, or a photo flagged below).", "",
+                  "| Unit | Why |", "|---|---|"] + missing
     DOC.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("Wrote", DOC.relative_to(ROOT))
 

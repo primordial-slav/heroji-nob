@@ -265,7 +265,7 @@ export const units: Unit[] = [
     name: 'Užički NOP odred „Dimitrije Tucović“',
     nameEn: 'Užice Partisan Detachment',
     description: 'Spisak boraca Užičkog partizanskog odreda poginulih u narodnooslobodilačkom ratu 1941-1945.',
-    image: '/images/pdf-thumbs/uzicki-odred.jpg',
+    image: '/images/uzicki-odred.jpg',
     soldierCount: 1282,
     dataFile: '/uzicki-odred-soldiers.json',
     pdfFiles: ['/pdfs/uzicki-odred.pdf']
@@ -275,7 +275,7 @@ export const units: Unit[] = [
     name: '14. srpska udarna brigada',
     nameEn: '14th Serbian Assault Brigade',
     description: 'Spisak poginulih boraca i starešina Niškog NOP odreda i 14. srpske (niške) brigade.',
-    image: '/images/pdf-thumbs/14-srpska.jpg',
+    image: '/images/14-srpska-brigada.jpg',
     soldierCount: 1006,
     dataFile: '/14-srpska-soldiers.json',
     pdfFiles: ['/pdfs/14-srpska.pdf']
@@ -285,7 +285,7 @@ export const units: Unit[] = [
     name: '7. crnogorska omladinska brigada „Budo Tomović“',
     nameEn: '7th Montenegrin Youth Brigade',
     description: 'Spisak poginulih boraca iz monografije Mitra Đurišića „Sedma crnogorska omladinska brigada »Budo Tomović«“.',
-    image: '/images/pdf-thumbs/7-crnogorska.jpg',
+    image: '/images/7-crnogorska-omladinska-brigada.jpg',
     soldierCount: 439,
     dataFile: '/7-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/7-crnogorska-omladinska.pdf']
@@ -295,7 +295,7 @@ export const units: Unit[] = [
     name: '17. majevička brigada',
     nameEn: '17th Majevica Brigade',
     description: 'Spisak boraca Trećeg majevičkog NOP odreda i 17. majevičke NOU brigade poginulih i umrlih u NOR.',
-    image: '/images/pdf-thumbs/17-majevicka.jpg',
+    image: '/images/17-majevicka-brigada.jpg',
     soldierCount: 900,
     dataFile: '/17-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/17-majevicka.pdf']
@@ -305,7 +305,7 @@ export const units: Unit[] = [
     name: '25. brodska brigada',
     nameEn: '25th Brod Brigade',
     description: 'Iz monografije Naila Redžića „Brodska brigada“: spisak poginulih boraca i spisak boraca i rukovodilaca u brigadi u oktobru 1943.',
-    image: '/images/pdf-thumbs/25-brodska.jpg',
+    image: '/images/25-brodska-brigada.jpg',
     soldierCount: 926,
     dataFile: '/25-brodska-soldiers.json',
     pdfFiles: ['/pdfs/25-brodska-poginuli.pdf', '/pdfs/25-brodska-sastav.pdf']
@@ -315,7 +315,7 @@ export const units: Unit[] = [
     name: '25. srpska brigada',
     nameEn: '25th Serbian Brigade',
     description: 'Iz monografije Milorada Madića i Dušana Jončića „25. srpska brigada“: spiskovi poginulih i ranjenih boraca i rukovodilaca, sačinjeni prema ratnim spiskovima brigade.',
-    image: '/images/pdf-thumbs/25-srpska-brigada.jpg',
+    image: '/images/25-srpska-brigada.jpg',
     soldierCount: 368,
     dataFile: '/25-srpska-brigada-soldiers.json',
     pdfFiles: ['/pdfs/25-srpska-brigada.pdf']
@@ -325,7 +325,7 @@ export const units: Unit[] = [
     name: '21. tuzlanska brigada',
     nameEn: '21st Tuzla Brigade',
     description: 'Iz monografije „21. tuzlanska istočnobosanska narodnooslobodilačka udarna brigada“: spisak poginulih boraca i starješina brigade.',
-    image: '/images/pdf-thumbs/21-tuzlanska.jpg',
+    image: '/images/21-tuzlanska-brigada.jpg',
     soldierCount: 211,
     dataFile: '/21-tuzlanska-soldiers.json',
     pdfFiles: ['/pdfs/21-tuzlanska.pdf']
@@ -335,7 +335,7 @@ export const units: Unit[] = [
     name: '53. srednjobosanska divizija',
     nameEn: '53rd Central Bosnian Division',
     description: 'Iz monografije Mladena Vukosavljevića i Drage Karasijevića „53. srednjobosanska NOU divizija“: spisak poginulih, zarobljenih i nestalih boraca divizije (14, 18. i 19. brigada, Prnjavorski i Motajički partizanski odred).',
-    image: '/images/pdf-thumbs/53-srednjobosanska-divizija.jpg',
+    image: '/images/53-srednjobosanska-divizija.jpg',
     soldierCount: 800,
     dataFile: '/53-srednjobosanska-soldiers.json',
     pdfFiles: ['/pdfs/53-srednjobosanska-divizija.pdf']
@@ -345,7 +345,7 @@ export const units: Unit[] = [
     name: '21. slavonska brigada',
     nameEn: '21st Slavonian Brigade',
     description: 'Iz monografije Bogdana Bosiočića „21. slavonska NOU brigada“: spisak poginulih, umrlih i nestalih boraca i starješina brigade.',
-    image: '/images/pdf-thumbs/21-slavonska.jpg',
+    image: '/images/21-slavonska-brigada.jpg',
     soldierCount: 1117,
     dataFile: '/21-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/21-slavonska.pdf']
@@ -355,7 +355,7 @@ export const units: Unit[] = [
     name: '32. zagorska divizija',
     nameEn: '32nd Zagorje Division',
     description: 'Iz knjige „32. divizija“: spisak boraca 32. divizije i Zapadne grupe odreda. Samo imena; zvjezdica označava poginule, crtica nestale.',
-    image: '/images/pdf-thumbs/32-divizija.jpg',
+    image: '/images/32-zagorska-divizija.jpg',
     soldierCount: 10041,
     dataFile: '/32-divizija-soldiers.json',
     pdfFiles: ['/pdfs/32-divizija.pdf']
