@@ -251,5 +251,86 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/19-bircanska.jpg',
     brigadeName: '19. birčanska brigada',
     description: 'Spisak boraca 19. birčanske brigade'
+  },
+  {
+    id: '2-krajiska',
+    title: 'Druga krajiška narodnooslobodilačka udarna brigada',
+    author: 'Milorad Gončin',
+    pdfPath: '/pdfs/2-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/2-krajiska.jpg',
+    brigadeName: '2. krajiška udarna brigada',
+    description: 'Spisak poginulih i umrlih boraca i rukovodilaca 2. krajiške brigade u toku NOR-a'
+  },
+  {
+    id: 'tuzlanski-odred',
+    title: 'Tuzlanski narodnooslobodilački partizanski odred',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/tuzlanski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/tuzlanski-odred.jpg',
+    brigadeName: 'Tuzlanski NOP odred',
+    description: 'Spisak boraca Tuzlanskog NOP odreda'
+  },
+  {
+    id: 'uzicki-odred',
+    title: 'Užički partizanski odred „Dimitrije Tucović“ — spisak poginulih boraca',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/uzicki-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/uzicki-odred.jpg',
+    brigadeName: 'Užički NOP odred',
+    description: 'Spisak boraca Užičkog NOP odreda poginulih u narodnooslobodilačkom ratu 1941-1945.'
+  },
+  {
+    id: '14-srpska',
+    title: 'Četrnaesta srpska (niška) NO brigada — spisak poginulih',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/14-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/14-srpska.jpg',
+    brigadeName: '14. srpska udarna brigada',
+    description: 'Spisak poginulih boraca i starešina odreda i 14. srpske brigade'
+  },
+  {
+    id: '7-crnogorska-omladinska',
+    title: 'Sedma crnogorska omladinska brigada „Budo Tomović“ — spisak poginulih',
+    author: 'Mitar Đurišić',
+    pdfPath: '/pdfs/7-crnogorska-omladinska.pdf',
+    thumbnail: '/images/pdf-thumbs/7-crnogorska.jpg',
+    brigadeName: '7. crnogorska omladinska brigada',
+    description: 'Spisak poginulih boraca 7. crnogorske omladinske NOU brigade'
+  },
+  {
+    id: '17-majevicka',
+    title: 'Sedamnaesta majevička NOU brigada — spisak poginulih i umrlih',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/17-majevicka.pdf',
+    thumbnail: '/images/pdf-thumbs/17-majevicka.jpg',
+    brigadeName: '17. majevička brigada',
+    description: 'Spisak boraca Trećeg majevičkog NOP odreda i 17. majevičke NOU brigade poginulih i umrlih u NOR'
+  },
+  {
+    id: '25-brodska-poginuli',
+    title: 'Brodska brigada — spisak poginulih boraca',
+    author: 'Nail Redžić',
+    pdfPath: '/pdfs/25-brodska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/25-brodska.jpg',
+    brigadeName: '25. brodska brigada',
+    description: 'Spisak poginulih boraca Brodske brigade 28. divizije'
+  },
+  {
+    id: '25-brodska-sastav',
+    title: 'Brodska brigada — sastav u oktobru 1943.',
+    author: 'Nail Redžić',
+    pdfPath: '/pdfs/25-brodska-sastav.pdf',
+    thumbnail: '/images/pdf-thumbs/25-brodska-sastav.jpg',
+    brigadeName: '25. brodska brigada',
+    description: 'Spisak boraca i rukovodilaca koji su bili u Brodskoj brigadi u oktobru 1943. godine'
+  },
+  {
+    id: '25-srpska-brigada',
+    title: '25. srpska brigada — spiskovi poginulih i ranjenih',
+    author: 'Milorad Madić, Dušan Jončić',
+    pdfPath: '/pdfs/25-srpska-brigada.pdf',
+    thumbnail: '/images/pdf-thumbs/25-srpska-brigada.jpg',
+    brigadeName: '25. srpska brigada',
+    description: 'Spisak poginulih i spisak ranjenih boraca i rukovodilaca 25. srpske brigade'
   }
 ]

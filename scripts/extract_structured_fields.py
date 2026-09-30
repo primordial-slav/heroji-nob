@@ -193,9 +193,10 @@ class Extractor:
             elif re.match(r'^\s*(?:\.\s*)+', t):
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
-        from_place = code == 2 and re.match(rf'^iz\s+[{U}]', t) is not None   # Prva lička: "iz Zavlake, Donji Lapac" (where he came from)
+        # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
+        from_place = code in (2, 31) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
-            t = t[3:]
+            t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
             t = ''                                                            # "1944. kod Tovarnika." is not a birthplace
         locative = from_place or re.match(r'^u\s+(?!s\.?\s|selu)', t) is not None   # "rođen u Donjem Lapcu" (locative)
@@ -407,8 +408,10 @@ def build_extractor(brigades) -> Extractor:
                 occ[words[i + 1]] += 1
         if s.get('occupation'):
             occ[s['occupation'].lower()] += 3
-    # 'grad' is the abbreviation in "grad. tehničar" (građevinski); as an occupation it would match "St. Grad"
+    # 'grad' is the abbreviation in "grad. tehničar" (građevinski); as an occupation it would match "St. Grad".
+    # A clause after the ethnicity is no occupation: "Hrvat, rođen u s. Garčin", "živi u s. Sibinj"
     occupations = Counter({w: n for w, n in occ.items() if n >= 2 and not RANK_RE.fullmatch(w) and w not in ('u', 'i', 'borac', 'grad')
+                           and not re.match(r'(?:rođen|živ|pogin|umr|nesta|ubijen|stri?jeljan)\w*\b', w)
                            and not UNIT_RE.search(w) and not any(rx.search(w) for rx, _ in SPECIAL_UNITS)})
     # known places (nominative): existing birth/death places, then birthplaces the extractor itself reads
     places = Counter()

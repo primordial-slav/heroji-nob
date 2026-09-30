@@ -38,6 +38,14 @@ BRIGADE_CODES = {
     21: '4. Srpska',
     22: '7. Vojvođanska',
     23: '19. Birčanska',
+    24: '2. Krajiška',
+    25: 'Tuzlanski NOP odred',
+    26: 'Užički NOP odred',
+    27: '14. Srpska',
+    28: '7. Crnogorska omladinska',
+    29: '17. Majevička',
+    30: '25. Brodska',
+    31: '25. Srpska brigada',
     # Add new brigades here with next available code
 }
 

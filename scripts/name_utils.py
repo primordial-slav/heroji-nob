@@ -233,6 +233,80 @@ BRIGADE_CONFIGS = {
         'original_casing': 'upper_last',
         'script': 'cyrillic',
     },
+    24: {
+        'name': '2. Krajiška',
+        'json_file': '2-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOVIĆ Pere JANKO, rođen 1922., u Volaru, Prijedor, Srbin, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
+    25: {
+        'name': 'Tuzlanski NOP odred',
+        'json_file': 'tuzlanski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ALIHODŽIĆ Omerov ILJAZ, borac, 1923. Lukavac. U Odredu od oktobra 1943."
+        'has_fathers_name': True,
+        'fathers_name_form': 'possessive',    # mostly "Omerov", "Mujin"; some genitives ("Bege")
+        'original_casing': 'upper_last',
+    },
+    26: {
+        'name': 'Užički NOP odred',
+        'json_file': 'uzicki-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АВРАМОВИЋ Рајка СВЕТОЛИК Љубо, борац 3. рачанске чете, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
+    27: {
+        'name': '14. Srpska',
+        'json_file': '14-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АДАМОВИЋ Петра ВОЈИСЛАВ (рођен 1923. у селу Витовница, ...)"
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+        'script': 'cyrillic',
+    },
+    28: {
+        'name': '7. Crnogorska omladinska',
+        'json_file': '7-crnogorska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a table: "AVDIĆ / Hajradina / ĆAZIM | 1926, Biševo, Rožaj | 4. bataljon | ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
+    29: {
+        'name': '17. Majevička',
+        'json_file': '17-majevicka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADŽIĆ (RADENKO) NEDELJKO, rođen 1927. godine u selu Drežnik, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'nominative',
+        'original_casing': 'upper_last',
+    },
+    30: {
+        'name': '25. Brodska',
+        'json_file': '25-brodska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ACIMOVIĆ DRAGUTIN, rođen 1921, Badovinci, ..." / "BALENOVIĆ MIJO — borac, ..."
+        'has_fathers_name': True,     # a few in the roster: "ŽIVIĆ ANTUNA MIŠO"
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
+    31: {
+        'name': '25. Srpska brigada',
+        'json_file': '25-srpska-brigada-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "KRSTIĆ P. Najdan iz Gostuše, srez nišavski, borac ..."
+        'has_fathers_name': True,     # the father's initial only
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 
