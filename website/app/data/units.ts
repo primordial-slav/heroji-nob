@@ -249,6 +249,16 @@ export const units: Unit[] = [
     soldierCount: 1549,
     dataFile: '/2-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/2-krajiska.pdf']
+  },
+  {
+    id: 'tuzlanski-odred',
+    name: 'Tuzlanski NOP odred',
+    nameEn: 'Tuzla Partisan Detachment',
+    description: 'Spisak boraca iz monografije „Tuzlanski narodnooslobodilački partizanski odred“ (1988), mnogi sa fotografijom.',
+    image: '/images/pdf-thumbs/tuzlanski-odred.jpg',
+    soldierCount: 1110,
+    dataFile: '/tuzlanski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/tuzlanski-odred.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -567,9 +567,13 @@ def run_parser(
     prepare_fn: Callable[[list[dict]], None] | None = None,
     id_start: int = 1,
     keep_other_sources: bool = False,
+    extract_fn: Callable[[str, int, int | None], list[dict]] | None = None,
 ) -> list[dict]:
     """
     Common runner. Extract → group → parse → assign IDs → save.
+
+    extract_fn(pdf_path, start_page, end_page): the book's own line reader, for layouts neither
+    'single' nor 'two_column' fits (lines as {text, x, y, page}, in reading order).
 
     asterisk_marks_death: the book marks killed/died soldiers with '*'; for those,
     record death_type from the entry text (left unset if the text doesn't say).
@@ -592,7 +596,9 @@ def run_parser(
         p = src['pdf_path']
         sp = src.get('start_page', 1)
         ep = src.get('end_page')
-        if layout == 'two_column':
+        if extract_fn:
+            lines = extract_fn(p, sp, ep)
+        elif layout == 'two_column':
             assert col_split_x is not None, "col_split_x required for two_column"
             lines = extract_lines_two_column(p, sp, ep, col_split_x)
         else:

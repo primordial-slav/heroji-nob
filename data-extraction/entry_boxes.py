@@ -72,6 +72,7 @@ TWO_COLUMN = {
     'druga-licka-sjecanja-prezivjeli.pdf',
     'ljubljanska-brigada.pdf',
     'prva-vojvodjanska.pdf',
+    'tuzlanski-odred.pdf',
 }
 
 

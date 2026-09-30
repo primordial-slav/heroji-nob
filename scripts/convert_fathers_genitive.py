@@ -8,6 +8,8 @@ genitive. Here the nominative is chosen from the data itself: candidate forms
 Mileta->Mile, or unchanged) are scored by how often each occurs as a soldier's
 first name, in the same brigade first (regional forms differ: "Pere" is Pero in
 Lika, Pera in Vojvodina), then across all brigades. No clear winner -> unchanged.
+Units whose config says fathers_name_form 'possessive' also get possessives converted
+(Omerov->Omer, Mujin->Mujo, Alijin->Alija).
 
 middle_name keeps the printed (genitive) form; only fathers_name changes.
 
@@ -60,6 +62,14 @@ def candidates(g: str) -> set[str]:
     elif g.endswith('e'):
         stem = g[:-1]
         c |= {stem + 'o', stem + 'a'}                   # Đure -> Đuro, Nikole -> Nikola
+    elif g.endswith(('ov', 'ev')):                      # possessive: Omerov -> Omer, Petrov -> Petar
+        stem = g[:-2]
+        c |= {stem, stem + 'o', stem + 'e'}
+        if len(stem) >= 3 and stem[-1] in CONSONANT and stem[-2] in CONSONANT:
+            c.add(stem[:-1] + 'a' + stem[-1])
+    elif g.endswith('in'):                              # possessive: Mujin -> Mujo, Alijin -> Alija, Ibrin -> Ibro
+        stem = g[:-2]
+        c |= {stem + 'a', stem + 'o', stem + 'e', stem}
     return c
 
 
@@ -94,9 +104,12 @@ def main():
     for code, soldiers in brigades.items():
         if not BRIGADE_CONFIGS[code].get('has_fathers_name') or BRIGADE_CONFIGS[code].get('fathers_name_form') == 'nominative':
             continue
+        # books that print some fathers as possessives ("Omerov", "Mujin") as well as genitives
+        endings = ('a', 'e', 'ov', 'ev', 'in') if BRIGADE_CONFIGS[code].get('fathers_name_form') == 'possessive' \
+            else ('a', 'e')
         for s in soldiers:
             g = s.get('fathers_name') or ''
-            if g != (s.get('middle_name') or '') or not NAME.match(g) or not g.endswith(('a', 'e')):
+            if g != (s.get('middle_name') or '') or not NAME.match(g) or not g.endswith(endings):
                 continue
             fields = {}
             if g in OVERRIDES:

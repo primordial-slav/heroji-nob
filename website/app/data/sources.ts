@@ -260,5 +260,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/2-krajiska.jpg',
     brigadeName: '2. krajiška udarna brigada',
     description: 'Spisak poginulih i umrlih boraca i rukovodilaca 2. krajiške brigade u toku NOR-a'
+  },
+  {
+    id: 'tuzlanski-odred',
+    title: 'Tuzlanski narodnooslobodilački partizanski odred',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/tuzlanski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/tuzlanski-odred.jpg',
+    brigadeName: 'Tuzlanski NOP odred',
+    description: 'Spisak boraca Tuzlanskog NOP odreda'
   }
 ]

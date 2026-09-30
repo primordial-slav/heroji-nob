@@ -242,6 +242,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    25: {
+        'name': 'Tuzlanski NOP odred',
+        'json_file': 'tuzlanski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ALIHODŽIĆ Omerov ILJAZ, borac, 1923. Lukavac. U Odredu od oktobra 1943."
+        'has_fathers_name': True,
+        'fathers_name_form': 'possessive',    # mostly "Omerov", "Mujin"; some genitives ("Bege")
+        'original_casing': 'upper_last',
+    },
 }
 
 
