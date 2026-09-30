@@ -316,6 +316,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'possessive',    # "Alijin", "Pavlov"; a woman's father "Mustafina"
         'original_casing': 'upper_last',
     },
+    33: {
+        'name': '53. Srednjobosanska divizija',
+        'json_file': '53-srednjobosanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a table: "Aksenić Ristin Stojan | 1907 Miškovci | 1. četa I batalj. 18 brig. | ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'possessive',    # "Ristin", "Antunov"; some genitives ("Lazara", "Mustafe")
+        'original_casing': 'title',
+    },
 }
 
 

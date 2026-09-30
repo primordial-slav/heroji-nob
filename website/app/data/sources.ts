@@ -341,5 +341,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/21-tuzlanska.jpg',
     brigadeName: '21. tuzlanska brigada',
     description: 'Spisak poginulih boraca i starješina 21. tuzlanske NOU brigade'
+  },
+  {
+    id: '53-srednjobosanska-divizija',
+    title: '53. srednjobosanska NOU divizija — spisak poginulih, zarobljenih i nestalih',
+    author: 'Mladen Vukosavljević, Drago Karasijević',
+    pdfPath: '/pdfs/53-srednjobosanska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/53-srednjobosanska-divizija.jpg',
+    brigadeName: '53. srednjobosanska divizija',
+    description: 'Spisak poginulih, zarobljenih i nestalih boraca Pedeset treće NOU srednjebosanske divizije'
   }
 ]

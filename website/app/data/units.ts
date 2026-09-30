@@ -329,6 +329,16 @@ export const units: Unit[] = [
     soldierCount: 211,
     dataFile: '/21-tuzlanska-soldiers.json',
     pdfFiles: ['/pdfs/21-tuzlanska.pdf']
+  },
+  {
+    id: '53-srednjobosanska-divizija',
+    name: '53. srednjobosanska divizija',
+    nameEn: '53rd Central Bosnian Division',
+    description: 'Iz monografije Mladena Vukosavljevića i Drage Karasijevića „53. srednjobosanska NOU divizija“: spisak poginulih, zarobljenih i nestalih boraca divizije (14, 18. i 19. brigada, Prnjavorski i Motajički partizanski odred).',
+    image: '/images/pdf-thumbs/53-srednjobosanska-divizija.jpg',
+    soldierCount: 800,
+    dataFile: '/53-srednjobosanska-soldiers.json',
+    pdfFiles: ['/pdfs/53-srednjobosanska-divizija.pdf']
   }
   // Add more units here as you get more data
 ]
