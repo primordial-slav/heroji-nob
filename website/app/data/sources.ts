@@ -332,5 +332,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/25-srpska-brigada.jpg',
     brigadeName: '25. srpska brigada',
     description: 'Spisak poginulih i spisak ranjenih boraca i rukovodilaca 25. srpske brigade'
+  },
+  {
+    id: '21-tuzlanska',
+    title: '21. tuzlanska istočnobosanska NOU brigada — spisak poginulih',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/21-tuzlanska.pdf',
+    thumbnail: '/images/pdf-thumbs/21-tuzlanska.jpg',
+    brigadeName: '21. tuzlanska brigada',
+    description: 'Spisak poginulih boraca i starješina 21. tuzlanske NOU brigade'
   }
 ]

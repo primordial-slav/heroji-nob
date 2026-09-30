@@ -1,6 +1,6 @@
 # New brigade parsers — status
 
-Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–31 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
+Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_ORG_SOLDIER_LIST_CATALOG.md)). Every parser except 18. Slavonska calls the shared runner in [`_parser_scaffold.py`](../data-extraction/_parser_scaffold.py). Brigade codes 10–32 are registered in [`soldier_id_utils.py`](../scripts/soldier_id_utils.py) and [`name_utils.py`](../scripts/name_utils.py).
 
 ## All shipped (wired into units.ts / sources.ts)
 
@@ -28,6 +28,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | 29 | 17. Majevička | 898 | the fallen and died (with the 3rd Majevica detachment) | "SURNAME (FATHER) GIVEN [zv. NICK], rođen ..." with the father in the nominative (`fathers_name_form: 'nominative'`); an entry's first line is indented; OCR-spaced surnames rejoined ("MI JATO VIĆ"), double surnames with a spaced dash joined ("LUKIĆ — VEJNOVIĆ (VOJO)"), l read for I in caps names; one-name entries (Italian volunteers) become given names |
 | 30 | 25. Brodska | 926 | the fallen (612) and the roster of October 1943 (314) | Two lists from Nail Redžić's monograph, each soldier keeps a record per list. "SURNAME GIVEN, rođen ..." (fallen) and "SURNAME GIVEN — borac, Hrvat, rođen ..." (roster: the dash ends the name); continuation lines are indented (`_margin_entries`); a second caps given name is a nickname ("BARDAK TEODOR TEDO"), "ing"/"dr" read as a father go to the bio; l read for I in caps names |
 | 31 | 25. Srpska brigada | 368 | the fallen (108) and the wounded (260) | Two numbered lists compiled from the brigade's wartime lists: "N. SURNAME [F.] Given iz Village, srez ..., borac ..., poginuo/ranjen ...". A final Ћ is read as К/Н/Е, so every -in/-ik/-ie surname becomes -ić (all are -ić in these lists); a name unknown as printed takes the known spelling one or two of the scan's usual misreads give (Д as А, д/л as а, Ђ as Б/В, ђ as ћ: "Aragutin", "Mlaaenović", "Borće"); the father's З read as the digit 3. Birth place from "iz Village" (as Prva lička) |
+| 32 | 21. Tuzlanska | 211 | the fallen | "SURNAME FATHER'S GIVEN [NICK], duty, year, birthplace, u NOB od ..., poginuo ..." with the father as a possessive (`fathers_name_form: 'possessive'`, feminine for women: "MUSTAFINA RASEMA"); an entry's first line is indented. OCR-split names rejoined ("SA VIĆ", "ŽIVO RA DO V", "STOJ ANO V"), glued ones split ("MILJANOVIĆILIJIN"), a name without a surname ("MIRKO zvani KRAJIŠNIK") kept as the given name. Birth year and birthplace follow the duty (also read so for the Tuzlanski odred) |
 
 All pass `normalize_all_json.py --brigade <code>`; structured fields are filled by `scripts/extract_structured_fields.py`.
 

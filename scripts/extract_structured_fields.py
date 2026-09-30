@@ -180,6 +180,11 @@ class Extractor:
             t = t[m.start():]
         elif code == 15:
             t = ''                                                        # 1. šumadijska always says "Rođen ..."
+        elif code in (25, 32):
+            # the duty, the year of birth, the birthplace: "borac, 1920, Valjak - Orahovica, u NOB od ..." (Tuzlanski
+            # odred, 21. tuzlanska); a year after the enlistment or the death is no year of birth
+            ym = re.match(r'^[^\d]*?\b1[89]\d\d[.,]\s*', t)
+            t = t[ym.end():] if ym and not re.search(r'pogin|umr|nesta|NOB|Brigad|Odred|\bod\b', ym.group(0)) else ''
         bm = BIRTH_DATE_RE.match(t)
         if bm and (bm.group(0).strip() or m):
             t = t[bm.end():]
@@ -202,7 +207,7 @@ class Extractor:
         locative = from_place or re.match(r'^u\s+(?!s\.?\s|selu)', t) is not None   # "rođen u Donjem Lapcu" (locative)
         t = re.sub(r'^(?:u\s+selu|u\s+s\.?|u|s\.?|selo|g\.)\s+', '', t)
         t = re.sub(r'\s[—–-]\s', ', ', t)                                     # "Studenec - Ig", "Brajići — Boka kotorska"
-        if code == 3:
+        if code in (3, 25, 32):
             t = re.sub(rf'(?<=[{L}])-(?=[{U}])', ', ', t)                       # Druga lička: "Nebljusi-D. Lapac"
         first_sentence = sentences(t)[0] if t else ''
         segs = [clean_segment(s) for s in re.split(r',|;', first_sentence)]

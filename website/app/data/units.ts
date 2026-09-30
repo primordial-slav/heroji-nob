@@ -319,6 +319,16 @@ export const units: Unit[] = [
     soldierCount: 368,
     dataFile: '/25-srpska-brigada-soldiers.json',
     pdfFiles: ['/pdfs/25-srpska-brigada.pdf']
+  },
+  {
+    id: '21-tuzlanska-brigada',
+    name: '21. tuzlanska brigada',
+    nameEn: '21st Tuzla Brigade',
+    description: 'Iz monografije „21. tuzlanska istočnobosanska narodnooslobodilačka udarna brigada“: spisak poginulih boraca i starješina brigade.',
+    image: '/images/pdf-thumbs/21-tuzlanska.jpg',
+    soldierCount: 211,
+    dataFile: '/21-tuzlanska-soldiers.json',
+    pdfFiles: ['/pdfs/21-tuzlanska.pdf']
   }
   // Add more units here as you get more data
 ]

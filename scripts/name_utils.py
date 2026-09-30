@@ -307,6 +307,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    32: {
+        'name': '21. Tuzlanska',
+        'json_file': '21-tuzlanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADEMOVIĆ ALIJIN SAJDI, borac, 1920, Valjak - Orahovica, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'possessive',    # "Alijin", "Pavlov"; a woman's father "Mustafina"
+        'original_casing': 'upper_last',
+    },
 }
 
 
