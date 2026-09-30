@@ -26,4 +26,6 @@ export interface Soldier {
   pdf_x_end?: number      // right edge of the entry's text
   pdf_x_left?: number     // left edge, only where it isn't pdf_x (e.g. only the first line is indented)
   pdf_file?: string       // Which PDF file (e.g., "prva-proleterska-2.pdf")
+  // A source without a scan (a list published as a web page): where the entry can be read
+  source_url?: string
 }

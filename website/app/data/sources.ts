@@ -368,5 +368,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/32-divizija.jpg',
     brigadeName: '32. zagorska divizija',
     description: 'Spisak boraca 32. divizije i Zapadne grupe odreda (poginuli označeni zvjezdicom, nestali crticom)'
+  },
+  {
+    id: '1-dalmatinska',
+    title: 'Prva dalmatinska proleterska brigada — spisak poginulih',
+    author: 'Mirko Novović',
+    pdfPath: 'https://znaci.org/00001/32_1.htm',
+    thumbnail: '/images/pdf-thumbs/1-dalmatinska.jpg',
+    brigadeName: '1. dalmatinska proleterska brigada',
+    description: 'Spisak boraca Prve dalmatinske proleterske NOU brigade poginulih u toku narodnooslobodilačkog rata (tekst na znaci.org, bez skenirane knjige)'
   }
 ]

@@ -343,6 +343,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    36: {
+        'name': '1. Dalmatinska',
+        'json_file': '1-dalmatinska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "Acalija I. Ante, rođen 1921. godine u Sinju, borac 1 bat, ..." (a web page)
+        'has_fathers_name': True,     # the father's initial only
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

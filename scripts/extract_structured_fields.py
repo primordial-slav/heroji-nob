@@ -279,7 +279,10 @@ class Extractor:
             clause = clause[:dm.start()] + ' ' + clause[dm.end():]
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
         clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u ratu|u NO[BR](?:-[iu])?)(?![\w-])\s*', '', clause)
-        clause = re.sub(r'(?:,\s*|\s+)(?:i tu|gde|gdje|protiv|dok|pošto|jer|kada|kad)\b.*$', '', clause)   # "kod Vrbovca i tu", "..., gdje je i"
+        # an offensive is no place: "poginuo u V ofanzivi", "u Grmeču u toku četvrte neprijateljske ofanzive"
+        clause = re.sub(r'(?:\bu\s+toku\s+|\bu\s+)?\b(?:[IVX]+\.?|prv\w*|drug\w*|treć\w*|četvrt\w*|pet\w*|šest\w*|sedm\w*)\s+'
+                        r'(?:neprijateljsk\w+\s+)?ofanziv\w*[,.]?\s*', '', clause, flags=re.I)
+        clause = re.sub(r'(?:,\s*|\s+)(?:i tu|gde|gdje|protiv|dok|pošto|jer|kada|kad|zajedno|sa(?=\s))\b.*$', '', clause)   # "kod Vrbovca i tu", "..., gdje je i", "(u borbi) sa SS-ovcima"
         clause = re.sub(r'\s*\((?:nema|drugih|nedostaju|ostali)[^)]*\)?', '', clause)
         clause = re.sub(rf'^[{U}]\.,\s*', '', clause.strip())                # "S., Soljani" (OCR)
         clause = re.sub(r'^[\s,]*(?:od|usled|uslijed|zbog)\s+[^,]*?(?=,|\s(?:u|na|kod|v|pri)\s|$)', '', clause.strip())   # cause of death

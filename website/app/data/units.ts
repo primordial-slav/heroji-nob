@@ -359,6 +359,16 @@ export const units: Unit[] = [
     soldierCount: 10041,
     dataFile: '/32-divizija-soldiers.json',
     pdfFiles: ['/pdfs/32-divizija.pdf']
+  },
+  {
+    id: '1-dalmatinska-brigada',
+    name: '1. dalmatinska proleterska brigada',
+    nameEn: '1st Dalmatian Proletarian Brigade',
+    description: 'Iz monografije Mirka Novovića „Prva dalmatinska proleterska brigada“: spisak boraca poginulih u toku narodnooslobodilačkog rata. Spisak je objavljen kao tekst na znaci.org, bez skenirane knjige.',
+    image: '/images/pdf-thumbs/1-dalmatinska.jpg',
+    soldierCount: 2165,
+    dataFile: '/1-dalmatinska-soldiers.json',
+    pdfFiles: []
   }
   // Add more units here as you get more data
 ]

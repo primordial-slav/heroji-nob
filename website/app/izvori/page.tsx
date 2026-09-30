@@ -26,12 +26,21 @@ export default function IzvoriPage() {
               <p className="source-author">{source.author}</p>
               {source.description && <p className="source-desc">{source.description}</p>}
               <div className="source-actions">
-                <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  <DocumentIcon size={16} /> Otvori PDF
-                </a>
-                <a href={source.pdfPath} download className="btn btn-secondary">
-                  <DownloadIcon size={16} /> Preuzmi
-                </a>
+                {source.pdfPath.endsWith('.pdf') ? (
+                  <>
+                    <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                      <DocumentIcon size={16} /> Otvori PDF
+                    </a>
+                    <a href={source.pdfPath} download className="btn btn-secondary">
+                      <DownloadIcon size={16} /> Preuzmi
+                    </a>
+                  </>
+                ) : (
+                  // a list published only as a web page (no scan)
+                  <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <DocumentIcon size={16} /> Otvori spisak
+                  </a>
+                )}
               </div>
             </div>
           </li>

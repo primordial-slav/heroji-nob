@@ -139,6 +139,18 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
           </>
         )}
 
+        {!hasPdfData && soldier.source_url && (
+          <>
+            <div className="modal-source-head">
+              <h3>Izvor</h3>
+            </div>
+            <p className="modal-source-note">
+              Za ovaj spisak nema skenirane knjige: objavljen je kao tekst na{' '}
+              <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">znaci.org</a>.
+            </p>
+          </>
+        )}
+
         {!showReportForm && reportStatus === 'idle' && (
           <button className="report-error-link" onClick={() => setShowReportForm(true)}>
             Vidite grešku u ovom zapisu? Prijavite je
