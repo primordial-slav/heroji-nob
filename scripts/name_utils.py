@@ -325,6 +325,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'possessive',    # "Ristin", "Antunov"; some genitives ("Lazara", "Mustafe")
         'original_casing': 'title',
     },
+    34: {
+        'name': '21. Slavonska',
+        'json_file': '21-slavonska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "Aleksa J. Mato, borac 2. bataljona, rođen 1921, u Okrugljači, ..."
+        'has_fathers_name': True,     # the father's initial only
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

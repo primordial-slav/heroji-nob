@@ -339,6 +339,16 @@ export const units: Unit[] = [
     soldierCount: 800,
     dataFile: '/53-srednjobosanska-soldiers.json',
     pdfFiles: ['/pdfs/53-srednjobosanska-divizija.pdf']
+  },
+  {
+    id: '21-slavonska-brigada',
+    name: '21. slavonska brigada',
+    nameEn: '21st Slavonian Brigade',
+    description: 'Iz monografije Bogdana Bosiočića „21. slavonska NOU brigada“: spisak poginulih, umrlih i nestalih boraca i starješina brigade.',
+    image: '/images/pdf-thumbs/21-slavonska.jpg',
+    soldierCount: 1117,
+    dataFile: '/21-slavonska-soldiers.json',
+    pdfFiles: ['/pdfs/21-slavonska.pdf']
   }
   // Add more units here as you get more data
 ]

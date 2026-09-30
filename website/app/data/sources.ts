@@ -350,5 +350,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/53-srednjobosanska-divizija.jpg',
     brigadeName: '53. srednjobosanska divizija',
     description: 'Spisak poginulih, zarobljenih i nestalih boraca Pedeset treće NOU srednjebosanske divizije'
+  },
+  {
+    id: '21-slavonska',
+    title: '21. slavonska NOU brigada — spisak poginulih, umrlih i nestalih',
+    author: 'Bogdan Bosiočić',
+    pdfPath: '/pdfs/21-slavonska.pdf',
+    thumbnail: '/images/pdf-thumbs/21-slavonska.jpg',
+    brigadeName: '21. slavonska brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca i starješina Dvadeset prve udarne slavonske brigade'
   }
 ]
