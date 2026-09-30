@@ -810,6 +810,12 @@ def normalize_soldier(record, brigade_code):
             fathers_name_nominative = genitive_to_nominative(middle_name)
         if not fathers_name_nominative:
             fathers_name_nominative = middle_name
+    # A father already put in the nominative (by a correction, convert_fathers_genitive.py or by hand) stays:
+    # normalizing again must not undo it ("Stevo" back to the printed "Steve"). Only a father still as printed
+    # (fathers_name empty or equal to middle_name) is converted.
+    existing = clean_name_field(record.get('fathers_name', ''))
+    if existing and middle_name and to_title_case(existing) != middle_name:
+        fathers_name_nominative = existing
 
     # --- Step 5: Build result ---
     result['last_name'] = last_name

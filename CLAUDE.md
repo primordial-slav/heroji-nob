@@ -56,7 +56,7 @@ Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs 
 When fixing parsing bugs or adding brigades, run these steps in order:
 
 1. **Parse**: `python data-extraction/parse_<brigade>.py` — extracts soldiers from PDF
-2. **Normalize**: `python scripts/normalize_all_json.py --apply` — cleans names, extracts birth years, converts genitive father's names to nominative
+2. **Normalize**: `python scripts/normalize_all_json.py --apply` — cleans names, extracts birth years, converts genitive father's names to nominative (a father already in the nominative, i.e. `fathers_name` set and different from `middle_name`, is kept). `--brigade N` limits it to one unit
 3. **Extract positions**: `python data-extraction/extract_pdf_positions.py --brigade <name>` — matches soldiers to PDF page/Y coordinates for the viewer
 4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits, adds). Also auto-updates soldierCount in `units.ts`, then fills empty structured fields from each bio, then recomputes every unit's entry boxes (see below).
 5. **Build**: `cd website && npm run build` — verify no errors
@@ -80,7 +80,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 - **Script**: `scripts/apply_corrections.py` — applies corrections to brigade JSONs
 - **Actions**: `edit` (update fields), `delete` (remove record), `split` (replace one record with N new records), `add` (insert a soldier the parser missed, with a fixed `new_id`, right after `soldier_id`)
 - **Dry run by default**: Run without `--apply` to preview changes
-- **Idempotent**: re-applying the whole file is a no-op (an `add` whose `new_id` exists is skipped)
+- **Idempotent**: re-applying the whole file is a no-op. An `add` whose `new_id` exists is not inserted again, but the record gets back the fields the correction sets (unless a later `edit` sets them), so the full pipeline (normalize all units, then apply corrections) leaves a committed tree unchanged
 - **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount. Include `birth_year` in `fields` to pin it.
 
 ```json

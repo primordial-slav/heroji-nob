@@ -27,7 +27,10 @@ Correction actions:
     delete - Remove a soldier record
     split  - Replace one merged record with multiple new records
     add    - Insert a soldier the parser missed, after the record `soldier_id`,
-             under the fixed id `new_id` (skipped if that id already exists)
+             under the fixed id `new_id`. Once that id exists the record is not
+             inserted again, but it gets back the fields the correction sets
+             (except those a later edit sets), so normalize_all_json.py cannot
+             undo them.
 """
 import sys
 import os
@@ -138,6 +141,7 @@ def rebuild_computed_fields(soldier, skip_birth_year=False):
 
 
 MANUAL_FIELDS = {}   # soldier_id -> structured fields some correction sets explicitly
+EDITED_FIELDS = {}   # soldier_id -> fields some edit correction sets
 
 
 def apply_edit(soldiers, correction):
@@ -194,10 +198,35 @@ def apply_delete(soldiers, correction):
     return soldiers, False
 
 
+def restore_added(soldier, correction):
+    """An added soldier that exists already gets back the fields its correction sets, so that the correction wins
+    over the pipeline for it as an edit does ("(...)kolić" is not cleaned, "Stevo" not reset). Returns True when a
+    field changed."""
+    sid = soldier['soldier_id']
+    fields = {k: v for k, v in correction['record'].items()
+              if k not in entry_boxes.BOX_FIELDS and k not in EDITED_FIELDS.get(sid, ())}   # a later edit wins
+    changed = {k for k, v in fields.items() if soldier.get(k) != v}
+    if not changed:
+        return False
+    old_info = soldier.get('additional_info', '')
+    if changed & set(POSITION_FIELDS):
+        for k in entry_boxes.BOX_FIELDS:
+            soldier.pop(k, None)
+    soldier.update(fields)
+    if 'additional_info' in changed:
+        structured.forget_stale(soldier, old_info, keep=MANUAL_FIELDS.get(sid, set()) | set(fields))
+    rebuild_computed_fields(soldier, skip_birth_year='birth_year' in fields)
+    print(f"    RESTORE {sid}: {soldier['full_name']} ({', '.join(sorted(changed))})")
+    return True
+
+
 def apply_add(soldiers, correction):
-    """Apply an add correction. Returns (soldiers, applied). Idempotent: skipped once new_id exists."""
+    """Apply an add correction. Returns (soldiers, applied). Once new_id exists the add is not applied again, but
+    the record gets back the fields the correction sets (restore_added)."""
     new_id = correction['new_id']
-    if any(s.get('soldier_id') == new_id for s in soldiers):
+    existing = next((s for s in soldiers if s.get('soldier_id') == new_id), None)
+    if existing is not None:
+        restore_added(existing, correction)
         return soldiers, False
 
     record = {'soldier_id': new_id, 'last_name': '', 'middle_name': '', 'first_name': '', 'fathers_name': '',
@@ -343,7 +372,9 @@ def main():
 
     for c in corrections:
         set_fields = set(c.get('fields', {})) | set(c.get('record', {}))
-        MANUAL_FIELDS.setdefault(c['soldier_id'], set()).update(set_fields & set(structured.FIELDS))
+        MANUAL_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields & set(structured.FIELDS))
+        if c['action'] == 'edit':
+            EDITED_FIELDS.setdefault(c['soldier_id'], set()).update(c['fields'])
 
     # Group corrections by brigade
     by_brigade = {}
