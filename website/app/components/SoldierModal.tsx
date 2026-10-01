@@ -163,7 +163,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         {page && (
           <>
             <div className="modal-source-head">
-              <h3>Strana u knjizi</h3>
+              <h3>Reference</h3>
               {pages.length > 1 && (
                 <div className="modal-source-switch" role="group" aria-label="Knjiga">
                   {pages.map((e, i) => (
