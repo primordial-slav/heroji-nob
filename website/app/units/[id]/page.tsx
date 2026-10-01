@@ -4,6 +4,9 @@ import { units } from '@/app/data/units'
 import { sqQuotes } from '@/app/lib/typography'
 import UnitPageClient from './UnitPageClient'
 
+// Only the units below exist: any other /units/<id> is a 404, not a page rendered (and stored) on request
+export const dynamicParams = false
+
 // This tells Next.js which dynamic routes to pre-generate for static export
 export function generateStaticParams() {
   return units.map((unit) => ({

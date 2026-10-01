@@ -11,8 +11,9 @@ import 'react-pdf/dist/esm/Page/TextLayer.css'
 // Self-hosted PDF.js worker (avoids CDN dependency)
 pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
 
-// Never let PDF.js compile font code with eval (also blocked by the CSP)
-const pdfOptions = { isEvalSupported: false }
+// Never let PDF.js compile font code with eval (also blocked by the CSP). Load only the parts of the book the
+// shown page needs, by range requests, rather than the whole file (up to 18 MB): without streaming and prefetch
+const pdfOptions = { isEvalSupported: false, disableStream: true, disableAutoFetch: true }
 
 interface PdfViewerProps {
   pdfFile: string          // URL path like "/pdfs/prva-proleterska-1.pdf"

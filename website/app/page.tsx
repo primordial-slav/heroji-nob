@@ -1,9 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { units } from './data/units'
 import { useFuseSearch } from './lib/useFuseSearch'
+import { fullRecord, loadSearchIndex } from './lib/searchIndex'
 import type { Soldier } from './lib/types'
 import SoldierModal from './components/SoldierModal'
 import SoldierResults, { countBorci } from './components/SoldierResults'
@@ -21,6 +22,8 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [loadFailed, setLoadFailed] = useState(false)
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
+  // The soldier whose full record is being loaded for the dialog
+  const opening = useRef<Soldier | null>(null)
   const [unitLists, setUnitLists] = useState<Map<string, Soldier[]>>(new Map())
 
   const { results, searchTerm, setSearchTerm, isSearching } = useFuseSearch(
@@ -29,16 +32,10 @@ export default function Home() {
   )
 
   useEffect(() => {
-    // Load every unit's list in the background; the page is usable meanwhile
+    // Load every unit's list in the background, in its short search form; the page is usable meanwhile
     const loadAllSoldiers = async () => {
       try {
-        const lists = await Promise.all(
-          units.map(async (unit) => {
-            const response = await fetch(unit.dataFile)
-            const data: Soldier[] = await response.json()
-            return data.map((soldier) => ({ ...soldier, unit: unit.name }))
-          })
-        )
+        const lists = await loadSearchIndex(units)
         // Each unit's whole list, linked soldiers included, for the comrades tree in the record dialog
         setUnitLists(new Map(units.map((unit, i) => [unit.name, lists[i]])))
         // A soldier linked across units (an entry from another unit's book in other_sources) is listed once,
@@ -69,12 +66,20 @@ export default function Home() {
     // The site name and "Početna" start the page over, also when it is already open
     const reset = () => {
       setSearchTerm('')
+      opening.current = null
       setSelectedSoldier(null)
       window.scrollTo({ top: 0 })
     }
     window.addEventListener(HOME_RESET, reset)
     return () => window.removeEventListener(HOME_RESET, reset)
   }, [setSearchTerm])
+
+  // The search list has only what search shows; the dialog gets the soldier's full record
+  const openSoldier = async (soldier: Soldier) => {
+    opening.current = soldier
+    const record = await fullRecord(soldier).catch(() => soldier)
+    if (opening.current === soldier) setSelectedSoldier(record)
+  }
 
   const hasQuery = searchTerm.trim().length > 0
 
@@ -135,13 +140,13 @@ export default function Home() {
             <SoldierResults
               results={results}
               showUnit
-              onSelect={setSelectedSoldier}
+              onSelect={openSoldier}
               scrollTargetId="results"
             />
           )
         ) : (
           <>
-            {!loadFailed && <OnThisDay soldiers={allSoldiers} loading={loading} onSelect={setSelectedSoldier} />}
+            {!loadFailed && <OnThisDay soldiers={allSoldiers} loading={loading} onSelect={openSoldier} />}
             <div className="section-head">
               <h2>Jedinice</h2>
               <p className="section-note">Izaberite jedinicu da vidite ceo spisak.</p>
@@ -171,7 +176,7 @@ export default function Home() {
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
           unitSoldiers={unitLists.get(selectedSoldier.unit ?? '')}
-          onOpen={setSelectedSoldier}
+          onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />
       )}
