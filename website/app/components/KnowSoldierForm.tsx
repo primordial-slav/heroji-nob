@@ -8,6 +8,9 @@ import { shrinkPhoto } from '@/app/lib/images'
 import { wasDelivered } from '@/app/lib/formsubmit'
 
 const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
+// FormSubmit's AJAX endpoint drops attachments; its regular endpoint keeps them but answers with a page we
+// can't read cross-origin. So the text goes through AJAX (and we know it arrived), the photo separately here.
+const PHOTO_ENDPOINT = `https://formsubmit.co/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
 // The form service takes at most 10 MB per message
 const MAX_PHOTO_BYTES = 9_500_000
 
@@ -24,6 +27,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [mayPublish, setMayPublish] = useState(false)
+  const [photoLost, setPhotoLost] = useState(false)
   const fileInput = useRef<HTMLInputElement>(null)
 
   const canSend = (story.trim() || photo) && name.trim() && !photoError
@@ -62,27 +66,43 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
     if (email.trim()) fields._replyto = email.trim()
 
     try {
-      let res: Response
-      if (photo) {
-        const blob = await shrinkPhoto(photo)
-        if (blob.size > MAX_PHOTO_BYTES) {
-          setPhotoError('Fotografija je prevelika. Pošaljite manju (do 9 MB).')
-          setStatus('open')
-          return
-        }
+      const blob = photo ? await shrinkPhoto(photo) : null
+      if (photo && blob && blob.size > MAX_PHOTO_BYTES) {
+        setPhotoError('Fotografija je prevelika. Pošaljite manju (do 9 MB).')
+        setStatus('open')
+        return
+      }
+      if (photo) fields['Fotografija'] = 'stiže u posebnoj poruci („Fotografija: …“)'
+
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(fields),
+      })
+      if (!(await wasDelivered(res))) {
+        setStatus('error')
+        return
+      }
+
+      if (photo && blob) {
         const body = new FormData()
-        Object.entries(fields).forEach(([k, v]) => body.append(k, v))
+        body.append('_subject', `Fotografija: ${soldier.full_name} (${soldier.soldier_id})`)
+        body.append('_template', 'table')
+        body.append('_captcha', 'false')
+        body.append('Borac', soldier.full_name)
+        body.append('ID', soldier.soldier_id)
+        body.append('Ime pošiljaoca', name)
+        if (email.trim()) body.append('_replyto', email.trim())
         const ext = blob.type === 'image/jpeg' ? 'jpg' : photo.name.split('.').pop() || 'jpg'
         body.append('Fotografija', blob, `${soldier.soldier_id}.${ext}`)
-        res = await fetch(ENDPOINT, { method: 'POST', headers: { Accept: 'application/json' }, body })
-      } else {
-        res = await fetch(ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(fields),
-        })
+        // The answer is opaque (no CORS on this endpoint); only a network error shows as a failure
+        try {
+          await fetch(PHOTO_ENDPOINT, { method: 'POST', mode: 'no-cors', body })
+        } catch {
+          setPhotoLost(true)
+        }
       }
-      setStatus((await wasDelivered(res)) ? 'sent' : 'error')
+      setStatus('sent')
     } catch {
       setStatus('error')
     }
@@ -105,6 +125,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
         <p className="know-soldier-done">
           Hvala vam. Pogledaćemo ono što ste poslali.
           {email.trim() && ' Ako nešto ne bude jasno, javićemo vam se.'}
+          {photoLost && ' Fotografija nije stigla zbog prekida veze; pošaljite je, molimo, još jednom.'}
         </p>
       </div>
     )
