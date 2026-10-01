@@ -3,7 +3,10 @@ Soldiers' own photographs, for the record popup and the memorial card. Only cert
 
 - from the books that print one in the soldier's entry: the portrait in the entry's own cell, beside its first line;
 - from the znaci.org gallery (GALLERY): a photo of one person whose caption names the soldier and agrees with our
-  record on more than the name (unit, duty, place or date of death, birthplace), each checked by hand.
+  record on more than the name (unit, duty, place or date of death, birthplace), each checked by hand;
+- from the units' own books on znaci.org (UNIT_BOOKS): a photo of one person whose printed caption names a soldier
+  whose name is the only one of its kind in the unit, and agrees with the record or the book's text on more than the
+  name, each checked by hand.
 
   Tuzlanski NOP odred (Tuzla 1988): each cell of the list may hold a portrait, left of the stacked name. A page's
   images can hold two portraits stacked in one strip, so each portrait is found on the page itself: in the band
@@ -53,6 +56,42 @@ GALLERY = [
     ('0006008279', 12072, (0.30, 0.06, 0.58, 0.66), 'komandant 13. proleterske; rođen 1917. u Srbu'),
     ('0005000433', 12431, (0.1, 0.02, 0.9, 0.715), 'rukovodilac SKOJ-a 3. sandžačke; jedina Desa Bulatović u brigadi'),
     ('0002000133', 11472, (0.25, 0.06, 0.75, 0.49), 'borac 1. ličkog odreda, "Primorac", rodom iz Novigrada kod Zadra'),
+]
+
+UNIT_BOOKS = [
+    # soldier, the unit's own book on znaci.org, its PDF page and the photo's xref, head and shoulders in it (or the
+    # whole photo), what the caption printed with the photo and our record share. The name is the only one of its
+    # kind in the unit's records.
+    ('0020000398', '00001/188_1.pdf', 45, 185, None, 'zamenik komandanta 2. bataljona, poginuo 1943. u Prekopi'),
+    ('0020000521', '00001/188_1.pdf', 178, 763, (0.32, 0.22, 0.75, 0.66), 'omladinski rukovodilac 4. bataljona'),
+    ('0020000397', '00001/188_1.pdf', 180, 775, None, 'komesar 2. i 3. bataljona, poginuo 1944. u Gorama'),
+    ('0020001636', '00001/188_1.pdf', 188, 811, None, 'komandant 2. bataljona, poginuo 1944. u Komarevu'),
+    ('0020000929', '00001/188_2.pdf', 24, 95, (0.05, 0.18, 0.8, 0.92), 'komesar čete u 4. bataljonu'),
+    ('0020001414', '00001/188_3.pdf', 3, 11, None, 'borac brigade 1944.'),
+    ('0020000023', '00001/188_3.pdf', 77, 349, (0.27, 0.05, 0.62, 0.39), 'komandant 2. bataljona, poginuo 1945. kod Brekovice'),
+    ('0026000102', '00001/196_7.pdf', 4, 29, None, 'sekretar Okružnog komiteta KPJ za užički okrug, narodni heroj'),
+    ('0026001218', '00001/196_7.pdf', 15, 137, None, 'politički komesar Ariljskog bataljona, narodni heroj'),
+    ('0026000001', '00001/196_7.pdf', 17, 157, None, 'član Okružnog komiteta KPJ, komandant mesta u Užicu 1941.'),
+    ('0026000520', '00001/196_7.pdf', 17, 161, None, 'član Okružnog komiteta KPJ, politički komesar Moravičke čete'),
+    ('0031000309', '00001/215_5.pdf', 52, 289, (0.28, 0.0, 0.7, 0.39), 'zamenik komesara bataljona, poginuo januara 1945.'),
+    ('0030000171', '00001/262_3.pdf', 11, 43, (0.38, 0.0, 0.78, 0.35), 'prvi komesar Brodske brigade, "Omega"'),
+    ('0030000246', '00001/262_4.pdf', 20, 83, None, 'komesar 2. bataljona, "Grga", posle rata poginuo kao pilot'),
+    ('0030000743', '00001/262_6.pdf', 4, 15, (0.28, 0.0, 0.74, 0.39), 'komandant 1. bataljona, "Tuna", poginuo 16. jula 1944. u Severinu'),
+    ('0038000317', '00001/275.pdf', 431, 1939, None, 'narodni heroj, komandant brigade, poginuo 3. decembra 1944. u Sremu'),
+    ('0018001884', '00001/72_13.pdf', 19, 75, None, 'narodni heroj brigade, rođen 1912. u Doljanima'),
+    ('0018000895', '00001/72_13.pdf', 22, 95, None, '"Grozda", rođena 1918. u Irigu'),
+    ('0018000957', '00001/72_13.pdf', 23, 103, None, 'narodni heroj brigade, rođen 1919. u Dicmu kod Sinja'),
+    ('0018001171', '00001/72_13.pdf', 24, 111, None, 'narodni heroj brigade, rođen 1912. u Lipi kod Bihaća'),
+    ('0018001580', '00001/72_13.pdf', 27, 131, None, 'narodni heroj brigade, iz Manđelosa'),
+    ('0018000572', '00001/72_2.pdf', 11, 51, (0.22, 0.13, 0.58, 0.46), 'prvi komandant 2. vojvođanske brigade, "Miško"'),
+    ('0008000017', '00001/89_13.pdf', 16, 71, None, 'rođena 1928. u Splitu, umrla od rana kod Nedeljščine'),
+    ('0008000173', '00001/89_7.pdf', 12, 51, None, 'rođen 1928. u Splitu, ranjen u Kijevu 1944, umro u Italiji'),
+    ('0008000935', '00001/89_7.pdf', 21, 99, None, 'mitraljezac 2. bataljona, ranjen 1944, iz Solina (posleratna fotografija)'),
+    ('0008001557', '00001/89_8.pdf', 19, 83, None, 'mitraljezac 1. čete 2. bataljona'),
+    ('0035009427', '00003/542.pdf', 324, 1607, (0.0, 0.0, 1.0, 0.85), 'sekretar bataljonskog komiteta SKOJ-a'),
+    ('0035009678', '00003/542.pdf', 360, 1781, None, 'narodni heroj, prvi komandant 32. divizije'),
+    ('0035001622', '00003/542.pdf', 363, 1805, None, 'narodni heroj, poginuo kao komandant brigade "Matija Gubec"'),
+    ('0033000720', '00003/712.pdf', 243, 1400, (0.1, 0.08, 0.55, 0.36), 'narodni heroj, pomoćnik komesara bataljona 14. brigade, poginuo 1944.'),
 ]
 
 
@@ -138,6 +177,14 @@ def main():
         im = im.crop((int(a * w), int(b * h), int(c * w), int(d * h)))
         index[sid] = {**save(im, sid), 'c': f'znaci.org, br. {pid}', 'h': f'https://znaci.org/fotografija.php?br={pid}'}
     print(f'gallery: {len(GALLERY)} portraits')
+    for sid, path, page, xref, crop, _why in UNIT_BOOKS:
+        im = F.book_image(path, xref).convert('L')
+        if crop:
+            w, h = im.size
+            im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
+        index[sid] = {**save(im, sid), 'c': 'znaci.org, knjiga o jedinici',
+                      'h': f'https://znaci.org/{path}#page={page}'}
+    print(f"units' books: {len(UNIT_BOOKS)} portraits")
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=0, sort_keys=True), encoding='utf-8')
     print(f'{len(index)} portraits → {OUT}')
     if '--sheet' in sys.argv:
