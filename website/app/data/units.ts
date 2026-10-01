@@ -46,7 +46,7 @@ export const units: Unit[] = [
     nameEn: '2nd Lika Proletarian Brigade',
     description: 'Formirana 18. avgusta 1942. u Laudonovom gaju. Poginuli, umrli i nestali borci, i oni koji su preživeli rat.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 7589,
+    soldierCount: 7591,
     dataFile: '/druga-licka-soldiers.json',
     pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf', '/pdfs/druga-licka-sjecanja-poginuli.pdf']
   },
@@ -136,7 +136,7 @@ export const units: Unit[] = [
     nameEn: '6th Krajina Assault Brigade',
     description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 1833,
+    soldierCount: 1834,
     dataFile: '/6-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/6-krajiska.pdf']
   },
