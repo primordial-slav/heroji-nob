@@ -1877,3 +1877,83 @@ body:has(.band-photo[data-ready]) header.masthead {
     grid-template-columns: minmax(0, 1fr) 6rem;
   }
 }
+
+/* ========== "Na današnji dan" (home, above the units) ========== */
+.on-this-day {
+  margin-bottom: var(--space-7);
+}
+
+.on-this-day-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  column-gap: var(--space-5);
+  border-top: 1px solid var(--rule);
+}
+
+.on-this-day-list > li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.on-this-day-list.is-loading > li {
+  height: 5rem;
+  background: linear-gradient(var(--surface-sunk), var(--surface-sunk)) 0 1rem / 55% 1rem no-repeat,
+    linear-gradient(var(--surface-sunk), var(--surface-sunk)) 0 2.6rem / 35% 0.75rem no-repeat;
+}
+
+.on-this-day-item {
+  display: grid;
+  gap: 0.125rem;
+  width: 100%;
+  min-height: 5rem;
+  padding: var(--space-3) 0;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.on-this-day-name {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  line-height: 1.3;
+}
+
+.on-this-day-item:hover .on-this-day-name {
+  color: var(--red-ink);
+}
+
+.on-this-day-meta {
+  font-size: var(--step--1);
+}
+
+.on-this-day-unit {
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.on-this-day-more {
+  margin-top: var(--space-3);
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: var(--step--1);
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.on-this-day-more:hover {
+  color: var(--red-ink);
+}
+
+@media (max-width: 640px) {
+  /* Four on a phone, so the units are not pushed far down */
+  .on-this-day-list:not(.is-all) > li:nth-child(n + 5) {
+    display: none;
+  }
+}

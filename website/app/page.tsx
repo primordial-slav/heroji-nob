@@ -11,6 +11,7 @@ import { SearchIcon } from './components/Icons'
 import { sqQuotes } from './lib/typography'
 import { searchAllPlaceholder } from './lib/totals'
 import BandPhoto from './components/BandPhoto'
+import OnThisDay from './components/OnThisDay'
 import { HOME_RESET } from './components/HomeLink'
 
 const EXAMPLES = ['Končar', 'Petar Abramović', 'Gračac']
@@ -137,6 +138,7 @@ export default function Home() {
           )
         ) : (
           <>
+            {!loadFailed && <OnThisDay soldiers={allSoldiers} loading={loading} onSelect={setSelectedSoldier} />}
             <div className="section-head">
               <h2>Jedinice</h2>
               <p className="section-note">Izaberite jedinicu da vidite ceo spisak.</p>
