@@ -109,6 +109,46 @@ export const formation: Record<string, Formation> = {
     note: 'Naredba 22. divizije 6. 9. 1944; znaci.org i bs.wikipedia: 6. 9. 1944.',
   },
   '21-tuzlanska-brigada': { date: '1944-09-19', place: 'Pašabunar kod Tuzle', source: 'https://znaci.org/00001/250_2.pdf' },
+  '4-proleterska-brigada': {
+    date: '1942-06-10', source: 'https://znaci.org/00001/148.htm',
+    note: 'Knjiga brigade (Janković): spisak boraca „na dan formiranja, 10. jun 1942.“ znaci.org odrednica: 17. 6. 1942, s. Ljubina na Zelengori.',
+  },
+  '5-proleterska-brigada': {
+    date: '1942-06-12', place: 'Smriječno kod Šavnika', source: 'https://znaci.org/odrednica.php?slug=5-proterska-crnogorska-udarna-brigada',
+    note: 'Odluka VŠ o formiranju 4. i 5. proleterske 10. 6. 1942. Knjiga brigade nije proverena.',
+  },
+  '6-istocnobosanska-brigada': {
+    date: '1942-08-02', place: 'Šekovići kod Vlasenice', source: 'https://znaci.org/odrednica.php?slug=6-istocnobosanska-proleterska-udarna-brigada',
+    note: 'Od Grupe udarnih istočnobosanskih bataljona. Knjiga brigade nije proverena.',
+  },
+  '10-hercegovacka-brigada': {
+    date: '1942-08-10', place: 'kod Donjeg Malovana, blizu Kupresa', source: 'https://znaci.org/odrednica.php?slug=10-hercegovacka-udarna-brigada',
+    note: 'Od Hercegovačkog NOP odreda i Mostarskog partizanskog bataljona. Knjiga brigade nije proverena.',
+  },
+  '7-banijska-brigada': {
+    date: '1942-09-02', source: 'https://znaci.org/00001/63_1.pdf',
+    note: 'Knjiga brigade (Đurić): Glavni štab Hrvatske naredio formiranje 2. 9. 1942, dok su bataljoni Banijskog odreda bili na putu za Moslavinu; kao brigada postrojeni nešto kasnije. sr.wikipedia: 2. 9. 1942, u Moslavini.',
+  },
+  '8-banijska-brigada': {
+    date: '1942-09-07', place: 'Obljaj kod Gline', source: 'https://znaci.org/odrednica.php?slug=8-banijska-udarna-brigada',
+    note: 'Formirana kao 8. hrvatska NO brigada, od 1, 2. i 4. bataljona Banijskog NOP odreda. Knjiga brigade nije proverena.',
+  },
+  '3-dalmatinska-brigada': {
+    date: '1942-11-12', place: 'Vrba kod Sinja', source: 'https://znaci.org/odrednica.php?slug=3-dalmatinska-udarna-brigada',
+    note: 'Od Mosećkog i Mosorskog partizanskog bataljona i Rogozničke čete. Rasformirana 6. 6. 1943. na Sutjesci, kasnije ponovo formirana.',
+  },
+  '16-banijska-brigada': {
+    date: '1942-12-26', place: 'Klasnić', source: 'https://znaci.org/odrednica.php?slug=16-banijska-udarna-brigada',
+    note: 'Formirana kao 16. hrvatska NO brigada, od po jednog bataljona 7, 8. i 15. hrvatske brigade; odrednica: „s. Klasnić (kod Ogulina)“. Rasformirana 30. 6. 1943.',
+  },
+  '7-krajiska-brigada': {
+    date: '1942-12-27', place: 'Orahovljani kod Ključa', source: 'https://znaci.org/odrednica.php?slug=7-krajiska-udarna-brigada',
+    note: 'Od krajiške polubrigade i delova 3. krajiškog NOP odreda. Knjiga brigade nije proverena.',
+  },
+  '15-majevicka-brigada': {
+    date: '1943-04-11', source: 'https://znaci.org/odrednica.php?slug=15-majevicka-udarna-brigada',
+    note: 'Majevička grupa udarnih bataljona preimenovana u Majevičku NOU brigadu, kasnije 1. pa 15. majevička. sr.wikipedia: 23. 3. 1943. Knjiga brigade nije proverena.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

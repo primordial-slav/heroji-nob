@@ -431,5 +431,95 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/druga-proleterska.jpg',
     brigadeName: 'Druga proleterska brigada',
     description: 'Poginuli, umrli i nestali borci Brigade, po mestu i danu pogibije: Sutjeska, istočna Bosna, Pljevlja i Prijepolje, zapadna Srbija, Sremski front (str. 274-278 knjige)'
+  },
+  {
+    id: 'borci-sutjeske-4-proleterska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-4-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-4-proleterska.jpg',
+    brigadeName: '4. proleterska crnogorska brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-5-proleterska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-5-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-5-proleterska.jpg',
+    brigadeName: '5. proleterska crnogorska brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-6-istocnobosanska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-6-istocnobosanska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-6-istocnobosanska.jpg',
+    brigadeName: '6. istočnobosanska proleterska brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-10-hercegovacka',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-10-hercegovacka.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-10-hercegovacka.jpg',
+    brigadeName: '10. hercegovačka brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-7-banijska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-7-banijska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-7-banijska.jpg',
+    brigadeName: '7. banijska brigada „Vasilj Gaćeša“',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-8-banijska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-8-banijska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-8-banijska.jpg',
+    brigadeName: '8. banijska brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-3-dalmatinska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-3-dalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-3-dalmatinska.jpg',
+    brigadeName: '3. dalmatinska brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-16-banijska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-16-banijska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-16-banijska.jpg',
+    brigadeName: '16. banijska brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-7-krajiska',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-7-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-7-krajiska.jpg',
+    brigadeName: '7. krajiška brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-15-majevicka',
+    title: 'Borci Sutjeske — borci brigade na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-15-majevicka.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-15-majevicka.jpg',
+    brigadeName: '15. majevička brigada',
+    description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   }
 ]

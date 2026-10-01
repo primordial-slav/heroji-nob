@@ -399,6 +399,106 @@ export const units: Unit[] = [
     soldierCount: 1011,
     dataFile: '/druga-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/druga-proleterska.pdf']
+  },
+  {
+    id: '4-proleterska-brigada',
+    name: '4. proleterska crnogorska brigada',
+    nameEn: '4th Proletarian Montenegrin Brigade',
+    description: 'Formirana 10. juna 1942. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/4-proleterska-brigada.jpg',
+    soldierCount: 1720,
+    dataFile: '/4-proleterska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf']
+  },
+  {
+    id: '5-proleterska-brigada',
+    name: '5. proleterska crnogorska brigada',
+    nameEn: '5th Proletarian Montenegrin Brigade',
+    description: 'Formirana 12. juna 1942. u Smriječnu kod Šavnika. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/5-proleterska-brigada.jpg',
+    soldierCount: 1574,
+    dataFile: '/5-proleterska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-5-proleterska.pdf']
+  },
+  {
+    id: '6-istocnobosanska-brigada',
+    name: '6. istočnobosanska proleterska brigada',
+    nameEn: '6th East Bosnian Proletarian Brigade',
+    description: 'Formirana 2. avgusta 1942. u Šekovićima kod Vlasenice. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/6-istocnobosanska-brigada.jpg',
+    soldierCount: 807,
+    dataFile: '/6-istocnobosanska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-6-istocnobosanska.pdf']
+  },
+  {
+    id: '10-hercegovacka-brigada',
+    name: '10. hercegovačka brigada',
+    nameEn: '10th Herzegovina Brigade',
+    description: 'Formirana 10. avgusta 1942. kod Kupresa. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/10-hercegovacka-brigada.jpg',
+    soldierCount: 1478,
+    dataFile: '/10-hercegovacka-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-10-hercegovacka.pdf']
+  },
+  {
+    id: '7-banijska-brigada',
+    name: '7. banijska brigada „Vasilj Gaćeša“',
+    nameEn: '7th Banija Brigade "Vasilj Gaćeša"',
+    description: 'Formirana 2. septembra 1942. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/7-banijska-brigada.jpg',
+    soldierCount: 890,
+    dataFile: '/7-banijska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-7-banijska.pdf']
+  },
+  {
+    id: '8-banijska-brigada',
+    name: '8. banijska brigada',
+    nameEn: '8th Banija Brigade',
+    description: 'Formirana 7. septembra 1942. u Obljaju kod Gline. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/8-banijska-brigada.jpg',
+    soldierCount: 834,
+    dataFile: '/8-banijska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-8-banijska.pdf']
+  },
+  {
+    id: '3-dalmatinska-brigada',
+    name: '3. dalmatinska brigada',
+    nameEn: '3rd Dalmatian Brigade',
+    description: 'Formirana 12. novembra 1942. u Vrbi kod Sinja. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/3-dalmatinska-brigada.jpg',
+    soldierCount: 1322,
+    dataFile: '/3-dalmatinska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-3-dalmatinska.pdf']
+  },
+  {
+    id: '16-banijska-brigada',
+    name: '16. banijska brigada',
+    nameEn: '16th Banija Brigade',
+    description: 'Formirana 26. decembra 1942. u Klasniću. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-16-banijska.jpg',
+    soldierCount: 591,
+    dataFile: '/16-banijska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-16-banijska.pdf']
+  },
+  {
+    id: '7-krajiska-brigada',
+    name: '7. krajiška brigada',
+    nameEn: '7th Krajina Brigade',
+    description: 'Formirana 27. decembra 1942. u Orahovljanima kod Ključa. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/7-krajiska-brigada.jpg',
+    soldierCount: 1112,
+    dataFile: '/7-krajiska-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-7-krajiska.pdf']
+  },
+  {
+    id: '15-majevicka-brigada',
+    name: '15. majevička brigada',
+    nameEn: '15th Majevica Brigade',
+    description: 'Formirana 11. aprila 1943. Borci brigade, tada 1. majevičke, u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/15-majevicka-brigada.jpg',
+    soldierCount: 510,
+    dataFile: '/15-majevicka-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-15-majevicka.pdf']
   }
   // Add more units here as you get more data
 ]

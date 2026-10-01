@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~110,400 WWII Yugoslav partisan soldiers across 39 units (34 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~121,300 WWII Yugoslav partisan soldiers across 49 units (44 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -50,8 +50,18 @@ Historical archive website for searching ~110,400 WWII Yugoslav partisan soldier
 | 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` (fallen); `data-extraction/parse_16_slavonska_rukovodioci.py` (leaders) | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 389-428: two lists of the fallen, the leaders) | 1,122 |
 | 38 | 8. Crnogorska | `data-extraction/parse_8_crnogorska.py` | `8-crnogorska-soldiers.json` | 1 PDF (Cyrillic; book pp. 471-501, 509-510) | 747 |
 | 39 | Druga proleterska | `data-extraction/parse_druga_proleterska.py` (run-on names by place and date) | `druga-proleterska-soldiers.json` | 1 PDF (Cyrillic, three columns; monograph pp. 274-278) | 1,011 |
+| 40 | 4. Proleterska crnogorska | `data-extraction/parse_borci_sutjeske.py` | `4-proleterska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,720 |
+| 41 | 5. Proleterska crnogorska | `data-extraction/parse_borci_sutjeske.py` | `5-proleterska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,574 |
+| 42 | 6. Istočnobosanska proleterska | `data-extraction/parse_borci_sutjeske.py` | `6-istocnobosanska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 807 |
+| 43 | 10. Hercegovačka | `data-extraction/parse_borci_sutjeske.py` | `10-hercegovacka-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,478 |
+| 44 | 7. Banijska "Vasilj Gaćeša" | `data-extraction/parse_borci_sutjeske.py` | `7-banijska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 890 |
+| 45 | 8. Banijska | `data-extraction/parse_borci_sutjeske.py` | `8-banijska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 834 |
+| 46 | 3. Dalmatinska | `data-extraction/parse_borci_sutjeske.py` | `3-dalmatinska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,322 |
+| 47 | 16. Banijska | `data-extraction/parse_borci_sutjeske.py` | `16-banijska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 591 |
+| 48 | 7. Krajiška | `data-extraction/parse_borci_sutjeske.py` | `7-krajiska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,112 |
+| 49 | 15. Majevička (1. majevička at the Sutjeska) | `data-extraction/parse_borci_sutjeske.py` | `15-majevicka-soldiers.json` | Borci Sutjeske, chapter (two columns) | 510 |
 
-Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`. Druga proleterska (39) prints no bios: its fallen run on, comma after comma, under each place and date ("Тјентиште (Сутјеска), 1. јуни."), so its parser reads the page itself and gives each soldier the heading's `death_place` and `death_date` (its `HEADINGS` table spells out each heading the text layer garbled).
+Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38 and 40-49 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`. Viktor Kučan's *Borci Sutjeske* (znaci.org 00001/129: every fighter at the Sutjeska, one PDF per brigade, `borci-sutjeske-<unit>.pdf`) is one parser for sixteen brigades: the ten it brings to the site (40-49) and, as a second book, six already here (1, 5, 7, 10, 36, 39; IDs from 100001). Which books on znaci.org have soldier lists is in `docs/ZNACI_ORG_SOLDIER_LIST_CATALOG.md`. Druga proleterska (39) prints no bios: its fallen run on, comma after comma, under each place and date ("Тјентиште (Сутјеска), 1. јуни."), so its parser reads the page itself and gives each soldier the heading's `death_place` and `death_date` (its `HEADINGS` table spells out each heading the text layer garbled).
 A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-; Treća proleterska's fallen: 0005010001-, its reprinted formation list: 0005020001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
@@ -171,6 +181,7 @@ PDF text extraction has recurring patterns that break name-boundary detection:
 - **Ђ and Ћ read as Б or Н**: in `8-crnogorska.pdf` the Đ names come out as B names ("Bukić" = Đukić) and the Ć names as B or N names ("Nirić" = Ćirić); `parse_8_crnogorska.letter_sections` gives them the letter back where the alphabetical list is at Đ or Ć (this book puts Ć after C). Inside a name Ћ is often К or Н ("Pavinević" = Pavićević).
 - **Italic н read as п or и**: the place-and-date headings of `druga-proleterska.pdf` come out as "Тјептиште (Сутјеска), 1. јупи" (Tjentište, 1. juni), and its names lose letters to ш ("Гапшћ" = Gašić, "Маншћ" = Milić, which its alphabetical order under the heading tells). znaci.org re-typeset this book from its OCR, so the page image shows the same errors: correct it from the place names other books print and from the list's order.
 - **Missing text-layer lines**: the 13. Proleterska text layer drops some printed lines entirely (e.g. VUJIČIĆ Rade RADE, DABIĆ Vase ŽIVKO); check the page image (`crop` the page) before concluding an entry doesn't exist.
+- **Borci Sutjeske**: the scan repeats pages (4. proleterska pp. 36-37 = 34-35; 3. dalmatinska pp. 22-23, 62-63 = 20-21, 60-61; skipped in the parser's `SKIP_PAGES`), garbles the first letter at a column's left edge ("3UDIĆ" = Budić, "Iulat" = Bulat; read back from the alphabetical order where the corpus knows the result, else left as printed), splits surnames ("DANILO VIĆ") and reads t as l, lj as li/lt, j as i or a dot in names ("Pelar", "Liubiša", "Vo.io"; repaired only where the printed form is unknown and the repaired one well known, surnames more strictly). The chapters' totals of fighters differ from their rolls by a few per cent.
 - **4. Splitska name format**: `N. SURNAME (FATHER) FIRST (NICKNAME), r. ...` — the first parenthesis is the father (genitive), a parenthesis after the given name is a nickname (`zvani X; ...`).
 
 ## Project Structure

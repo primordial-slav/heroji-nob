@@ -51,6 +51,8 @@ FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'deat
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
 # its campaign's period would be a death date, "poginuo ili nestao" a death
 PARSER_FIELDS = {39}
+# Borci Sutjeske prints the duty at the battle, then "krajem rata ..." the duty at the war's end: the first is the rank
+DUTY_BEFORE_WAR_END = set(range(40, 50))
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 
 MONTHS = ('januara|februara|marta|aprila|maja|juna|jula|avgusta|augusta|septembra|oktobra|novembra|decembra|'
@@ -449,7 +451,10 @@ class Extractor:
         out = self.life(life_text, code)
         head = out.pop('_head', '')
         out.update(self.death(text))
-        rank = self.ranks((head + ' ' if head else '') + text)
+        rank_text = (head + ' ' if head else '') + text
+        if code in DUTY_BEFORE_WAR_END:
+            rank_text = re.split(r'\bkrajem rata\b', rank_text)[0]
+        rank = self.ranks(rank_text)
         if rank:
             out['rank'] = rank
         unit = self.unit(text)

@@ -179,6 +179,56 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 1. marca 1942 v Čajniču. Padli, umrli in pogrešani borci, po kraju in dnevu smrti, od Sutjeske do sremske fronte.',
   },
+  '4-proleterska-brigada': {
+    name: '4. proletarska črnogorska brigada',
+    description:
+      'Ustanovljena 10. junija 1942. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '5-proleterska-brigada': {
+    name: '5. proletarska črnogorska brigada',
+    description:
+      'Ustanovljena 12. junija 1942 v Smriječnu pri Šavniku. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '6-istocnobosanska-brigada': {
+    name: '6. vzhodnobosanska proletarska brigada',
+    description:
+      'Ustanovljena 2. avgusta 1942 v Šekovićih pri Vlasenici. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '10-hercegovacka-brigada': {
+    name: '10. hercegovska brigada',
+    description:
+      'Ustanovljena 10. avgusta 1942 pri Kupresu. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '7-banijska-brigada': {
+    name: '7. banijska brigada "Vasilj Gaćeša"',
+    description:
+      'Ustanovljena 2. septembra 1942. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '8-banijska-brigada': {
+    name: '8. banijska brigada',
+    description:
+      'Ustanovljena 7. septembra 1942 v Obljaju pri Glini. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '3-dalmatinska-brigada': {
+    name: '3. dalmatinska brigada',
+    description:
+      'Ustanovljena 12. novembra 1942 v Vrbi pri Sinju. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '16-banijska-brigada': {
+    name: '16. banijska brigada',
+    description:
+      'Ustanovljena 26. decembra 1942 v Klasniću. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '7-krajiska-brigada': {
+    name: '7. krajiška brigada',
+    description:
+      'Ustanovljena 27. decembra 1942 v Orahovljanih pri Ključu. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '15-majevicka-brigada': {
+    name: '15. majeviška brigada',
+    description:
+      'Ustanovljena 11. aprila 1943. Borci brigade, tedaj 1. majeviške, v bitki na Sutjeski, maja in junija 1943.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -349,6 +399,56 @@ const mk: Record<string, UnitText> = {
     name: 'Втора пролетерска бригада',
     description:
       'Формирана на 1 март 1942 во Чајниче. Загинати, починати и исчезнати борци, по место и ден на загинувањето, од Сутјеска до Сремскиот фронт.',
+  },
+  '4-proleterska-brigada': {
+    name: '4-та пролетерска црногорска бригада',
+    description:
+      'Формирана на 10 јуни 1942. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '5-proleterska-brigada': {
+    name: '5-та пролетерска црногорска бригада',
+    description:
+      'Формирана на 12 јуни 1942 во Смријечно кај Шавник. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '6-istocnobosanska-brigada': {
+    name: '6-та источнобосанска пролетерска бригада',
+    description:
+      'Формирана на 2 август 1942 во Шековиќи кај Власеница. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '10-hercegovacka-brigada': {
+    name: '10-та херцеговска бригада',
+    description:
+      'Формирана на 10 август 1942 кај Купрес. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '7-banijska-brigada': {
+    name: '7-ма банијска бригада "Васиљ Гаќеша"',
+    description:
+      'Формирана на 2 септември 1942. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '8-banijska-brigada': {
+    name: '8-ма банијска бригада',
+    description:
+      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '3-dalmatinska-brigada': {
+    name: '3-та далматинска бригада',
+    description:
+      'Формирана на 12 ноември 1942 во Врба кај Сињ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '16-banijska-brigada': {
+    name: '16-та банијска бригада',
+    description:
+      'Формирана на 26 декември 1942 во Класниќ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '7-krajiska-brigada': {
+    name: '7-ма краишка бригада',
+    description:
+      'Формирана на 27 декември 1942 во Ораховљани кај Кључ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '15-majevicka-brigada': {
+    name: '15-та мајевичка бригада',
+    description:
+      'Формирана на 11 април 1943. Борците на бригадата, тогаш 1-ва мајевичка, во битката на Сутјеска, мај и јуни 1943.',
   },
 }
 
@@ -522,6 +622,56 @@ const en: Record<string, UnitText> = {
     name: '2nd Proletarian Brigade',
     description:
       'Formed on 1 March 1942 in Čajniče. Partisans who were killed, died or went missing, by place and day of death, from the Sutjeska to the Syrmian Front.',
+  },
+  '4-proleterska-brigada': {
+    name: '4th Proletarian Montenegrin Brigade',
+    description:
+      'Formed on 10 June 1942. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '5-proleterska-brigada': {
+    name: '5th Proletarian Montenegrin Brigade',
+    description:
+      'Formed on 12 June 1942 in Smriječno near Šavnik. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '6-istocnobosanska-brigada': {
+    name: '6th East Bosnian Proletarian Brigade',
+    description:
+      'Formed on 2 August 1942 in Šekovići near Vlasenica. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '10-hercegovacka-brigada': {
+    name: '10th Herzegovina Brigade',
+    description:
+      'Formed on 10 August 1942 near Kupres. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '7-banijska-brigada': {
+    name: '7th Banija Brigade "Vasilj Gaćeša"',
+    description:
+      'Formed on 2 September 1942. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '8-banijska-brigada': {
+    name: '8th Banija Brigade',
+    description:
+      'Formed on 7 September 1942 in Obljaj near Glina. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '3-dalmatinska-brigada': {
+    name: '3rd Dalmatian Brigade',
+    description:
+      'Formed on 12 November 1942 in Vrba near Sinj. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '16-banijska-brigada': {
+    name: '16th Banija Brigade',
+    description:
+      'Formed on 26 December 1942 in Klasnić. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '7-krajiska-brigada': {
+    name: '7th Krajina Brigade',
+    description:
+      'Formed on 27 December 1942 in Orahovljani near Ključ. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '15-majevicka-brigada': {
+    name: '15th Majevica Brigade',
+    description:
+      'Formed on 11 April 1943. Partisans of the brigade, then the 1st Majevica, in the Battle of the Sutjeska, May and June 1943.',
   },
 }
 

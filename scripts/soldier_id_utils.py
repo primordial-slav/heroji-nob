@@ -54,6 +54,16 @@ BRIGADE_CODES = {
     37: '16. Slavonska omladinska',
     38: '8. Crnogorska',
     39: 'Druga proleterska',
+    40: '4. Proleterska',
+    41: '5. Proleterska',
+    42: '6. Istočnobosanska',
+    43: '10. Hercegovačka',
+    44: '7. Banijska',
+    45: '8. Banijska',
+    46: '3. Dalmatinska',
+    47: '16. Banijska',
+    48: '7. Krajiška',
+    49: '15. Majevička',
     # Add new brigades here with next available code
 }
 

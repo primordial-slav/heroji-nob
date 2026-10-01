@@ -1,23 +1,4522 @@
 {
-  "source": "https://znaci.org/",
-  "surveyed_at": "2026-09-27",
-  "method": "Fetched all unit-monograph landing pages (brigade/division/odred/korpus/bataljon) from znaci.org homepage listing, then scanned each book's table of contents for keywords matching soldier-list sections (SPISAK BORACA, POPIS BORACA, SPISAK PALIH/POGINULIH/UMRLIH/PREŽIVJELIH/PRIPADNIKA, IMENIK BORACA, REGISTER BORCEV, POIMENIČNI, etc.).",
-  "totals": {
-    "unit_monographs_scanned": 211,
-    "with_soldier_list": 97,
-    "with_dedicated_pdf_section": 43,
-    "list_embedded_in_larger_pdf": 54,
-    "already_ingested": 9
+ "source": "https://znaci.org",
+ "surveyed_at": "2026-10-01",
+ "method": "Every book landing page (indexed and unlisted) read for contents headings naming a list of people; viewer books without contents on the page read from the PDF through range requests. See ZNACI_ORG_SOLDIER_LIST_CATALOG.md.",
+ "books_read": 982,
+ "books": [
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1079",
+   "title": "Rudolf Hribernik-Svarun: Dolomiti v NOB (3), Knjižnica NOV in POS, Ljubljana 1974.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 163,
+   "lists": [
+    {
+     "title": "- 15 PADLI PRVOBORCI",
+     "link": "/00003/7xx.php?broj=130&bk=1079"
+    }
+   ]
   },
-  "already_ingested": [
-    {"brigade_code": 1, "brigade": "Prva Proleterska", "source_book": "PRVA PROLETERSKA BRIGADA - ZBORNIK SEĆANJA (knjiga 4) - SPISAK BORACA", "page": "https://znaci.org/00001/97.htm"},
-    {"brigade_code": 2, "brigade": "Prva Lička \"Marko Orešković\"", "source_book": "Jovo Popović: PRVA LIČKA PROLETERSKA BRIGADA \"MARKO OREŠKOVIĆ\"", "page": "https://znaci.org/00001/137.htm"},
-    {"brigade_code": 3, "brigade": "Druga Lička", "source_book": "Ðorde Orlović: DRUGA LIČKA PROLETERSKA BRIGADA (spisak poginulih) or SJEĆANJA BORACA (110)", "page": "https://znaci.org/00001/160.htm"},
-    {"brigade_code": 4, "brigade": "Ljubljanska (10. SNOUB)", "source_book": "Damijan Guštin: LJUBLJANSKA BRIGADA (slovenščina)", "page": "https://znaci.org/"},
-    {"brigade_code": 5, "brigade": "Treća Proleterska (Sandžačka)", "source_book": "Žarko Vidović: TREĆA PROLETERSKA BRIGADA", "page": "https://znaci.org/00001/164.htm"},
-    {"brigade_code": 6, "brigade": "13. Proleterska \"Rade Končar\"", "source_book": "Todor Radošević: TRINAESTA PROLETERSKA BRIGADA \"RADE KONČAR\"", "page": "https://znaci.org/00001/69.htm"},
-    {"brigade_code": 7, "brigade": "2. Dalmatinska Proleterska", "source_book": "Branko B. Obradović: DRUGA DALMATINSKA PROLETERSKA BRIGADA - MONOGRAFIJA", "page": "https://znaci.org/00001/33.htm"},
-    {"brigade_code": 8, "brigade": "4. Splitska Udarna", "source_book": "Mate Šalov: ČETVRTA DALMATINSKA (SPLITSKA) BRIGADA", "page": "https://znaci.org/00001/89.htm"},
-    {"brigade_code": 9, "brigade": "Prva Vojvođanska", "source_book": "Đorđe Vasić - Sreta Savić: PRVA VOJVOĐANSKA BRIGADA", "page": "https://znaci.org/00003/375.htm"}
-  ]
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=841",
+   "title": "Dragoljub Mirčetić: Dvanaesta srpska brigada: od Crne Trave (Ostrozub) do Vinkovaca, Institut za savremenu Istoriju, Beograd 1991.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 421,
+   "lists": [
+    {
+     "title": "PRILOG 3: PREGLED POGINULIH I UMRLIH BORACA I RUKOVODILACA",
+     "link": "/00003/7xx.php?broj=357&bk=841"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=840",
+   "title": "Dragoljub Mirčetić Duško: Dvadeseta srpska brigada, Vojnoizdavački i novinski centar, Beograd 1986.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 408,
+   "lists": [
+    {
+     "title": "PREGLED POGINULIH I UMRLIH BORACA I RUKOVODILACA (Prilog 2)",
+     "link": "/00003/7xx.php?broj=339&bk=840"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=838",
+   "title": "Koča Jončić: Borbe sa glavninom nemačke grupe armija E na ibarsko-zapadnomoravskom pravcu u oslobađanju zapadne Srbije 1944. godine – zbornik radova naučnog skupa održanog u Kraljevu 26-27. novembra 1986. godine, Vojnoistorijski institut, Beograd 1990.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 681,
+   "lists": [
+    {
+     "title": "- Rade Jovetić: BORCI CRVENE ARMIJE PALI U BORBAMA ZA OSLOBOĐENJE KRALJEVA",
+     "link": "/00003/7xx.php?broj=527&bk=838"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=835",
+   "title": "Višnja Huzjak: Turopoljsko-posavski partizanski odred, Muzej Turopolja, Velika Gorica 1983.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 32,
+   "lists": [
+    {
+     "title": "- Popis poginulih boraca Turopoljsko-posavskog partizanskog odreda",
+     "link": "/00003/7xx.php?broj=19&bk=835"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=827",
+   "title": "Midhat Dizdarević: Radnički pokret i NOR Dervente – dokumenti i sjećanja, Opštinski odbor SUBNOR Derventa, Derventa 1972.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 289,
+   "lists": [
+    {
+     "title": "III. PREGLED IMENA PALIH BORACA, ŽRTAVA FAŠISTIČKOG TERORA, POLITIČKIH ZATVORENIKA, INTERNIRACA I DEPORTIRACA",
+     "link": "/00003/7xx.php?broj=255&bk=827"
+    },
+    {
+     "title": "; ; ; ; Pali borci narodnooslobodilačkog rata sa područja opštine Derventa",
+     "link": "/00003/7xx.php?broj=257&bk=827"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=826",
+   "title": "Borivoj Lah-Boris: Prva slovenska artilerijska brigada, Partizanska knjiga, Ljubljana 1975.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 427,
+   "lists": [
+    {
+     "title": "SEZNAM STAREŠIN",
+     "link": "/00003/7xx.php?broj=389&bk=826"
+    },
+    {
+     "title": "SEZNAM PADLIH",
+     "link": "/00003/7xx.php?broj=404&bk=826"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=825",
+   "title": "Stanko Petelin: Gradnikova brigada, Založba Borec, Ljubljana 1983.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 888,
+   "lists": [
+    {
+     "title": "- ; ; ; ;Seznam v Gradnikovi (Goriški) brigadi padlih borcev",
+     "link": "/00003/7xx.php?broj=840&bk=825"
+    },
+    {
+     "title": "- ; ; ; ;Seznam drugih borcev Gradnikove (Goriške) brigade",
+     "link": "/00003/7xx.php?broj=849&bk=825"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=824",
+   "title": "Borivoj Lah-Boris: Artilerija 9. korpusa, Partizanska knjiga, Ljubljana 1985.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 353,
+   "lists": [
+    {
+     "title": "Seznam borcev artilerije 9. korpusa NOV",
+     "link": "/00003/7xx.php?broj=316&bk=824"
+    },
+    {
+     "title": "Seznam padlih",
+     "link": "/00003/7xx.php?broj=324&bk=824"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=823",
+   "title": "Stanko Petelin: Enaintrideseta divizija, Partizanska knjiga, Ljubljana 1985.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 448,
+   "lists": [
+    {
+     "title": "Seznam poveljniškega kadra štabov 31. divizije ter Gradnikove, Prešernove in Vojkove brigade",
+     "link": "/00003/7xx.php?broj=426&bk=823"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=816",
+   "title": "Jože Šmit, Rado Bordon, Albert Klun: Peta prekomorska brigada, Čzp Soča, Nova Gorica 1969.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 342,
+   "lists": [
+    {
+     "title": "SEZNAM PADLIH BORCEV IN BORK",
+     "link": "/00003/7xx.php?broj=279&bk=816"
+    },
+    {
+     "title": "SEZNAM VODILNEGA KADRA BRIGADE",
+     "link": "/00003/7xx.php?broj=297&bk=816"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=815",
+   "title": "Mile Pavlin: Petnajsta brigada, Partizanska knjiga, Ljubljana 1969.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 503,
+   "lists": [
+    {
+     "title": "SEZNAM KOMANDANTOV BRIGADE IN NAMESTNIKOV, POLITIČNIH KOMISARJEV BRIGADE TER NJIHOVIH NAMESTNIKOV OZIROMA POMOČNIKOV, NAČELNIKOV BRIGADNEGA ŠTABA TER KOMANDANTOV IN POLITIČNIH KOMISARJEV BATALJONOV",
+     "link": "/00003/7xx.php?broj=445&bk=815"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=814",
+   "title": "Lado Ambrožič Novljan: Dvanajsta brigada, Partizanska knjiga, Ljubljana 1976.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 648,
+   "lists": [
+    {
+     "title": "XII. SNOUB - SEZNAM PADLIH",
+     "link": "/00003/7xx.php?broj=609&bk=814"
+    },
+    {
+     "title": "SEZNAM BORCEV XII. SNOUB",
+     "link": "/00003/7xx.php?broj=613&bk=814"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=813",
+   "title": "Milan Guček: Šercerjeva brigada, Partizanska knjiga, Ljubljana 1973.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 550,
+   "lists": [
+    {
+     "title": "SEZNAM PADLIH",
+     "link": "/00003/7xx.php?broj=518&bk=813"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=811",
+   "title": "Maks Zadnik: Istrski odred, Partizanska knjiga, Nova Gorica 1975.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 901,
+   "lists": [
+    {
+     "title": "- ; ; ; ;~SEZNAM BORCEV",
+     "link": "/00003/7xx.php?broj=827&bk=811"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=809",
+   "title": "Tone Lotrič: Škofjeloški odred, Partizanska knjiga, Ljubljana 1971.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 335,
+   "lists": [
+    {
+     "title": "Seznam borcev odreda",
+     "link": "/00003/7xx.php?broj=314&bk=809"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=804",
+   "title": "Veseljko Huljić: Vis 1941–1945, Institut za historiju radničkog pokreta Dalmacije, Split 1979.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 656,
+   "lists": [
+    {
+     "title": "- ? Nosioci ?Spomenice 1941.? i važnija odlikovanja",
+     "link": "/00003/7xx.php?broj=578&bk=804"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=803",
+   "title": "Nedjeljko Kujundžić: Imotska krajina u NOB-u 1941–1945., Općinski odbor SUBNOR-a, Imotski 1981.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 483,
+   "lists": [
+    {
+     "title": "- PALI BORCI I ŽRTVE FAŠISTIČKOG TERORA",
+     "link": "/00003/7xx.php?broj=163&bk=803"
+    },
+    {
+     "title": "Zbirni podaci palih boraca i žrtava fašističkog terora s područja Krajine",
+     "link": "/00003/7xx.php?broj=477&bk=803"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=799",
+   "title": "Radule Butorović: Sušak i Rijeka u NOB, Centar za historiju radničkog pokreta i NOR Istre, Hrvatskog primorja i Gorskog kotara, Rijeka 1975.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 665,
+   "lists": [
+    {
+     "title": "- Članovi KPJ 1941. godine poginuli u NOB 1941?1945.",
+     "link": "/00003/7xx.php?broj=625&bk=799"
+    },
+    {
+     "title": "- Članovi SKOJ-a 1941. godine poginuli u NOB 1941?1945.",
+     "link": "/00003/7xx.php?broj=626&bk=799"
+    },
+    {
+     "title": "- Nosioci ?Partizanske spomenice 1941?",
+     "link": "/00003/7xx.php?broj=627&bk=799"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=796",
+   "title": "Branko J. Bokan: Srez Sanski Most u NOB 1941–1945. godine III, Skupština opštine Sanski Most, Sanski Most 1980.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 750,
+   "lists": [
+    {
+     "title": "- Spisak dobrovoljnih priloga sa terena sreza Sanski Most za mjesec novembar 1943. godine",
+     "link": "/00003/7xx.php?broj=211&bk=796"
+    },
+    {
+     "title": "- NARODNI HEROJI IZ DRUGIH KRAJEVA ? POGINULI NA SANSKOM SREZU",
+     "link": "/00003/7xx.php?broj=379&bk=796"
+    },
+    {
+     "title": "Spisak boraca NOB i žrtava fašističkog terora sanskog sreza 1941?1945. godine",
+     "link": "/00003/7xx.php?broj=402&bk=796"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=794",
+   "title": "Miroslav Velić, Ante V. Petrić, Mate Vuletić: Mosorski partizanski odred, Institut za historiju radničkog pokreta Dalmacije, Split 1985.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 681,
+   "lists": [
+    {
+     "title": "POPIS BORACA MOSORSKOG PARTIZANSKOG ODREDA PARTIJSKO-POLITIČKIH I TERENSKIH RADNIKA NA PODRUČJU MOSORA"
+    },
+    {
+     "title": "POPIS BORACA MOSORSKOG PARTIZANSKOG ODREDA 1942?1944.",
+     "link": "/00003/7xx.php?broj=357&bk=794"
+    },
+    {
+     "title": "POPIS BORACA KOMANDI MJESTA, PARTIJSKO-POLITIČKIH I TERENSKIH RADNIKA NA PODRUČJU MOSORA",
+     "link": "/00003/7xx.php?broj=575&bk=794"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=793",
+   "title": "Vinko Antić: Vinodolska Selca u borbi, Udruženje boraca narodnooslobodilačkog rata, Selca 1975.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 762,
+   "lists": [
+    {
+     "title": "- Popis članova mjesne organizacije Socijalističke radničke partije Jugoslavije (komunista) u Selcima 1919?1920. godine",
+     "link": "/00003/7xx.php?broj=697&bk=793"
+    },
+    {
+     "title": "- Popis poginulih boraca iz Selaca u toku NOB-a",
+     "link": "/00003/7xx.php?broj=709&bk=793"
+    },
+    {
+     "title": "- Popis pogubljenih u logorima i stradalih na drugi način",
+     "link": "/00003/7xx.php?broj=718&bk=793"
+    },
+    {
+     "title": "- Prvoborci i nosioci ?Partizanske spomenice 1941?",
+     "link": "/00003/7xx.php?broj=721&bk=793"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=792",
+   "title": "Franci Strle: Tomšičeva brigada III, Partizanska knjiga, Ljubljana 1989.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 715,
+   "lists": [
+    {
+     "title": "SEZNAM BORCEV TOMŠIČEVE BRIGADE ZA ČAS OD 16. JULIJA 1942. DO 13. JULIJA 1943, KI SO BILI IZPUŠČENI IZ SEZNAMA 2. KNJIGE ALI PA SO SE DODATNO PRIJAVILI",
+     "link": "/00003/7xx.php?broj=646&bk=792"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=790",
+   "title": "Franci Strle: Tomšičeva brigada I, Partizanska knjiga, Ljubljana 1980.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 615,
+   "lists": [
+    {
+     "title": "- SEZNAM BORCEV UDARNE GRUPE, DARIJEVE LETEČE UDARE PATRULJE IN PROLETARSKE UDARNE ČETE",
+     "link": "/00003/7xx.php?broj=535&bk=790"
+    },
+    {
+     "title": "- SEZNAM BORCEV 1. SLOVENSKEGA PROLETARSKEGA UDARNEGA BATALJONA TONETA TOMŠIČA",
+     "link": "/00003/7xx.php?broj=539&bk=790"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=788",
+   "title": "Franci Strle: Tomšičeva brigada IV, Partizanska knjiga, Ljubljana 1985.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 746,
+   "lists": [
+    {
+     "title": "SEZNAM BORCEV TOMŠIČEVE BRIGADE ZA ČAS OD 13. JULIJA 1943 DO 1. APRILA 1944.",
+     "link": "/00003/7xx.php?broj=573&bk=788"
+    },
+    {
+     "title": "SEZNAM BORCEV TOMŠIČEVE BRIGADE ZA ČAS OD 1. APRILA 1944 DO 15. MAJA 1945.",
+     "link": "/00003/7xx.php?broj=621&bk=788"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=787",
+   "title": "Franci Strle: Tomšičeva brigada II, Partizanska knjiga, Ljubljana 1986.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 941,
+   "lists": [
+    {
+     "title": "SEZNAM BORCEV TOMŠIČEVE BRIGADE ZA ČAS OD 16. JULIJA 1942 do 13. JULIJA 1943",
+     "link": "/00003/7xx.php?broj=840&bk=787"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=786",
+   "title": "Rafael Perhauc: Letalci prekomorci, Čzp Soča, Nova Gorica 1968.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 354,
+   "lists": [
+    {
+     "title": "SEZNAM VODILNEGA KADRA PRVE IN DRUGE LOVSKE ESKADRILJE TER LETALSKEGA DETASMANA NOVJ V ALŽIRIJI",
+     "link": "/00003/7xx.php?broj=319&bk=786"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=783",
+   "title": "Edvin Pervanje, Jože A. Hočevar: Četrta prekomorska brigada, Partizanska knjiga, Ljubljana 1969.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 365,
+   "lists": [
+    {
+     "title": "SEZNAM PADLIH IN UMRLIH BORCEV",
+     "link": "/00003/7xx.php?broj=327&bk=783"
+    },
+    {
+     "title": "SEZNAM VODILNEGA KADRA BRIGADE",
+     "link": "/00003/7xx.php?broj=329&bk=783"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=778",
+   "title": "Karel Levičnik: Artileristi prekomorci, Čzp Soča, Nova Gorica 1968.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 253,
+   "lists": [
+    {
+     "title": "Lojze Bukovec ? Albert Klun: Seznam padlih artileristov prekomorcev",
+     "link": "/00003/7xx.php?broj=218&bk=778"
+    },
+    {
+     "title": "ALBERT KLUN: SEZNAM VODILENGA KADRA ARTILERIJSKIH ENOT",
+     "link": "/00003/7xx.php?broj=222&bk=778"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=776",
+   "title": "Mirko Fajdiga: Zidanšekova brigada II, Partizanska knjiga, Ljubljana 1975.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 793,
+   "lists": [
+    {
+     "title": "Seznam borcev",
+     "link": "/00003/7xx.php?broj=732&bk=776"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=775",
+   "title": "Mirko Fajdiga: Bračičeva brigada II, Založba Obzorja, Maribor 1994.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 446,
+   "lists": [
+    {
+     "title": "PADLI BORCI (od ustanovitve brigade do osvoboditve)",
+     "link": "/00003/7xx.php?broj=304&bk=775"
+    },
+    {
+     "title": "BORCI, KI SO VOJNO PREŽIVELI (od ustanovitve brigade do osvoboditve)",
+     "link": "/00003/7xx.php?broj=328&bk=775"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=773",
+   "title": "Radosav Isaković - Rade: Kosovelova brigada, Partizanska knjiga, Ljubljana 1973.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 854,
+   "lists": [
+    {
+     "title": "SEZNAM PADLIH KOSOVELOVCEV",
+     "link": "/00003/7xx.php?broj=802&bk=773"
+    },
+    {
+     "title": "SEZNAM POVELJNIŠKEGA KADRA",
+     "link": "/00003/7xx.php?broj=819&bk=773"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=769",
+   "title": "Srečko Vilhar, Albert Klun: Prva in Druga prekomorska brigada, Čzp Soča, Nova Gorica 1967.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 399,
+   "lists": [
+    {
+     "title": "SEZNAM PADLIH BORCEV IN BORK PRVE IN DRUGE PREKOMORSKE BRIGADE",
+     "link": "/00003/7xx.php?broj=346&bk=769"
+    },
+    {
+     "title": "SEZNAM VODILNEGA KADRA PRVE IN DRUGE PREKOMORSKE BRIGADE",
+     "link": "/00003/7xx.php?broj=358&bk=769"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=768",
+   "title": "Borivoj Lah - Boris: Ljubljanska brigada, Partizanska knjiga, Ljubljana 1990.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 480,
+   "lists": [
+    {
+     "title": "SEZNAM BORCEV X.SNOUB LJUBLJANSKE",
+     "link": "/00003/7xx.php?broj=394&bk=768"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=756",
+   "title": "Anton Ikovic, Marijan Linasi: Koroško partizansko zdravstvo, Partizanska knjiga, Ljubljana 1985.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 401,
+   "lists": [
+    {
+     "title": "III * KOROŠKI BORCI, KI SO SE PO FEBRUARJU 1944 ZDRAVILI IZVEN PARTIZANSKIH BOLNIŠNIC (na domačijah, v bunkerjih, v enotah in v ?leganih? bolnišnicah; v ta seznam so vpisani tudi tišti ranjenci, ki so si sami vzeli življenje neposredno po ranitvi, in tišti, za katere kraj zdravljenja ni znan)",
+     "link": "/00003/7xx.php?broj=321&bk=756"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=742",
+   "title": "Ivo Matović, Rahmija Kadenić: Sarajevska operacija : učesnici govore, Vojnoizdavački i novinski centar, Beograd 1985.",
+   "category": "Sve knjige, po redosledu postavljanja, najsvežije na vrhu / ",
+   "pages": 643,
+   "lists": [
+    {
+     "title": "- Spisak učesnika *okruglog stola* sarajevska operacija",
+     "link": "/00003/7xx.php?broj=593&bk=742"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/191.htm",
+   "title": "Dr Jaša Romano: JEVREJI JUGOSLAVIJE 1941 - 1945. ŽRTVE GENOCIDA I UČESNICI NARODNOOSLOBODILAČKOG RATA",
+   "category": "Drugi svetski rat u Jugoslaviji / - posebno",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak nosilaca Partizanske spomenice 1941. g",
+     "book_page": "276",
+     "span": 2
+    },
+    {
+     "title": "Spisak Jevreja narodnih heroja Jugoslavije",
+     "book_page": "278",
+     "span": 1
+    },
+    {
+     "title": "Spisak učesnika u španskom građanskom ratu i u NOR",
+     "book_page": "278",
+     "span": 1
+    },
+    {
+     "title": "Spisak učesnika u španskom građanskom ratu i u pokretima otpora van Jugoslavije",
+     "book_page": "278",
+     "span": 1
+    },
+    {
+     "title": "Spisak učesnika u NOR",
+     "link": "191_4.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/724.htm",
+   "title": "Dragoljub Tmušić: SREMSKI FRONT",
+   "category": "Drugi svetski rat u Jugoslaviji / - posebno",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISKOVI POGINULIH BORACA PO JEDINICAMA 59"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/183.htm",
+   "title": "Mišo Leković: OFANZIVA PROLETERSKIH BRIGADA U LETO 1942.",
+   "category": "Drugi svetski rat u Jugoslaviji / - knjige domaćih autora",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA POGINULIH I NESTALIH U TOKU OFANZIVE KA ZAPADNOJ BOSNI (24. VI-30. IX 1942)",
+     "link": "183_15.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/510.htm",
+   "title": "Antun Miletić: KONCENTRACIONI LOGOR JASENOVAC 1941-1945. - Dokumenta, Knjiga I",
+   "category": "Drugi svetski rat u Jugoslaviji / -ndh",
+   "pages": null,
+   "lists": [
+    {
+     "title": "48. Spisak od 1189 logoraša koncentracionog logora Jasenovac",
+     "book_page": "117",
+     "span": 26
+    },
+    {
+     "title": "81. Spisak 553 logoraša koji su pisali dopisne karte iz koncentracionog logora Stara Gradiška",
+     "book_page": "197",
+     "span": 10
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/513.htm",
+   "title": "Antun Miletić: KONCENTRACIONI LOGOR JASENOVAC 1941-1945. - Dokumenta, Knjiga II",
+   "category": "Drugi svetski rat u Jugoslaviji / -ndh",
+   "pages": null,
+   "lists": [
+    {
+     "title": "261. Pismo sa spiskom od deset lica predviđenih za razmenu sa zarobljenicima NDH",
+     "book_page": "613",
+     "span": 3
+    },
+    {
+     "title": "309. Spisak za razmenu 50 logoraša iz logora Stara Gradiška",
+     "book_page": "706",
+     "span": 2
+    },
+    {
+     "title": "319. Spisak partizana i simpatizera koje treba razmeniti iz koncentracionog logora Jasenovac i Stara Gradiška",
+     "book_page": "722",
+     "span": 2
+    },
+    {
+     "title": "356. Spisak od 3.205 logoraša koncentracionog logora Jasenovac",
+     "book_page": "791",
+     "span": 58
+    },
+    {
+     "title": "364. Spisak 125 logoraša \"Kožare\" koncentracionog logora Jasenovac",
+     "book_page": "892",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/512.htm",
+   "title": "Antun Miletić: KONCENTRACIONI LOGOR JASENOVAC 1941-1945. - Dokumenta, Knjiga III",
+   "category": "Drugi svetski rat u Jugoslaviji / -ndh",
+   "pages": null,
+   "lists": [
+    {
+     "title": "35. Spisak 269 logoraša Jevreja koji su se 1941. godine nalazili u koncentracionom logoru Jasenovac",
+     "book_page": "77",
+     "span": 18
+    },
+    {
+     "title": "70. Spisak od 113 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "177",
+     "span": 2
+    },
+    {
+     "title": "90. Spisak od 80 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "208",
+     "span": 2
+    },
+    {
+     "title": "92. Spisak od 42 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "211",
+     "span": 1
+    },
+    {
+     "title": "96. Spisak od 121 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "216",
+     "span": 1
+    },
+    {
+     "title": "97. Spisak od 139 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "217",
+     "span": 2
+    },
+    {
+     "title": "113. Spisak od 191 logoraša krojača koncentracionog logora Jasenovac",
+     "book_page": "240",
+     "span": 2
+    },
+    {
+     "title": "120. Spisak od 49 logoraša krojačnice u koncentracionom logoru Jasenovac",
+     "book_page": "249",
+     "span": 1
+    },
+    {
+     "title": "121. Spisak od 56 logoraša iz II radionice u koncentracionom logoru Jasenovac",
+     "book_page": "249",
+     "span": 1
+    },
+    {
+     "title": "122. Spisak od 53 logoraša u koncentracionom logoru Jasenovac",
+     "book_page": "250",
+     "span": 1
+    },
+    {
+     "title": "123. Spisak od 29 logoraša koncentracionog logora Jasenovac",
+     "book_page": "251",
+     "span": 1
+    },
+    {
+     "title": "124. Nepotpun spisak logoraša (od rednog broja 81 do 104) koncentracionog logora Jasenovac",
+     "book_page": "251",
+     "span": 1
+    },
+    {
+     "title": "125. Spisak od 29 logoraša koncentracionog logora Jasenovac",
+     "book_page": "252",
+     "span": 1
+    },
+    {
+     "title": "126. Spisak od 22 logoraša koncentracionog logora Jasenovac",
+     "book_page": "252",
+     "span": 1
+    },
+    {
+     "title": "127. Spisak od 22 logoraša koncentracionog logora Jasenovac",
+     "book_page": "253",
+     "span": 4
+    },
+    {
+     "title": "128. Spisak od 50 logoraša u koncentracionom logoru Jasenovac",
+     "book_page": "253",
+     "span": 4
+    },
+    {
+     "title": "145. Spisak od 181 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "276",
+     "span": 2
+    },
+    {
+     "title": "146. Spisak žena logorašica koje su iz logora Stara Gradiška prebačene u koncentracioni logor Jasenovac",
+     "book_page": "278",
+     "span": 8
+    },
+    {
+     "title": "147. Spisak od deset žena logorašica koje su iz logora Stara Gradiška prebačene u koncentracioni logor Jasenovac",
+     "book_page": "286",
+     "span": 1
+    },
+    {
+     "title": "156. Spisak komunista, partizana i simpatizera NOP-a za razmenu iz kon-centracionog logora Jasenovac - Stara Gradiška",
+     "book_page": "308",
+     "span": 1
+    },
+    {
+     "title": "157. Spisak komunista, partizana i simpatizera NOP-a za razmenu iz kon-centracionog logora Jasenovac - Stara Gradiška",
+     "book_page": "309",
+     "span": 2
+    },
+    {
+     "title": "158. Spisak od 132 logoraša krojača u koncentracionom logoru Jasenovac",
+     "book_page": "311",
+     "span": 2
+    },
+    {
+     "title": "191. Spisak logorašica logora Stara Gradiška kojima je za mesec-dva isticalo izdržavanje kazne u logoru",
+     "book_page": "362",
+     "span": 1
+    },
+    {
+     "title": "192. Spisak logorašica logora Stara Gradiška kojima je istekao rok izdr-žavanja kazne u logoru",
+     "book_page": "363",
+     "span": 2
+    },
+    {
+     "title": "241. Brojčani popis dece nastradale u ratu prihvatne stanice Crvenog krsta u Zagrebu",
+     "book_page": "567",
+     "span": 4
+    },
+    {
+     "title": "1. Spisak od 278 logoraša sela Kukunjevci koji su ubijeni u koncentracionom logoru Gospić - Jasenovac - Stara Gradiška",
+     "book_page": "597",
+     "span": 3
+    },
+    {
+     "title": "4. Spisak od 61 muškarca, žena i dece iz sela Borovika koji su ubijeni u koncentracionom logoru Jasenovac",
+     "book_page": "609",
+     "span": 2
+    },
+    {
+     "title": "5. Spisak od 50 porodica (127 lica) sela Čenkova koji su nestali u koncentracionom logoru Jasenovac",
+     "book_page": "611",
+     "span": 1
+    },
+    {
+     "title": "6. Spisak od 201 lica iz sela Paučja koji su ubijeni u koncentracionom logoru Jasenovac",
+     "book_page": "612",
+     "span": 2
+    },
+    {
+     "title": "9. Delimičan spisak od 54 ubijena Slovenca u koncentracionom logoru Jasenovac",
+     "book_page": "661",
+     "span": 1
+    },
+    {
+     "title": "10. Spisak od 42 lica iz opštine Derventa koji su ubijeni u koncentracionom logoru Jasenovac - Stara Gradiška",
+     "book_page": "662",
+     "span": 3
+    },
+    {
+     "title": "11. Spisak od oko 1.016 Jevreja i Roma sa područja Vinkovaca koji su ubijeni u koncentracionom logoru Jasenovac",
+     "book_page": "665",
+     "span": 1
+    },
+    {
+     "title": "12. Spisak od 889 lica sa područja opštine Daruvar koji su ubijeni u koncentracionom logoru Jasenovac",
+     "book_page": "666",
+     "span": 18
+    },
+    {
+     "title": "14. Spisak od 74 lica iz Rume ubijenih u koncentracionom logoru Jasenovac",
+     "book_page": "688",
+     "span": 4
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/44.htm",
+   "title": "Radisav S. Nedović: ČAČANSKI KRAJ I NOB - SLOBODARI NA STRATIŠTIMA (Spisak žrtava Drugog svetskog rata u čačanskom kraju - ČAČAK 2009)",
+   "category": "Drugi svetski rat u Jugoslaviji / - o četnicima Draže Mihailovića",
+   "pages": null,
+   "lists": [
+    {
+     "title": "1 Spisak stanovnika čačanskog kraja koji su ubijeni izvan borbe od strane četnika Draže Mihailovića tokom Drugog svetskog rata.",
+     "link": "44_1.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/269.htm",
+   "title": "Jovan Radovanović: DRAGOLJUB DRAŽA MIHAILOVIĆ U OGLEDALU ISTORIJSKIH DOKUMENATA",
+   "category": "Drugi svetski rat u Jugoslaviji / - o četnicima Draže Mihailovića",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;Lažni spisak \"streljanih\" četnika - koji su ubijali",
+     "book_page": "288",
+     "span": 4
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/446.htm",
+   "title": "Prof. dr Smail Čekić: GENOCID NAD BOŠNJACIMA U DRUGOM SVJETSKOM RATU - DOKUMENTI",
+   "category": "Drugi svetski rat u Jugoslaviji / - o četnicima Draže Mihailovića",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak žrtava zaklanih (ubijenih) Bošnjaka februara 1943. - Podaci Komisije Federativne Narodne Republike Jugoslavije za utvrđivanje zločina okupatora i njihovih pomagača, Beograd, 1946",
+     "book_page": "605"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/27.htm",
+   "title": "PRVA PROLETERSKA BRIGADA - ZBORNIK SEĆANJA (knjiga 2)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "181 — Spisak narodnih heroja brigade",
+     "link": "/00001/27_181.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/97.htm",
+   "title": "PRVA PROLETERSKA BRIGADA - ZBORNIK SEĆANJA (knjiga 4) - SPISAK BORACA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "PRVA PROLETERSKA BRIGADA - KNJIGA 4 - SPISAK BORACA"
+    },
+    {
+     "title": "SPISAK PRIPADNIKA PRVE PROLETERSKE NARODNOOSLOBODILAČKE UDARNE BRIGADE OD 21. XII 1941. DO 15. V 1945. GODINE 13"
+    },
+    {
+     "title": "DOPUNSKI SPISAK PRIPADNIKA PRVE PROLETERSKE NARODNOOSLOBODILAČKE UDARNE BRIGADE OD 21. XII DO 15. V 1945. GODINE",
+     "link": "97_4.pdf"
+    },
+    {
+     "title": "SPISAK PRIPADNIKA BATALJONA „GARIBALDI\" PRVE PROLETERSKE NARODNOOSLOBODILAČKE UDARNE BRIGADE",
+     "link": "97_5.pdf"
+    },
+    {
+     "title": "SPISAK PRIPADNIKA PRVE PROLETERSKE NARODNOOSLOBODILAČKE UDARNE BRIGADE NA DAN FORMIRANJA 21. XII 1941.",
+     "link": "97_6.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/207.htm",
+   "title": "DALMATINCI U PRVOJ PROLETERSKOJ",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "align=\"center\"> POPIS BORACA",
+     "link": "207_4.pdf"
+    },
+    {
+     "title": "POPIS BORACA IZ DALMACIJE U PRVOJ PROLETERSKOJ BRIGADI",
+     "book_page": "467",
+     "span": 288
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/493.htm",
+   "title": "PRVI CRNOGORSKI BATALJON PRVE PROLETERSKE NOU BRIGADE - ZBORNIK SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;Spisak boraca stupili u bataljon u 1942. godini",
+     "book_page": "713",
+     "span": 12
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Spisak boraca stupili u bataljon u 1943. godini",
+     "book_page": "725",
+     "span": 12
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Spisak boraca stupili u bataljon u 1944. godini",
+     "book_page": "737",
+     "span": 41
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Spisak boraca stupili u bataljon u 1945. godini",
+     "book_page": "778",
+     "span": 10
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Spisak boraca bez kompletnih podataka",
+     "book_page": "788"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/509.htm",
+   "title": "Mitar Mitrović: RATNIM STAZAMA PROLETERA (ČETVRTI KRALJEVAČKI BATALJON PRVE PROLETERSKE NOU BRIGADE)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Fotografije poginulih i umrlih boraca dobijene od porodica",
+     "book_page": "211",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/748.php",
+   "title": "Branislav Božović: RUDARSKA ČETA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": 816,
+   "lists": [
+    {
+     "title": "Spisak boraca Rudarske čete Prve proleterske",
+     "link": "748.php?broj=426&go!=go!",
+     "pdf_page": 426,
+     "next_pdf_page": 433,
+     "book_page": "431",
+     "span": 7
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/499.htm",
+   "title": "BEOGRADSKI BATALJON PRVE PROLETERSKE NOU BRIGADE - MONOGRAFIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA BEOGRADSKOG BATALJONA 1941-1945."
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/164.htm",
+   "title": "Žarko Vidović: TREĆA PROLETERSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA I STAREŠINA NA DAN FORMIRANJA BRIGADE",
+     "link": "164_14.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/205.htm",
+   "title": "TREĆA PROLETERSKA SANDŽAČKA BRIGADA - SEĆANJA BORACA (knjiga 2)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca i starešina na dan formiranja brigade",
+     "link": "205_3.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/206.htm",
+   "title": "TREĆA PROLETERSKA SANDŽAČKA BRIGADA - SEĆANJA BORACA (knjiga 3)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca",
+     "link": "206_3.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/148.htm",
+   "title": "Blažo Janković: ČETVRTA PROLETERSKA CRNOGORSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca i starješina 4. crnogorske proleterske brigade na dan formiranja, 10. jun 1942. godine 13"
+    },
+    {
+     "title": "Borci i starješine brigade poginuli od 1942. do 1945. godine",
+     "link": "148_13.pdf"
+    },
+    {
+     "title": "Spisak narodnih heroja 631"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/287.htm",
+   "title": "ČETVRTA PROLETERSKA - ZBORNIK SJEĆANJA, knjiga 2",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA I STARJEŠINA NA DAN FORMIRANJA BRIGADE",
+     "book_page": "491",
+     "span": 82
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/137.htm",
+   "title": "Jovo Popović: PRVA LIČKA PROLETERSKA BRIGADA \"MARKO OREŠKOVIĆ\"",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca Prve proleterske brigade »Marko Orešković Krntija«",
+     "link": "/00001/137_34.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/133.htm",
+   "title": "Milorad Gončin: DRUGA KRAJIŠKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih i umrlih boraca i rukovodilaca u toku NOR-a",
+     "link": "133_15.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/160.htm",
+   "title": "Ðorde Orlović: DRUGA LIČKA PROLETERSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH, UMRLIH I NESTALIH BORACA I STAREŠINA BRIGADE 361",
+     "link": "160_21.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/110.htm",
+   "title": "DRUGA LIČKA PROLETERSKA BRIGADA - SJEĆANJA BORACA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK poginulih, umrlih i nestalih boraca Druge ličke proleterske brigade",
+     "link": "110_7.pdf"
+    },
+    {
+     "title": "SPISAK preživjelih boraca i starješina Druge ličke proleterske brigade",
+     "link": "110_8.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/224.htm",
+   "title": "Savo Trikić: TREĆA KRAJIŠKA PROLETERSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak palih boraca Treće proleterske krajiške brigade sa osnovnim matičnim pod­acima poginulih od 22. 8. 1942. do 15. 5. 1945",
+     "link": "224_18.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/31.htm",
+   "title": "TREĆA KRAJIŠKA BRIGADA - ZBORNIK SJEĆANJA, knjige 1-2",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Milan ZRILIĆ: GOJKO I NIKICA HEROJSKI SU PALI",
+     "link": "/00001/31_150.htm"
+    },
+    {
+     "title": "SPISAK BORACA TREĆE KRAJIŠKE BRIGADE NOVEMBRA 1942.",
+     "link": "/00001/31_263.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/394.htm",
+   "title": "TREĆA KRAJIŠKA BRIGADA - ZBORNIK SJEĆANJA, knjiga 3",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Đuro Vojnović: PALI SU KOMANDIR I KOMESAR",
+     "book_page": "263",
+     "span": 4
+    },
+    {
+     "title": "SPISAK boraca III proleterske krajiške brigade koji su se borili u njenom sastavu u toku rata",
+     "book_page": "579"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/108.htm",
+   "title": "Mirko Novović, Stevan Petković: PRVA DALMATINSKA PROLETERSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA 1. DALMATINSKE BRIGADE POGINULIH U TOKU NOR-a"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/227.htm",
+   "title": "TREĆA LIČKA BRIGADA - SJEĆANJA BORACA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Ilija Radaković i Rade Đukić Raco: POZDRAV KOMANDIRU OD \"POGINULOG\" BORCA",
+     "book_page": "275",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/33.htm",
+   "title": "Branko B. Obradović: DRUGA DALMATINSKA PROLETERSKA BRIGADA - MONOGRAFIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "POPIS BORACA",
+     "link": "33_25.pdf"
+    },
+    {
+     "title": "POPIS BORACA (.htm)",
+     "link": "33_1.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/577.htm",
+   "title": "DRUGA DALMATINSKA PROLETERSKA BRIGADA - SJEĆANJA BORACA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "O poginulim borcima",
+     "book_page": "570",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/94.htm",
+   "title": "Rade Zorić: ČETVRTA KRAJIŠKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH BORACA"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/163.htm",
+   "title": "Lj. Borojević, D Samardžija, R. Bašić: PETA KOZARAČKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH BORACA I RUKOVODILACA",
+     "link": "163_10.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/63.htm",
+   "title": "Ljuban Ðurić: SEDMA BANIJSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak u ratu palih boraca brigade"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/383.htm",
+   "title": "Ljuban Ðurić: OSMA BANIJSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "PREGLED palih i umrlih boraca brigade (7. septembar 1942. - 6. decembar 1944)",
+     "book_page": "247",
+     "span": 66
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/46.htm",
+   "title": "Jovan Kokot: DVANAESTA PROLETERSKA SLAVONSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "225 SPISAK ŽENA-BORACA 12. proleterske slavonske brigade (poginule, umrle ili preživele)",
+     "link": "46_225.htm"
+    },
+    {
+     "title": "226 SPISAK poginulih boraca i starješina 12. proleterske slavonske brigade",
+     "link": "46_226.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/69.htm",
+   "title": "Todor Radošević: TRINAESTA PROLETERSKA BRIGADA \"RADE KONČAR\"",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA 337"
+    },
+    {
+     "title": "Spisak palih i preživjelih boraca Trinaeste proleterske brigade »Rade Končar« (7. XI 1942 - 15. V 1945)"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/590.htm",
+   "title": "Mamula, Bašić, Vurdelja, Pekić: PRVI PROLETERSKI BATALJON HRVATSKE",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;SPISAK BORACA PRVOG PROLETERSKOG BATALJONA HRVATSKE",
+     "book_page": "262",
+     "span": 17
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/544.htm",
+   "title": "Vladimir-Dušan Matetić: 14. PRIMORSKO GORANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;SPISAK POGINULIH BORACA 14. PRIMORSKO-GORANSKE BRIGADE",
+     "book_page": "227",
+     "span": 38
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/711.htm",
+   "title": "Branko Damjanović, Savo Popović: ŠESTA KRAJIŠKA NARODNOOSLOBODILAČKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * spisak poginulih i umrlih boraca i starješina * ; ;",
+     "link": "711_2.pdf"
+    },
+    {
+     "title": "SPISAK POGINULIH I UMRLIH BORACA I STARJEŠINA ŠESTE KRAJIŠKE NOU BRIGADE",
+     "book_page": "365",
+     "span": 72
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/147.htm",
+   "title": "ŠESTA KRAJIŠKA NOU BRIGADA - RATNA SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK RATNOG KADRA ŠESTE KRAJIŠKE NOU BRIGADE 1942-1943. 739"
+    },
+    {
+     "title": "SPISAK BORACA ŠESTE KRAJIŠKE NOU BRIGADE KOJI SU PREŽIVJELI NARODNOOSLOBODILAČKI RAT 1945. 747"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/396.htm",
+   "title": "Jovan Kljajić: SEDMA KRAJIŠKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Poginuli borci 7. krajiške brigade",
+     "book_page": "350"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/186.htm",
+   "title": "SEDMA KRAJIŠKA BRIGADA - SJEĆANJA BORACA I SPISAK BORACA BRIGADE (knjiga 2)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SEDMA KRAJIŠKA BRIGADA - SJEĆANJA BORACA I SPISAK BORACA BRIGADE (knjiga 2)"
+    },
+    {
+     "title": "Preživeli i poginuli borci brigade",
+     "link": "186_2.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00002/407.htm",
+   "title": "Stevo Pravdić i Nail Redžić: 16. SLAVONSKA OMLADINSKA NOU BRIGADA \"JOŽE VLAHOVIĆ\"",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH BORACA I RUKOVODILACA",
+     "link": "/00002/407_13.pdf"
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA I RUKOVODILACA BRIGADE U POKUPLJU I NA ŽUMBERKU",
+     "link": "/00002/407_14.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/146.htm",
+   "title": "Izudin Čaušević: OSMA KRAJIŠKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih i umrlih",
+     "link": "146_7.pdf",
+     "book_page": "31"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/68.htm",
+   "title": "OSMA KRAJIŠKA BRIGADA - SJEĆANJA BORACA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "- SPISAK POGINULIH I UMRLIH 689"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/131.htm",
+   "title": "Zdravko B. Cvetković: SEDAMNAESTA SLAVONSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH BORACA 17. UDARNE BRIGADE",
+     "link": "131_9.pdf"
+    },
+    {
+     "title": "SPISAK PREŽIVJELIH BORACA 17. UDARNE BRIGADE",
+     "link": "131_10.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/101.htm",
+   "title": "Rade Roksandić, Zdravko B. Cvetković: 18. SLAVONSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih i umrlih boraca i rukovodilaca 18. udarne brigade",
+     "link": "101_5.pdf"
+    },
+    {
+     "title": "Spisak preživjelih boraca 18. slavonske udarne brigade",
+     "book_page": "226"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/167.htm",
+   "title": "Ðuro Milinović, Drago Karasijević: JEDANAESTA KRAJIŠKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK ŽENA BORACA KOJE SU SE NALAZILE U 11. KNOU BRIGADI 425"
+    },
+    {
+     "title": "KRATKI BIOGRAFSKI PODACI POGINULIH I UMRLIH ČLANOVA ŠTABA BRIGADE I ŠTABOVA BATALJONA 429"
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA 11. KOZARAČKE NOU BRIGADE 439"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/168.htm",
+   "title": "Joco Marjanović, Mile Kukolj, Milutin Vujović, Boro Gaćeša, Rade Ranilović: DVANAESTA KRAJIŠKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Poginuli borci i rukovodioci Brigade",
+     "link": "168_7.pdf"
+    },
+    {
+     "title": "Preživjeli borci i rukovodioci Brigade",
+     "link": "168_8.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/447.htm",
+   "title": "Jovo Borojević: SINOVI ŠAMARICE - treća banijska narodnooslobodilačka udarna brigada",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak pripadnika brigade",
+     "book_page": "195",
+     "span": 10
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/375.htm",
+   "title": "Đorđe Vasić - Sreta Savić: PRVA VOJVOĐANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA",
+     "book_page": "445",
+     "span": 116
+    },
+    {
+     "title": "SPISAK KOMANDNOG KADRA",
+     "book_page": "561",
+     "span": 24
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/132.htm",
+   "title": "MLADOST SLOBODI DAROVANA (PRVA VOJVOÐANSKA BRIGADA - SEĆANJA)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca Prve vojvođanske brigade",
+     "link": "132_7.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00002/408.htm",
+   "title": "PETNAESTA MAJEVIČKA BRIGADA - SJEĆANJA I ČLANCI",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "91. SPISAK BORACA 15. MAJEVIČKE NOU BRIGADE",
+     "book_page": "485"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/254.htm",
+   "title": "Bogdan Bosiočić:: 21. SLAVONSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH, UMRLIH I NESTALIH BORACA I STARJEŠINA 21. UDARNE SLAVONSKE BRIGADE",
+     "link": "254_13.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/72.htm",
+   "title": "Žarko Atanacković: DRUGA VOJVOÐANSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "4. Spisak boraca 2. vojvođanske brigade"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/70.htm",
+   "title": "Radovan Panić: TREĆA VOJVOÐANSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "- Spisak poginulih boraca i starešina 3. vojvođanske NOU brigade 479"
+    },
+    {
+     "title": "- Spisak boraca i starešina čije su sudbine ostale neutvrđene 521"
+    },
+    {
+     "title": "- Spisak preživelih boraca i starešina 3. vojvođanske NOU brigade 544"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/230.htm",
+   "title": "Špiro Lagator: ČETVRTA VOJVOÐANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak pripadnika brigade na dan 7. oktobra 1943.",
+     "book_page": "281",
+     "span": 31
+    },
+    {
+     "title": "Spisak poginulih i umrlih od 27. 9. 1943. do 1. 3. 1946.",
+     "book_page": "312"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/188.htm",
+   "title": "ČETVRTA BANIJSKA BRIGADA - ZBORNIK SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA",
+     "link": "188_4.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/102.htm",
+   "title": "Isidor Ðuković: PRVA ŠUMADIJSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Preživeli borci 1. i 2. bataljona probili su se preko Gradine 331"
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA I STAREŠINA PRVE ŠUMADIJSKE BRIGADE",
+     "link": "102_6.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/89.htm",
+   "title": "Mate Šalov: ČETVRTA DALMATINSKA (SPLITSKA) BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "POPIS BORACA 4. SPLITSKE UDARNE BRIGADE"
+    },
+    {
+     "title": "Napomene uz popis boraca",
+     "book_page": "375",
+     "span": 2
+    },
+    {
+     "title": "Popis preživjelih boraca",
+     "book_page": "397",
+     "span": 58
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/105.htm",
+   "title": "Danilo Damjanović: ŠESTA DALMATINSKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK KOMANDNOG KADRA 6. DALMATINSKE UDARNE BRIGADE 257"
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA 259"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/262.htm",
+   "title": "Nail Redžić: DVADESET PETA BRODSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA I RUKOVODIOCA KOJI SU BILI U BRODSKOJ BRIGADI U OKTOBRU 1943. god.",
+     "link": "262_11.pdf"
+    },
+    {
+     "title": "SPISAK PREŽIVELIH BORACA BRODSKE BRIGADE",
+     "link": "262_13.pdf"
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA BRODSKE BRIGADE 28. DIVIZIJE",
+     "link": "262_14.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/547.htm",
+   "title": "Milan Rako, Slavko Družijanić: JEDANAESTA DALMATINSKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "POPIS BORACA JEDANAESTE DALMATINSKE UDARNE BRIGADE",
+     "book_page": "479",
+     "span": 26
+    },
+    {
+     "title": "; ; ; ;Poginuli borci",
+     "book_page": "479",
+     "span": 26
+    },
+    {
+     "title": "; ; ; ;Nestali borci",
+     "book_page": "505",
+     "span": 2
+    },
+    {
+     "title": "; ; ; ;Preživjeli borci brigade",
+     "book_page": "507",
+     "span": 94
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/80.htm",
+   "title": "Nikola Anić: DVANAESTA DALMATINSKA UDARNA BRIGADA (PRVA OTOČKA)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "NAPOMENE I SPISAK POGINULIH"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/567.htm",
+   "title": "Grupa autora: 17. MAJEVIČKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "* spisak poginulih boraca *",
+     "link": "567_2.pdf"
+    },
+    {
+     "title": "SPISAK BORACA POGINULIH I UMRLIH U NOR"
+    },
+    {
+     "title": "SPISAK BORACA TREĆEG MAJEVlČKOG NOP ODREDA I 17. MAJEVIČKE NOU BRIGADE POGINULIH I UMRLIH U NOR",
+     "book_page": "373"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/251.htm",
+   "title": "OSAMNAESTA HRVATSKA ISTOČNOBOSANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISKOVI BORACA",
+     "link": "251_4.pdf"
+    },
+    {
+     "title": "Spisak starješinskog sastava Brigade",
+     "book_page": "573",
+     "span": 9
+    },
+    {
+     "title": "Spisak boraca 18. hrvatske istočnobosanske narodnooslobodilačke udarne brigade",
+     "book_page": "582",
+     "span": 115
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/579.htm",
+   "title": "Stevo Samardžija: 14. SREDNJOBOSANSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "21. SPISAK POGINULIH BORACA BRIGADE",
+     "book_page": "393",
+     "span": 30
+    },
+    {
+     "title": "22. SPISAK PREŽIVJELIH BORACA BRIGADE",
+     "book_page": "423",
+     "span": 36
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/122.htm",
+   "title": "Bogdan Mamula: TREĆA PRIMORSKO-GORANSKA UDARNA BRIGADA (Druga brigada 35. divizije)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak članova Štaba brigade, štabova bataljona i starješina samostalnih jedinica.",
+     "book_page": "227",
+     "span": 7
+    },
+    {
+     "title": "Spisak starješina brigade i četnih bolničara",
+     "book_page": "234",
+     "span": 7
+    },
+    {
+     "title": "Spisak poginulih pripadnika brigade",
+     "book_page": "241",
+     "span": 19
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/768.php",
+   "title": "Borivoj Lah – Boris: LJUBLJANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": 480,
+   "lists": [
+    {
+     "title": "SEZNAM BORCEV X.SNOUB LJUBLJANSKE",
+     "link": "768.php?broj=394",
+     "pdf_page": 394,
+     "next_pdf_page": 448,
+     "book_page": "394",
+     "span": 54
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/81.htm",
+   "title": "Nikola Mraović: PETA VOJVOÐANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca i starešina Pete vojvođanske brigade 429"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/769.php",
+   "title": "Srečko Vilhar, Albert Klun: PRVA IN DRUGA PREKOMORSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": 401,
+   "lists": [
+    {
+     "title": "SEZNAM PADLIH BORCEV IN BORK PRVE IN DRUGE PREKOMORSKE BRIGADE",
+     "link": "769.php?broj=346",
+     "pdf_page": 346,
+     "next_pdf_page": 358,
+     "book_page": "346",
+     "span": 12
+    },
+    {
+     "title": "SEZNAM VODILNEGA KADRA PRVE IN DRUGE PREKOMORSKE BRIGADE",
+     "link": "769.php?broj=358",
+     "pdf_page": 358,
+     "next_pdf_page": 363,
+     "book_page": "358",
+     "span": 5
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/267.htm",
+   "title": "DEVETNAESTA BIRČANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA",
+     "link": "267_5.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/243.htm",
+   "title": "Osman Ðikić: DVANAESTA HERCEGOVAČKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK poginulih boraca i starješina 12. hercegovačke NOU brigade (16. novembar 1943 - 23. maj 1945. godine)",
+     "book_page": "207",
+     "span": 15
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/537.htm",
+   "title": "ŠESTA CRNOGORSKA NARODNOOSLOBODILAČKA UDARNA BRIGADA - ZBORNIK SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "POGINULI BORCI I STARJEŠINE BRIGADE"
+    },
+    {
+     "title": "POGINULI BORCI I STARJEŠINE BRIGADE",
+     "book_page": "871"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/149.htm",
+   "title": "Milorad Gončin: ČETVRTA SRPSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA ČETVRTE SRPSKE UDARNE BRIGADE",
+     "link": "149_14.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/271.htm",
+   "title": "ČETVRTA SANDŽAČKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i rukovodilaca Četvrte sandžačke NOU brigade",
+     "book_page": "460",
+     "span": 10
+    },
+    {
+     "title": "Spisak ranjenih boraca i rukovodilaca Četvrte sandžačke NOU brigade",
+     "book_page": "470",
+     "span": 16
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/64.htm",
+   "title": "Mitar Ðurišić: SEDMA CRNOGORSKA OMLADINSKA BRIGADA \"BUDO TOMOVIĆ\"",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH BORACA"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/471.htm",
+   "title": "SEDMA CRNOGORSKA OMLADINSKA BRIGADA \"BUDO TOMOVIĆ\" - ZBORNIK SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;POGINULI BORCI I STARJEŠINE BRIGADE",
+     "book_page": "709",
+     "span": 26
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/86.htm",
+   "title": "Stanimir Jovanović, Dragoljub Mirčetić: PETA SRPSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pregled poginulih i umrlih boraca i rukovodilaca 450"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/185.htm",
+   "title": "Milutin Milković: PRVA KOSOVSKO-METOHIJSKA PROLETERSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISKOVI BORACA",
+     "link": "185_15.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/252.htm",
+   "title": "Živan M. Ninković: ŠESTA VOJVOÐANSKA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;Spisak poginulih boraca i rukovodilaca",
+     "book_page": "175",
+     "span": 25
+    },
+    {
+     "title": "; ; ; ;Spisak boraca i rukovodilaca 6. vojvođanske brigade kojima je izdata pismena zahvalnica za učešće u oslobođenju Beograda",
+     "book_page": "200",
+     "span": 7
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/277.htm",
+   "title": "Ðura Zlatković, Miloš D. Bakić: SEDMA SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca Pete južnomoravske (Sedme srpske brigade) početkom maja 1944. godine",
+     "book_page": "459",
+     "span": 11
+    },
+    {
+     "title": "Spisak poginulih, umrlih i nestalih boraca"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/450.htm",
+   "title": "Zdravko B. Cvetković: OSJEČKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK RUKOVODILACA OSJEČKE BRIGADE",
+     "book_page": "203",
+     "span": 4
+    },
+    {
+     "title": "SPISAK POGINULIH I UMRLIH BORACA OSJEČKE BRIGADE",
+     "book_page": "207",
+     "span": 12
+    },
+    {
+     "title": "SPISAK PREŽIVJELIH BORACA OSJEČKE BRIGADE",
+     "book_page": "219"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/398.htm",
+   "title": "Petar Damjanov: OSMA SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;NEZABORAVNIK (Spisak poginulih boraca Osme srpske NOU brigade)",
+     "book_page": "265",
+     "span": 34
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/546.htm",
+   "title": "Pukovnik Josip Lulik Pepo, Dr Đuro Zatezalo: KARLOVAČKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;POPIS BORACA I RUKOVODILACA KARLOVAČKE BRIGADE NA DAN FORMIRANJA U HRAŠĆU 5. OŽUJKA 1944.",
+     "book_page": "379",
+     "span": 22
+    },
+    {
+     "title": "; ; ; ;POPIS POGINULIH BORACA I RUKOVODILACA KARLOVAČKE UDARNE BRIGADE 34. UDARNE DIVIZIJE NOVJ",
+     "book_page": "401",
+     "span": 14
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/270.htm",
+   "title": "Mensur Seferović: TRINAESTA HERCEGOVAČKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Četrdeset »nestalih« boraca",
+     "book_page": "73",
+     "span": 5
+    },
+    {
+     "title": "POGINULI BORCI I STARJEŠINE 13. HERCEGOVAČKE NOU BRIGADE",
+     "book_page": "316",
+     "span": 14
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/275.htm",
+   "title": "OSMA CRNOGORSKA NOU BRIGADA - ZBORNIK SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK RUKOVODENEG KADRA BRIGADE (Štaba brigade, prištapskih jediiica i štabova bataljona) — novembra 1944. godine",
+     "book_page": "279",
+     "span": 1
+    },
+    {
+     "title": "Dragiša Vušanović: IZVLAČEĆI POGINULOG KOMANDIRA RANJENA TRI BOLNIČARA",
+     "book_page": "412",
+     "span": 3
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA I STARJEŠINA BRIGADE",
+     "link": "275_9.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/121.htm",
+   "title": "DEVETA SRPSKA UDARNA BRIGADA U STROJU I S NARODOM - spomen-knjiga",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Kako je uspostavljen imenik boraca",
+     "book_page": "45",
+     "span": 2
+    },
+    {
+     "title": "IMENIK BORACA / KRATKI ŽIVOTOPIS",
+     "book_page": "47",
+     "span": 326
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/625.htm",
+   "title": "Vladimir Hlaić: GREBENI IVANČICE - Prva zagorska udarna brigada",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca i rukovodilaca Prve zagorske udarne brigade poginulih od 8. svibnja 1944. do 15. svibnja 1945",
+     "book_page": "191"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/381.htm",
+   "title": "Radovan Timotijević: DESETA SRPSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i rukovodilaca u toku NO rata",
+     "book_page": "488"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/73.htm",
+   "title": "Nikola Božić: SEDMA VOJVOÐANSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca 7. vojvođanske udarne brigade (preživeli — poginuli i umrli posle rata)"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/71.htm",
+   "title": "Kiril Mihailovski Grujica: TREĆA MAKEDONSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "ODLIKOVANJA, NARODNI HEROJI, SPISAK POGINULIH BORACA 353"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/66.htm",
+   "title": "Svetislav Miladinović Slavko: ČETRNAESTA SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH BORACA I STAREŠINA ODREDA I BRIGADE"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/477.htm",
+   "title": "Vojislav Nikčević: 15. SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;SPISAK BORACA I RUKOVODILACA 15. SRPSKE BRIGADE",
+     "book_page": "155",
+     "span": 12
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;SPISAK POGINULIH BORACA I RUKOVODILACA 15. SRPSKE NO BRIGADE",
+     "book_page": "167",
+     "span": 4
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;SPISAK RANJENIH BORACA I RUKOVODILACA 15. SRPSKE NO BRIGADE",
+     "book_page": "171",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/274.htm",
+   "title": "Predrag Milenković: SEDAMNAESTA SRPSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca 17. srpske brigade 24. divizije NOVJ koji su preživeli rat",
+     "book_page": "317",
+     "span": 53
+    },
+    {
+     "title": "Spisak poginulih boraca 17. srpske udarne brigade",
+     "book_page": "370",
+     "span": 4
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/184.htm",
+   "title": "Nikola Božić: ROVOVI I MOSTOBRANI (OSMA VOJVOÐANSKA BRIGADA)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih i nestalih boraca Osme vojvođanske brigade",
+     "book_page": "675",
+     "span": 48
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/268.htm",
+   "title": "ČETRNAESTA HERCEGOVAČKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA KOJI SU PROŠLI KROZ 14. HERCEGOVAČKU (OMLADINSKU) BRIGADU",
+     "book_page": "243",
+     "span": 32
+    },
+    {
+     "title": "SPISAK POGINULIH BORACA 14. HERCEGOVAČKE (OMLADINSKE) NOU BRIGADE",
+     "book_page": "275"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/445.htm",
+   "title": "Milorad Gončin: 22. SRPSKA KOSMAJSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Nove jedinice, starešine i evidencija",
+     "book_page": "266",
+     "span": 2
+    },
+    {
+     "title": "POGINULI BORCI I STAREŠINE 22. SRPSKE KOSMAJSKE BRIGADE",
+     "book_page": "295",
+     "span": 24
+    },
+    {
+     "title": "PREŽIVELI BORCI I STAREŠINE 22. SRPSKE KOSMAJSKE BRIGADE",
+     "book_page": "319"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/214.htm",
+   "title": "Dragoljub Ž. Mirčetić Duško: 23. SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "PREGLED POGINULIH I UMRLIH BORACA I RUKOVODILACA (prilog 2)",
+     "book_page": "352",
+     "span": 37
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/215.htm",
+   "title": "Milorad Madić, Dušan Jončić: 25. SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i rukovodilaca",
+     "link": "215_7.pdf"
+    },
+    {
+     "title": "Spisak ranjenih boraca i rukovodilaca",
+     "book_page": "287"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/190.htm",
+   "title": "Stanko Obradović, Antun Miletić: 4. NOU BRIGADA SLAVONIJE (DRUGA BRODSKA BRIGADA)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "FOTOGRAFIJE, SPISAK POGINULIH I RANJENIH BORACA",
+     "book_page": "164"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/231.htm",
+   "title": "Isidor Ðuković: TRIDESET PRVA SRPSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Poginuli, nestali i umrli borci",
+     "book_page": "290",
+     "span": 64
+    },
+    {
+     "title": "Poginuli borci sa nepotpunim identitetom",
+     "book_page": "354",
+     "span": 109
+    },
+    {
+     "title": "Borci koji su preživeli rat",
+     "book_page": "364"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/250.htm",
+   "title": "DVADESET PRVA TUZLANSKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i starješina 21. tuzlanske NO brigade",
+     "link": "250_6.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/384.htm",
+   "title": "Dr Dušan Živković: PRVA BOKELJSKA NOU BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "- Spisak poginulih i umrlih",
+     "book_page": "315",
+     "span": 10
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/278.htm",
+   "title": "Milorad Gončin: 1. KONJIČKA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak palih boraca i rukovodilaca Prve konjičke brigade",
+     "book_page": "317",
+     "span": 4
+    },
+    {
+     "title": "Ratni spisak starešina i boraca Prve konjičke brigade",
+     "book_page": "321"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/443.htm",
+   "title": "Branislav Popov Miša: 12. VOJVOĐANSKA UDARNA BRIGADA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;SPISAK BORACA 12. VOJVOĐANSKE UDARNE BRIGADE",
+     "book_page": "206",
+     "span": 33
+    },
+    {
+     "title": "; ; ; ;SPISAK POGINULIH",
+     "book_page": "239",
+     "span": 19
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/431.htm",
+   "title": "Đorđe Momčilović: KAKO DO BRIGADE (TRINAESTA VOJVOÐANSKA BRIGADA)",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA BRIGADE",
+     "book_page": "771"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/115.htm",
+   "title": "Predrag Pejčić: PRVA I DRUGA ESKADRILA NOVJ",
+   "category": "Drugi svetski rat u Jugoslaviji / -- brigade",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spiskovi ljudstva 1. i 2. eskadrile NOVJ",
+     "book_page": "331"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/571.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 9: Osma kordunaška udarna divizija",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;PALI BORCI U JEDINICAMA OSME DIVIZIJE",
+     "book_page": "806",
+     "span": 109
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/187.htm",
+   "title": "Obrad Egić: DVA ROÐENJA DEVETE DALMATINSKE DIVIZIJE",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i rukovodilaca Devete dalmatinske NOU divizije koji su poginuli i nestali u borbama od 17. februara do 15. aprila 1943. godine",
+     "book_page": "121",
+     "span": 5
+    },
+    {
+     "title": "Spisak poginulih i nestalih boraca i rukovodilaca 3. dalmatinske NOU brigade u borbama od 14. aprila do 6. juna 1943. godine",
+     "book_page": "126",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/575.htm",
+   "title": "Dragutin Grgurević: DEVETNAESTA SJEVERNODALMATINSKA DIVIZIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "POPIS POGINULIH I UMRLIH BORACA 19. SJEVERNODALMATINSKE DIVIZIJE OD FORMIRANJA DO KRAJA RATA",
+     "book_page": "253",
+     "span": 48
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/235.htm",
+   "title": "Živojin Nikolić Brka: 22. DIVIZIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i rukovodilaca iz 22. divizije u NOR-u",
+     "book_page": "445",
+     "span": 32
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/123.htm",
+   "title": "Milojica Pantelić: 25. SRPSKA NOU DIVIZIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i rukovodilaca 25. Srpske divizije",
+     "link": "123_10.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/189.htm",
+   "title": "DVADESET OSMA SLAVONSKA NO UDARNA DIVIZIJA U SJEVEROZAPADNOJ HRVATSKOJ",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spiskovi boraca koji su poginuli u borbi za oslobođenje Ludbrega 3. 10. 1943. godine",
+     "book_page": "84",
+     "span": 5
+    },
+    {
+     "title": "Spisak utvrđenih imena boraca 17. slavonske NO udarne brigade koji su poginuli u Ludbregu 6. jula 1944. godine",
+     "book_page": "287",
+     "span": 3
+    },
+    {
+     "title": "IMENA DAVALACA DOBROVOLJNIH PRILOGA",
+     "book_page": "375"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/613.htm",
+   "title": "32. DIVIZIJA, LJUDI I DOGAĐAJI - ZBORNIK DOKUMENATA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * spisak boraca 32. divizije i zapadne grupe odreda * ; ;",
+     "link": "613_1.pdf"
+    },
+    {
+     "title": "; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; Spisak boraca 32. divizije i Zapadne grupe Odreda",
+     "book_page": "6",
+     "span": 1
+    },
+    {
+     "title": "Imena lica i učesnika i jedinica koji su se naročito istakli",
+     "book_page": "225",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/542.htm",
+   "title": "Grupa autora: 32. DIVIZIJA NOVJ",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;III. Izvori za spisak boraca 32. divizije",
+     "book_page": "674",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/641.htm",
+   "title": "Vladimir Hlaić: 34. UDARNA DIVIZIJA NOV I PO HRVATSKE",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * pregled poginulih boraca i rukovodilaca 34. divizije * ; ;",
+     "link": "641_1.pdf"
+    },
+    {
+     "title": "5. Pregled poginulih boraca i rukovodilaca 34. divizije",
+     "book_page": "401",
+     "span": 32
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/152.htm",
+   "title": "Sreta Savić: 51. VOJVOÐANSKA DIVIZIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK POGINULIH",
+     "link": "152_8.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/712.htm",
+   "title": "Mladen Vukosavljević, Drago Karasijević: 53. SREDNJOBOSANSKA NOU DIVIZIJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * spisak poginulih, zarobljenih i nestalih boraca 53. NOU srednjobosanske divizije * ; ;",
+     "link": "712_1.pdf"
+    },
+    {
+     "title": "SPISAK POGINULIH, ZAROBLJENIH I NESTALIH BORACA 53. NOU SREDNJOBOSANSKE DIVIZIJE",
+     "book_page": "217"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/61.htm",
+   "title": "Radovan Vukanović: DRUGI UDARNI KORPUS",
+   "category": "Drugi svetski rat u Jugoslaviji / -- divizije i korpusi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak komandnog sastava štabova divizija i štaba 2. udarnog korpusa",
+     "book_page": "463",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/196.htm",
+   "title": "Nikola Ljubičić: UŽIČKI ODRED \"DIMITRIJE TUCOVIĆ\"",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA UŽIČKOG PARTIZANSKOG ODREDA »DIMITRIJE TUCOVIĆ« POGINULIH U NARODNOOSLOBODILAČKOM PATU 1941-1945",
+     "link": "196_6.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/48.htm",
+   "title": "Dragoslav Parmaković: MAČVANSKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA MAČVANSKOG (PODRINSKOG) NOP ODREDA"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/279.htm",
+   "title": "Milosav Bojić: POSAVSKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak boraca odreda",
+     "book_page": "565"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/51.htm",
+   "title": "Milojica Pantelić, Radovan M. Marinković, Vladimir Nikšić: ČAČANSKI NARODNOOSLOBODILAČKI PARTIZANSKI ODRED \"Dr DRAGIŠA MIŠOVIĆ\"",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "- - - SPISAK NARODNIH HEROJA ČAČANSKOG ODREDA"
+    },
+    {
+     "title": "- - - Pali borci Čačanskog NOP odreda „Dr Dragiša Mišović\""
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/280.htm",
+   "title": "Dragoljub Dinić Mića: TOPLIČKI NARODNOOSLOBODILAČKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih i umrlih boraca i rukovodilaca Topličkog NOP odreda",
+     "book_page": "305",
+     "span": 28
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/757.php",
+   "title": "Mira Mihevc: NA NEVARNIH POTEH",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": 328,
+   "lists": [
+    {
+     "title": "PADLI BORCI",
+     "link": "757.php?broj=303",
+     "pdf_page": 303,
+     "next_pdf_page": 305,
+     "book_page": "303",
+     "span": 2
+    },
+    {
+     "title": "NOSILCI PARTIZANSKE SPOMENICE 1941",
+     "link": "757.php?broj=307",
+     "pdf_page": 307,
+     "next_pdf_page": 309,
+     "book_page": "307",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/607.htm",
+   "title": "ZAGREBAČKI PARTIZANSKI ODRED - ZBORNIK DOKUMENATA I SJEĆANJA",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Ranjeni i poginuli borci I. bataljona od 25. listopada do 28. studenoga 1944.",
+     "book_page": "373",
+     "span": 1
+    },
+    {
+     "title": "Nestali borci I. bataljona od 25. listopada do 28. studenoga 1944.",
+     "book_page": "374",
+     "span": 1
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Popis boraca Zagrebačkog partizanskog odreda",
+     "book_page": "407"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/490.htm",
+   "title": "Savo Trikić, Dušan Repajić: PROLETERSKI BATALJON BOSANSKE KRAJINE",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;SPISAK BORACA PROLETERSKOG BATALJONA SA FOTOGRAFIJAMA",
+     "book_page": "263"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/508.htm",
+   "title": "Branko J. Bokan: PRVI KRAJIŠKI NOP ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;b) Poimenični pregled članova SKOJ-a",
+     "book_page": "85",
+     "span": 1
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;a) Brojni pregled članova KPJ",
+     "book_page": "111",
+     "span": 1
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;b) Poimenični pregled članova KPJ",
+     "book_page": "112",
+     "span": 9
+    },
+    {
+     "title": "; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;Nosioci Partizanske spomenice 1941. god",
+     "book_page": "294",
+     "span": 1
+    },
+    {
+     "title": "3. Približni brojni pregled članova KPJ septembra 1942. godine",
+     "book_page": "427",
+     "span": 4
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/302.htm",
+   "title": "Esad Tihić: POSAVSKO-TREBAVSKI NOP ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORAČKOG SASTAVA POSAVSKO-TREBAVSKOG NOP ODREDA",
+     "book_page": "311",
+     "span": 91
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/469.htm",
+   "title": "Grupa autora: TUZLANSKI NARODNOOSLOBODILAČKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "IV: SPISAK BORACA"
+    },
+    {
+     "title": "Spisak boraca Tuzlanskog NOP odreda",
+     "book_page": "325",
+     "span": 114
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/558.htm",
+   "title": "Žarko Milićević: KALNIČKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;2) NAPOMENE UZ SPISAK BORACA KPO",
+     "book_page": "306",
+     "span": 5
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;3) SPISAK BORACA KPO",
+     "book_page": "311",
+     "span": 90
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/290.htm",
+   "title": "Vukašin Karanović: MOSLAVAČKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pregled nosilaca partizanske spomenice",
+     "book_page": "629",
+     "span": 4
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/541.htm",
+   "title": "Vukašin Karanović: TREĆI DIVERZANTSKI ODRED 1941-1945.",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "- Pregled boraca i starješina 3 diverzantskog odreda",
+     "book_page": "587",
+     "span": 4
+    },
+    {
+     "title": "- Pregled poginulih diverzanata",
+     "book_page": "591",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/543.htm",
+   "title": "Vujo Vidaković: PRVI TENKOVSKI BATALJON",
+   "category": "Drugi svetski rat u Jugoslaviji / -- partizanski odredi",
+   "pages": null,
+   "lists": [
+    {
+     "title": "POPIS PRIPADNIKA TENKOVSKOG VODA GRUPE PARTIZANSKIH ODREDA ZA LIKU, TENKOVSKE ČETE 1. KORPUSA NOV I PO HRVATSKE I TENKOVSKOG BATALJONA GLAVNOG ŠTABA NOV I PO HRVATSKE",
+     "book_page": "337"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/739.htm",
+   "title": "knjiga 4: Armije u strategijskoj koncepciji NOR i revolucije : okrugli sto, 15. januar 1985. : za pobedu i slobodu : učesnici govore",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak učesnika okruglog stola",
+     "book_page": "599",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/740.htm",
+   "title": "knjiga 6: Jugoslavenska mornarica u završnim operacijama za oslobođenje Jugoslavije : učesnici govore : Okrugli sto, Split, 1. marta 1985",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak učesnika na »okruglom stolu« Jugoslavenska mornarica u završnim operacijama za oslobođenje Jugoslavije",
+     "book_page": "653",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/741.htm",
+   "title": "knjiga 7: Vazduhoplovstvo u strategiji NOR : okrugli sto 21. mart 1985. : za pobedu i slobodu : učesnici govore",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak učesnika okruglog stola",
+     "book_page": "504",
+     "span": 10
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/742.htm",
+   "title": "knjiga 8: Sarajevska operacija : učesnici govore",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak učesnika »okruglog stola« sarajevska operacija",
+     "book_page": "643",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/743.htm",
+   "title": "knjiga 9: Završne operacije za oslobođenje Jugoslavije : naučni skup 23. i 24. april 1985 : za pobedu i slobodu : učesnici govore",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak učesnika na naučnom skupu »Završne operacije za oslobođenje Jugoslavije«",
+     "book_page": "882",
+     "span": 4
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/501.htm",
+   "title": "BIHAĆKA REPUBLIKA, knjiga II - ZBORNIK DOKUMENATA",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "201 Naredba vrhovnog komandanta NOV i POJ, druga Tita, od 9. januara 1943. god. o izradi mobilizacijskih spiskova vojnih obveznika",
+     "book_page": "438",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/211.htm",
+   "title": "Milorad Gončin: U ROVOVIMA SREMA",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "spisak poginulih boraca",
+     "link": "211_1.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/427.htm",
+   "title": "Nikola Božić: BATINSKA BITKA",
+   "category": "Drugi svetski rat u Jugoslaviji / - bitke i ratne operacije",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Borci 51 vojvođanske udarne divizije poginuli u batinskoj bici, novembra 1944. god. 469"
+    },
+    {
+     "title": "Borci 51. vojvođanske divizije nestali u toku batinske bitke 491"
+    },
+    {
+     "title": "Spisak pripadnika Sovjetske armije koji su poginuli u batinskoj bici između 25. oktobra i 10. decembra 1944. god. 502"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00002/418.htm",
+   "title": "Zdravko Klanjšček: NARODNOOSLOBODILAČKI RAT U SLOVENIJI 1941-1945.",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Br. 1 Spisak komandnog sastava viših jedinica NOV i PO Slovenije",
+     "book_page": "393",
+     "span": 8
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/720.htm",
+   "title": "Skupina avtorjev / gruppo di autori: KRIŽANI V BOJU ZA SVOBODO / S. CROCE NELLA LOTTA PER LA LIBERTA",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Seznami borcev in deportirancev",
+     "book_page": "113",
+     "span": 20
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/572.htm",
+   "title": "Nikola P. Ilić: KRVAVI FEBRUAR (zločin u Bojniku 1942)",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak streljanih muškaraca, žena i dece",
+     "book_page": "125",
+     "span": 12
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/538.htm",
+   "title": "Boro Majdanac: POZORIŠTE U OKUPIRANOJ SRBIJI",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;3. Spiskovi članova Pozorišta",
+     "book_page": "348",
+     "span": 32
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/751.php",
+   "title": "ISTOČNA BOSNA U NOR-u – SJEĆANJA UČESNIKA, knjiga 2.",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": 925,
+   "lists": [
+    {
+     "title": "Lazo Radivojević : Poginuli su kao borci 6. istočnobosanske brigade",
+     "link": "751.php?broj=478&go!=go!",
+     "pdf_page": 478,
+     "next_pdf_page": 485,
+     "book_page": "478",
+     "span": 7
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/106.htm",
+   "title": "Dragoje Lukić: RAT I DJECA KOZARE",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "VII - PALI KAO BORCI NARODNOOSLOBODILAČKOG RATA",
+     "link": "/00001/106_8.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/594.htm",
+   "title": "Dušan Lazić - Gojko, Brana Majski: DUDIK",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK LICA STRELJANIH U DUDIKU 1941 - 1943.",
+     "book_page": "219"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/722.htm",
+   "title": "JAJAČKO PODRUČJE U OSLOBODILAČKOM RATU I REVOLUCIJI 1941–1945. – ZBORNIK SJEĆANJA; knjiga I",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * spisak boraca sa jajačkog područja poginulih 1941. * ; ;",
+     "link": "722_1.pdf"
+    },
+    {
+     "title": "Spisak boraca sa jajačkog područja poginulih 1941.",
+     "book_page": "603"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/721.htm",
+   "title": "JAJAČKO PODRUČJE U OSLOBODILAČKOM RATU I REVOLUCIJI 1941–1945. – ZBORNIK SJEĆANJA; knjiga II",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * spisak boraca i aktivista NOP-a sa jajačkog područja poginulih 1942. godine * ; ;",
+     "link": "721_1.pdf"
+    },
+    {
+     "title": "Spisak boraca i aktivista NOP-a sa jajačkog područja poginulih 1942. godine",
+     "book_page": "549"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/685.htm",
+   "title": "knjiga 5",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pero Kecman Sjećanje na poginule borce narodne revolucije",
+     "book_page": "527",
+     "span": 15
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/687.htm",
+   "title": "knjiga 7",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pero Kecman Sjećanje na poginule borce narodne revolucije",
+     "book_page": "527",
+     "span": 15
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/585.htm",
+   "title": "ŽENE HRVATSKE U NARODNOOSLOBODILAČKOJ BORBI",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Popis poginulih drugarica boraca i rukovodioca u jedinicama na području Štaba VI. korpusa NOVJ",
+     "book_page": "301",
+     "span": 12
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/705.htm",
+   "title": "Drago Gizdić: DALMACIJA 1942.",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Ubijen Ivo Lučić-Lavčević / NOO-i ne mogu da nose posebna imena",
+     "book_page": "751",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/752.php",
+   "title": "Mijo Kos Zorko: VELIKA GORICA U NOB-U II",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": 925,
+   "lists": [
+    {
+     "title": "Popis osoba koje su od partizana primile razne stvari i robu",
+     "link": "752.php?broj=106&go!=go!",
+     "pdf_page": 106,
+     "next_pdf_page": 107,
+     "book_page": "105",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/162.htm",
+   "title": "Dušan Lazić - Gojko: SREMSKO KRVAVO LETO 1942",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spiskovi lica određenih za hapšenje i streljanje 183"
+    },
+    {
+     "title": "Tomićeva mistifikacija sastavljača spiska pohapšenih Mitrovčana 189"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/660.htm",
+   "title": "Milan Brunović, Tomo Sović: BITKA KOD OBOROVA",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Imena palih boraca",
+     "book_page": "158",
+     "span": 18
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/647.htm",
+   "title": "Grupa autora: HRVATSKO ZAGORJE U REVOLUCIJI (Školska knjiga, Zagreb 1981)",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * popis poginulih učesnika NOB-e i žrtava fašističkog terora * ; ;",
+     "link": "647_1.pdf"
+    },
+    {
+     "title": "POPIS POGINULIH UČESNIKA NOB-e",
+     "book_page": "387",
+     "span": 78
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/648.htm",
+   "title": "Grupa autora: HRVATSKO ZAGORJE U REVOLUCIJI (Epoha, Zagreb 1959)",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * popis poginulih boraca i žrtava fašističkog terora * ; ;",
+     "link": "648_1.pdf"
+    },
+    {
+     "title": "Popis poginulih boraca i žrtava fašističkog terora",
+     "book_page": "381",
+     "span": 88
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/653.htm",
+   "title": "Savo Velagić:VIROVITICA U NARODNOOSLOBODILAČKOJ BORBI I SOCIJALISTIČKOJ REVOLUCIJI",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "NOSIOCI PARTIZANSKE SPOMENICE 1941.",
+     "book_page": "221",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/144.htm",
+   "title": "SPOMEN-KNJIGA poginulih TUZLANSKIH BORACA NOR-a i žrtava fašističkog terora 1941-1945.)",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPOMEN-KNJIGA poginulih TUZLANSKIH BORACA NOR-a i žrtava fašističkog terora 1941-1945.)"
+    },
+    {
+     "title": "POGINULI BORCI NOR-a",
+     "book_page": "13",
+     "span": 288
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00002/403.htm",
+   "title": "TUZLANSKI NARODNOOSLOBODILAČKI PARTIZANSKI ODRED",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK BORACA",
+     "link": "/00002/403_4.pdf"
+    },
+    {
+     "title": "Spisak boraca Tuzlanskog NOP odreda",
+     "book_page": "325",
+     "span": 114
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/109.htm",
+   "title": "PRILOG U KRVI (PLJEVLJA 1941-1945)",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Poginuli borci",
+     "link": "109_4.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/292.htm",
+   "title": "OSLOBOÐENJE KRUŠEVCA 1944. GODINE - Zbornik dokumenata, studija i sećanja učesnika i savremenika",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "32. Spisak poginulih boraca za oslobođenje Kruševca",
+     "link": "292_32.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/247.htm",
+   "title": "Dragoslav Dimitrijević - Beli: KOSMAJSKI PARTIZANI (knjiga II)",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "PREGLED ČLANOVA ŠTABA KOSMAJSKOG NOP ODREDA \"RADE JOVANOVIĆ\"",
+     "book_page": "333",
+     "span": 2
+    },
+    {
+     "title": "SPISAK UČESNIKA NARODNOOSLOBODILAČKE BORBE SA KOJIMA JE PISAC RAZGOVARAO PRIKUPLJAJUĆI PODATKE ZA PISANJE OVE KNJIGE",
+     "book_page": "361",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/698.htm",
+   "title": "Grupa autora: ČAČANSKI KRAJ U NOB – PALI BORCI I ŽRTVE 1941—1945.",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Grupa autora: ČAČANSKI KRAJ U NOB – PALI BORCI I ŽRTVE"
+    },
+    {
+     "title": "Narodni heroji pali u NOR-u",
+     "book_page": "397",
+     "span": 10
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/696.htm",
+   "title": "Jovan R. Radovanović: POŽEGA U NOR I REVOLUCIJI 1941—1945",
+   "category": "Drugi svetski rat u Jugoslaviji / - ratna zbivanja po oblastima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata 1941-1945. * ; ;",
+     "link": "696_1.pdf"
+    },
+    {
+     "title": "SPISAK PALIH BORACA NOR-a, ŽRTAVA FAŠISTIČKOG TERORA I CIVILNIH ŽRTAVA RATA 1941—1945. GODINE U SREZU POŽEŠKOM (Dragoljub Munjić)",
+     "book_page": "477",
+     "span": 4
+    },
+    {
+     "title": "1. Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine",
+     "book_page": "611",
+     "span": 4
+    },
+    {
+     "title": "2. Spisak boraca 2. požeške čete od 22. septembra 1941. do 1. marta 1942. godine",
+     "book_page": "615",
+     "span": 4
+    },
+    {
+     "title": "4. Spisak boraca na obezbeđivanju objekata u Požegi i Jeminskoj Steni od 22. septembra do 29. novembra 1941. godine",
+     "book_page": "620",
+     "span": 2
+    },
+    {
+     "title": "5. Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941.",
+     "book_page": "622",
+     "span": 3
+    },
+    {
+     "title": "7. Spisak lica u Požegi Užičkoj i njihovih porodica koji su učestvovali u partizanskim odredima ili bili pristalice ili simpatizeri njihovi",
+     "book_page": "626",
+     "span": 5
+    },
+    {
+     "title": "10. Spisak boraca 1. čete 5. bataljona Užičkog NOP odreda 1944. godine",
+     "book_page": "634",
+     "span": 1
+    },
+    {
+     "title": "11. Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade",
+     "book_page": "635",
+     "span": 3
+    },
+    {
+     "title": "13. Nosioci „Partizanske spomenice 1941''",
+     "book_page": "640",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/4_24_2.htm",
+   "title": "knjiga 2",
+   "category": "Drugi svetski rat u Jugoslaviji / - antifašistička borba u gradovima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Anica Rakar-Magašić Bosiljka Krajačić Dina Zlatić Štefica Cmojevac Zlata Marušić RAD ODBORA ZA PRIHVAĆANJE I SMJEŠTAJ ŠPANJOLSKIH DOBROVOLJACA Javke i stanovi — Popis španjolskih dobrovoljaca — Organizacija je bila odlična",
+     "book_page": "281",
+     "span": 3
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/217.htm",
+   "title": "Revolucionarni omladinski pokret u Zagrebu 1941-1945 - I - Zbornik povijesnih pregleda i sjećanja",
+   "category": "Drugi svetski rat u Jugoslaviji / - antifašistička borba u gradovima",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Internirani đaci — Kućni red i život u »novoj zgra­di« — Loša i nedovoljna ishrana — Oslobođenje Lepoglave — Popularni drug i pjesnik »Farbica« — Popis zatočenih srednjoškolaca u Lepoglavi",
+     "book_page": "381",
+     "span": 7
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/652.htm",
+   "title": "Dr Kažimir Pribilović: ČETVRTI POMORSKI OBALNI SEKTOR MORNARICE NARODNOOSLOBODILAČKE VOJSKE JUGOSLAVIJE 1943-1945.",
+   "category": "Drugi svetski rat u Jugoslaviji / - mornarica",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Prilog III Poginuli i umrli borci IV POS-a",
+     "book_page": "473",
+     "span": 6
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/199.htm",
+   "title": "knjiga IV",
+   "category": "Drugi svetski rat u Jugoslaviji / - različite službe",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK LEKARA POGINULIH U NOR-U",
+     "link": "199_15.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/766.php",
+   "title": "Grupa autora: VOJNOTEHNIČKA RADIONICA VRHOVNOG ŠTABA NOV I POJ U GRMEČU",
+   "category": "Drugi svetski rat u Jugoslaviji / - različite službe",
+   "pages": 368,
+   "lists": [
+    {
+     "title": ";: SPISAK RADNIKA I UČESNIKA U VTR",
+     "link": "766.php?broj=359",
+     "pdf_page": 359,
+     "next_pdf_page": 365,
+     "book_page": "359",
+     "span": 6
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/399.htm",
+   "title": "Miodrag Đ. Zečević, Jovan P. Popović: DOKUMENTI IZ ISTORIJE JUGOSLAVIJE, DRŽAVNA KOMISIJA ZA UTVRĐIVANJE ZLOČINA OKUPATORA I NJIHOVIH POMAGAČA IZ DRUGOG SVETSKOG RATA;, III tom",
+   "category": "Drugi svetski rat u Jugoslaviji / - zločini",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK PRIPADNIKA OKUPACIONIH SNAGA ITALIJE, BUGARSKE I NEOKUPACIONIH NARODA ZA KOJE JE DRŽAVNA KOMISIJA UTVRDILA DA SU RATNI ZLOČINCI"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/444.htm",
+   "title": "Miodrag Đ. Zečević, Jovan P. Popović: DOKUMENTI IZ ISTORIJE JUGOSLAVIJE, DRŽAVNA KOMISIJA ZA UTVRĐIVANJE ZLOČINA OKUPATORA I NJIHOVIH POMAGAČA IZ DRUGOG SVETSKOG RATA;, IV tom",
+   "category": "Drugi svetski rat u Jugoslaviji / - zločini",
+   "pages": null,
+   "lists": [
+    {
+     "title": "SPISAK PRIPADNIKA OKUPACIONIH SNAGA MAĐARSKE I NEMAČKE ZA KOJE JE DRŽAVNA KOMISIJA UTVRDILA DA SU RATNI ZLOČINCI ZA ZLOČINE VRŠENE U JUGOSLAVIJI",
+     "book_page": "335",
+     "span": 2
+    },
+    {
+     "title": "SPISAK PRIPADNIKA OKUPACIONIH SNAGA MAĐARSKE I NEMAČKE KOJE JE KOMISIJA UJEDINJENIH NACIJA PROGLASILA ZA RATNE ZLOČINCE ILI IH OSUMNJIČILA ZA ZLOČINE VRŠENE U JUGOSLAVIJI",
+     "book_page": "773",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/665.htm",
+   "title": "PARTIZANSKA I KOMUNISTIČKA REPRESIJA I ZLOČINI U HRVATSKOJ 1944. - 1946.; DOKUMENTI 3 – Zagreb i središnja Hrvatska",
+   "category": "Drugi svetski rat u Jugoslaviji / - zločini",
+   "pages": null,
+   "lists": [
+    {
+     "title": "216. 1945., kolovoz 29., Zagreb - OZN-a za Zagreb, Odsjek kvartova, dostavlja Opunomoćeništvu OZN-e III. za Zagreb popis deset „problematičnih” građana kojima je zabranjeno glasovanje, te napominje da za ostale za koje su tražili podatke, provjeru obave sami i donesu odluku",
+     "book_page": "634",
+     "span": 2
+    },
+    {
+     "title": "335. 1946., veljača 19., Glina - Učenici Realne gimnazije u Glini, sudionici II. konferencije Narodnog saveza omladine u Glini, traže od nadležnih da se iz škole „odstrane” učenici, čija imena navode, „zbog njihova protunarodnog rada”",
+     "book_page": "806",
+     "span": 2
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/57.htm",
+   "title": "Radovan Panic: TRECA VOJVODJANSKA NOU BRIGADA",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Spisak poginulih boraca i starešina 3. vojvođanske NOU brigade",
+     "link": "57_49.htm"
+    },
+    {
+     "title": "Spisak boraca i starešina čije su sudbine ostale neutvrđene",
+     "link": "57_50.htm"
+    },
+    {
+     "title": "Spisak preživelih boraca i starešina 3. vojvođanske NOU brigade",
+     "link": "57_51.htm"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00001/145.htm",
+   "title": "ZEMALJSKO ANTIFASISTIČKO VIJECE NARODNOG OSLOBODJENJA BOSNE I HERCEGOVINE - DOKUMENTI 1943- 1944. (KNJIGA I)",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "— Spisak članova ZAVNOBiH-a i članova AVNOJ-a izabranih na Prvom zasjedanju ZAVNOBiH-a",
+     "book_page": "58",
+     "span": 10
+    },
+    {
+     "title": "— Spisak članova Predsjedništva ZAVNOBAH-,a izabranih na Prvom zasjedanju ZAVNOBiH-a",
+     "book_page": "68",
+     "span": 1
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00002/326.htm",
+   "title": "Vladimir Geiger: LJUDSKI GUBICI HRVATSKE U DRUGOME SVJETSKOM RATU I U PORACU KOJE SU PROUZROČILI NARODNOOSLOBODILACKA VOJSKA I PARTIZANSKI ODREDI JUGOSLAVIJE/JUGOSLAVENSKA ARMIJA I KOMUNISTICKA VLAST",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Vladimir Geiger: LJUDSKI GUBICI HRVATSKE U DRUGOME SVJETSKOM RATU I U PORAĆU KOJE SU PROUZROČILI NARODNOOSLOBODILAČKA VOJSKA I PARTIZANSKI ODREDI JUGOSLAVIJE/JUGOSLAVENSKA ARMIJA I KOMUNISTIČKA VLAST Brojidbeni pokazatelji (procjene, izračuni, popisi)",
+     "link": "326.pdf"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00002/427.htm",
+   "title": "Nikola Bozic: BATINSKA BITKA",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Borci 51 vojvođanske udarne divizije poginuli u batinskoj bici, novembra 1944. god.",
+     "book_page": "469",
+     "span": 22
+    },
+    {
+     "title": "Borci 51. vojvođanske divizije nestali u toku batinske bitke",
+     "book_page": "491",
+     "span": 11
+    },
+    {
+     "title": "Spisak pripadnika Sovjetske armije koji su poginuli u batinskoj bici između 25. oktobra i 10. decembra 1944. god.",
+     "book_page": "502",
+     "span": 59
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/458.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 14: Kotar Donji Lapac u narodnooslobodilackom ratu 1941-1945.",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ;Pali borci s područja kotara Donji Lapac 1941-1945",
+     "book_page": "1041",
+     "span": 54
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/487.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 7: Plascanska dolina i okolica u NOR-u 1941-1945.",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;Pali borci s područja Plaščanske doline i okolice 1941-1945",
+     "book_page": "689",
+     "span": 13
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/489.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 10: Kotar Korenica i Kotar Udbina u NOR-u i socijalistickoj izgradnji",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "GOJKO VEZMAR: Uz popis palih boraca, žrtava fašističkog terora i umrlih od tifusa na području općine Titova Korenica",
+     "book_page": "965",
+     "span": 25
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Pali borci s područja kotara Korenica i kotara Udbina 1941-1945",
+     "book_page": "990",
+     "span": 50
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/497.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 18: Kotar Slunj i kotar Veljun u NOR i socijalistickoj izgradnji - 2. deo",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pali borci s područja kotara Slunja i kotara Veljuna 1941-1945",
+     "book_page": "919",
+     "span": 59
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/587.htm",
+   "title": "Dušan D. Miljković: STRADANJA U CAZINSKOJ KRAJINI I ANTIFAŠISTIČKA BORBA (1941-1945)",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "B)Spisak palih boraca u Cazinskoj krajini",
+     "book_page": "430",
+     "span": 6
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/616.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 15: DUGA RESA; Radovi iz dalje prošlosti NOB-e i socijalističke izgradnje",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "NIKOLA D. CIMEŠA PERO VRANJEŠ Prvi poginuli borac Partizanskog odreda Perjasica",
+     "book_page": "1038",
+     "span": 1
+    },
+    {
+     "title": "Pali borci s područja sadašnje općine Duga Resa"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/617.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, monografija 4; Dr Đuro Zatezalo: NARODNA VLAST NA KORDUNU, BANIJI I LICI 1941-1945.",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "37. Br. 37: 22. juni 1944. Popis članova gospodarskih komisija kotarskog, općinskih i seoskih NOO-a na dvorskom kotaru",
+     "book_page": "415",
+     "span": 5
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/638.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 13: Kotar Gračac u narodnooslobodilačkom ratu 1941-1945. - 1. deo",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; * narodni heroji; pali borci; žrtve fašističkog terora; umrli od tifusa * ; ;",
+     "link": "638_1.pdf"
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;PALI BORCI S PODRUČJA GRAČAC 1941—1945.",
+     "book_page": "917",
+     "span": 48
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/640.htm",
+   "title": "Mile Mrkalj: SJENIČAK; KRONIKA KORDUNAŠKOG SELA",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "; ; ; ; ; ; ; ;Pali i umrli borci 1941—1945.",
+     "book_page": "330",
+     "span": 9
+    },
+    {
+     "title": "; ; ; ; ; ; ; ;Nosioci »Partizanske spomenice 1941«",
+     "book_page": "385"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/642.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 20: Kotar Gospić i kotar Perušić u narodnooslobodilačkom ratu 1941-1945.",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pali borci s područja kotara Gospić i kotara Perušić 1941—1945."
+    },
+    {
+     "title": "Nosioci partizanske spomenice 1941. godine",
+     "book_page": "971",
+     "span": 240
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/644.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 19: Kotar Vojnić u narodnooslobodilačkoj borbi i socijalističkoj revoluciji",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "NIKOLA D. CIMEŠA PERO VRANJEŠ Prvi poginuli borac partizanskog odreda »Perjasica«",
+     "book_page": "1090",
+     "span": 1
+    },
+    {
+     "title": "Pali borci s područja kotara Vojnić 1941—1945."
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/678.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 12: Partizanska Drežnica",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pali borci s područja općine Drežnica"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/681.htm",
+   "title": "ZBORNIK HISTORIJSKOG ARHIVA U KARLOVCU, knjiga 16: Općina Gornje Dubrave",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Pali borci s područja Gornje Dubrave 1941—1945."
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/731.htm",
+   "title": "Institut za historiju radničkog pokreta Hrvatske: ZEMALJSKO ANTIFAŠISTIČKO VIJEĆE NARODNOG OSLOBOĐENJA HRVATSKE –zbornik dokumenata 1944 od 10. svibnja do 31. prosinca)",
+   "category": "(not in index)",
+   "pages": null,
+   "lists": [
+    {
+     "title": "Br. 142 – 1944, studeni 28. Odjel za unutrašnju upravu ZAVNOH-a upućuje svim oblasnim i okružnim NOO-ima upute o osnivanju registara za upis rođenih, vjenčanih i umrlih",
+     "book_page": "514",
+     "span": 5
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2851",
+   "title": "Vanja Sanader: Novosadski partizanski odred - dva puta rođen, SUBNOR grada Novog Sada, Novi Sad 2026.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 114,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 6,
+     "line": "Попис припадника Новосадског партизанског одреда 1941 ...... 85"
+    },
+    {
+     "pdf_page": 6,
+     "line": "Попис припадника Новосадског партизанског одреда 1944 ...... 86"
+    },
+    {
+     "pdf_page": 12,
+     "line": "На жалост, највећи проблем остао је списак бораца"
+    },
+    {
+     "pdf_page": 12,
+     "line": "восадског партизанског одреда. Међутим, списак је остао"
+    },
+    {
+     "pdf_page": 107,
+     "line": "књига рођених, венчаних и умрлих на територији 7 сремских"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2850",
+   "title": "Velimir Kraševec-Igor: Deveta Kočevska brigada (2), Autor/samizdat, ? 1991.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 234,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 4,
+     "line": "četa 2. bataljona pred Kompoljami spopadli s sovražnimi patruljami, ki so"
+    },
+    {
+     "pdf_page": 6,
+     "line": "nici pridružila glavnina z okrog 150 vojaki in so družno napadli brigado."
+    },
+    {
+     "pdf_page": 7,
+     "line": "Naslednja dva dni je glavnina Devete preživela v miru na Lučarje­"
+    },
+    {
+     "pdf_page": 9,
+     "line": "je imela 12 mrtvih in 12 ranjenih, 16 pa jih je pogrešala. Med padlimi so"
+    },
+    {
+     "pdf_page": 11,
+     "line": "in napadli hkrati z vsem pehotnim avtomatskim orožjem. V posebej"
+    },
+    {
+     "pdf_page": 11,
+     "line": "Iz bataljona so padli Benedikt Furlan, 1913, Jože Miklič, 1922, bata"
+    },
+    {
+     "pdf_page": 11,
+     "line": "medtem pobrali svoje žrtve, in se umaknili. Spopada še ni bilo konec, ko"
+    },
+    {
+     "pdf_page": 12,
+     "line": "Dušan Ostojic, ki je nato še istega dne umrl v bolnišnici.• Pokopali so ga v"
+    },
+    {
+     "pdf_page": 12,
+     "line": "Žužemberku. Poleg njega so padli še Jože Puncer, 1920, Ludvik Sabotin,"
+    },
+    {
+     "pdf_page": 12,
+     "line": "Borci so jo napadli in se po krajšem obstreljevanju brez žrtev umaknili. Ta"
+    },
+    {
+     "pdf_page": 223,
+     "line": "Kljub dolgotrajnemu delu na seznamu se zavedamo tudi morebitnih"
+    },
+    {
+     "pdf_page": 225,
+     "line": "po spisku"
+    },
+    {
+     "pdf_page": 228,
+     "line": "POVELJNIŠKI KADER 401"
+    },
+    {
+     "pdf_page": 229,
+     "line": "SEZNAM BORCEV IX. SNOB KOČEVSKE 425"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2849",
+   "title": "Velimir Kraševec-Igor: Deveta Kočevska brigada (1), Autor/samizdat, ? 1991.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 226,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 9,
+     "line": "niku v Deveti Francetu Kosmaču. Žal je ta oktobra 1974 umrl in ni"
+    },
+    {
+     "pdf_page": 11,
+     "line": "Nosan je poklonil oblikovno rešitev knjige. Delo pri seznamu borcev in"
+    },
+    {
+     "pdf_page": 214,
+     "line": "1917, ki je po nekaj urah umrl, Aleks Kerimov, 1923, bivši rdečearmejec iz"
+    },
+    {
+     "pdf_page": 215,
+     "line": "Noben zapis ne govori o manj kakor 16 padlih in 20 ranjenih ... O lastnih"
+    },
+    {
+     "pdf_page": 215,
+     "line": "• Neurejen umik dokazujejo tudi padli sovražni vojaki, ki jih niso odpeljali. Tako je 3."
+    },
+    {
+     "pdf_page": 217,
+     "line": "Komandni kader čet 4. bataljona: od leve Dušan Marinšek, politični komisar, Franc Turšič,"
+    },
+    {
+     "pdf_page": 220,
+     "line": "odšel v akcijo nad Kronovo. Tega so na tem pohodu dvakrat napadli."
+    },
+    {
+     "pdf_page": 225,
+     "line": "24. Seznam padlih, seznam ranjenih."
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2580",
+   "title": "Tomaž Teropšič: Dislocirana stalna muzejska zbirka Kozjanski partizanski odred 2026, Autor/samizdat, ? 2026.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 13,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 10,
+     "line": "seznamu kar 1182 borcev in bork. V tem času je bil odred najštevilčnejša enota"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2575",
+   "title": "Slavko Smolej: Gorenjska - V miru, trpljenju, borbi in svobodi (4), Okrajinski odbor zveze borcev Radovljica, Radovljica 1955.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 38,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 28,
+     "line": "dal avtorju knjige pred Trstom padli LUDVIK BEVC z Javornika. Slike"
+    },
+    {
+     "pdf_page": 32,
+     "line": "Umrli jetniki pred krematorijem koncentracijskega taborišča v Dachauu, Nemčija 34"
+    },
+    {
+     "pdf_page": 34,
+     "line": "Mrtev konj - žrtev vojne 96"
+    },
+    {
+     "pdf_page": 35,
+     "line": "Zadnja čast prekopanim padlim partizanom z Bleda na Bledu 104"
+    },
+    {
+     "pdf_page": 35,
+     "line": "Množičen pogreb padlih partizanov z Jesenic skozi Jesenice 105"
+    },
+    {
+     "pdf_page": 35,
+     "line": "Ob robu gozda padli partizani (Selška dolina) . . . 113"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2574",
+   "title": "Slavko Smolej: Gorenjska - V miru, trpljenju, borbi in svobodi (3), Okrajinski odbor zveze borcev Radovljica, Radovljica 1955.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 32,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 1,
+     "line": "Samo da mi ne hi, da ne hi umrl!"
+    },
+    {
+     "pdf_page": 1,
+     "line": "toda, :::a kar sem umrl, bi hotel še enkrat umreti!"
+    },
+    {
+     "pdf_page": 23,
+     "line": "PREŽIVELA DRUŽINA JUGOSLOVA OV A GORENJSKI CESTI IZ KO1'CE TRA"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2573",
+   "title": "Slavko Smolej: Gorenjska - V miru, trpljenju, borbi in svobodi (2), Okrajinski odbor zveze borcev Radovljica, Radovljica 1955.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 42,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2572",
+   "title": "Slavko Smolej: Gorenjska - V miru, trpljenju, borbi in svobodi (1), Okrajinski odbor zveze borcev Radovljica, Radovljica 1955.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 46,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 7,
+     "line": "PADLIM"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2425",
+   "title": "Đuro Vujović: Lovcenski partizanski odred, Istorijski institut SR Crne Gore, Titograd 1976.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2086",
+   "title": "Tomaž Teropšić: Kozjanski odred, Knjiga 2, Založba Obzorja, Maribor 1993.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=2085",
+   "title": "Tomaž Teropšić: Kozjanski odred, Knjiga 1, Založba Obzorja, Maribor 1993.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1270",
+   "title": "Damijan Guštin: Prva partizanska pomlad (2), Inštitut za novejšo zgodovino v Ljubljani, Ljubljana 2021.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 222,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 4,
+     "line": "poveljniški kader naj bi določila štaba obeh grup odredov. Pou"
+    },
+    {
+     "pdf_page": 9,
+     "line": "676 SI AS 1487, t.e. 60, seznam udeležencev konference KPS na Cinku. Udeleženci iz 2."
+    },
+    {
+     "pdf_page": 10,
+     "line": "poveljniški kader. Grupo naj bi sestavljali trije odredi: Krimski,"
+    },
+    {
+     "pdf_page": 222,
+     "line": "pomočjo moštvenih seznamov nekaterih enot. Avtor je monograf1Jo zasnoval na"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1269",
+   "title": "Damijan Guštin: Prva partizanska pomlad (1), Inštitut za novejšo zgodovino v Ljubljani, Ljubljana 2021.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 322,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1265",
+   "title": "Marjan Toš: Osrednje Slovenske gorice 1941-1945 - Med odporom in okupatorjevim nasiljem, Združenje za vrednote NOB Lenart, Maribor 2021.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 44,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 12,
+     "line": "50 ali 60 milijonov žrtev druge svetovne vojne"
+    },
+    {
+     "pdf_page": 12,
+     "line": "umrli zaradi vojne, ker ni bilo dovolj hrane in zdravniške nege, ker so doživeli"
+    },
+    {
+     "pdf_page": 12,
+     "line": "hude čustvene in duševne pretrese, itd. Tudi metodologija ugotavljanja žrtev"
+    },
+    {
+     "pdf_page": 12,
+     "line": "20 milijonov smrtnih žrtev, od tega tretjino civilov in med njimi 1,2 milijona"
+    },
+    {
+     "pdf_page": 12,
+     "line": "druga svetovna vojna terjala 1,7 milijona smrtnih žrtev. Zdaj operiramo s"
+    },
+    {
+     "pdf_page": 12,
+     "line": "številom 1, 1 milijona smrtih žrtev vojne na območju nekdanje Jugoslavije, kar"
+    },
+    {
+     "pdf_page": 30,
+     "line": "v Mariboru, navaja, da so pri Tašnerju v Partinju padli četniki Alojz Cvetko, Franc Lipovnik, Alojz Krajnc, Adolf Rojs in"
+    },
+    {
+     "pdf_page": 30,
+     "line": "1944 so namreč napadli orožnike v Malečniku, v Svetem Juriju ob Ščavnici in pri Sveti Trojici v Slovenskih goricah. Te"
+    },
+    {
+     "pdf_page": 31,
+     "line": "govora«.31 Konec februarja 1945 so se četniki spopadli s partizani na območju"
+    },
+    {
+     "pdf_page": 31,
+     "line": "v bojih za osvoboditev Jugoslavije. Nekateri so v teh operacijah tudi padli.34"
+    },
+    {
+     "pdf_page": 31,
+     "line": "Posamezniki so se pridružili tudi partizanom v izgnanstvu in tam padli.35"
+    },
+    {
+     "pdf_page": 31,
+     "line": "33 Med po vojni vrnjenimi štajerskimi četniki v Jugoslavijo navajajo tudi imena z območja Svete Ane, in sicer: Ludvik"
+    },
+    {
+     "pdf_page": 33,
+     "line": "četa je bila izdana, padli so vsi borci"
+    },
+    {
+     "pdf_page": 34,
+     "line": "ki so nosilci narodnoosvobodilnega gibanja. Krajevni odbori OF so bili jedra za"
+    },
+    {
+     "pdf_page": 36,
+     "line": "Spomenik padli aktivistki Eli Kristl-Tanji v Voličini"
+    },
+    {
+     "pdf_page": 38,
+     "line": "spremenili krajevna imena, uničili slovenske knjige, prepovedali tisk, izvajali"
+    },
+    {
+     "pdf_page": 38,
+     "line": "Razčlenitev žrtev vojne 1941-1945"
+    },
+    {
+     "pdf_page": 38,
+     "line": "CIVILNO PREBIVALSTVO: 23.408 žrtev"
+    },
+    {
+     "pdf_page": 38,
+     "line": "OSTALE ŽRTVE: 11.991 žrtev/ni natančnješih strukturnih podatkov/"
+    },
+    {
+     "pdf_page": 39,
+     "line": "LJUBLJANSKA POKRAJINA: 32.000 žrtev/največ udeležencev NOB/"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1103",
+   "title": "(grupa autora): ZBORNIK LJUBLJANA MOSTE-POLJE 1965 (2), Občinska skupščina Ljubljana Moste-Polje, Ljubljana Moste-Polje 1965.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 156,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 6,
+     "line": "lektivno pogodbo, vendar ni moglo pristati na tolikšne žrtve, kot so jih zahte"
+    },
+    {
+     "pdf_page": 9,
+     "line": "16 Umrl leta 1938"
+    },
+    {
+     "pdf_page": 9,
+     "line": "\" Umrl v internaciji"
+    },
+    {
+     "pdf_page": 142,
+     "line": "Hiše so popisane z bo,rbenimi gesli, ulice pa posute z zasita"
+    },
+    {
+     "pdf_page": 142,
+     "line": "3. januar Dan spomina na žrtve, ki so padle v boju za svobodo sloven"
+    },
+    {
+     "pdf_page": 147,
+     "line": "grobov, začno maja 1944 belogardist.i metati svoje žrtve v Savo"
+    },
+    {
+     "pdf_page": 150,
+     "line": "VIDNEJŠI ŽE UMRLI REVOLUCIONARJI 251"
+    },
+    {
+     "pdf_page": 151,
+     "line": "NOSILCI PARTIZANSKE SPOMENICE 1941 257"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1102",
+   "title": "(grupa autora): ZBORNIK LJUBLJANA MOSTE-POLJE 1965 (1), Občinska skupščina Ljubljana Moste-Polje, Ljubljana Moste-Polje 1965.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 208,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1100",
+   "title": "Stane Semič - Daki: Najboljši so padli (III), Samozaložba, Ljubljana 1971.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 210,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 5,
+     "line": "SO PADLI"
+    },
+    {
+     "pdf_page": 9,
+     "line": "SO PADLI"
+    },
+    {
+     "pdf_page": 11,
+     "line": "ljone, ker se je vrnil tretji bataljon iz Črnomlja in po spisku,"
+    },
+    {
+     "pdf_page": 203,
+     "line": "11 - Najboljši so padli III. 161"
+    },
+    {
+     "pdf_page": 207,
+     "line": "Nepopisno veselje je zavladalo po vsej Moskvi, pa tudi med"
+    },
+    {
+     "pdf_page": 208,
+     "line": "»-NAJBOLJŠI SO PADLI ...«"
+    },
+    {
+     "pdf_page": 209,
+     "line": "NAJBOLJŠI SO PADLI"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1099",
+   "title": "Stane Semič - Daki: Najboljši so padli (II), Samozaložba, Ljubljana 1971.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 246,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1098",
+   "title": "Stane Semič - Daki: Najboljši so padli (I), Samozaložba, Ljubljana 1971.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 332,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1097",
+   "title": "Jože Štrukelj - Izidor: MINERCI DOLENJSKEGA ODREDA V ZASAVJU LETA 1944, Samozaložba, Ljubljana 2001.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 104,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 10,
+     "line": "samostojni taktiki Slovencev, ki so ne glede na žrtve hitro in bliskovito"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1096",
+   "title": "Marjan Moškrič: Iskra in plamen (3), Občinski odbor Zveze združenj borcev NOV, Ljubljana 1988.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 223,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1095",
+   "title": "Marjan Moškrič: Iskra in plamen (2), Občinski odbor Zveze združenj borcev NOV, Ljubljana 1988.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 225,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1094",
+   "title": "Marjan Moškrič: Iskra in plamen (1), Občinski odbor Zveze združenj borcev NOV, Ljubljana 1988.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 194,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1093",
+   "title": "Ivan Ferlež: Druga grupa odredov in štajerski partizani 1941-1942 (2), Knjižnica NOV in POS, Ljubljana 1972.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 216,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 1,
+     "line": "litični kader in ob množičnem brezobzirnem nasilju začasno"
+    },
+    {
+     "pdf_page": 4,
+     "line": "stebrov žičnice pa minirali. Hkrati so napadli tudi obrača­"
+    },
+    {
+     "pdf_page": 11,
+     "line": "zasedo, vendar prepozno, da bi lahko še napadli sovražno"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1092",
+   "title": "Ivan Ferlež: Druga grupa odredov in štajerski partizani 1941-1942 (1), Knjižnica NOV in POS, Ljubljana 1972.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 428,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1083",
+   "title": "Stanko Petelin-Vojko: Med Triglavom in Trstom - Zgodovina XXXI Divizije (2), Založba Borec, Ljubljana 1963.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 287,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1082",
+   "title": "Stanko Petelin-Vojko: Med Triglavom in Trstom - Zgodovina XXXI Divizije (1), Založba Borec, Ljubljana 1963.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 293,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1080",
+   "title": "Ivan Jan: Cankarjev Bataljon in Dražgoška Bitka, Partizanska knjiga, Ljubljana 1974.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 352,
+   "pdf_contents_lines": []
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1052",
+   "title": "Ivan Jan: Kokrški odred - narodnoosvobodilni boj pod Karavankami III, Knjižnica NOV in POS, Ljubljana 1980.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1051",
+   "title": "Ivan Jan: Kokrški odred - narodnoosvobodilni boj pod Karavankami II, Knjižnica NOV in POS, Ljubljana 1980.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1049",
+   "title": "Franc Benedik: Šenčursko območje med nemško okupacijo in narodnoosvobodilnim bojem (II), Zveza borčev za vrednote NOB, Šenčur, Visoko 2008.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 170,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 1,
+     "line": "teh sestankov udeleževal še kdo, vendar se teh preživeli ne spominjajo več."
+    },
+    {
+     "pdf_page": 4,
+     "line": "Storžičem. Tam so jih Nemci še isto popoldne napadli v Semperovi koči pod"
+    },
+    {
+     "pdf_page": 5,
+     "line": "Zvečer 24. marca so se namenili v Voglje trije borci in pred vasjo padli v"
+    },
+    {
+     "pdf_page": 5,
+     "line": "po vojni odkopali in jih z drugimi padlimi vogljanskimi borci pokopali na poko"
+    },
+    {
+     "pdf_page": 7,
+     "line": "v Karntner Volksbund z geslom »Če se vpišeš, ne boš izseljen«, popisovanje"
+    },
+    {
+     "pdf_page": 9,
+     "line": "umrl v taborišču Auschwitz"
+    },
+    {
+     "pdf_page": 9,
+     "line": "Janez Mlakar popisal v svojih spominih: »24. 6. 1941 sem srečno ušel Nemcem"
+    },
+    {
+     "pdf_page": 10,
+     "line": "umrl v taborišču Mauthausen"
+    },
+    {
+     "pdf_page": 11,
+     "line": "koncentracijsko taborišče Auschwitz, kjer je septembra istega leta umrl. Kljub"
+    },
+    {
+     "pdf_page": 11,
+     "line": "umrl."
+    },
+    {
+     "pdf_page": 12,
+     "line": "Leopolda Jenkoleta iz Vokla in ga hudo ranili, tako da je 22. maja umrl na"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1048",
+   "title": "Franc Benedik: Šenčursko območje med nemško okupacijo in narodnoosvobodilnim bojem (I), Zveza borčev za vrednote NOB, Šenčur, Visoko 2008.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1047",
+   "title": "Ivan Jan: Kokrški odred - narodnoosvobodilni boj pod Karavankami (1/II), Knjižnica NOV in POS, Ljubljana 1980.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1046",
+   "title": "Ivan Jan: Kokrški odred - narodnoosvobodilni boj pod Karavankami (1/I), Knjižnica NOV in POS, Ljubljana 1980.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1038",
+   "title": "Grupa autora: Uz proslavu desetogodišnjice oslobođenja bačkopalanačkog sreza 1941 - 1944 - 1954, Sreski odbor Saveza boraca NOR, Bačka Palanka 1954.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 32,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 3,
+     "line": "Пале су и прве жртве. Измучен физички и под"
+    },
+    {
+     "pdf_page": 5,
+     "line": "погинули су Бајац д р угова у свим правцима Бачке и према С р е м у ."
+    },
+    {
+     "pdf_page": 7,
+     "line": "преживеле тренутке из рата."
+    },
+    {
+     "pdf_page": 9,
+     "line": "кола однела су лешеве погинулих у просектуру"
+    },
+    {
+     "pdf_page": 9,
+     "line": "су се налазили погинули д р угови"
+    },
+    {
+     "pdf_page": 12,
+     "line": "бирамо у мислима оно што смо ноћас преживели, а"
+    },
+    {
+     "pdf_page": 22,
+     "line": "своје младе животе иоложили па жртвеиик за бол.у,"
+    },
+    {
+     "pdf_page": 29,
+     "line": "34.296 становника, у попису 1948 год. имали смо"
+    },
+    {
+     "pdf_page": 31,
+     "line": "з.ч школовање цеце палих бораца дао је 2,964.000"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1026",
+   "title": "Advan Hozić: Teslić u NOB, Skupština opštine Teslić, Teslić 1985.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=1024",
+   "title": "Gojko Miljanić: Nikšićki Odred, Vojnoizdavački zavod, Beograd 1970.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": null,
+   "pdf_contents_lines": [],
+   "not_checked": "PdfminerException(OSError('byte budget exceeded'))"
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=978",
+   "title": "Petar Kačavenda: Narodni heroji Jugoslavije - N-Ž, Partizanska knjiga, Ljubljana 1983.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 488,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 477,
+     "line": "345 VUKAJLOVIĆ Stanka BOGOLJUB - LALA (S. Ž.) STRANI DRŽAVU ANI NARODNI HEROJI"
+    },
+    {
+     "pdf_page": 478,
+     "line": "ŠA\" (P. Kat.) NAPOMENA: Iza imena narodnih heroja u zagradi su inici­"
+    },
+    {
+     "pdf_page": 478,
+     "line": "UDARNA BRIGADA „LJUBO ŠERCER\" (M. Gu.) se puna imena."
+    },
+    {
+     "pdf_page": 480,
+     "line": "NARODNI HEROJI JUGOSLAVIJE"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=977",
+   "title": "Petar Kačavenda: Narodni heroji Jugoslavije - A-M, Partizanska knjiga, Ljubljana 1982.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 616,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 610,
+     "line": "571 MLADENOVIĆ Milana SVETOMIR (M. A.) NAPOMENA: Iza imena narodnih heroja u zagradi su inicijali i"
+    },
+    {
+     "pdf_page": 610,
+     "line": "572 MOĆNIK Ivana CVETO-FLORUAN (M. Ć.) biografija, a na strani 591 nalaze se puna imena."
+    },
+    {
+     "pdf_page": 612,
+     "line": "NARODNI HEROJI JUGOSLAVIJE"
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=807",
+   "title": "Marinko Perić: Sinj i Cetinska krajina u borbi za slobodu, , 1974.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 199,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 8,
+     "line": "Starorimski zavjetni žrtvenik s natpisom Genio Osiniatium"
+    },
+    {
+     "pdf_page": 8,
+     "line": "(prvi spomen imena Smja)"
+    },
+    {
+     "pdf_page": 9,
+     "line": "imena (Plator, Andeš, Verza itd.). Isto tako, ilirski toponomastički nazivi"
+    },
+    {
+     "pdf_page": 12,
+     "line": "skim jezikom, što posvjedočuju i njihova imena kao Budan Grubišić, Viganj"
+    },
+    {
+     "pdf_page": 194,
+     "line": "della fortezza di Sign.« Napisao ga jedan od preživjelih oficira tadašnje bitke."
+    },
+    {
+     "pdf_page": 198,
+     "line": "podaci o učesnicima u NOV, poginulim borcima i žrtvama fašističkog terora,"
+    },
+    {
+     "pdf_page": 199,
+     "line": "Žrtve fašističkog terora u Cetinskoj krajini s bitnim oznakama stradanja"
+    },
+    {
+     "pdf_page": 199,
+     "line": "Popis vlasnika (i njihovih) zapaljenih kuća u Cetinskoj krajini, koje je"
+    },
+    {
+     "pdf_page": 199,
+     "line": "Popis stanovništva u Cetinskoj krajini s prilogom potpisa naših iselje­"
+    },
+    {
+     "pdf_page": 199,
+     "line": "1901., 1919., 1940., 1945. i 1965. godine, te prezimena dobitnika alke od tri do"
+    },
+    {
+     "pdf_page": 199,
+     "line": "devet puta i imena slavodobitnika s »tri puta u sridu«."
+    }
+   ]
+  },
+  {
+   "url": "https://znaci.org/00003/7xx.php?bk=781",
+   "title": "Druga grupa odredov in štajerski partiza: Ivan Ferlež, Partizanska knjiga, Ljubljana 1972.",
+   "category": "(viewer book, contents read from the PDF)",
+   "pages": 640,
+   "pdf_contents_lines": [
+    {
+     "pdf_page": 5,
+     "line": "s tem oddolžim vsem padlim in vsem živečim soborcem. Pri"
+    },
+    {
+     "pdf_page": 8,
+     "line": "glede časa dogajanja, števila nastopajočih, padlih in ranjenih"
+    }
+   ]
+  }
+ ]
 }

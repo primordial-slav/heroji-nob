@@ -63,12 +63,12 @@ JPEG_QUALITY = 82
 # Ordinal forms used in captions: "13.", "XIII", "trinaeste" ...
 _WORDS = {
     1: "prv", 2: "drug", 3: "tre[cć]", 4: "[cč]etvrt", 5: "pet", 6: "[sš]est", 7: "sedm",
-    8: "osm", 10: "deset", 12: "dvanaest", 13: "trinaest", 14: "[cč]etrnaest",
+    8: "osm", 10: "deset", 12: "dvanaest", 13: "trinaest", 14: "[cč]etrnaest", 15: "petnaest",
     16: "[sš]esnaest", 17: "sedamnaest", 18: "osamnaest", 19: "devetnaest", 21: "dvadeset\\s*prv",
     25: "dvadeset\\s*pet", 32: "trideset\\s*drug", 53: "pedeset\\s*tre[cć]",
 }
 _ROMAN = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 10: "X",
-          12: "XII", 13: "XIII", 14: "XIV", 16: "XVI", 17: "XVII", 18: "XVIII", 19: "XIX", 21: "XXI",
+          12: "XII", 13: "XIII", 14: "XIV", 15: "XV", 16: "XVI", 17: "XVII", 18: "XVIII", 19: "XIX", 21: "XXI",
           25: "XXV", 32: "XXXII", 53: "LIII"}
 
 
@@ -268,6 +268,46 @@ UNITS = {
         name="2. proleterska brigada", tags=["2-proleterska-udarna-brigada"],
         caption=r"(?<![\d.])2\s*\.?\s+proletersk|\bdrug[aeiou]\w*\s+proletersk|\bII\.?\s+proletersk", photo=3451,
         note="The brigade on the march through eastern Bosnia toward Majevica, July 1943."),
+    # The units Borci Sutjeske brings to the site
+    "4-proleterska-brigada": dict(
+        name="4. proleterska (crnogorska) brigada", tags=["4-proleterska-crnogorska-udarna-brigada"],
+        caption=nth(4, r"(?:proletersk|crnogorsk)"), photo=13653),
+    "5-proleterska-brigada": dict(
+        name="5. proleterska (crnogorska) brigada", tags=["5-proterska-crnogorska-udarna-brigada"],
+        caption=nth(5, r"(?:proletersk|crnogorsk)"), photo=8915),
+    "6-istocnobosanska-brigada": dict(
+        name="6. istočnobosanska proleterska brigada", tags=["6-istocnobosanska-proleterska-udarna-brigada"],
+        caption=nth(6, r"(?:isto[cč]nobosansk|proletersk\w*\s+isto[cč]no)"), photo=15928),
+    "10-hercegovacka-brigada": dict(
+        name="10. hercegovačka brigada", tags=["10-hercegovacka-udarna-brigada"],
+        caption=nth(10, r"hercegova[cč]k"), photo=10546),
+    "7-banijska-brigada": dict(
+        name="7. banijska brigada \"Vasilj Gaćeša\"", tags=["7-banijska-udarna-brigada-vasilj-gacesa"],
+        caption=nth(7, r"banijsk") + r"|va[sz]il\w*\s+ga[cćč]e[sš]", photo=None,
+        book=dict(pdf="00001/63_3.pdf", page=4, xref=15,
+                  caption="Deo kolone grupe bataljona Banijskog NOP odreda, odnosno 7. banijske brigade »Vasilj Gaćeša«, u Moslavini 1942."),
+        note="The gallery has only a column of the 7th Banija Division (10585); this is the brigade's own column, in its book."),
+    "8-banijska-brigada": dict(
+        name="8. banijska brigada", tags=["8-banijska-udarna-brigada"],
+        caption=nth(8, r"banijsk"), photo=None,
+        book=dict(pdf="00003/383.pdf", page=150, xref=1103, caption="Stroj 2. brigade na Sv. Duhu kod sela Vrpolje 5. novembra 1943."),
+        note="The brigade lined up, as the 2nd brigade of the 7th Division (renumbered in September 1943), in its own book; "
+             "the caption is printed above the photo. Nothing in the gallery."),
+    "3-dalmatinska-brigada": dict(
+        name="3. dalmatinska brigada", tags=["3-dalmatinska-udarna-brigada"],
+        caption=nth(3, r"dalmatinsk"), photo=8504,
+        note="At the brigade's formation; the date in the caption (17. 11.) differs from the odrednica's 12. 11. 1942."),
+    "16-banijska-brigada": dict(
+        name="16. banijska brigada", tags=["16-banijska-udarna-brigada"],
+        caption=nth(16, r"banijsk"), photo=None),
+    "7-krajiska-brigada": dict(
+        name="7. krajiška brigada", tags=["7-krajiska-udarna-brigada"],
+        caption=nth(7, r"kraji[sš]k"), photo=15178, crop=(0, 0.27, 1, 0.72),
+        note="At the Sutjeska; the only photo of the brigade's fighters in the gallery."),
+    "15-majevicka-brigada": dict(
+        name="15. majevička brigada", tags=["15-majevicka-udarna-brigada"],
+        caption=nth(15, r"majevi[cč]k") + "|" + nth(1, r"majevi[cč]k"), photo=13981,
+        note='At the Sutjeska, on Milinklade, 9 June 1943.'),
 }
 
 # Words that suggest a group of soldiers; words that suggest something else.
