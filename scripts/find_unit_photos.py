@@ -64,11 +64,11 @@ JPEG_QUALITY = 82
 _WORDS = {
     1: "prv", 2: "drug", 3: "tre[cć]", 4: "[cč]etvrt", 5: "pet", 6: "[sš]est", 7: "sedm",
     8: "osm", 10: "deset", 12: "dvanaest", 13: "trinaest", 14: "[cč]etrnaest",
-    17: "sedamnaest", 18: "osamnaest", 19: "devetnaest", 21: "dvadeset\\s*prv",
+    16: "[sš]esnaest", 17: "sedamnaest", 18: "osamnaest", 19: "devetnaest", 21: "dvadeset\\s*prv",
     25: "dvadeset\\s*pet", 32: "trideset\\s*drug", 53: "pedeset\\s*tre[cć]",
 }
 _ROMAN = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 10: "X",
-          12: "XII", 13: "XIII", 14: "XIV", 17: "XVII", 18: "XVIII", 19: "XIX", 21: "XXI",
+          12: "XII", 13: "XIII", 14: "XIV", 16: "XVI", 17: "XVII", 18: "XVIII", 19: "XIX", 21: "XXI",
           25: "XXV", 32: "XXXII", 53: "LIII"}
 
 
@@ -249,6 +249,21 @@ UNITS = {
         book=dict(pdf="00001/196_7.pdf", page=8, xref=67,
                   caption="Jedinice Užičkog odreda, postrojene na užičkoj žitnoj pijaci, spremne za smotru pred komandantom Dušanom Jerkovićem"),
         note="From the book's photo chapter (1941)."),
+    "1-dalmatinska-brigada": dict(
+        name="1. dalmatinska proleterska brigada", tags=["1-dalmatinska-proleterska-udarna-brigada"],
+        caption=nth(1, r"dalmatinsk"), photo=5070,
+        note="znaci 9201 is the same photo, its caption card reading 'Prva dalmatinska brigada u maršu na oslobođenom Hvaru, septembra 1944.'"),
+    "16-slavonska-omladinska-brigada": dict(
+        name="16. slavonska omladinska brigada \"Jože Vlahović\"", tags=["16-omladinska-udarna-brigada-joza-vlahovic"],
+        caption=nth(16, r"(?:slavonsk\w+\s+)?omladinsk") + r"|brigad\w+\s+\W?jo[zž][ea] vlahovi", photo=None,
+        book=dict(pdf="00002/407.pdf", page=275, xref=1167, caption="Četa Omladinske brigade, Kordun, proljeće 1944."),
+        note="The gallery has only a portrait of a boy soldier of the brigade (3956)."),
+    "8-crnogorska-brigada": dict(
+        name="8. crnogorska brigada", tags=["8-crnogorska-udarna-brigada"],
+        caption=nth(8, r"crnogorsk"), photo=None,
+        book=dict(pdf="00001/275.pdf", page=171, xref=715, caption="Borci 2 bataljona na maršu iz Beograda ka sremskom frontu"),
+        note="The brigade's 2nd battalion, in its own book. The gallery has the crowd at the brigade's formation (6038), its staff "
+             "(11155) and two combat photos captioned for the 5th, 7th and 8th Montenegrin brigades together."),
 }
 
 # Words that suggest a group of soldiers; words that suggest something else.

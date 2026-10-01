@@ -365,7 +365,7 @@ export const units: Unit[] = [
     name: '1. dalmatinska proleterska brigada',
     nameEn: '1st Dalmatian Proletarian Brigade',
     description: 'Iz monografije Mirka Novovića „Prva dalmatinska proleterska brigada“: spisak boraca poginulih u toku narodnooslobodilačkog rata. Spisak je objavljen kao tekst na znaci.org, bez skenirane knjige.',
-    image: '/images/pdf-thumbs/1-dalmatinska.jpg',
+    image: '/images/1-dalmatinska-brigada.jpg',
     soldierCount: 2165,
     dataFile: '/1-dalmatinska-soldiers.json',
     pdfFiles: []
@@ -375,7 +375,7 @@ export const units: Unit[] = [
     name: '16. slavonska omladinska brigada „Jože Vlahović“',
     nameEn: '16th Slavonian Youth Brigade "Jože Vlahović"',
     description: 'Iz monografije Steve Pravdića i Naila Redžića: spisak poginulih boraca i rukovodilaca brigade i spisak poginulih u Pokuplju i na Žumberku.',
-    image: '/images/pdf-thumbs/16-slavonska-omladinska.jpg',
+    image: '/images/16-slavonska-omladinska-brigada.jpg',
     soldierCount: 981,
     dataFile: '/16-slavonska-omladinska-soldiers.json',
     pdfFiles: ['/pdfs/16-slavonska-omladinska.pdf']
@@ -385,7 +385,7 @@ export const units: Unit[] = [
     name: '8. crnogorska brigada',
     nameEn: '8th Montenegrin Brigade',
     description: 'Iz zbornika sjećanja „Osma crnogorska NOU brigada“ (1978): spisak palih boraca i starješina brigade i dopunski spisak palih koji je poslao Opštinski odbor SUBNOR-a Ub.',
-    image: '/images/pdf-thumbs/8-crnogorska.jpg',
+    image: '/images/8-crnogorska-brigada.jpg',
     soldierCount: 730,
     dataFile: '/8-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/8-crnogorska.pdf']
