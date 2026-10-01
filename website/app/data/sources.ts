@@ -380,12 +380,12 @@ export const sources: PdfSource[] = [
   },
   {
     id: '16-slavonska-omladinska',
-    title: '16. slavonska omladinska NOU brigada „Jože Vlahović“ — spiskovi poginulih',
+    title: '16. slavonska omladinska NOU brigada „Jože Vlahović“ — spiskovi poginulih i rukovodilaca',
     author: 'Stevo Pravdić, Nail Redžić',
     pdfPath: '/pdfs/16-slavonska-omladinska.pdf',
     thumbnail: '/images/pdf-thumbs/16-slavonska-omladinska.jpg',
     brigadeName: '16. slavonska omladinska brigada „Jože Vlahović“',
-    description: 'Spisak poginulih boraca i rukovodilaca brigade; spisak poginulih u Pokuplju i na Žumberku (str. 387-423 knjige)'
+    description: 'Spisak poginulih boraca i rukovodilaca brigade; spisak poginulih u Pokuplju i na Žumberku; rukovodioci brigade od njenog formiranja do kraja rata (str. 389-428 knjige)'
   },
   {
     id: '8-crnogorska',

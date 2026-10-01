@@ -376,7 +376,7 @@ export const units: Unit[] = [
     nameEn: '16th Slavonian Youth Brigade "Jože Vlahović"',
     description: 'Iz monografije Steve Pravdića i Naila Redžića: spisak poginulih boraca i rukovodilaca brigade i spisak poginulih u Pokuplju i na Žumberku.',
     image: '/images/16-slavonska-omladinska-brigada.jpg',
-    soldierCount: 973,
+    soldierCount: 1121,
     dataFile: '/16-slavonska-omladinska-soldiers.json',
     pdfFiles: ['/pdfs/16-slavonska-omladinska.pdf']
   },

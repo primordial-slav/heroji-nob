@@ -5,8 +5,8 @@ Find soldiers printed in more than one of a unit's lists (two books, or two list
 A list is a PDF, or a page range of one (LISTS below), or a web page (source_url). Two records of different lists
 are the same soldier when surname and given name agree (diacritics, dj/đ and case aside) and nothing else
 disagrees: the father (as printed or in the nominative), the birth year (a year apart is allowed: books count
-differently), the birthplace and the place of death (a word in common), the year of death, and whether he fell or
-lived to the end of the war. Each match is graded:
+differently), the birthplace and the place of death (a word in common), the year of death, whether he fell or
+lived to the end of the war, and a duty both name (komandir čete). Each match is graded:
 
   sure      the names agree, something else agrees too (father, birth year or place, death year or place),
             nothing disagrees,
@@ -114,6 +114,24 @@ def fate(s: dict) -> str:
     return ''
 
 
+DUTY = re.compile(r'\b(komandant|komandir|komesar|na[cč]elnik|zamjeni|zameni|pomo[cć]ni|delegat)\w*', re.I)
+LEVEL = re.compile(r'^\W*(?:\S+\s+){0,3}?\(?(brigad|bataljon|[cč]et)', re.I)
+SAME_DUTY = {'pomocn': 'zamjen', 'zameni': 'zamjen'}       # "zamjenik (pomoćnik) komesara" = "pomoćnik komesara"
+
+
+def duties(s: dict) -> set:
+    """('komand', 'cet') for "komandir čete", "komandir 2. čete"; ('komesa', 'bat') and ('zamjen', 'bat') for
+    "pomoćnik komesara 4. bataljona": each duty and the level that follows it, from the rank and the bios."""
+    text = ' '.join([s.get('rank') or '', s.get('additional_info') or ''] + [o.get('additional_info') or '' for o in s.get('other_sources', ())])
+    found = set()
+    for m in DUTY.finditer(text):
+        level = LEVEL.match(text[m.end():m.end() + 40])
+        if level:
+            duty = fold(m.group(1))[:6]
+            found.add((SAME_DUTY.get(duty, duty), fold(level.group(1))[:3]))
+    return found
+
+
 def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
     """What agrees and what disagrees between two records of the same name."""
     agree, clash = [], []
@@ -136,6 +154,8 @@ def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
     fa, fb = fate(a), fate(b)
     if fa and fb and fa != fb:
         clash.append('one lived')
+    if duties(a) & duties(b):                       # a duty both name (a list of leaders gives nothing else)
+        agree.append('duty')
     return agree, clash
 
 

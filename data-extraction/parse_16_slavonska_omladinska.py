@@ -1,15 +1,17 @@
 """
 Parser: 16. slavonska omladinska NOU brigada "Jože Vlahović" (brigade code 37) — the fallen.
 
-Source: Stevo Pravdić, Nail Redžić — "16. slavonska omladinska NOU brigada »Jože Vlahović«", book pp. 387-423
-        (znaci.org/00002/407.pdf, the whole book) →  website/public/pdfs/16-slavonska-omladinska.pdf (those pages):
+Source: Stevo Pravdić, Nail Redžić — "16. slavonska omladinska NOU brigada »Jože Vlahović«", pp. 387-423 of
+        znaci.org/00002/407.pdf (the whole book; printed pp. 389-425) → website/public/pdfs/16-slavonska-omladinska.pdf:
     pp. 1-33  "Spisak poginulih boraca i rukovodilaca brigade" (from the lists in the VII archive)
     pp. 34-37 "Spisak poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku" (1943-1944)
         ABRAMOVIC Pero, rođen 1903. u Rezovcu kod Virovitice, poginuo 17. veljače 1945. kod Sažija.
         KOMLENOVIC Stojan Coka, rođen 1924. u Novom Gradcu ...          (a nickname after the given name)
         ARAMBAŠIČ Slavko, borac.
 Continuation lines are indented (_margin_entries). The list titles, their footnotes and the closing note ("Drugih
-podataka u knjigama poginulih ... nije bilo") are dropped.
+podataka u knjigama poginulih ... nije bilo") are dropped. The book's list of leaders (pages 38-40) is read by
+parse_16_slavonska_rukovodioci.py; after re-running this parser, re-run that one too (leaders merged into these
+records come back from it).
 """
 import json
 import re
@@ -106,4 +108,5 @@ if __name__ == '__main__':
         line_filter=keep_line,
         prepare_fn=me.prepare,
         post_fn=post,
+        keep_other_sources=True,        # the leaders' list (parse_16_slavonska_rukovodioci.py, pages 38-40)
     )

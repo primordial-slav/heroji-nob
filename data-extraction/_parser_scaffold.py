@@ -581,7 +581,8 @@ def run_parser(
     grouping — for footnotes, running headers, back matter.
     prepare_fn: sees each source's lines before line_filter (e.g. to measure page margins).
     id_start, keep_other_sources: add another book to a unit whose file already holds records from other
-    PDFs — this run's records get IDs from id_start and replace only the records read from this run's PDFs.
+    PDFs — this run's records get IDs from id_start and replace only the records read from this run's PDFs
+    (and pages: two lists can share a PDF).
 
     Returns list of soldier dicts (also written to output_path).
     """
@@ -649,12 +650,16 @@ def run_parser(
 
     out = soldiers
     if keep_other_sources and Path(output_path).exists():
-        mine = {Path(src['pdf_path']).name for src in sources}
+        def mine(s: dict) -> bool:
+            """Read by this run: from one of its PDFs, within the pages it reads (two lists can share a PDF)."""
+            return any(s.get('pdf_file') == Path(src['pdf_path']).name
+                       and src.get('start_page', 1) <= (s.get('pdf_page') or 0) <= (src.get('end_page') or 10 ** 6)
+                       for src in sources)
         with open(output_path, encoding='utf-8') as f:
-            kept = [s for s in json.load(f) if s.get('pdf_file') not in mine]
+            kept = [s for s in json.load(f) if not mine(s)]
         for s in kept:                  # entries of this run's books merged into kept records: merge corrections redo them
             if s.get('other_sources'):
-                s['other_sources'] = [o for o in s['other_sources'] if o.get('pdf_file') not in mine]
+                s['other_sources'] = [o for o in s['other_sources'] if not mine(o)]
                 if not s['other_sources']:
                     del s['other_sources']
         clash = {s['soldier_id'] for s in kept} & {s['soldier_id'] for s in soldiers}
