@@ -12,6 +12,7 @@ export interface SoldierSource {
   pdf_y_end?: number
   pdf_x_left?: number
   source_url?: string
+  unit_file?: string      // set when the entry is another unit's: that unit's data file (the soldier served in both)
 }
 
 export interface Soldier {
@@ -47,4 +48,6 @@ export interface Soldier {
   // The soldier's entries in the unit's other books (or lists); fields above that this entry leaves empty were
   // filled in from them
   other_sources?: SoldierSource[]
+  // Set on the home page for a soldier linked across units: the other units he is listed in
+  also_units?: string[]
 }

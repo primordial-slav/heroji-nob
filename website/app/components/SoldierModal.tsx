@@ -6,6 +6,7 @@ import { SoldierName } from './SoldierResults'
 import { CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
+import { units } from '@/app/data/units'
 import RecordActions from './RecordActions'
 import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
@@ -40,6 +41,10 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
   const sourceHref = page?.pdf_file ? `/izvori#${page.pdf_file.replace('.pdf', '')}` : undefined
   const unit = unitName || soldier.unit
   const unitRecord = unitByName(unit)
+  // the units of the soldier's entries from other units' books (a link): he is listed in each of them
+  const unitOf = (e: SoldierSource) => units.find((u) => u.dataFile === `/${e.unit_file}`)?.name
+  const allUnits = [unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
+    .filter((u, i, list): u is string => Boolean(u) && list.indexOf(u) === i)
 
   const [showReportForm, setShowReportForm] = useState(false)
   const [reportText, setReportText] = useState('')
@@ -107,7 +112,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
           </div>
         )}
         <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
-        {unit && <p className="modal-unit">{sqQuotes(unit)}</p>}
+        {allUnits.length > 0 && <p className="modal-unit">{allUnits.map(sqQuotes).join(' · ')}</p>}
         <RecordActions soldier={soldier} unit={unitRecord} />
         <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
 
@@ -120,6 +125,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
             {entries.map((e, i) => (
               <li key={i} className="modal-source-entry">
                 <p className="modal-source-label">
+                  {e.unit_file && unitOf(e) && <>{sqQuotes(unitOf(e)!)}: </>}
                   {sourceTitle(e)}
                   {e.pdf_page != null && `, str. ${e.pdf_page}`}
                   {e.name && e.name !== soldier.full_name && <>. Ime u knjizi: {e.name}</>}

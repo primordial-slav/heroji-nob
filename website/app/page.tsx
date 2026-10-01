@@ -37,7 +37,20 @@ export default function Home() {
             return data.map((soldier) => ({ ...soldier, unit: unit.name }))
           })
         )
-        setAllSoldiers(lists.flat())
+        // A soldier linked across units (an entry from another unit's book in other_sources) is listed once,
+        // in the first of his units, with the others named
+        const linkedAway = new Set<string>()
+        const listed: Soldier[] = []
+        for (const soldier of lists.flat()) {
+          if (linkedAway.has(soldier.soldier_id)) continue
+          const links = (soldier.other_sources ?? []).filter((o) => o.unit_file)
+          links.forEach((o) => o.soldier_id && linkedAway.add(o.soldier_id))
+          const also = links
+            .map((o) => units.find((u) => u.dataFile === `/${o.unit_file}`)?.name)
+            .filter((u, i, list): u is string => Boolean(u) && u !== soldier.unit && list.indexOf(u) === i)
+          listed.push(also.length ? { ...soldier, also_units: also } : soldier)
+        }
+        setAllSoldiers(listed)
       } catch {
         setLoadFailed(true)
       } finally {

@@ -85,7 +85,9 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
             <button type="button" className="result-button" onClick={() => onSelect(soldier)}>
               <span className="result-name"><SoldierName soldier={soldier} /></span>
               {soldier.additional_info && <span className="result-info">{soldier.additional_info}</span>}
-              {showUnit && soldier.unit && <span className="result-unit">{sqQuotes(soldier.unit)}</span>}
+              {showUnit && soldier.unit && (
+                <span className="result-unit">{[soldier.unit, ...(soldier.also_units ?? [])].map(sqQuotes).join(' · ')}</span>
+              )}
             </button>
           </li>
         ))}
