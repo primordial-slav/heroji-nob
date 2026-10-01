@@ -336,7 +336,10 @@ def book_layout(pages: dict[int, dict], starts: dict[int, set]) -> tuple[dict, d
             # appendices can indent differently (6. krajiška numbers its last pages
             # and indents their first lines)
             page['style'] = _style(page['indent']) if book['style'] != 'flush' else 'flush'
-            if page['style'] == 'flush':
+            # a page whose lines all start level is set flush even in a book that indents
+            # (7. crnogorska: an unnumbered list before the numbered one, whose numbers hang left)
+            level = sum(abs(s) <= 3 for s in shifts) / len(shifts)
+            if page['style'] == 'flush' and level < 0.75:
                 page['style'], page['indent'] = book['style'], book['indent']
             per_page[pno] = page
     return book, per_page
@@ -454,8 +457,16 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
                     _set_box(s, page, x, max(right, x + 50), s['pdf_y'] + layout['pitch'])
                     continue
                 ci, li = hit
+                col = page['columns'][ci]
                 col_starts = {lj for (c, lj) in starts[pno] if c == ci}
-                lines, why = entry_lines(page['columns'][ci], li, col_starts, layout, pno in one_line_pages)
+                entry_layout = layout
+                if layout['style'] == 'hanging':
+                    # an entry that starts where the others continue is set flush (7. crnogorska mixes
+                    # unnumbered entries into the numbered list, whose numbers hang left of the text)
+                    left = min(col[lj]['x0'] for lj in col_starts)
+                    if 0.75 < (col[li]['x0'] - left) / layout['indent'] < 1.5:
+                        entry_layout = dict(layout, style='flush')
+                lines, why = entry_lines(col, li, col_starts, entry_layout, pno in one_line_pages)
                 _set_box(s, page, min(ln['x0'] for ln in lines), max(ln['x1'] for ln in lines),
                          max(ln['bottom'] for ln in lines))
                 stats['boxed'] += 1
