@@ -29,7 +29,7 @@ Every record links back to its line on the scanned page of the printed book, so 
 - Name: Knjiga boraca.
 - Partisan red stays part of the identity.
 - Must not feel like a startup/SaaS product, and must not feel academic or like a library catalogue.
-- The owner does not want statistics (totals, charts) or ordering units by formation date.
+- The owner does not want statistics (totals, charts). Units on the home page are grouped by the year they were formed, oldest first (owner's request, 2026-10-01).
 - The owner likes unit cards with a large photograph on top; keep them.
 
 ## Evidence on Hand

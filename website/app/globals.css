@@ -2232,3 +2232,46 @@ button.kin-row:not(:disabled):hover .kin-label {
   font-weight: 400;
   white-space: nowrap;
 }
+
+/* ========== Units grouped by the year they were formed (home) ========== */
+.unit-years {
+  display: grid;
+  gap: var(--space-8);
+}
+
+/* The year sits on a red rule, right-aligned; the units of that year follow */
+.unit-year-head {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--red);
+  font-weight: 400;
+}
+
+.unit-year-number {
+  font-family: var(--font-name);
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  line-height: 0.8;
+  letter-spacing: -0.02em;
+  font-variant-numeric: lining-nums;
+  color: var(--ink);
+}
+
+.unit-year-head.is-undated {
+  font-family: var(--font-name);
+  font-size: var(--step-2);
+  color: var(--ink-muted);
+}
+
+@media (max-width: 640px) {
+  .unit-years {
+    gap: var(--space-7);
+  }
+
+  .unit-year-number {
+    font-size: 2.5rem;
+  }
+}
+

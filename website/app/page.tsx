@@ -1,18 +1,17 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { units } from './data/units'
 import { useFuseSearch } from './lib/useFuseSearch'
 import { fullRecord, loadSearchIndex } from './lib/searchIndex'
 import type { Soldier } from './lib/types'
 import SoldierModal from './components/SoldierModal'
-import SoldierResults, { countBorci } from './components/SoldierResults'
+import SoldierResults from './components/SoldierResults'
 import { SearchIcon } from './components/Icons'
-import { sqQuotes } from './lib/typography'
 import { searchAllPlaceholder } from './lib/totals'
 import BandPhoto from './components/BandPhoto'
 import OnThisDay from './components/OnThisDay'
+import UnitsByYear from './components/UnitsByYear'
 import { HOME_RESET } from './components/HomeLink'
 
 const EXAMPLES = ['Končar', 'Petar Abramović', 'Gračac']
@@ -151,22 +150,7 @@ export default function Home() {
               <h2>Jedinice</h2>
               <p className="section-note">Izaberite jedinicu da vidite ceo spisak.</p>
             </div>
-            <ul className="unit-grid">
-              {units.map((unit) => (
-                <li key={unit.id}>
-                  <Link href={`/units/${unit.id}`} className="unit-card">
-                    <div className="unit-card-photo">
-                      <img src={unit.image} alt="" loading="lazy" />
-                    </div>
-                    <div className="unit-card-body">
-                      <h3 className="unit-name">{sqQuotes(unit.name)}</h3>
-                      <p className="unit-desc">{unit.description}</p>
-                      <p className="unit-count">{countBorci(unit.soldierCount).text}</p>
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <UnitsByYear units={units} />
           </>
         )}
       </div>

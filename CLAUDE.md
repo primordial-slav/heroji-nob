@@ -67,6 +67,8 @@ When fixing parsing bugs or adding brigades, run these steps in order:
 
 Corrections run LAST before build so they always win over automated pipeline output.
 
+**Formation dates**: the home page groups units by the year they were formed, from `website/app/data/formation.ts` (`date` as `YYYY-MM-DD`, or `YYYY-MM`/`YYYY`, plus the source). A new unit needs an entry there, from its book or another source you checked; without one it is listed last, under "Ostale jedinice".
+
 **Totals on the site** follow `soldierCount`: the home page search field ("Pretražite N imena") is the sum of every unit's `soldierCount` in `units.ts`, computed at build time in `website/app/lib/totals.ts`, and each unit card shows its own count. Never hard-code a total in page text. When records or units are added or removed, make sure `soldierCount` is current (step 4 does it; a new unit's entry needs its count) and rebuild.
 
 **Structured fields** (`birth_place`, `ethnicity`, `occupation`, `rank`, `unit_detail`, `death_type`, `death_date`, `death_place`) are read from `additional_info` by `scripts/extract_structured_fields.py` (per-book rules; death places are put in the nominative only when that form is a known place). Only empty fields are filled; values set in corrections are never overwritten. `apply_corrections.py` runs it automatically; run the script alone for coverage stats and samples (`--brigade N --sample 20`), or with `--apply` for brigades that had no corrections.

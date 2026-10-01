@@ -149,13 +149,13 @@ Both are self-hosted through next/font with Latin, Latin Extended and Cyrillic s
 ### Named Rules
 **The Surname First Rule.** Names are written as the books print them: surname (bold), then father's name and given name (regular). Never reorder to "First Last" in lists.
 
-**The Quiet Scale Rule.** The largest text on any page is 1.875rem. Headings are regular weight; bold is reserved for surnames and counts.
+**The Quiet Scale Rule.** The largest text on any page is 1.875rem, with one exception: the year markers over the units on the home page (PT Serif regular, up to 4rem). Headings are regular weight; bold is reserved for surnames and counts.
 
 ## Layout
 
 One centred column (max 72rem) with a 24px side gutter (16px on phones). Content that runs full width (the home band photograph, the unit page photograph) aligns its text with the column edge.
 
-- **Home:** red band with a short heading, the search field (max 34rem) and example searches; under it "Jedinice" as a grid of photo cards, three per row on desktop (min 20rem per card), one per row on phones. When the visitor searches, results replace the cards in place.
+- **Home:** red band with a short heading, the search field (max 34rem) and example searches; under it "Na današnji dan", then "Jedinice": the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
 - **Record popup:** max 40rem wide; unit photo strip, name, unit, book line, details as a two-column label/value list, then the scanned page ("Strana u knjizi").
@@ -207,7 +207,7 @@ Square. Cards and photographs have no radius. Inputs and buttons have a barely-t
 
 ### Don't:
 - **Don't** add statistics blocks, totals tiles or charts.
-- **Don't** order or group units by formation date.
+- **Don't** order units any other way than by formation date, oldest first.
 - **Don't** add stars, glow, fake paper or scanline textures, or other wartime costume.
 - **Don't** add eyebrow labels above headings, coloured side borders on cards, gradient text, or hover lift.
-- **Don't** set text larger than 1.875rem or make headings bold.
+- **Don't** set text larger than 1.875rem (except the home page year markers) or make headings bold.
