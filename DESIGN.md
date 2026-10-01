@@ -100,7 +100,7 @@ components:
 
 Knjiga boraca is where a family member types a remembered name and finds one person in the printed rosters of Partisan units. The design keeps that job in front: a solid Partisan red band holds the search, the brigades' own black-and-white photographs carry the feeling, and every record ends with the scanned line from the book. Everything else stays quiet: neutral ground, ink text, 1px rules, square corners, small restrained type.
 
-The photographs are the only emotional material. They are real, black and white, and shown large: behind the red band on the home page (multiplied into the red), as the whole top of each unit card, full width on a unit page, and as a strip above a person's record. There is no decoration beyond them.
+The photographs are the only emotional material. They are real, black and white, and shown large: behind the red band on the home page (multiplied into the red), as the whole top of each unit card, full width on a unit page, and as a strip above a person's record. On wide screens the soldiers' own wartime portraits drift slowly up the margins beside the home page column. There is no decoration beyond them.
 
 **Key Characteristics:**
 - A solid red band (header, and on the home page the search) with one brigade photograph multiplied into it.
@@ -155,7 +155,7 @@ Both are self-hosted through next/font with Latin, Latin Extended and Cyrillic s
 
 One centred column (max 72rem) with a 24px side gutter (16px on phones). Content that runs full width (the home band photograph, the unit page photograph) aligns its text with the column edge.
 
-- **Home:** red band with a short heading, the search field (max 34rem) and example searches; under it "Na današnji dan", then "Jedinice": the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
+- **Home:** red band with a short heading, the search field (max 34rem) and example searches; under it "Na današnji dan", then the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
 - **Record popup:** max 40rem wide; unit photo strip, name, unit, book line, details as a two-column label/value list, then the scanned page ("Strana u knjizi").
@@ -188,6 +188,7 @@ Square. Cards and photographs have no radius. Inputs and buttons have a barely-t
 - **Unit card:** the photograph is the card: a 4:3 black-and-white photo (slightly enlarged so scan edges stay out of frame, a gentle 1.04→1.06 zoom on hover), then name, description and the soldier count in red ink on the surface colour. No border, no shadow, no radius. A book-page image that stands in for a missing photograph is shown whole (contained), not cropped, and not greyscaled.
 
 - **Na današnji dan:** the name, then a small line candle (14px, muted ink) before the year and place of death, and the age in bold: "23 godine", or "22/23 godine" when only the birth year is known. No crosses or other religious marks.
+- **Portraits in the margins (home):** where the screen is at least 84rem wide, each margin beside the column holds a window the height of the screen in which wartime portraits drift slowly upward (about 10px a second, the two sides at different speeds), fading out at the top and bottom. Each is a small 3:4 black-and-white print (at most 6.5rem wide) at 60% opacity with the name under it in small PT Serif. Pointing at a face brings it to full strength and stops the drift, and a click opens the record. The order changes daily. With reduced motion the faces stand still. Only wartime photographs, never ones taken after the war.
 
 ### Inputs / Fields
 - **Search field:** white surface, 44px tall, 2px radius, search icon inside on the left, placeholder "Prezime, ime ili mesto". Inside the red band it has no border; on the unit page it has a 1px rule-strong border. Focus: 2px ink border.

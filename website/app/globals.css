@@ -3007,3 +3007,119 @@ button.kin-row:not(:disabled):hover .kin-label {
     padding-inline: var(--space-2);
   }
 }
+
+/* ========== Wartime portraits drifting in the home page margins ========== */
+
+.home-body {
+  position: relative;
+}
+
+.rails {
+  display: none;
+}
+
+/* Only where the margins beside the 72rem column are wide enough for a portrait */
+@media (min-width: 84rem) {
+  .rails {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    inset: 0;
+    overflow: clip;
+    pointer-events: none;
+  }
+}
+
+.rail-col {
+  width: calc((100% - var(--page)) / 2);
+}
+
+/* A window the height of the screen, held in place while the page scrolls, fading at both ends */
+.rail-window {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: auto;
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+
+/* Two identical sets, so moving up by half loops without a seam: about 10px a second */
+.rail-track {
+  animation: rail-drift 420s linear infinite;
+}
+
+.rail-col + .rail-col .rail-track {
+  animation-duration: 480s;
+  animation-delay: -120s;
+}
+
+.rail-window:hover .rail-track,
+.rail-window:focus-within .rail-track {
+  animation-play-state: paused;
+}
+
+@keyframes rail-drift {
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail-track {
+    animation: none;
+  }
+}
+
+.rail-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rail-face {
+  display: block;
+  width: min(6.5rem, 100% - 2.5rem);
+  margin-bottom: var(--space-7);
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+span.rail-face {
+  cursor: default;
+}
+
+.rail-face img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: var(--surface-sunk);
+  filter: grayscale(1) contrast(1.05);
+  opacity: 0.6;
+  transition: opacity 0.2s ease-out;
+}
+
+.rail-face:hover img,
+.rail-face:focus-visible img {
+  opacity: 1;
+}
+
+.rail-name {
+  display: block;
+  margin-top: var(--space-2);
+  font-family: var(--font-name);
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-wrap: balance;
+  color: var(--ink-muted);
+}
+
+.rail-face:hover .rail-name,
+.rail-face:focus-visible .rail-name {
+  color: var(--ink);
+}

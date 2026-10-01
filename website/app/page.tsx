@@ -12,6 +12,7 @@ import { searchAllPlaceholder } from './lib/totals'
 import BandPhoto from './components/BandPhoto'
 import OnThisDay from './components/OnThisDay'
 import UnitsByYear from './components/UnitsByYear'
+import PortraitRails from './components/PortraitRails'
 import { HOME_RESET } from './components/HomeLink'
 import SearchFilters, { FilterToggle, ShareSearch } from './components/SearchFilters'
 import { NO_FILTERS, applyFilters, filterCount, narrows, readSearch, writeSearch } from './lib/searchFilters'
@@ -164,6 +165,7 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="home-body">
       <div className="container section" id="results">
         {hasQuery || filtering ? (
           // A first search, or one after an empty result, shows the loading rows until its results are in
@@ -211,6 +213,8 @@ export default function Home() {
             <UnitsByYear units={units} />
           </>
         )}
+      </div>
+      <PortraitRails soldiers={allSoldiers} onOpen={openSoldier} />
       </div>
 
       {selectedSoldier && (
