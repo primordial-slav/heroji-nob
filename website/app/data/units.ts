@@ -36,7 +36,7 @@ export const units: Unit[] = [
     nameEn: '10th Slovenian People\'s Liberation Assault Brigade "Ljubljana"',
     description: 'Formirana 11. septembra 1943.',
     image: '/images/ljubljanska-brigada.jpg',
-    soldierCount: 3108,
+    soldierCount: 3175,
     dataFile: '/ljubljanska-soldiers.json',
     pdfFiles: ['/pdfs/ljubljanska-brigada.pdf']
   },
