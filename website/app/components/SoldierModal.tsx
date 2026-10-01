@@ -7,6 +7,9 @@ import { CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
 import RecordActions from './RecordActions'
+import KnowSoldierForm from './KnowSoldierForm'
+import FamilyStory from './FamilyStory'
+import { contributionsFor } from '@/app/data/family'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
@@ -105,6 +108,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
         <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
         {unit && <p className="modal-unit">{sqQuotes(unit)}</p>}
         <RecordActions soldier={soldier} unit={unitRecord} />
+        <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
 
         {entries.length === 1 && soldier.additional_info && (
           <p className="modal-entry">{soldier.additional_info}</p>
@@ -182,6 +186,8 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
             </p>
           </>
         )}
+
+        <KnowSoldierForm soldier={soldier} unit={unitRecord} />
 
         {!showReportForm && reportStatus === 'idle' && (
           <button className="report-error-link" onClick={() => setShowReportForm(true)}>

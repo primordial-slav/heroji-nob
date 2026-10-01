@@ -10,6 +10,7 @@ import {
   RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordDetails, recordPath, sourceTitle,
 } from '@/app/lib/records'
 import { sqQuotes } from '@/app/lib/typography'
+import { contributionsFor } from '@/app/data/family'
 import { SoldierName } from '@/app/components/SoldierResults'
 import { ArrowLeftIcon, PrintIcon } from '@/app/components/Icons'
 
@@ -70,6 +71,9 @@ export default function MemorialCard() {
   const details = recordDetails(soldier)
   const hasPhoto = !unit.image.includes('/pdf-thumbs/')
   const link = new URL(recordPath(unit, soldier.soldier_id), window.location.origin).toString()
+  // A photograph the family sent and allowed to be published
+  const portrait = contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))
+    .find((c) => c.photo)
 
   return (
     <div className="container card-page">
@@ -89,9 +93,19 @@ export default function MemorialCard() {
           </div>
         )}
         <div className="memorial-body">
-          <p className="memorial-unit">{sqQuotes(unit.name)}</p>
-          <h1 className="memorial-name"><SoldierName soldier={soldier} /></h1>
-          {years && <p className="memorial-years">{years}</p>}
+          <div className={portrait ? 'memorial-head has-portrait' : 'memorial-head'}>
+            <div>
+              <p className="memorial-unit">{sqQuotes(unit.name)}</p>
+              <h1 className="memorial-name"><SoldierName soldier={soldier} /></h1>
+              {years && <p className="memorial-years">{years}</p>}
+            </div>
+            {portrait && (
+              <figure className="memorial-portrait">
+                <img src={`/porodica/${portrait.photo}`} alt={portrait.photoCaption ?? ''} />
+                <figcaption>Fotografija: {portrait.from}</figcaption>
+              </figure>
+            )}
+          </div>
 
           {details.length > 0 && (
             <dl className="memorial-details">
