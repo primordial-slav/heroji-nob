@@ -386,7 +386,7 @@ export const units: Unit[] = [
     nameEn: '8th Montenegrin Brigade',
     description: 'Poginuli borci i starešine, i dopunski spisak poginulih iz Uba.',
     image: '/images/8-crnogorska-brigada.jpg',
-    soldierCount: 730,
+    soldierCount: 747,
     dataFile: '/8-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/8-crnogorska.pdf']
   }
