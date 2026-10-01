@@ -57,7 +57,7 @@ export default function RecordActions({ soldier, unit }: { soldier: Soldier; uni
           aria-expanded={showCitation}
           onClick={() => setShowCitation((v) => !v)}
         >
-          <QuoteIcon size={16} /> Kako navesti
+          <QuoteIcon size={16} /> Citiraj
         </button>
         {linkState === 'copied' && <span className="record-action-status" role="status">Link je kopiran.</span>}
       </div>
