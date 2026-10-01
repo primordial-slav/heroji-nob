@@ -209,7 +209,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         )}
 
         {unitRecord && (
-          <RelationsTree soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen} />
+          <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen} />
         )}
 
         {page && (
@@ -260,6 +260,10 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
               />
             </p>
           </>
+        )}
+
+        {unitRecord && (
+          <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen} />
         )}
 
         <KnowSoldierForm soldier={soldier} unit={unitRecord} />

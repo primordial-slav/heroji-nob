@@ -48,10 +48,12 @@ interface Props {
   unit: Unit
   unitSoldiers?: Soldier[]
   onOpen?: (soldier: Soldier) => void
+  part: 'comrades' | 'neighbours'   // the record shows its comrades above the book's page, its neighbours below it
 }
 
-// Where the soldier stood in the unit, who fell with him, and who came from his village: a small tree per question
-export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: Props) {
+// Where the soldier stood in the unit and who fell with him (comrades), or who came from his village (neighbours):
+// a small tree per question
+export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, part }: Props) {
   const lang = useLang()
   const t = useT().kin
   const [place, setPlace] = useState<Place | null>(null)
@@ -141,8 +143,9 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
       })
   }, [place, neighbours, unit, unitSoldiers, soldier.soldier_id, collator, path, levels, lang, t])
 
-  const showUnitTree = unitGroups.length > 0 || dayGroup !== null
-  if (!showUnitTree && placeGroups.length === 0) return null
+  const showUnitTree = part === 'comrades' && (unitGroups.length > 0 || dayGroup !== null)
+  const showPlaceTree = part === 'neighbours' && place !== null && placeGroups.length > 0
+  if (!showUnitTree && !showPlaceTree) return null
 
   const toggle = (key: string) => {
     setOpen((k) => (k === key ? null : key))
@@ -205,7 +208,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
   }
 
   return (
-    <section className="kin" aria-label={t.label}>
+    <section className="kin" aria-label={part === 'comrades' ? t.comrades : t.neighbours}>
       {showUnitTree && <div className="modal-source-head"><h3>{t.comrades}</h3></div>}
       {showUnitTree && (
         <ul className="kin-tree">
@@ -224,8 +227,8 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
         </ul>
       )}
 
-      {place && placeGroups.length > 0 && <div className="modal-source-head"><h3>{t.neighbours}</h3></div>}
-      {place && placeGroups.length > 0 && (
+      {showPlaceTree && <div className="modal-source-head"><h3>{t.neighbours}</h3></div>}
+      {showPlaceTree && place && (
         <ul className="kin-tree">
           {placeGroups.length === 1 ? (
             renderGroup({ ...placeGroups[0], key: 'place', label: placeName(place), kicker: t.birthplace, note: undefined }, false)
