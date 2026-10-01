@@ -26,7 +26,7 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
 
-  const { results, searchTerm, setSearchTerm } = useFuseSearch(
+  const { results, searchTerm, setSearchTerm, pending } = useFuseSearch(
     soldiers,
     { showAllOnEmpty: true, wholeWords: filters.wholeWords }
   )
@@ -116,8 +116,9 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
         </div>
 
         <div id="results">
-          {loading ? (
-            <ul className="loading-rows" aria-label="Učitavanje spiska">
+          {/* A search after an empty result shows the loading rows until its results are in */}
+          {loading || (!loadFailed && pending && listed.length === 0) ? (
+            <ul className="loading-rows" aria-label={loading ? 'Učitavanje spiska' : 'Pretraga…'}>
               {Array.from({ length: 8 }, (_, i) => <li key={i} />)}
             </ul>
           ) : loadFailed ? (

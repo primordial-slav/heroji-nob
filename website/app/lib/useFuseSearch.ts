@@ -1,220 +1,134 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Fuse, { IFuseOptions } from 'fuse.js'
 import { normalizeForSearch } from './diacritics'
+import { createSoldierIndex, mergeHits, searchFields, searchSoldiers, type SoldierIndex } from './soldierSearch'
+import type { FromSearchWorker, ToSearchWorker } from './search.worker'
 import type { Soldier } from './types'
 
-// Custom getFn that normalizes diacritics (and dj → d) during indexing
-function normalizingGetFn(
-  obj: Record<string, unknown>,
-  path: string | string[]
-): string | string[] {
-  const value = Fuse.config.getFn(obj, path)
-  if (Array.isArray(value)) {
-    return value.map((v) => normalizeForSearch(String(v)))
-  }
-  if (typeof value === 'string') {
-    return normalizeForSearch(value)
-  }
-  return value != null ? String(value) : ''
-}
+// Searching every unit's soldiers takes a second or more, which held up typing while it ran. So the search runs
+// in workers, each on a slice of the list, all at once; their hits are merged into the order a search of the
+// whole list gives (soldierSearch.ts).
 
-// The name a bio gives as "zvani Muta" / "zvana Mica": families often know a soldier only by it
-const NICKNAME = /\bzvan[aio]\s+[„"»]?([A-ZČĆŽŠĐ][a-zčćžšđ'-]+)/g
+const MAX_WORKERS = 4
+// Fewer soldiers than this per worker would cost more in starting it than it saves
+const MIN_SLICE = 10000
+// Soldiers per message: copying many more to a worker at once would hold up the page
+const PIECE = 5000
 
-function nicknames(soldier: Partial<Soldier>): string[] {
-  const bios = [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)]
-  const found: string[] = []
-  for (const bio of bios) {
-    for (const m of (bio ?? '').matchAll(NICKNAME)) if (!found.includes(m[1])) found.push(m[1])
-  }
-  return found
-}
+class SearchPool {
+  private slices: { worker: Worker; start: number; size: number }[] = []
+  private ready: Promise<void>
+  private failed = false
+  private closed = false
+  // Without workers, the search runs on the page's thread, as it did before them
+  private local: SoldierIndex | null = null
+  private busy = false
+  private waiting: { query: string; wholeWords: boolean; resolve: (found: Int32Array | null) => void } | null = null
 
-// full_name puts the father's name between surname and first name ("Kokalj Anrejev Rudolf"),
-// so "Kokalj Rudolf" or "Rudolf Kokalj" would miss it. Index both two-name orders as well,
-// the name as the soldier's other books print it ("Belić Momćilo" for Belić Momčilo),
-// and the surname with a nickname from the bio.
-function nameVariants(soldier: Partial<Soldier>): string[] {
-  const last = soldier.last_name?.trim()
-  const first = soldier.first_name?.trim()
-  const printed = (soldier.other_sources ?? []).map((o) => o.name).filter((n): n is string => !!n)
-  if (!last) return printed.map(normalizeForSearch)
-  const given = [first, ...nicknames(soldier)].filter((n): n is string => !!n)
-  return [...given.flatMap((g) => [`${last} ${g}`, `${g} ${last}`]), ...printed].map(normalizeForSearch)
-}
-
-/** The soldier's names as words: full_name, the names other books print, and nicknames */
-function nameWords(soldier: Soldier): string {
-  return [soldier.full_name, ...(soldier.other_sources ?? []).map((o) => o.name ?? ''), ...nicknames(soldier)].join(' ')
-}
-
-/** The soldier's bios as words: own, and those of other books */
-function infoWords(soldier: Soldier): string {
-  return [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)].join(' ')
-}
-
-const SOLDIER_KEYS = [
-  { name: 'full_name', weight: 0.6 },
-  { name: 'name_variants', weight: 0.6, getFn: nameVariants },
-  { name: 'additional_info', weight: 0.2 },
-  { name: 'birth_year', weight: 0.1 },
-]
-// Must stay the last key, see searchSoldiers
-const UNIT_KEY = { name: 'unit', weight: 0.1 }
-
-const FUSE_OPTIONS: IFuseOptions<Partial<Soldier>> = {
-  keys: [...SOLDIER_KEYS, UNIT_KEY],
-  threshold: 0.35,
-  ignoreLocation: true,
-  includeScore: true,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  getFn: normalizingGetFn as any,
-  fieldNormWeight: 1,
-}
-
-// `unit` is one of ~19 unit names, so matching it on every soldier repeats the
-// same work tens of thousands of times. The soldier index skips it (its getFn
-// yields nothing, but the key keeps its weight so the other keys' normalized
-// weights stay the same) and the unit names are matched once in a small index.
-const SOLDIER_FUSE_OPTIONS: IFuseOptions<Soldier> = {
-  ...FUSE_OPTIONS,
-  keys: [...SOLDIER_KEYS, { ...UNIT_KEY, getFn: () => '' }],
-  shouldSort: false,
-}
-
-interface SoldierIndex {
-  data: Soldier[]
-  soldiers: Fuse<Soldier>
-  units: Fuse<Partial<Soldier>>
-  /** Soldier indices of each unit, in the order of the units index */
-  unitMembers: number[][]
-  /** Position of each soldier's unit in the units index, -1 if none */
-  unitOf: Int32Array
-  /** wordText of each soldier's full_name and additional_info, filled in as searches need them */
-  nameText: (string | undefined)[]
-  infoText: (string | undefined)[]
-}
-
-const NON_WORD = /[^a-z0-9À-ɏ]+/g
-
-/** " rolic vojislava milomir ": a text's words, normalized, lowercased and space-delimited */
-function wordText(text: string | undefined): string {
-  return ` ${normalizeForSearch(text ?? '').toLowerCase().replace(NON_WORD, ' ').trim()} `
-}
-
-/**
- * How well one query word matches a soldier: 0 = a whole word of the name,
- * 1 = the start of a name word, 2 = the start of a word in the bio (so
- * "Gračac" also finds "u Gračacu"), 3 = inside a name word, 4 = only fuzzily.
- */
-function wordRank(index: SoldierIndex, idx: number, word: string): number {
-  const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(nameWords(index.data[idx])))
-  if (name.includes(` ${word} `)) return 0
-  if (name.includes(` ${word}`)) return 1
-  const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(infoWords(index.data[idx])))
-  if (info.includes(` ${word}`)) return 2
-  return name.includes(word) ? 3 : 4
-}
-
-/** For "whole words only": 0 = a whole word of the name, 1 = a whole word of the bio, -1 = neither */
-function wholeWordRank(index: SoldierIndex, idx: number, word: string): number {
-  const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(nameWords(index.data[idx])))
-  if (name.includes(` ${word} `)) return 0
-  const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(infoWords(index.data[idx])))
-  return info.includes(` ${word} `) ? 1 : -1
-}
-
-/** Soldiers whose name or bio has every query word as a whole word, name matches first, in data order */
-function searchWholeWords(index: SoldierIndex, words: string[]): Soldier[] {
-  const results: { idx: number; rank: number }[] = []
-  for (let idx = 0; idx < index.data.length; idx++) {
-    let rank = 0
-    for (const word of words) {
-      const r = wholeWordRank(index, idx, word)
-      if (r < 0) { rank = -1; break }
-      rank += r
+  constructor(private data: Soldier[]) {
+    const cores = navigator.hardwareConcurrency || 2
+    const count = Math.max(1, Math.min(MAX_WORKERS, cores - 1, Math.floor(data.length / MIN_SLICE)))
+    const size = Math.ceil(data.length / count)
+    try {
+      for (let start = 0; start < data.length; start += size) {
+        const worker = new Worker(new URL('./search.worker.ts', import.meta.url))
+        worker.onerror = () => { this.failed = true }
+        this.slices.push({ worker, start, size: Math.min(size, data.length - start) })
+      }
+    } catch {
+      this.failed = true
     }
-    if (rank >= 0) results.push({ idx, rank })
+    this.ready = this.handOver()
   }
-  results.sort((a, b) => a.rank - b.rank || a.idx - b.idx)
-  return results.map((r) => index.data[r.idx])
-}
 
-export function createSoldierIndex(data: Soldier[]): SoldierIndex {
-  const unitPos = new Map<string, number>()
-  const unitMembers: number[][] = []
-  const unitOf = new Int32Array(data.length).fill(-1)
-  data.forEach((soldier, i) => {
-    if (!soldier.unit) return
-    let pos = unitPos.get(soldier.unit)
-    if (pos === undefined) {
-      pos = unitMembers.push([]) - 1
-      unitPos.set(soldier.unit, pos)
+  /** Gives each worker its slice, a piece at a time, letting the page run in between */
+  private async handOver() {
+    for (const slice of this.slices) {
+      for (let at = 0; at < slice.size; at += PIECE) {
+        if (this.closed || this.failed) return
+        const end = Math.min(at + PIECE, slice.size)
+        const message: ToSearchWorker = {
+          type: 'data',
+          soldiers: this.data.slice(slice.start + at, slice.start + end).map(searchFields),
+          last: end === slice.size,
+        }
+        slice.worker.postMessage(message)
+        await new Promise((resolve) => setTimeout(resolve))
+      }
     }
-    unitMembers[pos].push(i)
-    unitOf[i] = pos
-  })
-  return {
-    data,
-    soldiers: new Fuse(data, SOLDIER_FUSE_OPTIONS),
-    units: new Fuse(Array.from(unitPos.keys(), (unit) => ({ unit })), FUSE_OPTIONS),
-    unitMembers,
-    unitOf,
-    nameText: new Array(data.length),
-    infoText: new Array(data.length),
-  }
-}
-
-/**
- * The results of a single Fuse over FUSE_OPTIONS, best word matches first.
- *
- * Fuse scores every exact substring match alike and then prefers shorter
- * fields, so for "rolic" Korolić Stojan came before Rolić Vojislava Milomir,
- * and for "Gračac" people named Gravac or Gračan came before everyone from
- * Gračac. Results are therefore sorted by the sum of each query word's
- * wordRank, and in Fuse's order within the same sum.
- *
- * Fuse scores a soldier as the product of one factor per matching key, taken
- * in key order, so the `unit` factor (last key) multiplies the product of the
- * others, and a soldier matching by unit alone scores just that factor. The
- * units index has the same keys and only `unit` filled in, so its score is
- * that factor.
- */
-export function searchSoldiers(index: SoldierIndex, query: string, wholeWords = false): Soldier[] {
-  const { data, unitMembers, unitOf } = index
-  const words = query.toLowerCase().split(NON_WORD).filter(Boolean)
-  if (wholeWords) return searchWholeWords(index, words)
-  const rankOf = (idx: number) =>
-    words.reduce((sum, word) => sum + wordRank(index, idx, word), 0)
-
-  // 0 = no match; a unit factor is always > 0
-  const unitFactor = new Float64Array(unitMembers.length)
-  for (const hit of index.units.search(query)) {
-    unitFactor[hit.refIndex] = hit.score!
   }
 
-  const results: { idx: number; rank: number; score: number }[] = []
-  const found = new Uint8Array(data.length)
-  for (const { refIndex: idx, score } of index.soldiers.search(query)) {
-    const factor = unitOf[idx] >= 0 ? unitFactor[unitOf[idx]] : 0
-    results.push({ idx, rank: rankOf(idx), score: factor ? score! * factor : score! })
-    found[idx] = 1
+  /**
+   * Positions in `data` of the soldiers found, best first. One search runs at a time; a search asked for while
+   * another runs waits, and gets null if a newer one takes its place before it starts.
+   */
+  search(query: string, wholeWords: boolean): Promise<Int32Array | null> {
+    this.waiting?.resolve(null)
+    return new Promise((resolve) => {
+      this.waiting = { query, wholeWords, resolve }
+      this.next()
+    })
   }
-  unitFactor.forEach((factor, pos) => {
-    if (!factor) return
-    for (const idx of unitMembers[pos]) {
-      if (!found[idx]) results.push({ idx, rank: rankOf(idx), score: factor })
+
+  private async next() {
+    if (this.busy || this.closed || !this.waiting) return
+    const { query, wholeWords, resolve } = this.waiting
+    this.waiting = null
+    this.busy = true
+    try {
+      resolve(await this.run(query, wholeWords))
+    } catch {
+      resolve(new Int32Array(0))
+    } finally {
+      this.busy = false
+      this.next()
     }
-  })
+  }
 
-  // Within a rank, Fuse's default order: by score, then by position in data
-  results.sort((a, b) => a.rank - b.rank || a.score - b.score || a.idx - b.idx)
-  return results.map((r) => data[r.idx])
+  private async run(query: string, wholeWords: boolean): Promise<Int32Array> {
+    await this.ready
+    if (!this.failed) {
+      try {
+        const message: ToSearchWorker = { type: 'search', query, wholeWords }
+        const hits = await Promise.all(this.slices.map((slice) => this.ask(slice.worker, message)))
+        return mergeHits(hits.map((h, i) => ({ hits: h, start: this.slices[i].start })))
+      } catch {
+        this.failed = true
+      }
+    }
+    this.terminate()
+    if (!this.local) {
+      console.warn('Search workers did not start; searching on the page, which holds up typing')
+      this.local = createSoldierIndex(this.data.map(searchFields))
+    }
+    return mergeHits([{ hits: searchSoldiers(this.local, query, wholeWords), start: 0 }])
+  }
+
+  private ask(worker: Worker, message: ToSearchWorker): Promise<FromSearchWorker> {
+    return new Promise((resolve, reject) => {
+      worker.onmessage = (event: MessageEvent<FromSearchWorker>) => resolve(event.data)
+      worker.onerror = (error) => reject(error)
+      worker.postMessage(message)
+    })
+  }
+
+  private terminate() {
+    this.slices.forEach((slice) => slice.worker.terminate())
+    this.slices = []
+  }
+
+  close() {
+    this.closed = true
+    this.terminate()
+  }
 }
 
+const NO_SOLDIERS: Soldier[] = []
 const DEBOUNCE_MS = 250
+
+/** Which search a list of results is for: the same for spellings that search alike ("Rolić", "rolic ") */
+const searchKey = (term: string, wholeWords: boolean) => `${wholeWords ? 1 : 0}${normalizeForSearch(term.trim())}`
 
 interface UseFuseSearchOptions {
   /** When true, an empty query returns all data. When false, returns empty array. */
@@ -228,6 +142,8 @@ interface UseFuseSearchReturn {
   searchTerm: string
   setSearchTerm: (term: string) => void
   isSearching: boolean
+  /** The results are not yet those of the term typed: the last search's stay until its are in */
+  pending: boolean
 }
 
 export function useFuseSearch(
@@ -236,16 +152,19 @@ export function useFuseSearch(
 ): UseFuseSearchReturn {
   const [searchTerm, setSearchTerm] = useState('')
   const [debouncedTerm, setDebouncedTerm] = useState('')
-  const [results, setResults] = useState<Soldier[]>([])
-  const indexRef = useRef<SoldierIndex | null>(null)
+  const [found, setFound] = useState({ key: '', results: NO_SOLDIERS })
+  const poolRef = useRef<SearchPool | null>(null)
+  const wholeWords = !!options.wholeWords
 
-  // Build search index when data changes
+  // Hand the data to the search workers when it changes
   useEffect(() => {
-    if (data.length === 0) {
-      indexRef.current = null
-      return
+    if (data.length === 0) return
+    const pool = new SearchPool(data)
+    poolRef.current = pool
+    return () => {
+      pool.close()
+      poolRef.current = null
     }
-    indexRef.current = createSoldierIndex(data)
   }, [data])
 
   // Debounce the search term
@@ -259,20 +178,21 @@ export function useFuseSearch(
   // Execute search when debounced term changes
   useEffect(() => {
     if (!debouncedTerm.trim()) {
-      setResults(options.showAllOnEmpty ? data : [])
+      setFound({ key: '', results: options.showAllOnEmpty ? data : NO_SOLDIERS })
       return
     }
-
-    if (!indexRef.current) {
-      setResults([])
-      return
-    }
-
-    const normalizedQuery = normalizeForSearch(debouncedTerm.trim())
-    setResults(searchSoldiers(indexRef.current, normalizedQuery, options.wholeWords))
-  }, [debouncedTerm, data, options.showAllOnEmpty, options.wholeWords])
+    const pool = poolRef.current
+    if (!pool) return
+    let current = true
+    const key = searchKey(debouncedTerm, wholeWords)
+    pool.search(normalizeForSearch(debouncedTerm.trim()), wholeWords).then((positions) => {
+      if (current && positions) setFound({ key, results: Array.from(positions, (i) => data[i]) })
+    })
+    return () => { current = false }
+  }, [debouncedTerm, data, options.showAllOnEmpty, wholeWords])
 
   const isSearching = searchTerm.trim().length > 0
+  const pending = isSearching && found.key !== searchKey(searchTerm, wholeWords)
 
-  return { results, searchTerm, setSearchTerm, isSearching }
+  return { results: found.results, searchTerm, setSearchTerm, isSearching, pending }
 }

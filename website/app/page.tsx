@@ -35,7 +35,7 @@ export default function Home() {
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
 
-  const { results, searchTerm, setSearchTerm, isSearching } = useFuseSearch(
+  const { results, searchTerm, setSearchTerm, isSearching, pending } = useFuseSearch(
     allSoldiers,
     { showAllOnEmpty: false, wholeWords: filters.wholeWords }
   )
@@ -166,9 +166,10 @@ export default function Home() {
 
       <div className="container section" id="results">
         {hasQuery || filtering ? (
-          loading ? (
+          // A first search, or one after an empty result, shows the loading rows until its results are in
+          loading || (!loadFailed && pending && listed.length === 0) ? (
             <>
-              <p className="results-count">Učitavanje spiskova…</p>
+              <p className="results-count">{loading ? 'Učitavanje spiskova…' : 'Pretraga…'}</p>
               <ul className="loading-rows" aria-hidden="true">
                 {Array.from({ length: 6 }, (_, i) => <li key={i} />)}
               </ul>
