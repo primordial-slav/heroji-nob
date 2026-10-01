@@ -16,8 +16,8 @@ colors:
   rule-strong: "#b6b0a8"
   highlight: "#fff0a8"
   highlight-edge: "#c79a00"
-  dark-ground: "#121110"
-  dark-surface: "#1a1917"
+  dark-ground: "#1f1e1c"
+  dark-surface: "#292826"
   dark-ink: "#ebe8e3"
   dark-ink-muted: "#a8a29a"
   dark-partisan-red: "#7a1c1f"
@@ -203,7 +203,7 @@ Square. Cards and photographs have no radius. Inputs and buttons have a barely-t
 - **Do** write names surname first, surname bold, in PT Serif.
 - **Do** keep every record one click from its scanned line in the book.
 - **Do** use Serbo-Croatian typography: „…“ quotes, dates like 29. 12. 1924, dot thousands (9.814).
-- **Do** keep both themes working; the dark theme is a warm near-black with a deepened red.
+- **Do** keep both themes working; the dark theme is a warm charcoal (not near-black) with a deepened red.
 
 ### Don't:
 - **Don't** add statistics blocks, totals tiles or charts.

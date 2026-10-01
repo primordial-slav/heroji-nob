@@ -42,13 +42,14 @@
 }
 
 [data-theme="dark"] {
-  --ground: #121110;
-  --surface: #1a1917;
-  --surface-sunk: #242220;
+  /* A warm charcoal rather than near-black: easier on the eyes, and the photographs still stand out */
+  --ground: #1f1e1c;
+  --surface: #292826;
+  --surface-sunk: #33312e;
   --ink: #ebe8e3;
-  --ink-muted: #a8a29a;
-  --rule: #2d2b28;
-  --rule-strong: #45413c;
+  --ink-muted: #aea89f;
+  --rule: #3c3a36;
+  --rule-strong: #58544e;
   --red: #7a1c1f;
   --red-deep: #5f1517;
   --red-ink: #eb8a80;
