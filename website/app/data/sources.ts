@@ -64,6 +64,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak preživjelih boraca i starješina Druge ličke proleterske brigade (iz zbornika sjećanja)'
   },
   {
+    id: 'druga-licka-sjecanja-poginuli',
+    title: 'Druga lička proleterska brigada — spisak poginulih (zbornik sjećanja)',
+    author: 'Đuro Mileusnić',
+    pdfPath: '/pdfs/druga-licka-sjecanja-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/druga-licka-sjecanja-poginuli.jpg',
+    brigadeName: 'Druga lička proleterska brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca Druge ličke proleterske brigade (iz zbornika sjećanja); većina je i na spisku Vojnoistorijskog instituta'
+  },
+  {
     id: 'treca-proleterska-brigada',
     title: 'Treća proleterska (sandžačka) brigada',
     author: 'Žarko Vidović',

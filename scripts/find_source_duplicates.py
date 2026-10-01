@@ -98,7 +98,7 @@ SURVIVED = re.compile(r'kraj rata (?:je )?do[cč]ekao|pre[zž]ivio|\bživ(?:i|e)
 
 # lists of only the fallen, or only those who lived to the end of the war: every entry's fate, said or not
 LIST_FATE = {
-    'druga-licka-spisak.pdf': 'fell', 'druga-licka-sjecanja-prezivjeli.pdf': 'lived',
+    'druga-licka-spisak.pdf': 'fell', 'druga-licka-sjecanja-poginuli.pdf': 'fell', 'druga-licka-sjecanja-prezivjeli.pdf': 'lived',
     '17-slavonska-poginuli.pdf': 'fell', '17-slavonska-prezivjeli.pdf': 'lived',
 }
 
@@ -138,7 +138,10 @@ def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
     fa = {fold(a.get('fathers_name')), fold(a.get('middle_name'))} - {''}
     fb = {fold(b.get('fathers_name')), fold(b.get('middle_name'))} - {''}
     if fa and fb:
-        (agree if fa & fb or any(x[:4] == y[:4] for x in fa for y in fb) else clash).append('father')
+        # the same name in another case (Nikole / Nikola), an initial (N. / Nikole), a letter misread (Cije / Cvije)
+        same = fa & fb or any(x[:4] == y[:4] or (min(len(x), len(y)) == 1 and x[0] == y[0])
+                               or (min(len(x), len(y)) >= 4 and one_letter_apart(x, y)) for x in fa for y in fb)
+        (agree if same else clash).append('father')
     ya, yb = year(a.get('birth_year')), year(b.get('birth_year'))
     if ya and yb:
         (agree if abs(ya - yb) <= 1 else clash).append('birth year')
@@ -201,22 +204,40 @@ def matches(soldiers: list[dict], rank: dict) -> list[dict]:
                     agree, clash = evidence(a, b)
                     if agree and not clash:
                         consider(a, b, 'given name differs')
-    # how many candidates each record has
-    count = defaultdict(int)
+    # each record's candidates in each other list: one, or one that agrees where all the others disagree
+    sides = defaultdict(list)
     for p in pairs.values():
-        count[p['keep']['soldier_id']] += 1
-        count[p['merge']['soldier_id']] += 1
+        sides[(p['keep']['soldier_id'], list_of(p['merge']))].append(p)
+        sides[(p['merge']['soldier_id'], list_of(p['keep']))].append(p)
+
+    def chosen(p, group):
+        return len(group) == 1 or (p['agree'] and not p['clash'] and all(q['clash'] for q in group if q is not p))
+
+    def printed_twice(group):
+        """The other list prints the soldier twice (both entries agree on two things or more, nothing disagrees):
+        both merge into the one record."""
+        return len(group) > 1 and all(len(q['agree']) >= 2 and not q['clash'] for q in group)
+
     for p in pairs.values():
-        alone = count[p['keep']['soldier_id']] == 1 and count[p['merge']['soldier_id']] == 1
+        keep_side = sides[(p['keep']['soldier_id'], list_of(p['merge']))]
+        merge_side = sides[(p['merge']['soldier_id'], list_of(p['keep']))]
+        # the keeping list printing him twice: the entry goes to the first of them (the other stays as printed)
+        first = printed_twice(merge_side) and p is min(merge_side, key=lambda q: q['keep']['soldier_id'])
+        alone = (chosen(p, keep_side) or printed_twice(keep_side)) and (chosen(p, merge_side) or first)
         if p['how'] == 'name' and alone and not p['clash']:
             p['grade'] = 'sure' if p['agree'] else 'name'
         elif (alone and len(p['agree']) >= 2 and len(p['agree']) > len(p['clash'])
               and not {'one lived', 'father'} & set(p['clash'])):
             p['grade'] = 'likely'
+        elif alone and len(p['agree']) >= 4 and p['clash'] == ['father']:
+            p['grade'] = 'likely'           # born the same year in the same village, fell the same year in the same place
+            p['note'] = 'the books name different fathers'
         else:
             p['grade'] = 'review'
         if not alone:
             p['note'] = 'several candidates'
+        elif len(keep_side) > 1:
+            p['note'] = 'printed twice'
     return sorted(pairs.values(), key=lambda p: (p['grade'], p['keep']['soldier_id']))
 
 
