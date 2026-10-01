@@ -166,7 +166,7 @@ export const units: Unit[] = [
     nameEn: '17th Slavonia Assault Brigade',
     description: 'Formirana 30. decembra 1942. kod Voćina. Poginuli i preživeli borci, po opštinama.',
     image: '/images/17-slavonska-brigada.jpg',
-    soldierCount: 3613,
+    soldierCount: 3648,
     dataFile: '/17-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/17-slavonska-poginuli.pdf', '/pdfs/17-slavonska-prezivjeli.pdf']
   },
