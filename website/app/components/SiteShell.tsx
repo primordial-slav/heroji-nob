@@ -4,7 +4,7 @@ import '../globals.css'
 import HomeLink from './HomeLink'
 import Navigation from './Navigation'
 import ThemeToggle from './ThemeToggle'
-import LanguageBar from './LanguageBar'
+import LanguageMenu from './LanguageMenu'
 import { ThemeProvider } from '../lib/ThemeContext'
 import { LangProvider } from '../i18n/LangContext'
 import { HTML_LANG, type Lang } from '../i18n/config'
@@ -48,11 +48,11 @@ export default function SiteShell({ lang, children }: { lang: Lang; children: Re
       <body>
         <LangProvider lang={lang}>
           <ThemeProvider>
-            <LanguageBar />
             <header className="masthead">
               <div className="container masthead-bar">
                 <HomeLink className="site-name">{messagesFor(lang).site.name}</HomeLink>
                 <Navigation />
+                <LanguageMenu />
                 <ThemeToggle />
               </div>
             </header>

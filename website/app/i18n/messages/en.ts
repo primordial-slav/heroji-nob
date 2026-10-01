@@ -34,15 +34,8 @@ export const en: Messages = {
 
   home: {
     title: 'Find a Partisan',
-    fieldLabel: 'Surname, first name or place',
-    placeholder: (x: number) => `Search ${n(x)} ${plural('en', x, { one: 'name', other: 'names' })}`,
-    examplesLead: 'For example:',
-    examples: [
-      { label: 'Kovačević', query: 'Kovačević' },
-      { label: 'Milan Petrović', query: 'Milan Petrović' },
-      { label: 'Bruvno', query: 'Bruvno' },
-      { label: 'Petrović from Gračac', query: 'Petrović', place: 'Gračac' },
-    ],
+    fieldLabel: 'Surname, name or place',
+    total: (x: number) => `${n(x)} ${plural('en', x, { one: 'name', other: 'names' })}`,
     loading: 'Loading the rolls…',
     loadFailedTitle: 'The rolls did not load',
     loadFailedText: 'Check your internet connection and reload the page.',
@@ -249,7 +242,7 @@ export const en: Messages = {
     backHome: 'Back to the home page',
     allUnits: 'All units',
     search: 'Search this unit',
-    placeholder: 'Surname, first name or place',
+    placeholder: 'Surname, name or place',
     loading: 'Loading the roll',
     loadFailedTitle: 'The roll did not load',
     loadFailedText: 'Check your internet connection and reload the page.',

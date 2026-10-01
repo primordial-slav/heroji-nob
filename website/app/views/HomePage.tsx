@@ -110,7 +110,7 @@ export default function HomePage() {
               id="search"
               type="search"
               className="search-input"
-              placeholder={t.home.placeholder(totalNames)}
+              placeholder={t.home.fieldLabel}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               autoComplete="off"
@@ -124,22 +124,7 @@ export default function HomePage() {
             />
           </div>
           {showFilters && <SearchFilters id="home-filters" filters={filters} onChange={setFilters} withUnit />}
-          <p className="finder-hint">
-            <span>{t.home.examplesLead}</span>
-            {t.home.examples.map((example) => (
-              <button
-                key={example.label}
-                type="button"
-                onClick={() => {
-                  setSearchTerm(example.query)
-                  setFilters({ ...NO_FILTERS, place: example.place ?? '' })
-                  if (example.place) setShowFilters(true)
-                }}
-              >
-                {example.label}
-              </button>
-            ))}
-          </p>
+          <p className="finder-hint">{t.home.total(totalNames)}</p>
           <BandPhoto units={units} />
         </div>
       </section>

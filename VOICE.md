@@ -15,7 +15,7 @@ Mostly families and descendants: someone types a name they heard at home and hop
 - **Short sentences; one thing each.** No chains of genitives, no passive bureaucratic forms ("izvršeno je", "vrši se").
 - **Not translated from English.** Watch for calques: "da vidite" after a command, "u cilju", "baziran na", "kreirati", "kliknite ovde".
 - **No pathos, slogans or marketing.** Not "heroji koji su dali živote za slobodu", not "Otkrijte", "Istražite", "Saznajte više". "Narodni heroj" is a title and is written only where the record has it.
-- **No exclamation marks.** No statistics as decoration (see `DESIGN.md`); a count is said where it helps ("Pretražite 108.150 imena", "Pronađeno 15 boraca").
+- **No exclamation marks.** No statistics as decoration (see `DESIGN.md`); a count is said where it helps ("110.430 imena" under the search field, "Pronađeno 15 boraca").
 
 ## Addressing the visitor
 

@@ -31,16 +31,8 @@ export const sr = {
   home: {
     title: 'Pretraga boraca',
     fieldLabel: 'Prezime, ime ili mesto',
-    /** "Pretražite 108.150 imena" */
-    placeholder: (x: number) => `Pretražite ${n(x)} ${plural('sr', x, { one: 'ime', other: 'imena' })}`,
-    examplesLead: 'Na primer:',
-    // One of each kind of search: a surname, a first name with the surname, a village, a surname in one place
-    examples: [
-      { label: 'Kovačević', query: 'Kovačević' },
-      { label: 'Milan Petrović', query: 'Milan Petrović' },
-      { label: 'Bruvno', query: 'Bruvno' },
-      { label: 'Petrović iz Gračaca', query: 'Petrović', place: 'Gračac' },
-    ] as { label: string; query: string; place?: string }[],
+    /** "110.430 imena": under the search field */
+    total: (x: number) => `${n(x)} ${plural('sr', x, { one: 'ime', other: 'imena' })}`,
     loading: 'Učitavanje spiskova…',
     loadFailedTitle: 'Spiskovi se nisu učitali',
     loadFailedText: 'Proverite internet vezu i osvežite stranu.',

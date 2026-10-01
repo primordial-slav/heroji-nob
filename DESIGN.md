@@ -155,7 +155,7 @@ Both are self-hosted through next/font with Latin, Latin Extended and Cyrillic s
 
 One centred column (max 72rem) with a 24px side gutter (16px on phones). Content that runs full width (the home band photograph, the unit page photograph) aligns its text with the column edge.
 
-- **Home:** red band with a short heading, the search field (max 34rem) and example searches; under it "Na današnji dan", then the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
+- **Home:** red band with a short heading, the search field (max 34rem), which says what to type ("Prezime, ime ili mesto"), and under it a quiet line with the total ("110.430 imena"), no example searches; under it "Na današnji dan", then the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
 - **Record popup:** max 40rem wide; unit photo strip, name, unit, book line, details as a two-column label/value list, then the scanned page ("Strana u knjizi").
@@ -195,7 +195,8 @@ Square. Cards and photographs have no radius. Inputs and buttons have a barely-t
 - **Filters:** "Filteri" at the end of the search field (with a small red count when any are set) opens a row of small labelled fields under it: birth year with ±, place, unit (home only), fate, and "Samo cele reči". Fields are 2.25rem tall, 2px radius; in the band, white with no border.
 
 ### Navigation
-- Site name in PT Serif bold, links "Početna" and "Izvori" in white on the band with a 2px white underline for the current page, and a three-way light/dark/system toggle (segmented, white on red).
+- Site name in PT Serif bold, links "Početna", "Galerija" and "Izvori" in white on the band with a 2px white underline for the current page, the language menu, and a three-way light/dark/system toggle (segmented, white on red).
+- **Language menu:** a globe with the page language's code (SH, СХ, SL, MK, EN) and a small chevron, framed like the theme toggle and set just before it. It opens a list under it on the surface colour, each language named in its own language, the current one in bold with a 2px red inset on its left. On phones it sits beside the site name. There is no language bar above the header.
 
 ### Record popup
 - A strip of the unit's photograph (about 6.5rem tall, black and white) with a 3px red rule under it, then the person. The scan viewer opens at the zoom where the whole highlighted entry fits the width (140% minimum on phones), scrolled to the entry, with page and zoom controls.

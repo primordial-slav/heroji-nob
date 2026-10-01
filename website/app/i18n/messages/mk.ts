@@ -42,15 +42,7 @@ export const mk: Messages = {
   home: {
     title: 'Пребарување борци',
     fieldLabel: 'Презиме, име или место',
-    placeholder: (x: number) => `Пребарајте меѓу ${n(x)} ${plural('mk', x, { one: 'име', other: 'имиња' })}`,
-    examplesLead: 'На пример:',
-    // Typed in Cyrillic, as a Macedonian keyboard writes them: search reads them in the books' Latin
-    examples: [
-      { label: 'Трајковиќ', query: 'Трајковиќ' },
-      { label: 'Милан Петровиќ', query: 'Милан Петровиќ' },
-      { label: 'Тетово', query: 'Тетово' },
-      { label: 'Јовановиќ од Тетово', query: 'Јовановиќ', place: 'Тетово' },
-    ],
+    total: (x: number) => `${n(x)} ${plural('mk', x, { one: 'име', other: 'имиња' })}`,
     loading: 'Се вчитуваат списоците…',
     loadFailedTitle: 'Списоците не се вчитаа',
     loadFailedText: 'Проверете ја интернет-врската и освежете ја страницата.',

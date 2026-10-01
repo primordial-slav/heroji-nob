@@ -33,14 +33,7 @@ export const sl: Messages = {
   home: {
     title: 'Iskanje borcev',
     fieldLabel: 'Priimek, ime ali kraj',
-    placeholder: (x: number) => `Iščite med ${n(x)} ${plural('sl', x, { one: 'imenom', two: 'imenoma', other: 'imeni' })}`,
-    examplesLead: 'Na primer:',
-    examples: [
-      { label: 'Novak', query: 'Novak' },
-      { label: 'Anton Novak', query: 'Anton Novak' },
-      { label: 'Trbovlje', query: 'Trbovlje' },
-      { label: 'Novak iz Ljubljane', query: 'Novak', place: 'Ljubljana' },
-    ],
+    total: (x: number) => `${n(x)} ${plural('sl', x, { one: 'ime', two: 'imeni', few: 'imena', other: 'imen' })}`,
     loading: `Nalaganje seznamov${dots}`,
     loadFailedTitle: 'Seznami se niso naložili',
     loadFailedText: 'Preverite internetno povezavo in osvežite stran.',

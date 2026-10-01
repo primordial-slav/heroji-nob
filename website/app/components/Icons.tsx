@@ -69,6 +69,12 @@ export const CopyIcon = (p: IconProps) => (
 export const CandleIcon = (p: IconProps) => (
   <Svg {...p}><path d="M9.5 20.5V11h5v9.5" /><path d="M12 11V9.5" /><path d="M12 8c-1.4-1.1-1.4-2.9 0-4.5 1.4 1.6 1.4 3.4 0 4.5z" /><path d="M7 20.5h10" /></Svg>
 )
+export const GlobeIcon = (p: IconProps) => (
+  <Svg {...p}><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17" /><path d="M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5z" /></Svg>
+)
+export const ChevronDownIcon = (p: IconProps) => (
+  <Svg {...p}><path d="m6 9 6 6 6-6" /></Svg>
+)
 export const FilterIcon = (p: IconProps) => (
   <Svg {...p}><path d="M4 7h9" /><path d="M19 7h1" /><circle cx="16" cy="7" r="2.5" /><path d="M4 17h1" /><path d="M11 17h9" /><circle cx="8" cy="17" r="2.5" /></Svg>
 )
