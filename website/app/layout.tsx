@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { Golos_Text, PT_Serif } from 'next/font/google'
 import './globals.css'
+import HomeLink from './components/HomeLink'
 import Navigation from './components/Navigation'
 import ThemeToggle from './components/ThemeToggle'
 import { ThemeProvider } from './lib/ThemeContext'
@@ -53,7 +53,7 @@ export default function RootLayout({
         <ThemeProvider>
           <header className="masthead">
             <div className="container masthead-bar">
-              <Link href="/" className="site-name">Knjiga boraca</Link>
+              <HomeLink className="site-name">Knjiga boraca</HomeLink>
               <Navigation />
               <ThemeToggle />
             </div>

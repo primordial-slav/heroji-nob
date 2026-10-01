@@ -11,6 +11,7 @@ import { SearchIcon } from './components/Icons'
 import { sqQuotes } from './lib/typography'
 import { searchAllPlaceholder } from './lib/totals'
 import BandPhoto from './components/BandPhoto'
+import { HOME_RESET } from './components/HomeLink'
 
 const EXAMPLES = ['Končar', 'Petar Abramović', 'Gračac']
 
@@ -46,6 +47,17 @@ export default function Home() {
 
     loadAllSoldiers()
   }, [])
+
+  useEffect(() => {
+    // The site name and "Početna" start the page over, also when it is already open
+    const reset = () => {
+      setSearchTerm('')
+      setSelectedSoldier(null)
+      window.scrollTo({ top: 0 })
+    }
+    window.addEventListener(HOME_RESET, reset)
+    return () => window.removeEventListener(HOME_RESET, reset)
+  }, [setSearchTerm])
 
   const hasQuery = searchTerm.trim().length > 0
 
