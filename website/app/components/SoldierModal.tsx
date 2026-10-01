@@ -5,19 +5,11 @@ import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
-import { units } from '@/app/data/units'
-import { sources } from '@/app/data/sources'
+import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
+import RecordActions from './RecordActions'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
-
-/** The book (or web page) an entry was printed in, as the Sources page names it */
-function sourceTitle(entry: SoldierSource): string {
-  const source = entry.pdf_file
-    ? sources.find((s) => s.pdfPath === `/pdfs/${entry.pdf_file}`)
-    : sources.find((s) => entry.source_url?.startsWith(s.pdfPath))
-  return source?.title ?? entry.pdf_file ?? 'znaci.org'
-}
 
 /** A short name for the book switch: "spisak poginulih" from "Brodska brigada — spisak poginulih" */
 function shortTitle(entry: SoldierSource): string {
@@ -25,8 +17,6 @@ function shortTitle(entry: SoldierSource): string {
   const part = title.includes(' — ') ? title.split(' — ').pop()! : title
   return part.charAt(0).toUpperCase() + part.slice(1)
 }
-
-const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file != null
 
 interface SoldierModalProps {
   soldier: Soldier
@@ -36,7 +26,7 @@ interface SoldierModalProps {
 
 export default function SoldierModal({ soldier, unitName, onClose }: SoldierModalProps) {
   // The soldier's own entry, then the same soldier's entries in the unit's other books
-  const entries: SoldierSource[] = [soldier, ...(soldier.other_sources ?? [])]
+  const entries: SoldierSource[] = entriesOf(soldier)
   const pages = entries.filter(hasPage)
   const [shownPage, setShownPage] = useState(0)
   const page = pages[Math.min(shownPage, pages.length - 1)]
@@ -45,8 +35,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
     pageLabels.indexOf(pageLabels[i]) !== pageLabels.lastIndexOf(pageLabels[i]) ? `${pageLabels[i]}, str. ${e.pdf_page}` : pageLabels[i])
   const sourceHref = page?.pdf_file ? `/izvori#${page.pdf_file.replace('.pdf', '')}` : undefined
   const unit = unitName || soldier.unit
-  const died = soldier.death_type === 'umro'
-  const unitRecord = units.find((u) => u.name === unit)
+  const unitRecord = unitByName(unit)
 
   const [showReportForm, setShowReportForm] = useState(false)
   const [reportText, setReportText] = useState('')
@@ -91,18 +80,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
     }
   }
 
-  const details: [string, string | undefined][] = [
-    ['Ime oca', soldier.fathers_name],
-    ['Godina rođenja', soldier.birth_year],
-    ['Mesto rođenja', soldier.birth_place],
-    ['Narodnost', soldier.ethnicity],
-    ['Zanimanje', soldier.occupation],
-    ['Dužnost', soldier.rank],
-    ['Podjedinica', soldier.unit_detail],
-    [died ? 'Datum smrti' : 'Datum pogibije', soldier.death_date],
-    [died ? 'Mesto smrti' : 'Mesto pogibije', soldier.death_place],
-  ]
-  const filled = details.filter(([, value]) => value)
+  const filled = recordDetails(soldier)
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -126,6 +104,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
         )}
         <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
         {unit && <p className="modal-unit">{sqQuotes(unit)}</p>}
+        <RecordActions soldier={soldier} unit={unitRecord} />
 
         {entries.length === 1 && soldier.additional_info && (
           <p className="modal-entry">{soldier.additional_info}</p>

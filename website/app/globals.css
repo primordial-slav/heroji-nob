@@ -1401,3 +1401,270 @@ body:has(.band-photo[data-ready]) header.masthead {
 .result-unit {
   display: block;
 }
+
+/* ========== Record actions (popup): share, memorial card, citation ========== */
+.record-actions {
+  margin-top: var(--space-3);
+}
+
+.record-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.record-action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 2rem;
+  padding: 0 var(--space-3);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  color: var(--ink);
+  font-size: var(--step--1);
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease-out;
+}
+
+.record-action:hover {
+  border-color: var(--ink);
+  text-decoration: none;
+}
+
+.record-action-status {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.record-copy-fallback {
+  margin-top: var(--space-3);
+  display: grid;
+  gap: var(--space-1);
+  font-size: var(--step--1);
+}
+
+.record-copy-fallback input {
+  width: 100%;
+  padding: var(--space-2);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+}
+
+.record-citation {
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  display: grid;
+  gap: var(--space-3);
+  justify-items: start;
+}
+
+.record-citation p {
+  font-size: var(--step--1);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* ========== Memorial card (/kartica) ========== */
+.card-page {
+  padding-block: var(--space-6) var(--space-8);
+}
+
+.card-note {
+  color: var(--ink-muted);
+}
+
+.card-toolbar {
+  max-width: 46rem;
+  margin: 0 auto var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+/* The card is a sheet of paper in both themes, as it will be printed */
+.memorial-card {
+  --ink: #1c1a18;
+  --ink-muted: #58534d;
+  --rule: #d8d4cd;
+  max-width: 46rem;
+  margin: 0 auto;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+}
+
+.memorial-photo {
+  height: 11rem;
+  overflow: hidden;
+  border-bottom: 3px solid var(--red);
+  background: #e4e1db;
+}
+
+.memorial-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 45%;
+  filter: grayscale(1) contrast(1.04);
+  transform: scale(1.04);
+}
+
+.memorial-body {
+  padding: var(--space-6) var(--space-7) var(--space-6);
+}
+
+.memorial-unit {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.memorial-name {
+  margin-top: var(--space-2);
+  font-family: var(--font-name);
+  font-size: var(--step-4);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.memorial-name b {
+  font-weight: 700;
+}
+
+.memorial-years {
+  margin-top: var(--space-1);
+  font-family: var(--font-name);
+  font-size: var(--step-2);
+  color: var(--ink-muted);
+  font-variant-numeric: lining-nums;
+}
+
+.memorial-details {
+  margin-top: var(--space-5);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+}
+
+.memorial-details dt {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.memorial-details dd {
+  margin-top: 0.125rem;
+  overflow-wrap: anywhere;
+}
+
+.memorial-entries {
+  margin-top: var(--space-6);
+  display: grid;
+  gap: var(--space-4);
+}
+
+.memorial-entries h2 {
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.memorial-entries figure {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.memorial-entries figcaption {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.entry-crop {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  background: #ffffff;
+}
+
+.entry-crop-loading {
+  height: 4rem;
+  background: #efede9;
+}
+
+.entry-crop-missing {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.memorial-text {
+  font-family: var(--font-name);
+  line-height: 1.6;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--rule);
+}
+
+.memorial-footer {
+  margin-top: var(--space-6);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+  display: grid;
+  gap: var(--space-1);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.memorial-link {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .memorial-body {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .memorial-photo {
+    height: 8rem;
+  }
+
+  .memorial-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Printing the card: only the sheet, on one A4 page */
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  body:has(.memorial-card) header.masthead,
+  .card-toolbar {
+    display: none !important;
+  }
+
+  .card-page {
+    padding: 0;
+    max-width: none;
+  }
+
+  .memorial-card {
+    max-width: none;
+    border: 0;
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

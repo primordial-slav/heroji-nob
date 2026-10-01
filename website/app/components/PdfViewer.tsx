@@ -3,6 +3,7 @@
 import { useState, useRef, useCallback, useLayoutEffect } from 'react'
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon, MinusIcon, PlusIcon, TargetIcon } from './Icons'
+import { highlightBox } from '@/app/lib/entryBox'
 import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
@@ -22,16 +23,6 @@ interface PdfViewerProps {
   xPositionLeft?: number   // Left edge of the entry when it isn't xPosition
   xPositionEnd?: number    // Right edge of the entry's text
   sourceHref?: string      // Link to the Sources page anchor for "View full document"
-}
-
-// Highlight box around the soldier's entry, in PDF points. The extent comes
-// from data-extraction/entry_boxes.py; records without one get a one-line box.
-function highlightBox(x: number, y: number, xLeft?: number, xEnd?: number, yEnd?: number) {
-  const left = xLeft ?? x
-  const right = xEnd != null && xEnd > left ? xEnd : left + (x > 150 ? 200 : 250)
-  const bottom = yEnd != null && yEnd > y ? yEnd : y + 11
-  const padX = 3, padY = 2
-  return { left: left - padX, top: y - padY, width: right - left + 2 * padX, height: bottom - y + 2 * padY }
 }
 
 export default function PdfViewer({

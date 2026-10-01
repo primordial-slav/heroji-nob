@@ -53,3 +53,15 @@ export const DownloadIcon = (p: IconProps) => (
 export const DocumentIcon = (p: IconProps) => (
   <Svg {...p}><path d="M7 3h7l4 4v14H7z" /><path d="M14 3v4h4" /><path d="M10 12h5M10 16h5" /></Svg>
 )
+export const ShareIcon = (p: IconProps) => (
+  <Svg {...p}><circle cx="18" cy="5" r="2.5" /><circle cx="6" cy="12" r="2.5" /><circle cx="18" cy="19" r="2.5" /><path d="m8.2 10.8 7.6-4.4" /><path d="m8.2 13.2 7.6 4.4" /></Svg>
+)
+export const PrintIcon = (p: IconProps) => (
+  <Svg {...p}><path d="M7 9V3h10v6" /><path d="M7 17H4v-7h16v7h-3" /><path d="M7 14h10v7H7z" /></Svg>
+)
+export const QuoteIcon = (p: IconProps) => (
+  <Svg {...p}><path d="M5 18c2.5-1.5 3.5-3.5 3.5-6.5H5V6h6v5.5C11 15 9.5 17.5 6.5 19" /><path d="M14 18c2.5-1.5 3.5-3.5 3.5-6.5H14V6h6v5.5c0 3.5-1.5 6-4.5 7.5" /></Svg>
+)
+export const CopyIcon = (p: IconProps) => (
+  <Svg {...p}><rect x="8" y="8" width="12" height="12" rx="1" /><path d="M16 8V4H4v12h4" /></Svg>
+)

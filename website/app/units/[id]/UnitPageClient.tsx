@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { Unit } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
@@ -9,6 +9,7 @@ import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
 import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
 import { sqQuotes } from '@/app/lib/typography'
+import { RECORD_PARAM, findRecord } from '@/app/lib/records'
 
 interface UnitPageClientProps {
   unit: Unit
@@ -32,6 +33,25 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
       .catch(() => setLoadFailed(true))
       .finally(() => setLoading(false))
   }, [unit])
+
+  // A link to one record (?borac=<id>) opens it once the list has loaded
+  const linkHandled = useRef(false)
+  useEffect(() => {
+    if (linkHandled.current || soldiers.length === 0) return
+    linkHandled.current = true
+    const id = new URLSearchParams(window.location.search).get(RECORD_PARAM)
+    const linked = id ? findRecord(soldiers, id) : undefined
+    if (linked) setSelectedSoldier(linked)
+  }, [soldiers])
+
+  // The address bar follows the open record, so copying it gives that record's link
+  useEffect(() => {
+    if (!linkHandled.current) return
+    const url = new URL(window.location.href)
+    if (selectedSoldier) url.searchParams.set(RECORD_PARAM, selectedSoldier.soldier_id)
+    else url.searchParams.delete(RECORD_PARAM)
+    window.history.replaceState(window.history.state, '', url)
+  }, [selectedSoldier])
 
   return (
     <div>
