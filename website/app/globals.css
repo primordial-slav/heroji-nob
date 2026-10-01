@@ -1082,6 +1082,56 @@ body:has(.band-photo[data-ready]) header.masthead {
   font-size: var(--step--1);
 }
 
+/* A soldier printed in more than one book: each book's entry, the book named above it */
+
+.modal-sources {
+  margin-top: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+.modal-source-entry + .modal-source-entry {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+}
+
+.modal-source-label {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+.modal-source-entry .modal-entry {
+  margin-top: var(--space-1);
+}
+
+.modal-source-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.modal-source-switch button {
+  height: 2.25rem;
+  padding: 0 var(--space-2);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+
+.modal-source-switch button:hover {
+  border-color: var(--rule-strong);
+  color: var(--ink);
+}
+
+.modal-source-switch button[aria-pressed='true'] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
 .report-error-link {
   margin-top: var(--space-4);
   background: none;

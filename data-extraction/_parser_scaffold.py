@@ -652,6 +652,11 @@ def run_parser(
         mine = {Path(src['pdf_path']).name for src in sources}
         with open(output_path, encoding='utf-8') as f:
             kept = [s for s in json.load(f) if s.get('pdf_file') not in mine]
+        for s in kept:                  # entries of this run's books merged into kept records: merge corrections redo them
+            if s.get('other_sources'):
+                s['other_sources'] = [o for o in s['other_sources'] if o.get('pdf_file') not in mine]
+                if not s['other_sources']:
+                    del s['other_sources']
         clash = {s['soldier_id'] for s in kept} & {s['soldier_id'] for s in soldiers}
         assert not clash, f"IDs from id_start={id_start} are already used: {sorted(clash)[:5]}"
         out = kept + soldiers

@@ -21,12 +21,24 @@ function normalizingGetFn(
 }
 
 // full_name puts the father's name between surname and first name ("Kokalj Anrejev Rudolf"),
-// so "Kokalj Rudolf" or "Rudolf Kokalj" would miss it. Index both two-name orders as well.
+// so "Kokalj Rudolf" or "Rudolf Kokalj" would miss it. Index both two-name orders as well,
+// and the name as the soldier's other books print it ("Belić Momćilo" for Belić Momčilo).
 function nameVariants(soldier: Partial<Soldier>): string[] {
   const last = soldier.last_name?.trim()
   const first = soldier.first_name?.trim()
-  if (!last || !first) return []
-  return [`${last} ${first}`, `${first} ${last}`].map(normalizeForSearch)
+  const printed = (soldier.other_sources ?? []).map((o) => o.name).filter((n): n is string => !!n)
+  if (!last || !first) return printed.map(normalizeForSearch)
+  return [`${last} ${first}`, `${first} ${last}`, ...printed].map(normalizeForSearch)
+}
+
+/** The soldier's names as words: full_name, and the names other books print */
+function nameWords(soldier: Soldier): string {
+  return [soldier.full_name, ...(soldier.other_sources ?? []).map((o) => o.name ?? '')].join(' ')
+}
+
+/** The soldier's bios as words: own, and those of other books */
+function infoWords(soldier: Soldier): string {
+  return [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)].join(' ')
 }
 
 const SOLDIER_KEYS = [
@@ -84,10 +96,10 @@ function wordText(text: string | undefined): string {
  * "Gračac" also finds "u Gračacu"), 3 = inside a name word, 4 = only fuzzily.
  */
 function wordRank(index: SoldierIndex, idx: number, word: string): number {
-  const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(index.data[idx].full_name))
+  const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(nameWords(index.data[idx])))
   if (name.includes(` ${word} `)) return 0
   if (name.includes(` ${word}`)) return 1
-  const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(index.data[idx].additional_info))
+  const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(infoWords(index.data[idx])))
   if (info.includes(` ${word}`)) return 2
   return name.includes(word) ? 3 : 4
 }

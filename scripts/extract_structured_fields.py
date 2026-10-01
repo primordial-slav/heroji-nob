@@ -470,11 +470,21 @@ def forget_stale(soldier: dict, old_info: str, keep=()) -> None:
             del soldier[f]
 
 
+def read_all(ex: Extractor, s: dict, code: int) -> dict:
+    """The fields the soldier's bio gives, then those only the entries of other books merged into the record
+    (other_sources) give."""
+    got = {}
+    for info in [s.get('additional_info', '')] + [o.get('additional_info', '') for o in s.get('other_sources', ())]:
+        for k, v in ex.extract(info, code).items():
+            got.setdefault(k, v)
+    return got
+
+
 def fill(soldiers: list[dict]) -> int:
     """Fill empty structured fields in place; returns how many records gained a field."""
     ex, n = get_extractor(), 0
     for s in soldiers:
-        new = {k: v for k, v in ex.extract(s.get('additional_info', ''), brigade_of(s)).items() if not s.get(k)}
+        new = {k: v for k, v in read_all(ex, s, brigade_of(s)).items() if not s.get(k)}
         if new:
             s.update(new)
             n += 1
@@ -497,7 +507,7 @@ def main():
             continue
         filled, samples, touched = Counter(), [], 0
         for s in d:
-            got = ex.extract(s.get('additional_info', ''), code)
+            got = read_all(ex, s, code)
             new = {k: v for k, v in got.items() if not s.get(k)}
             if new:
                 touched += 1

@@ -1,14 +1,32 @@
 'use client'
 
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
-import type { Soldier } from '@/app/lib/types'
+import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { units } from '@/app/data/units'
+import { sources } from '@/app/data/sources'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
+
+/** The book (or web page) an entry was printed in, as the Sources page names it */
+function sourceTitle(entry: SoldierSource): string {
+  const source = entry.pdf_file
+    ? sources.find((s) => s.pdfPath === `/pdfs/${entry.pdf_file}`)
+    : sources.find((s) => entry.source_url?.startsWith(s.pdfPath))
+  return source?.title ?? entry.pdf_file ?? 'znaci.org'
+}
+
+/** A short name for the book switch: "spisak poginulih" from "Brodska brigada — spisak poginulih" */
+function shortTitle(entry: SoldierSource): string {
+  const title = sourceTitle(entry)
+  const part = title.includes(' — ') ? title.split(' — ').pop()! : title
+  return part.charAt(0).toUpperCase() + part.slice(1)
+}
+
+const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file != null
 
 interface SoldierModalProps {
   soldier: Soldier
@@ -17,10 +35,15 @@ interface SoldierModalProps {
 }
 
 export default function SoldierModal({ soldier, unitName, onClose }: SoldierModalProps) {
-  const hasPdfData = soldier.pdf_page != null && soldier.pdf_file != null
-  const sourceHref = soldier.pdf_file
-    ? `/izvori#${soldier.pdf_file.replace('.pdf', '')}`
-    : undefined
+  // The soldier's own entry, then the same soldier's entries in the unit's other books
+  const entries: SoldierSource[] = [soldier, ...(soldier.other_sources ?? [])]
+  const pages = entries.filter(hasPage)
+  const [shownPage, setShownPage] = useState(0)
+  const page = pages[Math.min(shownPage, pages.length - 1)]
+  const pageLabels = pages.map(shortTitle)
+  const switchLabels = pages.map((e, i) =>
+    pageLabels.indexOf(pageLabels[i]) !== pageLabels.lastIndexOf(pageLabels[i]) ? `${pageLabels[i]}, str. ${e.pdf_page}` : pageLabels[i])
+  const sourceHref = page?.pdf_file ? `/izvori#${page.pdf_file.replace('.pdf', '')}` : undefined
   const unit = unitName || soldier.unit
   const died = soldier.death_type === 'umro'
   const unitRecord = units.find((u) => u.name === unit)
@@ -104,8 +127,23 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
         <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
         {unit && <p className="modal-unit">{sqQuotes(unit)}</p>}
 
-        {soldier.additional_info && (
+        {entries.length === 1 && soldier.additional_info && (
           <p className="modal-entry">{soldier.additional_info}</p>
+        )}
+
+        {entries.length > 1 && (
+          <ol className="modal-sources" aria-label="Zapisi u knjigama">
+            {entries.map((e, i) => (
+              <li key={i} className="modal-source-entry">
+                <p className="modal-source-label">
+                  {sourceTitle(e)}
+                  {e.pdf_page != null && `, str. ${e.pdf_page}`}
+                  {e.name && e.name !== soldier.full_name && <>. Ime u knjizi: {e.name}</>}
+                </p>
+                {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
+              </li>
+            ))}
+          </ol>
         )}
 
         {filled.length > 0 && (
@@ -119,27 +157,42 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
           </dl>
         )}
 
-        {hasPdfData && (
+        {page && (
           <>
             <div className="modal-source-head">
               <h3>Strana u knjizi</h3>
+              {pages.length > 1 && (
+                <div className="modal-source-switch" role="group" aria-label="Knjiga">
+                  {pages.map((e, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      aria-pressed={e === page}
+                      onClick={() => setShownPage(i)}
+                    >
+                      {switchLabels[i]}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
             <Suspense fallback={<div className="pdf-viewer-loading">Učitavanje strane…</div>}>
               <PdfViewer
-                pdfFile={`/pdfs/${soldier.pdf_file}`}
-                pageNumber={soldier.pdf_page!}
-                yPosition={soldier.pdf_y ?? 0}
-                yPositionEnd={soldier.pdf_y_end}
-                xPosition={soldier.pdf_x ?? 0}
-                xPositionLeft={soldier.pdf_x_left}
-                xPositionEnd={soldier.pdf_x_end}
+                key={`${page.pdf_file}#${page.pdf_page}#${page.pdf_y}`}
+                pdfFile={`/pdfs/${page.pdf_file}`}
+                pageNumber={page.pdf_page!}
+                yPosition={page.pdf_y ?? 0}
+                yPositionEnd={page.pdf_y_end}
+                xPosition={page.pdf_x ?? 0}
+                xPositionLeft={page.pdf_x_left}
+                xPositionEnd={page.pdf_x_end}
                 sourceHref={sourceHref}
               />
             </Suspense>
           </>
         )}
 
-        {!hasPdfData && soldier.source_url && (
+        {!page && soldier.source_url && (
           <>
             <div className="modal-source-head">
               <h3>Izvor</h3>

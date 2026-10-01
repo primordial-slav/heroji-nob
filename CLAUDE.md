@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~106,600 WWII Yugoslav partisan soldiers across 38 units (33 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~106,400 WWII Yugoslav partisan soldiers across 38 units (33 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -40,14 +40,14 @@ Historical archive website for searching ~106,600 WWII Yugoslav partisan soldier
 | 27 | 14. Srpska | `data-extraction/parse_14_srpska.py` | `14-srpska-soldiers.json` | 1 PDF (Cyrillic) | 1,006 |
 | 28 | 7. Crnogorska omladinska | `data-extraction/parse_7_crnogorska.py` (table) | `7-crnogorska-soldiers.json` | 1 PDF (table, Cyrillic and Latin) | 439 |
 | 29 | 17. Majevička | `data-extraction/parse_17_majevicka.py` | `17-majevicka-soldiers.json` | 1 PDF | 900 |
-| 30 | 25. Brodska | `data-extraction/parse_25_brodska.py` | `25-brodska-soldiers.json` | 2 PDFs (fallen; roster Oct 1943) | 926 |
+| 30 | 25. Brodska | `data-extraction/parse_25_brodska.py` | `25-brodska-soldiers.json` | 2 PDFs (fallen; roster Oct 1943) | 825 |
 | 31 | 25. Srpska brigada | `data-extraction/parse_25_srpska_brigada.py` | `25-srpska-brigada-soldiers.json` | 1 PDF (Cyrillic; fallen and wounded) | 368 |
 | 32 | 21. Tuzlanska | `data-extraction/parse_21_tuzlanska.py` | `21-tuzlanska-soldiers.json` | 1 PDF | 211 |
 | 33 | 53. Srednjobosanska divizija | `data-extraction/parse_53_srednjobosanska.py` (table) | `53-srednjobosanska-soldiers.json` | 1 PDF (table, landscape) | 800 |
 | 34 | 21. Slavonska | `data-extraction/parse_21_slavonska.py` | `21-slavonska-soldiers.json` | 1 PDF | 1,117 |
 | 35 | 32. Zagorska divizija | `data-extraction/parse_32_divizija.py` (roster) | `32-divizija-soldiers.json` | 1 PDF (names only, four columns) | 10,041 |
 | 36 | 1. Dalmatinska | `data-extraction/parse_1_dalmatinska.py` | `1-dalmatinska-soldiers.json` | web page (znaci.org; no scan) | 2,165 |
-| 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 387-423) | 981 |
+| 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 387-423) | 973 |
 | 38 | 8. Crnogorska | `data-extraction/parse_8_crnogorska.py` | `8-crnogorska-soldiers.json` | 1 PDF (Cyrillic; book pp. 471-501, 509-510) | 730 |
 
 Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
@@ -81,7 +81,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 
 - **File**: `corrections.json` (project root) — array of correction objects
 - **Script**: `scripts/apply_corrections.py` — applies corrections to brigade JSONs
-- **Actions**: `edit` (update fields), `delete` (remove record), `split` (replace one record with N new records), `add` (insert a soldier the parser missed, with a fixed `new_id`, right after `soldier_id`)
+- **Actions**: `edit` (update fields), `delete` (remove record), `split` (replace one record with N new records), `add` (insert a soldier the parser missed, with a fixed `new_id`, right after `soldier_id`), `merge` (`merge_id` is the same soldier as `soldier_id` in another book: see below)
 - **Dry run by default**: Run without `--apply` to preview changes
 - **Idempotent**: re-applying the whole file is a no-op. An `add` whose `new_id` exists is not inserted again, but the record gets back the fields the correction sets (unless a later `edit` sets them), so the full pipeline (normalize all units, then apply corrections) leaves a committed tree unchanged
 - **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount. Include `birth_year` in `fields` to pin it.
@@ -98,9 +98,13 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
     "last_name": "Bogdanov", "middle_name": "Božidar", "fathers_name": "Božidar", "first_name": "Aleksandar",
     "additional_info": "1924, Bavanište (Kovin), dimničar, borac, nestao", "birth_year": "1924",
     "pdf_file": "prva-vojvodjanska.pdf", "pdf_page": 4, "pdf_y": 496.9, "pdf_x": 47.9
-  }, "reason": "Missing soldier: PDF page never parsed"}
+  }, "reason": "Missing soldier: PDF page never parsed"},
+  {"id": 5, "action": "merge", "soldier_id": "0030000069", "merge_id": "0030000068", "merge_name": "Belić Momćilo",
+   "reason": "Same soldier in 25-brodska-poginuli.pdf and 25-brodska-sastav.pdf; same death place, death year"}
 ]
 ```
+
+**One soldier, several books.** A soldier printed in two of a unit's books (or two lists of one book) is one record: a `merge` moves the other book's entry into the record's `other_sources` (the name as printed there, its text, and its place on the page), fills fields the record lacks from it, and removes that record (`merge_name` guards against a re-parse giving the id to someone else). The dialog shows every book's entry and switches the PDF between them; search also finds the other book's spelling; structured fields and entry boxes are read from merged entries too. Find candidates with `python scripts/find_source_duplicates.py --brigade N` (grades `sure`, `likely`, `name`, `review` by father, birth year and place, death year and place, and fate), check them, then `--write sure,likely` (plus `--only file` of reviewed `keep_id merge_id` pairs). A list of the fallen against a list of survivors (`LIST_FATE`) never merges by itself: there a matching name, father and village is as often a cousin as the same man (Druga lička, 17. Slavonska). Matches across units are not merged.
 
 ## Soldier JSON Schema
 
@@ -123,7 +127,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 }
 ```
 
-`pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`.
+`pdf_x`/`pdf_y` are the entry's first line; `pdf_x_end`/`pdf_y_end` (and optional `pdf_x_left`) are computed by `entry_boxes.py`. A record that merged another book's entry has `other_sources: [{soldier_id, name, additional_info, pdf_file, pdf_page, pdf_x, pdf_y, pdf_x_end, pdf_y_end}]`.
 A list published only as a web page (1. Dalmatinska) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
 Soldier IDs: 10 digits — first 4 = brigade code (0001-0038), last 6 = sequence.

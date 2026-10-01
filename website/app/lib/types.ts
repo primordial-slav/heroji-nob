@@ -1,3 +1,19 @@
+// The same soldier's entry in another book of the unit (or another list in the same book): the name and text as
+// printed there, and where it is (scripts/apply_corrections.py, action "merge")
+export interface SoldierSource {
+  soldier_id?: string     // the id the entry had before it was merged
+  name?: string
+  additional_info: string
+  pdf_file?: string
+  pdf_page?: number
+  pdf_x?: number
+  pdf_y?: number
+  pdf_x_end?: number
+  pdf_y_end?: number
+  pdf_x_left?: number
+  source_url?: string
+}
+
 export interface Soldier {
   soldier_id: string
   last_name: string
@@ -28,4 +44,7 @@ export interface Soldier {
   pdf_file?: string       // Which PDF file (e.g., "prva-proleterska-2.pdf")
   // A source without a scan (a list published as a web page): where the entry can be read
   source_url?: string
+  // The soldier's entries in the unit's other books (or lists); fields above that this entry leaves empty were
+  // filled in from them
+  other_sources?: SoldierSource[]
 }

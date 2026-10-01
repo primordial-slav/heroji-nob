@@ -24,7 +24,8 @@ Scan specks the OCR read as characters in the margins are left out of lines.
 
 It runs last in the data pipeline, after corrections (apply_corrections.py
 calls fill_boxes), so the boxes always follow the final positions. Idempotent:
-the boxes depend only on the PDFs and each record's pdf_file/pdf_page/pdf_x/pdf_y.
+the boxes depend only on the PDFs and each record's pdf_file/pdf_page/pdf_x/pdf_y. Entries
+of other books merged into a record (its other_sources) get their boxes the same way.
 
 Reading words is slow (~0.2 s a page), so the lines of every page read are
 cached under data-extraction/.cache/ (keyed by PDF size and mtime).
@@ -394,16 +395,24 @@ def _set_box(s: dict, page: dict | None, x0: float, x1: float, y1: float):
         s.pop('pdf_x_left', None)
 
 
+def entries(soldiers: list[dict]):
+    """Every printed entry of the records: each soldier's own, and those of other books merged into it
+    (other_sources, see apply_corrections.apply_merge), which have the same position and box fields."""
+    for s in soldiers:
+        yield s
+        yield from s.get('other_sources', ())
+
+
 def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
-    """Set pdf_x_end / pdf_y_end (and pdf_x_left) on every record with a position,
-    in place. Returns counts: boxed, unmatched (no text line at the stored start;
+    """Set pdf_x_end / pdf_y_end (and pdf_x_left) on every entry with a position (a record's own, and
+    those in its other_sources), in place. Returns counts: boxed, unmatched (no text line at the stored start;
     given a one-line box), cleared (no position; stale box fields removed), what
     ended the boxed entries (see entry_lines), and the layout measured for each PDF."""
     own_cache = cache is None
     cache = cache or PageCache()
     stats = {'boxed': 0, 'unmatched': 0, 'cleared': 0, 'stops': Counter(), 'layouts': {}}
     by_page: dict[str, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
-    for s in soldiers:
+    for s in entries(soldiers):
         if s.get('pdf_file') and s.get('pdf_page') and s.get('pdf_y') is not None:
             by_page[s['pdf_file']][int(s['pdf_page'])].append(s)
         elif any(k in s for k in BOX_FIELDS):
@@ -456,8 +465,8 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
 
 
 def box_snapshot(soldiers: list[dict]) -> dict:
-    """{soldier_id: box fields}, to count what fill_boxes changed."""
-    return {s.get('soldier_id'): tuple(s.get(k) for k in BOX_FIELDS) for s in soldiers}
+    """{soldier_id: box fields} (also of the entries merged into it), to count what fill_boxes changed."""
+    return {s.get('soldier_id'): tuple(tuple(e.get(k) for k in BOX_FIELDS) for e in entries([s])) for s in soldiers}
 
 
 def describe(stats: dict, changed: int) -> str:

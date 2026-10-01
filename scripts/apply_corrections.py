@@ -31,6 +31,12 @@ Correction actions:
              inserted again, but it gets back the fields the correction sets
              (except those a later edit sets), so normalize_all_json.py cannot
              undo them.
+    merge  - `merge_id` is the same soldier as `soldier_id`, from another book
+             of the unit (or another list in the same book): its entry moves
+             into soldier_id's `other_sources` (printed name, text, place on
+             the page), fields soldier_id lacks are taken from it, and the
+             record merge_id is removed. `merge_name` (merge_id's full_name)
+             guards against a re-parse that gave the id to someone else.
 """
 import sys
 import os
@@ -73,7 +79,7 @@ def load_corrections(corrections_path):
         if 'action' not in c:
             print(f"  WARNING: Correction #{i} missing 'action', skipping")
             continue
-        if c['action'] not in ('edit', 'delete', 'split', 'add'):
+        if c['action'] not in ('edit', 'delete', 'split', 'add', 'merge'):
             print(f"  WARNING: Correction #{i} unknown action '{c['action']}', skipping")
             continue
         if c['action'] == 'add' and ('record' not in c or 'new_id' not in c):
@@ -84,6 +90,9 @@ def load_corrections(corrections_path):
             continue
         if c['action'] == 'split' and 'into' not in c:
             print(f"  WARNING: Correction #{i} split missing 'into', skipping")
+            continue
+        if c['action'] == 'merge' and 'merge_id' not in c:
+            print(f"  WARNING: Correction #{i} merge missing 'merge_id', skipping")
             continue
         if c['action'] == 'edit' and 'fields' not in c:
             print(f"  WARNING: Correction #{i} edit missing 'fields', skipping")
@@ -196,6 +205,53 @@ def apply_delete(soldiers, correction):
 
     print(f"    WARNING: Soldier {sid} not found for delete")
     return soldiers, False
+
+
+SOURCE_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y') + entry_boxes.BOX_FIELDS + ('source_url',)
+# what the soldier's entry takes from another book's entry when its own is empty
+MERGE_FILL = ('middle_name', 'fathers_name', 'birth_year') + tuple(structured.FIELDS)
+
+
+def apply_merge(soldiers, correction):
+    """Apply a merge correction: `merge_id` is the same soldier as `soldier_id`, read from another book (or another
+    list in the same book). Its entry becomes one of soldier_id's other_sources (the printed name, the text and its
+    place on the page), fields soldier_id lacks are taken from it, and the record merge_id is removed.
+    Returns (soldiers, applied); once merged, re-applying finds the source already there."""
+    sid, mid = correction['soldier_id'], correction['merge_id']
+    keep = next((s for s in soldiers if s.get('soldier_id') == sid), None)
+    gone = next((s for s in soldiers if s.get('soldier_id') == mid), None)
+    if keep is None:
+        print(f"    WARNING: Soldier {sid} not found for merge")
+        return soldiers, False
+    if gone is None:
+        if any(o.get('soldier_id') == mid for o in keep.get('other_sources', ())):
+            return soldiers, True
+        print(f"    WARNING: Soldier {mid} not found for merge into {sid}")
+        return soldiers, False
+    expect = correction.get('merge_name')
+    if expect and gone.get('full_name') != expect:
+        # a re-parse gave the id to someone else: the correction must be checked, not applied blindly
+        print(f"    WARNING: {mid} is {gone.get('full_name')!r}, not {expect!r}; merge into {sid} skipped")
+        return soldiers, False
+
+    source = {'soldier_id': mid, 'name': gone.get('full_name', ''), 'additional_info': gone.get('additional_info', '')}
+    source.update({k: gone[k] for k in SOURCE_FIELDS if gone.get(k) not in (None, '')})
+    others = [o for o in keep.get('other_sources', ()) if o.get('soldier_id') != mid]
+    # a soldier merged into `gone` earlier comes along
+    others += [o for o in gone.get('other_sources', ()) if o.get('soldier_id') != sid]
+    keep['other_sources'] = others + [source]
+    taken = [k for k in MERGE_FILL if not keep.get(k) and gone.get(k)]
+    if 'middle_name' in taken and 'fathers_name' not in taken:
+        taken.append('fathers_name')                   # the father comes as a pair: as printed, and nominative
+    for k in taken:
+        keep[k] = gone[k]
+    rebuild_computed_fields(keep, skip_birth_year=True)
+    soldiers = [s for s in soldiers if s is not gone]
+    print(f"    MERGE {mid} into {sid}: {gone.get('full_name')} -> {keep.get('full_name')}"
+          + (f" (took {', '.join(taken)})" if taken else ''))
+    if correction.get('reason'):
+        print(f"         Reason: {correction['reason']}")
+    return soldiers, True
 
 
 def restore_added(soldier, correction):
@@ -424,6 +480,8 @@ def main():
                 soldiers, applied, _ = apply_split(soldiers, c)
             elif action == 'add':
                 soldiers, applied = apply_add(soldiers, c)
+            elif action == 'merge':
+                soldiers, applied = apply_merge(soldiers, c)
             else:
                 applied = False
 

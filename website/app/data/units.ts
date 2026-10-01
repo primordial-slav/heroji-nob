@@ -306,7 +306,7 @@ export const units: Unit[] = [
     nameEn: '25th Brod Brigade',
     description: 'Iz monografije Naila Redžića „Brodska brigada“: spisak poginulih boraca i spisak boraca i rukovodilaca u brigadi u oktobru 1943.',
     image: '/images/25-brodska-brigada.jpg',
-    soldierCount: 926,
+    soldierCount: 825,
     dataFile: '/25-brodska-soldiers.json',
     pdfFiles: ['/pdfs/25-brodska-poginuli.pdf', '/pdfs/25-brodska-sastav.pdf']
   },
@@ -376,7 +376,7 @@ export const units: Unit[] = [
     nameEn: '16th Slavonian Youth Brigade "Jože Vlahović"',
     description: 'Iz monografije Steve Pravdića i Naila Redžića: spisak poginulih boraca i rukovodilaca brigade i spisak poginulih u Pokuplju i na Žumberku.',
     image: '/images/16-slavonska-omladinska-brigada.jpg',
-    soldierCount: 981,
+    soldierCount: 973,
     dataFile: '/16-slavonska-omladinska-soldiers.json',
     pdfFiles: ['/pdfs/16-slavonska-omladinska.pdf']
   },

@@ -1,0 +1,267 @@
+"""
+Find soldiers printed in more than one of a unit's lists (two books, or two lists in one book), and propose
+`merge` corrections that make them one entry (see apply_corrections.apply_merge).
+
+A list is a PDF, or a page range of one (LISTS below), or a web page (source_url). Two records of different lists
+are the same soldier when surname and given name agree (diacritics, dj/đ and case aside) and nothing else
+disagrees: the father (as printed or in the nominative), the birth year (a year apart is allowed: books count
+differently), the birthplace and the place of death (a word in common), the year of death, and whether he fell or
+lived to the end of the war. Each match is graded:
+
+  sure      the names agree, something else agrees too (father, birth year or place, death year or place),
+            nothing disagrees,
+            and neither record has another candidate
+  name      the names agree and nothing disagrees, but nothing else confirms it either (one list prints
+            father, birth or death) and neither record has another candidate
+  likely    at least two things agree and fewer disagree (a misread birthplace, a year apart in the death
+            date), the fathers don't differ (brothers and cousins share names), neither record has another
+            candidate, and both fell (or neither says)
+  review    anything else worth a look: several candidates, more disagreement, one who lived to the end of
+            the war and one who fell, a given name a letter apart (Radoslav / Radosav)
+
+The record of the list the unit names first (units.ts pdfFiles order) keeps its id; the other is merged into it.
+
+Usage:
+    python scripts/find_source_duplicates.py --brigade 30                  # print the matches
+    python scripts/find_source_duplicates.py --brigade 30 --write sure     # append the sure ones as merges
+    python scripts/find_source_duplicates.py --brigade 3 --write sure,likely --min-agree 2   # fallen vs survivors
+    python scripts/find_source_duplicates.py --brigade 30 --json out.json  # every match, for review
+"""
+import argparse
+import json
+import os
+import re
+import sys
+import unicodedata
+from collections import defaultdict
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from name_utils import BRIGADE_CONFIGS  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+CORRECTIONS = ROOT / 'corrections.json'
+
+# PDFs that hold more than one list: {pdf_file: [(first page, list name), ...]}
+LISTS = {
+    '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
+}
+
+
+def fold(text: str) -> str:
+    """'Đurđević' -> 'djurdjevic', 'Djurdjević' -> 'djurdjevic': lowercase, no diacritics, đ as dj."""
+    t = (text or '').lower().replace('đ', 'dj')
+    t = ''.join(c for c in unicodedata.normalize('NFD', t) if not unicodedata.combining(c))
+    return re.sub(r'[^a-z]', '', t)
+
+
+def list_index(s: dict) -> int:
+    """Which of its PDF's lists (LISTS) the record is in."""
+    pages = [first for first, _ in LISTS.get(s.get('pdf_file'), ())]
+    return sum(1 for first in pages[1:] if (s.get('pdf_page') or 0) >= first)
+
+
+def list_of(s: dict) -> str:
+    f = s.get('pdf_file')
+    if not f:
+        return (s.get('source_url') or '').split('#')[0]
+    return f'{f} ({LISTS[f][list_index(s)][1]})' if f in LISTS else f
+
+
+def list_rank(code: int) -> dict:
+    """units.ts pdfFiles order: the unit's own list first."""
+    text = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
+    json_file = BRIGADE_CONFIGS[code]['json_file']
+    m = re.search(r"dataFile: '/" + re.escape(json_file) + r"',\s*pdfFiles: \[([^\]]*)\]", text)
+    files = re.findall(r"'/pdfs/([^']+)'", m.group(1)) if m else []
+    return {f: i for i, f in enumerate(files)}
+
+
+def year(text: str) -> int | None:
+    m = re.search(r'1[89]\d\d', text or '')
+    return int(m.group()) if m else None
+
+
+# words that name no place: "kod", "selo", "Pakrac" is a place but the district repeats for everyone in a list
+NOT_PLACE = {'kod', 'selo', 'selu', 'sela', 'grad', 'gradu', 'opcina', 'kotar', 'srez', 'oblast', 'okolina', 'blizu'}
+
+
+def places(text: str) -> set[str]:
+    """'Gornja Sumetlica, Pakrac' -> {'gornj', 'sumet', 'pakra'}: word stems, so cases and diacritics don't matter."""
+    words = re.findall(r'\w{4,}', (text or '').lower())
+    return {fold(w)[:5] for w in words if fold(w) not in NOT_PLACE}
+
+
+SURVIVED = re.compile(r'kraj rata (?:je )?do[cč]ekao|pre[zž]ivio|\bživ(?:i|e)?\b|demobili|umro (?:je )?(?:posle|poslije|nakon) rata', re.I)
+
+
+# lists of only the fallen, or only those who lived to the end of the war: every entry's fate, said or not
+LIST_FATE = {
+    'druga-licka-spisak.pdf': 'fell', 'druga-licka-sjecanja-prezivjeli.pdf': 'lived',
+    '17-slavonska-poginuli.pdf': 'fell', '17-slavonska-prezivjeli.pdf': 'lived',
+}
+
+
+def fate(s: dict) -> str:
+    if s.get('pdf_file') in LIST_FATE:
+        return LIST_FATE[s['pdf_file']]
+    info = ' '.join([s.get('additional_info') or ''] + [o.get('additional_info') or '' for o in s.get('other_sources', ())])
+    if SURVIVED.search(info):
+        return 'lived'
+    if s.get('death_type') or re.search(r'\b(?:po\w?gin|umr|strelj|strijelj|nestao|nestala)', info):     # "Pojginuo"
+        return 'fell'
+    return ''
+
+
+def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
+    """What agrees and what disagrees between two records of the same name."""
+    agree, clash = [], []
+    fa = {fold(a.get('fathers_name')), fold(a.get('middle_name'))} - {''}
+    fb = {fold(b.get('fathers_name')), fold(b.get('middle_name'))} - {''}
+    if fa and fb:
+        (agree if fa & fb or any(x[:4] == y[:4] for x in fa for y in fb) else clash).append('father')
+    ya, yb = year(a.get('birth_year')), year(b.get('birth_year'))
+    if ya and yb:
+        (agree if abs(ya - yb) <= 1 else clash).append('birth year')
+    pa, pb = places(a.get('birth_place')), places(b.get('birth_place'))
+    if pa and pb:
+        (agree if pa & pb else clash).append('birthplace')
+    da, db = places(a.get('death_place')), places(b.get('death_place'))
+    if da and db:
+        (agree if da & db else clash).append('death place')
+    ya, yb = year(a.get('death_date')), year(b.get('death_date'))
+    if ya and yb:
+        (agree if ya == yb else clash).append('death year')
+    fa, fb = fate(a), fate(b)
+    if fa and fb and fa != fb:
+        clash.append('one lived')
+    return agree, clash
+
+
+def one_letter_apart(a: str, b: str) -> bool:
+    """Radoslav / Radosav, Milisav / Milosav, Budo / Buda: one letter added, dropped or changed."""
+    if abs(len(a) - len(b)) > 1:
+        return False
+    i = 0
+    while i < min(len(a), len(b)) and a[i] == b[i]:
+        i += 1
+    return a[i + 1:] == b[i + 1:] or a[i:] == b[i + 1:] or a[i + 1:] == b[i:]
+
+
+def matches(soldiers: list[dict], rank: dict) -> list[dict]:
+    by_name = defaultdict(list)
+    by_surname = defaultdict(list)
+    for s in soldiers:
+        by_name[(fold(s['last_name']), fold(s['first_name']))].append(s)
+        by_surname[fold(s['last_name'])].append(s)
+    pairs = {}
+
+    def consider(a, b, how):
+        if list_of(a) == list_of(b) or a is b:
+            return
+        ra, rb = rank.get(a.get('pdf_file'), 99), rank.get(b.get('pdf_file'), 99)
+        if (rb, list_index(b), b['soldier_id']) < (ra, list_index(a), a['soldier_id']):
+            a, b = b, a
+        key = (a['soldier_id'], b['soldier_id'])
+        if key not in pairs:
+            agree, clash = evidence(a, b)
+            pairs[key] = {'keep': a, 'merge': b, 'how': how, 'agree': agree, 'clash': clash}
+
+    for group in by_name.values():
+        for i, a in enumerate(group):
+            for b in group[i + 1:]:
+                consider(a, b, 'name')
+    # a given name that differs slightly, with the father or birth year agreeing
+    for group in by_surname.values():
+        for i, a in enumerate(group):
+            for b in group[i + 1:]:
+                ga, gb = fold(a['first_name']), fold(b['first_name'])
+                if ga != gb and min(len(ga), len(gb)) >= 4 and one_letter_apart(ga, gb):
+                    agree, clash = evidence(a, b)
+                    if agree and not clash:
+                        consider(a, b, 'given name differs')
+    # how many candidates each record has
+    count = defaultdict(int)
+    for p in pairs.values():
+        count[p['keep']['soldier_id']] += 1
+        count[p['merge']['soldier_id']] += 1
+    for p in pairs.values():
+        alone = count[p['keep']['soldier_id']] == 1 and count[p['merge']['soldier_id']] == 1
+        if p['how'] == 'name' and alone and not p['clash']:
+            p['grade'] = 'sure' if p['agree'] else 'name'
+        elif (alone and len(p['agree']) >= 2 and len(p['agree']) > len(p['clash'])
+              and not {'one lived', 'father'} & set(p['clash'])):
+            p['grade'] = 'likely'
+        else:
+            p['grade'] = 'review'
+        if not alone:
+            p['note'] = 'several candidates'
+    return sorted(pairs.values(), key=lambda p: (p['grade'], p['keep']['soldier_id']))
+
+
+def show(p: dict) -> str:
+    k, m = p['keep'], p['merge']
+    ev = ', '.join([f"+{x}" for x in p['agree']] + [f"-{x}" for x in p['clash']]) or 'names only'
+    return (f"{p['grade']:6s} {k['soldier_id']} {k['full_name']} ({k.get('birth_year') or '?'}, {list_of(k)})"
+            f"  <-  {m['soldier_id']} {m['full_name']} ({m.get('birth_year') or '?'}, {list_of(m)})"
+            f"  [{p['how']}; {ev}{'; ' + p['note'] if p.get('note') else ''}]")
+
+
+def append(new: list[dict]) -> tuple[int, int]:
+    """Append to corrections.json, re-read right before writing (other sessions append too)."""
+    corr = json.loads(CORRECTIONS.read_text(encoding='utf-8'))
+    have = {(c['soldier_id'], c.get('merge_id')) for c in corr if c['action'] == 'merge'}
+    new = [c for c in new if (c['soldier_id'], c['merge_id']) not in have]
+    start = max(c['id'] for c in corr) + 1
+    for i, c in enumerate(new):
+        c['id'] = start + i
+    tmp = CORRECTIONS.with_suffix('.json.tmp')
+    tmp.write_text(json.dumps(corr + new, ensure_ascii=False, indent=2), encoding='utf-8')
+    os.replace(tmp, CORRECTIONS)
+    return start, len(new)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument('--brigade', type=int, required=True)
+    ap.add_argument('--write', help='grades to append as merge corrections, e.g. "sure" or "sure,name"')
+    ap.add_argument('--only', help='file of "keep_id merge_id" lines: append exactly these (reviewed) matches')
+    ap.add_argument('--min-agree', type=int, default=0,
+                    help='write only matches where this many things agree (2 for a list of the fallen against one of survivors)')
+    ap.add_argument('--reason', default='', help='text for the corrections\' reason (the lists are named anyway)')
+    ap.add_argument('--json', help='write every match here, for review')
+    args = ap.parse_args()
+
+    cfg = BRIGADE_CONFIGS[args.brigade]
+    soldiers = json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
+    found = matches(soldiers, list_rank(args.brigade))
+    grades = defaultdict(int)
+    for p in found:
+        grades[p['grade']] += 1
+        print(show(p))
+    print(f"\n{cfg['name']}: {len(soldiers)} records, {len(found)} matches {dict(grades)}")
+
+    if args.json:
+        Path(args.json).write_text(json.dumps([{**{k: v for k, v in p.items() if k not in ('keep', 'merge')},
+                                                'keep': p['keep'], 'merge': p['merge']} for p in found],
+                                               ensure_ascii=False, indent=2), encoding='utf-8')
+    chosen = []
+    if args.write:
+        want = set(args.write.split(','))
+        chosen = [p for p in found if p['grade'] in want and len(p['agree']) >= args.min_agree]
+    if args.only:
+        ids = {tuple(ln.split()[:2]) for ln in Path(args.only).read_text(encoding='utf-8').splitlines() if ln.strip()}
+        chosen += [p for p in found if (p['keep']['soldier_id'], p['merge']['soldier_id']) in ids and p not in chosen]
+    if chosen:
+        new = [{'id': 0, 'action': 'merge', 'soldier_id': p['keep']['soldier_id'], 'merge_id': p['merge']['soldier_id'],
+                'merge_name': p['merge']['full_name'],
+                'reason': f"Same soldier in {list_of(p['keep'])} and {list_of(p['merge'])}"
+                          + (f"; same {', '.join(p['agree'])}" if p['agree'] else '') + (f'. {args.reason}' if args.reason else '')}
+               for p in chosen]
+        start, n = append(new)
+        print(f"Appended {n} merge corrections from id {start}")
+
+
+if __name__ == '__main__':
+    main()
