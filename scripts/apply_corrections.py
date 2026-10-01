@@ -37,6 +37,10 @@ Correction actions:
              the page), fields soldier_id lacks are taken from it, and the
              record merge_id is removed. `merge_name` (merge_id's full_name)
              guards against a re-parse that gave the id to someone else.
+    link   - `link_id` is the same soldier as `soldier_id`, in another unit's
+             book: both records stay in their units, each gets the other's
+             entries in other_sources (marked with unit_file) and the fields
+             it lacks (apply_links; `link_name` guards like merge_name).
 """
 import sys
 import os
@@ -80,7 +84,7 @@ def load_corrections(corrections_path):
         if 'action' not in c:
             print(f"  WARNING: Correction #{i} missing 'action', skipping")
             continue
-        if c['action'] not in ('edit', 'delete', 'split', 'add', 'merge'):
+        if c['action'] not in ('edit', 'delete', 'split', 'add', 'merge', 'link'):
             print(f"  WARNING: Correction #{i} unknown action '{c['action']}', skipping")
             continue
         if c['action'] == 'add' and ('record' not in c or 'new_id' not in c):
@@ -91,6 +95,9 @@ def load_corrections(corrections_path):
             continue
         if c['action'] == 'split' and 'into' not in c:
             print(f"  WARNING: Correction #{i} split missing 'into', skipping")
+            continue
+        if c['action'] == 'link' and 'link_id' not in c:
+            print(f"  WARNING: Correction #{i} link missing 'link_id', skipping")
             continue
         if c['action'] == 'merge' and 'merge_id' not in c:
             print(f"  WARNING: Correction #{i} merge missing 'merge_id', skipping")
@@ -258,6 +265,66 @@ def apply_merge(soldiers, correction):
     if correction.get('reason'):
         print(f"         Reason: {correction['reason']}")
     return soldiers, True
+
+
+def apply_links(links, units):
+    """The same soldier in two units' books: each record keeps its place in its own unit and gets the other units'
+    entries in other_sources (with unit_file, the other unit's data file; that record's own merged entries come
+    along), and fields it lacks are filled from them. Linked records form groups (a soldier in three units). The
+    linked entries are rebuilt on every run. units: {code: soldiers}, changed in place.
+    Returns how many links were applied."""
+    by_id = {s['soldier_id']: (code, s) for code, soldiers in units.items() for s in soldiers}
+    for soldiers in units.values():
+        for s in soldiers:
+            if any(o.get('unit_file') for o in s.get('other_sources', ())):
+                s['other_sources'] = [o for o in s['other_sources'] if not o.get('unit_file')]
+                if not s['other_sources']:
+                    del s['other_sources']
+    parent = {}
+
+    def root(x):
+        while parent.get(x, x) != x:
+            x = parent[x]
+        return x
+
+    applied = 0
+    for c in links:
+        a, b = by_id.get(c['soldier_id']), by_id.get(c['link_id'])
+        if a is None or b is None:
+            print(f"    WARNING: link {c['soldier_id']} - {c['link_id']}: "
+                  f"{c['soldier_id'] if a is None else c['link_id']} not found")
+            continue
+        name = c.get('link_name') or ''
+        rec = b[1]
+        # the father may have been filled in from the other record since: surname and given name decide
+        if name and rec.get('full_name') != name and not (name.startswith(rec.get('last_name') or '\0')
+                                                         and name.endswith(rec.get('first_name') or '\0')):
+            print(f"    WARNING: {c['link_id']} is {b[1].get('full_name')!r}, not {c['link_name']!r}; link skipped")
+            continue
+        parent[root(c['soldier_id'])] = root(c['link_id'])
+        applied += 1
+    groups = {}
+    for sid in list(parent):
+        groups.setdefault(root(sid), set()).add(sid)
+    for members in groups.values():
+        members |= {root(next(iter(members)))}
+        recs = sorted((by_id[m] for m in members), key=lambda cs: cs[1]['soldier_id'])
+        for code, s in recs:
+            linked = []
+            for other_code, o in recs:
+                if o is s:
+                    continue
+                unit_file = BRIGADE_CONFIGS[other_code]['json_file']
+                entry = {'soldier_id': o['soldier_id'], 'name': o.get('full_name', ''), 'additional_info': o.get('additional_info', '')}
+                entry.update({k: o[k] for k in SOURCE_FIELDS if o.get(k) not in (None, '')})
+                linked.append({**entry, 'unit_file': unit_file})
+                linked += [{**e, 'unit_file': unit_file} for e in o.get('other_sources', ()) if not e.get('unit_file')]
+                for k in MERGE_FILL:
+                    if not s.get(k) and o.get(k):
+                        s[k] = o[k]
+            s['other_sources'] = s.get('other_sources', []) + linked
+            rebuild_computed_fields(s, skip_birth_year=True)
+    return applied
 
 
 def restore_added(soldier, correction):
@@ -447,6 +514,9 @@ def main():
         elif c['action'] == 'merge':
             MERGED_IDS.add(c['merge_id'])
 
+    links = [c for c in corrections if c['action'] == 'link']
+    corrections = [c for c in corrections if c['action'] != 'link']
+
     # Group corrections by brigade
     by_brigade = {}
     for c in corrections:
@@ -464,6 +534,8 @@ def main():
     count_updates = {}  # brigade_code -> new_count
     total_applied = 0
     total_skipped = 0
+
+    results = {}         # brigade_code -> (json_path, original_text, soldiers), written after the link pass
 
     # Process each brigade with corrections, and every brigade on the site (entry boxes)
     codes = [args.brigade] if args.brigade else sorted(set(by_brigade) | live_codes)
@@ -532,13 +604,28 @@ def main():
                           if original_boxes.get(sid) != box)
             print(f"    Entry boxes: {entry_boxes.describe(box_stats, changed)}")
 
+        results[brigade_code] = (json_path, original_text, soldiers)
+
+    box_cache.save()
+
+    # The same soldier in two units (links): every unit file is read, the processed ones from this run
+    if links:
+        units = {code: res[2] for code, res in results.items()}
+        for code, cfg in BRIGADE_CONFIGS.items():
+            path = public_dir / cfg['json_file']
+            if code not in units and cfg['json_file'] in live_files and path.exists():
+                units[code] = json.loads(path.read_text(encoding='utf-8'))
+        n = apply_links(links, units)
+        print(f"\n  Links between units: {n} applied")
+        total_applied += n
+        total_skipped += len(links) - n
+
+    for brigade_code, (json_path, original_text, soldiers) in results.items():
         new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
         if args.apply and new_text != original_text:
             with open(json_path, 'w', encoding='utf-8') as f:
                 f.write(new_text)
             print(f"    Written: {json_path}")
-
-    box_cache.save()
 
     # Update units.ts counts
     changed = {}

@@ -404,7 +404,8 @@ def entries(soldiers: list[dict]):
     (other_sources, see apply_corrections.apply_merge), which have the same position and box fields."""
     for s in soldiers:
         yield s
-        yield from s.get('other_sources', ())
+        # an entry from another unit's book (unit_file) is that unit's record, boxed in its own file
+        yield from (o for o in s.get('other_sources', ()) if not o.get('unit_file'))
 
 
 def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:

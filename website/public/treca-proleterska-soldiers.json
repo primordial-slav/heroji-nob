@@ -201,7 +201,23 @@
     "death_type": "umro",
     "death_date": "1952",
     "death_place": "Beograd",
-    "pdf_x_end": 357.0
+    "pdf_x_end": 357.0,
+    "ethnicity": "Srbin",
+    "unit_detail": "prištapske jedinice",
+    "other_sources": [
+      {
+        "soldier_id": "0001009754",
+        "name": "Popović Jovan",
+        "additional_info": "1905, Kikinda, Vojvodina, Srbin, književnik, u NOB od 1941, u brigadi od marta 1942, prištapske jedinice, član polit, odela brigade '740",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 76,
+        "pdf_x": 65.5,
+        "pdf_y": 523.0,
+        "pdf_x_end": 372.9,
+        "pdf_y_end": 554.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0005000010",
@@ -1554,10 +1570,10 @@
     "pdf_x": 80.7,
     "pdf_y_end": 372.6,
     "pdf_file": "treca-proleterska-brigada.pdf",
+    "pdf_x_end": 234.6,
     "birth_place": "Pljevlja",
     "occupation": "učenica",
-    "rank": "borac",
-    "pdf_x_end": 234.6
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000067",
@@ -2021,10 +2037,10 @@
     "pdf_x": 73.7,
     "pdf_y_end": 179.8,
     "pdf_file": "treca-proleterska-brigada.pdf",
+    "pdf_x_end": 353.0,
     "birth_place": "Nova Varoš",
     "occupation": "student filozofije",
-    "rank": "sekretar SKOJ-a",
-    "pdf_x_end": 353.0
+    "rank": "sekretar SKOJ-a"
   },
   {
     "soldier_id": "0005000087",
@@ -2493,10 +2509,10 @@
     "pdf_x": 87.3,
     "pdf_y_end": 343.5,
     "pdf_file": "treca-proleterska-brigada.pdf",
+    "pdf_x_end": 367.4,
     "birth_place": "Užice",
     "occupation": "učenica gimnazije",
-    "rank": "bolničarka",
-    "pdf_x_end": 367.4
+    "rank": "bolničarka"
   },
   {
     "soldier_id": "0005000102",
@@ -2603,11 +2619,6 @@
     "fathers_name": "",
     "full_name": "Tanović Slobodanka",
     "birth_year": "1919",
-    "birth_place": "Nova Varoš",
-    "occupation": "student",
-    "death_type": "poginuo",
-    "death_date": "13. juna 1943",
-    "death_place": "Sutjeska",
     "pdf_file": "treca-proleterska-brigada.pdf",
     "pdf_page": 384,
     "pdf_y": 451.4,
@@ -2626,6 +2637,11 @@
       }
     ],
     "unit_detail": "1. bataljon",
+    "birth_place": "Nova Varoš",
+    "occupation": "student",
+    "death_type": "poginuo",
+    "death_date": "13. juna 1943",
+    "death_place": "Sutjeska",
     "pdf_x_end": 367.6,
     "pdf_y_end": 476.9
   },
@@ -4074,11 +4090,11 @@
   {
     "soldier_id": "0005000158",
     "last_name": "Ravić",
-    "middle_name": "",
+    "middle_name": "Stevana",
     "first_name": "Stanko",
     "additional_info": "borac i sekretar aktiva SKOJ-a čete, rođen 1922, Purče, Novi Pazar, radnik; član KPJ od 1942.",
-    "fathers_name": "",
-    "full_name": "Ravić Stanko",
+    "fathers_name": "Stevan",
+    "full_name": "Ravić Stevana Stanko",
     "birth_year": "1922",
     "pdf_page": 388,
     "pdf_y": 456.0,
@@ -4088,7 +4104,23 @@
     "birth_place": "Purče, Novi Pazar",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 357.6
+    "pdf_x_end": 357.6,
+    "ethnicity": "Srbin",
+    "unit_detail": "III bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0001010533",
+        "name": "Ravić Stevana Stanko",
+        "additional_info": "1921, s. Purće, Novi Pazar, Srbija, Srbin, zemljoradnik, član KPJ od 1942, u NOB od septembra 1941, u brigadi od juna 1943, III bataljon, zamenik komandanta bataljona",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 136,
+        "pdf_x": 64.8,
+        "pdf_y": 315.1,
+        "pdf_x_end": 372.0,
+        "pdf_y_end": 345.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0005000159",
@@ -5786,8 +5818,21 @@
         "pdf_y": 480.0,
         "pdf_x_end": 361.1,
         "pdf_y_end": 513.9
+      },
+      {
+        "soldier_id": "0001010341",
+        "name": "Rajić Radisava Risto",
+        "additional_info": "1919, Bistrica, Nova Varoš, Srbija, Srbin, zemljoradnik, član KPJ od 1942, u NOB od 1941, u brigadi od novembra 1942, III bataljon, vodnik, poginuo 13. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 121,
+        "pdf_x": 44.3,
+        "pdf_y": 314.4,
+        "pdf_x_end": 351.4,
+        "pdf_y_end": 356.8,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "soldier_id": "0005000220",
@@ -6359,11 +6404,11 @@
   {
     "soldier_id": "0005000240",
     "last_name": "Gujaničić",
-    "middle_name": "",
+    "middle_name": "Stevana",
     "first_name": "Strajo",
     "additional_info": "borac, rođen 1918, Vilovi, Nova Varoš, zemljoradnik.",
-    "fathers_name": "",
-    "full_name": "Gujaničić Strajo",
+    "fathers_name": "Stevan",
+    "full_name": "Gujaničić Stevana Strajo",
     "birth_year": "1918",
     "pdf_page": 394,
     "pdf_y": 499.1,
@@ -6373,7 +6418,23 @@
     "birth_place": "Vilovi, Nova Varoš",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 320.9
+    "pdf_x_end": 320.9,
+    "ethnicity": "Srbin",
+    "unit_detail": "prištapske jedinice",
+    "other_sources": [
+      {
+        "soldier_id": "0001003563",
+        "name": "Gujaničić Stevana Strajo",
+        "additional_info": "1919, Komarani-Vilovi, Nova Varoš, Srbija, Srbin, zemljoradnik, član KPJ od 1942, u NOB od septembra 1941, u brigadi od novembra 1942, prištapske jedinice, vodnik",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 278,
+        "pdf_x": 66.0,
+        "pdf_y": 60.1,
+        "pdf_x_end": 373.1,
+        "pdf_y_end": 99.1,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0005000241",
@@ -7828,8 +7889,22 @@
         "pdf_y": 171.7,
         "pdf_x_end": 360.9,
         "pdf_y_end": 216.6
+      },
+      {
+        "soldier_id": "0010002243",
+        "name": "Šćepanović Miloja Darinka",
+        "additional_info": "rođena 1921. Zabrđe, Pljevlja, domaćica, Crnogorka, u NOB od decembra 1941, u Brigadi od aprila 1943, član KPJ, referent saniteta bataljona, poginula 19. 7. 1943. na Orahovici kod Prače",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 109,
+        "pdf_x": 25.4,
+        "pdf_y": 170.1,
+        "pdf_x_end": 186.3,
+        "pdf_y_end": 226.3,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorka",
+    "death_place": "Orahovica, Prača"
   },
   {
     "soldier_id": "0005000296",
@@ -8640,12 +8715,12 @@
     "pdf_x": 74.8,
     "pdf_y_end": 514.3,
     "pdf_file": "treca-proleterska-brigada.pdf",
+    "pdf_x_end": 355.4,
     "birth_place": "Prijepolje",
     "occupation": "domaćica",
     "death_type": "poginuo",
     "death_date": "juna 1943",
-    "rank": "bolničarka",
-    "pdf_x_end": 355.4
+    "rank": "bolničarka"
   },
   {
     "soldier_id": "0005000327",
@@ -16080,12 +16155,6 @@
     "pdf_x": 84.0,
     "pdf_y_end": 293.6,
     "pdf_file": "treca-proleterska-brigada.pdf",
-    "birth_place": "Mojkovac, Bijelo Polje",
-    "occupation": "domaćica",
-    "death_type": "umro",
-    "death_date": "1943",
-    "death_place": "u Mojkovcu",
-    "rank": "borac",
     "pdf_x_end": 363.3,
     "other_sources": [
       {
@@ -16100,7 +16169,13 @@
         "pdf_y_end": 511.5
       }
     ],
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "birth_place": "Mojkovac, Bijelo Polje",
+    "occupation": "domaćica",
+    "death_type": "umro",
+    "death_date": "1943",
+    "death_place": "u Mojkovcu",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000597",
@@ -20471,8 +20546,22 @@
         "pdf_y": 332.9,
         "pdf_x_end": 327.3,
         "pdf_y_end": 368.3
+      },
+      {
+        "soldier_id": "0001011404",
+        "name": "Stanić Mijata Novica",
+        "additional_info": "1916, Šljivansko, Pljevlja, Crna Gora, Crnogorac, zemljoradnik, u NOB od 1942, u brigadi od novembra 1942, prištapske jedinice, vodnik, poginuo 15. 06.1943, Miljevina, Foča",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 200,
+        "pdf_x": 63.3,
+        "pdf_y": 362.2,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 393.3,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "death_place": "Miljevina, Foča"
   },
   {
     "soldier_id": "0005000759",
@@ -24235,7 +24324,26 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "borac",
-    "pdf_x_end": 359.1
+    "pdf_x_end": 359.1,
+    "birth_place": "Podgradina, Metković",
+    "ethnicity": "Hrvat",
+    "unit_detail": "I bataljon",
+    "death_date": "07. 07. 1943",
+    "death_place": "Caparde, Zvornik",
+    "other_sources": [
+      {
+        "soldier_id": "0001000794",
+        "name": "Bjeliš Pera Ivo",
+        "additional_info": "zvani Cigo; 1924, Podgradina, Metković, Hrvatska, Hrvat, zemljoradnik, član SKOJ-a od 1941, član KPJ od 1942, u NOB od 1942, u brigadi od oktobra 1942, I bataljon, borac, poginuo 07. 07. 1943, Caparde, Zvornik",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 68,
+        "pdf_x": 66.0,
+        "pdf_y": 472.4,
+        "pdf_x_end": 373.9,
+        "pdf_y_end": 514.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bjeljak",
@@ -27886,7 +27994,23 @@
     "death_place": "kod Tjentišta na Sutjesci",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 356.4
+    "pdf_x_end": 356.4,
+    "birth_place": "Sutivan, Bijelo Polje, Crna Gora",
+    "ethnicity": "Crnogorac",
+    "other_sources": [
+      {
+        "soldier_id": "0001003368",
+        "name": "Gorčinović Janka Dragoljub",
+        "additional_info": "1926, Sutivan, Bijelo Polje, Crna Gora, Crnogorac, zemljoradnik, u NOB od maja 1943, u brigadi od maja 1943, prištapske jedinice, borac, poginuo 06. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 263,
+        "pdf_x": 51.4,
+        "pdf_y": 295.8,
+        "pdf_x_end": 358.1,
+        "pdf_y_end": 337.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Graca",
@@ -28670,7 +28794,24 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "borac",
-    "pdf_x_end": 332.5
+    "pdf_x_end": 332.5,
+    "birth_place": "Dabru, Sanski Most",
+    "death_date": "maja 1943",
+    "death_place": "Zelengora",
+    "other_sources": [
+      {
+        "soldier_id": "0013000431",
+        "name": "Ilić Pere Dragan",
+        "additional_info": "komandir voda, rođen 1914. godine u Dabru, Sanski Most. Poginuo maja 1943. godine na Zelengori.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 14.7,
+        "pdf_y": 539.7,
+        "pdf_x_end": 349.3,
+        "pdf_y_end": 557.6,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ilić",
@@ -29709,7 +29850,25 @@
     "death_type": "poginuo",
     "death_date": "14. novembra 1943",
     "rank": "zamjenik komandanta brigade, komesar bataljona",
-    "pdf_x_end": 356.9
+    "pdf_x_end": 356.9,
+    "birth_place": "Gostilj, Danilovgrad, Crna Gora",
+    "ethnicity": "Crnogorac",
+    "unit_detail": "II bataljon",
+    "death_place": "Sjenica",
+    "other_sources": [
+      {
+        "soldier_id": "0001004799",
+        "name": "Jovović Nika Vuko",
+        "additional_info": "1912, Gostilj, Danilovgrad, Crna Gora, Crnogorac, profesor, član KPJ od 1937, u NOB od jula 1941, u brigadi od decembra 1941, II bataljon, zam. komandanta III sandžačke brigade, poginuo 08. 11. 1943, Sjenica",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 61,
+        "pdf_x": 44.3,
+        "pdf_y": 409.2,
+        "pdf_x_end": 351.6,
+        "pdf_y_end": 451.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovović",
@@ -32080,7 +32239,25 @@
     "death_type": "poginuo",
     "death_date": "juna 1943",
     "rank": "bolničarka",
-    "pdf_x_end": 335.5
+    "pdf_x_end": 335.5,
+    "birth_place": "Kotor Varoš, BiH",
+    "ethnicity": "Srpkinja",
+    "unit_detail": "prištapske jedinice",
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0001006221",
+        "name": "Ljubobratović Stojana Mileva",
+        "additional_info": "1905, Kotor Varoš, BiH, Srpkinja, domaćica, u NOB od decembra 1942, u brigadi od decembra 1942, prištapske jedinice, borac, poginula 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 169,
+        "pdf_x": 46.8,
+        "pdf_y": 343.0,
+        "pdf_x_end": 354.1,
+        "pdf_y_end": 384.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ljujić",
@@ -32864,7 +33041,25 @@
     "death_type": "poginuo",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 355.4
+    "pdf_x_end": 355.4,
+    "birth_place": "Zaton, Šibenik",
+    "ethnicity": "Hrvat",
+    "death_date": "lipnja 1943",
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0007003219",
+        "name": "Martinović Šime Roko",
+        "additional_info": "1920. Zaton, Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od 1943. U NOV od 1942. u 2. dalm. brigadi. Poginuo lipnja 1943. na Sutjesci.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 109,
+        "pdf_x": 135.8,
+        "pdf_y": 369.1,
+        "pdf_x_end": 460.4,
+        "pdf_y_end": 385.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Martinović",
@@ -33400,7 +33595,7 @@
     "fathers_name": "Joso",
     "full_name": "Milošević Jose Karmela",
     "additional_info": "ud. Tome, sanitetski referent, Zaton, Šibenik domaćica, član KPJ. U NOP od 1941, borac 3. brigade od oktobra 1942. i tokom IV i V ofanzive. Poginula u činu poručnika, pri osloboćenju Dubrovnika 1944, u sastavu 2. dalmatinske brigade.",
-    "birth_year": "",
+    "birth_year": "1917",
     "pdf_page": 39,
     "pdf_y": 388.1,
     "pdf_x": 51.8,
@@ -33410,7 +33605,25 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "sanitetski referent",
-    "pdf_x_end": 333.6
+    "pdf_x_end": 333.6,
+    "birth_place": "Zaton, Šibenik",
+    "ethnicity": "Hrvatica",
+    "occupation": "domaćica",
+    "death_place": "Dubrovnik",
+    "other_sources": [
+      {
+        "soldier_id": "0007003503",
+        "name": "Milošević Jose Karmela",
+        "additional_info": "1917. Zaton, Šibenik. Hrvatica, domaćica. Kandidat za člana KPJ od 1940. U NOV od listopada 1942. u 3. sanđačkoj brigadi. U 2. dalm. od lipnja 1943. Referent saniteta brigade. Umrla od ranjavanja studenog 1944. u bolnici u Dubrovniku.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 118,
+        "pdf_x": 130.2,
+        "pdf_y": 604.8,
+        "pdf_x_end": 455.2,
+        "pdf_y_end": 636.6,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milošević",
@@ -33449,7 +33662,25 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "borac",
-    "pdf_x_end": 333.8
+    "pdf_x_end": 333.8,
+    "birth_place": "Zaton, Šibenik",
+    "ethnicity": "Hrvat",
+    "death_date": "28. 12. 1943",
+    "death_place": "Vilovi, Nova Varoš",
+    "other_sources": [
+      {
+        "soldier_id": "0007003509",
+        "name": "Milošević Šime Tome",
+        "additional_info": "1908. Zaton, Šibenik. Hrvat, zemljoradnik. Kandidat za člana KPJ 1940. U NOV od listopada 1942. u 3. sandžačkoj brigadi. U 2. dalm. od lipnja 1943. Poginuo 28. 12. 1943. u s. Vilovi, Nova Varoš.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 119,
+        "pdf_x": 146.6,
+        "pdf_y": 208.0,
+        "pdf_x_end": 471.4,
+        "pdf_y_end": 232.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milošević",
@@ -35820,7 +36051,23 @@
     "death_place": "Sutjeska, Tjentište",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 359.8
+    "pdf_x_end": 359.8,
+    "birth_place": "Liverovići, Nikšić, Crna Gora",
+    "ethnicity": "Crnogorac",
+    "other_sources": [
+      {
+        "soldier_id": "0001009123",
+        "name": "Peković Damjana Milovan",
+        "additional_info": "1912, Liverovići, Nikšić, Crna Gora, Crnogorac, oficir BJV, član KPJ od 1942, u NOB od jula 1941, u brigadi od maja 1942, I bataljon, komandant bataljona, poginuo 13. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 29,
+        "pdf_x": 46.2,
+        "pdf_y": 298.8,
+        "pdf_x_end": 353.5,
+        "pdf_y_end": 341.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Peković",
@@ -36151,7 +36398,24 @@
     "death_type": "poginuo",
     "death_date": "juna 1943",
     "rank": "borac",
-    "pdf_x_end": 327.6
+    "pdf_x_end": 327.6,
+    "birth_place": "Maslovare, Kotor Varoš, BiH",
+    "ethnicity": "Srpkinja",
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0001009240",
+        "name": "Petković Steve Koviljka",
+        "additional_info": "1920, Maslovare, Kotor Varoš, BiH, Srpkinja, domaćica, član SKOJ-a od 1943, u NOB od decembra 1942, u brigadi od decembra 1942, bolničarka, poginula 00. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 38,
+        "pdf_x": 60.5,
+        "pdf_y": 137.3,
+        "pdf_x_end": 368.3,
+        "pdf_y_end": 178.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petković",
@@ -36192,7 +36456,24 @@
     "death_type": "poginuo",
     "death_date": "juna 1943",
     "rank": "borac",
-    "pdf_x_end": 327.6
+    "pdf_x_end": 327.6,
+    "birth_place": "Maslovare, Kotor Varoš, BiH",
+    "ethnicity": "Srpkinja",
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0001009253",
+        "name": "Petković Steve Nevenka",
+        "additional_info": "1925, Maslovare, Kotor Varoš, BiH, Srpkinja, domaćica, član SKOJ-a od 1943, u NOB od decembra 1942, u brigadi od decembra 1942, bolničarka, poginula 00. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 39,
+        "pdf_x": 47.4,
+        "pdf_y": 142.2,
+        "pdf_x_end": 355.2,
+        "pdf_y_end": 182.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petković",
@@ -38802,7 +39083,25 @@
     "death_type": "poginuo",
     "death_date": "10. juna 1943",
     "rank": "borac",
-    "pdf_x_end": 360.9
+    "pdf_x_end": 360.9,
+    "birth_place": "Murter, Šibenik",
+    "ethnicity": "Hrvat",
+    "occupation": "ribar",
+    "death_place": "Zelengora",
+    "other_sources": [
+      {
+        "soldier_id": "0007004754",
+        "name": "Skračič Nikole Ive",
+        "additional_info": "1922. Murter, Šibenik. Hrvat, ribar. Član SKOJ-a 1942. U NOV od 14. 10. 1942. u 3. sanđačkoj proleterskoj brigadi. U 2. dalm. brigadi od 6. 6. 1943. Poginuo 10. 6. 1943. na Zelengori.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 159,
+        "pdf_x": 143.7,
+        "pdf_y": 547.1,
+        "pdf_x_end": 468.5,
+        "pdf_y_end": 571.1,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Skračić",

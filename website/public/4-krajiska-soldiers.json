@@ -135,10 +135,10 @@
   {
     "soldier_id": "0011001658",
     "last_name": "Adamović",
-    "middle_name": "",
+    "middle_name": "Jove",
     "first_name": "Marko",
-    "fathers_name": "",
-    "full_name": "Adamović Marko",
+    "fathers_name": "Jovo",
+    "full_name": "Adamović Jove Marko",
     "additional_info": "borac, rođen 1920, Benakovac, Bos. Kruna, Srbin, u NOB od 27. VIII 1941, poginuo 10. I 1944. kod sela Radoševića.",
     "birth_year": "1920",
     "pdf_file": "4-krajiska.pdf",
@@ -151,7 +151,22 @@
     "death_date": "10. I 1944",
     "rank": "borac",
     "pdf_x_end": 395.8,
-    "pdf_y_end": 105.6
+    "pdf_y_end": 105.6,
+    "death_place": "na Breševu, Sanski Most",
+    "other_sources": [
+      {
+        "soldier_id": "0013000011",
+        "name": "Adamović Jove Marko",
+        "additional_info": "borac, rođen 1920. godine, Benakovac, Bosanska Krupa. Poginuo jula 1944. godine na Breševu, Sanski Most.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 27.1,
+        "pdf_y": 344.1,
+        "pdf_x_end": 362.6,
+        "pdf_y_end": 362.7,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Agbaba",
@@ -563,7 +578,23 @@
     "death_date": "17. I 1945",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 343.4
+    "pdf_x_end": 343.4,
+    "birth_place": "Dragijevica",
+    "death_place": "Šarengrad",
+    "other_sources": [
+      {
+        "soldier_id": "0021000098",
+        "name": "Andrić Čedomira Božidar",
+        "additional_info": "rođen 1921. Dragijevica. Osečina, zemljoradnik. Poginuo 17. januara 1945. kod Šarengrada.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 68.1,
+        "pdf_y": 303.6,
+        "pdf_x_end": 370.8,
+        "pdf_y_end": 324.4,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Andrić",
@@ -6539,7 +6570,22 @@
     "death_type": "poginuo",
     "death_date": "aprila 1943",
     "death_place": "na Korićni, Glamoč",
-    "pdf_x_end": 344.0
+    "pdf_x_end": 344.0,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0013000352",
+        "name": "Galić Dmitra Boško",
+        "additional_info": "borac, rođen u selu Maleševci, Cazin. Poginuo 1943. godine u Koritima kod Glamoča.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 15.6,
+        "pdf_y": 114.9,
+        "pdf_x_end": 350.1,
+        "pdf_y_end": 133.0,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Galić",
@@ -6846,7 +6892,23 @@
     "death_type": "poginuo",
     "death_date": "13. XII 1944",
     "rank": "poručnik, politički komesar čete",
-    "pdf_x_end": 375.7
+    "pdf_x_end": 375.7,
+    "death_place": "u selu Sotana kod Vukovara",
+    "other_sources": [
+      {
+        "soldier_id": "0013000358",
+        "name": "Gavrilović Ostoje Milan",
+        "additional_info": "rođen 1919. godine u Hašanima, Bosanska Krupa. Poginuo u selu Sotana kod Vukovara.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 91.7,
+        "pdf_y": 76.4,
+        "pdf_x_end": 407.2,
+        "pdf_y_end": 94.3,
+        "pdf_x_left": 74.2,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gavrilović",
@@ -8083,7 +8145,24 @@
     "death_date": "22. XII 1944",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 376.0
+    "pdf_x_end": 376.0,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_place": "Fruška gora",
+    "other_sources": [
+      {
+        "soldier_id": "0010000506",
+        "name": "Ilić M Gvozden",
+        "additional_info": "rođen 1924, u Ručićima, zemljoradnik, Srbin, borac, poginuo 4. 12. 1944. na Fruškoj gori",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 209.3,
+        "pdf_y": 227.2,
+        "pdf_x_end": 369.9,
+        "pdf_y_end": 255.6,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ilić",
@@ -14530,7 +14609,24 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 394.9
+    "pdf_x_end": 394.9,
+    "death_type": "poginuo",
+    "death_date": "23. 1. 1945",
+    "death_place": "kod s. Ilinci u Sremu",
+    "other_sources": [
+      {
+        "soldier_id": "0003000611",
+        "name": "Lazarević Milana Živojin",
+        "additional_info": "rođen 1927. u s. Izvoru - Svrljig. Borac 1. bataljona. Poginuo kod s. Ilinci u Sremu 23. 1. 1945",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 23,
+        "pdf_x": 121.4,
+        "pdf_y": 558.6,
+        "pdf_x_end": 480.8,
+        "pdf_y_end": 575.5,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lazić",
@@ -17729,10 +17825,10 @@
   },
   {
     "last_name": "Milinković",
-    "middle_name": "",
+    "middle_name": "Velimira",
     "first_name": "Ljubomir",
-    "fathers_name": "",
-    "full_name": "Milinković Ljubomir",
+    "fathers_name": "Velimir",
+    "full_name": "Milinković Velimira Ljubomir",
     "additional_info": "borac 1. čete 4. bataljona, rođen 1923, Drijetanj, Bela Zemlja, Titovo Užice, poginuo 10. XII 1944. kod sela Orolika, Vukovar.",
     "birth_year": "1923",
     "pdf_page": 56,
@@ -17746,7 +17842,22 @@
     "death_date": "10. XII 1944",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 345.9
+    "pdf_x_end": 345.9,
+    "death_place": "Otok, Vinkovci",
+    "other_sources": [
+      {
+        "soldier_id": "0006004309",
+        "name": "Milinković Velimira Ljubomir",
+        "additional_info": "1923. Drijetanj, T. Užice. Poginuo 10. XII 1944. u mjestu Otok kod Vinkovaca.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 59,
+        "pdf_x": 311.5,
+        "pdf_y": 545.3,
+        "pdf_x_end": 483.8,
+        "pdf_y_end": 569.4,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milinković",
@@ -20435,7 +20546,21 @@
     "death_date": "7. I 1945",
     "death_place": "kod Beletovaca, Srem",
     "rank": "borac",
-    "pdf_x_end": 390.4
+    "pdf_x_end": 390.4,
+    "other_sources": [
+      {
+        "soldier_id": "0010001264",
+        "name": "Ostojić Nikola",
+        "additional_info": "rođen 1925, Dučina Sopot, zemljoradnik, Srbin, u NOB i u Brigadi od oktobra 1944, borac, poginuo 8. 1. 1945. kod Đeletovaca, Srem, gdje je i sahranjen",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 78,
+        "pdf_x": 39.6,
+        "pdf_y": 226.3,
+        "pdf_x_end": 200.2,
+        "pdf_y_end": 274.8,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ostojić",
@@ -21425,7 +21550,23 @@
     "death_type": "poginuo",
     "death_date": "8. V 1945",
     "rank": "borac",
-    "pdf_x_end": 340.4
+    "pdf_x_end": 340.4,
+    "unit_detail": "I bataljon",
+    "death_place": "Ivan Zelina, Zagreb",
+    "other_sources": [
+      {
+        "soldier_id": "0001009053",
+        "name": "Pavlović Živote Tihomir",
+        "additional_info": "1920, Azanja, Smed. Palanka, Srbija, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944, I bataljon, borac, poginuo 27. 04. 1945, Ivan Zelina, Zagreb",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 24,
+        "pdf_x": 61.6,
+        "pdf_y": 218.2,
+        "pdf_x_end": 369.6,
+        "pdf_y_end": 259.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -25567,10 +25708,10 @@
   },
   {
     "last_name": "Rađenović",
-    "middle_name": "",
+    "middle_name": "Nikole",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Rađenović Milan",
+    "fathers_name": "Nikola",
+    "full_name": "Rađenović Nikole Milan",
     "additional_info": "borac, rođen 1924, Osredci, Srb, Drvar, u NOB od 26. IX 1943, poginuo 24. XII 1943. kod sela Manjin--Vrha, Kladanj.",
     "birth_year": "1924",
     "pdf_page": 77,
@@ -25583,7 +25724,22 @@
     "death_type": "poginuo",
     "death_date": "24. XII 1943",
     "rank": "borac",
-    "pdf_x_end": 377.5
+    "pdf_x_end": 377.5,
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0002007274",
+        "name": "Rađenović Nikole Milan",
+        "additional_info": "1923, Osredci, D. Lapac, 1. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 825,
+        "pdf_x": 127.2,
+        "pdf_y": 620.5,
+        "pdf_x_end": 404.8,
+        "pdf_y_end": 630.0,
+        "unit_file": "soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rađenović",
@@ -26208,7 +26364,24 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "mitraljezac",
-    "pdf_x_end": 340.1
+    "pdf_x_end": 340.1,
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "death_place": "Prijepolje",
+    "other_sources": [
+      {
+        "soldier_id": "0010001592",
+        "name": "Rodić Stevana Rade",
+        "additional_info": "rođen 1922, Zaglavica, Drvar, radnik, Srbin, u NOB od 1941, član KPJ, borac, poginuo 1943. kod Prijepolja",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 96,
+        "pdf_x": 37.2,
+        "pdf_y": 181.4,
+        "pdf_x_end": 198.0,
+        "pdf_y_end": 218.4,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rodić",
@@ -26335,7 +26508,23 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "rank": "desetar",
-    "pdf_x_end": 392.6
+    "pdf_x_end": 392.6,
+    "death_date": "juna 1943",
+    "death_place": "kod Suhe na Sutjesci",
+    "other_sources": [
+      {
+        "soldier_id": "0010001604",
+        "name": "Rodić Ilije Đuro",
+        "additional_info": "rođen 1922, Bosanski Osredci, Drvar, radnik, Srbin, u NOB od 1941, u Brigadi od 22. 8. 1942, član SKOJ-a, borac, poginuo juna 1943. kod Suhe na Sutjesci",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 95,
+        "pdf_x": 24.4,
+        "pdf_y": 280.3,
+        "pdf_x_end": 185.1,
+        "pdf_y_end": 326.6,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rogulin",
@@ -29065,7 +29254,24 @@
     "death_date": "20. X 1944",
     "death_place": "Beograd",
     "rank": "borac",
-    "pdf_x_end": 352.8
+    "pdf_x_end": 352.8,
+    "birth_place": "Markovac, Mladenovac",
+    "occupation": "zemljoradnik",
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0021005125",
+        "name": "Stojanović S Života",
+        "additional_info": "rođen 1911, Markovac, Mladenovac, zemljoradnik. U Brigadi od marta 1945. (iz Kosmajske bršade). Vod veze 3. bataljona.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 370,
+        "pdf_x": 58.0,
+        "pdf_y": 365.5,
+        "pdf_x_end": 362.8,
+        "pdf_y_end": 386.5,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojko",
@@ -30303,7 +30509,22 @@
     "death_place": "Zagreb",
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 391.5
+    "pdf_x_end": 391.5,
+    "birth_place": "Konarevo, Kraljevo",
+    "other_sources": [
+      {
+        "soldier_id": "0021005418",
+        "name": "Tošić Bogoljuba Radomir",
+        "additional_info": "rođen 1925. Konarevo, Kraljevo. U Brigadi od marta 1945, (iz prekomande), 2. četa 3. bataljon. Ranjen 8. maja 1945. kod Prozorja. Umro 12. maja u bolnici u Zagrebu.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 393,
+        "pdf_x": 57.3,
+        "pdf_y": 271.6,
+        "pdf_x_end": 361.7,
+        "pdf_y_end": 304.1,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Trifunović",
@@ -33680,7 +33901,22 @@
     "death_date": "28. II 1945",
     "death_place": "u selu JBubi, Ilok",
     "rank": "borac",
-    "pdf_x_end": 344.0
+    "pdf_x_end": 344.0,
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0002001127",
+        "name": "Čolić Isaila Milivoje",
+        "additional_info": "1923, Popović, Sopot, 1. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 598,
+        "pdf_x": 133.3,
+        "pdf_y": 539.7,
+        "pdf_x_end": 374.8,
+        "pdf_y_end": 549.2,
+        "unit_file": "soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čolović",

@@ -381,9 +381,9 @@
   {
     "last_name": "Arsenijević",
     "first_name": "Rada",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Arsenijević Rada",
+    "middle_name": "Steve",
+    "fathers_name": "Steva",
+    "full_name": "Arsenijević Steve Rada",
     "additional_info": "1926, Šimanovci, poginuo u Bosni",
     "birth_year": "1926",
     "soldier_id": "0009000023",
@@ -395,7 +395,26 @@
     "birth_place": "Šimanovci",
     "death_type": "poginuo",
     "death_place": "Bosna",
-    "pdf_x_end": 190.6
+    "pdf_x_end": 190.6,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_date": "1944",
+    "other_sources": [
+      {
+        "soldier_id": "0018000032",
+        "name": "Arsenijević Steve Rada",
+        "additional_info": "rođen 1926, Šimanovci, Pećinci, Srbin, zemljoradnik, stupio u NOVJ 1944, borac, poginuo 1944. kod Jablanice u .istočnoj Bosni.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 133.1,
+        "pdf_y": 421.4,
+        "pdf_x_end": 393.5,
+        "pdf_y_end": 446.4,
+        "pdf_x_left": 111.8,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Arsenić",
@@ -4368,7 +4387,23 @@
     "death_type": "umro",
     "death_place": "u Vojnoj bolnici centra IV u Mošorinu Novom Kneževcu",
     "rank": "borac",
-    "pdf_x_end": 199.5
+    "pdf_x_end": 199.5,
+    "occupation": "zemljoradnik",
+    "death_date": "06. 05. 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0001002377",
+        "name": "Dudić Nikole Pavle",
+        "additional_info": "Mošorin, Titel, Vojvodina, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944,1 bataljon, borac, poginuo 06. 05. 1945, u Novom Kneževcu '191",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 189,
+        "pdf_x": 46.8,
+        "pdf_y": 517.6,
+        "pdf_x_end": 353.9,
+        "pdf_y_end": 548.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dukin",
@@ -23420,10 +23455,10 @@
     "pdf_x": 206.3,
     "pdf_y_end": 432.2,
     "pdf_file": "prva-vojvodjanska.pdf",
+    "pdf_x_end": 348.7,
     "birth_place": "Bajina Bašta",
     "occupation": "domaćica",
-    "rank": "bolničarka",
-    "pdf_x_end": 348.7
+    "rank": "bolničarka"
   },
   {
     "last_name": "Tresiglavić",
@@ -25257,7 +25292,22 @@
     "pdf_file": "prva-vojvodjanska.pdf",
     "pdf_x_end": 353.2,
     "birth_place": "Belegiš (Stara Pazova)",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0018001894",
+        "name": "Vukašinac Stevan Zdravko",
+        "additional_info": "rođen 1920, Belegiš (nema drugih podataka).",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 95.9,
+        "pdf_y": 271.6,
+        "pdf_x_end": 354.6,
+        "pdf_y_end": 288.1,
+        "pdf_x_left": 75.2,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vunić",
@@ -25397,10 +25447,10 @@
     "pdf_x": 50.9,
     "pdf_y_end": 199.8,
     "pdf_file": "prva-vojvodjanska.pdf",
+    "pdf_x_end": 193.0,
     "birth_place": "VeMki Radinci (Sremska Mitrovica)",
     "occupation": "domaćica",
-    "rank": "zastavnik",
-    "pdf_x_end": 193.0
+    "rank": "zastavnik"
   },
   {
     "last_name": "Zakić",
@@ -26510,8 +26560,8 @@
     "pdf_y": 240.1,
     "pdf_x": 215.2,
     "pdf_y_end": 267.4,
-    "birth_place": "Vršac",
-    "pdf_x_end": 356.8
+    "pdf_x_end": 356.8,
+    "birth_place": "Vršac"
   },
   {
     "soldier_id": "0009001559",

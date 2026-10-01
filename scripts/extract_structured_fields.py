@@ -474,7 +474,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
     got = {}
-    for info in [s.get('additional_info', '')] + [o.get('additional_info', '') for o in s.get('other_sources', ())]:
+    for info in [s.get('additional_info', '')] + [o.get('additional_info', '') for o in s.get('other_sources', ())
+                                                  if not o.get('unit_file')]:      # another unit's: its own fields
         for k, v in ex.extract(info, code).items():
             got.setdefault(k, v)
     return got

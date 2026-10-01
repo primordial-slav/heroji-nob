@@ -21,8 +21,13 @@ lived to the end of the war, and a duty both name (komandir čete). Each match i
 
 The record of the list the unit names first (units.ts pdfFiles order) keeps its id; the other is merged into it.
 
+Across units (--across) the same is done for records of the same name in two units' books, stricter (sure: two
+things or more agree, nothing disagrees); those become `link` corrections, which keep both records and show each
+the other's entries (apply_corrections.apply_links).
+
 Usage:
     python scripts/find_source_duplicates.py --brigade 30                  # print the matches
+    python scripts/find_source_duplicates.py --across --write sure         # link soldiers found in two units
     python scripts/find_source_duplicates.py --brigade 30 --write sure     # append the sure ones as merges
     python scripts/find_source_duplicates.py --brigade 3 --write sure,likely --min-agree 2   # fallen vs survivors
     python scripts/find_source_duplicates.py --brigade 30 --json out.json  # every match, for review
@@ -93,6 +98,30 @@ def places(text: str) -> set[str]:
     return {fold(w)[:5] for w in words if fold(w) not in NOT_PLACE}
 
 
+QUALIFIERS = {'v': 'vel', 'vel': 'vel', 'velik': 'vel', 'veliki': 'vel', 'velika': 'vel', 'veliko': 'vel', 'm': 'mal',
+              'mal': 'mal', 'mali': 'mal', 'mala': 'mal', 'malo': 'mal', 'g': 'gor', 'gor': 'gor', 'gornji': 'gor',
+              'gornja': 'gor', 'gornje': 'gor', 'd': 'don', 'donji': 'don', 'donja': 'don', 'donje': 'don'}
+
+
+def village(text: str) -> tuple[str, set[str]]:
+    """'V. Ivanča, Mladenovac' -> ('vel', {'ivan'}): the place before the district, Gornja/Donja/Velika/Mala apart."""
+    first = re.split(r',|\(| [-—–] ', (text or '').lower())[0]
+    words = [fold(w) for w in re.findall(r'\w+', first)]
+    qualifier = next((QUALIFIERS[w] for w in words if w in QUALIFIERS), '')
+    return qualifier, {w[:4] for w in words if len(w) >= 4 and w not in QUALIFIERS and w not in NOT_PLACE}
+
+
+def same_place(a: str, b: str) -> bool | None:
+    """True: the same village; False: different places; None: only the district is shared (one names the village,
+    the other only its district), or there is nothing to compare."""
+    (qa, va), (qb, vb) = village(a), village(b)
+    if not (va and vb):
+        return None
+    if va & vb:
+        return not (qa and qb and qa != qb)              # Velika Ivanča is not Mala Ivanča
+    return None if places(a) & places(b) else False
+
+
 SURVIVED = re.compile(r'kraj rata (?:je )?do[cč]ekao|pre[zž]ivio|\bživ(?:i|e)?\b|demobili|umro (?:je )?(?:posle|poslije|nakon) rata', re.I)
 
 
@@ -140,18 +169,22 @@ def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
     fb = {fold(b.get('fathers_name')), fold(b.get('middle_name'))} - {''}
     if fa and fb:
         # the same name in another case (Nikole / Nikola), an initial (N. / Nikole), a letter misread (Cije / Cvije)
-        same = fa & fb or any(x[:4] == y[:4] or (min(len(x), len(y)) == 1 and x[0] == y[0])
-                               or (min(len(x), len(y)) >= 4 and one_letter_apart(x, y)) for x in fa for y in fb)
-        (agree if same else clash).append('father')
+        same = fa & fb or any(x[:4] == y[:4] or (min(len(x), len(y)) >= 4 and one_letter_apart(x, y))
+                               for x in fa for y in fb)
+        initial = any(min(len(x), len(y)) == 1 and x[0] == y[0] for x in fa for y in fb)
+        if same:
+            agree.append('father')
+        elif initial:
+            agree.append('father initial')               # weaker: "M." for Milan or Marko
+        else:
+            clash.append('father')
     ya, yb = year(a.get('birth_year')), year(b.get('birth_year'))
     if ya and yb:
         (agree if abs(ya - yb) <= 1 else clash).append('birth year')
-    pa, pb = places(a.get('birth_place')), places(b.get('birth_place'))
-    if pa and pb:
-        (agree if pa & pb else clash).append('birthplace')
-    da, db = places(a.get('death_place')), places(b.get('death_place'))
-    if da and db:
-        (agree if da & db else clash).append('death place')
+    for field, label in (('birth_place', 'birthplace'), ('death_place', 'death place')):
+        same = same_place(a.get(field), b.get(field))
+        if same is not None:
+            (agree if same else clash).append(label)
     ya, yb = year(a.get('death_date')), year(b.get('death_date'))
     if ya and yb:
         (agree if ya == yb else clash).append('death year')
@@ -254,11 +287,51 @@ def show(p: dict) -> str:
             f"  [{p['how']}; {ev}{'; ' + p['note'] if p.get('note') else ''}]")
 
 
+def across_units(units: dict[int, list[dict]]) -> list[dict]:
+    """Records of the same name in different units, graded like matches() but stricter: a soldier who served in
+    two units is linked (both records stay), so only 'sure' (two things or more agree, nothing disagrees, the
+    only candidate in that unit or clearly the best) and 'review'."""
+    by_name = defaultdict(list)
+    for code, soldiers in units.items():
+        for s in soldiers:
+            s['_unit'] = code
+            if fold(s['last_name']) and fold(s['first_name']):
+                by_name[(fold(s['last_name']), fold(s['first_name']))].append(s)
+    pairs = []
+    for group in by_name.values():
+        if len({s['_unit'] for s in group}) < 2:
+            continue
+        for i, a in enumerate(group):
+            for b in group[i + 1:]:
+                if a['_unit'] != b['_unit']:
+                    a, b = (a, b) if a['_unit'] < b['_unit'] else (b, a)
+                    agree, clash = evidence(a, b)
+                    pairs.append({'keep': a, 'merge': b, 'how': 'name', 'agree': agree, 'clash': clash})
+    sides = defaultdict(list)
+    for p in pairs:
+        sides[(p['keep']['soldier_id'], p['merge']['_unit'])].append(p)
+        sides[(p['merge']['soldier_id'], p['keep']['_unit'])].append(p)
+
+    def chosen(p, group):
+        others = [q for q in group if q is not p]
+        return not others or all(len(q['agree']) < len(p['agree']) or q['clash'] for q in others)
+
+    for p in pairs:
+        alone = (chosen(p, sides[(p['keep']['soldier_id'], p['merge']['_unit'])])
+                 and chosen(p, sides[(p['merge']['soldier_id'], p['keep']['_unit'])]))
+        # a common name with an initial and a year is not enough: a place or the father's name must agree too
+        strong = {'birthplace', 'death place', 'father'} & set(p['agree'])
+        p['grade'] = 'sure' if alone and len(p['agree']) >= 2 and strong and not p['clash'] else 'review'
+        if not alone:
+            p['note'] = 'several candidates'
+    return sorted(pairs, key=lambda p: (p['grade'], p['keep']['soldier_id']))
+
+
 def append(new: list[dict]) -> tuple[int, int]:
     """Append to corrections.json, re-read right before writing (other sessions append too)."""
     corr = json.loads(CORRECTIONS.read_text(encoding='utf-8'))
-    have = {(c['soldier_id'], c.get('merge_id')) for c in corr if c['action'] == 'merge'}
-    new = [c for c in new if (c['soldier_id'], c['merge_id']) not in have]
+    have = {(c['soldier_id'], c.get('merge_id') or c.get('link_id')) for c in corr if c['action'] in ('merge', 'link')}
+    new = [c for c in new if (c['soldier_id'], c.get('merge_id') or c.get('link_id')) not in have]
     start = max(c['id'] for c in corr) + 1
     for i, c in enumerate(new):
         c['id'] = start + i
@@ -270,7 +343,8 @@ def append(new: list[dict]) -> tuple[int, int]:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--brigade', type=int, required=True)
+    ap.add_argument('--brigade', type=int, help="find a unit's soldiers printed in two of its lists (merges)")
+    ap.add_argument('--across', action='store_true', help="find soldiers printed in two units' books (links)")
     ap.add_argument('--write', help='grades to append as merge corrections, e.g. "sure" or "sure,name"')
     ap.add_argument('--only', help='file of "keep_id merge_id" lines: append exactly these (reviewed) matches')
     ap.add_argument('--min-agree', type=int, default=0,
@@ -279,6 +353,8 @@ def main():
     ap.add_argument('--json', help='write every match here, for review')
     args = ap.parse_args()
 
+    if args.across:
+        return main_across(args)
     cfg = BRIGADE_CONFIGS[args.brigade]
     soldiers = json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
     found = matches(soldiers, list_rank(args.brigade))
@@ -307,6 +383,38 @@ def main():
                for p in chosen]
         start, n = append(new)
         print(f"Appended {n} merge corrections from id {start}")
+
+
+def unit_name(code: int) -> str:
+    return BRIGADE_CONFIGS[code]['name']
+
+
+def main_across(args):
+    units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
+    units = {code: json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
+             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts}
+    found = across_units(units)
+    grades = defaultdict(int)
+    for p in found:
+        grades[p['grade']] += 1
+        k, m = p['keep'], p['merge']
+        ev = ', '.join([f"+{x}" for x in p['agree']] + [f"-{x}" for x in p['clash']]) or 'names only'
+        print(f"{p['grade']:6s} {k['soldier_id']} {k['full_name']} ({k.get('birth_year') or '?'}, {unit_name(k['_unit'])})"
+              f"  ~  {m['soldier_id']} {m['full_name']} ({m.get('birth_year') or '?'}, {unit_name(m['_unit'])})"
+              f"  [{ev}{'; ' + p['note'] if p.get('note') else ''}]")
+    print(f"\nAcross units: {len(found)} matches {dict(grades)}")
+    chosen = [p for p in found if args.write and p['grade'] in set(args.write.split(','))]
+    if args.only:
+        ids = {tuple(ln.split()[:2]) for ln in Path(args.only).read_text(encoding='utf-8').splitlines() if ln.strip()}
+        chosen += [p for p in found if (p['keep']['soldier_id'], p['merge']['soldier_id']) in ids and p not in chosen]
+    if chosen:
+        new = [{'id': 0, 'action': 'link', 'soldier_id': p['keep']['soldier_id'], 'link_id': p['merge']['soldier_id'],
+                'link_name': p['merge']['full_name'],
+                'reason': f"Same soldier in {unit_name(p['keep']['_unit'])} and {unit_name(p['merge']['_unit'])}"
+                          + (f"; same {', '.join(p['agree'])}" if p['agree'] else '') + (f'. {args.reason}' if args.reason else '')}
+               for p in chosen]
+        start, n = append(new)
+        print(f"Appended {n} link corrections from id {start}")
 
 
 if __name__ == '__main__':
