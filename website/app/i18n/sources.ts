@@ -1,10 +1,13 @@
 import type { Lang } from './config'
 import type { PdfSource } from '@/app/data/sources'
+import { toCyrillic } from './cyrillic'
 
 // The Izvori page in Slovene, Macedonian and English. A book's title stays as the book prints it (it is a
 // citation); what the site says about the book is translated: its description, the part of the title the
 // site added after " — " (it names the list in the record's book switch), and author lines that are not
 // names ("Grupa autora", "(ur.)"). Every source added to data/sources.ts needs a description here.
+// In Cyrillic Serbo-Croatian (sr-cyrl) the description and the site's part of the title are the Latin ones in
+// Cyrillic; the title and the author stay as the book prints them.
 
 type Texts = Record<string, string>
 
@@ -256,6 +259,7 @@ const AUTHOR: Partial<Record<Lang, [RegExp, string][]>> = {
 }
 
 export function sourceDescription(source: PdfSource, lang: Lang): string | undefined {
+  if (lang === 'sr-cyrl') return source.description && toCyrillic(source.description)
   return DESCRIPTION[lang]?.[source.id] ?? source.description
 }
 
@@ -266,6 +270,7 @@ export function sourceAuthor(source: PdfSource, lang: Lang): string {
 /** The list a title names after " — ", in the language: "Brodska brigada — spisak poginulih boraca" -> "the fallen" */
 export function titlePart(title: string, lang: Lang): string {
   const part = title.includes(' — ') ? title.split(' — ').pop()! : title
+  if (lang === 'sr-cyrl') return title.includes(' — ') ? toCyrillic(part) : part
   return PART[lang]?.[part] ?? part
 }
 

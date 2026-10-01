@@ -314,14 +314,14 @@ html {
   display: none;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 559px) {
   .lang-bar ul {
     column-gap: var(--space-3);
   }
 }
 
-/* Where the four names don't fit on one line, the codes */
-@media (max-width: 369px) {
+/* Where the five names don't fit on one line (they need about 480px), the codes */
+@media (max-width: 499px) {
   .lang-name {
     display: none;
   }

@@ -5,8 +5,9 @@ import { FINISHED_LANGS, HTML_LANG, LANG_NAMES, localePath, splitPath } from '@/
 import { useLang, useT } from '@/app/i18n/LangContext'
 
 // A thin bar above the header: the same page in each finished language, named in that language (Srpskohrvatski,
-// Slovenščina, Македонски, English). The search, the filters and an open record (?q=…&borac=…) come along, so a
-// record read in one language opens in the other. A page in a language not yet finished lists itself as well.
+// Српскохрватски, Slovenščina, Македонски, English). The search, the filters and an open record (?q=…&borac=…)
+// come along, so a record read in one language opens in the other. A page in a language not yet finished lists
+// itself as well.
 export default function LanguageBar() {
   const lang = useLang()
   const t = useT()

@@ -1,6 +1,7 @@
 import type { Lang } from './config'
 import type { Unit } from '@/app/data/units'
 import { quoteMarks } from './format'
+import { toCyrillic } from './cyrillic'
 
 // Each unit's name and card text in Slovene, Macedonian and English; the Serbo-Croatian ones are in
 // data/units.ts. Names follow each language's own usage (liška, sandžaška, kozaraška; 13-та, Втора; 1st
@@ -526,18 +527,23 @@ const en: Record<string, UnitText> = {
 
 const TEXT: Partial<Record<Lang, Record<string, UnitText>>> = { sl, mk, en }
 
+// Serbo-Croatian in Cyrillic is the Latin text of data/units.ts, letter for letter
+function inScript(lang: Lang, text: string): string {
+  return lang === 'sr-cyrl' ? toCyrillic(text) : text
+}
+
 /** The unit's name in the language, with its quotation marks: Prva liška proletarska brigada »Marko Orešković« */
 export function unitName(unit: Unit, lang: Lang): string {
-  return quoteMarks(lang, TEXT[lang]?.[unit.id]?.name ?? unit.name)
+  return inScript(lang, quoteMarks(lang, TEXT[lang]?.[unit.id]?.name ?? unit.name))
 }
 
 /** The unit's name without its honorary name: "Prva liška proletarska brigada" */
 export function unitShortName(unit: Unit, lang: Lang): string {
-  return (TEXT[lang]?.[unit.id]?.name ?? unit.name).split(/\s+["„]/)[0]
+  return inScript(lang, (TEXT[lang]?.[unit.id]?.name ?? unit.name).split(/\s+["„]/)[0])
 }
 
 export function unitDescription(unit: Unit, lang: Lang): string {
-  return TEXT[lang]?.[unit.id]?.description ?? unit.description
+  return inScript(lang, TEXT[lang]?.[unit.id]?.description ?? unit.description)
 }
 
 /** Unit ids that lack a text in some language, for a check at build time */

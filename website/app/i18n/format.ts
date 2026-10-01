@@ -1,7 +1,7 @@
 import type { Lang } from './config'
 
 // Number agreement as each language has it (the CLDR rules for whole numbers):
-// sr  1 borac, 2 borca, 5 boraca, 21 borac
+// sr  1 borac, 2 borca, 5 boraca, 21 borac (in either script)
 // sl  1 borec, 2 borca, 3 borci, 5 borcev, 101 borec (by the last two digits)
 // mk  1 борец, 2 борци, 21 борец
 // en  1 Partisan, 2 Partisans
@@ -12,6 +12,7 @@ export function pluralForm(lang: Lang, n: number): PluralForm {
   const mod100 = n % 100
   switch (lang) {
     case 'sr':
+    case 'sr-cyrl':
       if (mod10 === 1 && mod100 !== 11) return 'one'
       if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return 'few'
       return 'other'
@@ -46,6 +47,7 @@ export function quoteMarks(lang: Lang, text: string): string {
 
 export const QUOTES: Record<Lang, [string, string]> = {
   sr: ['„', '“'],
+  'sr-cyrl': ['„', '“'],
   sl: ['»', '«'],
   mk: ['„', '“'],
   en: ['‘', '’'],

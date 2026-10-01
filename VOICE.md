@@ -2,7 +2,7 @@
 
 How the site's own text is written: unit cards, headings, buttons, hints, messages. `DESIGN.md` covers how it looks; this covers how it reads. The entries from the books are never rewritten to fit these rules (see the end).
 
-The site speaks Serbo-Croatian at the plain addresses (/, /units/<id>) and Slovene, Macedonian and English under /sl, /mk and /en. All of its own text lives in `website/app/i18n/messages/<lang>.ts` (`sr.ts` is the reference and sets the shape the others follow); unit names and cards in other languages are in `i18n/units.ts`, what the Izvori page says about each book in `i18n/sources.ts`. The rules below are written for Serbo-Croatian; each other language follows them in its own way (see "Other languages").
+The site speaks Serbo-Croatian at the plain addresses (/, /units/<id>), the same Serbo-Croatian in Cyrillic under /sr-cyrl, and Slovene, Macedonian and English under /sl, /mk and /en. All of its own text lives in `website/app/i18n/messages/<lang>.ts` (`sr.ts` is the reference and sets the shape the others follow); unit names and cards in other languages are in `i18n/units.ts`, what the Izvori page says about each book in `i18n/sources.ts`. The rules below are written for Serbo-Croatian; each other language follows them in its own way (see "Other languages").
 
 ## Who reads it
 
@@ -76,6 +76,13 @@ Each language is written for its own readers, not translated from Serbo-Croatian
 What stays as printed in every language: the books' entries, names and places, book titles (they are citations), and the values of a record's fields (birthplace, occupation, sub-unit). Only the labels around them are translated. A sub-unit the site numbers ("1. bataljon") is said in the language; one the book names ("3. kordunaški bataljon", "bataljon Garibaldi") is shown as printed.
 
 Search examples on the home page suit each audience (Slovene names and places for /sl, Cyrillic for /mk, which search reads in the books' Latin).
+
+### Српскохрватски (ћирилица)
+
+- Not a translation: the Latin Serbo-Croatian text in Cyrillic, letter for letter (`i18n/cyrillic.ts`), so the rules above apply as they are and the two scripts never drift apart. Write and fix the Latin text; the Cyrillic follows.
+- Stay in Latin: addresses, znaci.org, Wikimedia Commons, licences, file formats (PDF, JPG, MB) and words with q, w, x, y. A word the letters get wrong goes in `WORDS` there ("Email" is "Имејл").
+- A word where "lj", "nj" or "dž" are two sounds ("injekcija", "nadživeti") comes out wrong; none is on the site now, so check a new one before using it.
+- As in every language, the books' entries, names and titles stay in the script the site has them in (Latin).
 
 ### Slovenščina
 
