@@ -1957,3 +1957,278 @@ body:has(.band-photo[data-ready]) header.masthead {
     display: none;
   }
 }
+
+/* ========== Saborci i zemljaci: the record's place in its unit, and its village ========== */
+
+.kin {
+  --kin-row: 2.125rem;     /* a node's row; the connector meets it halfway */
+  --kin-leaf: 1.875rem;
+  --kin-indent: 1.75rem;
+  --kin-tick: 0.875rem;
+}
+
+.kin-tree {
+  list-style: none;
+  margin-top: var(--space-3);
+}
+
+.kin-tree + .kin-tree {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+}
+
+.kin-tree ul {
+  list-style: none;
+  margin-left: 0.3125rem;
+}
+
+/* Connectors: a line down the side, a tick to each node, the last child's corner rounded */
+.kin-tree ul > li {
+  position: relative;
+  padding-left: var(--kin-indent);
+}
+
+.kin-tree ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid var(--rule-strong);
+}
+
+.kin-tree ul > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: calc(var(--kin-row) / 2);
+  width: var(--kin-tick);
+  border-top: 1px solid var(--rule-strong);
+}
+
+.kin-tree ul > li:last-child::before {
+  bottom: auto;
+  height: calc(var(--kin-row) / 2);
+  width: var(--kin-tick);
+  border-bottom: 1px solid var(--rule-strong);
+  border-bottom-left-radius: 0.5rem;
+}
+
+.kin-row {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: var(--kin-row);
+  padding: calc((var(--kin-row) - 1.4em) / 2) var(--space-2) 0 0;
+  background: none;
+  border: 0;
+  border-radius: 2px;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+  text-align: left;
+}
+
+button.kin-row:not(:disabled) {
+  cursor: pointer;
+}
+
+button.kin-row:not(:disabled):hover .kin-label {
+  color: var(--red-ink);
+}
+
+/* The node itself: a dot where the tick ends */
+.kin-tree ul > li > .kin-row::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--kin-tick) - var(--kin-indent) - 0.0625rem);
+  top: calc(var(--kin-row) / 2 - 0.25rem);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--ground);
+  border: 1px solid var(--rule-strong);
+}
+
+.kin-node.is-path > .kin-row::before {
+  background: var(--ink-muted);
+  border-color: var(--ink-muted);
+}
+
+.kin-node.is-self > .kin-row::before {
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px var(--ground), 0 0 0 4px var(--red);
+}
+
+.kin-label {
+  font-weight: 500;
+}
+
+.kin-tree > li > .kin-row .kin-label {
+  font-weight: 600;
+}
+
+.kin-node.is-self .kin-label {
+  font-family: var(--font-name);
+  font-weight: 700;
+}
+
+.kin-note {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+.kin-count {
+  margin-left: auto;
+  padding-left: var(--space-3);
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* A chevron on the groups that open */
+.kin-row[aria-expanded]::after {
+  content: '';
+  flex: none;
+  align-self: center;
+  width: 0.375rem;
+  height: 0.375rem;
+  margin: 0 0.125rem 0 calc(-1 * var(--space-1));
+  border-right: 1.5px solid var(--ink-muted);
+  border-bottom: 1.5px solid var(--ink-muted);
+  transform: translateY(-1px) rotate(-45deg);
+  transition: transform 0.15s ease-out;
+}
+
+.kin-row[aria-expanded='true']::after {
+  transform: translateY(-3px) rotate(45deg);
+}
+
+/* The names in an open group: lighter nodes on the same lines */
+.kin-tree .kin-leaves > li {
+  --kin-row: var(--kin-leaf);
+}
+
+.kin-leaves.is-full {
+  max-height: 22rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.kin-leaf > button,
+.kin-leaf > a,
+.kin-leaf > span {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: var(--space-2);
+  width: 100%;
+  min-height: var(--kin-leaf);
+  padding: calc((var(--kin-leaf) - 1.4em) / 2) 0 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+  text-align: left;
+  text-decoration: none;
+}
+
+.kin-leaf > button,
+.kin-leaf > a {
+  cursor: pointer;
+}
+
+.kin-leaf > button::before,
+.kin-leaf > a::before,
+.kin-leaf > span::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--kin-tick) - var(--kin-indent) + 0.0625rem);
+  top: calc(var(--kin-leaf) / 2 - 0.15625rem);
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-radius: 50%;
+  background: var(--rule-strong);
+}
+
+.kin-leaf-name {
+  font-family: var(--font-name);
+}
+
+.kin-leaf > button:hover .kin-leaf-name,
+.kin-leaf > a:hover .kin-leaf-name {
+  color: var(--red-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.kin-leaf-years {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+}
+
+.kin-tag {
+  padding: 0 0.3125rem;
+  border-radius: 2px;
+  background: var(--surface-sunk);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.kin-more > button {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.kin-more > button::before {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .kin-row {
+    flex-wrap: wrap;
+  }
+
+  .kin-row .kin-note {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .kin-node.is-self .kin-row .kin-note {
+    order: 0;
+    flex-basis: auto;
+  }
+}
+
+/* An open group in red, so it reads apart from the names under it */
+.kin-node.is-open > .kin-row .kin-label {
+  color: var(--red-ink);
+}
+
+.kin-node.is-open > .kin-row::before {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.kin-node.is-open > .kin-row[aria-expanded]::after {
+  border-color: var(--red-ink);
+}
+
+/* "Mesto rođenja" before the village: says what the place is, as the details table does */
+.kin-kicker {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  font-weight: 400;
+  white-space: nowrap;
+}

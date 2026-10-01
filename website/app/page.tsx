@@ -21,6 +21,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [loadFailed, setLoadFailed] = useState(false)
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
+  const [unitLists, setUnitLists] = useState<Map<string, Soldier[]>>(new Map())
 
   const { results, searchTerm, setSearchTerm, isSearching } = useFuseSearch(
     allSoldiers,
@@ -38,6 +39,8 @@ export default function Home() {
             return data.map((soldier) => ({ ...soldier, unit: unit.name }))
           })
         )
+        // Each unit's whole list, linked soldiers included, for the comrades tree in the record dialog
+        setUnitLists(new Map(units.map((unit, i) => [unit.name, lists[i]])))
         // A soldier linked across units (an entry from another unit's book in other_sources) is listed once,
         // in the first of his units, with the others named
         const linkedAway = new Set<string>()
@@ -165,7 +168,10 @@ export default function Home() {
 
       {selectedSoldier && (
         <SoldierModal
+          key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
+          unitSoldiers={unitLists.get(selectedSoldier.unit ?? '')}
+          onOpen={setSelectedSoldier}
           onClose={() => setSelectedSoldier(null)}
         />
       )}

@@ -12,6 +12,7 @@ import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import { contributionsFor } from '@/app/data/family'
+import RelationsTree from './RelationsTree'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
@@ -26,10 +27,13 @@ function shortTitle(entry: SoldierSource): string {
 interface SoldierModalProps {
   soldier: Soldier
   unitName?: string
+  // The soldier's unit list, for the comrades tree; a name there opens in this dialog through onOpen
+  unitSoldiers?: Soldier[]
+  onOpen?: (soldier: Soldier) => void
   onClose: () => void
 }
 
-export default function SoldierModal({ soldier, unitName, onClose }: SoldierModalProps) {
+export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, onClose }: SoldierModalProps) {
   // The soldier's own entry, then the same soldier's entries in the unit's other books
   const entries: SoldierSource[] = entriesOf(soldier)
   const pages = entries.filter(hasPage)
@@ -145,6 +149,10 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
               </div>
             ))}
           </dl>
+        )}
+
+        {unitRecord && (
+          <RelationsTree soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen} />
         )}
 
         {page && (

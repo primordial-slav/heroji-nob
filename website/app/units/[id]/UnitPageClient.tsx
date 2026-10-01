@@ -114,8 +114,11 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
 
       {selectedSoldier && (
         <SoldierModal
+          key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
           unitName={unit.name}
+          unitSoldiers={soldiers}
+          onOpen={setSelectedSoldier}
           onClose={() => setSelectedSoldier(null)}
         />
       )}
