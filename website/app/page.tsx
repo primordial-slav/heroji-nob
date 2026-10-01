@@ -9,6 +9,7 @@ import SoldierModal from './components/SoldierModal'
 import SoldierResults, { countBorci } from './components/SoldierResults'
 import { SearchIcon } from './components/Icons'
 import { sqQuotes } from './lib/typography'
+import { searchAllPlaceholder } from './lib/totals'
 import BandPhoto from './components/BandPhoto'
 
 const EXAMPLES = ['Končar', 'Petar Abramović', 'Gračac']
@@ -60,7 +61,7 @@ export default function Home() {
               id="search"
               type="search"
               className="search-input"
-              placeholder="Prezime, ime ili mesto"
+              placeholder={searchAllPlaceholder()}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               autoComplete="off"
