@@ -15,6 +15,8 @@ import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import { contributionsFor } from '@/app/data/family'
 import RelationsTree from './RelationsTree'
+import SoldierPortrait from './SoldierPortrait'
+import { portraitFor } from '@/app/data/portraits'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
@@ -47,6 +49,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const sourceHref = page?.pdf_file ? `/izvori#${page.pdf_file.replace('.pdf', '')}` : undefined
   const unit = unitName || soldier.unit
   const unitRecord = unitByName(unit)
+  const portrait = portraitFor(soldier)
   // the units of the soldier's entries from other units' books (a link): he is listed in each of them
   const unitOf = (e: SoldierSource) => units.find((u) => u.dataFile === `/${e.unit_file}`)?.name
   const allUnits = [unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
@@ -138,9 +141,15 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
           </div>
         )}
         <SoldierMedals soldier={soldier} look="foto" className="modal-medals" />
-        <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
-        {allUnits.length > 0 && <p className="modal-unit">{allUnits.map(sqQuotes).join(' · ')}</p>}
-        {honours && <p className="modal-honours">{honours}</p>}
+        <div className="modal-head">
+          <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" />
+          <div>
+            <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
+            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map(sqQuotes).join(' · ')}</p>}
+            {honours && <p className="modal-honours">{honours}</p>}
+            {portrait && <p className="modal-portrait-credit">Fotografija: {portrait.credit}</p>}
+          </div>
+        </div>
         <RecordActions soldier={soldier} unit={unitRecord} />
         <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
 

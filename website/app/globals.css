@@ -1523,6 +1523,60 @@ body:has(.band-photo[data-ready]) header.masthead {
   padding-right: 7rem;
 }
 
+/* The soldier's portrait: a small 3:4 print beside the name, hanging on the red rule under the unit photo
+   (the photograph, or an anonymous outline of a partisan in a cap, its star the only colour) */
+.modal-head {
+  display: grid;
+  grid-template-columns: 4.75rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.modal-portrait,
+.memorial-portrait {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border: 3px solid var(--ground);
+  outline: 1px solid var(--rule-strong);
+  background: var(--surface-sunk);
+}
+
+.modal-content:has(.record-photo) .modal-portrait {
+  margin-top: calc(-1 * var(--space-5) - 2.75rem);
+}
+
+:is(.modal-portrait, .memorial-portrait) :is(a, img, .standin) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+:is(.modal-portrait, .memorial-portrait) img {
+  object-fit: cover;
+  filter: var(--photo-filter);
+}
+
+.standin-paper {
+  fill: var(--surface-sunk);
+}
+
+.standin-figure {
+  fill: color-mix(in srgb, var(--ink) 34%, var(--surface-sunk));
+}
+
+.standin-star {
+  fill: var(--red);
+}
+
+.modal-portrait-credit,
+.memorial-portrait-credit {
+  margin-top: var(--space-1);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
 .modal-honours {
   margin-top: var(--space-1);
   font-size: var(--step--1);
@@ -1539,7 +1593,7 @@ body:has(.band-photo[data-ready]) header.masthead {
 }
 
 .memorial-head.has-portrait:has(.memorial-medals) {
-  grid-template-columns: minmax(0, 1fr) auto 9rem;
+  grid-template-columns: 7rem minmax(0, 1fr) auto;
 }
 
 .memorial-medals {
@@ -1604,7 +1658,7 @@ body:has(.band-photo[data-ready]) header.masthead {
   }
 
   .memorial-head.has-portrait:has(.memorial-medals) {
-    grid-template-columns: minmax(0, 1fr) auto 6rem;
+    grid-template-columns: 5rem minmax(0, 1fr) auto;
   }
 
   .memorial-medals {
@@ -2063,23 +2117,30 @@ body:has(.band-photo[data-ready]) header.masthead {
   color: var(--ink-muted);
 }
 
+/* The card's portrait hangs on the unit photo's red rule, left of the name, as in the popup */
 .memorial-head.has-portrait {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 9rem;
+  grid-template-columns: 7rem minmax(0, 1fr);
   gap: var(--space-5);
   align-items: start;
 }
 
-.memorial-portrait img {
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--rule);
+.memorial-card .memorial-portrait {
+  border-color: #ffffff;
+  outline-color: var(--rule);
+  background: #e4e1db;
 }
 
-.memorial-portrait figcaption {
-  margin-top: var(--space-1);
-  font-size: 0.75rem;
-  color: var(--ink-muted);
+.memorial-card .standin-paper {
+  fill: #e4e1db;
+}
+
+.memorial-card .standin-figure {
+  fill: #a29d96;
+}
+
+.memorial-card:has(.memorial-photo) .memorial-portrait {
+  margin-top: calc(-1 * var(--space-6) - 3.5rem);
 }
 
 @media (max-width: 640px) {
@@ -2093,7 +2154,21 @@ body:has(.band-photo[data-ready]) header.masthead {
   }
 
   .memorial-head.has-portrait {
-    grid-template-columns: minmax(0, 1fr) 6rem;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+
+  .memorial-card:has(.memorial-photo) .memorial-portrait {
+    margin-top: calc(-1 * var(--space-5) - 2.5rem);
+  }
+
+  .modal-head {
+    grid-template-columns: 3.75rem minmax(0, 1fr);
+    gap: var(--space-3);
+  }
+
+  .modal-content:has(.record-photo) .modal-portrait {
+    margin-top: calc(-1 * var(--space-5) - 2rem);
   }
 }
 

@@ -198,9 +198,8 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
   }
 
   return (
-    <section className="kin" aria-labelledby="kin-title">
-      <div className="modal-source-head"><h3 id="kin-title">Saborci i zemljaci</h3></div>
-
+    <section className="kin" aria-label="Saborci i zemljaci">
+      {showUnitTree && <div className="modal-source-head"><h3>Saborci</h3></div>}
       {showUnitTree && (
         <ul className="kin-tree">
           <li className="kin-node kin-root is-path">
@@ -218,6 +217,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
         </ul>
       )}
 
+      {place && placeGroups.length > 0 && <div className="modal-source-head"><h3>Zemljaci</h3></div>}
       {place && placeGroups.length > 0 && (
         <ul className="kin-tree">
           {placeGroups.length === 1 ? (
