@@ -12,6 +12,7 @@ import {
 import { sqQuotes } from '@/app/lib/typography'
 import { contributionsFor } from '@/app/data/family'
 import { SoldierName } from '@/app/components/SoldierResults'
+import { SoldierMedals, honoursLine } from '@/app/components/Medal'
 import { ArrowLeftIcon, PrintIcon } from '@/app/components/Icons'
 
 // PDF.js only runs in the browser
@@ -69,6 +70,7 @@ export default function MemorialCard() {
   const ready = settledCrops >= pages.length
   const years = lifeYears(soldier)
   const details = recordDetails(soldier)
+  const honours = honoursLine(soldier)
   const hasPhoto = !unit.image.includes('/pdf-thumbs/')
   const link = new URL(recordPath(unit, soldier.soldier_id), window.location.origin).toString()
   // A photograph the family sent and allowed to be published
@@ -98,7 +100,9 @@ export default function MemorialCard() {
               <p className="memorial-unit">{sqQuotes(unit.name)}</p>
               <h1 className="memorial-name"><SoldierName soldier={soldier} /></h1>
               {years && <p className="memorial-years">{years}</p>}
+              {honours && <p className="memorial-honours">{honours}</p>}
             </div>
+            <SoldierMedals soldier={soldier} look="foto" className="memorial-medals" />
             {portrait && (
               <figure className="memorial-portrait">
                 <img src={`/porodica/${portrait.photo}`} alt={portrait.photoCaption ?? ''} />

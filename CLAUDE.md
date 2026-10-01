@@ -81,6 +81,10 @@ Corrections run LAST before build so they always win over automated pipeline out
 
 A unit's card photo must show a group of that unit's own soldiers, and the photo's description must name the unit. They come from the znaci.org photo gallery; `docs/UNIT_PHOTOS.md` lists each photo's source and description, plus which units have none that qualifies. When adding a unit, add it to `UNITS` in `scripts/find_unit_photos.py` and run `--candidates <key>`. It lists every photo tagged with or captioned for the unit, with contact sheets and the museum caption cards of photos that have no typed description. Then set `photo` and run `--apply <key>`. If the gallery has nothing, the unit's own book on znaci.org often has captioned photos: `--book <key> 00001/267.pdf` lists each photo with the caption printed under it (set `book=` instead of `photo`). Many site photos from before this rule turned out to be other units (`--identify` matches site images against the gallery).
 
+## Medals
+
+A soldier whose entry (or a merged entry) says "narodni heroj" ("proglašen za narodnog heroja", "Ordena narodnog heroja"; not "predložen za narodnog heroja") gets the Orden narodnog heroja, and one whose entry names the "spomenica" gets the Partizanska spomenica 1941 (`decorationsOf` in `website/app/lib/records.ts`). Search results and "Na današnji dan" show the engraving (`gravira`, drawn in the text colour); the soldier popup and the Spomen-kartica show the photograph (`foto`), hanging from the red rule under the unit photo, with "Narodni heroj · Nosilac Partizanske spomenice 1941" under the unit. The images in `website/public/medalje/` are made by `scripts/make_medal_images.py` (needs `pip install potracer`) from a Commons photo of the order (Pinki, CC BY-SA 4.0, credited on the Izvori page) and the WIPO register's image of the spomenica (public domain).
+
 ## Corrections System
 
 For fixing individual soldier records (OCR errors, merged entries, duplicates) without re-running the parser:

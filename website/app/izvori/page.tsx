@@ -46,6 +46,29 @@ export default function IzvoriPage() {
           </li>
         ))}
       </ul>
+
+      <section className="sources-credits" id="odlikovanja">
+        <h2>Slike odlikovanja</h2>
+        <p>
+          Orden narodnog heroja: fotografija{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Orden_narodnog_heroja_1.png" target="_blank" rel="noopener noreferrer">
+            Pinki, Wikimedia Commons
+          </a>
+          , licenca{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.sr-latn" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>
+          . Isečak i crtež ordena na ovom sajtu napravljeni su od te fotografije i objavljeni pod istom licencom.
+        </p>
+        <p>
+          Partizanska spomenica 1941: slika iz registra državnih znakova Svetske organizacije za
+          intelektualnu svojinu (WIPO),{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:R45-yo0357-Partizanska-spomenica-1941.png" target="_blank" rel="noopener noreferrer">
+            javno dobro
+          </a>
+          .
+        </p>
+      </section>
     </div>
   )
 }

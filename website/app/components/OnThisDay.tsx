@@ -5,6 +5,7 @@ import type { Soldier } from '@/app/lib/types'
 import { MONTHS_GENITIVE, parseDeathDay } from '@/app/lib/deathDay'
 import { sqQuotes } from '@/app/lib/typography'
 import { SoldierName } from './SoldierResults'
+import { SoldierMedals } from './Medal'
 
 // Dates of capture or wounding are not deaths
 const NOT_DEATHS = new Set(['zarobljen', 'ranjen'])
@@ -95,11 +96,14 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
             {shown.map(({ soldier, year }) => (
               <li key={soldier.soldier_id}>
                 <button type="button" className="on-this-day-item" onClick={() => onSelect(soldier)}>
-                  <span className="on-this-day-name"><SoldierName soldier={soldier} /></span>
-                  <span className="on-this-day-meta">
-                    {year}{soldier.death_place && `, ${soldier.death_place}`}
+                  <span className="on-this-day-text">
+                    <span className="on-this-day-name"><SoldierName soldier={soldier} /></span>
+                    <span className="on-this-day-meta">
+                      {year}{soldier.death_place && `, ${soldier.death_place}`}
+                    </span>
+                    {soldier.unit && <span className="on-this-day-unit">{sqQuotes(soldier.unit)}</span>}
                   </span>
-                  {soldier.unit && <span className="on-this-day-unit">{sqQuotes(soldier.unit)}</span>}
+                  <SoldierMedals soldier={soldier} look="gravira" />
                 </button>
               </li>
             ))}

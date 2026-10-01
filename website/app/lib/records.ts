@@ -74,3 +74,14 @@ export function citation(soldier: Soldier): string {
   const page = soldier.pdf_page != null ? `, str. ${soldier.pdf_page}` : ''
   return `${soldier.full_name}. ${where}${page}. Knjiga boraca, zapis ${soldier.soldier_id}.`
 }
+
+// "narodni heroj", "proglašen za narodnog heroja", "Nosilac Ordena narodnog heroja"; not "predložen za narodnog heroja"
+const HERO = /narodn(?:i|og|im)\s*heroj/i      // the OCR can lose the space ("Narodniheroj")
+const PROPOSED = /predložen\w*\s+za\s+narodnog\s+heroja/gi
+const SPOMENICA = /spomenic/i
+
+/** The decorations any of the soldier's entries names */
+export function decorationsOf(soldier: Soldier): { heroj: boolean; spomenica: boolean } {
+  const text = entriesOf(soldier).map((e) => e.additional_info ?? '').join(' ')
+  return { heroj: HERO.test(text.replace(PROPOSED, '')), spomenica: SPOMENICA.test(text) }
+}

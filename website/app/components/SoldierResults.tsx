@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
+import { SoldierMedals } from './Medal'
 
 // "1 borac", "3 borca", "5 boraca", with the matching participle
 export function countBorci(n: number) {
@@ -83,11 +84,14 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
         {shown.map((soldier) => (
           <li className="result" key={soldier.soldier_id}>
             <button type="button" className="result-button" onClick={() => onSelect(soldier)}>
-              <span className="result-name"><SoldierName soldier={soldier} /></span>
-              {soldier.additional_info && <span className="result-info">{soldier.additional_info}</span>}
-              {showUnit && soldier.unit && (
-                <span className="result-unit">{[soldier.unit, ...(soldier.also_units ?? [])].map(sqQuotes).join(' · ')}</span>
-              )}
+              <span className="result-text">
+                <span className="result-name"><SoldierName soldier={soldier} /></span>
+                {soldier.additional_info && <span className="result-info">{soldier.additional_info}</span>}
+                {showUnit && soldier.unit && (
+                  <span className="result-unit">{[soldier.unit, ...(soldier.also_units ?? [])].map(sqQuotes).join(' · ')}</span>
+                )}
+              </span>
+              <SoldierMedals soldier={soldier} look="gravira" />
             </button>
           </li>
         ))}

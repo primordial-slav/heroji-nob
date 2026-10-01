@@ -1402,6 +1402,222 @@ body:has(.band-photo[data-ready]) header.masthead {
   display: block;
 }
 
+/* ========== Medals: Orden narodnog heroja, Partizanska spomenica 1941 ========== */
+.medals {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.medal {
+  display: block;
+  flex: none;
+  line-height: 0;
+  color: var(--red-ink);
+}
+
+.medal img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+/* The engraving: its lines in the text colour */
+.medal-gravira {
+  display: block;
+  height: 100%;
+  background-color: currentColor;
+  -webkit-mask: var(--src) center / contain no-repeat;
+  mask: var(--src) center / contain no-repeat;
+}
+
+/* Search results: the medal stands at the right of the entry */
+.result-text {
+  display: block;
+}
+
+.result-button:has(.medals) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: var(--space-5);
+  align-items: center;
+}
+
+.result-button .medals {
+  align-items: center;
+}
+
+.result-button .medal-heroj {
+  height: 3.1rem;
+}
+
+.result-button .medal-spomenica {
+  height: 2.1rem;
+}
+
+/* "Na današnji dan": the same, beside the name */
+.on-this-day-text {
+  display: grid;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.on-this-day-item:has(.medals) {
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: var(--space-4);
+  align-items: center;
+}
+
+.on-this-day-item .medals {
+  align-items: center;
+}
+
+.on-this-day-item .medal-heroj {
+  height: 2.75rem;
+}
+
+.on-this-day-item .medal-spomenica {
+  height: 1.9rem;
+}
+
+/* The popup: the medal hangs from the red rule under the unit photo,
+   or without a photo from the top rule, clear of the close button */
+.modal-medals {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: calc(var(--space-3) + 2.5rem + var(--space-2));
+}
+
+.modal-content:has(.record-photo) .modal-medals {
+  top: 6.5rem;
+  right: var(--space-6);
+}
+
+.modal-medals .medal-heroj {
+  height: 4.75rem;
+}
+
+.modal-medals .medal-spomenica {
+  height: 2.75rem;
+  margin-top: var(--space-4);
+}
+
+/* Room for the medals beside the name */
+.modal-content:has(.modal-medals) :is(.modal-title, .modal-unit, .modal-honours) {
+  padding-right: 5.75rem;
+}
+
+.modal-content:has(.modal-medals .medal-spomenica + .medal-heroj) :is(.modal-title, .modal-unit, .modal-honours) {
+  padding-right: 9rem;
+}
+
+.modal-content:has(.record-photo):has(.modal-medals) :is(.modal-title, .modal-unit, .modal-honours) {
+  padding-right: 3.75rem;
+}
+
+.modal-content:has(.record-photo):has(.modal-medals .medal-spomenica + .medal-heroj) :is(.modal-title, .modal-unit, .modal-honours) {
+  padding-right: 7rem;
+}
+
+.modal-honours {
+  margin-top: var(--space-1);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--red-ink);
+}
+
+/* The Spomen-kartica: the medal hangs from the photo's red rule, beside the name */
+.memorial-head:has(.memorial-medals) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.memorial-head.has-portrait:has(.memorial-medals) {
+  grid-template-columns: minmax(0, 1fr) auto 9rem;
+}
+
+.memorial-medals {
+  margin-top: calc(-1 * var(--space-6));
+}
+
+.memorial-medals .medal-heroj {
+  height: 7rem;
+}
+
+.memorial-medals .medal-spomenica {
+  height: 3.75rem;
+  margin-top: var(--space-5);
+}
+
+.memorial-honours {
+  margin-top: var(--space-2);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--red);
+}
+
+/* Izvori: where the medal pictures come from */
+.sources-credits {
+  margin-top: var(--space-7);
+  max-width: 68ch;
+  font-size: var(--step--1);
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.sources-credits h2 {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.sources-credits p + p {
+  margin-top: var(--space-2);
+}
+
+.sources-credits a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+@media (max-width: 640px) {
+  .modal-content:has(.record-photo) .modal-medals {
+    top: 5.5rem;
+    right: var(--space-4);
+  }
+
+  .modal-medals .medal-heroj {
+    height: 4rem;
+  }
+
+  .modal-medals .medal-spomenica {
+    height: 2.25rem;
+    margin-top: var(--space-3);
+  }
+
+  .memorial-head.has-portrait:has(.memorial-medals) {
+    grid-template-columns: minmax(0, 1fr) auto 6rem;
+  }
+
+  .memorial-medals {
+    margin-top: calc(-1 * var(--space-5));
+  }
+
+  .memorial-medals .medal-heroj {
+    height: 5rem;
+  }
+
+  .memorial-medals .medal-spomenica {
+    height: 2.75rem;
+    margin-top: var(--space-4);
+  }
+}
+
 /* ========== Record actions (popup): share, memorial card, citation ========== */
 .record-actions {
   margin-top: var(--space-3);

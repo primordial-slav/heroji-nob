@@ -8,6 +8,7 @@ import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
 import RecordActions from './RecordActions'
+import { SoldierMedals, honoursLine } from './Medal'
 import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
@@ -94,6 +95,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   }
 
   const filled = recordDetails(soldier)
+  const honours = honoursLine(soldier)
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -115,8 +117,10 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
             <img src={unitRecord.image} alt="" />
           </div>
         )}
+        <SoldierMedals soldier={soldier} look="foto" className="modal-medals" />
         <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
         {allUnits.length > 0 && <p className="modal-unit">{allUnits.map(sqQuotes).join(' · ')}</p>}
+        {honours && <p className="modal-honours">{honours}</p>}
         <RecordActions soldier={soldier} unit={unitRecord} />
         <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
 
