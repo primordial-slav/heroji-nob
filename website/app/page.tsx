@@ -68,7 +68,7 @@ export default function Home() {
             />
           </div>
           <p className="finder-hint">
-            <span>Kvačice nisu obavezne. Na primer:</span>
+            <span>Na primer:</span>
             {EXAMPLES.map((example) => (
               <button key={example} type="button" onClick={() => setSearchTerm(example)}>
                 {example}
