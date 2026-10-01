@@ -65,3 +65,10 @@ export const QuoteIcon = (p: IconProps) => (
 export const CopyIcon = (p: IconProps) => (
   <Svg {...p}><rect x="8" y="8" width="12" height="12" rx="1" /><path d="M16 8V4H4v12h4" /></Svg>
 )
+// A memorial candle: marks the year and place of a death
+export const CandleIcon = (p: IconProps) => (
+  <Svg {...p}><path d="M9.5 20.5V11h5v9.5" /><path d="M12 11V9.5" /><path d="M12 8c-1.4-1.1-1.4-2.9 0-4.5 1.4 1.6 1.4 3.4 0 4.5z" /><path d="M7 20.5h10" /></Svg>
+)
+export const FilterIcon = (p: IconProps) => (
+  <Svg {...p}><path d="M4 7h9" /><path d="M19 7h1" /><circle cx="16" cy="7" r="2.5" /><path d="M4 17h1" /><path d="M11 17h9" /><circle cx="8" cy="17" r="2.5" /></Svg>
+)

@@ -60,3 +60,26 @@ export const MONTHS_GENITIVE = [
   'januara', 'februara', 'marta', 'aprila', 'maja', 'juna',
   'jula', 'avgusta', 'septembra', 'oktobra', 'novembra', 'decembra',
 ]
+
+/** "21 godina", "23 godine", "25 godina" */
+export function yearsWord(n: number): string {
+  const mod10 = n % 10
+  const mod100 = n % 100
+  return mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14) ? 'godine' : 'godina'
+}
+
+/**
+ * How old a soldier was at death: "23 godine" when the entry starts with the full birth date ("15. 9. 1921,
+ * Omsica"); with only the birth year, both ages he could have been, "22/23 godine".
+ */
+export function ageAtDeath(birthYear: string | undefined, entry: string | undefined, death: DeathDay): string | null {
+  if (!/^\d{4}$/.test(birthYear ?? '')) return null
+  const born = Number(birthYear)
+  const years = death.year - born
+  const birth = parseDeathDay((entry ?? '').slice(0, 40))
+  if (birth && birth.year === born) {
+    const exact = years - (birth.month > death.month || (birth.month === death.month && birth.day > death.day) ? 1 : 0)
+    return exact >= 12 && exact <= 75 ? `${exact} ${yearsWord(exact)}` : null
+  }
+  return years - 1 >= 12 && years <= 75 ? `${years - 1}/${years} ${yearsWord(years)}` : null
+}

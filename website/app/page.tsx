@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
 import { units } from './data/units'
 import { useFuseSearch } from './lib/useFuseSearch'
 import { fullRecord, loadSearchIndex } from './lib/searchIndex'
@@ -13,8 +13,16 @@ import BandPhoto from './components/BandPhoto'
 import OnThisDay from './components/OnThisDay'
 import UnitsByYear from './components/UnitsByYear'
 import { HOME_RESET } from './components/HomeLink'
+import SearchFilters, { FilterToggle, ShareSearch } from './components/SearchFilters'
+import { NO_FILTERS, applyFilters, filterCount, narrows, readSearch, writeSearch } from './lib/searchFilters'
 
-const EXAMPLES = ['Končar', 'Petar Abramović', 'Gračac']
+// One of each kind of search: a surname, a first name with the surname, a village, a surname in one place
+const EXAMPLES: { label: string; query: string; place?: string }[] = [
+  { label: 'Kovačević', query: 'Kovačević' },
+  { label: 'Milan Petrović', query: 'Milan Petrović' },
+  { label: 'Bruvno', query: 'Bruvno' },
+  { label: 'Petrović iz Gračaca', query: 'Petrović', place: 'Gračac' },
+]
 
 export default function Home() {
   const [allSoldiers, setAllSoldiers] = useState<Soldier[]>([])
@@ -24,11 +32,29 @@ export default function Home() {
   // The soldier whose full record is being loaded for the dialog
   const opening = useRef<Soldier | null>(null)
   const [unitLists, setUnitLists] = useState<Map<string, Soldier[]>>(new Map())
+  const [filters, setFilters] = useState(NO_FILTERS)
+  const [showFilters, setShowFilters] = useState(false)
 
   const { results, searchTerm, setSearchTerm, isSearching } = useFuseSearch(
     allSoldiers,
-    { showAllOnEmpty: false }
+    { showAllOnEmpty: false, wholeWords: filters.wholeWords }
   )
+
+  // The search and its filters are in the address, so a search can be sent as a link: read once, then kept up to date
+  const [addressRead, setAddressRead] = useState(false)
+  useEffect(() => {
+    const linked = readSearch(new URLSearchParams(window.location.search))
+    if (linked.query) setSearchTerm(linked.query)
+    setFilters(linked.filters)
+    if (filterCount(linked.filters) > 0) setShowFilters(true)
+    setAddressRead(true)
+  }, [setSearchTerm])
+  useEffect(() => {
+    if (!addressRead) return
+    const url = new URL(window.location.href)
+    writeSearch(url, searchTerm, filters)
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url)
+  }, [addressRead, searchTerm, filters])
 
   useEffect(() => {
     // Load every unit's list in the background, in its short search form; the page is usable meanwhile
@@ -65,6 +91,8 @@ export default function Home() {
     // The site name and "Početna" start the page over, also when it is already open
     const reset = () => {
       setSearchTerm('')
+      setFilters(NO_FILTERS)
+      setShowFilters(false)
       opening.current = null
       setSelectedSoldier(null)
       window.scrollTo({ top: 0 })
@@ -81,6 +109,14 @@ export default function Home() {
   }
 
   const hasQuery = searchTerm.trim().length > 0
+  // Filters narrow the search; a place, year, unit or fate alone also lists everyone who matches it
+  const shownFilters = useDeferredValue(filters)
+  const filtering = narrows(filters)
+  const listed = useMemo(
+    () => (hasQuery ? applyFilters(results, shownFilters) : narrows(shownFilters) ? applyFilters(allSoldiers, shownFilters) : []),
+    [hasQuery, results, allSoldiers, shownFilters]
+  )
+  const filtersSet = filterCount(filters) > 0
 
   return (
     <div>
@@ -100,12 +136,27 @@ export default function Home() {
               autoComplete="off"
               spellCheck={false}
             />
+            <FilterToggle
+              open={showFilters}
+              count={filterCount(filters)}
+              controls="home-filters"
+              onClick={() => setShowFilters((open) => !open)}
+            />
           </div>
+          {showFilters && <SearchFilters id="home-filters" filters={filters} onChange={setFilters} withUnit />}
           <p className="finder-hint">
             <span>Na primer:</span>
             {EXAMPLES.map((example) => (
-              <button key={example} type="button" onClick={() => setSearchTerm(example)}>
-                {example}
+              <button
+                key={example.label}
+                type="button"
+                onClick={() => {
+                  setSearchTerm(example.query)
+                  setFilters({ ...NO_FILTERS, place: example.place ?? '' })
+                  if (example.place) setShowFilters(true)
+                }}
+              >
+                {example.label}
               </button>
             ))}
           </p>
@@ -114,7 +165,7 @@ export default function Home() {
       </section>
 
       <div className="container section" id="results">
-        {hasQuery ? (
+        {hasQuery || filtering ? (
           loading ? (
             <>
               <p className="results-count">Učitavanje spiskova…</p>
@@ -127,7 +178,15 @@ export default function Home() {
               <h2>Spiskovi se nisu učitali</h2>
               <p>Proverite internet vezu i osvežite stranu.</p>
             </div>
-          ) : isSearching && results.length === 0 ? (
+          ) : listed.length === 0 && filtersSet && !(hasQuery && results.length === 0) ? (
+            <div className="empty">
+              <h2>{hasQuery ? <>Nema boraca za „{searchTerm}“ s ovim filterima</> : 'Nema boraca s ovim filterima'}</h2>
+              <p>
+                Proverite filtere ili ih{' '}
+                <button type="button" className="link-button" onClick={() => setFilters(NO_FILTERS)}>uklonite</button>.
+              </p>
+            </div>
+          ) : isSearching && listed.length === 0 ? (
             <div className="empty">
               <h2>Nema boraca za „{searchTerm}“</h2>
               <p>
@@ -137,10 +196,11 @@ export default function Home() {
             </div>
           ) : (
             <SoldierResults
-              results={results}
+              results={listed}
               showUnit
               onSelect={openSoldier}
               scrollTargetId="results"
+              actions={<ShareSearch />}
             />
           )
         ) : (

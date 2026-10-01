@@ -78,6 +78,10 @@ Corrections run LAST before build so they always win over automated pipeline out
 
 **Places index** (`website/public/relations/places.json`) groups soldiers of all units by birthplace (village + municipality, folded spellings) for the record popup's "Saborci i zemljaci" tree; its unit and same-day branches are worked out in the browser from `unit_detail` and `death_date`. It is not part of `apply_corrections.py`: after a run that adds records or changes birth places, rebuild it with `python scripts/build_relations.py --write` (dry run without `--write` prints coverage and the rules' samples). A village printed without its municipality is linked only when the unit's own records, or the corpus, give it one municipality.
 
+## Site Text
+
+Text written for the site (unit cards, headings, buttons, hints, messages) follows `VOICE.md`: ekavica, plain words, one formula for unit cards, Serbo-Croatian typography. The books' entries are shown as printed. How the site looks is in `DESIGN.md`.
+
 ## Unit Photos
 
 A unit's card photo must show a group of that unit's own soldiers, and the photo's description must name the unit. They come from the znaci.org photo gallery; `docs/UNIT_PHOTOS.md` lists each photo's source and description, plus which units have none that qualifies. When adding a unit, add it to `UNITS` in `scripts/find_unit_photos.py` and run `--candidates <key>`. It lists every photo tagged with or captioned for the unit, with contact sheets and the museum caption cards of photos that have no typed description. Then set `photo` and run `--apply <key>`. If the gallery has nothing, the unit's own book on znaci.org often has captioned photos: `--book <key> 00001/267.pdf` lists each photo with the caption printed under it (set `book=` instead of `photo`). Many site photos from before this rule turned out to be other units (`--identify` matches site images against the gallery).

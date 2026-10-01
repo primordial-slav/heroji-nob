@@ -20,20 +20,34 @@ function normalizingGetFn(
   return value != null ? String(value) : ''
 }
 
+// The name a bio gives as "zvani Muta" / "zvana Mica": families often know a soldier only by it
+const NICKNAME = /\bzvan[aio]\s+[„"»]?([A-ZČĆŽŠĐ][a-zčćžšđ'-]+)/g
+
+function nicknames(soldier: Partial<Soldier>): string[] {
+  const bios = [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)]
+  const found: string[] = []
+  for (const bio of bios) {
+    for (const m of (bio ?? '').matchAll(NICKNAME)) if (!found.includes(m[1])) found.push(m[1])
+  }
+  return found
+}
+
 // full_name puts the father's name between surname and first name ("Kokalj Anrejev Rudolf"),
 // so "Kokalj Rudolf" or "Rudolf Kokalj" would miss it. Index both two-name orders as well,
-// and the name as the soldier's other books print it ("Belić Momćilo" for Belić Momčilo).
+// the name as the soldier's other books print it ("Belić Momćilo" for Belić Momčilo),
+// and the surname with a nickname from the bio.
 function nameVariants(soldier: Partial<Soldier>): string[] {
   const last = soldier.last_name?.trim()
   const first = soldier.first_name?.trim()
   const printed = (soldier.other_sources ?? []).map((o) => o.name).filter((n): n is string => !!n)
-  if (!last || !first) return printed.map(normalizeForSearch)
-  return [`${last} ${first}`, `${first} ${last}`, ...printed].map(normalizeForSearch)
+  if (!last) return printed.map(normalizeForSearch)
+  const given = [first, ...nicknames(soldier)].filter((n): n is string => !!n)
+  return [...given.flatMap((g) => [`${last} ${g}`, `${g} ${last}`]), ...printed].map(normalizeForSearch)
 }
 
-/** The soldier's names as words: full_name, and the names other books print */
+/** The soldier's names as words: full_name, the names other books print, and nicknames */
 function nameWords(soldier: Soldier): string {
-  return [soldier.full_name, ...(soldier.other_sources ?? []).map((o) => o.name ?? '')].join(' ')
+  return [soldier.full_name, ...(soldier.other_sources ?? []).map((o) => o.name ?? ''), ...nicknames(soldier)].join(' ')
 }
 
 /** The soldier's bios as words: own, and those of other books */
@@ -104,6 +118,30 @@ function wordRank(index: SoldierIndex, idx: number, word: string): number {
   return name.includes(word) ? 3 : 4
 }
 
+/** For "whole words only": 0 = a whole word of the name, 1 = a whole word of the bio, -1 = neither */
+function wholeWordRank(index: SoldierIndex, idx: number, word: string): number {
+  const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(nameWords(index.data[idx])))
+  if (name.includes(` ${word} `)) return 0
+  const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(infoWords(index.data[idx])))
+  return info.includes(` ${word} `) ? 1 : -1
+}
+
+/** Soldiers whose name or bio has every query word as a whole word, name matches first, in data order */
+function searchWholeWords(index: SoldierIndex, words: string[]): Soldier[] {
+  const results: { idx: number; rank: number }[] = []
+  for (let idx = 0; idx < index.data.length; idx++) {
+    let rank = 0
+    for (const word of words) {
+      const r = wholeWordRank(index, idx, word)
+      if (r < 0) { rank = -1; break }
+      rank += r
+    }
+    if (rank >= 0) results.push({ idx, rank })
+  }
+  results.sort((a, b) => a.rank - b.rank || a.idx - b.idx)
+  return results.map((r) => index.data[r.idx])
+}
+
 export function createSoldierIndex(data: Soldier[]): SoldierIndex {
   const unitPos = new Map<string, number>()
   const unitMembers: number[][] = []
@@ -144,9 +182,10 @@ export function createSoldierIndex(data: Soldier[]): SoldierIndex {
  * units index has the same keys and only `unit` filled in, so its score is
  * that factor.
  */
-export function searchSoldiers(index: SoldierIndex, query: string): Soldier[] {
+export function searchSoldiers(index: SoldierIndex, query: string, wholeWords = false): Soldier[] {
   const { data, unitMembers, unitOf } = index
   const words = query.toLowerCase().split(NON_WORD).filter(Boolean)
+  if (wholeWords) return searchWholeWords(index, words)
   const rankOf = (idx: number) =>
     words.reduce((sum, word) => sum + wordRank(index, idx, word), 0)
 
@@ -180,6 +219,8 @@ const DEBOUNCE_MS = 250
 interface UseFuseSearchOptions {
   /** When true, an empty query returns all data. When false, returns empty array. */
   showAllOnEmpty: boolean
+  /** Only soldiers whose name or bio has every query word as a whole word */
+  wholeWords?: boolean
 }
 
 interface UseFuseSearchReturn {
@@ -228,8 +269,8 @@ export function useFuseSearch(
     }
 
     const normalizedQuery = normalizeForSearch(debouncedTerm.trim())
-    setResults(searchSoldiers(indexRef.current, normalizedQuery))
-  }, [debouncedTerm, data, options.showAllOnEmpty])
+    setResults(searchSoldiers(indexRef.current, normalizedQuery, options.wholeWords))
+  }, [debouncedTerm, data, options.showAllOnEmpty, options.wholeWords])
 
   const isSearching = searchTerm.trim().length > 0
 

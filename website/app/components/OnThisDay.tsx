@@ -2,10 +2,11 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import type { Soldier } from '@/app/lib/types'
-import { MONTHS_GENITIVE, parseDeathDay } from '@/app/lib/deathDay'
+import { MONTHS_GENITIVE, ageAtDeath, parseDeathDay, type DeathDay } from '@/app/lib/deathDay'
 import { sqQuotes } from '@/app/lib/typography'
 import { SoldierName } from './SoldierResults'
 import { SoldierMedals } from './Medal'
+import { CandleIcon } from './Icons'
 
 // Dates of capture or wounding are not deaths
 const NOT_DEATHS = new Set(['zarobljen', 'ranjen'])
@@ -14,6 +15,35 @@ const SHOWN = 6
 interface Fallen {
   soldier: Soldier
   year: number
+  death: DeathDay
+}
+
+// The missing say so, in the word their entry uses: the year is when they went missing
+function missingWord(soldier: Soldier): string | null {
+  if (!soldier.death_type?.startsWith('nesta')) return null
+  return /\bnestala\b/i.test(soldier.additional_info) ? 'Nestala' : 'Nestao'
+}
+
+// A candle, then the year and place of death, and how old the soldier was
+function DeathLine({ soldier, year, death }: Fallen) {
+  const missing = missingWord(soldier)
+  const age = ageAtDeath(soldier.birth_year, soldier.additional_info, death)
+  return (
+    <span className="on-this-day-meta">
+      <span className="death-mark" title={missing ? 'Godina i mesto nestanka' : 'Godina i mesto smrti'}>
+        <CandleIcon size={14} />
+        {!missing && <span className="visually-hidden">Smrt:</span>}
+      </span>
+      {missing && `${missing} `}
+      {year}{soldier.death_place && `, ${soldier.death_place}`}
+      {age && (
+        <>
+          {' · '}
+          <b>{age}</b>
+        </>
+      )}
+    </span>
+  )
 }
 
 // A small seeded shuffle, so the same people are shown all day and others tomorrow
@@ -53,7 +83,7 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
       if (!soldier.death_date || NOT_DEATHS.has(soldier.death_type ?? '')) continue
       const d = parseDeathDay(soldier.death_date)
       if (d && d.day === today.day && d.month === today.month && d.year >= 1941 && d.year <= 1945) {
-        list.push({ soldier, year: d.year })
+        list.push({ soldier, year: d.year, death: d })
       }
     }
     return list
@@ -93,20 +123,18 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
       ) : (
         <>
           <ul className={showAll ? 'on-this-day-list is-all' : 'on-this-day-list'}>
-            {shown.map(({ soldier, year }) => (
+            {shown.map((fallen) => { const { soldier } = fallen; return (
               <li key={soldier.soldier_id}>
                 <button type="button" className="on-this-day-item" onClick={() => onSelect(soldier)}>
                   <span className="on-this-day-text">
                     <span className="on-this-day-name"><SoldierName soldier={soldier} /></span>
-                    <span className="on-this-day-meta">
-                      {year}{soldier.death_place && `, ${soldier.death_place}`}
-                    </span>
+                    <DeathLine {...fallen} />
                     {soldier.unit && <span className="on-this-day-unit">{sqQuotes(soldier.unit)}</span>}
                   </span>
                   <SoldierMedals soldier={soldier} look="gravira" />
                 </button>
               </li>
-            ))}
+            ) })}
           </ul>
           {fallen.length > SHOWN && (
             <button type="button" className="on-this-day-more" onClick={() => setShowAll((v) => !v)}>

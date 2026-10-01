@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
 import Link from 'next/link'
 import { Unit } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
@@ -11,6 +11,8 @@ import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { RECORD_PARAM, findRecord } from '@/app/lib/records'
 import { photoPosition } from '@/app/data/photoFocus'
+import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
+import { NO_FILTERS, applyFilters, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
 
 interface UnitPageClientProps {
   unit: Unit
@@ -21,11 +23,32 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
   const [loading, setLoading] = useState(true)
   const [loadFailed, setLoadFailed] = useState(false)
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
+  const [filters, setFilters] = useState(NO_FILTERS)
+  const [showFilters, setShowFilters] = useState(false)
 
   const { results, searchTerm, setSearchTerm } = useFuseSearch(
     soldiers,
-    { showAllOnEmpty: true }
+    { showAllOnEmpty: true, wholeWords: filters.wholeWords }
   )
+  const shownFilters = useDeferredValue(filters)
+  const listed = useMemo(() => applyFilters(results, shownFilters, false), [results, shownFilters])
+  const filtersSet = filterCount(filters, false) > 0
+
+  // The search and its filters are in the address (next to an open record's ?borac=), so a search can be sent as a link
+  const [addressRead, setAddressRead] = useState(false)
+  useEffect(() => {
+    const linked = readSearch(new URLSearchParams(window.location.search))
+    if (linked.query) setSearchTerm(linked.query)
+    setFilters({ ...linked.filters, unit: '' })
+    if (filterCount(linked.filters, false) > 0) setShowFilters(true)
+    setAddressRead(true)
+  }, [setSearchTerm])
+  useEffect(() => {
+    if (!addressRead) return
+    const url = new URL(window.location.href)
+    writeSearch(url, searchTerm, filters, false)
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url)
+  }, [addressRead, searchTerm, filters])
 
   useEffect(() => {
     fetch(unit.dataFile)
@@ -82,7 +105,14 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
               autoComplete="off"
               spellCheck={false}
             />
+            <FilterToggle
+              open={showFilters}
+              count={filterCount(filters, false)}
+              controls="unit-filters"
+              onClick={() => setShowFilters((open) => !open)}
+            />
           </div>
+          {showFilters && <SearchFilters id="unit-filters" filters={filters} onChange={setFilters} />}
         </div>
 
         <div id="results">
@@ -95,7 +125,15 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
               <h2>Spisak se nije učitao</h2>
               <p>Proverite internet vezu i osvežite stranu.</p>
             </div>
-          ) : results.length === 0 ? (
+          ) : listed.length === 0 && filtersSet && results.length > 0 ? (
+            <div className="empty">
+              <h2>{searchTerm.trim() ? <>Nema boraca za „{searchTerm}“ s ovim filterima</> : 'Nema boraca s ovim filterima'}</h2>
+              <p>
+                Proverite filtere ili ih{' '}
+                <button type="button" className="link-button" onClick={() => setFilters(NO_FILTERS)}>uklonite</button>.
+              </p>
+            </div>
+          ) : listed.length === 0 ? (
             <div className="empty">
               <h2>Nema boraca za „{searchTerm}“ u ovoj jedinici</h2>
               <p>
@@ -105,9 +143,10 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
             </div>
           ) : (
             <SoldierResults
-              results={results}
+              results={listed}
               onSelect={setSelectedSoldier}
               scrollTargetId="results"
+              actions={(searchTerm.trim() || filtersSet) && <ShareSearch />}
             />
           )}
         </div>

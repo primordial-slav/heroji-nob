@@ -3,7 +3,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
-import { CloseIcon } from './Icons'
+import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
@@ -59,10 +59,29 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
 
-  // Close on Escape, keep the page behind from scrolling, and move focus into the dialog
+  // The entries before and after this one in the unit's list, which is in the order of the books
+  const at = unitSoldiers ? unitSoldiers.findIndex((s) => s.soldier_id === soldier.soldier_id) : -1
+  const previous = onOpen && at > 0 ? unitSoldiers![at - 1] : undefined
+  const next = onOpen && at >= 0 ? unitSoldiers![at + 1] : undefined
+  const stepRef = useRef({ previous, next, onOpen })
+  stepRef.current = { previous, next, onOpen }
+
+  // Close on Escape, step through the list with the arrow keys, keep the page behind from scrolling,
+  // and move focus into the dialog
   useEffect(() => {
     const previousFocus = document.activeElement as HTMLElement | null
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onCloseRef.current() }
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onCloseRef.current()
+      if ((e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return
+      const target = e.target
+      if (target instanceof HTMLElement && (target.isContentEditable || target.closest('input, textarea, select'))) return
+      const { previous, next, onOpen } = stepRef.current
+      const to = e.key === 'ArrowLeft' ? previous : next
+      if (to && onOpen) {
+        e.preventDefault()
+        onOpen(to)
+      }
+    }
     document.addEventListener('keydown', onKey)
     const overflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
@@ -253,6 +272,23 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
               pokušajte ponovo
             </button>.
           </p>
+        )}
+
+        {(previous || next) && (
+          <nav className="record-steps" aria-label="Susedni zapisi u spisku">
+            {previous ? (
+              <button type="button" className="record-step" onClick={() => onOpen!(previous)}>
+                <span className="record-step-label"><ChevronLeftIcon size={16} /> Prethodni</span>
+                <span className="record-step-name">{previous.full_name}</span>
+              </button>
+            ) : <span />}
+            {next && (
+              <button type="button" className="record-step record-step-next" onClick={() => onOpen!(next)}>
+                <span className="record-step-label">Sledeći <ChevronRightIcon size={16} /></span>
+                <span className="record-step-name">{next.full_name}</span>
+              </button>
+            )}
+          </nav>
         )}
       </div>
     </div>

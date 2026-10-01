@@ -187,14 +187,18 @@ Square. Cards and photographs have no radius. Inputs and buttons have a barely-t
 ### Cards / Containers
 - **Unit card:** the photograph is the card: a 4:3 black-and-white photo (slightly enlarged so scan edges stay out of frame, a gentle 1.04→1.06 zoom on hover), then name, description and the soldier count in red ink on the surface colour. No border, no shadow, no radius. A book-page image that stands in for a missing photograph is shown whole (contained), not cropped, and not greyscaled.
 
+- **Na današnji dan:** the name, then a small line candle (14px, muted ink) before the year and place of death, and the age in bold: "23 godine", or "22/23 godine" when only the birth year is known. No crosses or other religious marks.
+
 ### Inputs / Fields
 - **Search field:** white surface, 44px tall, 2px radius, search icon inside on the left, placeholder "Prezime, ime ili mesto". Inside the red band it has no border; on the unit page it has a 1px rule-strong border. Focus: 2px ink border.
+- **Filters:** "Filteri" at the end of the search field (with a small red count when any are set) opens a row of small labelled fields under it: birth year with ±, place, unit (home only), fate, and "Samo cele reči". Fields are 2.25rem tall, 2px radius; in the band, white with no border.
 
 ### Navigation
 - Site name in PT Serif bold, links "Početna" and "Izvori" in white on the band with a 2px white underline for the current page, and a three-way light/dark/system toggle (segmented, white on red).
 
 ### Record popup
 - A strip of the unit's photograph (about 6.5rem tall, black and white) with a 3px red rule under it, then the person. The scan viewer opens at the zoom where the whole highlighted entry fits the width (140% minimum on phones), scrolled to the entry, with page and zoom controls.
+- At its foot, a bar held at the window's edge names the previous and next entries of the unit's list ("Prethodni" / "Sledeći", the name in PT Serif); the arrow keys do the same.
 
 ## Do's and Don'ts
 

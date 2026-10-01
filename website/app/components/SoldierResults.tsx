@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
@@ -32,11 +32,13 @@ interface SoldierResultsProps {
   showUnit?: boolean
   onSelect: (soldier: Soldier) => void
   scrollTargetId: string
+  /** Shown beside the count, e.g. sharing the search */
+  actions?: ReactNode
 }
 
 const PAGE_SIZES = [50, 100, 200]
 
-export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId }: SoldierResultsProps) {
+export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions }: SoldierResultsProps) {
   const [page, setPage] = useState(1)
   const [perPage, setPerPage] = useState(50)
 
@@ -66,18 +68,21 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
           {count.verb} {count.text}
           {totalPages > 1 && <span> · strana {page} od {totalPages}</span>}
         </p>
-        {results.length > PAGE_SIZES[0] && (
-          <label className="per-page">
-            Po strani
-            <select
-              id="per-page"
-              value={perPage}
-              onChange={(e) => { setPerPage(Number(e.target.value)); setPage(1) }}
-            >
-              {PAGE_SIZES.map(n => <option key={n} value={n}>{n}</option>)}
-            </select>
-          </label>
-        )}
+        <div className="results-tools">
+          {actions}
+          {results.length > PAGE_SIZES[0] && (
+            <label className="per-page">
+              Po strani
+              <select
+                id="per-page"
+                value={perPage}
+                onChange={(e) => { setPerPage(Number(e.target.value)); setPage(1) }}
+              >
+                {PAGE_SIZES.map(n => <option key={n} value={n}>{n}</option>)}
+              </select>
+            </label>
+          )}
+        </div>
       </div>
 
       <ul className="result-list">

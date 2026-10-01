@@ -6,17 +6,9 @@ import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { cardPath, citation, recordPath } from '@/app/lib/records'
 import { CopyIcon, PrintIcon, QuoteIcon, ShareIcon } from './Icons'
+import { copyText as copy, shareLink } from '@/app/lib/share'
 
 type CopyState = 'idle' | 'copied' | 'failed'
-
-async function copy(text: string): Promise<boolean> {
-  try {
-    await navigator.clipboard.writeText(text)
-    return true
-  } catch {
-    return false
-  }
-}
 
 // Share the record's own link, open its memorial card, or copy a line to quote it by
 export default function RecordActions({ soldier, unit }: { soldier: Soldier; unit?: Unit }) {
@@ -30,16 +22,8 @@ export default function RecordActions({ soldier, unit }: { soldier: Soldier; uni
   const quote = `${citation(soldier)} ${link}`
 
   const share = async () => {
-    // Phones get their own share sheet (Viber, WhatsApp, mail); elsewhere the link is copied
-    if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
-      try {
-        await navigator.share({ title: `${soldier.full_name} · Knjiga boraca`, url: link })
-        return
-      } catch (e) {
-        if ((e as Error).name === 'AbortError') return
-      }
-    }
-    setLinkState((await copy(link)) ? 'copied' : 'failed')
+    const result = await shareLink(link, `${soldier.full_name} · Knjiga boraca`)
+    if (result === 'copied' || result === 'failed') setLinkState(result)
   }
 
   return (

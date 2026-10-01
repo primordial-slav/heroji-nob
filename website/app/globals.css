@@ -2494,3 +2494,301 @@ button.kin-row:not(:disabled):hover .kin-label {
   }
 }
 
+/* ========== Search filters, search links, stepping through records ========== */
+
+/* "Filteri" at the end of a search field */
+.finder-field:has(.filter-toggle) .search-input {
+  padding-right: 7.25rem;
+}
+
+.filter-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.3125rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  height: 2rem;
+  padding: 0 0.625rem;
+  background: transparent;
+  border: 0;
+  border-radius: 2px;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+
+.filter-toggle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.375rem;
+  bottom: 0.375rem;
+  border-left: 1px solid var(--rule);
+}
+
+.filter-toggle:hover,
+.filter-toggle[aria-expanded="true"] {
+  color: var(--ink);
+}
+
+.filter-toggle:hover {
+  background: var(--surface-sunk);
+}
+
+.masthead .filter-toggle:focus-visible {
+  outline-color: var(--ink);
+}
+
+.filter-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.125rem;
+  height: 1.125rem;
+  padding: 0 0.25rem;
+  background: var(--red);
+  color: var(--on-red);
+  border-radius: 2px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* The filters, under the field */
+.filters {
+  margin-top: var(--space-3);
+  max-width: 34rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3) var(--space-4);
+  font-size: var(--step--1);
+}
+
+.finder > .filters {
+  position: relative;
+  z-index: 1;
+}
+
+.filter {
+  display: grid;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.filters .filter label,
+.filter-end {
+  color: var(--ink-muted);
+}
+
+/* The unit page's field label rule (bold, on its own line) is not for these */
+.filters label {
+  margin: 0;
+  font-weight: 400;
+}
+
+.finder .filter label,
+.finder .filter-end {
+  color: var(--on-red);
+}
+
+.filter input,
+.filter select {
+  height: 2.25rem;
+  padding: 0 var(--space-2);
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  font-size: var(--step--1);
+}
+
+.finder .filter input,
+.finder .filter select {
+  border-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.filter input:focus,
+.filter select:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.filter input::placeholder {
+  color: var(--ink-muted);
+  opacity: 1;
+}
+
+.filter-pair {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.filter-year input {
+  width: 4.25rem;
+}
+
+.filter-place {
+  flex: 1 1 10rem;
+}
+
+.filter-unit {
+  flex: 1 1 15rem;
+}
+
+.filter-place input,
+.filter-unit select {
+  width: 100%;
+}
+
+.filter-end {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: 2.25rem;
+}
+
+.filters .filter-check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+}
+
+.filter-check input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: var(--red);
+}
+
+.finder .filter-check input {
+  accent-color: var(--surface);
+}
+
+.filter-clear,
+.link-button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+}
+
+.link-button {
+  color: var(--red-ink);
+}
+
+/* Beside the count: send the search as a link */
+.results-tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+}
+
+.share-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+
+.share-search:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+/* Prethodni / Sledeći: the neighbouring entries of the list, kept at the foot of the window while reading */
+.record-steps {
+  position: sticky;
+  /* to the window's edge, past the padding of the scrolling overlay */
+  bottom: calc(-1 * var(--space-6));
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin: var(--space-6) calc(-1 * var(--space-6)) calc(-1 * var(--space-6));
+  padding: var(--space-2) var(--space-4);
+  background: var(--ground);
+  border-top: 1px solid var(--rule);
+}
+
+.record-step {
+  display: grid;
+  gap: 0.0625rem;
+  min-width: 0;
+  max-width: 50%;
+  padding: var(--space-1) var(--space-2);
+  background: none;
+  border: 0;
+  border-radius: 2px;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.record-step:hover {
+  background: var(--surface-sunk);
+}
+
+.record-step-next {
+  justify-items: end;
+  text-align: right;
+}
+
+.record-step-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+.record-step-name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-name);
+  font-size: var(--step-0);
+}
+
+/* Na današnji dan: a small candle before the year and place of death, and the age in bold */
+.death-mark {
+  display: inline-block;
+  margin-right: 0.3125rem;
+  color: var(--ink-muted);
+  vertical-align: -0.125rem;
+  line-height: 0;
+}
+
+.on-this-day-meta b {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  /* 16px keeps phones from zooming in on the field */
+  .filter input,
+  .filter select {
+    font-size: 1rem;
+  }
+
+  .record-steps {
+    bottom: 0;
+    margin: var(--space-5) calc(-1 * var(--space-4)) calc(-1 * var(--space-5));
+    padding-inline: var(--space-2);
+  }
+}
