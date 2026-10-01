@@ -117,6 +117,12 @@ SPECIAL_UNITS = [
     (re.compile(r'\bintendantur(?:a|e|i)\b', re.I), 'intendantura'),
 ]
 
+# the soldier's duty printed after where he fell, to the end (8. krajiška ends every bio so); all lowercase,
+# so a name glued on after it (5. kozaračka, 21. slavonska) keeps the clause from passing for a place
+DUTY_AFTER_PLACE = re.compile(
+    r',\s*(?:[a-z]\s+)?(?:(?:politi\w+|zamjenik\w*|zamenik\w*|pomoćnik\w*|pompćnik\w*)\s+)*'
+    r'(?:komandir\w*|komandant\w*|komesar\w*|vodnik|desetar|ekonom|četn\w+\s+bolničar\w*|bolničar\w*|borac|kurir|'
+    r'intendant\w*|\w*mitraljez\w*)\b[^A-ZČĆŽŠĐ]*$')
 PREP = r'(?:u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izmedu|prema|pred|za|iz|na putu za|u selu|u s\.|s\.|selo|u rejonu|rejon)'
 STOP_PLACE = re.compile(r'^(?:u NOB|u NOV|u NOVJ|u NOR|u brigadi|u \d|član|stupio|stupila|borac od|od \d|od [a-z]|sa |iz |zvan[ai]|ili |'
                         r'drugih|nema |ostali|nepoznat|\(drugih|\(nema|\(nedostaju)', re.I)
@@ -287,6 +293,9 @@ class Extractor:
         clause = re.sub(r'\s*\((?:nema|drugih|nedostaju|ostali)[^)]*\)?', '', clause)
         clause = re.sub(rf'^[{U}]\.,\s*', '', clause.strip())                # "S., Soljani" (OCR)
         clause = re.sub(r'^[\s,]*(?:od|usled|uslijed|zbog)\s+[^,]*?(?=,|\s(?:u|na|kod|v|pri)\s|$)', '', clause.strip())   # cause of death
+        place = DUTY_AFTER_PLACE.sub('', clause)                            # "s. Topola kod Banja Luke, ekonom čete"
+        if not re.search(r'\b[A-ZČĆŽŠĐ]{3,}\b', place):                     # unless the next entry's NAME is glued on
+            clause = place
         clause = clean_segment(re.sub(r'\s+', ' ', clause))
         if mesto:
             out['death_place'] = clean_segment(mesto.group(1))
