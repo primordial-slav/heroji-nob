@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { pdfjs } from 'react-pdf'
 import type { SoldierSource } from '@/app/lib/types'
 import { highlightBox } from '@/app/lib/entryBox'
+import { useT } from '@/app/i18n/LangContext'
 
 pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
 
@@ -16,6 +17,7 @@ const PAD_Y = -1.5
 
 // The entry cut out of its scanned book page, as an image
 export default function EntryCrop({ entry, onSettled }: { entry: SoldierSource; onSettled?: () => void }) {
+  const t = useT().crop
   const [src, setSrc] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
 
@@ -54,7 +56,7 @@ export default function EntryCrop({ entry, onSettled }: { entry: SoldierSource; 
     }
   }, [entry, onSettled])
 
-  if (failed) return <p className="entry-crop-missing">Isečak iz knjige ne može da se prikaže.</p>
-  if (!src) return <div className="entry-crop-loading" aria-label="Učitavanje isečka iz knjige" />
-  return <img className="entry-crop" src={src} alt="Zapis kako je odštampan u knjizi" />
+  if (failed) return <p className="entry-crop-missing">{t.failed}</p>
+  if (!src) return <div className="entry-crop-loading" aria-label={t.loading} />
+  return <img className="entry-crop" src={src} alt={t.alt} />
 }

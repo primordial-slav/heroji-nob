@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import index from '@/app/data/portrait-index.json'
 import { WARTIME_PORTRAITS } from '@/app/data/wartimePortraits'
 import type { Soldier } from '@/app/lib/types'
+import { useT } from '@/app/i18n/LangContext'
 
 // Wartime portraits drifting slowly up the empty margins beside the home page column, on screens wide enough to
 // have margins (globals.css hides them below 84rem). The order changes every day. Pointing at a face or focusing
@@ -50,6 +51,7 @@ interface PortraitRailsProps {
 }
 
 export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) {
+  const t = useT()
   const [day, setDay] = useState<string | null>(null)
   useEffect(() => setDay(new Date().toDateString()), [])
 
@@ -73,7 +75,7 @@ export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) 
 
   const sides = [faces.filter((_, i) => i % 2 === 0), faces.filter((_, i) => i % 2 === 1)]
   return (
-    <aside className="rails" aria-label="Borci na fotografijama iz rata">
+    <aside className="rails" aria-label={t.home.rails}>
       {sides.map((side, i) => (
         <div key={i} className="rail-col">
           <div className="rail-window">

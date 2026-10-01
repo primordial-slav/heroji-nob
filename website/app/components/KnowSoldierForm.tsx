@@ -6,6 +6,8 @@ import type { Unit } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import { shrinkPhoto } from '@/app/lib/images'
 import { wasDelivered } from '@/app/lib/formsubmit'
+import { useLang, useT } from '@/app/i18n/LangContext'
+import { LANG_NAMES } from '@/app/i18n/config'
 
 const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
 // FormSubmit's AJAX endpoint drops attachments; its regular endpoint keeps them but answers with a page we
@@ -18,7 +20,10 @@ type Status = 'closed' | 'open' | 'sending' | 'sent' | 'error'
 
 // "I know this soldier": a family member or researcher sends what they know, optionally with a photograph.
 // It arrives by email; approved items are added by hand to app/data/family.ts (docs/FAMILY_CONTRIBUTIONS.md).
+// The form speaks the page's language; the email to us stays in Serbo-Croatian and says which language was used.
 export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; unit?: Unit }) {
+  const lang = useLang()
+  const t = useT().know
   const [status, setStatus] = useState<Status>('closed')
   const [relation, setRelation] = useState('')
   const [story, setStory] = useState('')
@@ -40,7 +45,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       return
     }
     if (!file.type.startsWith('image/')) {
-      setPhotoError('Izaberite fotografiju (JPG ili PNG).')
+      setPhotoError(t.notImage)
       return
     }
     setPhoto(file)
@@ -49,7 +54,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   const send = async () => {
     if (!canSend) return
     setStatus('sending')
-    const link = unit ? new URL(recordPath(unit, soldier.soldier_id), window.location.origin).toString() : ''
+    const link = unit ? new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString() : ''
     const fields: Record<string, string> = {
       _subject: `Znam ovog borca: ${soldier.full_name} (${soldier.soldier_id})`,
       _template: 'table',
@@ -57,6 +62,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       ID: soldier.soldier_id,
       Jedinica: unit?.name ?? soldier.unit ?? '',
       Link: link,
+      Jezik: LANG_NAMES[lang].name,
       'Veza sa borcem': relation,
       'Šta zna': story,
       'Ime pošiljaoca': name,
@@ -68,7 +74,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
     try {
       const blob = photo ? await shrinkPhoto(photo) : null
       if (photo && blob && blob.size > MAX_PHOTO_BYTES) {
-        setPhotoError('Fotografija je prevelika. Pošaljite manju (do 9 MB).')
+        setPhotoError(t.tooLarge)
         setStatus('open')
         return
       }
@@ -111,9 +117,9 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   if (status === 'closed') {
     return (
       <div className="know-soldier">
-        <p>Imate fotografiju ili znate nešto o ovom borcu?</p>
+        <p>{t.prompt}</p>
         <button type="button" className="btn btn-secondary" onClick={() => setStatus('open')}>
-          Znam ovog borca
+          {t.open}
         </button>
       </div>
     )
@@ -123,9 +129,9 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
     return (
       <div className="know-soldier" role="status">
         <p className="know-soldier-done">
-          Hvala vam. Pogledaćemo ono što ste poslali.
-          {email.trim() && ' Ako nešto ne bude jasno, javićemo vam se.'}
-          {photoLost && ' Fotografija nije stigla zbog prekida veze; pošaljite je, molimo, još jednom.'}
+          {t.thanks}
+          {email.trim() && ` ${t.willReply}`}
+          {photoLost && ` ${t.photoLost}`}
         </p>
       </div>
     )
@@ -136,28 +142,28 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       className="know-soldier know-soldier-form"
       onSubmit={(e) => { e.preventDefault(); send() }}
     >
-      <h3>Znam ovog borca</h3>
+      <h3>{t.title}</h3>
 
-      <label htmlFor="know-relation">Ko ste vi ovom borcu?</label>
+      <label htmlFor="know-relation">{t.relation}</label>
       <input
         id="know-relation"
         value={relation}
         onChange={(e) => setRelation(e.target.value)}
-        placeholder="Na primer: unuka, sin, rođak, komšija"
+        placeholder={t.relationHint}
         maxLength={120}
       />
 
-      <label htmlFor="know-story">Šta znate o ovom borcu</label>
+      <label htmlFor="know-story">{t.story}</label>
       <textarea
         id="know-story"
         value={story}
         onChange={(e) => setStory(e.target.value)}
         rows={4}
         maxLength={4000}
-        placeholder="Šta porodica pamti, gde je grob, šta je bilo posle rata, ili šta u zapisu nije tačno."
+        placeholder={t.storyHint}
       />
 
-      <span className="know-label">Fotografija <span className="know-optional">(nije obavezno)</span></span>
+      <span className="know-label">{t.photo} <span className="know-optional">{t.optional}</span></span>
       <div className="know-file">
         <input
           ref={fileInput}
@@ -168,12 +174,12 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
           onChange={(e) => choosePhoto(e.target.files?.[0] ?? null)}
         />
         <label htmlFor="know-photo" className="btn btn-secondary">
-          {photo ? 'Izaberite drugu' : 'Izaberite fotografiju'}
+          {photo ? t.chooseOther : t.choosePhoto}
         </label>
         {photo && (
           <>
             <span className="know-file-name">{photo.name}</span>
-            <button type="button" className="report-error-link" onClick={() => choosePhoto(null)}>Ukloni</button>
+            <button type="button" className="report-error-link" onClick={() => choosePhoto(null)}>{t.remove}</button>
           </>
         )}
       </div>
@@ -181,11 +187,11 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
 
       <div className="know-pair">
         <div>
-          <label htmlFor="know-name">Vaše ime i prezime</label>
+          <label htmlFor="know-name">{t.name}</label>
           <input id="know-name" value={name} onChange={(e) => setName(e.target.value)} maxLength={120} autoComplete="name" />
         </div>
         <div>
-          <label htmlFor="know-email">Email <span className="know-optional">(nije obavezno)</span></label>
+          <label htmlFor="know-email">{t.email} <span className="know-optional">{t.optional}</span></label>
           <input
             id="know-email"
             type="email"
@@ -196,23 +202,23 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
           />
         </div>
       </div>
-      <p className="know-hint">Email nam služi samo da vam se javimo. Ne objavljujemo ga.</p>
+      <p className="know-hint">{t.emailHint}</p>
 
       <label className="know-check">
         <input type="checkbox" checked={mayPublish} onChange={(e) => setMayPublish(e.target.checked)} />
-        Dozvoljavam da se fotografija i tekst objave uz ovaj zapis, sa mojim imenom.
+        {t.consent}
       </label>
 
       {status === 'error' && (
-        <p className="know-error">Nije poslato. Proverite vezu sa internetom i pokušajte ponovo.</p>
+        <p className="know-error">{t.error}</p>
       )}
 
       <div className="report-actions">
         <button type="submit" className="btn btn-primary" disabled={!canSend || status === 'sending'}>
-          {status === 'sending' ? 'Šalje se…' : 'Pošalji'}
+          {status === 'sending' ? t.sending : t.send}
         </button>
         <button type="button" className="btn btn-secondary" onClick={() => setStatus('closed')}>
-          Otkaži
+          {t.cancel}
         </button>
       </div>
     </form>

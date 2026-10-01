@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { units } from '@/app/data/units'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
+import { useT } from '@/app/i18n/LangContext'
 
 export interface GalleryItem {
   id: string
@@ -24,6 +25,7 @@ function shuffled<T>(items: T[]): T[] {
 }
 
 export default function GalleryClient({ items }: { items: GalleryItem[] }) {
+  const t = useT().gallery
   // shuffled in the browser only: the page is built once, and the server's order would show for a moment
   const [order, setOrder] = useState<GalleryItem[] | null>(null)
   const [selected, setSelected] = useState<Soldier | null>(null)
@@ -46,7 +48,7 @@ export default function GalleryClient({ items }: { items: GalleryItem[] }) {
 
   return (
     <>
-      <ul className="gallery-grid" aria-label={`Fotografije boraca (${items.length})`}>
+      <ul className="gallery-grid" aria-label={t.label(items.length)}>
         {(order ?? []).map((item) => (
           <li key={item.id}>
             <button type="button" className="gallery-tile" onClick={() => open(item)} title={item.name}>

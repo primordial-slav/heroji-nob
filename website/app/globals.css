@@ -269,6 +269,68 @@ html {
   color: var(--red);
 }
 
+/* Language switch: the theme toggle's segments, with each language's code (its name in the title) */
+
+.lang-bar {
+  background: var(--red-deep);
+  color: var(--on-red-muted);
+  font-size: 0.8125rem;
+}
+
+.lang-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  list-style: none;
+  padding-block: var(--space-1);
+}
+
+.lang-bar a {
+  display: inline-block;
+  padding-block: 0.125rem;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.lang-bar a:hover {
+  color: var(--on-red);
+  border-bottom-color: currentColor;
+}
+
+.lang-bar a[aria-current] {
+  color: var(--on-red);
+  font-weight: 600;
+  border-bottom-color: currentColor;
+}
+
+.lang-bar :focus-visible {
+  outline-color: var(--on-red);
+}
+
+.lang-code {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .lang-bar ul {
+    column-gap: var(--space-3);
+  }
+}
+
+/* Where the four names don't fit on one line, the codes */
+@media (max-width: 369px) {
+  .lang-name {
+    display: none;
+  }
+
+  .lang-code {
+    display: inline;
+  }
+}
+
 /* Home band: one brigade photograph behind the heading and the search, multiplied into the red
    so nothing is lighter than the red and the white text keeps its contrast */
 section.masthead {
@@ -1338,7 +1400,7 @@ body:has(.band-photo[data-ready]) header.masthead {
 
   .nav {
     order: 3;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-inline: calc(-1 * var(--space-3));
     width: calc(100% + 2 * var(--space-3));
   }
@@ -2064,6 +2126,7 @@ body:has(.band-photo[data-ready]) header.masthead {
   }
 
   body:has(.memorial-card) header.masthead,
+  .lang-bar,
   .card-toolbar {
     display: none !important;
   }

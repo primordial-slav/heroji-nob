@@ -4,7 +4,6 @@ import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
@@ -17,15 +16,26 @@ import { contributionsFor } from '@/app/data/family'
 import RelationsTree from './RelationsTree'
 import SoldierPortrait from './SoldierPortrait'
 import { portraitFor } from '@/app/data/portraits'
+import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
+import { LANG_NAMES, type Lang } from '@/app/i18n/config'
+import { quoteMarks } from '@/app/i18n/format'
+import { titlePart } from '@/app/i18n/sources'
+import { unitName as localUnitName } from '@/app/i18n/units'
+import RichText from '@/app/i18n/RichText'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
 
-/** A short name for the book switch: "spisak poginulih" from "Brodska brigada — spisak poginulih" */
-function shortTitle(entry: SoldierSource): string {
-  const title = sourceTitle(entry)
-  const part = title.includes(' — ') ? title.split(' — ').pop()! : title
+/** A short name for the book switch: "Spisak poginulih" from "Brodska brigada — spisak poginulih", in English "The fallen" */
+function shortTitle(entry: SoldierSource, lang: Lang): string {
+  const part = titlePart(sourceTitle(entry), lang)
   return part.charAt(0).toUpperCase() + part.slice(1)
+}
+
+/** A unit's name (as the records give it, in Serbo-Croatian) in the page's language */
+function shownUnitName(name: string, lang: Lang): string {
+  const unit = unitByName(name)
+  return unit ? localUnitName(unit, lang) : quoteMarks(lang, name)
 }
 
 interface SoldierModalProps {
@@ -38,15 +48,18 @@ interface SoldierModalProps {
 }
 
 export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, onClose }: SoldierModalProps) {
+  const lang = useLang()
+  const t = useT()
+  const to = useLocalePath()
   // The soldier's own entry, then the same soldier's entries in the unit's other books
   const entries: SoldierSource[] = entriesOf(soldier)
   const pages = entries.filter(hasPage)
   const [shownPage, setShownPage] = useState(0)
   const page = pages[Math.min(shownPage, pages.length - 1)]
-  const pageLabels = pages.map(shortTitle)
+  const pageLabels = pages.map((e) => shortTitle(e, lang))
   const switchLabels = pages.map((e, i) =>
-    pageLabels.indexOf(pageLabels[i]) !== pageLabels.lastIndexOf(pageLabels[i]) ? `${pageLabels[i]}, str. ${e.pdf_page}` : pageLabels[i])
-  const sourceHref = page?.pdf_file ? `/izvori#${page.pdf_file.replace('.pdf', '')}` : undefined
+    pageLabels.indexOf(pageLabels[i]) !== pageLabels.lastIndexOf(pageLabels[i]) ? `${pageLabels[i]}, ${t.record.page(e.pdf_page!)}` : pageLabels[i])
+  const sourceHref = page?.pdf_file ? to(`/izvori#${page.pdf_file.replace('.pdf', '')}`) : undefined
   const unit = unitName || soldier.unit
   const unitRecord = unitByName(unit)
   const portrait = portraitFor(soldier)
@@ -108,6 +121,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
           Borac: soldier.full_name,
           ID: soldier.soldier_id,
           Jedinica: unit || '',
+          Jezik: LANG_NAMES[lang].name,
           'Opis greške': reportText,
         }),
       })
@@ -117,8 +131,8 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     }
   }
 
-  const filled = recordDetails(soldier)
-  const honours = honoursLine(soldier)
+  const filled = recordDetails(soldier, t)
+  const honours = honoursLine(soldier, t)
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -131,7 +145,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         tabIndex={-1}
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close" onClick={onClose} aria-label="Zatvori">
+        <button className="modal-close" onClick={onClose} aria-label={t.record.close}>
           <CloseIcon size={22} />
         </button>
 
@@ -145,13 +159,13 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
           <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" />
           <div>
             <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
-            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map(sqQuotes).join(' · ')}</p>}
+            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => shownUnitName(u, lang)).join(' · ')}</p>}
             {honours && <p className="modal-honours">{honours}</p>}
             {portrait && (
               <p className="modal-portrait-credit">
-                Fotografija: {portrait.href
-                  ? <a href={portrait.href} target="_blank" rel="noopener noreferrer">{portrait.credit}</a>
-                  : portrait.credit}
+                {t.record.photo} {portrait.href
+                  ? <a href={portrait.href} target="_blank" rel="noopener noreferrer">{t.record.photoCredit(portrait.credit)}</a>
+                  : t.record.photoCredit(portrait.credit)}
               </p>
             )}
           </div>
@@ -164,14 +178,14 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         )}
 
         {entries.length > 1 && (
-          <ol className="modal-sources" aria-label="Zapisi u knjigama">
+          <ol className="modal-sources" aria-label={t.record.entries}>
             {entries.map((e, i) => (
               <li key={i} className="modal-source-entry">
                 <p className="modal-source-label">
-                  {e.unit_file && unitOf(e) && <>{sqQuotes(unitOf(e)!)}: </>}
+                  {e.unit_file && unitOf(e) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
                   {sourceTitle(e)}
-                  {e.pdf_page != null && `, str. ${e.pdf_page}`}
-                  {e.name && e.name !== soldier.full_name && <>. Ime u knjizi: {e.name}</>}
+                  {e.pdf_page != null && `, ${t.record.page(e.pdf_page)}`}
+                  {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
                 </p>
                 {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
               </li>
@@ -197,9 +211,9 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         {page && (
           <>
             <div className="modal-source-head">
-              <h3>Reference</h3>
+              <h3>{t.record.references}</h3>
               {pages.length > 1 && (
-                <div className="modal-source-switch" role="group" aria-label="Knjiga">
+                <div className="modal-source-switch" role="group" aria-label={t.record.book}>
                   {pages.map((e, i) => (
                     <button
                       key={i}
@@ -213,7 +227,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
                 </div>
               )}
             </div>
-            <Suspense fallback={<div className="pdf-viewer-loading">Učitavanje strane…</div>}>
+            <Suspense fallback={<div className="pdf-viewer-loading">{t.record.loadingPage}</div>}>
               <PdfViewer
                 key={`${page.pdf_file}#${page.pdf_page}#${page.pdf_y}`}
                 pdfFile={`/pdfs/${page.pdf_file}`}
@@ -233,11 +247,13 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         {!page && soldier.source_url && (
           <>
             <div className="modal-source-head">
-              <h3>Izvor</h3>
+              <h3>{t.record.source}</h3>
             </div>
             <p className="modal-source-note">
-              Za ovaj spisak nema skenirane knjige: objavljen je kao tekst na{' '}
-              <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">znaci.org</a>.
+              <RichText
+                text={t.record.noScan}
+                render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>}
+              />
             </p>
           </>
         )}
@@ -246,17 +262,17 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
         {!showReportForm && reportStatus === 'idle' && (
           <button className="report-error-link" onClick={() => setShowReportForm(true)}>
-            Vidite grešku u ovom zapisu? Prijavite je
+            {t.report.open}
           </button>
         )}
 
         {showReportForm && reportStatus === 'idle' && (
           <div className="report-form">
-            <label htmlFor="report-text">Šta nije tačno?</label>
+            <label htmlFor="report-text">{t.report.label}</label>
             <textarea
               id="report-text"
               className="report-textarea"
-              placeholder="Na primer: prezime je u knjizi Adžić, a ovde piše Adzić."
+              placeholder={t.report.hint}
               value={reportText}
               onChange={(e) => setReportText(e.target.value)}
               rows={3}
@@ -264,42 +280,46 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
             />
             <div className="report-actions">
               <button className="btn btn-primary" onClick={handleReport} disabled={!reportText.trim()}>
-                Pošalji prijavu
+                {t.report.send}
               </button>
               <button
                 className="btn btn-secondary"
                 onClick={() => { setShowReportForm(false); setReportText('') }}
               >
-                Otkaži
+                {t.report.cancel}
               </button>
             </div>
           </div>
         )}
 
-        {reportStatus === 'sending' && <p className="report-status">Slanje…</p>}
+        {reportStatus === 'sending' && <p className="report-status">{t.report.sending}</p>}
         {reportStatus === 'sent' && (
-          <p className="report-status report-success">Hvala, prijava je poslata. Proverićemo zapis u knjizi.</p>
+          <p className="report-status report-success">{t.report.sent}</p>
         )}
         {reportStatus === 'error' && (
           <p className="report-status report-error-msg">
-            Prijava nije poslata. Proverite internet vezu i{' '}
-            <button className="report-error-link" style={{ marginTop: 0 }} onClick={() => setReportStatus('idle')}>
-              pokušajte ponovo
-            </button>.
+            <RichText
+              text={t.report.failed}
+              render={(part) => (
+                <button className="report-error-link" style={{ marginTop: 0 }} onClick={() => setReportStatus('idle')}>
+                  {part}
+                </button>
+              )}
+            />
           </p>
         )}
 
         {(previous || next) && (
-          <nav className="record-steps" aria-label="Susedni zapisi u spisku">
+          <nav className="record-steps" aria-label={t.record.steps}>
             {previous ? (
               <button type="button" className="record-step" onClick={() => onOpen!(previous)}>
-                <span className="record-step-label"><ChevronLeftIcon size={16} /> Prethodni</span>
+                <span className="record-step-label"><ChevronLeftIcon size={16} /> {t.record.previous}</span>
                 <span className="record-step-name">{previous.full_name}</span>
               </button>
             ) : <span />}
             {next && (
               <button type="button" className="record-step record-step-next" onClick={() => onOpen!(next)}>
-                <span className="record-step-label">Sledeći <ChevronRightIcon size={16} /></span>
+                <span className="record-step-label">{t.record.next} <ChevronRightIcon size={16} /></span>
                 <span className="record-step-name">{next.full_name}</span>
               </button>
             )}

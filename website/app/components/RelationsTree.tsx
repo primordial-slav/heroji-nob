@@ -7,17 +7,22 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import {
-  count, deathDay, formatDay, lifeSpan, loadPlaces, subunitPath, unitIndex, type Place, type PlaceMember,
+  dayParts, deathDay, lifeSpan, loadPlaces, subunitPath, unitIndex, type Level, type Place, type PlaceMember,
 } from '@/app/lib/relations'
+import { useLang, useT } from '@/app/i18n/LangContext'
+import type { Messages } from '@/app/i18n'
+import { unitShortName } from '@/app/i18n/units'
 
 const SHOWN = 8
-// The village tree groups soldiers by where they were born (the record's "Mesto rođenja"), not where they fell
-const BIRTHPLACE = 'Mesto rođenja'
-const UNIT = 'Jedinica'
 
-/** 'Prva lička proleterska brigada "Marko Orešković"' -> 'Prva lička proleterska brigada' */
-export function shortUnitName(name: string): string {
-  return name.split(/\s+["„]/)[0]
+/** "1. bataljon" in the page's language; a sub-unit the book names ("3. kordunaški bataljon") as printed */
+function levelLabel(level: Level, t: Messages['kin']): string {
+  switch (level.kind) {
+    case 'staff': return t.staff
+    case 'none': return t.noBattalion
+    case undefined: return level.label
+    default: return t[level.kind](level.n!)
+  }
 }
 
 interface Leaf {
@@ -32,7 +37,7 @@ interface Leaf {
 interface Group {
   key: string
   label: string
-  kicker?: string   // what the label is, before it: "Mesto rođenja"
+  kicker?: string   // what the label is, before it: "Mesto rođenja" (the village tree groups by birthplace)
   note?: string
   size: number
   leaves: Leaf[]
@@ -47,6 +52,8 @@ interface Props {
 
 // Where the soldier stood in the unit, who fell with him, and who came from his village: a small tree per question
 export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: Props) {
+  const lang = useLang()
+  const t = useT().kin
   const [place, setPlace] = useState<Place | null>(null)
   const [open, setOpen] = useState<string | null>(null)
   const [full, setFull] = useState(false)
@@ -85,8 +92,8 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
       .filter((s) => s.soldier_id !== soldier.soldier_id)
       .map((s) => {
         const tags: string[] = []
-        if (villageIds.has(s.soldier_id)) tags.push('isto mesto')
-        if (myDay && index?.days.get(s) === myDay) tags.push('isti dan')
+        if (villageIds.has(s.soldier_id)) tags.push(t.samePlaceTag)
+        if (myDay && index?.days.get(s) === myDay) tags.push(t.sameDayTag)
         return { id: s.soldier_id, name: s.full_name, years: lifeSpan(s), soldier: s, tags }
       })
       .sort((a, b) => b.tags.length - a.tags.length || collator.compare(a.name, b.name))
@@ -94,15 +101,15 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
 
   const unitGroups: Group[] = levels.map((list, depth) => ({
     key: `u:${path[depth].key}`,
-    label: path[depth].label,
+    label: levelLabel(path[depth], t),
     size: list.length,
     leaves: toLeaves(list),
   }))
 
   const dayGroup: Group | null = myDay && sameDay.length > 1 ? {
     key: 'day',
-    label: 'Stradali istog dana',
-    note: [formatDay(myDay), soldier.death_place].filter(Boolean).join(' · '),
+    label: t.sameDay,
+    note: [t.day(...dayParts(myDay)), soldier.death_place].filter(Boolean).join(' · '),
     size: sameDay.length,
     leaves: toLeaves(sameDay),
   } : null
@@ -121,18 +128,18 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
         const deepest = levels[levels.length - 1]
         return {
           key: `p:${file}`,
-          label: memberUnit ? shortUnitName(memberUnit.name) : file,
+          label: memberUnit ? unitShortName(memberUnit, lang) : file,
           size: members.length,
           leaves: members
             .filter((m) => m.id !== soldier.soldier_id)
             .map((m) => ({
               id: m.id, name: m.name, years: m.years, soldier: local?.get(m.id), unit: memberUnit,
-              tags: deepest && local?.get(m.id) && deepest.includes(local.get(m.id)!) ? [path[path.length - 1].label] : [],
+              tags: deepest && local?.get(m.id) && deepest.includes(local.get(m.id)!) ? [levelLabel(path[path.length - 1], t)] : [],
             }))
             .sort((a, b) => b.tags.length - a.tags.length || collator.compare(a.name, b.name)),
         }
       })
-  }, [place, neighbours, unit, unitSoldiers, soldier.soldier_id, collator, path, levels])
+  }, [place, neighbours, unit, unitSoldiers, soldier.soldier_id, collator, path, levels, lang, t])
 
   const showUnitTree = unitGroups.length > 0 || dayGroup !== null
   if (!showUnitTree && placeGroups.length === 0) return null
@@ -153,7 +160,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
                 <LeafBody leaf={leaf} />
               </button>
             ) : leaf.unit ? (
-              <Link href={recordPath(leaf.unit, leaf.id)}><LeafBody leaf={leaf} /></Link>
+              <Link href={recordPath(leaf.unit, leaf.id, lang)}><LeafBody leaf={leaf} /></Link>
             ) : (
               <span><LeafBody leaf={leaf} /></span>
             )}
@@ -161,7 +168,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
         ))}
         {!full && group.leaves.length > SHOWN && (
           <li className="kin-leaf kin-more">
-            <button type="button" onClick={() => setFull(true)}>još {count(group.leaves.length - SHOWN)}</button>
+            <button type="button" onClick={() => setFull(true)}>{t.more(group.leaves.length - SHOWN)}</button>
           </li>
         )}
       </ul>
@@ -178,7 +185,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
           {group.kicker && <span className="kin-kicker">{group.kicker}</span>}
           <span className="kin-label">{group.label}</span>
           {group.note && <span className="kin-note">{group.note}</span>}
-          <span className="kin-count">{count(group.size)}</span>
+          <span className="kin-count">{t.count(group.size)}</span>
         </button>
         {children}
         {isOpen && renderLeaves(group)}
@@ -191,21 +198,21 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
     if (depth === unitGroups.length) {
       return (
         <ul><li className="kin-node is-path is-self"><span className="kin-row"><span className="kin-label">
-          {soldier.full_name}</span><span className="kin-note">ovaj zapis</span></span></li></ul>
+          {soldier.full_name}</span><span className="kin-note">{t.thisRecord}</span></span></li></ul>
       )
     }
     return <ul>{renderGroup(unitGroups[depth], true, nestPath(depth + 1))}</ul>
   }
 
   return (
-    <section className="kin" aria-label="Saborci i zemljaci">
-      {showUnitTree && <div className="modal-source-head"><h3>Saborci</h3></div>}
+    <section className="kin" aria-label={t.label}>
+      {showUnitTree && <div className="modal-source-head"><h3>{t.comrades}</h3></div>}
       {showUnitTree && (
         <ul className="kin-tree">
           <li className="kin-node kin-root is-path">
             <span className="kin-row">
-              <span className="kin-kicker">{UNIT}</span>
-              <span className="kin-label">{shortUnitName(unit.name)}</span>
+              <span className="kin-kicker">{t.unit}</span>
+              <span className="kin-label">{unitShortName(unit, lang)}</span>
             </span>
             {unitGroups.length > 0 || dayGroup ? (
               <ul>
@@ -217,17 +224,17 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen }: P
         </ul>
       )}
 
-      {place && placeGroups.length > 0 && <div className="modal-source-head"><h3>Zemljaci</h3></div>}
+      {place && placeGroups.length > 0 && <div className="modal-source-head"><h3>{t.neighbours}</h3></div>}
       {place && placeGroups.length > 0 && (
         <ul className="kin-tree">
           {placeGroups.length === 1 ? (
-            renderGroup({ ...placeGroups[0], key: 'place', label: placeName(place), kicker: BIRTHPLACE, note: undefined }, false)
+            renderGroup({ ...placeGroups[0], key: 'place', label: placeName(place), kicker: t.birthplace, note: undefined }, false)
           ) : (
             <li className="kin-node kin-root">
               <span className="kin-row">
-                <span className="kin-kicker">{BIRTHPLACE}</span>
+                <span className="kin-kicker">{t.birthplace}</span>
                 <span className="kin-label">{placeName(place)}</span>
-                <span className="kin-count">{count(neighbours.length)}</span>
+                <span className="kin-count">{t.count(neighbours.length)}</span>
               </span>
               <ul>{placeGroups.map((g) => renderGroup(g, false))}</ul>
             </li>

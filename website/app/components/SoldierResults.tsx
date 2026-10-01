@@ -3,18 +3,10 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
-import { sqQuotes } from '@/app/lib/typography'
 import { SoldierMedals } from './Medal'
-
-// "1 borac", "3 borca", "5 boraca", with the matching participle
-export function countBorci(n: number) {
-  const mod10 = n % 10
-  const mod100 = n % 100
-  const formatted = n.toLocaleString('sr-Latn')
-  if (mod10 === 1 && mod100 !== 11) return { verb: 'Pronađen', text: `${formatted} borac` }
-  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return { verb: 'Pronađena', text: `${formatted} borca` }
-  return { verb: 'Pronađeno', text: `${formatted} boraca` }
-}
+import { useLang, useT } from '@/app/i18n/LangContext'
+import { unitName } from '@/app/i18n/units'
+import { unitByName } from '@/app/lib/records'
 
 // Surname first, as the books print it; the surname carries the weight
 export function SoldierName({ soldier }: { soldier: Soldier }) {
@@ -39,6 +31,8 @@ interface SoldierResultsProps {
 const PAGE_SIZES = [50, 100, 200]
 
 export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions }: SoldierResultsProps) {
+  const t = useT()
+  const lang = useLang()
   const [page, setPage] = useState(1)
   const [perPage, setPerPage] = useState(50)
 
@@ -47,7 +41,6 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
   const totalPages = Math.max(1, Math.ceil(results.length / perPage))
   const start = (page - 1) * perPage
   const shown = results.slice(start, start + perPage)
-  const count = countBorci(results.length)
 
   const goTo = (p: number) => {
     setPage(p)
@@ -65,14 +58,14 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
     <div>
       <div className="results-bar">
         <p className="results-count" aria-live="polite">
-          {count.verb} {count.text}
-          {totalPages > 1 && <span> · strana {page} od {totalPages}</span>}
+          {t.found(results.length)}
+          {totalPages > 1 && <span> · {t.results.pageOf(page, totalPages)}</span>}
         </p>
         <div className="results-tools">
           {actions}
           {results.length > PAGE_SIZES[0] && (
             <label className="per-page">
-              Po strani
+              {t.results.perPage}
               <select
                 id="per-page"
                 value={perPage}
@@ -93,7 +86,12 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
                 <span className="result-name"><SoldierName soldier={soldier} /></span>
                 {soldier.additional_info && <span className="result-info">{soldier.additional_info}</span>}
                 {showUnit && soldier.unit && (
-                  <span className="result-unit">{[soldier.unit, ...(soldier.also_units ?? [])].map(sqQuotes).join(' · ')}</span>
+                  <span className="result-unit">
+                    {[soldier.unit, ...(soldier.also_units ?? [])].map((name) => {
+                      const unit = unitByName(name)
+                      return unit ? unitName(unit, lang) : name
+                    }).join(' · ')}
+                  </span>
                 )}
               </span>
               <SoldierMedals soldier={soldier} look="gravira" />
@@ -103,9 +101,9 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
       </ul>
 
       {totalPages > 1 && (
-        <nav className="pagination" aria-label="Strane rezultata">
+        <nav className="pagination" aria-label={t.results.pages}>
           <button className="page-button" onClick={() => goTo(page - 1)} disabled={page === 1}>
-            <ChevronLeftIcon /> Prethodna
+            <ChevronLeftIcon /> {t.results.previous}
           </button>
           {pages.map((p, i) =>
             p === 'gap' ? (
@@ -122,7 +120,7 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
             )
           )}
           <button className="page-button" onClick={() => goTo(page + 1)} disabled={page === totalPages}>
-            Sledeća <ChevronRightIcon />
+            {t.results.next} <ChevronRightIcon />
           </button>
         </nav>
       )}

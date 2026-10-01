@@ -1,5 +1,9 @@
+'use client'
+
 import type { Soldier } from '@/app/lib/types'
 import { decorationsOf } from '@/app/lib/records'
+import { useT } from '@/app/i18n/LangContext'
+import type { Messages } from '@/app/i18n'
 
 // The decorations the books name, shown as the real ones: Orden narodnog heroja and Partizanska spomenica 1941.
 // Both looks are made from photographs by scripts/make_medal_images.py:
@@ -8,10 +12,7 @@ import { decorationsOf } from '@/app/lib/records'
 export type MedalKind = 'heroj' | 'spomenica'
 export type MedalLook = 'foto' | 'gravira'
 
-export const MEDAL_LABEL: Record<MedalKind, string> = {
-  heroj: 'Narodni heroj',
-  spomenica: 'Nosilac Partizanske spomenice 1941',
-}
+// Their names in the page's language: t.medals ("Narodni heroj", "Nosilac Partizanske spomenice 1941")
 
 // Image sizes, as the script prints them
 const SIZE: Record<MedalLook, Record<MedalKind, [number, number]>> = {
@@ -21,7 +22,7 @@ const SIZE: Record<MedalLook, Record<MedalKind, [number, number]>> = {
 
 export function Medal({ kind, look }: { kind: MedalKind; look: MedalLook }) {
   const [width, height] = SIZE[look][kind]
-  const label = MEDAL_LABEL[kind]
+  const label = useT().medals[kind]
   return (
     <span className={`medal medal-${kind}`} role="img" aria-label={label} title={label}>
       {look === 'foto' ? (
@@ -49,8 +50,8 @@ export function SoldierMedals({ soldier, look, className }: { soldier: Soldier; 
 }
 
 /** "Narodni heroj · Nosilac Partizanske spomenice 1941", or null */
-export function honoursLine(soldier: Soldier): string | null {
+export function honoursLine(soldier: Soldier, t: Messages): string | null {
   const { heroj, spomenica } = decorationsOf(soldier)
-  const parts = [heroj && MEDAL_LABEL.heroj, spomenica && MEDAL_LABEL.spomenica].filter(Boolean)
+  const parts = [heroj && t.medals.heroj, spomenica && t.medals.spomenica].filter(Boolean)
   return parts.length ? parts.join(' · ') : null
 }

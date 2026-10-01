@@ -5,7 +5,8 @@ import { units } from '@/app/data/units'
 import { formation, formationKey } from '@/app/data/formation'
 import { FATES, NO_FILTERS, RANGES, filterCount, type SearchFilters as Filters } from '@/app/lib/searchFilters'
 import { shareLink } from '@/app/lib/share'
-import { sqQuotes } from '@/app/lib/typography'
+import { useLang, useT } from '@/app/i18n/LangContext'
+import { unitName } from '@/app/i18n/units'
 import { FilterIcon, ShareIcon } from './Icons'
 
 // The units in the order the home page lists them: by formation date, undated last
@@ -19,11 +20,12 @@ export function FilterToggle({ open, count, controls, onClick }: {
   controls: string
   onClick: () => void
 }) {
+  const t = useT().filters
   return (
     <button type="button" className="filter-toggle" aria-expanded={open} aria-controls={controls} onClick={onClick}>
       <FilterIcon size={16} />
-      Filteri
-      {count > 0 && <span className="filter-count" aria-label={`(${count} uključeno)`}>{count}</span>}
+      {t.toggle}
+      {count > 0 && <span className="filter-count" aria-label={t.active(count)}>{count}</span>}
     </button>
   )
 }
@@ -37,12 +39,14 @@ interface SearchFiltersProps {
 }
 
 export default function SearchFilters({ id, filters, onChange, withUnit = false }: SearchFiltersProps) {
+  const t = useT().filters
+  const lang = useLang()
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch })
 
   return (
     <div className="filters" id={id}>
       <div className="filter filter-year">
-        <label htmlFor={`${id}-year`}>Godina rođenja</label>
+        <label htmlFor={`${id}-year`}>{t.birthYear}</label>
         <div className="filter-pair">
           <input
             id={`${id}-year`}
@@ -55,21 +59,21 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
             autoComplete="off"
           />
           <select
-            aria-label="Odstupanje od godine rođenja"
+            aria-label={t.range}
             value={filters.range}
             onChange={(e) => set({ range: Number(e.target.value) })}
           >
-            {RANGES.map((r) => <option key={r} value={r}>{r ? `± ${r}` : 'tačno'}</option>)}
+            {RANGES.map((r) => <option key={r} value={r}>{r ? `± ${r}` : t.exact}</option>)}
           </select>
         </div>
       </div>
 
       <div className="filter filter-place">
-        <label htmlFor={`${id}-place`}>Mesto</label>
+        <label htmlFor={`${id}-place`}>{t.place}</label>
         <input
           id={`${id}-place`}
           type="text"
-          placeholder="selo ili grad"
+          placeholder={t.placeHint}
           value={filters.place}
           onChange={(e) => set({ place: e.target.value })}
           autoComplete="off"
@@ -79,30 +83,30 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
 
       {withUnit && (
         <div className="filter filter-unit">
-          <label htmlFor={`${id}-unit`}>Jedinica</label>
+          <label htmlFor={`${id}-unit`}>{t.unit}</label>
           <select id={`${id}-unit`} value={filters.unit} onChange={(e) => set({ unit: e.target.value })}>
-            <option value="">Sve jedinice</option>
-            {UNIT_OPTIONS.map((u) => <option key={u.id} value={u.id}>{sqQuotes(u.name)}</option>)}
+            <option value="">{t.allUnits}</option>
+            {UNIT_OPTIONS.map((u) => <option key={u.id} value={u.id}>{unitName(u, lang)}</option>)}
           </select>
         </div>
       )}
 
       <div className="filter filter-fate">
-        <label htmlFor={`${id}-fate`}>Sudbina</label>
+        <label htmlFor={`${id}-fate`}>{t.fate}</label>
         <select id={`${id}-fate`} value={filters.fate} onChange={(e) => set({ fate: e.target.value as Filters['fate'] })}>
-          <option value="">Svi</option>
-          {FATES.map((f) => <option key={f.value} value={f.value}>{f.label}</option>)}
+          <option value="">{t.allFates}</option>
+          {FATES.map((f) => <option key={f.value} value={f.value}>{t.fates[f.value]}</option>)}
         </select>
       </div>
 
       <div className="filter-end">
         <label className="filter-check">
           <input type="checkbox" checked={filters.wholeWords} onChange={(e) => set({ wholeWords: e.target.checked })} />
-          Samo cele reči
+          {t.wholeWords}
         </label>
         {filterCount(filters, withUnit) > 0 && (
           <button type="button" className="filter-clear" onClick={() => onChange(NO_FILTERS)}>
-            Ukloni filtere
+            {t.clear}
           </button>
         )}
       </div>
@@ -112,6 +116,7 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
 
 /** Shares the page address, which holds the search and its filters */
 export function ShareSearch() {
+  const t = useT().share
   const [state, setState] = useState<'idle' | 'copied' | 'failed'>('idle')
 
   useEffect(() => {
@@ -128,7 +133,7 @@ export function ShareSearch() {
   return (
     <button type="button" className="share-search" onClick={share} aria-live="polite">
       <ShareIcon size={15} />
-      {state === 'copied' ? 'Link je kopiran' : state === 'failed' ? 'Kopirajte adresu stranice' : 'Podeli pretragu'}
+      {state === 'copied' ? t.copied : state === 'failed' ? t.failed : t.search}
     </button>
   )
 }

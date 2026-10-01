@@ -2,20 +2,23 @@ import type { Soldier, SoldierSource } from './types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { sources } from '@/app/data/sources'
+import { messagesFor, type Messages } from '@/app/i18n'
+import { localePath, type Lang } from '@/app/i18n/config'
+import { sourceAuthor } from '@/app/i18n/sources'
 
-// A record's own address: /units/<unit>?borac=<soldier id>
+// A record's own address: /units/<unit>?borac=<soldier id>, in a language /en/units/<unit>?borac=<soldier id>
 export const RECORD_PARAM = 'borac'
 
 export function unitByName(name?: string): Unit | undefined {
   return name ? units.find((u) => u.name === name) : undefined
 }
 
-export function recordPath(unit: Unit, soldierId: string): string {
-  return `/units/${unit.id}?${RECORD_PARAM}=${encodeURIComponent(soldierId)}`
+export function recordPath(unit: Unit, soldierId: string, lang: Lang): string {
+  return localePath(lang, `/units/${unit.id}?${RECORD_PARAM}=${encodeURIComponent(soldierId)}`)
 }
 
-export function cardPath(unit: Unit, soldierId: string): string {
-  return `/kartica?jedinica=${encodeURIComponent(unit.id)}&${RECORD_PARAM}=${encodeURIComponent(soldierId)}`
+export function cardPath(unit: Unit, soldierId: string, lang: Lang): string {
+  return localePath(lang, `/kartica?jedinica=${encodeURIComponent(unit.id)}&${RECORD_PARAM}=${encodeURIComponent(soldierId)}`)
 }
 
 // An id can also be one a merged-away entry had (data merges keep it in other_sources), so old links keep working
@@ -41,19 +44,20 @@ export function sourceTitle(entry: SoldierSource): string {
   return sourceOf(entry)?.title ?? entry.pdf_file ?? 'znaci.org'
 }
 
-/** Label and value of every structured field the record has, in reading order */
-export function recordDetails(soldier: Soldier): [string, string][] {
+/** Label (in the page's language) and value (as the book has it) of every structured field the record has */
+export function recordDetails(soldier: Soldier, t: Messages): [string, string][] {
   const died = soldier.death_type === 'umro'
+  const f = t.record.fields
   const details: [string, string | undefined][] = [
-    ['Ime oca', soldier.fathers_name],
-    ['Godina rođenja', soldier.birth_year],
-    ['Mesto rođenja', soldier.birth_place],
-    ['Narodnost', soldier.ethnicity],
-    ['Zanimanje', soldier.occupation],
-    ['Dužnost', soldier.rank],
-    ['Podjedinica', soldier.unit_detail],
-    [died ? 'Datum smrti' : 'Datum pogibije', soldier.death_date],
-    [died ? 'Mesto smrti' : 'Mesto pogibije', soldier.death_place],
+    [f.fathersName, soldier.fathers_name],
+    [f.birthYear, soldier.birth_year],
+    [f.birthPlace, soldier.birth_place],
+    [f.ethnicity, soldier.ethnicity],
+    [f.occupation, soldier.occupation],
+    [f.rank, soldier.rank],
+    [f.unitDetail, soldier.unit_detail],
+    [died ? f.deathDate : f.killedDate, soldier.death_date],
+    [died ? f.deathPlace : f.killedPlace, soldier.death_place],
   ]
   return details.filter((d): d is [string, string] => Boolean(d[1]))
 }
@@ -65,14 +69,13 @@ export function lifeYears(soldier: Soldier): string | null {
   return born && died ? `${born} – ${died}` : null
 }
 
-/** A line to quote the record by: the name, where it is printed, and the record's id */
-export function citation(soldier: Soldier): string {
+/** A line to quote the record by: the name, where it is printed (the book's title as printed), and the record's id */
+export function citation(soldier: Soldier, lang: Lang): string {
   const source = sourceOf(soldier)
   const where = source
-    ? [source.title, source.author].filter(Boolean).join(', ')
+    ? [source.title, sourceAuthor(source, lang)].filter(Boolean).join(', ')
     : sourceTitle(soldier)
-  const page = soldier.pdf_page != null ? `, str. ${soldier.pdf_page}` : ''
-  return `${soldier.full_name}. ${where}${page}. Knjiga boraca, zapis ${soldier.soldier_id}.`
+  return messagesFor(lang).record.citation(soldier.full_name, where, soldier.pdf_page ?? null, soldier.soldier_id)
 }
 
 // "narodni heroj", "proglašen za narodnog heroja", "Nosilac Ordena narodnog heroja"; not "predložen za narodnog heroja"

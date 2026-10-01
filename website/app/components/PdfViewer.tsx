@@ -4,6 +4,7 @@ import { useState, useRef, useCallback, useLayoutEffect } from 'react'
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon, MinusIcon, PlusIcon, TargetIcon } from './Icons'
 import { highlightBox, highlightBoxes } from '@/app/lib/entryBox'
+import { useT } from '@/app/i18n/LangContext'
 import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
@@ -30,6 +31,7 @@ interface PdfViewerProps {
 export default function PdfViewer({
   pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, xPositionLeft, xPositionEnd, rects, sourceHref,
 }: PdfViewerProps) {
+  const t = useT()
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
   const [scale, setScale] = useState<number | null>(null)
@@ -92,7 +94,7 @@ export default function PdfViewer({
   if (error) {
     return (
       <div className="pdf-viewer-error">
-        Strana iz knjige trenutno ne može da se prikaže.
+        {t.viewer.failed}
       </div>
     )
   }
@@ -101,31 +103,31 @@ export default function PdfViewer({
     <div className="pdf-viewer-container">
       <div className="pdf-viewer-toolbar">
         <div className="pdf-viewer-controls-group">
-          <button onClick={goToPrevPage} disabled={currentPage <= 1} aria-label="Prethodna strana">
+          <button onClick={goToPrevPage} disabled={currentPage <= 1} aria-label={t.viewer.previous}>
             <ChevronLeftIcon />
           </button>
           <span className="pdf-viewer-page">
-            str. {currentPage}{numPages ? ` / ${numPages}` : ''}
+            {t.viewer.page(currentPage, numPages)}
           </span>
-          <button onClick={goToNextPage} disabled={currentPage >= (numPages || 1)} aria-label="Sledeća strana">
+          <button onClick={goToNextPage} disabled={currentPage >= (numPages || 1)} aria-label={t.viewer.next}>
             <ChevronRightIcon />
           </button>
           {currentPage !== pageNumber && (
             <button onClick={resetView}>
-              <TargetIcon size={16} /> Nazad na zapis
+              <TargetIcon size={16} /> {t.viewer.back}
             </button>
           )}
         </div>
         <div className="pdf-viewer-controls-group">
-          <button onClick={zoomOut} aria-label="Umanji"><MinusIcon /></button>
+          <button onClick={zoomOut} aria-label={t.viewer.zoomOut}><MinusIcon /></button>
           <span className="pdf-viewer-zoom-info">{scale != null ? `${Math.round(scale * 100)}%` : ''}</span>
-          <button onClick={zoomIn} aria-label="Uvećaj"><PlusIcon /></button>
+          <button onClick={zoomIn} aria-label={t.viewer.zoomIn}><PlusIcon /></button>
         </div>
       </div>
 
       {/* Scrollable PDF area */}
       <div className="pdf-viewer-scroll" ref={containerRef}>
-        {loading && <div className="pdf-viewer-loading">Učitavanje strane…</div>}
+        {loading && <div className="pdf-viewer-loading">{t.record.loadingPage}</div>}
         {scale != null && <div className="pdf-viewer-page-wrap">
           <Document
             file={pdfFile}
@@ -163,7 +165,7 @@ export default function PdfViewer({
       {/* Footer with link to full document */}
       {sourceHref && (
         <div className="pdf-viewer-footer">
-          <Link href={sourceHref}>Cela knjiga na strani Izvori</Link>
+          <Link href={sourceHref}>{t.viewer.wholeBook}</Link>
         </div>
       )}
     </div>

@@ -2,11 +2,14 @@ import { units } from '@/app/data/units'
 import index from '@/app/data/portrait-index.json'
 import { RECORDS_PER_PART } from '@/app/lib/searchIndex'
 import { readUnitFile } from '@/app/lib/unitFiles'
+import { messagesFor } from '@/app/i18n'
+import { pageMetadata } from '@/app/i18n/metadata'
+import type { Lang } from '@/app/i18n/config'
 import GalleryClient, { type GalleryItem } from './GalleryClient'
 
-export const metadata = {
-  title: 'Galerija — Knjiga boraca',
-  description: 'Fotografije boraca: lica iz knjiga jedinica i iz fotogalerije znaci.org.',
+export function galleryMetadata(lang: Lang) {
+  const t = messagesFor(lang).gallery
+  return pageMetadata(lang, '/galerija', { title: t.title, description: t.description })
 }
 
 const PORTRAITS = index as Record<string, { f: string }>
@@ -26,11 +29,12 @@ function galleryItems(): GalleryItem[] {
   return items
 }
 
-export default function GalerijaPage() {
+// The Galerija page, /galerija, in every language
+export default function GalleryPage({ lang }: { lang: Lang }) {
   const items = galleryItems()
   return (
     <div className="container page-content">
-      <h1 className="page-title">Galerija</h1>
+      <h1 className="page-title">{messagesFor(lang).gallery.title}</h1>
       <GalleryClient items={items} />
     </div>
   )

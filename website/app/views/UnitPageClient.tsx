@@ -8,17 +8,22 @@ import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
 import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
-import { sqQuotes } from '@/app/lib/typography'
 import { RECORD_PARAM, findRecord } from '@/app/lib/records'
 import { photoPosition } from '@/app/data/photoFocus'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
 import { NO_FILTERS, applyFilters, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
+import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
+import { unitDescription, unitName } from '@/app/i18n/units'
+import RichText from '@/app/i18n/RichText'
 
 interface UnitPageClientProps {
   unit: Unit
 }
 
 export default function UnitPageClient({ unit }: UnitPageClientProps) {
+  const lang = useLang()
+  const t = useT()
+  const to = useLocalePath()
   const [soldiers, setSoldiers] = useState<Soldier[]>([])
   const [loading, setLoading] = useState(true)
   const [loadFailed, setLoadFailed] = useState(false)
@@ -80,26 +85,26 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
   return (
     <div>
       <section className="container unit-hero">
-        <Link href="/" className="back-link"><ArrowLeftIcon size={16} /> Sve jedinice</Link>
+        <Link href={to('/')} className="back-link"><ArrowLeftIcon size={16} /> {t.unit.allUnits}</Link>
         <div className="unit-hero-body">
-          <img src={unit.image} alt={unit.name} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
+          <img src={unit.image} alt={unitName(unit, lang)} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
           <div>
-            <h1>{sqQuotes(unit.name)}</h1>
-            <p className="unit-hero-desc">{unit.description}</p>
+            <h1>{unitName(unit, lang)}</h1>
+            <p className="unit-hero-desc">{unitDescription(unit, lang)}</p>
           </div>
         </div>
       </section>
 
       <div className="container">
         <div className="unit-search">
-          <label htmlFor="unit-search">Pretraga u ovoj jedinici</label>
+          <label htmlFor="unit-search">{t.unit.search}</label>
           <div className="finder-field">
             <span className="search-icon"><SearchIcon size={20} /></span>
             <input
               id="unit-search"
               type="search"
               className="search-input"
-              placeholder="Prezime, ime ili mesto"
+              placeholder={t.unit.placeholder}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               autoComplete="off"
@@ -118,28 +123,31 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
         <div id="results">
           {/* A search after an empty result shows the loading rows until its results are in */}
           {loading || (!loadFailed && pending && listed.length === 0) ? (
-            <ul className="loading-rows" aria-label={loading ? 'Učitavanje spiska' : 'Pretraga…'}>
+            <ul className="loading-rows" aria-label={loading ? t.unit.loading : t.results.searching}>
               {Array.from({ length: 8 }, (_, i) => <li key={i} />)}
             </ul>
           ) : loadFailed ? (
             <div className="empty">
-              <h2>Spisak se nije učitao</h2>
-              <p>Proverite internet vezu i osvežite stranu.</p>
+              <h2>{t.unit.loadFailedTitle}</h2>
+              <p>{t.unit.loadFailedText}</p>
             </div>
           ) : listed.length === 0 && filtersSet && results.length > 0 ? (
             <div className="empty">
-              <h2>{searchTerm.trim() ? <>Nema boraca za „{searchTerm}“ s ovim filterima</> : 'Nema boraca s ovim filterima'}</h2>
+              <h2>{t.filters.noneTitle(searchTerm.trim() ? searchTerm : '')}</h2>
               <p>
-                Proverite filtere ili ih{' '}
-                <button type="button" className="link-button" onClick={() => setFilters(NO_FILTERS)}>uklonite</button>.
+                <RichText
+                  text={t.filters.noneText}
+                  render={(part) => (
+                    <button type="button" className="link-button" onClick={() => setFilters(NO_FILTERS)}>{part}</button>
+                  )}
+                />
               </p>
             </div>
           ) : listed.length === 0 ? (
             <div className="empty">
-              <h2>Nema boraca za „{searchTerm}“ u ovoj jedinici</h2>
+              <h2>{t.unit.noneTitle(searchTerm)}</h2>
               <p>
-                Pokušajte samo prezime, ili potražite na <Link href="/">početnoj strani</Link> u
-                svim jedinicama.
+                <RichText text={t.unit.noneText} render={(part) => <Link href={to('/')}>{part}</Link>} />
               </p>
             </div>
           ) : (

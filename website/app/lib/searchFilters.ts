@@ -26,11 +26,11 @@ export const NO_FILTERS: SearchFilters = { year: '', range: 0, place: '', unit: 
 
 export const RANGES = [0, 2, 5]
 
-// death_type as scripts/extract_structured_fields.py reads it from the entry
-export const FATES: { value: Fate; label: string; types: string[] }[] = [
-  { value: 'poginuli', label: 'Poginuli', types: ['poginuo', 'poginula', 'streljan', 'streljana', 'ubijen', 'ubijena'] },
-  { value: 'umrli', label: 'Umrli', types: ['umro', 'umrla'] },
-  { value: 'nestali', label: 'Nestali', types: ['nestao', 'nestala'] },
+// death_type as scripts/extract_structured_fields.py reads it from the entry; the labels are t.filters.fates
+export const FATES: { value: Fate; types: string[] }[] = [
+  { value: 'poginuli', types: ['poginuo', 'poginula', 'streljan', 'streljana', 'ubijen', 'ubijena'] },
+  { value: 'umrli', types: ['umro', 'umrla'] },
+  { value: 'nestali', types: ['nestao', 'nestala'] },
 ]
 
 const PARAM = {

@@ -2,8 +2,11 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import type { Soldier } from '@/app/lib/types'
-import { MONTHS_GENITIVE, ageAtDeath, parseDeathDay, type DeathDay } from '@/app/lib/deathDay'
-import { sqQuotes } from '@/app/lib/typography'
+import { ageAtDeath, parseDeathDay, type DeathDay } from '@/app/lib/deathDay'
+import { unitByName } from '@/app/lib/records'
+import { useLang, useT } from '@/app/i18n/LangContext'
+import type { Messages } from '@/app/i18n'
+import { unitName } from '@/app/i18n/units'
 import { SoldierName } from './SoldierResults'
 import { SoldierMedals } from './Medal'
 import { CandleIcon } from './Icons'
@@ -18,28 +21,29 @@ interface Fallen {
   death: DeathDay
 }
 
-// The missing say so, in the word their entry uses: the year is when they went missing
-function missingWord(soldier: Soldier): string | null {
+// The missing say so, in the form their entry uses (nestao, nestala): the year is when they went missing
+function missingWord(soldier: Soldier, t: Messages): string | null {
   if (!soldier.death_type?.startsWith('nesta')) return null
-  return /\bnestala\b/i.test(soldier.additional_info) ? 'Nestala' : 'Nestao'
+  return t.onThisDay.missing(/\bnestala\b/i.test(soldier.additional_info))
 }
 
 // A candle, then the year and place of death, and how old the soldier was
 function DeathLine({ soldier, year, death }: Fallen) {
-  const missing = missingWord(soldier)
+  const t = useT()
+  const missing = missingWord(soldier, t)
   const age = ageAtDeath(soldier.birth_year, soldier.additional_info, death)
   return (
     <span className="on-this-day-meta">
-      <span className="death-mark" title={missing ? 'Godina i mesto nestanka' : 'Godina i mesto smrti'}>
+      <span className="death-mark" title={missing ? t.onThisDay.missingTitle : t.onThisDay.deathTitle}>
         <CandleIcon size={14} />
-        {!missing && <span className="visually-hidden">Smrt:</span>}
+        {!missing && <span className="visually-hidden">{t.onThisDay.death}</span>}
       </span>
       {missing && `${missing} `}
       {year}{soldier.death_place && `, ${soldier.death_place}`}
       {age && (
         <>
           {' · '}
-          <b>{age}</b>
+          <b>{t.onThisDay.age(...age)}</b>
         </>
       )}
     </span>
@@ -67,6 +71,8 @@ interface OnThisDayProps {
 
 // "Na današnji dan": soldiers who fell, died or went missing on today's date during the war
 export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProps) {
+  const t = useT()
+  const lang = useLang()
   // Today in the visitor's own calendar, known only in the browser
   const [today, setToday] = useState<{ day: number; month: number; key: string } | null>(null)
   const [showAll, setShowAll] = useState(false)
@@ -106,18 +112,21 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
   const loaded = !loading && soldiers.length > 0
   if (loaded && fallen.length === 0) return null
 
-  const date = `${today.day}. ${MONTHS_GENITIVE[today.month - 1]}`
   const shown = showAll ? everyone : featured
+  const shownUnit = (name: string) => {
+    const unit = unitByName(name)
+    return unit ? unitName(unit, lang) : name
+  }
 
   return (
     <section className="on-this-day" aria-labelledby="on-this-day-title">
       <div className="section-head">
-        <h2 id="on-this-day-title">Na današnji dan</h2>
-        <p className="section-note">Borci koji su {date} poginuli, umrli ili nestali u ratu</p>
+        <h2 id="on-this-day-title">{t.onThisDay.title}</h2>
+        <p className="section-note">{t.onThisDay.note(today.day, today.month)}</p>
       </div>
 
       {!loaded ? (
-        <ul className="on-this-day-list is-loading" aria-label="Učitavanje">
+        <ul className="on-this-day-list is-loading" aria-label={t.onThisDay.loading}>
           {Array.from({ length: SHOWN }, (_, i) => <li key={i} />)}
         </ul>
       ) : (
@@ -129,7 +138,7 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
                   <span className="on-this-day-text">
                     <span className="on-this-day-name"><SoldierName soldier={soldier} /></span>
                     <DeathLine {...fallen} />
-                    {soldier.unit && <span className="on-this-day-unit">{sqQuotes(soldier.unit)}</span>}
+                    {soldier.unit && <span className="on-this-day-unit">{shownUnit(soldier.unit)}</span>}
                   </span>
                   <SoldierMedals soldier={soldier} look="gravira" />
                 </button>
@@ -138,7 +147,7 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
           </ul>
           {fallen.length > SHOWN && (
             <button type="button" className="on-this-day-more" onClick={() => setShowAll((v) => !v)}>
-              {showAll ? 'Prikaži manje' : `Prikaži sve za ovaj dan (${fallen.length})`}
+              {showAll ? t.onThisDay.showLess : t.onThisDay.showAll(fallen.length)}
             </button>
           )}
         </>

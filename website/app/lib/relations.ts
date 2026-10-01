@@ -6,7 +6,11 @@ import type { Soldier } from './types'
 
 export interface Level {
   key: string    // stable within a unit: "b1", "c2", "s:prištapske jedinice"
-  label: string  // as shown: "1. bataljon", "2. četa"
+  label: string  // in Serbo-Croatian: "1. bataljon", "2. četa"; a named one as printed: "3. kordunaški bataljon"
+  // A plain numbered level, the staff units' node and the node for records without a battalion are the site's
+  // own words, which each language says its own way (RelationsTree); a named one is shown as printed
+  kind?: 'battalion' | 'company' | 'platoon' | 'squad' | 'staff' | 'none'
+  n?: number
 }
 
 const ROMAN: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10 }
@@ -30,17 +34,21 @@ export function subunitPath(detail?: string): Level[] {
     let m: RegExpMatchArray | null
     if ((m = part.match(/^([0-9]+\.?|[IVXivx]{1,4}\.?)\s+(?:([a-zčćžšđ]+)\s+)?(?:bataljon|bat\.)$/i)) && number(m[1])) {
       const n = number(m[1])!
-      battalion = { key: `b${n}${m[2] ? ':' + m[2].toLowerCase() : ''}`, label: `${n}. ${m[2] ? m[2].toLowerCase() + ' ' : ''}bataljon` }
+      battalion = m[2]
+        ? { key: `b${n}:${m[2].toLowerCase()}`, label: `${n}. ${m[2].toLowerCase()} bataljon` }
+        : { key: `b${n}`, label: `${n}. bataljon`, kind: 'battalion', n: Number(n) }
     } else if ((m = part.match(/^(?:bataljon|bat\.)\s+[»"„]?([^«"“]+)[«"“]?$/i))) {
       battalion = { key: `b:${m[1].toLowerCase()}`, label: `bataljon ${m[1]}` }
     } else if ((m = part.match(/^(\d+)\.?\s+(?:([a-zčćžšđ]+)\s+)?četa$/i))) {
       // "2. četa"; a company named for its district: "1. požeška četa" (Užički odred)
       const named = m[2] ? m[2].toLowerCase() : ''
-      company = { key: `c${m[1]}${named ? ':' + named : ''}`, label: `${m[1]}. ${named ? named + ' ' : ''}četa` }
+      company = named
+        ? { key: `c${m[1]}:${named}`, label: `${m[1]}. ${named} četa` }
+        : { key: `c${m[1]}`, label: `${m[1]}. četa`, kind: 'company', n: Number(m[1]) }
     } else if ((m = part.match(/^(\d+)\.?\s+vod$/i))) {
-      platoon = { key: `v${m[1]}`, label: `${m[1]}. vod` }
+      platoon = { key: `v${m[1]}`, label: `${m[1]}. vod`, kind: 'platoon', n: Number(m[1]) }
     } else if ((m = part.match(/^(\d+)\.?\s+desetina$/i))) {
-      squad = { key: `d${m[1]}`, label: `${m[1]}. desetina` }
+      squad = { key: `d${m[1]}`, label: `${m[1]}. desetina`, kind: 'squad', n: Number(m[1]) }
     } else if (/četa|baterija|jedinic|intendantura|vod/i.test(part)) {
       const label = part.charAt(0).toLowerCase() + part.slice(1)
       // a named company inside a battalion ("1. bataljon, prateća četa") or a group of the brigade staff
@@ -55,8 +63,8 @@ export function subunitPath(detail?: string): Level[] {
   return lower.length ? [NO_BATTALION, ...lower] : []
 }
 
-const STAFF: Level = { key: 's:prištapske jedinice', label: 'prištapske jedinice' }
-const NO_BATTALION: Level = { key: 'x', label: 'bataljon nije naveden' }
+const STAFF: Level = { key: 's:prištapske jedinice', label: 'prištapske jedinice', kind: 'staff' }
+const NO_BATTALION: Level = { key: 'x', label: 'bataljon nije naveden', kind: 'none' }
 
 // Sub-unit paths and days of death of a unit's list, worked out once per list
 const indexes = new WeakMap<Soldier[], { paths: Map<Soldier, Level[]>; days: Map<Soldier, string | null> }>()
@@ -97,14 +105,10 @@ export function deathDay(soldier: Soldier): string | null {
   return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
 }
 
-export function formatDay(iso: string): string {
+/** "1943-01-15" -> [15, 1, 1943] */
+export function dayParts(iso: string): [number, number, number] {
   const [y, m, d] = iso.split('-').map((n) => parseInt(n, 10))
-  return `${d}. ${m}. ${y}.`
-}
-
-/** 1608 -> "1.608" */
-export function count(n: number): string {
-  return n.toLocaleString('de-DE')
+  return [d, m, y]
 }
 
 /** Birth and death years: "1921–1943" */

@@ -3,7 +3,8 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { Unit } from '@/app/data/units'
-import { sqQuotes } from '@/app/lib/typography'
+import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
+import { unitName } from '@/app/i18n/units'
 
 // Soldiers of the 2. krajiška brigade walking away through snow: the figures sit on the right,
 // the snow on the left stays nearly flat red, so the heading and the search field read cleanly.
@@ -11,6 +12,9 @@ import { sqQuotes } from '@/app/lib/typography'
 const BAND_UNIT_ID = '2-krajiska-brigada'
 
 export default function BandPhoto({ units }: { units: Unit[] }) {
+  const t = useT()
+  const lang = useLang()
+  const to = useLocalePath()
   const ref = useRef<HTMLDivElement>(null)
   const [ready, setReady] = useState(false)
   const unit = units.find((u) => u.id === BAND_UNIT_ID)
@@ -38,7 +42,7 @@ export default function BandPhoto({ units }: { units: Unit[] }) {
         <img src={unit.image} alt="" />
       </div>
       <p className="band-credit">
-        Na fotografiji: <Link href={`/units/${unit.id}`}>{sqQuotes(unit.name)}</Link>
+        {t.home.bandCredit} <Link href={to(`/units/${unit.id}`)}>{unitName(unit, lang)}</Link>
       </p>
     </>
   )

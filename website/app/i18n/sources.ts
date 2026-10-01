@@ -1,0 +1,275 @@
+import type { Lang } from './config'
+import type { PdfSource } from '@/app/data/sources'
+
+// The Izvori page in Slovene, Macedonian and English. A book's title stays as the book prints it (it is a
+// citation); what the site says about the book is translated: its description, the part of the title the
+// site added after " — " (it names the list in the record's book switch), and author lines that are not
+// names ("Grupa autora", "(ur.)"). Every source added to data/sources.ts needs a description here.
+
+type Texts = Record<string, string>
+
+const DESCRIPTION: Partial<Record<Lang, Texts>> = {
+  sl: {
+    'prva-licka-proleterska': 'Monografija, zbirka Ratna prošlost naroda i narodnosti Jugoslavije, knj. 322',
+    'prva-proleterska-1': 'Seznam borcev, prvi zvezek (A–I)',
+    'prva-proleterska-2': 'Seznam borcev, drugi zvezek (I–O)',
+    'prva-proleterska-3': 'Seznam borcev, tretji zvezek (O–Ž)',
+    'druga-licka-spisak': 'Seznam padlih, umrlih in pogrešanih borcev in poveljnikov brigade',
+    'druga-licka-sjecanja-prezivjeli': 'Seznam preživelih borcev in poveljnikov Druge liške proletarske brigade (iz zbornika spominov)',
+    'druga-licka-sjecanja-poginuli':
+      'Seznam padlih, umrlih in pogrešanih borcev Druge liške proletarske brigade (iz zbornika spominov); večina je tudi na seznamu Vojnozgodovinskega inštituta',
+    'treca-proleterska-brigada': 'Monografija, zbirka Ratna prošlost naših naroda, knj. 144',
+    'treca-proleterska-poginuli-knj3':
+      'Seznam padlih in umrlih borcev in poveljnikov po letih, 1942–1945 (1.374 imen; v tem izvodu manjkajo strani z začetkom leta 1944)',
+    'treca-proleterska-formiranje':
+      'Isti seznam kot v monografiji Žarka Vidovića, v cirilici, kot ga je uredilo uredništvo zbornika spominov; po bataljonih in četah',
+    'ljubljanska-brigada': 'Monografija Ljubljanske brigade',
+    '13-proleterska-spisak': 'Seznam padlih in preživelih borcev (tretji del monografije)',
+    '2-dalmatinska-proleterska': 'Seznam borcev 2. dalmatinske proletarske brigade NOVJ',
+    '4-splitska-brigada': 'Seznam padlih in preživelih borcev brigade',
+    'prva-vojvodjanska': 'Seznam borcev Prve vojvodinske brigade',
+    '5-kozaracka': 'Seznam padlih, pogrešanih in umrlih borcev in poveljnikov brigade',
+    '2-vojvodjanska': 'Seznam borcev in poveljnikov 2. vojvodinske brigade',
+    '8-krajiska': 'Seznam padlih in umrlih v NOB iz 8. krajiške brigade',
+    '6-krajiska': 'Seznam padlih in umrlih borcev in poveljnikov brigade, z dopolnilnim seznamom',
+    '4-krajiska': 'Seznam padlih, umrlih in pogrešanih borcev in poveljnikov 4. krajiške brigade',
+    '3-krajiska-proleterska': 'Seznam padlih borcev Tretje proletarske krajiške brigade z osnovnimi osebnimi podatki',
+    '17-slavonska-poginuli': 'Seznam padlih borcev 17. udarne brigade',
+    '17-slavonska-prezivjeli': 'Seznam preživelih borcev 17. udarne brigade',
+    '25-srpska-divizija': 'Seznam padlih borcev in poveljnikov 25. divizije',
+    '1-sumadijska': 'Seznama padlih borcev in poveljnikov ter borcev, ki so vojno preživeli',
+    '18-slavonska': 'Seznam padlih in umrlih borcev in poveljnikov 18. udarne brigade ter seznam preživelih borcev',
+    '4-banijska': 'Seznam borcev 4. banijske brigade',
+    '4-srpska': 'Seznam borcev Četrte srbske udarne brigade',
+    '7-vojvodjanska': 'Seznam borcev 7. vojvodinske udarne brigade (preživeli, padli in po vojni umrli)',
+    '19-bircanska': 'Seznam borcev 19. birčanske brigade',
+    '2-krajiska': 'Seznam padlih in umrlih borcev in poveljnikov 2. krajiške brigade v NOB',
+    'tuzlanski-odred': 'Seznam borcev Tuzelskega partizanskega odreda',
+    'uzicki-odred': 'Seznam borcev Užiškega partizanskega odreda, ki so padli v narodnoosvobodilni vojni 1941–1945',
+    '14-srpska': 'Seznam padlih borcev in poveljnikov odreda in 14. srbske brigade',
+    '7-crnogorska-omladinska': 'Seznam padlih borcev 7. črnogorske mladinske brigade',
+    '17-majevicka': 'Seznam borcev Tretjega majeviškega partizanskega odreda in 17. majeviške brigade, ki so padli ali umrli v NOB',
+    '25-brodska-poginuli': 'Seznam padlih borcev Brodske brigade 28. divizije',
+    '25-brodska-sastav': 'Seznam borcev in poveljnikov, ki so bili oktobra 1943 v Brodski brigadi',
+    '25-srpska-brigada': 'Seznam padlih in seznam ranjenih borcev in poveljnikov 25. srbske brigade',
+    '21-tuzlanska': 'Seznam padlih borcev in poveljnikov 21. tuzelske brigade',
+    '53-srednjobosanska-divizija': 'Seznam padlih, ujetih in pogrešanih borcev 53. srednjebosanske divizije',
+    '21-slavonska': 'Seznam padlih, umrlih in pogrešanih borcev in poveljnikov 21. slavonske udarne brigade',
+    '32-divizija': 'Seznam borcev 32. divizije in Zahodne skupine odredov (padli so označeni z zvezdico, pogrešani s pomišljajem)',
+    '1-dalmatinska':
+      'Seznam borcev Prve dalmatinske proletarske brigade, ki so padli v narodnoosvobodilni vojni (besedilo na znaci.org, brez skenirane knjige)',
+    '16-slavonska-omladinska':
+      'Seznam padlih borcev in poveljnikov brigade; seznam padlih v Pokuplju in na Žumberku; vodstvo brigade od ustanovitve do konca vojne (str. 389–428 knjige)',
+    '8-crnogorska': 'Seznam padlih tovarišev, borcev in poveljnikov brigade (str. 471–501 knjige) in dopolnilni seznam padlih iz Uba (str. 509–510)',
+    'druga-proleterska':
+      'Padli, umrli in pogrešani borci brigade, po kraju in dnevu smrti: Sutjeska, vzhodna Bosna, Pljevlja in Prijepolje, zahodna Srbija, sremska fronta (str. 274–278 knjige)',
+  },
+  mk: {
+    'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
+    'prva-proleterska-1': 'Список на борците, прв том (A–I)',
+    'prva-proleterska-2': 'Список на борците, втор том (I–O)',
+    'prva-proleterska-3': 'Список на борците, трет том (O–Ž)',
+    'druga-licka-spisak': 'Список на загинатите, починатите и исчезнатите борци и старешини на бригадата',
+    'druga-licka-sjecanja-prezivjeli': 'Список на преживеаните борци и старешини на Втората личка пролетерска бригада (од зборникот спомени)',
+    'druga-licka-sjecanja-poginuli':
+      'Список на загинатите, починатите и исчезнатите борци на Втората личка пролетерска бригада (од зборникот спомени); повеќето ги има и на списокот на Воено-историскиот институт',
+    'treca-proleterska-brigada': 'Монографија, библиотека „Ratna prošlost naših naroda“, кн. 144',
+    'treca-proleterska-poginuli-knj3':
+      'Список на загинатите и починатите борци и старешини по години, 1942–1945 (1.374 имиња; во овој примерок недостасуваат страниците со почетокот на 1944 година)',
+    'treca-proleterska-formiranje':
+      'Истиот список како во монографијата на Жарко Видовиќ, на кирилица, како што го средила редакцијата на зборникот спомени; по баталјони и чети',
+    'ljubljanska-brigada': 'Монографија на Љубљанската бригада',
+    '13-proleterska-spisak': 'Список на загинатите и преживеаните борци (трет дел од монографијата)',
+    '2-dalmatinska-proleterska': 'Список на борците на 2-ра далматинска пролетерска бригада на НОВЈ',
+    '4-splitska-brigada': 'Список на загинатите и преживеаните борци на бригадата',
+    'prva-vojvodjanska': 'Список на борците на Првата војводинска бригада',
+    '5-kozaracka': 'Список на загинатите, исчезнатите и починатите борци и старешини на бригадата',
+    '2-vojvodjanska': 'Список на борците и старешините на 2-ра војводинска бригада',
+    '8-krajiska': 'Список на загинатите и починатите во НОБ од 8-ма краишка бригада',
+    '6-krajiska': 'Список на загинатите и починатите борци и старешини на бригадата, со дополнителен список',
+    '4-krajiska': 'Список на загинатите, починатите и исчезнатите борци и старешини на 4-та краишка бригада',
+    '3-krajiska-proleterska': 'Список на загинатите борци на Третата пролетерска краишка бригада, со основните лични податоци',
+    '17-slavonska-poginuli': 'Список на загинатите борци на 17-та ударна бригада',
+    '17-slavonska-prezivjeli': 'Список на преживеаните борци на 17-та ударна бригада',
+    '25-srpska-divizija': 'Список на загинатите борци и старешини на 25-та дивизија',
+    '1-sumadijska': 'Списоци на загинатите борци и старешини и на борците што ја преживеаја војната',
+    '18-slavonska': 'Список на загинатите и починатите борци и старешини на 18-та ударна бригада и список на преживеаните борци',
+    '4-banijska': 'Список на борците на 4-та банијска бригада',
+    '4-srpska': 'Список на борците на Четвртата српска ударна бригада',
+    '7-vojvodjanska': 'Список на борците на 7-ма војводинска ударна бригада (преживеани, загинати и починати по војната)',
+    '19-bircanska': 'Список на борците на 19-та бирчанска бригада',
+    '2-krajiska': 'Список на загинатите и починатите борци и старешини на 2-ра краишка бригада во НОБ',
+    'tuzlanski-odred': 'Список на борците на Тузланскиот партизански одред',
+    'uzicki-odred': 'Список на борците на Ужичкиот партизански одред загинати во народноослободителната војна 1941–1945',
+    '14-srpska': 'Список на загинатите борци и старешини на одредот и на 14-та српска бригада',
+    '7-crnogorska-omladinska': 'Список на загинатите борци на 7-ма црногорска младинска бригада',
+    '17-majevicka': 'Список на борците на Третиот мајевички партизански одред и на 17-та мајевичка бригада загинати или починати во НОБ',
+    '25-brodska-poginuli': 'Список на загинатите борци на Бродската бригада од 28-ма дивизија',
+    '25-brodska-sastav': 'Список на борците и старешините што биле во Бродската бригада во октомври 1943',
+    '25-srpska-brigada': 'Список на загинатите и список на ранетите борци и старешини на 25-та српска бригада',
+    '21-tuzlanska': 'Список на загинатите борци и старешини на 21-ва тузланска бригада',
+    '53-srednjobosanska-divizija': 'Список на загинатите, заробените и исчезнатите борци на 53-та среднобосанска дивизија',
+    '21-slavonska': 'Список на загинатите, починатите и исчезнатите борци и старешини на 21-ва славонска ударна бригада',
+    '32-divizija': 'Список на борците на 32-ра дивизија и на Западната група одреди (загинатите се означени со ѕвездичка, исчезнатите со цртичка)',
+    '1-dalmatinska':
+      'Список на борците на Првата далматинска пролетерска бригада загинати во народноослободителната војна (текст на znaci.org, без скенирана книга)',
+    '16-slavonska-omladinska':
+      'Список на загинатите борци и старешини на бригадата; список на загинатите во Покупје и на Жумберак; раководството на бригадата од формирањето до крајот на војната (стр. 389–428 од книгата)',
+    '8-crnogorska': 'Список на паднатите другари, борци и старешини на бригадата (стр. 471–501 од книгата) и дополнителен список на паднатите од Уб (стр. 509–510)',
+    'druga-proleterska':
+      'Загинати, починати и исчезнати борци на бригадата, по место и ден на загинувањето: Сутјеска, источна Босна, Пљевља и Пријеполе, западна Србија, Сремскиот фронт (стр. 274–278 од книгата)',
+  },
+  en: {
+    'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
+    'prva-proleterska-1': 'Roll of the brigade, volume one (A–I)',
+    'prva-proleterska-2': 'Roll of the brigade, volume two (I–O)',
+    'prva-proleterska-3': 'Roll of the brigade, volume three (O–Ž)',
+    'druga-licka-spisak': 'The brigade’s Partisans and officers who were killed, died or went missing',
+    'druga-licka-sjecanja-prezivjeli': 'Surviving Partisans and officers of the 2nd Lika Proletarian Brigade (from a collection of memoirs)',
+    'druga-licka-sjecanja-poginuli':
+      'Partisans of the 2nd Lika Proletarian Brigade who were killed, died or went missing (from a collection of memoirs); most are also on the Military History Institute’s list',
+    'treca-proleterska-brigada': 'Brigade history, in the series Ratna prošlost naših naroda, vol. 144',
+    'treca-proleterska-poginuli-knj3':
+      'Partisans and officers who were killed or died, year by year, 1942–1945 (1,374 names; this copy lacks the pages for early 1944)',
+    'treca-proleterska-formiranje':
+      'The same roll as in Žarko Vidović’s brigade history, in Cyrillic, as the editors of the memoir collection arranged it, by battalion and company',
+    'ljubljanska-brigada': 'History of the Ljubljana Brigade',
+    '13-proleterska-spisak': 'The fallen and the survivors (part three of the brigade history)',
+    '2-dalmatinska-proleterska': 'Roll of the 2nd Dalmatian Proletarian Brigade',
+    '4-splitska-brigada': 'The brigade’s fallen and survivors',
+    'prva-vojvodjanska': 'Roll of the 1st Vojvodina Brigade',
+    '5-kozaracka': 'The brigade’s Partisans and officers who were killed, went missing or died',
+    '2-vojvodjanska': 'Partisans and officers of the 2nd Vojvodina Brigade',
+    '8-krajiska': 'Members of the 8th Krajina Brigade who were killed or died in the war',
+    '6-krajiska': 'The brigade’s Partisans and officers who were killed or died, with a supplementary list',
+    '4-krajiska': 'Partisans and officers of the 4th Krajina Brigade who were killed, died or went missing',
+    '3-krajiska-proleterska': 'Fallen Partisans of the 3rd Krajina Proletarian Brigade, with their basic personal details',
+    '17-slavonska-poginuli': 'Fallen Partisans of the 17th Assault Brigade',
+    '17-slavonska-prezivjeli': 'Surviving Partisans of the 17th Assault Brigade',
+    '25-srpska-divizija': 'Fallen Partisans and officers of the 25th Division',
+    '1-sumadijska': 'Lists of fallen Partisans and officers, and of Partisans who survived the war',
+    '18-slavonska': 'Partisans and officers of the 18th Assault Brigade who were killed or died, and a list of survivors',
+    '4-banijska': 'Roll of the 4th Banija Brigade',
+    '4-srpska': 'Roll of the 4th Serbian Assault Brigade',
+    '7-vojvodjanska': 'Roll of the 7th Vojvodina Assault Brigade (survivors, the fallen, and those who died after the war)',
+    '19-bircanska': 'Roll of the 19th Birač Brigade',
+    '2-krajiska': 'Partisans and officers of the 2nd Krajina Brigade who were killed or died in the war',
+    'tuzlanski-odred': 'Roll of the Tuzla Partisan Detachment',
+    'uzicki-odred': 'Members of the Užice Partisan Detachment killed in the war of 1941–1945',
+    '14-srpska': 'Fallen Partisans and officers of the detachment and of the 14th Serbian Brigade',
+    '7-crnogorska-omladinska': 'Fallen Partisans of the 7th Montenegrin Youth Brigade',
+    '17-majevicka': 'Members of the 3rd Majevica Partisan Detachment and the 17th Majevica Brigade who were killed or died in the war',
+    '25-brodska-poginuli': 'Fallen Partisans of the Brod Brigade, 28th Division',
+    '25-brodska-sastav': 'Partisans and officers who served in the Brod Brigade in October 1943',
+    '25-srpska-brigada': 'Lists of the killed and of the wounded among the Partisans and officers of the 25th Serbian Brigade',
+    '21-tuzlanska': 'Fallen Partisans and officers of the 21st Tuzla Brigade',
+    '53-srednjobosanska-divizija': 'Partisans of the 53rd Central Bosnian Division who were killed, captured or went missing',
+    '21-slavonska': 'Partisans and officers of the 21st Slavonian Assault Brigade who were killed, died or went missing',
+    '32-divizija': 'Roll of the 32nd Division and the Western Group of Detachments (an asterisk marks the killed, a dash the missing)',
+    '1-dalmatinska': 'Members of the 1st Dalmatian Proletarian Brigade killed in the war (text on znaci.org, with no scanned book)',
+    '16-slavonska-omladinska':
+      'The brigade’s fallen Partisans and officers; those killed in Pokuplje and on Žumberak; the brigade’s leaders from its formation to the end of the war (pp. 389–428 of the book)',
+    '8-crnogorska': 'The brigade’s fallen comrades, Partisans and officers (pp. 471–501 of the book), and a further list of the fallen from Ub (pp. 509–510)',
+    'druga-proleterska':
+      'The brigade’s Partisans who were killed, died or went missing, by place and day: the Sutjeska, eastern Bosnia, Pljevlja and Prijepolje, western Serbia, the Syrmian Front (pp. 274–278 of the book)',
+  },
+}
+
+// The part of a title the site added after " — ", as the record's book switch shows it
+const PART: Partial<Record<Lang, Texts>> = {
+  sl: {
+    'tom 1': '1. zvezek',
+    'tom 2': '2. zvezek',
+    'tom 3': '3. zvezek',
+    'spisak poginulih': 'seznam padlih',
+    'spisak preživjelih': 'seznam preživelih',
+    'spisak poginulih (zbornik sjećanja)': 'seznam padlih (zbornik spominov)',
+    'spisak poginulih i umrlih (zbornik sjećanja, knj. 3)': 'seznam padlih in umrlih (zbornik spominov, 3. knjiga)',
+    'spisak boraca i starešina na dan formiranja (zbornik sjećanja)': 'seznam na dan ustanovitve (zbornik spominov)',
+    'poginuli': 'padli',
+    'preživjeli': 'preživeli',
+    'zbornik sjećanja': 'zbornik spominov',
+    'spisak poginulih boraca': 'seznam padlih',
+    'spisak poginulih i umrlih': 'seznam padlih in umrlih',
+    'sastav u oktobru 1943.': 'sestava oktobra 1943',
+    'spiskovi poginulih i ranjenih': 'seznama padlih in ranjenih',
+    'spisak poginulih, zarobljenih i nestalih': 'seznam padlih, ujetih in pogrešanih',
+    'spisak poginulih, umrlih i nestalih': 'seznam padlih, umrlih in pogrešanih',
+    'spisak boraca': 'seznam borcev',
+    'spiskovi poginulih i rukovodilaca': 'seznama padlih in vodstva',
+    'ilustrovana monografija (1942—1992)': 'ilustrirana monografija (1942–1992)',
+  },
+  mk: {
+    'tom 1': 'том 1',
+    'tom 2': 'том 2',
+    'tom 3': 'том 3',
+    'spisak poginulih': 'список на загинатите',
+    'spisak preživjelih': 'список на преживеаните',
+    'spisak poginulih (zbornik sjećanja)': 'список на загинатите (зборник спомени)',
+    'spisak poginulih i umrlih (zbornik sjećanja, knj. 3)': 'список на загинатите и починатите (зборник спомени, кн. 3)',
+    'spisak boraca i starešina na dan formiranja (zbornik sjećanja)': 'список на денот на формирањето (зборник спомени)',
+    'poginuli': 'загинати',
+    'preživjeli': 'преживеани',
+    'zbornik sjećanja': 'зборник спомени',
+    'spisak poginulih boraca': 'список на загинатите',
+    'spisak poginulih i umrlih': 'список на загинатите и починатите',
+    'sastav u oktobru 1943.': 'составот во октомври 1943',
+    'spiskovi poginulih i ranjenih': 'списоци на загинатите и ранетите',
+    'spisak poginulih, zarobljenih i nestalih': 'список на загинатите, заробените и исчезнатите',
+    'spisak poginulih, umrlih i nestalih': 'список на загинатите, починатите и исчезнатите',
+    'spisak boraca': 'список на борците',
+    'spiskovi poginulih i rukovodilaca': 'списоци на загинатите и на раководството',
+    'ilustrovana monografija (1942—1992)': 'илустрирана монографија (1942–1992)',
+  },
+  en: {
+    'tom 1': 'volume 1',
+    'tom 2': 'volume 2',
+    'tom 3': 'volume 3',
+    'spisak poginulih': 'the fallen',
+    'spisak preživjelih': 'the survivors',
+    'spisak poginulih (zbornik sjećanja)': 'the fallen (memoirs)',
+    'spisak poginulih i umrlih (zbornik sjećanja, knj. 3)': 'the fallen and the dead (memoirs, vol. 3)',
+    'spisak boraca i starešina na dan formiranja (zbornik sjećanja)': 'roll on the day of formation (memoirs)',
+    'poginuli': 'the fallen',
+    'preživjeli': 'the survivors',
+    'zbornik sjećanja': 'memoirs',
+    'spisak poginulih boraca': 'the fallen',
+    'spisak poginulih i umrlih': 'the fallen and the dead',
+    'sastav u oktobru 1943.': 'roll of October 1943',
+    'spiskovi poginulih i ranjenih': 'the killed and the wounded',
+    'spisak poginulih, zarobljenih i nestalih': 'the killed, captured and missing',
+    'spisak poginulih, umrlih i nestalih': 'the killed, dead and missing',
+    'spisak boraca': 'roll',
+    'spiskovi poginulih i rukovodilaca': 'the fallen and the leaders',
+    'ilustrovana monografija (1942—1992)': 'illustrated history (1942–1992)',
+  },
+}
+
+// Author lines that are not a person's name
+const AUTHOR: Partial<Record<Lang, [RegExp, string][]>> = {
+  sl: [[/^Grupa autora$/, 'Skupina avtorjev'], [/^Zbornik sjećanja$/, 'Zbornik spominov'], [/^Zbornik$/, 'Zbornik'],
+    [/^Vojnoistorijski institut$/, 'Vojnozgodovinski inštitut'], [/ i dr\./, ' idr.']],
+  mk: [[/^Grupa autora$/, 'Група автори'], [/^Zbornik sjećanja$/, 'Зборник спомени'], [/^Zbornik$/, 'Зборник'],
+    [/^Vojnoistorijski institut$/, 'Воено-историски институт'], [/ i dr\./, ' и др.'], [/\(ur\.\)/, '(ур.)']],
+  en: [[/^Grupa autora$/, 'Various authors'], [/^Zbornik sjećanja$/, 'Memoir collection'], [/^Zbornik$/, 'Collection'],
+    [/^Vojnoistorijski institut$/, 'Military History Institute'], [/ i dr\./, ' et al.'], [/\(ur\.\)/, '(ed.)']],
+}
+
+export function sourceDescription(source: PdfSource, lang: Lang): string | undefined {
+  return DESCRIPTION[lang]?.[source.id] ?? source.description
+}
+
+export function sourceAuthor(source: PdfSource, lang: Lang): string {
+  return (AUTHOR[lang] ?? []).reduce((text, [from, to]) => text.replace(from, to), source.author)
+}
+
+/** The list a title names after " — ", in the language: "Brodska brigada — spisak poginulih boraca" -> "the fallen" */
+export function titlePart(title: string, lang: Lang): string {
+  const part = title.includes(' — ') ? title.split(' — ').pop()! : title
+  return PART[lang]?.[part] ?? part
+}
+
+export function missingSourceTexts(ids: string[]): string[] {
+  return (Object.entries(DESCRIPTION) as [Lang, Texts][]).flatMap(([lang, texts]) =>
+    ids.filter((id) => !texts[id]).map((id) => `${lang}:${id}`))
+}

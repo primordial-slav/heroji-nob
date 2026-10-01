@@ -1,31 +1,26 @@
 'use client'
 
 import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
-import { units } from './data/units'
-import { useFuseSearch } from './lib/useFuseSearch'
-import { fullRecord, loadSearchIndex } from './lib/searchIndex'
-import type { Soldier } from './lib/types'
-import SoldierModal from './components/SoldierModal'
-import SoldierResults from './components/SoldierResults'
-import { SearchIcon } from './components/Icons'
-import { searchAllPlaceholder } from './lib/totals'
-import BandPhoto from './components/BandPhoto'
-import OnThisDay from './components/OnThisDay'
-import UnitsByYear from './components/UnitsByYear'
-import PortraitRails from './components/PortraitRails'
-import { HOME_RESET } from './components/HomeLink'
-import SearchFilters, { FilterToggle, ShareSearch } from './components/SearchFilters'
-import { NO_FILTERS, applyFilters, filterCount, narrows, readSearch, writeSearch } from './lib/searchFilters'
+import { units } from '@/app/data/units'
+import { useFuseSearch } from '@/app/lib/useFuseSearch'
+import { fullRecord, loadSearchIndex } from '@/app/lib/searchIndex'
+import type { Soldier } from '@/app/lib/types'
+import SoldierModal from '@/app/components/SoldierModal'
+import SoldierResults from '@/app/components/SoldierResults'
+import { SearchIcon } from '@/app/components/Icons'
+import { totalNames } from '@/app/lib/totals'
+import BandPhoto from '@/app/components/BandPhoto'
+import OnThisDay from '@/app/components/OnThisDay'
+import UnitsByYear from '@/app/components/UnitsByYear'
+import PortraitRails from '@/app/components/PortraitRails'
+import { HOME_RESET } from '@/app/components/HomeLink'
+import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
+import { NO_FILTERS, applyFilters, filterCount, narrows, readSearch, writeSearch } from '@/app/lib/searchFilters'
+import { useT } from '@/app/i18n/LangContext'
+import RichText from '@/app/i18n/RichText'
 
-// One of each kind of search: a surname, a first name with the surname, a village, a surname in one place
-const EXAMPLES: { label: string; query: string; place?: string }[] = [
-  { label: 'Kovačević', query: 'Kovačević' },
-  { label: 'Milan Petrović', query: 'Milan Petrović' },
-  { label: 'Bruvno', query: 'Bruvno' },
-  { label: 'Petrović iz Gračaca', query: 'Petrović', place: 'Gračac' },
-]
-
-export default function Home() {
+export default function HomePage() {
+  const t = useT()
   const [allSoldiers, setAllSoldiers] = useState<Soldier[]>([])
   const [loading, setLoading] = useState(true)
   const [loadFailed, setLoadFailed] = useState(false)
@@ -123,15 +118,15 @@ export default function Home() {
     <div>
       <section className="masthead" aria-labelledby="finder-title">
         <div className="container finder">
-          <h1 id="finder-title">Pretraga boraca</h1>
+          <h1 id="finder-title">{t.home.title}</h1>
           <div className="finder-field">
-            <label htmlFor="search" className="visually-hidden">Prezime, ime ili mesto</label>
+            <label htmlFor="search" className="visually-hidden">{t.home.fieldLabel}</label>
             <span className="search-icon"><SearchIcon size={20} /></span>
             <input
               id="search"
               type="search"
               className="search-input"
-              placeholder={searchAllPlaceholder()}
+              placeholder={t.home.placeholder(totalNames)}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               autoComplete="off"
@@ -146,8 +141,8 @@ export default function Home() {
           </div>
           {showFilters && <SearchFilters id="home-filters" filters={filters} onChange={setFilters} withUnit />}
           <p className="finder-hint">
-            <span>Na primer:</span>
-            {EXAMPLES.map((example) => (
+            <span>{t.home.examplesLead}</span>
+            {t.home.examples.map((example) => (
               <button
                 key={example.label}
                 type="button"
@@ -171,31 +166,32 @@ export default function Home() {
           // A first search, or one after an empty result, shows the loading rows until its results are in
           loading || (!loadFailed && pending && listed.length === 0) ? (
             <>
-              <p className="results-count">{loading ? 'Učitavanje spiskova…' : 'Pretraga…'}</p>
+              <p className="results-count">{loading ? t.home.loading : t.results.searching}</p>
               <ul className="loading-rows" aria-hidden="true">
                 {Array.from({ length: 6 }, (_, i) => <li key={i} />)}
               </ul>
             </>
           ) : loadFailed ? (
             <div className="empty">
-              <h2>Spiskovi se nisu učitali</h2>
-              <p>Proverite internet vezu i osvežite stranu.</p>
+              <h2>{t.home.loadFailedTitle}</h2>
+              <p>{t.home.loadFailedText}</p>
             </div>
           ) : listed.length === 0 && filtersSet && !(hasQuery && results.length === 0) ? (
             <div className="empty">
-              <h2>{hasQuery ? <>Nema boraca za „{searchTerm}“ s ovim filterima</> : 'Nema boraca s ovim filterima'}</h2>
+              <h2>{t.filters.noneTitle(hasQuery ? searchTerm : '')}</h2>
               <p>
-                Proverite filtere ili ih{' '}
-                <button type="button" className="link-button" onClick={() => setFilters(NO_FILTERS)}>uklonite</button>.
+                <RichText
+                  text={t.filters.noneText}
+                  render={(part) => (
+                    <button type="button" className="link-button" onClick={() => setFilters(NO_FILTERS)}>{part}</button>
+                  )}
+                />
               </p>
             </div>
           ) : isSearching && listed.length === 0 ? (
             <div className="empty">
-              <h2>Nema boraca za „{searchTerm}“</h2>
-              <p>
-                Pokušajte samo prezime, ili ime i prezime bez očevog imena. Knjige često
-                beleže očevo ime u genitivu, na primer „Milorada“ umesto „Milorad“.
-              </p>
+              <h2>{t.home.noneTitle(searchTerm)}</h2>
+              <p>{t.home.noneText}</p>
             </div>
           ) : (
             <SoldierResults
@@ -209,7 +205,7 @@ export default function Home() {
         ) : (
           <>
             {!loadFailed && <OnThisDay soldiers={allSoldiers} loading={loading} onSelect={openSoldier} />}
-            <h2 className="visually-hidden">Jedinice</h2>
+            <h2 className="visually-hidden">{t.home.unitsTitle}</h2>
             <UnitsByYear units={units} />
           </>
         )}
