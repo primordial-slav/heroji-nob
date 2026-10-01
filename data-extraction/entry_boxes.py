@@ -19,8 +19,10 @@ its column. It stops before:
     flush rely on the next two rules,
   - a vertical gap wider than the book's line spacing (headings, footnotes,
     page numbers, blank space between flush entries),
-  - the end of the column. An entry that runs on to the next column or page
-    is only boxed on the page where it starts.
+  - the end of the column. An entry carried on at the top of the next column
+    of the same page gets a second box there (pdf_rects holds both), when those
+    lines are words of its bio; one that runs on to the next page is only boxed
+    on the page where it starts.
 Scan specks the OCR read as characters in the margins are left out of lines.
 
 It runs last in the data pipeline, after corrections (apply_corrections.py
@@ -291,7 +293,9 @@ def _find_line(page: dict, x: float, y: float):
             dy = abs(ln['top'] - y)
             dx = max(ln['x0'] - x, x - ln['x1'], 0)
             if dy <= 6 and dx <= 80:
-                key = (dy + 0.05 * dx, ci, li)
+                # where two lines are as near (the text layer can join a letter of one column to the other column's
+                # line at the same height, Ljubljanska p.446), the one that begins at the entry's x
+                key = (dy + 0.05 * dx + 0.01 * abs(ln['x0'] - x), ci, li)
                 if best is None or key < best:
                     best = key
     return best[1:] if best else None
@@ -415,6 +419,36 @@ def _set_box(s: dict, page: dict | None, x0: float, x1: float, y1: float):
         s.pop('pdf_x_left', None)
 
 
+def _fold(text: str) -> str:
+    """Lowercase Latin without diacritics (Cyrillic transliterated), to compare page text with a record's bio."""
+    import unicodedata
+    from _parser_scaffold import cyrillic_to_latin
+    text = unicodedata.normalize('NFD', cyrillic_to_latin(text).replace('đ', 'd').replace('Đ', 'd'))
+    return ''.join(c for c in text if not unicodedata.combining(c)).lower()
+
+
+def run_on_lines(col: list[dict], col_starts: set, layout: dict, bio: str) -> list[dict]:
+    """The lines at the top of the next column that carry on an entry cut off by the foot of the previous one:
+    lines set as continuations by the book's indentation, up to a known entry start or a gap, and only when the
+    record's bio holds their words (so a heading or a soldier the data lacks is never taken for the run-on).
+    [] when the column opens with an entry. Books set flush part entries by space only, so there the gap ends it."""
+    if not col or 0 in col_starts or not bio:
+        return []
+    col_left, half = min(ln['x0'] for ln in col), abs(layout['indent']) / 2
+    lines = []
+    for lj, ln in enumerate(col):
+        if lj in col_starts or (lines and ln['top'] - lines[-1]['top'] > layout['gap']):
+            break
+        if layout['style'] != 'flush' and (ln['x0'] >= col_left + half) != (layout['style'] == 'hanging'):
+            break
+        lines.append(ln)
+    words = re.findall(r'[a-z0-9]{3,}', _fold(' '.join(ln['text'] for ln in lines)))
+    folded_bio = _fold(bio)
+    if not words or sum(w in folded_bio for w in words) < 0.75 * len(words):
+        return []
+    return lines
+
+
 def entries(soldiers: list[dict]):
     """Every printed entry of the records: each soldier's own, and those of other books merged into it
     (other_sources, see apply_corrections.apply_merge), which have the same position and box fields."""
@@ -474,6 +508,7 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
                     col = cols[-1] if cols else []
                     right = sorted(ln['x1'] for ln in col)[int(0.9 * (len(col) - 1))] if col else x + 200
                     _set_box(s, page, x, max(right, x + 50), s['pdf_y'] + layout['pitch'])
+                    s.pop('pdf_rects', None)
                     continue
                 ci, li = hit
                 col = page['columns'][ci]
@@ -486,8 +521,23 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
                     if 0.75 < (col[li]['x0'] - left) / layout['indent'] < 1.5:
                         entry_layout = dict(layout, style='flush')
                 lines, why = entry_lines(col, li, col_starts, entry_layout, pno in one_line_pages)
-                _set_box(s, page, min(ln['x0'] for ln in lines), max(ln['x1'] for ln in lines),
-                         max(ln['bottom'] for ln in lines))
+                x0, x1, y1 = min(ln['x0'] for ln in lines), max(ln['x1'] for ln in lines), max(ln['bottom'] for ln in lines)
+                _set_box(s, page, x0, x1, y1)
+                # an entry cut off by the foot of its column, carried on at the top of the next one: a box in each
+                more = []
+                # (a gap before nothing but the page number at the column's foot ends the column too)
+                foot = why == 'end' or why == 'gap' and all(
+                    re.fullmatch(r"[\W\d]{1,8}", ln['text'].strip()) for ln in col[li + len(lines):])
+                if foot and ci + 1 < len(page['columns']) and pno not in one_line_pages:
+                    more = run_on_lines(page['columns'][ci + 1], {lj for (c, lj) in starts[pno] if c == ci + 1},
+                                        layout, s.get('additional_info') or '')
+                if more:
+                    s['pdf_rects'] = [[round(x0, 1), s['pdf_y'], s['pdf_x_end'], s['pdf_y_end']],
+                                      [round(min(ln['x0'] for ln in more), 1), round(more[0]['top'], 1),
+                                       round(max(ln['x1'] for ln in more), 1), round(max(ln['bottom'] for ln in more), 1)]]
+                    stats['run_on'] = stats.get('run_on', 0) + 1
+                else:
+                    s.pop('pdf_rects', None)
                 stats['boxed'] += 1
                 stats['stops'][why] += 1
     if own_cache:
@@ -503,6 +553,8 @@ def box_snapshot(soldiers: list[dict]) -> dict:
 def describe(stats: dict, changed: int) -> str:
     stops = ', '.join(f"{n} {why}" for why, n in stats['stops'].most_common())
     text = f"{stats['boxed']} boxed ({stops}), {changed} changed"
+    if stats.get('run_on'):
+        text += f", {stats['run_on']} carried on in the next column (a second box there)"
     if stats['unmatched']:
         text += f", {stats['unmatched']} with no text line at their start (one-line box)"
     if stats['cleared']:
