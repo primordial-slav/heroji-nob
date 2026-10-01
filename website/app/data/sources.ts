@@ -91,6 +91,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih i umrlih boraca i starješina po godinama, 1942-1945 (1.374 imena; u ovom primjerku nedostaju strane s početkom 1944. godine)'
   },
   {
+    id: 'treca-proleterska-formiranje',
+    title: 'Treća proleterska (sandžačka) brigada — spisak boraca i starešina na dan formiranja (zbornik sjećanja)',
+    author: 'Čedomir Drulović i dr. (ur.)',
+    pdfPath: '/pdfs/treca-proleterska-formiranje.pdf',
+    thumbnail: '/images/pdf-thumbs/treca-proleterska-formiranje.jpg',
+    brigadeName: 'Treća proleterska (sandžačka) brigada',
+    description: 'Isti spisak kao u monografiji Žarka Vidovića, ćirilicom, kako ga je sredila redakcija zbornika sjećanja; po bataljonima i četama'
+  },
+  {
     id: 'ljubljanska-brigada',
     title: '10. slovenska NOV brigada „Ljubljanska"',
     author: 'Boris Vojlah',
