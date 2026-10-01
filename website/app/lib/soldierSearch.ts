@@ -134,18 +134,34 @@ function wordText(text: string | undefined): string {
   return ` ${normalizeForSearch(text ?? '').toLowerCase().replace(NON_WORD, ' ').trim()} `
 }
 
+// Case endings of nouns and adjectives, folded as wordText folds them: "u Gračacu", "iz Divosela", "v Trbovljah"
+const ENDINGS = 'a|e|i|o|u|om|em|im|ih|oj|og|ah|ama|ima|oga|ega|omu|emu'
+
+type QueryWord = { word: string; inBio: RegExp }
+
+/**
+ * A query word, and the bio words that are it in another case. A final vowel
+ * is the ending itself, so "Divoselo" also finds "iz Divosela".
+ */
+function queryWord(word: string): QueryWord {
+  const stem = word.length >= 4 && /[aeiou]$/.test(word) ? word.slice(0, -1) : word
+  return { word, inBio: new RegExp(` (?:${word}|${stem})(?:${ENDINGS})? `) }
+}
+
 /**
  * How well one query word matches a soldier: 0 = a whole word of the name,
- * 1 = the start of a name word, 2 = the start of a word in the bio (so
- * "Gračac" also finds "u Gračacu"), 3 = inside a name word, 4 = only fuzzily.
+ * 1 = the start of a name word, 2 = a word of the bio, in any case ("Gračac"
+ * also finds "u Gračacu"), 3 = the start of another bio word (Divoš, then
+ * Divoselo), 4 = inside a name word, 5 = only fuzzily.
  */
-function wordRank(index: SoldierIndex, idx: number, word: string): number {
+function wordRank(index: SoldierIndex, idx: number, { word, inBio }: QueryWord): number {
   const name = index.nameText[idx] ?? (index.nameText[idx] = wordText(nameWords(index.data[idx])))
   if (name.includes(` ${word} `)) return 0
   if (name.includes(` ${word}`)) return 1
   const info = index.infoText[idx] ?? (index.infoText[idx] = wordText(infoWords(index.data[idx])))
-  if (info.includes(` ${word}`)) return 2
-  return name.includes(word) ? 3 : 4
+  if (inBio.test(info)) return 2
+  if (info.includes(` ${word}`)) return 3
+  return name.includes(word) ? 4 : 5
 }
 
 /** For "whole words only": 0 = a whole word of the name, 1 = a whole word of the bio, -1 = neither */
@@ -235,8 +251,9 @@ export function searchSoldiers(index: SoldierIndex, query: string, wholeWords = 
   const { data, unitMembers, unitOf } = index
   const words = query.toLowerCase().split(NON_WORD).filter(Boolean)
   if (wholeWords) return searchWholeWords(index, words)
+  const queryWords = words.map(queryWord)
   const rankOf = (idx: number) =>
-    words.reduce((sum, word) => sum + wordRank(index, idx, word), 0)
+    queryWords.reduce((sum, word) => sum + wordRank(index, idx, word), 0)
 
   // 0 = no match; a unit factor is always > 0
   const unitFactor = new Float64Array(unitMembers.length)
