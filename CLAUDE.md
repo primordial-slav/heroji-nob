@@ -18,7 +18,7 @@ Historical archive website for searching ~110,400 WWII Yugoslav partisan soldier
 | 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` (at formation); `data-extraction/parse_treca_proleterska_poginuli.py` (fallen, memoir book); `data-extraction/parse_treca_proleterska_formiranje.py` (at formation, Cyrillic reprint) | `treca-proleterska-soldiers.json` | 3 PDFs (at formation; fallen and dead by year, Cyrillic; the formation list reprinted in Cyrillic) | 1,931 |
 | 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,275 |
 | 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,546 |
-| 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,097 |
+| 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,078 |
 | 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,592 |
 | 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` | `3-krajiska-proleterska-soldiers.json` | 1 PDF (two columns) | 2,291 |
 | 11 | 4. Krajiška | `data-extraction/parse_4_krajiska.py` | `4-krajiska-soldiers.json` | 1 PDF (Cyrillic) | 1,670 |
