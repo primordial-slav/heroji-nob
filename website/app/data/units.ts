@@ -56,7 +56,7 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. Spisak je sa dana kad je brigada formirana.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 1922,
+    soldierCount: 1931,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf', '/pdfs/treca-proleterska-formiranje.pdf']
   },
@@ -116,7 +116,7 @@ export const units: Unit[] = [
     nameEn: '2nd Vojvodina Assault Brigade',
     description: 'Formirana 20. aprila 1943. na Majevici. Borci i starešine od formiranja do kraja rata.',
     image: '/images/druga-vojvodjanska-brigada.jpg',
-    soldierCount: 2143,
+    soldierCount: 2149,
     dataFile: '/2-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/2-vojvodjanska.pdf']
   },
@@ -146,7 +146,7 @@ export const units: Unit[] = [
     nameEn: '4th Krajina Assault Brigade',
     description: 'Formirana 9. septembra 1942. u Tičevu kod Bosanskog Grahova. Poginuli, umrli i nestali borci i starešine.',
     image: '/images/cetvrta-krajiska-brigada.jpg',
-    soldierCount: 1663,
+    soldierCount: 1670,
     dataFile: '/4-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/4-krajiska.pdf']
   },
@@ -186,7 +186,7 @@ export const units: Unit[] = [
     nameEn: '1st Šumadija Brigade',
     description: 'Formirana 5. oktobra 1943. Poginuli borci i starešine, i borci koji su preživeli rat.',
     image: '/images/1-sumadijska-brigada.jpg',
-    soldierCount: 320,
+    soldierCount: 324,
     dataFile: '/1-sumadijska-soldiers.json',
     pdfFiles: ['/pdfs/1-sumadijska.pdf']
   },
@@ -216,7 +216,7 @@ export const units: Unit[] = [
     nameEn: '4th Serbian Assault Brigade',
     description: 'Formirana 20. novembra 1943. u Bucima kod Kruševca. Borci brigade, među njima i stranci i borci čije ime nije utvrđeno.',
     image: '/images/4-srpska-brigada.jpg',
-    soldierCount: 6323,
+    soldierCount: 6332,
     dataFile: '/4-srpska-soldiers.json',
     pdfFiles: ['/pdfs/4-srpska.pdf']
   },
@@ -226,7 +226,7 @@ export const units: Unit[] = [
     nameEn: '7th Vojvodina Assault Brigade',
     description: 'Formirana 2. jula 1944. na salašu Mušickog kod Batrovaca. Preživeli, poginuli i borci umrli posle rata, i borci 4. (ruskog) bataljona.',
     image: '/images/7-vojvodjanska-brigada.jpg',
-    soldierCount: 3577,
+    soldierCount: 3578,
     dataFile: '/7-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/7-vojvodjanska.pdf']
   },
@@ -236,7 +236,7 @@ export const units: Unit[] = [
     nameEn: '19th Birač Brigade',
     description: 'Formirana 24. oktobra 1943. u Vlasenici. Borci brigade.',
     image: '/images/19-bircanska-brigada.jpg',
-    soldierCount: 1987,
+    soldierCount: 1989,
     dataFile: '/19-bircanska-soldiers.json',
     pdfFiles: ['/pdfs/19-bircanska.pdf']
   },
@@ -266,7 +266,7 @@ export const units: Unit[] = [
     nameEn: 'Užice Partisan Detachment',
     description: 'Formiran 7. jula 1941. u Užicu. Borci odreda poginuli u ratu 1941–1945.',
     image: '/images/uzicki-odred.jpg',
-    soldierCount: 1282,
+    soldierCount: 1283,
     dataFile: '/uzicki-odred-soldiers.json',
     pdfFiles: ['/pdfs/uzicki-odred.pdf']
   },
