@@ -10,6 +10,7 @@ import SoldierResults from '@/app/components/SoldierResults'
 import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { RECORD_PARAM, findRecord } from '@/app/lib/records'
+import { photoPosition } from '@/app/data/photoFocus'
 
 interface UnitPageClientProps {
   unit: Unit
@@ -58,7 +59,7 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
       <section className="container unit-hero">
         <Link href="/" className="back-link"><ArrowLeftIcon size={16} /> Sve jedinice</Link>
         <div className="unit-hero-body">
-          <img src={unit.image} alt={unit.name} className="unit-hero-photo" />
+          <img src={unit.image} alt={unit.name} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
           <div>
             <h1>{sqQuotes(unit.name)}</h1>
             <p className="unit-hero-desc">{unit.description}</p>

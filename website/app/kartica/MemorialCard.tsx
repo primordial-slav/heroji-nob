@@ -6,6 +6,7 @@ import Link from 'next/link'
 import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
+import { photoPosition } from '@/app/data/photoFocus'
 import {
   RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordDetails, recordPath, sourceTitle,
 } from '@/app/lib/records'
@@ -91,7 +92,7 @@ export default function MemorialCard() {
       <article className="memorial-card">
         {hasPhoto && (
           <div className="memorial-photo">
-            <img src={unit.image} alt="" />
+            <img src={unit.image} alt="" style={{ objectPosition: photoPosition(unit.id) }} />
           </div>
         )}
         <div className="memorial-body">

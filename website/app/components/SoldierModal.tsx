@@ -7,6 +7,7 @@ import { CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
+import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
 import { SoldierMedals, honoursLine } from './Medal'
 import { wasDelivered } from '@/app/lib/formsubmit'
@@ -114,7 +115,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
         {unitRecord && !unitRecord.image.includes('/pdf-thumbs/') && (
           <div className="record-photo">
-            <img src={unitRecord.image} alt="" />
+            <img src={unitRecord.image} alt="" style={{ objectPosition: photoPosition(unitRecord.id) }} />
           </div>
         )}
         <SoldierMedals soldier={soldier} look="foto" className="modal-medals" />
