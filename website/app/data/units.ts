@@ -106,7 +106,7 @@ export const units: Unit[] = [
     nameEn: '5th Krajina (Kozara) Assault Brigade',
     description: 'Formirana 23. septembra 1942. na Kozari. Poginuli, nestali i umrli borci i starešine.',
     image: '/images/peta-kozaracka-brigada.jpg',
-    soldierCount: 1007,
+    soldierCount: 1020,
     dataFile: '/5-kozaracka-soldiers.json',
     pdfFiles: ['/pdfs/5-kozaracka.pdf']
   },
