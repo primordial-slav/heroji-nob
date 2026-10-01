@@ -12,7 +12,7 @@ Historical archive website for searching ~109,100 WWII Yugoslav partisan soldier
 | Code | Name | Parser | JSON | PDF | Count |
 |------|------|--------|------|-----|-------|
 | 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,060 |
-| 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,814 |
+| 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,863 |
 | 3 | Druga Lička | via `scripts/` (fallen); `data-extraction/parse_druga_licka_prezivjeli.py` (survivors); `data-extraction/parse_druga_licka_sjecanja_poginuli.py` (fallen, memoir book) | `druga-licka-soldiers.json` | 3 PDFs (fallen; survivors and fallen from the memoir book, two columns) | 7,545 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,175 |
 | 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` (at formation); `data-extraction/parse_treca_proleterska_poginuli.py` (fallen, memoir book) | `treca-proleterska-soldiers.json` | 2 PDFs (at formation; fallen and dead by year, Cyrillic) | 1,895 |

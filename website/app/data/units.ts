@@ -16,7 +16,7 @@ export const units: Unit[] = [
     nameEn: '1st Lika Proletarian Brigade "Marko Orešković"',
     description: 'Formirana u junu 1942.',
     image: '/images/prva-licka-brigada.jpg',
-    soldierCount: 9814,
+    soldierCount: 9863,
     dataFile: '/soldiers.json',
     pdfFiles: ['/pdfs/prva-licka-proleterska.pdf']
   },
