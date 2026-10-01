@@ -1547,10 +1547,90 @@ body:has(.band-photo[data-ready]) header.masthead {
   margin-top: calc(-1 * var(--space-5) - 2.75rem);
 }
 
-:is(.modal-portrait, .memorial-portrait) :is(a, img, .standin) {
+:is(.modal-portrait, .memorial-portrait) :is(.portrait-open, img, .standin) {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.portrait-open {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+/* A photograph opened over the page */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6) var(--space-4);
+  background: rgba(14, 13, 12, 0.88);
+  cursor: zoom-out;
+}
+
+.lightbox-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  max-width: 100%;
+  cursor: default;
+}
+
+.lightbox-figure img {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border: 4px solid #f4f1ec;
+  filter: grayscale(1);
+}
+
+.lightbox-figure figcaption {
+  display: grid;
+  gap: 0.125rem;
+  justify-items: center;
+  color: #f4f1ec;
+  text-align: center;
+}
+
+.lightbox-name {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+}
+
+.lightbox-credit {
+  font-size: var(--step--1);
+  color: #c9c3ba;
+}
+
+.lightbox-credit a {
+  color: inherit;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 2px;
+  background: rgba(244, 241, 236, 0.12);
+  color: #f4f1ec;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: rgba(244, 241, 236, 0.24);
 }
 
 :is(.modal-portrait, .memorial-portrait) img {
@@ -1575,6 +1655,66 @@ body:has(.band-photo[data-ready]) header.masthead {
   margin-top: var(--space-1);
   font-size: 0.75rem;
   color: var(--ink-muted);
+}
+
+/* Galerija: every portrait we have, small and close together like the plates of a unit's book; the name shows
+   over the face when it is pointed at, and the face opens the soldier's record */
+.gallery-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.25rem, 1fr));
+  gap: 3px;
+  margin-top: var(--space-6);
+}
+
+.gallery-tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: var(--surface-sunk);
+  cursor: pointer;
+}
+
+.gallery-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  filter: var(--photo-filter);
+}
+
+.gallery-name {
+  position: absolute;
+  inset: auto 0 0;
+  padding: var(--space-4) var(--space-1) var(--space-1);
+  background: linear-gradient(to top, rgba(20, 18, 16, 0.85), transparent);
+  color: #fff;
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.gallery-tile:hover .gallery-name,
+.gallery-tile:focus-visible .gallery-name {
+  opacity: 1;
+}
+
+.gallery-tile:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 1px;
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(4.25rem, 1fr));
+  }
 }
 
 .modal-honours {

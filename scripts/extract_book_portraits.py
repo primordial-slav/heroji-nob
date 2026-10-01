@@ -11,7 +11,7 @@ Soldiers' own photographs, for the record popup and the memorial card. Only cert
   Portraits the shape test doesn't pass (a cut-off or pale print, ~50) are left out rather than guessed.
 
 Writes website/public/portreti/<soldier id>.jpg (grey, 240 px high) and website/app/data/portrait-index.json
-({soldier id: {f: file, c: credit, h: source page}}), which website/app/data/portraits.ts reads. Gallery photos are
+({soldier id: {f: the print, v: the large photo, c: credit, h: source page}}), which website/app/data/portraits.ts reads. Gallery photos are
 downloaded once into data-extraction/.cache/znaci_photos/full/.
 
     python scripts/extract_book_portraits.py [--sheet OUT.jpg]
@@ -35,7 +35,8 @@ OUT = PUBLIC / 'portreti'
 INDEX = ROOT / 'website' / 'app' / 'data' / 'portrait-index.json'
 DPI = 200
 S = DPI / 72
-HEIGHT = 240
+HEIGHT = 240          # the print in the record
+LARGE = 900           # the photo opened from it, at most (never enlarged)
 
 BOOKS = [
     # unit data file, PDF, credit shown under the name
@@ -88,6 +89,19 @@ def portrait_box(pg: fitz.Page, rects: list[fitz.Rect], x: float, y: float) -> l
     return [clip.x0 + left / S, clip.y0 + top / S, clip.x0 + right / S, clip.y0 + bot / S]
 
 
+def save(im: Image.Image, sid: str) -> dict:
+    """The print (HEIGHT high) and, where the source is much bigger, the large photo (up to LARGE high)."""
+    small = im.resize((round(im.width * HEIGHT / im.height), HEIGHT), Image.LANCZOS)
+    small.save(OUT / f'{sid}.jpg', quality=80, optimize=True, progressive=True)
+    if im.height < 1.5 * HEIGHT:                         # a book's small print: the print is all there is
+        (OUT / f'{sid}-v.jpg').unlink(missing_ok=True)
+        return {'f': f'{sid}.jpg'}
+    if im.height > LARGE:
+        im = im.resize((round(im.width * LARGE / im.height), LARGE), Image.LANCZOS)
+    im.save(OUT / f'{sid}-v.jpg', quality=84, optimize=True, progressive=True)
+    return {'f': f'{sid}.jpg', 'v': f'{sid}-v.jpg'}
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     index, sheet = {}, []
@@ -108,10 +122,7 @@ def main():
                 continue
             pix = pg.get_pixmap(clip=fitz.Rect(box), dpi=DPI, colorspace=fitz.csGRAY)
             im = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
-            im = im.resize((round(im.width * HEIGHT / im.height), HEIGHT), Image.LANCZOS)
-            name = f"{s['soldier_id']}.jpg"
-            im.save(OUT / name, quality=80, optimize=True, progressive=True)
-            index[s['soldier_id']] = {'f': name, 'c': credit}
+            index[s['soldier_id']] = {**save(im, s['soldier_id']), 'c': credit}
             sheet.append((s['full_name'], im))
             n += 1
         print(f'{data_file}: {n} portraits')
@@ -125,10 +136,7 @@ def main():
         im = Image.open(path).convert('L')
         w, h = im.size
         im = im.crop((int(a * w), int(b * h), int(c * w), int(d * h)))
-        im = im.resize((round(im.width * HEIGHT / im.height), HEIGHT), Image.LANCZOS)
-        name = f'{sid}.jpg'
-        im.save(OUT / name, quality=80, optimize=True, progressive=True)
-        index[sid] = {'f': name, 'c': f'znaci.org, br. {pid}', 'h': f'https://znaci.org/fotografija.php?br={pid}'}
+        index[sid] = {**save(im, sid), 'c': f'znaci.org, br. {pid}', 'h': f'https://znaci.org/fotografija.php?br={pid}'}
     print(f'gallery: {len(GALLERY)} portraits')
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=0, sort_keys=True), encoding='utf-8')
     print(f'{len(index)} portraits → {OUT}')

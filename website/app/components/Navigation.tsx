@@ -6,6 +6,7 @@ import HomeLink from './HomeLink'
 
 const LINKS = [
   { href: '/', label: 'Početna' },
+  { href: '/galerija', label: 'Galerija' },
   { href: '/izvori', label: 'Izvori' },
 ]
 
