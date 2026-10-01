@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941.',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 14060,
+    soldierCount: 14082,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf']
   },
@@ -46,7 +46,7 @@ export const units: Unit[] = [
     nameEn: '2nd Lika Proletarian Brigade',
     description: 'Formirana 1942. Poginuli, umrli i nestali borci, i oni koji su preživeli rat.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 7545,
+    soldierCount: 7589,
     dataFile: '/druga-licka-soldiers.json',
     pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf', '/pdfs/druga-licka-sjecanja-poginuli.pdf']
   },
@@ -66,7 +66,7 @@ export const units: Unit[] = [
     nameEn: '13th Proletarian Assault Brigade "Rade Končar"',
     description: 'Formirana 7. novembra 1942. Poginuli i preživeli borci.',
     image: '/images/13-proleterska-brigada.jpg',
-    soldierCount: 8261,
+    soldierCount: 8275,
     dataFile: '/13-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/13-proleterska-spisak.pdf']
   },
@@ -126,7 +126,7 @@ export const units: Unit[] = [
     nameEn: '8th Krajina Assault Brigade',
     description: 'Formirana 28. decembra 1942. u Cazinu. Borci koji su poginuli ili umrli u ratu.',
     image: '/images/osma-krajiska-brigada.jpg',
-    soldierCount: 1171,
+    soldierCount: 1172,
     dataFile: '/8-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/8-krajiska.pdf']
   },
@@ -136,7 +136,7 @@ export const units: Unit[] = [
     nameEn: '6th Krajina Assault Brigade',
     description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 1825,
+    soldierCount: 1833,
     dataFile: '/6-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/6-krajiska.pdf']
   },
@@ -296,7 +296,7 @@ export const units: Unit[] = [
     nameEn: '17th Majevica Brigade',
     description: 'Poginuli i umrli borci Trećeg majevičkog odreda i 17. majevičke brigade.',
     image: '/images/17-majevicka-brigada.jpg',
-    soldierCount: 900,
+    soldierCount: 902,
     dataFile: '/17-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/17-majevicka.pdf']
   },
@@ -376,7 +376,7 @@ export const units: Unit[] = [
     nameEn: '16th Slavonian Youth Brigade "Jože Vlahović"',
     description: 'Poginuli borci i starešine, poginuli u Pokuplju i na Žumberku, i rukovodioci brigade od formiranja do kraja rata.',
     image: '/images/16-slavonska-omladinska-brigada.jpg',
-    soldierCount: 1121,
+    soldierCount: 1122,
     dataFile: '/16-slavonska-omladinska-soldiers.json',
     pdfFiles: ['/pdfs/16-slavonska-omladinska.pdf']
   },
