@@ -14,8 +14,9 @@ its column. It stops before:
     data doesn't know about: back at the first line's x where continuation
     lines are indented (hanging indent, numbered entries), or indented like the
     first line where only first lines are (Cyrillic books, 6. krajiška's
-    appendix). The style is measured per book and page, from the lines that
-    follow known entry starts; books set flush rely on the next two rules,
+    appendix), after a line that ends a sentence. The style is measured per
+    book and page, from the lines that follow known entry starts; books set
+    flush rely on the next two rules,
   - a vertical gap wider than the book's line spacing (headings, footnotes,
     page numbers, blank space between flush entries),
   - the end of the column. An entry that runs on to the next column or page
@@ -354,13 +355,23 @@ def _style(indent: float) -> str:
     return 'hanging' if indent > 4 else 'first_line' if indent < -4 else 'flush'
 
 
-def _starts_entry(ln: dict, first: dict, layout: dict) -> bool:
-    """Does ln begin a new entry, judged by the book's indentation?"""
+# the end of a sentence, before any closing bracket, quote or footnote mark
+SENTENCE_END = re.compile(r"""[.!?][)\]"»“”*'’]*\s*$""")
+
+
+def _starts_entry(ln: dict, first: dict, layout: dict, prev: dict) -> bool:
+    """Does ln, the line after prev, begin a new entry, judged by the book's indentation?"""
     half = abs(layout['indent']) / 2
     if layout['style'] == 'hanging':
         return ln['x0'] < first['x0'] + half
     if layout['style'] == 'first_line':
-        return ln['x0'] > first['x0'] - half
+        if ln['x0'] <= first['x0'] - half:
+            return False
+        # a line that goes on mid-sentence, or in lowercase, has lost its first characters to the text layer
+        # (2. vojvođanska's "Čortanovci / — Inđija", whose dash is dropped); a line far right of the indent,
+        # a page number or a heading, ends the entry all the same
+        return (ln['x0'] > first['x0'] + abs(layout['indent'])
+                or bool(SENTENCE_END.search(prev['text'])) and not ln['text'][:1].islower())
     return False
 
 
@@ -384,7 +395,7 @@ def entry_lines(col: list[dict], li: int, starts: set, layout: dict, one_line: b
             return lines, 'one_line'
         if step > (layout['first_gap'] if len(lines) == 1 else layout['gap']):
             return lines, 'gap'
-        if _starts_entry(ln, first, layout):
+        if _starts_entry(ln, first, layout, prev):
             return lines, 'indent'
         lines.append(ln)
     return lines, 'end'
