@@ -55,7 +55,12 @@ PDF_DIR = ROOT / 'website' / 'public' / 'pdfs'
 CACHE_DIR = _HERE / '.cache' / 'entry_boxes'
 CACHE_VERSION = 3
 
-BOX_FIELDS = ('pdf_x_end', 'pdf_y_end', 'pdf_x_left')
+BOX_FIELDS = ('pdf_x_end', 'pdf_y_end', 'pdf_x_left', 'pdf_rects')
+
+# Lists that run the names on, comma after comma, under each heading (Druga proleterska's fallen, by place and
+# date): their parser boxes each name's own words, in two boxes (pdf_rects) where the name runs on to the next
+# line, and those boxes are kept; a column-down box would hold a dozen names.
+INLINE_ENTRIES = {'druga-proleterska.pdf'}
 
 
 # ─────────────────────────────────────────────
@@ -418,7 +423,9 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
     stats = {'boxed': 0, 'unmatched': 0, 'cleared': 0, 'stops': Counter(), 'layouts': {}}
     by_page: dict[str, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
     for s in entries(soldiers):
-        if s.get('pdf_file') and s.get('pdf_page') and s.get('pdf_y') is not None:
+        if s.get('pdf_file') in INLINE_ENTRIES and s.get('pdf_y') is not None:
+            stats['inline'] = stats.get('inline', 0) + 1
+        elif s.get('pdf_file') and s.get('pdf_page') and s.get('pdf_y') is not None:
             by_page[s['pdf_file']][int(s['pdf_page'])].append(s)
         elif any(k in s for k in BOX_FIELDS):
             for k in BOX_FIELDS:
@@ -489,6 +496,8 @@ def describe(stats: dict, changed: int) -> str:
         text += f", {stats['unmatched']} with no text line at their start (one-line box)"
     if stats['cleared']:
         text += f", {stats['cleared']} without a position (box removed)"
+    if stats.get('inline'):
+        text += f", {stats['inline']} run-on names left as their parser boxed them"
     if stats.get('no_pdf'):
         text += f", {stats['no_pdf']} left alone (their PDF isn't in website/public/pdfs)"
     return text

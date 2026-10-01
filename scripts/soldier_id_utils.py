@@ -53,6 +53,7 @@ BRIGADE_CODES = {
     36: '1. Dalmatinska',
     37: '16. Slavonska omladinska',
     38: '8. Crnogorska',
+    39: 'Druga proleterska',
     # Add new brigades here with next available code
 }
 

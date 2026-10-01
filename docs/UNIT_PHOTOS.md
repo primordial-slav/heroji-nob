@@ -55,3 +55,4 @@ Point the unit's `image` in `units.ts` at `/images/<Image>` when it's added.
 |---|---|---|---|
 | 12. dalmatinska (1. otočka) brigada | `12-dalmatinska-brigada.jpg` | [znaci 5084](https://www.znaci.org/fotografija.php?br=5084) | Borci 12. dalmatinske brigade na proslavi Oktobarske revolucije u Nerežišću, novembar 1943. |
 | 3. makedonska brigada | `3-makedonska-brigada.jpg` | [znaci 13204](https://www.znaci.org/fotografija.php?br=13204) | Borci partizanskog bataljona Stevan Naumov 3. makedonske brigade, 1944. |
+| 2. proleterska brigada | `druga-proleterska-brigada.jpg` | [znaci 3451](https://www.znaci.org/fotografija.php?br=3451) | Borci 2. proleterske brigade za vreme marša kroz istočnu Bosnu, prema Majevici, jula 1943. — The brigade on the march through eastern Bosnia toward Majevica, July 1943. |

@@ -1928,7 +1928,6 @@
     "death_place": "Livno",
     "pdf_x_end": 470.0,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036000038",
@@ -3501,7 +3500,6 @@
     "death_place": "Zelengora",
     "pdf_x_end": 460.5,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036000068",
@@ -4322,7 +4320,6 @@
     "ethnicity": "Hrvat",
     "occupation": "podoficir",
     "pdf_x_end": 463.1,
-    "unit_detail": "3. bataljon",
     "other_sources": [
       {
         "soldier_id": "0008000609",
@@ -7019,7 +7016,6 @@
     "death_type": "umro",
     "death_date": "1978",
     "pdf_x_end": 463.2,
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0001000638",
@@ -10774,7 +10770,6 @@
     "death_date": "1943",
     "pdf_x_end": 452.6,
     "rank": "bolničarka",
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0036000230",
@@ -15882,7 +15877,6 @@
     "death_date": "1963",
     "rank": "komandant brigade",
     "pdf_x_end": 459.4,
-    "unit_detail": "I bataljon",
     "other_sources": [
       {
         "soldier_id": "0001001343",
@@ -19192,7 +19186,6 @@
     "occupation": "zemljoradnik",
     "rank": "zamjenik komandira čete",
     "pdf_x_end": 468.5,
-    "unit_detail": "II bataljon",
     "other_sources": [
       {
         "soldier_id": "0001001642",
@@ -19249,7 +19242,6 @@
     "occupation": "zemljoradnik",
     "pdf_x_end": 469.4,
     "rank": "borac",
-    "unit_detail": "VI bataljon",
     "other_sources": [
       {
         "soldier_id": "0001001643",
@@ -19327,7 +19319,6 @@
     "occupation": "zemljoradnik",
     "pdf_x_end": 469.7,
     "rank": "komandir voda",
-    "unit_detail": "VI bataljon",
     "other_sources": [
       {
         "soldier_id": "0001001644",
@@ -21893,7 +21884,6 @@
     "death_place": "Miljevina",
     "pdf_x_end": 470.5,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036002045",
@@ -22069,7 +22059,6 @@
     "occupation": "student medicine",
     "pdf_x_end": 470.1,
     "rank": "borac",
-    "unit_detail": "VI bataljon",
     "other_sources": [
       {
         "soldier_id": "0001001893",
@@ -25029,7 +25018,6 @@
     "death_place": "Miljevina",
     "pdf_x_end": 445.5,
     "rank": "vodnik",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036000461",
@@ -29220,7 +29208,6 @@
     "death_place": "Zelengora",
     "pdf_x_end": 440.9,
     "rank": "borac",
-    "unit_detail": "I bataljon",
     "other_sources": [
       {
         "soldier_id": "0001002901",
@@ -30947,7 +30934,6 @@
     "death_date": "1979",
     "rank": "komandant brigade",
     "pdf_x_end": 472.0,
-    "unit_detail": "VI bataljon",
     "other_sources": [
       {
         "soldier_id": "0001003069",
@@ -34089,7 +34075,6 @@
     "death_place": "Orahovo, Foča",
     "pdf_x_end": 448.0,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036000623",
@@ -38224,7 +38209,6 @@
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
     "pdf_x_end": 453.2,
-    "unit_detail": "3. četa, 3. bataljon",
     "other_sources": [
       {
         "soldier_id": "0008001444",
@@ -39044,7 +39028,6 @@
     "ethnicity": "Srbin",
     "occupation": "advokatski pripravnik",
     "rank": "službenik OZNE Jugoslavije",
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0001004107",
@@ -40707,7 +40690,6 @@
     "death_place": "kod s. Vrdi, Mostar",
     "pdf_x_end": 465.9,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036000760",
@@ -54469,7 +54451,36 @@
     "death_type": "poginuo",
     "death_date": "13. 6. 1943",
     "death_place": "Miljevina",
-    "pdf_x_end": 359.3
+    "pdf_x_end": 359.3,
+    "other_sources": [
+      {
+        "soldier_id": "0039000414",
+        "name": "Lipovina N Savo",
+        "additional_info": "poginuo 13. juna 1943, Miljevina (proboj drugog neprijateljskog obruča na putu Foča — Kalinovik); Sutjeska (15. maj — 19. jun 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 493.3,
+        "pdf_y": 401.5,
+        "pdf_x_end": 508.5,
+        "pdf_y_end": 421.7,
+        "pdf_x_left": 330.7,
+        "pdf_rects": [
+          [
+            493.3,
+            401.5,
+            508.5,
+            411.2
+          ],
+          [
+            330.7,
+            412.0,
+            404.8,
+            421.7
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lise",
@@ -56132,7 +56143,6 @@
     "death_type": "zarobljen",
     "pdf_x_end": 474.2,
     "rank": "borac",
-    "unit_detail": "prištapske jedinice",
     "other_sources": [
       {
         "soldier_id": "0001006169",
@@ -58206,7 +58216,21 @@
     "death_type": "poginuo",
     "death_date": "20. 1. 1944",
     "death_place": "na Bijelom Brdu, Priboj",
-    "pdf_x_end": 459.8
+    "pdf_x_end": 459.8,
+    "other_sources": [
+      {
+        "soldier_id": "0039000437",
+        "name": "Maljković Đure Nikola",
+        "additional_info": "poginuo 21. januara 1944, Bela Glava (G. Jablanica na Zlatiboru); Zapadna Srbija (23. decembar 1943 — 30. maj 1944)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 345.2,
+        "pdf_y": 257.0,
+        "pdf_x_end": 433.4,
+        "pdf_y_end": 267.2,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Maljković",
@@ -59810,7 +59834,6 @@
     "death_date": "18. 6. 1943",
     "pdf_x_end": 447.0,
     "rank": "borac",
-    "unit_detail": "II bataljon",
     "death_place": "Miljevina, Foča",
     "other_sources": [
       {
@@ -61555,7 +61578,6 @@
     "death_place": "Sutjeska",
     "pdf_x_end": 460.4,
     "rank": "borac",
-    "unit_detail": "2. bataljon",
     "other_sources": [
       {
         "soldier_id": "0005010636",
@@ -63517,7 +63539,6 @@
     "death_place": "Kalinovik",
     "pdf_x_end": 440.7,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001222",
@@ -63913,7 +63934,6 @@
     "death_place": "Crna Gora",
     "pdf_x_end": 458.5,
     "rank": "borac",
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001225",
@@ -65118,7 +65138,6 @@
     "ethnicity": "Hrvat",
     "pdf_x_end": 471.1,
     "rank": "borac",
-    "unit_detail": "2. bataljon",
     "other_sources": [
       {
         "soldier_id": "0008002007",
@@ -65651,7 +65670,6 @@
     "death_place": "Široki Brijeg",
     "pdf_x_end": 447.1,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001267",
@@ -68167,7 +68185,6 @@
     "occupation": "zemljoradnik",
     "pdf_x_end": 467.4,
     "rank": "vodnik",
-    "unit_detail": "II bataljon",
     "other_sources": [
       {
         "soldier_id": "0001007884",
@@ -69456,7 +69473,6 @@
     "occupation": "radnik",
     "rank": "komandant bataljona",
     "pdf_x_end": 463.9,
-    "unit_detail": "1. bataljon",
     "other_sources": [
       {
         "soldier_id": "0002005452",
@@ -77043,7 +77059,6 @@
     "death_type": "nestao",
     "death_date": "14. 6. 1944",
     "pdf_x_end": 437.5,
-    "unit_detail": "3. četa, 4. bataljon",
     "death_place": "Planinica",
     "other_sources": [
       {
@@ -78327,7 +78342,6 @@
     "death_place": "Zelengora",
     "pdf_x_end": 456.8,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001501",
@@ -78987,7 +79001,6 @@
     "death_place": "Sutjeska",
     "pdf_x_end": 446.7,
     "rank": "borac",
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001513",
@@ -79552,7 +79565,6 @@
     "death_place": "na Gornjim Barama, Sutjeska",
     "pdf_x_end": 461.2,
     "rank": "borac",
-    "unit_detail": "4. bataljon",
     "other_sources": [
       {
         "soldier_id": "0008002328",
@@ -82042,7 +82054,6 @@
     "death_date": "1953",
     "rank": "komesar čete",
     "pdf_x_end": 456.9,
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0001009990",
@@ -82334,7 +82345,6 @@
     "death_date": "lipnja 1943",
     "death_place": "Sutjeska",
     "pdf_x_end": 456.4,
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001594",
@@ -93308,7 +93318,33 @@
     "death_type": "poginuo",
     "death_date": "10. 6. 1943",
     "death_place": "Zelengora",
-    "pdf_x_end": 434.8
+    "pdf_x_end": 434.8,
+    "other_sources": [
+      {
+        "soldier_id": "0039000788",
+        "name": "Subotić N Stevan",
+        "additional_info": "poginuo 8. juna 1943, Vrbnica (selo blizu r. Sutjeske); Sutjeska (15. maj — 19. jun 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 1,
+        "pdf_x": 515.3,
+        "pdf_y": 438.3,
+        "pdf_x_end": 607.4,
+        "pdf_y_end": 447.5,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039000789",
+        "name": "Subotić N Stevan",
+        "additional_info": "poginuo 11. juna 1943, Od Vrbničke reke do katuna Retkovac (proboj prvog neprijateljskog obruča); Sutjeska (15. maj — 19. jun 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 331.4,
+        "pdf_y": 227.7,
+        "pdf_x_end": 423.8,
+        "pdf_y_end": 237.4,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sučević",
@@ -94135,7 +94171,6 @@
     "death_place": "Bogmilovići, Nikšić",
     "pdf_x_end": 462.0,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036001720",
@@ -103474,7 +103509,6 @@
     "pdf_file": "2-dalmatinska-proleterska.pdf",
     "pdf_x_end": 452.7,
     "rank": "borac",
-    "unit_detail": "II bataljon",
     "birth_place": "Vodice, Šibenik",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
@@ -104947,7 +104981,6 @@
     "death_date": "8. 7. 1943",
     "pdf_x_end": 461.8,
     "rank": "borac",
-    "unit_detail": "II bataljon",
     "death_place": "Caparde, Zvornik",
     "other_sources": [
       {
@@ -104985,7 +105018,7 @@
     "death_place": "Crna Gora",
     "pdf_x_end": 461.4,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
+    "unit_detail": "2. hrvatska četa",
     "other_sources": [
       {
         "soldier_id": "0036001942",
@@ -105073,7 +105106,6 @@
     "pdf_file": "2-dalmatinska-proleterska.pdf",
     "pdf_x_end": 462.6,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "birth_place": "Prvić Šepurine",
     "ethnicity": "Hrvat",
     "occupation": "ribar",
@@ -108474,7 +108506,6 @@
     "occupation": "zemljoradnik",
     "pdf_x_end": 460.5,
     "rank": "borac",
-    "unit_detail": "I bataljon",
     "other_sources": [
       {
         "soldier_id": "0001013608",
@@ -108673,7 +108704,6 @@
     "pdf_file": "2-dalmatinska-proleterska.pdf",
     "pdf_x_end": 460.4,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "birth_place": "Bratiškovci, Šibenik",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -110027,7 +110057,6 @@
     "death_date": "ožujka 1943",
     "pdf_x_end": 453.9,
     "rank": "borac",
-    "unit_detail": "IV bataljon",
     "other_sources": [
       {
         "soldier_id": "0036002036",
@@ -111045,7 +111074,6 @@
     "ethnicity": "Hrvat",
     "occupation": "pomorac",
     "pdf_x_end": 472.8,
-    "unit_detail": "III bataljon",
     "other_sources": [
       {
         "soldier_id": "0001013967",

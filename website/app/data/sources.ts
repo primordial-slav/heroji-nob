@@ -422,5 +422,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/8-crnogorska.jpg',
     brigadeName: '8. crnogorska brigada',
     description: 'Spisak palih drugova boraca i starješina brigade (str. 471-501 knjige) i dopunski spisak palih iz Uba (str. 509-510)'
+  },
+  {
+    id: 'druga-proleterska',
+    title: 'Druga proleterska brigada — ilustrovana monografija (1942—1992)',
+    author: 'Miodrag Žiko Avramović',
+    pdfPath: '/pdfs/druga-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/druga-proleterska.jpg',
+    brigadeName: 'Druga proleterska brigada',
+    description: 'Poginuli, umrli i nestali borci Brigade, po mestu i danu pogibije: Sutjeska, istočna Bosna, Pljevlja i Prijepolje, zapadna Srbija, Sremski front (str. 274-278 knjige)'
   }
 ]

@@ -389,6 +389,16 @@ export const units: Unit[] = [
     soldierCount: 747,
     dataFile: '/8-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/8-crnogorska.pdf']
+  },
+  {
+    id: 'druga-proleterska-brigada',
+    name: 'Druga proleterska brigada',
+    nameEn: '2nd Proletarian Brigade',
+    description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta.',
+    image: '/images/druga-proleterska-brigada.jpg',
+    soldierCount: 1011,
+    dataFile: '/druga-proleterska-soldiers.json',
+    pdfFiles: ['/pdfs/druga-proleterska.pdf']
   }
   // Add more units here as you get more data
 ]

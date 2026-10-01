@@ -264,6 +264,10 @@ UNITS = {
         book=dict(pdf="00001/275.pdf", page=171, xref=715, caption="Borci 2 bataljona na maršu iz Beograda ka sremskom frontu"),
         note="The brigade's 2nd battalion, in its own book. The gallery has the crowd at the brigade's formation (6038), its staff "
              "(11155) and two combat photos captioned for the 5th, 7th and 8th Montenegrin brigades together."),
+    "druga-proleterska-brigada": dict(
+        name="2. proleterska brigada", tags=["2-proleterska-udarna-brigada"],
+        caption=r"(?<![\d.])2\s*\.?\s+proletersk|\bdrug[aeiou]\w*\s+proletersk|\bII\.?\s+proletersk", photo=3451,
+        note="The brigade on the march through eastern Bosnia toward Majevica, July 1943."),
 }
 
 # Words that suggest a group of soldiers; words that suggest something else.

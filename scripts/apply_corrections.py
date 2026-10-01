@@ -223,6 +223,8 @@ def apply_delete(soldiers, correction):
 SOURCE_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y') + entry_boxes.BOX_FIELDS + ('source_url',)
 # what the soldier's entry takes from another book's entry when its own is empty
 MERGE_FILL = ('middle_name', 'fathers_name', 'birth_year') + tuple(structured.FIELDS)
+# and from another unit's record: not its battalion or company, which belong to that unit
+LINK_FILL = tuple(k for k in MERGE_FILL if k != 'unit_detail')
 
 
 def apply_merge(soldiers, correction):
@@ -319,7 +321,7 @@ def apply_links(links, units):
                 entry.update({k: o[k] for k in SOURCE_FIELDS if o.get(k) not in (None, '')})
                 linked.append({**entry, 'unit_file': unit_file})
                 linked += [{**e, 'unit_file': unit_file} for e in o.get('other_sources', ()) if not e.get('unit_file')]
-                for k in MERGE_FILL:
+                for k in LINK_FILL:
                     if not s.get(k) and o.get(k):
                         s[k] = o[k]
             s['other_sources'] = s.get('other_sources', []) + linked

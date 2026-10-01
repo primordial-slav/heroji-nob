@@ -188,6 +188,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
                 xPosition={page.pdf_x ?? 0}
                 xPositionLeft={page.pdf_x_left}
                 xPositionEnd={page.pdf_x_end}
+                rects={page.pdf_rects}
                 sourceHref={sourceHref}
               />
             </Suspense>

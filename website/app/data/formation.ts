@@ -18,6 +18,10 @@ export const formation: Record<string, Formation> = {
     note: 'Odluka OK KPJ o formiranju odreda i štab; prve čete 28. jula 1941. Isto: znaci.org odrednica.',
   },
   'prva-proleterska-brigada': { date: '1941-12-21', source: FROM_CARD },
+  'druga-proleterska-brigada': {
+    date: '1942-03-01', place: 'Čajniče', source: 'https://znaci.org/00001/55_6.pdf',
+    note: 'Monografija: dan osnivanja Brigade 1. mart 1942, obeležavan pred hotelskom zgradom u Čajniču.',
+  },
   'treca-proleterska-brigada': { date: '1942-06-05', source: FROM_CARD },
   'prva-licka-brigada': {
     date: '1942-07-08', place: 'Ilići kod vrela Mrežnice', source: 'https://znaci.org/00001/137_2.pdf',

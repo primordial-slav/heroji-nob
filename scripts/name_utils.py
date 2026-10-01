@@ -370,6 +370,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    39: {
+        'name': 'Druga proleterska',
+        'json_file': 'druga-proleterska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # run-on names by place and date: "Балаћ В. Владо, Бараш С. Марко, ..."
+        'has_fathers_name': True,     # the father's initial only
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

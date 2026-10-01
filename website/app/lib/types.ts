@@ -11,6 +11,7 @@ export interface SoldierSource {
   pdf_x_end?: number
   pdf_y_end?: number
   pdf_x_left?: number
+  pdf_rects?: number[][]
   source_url?: string
   unit_file?: string      // set when the entry is another unit's: that unit's data file (the soldier served in both)
 }
@@ -42,6 +43,7 @@ export interface Soldier {
   pdf_y_end?: number      // bottom of the entry's last line on the page
   pdf_x_end?: number      // right edge of the entry's text
   pdf_x_left?: number     // left edge, only where it isn't pdf_x (e.g. only the first line is indented)
+  pdf_rects?: number[][]  // a name in a run-on list that takes two lines: [left, top, right, bottom] of each
   pdf_file?: string       // Which PDF file (e.g., "prva-proleterska-2.pdf")
   // A source without a scan (a list published as a web page): where the entry can be read
   source_url?: string

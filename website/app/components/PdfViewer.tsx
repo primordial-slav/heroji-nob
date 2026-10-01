@@ -3,7 +3,7 @@
 import { useState, useRef, useCallback, useLayoutEffect } from 'react'
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon, MinusIcon, PlusIcon, TargetIcon } from './Icons'
-import { highlightBox } from '@/app/lib/entryBox'
+import { highlightBox, highlightBoxes } from '@/app/lib/entryBox'
 import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
@@ -23,11 +23,12 @@ interface PdfViewerProps {
   xPosition: number        // X of the entry's first line, in PDF points from the left edge
   xPositionLeft?: number   // Left edge of the entry when it isn't xPosition
   xPositionEnd?: number    // Right edge of the entry's text
+  rects?: number[][]       // A name that runs on to the next line: a box for each of its lines
   sourceHref?: string      // Link to the Sources page anchor for "View full document"
 }
 
 export default function PdfViewer({
-  pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, xPositionLeft, xPositionEnd, sourceHref,
+  pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, xPositionLeft, xPositionEnd, rects, sourceHref,
 }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null)
   const [currentPage, setCurrentPage] = useState(pageNumber)
@@ -143,10 +144,10 @@ export default function PdfViewer({
           </Document>
 
           {/* Highlight box around the soldier's entry */}
-          {currentPage === pageNumber && !loading && (() => {
-            const box = highlightBox(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd)
-            return (
+          {currentPage === pageNumber && !loading &&
+            highlightBoxes(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd, rects).map((box, i) => (
               <div
+                key={i}
                 className="pdf-highlight-box"
                 style={{
                   top: `${box.top * scale}px`,
@@ -155,8 +156,7 @@ export default function PdfViewer({
                   height: `${box.height * scale}px`,
                 }}
               />
-            )
-          })()}
+            ))}
         </div>}
       </div>
 

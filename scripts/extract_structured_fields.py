@@ -47,6 +47,10 @@ from cleanup_text_fields import live_json_files  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'death_type', 'death_date', 'death_place']
+# Units whose parser sets the fields itself and whose text is written from them, not printed: Druga proleterska's
+# list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
+# its campaign's period would be a death date, "poginuo ili nestao" a death
+PARSER_FIELDS = {39}
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 
 MONTHS = ('januara|februara|marta|aprila|maja|juna|jula|avgusta|augusta|septembra|oktobra|novembra|decembra|'
@@ -433,6 +437,8 @@ class Extractor:
         return ', '.join(units + parts)
 
     def extract(self, info: str, code: int) -> dict:
+        if code in PARSER_FIELDS:
+            return {}
         text = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.)\s[^;]{0,60};\s*)+', '', info or '').strip()
         text = re.sub(r'\s*\((?:općina [^)]*|ČSSR)\)$', '', text)          # 17. slavonska: section the soldier was listed under
         text = re.sub(r'\s+', ' ', text)
