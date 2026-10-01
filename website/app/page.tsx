@@ -206,10 +206,7 @@ export default function Home() {
         ) : (
           <>
             {!loadFailed && <OnThisDay soldiers={allSoldiers} loading={loading} onSelect={openSoldier} />}
-            <div className="section-head">
-              <h2>Jedinice</h2>
-              <p className="section-note">Izaberite jedinicu da vidite ceo spisak.</p>
-            </div>
+            <h2 className="visually-hidden">Jedinice</h2>
             <UnitsByYear units={units} />
           </>
         )}
