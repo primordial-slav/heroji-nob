@@ -7,6 +7,7 @@ import { CloseIcon } from './Icons'
 import { sqQuotes } from '@/app/lib/typography'
 import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
 import RecordActions from './RecordActions'
+import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import { contributionsFor } from '@/app/data/family'
@@ -77,7 +78,7 @@ export default function SoldierModal({ soldier, unitName, onClose }: SoldierModa
           'Opis greške': reportText,
         }),
       })
-      setReportStatus(res.ok ? 'sent' : 'error')
+      setReportStatus((await wasDelivered(res)) ? 'sent' : 'error')
     } catch {
       setReportStatus('error')
     }

@@ -5,6 +5,7 @@ import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import { shrinkPhoto } from '@/app/lib/images'
+import { wasDelivered } from '@/app/lib/formsubmit'
 
 const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
 // The form service takes at most 10 MB per message
@@ -81,7 +82,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
           body: JSON.stringify(fields),
         })
       }
-      setStatus(res.ok ? 'sent' : 'error')
+      setStatus((await wasDelivered(res)) ? 'sent' : 'error')
     } catch {
       setStatus('error')
     }
