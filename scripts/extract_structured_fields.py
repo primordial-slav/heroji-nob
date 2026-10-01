@@ -103,12 +103,16 @@ RANK_PATTERNS = [
 ]
 RANK_RE = re.compile(r'(?<![\w-])(' + '|'.join(RANK_PATTERNS) + r')(?![\w-])', re.I)
 
+# A sub-unit named without a number is no place either: "Jurišna četa", "PK baterija", "Bat. pri diviziji",
+# "Zamjenik (pomoćnik) komesara bataljona"
+UNIT_WORD_RE = re.compile(r'\bčet[aeiu]\b|bataljon|\bbat\.|baterij', re.I)
 UNIT_RE = re.compile(r'(?<![\w.])(\d{1,2}\.|[IVX]{1,4}\.?)\s?(četa|čete|četi|č\.?|bataljon|bataljona|bataljonu|bat\.?|desetina|desetine|vod|voda|vodu)'
                      r'(?![\w])', re.I)
 SPECIAL_UNITS = [
     (re.compile(r'\b(\d\.\s?(?:kordunaški|makedonski|slovenački|slovenski|ličk[i]|dalmatinski|udarni|omladinski))\s+bataljon', re.I), '{} bataljon'),
-    (re.compile(r'\bpratećoj?\s+čet[aei]|\bprateć[ae] čete', re.I), 'prateća četa'),
+    (re.compile(r'\bprateć(?:a|e|oj)\s+čet[aeiu]\b', re.I), 'prateća četa'),
     (re.compile(r'\bomladinsk(?:a|e|oj) čet[aei]', re.I), 'omladinska četa'),
+    (re.compile(r'\bradn(?:a|e|oj)\s+čet[aeiu]\b', re.I), 'radna četa'),
     (re.compile(r'\bbataljon(?:a|u)? Garibaldi', re.I), 'bataljon Garibaldi'),
     (re.compile(r'\bprištapsk(?:e|ih) jedinic', re.I), 'prištapske jedinice'),
     (re.compile(r'\b(izviđačk|inžinjerijsk|protivtenkovsk|protivavionsk|protivoklopn|prištapsk|sanitetsk|mitraljesk)(?:a|e|oj)\s+čet[aei]\b', re.I), '{}a četa'),
@@ -229,6 +233,7 @@ class Extractor:
                 place.append(tail.group(1))
                 break
             if (s in ETHNIC or looks_ethnic(s) or s.lower() in self.occupations or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
+                    or UNIT_WORD_RE.search(s)
                     or any(rx.search(s) for rx, _ in SPECIAL_UNITS)
                     or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s) or len(s) > 40 or len(s.split()) > 4
                     or not re.match(rf'^(?:[{U}]|\((?=[{U}])|(?:s|sv|st)\.\s[{U}])', s)):
@@ -367,8 +372,45 @@ class Extractor:
         return ', '.join(found[:3])
 
     @staticmethod
+    def unit_text(t: str) -> str:
+        """The printed forms of a sub-unit number, made regular for UNIT_RE"""
+        # glued to the word before it: "u 3. četi2. bataljona", "u 1. četiZ. bataljona" (4. srpska; Z is the Cyrillic З
+        # the text layer reads for the digit 3 there)
+        t = re.sub(rf'(?<=[{L}])(?=(?:\d{{1,2}}|Z)\.\s?(?:bataljon|bat\.|čet[aeiu]\b))', ' ', t)
+        t = re.sub(r'(?<=\b(?:18|19)\d\d[.,])(?=\d{1,2}\.\s?(?:bataljon|bat\.|čet[aeiu]\b))', ' ', t)   # "1944.1. četa"
+        t = re.sub(r'(?<![\w.])Z(?=\.\s?(?:bataljon|bat\.|čet[aeiu]\b))', '3', t)
+        # a battalion number printed without its dot or with an epithet in brackets: "1 bat", "1944,1 bataljon",
+        # "4 (ruskog) bataljona" (7. vojvođanska's 4th battalion was the Russian one)
+        t = re.sub(rf'(?<![\w.])(\d{{1,2}})\.?\s?(?:\([{L}]+\)\s?)?(?=(?:bataljon|bat\b))', r'\1. ', t)
+        # a comma after the Roman numeral: "u brigadi od januara 1944, VI, bataljon"
+        t = re.sub(r'(?<![\w.])([IVX]{1,4}),\s?(?=bataljon)', r'\1 ', t)
+        return t
+
+    # A numbered company or battalion named for its district: "borac 1. zlatiborske čete" (Užički odred),
+    # "3. kordunaškog bataljona"
+    NAMED_UNIT_RE = re.compile(rf'(?<![\w.])(\d{{1,2}})\.\s?([{L}]+?(?:sk|čk|šk|ck))(?:a|e|oj|u|i|og|oga|om|ome)\s+'
+                               rf'(čet[aeiu]|bataljon[au]?)\b')
+
+    @staticmethod
     def unit(text: str) -> str:
-        t = re.split(r'\b(?:u NOV|U NOV)\s+od\b', text)[0] if re.search(r'\bu 2\. dalm', text) else text
+        # 2. dalmatinska: "U NOV od 1941. u Kamešničkoj četi ... U 2. dalm. brigadi od ...": the units before the brigade
+        t = re.split(r'\b(?:u NOV|U NOV)\s+od\b', text)[0] if re.search(r'\bu 2\. dalm', text, re.I) else text
+        t = Extractor.unit_text(t)
+        units = [p for p in Extractor.numbered_units(t).split(', ') if p]
+        # A company or battalion named for its district, for a level the numbers above leave empty
+        # ("2. bataljon ... u 5. mitraljeskom bataljonu" stays the 2nd)
+        named = Extractor.NAMED_UNIT_RE.search(t)
+        # not another brigade's battalion: "upućen ... u 5. ruski bataljon 5. crnogorske prolet. brigade"
+        if named and not re.match(r'\s+\d{1,2}\.\s+[\w.]+\s+(?:[\w.]+\s+)?brigad', t[named.end():]):
+            num, stem, kind = named.groups()
+            battalion = not kind.startswith('čet')
+            label = f"{num}. {stem.lower()}{'i bataljon' if battalion else 'a četa'}"
+            if not any(('bataljon' in p) if battalion else re.match(r'\d+\.\s(?:\S+\s)?četa$', p) for p in units):
+                units = units + [label] if battalion else [label] + units
+        return ', '.join(units)
+
+    @staticmethod
+    def numbered_units(t: str) -> str:
         parts, seen = [], set()
         for rx, fmt in SPECIAL_UNITS:
             m = rx.search(t)
