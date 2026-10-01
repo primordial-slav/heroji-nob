@@ -55,6 +55,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(
 from name_utils import BRIGADE_CONFIGS, extract_birth_info
 from soldier_id_utils import generate_soldier_id, parse_soldier_id
 import extract_structured_fields as structured
+import feminine_alias
 import entry_boxes
 
 POSITION_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y')
@@ -453,6 +454,8 @@ def main():
         by_brigade.setdefault(brigade_code, []).append(c)
 
     live_files = structured.live_json_files()   # brigades on the site (preview-only brigades are left alone)
+    # which given names are women's, read from every unit's bios (feminine_alias)
+    names = feminine_alias.name_genders([s for _, d in structured.load_live().values() for s in d])
 
     live_codes = {code for code, cfg in BRIGADE_CONFIGS.items() if cfg['json_file'] in live_files}
     box_cache = entry_boxes.PageCache()
@@ -507,6 +510,11 @@ def main():
 
         total_applied += applied_count
         new_count = len(soldiers)
+
+        if json_path.name in live_files:
+            women = feminine_alias.apply(soldiers, names)
+            if women:
+                print(f"    Women's nicknames: 'zvana' in {women} record(s)")
 
         if applied_count > 0 and json_path.name in live_files:
             filled = structured.fill(soldiers)

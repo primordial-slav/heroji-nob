@@ -118,7 +118,7 @@ SPECIAL_UNITS = [
 ]
 
 PREP = r'(?:u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izmedu|prema|pred|za|iz|na putu za|u selu|u s\.|s\.|selo|u rejonu|rejon)'
-STOP_PLACE = re.compile(r'^(?:u NOB|u NOV|u NOVJ|u NOR|u brigadi|u \d|član|stupio|stupila|borac od|od \d|od [a-z]|sa |iz |zvani|ili |'
+STOP_PLACE = re.compile(r'^(?:u NOB|u NOV|u NOVJ|u NOR|u brigadi|u \d|član|stupio|stupila|borac od|od \d|od [a-z]|sa |iz |zvan[ai]|ili |'
                         r'drugih|nema |ostali|nepoznat|\(drugih|\(nema|\(nedostaju)', re.I)
 
 
@@ -382,7 +382,7 @@ class Extractor:
         return ', '.join(units + parts)
 
     def extract(self, info: str, code: int) -> dict:
-        text = re.sub(r'^(?:(?:zvani|ili|rođ\.)\s[^;]{0,60};\s*)+', '', info or '').strip()
+        text = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.)\s[^;]{0,60};\s*)+', '', info or '').strip()
         text = re.sub(r'\s*\((?:općina [^)]*|ČSSR)\)$', '', text)          # 17. slavonska: section the soldier was listed under
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
@@ -433,7 +433,7 @@ def build_extractor(brigades) -> Extractor:
     ex = Extractor(occupations, places)
     for code, (_, d) in brigades.items():
         for s in d:
-            info = re.sub(r'^(?:(?:zvani|ili)\s[^;]{0,60};\s*)+', '', s.get('additional_info') or '')
+            info = re.sub(r'^(?:(?:zvan[ai]|ili)\s[^;]{0,60};\s*)+', '', s.get('additional_info') or '')
             if re.search(r'\brođen[a]?\s+(?:\S+\s+)?u\s+(?!s\.|selu)', info[:40]):
                 continue                                                  # "rođen u Donjem Lapcu" is a locative, not a place name
             bp = ex.life(info, code).get('birth_place', '')
