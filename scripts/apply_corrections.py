@@ -409,6 +409,8 @@ def main():
     parser = argparse.ArgumentParser(description='Apply corrections to soldier JSON data')
     parser.add_argument('--apply', action='store_true',
                         help='Actually write changes (default: dry run)')
+    parser.add_argument('--brigade', type=int,
+                        help='Only this unit (default: every unit with corrections and every unit on the site)')
     args = parser.parse_args()
 
     # Find project root
@@ -449,7 +451,8 @@ def main():
     total_skipped = 0
 
     # Process each brigade with corrections, and every brigade on the site (entry boxes)
-    for brigade_code in sorted(set(by_brigade) | live_codes):
+    codes = [args.brigade] if args.brigade else sorted(set(by_brigade) | live_codes)
+    for brigade_code in codes:
         brigade_corrections = by_brigade.get(brigade_code, [])
         config = BRIGADE_CONFIGS.get(brigade_code)
         brigade_name = config['name'] if config else f"Brigade {brigade_code}"
