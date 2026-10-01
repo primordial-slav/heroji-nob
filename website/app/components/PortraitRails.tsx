@@ -3,14 +3,22 @@
 import { useEffect, useMemo, useState } from 'react'
 import index from '@/app/data/portrait-index.json'
 import { WARTIME_PORTRAITS } from '@/app/data/wartimePortraits'
+import { familyContributions } from '@/app/data/family'
 import type { Soldier } from '@/app/lib/types'
 import { useT } from '@/app/i18n/LangContext'
 
 // Wartime portraits drifting slowly up the empty margins beside the home page column, on screens wide enough to
-// have margins (globals.css hides them below 84rem). The order changes every day. Pointing at a face or focusing
+// have margins (globals.css hides them below 84rem), in a new order on every visit. Pointing at a face or focusing
 // it stops the drift, and a click opens the soldier's record.
 
 const INDEX = index as Record<string, { f: string; y?: number }>
+
+// A soldier's photo as his record shows it: a family's first (public/porodica/), else a book's (public/portreti/)
+function photoOf(id: string): { src: string; focus: number } | null {
+  const family = familyContributions.find((c) => c.soldierId === id && c.photo)
+  if (family) return { src: `/porodica/${family.photo}`, focus: 30 }
+  return INDEX[id] ? { src: `/portreti/${INDEX[id].f}`, focus: INDEX[id].y ?? 30 } : null
+}
 
 interface Face {
   id: string
@@ -19,14 +27,11 @@ interface Face {
   soldier?: Soldier
 }
 
-// The same order all day, another tomorrow
-function shuffled<T>(items: T[], seed: string): T[] {
-  let h = 2166136261
-  for (const c of seed) h = Math.imul(h ^ c.charCodeAt(0), 16777619)
+// A new order on every visit
+function shuffled<T>(items: T[]): T[] {
   const out = [...items]
   for (let i = out.length - 1; i > 0; i--) {
-    h = Math.imul(h ^ (h >>> 15), 2246822507) ^ Math.imul(h ^ (h >>> 13), 3266489909)
-    const j = (h >>> 0) % (i + 1)
+    const j = Math.floor(Math.random() * (i + 1))
     ;[out[i], out[j]] = [out[j], out[i]]
   }
   return out
@@ -52,8 +57,10 @@ interface PortraitRailsProps {
 
 export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) {
   const t = useT()
-  const [day, setDay] = useState<string | null>(null)
-  useEffect(() => setDay(new Date().toDateString()), [])
+  // Shuffled in the browser once the page is there, so the server's HTML and the first render agree; the
+  // order then stays put while the lists load
+  const [order, setOrder] = useState<string[] | null>(null)
+  useEffect(() => setOrder(shuffled(WARTIME_PORTRAITS.filter((id) => photoOf(id)))), [])
 
   // A portrait is filed under the soldier's own id, or under the id his entry had before it was merged
   const byId = useMemo(() => {
@@ -66,10 +73,8 @@ export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) 
   }, [soldiers])
 
   const faces = useMemo<Face[]>(
-    () => (day ? shuffled(WARTIME_PORTRAITS.filter((id) => INDEX[id]), day) : []).map((id) => ({
-      id, src: `/portreti/${INDEX[id].f}`, focus: INDEX[id].y ?? 30, soldier: byId.get(id),
-    })),
-    [day, byId],
+    () => (order ?? []).map((id) => ({ id, ...photoOf(id)!, soldier: byId.get(id) })),
+    [order, byId],
   )
   if (!faces.length) return null
 

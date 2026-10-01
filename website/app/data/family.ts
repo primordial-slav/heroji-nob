@@ -10,7 +10,14 @@ export interface FamilyContribution {
   date: string          // when it was sent, 'YYYY-MM'
 }
 
-export const familyContributions: FamilyContribution[] = []
+export const familyContributions: FamilyContribution[] = [
+  {
+    soldierId: '0002000242', // Bakić Maksimov Mile, Prva lička
+    photo: '0002000242-1.jpg',
+    from: 'iz porodične arhive',
+    date: '2026-10',
+  },
+]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
   const ids = new Set([soldierId, ...otherIds.filter(Boolean)])
