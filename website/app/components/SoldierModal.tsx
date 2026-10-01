@@ -147,7 +147,13 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
             <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
             {allUnits.length > 0 && <p className="modal-unit">{allUnits.map(sqQuotes).join(' · ')}</p>}
             {honours && <p className="modal-honours">{honours}</p>}
-            {portrait && <p className="modal-portrait-credit">Fotografija: {portrait.credit}</p>}
+            {portrait && (
+              <p className="modal-portrait-credit">
+                Fotografija: {portrait.href
+                  ? <a href={portrait.href} target="_blank" rel="noopener noreferrer">{portrait.credit}</a>
+                  : portrait.credit}
+              </p>
+            )}
           </div>
         </div>
         <RecordActions soldier={soldier} unit={unitRecord} />

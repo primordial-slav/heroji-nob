@@ -1,6 +1,9 @@
 """
-Soldiers' own photographs from the books that print one in the soldier's entry, for the record popup and the
-memorial card. Only certain matches: the portrait printed in the entry's own cell, beside its first line.
+Soldiers' own photographs, for the record popup and the memorial card. Only certain matches:
+
+- from the books that print one in the soldier's entry: the portrait in the entry's own cell, beside its first line;
+- from the znaci.org gallery (GALLERY): a photo of one person whose caption names the soldier and agrees with our
+  record on more than the name (unit, duty, place or date of death, birthplace), each checked by hand.
 
   Tuzlanski NOP odred (Tuzla 1988): each cell of the list may hold a portrait, left of the stacked name. A page's
   images can hold two portraits stacked in one strip, so each portrait is found on the page itself: in the band
@@ -8,7 +11,8 @@ memorial card. Only certain matches: the portrait printed in the entry's own cel
   Portraits the shape test doesn't pass (a cut-off or pale print, ~50) are left out rather than guessed.
 
 Writes website/public/portreti/<soldier id>.jpg (grey, 240 px high) and website/app/data/portrait-index.json
-({soldier id: {f: file, c: credit}}), which website/app/data/portraits.ts reads.
+({soldier id: {f: file, c: credit, h: source page}}), which website/app/data/portraits.ts reads. Gallery photos are
+downloaded once into data-extraction/.cache/znaci_photos/full/.
 
     python scripts/extract_book_portraits.py [--sheet OUT.jpg]
 """
@@ -21,7 +25,9 @@ from pathlib import Path
 
 import fitz
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFile
+
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / 'website' / 'public'
@@ -34,6 +40,18 @@ HEIGHT = 240
 BOOKS = [
     # unit data file, PDF, credit shown under the name
     ('tuzlanski-odred-soldiers.json', 'tuzlanski-odred.pdf', 'Tuzlanski NOP odred (Tuzla, 1988)'),
+]
+
+GALLERY = [
+    # soldier, znaci.org photo, head and shoulders in it (fractions of the photo), what the caption and record share
+    ('0039000807', 11685, (0.30, 0.02, 0.75, 0.41), 'komesar 2. bataljona 2. proleterske, poginuo u Bijelim Brdima marta 1944'),
+    ('0010000433', 11864, (0.05, 0.0, 0.95, 0.876), 'komandir čete 3. krajiške, poginuo kod Vrbovca maja 1945'),
+    ('0026000738', 14608, (0.08, 0.0, 0.75, 0.62), 'stolar, rođen 1899. u Virovu, član Sreskog komiteta KPJ'),
+    ('0001003638', 13283, (0.32, 0.06, 0.72, 0.42), 'hodža iz Slatine kod Foče, verski referent'),
+    ('0002008648', 10342, (0.1, 0.0, 0.9, 0.70), 'komandant bataljona (drugi Milan Tankosić je rođen 1928)'),
+    ('0006008279', 12072, (0.30, 0.06, 0.58, 0.66), 'komandant 13. proleterske; rođen 1917. u Srbu'),
+    ('0005000433', 12431, (0.1, 0.02, 0.9, 0.715), 'rukovodilac SKOJ-a 3. sandžačke; jedina Desa Bulatović u brigadi'),
+    ('0002000133', 11472, (0.25, 0.06, 0.75, 0.49), 'borac 1. ličkog odreda, "Primorac", rodom iz Novigrada kod Zadra'),
 ]
 
 
@@ -97,6 +115,21 @@ def main():
             sheet.append((s['full_name'], im))
             n += 1
         print(f'{data_file}: {n} portraits')
+    sys.path.insert(0, str(ROOT / 'scripts'))
+    import find_unit_photos as F
+    for sid, pid, (a, b, c, d), _why in GALLERY:
+        path = F.CACHE / 'full' / f'{pid}.jpg'
+        if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(F._get(f'{F.BASE}/images/{pid}.jpg'))
+        im = Image.open(path).convert('L')
+        w, h = im.size
+        im = im.crop((int(a * w), int(b * h), int(c * w), int(d * h)))
+        im = im.resize((round(im.width * HEIGHT / im.height), HEIGHT), Image.LANCZOS)
+        name = f'{sid}.jpg'
+        im.save(OUT / name, quality=80, optimize=True, progressive=True)
+        index[sid] = {'f': name, 'c': f'znaci.org, br. {pid}', 'h': f'https://znaci.org/fotografija.php?br={pid}'}
+    print(f'gallery: {len(GALLERY)} portraits')
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=0, sort_keys=True), encoding='utf-8')
     print(f'{len(index)} portraits → {OUT}')
     if '--sheet' in sys.argv:
