@@ -5,6 +5,14 @@ import type { Unit } from '@/app/data/units'
 import { formation, formationKey } from '@/app/data/formation'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { unitDescription, unitName } from '@/app/i18n/units'
+import { unitImageProps } from '@/app/lib/unitImage'
+
+// How wide a card's photo is drawn (.unit-grid in .container, globals.css): one column up to 711px
+// (the page's side padding is 16px a side up to 640px, 24px above), two columns of at least 20rem
+// with a 24px gap from 712px, three from 1056px, and the 72rem page caps them at 352px from 1152px.
+const CARD_SIZES =
+  '(max-width: 640px) calc(100vw - 32px), (max-width: 711px) calc(100vw - 48px), ' +
+  '(max-width: 1055px) calc(50vw - 36px), (max-width: 1151px) calc(33.34vw - 32px), 352px'
 
 interface YearGroup {
   year: string | null // null: units whose formation date isn't recorded yet
@@ -44,7 +52,7 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
               <li key={unit.id}>
                 <Link href={to(`/units/${unit.id}`)} className="unit-card">
                   <div className="unit-card-photo">
-                    <img src={unit.image} alt="" loading="lazy" />
+                    <img loading="lazy" {...unitImageProps(unit.image, CARD_SIZES)} alt="" />
                   </div>
                   <div className="unit-card-body">
                     <h4 className="unit-name">{unitName(unit, lang)}</h4>

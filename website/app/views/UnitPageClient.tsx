@@ -4,12 +4,14 @@ import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
 import Link from 'next/link'
 import { Unit } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
+import { fullRecord, listPath, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
 import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
 import { RECORD_PARAM, findRecord } from '@/app/lib/records'
 import { photoPosition } from '@/app/data/photoFocus'
+import { unitImageProps } from '@/app/lib/unitImage'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
 import { NO_FILTERS, applyFilters, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
@@ -18,16 +20,28 @@ import RichText from '@/app/i18n/RichText'
 
 interface UnitPageClientProps {
   unit: Unit
+  /** The list's first page, full records, shown until the list has loaded */
+  firstPage: Soldier[]
+  /** How many soldiers the list has */
+  total: number
 }
 
-export default function UnitPageClient({ unit }: UnitPageClientProps) {
+const NO_SOLDIERS: Soldier[] = []
+// The photo runs across the whole window, a little wider than it (.unit-hero-photo)
+const HERO_SIZES = '104vw'
+
+export default function UnitPageClient({ unit, firstPage, total }: UnitPageClientProps) {
   const lang = useLang()
   const t = useT()
   const to = useLocalePath()
-  const [soldiers, setSoldiers] = useState<Soldier[]>([])
-  const [loading, setLoading] = useState(true)
+  // The unit's list in its short search form (lib/searchIndex.ts); already there when the visitor comes back
+  const [list, setList] = useState<Soldier[] | null>(() => loadedUnitList(unit) ?? null)
+  const soldiers = list ?? NO_SOLDIERS
   const [loadFailed, setLoadFailed] = useState(false)
+  const loading = !list && !loadFailed
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
+  // The soldier whose full record is being loaded for the dialog
+  const opening = useRef<Soldier | null>(null)
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
 
@@ -56,21 +70,30 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
   }, [addressRead, searchTerm, filters])
 
   useEffect(() => {
-    fetch(unit.dataFile)
-      .then(res => res.json())
-      .then(data => setSoldiers(data))
-      .catch(() => setLoadFailed(true))
-      .finally(() => setLoading(false))
+    let current = true
+    loadUnitList(unit)
+      .then((loaded) => current && setList(loaded))
+      .catch(() => current && setLoadFailed(true))
+    return () => { current = false }
   }, [unit])
 
-  // A link to one record (?borac=<id>) opens it once the list has loaded
+  // A link to one record (?borac=<id>) opens it once the list has loaded, unless the visitor has opened one by then
   const linkHandled = useRef(false)
+
+  // The list has only what search shows; the dialog gets the soldier's full record
+  const openSoldier = async (soldier: Soldier) => {
+    linkHandled.current = true
+    opening.current = soldier
+    const record = await fullRecord(soldier).catch(() => soldier)
+    if (opening.current === soldier) setSelectedSoldier(record)
+  }
+
   useEffect(() => {
     if (linkHandled.current || soldiers.length === 0) return
     linkHandled.current = true
     const id = new URLSearchParams(window.location.search).get(RECORD_PARAM)
     const linked = id ? findRecord(soldiers, id) : undefined
-    if (linked) setSelectedSoldier(linked)
+    if (linked) openSoldier(linked)
   }, [soldiers])
 
   // The address bar follows the open record, so copying it gives that record's link
@@ -82,12 +105,17 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
     window.history.replaceState(window.history.state, '', url)
   }, [selectedSoldier])
 
+  // Before the list has loaded, the page's own first page shows, unless the address asks for a search
+  const early = loading && !searchTerm.trim() && !filtersSet
+
   return (
     <div>
+      {/* The list starts loading with the page rather than once its scripts have run, after what the page shows */}
+      {!list && <link rel="preload" href={listPath(unit)} as="fetch" crossOrigin="anonymous" fetchPriority="low" />}
       <section className="container unit-hero">
         <Link href={to('/')} className="back-link"><ArrowLeftIcon size={16} /> {t.unit.allUnits}</Link>
         <div className="unit-hero-body">
-          <img src={unit.image} alt={unitName(unit, lang)} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
+          <img {...unitImageProps(unit.image, HERO_SIZES)} alt={unitName(unit, lang)} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
           <div>
             <h1>{unitName(unit, lang)}</h1>
             <p className="unit-hero-desc">{unitDescription(unit, lang)}</p>
@@ -122,7 +150,9 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
 
         <div id="results">
           {/* A search after an empty result shows the loading rows until its results are in */}
-          {loading || (!loadFailed && pending && listed.length === 0) ? (
+          {early ? (
+            <SoldierResults results={firstPage} total={total} onSelect={openSoldier} scrollTargetId="results" />
+          ) : loading || (!loadFailed && pending && listed.length === 0) ? (
             <ul className="loading-rows" aria-label={loading ? t.unit.loading : t.results.searching}>
               {Array.from({ length: 8 }, (_, i) => <li key={i} />)}
             </ul>
@@ -153,7 +183,7 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
           ) : (
             <SoldierResults
               results={listed}
-              onSelect={setSelectedSoldier}
+              onSelect={openSoldier}
               scrollTargetId="results"
               actions={(searchTerm.trim() || filtersSet) && <ShareSearch />}
             />
@@ -166,8 +196,8 @@ export default function UnitPageClient({ unit }: UnitPageClientProps) {
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
           unitName={unit.name}
-          unitSoldiers={soldiers}
-          onOpen={setSelectedSoldier}
+          unitSoldiers={list ?? undefined}
+          onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />
       )}

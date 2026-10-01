@@ -10,6 +10,7 @@ import { photoPosition } from '@/app/data/photoFocus'
 import {
   RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordDetails, recordPath, sourceTitle,
 } from '@/app/lib/records'
+import { fullRecord, loadUnitList } from '@/app/lib/searchIndex'
 import { portraitFor } from '@/app/data/portraits'
 import SoldierPortrait from '@/app/components/SoldierPortrait'
 import { SoldierName } from '@/app/components/SoldierResults'
@@ -43,12 +44,13 @@ export default function MemorialCard() {
       setState({ status: 'missing' })
       return
     }
-    fetch(unit.dataFile)
-      .then((res) => res.json())
-      .then((list: Soldier[]) => {
-        const soldier = findRecord(list, id)
-        setState(soldier ? { status: 'ready', unit, soldier } : { status: 'missing' })
+    // The unit's short list says where the record is; only that slice of full records loads
+    loadUnitList(unit)
+      .then((list) => {
+        const found = findRecord(list, id)
+        return found ? fullRecord(found) : undefined
       })
+      .then((soldier) => setState(soldier ? { status: 'ready', unit, soldier } : { status: 'missing' }))
       .catch(() => setState({ status: 'failed' }))
   }, [])
 

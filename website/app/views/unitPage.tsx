@@ -7,6 +7,8 @@ import { messagesFor } from '@/app/i18n'
 import { pageMetadata } from '@/app/i18n/metadata'
 import { unitDescription, unitName } from '@/app/i18n/units'
 import { localePath, type Lang } from '@/app/i18n/config'
+import { FIRST_PAGE } from '@/app/lib/searchIndex'
+import { readUnitFile } from '@/app/lib/unitFiles'
 
 // A unit's page, /units/<id>, in every language. Only the units below exist: any other id is a 404
 // (each route sets dynamicParams = false), not a page rendered (and stored) on request.
@@ -35,5 +37,7 @@ export default function UnitPage({ lang, id }: { lang: Lang; id: string }) {
     )
   }
 
-  return <UnitPageClient unit={unit} />
+  // The first page of the list is in the page itself, so it shows before the list has loaded
+  const soldiers = readUnitFile(unit.dataFile)
+  return <UnitPageClient unit={unit} firstPage={soldiers.slice(0, FIRST_PAGE)} total={soldiers.length} />
 }

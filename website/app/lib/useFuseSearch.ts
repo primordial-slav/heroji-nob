@@ -124,6 +124,25 @@ class SearchPool {
   }
 }
 
+// A list's workers stay for the rest of the visit (the lists themselves do, searchIndex.ts), so going back to a
+// page searches at once instead of handing the list over and indexing it again. Only the three lists used last
+// keep theirs, as each worker holds its slice's index.
+const KEPT_POOLS = 3
+const pools = new Map<Soldier[], SearchPool>()
+
+function poolFor(data: Soldier[]): SearchPool {
+  const pool = pools.get(data) ?? new SearchPool(data)
+  // Last used last
+  pools.delete(data)
+  pools.set(data, pool)
+  for (const [list, old] of pools) {
+    if (pools.size <= KEPT_POOLS) break
+    pools.delete(list)
+    old.close()
+  }
+  return pool
+}
+
 const NO_SOLDIERS: Soldier[] = []
 const DEBOUNCE_MS = 250
 
@@ -160,13 +179,11 @@ export function useFuseSearch(
   const poolRef = useRef<SearchPool | null>(null)
   const wholeWords = !!options.wholeWords
 
-  // Hand the data to the search workers when it changes
+  // Hand the data to the search workers when it changes, or take up the workers it already has
   useEffect(() => {
     if (data.length === 0) return
-    const pool = new SearchPool(data)
-    poolRef.current = pool
+    poolRef.current = poolFor(data)
     return () => {
-      pool.close()
       poolRef.current = null
     }
   }, [data])

@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import type { Soldier } from '@/app/lib/types'
-import { ageAtDeath, parseDeathDay, type DeathDay } from '@/app/lib/deathDay'
+import { ageAtDeath, wartimeDeath, type DeathDay } from '@/app/lib/deathDay'
+import { loadOnThisDay, loadedOnThisDay } from '@/app/lib/searchIndex'
 import { unitByName } from '@/app/lib/records'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
@@ -11,8 +12,6 @@ import { SoldierName } from './SoldierResults'
 import { SoldierMedals } from './Medal'
 import { CandleIcon } from './Icons'
 
-// Dates of capture or wounding are not deaths
-const NOT_DEATHS = new Set(['zarobljen', 'ranjen'])
 const SHOWN = 6
 
 interface Fallen {
@@ -64,33 +63,39 @@ function shuffled<T>(items: T[], seed: string): T[] {
 }
 
 interface OnThisDayProps {
-  soldiers: Soldier[]
-  loading: boolean
   onSelect: (soldier: Soldier) => void
 }
 
-// "Na današnji dan": soldiers who fell, died or went missing on today's date during the war
-export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProps) {
+// "Na današnji dan": soldiers who fell, died or went missing on today's date during the war. The day's list is a
+// small file of its own (app/on-this-day/[day]/route.ts), so it shows without waiting for the search lists.
+export default function OnThisDay({ onSelect }: OnThisDayProps) {
   const t = useT()
   const lang = useLang()
   // Today in the visitor's own calendar, known only in the browser
   const [today, setToday] = useState<{ day: number; month: number; key: string } | null>(null)
+  const [soldiers, setSoldiers] = useState<Soldier[] | null>(null)
+  const [failed, setFailed] = useState(false)
   const [showAll, setShowAll] = useState(false)
 
   useEffect(() => {
     const now = new Date()
-    setToday({ day: now.getDate(), month: now.getMonth() + 1, key: now.toDateString() })
+    const [day, month] = [now.getDate(), now.getMonth() + 1]
+    setToday({ day, month, key: now.toDateString() })
+    // A day already loaded in this visit shows at once
+    setSoldiers(loadedOnThisDay(month, day) ?? null)
+    let current = true
+    loadOnThisDay(month, day)
+      .then((list) => current && setSoldiers(list))
+      .catch(() => current && setFailed(true))
+    return () => { current = false }
   }, [])
 
   const fallen = useMemo<Fallen[]>(() => {
-    if (!today) return []
+    if (!today || !soldiers) return []
     const list: Fallen[] = []
     for (const soldier of soldiers) {
-      if (!soldier.death_date || NOT_DEATHS.has(soldier.death_type ?? '')) continue
-      const d = parseDeathDay(soldier.death_date)
-      if (d && d.day === today.day && d.month === today.month && d.year >= 1941 && d.year <= 1945) {
-        list.push({ soldier, year: d.year, death: d })
-      }
+      const d = wartimeDeath(soldier)
+      if (d && d.day === today.day && d.month === today.month) list.push({ soldier, year: d.year, death: d })
     }
     return list
   }, [soldiers, today])
@@ -108,8 +113,8 @@ export default function OnThisDay({ soldiers, loading, onSelect }: OnThisDayProp
     [fallen],
   )
 
-  if (!today) return null
-  const loaded = !loading && soldiers.length > 0
+  if (!today || failed) return null
+  const loaded = soldiers !== null
   if (loaded && fallen.length === 0) return null
 
   const shown = showAll ? everyone : featured

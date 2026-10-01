@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
 import { units } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
-import { fullRecord, loadSearchIndex } from '@/app/lib/searchIndex'
+import { SEARCH_INDEX_PATH, fullRecord, loadHomeLists, loadedHomeLists, type HomeLists } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
@@ -19,15 +19,18 @@ import { NO_FILTERS, applyFilters, filterCount, narrows, readSearch, writeSearch
 import { useT } from '@/app/i18n/LangContext'
 import RichText from '@/app/i18n/RichText'
 
+const NO_SOLDIERS: Soldier[] = []
+
 export default function HomePage() {
   const t = useT()
-  const [allSoldiers, setAllSoldiers] = useState<Soldier[]>([])
-  const [loading, setLoading] = useState(true)
+  // Every unit's list, in its short search form; already there when the visitor comes back to the page
+  const [lists, setLists] = useState<HomeLists | null>(loadedHomeLists)
+  const allSoldiers = lists?.listed ?? NO_SOLDIERS
   const [loadFailed, setLoadFailed] = useState(false)
+  const loading = !lists && !loadFailed
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
   // The soldier whose full record is being loaded for the dialog
   const opening = useRef<Soldier | null>(null)
-  const [unitLists, setUnitLists] = useState<Map<string, Soldier[]>>(new Map())
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
 
@@ -53,34 +56,12 @@ export default function HomePage() {
   }, [addressRead, searchTerm, filters])
 
   useEffect(() => {
-    // Load every unit's list in the background, in its short search form; the page is usable meanwhile
-    const loadAllSoldiers = async () => {
-      try {
-        const lists = await loadSearchIndex(units)
-        // Each unit's whole list, linked soldiers included, for the comrades tree in the record dialog
-        setUnitLists(new Map(units.map((unit, i) => [unit.name, lists[i]])))
-        // A soldier linked across units (an entry from another unit's book in other_sources) is listed once,
-        // in the first of his units, with the others named
-        const linkedAway = new Set<string>()
-        const listed: Soldier[] = []
-        for (const soldier of lists.flat()) {
-          if (linkedAway.has(soldier.soldier_id)) continue
-          const links = (soldier.other_sources ?? []).filter((o) => o.unit_file)
-          links.forEach((o) => o.soldier_id && linkedAway.add(o.soldier_id))
-          const also = links
-            .map((o) => units.find((u) => u.dataFile === `/${o.unit_file}`)?.name)
-            .filter((u, i, list): u is string => Boolean(u) && u !== soldier.unit && list.indexOf(u) === i)
-          listed.push(also.length ? { ...soldier, also_units: also } : soldier)
-        }
-        setAllSoldiers(listed)
-      } catch {
-        setLoadFailed(true)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    loadAllSoldiers()
+    // Load every unit's list in the background; the page is usable meanwhile
+    let current = true
+    loadHomeLists()
+      .then((loaded) => current && setLists(loaded))
+      .catch(() => current && setLoadFailed(true))
+    return () => { current = false }
   }, [])
 
   useEffect(() => {
@@ -116,6 +97,9 @@ export default function HomePage() {
 
   return (
     <div>
+      {/* The lists start loading with the page rather than once its scripts have run; at low priority, after
+          what the page needs to show */}
+      {!lists && <link rel="preload" href={SEARCH_INDEX_PATH} as="fetch" crossOrigin="anonymous" fetchPriority="low" />}
       <section className="masthead" aria-labelledby="finder-title">
         <div className="container finder">
           <h1 id="finder-title">{t.home.title}</h1>
@@ -204,7 +188,7 @@ export default function HomePage() {
           )
         ) : (
           <>
-            {!loadFailed && <OnThisDay soldiers={allSoldiers} loading={loading} onSelect={openSoldier} />}
+            <OnThisDay onSelect={openSoldier} />
             <h2 className="visually-hidden">{t.home.unitsTitle}</h2>
             <UnitsByYear units={units} />
           </>
@@ -217,7 +201,7 @@ export default function HomePage() {
         <SoldierModal
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
-          unitSoldiers={unitLists.get(selectedSoldier.unit ?? '')}
+          unitSoldiers={lists?.byUnit.get(selectedSoldier.unit ?? '')}
           onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />

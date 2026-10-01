@@ -22,6 +22,10 @@ import { quoteMarks } from '@/app/i18n/format'
 import { titlePart } from '@/app/i18n/sources'
 import { unitName as localUnitName } from '@/app/i18n/units'
 import RichText from '@/app/i18n/RichText'
+import { unitImageProps } from '@/app/lib/unitImage'
+
+// The unit photo spans the dialog: the whole screen up to 640px, the 40rem dialog above
+const RECORD_PHOTO_SIZES = '(max-width: 640px) 100vw, 640px'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
@@ -151,7 +155,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
         {unitRecord && !unitRecord.image.includes('/pdf-thumbs/') && (
           <div className="record-photo">
-            <img src={unitRecord.image} alt="" style={{ objectPosition: photoPosition(unitRecord.id) }} />
+            <img {...unitImageProps(unitRecord.image, RECORD_PHOTO_SIZES)} alt="" style={{ objectPosition: photoPosition(unitRecord.id) }} />
           </div>
         )}
         <SoldierMedals soldier={soldier} look="foto" className="modal-medals" />

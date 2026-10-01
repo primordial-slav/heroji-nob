@@ -5,11 +5,15 @@ import Link from 'next/link'
 import type { Unit } from '@/app/data/units'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { unitName } from '@/app/i18n/units'
+import { unitImageProps } from '@/app/lib/unitImage'
 
 // Soldiers of the 2. krajiška brigade walking away through snow: the figures sit on the right,
 // the snow on the left stays nearly flat red, so the heading and the search field read cleanly.
 // If that unit is missing, the band stays plain red.
 const BAND_UNIT_ID = '2-krajiska-brigada'
+// The band spans the screen; under 480px it is about 320px tall (header and search), so the 3:2 photo
+// is drawn about 480px wide to cover it
+const BAND_SIZES = '(max-width: 480px) 480px, 100vw'
 
 export default function BandPhoto({ units }: { units: Unit[] }) {
   const t = useT()
@@ -39,7 +43,7 @@ export default function BandPhoto({ units }: { units: Unit[] }) {
   return (
     <>
       <div ref={ref} className="band-photo" data-ready={ready ? '' : undefined}>
-        <img src={unit.image} alt="" />
+        <img {...unitImageProps(unit.image, BAND_SIZES)} alt="" />
       </div>
       <p className="band-credit">
         {t.home.bandCredit} <Link href={to(`/units/${unit.id}`)}>{unitName(unit, lang)}</Link>

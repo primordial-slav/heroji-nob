@@ -56,6 +56,16 @@ export function parseDeathDay(text: string): DeathDay | null {
   return { day, month, year }
 }
 
+// Dates of capture or wounding are not deaths
+const NOT_DEATHS = new Set(['zarobljen', 'ranjen'])
+
+/** The day a soldier fell, died or went missing during the war, if his record gives one */
+export function wartimeDeath(soldier: { death_date?: string; death_type?: string }): DeathDay | null {
+  if (!soldier.death_date || NOT_DEATHS.has(soldier.death_type ?? '')) return null
+  const d = parseDeathDay(soldier.death_date)
+  return d && d.year >= 1941 && d.year <= 1945 ? d : null
+}
+
 /**
  * How old a soldier was at death: [23, 23] when the entry starts with the full birth date ("15. 9. 1921,
  * Omsica"); with only the birth year, both ages he could have been, [22, 23]. The page says it in its

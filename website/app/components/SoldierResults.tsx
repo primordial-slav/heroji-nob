@@ -7,6 +7,7 @@ import { SoldierMedals } from './Medal'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { unitName } from '@/app/i18n/units'
 import { unitByName } from '@/app/lib/records'
+import { FIRST_PAGE } from '@/app/lib/searchIndex'
 
 // Surname first, as the books print it; the surname carries the weight
 export function SoldierName({ soldier }: { soldier: Soldier }) {
@@ -26,19 +27,26 @@ interface SoldierResultsProps {
   scrollTargetId: string
   /** Shown beside the count, e.g. sharing the search */
   actions?: ReactNode
+  /**
+   * The whole list's length while only its first page is in (a unit page before its list has loaded): counted
+   * and paged as the whole list, and the other pages wait for the rest
+   */
+  total?: number
 }
 
-const PAGE_SIZES = [50, 100, 200]
+const PAGE_SIZES = [FIRST_PAGE, 100, 200]
 
-export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions }: SoldierResultsProps) {
+export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, total }: SoldierResultsProps) {
   const t = useT()
   const lang = useLang()
   const [page, setPage] = useState(1)
-  const [perPage, setPerPage] = useState(50)
+  const [perPage, setPerPage] = useState(PAGE_SIZES[0])
 
   useEffect(() => setPage(1), [results])
 
-  const totalPages = Math.max(1, Math.ceil(results.length / perPage))
+  const count = total ?? results.length
+  const partial = count > results.length
+  const totalPages = Math.max(1, Math.ceil(count / perPage))
   const start = (page - 1) * perPage
   const shown = results.slice(start, start + perPage)
 
@@ -58,17 +66,18 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
     <div>
       <div className="results-bar">
         <p className="results-count" aria-live="polite">
-          {t.found(results.length)}
+          {t.found(count)}
           {totalPages > 1 && <span> · {t.results.pageOf(page, totalPages)}</span>}
         </p>
         <div className="results-tools">
           {actions}
-          {results.length > PAGE_SIZES[0] && (
+          {count > PAGE_SIZES[0] && (
             <label className="per-page">
               {t.results.perPage}
               <select
                 id="per-page"
                 value={perPage}
+                disabled={partial}
                 onChange={(e) => { setPerPage(Number(e.target.value)); setPage(1) }}
               >
                 {PAGE_SIZES.map(n => <option key={n} value={n}>{n}</option>)}
@@ -113,13 +122,14 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
                 key={p}
                 className={p === page ? 'page-button active' : 'page-button'}
                 onClick={() => goTo(p)}
+                disabled={partial && p !== page}
                 aria-current={p === page ? 'page' : undefined}
               >
                 {p}
               </button>
             )
           )}
-          <button className="page-button" onClick={() => goTo(page + 1)} disabled={page === totalPages}>
+          <button className="page-button" onClick={() => goTo(page + 1)} disabled={page === totalPages || partial}>
             {t.results.next} <ChevronRightIcon />
           </button>
         </nav>
