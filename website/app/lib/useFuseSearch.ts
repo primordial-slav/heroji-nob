@@ -142,7 +142,10 @@ interface UseFuseSearchReturn {
   searchTerm: string
   setSearchTerm: (term: string) => void
   isSearching: boolean
-  /** The results are not yet those of the term typed: the last search's stay until its are in */
+  /**
+   * The results are not yet those of the term typed: the last search's stay until its are in. True from the
+   * render in which the term or the list changes; the results of a list the hook had before are not kept.
+   */
   pending: boolean
 }
 
@@ -152,7 +155,8 @@ export function useFuseSearch(
 ): UseFuseSearchReturn {
   const [searchTerm, setSearchTerm] = useState('')
   const [debouncedTerm, setDebouncedTerm] = useState('')
-  const [found, setFound] = useState({ key: '', results: NO_SOLDIERS })
+  // The last search's results, with the term and the list they are for
+  const [found, setFound] = useState({ key: '', data: NO_SOLDIERS, results: NO_SOLDIERS })
   const poolRef = useRef<SearchPool | null>(null)
   const wholeWords = !!options.wholeWords
 
@@ -177,22 +181,33 @@ export function useFuseSearch(
 
   // Execute search when debounced term changes
   useEffect(() => {
-    if (!debouncedTerm.trim()) {
-      setFound({ key: '', results: options.showAllOnEmpty ? data : NO_SOLDIERS })
-      return
-    }
+    if (!debouncedTerm.trim()) return
     const pool = poolRef.current
     if (!pool) return
     let current = true
     const key = searchKey(debouncedTerm, wholeWords)
     pool.search(normalizeForSearch(debouncedTerm.trim()), wholeWords).then((positions) => {
-      if (current && positions) setFound({ key, results: Array.from(positions, (i) => data[i]) })
+      if (current && positions) setFound({ key, data, results: Array.from(positions, (i) => data[i]) })
     })
     return () => { current = false }
-  }, [debouncedTerm, data, options.showAllOnEmpty, wholeWords])
+  }, [debouncedTerm, data, wholeWords])
 
+  // An empty term lists everyone (or no one), and those results stay while the next search runs. Only when the
+  // term typed is empty too: a term from the address is set before the list arrives, while the debounced term is
+  // still empty, and its search would otherwise show the whole list first
+  useEffect(() => {
+    if (searchTerm.trim() || debouncedTerm.trim()) return
+    setFound({ key: '', data, results: options.showAllOnEmpty ? data : NO_SOLDIERS })
+  }, [searchTerm, debouncedTerm, data, options.showAllOnEmpty])
+
+  // Worked out in the render, not by the effects above, which run only after a render of the old results: the
+  // render in which a list arrives would show an empty result ("Nema boraca za „“") before the list
   const isSearching = searchTerm.trim().length > 0
-  const pending = isSearching && found.key !== searchKey(searchTerm, wholeWords)
+  const ofThisList = found.data === data
+  const pending = isSearching && !(ofThisList && found.key === searchKey(searchTerm, wholeWords))
+  const results = !isSearching
+    ? (options.showAllOnEmpty ? data : NO_SOLDIERS)
+    : ofThisList ? found.results : NO_SOLDIERS
 
-  return { results: found.results, searchTerm, setSearchTerm, isSearching, pending }
+  return { results, searchTerm, setSearchTerm, isSearching, pending }
 }
