@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~108,200 WWII Yugoslav partisan soldiers across 38 units (33 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~109,100 WWII Yugoslav partisan soldiers across 38 units (33 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -13,9 +13,9 @@ Historical archive website for searching ~108,200 WWII Yugoslav partisan soldier
 |------|------|--------|------|-----|-------|
 | 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,060 |
 | 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,814 |
-| 3 | Druga Lička | via `scripts/` (fallen); `data-extraction/parse_druga_licka_prezivjeli.py` (survivors); `data-extraction/parse_druga_licka_sjecanja_poginuli.py` (fallen, memoir book) | `druga-licka-soldiers.json` | 3 PDFs (fallen; survivors and fallen from the memoir book, two columns) | 7,592 |
+| 3 | Druga Lička | via `scripts/` (fallen); `data-extraction/parse_druga_licka_prezivjeli.py` (survivors); `data-extraction/parse_druga_licka_sjecanja_poginuli.py` (fallen, memoir book) | `druga-licka-soldiers.json` | 3 PDFs (fallen; survivors and fallen from the memoir book, two columns) | 7,545 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,175 |
-| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` | `treca-proleterska-soldiers.json` | 1 PDF | 897 |
+| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` (at formation); `data-extraction/parse_treca_proleterska_poginuli.py` (fallen, memoir book) | `treca-proleterska-soldiers.json` | 2 PDFs (at formation; fallen and dead by year, Cyrillic) | 1,895 |
 | 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,261 |
 | 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,546 |
 | 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,097 |
@@ -51,7 +51,7 @@ Historical archive website for searching ~108,200 WWII Yugoslav partisan soldier
 | 38 | 8. Crnogorska | `data-extraction/parse_8_crnogorska.py` | `8-crnogorska-soldiers.json` | 1 PDF (Cyrillic; book pp. 471-501, 509-510) | 730 |
 
 Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`.
-A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-) and a re-run replaces only the records read from its own PDFs.
+A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-; Treća proleterska's fallen: 0005010001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
 ## Data Pipeline
@@ -106,7 +106,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 ]
 ```
 
-**One soldier, several books.** A soldier printed in two of a unit's books (or two lists of one book) is one record: a `merge` moves the other book's entry into the record's `other_sources` (the name as printed there, its text, and its place on the page), fills fields the record lacks from it, and removes that record (`merge_name` guards against a re-parse giving the id to someone else). The dialog shows every book's entry and switches the PDF between them; search also finds the other book's spelling; structured fields and entry boxes are read from merged entries too. Find candidates with `python scripts/find_source_duplicates.py --brigade N` (grades `sure`, `likely`, `name`, `review` by father, birth year and place, death year and place, and fate), check them, then `--write sure,likely` (plus `--only file` of reviewed `keep_id merge_id` pairs). A list of the fallen against a list of survivors (`LIST_FATE`) never merges by itself: there a matching name, father and village is as often a cousin as the same man (Druga lička, 17. Slavonska). Matches across units are not merged.
+**One soldier, several books.** A soldier printed in two of a unit's books (or two lists of one book) is one record: a `merge` moves the other book's entry into the record's `other_sources` (the name as printed there, its text, and its place on the page), fills fields the record lacks from it, and removes that record (`merge_name` guards against a re-parse giving the id to someone else). The dialog shows every book's entry and switches the PDF between them; search also finds the other book's spelling; structured fields and entry boxes are read from merged entries too. Find candidates with `python scripts/find_source_duplicates.py --brigade N` (grades `sure`, `likely`, `name`, `review` by father, birth year and place, death year and place, and fate), check them, then `--write sure,likely` (plus `--only file` of reviewed `keep_id merge_id` pairs). A list of the fallen against a list of survivors (`LIST_FATE`) never merges by itself: there a matching name, father and village is as often a cousin as the same man (Druga lička, 17. Slavonska). A man one book prints twice gets both entries; matches across units are not merged. Don't re-run a second book's parser whose name repairs learn from the other units (Druga lička's memoir list uses the survivors' reader): the units change, so names, their order and the IDs shift, and while `merge_name` stops a merge with a warning, edits by id land on whoever has the id now.
 
 ## Soldier JSON Schema
 

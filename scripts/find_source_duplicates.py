@@ -100,6 +100,7 @@ SURVIVED = re.compile(r'kraj rata (?:je )?do[cč]ekao|pre[zž]ivio|\bživ(?:i|e)
 LIST_FATE = {
     'druga-licka-spisak.pdf': 'fell', 'druga-licka-sjecanja-poginuli.pdf': 'fell', 'druga-licka-sjecanja-prezivjeli.pdf': 'lived',
     '17-slavonska-poginuli.pdf': 'fell', '17-slavonska-prezivjeli.pdf': 'lived',
+    'treca-proleterska-poginuli-knj3.pdf': 'fell',
 }
 
 
@@ -211,7 +212,11 @@ def matches(soldiers: list[dict], rank: dict) -> list[dict]:
         sides[(p['merge']['soldier_id'], list_of(p['keep']))].append(p)
 
     def chosen(p, group):
-        return len(group) == 1 or (p['agree'] and not p['clash'] and all(q['clash'] for q in group if q is not p))
+        """The only candidate; the only one that agrees where the others disagree; or clearly the best: nothing
+        disagrees, two things or more agree, and more than with any other candidate."""
+        others = [q for q in group if q is not p]
+        return (not others or (p['agree'] and not p['clash'] and all(q['clash'] for q in others))
+                or (len(p['agree']) >= 2 and not p['clash'] and all(len(q['agree']) < len(p['agree']) for q in others)))
 
     def printed_twice(group):
         """The other list prints the soldier twice (both entries agree on two things or more, nothing disagrees):

@@ -60,8 +60,8 @@ BRIGADE_CONFIGS = {
         'json_file': 'treca-proleterska-soldiers.json',
         'language': 'sr',
         'name_format': 'standard',
-        'has_fathers_name': False,
-        'fathers_name_form': None,
+        'has_fathers_name': True,       # the memoir book's list of the fallen (the formation list prints initials)
+        'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
     6: {

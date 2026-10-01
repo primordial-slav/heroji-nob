@@ -151,6 +151,9 @@ def rebuild_computed_fields(soldier, skip_birth_year=False):
 
 MANUAL_FIELDS = {}   # soldier_id -> structured fields some correction sets explicitly
 EDITED_FIELDS = {}   # soldier_id -> fields some edit correction sets
+DELETED = {}         # soldier_id -> the record a delete correction removed in this run
+MERGED_IDS = set()   # ids a merge correction folds into another record: their earlier edits are done (after a re-parse
+                     # they apply before the merge), so a later run finds nothing to edit and that is fine
 
 
 def apply_edit(soldiers, correction):
@@ -185,6 +188,8 @@ def apply_edit(soldiers, correction):
                 print(f"         Reason: {reason}")
             return soldiers, True
 
+    if sid in MERGED_IDS:
+        return soldiers, True
     print(f"    WARNING: Soldier {sid} not found for edit")
     return soldiers, False
 
@@ -197,7 +202,7 @@ def apply_delete(soldiers, correction):
     for i, s in enumerate(soldiers):
         if s.get('soldier_id') == sid:
             name = s.get('full_name', f"{s.get('last_name', '')} {s.get('first_name', '')}")
-            soldiers.pop(i)
+            DELETED[sid] = soldiers.pop(i)
             print(f"    DELETE {sid}: {name}")
             if reason:
                 print(f"         Reason: {reason}")
@@ -289,6 +294,11 @@ def apply_add(soldiers, correction):
               'full_name': '', 'additional_info': '', 'birth_year': ''}
     record.update(correction['record'])
     record = rebuild_computed_fields(record, skip_birth_year='birth_year' in correction['record'])
+    # an id deleted earlier in this run and added again (a parse error's id reused for a missing soldier): the
+    # entries of other books merged into it stay with it
+    before = DELETED.pop(new_id, None)
+    if before and before.get('other_sources'):
+        record['other_sources'] = before['other_sources']
 
     anchor = next((i for i, s in enumerate(soldiers) if s.get('soldier_id') == correction['soldier_id']), len(soldiers) - 1)
     soldiers.insert(anchor + 1, record)
@@ -433,6 +443,8 @@ def main():
         MANUAL_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields & set(structured.FIELDS))
         if c['action'] == 'edit':
             EDITED_FIELDS.setdefault(c['soldier_id'], set()).update(c['fields'])
+        elif c['action'] == 'merge':
+            MERGED_IDS.add(c['merge_id'])
 
     # Group corrections by brigade
     by_brigade = {}

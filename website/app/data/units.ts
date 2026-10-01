@@ -46,7 +46,7 @@ export const units: Unit[] = [
     nameEn: '2nd Lika Proletarian Brigade',
     description: 'Formirana 1942. Poginuli, umrli i nestali borci, i oni koji su preživeli rat.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 7592,
+    soldierCount: 7545,
     dataFile: '/druga-licka-soldiers.json',
     pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf', '/pdfs/druga-licka-sjecanja-poginuli.pdf']
   },
@@ -56,9 +56,9 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. Spisak je sa dana kad je brigada formirana.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 897,
+    soldierCount: 1895,
     dataFile: '/treca-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf']
+    pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf']
   },
   {
     id: '13-proleterska-brigada',

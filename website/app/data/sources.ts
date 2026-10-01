@@ -82,6 +82,15 @@ export const sources: PdfSource[] = [
     description: 'Monografija, Biblioteka Ratna prošlost naših naroda, knj. 144'
   },
   {
+    id: 'treca-proleterska-poginuli-knj3',
+    title: 'Treća proleterska (sandžačka) brigada — spisak poginulih i umrlih (zbornik sjećanja, knj. 3)',
+    author: 'Šućro Hadžismajlović',
+    pdfPath: '/pdfs/treca-proleterska-poginuli-knj3.pdf',
+    thumbnail: '/images/pdf-thumbs/treca-proleterska-poginuli-knj3.jpg',
+    brigadeName: 'Treća proleterska (sandžačka) brigada',
+    description: 'Spisak poginulih i umrlih boraca i starješina po godinama, 1942-1945 (1.374 imena; u ovom primjerku nedostaju strane s početkom 1944. godine)'
+  },
+  {
     id: 'ljubljanska-brigada',
     title: '10. slovenska NOV brigada „Ljubljanska"',
     author: 'Boris Vojlah',
