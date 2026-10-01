@@ -1259,6 +1259,8 @@ body:has(.band-photo[data-ready]) header.masthead {
   height: clamp(14rem, 40vh, 22rem);
   overflow: auto;
   position: relative;
+  /* its own layer: the highlight (z-index 10) stays under the popup's sticky Prethodni / Sledeći bar */
+  isolation: isolate;
   background: #ffffff;
 }
 
