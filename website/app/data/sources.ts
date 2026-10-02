@@ -746,5 +746,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/gubceva.jpg',
     brigadeName: 'Gubčeva brigada',
     description: 'Spisak boraca brigade koji su preživeli rat (str. 979 i dalje) i spisak njenih poginulih (str. 1016 i dalje)'
+  },
+  {
+    id: 'dvanajsta',
+    title: 'Dvanajsta brigada — seznam padlih, seznam borcev XII. SNOUB',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/dvanajsta.pdf',
+    thumbnail: '/images/pdf-thumbs/dvanajsta.jpg',
+    brigadeName: '12. slovenačka brigada',
+    description: 'Spisak poginulih boraca brigade i spisak onih koji su preživeli rat, na kraju knjige'
   }
 ]

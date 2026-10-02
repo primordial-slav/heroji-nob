@@ -261,6 +261,11 @@ UNITS = {
         book=dict(pdf="00003/782.pdf", page=221, xref=2012, caption="Skupina partizanov Gubčeve brigade. Fotografija je iz leta 1943"),
         crop=(0.0, 0.22, 1.0, 0.88),
         note="The gallery has no group of the brigade's soldiers; the photo is from its own book (the crop keeps the group)."),
+    "dvanajsta-brigada": dict(
+        name="Dvanajsta brigada (XII. SNOUB)", tags=[],
+        caption=r"(?:XII\.?|dvanajst\w*)\s+(?:slovensk\w*\s+)?(?:snou\s+)?brigad", photo=None,
+        book=dict(pdf="00003/814.pdf", page=150, xref=1273, caption="Skupina borcev in bork 1. bataljona Dvanajste brigade"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

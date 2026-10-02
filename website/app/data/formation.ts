@@ -201,6 +201,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-09-04', place: 'Trebelno nad Mokronogom', source: 'https://znaci.org/00003/782.pdf',
     note: 'Knjiga brigade (Ambrožič-Novljan, str. 9): ustanovni miting u šumi južno od sela Trebelno.',
   },
+  'dvanajsta-brigada': {
+    date: '1943-09-24', place: 'Mokronog', source: 'https://znaci.org/00003/814.pdf',
+    note: 'Knjiga brigade (Ambrožič-Novljan): ustanovni miting u Mokronogu; brigada nastala od jezgra Šlandrove brigade i 4. bataljona Gubčeve.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

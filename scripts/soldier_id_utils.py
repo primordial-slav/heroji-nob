@@ -77,6 +77,7 @@ BRIGADE_CODES = {
     60: '8. Kordunaška divizija',
     61: 'Cankarjeva',
     62: 'Gubčeva',
+    63: 'Dvanajsta (XII. SNOUB)',
     # Add new brigades here with next available code
 }
 

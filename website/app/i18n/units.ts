@@ -294,6 +294,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 4. septembra 1942 pri Trebelnem nad Mokronogom. Padli in preživeli borci.',
   },
+  'dvanajsta-brigada': {
+    name: 'Dvanajsta brigada',
+    description:
+      'Ustanovljena 24. septembra 1943 v Mokronogu. Padli in preživeli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -579,6 +584,11 @@ const mk: Record<string, UnitText> = {
     name: 'Губчева бригада',
     description:
       'Формирана на 4 септември 1942 кај Требелно над Мокроног. Загинати и преживеани борци.',
+  },
+  'dvanajsta-brigada': {
+    name: '12-та словенечка бригада',
+    description:
+      'Формирана на 24 септември 1943 во Мокроног. Загинати и преживеани борци.',
   },
 }
 
@@ -867,6 +877,11 @@ const en: Record<string, UnitText> = {
     name: 'Gubec Brigade',
     description:
       'Formed on 4 September 1942 near Trebelno above Mokronog. Partisans who were killed and those who survived.',
+  },
+  'dvanajsta-brigada': {
+    name: '12th Slovene Brigade',
+    description:
+      'Formed on 24 September 1943 in Mokronog. Partisans who were killed and those who survived.',
   },
 }
 

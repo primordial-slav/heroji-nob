@@ -42,8 +42,9 @@ class Indent:
     fallen) and drops headings and page numbers. An entry starts at the column's margin, measured near the line
     (within 60 pt above and below), so the scan's skew doesn't move it; continuation lines sit ~9 pt in."""
 
-    def __init__(self, padli_from: int | None, headings: re.Pattern):
-        self.padli_from = padli_from
+    def __init__(self, padli_from: int | None, headings: re.Pattern, padli_to: int | None = None):
+        self.padli_from = padli_from                                         # the pages of the list of the fallen
+        self.padli_to = padli_to
         self.headings = headings
         self.split: dict = {}                                                # page -> the x between its two columns
         self.cols: dict = {}
@@ -72,7 +73,8 @@ class Indent:
         t = re.sub(r'^1(19\d\d)$', r'† \1', t)                                  # "11946": † 1946, on a line of its own
         if re.fullmatch(r'[\d\W]{1,5}', t) or self.headings.match(t):
             return False
-        kind = 'p' if self.padli_from and ln['page'] >= self.padli_from else 's'
+        kind = 'p' if (self.padli_from and ln['page'] >= self.padli_from
+                       and (self.padli_to is None or ln['page'] <= self.padli_to)) else 's'
         indent = ln['x'] - self.margin(ln)
         starts = re.match(rf'^(?:[{U}]|[2šžčć][{L}])', t)                     # "žužek": a lowercase Ž
         # "Surname Given," or "Surname Given-Alias, 1920": where the scan curves or was pasted, entries drift in
@@ -95,6 +97,7 @@ def fix_ocr(t: str) -> str:
     t = t.replace('đ', 'd')                                                  # "Lađo", "Zđenka": Slovene has no đ
     t = re.sub(r'\u00ad\s*', '', t)                                          # a soft hyphen at a line break
     t = re.sub(r',?\s+1(19\d\d)\s*$', r' † \1', t)                         # "Mokronog, 11967"
+    t = re.sub(r'\s+[ft]$', ' †', t)                                     # "Novo mesto f": died after the war
     t = re.sub(rf'(?<=[{L}])S(?=[{L}])', 'š', t)                             # "AdleSič"
     t = re.sub(rf'(?<=[{L}])C(?=[{L}]|\b)', 'č', t)                          # "ZemljariC"
     t = re.sub(rf'(?<=\b[{U}])I(?=[{L}])', 'l', t)                           # "AIojz"
@@ -129,7 +132,10 @@ def name_part(head: str) -> tuple[str, str, list[str]]:
     for m in list(re.finditer(r'\(?\b((?:roj|por|ud)\.)\s*([^\s,()]+)\)?', head)):   # "Justina roj. Kavšek", "(por. Zgavec)"
         notes.append(f'{m.group(1)} {m.group(2)}')
     head = re.sub(r'\(?\b(?:roj|por|ud)\.\s*[^\s,()]+\)?', ' ', head)
-    head = re.sub(r"[\d'’]+", ' ', head.replace('ä', 'a'))                  # "Grdad'olnik"; "Markovič 1942"
+    if '†' in head:                                                         # "Butara Ema†"
+        notes.append('†')
+    head = re.sub(r'(?<=[a-zčšž])—(?=[A-ZČŠŽ])', '-', head.replace('†', ' '))   # "Jože—Mito"
+    head = re.sub(r"[\d'’]+", ' ', head.replace('ä', 'a').replace('ö', 'o'))   # "Grdad'olnik"; "Markovič 1942"
     toks = head.replace('.', '. ').split()
     out = []
     for w in toks:                                                           # "Zara n Ludvik": a letter cut off the word
@@ -141,7 +147,7 @@ def name_part(head: str) -> tuple[str, str, list[str]]:
         out[:2] = [out[0] + out[1]]                                          # "No vina Rado"
     other = [w.strip('()') for w in out[1:2] if w.startswith('(') and w.endswith(')')]
     out = [w for w in out if w.strip('()') not in other]                     # "Čok (Cioch) Anton"
-    pre = [w for w in out if w in ('dr.', 'ing.', 'mr.', 'arh.')]
+    pre = [w for w in out if w in ('dr.', 'ing.', 'mr.', 'arh.', 'ml.', 'st.')]                # "Ivan ml.": the younger
     out = [w for w in out if w not in pre]
     if len(out) > 2 and out[0] in ('De', 'Del', 'Di', 'Da', 'Van', 'Von'):    # "De Gleria Mitja"
         out[:2] = [out[0] + ' ' + out[1]]
@@ -160,9 +166,9 @@ def name_part(head: str) -> tuple[str, str, list[str]]:
 def parse_roster(text: str) -> dict:
     """'Adamič Bara-Beba, roj. Cemič, 1921, Maribor'"""
     text = fix_ocr(re.sub(r'^§s§\s*', '', text))
-    m = re.search(r',|\s(?=1[89]\d\d)', text)
+    m = re.search(r',|\s(?=1[89]\d\d)|(?<![ (]ing)(?<![ (]arh)(?<![ (]roj)(?<![ (]por)(?<=[a-zčšž]{3})\.\s(?=[A-ZČŠŽ])', text)   # "Berkopec Janez. Maribor"
     head, rest = (text[:m.start()], text[m.end():].strip()) if m else (text, '')
-    last, given, notes = name_part(head.rstrip('.'))
+    last, given, notes = name_part(head if re.search(r'\b(?:ml|st)\.$', head) else head.rstrip('.'))
     born = re.match(r'^((?:roj|por)\.\s*[^,]+),\s*', rest)                   # maiden or married name
     if born:
         notes.append(born.group(1))

@@ -136,6 +136,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam cankarjevcev, ki so preživeli vojno (str. 815 in naprej), in seznam padlih (str. 847 in naprej)',
     'gubceva':
       'Seznam gubčevcev, ki so preživeli vojno (str. 979 in naprej), in seznam padlih (str. 1016 in naprej)',
+    'dvanajsta':
+      'Seznam padlih borcev brigade in seznam borcev, ki so preživeli vojno, na koncu knjige',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -261,6 +263,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на бригадата што ја преживеале војната (стр. 815 и натаму) и список на нејзините загинати (стр. 847 и натаму)',
     'gubceva':
       'Список на борците на бригадата што ја преживеале војната (стр. 979 и натаму) и список на нејзините загинати (стр. 1016 и натаму)',
+    'dvanajsta':
+      'Список на загинатите борци на бригадата и список на оние што ја преживеале војната, на крајот на книгата',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -385,6 +389,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the brigade’s members who survived the war (pp. 815 ff.) and of its fallen (pp. 847 ff.)',
     'gubceva':
       'List of the brigade’s members who survived the war (pp. 979 ff.) and of its fallen (pp. 1016 ff.)',
+    'dvanajsta':
+      'Lists of the brigade’s fallen and of those who survived the war, at the end of the book',
   },
 }
 

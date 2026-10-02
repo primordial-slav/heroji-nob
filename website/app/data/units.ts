@@ -629,6 +629,16 @@ export const units: Unit[] = [
     soldierCount: 2970,
     dataFile: '/gubceva-soldiers.json',
     pdfFiles: ['/pdfs/gubceva.pdf']
+  },
+  {
+    id: 'dvanajsta-brigada',
+    name: '12. slovenačka brigada',
+    nameEn: '12th Slovene Brigade',
+    description: 'Formirana 24. septembra 1943. u Mokronogu. Poginuli i preživeli borci.',
+    image: '/images/dvanajsta-brigada.jpg',
+    soldierCount: 1657,
+    dataFile: '/dvanajsta-soldiers.json',
+    pdfFiles: ['/pdfs/dvanajsta.pdf']
   }
   // Add more units here as you get more data
 ]

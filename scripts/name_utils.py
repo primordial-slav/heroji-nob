@@ -585,6 +585,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    63: {
+        'name': 'Dvanajsta (XII. SNOUB)',
+        'json_file': 'dvanajsta-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Ban Anton, 1925, Divača"; the fallen "Bavle Marjan, Gor. Podboršt, 1927—1945"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 
