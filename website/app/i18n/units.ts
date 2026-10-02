@@ -369,6 +369,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 24. junija 1944 v vasi Zbaždi v zahodni Makedoniji. Borci brigade, padli in ranjeni.',
   },
+  '8-vojvodjanska-brigada': {
+    name: '8. vojvodinska brigada',
+    description:
+      'Ustanovljena 12. septembra 1944 na jasi Jabuka na Fruški gori. Padli in pogrešani borci in starešine.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -729,6 +734,11 @@ const mk: Record<string, UnitText> = {
     name: '1-ва косовско-метохиска бригада',
     description:
       'Формирана на 24 јуни 1944 во селото Збажди во западна Македонија. Борците на бригадата, загинатите и ранетите.',
+  },
+  '8-vojvodjanska-brigada': {
+    name: '8-ма војводинска бригада',
+    description:
+      'Формирана на 12 септември 1944 на чистината Јабука на Фрушка Гора. Загинати и исчезнати борци и старешини.',
   },
 }
 
@@ -1092,6 +1102,11 @@ const en: Record<string, UnitText> = {
     name: '1st Kosovo-Metohija Brigade',
     description:
       'Formed on 24 June 1944 in the village of Zbaždi in western Macedonia. The brigade’s members, its fallen and wounded.',
+  },
+  '8-vojvodjanska-brigada': {
+    name: '8th Vojvodina Brigade',
+    description:
+      'Formed on 12 September 1944 at the Jabuka clearing on Fruška Gora. Partisans and officers who were killed or went missing.',
   },
 }
 

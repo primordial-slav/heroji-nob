@@ -261,6 +261,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-06-24', place: 'Zbaždi', source: 'https://znaci.org/00001/185_7.pdf',
     note: 'Milković, Prva kosovsko-metohijska brigada (pogl. Brigada nova - borci stari): formirana 24. juna 1944. u selu Zbaždi od kosovsko-metohijskih bataljona Prve makedonsko-kosovske brigade; autor odbacuje druge datume iz komentara Zbornika.',
   },
+  '8-vojvodjanska-brigada': {
+    date: '1944-09-12', place: 'Jabuka na Fruškoj gori', source: 'https://znaci.org/00001/184_2.pdf',
+    note: 'Božić, Rovovi i mostobrani (pogl. Formiranje Osme vojvođanske udarne brigade): na osnovu naredbe Glavnog štaba NOV i PO Vojvodine br. 28 od 11. septembra, formirana 12. septembra 1944. na fruškogorskom proplanku Jabuka.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

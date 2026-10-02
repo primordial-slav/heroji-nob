@@ -899,5 +899,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-kosovsko-metohijska.jpg',
     brigadeName: '1. kosovsko-metohijska brigada',
     description: 'Spiskovi boraca: kosovsko-metohijski bataljoni od kojih je brigada formirana, borci koji su stupili 1944. iz Porečja i Tetova i od Junika i Dečana, poginuli i ranjeni (str. 351–383)'
+  },
+  {
+    id: '8-vojvodjanska',
+    title: 'Rovovi i mostobrani: Osma vojvođanska brigada — poginuli i nestali',
+    author: 'Nikola Božić',
+    pdfPath: '/pdfs/8-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/8-vojvodjanska.jpg',
+    brigadeName: '8. vojvođanska brigada',
+    description: 'Spisak poginulih i nestalih boraca i rukovodilaca brigade: rođenje, gde su i kada pali ili nestali (str. 675–722)'
   }
 ]

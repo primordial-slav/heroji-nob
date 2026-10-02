@@ -336,6 +336,9 @@ UNITS = {
         name="1. kosovsko-metohijska brigada", tags=[],
         caption=r"(?:1\.|prv\w*|I\.)\s+kosovsko\W*metohijsk\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=12361,
         crop=(0.0, 0.2, 1.0, 0.8)),
+    "8-vojvodjanska-brigada": dict(
+        name="8. vojvođanska brigada", tags=[],
+        caption=r"(?:8\.|VIII\.?|osm\w*)\s+vojvo\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=14398),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

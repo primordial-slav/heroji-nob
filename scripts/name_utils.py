@@ -720,6 +720,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    78: {
+        'name': '8. Vojvođanska',
+        'json_file': '8-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ARADACKI Pavla Milivoj, rođ. 1928, Bečej, poginuo u Crncu 21. I 1945."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

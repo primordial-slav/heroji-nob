@@ -779,6 +779,16 @@ export const units: Unit[] = [
     soldierCount: 1074,
     dataFile: '/1-kosovsko-metohijska-soldiers.json',
     pdfFiles: ['/pdfs/1-kosovsko-metohijska.pdf']
+  },
+  {
+    id: '8-vojvodjanska-brigada',
+    name: '8. vojvođanska brigada',
+    nameEn: '8th Vojvodina Brigade',
+    description: 'Formirana 12. septembra 1944. na proplanku Jabuka na Fruškoj gori. Poginuli i nestali borci i starešine.',
+    image: '/images/8-vojvodjanska-brigada.jpg',
+    soldierCount: 1113,
+    dataFile: '/8-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/8-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]
