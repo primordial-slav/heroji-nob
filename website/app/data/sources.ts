@@ -944,5 +944,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/5-vojvodjanska.jpg',
     brigadeName: '5. vojvođanska brigada',
     description: 'Spisak boraca i starešina brigade: godina i mesto rođenja, zanimanje, dužnost u brigadi, gde su pali ili nestali (str. 429–584)'
+  },
+  {
+    id: '6-vojvodjanska',
+    title: 'Šesta vojvođanska udarna brigada — spisak poginulih',
+    author: 'Živan M. Ninković',
+    pdfPath: '/pdfs/6-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/6-vojvodjanska.jpg',
+    brigadeName: '6. vojvođanska brigada',
+    description: 'Spisak poginulih boraca i rukovodilaca: godina i mesto rođenja, datum i mesto pogibije, gde su sahranjeni (str. 175–199)'
   }
 ]

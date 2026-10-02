@@ -765,6 +765,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    83: {
+        'name': '6. Vojvođanska',
+        'json_file': '6-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADŽIJA Živan, rođen 1925. godine, s. Idvor, opština Kovačica, poginuo ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
 }
 
 

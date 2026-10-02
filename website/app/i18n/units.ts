@@ -394,6 +394,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 15. novembra 1943 v Obršinah na Majevici. Borci in starešine brigade.',
   },
+  '6-vojvodjanska-brigada': {
+    name: '6. vojvodinska brigada',
+    description:
+      'Ustanovljena 17. januarja 1944 na Jabučju pri Sremski Rači. Padli borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -779,6 +784,11 @@ const mk: Record<string, UnitText> = {
     name: '5-та војводинска бригада',
     description:
       'Формирана на 15 ноември 1943 во Обршини на Мајевица. Борците и старешините на бригадата.',
+  },
+  '6-vojvodjanska-brigada': {
+    name: '6-та војводинска бригада',
+    description:
+      'Формирана на 17 јануари 1944 на Јабучје кај Сремска Рача. Загинатите борци и раководители на бригадата.',
   },
 }
 
@@ -1167,6 +1177,11 @@ const en: Record<string, UnitText> = {
     name: '5th Vojvodina Brigade',
     description:
       'Formed on 15 November 1943 at Obršine on Mount Majevica. The brigade’s soldiers and officers.',
+  },
+  '6-vojvodjanska-brigada': {
+    name: '6th Vojvodina Brigade',
+    description:
+      'Formed on 17 January 1944 at Jabučje near Sremska Rača. The brigade’s fallen soldiers and officers.',
   },
 }
 

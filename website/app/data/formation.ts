@@ -281,6 +281,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-11-15', place: 'Obršine (Majevica)', source: 'https://znaci.org/00001/81_1.pdf',
     note: 'Mraović, Peta vojvođanska brigada (pogl. Formiranje Pete vojvođanske brigade): komandant i komesar su 15. novembra pozvani u Štab XVI divizije; „Prema tome, Brigada je formirana 15. novembra 1943.“ Prvo okupljanje i smotra 17. novembra u selu Obršinama (posleratni napisi navode 17. XI u Ratkovićima, što dokumenta ne potvrđuju).',
   },
+  '6-vojvodjanska-brigada': {
+    date: '1944-01-17', place: 'Jabučje kod Sremske Rače', source: 'https://znaci.org/00001/252_2.pdf',
+    note: 'Ninković, Šesta vojvođanska udarna brigada (Glava I): „Sedamnaesti januar bio je sunčan i prohladan. Tačno u 10 časova izvršena je smotra, a postrojenim borcima na Jabučju, južno od Sremske Rače, pročitana je naredba Glavnog štaba Vojvodine o formiranju 6. vojvođanske brigade“ (naredba br. 1 od 10. januara 1944).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

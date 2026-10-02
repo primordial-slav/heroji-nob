@@ -180,6 +180,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev, ki so šli skozi brigado: leto in kraj rojstva; padli, z enoto in krajem smrti (str. 243–287)',
     '5-vojvodjanska':
       'Seznam borcev in starešin brigade: leto in kraj rojstva, poklic, dolžnost v brigadi, kje so padli ali izginili (str. 429–584)',
+    '6-vojvodjanska':
+      'Seznam padlih borcev in starešin: leto in kraj rojstva, datum in kraj smrti, kje so pokopani (str. 175–199)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -349,6 +351,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците што поминале низ бригадата: година и место на раѓање; загинатите, со единицата и местото на загинување (стр. 243–287)',
     '5-vojvodjanska':
       'Список на борците и старешините на бригадата: година и место на раѓање, занимање, должност во бригадата, каде загинале или исчезнале (стр. 429–584)',
+    '6-vojvodjanska':
+      'Список на загинатите борци и раководители: година и место на раѓање, датум и место на загинување, каде се погребани (стр. 175–199)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -517,6 +521,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Everyone who served in the brigade: year and place of birth; the fallen, with their unit and where they fell (pp. 243–287)',
     '5-vojvodjanska':
       'The brigade’s soldiers and officers: year and place of birth, trade, duty in the brigade, where they fell or went missing (pp. 429–584)',
+    '6-vojvodjanska':
+      'The fallen soldiers and officers: year and place of birth, date and place of death, where they were buried (pp. 175–199)',
   },
 }
 

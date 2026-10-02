@@ -361,6 +361,9 @@ UNITS = {
                   caption="Borci Brigade posle prijema odlikovanja u Baranji, mart 1945."),
         descreen=1.4,
         note="The gallery's one photo (8768, an assault on the Voćin canal) shows the soldiers too small; this one is from the brigade's own book."),
+    "6-vojvodjanska-brigada": dict(
+        name="6. vojvođanska brigada", tags=["6-vojvodjanska-udarna-brigada"],
+        caption=nth(6, r"vojvo[dđ]j?ansk"), photo=13076),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

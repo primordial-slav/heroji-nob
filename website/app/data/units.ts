@@ -829,6 +829,16 @@ export const units: Unit[] = [
     soldierCount: 4262,
     dataFile: '/5-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/5-vojvodjanska.pdf']
+  },
+  {
+    id: '6-vojvodjanska-brigada',
+    name: '6. vojvođanska brigada',
+    nameEn: '6th Vojvodina Brigade',
+    description: 'Formirana 17. januara 1944. na Jabučju kod Sremske Rače. Poginuli borci i rukovodioci brigade.',
+    image: '/images/6-vojvodjanska-brigada.jpg',
+    soldierCount: 347,
+    dataFile: '/6-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/6-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]
