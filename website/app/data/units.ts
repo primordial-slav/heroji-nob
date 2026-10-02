@@ -819,6 +819,16 @@ export const units: Unit[] = [
     soldierCount: 1296,
     dataFile: '/14-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/14-hercegovacka.pdf']
+  },
+  {
+    id: '5-vojvodjanska-brigada',
+    name: '5. vojvođanska brigada',
+    nameEn: '5th Vojvodina Brigade',
+    description: 'Formirana 15. novembra 1943. u Obršinama na Majevici. Borci i starešine brigade.',
+    image: '/images/5-vojvodjanska-brigada.jpg',
+    soldierCount: 4262,
+    dataFile: '/5-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/5-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -756,6 +756,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'upper_last',
     },
+    82: {
+        'name': '5. Vojvođanska',
+        'json_file': '5-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "AĆIMOVIĆ Jove Sava, 1921, Donji Tovarnik, Ruma, nestao 26. XII 1943. ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

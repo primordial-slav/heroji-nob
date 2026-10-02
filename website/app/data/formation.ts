@@ -277,6 +277,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-09-04', place: 'Ljubinje', source: 'https://znaci.org/00001/268_2.pdf',
     note: 'Četrnaesta hercegovačka omladinska NOU brigada (Beograd 1988), pogl. Formiranje brigade: naredbom štaba 29. hercegovačke NOU divizije od 4. septembra 1944. godine u rejonu Ljubinja formirana je 14. brigada.',
   },
+  '5-vojvodjanska-brigada': {
+    date: '1943-11-15', place: 'Obršine (Majevica)', source: 'https://znaci.org/00001/81_1.pdf',
+    note: 'Mraović, Peta vojvođanska brigada (pogl. Formiranje Pete vojvođanske brigade): komandant i komesar su 15. novembra pozvani u Štab XVI divizije; „Prema tome, Brigada je formirana 15. novembra 1943.“ Prvo okupljanje i smotra 17. novembra u selu Obršinama (posleratni napisi navode 17. XI u Ratkovićima, što dokumenta ne potvrđuju).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

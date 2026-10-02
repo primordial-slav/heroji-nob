@@ -935,5 +935,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/14-hercegovacka.jpg',
     brigadeName: '14. hercegovačka brigada',
     description: 'Spisak boraca koji su prošli kroz brigadu: godina i mesto rođenja; poginuli, s jedinicom i mestom pogibije (str. 243–287)'
+  },
+  {
+    id: '5-vojvodjanska',
+    title: 'Peta vojvođanska brigada — spisak boraca i starešina',
+    author: 'Nikola Mraović',
+    pdfPath: '/pdfs/5-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/5-vojvodjanska.jpg',
+    brigadeName: '5. vojvođanska brigada',
+    description: 'Spisak boraca i starešina brigade: godina i mesto rođenja, zanimanje, dužnost u brigadi, gde su pali ili nestali (str. 429–584)'
   }
 ]

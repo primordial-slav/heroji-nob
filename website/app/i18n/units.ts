@@ -389,6 +389,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 4. septembra 1944 pri Ljubinju kot mladinska brigada. Vsi borci, ki so šli skozi brigado, in padli.',
   },
+  '5-vojvodjanska-brigada': {
+    name: '5. vojvodinska brigada',
+    description:
+      'Ustanovljena 15. novembra 1943 v Obršinah na Majevici. Borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -769,6 +774,11 @@ const mk: Record<string, UnitText> = {
     name: '14-та херцеговска бригада',
     description:
       'Формирана на 4 септември 1944 кај Љубиње, како младинска бригада. Сите борци што поминале низ бригадата и загинатите.',
+  },
+  '5-vojvodjanska-brigada': {
+    name: '5-та војводинска бригада',
+    description:
+      'Формирана на 15 ноември 1943 во Обршини на Мајевица. Борците и старешините на бригадата.',
   },
 }
 
@@ -1152,6 +1162,11 @@ const en: Record<string, UnitText> = {
     name: '14th Herzegovina Brigade',
     description:
       'Formed on 4 September 1944 near Ljubinje as a youth brigade. Everyone who served in it, and its fallen.',
+  },
+  '5-vojvodjanska-brigada': {
+    name: '5th Vojvodina Brigade',
+    description:
+      'Formed on 15 November 1943 at Obršine on Mount Majevica. The brigade’s soldiers and officers.',
   },
 }
 

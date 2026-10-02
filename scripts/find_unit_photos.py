@@ -354,6 +354,13 @@ UNITS = {
         book=dict(pdf="00001/268_2.pdf", page=123, xref=569,
                   caption="Grupa boraca i rukovodilaca 2. bataljona na odmoru kod Ogulina, aprila 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book (the 2. bataljon of the 14. brigade)."),
+    "5-vojvodjanska-brigada": dict(
+        name="5. vojvođanska brigada", tags=["5-vojvodjanska-udarna-brigada"],
+        caption=nth(5, r"vojvo[dđ]j?ansk"), photo=None,
+        book=dict(pdf="00001/81_3.pdf", page=71, xref=329,
+                  caption="Borci Brigade posle prijema odlikovanja u Baranji, mart 1945."),
+        descreen=1.4,
+        note="The gallery's one photo (8768, an assault on the Voćin canal) shows the soldiers too small; this one is from the brigade's own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,
