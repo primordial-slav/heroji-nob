@@ -890,5 +890,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/4-vojvodjanska.jpg',
     brigadeName: '4. vojvođanska brigada',
     description: 'Spisak pripadnika brigade na dan 7. oktobra 1943. i spisak poginulih i umrlih do 1. 3. 1946: rođenje, zanimanje, dužnost, gde su pali (str. 281–334)'
+  },
+  {
+    id: '1-kosovsko-metohijska',
+    title: 'Prva kosovsko-metohijska brigada — spiskovi boraca',
+    author: 'Milutin Milković',
+    pdfPath: '/pdfs/1-kosovsko-metohijska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-kosovsko-metohijska.jpg',
+    brigadeName: '1. kosovsko-metohijska brigada',
+    description: 'Spiskovi boraca: kosovsko-metohijski bataljoni od kojih je brigada formirana, borci koji su stupili 1944. iz Porečja i Tetova i od Junika i Dečana, poginuli i ranjeni (str. 351–383)'
   }
 ]

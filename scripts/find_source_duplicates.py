@@ -65,6 +65,7 @@ LISTS = {
     '22-srpska.pdf': [(1, 'poginuli'), (24, 'preziveli')],
     '12-vojvodjanska.pdf': [(1, 'spisak'), (34, 'poginuli')],
     '4-vojvodjanska.pdf': [(1, 'pripadnici 7. 10. 1943'), (32, 'poginuli')],
+    '1-kosovsko-metohijska.pdf': [(1, 'bataljoni'), (16, 'iz Porečja'), (19, 'od Junika'), (25, 'poginuli'), (31, 'ranjeni')],
     'tomsiceva-4.pdf': [(1, '1943-1944'), (49, '1944-1945')],
 }
 

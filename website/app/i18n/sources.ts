@@ -168,6 +168,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev po krajih, kjer so živeli pred vstopom v brigado, in seznam padlih: od kod so bili, leto rojstva, kje so padli (str. 207–258)',
     '4-vojvodjanska':
       'Seznam pripadnikov brigade na dan 7. oktobra 1943 in seznam padlih in umrlih do 1. 3. 1946: rojstvo, poklic, dolžnost, kje so padli (str. 281–334)',
+    '1-kosovsko-metohijska':
+      'Seznami borcev: kosovsko-metohijska bataljona, iz katerih je bila brigada ustanovljena, borci, ki so se pridružili leta 1944 iz Porečja in Tetova ter od Junika in Dečanov, padli in ranjeni (str. 351–383)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -325,6 +327,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците по местата каде што живееле пред да стапат во бригадата и список на загинатите: од каде се, година на раѓање, каде загинале (стр. 207–258)',
     '4-vojvodjanska':
       'Список на припадниците на бригадата на 7 октомври 1943 и список на загинатите и починатите до 1. 3. 1946: раѓање, занимање, должност, каде загинале (стр. 281–334)',
+    '1-kosovsko-metohijska':
+      'Списоци на борците: косовско-метохиските баталјони од кои е формирана бригадата, борците што се приклучија во 1944 од Поречието и Тетово и од Јуник и Дечани, загинатите и ранетите (стр. 351–383)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -481,6 +485,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s members by the place they lived in before joining, and its fallen: where they came from, year of birth, where they fell (pp. 207–258)',
     '4-vojvodjanska':
       'The brigade’s members on 7 October 1943, and those killed or dead up to 1 March 1946: birth, occupation, duty, where they fell (pp. 281–334)',
+    '1-kosovsko-metohijska':
+      'Lists of the brigade’s members: the Kosovo-Metohija battalions it was formed from, those who joined in 1944 from Poreče and Tetovo and from Junik and Dečani, its fallen and wounded (pp. 351–383)',
   },
 }
 

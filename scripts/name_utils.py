@@ -711,6 +711,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'nominative',
         'original_casing': 'title',
     },
+    77: {
+        'name': '1. Kosovsko-metohijska',
+        'json_file': '1-kosovsko-metohijska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "Ajtić Predrag, rođen 1921. u Prizrenu. Srbin, student. ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

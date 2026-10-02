@@ -769,6 +769,16 @@ export const units: Unit[] = [
     soldierCount: 1241,
     dataFile: '/4-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/4-vojvodjanska.pdf']
+  },
+  {
+    id: '1-kosovsko-metohijska-brigada',
+    name: '1. kosovsko-metohijska brigada',
+    nameEn: '1st Kosovo-Metohija Brigade',
+    description: 'Formirana 24. juna 1944. u selu Zbaždi u zapadnoj Makedoniji. Borci brigade, poginuli i ranjeni.',
+    image: '/images/1-kosovsko-metohijska-brigada.jpg',
+    soldierCount: 1074,
+    dataFile: '/1-kosovsko-metohijska-soldiers.json',
+    pdfFiles: ['/pdfs/1-kosovsko-metohijska.pdf']
   }
   // Add more units here as you get more data
 ]

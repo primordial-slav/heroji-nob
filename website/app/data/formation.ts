@@ -257,6 +257,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-07', place: 'šuma Varadin kod Višnjićeva', source: 'https://znaci.org/00001/230_2.pdf',
     note: 'Lagator, Četvrta vojvođanska brigada (pogl. Formiranje brigade): Glavni štab Vojvodine izdao je naredbu o formiranju 27. septembra; 7. oktobra 1943. brigada je svečano proglašena u šumi Varadin kod sela Grk (Višnjićevo).',
   },
+  '1-kosovsko-metohijska-brigada': {
+    date: '1944-06-24', place: 'Zbaždi', source: 'https://znaci.org/00001/185_7.pdf',
+    note: 'Milković, Prva kosovsko-metohijska brigada (pogl. Brigada nova - borci stari): formirana 24. juna 1944. u selu Zbaždi od kosovsko-metohijskih bataljona Prve makedonsko-kosovske brigade; autor odbacuje druge datume iz komentara Zbornika.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

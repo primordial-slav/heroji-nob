@@ -364,6 +364,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. oktobra 1943 v gozdu Varadin pri Višnjićevu. Borci prve sestave brigade in padli.',
   },
+  '1-kosovsko-metohijska-brigada': {
+    name: '1. kosovsko-metohijska brigada',
+    description:
+      'Ustanovljena 24. junija 1944 v vasi Zbaždi v zahodni Makedoniji. Borci brigade, padli in ranjeni.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -719,6 +724,11 @@ const mk: Record<string, UnitText> = {
     name: '4-та војводинска бригада',
     description:
       'Формирана на 7 октомври 1943 во шумата Варадин кај Вишњићево. Борците од првиот состав на бригадата и загинатите.',
+  },
+  '1-kosovsko-metohijska-brigada': {
+    name: '1-ва косовско-метохиска бригада',
+    description:
+      'Формирана на 24 јуни 1944 во селото Збажди во западна Македонија. Борците на бригадата, загинатите и ранетите.',
   },
 }
 
@@ -1077,6 +1087,11 @@ const en: Record<string, UnitText> = {
     name: '4th Vojvodina Brigade',
     description:
       'Formed on 7 October 1943 in the Varadin forest near Višnjićevo. The brigade’s first members and its fallen.',
+  },
+  '1-kosovsko-metohijska-brigada': {
+    name: '1st Kosovo-Metohija Brigade',
+    description:
+      'Formed on 24 June 1944 in the village of Zbaždi in western Macedonia. The brigade’s members, its fallen and wounded.',
   },
 }
 
