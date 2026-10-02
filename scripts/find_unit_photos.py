@@ -304,6 +304,9 @@ UNITS = {
         name="7. krajiška brigada", tags=["7-krajiska-udarna-brigada"],
         caption=nth(7, r"kraji[sš]k"), photo=15178, crop=(0, 0.27, 1, 0.72),
         note="At the Sutjeska; the only photo of the brigade's fighters in the gallery."),
+    "12-dalmatinska-brigada": dict(
+        name="12. dalmatinska (1. otočka) brigada", tags=["12-dalmatinska-udarna-brigada-prva-otocka"],
+        caption=nth(12, r"dalmatinsk") + r"|\b(?:1\.|prv\w+)\s+oto[cč]k", photo=5084),
     "15-majevicka-brigada": dict(
         name="15. majevička brigada", tags=["15-majevicka-udarna-brigada"],
         caption=nth(15, r"majevi[cč]k") + "|" + nth(1, r"majevi[cč]k"), photo=13981,

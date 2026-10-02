@@ -197,6 +197,11 @@ class Extractor:
         elif code in (15, 35):
             t = ''                                                        # 1. šumadijska always says "Rođen ..."; the
                                                                           # 32. division's roster has names only
+        elif code == 50:
+            # 12. dalmatinska: the duty, then where he came from: "borac 3. č, 2. bat., iz Svirča, Hvar, pog. ..."
+            im = re.search(rf'\biz\s+(?=[{U}])', t)
+            head = t[:im.start()] if im else t
+            t = t[im.start():] if im else ''
         elif code in (25, 32):
             # the duty, the year of birth, the birthplace: "borac, 1920, Valjak - Orahovica, u NOB od ..." (Tuzlanski
             # odred, 21. tuzlanska); a year after the enlistment or the death is no year of birth
@@ -216,7 +221,7 @@ class Extractor:
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
         # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
-        from_place = code in (2, 31) and re.match(rf'^iz\s+[{U}]', t) is not None
+        from_place = code in (2, 31, 50) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
             t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
@@ -446,6 +451,10 @@ class Extractor:
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
             return {}
+        if code == 50:
+            text = re.sub(r'\bpog\.', 'poginuo', text)                    # 12. dalmatinska's abbreviation
+            # its day and month without a year ("poginuo 27. 4. kod Klane"; the parser dated it by the heading)
+            text = re.sub(r'\b(poginu[ol]a?|umr[ol]a?)\s+\d{1,2}[.,]\s*\d{1,2}\.(?!\s*19)\s*', r'\1 ', text)
         dm = DEATH_RE.search(text)
         life_text = text[:dm.start()] if dm else text
         out = self.life(life_text, code)

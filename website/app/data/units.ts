@@ -499,6 +499,16 @@ export const units: Unit[] = [
     soldierCount: 510,
     dataFile: '/15-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-15-majevicka.pdf']
+  },
+  {
+    id: '12-dalmatinska-brigada',
+    name: '12. dalmatinska (1. otočka) brigada',
+    nameEn: '12th Dalmatian (1st Island) Brigade',
+    description: 'Formirana 15. septembra 1943. na ostrvima Braču, Hvaru, Visu i Šolti. Poginuli borci i starešine, po borbama u kojima su pali.',
+    image: '/images/12-dalmatinska-brigada.jpg',
+    soldierCount: 361,
+    dataFile: '/12-dalmatinska-soldiers.json',
+    pdfFiles: ['/pdfs/12-dalmatinska.pdf']
   }
   // Add more units here as you get more data
 ]

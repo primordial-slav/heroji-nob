@@ -149,6 +149,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-04-11', source: 'https://znaci.org/odrednica.php?slug=15-majevicka-udarna-brigada',
     note: 'Majevička grupa udarnih bataljona preimenovana u Majevičku NOU brigadu, kasnije 1. pa 15. majevička. sr.wikipedia: 23. 3. 1943. Knjiga brigade nije proverena.',
   },
+  '12-dalmatinska-brigada': {
+    date: '1943-09-15', place: 'Brač, Hvar, Vis i Šolta', source: 'https://znaci.org/00001/80_7.pdf',
+    note: 'Knjiga brigade (Anić) računa brigadu od 15. rujna 1943. znaci.org odrednica: 21. 9. 1943, na Braču, Hvaru, Visu i Šolti.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

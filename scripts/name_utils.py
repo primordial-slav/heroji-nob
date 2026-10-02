@@ -469,6 +469,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    50: {
+        'name': '12. Dalmatinska',
+        'json_file': '12-dalmatinska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # run on under each battle: "Jeličić Ante Matin, borac, pog. 22. 9. na položaju ..."
+        'has_fathers_name': True,     # a possessive ("Matin") or genitive ("Nikole"); the parser sets the nominative
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

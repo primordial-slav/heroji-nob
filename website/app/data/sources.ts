@@ -575,5 +575,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/borci-sutjeske-2-dalmatinska.jpg',
     brigadeName: '2. dalmatinska proleterska udarna brigada',
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: '12-dalmatinska',
+    title: 'Dvanaesta dalmatinska udarna brigada (Prva otočka) — spisak poginulih',
+    author: 'Nikola Anić',
+    pdfPath: '/pdfs/12-dalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/12-dalmatinska.jpg',
+    brigadeName: '12. dalmatinska (1. otočka) brigada',
+    description: 'Spisak poginulih boraca i rukovodilaca brigade, po borbama, od Sućurja, 22. septembra 1943, do Ilirske Bistrice, 6. maja 1945. (str. 353–366 knjige)'
   }
 ]

@@ -98,6 +98,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-2-dalmatinska':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    '12-dalmatinska':
+      'Seznam padlih borcev in poveljnikov brigade, po bojih, od Sućurja 22. septembra 1943 do Ilirske Bistrice 6. maja 1945 (str. 353–366 knjige)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -185,6 +187,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-2-dalmatinska':
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    '12-dalmatinska':
+      'Список на загинатите борци и старешини на бригадата, по борбите, од Суќурај на 22 септември 1943 до Илирска Бистрица на 6 мај 1945 (стр. 353–366 од книгата)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -271,6 +275,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-2-dalmatinska':
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    '12-dalmatinska':
+      'The brigade’s Partisans and officers who were killed, battle by battle, from Sućuraj on 22 September 1943 to Ilirska Bistrica on 6 May 1945 (pp. 353–366 of the book)',
   },
 }
 

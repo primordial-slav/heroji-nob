@@ -229,6 +229,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 11. aprila 1943. Borci brigade, tedaj 1. majeviške, v bitki na Sutjeski, maja in junija 1943.',
   },
+  '12-dalmatinska-brigada': {
+    name: '12. dalmatinska (1. otoška) brigada',
+    description:
+      'Ustanovljena 15. septembra 1943 na otokih Brač, Hvar, Vis in Šolta. Padli borci in poveljniki, po bojih, v katerih so padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -449,6 +454,11 @@ const mk: Record<string, UnitText> = {
     name: '15-та мајевичка бригада',
     description:
       'Формирана на 11 април 1943. Борците на бригадата, тогаш 1-ва мајевичка, во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '12-dalmatinska-brigada': {
+    name: '12-та далматинска (1-ва островска) бригада',
+    description:
+      'Формирана на 15 септември 1943 на островите Брач, Хвар, Вис и Шолта. Загинати борци и старешини, по борбите во кои загинале.',
   },
 }
 
@@ -672,6 +682,11 @@ const en: Record<string, UnitText> = {
     name: '15th Majevica Brigade',
     description:
       'Formed on 11 April 1943. Partisans of the brigade, then the 1st Majevica, in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '12-dalmatinska-brigada': {
+    name: '12th Dalmatian (1st Island) Brigade',
+    description:
+      'Formed on 15 September 1943 on the islands of Brač, Hvar, Vis and Šolta. Partisans and officers who were killed, by the battle in which they fell.',
   },
 }
 
