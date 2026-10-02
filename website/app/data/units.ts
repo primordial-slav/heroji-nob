@@ -849,6 +849,16 @@ export const units: Unit[] = [
     soldierCount: 2750,
     dataFile: '/13-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/13-vojvodjanska.pdf']
+  },
+  {
+    id: '7-srpska-brigada',
+    name: '7. srpska brigada',
+    nameEn: '7th Serbian Brigade',
+    description: 'Formirana 4. februara 1944. u Jabukoviku kod Crne Trave, kao 5. južnomoravska. Borci u maju 1944. i poginuli, umrli i nestali.',
+    image: '/images/7-srpska-brigada.jpg',
+    soldierCount: 1188,
+    dataFile: '/7-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/7-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

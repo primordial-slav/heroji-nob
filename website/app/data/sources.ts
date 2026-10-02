@@ -962,5 +962,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/13-vojvodjanska.jpg',
     brigadeName: '13. vojvođanska brigada',
     description: 'Spisak pripadnika brigade: imena, ponegde nadimak ili mesto; autor napominje da spisak nije potpun (str. 771–793)'
+  },
+  {
+    id: '7-srpska',
+    title: 'Sedma srpska brigada — spisak boraca i poginulih',
+    author: 'Đura Zlatković, Miloš D. Bakić',
+    pdfPath: '/pdfs/7-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/7-srpska.jpg',
+    brigadeName: '7. srpska brigada',
+    description: 'Spisak boraca početkom maja 1944. po selima i spisak poginulih, umrlih i nestalih: rođenje, kada su stupili u brigadu, gde su pali (str. 459–501)'
   }
 ]

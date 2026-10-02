@@ -783,6 +783,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    85: {
+        'name': '7. Srpska',
+        'json_file': '7-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АНТИЋ Станоја ЖИВОЈИН, (1909. у с. Шаркамену ...)", roster "Динчић И. Драгиша"
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

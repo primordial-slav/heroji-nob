@@ -369,6 +369,12 @@ UNITS = {
         caption=nth(13, r"vojvo[dđ]j?ansk"), photo=None,
         book=dict(pdf="00003/431.pdf", page=602, xref=2791, caption="Na zadatku u Srpskoj Crnji"),
         note="Nothing in the gallery names the brigade; the photo is from its own book (Momčilović, Kako do brigade), the caption in capitals there."),
+    "7-srpska-brigada": dict(
+        name="7. srpska brigada", tags=[],
+        caption=r"(?:7\.|VII\.?|sedm\w*)\s+srpsk\w*\s+(?:udarn\w*\s+)?brigad|(?:5\.|V\.?|pet\w*)\s+južnomoravsk\w*\s+brigad", photo=None,
+        book=dict(pdf="00001/277_3.pdf", page=23, xref=105,
+                  caption="Bataljon Sedme brigade sa Štabom brigade u Pustoj Reci, marta 1944."),
+        note="The gallery's two hits are the 17. srpska; the photo is from the brigade's own book (caption's OCR slips corrected)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

@@ -404,6 +404,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 14. oktobra 1944 v Kikindi. Borci brigade, po imenih.',
   },
+  '7-srpska-brigada': {
+    name: '7. srbska brigada',
+    description:
+      'Ustanovljena 4. februarja 1944 v Jabukoviku pri Crni Travi kot 5. južnomoravska. Borci maja 1944 ter padli, umrli in pogrešani.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -799,6 +804,11 @@ const mk: Record<string, UnitText> = {
     name: '13-та војводинска бригада',
     description:
       'Формирана на 14 октомври 1944 во Кикинда. Борците на бригадата, поименично.',
+  },
+  '7-srpska-brigada': {
+    name: '7-ма српска бригада',
+    description:
+      'Формирана на 4 февруари 1944 во Јабуковик кај Црна Трава, како 5-та јужноморавска. Борците во мај 1944 и загинатите, умрените и исчезнатите.',
   },
 }
 
@@ -1197,6 +1207,11 @@ const en: Record<string, UnitText> = {
     name: '13th Vojvodina Brigade',
     description:
       'Formed on 14 October 1944 at Kikinda. The brigade’s soldiers, by name.',
+  },
+  '7-srpska-brigada': {
+    name: '7th Serbian Brigade',
+    description:
+      'Formed on 4 February 1944 at Jabukovik near Crna Trava, as the 5th South Morava Brigade. Its soldiers in May 1944, and those killed, dead or missing.',
   },
 }
 

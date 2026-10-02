@@ -289,6 +289,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-10-14', place: 'Kikinda', source: 'https://znaci.org/00003/431.pdf',
     note: 'Momčilović, Kako do brigade (pogl. Brigada u stroju, str. 583): „Četrnaestog oktobra na poljani koja se prostirala na južnoj strani od Kikinde bila je postavljena mala tribina“; brigada se postrojila i položila zakletvu pred narodom Kikinde. Prva naredba Štaba brigade nosi datum od 13. oktobra.',
   },
+  '7-srpska-brigada': {
+    date: '1944-02-04', place: 'Jabukovik (Crna Trava)', source: 'https://znaci.org/00001/277_3.pdf',
+    note: 'Zlatković, Bakić, Sedma srpska brigada (pogl. Formiranje brigade kao prve operativne jedinice na anektiranom delu Srbije, str. 66): „Četvrtog februara 1944. godine, u crnotravskom selu Jabukoviku u 11,00 sati, ispred postrojenih boraca i okupljenog naroda“ pročitana je naredba Glavnog štaba o formiranju Pete južnomoravske brigade.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
