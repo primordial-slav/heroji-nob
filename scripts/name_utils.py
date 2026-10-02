@@ -801,6 +801,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    87: {
+        'name': '8. Srpska',
+        'json_file': '8-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "30.АНТИЋ /СТАНИМИРА/ ВЛАДИМИР, рођен 1924. године, Павловац, Врање; погинуо ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

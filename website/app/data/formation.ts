@@ -297,6 +297,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-06-02', place: 'Retkocer (Gornja Jablanica)', source: 'https://znaci.org/00003/477.pdf',
     note: 'Nikčević, Petnaesta srpska NO brigada (pogl. Formiranje 15. srpske NO brigade): „svečani čin formiranja brigade obavljen je 2. juna 1944. godine na mestu zvanom Šančevi u selu Retkocer“.',
   },
+  '8-srpska-brigada': {
+    date: '1944-03-08', place: 'Trgovište', source: 'https://znaci.org/00003/398.pdf',
+    note: 'Damjanov, 8. srpska brigada (pogl. Od odreda do brigade): „A onda je došao 8. mart 1944. godine“, svečani stroj kod Trgovišta, kraj Pčinje; pisac napominje da izvori koji navode 6. mart za dan osnivanja Šeste južnomoravske brigade greše.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

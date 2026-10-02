@@ -980,5 +980,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/15-srpska.jpg',
     brigadeName: '15. srpska brigada',
     description: 'Spisak boraca i rukovodilaca brigade, spisak poginulih i spisak ranjenih: rođenje, dužnost, kada i gde su pali ili ranjeni (str. 155–173)'
+  },
+  {
+    id: '8-srpska',
+    title: '8. srpska brigada — Nezaboravnik (spisak poginulih)',
+    author: 'Petar Damjanov',
+    pdfPath: '/pdfs/8-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/8-srpska.jpg',
+    brigadeName: '8. srpska brigada',
+    description: '„Nezaboravnik“, spisak poginulih boraca brigade: rođenje, datum i mesto pogibije (str. 265–297)'
   }
 ]

@@ -414,6 +414,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 2. junija 1944 v Retkocerju v Gornji Jablanici. Borci in starešine brigade, padli in ranjeni.',
   },
+  '8-srpska-brigada': {
+    name: '8. srbska brigada',
+    description:
+      'Ustanovljena 8. marca 1944 v Trgovištu kot 6. južnomoravska. Padli borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -819,6 +824,11 @@ const mk: Record<string, UnitText> = {
     name: '15-та српска бригада',
     description:
       'Формирана на 2 јуни 1944 во Реткоцер, во Горна Јабланица. Борците и раководителите на бригадата, загинатите и ранетите.',
+  },
+  '8-srpska-brigada': {
+    name: '8-ма српска бригада',
+    description:
+      'Формирана на 8 март 1944 во Трговиште, како 6-та јужноморавска. Загинатите борци на бригадата.',
   },
 }
 
@@ -1227,6 +1237,11 @@ const en: Record<string, UnitText> = {
     name: '15th Serbian Brigade',
     description:
       'Formed on 2 June 1944 at Retkocer, Upper Jablanica. The brigade’s soldiers and officers, its fallen and its wounded.',
+  },
+  '8-srpska-brigada': {
+    name: '8th Serbian Brigade',
+    description:
+      'Formed on 8 March 1944 at Trgovište, as the 6th South Morava Brigade. The brigade’s fallen.',
   },
 }
 
