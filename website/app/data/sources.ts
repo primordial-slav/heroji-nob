@@ -674,5 +674,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/17-srpska.jpg',
     brigadeName: '17. srpska brigada',
     description: 'Spisak boraca brigade koji su preživeli rat i spisak poginulih boraca: rođenje, kada su stupili u brigadu, dužnost, gde su i kada pali (str. 317–373 knjige)'
+  },
+  {
+    id: '14-srednjobosanska',
+    title: '14. srednjobosanska NOU brigada — spisak poginulih i preživjelih',
+    author: 'Stevo Samardžija',
+    pdfPath: '/pdfs/14-srednjobosanska.pdf',
+    thumbnail: '/images/pdf-thumbs/14-srednjobosanska.jpg',
+    brigadeName: '14. srednjobosanska brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca i rukovodilaca brigade, i spisak boraca koji su preživeli rat, po opštinama (str. 393–458 knjige)'
   }
 ]

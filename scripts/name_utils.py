@@ -522,6 +522,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    56: {
+        'name': '14. Srednjobosanska',
+        'json_file': '14-srednjobosanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADŽALIĆ M. AVDO, rođen 1926, Doboj, borac ..."; "ALEKSIĆ J. NEDELJKO, 1920, Osinja;"
+        'has_fathers_name': True,     # the father's initial
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_last',
+    },
 }
 
 

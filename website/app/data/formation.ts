@@ -173,6 +173,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-06-02', place: 'Mehane kod Kuršumlije', source: 'https://znaci.org/odrednica.php?slug=17-srpska-brigada',
     note: 'Hronologija na znaci.org: 2. 6. 1944. kod s. Mejane (blizu Kuršumlije) GŠ za Srbiju formirao 17. srpsku NO brigadu; knjiga brigade beleži proslavu godišnjice u s. Mehane 2. 6. 1947.',
   },
+  '14-srednjobosanska-brigada': {
+    date: '1943-10-17', place: 'Cer kod Prnjavora', source: 'https://znaci.org/00003/579.pdf',
+    note: 'Knjiga brigade (Samardžija), str. 7-8: svečani čin formiranja određen za nedjelju 17. oktobra 1943. na Ceru kod Prnjavora (naredba štaba 11. divizije od 15. oktobra).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

@@ -109,7 +109,15 @@ MULTI_COLUMN = {
 }
 
 
-def page_columns(pdf_file: str) -> int:
+# Books two columns on some pages only: {file: pages}
+TWO_COLUMN_PAGES = {
+    '14-srednjobosanska.pdf': range(30, 65),     # the fallen in one column, the survivors in two
+}
+
+
+def page_columns(pdf_file: str, page: int | None = None) -> int:
+    if pdf_file in TWO_COLUMN_PAGES:
+        return 2 if page in TWO_COLUMN_PAGES[pdf_file] else 1
     return 2 if pdf_file in TWO_COLUMN else MULTI_COLUMN.get(pdf_file, 1)
 
 
@@ -216,7 +224,7 @@ def _read_pages(job) -> dict[str, dict]:
                 out[str(p)] = None
                 continue
             page = pdf.pages[p - 1]
-            out[str(p)] = read_page(page, page_columns(Path(path).name))
+            out[str(p)] = read_page(page, page_columns(Path(path).name, p))
             # pdfplumber keeps every parsed page in memory otherwise (0.9 has no close())
             (getattr(page, 'close', None) or page.flush_cache)()
     return out

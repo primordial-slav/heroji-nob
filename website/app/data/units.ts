@@ -559,6 +559,16 @@ export const units: Unit[] = [
     soldierCount: 989,
     dataFile: '/17-srpska-soldiers.json',
     pdfFiles: ['/pdfs/17-srpska.pdf']
+  },
+  {
+    id: '14-srednjobosanska-brigada',
+    name: '14. srednjobosanska brigada',
+    nameEn: '14th Central Bosnian Brigade',
+    description: 'Formirana 17. oktobra 1943. na Ceru kod Prnjavora. Poginuli, umrli i nestali borci, i borci koji su preživeli rat.',
+    image: '/images/14-srednjobosanska-brigada.jpg',
+    soldierCount: 2559,
+    dataFile: '/14-srednjobosanska-soldiers.json',
+    pdfFiles: ['/pdfs/14-srednjobosanska.pdf']
   }
   // Add more units here as you get more data
 ]

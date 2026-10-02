@@ -476,6 +476,13 @@ class Extractor:
             text = re.sub(r'(^|[\s,])r\.\s*(?=\d)', r'\1rođen ', text, count=1)
             # "Poginuo u borbi s Nijemcima za Ston, 17. 10. 1944.": where he fell follows the enemy
             text = re.sub(r'\b([Pp]oginu[ol]a?)\s+u\s+borbi\s+(?:s|sa)\s+\S+(?:\s+i\s+\S+)?\s+(?:za|kod)\s+', r'\1 kod ', text)
+        if code == 56:
+            # 14. srednjobosanska's survivors: "1922, Kladari (opština Prnjavor)": the municipality heading they were under
+            text = re.sub(r'\s*\(opština ([^)]*)\)$', r', \1', text)
+            text = re.sub(r'\b([A-ZČĆŽŠĐ][\w ]+), \1$', r'\1', text)                 # "Prnjavor, Prnjavor"
+            # the fallen: "poginuo 6. maja 1945. god. Perković Han, Maglaj.": the place follows the date
+            text = re.sub(r'\b((?:pogin|umr|nesta)\w*\s+(?:\d{1,2}\.\s*\w+\s+)?1[89]\d\d\.?\s*(?:god\.|godine)?)\s+'
+                          r'(?=[A-ZČĆŽŠĐ])', r'\1 kod ', text)
         if code == 55:
             # 17. srpska: "rođen 1924. u Pečenjevcima, Leskovac, Srbija, Srbin, ..."
             text = re.sub(r',\s*Srbija\b', '', text)

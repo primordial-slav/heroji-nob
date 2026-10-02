@@ -259,6 +259,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 2. junija 1944 v Mehanah pri Kuršumliji. Preživeli in padli borci.',
   },
+  '14-srednjobosanska-brigada': {
+    name: '14. srednjebosanska brigada',
+    description:
+      'Ustanovljena 17. oktobra 1943 na Ceru pri Prnjavorju. Padli, umrli in pogrešani borci ter borci, ki so vojno preživeli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -509,6 +514,11 @@ const mk: Record<string, UnitText> = {
     name: '17-та српска бригада',
     description:
       'Формирана на 2 јуни 1944 во Механе кај Куршумлија. Преживеани и загинати борци.',
+  },
+  '14-srednjobosanska-brigada': {
+    name: '14-та среднобосанска бригада',
+    description:
+      'Формирана на 17 октомври 1943 на Цер кај Прњавор. Загинати, починати и исчезнати борци, и борци што ја преживеаја војната.',
   },
 }
 
@@ -762,6 +772,11 @@ const en: Record<string, UnitText> = {
     name: '17th Serbian Brigade',
     description:
       'Formed on 2 June 1944 at Mehane near Kuršumlija. Partisans who survived or were killed.',
+  },
+  '14-srednjobosanska-brigada': {
+    name: '14th Central Bosnian Brigade',
+    description:
+      'Formed on 17 October 1943 on Cer near Prnjavor. Partisans who were killed, died or went missing, and those who survived the war.',
   },
 }
 

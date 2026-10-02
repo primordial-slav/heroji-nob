@@ -120,6 +120,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Preživeli borci in poveljniki brigade: leto in kraj rojstva',
     '17-srpska':
       'Seznam borcev brigade, ki so vojno preživeli, in seznam padlih: rojstvo, vstop v brigado, dolžnost, kje in kdaj so padli (str. 317–373 knjige)',
+    '14-srednjobosanska':
+      'Seznam padlih, umrlih in pogrešanih borcev in poveljnikov brigade ter seznam borcev, ki so vojno preživeli, po občinah (str. 393–458 knjige)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -229,6 +231,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Преживеаните борци и раководители на бригадата: година и место на раѓање',
     '17-srpska':
       'Список на борците на бригадата што ја преживеаја војната и список на загинатите: раѓање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 317–373 од книгата)',
+    '14-srednjobosanska':
+      'Список на загинатите, починатите и исчезнатите борци и раководители на бригадата, и список на борците што ја преживеаја војната, по општини (стр. 393–458 од книгата)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -337,6 +341,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans and officers who survived: year and place of birth',
     '17-srpska':
       'The brigade’s Partisans who survived the war, and those who were killed: birth, when they joined, duty, where and when they fell (pp. 317–373 of the book)',
+    '14-srednjobosanska':
+      'The brigade’s Partisans and officers who were killed, died or went missing, and those who survived the war, by municipality (pp. 393–458 of the book)',
   },
 }
 
@@ -362,6 +368,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'seznam padlih, ujetih in pogrešanih',
     'spisak poginulih, umrlih i nestalih': 'seznam padlih, umrlih in pogrešanih',
     'spisak boraca': 'seznam borcev',
+    'spisak poginulih i preživjelih': 'seznam padlih in preživelih',
     'preživjeli i poginuli (zbornik, knj. 2)': 'preživeli in padli (zbornik, 2. knjiga)',
     'popis boraca': 'seznam borcev',
     'borci divizije po jedinicama': 'borci divizije po enotah',
@@ -390,6 +397,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'список на загинатите, заробените и исчезнатите',
     'spisak poginulih, umrlih i nestalih': 'список на загинатите, починатите и исчезнатите',
     'spisak boraca': 'список на борците',
+    'spisak poginulih i preživjelih': 'список на загинатите и преживеаните',
     'preživjeli i poginuli (zbornik, knj. 2)': 'преживеани и загинати (зборник, кн. 2)',
     'popis boraca': 'список на борците',
     'borci divizije po jedinicama': 'борци на дивизијата по единици',
@@ -418,6 +426,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'the killed, captured and missing',
     'spisak poginulih, umrlih i nestalih': 'the killed, dead and missing',
     'spisak boraca': 'roll',
+    'spisak poginulih i preživjelih': 'the fallen and the survivors',
     'preživjeli i poginuli (zbornik, knj. 2)': 'survivors and the fallen (memoirs, vol. 2)',
     'popis boraca': 'roll',
     'borci divizije po jedinicama': 'the division’s Partisans, by unit',

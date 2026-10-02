@@ -70,6 +70,7 @@ BRIGADE_CODES = {
     53: '11. Dalmatinska',
     54: '12. Krajiška',
     55: '17. Srpska',
+    56: '14. Srednjobosanska',
     # Add new brigades here with next available code
 }
 

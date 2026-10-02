@@ -230,6 +230,9 @@ UNITS = {
     "17-srpska-brigada": dict(
         name="17. srpska brigada", tags=["17-srpska-brigada"],
         caption=nth(17, r"srpsk\w+\s+(?:nou\s+|udarn\w+\s+)?brigad"), photo=4976),
+    "14-srednjobosanska-brigada": dict(
+        name="14. srednjobosanska brigada", tags=["14-srednjobosanska-udarna-brigada"],
+        caption=nth(14, r"srednjobosansk"), photo=9455),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,
