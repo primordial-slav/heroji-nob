@@ -828,6 +828,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    90: {
+        'name': '12. Srpska',
+        'json_file': '12-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АНЂЕЛКОВИЋ Влајка МИХАЈЛО, 1914, Јаковљево, Власотинце, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

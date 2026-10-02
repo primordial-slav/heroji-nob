@@ -309,6 +309,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-09-02', place: 'Šuman Topla (Knjaževac)', source: 'https://znaci.org/00001/214_15.pdf',
     note: 'Mirčetić, 23. srpska brigada, Prilog 1 (str. 337): sastav štabova „od osnivanja brigade - 2. septembra 1944. - do kraja rata“; štab brigade bio je u selu Šuman Topla kod Knjaževca, gde je 5. septembra postrojen njen Prvi bataljon (pogl. Formiranje 23. srpske NO brigade).',
   },
+  '12-srpska-brigada': {
+    date: '1944-05-22', place: 'Ostrozub (Bistrica)', source: 'https://znaci.org/00003/841.pdf',
+    note: 'Mirčetić, Dvanaesta srpska NOU brigada (Beograd 1991), pogl. Formiranje: „Dvadeset drugog maja formirana je Dvanaesta srpska brigada na padini Čobanac na planini Ostrozubu, južno od sela Bistrice“, od Babičkog (1. bataljon) i Crnotravskog odreda (2. bataljon).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

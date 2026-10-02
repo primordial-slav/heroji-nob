@@ -101,6 +101,8 @@ def parse(text: str) -> dict:
         father = toks.pop(0)                                                 # "Marka", "R."
     caps += [t for t in toks if re.fullmatch(rf'[{U}]{{2,}}(?:-[{U}]{{2,}})*', t)]
     extra = [t for t in toks if not re.fullmatch(rf'[{U}]{{2,}}(?:-[{U}]{{2,}})*', t)]
+    if len(caps) >= 3 and caps[1] in ('LJ', 'NJ', 'DŽ') and not father:
+        father = caps.pop(1).title() + '.'                                   # "JOVIĆ LJ. ČEDOMIR"
     last = caps[0] if caps else ''
     given = ' '.join(caps[1:])
     if not given and father and not father.endswith('.'):
@@ -130,6 +132,8 @@ READ = {'Bukobnn': 'Vuković', 'Cpbobnr': 'Srbović', 'Pamaaanobnr': 'Ramadanovi
 def post(soldiers: list[dict]) -> list[dict]:
     soldiers = restore_diacritics(repair_cyrillic_ocr(soldiers))
     for s in soldiers:
+        if s['last_name'].endswith('ii'):
+            s['last_name'] = s['last_name'][:-1] + 'ć'                       # "CEKII", "PETROVII": Ћ read as И
         if s['last_name'] in READ:
             s['last_name'] = READ[s['last_name']]
             s['full_name'] = ' '.join(p for p in (s['last_name'], s['middle_name'], s['first_name']) if p)

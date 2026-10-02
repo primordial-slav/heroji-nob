@@ -400,6 +400,12 @@ UNITS = {
                   caption="Selo Vasilj, Knjaževac, krajem septembra 1944. Borci i rukovodioci 1. bataljona."),
         descreen=1.6,
         note="Nothing in the gallery names the brigade; the photo is from its own book (caption shortened: the book then names a medic)."),
+    "12-srpska-brigada": dict(
+        name="12. srpska brigada", tags=[],
+        caption=r"(?<!\d)(?:12\.|XII\.?|dvanaest\w*)\s+srpsk\w*\s+(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00003/841.pdf", page=407, xref=2068,
+                  caption="Borci 3. bataljona, sa štabom bataljona, po oslobođenju Novog Pazara, decembra 1944."),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (the caption's OCR slips corrected)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

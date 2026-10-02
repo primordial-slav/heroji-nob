@@ -899,6 +899,16 @@ export const units: Unit[] = [
     soldierCount: 467,
     dataFile: '/23-srpska-soldiers.json',
     pdfFiles: ['/pdfs/23-srpska.pdf']
+  },
+  {
+    id: '12-srpska-brigada',
+    name: '12. srpska brigada',
+    nameEn: '12th Serbian Brigade',
+    description: 'Formirana 22. maja 1944. na Ostrozubu, južno od Bistrice. Poginuli i umrli borci i rukovodioci brigade.',
+    image: '/images/12-srpska-brigada.jpg',
+    soldierCount: 425,
+    dataFile: '/12-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/12-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

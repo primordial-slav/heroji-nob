@@ -429,6 +429,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 2. septembra 1944 v Šuman Topli pri Knjaževcu. Padli in umrli borci in starešine brigade.',
   },
+  '12-srpska-brigada': {
+    name: '12. srbska brigada',
+    description:
+      'Ustanovljena 22. maja 1944 na Ostrozubu južno od Bistrice. Padli in umrli borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -849,6 +854,11 @@ const mk: Record<string, UnitText> = {
     name: '23-та српска бригада',
     description:
       'Формирана на 2 септември 1944 во Шуман Топла кај Књажевац. Загинатите и умрените борци и раководители на бригадата.',
+  },
+  '12-srpska-brigada': {
+    name: '12-та српска бригада',
+    description:
+      'Формирана на 22 мај 1944 на Острозуб, јужно од Бистрица. Загинатите и умрените борци и раководители на бригадата.',
   },
 }
 
@@ -1272,6 +1282,11 @@ const en: Record<string, UnitText> = {
     name: '23rd Serbian Brigade',
     description:
       'Formed on 2 September 1944 at Šuman Topla near Knjaževac. The brigade’s soldiers and officers who were killed or died.',
+  },
+  '12-srpska-brigada': {
+    name: '12th Serbian Brigade',
+    description:
+      'Formed on 22 May 1944 on Mount Ostrozub, south of Bistrica. The brigade’s soldiers and officers who were killed or died.',
   },
 }
 
