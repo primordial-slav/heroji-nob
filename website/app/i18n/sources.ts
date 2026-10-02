@@ -174,6 +174,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in pogrešanih borcev in voditeljev brigade: rojstvo, kje in kdaj so padli ali izginili (str. 675–722)',
     '19-sjevernodalmatinska':
       'Seznam padlih in umrlih borcev divizije od ustanovitve do konca vojne: od kod so bili, kje in kdaj so padli (str. 253–299)',
+    '21-srpska':
+      'Padli, preživeli in drugi, ki so se borili v brigadi (Druga šumadijska): starši, rojstvo, dolžnost, vstop v brigado in kje so padli (str. 387–472)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -337,6 +339,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и исчезнатите борци и раководители на бригадата: раѓање, каде и кога загинале или исчезнале (стр. 675–722)',
     '19-sjevernodalmatinska':
       'Список на загинатите и починатите борци на дивизијата од формирањето до крајот на војната: од каде се, каде и кога загинале (стр. 253–299)',
+    '21-srpska':
+      'Загинати, преживеани и други што се бореа во бригадата (Втора шумадиска): родители, раѓање, должност, кога стапиле во бригадата и каде загинале (стр. 387–472)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -499,6 +503,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s killed and missing Partisans and leaders: birth, where and when they fell or went missing (pp. 675–722)',
     '19-sjevernodalmatinska':
       'The division’s Partisans killed or dead from its formation to the end of the war: where they came from, where and when they fell (pp. 253–299)',
+    '21-srpska':
+      'The brigade’s (2nd Šumadija) Partisans who were killed or survived, and others who fought in it: parents, birth, duty, when they joined and where they fell (pp. 387–472)',
   },
 }
 

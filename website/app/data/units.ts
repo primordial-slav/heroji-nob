@@ -799,6 +799,16 @@ export const units: Unit[] = [
     soldierCount: 1418,
     dataFile: '/19-sjevernodalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/19-sjevernodalmatinska.pdf']
+  },
+  {
+    id: '21-srpska-brigada',
+    name: '21. srpska brigada',
+    nameEn: '21st Serbian Brigade',
+    description: 'Formirana 10. maja 1944. u Trebežu kod Darosave. Poginuli i preživeli borci i drugi koji su se borili u brigadi.',
+    image: '/images/21-srpska-brigada.jpg',
+    soldierCount: 1422,
+    dataFile: '/21-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/21-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

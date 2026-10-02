@@ -342,6 +342,12 @@ UNITS = {
     "19-sjevernodalmatinska-divizija": dict(
         name="19. severnodalmatinska divizija", tags=[],
         caption=r"(?:19\.|XIX\.?|devetnaest\w*)\s+(?:sjever\w*|sever\w*)\s*dalmatinsk\w*\s+(?:udarn\w*\s+)?divizij", photo=14284),
+    "21-srpska-brigada": dict(
+        name="21. srpska brigada", tags=[],
+        caption=r"(?:21\.|dvadeset\w* prv\w*)\s+srpsk\w*\s+brigad|(?:2\.|drug\w*)\s+šumadijsk\w*\s+brigad", photo=None,
+        book=dict(pdf="00001/197_13.pdf", page=17, xref=67,
+                  caption="Prva četa 4. bataljona 21. srpske brigade prolazi kroz Rumu na putu za Sremski front, početkom decembra 1944. godine."),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

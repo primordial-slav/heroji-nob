@@ -269,6 +269,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-11', place: 'Biovičino Selo', source: 'https://znaci.org/00003/575.pdf',
     note: 'Grgurević, Devetnaesta sjevernodalmatinska divizija (pogl. Formiranje): naredba Vrhovnog štaba od 4. oktobra 1943; svečano formiranje 11. oktobra 1943. u Biovičinom Selu (Bukovica).',
   },
+  '21-srpska-brigada': {
+    date: '1944-05-10', place: 'Trebež kod Darosave', source: 'https://znaci.org/00001/197_9.pdf',
+    note: 'Đuković, Druga šumadijska - 21. srpska brigada (pogl. Formiranje brigade): 10. maja 1944. u mestu Trebež, na njivi Tanasija Ćirića iz Darosave, prvi put se postrojila 2. šumadijska brigada; borci su položili zakletvu.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

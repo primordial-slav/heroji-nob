@@ -738,6 +738,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    80: {
+        'name': '21. Srpska',
+        'json_file': '21-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АГАЧЕВИЋ, Драгутина и Лепосаве, ЧЕДОМИР, делегат вода, рођен 17. 3. 1926. ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'both_parents',
+        'original_casing': 'upper_all',
+    },
 }
 
 

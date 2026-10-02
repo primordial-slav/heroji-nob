@@ -917,5 +917,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/19-sjevernodalmatinska.jpg',
     brigadeName: '19. severnodalmatinska divizija',
     description: 'Popis poginulih i umrlih boraca divizije od formiranja do kraja rata: odakle su, gde su i kada pali (str. 253–299)'
+  },
+  {
+    id: '21-srpska',
+    title: 'Druga šumadijska - 21. srpska brigada — u koloni brigade',
+    author: 'Isidor Đuković',
+    pdfPath: '/pdfs/21-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/21-srpska.jpg',
+    brigadeName: '21. srpska brigada',
+    description: 'Poginuli, preživeli i drugi koji su se borili u brigadi (Druga šumadijska): roditelji, rođenje, dužnost, kada su stupili u brigadu i gde su pali (str. 387–472)'
   }
 ]
