@@ -1079,5 +1079,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/34-divizija.jpg',
     brigadeName: '34. divizija',
     description: 'Pregled poginulih boraca i rukovodilaca divizije: čin, brigada, rođenje, stupanje u NOB, mesto i dan pogibije (str. 401–432)'
+  },
+  {
+    id: '4-sandzacka',
+    title: '4. sandžačka brigada — poginuli i ranjeni borci',
+    author: 'Čedo Drulović',
+    pdfPath: '/pdfs/4-sandzacka.pdf',
+    thumbnail: '/images/pdf-thumbs/4-sandzacka.jpg',
+    brigadeName: '4. sandžačka brigada',
+    description: 'Spisak poginulih boraca i rukovodilaca (rođenje, gde su pali) i spisak ranjenih, s mestom i danom ranjavanja (str. 460–485)'
   }
 ]

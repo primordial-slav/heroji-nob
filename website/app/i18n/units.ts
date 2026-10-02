@@ -469,6 +469,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 30. januarja 1944 na Žumberku in v Pokuplju. Padli borci in starešine divizije in njenih brigad.',
   },
+  '4-sandzacka-brigada': {
+    name: '4. sandžaška brigada',
+    description:
+      'Ustanovljena 1. decembra 1943 v Pljevljah. Padli in ranjeni borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -929,6 +934,11 @@ const mk: Record<string, UnitText> = {
     name: '34-та дивизија',
     description:
       'Формирана на 30 јануари 1944 на Жумберак и во Покупље. Загинатите борци и раководители на дивизијата и нејзините бригади.',
+  },
+  '4-sandzacka-brigada': {
+    name: '4-та санџачка бригада',
+    description:
+      'Формирана на 1 декември 1943 во Пљевља. Загинатите и ранетите борци на бригадата.',
   },
 }
 
@@ -1392,6 +1402,11 @@ const en: Record<string, UnitText> = {
     name: '34th Division',
     description:
       'Formed on 30 January 1944 in Žumberak and Pokuplje. The fallen soldiers and officers of the division and its brigades.',
+  },
+  '4-sandzacka-brigada': {
+    name: '4th Sandžak Brigade',
+    description:
+      'Formed on 1 December 1943 in Pljevlja. The brigade’s fallen and wounded.',
   },
 }
 

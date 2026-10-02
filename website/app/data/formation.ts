@@ -341,6 +341,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-01-30', place: 'Žumberak', source: 'https://znaci.org/00003/641.pdf',
     note: 'Hlaić, 34. udarna divizija (str. 29): „stigla je 30. siječnja 1944. naredba Vrhovnog štaba NOV i POJ … da se na području Druge operativne zone Žumberak, Pokuplje, Turopolje i Posavina formira 34. hrvatska NO divizija 4. korpusa NOVJ. Naredba je odmah provedena u život.“',
   },
+  '4-sandzacka-brigada': {
+    date: '1943-12-01', place: 'Pljevlja', source: 'https://znaci.org/00001/271_3.pdf',
+    note: 'Četvrta sandžačka brigada (Lučić, Borbeni put 4. sandžačke NOU brigade, str. 112): „Brigada je formirana, uglavnom, od boraca iz sastava Bjelopoljskog i Pljevaljskog NOP odreda, 1. decembra 1943. godine, u Pljevljima“.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

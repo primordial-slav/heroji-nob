@@ -900,6 +900,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_last',
     },
+    98: {
+        'name': '4. Sandžačka',
+        'json_file': '4-sandzacka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АГИЋ М. ЧАЗИМ, борац, рођен 1926. ..." (fallen), "АЈДАРОВИЋ (Азима) НУРО, ..." (wounded)
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

@@ -210,6 +210,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev in starešin divizije po brigadah: kraj rojstva, dan in kraj smrti (str. 445–476)',
     '34-divizija':
       'Pregled padlih borcev in starešin divizije: čin, brigada, rojstvo, vstop v NOB, kraj in dan smrti (str. 401–432)',
+    '4-sandzacka':
+      'Seznam padlih borcev in starešin (rojstvo, kje so padli) in seznam ranjenih s krajem in dnem ranitve (str. 460–485)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -409,6 +411,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци и раководители на дивизијата по бригади: место на раѓање, ден и место на загинувањето (стр. 445–476)',
     '34-divizija':
       'Преглед на загинатите борци и раководители на дивизијата: чин, бригада, раѓање, стапување во НОБ, место и ден на загинувањето (стр. 401–432)',
+    '4-sandzacka':
+      'Список на загинатите борци и раководители (раѓање, каде загинале) и список на ранетите, со местото и денот на ранувањето (стр. 460–485)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -607,6 +611,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The division’s fallen soldiers and officers, by brigade: birthplace, and the day and place they fell (pp. 445–476)',
     '34-divizija':
       'The division’s fallen soldiers and officers: rank, brigade, birth, when they joined, and where and when they fell (pp. 401–432)',
+    '4-sandzacka':
+      'The fallen soldiers and officers (birth, where they fell) and the wounded, with where and when they were wounded (pp. 460–485)',
   },
 }
 

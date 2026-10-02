@@ -979,6 +979,16 @@ export const units: Unit[] = [
     soldierCount: 1415,
     dataFile: '/34-divizija-soldiers.json',
     pdfFiles: ['/pdfs/34-divizija.pdf']
+  },
+  {
+    id: '4-sandzacka-brigada',
+    name: '4. sandžačka brigada',
+    nameEn: '4th Sandžak Brigade',
+    description: 'Formirana 1. decembra 1943. u Pljevljima. Poginuli i ranjeni borci brigade.',
+    image: '/images/4-sandzacka-brigada.jpg',
+    soldierCount: 785,
+    dataFile: '/4-sandzacka-soldiers.json',
+    pdfFiles: ['/pdfs/4-sandzacka.pdf']
   }
   // Add more units here as you get more data
 ]
