@@ -926,5 +926,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/21-srpska.jpg',
     brigadeName: '21. srpska brigada',
     description: 'Poginuli, preživeli i drugi koji su se borili u brigadi (Druga šumadijska): roditelji, rođenje, dužnost, kada su stupili u brigadu i gde su pali (str. 387–472)'
+  },
+  {
+    id: '14-hercegovacka',
+    title: 'Četrnaesta hercegovačka omladinska NOU brigada — spisak boraca i poginulih',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/14-hercegovacka.pdf',
+    thumbnail: '/images/pdf-thumbs/14-hercegovacka.jpg',
+    brigadeName: '14. hercegovačka brigada',
+    description: 'Spisak boraca koji su prošli kroz brigadu: godina i mesto rođenja; poginuli, s jedinicom i mestom pogibije (str. 243–287)'
   }
 ]

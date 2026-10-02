@@ -348,6 +348,12 @@ UNITS = {
         book=dict(pdf="00001/197_13.pdf", page=17, xref=67,
                   caption="Prva četa 4. bataljona 21. srpske brigade prolazi kroz Rumu na putu za Sremski front, početkom decembra 1944. godine."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "14-hercegovacka-brigada": dict(
+        name="14. hercegovačka brigada", tags=[],
+        caption=r"(?:14\.|XIV\.?|četrnaest\w*)\s+hercegova\w*\s+(?:\(?omladinsk\w*\)?\s+)?(?:NOU\s+|udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00001/268_2.pdf", page=123, xref=569,
+                  caption="Grupa boraca i rukovodilaca 2. bataljona na odmoru kod Ogulina, aprila 1945."),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (the 2. bataljon of the 14. brigade)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

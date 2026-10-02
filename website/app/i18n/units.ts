@@ -384,6 +384,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 10. maja 1944 v Trebežu pri Darosavi. Padli in preživeli borci ter drugi, ki so se borili v brigadi.',
   },
+  '14-hercegovacka-brigada': {
+    name: '14. hercegovska brigada',
+    description:
+      'Ustanovljena 4. septembra 1944 pri Ljubinju kot mladinska brigada. Vsi borci, ki so šli skozi brigado, in padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -759,6 +764,11 @@ const mk: Record<string, UnitText> = {
     name: '21-ва српска бригада',
     description:
       'Формирана на 10 мај 1944 во Требеж кај Даросава. Загинати и преживеани борци и други што се бореа во бригадата.',
+  },
+  '14-hercegovacka-brigada': {
+    name: '14-та херцеговска бригада',
+    description:
+      'Формирана на 4 септември 1944 кај Љубиње, како младинска бригада. Сите борци што поминале низ бригадата и загинатите.',
   },
 }
 
@@ -1137,6 +1147,11 @@ const en: Record<string, UnitText> = {
     name: '21st Serbian Brigade',
     description:
       'Formed on 10 May 1944 at Trebež near Darosava. Partisans who were killed or survived, and others who fought in the brigade.',
+  },
+  '14-hercegovacka-brigada': {
+    name: '14th Herzegovina Brigade',
+    description:
+      'Formed on 4 September 1944 near Ljubinje as a youth brigade. Everyone who served in it, and its fallen.',
   },
 }
 

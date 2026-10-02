@@ -747,6 +747,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'both_parents',
         'original_casing': 'upper_all',
     },
+    81: {
+        'name': '14. Hercegovačka',
+        'json_file': '14-hercegovacka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "AVDALOVIĆ V. Ljubo, rođen 1925. Drežanj (Nevesinje)"
+        'has_fathers_name': True,
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_last',
+    },
 }
 
 

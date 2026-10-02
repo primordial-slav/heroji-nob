@@ -809,6 +809,16 @@ export const units: Unit[] = [
     soldierCount: 1422,
     dataFile: '/21-srpska-soldiers.json',
     pdfFiles: ['/pdfs/21-srpska.pdf']
+  },
+  {
+    id: '14-hercegovacka-brigada',
+    name: '14. hercegovačka brigada',
+    nameEn: '14th Herzegovina Brigade',
+    description: 'Formirana 4. septembra 1944. kod Ljubinja, kao omladinska brigada. Svi borci koji su prošli kroz brigadu i poginuli.',
+    image: '/images/14-hercegovacka-brigada.jpg',
+    soldierCount: 1296,
+    dataFile: '/14-hercegovacka-soldiers.json',
+    pdfFiles: ['/pdfs/14-hercegovacka.pdf']
   }
   // Add more units here as you get more data
 ]

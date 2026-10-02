@@ -273,6 +273,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05-10', place: 'Trebež kod Darosave', source: 'https://znaci.org/00001/197_9.pdf',
     note: 'Đuković, Druga šumadijska - 21. srpska brigada (pogl. Formiranje brigade): 10. maja 1944. u mestu Trebež, na njivi Tanasija Ćirića iz Darosave, prvi put se postrojila 2. šumadijska brigada; borci su položili zakletvu.',
   },
+  '14-hercegovacka-brigada': {
+    date: '1944-09-04', place: 'Ljubinje', source: 'https://znaci.org/00001/268_2.pdf',
+    note: 'Četrnaesta hercegovačka omladinska NOU brigada (Beograd 1988), pogl. Formiranje brigade: naredbom štaba 29. hercegovačke NOU divizije od 4. septembra 1944. godine u rejonu Ljubinja formirana je 14. brigada.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
