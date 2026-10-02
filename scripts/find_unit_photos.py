@@ -299,6 +299,9 @@ UNITS = {
         book=dict(pdf="00003/775.pdf", page=210, xref=1387, caption="Tretji bataljon brigade v Galiciji na Koroškem 9. 5. 1945"),
         crop=(0.0, 0.3, 1.0, 0.85),
         note="Nothing in the gallery names the brigade; the photo is from its own book (the crop keeps the battalion's line)."),
+    "tomsiceva-brigada": dict(
+        name="Tomšičeva brigada", tags=[],
+        caption=r"tom[sš]i[cč]ev\w*\s+brigad", photo=6067),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

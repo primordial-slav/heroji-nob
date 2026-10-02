@@ -809,5 +809,32 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/braciceva.jpg',
     brigadeName: 'Bračičeva brigada',
     description: 'Spisak poginulih boraca brigade (str. 722 i dalje) i onih koji su preživeli rat (str. 746 i dalje)'
+  },
+  {
+    id: 'tomsiceva-2',
+    title: 'Tomšičeva brigada, 2. knjiga — seznam borcev 1942—1943',
+    author: 'Franci Strle',
+    pdfPath: '/pdfs/tomsiceva-2.pdf',
+    thumbnail: '/images/pdf-thumbs/tomsiceva-2.jpg',
+    brigadeName: 'Tomšičeva brigada',
+    description: 'Spisak boraca brigade od 16. jula 1942. do 13. jula 1943. (2. knjiga, str. 847 i dalje)'
+  },
+  {
+    id: 'tomsiceva-3',
+    title: 'Tomšičeva brigada, 3. knjiga — borci 1942—1943, izpuščeni iz 2. knjige',
+    author: 'Franci Strle',
+    pdfPath: '/pdfs/tomsiceva-3.pdf',
+    thumbnail: '/images/pdf-thumbs/tomsiceva-3.jpg',
+    brigadeName: 'Tomšičeva brigada',
+    description: 'Borci brigade od 16. jula 1942. do 13. jula 1943. koji su izostali iz spiska 2. knjige ili su se naknadno javili (3. knjiga, str. 647 i dalje)'
+  },
+  {
+    id: 'tomsiceva-4',
+    title: 'Tomšičeva brigada, 4. knjiga — seznama borcev 1943—1945',
+    author: 'Franci Strle',
+    pdfPath: '/pdfs/tomsiceva-4.pdf',
+    thumbnail: '/images/pdf-thumbs/tomsiceva-4.jpg',
+    brigadeName: 'Tomšičeva brigada',
+    description: 'Spiskovi boraca brigade od 13. jula 1943. do 1. aprila 1944. i od 1. aprila 1944. do 15. maja 1945. (4. knjiga, str. 576 i dalje)'
   }
 ]

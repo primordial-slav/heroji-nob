@@ -59,6 +59,7 @@ LISTS = {
     'istrski-odred.pdf': [(1, 'seznam'), (23, 'padli')],
     'zapadnodolenjski-odred.pdf': [(1, 'seznam'), (8, 'padli')],
     'braciceva.pdf': [(1, 'padli'), (25, 'preziveli')],
+    'tomsiceva-4.pdf': [(1, '1943-1944'), (49, '1944-1945')],
 }
 
 

@@ -229,6 +229,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-09-23', place: 'Knežja Njiva, Loška dolina', source: 'https://znaci.org/00003/775.pdf',
     note: 'Knjiga brigade, II. deo (Fajdiga, str. 701): 13. SNOUB Mirko Bračič; do 3. oktobra 1943. SNOB-Loška.',
   },
+  'tomsiceva-brigada': {
+    date: '1942-07-16', place: 'Cesta na Kočevskem', source: 'https://znaci.org/00003/787.pdf',
+    note: 'Strle, Tomšičeva brigada, 2. knjiga (str. 20-24): toga dana je na Cesti osnovan 2. proleterski udarni bataljon, i taj dan je proglašen danom osnivanja 1. SPUB Toneta Tomšiča.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

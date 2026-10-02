@@ -150,6 +150,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam odredovcev (str. 333 in naprej) in seznam padlih (str. 340 in naprej)',
     'braciceva':
       'Seznam padlih borcev brigade (str. 722 in naprej) in tistih, ki so vojno preživeli (str. 746 in naprej)',
+    'tomsiceva-2':
+      'Seznam borcev brigade od 16. julija 1942 do 13. julija 1943 (2. knjiga, str. 847 in naprej)',
+    'tomsiceva-3':
+      'Borci brigade od 16. julija 1942 do 13. julija 1943, ki so bili izpuščeni iz seznama 2. knjige ali so se dodatno prijavili (3. knjiga, str. 647 in naprej)',
+    'tomsiceva-4':
+      'Seznama borcev brigade od 13. julija 1943 do 1. aprila 1944 in od 1. aprila 1944 do 15. maja 1945 (4. knjiga, str. 576 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -289,6 +295,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот (стр. 333 и натаму) и список на неговите загинати (стр. 340 и натаму)',
     'braciceva':
       'Список на загинатите борци на бригадата (стр. 722 и натаму) и на оние што ја преживеале војната (стр. 746 и натаму)',
+    'tomsiceva-2':
+      'Список на борците на бригадата од 16 јули 1942 до 13 јули 1943 (2. книга, стр. 847 и натаму)',
+    'tomsiceva-3':
+      'Борци на бригадата од 16 јули 1942 до 13 јули 1943 што беа изоставени од списокот во 2. книга или се пријавија дополнително (3. книга, стр. 647 и натаму)',
+    'tomsiceva-4':
+      'Списоци на борците на бригадата од 13 јули 1943 до 1 април 1944 и од 1 април 1944 до 15 мај 1945 (4. книга, стр. 576 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -427,6 +439,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members (pp. 333 ff.) and of its fallen (pp. 340 ff.)',
     'braciceva':
       'Lists of the brigade’s fallen (pp. 722 ff.) and of those who survived the war (pp. 746 ff.)',
+    'tomsiceva-2':
+      'List of the brigade’s members from 16 July 1942 to 13 July 1943 (book 2, pp. 847 ff.)',
+    'tomsiceva-3':
+      'The brigade’s members from 16 July 1942 to 13 July 1943 left out of book 2’s list or reported later (book 3, pp. 647 ff.)',
+    'tomsiceva-4':
+      'Lists of the brigade’s members from 13 July 1943 to 1 April 1944 and from 1 April 1944 to 15 May 1945 (book 4, pp. 576 ff.)',
   },
 }
 

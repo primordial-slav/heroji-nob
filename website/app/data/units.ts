@@ -699,6 +699,16 @@ export const units: Unit[] = [
     soldierCount: 2216,
     dataFile: '/braciceva-soldiers.json',
     pdfFiles: ['/pdfs/braciceva.pdf']
+  },
+  {
+    id: 'tomsiceva-brigada',
+    name: 'Tomšičeva brigada',
+    nameEn: 'Tomšič Brigade',
+    description: 'Formirana 16. jula 1942. na Cesti na Kočevskom. Borci brigade od formiranja do kraja rata.',
+    image: '/images/tomsiceva-brigada.jpg',
+    soldierCount: 5921,
+    dataFile: '/tomsiceva-soldiers.json',
+    pdfFiles: ['/pdfs/tomsiceva-2.pdf', '/pdfs/tomsiceva-3.pdf', '/pdfs/tomsiceva-4.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -648,6 +648,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    70: {
+        'name': 'Tomšičeva',
+        'json_file': 'tomsiceva-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Abina Jože * 1925 Log † 1944 Pohorje Resnik"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

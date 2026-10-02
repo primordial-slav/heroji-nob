@@ -185,6 +185,10 @@ class Extractor:
     def occupation(self, w: str) -> str:
         return self.occ_spelling.get(w, w)
 
+    def is_occupation(self, w: str) -> bool:
+        """A trade, unless the word is a known place written as one: "Drvar" (the town; "drvar" is a woodcutter)."""
+        return w.lower() in self.occupations and not (w[:1].isupper() and self.places.get(w, 0) >= 2)
+
     # ── birth / ethnicity / occupation ───────────────────────
     def life(self, text: str, code: int) -> dict:
         out = {}
@@ -246,10 +250,11 @@ class Extractor:
                     break
                 continue
             tail = re.match(r'^(.*\S)\s+(\S+)$', s)
-            if tail and (tail.group(2) in ETHNIC or tail.group(2) in self.occupations):   # "Italija Talijan" (comma missing)
+            if (tail and (tail.group(2) in ETHNIC or tail.group(2) in self.occupations)   # "Italija Talijan" (comma missing)
+                    and re.match(rf'^[{U}]', tail.group(1))):                      # not "brigadni telegrafist"
                 place.append(tail.group(1))
                 break
-            if (s in ETHNIC or looks_ethnic(s) or s.lower() in self.occupations or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
+            if (s in ETHNIC or looks_ethnic(s) or self.is_occupation(s) or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
                     or UNIT_WORD_RE.search(s)
                     or any(rx.search(s) for rx, _ in SPECIAL_UNITS)
                     or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s) or len(s) > 40 or len(s.split()) > 4
@@ -270,12 +275,12 @@ class Extractor:
         for i, w in enumerate(words):
             if w in ETHNIC:
                 out['ethnicity'] = w
-                if i + 1 < len(words) and words[i + 1].lower() in self.occupations:
+                if i + 1 < len(words) and self.is_occupation(words[i + 1]):
                     out['occupation'] = self.occupation(words[i + 1].lower())
                 break
         if 'occupation' not in out:
             for w in words[:8]:
-                if w.lower() in self.occupations and w.lower() not in ('borac',):
+                if self.is_occupation(w) and w.lower() not in ('borac',):
                     out['occupation'] = self.occupation(w.lower())
                     break
         if head:

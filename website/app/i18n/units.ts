@@ -329,6 +329,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 23. septembra 1943 v Knežji Njivi v Loški dolini. Padli in preživeli borci.',
   },
+  'tomsiceva-brigada': {
+    name: 'Tomšičeva brigada',
+    description:
+      'Ustanovljena 16. julija 1942 na Cesti na Kočevskem. Borci brigade od ustanovitve do konca vojne.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -649,6 +654,11 @@ const mk: Record<string, UnitText> = {
     name: 'Брачичева бригада',
     description:
       'Формирана на 23 септември 1943 во Кнежја Њива во Лошка долина. Загинати и преживеани борци.',
+  },
+  'tomsiceva-brigada': {
+    name: 'Томшичева бригада',
+    description:
+      'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на бригадата од формирањето до крајот на војната.',
   },
 }
 
@@ -972,6 +982,11 @@ const en: Record<string, UnitText> = {
     name: 'Bračič Brigade',
     description:
       'Formed on 23 September 1943 at Knežja Njiva in the Loška dolina. Partisans who were killed and those who survived.',
+  },
+  'tomsiceva-brigada': {
+    name: 'Tomšič Brigade',
+    description:
+      'Formed on 16 July 1942 at Cesta in the Kočevje region. The brigade’s members from its formation to the end of the war.',
   },
 }
 

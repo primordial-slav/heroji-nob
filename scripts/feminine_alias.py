@@ -22,6 +22,8 @@ MASC = re.compile(
     r'živeo|radio|padel|umrl|ubit|srbin|hrvat|crnogorac|slovenac|musliman|jevrej|židov|makedonac|rus|italijan|'
     r'mađar|slovak|učenik|zemljoradnik|radnik|krojač|kuhar|kuvar|službenik|učitelj|seljak|tkač|kovač|stolar|'
     r'obućar|pekar|zidar|mesar|bravar|mehaničar|trgovac|omladinac|skojevac)\b', re.I)
+# a married or maiden name, as the Slovene lists print it: "por. Ciglar", "roj. Kos", "ud. Zupan"
+MAIDEN = re.compile(r'\b(?:por|roj|ud)\. [A-ZČĆŽŠĐ]')
 # men's names ending in -a too rare in the data to be learned from it
 MALE_A = {'Nikola', 'Luka', 'Ilija', 'Andrija', 'Sava', 'Jovica', 'Mića', 'Pera', 'Mika', 'Jaka', 'Miha', 'Saša',
           'Ljuba', 'Toma', 'Kosta', 'Vuka', 'Joža', 'Jura', 'Đura', 'Gligorija', 'Zaharija', 'Jeremija', 'Zosima',
@@ -42,7 +44,7 @@ def _text(s: dict) -> str:
 
 def _marks(s: dict) -> tuple[int, int]:
     t = _text(s)
-    return len(FEM.findall(t)), len(MASC.findall(t))
+    return len(FEM.findall(t)) + len(MAIDEN.findall(t)), len(MASC.findall(t))
 
 
 def name_genders(soldiers) -> tuple[set, set]:
