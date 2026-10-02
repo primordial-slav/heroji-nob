@@ -293,6 +293,12 @@ UNITS = {
         book=dict(pdf="00003/808.pdf", page=153, xref=1017, caption="Skupina borcev Zapadnodolenjskega odreda leta 1942"),
         crop=(0.04, 0.0, 1.0, 1.0),
         note="Nothing in the gallery names the odred; the photo is from its own book."),
+    "braciceva-brigada": dict(
+        name="Bračičeva brigada", tags=[],
+        caption=r"bra[cč]i[cč]ev\w*\s+brigad", photo=None,
+        book=dict(pdf="00003/775.pdf", page=210, xref=1387, caption="Tretji bataljon brigade v Galiciji na Koroškem 9. 5. 1945"),
+        crop=(0.0, 0.3, 1.0, 0.85),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (the crop keeps the battalion's line)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

@@ -689,6 +689,16 @@ export const units: Unit[] = [
     soldierCount: 831,
     dataFile: '/zapadnodolenjski-odred-soldiers.json',
     pdfFiles: ['/pdfs/zapadnodolenjski-odred.pdf']
+  },
+  {
+    id: 'braciceva-brigada',
+    name: 'Bračičeva brigada',
+    nameEn: 'Bračič Brigade',
+    description: 'Formirana 23. septembra 1943. u Kneževoj Njivi u Loškoj dolini. Poginuli i preživeli borci.',
+    image: '/images/braciceva-brigada.jpg',
+    soldierCount: 2216,
+    dataFile: '/braciceva-soldiers.json',
+    pdfFiles: ['/pdfs/braciceva.pdf']
   }
   // Add more units here as you get more data
 ]

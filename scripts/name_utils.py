@@ -639,6 +639,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    69: {
+        'name': 'Bračičeva',
+        'json_file': 'braciceva-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "ACMAN JURIJ, * 1913, Brezje, Mozirje, kmet; † 15. 9. 1944, ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

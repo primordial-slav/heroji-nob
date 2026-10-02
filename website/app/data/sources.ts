@@ -800,5 +800,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zapadnodolenjski-odred.jpg',
     brigadeName: 'Zapadnodolenjski odred',
     description: 'Spisak boraca odreda (str. 333 i dalje) i spisak njegovih poginulih (str. 340 i dalje)'
+  },
+  {
+    id: 'braciceva',
+    title: 'Bračičeva brigada, II. del — padli borci, borci, ki so vojno preživeli',
+    author: 'Mirko Fajdiga',
+    pdfPath: '/pdfs/braciceva.pdf',
+    thumbnail: '/images/pdf-thumbs/braciceva.jpg',
+    brigadeName: 'Bračičeva brigada',
+    description: 'Spisak poginulih boraca brigade (str. 722 i dalje) i onih koji su preživeli rat (str. 746 i dalje)'
   }
 ]

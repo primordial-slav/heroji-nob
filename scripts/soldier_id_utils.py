@@ -83,6 +83,7 @@ BRIGADE_CODES = {
     66: 'Škofjeloški odred',
     67: 'Istrski odred',
     68: 'Zapadnodolenjski odred',
+    69: 'Bračičeva',
     # Add new brigades here with next available code
 }
 

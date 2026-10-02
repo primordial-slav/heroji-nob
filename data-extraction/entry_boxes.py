@@ -121,6 +121,7 @@ MULTI_COLUMN = {
 # Books two columns on some pages only: {file: pages}
 TWO_COLUMN_PAGES = {
     '14-srednjobosanska.pdf': range(30, 65),     # the fallen in one column, the survivors in two
+    'braciceva.pdf': range(25, 72),              # Bračičeva: the fallen in one column, the survivors in two
 }
 
 

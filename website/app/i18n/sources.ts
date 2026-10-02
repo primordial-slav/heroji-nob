@@ -148,6 +148,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda (str. 827 in naprej), brez padlih, in seznam padlih s kratkimi podatki (str. 849 in naprej)',
     'zapadnodolenjski-odred':
       'Seznam odredovcev (str. 333 in naprej) in seznam padlih (str. 340 in naprej)',
+    'braciceva':
+      'Seznam padlih borcev brigade (str. 722 in naprej) in tistih, ki so vojno preživeli (str. 746 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -285,6 +287,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот (стр. 827 и натаму), без загинатите, и список на загинатите со кратки податоци (стр. 849 и натаму)',
     'zapadnodolenjski-odred':
       'Список на борците на одредот (стр. 333 и натаму) и список на неговите загинати (стр. 340 и натаму)',
+    'braciceva':
+      'Список на загинатите борци на бригадата (стр. 722 и натаму) и на оние што ја преживеале војната (стр. 746 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -421,6 +425,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members (pp. 827 ff.), without the fallen, and of the fallen with a short account of each (pp. 849 ff.)',
     'zapadnodolenjski-odred':
       'List of the detachment’s members (pp. 333 ff.) and of its fallen (pp. 340 ff.)',
+    'braciceva':
+      'Lists of the brigade’s fallen (pp. 722 ff.) and of those who survived the war (pp. 746 ff.)',
   },
 }
 

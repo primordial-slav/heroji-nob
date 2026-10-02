@@ -324,6 +324,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen konec junija 1942 na Dolenjskem. Padli in drugi borci odreda.',
   },
+  'braciceva-brigada': {
+    name: 'Bračičeva brigada',
+    description:
+      'Ustanovljena 23. septembra 1943 v Knežji Njivi v Loški dolini. Padli in preživeli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -639,6 +644,11 @@ const mk: Record<string, UnitText> = {
     name: 'Западнодолењски одред',
     description:
       'Формиран кон крајот на јуни 1942 во Долењско. Загинати и другите борци на одредот.',
+  },
+  'braciceva-brigada': {
+    name: 'Брачичева бригада',
+    description:
+      'Формирана на 23 септември 1943 во Кнежја Њива во Лошка долина. Загинати и преживеани борци.',
   },
 }
 
@@ -957,6 +967,11 @@ const en: Record<string, UnitText> = {
     name: 'West Lower Carniola Detachment',
     description:
       'Formed at the end of June 1942 in Lower Carniola. Partisans who were killed, and the detachment’s other members.',
+  },
+  'braciceva-brigada': {
+    name: 'Bračič Brigade',
+    description:
+      'Formed on 23 September 1943 at Knežja Njiva in the Loška dolina. Partisans who were killed and those who survived.',
   },
 }
 

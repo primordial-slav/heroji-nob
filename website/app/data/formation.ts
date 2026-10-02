@@ -225,6 +225,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-06', place: 'Dolenjska', source: 'https://znaci.org/00003/808.pdf',
     note: 'Knjiga odreda (Kraševec, str. 18): osnovan 24. ili 25. juna 1942, pri preuređenju 3. i stvaranju 5. grupe odreda, uglavnom od boraca rasformiranog Dolenjskog odreda.',
   },
+  'braciceva-brigada': {
+    date: '1943-09-23', place: 'Knežja Njiva, Loška dolina', source: 'https://znaci.org/00003/775.pdf',
+    note: 'Knjiga brigade, II. deo (Fajdiga, str. 701): 13. SNOUB Mirko Bračič; do 3. oktobra 1943. SNOB-Loška.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
