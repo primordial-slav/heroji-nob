@@ -344,6 +344,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 14. junija 1944 na Gornjem Lokovcu. Borci artilerije in padli.',
   },
+  '19-srpska-brigada': {
+    name: '19. srbska brigada',
+    description:
+      'Ustanovljena 12. junija 1944 v Gornji Jošanici. Padli, pogrešani in umrli borci ter tisti, ki so vojno preživeli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -679,6 +684,11 @@ const mk: Record<string, UnitText> = {
     name: 'Артилерија на 9. корпус',
     description:
       'Формирана на 14 јуни 1944 во Горњи Локовец. Борците на артилеријата и загинатите.',
+  },
+  '19-srpska-brigada': {
+    name: '19-та српска бригада',
+    description:
+      'Формирана на 12 јуни 1944 во Горња Јошаница. Загинати, исчезнати и починати борци и оние што ја преживеаја војната.',
   },
 }
 
@@ -1017,6 +1027,11 @@ const en: Record<string, UnitText> = {
     name: '9th Corps Artillery',
     description:
       'Formed on 14 June 1944 at Gornji Lokovec. The artillery’s members and its fallen.',
+  },
+  '19-srpska-brigada': {
+    name: '19th Serbian Brigade',
+    description:
+      'Formed on 12 June 1944 in Gornja Jošanica. Partisans who were killed, went missing or died, and those who survived the war.',
   },
 }
 

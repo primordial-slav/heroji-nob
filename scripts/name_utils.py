@@ -675,6 +675,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    73: {
+        'name': '19. Srpska',
+        'json_file': '19-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "Андрејић П. Станко, рођен 1914. у Буровцу код Петровца на Млави, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'initial',
+        'original_casing': 'title',
+    },
 }
 
 

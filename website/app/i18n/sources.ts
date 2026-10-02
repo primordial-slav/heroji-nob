@@ -160,6 +160,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam starešin, seznam topničarjev in seznam padlih (str. 388 in naprej)',
     'artilerija-9-korpusa':
       'Seznam borcev artilerije, seznam padlih in poveljniški kader (str. 316 in naprej)',
+    '19-srpska':
+      'Padli, pogrešani in umrli po enotah ter borci, ki so vojno preživeli: rojstvo, dolžnost, kdaj in kje so padli (str. 411–612)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -309,6 +311,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на старешините, на артилерците и на загинатите (стр. 388 и натаму)',
     'artilerija-9-korpusa':
       'Список на борците на артилеријата, на загинатите и на старешините (стр. 316 и натаму)',
+    '19-srpska':
+      'Загинати, исчезнати и починати по единици и борците што ја преживеаја војната: раѓање, должност, кога и каде загинале (стр. 411–612)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -457,6 +461,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Lists of the officers, the gunners and the fallen (pp. 388 ff.)',
     'artilerija-9-korpusa':
       'Lists of the artillery’s members, its fallen and its officers (pp. 316 ff.)',
+    '19-srpska':
+      'The killed, missing and dead by unit, and the Partisans who survived the war: birth, duty, when and where they fell (pp. 411–612)',
   },
 }
 

@@ -241,6 +241,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-06-14', place: 'Gornji Lokovec', source: 'https://znaci.org/00003/824.pdf',
     note: 'Lah, Artilerija 9. korpusa (str. 101-102): toga dana je imenovan štab artiljerije 9. korpusa i potčinjen mu divizion 31. divizije; spomenik na Gornjem Lokovcu.',
   },
+  '19-srpska-brigada': {
+    date: '1944-06-12', place: 'Gornja Jošanica', source: 'https://znaci.org/00001/87_1.pdf',
+    note: 'Pejčić, Devetnaesta srpska brigada, gl. I (str. 17): formirana u selu Gornja Jošanica 12. juna 1944; jezgro je bio 1. bataljon iz 16. srpske brigade.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

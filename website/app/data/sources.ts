@@ -854,5 +854,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/artilerija-9-korpusa.jpg',
     brigadeName: 'Artiljerija 9. korpusa',
     description: 'Spisak boraca artiljerije, spisak poginulih i spisak starešina (str. 316 i dalje)'
+  },
+  {
+    id: '19-srpska',
+    title: 'Devetnaesta srpska brigada — poginuli i preživeli',
+    author: 'Predrag Pejčić',
+    pdfPath: '/pdfs/19-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/19-srpska.jpg',
+    brigadeName: '19. srpska brigada',
+    description: 'Poginuli, nestali i umrli po jedinicama i borci koji su preživeli rat: rođenje, dužnost, kada i gde su pali (str. 411–612)'
   }
 ]

@@ -729,6 +729,16 @@ export const units: Unit[] = [
     soldierCount: 414,
     dataFile: '/artilerija-9-korpusa-soldiers.json',
     pdfFiles: ['/pdfs/artilerija-9-korpusa.pdf']
+  },
+  {
+    id: '19-srpska-brigada',
+    name: '19. srpska brigada',
+    nameEn: '19th Serbian Brigade',
+    description: 'Formirana 12. juna 1944. u Gornjoj Jošanici. Poginuli, nestali i umrli borci i oni koji su preživeli rat.',
+    image: '/images/19-srpska-brigada.jpg',
+    soldierCount: 3557,
+    dataFile: '/19-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/19-srpska.pdf']
   }
   // Add more units here as you get more data
 ]
