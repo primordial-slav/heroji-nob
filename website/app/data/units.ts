@@ -919,6 +919,16 @@ export const units: Unit[] = [
     soldierCount: 600,
     dataFile: '/20-srpska-soldiers.json',
     pdfFiles: ['/pdfs/20-srpska.pdf']
+  },
+  {
+    id: '1-konjicka-brigada',
+    name: '1. konjička brigada',
+    nameEn: '1st Cavalry Brigade',
+    description: 'Formirana 15. septembra 1944. u Slavkovici kod Ljiga. Ratni spisak starešina i boraca brigade i poginuli.',
+    image: '/images/1-konjicka-brigada.jpg',
+    soldierCount: 531,
+    dataFile: '/1-konjicka-soldiers.json',
+    pdfFiles: ['/pdfs/1-konjicka.pdf']
   }
   // Add more units here as you get more data
 ]

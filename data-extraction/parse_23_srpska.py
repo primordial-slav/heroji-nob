@@ -47,14 +47,15 @@ def read_back(word: str, field: str) -> str | None:
         from parse_uzicki_odred import FIRST, LAST
         _names.update(last=LAST, first=FIRST)
     known = _names[field]
-    if known[word.upper()] or len(word) < 3:
+    if len(word) < 3:
         return None
     parts = [SIGNS.get(p, p.upper()) for p in MULTI.findall(word)]
     options = [LOOK.get(p, (p,)) for p in parts]
     if sum(len(o) > 1 for o in options) > 8:
         return None
     best = max((''.join(c) for c in __import__('itertools').product(*options)), key=lambda c: known[c])
-    return best if known[best] >= 2 else None
+    # a garbled spelling other books share ("MIAAN" twice in 7. krajiška) yields to a reading far more common
+    return best if best != word.upper() and known[best] >= max(2, 10 * known[word.upper()]) else None
 
 
 def decode_head(t: str) -> str:

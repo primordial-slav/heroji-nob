@@ -1025,5 +1025,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/20-srpska.jpg',
     brigadeName: '20. srpska brigada',
     description: 'Pregled poginulih i umrlih boraca i rukovodilaca: godina i mesto rođenja, zanimanje, kada su stupili u NOVJ, jedinica, gde su pali i sahranjeni (str. 321–385)'
+  },
+  {
+    id: '1-konjicka',
+    title: '1. konjička brigada — pali borci i ratni spisak',
+    author: 'Milorad Gončin',
+    pdfPath: '/pdfs/1-konjicka.pdf',
+    thumbnail: '/images/pdf-thumbs/1-konjicka.jpg',
+    brigadeName: '1. konjička brigada',
+    description: 'Spisak palih boraca i rukovodilaca (rođenje, gde su pali) i ratni spisak starešina i boraca brigade, samo imena (str. 317–327)'
   }
 ]

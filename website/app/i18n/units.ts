@@ -439,6 +439,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 19. avgusta 1944 nad vasjo Bučje pri Knjaževcu. Padli in umrli borci in starešine brigade.',
   },
+  '1-konjicka-brigada': {
+    name: '1. konjeniška brigada',
+    description:
+      'Ustanovljena 15. septembra 1944 v Slavkovici pri Ljigu. Vojni seznam starešin in borcev brigade ter padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -869,6 +874,11 @@ const mk: Record<string, UnitText> = {
     name: '20-та српска бригада',
     description:
       'Формирана на 19 август 1944 над селото Бучје кај Књажевац. Загинатите и умрените борци и раководители на бригадата.',
+  },
+  '1-konjicka-brigada': {
+    name: '1-ва коњаничка бригада',
+    description:
+      'Формирана на 15 септември 1944 во Славковица кај Љиг. Воениот список на старешините и борците на бригадата и загинатите.',
   },
 }
 
@@ -1302,6 +1312,11 @@ const en: Record<string, UnitText> = {
     name: '20th Serbian Brigade',
     description:
       'Formed on 19 August 1944 above the village of Bučje near Knjaževac. The brigade’s soldiers and officers who were killed or died.',
+  },
+  '1-konjicka-brigada': {
+    name: '1st Cavalry Brigade',
+    description:
+      'Formed on 15 September 1944 at Slavkovica near Ljig. The brigade’s wartime list of officers and men, and its fallen.',
   },
 }
 

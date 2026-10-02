@@ -846,6 +846,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    92: {
+        'name': '1. Konjička',
+        'json_file': '1-konjicka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ТЕШИЋ Марка ТИХОМИР, рођен 15. IX 1922. ...", roster "АДАМОВИЋ ЈОВАН"
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

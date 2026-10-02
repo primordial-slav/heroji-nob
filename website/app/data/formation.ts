@@ -317,6 +317,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-08-19', place: 'Bučje (Knjaževac)', source: 'https://znaci.org/00003/840.pdf',
     note: 'Mirčetić, Dvadeseta srpska brigada (Beograd 1986), Uvod: „formirana je od 14. do 21. avgusta 1944. iznad sela Bučja u knjaževačkom kraju, a za dan njenog formiranja uzimamo 19. avgust 1944.“',
   },
+  '1-konjicka-brigada': {
+    date: '1944-09-15', place: 'Slavkovica (Ljig)', source: 'https://znaci.org/00001/278_1.pdf',
+    note: 'Gončin, 1. konjička brigada (I deo, Od Slavkovice): „15. septembar, dan predviđen za formiranje i smotru Brigade“; „16. septembra, dan posle formiranja Prve konjičke brigade“. Delovi brigade u Slavkovici kod Ljiga, septembar 1944 (fotografija u knjizi).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

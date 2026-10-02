@@ -411,6 +411,11 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "1-konjicka-brigada": dict(
+        name="1. konjička brigada", tags=[],
+        caption=r"(?<!\d)(?:1\.|prv\w*)\s+konjičk\w*\s+brigad", photo=None,
+        book=dict(pdf="00001/278_18.pdf", page=18, xref=163, caption="Prvi eskadron Drugog diviziona u oslobođenom Zagrebu"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,
