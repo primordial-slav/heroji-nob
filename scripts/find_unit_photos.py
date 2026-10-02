@@ -323,6 +323,12 @@ UNITS = {
         name="22. srpska kosmajska brigada", tags=[],
         caption=r"(?:22\.|dvadeset\w* drug\w*)\s+srpsk\w*\s+(?:kosmajsk\w*\s+)?brigad|kosmajsk\w*\s+brigad", photo=10182,
         crop=(0.0, 0.15, 1.0, 0.7)),
+    "12-vojvodjanska-brigada": dict(
+        name="12. vojvođanska brigada", tags=[],
+        caption=r"(?:12\.|XII\.?|dvanaest\w*)\s+vojvo\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00003/443.pdf", page=55, xref=235,
+                  caption="Za vreme polaganja zakletve. Na slici desno sa podignutom pesnicom politički komesar Brigade Lazar Mišković"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

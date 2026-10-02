@@ -164,6 +164,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Padli, pogrešani in umrli po enotah ter borci, ki so vojno preživeli: rojstvo, dolžnost, kdaj in kje so padli (str. 411–612)',
     '22-srpska':
       'Padli in preživeli borci in starešine brigade: rojstvo, vstop v brigado, dolžnost, kje so padli (str. 317–399)',
+    '12-vojvodjanska':
+      'Seznam borcev po krajih, kjer so živeli pred vstopom v brigado, in seznam padlih: od kod so bili, leto rojstva, kje so padli (str. 207–258)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -317,6 +319,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Загинати, исчезнати и починати по единици и борците што ја преживеаја војната: раѓање, должност, кога и каде загинале (стр. 411–612)',
     '22-srpska':
       'Загинати и преживеани борци и старешини на бригадата: раѓање, кога стапиле во бригадата, должност, каде загинале (стр. 317–399)',
+    '12-vojvodjanska':
+      'Список на борците по местата каде што живееле пред да стапат во бригадата и список на загинатите: од каде се, година на раѓање, каде загинале (стр. 207–258)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -469,6 +473,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The killed, missing and dead by unit, and the Partisans who survived the war: birth, duty, when and where they fell (pp. 411–612)',
     '22-srpska':
       'The brigade’s Partisans and officers who were killed or survived: birth, when they joined, duty, where they fell (pp. 317–399)',
+    '12-vojvodjanska':
+      'The brigade’s members by the place they lived in before joining, and its fallen: where they came from, year of birth, where they fell (pp. 207–258)',
   },
 }
 

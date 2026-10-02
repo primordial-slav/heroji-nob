@@ -63,6 +63,7 @@ LISTS = {
     'artilerija-9-korpusa.pdf': [(1, 'borci'), (9, 'padli')],
     '19-srpska.pdf': [(1, 'poginuli'), (62, 'preziveli')],
     '22-srpska.pdf': [(1, 'poginuli'), (24, 'preziveli')],
+    '12-vojvodjanska.pdf': [(1, 'spisak'), (34, 'poginuli')],
     'tomsiceva-4.pdf': [(1, '1943-1944'), (49, '1944-1945')],
 }
 
@@ -156,6 +157,7 @@ LIST_FATE = {
     'artilerija-9-korpusa.pdf (borci)': 'lived', 'artilerija-9-korpusa.pdf (padli)': 'fell',
     '19-srpska.pdf (poginuli)': 'fell', '19-srpska.pdf (preziveli)': 'lived',
     '22-srpska.pdf (poginuli)': 'fell', '22-srpska.pdf (preziveli)': 'lived',
+    '12-vojvodjanska.pdf (poginuli)': 'fell',
 }
 # Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
 SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'

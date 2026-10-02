@@ -693,6 +693,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    75: {
+        'name': '12. Vojvođanska',
+        'json_file': '12-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ACANSKI Radomir iz Sombora, rođ. 1919, poginuo kod Koprivnice."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
 }
 
 

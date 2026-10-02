@@ -354,6 +354,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 12. septembra 1944 na Brdnjaku pri Drugovcu. Padli in preživeli borci in starešine.',
   },
+  '12-vojvodjanska-brigada': {
+    name: '12. vojvodinska brigada',
+    description:
+      'Ustanovljena 8. oktobra 1944 v Vojlovici pri Pančevu. Borci brigade po krajih, kjer so živeli, in padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -699,6 +704,11 @@ const mk: Record<string, UnitText> = {
     name: '22-ра српска космајска бригада',
     description:
       'Формирана на 12 септември 1944 на Брдњак кај Друговац. Загинати и преживеани борци и старешини.',
+  },
+  '12-vojvodjanska-brigada': {
+    name: '12-та војводинска бригада',
+    description:
+      'Формирана на 8 октомври 1944 во Војловица кај Панчево. Борците на бригадата по местата каде што живееле и загинатите.',
   },
 }
 
@@ -1047,6 +1057,11 @@ const en: Record<string, UnitText> = {
     name: '22nd Serbian (Kosmaj) Brigade',
     description:
       'Formed on 12 September 1944 at Brdnjak near Drugovac. Partisans and officers who were killed or survived.',
+  },
+  '12-vojvodjanska-brigada': {
+    name: '12th Vojvodina Brigade',
+    description:
+      'Formed on 8 October 1944 at Vojlovica near Pančevo. The brigade’s members, by the place they lived in, and its fallen.',
   },
 }
 

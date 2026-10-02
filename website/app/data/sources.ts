@@ -872,5 +872,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/22-srpska.jpg',
     brigadeName: '22. srpska kosmajska brigada',
     description: 'Poginuli i preživeli borci i starešine brigade: rođenje, kada su stupili u brigadu, dužnost, gde su pali (str. 317–399)'
+  },
+  {
+    id: '12-vojvodjanska',
+    title: '12. vojvođanska udarna brigada — spisak boraca i poginulih',
+    author: 'Branislav Popov Miša',
+    pdfPath: '/pdfs/12-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/12-vojvodjanska.jpg',
+    brigadeName: '12. vojvođanska brigada',
+    description: 'Spisak boraca po mestima u kojima su živeli pre stupanja u brigadu i spisak poginulih: odakle su, godina rođenja, gde su pali (str. 207–258)'
   }
 ]

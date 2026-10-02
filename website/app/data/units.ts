@@ -749,6 +749,16 @@ export const units: Unit[] = [
     soldierCount: 1300,
     dataFile: '/22-srpska-soldiers.json',
     pdfFiles: ['/pdfs/22-srpska.pdf']
+  },
+  {
+    id: '12-vojvodjanska-brigada',
+    name: '12. vojvođanska brigada',
+    nameEn: '12th Vojvodina Brigade',
+    description: 'Formirana 8. oktobra 1944. u Vojlovici kod Pančeva. Borci brigade, po mestima u kojima su živeli, i poginuli.',
+    image: '/images/12-vojvodjanska-brigada.jpg',
+    soldierCount: 2540,
+    dataFile: '/12-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/12-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]
