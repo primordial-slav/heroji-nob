@@ -541,6 +541,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: '7-krajiska-spisak',
+    title: 'Sedma krajiška brigada — preživjeli i poginuli (zbornik, knj. 2)',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/7-krajiska-spisak.pdf',
+    thumbnail: '/images/pdf-thumbs/7-krajiska-spisak.jpg',
+    brigadeName: '7. krajiška brigada',
+    description: 'Preživeli i poginuli borci i rukovodioci od formiranja brigade decembra 1942. do kraja rata: rođenje, narodnost, zanimanje, kada su stupili u NOB, dužnost, sudbina (str. 447 i dalje)'
+  },
+  {
     id: 'borci-sutjeske-15-majevicka',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',

@@ -484,11 +484,11 @@ export const units: Unit[] = [
     id: '7-krajiska-brigada',
     name: '7. krajiška brigada',
     nameEn: '7th Krajina Brigade',
-    description: 'Formirana 27. decembra 1942. u Orahovljanima kod Ključa. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    description: 'Formirana 27. decembra 1942. u Orahovljanima kod Ključa. Preživeli i poginuli borci i starešine, od formiranja do kraja rata.',
     image: '/images/7-krajiska-brigada.jpg',
-    soldierCount: 1112,
+    soldierCount: 4336,
     dataFile: '/7-krajiska-soldiers.json',
-    pdfFiles: ['/pdfs/borci-sutjeske-7-krajiska.pdf']
+    pdfFiles: ['/pdfs/borci-sutjeske-7-krajiska.pdf', '/pdfs/7-krajiska-spisak.pdf']
   },
   {
     id: '15-majevicka-brigada',

@@ -222,7 +222,7 @@ const sl: Record<string, UnitText> = {
   '7-krajiska-brigada': {
     name: '7. krajiška brigada',
     description:
-      'Ustanovljena 27. decembra 1942 v Orahovljanih pri Ključu. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+      'Ustanovljena 27. decembra 1942 v Orahovljanih pri Ključu. Preživeli in padli borci in poveljniki, od ustanovitve do konca vojne.',
   },
   '15-majevicka-brigada': {
     name: '15. majeviška brigada',
@@ -463,7 +463,7 @@ const mk: Record<string, UnitText> = {
   '7-krajiska-brigada': {
     name: '7-ма краишка бригада',
     description:
-      'Формирана на 27 декември 1942 во Ораховљани кај Кључ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+      'Формирана на 27 декември 1942 во Ораховљани кај Кључ. Преживеани и загинати борци и старешини, од формирањето до крајот на војната.',
   },
   '15-majevicka-brigada': {
     name: '15-та мајевичка бригада',
@@ -706,7 +706,7 @@ const en: Record<string, UnitText> = {
   '7-krajiska-brigada': {
     name: '7th Krajina Brigade',
     description:
-      'Formed on 27 December 1942 in Orahovljani near Ključ. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+      'Formed on 27 December 1942 in Orahovljani near Ključ. Partisans and officers who survived or were killed, from its formation to the end of the war.',
   },
   '15-majevicka-brigada': {
     name: '15th Majevica Brigade',

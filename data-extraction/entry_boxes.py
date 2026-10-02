@@ -72,6 +72,8 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf'}
 # moves between odd and even pages.
 TWO_COLUMN = {
     '13-proleterska-spisak.pdf',
+    '7-krajiska-spisak.pdf',
+    '11-dalmatinska.pdf',
     '32-divizija-borci.pdf',
     '6-krajiska-prezivjeli.pdf',
     '17-slavonska-poginuli.pdf',
