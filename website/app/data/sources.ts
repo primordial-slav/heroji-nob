@@ -728,5 +728,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/8-kordunaska-divizija.jpg',
     brigadeName: '8. kordunaška divizija',
     description: 'Popis palih boraca Osme divizije, po prezimenu, s brigadom u kojoj su bili (str. 806 i dalje)'
+  },
+  {
+    id: 'cankarjeva',
+    title: 'Cankarjeva brigada — seznam cankarjevcev, padli',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/cankarjeva.pdf',
+    thumbnail: '/images/pdf-thumbs/cankarjeva.jpg',
+    brigadeName: 'Cankarjeva brigada',
+    description: 'Spisak boraca brigade koji su preživeli rat (str. 815 i dalje) i spisak njenih poginulih (str. 847 i dalje)'
   }
 ]

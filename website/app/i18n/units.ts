@@ -284,6 +284,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 22. novembra 1942 v Crevarski Strani na Petrovi gori. Padli borci divizije.',
   },
+  'cankarjeva-brigada': {
+    name: 'Cankarjeva brigada',
+    description:
+      'Ustanovljena 28. septembra 1942 pri Lapinjah na Kočevskem. Padli in preživeli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -559,6 +564,11 @@ const mk: Record<string, UnitText> = {
     name: '8-ма кордунска дивизија',
     description:
       'Формирана на 22 ноември 1942 во Цреварска Страна на Петрова гора. Загинати борци на дивизијата.',
+  },
+  'cankarjeva-brigada': {
+    name: 'Цанкарјева бригада',
+    description:
+      'Формирана на 28 септември 1942 кај Лапиње во Кочевско. Загинати и преживеани борци.',
   },
 }
 
@@ -837,6 +847,11 @@ const en: Record<string, UnitText> = {
     name: '8th Kordun Division',
     description:
       'Formed on 22 November 1942 at Crevarska Strana on Petrova Gora. Partisans of the division who were killed.',
+  },
+  'cankarjeva-brigada': {
+    name: 'Cankar Brigade',
+    description:
+      'Formed on 28 September 1942 near Lapinje in the Kočevje region. Partisans who were killed and those who survived.',
   },
 }
 

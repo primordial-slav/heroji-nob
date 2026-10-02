@@ -52,6 +52,7 @@ CORRECTIONS = ROOT / 'corrections.json'
 LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
     '4-splitska-brigada.pdf': [(1, 'poginuli'), (23, 'preživjeli')],
+    'cankarjeva.pdf': [(1, 'seznam'), (33, 'padli')],
 }
 
 
@@ -133,6 +134,7 @@ LIST_FATE = {
     'treca-proleterska-poginuli-knj3.pdf': 'fell', '3-krajiska-proleterska.pdf': 'fell', 'druga-proleterska.pdf': 'fell',
     '6-krajiska.pdf': 'fell', '6-krajiska-prezivjeli.pdf': 'lived',
     '12-krajiska-poginuli.pdf': 'fell', '12-krajiska-prezivjeli.pdf': 'lived',
+    'cankarjeva.pdf (seznam)': 'lived', 'cankarjeva.pdf (padli)': 'fell',          # a list of a PDF (LISTS) by its name
 }
 # Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
 SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'
@@ -142,6 +144,8 @@ SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (
 def fate(s: dict) -> str:
     if s.get('pdf_file') in LIST_FATE:
         return LIST_FATE[s['pdf_file']]
+    if list_of(s) in LIST_FATE:
+        return LIST_FATE[list_of(s)]
     info = ' '.join([s.get('additional_info') or ''] + [o.get('additional_info') or '' for o in s.get('other_sources', ())])
     if SURVIVED.search(info) or SURVIVED_SUTJESKA.search(info):
         return 'lived'

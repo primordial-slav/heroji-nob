@@ -193,6 +193,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-11-22', place: 'Crevarska Strana na Petrovoj gori', source: 'https://znaci.org/00003/571.pdf',
     note: 'Zbornik HAK knj. 9: Naredba br. 95 Vrhovnog štaba od 22. novembra 1942; štab konstituisan u Suvoj Perni, divizija postrojena u Crevarskoj Strani.',
   },
+  'cankarjeva-brigada': {
+    date: '1942-09-28', place: 'Lapinje na Kočevskom', source: 'https://znaci.org/00003/767.pdf',
+    note: 'Knjiga brigade (Ambrožič-Novljan, str. 26): ustanovni miting 28. septembra 1942. kod Lapinja, po dnevniku Glavnog štaba; često se navode 23. i 24. septembar.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

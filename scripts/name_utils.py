@@ -567,6 +567,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    61: {
+        'name': 'Cankarjeva',
+        'json_file': 'cankarjeva-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Adam Jože-Ciril, 1920, Sodražica"; the fallen "Afal Jože-Branko, Stružnica 1922—1944"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

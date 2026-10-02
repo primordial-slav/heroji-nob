@@ -132,6 +132,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda po občinah, iz katerih so prišli (str. 313 in naprej)',
     '8-kordunaska-divizija':
       'Seznam padlih borcev Osme divizije po priimkih, z brigado, v kateri so bili (str. 806 in naprej)',
+    'cankarjeva':
+      'Seznam cankarjevcev, ki so preživeli vojno (str. 815 in naprej), in seznam padlih (str. 847 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -253,6 +255,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот по општините од кои дошле (стр. 313 и натаму)',
     '8-kordunaska-divizija':
       'Список на загинатите борци на Осмата дивизија, по презиме, со бригадата во која биле (стр. 806 и натаму)',
+    'cankarjeva':
+      'Список на борците на бригадата што ја преживеале војната (стр. 815 и натаму) и список на нејзините загинати (стр. 847 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -373,6 +377,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members by the municipality they came from (pp. 313 ff.)',
     '8-kordunaska-divizija':
       'List of the Eighth Division’s fallen, by surname, with the brigade each served in (pp. 806 ff.)',
+    'cankarjeva':
+      'List of the brigade’s members who survived the war (pp. 815 ff.) and of its fallen (pp. 847 ff.)',
   },
 }
 

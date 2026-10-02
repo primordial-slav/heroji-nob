@@ -252,6 +252,9 @@ UNITS = {
         book=dict(pdf="00003/571.pdf", page=250, xref=1127, caption="Plaški, jesen 1944. Jurišni vod 1. brigade 8. divizije."),
         crop=(0.0, 0.07, 1.0, 1.0),
         note="Nothing in the gallery is a group of the division's soldiers; the photo is from its own zbornik (the crop drops the torn top edge)."),
+    "cankarjeva-brigada": dict(
+        name="Cankarjeva brigada", tags=[],
+        caption=r"cankar\w*\s+brigad", photo=11247),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

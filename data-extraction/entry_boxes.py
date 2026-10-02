@@ -76,6 +76,7 @@ TWO_COLUMN = {
     '11-dalmatinska.pdf',
     'kalnicki-odred.pdf',
     '8-kordunaska-divizija.pdf',
+    'cankarjeva.pdf',
     '32-divizija-borci.pdf',
     '6-krajiska-prezivjeli.pdf',
     '17-slavonska-poginuli.pdf',

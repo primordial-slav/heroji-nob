@@ -609,6 +609,16 @@ export const units: Unit[] = [
     soldierCount: 2674,
     dataFile: '/8-kordunaska-divizija-soldiers.json',
     pdfFiles: ['/pdfs/8-kordunaska-divizija.pdf']
+  },
+  {
+    id: 'cankarjeva-brigada',
+    name: 'Cankarjeva brigada',
+    nameEn: 'Cankar Brigade',
+    description: 'Formirana 28. septembra 1942. kod Lapinja na Kočevskom. Poginuli i preživeli borci.',
+    image: '/images/cankarjeva-brigada.jpg',
+    soldierCount: 2891,
+    dataFile: '/cankarjeva-soldiers.json',
+    pdfFiles: ['/pdfs/cankarjeva.pdf']
   }
   // Add more units here as you get more data
 ]
