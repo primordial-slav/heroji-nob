@@ -387,6 +387,12 @@ UNITS = {
         book=dict(pdf="00003/398.pdf", page=309, xref=1363, caption="Borci Osme brigade u Šapcu, januara 1945."),
         descreen=1.6,
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "10-srpska-brigada": dict(
+        name="10. srpska brigada", tags=[],
+        caption=r"(?<!\d)(?:10\.|X\.?|deset\w*)\s+srpsk\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00003/381.pdf", page=551, xref=2295,
+                  caption="Piroćanci iz sela Gnjilana, borci druge čete prvog bataljona sa komandirom Gomom Živkovićem (stoji prvi sdesna)."),
+        note="The gallery's one photo (14694) shows the staff; this group of the brigade's 1st battalion is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

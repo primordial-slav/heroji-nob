@@ -301,6 +301,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-03-08', place: 'Trgovište', source: 'https://znaci.org/00003/398.pdf',
     note: 'Damjanov, 8. srpska brigada (pogl. Od odreda do brigade): „A onda je došao 8. mart 1944. godine“, svečani stroj kod Trgovišta, kraj Pčinje; pisac napominje da izvori koji navode 6. mart za dan osnivanja Šeste južnomoravske brigade greše.',
   },
+  '10-srpska-brigada': {
+    date: '1944-05-08', place: 'Jabukovik (Crna Trava)', source: 'https://znaci.org/00003/381.pdf',
+    note: 'Timotijević, Deseta srpska NOU brigada (pogl. Formiranje brigade): „Istog dana, 8. maja 1944, sekretar OK KPJ za Vranje Slavoljub Petrović-Đera, u ime GŠ NOV i PO za Srbiju, pročitao je naredbu u Jabukoviku za formiranje brigade.“',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

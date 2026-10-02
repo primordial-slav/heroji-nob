@@ -989,5 +989,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/8-srpska.jpg',
     brigadeName: '8. srpska brigada',
     description: '„Nezaboravnik“, spisak poginulih boraca brigade: rođenje, datum i mesto pogibije (str. 265–297)'
+  },
+  {
+    id: '10-srpska',
+    title: 'Deseta srpska NOU brigada — spisak poginulih',
+    author: 'Radovan Timotijević',
+    pdfPath: '/pdfs/10-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/10-srpska.jpg',
+    brigadeName: '10. srpska brigada',
+    description: 'Spisak poginulih boraca i rukovodilaca: rođenje, kada su stupili u brigadu, dužnost, gde su pali i sahranjeni (str. 488–541)'
   }
 ]

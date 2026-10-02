@@ -419,6 +419,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 8. marca 1944 v Trgovištu kot 6. južnomoravska. Padli borci brigade.',
   },
+  '10-srpska-brigada': {
+    name: '10. srbska brigada',
+    description:
+      'Ustanovljena 8. maja 1944 v Jabukoviku pri Crni Travi. Padli, umrli in pogrešani borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -829,6 +834,11 @@ const mk: Record<string, UnitText> = {
     name: '8-ма српска бригада',
     description:
       'Формирана на 8 март 1944 во Трговиште, како 6-та јужноморавска. Загинатите борци на бригадата.',
+  },
+  '10-srpska-brigada': {
+    name: '10-та српска бригада',
+    description:
+      'Формирана на 8 мај 1944 во Јабуковик кај Црна Трава. Загинатите, умрените и исчезнатите борци и раководители на бригадата.',
   },
 }
 
@@ -1242,6 +1252,11 @@ const en: Record<string, UnitText> = {
     name: '8th Serbian Brigade',
     description:
       'Formed on 8 March 1944 at Trgovište, as the 6th South Morava Brigade. The brigade’s fallen.',
+  },
+  '10-srpska-brigada': {
+    name: '10th Serbian Brigade',
+    description:
+      'Formed on 8 May 1944 at Jabukovik near Crna Trava. The brigade’s soldiers and officers who were killed, died or went missing.',
   },
 }
 

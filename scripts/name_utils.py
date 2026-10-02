@@ -810,6 +810,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    88: {
+        'name': '10. Srpska',
+        'json_file': '10-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АЛЕКСИЋ Војина ЈУЛИЈАНА, рођена 25. 5. 1925. у селу Брлог, Пирот, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 
