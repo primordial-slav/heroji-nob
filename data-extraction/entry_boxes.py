@@ -126,6 +126,7 @@ MULTI_COLUMN = {
 TWO_COLUMN_PAGES = {
     '14-srednjobosanska.pdf': range(30, 65),     # the fallen in one column, the survivors in two
     'braciceva.pdf': range(25, 72),              # Bračičeva: the fallen in one column, the survivors in two
+    '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster in two columns, the fallen and wounded in one
 }
 
 
@@ -329,6 +330,7 @@ ONE_LINE_ENTRIES = {
     'tomsiceva-4.pdf': range(1, 107),
     'artilerija-9-korpusa.pdf': range(1, 9),     # Artilerija 9. korpusa: the roster, a soldier a line
     '14-hercegovacka.pdf': range(1, 33),         # 14. hercegovačka: everyone who served, a soldier a line
+    '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster, names only
 }
 
 

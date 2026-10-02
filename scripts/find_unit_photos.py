@@ -375,6 +375,12 @@ UNITS = {
         book=dict(pdf="00001/277_3.pdf", page=23, xref=105,
                   caption="Bataljon Sedme brigade sa Štabom brigade u Pustoj Reci, marta 1944."),
         note="The gallery's two hits are the 17. srpska; the photo is from the brigade's own book (caption's OCR slips corrected)."),
+    "15-srpska-brigada": dict(
+        name="15. srpska brigada", tags=[],
+        caption=r"(?<!\d)(?:15\.|XV\.?|petnaest\w*)\s+srpsk\w*\s+(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00003/477.pdf", page=191, xref=833,
+                  caption="Borci i rukovodioci 1. čete 1. bataljona 15. srpske brigade (Neresnica kod Kučeva, 22. novembar 1944)."),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

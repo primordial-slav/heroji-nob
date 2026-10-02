@@ -792,6 +792,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    86: {
+        'name': '15. Srpska',
+        'json_file': '15-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # roster "Авримовић Стојан В.", the fallen "ВЕЛИЧКОВИЋ Цветана ДУШАН, рођен 1908, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

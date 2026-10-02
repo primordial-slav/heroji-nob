@@ -293,6 +293,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-02-04', place: 'Jabukovik (Crna Trava)', source: 'https://znaci.org/00001/277_3.pdf',
     note: 'Zlatković, Bakić, Sedma srpska brigada (pogl. Formiranje brigade kao prve operativne jedinice na anektiranom delu Srbije, str. 66): „Četvrtog februara 1944. godine, u crnotravskom selu Jabukoviku u 11,00 sati, ispred postrojenih boraca i okupljenog naroda“ pročitana je naredba Glavnog štaba o formiranju Pete južnomoravske brigade.',
   },
+  '15-srpska-brigada': {
+    date: '1944-06-02', place: 'Retkocer (Gornja Jablanica)', source: 'https://znaci.org/00003/477.pdf',
+    note: 'Nikčević, Petnaesta srpska NO brigada (pogl. Formiranje 15. srpske NO brigade): „svečani čin formiranja brigade obavljen je 2. juna 1944. godine na mestu zvanom Šančevi u selu Retkocer“.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

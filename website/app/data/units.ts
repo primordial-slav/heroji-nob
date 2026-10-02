@@ -859,6 +859,16 @@ export const units: Unit[] = [
     soldierCount: 1188,
     dataFile: '/7-srpska-soldiers.json',
     pdfFiles: ['/pdfs/7-srpska.pdf']
+  },
+  {
+    id: '15-srpska-brigada',
+    name: '15. srpska brigada',
+    nameEn: '15th Serbian Brigade',
+    description: 'Formirana 2. juna 1944. u Retkoceru, u Gornjoj Jablanici. Borci i rukovodioci brigade, poginuli i ranjeni.',
+    image: '/images/15-srpska-brigada.jpg',
+    soldierCount: 902,
+    dataFile: '/15-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/15-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

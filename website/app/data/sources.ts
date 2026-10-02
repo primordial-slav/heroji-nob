@@ -971,5 +971,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/7-srpska.jpg',
     brigadeName: '7. srpska brigada',
     description: 'Spisak boraca početkom maja 1944. po selima i spisak poginulih, umrlih i nestalih: rođenje, kada su stupili u brigadu, gde su pali (str. 459–501)'
+  },
+  {
+    id: '15-srpska',
+    title: 'Petnaesta srpska NO brigada — spiskovi boraca, poginulih i ranjenih',
+    author: 'Vojislav Nikčević',
+    pdfPath: '/pdfs/15-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/15-srpska.jpg',
+    brigadeName: '15. srpska brigada',
+    description: 'Spisak boraca i rukovodilaca brigade, spisak poginulih i spisak ranjenih: rođenje, dužnost, kada i gde su pali ili ranjeni (str. 155–173)'
   }
 ]
