@@ -845,5 +845,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-slovenska-artilerijska.jpg',
     brigadeName: '1. slovenačka artiljerijska brigada',
     description: 'Spisak starešina, spisak artiljeraca i spisak poginulih (str. 388 i dalje)'
+  },
+  {
+    id: 'artilerija-9-korpusa',
+    title: 'Artilerija 9. korpusa',
+    author: 'Borivoj Lah – Boris',
+    pdfPath: '/pdfs/artilerija-9-korpusa.pdf',
+    thumbnail: '/images/pdf-thumbs/artilerija-9-korpusa.jpg',
+    brigadeName: 'Artiljerija 9. korpusa',
+    description: 'Spisak boraca artiljerije, spisak poginulih i spisak starešina (str. 316 i dalje)'
   }
 ]

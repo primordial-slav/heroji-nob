@@ -297,3 +297,46 @@ def columns_reader(ncols: int):
                     lines.extend(_page_lines(part, n + 1, offset))
         return lines
     return extract
+
+
+def _inversions(keys: list[str]) -> int:
+    return sum(1 for i, a in enumerate(keys) for b in keys[i + 1:] if b < a)
+
+
+def caron_block(run: list[dict]) -> int:
+    """Where the Č (Š, Ž) names start among a list's C and Č names, in printed order: the split that leaves
+    both parts closest to alphabetical order (the books slip here and there: "Sršen", "Sprajcer"). len(run)
+    when the names read as one alphabetical run."""
+    keys = [s['last_name'][1:].lower() + ' ' + s['first_name'].lower() for s in run]
+    whole = _inversions(keys)
+    best, at = whole, len(run)
+    for k in range(1, len(run)):
+        cost = _inversions(keys[:k]) + _inversions(keys[k:])
+        if cost < best:
+            best, at = cost, k
+    return at if best * 3 < whole else len(run)                              # a clear second run, not noise
+
+
+def restore_carons(soldiers: list[dict], list_of) -> list[dict]:
+    """Scans that drop the caron of a surname's capital ("Cerne" = Černe, "Saruga" = Šaruga): the lists run in the
+    Slovene alphabet (C, Č, ... S, Š, ... Z, Ž), so in each list (list_of(s), in printed order) the C, S and Z
+    names printed after the list has moved on to Č, Š or Ž take the caron back ("Cvetko", then "Cakarevič"). A
+    given name the corpus doesn't know as printed, but well with a caron, too."""
+    n = 0
+    for which in sorted({list_of(s) for s in soldiers}):
+        listed = [s for s in soldiers if list_of(s) == which]
+        for plain, caron in (('C', 'Č'), ('S', 'Š'), ('Z', 'Ž')):
+            run = [s for s in listed if s['last_name'][:1] in (plain, caron)]
+            for s in run[caron_block(run):]:
+                if s['last_name'][:1] == plain:
+                    s['last_name'] = caron + s['last_name'][1:]
+                    n += 1
+    for s in soldiers:
+        g = s['first_name']
+        caron = {'C': 'Č', 'S': 'Š', 'Z': 'Ž'}.get(g[:1])
+        if caron and not given_names()[g] and given_names()[caron + g[1:]] >= 10:
+            s['first_name'] = caron + g[1:]
+            n += 1
+        s['full_name'] = ' '.join(p for p in (s['last_name'], s['first_name']) if p)
+    print(f'  carons restored in {n} names')
+    return soldiers

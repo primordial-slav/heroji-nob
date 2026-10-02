@@ -719,6 +719,16 @@ export const units: Unit[] = [
     soldierCount: 763,
     dataFile: '/1-slovenska-artilerijska-soldiers.json',
     pdfFiles: ['/pdfs/1-slovenska-artilerijska.pdf']
+  },
+  {
+    id: 'artilerija-9-korpusa',
+    name: 'Artiljerija 9. korpusa',
+    nameEn: '9th Corps Artillery',
+    description: 'Formirana 14. juna 1944. u Gornjem Lokovcu. Borci artiljerije i poginuli.',
+    image: '/images/artilerija-9-korpusa.jpg',
+    soldierCount: 414,
+    dataFile: '/artilerija-9-korpusa-soldiers.json',
+    pdfFiles: ['/pdfs/artilerija-9-korpusa.pdf']
   }
   // Add more units here as you get more data
 ]

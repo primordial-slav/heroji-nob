@@ -308,6 +308,11 @@ UNITS = {
         book=dict(pdf="00003/826.pdf", page=293, xref=1655,
                   caption="Zbor brigade marca 1945 v Črmošnjicah. Brigada je pripravljena za odhod na Hrvatsko po nove topove"),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "artilerija-9-korpusa": dict(
+        name="Artiljerija 9. korpusa", tags=[],
+        caption=r"artilerij\w*\s+(?:9\.|IX\.?|devet\w*)\s+korpus", photo=None,
+        book=dict(pdf="00003/824.pdf", page=127, xref=892, caption="Moštvo zaščitnega bataljona artilerije"),
+        note="Nothing in the gallery names the unit; the photo is from its own book (the artillery's protection battalion)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

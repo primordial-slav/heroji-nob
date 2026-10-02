@@ -324,6 +324,7 @@ ONE_LINE_ENTRIES = {
     'tomsiceva-2.pdf': range(1, 33),       # Tomšičeva: a soldier a line
     'tomsiceva-3.pdf': range(1, 5),
     'tomsiceva-4.pdf': range(1, 107),
+    'artilerija-9-korpusa.pdf': range(1, 9),     # Artilerija 9. korpusa: the roster, a soldier a line
 }
 
 

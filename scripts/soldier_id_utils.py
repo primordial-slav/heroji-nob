@@ -86,6 +86,7 @@ BRIGADE_CODES = {
     69: 'Bračičeva',
     70: 'Tomšičeva',
     71: 'Prva slovenska artilerijska',
+    72: 'Artilerija 9. korpusa',
     # Add new brigades here with next available code
 }
 

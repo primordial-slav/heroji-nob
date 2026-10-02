@@ -237,6 +237,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05-06', place: 'Lašče', source: 'https://znaci.org/00003/826.pdf',
     note: 'Lah, Prva slovenska artilerijska brigada (str. 149-151): odluka Glavnog štaba NOV i PO Slovenije br. 320 od 6. maja 1944; 7. maja pročitana je artiljercima XV. i XVIII. divizije okupljenim u Laščama.',
   },
+  'artilerija-9-korpusa': {
+    date: '1944-06-14', place: 'Gornji Lokovec', source: 'https://znaci.org/00003/824.pdf',
+    note: 'Lah, Artilerija 9. korpusa (str. 101-102): toga dana je imenovan štab artiljerije 9. korpusa i potčinjen mu divizion 31. divizije; spomenik na Gornjem Lokovcu.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

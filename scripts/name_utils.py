@@ -666,6 +666,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    72: {
+        'name': 'Artilerija 9. korpusa',
+        'json_file': 'artilerija-9-korpusa-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Ambrožič Janez, 16. 10. 1926, Jesenice"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 
@@ -920,13 +929,15 @@ def clean_name_field(name):
     # Remove years that leaked into names
     name = re.sub(r'\b(18|19)\d{2}\b\.?', '', name).strip()
 
-    # Remove text after "rođen" that leaked into name fields
+    # Remove text after "rođen" that leaked into name fields: the word after the name, never part of it
+    # (the surnames Vodnik, Zavodnik, Povodnik, Somborac, Doborac)
     for keyword in ['rođen', 'rođena', 'poginuo', 'poginula', 'umro', 'umrla',
                      'nestao', 'nestala', 'streljan', 'padel', 'padla',
                      'borac', 'vodnik', 'komandir']:
-        pos = name.lower().find(keyword)
-        if pos != -1:
-            name = name[:pos].strip()
+        m = (re.search(r'(?<=[\s,;.])' + keyword + r'(?![a-zčćžšđ])', name, re.I)
+             or re.match(keyword + r'(?![a-zčćžšđ])', name))                  # a field that is only "poginuo 1943"
+        if m:
+            name = name[:m.start()].strip()
 
     # Remove trailing punctuation again after keyword removal
     name = name.rstrip('.,;:').strip()

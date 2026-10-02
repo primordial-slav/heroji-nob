@@ -339,6 +339,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 6. maja 1944 v Laščah pri Dvoru. Topničarji brigade in padli.',
   },
+  'artilerija-9-korpusa': {
+    name: 'Artilerija 9. korpusa',
+    description:
+      'Ustanovljena 14. junija 1944 na Gornjem Lokovcu. Borci artilerije in padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -669,6 +674,11 @@ const mk: Record<string, UnitText> = {
     name: '1. словенечка артилериска бригада',
     description:
       'Формирана на 6 мај 1944 во Лашче кај Двор. Артилерците на бригадата и загинатите.',
+  },
+  'artilerija-9-korpusa': {
+    name: 'Артилерија на 9. корпус',
+    description:
+      'Формирана на 14 јуни 1944 во Горњи Локовец. Борците на артилеријата и загинатите.',
   },
 }
 
@@ -1002,6 +1012,11 @@ const en: Record<string, UnitText> = {
     name: '1st Slovene Artillery Brigade',
     description:
       'Formed on 6 May 1944 at Lašče near Dvor. The brigade’s gunners and its fallen.',
+  },
+  'artilerija-9-korpusa': {
+    name: '9th Corps Artillery',
+    description:
+      'Formed on 14 June 1944 at Gornji Lokovec. The artillery’s members and its fallen.',
   },
 }
 
