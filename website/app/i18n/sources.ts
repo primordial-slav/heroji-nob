@@ -118,6 +118,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Padli borci in poveljniki brigade: dolžnost, leto in kraj rojstva, kje in kdaj so padli',
     '12-krajiska-prezivjeli':
       'Preživeli borci in poveljniki brigade: leto in kraj rojstva',
+    '17-srpska':
+      'Seznam borcev brigade, ki so vojno preživeli, in seznam padlih: rojstvo, vstop v brigado, dolžnost, kje in kdaj so padli (str. 317–373 knjige)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -225,6 +227,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Загинатите борци и раководители на бригадата: должност, година и место на раѓање, каде и кога загинале',
     '12-krajiska-prezivjeli':
       'Преживеаните борци и раководители на бригадата: година и место на раѓање',
+    '17-srpska':
+      'Список на борците на бригадата што ја преживеаја војната и список на загинатите: раѓање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 317–373 од книгата)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -331,6 +335,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans and officers who were killed: duty, year and place of birth, where and when they fell',
     '12-krajiska-prezivjeli':
       'The brigade’s Partisans and officers who survived: year and place of birth',
+    '17-srpska':
+      'The brigade’s Partisans who survived the war, and those who were killed: birth, when they joined, duty, where and when they fell (pp. 317–373 of the book)',
   },
 }
 

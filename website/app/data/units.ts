@@ -549,6 +549,16 @@ export const units: Unit[] = [
     soldierCount: 3855,
     dataFile: '/12-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/12-krajiska-poginuli.pdf', '/pdfs/12-krajiska-prezivjeli.pdf']
+  },
+  {
+    id: '17-srpska-brigada',
+    name: '17. srpska brigada',
+    nameEn: '17th Serbian Brigade',
+    description: 'Formirana 2. juna 1944. u Mehanama kod Kuršumlije. Preživeli i poginuli borci.',
+    image: '/images/17-srpska-brigada.jpg',
+    soldierCount: 989,
+    dataFile: '/17-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/17-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

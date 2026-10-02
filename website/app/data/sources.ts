@@ -665,5 +665,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/12-krajiska-prezivjeli.jpg',
     brigadeName: '12. krajiška brigada',
     description: 'Preživeli borci i rukovodioci brigade: godina i mesto rođenja'
+  },
+  {
+    id: '17-srpska',
+    title: 'Sedamnaesta srpska brigada — spisak boraca',
+    author: 'Predrag Milenković',
+    pdfPath: '/pdfs/17-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/17-srpska.jpg',
+    brigadeName: '17. srpska brigada',
+    description: 'Spisak boraca brigade koji su preživeli rat i spisak poginulih boraca: rođenje, kada su stupili u brigadu, dužnost, gde su i kada pali (str. 317–373 knjige)'
   }
 ]

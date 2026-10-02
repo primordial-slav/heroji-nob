@@ -254,6 +254,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 19. februarja 1943 v Driniću. Padli in preživeli borci in poveljniki.',
   },
+  '17-srpska-brigada': {
+    name: '17. srbska brigada',
+    description:
+      'Ustanovljena 2. junija 1944 v Mehanah pri Kuršumliji. Preživeli in padli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -499,6 +504,11 @@ const mk: Record<string, UnitText> = {
     name: '12-та краишка бригада',
     description:
       'Формирана на 19 февруари 1943 во Дриниќ. Загинати и преживеани борци и старешини.',
+  },
+  '17-srpska-brigada': {
+    name: '17-та српска бригада',
+    description:
+      'Формирана на 2 јуни 1944 во Механе кај Куршумлија. Преживеани и загинати борци.',
   },
 }
 
@@ -747,6 +757,11 @@ const en: Record<string, UnitText> = {
     name: '12th Krajina Brigade',
     description:
       'Formed on 19 February 1943 in Drinić. Partisans and officers who were killed or survived.',
+  },
+  '17-srpska-brigada': {
+    name: '17th Serbian Brigade',
+    description:
+      'Formed on 2 June 1944 at Mehane near Kuršumlija. Partisans who survived or were killed.',
   },
 }
 

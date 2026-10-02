@@ -476,6 +476,9 @@ class Extractor:
             text = re.sub(r'(^|[\s,])r\.\s*(?=\d)', r'\1rođen ', text, count=1)
             # "Poginuo u borbi s Nijemcima za Ston, 17. 10. 1944.": where he fell follows the enemy
             text = re.sub(r'\b([Pp]oginu[ol]a?)\s+u\s+borbi\s+(?:s|sa)\s+\S+(?:\s+i\s+\S+)?\s+(?:za|kod)\s+', r'\1 kod ', text)
+        if code == 55:
+            # 17. srpska: "rođen 1924. u Pečenjevcima, Leskovac, Srbija, Srbin, ..."
+            text = re.sub(r',\s*Srbija\b', '', text)
         if code == 52:
             # 18. hrvatska: "rođen 1920. godine u Gradačcu, SRBiH, Musliman. zemljoradnik": the republic is no place
             text = re.sub(r',?\s*\b(?:SR\s*-?\s*BiH|SRBiH|BiH|SR Srbija|SR Hrvatska|SR Crna Gora|SR Slovenija|SAP Vojvodina)\b', '',

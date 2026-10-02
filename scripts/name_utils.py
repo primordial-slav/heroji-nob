@@ -513,6 +513,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'title',
     },
+    55: {
+        'name': '17. Srpska',
+        'json_file': '17-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ЦВЕТАНОВИЋ Јована Светислав, рођен 1924. у Печењевцима, Лесковац, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

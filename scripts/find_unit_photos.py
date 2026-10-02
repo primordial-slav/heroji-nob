@@ -227,6 +227,9 @@ UNITS = {
         caption=nth(12, r"kraji[sš]k"), photo=None,
         book=dict(pdf="00001/168_1.pdf", page=24, xref=151, caption="Grupa boraca 3. bataljona, maja 1944. u okol. Prnjavora"),
         note="Nothing in the gallery is tagged with the brigade (its tag is spelled 12-krajiska-udarna-brgada); the photo is from its own book."),
+    "17-srpska-brigada": dict(
+        name="17. srpska brigada", tags=["17-srpska-brigada"],
+        caption=nth(17, r"srpsk\w+\s+(?:nou\s+|udarn\w+\s+)?brigad"), photo=4976),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

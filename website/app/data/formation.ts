@@ -169,6 +169,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-02-19', place: 'Drinić', source: 'https://znaci.org/00001/168_2.pdf',
     note: 'Knjiga brigade, str. 36-37: formirana između 12. i 24. februara 1943. u Driniću; 19. februara formirani Štab, dva bataljona i Prateći vod (kao 12. krajiška polubrigada).',
   },
+  '17-srpska-brigada': {
+    date: '1944-06-02', place: 'Mehane kod Kuršumlije', source: 'https://znaci.org/odrednica.php?slug=17-srpska-brigada',
+    note: 'Hronologija na znaci.org: 2. 6. 1944. kod s. Mejane (blizu Kuršumlije) GŠ za Srbiju formirao 17. srpsku NO brigadu; knjiga brigade beleži proslavu godišnjice u s. Mehane 2. 6. 1947.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
