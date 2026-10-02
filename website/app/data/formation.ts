@@ -305,6 +305,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05-08', place: 'Jabukovik (Crna Trava)', source: 'https://znaci.org/00003/381.pdf',
     note: 'Timotijević, Deseta srpska NOU brigada (pogl. Formiranje brigade): „Istog dana, 8. maja 1944, sekretar OK KPJ za Vranje Slavoljub Petrović-Đera, u ime GŠ NOV i PO za Srbiju, pročitao je naredbu u Jabukoviku za formiranje brigade.“',
   },
+  '23-srpska-brigada': {
+    date: '1944-09-02', place: 'Šuman Topla (Knjaževac)', source: 'https://znaci.org/00001/214_15.pdf',
+    note: 'Mirčetić, 23. srpska brigada, Prilog 1 (str. 337): sastav štabova „od osnivanja brigade - 2. septembra 1944. - do kraja rata“; štab brigade bio je u selu Šuman Topla kod Knjaževca, gde je 5. septembra postrojen njen Prvi bataljon (pogl. Formiranje 23. srpske NO brigade).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

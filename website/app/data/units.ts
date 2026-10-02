@@ -889,6 +889,16 @@ export const units: Unit[] = [
     soldierCount: 376,
     dataFile: '/10-srpska-soldiers.json',
     pdfFiles: ['/pdfs/10-srpska.pdf']
+  },
+  {
+    id: '23-srpska-brigada',
+    name: '23. srpska brigada',
+    nameEn: '23rd Serbian Brigade',
+    description: 'Formirana 2. septembra 1944. u Šuman Topli kod Knjaževca. Poginuli i umrli borci i rukovodioci brigade.',
+    image: '/images/23-srpska-brigada.jpg',
+    soldierCount: 467,
+    dataFile: '/23-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/23-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

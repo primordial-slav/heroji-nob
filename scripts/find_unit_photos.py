@@ -393,6 +393,13 @@ UNITS = {
         book=dict(pdf="00003/381.pdf", page=551, xref=2295,
                   caption="Piroćanci iz sela Gnjilana, borci druge čete prvog bataljona sa komandirom Gomom Živkovićem (stoji prvi sdesna)."),
         note="The gallery's one photo (14694) shows the staff; this group of the brigade's 1st battalion is from its own book."),
+    "23-srpska-brigada": dict(
+        name="23. srpska brigada", tags=[],
+        caption=r"(?<!\d)(?:23\.|XXIII\.?|dvadeset\w*\s+treć\w*)\s+srpsk\w*\s+(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00001/214_15.pdf", page=60, xref=265,
+                  caption="Selo Vasilj, Knjaževac, krajem septembra 1944. Borci i rukovodioci 1. bataljona."),
+        descreen=1.6,
+        note="Nothing in the gallery names the brigade; the photo is from its own book (caption shortened: the book then names a medic)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

@@ -819,6 +819,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    89: {
+        'name': '23. Srpska',
+        'json_file': '23-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АЛЕКСИЋ Марка СВЕТИСЛАВ, 1922, Секурић, Рековац, земљорадник. ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

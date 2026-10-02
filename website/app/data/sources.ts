@@ -998,5 +998,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/10-srpska.jpg',
     brigadeName: '10. srpska brigada',
     description: 'Spisak poginulih boraca i rukovodilaca: rođenje, kada su stupili u brigadu, dužnost, gde su pali i sahranjeni (str. 488–541)'
+  },
+  {
+    id: '23-srpska',
+    title: '23. srpska brigada — pregled poginulih i umrlih',
+    author: 'Dragoljub Ž. Mirčetić Duško',
+    pdfPath: '/pdfs/23-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/23-srpska.jpg',
+    brigadeName: '23. srpska brigada',
+    description: 'Pregled poginulih i umrlih boraca i rukovodilaca: godina i mesto rođenja, zanimanje, kada su stupili u NOVJ, jedinica, gde su pali i sahranjeni (str. 352–388)'
   }
 ]

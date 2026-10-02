@@ -424,6 +424,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 8. maja 1944 v Jabukoviku pri Crni Travi. Padli, umrli in pogrešani borci in starešine brigade.',
   },
+  '23-srpska-brigada': {
+    name: '23. srbska brigada',
+    description:
+      'Ustanovljena 2. septembra 1944 v Šuman Topli pri Knjaževcu. Padli in umrli borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -839,6 +844,11 @@ const mk: Record<string, UnitText> = {
     name: '10-та српска бригада',
     description:
       'Формирана на 8 мај 1944 во Јабуковик кај Црна Трава. Загинатите, умрените и исчезнатите борци и раководители на бригадата.',
+  },
+  '23-srpska-brigada': {
+    name: '23-та српска бригада',
+    description:
+      'Формирана на 2 септември 1944 во Шуман Топла кај Књажевац. Загинатите и умрените борци и раководители на бригадата.',
   },
 }
 
@@ -1257,6 +1267,11 @@ const en: Record<string, UnitText> = {
     name: '10th Serbian Brigade',
     description:
       'Formed on 8 May 1944 at Jabukovik near Crna Trava. The brigade’s soldiers and officers who were killed, died or went missing.',
+  },
+  '23-srpska-brigada': {
+    name: '23rd Serbian Brigade',
+    description:
+      'Formed on 2 September 1944 at Šuman Topla near Knjaževac. The brigade’s soldiers and officers who were killed or died.',
   },
 }
 

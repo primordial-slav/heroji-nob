@@ -192,6 +192,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       '„Nezaboravnik“, seznam padlih borcev brigade: rojstvo, datum in kraj smrti (str. 265–297)',
     '10-srpska':
       'Seznam padlih borcev in starešin: rojstvo, vstop v brigado, dolžnost, kje so padli in pokopani (str. 488–541)',
+    '23-srpska':
+      'Pregled padlih in umrlih borcev in starešin: leto in kraj rojstva, poklic, vstop v NOVJ, enota, kje so padli in pokopani (str. 352–388)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -373,6 +375,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       '„Незаборавник“, список на загинатите борци на бригадата: раѓање, датум и место на загинување (стр. 265–297)',
     '10-srpska':
       'Список на загинатите борци и раководители: раѓање, стапување во бригадата, должност, каде загинале и се погребани (стр. 488–541)',
+    '23-srpska':
+      'Преглед на загинатите и умрените борци и раководители: година и место на раѓање, занимање, стапување во НОВЈ, единица, каде загинале и се погребани (стр. 352–388)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -553,6 +557,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       '“Nezaboravnik”, the brigade’s fallen: birth, date and place of death (pp. 265–297)',
     '10-srpska':
       'The fallen soldiers and officers: birth, when they joined, duty, where they fell and were buried (pp. 488–541)',
+    '23-srpska':
+      'The soldiers and officers who were killed or died: year and place of birth, trade, when they joined, their unit, where they fell and were buried (pp. 352–388)',
   },
 }
 
