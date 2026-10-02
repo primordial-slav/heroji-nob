@@ -949,6 +949,16 @@ export const units: Unit[] = [
     soldierCount: 842,
     dataFile: '/karlovacka-soldiers.json',
     pdfFiles: ['/pdfs/karlovacka.pdf']
+  },
+  {
+    id: '14-primorsko-goranska',
+    name: '14. primorsko-goranska brigada',
+    nameEn: '14th Primorje–Gorski Kotar Brigade',
+    description: 'Formirana 26. novembra 1942. u Drežnici. Poginuli borci brigade.',
+    image: '/images/14-primorsko-goranska.jpg',
+    soldierCount: 679,
+    dataFile: '/14-primorsko-goranska-soldiers.json',
+    pdfFiles: ['/pdfs/14-primorsko-goranska.pdf']
   }
   // Add more units here as you get more data
 ]

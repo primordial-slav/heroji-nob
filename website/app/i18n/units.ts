@@ -454,6 +454,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 5. marca 1944 v Hrašću pri Ozlju. Borci brigade na dan ustanovitve in padli.',
   },
+  '14-primorsko-goranska': {
+    name: '14. primorsko-goranska brigada',
+    description:
+      'Ustanovljena 26. novembra 1942 v Drežnici. Padli borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -899,6 +904,11 @@ const mk: Record<string, UnitText> = {
     name: 'Карловачка ударна бригада',
     description:
       'Формирана на 5 март 1944 во Храшќе кај Озаљ. Борците на бригадата на денот на формирањето и загинатите.',
+  },
+  '14-primorsko-goranska': {
+    name: '14-та приморско-горанска бригада',
+    description:
+      'Формирана на 26 ноември 1942 во Дрежница. Загинатите борци на бригадата.',
   },
 }
 
@@ -1347,6 +1357,11 @@ const en: Record<string, UnitText> = {
     name: 'Karlovac Assault Brigade',
     description:
       'Formed on 5 March 1944 at Hrašće near Ozalj. Its men on the day it was formed, and its fallen.',
+  },
+  '14-primorsko-goranska': {
+    name: '14th Primorje–Gorski Kotar Brigade',
+    description:
+      'Formed on 26 November 1942 at Drežnica. The brigade’s fallen.',
   },
 }
 

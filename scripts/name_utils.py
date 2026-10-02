@@ -873,6 +873,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    95: {
+        'name': '14. Primorsko-goranska',
+        'json_file': '14-primorsko-goranska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "Barac Andrije Dragutin, rođen 1. I. 1910. u s. Grižane — Crikvenica, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

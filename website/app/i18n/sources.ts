@@ -204,6 +204,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci odreda na dan ustanovitve, seznam padlih in umrlih borcev in starešin ter narodni heroji, ki so se borili v odredu, s fotografijami (str. 302–344)',
     'karlovacka':
       'Seznam borcev in starešin brigade na dan ustanovitve v Hrašću 5. marca 1944 in seznam padlih borcev in starešin (str. 379–414)',
+    '14-primorsko-goranska':
+      'Seznam padlih borcev brigade z rojstvom, dolžnostjo in krajem smrti (str. 227–264)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -397,6 +399,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борците на одредот на денот на формирањето, списокот на загинатите и умрените борци и раководители и народните херои што се бореле во одредот, со фотографии (стр. 302–344)',
     'karlovacka':
       'Список на борците и раководителите на бригадата на денот на формирањето во Храшќе на 5 март 1944 и список на загинатите борци и раководители (стр. 379–414)',
+    '14-primorsko-goranska':
+      'Список на загинатите борци на бригадата, со раѓањето, должноста и местото на загинувањето (стр. 227–264)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -589,6 +593,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The detachment’s men on the day it was formed, its fallen and dead soldiers and officers, and the People’s Heroes who fought in it, with their photographs (pp. 302–344)',
     'karlovacka':
       'The brigade’s soldiers and officers on the day it was formed at Hrašće, 5 March 1944, and its fallen soldiers and officers (pp. 379–414)',
+    '14-primorsko-goranska':
+      'The brigade’s fallen, with their birth, duty and where they fell (pp. 227–264)',
   },
 }
 

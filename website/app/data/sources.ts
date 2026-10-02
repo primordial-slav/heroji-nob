@@ -1052,5 +1052,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/karlovacka.jpg',
     brigadeName: 'Karlovačka udarna brigada',
     description: 'Popis boraca i rukovodilaca brigade na dan formiranja u Hrašću 5. marta 1944. i popis poginulih boraca i rukovodilaca (str. 379–414)'
+  },
+  {
+    id: '14-primorsko-goranska',
+    title: '14. primorsko-goranska brigada — spisak poginulih boraca',
+    author: 'Vladimir-Dušan Matetić',
+    pdfPath: '/pdfs/14-primorsko-goranska.pdf',
+    thumbnail: '/images/pdf-thumbs/14-primorsko-goranska.jpg',
+    brigadeName: '14. primorsko-goranska brigada',
+    description: 'Spisak poginulih boraca brigade, s rođenjem, dužnošću i mestom pogibije (str. 227–264)'
   }
 ]

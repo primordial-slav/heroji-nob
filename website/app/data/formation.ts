@@ -329,6 +329,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-03-05', place: 'Hrašće (Ozalj)', source: 'https://znaci.org/00003/546.pdf',
     note: 'Lulik, Zatezalo, Karlovačka udarna brigada (str. 82-84): „Ujutro, 5. ožujka 1944. godine … postrojila se čitava brigada na malom platou usred sela Hrašće“; „Na dan formiranja Karlovačka brigada imala je 640 boraca“.',
   },
+  '14-primorsko-goranska': {
+    date: '1942-11-26', place: 'Drežnica', source: 'https://znaci.org/00003/544.pdf',
+    note: 'Matetić, 14. primorsko-goranska brigada (str. 33): „Dvadeset šestog novembra 1942. nova 14. primorsko-goranska brigada sa tri bataljona bila je postrojena u centru Drežnice“.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
