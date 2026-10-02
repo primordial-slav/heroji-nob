@@ -969,6 +969,16 @@ export const units: Unit[] = [
     soldierCount: 1005,
     dataFile: '/22-divizija-soldiers.json',
     pdfFiles: ['/pdfs/22-divizija.pdf']
+  },
+  {
+    id: '34-divizija',
+    name: '34. divizija',
+    nameEn: '34th Division',
+    description: 'Formirana 30. januara 1944. na Žumberku i u Pokuplju. Poginuli borci i rukovodioci divizije i njenih brigada.',
+    image: '/images/34-divizija.jpg',
+    soldierCount: 1415,
+    dataFile: '/34-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/34-divizija.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -891,6 +891,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    97: {
+        'name': '34. divizija',
+        'json_file': '34-divizija-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # a table: "1. ANTOLIĆ Milan | borac | KB | 1920. | Žabljak, Barilović | 1944. | D.kupčina | 06.09.44."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
 }
 
 

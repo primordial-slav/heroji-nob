@@ -1070,5 +1070,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/22-divizija.jpg',
     brigadeName: '22. divizija',
     description: 'Spisak poginulih boraca i rukovodilaca divizije, po brigadama: mesto rođenja, dan i mesto pogibije (str. 445–476)'
+  },
+  {
+    id: '34-divizija',
+    title: '34. udarna divizija — pregled poginulih boraca i rukovodilaca',
+    author: 'Vladimir Hlaić',
+    pdfPath: '/pdfs/34-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/34-divizija.jpg',
+    brigadeName: '34. divizija',
+    description: 'Pregled poginulih boraca i rukovodilaca divizije: čin, brigada, rođenje, stupanje u NOB, mesto i dan pogibije (str. 401–432)'
   }
 ]

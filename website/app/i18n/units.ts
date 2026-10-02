@@ -464,6 +464,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena maja 1944 na desnem bregu Južne Morave. Padli borci 8., 10. in 12. srbske brigade.',
   },
+  '34-divizija': {
+    name: '34. divizija',
+    description:
+      'Ustanovljena 30. januarja 1944 na Žumberku in v Pokuplju. Padli borci in starešine divizije in njenih brigad.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -919,6 +924,11 @@ const mk: Record<string, UnitText> = {
     name: '22-ра дивизија',
     description:
       'Формирана во мај 1944 на десниот брег на Јужна Морава. Загинатите борци на 8., 10. и 12. српска бригада.',
+  },
+  '34-divizija': {
+    name: '34-та дивизија',
+    description:
+      'Формирана на 30 јануари 1944 на Жумберак и во Покупље. Загинатите борци и раководители на дивизијата и нејзините бригади.',
   },
 }
 
@@ -1377,6 +1387,11 @@ const en: Record<string, UnitText> = {
     name: '22nd Division',
     description:
       'Formed in May 1944 on the right bank of the South Morava. The fallen of its 8th, 10th and 12th Serbian Brigades.',
+  },
+  '34-divizija': {
+    name: '34th Division',
+    description:
+      'Formed on 30 January 1944 in Žumberak and Pokuplje. The fallen soldiers and officers of the division and its brigades.',
   },
 }
 

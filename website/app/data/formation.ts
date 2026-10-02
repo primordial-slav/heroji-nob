@@ -337,6 +337,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05', place: 'desna obala Južne Morave', source: 'https://znaci.org/00001/235_3.pdf',
     note: 'Nikolić, 22. divizija (Formiranje 22. srpske divizije NOVJ, str. 101-102): u maju 1944. doneta je odluka „da se u južnoj Srbiji formiraju dve divizije: Prva srpska (21. NOVJ) na levoj obali Južne Morave, i Druga srpska (22. NOVJ) na desnoj obali“; naredbe je potpisao Svetozar Vukmanović Tempo, a 27. maja štab divizije se menja.',
   },
+  '34-divizija': {
+    date: '1944-01-30', place: 'Žumberak', source: 'https://znaci.org/00003/641.pdf',
+    note: 'Hlaić, 34. udarna divizija (str. 29): „stigla je 30. siječnja 1944. naredba Vrhovnog štaba NOV i POJ … da se na području Druge operativne zone Žumberak, Pokuplje, Turopolje i Posavina formira 34. hrvatska NO divizija 4. korpusa NOVJ. Naredba je odmah provedena u život.“',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

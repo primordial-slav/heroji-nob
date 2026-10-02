@@ -111,6 +111,7 @@ BRIGADE_CODES = {
     94: 'Karlovačka udarna',
     95: '14. Primorsko-goranska',
     96: '22. divizija',
+    97: '34. divizija',
     # Add new brigades here with next available code
 }
 
