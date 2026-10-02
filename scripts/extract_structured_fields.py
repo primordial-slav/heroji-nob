@@ -189,6 +189,9 @@ class Extractor:
     def life(self, text: str, code: int) -> dict:
         out = {}
         t = text
+        if code == 51:
+            # 3. makedonska: where he came from, then the year: "iz s. Nikuline, rođen 1922. god., poginuo ..."
+            t = re.sub(r',?\s*\brođen[a]?\s+[^,]*', '', t)
         # a function printed before "rođen" (Treća proleterska, 5. kozaračka): "desetar 3. desetine, rođen 1920, ..."
         m = re.search(r'\b[Rr]ođen[a]?\b', t)
         head = t[:m.start()] if m else ''
@@ -221,7 +224,7 @@ class Extractor:
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
         # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
-        from_place = code in (2, 31, 50) and re.match(rf'^iz\s+[{U}]', t) is not None
+        from_place = code in (2, 31, 50, 51) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
             t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
@@ -455,6 +458,10 @@ class Extractor:
             text = re.sub(r'\bpog\.', 'poginuo', text)                    # 12. dalmatinska's abbreviation
             # its day and month without a year ("poginuo 27. 4. kod Klane"; the parser dated it by the heading)
             text = re.sub(r'\b(poginu[ol]a?|umr[ol]a?)\s+\d{1,2}[.,]\s*\d{1,2}\.(?!\s*19)\s*', r'\1 ', text)
+        if code == 51:
+            # 3. makedonska's dates have Roman months the scan garbled ("16-1U-1945. god."); the parser reads them
+            text = re.sub(r'\s+\S+-\S*-\S*\d\S*(?:\s*god\.)?', '', text)
+            text = re.sub(r'\b[pl]oginuo\s+(?:kod|hod|kd)\s', 'poginuo kod ', text)
         dm = DEATH_RE.search(text)
         life_text = text[:dm.start()] if dm else text
         out = self.life(life_text, code)

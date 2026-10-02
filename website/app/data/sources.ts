@@ -584,5 +584,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/12-dalmatinska.jpg',
     brigadeName: '12. dalmatinska (1. otočka) brigada',
     description: 'Spisak poginulih boraca i rukovodilaca brigade, po borbama, od Sućurja, 22. septembra 1943, do Ilirske Bistrice, 6. maja 1945. (str. 353–366 knjige)'
+  },
+  {
+    id: '3-makedonska',
+    title: 'Treća makedonska brigada — spisak poginulih boraca',
+    author: 'Kiril Mihailovski Grujica',
+    pdfPath: '/pdfs/3-makedonska.pdf',
+    thumbnail: '/images/pdf-thumbs/3-makedonska.jpg',
+    brigadeName: '3. makedonska brigada',
+    description: 'Spisak poginulih boraca brigade: odakle su, godina rođenja, gde su i kada pali (str. 359–368 knjige)'
   }
 ]

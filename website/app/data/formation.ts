@@ -153,6 +153,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-09-15', place: 'Brač, Hvar, Vis i Šolta', source: 'https://znaci.org/00001/80_7.pdf',
     note: 'Knjiga brigade (Anić) računa brigadu od 15. rujna 1943. znaci.org odrednica: 21. 9. 1943, na Braču, Hvaru, Visu i Šolti.',
   },
+  '3-makedonska-brigada': {
+    date: '1944-02-26', place: 'Žegljane kod Kumanova', source: 'https://znaci.org/00001/71_2.pdf',
+    note: 'Knjiga brigade (Mihailovski), str. 24: formirana u školskom dvorištu sela Žegnjana (Žegljane), 26. februara 1944.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

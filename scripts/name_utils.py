@@ -478,6 +478,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    51: {
+        'name': '3. Makedonska',
+        'json_file': '3-makedonska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "1. Арсов Димитриев Славко из с. Никулине, рођен 1922. год., погинуо ..."
+        'has_fathers_name': True,     # a possessive (Dimitriev, Stojanov); the parser sets the nominative
+        'fathers_name_form': 'possessive',
+        'original_casing': 'title',
+    },
 }
 
 

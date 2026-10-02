@@ -509,6 +509,16 @@ export const units: Unit[] = [
     soldierCount: 361,
     dataFile: '/12-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/12-dalmatinska.pdf']
+  },
+  {
+    id: '3-makedonska-brigada',
+    name: '3. makedonska brigada',
+    nameEn: '3rd Macedonian Brigade',
+    description: 'Formirana 26. februara 1944. u selu Žegljane kod Kumanova. Poginuli borci.',
+    image: '/images/3-makedonska-brigada.jpg',
+    soldierCount: 232,
+    dataFile: '/3-makedonska-soldiers.json',
+    pdfFiles: ['/pdfs/3-makedonska.pdf']
   }
   // Add more units here as you get more data
 ]

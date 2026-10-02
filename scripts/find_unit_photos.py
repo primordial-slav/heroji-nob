@@ -182,9 +182,6 @@ UNITS = {
         crop=(0.0, 0.0, 0.94, 0.9),
         note="The gallery has only the brigade's staff (11254). The photo in the book is a scan of a page; the crop drops its page number and gutter."),
     # --- lined up (PDF downloaded, not parsed yet) ---
-    "12-dalmatinska-brigada": dict(
-        name="12. dalmatinska (1. otočka) brigada", tags=["12-dalmatinska-udarna-brigada-prva-otocka"],
-        caption=nth(12, r"dalmatinsk") + "|" + nth(1, r"oto[cč]k"), photo=5084),
     "14-srpska-brigada": dict(
         name="14. srpska brigada", tags=["14-srpska-udarna-brigada"],
         caption=nth(14, r"srpsk\w+\s+(?:nou\s+|udarn\w+\s+)?brigad"), photo=None,

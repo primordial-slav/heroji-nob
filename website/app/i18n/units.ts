@@ -234,6 +234,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 15. septembra 1943 na otokih Brač, Hvar, Vis in Šolta. Padli borci in poveljniki, po bojih, v katerih so padli.',
   },
+  '3-makedonska-brigada': {
+    name: '3. makedonska brigada',
+    description:
+      'Ustanovljena 26. februarja 1944 v vasi Žegljane pri Kumanovu. Padli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -459,6 +464,11 @@ const mk: Record<string, UnitText> = {
     name: '12-та далматинска (1-ва островска) бригада',
     description:
       'Формирана на 15 септември 1943 на островите Брач, Хвар, Вис и Шолта. Загинати борци и старешини, по борбите во кои загинале.',
+  },
+  '3-makedonska-brigada': {
+    name: '3-та македонска бригада',
+    description:
+      'Формирана на 26 февруари 1944 во селото Жеглане кај Куманово. Загинати борци.',
   },
 }
 
@@ -687,6 +697,11 @@ const en: Record<string, UnitText> = {
     name: '12th Dalmatian (1st Island) Brigade',
     description:
       'Formed on 15 September 1943 on the islands of Brač, Hvar, Vis and Šolta. Partisans and officers who were killed, by the battle in which they fell.',
+  },
+  '3-makedonska-brigada': {
+    name: '3rd Macedonian Brigade',
+    description:
+      'Formed on 26 February 1944 in the village of Žegljane near Kumanovo. The fallen.',
   },
 }
 
