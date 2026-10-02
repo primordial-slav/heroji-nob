@@ -279,6 +279,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 4. februarja 1944 pri Gradačcu iz Posavskega in Trebavskega odreda. Borci odreda.',
   },
+  '8-kordunaska-divizija': {
+    name: '8. kordunska divizija',
+    description:
+      'Ustanovljena 22. novembra 1942 v Crevarski Strani na Petrovi gori. Padli borci divizije.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -549,6 +554,11 @@ const mk: Record<string, UnitText> = {
     name: 'Посавско-требавски партизански одред',
     description:
       'Формиран на 4 февруари 1944 кај Градачац од Посавскиот и Требавскиот одред. Борци на одредот.',
+  },
+  '8-kordunaska-divizija': {
+    name: '8-ма кордунска дивизија',
+    description:
+      'Формирана на 22 ноември 1942 во Цреварска Страна на Петрова гора. Загинати борци на дивизијата.',
   },
 }
 
@@ -822,6 +832,11 @@ const en: Record<string, UnitText> = {
     name: 'Posavina-Trebava Partisan Detachment',
     description:
       'Formed on 4 February 1944 near Gradačac from the Posavina and Trebava detachments. Members of the detachment.',
+  },
+  '8-kordunaska-divizija': {
+    name: '8th Kordun Division',
+    description:
+      'Formed on 22 November 1942 at Crevarska Strana on Petrova Gora. Partisans of the division who were killed.',
   },
 }
 

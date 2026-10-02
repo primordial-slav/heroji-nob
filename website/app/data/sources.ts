@@ -719,5 +719,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/posavsko-trebavski-odred.jpg',
     brigadeName: 'Posavsko-trebavski partizanski odred',
     description: 'Spisak boraca odreda po opštinama iz kojih su došli (str. 313 i dalje)'
+  },
+  {
+    id: '8-kordunaska-divizija',
+    title: 'Osma kordunaška udarna divizija — popis palih boraca',
+    author: 'Historijski arhiv u Karlovcu (Zbornik, knj. 9)',
+    pdfPath: '/pdfs/8-kordunaska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/8-kordunaska-divizija.jpg',
+    brigadeName: '8. kordunaška divizija',
+    description: 'Popis palih boraca Osme divizije, po prezimenu, s brigadom u kojoj su bili (str. 806 i dalje)'
   }
 ]

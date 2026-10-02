@@ -599,6 +599,16 @@ export const units: Unit[] = [
     soldierCount: 1969,
     dataFile: '/posavsko-trebavski-odred-soldiers.json',
     pdfFiles: ['/pdfs/posavsko-trebavski-odred.pdf']
+  },
+  {
+    id: '8-kordunaska-divizija',
+    name: '8. kordunaška divizija',
+    nameEn: '8th Kordun Division',
+    description: 'Formirana 22. novembra 1942. u Crevarskoj Strani na Petrovoj gori. Poginuli borci divizije.',
+    image: '/images/8-kordunaska-divizija.jpg',
+    soldierCount: 2674,
+    dataFile: '/8-kordunaska-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/8-kordunaska-divizija.pdf']
   }
   // Add more units here as you get more data
 ]

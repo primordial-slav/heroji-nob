@@ -189,6 +189,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-02-04', place: 'kod Gradačca', source: 'https://znaci.org/00001/302.pdf',
     note: 'Knjiga odreda (Tihić): spajanjem bataljona Posavskog (formiran 17. septembra 1943. u Obudovcu) i Trebavskog NOP odreda (20. septembra 1943. u Skugriću).',
   },
+  '8-kordunaska-divizija': {
+    date: '1942-11-22', place: 'Crevarska Strana na Petrovoj gori', source: 'https://znaci.org/00003/571.pdf',
+    note: 'Zbornik HAK knj. 9: Naredba br. 95 Vrhovnog štaba od 22. novembra 1942; štab konstituisan u Suvoj Perni, divizija postrojena u Crevarskoj Strani.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

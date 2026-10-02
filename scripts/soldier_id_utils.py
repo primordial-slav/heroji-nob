@@ -74,6 +74,7 @@ BRIGADE_CODES = {
     57: '3. Vojvođanska',
     58: 'Kalnički odred',
     59: 'Posavsko-trebavski odred',
+    60: '8. Kordunaška divizija',
     # Add new brigades here with next available code
 }
 

@@ -130,6 +130,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev Kalniškega partizanskega odreda, padlih in preživelih (str. 311 in naprej)',
     'posavsko-trebavski-odred':
       'Seznam borcev odreda po občinah, iz katerih so prišli (str. 313 in naprej)',
+    '8-kordunaska-divizija':
+      'Seznam padlih borcev Osme divizije po priimkih, z brigado, v kateri so bili (str. 806 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -249,6 +251,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на Калничкиот партизански одред, загинати и преживеани (стр. 311 и натаму)',
     'posavsko-trebavski-odred':
       'Список на борците на одредот по општините од кои дошле (стр. 313 и натаму)',
+    '8-kordunaska-divizija':
+      'Список на загинатите борци на Осмата дивизија, по презиме, со бригадата во која биле (стр. 806 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -367,6 +371,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the members of the Kalnik Partisan Detachment, killed and surviving (pp. 311 ff.)',
     'posavsko-trebavski-odred':
       'List of the detachment’s members by the municipality they came from (pp. 313 ff.)',
+    '8-kordunaska-divizija':
+      'List of the Eighth Division’s fallen, by surname, with the brigade each served in (pp. 806 ff.)',
   },
 }
 

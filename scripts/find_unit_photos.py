@@ -246,6 +246,12 @@ UNITS = {
         name="Posavsko-trebavski partizanski odred", tags=[],
         caption=r"posavsko[\s-]*trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred", photo=None,
         note="Nothing in the znaci.org gallery names the odred, and its book (00001/302, re-typeset) prints no photos."),
+    "8-kordunaska-divizija": dict(
+        name="8. kordunaška divizija", tags=[],
+        caption=r"(?:\b8\.|osm\w+)\s+(?:kordunašk\w+\s+)?(?:udarn\w+\s+)?divizij", photo=None,
+        book=dict(pdf="00003/571.pdf", page=250, xref=1127, caption="Plaški, jesen 1944. Jurišni vod 1. brigade 8. divizije."),
+        crop=(0.0, 0.07, 1.0, 1.0),
+        note="Nothing in the gallery is a group of the division's soldiers; the photo is from its own zbornik (the crop drops the torn top edge)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

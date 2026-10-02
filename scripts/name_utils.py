@@ -558,6 +558,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    60: {
+        'name': '8. Kordunaška divizija',
+        'json_file': '8-kordunaska-divizija-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOVIC Jove UROŠ, 1920, Smoljanac, Korenica, stupio u NOV 15. 5. 1942, borac 3. brig. 8. div, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 
