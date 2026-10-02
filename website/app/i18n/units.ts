@@ -319,6 +319,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 7. oktobra 1943 v Brkinih. Padli in drugi borci odreda.',
   },
+  'zapadnodolenjski-odred': {
+    name: 'Zapadnodolenjski odred',
+    description:
+      'Ustanovljen konec junija 1942 na Dolenjskem. Padli in drugi borci odreda.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -629,6 +634,11 @@ const mk: Record<string, UnitText> = {
     name: 'Истарски одред',
     description:
       'Формиран на 7 октомври 1943 во Бркини. Загинати и другите борци на одредот.',
+  },
+  'zapadnodolenjski-odred': {
+    name: 'Западнодолењски одред',
+    description:
+      'Формиран кон крајот на јуни 1942 во Долењско. Загинати и другите борци на одредот.',
   },
 }
 
@@ -942,6 +952,11 @@ const en: Record<string, UnitText> = {
     name: 'Istrian Detachment',
     description:
       'Formed on 7 October 1943 in the Brkini hills. Partisans who were killed, and the detachment’s other members.',
+  },
+  'zapadnodolenjski-odred': {
+    name: 'West Lower Carniola Detachment',
+    description:
+      'Formed at the end of June 1942 in Lower Carniola. Partisans who were killed, and the detachment’s other members.',
   },
 }
 

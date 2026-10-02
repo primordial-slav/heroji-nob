@@ -114,6 +114,7 @@ TWO_COLUMN = {
 MULTI_COLUMN = {
     '32-divizija.pdf': 4,           # a roster, names only
     'gradnikova.pdf': 3,            # Gradnikova: the fallen and the others, three columns
+    'zapadnodolenjski-odred.pdf': 3,  # Zapadnodolenjski odred: roster and fallen, three columns
 }
 
 

@@ -134,6 +134,9 @@ def fix_ocr(t: str) -> str:
     t = re.sub(r'(^|,\s)([šžčć])', lambda m: m.group(1) + m.group(2).upper(), t)   # "žužek", ", črneča vas"
     t = re.sub(rf'(?<=[{L}])([ČŠŽ])', lambda m: m.group(1).lower(), t)      # "KarlovŠek"
     t = t.replace('đ', 'd')                                                  # "Lađo", "Zđenka": Slovene has no đ
+    t = t.replace('\\j', 'lj').replace('^j', 'aj')                             # "Terez^a" = Terezija, "Pice\\j" = Picelj, "M^jer" = Majer
+    t = re.sub(r'\^(?=[aeiou])', 'ij', t)                                     # "Terez^a" = Terezija
+    t = re.sub(r'(?<=[a-zčšž])\^(?=[a-zčšž])', 'a', t).replace('^', '')         # "Mil^n" = Milan; a stray ^ goes
     t = re.sub(r'\u00ad\s*', '', t)                                          # a soft hyphen at a line break
     t = re.sub(r',?\s+1(19\d\d)\s*$', r' † \1', t)                         # "Mokronog, 11967"
     t = re.sub(r'\s+[ft]$', ' †', t)                                     # "Novo mesto f": died after the war
@@ -147,7 +150,7 @@ def fix_ocr(t: str) -> str:
 # The scans' misreadings in given names: "Karei" = Karel, "Jemej" = Jernej, "Vmko" = Vinko, "Fnanc" = Franc,
 # "MUko" = Milko, "Mlha" = Miha, "Süvo" = Silvo, "Jakiob" = Jakob, "Andrei" = Andrej
 OCR_PAIRS = [('ei', 'el'), ('ei', 'ej'), ('m', 'rn'), ('rn', 'm'), ('m', 'in'), ('n', 'r'), ('U', 'il'), ('ü', 'il'),
-             ('Ml', 'Mi'), ('l', 'i'), ('i', 'l'), ('io', 'o'), ('fe', 'e'), ('e', 'c'), ('c', 'e')]
+             ('Ml', 'Mi'), ('l', 'i'), ('i', 'l'), ('io', 'o'), ('fe', 'e'), ('y', 'ij')]
 
 
 def read_given(given: str) -> str:
@@ -238,7 +241,7 @@ def parse_fallen(text: str) -> dict:
     rest = rest.strip()
     rec = _record(last, given, '', '; '.join(notes + ([rest] if rest else [])))
     yrs = re.search(r'(1[89]\d\d)?\s*[—–-]+\s*(19\d\d)\s*$', rest)
-    place = rest[:yrs.start()].strip(' ,') if yrs else ''
+    place = re.sub(r'(?<=\w{4})\.$', '', rest[:yrs.start()].strip(' ,')) if yrs else ''   # "Velike Češnjice."; "na Dol." keeps its stop
     if yrs and yrs.group(1):
         rec['birth_year'] = yrs.group(1)
     rec['death_type'] = 'poginuo'

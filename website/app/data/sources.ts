@@ -791,5 +791,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/istrski-odred.jpg',
     brigadeName: 'Istarski odred',
     description: 'Spisak boraca odreda (str. 827 i dalje), bez poginulih, i spisak poginulih s kratkim podacima (str. 849 i dalje)'
+  },
+  {
+    id: 'zapadnodolenjski-odred',
+    title: 'Zapadnodolenjski odred — seznam odredovcev, padli',
+    author: 'Velimir Kraševec',
+    pdfPath: '/pdfs/zapadnodolenjski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/zapadnodolenjski-odred.jpg',
+    brigadeName: 'Zapadnodolenjski odred',
+    description: 'Spisak boraca odreda (str. 333 i dalje) i spisak njegovih poginulih (str. 340 i dalje)'
   }
 ]

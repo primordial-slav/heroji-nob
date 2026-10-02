@@ -679,6 +679,16 @@ export const units: Unit[] = [
     soldierCount: 1280,
     dataFile: '/istrski-odred-soldiers.json',
     pdfFiles: ['/pdfs/istrski-odred.pdf']
+  },
+  {
+    id: 'zapadnodolenjski-odred',
+    name: 'Zapadnodolenjski odred',
+    nameEn: 'West Lower Carniola Detachment',
+    description: 'Formiran krajem juna 1942. na Dolenjskom. Poginuli i ostali borci odreda.',
+    image: '/images/zapadnodolenjski-odred.jpg',
+    soldierCount: 831,
+    dataFile: '/zapadnodolenjski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/zapadnodolenjski-odred.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -221,6 +221,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-07', place: 'Brkini', source: 'https://znaci.org/00003/811.pdf',
     note: 'Knjiga odreda (Zadnik, str. 86): štab 14. divizije dao je novoj jedinici ime pri osnivanju 7. oktobra 1943.',
   },
+  'zapadnodolenjski-odred': {
+    date: '1942-06', place: 'Dolenjska', source: 'https://znaci.org/00003/808.pdf',
+    note: 'Knjiga odreda (Kraševec, str. 18): osnovan 24. ili 25. juna 1942, pri preuređenju 3. i stvaranju 5. grupe odreda, uglavnom od boraca rasformiranog Dolenjskog odreda.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

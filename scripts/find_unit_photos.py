@@ -287,6 +287,12 @@ UNITS = {
         caption=r"istrsk\w*\s+odred", photo=None,
         book=dict(pdf="00003/811.pdf", page=215, xref=1791, caption="Tretji bataljon IO po prihodu iz Istre v Brkine marca 1944 pred Bitenčevo hišo na Preložah"),
         note="Nothing in the gallery names the odred; the photo is from its own book (IO = Istrski odred)."),
+    "zapadnodolenjski-odred": dict(
+        name="Zapadnodolenjski odred", tags=[],
+        caption=r"(?:zapadno|zahodno)dolenjsk\w*\s+odred", photo=None,
+        book=dict(pdf="00003/808.pdf", page=153, xref=1017, caption="Skupina borcev Zapadnodolenjskega odreda leta 1942"),
+        crop=(0.04, 0.0, 1.0, 1.0),
+        note="Nothing in the gallery names the odred; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

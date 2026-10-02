@@ -630,6 +630,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    68: {
+        'name': 'Zapadnodolenjski odred',
+        'json_file': 'zapadnodolenjski-odred-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Fabjan Milka-Olga, 1924, Podturn"; the fallen "Ambrož Franc-Ašev, Velike Češnjice. 1906-1943"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

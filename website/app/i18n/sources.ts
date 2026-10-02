@@ -146,6 +146,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda, samo imena, kot so vpisani v ohranjenem arhivu odreda (str. 314 in naprej)',
     'istrski-odred':
       'Seznam borcev odreda (str. 827 in naprej), brez padlih, in seznam padlih s kratkimi podatki (str. 849 in naprej)',
+    'zapadnodolenjski-odred':
+      'Seznam odredovcev (str. 333 in naprej) in seznam padlih (str. 340 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -281,6 +283,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот, само имиња, како што се запишани во зачуваната архива на одредот (стр. 314 и натаму)',
     'istrski-odred':
       'Список на борците на одредот (стр. 827 и натаму), без загинатите, и список на загинатите со кратки податоци (стр. 849 и натаму)',
+    'zapadnodolenjski-odred':
+      'Список на борците на одредот (стр. 333 и натаму) и список на неговите загинати (стр. 340 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -415,6 +419,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members, names only, as the surviving files of the detachment record them (pp. 314 ff.)',
     'istrski-odred':
       'List of the detachment’s members (pp. 827 ff.), without the fallen, and of the fallen with a short account of each (pp. 849 ff.)',
+    'zapadnodolenjski-odred':
+      'List of the detachment’s members (pp. 333 ff.) and of its fallen (pp. 340 ff.)',
   },
 }
 
