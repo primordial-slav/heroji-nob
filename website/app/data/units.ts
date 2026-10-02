@@ -354,11 +354,11 @@ export const units: Unit[] = [
     id: '32-zagorska-divizija',
     name: '32. zagorska divizija',
     nameEn: '32nd Zagorje Division',
-    description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda. U knjizi su samo imena; zvezdica znači da je borac poginuo, crtica da je nestao.',
+    description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda, i borci štaba i brigada divizije, s podacima o svakom.',
     image: '/images/32-zagorska-divizija.jpg',
-    soldierCount: 10041,
+    soldierCount: 17659,
     dataFile: '/32-divizija-soldiers.json',
-    pdfFiles: ['/pdfs/32-divizija.pdf']
+    pdfFiles: ['/pdfs/32-divizija.pdf', '/pdfs/32-divizija-borci.pdf']
   },
   {
     id: '1-dalmatinska-brigada',

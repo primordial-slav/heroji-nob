@@ -197,9 +197,10 @@ class Extractor:
         head = t[:m.start()] if m else ''
         if m:
             t = t[m.start():]
-        elif code in (15, 35):
-            t = ''                                                        # 1. šumadijska always says "Rođen ..."; the
-                                                                          # 32. division's roster has names only
+        elif code == 15:
+            t = ''                                                        # 1. šumadijska always says "Rođen ..."
+        elif code == 35 and ',' not in t:
+            t = ''                                                        # the 32. division's roster: a nickname at most
         elif code == 50:
             # 12. dalmatinska: the duty, then where he came from: "borac 3. č, 2. bat., iz Svirča, Hvar, pog. ..."
             im = re.search(rf'\biz\s+(?=[{U}])', t)
@@ -461,6 +462,9 @@ class Extractor:
         if code == 10:
             # the brigade's roster (zbornik, knj. 3) abbreviates "rođ.", which the OCR also reads "rod."
             text = re.sub(r'^-?ro[dđ]\.,?\s*', 'rođen ', text)
+        if code == 35:
+            # "Borci 32. divizije NOVJ": "r. 1923, s. Kloštar, Ivanić Grad, Hrvat, ..." (the roster has names only)
+            text = re.sub(r'^r\.\s*(?=1[89]\d\d)', 'rođen ', text)
         if code == 51:
             # 3. makedonska's dates have Roman months the scan garbled ("16-1U-1945. god."); the parser reads them
             text = re.sub(r'\s+\S+-\S*-\S*\d\S*(?:\s*god\.)?', '', text)

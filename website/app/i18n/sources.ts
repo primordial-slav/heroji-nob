@@ -106,6 +106,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev, ki so se v brigadi borili od 22. 8. 1942 do 9. 5. 1945, preživelih in padlih: od kod so bili, poklic, kdaj so vstopili v NOB in v brigado, dolžnost, usoda; z dopolnilom in prilogo (str. 579 in naprej)',
     '6-krajiska-prezivjeli':
       'Seznam borcev brigade, ki so vojno preživeli, samo imena, z naknadnim seznamom (str. 747–762 knjige)',
+    '32-divizija-borci':
+      'Borci štaba divizije, spremljevalnih enot, brigad Braća Radić, Matija Gubec, Mihovil Pavlek Miškina in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -201,6 +203,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците што се бореле во бригадата од 22. 8. 1942 до 9. 5. 1945, преживеани и загинати: од каде се, занимање, кога стапиле во НОБ и во бригадата, должност, судбина; со дополнување и прилог (стр. 579 и натаму)',
     '6-krajiska-prezivjeli':
       'Список на борците на бригадата што ја преживеаја војната, само имиња, со дополнителен список (стр. 747–762 од книгата)',
+    '32-divizija-borci':
+      'Борци на штабот на дивизијата, придружните единици, бригадите „Браќа Радиќ“, „Матија Губец“, „Миховил Павлек Мишкина“ и I ударна загорска, и борци со нецелосни податоци: година и место на раѓање, народност, занимање, кога стапиле во НОВ, судбина; борецот е наведен во секоја единица во која се борел (стр. 431–662 од книгата)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -295,6 +299,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Every Partisan who fought in the brigade from 22 August 1942 to 9 May 1945, survivors and the fallen: where they came from, occupation, when they joined the struggle and the brigade, duty and fate; with a supplement and an addendum (pp. 579 ff.)',
     '6-krajiska-prezivjeli':
       'The brigade’s Partisans who survived the war, names only, with a later list (pp. 747–762 of the book)',
+    '32-divizija-borci':
+      'Partisans of the division’s staff, its attached units, the Braća Radić, Matija Gubec, Mihovil Pavlek Miškina and 1st Zagorje Assault brigades, and some with incomplete details: year and place of birth, nationality, occupation, when they joined the army, fate; each is listed under every unit he fought in (pp. 431–662 of the book)',
   },
 }
 
@@ -320,6 +326,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'seznam padlih, ujetih in pogrešanih',
     'spisak poginulih, umrlih i nestalih': 'seznam padlih, umrlih in pogrešanih',
     'spisak boraca': 'seznam borcev',
+    'borci divizije po jedinicama': 'borci divizije po enotah',
     'spisak boraca (zbornik sjećanja, knj. 3)': 'seznam borcev (zbornik spominov, 3. knjiga)',
     'spiskovi poginulih i rukovodilaca': 'seznama padlih in vodstva',
     'ilustrovana monografija (1942—1992)': 'ilustrirana monografija (1942–1992)',
@@ -345,6 +352,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'список на загинатите, заробените и исчезнатите',
     'spisak poginulih, umrlih i nestalih': 'список на загинатите, починатите и исчезнатите',
     'spisak boraca': 'список на борците',
+    'borci divizije po jedinicama': 'борци на дивизијата по единици',
     'spisak boraca (zbornik sjećanja, knj. 3)': 'список на борците (зборник спомени, кн. 3)',
     'spiskovi poginulih i rukovodilaca': 'списоци на загинатите и на раководството',
     'ilustrovana monografija (1942—1992)': 'илустрирана монографија (1942–1992)',
@@ -370,6 +378,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'the killed, captured and missing',
     'spisak poginulih, umrlih i nestalih': 'the killed, dead and missing',
     'spisak boraca': 'roll',
+    'borci divizije po jedinicama': 'the division’s Partisans, by unit',
     'spisak boraca (zbornik sjećanja, knj. 3)': 'roll (memoirs, vol. 3)',
     'spiskovi poginulih i rukovodilaca': 'the fallen and the leaders',
     'ilustrovana monografija (1942—1992)': 'illustrated history (1942–1992)',

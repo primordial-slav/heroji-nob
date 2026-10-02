@@ -415,6 +415,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca 32. divizije i Zapadne grupe odreda (poginuli označeni zvjezdicom, nestali crticom)'
   },
   {
+    id: '32-divizija-borci',
+    title: '32. divizija NOVJ — borci divizije po jedinicama',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/32-divizija-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/32-divizija-borci.jpg',
+    brigadeName: '32. zagorska divizija',
+    description: 'Borci štaba divizije, prištapskih jedinica, brigada Braća Radić, Matija Gubec, Mihovil Pavlek Miškina i I udarne zagorske, i borci s nepotpunim podacima: godina i mesto rođenja, narodnost, zanimanje, kada su stupili u NOV, sudbina; borac je naveden u svakoj jedinici u kojoj se borio (str. 431–662 knjige)'
+  },
+  {
     id: '1-dalmatinska',
     title: 'Prva dalmatinska proleterska brigada — spisak poginulih',
     author: 'Mirko Novović',

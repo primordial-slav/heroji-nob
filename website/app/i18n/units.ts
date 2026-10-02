@@ -158,7 +158,7 @@ const sl: Record<string, UnitText> = {
   '32-zagorska-divizija': {
     name: '32. zagorska divizija',
     description:
-      'Ustanovljena 12. decembra 1943 na Kalniku. Borci divizije in Zahodne skupine odredov. V knjigi so samo imena; zvezdica pomeni, da je borec padel, pomišljaj, da je pogrešan.',
+      'Ustanovljena 12. decembra 1943 na Kalniku. Borci divizije in Zahodne skupine odredov ter borci štaba in brigad divizije, s podatki o vsakem.',
   },
   '1-dalmatinska-brigada': {
     name: '1. dalmatinska proletarska brigada',
@@ -389,7 +389,7 @@ const mk: Record<string, UnitText> = {
   '32-zagorska-divizija': {
     name: '32-ра загорска дивизија',
     description:
-      'Формирана на 12 декември 1943 на Калник. Борци на дивизијата и на Западната група одреди. Во книгата има само имиња; ѕвездичка значи дека борецот загинал, а цртичка дека исчезнал.',
+      'Формирана на 12 декември 1943 на Калник. Борци на дивизијата и на Западната група одреди, и борци на штабот и бригадите на дивизијата, со податоци за секого.',
   },
   '1-dalmatinska-brigada': {
     name: '1-ва далматинска пролетерска бригада',
@@ -622,7 +622,7 @@ const en: Record<string, UnitText> = {
   '32-zagorska-divizija': {
     name: '32nd Zagorje Division',
     description:
-      'Formed on 12 December 1943 on Kalnik. Members of the division and of the Western Group of Detachments. The book gives names only: an asterisk marks those killed, a dash those missing.',
+      'Formed on 12 December 1943 on Kalnik. Members of the division and of the Western Group of Detachments, and of the division’s staff and brigades, with details of each.',
   },
   '1-dalmatinska-brigada': {
     name: '1st Dalmatian Proletarian Brigade',
