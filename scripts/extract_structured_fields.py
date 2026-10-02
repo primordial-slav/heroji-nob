@@ -483,6 +483,10 @@ class Extractor:
             # the fallen: "poginuo 6. maja 1945. god. Perković Han, Maglaj.": the place follows the date
             text = re.sub(r'\b((?:pogin|umr|nesta)\w*\s+(?:\d{1,2}\.\s*\w+\s+)?1[89]\d\d\.?\s*(?:god\.|godine)?)\s+'
                           r'(?=[A-ZČĆŽŠĐ])', r'\1 kod ', text)
+        if code == 57:
+            # 3. vojvođanska: "poginuo 29. 4. 1944. Stupari u istočnoj Bosni": the place follows the date
+            text = re.sub(r'\b((?:pogin|umr|nesta)\w*\s+(?:\d{1,2}\.\s*\d{1,2}\.\s*|\w+\s+)?1[89]\d\d\.?)\s+'
+                          r'(?=[A-ZČĆŽŠĐ])', r'\1 kod ', text)
         if code == 55:
             # 17. srpska: "rođen 1924. u Pečenjevcima, Leskovac, Srbija, Srbin, ..."
             text = re.sub(r',\s*Srbija\b', '', text)

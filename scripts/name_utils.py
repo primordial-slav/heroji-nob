@@ -531,6 +531,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'upper_last',
     },
+    57: {
+        'name': '3. Vojvođanska',
+        'json_file': '3-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ВУЧЕТИЋ ЛАЗА, рођен 1925. у Сремској Митровици, ..., погинуо 29. 4. 1944. ..."
+        'has_fathers_name': True,     # the father's initial, now and then
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_all',
+    },
 }
 
 

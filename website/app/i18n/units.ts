@@ -264,6 +264,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 17. oktobra 1943 na Ceru pri Prnjavorju. Padli, umrli in pogrešani borci ter borci, ki so vojno preživeli.',
   },
+  '3-vojvodjanska-brigada': {
+    name: '3. vojvodinska brigada',
+    description:
+      'Ustanovljena 15. maja 1943 v Sremu. Padli borci in poveljniki, tisti, katerih usoda ni znana, in preživeli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -519,6 +524,11 @@ const mk: Record<string, UnitText> = {
     name: '14-та среднобосанска бригада',
     description:
       'Формирана на 17 октомври 1943 на Цер кај Прњавор. Загинати, починати и исчезнати борци, и борци што ја преживеаја војната.',
+  },
+  '3-vojvodjanska-brigada': {
+    name: '3-та војводинска бригада',
+    description:
+      'Формирана на 15 мај 1943 во Срем. Загинати борци и старешини, оние чија судбина остана неутврдена, и преживеаните.',
   },
 }
 
@@ -777,6 +787,11 @@ const en: Record<string, UnitText> = {
     name: '14th Central Bosnian Brigade',
     description:
       'Formed on 17 October 1943 on Cer near Prnjavor. Partisans who were killed, died or went missing, and those who survived the war.',
+  },
+  '3-vojvodjanska-brigada': {
+    name: '3rd Vojvodina Brigade',
+    description:
+      'Formed on 15 May 1943 in Srem. Partisans and officers who were killed, those whose fate remains unknown, and the survivors.',
   },
 }
 

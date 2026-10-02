@@ -569,6 +569,16 @@ export const units: Unit[] = [
     soldierCount: 2559,
     dataFile: '/14-srednjobosanska-soldiers.json',
     pdfFiles: ['/pdfs/14-srednjobosanska.pdf']
+  },
+  {
+    id: '3-vojvodjanska-brigada',
+    name: '3. vojvođanska brigada',
+    nameEn: '3rd Vojvodina Brigade',
+    description: 'Formirana 15. maja 1943. u Sremu. Poginuli borci i starešine, oni čija je sudbina ostala neutvrđena, i preživeli.',
+    image: '/images/3-vojvodjanska-brigada.jpg',
+    soldierCount: 4092,
+    dataFile: '/3-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/3-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]

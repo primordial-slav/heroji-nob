@@ -692,5 +692,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/14-srednjobosanska.jpg',
     brigadeName: '14. srednjobosanska brigada',
     description: 'Spisak poginulih, umrlih i nestalih boraca i rukovodilaca brigade, i spisak boraca koji su preživeli rat, po opštinama (str. 393–458 knjige)'
+  },
+  {
+    id: '3-vojvodjanska',
+    title: 'Treća vojvođanska NOU brigada — spiskovi boraca i starešina',
+    author: 'Radovan Panić',
+    pdfPath: '/pdfs/3-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/3-vojvodjanska.jpg',
+    brigadeName: '3. vojvođanska brigada',
+    description: 'Spiskovi boraca i starešina brigade: poginuli, oni čija je sudbina ostala neutvrđena, i preživeli (str. 479 i dalje)'
   }
 ]

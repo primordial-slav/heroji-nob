@@ -177,6 +177,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-17', place: 'Cer kod Prnjavora', source: 'https://znaci.org/00003/579.pdf',
     note: 'Knjiga brigade (Samardžija), str. 7-8: svečani čin formiranja određen za nedjelju 17. oktobra 1943. na Ceru kod Prnjavora (naredba štaba 11. divizije od 15. oktobra).',
   },
+  '3-vojvodjanska-brigada': {
+    date: '1943-05-15', place: 'Srem', source: 'https://znaci.org/00001/70_2.pdf',
+    note: 'Knjiga brigade (Panić): autor uzima 15. maj 1943, kada je odluka o formiranju 3. grupe vojvođanskih udarnih bataljona saopštena komandantu; drugi autori uzimaju 2. jun 1943.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
