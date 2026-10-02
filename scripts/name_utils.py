@@ -495,6 +495,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    53: {
+        'name': '11. Dalmatinska',
+        'json_file': '11-dalmatinska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "BANDELJ (Alojza) FRANC, desetar u 1. č. 5. bat., r. 12. 6. 1913, Zavino, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

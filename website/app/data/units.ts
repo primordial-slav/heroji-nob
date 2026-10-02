@@ -529,6 +529,16 @@ export const units: Unit[] = [
     soldierCount: 1738,
     dataFile: '/18-hrvatska-soldiers.json',
     pdfFiles: ['/pdfs/18-hrvatska.pdf']
+  },
+  {
+    id: '11-dalmatinska-brigada',
+    name: '11. dalmatinska brigada',
+    nameEn: '11th Dalmatian Brigade',
+    description: 'Formirana 2. oktobra 1943. na Biokovu. Poginuli, nestali i preživeli borci.',
+    image: '/images/11-dalmatinska-brigada.jpg',
+    soldierCount: 3444,
+    dataFile: '/11-dalmatinska-soldiers.json',
+    pdfFiles: ['/pdfs/11-dalmatinska.pdf']
   }
   // Add more units here as you get more data
 ]

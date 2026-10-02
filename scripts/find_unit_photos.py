@@ -63,11 +63,11 @@ JPEG_QUALITY = 82
 # Ordinal forms used in captions: "13.", "XIII", "trinaeste" ...
 _WORDS = {
     1: "prv", 2: "drug", 3: "tre[cć]", 4: "[cč]etvrt", 5: "pet", 6: "[sš]est", 7: "sedm",
-    8: "osm", 10: "deset", 12: "dvanaest", 13: "trinaest", 14: "[cč]etrnaest", 15: "petnaest",
+    8: "osm", 9: "devet", 10: "deset", 11: "jedanaest", 12: "dvanaest", 13: "trinaest", 14: "[cč]etrnaest", 15: "petnaest",
     16: "[sš]esnaest", 17: "sedamnaest", 18: "osamnaest", 19: "devetnaest", 21: "dvadeset\\s*prv",
     25: "dvadeset\\s*pet", 32: "trideset\\s*drug", 53: "pedeset\\s*tre[cć]",
 }
-_ROMAN = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 10: "X",
+_ROMAN = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X", 11: "XI",
           12: "XII", 13: "XIII", 14: "XIV", 15: "XV", 16: "XVI", 17: "XVII", 18: "XVIII", 19: "XIX", 21: "XXI",
           25: "XXV", 32: "XXXII", 53: "LIII"}
 
@@ -216,6 +216,12 @@ UNITS = {
     "3-makedonska-brigada": dict(
         name="3. makedonska brigada", tags=["3-makedonska-udarna-brigada"],
         caption=nth(3, r"makedonsk"), photo=13204),
+    "11-dalmatinska-brigada": dict(
+        name="11. dalmatinska brigada", tags=["11-dalmatinska-udarna-brigada-biokovska"],
+        caption=nth(11, r"dalmatinsk") + r"|biokovsk\w* brigad", photo=None,
+        book=dict(pdf="00003/547.pdf", page=28, xref=165, caption="Brigadna kolona na maršu preko Biokova, jesen 1943. godine"),
+        crop=(0.0, 0.3, 1.0, 1.0),
+        note="Nothing in the gallery is tagged with the brigade; the photo is from its own book (the crop keeps the column)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

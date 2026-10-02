@@ -161,6 +161,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-10', place: 'kod Tuzle (proglašena u Husinu 17. 10.)', source: 'https://znaci.org/00001/251_2.pdf',
     note: 'Knjiga brigade, str. 25-26: zvanično formirana 10. oktobra 1943; svečano proglašenje i smotra 17. oktobra u Husinu.',
   },
+  '11-dalmatinska-brigada': {
+    date: '1943-10-02', place: 'Biokovo', source: 'https://znaci.org/00003/547.pdf',
+    note: 'Knjiga brigade (Rako, Družijanić), str. 24: prvi put se postrojila 2. oktobra 1943, na Biokovu (Kozica).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

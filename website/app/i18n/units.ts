@@ -244,6 +244,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 10. oktobra 1943 pri Tuzli, razglašena 17. oktobra v Husinu. Borci brigade.',
   },
+  '11-dalmatinska-brigada': {
+    name: '11. dalmatinska brigada',
+    description:
+      'Ustanovljena 2. oktobra 1943 na Biokovu. Padli, pogrešani in preživeli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -479,6 +484,11 @@ const mk: Record<string, UnitText> = {
     name: '18-та хрватска источнобосанска бригада',
     description:
       'Формирана на 10 октомври 1943 кај Тузла, а прогласена на 17 октомври во Хусино. Борци на бригадата.',
+  },
+  '11-dalmatinska-brigada': {
+    name: '11-та далматинска бригада',
+    description:
+      'Формирана на 2 октомври 1943 на Биоково. Загинати, исчезнати и преживеани борци.',
   },
 }
 
@@ -717,6 +727,11 @@ const en: Record<string, UnitText> = {
     name: '18th Croatian East Bosnian Brigade',
     description:
       'Formed on 10 October 1943 near Tuzla and proclaimed on 17 October in Husino. Members of the brigade.',
+  },
+  '11-dalmatinska-brigada': {
+    name: '11th Dalmatian Brigade',
+    description:
+      'Formed on 2 October 1943 on Biokovo. Partisans who were killed, went missing or survived.',
   },
 }
 

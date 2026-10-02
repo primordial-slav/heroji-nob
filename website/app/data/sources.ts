@@ -629,5 +629,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/18-hrvatska.jpg',
     brigadeName: '18. hrvatska istočnobosanska brigada',
     description: 'Spisak boraca brigade, preživelih i poginulih: godina i mesto rođenja, narodnost, zanimanje, kada su stupili u brigadu, dužnost, sudbina (str. 582–696 knjige)'
+  },
+  {
+    id: '11-dalmatinska',
+    title: 'Jedanaesta dalmatinska udarna brigada — popis boraca',
+    author: 'Milan Rako, Slavko Družijanić',
+    pdfPath: '/pdfs/11-dalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/11-dalmatinska.jpg',
+    brigadeName: '11. dalmatinska brigada',
+    description: 'Popis boraca brigade: poginuli, nestali i preživeli (na dan 15. maja 1945): dužnost, rođenje, zanimanje, kada su stupili u NOB, sudbina (str. 479–600 knjige)'
   }
 ]
