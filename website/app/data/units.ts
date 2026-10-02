@@ -26,9 +26,9 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941.',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 14082,
+    soldierCount: 14501,
     dataFile: '/prva-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf']
+    pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf', '/pdfs/borci-sutjeske-prva-proleterska.pdf']
   },
   {
     id: 'ljubljanska-brigada',
@@ -56,9 +56,9 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. Spisak je sa dana kad je brigada formirana.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 1931,
+    soldierCount: 2666,
     dataFile: '/treca-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf', '/pdfs/treca-proleterska-formiranje.pdf']
+    pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf', '/pdfs/treca-proleterska-formiranje.pdf', '/pdfs/borci-sutjeske-treca-proleterska.pdf']
   },
   {
     id: '13-proleterska-brigada',
@@ -76,9 +76,9 @@ export const units: Unit[] = [
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. Borci brigade.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 5546,
+    soldierCount: 6057,
     dataFile: '/2-dalmatinska-soldiers.json',
-    pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf']
+    pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf']
   },
   {
     id: '4-splitska-brigada',
@@ -156,9 +156,9 @@ export const units: Unit[] = [
     nameEn: '3rd Krajina Proletarian Assault Brigade',
     description: 'Formirana 22. avgusta 1942. u Kamenici kod Drvara. Poginuli borci.',
     image: '/images/treca-krajiska-brigada.jpg',
-    soldierCount: 2291,
+    soldierCount: 3375,
     dataFile: '/3-krajiska-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/3-krajiska-proleterska.pdf']
+    pdfFiles: ['/pdfs/3-krajiska-proleterska.pdf', '/pdfs/borci-sutjeske-3-krajiska.pdf']
   },
   {
     id: '17-slavonska-brigada',
@@ -366,9 +366,9 @@ export const units: Unit[] = [
     nameEn: '1st Dalmatian Proletarian Brigade',
     description: 'Formirana 6. septembra 1942. u selu Dobro kod Livna. Borci poginuli u ratu. Spisak postoji samo kao tekst na znaci.org, bez skenirane knjige.',
     image: '/images/1-dalmatinska-brigada.jpg',
-    soldierCount: 2165,
+    soldierCount: 2980,
     dataFile: '/1-dalmatinska-soldiers.json',
-    pdfFiles: []
+    pdfFiles: ['/pdfs/borci-sutjeske-1-dalmatinska.pdf']
   },
   {
     id: '16-slavonska-omladinska-brigada',
@@ -396,9 +396,9 @@ export const units: Unit[] = [
     nameEn: '2nd Proletarian Brigade',
     description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta.',
     image: '/images/druga-proleterska-brigada.jpg',
-    soldierCount: 1011,
+    soldierCount: 2216,
     dataFile: '/druga-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/druga-proleterska.pdf']
+    pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf']
   },
   {
     id: '4-proleterska-brigada',

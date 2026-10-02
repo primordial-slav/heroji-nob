@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~121,300 WWII Yugoslav partisan soldiers across 49 units (44 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~126,000 WWII Yugoslav partisan soldiers across 49 units (44 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -11,16 +11,16 @@ Historical archive website for searching ~121,300 WWII Yugoslav partisan soldier
 
 | Code | Name | Parser | JSON | PDF | Count |
 |------|------|--------|------|-----|-------|
-| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3) | 14,082 |
+| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py` | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3); Borci Sutjeske chapter | 14,501 |
 | 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,863 |
 | 3 | Druga Lička | via `scripts/` (fallen); `data-extraction/parse_druga_licka_prezivjeli.py` (survivors); `data-extraction/parse_druga_licka_sjecanja_poginuli.py` (fallen, memoir book) | `druga-licka-soldiers.json` | 3 PDFs (fallen; survivors and fallen from the memoir book, two columns) | 7,591 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,175 |
-| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` (at formation); `data-extraction/parse_treca_proleterska_poginuli.py` (fallen, memoir book); `data-extraction/parse_treca_proleterska_formiranje.py` (at formation, Cyrillic reprint) | `treca-proleterska-soldiers.json` | 3 PDFs (at formation; fallen and dead by year, Cyrillic; the formation list reprinted in Cyrillic) | 1,931 |
+| 5 | Treća Proleterska (Sandžačka) | `data-extraction/parse_treca_proleterska.py` (at formation); `data-extraction/parse_treca_proleterska_poginuli.py` (fallen, memoir book); `data-extraction/parse_treca_proleterska_formiranje.py` (at formation, Cyrillic reprint) | `treca-proleterska-soldiers.json` | 3 PDFs (at formation; fallen and dead by year, Cyrillic; the formation list reprinted in Cyrillic); Borci Sutjeske chapter | 2,666 |
 | 6 | 13. Proleterska "Rade Končar" | `data-extraction/parse_13_proleterska.py` | `13-proleterska-soldiers.json` | 1 PDF | 8,275 |
-| 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF | 5,546 |
+| 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF; Borci Sutjeske chapter | 6,057 |
 | 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,078 |
 | 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,592 |
-| 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` | `3-krajiska-proleterska-soldiers.json` | 1 PDF (two columns) | 2,291 |
+| 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` | `3-krajiska-proleterska-soldiers.json` | 1 PDF (two columns); Borci Sutjeske chapter | 3,375 |
 | 11 | 4. Krajiška | `data-extraction/parse_4_krajiska.py` | `4-krajiska-soldiers.json` | 1 PDF (Cyrillic) | 1,670 |
 | 12 | 5. Kozaračka | `data-extraction/parse_5_kozaracka.py` | `5-kozaracka-soldiers.json` | 1 PDF | 1,020 |
 | 13 | 6. Krajiška | `data-extraction/parse_6_krajiska.py` | `6-krajiska-soldiers.json` | 1 PDF | 1,834 |
@@ -46,10 +46,10 @@ Historical archive website for searching ~121,300 WWII Yugoslav partisan soldier
 | 33 | 53. Srednjobosanska divizija | `data-extraction/parse_53_srednjobosanska.py` (table) | `53-srednjobosanska-soldiers.json` | 1 PDF (table, landscape) | 800 |
 | 34 | 21. Slavonska | `data-extraction/parse_21_slavonska.py` | `21-slavonska-soldiers.json` | 1 PDF | 1,117 |
 | 35 | 32. Zagorska divizija | `data-extraction/parse_32_divizija.py` (roster) | `32-divizija-soldiers.json` | 1 PDF (names only, four columns) | 10,041 |
-| 36 | 1. Dalmatinska | `data-extraction/parse_1_dalmatinska.py` | `1-dalmatinska-soldiers.json` | web page (znaci.org; no scan) | 2,165 |
+| 36 | 1. Dalmatinska | `data-extraction/parse_1_dalmatinska.py` | `1-dalmatinska-soldiers.json` | web page (znaci.org; no scan); Borci Sutjeske chapter | 2,980 |
 | 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` (fallen); `data-extraction/parse_16_slavonska_rukovodioci.py` (leaders) | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 389-428: two lists of the fallen, the leaders) | 1,122 |
 | 38 | 8. Crnogorska | `data-extraction/parse_8_crnogorska.py` | `8-crnogorska-soldiers.json` | 1 PDF (Cyrillic; book pp. 471-501, 509-510) | 747 |
-| 39 | Druga proleterska | `data-extraction/parse_druga_proleterska.py` (run-on names by place and date) | `druga-proleterska-soldiers.json` | 1 PDF (Cyrillic, three columns; monograph pp. 274-278) | 1,011 |
+| 39 | Druga proleterska | `data-extraction/parse_druga_proleterska.py` (run-on names by place and date) | `druga-proleterska-soldiers.json` | 1 PDF (Cyrillic, three columns; monograph pp. 274-278); Borci Sutjeske chapter | 2,216 |
 | 40 | 4. Proleterska crnogorska | `data-extraction/parse_borci_sutjeske.py` | `4-proleterska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,720 |
 | 41 | 5. Proleterska crnogorska | `data-extraction/parse_borci_sutjeske.py` | `5-proleterska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,574 |
 | 42 | 6. Istočnobosanska proleterska | `data-extraction/parse_borci_sutjeske.py` | `6-istocnobosanska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 807 |

@@ -130,15 +130,18 @@ SURVIVED = re.compile(r'kraj rata (?:je )?do[cč]ekao|pre[zž]ivio|\bživ(?:i|e)
 LIST_FATE = {
     'druga-licka-spisak.pdf': 'fell', 'druga-licka-sjecanja-poginuli.pdf': 'fell', 'druga-licka-sjecanja-prezivjeli.pdf': 'lived',
     '17-slavonska-poginuli.pdf': 'fell', '17-slavonska-prezivjeli.pdf': 'lived',
-    'treca-proleterska-poginuli-knj3.pdf': 'fell',
+    'treca-proleterska-poginuli-knj3.pdf': 'fell', '3-krajiska-proleterska.pdf': 'fell', 'druga-proleterska.pdf': 'fell',
 }
+# Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
+SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'
+                               r'|\bumr(?:o|la)\s+(?:je\s+)?(?:(?:\d{1,2}\.\s*)?[\w.]+\s+)?(?:19[5-9]\d|194[6-9])', re.I)
 
 
 def fate(s: dict) -> str:
     if s.get('pdf_file') in LIST_FATE:
         return LIST_FATE[s['pdf_file']]
     info = ' '.join([s.get('additional_info') or ''] + [o.get('additional_info') or '' for o in s.get('other_sources', ())])
-    if SURVIVED.search(info):
+    if SURVIVED.search(info) or SURVIVED_SUTJESKA.search(info):
         return 'lived'
     if s.get('death_type') or re.search(r'\b(?:po\w?gin|umr|strelj|strijelj|nestao|nestala)', info):     # "Pojginuo"
         return 'fell'
@@ -218,7 +221,9 @@ def matches(soldiers: list[dict], rank: dict) -> list[dict]:
     def consider(a, b, how):
         if list_of(a) == list_of(b) or a is b:
             return
-        ra, rb = rank.get(a.get('pdf_file'), 99), rank.get(b.get('pdf_file'), 99)
+        # a list published only as a web page (1. Dalmatinska) is the unit's own list: it comes first
+        ra = rank.get(a.get('pdf_file'), -1 if a.get('source_url') else 99)
+        rb = rank.get(b.get('pdf_file'), -1 if b.get('source_url') else 99)
         if (rb, list_index(b), b['soldier_id']) < (ra, list_index(a), a['soldier_id']):
             a, b = b, a
         key = (a['soldier_id'], b['soldier_id'])

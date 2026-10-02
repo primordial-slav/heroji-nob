@@ -112,6 +112,7 @@ def prepare(lines: list[dict]) -> None:
         if ln.get('drop'):
             continue
         t = re.sub(rf"(?<=[{LA}])'(?=[{U}])", ' ', ln['text'].strip())      # "Adama'MIRKO"
+        t = re.sub(rf"^(\W*\d)0(?=[{U}])", r'\1O', t)                         # "30SNIĆ": the 0 is an O
         jm = EDGE_JUNK.match(t)
         if jm and not START.match(t) and START.match(EDGE + re.sub('^0', 'O', t[jm.end():])):
             t = EDGE + re.sub('^0', 'O', t[jm.end():])
@@ -329,8 +330,10 @@ def edge_letters(soldiers: list[dict]) -> None:
             rest = name[1:]
             cands = [rest[:1].upper() + rest[1:]] + [x + rest for x in ALPHABET]
             good = [c for c in cands if fits(c) and known(c)]
-            if good:
-                best = max(good, key=lambda c: (_ref['last_name'][c], c == cands[0]))
+            # neighbours out of order (a column read out of turn): a known spelling in either neighbour's section
+            near = [c for c in cands if known(c) and first_letter(c) in (first_letter(prev), first_letter(nxt))]
+            if good or near:
+                best = max(good or near, key=lambda c: (_ref['last_name'][c], c == cands[0]))
             elif sec and not cands[0].startswith(sec):
                 best = sec + rest
             else:

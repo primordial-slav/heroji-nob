@@ -86,6 +86,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-15-majevicka':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-prva-proleterska':
+      'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-druga-proleterska':
+      'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-treca-proleterska':
+      'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-3-krajiska':
+      'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-1-dalmatinska':
+      'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-2-dalmatinska':
+      'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -161,6 +173,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-15-majevicka':
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-prva-proleterska':
+      'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-druga-proleterska':
+      'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-treca-proleterska':
+      'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-3-krajiska':
+      'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-1-dalmatinska':
+      'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-2-dalmatinska':
+      'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -234,6 +258,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'borci-sutjeske-7-krajiska':
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-15-majevicka':
+      'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-prva-proleterska':
+      'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-druga-proleterska':
+      'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-treca-proleterska':
+      'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-3-krajiska':
+      'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-1-dalmatinska':
+      'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-2-dalmatinska':
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
   },
 }

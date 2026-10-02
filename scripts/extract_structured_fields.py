@@ -438,7 +438,7 @@ class Extractor:
         units = [found[k] for k in sorted(found, key=lambda k: order[k])]
         return ', '.join(units + parts)
 
-    def extract(self, info: str, code: int) -> dict:
+    def extract(self, info: str, code: int, duty_first: bool = False) -> dict:
         if code in PARSER_FIELDS:
             return {}
         text = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.)\s[^;]{0,60};\s*)+', '', info or '').strip()
@@ -452,7 +452,7 @@ class Extractor:
         head = out.pop('_head', '')
         out.update(self.death(text))
         rank_text = (head + ' ' if head else '') + text
-        if code in DUTY_BEFORE_WAR_END:
+        if code in DUTY_BEFORE_WAR_END or duty_first:
             rank_text = re.split(r'\bkrajem rata\b', rank_text)[0]
         rank = self.ranks(rank_text)
         if rank:
@@ -536,9 +536,11 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
     got = {}
-    for info in [s.get('additional_info', '')] + [o.get('additional_info', '') for o in s.get('other_sources', ())
-                                                  if not o.get('unit_file')]:      # another unit's: its own fields
-        for k, v in ex.extract(info, code).items():
+    entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file')]   # another unit's: its own fields
+    for e in entries:
+        info = e.get('additional_info', '')
+        sutjeska = (e.get('pdf_file') or '').startswith('borci-sutjeske')          # the duty at the battle comes first
+        for k, v in ex.extract(info, code, duty_first=sutjeska).items():
             got.setdefault(k, v)
     return got
 
