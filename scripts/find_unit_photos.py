@@ -242,6 +242,10 @@ UNITS = {
         book=dict(pdf="00003/558.pdf", page=410, xref=1807,
                   caption="Prva četa 1. bataljona KPO u listopadu 1943. u oslobođenom Ludbregu"),
         note="Nothing in the gallery is tagged with the odred; the photo is from its own book."),
+    "posavsko-trebavski-odred": dict(
+        name="Posavsko-trebavski partizanski odred", tags=[],
+        caption=r"posavsko[\s-]*trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred", photo=None,
+        note="Nothing in the znaci.org gallery names the odred, and its book (00001/302, re-typeset) prints no photos."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

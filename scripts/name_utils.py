@@ -549,6 +549,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    59: {
+        'name': 'Posavsko-trebavski odred',
+        'json_file': 'posavsko-trebavski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ANTIĆ Save CVIJAN, 1927, Brvnik, Srbin, zemljoradnik, u odredu od 20. 9. 1943, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

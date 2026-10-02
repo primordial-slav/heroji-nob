@@ -185,6 +185,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-10-10', place: 'Bijela kod Daruvara', source: 'https://znaci.org/00003/558.pdf',
     note: 'Knjiga odreda (Milićević, str. 75): formirao ga je štab III. operativne zone u selu Bijela, istočno od Daruvara.',
   },
+  'posavsko-trebavski-odred': {
+    date: '1944-02-04', place: 'kod Gradačca', source: 'https://znaci.org/00001/302.pdf',
+    note: 'Knjiga odreda (Tihić): spajanjem bataljona Posavskog (formiran 17. septembra 1943. u Obudovcu) i Trebavskog NOP odreda (20. septembra 1943. u Skugriću).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

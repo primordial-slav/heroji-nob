@@ -589,6 +589,16 @@ export const units: Unit[] = [
     soldierCount: 3273,
     dataFile: '/kalnicki-odred-soldiers.json',
     pdfFiles: ['/pdfs/kalnicki-odred.pdf']
+  },
+  {
+    id: 'posavsko-trebavski-odred',
+    name: 'Posavsko-trebavski partizanski odred',
+    nameEn: 'Posavina-Trebava Partisan Detachment',
+    description: 'Formiran 4. februara 1944. kod Gradačca, od Posavskog i Trebavskog odreda. Borci odreda.',
+    image: '/images/pdf-thumbs/posavsko-trebavski-odred.jpg',
+    soldierCount: 1969,
+    dataFile: '/posavsko-trebavski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/posavsko-trebavski-odred.pdf']
   }
   // Add more units here as you get more data
 ]

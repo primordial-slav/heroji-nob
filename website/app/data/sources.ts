@@ -710,5 +710,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/kalnicki-odred.jpg',
     brigadeName: 'Kalnički partizanski odred',
     description: 'Spisak boraca Kalničkoga partizanskog odreda, poginulih i preživelih (str. 311 i dalje)'
+  },
+  {
+    id: 'posavsko-trebavski-odred',
+    title: 'Posavsko-trebavski odred — spisak boraca',
+    author: 'Esad Tihić',
+    pdfPath: '/pdfs/posavsko-trebavski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/posavsko-trebavski-odred.jpg',
+    brigadeName: 'Posavsko-trebavski partizanski odred',
+    description: 'Spisak boraca odreda po opštinama iz kojih su došli (str. 313 i dalje)'
   }
 ]

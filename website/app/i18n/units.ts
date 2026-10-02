@@ -274,6 +274,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 10. oktobra 1942 v Bijeli pri Daruvarju. Borci odreda, padli in preživeli.',
   },
+  'posavsko-trebavski-odred': {
+    name: 'Posavsko-trebavski partizanski odred',
+    description:
+      'Ustanovljen 4. februarja 1944 pri Gradačcu iz Posavskega in Trebavskega odreda. Borci odreda.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -539,6 +544,11 @@ const mk: Record<string, UnitText> = {
     name: 'Калнички партизански одред',
     description:
       'Формиран на 10 октомври 1942 во Бијела кај Дарувар. Борци на одредот, загинати и преживеани.',
+  },
+  'posavsko-trebavski-odred': {
+    name: 'Посавско-требавски партизански одред',
+    description:
+      'Формиран на 4 февруари 1944 кај Градачац од Посавскиот и Требавскиот одред. Борци на одредот.',
   },
 }
 
@@ -807,6 +817,11 @@ const en: Record<string, UnitText> = {
     name: 'Kalnik Partisan Detachment',
     description:
       'Formed on 10 October 1942 at Bijela near Daruvar. Members of the detachment, those killed and the survivors.',
+  },
+  'posavsko-trebavski-odred': {
+    name: 'Posavina-Trebava Partisan Detachment',
+    description:
+      'Formed on 4 February 1944 near Gradačac from the Posavina and Trebava detachments. Members of the detachment.',
   },
 }
 
