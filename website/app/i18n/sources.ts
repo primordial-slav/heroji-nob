@@ -142,6 +142,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam v brigadi padlih borcev in seznam drugih borcev brigade, ki so preživeli vojno ali niso padli v njej (str. 840 in naprej)',
     'zidanskova':
       'Seznam borcev brigade; padli so označeni z letnicama rojstva in padca (str. 731 in naprej)',
+    'skofjeloski-odred':
+      'Seznam borcev odreda, samo imena, kot so vpisani v ohranjenem arhivu odreda (str. 314 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -273,6 +275,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците загинати во бригадата и список на другите: оние што ја преживеале војната или не загинале додека биле во неа (стр. 840 и натаму)',
     'zidanskova':
       'Список на борците на бригадата; кај загинатите годината на раѓање и на загинување (стр. 731 и натаму)',
+    'skofjeloski-odred':
+      'Список на борците на одредот, само имиња, како што се запишани во зачуваната архива на одредот (стр. 314 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -403,6 +407,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Lists of the Partisans killed in the brigade and of its other members, who survived the war or did not fall while in it (pp. 840 ff.)',
     'zidanskova':
       'List of the brigade’s members; for those killed, the years of birth and death (pp. 731 ff.)',
+    'skofjeloski-odred':
+      'List of the detachment’s members, names only, as the surviving files of the detachment record them (pp. 314 ff.)',
   },
 }
 

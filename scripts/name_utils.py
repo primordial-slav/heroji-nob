@@ -612,6 +612,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    66: {
+        'name': 'Škofjeloški odred',
+        'json_file': 'skofjeloski-odred-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "29. Benedičič Franc-Cvek": names only, numbered
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

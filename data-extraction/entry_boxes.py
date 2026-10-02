@@ -79,6 +79,7 @@ TWO_COLUMN = {
     'cankarjeva.pdf',
     'gubceva.pdf',
     'zidanskova.pdf',
+    'skofjeloski-odred.pdf',
     '32-divizija-borci.pdf',
     '6-krajiska-prezivjeli.pdf',
     '17-slavonska-poginuli.pdf',
@@ -315,6 +316,7 @@ ONE_LINE_ENTRIES = {
     '32-divizija.pdf': range(1, 42),       # the roster: one name a line, four columns
     '6-krajiska-prezivjeli.pdf': range(1, 17),   # survivors: one name a line, two columns
     'dvanajsta.pdf': range(1, 41),         # XII. SNOUB: one soldier a line
+    'skofjeloski-odred.pdf': range(1, 8),  # Škofjeloški odred: numbered names
 }
 
 

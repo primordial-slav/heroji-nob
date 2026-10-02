@@ -213,6 +213,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-01-08', place: 'Sv. Primož na Pohorju', source: 'https://znaci.org/00003/776.pdf',
     note: 'Knjiga brigade (Fajdiga): od Pohorskog odreda.',
   },
+  'skofjeloski-odred': {
+    date: '1944-07-30', place: 'Škofjeloški hribi', source: 'https://znaci.org/00003/809.pdf',
+    note: 'Knjiga odreda (Lotrič): ukaz Glavnog štaba NOV i PO Slovenije od 30. jula 1944. o osnivanju Škofjeloškog i Kokrškog odreda.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

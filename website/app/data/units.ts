@@ -659,6 +659,16 @@ export const units: Unit[] = [
     soldierCount: 1151,
     dataFile: '/zidanskova-soldiers.json',
     pdfFiles: ['/pdfs/zidanskova.pdf']
+  },
+  {
+    id: 'skofjeloski-odred',
+    name: 'Škofjeloški odred',
+    nameEn: 'Škofja Loka Detachment',
+    description: 'Formiran po naredbi od 30. jula 1944, u brdima oko Škofje Loke. Imena boraca odreda.',
+    image: '/images/skofjeloski-odred.jpg',
+    soldierCount: 517,
+    dataFile: '/skofjeloski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/skofjeloski-odred.pdf']
   }
   // Add more units here as you get more data
 ]

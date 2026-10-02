@@ -773,5 +773,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zidanskova.jpg',
     brigadeName: 'Zidanškova brigada',
     description: 'Spisak boraca brigade; kod poginulih godina rođenja i pogibije (str. 731 i dalje)'
+  },
+  {
+    id: 'skofjeloski-odred',
+    title: 'Škofjeloški odred — seznam borcev',
+    author: 'Tone Lotrič',
+    pdfPath: '/pdfs/skofjeloski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/skofjeloski-odred.jpg',
+    brigadeName: 'Škofjeloški odred',
+    description: 'Spisak boraca odreda, samo imena, kako su upisani u sačuvanoj arhivi odreda (str. 314 i dalje)'
   }
 ]

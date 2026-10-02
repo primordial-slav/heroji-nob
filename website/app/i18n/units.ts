@@ -309,6 +309,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 8. januarja 1944 pri Sv. Primožu na Pohorju. Borci brigade, padli in preživeli.',
   },
+  'skofjeloski-odred': {
+    name: 'Škofjeloški odred',
+    description:
+      'Ustanovljen po ukazu z dne 30. julija 1944 v škofjeloških hribih. Imena borcev odreda.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -609,6 +614,11 @@ const mk: Record<string, UnitText> = {
     name: 'Зиданшкова бригада',
     description:
       'Формирана на 8 јануари 1944 кај Свети Примож на Похорје. Борци на бригадата, загинати и преживеани.',
+  },
+  'skofjeloski-odred': {
+    name: 'Шкофјелошки одред',
+    description:
+      'Формиран по наредба од 30 јули 1944, во ридовите околу Шкофја Лока. Имиња на борците на одредот.',
   },
 }
 
@@ -912,6 +922,11 @@ const en: Record<string, UnitText> = {
     name: 'Zidanšek Brigade',
     description:
       'Formed on 8 January 1944 near Sveti Primož on Pohorje. Members of the brigade, those killed and the survivors.',
+  },
+  'skofjeloski-odred': {
+    name: 'Škofja Loka Detachment',
+    description:
+      'Formed under an order of 30 July 1944, in the hills around Škofja Loka. The names of the detachment’s members.',
   },
 }
 
