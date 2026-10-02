@@ -61,7 +61,7 @@ BOX_FIELDS = ('pdf_x_end', 'pdf_y_end', 'pdf_x_left', 'pdf_rects')
 # Lists that run the names on, comma after comma, under each heading (Druga proleterska's fallen, by place and
 # date): their parser boxes each name's own words, in two boxes (pdf_rects) where the name runs on to the next
 # line, and those boxes are kept; a column-down box would hold a dozen names.
-INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjanska.pdf'}   # the last: its parser's boxes (a layout this module misreads)
+INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjanska.pdf', '13-vojvodjanska.pdf'}   # the last two: their parsers' boxes (layouts this module misreads)
 
 
 # ─────────────────────────────────────────────

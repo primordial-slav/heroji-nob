@@ -953,5 +953,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/6-vojvodjanska.jpg',
     brigadeName: '6. vojvođanska brigada',
     description: 'Spisak poginulih boraca i rukovodilaca: godina i mesto rođenja, datum i mesto pogibije, gde su sahranjeni (str. 175–199)'
+  },
+  {
+    id: '13-vojvodjanska',
+    title: 'Kako do brigade — spisak pripadnika XIII vojvođanske brigade',
+    author: 'Đorđe Momčilović',
+    pdfPath: '/pdfs/13-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/13-vojvodjanska.jpg',
+    brigadeName: '13. vojvođanska brigada',
+    description: 'Spisak pripadnika brigade: imena, ponegde nadimak ili mesto; autor napominje da spisak nije potpun (str. 771–793)'
   }
 ]

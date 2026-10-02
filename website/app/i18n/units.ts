@@ -399,6 +399,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 17. januarja 1944 na Jabučju pri Sremski Rači. Padli borci in starešine brigade.',
   },
+  '13-vojvodjanska-brigada': {
+    name: '13. vojvodinska brigada',
+    description:
+      'Ustanovljena 14. oktobra 1944 v Kikindi. Borci brigade, po imenih.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -789,6 +794,11 @@ const mk: Record<string, UnitText> = {
     name: '6-та војводинска бригада',
     description:
       'Формирана на 17 јануари 1944 на Јабучје кај Сремска Рача. Загинатите борци и раководители на бригадата.',
+  },
+  '13-vojvodjanska-brigada': {
+    name: '13-та војводинска бригада',
+    description:
+      'Формирана на 14 октомври 1944 во Кикинда. Борците на бригадата, поименично.',
   },
 }
 
@@ -1182,6 +1192,11 @@ const en: Record<string, UnitText> = {
     name: '6th Vojvodina Brigade',
     description:
       'Formed on 17 January 1944 at Jabučje near Sremska Rača. The brigade’s fallen soldiers and officers.',
+  },
+  '13-vojvodjanska-brigada': {
+    name: '13th Vojvodina Brigade',
+    description:
+      'Formed on 14 October 1944 at Kikinda. The brigade’s soldiers, by name.',
   },
 }
 

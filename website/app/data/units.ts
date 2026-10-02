@@ -839,6 +839,16 @@ export const units: Unit[] = [
     soldierCount: 347,
     dataFile: '/6-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/6-vojvodjanska.pdf']
+  },
+  {
+    id: '13-vojvodjanska-brigada',
+    name: '13. vojvođanska brigada',
+    nameEn: '13th Vojvodina Brigade',
+    description: 'Formirana 14. oktobra 1944. u Kikindi. Borci brigade, poimence.',
+    image: '/images/13-vojvodjanska-brigada.jpg',
+    soldierCount: 2750,
+    dataFile: '/13-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/13-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]

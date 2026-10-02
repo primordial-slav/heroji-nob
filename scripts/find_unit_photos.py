@@ -364,6 +364,11 @@ UNITS = {
     "6-vojvodjanska-brigada": dict(
         name="6. vojvođanska brigada", tags=["6-vojvodjanska-udarna-brigada"],
         caption=nth(6, r"vojvo[dđ]j?ansk"), photo=13076),
+    "13-vojvodjanska-brigada": dict(
+        name="13. vojvođanska brigada", tags=["13-vojvodjanska-udarna-brigada"],
+        caption=nth(13, r"vojvo[dđ]j?ansk"), photo=None,
+        book=dict(pdf="00003/431.pdf", page=602, xref=2791, caption="Na zadatku u Srpskoj Crnji"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (Momčilović, Kako do brigade), the caption in capitals there."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

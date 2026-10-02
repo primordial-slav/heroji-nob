@@ -285,6 +285,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-01-17', place: 'Jabučje kod Sremske Rače', source: 'https://znaci.org/00001/252_2.pdf',
     note: 'Ninković, Šesta vojvođanska udarna brigada (Glava I): „Sedamnaesti januar bio je sunčan i prohladan. Tačno u 10 časova izvršena je smotra, a postrojenim borcima na Jabučju, južno od Sremske Rače, pročitana je naredba Glavnog štaba Vojvodine o formiranju 6. vojvođanske brigade“ (naredba br. 1 od 10. januara 1944).',
   },
+  '13-vojvodjanska-brigada': {
+    date: '1944-10-14', place: 'Kikinda', source: 'https://znaci.org/00003/431.pdf',
+    note: 'Momčilović, Kako do brigade (pogl. Brigada u stroju, str. 583): „Četrnaestog oktobra na poljani koja se prostirala na južnoj strani od Kikinde bila je postavljena mala tribina“; brigada se postrojila i položila zakletvu pred narodom Kikinde. Prva naredba Štaba brigade nosi datum od 13. oktobra.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

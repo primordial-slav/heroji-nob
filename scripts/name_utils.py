@@ -774,6 +774,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_last',
     },
+    84: {
+        'name': '13. Vojvođanska',
+        'json_file': '13-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOV ALEKSANDAR", "BABIC RADE PRPIC" (names only)
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 
