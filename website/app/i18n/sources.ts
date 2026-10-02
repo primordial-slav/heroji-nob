@@ -156,6 +156,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci brigade od 16. julija 1942 do 13. julija 1943, ki so bili izpuščeni iz seznama 2. knjige ali so se dodatno prijavili (3. knjiga, str. 647 in naprej)',
     'tomsiceva-4':
       'Seznama borcev brigade od 13. julija 1943 do 1. aprila 1944 in od 1. aprila 1944 do 15. maja 1945 (4. knjiga, str. 576 in naprej)',
+    '1-slovenska-artilerijska':
+      'Seznam starešin, seznam topničarjev in seznam padlih (str. 388 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -301,6 +303,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борци на бригадата од 16 јули 1942 до 13 јули 1943 што беа изоставени од списокот во 2. книга или се пријавија дополнително (3. книга, стр. 647 и натаму)',
     'tomsiceva-4':
       'Списоци на борците на бригадата од 13 јули 1943 до 1 април 1944 и од 1 април 1944 до 15 мај 1945 (4. книга, стр. 576 и натаму)',
+    '1-slovenska-artilerijska':
+      'Список на старешините, на артилерците и на загинатите (стр. 388 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -445,6 +449,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s members from 16 July 1942 to 13 July 1943 left out of book 2’s list or reported later (book 3, pp. 647 ff.)',
     'tomsiceva-4':
       'Lists of the brigade’s members from 13 July 1943 to 1 April 1944 and from 1 April 1944 to 15 May 1945 (book 4, pp. 576 ff.)',
+    '1-slovenska-artilerijska':
+      'Lists of the officers, the gunners and the fallen (pp. 388 ff.)',
   },
 }
 

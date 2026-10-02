@@ -709,6 +709,16 @@ export const units: Unit[] = [
     soldierCount: 5921,
     dataFile: '/tomsiceva-soldiers.json',
     pdfFiles: ['/pdfs/tomsiceva-2.pdf', '/pdfs/tomsiceva-3.pdf', '/pdfs/tomsiceva-4.pdf']
+  },
+  {
+    id: '1-slovenska-artilerijska-brigada',
+    name: '1. slovenačka artiljerijska brigada',
+    nameEn: '1st Slovene Artillery Brigade',
+    description: 'Formirana 6. maja 1944. u Laščama kod Dvora. Artiljerci brigade i poginuli borci.',
+    image: '/images/1-slovenska-artilerijska-brigada.jpg',
+    soldierCount: 763,
+    dataFile: '/1-slovenska-artilerijska-soldiers.json',
+    pdfFiles: ['/pdfs/1-slovenska-artilerijska.pdf']
   }
   // Add more units here as you get more data
 ]

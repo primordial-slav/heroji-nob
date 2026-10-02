@@ -22,8 +22,9 @@ MASC = re.compile(
     r'živeo|radio|padel|umrl|ubit|srbin|hrvat|crnogorac|slovenac|musliman|jevrej|židov|makedonac|rus|italijan|'
     r'mađar|slovak|učenik|zemljoradnik|radnik|krojač|kuhar|kuvar|službenik|učitelj|seljak|tkač|kovač|stolar|'
     r'obućar|pekar|zidar|mesar|bravar|mehaničar|trgovac|omladinac|skojevac)\b', re.I)
-# a married or maiden name, as the Slovene lists print it: "por. Ciglar", "roj. Kos", "ud. Zupan"
-MAIDEN = re.compile(r'\b(?:por|roj|ud)\. [A-ZČĆŽŠĐ]')
+# a married or maiden name, as the Slovene lists print it: "por. Ciglar", "ud. Zupan", "roj. Kos;" (a note: in
+# "roj. 1915 Podgrad" or "roj. Sodražica, padel ..." the word is "rojen", born)
+MAIDEN = re.compile(r'(?:^|;)\s*(?:(?:por|ud)\. [A-ZČĆŽŠĐ]|roj\. [A-ZČĆŽŠĐ][^\s;,\d]*;)')
 # men's names ending in -a too rare in the data to be learned from it
 MALE_A = {'Nikola', 'Luka', 'Ilija', 'Andrija', 'Sava', 'Jovica', 'Mića', 'Pera', 'Mika', 'Jaka', 'Miha', 'Saša',
           'Ljuba', 'Toma', 'Kosta', 'Vuka', 'Joža', 'Jura', 'Đura', 'Gligorija', 'Zaharija', 'Jeremija', 'Zosima',

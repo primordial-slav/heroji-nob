@@ -195,6 +195,8 @@ class Extractor:
         t = text
         if code == 58:
             t = re.sub(r'^(?:dr\.;\s*)?r\.\s*(?=1[89]\d\d)', 'rođen ', t)     # Kalnički odred: "r. 1922; Martinišće, Zabok"
+        if code == 71 and re.match(r'^(?:pad(?:el|la)\s+)?[a-z]+a\s+19[34]\d\b', t):
+            t = ''                                                        # 1. slovenska artilerijska: "novembra 1944, Jama" is a death
         if code == 51:
             # 3. makedonska: where he came from, then the year: "iz s. Nikuline, rođen 1922. god., poginuo ..."
             t = re.sub(r',?\s*\brođen[a]?\s+[^,]*', '', t)

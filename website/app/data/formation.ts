@@ -233,6 +233,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-07-16', place: 'Cesta na Kočevskem', source: 'https://znaci.org/00003/787.pdf',
     note: 'Strle, Tomšičeva brigada, 2. knjiga (str. 20-24): toga dana je na Cesti osnovan 2. proleterski udarni bataljon, i taj dan je proglašen danom osnivanja 1. SPUB Toneta Tomšiča.',
   },
+  '1-slovenska-artilerijska-brigada': {
+    date: '1944-05-06', place: 'Lašče', source: 'https://znaci.org/00003/826.pdf',
+    note: 'Lah, Prva slovenska artilerijska brigada (str. 149-151): odluka Glavnog štaba NOV i PO Slovenije br. 320 od 6. maja 1944; 7. maja pročitana je artiljercima XV. i XVIII. divizije okupljenim u Laščama.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

@@ -657,6 +657,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    71: {
+        'name': 'Prva slovenska artilerijska',
+        'json_file': '1-slovenska-artilerijska-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Ambrožič Jože, roj. 1915 Podgrad"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

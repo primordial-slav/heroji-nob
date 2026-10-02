@@ -85,6 +85,7 @@ BRIGADE_CODES = {
     68: 'Zapadnodolenjski odred',
     69: 'Bračičeva',
     70: 'Tomšičeva',
+    71: 'Prva slovenska artilerijska',
     # Add new brigades here with next available code
 }
 

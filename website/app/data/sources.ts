@@ -102,7 +102,7 @@ export const sources: PdfSource[] = [
   {
     id: 'ljubljanska-brigada',
     title: '10. slovenska NOV brigada „Ljubljanska"',
-    author: 'Boris Vojlah',
+    author: 'Borivoj Lah – Boris',
     pdfPath: '/pdfs/ljubljanska-brigada.pdf',
     thumbnail: '/images/pdf-thumbs/ljubljanska-brigada.jpg',
     brigadeName: '10. slovenska narodnoosvobodilna udarna brigada "Ljubljanska"',
@@ -836,5 +836,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/tomsiceva-4.jpg',
     brigadeName: 'Tomšičeva brigada',
     description: 'Spiskovi boraca brigade od 13. jula 1943. do 1. aprila 1944. i od 1. aprila 1944. do 15. maja 1945. (4. knjiga, str. 576 i dalje)'
+  },
+  {
+    id: '1-slovenska-artilerijska',
+    title: 'Prva slovenska artilerijska brigada',
+    author: 'Borivoj Lah – Boris',
+    pdfPath: '/pdfs/1-slovenska-artilerijska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-slovenska-artilerijska.jpg',
+    brigadeName: '1. slovenačka artiljerijska brigada',
+    description: 'Spisak starešina, spisak artiljeraca i spisak poginulih (str. 388 i dalje)'
   }
 ]

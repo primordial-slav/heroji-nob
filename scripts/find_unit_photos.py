@@ -302,6 +302,12 @@ UNITS = {
     "tomsiceva-brigada": dict(
         name="Tomšičeva brigada", tags=[],
         caption=r"tom[sš]i[cč]ev\w*\s+brigad", photo=6067),
+    "1-slovenska-artilerijska-brigada": dict(
+        name="1. slovenačka artiljerijska brigada", tags=[],
+        caption=r"(?:1\.|prv\w*|I\.)\s+slovensk\w+\s+artilerijsk\w+\s+brigad|artilerijsk\w+\s+brigad\w*\s+(?:VII|7)", photo=None,
+        book=dict(pdf="00003/826.pdf", page=293, xref=1655,
+                  caption="Zbor brigade marca 1945 v Črmošnjicah. Brigada je pripravljena za odhod na Hrvatsko po nove topove"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

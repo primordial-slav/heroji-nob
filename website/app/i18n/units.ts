@@ -334,6 +334,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 16. julija 1942 na Cesti na Kočevskem. Borci brigade od ustanovitve do konca vojne.',
   },
+  '1-slovenska-artilerijska-brigada': {
+    name: '1. slovenska artilerijska brigada',
+    description:
+      'Ustanovljena 6. maja 1944 v Laščah pri Dvoru. Topničarji brigade in padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -659,6 +664,11 @@ const mk: Record<string, UnitText> = {
     name: 'Томшичева бригада',
     description:
       'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на бригадата од формирањето до крајот на војната.',
+  },
+  '1-slovenska-artilerijska-brigada': {
+    name: '1. словенечка артилериска бригада',
+    description:
+      'Формирана на 6 мај 1944 во Лашче кај Двор. Артилерците на бригадата и загинатите.',
   },
 }
 
@@ -987,6 +997,11 @@ const en: Record<string, UnitText> = {
     name: 'Tomšič Brigade',
     description:
       'Formed on 16 July 1942 at Cesta in the Kočevje region. The brigade’s members from its formation to the end of the war.',
+  },
+  '1-slovenska-artilerijska-brigada': {
+    name: '1st Slovene Artillery Brigade',
+    description:
+      'Formed on 6 May 1944 at Lašče near Dvor. The brigade’s gunners and its fallen.',
   },
 }
 
