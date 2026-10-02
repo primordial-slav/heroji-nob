@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
@@ -12,11 +12,12 @@ import {
 import { useLang, useT } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
 import { unitShortName } from '@/app/i18n/units'
+import { ChevronDownIcon } from './Icons'
 
 const SHOWN = 8
 
 /** "1. bataljon" in the page's language; a sub-unit the book names ("3. kordunaški bataljon") as printed */
-function levelLabel(level: Level, t: Messages['kin']): string {
+export function levelLabel(level: Level, t: Messages['kin']): string {
   switch (level.kind) {
     case 'staff': return t.staff
     case 'none': return t.noBattalion
@@ -43,22 +44,44 @@ interface Group {
   leaves: Leaf[]
 }
 
+export type KinPart = 'comrades' | 'neighbours'
+
+/** What the record's facts link to: the soldier's own sub-unit, those who fell the same day, his village */
+export interface KinCounts {
+  unit?: { size: number }      // the deepest sub-unit he is listed in, himself included
+  sameDay?: number             // others of the unit who fell the same day
+  place?: { others: number }   // others of all units born in his village
+}
+
+/** A fact asks a fold to open on one of its groups ("1.516 boraca" opens the sub-unit); nonce: a new request */
+export interface KinRequest {
+  part: KinPart
+  group: 'unit' | 'day' | 'place'
+  nonce: number
+}
+
 interface Props {
   soldier: Soldier
   unit: Unit
   unitSoldiers?: Soldier[]
   onOpen?: (soldier: Soldier) => void
-  part: 'comrades' | 'neighbours'   // the record shows its comrades above the book's page, its neighbours below it
+  part: KinPart                                 // its comrades in the unit, or the people of its village
+  request?: KinRequest | null
+  onCounts?: (part: KinPart, counts: KinCounts) => void
 }
 
 // Where the soldier stood in the unit and who fell with him (comrades), or who came from his village (neighbours):
-// a small tree per question
-export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, part }: Props) {
+// a fold at the end of the record that says what is in it, with a small tree per question inside
+export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, part, request, onCounts }: Props) {
   const lang = useLang()
-  const t = useT().kin
+  const messages = useT()
+  const t = messages.kin
   const [place, setPlace] = useState<Place | null>(null)
   const [open, setOpen] = useState<string | null>(null)
   const [full, setFull] = useState(false)
+  const [folded, setFolded] = useState(true)
+  const [flashed, setFlashed] = useState<string | null>(null)
+  const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     let live = true
@@ -145,6 +168,33 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
 
   const showUnitTree = part === 'comrades' && (unitGroups.length > 0 || dayGroup !== null)
   const showPlaceTree = part === 'neighbours' && place !== null && placeGroups.length > 0
+  const deepest = unitGroups[unitGroups.length - 1]
+  const others = Math.max(0, neighbours.length - 1)
+
+  // What the record's facts link to, for the counts they show
+  const unitSize = deepest?.size ?? 0
+  const dayOthers = dayGroup ? dayGroup.size - 1 : 0
+  useEffect(() => {
+    if (!onCounts) return
+    if (part === 'comrades') onCounts(part, { unit: unitSize ? { size: unitSize } : undefined, sameDay: dayOthers || undefined })
+    else onCounts(part, { place: showPlaceTree && others ? { others } : undefined })
+  }, [onCounts, part, unitSize, dayOthers, showPlaceTree, others])
+
+  // A fact asked this fold to open on a group: open it, scroll to it and flash its row
+  const placeKey = placeGroups.length === 1 ? 'place' : null
+  useEffect(() => {
+    if (!request || request.part !== part) return
+    const key = request.group === 'unit' ? deepest?.key : request.group === 'day' ? 'day' : placeKey
+    setFolded(false)
+    setFull(false)
+    if (key) setOpen(key)
+    setFlashed(key ?? 'fold')
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    requestAnimationFrame(() => sectionRef.current?.scrollIntoView({ block: 'start', behavior: reduce ? 'auto' : 'smooth' }))
+    // only a new request opens the fold; the groups it names are read when it comes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [request?.nonce])
+
   if (!showUnitTree && !showPlaceTree) return null
 
   const toggle = (key: string) => {
@@ -183,8 +233,8 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
     const canOpen = group.leaves.length > 0
     return (
       <li className={`kin-node${onPath ? ' is-path' : ''}${isOpen ? ' is-open' : ''}`} key={group.key}>
-        <button type="button" className="kin-row" aria-expanded={canOpen ? isOpen : undefined}
-          disabled={!canOpen} onClick={() => toggle(group.key)}>
+        <button type="button" className={`kin-row${flashed === group.key ? ' is-flash' : ''}`} aria-expanded={canOpen ? isOpen : undefined}
+          disabled={!canOpen} onClick={() => toggle(group.key)} onAnimationEnd={() => setFlashed(null)}>
           {group.kicker && <span className="kin-kicker">{group.kicker}</span>}
           <span className="kin-label">{group.label}</span>
           {group.note && <span className="kin-note">{group.note}</span>}
@@ -207,10 +257,25 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
     return <ul>{renderGroup(unitGroups[depth], true, nestPath(depth + 1))}</ul>
   }
 
+  // What the fold holds, before it is opened: "4. bataljon, 1.516 · istog dana 2", "Užička Požega, 5"
+  const summary = part === 'comrades'
+    ? [deepest ? `${deepest.label}, ${t.count(deepest.size)}` : unitShortName(unit, lang),
+      dayGroup ? `${messages.life.sameDayShort} ${t.count(dayGroup.size)}` : null].filter(Boolean).join(' · ')
+    : place ? `${placeName(place)}, ${t.count(neighbours.length)}` : ''
+
   return (
-    <section className="kin" aria-label={part === 'comrades' ? t.comrades : t.neighbours}>
-      {showUnitTree && <div className="modal-source-head"><h3>{t.comrades}</h3></div>}
-      {showUnitTree && (
+    <section ref={sectionRef} className={`kin record-fold${folded ? '' : ' is-open'}`}
+      aria-label={part === 'comrades' ? t.comrades : t.neighbours}>
+      <button type="button" className={`record-fold-row${flashed === 'fold' ? ' is-flash' : ''}`} aria-expanded={!folded}
+        onClick={() => setFolded((f) => !f)} onAnimationEnd={() => setFlashed(null)}>
+        <span className="record-fold-text">
+          <span className="record-fold-title">{part === 'comrades' ? t.comrades : t.neighbours}</span>
+          <span className="record-fold-summary">{summary}</span>
+        </span>
+        <ChevronDownIcon size={18} />
+      </button>
+
+      {!folded && showUnitTree && (
         <ul className="kin-tree">
           <li className="kin-node kin-root is-path">
             <span className="kin-row">
@@ -227,8 +292,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
         </ul>
       )}
 
-      {showPlaceTree && <div className="modal-source-head"><h3>{t.neighbours}</h3></div>}
-      {showPlaceTree && place && (
+      {!folded && showPlaceTree && place && (
         <ul className="kin-tree">
           {placeGroups.length === 1 ? (
             renderGroup({ ...placeGroups[0], key: 'place', label: placeName(place), kicker: t.birthplace, note: undefined }, false)

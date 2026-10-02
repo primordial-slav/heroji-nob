@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useCallback, useLayoutEffect } from 'react'
+import { useState, useRef, useCallback, useEffect, useLayoutEffect } from 'react'
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon, MinusIcon, PlusIcon, TargetIcon } from './Icons'
 import { highlightBox, highlightBoxes } from '@/app/lib/entryBox'
@@ -26,10 +26,11 @@ interface PdfViewerProps {
   xPositionEnd?: number    // Right edge of the entry's text
   rects?: number[][]       // A name that runs on to the next line: a box for each of its lines
   sourceHref?: string      // Link to the Sources page anchor for "View full document"
+  flash?: number           // a new number: go back to the entry and flash its box (a step of the life line asked)
 }
 
 export default function PdfViewer({
-  pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, xPositionLeft, xPositionEnd, rects, sourceHref,
+  pdfFile, pageNumber, yPosition, yPositionEnd, xPosition, xPositionLeft, xPositionEnd, rects, sourceHref, flash,
 }: PdfViewerProps) {
   const t = useT()
   const [numPages, setNumPages] = useState<number | null>(null)
@@ -39,6 +40,7 @@ export default function PdfViewer({
   const [error, setError] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
   const fitScale = useRef(2)
+  const [flashing, setFlashing] = useState(0)
 
   // Start at the zoom where the whole highlighted entry fits the viewer's width (between 100% and 200%)
   useLayoutEffect(() => {
@@ -51,19 +53,37 @@ export default function PdfViewer({
     setScale(fitScale.current)
   }, [xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd])
 
-  // When the PDF page renders, scroll to the soldier's Y position
+  // Scroll the entry a third of the way down the viewer, its start in view when the page is wider than the viewer
+  const scrollToEntry = useCallback((smooth = false) => {
+    const el = containerRef.current
+    if (!el || scale == null) return
+    const box = highlightBox(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd)
+    el.scrollTo({
+      top: Math.max(0, yPosition * scale - el.clientHeight / 3),
+      left: Math.max(0, box.left * scale - 12),
+      behavior: smooth ? 'smooth' : 'auto',
+    })
+  }, [xPosition, xPositionLeft, xPositionEnd, yPosition, yPositionEnd, scale])
+
+  // When the PDF page renders, scroll to the soldier's entry
   const onPageRenderSuccess = useCallback(() => {
     setLoading(false)
-    if (containerRef.current && scale != null && currentPage === pageNumber) {
-      const scrollTarget = yPosition * scale
-      const containerHeight = containerRef.current.clientHeight
-      const scrollTop = Math.max(0, scrollTarget - containerHeight / 3)
-      containerRef.current.scrollTop = scrollTop
-      // Bring the start of the entry into view when the page is wider than the viewer
-      const box = highlightBox(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd)
-      containerRef.current.scrollLeft = Math.max(0, box.left * scale - 12)
+    if (currentPage === pageNumber) scrollToEntry()
+  }, [scrollToEntry, currentPage, pageNumber])
+
+  // A step of the life line points at the entry: back to its page if the reader turned away, then flash its box
+  useEffect(() => {
+    if (!flash) return
+    if (currentPage !== pageNumber) {
+      setLoading(true)
+      setCurrentPage(pageNumber)
+    } else {
+      scrollToEntry(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)
     }
-  }, [xPosition, xPositionLeft, xPositionEnd, yPosition, yPositionEnd, scale, currentPage, pageNumber])
+    setFlashing(flash)
+    // only a new flash moves the page
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [flash])
 
   const onDocumentLoadSuccess = ({ numPages: n }: { numPages: number }) => {
     setNumPages(n)
@@ -149,8 +169,8 @@ export default function PdfViewer({
           {currentPage === pageNumber && !loading &&
             highlightBoxes(xPosition, yPosition, xPositionLeft, xPositionEnd, yPositionEnd, rects).map((box, i) => (
               <div
-                key={i}
-                className="pdf-highlight-box"
+                key={`${i}:${flashing}`}
+                className={`pdf-highlight-box${flashing ? ' is-flash' : ''}`}
                 style={{
                   top: `${box.top * scale}px`,
                   left: `${Math.max(0, box.left) * scale}px`,

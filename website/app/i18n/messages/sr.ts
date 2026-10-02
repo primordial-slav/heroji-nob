@@ -93,6 +93,45 @@ export const sr = {
 
   medals: { heroj: 'Narodni heroj', spomenica: 'Nosilac Partizanske spomenice 1941' },
 
+  // The record's facts and its line of dated steps (scripts/extract_life_events.py). A step's own words (a duty, a
+  // transfer, an illness) are the book's; printedLabels: the step shows them alone, without a label of its own.
+  life: {
+    title: 'Životni put',
+    show: 'Pokaži u knjizi',
+    /** "Iz zapisa na str. 57": where the steps of a soldier with one entry come from */
+    source: (page: number | string) => `Iz zapisa na str. ${page}`,
+    printedLabels: true,
+    born: (woman: boolean): string => (woman ? 'Rođena' : 'Rođen'),
+    skoj: 'Član SKOJ-a',
+    kpj: 'Član KPJ',
+    nob: 'U NOB',
+    /** came to the unit: a brigade, division, detachment (odred) or another unit */
+    unit: (kind: string): string => ({ brigade: 'U brigadi', division: 'U diviziji', detachment: 'U odredu' } as Record<string, string>)[kind] ?? 'U jedinici',
+    duty: 'Dužnost',
+    moved: 'Prekomandovan',
+    ill: 'Oboleo',
+    left: 'Otpušten',
+    wounded: (woman: boolean): string => (woman ? 'Ranjena' : 'Ranjen'),
+    captured: (woman: boolean): string => (woman ? 'Zarobljena' : 'Zarobljen'),
+    exchanged: (woman: boolean): string => (woman ? 'Razmenjena' : 'Razmenjen'),
+    /** the death as the record has it (death_type): poginuo, umro, nestao, streljan, ubijen */
+    fate: (type: string | undefined, woman: boolean): string => {
+      const words: Record<string, [string, string]> = {
+        poginuo: ['Poginuo', 'Poginula'], umro: ['Umro', 'Umrla'], nestao: ['Nestao', 'Nestala'],
+        streljan: ['Streljan', 'Streljana'], ubijen: ['Ubijen', 'Ubijena'],
+      }
+      return (words[type ?? ''] ?? ['Smrt', 'Smrt'])[woman ? 1 : 0]
+    },
+    /** a step's day or month under its year: "11. 7.", "decembar" */
+    day: (d: number, m: number) => `${d}. ${m}.`,
+    month: (m: number) => MONTHS[m - 1],
+    /** where a fact leads, with its count */
+    neighbours: (x: number) => `još ${n(x)} iz tog mesta`,
+    comrades: (x: number) => borci(x),
+    sameDay: (x: number) => `istog dana još ${n(x)}`,
+    sameDayShort: 'istog dana',
+  },
+
   record: {
     close: 'Zatvori',
     photo: 'Fotografija:',

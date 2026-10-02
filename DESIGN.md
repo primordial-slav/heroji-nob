@@ -158,7 +158,7 @@ One centred column (max 72rem) with a 24px side gutter (16px on phones). Content
 - **Home:** red band with a short heading, the search field (max 34rem), which says what to type ("Prezime, ime ili mesto"), and under it a quiet line with the total ("110.430 imena"), no example searches; under it "Na današnji dan", then the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
-- **Record popup:** max 40rem wide; unit photo strip, name, unit, book line, details as a two-column label/value list, then the scanned page ("Strana u knjizi").
+- **Record popup:** 40rem wide, 52rem when the record has a life line; unit photo strip, name, unit, three fact lines, the life line beside the page on a computer, the entry and the scanned page (under "Reference"), then Saborci and Zemljaci folded at the end.
 - **Spacing:** a 4px-based scale (4, 8, 12, 16, 24, 32, 40, 56px); more space above a group than inside it.
 - **Breakpoint:** 640px. Below it the nav drops to its own row, cards stack, the popup fills the screen.
 
@@ -201,6 +201,10 @@ Square. Cards and photographs have no radius. Inputs and buttons have a barely-t
 ### Record popup
 - A strip of the unit's photograph (about 6.5rem tall, black and white) with a 3px red rule under it, then the person. The scan viewer opens at the zoom where the whole highlighted entry fits the width (140% minimum on phones), scrolled to the entry, with page and zoom controls.
 - At its foot, a bar held at the window's edge names the previous and next entries of the unit's list ("Prethodni" / "Sledeći", the name in PT Serif); the arrow keys do the same.
+- **Three fact lines** in place of a table of every field: born (date, place), in the unit (sub-unit, duty), the death (date, place), as a label/value list on hairline rules. Each ends in a small red-ink link to the people it shares with others, with their count: "još 8 iz tog mesta", "1.581 borac", "istog dana još 1"; the link opens the fold at the end on that group and flashes its row. Fields the entry already prints (father, ethnicity, occupation) are read in the entry.
+- **Životni put** (the life line): the dated steps of the soldier's life read from his entries (`life_events`), one per row: the year in PT Serif on the left (a repeated year muted), its day or month under it in small muted text, a 1px rule-strong line with a small square mark per step, and the step on the right (500 weight, a muted detail under it). The death ends the line with the line candle in place of the mark; birth and death name only the year and the word, the places being in the facts. A step is a button: it shows the entry it was read from on its book's page, and flashes the entry's box. Shown from three steps on. On a computer (56rem and wider) the line is a 15rem column beside the facts and the page, held in view while the page scrolls; on phones it comes between the facts and the page.
+- **Folds** at the end: Saborci and Zemljaci, each a row with its name in PT Serif and what is in it in muted small text ("4. bataljon, 1.581 · istog dana 2", "Užička Požega, 9"), a chevron that turns when it opens; the tree inside as before. A fold with nothing in it is left out.
+- **A flash** is the only motion: what a fact or a step points at (the entry's box on the page, a group's row) lights up in the highlighter yellow and fades over about a second.
 
 ## Do's and Don'ts
 

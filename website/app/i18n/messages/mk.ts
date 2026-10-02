@@ -101,6 +101,38 @@ export const mk: Messages = {
 
   medals: { heroj: 'Народен херој', spomenica: 'Носител на Партизанска споменица 1941' },
 
+  life: {
+    title: 'Животен пат',
+    show: 'Покажи во книгата',
+    source: (page: number | string) => `Од записот на стр. ${page}`,
+    printedLabels: false,
+    born: (woman: boolean) => (woman ? 'Родена' : 'Роден'),
+    skoj: 'Член на СКОЈ',
+    kpj: 'Член на КПЈ',
+    nob: 'Во НОБ',
+    unit: (kind: string) => ({ brigade: 'Во бригадата', division: 'Во дивизијата', detachment: 'Во одредот' } as Record<string, string>)[kind] ?? 'Во единицата',
+    duty: 'Должност',
+    moved: 'Преместен',
+    ill: 'Заболел',
+    left: 'Отпуштен',
+    wounded: (woman: boolean) => (woman ? 'Ранета' : 'Ранет'),
+    captured: (woman: boolean) => (woman ? 'Заробена' : 'Заробен'),
+    exchanged: (woman: boolean) => (woman ? 'Разменета' : 'Разменет'),
+    fate: (type: string | undefined, woman: boolean) => {
+      const words: Record<string, [string, string]> = {
+        poginuo: ['Загинал', 'Загинала'], umro: ['Починал', 'Починала'], nestao: ['Исчезнат', 'Исчезната'],
+        streljan: ['Стрелан', 'Стрелана'], ubijen: ['Убиен', 'Убиена'],
+      }
+      return (words[type ?? ''] ?? ['Смрт', 'Смрт'])[woman ? 1 : 0]
+    },
+    day: (d: number, m: number) => `${d}.${m}`,
+    month: (m: number) => MONTHS[m - 1],
+    neighbours: (x: number) => `уште ${n(x)} од истото место`,
+    comrades: (x: number) => borci(x),
+    sameDay: (x: number) => `истиот ден уште ${n(x)}`,
+    sameDayShort: 'истиот ден',
+  },
+
   record: {
     close: 'Затвори',
     photo: 'Фотографија:',
@@ -112,7 +144,7 @@ export const mk: Messages = {
     entries: 'Записи во книгите',
     page: (p: number | string) => `стр. ${p}`,
     nameInBook: 'Името во книгата:',
-    references: 'Во книгата',
+    references: 'Референци',
     book: 'Книга',
     loadingPage: 'Се вчитува страницата…',
     source: 'Извор',

@@ -94,6 +94,33 @@ export const en: Messages = {
 
   medals: { heroj: 'People’s Hero', spomenica: 'Holder of the Partisan Commemorative Medal 1941' },
 
+  life: {
+    title: 'Timeline',
+    show: 'Show in the book',
+    source: (page: number | string) => `From the entry on p. ${page}`,
+    printedLabels: false,
+    born: () => 'Born',
+    skoj: 'Joined the Young Communists (SKOJ)',
+    kpj: 'Joined the Communist Party',
+    nob: 'Joined the Partisans',
+    unit: (kind: string) => ({ brigade: 'Joined the brigade', division: 'Joined the division', detachment: 'Joined the detachment' } as Record<string, string>)[kind] ?? 'Joined the unit',
+    duty: 'Duty',
+    moved: 'Transferred',
+    ill: 'Fell ill',
+    left: 'Discharged',
+    wounded: () => 'Wounded',
+    captured: () => 'Captured',
+    exchanged: () => 'Exchanged',
+    fate: (type: string | undefined) =>
+      ({ poginuo: 'Killed', umro: 'Died', nestao: 'Missing', streljan: 'Shot', ubijen: 'Killed' } as Record<string, string>)[type ?? ''] ?? 'Died',
+    day: (d: number, m: number) => `${d} ${MONTHS[m - 1].slice(0, 3)}`,
+    month: (m: number) => MONTHS[m - 1],
+    neighbours: (x: number) => `${n(x)} more from the same place`,
+    comrades: (x: number) => partisans(x),
+    sameDay: (x: number) => `${n(x)} more the same day`,
+    sameDayShort: 'the same day',
+  },
+
   record: {
     close: 'Close',
     photo: 'Photograph:',
@@ -105,7 +132,7 @@ export const en: Messages = {
     entries: 'Entries in the books',
     page: (p: number | string) => `p. ${p}`,
     nameInBook: 'Name in the book:',
-    references: 'In the book',
+    references: 'References',
     book: 'Book',
     loadingPage: 'Loading the page…',
     source: 'Source',

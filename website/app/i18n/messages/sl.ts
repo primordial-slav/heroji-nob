@@ -92,6 +92,38 @@ export const sl: Messages = {
 
   medals: { heroj: 'Narodni heroj', spomenica: 'Nosilec Partizanske spomenice 1941' },
 
+  life: {
+    title: 'Življenjska pot',
+    show: 'Pokaži v knjigi',
+    source: (page: number | string) => `Iz zapisa na str. ${page}`,
+    printedLabels: false,
+    born: (woman: boolean) => (woman ? 'Rojena' : 'Rojen'),
+    skoj: 'Član SKOJ',
+    kpj: 'Član KPJ',
+    nob: 'V NOB',
+    unit: (kind: string) => ({ brigade: 'V brigadi', division: 'V diviziji', detachment: 'V odredu' } as Record<string, string>)[kind] ?? 'V enoti',
+    duty: 'Dolžnost',
+    moved: 'Premeščen',
+    ill: 'Zbolel',
+    left: 'Odpuščen',
+    wounded: (woman: boolean) => (woman ? 'Ranjena' : 'Ranjen'),
+    captured: (woman: boolean) => (woman ? 'Ujeta' : 'Ujet'),
+    exchanged: (woman: boolean) => (woman ? 'Zamenjana' : 'Zamenjan'),
+    fate: (type: string | undefined, woman: boolean) => {
+      const words: Record<string, [string, string]> = {
+        poginuo: ['Padel', 'Padla'], umro: ['Umrl', 'Umrla'], nestao: ['Pogrešan', 'Pogrešana'],
+        streljan: ['Ustreljen', 'Ustreljena'], ubijen: ['Ubit', 'Ubita'],
+      }
+      return (words[type ?? ''] ?? ['Smrt', 'Smrt'])[woman ? 1 : 0]
+    },
+    day: (d: number, m: number) => `${d}. ${m}.`,
+    month: (m: number) => MONTHS[m - 1],
+    neighbours: (x: number) => `še ${n(x)} iz istega kraja`,
+    comrades: (x: number) => borci(x),
+    sameDay: (x: number) => `isti dan še ${n(x)}`,
+    sameDayShort: 'isti dan',
+  },
+
   record: {
     close: 'Zapri',
     photo: 'Fotografija:',
@@ -103,7 +135,7 @@ export const sl: Messages = {
     entries: 'Zapisi v knjigah',
     page: (p: number | string) => `str. ${p}`,
     nameInBook: 'Ime v knjigi:',
-    references: 'V knjigi',
+    references: 'Reference',
     book: 'Knjiga',
     loadingPage: `Nalaganje strani${dots}`,
     source: 'Vir',

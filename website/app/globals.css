@@ -3220,3 +3220,319 @@ span.rail-face {
 .rail-face:focus-visible .rail-name {
   color: var(--ink);
 }
+
+/* ========== The record: three facts, the life line beside the book's page, the folds at the end ========== */
+
+/* With a life line the dialog widens on a computer so the line can stand beside the page */
+.modal-content.has-line {
+  max-width: 52rem;
+}
+
+/* Born, in the unit, the death: one line each, the people they share with others a link away */
+.record-facts {
+  margin-top: var(--space-5);
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: var(--space-5);
+  border-top: 1px solid var(--rule);
+}
+
+.record-facts dt,
+.record-facts dd {
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.record-facts dt {
+  padding-top: calc(var(--space-2) + 0.14rem);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.record-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.record-fact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.0625rem;
+  margin-left: var(--space-2);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--red-ink);
+  font-size: var(--step--1);
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--red-ink) 40%, transparent);
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+.record-fact-link:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Životni put: a year on the left, the step on the right, a hairline between them; a step shows its entry */
+.record-line {
+  margin-top: var(--space-6);
+}
+
+.life-title {
+  font-size: var(--step-0);
+}
+
+.life-steps {
+  list-style: none;
+  margin-top: var(--space-3);
+}
+
+.life-step {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  column-gap: var(--space-3);
+}
+
+.life-when {
+  padding-top: 0.45rem;
+  text-align: right;
+  line-height: 1.2;
+}
+
+.life-year {
+  display: block;
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  font-variant-numeric: tabular-nums;
+}
+
+.life-year.is-repeat {
+  color: var(--ink-muted);
+  font-size: var(--step-0);
+}
+
+.life-sub {
+  display: block;
+  margin-top: 0.125rem;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
+.life-what {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.45rem 0 0.6rem var(--space-3);
+  border: 0;
+  border-left: 1px solid var(--rule-strong);
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* the line starts at the first step's mark and ends at the last one's */
+.life-step:first-child .life-what {
+  border-image: linear-gradient(transparent 0.95rem, var(--rule-strong) 0.95rem) 1;
+}
+
+.life-step:last-child .life-what {
+  border-image: linear-gradient(var(--rule-strong) 0.95rem, transparent 0.95rem) 1;
+}
+
+.life-step:only-child .life-what {
+  border-left-color: transparent;
+}
+
+.life-what::before {
+  content: '';
+  position: absolute;
+  left: -0.25rem;
+  top: 0.75rem;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  background: var(--ground);
+  border: 1px solid var(--ink);
+}
+
+.life-step.is-end .life-what::before {
+  display: none;
+}
+
+.life-candle {
+  position: absolute;
+  left: -0.5rem;
+  top: 0.4rem;
+  background: var(--ground);
+  color: var(--ink-muted);
+  line-height: 0;
+}
+
+.life-label {
+  display: block;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.life-what:hover .life-label {
+  color: var(--red-ink);
+}
+
+.life-detail,
+.life-ref {
+  display: block;
+  font-size: var(--step--1);
+  line-height: 1.35;
+  color: var(--ink-muted);
+}
+
+.life-ref {
+  margin-top: 0.125rem;
+  font-size: 0.75rem;
+}
+
+.life-source {
+  margin-top: var(--space-2);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+.life-source:hover {
+  color: var(--red-ink);
+  text-decoration-color: currentColor;
+}
+
+/* On a computer the line stands beside the facts and the page, and stays in view while the page scrolls */
+@media (min-width: 56rem) {
+  .modal-content.has-line .record-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 15rem;
+    grid-template-areas: "facts line" "page line";
+    column-gap: var(--space-6);
+    align-items: start;
+  }
+
+  .modal-content.has-line .record-facts { grid-area: facts; }
+  .modal-content.has-line .record-page { grid-area: page; }
+
+  .modal-content.has-line .record-line {
+    grid-area: line;
+    position: sticky;
+    top: var(--space-4);
+    margin-top: var(--space-5);
+  }
+}
+
+/* Saborci, Zemljaci: folded at the end, each row saying what is in it */
+.record-folds {
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--rule);
+}
+
+.record-fold {
+  border-bottom: 1px solid var(--rule);
+}
+
+.record-fold.is-open {
+  padding-bottom: var(--space-4);
+}
+
+.record-fold-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.record-fold-text {
+  display: grid;
+  gap: 0.0625rem;
+  min-width: 0;
+}
+
+.record-fold-title {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  line-height: 1.3;
+}
+
+.record-fold-summary {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.record-fold-row svg {
+  color: var(--ink-muted);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.record-fold-row[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+.record-fold-row:hover .record-fold-title {
+  color: var(--red-ink);
+}
+
+.record-fold .kin-tree {
+  margin-top: 0;
+}
+
+.record-folds ~ .record-actions {
+  margin-top: var(--space-6);
+}
+
+/* A fact or a step points somewhere: what it points at lights up once */
+.pdf-highlight-box.is-flash {
+  animation: entry-flash 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes entry-flash {
+  0% {
+    background: rgba(255, 214, 0, 0.6);
+    box-shadow: inset 0 -2px 0 #c79a00, 0 0 0 0.6rem rgba(199, 154, 0, 0.5);
+  }
+  100% {
+    background: rgba(255, 214, 0, 0.28);
+    box-shadow: inset 0 -2px 0 #c79a00, 0 0 0 0 rgba(199, 154, 0, 0);
+  }
+}
+
+.kin-row.is-flash,
+.record-fold-row.is-flash {
+  animation: row-flash 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes row-flash {
+  0% { background: var(--mark); }
+  100% { background: transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pdf-highlight-box.is-flash,
+  .kin-row.is-flash,
+  .record-fold-row.is-flash {
+    animation-duration: 0.01ms;
+  }
+
+  .record-fold-row svg {
+    transition: none;
+  }
+}

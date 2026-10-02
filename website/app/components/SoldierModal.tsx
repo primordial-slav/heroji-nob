@@ -1,10 +1,10 @@
 'use client'
 
-import { lazy, Suspense, useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, recordDetails, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
@@ -13,9 +13,11 @@ import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import { contributionsFor } from '@/app/data/family'
-import RelationsTree from './RelationsTree'
+import RelationsTree, { type KinCounts, type KinPart, type KinRequest } from './RelationsTree'
+import LifeLine, { unitKind } from './LifeLine'
 import SoldierPortrait from './SoldierPortrait'
 import { portraitFor } from '@/app/data/portraits'
+import { isWoman } from '@/app/lib/standIn'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES, type Lang } from '@/app/i18n/config'
 import { quoteMarks } from '@/app/i18n/format'
@@ -24,8 +26,8 @@ import { unitName as localUnitName } from '@/app/i18n/units'
 import RichText from '@/app/i18n/RichText'
 import { unitImageProps } from '@/app/lib/unitImage'
 
-// The unit photo spans the dialog: the whole screen up to 640px, the 40rem dialog above
-const RECORD_PHOTO_SIZES = '(max-width: 640px) 100vw, 640px'
+// The unit photo spans the dialog: the whole screen up to 640px, the dialog above (52rem with the life line)
+const RECORD_PHOTO_SIZES = '(max-width: 640px) 100vw, 832px'
 
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
@@ -40,6 +42,13 @@ function shortTitle(entry: SoldierSource, lang: Lang): string {
 function shownUnitName(name: string, lang: Lang): string {
   const unit = unitByName(name)
   return unit ? localUnitName(unit, lang) : quoteMarks(lang, name)
+}
+
+interface Fact {
+  key: string
+  label: string
+  value: string
+  link?: { text: string; open: () => void }
 }
 
 interface SoldierModalProps {
@@ -71,13 +80,41 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const unitOf = (e: SoldierSource) => units.find((u) => u.dataFile === `/${e.unit_file}`)?.name
   const allUnits = [unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
     .filter((u, i, list): u is string => Boolean(u) && list.indexOf(u) === i)
+  const hasLine = (soldier.life_events?.length ?? 0) > 0
 
   const [showReportForm, setShowReportForm] = useState(false)
   const [reportText, setReportText] = useState('')
   const [reportStatus, setReportStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const dialogRef = useRef<HTMLDivElement>(null)
+  const pageRef = useRef<HTMLElement>(null)
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
+
+  // A step of the life line shows its entry: that book's page, and the entry's box flashing on it
+  const [flash, setFlash] = useState(0)
+  const showEntry = (i: number) => {
+    const at = pages.indexOf(entries[i])
+    if (at < 0) return
+    setShownPage(at)
+    setFlash((f) => f + 1)
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    pageRef.current?.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
+  }
+  const pageOf = (i: number) => (entries[i] && hasPage(entries[i]) ? entries[i].pdf_page : undefined)
+
+  // The facts link to the folds at the end: how many are in them, and a request to open one on a group
+  const [counts, setCounts] = useState<Record<KinPart, KinCounts>>({ comrades: {}, neighbours: {} })
+  const onCounts = useCallback((part: KinPart, c: KinCounts) => setCounts((old) => ({ ...old, [part]: c })), [])
+  const [kinRequest, setKinRequest] = useState<KinRequest | null>(null)
+  const openKin = (part: KinPart, group: KinRequest['group']) => setKinRequest({ part, group, nonce: Date.now() })
+
+  // A new soldier in the same dialog (Prethodni / Sledeći, a name in the trees) starts from his own first book
+  useEffect(() => {
+    setShownPage(0)
+    setFlash(0)
+    setKinRequest(null)
+    setCounts({ comrades: {}, neighbours: {} })
+  }, [soldier.soldier_id])
 
   // The entries before and after this one in the unit's list, which is in the order of the books
   const at = unitSoldiers ? unitSoldiers.findIndex((s) => s.soldier_id === soldier.soldier_id) : -1
@@ -135,14 +172,44 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     }
   }
 
-  const filled = recordDetails(soldier, t)
   const honours = honoursLine(soldier, t)
+
+  // The record in three lines: born, in the unit, the death; each links to the people it shares with others
+  const woman = isWoman(soldier)
+  const born = soldier.life_events?.find((e) => e.k === 'born')
+  const bornDay = born && /^\d{4}-\d\d-\d\d$/.test(born.d) ? born.d.split('-').map(Number) : null
+  const { comrades, neighbours } = counts
+  const facts: Fact[] = []
+  if (soldier.birth_year || soldier.birth_place) {
+    facts.push({
+      key: 'born',
+      label: t.life.born(woman),
+      value: [bornDay ? t.kin.day(bornDay[2], bornDay[1], bornDay[0]) : soldier.birth_year, soldier.birth_place].filter(Boolean).join(', '),
+      link: neighbours.place ? { text: t.life.neighbours(neighbours.place.others), open: () => openKin('neighbours', 'place') } : undefined,
+    })
+  }
+  if (soldier.unit_detail || soldier.rank) {
+    facts.push({
+      key: 'unit',
+      label: t.life.unit(unitKind(unitRecord?.name ?? unit)),
+      value: [soldier.unit_detail, soldier.rank].filter(Boolean).join(', '),
+      link: comrades.unit ? { text: t.life.comrades(comrades.unit.size), open: () => openKin('comrades', 'unit') } : undefined,
+    })
+  }
+  if (soldier.death_date || soldier.death_place) {
+    facts.push({
+      key: 'death',
+      label: t.life.fate(soldier.death_type, woman),
+      value: [soldier.death_date, soldier.death_place].filter(Boolean).join(', '),
+      link: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
+    })
+  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
         ref={dialogRef}
-        className="modal-content"
+        className={`modal-content${hasLine ? ' has-line' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="soldier-name"
@@ -174,97 +241,107 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
             )}
           </div>
         </div>
-        <RecordActions soldier={soldier} unit={unitRecord} />
         <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
 
-        {entries.length === 1 && soldier.additional_info && (
-          <p className="modal-entry">{soldier.additional_info}</p>
-        )}
+        <div className="record-body">
+          {facts.length > 0 && (
+            <dl className="record-facts">
+              {facts.map((f) => (
+                <div key={f.key} style={{ display: 'contents' }}>
+                  <dt>{f.label}</dt>
+                  <dd>
+                    <span>{f.value}</span>
+                    {f.link && (
+                      <button type="button" className="record-fact-link" onClick={f.link.open}>
+                        {f.link.text}<ChevronRightIcon size={14} />
+                      </button>
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          )}
 
-        {entries.length > 1 && (
-          <ol className="modal-sources" aria-label={t.record.entries}>
-            {entries.map((e, i) => (
-              <li key={i} className="modal-source-entry">
-                <p className="modal-source-label">
-                  {e.unit_file && unitOf(e) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
-                  {sourceTitle(e)}
-                  {e.pdf_page != null && `, ${t.record.page(e.pdf_page)}`}
-                  {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
-                </p>
-                {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
-              </li>
-            ))}
-          </ol>
-        )}
+          {hasLine && (
+            <aside className="record-line">
+              <LifeLine soldier={soldier} entries={entries} unitName={unitRecord?.name ?? unit} pageOf={pageOf} onShow={showEntry} />
+            </aside>
+          )}
 
-        {filled.length > 0 && (
-          <dl className="modal-details">
-            {filled.map(([label, value]) => (
-              <div key={label} style={{ display: 'contents' }}>
-                <dt className="modal-label">{label}</dt>
-                <dd className="modal-value">{value}</dd>
-              </div>
-            ))}
-          </dl>
-        )}
-
-        {unitRecord && (
-          <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen} />
-        )}
-
-        {page && (
-          <>
+          <section className="record-page" ref={pageRef}>
             <div className="modal-source-head">
-              <h3>{t.record.references}</h3>
+              <h3>{page || !soldier.source_url ? t.record.references : t.record.source}</h3>
               {pages.length > 1 && (
                 <div className="modal-source-switch" role="group" aria-label={t.record.book}>
                   {pages.map((e, i) => (
-                    <button
-                      key={i}
-                      type="button"
-                      aria-pressed={e === page}
-                      onClick={() => setShownPage(i)}
-                    >
+                    <button key={i} type="button" aria-pressed={e === page} onClick={() => setShownPage(i)}>
                       {switchLabels[i]}
                     </button>
                   ))}
                 </div>
               )}
             </div>
-            <Suspense fallback={<div className="pdf-viewer-loading">{t.record.loadingPage}</div>}>
-              <PdfViewer
-                key={`${page.pdf_file}#${page.pdf_page}#${page.pdf_y}`}
-                pdfFile={`/pdfs/${page.pdf_file}`}
-                pageNumber={page.pdf_page!}
-                yPosition={page.pdf_y ?? 0}
-                yPositionEnd={page.pdf_y_end}
-                xPosition={page.pdf_x ?? 0}
-                xPositionLeft={page.pdf_x_left}
-                xPositionEnd={page.pdf_x_end}
-                rects={page.pdf_rects}
-                sourceHref={sourceHref}
-              />
-            </Suspense>
-          </>
-        )}
 
-        {!page && soldier.source_url && (
-          <>
-            <div className="modal-source-head">
-              <h3>{t.record.source}</h3>
-            </div>
-            <p className="modal-source-note">
-              <RichText
-                text={t.record.noScan}
-                render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>}
-              />
-            </p>
-          </>
-        )}
+            {entries.length === 1 && soldier.additional_info && (
+              <p className="modal-entry">{soldier.additional_info}</p>
+            )}
+
+            {entries.length > 1 && (
+              <ol className="modal-sources" aria-label={t.record.entries}>
+                {entries.map((e, i) => (
+                  <li key={i} className="modal-source-entry">
+                    <p className="modal-source-label">
+                      {/* the other unit's name, unless the book's title already starts with it */}
+                      {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
+                      {sourceTitle(e)}
+                      {e.pdf_page != null && `, ${t.record.page(e.pdf_page)}`}
+                      {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
+                    </p>
+                    {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
+                  </li>
+                ))}
+              </ol>
+            )}
+
+            {page && (
+              <Suspense fallback={<div className="pdf-viewer-loading">{t.record.loadingPage}</div>}>
+                <PdfViewer
+                  key={`${page.pdf_file}#${page.pdf_page}#${page.pdf_y}`}
+                  pdfFile={`/pdfs/${page.pdf_file}`}
+                  pageNumber={page.pdf_page!}
+                  yPosition={page.pdf_y ?? 0}
+                  yPositionEnd={page.pdf_y_end}
+                  xPosition={page.pdf_x ?? 0}
+                  xPositionLeft={page.pdf_x_left}
+                  xPositionEnd={page.pdf_x_end}
+                  rects={page.pdf_rects}
+                  sourceHref={sourceHref}
+                  flash={flash}
+                />
+              </Suspense>
+            )}
+
+            {!page && soldier.source_url && (
+              <p className="modal-source-note">
+                <RichText
+                  text={t.record.noScan}
+                  render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>}
+                />
+              </p>
+            )}
+          </section>
+        </div>
 
         {unitRecord && (
-          <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen} />
+          <div className="record-folds">
+            <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen}
+              request={kinRequest} onCounts={onCounts} />
+            <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen}
+              request={kinRequest} onCounts={onCounts} />
+          </div>
         )}
+
+        <RecordActions soldier={soldier} unit={unitRecord} />
 
         <KnowSoldierForm soldier={soldier} unit={unitRecord} />
 

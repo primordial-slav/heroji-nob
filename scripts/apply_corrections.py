@@ -18,6 +18,10 @@ pdf_y_end, pdf_x_left) recomputed from the PDFs by data-extraction/entry_boxes.p
 so they follow the final positions. Those fields are always computed: a value a
 correction sets for them is overwritten.
 
+Then the dated steps of each soldier's life (the dialog's line) are read from the
+final records of the units processed into website/data/life-events/
+(scripts/extract_life_events.py); a failure there only warns.
+
 Usage:
     python scripts/apply_corrections.py              # dry run
     python scripts/apply_corrections.py --apply      # apply changes
@@ -628,6 +632,17 @@ def main():
             with open(json_path, 'w', encoding='utf-8') as f:
                 f.write(new_text)
             print(f"    Written: {json_path}")
+
+    # The dated steps of each soldier's life for the dialog's line (website/data/life-events/), from the final
+    # records; a failure here only warns, the unit files above are written
+    if args.apply:
+        try:
+            import extract_life_events
+            written = extract_life_events.write_events(
+                {code: (path.name, soldiers) for code, (path, _, soldiers) in results.items() if path.name in live_files})
+            print(f"\n  Life events: {sum(written.values())} soldiers with a line, in {len(written)} unit file(s)")
+        except Exception as e:                                           # noqa: BLE001
+            print(f"\n  WARNING: life events not written ({e.__class__.__name__}: {e})")
 
     # Update units.ts counts
     changed = {}
