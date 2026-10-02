@@ -27,6 +27,24 @@ _GIVEN: Counter = Counter()
 OWN = {'file': ''}                                                           # the parser's own output, left out of the corpus
 
 
+_SURNAMES: Counter = Counter()
+_PLACES: Counter = Counter()
+
+
+def surnames_and_places() -> tuple[Counter, Counter]:
+    """How often each word is a surname, and a place (birthplaces), in the other units: "Intihar, 1922" is a
+    soldier, "Brezje, Oplotnica" the second line of one."""
+    if not _SURNAMES:
+        for f in glob.glob('website/public/*soldiers.json'):
+            if OWN['file'] and f.replace('\\', '/').endswith('/' + OWN['file']):
+                continue
+            for r in json.load(open(f, encoding='utf-8')):
+                _SURNAMES[r.get('last_name') or ''] += 1
+                for w in re.split(r',\s*', r.get('birth_place') or ''):
+                    _PLACES[w] += 1
+    return _SURNAMES, _PLACES
+
+
 def given_names() -> Counter:
     """Every given name the other units print, with how often (to tell "Ažman Ivan" from a place, "Velika Loka",
     and to read back a misread name)."""
@@ -51,8 +69,9 @@ class Indent:
     (within 60 pt above and below), so the scan's skew doesn't move it; continuation lines sit ~9 pt in."""
 
     def __init__(self, padli_from: int | None, headings: re.Pattern, padli_to: int | None = None,
-                 comma_after_first_line: bool = False):
+                 comma_after_first_line: bool = False, every_line: bool = False):
         self.comma = comma_after_first_line                                  # books that print no commas: the place's line
+        self.every_line = every_line                                         # a soldier a line (XII. SNOUB)
         self.padli_from = padli_from                                         # the pages of the list of the fallen
         self.padli_to = padli_to
         self.headings = headings
@@ -89,16 +108,22 @@ class Indent:
         starts = re.match(rf'^(?:[{U}]|[2šžčć][{L}])', t)                     # "žužek": a lowercase Ž
         # "Surname Given," or "Surname Given-Alias, 1920": where the scan curves or was pasted, entries drift in
         # and continuation lines out, so a line that doesn't start at the margin must read as a name
-        name = rf'^\S+ (?:(?:dr|ing|arh)\. )?[{U}][{L}]+(?:-[{U}]\S*)?'
+        name = rf'^[^\s,]+ (?:(?:dr|ing|arh)\. )?[{U}][{L}]+(?:-[{U}]\S*)?'
         strict = re.match(name + r'(?:[,.]| 1[89]\d\d)', t)
         bare = re.fullmatch(r'\S+ (\S+)', t)                                       # "Ažman Ivan": a name and nothing else
         two = re.match(rf'^([{U}][{L}]+)(?:-[{U}][{L}]+)? ([{U}][{L}]+)', t)            # "Hujs Friderik": a name and nothing else
         pair = bare or two
         second = pair.group(pair.lastindex) if pair else ''
         # "Gorenja Trebuša", "Sv. Ana": a place, unless the second word is a name ("Mali Anton")
-        place = re.match(r'^\w+\.', t) or (re.match(PLACE_WORD, t) and given_names()[second] < 3)
-        loose = strict or re.search(r',|1[89]\d\d', t) or (pair and not place)
-        if starts and ((indent < 4 and loose) or (indent < 14 and strict)):
+        place = re.match(r'^\w{1,5}\.(?:\s|$)', t) or (re.match(PLACE_WORD, t) and given_names()[second] < 3)
+        head = re.split(r',|\s(?=1[89]\d\d)', t, 1)[0].split()                      # "Brezje, Oplotnica": one word, a place
+        sur, plc = surnames_and_places()
+        one = len(head) == 1 and (sur[head[0]] > plc[head[0]]                 # "Intihar, 1922": a surname
+                                  or (not plc[head[0]] and re.search(r'1[89]\d\d', t)))   # "Anzeljc, ..., —1944"
+        dated = (',' in t or re.search(r'1[89]\d\d', t)) and (len(head) >= 2 or one) and not place
+        strict = strict and not place
+        loose = strict or dated or (pair and not place)
+        if starts and (self.every_line or (indent < 4 and loose) or (indent < 14 and strict)):
             t = f'§{kind}§ ' + t + (',' if self.comma and not t.endswith(',') else '')
         ln['text'] = t
         return True

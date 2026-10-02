@@ -603,6 +603,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    65: {
+        'name': 'Zidanškova',
+        'json_file': 'zidanskova-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Ačkun Stanko, 1912, Hrastnik"; the fallen "Kvas Konrad, Koritno, Oplotnica, 1926—1944"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

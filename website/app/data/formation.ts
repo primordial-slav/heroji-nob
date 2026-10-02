@@ -209,6 +209,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-04', place: 'Golobar kod Bovca', source: 'https://znaci.org/00003/825.pdf',
     note: 'Knjiga brigade (Petelin): od Severnoprimorskog odreda; ustanovni zbor na Golobaru na uskrsni ponedeljak, 26. aprila 1943, razbio je napad Italijana.',
   },
+  'zidanskova-brigada': {
+    date: '1944-01-08', place: 'Sv. Primož na Pohorju', source: 'https://znaci.org/00003/776.pdf',
+    note: 'Knjiga brigade (Fajdiga): od Pohorskog odreda.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

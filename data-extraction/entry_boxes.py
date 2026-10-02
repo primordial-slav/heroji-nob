@@ -78,6 +78,7 @@ TWO_COLUMN = {
     '8-kordunaska-divizija.pdf',
     'cankarjeva.pdf',
     'gubceva.pdf',
+    'zidanskova.pdf',
     '32-divizija-borci.pdf',
     '6-krajiska-prezivjeli.pdf',
     '17-slavonska-poginuli.pdf',

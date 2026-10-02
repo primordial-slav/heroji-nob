@@ -12,7 +12,7 @@ import re
 from _parser_scaffold import repair_lj_ocr, run_parser
 from _slovene_lists import OWN, Indent, parse
 
-INDENT = Indent(padli_from=1, padli_to=4, headings=re.compile(r'^(?:XII\. SNOUB|SEZNAM BORCEV)\b'))
+INDENT = Indent(padli_from=1, padli_to=4, every_line=True, headings=re.compile(r'^(?:XII\. SNOUB|SEZNAM BORCEV)\b'))
 
 if __name__ == '__main__':
     OWN['file'] = 'dvanajsta-soldiers.json'

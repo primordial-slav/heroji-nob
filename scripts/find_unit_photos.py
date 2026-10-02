@@ -271,6 +271,12 @@ UNITS = {
         caption=r"(?:gradnikov|gori[sš]k)\w*\s+brigad", photo=None,
         book=dict(pdf="00003/825.pdf", page=84, xref=1237, caption="Prvi bataljon Gradnikove brigade na šentviški planoti konec maja 1943."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "zidanskova-brigada": dict(
+        name="Zidanškova brigada", tags=[],
+        caption=r"zidan[sš]kov\w*\s+brigad", photo=None,
+        book=dict(pdf="00003/776.pdf", page=706, xref=3719, caption="Borci 1. bataljona nad Ivnikom konec maja 1945"),
+        crop=(0.0, 0.1, 1.0, 0.9),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (its 1st battalion)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

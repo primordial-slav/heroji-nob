@@ -79,6 +79,7 @@ BRIGADE_CODES = {
     62: 'Gubčeva',
     63: 'Dvanajsta (XII. SNOUB)',
     64: 'Gradnikova',
+    65: 'Zidanškova',
     # Add new brigades here with next available code
 }
 

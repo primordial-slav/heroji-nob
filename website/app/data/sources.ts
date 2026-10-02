@@ -764,5 +764,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/gradnikova.jpg',
     brigadeName: 'Gradnikova brigada',
     description: 'Spisak boraca poginulih u brigadi i spisak ostalih: onih koji su preživeli rat ili nisu poginuli dok su bili u njoj (str. 840 i dalje)'
+  },
+  {
+    id: 'zidanskova',
+    title: 'Zidanškova brigada — seznam borcev',
+    author: 'Mirko Fajdiga',
+    pdfPath: '/pdfs/zidanskova.pdf',
+    thumbnail: '/images/pdf-thumbs/zidanskova.jpg',
+    brigadeName: 'Zidanškova brigada',
+    description: 'Spisak boraca brigade; kod poginulih godina rođenja i pogibije (str. 731 i dalje)'
   }
 ]
