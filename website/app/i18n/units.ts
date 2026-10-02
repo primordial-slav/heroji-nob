@@ -359,6 +359,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 8. oktobra 1944 v Vojlovici pri Pančevu. Borci brigade po krajih, kjer so živeli, in padli.',
   },
+  '4-vojvodjanska-brigada': {
+    name: '4. vojvodinska brigada',
+    description:
+      'Ustanovljena 7. oktobra 1943 v gozdu Varadin pri Višnjićevu. Borci prve sestave brigade in padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -709,6 +714,11 @@ const mk: Record<string, UnitText> = {
     name: '12-та војводинска бригада',
     description:
       'Формирана на 8 октомври 1944 во Војловица кај Панчево. Борците на бригадата по местата каде што живееле и загинатите.',
+  },
+  '4-vojvodjanska-brigada': {
+    name: '4-та војводинска бригада',
+    description:
+      'Формирана на 7 октомври 1943 во шумата Варадин кај Вишњићево. Борците од првиот состав на бригадата и загинатите.',
   },
 }
 
@@ -1062,6 +1072,11 @@ const en: Record<string, UnitText> = {
     name: '12th Vojvodina Brigade',
     description:
       'Formed on 8 October 1944 at Vojlovica near Pančevo. The brigade’s members, by the place they lived in, and its fallen.',
+  },
+  '4-vojvodjanska-brigada': {
+    name: '4th Vojvodina Brigade',
+    description:
+      'Formed on 7 October 1943 in the Varadin forest near Višnjićevo. The brigade’s first members and its fallen.',
   },
 }
 

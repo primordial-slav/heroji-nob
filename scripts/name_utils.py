@@ -702,6 +702,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_last',
     },
+    76: {
+        'name': '4. Vojvođanska',
+        'json_file': '4-vojvodjanska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "Агбаба Милан, земљорадник, рођен 1918. у Карађорђеву (Банат), ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'nominative',
+        'original_casing': 'title',
+    },
 }
 
 

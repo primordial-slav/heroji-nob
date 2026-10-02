@@ -166,6 +166,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Padli in preživeli borci in starešine brigade: rojstvo, vstop v brigado, dolžnost, kje so padli (str. 317–399)',
     '12-vojvodjanska':
       'Seznam borcev po krajih, kjer so živeli pred vstopom v brigado, in seznam padlih: od kod so bili, leto rojstva, kje so padli (str. 207–258)',
+    '4-vojvodjanska':
+      'Seznam pripadnikov brigade na dan 7. oktobra 1943 in seznam padlih in umrlih do 1. 3. 1946: rojstvo, poklic, dolžnost, kje so padli (str. 281–334)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -321,6 +323,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Загинати и преживеани борци и старешини на бригадата: раѓање, кога стапиле во бригадата, должност, каде загинале (стр. 317–399)',
     '12-vojvodjanska':
       'Список на борците по местата каде што живееле пред да стапат во бригадата и список на загинатите: од каде се, година на раѓање, каде загинале (стр. 207–258)',
+    '4-vojvodjanska':
+      'Список на припадниците на бригадата на 7 октомври 1943 и список на загинатите и починатите до 1. 3. 1946: раѓање, занимање, должност, каде загинале (стр. 281–334)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -475,6 +479,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans and officers who were killed or survived: birth, when they joined, duty, where they fell (pp. 317–399)',
     '12-vojvodjanska':
       'The brigade’s members by the place they lived in before joining, and its fallen: where they came from, year of birth, where they fell (pp. 207–258)',
+    '4-vojvodjanska':
+      'The brigade’s members on 7 October 1943, and those killed or dead up to 1 March 1946: birth, occupation, duty, where they fell (pp. 281–334)',
   },
 }
 

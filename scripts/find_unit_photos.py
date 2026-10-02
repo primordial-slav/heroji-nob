@@ -329,6 +329,9 @@ UNITS = {
         book=dict(pdf="00003/443.pdf", page=55, xref=235,
                   caption="Za vreme polaganja zakletve. Na slici desno sa podignutom pesnicom politički komesar Brigade Lazar Mišković"),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "4-vojvodjanska-brigada": dict(
+        name="4. vojvođanska brigada", tags=[],
+        caption=r"(?:4\.|IV\.?|četvrt\w*)\s+vojvo\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=12503),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

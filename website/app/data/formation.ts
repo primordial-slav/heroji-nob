@@ -253,6 +253,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-10-08', place: 'Vojlovica kod Pančeva', source: 'https://znaci.org/00003/443.pdf',
     note: 'Popov, 12. vojvođanska udarna brigada (pogl. Vojlovica, 8. oktobra): naredba Glavnog štaba NOV i PO Vojvodine o formiranju pročitana je na trgu u Vojlovici pred više od 2.000 boraca.',
   },
+  '4-vojvodjanska-brigada': {
+    date: '1943-10-07', place: 'šuma Varadin kod Višnjićeva', source: 'https://znaci.org/00001/230_2.pdf',
+    note: 'Lagator, Četvrta vojvođanska brigada (pogl. Formiranje brigade): Glavni štab Vojvodine izdao je naredbu o formiranju 27. septembra; 7. oktobra 1943. brigada je svečano proglašena u šumi Varadin kod sela Grk (Višnjićevo).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

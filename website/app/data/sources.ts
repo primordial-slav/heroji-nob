@@ -881,5 +881,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/12-vojvodjanska.jpg',
     brigadeName: '12. vojvođanska brigada',
     description: 'Spisak boraca po mestima u kojima su živeli pre stupanja u brigadu i spisak poginulih: odakle su, godina rođenja, gde su pali (str. 207–258)'
+  },
+  {
+    id: '4-vojvodjanska',
+    title: 'Četvrta vojvođanska brigada — pripadnici i poginuli',
+    author: 'Špiro Lagator',
+    pdfPath: '/pdfs/4-vojvodjanska.pdf',
+    thumbnail: '/images/pdf-thumbs/4-vojvodjanska.jpg',
+    brigadeName: '4. vojvođanska brigada',
+    description: 'Spisak pripadnika brigade na dan 7. oktobra 1943. i spisak poginulih i umrlih do 1. 3. 1946: rođenje, zanimanje, dužnost, gde su pali (str. 281–334)'
   }
 ]

@@ -759,6 +759,16 @@ export const units: Unit[] = [
     soldierCount: 2540,
     dataFile: '/12-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/12-vojvodjanska.pdf']
+  },
+  {
+    id: '4-vojvodjanska-brigada',
+    name: '4. vojvođanska brigada',
+    nameEn: '4th Vojvodina Brigade',
+    description: 'Formirana 7. oktobra 1943. u šumi Varadin kod Višnjićeva. Borci prvog sastava brigade i poginuli.',
+    image: '/images/4-vojvodjanska-brigada.jpg',
+    soldierCount: 1241,
+    dataFile: '/4-vojvodjanska-soldiers.json',
+    pdfFiles: ['/pdfs/4-vojvodjanska.pdf']
   }
   // Add more units here as you get more data
 ]
