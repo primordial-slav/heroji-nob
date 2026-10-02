@@ -486,6 +486,14 @@ BRIGADE_CONFIGS = {
         'has_fathers_name': True,     # a possessive (Dimitriev, Stojanov); the parser sets the nominative
         'fathers_name_form': 'possessive',
         'original_casing': 'title',
+    },    52: {
+        'name': '18. Hrvatska istočnobosanska',
+        'json_file': '18-hrvatska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ABADŽIĆ Sime RAJKA, rođena 1923. godine u selu Jablanica, Lopare, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
     },
 }
 

@@ -108,6 +108,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev brigade, ki so vojno preživeli, samo imena, z naknadnim seznamom (str. 747–762 knjige)',
     '32-divizija-borci':
       'Borci štaba divizije, spremljevalnih enot, brigad Braća Radić, Matija Gubec, Mihovil Pavlek Miškina in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
+    '18-hrvatska':
+      'Seznam borcev brigade, preživelih in padlih: leto in kraj rojstva, narodnost, poklic, vstop v brigado, dolžnost, usoda (str. 582–696 knjige)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -205,6 +207,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на бригадата што ја преживеаја војната, само имиња, со дополнителен список (стр. 747–762 од книгата)',
     '32-divizija-borci':
       'Борци на штабот на дивизијата, придружните единици, бригадите „Браќа Радиќ“, „Матија Губец“, „Миховил Павлек Мишкина“ и I ударна загорска, и борци со нецелосни податоци: година и место на раѓање, народност, занимање, кога стапиле во НОВ, судбина; борецот е наведен во секоја единица во која се борел (стр. 431–662 од книгата)',
+    '18-hrvatska':
+      'Список на борците на бригадата, преживеани и загинати: година и место на раѓање, народност, занимање, кога стапиле во бригадата, должност, судбина (стр. 582–696 од книгата)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -301,6 +305,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans who survived the war, names only, with a later list (pp. 747–762 of the book)',
     '32-divizija-borci':
       'Partisans of the division’s staff, its attached units, the Braća Radić, Matija Gubec, Mihovil Pavlek Miškina and 1st Zagorje Assault brigades, and some with incomplete details: year and place of birth, nationality, occupation, when they joined the army, fate; each is listed under every unit he fought in (pp. 431–662 of the book)',
+    '18-hrvatska':
+      'The brigade’s Partisans, survivors and the fallen: year and place of birth, nationality, occupation, when they joined the brigade, duty and fate (pp. 582–696 of the book)',
   },
 }
 

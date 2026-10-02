@@ -519,6 +519,16 @@ export const units: Unit[] = [
     soldierCount: 232,
     dataFile: '/3-makedonska-soldiers.json',
     pdfFiles: ['/pdfs/3-makedonska.pdf']
+  },
+  {
+    id: '18-hrvatska-brigada',
+    name: '18. hrvatska istočnobosanska brigada',
+    nameEn: '18th Croatian East Bosnian Brigade',
+    description: 'Formirana 10. oktobra 1943. kod Tuzle, a proglašena 17. oktobra u Husinu. Borci brigade.',
+    image: '/images/18-hrvatska-brigada.jpg',
+    soldierCount: 1738,
+    dataFile: '/18-hrvatska-soldiers.json',
+    pdfFiles: ['/pdfs/18-hrvatska.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -216,6 +216,13 @@ UNITS = {
     "3-makedonska-brigada": dict(
         name="3. makedonska brigada", tags=["3-makedonska-udarna-brigada"],
         caption=nth(3, r"makedonsk"), photo=13204),
+    "18-hrvatska-brigada": dict(
+        name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
+        caption=nth(18, r"hrvatsk"), photo=None,
+        book=dict(pdf="00001/251_2.pdf", page=207, xref=1001,
+                  caption="Defile boraca Brigade u oslobođenom Sarajevu, april 1945."),
+        crop=(0.0, 0.06, 1.0, 1.0),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (the crop drops scan noise at the top)."),
     "32-zagorska-divizija": dict(
         name="32. zagorska divizija", tags=["32-zagorska-divizija-novj"],
         caption=nth(32, r"(?:zagorsk\w+\s+)?divizij") + r"|zagorsk\w+\s+divizij", photo=None,

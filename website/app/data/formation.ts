@@ -157,6 +157,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-02-26', place: 'Žegljane kod Kumanova', source: 'https://znaci.org/00001/71_2.pdf',
     note: 'Knjiga brigade (Mihailovski), str. 24: formirana u školskom dvorištu sela Žegnjana (Žegljane), 26. februara 1944.',
   },
+  '18-hrvatska-brigada': {
+    date: '1943-10-10', place: 'kod Tuzle (proglašena u Husinu 17. 10.)', source: 'https://znaci.org/00001/251_2.pdf',
+    note: 'Knjiga brigade, str. 25-26: zvanično formirana 10. oktobra 1943; svečano proglašenje i smotra 17. oktobra u Husinu.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

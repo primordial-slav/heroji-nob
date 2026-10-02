@@ -66,6 +66,7 @@ BRIGADE_CODES = {
     49: '15. Majevička',
     50: '12. Dalmatinska',
     51: '3. Makedonska',
+    52: '18. Hrvatska istočnobosanska',
     # Add new brigades here with next available code
 }
 

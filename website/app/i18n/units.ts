@@ -239,6 +239,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 26. februarja 1944 v vasi Žegljane pri Kumanovu. Padli borci.',
   },
+  '18-hrvatska-brigada': {
+    name: '18. hrvaška vzhodnobosanska brigada',
+    description:
+      'Ustanovljena 10. oktobra 1943 pri Tuzli, razglašena 17. oktobra v Husinu. Borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -469,6 +474,11 @@ const mk: Record<string, UnitText> = {
     name: '3-та македонска бригада',
     description:
       'Формирана на 26 февруари 1944 во селото Жеглане кај Куманово. Загинати борци.',
+  },
+  '18-hrvatska-brigada': {
+    name: '18-та хрватска источнобосанска бригада',
+    description:
+      'Формирана на 10 октомври 1943 кај Тузла, а прогласена на 17 октомври во Хусино. Борци на бригадата.',
   },
 }
 
@@ -702,6 +712,11 @@ const en: Record<string, UnitText> = {
     name: '3rd Macedonian Brigade',
     description:
       'Formed on 26 February 1944 in the village of Žegljane near Kumanovo. The fallen.',
+  },
+  '18-hrvatska-brigada': {
+    name: '18th Croatian East Bosnian Brigade',
+    description:
+      'Formed on 10 October 1943 near Tuzla and proclaimed on 17 October in Husino. Members of the brigade.',
   },
 }
 

@@ -258,7 +258,7 @@ class Extractor:
                 break
         if place:
             if locative or any(' kod ' in p for p in place):                  # "u selu Makcima kod Velikog Gradišta"
-                place = [self.nominative(p, keep=True) for p in place]
+                place = [self.nominative(p, keep=True, locative=bool(locative) and i == 0) for i, p in enumerate(place)]
             bp = ', '.join(place)
             bp = re.sub(r',\s*\(', ' (', bp)                               # "Budisava, (Titel)"
             bp = re.sub(r'\s+-\s+', ', ', bp)                              # "Ćuić Krčevina - T. Korenica"
@@ -328,7 +328,7 @@ class Extractor:
         ('ima', 'i'), ('ama', 'e'), ('iji', 'ija'), ('ci', 'ka'), ('ci', 'ca'), ('zi', 'ga'), ('si', 'ha'), ('u', ''), ('u', 'o'), ('u', 'a'),
         ('ju', 'j'), ('ju', 'je'), ('om', 'o'), ('em', 'e'), ('i', 'a'), ('i', 'e'), ('oj', 'a'), ('oj', 'o'), ('om', 'i'), ('om', ''), ('em', 'i'),
         ('eg', 'i'), ('og', 'i'), ('og', 'o'), ('e', 'a'), ('a', ''), ('a', 'o'), ('a', 'e'), ('a', 'i'), ('ova', 'ovi'), ('eva', 'evi'), ('aca', 'ci'),
-        ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('ca', 'ac'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
+        ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('cu', 'ac'), ('ca', 'ac'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
         ('aka', 'ci'), ('ra', 'ar'),
     ]
 
@@ -339,23 +339,29 @@ class Extractor:
                 out.add(word[:-len(suf)] + rep)
         return out
 
-    def _known(self, phrase: str) -> str | None:
+    def _known(self, phrase: str, locative: bool = False) -> str | None:
+        """locative: the phrase follows "u" ("u Gradačcu"), so a form read earlier as printed may be in the corpus
+        too; a nominative far more common than it wins."""
         words = phrase.split()
         if not words or len(words) > 4:
             return None
-        if self.places.get(phrase):
+        n0 = self.places.get(phrase, 0)
+        if n0 and not locative:
             return phrase                                                 # already a known nominative
         best = None
         for combo in product(*(self._variants(w) for w in words)):
             cand = ' '.join(combo)
             n = self.places.get(cand, 0)
-            if n and (best is None or n > best[0]):
+            if cand != phrase and n and (best is None or n > best[0]):
                 best = (n, cand)
+        if n0 and not (best and best[0] >= (max(5, n0 / 2) if locative else 3 * n0)):
+            return phrase
         return best[1] if best else None
 
-    def nominative(self, clause: str, keep: bool = False) -> str:
+    def nominative(self, clause: str, keep: bool = False, locative: bool = False) -> str:
         """'na Sutjesci' -> 'Sutjeska'; 'u selu Grabovo kod Vukovara' -> 'Grabovo, Vukovar'; unknown -> as printed
-        (keep=True: unknown parts stay as they are, the known ones are still converted)."""
+        (keep=True: unknown parts stay as they are, the known ones are still converted; locative=True: the clause
+        followed "u", its first part is in the locative)."""
         parts = [p for p in re.split(r',\s*|\s+-\s+|\s+(?=kod\s|pri\s)', clause) if p.strip()]
         names, bare = [], []
         for p in parts:
@@ -363,7 +369,7 @@ class Extractor:
             p = re.sub(rf'^{PREP}\s+', '', p.strip())
             p = re.sub(r'^(?:selu|selo|s\.)\s+', '', p)
             bare.append(not prep or prep.group(0).strip() in ('s.', 'selo'))
-            known = self._known(p)
+            known = self._known(p, locative=(locative and not names) or not bare[-1])   # after u/kod/na: inflected
             if not known:
                 if keep or bare[-1]:
                     names.append(p)                                       # printed in the nominative already: "s. Nijemci, Vinkovci"
@@ -465,6 +471,12 @@ class Extractor:
         if code == 35:
             # "Borci 32. divizije NOVJ": "r. 1923, s. Kloštar, Ivanić Grad, Hrvat, ..." (the roster has names only)
             text = re.sub(r'^r\.\s*(?=1[89]\d\d)', 'rođen ', text)
+        if code == 52:
+            # 18. hrvatska: "rođen 1920. godine u Gradačcu, SRBiH, Musliman. zemljoradnik": the republic is no place
+            text = re.sub(r',?\s*\b(?:SR\s*-?\s*BiH|SRBiH|BiH|SR Srbija|SR Hrvatska|SR Crna Gora|SR Slovenija|SAP Vojvodina)\b', '',
+                          text)
+            text = re.sub(r'\b(Musliman|Srbin|Hrvat|Jugosloven)(ka|kinja|ica)?\.\s', r'\1\2, ', text)
+            text = re.sub(r'^(ro[dđ]en[a]?\s+1[89]\d\d)\.?\s*godine\s+(?=u\s)', r'\1, ', text)   # "... godine u Gradačcu"
         if code == 51:
             # 3. makedonska's dates have Roman months the scan garbled ("16-1U-1945. god."); the parser reads them
             text = re.sub(r'\s+\S+-\S*-\S*\d\S*(?:\s*god\.)?', '', text)
@@ -519,7 +531,7 @@ def build_extractor(brigades) -> Extractor:
     for code, (_, d) in brigades.items():
         for s in d:
             info = re.sub(r'^(?:(?:zvan[ai]|ili)\s[^;]{0,60};\s*)+', '', s.get('additional_info') or '')
-            if re.search(r'\brođen[a]?\s+(?:\S+\s+)?u\s+(?!s\.|selu)', info[:40]):
+            if re.search(r'\bro[dđ]en[a]?\s+(?:\S+\s+){0,2}u\s+(?!s\.|selu)', info[:50]):   # "rođen 1923. godine u"
                 continue                                                  # "rođen u Donjem Lapcu" is a locative, not a place name
             bp = ex.life(info, code).get('birth_place', '')
             for p in re.split(r',\s*', bp):

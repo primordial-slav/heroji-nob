@@ -620,5 +620,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/3-makedonska.jpg',
     brigadeName: '3. makedonska brigada',
     description: 'Spisak poginulih boraca brigade: odakle su, godina rođenja, gde su i kada pali (str. 359–368 knjige)'
+  },
+  {
+    id: '18-hrvatska',
+    title: 'Osamnaesta hrvatska istočnobosanska brigada — spisak boraca',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/18-hrvatska.pdf',
+    thumbnail: '/images/pdf-thumbs/18-hrvatska.jpg',
+    brigadeName: '18. hrvatska istočnobosanska brigada',
+    description: 'Spisak boraca brigade, preživelih i poginulih: godina i mesto rođenja, narodnost, zanimanje, kada su stupili u brigadu, dužnost, sudbina (str. 582–696 knjige)'
   }
 ]
