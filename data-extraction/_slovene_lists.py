@@ -15,7 +15,10 @@ import json
 import re
 from collections import Counter
 
-from _parser_scaffold import _record
+import pdfplumber
+
+from _parser_scaffold import _page_lines, _record
+from pdf_coords import viewer_offset
 
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 
@@ -37,29 +40,36 @@ def given_names() -> Counter:
     return _GIVEN
 
 
+# the first word of a place, not of a name
+PLACE_WORD = re.compile(r'^(?:Sv|Vel|Mal|Zg|Sp|Gor|Dol|Nova?|Stara?|Gorenj[aei]|Dolenj[aei]|Spodnj[aei]|Zgornj[aei]|Velik[aeio]|Mal[aeio]|'
+                        r'Gornj[aei]|Donj[aei]|Srednj[aei]|Trbovlje|Tolmin|Postojna|Ljubljana|Jesenice)\b')
+
+
 class Indent:
     """prepare_fn and line_filter: marks each line that starts an entry with '§<kind>§ ' (kind: 's' roster, 'p'
     fallen) and drops headings and page numbers. An entry starts at the column's margin, measured near the line
     (within 60 pt above and below), so the scan's skew doesn't move it; continuation lines sit ~9 pt in."""
 
-    def __init__(self, padli_from: int | None, headings: re.Pattern, padli_to: int | None = None):
+    def __init__(self, padli_from: int | None, headings: re.Pattern, padli_to: int | None = None,
+                 comma_after_first_line: bool = False):
+        self.comma = comma_after_first_line                                  # books that print no commas: the place's line
         self.padli_from = padli_from                                         # the pages of the list of the fallen
         self.padli_to = padli_to
         self.headings = headings
-        self.split: dict = {}                                                # page -> the x between its two columns
+        self.split: dict = {}                                                # page -> where each column after the first starts
         self.cols: dict = {}
 
     def prepare(self, lines: list[dict]) -> None:
         keep = [ln for ln in lines if ln['text'].strip() and not re.fullmatch(r'[\d\W]{1,5}', ln['text'].strip())
                 and not self.headings.match(ln['text'].strip())]
-        for page in {ln['page'] for ln in keep}:
-            xs = [ln['x'] for ln in keep if ln['page'] == page]
-            self.split[page] = (min(xs) + max(xs)) / 2
+        for page in {ln['page'] for ln in keep}:                            # columns: line starts more than 40 pt apart
+            xs = sorted(ln['x'] for ln in keep if ln['page'] == page)
+            self.split[page] = [b for a, b in zip(xs, xs[1:]) if b - a > 40]
         for ln in keep:
             self.cols.setdefault(self.col(ln), []).append((ln['y'], ln['x']))
 
     def col(self, ln: dict) -> tuple:
-        return ln['page'], ln['x'] > self.split.get(ln['page'], 250)
+        return ln['page'], sum(1 for b in self.split.get(ln['page'], []) if ln['x'] >= b - 1)
 
     def margin(self, ln: dict) -> float:
         near = sorted(x for y, x in self.cols.get(self.col(ln), []) if abs(y - ln['y']) <= 60)
@@ -82,10 +92,14 @@ class Indent:
         name = rf'^\S+ (?:(?:dr|ing|arh)\. )?[{U}][{L}]+(?:-[{U}]\S*)?'
         strict = re.match(name + r'(?:[,.]| 1[89]\d\d)', t)
         bare = re.fullmatch(r'\S+ (\S+)', t)                                       # "Ažman Ivan": a name and nothing else
-        two = re.match(rf'^[{U}][{L}]+(?:-[{U}][{L}]+)? [{U}][{L}]+', t)                # "Hujs Friderik": a name and nothing else
-        loose = strict or re.search(r',|1[89]\d\d', t) or (bare and given_names()[bare.group(1)] > 0) or two
+        two = re.match(rf'^([{U}][{L}]+)(?:-[{U}][{L}]+)? ([{U}][{L}]+)', t)            # "Hujs Friderik": a name and nothing else
+        pair = bare or two
+        second = pair.group(pair.lastindex) if pair else ''
+        # "Gorenja Trebuša", "Sv. Ana": a place, unless the second word is a name ("Mali Anton")
+        place = re.match(r'^\w+\.', t) or (re.match(PLACE_WORD, t) and given_names()[second] < 3)
+        loose = strict or re.search(r',|1[89]\d\d', t) or (pair and not place)
         if starts and ((indent < 4 and loose) or (indent < 14 and strict)):
-            t = f'§{kind}§ ' + t
+            t = f'§{kind}§ ' + t + (',' if self.comma and not t.endswith(',') else '')
         ln['text'] = t
         return True
 
@@ -132,6 +146,10 @@ def name_part(head: str) -> tuple[str, str, list[str]]:
     for m in list(re.finditer(r'\(?\b((?:roj|por|ud)\.)\s*([^\s,()]+)\)?', head)):   # "Justina roj. Kavšek", "(por. Zgavec)"
         notes.append(f'{m.group(1)} {m.group(2)}')
     head = re.sub(r'\(?\b(?:roj|por|ud)\.\s*[^\s,()]+\)?', ' ', head)
+    m = re.search(r'\s[rR]\.(?:\s*)([A-ZČŠŽ][a-zčšž]+)', head)                       # "Fidel r. Maslo Kristina"
+    if m:
+        notes.append('roj. ' + m.group(1))
+        head = head[:m.start()] + head[m.end():]
     if '†' in head:                                                         # "Butara Ema†"
         notes.append('†')
     head = re.sub(r'(?<=[a-zčšž])—(?=[A-ZČŠŽ])', '-', head.replace('†', ' '))   # "Jože—Mito"
@@ -147,9 +165,11 @@ def name_part(head: str) -> tuple[str, str, list[str]]:
         out[:2] = [out[0] + out[1]]                                          # "No vina Rado"
     other = [w.strip('()') for w in out[1:2] if w.startswith('(') and w.endswith(')')]
     out = [w for w in out if w.strip('()') not in other]                     # "Čok (Cioch) Anton"
+    nick = [w.strip('()') for w in out[2:] if w.startswith('(') and w.endswith(')')]
+    out = [w for w in out if w.strip('()') not in nick]                      # "Bavčar Emil (Rajko)"
     pre = [w for w in out if w in ('dr.', 'ing.', 'mr.', 'arh.', 'ml.', 'st.')]                # "Ivan ml.": the younger
     out = [w for w in out if w not in pre]
-    if len(out) > 2 and out[0] in ('De', 'Del', 'Di', 'Da', 'Van', 'Von'):    # "De Gleria Mitja"
+    if len(out) > 2 and out[0] in ('De', 'Del', 'Della', 'D.', 'Di', 'Da', 'Van', 'Von'):    # "De Gleria Mitja"
         out[:2] = [out[0] + ' ' + out[1]]
     last = out[0] if out else ''
     rest = ' '.join(out[1:])
@@ -159,7 +179,7 @@ def name_part(head: str) -> tuple[str, str, list[str]]:
         given = ''.join(parts)                                               # "Pa vel", "J anko": one name spaced apart
     given = read_given(given.strip())
     alias = re.sub(r'\s+(?=[{L}])'.replace('{L}', L), '', alias.strip())     # "Dra vin" = Dravin
-    notes = pre + ['ili ' + o for o in other] + (['zvani ' + alias] if alias else []) + notes
+    notes = pre + ['ili ' + o for o in other] + (['zvani ' + alias] if alias else []) + ['zvani ' + n for n in nick] + notes
     return last, given, notes
 
 
@@ -206,3 +226,46 @@ def parse_fallen(text: str) -> dict:
 
 def parse(text: str) -> dict:
     return parse_fallen(text) if text.startswith('§p§') else parse_roster(text)
+
+
+def gutters(page, offset: tuple[float, float], ncols: int) -> list[float]:
+    """The ncols - 1 x positions (viewer space) that the fewest words cross, one near each k/ncols of the page."""
+    dx = offset[0]
+    words = page.extract_words(keep_blank_chars=False)
+    width = float(page.width)
+    out = []
+    xs0 = [w['x0'] - dx for w in words]
+    lo, hi = (min(xs0), max(w['x1'] - dx for w in words)) if words else (0, width)
+    for k in range(1, ncols):
+        centre = lo + (hi - lo) * k / ncols                                  # between the text's own edges
+        xs = range(int(centre - (hi - lo) / (2 * ncols)), int(centre + (hi - lo) / (2 * ncols)))
+        cover = [sum(1 for w in words if w['x0'] - dx - 1 <= x <= w['x1'] - dx + 1) for x in xs]
+        low = min(cover)
+        runs, start = [], None                                               # the widest run of the least-crossed x
+        for i, c in enumerate(cover + [low + 1]):
+            if c == low and start is None:
+                start = i
+            elif c != low and start is not None:
+                runs.append((i - start, start, i - 1))
+                start = None
+        _, a, b = max(runs)
+        out.append(float(xs[(a + b) // 2]))
+    return out
+
+
+def columns_reader(ncols: int):
+    """extract_fn for books in ncols columns: each page's lines, column by column."""
+    def extract(pdf_path: str, start_page: int, end_page: int | None) -> list[dict]:
+        lines: list[dict] = []
+        with pdfplumber.open(pdf_path) as pdf:
+            stop = min(end_page, len(pdf.pages)) if end_page else len(pdf.pages)
+            for n in range(start_page - 1, stop):
+                page = pdf.pages[n]
+                offset = viewer_offset(page)
+                dx = offset[0]
+                cuts = [-1e9] + gutters(page, offset, ncols) + [1e9]
+                for a, b in zip(cuts, cuts[1:]):
+                    part = page.filter(lambda o, a=a, b=b: o.get('object_type') != 'char' or a <= o['x0'] - dx < b)
+                    lines.extend(_page_lines(part, n + 1, offset))
+        return lines
+    return extract

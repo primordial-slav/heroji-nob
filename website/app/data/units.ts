@@ -616,7 +616,7 @@ export const units: Unit[] = [
     nameEn: 'Cankar Brigade',
     description: 'Formirana 28. septembra 1942. kod Lapinja na Kočevskom. Poginuli i preživeli borci.',
     image: '/images/cankarjeva-brigada.jpg',
-    soldierCount: 2896,
+    soldierCount: 2897,
     dataFile: '/cankarjeva-soldiers.json',
     pdfFiles: ['/pdfs/cankarjeva.pdf']
   },
@@ -626,7 +626,7 @@ export const units: Unit[] = [
     nameEn: 'Gubec Brigade',
     description: 'Formirana 4. septembra 1942. kod Trebelnog iznad Mokronoga. Poginuli i preživeli borci.',
     image: '/images/gubceva-brigada.jpg',
-    soldierCount: 2970,
+    soldierCount: 2996,
     dataFile: '/gubceva-soldiers.json',
     pdfFiles: ['/pdfs/gubceva.pdf']
   },
@@ -636,9 +636,19 @@ export const units: Unit[] = [
     nameEn: '12th Slovene Brigade',
     description: 'Formirana 24. septembra 1943. u Mokronogu. Poginuli i preživeli borci.',
     image: '/images/dvanajsta-brigada.jpg',
-    soldierCount: 1657,
+    soldierCount: 1659,
     dataFile: '/dvanajsta-soldiers.json',
     pdfFiles: ['/pdfs/dvanajsta.pdf']
+  },
+  {
+    id: 'gradnikova-brigada',
+    name: 'Gradnikova brigada',
+    nameEn: 'Gradnik Brigade',
+    description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade.',
+    image: '/images/gradnikova-brigada.jpg',
+    soldierCount: 3661,
+    dataFile: '/gradnikova-soldiers.json',
+    pdfFiles: ['/pdfs/gradnikova.pdf']
   }
   // Add more units here as you get more data
 ]

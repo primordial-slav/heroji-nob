@@ -138,6 +138,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam gubčevcev, ki so preživeli vojno (str. 979 in naprej), in seznam padlih (str. 1016 in naprej)',
     'dvanajsta':
       'Seznam padlih borcev brigade in seznam borcev, ki so preživeli vojno, na koncu knjige',
+    'gradnikova':
+      'Seznam v brigadi padlih borcev in seznam drugih borcev brigade, ki so preživeli vojno ali niso padli v njej (str. 840 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -265,6 +267,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на бригадата што ја преживеале војната (стр. 979 и натаму) и список на нејзините загинати (стр. 1016 и натаму)',
     'dvanajsta':
       'Список на загинатите борци на бригадата и список на оние што ја преживеале војната, на крајот на книгата',
+    'gradnikova':
+      'Список на борците загинати во бригадата и список на другите: оние што ја преживеале војната или не загинале додека биле во неа (стр. 840 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -391,6 +395,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the brigade’s members who survived the war (pp. 979 ff.) and of its fallen (pp. 1016 ff.)',
     'dvanajsta':
       'Lists of the brigade’s fallen and of those who survived the war, at the end of the book',
+    'gradnikova':
+      'Lists of the Partisans killed in the brigade and of its other members, who survived the war or did not fall while in it (pp. 840 ff.)',
   },
 }
 

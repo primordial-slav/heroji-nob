@@ -755,5 +755,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/dvanajsta.jpg',
     brigadeName: '12. slovenačka brigada',
     description: 'Spisak poginulih boraca brigade i spisak onih koji su preživeli rat, na kraju knjige'
+  },
+  {
+    id: 'gradnikova',
+    title: 'Gradnikova brigada — pregled borcev',
+    author: 'Stanko Petelin',
+    pdfPath: '/pdfs/gradnikova.pdf',
+    thumbnail: '/images/pdf-thumbs/gradnikova.jpg',
+    brigadeName: 'Gradnikova brigada',
+    description: 'Spisak boraca poginulih u brigadi i spisak ostalih: onih koji su preživeli rat ili nisu poginuli dok su bili u njoj (str. 840 i dalje)'
   }
 ]

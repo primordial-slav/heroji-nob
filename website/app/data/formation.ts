@@ -205,6 +205,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-09-24', place: 'Mokronog', source: 'https://znaci.org/00003/814.pdf',
     note: 'Knjiga brigade (Ambrožič-Novljan): ustanovni miting u Mokronogu; brigada nastala od jezgra Šlandrove brigade i 4. bataljona Gubčeve.',
   },
+  'gradnikova-brigada': {
+    date: '1943-04', place: 'Golobar kod Bovca', source: 'https://znaci.org/00003/825.pdf',
+    note: 'Knjiga brigade (Petelin): od Severnoprimorskog odreda; ustanovni zbor na Golobaru na uskrsni ponedeljak, 26. aprila 1943, razbio je napad Italijana.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

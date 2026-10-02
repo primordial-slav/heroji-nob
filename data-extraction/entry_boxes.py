@@ -110,6 +110,7 @@ TWO_COLUMN = {
 # Books printed in more columns: {file: columns}; gutter k is looked for around k/columns of the width
 MULTI_COLUMN = {
     '32-divizija.pdf': 4,           # a roster, names only
+    'gradnikova.pdf': 3,            # Gradnikova: the fallen and the others, three columns
 }
 
 

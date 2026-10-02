@@ -594,6 +594,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    64: {
+        'name': 'Gradnikova',
+        'json_file': 'gradnikova-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Bufolin Zdravko-Valentin / 1927 Šempeter": the place on the next line, no commas
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

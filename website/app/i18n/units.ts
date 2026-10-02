@@ -299,6 +299,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 24. septembra 1943 v Mokronogu. Padli in preživeli borci.',
   },
+  'gradnikova-brigada': {
+    name: 'Gradnikova brigada',
+    description:
+      'Ustanovljena aprila 1943 na Golobarju pri Bovcu. Padli borci in drugi borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -589,6 +594,11 @@ const mk: Record<string, UnitText> = {
     name: '12-та словенечка бригада',
     description:
       'Формирана на 24 септември 1943 во Мокроног. Загинати и преживеани борци.',
+  },
+  'gradnikova-brigada': {
+    name: 'Градникова бригада',
+    description:
+      'Формирана во април 1943 на Голобар кај Бовец. Загинати борци и другите борци на бригадата.',
   },
 }
 
@@ -882,6 +892,11 @@ const en: Record<string, UnitText> = {
     name: '12th Slovene Brigade',
     description:
       'Formed on 24 September 1943 in Mokronog. Partisans who were killed and those who survived.',
+  },
+  'gradnikova-brigada': {
+    name: 'Gradnik Brigade',
+    description:
+      'Formed in April 1943 on Golobar near Bovec. Partisans who were killed, and the brigade’s other members.',
   },
 }
 
