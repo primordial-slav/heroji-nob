@@ -444,6 +444,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 15. septembra 1944 v Slavkovici pri Ljigu. Vojni seznam starešin in borcev brigade ter padli.',
   },
+  'toplicki-odred': {
+    name: 'Toplički partizanski odred',
+    description:
+      'Ustanovljen 3. avgusta 1941 v Ajdanovcu pri Prokuplju. Borci na dan ustanovitve, padli in umrli, narodni heroji odreda.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -879,6 +884,11 @@ const mk: Record<string, UnitText> = {
     name: '1-ва коњаничка бригада',
     description:
       'Формирана на 15 септември 1944 во Славковица кај Љиг. Воениот список на старешините и борците на бригадата и загинатите.',
+  },
+  'toplicki-odred': {
+    name: 'Топлички партизански одред',
+    description:
+      'Формиран на 3 август 1941 во Ајдановац кај Прокупље. Борците на денот на формирањето, загинатите и умрените, народните херои на одредот.',
   },
 }
 
@@ -1317,6 +1327,11 @@ const en: Record<string, UnitText> = {
     name: '1st Cavalry Brigade',
     description:
       'Formed on 15 September 1944 at Slavkovica near Ljig. The brigade’s wartime list of officers and men, and its fallen.',
+  },
+  'toplicki-odred': {
+    name: 'Toplica Partisan Detachment',
+    description:
+      'Formed on 3 August 1941 at Ajdanovac near Prokuplje. Its men on the day it was formed, its dead, and its People’s Heroes.',
   },
 }
 

@@ -855,6 +855,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    93: {
+        'name': 'Toplički NOP odred',
+        'json_file': 'toplicki-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АНЂЕЛКОВИЋ СТОЈАДИН ДИНЕ, 1917, ..." (surname, name, nickname); the other lists name first
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

@@ -321,6 +321,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-09-15', place: 'Slavkovica (Ljig)', source: 'https://znaci.org/00001/278_1.pdf',
     note: 'Gončin, 1. konjička brigada (I deo, Od Slavkovice): „15. septembar, dan predviđen za formiranje i smotru Brigade“; „16. septembra, dan posle formiranja Prve konjičke brigade“. Delovi brigade u Slavkovici kod Ljiga, septembar 1944 (fotografija u knjizi).',
   },
+  'toplicki-odred': {
+    date: '1941-08-03', place: 'Ajdanovac (Prokuplje)', source: 'https://znaci.org/00001/280_12.pdf',
+    note: 'Dinić, Toplički NOP odred, Prilog 1: „Borci Topličkog NOP odreda na dan formiranja, 3. avgusta 1941. godine“; Prilog 2: „U Odredu je od njegovog formiranja u Ajdanovcu, 3. avgusta 1941.“',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

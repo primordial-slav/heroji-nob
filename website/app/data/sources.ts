@@ -1034,5 +1034,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-konjicka.jpg',
     brigadeName: '1. konjička brigada',
     description: 'Spisak palih boraca i rukovodilaca (rođenje, gde su pali) i ratni spisak starešina i boraca brigade, samo imena (str. 317–327)'
+  },
+  {
+    id: 'toplicki-odred',
+    title: 'Toplički NOP odred — borci na dan formiranja, poginuli i umrli, narodni heroji',
+    author: 'Dragoljub Dinić Mića',
+    pdfPath: '/pdfs/toplicki-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/toplicki-odred.jpg',
+    brigadeName: 'Toplički NOP odred',
+    description: 'Borci odreda na dan formiranja, spisak poginulih i umrlih boraca i rukovodilaca i narodni heroji koji su se borili u odredu, sa fotografijama (str. 302–344)'
   }
 ]

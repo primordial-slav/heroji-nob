@@ -929,6 +929,16 @@ export const units: Unit[] = [
     soldierCount: 531,
     dataFile: '/1-konjicka-soldiers.json',
     pdfFiles: ['/pdfs/1-konjicka.pdf']
+  },
+  {
+    id: 'toplicki-odred',
+    name: 'Toplički NOP odred',
+    nameEn: 'Toplica Partisan Detachment',
+    description: 'Formiran 3. avgusta 1941. u Ajdanovcu kod Prokuplja. Borci na dan formiranja, poginuli i umrli, narodni heroji odreda.',
+    image: '/images/toplicki-odred.jpg',
+    soldierCount: 277,
+    dataFile: '/toplicki-odred-soldiers.json',
+    pdfFiles: ['/pdfs/toplicki-odred.pdf']
   }
   // Add more units here as you get more data
 ]

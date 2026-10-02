@@ -200,6 +200,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Pregled padlih in umrlih borcev in starešin: leto in kraj rojstva, poklic, vstop v NOVJ, enota, kje so padli in pokopani (str. 321–385)',
     '1-konjicka':
       'Seznam padlih borcev in starešin (rojstvo, kje so padli) in vojni seznam starešin in borcev brigade, samo imena (str. 317–327)',
+    'toplicki-odred':
+      'Borci odreda na dan ustanovitve, seznam padlih in umrlih borcev in starešin ter narodni heroji, ki so se borili v odredu, s fotografijami (str. 302–344)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -389,6 +391,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Преглед на загинатите и умрените борци и раководители: година и место на раѓање, занимање, стапување во НОВЈ, единица, каде загинале и се погребани (стр. 321–385)',
     '1-konjicka':
       'Список на загинатите борци и раководители (раѓање, каде загинале) и воениот список на старешините и борците на бригадата, само имиња (стр. 317–327)',
+    'toplicki-odred':
+      'Борците на одредот на денот на формирањето, списокот на загинатите и умрените борци и раководители и народните херои што се бореле во одредот, со фотографии (стр. 302–344)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -577,6 +581,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The soldiers and officers who were killed or died: year and place of birth, trade, when they joined, their unit, where they fell and were buried (pp. 321–385)',
     '1-konjicka':
       'The fallen soldiers and officers (birth, where they fell) and the brigade’s wartime list of officers and men, names only (pp. 317–327)',
+    'toplicki-odred':
+      'The detachment’s men on the day it was formed, its fallen and dead soldiers and officers, and the People’s Heroes who fought in it, with their photographs (pp. 302–344)',
   },
 }
 

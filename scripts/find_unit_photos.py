@@ -411,6 +411,13 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "toplicki-odred": dict(
+        name="Toplički NOP odred", tags=[],
+        caption=r"topli[cč]k\w*\s+(?:partizansk\w*\s+|nop\s+|narodnooslobodila[cč]k\w*\s+partizansk\w*\s+)?odred", photo=None,
+        book=dict(pdf="00001/280.pdf", page=176, xref=747, caption="Borci Topličkog NOP odreda na Jastrepcu, 1942."),
+        descreen=1.6,
+        note="Nothing in the gallery names the odred (one photo, 4974, is the staff of the Jastrebački odred in 1944); "
+             "this group is from its own book (the re-typeset page garbles the caption's first line)."),
     "1-konjicka-brigada": dict(
         name="1. konjička brigada", tags=[],
         caption=r"(?<!\d)(?:1\.|prv\w*)\s+konjičk\w*\s+brigad", photo=None,
