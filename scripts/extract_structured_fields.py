@@ -235,7 +235,7 @@ class Extractor:
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
         # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
-        from_place = code in (2, 31, 50, 51, 58, 73, 75) and re.match(rf'^iz\s+[{U}]', t) is not None
+        from_place = code in (2, 31, 50, 51, 58, 73, 75, 79) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
             t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):

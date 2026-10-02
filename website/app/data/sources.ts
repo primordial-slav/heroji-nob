@@ -908,5 +908,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/8-vojvodjanska.jpg',
     brigadeName: '8. vojvođanska brigada',
     description: 'Spisak poginulih i nestalih boraca i rukovodilaca brigade: rođenje, gde su i kada pali ili nestali (str. 675–722)'
+  },
+  {
+    id: '19-sjevernodalmatinska',
+    title: 'Devetnaesta sjevernodalmatinska divizija — popis poginulih i umrlih',
+    author: 'Dragutin Grgurević',
+    pdfPath: '/pdfs/19-sjevernodalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/19-sjevernodalmatinska.jpg',
+    brigadeName: '19. severnodalmatinska divizija',
+    description: 'Popis poginulih i umrlih boraca divizije od formiranja do kraja rata: odakle su, gde su i kada pali (str. 253–299)'
   }
 ]

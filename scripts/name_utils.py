@@ -729,6 +729,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    79: {
+        'name': '19. Sjevernodalmatinska divizija',
+        'json_file': '19-sjevernodalmatinska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ALAVANJA Ante SAVA, iz Donjeg Karina, u borbi kod Plitvičkog Leskovca, 30. III 1945."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

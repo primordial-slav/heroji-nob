@@ -789,6 +789,16 @@ export const units: Unit[] = [
     soldierCount: 1113,
     dataFile: '/8-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/8-vojvodjanska.pdf']
+  },
+  {
+    id: '19-sjevernodalmatinska-divizija',
+    name: '19. severnodalmatinska divizija',
+    nameEn: '19th North Dalmatian Division',
+    description: 'Formirana 11. oktobra 1943. u Biovičinom Selu u Bukovici. Poginuli i umrli borci divizije.',
+    image: '/images/19-sjevernodalmatinska-divizija.jpg',
+    soldierCount: 1418,
+    dataFile: '/19-sjevernodalmatinska-soldiers.json',
+    pdfFiles: ['/pdfs/19-sjevernodalmatinska.pdf']
   }
   // Add more units here as you get more data
 ]

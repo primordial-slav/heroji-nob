@@ -374,6 +374,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 12. septembra 1944 na jasi Jabuka na Fruški gori. Padli in pogrešani borci in starešine.',
   },
+  '19-sjevernodalmatinska-divizija': {
+    name: '19. severnodalmatinska divizija',
+    description:
+      'Ustanovljena 11. oktobra 1943 v Biovičinem Selu v Bukovici. Padli in umrli borci divizije.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -739,6 +744,11 @@ const mk: Record<string, UnitText> = {
     name: '8-ма војводинска бригада',
     description:
       'Формирана на 12 септември 1944 на чистината Јабука на Фрушка Гора. Загинати и исчезнати борци и старешини.',
+  },
+  '19-sjevernodalmatinska-divizija': {
+    name: '19-та севернодалматинска дивизија',
+    description:
+      'Формирана на 11 октомври 1943 во Биовичино Село во Буковица. Загинати и починати борци на дивизијата.',
   },
 }
 
@@ -1107,6 +1117,11 @@ const en: Record<string, UnitText> = {
     name: '8th Vojvodina Brigade',
     description:
       'Formed on 12 September 1944 at the Jabuka clearing on Fruška Gora. Partisans and officers who were killed or went missing.',
+  },
+  '19-sjevernodalmatinska-divizija': {
+    name: '19th North Dalmatian Division',
+    description:
+      'Formed on 11 October 1943 at Biovičino Selo in Bukovica. The division’s Partisans who were killed or died.',
   },
 }
 

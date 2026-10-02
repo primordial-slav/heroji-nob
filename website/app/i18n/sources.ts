@@ -172,6 +172,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznami borcev: kosovsko-metohijska bataljona, iz katerih je bila brigada ustanovljena, borci, ki so se pridružili leta 1944 iz Porečja in Tetova ter od Junika in Dečanov, padli in ranjeni (str. 351–383)',
     '8-vojvodjanska':
       'Seznam padlih in pogrešanih borcev in voditeljev brigade: rojstvo, kje in kdaj so padli ali izginili (str. 675–722)',
+    '19-sjevernodalmatinska':
+      'Seznam padlih in umrlih borcev divizije od ustanovitve do konca vojne: od kod so bili, kje in kdaj so padli (str. 253–299)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -333,6 +335,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Списоци на борците: косовско-метохиските баталјони од кои е формирана бригадата, борците што се приклучија во 1944 од Поречието и Тетово и од Јуник и Дечани, загинатите и ранетите (стр. 351–383)',
     '8-vojvodjanska':
       'Список на загинатите и исчезнатите борци и раководители на бригадата: раѓање, каде и кога загинале или исчезнале (стр. 675–722)',
+    '19-sjevernodalmatinska':
+      'Список на загинатите и починатите борци на дивизијата од формирањето до крајот на војната: од каде се, каде и кога загинале (стр. 253–299)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -493,6 +497,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Lists of the brigade’s members: the Kosovo-Metohija battalions it was formed from, those who joined in 1944 from Poreče and Tetovo and from Junik and Dečani, its fallen and wounded (pp. 351–383)',
     '8-vojvodjanska':
       'The brigade’s killed and missing Partisans and leaders: birth, where and when they fell or went missing (pp. 675–722)',
+    '19-sjevernodalmatinska':
+      'The division’s Partisans killed or dead from its formation to the end of the war: where they came from, where and when they fell (pp. 253–299)',
   },
 }
 

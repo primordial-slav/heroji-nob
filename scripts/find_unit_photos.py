@@ -339,6 +339,9 @@ UNITS = {
     "8-vojvodjanska-brigada": dict(
         name="8. vojvođanska brigada", tags=[],
         caption=r"(?:8\.|VIII\.?|osm\w*)\s+vojvo\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=14398),
+    "19-sjevernodalmatinska-divizija": dict(
+        name="19. severnodalmatinska divizija", tags=[],
+        caption=r"(?:19\.|XIX\.?|devetnaest\w*)\s+(?:sjever\w*|sever\w*)\s*dalmatinsk\w*\s+(?:udarn\w*\s+)?divizij", photo=14284),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,
