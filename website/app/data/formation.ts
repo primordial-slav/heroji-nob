@@ -181,6 +181,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-05-15', place: 'Srem', source: 'https://znaci.org/00001/70_2.pdf',
     note: 'Knjiga brigade (Panić): autor uzima 15. maj 1943, kada je odluka o formiranju 3. grupe vojvođanskih udarnih bataljona saopštena komandantu; drugi autori uzimaju 2. jun 1943.',
   },
+  'kalnicki-odred': {
+    date: '1942-10-10', place: 'Bijela kod Daruvara', source: 'https://znaci.org/00003/558.pdf',
+    note: 'Knjiga odreda (Milićević, str. 75): formirao ga je štab III. operativne zone u selu Bijela, istočno od Daruvara.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

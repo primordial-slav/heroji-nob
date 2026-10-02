@@ -579,6 +579,16 @@ export const units: Unit[] = [
     soldierCount: 4092,
     dataFile: '/3-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/3-vojvodjanska.pdf']
+  },
+  {
+    id: 'kalnicki-odred',
+    name: 'Kalnički partizanski odred',
+    nameEn: 'Kalnik Partisan Detachment',
+    description: 'Formiran 10. oktobra 1942. u Bijeloj kod Daruvara. Borci odreda, poginuli i preživeli.',
+    image: '/images/kalnicki-odred.jpg',
+    soldierCount: 3273,
+    dataFile: '/kalnicki-odred-soldiers.json',
+    pdfFiles: ['/pdfs/kalnicki-odred.pdf']
   }
   // Add more units here as you get more data
 ]

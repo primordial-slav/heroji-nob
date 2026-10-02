@@ -701,5 +701,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/3-vojvodjanska.jpg',
     brigadeName: '3. vojvođanska brigada',
     description: 'Spiskovi boraca i starešina brigade: poginuli, oni čija je sudbina ostala neutvrđena, i preživeli (str. 479 i dalje)'
+  },
+  {
+    id: 'kalnicki-odred',
+    title: 'Kalnički partizanski odred — spisak boraca',
+    author: 'Žarko Milićević',
+    pdfPath: '/pdfs/kalnicki-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/kalnicki-odred.jpg',
+    brigadeName: 'Kalnički partizanski odred',
+    description: 'Spisak boraca Kalničkoga partizanskog odreda, poginulih i preživelih (str. 311 i dalje)'
   }
 ]

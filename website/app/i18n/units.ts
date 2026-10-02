@@ -269,6 +269,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 15. maja 1943 v Sremu. Padli borci in poveljniki, tisti, katerih usoda ni znana, in preživeli.',
   },
+  'kalnicki-odred': {
+    name: 'Kalniški partizanski odred',
+    description:
+      'Ustanovljen 10. oktobra 1942 v Bijeli pri Daruvarju. Borci odreda, padli in preživeli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -529,6 +534,11 @@ const mk: Record<string, UnitText> = {
     name: '3-та војводинска бригада',
     description:
       'Формирана на 15 мај 1943 во Срем. Загинати борци и старешини, оние чија судбина остана неутврдена, и преживеаните.',
+  },
+  'kalnicki-odred': {
+    name: 'Калнички партизански одред',
+    description:
+      'Формиран на 10 октомври 1942 во Бијела кај Дарувар. Борци на одредот, загинати и преживеани.',
   },
 }
 
@@ -792,6 +802,11 @@ const en: Record<string, UnitText> = {
     name: '3rd Vojvodina Brigade',
     description:
       'Formed on 15 May 1943 in Srem. Partisans and officers who were killed, those whose fate remains unknown, and the survivors.',
+  },
+  'kalnicki-odred': {
+    name: 'Kalnik Partisan Detachment',
+    description:
+      'Formed on 10 October 1942 at Bijela near Daruvar. Members of the detachment, those killed and the survivors.',
   },
 }
 

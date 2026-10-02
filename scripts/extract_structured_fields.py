@@ -189,6 +189,8 @@ class Extractor:
     def life(self, text: str, code: int) -> dict:
         out = {}
         t = text
+        if code == 58:
+            t = re.sub(r'^(?:dr\.;\s*)?r\.\s*(?=1[89]\d\d)', 'rođen ', t)     # Kalnički odred: "r. 1922; Martinišće, Zabok"
         if code == 51:
             # 3. makedonska: where he came from, then the year: "iz s. Nikuline, rođen 1922. god., poginuo ..."
             t = re.sub(r',?\s*\brođen[a]?\s+[^,]*', '', t)
@@ -225,7 +227,7 @@ class Extractor:
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
         # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
-        from_place = code in (2, 31, 50, 51) and re.match(rf'^iz\s+[{U}]', t) is not None
+        from_place = code in (2, 31, 50, 51, 58) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
             t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
@@ -328,7 +330,7 @@ class Extractor:
         ('ima', 'i'), ('ama', 'e'), ('iji', 'ija'), ('ci', 'ka'), ('ci', 'ca'), ('zi', 'ga'), ('si', 'ha'), ('u', ''), ('u', 'o'), ('u', 'a'),
         ('ju', 'j'), ('ju', 'je'), ('om', 'o'), ('em', 'e'), ('i', 'a'), ('i', 'e'), ('oj', 'a'), ('oj', 'o'), ('om', 'i'), ('om', ''), ('em', 'i'),
         ('eg', 'i'), ('og', 'i'), ('og', 'o'), ('e', 'a'), ('a', ''), ('a', 'o'), ('a', 'e'), ('a', 'i'), ('ova', 'ovi'), ('eva', 'evi'), ('aca', 'ci'),
-        ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('cu', 'ac'), ('ca', 'ac'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
+        ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('cu', 'ac'), ('ca', 'ac'), ('ca', 'ec'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
         ('aka', 'ci'), ('ra', 'ar'),
     ]
 
@@ -471,6 +473,11 @@ class Extractor:
         if code == 35:
             # "Borci 32. divizije NOVJ": "r. 1923, s. Kloštar, Ivanić Grad, Hrvat, ..." (the roster has names only)
             text = re.sub(r'^r\.\s*(?=1[89]\d\d)', 'rođen ', text)
+        if code == 58:
+            # Kalnički odred: "r. 1922; Martinišće, Zabok; u KPO od lipnja 1943." or "iz Luke Ludbreške, Ludbreg."
+            text = re.sub(r'^(?:dr\.;\s*)?r\.\s*(?=1[89]\d\d)', 'rođen ', text)
+            # "poginuo u Šemovcu (Varaždin)": the municipality in brackets
+            text = re.sub(r'\b((?:u|kod|na)\s+[A-ZČĆŽŠĐ][\w ]*?)\s*\(([A-ZČĆŽŠĐ][\w ]*)\)', r'\1, \2', text)
         if code == 53:
             # 11. dalmatinska: the duty, then "r. 18. 3. 1924, Kulen Vakuf, Bihać, zemljoradnik, ..."
             text = re.sub(r'(^|[\s,])r\.\s*(?=\d)', r'\1rođen ', text, count=1)

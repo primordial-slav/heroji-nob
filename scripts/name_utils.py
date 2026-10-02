@@ -540,6 +540,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'upper_all',
     },
+    58: {
+        'name': 'Kalnički odred',
+        'json_file': 'kalnicki-odred-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "ČIŽIĆ ANDRIJA, Tome, r. 1923; Gornja Višnjica, Ivanec; u KPO od 1942."
+        'has_fathers_name': True,     # after the given name; the parser sets the nominative
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

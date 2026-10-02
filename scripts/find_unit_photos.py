@@ -236,6 +236,12 @@ UNITS = {
     "3-vojvodjanska-brigada": dict(
         name="3. vojvođanska brigada", tags=["3-vojvodjanska-udarna-brigada"],
         caption=nth(3, r"vojvo[dđ]j?ansk"), photo=4863),
+    "kalnicki-odred": dict(
+        name="Kalnički partizanski odred", tags=["kalnicki-partizanski-odred"],
+        caption=r"kalni[cč]k\w*\s+(?:partizansk\w*\s+|nop\s+)?odred", photo=None,
+        book=dict(pdf="00003/558.pdf", page=410, xref=1807,
+                  caption="Prva četa 1. bataljona KPO u listopadu 1943. u oslobođenom Ludbregu"),
+        note="Nothing in the gallery is tagged with the odred; the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

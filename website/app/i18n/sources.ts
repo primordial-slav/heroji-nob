@@ -126,6 +126,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci in poveljniki brigade, padli od 1942 do 1945, po letih: rojstvo, poklic, dolžnost, kdaj in kje so padli',
     '3-vojvodjanska':
       'Seznami borcev in poveljnikov brigade: padli, tisti, katerih usoda ni znana, in preživeli (str. 479 in naprej)',
+    'kalnicki-odred':
+      'Seznam borcev Kalniškega partizanskega odreda, padlih in preživelih (str. 311 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -241,6 +243,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борци и старешини на бригадата загинати од 1942 до 1945, по години: раѓање, занимање, должност, кога и каде загинале',
     '3-vojvodjanska':
       'Списоци на борците и старешините на бригадата: загинати, оние чија судбина остана неутврдена, и преживеани (стр. 479 и натаму)',
+    'kalnicki-odred':
+      'Список на борците на Калничкиот партизански одред, загинати и преживеани (стр. 311 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -355,6 +359,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans and officers killed from 1942 to 1945, year by year: birth, occupation, duty, when and where they fell',
     '3-vojvodjanska':
       'Lists of the brigade’s Partisans and officers: those killed, those whose fate remains unknown, and the survivors (pp. 479 ff.)',
+    'kalnicki-odred':
+      'List of the members of the Kalnik Partisan Detachment, killed and surviving (pp. 311 ff.)',
   },
 }
 
