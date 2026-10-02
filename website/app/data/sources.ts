@@ -647,5 +647,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/11-dalmatinska.jpg',
     brigadeName: '11. dalmatinska brigada',
     description: 'Popis boraca brigade: poginuli, nestali i preživeli (na dan 15. maja 1945): dužnost, rođenje, zanimanje, kada su stupili u NOB, sudbina (str. 479–600 knjige)'
+  },
+  {
+    id: '12-krajiska-poginuli',
+    title: 'Dvanaesta krajiška NOU brigada — spisak poginulih',
+    author: 'Joco Marjanović, Mile Kukolj, Milutin Vujović, Boro Gaćeša, Rade Ranilović',
+    pdfPath: '/pdfs/12-krajiska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/12-krajiska-poginuli.jpg',
+    brigadeName: '12. krajiška brigada',
+    description: 'Poginuli borci i rukovodioci brigade: dužnost, godina i mesto rođenja, gde su i kada pali'
+  },
+  {
+    id: '12-krajiska-prezivjeli',
+    title: 'Dvanaesta krajiška NOU brigada — spisak preživjelih',
+    author: 'Joco Marjanović, Mile Kukolj, Milutin Vujović, Boro Gaćeša, Rade Ranilović',
+    pdfPath: '/pdfs/12-krajiska-prezivjeli.pdf',
+    thumbnail: '/images/pdf-thumbs/12-krajiska-prezivjeli.jpg',
+    brigadeName: '12. krajiška brigada',
+    description: 'Preživeli borci i rukovodioci brigade: godina i mesto rođenja'
   }
 ]

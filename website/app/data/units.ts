@@ -539,6 +539,16 @@ export const units: Unit[] = [
     soldierCount: 3444,
     dataFile: '/11-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/11-dalmatinska.pdf']
+  },
+  {
+    id: '12-krajiska-brigada',
+    name: '12. krajiška brigada',
+    nameEn: '12th Krajina Brigade',
+    description: 'Formirana 19. februara 1943. u Driniću. Poginuli i preživeli borci i starešine.',
+    image: '/images/12-krajiska-brigada.jpg',
+    soldierCount: 3855,
+    dataFile: '/12-krajiska-soldiers.json',
+    pdfFiles: ['/pdfs/12-krajiska-poginuli.pdf', '/pdfs/12-krajiska-prezivjeli.pdf']
   }
   // Add more units here as you get more data
 ]

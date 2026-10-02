@@ -222,6 +222,11 @@ UNITS = {
         book=dict(pdf="00003/547.pdf", page=28, xref=165, caption="Brigadna kolona na maršu preko Biokova, jesen 1943. godine"),
         crop=(0.0, 0.3, 1.0, 1.0),
         note="Nothing in the gallery is tagged with the brigade; the photo is from its own book (the crop keeps the column)."),
+    "12-krajiska-brigada": dict(
+        name="12. krajiška brigada", tags=["12-krajiska-udarna-brgada"],
+        caption=nth(12, r"kraji[sš]k"), photo=None,
+        book=dict(pdf="00001/168_1.pdf", page=24, xref=151, caption="Grupa boraca 3. bataljona, maja 1944. u okol. Prnjavora"),
+        note="Nothing in the gallery is tagged with the brigade (its tag is spelled 12-krajiska-udarna-brgada); the photo is from its own book."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

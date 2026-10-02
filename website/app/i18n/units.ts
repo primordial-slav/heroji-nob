@@ -249,6 +249,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 2. oktobra 1943 na Biokovu. Padli, pogrešani in preživeli borci.',
   },
+  '12-krajiska-brigada': {
+    name: '12. krajiška brigada',
+    description:
+      'Ustanovljena 19. februarja 1943 v Driniću. Padli in preživeli borci in poveljniki.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -489,6 +494,11 @@ const mk: Record<string, UnitText> = {
     name: '11-та далматинска бригада',
     description:
       'Формирана на 2 октомври 1943 на Биоково. Загинати, исчезнати и преживеани борци.',
+  },
+  '12-krajiska-brigada': {
+    name: '12-та краишка бригада',
+    description:
+      'Формирана на 19 февруари 1943 во Дриниќ. Загинати и преживеани борци и старешини.',
   },
 }
 
@@ -732,6 +742,11 @@ const en: Record<string, UnitText> = {
     name: '11th Dalmatian Brigade',
     description:
       'Formed on 2 October 1943 on Biokovo. Partisans who were killed, went missing or survived.',
+  },
+  '12-krajiska-brigada': {
+    name: '12th Krajina Brigade',
+    description:
+      'Formed on 19 February 1943 in Drinić. Partisans and officers who were killed or survived.',
   },
 }
 

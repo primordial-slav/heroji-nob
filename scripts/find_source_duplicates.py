@@ -132,6 +132,7 @@ LIST_FATE = {
     '17-slavonska-poginuli.pdf': 'fell', '17-slavonska-prezivjeli.pdf': 'lived',
     'treca-proleterska-poginuli-knj3.pdf': 'fell', '3-krajiska-proleterska.pdf': 'fell', 'druga-proleterska.pdf': 'fell',
     '6-krajiska.pdf': 'fell', '6-krajiska-prezivjeli.pdf': 'lived',
+    '12-krajiska-poginuli.pdf': 'fell', '12-krajiska-prezivjeli.pdf': 'lived',
 }
 # Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
 SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'

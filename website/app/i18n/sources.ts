@@ -114,6 +114,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev brigade: padli, pogrešani in preživeli (na dan 15. maja 1945): dolžnost, rojstvo, poklic, vstop v NOB, usoda (str. 479–600 knjige)',
     '7-krajiska-spisak':
       'Preživeli in padli borci in poveljniki od ustanovitve brigade decembra 1942 do konca vojne: rojstvo, narodnost, poklic, vstop v NOB, dolžnost, usoda (str. 447 in naprej)',
+    '12-krajiska-poginuli':
+      'Padli borci in poveljniki brigade: dolžnost, leto in kraj rojstva, kje in kdaj so padli',
+    '12-krajiska-prezivjeli':
+      'Preživeli borci in poveljniki brigade: leto in kraj rojstva',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -217,6 +221,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на бригадата: загинати, исчезнати и преживеани (на 15 мај 1945): должност, раѓање, занимање, кога стапиле во НОБ, судбина (стр. 479–600 од книгата)',
     '7-krajiska-spisak':
       'Преживеани и загинати борци и раководители од формирањето на бригадата декември 1942 до крајот на војната: раѓање, народност, занимање, кога стапиле во НОБ, должност, судбина (стр. 447 и натаму)',
+    '12-krajiska-poginuli':
+      'Загинатите борци и раководители на бригадата: должност, година и место на раѓање, каде и кога загинале',
+    '12-krajiska-prezivjeli':
+      'Преживеаните борци и раководители на бригадата: година и место на раѓање',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -319,6 +327,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans: those killed, the missing, and the survivors (as of 15 May 1945): duty, birth, occupation, when they joined the struggle, fate (pp. 479–600 of the book)',
     '7-krajiska-spisak':
       'Partisans and officers who survived or were killed, from the brigade’s formation in December 1942 to the end of the war: birth, nationality, occupation, when they joined the struggle, duty, fate (pp. 447 ff.)',
+    '12-krajiska-poginuli':
+      'The brigade’s Partisans and officers who were killed: duty, year and place of birth, where and when they fell',
+    '12-krajiska-prezivjeli':
+      'The brigade’s Partisans and officers who survived: year and place of birth',
   },
 }
 

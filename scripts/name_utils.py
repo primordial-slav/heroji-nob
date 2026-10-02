@@ -504,6 +504,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    54: {
+        'name': '12. Krajiška',
+        'json_file': '12-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "Андрић М. Андрија, борац, рођен 1922. у с. Бела Црква, Крупањ, погинуо ..."
+        'has_fathers_name': True,     # the father's initial
+        'fathers_name_form': 'initial',
+        'original_casing': 'title',
+    },
 }
 
 
