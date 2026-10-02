@@ -199,6 +199,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak palih boraca Treće proleterske krajiške brigade s osnovnim matičnim podacima'
   },
   {
+    id: '3-krajiska-spisak-boraca',
+    title: 'Treća krajiška brigada — spisak boraca (zbornik sjećanja, knj. 3)',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/3-krajiska-spisak-boraca.pdf',
+    thumbnail: '/images/pdf-thumbs/3-krajiska-spisak-boraca.jpg',
+    brigadeName: '3. krajiška proleterska udarna brigada',
+    description: 'Spisak boraca brigade koji su se borili u njenom sastavu od 22. 8. 1942. do 9. 5. 1945, preživelih i poginulih: odakle su, zanimanje, kada su stupili u NOB i u brigadu, dužnost, sudbina; s dopunom i prilogom (str. 579 i dalje)'
+  },
+  {
     id: '17-slavonska-poginuli',
     title: 'Sedamnaesta slavonska brigada — poginuli',
     author: 'Zdravko B. Cvetković',

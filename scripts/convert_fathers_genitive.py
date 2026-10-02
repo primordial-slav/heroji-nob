@@ -87,6 +87,7 @@ def pick(g: str, local: Counter, overall: Counter, rare: bool = False) -> str | 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--write', action='store_true', help='append corrections to corrections.json')
+    ap.add_argument('--brigade', type=int, help='convert only this unit (the counts still come from all units)')
     args = ap.parse_args()
 
     live = live_json_files()
@@ -103,6 +104,8 @@ def main():
     new, mapping, undecided = [], Counter(), Counter()
     for code, soldiers in brigades.items():
         if not BRIGADE_CONFIGS[code].get('has_fathers_name') or BRIGADE_CONFIGS[code].get('fathers_name_form') == 'nominative':
+            continue
+        if args.brigade and code != args.brigade:
             continue
         # books that print some fathers as possessives ("Omerov", "Mujin") as well as genitives
         endings = ('a', 'e', 'ov', 'ev', 'in') if BRIGADE_CONFIGS[code].get('fathers_name_form') == 'possessive' \

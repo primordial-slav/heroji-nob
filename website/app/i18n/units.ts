@@ -73,7 +73,7 @@ const sl: Record<string, UnitText> = {
   },
   '3-krajiska-proleterska-brigada': {
     name: '3. krajiška proletarska udarna brigada',
-    description: 'Ustanovljena 22. avgusta 1942 v Kamenici pri Drvarju. Padli borci.',
+    description: 'Ustanovljena 22. avgusta 1942 v Kamenici pri Drvarju. Borci brigade od ustanovitve do konca vojne.',
   },
   '17-slavonska-brigada': {
     name: '17. slavonska udarna brigada',
@@ -300,7 +300,7 @@ const mk: Record<string, UnitText> = {
   },
   '3-krajiska-proleterska-brigada': {
     name: '3-та краишка пролетерска ударна бригада',
-    description: 'Формирана на 22 август 1942 во Каменица кај Дрвар. Загинати борци.',
+    description: 'Формирана на 22 август 1942 во Каменица кај Дрвар. Борците на бригадата од формирањето до крајот на војната.',
   },
   '17-slavonska-brigada': {
     name: '17-та славонска ударна бригада',
@@ -532,7 +532,7 @@ const en: Record<string, UnitText> = {
   },
   '3-krajiska-proleterska-brigada': {
     name: '3rd Krajina Proletarian Assault Brigade',
-    description: 'Formed on 22 August 1942 in Kamenica near Drvar. The fallen.',
+    description: 'Formed on 22 August 1942 in Kamenica near Drvar. Partisans of the brigade from its formation to the end of the war.',
   },
   '17-slavonska-brigada': {
     name: '17th Slavonian Assault Brigade',

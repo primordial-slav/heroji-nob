@@ -154,11 +154,11 @@ export const units: Unit[] = [
     id: '3-krajiska-proleterska-brigada',
     name: '3. krajiška proleterska udarna brigada',
     nameEn: '3rd Krajina Proletarian Assault Brigade',
-    description: 'Formirana 22. avgusta 1942. u Kamenici kod Drvara. Poginuli borci.',
+    description: 'Formirana 22. avgusta 1942. u Kamenici kod Drvara. Borci brigade od formiranja do kraja rata.',
     image: '/images/treca-krajiska-brigada.jpg',
-    soldierCount: 3375,
+    soldierCount: 7297,
     dataFile: '/3-krajiska-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/3-krajiska-proleterska.pdf', '/pdfs/borci-sutjeske-3-krajiska.pdf']
+    pdfFiles: ['/pdfs/3-krajiska-proleterska.pdf', '/pdfs/borci-sutjeske-3-krajiska.pdf', '/pdfs/3-krajiska-spisak-boraca.pdf']
   },
   {
     id: '17-slavonska-brigada',

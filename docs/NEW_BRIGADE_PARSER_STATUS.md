@@ -7,6 +7,7 @@ Source PDFs come from znaci.org (see [ZNACI_ORG_SOLDIER_LIST_CATALOG.md](ZNACI_O
 | Code | Unit | Soldiers | Lists in the book | Notes |
 |-----:|---|---:|---|---|
 | 10 | 3. Krajiška Proleterska | 2,268 | fallen | Two columns; gutter found per page (`col_split_x='auto'`); "NARODNI HEROJ" photo captions dropped |
+| 10 | 3. Krajiška Proleterska — roster | 6,174 read (3,922 records, 2,252 merged into the fallen list and the Sutjeska chapter) | everyone who fought in the brigade, survivors and the fallen | Zbornik sjećanja knj. 3 (znaci.org 00003/394.pdf, PDF pp. 580-1074 → `3-krajiska-spisak-boraca.pdf`): list, "Dopuna", "Prilog". One column, re-typeset by znaci.org from its OCR. `parse_3_krajiska_spisak.py` joins spaced-out surnames (TANASI JEVIĆ → Tanasijević, two whole surnames hyphened), splits entries glued after a full stop, keeps Italian particles (De Santis). IDs from 200001. Fathers to the nominative by `convert_fathers_genitive.py --brigade 10` (corrections); "rođ."/"rod." read as "rođen" by the field extractor (code 10) |
 | 11 | 4. Krajiška | 1,663 | fallen, died, missing | Cyrillic, poor OCR: `repair_cyrillic_ocr` (Ћ read as Б/Е/Н/К/В, Ђ as Б), "roćen" → rođen, Л read as "Ј1", О read as 0; pp. 106-128 are photo captions |
 | 12 | 5. Kozaračka | 1,007 | fallen, missing, died | Diacritics restored against brigades 1-9 |
 | 13 | 6. Krajiška | 1,825 | fallen + "Dopunski spisak" + "Naknadno prikupljeni podaci" | Single column (not two); the book itself lists ~30 soldiers twice (both kept, each links to its own entry) |

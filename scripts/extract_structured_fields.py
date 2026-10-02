@@ -458,6 +458,9 @@ class Extractor:
             text = re.sub(r'\bpog\.', 'poginuo', text)                    # 12. dalmatinska's abbreviation
             # its day and month without a year ("poginuo 27. 4. kod Klane"; the parser dated it by the heading)
             text = re.sub(r'\b(poginu[ol]a?|umr[ol]a?)\s+\d{1,2}[.,]\s*\d{1,2}\.(?!\s*19)\s*', r'\1 ', text)
+        if code == 10:
+            # the brigade's roster (zbornik, knj. 3) abbreviates "rođ.", which the OCR also reads "rod."
+            text = re.sub(r'^-?ro[dđ]\.,?\s*', 'rođen ', text)
         if code == 51:
             # 3. makedonska's dates have Roman months the scan garbled ("16-1U-1945. god."); the parser reads them
             text = re.sub(r'\s+\S+-\S*-\S*\d\S*(?:\s*god\.)?', '', text)

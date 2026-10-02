@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~126,600 WWII Yugoslav partisan soldiers across 51 units (46 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~130,600 WWII Yugoslav partisan soldiers across 51 units (46 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -20,7 +20,7 @@ Historical archive website for searching ~126,600 WWII Yugoslav partisan soldier
 | 7 | 2. Dalmatinska Proleterska | `data-extraction/parse_2_dalmatinska.py` | `2-dalmatinska-soldiers.json` | 1 PDF; Borci Sutjeske chapter | 6,057 |
 | 8 | 4. Splitska Udarna | `data-extraction/parse_4_splitska.py` | `4-splitska-soldiers.json` | 1 PDF | 3,078 |
 | 9 | Prva Vojvođanska | `data-extraction/parse_prva_vojvodjanska.py` | `prva-vojvodjanska-soldiers.json` | 1 PDF | 1,592 |
-| 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` | `3-krajiska-proleterska-soldiers.json` | 1 PDF (two columns); Borci Sutjeske chapter | 3,375 |
+| 10 | 3. Krajiška Proleterska | `data-extraction/parse_3_krajiska_proleterska.py` (fallen); `data-extraction/parse_3_krajiska_spisak.py` (roster, zbornik knj. 3) | `3-krajiska-proleterska-soldiers.json` | 3 PDFs (fallen, two columns; Borci Sutjeske chapter; the roster of everyone who fought in it, zbornik knj. 3, p. 579 on) | 7,297 |
 | 11 | 4. Krajiška | `data-extraction/parse_4_krajiska.py` | `4-krajiska-soldiers.json` | 1 PDF (Cyrillic) | 1,670 |
 | 12 | 5. Kozaračka | `data-extraction/parse_5_kozaracka.py` | `5-kozaracka-soldiers.json` | 1 PDF | 1,020 |
 | 13 | 6. Krajiška | `data-extraction/parse_6_krajiska.py` | `6-krajiska-soldiers.json` | 1 PDF | 1,834 |
@@ -64,7 +64,7 @@ Historical archive website for searching ~126,600 WWII Yugoslav partisan soldier
 | 51 | 3. Makedonska | `data-extraction/parse_3_makedonska.py` | `3-makedonska-soldiers.json` | 1 PDF (Cyrillic; book pp. 359-368, the fallen) | 232 |
 
 Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38, 40-49 and 51 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`. Viktor Kučan's *Borci Sutjeske* (znaci.org 00001/129: every fighter at the Sutjeska, one PDF per brigade, `borci-sutjeske-<unit>.pdf`) is one parser for sixteen brigades: the ten it brings to the site (40-49) and, as a second book, six already here (1, 5, 7, 10, 36, 39; IDs from 100001). Which books on znaci.org have soldier lists is in `docs/ZNACI_ORG_SOLDIER_LIST_CATALOG.md`. Druga proleterska (39) prints no bios: its fallen run on, comma after comma, under each place and date ("Тјентиште (Сутјеска), 1. јуни."), so its parser reads the page itself and gives each soldier the heading's `death_place` and `death_date` (its `HEADINGS` table spells out each heading the text layer garbled).
-A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-; Treća proleterska's fallen: 0005010001-, its reprinted formation list: 0005020001-) and a re-run replaces only the records read from its own PDFs.
+A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-; Treća proleterska's fallen: 0005010001-, its reprinted formation list: 0005020001-; 3. krajiška's roster: 0010200001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
 ## Data Pipeline

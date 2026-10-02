@@ -102,6 +102,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev in poveljnikov brigade, po bojih, od Sućurja 22. septembra 1943 do Ilirske Bistrice 6. maja 1945 (str. 353–366 knjige)',
     '3-makedonska':
       'Seznam padlih borcev brigade: od kod so bili, leto rojstva, kje in kdaj so padli (str. 359–368 knjige)',
+    '3-krajiska-spisak-boraca':
+      'Seznam borcev, ki so se v brigadi borili od 22. 8. 1942 do 9. 5. 1945, preživelih in padlih: od kod so bili, poklic, kdaj so vstopili v NOB in v brigado, dolžnost, usoda; z dopolnilom in prilogo (str. 579 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -193,6 +195,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци и старешини на бригадата, по борбите, од Суќурај на 22 септември 1943 до Илирска Бистрица на 6 мај 1945 (стр. 353–366 од книгата)',
     '3-makedonska':
       'Список на загинатите борци на бригадата: од каде се, година на раѓање, каде и кога загинале (стр. 359–368 од книгата)',
+    '3-krajiska-spisak-boraca':
+      'Список на борците што се бореле во бригадата од 22. 8. 1942 до 9. 5. 1945, преживеани и загинати: од каде се, занимање, кога стапиле во НОБ и во бригадата, должност, судбина; со дополнување и прилог (стр. 579 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -283,6 +287,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans and officers who were killed, battle by battle, from Sućuraj on 22 September 1943 to Ilirska Bistrica on 6 May 1945 (pp. 353–366 of the book)',
     '3-makedonska':
       'The brigade’s Partisans who were killed: where they came from, the year of birth, where and when they fell (pp. 359–368 of the book)',
+    '3-krajiska-spisak-boraca':
+      'Every Partisan who fought in the brigade from 22 August 1942 to 9 May 1945, survivors and the fallen: where they came from, occupation, when they joined the struggle and the brigade, duty and fate; with a supplement and an addendum (pp. 579 ff.)',
   },
 }
 
@@ -307,6 +313,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'seznam padlih, ujetih in pogrešanih',
     'spisak poginulih, umrlih i nestalih': 'seznam padlih, umrlih in pogrešanih',
     'spisak boraca': 'seznam borcev',
+    'spisak boraca (zbornik sjećanja, knj. 3)': 'seznam borcev (zbornik spominov, 3. knjiga)',
     'spiskovi poginulih i rukovodilaca': 'seznama padlih in vodstva',
     'ilustrovana monografija (1942—1992)': 'ilustrirana monografija (1942–1992)',
     'borci brigade na Sutjesci': 'borci brigade na Sutjeski',
@@ -330,6 +337,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'список на загинатите, заробените и исчезнатите',
     'spisak poginulih, umrlih i nestalih': 'список на загинатите, починатите и исчезнатите',
     'spisak boraca': 'список на борците',
+    'spisak boraca (zbornik sjećanja, knj. 3)': 'список на борците (зборник спомени, кн. 3)',
     'spiskovi poginulih i rukovodilaca': 'списоци на загинатите и на раководството',
     'ilustrovana monografija (1942—1992)': 'илустрирана монографија (1942–1992)',
     'borci brigade na Sutjesci': 'борците на бригадата на Сутјеска',
@@ -353,6 +361,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak poginulih, zarobljenih i nestalih': 'the killed, captured and missing',
     'spisak poginulih, umrlih i nestalih': 'the killed, dead and missing',
     'spisak boraca': 'roll',
+    'spisak boraca (zbornik sjećanja, knj. 3)': 'roll (memoirs, vol. 3)',
     'spiskovi poginulih i rukovodilaca': 'the fallen and the leaders',
     'ilustrovana monografija (1942—1992)': 'illustrated history (1942–1992)',
     'borci brigade na Sutjesci': 'the brigade at the Sutjeska',
