@@ -319,6 +319,10 @@ UNITS = {
         book=dict(pdf="00001/87_11.pdf", page=45, xref=321, caption="Grupa boraca - pekara 19. srpske brigade"),
         crop=(0.0, 0.3, 1.0, 0.88), descreen=1.6,
         note="The gallery's only photo naming the brigade (4909, entering Negotin) shows a car in a street; this one is from the book's photo pages."),
+    "22-srpska-brigada": dict(
+        name="22. srpska kosmajska brigada", tags=[],
+        caption=r"(?:22\.|dvadeset\w* drug\w*)\s+srpsk\w*\s+(?:kosmajsk\w*\s+)?brigad|kosmajsk\w*\s+brigad", photo=10182,
+        crop=(0.0, 0.15, 1.0, 0.7)),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

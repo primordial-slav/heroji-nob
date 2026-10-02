@@ -739,6 +739,16 @@ export const units: Unit[] = [
     soldierCount: 3557,
     dataFile: '/19-srpska-soldiers.json',
     pdfFiles: ['/pdfs/19-srpska.pdf']
+  },
+  {
+    id: '22-srpska-brigada',
+    name: '22. srpska kosmajska brigada',
+    nameEn: '22nd Serbian (Kosmaj) Brigade',
+    description: 'Formirana 12. septembra 1944. na Brdnjaku kod Drugovca. Poginuli i preživeli borci i starešine.',
+    image: '/images/22-srpska-brigada.jpg',
+    soldierCount: 1300,
+    dataFile: '/22-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/22-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

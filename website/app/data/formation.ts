@@ -245,6 +245,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-06-12', place: 'Gornja Jošanica', source: 'https://znaci.org/00001/87_1.pdf',
     note: 'Pejčić, Devetnaesta srpska brigada, gl. I (str. 17): formirana u selu Gornja Jošanica 12. juna 1944; jezgro je bio 1. bataljon iz 16. srpske brigade.',
   },
+  '22-srpska-brigada': {
+    date: '1944-09-12', place: 'Brdnjak kod Drugovca', source: 'https://znaci.org/00003/445.pdf',
+    note: 'Gončin, 22. srpska kosmajska brigada (pogl. Svečanost na Brdnjaku): brigada je proglašena na Brdnjaku, između Drugovca i Selevca; spiskovi beleže svakog borca prvog sastava sa 12. 9. 1944.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

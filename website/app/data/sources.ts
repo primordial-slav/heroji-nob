@@ -863,5 +863,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/19-srpska.jpg',
     brigadeName: '19. srpska brigada',
     description: 'Poginuli, nestali i umrli po jedinicama i borci koji su preživeli rat: rođenje, dužnost, kada i gde su pali (str. 411–612)'
+  },
+  {
+    id: '22-srpska',
+    title: '22. srpska kosmajska brigada — poginuli i preživeli borci',
+    author: 'Milorad Gončin',
+    pdfPath: '/pdfs/22-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/22-srpska.jpg',
+    brigadeName: '22. srpska kosmajska brigada',
+    description: 'Poginuli i preživeli borci i starešine brigade: rođenje, kada su stupili u brigadu, dužnost, gde su pali (str. 317–399)'
   }
 ]

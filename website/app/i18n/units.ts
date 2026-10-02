@@ -349,6 +349,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 12. junija 1944 v Gornji Jošanici. Padli, pogrešani in umrli borci ter tisti, ki so vojno preživeli.',
   },
+  '22-srpska-brigada': {
+    name: '22. srbska kosmajska brigada',
+    description:
+      'Ustanovljena 12. septembra 1944 na Brdnjaku pri Drugovcu. Padli in preživeli borci in starešine.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -689,6 +694,11 @@ const mk: Record<string, UnitText> = {
     name: '19-та српска бригада',
     description:
       'Формирана на 12 јуни 1944 во Горња Јошаница. Загинати, исчезнати и починати борци и оние што ја преживеаја војната.',
+  },
+  '22-srpska-brigada': {
+    name: '22-ра српска космајска бригада',
+    description:
+      'Формирана на 12 септември 1944 на Брдњак кај Друговац. Загинати и преживеани борци и старешини.',
   },
 }
 
@@ -1032,6 +1042,11 @@ const en: Record<string, UnitText> = {
     name: '19th Serbian Brigade',
     description:
       'Formed on 12 June 1944 in Gornja Jošanica. Partisans who were killed, went missing or died, and those who survived the war.',
+  },
+  '22-srpska-brigada': {
+    name: '22nd Serbian (Kosmaj) Brigade',
+    description:
+      'Formed on 12 September 1944 at Brdnjak near Drugovac. Partisans and officers who were killed or survived.',
   },
 }
 

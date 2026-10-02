@@ -684,6 +684,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'title',
     },
+    74: {
+        'name': '22. Srpska kosmajska',
+        'json_file': '22-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АНТИЋ Владимира БОЖИДАР, рођен јуна 1919. године у Друговцу, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 
