@@ -65,7 +65,7 @@ const sl: Record<string, UnitText> = {
   },
   '6-krajiska-brigada': {
     name: '6. krajiška udarna brigada',
-    description: 'Ustanovljena 14. oktobra 1942 iz enot Prvega krajiškega odreda. Padli in umrli borci in poveljniki.',
+    description: 'Ustanovljena 14. oktobra 1942 iz enot Prvega krajiškega odreda. Padli in umrli borci in poveljniki ter borci, ki so vojno preživeli.',
   },
   '4-krajiska-brigada': {
     name: '4. krajiška udarna brigada',
@@ -292,7 +292,7 @@ const mk: Record<string, UnitText> = {
   },
   '6-krajiska-brigada': {
     name: '6-та краишка ударна бригада',
-    description: 'Формирана на 14 октомври 1942 од единиците на Првиот краишки одред. Загинати и починати борци и старешини.',
+    description: 'Формирана на 14 октомври 1942 од единиците на Првиот краишки одред. Загинати и починати борци и старешини, и борци што ја преживеаја војната.',
   },
   '4-krajiska-brigada': {
     name: '4-та краишка ударна бригада',
@@ -523,7 +523,7 @@ const en: Record<string, UnitText> = {
   },
   '6-krajiska-brigada': {
     name: '6th Krajina Assault Brigade',
-    description: 'Formed on 14 October 1942 from units of the 1st Krajina Detachment. Partisans and officers who were killed or died.',
+    description: 'Formed on 14 October 1942 from units of the 1st Krajina Detachment. Partisans and officers who were killed or died, and Partisans who survived the war.',
   },
   '4-krajiska-brigada': {
     name: '4th Krajina Assault Brigade',

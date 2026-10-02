@@ -72,6 +72,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf'}
 # moves between odd and even pages.
 TWO_COLUMN = {
     '13-proleterska-spisak.pdf',
+    '6-krajiska-prezivjeli.pdf',
     '17-slavonska-poginuli.pdf',
     '17-slavonska-prezivjeli.pdf',
     '19-bircanska.pdf',
@@ -295,6 +296,7 @@ class PageCache:
 ONE_LINE_ENTRIES = {
     '18-slavonska.pdf': range(30, 55),     # survivors
     '32-divizija.pdf': range(1, 42),       # the roster: one name a line, four columns
+    '6-krajiska-prezivjeli.pdf': range(1, 17),   # survivors: one name a line, two columns
 }
 
 

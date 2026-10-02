@@ -134,11 +134,11 @@ export const units: Unit[] = [
     id: '6-krajiska-brigada',
     name: '6. krajiška udarna brigada',
     nameEn: '6th Krajina Assault Brigade',
-    description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine.',
+    description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine, i borci koji su preživeli rat.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 1834,
+    soldierCount: 3656,
     dataFile: '/6-krajiska-soldiers.json',
-    pdfFiles: ['/pdfs/6-krajiska.pdf']
+    pdfFiles: ['/pdfs/6-krajiska.pdf', '/pdfs/6-krajiska-prezivjeli.pdf']
   },
   {
     id: '4-krajiska-brigada',

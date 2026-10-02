@@ -181,6 +181,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih i umrlih boraca i starješina brigade, s dopunskim spiskom'
   },
   {
+    id: '6-krajiska-prezivjeli',
+    title: 'Šesta krajiška NOU brigada — spisak preživjelih (ratna sjećanja)',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/6-krajiska-prezivjeli.pdf',
+    thumbnail: '/images/pdf-thumbs/6-krajiska-prezivjeli.jpg',
+    brigadeName: '6. krajiška udarna brigada',
+    description: 'Spisak boraca brigade koji su preživeli rat, samo imena, s naknadnim spiskom (str. 747–762 knjige)'
+  },
+  {
     id: '4-krajiska',
     title: 'Četvrta krajiška NOU brigada',
     author: 'Rade Zorić',
