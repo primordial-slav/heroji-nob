@@ -1043,5 +1043,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/toplicki-odred.jpg',
     brigadeName: 'Toplički NOP odred',
     description: 'Borci odreda na dan formiranja, spisak poginulih i umrlih boraca i rukovodilaca i narodni heroji koji su se borili u odredu, sa fotografijama (str. 302–344)'
+  },
+  {
+    id: 'karlovacka',
+    title: 'Karlovačka udarna brigada — borci na dan formiranja i poginuli',
+    author: 'Josip Lulik Pepo, Đuro Zatezalo',
+    pdfPath: '/pdfs/karlovacka.pdf',
+    thumbnail: '/images/pdf-thumbs/karlovacka.jpg',
+    brigadeName: 'Karlovačka udarna brigada',
+    description: 'Popis boraca i rukovodilaca brigade na dan formiranja u Hrašću 5. marta 1944. i popis poginulih boraca i rukovodilaca (str. 379–414)'
   }
 ]

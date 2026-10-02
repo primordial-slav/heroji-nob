@@ -939,6 +939,16 @@ export const units: Unit[] = [
     soldierCount: 277,
     dataFile: '/toplicki-odred-soldiers.json',
     pdfFiles: ['/pdfs/toplicki-odred.pdf']
+  },
+  {
+    id: 'karlovacka-brigada',
+    name: 'Karlovačka udarna brigada',
+    nameEn: 'Karlovac Assault Brigade',
+    description: 'Formirana 5. marta 1944. u Hrašću kod Ozlja. Borci brigade na dan formiranja i poginuli.',
+    image: '/images/karlovacka-brigada.jpg',
+    soldierCount: 842,
+    dataFile: '/karlovacka-soldiers.json',
+    pdfFiles: ['/pdfs/karlovacka.pdf']
   }
   // Add more units here as you get more data
 ]

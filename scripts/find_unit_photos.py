@@ -411,6 +411,11 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "karlovacka-brigada": dict(
+        name="Karlovačka udarna brigada", tags=[],
+        caption=r"karlova[cč]k\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00003/546.pdf", page=109, xref=557, caption="Borci mitraljeske čete 4. bataljona Karlovačke brigade 1944. godine"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "toplicki-odred": dict(
         name="Toplički NOP odred", tags=[],
         caption=r"topli[cč]k\w*\s+(?:partizansk\w*\s+|nop\s+|narodnooslobodila[cč]k\w*\s+partizansk\w*\s+)?odred", photo=None,

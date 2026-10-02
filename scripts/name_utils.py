@@ -864,6 +864,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    94: {
+        'name': 'Karlovačka udarna',
+        'json_file': 'karlovacka-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "ANTONAC M. MATO, 1922, ..." (at formation), "BERT Janka IVAN, 1904, ..." (the fallen)
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

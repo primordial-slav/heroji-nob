@@ -449,6 +449,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 3. avgusta 1941 v Ajdanovcu pri Prokuplju. Borci na dan ustanovitve, padli in umrli, narodni heroji odreda.',
   },
+  'karlovacka-brigada': {
+    name: 'Karlovška udarna brigada',
+    description:
+      'Ustanovljena 5. marca 1944 v Hrašću pri Ozlju. Borci brigade na dan ustanovitve in padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -889,6 +894,11 @@ const mk: Record<string, UnitText> = {
     name: 'Топлички партизански одред',
     description:
       'Формиран на 3 август 1941 во Ајдановац кај Прокупље. Борците на денот на формирањето, загинатите и умрените, народните херои на одредот.',
+  },
+  'karlovacka-brigada': {
+    name: 'Карловачка ударна бригада',
+    description:
+      'Формирана на 5 март 1944 во Храшќе кај Озаљ. Борците на бригадата на денот на формирањето и загинатите.',
   },
 }
 
@@ -1332,6 +1342,11 @@ const en: Record<string, UnitText> = {
     name: 'Toplica Partisan Detachment',
     description:
       'Formed on 3 August 1941 at Ajdanovac near Prokuplje. Its men on the day it was formed, its dead, and its People’s Heroes.',
+  },
+  'karlovacka-brigada': {
+    name: 'Karlovac Assault Brigade',
+    description:
+      'Formed on 5 March 1944 at Hrašće near Ozalj. Its men on the day it was formed, and its fallen.',
   },
 }
 

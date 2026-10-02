@@ -325,6 +325,10 @@ export const formation: Record<string, Formation> = {
     date: '1941-08-03', place: 'Ajdanovac (Prokuplje)', source: 'https://znaci.org/00001/280_12.pdf',
     note: 'Dinić, Toplički NOP odred, Prilog 1: „Borci Topličkog NOP odreda na dan formiranja, 3. avgusta 1941. godine“; Prilog 2: „U Odredu je od njegovog formiranja u Ajdanovcu, 3. avgusta 1941.“',
   },
+  'karlovacka-brigada': {
+    date: '1944-03-05', place: 'Hrašće (Ozalj)', source: 'https://znaci.org/00003/546.pdf',
+    note: 'Lulik, Zatezalo, Karlovačka udarna brigada (str. 82-84): „Ujutro, 5. ožujka 1944. godine … postrojila se čitava brigada na malom platou usred sela Hrašće“; „Na dan formiranja Karlovačka brigada imala je 640 boraca“.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
