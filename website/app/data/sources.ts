@@ -469,6 +469,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: '4-proleterska-poginuli',
+    title: 'Četvrta proleterska crnogorska brigada — spisak poginulih',
+    author: 'Blažo Janković',
+    pdfPath: '/pdfs/4-proleterska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/4-proleterska-poginuli.jpg',
+    brigadeName: '4. proleterska crnogorska brigada',
+    description: 'Borci i starešine brigade poginuli od 1942. do 1945, po godinama: rođenje, zanimanje, dužnost, kada su i gde pali'
+  },
+  {
     id: 'borci-sutjeske-5-proleterska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',

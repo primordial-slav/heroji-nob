@@ -404,11 +404,11 @@ export const units: Unit[] = [
     id: '4-proleterska-brigada',
     name: '4. proleterska crnogorska brigada',
     nameEn: '4th Proletarian Montenegrin Brigade',
-    description: 'Formirana 10. juna 1942. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    description: 'Formirana 10. juna 1942. Borci brigade u bici na Sutjesci, i borci i starešine poginuli od 1942. do 1945.',
     image: '/images/4-proleterska-brigada.jpg',
-    soldierCount: 1720,
+    soldierCount: 3496,
     dataFile: '/4-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf']
+    pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf', '/pdfs/4-proleterska-poginuli.pdf']
   },
   {
     id: '5-proleterska-brigada',

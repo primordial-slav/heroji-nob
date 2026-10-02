@@ -182,7 +182,7 @@ const sl: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4. proletarska črnogorska brigada',
     description:
-      'Ustanovljena 10. junija 1942. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+      'Ustanovljena 10. junija 1942. Borci brigade v bitki na Sutjeski ter borci in poveljniki, padli od 1942 do 1945.',
   },
   '5-proleterska-brigada': {
     name: '5. proletarska črnogorska brigada',
@@ -438,7 +438,7 @@ const mk: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4-та пролетерска црногорска бригада',
     description:
-      'Формирана на 10 јуни 1942. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+      'Формирана на 10 јуни 1942. Борците на бригадата во битката на Сутјеска, и борци и старешини загинати од 1942 до 1945.',
   },
   '5-proleterska-brigada': {
     name: '5-та пролетерска црногорска бригада',
@@ -696,7 +696,7 @@ const en: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4th Proletarian Montenegrin Brigade',
     description:
-      'Formed on 10 June 1942. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+      'Formed on 10 June 1942. Partisans of the brigade in the Battle of the Sutjeska, and Partisans and officers killed from 1942 to 1945.',
   },
   '5-proleterska-brigada': {
     name: '5th Proletarian Montenegrin Brigade',

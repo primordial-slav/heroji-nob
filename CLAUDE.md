@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~155,800 WWII Yugoslav partisan soldiers across 56 units (51 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~157,600 WWII Yugoslav partisan soldiers across 56 units (51 brigades, three divisions and two detachments). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -50,7 +50,7 @@ Historical archive website for searching ~155,800 WWII Yugoslav partisan soldier
 | 37 | 16. Slavonska omladinska | `data-extraction/parse_16_slavonska_omladinska.py` (fallen); `data-extraction/parse_16_slavonska_rukovodioci.py` (leaders) | `16-slavonska-omladinska-soldiers.json` | 1 PDF (book pp. 389-428: two lists of the fallen, the leaders) | 1,122 |
 | 38 | 8. Crnogorska | `data-extraction/parse_8_crnogorska.py` | `8-crnogorska-soldiers.json` | 1 PDF (Cyrillic; book pp. 471-501, 509-510) | 747 |
 | 39 | Druga proleterska | `data-extraction/parse_druga_proleterska.py` (run-on names by place and date) | `druga-proleterska-soldiers.json` | 1 PDF (Cyrillic, three columns; monograph pp. 274-278); Borci Sutjeske chapter | 2,216 |
-| 40 | 4. Proleterska crnogorska | `data-extraction/parse_borci_sutjeske.py` | `4-proleterska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,720 |
+| 40 | 4. Proleterska (crnogorska) | `data-extraction/parse_borci_sutjeske.py` (Sutjeska); `data-extraction/parse_4_proleterska_poginuli.py` (the fallen 1942-45, Janković) | `4-proleterska-soldiers.json` | 2 PDFs (the Borci Sutjeske chapter; the monograph's list of the fallen, Cyrillic) | 3,496 |
 | 41 | 5. Proleterska crnogorska | `data-extraction/parse_borci_sutjeske.py` | `5-proleterska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,574 |
 | 42 | 6. Istočnobosanska proleterska | `data-extraction/parse_borci_sutjeske.py` | `6-istocnobosanska-soldiers.json` | Borci Sutjeske, chapter (two columns) | 807 |
 | 43 | 10. Hercegovačka | `data-extraction/parse_borci_sutjeske.py` | `10-hercegovacka-soldiers.json` | Borci Sutjeske, chapter (two columns) | 1,478 |
@@ -69,7 +69,7 @@ Historical archive website for searching ~155,800 WWII Yugoslav partisan soldier
 | 56 | 14. Srednjobosanska | `data-extraction/parse_14_srednjobosanska.py` | `14-srednjobosanska-soldiers.json` | 1 PDF (fallen in one column, survivors in two, by municipality; book pp. 393-458) | 2,559 |
 
 Brigade configs are defined in `scripts/name_utils.py` (BRIGADE_CONFIGS dict) and `website/app/data/units.ts`. Parsers for codes 10-38, 40-49 and 51-56 share `data-extraction/_parser_scaffold.py`; see `docs/NEW_BRIGADE_PARSER_STATUS.md`. Viktor Kučan's *Borci Sutjeske* (znaci.org 00001/129: every fighter at the Sutjeska, one PDF per brigade, `borci-sutjeske-<unit>.pdf`) is one parser for sixteen brigades: the ten it brings to the site (40-49) and, as a second book, six already here (1, 5, 7, 10, 36, 39; IDs from 100001). Which books on znaci.org have soldier lists is in `docs/ZNACI_ORG_SOLDIER_LIST_CATALOG.md`. Druga proleterska (39) prints no bios: its fallen run on, comma after comma, under each place and date ("Тјентиште (Сутјеска), 1. јуни."), so its parser reads the page itself and gives each soldier the heading's `death_place` and `death_date` (its `HEADINGS` table spells out each heading the text layer garbled).
-A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-; Treća proleterska's fallen: 0005010001-, its reprinted formation list: 0005020001-; 3. krajiška's roster: 0010200001-; 6. krajiška's survivors: 0013010001-; the 32. division's monograph list: 0035100001-; 7. krajiška's knj. 2: 0048010001-) and a re-run replaces only the records read from its own PDFs.
+A unit can hold more than one book: a second book's parser writes into the unit's file with `run_parser(..., id_start=10001, keep_other_sources=True)`, so its records get their own ID range (Druga lička survivors: 0003010001-, the memoir book's fallen: 0003020001-; Treća proleterska's fallen: 0005010001-, its reprinted formation list: 0005020001-; 3. krajiška's roster: 0010200001-; 6. krajiška's survivors: 0013010001-; the 32. division's monograph list: 0035100001-; 7. krajiška's knj. 2: 0048010001-; 4. proleterska's fallen: 0040010001-) and a re-run replaces only the records read from its own PDFs.
 Parser IDs are assigned after sorting by name, so re-running a parser keeps IDs only if the set of parsed records is unchanged — re-check corrections for that brigade after any parser change.
 
 ## Data Pipeline
