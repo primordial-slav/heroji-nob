@@ -576,6 +576,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    62: {
+        'name': 'Gubčeva',
+        'json_file': 'gubceva-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Ambrožič Lado-Novljan, 1908, Čatež ob Savi"; the fallen "Abunar Karel, Gabrovka, 1900—1944"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

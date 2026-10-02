@@ -76,6 +76,7 @@ BRIGADE_CODES = {
     59: 'Posavsko-trebavski odred',
     60: '8. Kordunaška divizija',
     61: 'Cankarjeva',
+    62: 'Gubčeva',
     # Add new brigades here with next available code
 }
 

@@ -737,5 +737,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/cankarjeva.jpg',
     brigadeName: 'Cankarjeva brigada',
     description: 'Spisak boraca brigade koji su preživeli rat (str. 815 i dalje) i spisak njenih poginulih (str. 847 i dalje)'
+  },
+  {
+    id: 'gubceva',
+    title: 'Gubčeva brigada — seznam gubčevcev, padli',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/gubceva.pdf',
+    thumbnail: '/images/pdf-thumbs/gubceva.jpg',
+    brigadeName: 'Gubčeva brigada',
+    description: 'Spisak boraca brigade koji su preživeli rat (str. 979 i dalje) i spisak njenih poginulih (str. 1016 i dalje)'
   }
 ]

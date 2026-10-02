@@ -197,6 +197,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-09-28', place: 'Lapinje na Kočevskom', source: 'https://znaci.org/00003/767.pdf',
     note: 'Knjiga brigade (Ambrožič-Novljan, str. 26): ustanovni miting 28. septembra 1942. kod Lapinja, po dnevniku Glavnog štaba; često se navode 23. i 24. septembar.',
   },
+  'gubceva-brigada': {
+    date: '1942-09-04', place: 'Trebelno nad Mokronogom', source: 'https://znaci.org/00003/782.pdf',
+    note: 'Knjiga brigade (Ambrožič-Novljan, str. 9): ustanovni miting u šumi južno od sela Trebelno.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

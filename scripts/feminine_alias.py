@@ -25,7 +25,9 @@ MASC = re.compile(
 # men's names ending in -a too rare in the data to be learned from it
 MALE_A = {'Nikola', 'Luka', 'Ilija', 'Andrija', 'Sava', 'Jovica', 'Mića', 'Pera', 'Mika', 'Jaka', 'Miha', 'Saša',
           'Ljuba', 'Toma', 'Kosta', 'Vuka', 'Joža', 'Jura', 'Đura', 'Gligorija', 'Zaharija', 'Jeremija', 'Zosima',
-          'Avdija', 'Hamza', 'Musa', 'Isa', 'Alija'}
+          'Avdija', 'Hamza', 'Musa', 'Isa', 'Alija', 'Mitja'}
+# Slovene men's names in -a, never women's, whatever other units' bios suggest
+MALE_ALWAYS = {'Jaka', 'Miha', 'Mitja'}
 WOMEN = {'0007001569'}       # Filipi-Vedrina Dolores: her bio's forms are even, her name ends in -s
 MEN = {'0009001168'}         # Stotjanović "Nilkola" (OCR for Nikola)
 
@@ -63,6 +65,8 @@ def is_woman(s: dict, women: set, men: set) -> bool:
     if fs != ms:
         return fs > ms
     name = s.get('first_name') or ''
+    if name in MALE_ALWAYS:
+        return False
     if name in women or name in men:
         return name in women
     return name.endswith('a') and name not in MALE_A

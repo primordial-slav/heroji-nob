@@ -289,6 +289,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 28. septembra 1942 pri Lapinjah na Kočevskem. Padli in preživeli borci.',
   },
+  'gubceva-brigada': {
+    name: 'Gubčeva brigada',
+    description:
+      'Ustanovljena 4. septembra 1942 pri Trebelnem nad Mokronogom. Padli in preživeli borci.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -569,6 +574,11 @@ const mk: Record<string, UnitText> = {
     name: 'Цанкарјева бригада',
     description:
       'Формирана на 28 септември 1942 кај Лапиње во Кочевско. Загинати и преживеани борци.',
+  },
+  'gubceva-brigada': {
+    name: 'Губчева бригада',
+    description:
+      'Формирана на 4 септември 1942 кај Требелно над Мокроног. Загинати и преживеани борци.',
   },
 }
 
@@ -852,6 +862,11 @@ const en: Record<string, UnitText> = {
     name: 'Cankar Brigade',
     description:
       'Formed on 28 September 1942 near Lapinje in the Kočevje region. Partisans who were killed and those who survived.',
+  },
+  'gubceva-brigada': {
+    name: 'Gubec Brigade',
+    description:
+      'Formed on 4 September 1942 near Trebelno above Mokronog. Partisans who were killed and those who survived.',
   },
 }
 

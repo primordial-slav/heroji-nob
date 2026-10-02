@@ -255,6 +255,12 @@ UNITS = {
     "cankarjeva-brigada": dict(
         name="Cankarjeva brigada", tags=[],
         caption=r"cankar\w*\s+brigad", photo=11247),
+    "gubceva-brigada": dict(
+        name="Gubčeva brigada", tags=[],
+        caption=r"gub[cč]ev\w*\s+brigad", photo=None,
+        book=dict(pdf="00003/782.pdf", page=221, xref=2012, caption="Skupina partizanov Gubčeve brigade. Fotografija je iz leta 1943"),
+        crop=(0.0, 0.22, 1.0, 0.88),
+        note="The gallery has no group of the brigade's soldiers; the photo is from its own book (the crop keeps the group)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

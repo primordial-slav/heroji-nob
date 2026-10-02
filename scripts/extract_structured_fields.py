@@ -458,7 +458,8 @@ class Extractor:
     def extract(self, info: str, code: int, duty_first: bool = False) -> dict:
         if code in PARSER_FIELDS:
             return {}
-        text = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.)\s[^;]{0,60};\s*)+', '', info or '').strip()
+        # a nickname, another surname, a title ("dr.; ", "ing.; " in the Slovene lists) before the bio
+        text = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.|roj\.|por\.)\s[^;]{0,60};\s*|(?:dr|ing|arh|mr)\.;\s*)+', '', info or '').strip()
         text = re.sub(r'\s*\((?:općina [^)]*|ČSSR)\)$', '', text)          # 17. slavonska: section the soldier was listed under
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
@@ -556,7 +557,7 @@ def build_extractor(brigades) -> Extractor:
     ex = Extractor(occupations, places)
     for code, (_, d) in brigades.items():
         for s in d:
-            info = re.sub(r'^(?:(?:zvan[ai]|ili)\s[^;]{0,60};\s*)+', '', s.get('additional_info') or '')
+            info = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.|roj\.|por\.)\s[^;]{0,60};\s*|(?:dr|ing|arh|mr)\.;\s*)+', '', s.get('additional_info') or '')
             if re.search(r'\bro[dđ]en[a]?\s+(?:\S+\s+){0,2}u\s+(?!s\.|selu)', info[:50]):   # "rođen 1923. godine u"
                 continue                                                  # "rođen u Donjem Lapcu" is a locative, not a place name
             bp = ex.life(info, code).get('birth_place', '')

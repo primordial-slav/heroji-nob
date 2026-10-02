@@ -10,11 +10,12 @@ Read by _slovene_lists; a soldier in both lists is merged (find_source_duplicate
 import re
 
 from _parser_scaffold import repair_lj_ocr, run_parser
-from _slovene_lists import Indent, parse
+from _slovene_lists import OWN, Indent, parse
 
 INDENT = Indent(padli_from=33, headings=re.compile(r'^(?:SEZNAM C|ANKARJEVCEV|PADLI)\b'))
 
 if __name__ == '__main__':
+    OWN['file'] = 'cankarjeva-soldiers.json'
     run_parser(
         pdf_path='website/public/pdfs/cankarjeva.pdf',
         brigade_code=61,

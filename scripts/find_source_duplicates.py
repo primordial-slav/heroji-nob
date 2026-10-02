@@ -53,6 +53,7 @@ LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
     '4-splitska-brigada.pdf': [(1, 'poginuli'), (23, 'preživjeli')],
     'cankarjeva.pdf': [(1, 'seznam'), (33, 'padli')],
+    'gubceva.pdf': [(1, 'seznam'), (38, 'padli')],
 }
 
 
@@ -135,6 +136,7 @@ LIST_FATE = {
     '6-krajiska.pdf': 'fell', '6-krajiska-prezivjeli.pdf': 'lived',
     '12-krajiska-poginuli.pdf': 'fell', '12-krajiska-prezivjeli.pdf': 'lived',
     'cankarjeva.pdf (seznam)': 'lived', 'cankarjeva.pdf (padli)': 'fell',          # a list of a PDF (LISTS) by its name
+    'gubceva.pdf (seznam)': 'lived', 'gubceva.pdf (padli)': 'fell',
 }
 # Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
 SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'
