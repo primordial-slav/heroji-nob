@@ -909,6 +909,16 @@ export const units: Unit[] = [
     soldierCount: 425,
     dataFile: '/12-srpska-soldiers.json',
     pdfFiles: ['/pdfs/12-srpska.pdf']
+  },
+  {
+    id: '20-srpska-brigada',
+    name: '20. srpska brigada',
+    nameEn: '20th Serbian Brigade',
+    description: 'Formirana 19. avgusta 1944. iznad sela Bučja kod Knjaževca. Poginuli i umrli borci i rukovodioci brigade.',
+    image: '/images/20-srpska-brigada.jpg',
+    soldierCount: 600,
+    dataFile: '/20-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/20-srpska.pdf']
   }
   // Add more units here as you get more data
 ]

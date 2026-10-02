@@ -434,6 +434,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 22. maja 1944 na Ostrozubu južno od Bistrice. Padli in umrli borci in starešine brigade.',
   },
+  '20-srpska-brigada': {
+    name: '20. srbska brigada',
+    description:
+      'Ustanovljena 19. avgusta 1944 nad vasjo Bučje pri Knjaževcu. Padli in umrli borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -859,6 +864,11 @@ const mk: Record<string, UnitText> = {
     name: '12-та српска бригада',
     description:
       'Формирана на 22 мај 1944 на Острозуб, јужно од Бистрица. Загинатите и умрените борци и раководители на бригадата.',
+  },
+  '20-srpska-brigada': {
+    name: '20-та српска бригада',
+    description:
+      'Формирана на 19 август 1944 над селото Бучје кај Књажевац. Загинатите и умрените борци и раководители на бригадата.',
   },
 }
 
@@ -1287,6 +1297,11 @@ const en: Record<string, UnitText> = {
     name: '12th Serbian Brigade',
     description:
       'Formed on 22 May 1944 on Mount Ostrozub, south of Bistrica. The brigade’s soldiers and officers who were killed or died.',
+  },
+  '20-srpska-brigada': {
+    name: '20th Serbian Brigade',
+    description:
+      'Formed on 19 August 1944 above the village of Bučje near Knjaževac. The brigade’s soldiers and officers who were killed or died.',
   },
 }
 

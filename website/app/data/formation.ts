@@ -313,6 +313,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05-22', place: 'Ostrozub (Bistrica)', source: 'https://znaci.org/00003/841.pdf',
     note: 'Mirčetić, Dvanaesta srpska NOU brigada (Beograd 1991), pogl. Formiranje: „Dvadeset drugog maja formirana je Dvanaesta srpska brigada na padini Čobanac na planini Ostrozubu, južno od sela Bistrice“, od Babičkog (1. bataljon) i Crnotravskog odreda (2. bataljon).',
   },
+  '20-srpska-brigada': {
+    date: '1944-08-19', place: 'Bučje (Knjaževac)', source: 'https://znaci.org/00003/840.pdf',
+    note: 'Mirčetić, Dvadeseta srpska brigada (Beograd 1986), Uvod: „formirana je od 14. do 21. avgusta 1944. iznad sela Bučja u knjaževačkom kraju, a za dan njenog formiranja uzimamo 19. avgust 1944.“',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

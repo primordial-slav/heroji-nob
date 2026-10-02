@@ -837,6 +837,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    91: {
+        'name': '20. Srpska',
+        'json_file': '20-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АГУШЕВИЋ Младена ВЛАДИМИР, 1906, Хум, Ниш, ковач. ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

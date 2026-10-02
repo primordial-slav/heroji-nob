@@ -196,6 +196,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Pregled padlih in umrlih borcev in starešin: leto in kraj rojstva, poklic, vstop v NOVJ, enota, kje so padli in pokopani (str. 352–388)',
     '12-srpska':
       'Pregled padlih in umrlih borcev in starešin: leto in kraj rojstva, poklic, vstop v NOVJ, enota, kje so padli in pokopani (str. 355–400)',
+    '20-srpska':
+      'Pregled padlih in umrlih borcev in starešin: leto in kraj rojstva, poklic, vstop v NOVJ, enota, kje so padli in pokopani (str. 321–385)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -381,6 +383,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Преглед на загинатите и умрените борци и раководители: година и место на раѓање, занимање, стапување во НОВЈ, единица, каде загинале и се погребани (стр. 352–388)',
     '12-srpska':
       'Преглед на загинатите и умрените борци и раководители: година и место на раѓање, занимање, стапување во НОВЈ, единица, каде загинале и се погребани (стр. 355–400)',
+    '20-srpska':
+      'Преглед на загинатите и умрените борци и раководители: година и место на раѓање, занимање, стапување во НОВЈ, единица, каде загинале и се погребани (стр. 321–385)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -565,6 +569,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The soldiers and officers who were killed or died: year and place of birth, trade, when they joined, their unit, where they fell and were buried (pp. 352–388)',
     '12-srpska':
       'The soldiers and officers who were killed or died: year and place of birth, trade, when they joined, their unit, where they fell and were buried (pp. 355–400)',
+    '20-srpska':
+      'The soldiers and officers who were killed or died: year and place of birth, trade, when they joined, their unit, where they fell and were buried (pp. 321–385)',
   },
 }
 
