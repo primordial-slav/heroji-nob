@@ -110,6 +110,7 @@ BRIGADE_CODES = {
     93: 'Toplički NOP odred',
     94: 'Karlovačka udarna',
     95: '14. Primorsko-goranska',
+    96: '22. divizija',
     # Add new brigades here with next available code
 }
 

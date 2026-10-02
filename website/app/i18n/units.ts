@@ -459,6 +459,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 26. novembra 1942 v Drežnici. Padli borci brigade.',
   },
+  '22-divizija': {
+    name: '22. divizija',
+    description:
+      'Ustanovljena maja 1944 na desnem bregu Južne Morave. Padli borci 8., 10. in 12. srbske brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -909,6 +914,11 @@ const mk: Record<string, UnitText> = {
     name: '14-та приморско-горанска бригада',
     description:
       'Формирана на 26 ноември 1942 во Дрежница. Загинатите борци на бригадата.',
+  },
+  '22-divizija': {
+    name: '22-ра дивизија',
+    description:
+      'Формирана во мај 1944 на десниот брег на Јужна Морава. Загинатите борци на 8., 10. и 12. српска бригада.',
   },
 }
 
@@ -1362,6 +1372,11 @@ const en: Record<string, UnitText> = {
     name: '14th Primorje–Gorski Kotar Brigade',
     description:
       'Formed on 26 November 1942 at Drežnica. The brigade’s fallen.',
+  },
+  '22-divizija': {
+    name: '22nd Division',
+    description:
+      'Formed in May 1944 on the right bank of the South Morava. The fallen of its 8th, 10th and 12th Serbian Brigades.',
   },
 }
 

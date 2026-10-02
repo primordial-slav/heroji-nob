@@ -882,6 +882,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    96: {
+        'name': '22. divizija',
+        'json_file': '22-divizija-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a table: "Анђелковић С. Станоје | Нови Глог | 18. VI 1944. | Грамада"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

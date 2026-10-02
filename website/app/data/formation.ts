@@ -333,6 +333,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-11-26', place: 'Drežnica', source: 'https://znaci.org/00003/544.pdf',
     note: 'Matetić, 14. primorsko-goranska brigada (str. 33): „Dvadeset šestog novembra 1942. nova 14. primorsko-goranska brigada sa tri bataljona bila je postrojena u centru Drežnice“.',
   },
+  '22-divizija': {
+    date: '1944-05', place: 'desna obala Južne Morave', source: 'https://znaci.org/00001/235_3.pdf',
+    note: 'Nikolić, 22. divizija (Formiranje 22. srpske divizije NOVJ, str. 101-102): u maju 1944. doneta je odluka „da se u južnoj Srbiji formiraju dve divizije: Prva srpska (21. NOVJ) na levoj obali Južne Morave, i Druga srpska (22. NOVJ) na desnoj obali“; naredbe je potpisao Svetozar Vukmanović Tempo, a 27. maja štab divizije se menja.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

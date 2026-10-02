@@ -959,6 +959,16 @@ export const units: Unit[] = [
     soldierCount: 679,
     dataFile: '/14-primorsko-goranska-soldiers.json',
     pdfFiles: ['/pdfs/14-primorsko-goranska.pdf']
+  },
+  {
+    id: '22-divizija',
+    name: '22. divizija',
+    nameEn: '22nd Division',
+    description: 'Formirana maja 1944. na desnoj obali Južne Morave. Poginuli borci 8., 10. i 12. srpske brigade.',
+    image: '/images/22-divizija.jpg',
+    soldierCount: 1005,
+    dataFile: '/22-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/22-divizija.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -1061,5 +1061,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/14-primorsko-goranska.jpg',
     brigadeName: '14. primorsko-goranska brigada',
     description: 'Spisak poginulih boraca brigade, s rođenjem, dužnošću i mestom pogibije (str. 227–264)'
+  },
+  {
+    id: '22-divizija',
+    title: '22. divizija — spisak poginulih boraca i rukovodilaca',
+    author: 'Živojin Nikolić Brka',
+    pdfPath: '/pdfs/22-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/22-divizija.jpg',
+    brigadeName: '22. divizija',
+    description: 'Spisak poginulih boraca i rukovodilaca divizije, po brigadama: mesto rođenja, dan i mesto pogibije (str. 445–476)'
   }
 ]
