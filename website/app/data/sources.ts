@@ -782,5 +782,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/skofjeloski-odred.jpg',
     brigadeName: 'Škofjeloški odred',
     description: 'Spisak boraca odreda, samo imena, kako su upisani u sačuvanoj arhivi odreda (str. 314 i dalje)'
+  },
+  {
+    id: 'istrski-odred',
+    title: 'Istrski odred — seznam borcev, padli',
+    author: 'Maks Zadnik',
+    pdfPath: '/pdfs/istrski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/istrski-odred.jpg',
+    brigadeName: 'Istarski odred',
+    description: 'Spisak boraca odreda (str. 827 i dalje), bez poginulih, i spisak poginulih s kratkim podacima (str. 849 i dalje)'
   }
 ]

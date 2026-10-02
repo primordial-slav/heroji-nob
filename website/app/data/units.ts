@@ -669,6 +669,16 @@ export const units: Unit[] = [
     soldierCount: 517,
     dataFile: '/skofjeloski-odred-soldiers.json',
     pdfFiles: ['/pdfs/skofjeloski-odred.pdf']
+  },
+  {
+    id: 'istrski-odred',
+    name: 'Istarski odred',
+    nameEn: 'Istrian Detachment',
+    description: 'Formiran 7. oktobra 1943. u Brkinima. Poginuli i ostali borci odreda.',
+    image: '/images/istrski-odred.jpg',
+    soldierCount: 1280,
+    dataFile: '/istrski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/istrski-odred.pdf']
   }
   // Add more units here as you get more data
 ]

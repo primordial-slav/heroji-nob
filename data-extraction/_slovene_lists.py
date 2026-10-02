@@ -123,7 +123,7 @@ class Indent:
         dated = (',' in t or re.search(r'1[89]\d\d', t)) and (len(head) >= 2 or one) and not place
         strict = strict and not place
         loose = strict or dated or (pair and not place)
-        if starts and (self.every_line or (indent < 4 and loose) or (indent < 14 and strict)):
+        if starts and (self.every_line or (indent < 4 and loose) or (indent < 16 and strict)):
             t = f'§{kind}§ ' + t + (',' if self.comma and not t.endswith(',') else '')
         ln['text'] = t
         return True

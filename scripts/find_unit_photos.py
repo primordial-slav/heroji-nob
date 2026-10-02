@@ -282,6 +282,11 @@ UNITS = {
         caption=r"[sš]kofjelo[sš]k\w*\s+odred", photo=None,
         book=dict(pdf="00003/809.pdf", page=61, xref=585, caption="Borci škofjeloškega odreda v vasi Jesenica pri Bukovem na Cerkljanskem"),
         note="Nothing in the gallery names the odred; the photo is from its own book."),
+    "istrski-odred": dict(
+        name="Istrski odred", tags=[],
+        caption=r"istrsk\w*\s+odred", photo=None,
+        book=dict(pdf="00003/811.pdf", page=215, xref=1791, caption="Tretji bataljon IO po prihodu iz Istre v Brkine marca 1944 pred Bitenčevo hišo na Preložah"),
+        note="Nothing in the gallery names the odred; the photo is from its own book (IO = Istrski odred)."),
     "18-hrvatska-brigada": dict(
         name="18. hrvatska istočnobosanska brigada", tags=["18-hrvatska-istocnobosanska-udarna-brigada"],
         caption=nth(18, r"hrvatsk"), photo=None,

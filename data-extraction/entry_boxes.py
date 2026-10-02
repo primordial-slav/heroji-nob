@@ -80,6 +80,7 @@ TWO_COLUMN = {
     'gubceva.pdf',
     'zidanskova.pdf',
     'skofjeloski-odred.pdf',
+    'istrski-odred.pdf',
     '32-divizija-borci.pdf',
     '6-krajiska-prezivjeli.pdf',
     '17-slavonska-poginuli.pdf',

@@ -314,6 +314,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen po ukazu z dne 30. julija 1944 v škofjeloških hribih. Imena borcev odreda.',
   },
+  'istrski-odred': {
+    name: 'Istrski odred',
+    description:
+      'Ustanovljen 7. oktobra 1943 v Brkinih. Padli in drugi borci odreda.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -619,6 +624,11 @@ const mk: Record<string, UnitText> = {
     name: 'Шкофјелошки одред',
     description:
       'Формиран по наредба од 30 јули 1944, во ридовите околу Шкофја Лока. Имиња на борците на одредот.',
+  },
+  'istrski-odred': {
+    name: 'Истарски одред',
+    description:
+      'Формиран на 7 октомври 1943 во Бркини. Загинати и другите борци на одредот.',
   },
 }
 
@@ -927,6 +937,11 @@ const en: Record<string, UnitText> = {
     name: 'Škofja Loka Detachment',
     description:
       'Formed under an order of 30 July 1944, in the hills around Škofja Loka. The names of the detachment’s members.',
+  },
+  'istrski-odred': {
+    name: 'Istrian Detachment',
+    description:
+      'Formed on 7 October 1943 in the Brkini hills. Partisans who were killed, and the detachment’s other members.',
   },
 }
 

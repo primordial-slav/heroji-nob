@@ -217,6 +217,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-07-30', place: 'Škofjeloški hribi', source: 'https://znaci.org/00003/809.pdf',
     note: 'Knjiga odreda (Lotrič): ukaz Glavnog štaba NOV i PO Slovenije od 30. jula 1944. o osnivanju Škofjeloškog i Kokrškog odreda.',
   },
+  'istrski-odred': {
+    date: '1943-10-07', place: 'Brkini', source: 'https://znaci.org/00003/811.pdf',
+    note: 'Knjiga odreda (Zadnik, str. 86): štab 14. divizije dao je novoj jedinici ime pri osnivanju 7. oktobra 1943.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

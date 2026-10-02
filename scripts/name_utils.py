@@ -621,6 +621,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    67: {
+        'name': 'Istrski odred',
+        'json_file': 'istrski-odred-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Abram Edvard, 11. 5. 1915, Dolina—Trst"; the fallen with a short bio
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

@@ -144,6 +144,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev brigade; padli so označeni z letnicama rojstva in padca (str. 731 in naprej)',
     'skofjeloski-odred':
       'Seznam borcev odreda, samo imena, kot so vpisani v ohranjenem arhivu odreda (str. 314 in naprej)',
+    'istrski-odred':
+      'Seznam borcev odreda (str. 827 in naprej), brez padlih, in seznam padlih s kratkimi podatki (str. 849 in naprej)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -277,6 +279,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на бригадата; кај загинатите годината на раѓање и на загинување (стр. 731 и натаму)',
     'skofjeloski-odred':
       'Список на борците на одредот, само имиња, како што се запишани во зачуваната архива на одредот (стр. 314 и натаму)',
+    'istrski-odred':
+      'Список на борците на одредот (стр. 827 и натаму), без загинатите, и список на загинатите со кратки податоци (стр. 849 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -409,6 +413,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the brigade’s members; for those killed, the years of birth and death (pp. 731 ff.)',
     'skofjeloski-odred':
       'List of the detachment’s members, names only, as the surviving files of the detachment record them (pp. 314 ff.)',
+    'istrski-odred':
+      'List of the detachment’s members (pp. 827 ff.), without the fallen, and of the fallen with a short account of each (pp. 849 ff.)',
   },
 }
 

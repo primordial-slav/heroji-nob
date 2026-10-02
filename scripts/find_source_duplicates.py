@@ -56,6 +56,7 @@ LISTS = {
     'gubceva.pdf': [(1, 'seznam'), (38, 'padli')],
     'dvanajsta.pdf': [(1, 'padli'), (5, 'seznam')],
     'gradnikova.pdf': [(1, 'padli'), (11, 'drugi')],
+    'istrski-odred.pdf': [(1, 'seznam'), (23, 'padli')],
 }
 
 
@@ -141,6 +142,7 @@ LIST_FATE = {
     'gubceva.pdf (seznam)': 'lived', 'gubceva.pdf (padli)': 'fell',
     'dvanajsta.pdf (seznam)': 'lived', 'dvanajsta.pdf (padli)': 'fell',
     'gradnikova.pdf (padli)': 'fell',
+    'istrski-odred.pdf (padli)': 'fell',
 }
 # Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
 SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'
