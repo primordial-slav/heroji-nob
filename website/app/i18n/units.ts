@@ -207,7 +207,7 @@ const sl: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8. banijska brigada',
     description:
-      'Ustanovljena 7. septembra 1942 v Obljaju pri Glini. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+      'Ustanovljena 7. septembra 1942 v Obljaju pri Glini. Borci brigade v bitki na Sutjeski, maja in junija 1943, ter padli in umrli borci brigade.',
   },
   '3-dalmatinska-brigada': {
     name: '3. dalmatinska brigada',
@@ -723,7 +723,7 @@ const mk: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8-ма банијска бригада',
     description:
-      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, и загинатите и умрените борци на бригадата.',
   },
   '3-dalmatinska-brigada': {
     name: '3-та далматинска бригада',
@@ -1241,7 +1241,7 @@ const en: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8th Banija Brigade',
     description:
-      'Formed on 7 September 1942 in Obljaj near Glina. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+      'Formed on 7 September 1942 in Obljaj near Glina. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, and the brigade’s fallen and dead.',
   },
   '3-dalmatinska-brigada': {
     name: '3rd Dalmatian Brigade',

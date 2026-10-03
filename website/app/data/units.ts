@@ -454,11 +454,11 @@ export const units: Unit[] = [
     id: '8-banijska-brigada',
     name: '8. banijska brigada',
     nameEn: '8th Banija Brigade',
-    description: 'Formirana 7. septembra 1942. u Obljaju kod Gline. Borci brigade u bici na Sutjesci, maja i juna 1943.',
+    description: 'Formirana 7. septembra 1942. u Obljaju kod Gline. Borci brigade u bici na Sutjesci, maja i juna 1943, i poginuli i umrli borci brigade.',
     image: '/images/8-banijska-brigada.jpg',
-    soldierCount: 834,
+    soldierCount: 1549,
     dataFile: '/8-banijska-soldiers.json',
-    pdfFiles: ['/pdfs/borci-sutjeske-8-banijska.pdf']
+    pdfFiles: ['/pdfs/borci-sutjeske-8-banijska.pdf', '/pdfs/8-banijska-poginuli.pdf']
   },
   {
     id: '3-dalmatinska-brigada',

@@ -523,6 +523,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: '8-banijska-poginuli',
+    title: 'Osma banijska NOU brigada — pregled palih i umrlih boraca',
+    author: 'Ljuban Đurić',
+    pdfPath: '/pdfs/8-banijska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/8-banijska-poginuli.jpg',
+    brigadeName: '8. banijska brigada',
+    description: 'Pali i umrli borci brigade od 7. septembra 1942. do 6. decembra 1944: rođenje, zanimanje, kada su stupili u brigadu, dužnost, gde i kada su pali (str. 247–312)'
+  },
+  {
     id: 'borci-sutjeske-3-dalmatinska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',

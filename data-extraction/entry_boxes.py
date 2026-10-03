@@ -82,6 +82,7 @@ TWO_COLUMN = {
     'karlovacka.pdf',                       # Karlovačka: both lists
     '3-primorsko-goranska.pdf',             # 3. primorsko-goranska: officers and medics, the fallen
     '6-dalmatinska.pdf',                    # 6. dalmatinska: the fallen
+    '8-banijska-poginuli.pdf',              # 8. banijska: the fallen and dead
     'cankarjeva.pdf',
     'gubceva.pdf',
     'zidanskova.pdf',

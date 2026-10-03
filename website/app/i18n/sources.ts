@@ -234,6 +234,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam bork, ki so bile v brigadi, samo imena (str. 425)',
     '3-banijska':
       'Seznam poveljnikov in borcev brigade, samo imena (str. 195–205)',
+    '8-banijska-poginuli':
+      'Padli in umrli borci brigade od 7. septembra 1942 do 6. decembra 1944: rojstvo, poklic, kdaj so prišli v brigado, dolžnost, kje in kdaj so padli (str. 247–312)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -457,6 +459,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борките што биле во бригадата, само имиња (стр. 425)',
     '3-banijska':
       'Список на раководителите и борците на бригадата, само имиња (стр. 195–205)',
+    '8-banijska-poginuli':
+      'Загинатите и умрените борци на бригадата од 7 септември 1942 до 6 декември 1944: раѓање, занимање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 247–312)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -679,6 +683,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The women who fought in the brigade, names only (p. 425)',
     '3-banijska':
       'The brigade’s officers and fighters, names only (pp. 195–205)',
+    '8-banijska-poginuli':
+      'The brigade’s fallen and dead, 7 September 1942 to 6 December 1944: birth, occupation, when they joined, duty, where and when they fell (pp. 247–312)',
   },
 }
 
