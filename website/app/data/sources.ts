@@ -1124,5 +1124,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-bokeljska.jpg',
     brigadeName: '1. bokeljska brigada',
     description: 'Spisak poginulih i umrlih boraca brigade i nestalih u borbi: bataljon, rođenje, gde i kada su pali (str. 315–321)'
+  },
+  {
+    id: '6-dalmatinska',
+    title: '6. dalmatinska brigada — spisak poginulih boraca',
+    author: 'Danilo Damjanović',
+    pdfPath: '/pdfs/6-dalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/6-dalmatinska.jpg',
+    brigadeName: '6. dalmatinska brigada',
+    description: 'Spisak poginulih boraca brigade: odakle su, gde i kada su pali (str. 259–271)'
   }
 ]

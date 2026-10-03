@@ -945,6 +945,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    103: {
+        'name': '6. Dalmatinska',
+        'json_file': '6-dalmatinska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "BABIĆ Đ. RADIŠA, iz Žegara, poginuo u borbi za Knin 30. XI 1944. god."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

@@ -361,6 +361,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-10-05', place: 'Konjsko (Trebinje)', source: 'https://znaci.org/00003/384.pdf',
     note: 'Živković, Prva bokeljska NOU brigada (str. 152): brigada je formirana naredbom Štaba 2. udarnog korpusa od 29. septembra, a postrojena „5. oktobra 1944. u selu Konjsko, opština Zupci (jugoistočna Hercegovina)“, s četiri bataljona i oko 800 boraca.',
   },
+  '6-dalmatinska-brigada': {
+    date: '1943-10-08', place: 'Ervenik', source: 'https://znaci.org/00001/105_1.pdf',
+    note: 'Damjanović, Šesta dalmatinska udarna brigada (str. 12): prva grupa severnodalmatinskih bataljona prikupljena je u s. Ervenik radi formiranja brigade; „Pre podne 8. oktobra bataljoni su bili postrojeni“ i pročitana je naredba Glavnog štaba Hrvatske o formiranju 2. brigade 19. divizije (kasnije 6. dalmatinska).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

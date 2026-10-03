@@ -1029,6 +1029,16 @@ export const units: Unit[] = [
     soldierCount: 201,
     dataFile: '/1-bokeljska-soldiers.json',
     pdfFiles: ['/pdfs/1-bokeljska.pdf']
+  },
+  {
+    id: '6-dalmatinska-brigada',
+    name: '6. dalmatinska brigada',
+    nameEn: '6th Dalmatian Brigade',
+    description: 'Formirana 8. oktobra 1943. u Erveniku, kao 2. brigada 19. divizije. Poginuli borci brigade.',
+    image: '/images/6-dalmatinska-brigada.jpg',
+    soldierCount: 363,
+    dataFile: '/6-dalmatinska-soldiers.json',
+    pdfFiles: ['/pdfs/6-dalmatinska.pdf']
   }
   // Add more units here as you get more data
 ]
