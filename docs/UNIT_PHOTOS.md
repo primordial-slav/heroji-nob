@@ -121,6 +121,7 @@ These units keep their current image (the book's first page, or a photo flagged 
 | Unit | Why |
 |---|---|
 | Posavsko-trebavski partizanski odred | Nothing in the znaci.org gallery names the odred, and its book (00001/302, re-typeset) prints no photos. |
+| Posavski partizanski odred | Nothing in the gallery names the detachment, and its book prints only documents. The card shows the list's first page. |
 | Mačvanski (Podrinski) NOP odred | The gallery has only a funeral (14189) and a portrait (14307); the book is a text on znaci.org, without photos. The card shows the list's page. |
 | 3. primorsko-goranska brigada | Nothing in the znaci.org gallery names the brigade, and its book (00001/122) prints only maps and documents. |
 | 16. banijska brigada | Nothing in the znaci.org gallery names the unit; its book hasn't been checked (`--book`). |

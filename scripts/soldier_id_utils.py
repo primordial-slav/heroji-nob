@@ -124,6 +124,7 @@ BRIGADE_CODES = {
     107: '11. Krajiška',
     108: '3. Banijska',
     109: 'Mačvanski odred',
+    110: 'Posavski odred',
     # Add new brigades here with next available code
 }
 

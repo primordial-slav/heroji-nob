@@ -1099,6 +1099,16 @@ export const units: Unit[] = [
     soldierCount: 1633,
     dataFile: '/macvanski-odred-soldiers.json',
     pdfFiles: []
+  },
+  {
+    id: 'posavski-odred',
+    name: 'Posavski partizanski odred',
+    nameEn: 'Posavina Partisan Detachment',
+    description: 'Formiran 31. jula 1941. odlukom Glavnog štaba za Srbiju, od dve posavske čete i Tamnavske čete. Borci odreda 1941, po bataljonima.',
+    image: '/images/pdf-thumbs/posavski-odred.jpg',
+    soldierCount: 2529,
+    dataFile: '/posavski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/posavski-odred.pdf']
   }
   // Add more units here as you get more data
 ]

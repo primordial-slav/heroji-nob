@@ -1008,6 +1008,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    110: {
+        'name': 'Posavski odred',
+        'json_file': 'posavski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АКСЕНТИЈЕВИЋ БРАНИМИР БРАНА, рођен 1913, Грабовац, Обреновац, учитељ, ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

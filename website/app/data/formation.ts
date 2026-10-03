@@ -389,6 +389,10 @@ export const formation: Record<string, Formation> = {
     date: '1941-07-16', place: 'Bubanja (Glušci, Mačva)', source: 'https://znaci.org/00001/48_9.htm',
     note: 'Parmaković, Mačvanski partizanski odred, „Osnivanje Mačvanskog partizanskog odreda“: „Na dan 16. jula oko 9,00 časova svi su se okupili na sastanak … Osnovan je Mačvanski partizanski odred“, na Bubanji kod Glušaca.',
   },
+  'posavski-odred': {
+    date: '1941-07-31', place: 'Mala Vrbica', source: 'https://znaci.org/00001/279_3.pdf',
+    note: 'Bojić, Posavski partizanski odred (str. 99): „Odluku o formiranju Posavskog narodnooslobodilačkog partizanskog odreda doneo je Glavni štab Srbije, 31. jula 1941. godine u Maloj Vrbici“; u odred su ušle 1. i 2. posavska i Tamnavska četa.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

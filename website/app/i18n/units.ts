@@ -529,6 +529,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 16. julija 1941 na Bubanji pri Glušcih v Mačvi; od avgusta Podrinjski partizanski odred. Borci odreda od julija 1941 do marca 1942, po krajih, iz katerih so prišli.',
   },
+  'posavski-odred': {
+    name: 'Posavski partizanski odred',
+    description:
+      'Ustanovljen 31. julija 1941 z odločitvijo Glavnega štaba za Srbijo, iz dveh posavskih čet in Tamnavske čete. Borci odreda leta 1941, po bataljonih.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1049,6 +1054,11 @@ const mk: Record<string, UnitText> = {
     name: 'Мачвански (Подрински) партизански одред',
     description:
       'Формиран на 16 јули 1941 на Бубања кај Глушци во Мачва; од август Подрински партизански одред. Борците на одредот од јули 1941 до март 1942, по местата од кои дошле.',
+  },
+  'posavski-odred': {
+    name: 'Посавски партизански одред',
+    description:
+      'Формиран на 31 јули 1941 со одлука на Главниот штаб за Србија, од две посавски чети и Тамнавската чета. Борците на одредот во 1941, по баталјони.',
   },
 }
 
@@ -1572,6 +1582,11 @@ const en: Record<string, UnitText> = {
     name: 'Mačva (Podrinje) Partisan Detachment',
     description:
       'Formed on 16 July 1941 at Bubanja near Glušci in Mačva; from August the Podrinje Partisan Detachment. Its fighters from July 1941 to March 1942, by the place they came from.',
+  },
+  'posavski-odred': {
+    name: 'Posavina Partisan Detachment',
+    description:
+      'Formed on 31 July 1941 by order of the Serbian Main Staff, from two Posavina companies and the Tamnava company. Its fighters of 1941, by battalion.',
   },
 }
 

@@ -238,6 +238,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Padli in umrli borci brigade od 7. septembra 1942 do 6. decembra 1944: rojstvo, poklic, kdaj so prišli v brigado, dolžnost, kje in kdaj so padli (str. 247–312)',
     'macvanski-odred':
       'Seznam borcev Mačvanskega (Podrinjskega) partizanskega odreda, prvi del (julij 1941 – marec 1942): po krajih, iz katerih so vstopili v odred, s podatki o vsakem (besedilo na znaci.org, brez skenirane knjige; drugi del ni objavljen)',
+    'posavski-odred':
+      'Seznam borcev Posavskega partizanskega odreda leta 1941: poveljstvo, bolnišnica in bataljoni, s podatki o vsakem (str. 565–742)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -465,6 +467,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Загинатите и умрените борци на бригадата од 7 септември 1942 до 6 декември 1944: раѓање, занимање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 247–312)',
     'macvanski-odred':
       'Список на борците на Мачванскиот (Подринскиот) партизански одред, прв дел (јули 1941 – март 1942): по местата од кои стапиле во одредот, со податоци за секого (текст на znaci.org, без скенирана книга; вториот дел не е објавен)',
+    'posavski-odred':
+      'Список на борците на Посавскиот партизански одред во 1941: команда, болница и баталјони, со податоци за секого (стр. 565–742)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -691,6 +695,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen and dead, 7 September 1942 to 6 December 1944: birth, occupation, when they joined, duty, where and when they fell (pp. 247–312)',
     'macvanski-odred':
       'The fighters of the Mačva (Podrinje) Partisan Detachment, part one (July 1941 – March 1942), by the place they joined from, with details of each (a text on znaci.org, no scan of the book; part two is not published)',
+    'posavski-odred':
+      'The fighters of the Posavina Partisan Detachment in 1941: command, hospital and battalions, with details of each (pp. 565–742)',
   },
 }
 

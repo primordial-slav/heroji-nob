@@ -1205,5 +1205,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/macvanski-odred.jpg',
     brigadeName: 'Mačvanski (Podrinski) NOP odred',
     description: 'Spisak boraca Mačvanskog (Podrinskog) NOP odreda, prvi deo (jul 1941 – mart 1942): po mestima iz kojih su stupili u odred, s podacima o svakom (tekst na znaci.org, bez skenirane knjige; drugi deo nije objavljen)'
+  },
+  {
+    id: 'posavski-odred',
+    title: 'Posavski partizanski odred — borci odreda',
+    author: 'Milosav Bojić',
+    pdfPath: '/pdfs/posavski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/posavski-odred.jpg',
+    brigadeName: 'Posavski partizanski odred',
+    description: 'Spisak boraca Posavskog partizanskog odreda 1941: komanda, bolnica i bataljoni, s podacima o svakom (str. 565–742)'
   }
 ]
