@@ -499,6 +499,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 8. oktobra 1943 v Erveniku kot 2. brigada 19. divizije. Padli borci brigade.',
   },
+  'osjecka-brigada': {
+    name: 'Osiješka udarna brigada',
+    description:
+      'Ustanovljena 1. marca 1944 pri Slobodni Vlasti blizu Đakova. Padli in umrli borci brigade ter preživeli, po občinah.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -989,6 +994,11 @@ const mk: Record<string, UnitText> = {
     name: '6-та далматинска бригада',
     description:
       'Формирана на 8 октомври 1943 во Ервеник, како 2. бригада на 19. дивизија. Загинатите борци на бригадата.',
+  },
+  'osjecka-brigada': {
+    name: 'Осиечка ударна бригада',
+    description:
+      'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и умрените борци на бригадата и преживеаните, по општини.',
   },
 }
 
@@ -1482,6 +1492,11 @@ const en: Record<string, UnitText> = {
     name: '6th Dalmatian Brigade',
     description:
       'Formed on 8 October 1943 at Ervenik, as the 2nd Brigade of the 19th Division. The brigade’s fallen.',
+  },
+  'osjecka-brigada': {
+    name: 'Osijek Assault Brigade',
+    description:
+      'Formed on 1 March 1944 near Slobodna Vlast, close to Đakovo. The brigade’s fallen and dead, and its survivors, by municipality.',
   },
 }
 

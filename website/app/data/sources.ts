@@ -1133,5 +1133,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/6-dalmatinska.jpg',
     brigadeName: '6. dalmatinska brigada',
     description: 'Spisak poginulih boraca brigade: odakle su, gde i kada su pali (str. 259–271)'
+  },
+  {
+    id: 'osjecka',
+    title: 'Osječka udarna brigada — poginuli, umrli i preživeli borci',
+    author: 'Zdravko B. Cvetković',
+    pdfPath: '/pdfs/osjecka.pdf',
+    thumbnail: '/images/pdf-thumbs/osjecka.jpg',
+    brigadeName: 'Osječka udarna brigada',
+    description: 'Spisak poginulih i umrlih boraca brigade i spisak preživelih boraca, po opštinama rođenja (str. 207–254)'
   }
 ]

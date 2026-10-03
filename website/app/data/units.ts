@@ -1039,6 +1039,16 @@ export const units: Unit[] = [
     soldierCount: 363,
     dataFile: '/6-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/6-dalmatinska.pdf']
+  },
+  {
+    id: 'osjecka-brigada',
+    name: 'Osječka udarna brigada',
+    nameEn: 'Osijek Assault Brigade',
+    description: 'Formirana 1. marta 1944. kod Slobodne Vlasti blizu Đakova. Poginuli i umrli borci brigade i preživeli, po opštinama.',
+    image: '/images/osjecka-brigada.jpg',
+    soldierCount: 1879,
+    dataFile: '/osjecka-soldiers.json',
+    pdfFiles: ['/pdfs/osjecka.pdf']
   }
   // Add more units here as you get more data
 ]

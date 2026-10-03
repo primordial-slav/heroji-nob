@@ -411,6 +411,11 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "osjecka-brigada": dict(
+        name="Osječka udarna brigada", tags=[],
+        caption=r"osje[cč]k\w*\s+(?:udarn\w*\s+)?(?:nou\s+)?brigad", photo=None,
+        book=dict(pdf="00003/450.pdf", page=179, xref=843, caption="U Osijeku na dan oslobođenja, borci i starješine brigade"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "6-dalmatinska-brigada": dict(
         name="6. dalmatinska brigada", tags=[],
         caption=r"(?<!\d)(?:6\.|VI\.?|[sš]est\w*)\s+dalmatinsk\w*\s+(?:udarn\w*\s+)?brigad", photo=13300),

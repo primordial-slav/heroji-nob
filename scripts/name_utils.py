@@ -954,6 +954,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    104: {
+        'name': 'Osječka udarna',
+        'json_file': 'osjecka-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "CUCA Rade MILAN, rođen u s. Potočani, Daruvar, poginuo 1944."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

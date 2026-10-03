@@ -222,6 +222,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in umrlih borcev brigade ter pogrešanih v boju: bataljon, rojstvo, kje in kdaj so padli (str. 315–321)',
     '6-dalmatinska':
       'Seznam padlih borcev brigade: od kod so bili, kje in kdaj so padli (str. 259–271)',
+    'osjecka':
+      'Seznam padlih in umrlih borcev brigade in seznam preživelih borcev, po občinah rojstva (str. 207–254)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -433,6 +435,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и умрените борци на бригадата и на исчезнатите во борба: баталјон, раѓање, каде и кога загинале (стр. 315–321)',
     '6-dalmatinska':
       'Список на загинатите борци на бригадата: од каде се, каде и кога загинале (стр. 259–271)',
+    'osjecka':
+      'Список на загинатите и умрените борци на бригадата и список на преживеаните борци, по општини на раѓање (стр. 207–254)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -643,6 +647,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen and dead, and those missing in battle: battalion, birth, where and when they fell (pp. 315–321)',
     '6-dalmatinska':
       'The brigade’s fallen: where they came from, where and when they fell (pp. 259–271)',
+    'osjecka':
+      'The brigade’s fallen and dead, and its survivors, by the municipality they were born in (pp. 207–254)',
   },
 }
 

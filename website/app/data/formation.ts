@@ -365,6 +365,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-08', place: 'Ervenik', source: 'https://znaci.org/00001/105_1.pdf',
     note: 'Damjanović, Šesta dalmatinska udarna brigada (str. 12): prva grupa severnodalmatinskih bataljona prikupljena je u s. Ervenik radi formiranja brigade; „Pre podne 8. oktobra bataljoni su bili postrojeni“ i pročitana je naredba Glavnog štaba Hrvatske o formiranju 2. brigade 19. divizije (kasnije 6. dalmatinska).',
   },
+  'osjecka-brigada': {
+    date: '1944-03-01', place: 'Slobodna Vlast (Đakovo)', source: 'https://znaci.org/00003/450.pdf',
+    note: 'Cvetković, Osječka udarna brigada (str. 25): stvoreni su uvjeti „da se 1. ožujka 1944. formira i Osječka brigada, na prostoru kod sela Slobodne Vlasti“; u prvom stroju oko 600 boraca i rukovodilaca.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */
