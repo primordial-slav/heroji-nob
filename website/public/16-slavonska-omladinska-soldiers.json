@@ -1095,9 +1095,22 @@
         "pdf_y": 421.9,
         "pdf_x_end": 440.9,
         "pdf_y_end": 438.8
+      },
+      {
+        "soldier_id": "0097000076",
+        "name": "Berković Franjo",
+        "additional_info": "borac, OBJV, Vukovina, Velika Gorica, 13.01.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 1,
+        "pdf_x": 48.0,
+        "pdf_y": 343.888,
+        "pdf_x_end": 374.9,
+        "pdf_y_end": 352.1,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "birth_place": "Vukovinama, Velika Gorica"
+    "birth_place": "Vukovinama, Velika Gorica",
+    "rank": "borac"
   },
   {
     "last_name": "Bernard",
@@ -3849,7 +3862,21 @@
     "death_type": "poginuo",
     "death_date": "studenog 1943",
     "death_place": "u Pokuplju",
-    "rank": "zamjenik komandira čete"
+    "rank": "zamjenik komandira čete",
+    "other_sources": [
+      {
+        "soldier_id": "0097000211",
+        "name": "Dobrijević Miloš",
+        "additional_info": "z.k-dira, OBJV, 1918. Imljsovci, Daruvar, poginuo Pokuplje, 11.43",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 6,
+        "pdf_x": 19.7,
+        "pdf_y": 148.98799999999994,
+        "pdf_x_end": 347.5,
+        "pdf_y_end": 157.5,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dobričić",
@@ -4956,6 +4983,18 @@
         "pdf_y": 249.3,
         "pdf_y_end": 260.5,
         "pdf_x_end": 349.2
+      },
+      {
+        "soldier_id": "0058000522",
+        "name": "Fistrić Josip",
+        "additional_info": "zvani Pepo; r. 1916; Zagreb; borac BPČ; u KPO od listopada 1942.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 17,
+        "pdf_x": 305.0,
+        "pdf_y": 668.2,
+        "pdf_x_end": 459.8,
+        "pdf_y_end": 687.0,
+        "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
     "rank": "politički komesar bataljona"
@@ -5788,7 +5827,22 @@
     "pdf_x_end": 412.0,
     "birth_place": "Vojnić",
     "death_type": "poginuo",
-    "death_date": "15. lipnja 1944"
+    "death_date": "15. lipnja 1944",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000296",
+        "name": "Gašpar Milutin",
+        "additional_info": "borac, OBJV, 1920. Vojnić, 15.06.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 52.8,
+        "pdf_y": 470.58799999999997,
+        "pdf_x_end": 380.9,
+        "pdf_y_end": 478.6,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gedenić",
@@ -6099,10 +6153,10 @@
   },
   {
     "last_name": "Gojković",
-    "middle_name": "",
+    "middle_name": "Dušana",
     "first_name": "Miloš",
-    "fathers_name": "",
-    "full_name": "Gojković Miloš",
+    "fathers_name": "Dušan",
+    "full_name": "Gojković Dušana Miloš",
     "additional_info": "rođen 1927. u Velikom Pogancu, poginuo 30. prosinca 1942.",
     "birth_year": "1927",
     "pdf_page": 12,
@@ -6114,7 +6168,23 @@
     "pdf_x_end": 441.7,
     "birth_place": "Velikom Pogancu",
     "death_type": "poginuo",
-    "death_date": "30. prosinca 1942"
+    "death_date": "30. prosinca 1942",
+    "rank": "borac",
+    "death_place": "na Javorniku u Slavoniji",
+    "other_sources": [
+      {
+        "soldier_id": "0058000613",
+        "name": "Gojković Dušana Miloš",
+        "additional_info": "r. 1926; Veliki Poganac, Koprivnica; u KPO od studenog 1942; poginuo 31. prosinca 1942. na Javorniku u Slavoniji kao borac 16. slavonske brigade.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 20,
+        "pdf_x": 136.0,
+        "pdf_y": 443.5,
+        "pdf_x_end": 290.7,
+        "pdf_y_end": 491.9,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gojković",
@@ -7685,7 +7755,22 @@
     "birth_place": "Lovska, Pakrac",
     "death_type": "poginuo",
     "death_date": "proljeća 1944",
-    "death_place": "Novaki"
+    "death_place": "Novaki",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000413",
+        "name": "Ivanković Čedo",
+        "additional_info": "borac, OBJV, 1925. Lovska, Pakrac, poginuo Novaki, prolj. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 10,
+        "pdf_x": 17.1,
+        "pdf_y": 334.20399999999995,
+        "pdf_x_end": 345.6,
+        "pdf_y_end": 343.2,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ivanković",
@@ -8028,7 +8113,23 @@
     "pdf_x_end": 412.4,
     "birth_place": "Stupovača, Garešnica",
     "death_type": "poginuo",
-    "death_date": "1944"
+    "death_date": "1944",
+    "rank": "borac",
+    "death_place": "Oštre",
+    "other_sources": [
+      {
+        "soldier_id": "0097000440",
+        "name": "Jakšić Milan",
+        "additional_info": "borac, OBJV, 1913. Stupovača, Garešnica, poginuo Oštre, 04.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 10,
+        "pdf_x": 17.3,
+        "pdf_y": 408.6039999999999,
+        "pdf_x_end": 345.6,
+        "pdf_y_end": 417.6,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janković",
@@ -8410,7 +8511,21 @@
     "death_type": "poginuo",
     "death_date": "ožujka 1944",
     "death_place": "Draganići",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000466",
+        "name": "Johanes Henrih",
+        "additional_info": "borac, OBJV, Holandija, poginuo Draganići, 19.03.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 10,
+        "pdf_x": 17.3,
+        "pdf_y": 383.6039999999999,
+        "pdf_x_end": 345.6,
+        "pdf_y_end": 392.6,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jorgar",
@@ -8913,7 +9028,22 @@
     "pdf_x_end": 411.7,
     "birth_place": "Bačkovica, Bjelovar",
     "death_type": "poginuo",
-    "death_date": "travnja 1944"
+    "death_date": "travnja 1944",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000483",
+        "name": "Kalajđija Savo",
+        "additional_info": "borac, OBJV, 1914. Bačkovica, Bjelovar, trav. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 19.2,
+        "pdf_y": 161.16399999999982,
+        "pdf_x_end": 346.5,
+        "pdf_y_end": 170.2,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kalapa",
@@ -9870,10 +10000,10 @@
   },
   {
     "last_name": "Kolar",
-    "middle_name": "",
+    "middle_name": "Ivana",
     "first_name": "Franjo",
-    "fathers_name": "",
-    "full_name": "Kolar Franjo",
+    "fathers_name": "Ivan",
+    "full_name": "Kolar Ivana Franjo",
     "additional_info": "rođen 1912, pomoćnik komesara bataljona, poginuo 18. studenog 1944. u Našicama.",
     "birth_year": "1912",
     "pdf_page": 19,
@@ -9898,9 +10028,21 @@
         "pdf_y": 610.8,
         "pdf_y_end": 619.3,
         "pdf_x_end": 370.5
+      },
+      {
+        "soldier_id": "0017000492",
+        "name": "Kolar Ivana Franjo",
+        "additional_info": "1. 11. 1912, Pregrada, poginuo 18. 11. 1944, Našice",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 172.4,
+        "pdf_y": 304.4,
+        "pdf_x_end": 403.0,
+        "pdf_y_end": 330.9,
+        "unit_file": "18-slavonska-soldiers.json"
       }
     ],
-    "birth_place": ""
+    "birth_place": "Pregrada"
   },
   {
     "last_name": "Kolarević",
@@ -10496,7 +10638,21 @@
     "death_type": "poginuo",
     "death_date": "6. 6. 1944",
     "death_place": "Komarevu",
-    "rank": "puškomitraljezac"
+    "rank": "puškomitraljezac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000557",
+        "name": "Kovačević Duka",
+        "additional_info": "p-mitr., OBJV, poginuo Komarevo, 06.06.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 19.2,
+        "pdf_y": 273.0639999999998,
+        "pdf_x_end": 346.5,
+        "pdf_y_end": 282.1,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kovačević",
@@ -11916,7 +12072,22 @@
     "birth_place": "Đurđevcu",
     "death_type": "poginuo",
     "death_date": "16. svibnja 1944",
-    "death_place": "Kordun"
+    "death_place": "Kordun",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000658",
+        "name": "Lovreković Ćiro",
+        "additional_info": "borac, OBJV, 1924. Đurđevac, poginuo Kordun, 16.05.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 19.2,
+        "pdf_y": 297.96399999999977,
+        "pdf_x_end": 346.6,
+        "pdf_y_end": 307.0,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lovrić",
@@ -12939,7 +13110,23 @@
     "pdf_file": "16-slavonska-omladinska.pdf",
     "soldier_id": "0037000637",
     "pdf_x_end": 424.1,
-    "birth_place": "Humljani, Podravska Slatina"
+    "birth_place": "Humljani, Podravska Slatina",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097000764",
+        "name": "Mikleuš Ivan",
+        "additional_info": "borac, OBJV, 1924. Humljani, Podr. Slatina",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 15,
+        "pdf_x": 41.5,
+        "pdf_y": 335.8440000000001,
+        "pdf_x_end": 264.6,
+        "pdf_y_end": 344.8,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Miklus",
@@ -13545,7 +13732,22 @@
     "birth_place": "Brinjani, Garešnica",
     "death_type": "poginuo",
     "death_date": "lipnja 1944",
-    "death_place": "Banija"
+    "death_place": "Banija",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097000819",
+        "name": "Nježić Dušan",
+        "additional_info": "borac, OBJV, 1920. Brinjani, Garešnica, poginuo Banija, lipanj 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 22.8,
+        "pdf_y": 411.5039999999997,
+        "pdf_x_end": 350.9,
+        "pdf_y_end": 420.5,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Novak",
@@ -13663,7 +13865,21 @@
     "birth_place": "Dereza, Pakrac",
     "death_type": "poginuo",
     "death_date": "travnja 1944",
-    "death_place": "u Pribiću (Gornjem)"
+    "death_place": "u Pribiću (Gornjem)",
+    "other_sources": [
+      {
+        "soldier_id": "0097000831",
+        "name": "Opačić Dragoje",
+        "additional_info": "p-mitr., OBJV, Dereza, Pakrac, poginuo G. Pribić, trav. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 22.8,
+        "pdf_y": 424.0039999999997,
+        "pdf_x_end": 350.9,
+        "pdf_y_end": 433.0,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Opačić",
@@ -14432,6 +14648,18 @@
         "pdf_y_end": 602.5,
         "pdf_x_end": 362.1,
         "pdf_x_left": 134.0
+      },
+      {
+        "soldier_id": "0097000903",
+        "name": "Pirović Bogdan",
+        "additional_info": "k-dir č, OBJV, 1921. Čečavac Slav. Požega, svib. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 48.0,
+        "pdf_y": 148.90399999999988,
+        "pdf_x_end": 376.0,
+        "pdf_y_end": 158.4,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ]
   },
@@ -14928,7 +15156,23 @@
     "pdf_x_end": 439.9,
     "birth_place": "Prugovcu, Bjelovar",
     "death_type": "poginuo",
-    "death_date": "siječnja 1944"
+    "death_date": "siječnja 1944",
+    "rank": "delegat voda",
+    "death_place": "Krašić",
+    "other_sources": [
+      {
+        "soldier_id": "0097000954",
+        "name": "Prilika Ilija",
+        "additional_info": "del.voda, OBJV, 1926. Prugovac, Bjelovar, poginuo Krašić, siječ. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 48.0,
+        "pdf_y": 61.60399999999993,
+        "pdf_x_end": 376.2,
+        "pdf_y_end": 71.3,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Primorsić",
@@ -14965,7 +15209,23 @@
     "pdf_x_end": 441.0,
     "birth_place": "Zagreb",
     "death_type": "poginuo",
-    "death_date": "19. ožujka 1944"
+    "death_date": "19. ožujka 1944",
+    "rank": "borac",
+    "death_place": "Draganići",
+    "other_sources": [
+      {
+        "soldier_id": "0097000956",
+        "name": "Prinčić Zvonko",
+        "additional_info": "borac, OBJV, Zagreb, poginuo Draganići, 19.03.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 48.3,
+        "pdf_y": 36.803999999999974,
+        "pdf_x_end": 376.3,
+        "pdf_y_end": 46.3,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Prkić",
@@ -17167,7 +17427,23 @@
     "pdf_x_end": 412.2,
     "birth_place": "Vrapcu, Zagreb",
     "death_type": "poginuo",
-    "rank": "zamjenik političkog komesara čete"
+    "rank": "zamjenik političkog komesara čete",
+    "death_date": "27. 12. 1944",
+    "death_place": "Prilipje",
+    "other_sources": [
+      {
+        "soldier_id": "0097001137",
+        "name": "Strmećki Stjepan",
+        "additional_info": "k-sarč., OBJV, Vrapče, Zagreb, poginuo Prilipje, 27.12.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 24,
+        "pdf_x": 19.2,
+        "pdf_y": 483.00399999999996,
+        "pdf_x_end": 346.7,
+        "pdf_y_end": 492.2,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Strnad",
@@ -17309,9 +17585,22 @@
         "pdf_y": 280.8,
         "pdf_x_end": 413.2,
         "pdf_y_end": 297.7
+      },
+      {
+        "soldier_id": "0097001377",
+        "name": "Šukić Pavao",
+        "additional_info": "borac, OBJV, 1913. Kosin, Čazma, poginuo Banija, 05.06.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 26,
+        "pdf_x": 17.5,
+        "pdf_y": 407.904,
+        "pdf_x_end": 344.8,
+        "pdf_y_end": 417.6,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "death_place": "Banija"
+    "death_place": "Banija",
+    "rank": "borac"
   },
   {
     "last_name": "Sumić",
@@ -19584,7 +19873,22 @@
     "birth_place": "Gračanica, Kutina",
     "death_type": "poginuo",
     "death_date": "proljeća 1944",
-    "death_place": "na Zumberk"
+    "death_place": "na Zumberk",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097001343",
+        "name": "Šimunić Stjepan",
+        "additional_info": "borac, OBJV, Gračanica, Kutina, poginuo Žumberak, prolj. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 26,
+        "pdf_x": 17.7,
+        "pdf_y": 370.904,
+        "pdf_x_end": 345.1,
+        "pdf_y_end": 380.4,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šimunović",
@@ -19865,7 +20169,22 @@
     "pdf_x_end": 412.0,
     "birth_place": "Đurđevcu",
     "death_type": "umro",
-    "death_date": "1943"
+    "death_date": "1943",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0097001374",
+        "name": "Štimac Stjepan",
+        "additional_info": "borac, OBJV, 1920. Đurđevac, Ranjen, um., 1943",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 26,
+        "pdf_x": 17.7,
+        "pdf_y": 395.60400000000004,
+        "pdf_x_end": 344.9,
+        "pdf_y_end": 405.4,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Štrbac",
@@ -19965,10 +20284,10 @@
   },
   {
     "last_name": "Šuškov",
-    "middle_name": "",
+    "middle_name": "Ivana",
     "first_name": "Franjo",
-    "fathers_name": "",
-    "full_name": "Šuškov Franjo",
+    "fathers_name": "Ivan",
+    "full_name": "Šuškov Ivana Franjo",
     "additional_info": "rođen 1913. u Tijesnom, Šibenik, komesar čete, 27. siječnja 1945. podlegao ranama u poljskoj bolnici 6. korpusa.",
     "birth_year": "1913",
     "pdf_page": 30,
@@ -19993,8 +20312,21 @@
         "pdf_y_end": 341.6,
         "pdf_x_end": 381.4,
         "pdf_x_left": 157.5
+      },
+      {
+        "soldier_id": "0104001864",
+        "name": "Šuškov Ivana Franjo",
+        "additional_info": "rođen 1913. u s. Tijesno, Šibenik, umro 27. 1. 1945.",
+        "pdf_file": "osjecka.pdf",
+        "pdf_page": 11,
+        "pdf_x": 117.0,
+        "pdf_y": 600.7,
+        "pdf_x_end": 396.6,
+        "pdf_y_end": 617.8,
+        "unit_file": "osjecka-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "27. 1. 1945"
   },
   {
     "last_name": "Ščani",

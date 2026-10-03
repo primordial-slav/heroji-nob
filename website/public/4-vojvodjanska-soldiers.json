@@ -632,7 +632,21 @@
     "birth_place": "Zemun",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 336.6
+    "pdf_x_end": 336.6,
+    "other_sources": [
+      {
+        "soldier_id": "0082000148",
+        "name": "Bajić Dušan",
+        "additional_info": "1920, Zemun, nikler, borac.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 72.2,
+        "pdf_y": 323.2,
+        "pdf_x_end": 248.9,
+        "pdf_y_end": 332.9,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bajić",
@@ -1562,7 +1576,22 @@
     "soldier_id": "0076000079",
     "occupation": "domaćica",
     "rank": "bolničarka",
-    "pdf_x_end": 362.6
+    "pdf_x_end": 362.6,
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "0082000337",
+        "name": "Bogdanović Ranka Vera",
+        "additional_info": "1923, Dobanovci, Zemun, bolničarka, umrla posle rata.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 75.9,
+        "pdf_y": 428.1,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 447.0,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogdanović-Mihajlović",
@@ -1781,10 +1810,10 @@
   },
   {
     "last_name": "Borojević",
-    "middle_name": "",
+    "middle_name": "Ilije",
     "first_name": "Milenko",
-    "fathers_name": "",
-    "full_name": "Borojević Milenko",
+    "fathers_name": "Ilija",
+    "full_name": "Borojević Ilije Milenko",
     "additional_info": "zemljoradnik, rođen 1927. u Kuzminu (Srem), u NOB od 1943, borac",
     "birth_year": "1927",
     "pdf_page": 3,
@@ -1796,7 +1825,23 @@
     "soldier_id": "0076000091",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 363.6
+    "pdf_x_end": 363.6,
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0018000169",
+        "name": "Borojević Ilije Milenko",
+        "additional_info": "rođen 1927, Kuzmin, Sremska Mitrovica. Srbin, zemljoradnik. stupio u NOVJ 1943, delegat voda.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 109.4,
+        "pdf_y": 407.6,
+        "pdf_x_end": 370.3,
+        "pdf_y_end": 433.1,
+        "pdf_x_left": 88.7,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bošković",
@@ -1897,10 +1942,10 @@
   },
   {
     "last_name": "Bralić",
-    "middle_name": "",
+    "middle_name": "Špire",
     "first_name": "Ante",
-    "fathers_name": "",
-    "full_name": "Bralić Ante",
+    "fathers_name": "Špiro",
+    "full_name": "Bralić Špire Ante",
     "additional_info": "radnik, rođen 1915. u selu Klis (Dalmacija), član K11J od 1934, u NOB od 1941, zamenik komesara bataljona",
     "birth_year": "1915",
     "pdf_page": 4,
@@ -1912,7 +1957,46 @@
     "birth_place": "Klis (Dalmacija)",
     "occupation": "radnik",
     "rank": "zamenik komesara bataljona",
-    "pdf_x_end": 351.5
+    "pdf_x_end": 351.5,
+    "ethnicity": "Hrvat",
+    "other_sources": [
+      {
+        "soldier_id": "0001001156",
+        "name": "Bralić Špire Ante",
+        "additional_info": "1915, Klis, Solin, Hrvatska, Hrvat, radnik, član KPJ od 1938, u NOB od 1941, u brigadi od juna 1943, I bataljon, načelnik OZNE div. j",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 96,
+        "pdf_x": 64.8,
+        "pdf_y": 521.9,
+        "pdf_x_end": 372.0,
+        "pdf_y_end": 553.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0008000861",
+        "name": "Bralić Marina Ante",
+        "additional_info": "1915, Klis, 4. bat, borac",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 30,
+        "pdf_x": 47.2,
+        "pdf_y": 341.3,
+        "pdf_x_end": 297.6,
+        "pdf_y_end": 350.3,
+        "unit_file": "4-splitska-soldiers.json"
+      },
+      {
+        "soldier_id": "0046000162",
+        "name": "Bralić Spire Ante",
+        "additional_info": "politički komesar 2. čete 2. bataljona, rođen 1915, Klis-Kosa, Split, stolar, Hrvat, u NOB od 1941, član KPJ od 1938. godine, krajem rata načelnik OZN-e 16. vojvođanske divizije.",
+        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 176.7,
+        "pdf_y": 292.1,
+        "pdf_x_end": 347.4,
+        "pdf_y_end": 354.1,
+        "unit_file": "3-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Branković",
@@ -2088,7 +2172,21 @@
     "soldier_id": "0076000106",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 349.6
+    "pdf_x_end": 349.6,
+    "other_sources": [
+      {
+        "soldier_id": "0057000403",
+        "name": "Brkić Nikola",
+        "additional_info": "rođen 1927. Laćarak, Sremska Mitrovica, zemljoradnik, borac, ranjen 29. 12. 1944. u Bešenovu, Srem.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 76,
+        "pdf_x": 83.1,
+        "pdf_y": 282.2,
+        "pdf_x_end": 364.4,
+        "pdf_y_end": 300.3,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brkić",
@@ -2150,7 +2248,21 @@
     "birth_place": "Jamena",
     "occupation": "student",
     "rank": "komesar bataljona",
-    "pdf_x_end": 351.0
+    "pdf_x_end": 351.0,
+    "other_sources": [
+      {
+        "soldier_id": "0082000427",
+        "name": "Brmbota Sofronija Milenko",
+        "additional_info": "1913, Jamena, Šid, student prava, komesar bataljona.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 96.2,
+        "pdf_y": 471.5,
+        "pdf_x_end": 376.3,
+        "pdf_y_end": 490.1,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brčin",
@@ -2760,10 +2872,10 @@
   },
   {
     "last_name": "Cvetković",
-    "middle_name": "",
+    "middle_name": "Živan",
     "first_name": "Luka",
-    "fathers_name": "",
-    "full_name": "Cvetković Luka",
+    "fathers_name": "Živan",
+    "full_name": "Cvetković Živan Luka",
     "additional_info": "ratar, rođen 1909, Brestač — Srem, poginuo 19. VIII 1944. u Zelengori",
     "birth_year": "1909",
     "death_type": "poginuo",
@@ -2776,7 +2888,23 @@
     "birth_place": "Brestač, Srem",
     "death_date": "19. VIII 1944",
     "death_place": "Zelengora",
-    "pdf_x_end": 347.5
+    "pdf_x_end": 347.5,
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0009000162",
+        "name": "Cvetković Živan Luka",
+        "additional_info": "1909, Brestač (Ruma), zemljoradnik, borac, umro u diviziskoj bolnici",
+        "pdf_file": "prva-vojvodjanska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 206.2,
+        "pdf_y": 358.8,
+        "pdf_x_end": 348.7,
+        "pdf_y_end": 395.1,
+        "unit_file": "prva-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Cvetković",
@@ -5268,10 +5396,10 @@
   },
   {
     "last_name": "Ignjatović",
-    "middle_name": "",
+    "middle_name": "Sime",
     "first_name": "Jovan",
-    "fathers_name": "",
-    "full_name": "Ignjatović Jovan",
+    "fathers_name": "Sima",
+    "full_name": "Ignjatović Sime Jovan",
     "additional_info": "ratar, rođen 1925, Brestač — Srem, pogiginuo 28. IX 1944. u s. Čokešina",
     "birth_year": "1925",
     "death_type": "poginuo",
@@ -5282,7 +5410,27 @@
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076000268",
     "birth_place": "Brestač, Srem",
-    "pdf_x_end": 356.8
+    "pdf_x_end": 356.8,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "vodnik",
+    "death_date": "1944",
+    "death_place": "na Drini",
+    "other_sources": [
+      {
+        "soldier_id": "0018000436",
+        "name": "Ignjatović Sime Jovan",
+        "additional_info": "rođen 1925, Brestač, Srbin, zemljoradnik, stupio u NOVJ 1943, vodnik, poginuo 1944. na Drini.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 134.8,
+        "pdf_y": 95.8,
+        "pdf_x_end": 394.6,
+        "pdf_y_end": 121.6,
+        "pdf_x_left": 113.5,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ignjatović",
@@ -12577,7 +12725,23 @@
     "soldier_id": "0076000637",
     "occupation": "kovač",
     "rank": "borac",
-    "pdf_x_end": 345.2
+    "pdf_x_end": 345.2,
+    "death_type": "nestao",
+    "death_date": "7. 8. 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0057002063",
+        "name": "Milovanović Nenada Vasa",
+        "additional_info": "rođen 1914. Gornji Tovarnik, Vukovar, kovač, nestao 7. 8. 1944. u pokretu za Crnu Goru.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 55,
+        "pdf_x": 64.2,
+        "pdf_y": 202.7,
+        "pdf_x_end": 345.3,
+        "pdf_y_end": 220.7,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milošev",
@@ -14139,7 +14303,21 @@
     "death_date": "19. VII 1944",
     "death_place": "u s. Raševo",
     "rank": "desetar",
-    "pdf_x_end": 364.4
+    "pdf_x_end": 364.4,
+    "other_sources": [
+      {
+        "soldier_id": "0009000898",
+        "name": "Nikolić Vlada",
+        "additional_info": "1906, Brestač (Ruma), borac",
+        "pdf_file": "prva-vojvodjanska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 55.4,
+        "pdf_y": 480.1,
+        "pdf_x_end": 198.0,
+        "pdf_y_end": 498.8,
+        "unit_file": "prva-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -14458,10 +14636,10 @@
   },
   {
     "last_name": "Okanović",
-    "middle_name": "",
+    "middle_name": "Jovana",
     "first_name": "Gavra",
-    "fathers_name": "",
-    "full_name": "Okanović Gavra",
+    "fathers_name": "Jovan",
+    "full_name": "Okanović Jovana Gavra",
     "additional_info": "zemljoradnik, rođen 1920. u Divošu (Srem), u NOB od 1941, član SKOJ-a od 1942, član KPJ od 1943, vodni delegat",
     "birth_year": "1920",
     "pdf_page": 20,
@@ -14473,7 +14651,23 @@
     "soldier_id": "0076000733",
     "occupation": "zemljoradnik",
     "rank": "vodni delegat",
-    "pdf_x_end": 347.7
+    "pdf_x_end": 347.7,
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0018001174",
+        "name": "Okanović Jovana Gavra",
+        "additional_info": "rođen 1920, Divoš, Srbin, zemljoradnik, stupio u NOVJ 1941, pomoćnik komesara bataljona.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 88,
+        "pdf_x": 102.8,
+        "pdf_y": 120.0,
+        "pdf_x_end": 362.6,
+        "pdf_y_end": 145.8,
+        "pdf_x_left": 81.8,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Okanović",
@@ -17099,7 +17293,21 @@
     "soldier_id": "0076000866",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 360.9
+    "pdf_x_end": 360.9,
+    "other_sources": [
+      {
+        "soldier_id": "0022002536",
+        "name": "Radosavljević Žarko",
+        "additional_info": "1921, Ugrinovci, borac, 10.10.1943.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 110,
+        "pdf_x": 87.6,
+        "pdf_y": 404.8,
+        "pdf_x_end": 369.6,
+        "pdf_y_end": 414.8,
+        "unit_file": "7-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radovac",
@@ -18525,7 +18733,23 @@
     "soldier_id": "0076000938",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 341.9
+    "pdf_x_end": 341.9,
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0018001562",
+        "name": "Skokić Branko",
+        "additional_info": "rođen 1924. Neštii — Bačka Ialanka, Srbin, zemljoradnik, stupio u NOVJ 1943, borac.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 113,
+        "pdf_x": 134.5,
+        "pdf_y": 261.3,
+        "pdf_x_end": 392.6,
+        "pdf_y_end": 277.7,
+        "pdf_x_left": 112.0,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Smodlaka",
@@ -18628,10 +18852,10 @@
   },
   {
     "last_name": "Spajić",
-    "middle_name": "",
+    "middle_name": "Stanka",
     "first_name": "Tina",
-    "fathers_name": "",
-    "full_name": "Spajić Tina",
+    "fathers_name": "Stanko",
+    "full_name": "Spajić Stanka Tina",
     "additional_info": "domaćica, rođena 1926. u Bosutu (Srem), u NOB od 1943, član SKOJ-a, bolničarka",
     "birth_year": "1926",
     "pdf_page": 25,
@@ -18643,7 +18867,23 @@
     "soldier_id": "0076000944",
     "occupation": "domaćica",
     "rank": "bolničarka",
-    "pdf_x_end": 349.0
+    "pdf_x_end": 349.0,
+    "ethnicity": "Srpkinja",
+    "other_sources": [
+      {
+        "soldier_id": "0018001588",
+        "name": "Spajić Stanka Tina",
+        "additional_info": "rođena 1927, Bosut — Sremska Mitrovica, Srpkinja, domaćica, stupila u NOVJ 1943, st. vodnik.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 114,
+        "pdf_x": 105.8,
+        "pdf_y": 248.3,
+        "pdf_x_end": 365.2,
+        "pdf_y_end": 273.8,
+        "pdf_x_left": 84.5,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Spasojević",
@@ -19592,10 +19832,10 @@
   },
   {
     "last_name": "Stojković",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Stojković Petar",
+    "fathers_name": "M",
+    "full_name": "Stojković M Petar",
     "additional_info": "ratar, rođen 1924, Krušedol — Srem, poginuo 13. VIII 1944. Sutjeska",
     "birth_year": "1924",
     "death_type": "poginuo",
@@ -19607,7 +19847,23 @@
     "soldier_id": "0076000993",
     "birth_place": "Krušedol, Srem",
     "death_date": "13. VIII 1944",
-    "pdf_x_end": 318.9
+    "pdf_x_end": 318.9,
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0057003308",
+        "name": "Stojković M Petar",
+        "additional_info": "rođen 1924. Krušedol, Irig, zemljoradnik, borac, pogknuo 1943. u istočnoj Bosni.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 70.5,
+        "pdf_y": 216.5,
+        "pdf_x_end": 352.0,
+        "pdf_y_end": 234.4,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojković",
@@ -19804,10 +20060,10 @@
   },
   {
     "last_name": "Subotić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Milica",
-    "fathers_name": "",
-    "full_name": "Subotić Milica",
+    "fathers_name": "M",
+    "full_name": "Subotić M Milica",
     "additional_info": "rođena 1926. u Neradinu (Srem), u NOB od 1943, vodna bolničarka, poginula 12. 4. 1944 — Turska Trnava",
     "birth_year": "1926",
     "pdf_page": 26,
@@ -19821,7 +20077,22 @@
     "death_date": "12. 4. 1944",
     "death_place": "Turska Trnava",
     "rank": "bolničarka",
-    "pdf_x_end": 327.3
+    "pdf_x_end": 327.3,
+    "occupation": "domaćica",
+    "other_sources": [
+      {
+        "soldier_id": "0057003349",
+        "name": "Subotić M Milica",
+        "additional_info": "rođena 1925. u s. Neradinu, Irig, domaćica, borac, poginula 1944. u istočnoj Bosni-",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 71.2,
+        "pdf_y": 435.8,
+        "pdf_x_end": 353.2,
+        "pdf_y_end": 453.7,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Subotić",
@@ -21598,7 +21869,51 @@
     "birth_place": "Podgorica, Titograd",
     "soldier_id": "0076001095",
     "rank": "zamenik komesara brigade",
-    "pdf_x_end": 369.5
+    "pdf_x_end": 369.5,
+    "ethnicity": "Crnogorac",
+    "occupation": "profesor",
+    "death_type": "umro",
+    "death_date": "1981",
+    "death_place": "Beograd",
+    "other_sources": [
+      {
+        "soldier_id": "0001013426",
+        "name": "Vujošević Arse Bogdan",
+        "additional_info": "1912, Doljani, Titograd, Crna Gora, Crnogorac, profesor, član KPJ od 1936, u NOB od jula 1941, u brigadi od decembra 1941, II bataljon, politički komesar divizije, narodni heroj",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 351,
+        "pdf_x": 42.8,
+        "pdf_y": 420.5,
+        "pdf_x_end": 349.8,
+        "pdf_y_end": 462.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001101577",
+        "name": "Vujosević Arsa Bogdan",
+        "additional_info": "zvani Bojo; komandir čete u 2. bataljonu (ranjenik u Centralnoj bolnici), rođen 1912, Doljani, Podgorica, profesor, Crnogorac, u NOB od 1941, član KPJ od 1936, krajem rata politički komesar 36. vojvođanske divizije. Odlikovan Ordenom narodnog heroja. Umro 1981. godine u Beogradu.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 105,
+        "pdf_x": 45.6,
+        "pdf_y": 223.6,
+        "pdf_x_end": 215.5,
+        "pdf_y_end": 319.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0018001884",
+        "name": "Vujošević Arse Bogdan",
+        "additional_info": "rođen 1912, Doljani, Crnogorac, profesor, stupio u NOVJ 1941, zamenik komandanta bataljona.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 121.0,
+        "pdf_y": 455.4,
+        "pdf_x_end": 381.0,
+        "pdf_y_end": 471.7,
+        "pdf_x_left": 100.0,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vukadinović",
@@ -22275,7 +22590,21 @@
     "soldier_id": "0076001130",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 330.1
+    "pdf_x_end": 330.1,
+    "other_sources": [
+      {
+        "soldier_id": "0082003870",
+        "name": "Zeković Milan",
+        "additional_info": "1924, Vojka, St. Pazova, zemljoradnik, borac.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 152,
+        "pdf_x": 106.2,
+        "pdf_y": 91.4,
+        "pdf_x_end": 387.5,
+        "pdf_y_end": 101.4,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zeković",
@@ -22583,10 +22912,10 @@
   },
   {
     "last_name": "Ćirić",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Nikola",
-    "fathers_name": "",
-    "full_name": "Ćirić Nikola",
+    "fathers_name": "V",
+    "full_name": "Ćirić V Nikola",
     "additional_info": "radnik, rođen 1924. u Novim Karlovcima (Srem), u NOB od 1943, član SKOJ-a 1942, KPJ od 1943, vodni delegat",
     "birth_year": "1924",
     "pdf_page": 5,
@@ -22598,7 +22927,26 @@
     "soldier_id": "0076001146",
     "occupation": "radnik",
     "rank": "vodni delegat",
-    "pdf_x_end": 360.1
+    "pdf_x_end": 360.1,
+    "ethnicity": "Srbin",
+    "death_type": "umro",
+    "death_date": "1956",
+    "death_place": "u Novim Karlovcima",
+    "other_sources": [
+      {
+        "soldier_id": "0018001950",
+        "name": "Ćirić V Nikola",
+        "additional_info": "rođen 1923, Novi Karlovci, Srbin, obućar, stupio u NOVJ 1943, bo-rac, umro 1956. u Novim Karlovcima.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 126,
+        "pdf_x": 110.3,
+        "pdf_y": 211.0,
+        "pdf_x_end": 369.8,
+        "pdf_y_end": 236.5,
+        "pdf_x_left": 89.6,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ćirić",
@@ -22844,10 +23192,10 @@
   },
   {
     "last_name": "Čavić",
-    "middle_name": "",
+    "middle_name": "Ljubomira",
     "first_name": "Dobrivoje",
-    "fathers_name": "",
-    "full_name": "Čavić Dobrivoje",
+    "fathers_name": "Ljubomir",
+    "full_name": "Čavić Ljubomira Dobrivoje",
     "additional_info": "rođen 1921. u Šimanovcima (Srem), u NOB od 1943, član SKOJ-a, desetar",
     "birth_year": "1921",
     "pdf_page": 5,
@@ -22858,7 +23206,26 @@
     "birth_place": "Šimanovci, Srem",
     "soldier_id": "0076001159",
     "rank": "desetar",
-    "pdf_x_end": 358.6
+    "pdf_x_end": 358.6,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "05. 04. 1945",
+    "death_place": "Šarengrad, Vukovar",
+    "other_sources": [
+      {
+        "soldier_id": "0001001669",
+        "name": "Čavić Ljubomira Dobrivoje",
+        "additional_info": "1921, Šimanovci, Pećinci, Vojvodina, Srbin, zemljoradnik, u NOB od marta 1943, u brigadi od septembra 1944, IV bataljon, vodnik, poginuo 05. 04. 1945, Šarengrad, Vukovar",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 134,
+        "pdf_x": 61.7,
+        "pdf_y": 473.2,
+        "pdf_x_end": 368.9,
+        "pdf_y_end": 514.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čeh",
@@ -23978,10 +24345,10 @@
   },
   {
     "last_name": "Šević",
-    "middle_name": "",
+    "middle_name": "D",
     "first_name": "Milenko",
-    "fathers_name": "",
-    "full_name": "Šević Milenko",
+    "fathers_name": "D",
+    "full_name": "Šević D Milenko",
     "additional_info": "zemljoradnik, rođen 1923. u Divošu (Srem), u NOB od 1943, član SKOJ-a, borac",
     "birth_year": "1923",
     "pdf_page": 27,
@@ -23993,7 +24360,23 @@
     "soldier_id": "0076001217",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 370.2
+    "pdf_x_end": 370.2,
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0018002062",
+        "name": "Šević D Milenko",
+        "additional_info": "rođen 1923, Divoš, Srbin, zem-JBoradnik, stupio u NOVJ 1943, borac.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 133,
+        "pdf_x": 124.9,
+        "pdf_y": 463.3,
+        "pdf_x_end": 384.7,
+        "pdf_y_end": 479.8,
+        "pdf_x_left": 102.6,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šećerov",

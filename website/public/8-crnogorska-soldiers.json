@@ -120,7 +120,22 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 401.4
+    "pdf_x_end": 401.4,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0110000037",
+        "name": "Aleksić Milorad",
+        "additional_info": "zvani Aca Mikaga; rođen 1921, Novaci, Ub, zemljoradnik. Borac 3. tamnavskog bataljona, a od 1. 3. 1942, u Drugoj proleterskoj brigadi. Oficir JNA u penziji.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 96,
+        "pdf_x": 95.4,
+        "pdf_y": 381.6,
+        "pdf_x_end": 376.9,
+        "pdf_y_end": 408.3,
+        "unit_file": "posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Aleksić",
@@ -1433,10 +1448,10 @@
   },
   {
     "last_name": "Bubanja",
-    "middle_name": "",
+    "middle_name": "Novičin",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Bubanja Petar",
+    "fathers_name": "Novičin",
+    "full_name": "Bubanja Novičin Petar",
     "additional_info": "rođen 1921. u Bubanju, zemljoradnik, komandir kurira, u brigadi od februara 1944, poginuo 19. aprila 1945. kod Šida.",
     "birth_year": "1921",
     "pdf_page": 5,
@@ -1450,7 +1465,22 @@
     "death_type": "poginuo",
     "death_date": "19. aprila 1945",
     "death_place": "Šid",
-    "pdf_x_end": 455.6
+    "pdf_x_end": 455.6,
+    "rank": "politički delegat voda",
+    "other_sources": [
+      {
+        "soldier_id": "0040010173",
+        "name": "Bubanja Novičin Petar",
+        "additional_info": "rođen 1920. u Bubanju (Ivangrad), zemljoradnik, politički delegat voda, poginuo januara 1945. na sremskom frontu.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 100,
+        "pdf_x": 51.8,
+        "pdf_y": 199.6,
+        "pdf_x_end": 353.3,
+        "pdf_y_end": 224.9,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bubanja",
@@ -3729,7 +3759,24 @@
     "soldier_id": "0038000174",
     "birth_place": "Novo.m Selu",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 457.9
+    "pdf_x_end": 457.9,
+    "ethnicity": "Srbin",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0010201738",
+        "name": "Jovanović Atanasa Dimitrije",
+        "additional_info": "rođ. 1923, Novo Selo, Niš, zemljoradnik, Srbin, u NOB i brigadi od 18. 11. 1944, borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 152,
+        "pdf_x": 87.8,
+        "pdf_y": 172.3,
+        "pdf_x_end": 352.0,
+        "pdf_y_end": 189.9,
+        "pdf_x_left": 70.7,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -7133,7 +7180,34 @@
     "death_date": "27. aprila 1944",
     "death_place": "na Žutoj kosi, kod Bijelog Polja",
     "rank": "komandir čete",
-    "pdf_x_end": 453.6
+    "pdf_x_end": 453.6,
+    "ethnicity": "Crnogorac",
+    "other_sources": [
+      {
+        "soldier_id": "0040000868",
+        "name": "Milatović Radula Radomir",
+        "additional_info": "komandir voda u 2. četi 3. bataljona, rođen 1911, Martiničko Gostilje, Danilovgrad, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1933, poginuo kod Bijelog Polja maja 1944. godine, komandir čete.",
+        "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+        "pdf_page": 57,
+        "pdf_x": 316.3,
+        "pdf_y": 205.9,
+        "pdf_x_end": 486.2,
+        "pdf_y_end": 281.3,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040010983",
+        "name": "Milatović Radulov Radomir",
+        "additional_info": "rođen 1911. u Danilovgradu, zemljoradnik, komandir čete, poginuo maja 1944. u Loznoj (dolina Lima).",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 79,
+        "pdf_x": 54.2,
+        "pdf_y": 148.3,
+        "pdf_x_end": 360.2,
+        "pdf_y_end": 173.6,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milačić",
@@ -9402,7 +9476,23 @@
     "death_type": "poginuo",
     "death_date": "17. oktobra 1944",
     "death_place": "Beograd",
-    "pdf_x_end": 459.6
+    "pdf_x_end": 459.6,
+    "ethnicity": "Crnogorac",
+    "rank": "komandir voda, komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "0041000964",
+        "name": "Pejović Mate Petar",
+        "additional_info": "komandir voda brdske baterije brigade, rođen 1920, Podvrš, Nikšić, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od juna 1941, poginuo u Beogradu 18. oktobra 1944, komandir čete pratećih oruđa 8. crnogorske brigade.",
+        "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+        "pdf_page": 55,
+        "pdf_x": 224.8,
+        "pdf_y": 332.2,
+        "pdf_x_end": 395.6,
+        "pdf_y_end": 406.2,
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pejović",
@@ -9507,7 +9597,35 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Vinkovci",
-    "pdf_x_end": 366.6
+    "pdf_x_end": 366.6,
+    "birth_place": "Takovo, Gornji Milanovac",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0021003775",
+        "name": "Petković Milorada Dušan",
+        "additional_info": "rođen 1919, Takovo, Gornji Milanovac, zemljoradnik. U Brigadi od 26. novembra 1944, 2. bataljon. Pogpnuo 13. aprila 1945. godine kod Vinkovaca.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 285,
+        "pdf_x": 53.9,
+        "pdf_y": 248.1,
+        "pdf_x_end": 356.4,
+        "pdf_y_end": 281.1,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0110001580",
+        "name": "Petković Dušan",
+        "additional_info": "rođen 1919, Takovo, Ub, zemljoradnik. Borac 3. bataljona do 20. 12. 1941. Ponovo stupio u NOVJ 6. 10. 1944. Poginuo aprila 1945. kod Vinkovaca.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 155,
+        "pdf_x": 57.6,
+        "pdf_y": 240.0,
+        "pdf_x_end": 339.3,
+        "pdf_y_end": 266.3,
+        "unit_file": "posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petković",
@@ -14087,6 +14205,19 @@
         "pdf_y": 62.3,
         "pdf_x_end": 181.8,
         "pdf_y_end": 110.8,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010205613",
+        "name": "Zdravković Milana Svetislav",
+        "additional_info": "rođ. 1922, Novo Selo, Niš, zemljoradnik, Srbin, u NOB i brigadi od 27. 12. 1944, borac, poginuo 12. 4. 1945. Novak Babska.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 464,
+        "pdf_x": 85.4,
+        "pdf_y": 97.3,
+        "pdf_x_end": 349.8,
+        "pdf_y_end": 125.3,
+        "pdf_x_left": 68.6,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ]

@@ -360,7 +360,21 @@
     "soldier_id": "0085000019",
     "death_date": "4. 1. 1945",
     "death_place": "Gračanica",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0027000014",
+        "name": "Antić Stanka Svetislav",
+        "additional_info": "(1924, Davnović, zaglavski, Knjaževac). U NOVJ od 15. XI 1944, poginuo 4. I 1945. kod Gračanice kao borac 2/2. bataljona.",
+        "pdf_file": "14-srpska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 61.3,
+        "pdf_y": 351.6,
+        "pdf_x_end": 343.1,
+        "pdf_y_end": 377.9,
+        "unit_file": "14-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Antić",
@@ -1535,7 +1549,23 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Kijevac",
     "pdf_x_end": 265.1,
-    "soldier_id": "0085000083"
+    "soldier_id": "0085000083",
+    "death_type": "poginuo",
+    "death_date": "31. X 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0031000022",
+        "name": "Bojić A Petar",
+        "additional_info": "iz Kijevca, srez lužnički, komandir 3. čete 2. bataljona, poginuo 31. X 1944. na vrhu Ušima.",
+        "pdf_file": "25-srpska-brigada.pdf",
+        "pdf_page": 2,
+        "pdf_x": 69.0,
+        "pdf_y": 237.3,
+        "pdf_x_end": 374.8,
+        "pdf_y_end": 255.4,
+        "unit_file": "25-srpska-brigada-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bojković",
@@ -2487,7 +2517,7 @@
     "fathers_name": "V",
     "full_name": "Dimitrijević V Stamenko",
     "additional_info": "iz Dobroviš",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 3,
     "pdf_y": 310.6,
     "pdf_x": 53.6,
@@ -2495,7 +2525,25 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Dobroviš",
     "pdf_x_end": 170.7,
-    "soldier_id": "0085000137"
+    "soldier_id": "0085000137",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "umro",
+    "death_date": "maja 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0090000051",
+        "name": "Dimitrijević Vasilija Stamenko",
+        "additional_info": "1919, Dobroviš, Vlasotince, zemljoradnik. U NOVJ od 6. maja 1944, bio borac 4. bataljona. Umro maja 1945. todine u Bitolju, od posledica rata. Po kazivanjima njegovih seljana poginuo 24. maja 1945. godine u okolini Bitolja od balista.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 31.5,
+        "pdf_y": 375.9,
+        "pdf_x_end": 338.7,
+        "pdf_y_end": 440.2,
+        "unit_file": "12-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dimitrijević",
@@ -3116,7 +3164,22 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Jabukovik",
     "pdf_x_end": 165.7,
-    "soldier_id": "0085000172"
+    "soldier_id": "0085000172",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0031000055",
+        "name": "Dojčinović S Rajko",
+        "additional_info": "iz Jabukovika, srez vlasotinački, borac 1. čete 2. bataljona, ranjen 13. X 1944. kod Bujanovca.",
+        "pdf_file": "25-srpska-brigada.pdf",
+        "pdf_page": 9,
+        "pdf_x": 69.6,
+        "pdf_y": 312.8,
+        "pdf_x_end": 374.8,
+        "pdf_y_end": 330.9,
+        "unit_file": "25-srpska-brigada-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dojčinović",
@@ -3255,7 +3318,22 @@
     "soldier_id": "0085000179",
     "occupation": "zemljoradnik",
     "death_date": "5. 3. 1945",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0019000116",
+        "name": "Dudejić A Đorđe",
+        "additional_info": "borac 2. čete 4. bataljona 16. srpske brigade, rođen u selu Krivelju kod Bora, poginuo 28. marta 1945. god. kod škole u selu Srebreniku blizu Tuzle u borbi protiv Nemaca i ustaša.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 61,
+        "pdf_x": 120.8,
+        "pdf_y": 400.4,
+        "pdf_x_end": 381.0,
+        "pdf_y_end": 434.8,
+        "pdf_x_left": 99.4,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dugić",
@@ -5264,10 +5342,23 @@
         "pdf_y": 225.4,
         "pdf_x_end": 331.9,
         "pdf_y_end": 233.4
+      },
+      {
+        "soldier_id": "0096000224",
+        "name": "Janković Ljubica",
+        "additional_info": "Crna Trava, 28. VI 1944, Karačevo",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 52.6,
+        "pdf_y": 129.86700000000002,
+        "pdf_x_end": 322.8,
+        "pdf_y_end": 136.9,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "death_date": "19. 9. 1944",
-    "rank": "borac"
+    "rank": "borac",
+    "death_place": "Karačevo"
   },
   {
     "last_name": "Janković",
@@ -5917,7 +6008,22 @@
     "pdf_x_end": 318.4,
     "soldier_id": "0085000324",
     "death_date": "februara 1945",
-    "death_place": "Brčko"
+    "death_place": "Brčko",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0027000261",
+        "name": "Jovanović Milana Vojislav",
+        "additional_info": "(1919, Malajnica, Brza Palanka, Negotin). U NOVJ od 16. X 1944, poginuo 10. II 1945. kod sela Rašljeva, Gračanica, kao borac 1/2. bataljona.",
+        "pdf_file": "14-srpska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 64.5,
+        "pdf_y": 80.3,
+        "pdf_x_end": 346.8,
+        "pdf_y_end": 106.9,
+        "unit_file": "14-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -9655,7 +9761,7 @@
     "fathers_name": "J",
     "full_name": "Milovanović J Božidar",
     "additional_info": "(Crna Trava), poginuo 30. 7. 1944. na Javorskim padinama kod Krivog Vira u borbi protiv četnika.",
-    "birth_year": "",
+    "birth_year": "1921",
     "death_type": "poginuo",
     "pdf_page": 28,
     "pdf_y": 279.9,
@@ -9676,10 +9782,36 @@
         "pdf_y": 514.6,
         "pdf_x_end": 350.8,
         "pdf_y_end": 522.6
+      },
+      {
+        "soldier_id": "0090000170",
+        "name": "Milovanović J Božidar",
+        "additional_info": "1921, Crna Trava, građevinski radnik. U NOVJ od januara 1944. godine, borac. Poginuo 28. juna 1944. godine kod mesta Ogošte, na tzv. Kosovskoj demarkacionoj liniji, Kosovo.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 32.7,
+        "pdf_y": 79.2,
+        "pdf_x_end": 339.4,
+        "pdf_y_end": 121.9,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000422",
+        "name": "Milovanović J Božidar",
+        "additional_info": "Crna Trava, 28. VI 1944, Ogošte (Kosovo)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 27,
+        "pdf_x": 55.1,
+        "pdf_y": 379.50699999999995,
+        "pdf_x_end": 358.8,
+        "pdf_y_end": 397.8,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "death_date": "30. 7. 1944",
-    "death_place": "na Javorskim padinama kod Krivog Vira"
+    "death_place": "na Javorskim padinama kod Krivog Vira",
+    "occupation": "građevinski radnik",
+    "rank": "borac"
   },
   {
     "last_name": "Milovanović",
@@ -11221,7 +11353,7 @@
     "fathers_name": "S",
     "full_name": "Momčilović S Živojin",
     "additional_info": "iz Crna Trava",
-    "birth_year": "",
+    "birth_year": "1918",
     "pdf_page": 10,
     "pdf_y": 351.1,
     "pdf_x": 237.9,
@@ -11229,7 +11361,24 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Crna Trava",
     "pdf_x_end": 348.3,
-    "soldier_id": "0085000614"
+    "soldier_id": "0085000614",
+    "occupation": "građevinski radnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0090000215",
+        "name": "Momčilović Stojana Živojin",
+        "additional_info": "1918, Crna Trava, građevinski radnik. U NOVJ od maja 1944, borac. Poginuo",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 34.5,
+        "pdf_y": 212.7,
+        "pdf_x_end": 341.0,
+        "pdf_y_end": 244.5,
+        "unit_file": "12-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mujadin",
@@ -13433,6 +13582,18 @@
         "pdf_y": 214.3,
         "pdf_x_end": 328.7,
         "pdf_y_end": 222.3
+      },
+      {
+        "soldier_id": "0090000257",
+        "name": "Pešić Danila Svetislav",
+        "additional_info": "1922, Gornje Gare, Vlasotince, zemljoradnik. U NOVJ od 16. marta 1944, bio desetar u 1. četi 1. bataljona. Poginuo 12. aprila 1945. godine kod sela Lipovca, Sremski front.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 45.1,
+        "pdf_y": 63.2,
+        "pdf_x_end": 351.1,
+        "pdf_y_end": 105.6,
+        "unit_file": "12-srpska-soldiers.json"
       }
     ],
     "occupation": "građevinski radnik",
