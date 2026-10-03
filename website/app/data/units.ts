@@ -1049,6 +1049,16 @@ export const units: Unit[] = [
     soldierCount: 1879,
     dataFile: '/osjecka-soldiers.json',
     pdfFiles: ['/pdfs/osjecka.pdf']
+  },
+  {
+    id: '1-zagorska-brigada',
+    name: '1. zagorska brigada',
+    nameEn: '1st Zagorje Brigade',
+    description: 'Formirana 8. maja 1944. u Selnici pod Ivančicom. Poginuli borci i rukovodioci brigade.',
+    image: '/images/1-zagorska-brigada.jpg',
+    soldierCount: 246,
+    dataFile: '/1-zagorska-soldiers.json',
+    pdfFiles: ['/pdfs/1-zagorska.pdf']
   }
   // Add more units here as you get more data
 ]

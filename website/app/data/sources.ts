@@ -1142,5 +1142,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/osjecka.jpg',
     brigadeName: 'Osječka udarna brigada',
     description: 'Spisak poginulih i umrlih boraca brigade i spisak preživelih boraca, po opštinama rođenja (str. 207–254)'
+  },
+  {
+    id: '1-zagorska',
+    title: '1. zagorska brigada — spisak poginulih boraca i rukovodilaca',
+    author: 'Vladimir Hlaić',
+    pdfPath: '/pdfs/1-zagorska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-zagorska.jpg',
+    brigadeName: '1. zagorska brigada',
+    description: 'Spisak poginulih boraca i rukovodilaca brigade, od 8. maja 1944. do 15. maja 1945: godina i mesto rođenja, kada i gde su pali (str. 191–205)'
   }
 ]

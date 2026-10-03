@@ -963,6 +963,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    105: {
+        'name': '1. Zagorska',
+        'json_file': '1-zagorska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # a table: "ANTOLIC MILENA | 1925 | Razdrto, Tuhelj | 3. 8. 1944 Petrova gora"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

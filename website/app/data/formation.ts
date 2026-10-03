@@ -369,6 +369,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-03-01', place: 'Slobodna Vlast (Đakovo)', source: 'https://znaci.org/00003/450.pdf',
     note: 'Cvetković, Osječka udarna brigada (str. 25): stvoreni su uvjeti „da se 1. ožujka 1944. formira i Osječka brigada, na prostoru kod sela Slobodne Vlasti“; u prvom stroju oko 600 boraca i rukovodilaca.',
   },
+  '1-zagorska-brigada': {
+    date: '1944-05-08', place: 'Selnica (Zlatar)', source: 'https://znaci.org/00003/625.pdf',
+    note: 'Hlaić, Grebeni Ivančice (str. 18–20): formiranje Prve zagorske narodnooslobodilačke brigade „8. svibnja 1944. u Selnici“, pod Ivančicom; u svečanom stroju 486 naoružanih boraca i rukovodilaca.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

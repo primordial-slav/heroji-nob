@@ -504,6 +504,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 1. marca 1944 pri Slobodni Vlasti blizu Đakova. Padli in umrli borci brigade ter preživeli, po občinah.',
   },
+  '1-zagorska-brigada': {
+    name: '1. zagorska brigada',
+    description:
+      'Ustanovljena 8. maja 1944 v Selnici pod Ivančico. Padli borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -999,6 +1004,11 @@ const mk: Record<string, UnitText> = {
     name: 'Осиечка ударна бригада',
     description:
       'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и умрените борци на бригадата и преживеаните, по општини.',
+  },
+  '1-zagorska-brigada': {
+    name: '1-ва загорска бригада',
+    description:
+      'Формирана на 8 мај 1944 во Селница под Иванчица. Загинатите борци и раководители на бригадата.',
   },
 }
 
@@ -1497,6 +1507,11 @@ const en: Record<string, UnitText> = {
     name: 'Osijek Assault Brigade',
     description:
       'Formed on 1 March 1944 near Slobodna Vlast, close to Đakovo. The brigade’s fallen and dead, and its survivors, by municipality.',
+  },
+  '1-zagorska-brigada': {
+    name: '1st Zagorje Brigade',
+    description:
+      'Formed on 8 May 1944 at Selnica, below Ivančica. The brigade’s fallen fighters and officers.',
   },
 }
 

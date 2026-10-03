@@ -119,6 +119,7 @@ BRIGADE_CODES = {
     102: '1. Bokeljska',
     103: '6. Dalmatinska',
     104: 'Osječka udarna',
+    105: '1. Zagorska',
     # Add new brigades here with next available code
 }
 
