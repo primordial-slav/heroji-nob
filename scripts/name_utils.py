@@ -918,6 +918,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    100: {
+        'name': '13. Hercegovačka',
+        'json_file': '13-hercegovacka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ABRAMOVIĆ (Đorđa) Milan, 1926, Celebići, Konjic, 6. 4. 1945, Blažuj, 2. bat."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

@@ -999,6 +999,16 @@ export const units: Unit[] = [
     soldierCount: 804,
     dataFile: '/3-primorsko-goranska-soldiers.json',
     pdfFiles: ['/pdfs/3-primorsko-goranska.pdf']
+  },
+  {
+    id: '13-hercegovacka-brigada',
+    name: '13. hercegovačka brigada',
+    nameEn: '13th Herzegovina Brigade',
+    description: 'Formirana 14. maja 1944. u Hercegovini. Poginuli borci i starešine brigade i svi koji su se borili u njoj.',
+    image: '/images/13-hercegovacka-brigada.jpg',
+    soldierCount: 2043,
+    dataFile: '/13-hercegovacka-soldiers.json',
+    pdfFiles: ['/pdfs/13-hercegovacka.pdf']
   }
   // Add more units here as you get more data
 ]

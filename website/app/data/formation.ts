@@ -349,6 +349,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-09-15', place: 'Škrljevo', source: 'https://znaci.org/00001/122_5.pdf',
     note: 'Mamula, Treća primorsko-goranska udarna brigada (Hronologija, str. 220): „15. septembar: Toga dana u rejonu Škrljeva u Hrvatskom primorju završeno je formiranje brigade.“',
   },
+  '13-hercegovacka-brigada': {
+    date: '1944-05-14', place: 'Hercegovina', source: 'https://znaci.org/00001/270_1.pdf',
+    note: 'Seferović, Trinaesta hercegovačka NOU brigada: ratni put brigade „od njenog formiranja 14. maja 1944. u Hercegovini“; „Naredba br. 465 Štaba 29. NOU divizije od 14. maja 1944. o formiranju 13. hercegovačke NOU brigade“; prvo postrojavanje na Divinu 13. juna 1944.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

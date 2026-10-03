@@ -1097,5 +1097,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/3-primorsko-goranska.jpg',
     brigadeName: '3. primorsko-goranska brigada',
     description: 'Spisak starešina brigade i četnih bolničara, s dužnošću, i spisak poginulih pripadnika brigade, s rođenjem i mestom pogibije (str. 234–259)'
+  },
+  {
+    id: '13-hercegovacka',
+    title: '13. hercegovačka brigada — poginuli i borci brigade',
+    author: 'Mensur Seferović',
+    pdfPath: '/pdfs/13-hercegovacka.pdf',
+    thumbnail: '/images/pdf-thumbs/13-hercegovacka.jpg',
+    brigadeName: '13. hercegovačka brigada',
+    description: 'Poginuli borci i starešine brigade (rođenje, dan i mesto pogibije) i spisak boraca koji su se borili u brigadi, samo imena (str. 316–347)'
   }
 ]
