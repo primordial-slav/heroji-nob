@@ -373,6 +373,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05-08', place: 'Selnica (Zlatar)', source: 'https://znaci.org/00003/625.pdf',
     note: 'Hlaić, Grebeni Ivančice (str. 18–20): formiranje Prve zagorske narodnooslobodilačke brigade „8. svibnja 1944. u Selnici“, pod Ivančicom; u svečanom stroju 486 naoružanih boraca i rukovodilaca.',
   },
+  '6-crnogorska-brigada': {
+    date: '1943-11-14', place: 'Drijenak (Kolašin)', source: 'https://znaci.org/00003/537.pdf',
+    note: 'Šesta crnogorska narodnooslobodilačka udarna brigada — zbornik sjećanja (str. 43): bataljoni su se prebacili „na Babljak i Drijenak u blizini Kolašina, gdje je formirana VI crnogorska udarna brigada, na dan 14. novembra 1943.“',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

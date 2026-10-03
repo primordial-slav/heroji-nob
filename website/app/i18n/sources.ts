@@ -226,6 +226,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in umrlih borcev brigade in seznam preživelih borcev, po občinah rojstva (str. 207–254)',
     '1-zagorska':
       'Seznam padlih borcev in starešin brigade od 8. maja 1944 do 15. maja 1945: leto in kraj rojstva, kdaj in kje so padli (str. 191–205)',
+    '6-crnogorska':
+      'Seznam padlih borcev in poveljnikov brigade, z umrlimi zaradi ran in bolezni: rojstvo, dolžnost, kje in kdaj so padli (str. 871 in dalje)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -441,6 +443,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и умрените борци на бригадата и список на преживеаните борци, по општини на раѓање (стр. 207–254)',
     '1-zagorska':
       'Список на загинатите борци и раководители на бригадата од 8 мај 1944 до 15 мај 1945: година и место на раѓање, кога и каде загинале (стр. 191–205)',
+    '6-crnogorska':
+      'Список на загинатите борци и старешини на бригадата, со умрените од рани и болести: раѓање, должност, каде и кога загинале (стр. 871 и натаму)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -655,6 +659,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen and dead, and its survivors, by the municipality they were born in (pp. 207–254)',
     '1-zagorska':
       'The brigade’s fallen fighters and officers, 8 May 1944 to 15 May 1945: year and place of birth, when and where they fell (pp. 191–205)',
+    '6-crnogorska':
+      'The brigade’s fallen Partisans and officers, with those who died of wounds or illness: birth, duty, where and when they fell (p. 871 on)',
   },
 }
 

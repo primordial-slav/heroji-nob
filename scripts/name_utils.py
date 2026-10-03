@@ -972,6 +972,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    106: {
+        'name': '6. Crnogorska',
+        'json_file': '6-crnogorska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АГРАМОВИЋ Милосава ВУКАШИН, рођен 1926. у Штедиму — Никшић, борац ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

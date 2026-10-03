@@ -1151,5 +1151,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-zagorska.jpg',
     brigadeName: '1. zagorska brigada',
     description: 'Spisak poginulih boraca i rukovodilaca brigade, od 8. maja 1944. do 15. maja 1945: godina i mesto rođenja, kada i gde su pali (str. 191–205)'
+  },
+  {
+    id: '6-crnogorska',
+    title: 'Šesta crnogorska udarna brigada — poginuli borci i starešine',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/6-crnogorska.pdf',
+    thumbnail: '/images/pdf-thumbs/6-crnogorska.jpg',
+    brigadeName: '6. crnogorska brigada',
+    description: 'Spisak poginulih boraca i starešina brigade, s onima koji su umrli od rana i bolesti: rođenje, dužnost, gde i kada su pali (str. 871 i dalje)'
   }
 ]

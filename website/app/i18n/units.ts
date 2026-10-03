@@ -509,6 +509,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 8. maja 1944 v Selnici pod Ivančico. Padli borci in starešine brigade.',
   },
+  '6-crnogorska-brigada': {
+    name: '6. črnogorska brigada',
+    description:
+      'Ustanovljena 14. novembra 1943 v Drijenku pri Kolašinu. Padli in umrli borci in poveljniki brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1009,6 +1014,11 @@ const mk: Record<string, UnitText> = {
     name: '1-ва загорска бригада',
     description:
       'Формирана на 8 мај 1944 во Селница под Иванчица. Загинатите борци и раководители на бригадата.',
+  },
+  '6-crnogorska-brigada': {
+    name: '6-та црногорска бригада',
+    description:
+      'Формирана на 14 ноември 1943 во Дријенак кај Колашин. Загинатите и умрените борци и старешини на бригадата.',
   },
 }
 
@@ -1512,6 +1522,11 @@ const en: Record<string, UnitText> = {
     name: '1st Zagorje Brigade',
     description:
       'Formed on 8 May 1944 at Selnica, below Ivančica. The brigade’s fallen fighters and officers.',
+  },
+  '6-crnogorska-brigada': {
+    name: '6th Montenegrin Brigade',
+    description:
+      'Formed on 14 November 1943 at Drijenak near Kolašin. The brigade’s fallen and dead, Partisans and officers.',
   },
 }
 

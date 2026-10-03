@@ -1059,6 +1059,16 @@ export const units: Unit[] = [
     soldierCount: 246,
     dataFile: '/1-zagorska-soldiers.json',
     pdfFiles: ['/pdfs/1-zagorska.pdf']
+  },
+  {
+    id: '6-crnogorska-brigada',
+    name: '6. crnogorska brigada',
+    nameEn: '6th Montenegrin Brigade',
+    description: 'Formirana 14. novembra 1943. u Drijenku kod Kolašina. Poginuli i umrli borci i starešine brigade.',
+    image: '/images/6-crnogorska-brigada.jpg',
+    soldierCount: 246,
+    dataFile: '/6-crnogorska-soldiers.json',
+    pdfFiles: ['/pdfs/6-crnogorska.pdf']
   }
   // Add more units here as you get more data
 ]
