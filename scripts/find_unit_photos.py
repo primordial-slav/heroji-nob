@@ -411,6 +411,12 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "12-hercegovacka-brigada": dict(
+        name="12. hercegovačka brigada", tags=[],
+        caption=r"(?<!\d)(?:12\.|XII\.?|dvanaest\w*)\s+hercegova[cč]k\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=None,
+        book=dict(pdf="00001/243.pdf", page=86, xref=363,
+                  caption="Štab 12. brigade i njenog 3. bataljona u Slatu, Nevesinje, nakon polaganja zakletve boraca i starješina 3. bataljona, 14. januara 1944."),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (the caption's OCR slip corrected)."),
     "13-hercegovacka-brigada": dict(
         name="13. hercegovačka brigada", tags=[],
         caption=r"(?<!\d)(?:13\.|XIII\.?|trinaest\w*)\s+hercegova[cč]k\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=None,

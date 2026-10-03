@@ -216,6 +216,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam starešin brigade in četnih bolničarjev z dolžnostjo ter seznam padlih pripadnikov brigade z rojstvom in krajem smrti (str. 234–259)',
     '13-hercegovacka':
       'Padli borci in starešine brigade (rojstvo, dan in kraj smrti) in seznam borcev, ki so se borili v brigadi, samo imena (str. 316–347)',
+    '12-hercegovacka':
+      'Seznam padlih borcev in starešin brigade po občinah: rojstvo, dolžnost, kje in kdaj so padli (str. 207–220)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -421,6 +423,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на старешините на бригадата и четните болничари, со должноста, и список на загинатите припадници на бригадата, со раѓањето и местото на загинувањето (стр. 234–259)',
     '13-hercegovacka':
       'Загинатите борци и старешини на бригадата (раѓање, ден и место на загинувањето) и список на борците што се бореле во бригадата, само имиња (стр. 316–347)',
+    '12-hercegovacka':
+      'Список на загинатите борци и старешини на бригадата, по општини: раѓање, должност, каде и кога загинале (стр. 207–220)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -625,6 +629,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s officers and company medics, with their duties, and its fallen, with their birth and where they fell (pp. 234–259)',
     '13-hercegovacka':
       'The brigade’s fallen soldiers and officers (birth, day and place of death) and everyone who fought in it, names only (pp. 316–347)',
+    '12-hercegovacka':
+      'The brigade’s fallen soldiers and officers, by municipality: birth, duty, where and when they fell (pp. 207–220)',
   },
 }
 

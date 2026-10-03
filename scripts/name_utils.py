@@ -927,6 +927,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    101: {
+        'name': '12. Hercegovačka',
+        'json_file': '12-hercegovacka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "БРАТИЋ Р. Ђорђо, рођен 1905. год. у Брестицама. Борац. Погинуо ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

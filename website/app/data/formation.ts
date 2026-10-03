@@ -353,6 +353,10 @@ export const formation: Record<string, Formation> = {
     date: '1944-05-14', place: 'Hercegovina', source: 'https://znaci.org/00001/270_1.pdf',
     note: 'Seferović, Trinaesta hercegovačka NOU brigada: ratni put brigade „od njenog formiranja 14. maja 1944. u Hercegovini“; „Naredba br. 465 Štaba 29. NOU divizije od 14. maja 1944. o formiranju 13. hercegovačke NOU brigade“; prvo postrojavanje na Divinu 13. juna 1944.',
   },
+  '12-hercegovacka-brigada': {
+    date: '1943-11-16', place: 'Hercegovina', source: 'https://znaci.org/00001/243_2.pdf',
+    note: 'Đikić, Dvanaesta hercegovačka NOU brigada (str. 13): „Dvanaesta hercegovačka narodnooslobodilačka udarna brigada formirana je 16. novembra 1943. godine“, od jedinica I, II i III grupe bataljona 10. hercegovačke brigade.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

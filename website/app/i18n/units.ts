@@ -484,6 +484,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 14. maja 1944 v Hercegovini. Padli borci in starešine brigade ter vsi, ki so se borili v njej.',
   },
+  '12-hercegovacka-brigada': {
+    name: '12. hercegovska brigada',
+    description:
+      'Ustanovljena 16. novembra 1943 v Hercegovini iz skupin bataljonov 10. hercegovske. Padli borci in starešine brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -959,6 +964,11 @@ const mk: Record<string, UnitText> = {
     name: '13-та херцеговска бригада',
     description:
       'Формирана на 14 мај 1944 во Херцеговина. Загинатите борци и старешини на бригадата и сите што се бореле во неа.',
+  },
+  '12-hercegovacka-brigada': {
+    name: '12-та херцеговска бригада',
+    description:
+      'Формирана на 16 ноември 1943 во Херцеговина, од групите баталјони на 10. херцеговска. Загинатите борци и старешини на бригадата.',
   },
 }
 
@@ -1437,6 +1447,11 @@ const en: Record<string, UnitText> = {
     name: '13th Herzegovina Brigade',
     description:
       'Formed on 14 May 1944 in Herzegovina. Its fallen soldiers and officers, and all who fought in it.',
+  },
+  '12-hercegovacka-brigada': {
+    name: '12th Herzegovina Brigade',
+    description:
+      'Formed on 16 November 1943 in Herzegovina, from battalion groups of the 10th Herzegovina. The brigade’s fallen soldiers and officers.',
   },
 }
 

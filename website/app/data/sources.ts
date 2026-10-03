@@ -1106,5 +1106,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/13-hercegovacka.jpg',
     brigadeName: '13. hercegovačka brigada',
     description: 'Poginuli borci i starešine brigade (rođenje, dan i mesto pogibije) i spisak boraca koji su se borili u brigadi, samo imena (str. 316–347)'
+  },
+  {
+    id: '12-hercegovacka',
+    title: '12. hercegovačka brigada — spisak poginulih boraca i starešina',
+    author: 'Osman Đikić',
+    pdfPath: '/pdfs/12-hercegovacka.pdf',
+    thumbnail: '/images/pdf-thumbs/12-hercegovacka.jpg',
+    brigadeName: '12. hercegovačka brigada',
+    description: 'Spisak poginulih boraca i starešina brigade, po opštinama: rođenje, dužnost, gde i kada su pali (str. 207–220)'
   }
 ]
