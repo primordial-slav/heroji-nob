@@ -411,6 +411,13 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "3-banijska-brigada": dict(
+        name="3. banijska brigada", tags=[],
+        caption=nth(3, r"banijsk"), photo=None,
+        book=dict(pdf="00003/447.pdf", page=152, xref=631,
+                  caption="Komandant brigade Mirko Bila i komandant Četvrtog bataljona Vido Milinković s grupom boraca kod Ilirske Bistrice, maj 1945."),
+        crop=(0.0, 0.6, 1.0, 1.0),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (the page's lower photo)."),
     "11-krajiska-brigada": dict(
         name="11. krajiška (kozaračka) brigada", tags=[],
         caption=r"(?<!\d)(?:11\.|XI\.?|jedanaest\w*)\s+(?:krajišk\w*\s+|kozar\w*\s+|knou\s+)*(?:no\s+|nou\s+|udarn\w*\s+)?brigad"

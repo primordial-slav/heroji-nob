@@ -381,6 +381,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-08-23', place: 'Kozara', source: 'https://znaci.org/00001/167_3.pdf',
     note: 'Milinović, Karasijević, Jedanaesta krajiška NOU brigada (str. 35): „štab 2. korpusa 23. avgusta formira od Ribničkog NOP odreda 13. krajišku NOU brigadu, a od Kozarskog NOP odreda 11. kozarsku NOU brigadu“; ime 11. krajiška (kozaračka) dobila je mesec dana kasnije.',
   },
+  '3-banijska-brigada': {
+    date: '1943-05-01', place: 'Komogovina (Kostajnica)', source: 'https://znaci.org/00003/447.pdf',
+    note: 'Borojević, Sinovi Šamarice (str. 183): 1. maja 1943. „u selu Komogovini formirana je Četvrta banijska brigada“; 28. juna preimenovana u Prvu brigadu Unske operativne grupe, a 11. septembra 1943. ušla u Sedmu banijsku diviziju kao Treća.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

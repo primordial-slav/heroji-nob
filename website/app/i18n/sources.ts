@@ -232,6 +232,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev brigade po občinah: rojstvo, narodnost, poklic, kdaj so vstopili v NOV, dolžnost, kje in kdaj so padli (str. 439–463)',
     '11-krajiska-zene':
       'Seznam bork, ki so bile v brigadi, samo imena (str. 425)',
+    '3-banijska':
+      'Seznam poveljnikov in borcev brigade, samo imena (str. 195–205)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -453,6 +455,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци на бригадата, по општини: раѓање, националност, занимање, кога стапиле во НОВ, должност, каде и кога загинале (стр. 439–463)',
     '11-krajiska-zene':
       'Список на борките што биле во бригадата, само имиња (стр. 425)',
+    '3-banijska':
+      'Список на раководителите и борците на бригадата, само имиња (стр. 195–205)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -673,6 +677,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen, by municipality: birth, nationality, occupation, when they joined the army, duty, where and when they fell (pp. 439–463)',
     '11-krajiska-zene':
       'The women who fought in the brigade, names only (p. 425)',
+    '3-banijska':
+      'The brigade’s officers and fighters, names only (pp. 195–205)',
   },
 }
 

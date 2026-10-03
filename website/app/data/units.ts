@@ -1079,6 +1079,16 @@ export const units: Unit[] = [
     soldierCount: 643,
     dataFile: '/11-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/11-krajiska-poginuli.pdf', '/pdfs/11-krajiska-zene.pdf']
+  },
+  {
+    id: '3-banijska-brigada',
+    name: '3. banijska brigada',
+    nameEn: '3rd Banija Brigade',
+    description: 'Formirana 1. maja 1943. u Komogovini kao 4. banijska brigada; od septembra 1943. 3. brigada 7. banijske divizije. Rukovodioci i borci brigade.',
+    image: '/images/3-banijska-brigada.jpg',
+    soldierCount: 1160,
+    dataFile: '/3-banijska-soldiers.json',
+    pdfFiles: ['/pdfs/3-banijska.pdf']
   }
   // Add more units here as you get more data
 ]

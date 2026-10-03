@@ -990,6 +990,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    108: {
+        'name': '3. Banijska',
+        'json_file': '3-banijska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # names only, three columns: "Abramović Stojan"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

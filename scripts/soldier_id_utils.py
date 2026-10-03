@@ -122,6 +122,7 @@ BRIGADE_CODES = {
     105: '1. Zagorska',
     106: '6. Crnogorska',
     107: '11. Krajiška',
+    108: '3. Banijska',
     # Add new brigades here with next available code
 }
 

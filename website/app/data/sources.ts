@@ -1178,5 +1178,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/11-krajiska-zene.jpg',
     brigadeName: '11. krajiška (kozaračka) brigada',
     description: 'Spisak žena boraca koje su bile u brigadi, samo imena (str. 425)'
+  },
+  {
+    id: '3-banijska',
+    title: 'Sinovi Šamarice — spisak rukovodilaca i boraca Treće banijske brigade',
+    author: 'Jovo Borojević',
+    pdfPath: '/pdfs/3-banijska.pdf',
+    thumbnail: '/images/pdf-thumbs/3-banijska.jpg',
+    brigadeName: '3. banijska brigada',
+    description: 'Spisak rukovodilaca i boraca brigade, samo imena (str. 195–205)'
   }
 ]

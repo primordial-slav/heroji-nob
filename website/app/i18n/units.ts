@@ -519,6 +519,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 23. avgusta 1943 na Kozari iz Kozarskega NOP odreda. Padli borci brigade po občinah in seznam bork.',
   },
+  '3-banijska-brigada': {
+    name: '3. banijska brigada',
+    description:
+      'Ustanovljena 1. maja 1943 v Komogovini kot 4. banijska brigada; od septembra 1943 3. brigada 7. banijske divizije. Poveljniki in borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1029,6 +1034,11 @@ const mk: Record<string, UnitText> = {
     name: '11-та краишка (козарачка) бригада',
     description:
       'Формирана на 23 август 1943 на Козара, од Козарскиот НОП одред. Загинатите борци на бригадата, по општини, и список на борките.',
+  },
+  '3-banijska-brigada': {
+    name: '3-та банијска бригада',
+    description:
+      'Формирана на 1 мај 1943 во Комоговина како 4. банијска бригада; од септември 1943 3. бригада на 7. банијска дивизија. Раководителите и борците на бригадата.',
   },
 }
 
@@ -1542,6 +1552,11 @@ const en: Record<string, UnitText> = {
     name: '11th Krajina (Kozara) Brigade',
     description:
       'Formed on 23 August 1943 on Kozara, from the Kozara Partisan Detachment. The brigade’s fallen, by municipality, and a list of its women fighters.',
+  },
+  '3-banijska-brigada': {
+    name: '3rd Banija Brigade',
+    description:
+      'Formed on 1 May 1943 at Komogovina as the 4th Banija Brigade; from September 1943 the 3rd brigade of the 7th Banija Division. The brigade’s officers and fighters.',
   },
 }
 
