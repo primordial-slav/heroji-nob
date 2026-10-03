@@ -385,6 +385,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-05-01', place: 'Komogovina (Kostajnica)', source: 'https://znaci.org/00003/447.pdf',
     note: 'Borojević, Sinovi Šamarice (str. 183): 1. maja 1943. „u selu Komogovini formirana je Četvrta banijska brigada“; 28. juna preimenovana u Prvu brigadu Unske operativne grupe, a 11. septembra 1943. ušla u Sedmu banijsku diviziju kao Treća.',
   },
+  'macvanski-odred': {
+    date: '1941-07-16', place: 'Bubanja (Glušci, Mačva)', source: 'https://znaci.org/00001/48_9.htm',
+    note: 'Parmaković, Mačvanski partizanski odred, „Osnivanje Mačvanskog partizanskog odreda“: „Na dan 16. jula oko 9,00 časova svi su se okupili na sastanak … Osnovan je Mačvanski partizanski odred“, na Bubanji kod Glušaca.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

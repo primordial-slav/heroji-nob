@@ -411,6 +411,12 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "macvanski-odred": dict(
+        name="Mačvanski (Podrinski) NOP odred", tags=[],
+        caption=r"ma[cč]vansk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred|podrinsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred",
+        photo=None,
+        note="The gallery has only a funeral (14189) and a portrait (14307); the book is a text on znaci.org, without photos. "
+             "The card shows the list's page."),
     "3-banijska-brigada": dict(
         name="3. banijska brigada", tags=[],
         caption=nth(3, r"banijsk"), photo=None,

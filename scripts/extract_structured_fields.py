@@ -517,10 +517,15 @@ class Extractor:
             # 3. makedonska's dates have Roman months the scan garbled ("16-1U-1945. god."); the parser reads them
             text = re.sub(r'\s+\S+-\S*-\S*\d\S*(?:\s*god\.)?', '', text)
             text = re.sub(r'\b[pl]oginuo\s+(?:kod|hod|kd)\s', 'poginuo kod ', text)
+        if code == 109:
+            # Mačvanski odred: the heading the entry stands under leads ("Banja Koviljača (Jadranski srez): ")
+            text = re.sub(r'^[^:;]{2,80}:\s*(?:(?:zvan[ai]|dr\.)[^;]{0,60};\s*)*', '', text)
         dm = DEATH_RE.search(text)
         life_text = text[:dm.start()] if dm else text
         out = self.life(life_text, code)
         head = out.pop('_head', '')
+        if code == 109:
+            out = {k: v for k, v in out.items() if k == 'ethnicity'}       # its parser reads the birthplace and the trade
         out.update(self.death(text))
         rank_text = (head + ' ' if head else '') + text
         if code in DUTY_BEFORE_WAR_END or duty_first:

@@ -236,6 +236,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam poveljnikov in borcev brigade, samo imena (str. 195–205)',
     '8-banijska-poginuli':
       'Padli in umrli borci brigade od 7. septembra 1942 do 6. decembra 1944: rojstvo, poklic, kdaj so prišli v brigado, dolžnost, kje in kdaj so padli (str. 247–312)',
+    'macvanski-odred':
+      'Seznam borcev Mačvanskega (Podrinjskega) partizanskega odreda, prvi del (julij 1941 – marec 1942): po krajih, iz katerih so vstopili v odred, s podatki o vsakem (besedilo na znaci.org, brez skenirane knjige; drugi del ni objavljen)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -461,6 +463,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на раководителите и борците на бригадата, само имиња (стр. 195–205)',
     '8-banijska-poginuli':
       'Загинатите и умрените борци на бригадата од 7 септември 1942 до 6 декември 1944: раѓање, занимање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 247–312)',
+    'macvanski-odred':
+      'Список на борците на Мачванскиот (Подринскиот) партизански одред, прв дел (јули 1941 – март 1942): по местата од кои стапиле во одредот, со податоци за секого (текст на znaci.org, без скенирана книга; вториот дел не е објавен)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -685,6 +689,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s officers and fighters, names only (pp. 195–205)',
     '8-banijska-poginuli':
       'The brigade’s fallen and dead, 7 September 1942 to 6 December 1944: birth, occupation, when they joined, duty, where and when they fell (pp. 247–312)',
+    'macvanski-odred':
+      'The fighters of the Mačva (Podrinje) Partisan Detachment, part one (July 1941 – March 1942), by the place they joined from, with details of each (a text on znaci.org, no scan of the book; part two is not published)',
   },
 }
 

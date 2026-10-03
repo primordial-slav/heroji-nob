@@ -999,6 +999,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    109: {
+        'name': 'Mačvanski odred',
+        'json_file': 'macvanski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a web page: "Машановић Здравко - р. 1917, Бапска Нова, ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 

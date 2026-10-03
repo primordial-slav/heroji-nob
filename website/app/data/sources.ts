@@ -1196,5 +1196,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/3-banijska.jpg',
     brigadeName: '3. banijska brigada',
     description: 'Spisak rukovodilaca i boraca brigade, samo imena (str. 195–205)'
+  },
+  {
+    id: 'macvanski-odred',
+    title: 'Mačvanski partizanski odred — spisak boraca',
+    author: 'Dragoslav Parmaković',
+    pdfPath: 'https://znaci.org/00001/48_102.htm',
+    thumbnail: '/images/pdf-thumbs/macvanski-odred.jpg',
+    brigadeName: 'Mačvanski (Podrinski) NOP odred',
+    description: 'Spisak boraca Mačvanskog (Podrinskog) NOP odreda, prvi deo (jul 1941 – mart 1942): po mestima iz kojih su stupili u odred, s podacima o svakom (tekst na znaci.org, bez skenirane knjige; drugi deo nije objavljen)'
   }
 ]

@@ -1089,6 +1089,16 @@ export const units: Unit[] = [
     soldierCount: 1160,
     dataFile: '/3-banijska-soldiers.json',
     pdfFiles: ['/pdfs/3-banijska.pdf']
+  },
+  {
+    id: 'macvanski-odred',
+    name: 'Mačvanski (Podrinski) NOP odred',
+    nameEn: 'Mačva (Podrinje) Partisan Detachment',
+    description: 'Formiran 16. jula 1941. na Bubanji kod Glušaca u Mačvi; od avgusta Podrinski NOP odred. Borci odreda od jula 1941. do marta 1942, po mestima iz kojih su došli.',
+    image: '/images/pdf-thumbs/macvanski-odred.jpg',
+    soldierCount: 1633,
+    dataFile: '/macvanski-odred-soldiers.json',
+    pdfFiles: []
   }
   // Add more units here as you get more data
 ]
