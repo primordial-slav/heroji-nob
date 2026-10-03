@@ -1019,6 +1019,16 @@ export const units: Unit[] = [
     soldierCount: 278,
     dataFile: '/12-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/12-hercegovacka.pdf']
+  },
+  {
+    id: '1-bokeljska-brigada',
+    name: '1. bokeljska brigada',
+    nameEn: '1st Boka Brigade',
+    description: 'Formirana 5. oktobra 1944. u Konjskom kod Trebinja. Poginuli, umrli i nestali borci brigade.',
+    image: '/images/1-bokeljska-brigada.jpg',
+    soldierCount: 201,
+    dataFile: '/1-bokeljska-soldiers.json',
+    pdfFiles: ['/pdfs/1-bokeljska.pdf']
   }
   // Add more units here as you get more data
 ]

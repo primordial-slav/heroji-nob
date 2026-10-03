@@ -936,6 +936,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_last',
     },
+    102: {
+        'name': '1. Bokeljska',
+        'json_file': '1-bokeljska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "21. Brehner N. Zvonimir, 1. bataljon, rođen u Dobroti — Kotor, poginuo ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

@@ -357,6 +357,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-11-16', place: 'Hercegovina', source: 'https://znaci.org/00001/243_2.pdf',
     note: 'Đikić, Dvanaesta hercegovačka NOU brigada (str. 13): „Dvanaesta hercegovačka narodnooslobodilačka udarna brigada formirana je 16. novembra 1943. godine“, od jedinica I, II i III grupe bataljona 10. hercegovačke brigade.',
   },
+  '1-bokeljska-brigada': {
+    date: '1944-10-05', place: 'Konjsko (Trebinje)', source: 'https://znaci.org/00003/384.pdf',
+    note: 'Živković, Prva bokeljska NOU brigada (str. 152): brigada je formirana naredbom Štaba 2. udarnog korpusa od 29. septembra, a postrojena „5. oktobra 1944. u selu Konjsko, opština Zupci (jugoistočna Hercegovina)“, s četiri bataljona i oko 800 boraca.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

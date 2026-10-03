@@ -1115,5 +1115,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/12-hercegovacka.jpg',
     brigadeName: '12. hercegovačka brigada',
     description: 'Spisak poginulih boraca i starešina brigade, po opštinama: rođenje, dužnost, gde i kada su pali (str. 207–220)'
+  },
+  {
+    id: '1-bokeljska',
+    title: '1. bokeljska brigada — spisak poginulih i umrlih boraca',
+    author: 'Dušan Živković',
+    pdfPath: '/pdfs/1-bokeljska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-bokeljska.jpg',
+    brigadeName: '1. bokeljska brigada',
+    description: 'Spisak poginulih i umrlih boraca brigade i nestalih u borbi: bataljon, rođenje, gde i kada su pali (str. 315–321)'
   }
 ]

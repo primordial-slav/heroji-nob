@@ -116,6 +116,7 @@ BRIGADE_CODES = {
     99: '3. Primorsko-goranska',
     100: '13. Hercegovačka',
     101: '12. Hercegovačka',
+    102: '1. Bokeljska',
     # Add new brigades here with next available code
 }
 

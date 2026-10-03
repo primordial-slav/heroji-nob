@@ -489,6 +489,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 16. novembra 1943 v Hercegovini iz skupin bataljonov 10. hercegovske. Padli borci in starešine brigade.',
   },
+  '1-bokeljska-brigada': {
+    name: '1. bokeljska brigada',
+    description:
+      'Ustanovljena 5. oktobra 1944 v Konjskem pri Trebinju. Padli, umrli in pogrešani borci brigade.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -969,6 +974,11 @@ const mk: Record<string, UnitText> = {
     name: '12-та херцеговска бригада',
     description:
       'Формирана на 16 ноември 1943 во Херцеговина, од групите баталјони на 10. херцеговска. Загинатите борци и старешини на бригадата.',
+  },
+  '1-bokeljska-brigada': {
+    name: '1-ва бокељска бригада',
+    description:
+      'Формирана на 5 октомври 1944 во Коњско кај Требиње. Загинатите, умрените и исчезнатите борци на бригадата.',
   },
 }
 
@@ -1452,6 +1462,11 @@ const en: Record<string, UnitText> = {
     name: '12th Herzegovina Brigade',
     description:
       'Formed on 16 November 1943 in Herzegovina, from battalion groups of the 10th Herzegovina. The brigade’s fallen soldiers and officers.',
+  },
+  '1-bokeljska-brigada': {
+    name: '1st Boka Brigade',
+    description:
+      'Formed on 5 October 1944 at Konjsko near Trebinje. The brigade’s fallen, dead and missing.',
   },
 }
 
