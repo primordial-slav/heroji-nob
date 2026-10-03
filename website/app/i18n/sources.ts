@@ -228,6 +228,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev in starešin brigade od 8. maja 1944 do 15. maja 1945: leto in kraj rojstva, kdaj in kje so padli (str. 191–205)',
     '6-crnogorska':
       'Seznam padlih borcev in poveljnikov brigade, z umrlimi zaradi ran in bolezni: rojstvo, dolžnost, kje in kdaj so padli (str. 871 in dalje)',
+    '11-krajiska-poginuli':
+      'Seznam padlih borcev brigade po občinah: rojstvo, narodnost, poklic, kdaj so vstopili v NOV, dolžnost, kje in kdaj so padli (str. 439–463)',
+    '11-krajiska-zene':
+      'Seznam bork, ki so bile v brigadi, samo imena (str. 425)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -445,6 +449,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци и раководители на бригадата од 8 мај 1944 до 15 мај 1945: година и место на раѓање, кога и каде загинале (стр. 191–205)',
     '6-crnogorska':
       'Список на загинатите борци и старешини на бригадата, со умрените од рани и болести: раѓање, должност, каде и кога загинале (стр. 871 и натаму)',
+    '11-krajiska-poginuli':
+      'Список на загинатите борци на бригадата, по општини: раѓање, националност, занимање, кога стапиле во НОВ, должност, каде и кога загинале (стр. 439–463)',
+    '11-krajiska-zene':
+      'Список на борките што биле во бригадата, само имиња (стр. 425)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -661,6 +669,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen fighters and officers, 8 May 1944 to 15 May 1945: year and place of birth, when and where they fell (pp. 191–205)',
     '6-crnogorska':
       'The brigade’s fallen Partisans and officers, with those who died of wounds or illness: birth, duty, where and when they fell (p. 871 on)',
+    '11-krajiska-poginuli':
+      'The brigade’s fallen, by municipality: birth, nationality, occupation, when they joined the army, duty, where and when they fell (pp. 439–463)',
+    '11-krajiska-zene':
+      'The women who fought in the brigade, names only (p. 425)',
   },
 }
 

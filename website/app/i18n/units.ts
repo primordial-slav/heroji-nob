@@ -514,6 +514,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 14. novembra 1943 v Drijenku pri Kolašinu. Padli in umrli borci in poveljniki brigade.',
   },
+  '11-krajiska-brigada': {
+    name: '11. krajiška (kozaraška) brigada',
+    description:
+      'Ustanovljena 23. avgusta 1943 na Kozari iz Kozarskega NOP odreda. Padli borci brigade po občinah in seznam bork.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1019,6 +1024,11 @@ const mk: Record<string, UnitText> = {
     name: '6-та црногорска бригада',
     description:
       'Формирана на 14 ноември 1943 во Дријенак кај Колашин. Загинатите и умрените борци и старешини на бригадата.',
+  },
+  '11-krajiska-brigada': {
+    name: '11-та краишка (козарачка) бригада',
+    description:
+      'Формирана на 23 август 1943 на Козара, од Козарскиот НОП одред. Загинатите борци на бригадата, по општини, и список на борките.',
   },
 }
 
@@ -1527,6 +1537,11 @@ const en: Record<string, UnitText> = {
     name: '6th Montenegrin Brigade',
     description:
       'Formed on 14 November 1943 at Drijenak near Kolašin. The brigade’s fallen and dead, Partisans and officers.',
+  },
+  '11-krajiska-brigada': {
+    name: '11th Krajina (Kozara) Brigade',
+    description:
+      'Formed on 23 August 1943 on Kozara, from the Kozara Partisan Detachment. The brigade’s fallen, by municipality, and a list of its women fighters.',
   },
 }
 

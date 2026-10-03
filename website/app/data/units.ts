@@ -1069,6 +1069,16 @@ export const units: Unit[] = [
     soldierCount: 246,
     dataFile: '/6-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/6-crnogorska.pdf']
+  },
+  {
+    id: '11-krajiska-brigada',
+    name: '11. krajiška (kozaračka) brigada',
+    nameEn: '11th Krajina (Kozara) Brigade',
+    description: 'Formirana 23. avgusta 1943. na Kozari, od Kozarskog NOP odreda. Poginuli borci brigade, po opštinama, i spisak žena boraca.',
+    image: '/images/11-krajiska-brigada.jpg',
+    soldierCount: 643,
+    dataFile: '/11-krajiska-soldiers.json',
+    pdfFiles: ['/pdfs/11-krajiska-poginuli.pdf', '/pdfs/11-krajiska-zene.pdf']
   }
   // Add more units here as you get more data
 ]

@@ -62,7 +62,8 @@ BOX_FIELDS = ('pdf_x_end', 'pdf_y_end', 'pdf_x_left', 'pdf_rects')
 # date): their parser boxes each name's own words, in two boxes (pdf_rects) where the name runs on to the next
 # line, and those boxes are kept; a column-down box would hold a dozen names.
 INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjanska.pdf', '13-vojvodjanska.pdf',
-                  '7-srpska.pdf'}   # the last three: their parsers' boxes (layouts this module misreads)
+                  '7-srpska.pdf',   # these three: their parsers' boxes (layouts this module misreads)
+                  '11-krajiska-zene.pdf'}   # 11. krajiška's women, names run on
 
 
 # ─────────────────────────────────────────────

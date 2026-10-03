@@ -981,6 +981,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    107: {
+        'name': '11. Krajiška',
+        'json_file': '11-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "Hrkec J. Ivica, rod. 1920. u Bos. Dubici, ..."; the women's list: names only
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

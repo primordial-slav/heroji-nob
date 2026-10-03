@@ -411,6 +411,10 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "11-krajiska-brigada": dict(
+        name="11. krajiška (kozaračka) brigada", tags=[],
+        caption=r"(?<!\d)(?:11\.|XI\.?|jedanaest\w*)\s+(?:krajišk\w*\s+|kozar\w*\s+|knou\s+)*(?:no\s+|nou\s+|udarn\w*\s+)?brigad"
+                r"|kozara[cč]k\w*\s+(?:nou\s+)?brigad", photo=16187),
     "6-crnogorska-brigada": dict(
         name="6. crnogorska brigada", tags=[],
         caption=r"(?<!\d)(?:6\.|VI\.?|[sš]est\w*)\s+crnogorsk\w*\s+(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=14445),

@@ -377,6 +377,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-11-14', place: 'Drijenak (Kolašin)', source: 'https://znaci.org/00003/537.pdf',
     note: 'Šesta crnogorska narodnooslobodilačka udarna brigada — zbornik sjećanja (str. 43): bataljoni su se prebacili „na Babljak i Drijenak u blizini Kolašina, gdje je formirana VI crnogorska udarna brigada, na dan 14. novembra 1943.“',
   },
+  '11-krajiska-brigada': {
+    date: '1943-08-23', place: 'Kozara', source: 'https://znaci.org/00001/167_3.pdf',
+    note: 'Milinović, Karasijević, Jedanaesta krajiška NOU brigada (str. 35): „štab 2. korpusa 23. avgusta formira od Ribničkog NOP odreda 13. krajišku NOU brigadu, a od Kozarskog NOP odreda 11. kozarsku NOU brigadu“; ime 11. krajiška (kozaračka) dobila je mesec dana kasnije.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

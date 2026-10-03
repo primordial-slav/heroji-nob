@@ -1160,5 +1160,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/6-crnogorska.jpg',
     brigadeName: '6. crnogorska brigada',
     description: 'Spisak poginulih boraca i starešina brigade, s onima koji su umrli od rana i bolesti: rođenje, dužnost, gde i kada su pali (str. 871 i dalje)'
+  },
+  {
+    id: '11-krajiska-poginuli',
+    title: 'Jedanaesta krajiška NOU brigada — spisak poginulih boraca',
+    author: 'Đuro Milinović, Drago Karasijević',
+    pdfPath: '/pdfs/11-krajiska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/11-krajiska-poginuli.jpg',
+    brigadeName: '11. krajiška (kozaračka) brigada',
+    description: 'Spisak poginulih boraca brigade, po opštinama: rođenje, narodnost, zanimanje, kada su stupili u NOV, dužnost, gde i kada su pali (str. 439–463)'
+  },
+  {
+    id: '11-krajiska-zene',
+    title: 'Jedanaesta krajiška NOU brigada — spisak žena boraca',
+    author: 'Đuro Milinović, Drago Karasijević',
+    pdfPath: '/pdfs/11-krajiska-zene.pdf',
+    thumbnail: '/images/pdf-thumbs/11-krajiska-zene.jpg',
+    brigadeName: '11. krajiška (kozaračka) brigada',
+    description: 'Spisak žena boraca koje su bile u brigadi, samo imena (str. 425)'
   }
 ]

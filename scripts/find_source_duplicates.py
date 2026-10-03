@@ -177,6 +177,7 @@ LIST_FATE = {
     'karlovacka.pdf (poginuli)': 'fell',
     '4-sandzacka.pdf (poginuli)': 'fell',
     '3-primorsko-goranska.pdf (poginuli)': 'fell',
+    '11-krajiska-poginuli.pdf': 'fell',
 }
 # Borci Sutjeske: "krajem rata komandir čete" (his duty when the war ended) and a death after the war ("Umro 1982.")
 SURVIVED_SUTJESKA = re.compile(r'(?<!poginuo )(?<!poginula )\bkrajem rata\b(?! (?:je )?(?:pogin|umr|nesta))'
