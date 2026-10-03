@@ -474,6 +474,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 1. decembra 1943 v Pljevljah. Padli in ranjeni borci brigade.',
   },
+  '3-primorsko-goranska': {
+    name: '3. primorsko-goranska brigada',
+    description:
+      'Ustanovljena 15. septembra 1943 v Škrljevem v Hrvaškem primorju. Starešine in četni bolničarji brigade ter padli.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -939,6 +944,11 @@ const mk: Record<string, UnitText> = {
     name: '4-та санџачка бригада',
     description:
       'Формирана на 1 декември 1943 во Пљевља. Загинатите и ранетите борци на бригадата.',
+  },
+  '3-primorsko-goranska': {
+    name: '3-та приморско-горанска бригада',
+    description:
+      'Формирана на 15 септември 1943 во Шкрљево во Хрватското приморје. Старешините и четните болничари на бригадата и загинатите.',
   },
 }
 
@@ -1407,6 +1417,11 @@ const en: Record<string, UnitText> = {
     name: '4th Sandžak Brigade',
     description:
       'Formed on 1 December 1943 in Pljevlja. The brigade’s fallen and wounded.',
+  },
+  '3-primorsko-goranska': {
+    name: '3rd Primorje–Gorski Kotar Brigade',
+    description:
+      'Formed on 15 September 1943 at Škrljevo in the Croatian Littoral. Its officers and company medics, and its fallen.',
   },
 }
 

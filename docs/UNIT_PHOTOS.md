@@ -112,4 +112,5 @@ These units keep their current image (the book's first page, or a photo flagged 
 | Unit | Why |
 |---|---|
 | Posavsko-trebavski partizanski odred | Nothing in the znaci.org gallery names the odred, and its book (00001/302, re-typeset) prints no photos. |
+| 3. primorsko-goranska brigada | Nothing in the znaci.org gallery names the brigade, and its book (00001/122) prints only maps and documents. |
 | 16. banijska brigada | Nothing in the znaci.org gallery names the unit; its book hasn't been checked (`--book`). |

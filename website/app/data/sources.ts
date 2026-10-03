@@ -1088,5 +1088,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/4-sandzacka.jpg',
     brigadeName: '4. sandžačka brigada',
     description: 'Spisak poginulih boraca i rukovodilaca (rođenje, gde su pali) i spisak ranjenih, s mestom i danom ranjavanja (str. 460–485)'
+  },
+  {
+    id: '3-primorsko-goranska',
+    title: '3. primorsko-goranska brigada — starešine, bolničari i poginuli',
+    author: 'Bogdan Mamula',
+    pdfPath: '/pdfs/3-primorsko-goranska.pdf',
+    thumbnail: '/images/pdf-thumbs/3-primorsko-goranska.jpg',
+    brigadeName: '3. primorsko-goranska brigada',
+    description: 'Spisak starešina brigade i četnih bolničara, s dužnošću, i spisak poginulih pripadnika brigade, s rođenjem i mestom pogibije (str. 234–259)'
   }
 ]

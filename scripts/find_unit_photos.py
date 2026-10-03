@@ -411,6 +411,10 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "3-primorsko-goranska": dict(
+        name="3. primorsko-goranska brigada", tags=[],
+        caption=r"(?<!\d)(?:3\.|III\.?|tre[cć]\w*)\s+primorsko[\s-]*goransk\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
+        note="Nothing in the znaci.org gallery names the brigade, and its book (00001/122) prints only maps and documents."),
     "4-sandzacka-brigada": dict(
         name="4. sandžačka brigada", tags=[],
         caption=r"(?<!\d)(?:4\.|IV\.?|[cč]etvrt\w*)\s+sand[zž]a[cč]k\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=15775),

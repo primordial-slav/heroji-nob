@@ -909,6 +909,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    99: {
+        'name': '3. Primorsko-goranska',
+        'json_file': '3-primorsko-goranska-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "ABRAMOVIĆ Jure Cvjetko, bolničar, rođen u Kuželju - Delnice, poginuo ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_last',
+    },
 }
 
 

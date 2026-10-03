@@ -989,6 +989,16 @@ export const units: Unit[] = [
     soldierCount: 785,
     dataFile: '/4-sandzacka-soldiers.json',
     pdfFiles: ['/pdfs/4-sandzacka.pdf']
+  },
+  {
+    id: '3-primorsko-goranska',
+    name: '3. primorsko-goranska brigada',
+    nameEn: '3rd Primorje–Gorski Kotar Brigade',
+    description: 'Formirana 15. septembra 1943. u Škrljevu u Hrvatskom primorju. Starešine i četni bolničari brigade i poginuli.',
+    image: '/images/pdf-thumbs/3-primorsko-goranska.jpg',
+    soldierCount: 804,
+    dataFile: '/3-primorsko-goranska-soldiers.json',
+    pdfFiles: ['/pdfs/3-primorsko-goranska.pdf']
   }
   // Add more units here as you get more data
 ]

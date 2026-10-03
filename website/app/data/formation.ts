@@ -345,6 +345,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-12-01', place: 'Pljevlja', source: 'https://znaci.org/00001/271_3.pdf',
     note: 'Četvrta sandžačka brigada (Lučić, Borbeni put 4. sandžačke NOU brigade, str. 112): „Brigada je formirana, uglavnom, od boraca iz sastava Bjelopoljskog i Pljevaljskog NOP odreda, 1. decembra 1943. godine, u Pljevljima“.',
   },
+  '3-primorsko-goranska': {
+    date: '1943-09-15', place: 'Škrljevo', source: 'https://znaci.org/00001/122_5.pdf',
+    note: 'Mamula, Treća primorsko-goranska udarna brigada (Hronologija, str. 220): „15. septembar: Toga dana u rejonu Škrljeva u Hrvatskom primorju završeno je formiranje brigade.“',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

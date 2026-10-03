@@ -113,6 +113,7 @@ BRIGADE_CODES = {
     96: '22. divizija',
     97: '34. divizija',
     98: '4. Sandžačka',
+    99: '3. Primorsko-goranska',
     # Add new brigades here with next available code
 }
 
