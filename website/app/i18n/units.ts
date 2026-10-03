@@ -534,6 +534,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 31. julija 1941 z odločitvijo Glavnega štaba za Srbijo, iz dveh posavskih čet in Tamnavske čete. Borci odreda leta 1941, po bataljonih.',
   },
+  '51-divizija': {
+    name: '51. vojvodinska divizija',
+    description:
+      'Ustanovljena 31. oktobra 1944 v Novem Sadu iz 7., 8. in 12. vojvodinske brigade. Borci divizije, padli in pogrešani v bitki pri Batini, novembra 1944.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1059,6 +1064,11 @@ const mk: Record<string, UnitText> = {
     name: 'Посавски партизански одред',
     description:
       'Формиран на 31 јули 1941 со одлука на Главниот штаб за Србија, од две посавски чети и Тамнавската чета. Борците на одредот во 1941, по баталјони.',
+  },
+  '51-divizija': {
+    name: '51-ва војводинска дивизија',
+    description:
+      'Формирана на 31 октомври 1944 во Нови Сад, од 7., 8. и 12. војводинска бригада. Борците на дивизијата загинати и исчезнати во Батинската битка, ноември 1944.',
   },
 }
 
@@ -1587,6 +1597,11 @@ const en: Record<string, UnitText> = {
     name: 'Posavina Partisan Detachment',
     description:
       'Formed on 31 July 1941 by order of the Serbian Main Staff, from two Posavina companies and the Tamnava company. Its fighters of 1941, by battalion.',
+  },
+  '51-divizija': {
+    name: '51st Vojvodina Division',
+    description:
+      'Formed on 31 October 1944 in Novi Sad, from the 7th, 8th and 12th Vojvodina Brigades. The division’s fallen and missing in the Battle of Batina, November 1944.',
   },
 }
 

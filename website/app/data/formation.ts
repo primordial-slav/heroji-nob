@@ -393,6 +393,10 @@ export const formation: Record<string, Formation> = {
     date: '1941-07-31', place: 'Mala Vrbica', source: 'https://znaci.org/00001/279_3.pdf',
     note: 'Bojić, Posavski partizanski odred (str. 99): „Odluku o formiranju Posavskog narodnooslobodilačkog partizanskog odreda doneo je Glavni štab Srbije, 31. jula 1941. godine u Maloj Vrbici“; u odred su ušle 1. i 2. posavska i Tamnavska četa.',
   },
+  '51-divizija': {
+    date: '1944-10-31', place: 'Novi Sad', source: 'https://znaci.org/00002/427.pdf',
+    note: 'Božić, Batinska bitka (str. 23): „Pedeset i prva vojvođanska divizija formirana je 31. oktobra 1944. u Novom Sadu odlukom Glavnog štaba NOV i PO Vojvodine“, najpre kao 3. vojvođanska; 51. od 13. novembra 1944.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

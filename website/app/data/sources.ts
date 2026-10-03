@@ -1214,5 +1214,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/posavski-odred.jpg',
     brigadeName: 'Posavski partizanski odred',
     description: 'Spisak boraca Posavskog partizanskog odreda 1941: komanda, bolnica i bataljoni, s podacima o svakom (str. 565–742)'
+  },
+  {
+    id: '51-divizija',
+    title: 'Batinska bitka — borci 51. vojvođanske divizije poginuli i nestali',
+    author: 'Nikola Božić',
+    pdfPath: '/pdfs/51-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/51-divizija.jpg',
+    brigadeName: '51. vojvođanska divizija',
+    description: 'Borci 51. vojvođanske divizije poginuli i nestali u Batinskoj bici, novembra 1944: rođenje, dužnost, gde i kada su pali (str. 469–501)'
   }
 ]

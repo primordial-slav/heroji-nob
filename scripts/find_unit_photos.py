@@ -411,6 +411,13 @@ UNITS = {
         caption=r"(?<!\d)(?:20\.|XX\.?|dvadeset\w*)\s+(?:srpsk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad", photo=None,
         book=dict(pdf="00003/840.pdf", page=271, xref=1523, caption="Grupa boraca 20. brigade u oslobođenom Sisku, maj 1945."),
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
+    "51-divizija": dict(
+        name="51. vojvođanska divizija", tags=[],
+        caption=r"(?<![\d.])51\s*\.?\s+(?:vojvo(?:đ|dj|d)ansk\w*\s+)?(?:udarn\w*\s+)?divizij|pedeset\s+i\s+prv\w*\s+(?:vojvo\w+\s+)?divizij",
+        photo=None,
+        book=dict(pdf="00002/427.pdf", page=437, xref=1919,
+                  caption="Grupa boraca i rukovodilaca 8. vojvođanske brigade sa oficirom 236. sovjetske divizije neposredno uoči forsiranja Dunava kod Apatina"),
+        note="Nothing in the gallery names the division; the photo is from the book on its battle at Batina: the 8. vojvođanska was one of its brigades."),
     "posavski-odred": dict(
         name="Posavski partizanski odred", tags=[],
         caption=r"posavsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred(?![\w-]*\s*trebav)", photo=None,

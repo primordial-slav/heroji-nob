@@ -1017,6 +1017,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    111: {
+        'name': '51. divizija',
+        'json_file': '51-divizija-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "1. ACEGAN VASE STEVAN, rođ. 1925, Pančevo, borac, pog. 12. 11. 1944."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 
