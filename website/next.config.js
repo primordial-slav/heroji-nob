@@ -23,6 +23,12 @@ const nextConfig = {
     unoptimized: true
   },
   serverExternalPackages: [],
+  // The unit files (public/*.json, data/life-events/) are read only while the site is built, since every page
+  // and route is prerendered. Their path is a variable, so the tracer would otherwise pack all of public/ (the
+  // PDFs too) into each server function, past Vercel's 250 MB limit
+  outputFileTracingExcludes: {
+    '*': ['public/**/*', 'data/life-events/**/*'],
+  },
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;
