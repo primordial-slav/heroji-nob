@@ -3,18 +3,28 @@ import { units } from '@/app/data/units'
 import type { Soldier } from './types'
 
 // The home page searches every unit at once, so instead of every unit's full data file (67 MB) it loads one
-// compact list, /search-index.json: per soldier only what search, the results, "Na današnji dan" and the
-// comrades tree in the dialog use, as an array rather than an object. A unit page loads its own unit's rows in
-// the same form, /lists/<unit id>, and "Na današnji dan" the day's, /on-this-day/<MM-DD>. Opening a soldier loads
-// his full record from /records/<unit id>/<part>, a slice of RECORDS_PER_PART records of the unit's data file.
-// All are built from the data files (app/search-index.json/route.ts, app/lists/[unit]/route.ts,
+// compact list, in parts, /search-index/<part>: per soldier only what search, the results, "Na današnji dan"
+// and the comrades tree in the dialog use, as an array rather than an object. A unit page loads its own unit's
+// rows in the same form, /lists/<unit id>, and "Na današnji dan" the day's, /on-this-day/<MM-DD>. Opening a
+// soldier loads his full record from /records/<unit id>/<part>, a slice of RECORDS_PER_PART records of the unit's
+// data file. All are built from the data files (app/search-index/[part]/route.ts, app/lists/[unit]/route.ts,
 // app/on-this-day/[day]/route.ts, app/records/[unit]/[part]/route.ts): at build time as static files, and fresh
 // on every request under `next dev`.
 //
 // What has loaded stays for the rest of the visit, so going back to the home page or to a unit page shows its
 // list at once, without loading and reading it again.
 
-export const SEARCH_INDEX_PATH = '/search-index.json'
+// The search list is about 40 MB, and Vercel refuses a prerendered response over 19 MB, so it comes in parts of
+// whole units, up to INDEX_PART_SOLDIERS soldiers each: about 5 MB, and 15 MB even for the wordiest books
+const INDEX_PART_SOLDIERS = 30000
+/** The units of each part of the search list, in the order of `units` */
+export const SEARCH_INDEX_PARTS: Unit[][] = units.reduce<Unit[][]>((parts, unit) => {
+  const last = parts[parts.length - 1]
+  if (last && last.reduce((n, u) => n + u.soldierCount, 0) + unit.soldierCount <= INDEX_PART_SOLDIERS) last.push(unit)
+  else parts.push([unit])
+  return parts
+}, [])
+export const searchIndexPath = (part: number) => `/search-index/${part}`
 export const RECORDS_PER_PART = 250
 // Rows on the first page of a results list; a unit page's HTML has its unit's first page
 export const FIRST_PAGE = 50
@@ -136,8 +146,9 @@ let homeLoad: Promise<HomeLists> | null = null
 
 /** Every unit's soldiers from the search index, with `unit` set to the unit's name */
 export function loadHomeLists(): Promise<HomeLists> {
-  homeLoad ??= fetchJson<SearchIndex>(SEARCH_INDEX_PATH)
-    .then((index) => {
+  homeLoad ??= Promise.all(SEARCH_INDEX_PARTS.map((_, part) => fetchJson<SearchIndex>(searchIndexPath(part))))
+    .then((parts) => {
+      const index: SearchIndex = Object.assign({}, ...parts)
       const lists = units.map((unit) => keepList(unit, index[unit.dataFile] ?? []))
       homeLists = { byUnit: new Map(units.map((unit, i) => [unit.name, lists[i]])), listed: listOnce(lists) }
       return homeLists

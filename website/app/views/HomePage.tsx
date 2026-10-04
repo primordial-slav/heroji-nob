@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
 import { units } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
-import { SEARCH_INDEX_PATH, fullRecord, loadHomeLists, loadedHomeLists, type HomeLists } from '@/app/lib/searchIndex'
+import { SEARCH_INDEX_PARTS, searchIndexPath, fullRecord, loadHomeLists, loadedHomeLists, type HomeLists } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
@@ -99,7 +99,9 @@ export default function HomePage() {
     <div>
       {/* The lists start loading with the page rather than once its scripts have run; at low priority, after
           what the page needs to show */}
-      {!lists && <link rel="preload" href={SEARCH_INDEX_PATH} as="fetch" crossOrigin="anonymous" fetchPriority="low" />}
+      {!lists && SEARCH_INDEX_PARTS.map((_, part) => (
+        <link key={part} rel="preload" href={searchIndexPath(part)} as="fetch" crossOrigin="anonymous" fetchPriority="low" />
+      ))}
       <section className="masthead" aria-labelledby="finder-title">
         <div className="container finder">
           <h1 id="finder-title">{t.home.title}</h1>
