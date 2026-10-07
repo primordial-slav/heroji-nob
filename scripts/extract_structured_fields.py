@@ -292,6 +292,26 @@ class Extractor:
         return out
 
     # ── death ────────────────────────────────────────────────
+    # The Slovene books mark a death with a dagger: "† 1944 Pohorje" in the war (the parsers read those), and in the
+    # rosters of survivors "† 1962", "† po osvoboditvi" (after liberation) or a bare "†" for one who has died since
+    DAGGER_RE = re.compile(rf'†\s*[;,]?\s*(?:(?P<date>{DATE})|(?P<after>po\s+osvoboditvi|po\s+vojni))?\s*,?\s*(?P<rest>[^;]*)')
+
+    def dagger(self, text: str) -> dict:
+        m = self.DAGGER_RE.search(text)
+        if not m:
+            return {}
+        if m.group('after'):
+            return {'death_type': 'umro', 'death_date': re.sub(r'\s+', ' ', m.group('after'))}
+        if not m.group('date'):
+            return {'death_type': 'umro'}
+        date = re.sub(r'\.?\s*god(?:ine|\.)$', '', m.group('date')).rstrip('.').strip()
+        year = int(re.search(YEAR, date).group(0))
+        out = {'death_type': 'poginuo' if year <= 1945 else 'umro', 'death_date': date}
+        place = re.sub(r'^(?:v|pri|na|nad|pod)\s+', '', clean_segment(m.group('rest')))
+        if place and len(place) <= 60 and re.match(rf'^[{U}]', place) and not re.search(r'\d', place):
+            out['death_place'] = place
+        return out
+
     def death(self, text: str) -> dict:
         out = {}
         m = DEATH_RE.search(text)
@@ -299,6 +319,8 @@ class Extractor:
         if not m:
             if mesto:
                 out['death_place'] = clean_segment(mesto.group(1))
+            elif '†' in text:
+                out = self.dagger(text)
             return out
         kw = m.group(1).lower()
         out['death_type'] = DEATH_KW[kw]
@@ -520,7 +542,7 @@ class Extractor:
         if code == 109:
             # Mačvanski odred: the heading the entry stands under leads ("Banja Koviljača (Jadranski srez): ")
             text = re.sub(r'^[^:;]{2,80}:\s*(?:(?:zvan[ai]|dr\.)[^;]{0,60};\s*)*', '', text)
-        dm = DEATH_RE.search(text)
+        dm = DEATH_RE.search(text) or re.search('†', text)
         life_text = text[:dm.start()] if dm else text
         out = self.life(life_text, code)
         head = out.pop('_head', '')

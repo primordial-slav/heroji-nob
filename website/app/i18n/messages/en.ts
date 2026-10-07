@@ -119,6 +119,7 @@ export const en: Messages = {
     comrades: (x: number) => partisans(x),
     sameDay: (x: number) => `${n(x)} more the same day`,
     sameDayShort: 'the same day',
+    undated: 'date not given',
   },
 
   record: {

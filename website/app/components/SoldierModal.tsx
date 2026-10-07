@@ -196,11 +196,12 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
       link: comrades.unit ? { text: t.life.comrades(comrades.unit.size), open: () => openKin('comrades', 'unit') } : undefined,
     })
   }
-  if (soldier.death_date || soldier.death_place) {
+  // a death the record gives without a date or a place still shows ("Umro", a survivor who has died since)
+  if (soldier.death_date || soldier.death_place || soldier.death_type) {
     facts.push({
       key: 'death',
       label: t.life.fate(soldier.death_type, woman),
-      value: [soldier.death_date, soldier.death_place].filter(Boolean).join(', '),
+      value: [soldier.death_date, soldier.death_place].filter(Boolean).join(', ') || t.life.undated,
       link: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
     })
   }

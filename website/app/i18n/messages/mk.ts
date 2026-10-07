@@ -131,6 +131,7 @@ export const mk: Messages = {
     comrades: (x: number) => borci(x),
     sameDay: (x: number) => `истиот ден уште ${n(x)}`,
     sameDayShort: 'истиот ден',
+    undated: 'датумот не е наведен',
   },
 
   record: {

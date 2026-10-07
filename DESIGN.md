@@ -158,7 +158,7 @@ One centred column (max 72rem) with a 24px side gutter (16px on phones). Content
 - **Home:** red band with a short heading, the search field (max 34rem), which says what to type ("Prezime, ime ili mesto"), and under it a quiet line with the total ("110.430 imena"), no example searches; under it "Na današnji dan", then the photo cards grouped by the year the unit was formed, oldest first. Each year is a large PT Serif number, right-aligned, sitting on a 2px red rule, with that year's cards below (three per row on desktop, min 20rem per card; one per row on phones). Formation dates live in `website/app/data/formation.ts`. When the visitor searches, results replace all of this in place.
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
-- **Record popup:** 40rem wide, 52rem when the record has a life line; unit photo strip, name, unit, three fact lines, the life line beside the page on a computer, the entry and the scanned page (under "Reference"), then Saborci and Zemljaci folded at the end.
+- **Record popup:** 52rem wide for every record, with a life line or without; unit photo strip, name, unit, three fact lines, the life line beside the page on a computer, the entry and the scanned page (under "Reference"), then Saborci and Zemljaci folded at the end.
 - **Spacing:** a 4px-based scale (4, 8, 12, 16, 24, 32, 40, 56px); more space above a group than inside it.
 - **Breakpoint:** 640px. Below it the nav drops to its own row, cards stack, the popup fills the screen.
 

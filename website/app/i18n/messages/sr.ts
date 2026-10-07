@@ -130,6 +130,8 @@ export const sr = {
     comrades: (x: number) => borci(x),
     sameDay: (x: number) => `istog dana još ${n(x)}`,
     sameDayShort: 'istog dana',
+    /** a death the record gives without a date or a place */
+    undated: 'datum nije naveden',
   },
 
   record: {

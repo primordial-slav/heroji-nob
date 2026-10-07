@@ -1063,10 +1063,11 @@ body:has(.band-photo[data-ready]) header.masthead {
   overflow-y: auto;
 }
 
+/* Every record's dialog is one width, with a life line or without, so stepping through a list doesn't change it */
 .modal-content {
   position: relative;
   width: 100%;
-  max-width: 40rem;
+  max-width: 52rem;
   background: var(--ground);
   border-top: 4px solid var(--red);
   padding: var(--space-5) var(--space-6) var(--space-6);
@@ -3222,11 +3223,6 @@ span.rail-face {
 }
 
 /* ========== The record: three facts, the life line beside the book's page, the folds at the end ========== */
-
-/* With a life line the dialog widens on a computer so the line can stand beside the page */
-.modal-content.has-line {
-  max-width: 52rem;
-}
 
 /* Born, in the unit, the death: one line each, the people they share with others a link away */
 .record-facts {

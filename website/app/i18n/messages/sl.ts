@@ -122,6 +122,7 @@ export const sl: Messages = {
     comrades: (x: number) => borci(x),
     sameDay: (x: number) => `isti dan še ${n(x)}`,
     sameDayShort: 'isti dan',
+    undated: 'datum ni naveden',
   },
 
   record: {
