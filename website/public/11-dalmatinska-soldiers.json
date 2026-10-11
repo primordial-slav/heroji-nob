@@ -49612,7 +49612,8 @@
     "soldier_id": "0053002514",
     "birth_place": "Rijeka Crnojevića",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 477.6
+    "pdf_x_end": 477.6,
+    "occupation": "trgovačka akademija"
   },
   {
     "last_name": "Razpet",
@@ -58173,7 +58174,8 @@
     "birth_place": "Korčula, sudski",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 478.9
+    "pdf_x_end": 478.9,
+    "occupation": "sudski činovnik"
   },
   {
     "last_name": "Vesić",
@@ -62237,7 +62239,21 @@
     "birth_place": "Janeževo Brdo, Ilirska Bistrica",
     "rank": "borac",
     "unit_detail": "2. četa, 5. bataljon",
-    "pdf_x_end": 453.2
+    "pdf_x_end": 453.2,
+    "other_sources": [
+      {
+        "soldier_id": "0067001200",
+        "name": "Čandek Franc",
+        "additional_info": "1910, Janeževo brdo",
+        "pdf_file": "istrski-odred.pdf",
+        "pdf_page": 4,
+        "pdf_x": 182.6,
+        "pdf_y": 103.7,
+        "pdf_x_end": 303.4,
+        "pdf_y_end": 120.4,
+        "unit_file": "istrski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ćandžić",
@@ -64040,37 +64056,7 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 303.4,
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "lipnja 1943",
-    "death_place": "Sutjeska",
-    "other_sources": [
-      {
-        "soldier_id": "0007004653",
-        "name": "Sarič Ivana Jure",
-        "additional_info": "Poginuo lipnja 1943. na Sutjesci.",
-        "pdf_file": "2-dalmatinska-proleterska.pdf",
-        "pdf_page": 156,
-        "pdf_x": 125.8,
-        "pdf_y": 467.1,
-        "pdf_x_end": 319.6,
-        "pdf_y_end": 475.1,
-        "unit_file": "2-dalmatinska-soldiers.json"
-      },
-      {
-        "soldier_id": "0046001256",
-        "name": "Šarić Ivana Jure",
-        "additional_info": "borac 2. bataljona, rođen 1922, Tugare, Omiš, zemljoradnik, Hrvat, u NOB od februara 1943, poginuo na Dragoš Sedlu iznad Sutjeske juna 1943. godine.",
-        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
-        "pdf_page": 59,
-        "pdf_x": 33.8,
-        "pdf_y": 460.3,
-        "pdf_x_end": 204.7,
-        "pdf_y_end": 511.7,
-        "unit_file": "3-dalmatinska-soldiers.json"
-      }
-    ]
+    "pdf_x_end": 303.4
   },
   {
     "last_name": "Šarić",

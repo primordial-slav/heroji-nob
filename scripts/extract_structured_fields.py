@@ -65,6 +65,7 @@ DATE = (rf'(?:(?:\d{{1,2}}|00)\.\s?(?:\d{{1,2}}|[IVX]{{1,4}})\.?\s?{YEAR}'      
         rf'|(?:(?:krajem|početkom|sredinom|polovinom|koncem|tokom|u toku|[Pp]roljeće|[Pp]roleće|[Ll]jeto|[Ll]eto|[Jj]esen|[Zz]ima)\s)?{YEAR})'
         rf'(?:\.?\s*god(?:ine|\.))?')
 DATE_RE = re.compile(DATE)
+MONTH_SET = set(MONTHS.split('|'))
 BIRTH_DATE_RE = re.compile(rf'^(?:[Rr]ođen[a]?\s+(?:je\s+)?)?(?:{DATE}|[\s.,]*\.\.[\s.]*)[.,]?\s*')
 
 DEATH_KW = {
@@ -75,6 +76,10 @@ DEATH_KW = {
     'ubijen': 'ubijen', 'ubijena': 'ubijen', 'zaklan': 'ubijen', 'zaklana': 'ubijen',
 }
 DEATH_RE = re.compile(r'\b(' + '|'.join(k for k, v in DEATH_KW.items() if v) + r')\b', re.I)
+# the next soldier's entry glued into a bio: a sentence that starts with a surname in capitals (the scan may garble
+# its first letters: "iRCEGOVIĆ", "miMUNOVIĆ"); not an abbreviation such as "NOB" or "KPJ"
+GLUED_RE = re.compile(r'[.;]\s+\S{0,2}(?!(?:NOB|NOV|NOVJ|NOR|NOO|NOP|KPJ|SKOJ|SSSR|JNA|BiH|SAD|SFRJ|SUBNOR|KNOJ|OZNA|UDB|AVNOJ|'
+                      r'ZAVNOH|ZAVNOBiH|ASNOM|SNOS|AFŽ|USAOJ|VŠ|NDH|SS)\b)[A-ZČĆŽŠĐ]{3,}')
 
 ETHNIC = {
     'Srbin', 'Srpkinja', 'Hrvat', 'Hrvatica', 'Crnogorac', 'Crnogorka', 'Slovenac', 'Slovenka', 'Slovenec', 'Slovenka',
@@ -100,7 +105,7 @@ RANK_PATTERNS = [
     rf'(?:omladinski|skojevski) rukovodilac(?: {_UNITS_GEN})?', rf'sekretar SKOJ-a(?: {_UNITS_GEN})?',
     rf'intendant(?: {_UNITS_GEN})?', rf'ekonom(?: {_UNITS_GEN})?',
     r'(?:vodni|četni|politički) delegat', r'delegat voda',
-    r'(?:mlađi|stariji) vodnik', r'vodnik I\. klase', r'kapetan I\. klase',
+    r'(?:mlađi|stariji) vodnik', r'(?:ml|st)\.\s?vodnik', r'vodnik I\. klase', r'kapetan I\. klase',
     r'general-(?:major|lajtnant|potpukovnik)',
     r'borac', r'borec', r'kuvar(?:ica)?', r'kuhar(?:ica)?', r'bolničar(?:ka)?', r'kurir(?:ka)?', r'desetar', r'vodnik', r'podnarednik', r'narednik', r'zastavnik',
     r'potporučnik', r'poručnik', r'kapetan', r'major', r'potpukovnik', r'pukovnik',
@@ -137,6 +142,20 @@ PREP = r'(?:u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izme
 STOP_PLACE = re.compile(r'^(?:u NOB|u NOV|u NOVJ|u NOR|u brigadi|u \d|član|stupio|stupila|borac od|od \d|od [a-z]|sa |iz |zvan[ai]|ili |'
                         r'drugih|nema |ostali|nepoznat|\(drugih|\(nema|\(nedostaju)', re.I)
 
+# Books whose list has no column for a trade: 22. divizija (birthplace | date | place of death), 34. divizija (duty,
+# brigade, birth, joined, place and date of death: its duty "miner" is a sapper, "Mrežn. Venac" a village)
+NO_OCCUPATION = {96, 97}
+# 34. divizija's column "Datum pogibije" as the book abbreviates it: "07.09.44", "04.1945", "trav. 45", "jes.1944"
+HR_MONTHS = ('siječnja', 'veljače', 'ožujka', 'travnja', 'svibnja', 'lipnja', 'srpnja', 'kolovoza', 'rujna', 'listopada',
+             'studenoga', 'prosinca')
+HR_MONTH_STEMS = (('sij', 1), ('velj', 2), ('ožuj', 3), ('trav', 4), ('svib', 5), ('lip', 6), ('srp', 7), ('kolov', 8),
+                  ('ruj', 9), ('list', 10), ('stud', 11), ('pros', 12))
+HR_SEASONS = (('prolj', 'proljeća'), ('jes', 'jesen'), ('ljet', 'ljeto'), ('kraj', 'krajem'))   # "pro." is spring or December
+# 6. dalmatinska's place of death as its parser takes it: "za Knin", "kod Mokrog Polja", "kod Livna, Dragnić"; not one
+# the scan garbled ("za Sop-Ije", "kod Ur~ kiča", "za Dragi nić", "kod Kule Atlagića lì. VI")
+_NAME_103 = rf'[{U}][{L}]+(?:\s+(?:[{U}][{L}]+|kod|na)){{0,3}}'
+PLACE_103 = re.compile(rf'(?:{PREP}\s+)?{_NAME_103}(?:,\s+{_NAME_103})*')
+
 
 ABBREV = {'Podr', 'Grub', 'Bos', 'Vel', 'Gor', 'Gornj', 'Donj', 'Mal', 'Slav', 'Pož', 'Nov', 'Star', 'Dol', 'Hrv', 'Sjev', 'Sev',
           'Juž', 'Zap', 'Ist', 'Crn', 'Kos', 'Mitr', 'Aleks', 'Petr', 'Brd', 'Polj', 'Sel', 'Gradiš', 'Orah', 'Mikl'}
@@ -169,18 +188,81 @@ def is_placeholder(s: str) -> bool:
     return not re.search(r'[^\s.,…]', s)
 
 
+FOLD = str.maketrans('čćđšž', 'ccdsz')
+# Short words that end a trade honestly ("kmečki sin", "kmečka hči"); any other of three letters or fewer at the end
+# of one is an abbreviation cut off at its dot: "podoficir bjv", "podoficir biv. RM", "radnik čl."
+SHORT_TAILS = {'sin', 'hči'}
+# a duty in a unit, printed where a trade could stand: "četna bolničarka"
+UNIT_DUTY_RE = re.compile(r'^(?:četn|vodn|bataljonsk|brigadn|divizijsk|korpusn)\w*\s')
+
+
+def plausible_occupations(occ: Counter) -> Counter:
+    """The words read as trades, without a stray letter ("ž"), a word cut short ("zemlj." for zemljoradnik, "radni"),
+    an abbreviation left at the end ("podoficir bjv") or a duty ("četna bolničarka")."""
+    whole = {o: n for o, n in occ.items() if ' ' not in o and n >= 50}
+
+    def ok(w: str) -> bool:
+        tokens = w.split()
+        if len(w) < 3 or not re.search('[aeiou]', w):
+            return False
+        if len(tokens) > 1 and whole.get(''.join(tokens), 0) >= 20 * occ[w]:
+            return True                                                     # a word split in two: "kroj ač"
+        if len(tokens) > 1 and len(tokens[-1]) <= 3 and tokens[-1] not in SHORT_TAILS:
+            return False
+        if UNIT_DUTY_RE.match(w) and RANK_RE.search(w):
+            return False
+        # the start of a far more common trade, cut there ("zemlj", "radni"); not a word of its own ("stolar")
+        return not (len(tokens) == 1 and any(o.startswith(w) and len(o) > len(w) and n >= 20 * occ[w]
+                                             for o, n in whole.items()))
+    return Counter({w: n for w, n in occ.items() if ok(w)})
+
+
+def same_word(a: str, b: str) -> bool:
+    """b is a, misread: a letter read wrong ("zemljoradiik", "domađica", "radnmk"), its marks lost ("dak" for đak), or
+    in a long word a letter more or less, or two read wrong ("zemljradnik", "zemljroadnik"). Never another word read
+    into it: "kotlar" is not "kolar", "učesnik" not "učenik", "seljanka" not "seljak", "podoficir biv" not
+    "podoficir bjv", the genitive "zemljoradnika" not the woman's "zemljoradnica", the Slovene "trgovec" and
+    "študent" not "trgovac" and "student"."""
+    if a.translate(FOLD) == b.translate(FOLD):
+        return a.translate(FOLD) == a
+    ta, tb = a.split(), b.split()
+    if len(ta) != len(tb) or sum(x != y for x, y in zip(ta, tb)) != 1:
+        return False
+    a, b = next((x, y) for x, y in zip(ta, tb) if x != y)
+    if a[0] != b[0] or a[-1] != b[-1]:
+        return False
+    if len(a) != len(b):
+        return min(len(a), len(b)) >= 9 and abs(len(a) - len(b)) == 1 and difflib.SequenceMatcher(None, a, b).ratio() >= 0.9
+    diff = [(x, y) for x, y in zip(a, b) if x != y]
+    if len(diff) == 1:
+        (x, y), = diff
+        if {x, y} == {'k', 'c'} or (x in 'aeiou' and y in 'aeiou' and len(a) < 9):
+            return False
+        return len(a) >= 6
+    return len(diff) == 2 and len(a) >= 9
+
+
 class Extractor:
     def __init__(self, occupations: Counter, places: Counter):
         self.occupations = set(occupations)
         self.places = places
-        # OCR-misspelt occupations map to the common spelling: "zemljradnik", "zemloradnik" -> "zemljoradnik"
-        common = [w for w, n in occupations.items() if n >= 50]
+        # OCR-misspelt occupations map to the common spelling: "zemljradnik", "zemljoradiik" -> "zemljoradnik",
+        # "domačica" -> "domaćica" (the commonest such spelling, twenty times as common at least); a genitive to its
+        # nominative: "zemljoradnika" -> "zemljoradnik"
         self.occ_spelling = {}
+        common = sorted(((n, w) for w, n in occupations.items() if n >= 50), reverse=True)
         for w, n in occupations.items():
-            if n < 10:
-                close = difflib.get_close_matches(w, common, n=1, cutoff=0.85)
-                if close and close[0] != w:
-                    self.occ_spelling[w] = close[0]
+            target = next((c for m, c in common if m >= 20 * n and c != w and same_word(w, c)), None)
+            if not target and w.endswith('a') and occupations.get(w[:-1], 0) >= max(50, 20 * n):
+                target = w[:-1]
+            if not target and ' ' in w and occupations.get(w.replace(' ', ''), 0) >= max(50, 20 * n):
+                target = w.replace(' ', '')                                 # "zemljo radnik", "kroj ač"
+            if target:
+                self.occ_spelling[w] = target
+        for w, target in self.occ_spelling.items():                 # "zemllradnik" -> "zemjoradnik" -> "zemljoradnik"
+            while target in self.occ_spelling and self.occ_spelling[target] != w:
+                target = self.occ_spelling[target]
+            self.occ_spelling[w] = target
 
     def occupation(self, w: str) -> str:
         return self.occ_spelling.get(w, w)
@@ -197,6 +279,8 @@ class Extractor:
             t = re.sub(r'^(?:dr\.;\s*)?r\.\s*(?=1[89]\d\d)', 'rođen ', t)     # Kalnički odred: "r. 1922; Martinišće, Zabok"
         if code == 75 and not re.match(r'^(?:iz|rođ)\b', t):
             t = ''                                                        # 12. vojvođanska's roster: where they lived, no birthplace
+        if code == 84:
+            t = ''              # 13. vojvođanska's roster: names only; "POPOV MILAN (MOKRIN)" tells namesakes apart, no birthplace
         if code == 71 and re.match(r'^(?:pad(?:el|la)\s+)?[a-z]+a\s+19[34]\d\b', t):
             t = ''                                                        # 1. slovenska artilerijska: "novembra 1944, Jama" is a death
         if code == 51:
@@ -256,7 +340,10 @@ class Extractor:
             tail = re.match(r'^(.*\S)\s+(\S+)$', s)
             if (tail and (tail.group(2) in ETHNIC or tail.group(2) in self.occupations)   # "Italija Talijan" (comma missing)
                     and re.match(rf'^[{U}]', tail.group(1))):                      # not "brigadni telegrafist"
-                place.append(tail.group(1))
+                # a sentence the split above missed ends the place: "Mali Mokri Lug. Beograd. zemljoradnnk"
+                cut = next((m.start() for m in re.finditer(rf'\.\s+(?=[{U}])', tail.group(1))
+                            if not re.search(rf'(?:^|\s)(?:[{U}][{L}]?|{"|".join(ABBREV)})$', tail.group(1)[:m.start()])), None)
+                place.append(clean_segment(tail.group(1)[:cut]))
                 break
             if (s in ETHNIC or looks_ethnic(s) or self.is_occupation(s) or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
                     or UNIT_WORD_RE.search(s)
@@ -282,7 +369,9 @@ class Extractor:
                 if i + 1 < len(words) and self.is_occupation(words[i + 1]):
                     out['occupation'] = self.occupation(words[i + 1].lower())
                 break
-        if 'occupation' not in out:
+        if code in NO_OCCUPATION:
+            out.pop('occupation', None)
+        elif 'occupation' not in out:
             for w in words[:8]:
                 if self.is_occupation(w) and w.lower() not in ('borac',):
                     out['occupation'] = self.occupation(w.lower())
@@ -312,7 +401,9 @@ class Extractor:
             out['death_place'] = place
         return out
 
-    def death(self, text: str) -> dict:
+    def death(self, text: str, place_re: re.Pattern | None = None, converted_only: bool = False) -> dict:
+        """place_re: the form a book's place of death must have, else none is read; converted_only: only a place put
+        in the nominative (a book whose places other units' data repeat in the case it prints)"""
         out = {}
         m = DEATH_RE.search(text)
         mesto = re.search(r'mesto smrti\s*:\s*([^,;.]+(?:\s\([^)]*\))?)', text, re.I)
@@ -329,16 +420,35 @@ class Extractor:
         clause = sentences(rest)[0] if rest.strip() else ''
         clause = clause.split(';')[0]                                        # "poginuo u NOB; zvani ...": a note follows
         clause = re.split(r'[,;]?\s*(?:sahranjen|sahranjena|pokopan|pokopana|mesto sahrane|mjesto sahrane|a sahranjen|ostao na|nije sahranjen)', clause)[0]
-        dm = DATE_RE.search(clause)
+        # not the day a wound was received: "Umro od rane zadobijene 29. septembra 1944. god. u borbi za ..."
+        dm = next((d for d in DATE_RE.finditer(clause) if not re.search(r'\bzadobijen\w*\s+$', clause[:d.start()])), None)
         if dm and not 1941 <= int(re.search(YEAR, dm.group(0)).group(0)) <= 2000:
             dm = None                                                     # "umro u bolnici, 1926, Vršac" — that is the birth year
         if dm:
             date = re.sub(r'\.?\s*god(?:ine|\.)$', '', dm.group(0)).rstrip('.').strip()
             date = re.sub(r'^u\s', '', date)
+            start = dm.start()
+            if dm.group(0).startswith('u ') and start and clause[start - 1].isalpha():
+                start += 2                                  # "u Šapcu marta 1945": the "u" is the end of the word before
+            after = re.sub(r'^\.?\s*god\b\.?', '', clause[dm.end():])   # "1944. god s. Bukovice", "1944. god" at a sentence's end
+            if re.match(r'\.\s*\(', after) or (dm.group(0).endswith('godine') and after.startswith('.')):
+                after = ''     # a remark: "Oruglica 29/30. jula 1944. (raznela ga bugarska granata)", "... 1942. godine. z"
+            night = re.search(r'\d{1,2}\s?/\s?$', clause[:start])         # "u noći 28/29. decembra 1943": the day it ended
+            either = re.search(r'\d{1,2}\.\s+ili\s+$', clause[:start])    # "10. ili 12. maja 1945": as printed
+            if night:
+                start = night.start()
+            elif either:
+                start = either.start()
+                date = either.group(0) + date
+            elif re.search(r'\d[.,]$', clause[:start]):
+                date = re.search(YEAR, date).group(0)                     # "Senja 2.9. IV 1945": the day is garbled, the year is not
             out['death_date'] = date
-            clause = clause[:dm.start()] + ' ' + clause[dm.end():]
+            clause = clause[:start] + ' ' + after
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
-        clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u ratu|u NO[BR](?:-[iu])?)(?![\w-])\s*', '', clause)
+        clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u ratu|u NO[BR](?:-[iu])?|u noći|noću)'
+                        r'(?![\w-])\s*', '', clause)
+        # a massacre is no place: "u Vranićkom pokolju", "u pokolju Vranićana"
+        clause = re.sub(rf'\bu\s+(?:[{U}]\w+\s+)?pokolju(?:\s+[{U}]\w+)?', '', clause)
         # an offensive is no place: "poginuo u V ofanzivi", "u Grmeču u toku četvrte neprijateljske ofanzive"
         clause = re.sub(r'(?:\bu\s+toku\s+|\bu\s+)?\b(?:[IVX]+\.?|prv\w*|drug\w*|treć\w*|četvrt\w*|pet\w*|šest\w*|sedm\w*)\s+'
                         r'(?:neprijateljsk\w+\s+)?ofanziv\w*[,.]?\s*', '', clause, flags=re.I)
@@ -352,9 +462,87 @@ class Extractor:
         clause = clean_segment(re.sub(r'\s+', ' ', clause))
         if mesto:
             out['death_place'] = clean_segment(mesto.group(1))
-        elif clause and len(clause) <= 70 and not re.search(r'\d', clause) and re.match(rf'^(?:{PREP}\s+)?(?:s\.\s)?[{U}]', clause):
-            out['death_place'] = self.nominative(clause)
+        elif (clause and len(clause) <= 70 and not re.search(r'\d', clause)
+              # every part a place: not "u Centralnoj , bolnici u Sandžaku", "Sombor, uisled i teških rana"
+              and all(re.match(rf'^(?:{PREP}\s+)?(?:s\.\s)?[{U}]', p.strip()) for p in clause.split(','))
+              and (place_re is None or place_re.fullmatch(clause))):
+            place = self.nominative(clause)
+            if not converted_only or self.in_nominative(clause, place):
+                out['death_place'] = place
         return out
+
+    @staticmethod
+    def in_nominative(clause: str, place: str) -> bool:
+        """Every part of the place was put in the nominative, or was printed in it: after "za" a masculine or neuter
+        ("za Knin", "za Očestovo"), not "za Rečinu"; never one left as printed after "kod", "na", "u" ("kod Poličnika")"""
+        printed, got = [p.strip() for p in clause.split(',')], [p.strip() for p in place.split(',')]
+        if re.match(rf'^{PREP}\s', place) or len(printed) != len(got):
+            return False
+        for p, g in zip(printed, got):
+            m = re.match(rf'^({PREP})\s+(.*)$', p)
+            prep, bare = (m.group(1), m.group(2)) if m else ('', p)
+            if g == bare and (prep not in ('', 'za') or bare.endswith('u')):
+                return False
+        return True
+
+    def table_22_division(self, text: str) -> dict:
+        """22. divizija's table of the fallen, its cells joined by commas, any of them may be empty: the birthplace, the
+        day and the place of death ("Pakleštica, 12. IV 1945, Bosut", "4. X 1944, D. Slatina", "Bogojevac, 2. II 1945,
+        (umro od rana u Šapcu)"). Without a date the cells can't be told apart."""
+        segs = [s.strip() for s in re.split(r';\s+', text)[-1].split(',')]   # "(Rus); SSSR, ...": a note first
+        i = next((k for k, s in enumerate(segs) if re.search(r'\d', s)), None)
+        if i is None or not re.search(YEAR, segs[i]):
+            return {}
+        born, date, place = ', '.join(segs[:i]), segs[i], ', '.join(s for s in segs[i + 1:] if s)
+        out = {'death_type': 'poginuo'}                                    # a list of the fallen
+        if born and re.match(rf'^[({U}]', born) and not re.search(r'[\d;|]', born):
+            out['birth_place'] = born
+        dm = DATE_RE.fullmatch(date)
+        if dm:
+            out['death_date'] = re.sub(r'\.?\s*god(?:ine|\.|\b)$', '', date).rstrip('.').strip()
+        fate = place.lower()
+        if re.search(r'\bumr', fate):
+            out['death_type'] = 'umro'
+        elif 'streljan' in fate:
+            out['death_type'] = 'streljan'
+        elif 'nesta' in fate:
+            out['death_type'] = 'nestao'
+        # where he died of his wounds: "Sakar (umro u Šapcu)", "(umro od rana u Šapcu)", "umro u Beogradu"
+        later = (re.search(rf'\(\s*(?:umro|umrla)\b[^()]*?\b(u|kod|na)\s+([{U}][^()]+)\)', place)    # not "(umro kod kuće)"
+                 or re.match(rf'^(?:umro|umrla|streljan|nestao)\s+(u|kod|na)\s+([{U}][^()]+)$', place))
+        if later:
+            at = later.group(2).strip()
+            nom = self.nominative(f'{later.group(1)} {at}')
+            out['death_place'] = at if nom.startswith(later.group(1) + ' ') else nom
+        elif not re.search(r'\bumr', fate) and re.fullmatch(rf'[{U}][^();|]*(?:\([^();|]+\))?', place):
+            out['death_place'] = place                                    # the column prints the nominative
+        return out
+
+    @staticmethod
+    def date_34_division(cell: str) -> str:
+        """34. divizija's date of death: "07.09.44" = 7. 9. 1944 (as its parser writes it), "04.1945" = travnja 1945,
+        "trav. 45", "jes.1944" = jesen 1944, "1943"; a cell the scan garbled ("14.1044") gives nothing."""
+        c = cell.strip(' .,-—')
+        m = re.fullmatch(r'(\d{1,2})[.,-]\s?(\d{1,2})(?:[.,-]\s?|\s)(?:19)?(4[1-5])', c)
+        if m:
+            day, mon = int(m.group(1)), int(m.group(2))
+            return f'{day}. {mon}. 19{m.group(3)}' if 1 <= day <= 31 and 1 <= mon <= 12 else ''
+        m = re.fullmatch(r'(\d{1,2})[.,]\s?(?:19)?(4[1-5])', c)
+        if m:
+            mon = int(m.group(1))
+            return f'{HR_MONTHS[mon - 1]} 19{m.group(2)}' if 1 <= mon <= 12 else ''
+        m = re.fullmatch(r'(?:19)?(4[1-5])', c)
+        if m:
+            return f'19{m.group(1)}'
+        m = re.fullmatch(rf'([{L}]+)\.?[\s.-]*(?:19)?(4[1-5])', c.lower())
+        if m:
+            word, year = m.group(1), f'19{m.group(2)}'
+            mon = next((n for stem, n in HR_MONTH_STEMS if word.startswith(stem)), None)
+            if mon:
+                return f'{HR_MONTHS[mon - 1]} {year}'
+            season = next((s for stem, s in HR_SEASONS if word.startswith(stem)), None)
+            return f'{season} {year}' if season else year if word == 'pro' else ''
+        return ''
 
     # ── locative/genitive -> nominative, only when the result is a known place ──
     _WORD_RULES = [
@@ -363,6 +551,7 @@ class Extractor:
         ('eg', 'i'), ('og', 'i'), ('og', 'o'), ('e', 'a'), ('a', ''), ('a', 'o'), ('a', 'e'), ('a', 'i'), ('ova', 'ovi'), ('eva', 'evi'), ('aca', 'ci'),
         ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('cu', 'ac'), ('ca', 'ac'), ('ca', 'ec'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
         ('aka', 'ci'), ('ra', 'ar'),
+        ('pcu', 'bac'), ('pca', 'bac'), ('ocu', 'olac'), ('oca', 'olac'),          # "u Šapcu" = Šabac, "u Stocu" = Stolac
     ]
 
     def _variants(self, word: str) -> set[str]:
@@ -388,6 +577,8 @@ class Extractor:
             if cand != phrase and n and (best is None or n > best[0]):
                 best = (n, cand)
         if n0 and not (best and best[0] >= (max(5, n0 / 2) if locative else 3 * n0)):
+            if locative and not best and len(words[-1]) >= 7 and re.search(r'(?:ima|ama)$', words[-1]):
+                return None                     # "u Mucalovićima": a plural's locative that a record kept, not a nominative
             return phrase
         return best[1] if best else None
 
@@ -417,6 +608,7 @@ class Extractor:
         found = []
         for m in RANK_RE.finditer(text):
             r = m.group(1).lower().replace('polit. ', 'politički ').replace('skoj-a', 'SKOJ-a')
+            r = re.sub(r'^st\.\s?vodnik$', 'stariji vodnik', re.sub(r'^ml\.\s?vodnik$', 'mlađi vodnik', r))   # "st.vodnik"
             if r not in found:
                 found.append(r)
         # a specific function makes the generic "borac" redundant; "politički komesar" is covered by "politički komesar brigade"
@@ -495,6 +687,24 @@ class Extractor:
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
             return {}
+        # a month the scan read with a capital inside it: "krajem oKtobra 1944"
+        text = re.sub(rf'\b[{L}]+[{U}][{L}]*\b', lambda m: m.group(0).lower() if m.group(0).lower() in MONTH_SET else m.group(0), text)
+        text = re.sub(rf'\bSI\.(?=\s?[{U}])', 'Sl.', text)                   # "kod SI. Broda": Sl(avonskog), the l read as I
+        if code == 96:
+            return self.table_22_division(text)
+        place_re, converted_only = None, False
+        if code == 101:
+            # 12. hercegovačka: "iznad Ivanice-Dubrovnik", "u Vilusima-Crna Gora": the village, then its municipality
+            text = re.sub(rf'(?<=[{L}])-(?=[{U}])', ', ', text)
+            text = re.sub(r'\bčet\^', 'čete', text)                         # "Zamjenik komandira čet^."
+        if code == 103:
+            # 6. dalmatinska's text layer reads the digit 2 as Ž: "kod Livna Ž9. XII 1943", "za Mostar 1Ž. II 1945"
+            text = re.sub(r'(?<!\w)[\dŽ]*Ž[\dŽ]*(?=\.)', lambda m: m.group(0).replace('Ž', '2'), text)
+            # and its Roman months I and II as 1 and 11: "za Smoković 5. 1 1944", "kod Mostara 22. 11 1945"
+            text = re.sub(r'(?<=\d\.\s)1{1,3}(?=\s(?:18|19)\d\d)', lambda m: 'I' * len(m.group(0)), text)
+            text = re.sub(rf'(?<=[{L}])\s*—\s*(?=[{U}])', ', ', text)           # "kod Livna— Dragnić"
+            place_re = PLACE_103
+            converted_only = True
         if code == 50:
             text = re.sub(r'\bpog\.', 'poginuo', text)                    # 12. dalmatinska's abbreviation
             # its day and month without a year ("poginuo 27. 4. kod Klane"; the parser dated it by the heading)
@@ -548,7 +758,15 @@ class Extractor:
         head = out.pop('_head', '')
         if code == 109:
             out = {k: v for k, v in out.items() if k == 'ethnicity'}       # its parser reads the birthplace and the trade
-        out.update(self.death(text))
+        # the next entry glued on before the first death: "... krajem rata politički komesar bolničke čete. iRCEGOVIĆ Stipe
+        # ANTE, borac ..., poginuo na Zelengori": that death is the other soldier's
+        if not (dm and GLUED_RE.search(text[:dm.start()])):
+            out.update(self.death(text, place_re, converted_only))
+        if code == 97:
+            # 34. divizija: the last column is the date of death, printed as the parser could not always read it
+            date = self.date_34_division(text.split(', ')[-1])
+            if date:
+                out['death_date'] = date
         rank_text = (head + ' ' if head else '') + text
         if code in DUTY_BEFORE_WAR_END or duty_first:
             rank_text = re.split(r'\bkrajem rata\b', rank_text)[0]
@@ -583,6 +801,7 @@ def build_extractor(brigades) -> Extractor:
     occupations = Counter({w: n for w, n in occ.items() if n >= 2 and not RANK_RE.fullmatch(w) and w not in ('u', 'i', 'borac', 'grad', 'rođ', 'rod')
                            and not re.match(r'(?:rođen|živ|pogin|umr|nesta|ubijen|stri?jeljan|streljan|ranjen|zarobljen)\w*\b', w)
                            and not UNIT_RE.search(w) and not any(rx.search(w) for rx, _ in SPECIAL_UNITS)})
+    occupations = plausible_occupations(occupations)
     # known places (nominative): existing birth/death places, then birthplaces the extractor itself reads
     places = Counter()
     for s in all_recs:

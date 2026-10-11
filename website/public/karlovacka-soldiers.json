@@ -263,7 +263,7 @@
     "other_sources": [
       {
         "soldier_id": "0097000038",
-        "name": "Bajramović Ramo",
+        "name": "Bajramović Mustafe Ramo",
         "additional_info": "borac, UKB, 1915. Vidovsko, Kladuša, u NOB 1944, poginuo Rečica, 04.03.45",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 2,
@@ -2646,7 +2646,7 @@
       },
       {
         "soldier_id": "0097000142",
-        "name": "Bubaš Vlado",
+        "name": "Bubaš Ivana Vlado",
         "additional_info": "pom.int., UKB, 1926. Vukova Gorica, Netretić, u NOB 1943, poginuo Netretić, 03.05.45",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 3,
@@ -2863,7 +2863,7 @@
       },
       {
         "soldier_id": "0097000151",
-        "name": "Butorajac Nikola",
+        "name": "Butorajac Antona Nikola",
         "additional_info": "desetar, UKB, 1921. Vinski Vrh, Netretić, u NOB 1944, Umro u bolnici.",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 3,
@@ -3734,7 +3734,7 @@
     "other_sources": [
       {
         "soldier_id": "0097000230",
-        "name": "Drozdov Miljenko",
+        "name": "Drozdov A Miljenko",
         "additional_info": "pol.ruk., KB, 1923. Karlovac, u NOB 1943, poginuo Glina, 02.04.45",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 5,
@@ -3816,7 +3816,7 @@
     "other_sources": [
       {
         "soldier_id": "0097000234",
-        "name": "Dubravac Nikola",
+        "name": "Dubravac Antuna Nikola",
         "additional_info": "borac, KB, 1926. Orovac, Pisarovina, poginuo D. Kupčina, 07.03.45",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 6,
@@ -6815,10 +6815,11 @@
     "unit_detail": "četa za vezu",
     "pdf_x_end": 465.2,
     "death_place": "Sv. Jana",
+    "death_date": "lipnja 1944",
     "other_sources": [
       {
         "soldier_id": "0097000433",
-        "name": "Jagas Stjepan",
+        "name": "Jagas M Stjepan",
         "additional_info": "borac, KB, 1917. Goli Vrh, Ribnik, poginuo Sv. Jana, 06.44",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 11,
@@ -7516,7 +7517,7 @@
     "other_sources": [
       {
         "soldier_id": "0097000470",
-        "name": "Jovanović Vjekoslav",
+        "name": "Jovanović Nikole Vjekoslav",
         "additional_info": "borac, KB, 1926. Trilj. Novi Vinodolski, u NOB 1944, poginuo Draganići, 07.05.45",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 11,
@@ -9703,20 +9704,20 @@
     "first_name": "Antun",
     "fathers_name": "Petar",
     "full_name": "Ladika Petra Antun",
-    "additional_info": "1323, Kamanje, Ozalj. Stupio u NOV 1944, borac brig. Poginuo na Kurjevcu kod Primišlja 16. 4. 1945.",
-    "birth_year": "1323",
-    "death_type": "poginuo",
+    "additional_info": "1923, Kamanje, Ozalj. Stupio u NOV 1944, borac brig. Poginuo na Kurjevcu kod Primišlja 16. 4. 1945.",
+    "birth_year": "1923",
     "pdf_page": 29,
     "pdf_y": 386.5,
     "pdf_x": 137.2,
     "pdf_y_end": 420.9,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000418",
-    "death_date": "16. 4. 1945",
     "death_place": "na Kurjevcu kod Primišlja",
-    "rank": "borac",
     "pdf_x_end": 307.1,
     "birth_place": "Kamanje, Ozalj",
+    "death_type": "poginuo",
+    "death_date": "16. 4. 1945",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000625",
@@ -9869,10 +9870,8 @@
     "first_name": "Mijo",
     "fathers_name": "Stjepan",
     "full_name": "Latin Stjepana Mijo",
-    "additional_info": "1824, Hrašće, Jaškovo. Stupio u NOV 7. 1. 1944, delegat voda 3. ba,t. Poginuo kod Zažine 15. 9, 1944.",
-    "birth_year": "1824",
-    "birth_place": "Hrašće, Jaškovo",
-    "death_type": "poginuo",
+    "additional_info": "1924, Hrašće, Jaškovo. Stupio u NOV 7. 1. 1944, delegat voda 3. ba,t. Poginuo kod Zažine 15. 9, 1944.",
+    "birth_year": "1924",
     "pdf_page": 29,
     "pdf_y": 504.8,
     "pdf_x": 136.7,
@@ -9892,11 +9891,13 @@
         "pdf_x_end": 246.6
       }
     ],
-    "death_date": "1944",
-    "rank": "delegat voda",
     "death_place": "kod Zažine",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 306.6
+    "pdf_x_end": 306.6,
+    "birth_place": "Hrašće, Jaškovo",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "rank": "delegat voda"
   },
   {
     "last_name": "Latković",
@@ -13011,9 +13012,8 @@
     "first_name": "Pavao",
     "fathers_name": "Ivan",
     "full_name": "Novogradac Ivana Pavao",
-    "additional_info": "1026, Kunić Ribnički, Netretić. Stupio u NOV 18. 2. 1943, borac 2, bat. Poginuo kod Turopolja 13. 2.",
-    "birth_year": "1026",
-    "death_type": "poginuo",
+    "additional_info": "1926, Kunić Ribnički, Netretić. Stupio u NOV 18. 2. 1943, borac 2, bat. Poginuo kod Turopolja 13. 2.",
+    "birth_year": "1926",
     "pdf_page": 31,
     "pdf_y": 244.9,
     "pdf_x": 138.8,
@@ -13034,7 +13034,7 @@
       },
       {
         "soldier_id": "0097000824",
-        "name": "Novogradac Pavao",
+        "name": "Novogradac Ivana Pavao",
         "additional_info": "borac, KB, 1926. Ribn. Kunić, Netretić, u NOB 1943, poginuo Turopolje, 13.02.45",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 18,
@@ -13046,11 +13046,12 @@
       }
     ],
     "birth_place": "Kunić Ribnički, Netretić",
-    "rank": "borac",
     "death_date": "13. 2. 1945",
     "death_place": "Turopolje",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 300.9
+    "pdf_x_end": 300.9,
+    "death_type": "poginuo",
+    "rank": "borac"
   },
   {
     "last_name": "Novosel",
@@ -13882,9 +13883,8 @@
     "first_name": "Josip",
     "fathers_name": "Ilija",
     "full_name": "Pereško Ilije Josip",
-    "additional_info": "1019, Goli Vrh, Ribnih. Stupio u NOV 5. 10. 1943, komandir voda 1. bat. Poginuo kod Crne Mlake 6. 9. 1944.",
-    "birth_year": "1019",
-    "death_type": "poginuo",
+    "additional_info": "1919, Goli Vrh, Ribnih. Stupio u NOV 5. 10. 1943, komandir voda 1. bat. Poginuo kod Crne Mlake 6. 9. 1944.",
+    "birth_year": "1919",
     "pdf_page": 31,
     "pdf_y": 236.5,
     "pdf_x": 323.3,
@@ -13917,11 +13917,12 @@
       }
     ],
     "birth_place": "Goli Vrh, Ribnik",
-    "death_date": "6. 9. 1944",
     "death_place": "kod Crne Mlake",
+    "pdf_x_end": 490.1,
+    "death_type": "poginuo",
+    "death_date": "6. 9. 1944",
     "rank": "komandir voda",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 490.1
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Pereško",
@@ -13941,6 +13942,7 @@
     "soldier_id": "0094000603",
     "rank": "borac",
     "pdf_x_end": 490.7,
+    "death_date": "jesen 1944",
     "other_sources": [
       {
         "soldier_id": "0097000878",
@@ -14767,7 +14769,8 @@
     ],
     "death_place": "na Zumberku lipnja",
     "rank": "borac",
-    "pdf_x_end": 257.9
+    "pdf_x_end": 257.9,
+    "death_date": "lipnja 1944"
   },
   {
     "last_name": "Pogačič",
@@ -16567,7 +16570,7 @@
     "other_sources": [
       {
         "soldier_id": "0097001045",
-        "name": "Samovojska Stjepan",
+        "name": "Samovojska Nikole Stjepan",
         "additional_info": "borac, KB, 1924. Duga Resa, u NOB 1944, poginuo Žumberak, 07.12.44",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 23,
@@ -16879,7 +16882,7 @@
       },
       {
         "soldier_id": "0097001068",
-        "name": "Sestrić Mijo",
+        "name": "Sestrić Ivana Mijo",
         "additional_info": "k-dir v., FOS, 1919. Rosopajnik, Netretić, u NOB 1944, poginuo Grandić B., 02.06.44",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 23,
@@ -18715,6 +18718,7 @@
     "unit_detail": "4. bataljon",
     "pdf_x_end": 446.1,
     "death_place": "D. Kupčina",
+    "death_date": "7. 3. 1945",
     "other_sources": [
       {
         "soldier_id": "0097001177",
@@ -18910,7 +18914,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 307.9,
-    "death_place": "Mala Buna"
+    "death_place": "Mala Buna",
+    "death_date": "jesen 1944"
   },
   {
     "last_name": "Tržok",
@@ -19451,7 +19456,7 @@
       },
       {
         "soldier_id": "0097001224",
-        "name": "Vojnović Veselin",
+        "name": "Vojnović B Veselin",
         "additional_info": "k-dir č., KB, 1923. Derventa, BiH, u NOB 1943, poginuo Desinec, 01.09.44",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 28,

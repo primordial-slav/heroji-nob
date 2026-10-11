@@ -987,7 +987,8 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "death_date": "13. juna 1943",
-    "ethnicity": "Crnogorac"
+    "ethnicity": "Crnogorac",
+    "occupation": "đak"
   },
   {
     "soldier_id": "0005000024",
@@ -3553,13 +3554,13 @@
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
-    "birth_place": "Nova Varoš",
-    "occupation": "student filozofije",
-    "rank": "sekretar SKOJ-a",
     "ethnicity": "Srpkinja",
     "death_type": "umro",
     "death_date": "14. decembra 1993",
-    "death_place": "Beograd"
+    "death_place": "Beograd",
+    "birth_place": "Nova Varoš",
+    "occupation": "student filozofije",
+    "rank": "sekretar SKOJ-a"
   },
   {
     "soldier_id": "0005000087",
@@ -3842,9 +3843,9 @@
     "unit_detail": "1. bataljon",
     "death_date": "19. oktobra 1943",
     "ethnicity": "Srbin",
+    "death_place": "u Štitkovc",
     "birth_place": "Nova Varoš",
-    "death_type": "poginuo",
-    "death_place": "u Štitkovc"
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0005000898",
@@ -10901,11 +10902,11 @@
       }
     ],
     "unit_detail": "1. četa, 1. bataljon",
+    "death_place": "u Štitkovu, kod Nove Varoši",
     "birth_place": "Nova Varoš",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "oktobra 1943",
-    "death_place": "u Štitkovu, kod Nove Varoši",
     "rank": "borac",
     "pdf_x_end": 352.1,
     "pdf_y_end": 99.7
@@ -15544,11 +15545,11 @@
     "rank": "vodnik, komandir čete",
     "unit_detail": "2. bataljon",
     "death_date": "14. oktobra 1944",
-    "death_place": "Sjenica",
     "ethnicity": "Crnogorac",
     "birth_place": "Podborova, Pljevlja",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_place": "Sjenica",
     "pdf_x_end": 357.3,
     "pdf_y_end": 408.2
   },
@@ -16038,6 +16039,7 @@
     ],
     "ethnicity": "Crnogorac",
     "unit_detail": "2. četa, 2. bataljon",
+    "occupation": "đak",
     "pdf_x_end": 280.0,
     "pdf_y_end": 419.1
   },
@@ -23170,7 +23172,8 @@
         "pdf_x_end": 194.3
       }
     ],
-    "ethnicity": "Crnogorac"
+    "ethnicity": "Crnogorac",
+    "occupation": "pitomac vojne akademije"
   },
   {
     "soldier_id": "0005000524",
@@ -26437,11 +26440,11 @@
       }
     ],
     "unit_detail": "4. bataljon",
+    "death_place": "u Mojkovcu",
     "birth_place": "Mojkovac, Bijelo Polje",
     "occupation": "domaćica",
     "death_type": "umro",
     "death_date": "1943",
-    "death_place": "u Mojkovcu",
     "rank": "borac"
   },
   {
@@ -30530,7 +30533,8 @@
         "pdf_x_end": 327.2
       }
     ],
-    "death_type": "umro"
+    "death_type": "umro",
+    "occupation": "šumar"
   },
   {
     "soldier_id": "0005000688",
@@ -36841,10 +36845,10 @@
     ],
     "ethnicity": "Crnogorac",
     "unit_detail": "5. bataljon",
+    "death_place": "Bukovica, jula",
     "birth_place": "Potkovač, Pljevlja",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "death_place": "Bukovica, jula",
     "rank": "borac",
     "death_date": "jula 1943"
   },
@@ -40459,7 +40463,8 @@
     "death_place": "na Radisavcu, Pljevlja",
     "rank": "desetar",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 326.5
+    "pdf_x_end": 326.5,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Bukušić",
@@ -47273,7 +47278,8 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 356.2,
-    "pdf_y_end": 475.3
+    "pdf_y_end": 475.3,
+    "death_place": "Sutjeska"
   },
   {
     "soldier_id": "0005020913",
@@ -51360,7 +51366,8 @@
     "death_date": "februara 1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 330.2
+    "pdf_x_end": 330.2,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Nikolić",
@@ -52320,7 +52327,8 @@
     "death_date": "14. novembra 1943",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 358.4
+    "pdf_x_end": 358.4,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Pavlović",
@@ -53989,7 +53997,8 @@
     "death_place": "Polica, Berane",
     "rank": "desetar",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 327.8
+    "pdf_x_end": 327.8,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Rabrenović",
@@ -56257,7 +56266,8 @@
     "death_date": "marta 1943",
     "death_place": "Gornji Vakuf",
     "rank": "puškomitraljezac",
-    "pdf_x_end": 326.0
+    "pdf_x_end": 326.0,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Solomun",
@@ -60490,7 +60500,8 @@
     "death_type": "umro",
     "death_date": "sredinom 1945",
     "rank": "borac",
-    "pdf_x_end": 330.6
+    "pdf_x_end": 330.6,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Šaponjić",
@@ -66759,11 +66770,11 @@
     "pdf_x_end": 370.3
   },
   {
-    "last_name": "Jjčić",
+    "last_name": "Lučić",
     "middle_name": "Novaka",
     "first_name": "Dragiša",
     "fathers_name": "Novak",
-    "full_name": "Jjčić Novaka Dragiša",
+    "full_name": "Lučić Novaka Dragiša",
     "additional_info": "borac 3. čete 4. bataljona, rođen 1920, Tomaševo, Bijelo Polje, zemljoradnik, Crnogorac, u NOB od 1941, član SKOJ-a od 1941, član KPJ od maja 1943, krajem rata komandant bataljona.",
     "birth_year": "1920",
     "pdf_page": 32,
@@ -70922,7 +70933,8 @@
     "death_place": "Bijelo Polje",
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 371.9
+    "pdf_x_end": 371.9,
+    "occupation": "šumar"
   },
   {
     "last_name": "Odobašić",
@@ -72429,7 +72441,7 @@
     "other_sources": [
       {
         "soldier_id": "0039000694",
-        "name": "Radović Gavro",
+        "name": "Radović Alekse Gavro",
         "additional_info": "poginuo 4. decembra 1943, Prijepolje (nepoznato mesto pogibije); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
         "pdf_file": "druga-proleterska.pdf",
         "pdf_page": 3,
@@ -74773,7 +74785,7 @@
     "other_sources": [
       {
         "soldier_id": "0010205035",
-        "name": "Tahto Sejdo",
+        "name": "Tahto Smaje Sejdo",
         "additional_info": "rod. 1923, Selište, Foča, zemljoradnik — najamnik, Musliman, u NOB aprila 1943, u brigadi jula 1944. do novembra 1946, SKOJ 1944.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 421,
@@ -76558,9 +76570,9 @@
   {
     "last_name": "Zekavičić",
     "middle_name": "Jovana",
-    "first_name": "Ianasjje",
+    "first_name": "Tanasije",
     "fathers_name": "Jovan",
-    "full_name": "Zekavičić Jovana Ianasjje",
+    "full_name": "Zekavičić Jovana Tanasije",
     "additional_info": "borac 2. čete 1. bataljona, rođen 1916, Nova Varoš, radnik, Srbin, u NOB od 1941, član KPJ. Umro 1990. u Novoj Varoši.",
     "birth_year": "1916",
     "pdf_page": 62,
@@ -77877,7 +77889,8 @@
     "ethnicity": "Musliman",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 397.1
+    "pdf_x_end": 397.1,
+    "occupation": "građevinski tehničar"
   },
   {
     "last_name": "Šestović",

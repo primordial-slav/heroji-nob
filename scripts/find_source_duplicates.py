@@ -52,6 +52,7 @@ CORRECTIONS = ROOT / 'corrections.json'
 LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
     '4-splitska-brigada.pdf': [(1, 'poginuli'), (23, 'preživjeli')],
+    '11-dalmatinska.pdf': [(1, 'poginuli'), (27, 'nestali'), (28, 'preživjeli')],
     'cankarjeva.pdf': [(1, 'seznam'), (33, 'padli')],
     'gubceva.pdf': [(1, 'seznam'), (38, 'padli')],
     'dvanajsta.pdf': [(1, 'padli'), (5, 'seznam')],
@@ -177,6 +178,8 @@ LIST_FATE = {
     'karlovacka.pdf (poginuli)': 'fell',
     '4-sandzacka.pdf (poginuli)': 'fell',
     '3-primorsko-goranska.pdf (poginuli)': 'fell',
+    '11-dalmatinska.pdf (poginuli)': 'fell', '11-dalmatinska.pdf (preživjeli)': 'lived',   # a survivor is no man of
+                                    # another unit who fell (Šarić Jure, linked by mistake: links 96497, 98035)
     '11-krajiska-poginuli.pdf': 'fell',
     '8-banijska-poginuli.pdf': 'fell',
 }

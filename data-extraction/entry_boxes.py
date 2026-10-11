@@ -331,6 +331,7 @@ ONE_LINE_ENTRIES = {
     '18-slavonska.pdf': range(30, 55),     # survivors
     '32-divizija.pdf': range(1, 42),       # the roster: one name a line, four columns
     '6-krajiska-prezivjeli.pdf': range(1, 17),   # survivors: one name a line, two columns
+    '12-krajiska-prezivjeli.pdf': range(1, 71),  # 12. krajiška's survivors: a soldier a line, one column
     'dvanajsta.pdf': range(1, 41),         # XII. SNOUB: one soldier a line
     'skofjeloski-odred.pdf': range(1, 8),  # Škofjeloški odred: numbered names
     'tomsiceva-2.pdf': range(1, 33),       # Tomšičeva: a soldier a line
