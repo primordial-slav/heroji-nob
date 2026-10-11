@@ -142,6 +142,8 @@ Corrections run LAST before build so they always win over automated pipeline out
 
 **Formation dates**: the home page groups units by the year they were formed, from `website/app/data/formation.ts` (`date` as `YYYY-MM-DD`, or `YYYY-MM`/`YYYY`, plus the source). A new unit needs an entry there, from its book or another source you checked; without one it is listed last, under "Ostale jedinice".
 
+**Book PDFs** are read by the viewer in 64 KB ranges, but to open a book it reads the page tree and every page object, which in most scans lie all through the file (opening Prva lička read 11 of its 18 MB). After adding a PDF to `website/public/pdfs`, run `python scripts/repack_pdfs.py <file>` (no argument: every PDF that needs it; `--dry-run` to see what each reads to open). It saves the file with object streams and keeps it only if every object, page image and the text layer are unchanged, so positions and entry boxes stay valid.
+
 **Totals on the site** follow `soldierCount`: the line under the home page search field ("110.430 imena", `t.home.total`) is the sum of every unit's `soldierCount` in `units.ts`, computed at build time in `website/app/lib/totals.ts`, and each unit card shows its own count. Never hard-code a total in page text. When records or units are added or removed, make sure `soldierCount` is current (step 4 does it; a new unit's entry needs its count) and rebuild.
 
 **Structured fields** (`birth_place`, `ethnicity`, `occupation`, `rank`, `unit_detail`, `death_type`, `death_date`, `death_place`) are read from `additional_info` by `scripts/extract_structured_fields.py` (per-book rules; death places are put in the nominative only when that form is a known place). Only empty fields are filled; values set in corrections are never overwritten. `apply_corrections.py` runs it automatically; run the script alone for coverage stats and samples (`--brigade N --sample 20`), or with `--apply` for brigades that had no corrections. Units whose parser sets the fields itself (`PARSER_FIELDS`: Druga proleterska) are not read. A record linked to another unit's takes the fields it lacks from it, except `unit_detail` (that unit's battalion is not this one's). The Slovene books' dagger is read too: "†" with a war year is a death in the war (the parsers set those), with a later year, "po osvoboditvi", "po vojni" or alone a survivor who has died since (`umro`; the dialog then says the date is not given).
@@ -252,7 +254,7 @@ PDF text extraction has recurring patterns that break name-boundary detection:
 ## Project Structure
 
 ```
-website/                          # Next.js 14 frontend
+website/                          # Next.js 15 frontend
   app/
     (sr)/                         # Serbo-Croatian routes at the plain addresses (root layout lang="sr")
     (intl)/[lang]/                # The same routes under /sl, /mk, /en (root layout per language)
@@ -295,9 +297,9 @@ corrections.json                  # Individual record corrections (edit/delete/s
 ```
 
 ## Tech Stack
-- **Frontend**: Next.js 14, React 18, TypeScript, Fuse.js (search), react-pdf (PDF viewer)
+- **Frontend**: Next.js 15, React 19, TypeScript, Fuse.js (search), react-pdf (PDF viewer)
 - **Data extraction**: Python 3.7, pdfplumber
-- **Deployment**: Vercel (static export)
+- **Deployment**: Vercel, from the `prod` remote. Every page and data route is prerendered at build time, within two Vercel limits that fail the deploy without any sign in git: a server function may not pass 250 MB (`outputFileTracingExcludes` in `next.config.js` keeps `public/` and `data/life-events/` out; it takes effect only on Vercel's Linux build, so a Windows build's traces still list them), and no prerendered response may pass 19 MB (the home search list is split into parts for this, `SEARCH_INDEX_PARTS` in `app/lib/searchIndex.ts`). After pushing, check that the live site has the change.
 
 ## Windows Notes
 - Python console needs `sys.stdout.reconfigure(encoding='utf-8')` for Serbian/Slovenian diacritics
