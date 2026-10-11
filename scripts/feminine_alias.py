@@ -31,7 +31,9 @@ MALE_A = {'Nikola', 'Luka', 'Ilija', 'Andrija', 'Sava', 'Jovica', 'Mića', 'Pera
           'Avdija', 'Hamza', 'Musa', 'Isa', 'Alija', 'Mitja'}
 # Slovene men's names in -a, never women's, whatever other units' bios suggest
 MALE_ALWAYS = {'Jaka', 'Miha', 'Mitja'}
-WOMEN = {'0007001569'}       # Filipi-Vedrina Dolores: her bio's forms are even, her name ends in -s
+WOMEN = {'0007001569',      # Filipi-Vedrina Dolores: her bio's forms are even, her name ends in -s
+         '0004000242'}      # Boštjančič Mija - Olga (Ljubljanska): Mija is a Slovene woman's name, a man's in the
+                            # units from Serbia and Vojvodina, whose bios teach it as one
 MEN = {'0009001168'}         # Stotjanović "Nilkola" (OCR for Nikola)
 
 ALIAS = re.compile(r'(^|; )zvani(?= )')

@@ -169,18 +169,81 @@ def is_placeholder(s: str) -> bool:
     return not re.search(r'[^\s.,…]', s)
 
 
+FOLD = str.maketrans('čćđšž', 'ccdsz')
+# Short words that end a trade honestly ("kmečki sin", "kmečka hči"); any other of three letters or fewer at the end
+# of one is an abbreviation cut off at its dot: "podoficir bjv", "podoficir biv. RM", "radnik čl."
+SHORT_TAILS = {'sin', 'hči'}
+# a duty in a unit, printed where a trade could stand: "četna bolničarka"
+UNIT_DUTY_RE = re.compile(r'^(?:četn|vodn|bataljonsk|brigadn|divizijsk|korpusn)\w*\s')
+
+
+def plausible_occupations(occ: Counter) -> Counter:
+    """The words read as trades, without a stray letter ("ž"), a word cut short ("zemlj." for zemljoradnik, "radni"),
+    an abbreviation left at the end ("podoficir bjv") or a duty ("četna bolničarka")."""
+    whole = {o: n for o, n in occ.items() if ' ' not in o and n >= 50}
+
+    def ok(w: str) -> bool:
+        tokens = w.split()
+        if len(w) < 3 or not re.search('[aeiou]', w):
+            return False
+        if len(tokens) > 1 and whole.get(''.join(tokens), 0) >= 20 * occ[w]:
+            return True                                                     # a word split in two: "kroj ač"
+        if len(tokens) > 1 and len(tokens[-1]) <= 3 and tokens[-1] not in SHORT_TAILS:
+            return False
+        if UNIT_DUTY_RE.match(w) and RANK_RE.search(w):
+            return False
+        # the start of a far more common trade, cut there ("zemlj", "radni"); not a word of its own ("stolar")
+        return not (len(tokens) == 1 and any(o.startswith(w) and len(o) > len(w) and n >= 20 * occ[w]
+                                             for o, n in whole.items()))
+    return Counter({w: n for w, n in occ.items() if ok(w)})
+
+
+def same_word(a: str, b: str) -> bool:
+    """b is a, misread: a letter read wrong ("zemljoradiik", "domađica", "radnmk"), its marks lost ("dak" for đak), or
+    in a long word a letter more or less, or two read wrong ("zemljradnik", "zemljroadnik"). Never another word read
+    into it: "kotlar" is not "kolar", "učesnik" not "učenik", "seljanka" not "seljak", "podoficir biv" not
+    "podoficir bjv", the genitive "zemljoradnika" not the woman's "zemljoradnica", the Slovene "trgovec" and
+    "študent" not "trgovac" and "student"."""
+    if a.translate(FOLD) == b.translate(FOLD):
+        return a.translate(FOLD) == a
+    ta, tb = a.split(), b.split()
+    if len(ta) != len(tb) or sum(x != y for x, y in zip(ta, tb)) != 1:
+        return False
+    a, b = next((x, y) for x, y in zip(ta, tb) if x != y)
+    if a[0] != b[0] or a[-1] != b[-1]:
+        return False
+    if len(a) != len(b):
+        return min(len(a), len(b)) >= 9 and abs(len(a) - len(b)) == 1 and difflib.SequenceMatcher(None, a, b).ratio() >= 0.9
+    diff = [(x, y) for x, y in zip(a, b) if x != y]
+    if len(diff) == 1:
+        (x, y), = diff
+        if {x, y} == {'k', 'c'} or (x in 'aeiou' and y in 'aeiou' and len(a) < 9):
+            return False
+        return len(a) >= 6
+    return len(diff) == 2 and len(a) >= 9
+
+
 class Extractor:
     def __init__(self, occupations: Counter, places: Counter):
         self.occupations = set(occupations)
         self.places = places
-        # OCR-misspelt occupations map to the common spelling: "zemljradnik", "zemloradnik" -> "zemljoradnik"
-        common = [w for w, n in occupations.items() if n >= 50]
+        # OCR-misspelt occupations map to the common spelling: "zemljradnik", "zemljoradiik" -> "zemljoradnik",
+        # "domačica" -> "domaćica" (the commonest such spelling, twenty times as common at least); a genitive to its
+        # nominative: "zemljoradnika" -> "zemljoradnik"
         self.occ_spelling = {}
+        common = sorted(((n, w) for w, n in occupations.items() if n >= 50), reverse=True)
         for w, n in occupations.items():
-            if n < 10:
-                close = difflib.get_close_matches(w, common, n=1, cutoff=0.85)
-                if close and close[0] != w:
-                    self.occ_spelling[w] = close[0]
+            target = next((c for m, c in common if m >= 20 * n and c != w and same_word(w, c)), None)
+            if not target and w.endswith('a') and occupations.get(w[:-1], 0) >= max(50, 20 * n):
+                target = w[:-1]
+            if not target and ' ' in w and occupations.get(w.replace(' ', ''), 0) >= max(50, 20 * n):
+                target = w.replace(' ', '')                                 # "zemljo radnik", "kroj ač"
+            if target:
+                self.occ_spelling[w] = target
+        for w, target in self.occ_spelling.items():                 # "zemllradnik" -> "zemjoradnik" -> "zemljoradnik"
+            while target in self.occ_spelling and self.occ_spelling[target] != w:
+                target = self.occ_spelling[target]
+            self.occ_spelling[w] = target
 
     def occupation(self, w: str) -> str:
         return self.occ_spelling.get(w, w)
@@ -256,7 +319,10 @@ class Extractor:
             tail = re.match(r'^(.*\S)\s+(\S+)$', s)
             if (tail and (tail.group(2) in ETHNIC or tail.group(2) in self.occupations)   # "Italija Talijan" (comma missing)
                     and re.match(rf'^[{U}]', tail.group(1))):                      # not "brigadni telegrafist"
-                place.append(tail.group(1))
+                # a sentence the split above missed ends the place: "Mali Mokri Lug. Beograd. zemljoradnnk"
+                cut = next((m.start() for m in re.finditer(rf'\.\s+(?=[{U}])', tail.group(1))
+                            if not re.search(rf'(?:^|\s)(?:[{U}][{L}]?|{"|".join(ABBREV)})$', tail.group(1)[:m.start()])), None)
+                place.append(clean_segment(tail.group(1)[:cut]))
                 break
             if (s in ETHNIC or looks_ethnic(s) or self.is_occupation(s) or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
                     or UNIT_WORD_RE.search(s)
@@ -583,6 +649,7 @@ def build_extractor(brigades) -> Extractor:
     occupations = Counter({w: n for w, n in occ.items() if n >= 2 and not RANK_RE.fullmatch(w) and w not in ('u', 'i', 'borac', 'grad', 'rođ', 'rod')
                            and not re.match(r'(?:rođen|živ|pogin|umr|nesta|ubijen|stri?jeljan|streljan|ranjen|zarobljen)\w*\b', w)
                            and not UNIT_RE.search(w) and not any(rx.search(w) for rx, _ in SPECIAL_UNITS)})
+    occupations = plausible_occupations(occupations)
     # known places (nominative): existing birth/death places, then birthplaces the extractor itself reads
     places = Counter()
     for s in all_recs:
