@@ -4118,7 +4118,7 @@
       "occupation": "učenica",
       "unit_detail": "III bataljon",
       "rank": "bolničarka",
-      "death_type": "nestala",
+      "death_type": "nestao",
       "death_date": "03. 06. 1943",
       "death_place": "na Sutjesci"
     },
@@ -28458,7 +28458,7 @@
       "additional_info": "2. č, 4. bat, borac, nestala 28. 1. 1945, Radišići, Ljubuški",
       "unit_detail": "2. četa, 4. bataljon",
       "rank": "borac",
-      "death_type": "nestala",
+      "death_type": "nestao",
       "death_date": "28. 1. 1945",
       "death_place": "Radišići, Ljubuški"
     },
@@ -28578,7 +28578,7 @@
       "occupation": "učenica",
       "unit_detail": "III bataljon",
       "rank": "bolničarka",
-      "death_type": "poginula",
+      "death_type": "poginuo",
       "death_date": "26. 04. 1944",
       "death_place": "kod Mrkonjić Grada"
     },
@@ -38388,11 +38388,11 @@
       "fathers_name": "Petar",
       "birth_place": "Zagrović, Knin",
       "rank": "borac",
-      "death_type": "ranjen",
-      "death_date": "29. 4. 1945",
-      "death_place": "Paz, Istra"
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
     },
-    "reason": "Father's name Petar (genitive PETRA) visible in PDF page 54 at y=106. Extracted structured fields."
+    "reason": "Father's name Petar (genitive PETRA) visible in PDF page 54 at y=106. Extracted structured fields. He is in the survivors' list (POPIS PREŽIVJELIH BORACA, p. 23 on): 'ranjen 29. 4. 1945, Paz, Istra' is where he was wounded, not a death"
   },
   {
     "id": 3060,
@@ -899152,7 +899152,7 @@
     "soldier_id": "0094000426",
     "fields": {
       "fathers_name": "Stjepan",
-      "birth_year": "1824"
+      "birth_year": "1924"
     },
     "reason": "Father's name genitive -> nominative: Stjepana -> Stjepan"
   },
@@ -971004,5 +971004,385 @@
       "birth_year": "1926"
     },
     "reason": "4. Splitska: born 1926 as the survivors' list prints him (p. 39, no. 761 'GAŠPAR (MATE) JOZO, r. 1926, Umčari'); the fallen list (p. 9) prints no year, and earlier edits set birth_year to '' before the merge that brings it"
+  },
+  {
+    "id": 98678,
+    "action": "edit",
+    "soldier_id": "0079001104",
+    "fields": {
+      "additional_info": "iz Tijesnoga, u borbi na Crnom vrhu, 17.X1943.",
+      "death_date": "17. X 1943"
+    },
+    "reason": "The page (p. 41) prints '17.X1943.', 17 October 1943 (Crni vrh, as 18. X 1943 for another soldier of the unit); the text layer read '17.XI943'. Date in the unit's form"
+  },
+  {
+    "id": 98679,
+    "action": "edit",
+    "soldier_id": "0069000996",
+    "fields": {
+      "additional_info": "* 1910, Babna Gora, Šmarje pri Jelšah",
+      "birth_year": "1910",
+      "birth_place": "Babna Gora, Šmarje pri Jelšah",
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Text layer read the birth mark '*' as '+' (p. 46: 'LESKOŠEK FRANC, + 1910, Babna Gora'), so the birth year became a death date; the entry is in the survivors' list"
+  },
+  {
+    "id": 98680,
+    "action": "edit",
+    "soldier_id": "0070100613",
+    "fields": {
+      "additional_info": "* 1912 Škale",
+      "birth_year": "1912",
+      "birth_place": "Škale",
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Text layer read the birth mark '*' as '+' (tomsiceva-4.pdf p. 56: 'Dobnik Franc +1912 Škale'), so the birth year became a death date"
+  },
+  {
+    "id": 98681,
+    "action": "edit",
+    "soldier_id": "0070101762",
+    "fields": {
+      "additional_info": "* 1921 Trebča vas",
+      "birth_year": "1921",
+      "birth_place": "Trebča vas",
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Text layer read the birth mark '*' as '+' (tomsiceva-4.pdf p. 18: 'Kocjanćič Ivan + 1921 Trebča vas'), so the birth year became a death date"
+  },
+  {
+    "id": 98682,
+    "action": "edit",
+    "soldier_id": "0070104061",
+    "fields": {
+      "additional_info": "* 1927 Šmartno pri Slov. Gradcu",
+      "birth_year": "1927",
+      "birth_place": "Šmartno pri Slov. Gradcu",
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Text layer read the birth mark '*' as '+' (tomsiceva-4.pdf p. 97: 'Tajnšek Edi + 1927 Šmartno pri Slov. Gradcu'), so the birth year became a death date"
+  },
+  {
+    "id": 98683,
+    "action": "edit",
+    "soldier_id": "0070104666",
+    "fields": {
+      "additional_info": "zvani Brico; * 1914",
+      "birth_year": "1914",
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Text layer read the birth mark '*' as 'f' (tomsiceva-4.pdf p. 47: 'Zenič Rudolf-Brico f 1914'), so the birth year became a death date"
+  },
+  {
+    "id": 98684,
+    "action": "edit",
+    "soldier_id": "0070104718",
+    "fields": {
+      "additional_info": "zvani Slavc; * 1922 Materija",
+      "birth_year": "1922",
+      "birth_place": "Materija",
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Text layer read the birth mark '*' as 'f' (tomsiceva-4.pdf p. 47: 'Zupančič Slavko-Slavc f 1922 Materija'), so the birth year became a death date"
+  },
+  {
+    "id": 98685,
+    "action": "edit",
+    "soldier_id": "0036100487",
+    "fields": {
+      "last_name": "Ujdur"
+    },
+    "reason": "Borci Sutjeske, 1. dalmatinska p. 62: 'JJDUR' is the left edge garbled; the column runs Ugrina, Ujdur, Ujdurović, then Urukalo, Uvodić, and Ujdur and Ujdurović are Gradac (Ploče) families in the other chapters (Ujdur Šimuna Živojin, 10. hercegovačka; Ujdurović Mije Žarko, 3. dalmatinska)"
+  },
+  {
+    "id": 98686,
+    "action": "edit",
+    "soldier_id": "0036100488",
+    "fields": {
+      "last_name": "Ujdurović"
+    },
+    "reason": "Borci Sutjeske, 1. dalmatinska p. 62: 'JJDUROVIĆ' between Ujdur and Urukalo; Ujdurović Mije Žarko of Gradac (3. dalmatinska chapter) has the same father"
+  },
+  {
+    "id": 98687,
+    "action": "edit",
+    "soldier_id": "0036100659",
+    "fields": {
+      "last_name": "Ujdur"
+    },
+    "reason": "Borci Sutjeske, 1. dalmatinska p. 62: 'LJJDUR Jure MATE' after Ujdur Lovre Ante, before Ujdurović; Gradac, Ploče"
+  },
+  {
+    "id": 98688,
+    "action": "edit",
+    "soldier_id": "0047000199",
+    "fields": {
+      "last_name": "Kljaić"
+    },
+    "reason": "Borci Sutjeske, 16. banijska p. 13: 'KJJAIĆ RISTO' follows Kljaić Janka Živko and Kljaić Ljubomir, before Knežević"
+  },
+  {
+    "id": 98689,
+    "action": "edit",
+    "soldier_id": "0007100505",
+    "fields": {
+      "last_name": "Bujaš"
+    },
+    "reason": "Borci Sutjeske, 2. dalmatinska p. 10: 'JJAS Vice ANTE' (1912, Šibenik) in the column Bugarin ... Bujas-Labura, before Buklijaš: the left edge garbled. The brigade's own book prints him as Bujaš Vice Ante, 26. 5. 1912, Šibenik (0007000760)"
+  },
+  {
+    "id": 98690,
+    "action": "edit",
+    "soldier_id": "0007100506",
+    "fields": {
+      "last_name": "Bujaš"
+    },
+    "reason": "Borci Sutjeske, 2. dalmatinska p. 10: 'JJAS Vice NIKOLA' (1914, Šibenik, službenik) after Bujaš Ante, before Buklijaš. The brigade's own book prints him as Bujaš Vice Nikola, 3. 9. 1914, Šibenik, službenik (0007000765)"
+  },
+  {
+    "id": 98691,
+    "action": "edit",
+    "soldier_id": "0007100507",
+    "fields": {
+      "last_name": "Alfirević"
+    },
+    "reason": "Borci Sutjeske, 2. dalmatinska p. 2: 'JJIREVIĆ Damjana ĐURO' among the Alfirevićs, before Aljinović; the brigade's own book prints him as Alfirević Damjana Đuro, 1919, Plavno, Knin, Srbin (0007000039)"
+  },
+  {
+    "id": 98692,
+    "action": "edit",
+    "soldier_id": "0007100009",
+    "fields": {
+      "last_name": "Lalić"
+    },
+    "reason": "Borci Sutjeske, 2. dalmatinska p. 40: 'AJJĆ Jove DRAGICA' (1925, Imotski, Srpkinja) between Lakić Vlado and Lalić Ljubo, the left edge garbled. The brigade's own book prints her as Lalič Jose Dragica, 1925, Imotski, Srpkinja, in the NOV from 11. 2. 1943 (0007002766)"
+  },
+  {
+    "id": 98693,
+    "action": "edit",
+    "soldier_id": "0018000398",
+    "fields": {
+      "last_name": "Grujić"
+    },
+    "reason": "2. vojvođanska p. 28: 'ГРТЈЈИЋ' stands between Grujić Stevana Žarko and Grujić Milana Kosta"
+  },
+  {
+    "id": 98694,
+    "action": "edit",
+    "soldier_id": "0080000028",
+    "fields": {
+      "first_name": "Radmilo"
+    },
+    "reason": "21. srpska p. 30: 'РАДМИЈЈО' is Radmilo, the text layer's ЈЈ for Л"
+  },
+  {
+    "id": 98695,
+    "action": "edit",
+    "soldier_id": "0046000417",
+    "fields": {
+      "last_name": "Jahjaefendić-Jakšić",
+      "first_name": "Zineta",
+      "additional_info": "borac, rođena 1923, Lisno, domaćica, Muslimanka, u NOB od 1942."
+    },
+    "reason": "Borci Sutjeske, 3. dalmatinska p. 24: 'JJJAEFENDIĆ-JAKŠIĆ Hamida ZI- / NETA' heads the J column (then Jakovčević, Jelavić); Jahjaefendić Hamida Salih of Livno is in 10. hercegovačka. Her name Zineta runs over the line, so 'Neta' is no nickname"
+  },
+  {
+    "id": 98696,
+    "action": "edit",
+    "soldier_id": "0046000418",
+    "fields": {
+      "last_name": "Kujundžić"
+    },
+    "reason": "Borci Sutjeske, 3. dalmatinska p. 32: 'JJUNDZIC Nedeljka VERA' (Ivanbegovina, Imotski) in the column Kudeuka, Kujundžić, Kukolj, Kursar, before Kutlača: the left edge garbled"
+  },
+  {
+    "id": 98697,
+    "action": "edit",
+    "soldier_id": "0057001941",
+    "fields": {
+      "last_name": "Mihajlović"
+    },
+    "reason": "3. vojvođanska p. 22: 'МИХАЈЈТОВИЕ ОСТОЈА' before Mihajlović M. Smilja"
+  },
+  {
+    "id": 98698,
+    "action": "edit",
+    "soldier_id": "0057003055",
+    "fields": {
+      "first_name": "Mihajlo"
+    },
+    "reason": "3. vojvođanska p. 147: 'САКАВ МИХАЈЈТО' is Mihajlo"
+  },
+  {
+    "id": 98699,
+    "action": "edit",
+    "soldier_id": "0057003616",
+    "fields": {
+      "first_name": "Nikola"
+    },
+    "reason": "3. vojvođanska p. 164: 'ВИДОВ НИКОЈЈА' is Nikola"
+  },
+  {
+    "id": 98700,
+    "action": "edit",
+    "soldier_id": "0035102783",
+    "fields": {
+      "first_name": "Stjepan"
+    },
+    "reason": "32-divizija-borci.pdf p. 182: 'GLUHAK SJJEPAN' is Stjepan"
+  },
+  {
+    "id": 98701,
+    "action": "edit",
+    "soldier_id": "0021000442",
+    "fields": {
+      "first_name": "Ferenc"
+    },
+    "reason": "4. srpska p. 30: 'БОРДАШ Кларе ФЕРЕНЈЈ' (Novi Sad) is Ferenc"
+  },
+  {
+    "id": 98702,
+    "action": "edit",
+    "soldier_id": "0082000806",
+    "fields": {
+      "last_name": "Grujić"
+    },
+    "reason": "5. vojvođanska p. 41: 'GBIJJIĆ Stevan, 1913, Šuljam' between Grujić L. Stevan and Grujić Nege Stevan, 1913, Šuljam"
+  },
+  {
+    "id": 98703,
+    "action": "edit",
+    "soldier_id": "0048001085",
+    "fields": {
+      "last_name": "Šurlan"
+    },
+    "reason": "Borci Sutjeske, 7. krajiška p. 50: 'ŠJJRLAN Stevana DRAGAN' (1924, Bosanski Novi) before Šurlan Rade Uroš; knj. 2 of the brigade's zbornik prints him (in Cyrillic look-alikes 'Iiiupaah', 0048011044) with the same father, year, town and company"
+  },
+  {
+    "id": 98704,
+    "action": "edit",
+    "soldier_id": "0045000243",
+    "fields": {
+      "last_name": "Slijepčević"
+    },
+    "reason": "Borci Sutjeske, 8. banijska p. 32: 'JJEPČEVIĆ Sime DRAGAN' (1925, Roviška, Glina), the left edge garbled: the column holds the Slijepčevićs, sorted by first name (Ćiro, Dragan, Ljuba, Mile, Nikola), before Stamenić. The brigade's monograph prints him as Slijepčević Sime Dragan, 1925, Roviška (0045010770)"
+  },
+  {
+    "id": 98705,
+    "action": "edit",
+    "soldier_id": "0045000244",
+    "fields": {
+      "last_name": "Slijepčević"
+    },
+    "reason": "Borci Sutjeske, 8. banijska p. 32: 'JJEPČEVIĆ Stojana LJUBA' (Hajtić, Glina) among the Slijepčevićs (Slijepčević Sime Dragan is in the monograph, 0045010770), before Stamenić"
+  },
+  {
+    "id": 98706,
+    "action": "edit",
+    "soldier_id": "0045000245",
+    "fields": {
+      "last_name": "Slijepčević"
+    },
+    "reason": "Borci Sutjeske, 8. banijska p. 32: 'JJEPČEVIĆ Dmitra NIKOLA' (Dvor) among the Slijepčevićs (Slijepčević Sime Dragan is in the monograph, 0045010770), before Stamenić"
+  },
+  {
+    "id": 98707,
+    "action": "edit",
+    "soldier_id": "0005100328",
+    "fields": {
+      "last_name": "Lučić"
+    },
+    "reason": "Borci Sutjeske, Treća proleterska p. 32: 'JJČIĆ Novaka DRAGIŠA' between Lović and Lučić Milosava Krsto (the Lučićs sorted by first name)"
+  },
+  {
+    "id": 98708,
+    "action": "edit",
+    "soldier_id": "0005101048",
+    "fields": {
+      "first_name": "Tanasije"
+    },
+    "reason": "Borci Sutjeske, Treća proleterska p. 62: 'ZEKAVIČIĆ Jovana IANASJJE' is Tanasije (after Zekavičić Miloje, sorted by first name)"
+  },
+  {
+    "id": 98709,
+    "action": "edit",
+    "soldier_id": "0068000555",
+    "fields": {
+      "last_name": "Prijatelj"
+    },
+    "reason": "Zapadnodolenjski odred p. 5: 'Prjjate\\j Stane-Stanko' between Preželj and Prusnik"
+  },
+  {
+    "id": 98710,
+    "action": "edit",
+    "soldier_id": "0033000375",
+    "fields": {
+      "additional_info": "rođen 1914 Imljani K. Varoš, zamj. k-dira č. u 1. bat., poginuo, 3. X 1944, Osinja, sahranjen: Osinja Derventa",
+      "birth_year": "1914"
+    },
+    "reason": "The scan (p. 36) prints 1914, the top of the 9 cut off; 14. srednjobosanska prints 'rođen 1914, Imljani' (0056001191, linked)"
+  },
+  {
+    "id": 98711,
+    "action": "edit",
+    "soldier_id": "0033000696",
+    "fields": {
+      "additional_info": "rođen 1920, Imljani K. Varoš, 14 brig., poginuo u bor., 1. VII 1944, Ukrinica, Teslić",
+      "birth_year": "1920"
+    },
+    "reason": "The scan (p. 11) prints 1920; the text layer read 1820. 14. srednjobosanska prints 'Vidić Rajko, rođen 1920, Imljani' too (0056002270)"
+  },
+  {
+    "id": 98712,
+    "action": "edit",
+    "soldier_id": "0094000418",
+    "fields": {
+      "additional_info": "1923, Kamanje, Ozalj. Stupio u NOV 1944, borac brig. Poginuo na Kurjevcu kod Primišlja 16. 4. 1945.",
+      "birth_year": "1923"
+    },
+    "reason": "OCR 1323 for 1923 (the page is a re-typeset of the OCR); 34. divizija prints 'Ladika P Antun, 1923. Kamanje, Ozalj' (0097000625, linked)"
+  },
+  {
+    "id": 98713,
+    "action": "edit",
+    "soldier_id": "0094000426",
+    "fields": {
+      "additional_info": "1924, Hrašće, Jaškovo. Stupio u NOV 7. 1. 1944, delegat voda 3. ba,t. Poginuo kod Zažine 15. 9, 1944.",
+      "birth_year": "1924"
+    },
+    "reason": "OCR 1824 for 1924 (the page is a re-typeset of the OCR); the book's list of the men at formation prints 1924 (0094000425, merged), as does 34. divizija (0097000630)"
+  },
+  {
+    "id": 98714,
+    "action": "edit",
+    "soldier_id": "0094000563",
+    "fields": {
+      "additional_info": "1926, Kunić Ribnički, Netretić. Stupio u NOV 18. 2. 1943, borac 2, bat. Poginuo kod Turopolja 13. 2.",
+      "birth_year": "1926"
+    },
+    "reason": "OCR 1026 for 1926 (the page is a re-typeset of the OCR); the book's list at formation prints 1926 (0094000562, merged), as does 34. divizija (0097000824)"
+  },
+  {
+    "id": 98715,
+    "action": "edit",
+    "soldier_id": "0094000602",
+    "fields": {
+      "additional_info": "1919, Goli Vrh, Ribnih. Stupio u NOV 5. 10. 1943, komandir voda 1. bat. Poginuo kod Crne Mlake 6. 9. 1944.",
+      "birth_year": "1919"
+    },
+    "reason": "OCR 1019 for 1919 (the page is a re-typeset of the OCR); the book's list at formation prints 1919 (0094000601, merged; 34. divizija has 1912)"
   }
 ]
