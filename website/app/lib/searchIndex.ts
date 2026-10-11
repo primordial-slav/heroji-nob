@@ -209,6 +209,19 @@ export const loadedOnThisDay = (month: number, day: number) => dayLists.get(dayK
 // Each slice of full records once per visit: the records opened one after another are often in the same slice
 const parts = new Map<string, Promise<Soldier[]>>()
 
+// A slice that fails to load is asked for twice more, a moment apart (the server may be restarting, or a data file
+// being written), before the dialog makes do with the list's short record, which has no book page or source link
+async function fetchPart(path: string): Promise<Soldier[]> {
+  for (const wait of [800, 2500]) {
+    try {
+      return await fetchJson<Soldier[]>(path)
+    } catch {
+      await new Promise((resolve) => setTimeout(resolve, wait))
+    }
+  }
+  return fetchJson<Soldier[]>(path)
+}
+
 /** The full record of a soldier from a loaded list, with the fields the page set on him */
 export async function fullRecord(soldier: Soldier): Promise<Soldier> {
   const at = located.get(soldier.soldier_id)
@@ -216,7 +229,7 @@ export async function fullRecord(soldier: Soldier): Promise<Soldier> {
   const path = recordsPath(at.unit, Math.floor(at.position / RECORDS_PER_PART))
   let part = parts.get(path)
   if (!part) {
-    part = fetchJson<Soldier[]>(path)
+    part = fetchPart(path)
     part.catch(() => parts.delete(path))
     parts.set(path, part)
   }
