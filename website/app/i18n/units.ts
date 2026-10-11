@@ -539,6 +539,36 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 31. oktobra 1944 v Novem Sadu iz 7., 8. in 12. vojvodinske brigade. Borci divizije, padli in pogrešani v bitki pri Batini, novembra 1944.',
   },
+  'vrhovni-stab': {
+    name: 'Vrhovni štab NOV in POJ',
+    description:
+      'Ustanovljen 27. junija 1941 v Beogradu kot Glavni štab partizanskih odredov Jugoslavije. Pripadniki Vrhovnega štaba, njegovih služb, Spremljevalnega bataljona in britanske vojaške misije v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '1-proleterska-divizija': {
+    name: '1. proletarska divizija',
+    description:
+      'Ustanovljena 1. novembra 1942 v Bosanskem Petrovcu. Štab divizije z njegovimi službami in spremljevalnimi enotami v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '2-proleterska-divizija': {
+    name: '2. proletarska divizija',
+    description:
+      'Ustanovljena 1. novembra 1942 v Tičevem. Štab divizije z njegovimi službami in spremljevalnimi enotami v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '3-udarna-divizija': {
+    name: '3. udarna divizija',
+    description:
+      'Ustanovljena 1. novembra 1942 v Tičevem. Štab divizije z njegovimi službami in spremljevalnimi enotami v bitki na Sutjeski, maja in junija 1943.',
+  },
+  '7-banijska-divizija': {
+    name: '7. banijska divizija',
+    description:
+      'Ustanovljena 22. novembra 1942. Štab divizije z njegovimi službami in spremljevalnimi enotami v bitki na Sutjeski, maja in junija 1943.',
+  },
+  'centralna-bolnica': {
+    name: 'Centralna bolnišnica',
+    description:
+      'Ustanovljena novembra 1941 v zahodni Srbiji. Osebje bolnišnice in ranjenci, katerih enote ni bilo mogoče ugotoviti, v bitki na Sutjeski, maja in junija 1943.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1069,6 +1099,36 @@ const mk: Record<string, UnitText> = {
     name: '51-ва војводинска дивизија',
     description:
       'Формирана на 31 октомври 1944 во Нови Сад, од 7., 8. и 12. војводинска бригада. Борците на дивизијата загинати и исчезнати во Батинската битка, ноември 1944.',
+  },
+  'vrhovni-stab': {
+    name: 'Врховен штаб на НОВ и ПОЈ',
+    description:
+      'Формиран на 27 јуни 1941 во Белград, како Главен штаб на партизанските одреди на Југославија. Припадниците на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '1-proleterska-divizija': {
+    name: '1-ва пролетерска дивизија',
+    description:
+      'Формирана на 1 ноември 1942 во Босански Петровац. Штабот на дивизијата, неговите служби и придружни единици во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '2-proleterska-divizija': {
+    name: '2-ра пролетерска дивизија',
+    description:
+      'Формирана на 1 ноември 1942 во Тичево. Штабот на дивизијата, неговите служби и придружни единици во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '3-udarna-divizija': {
+    name: '3-та ударна дивизија',
+    description:
+      'Формирана на 1 ноември 1942 во Тичево. Штабот на дивизијата, неговите служби и придружни единици во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '7-banijska-divizija': {
+    name: '7-ма банијска дивизија',
+    description:
+      'Формирана на 22 ноември 1942. Штабот на дивизијата, неговите служби и придружни единици во битката на Сутјеска, мај и јуни 1943.',
+  },
+  'centralna-bolnica': {
+    name: 'Централна болница',
+    description:
+      'Формирана во ноември 1941 во западна Србија. Персоналот на болницата и ранетите чија единица не можела да се утврди, во битката на Сутјеска, мај и јуни 1943.',
   },
 }
 
@@ -1602,6 +1662,36 @@ const en: Record<string, UnitText> = {
     name: '51st Vojvodina Division',
     description:
       'Formed on 31 October 1944 in Novi Sad, from the 7th, 8th and 12th Vojvodina Brigades. The division’s fallen and missing in the Battle of Batina, November 1944.',
+  },
+  'vrhovni-stab': {
+    name: 'Supreme Headquarters of the NOV and POJ',
+    description:
+      'Formed on 27 June 1941 in Belgrade, as the General Staff of the Partisan Detachments of Yugoslavia. Members of the Supreme Headquarters, its services, the Escort Battalion and the British military mission in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '1-proleterska-divizija': {
+    name: '1st Proletarian Division',
+    description:
+      'Formed on 1 November 1942 in Bosanski Petrovac. The division staff, its services and escort units in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '2-proleterska-divizija': {
+    name: '2nd Proletarian Division',
+    description:
+      'Formed on 1 November 1942 at Tičevo. The division staff, its services and escort units in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '3-udarna-divizija': {
+    name: '3rd Assault Division',
+    description:
+      'Formed on 1 November 1942 at Tičevo. The division staff, its services and escort units in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '7-banijska-divizija': {
+    name: '7th Banija Division',
+    description:
+      'Formed on 22 November 1942. The division staff, its services and escort units in the Battle of the Sutjeska, May and June 1943.',
+  },
+  'centralna-bolnica': {
+    name: 'Central Hospital',
+    description:
+      'Formed in November 1941 in western Serbia. The hospital’s staff, and wounded whose own unit could not be established, in the Battle of the Sutjeska, May and June 1943.',
   },
 }
 

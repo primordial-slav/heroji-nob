@@ -1223,5 +1223,59 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/51-divizija.jpg',
     brigadeName: '51. vojvođanska divizija',
     description: 'Borci 51. vojvođanske divizije poginuli i nestali u Batinskoj bici, novembra 1944: rođenje, dužnost, gde i kada su pali (str. 469–501)'
+  },
+  {
+    id: 'borci-sutjeske-vrhovni-stab',
+    title: 'Borci Sutjeske — pripadnici na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-vrhovni-stab.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-vrhovni-stab.jpg',
+    brigadeName: 'Vrhovni štab NOV i POJ',
+    description: 'Prozivka boraca sa Sutjeske: svi pripadnici Vrhovnog štaba, njegovih službi, Pratećeg bataljona i britanske vojne misije u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-1-proleterska-divizija',
+    title: 'Borci Sutjeske — štab divizije na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-1-proleterska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-1-proleterska-divizija.jpg',
+    brigadeName: '1. proleterska divizija',
+    description: 'Prozivka boraca sa Sutjeske: štab divizije, njegove službe i prateće jedinice u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-2-proleterska-divizija',
+    title: 'Borci Sutjeske — štab divizije na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-2-proleterska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-2-proleterska-divizija.jpg',
+    brigadeName: '2. proleterska divizija',
+    description: 'Prozivka boraca sa Sutjeske: štab divizije, njegove službe i prateće jedinice u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-3-udarna-divizija',
+    title: 'Borci Sutjeske — štab divizije na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-3-udarna-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-3-udarna-divizija.jpg',
+    brigadeName: '3. udarna divizija',
+    description: 'Prozivka boraca sa Sutjeske: štab divizije, njegove službe i prateće jedinice u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-7-banijska-divizija',
+    title: 'Borci Sutjeske — štab divizije na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-7-banijska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-7-banijska-divizija.jpg',
+    brigadeName: '7. banijska divizija',
+    description: 'Prozivka boraca sa Sutjeske: štab divizije, njegove službe i prateće jedinice u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: 'borci-sutjeske-centralna-bolnica',
+    title: 'Borci Sutjeske — pripadnici na Sutjesci',
+    author: 'Viktor Kučan',
+    pdfPath: '/pdfs/borci-sutjeske-centralna-bolnica.pdf',
+    thumbnail: '/images/pdf-thumbs/borci-sutjeske-centralna-bolnica.jpg',
+    brigadeName: 'Centralna bolnica',
+    description: 'Prozivka boraca sa Sutjeske: osoblje Centralne bolnice i ranjenici čija se jedinica nije mogla utvrditi, s podacima o svakom i šta je s njim bilo do kraja rata.'
   }
 ]

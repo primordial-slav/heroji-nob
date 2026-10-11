@@ -126,6 +126,12 @@ BRIGADE_CODES = {
     109: 'Mačvanski odred',
     110: 'Posavski odred',
     111: '51. divizija',
+    112: 'Vrhovni štab',
+    113: '1. proleterska divizija',
+    114: '2. proleterska divizija',
+    115: '3. udarna divizija',
+    116: '7. banijska divizija',
+    117: 'Centralna bolnica',
     # Add new brigades here with next available code
 }
 

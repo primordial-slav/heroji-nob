@@ -1119,6 +1119,66 @@ export const units: Unit[] = [
     soldierCount: 648,
     dataFile: '/51-divizija-soldiers.json',
     pdfFiles: ['/pdfs/51-divizija.pdf']
+  },
+  {
+    id: 'vrhovni-stab',
+    name: 'Vrhovni štab NOV i POJ',
+    nameEn: 'Supreme Headquarters of the NOV and POJ',
+    description: 'Formiran 27. juna 1941. u Beogradu, kao Glavni štab partizanskih odreda Jugoslavije. Pripadnici Vrhovnog štaba, njegovih službi, Pratećeg bataljona i britanske vojne misije u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-vrhovni-stab.jpg',
+    soldierCount: 559,
+    dataFile: '/vrhovni-stab-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-vrhovni-stab.pdf']
+  },
+  {
+    id: '1-proleterska-divizija',
+    name: '1. proleterska divizija',
+    nameEn: '1st Proletarian Division',
+    description: 'Formirana 1. novembra 1942. u Bosanskom Petrovcu. Štab divizije, njegove službe i prateće jedinice u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-1-proleterska-divizija.jpg',
+    soldierCount: 203,
+    dataFile: '/1-proleterska-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-1-proleterska-divizija.pdf']
+  },
+  {
+    id: '2-proleterska-divizija',
+    name: '2. proleterska divizija',
+    nameEn: '2nd Proletarian Division',
+    description: 'Formirana 1. novembra 1942. u Tičevu. Štab divizije, njegove službe i prateće jedinice u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-2-proleterska-divizija.jpg',
+    soldierCount: 137,
+    dataFile: '/2-proleterska-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-2-proleterska-divizija.pdf']
+  },
+  {
+    id: '3-udarna-divizija',
+    name: '3. udarna divizija',
+    nameEn: '3rd Assault Division',
+    description: 'Formirana 1. novembra 1942. u Tičevu. Štab divizije, njegove službe i prateće jedinice u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-3-udarna-divizija.jpg',
+    soldierCount: 166,
+    dataFile: '/3-udarna-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-3-udarna-divizija.pdf']
+  },
+  {
+    id: '7-banijska-divizija',
+    name: '7. banijska divizija',
+    nameEn: '7th Banija Division',
+    description: 'Formirana 22. novembra 1942. Štab divizije, njegove službe i prateće jedinice u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-7-banijska-divizija.jpg',
+    soldierCount: 177,
+    dataFile: '/7-banijska-divizija-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-7-banijska-divizija.pdf']
+  },
+  {
+    id: 'centralna-bolnica',
+    name: 'Centralna bolnica',
+    nameEn: 'Central Hospital',
+    description: 'Formirana u novembru 1941. u zapadnoj Srbiji. Osoblje bolnice i ranjenici čija se jedinica nije mogla utvrditi, u bici na Sutjesci, maja i juna 1943.',
+    image: '/images/pdf-thumbs/borci-sutjeske-centralna-bolnica.jpg',
+    soldierCount: 698,
+    dataFile: '/centralna-bolnica-soldiers.json',
+    pdfFiles: ['/pdfs/borci-sutjeske-centralna-bolnica.pdf']
   }
   // Add more units here as you get more data
 ]

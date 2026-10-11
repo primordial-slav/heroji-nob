@@ -397,6 +397,30 @@ export const formation: Record<string, Formation> = {
     date: '1944-10-31', place: 'Novi Sad', source: 'https://znaci.org/00002/427.pdf',
     note: 'Božić, Batinska bitka (str. 23): „Pedeset i prva vojvođanska divizija formirana je 31. oktobra 1944. u Novom Sadu odlukom Glavnog štaba NOV i PO Vojvodine“, najpre kao 3. vojvođanska; 51. od 13. novembra 1944.',
   },
+  'vrhovni-stab': {
+    date: '1941-06-27', place: 'Beograd', source: 'https://sh.wikipedia.org/wiki/Vrhovni_štab_NOV_i_POJ',
+    note: 'sh.wikipedia: formiran 27. 6. 1941. u Beogradu, na sednici Politbiroa CK KPJ, kao Glavni štab NOPO Jugoslavije; ime Vrhovni štab od savetovanja u Stolicama, 26. 9. 1941.',
+  },
+  '1-proleterska-divizija': {
+    date: '1942-11-01', place: 'Bosanski Petrovac', source: 'https://sh.wikipedia.org/wiki/1._proleterska_divizija_NOVJ',
+    note: 'sh.wikipedia: „1. novembra 1942. godine u Bosanskom Petrovcu“.',
+  },
+  '2-proleterska-divizija': {
+    date: '1942-11-01', place: 'Tičevo', source: 'https://sh.wikipedia.org/wiki/2._proleterska_divizija_NOVJ',
+    note: 'sh.wikipedia: od 2. proleterske, 4. crnogorske i 2. dalmatinske brigade, 1. novembra 1942. u Tičevu.',
+  },
+  '3-udarna-divizija': {
+    date: '1942-11-01', place: 'Tičevo', source: 'https://sh.wikipedia.org/wiki/3._udarna_divizija_NOVJ',
+    note: 'sh.wikipedia: naredbom Vrhovnog štaba, od 5. crnogorske, 10. hercegovačke i 1. dalmatinske brigade, 1. novembra 1942. u Tičevu.',
+  },
+  '7-banijska-divizija': {
+    date: '1942-11-22', source: 'https://sh.wikipedia.org/wiki/7._banijska_divizija_NOVJ',
+    note: 'sh.wikipedia: „formirana je naredbom Vrhovnog komandanta NOV i POJ Josipa Broza Tita od 22. novembra 1942“; mesto ne navodi.',
+  },
+  'centralna-bolnica': {
+    date: '1941-11', place: 'zapadna Srbija', source: 'https://sh.wikipedia.org/wiki/Centralna_bolnica_NOVJ',
+    note: 'sh.wikipedia: „Centralna bolnica je oformljena novembra 1941. godine u zapadnoj Srbiji“, za vreme Prve neprijateljske ofanzive.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

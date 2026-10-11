@@ -102,7 +102,7 @@ TWO_COLUMN = {
     'ljubljanska-brigada.pdf',
     'prva-vojvodjanska.pdf',
     'tuzlanski-odred.pdf',
-    # Viktor Kučan, Borci Sutjeske: one chapter per brigade
+    # Viktor Kučan, Borci Sutjeske: one chapter per brigade, per staff, and the Central Hospital
     'borci-sutjeske-1-dalmatinska.pdf',
     'borci-sutjeske-10-hercegovacka.pdf',
     'borci-sutjeske-15-majevicka.pdf',
@@ -119,6 +119,12 @@ TWO_COLUMN = {
     'borci-sutjeske-druga-proleterska.pdf',
     'borci-sutjeske-prva-proleterska.pdf',
     'borci-sutjeske-treca-proleterska.pdf',
+    'borci-sutjeske-vrhovni-stab.pdf',
+    'borci-sutjeske-1-proleterska-divizija.pdf',
+    'borci-sutjeske-2-proleterska-divizija.pdf',
+    'borci-sutjeske-3-udarna-divizija.pdf',
+    'borci-sutjeske-7-banijska-divizija.pdf',
+    'borci-sutjeske-centralna-bolnica.pdf',
 }
 # Books printed in more columns: {file: columns}; gutter k is looked for around k/columns of the width
 MULTI_COLUMN = {

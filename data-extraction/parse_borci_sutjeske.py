@@ -20,6 +20,7 @@ books print); for the others it is the unit's first.
 
     python data-extraction/parse_borci_sutjeske.py 49          # one unit by code
     python data-extraction/parse_borci_sutjeske.py new         # the ten units the book brings to the site
+    python data-extraction/parse_borci_sutjeske.py staffs      # the Vrhovni štab, four division staffs, Centralna bolnica
 """
 import glob
 import json
@@ -50,13 +51,33 @@ UNITS = {
     47: ('129_23', 'borci-sutjeske-16-banijska.pdf', '16-banijska-soldiers.json', 1),
     48: ('129_24', 'borci-sutjeske-7-krajiska.pdf', '7-krajiska-soldiers.json', 1),
     49: ('129_25', 'borci-sutjeske-15-majevicka.pdf', '15-majevicka-soldiers.json', 1),
+    # the staffs in the battle, with their services and escort units, and the Central Hospital's own people
+    112: ('129_5', 'borci-sutjeske-vrhovni-stab.pdf', 'vrhovni-stab-soldiers.json', 1),
+    113: ('129_6', 'borci-sutjeske-1-proleterska-divizija.pdf', '1-proleterska-divizija-soldiers.json', 1),
+    114: ('129_7', 'borci-sutjeske-2-proleterska-divizija.pdf', '2-proleterska-divizija-soldiers.json', 1),
+    115: ('129_8', 'borci-sutjeske-3-udarna-divizija.pdf', '3-udarna-divizija-soldiers.json', 1),
+    116: ('129_9', 'borci-sutjeske-7-banijska-divizija.pdf', '7-banijska-divizija-soldiers.json', 1),
+    117: ('129_26', 'borci-sutjeske-centralna-bolnica.pdf', 'centralna-bolnica-soldiers.json', 1),
 }
 NEW = [40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+STAFFS = [112, 113, 114, 115, 116, 117]
 # pages the scan repeats (the same printed page again, rescanned): the second copy is skipped
 SKIP_PAGES = {
     'borci-sutjeske-4-proleterska.pdf': {36, 37},            # = pp. 34-35 (book pp. 396-397)
     'borci-sutjeske-3-dalmatinska.pdf': {22, 23, 62, 63},    # = pp. 20-21 and 60-61
 }
+# headings inside a chapter's roll: the heading, and the prose under it up to the next entry, are no entry
+SECTIONS = {
+    # the escort battalion, with a page on its history; the British mission's heading, across both columns
+    'borci-sutjeske-vrhovni-stab.pdf': [r'^PRATEĆI BATALJON$', r'^Engleska vojna misija za vezu$',
+                                        r'^pri Vrhovnom štabu NOV i POJ$'],
+    # Mitra Mitrović's memoir of the Benvenisti family, set between the entries
+    'borci-sutjeske-centralna-bolnica.pdf': [r'^PORODICA BENVENISTI$'],
+}
+# Chapters that set memoirs between the entries ("UMETNICI BORCI ... Joža Rutić"). An entry hangs: its first line at
+# the column's edge, the rest about 9.6 pt in; a memoir's lines stand between the two (about 5 pt in), its paragraphs
+# start 15 pt in, a heading is centred and the author's name set to the right. See drop_memoirs.
+MEMOIRS = {UNITS[c][1] for c in STAFFS}
 
 SOFT = '­'      # a name broken over two lines: "ALEKSAN-" + "DAR" → "ALEKSANDAR"
 HOLD = 'ǂ'           # marks the second line of a broken name so that it starts no entry (a letter: the scaffold
@@ -67,18 +88,22 @@ UA = U + 'ÀÁÂÄÈÉÊËÌÍÎÏÒÓÔÖÙÚÛÜ'
 LA = L + 'àáâäèéêëìíîïòóôöùúûü'
 EDGE = 'Ø'          # a surname whose first letter the scan garbled at the column's edge ("3UDIĆ", "4ARJANOVIĆ",
                     # "•SLIJEPČEVIĆ"): the letter is read back from the alphabetical order (post)
-CAPW0 = rf"[{UA}0][{UA}'013]+"
+# a surname's first letter the scan set apart ("R ADULO VIĆ-PEZO", "M ARINOVI Ć-OSTO JI Ć") counts as its start
+CAPW0 = rf"[{UA}0](?:[{UA}'013]+|(?=\s+[{UA}]{{2}}))"
 CAPW = rf"[{UA}][{UA}'013]*"
 SURNAME = rf"{EDGE}?{CAPW0}(?:\s+{CAPW})*?(?:\s*-\s*{CAPW}(?:\s+{CAPW})*?)?"
 # the father: "Jakuba", "Jeli seja" / "Ahmed a" (a word the scan split), "T.", "C.vije" / "(Vije" (Cvije), "lome" (Tome,
-# Ibre, Lazara: a capital read as l), "Ha-" at the end of the line; "ing." / "dr" before him
+# Ibre, Lazara: a capital read as l), "Ha-" at the end of the line (prepare turns the hyphen into SOFT: "RAVIĆ Ste-" /
+# "vana STANKO"); "ing." / "dr" before him
 FATHER = (rf"(?:(?:ing\.|dr\.?)\s+)?(?:\(?[{U}]\.?[{LA}]+(?:\s+[{LA}]{{1,5}}(?=\s+[{UA}013]))?|[{U}][{LA}]?\."
-          rf"|l[{LA}]{{2,}}(?=\s+[{UA}013]{{2}})|[{U}][{LA}]+-$)")
+          rf"|l[{LA}]{{2,}}(?=\s+[{UA}013]{{2}})|[{U}][{LA}]+[-{SOFT}]$)")
 ABBREV = (r'(?!(?:AFŽ|NOB|MOB|NOR|NOV|KPJ|KIM|KPH|SKOJ|JNA|OZN|OZNA|AVNOJ|ZAVNOBiH|SSSR|NOO|POJ|SUBNOR|UDB|UDBA|SFRJ|FNRJ'
           r'|CK|OK|SK|KK|MK|NDH)\b)')
-# SURNAME [Father] GIVEN, or SURNAME Father at the end of a line (the given name is on the next)
-START = re.compile(rf"^{ABBREV}{SURNAME}(?:\s+{FATHER}(?:\s+{FATHER})?(?:\s+[{UA}013](?:[{UA}'013]|\s|$)|\s*$)"
-                   rf"|\s+[{UA}013][{UA}'013]+)")
+# SURNAME [Father] GIVEN, or SURNAME Father at the end of a line (the given name is on the next); a title before the
+# given name, with a father or without: "DANON Salomona ing. MORIC", "SAVIĆ dr PAVLE", "NOJMAN dr LJUBICA"
+TITLE = r"(?:(?:dr\.?|ing\.)\s+)?"
+START = re.compile(rf"^{ABBREV}{SURNAME}(?:\s+{FATHER}(?:\s+{FATHER})?\s+{TITLE}[{UA}013](?:[{UA}'013]|\s|$)"
+                   rf"|\s+{FATHER}(?:\s+{FATHER})?\s*$|\s+{TITLE}[{UA}013][{UA}'013]+)")
 CAPS = re.compile(rf"^{EDGE}?[{UA}013][{UA}'013\-.]*$")
 # junk at the column's edge in place of (or before) the first letter: "3UDIĆ", "30SANĆIĆ", ")AKOVIĆ", "X)IDOŠ", "\NJIĆ"
 EDGE_JUNK = re.compile(rf"^(?:[A-Z]?[^\w\s(]{{1,2}}|\d{{1,2}}|[ìÌü]){{1,2}}\s?(?=[{UA}0])")
@@ -107,12 +132,27 @@ def prepare(lines: list[dict]) -> None:
         for ln in pl:
             if ln['y'] <= cut:
                 ln['drop'] = True
+    if lines and lines[0]['file'] in MEMOIRS:
+        drop_memoirs([ln for ln in lines if not ln.get('drop')])
+    skipping = False
+    for ln in lines:
+        if ln.get('drop'):
+            continue
+        if any(re.match(h, ln['text'].strip()) for h in SECTIONS.get(ln['file'], ())):
+            skipping = True
+        elif skipping and START.match(ln['text']) and re.search(rf'[,{L}]', ln['text']):
+            skipping = False
+        if skipping:
+            ln['drop'] = True
     name_open = False
     for ln in lines:
         if ln.get('drop'):
             continue
         t = re.sub(rf"(?<=[{LA}])'(?=[{U}])", ' ', ln['text'].strip())      # "Adama'MIRKO"
         t = re.sub(rf"^(\W*\d)0(?=[{U}])", r'\1O', t)                         # "30SNIĆ": the 0 is an O
+        head = re.match(rf"^[{UA}][{UA}.]*[{UA}]", t)                          # "STO.TČIĆ", "BI.IELIĆ": a J read as .T, .I
+        if head and '.' in head.group(0):
+            t = re.sub(rf"(?<=[{UA}])\.[TI](?=[{UA}])", 'J', head.group(0)) + t[head.end():]
         jm = EDGE_JUNK.match(t)
         if jm and not START.match(t) and START.match(EDGE + re.sub('^0', 'O', t[jm.end():])):
             t = EDGE + re.sub('^0', 'O', t[jm.end():])
@@ -127,6 +167,57 @@ def prepare(lines: list[dict]) -> None:
             elif re.search(rf'[{UA}{LA}]-$', t):
                 t = t[:-1] + SOFT                                # the name runs on to the next line
         ln['text'] = t
+
+
+def drop_memoirs(lines: list[dict]) -> None:
+    """Drop the memoirs set between the entries: a run of lines that are neither an entry's first line nor its
+    continuation, from the end of an entry to the start of the next, if the run has a centred heading or an author's
+    name set to the right. A run without one is kept (an entry line the scan placed oddly)."""
+    col, prev = 0, None
+    for ln in lines:                                   # reading order: the left column, then the right, page by page
+        if prev and (ln['page'] != prev['page'] or ln['y'] < prev['y'] - 50):
+            col = 0 if ln['page'] != prev['page'] else col + 1
+        ln['col'] = col
+        prev = ln
+
+    def is_entry(ln):
+        return bool(START.match(ln['text'])) and bool(re.search(rf'[,{L}]', ln['text']))
+
+    def far(r):
+        """a heading or an author's name: well right of the column's edge, and words, not a scrap the scan left"""
+        return (r['x'] - edge.get((r['page'], r['col']), r['x']) > 30
+                and bool(re.search(rf'[{UA}{LA}]{{2,}}\s+[{UA}{LA}]{{2,}}|^[{UA}]{{4,}}', r['text'].strip())))
+
+    lines = [ln for ln in lines if len(ln['text'].strip()) > 2]        # "t", "-", ",": the other column's edge
+
+    edges = defaultdict(list)                          # where entries start, per page and column
+    for ln in lines:
+        if is_entry(ln):
+            edges[ln['page'], ln['col']].append(ln['x'])
+    edge = {k: sorted(v)[len(v) // 2] for k, v in edges.items()}
+    offsets = [ln['x'] - edge[ln['page'], ln['col']] for ln in lines
+               if (ln['page'], ln['col']) in edge and 7 < ln['x'] - edge[ln['page'], ln['col']] < 12]
+    hang = sorted(offsets)[len(offsets) // 2] if offsets else 9.6
+
+    run: list[dict] = []
+    for ln in lines + [None]:
+        if ln is not None and (ln['page'], ln['col']) not in edge:
+            # a column where no entry starts: its first line continues the entry before it (an entry's next line,
+            # hang pt in) or, inside a memoir, the memoir (its lines stand about 5 pt in)
+            edge[ln['page'], ln['col']] = ln['x'] - (5.0 if run else hang)
+        off = ln['x'] - edge[ln['page'], ln['col']] if ln is not None else 0
+        if ln is None or (is_entry(ln) and abs(off) < 2.5):
+            if run and any(far(r) for r in run):
+                for r in run:
+                    r['drop'] = True
+            run = []
+        elif abs(off - hang) < 1.6 and not run:
+            continue                                   # an entry's next line
+        elif abs(off) > 1.6 or run:
+            if run and abs(off - hang) < 1.6 and not any(far(r) for r in run):
+                run = []                               # back in an entry: what came before was no memoir
+            else:
+                run.append(ln)
 
 
 def keep(ln: dict) -> bool:
@@ -172,8 +263,17 @@ def fix_caps(t: str) -> str:
     return t.replace('1', 'I').replace('3', 'E').replace('0', 'O')
 
 
+FOREIGN = re.compile(rf"^((?:{CAPW}\s+)*{CAPW})\s*\(([{U}][{LA}]+(?:\s+[{U}][{LA}]+)+)\)\s*,?\s*(.*)$")
+
+
 def parse_entry(text: str) -> dict:
     text = text.replace(SOFT + ' ', '').replace(SOFT, '').replace(HOLD, '')
+    # the British mission: "DIKIN VILIAM (Deakin Frederick William), šef misije": the name as the book spells it, no
+    # father, and the name in English kept at the head of the entry
+    foreign = FOREIGN.match(text)
+    if foreign:
+        words = [fix_caps(w) for w in foreign.group(1).split()]
+        return _record(words[0], ' '.join(words[1:]), '', f'{foreign.group(2)}; {foreign.group(3).strip()}')
     toks, bio, _ = split_name(text)
     toks = [t.strip(',') for t in toks if t.strip(',')]
     fat = [i for i, t in enumerate(toks)
@@ -409,7 +509,7 @@ def run(code: int) -> None:
 
 if __name__ == '__main__':
     args = sys.argv[1:] or ['new']
-    codes = NEW if args == ['new'] else [int(a) for a in args]
+    codes = NEW if args == ['new'] else STAFFS if args == ['staffs'] else [int(a) for a in args]
     name_counts()
     name_reference()
     for c in codes:

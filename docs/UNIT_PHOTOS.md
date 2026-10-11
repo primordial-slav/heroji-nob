@@ -126,3 +126,4 @@ These units keep their current image (the book's first page, or a photo flagged 
 | Mačvanski (Podrinski) NOP odred | The gallery has only a funeral (14189) and a portrait (14307); the book is a text on znaci.org, without photos. The card shows the list's page. |
 | 3. primorsko-goranska brigada | Nothing in the znaci.org gallery names the brigade, and its book (00001/122) prints only maps and documents. |
 | 16. banijska brigada | Nothing in the znaci.org gallery names the unit; its book hasn't been checked (`--book`). |
+| Vrhovni štab NOV i POJ, 1. and 2. proleterska, 3. udarna and 7. banijska divizija, Centralna bolnica | Added 2026-10-11 with the chapter's first page as the card; the gallery has photos of the Vrhovni štab and the Central Hospital at the Sutjeska, not yet searched (`--candidates`, which downloads the gallery's images). |

@@ -242,6 +242,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev Posavskega partizanskega odreda leta 1941: poveljstvo, bolnišnica in bataljoni, s podatki o vsakem (str. 565–742)',
     '51-divizija':
       'Borci 51. vojvodinske divizije, padli in pogrešani v bitki pri Batini novembra 1944: rojstvo, dolžnost, kje in kdaj so padli (str. 469–501)',
+    'borci-sutjeske-vrhovni-stab':
+      'Imenski seznam borcev s Sutjeske: vsi pripadniki Vrhovnega štaba, njegovih služb, Spremljevalnega bataljona in britanske vojaške misije v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-1-proleterska-divizija':
+      'Imenski seznam borcev s Sutjeske: štab divizije z njegovimi službami in spremljevalnimi enotami v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-2-proleterska-divizija':
+      'Imenski seznam borcev s Sutjeske: štab divizije z njegovimi službami in spremljevalnimi enotami v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-3-udarna-divizija':
+      'Imenski seznam borcev s Sutjeske: štab divizije z njegovimi službami in spremljevalnimi enotami v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-7-banijska-divizija':
+      'Imenski seznam borcev s Sutjeske: štab divizije z njegovimi službami in spremljevalnimi enotami v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'borci-sutjeske-centralna-bolnica':
+      'Imenski seznam borcev s Sutjeske: osebje Centralne bolnišnice in ranjenci, katerih enote ni bilo mogoče ugotoviti, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -473,6 +485,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на Посавскиот партизански одред во 1941: команда, болница и баталјони, со податоци за секого (стр. 565–742)',
     '51-divizija':
       'Борците на 51. војводинска дивизија загинати и исчезнати во Батинската битка, ноември 1944: раѓање, должност, каде и кога загинале (стр. 469–501)',
+    'borci-sutjeske-vrhovni-stab':
+      'Поименичен список на борците од Сутјеска: сите припадници на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-1-proleterska-divizija':
+      'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-2-proleterska-divizija':
+      'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-3-udarna-divizija':
+      'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-7-banijska-divizija':
+      'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
+    'borci-sutjeske-centralna-bolnica':
+      'Поименичен список на борците од Сутјеска: персоналот на Централната болница и ранетите чија единица не можела да се утврди, со податоци за секого и што било со него до крајот на војната.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -703,6 +727,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters of the Posavina Partisan Detachment in 1941: command, hospital and battalions, with details of each (pp. 565–742)',
     '51-divizija':
       'The 51st Vojvodina Division’s fallen and missing in the Battle of Batina, November 1944: birth, duty, where and when they fell (pp. 469–501)',
+    'borci-sutjeske-vrhovni-stab':
+      'The roll of the Sutjeska: every member of the Supreme Headquarters, its services, the Escort Battalion and the British military mission in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-1-proleterska-divizija':
+      'The roll of the Sutjeska: the division staff, its services and escort units in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-2-proleterska-divizija':
+      'The roll of the Sutjeska: the division staff, its services and escort units in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-3-udarna-divizija':
+      'The roll of the Sutjeska: the division staff, its services and escort units in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-7-banijska-divizija':
+      'The roll of the Sutjeska: the division staff, its services and escort units in the battle, with details of each and what became of them by the end of the war.',
+    'borci-sutjeske-centralna-bolnica':
+      'The roll of the Sutjeska: the Central Hospital’s staff, and wounded whose own unit could not be established, with details of each and what became of them by the end of the war.',
   },
 }
 
