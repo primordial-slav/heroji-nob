@@ -12,7 +12,9 @@ its column. It stops before:
   - the start of another soldier on the same page (from the unit's own records),
   - a line that starts a new entry by the book's indentation, for entries the
     data doesn't know about: back at the first line's x where continuation
-    lines are indented (hanging indent, numbered entries), or indented like the
+    lines are indented (hanging indent, numbered entries; at the x where the
+    column's known entries start, if the first line starts right of it, as
+    where a scan cut or garbled its first letters), or indented like the
     first line where only first lines are (Cyrillic books, 6. krajiška's
     appendix), after a line that ends a sentence. The style is measured per
     book and page, from the lines that follow known entry starts; books set
@@ -351,6 +353,11 @@ ONE_LINE_ENTRIES = {
 }
 
 
+# Pages whose text layer puts part of the page below its bottom edge, by how much (pt) those lines lie below where
+# the scan shows them: 6. krajiška p. 10, whose lower block (Čamber to Ćanković) the text layer sets 385.2 pt too low
+TEXT_SHIFT = {('6-krajiska.pdf', 10): -385.2}
+
+
 def _find_line(page: dict, x: float, y: float):
     """(column, line index) of the line an entry starting at (x, y) begins on, or
     None. The stored x can sit on a scan speck left of the name, so it only
@@ -429,11 +436,16 @@ def _style(indent: float) -> str:
 SENTENCE_END = re.compile(r"""[.!?][)\]"»“”*'’]*\s*$""")
 
 
-def _starts_entry(ln: dict, first: dict, layout: dict, prev: dict) -> bool:
-    """Does ln, the line after prev, begin a new entry, judged by the book's indentation?"""
+def _starts_entry(ln: dict, first: dict, layout: dict, prev: dict, start_x: float | None = None) -> bool:
+    """Does ln, the line after prev, begin a new entry, judged by the book's indentation? start_x is where the
+    column's entries start (hanging indent): an entry whose first line starts right of it by more than half an
+    indent (a scan that cuts or garbles the first letters, Borci Sutjeske) goes on as long as its lines start right
+    of the others' starts. layout['col_indent'] is the column's own indent where it is clearly smaller."""
     half = abs(layout['indent']) / 2
     if layout['style'] == 'hanging':
-        return ln['x0'] < first['x0'] + half
+        half = abs(layout.get('col_indent') or layout['indent']) / 2
+        left = first['x0'] if start_x is None or first['x0'] <= start_x + half else start_x
+        return ln['x0'] < left + half
     if layout['style'] == 'first_line':
         if ln['x0'] <= first['x0'] - half:
             return False
@@ -449,6 +461,9 @@ def entry_lines(col: list[dict], li: int, starts: set, layout: dict, one_line: b
     """The lines of the entry that begins at col[li], and why it ends there:
     'next' (a known entry start), 'one_line', 'gap', 'indent' or 'end' (of the column)."""
     first = col[li]
+    # where the column's entries start: the median of its known starts (three at least)
+    xs = sorted(col[lj]['x0'] for lj in starts)
+    start_x = xs[len(xs) // 2] if len(xs) >= 3 else None
     lines = [first]
     for lj in range(li + 1, len(col)):
         ln, prev = col[lj], lines[-1]
@@ -465,7 +480,7 @@ def entry_lines(col: list[dict], li: int, starts: set, layout: dict, one_line: b
             return lines, 'one_line'
         if step > (layout['first_gap'] if len(lines) == 1 else layout['gap']):
             return lines, 'gap'
-        if _starts_entry(ln, first, layout, prev):
+        if _starts_entry(ln, first, layout, prev, start_x):
             return lines, 'indent'
         lines.append(ln)
     return lines, 'end'
@@ -518,6 +533,13 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
     cache.prefetch({f: set(pages) for f, pages in by_page.items()})
     for pdf_file, recs_by_page in by_page.items():
         pages = cache.pages(pdf_file, list(recs_by_page))
+        for pno, page in pages.items():
+            dy = TEXT_SHIFT.get((pdf_file, pno))
+            if page and dy:
+                # the text layer's lines that lie below the page belong where the scan shows them
+                pages[pno] = dict(page, columns=[[dict(ln, top=ln['top'] + dy, bottom=ln['bottom'] + dy)
+                                                  if ln['top'] > page['height'] else ln for ln in col]
+                                                 for col in page['columns']])
         # the line each record starts on, and every page's known entry starts
         at, starts = {}, defaultdict(set)
         for pno, recs in recs_by_page.items():
@@ -555,6 +577,18 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
                     left = min(col[lj]['x0'] for lj in col_starts)
                     if 0.75 < (col[li]['x0'] - left) / layout['indent'] < 1.5:
                         entry_layout = dict(layout, style='flush')
+                    else:
+                        # the column's own indent, where it is clearly smaller than the page's (Borci Sutjeske,
+                        # whose scans cut the left column's edge, indents it by 3 pt or not at all, the right by 10)
+                        shifts = [col[lj + 1]['x0'] - col[lj]['x0'] for lj in col_starts
+                                  if lj + 1 < len(col) and lj + 1 not in col_starts
+                                  and 0.5 * layout['pitch'] < col[lj + 1]['top'] - col[lj]['top'] < 1.6 * layout['pitch']]
+                        if len(shifts) >= 3 and abs(median(shifts)) < 1.5:
+                            # a column whose lines all start level (a scan cut at that edge): only the known
+                            # starts and gaps tell its entries apart
+                            entry_layout = dict(layout, style='flush')
+                        elif len(shifts) >= 3 and median(shifts) < 0.75 * layout['indent']:
+                            entry_layout = dict(layout, col_indent=median(shifts))
                 lines, why = entry_lines(col, li, col_starts, entry_layout, pno in one_line_pages)
                 _set_box(s, page, min(ln['x0'] for ln in lines), max(ln['x1'] for ln in lines),
                          max(ln['bottom'] for ln in lines))
