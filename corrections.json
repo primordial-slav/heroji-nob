@@ -976426,5 +976426,102 @@
     "merge_id": "0005020448",
     "merge_name": "Mirković Jagoš",
     "reason": "Mirković Jagoš, 1923, Glisnica (\"Glienica\"), Pljevlja, đak gimnazije, kandidat za člana KPJ: the formation list reprinted in the memoir book, word for word the monograph's entry (63315 wanted to merge his Borci Sutjeske entry into it, but that entry is this record's)"
+  },
+  {
+    "id": 99242,
+    "action": "edit",
+    "soldier_id": "0010203814",
+    "fields": {
+      "additional_info": "rođ. 1915, Donje Vrtoče, T. Drvar, radnik, Srbin, u NOB 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 1. 9. 1942. do 1. 2. 1943, član KPJ 1943, zamenik komandanta diviziona."
+    },
+    "reason": "The next entry, \"PECANAC Sime Đuro, rođ. 1922, T. Drvar, ... poginuo 1943. na Paunovcu kod Ključa\", was glued to the end of this one (3-krajiska-spisak-boraca.pdf p. 303); its death had been read as his, and the link gave it to the 1. proleterska divizija's Pećanac Todora Đuro"
+  },
+  {
+    "id": 99243,
+    "action": "add",
+    "soldier_id": "0010203814",
+    "new_id": "0010206175",
+    "record": {
+      "last_name": "Pećanac",
+      "middle_name": "Sime",
+      "fathers_name": "Sima",
+      "first_name": "Đuro",
+      "additional_info": "rođ. 1922, T. Drvar, radnik, Srbin, u NOB od 1941, borac, poginuo 1943. na Paunovcu kod Ključa.",
+      "birth_year": "1922",
+      "pdf_file": "3-krajiska-spisak-boraca.pdf",
+      "pdf_page": 303,
+      "pdf_y": 378.2,
+      "pdf_x": 48.7
+    },
+    "reason": "Missing entry of the roster (p. 303, \"PECANAC Sime Đuro\"): it was glued into 0010203814's text"
+  },
+  {
+    "id": 99244,
+    "action": "edit",
+    "soldier_id": "0113000116",
+    "fields": {
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "His own entry has no death: \"Poginuo 1943, na Paunovcu kod Ključa\" was copied through the link to 0010203814, from Pećanac Sime Đuro's entry glued into that one"
+  },
+  {
+    "id": 99245,
+    "action": "merge",
+    "soldier_id": "0010001367",
+    "merge_id": "0010206175",
+    "merge_name": "Pećanac Sime Đuro",
+    "reason": "Same soldier in 3-krajiska-proleterska.pdf and 3-krajiska-spisak-boraca.pdf; same father, birth year, birthplace, death place (Paunovac kod Ključa; the roster says 1943, the list of the fallen August 1942). The roster entry was recovered from Pećanac Tođora Đuro's text"
+  },
+  {
+    "id": 99246,
+    "action": "edit",
+    "soldier_id": "0001003974",
+    "fields": {
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Read from text glued into a Borci Sutjeske entry (since split off, 681b79c): the death came from the entry glued to the end of his merged entry 0001100429; neither of his entries says he fell"
+  },
+  {
+    "id": 99247,
+    "action": "edit",
+    "soldier_id": "0007004152",
+    "fields": {
+      "rank": ""
+    },
+    "reason": "Read from text glued into a Borci Sutjeske entry (since split off, 681b79c): \"zamenik političkog komesara bataljona\" came through the link to 0036100925, from the next man's entry glued into it"
+  },
+  {
+    "id": 99248,
+    "action": "edit",
+    "soldier_id": "0036001558",
+    "fields": {
+      "rank": "",
+      "unit_detail": ""
+    },
+    "reason": "Read from text glued into a Borci Sutjeske entry (since split off, 681b79c): \"bolničarka\", \"2. bataljon\" came from the woman's entry glued to the end of his merged entry 0036100943"
+  },
+  {
+    "id": 99249,
+    "action": "edit",
+    "soldier_id": "0007004894",
+    "fields": {
+      "unit_detail": ""
+    },
+    "reason": "Read from text glued into a Borci Sutjeske entry (since split off, 681b79c): \"1. četa, 1. bataljon\" came from the entry glued to the end of his merged entry 0007101278 (his own: \"borac 1. bataljona\")"
+  },
+  {
+    "id": 99250,
+    "action": "edit",
+    "soldier_id": "0010203814",
+    "fields": {
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "His entry has no death: \"poginuo 1943. na Paunovcu kod Ključa\" was Pećanac Sime Đuro's, glued to the end of it (split off by 99242-99243)"
   }
 ]
