@@ -33,6 +33,9 @@ export function entriesOf(soldier: Soldier): SoldierSource[] {
 
 export const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file != null
 
+/** A book in the Poreklo digital library (biblioteka.poreklo.rs): scanned there, open to its members only */
+export const isPoreklo = (url?: string) => !!url?.startsWith('https://biblioteka.poreklo.rs/')
+
 /** The book (or web page) an entry was printed in, as the Sources page lists it */
 export function sourceOf(entry: SoldierSource) {
   return entry.pdf_file
@@ -75,7 +78,7 @@ export function citation(soldier: Soldier, lang: Lang): string {
   const where = source
     ? [source.title, sourceAuthor(source, lang)].filter(Boolean).join(', ')
     : sourceTitle(soldier)
-  return messagesFor(lang).record.citation(soldier.full_name, where, soldier.pdf_page ?? null, soldier.soldier_id)
+  return messagesFor(lang).record.citation(soldier.full_name, where, soldier.pdf_page ?? soldier.source_page ?? null, soldier.soldier_id)
 }
 
 // "narodni heroj", "proglašen za narodnog heroja", "Nosilac Ordena narodnog heroja"; not "predložen za narodnog heroja"

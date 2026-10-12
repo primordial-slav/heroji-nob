@@ -447,6 +447,16 @@ UNITS = {
              "Jugoslavije 1941, knj. I prints it as the Mačva partisans in Bogatić; the gallery's print is the better one. "
              "Otherwise the gallery has only a funeral (14189) and a portrait (14307), and the odred's book is a web text whose "
              "only pictures are maps."),
+    "3-licka-brigada": dict(
+        name="3. lička proleterska brigada", tags=[],
+        caption=r"(?<!\d)(?:3\.|III\.?|tre[cć]\w*)\s+li[cč]k\w*\s+(?:proletersk\w*\s+)?(?:no\s+|nou\s+|udarn\w*\s+)?brigad"
+                r"|(?<!\d)9\.\s+(?:partizansk\w*\s+)?brigad\w*\s+hrvatsk", photo=13884,
+        note="The gallery's only photo of the brigade: fighters of its 3rd battalion in the trenches of the Srem front, "
+             "10 February 1945. Its book (Šijan, Treća lička brigada, 1970) is in the Poreklo library, not on znaci.org."),
+    "pozarevacki-odred": dict(
+        name="Požarevački NOP odred", tags=[],
+        caption=r"po[zž]arevač?k\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred|po[zž]arevač?k\w*\s+partizan"
+                r"|mlavsk\w*\s+(?:[cč]et|odred)|zvi[sš]k\w*\s+(?:[cč]et|odred)|majdanpe[cč]k\w*\s+(?:[cč]et|odred)", photo=None),
     "3-banijska-brigada": dict(
         name="3. banijska brigada", tags=[],
         caption=nth(3, r"banijsk"), photo=None,

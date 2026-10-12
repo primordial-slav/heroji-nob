@@ -132,6 +132,8 @@ BRIGADE_CODES = {
     115: '3. udarna divizija',
     116: '7. banijska divizija',
     117: 'Centralna bolnica',
+    118: '3. Lička',
+    119: 'Požarevački odred',
     # Add new brigades here with next available code
 }
 

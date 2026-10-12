@@ -421,6 +421,14 @@ export const formation: Record<string, Formation> = {
     date: '1941-11', place: 'zapadna Srbija', source: 'https://sh.wikipedia.org/wiki/Centralna_bolnica_NOVJ',
     note: 'sh.wikipedia: „Centralna bolnica je oformljena novembra 1941. godine u zapadnoj Srbiji“, za vreme Prve neprijateljske ofanzive.',
   },
+  '3-licka-brigada': {
+    date: '1942-09-09', place: 'Mogorić (Gospić)', source: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=21',
+    note: 'Šijan, Treća lička brigada (str. 16–17): „Ustalilo se mišljenje da je 9. brigada Hrvatske formirana 9. septembra 1942. godine“, „u selu Mogoriću“; dokumenta o tom danu nema, uzet je po sećanju preživelih boraca i starešina.',
+  },
+  'pozarevacki-odred': {
+    date: '1941-08', place: 'Požarevački okrug', source: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=46',
+    note: 'Popović, Požarevački NOP odred (str. 34, 37): partizanske jedinice okruga obrazovane su u avgustu 1941, a štab Požarevačkog partizanskog odreda u septembru 1941.',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

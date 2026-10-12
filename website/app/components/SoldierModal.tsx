@@ -4,7 +4,7 @@ import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
@@ -295,7 +295,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
                       {/* the other unit's name, unless the book's title already starts with it */}
                       {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
                       {sourceTitle(e)}
-                      {e.pdf_page != null && `, ${t.record.page(e.pdf_page)}`}
+                      {(e.pdf_page ?? e.source_page) != null && `, ${t.record.page((e.pdf_page ?? e.source_page)!)}`}
                       {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
                     </p>
                     {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
@@ -325,7 +325,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
             {!page && soldier.source_url && (
               <p className="modal-source-note">
                 <RichText
-                  text={t.record.noScan}
+                  text={isPoreklo(soldier.source_url) ? t.record.noScanPoreklo(soldier.source_page ?? null) : t.record.noScan}
                   render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>}
                 />
               </p>

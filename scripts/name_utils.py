@@ -1080,6 +1080,24 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    118: {
+        'name': '3. Lička',
+        'json_file': '3-licka-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ZORAJA N. GLISO, iz Pavlovca, ...": the father's initial only
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
+    119: {
+        'name': 'Požarevački odred',
+        'json_file': 'pozarevacki-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АВРАМОВИЋ ЗДРАВКО, земљорадник, из Дољашнице, рођен 1921 ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

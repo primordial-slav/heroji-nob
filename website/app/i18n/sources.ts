@@ -254,6 +254,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Imenski seznam borcev s Sutjeske: štab divizije z njegovimi službami in spremljevalnimi enotami v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-centralna-bolnica':
       'Imenski seznam borcev s Sutjeske: osebje Centralne bolnišnice in ranjenci, katerih enote ni bilo mogoče ugotoviti, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    '3-licka':
+      'Seznam padlih, umrlih in pogrešanih borcev brigade ter njeni narodni heroji (str. 361–413). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'pozarevacki-odred':
+      'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -497,6 +501,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-centralna-bolnica':
       'Поименичен список на борците од Сутјеска: персоналот на Централната болница и ранетите чија единица не можела да се утврди, со податоци за секого и што било со него до крајот на војната.',
+    '3-licka':
+      'Список на загинатите, умрените и исчезнатите борци на бригадата и нејзините народни херои (стр. 361–413). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'pozarevacki-odred':
+      'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -739,6 +747,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the Sutjeska: the division staff, its services and escort units in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-centralna-bolnica':
       'The roll of the Sutjeska: the Central Hospital’s staff, and wounded whose own unit could not be established, with details of each and what became of them by the end of the war.',
+    '3-licka':
+      'The roll of the brigade’s fallen, dead and missing, and its People’s Heroes (pp. 361–413). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'pozarevacki-odred':
+      'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
   },
 }
 

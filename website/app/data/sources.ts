@@ -1277,5 +1277,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/borci-sutjeske-centralna-bolnica.jpg',
     brigadeName: 'Centralna bolnica',
     description: 'Prozivka boraca sa Sutjeske: osoblje Centralne bolnice i ranjenici čija se jedinica nije mogla utvrditi, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: '3-licka',
+    title: 'Treća lička brigada',
+    author: 'Milan Šijan',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287',
+    thumbnail: '/images/pdf-thumbs/3-licka.jpg',
+    brigadeName: '3. lička proleterska brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca brigade i njeni narodni heroji (str. 361–413). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'pozarevacki-odred',
+    title: 'Požarevački narodnooslobodilački partizanski odred',
+    author: 'Strahinja Popović',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203',
+    thumbnail: '/images/pdf-thumbs/pozarevacki-odred.jpg',
+    brigadeName: 'Požarevački NOP odred',
+    description: 'Popis boraca odreda od 1941. do oktobra 1944, s podacima o svakom (str. 238–307; priredio Miodrag Stojanović Kole). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]

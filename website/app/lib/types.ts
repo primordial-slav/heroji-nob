@@ -13,6 +13,7 @@ export interface SoldierSource {
   pdf_x_left?: number
   pdf_rects?: number[][]
   source_url?: string
+  source_page?: number    // the book's page, for a source without a scan on the site (the Poreklo library's books)
   unit_file?: string      // set when the entry is another unit's: that unit's data file (the soldier served in both)
 }
 
@@ -61,8 +62,10 @@ export interface Soldier {
   pdf_x_left?: number     // left edge, only where it isn't pdf_x (e.g. only the first line is indented)
   pdf_rects?: number[][]  // a name in a run-on list that takes two lines: [left, top, right, bottom] of each
   pdf_file?: string       // Which PDF file (e.g., "prva-proleterska-2.pdf")
-  // A source without a scan (a list published as a web page): where the entry can be read
+  // A source without a scan (a list published as a web page, or a book in the Poreklo library): where the entry can be
+  // read, and the book's page
   source_url?: string
+  source_page?: number
   // The soldier's entries in the unit's other books (or lists); fields above that this entry leaves empty were
   // filled in from them
   other_sources?: SoldierSource[]

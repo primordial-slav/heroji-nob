@@ -150,6 +150,9 @@ export const sr = {
     loadingPage: 'Učitavanje strane…',
     source: 'Izvor',
     noScan: 'Za ovaj spisak nema skenirane knjige: objavljen je kao tekst na [znaci.org].',
+    /** A book scanned in the Poreklo library, which only its members can open */
+    noScanPoreklo: (page: number | null) =>
+      `Knjiga je skenirana u Digitalnoj biblioteci Porekla: [${page != null ? `strana ${page}` : 'otvori knjigu'}]. Otvaraju je samo članovi Porekla.`,
     steps: 'Susedni zapisi u spisku',
     previous: 'Prethodni',
     next: 'Sledeći',

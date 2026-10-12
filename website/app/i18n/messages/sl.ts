@@ -141,6 +141,8 @@ export const sl: Messages = {
     loadingPage: `Nalaganje strani${dots}`,
     source: 'Vir',
     noScan: 'Za ta seznam ni skenirane knjige: objavljen je kot besedilo na [znaci.org].',
+    noScanPoreklo: (page: number | null) =>
+      `Knjiga je skenirana v digitalni knjižnici Poreklo: [${page != null ? `stran ${page}` : 'odpri knjigo'}]. Odprejo jo lahko le člani Poreklo.`,
     steps: 'Sosednji zapisi na seznamu',
     previous: 'Prejšnji',
     next: 'Naslednji',

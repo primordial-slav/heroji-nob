@@ -1179,6 +1179,26 @@ export const units: Unit[] = [
     soldierCount: 698,
     dataFile: '/centralna-bolnica-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-centralna-bolnica.pdf']
+  },
+  {
+    id: '3-licka-brigada',
+    name: '3. lička proleterska brigada',
+    nameEn: '3rd Lika Proletarian Brigade',
+    description: 'Formirana 9. septembra 1942. u Mogoriću kod Gospića kao 9. brigada Hrvatske. Poginuli, umrli i nestali borci brigade i njeni narodni heroji.',
+    image: '/images/3-licka-brigada.jpg',
+    soldierCount: 1002,
+    dataFile: '/3-licka-soldiers.json',
+    pdfFiles: []
+  },
+  {
+    id: 'pozarevacki-odred',
+    name: 'Požarevački NOP odred',
+    nameEn: 'Požarevac Partisan Detachment',
+    description: 'Formiran u avgustu 1941. u Požarevačkom okrugu. Svi borci odreda od 1941. do oktobra 1944, kad je ušao u NOVJ.',
+    image: '/images/pdf-thumbs/pozarevacki-odred.jpg',
+    soldierCount: 1339,
+    dataFile: '/pozarevacki-odred-soldiers.json',
+    pdfFiles: []
   }
   // Add more units here as you get more data
 ]

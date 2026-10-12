@@ -138,6 +138,8 @@ export const en: Messages = {
     loadingPage: 'Loading the page…',
     source: 'Source',
     noScan: 'There is no scanned book for this roll: it was published as text on [znaci.org].',
+    noScanPoreklo: (page: number | null) =>
+      `The book is scanned in the Poreklo digital library: [${page != null ? `page ${page}` : 'open the book'}]. Only Poreklo members can open it.`,
     steps: 'Neighbouring records on the roll',
     previous: 'Previous',
     next: 'Next',

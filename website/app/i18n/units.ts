@@ -569,6 +569,16 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena novembra 1941 v zahodni Srbiji. Osebje bolnišnice in ranjenci, katerih enote ni bilo mogoče ugotoviti, v bitki na Sutjeski, maja in junija 1943.',
   },
+  '3-licka-brigada': {
+    name: '3. liška proletarska brigada',
+    description:
+      'Ustanovljena 9. septembra 1942 v Mogoriću pri Gospiću kot 9. hrvaška brigada. Padli, umrli in pogrešani borci brigade ter njeni narodni heroji.',
+  },
+  'pozarevacki-odred': {
+    name: 'Požarevški partizanski odred',
+    description:
+      'Ustanovljen avgusta 1941 v požarevškem okrožju. Vsi borci odreda od 1941 do oktobra 1944, ko je prešel v NOVJ.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1129,6 +1139,16 @@ const mk: Record<string, UnitText> = {
     name: 'Централна болница',
     description:
       'Формирана во ноември 1941 во западна Србија. Персоналот на болницата и ранетите чија единица не можела да се утврди, во битката на Сутјеска, мај и јуни 1943.',
+  },
+  '3-licka-brigada': {
+    name: '3. личка пролетерска бригада',
+    description:
+      'Формирана на 9 септември 1942 во Могориќ кај Госпиќ како 9. хрватска бригада. Загинатите, умрените и исчезнатите борци на бригадата и нејзините народни херои.',
+  },
+  'pozarevacki-odred': {
+    name: 'Пожаревачки партизански одред',
+    description:
+      'Формиран во август 1941 во Пожаревачкиот округ. Сите борци на одредот од 1941 до октомври 1944, кога влезе во НОВЈ.',
   },
 }
 
@@ -1692,6 +1712,16 @@ const en: Record<string, UnitText> = {
     name: 'Central Hospital',
     description:
       'Formed in November 1941 in western Serbia. The hospital’s staff, and wounded whose own unit could not be established, in the Battle of the Sutjeska, May and June 1943.',
+  },
+  '3-licka-brigada': {
+    name: '3rd Lika Proletarian Brigade',
+    description:
+      'Formed on 9 September 1942 at Mogorić near Gospić as the 9th Croatian Brigade. Its fallen, dead and missing fighters, and its People’s Heroes.',
+  },
+  'pozarevacki-odred': {
+    name: 'Požarevac Partisan Detachment',
+    description:
+      'Formed in August 1941 in the Požarevac district. All its fighters from 1941 to October 1944, when it joined the Yugoslav Army.',
   },
 }
 

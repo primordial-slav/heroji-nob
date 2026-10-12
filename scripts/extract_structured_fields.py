@@ -286,12 +286,15 @@ class Extractor:
         if code == 51:
             # 3. makedonska: where he came from, then the year: "iz s. Nikuline, rođen 1922. god., poginuo ..."
             t = re.sub(r',?\s*\brođen[a]?\s+[^,]*', '', t)
+        if code == 119:
+            # Požarevački odred: "iz Smoljinca" is where he came from; only "rođen 1910. g. u Kučevu" says where he was born
+            t = re.sub(r'\b([Rr])ođ\.', r'\1ođen', t)
         # a function printed before "rođen" (Treća proleterska, 5. kozaračka): "desetar 3. desetine, rođen 1920, ..."
         m = re.search(r'\b[Rr]ođen[a]?\b', t)
         head = t[:m.start()] if m else ''
         if m:
             t = t[m.start():]
-        elif code == 15:
+        elif code in (15, 119):
             t = ''                                                        # 1. šumadijska always says "Rođen ..."
         elif code == 35 and ',' not in t:
             t = ''                                                        # the 32. division's roster: a nickname at most
@@ -319,7 +322,7 @@ class Extractor:
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
         # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
-        from_place = code in (2, 31, 50, 51, 58, 73, 75, 79) and re.match(rf'^iz\s+[{U}]', t) is not None
+        from_place = code in (2, 31, 50, 51, 58, 73, 75, 79, 118) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
             t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
@@ -770,6 +773,9 @@ class Extractor:
         rank_text = (head + ' ' if head else '') + text
         if code in DUTY_BEFORE_WAR_END or duty_first:
             rank_text = re.split(r'\bkrajem rata\b', rank_text)[0]
+        if code == 118:
+            # 3. lička's narodni heroji: "Danas je general-major JNA" is the rank after the war
+            rank_text = re.sub(r'\b(?:Danas|Sada)\s+je\b[^.]*\.', ' ', rank_text)
         rank = self.ranks(rank_text)
         if rank:
             out['rank'] = rank
