@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, type ReactNode } from 'react'
+import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { SoldierMedals } from './Medal'
@@ -32,11 +32,13 @@ interface SoldierResultsProps {
    * and paged as the whole list, and the other pages wait for the rest
    */
   total?: number
+  /** Results that are only similar to the search (useFuseSearch), listed after the others under "Slični zapisi" */
+  near?: ReadonlySet<Soldier>
 }
 
 const PAGE_SIZES = [FIRST_PAGE, 100, 200]
 
-export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, total }: SoldierResultsProps) {
+export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, total, near }: SoldierResultsProps) {
   const t = useT()
   const lang = useLang()
   const [page, setPage] = useState(1)
@@ -45,6 +47,8 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
   useEffect(() => setPage(1), [results])
 
   const count = total ?? results.length
+  // Where the similar results start, -1 if there are none
+  const firstNear = useMemo(() => (near?.size ? results.findIndex((soldier) => near.has(soldier)) : -1), [results, near])
   const partial = count > results.length
   const totalPages = Math.max(1, Math.ceil(count / perPage))
   const start = (page - 1) * perPage
@@ -66,7 +70,8 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
     <div>
       <div className="results-bar">
         <p className="results-count" aria-live="polite">
-          {t.found(count)}
+          {firstNear < 0 ? t.found(count) : firstNear === 0 ? t.results.noExact : t.found(firstNear)}
+          {firstNear >= 0 && <span> · {t.results.similar(count - firstNear, firstNear > 0)}</span>}
           {totalPages > 1 && <span> · {t.results.pageOf(page, totalPages)}</span>}
         </p>
         <div className="results-tools">
@@ -88,8 +93,15 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
       </div>
 
       <ul className="result-list">
-        {shown.map((soldier) => (
-          <li className="result" key={soldier.soldier_id}>
+        {shown.map((soldier, k) => (
+          <Fragment key={soldier.soldier_id}>
+          {start + k === firstNear && (
+            <li className="result-similar">
+              <span className="result-similar-title">{t.results.similarTitle}</span>
+              <span className="result-similar-note">{t.results.similarNote}</span>
+            </li>
+          )}
+          <li className="result">
             <button type="button" className="result-button" onClick={() => onSelect(soldier)}>
               <span className="result-text">
                 <span className="result-name"><SoldierName soldier={soldier} /></span>
@@ -106,6 +118,7 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
               <SoldierMedals soldier={soldier} look="gravira" />
             </button>
           </li>
+          </Fragment>
         ))}
       </ul>
 

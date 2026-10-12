@@ -77,6 +77,11 @@ export const en: Messages = {
     pages: 'Result pages',
     previous: 'Previous',
     next: 'Next',
+    noExact: 'No exact match',
+    similar: (x: number, more: boolean) =>
+      `${n(x)} ${more ? 'more ' : ''}similar ${plural('en', x, { one: 'record', other: 'records' })}`,
+    similarTitle: 'Similar records',
+    similarNote: 'A name or place spelled a little differently, or missing one of the words searched for.',
   },
 
   onThisDay: {

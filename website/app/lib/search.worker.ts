@@ -24,5 +24,5 @@ scope.onmessage = (event: MessageEvent<ToSearchWorker>) => {
     return
   }
   const hits: FromSearchWorker = searchSoldiers(index!, message.query, message.wholeWords)
-  scope.postMessage(hits, [hits.idx.buffer, hits.rank.buffer, hits.score.buffer])
+  scope.postMessage(hits, [hits.idx.buffer, hits.missed.buffer, hits.near.buffer, hits.score.buffer, hits.key.buffer, hits.key2.buffer])
 }
