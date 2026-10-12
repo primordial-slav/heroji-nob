@@ -976029,5 +976029,203 @@
     "link_id": "0043001479",
     "link_name": "Alajbegović-Prodanović Hasana Razija",
     "reason": "Same soldier in 19. Birčanska and 10. Hercegovačka; same father, birth year, birthplace. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99191,
+    "action": "delete",
+    "soldier_id": "0048012316",
+    "reason": "Not a soldier: \"Naroani Heroj Jugosaavije\" is the end of Zorić Nikole Milan (0048013777)'s entry (7-krajiska-spisak.pdf p. 71), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry"
+  },
+  {
+    "id": 99192,
+    "action": "edit",
+    "soldier_id": "0048013777",
+    "fields": {
+      "additional_info": "rođen 1912. D. Vrtoče, Titov Drvar. Srbin, radnik. U NOB-i od 1941. Član KPJ od 1941. Zamenik komandanta brigade. NARODNI HEROJ JUGOSLAVIJE. U ratu komandant 39. divizije."
+    },
+    "reason": "The end of his entry, split off as 0048012316 (\"NAROANI HEROJ JUGOSAAVIJE\" in the OCR), p. 71"
+  },
+  {
+    "id": 99193,
+    "action": "delete",
+    "soldier_id": "0048010998",
+    "reason": "Not a soldier: \"Heroj Jugoslavije\" is the end of Brkić Dane Rade (0048010421)'s entry (7-krajiska-spisak.pdf p. 24), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry"
+  },
+  {
+    "id": 99194,
+    "action": "edit",
+    "soldier_id": "0048010421",
+    "fields": {
+      "additional_info": "rođen 1913. Jelašinovci, Sanski Most. Srbin, šumski radnik. U NOB-i od 1941. Član KPJ od 1942. Zamenik komandanta 6. krajiške brigade. NARODNI HEROJ JUGOSLAVIJE. Komandant 7. krajiške brigade od oktobra 1944. do kraja rata."
+    },
+    "reason": "The end of his entry, split off as 0048010998, p. 24"
+  },
+  {
+    "id": 99195,
+    "action": "delete",
+    "soldier_id": "0048010999",
+    "reason": "Not a soldier: \"Heroj Jugoslavije\" is the end of Kasapović M Pero (0048011402)'s entry (7-krajiska-spisak.pdf p. 91), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry"
+  },
+  {
+    "id": 99196,
+    "action": "edit",
+    "soldier_id": "0048011402",
+    "fields": {
+      "additional_info": "rođen 1914. Ribnik, Ključ. Srbin, zemljoradnik. U NOB-i od 1941. Član KPJ. Zamenik komandanta 2. bataljona. NARODNI HEROJ JUGOSLAVIJE. U ratu komandant brigade."
+    },
+    "reason": "The end of his entry, split off as 0048010999 (\"V ratu\" in the OCR), p. 91"
+  },
+  {
+    "id": 99197,
+    "action": "delete",
+    "soldier_id": "0048010997",
+    "reason": "Not a soldier: \"Heroj Jugosaavije\" is the end of Kecman Jove Pero (0048011450, merged into 0048000364)'s entry (7-krajiska-spisak.pdf p. 96), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry"
+  },
+  {
+    "id": 99198,
+    "action": "edit",
+    "soldier_id": "0048011450",
+    "fields": {
+      "additional_info": "zvani Mukonja; rođen 1921. Bukovača, Bosanski Petrovac. Srbin, podoficir. U NOB-i od 1941. Član KPJ od juna 1942. Komandir 1. čete 3. bataljona. Učesnik bitke na Neretvi i Sutjesci. NARODNI HEROJ JUGOSLAVIJE. POGINUO 9. jula 1943. na planini Devetak u Istočnoj Bosni na dužnosti komandanta bataljona."
+    },
+    "reason": "The end of his entry, split off as 0048010997 (\"JUGOSAAVIJE\" in the OCR), p. 96"
+  },
+  {
+    "id": 99199,
+    "action": "delete",
+    "soldier_id": "0048012948",
+    "reason": "Not a soldier: \"Rodni Heroj Jugoslavije\" is the end of Marijanac Sime Rade (0048011964)'s entry (7-krajiska-spisak.pdf p. 124), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry"
+  },
+  {
+    "id": 99200,
+    "action": "edit",
+    "soldier_id": "0048011964",
+    "fields": {
+      "additional_info": "rođen 1916. Strojice, Šipovo. Srbin, geodeta. U NOB-i od 1941. Član KPJ od 1942. NARODNI HEROJ JUGOSLAVIJE. Prvi komandant brigade. Učesnik bitke na Neretvi i Sutjesci. POGINUO 4. jula 1943. kod sela Tareva, Tuzla."
+    },
+    "reason": "The end of his entry (\"NA-\" / \"RODNI HEROJ ...\"), split off as 0048012948, p. 124"
+  },
+  {
+    "id": 99201,
+    "action": "delete",
+    "soldier_id": "0048012952",
+    "reason": "Not a soldier: \"Roj Šosaavije\" is the end of Nikolajević Stevana Siniša (0048012342)'s entry (7-krajiska-spisak.pdf p. 144), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry"
+  },
+  {
+    "id": 99202,
+    "action": "edit",
+    "soldier_id": "0048012342",
+    "fields": {
+      "last_name": "Nikolajević",
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan",
+      "first_name": "Siniša",
+      "additional_info": "rođen 1914. u Pirotu. Srbin, art. poručnik jugoslovenske vojske. U NOB-i od 1941. Član KPJ od 1941. Zamjenik komandanta brigade. Učesnik bitke na Neretvi i Sutjesci. NARODNI HEROJ JUGOSLAVIJE. POGINUO 12. jula 1943. kod Šekovića u Istočnoj Bosni, kao načelnik štaba 17. istočnobosanske divizije."
+    },
+    "reason": "\"NIKOLA JEVIĆ Stevana SINIŠA\" read as Nikol A Jević; the end of his entry (\"NARODNI HE-\" / \"ROJ ŠOSAAVIJE\") split off as 0048012952; \"Neregvi\" = Neretvi, p. 144"
+  },
+  {
+    "id": 99203,
+    "action": "delete",
+    "soldier_id": "0048012951",
+    "reason": "Not a soldier: \"Roj Jugoslavije\" is the end of Ćup Đurina Milan (added as 0048014058)'s entry (7-krajiska-spisak.pdf p. 205), \"NARODNI HEROJ JUGOSLAVIJE\" at a line start read as a new entry; the next entry, Ćurguz Mile, glued to it is added as 0048014059"
+  },
+  {
+    "id": 99204,
+    "action": "edit",
+    "soldier_id": "0048012972",
+    "fields": {
+      "additional_info": "rođen 1919. D. Previja, Ključ. Srbin, zemljoradnik. U NOB-i od 1941. Član KPJ. Desetar 2. čete 2. bataljona. POGINUO 28. 1. 1943. u Ključu kao komesar čete."
+    },
+    "reason": "Glued entry: \"RUI1 Burina MILAN\" (Ćup Đurina Milan) split out as 0048014058, p. 205"
+  },
+  {
+    "id": 99205,
+    "action": "add",
+    "soldier_id": "0048012972",
+    "new_id": "0048014058",
+    "record": {
+      "last_name": "Ćup",
+      "middle_name": "Đurina",
+      "fathers_name": "Đurina",
+      "first_name": "Milan",
+      "additional_info": "rođen 1917. Vedro Polje, Bosanski Petrovac. Srbin, službenik. U NOB-i od 1941. Član KPJ od 1940. U ratu zamjenik komandanta brigade. POGINUO 27. 6. 1944. na Zec planini. NARODNI HEROJ JUGOSLAVIJE.",
+      "birth_year": "1917",
+      "pdf_file": "7-krajiska-spisak.pdf",
+      "pdf_page": 205,
+      "pdf_y": 226.7,
+      "pdf_x": 114.8
+    },
+    "reason": "Glued into 0048012972 (\"RUI1 Burina MILAN\", Ć read as R) and 0048012951 (the end of the entry, \"NAROLNI HE-\" / \"ROJ JUGOSLAVIJE.\"), p. 205; the surname from the alphabetical order (Ćulum, Ćup, Ćurguz) and 3. krajiška's Ćup Đurina Milan (0010002096: 1917, Vedro Polje)"
+  },
+  {
+    "id": 99206,
+    "action": "add",
+    "soldier_id": "0048014058",
+    "new_id": "0048014059",
+    "record": {
+      "last_name": "Ćurguz",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Mile",
+      "additional_info": "rođen 1926. Krnjeuša, Bosanski Petrovac. Srbin, zemljoradnik. U NOB-i od 1942. Borac 3. čete 1. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
+      "birth_year": "1926",
+      "pdf_file": "7-krajiska-spisak.pdf",
+      "pdf_page": 205,
+      "pdf_y": 306.8,
+      "pdf_x": 114.8
+    },
+    "reason": "Glued into 0048012951 (\"RUPrU3 MILE\" = ĆURGUZ MILE, Ć read as R), p. 205"
+  },
+  {
+    "id": 99207,
+    "action": "edit",
+    "soldier_id": "0048010376",
+    "fields": {
+      "additional_info": "rođen 1914. u Drvaru. Srbin, stolarski radnik. U NOB-i od 1941. Zamenik komandira 3. čete 2. bataljona. NARODNI HEROJ JUGOSLAVIJE. POGINUO kao zamenik komandanta brigade 1944. u borbi u Banja Luci."
+    },
+    "reason": "OCR: \"NAROANI HEROJ\" = NARODNI HEROJ, p. 22"
+  },
+  {
+    "id": 99208,
+    "action": "edit",
+    "soldier_id": "0048011115",
+    "fields": {
+      "additional_info": "rođen 1919. Ribnik, Ključ. Srbin, radnik. U NOBi od 1941. Član KPJ. Komesar 1. čete 2. bataljona. NARODNI HEROJ JUGOSLAVIJE, POGINUO oktobra 1944. kao komandant pljevskog odreda u Gerzovu."
+    },
+    "reason": "OCR: \"NAROANI HEROJ JUGOS-LAVIJE\" = NARODNI HEROJ JUGOSLAVIJE, p. 73"
+  },
+  {
+    "id": 99209,
+    "action": "edit",
+    "soldier_id": "0048013780",
+    "fields": {
+      "additional_info": "rođen 1917. Plamenice, Ključ. Srbin, zemljoradnik. U NOB-i od 1941. Član KPJ. Komandir 2. čete 3. bataljona. Učesnik bitke na Neretvi i Sutjesci. U leto 1943. teško je ranjen. Posle izlaska iz bolnice ulazi u sastav 2. proleterske brigade. NARODNI HEROJ JUGOSLAVIJE. POGINUO 3. maja 1944. u s. Podbukovi, Valjevo."
+    },
+    "reason": "OCR: \"NAROANI XEPOJ JU-GOSLAVIJE\" = NARODNI HEROJ JUGOSLAVIJE (entry merged into 0048001009), p. 71"
+  },
+  {
+    "id": 99210,
+    "action": "merge",
+    "soldier_id": "0048000613",
+    "merge_id": "0048012342",
+    "merge_name": "Nikolajević Stevana Siniša",
+    "reason": "Same soldier in borci-sutjeske-7-krajiska.pdf and 7-krajiska-spisak.pdf; same father, birth year, birthplace, duty. Same soldier in the brigade's list of survivors and the fallen (knj. 2)"
+  },
+  {
+    "id": 99211,
+    "action": "merge",
+    "soldier_id": "0048000515",
+    "merge_id": "0048011964",
+    "merge_name": "Marijanac Sime Rade",
+    "reason": "Same soldier in borci-sutjeske-7-krajiska.pdf and 7-krajiska-spisak.pdf (Marjanac / Marijanac, Strojnice / Strojice); same father, birth year, birthplace, occupation (geometar / geodeta), duty (komandant brigade), death (near Tarevo, Tuzla, July 1943), narodni heroj"
+  },
+  {
+    "id": 99212,
+    "action": "link",
+    "soldier_id": "0010002096",
+    "link_id": "0048014058",
+    "link_name": "Ćup Đurina Milan",
+    "reason": "Same soldier in 3. Krajiška Proleterska and 7. Krajiška; same father, birth year, birthplace, death year, duty"
   }
 ]
