@@ -491,8 +491,15 @@ UNITS = {
         note="Nothing in the gallery names the brigade; the photo is from its own book."),
     "3-primorsko-goranska": dict(
         name="3. primorsko-goranska brigada", tags=[],
-        caption=r"(?<!\d)(?:3\.|III\.?|tre[cć]\w*)\s+primorsko[\s-]*goransk\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
-        note="Nothing in the znaci.org gallery names the brigade, and its book (00001/122) prints only maps and documents."),
+        caption=r"(?<!\d)(?:3\.|III\.?|tre[cć]\w*)\s+primorsko[\s-]*goransk\w*\s+(?:udarn\w*\s+)?brigad"
+                r"|(?:3\.|III\.?|tre[cć]\w*)\s+brigad\w*\s+(?:13\.|XIII\.?|trinaest\w*)\s+(?:\w+\s+)?divizij"
+                r"|(?:2\.|II\.?|drug\w*)\s+brigad\w*\s+(?:35\.|XXXV\.?|trideset\w*\s+pet\w*)\s+(?:\w+\s+)?divizij",
+        photo=None,
+        note="Nothing in the znaci.org gallery names the brigade, as the 3. primorsko-goranska, the 3. brigada 13. divizije or, "
+             "from June 1944, the 2. brigada 35. divizije (also searched: Gorski kotar, Primorje and Lika places, and the "
+             "uncaptioned photos tagged with them). Its book (Mamula, 00001/122) prints only maps and documents; Kleut's "
+             "35. lička divizija (00003/486) and Jedanaesti korpus (00001/157) print maps, and 14. primorsko-goranska "
+             "brigada (00003/544), Sušak i Rijeka u NOB (00003/799) and Vinodolska Selca u borbi (00003/793) no photo naming it."),
     "4-sandzacka-brigada": dict(
         name="4. sandžačka brigada", tags=[],
         caption=r"(?<!\d)(?:4\.|IV\.?|[cč]etvrt\w*)\s+sand[zž]a[cč]k\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=15775),
@@ -611,7 +618,15 @@ UNITS = {
         note="At the brigade's formation; the date in the caption (17. 11.) differs from the odrednica's 12. 11. 1942."),
     "16-banijska-brigada": dict(
         name="16. banijska brigada", tags=["16-banijska-udarna-brigada"],
-        caption=nth(16, r"banijsk"), photo=None),
+        caption=nth(16, r"banijsk") + r"|\bXVI\.?\s+brigad|[sš]esnaest\w*\s+brigad", photo=9243,
+        card="Borci i rukovodioci XVI brigade sa meštanima sela Boraka i ostalih sela proslavljaju Prvi maj 1943.",
+        crop=(0.30, 0.0, 1.0, 0.55),
+        note="The brigade by its number: on 1 May 1943 the 16. brigada of the 7. (banijska) division, which existed from "
+             "26 December 1942 to 30 June 1943, was the only brigade numbered 16 (the 16. muslimanska and 16. omladinska "
+             "were formed that September, the 16. krajiška, which znaci.org tags the photo with, in May 1944). That spring "
+             "it held the Kalinovik-Foča road (Sedma banijska divizija, 00003/717, p. 194); Boraci is a village on the upper "
+             "Neretva near Glavatičevo. Cropped to the brigade's ranks behind the village women. Nothing else names the "
+             "brigade: the gallery, the division's book (00003/717), the 7. and 8. banijska brigades' books (00001/63, 00003/383)."),
     "7-krajiska-brigada": dict(
         name="7. krajiška brigada", tags=["7-krajiska-udarna-brigada"],
         caption=nth(7, r"kraji[sš]k"), photo=15178, crop=(0, 0.27, 1, 0.72),

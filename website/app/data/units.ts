@@ -475,7 +475,7 @@ export const units: Unit[] = [
     name: '16. banijska brigada',
     nameEn: '16th Banija Brigade',
     description: 'Formirana 26. decembra 1942. u Klasniću. Borci brigade u bici na Sutjesci, maja i juna 1943.',
-    image: '/images/pdf-thumbs/borci-sutjeske-16-banijska.jpg',
+    image: '/images/16-banijska-brigada.jpg',
     soldierCount: 592,
     dataFile: '/16-banijska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-16-banijska.pdf']
