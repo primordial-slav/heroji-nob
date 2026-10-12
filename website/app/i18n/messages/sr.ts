@@ -75,6 +75,14 @@ export const sr = {
     pages: 'Strane rezultata',
     previous: 'Prethodna',
     next: 'Sledeća',
+    /** The count line when no record has every word typed, as typed */
+    noExact: 'Nema tačnog poklapanja',
+    /** After the count, "još 52 slična zapisa"; alone, "64 slična zapisa" */
+    similar: (x: number, more: boolean) =>
+      `${more ? 'još ' : ''}${n(x)} ${plural('sr', x, { one: 'sličan zapis', few: 'slična zapisa', other: 'sličnih zapisa' })}`,
+    /** Over the similar records in the list: spelled differently, or without one of the words */
+    similarTitle: 'Slični zapisi',
+    similarNote: 'Ime ili mesto napisano malo drugačije, ili bez neke od traženih reči.',
   },
 
   onThisDay: {

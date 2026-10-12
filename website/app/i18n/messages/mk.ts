@@ -84,6 +84,11 @@ export const mk: Messages = {
     pages: 'Страници со резултати',
     previous: 'Претходна',
     next: 'Следна',
+    noExact: 'Нема точно совпаѓање',
+    similar: (x: number, more: boolean) =>
+      `${more ? 'уште ' : ''}${n(x)} ${plural('mk', x, { one: 'сличен запис', other: 'слични записи' })}`,
+    similarTitle: 'Слични записи',
+    similarNote: 'Име или место напишано малку поинаку, или без некој од бараните зборови.',
   },
 
   onThisDay: {

@@ -75,6 +75,11 @@ export const sl: Messages = {
     pages: 'Strani z zadetki',
     previous: 'Prejšnja',
     next: 'Naslednja',
+    noExact: 'Ni natančnega zadetka',
+    similar: (x: number, more: boolean) =>
+      `${more ? 'še ' : ''}${n(x)} ${plural('sl', x, { one: 'podoben zapis', two: 'podobna zapisa', few: 'podobni zapisi', other: 'podobnih zapisov' })}`,
+    similarTitle: 'Podobni zapisi',
+    similarNote: 'Ime ali kraj, zapisan nekoliko drugače, ali brez katere od iskanih besed.',
   },
 
   onThisDay: {

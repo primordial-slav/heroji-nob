@@ -45,7 +45,7 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
 
-  const { results, searchTerm, setSearchTerm, pending } = useFuseSearch(
+  const { results, searchTerm, setSearchTerm, pending, near } = useFuseSearch(
     soldiers,
     { showAllOnEmpty: true, wholeWords: filters.wholeWords }
   )
@@ -183,6 +183,7 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
           ) : (
             <SoldierResults
               results={listed}
+              near={near}
               onSelect={openSoldier}
               scrollTargetId="results"
               actions={(searchTerm.trim() || filtersSet) && <ShareSearch />}

@@ -2,13 +2,13 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { normalizeForSearch } from './diacritics'
-import { createSoldierIndex, mergeHits, searchFields, searchSoldiers, type SoldierIndex } from './soldierSearch'
+import { createSoldierIndex, mergeHits, searchFields, searchSoldiers, type MergedHits, type SoldierIndex } from './soldierSearch'
 import type { FromSearchWorker, ToSearchWorker } from './search.worker'
 import type { Soldier } from './types'
 
-// Searching every unit's soldiers takes a second or more, which held up typing while it ran. So the search runs
-// in workers, each on a slice of the list, all at once; their hits are merged into the order a search of the
-// whole list gives (soldierSearch.ts).
+// Indexing every unit's soldiers takes seconds, and a search of them a few tenths of one, which would hold up
+// typing. So both run in workers, each on a slice of the list, all at once; their hits are merged into the order
+// a search of the whole list gives (soldierSearch.ts).
 
 const MAX_WORKERS = 4
 // Fewer soldiers than this per worker would cost more in starting it than it saves
@@ -24,7 +24,7 @@ class SearchPool {
   // Without workers, the search runs on the page's thread, as it did before them
   private local: SoldierIndex | null = null
   private busy = false
-  private waiting: { query: string; wholeWords: boolean; resolve: (found: Int32Array | null) => void } | null = null
+  private waiting: { query: string; wholeWords: boolean; resolve: (found: MergedHits | null) => void } | null = null
 
   constructor(private data: Soldier[]) {
     const cores = navigator.hardwareConcurrency || 2
@@ -63,7 +63,7 @@ class SearchPool {
    * Positions in `data` of the soldiers found, best first. One search runs at a time; a search asked for while
    * another runs waits, and gets null if a newer one takes its place before it starts.
    */
-  search(query: string, wholeWords: boolean): Promise<Int32Array | null> {
+  search(query: string, wholeWords: boolean): Promise<MergedHits | null> {
     this.waiting?.resolve(null)
     return new Promise((resolve) => {
       this.waiting = { query, wholeWords, resolve }
@@ -79,14 +79,14 @@ class SearchPool {
     try {
       resolve(await this.run(query, wholeWords))
     } catch {
-      resolve(new Int32Array(0))
+      resolve(NOTHING)
     } finally {
       this.busy = false
       this.next()
     }
   }
 
-  private async run(query: string, wholeWords: boolean): Promise<Int32Array> {
+  private async run(query: string, wholeWords: boolean): Promise<MergedHits> {
     await this.ready
     if (!this.failed) {
       try {
@@ -144,6 +144,8 @@ function poolFor(data: Soldier[]): SearchPool {
 }
 
 const NO_SOLDIERS: Soldier[] = []
+const NO_NEAR: ReadonlySet<Soldier> = new Set()
+const NOTHING: MergedHits = { positions: new Int32Array(0), nearFrom: 0 }
 const DEBOUNCE_MS = 250
 
 /** Which search a list of results is for: the same for spellings that search alike ("Rolić", "rolic ") */
@@ -166,6 +168,8 @@ interface UseFuseSearchReturn {
    * render in which the term or the list changes; the results of a list the hook had before are not kept.
    */
   pending: boolean
+  /** The results that are only similar (soldierSearch.ts), listed after those that have every word as typed */
+  near: ReadonlySet<Soldier>
 }
 
 export function useFuseSearch(
@@ -175,7 +179,7 @@ export function useFuseSearch(
   const [searchTerm, setSearchTerm] = useState('')
   const [debouncedTerm, setDebouncedTerm] = useState('')
   // The last search's results, with the term and the list they are for
-  const [found, setFound] = useState({ key: '', data: NO_SOLDIERS, results: NO_SOLDIERS })
+  const [found, setFound] = useState({ key: '', data: NO_SOLDIERS, results: NO_SOLDIERS, near: NO_NEAR })
   const poolRef = useRef<SearchPool | null>(null)
   const wholeWords = !!options.wholeWords
 
@@ -203,8 +207,10 @@ export function useFuseSearch(
     if (!pool) return
     let current = true
     const key = searchKey(debouncedTerm, wholeWords)
-    pool.search(normalizeForSearch(debouncedTerm.trim()), wholeWords).then((positions) => {
-      if (current && positions) setFound({ key, data, results: Array.from(positions, (i) => data[i]) })
+    pool.search(normalizeForSearch(debouncedTerm.trim()), wholeWords).then((hits) => {
+      if (!current || !hits) return
+      const results = Array.from(hits.positions, (i) => data[i])
+      setFound({ key, data, results, near: new Set(results.slice(hits.nearFrom)) })
     })
     return () => { current = false }
   }, [debouncedTerm, data, wholeWords])
@@ -214,7 +220,7 @@ export function useFuseSearch(
   // still empty, and its search would otherwise show the whole list first
   useEffect(() => {
     if (searchTerm.trim() || debouncedTerm.trim()) return
-    setFound({ key: '', data, results: options.showAllOnEmpty ? data : NO_SOLDIERS })
+    setFound({ key: '', data, results: options.showAllOnEmpty ? data : NO_SOLDIERS, near: NO_NEAR })
   }, [searchTerm, debouncedTerm, data, options.showAllOnEmpty])
 
   // Worked out in the render, not by the effects above, which run only after a render of the old results: the
@@ -226,5 +232,7 @@ export function useFuseSearch(
     ? (options.showAllOnEmpty ? data : NO_SOLDIERS)
     : ofThisList ? found.results : NO_SOLDIERS
 
-  return { results, searchTerm, setSearchTerm, isSearching, pending }
+  const near = isSearching && ofThisList ? found.near : NO_NEAR
+
+  return { results, searchTerm, setSearchTerm, isSearching, pending, near }
 }

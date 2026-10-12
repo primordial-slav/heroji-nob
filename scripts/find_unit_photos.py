@@ -248,11 +248,15 @@ UNITS = {
         name="Posavsko-trebavski partizanski odred", tags=[],
         caption=r"posavsko[\s-]*trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred|trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred",
         photo=None,
-        note="Nothing in the znaci.org gallery names the odred (searched: its name, Trebava, Posavina, Gradačac, Modriča, Doboj, "
-             "and the uncaptioned photos of Bosnia 1944-45), and its book (00001/302, re-typeset) prints no photos. Nor do the "
-             "captions in the books that write about it: 18. hrvatska brigada (00001/251, only a facsimile of a joint report), "
-             "Tuzlanski odred (00003/469), Istočna Bosna u NOR-u (00003/750, 751), Sjeveroistočna Bosna 1944-1945 (00001/103), "
-             "Derventa (00003/827), Teslić u NOB (00003/1026)."),
+        book=dict(pdf="00001/251_2.pdf", page=98, xref=445, caption="Štab 4. bataljona s komandama četa i vodova"),
+        note="Chosen by the user, though the caption names the 18. hrvatska brigada's 4. bataljon, not the odred: in June "
+             "1944 most of the odred went into the brigade, its 2. bataljon as the brigade's 2. and Pavo Bašić's battalion as "
+             "its 4. (00001/251_2 p. 93, 251_3 pp. 27, 114; 00001/302 p. 205), and the book sets this photo in July 1944, so "
+             "these are the odred's own commanders. Nothing in the znaci.org gallery names the odred (searched: its name, "
+             "Trebava, Posavina, Gradačac, Modriča, Doboj, and the uncaptioned photos of Bosnia 1944-45), and its book "
+             "(00001/302, re-typeset) prints no photos. Nor do the captions in the books that write about it: 18. hrvatska "
+             "brigada (00001/251, only a facsimile of a joint report), Tuzlanski odred (00003/469), Istočna Bosna u NOR-u "
+             "(00003/750, 751), Sjeveroistočna Bosna 1944-1945 (00001/103), Derventa (00003/827), Teslić u NOB (00003/1026)."),
     "8-kordunaska-divizija": dict(
         name="8. kordunaška divizija", tags=[],
         caption=r"(?:\b8\.|osm\w+)\s+(?:kordunašk\w+\s+)?(?:udarn\w+\s+)?divizij", photo=None,
@@ -504,12 +508,11 @@ UNITS = {
         caption=r"(?<!\d)(?:3\.|III\.?|tre[cć]\w*)\s+primorsko[\s-]*goransk\w*\s+(?:udarn\w*\s+)?brigad"
                 r"|(?:3\.|III\.?|tre[cć]\w*)\s+brigad\w*\s+(?:13\.|XIII\.?|trinaest\w*)\s+(?:\w+\s+)?divizij"
                 r"|(?:2\.|II\.?|drug\w*)\s+brigad\w*\s+(?:35\.|XXXV\.?|trideset\w*\s+pet\w*)\s+(?:\w+\s+)?divizij",
-        photo=None,
-        note="Nothing in the znaci.org gallery names the brigade, as the 3. primorsko-goranska, the 3. brigada 13. divizije or, "
-             "from June 1944, the 2. brigada 35. divizije (also searched: Gorski kotar, Primorje and Lika places, and the "
-             "uncaptioned photos tagged with them). Its book (Mamula, 00001/122) prints only maps and documents; Kleut's "
-             "35. lička divizija (00003/486) and Jedanaesti korpus (00001/157) print maps, and 14. primorsko-goranska "
-             "brigada (00003/544), Sušak i Rijeka u NOB (00003/799) and Vinodolska Selca u borbi (00003/793) no photo naming it."),
+        photo=14096,
+        note="Chosen by the user: 'Jedinice 13. primorsko-goranske divizije u toku akcije za odbranu slobodne teritorije "
+             "Gorskog kotara 1944', dated January 1944, when the brigade was the division's 3. brigada (it became the "
+             "2. brigada 35. divizije in June 1944). Nothing in the gallery names the brigade itself; its book (Mamula, "
+             "00001/122) prints maps, documents and its commander's portrait."),
     "4-sandzacka-brigada": dict(
         name="4. sandžačka brigada", tags=[],
         caption=r"(?<!\d)(?:4\.|IV\.?|[cč]etvrt\w*)\s+sand[zž]a[cč]k\w*\s+(?:nou\s+|udarn\w*\s+)?brigad", photo=15775),
@@ -661,10 +664,11 @@ UNITS = {
         name="Centralna bolnica", tags=["centralna-bolnica-novj"],
         caption=r"centraln\w*\s+(?:partizansk\w*\s+)?bolnic|centraln\w*\s+hirur|ranjenik\w*.{0,40}sutjes|sutjes\w*.{0,60}ranjenik",
         photo=None,
-        note="The only photo naming the hospital, 'Dolazak ranjenika Centralne bolnice Vrhovnog štaba u Drvar, avgust 1942' "
-             "(16355), is a blurred snapshot of a wounded woman, not a group. The gallery's photos of the wounded at the "
-             "Sutjeska and the Piva (11151, 3429, 3432) don't name it, nor do the captions in Sanitetska služba u NOR-u "
-             "(00003/386, 388, 389; 00001/199) and the Sutjeska zbornik (00003/437-441). The card shows the chapter's first page."),
+        book=dict(pdf="00003/439.pdf", page=624, xref=2873,
+                  caption="Delovi Centralne bolnice prelaze preko mosta na Pivi, 10. juna 1943. (Vojni muzej JNA)"),
+        note="A plate in Sutjeska, zbornik radova, knj. 3: the book prints each plate's caption on the facing page "
+             "(here p. 625), which a search for the text under a photo misses. The gallery's only photo naming the "
+             "hospital (16355, Drvar, August 1942) is a blurred snapshot of one wounded woman."),
     "1-proleterska-divizija": dict(
         name="1. proleterska divizija", tags=["1-proleterska-divizija-novj"],
         caption=nth(1, r"proletersk\w*\s+(?:udarn\w*\s+)?divizij") + r"|\bI\s+proleterske\s+divizij",

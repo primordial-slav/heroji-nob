@@ -30,10 +30,11 @@ export const RECORDS_PER_PART = 250
 export const FIRST_PAGE = 50
 
 // A soldier's fields in an index row, then his other_sources (0 if none), then full_name if it isn't
-// "last middle first". Empty fields at the end of a row are left out.
+// "last middle first". fathers_name is there only where it isn't middle_name (the father in the nominative, which
+// search finds as well as the case the book prints). Empty fields at the end of a row are left out.
 const FIELDS = [
   'soldier_id', 'last_name', 'middle_name', 'first_name', 'additional_info',
-  'birth_year', 'death_date', 'death_type', 'death_place', 'unit_detail',
+  'birth_year', 'death_date', 'death_type', 'death_place', 'unit_detail', 'fathers_name',
 ] as const
 const SOURCE_FIELDS = ['soldier_id', 'name', 'additional_info', 'unit_file'] as const
 
@@ -59,7 +60,8 @@ function withoutTrailingEmpties<T extends Cell>(row: T[]): T[] {
 const joinedName = (s: Partial<Soldier>) => [s.last_name, s.middle_name, s.first_name].filter(Boolean).join(' ')
 
 export function encodeRow(soldier: Soldier): IndexRow {
-  const row: IndexRow = FIELDS.map((f) => soldier[f] ?? '')
+  const row: IndexRow = FIELDS.map((f) =>
+    f === 'fathers_name' && soldier.fathers_name === soldier.middle_name ? '' : soldier[f] ?? '')
   const sources = (soldier.other_sources ?? []).map((o) => withoutTrailingEmpties(SOURCE_FIELDS.map((f) => o[f] ?? '')))
   row.push(sources.length ? sources : 0)
   row.push(soldier.full_name === joinedName(soldier) ? '' : soldier.full_name)
