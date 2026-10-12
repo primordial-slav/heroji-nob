@@ -279,7 +279,8 @@ website/                          # Next.js 15 frontend
       PdfViewer.tsx               # react-pdf viewer with position highlighting
       Navigation.tsx              # Top nav bar
     lib/
-      useFuseSearch.ts            # Fuzzy search hook (diacritics-aware)
+      useFuseSearch.ts            # Search hook: runs soldierSearch.ts in workers, slices merged
+      soldierSearch.ts            # Word index and ranking (how each word matches, then where; see its header)
       diacritics.ts               # č→c, š→s, đ/dj→d normalization for search
       types.ts                    # Soldier interface
     data/
@@ -305,7 +306,7 @@ corrections.json                  # Individual record corrections (edit/delete/s
 ```
 
 ## Tech Stack
-- **Frontend**: Next.js 15, React 19, TypeScript, Fuse.js (search), react-pdf (PDF viewer)
+- **Frontend**: Next.js 15, React 19, TypeScript, react-pdf (PDF viewer); search is its own word index (`lib/soldierSearch.ts`)
 - **Data extraction**: Python 3.7, pdfplumber
 - **Deployment**: Vercel, from the `prod` remote. Every page and data route is prerendered at build time, within two Vercel limits that fail the deploy without any sign in git: a server function may not pass 250 MB (`outputFileTracingExcludes` in `next.config.js` keeps `public/` and `data/life-events/` out; it takes effect only on Vercel's Linux build, so a Windows build's traces still list them), and no prerendered response may pass 19 MB (the home search list is split into parts for this, `SEARCH_INDEX_PARTS` in `app/lib/searchIndex.ts`). After pushing, check that the live site has the change.
 

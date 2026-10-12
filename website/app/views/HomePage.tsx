@@ -34,7 +34,7 @@ export default function HomePage() {
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
 
-  const { results, searchTerm, setSearchTerm, isSearching, pending } = useFuseSearch(
+  const { results, searchTerm, setSearchTerm, isSearching, pending, near } = useFuseSearch(
     allSoldiers,
     { showAllOnEmpty: false, wholeWords: filters.wholeWords }
   )
@@ -167,6 +167,7 @@ export default function HomePage() {
           ) : (
             <SoldierResults
               results={listed}
+              near={near}
               showUnit
               onSelect={openSoldier}
               scrollTargetId="results"
