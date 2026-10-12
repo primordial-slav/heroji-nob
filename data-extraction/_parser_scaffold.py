@@ -568,6 +568,7 @@ def run_parser(
     id_start: int = 1,
     keep_other_sources: bool = False,
     extract_fn: Callable[[str, int, int | None], list[dict]] | None = None,
+    source_url_prefix: str | None = None,
 ) -> list[dict]:
     """
     Common runner. Extract → group → parse → assign IDs → save.
@@ -582,7 +583,8 @@ def run_parser(
     prepare_fn: sees each source's lines before line_filter (e.g. to measure page margins).
     id_start, keep_other_sources: add another book to a unit whose file already holds records from other
     PDFs — this run's records get IDs from id_start and replace only the records read from this run's PDFs
-    (and pages: two lists can share a PDF).
+    (and pages: two lists can share a PDF). source_url_prefix: a book without a PDF (the Poreklo library's): this
+    run's records are those whose source_url starts with it.
 
     Returns list of soldier dicts (also written to output_path).
     """
@@ -652,6 +654,8 @@ def run_parser(
     if keep_other_sources and Path(output_path).exists():
         def mine(s: dict) -> bool:
             """Read by this run: from one of its PDFs, within the pages it reads (two lists can share a PDF)."""
+            if source_url_prefix and (s.get('source_url') or '').startswith(source_url_prefix):
+                return True
             return any(s.get('pdf_file') == Path(src['pdf_path']).name
                        and src.get('start_page', 1) <= (s.get('pdf_page') or 0) <= (src.get('end_page') or 10 ** 6)
                        for src in sources)

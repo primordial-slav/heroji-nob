@@ -579,6 +579,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen avgusta 1941 v požarevškem okrožju. Vsi borci odreda od 1941 do oktobra 1944, ko je prešel v NOVJ.',
   },
+  '1-proleterski-bataljon-hrvatske': {
+    name: '1. proletarski bataljon Hrvaške',
+    description:
+      'Ustanovljen 7. maja 1942 v Korenici. Borci bataljona, do njegovega vstopa v 13. proletarsko brigado „Rade Končar“.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1149,6 +1154,11 @@ const mk: Record<string, UnitText> = {
     name: 'Пожаревачки партизански одред',
     description:
       'Формиран во август 1941 во Пожаревачкиот округ. Сите борци на одредот од 1941 до октомври 1944, кога влезе во НОВЈ.',
+  },
+  '1-proleterski-bataljon-hrvatske': {
+    name: '1. пролетерски баталјон на Хрватска',
+    description:
+      'Формиран на 7 мај 1942 во Кореница. Борците на баталјонот, до неговото влегување во 13. пролетерска бригада „Раде Кончар“.',
   },
 }
 
@@ -1722,6 +1732,11 @@ const en: Record<string, UnitText> = {
     name: 'Požarevac Partisan Detachment',
     description:
       'Formed in August 1941 in the Požarevac district. All its fighters from 1941 to October 1944, when it joined the Yugoslav Army.',
+  },
+  '1-proleterski-bataljon-hrvatske': {
+    name: '1st Proletarian Battalion of Croatia',
+    description:
+      'Formed on 7 May 1942 in Korenica. Its fighters, until it joined the 13th Proletarian Brigade “Rade Končar”.',
   },
 }
 

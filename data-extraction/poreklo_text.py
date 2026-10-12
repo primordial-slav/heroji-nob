@@ -93,20 +93,25 @@ def page_words(book: dict, page: int) -> list[Word]:
 
 
 def page_lines(book: dict, page: int, columns: int = 1) -> list[list[Line]]:
-    """The page's lines, per column; with two columns the page is split at the widest gap in the middle"""
+    """The page's lines, per column: the page is split at the x near each k/columns of its width that the fewest
+    words cross"""
     words = page_words(book, page)
     if columns == 1 or not words:
         return [lines_of(words)]
     left, right = min(w.x0 for w in words), max(w.x1 for w in words)
-    lo, hi = left + (right - left) * 0.35, left + (right - left) * 0.65
-    # the x in the middle third that the fewest words cross
-    best, split = None, (left + right) / 2
-    for x in range(int(lo), int(hi), 5):
-        n = sum(1 for w in words if w.x0 < x < w.x1)
-        if best is None or n < best:
-            best, split = n, x
-    return [lines_of([w for w in words if w.x1 <= split or (w.x0 + w.x1) / 2 < split]),
-            lines_of([w for w in words if not (w.x1 <= split or (w.x0 + w.x1) / 2 < split)])]
+    width = right - left
+    cuts = []
+    for k in range(1, columns):
+        lo, hi = left + width * (k / columns - 0.12), left + width * (k / columns + 0.12)
+        best, cut = None, left + width * k / columns
+        for x in range(int(lo), int(hi), max(1, int(width / 400))):
+            n = sum(1 for w in words if w.x0 < x < w.x1)
+            if best is None or n < best:
+                best, cut = n, x
+        cuts.append(cut)
+    bounds = [float('-inf')] + cuts + [float('inf')]
+    cols = [[w for w in words if bounds[i] <= (w.x0 + w.x1) / 2 < bounds[i + 1]] for i in range(columns)]
+    return [lines_of(c) for c in cols]
 
 
 def dump(name: str, columns: int = 1) -> str:
@@ -123,3 +128,56 @@ if __name__ == '__main__':
     import sys
     sys.stdout.reconfigure(encoding='utf-8')
     print(dump(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 1))
+
+
+# ── names: the capitals of these books lose or swap their diacritics (ANTIC, BAKIČ for Antić, Bakić) ──
+
+FOLD = str.maketrans('ČĆŽŠĐčćžšđ', 'CCZSDcczsd')
+
+
+def name_counts(skip_file: str) -> dict:
+    """How every other unit spells its surnames and given names: {'last_name': Counter, 'first_name': Counter}"""
+    counts = {'last_name': Counter(), 'first_name': Counter(), 'middle_name': Counter()}
+    for f in (HERE.parent.parent / 'website' / 'public').glob('*soldiers.json'):
+        if f.name == skip_file:
+            continue
+        for s in json.loads(f.read_text(encoding='utf-8')):
+            for field, c in counts.items():
+                c[s.get(field) or ''] += 1
+    return counts
+
+
+# Given names the OCR makes of a capital Đ: "EURO" is no name, ĐURO is ("VOJVODIĆ Dane EURO", "SMIULJ Dušana EURO")
+OCR_GIVEN = {'Euro': 'Đuro'}
+
+
+def restore_diacritics(soldiers: list[dict], counts: dict, fields=('last_name', 'first_name', 'middle_name')) -> int:
+    """A name takes the spelling with other diacritics (or none) that the other units use at least five times as
+    often as the printed one (Antic, Antič -> Antić; but Kosta stays, as Košta is not five times as common); a
+    surname nobody spells ends in -ić for -ic"""
+    by_fold = {}
+    for field in fields:
+        by_fold[field] = {}
+        for v, n in counts[field].items():
+            by_fold[field].setdefault(v.translate(FOLD), Counter())[v] = n
+    changed = 0
+    for s in soldiers:
+        if s.get('first_name') in OCR_GIVEN:
+            s['first_name'] = OCR_GIVEN[s['first_name']]
+            changed += 1
+        for field in fields:
+            parts = (s.get(field) or '').split('-')
+            for i, v in enumerate(parts):
+                cands = by_fold[field].get(v.translate(FOLD), Counter())
+                best = max((c for c in cands if c != v), key=lambda c: cands[c], default=None)
+                new = best if best and cands[best] >= 5 * max(cands[v], 1) else v
+                if new == v and field == 'last_name' and v.endswith(('ic', 'ič')) and not cands[v]:
+                    new = v[:-2] + 'ić'
+                if new != v:
+                    parts[i] = new
+                    changed += 1
+            s[field] = '-'.join(parts)
+        if 'middle_name' in fields and s.get('middle_name'):
+            s['fathers_name'] = s['middle_name']                      # normalize_all_json.py puts it in the nominative
+        s['full_name'] = ' '.join(p for p in (s['last_name'], s.get('middle_name') or '', s['first_name']) if p)
+    return changed

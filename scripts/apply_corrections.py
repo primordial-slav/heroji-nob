@@ -232,7 +232,7 @@ def apply_delete(soldiers, correction):
     return soldiers, False
 
 
-SOURCE_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y') + entry_boxes.BOX_FIELDS + ('source_url',)
+SOURCE_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y') + entry_boxes.BOX_FIELDS + ('source_url', 'source_page')
 # what the soldier's entry takes from another book's entry when its own is empty
 MERGE_FILL = ('middle_name', 'fathers_name', 'birth_year') + tuple(structured.FIELDS)
 # and from another unit's record: not its battalion or company, which belong to that unit

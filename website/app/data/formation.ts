@@ -429,6 +429,10 @@ export const formation: Record<string, Formation> = {
     date: '1941-08', place: 'Požarevački okrug', source: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=46',
     note: 'Popović, Požarevački NOP odred (str. 34, 37): partizanske jedinice okruga obrazovane su u avgustu 1941, a štab Požarevačkog partizanskog odreda u septembru 1941.',
   },
+  '1-proleterski-bataljon-hrvatske': {
+    date: '1942-05-07', place: 'Korenica', source: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=10',
+    note: 'Mamula i dr., Prvi proleterski bataljon Hrvatske: „od njenog formiranja 7. maja 1942. do ulaska u sastav 13. proleterske brigade »Rade Končar« u selu Sjeničak na Kordunu“; formiran u Titovoj Korenici („Korenica 7. maja 1942.“).',
+  },
 }
 
 /** Sort key: a missing month goes to the end of its year, a missing day to the middle of its month */

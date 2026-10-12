@@ -1295,5 +1295,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/pozarevacki-odred.jpg',
     brigadeName: 'Požarevački NOP odred',
     description: 'Popis boraca odreda od 1941. do oktobra 1944, s podacima o svakom (str. 238–307; priredio Miodrag Stojanović Kole). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: '1-proleterski-bataljon',
+    title: 'Prvi proleterski bataljon Hrvatske',
+    author: 'Bogdan Mamula, Rudi Bašić, Branko Vurdelja, Dušan Pekić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291',
+    thumbnail: '/images/pdf-thumbs/1-proleterski-bataljon.jpg',
+    brigadeName: '1. proleterski bataljon Hrvatske',
+    description: 'Spisak boraca bataljona, s godinom i mestom rođenja i sudbinom (str. 262–277). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]

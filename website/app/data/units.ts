@@ -416,7 +416,7 @@ export const units: Unit[] = [
     nameEn: '5th Proletarian Montenegrin Brigade',
     description: 'Formirana 12. juna 1942. u Smriječnu kod Šavnika. Borci brigade u bici na Sutjesci, maja i juna 1943.',
     image: '/images/5-proleterska-brigada.jpg',
-    soldierCount: 1578,
+    soldierCount: 1979,
     dataFile: '/5-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-5-proleterska.pdf']
   },
@@ -476,7 +476,7 @@ export const units: Unit[] = [
     nameEn: '16th Banija Brigade',
     description: 'Formirana 26. decembra 1942. u Klasniću. Borci brigade u bici na Sutjesci, maja i juna 1943.',
     image: '/images/16-banijska-brigada.jpg',
-    soldierCount: 592,
+    soldierCount: 943,
     dataFile: '/16-banijska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-16-banijska.pdf']
   },
@@ -1198,6 +1198,16 @@ export const units: Unit[] = [
     image: '/images/pdf-thumbs/pozarevacki-odred.jpg',
     soldierCount: 1339,
     dataFile: '/pozarevacki-odred-soldiers.json',
+    pdfFiles: []
+  },
+  {
+    id: '1-proleterski-bataljon-hrvatske',
+    name: '1. proleterski bataljon Hrvatske',
+    nameEn: '1st Proletarian Battalion of Croatia',
+    description: 'Formiran 7. maja 1942. u Korenici. Borci bataljona, do njegovog ulaska u 13. proletersku brigadu „Rade Končar“.',
+    image: '/images/1-proleterski-bataljon-hrvatske.jpg',
+    soldierCount: 488,
+    dataFile: '/1-proleterski-bataljon-soldiers.json',
     pdfFiles: []
   }
   // Add more units here as you get more data

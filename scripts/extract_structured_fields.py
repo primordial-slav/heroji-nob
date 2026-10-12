@@ -289,6 +289,8 @@ class Extractor:
         if code == 119:
             # Požarevački odred: "iz Smoljinca" is where he came from; only "rođen 1910. g. u Kučevu" says where he was born
             t = re.sub(r'\b([Rr])ođ\.', r'\1ođen', t)
+        # a maiden name set before the bio (5. proleterska's Partizanke: "rođena Perunović; Rođena 1894. godine u ...")
+        t = re.sub(r'(?:^|(?<=;\s))rođena\s+[A-ZČĆŽŠĐ][\w-]*;\s*', '', t)
         # a function printed before "rođen" (Treća proleterska, 5. kozaračka): "desetar 3. desetine, rođen 1920, ..."
         m = re.search(r'\b[Rr]ođen[a]?\b', t)
         head = t[:m.start()] if m else ''
@@ -855,6 +857,28 @@ def forget_stale(soldier: dict, old_info: str, keep=()) -> None:
             del soldier[f]
 
 
+# "Partizanke Pete proleterske crnogorske brigade" (the Poreklo library): long bios that also tell how her brothers,
+# father or husband died ("brat Radisav, koji je poginuo na Kablenoj glavi"); only a death in her own words is hers
+PARTIZANKE = '00005897'
+RELATIVE = re.compile(r'\b(?:brat|brata|bratom|braća|braće|sestr[aeiu]|sestrom|otac|oca|ocem|majk[aeu]|majkom|muž|muža|mužem'
+                      r'|sin|sina|sinom|sinovi|sinova|kći|kćerk[aeu]|kćeri|djeca|djece|roditelji|roditelja'
+                      r'|članovi|člana porodice|saborc[ai]|saborci|drugovi|drugarice)\b', re.I)
+MASCULINE_DEATH = re.compile(r'\b(?:poginu[oli]|poginuše|umr[oli]|umriješe|stri?jeljan[i]?|ubijen[i]?|nesta[oli])\b', re.I)
+FEMININE_DEATH = re.compile(r'\b(?:poginula|umrla|stri?jeljana|ubijena|nestala)\b', re.I)
+
+
+def her_own_deaths(info: str) -> str:
+    """The bio without the sentences about other people's deaths: a death verb in the masculine or plural, or one
+    beside a relative or comrade"""
+    keep = []
+    for sent in re.split(r'(?<=[.!?])\s+', info):
+        if (MASCULINE_DEATH.search(sent) and not FEMININE_DEATH.search(sent)) or \
+                ((MASCULINE_DEATH.search(sent) or FEMININE_DEATH.search(sent)) and RELATIVE.search(sent)):
+            continue
+        keep.append(sent)
+    return ' '.join(keep)
+
+
 def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
@@ -862,8 +886,12 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file')]   # another unit's: its own fields
     for e in entries:
         info = e.get('additional_info', '')
+        if PARTIZANKE in (e.get('source_url') or ''):
+            info = her_own_deaths(info)
         sutjeska = (e.get('pdf_file') or '').startswith('borci-sutjeske')          # the duty at the battle comes first
         for k, v in ex.extract(info, code, duty_first=sutjeska).items():
+            if k == 'death_place' and PARTIZANKE in (e.get('source_url') or ''):
+                continue            # the bios tell the death in a story: "poginula Plana", "Tako se ugasio ..." are no places
             got.setdefault(k, v)
     return got
 

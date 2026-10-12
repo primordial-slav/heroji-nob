@@ -461,6 +461,12 @@ UNITS = {
         name="Požarevački NOP odred", tags=[],
         caption=r"po[zž]arevač?k\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred|po[zž]arevač?k\w*\s+partizan"
                 r"|mlavsk\w*\s+(?:[cč]et|odred)|zvi[sš]k\w*\s+(?:[cč]et|odred)|majdanpe[cč]k\w*\s+(?:[cč]et|odred)", photo=None),
+    "1-proleterski-bataljon-hrvatske": dict(
+        name="1. proleterski bataljon Hrvatske", tags=[],
+        caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,
+        note="Nothing in the gallery names the battalion. The card's photo is from its own book in the Poreklo library "
+             "(Mamula et al., Prvi proleterski bataljon Hrvatske, 1983, p. 260: 'Narod iz sela Sjeničaka donosi hranu borcima "
+             "Prvog proleterskog bataljona'), cut from the page scan by hand (not by --apply)."),
     "3-banijska-brigada": dict(
         name="3. banijska brigada", tags=[],
         caption=nth(3, r"banijsk"), photo=None,

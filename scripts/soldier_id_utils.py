@@ -134,6 +134,7 @@ BRIGADE_CODES = {
     117: 'Centralna bolnica',
     118: '3. Lička',
     119: 'Požarevački odred',
+    120: '1. proleterski bataljon Hrvatske',
     # Add new brigades here with next available code
 }
 

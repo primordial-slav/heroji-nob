@@ -1098,6 +1098,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    120: {
+        'name': '1. proleterski bataljon Hrvatske',
+        'json_file': '1-proleterski-bataljon-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "ANTIC Andrije ANDRIJA, 1914, Selce, Crikvenica. Poginuo ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 
