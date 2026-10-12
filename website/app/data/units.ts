@@ -595,7 +595,7 @@ export const units: Unit[] = [
     name: 'Posavsko-trebavski partizanski odred',
     nameEn: 'Posavina-Trebava Partisan Detachment',
     description: 'Formiran 4. februara 1944. kod Gradačca, od Posavskog i Trebavskog odreda. Borci odreda.',
-    image: '/images/pdf-thumbs/posavsko-trebavski-odred.jpg',
+    image: '/images/posavsko-trebavski-odred.jpg',
     soldierCount: 1969,
     dataFile: '/posavsko-trebavski-odred-soldiers.json',
     pdfFiles: ['/pdfs/posavsko-trebavski-odred.pdf']
@@ -995,7 +995,7 @@ export const units: Unit[] = [
     name: '3. primorsko-goranska brigada',
     nameEn: '3rd Primorje–Gorski Kotar Brigade',
     description: 'Formirana 15. septembra 1943. u Škrljevu u Hrvatskom primorju. Starešine i četni bolničari brigade i poginuli.',
-    image: '/images/pdf-thumbs/3-primorsko-goranska.jpg',
+    image: '/images/3-primorsko-goranska.jpg',
     soldierCount: 804,
     dataFile: '/3-primorsko-goranska-soldiers.json',
     pdfFiles: ['/pdfs/3-primorsko-goranska.pdf']
@@ -1175,7 +1175,7 @@ export const units: Unit[] = [
     name: 'Centralna bolnica',
     nameEn: 'Central Hospital',
     description: 'Formirana u novembru 1941. u zapadnoj Srbiji. Osoblje bolnice i ranjenici čija se jedinica nije mogla utvrditi, u bici na Sutjesci, maja i juna 1943.',
-    image: '/images/pdf-thumbs/borci-sutjeske-centralna-bolnica.jpg',
+    image: '/images/centralna-bolnica.jpg',
     soldierCount: 698,
     dataFile: '/centralna-bolnica-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-centralna-bolnica.pdf']

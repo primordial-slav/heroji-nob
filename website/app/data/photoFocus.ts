@@ -41,6 +41,9 @@ const FOCUS: Record<string, number> = {
   '16-slavonska-omladinska-brigada': 30,
   '8-crnogorska-brigada': 58,
   'druga-proleterska-brigada': 66,
+  '3-primorsko-goranska': 63,
+  'centralna-bolnica': 55,
+  'posavsko-trebavski-odred': 34,
 }
 
 // The object-position for a unit's photo in a wide crop; undefined keeps the stylesheet's default
