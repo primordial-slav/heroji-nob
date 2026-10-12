@@ -101,7 +101,7 @@ export const sources: PdfSource[] = [
   },
   {
     id: 'ljubljanska-brigada',
-    title: '10. slovenska NOV brigada „Ljubljanska"',
+    title: '10. slovenska NOV brigada „Ljubljanska“',
     author: 'Borivoj Lah – Boris',
     pdfPath: '/pdfs/ljubljanska-brigada.pdf',
     thumbnail: '/images/pdf-thumbs/ljubljanska-brigada.jpg',
@@ -110,7 +110,7 @@ export const sources: PdfSource[] = [
   },
   {
     id: '13-proleterska-spisak',
-    title: 'Trinaesta proleterska brigada „Rade Končar"',
+    title: 'Trinaesta proleterska brigada „Rade Končar“',
     author: 'Todor Radošević (ur.)',
     pdfPath: '/pdfs/13-proleterska-spisak.pdf',
     thumbnail: '/images/pdf-thumbs/13-proleterska-spisak.jpg',
@@ -487,6 +487,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: '5-proleterska-partizanke',
+    title: 'Partizanke Pete proleterske crnogorske brigade',
+    author: 'Grupa autora',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897',
+    thumbnail: '/images/pdf-thumbs/5-proleterska-partizanke.jpg',
+    brigadeName: '5. proleterska crnogorska brigada',
+    description: 'Biografije partizanki brigade: rođenje, put u NOB, dužnosti u brigadi, rane i odlikovanja, život posle rata (str. 43–278). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
     id: 'borci-sutjeske-6-istocnobosanska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',
@@ -548,6 +557,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/borci-sutjeske-16-banijska.jpg',
     brigadeName: '16. banijska brigada',
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: '16-banijska-poginuli',
+    title: 'Šesnaesta banijska narodnooslobodilačka udarna brigada',
+    author: 'Ljuban P. Đurić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006',
+    thumbnail: '/images/pdf-thumbs/16-banijska-poginuli.jpg',
+    brigadeName: '16. banijska brigada',
+    description: 'Spisak poginulih boraca i starešina brigade od 26. decembra 1942. do 30. juna 1943, s godinom i mestom rođenja i mestom pogibije (str. 201–247). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   },
   {
     id: 'borci-sutjeske-7-krajiska',

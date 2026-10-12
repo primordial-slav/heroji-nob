@@ -107,10 +107,10 @@
   {
     "last_name": "Bakić",
     "middle_name": "Iva",
-    "first_name": "Mliar",
+    "first_name": "Mitar",
     "fathers_name": "Ivo",
-    "full_name": "Bakić Iva Mliar",
-    "additional_info": "politički komesar divizije, rođen 1908, Berislavci, Podgorica, službenik, Crnogorac, u NOB °d 1941, član KPJ od 1932, od 1939. opunomoćenik CK KIM za rad u jugoslovenskoj vojsci, krajem rata generalni sekretar vlade DFJ. Odlikovan Ordenom narodnog heroja. Umro u Beogradu i960, godine.",
+    "full_name": "Bakić Iva Mitar",
+    "additional_info": "politički komesar divizije, rođen 1908, Berislavci, Podgorica, službenik, Crnogorac, u NOB od 1941, član KPJ od 1932, od 1939. opunomoćenik CK KIM za rad u jugoslovenskoj vojsci, krajem rata generalni sekretar vlade DFJ. Odlikovan Ordenom narodnog heroja. Umro u Beogradu 1960. godine.",
     "birth_year": "1908",
     "pdf_page": 1,
     "pdf_y": 529.0,
@@ -118,12 +118,14 @@
     "pdf_y_end": 581.7,
     "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
     "soldier_id": "0114000006",
+    "pdf_x_end": 212.3,
     "birth_place": "Berislavci, Podgorica",
     "ethnicity": "Crnogorac",
     "occupation": "službenik",
     "death_type": "umro",
-    "rank": "politički komesar divizije",
-    "pdf_x_end": 212.3
+    "death_date": "1960",
+    "death_place": "Beograd",
+    "rank": "politički komesar divizije"
   },
   {
     "last_name": "Baković",
@@ -2426,7 +2428,7 @@
     "first_name": "Fabjan",
     "fathers_name": "Jure",
     "full_name": "Ruše Jure Fabjan",
-    "additional_info": "borac u divizijskoj muzici, rođen 1906, Podstrana, Split, zemljoradnik, Hrvat, u NOB od decembra 1942. godine. SARA« 1.N Bare NIKOLA JADO, borac u divizijskoj muzici, rođen 1922, Stankovci, Benkovac, zidar, Hrvat, u NOB od septembra 1942, član SKOJ-a od aprila 1943, član KPJ od maja 1944, krajem rata komandir čete.",
+    "additional_info": "borac u divizijskoj muzici, rođen 1906, Podstrana, Split, zemljoradnik, Hrvat, u NOB od decembra 1942. godine.",
     "birth_year": "1906",
     "pdf_page": 8,
     "pdf_y": 193.6,
@@ -2434,11 +2436,45 @@
     "pdf_y_end": 233.7,
     "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
     "soldier_id": "0114000099",
+    "rank": "borac",
+    "pdf_x_end": 187.1,
     "birth_place": "Podstrana, Split",
     "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
+    "occupation": "zemljoradnik"
+  },
+  {
+    "soldier_id": "0114000139",
+    "last_name": "Saradan",
+    "middle_name": "Bare",
+    "first_name": "Nikola",
+    "fathers_name": "Bara",
+    "full_name": "Saradan Bare Nikola",
+    "additional_info": "zvani Jado; borac u divizijskoj muzici, rođen 1922, Stankovci, Benkovac, zidar, Hrvat, u NOB od septembra 1942, član SKOJ-a od aprila 1943, član KPJ od maja 1944, krajem rata komandir čete.",
+    "birth_year": "1922",
+    "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
+    "pdf_page": 8,
+    "pdf_y": 235.1,
+    "pdf_x": 17.5,
+    "birth_place": "Stankovci, Benkovac",
+    "ethnicity": "Hrvat",
+    "occupation": "zidar",
     "rank": "borac",
-    "pdf_x_end": 187.1
+    "pdf_x_end": 187.7,
+    "pdf_y_end": 295.9,
+    "other_sources": [
+      {
+        "soldier_id": "0007004648",
+        "name": "Saradan Bare Nikola",
+        "additional_info": "16. 3.1922. Stankovci, Benkovac. Hrvat, zidar. Član SKOJ- a od 21. 4. 1943. KPJ od 10. 5. 1944. U NOV od listopada 1942. u 2. dalm. brigadi. Siječnja 1943. upućen sa muzikom u 2. prolet. diviziju.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 156,
+        "pdf_x": 125.4,
+        "pdf_y": 371.0,
+        "pdf_x_end": 452.4,
+        "pdf_y_end": 394.6,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Seijć",
@@ -2958,19 +2994,38 @@
     "first_name": "Luca",
     "fathers_name": "Marko",
     "full_name": "Čičin-Šain-Osenečki Marka Luca",
-    "additional_info": "bolničarka u divizijskoj bolnici, rođena 1922, Tribunj, Šibenik, domaćica, Hrvatica, u NÒB od jula 1942, član SKOJ-a od 1941, upućena na lečenje u Italiju juna 1944. godine. I )AMJANOVIĆ Koste dr MOMIR MO-MO, lekar u sanitetu divizije, rođen 1899, Malinsko, Šavnik, lekar, Crnogorac, u NOB od 1941, član KPJ od 1944,krajem rata referent saniteta 3. udarne divizije, Umro posle rata.",
+    "additional_info": "bolničarka u divizijskoj bolnici, rođena 1922, Tribunj, Šibenik, domaćica, Hrvatica, u NÒB od jula 1942, član SKOJ-a od 1941, upućena na lečenje u Italiju juna 1944. godine.",
     "birth_year": "1922",
     "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
     "pdf_page": 3,
     "pdf_y": 260.5,
     "pdf_x": 45.1,
-    "birth_place": "Tribunj, Šibenik",
-    "ethnicity": "Hrvatica",
-    "occupation": "domaćica",
-    "death_type": "umro",
     "rank": "bolničarka",
     "pdf_x_end": 214.3,
-    "pdf_y_end": 324.9
+    "pdf_y_end": 324.9,
+    "birth_place": "Tribunj, Šibenik",
+    "ethnicity": "Hrvatica",
+    "occupation": "domaćica"
+  },
+  {
+    "soldier_id": "0114000138",
+    "last_name": "Damjanović",
+    "middle_name": "Koste",
+    "first_name": "Momir",
+    "fathers_name": "Kosta",
+    "full_name": "Damjanović Koste Momir",
+    "additional_info": "dr; zvani Momo; lekar u sanitetu divizije, rođen 1899, Malinsko, Šavnik, lekar, Crnogorac, u NOB od 1941, član KPJ od 1944,krajem rata referent saniteta 3. udarne divizije, Umro posle rata.",
+    "birth_year": "1899",
+    "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
+    "pdf_page": 3,
+    "pdf_y": 326.7,
+    "pdf_x": 45.4,
+    "birth_place": "Malinsko, Šavnik",
+    "ethnicity": "Crnogorac",
+    "occupation": "lekar",
+    "death_type": "umro",
+    "pdf_x_end": 214.0,
+    "pdf_y_end": 391.1
   },
   {
     "last_name": "Đivanović",
@@ -3305,6 +3360,16 @@
     "occupation": "domaćica",
     "rank": "borac",
     "unit_detail": "prateća četa",
-    "pdf_x_end": 407.0
+    "pdf_x_end": 407.0,
+    "other_sources": [
+      {
+        "soldier_id": "0041010530",
+        "name": "Žugić Novice Zorka",
+        "additional_info": "Rođena 31. 10. 1920. godine u selu Novakovići, opština Žabljak. Do rata čuvala ovce i radila kućne poslove; Crnogorka. Učestvovala u omladwinskim manifestacijama i sukobima omladine sa žandarmima. U selu Novakov-ići bilo je trideset domova :bratstva Žugića i desetak domova Vukovića, Niwkitovića i drugih. Napredni omladinci ovih bratstava a'ktivirali su najveći dio omladine ovog ·i obližnjih sela: priređivali su ·izlete sa revolucionarn-im programom i pjevanjem revolucionarnih pjesama; bilo je sukoba sa žandarmima i dr. U 1941. godini Zorka je učesnik u trinaestojulskom ustanku, kada postaje član SKOJ—a, a potom član seoskog odbora AFŽ-a i Narodne omladine. Pri odstupanju partizana u Bosnu vraćena je na rad u pozadini, ali je uhapšena i bila u četničkom zatvoru u toku 1942. godine. Godine 1943. borac je Prateće čete štalba 2. proleterske divizije i preko Sutjeske (V ofanziva) je prešla u Bosnu. Poslije ·bitke na Sutjesci borac je 5. proleterske crnogorske bri·gade, potom rukovodilac četnog saniteta do kraja rata. U 5. brigadi primljena je u KPJ. Za sve vrijeme rata hrabro, disciplinovano i savjesno izvršavala je sve zadatke koje su pred nju postavili SKOJ KPJ. Demdbilisana 1946. godine sa činom starijeg vodnika. Odlxikovana je Ordenom za hrabrost i Ordenom zasluga za narod. Danas živi kao penzioner u Žabljaku i aktivno radi u društveno-političkim organizacijama.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=281",
+        "source_page": 277,
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ]
   }
 ]

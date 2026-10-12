@@ -256,6 +256,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Imenski seznam borcev s Sutjeske: osebje Centralne bolnišnice in ranjenci, katerih enote ni bilo mogoče ugotoviti, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     '3-licka':
       'Seznam padlih, umrlih in pogrešanih borcev brigade ter njeni narodni heroji (str. 361–413). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '5-proleterska-partizanke':
+      'Življenjepisi partizank brigade: rojstvo, pot v NOB, dolžnosti v brigadi, rane in odlikovanja, življenje po vojni (str. 43–278). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '16-banijska-poginuli':
+      'Seznam padlih borcev in poveljnikov brigade od 26. decembra 1942 do 30. junija 1943, z letom in krajem rojstva ter krajem smrti (str. 201–247). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     'pozarevacki-odred':
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
@@ -505,6 +509,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Поименичен список на борците од Сутјеска: персоналот на Централната болница и ранетите чија единица не можела да се утврди, со податоци за секого и што било со него до крајот на војната.',
     '3-licka':
       'Список на загинатите, умрените и исчезнатите борци на бригадата и нејзините народни херои (стр. 361–413). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '5-proleterska-partizanke':
+      'Биографии на партизанките на бригадата: раѓање, пат во НОБ, должности во бригадата, рани и одликувања, живот по војната (стр. 43–278). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '16-banijska-poginuli':
+      'Список на загинатите борци и старешини на бригадата од 26 декември 1942 до 30 јуни 1943, со година и место на раѓање и место на загинување (стр. 201–247). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     'pozarevacki-odred':
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
@@ -753,6 +761,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the Sutjeska: the Central Hospital’s staff, and wounded whose own unit could not be established, with details of each and what became of them by the end of the war.',
     '3-licka':
       'The roll of the brigade’s fallen, dead and missing, and its People’s Heroes (pp. 361–413). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '5-proleterska-partizanke':
+      'Life stories of the brigade’s women Partisans: birth, the way into the war, duties in the brigade, wounds and decorations, life after the war (pp. 43–278). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '16-banijska-poginuli':
+      'The roll of the brigade’s Partisans and officers killed from 26 December 1942 to 30 June 1943, with year and place of birth and where each fell (pp. 201–247). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     'pozarevacki-odred':
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':

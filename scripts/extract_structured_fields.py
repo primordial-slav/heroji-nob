@@ -268,7 +268,10 @@ class Extractor:
         return self.occ_spelling.get(w, w)
 
     def is_occupation(self, w: str) -> bool:
-        """A trade, unless the word is a known place written as one: "Drvar" (the town; "drvar" is a woodcutter)."""
+        """A trade, unless the word is a known place written as one: "Drvar" (the town; "drvar" is a woodcutter), or
+        where she was born: "u činovničkoj porodici"."""
+        if re.match(r'u\s', w):
+            return False
         return w.lower() in self.occupations and not (w[:1].isupper() and self.places.get(w, 0) >= 2)
 
     # ── birth / ethnicity / occupation ───────────────────────
@@ -454,8 +457,9 @@ class Extractor:
                         r'(?![\w-])\s*', '', clause)
         # a massacre is no place: "u Vranićkom pokolju", "u pokolju Vranićana"
         clause = re.sub(rf'\bu\s+(?:[{U}]\w+\s+)?pokolju(?:\s+[{U}]\w+)?', '', clause)
-        # an offensive is no place: "poginuo u V ofanzivi", "u Grmeču u toku četvrte neprijateljske ofanzive"
-        clause = re.sub(r'(?:\bu\s+toku\s+|\bu\s+)?\b(?:[IVX]+\.?|prv\w*|drug\w*|treć\w*|četvrt\w*|pet\w*|šest\w*|sedm\w*)\s+'
+        # an offensive is no place: "poginuo u V ofanzivi", "u Grmeču u toku četvrte neprijateljske ofanzive", "na Grmeču
+        # tokom četvrte neprijateljske ofanzive"
+        clause = re.sub(r'(?:\bu\s+toku\s+|\btokom\s+|\bu\s+)?\b(?:[IVX]+\.?|prv\w*|drug\w*|treć\w*|četvrt\w*|pet\w*|šest\w*|sedm\w*)\s+'
                         r'(?:neprijateljsk\w+\s+)?ofanziv\w*[,.]?\s*', '', clause, flags=re.I)
         clause = re.sub(r'(?:,\s*|\s+)(?:i tu|gde|gdje|protiv|dok|pošto|jer|kada|kad|zajedno|sa(?=\s))\b.*$', '', clause)   # "kod Vrbovca i tu", "..., gdje je i", "(u borbi) sa SS-ovcima"
         clause = re.sub(r'\s*\((?:nema|drugih|nedostaju|ostali)[^)]*\)?', '', clause)

@@ -1,4 +1,5 @@
 import type { Soldier } from './types'
+import { parseDeathDay } from './deathDay'
 
 // ── Sub-units ────────────────────────────────────────────────
 // unit_detail is printed "2. četa, 1. bataljon", "VI bataljon", "1. vod, 2. četa, 3. bataljon", "prištapske jedinice",
@@ -13,7 +14,7 @@ export interface Level {
   n?: number
 }
 
-const ROMAN: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10 }
+const ROMAN: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10, xi: 11, xii: 12 }
 
 function number(raw: string): string | null {
   const n = raw.replace(/\.$/, '').toLowerCase()
@@ -84,25 +85,13 @@ export function unitIndex(list: Soldier[]) {
 
 // ── Day of death ─────────────────────────────────────────────
 
-const MONTHS: [RegExp, number][] = [
-  [/^(januar|siječ)/, 1], [/^(februar|veljač)/, 2], [/^(mart|ožuj)/, 3], [/^(april|travn)/, 4], [/^(maj|svib)/, 5],
-  [/^(jun|lipn)/, 6], [/^(jul|srpn)/, 7], [/^(avgust|august|kolovoz)/, 8], [/^(septemb|rujn)/, 9],
-  [/^(oktob|listopad)/, 10], [/^(novemb|studen)/, 11], [/^(decemb|prosin)/, 12],
-]
-
-/** "15. 01. 1943", "16. IV 1944", "3. decembra 1944" -> "1943-01-15"; null without a day or outside the war */
+/** "15. 01. 1943", "16. XI 1944", "3. decembra 1944", "20.4.1944" -> "1943-01-15"; null without a day or outside
+ * the war. The same reading as "Na današnji dan" (deathDay.ts). */
 export function deathDay(soldier: Soldier): string | null {
   if (!soldier.death_date || soldier.death_type === 'umro') return null
-  const d = soldier.death_date.replace(/\s+/g, ' ')
-  const m = d.match(/^(\d{1,2})\.\s?(\d{1,2}|[IVX]{1,4}|[a-zčćžšđ]+)\.?\s?(19\d\d)/i)
-  if (!m) return null
-  const year = parseInt(m[3], 10)
-  if (year < 1941 || year > 1945) return null
-  let month = /^\d+$/.test(m[2]) ? parseInt(m[2], 10) : ROMAN[m[2].toLowerCase()] ?? 0
-  if (!month) month = MONTHS.find(([rx]) => rx.test(m[2].toLowerCase()))?.[1] ?? 0
-  const day = parseInt(m[1], 10)
-  if (month < 1 || month > 12 || day < 1 || day > 31) return null
-  return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+  const d = parseDeathDay(soldier.death_date)
+  if (!d || d.year < 1941 || d.year > 1945) return null
+  return `${d.year}-${String(d.month).padStart(2, '0')}-${String(d.day).padStart(2, '0')}`
 }
 
 /** "1943-01-15" -> [15, 1, 1943] */

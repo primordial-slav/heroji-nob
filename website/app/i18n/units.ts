@@ -187,7 +187,7 @@ const sl: Record<string, UnitText> = {
   '5-proleterska-brigada': {
     name: '5. proletarska črnogorska brigada',
     description:
-      'Ustanovljena 12. junija 1942 v Smriječnu pri Šavniku. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+      'Ustanovljena 12. junija 1942 v Smriječnu pri Šavniku. Borci brigade v bitki na Sutjeski, maja in junija 1943, ter partizanke brigade.',
   },
   '6-istocnobosanska-brigada': {
     name: '6. vzhodnobosanska proletarska brigada',
@@ -217,7 +217,7 @@ const sl: Record<string, UnitText> = {
   '16-banijska-brigada': {
     name: '16. banijska brigada',
     description:
-      'Ustanovljena 26. decembra 1942 v Klasniću. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
+      'Ustanovljena 26. decembra 1942 v Klasniću. Borci brigade v bitki na Sutjeski, maja in junija 1943, ter borci in poveljniki, padli do konca junija 1943.',
   },
   '7-krajiska-brigada': {
     name: '7. krajiška brigada',
@@ -763,7 +763,7 @@ const mk: Record<string, UnitText> = {
   '5-proleterska-brigada': {
     name: '5-та пролетерска црногорска бригада',
     description:
-      'Формирана на 12 јуни 1942 во Смријечно кај Шавник. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+      'Формирана на 12 јуни 1942 во Смријечно кај Шавник. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, и партизанките на бригадата.',
   },
   '6-istocnobosanska-brigada': {
     name: '6-та источнобосанска пролетерска бригада',
@@ -793,7 +793,7 @@ const mk: Record<string, UnitText> = {
   '16-banijska-brigada': {
     name: '16-та банијска бригада',
     description:
-      'Формирана на 26 декември 1942 во Класниќ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
+      'Формирана на 26 декември 1942 во Класниќ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, и борци и старешини загинати до крајот на јуни 1943.',
   },
   '7-krajiska-brigada': {
     name: '7-ма краишка бригада',
@@ -1341,7 +1341,7 @@ const en: Record<string, UnitText> = {
   '5-proleterska-brigada': {
     name: '5th Proletarian Montenegrin Brigade',
     description:
-      'Formed on 12 June 1942 in Smriječno near Šavnik. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+      'Formed on 12 June 1942 in Smriječno near Šavnik. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, and the brigade’s women Partisans.',
   },
   '6-istocnobosanska-brigada': {
     name: '6th East Bosnian Proletarian Brigade',
@@ -1371,7 +1371,7 @@ const en: Record<string, UnitText> = {
   '16-banijska-brigada': {
     name: '16th Banija Brigade',
     description:
-      'Formed on 26 December 1942 in Klasnić. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
+      'Formed on 26 December 1942 in Klasnić. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, and Partisans and officers killed up to the end of June 1943.',
   },
   '7-krajiska-brigada': {
     name: '7th Krajina Brigade',

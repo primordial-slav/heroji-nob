@@ -155,7 +155,7 @@
     "pdf_page": 24,
     "pdf_y": 412.7,
     "pdf_x": 158.0,
-    "pdf_y_end": 420.8,
+    "pdf_y_end": 430.9,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000009",
     "pdf_x_end": 389.1
@@ -3200,6 +3200,14 @@
         "pdf_x_end": 295.9,
         "pdf_y_end": 479.8,
         "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0120000054",
+        "name": "Brčić Tome Milovan",
+        "additional_info": "1919, Veli IŽ, Zadar.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=288",
+        "source_page": 264,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
     ]
   },
@@ -6244,11 +6252,12 @@
     "pdf_page": 37,
     "pdf_y": 404.0,
     "pdf_x": 184.8,
-    "pdf_y_end": 412.1,
+    "pdf_y_end": 422.1,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000299",
     "birth_place": "Smederevska Palanka",
-    "pdf_x_end": 412.6
+    "pdf_x_end": 412.6,
+    "pdf_x_left": 169.2
   },
   {
     "last_name": "Janković",
@@ -6314,7 +6323,7 @@
     "pdf_page": 37,
     "pdf_y": 370.8,
     "pdf_x": 182.1,
-    "pdf_y_end": 388.9,
+    "pdf_y_end": 399.1,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000303",
     "birth_place": "Đurinci, Sopot",
@@ -7049,7 +7058,17 @@
     "death_type": "poginuo",
     "death_date": "04. 10. 1944",
     "death_place": "Veliki Radinci, Sremska Mitrovica",
-    "pdf_x_end": 449.4
+    "pdf_x_end": 449.4,
+    "other_sources": [
+      {
+        "soldier_id": "0118000270",
+        "name": "Jovanović Dušan",
+        "additional_info": "iz Darosava, Aranđelovac, poginuo 2. XI 1944. u Radincima.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=381",
+        "source_page": 376,
+        "unit_file": "3-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -14646,7 +14665,17 @@
     "death_type": "poginuo",
     "death_date": "20. 10. 1944",
     "death_place": "Beograd",
-    "pdf_x_end": 416.4
+    "pdf_x_end": 416.4,
+    "other_sources": [
+      {
+        "soldier_id": "0118000566",
+        "name": "Ostojić Ž Rade",
+        "additional_info": "iz Rače, Kragujevac, poginuo 20. X 1944. u Beogradu.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=395",
+        "source_page": 390,
+        "unit_file": "3-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Paić",
@@ -16657,12 +16686,13 @@
     "pdf_page": 60,
     "pdf_y": 606.6,
     "pdf_x": 182.1,
-    "pdf_y_end": 644.5,
+    "pdf_y_end": 654.0,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000807",
     "birth_place": "Dugo Polje",
     "rank": "delegat voda, komesar čete, sekretar SKOJ-a bataljona",
-    "pdf_x_end": 417.3
+    "pdf_x_end": 417.3,
+    "pdf_x_left": 165.5
   },
   {
     "last_name": "Pohanić",
@@ -17286,7 +17316,17 @@
     "death_type": "poginuo",
     "death_date": "4. 02. 1945",
     "death_place": "Ilinci, Šid, Sremski front",
-    "pdf_x_end": 347.0
+    "pdf_x_end": 347.0,
+    "other_sources": [
+      {
+        "soldier_id": "0118000678",
+        "name": "Radivojević Ž Momčilo",
+        "additional_info": "iz Papučke, Valjevo, poginuo 4. II 1945. u Ilincima.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=404",
+        "source_page": 399,
+        "unit_file": "3-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radivojević",
@@ -20782,7 +20822,17 @@
     "soldier_id": "0074001016",
     "birth_place": "Lipe, Smederevo",
     "rank": "borac",
-    "pdf_x_end": 422.2
+    "pdf_x_end": 422.2,
+    "other_sources": [
+      {
+        "soldier_id": "0119001050",
+        "name": "Stojanović Stojana Ljubomir",
+        "additional_info": "zemljorad. iz Lipa, rođen 1911. god. u Lipama. U kosmajskom odredu od 1944. U odredu od septembra 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=310",
+        "source_page": 298,
+        "unit_file": "pozarevacki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojanović",
