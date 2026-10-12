@@ -88,6 +88,8 @@ def nth(n, stem):
 # book: a photo printed in the unit's book on znaci.org: dict(pdf, page, xref, caption).
 # descreen: blur radius that smooths a coarse halftone print (book photos).
 # source: a photo from elsewhere (url, caption), kept as the file already on the site.
+# printed: a gallery photo whose znaci.org description doesn't name the unit but a book printing the same
+#   photo does: dict(pdf, page, caption); the doc quotes that caption (the image is the gallery's better print).
 # note: anything the next person should know (shown in docs/UNIT_PHOTOS.md).
 UNITS = {
     # --- on the site ---
@@ -244,8 +246,13 @@ UNITS = {
         note="Nothing in the gallery is tagged with the odred; the photo is from its own book."),
     "posavsko-trebavski-odred": dict(
         name="Posavsko-trebavski partizanski odred", tags=[],
-        caption=r"posavsko[\s-]*trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred", photo=None,
-        note="Nothing in the znaci.org gallery names the odred, and its book (00001/302, re-typeset) prints no photos."),
+        caption=r"posavsko[\s-]*trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred|trebavsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred",
+        photo=None,
+        note="Nothing in the znaci.org gallery names the odred (searched: its name, Trebava, Posavina, Gradačac, Modriča, Doboj, "
+             "and the uncaptioned photos of Bosnia 1944-45), and its book (00001/302, re-typeset) prints no photos. Nor do the "
+             "captions in the books that write about it: 18. hrvatska brigada (00001/251, only a facsimile of a joint report), "
+             "Tuzlanski odred (00003/469), Istočna Bosna u NOR-u (00003/750, 751), Sjeveroistočna Bosna 1944-1945 (00001/103), "
+             "Derventa (00003/827), Teslić u NOB (00003/1026)."),
     "8-kordunaska-divizija": dict(
         name="8. kordunaška divizija", tags=[],
         caption=r"(?:\b8\.|osm\w+)\s+(?:kordunašk\w+\s+)?(?:udarn\w+\s+)?divizij", photo=None,
@@ -419,15 +426,27 @@ UNITS = {
                   caption="Grupa boraca i rukovodilaca 8. vojvođanske brigade sa oficirom 236. sovjetske divizije neposredno uoči forsiranja Dunava kod Apatina"),
         note="Nothing in the gallery names the division; the photo is from the book on its battle at Batina: the 8. vojvođanska was one of its brigades."),
     "posavski-odred": dict(
-        name="Posavski partizanski odred", tags=[],
-        caption=r"posavsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred(?![\w-]*\s*trebav)", photo=None,
-        note="Nothing in the gallery names the detachment, and its book prints only documents. The card shows the list's first page."),
-    "macvanski-odred": dict(
-        name="Mačvanski (Podrinski) NOP odred", tags=[],
-        caption=r"ma[cč]vansk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred|podrinsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred",
+        name="Posavski partizanski odred", tags=["posavo-tamnavski-partizan­s­k­i-odred"],
+        caption=r"posavsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred(?![\w-]*\s*trebav)|tamnavsk\w*\s+(?:[cč]et|odred|bataljon)|posav\w*[\s-]+tamnav",
         photo=None,
-        note="The gallery has only a funeral (14189) and a portrait (14307); the book is a text on znaci.org, without photos. "
-             "The card shows the list's page."),
+        note="Candidate, not used until the user decides: 9823, 'Tamnavski partizanski odred, jesen 1941' (the caption names the Tamnava partisans, not the Posavski odred). The Tamnava partisans in the autumn of 1941 were the odred's own 3. tamnavski battalion (Bojić's book, 00001/279; "
+             "the 3. tamnavski and 4. posavotamnavski battalions hold 1,312 of the roster's 2,529 names); znaci.org tags the "
+             "photo with the Posavo-tamnavski odred, and Ustanak naroda Jugoslavije 1941, knj. I (00002/340, p. 958) prints it "
+             "as 'Grupa tamnavskih partizana u jesen 1941. godine'. No photo names the Posavski odred itself; its book prints "
+             "only documents. The rest of the gallery's Posavo-tamnavski photos are the hanging of two of its officers in Valjevo, 1942."),
+    "macvanski-odred": dict(
+        name="Mačvanski (Podrinski) NOP odred", tags=["macvanski-partizanski-odred", "bitka-za-sabac-1941"],
+        caption=r"ma[cč]vansk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*(?:odred|[cč]et)|podrinsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred"
+                r"|(?:po)?cersk\w*\s+(?:partizansk\w*\s+)?(?:[cč]et|bataljon)|ma[cč]vansk\w*\s+partizan",
+        photo=16273,
+        printed=dict(pdf="00002/340.pdf", page=957,
+                     caption="Grupa mačvanskih partizana u Bogatiću (u drugom redu odozdo Jordan Orce Nikolov)"),
+        note="The gallery describes the same photo as the communists freed from the Sremska Mitrovica prison in August 1941, "
+             "'prebačena je iz Srema u Mačvu septembra 1941'; they joined the odred (Parmaković, 00001/48_30: all but a few "
+             "stayed in the Podrinski odred, Orce Nikolov among them), which held Bogatić that September. Ustanak naroda "
+             "Jugoslavije 1941, knj. I prints it as the Mačva partisans in Bogatić; the gallery's print is the better one. "
+             "Otherwise the gallery has only a funeral (14189) and a portrait (14307), and the odred's book is a web text whose "
+             "only pictures are maps."),
     "3-banijska-brigada": dict(
         name="3. banijska brigada", tags=[],
         caption=nth(3, r"banijsk"), photo=None,
@@ -604,6 +623,48 @@ UNITS = {
         name="15. majevička brigada", tags=["15-majevicka-udarna-brigada"],
         caption=nth(15, r"majevi[cč]k") + "|" + nth(1, r"majevi[cč]k"), photo=13981,
         note='At the Sutjeska, on Milinklade, 9 June 1943.'),
+    # Borci Sutjeske: the Vrhovni štab, four division staffs and the Centralna bolnica
+    "vrhovni-stab": dict(
+        name="Vrhovni štab NOV i POJ", tags=["vrhovni-stab-novj", "prateci-bataljon-vrhovnog-staba"],
+        caption=r"vrhovn\w*\s+[sš]tab|prate[cć]\w*\s+bataljon\w*\s+vrhovn|vrhovn\w*\s+komand\w*\s+nov|glavn\w*\s+[sš]tab\w*\s+(?:nop\s+|partizansk\w*\s+)*odred\w*\s+jugoslavij",
+        photo=8246, card="Josip Broz Tito sa Pratećom četom Vrhovnog štaba u Mliništu, septembra 1942. godine.",
+        crop=(0.04, 0.27, 0.96, 1.0),
+        note="The escort company that became the Prateći bataljon, which the Borci Sutjeske chapter lists with the Vrhovni "
+             "štab. The gallery has no group of the Vrhovni štab at the Sutjeska; its other photos of the escort are from "
+             "Foča and Mliništa in 1942 (8250, 8243) and from 1944 (11835, 15712)."),
+    "centralna-bolnica": dict(
+        name="Centralna bolnica", tags=["centralna-bolnica-novj"],
+        caption=r"centraln\w*\s+(?:partizansk\w*\s+)?bolnic|centraln\w*\s+hirur|ranjenik\w*.{0,40}sutjes|sutjes\w*.{0,60}ranjenik",
+        photo=None,
+        note="The only photo naming the hospital, 'Dolazak ranjenika Centralne bolnice Vrhovnog štaba u Drvar, avgust 1942' "
+             "(16355), is a blurred snapshot of a wounded woman, not a group. The gallery's photos of the wounded at the "
+             "Sutjeska and the Piva (11151, 3429, 3432) don't name it, nor do the captions in Sanitetska služba u NOR-u "
+             "(00003/386, 388, 389; 00001/199) and the Sutjeska zbornik (00003/437-441). The card shows the chapter's first page."),
+    "1-proleterska-divizija": dict(
+        name="1. proleterska divizija", tags=["1-proleterska-divizija-novj"],
+        caption=nth(1, r"proletersk\w*\s+(?:udarn\w*\s+)?divizij") + r"|\bI\s+proleterske\s+divizij",
+        photo=12386,
+        note="The division's surgical team, one of the services the Borci Sutjeske chapter lists with its staff, five "
+             "months before the Sutjeska. Also in the gallery: the staff's signals company in January 1944 (14240), the staff "
+             "and fighters on the march in 1944 (9640), its fighters entering Zagreb in May 1945 (12620)."),
+    "2-proleterska-divizija": dict(
+        name="2. proleterska divizija", tags=["2-proleterska-divizija-novj"],
+        caption=nth(2, r"proletersk\w*\s+(?:udarn\w*\s+)?divizij"),
+        photo=9248, card="Jedinice Druge proleterske divizije u pokretu kroz Zelengoru, u toku bitke na Sutjesci, juna 1943.",
+        note="At the Sutjeska. The gallery also has its units crossing the Sutjeska at Tjentište on 8 June 1943 (14478)."),
+    "3-udarna-divizija": dict(
+        name="3. udarna divizija", tags=["3-udarna-divizija-novj"],
+        caption=nth(3, r"(?:udarn\w*\s+|crnogorsk\w*\s+|proletersk\w*\s+)*divizij"),
+        photo=5733, card="Muzička grupa III divizije \"Sava Kovačević\", gotovo svi borci ove divizije izginuli su na Sutjesci, 1943 g.",
+        note="The division's music group, in 1943; Sava Kovačević commanded the division at the Sutjeska, where he was killed. "
+             "Also in the gallery: Pero Ćetković, its commander until March 1943, with the staffs of its three brigades "
+             "(15639, a coarse print), and its units in 1944-45 (6763, 11193, 14721)."),
+    "7-banijska-divizija": dict(
+        name="7. banijska divizija", tags=["7-banijska-divizija-novj"],
+        caption=nth(7, r"(?:banijsk\w*\s+)?(?:udarn\w*\s+)?divizij"),
+        photo=7720, card="Borci VII divizije na železničkoj stanici u Glini, januara 1944.",
+        note="Glina is in Banija, and znaci.org tags the photo with the 7. banijska divizija. The gallery also has a column of "
+             "the division in the Rama valley in March 1943 (10585, a narrow print) and its wounded at the Neretva (9035)."),
 }
 
 # Words that suggest a group of soldiers; words that suggest something else.
@@ -954,6 +1015,10 @@ def write_doc():
         if unit["photo"]:
             d = photo_details(str(unit["photo"]))
             desc = d["caption"] or ("%s *(caption card)*" % unit["card"])
+            if unit.get("printed"):
+                pr = unit["printed"]
+                desc = "%s *(caption where the photo is printed, [book, p. %d](%s/%s#page=%d))*" % (
+                    pr["caption"], pr["page"], BASE, pr["pdf"], pr["page"])
             if d["date"] and d["date"][:4] not in desc:
                 desc += " (%s)" % d["date"]
             row = "| %s | `%s.jpg` | [znaci %s](%s/fotografija.php?br=%s) | %s%s |" % (
