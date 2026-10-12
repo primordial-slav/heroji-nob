@@ -974585,5 +974585,1449 @@
     "link_id": "0112000542",
     "link_name": "Švabić Dragomira Mihailo",
     "reason": "Same soldier in Posavski odred and Vrhovni štab; same father, birth year, birthplace. Borci Sutjeske staff chapters"
+  },
+  {
+    "id": 99079,
+    "action": "edit",
+    "soldier_id": "0001100049",
+    "fields": {
+      "additional_info": "zvani Sićko; kurir Štaba 3. bataljona, rođen 1922, Baljkovac, Kragujevac, radnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo na Zec planini, kod Travnika, juna 1944. godine."
+    },
+    "reason": "The next entry, Banjac Steve Veuko, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"BANJAC Steve VEUKO, borac 3. bataljona, \"); the entry is merged into 0001000495"
+  },
+  {
+    "id": 99080,
+    "action": "add",
+    "soldier_id": "0001000495",
+    "new_id": "0001101873",
+    "record": {
+      "last_name": "Banjac",
+      "middle_name": "Steve",
+      "fathers_name": "Stevo",
+      "first_name": "Veljko",
+      "additional_info": "borac 3. bataljona, rođen 1919, Sitneši, Srbac, trgovački pomoćnik, Srbin, u NOB od januara 1943, poginuo na Vjeterniku, kod Han Pijeska, 24. juna 1943.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 4,
+      "pdf_y": 101.6,
+      "pdf_x": 204.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 4): it was glued into 0001100049's text; VEUKO: lj read as U; Prva proleterska's book prints Banjac Steve Veljko, 1919, Srbac"
+  },
+  {
+    "id": 99081,
+    "action": "edit",
+    "soldier_id": "0001100323",
+    "fields": {
+      "additional_info": "zvana Zrno; bolničarka 3. čete 3. bataljona, rođena 1925, Čatrnja, Vojnić, učenica, Hrvatica, u NOB od 1941, član KPJ od 1942, krajem rata referent saniteta diviziona."
+    },
+    "reason": "The next entry, Glavan Mijo, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"G LA VAN Ante MIJO, politički delegat vo\")"
+  },
+  {
+    "id": 99082,
+    "action": "add",
+    "soldier_id": "0001100323",
+    "new_id": "0001101874",
+    "record": {
+      "last_name": "Glavan",
+      "middle_name": "Ante",
+      "fathers_name": "Ante",
+      "first_name": "Mijo",
+      "additional_info": "politički delegat voda u 4. bataljonu, rođen 1920, Vrgorac, đak, Hrvat, u NOB od 1941, član KPJ od 1941, krajem rata politički komesar Kulturne ekipe divizije.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 27,
+      "pdf_y": 102.5,
+      "pdf_x": 44.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 27): it was glued into 0001100323's text"
+  },
+  {
+    "id": 99083,
+    "action": "edit",
+    "soldier_id": "0001100389",
+    "fields": {
+      "additional_info": "zvani Salko; borac 1. bataljona, rođen 1921, Klek, Prozor, radnik, Musliman, u NOB od 1941, poginuo kod Šahovića, Bijelo Polje, 16. maja 1943. godine."
+    },
+    "reason": "The next entry, Hrnjak Spasoja Branko, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"HRNJAK Spasoja BRANKO, borac 2. čete 6. \")"
+  },
+  {
+    "id": 99084,
+    "action": "add",
+    "soldier_id": "0001100389",
+    "new_id": "0001101875",
+    "record": {
+      "last_name": "Hrnjak",
+      "middle_name": "Spasoja",
+      "fathers_name": "Spasoje",
+      "first_name": "Branko",
+      "additional_info": "borac 2. čete 6. bataljona, rođen 1918, Trnavac, Korenica, radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Zelengori, kod Balinovca, 10. juna 1943.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 30,
+      "pdf_y": 436.8,
+      "pdf_x": 201.6
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 30): it was glued into 0001100389's text"
+  },
+  {
+    "id": 99085,
+    "action": "edit",
+    "soldier_id": "0001100429",
+    "fields": {
+      "additional_info": "borac 2. bataljona, rođen 1926, Gornje Vinovo, Drniš, ugostiteljski radnik, Hrvat, u NOB od 1942, član SKOJ-a od 1942, član KPJ od 1943. godine."
+    },
+    "reason": "The next entry, Ivković Spasoja Dane, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"V KO VIĆ Spasoja DANE, borac 2. bataljon\"); the entry is merged into 0001003974"
+  },
+  {
+    "id": 99086,
+    "action": "add",
+    "soldier_id": "0001003974",
+    "new_id": "0001101876",
+    "record": {
+      "last_name": "Ivković",
+      "middle_name": "Spasoja",
+      "fathers_name": "Spasoje",
+      "first_name": "Dane",
+      "additional_info": "borac 2. bataljona, rođen 1928, Čorle, Prnjavor, zemljoradnik, Srbin, u NOB od januara 1943, poginuo u Miljevini 13. juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 33,
+      "pdf_y": 119.8,
+      "pdf_x": 40.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 33): it was glued into 0001100429's text"
+  },
+  {
+    "id": 99087,
+    "action": "edit",
+    "soldier_id": "0001100853",
+    "fields": {
+      "additional_info": "zvani Cakan; borac, rođen 1920, Vukosavci, Aranđelovac, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a od 1941, poginuo na Sutjesci juna 1943."
+    },
+    "reason": "The next entry, Mihaljica Marka Veliko, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"MIHALJICA Marka VELIKO, komandir 1. čete\"); the entry is merged into 0001007105"
+  },
+  {
+    "id": 99088,
+    "action": "add",
+    "soldier_id": "0001007105",
+    "new_id": "0001101877",
+    "record": {
+      "last_name": "Mihaljica",
+      "middle_name": "Marka",
+      "fathers_name": "Marko",
+      "first_name": "Veljko",
+      "additional_info": "komandir 1. čete 4. bataljona, rođen 1911, Provo, Livno, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo kod Vlaseniee 26. juna 1943.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 57,
+      "pdf_y": 313.0,
+      "pdf_x": 43.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 57): it was glued into 0001100853's text; VELIKO: lj read as li"
+  },
+  {
+    "id": 99089,
+    "action": "edit",
+    "soldier_id": "0001100921",
+    "fields": {
+      "additional_info": "borac Omladinske čete 3. bataljona, rođena 1921, Crnaja, Cazin, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a."
+    },
+    "reason": "The next entry, Milojević Stojana Miloje, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"MILOJEVIĆ Stojana MILOJE, zamenik komand\")"
+  },
+  {
+    "id": 99090,
+    "action": "add",
+    "soldier_id": "0001100921",
+    "new_id": "0001101878",
+    "record": {
+      "last_name": "Milojević",
+      "middle_name": "Stojana",
+      "fathers_name": "Stojan",
+      "first_name": "Miloje",
+      "additional_info": "zamenik komandanta brigade, rođen 1912, Ursule, Rekovac, podoficir Jugoslovenske vojske, Srbin, u NOB od 1941, član KIM od 1942, većnik Drugog zasedanja AVNOJ-a, krajem rata komandant 21. srpske divizije. Odlikovan Ordenom narodnog heroja. Umro 1984.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 60,
+      "pdf_y": 230.8,
+      "pdf_x": 201.6
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 60): it was glued into 0001100921's text"
+  },
+  {
+    "id": 99091,
+    "action": "edit",
+    "soldier_id": "0001101139",
+    "fields": {
+      "additional_info": "zvani Picunov; borac u intendanturi brigade, rođen 1919, Vrpolje, Šibenik, železničar, FIrvat, u NÒB od oktobra 1942, poginuo u Sandžaku, kod sela Višnjice, 20. maja 1943."
+    },
+    "reason": "The next entry, Pljevaljčić Jovana Vojin, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"PLJEVALJČIĆ Jovana VOJIN, borac 6. batal\"); the entry is merged into 0001009650"
+  },
+  {
+    "id": 99092,
+    "action": "add",
+    "soldier_id": "0001009650",
+    "new_id": "0001101879",
+    "record": {
+      "last_name": "Pljevaljčić",
+      "middle_name": "Jovana",
+      "fathers_name": "Jovan",
+      "first_name": "Vojin",
+      "additional_info": "borac 6. bataljona, rođen 1916, Goražde, zemljoradnik, Srbin, u NOB od aprila 1943, poginuo na Zelengori, kod Balinovca, 10. juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 73,
+      "pdf_y": 372.4,
+      "pdf_x": 230.3
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 73): it was glued into 0001101139's text"
+  },
+  {
+    "id": 99093,
+    "action": "edit",
+    "soldier_id": "0001101399",
+    "fields": {
+      "additional_info": "zvani Vaso; borac Omladinske čete 3. bataljona, rođen 1923, Samobor, Gacko, radnik, Srbin, u NOB od 1941, član SKOJ-a od marta 1942, član KPJ od oktobra 1943, krajem rata sekretar Sreskog komiteta SKOJ-a. Umro 1985. godine."
+    },
+    "reason": "The next entry, Stefanović-Gabričević Dragomira Anđelija, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"STEFANOVIĆ-GABRIČEVIC Drago mira ANĐELIJ\")"
+  },
+  {
+    "id": 99094,
+    "action": "add",
+    "soldier_id": "0001101399",
+    "new_id": "0001101880",
+    "record": {
+      "last_name": "Stefanović-Gabričević",
+      "middle_name": "Dragomira",
+      "fathers_name": "Dragomir",
+      "first_name": "Anđelija",
+      "additional_info": "zvani Anđa; borac 3. čete 3. bataljona, rođena 1922, Kragujevac, studentkinja tehnike, Srpkinja, u NOB od 1941, član KPJ od maja 1942, krajem rata zamenik političkog komesara art. diviziona.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 89,
+      "pdf_y": 111.0,
+      "pdf_x": 46.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 89): it was glued into 0001101399's text"
+  },
+  {
+    "id": 99095,
+    "action": "edit",
+    "soldier_id": "0001101415",
+    "fields": {
+      "additional_info": "zvani Žikica; zamenik referenta saniteta 4. bataljona, rođen 1919, Kraljevo, student medicine, Srbin, u NOB od 1941, član KPJ od 1942. godine. rrOJKOVIĆ Stojana BRANKO, borac 3. bataljona, rođen 1923, Sitneši, Srbac, zemljoradnik, Srbin, u NOB od januara 1943, poginuo na Samarima, kod Zvornika, 7. jula 1943."
+    },
+    "reason": "The next entry, Hojković Teodora Slobodan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"HOJKOVIĆ Teodora SLOBODAN, borac 4. bata\"); the entry is merged into 0001011875"
+  },
+  {
+    "id": 99096,
+    "action": "add",
+    "soldier_id": "0001011875",
+    "new_id": "0001101881",
+    "record": {
+      "last_name": "Stojković",
+      "middle_name": "Teodora",
+      "fathers_name": "Teodor",
+      "first_name": "Slobodan",
+      "additional_info": "borac 4. bataljona, rođen 1925, Sitneši, Srbac, radnik, Srbin, u NOB od januara 1943, poginuo na Bavanu, Zelengora, 9. juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 90,
+      "pdf_y": 315.1,
+      "pdf_x": 7.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 90): it was glued into 0001101415's text; between Stojanović and Stojović on the page: Stojković"
+  },
+  {
+    "id": 99097,
+    "action": "edit",
+    "soldier_id": "0001101424",
+    "fields": {
+      "additional_info": "borac 2. čete 1. bataljona, rođen 1924, Vlasenica, đak učiteljske škole, Musliman, u NOB od 1941, član SKOJ-a od 1940. Umro 1990. godine u Sarajevu."
+    },
+    "reason": "The next entry, Svitijca Stanka Mladen, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"SVITIJCA Stanka MLADEN, puškomitraljezac\"); the entry is merged into 0001011986"
+  },
+  {
+    "id": 99098,
+    "action": "add",
+    "soldier_id": "0001011986",
+    "new_id": "0001101882",
+    "record": {
+      "last_name": "Svitijca",
+      "middle_name": "Stanka",
+      "fathers_name": "Stanko",
+      "first_name": "Mladen",
+      "additional_info": "puškomitraljezac 3. čete 4. bataljona, rođen 1924, Donje Vukovsko, Kupres, zemljoradnik, Srbin, u NOB od juna 1942, član SKOJ-a od septembra 1942, član KPJ od oktobra 1943. godine.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 91,
+      "pdf_y": 40.4,
+      "pdf_x": 46.9
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 91): it was glued into 0001101424's text"
+  },
+  {
+    "id": 99099,
+    "action": "edit",
+    "soldier_id": "0001101808",
+    "fields": {
+      "additional_info": "zvani Doka; borac 1. čete 3. bataljona, rođen 1919, Sitneši, Srbac, zemljoradnik, Srbin, u NOB od januara 1943, član KPJ od februara 1944, krajem rata komandir voda."
+    },
+    "reason": "The next entry, Šoljak Ante Milan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"ŠOLJAK Ante MILAN, puškomitraljezac u 2.\"); the entry is merged into 0001012184"
+  },
+  {
+    "id": 99100,
+    "action": "add",
+    "soldier_id": "0001012184",
+    "new_id": "0001101883",
+    "record": {
+      "last_name": "Šoljak",
+      "middle_name": "Ante",
+      "fathers_name": "Ante",
+      "first_name": "Milan",
+      "additional_info": "puškomitraljezac u 2. bataljonu, rođen 1924, Vrgorac, službenik, Hrvat, u NOB od 1942, član SKOJ-a od 1942, član KPJ od 1943, poginuo u Beogradu 17. oktobra 1944. godine.",
+      "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+      "pdf_page": 93,
+      "pdf_y": 518.7,
+      "pdf_x": 227.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 93): it was glued into 0001101808's text"
+  },
+  {
+    "id": 99101,
+    "action": "edit",
+    "soldier_id": "0039100122",
+    "fields": {
+      "additional_info": "borac 1. bataljona, rođen 1915, Vrpolje, Dvor, zemljoradnik, Srbin, u NOB od septembra 1942, poginuo na Sutjesci juna 1943. godine."
+    },
+    "reason": "The next entry, Ccrnica Ante Mate, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"C CRNICA Ante MATE, borac 1 . čete 3. ba\")"
+  },
+  {
+    "id": 99102,
+    "action": "add",
+    "soldier_id": "0039100122",
+    "new_id": "0039101347",
+    "record": {
+      "last_name": "Crnica",
+      "middle_name": "Ante",
+      "fathers_name": "Ante",
+      "first_name": "Mate",
+      "additional_info": "borac 1 . čete 3. bataljona, rođen 1906, Zaton, Šibenik, zemljoradnik, Hrvat, u NOB od 1942.",
+      "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+      "pdf_page": 8,
+      "pdf_y": 152.9,
+      "pdf_x": 102.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 8): it was glued into 0039100122's text; \"C CRNICA\", before Crnogorac; Crnica of Zaton, Šibenik, as other books print the family"
+  },
+  {
+    "id": 99103,
+    "action": "edit",
+    "soldier_id": "0039101194",
+    "fields": {
+      "additional_info": "borac 1. bataljona, rođen kod Mrkonjić Grada, zemljoradnik, Srbin, u NÒB od 1942, poginuo u Prijepolju 4. decembra 1943. <"
+    },
+    "reason": "The next entry, Ćirimilac Miloša Verka, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I RIMI LAC Miloša VERKA, bolničarka u 2.\")"
+  },
+  {
+    "id": 99104,
+    "action": "add",
+    "soldier_id": "0039101194",
+    "new_id": "0039101348",
+    "record": {
+      "last_name": "Ćirimilac",
+      "middle_name": "Miloša",
+      "fathers_name": "Miloš",
+      "first_name": "Verka",
+      "additional_info": "bolničarka u 2. bataljonu, rođena 1922, Velereč, Gornji Milanovac, domaćica, Srpkinja, u NOB od 1941, član KPJ, , poginula na Zelengori juna 1943.",
+      "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+      "pdf_page": 9,
+      "pdf_y": 670.4,
+      "pdf_x": 316.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 9): it was glued into 0039101194's text"
+  },
+  {
+    "id": 99105,
+    "action": "edit",
+    "soldier_id": "0039100181",
+    "fields": {
+      "additional_info": "borac 1. bataljona, rođen 1927, Plavno, Knin, zemljoradnik, Srbin, u NOB od 1942, poginuo na Sutjesci, kod Tjentišta, početkom juna 1943. godine"
+    },
+    "reason": "The next entry, Đajić Miodrag, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"ĐAJIĆ MIODRAG MIJO, komandir 1. cete 4. \")"
+  },
+  {
+    "id": 99106,
+    "action": "add",
+    "soldier_id": "0039100181",
+    "new_id": "0039101349",
+    "record": {
+      "last_name": "Đajić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Miodrag",
+      "additional_info": "zvani Mijo; komandir 1. cete 4. bataljona, rođen 1920, Užice, krojački radnik, Srbin, u NOB od 1941, elan KPJ, poginuo na Ursulama, kod Sjenice, 15. novembra 1943. godine. DAROVI(' Vice IVO, puškomitraljezac 2- čete 1. bataljona, rođen 1917, Göns, Šibenik, radnik, Hrvat, u NOB od 1941, član SKOJ-a od 1942, član KPJ od avgusta 1943, krajem rata zamenik komandanta bataljona.",
+      "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+      "pdf_page": 13,
+      "pdf_y": 605.7,
+      "pdf_x": 133.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 13): it was glued into 0039100181's text"
+  },
+  {
+    "id": 99107,
+    "action": "edit",
+    "soldier_id": "0039101188",
+    "fields": {
+      "additional_info": "borac 1. čete 4. bataljona, rođen 1923, Užice, radnik, Srbin, u NOB od 1941, član SKOJ-a."
+    },
+    "reason": "The next entry, Zjatić Mladena Prvoslav, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"J ATIC Mladena PRVOSLAV PRLE, \" kurir Št\")"
+  },
+  {
+    "id": 99108,
+    "action": "add",
+    "soldier_id": "0039101188",
+    "new_id": "0039101350",
+    "record": {
+      "last_name": "Zlatić",
+      "middle_name": "Mladena",
+      "fathers_name": "Mladen",
+      "first_name": "Prvoslav",
+      "additional_info": "zvani Prle; \" kurir Štaba brigade, rođen 1923, Užice, radnik, Srbin, u NOB od 1941. eodine, član KPJ.",
+      "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+      "pdf_page": 73,
+      "pdf_y": 185.3,
+      "pdf_x": 133.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 73): it was glued into 0039101188's text; \"ØJ ATIC\" after Zlatić Đorđa Miodrag, Užice"
+  },
+  {
+    "id": 99109,
+    "action": "edit",
+    "soldier_id": "0005100427",
+    "fields": {
+      "additional_info": "politički komesar 2. čete 2. bataljona, rođen 1921, neutvrđenog mesta rođenja, đak, član KPJ od 1942, dezertirao sa Vučeva 11. juna 1943. i stupio u četničke redove."
+    },
+    "reason": "The next entry, Kovijanić-Prebiračević Radoša Draginja, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"KOVIJANIĆ-PREBIRAČEVIC Rado ša DRAGINJA,\")"
+  },
+  {
+    "id": 99110,
+    "action": "add",
+    "soldier_id": "0005100427",
+    "new_id": "0005101209",
+    "record": {
+      "last_name": "Kovijanić-Prebiračević",
+      "middle_name": "Radoša",
+      "fathers_name": "Radoš",
+      "first_name": "Draginja",
+      "additional_info": "borac 4. bataljona, rođena 1927, Slijepač Most, Bijelo Polje, domaćica, Crnogorka, u NOB od maja 1943, član SKOJ-a od avgusta 1943, krajem rata četna bolničarka.",
+      "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
+      "pdf_page": 29,
+      "pdf_y": 117.3,
+      "pdf_x": 45.1
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 29): it was glued into 0005100427's text"
+  },
+  {
+    "id": 99111,
+    "action": "edit",
+    "soldier_id": "0005100676",
+    "fields": {
+      "additional_info": "borac prateće čete 4. bataljona, rođen 1924, Snjegotina, Čelinac, Banja Luka, zemljoradnik, Srbin, u NOB od januara 1943, krajem rata komandir PA voda."
+    },
+    "reason": "The next entry, Pejanović-Bugarinović Slava, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"PEJANOVIĆ-BUGARINOVIĆ Miluti na SLAVA, b\")"
+  },
+  {
+    "id": 99112,
+    "action": "add",
+    "soldier_id": "0005100676",
+    "new_id": "0005101210",
+    "record": {
+      "last_name": "Pejanović-Bugarinović",
+      "middle_name": "Milutina",
+      "fathers_name": "Milutin",
+      "first_name": "Slava",
+      "additional_info": "bolničarka 2. čete 5. bataljona, rođena 1924, Prizren, učenica, Črnogorka, član SKOJ-a.",
+      "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
+      "pdf_page": 42,
+      "pdf_y": 219.5,
+      "pdf_x": 22.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 42): it was glued into 0005100676's text"
+  },
+  {
+    "id": 99113,
+    "action": "edit",
+    "soldier_id": "0040001338",
+    "fields": {
+      "additional_info": "kurir 2. čete 3. bataljona, rođen 1925, Martinići, Danilovgrad, đak, Crnogorac, u NOB od 1941, član KPJ od novembra 1942, krajem rata komandant art. diviziona. Umro 1988. godine."
+    },
+    "reason": "The next entry, Strahinja Ilije Dušan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"S TRAHINJA Ilije DUŠAN, zamenik političk\")"
+  },
+  {
+    "id": 99114,
+    "action": "add",
+    "soldier_id": "0040001338",
+    "new_id": "0040001721",
+    "record": {
+      "last_name": "Strahinja",
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Dušan",
+      "additional_info": "zamenik političkog komesara 1. čete 1. bataljona, rođen 1912, Podgor, Bar, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ, krajem rata politički komesar art. diviziona.",
+      "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+      "pdf_page": 83,
+      "pdf_y": 504.6,
+      "pdf_x": 131.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 83): it was glued into 0040001338's text"
+  },
+  {
+    "id": 99115,
+    "action": "edit",
+    "soldier_id": "0041000074",
+    "fields": {
+      "additional_info": "borac 2. bataljona, rođen 1926, Kuta, Nikšić, zemljoradnik, Crnogorac, u NOB od 1941, član SKOJ-a od 1943. godine."
+    },
+    "reason": "The next entry, Beganović-Duratbegović Arslana Fatima, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"BEGANOVIĆ-DURATBEGOVIĆ Ar slana FATIMA, \")"
+  },
+  {
+    "id": 99116,
+    "action": "add",
+    "soldier_id": "0041000074",
+    "new_id": "0041001575",
+    "record": {
+      "last_name": "Beganović-Duratbegović",
+      "middle_name": "Arslana",
+      "fathers_name": "Arslan",
+      "first_name": "Fatima",
+      "additional_info": "borac prištapskih jedinica brigade, rođena 1915, Duratbegov Dolac, Gornji Vakuf, domaćica, Muslimanka, u NOB od 1942, poginula na Sutjesci juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+      "pdf_page": 5,
+      "pdf_y": 494.2,
+      "pdf_x": 224.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 5): it was glued into 0041000074's text"
+  },
+  {
+    "id": 99117,
+    "action": "edit",
+    "soldier_id": "0041000617",
+    "fields": {
+      "additional_info": "borac 3. bataljona, rođen 1927. godine, Zagarač, Danilovgrad, dak, Crnogorac."
+    },
+    "reason": "The next entry, Lalatović-Lalović Spasoja Mileva, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"L ALATO VIĆ- L ALO VIĆ Spasoja MI LEVA, \")"
+  },
+  {
+    "id": 99118,
+    "action": "add",
+    "soldier_id": "0041000617",
+    "new_id": "0041001576",
+    "record": {
+      "last_name": "Lalatović-Lalović",
+      "middle_name": "Spasoja",
+      "fathers_name": "Spasoje",
+      "first_name": "Mileva",
+      "additional_info": "član politodela brigade, rođena 1917, Nikšić, studentkinja, Crnogórka, u NOB od 1941, član KPJ od 1939, po proboju sa Sutjeske uhvatili je i ubili četnici na pl. Goliji juna 1943. LALIĆ Tripka L7UBAN, borac 3. čete 5. bataljona, rođen 1919, Lisac, Novi Travnik, zemljoradnik, Srbin, u NOB od 1942. godine.",
+      "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+      "pdf_page": 37,
+      "pdf_y": 169.3,
+      "pdf_x": 227.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 37): it was glued into 0041000617's text"
+  },
+  {
+    "id": 99119,
+    "action": "edit",
+    "soldier_id": "0041000963",
+    "fields": {
+      "additional_info": "borac 4. bataljona, rođen 1921, Tešanj, službenik, Srbin, poginuo na Sutjesci juna 1943."
+    },
+    "reason": "The next entry, Pejović Petra Bosa, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"PEJOVIĆ Petra BOSA, borac 2. čete 3. bat\")"
+  },
+  {
+    "id": 99120,
+    "action": "add",
+    "soldier_id": "0041000963",
+    "new_id": "0041001577",
+    "record": {
+      "last_name": "Pejović",
+      "middle_name": "Petra",
+      "fathers_name": "Petar",
+      "first_name": "Bosa",
+      "additional_info": "borac 2. čete 3. bataljona, rođena 1921, Cetinje, učiteljica, Crnogorka, u NOB od 1941, član KPJ, krajem rata član Okružnog komiteta KPJ Cetinje.",
+      "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+      "pdf_page": 55,
+      "pdf_y": 278.2,
+      "pdf_x": 225.1
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 55): it was glued into 0041000963's text"
+  },
+  {
+    "id": 99121,
+    "action": "edit",
+    "soldier_id": "0041001223",
+    "fields": {
+      "additional_info": "borac 5. bataljona, rođen 1921, Stijena, Podgorica, dak, Crnogorac, u NOB od 1941. godine."
+    },
+    "reason": "The next entry, Stojanović Nikole Milorad, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"S TOJANOVIĆ Nikole MILORAD, borac 5. bat\")"
+  },
+  {
+    "id": 99122,
+    "action": "add",
+    "soldier_id": "0041001223",
+    "new_id": "0041001578",
+    "record": {
+      "last_name": "Stojanović",
+      "middle_name": "Nikole",
+      "fathers_name": "Nikola",
+      "first_name": "Milorad",
+      "additional_info": "borac 5. bataljona, rođen 1925, Stović, Foča, zemljoradnik, Srbin, u NOB od 1942, poginuo u Miljevini sredinom juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+      "pdf_page": 69,
+      "pdf_y": 37.8,
+      "pdf_x": 225.9
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 69): it was glued into 0041001223's text"
+  },
+  {
+    "id": 99123,
+    "action": "edit",
+    "soldier_id": "0042000089",
+    "fields": {
+      "additional_info": "borac 2. čete 1. bataljona, rođen 1908, Klečkovac, Sokolac, zemljoradnik, Srbin, u NOB od 1941, član KPJ od novembra 1940, krajem rata komandant romanijskog vojnog područja."
+    },
+    "reason": "The next entry, Cvjetinović Dike Savo, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"C VIETINO VIĆ Dike SÀVO, borac, rođen 19\")"
+  },
+  {
+    "id": 99124,
+    "action": "add",
+    "soldier_id": "0042000089",
+    "new_id": "0042000808",
+    "record": {
+      "last_name": "Cvjetinović",
+      "middle_name": "Dike",
+      "fathers_name": "Diko",
+      "first_name": "Savo",
+      "additional_info": "borac, rođen 1923, Gornja Pilića, Zvornik, zemljoradnik, Srbin, u NOB od 1942, poginuo u Miljevini 14. juna 1943.",
+      "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+      "pdf_page": 6,
+      "pdf_y": 395.6,
+      "pdf_x": 194.2
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 6): it was glued into 0042000089's text"
+  },
+  {
+    "id": 99125,
+    "action": "edit",
+    "soldier_id": "0042000524",
+    "fields": {
+      "additional_info": "borac 2. čete 2. bataljona, rođen 1911, Bereg, Sokolac, zemljoradnik, Srbin, u NOB od 1942. godine."
+    },
+    "reason": "The next entry, Maninčić Milan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"M ANINČIĆ Pavia MILAN MILE, borac 2. čet\")"
+  },
+  {
+    "id": 99126,
+    "action": "add",
+    "soldier_id": "0042000524",
+    "new_id": "0042000809",
+    "record": {
+      "last_name": "Maninčić",
+      "middle_name": "Pavla",
+      "fathers_name": "Pavle",
+      "first_name": "Milan",
+      "additional_info": "zvani Mile; borac 2. čete 2. bataljona, rođen 1919, Gučevo, Rogatica, zemljoradnik, Srbin, u NOB od januara 1943, krajem rata komandir voda. Umro 1982.",
+      "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+      "pdf_page": 32,
+      "pdf_y": 520.8,
+      "pdf_x": 10.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 32): it was glued into 0042000524's text"
+  },
+  {
+    "id": 99127,
+    "action": "edit",
+    "soldier_id": "0043000007",
+    "fields": {
+      "additional_info": "borac, rođen 1925, Počitelj, Čapljina, đak, Musliman, u NOB od 1942, član SKOJ-a od 1942, poginuo na Sutjesci juna 1943."
+    },
+    "reason": "The next entry, Alajbegović-Prodanović Hasana Razija, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"ALAJBEGOVIĆ-PRODANOVIĆ Ha sana RAZIJA, b\")"
+  },
+  {
+    "id": 99128,
+    "action": "add",
+    "soldier_id": "0043000007",
+    "new_id": "0043001479",
+    "record": {
+      "last_name": "Alajbegović-Prodanović",
+      "middle_name": "Hasana",
+      "fathers_name": "Hasan",
+      "first_name": "Razija",
+      "additional_info": "bolničarka 3. čete 2. bataljona, rođena 1921, Foča, domaćica, Jugoslovenka, u NOB od 1941, član KPJ od jula 1942, krajem rata šef trijažne stanice 27. divizije.",
+      "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+      "pdf_page": 1,
+      "pdf_y": 664.2,
+      "pdf_x": 125.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 1): it was glued into 0043000007's text"
+  },
+  {
+    "id": 99129,
+    "action": "edit",
+    "soldier_id": "0043000496",
+    "fields": {
+      "additional_info": "bolničarka u 3. bataljonu, rođena 1914, Foča, profesor, Muslimanka, u NOB od 1941, član KPJ od 1943, krajem rata član Sreskog komiteta KPJ Cazin."
+    },
+    "reason": "The next entry, Karahodžić-Momčilović Muhameda Alija, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"KARAHODŽIĆ-MOMČILOVIĆ Mu hameda ALIJA, b\")"
+  },
+  {
+    "id": 99130,
+    "action": "add",
+    "soldier_id": "0043000496",
+    "new_id": "0043001480",
+    "record": {
+      "last_name": "Karahodžić-Momčilović",
+      "middle_name": "Muhameda",
+      "fathers_name": "Muhamed",
+      "first_name": "Alija",
+      "additional_info": "bolničarka u pratećoj četi 5. bataljona, rođena 1925, Prozor, domaćica, Muslimanka.",
+      "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+      "pdf_page": 30,
+      "pdf_y": 219.4,
+      "pdf_x": 98.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 30): it was glued into 0043000496's text"
+  },
+  {
+    "id": 99131,
+    "action": "edit",
+    "soldier_id": "0043001139",
+    "fields": {
+      "additional_info": "borac 2. čete 1. bataljona, rođen 1899, Samobor, Gacko, zemljoradnik, Srbin, u NOB od aprila 1943. godine."
+    },
+    "reason": "The next entry, Stijacić Tome Radovan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"S TI JACI Ć Tome RADOVAN, politički kome\")"
+  },
+  {
+    "id": 99132,
+    "action": "add",
+    "soldier_id": "0043001139",
+    "new_id": "0043001481",
+    "record": {
+      "last_name": "Stijačić",
+      "middle_name": "Tome",
+      "fathers_name": "Tomo",
+      "first_name": "Radovan",
+      "additional_info": "politički komesar 1. bataljona, rođen 1918, Ćurjan, Bileća, radnik, Srbin, u NOB od 1941, predratni član KPJ. Umro 1988. godine u Beogradu.",
+      "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+      "pdf_page": 63,
+      "pdf_y": 228.2,
+      "pdf_x": 313.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 63): it was glued into 0043001139's text; Stijačić, as the Herzegovinian books print the family"
+  },
+  {
+    "id": 99133,
+    "action": "edit",
+    "soldier_id": "0043001163",
+    "fields": {
+      "additional_info": "borac 4. bataljona, rođen 1925, Krivodol, Imotski , zemljoradnik, Srbin, u NOB od 1942, član SKOJ-a od 1942, poginuo kao bolesnik u Centralnoj bolnici na Sutjesci juna 1943. godine."
+    },
+    "reason": "The next entry, Šabanac Ibre Mida, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"Š AB AN AC Ibre MIDA, bolničarka 1. čete\")"
+  },
+  {
+    "id": 99134,
+    "action": "add",
+    "soldier_id": "0043001163",
+    "new_id": "0043001482",
+    "record": {
+      "last_name": "Šabanac",
+      "middle_name": "Ibre",
+      "fathers_name": "Ibro",
+      "first_name": "Mida",
+      "additional_info": "bolničarka 1. čete 3. bataljona, rođena 1924, Mostar, učenica, Muslimanka, u NOB od 1941, član SKOJ-a od 1940, član KPJ od 1942. godine.",
+      "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+      "pdf_page": 64,
+      "pdf_y": 246.6,
+      "pdf_x": 283.6
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 64): it was glued into 0043001163's text"
+  },
+  {
+    "id": 99135,
+    "action": "edit",
+    "soldier_id": "0043001468",
+    "fields": {
+      "additional_info": "borac, rođen 1881, Baljci, Bileća, zemljoradnik, Srbin, u NOB od 1941, poginuo decembra 1943."
+    },
+    "reason": "The next entry, Žerajić Milana Branko, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"ŽERAJIĆ Milana BRANKO ŽUTI, puškomitralj\")"
+  },
+  {
+    "id": 99136,
+    "action": "add",
+    "soldier_id": "0043001468",
+    "new_id": "0043001483",
+    "record": {
+      "last_name": "Žerajić",
+      "middle_name": "Milana",
+      "fathers_name": "Milan",
+      "first_name": "Branko",
+      "additional_info": "zvani Žuti; puškomitraljezac 1. čete 4. bataljona, rođen 1921, Čitluk, Nevesinje, zemljoradnik, Srbin, u NOB od 1941, član KPJ od oktobra 1944, krajem rata zamenik političkog komesara čete u 12. hercegovačkoj brigadi.",
+      "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+      "pdf_page": 77,
+      "pdf_y": 481.4,
+      "pdf_x": 131.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 77): it was glued into 0043001468's text"
+  },
+  {
+    "id": 99137,
+    "action": "edit",
+    "soldier_id": "0010100614",
+    "fields": {
+      "additional_info": "omladinski rukovodilac 2. čete 3. bataljona, rođen 1924, Potoci, Bosanski Petrovac, đak, Srbin, u NOB od 1941, član SKOJ-a od 1942, član KPJ od 1943, poginuo kod Prače 18. juna 1943. :"
+    },
+    "reason": "The next entry, Kukolj Milana Momčilo, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"U KO LI Milana MOMČILO, borac 2. čete 3.\")"
+  },
+  {
+    "id": 99138,
+    "action": "add",
+    "soldier_id": "0010100614",
+    "new_id": "0010101526",
+    "record": {
+      "last_name": "Kukolj",
+      "middle_name": "Milana",
+      "fathers_name": "Milan",
+      "first_name": "Momčilo",
+      "additional_info": "borac 2. čete 3. bataljona, rođen 1926, Krnjeuša, Bosanski Petrovac, đak, Srbin, u NOB od 1942, član SKOJ-a od 1943, član KPJ od 1944, krajem rata na školovanju u SSSR-u. Tragično poginuo u avionskom udesu 1957. kod Skoplja.",
+      "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+      "pdf_page": 40,
+      "pdf_y": 389.5,
+      "pdf_x": 8.2
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 40): it was glued into 0010100614's text"
+  },
+  {
+    "id": 99139,
+    "action": "edit",
+    "soldier_id": "0010100959",
+    "fields": {
+      "additional_info": "borac 1. čete 2. bataljona, rođen 1924, Rajnovci, Bihać, radnik, Jugosloven, u NOB od 1941, član KPJ od 1944. godine, krajem rata komandir čete."
+    },
+    "reason": "The next entry, Radaković Dane Đuro, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I AD AKO VIĆ Dane ĐURO, borac 2. čete 3.\")"
+  },
+  {
+    "id": 99140,
+    "action": "add",
+    "soldier_id": "0010100959",
+    "new_id": "0010101527",
+    "record": {
+      "last_name": "Radaković",
+      "middle_name": "Dane",
+      "fathers_name": "Dane",
+      "first_name": "Đuro",
+      "additional_info": "borac 2. čete 3. bataljona, rođen 1923, Vranovina, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1942, član KPJ, poginuo u proboju sa Zelengore kod sela Govza 13. juna 1943. godine. iIADAKOVIĆ Mile ILIJA, borac 3. bataljona, rođen 1925, Smoljana, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, poginuo u proboju sa Zelengore kod sela Govza 13. juna 1943.",
+      "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+      "pdf_page": 60,
+      "pdf_y": 268.9,
+      "pdf_x": 13.2
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 60): it was glued into 0010100959's text"
+  },
+  {
+    "id": 99141,
+    "action": "edit",
+    "soldier_id": "0044000740",
+    "fields": {
+      "additional_info": "borac 2. bataljona, rođen 1921, Dobro Selo, Bosanska Krupa, zemljoradnik, Srbin, u NOB od 1942. godine."
+    },
+    "reason": "The next entry, Vejinović Stojana Mileva, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"E JI NOVI Ć Stojana MILEVA, bolničarka u\")"
+  },
+  {
+    "id": 99142,
+    "action": "add",
+    "soldier_id": "0044000740",
+    "new_id": "0044000891",
+    "record": {
+      "last_name": "Vejinović",
+      "middle_name": "Stojana",
+      "fathers_name": "Stojan",
+      "first_name": "Mileva",
+      "additional_info": "bolničarka u sanitetu brigade, rođena 1925, Dobro Selo, Bosanska Krupa, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a, poginula 1943. na Sutjesci.",
+      "pdf_file": "borci-sutjeske-7-banijska.pdf",
+      "pdf_page": 38,
+      "pdf_y": 93.9,
+      "pdf_x": 3.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 38): it was glued into 0044000740's text"
+  },
+  {
+    "id": 99143,
+    "action": "edit",
+    "soldier_id": "0044000779",
+    "fields": {
+      "additional_info": "rukovodilac politodela brigade, rođen 1916, Lješanska Nahija, Podgorica, pravnik, Crnogorac, u NOB od 1941. godine, član KPJ. Umro posle rata."
+    },
+    "reason": "The next entry, Vukmanović Stevana Mile, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"U KM ANO VIĆ Stevana MILE, obaveštajni o\")"
+  },
+  {
+    "id": 99144,
+    "action": "add",
+    "soldier_id": "0044000779",
+    "new_id": "0044000892",
+    "record": {
+      "last_name": "Vukmanović",
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan",
+      "first_name": "Mile",
+      "additional_info": "obaveštajni oficir 2. bataljona, rođen 1922, Jabukovac, Petrinja, radnik, Srbin, u NOB od 1941, član KPJ, poginuo 1943. godine u bici na Sutjesci.",
+      "pdf_file": "borci-sutjeske-7-banijska.pdf",
+      "pdf_page": 40,
+      "pdf_y": 164.9,
+      "pdf_x": 4.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 40): it was glued into 0044000779's text"
+  },
+  {
+    "id": 99145,
+    "action": "edit",
+    "soldier_id": "0036100686",
+    "fields": {
+      "additional_info": "kurir štaba brigade, rođen 1919, Glavice, Sinj, radnik, Jugosloven, u NOB od januara 1942, član KPJ od oktobra 1942, krajem rata politički komesar bataljona."
+    },
+    "reason": "The next entry, Mihai Ivana Ante, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I HAI Ivana ANTE KLIBER, komandir voda u\")"
+  },
+  {
+    "id": 99146,
+    "action": "add",
+    "soldier_id": "0036100686",
+    "new_id": "0036101353",
+    "record": {
+      "last_name": "Mihai",
+      "middle_name": "Ivana",
+      "fathers_name": "Ivan",
+      "first_name": "Ante",
+      "additional_info": "zvani Kliber; komandir voda u 3. bataljonu, rođen 1918, Gornji Seget, Trogir, zemljoradnik, Hrvat, u NOB od 1942, poginuo na Zelengori 12. juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+      "pdf_page": 40,
+      "pdf_y": 182.0,
+      "pdf_x": 5.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 40): it was glued into 0036100686's text"
+  },
+  {
+    "id": 99147,
+    "action": "edit",
+    "soldier_id": "0036100927",
+    "fields": {
+      "additional_info": "borac 3. bataljona, rođen 1924, Split, radnik, Hrvat, u NOB od 1942. godine, poginuo u bici na Sutjesci kao tifusni bolesnik u Centralnoj bolnici."
+    },
+    "reason": "The next entry, Mada Marijana Ivan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"M ADA Marijana IVAN, borac 4. bataljona,\")"
+  },
+  {
+    "id": 99148,
+    "action": "add",
+    "soldier_id": "0036100927",
+    "new_id": "0036101354",
+    "record": {
+      "last_name": "Mada",
+      "middle_name": "Marijana",
+      "fathers_name": "Marijan",
+      "first_name": "Ivan",
+      "additional_info": "borac 4. bataljona, rođen 1919, Bristivica, Trogir, zemljoradnik, Hrvat, u NOB od 1942, poginuo u bici na Sutjesci.",
+      "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+      "pdf_page": 44,
+      "pdf_y": 350.9,
+      "pdf_x": 6.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 44): it was glued into 0036100927's text"
+  },
+  {
+    "id": 99149,
+    "action": "edit",
+    "soldier_id": "0036100925",
+    "fields": {
+      "additional_info": "borac, rođen 1914, Podgora, Makarska, ribar, Hrvat, u NOB od 1942. Umro 1981. godine."
+    },
+    "reason": "The next entry, Pivac Mate Jozo, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I VAC Mate JOZO, zamenik političkog kome\")"
+  },
+  {
+    "id": 99150,
+    "action": "add",
+    "soldier_id": "0036100925",
+    "new_id": "0036101355",
+    "record": {
+      "last_name": "Pivac",
+      "middle_name": "Mate",
+      "fathers_name": "Mate",
+      "first_name": "Jozo",
+      "additional_info": "zamenik političkog komesara 1. čete 4. bataljona, rođen 1921, Makarska, radnik, Hrvat, u NOB od 1942, član KPJ, poginuo u Smokvici, na Korčuli, 24. aprila 1944, zamenik političkog komesara bataljona.",
+      "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+      "pdf_page": 48,
+      "pdf_y": 85.2,
+      "pdf_x": 2.9
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 48): it was glued into 0036100925's text"
+  },
+  {
+    "id": 99151,
+    "action": "edit",
+    "soldier_id": "0036100943",
+    "fields": {
+      "additional_info": "borac u brigadnoj muzici, rođen 1921, Kaštel Novi, Split, radnik, Hrvat, u NOB od jula 1942, član SKOJ-a, umro od tifusa na Zelengori juna 1943. godine."
+    },
+    "reason": "The next entry, Pravdić-Gvozdenović Avgustina Ruža, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"PRAVDIĆ-GVOZDENOVIĆ Avgusti na RUŽA, bol\"); the entry is merged into 0036001558"
+  },
+  {
+    "id": 99152,
+    "action": "add",
+    "soldier_id": "0036001558",
+    "new_id": "0036101356",
+    "record": {
+      "last_name": "Pravdić-Gvozdenović",
+      "middle_name": "Avgustina",
+      "fathers_name": "Avgustin",
+      "first_name": "Ruža",
+      "additional_info": "bolničarka u 2. bataljonu, rođena 1919, Dobro Selo, Livno, čobanica, Jugoslovenka, u NOB od 1942, član SKOJ-a od avgusta 1942. godine.",
+      "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+      "pdf_page": 49,
+      "pdf_y": 162.8,
+      "pdf_x": 34.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 49): it was glued into 0036100943's text"
+  },
+  {
+    "id": 99153,
+    "action": "add",
+    "soldier_id": "0036101274",
+    "new_id": "0036101357",
+    "record": {
+      "last_name": "Rakijar",
+      "middle_name": "Nikole",
+      "fathers_name": "Nikola",
+      "first_name": "Vinko",
+      "additional_info": "zvani Vico; borac 1. bataljona, rođen 1915, Donji Seget, Trogir, zemljoradnik, EIrvat, u NOB od 1942, član KPJ od jula 1944, krajem rata zamenik načelnika artiljerijske brigade 26. divizije.",
+      "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+      "pdf_page": 52,
+      "pdf_y": 188.2,
+      "pdf_x": 6.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 52): an earlier correction trimmed its text off the entry before; the R lost at the column's edge, between (R)akić and (R)akuli-Ristić; a Rakijar family of Seget, Trogir (2. dalmatinska's book)"
+  },
+  {
+    "id": 99154,
+    "action": "edit",
+    "soldier_id": "0036100070",
+    "fields": {
+      "additional_info": "dečak, rođen 1938, Čukare, Glamoč, Srbin, u NOB od septembra 1942, poginuo na Zelengori juna 1943. godine zajedno sa majkom Milicom."
+    },
+    "reason": "The next entry, Amljak M Mate, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"AMLJAK M. MALE, borac 1. bataljona, rođe\")"
+  },
+  {
+    "id": 99155,
+    "action": "add",
+    "soldier_id": "0036100070",
+    "new_id": "0036101358",
+    "record": {
+      "last_name": "Ramljak",
+      "middle_name": "M",
+      "fathers_name": "M",
+      "first_name": "Mate",
+      "additional_info": "borac 1. bataljona, rođen 1923, Siverić, Drniš, zemljoradnik, Hrvat, u NOB od 1942, poginuo u bici na Sutjesci.",
+      "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+      "pdf_page": 52,
+      "pdf_y": 376.9,
+      "pdf_x": 7.9
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 52): it was glued into 0036100070's text; the R lost at the column's edge (its neighbours \"Akić\", \"Axulj\" too); 1. dalmatinska's book prints Ramljak M Mate of Siverić"
+  },
+  {
+    "id": 99156,
+    "action": "edit",
+    "soldier_id": "0045000330",
+    "fields": {
+      "additional_info": "borac, rođen 1909, Veliki Šušnjar, Petrinja, zemljoradnik, Srbin, u NOB od 1942, poginuo u kanjonu Pive, kod Čokove Luke, 6. juna 1943. godine."
+    },
+    "reason": "The next entry, Malbaša Marka Ljuban, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"M ALBAŠA Marka LIUBAN, borac, rođen 1918\")"
+  },
+  {
+    "id": 99157,
+    "action": "add",
+    "soldier_id": "0045000330",
+    "new_id": "0045000835",
+    "record": {
+      "last_name": "Malbaša",
+      "middle_name": "Marka",
+      "fathers_name": "Marko",
+      "first_name": "Ljuban",
+      "additional_info": "borac, rođen 1918, Staro Selo, Vrginmost, zemljoradnik, Srbin, u NOB od maja 1942, poginuo kod Kostajničkog Majura 1944. MALBAŠA Vasilija' PAVAO, komandir voda, rođen 1908, Staro Selo, Vrginmost, zemljoradnik, Srbin, u NOB od 1942.godine.",
+      "pdf_file": "borci-sutjeske-8-banijska.pdf",
+      "pdf_page": 19,
+      "pdf_y": 441.0,
+      "pdf_x": 33.0
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 19): it was glued into 0045000330's text"
+  },
+  {
+    "id": 99158,
+    "action": "edit",
+    "soldier_id": "0007100910",
+    "fields": {
+      "additional_info": "borac 2. bataljona, rođen 1923, Kninsko Polje, Knin, zemljoradnik, Srbin, u NOB od oktobra 1942, poginuo u proboju, na pruzi Sarajevo-Višegrad, 18. juna 1943"
+    },
+    "reason": "The next entry, Iirković Ante Vinko, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I IR KO VIC Ante VINKO, borac, rođen 192\"); the entry is merged into 0007003555"
+  },
+  {
+    "id": 99159,
+    "action": "add",
+    "soldier_id": "0007003555",
+    "new_id": "0007101620",
+    "record": {
+      "last_name": "Mirković",
+      "middle_name": "Ante",
+      "fathers_name": "Ante",
+      "first_name": "Vinko",
+      "additional_info": "borac, rođen 1923, Sinj, đak, Hrvat, u NOB od 1941, član SKOJ-a od 1940, član KPJ od 1942, poginuo kod Zvornika 5. jula 1943. u sastavu 1. proleterske brigade.",
+      "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+      "pdf_page": 52,
+      "pdf_y": 103.6,
+      "pdf_x": 3.1
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 52): it was glued into 0007100910's text; after Mirković Ilije Mirko on the page; the M lost at the edge"
+  },
+  {
+    "id": 99160,
+    "action": "edit",
+    "soldier_id": "0007101028",
+    "fields": {
+      "additional_info": "borac u intendanturi brigade, rođen 1912, Plavno, Knin, radnik, Srbin, u NOB od februara 1942. godine."
+    },
+    "reason": "The next entry, Ulj Mihajla Borivoj, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"U LJ Mihajla BORIVOJ BOĆA, komandir voda\")"
+  },
+  {
+    "id": 99161,
+    "action": "add",
+    "soldier_id": "0007101028",
+    "new_id": "0007101621",
+    "record": {
+      "last_name": "Ulj",
+      "middle_name": "Mihajla",
+      "fathers_name": "Mihajlo",
+      "first_name": "Borivoj",
+      "additional_info": "zvani Boća; komandir voda u 2. četi 1. bataljona, rođen 1921, Zrmanja, Gračac, zemljoradnik, Jugosloven, u NOB od 1941, član SKOJ-a od aprila 1942, član KP l 3d oktobra 1943, krajem rata zamenik komandanta 21. makedonske brigade. Umro 1989. u Beogradu.",
+      "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+      "pdf_page": 56,
+      "pdf_y": 428.7,
+      "pdf_x": 12.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 56): it was glued into 0007101028's text"
+  },
+  {
+    "id": 99162,
+    "action": "edit",
+    "soldier_id": "0007101278",
+    "fields": {
+      "additional_info": "borac 1. bataljona, rođen 1924, Prvić Luka, Šibenik, mornar, Hrvat, u NOB od maja 1942, član SKOJ-a od aprila 1941, poginuo na pl. Majevici u jesen 1943."
+    },
+    "reason": "The next entry, Sučević Đurđa Branko, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"S UČE VIĆ Đurđa BRANKO, borac 1. čete 1.\"); the entry is merged into 0007004894"
+  },
+  {
+    "id": 99163,
+    "action": "add",
+    "soldier_id": "0007004894",
+    "new_id": "0007101622",
+    "record": {
+      "last_name": "Sučević",
+      "middle_name": "Đurđa",
+      "fathers_name": "Đurđe",
+      "first_name": "Branko",
+      "additional_info": "borac 1. čete 1. bataljona, rođen 1925, Zrmanja-Vrelo, Gračac, poštar, Srbin, u NOB od 1941, član SKOJ-a od septembra 1941, član KPJ od maja 1943.",
+      "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+      "pdf_page": 71,
+      "pdf_y": 179.4,
+      "pdf_x": 36.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 71): it was glued into 0007101278's text"
+  },
+  {
+    "id": 99164,
+    "action": "edit",
+    "soldier_id": "0007100414",
+    "fields": {
+      "additional_info": "desetar u 2. čei 2. bataljona, rođen 1924, Klis, Split, zemljoradnik, Hrvat, u NOB od jula :942, član KP.T, poginuo u rejonu sela jjubotići kod Širokog Brijega, Mostar 13. januara 1945, komandir čete,"
+    },
+    "reason": "The next entry, Ink Ilije Ilija, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I NK Ilije ILIJA, desetar u 2. četi 2. m\")"
+  },
+  {
+    "id": 99165,
+    "action": "add",
+    "soldier_id": "0007100414",
+    "new_id": "0007101623",
+    "record": {
+      "last_name": "Vetnić",
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Ilija",
+      "additional_info": "desetar u 2. četi 2. mtaljona, rođen 1919, Miočić, Drniš, ad nik, Srbin, u NOB od 1942, član CPJ od januara 1944. godine.",
+      "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+      "pdf_page": 78,
+      "pdf_y": 421.6,
+      "pdf_x": 15.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 78): it was glued into 0007100414's text; \"I NK Ilije ILIJA\", 1919, Miočić, Drniš: 2. dalmatinska's book prints Vetnić Ilija, 18. 7. 1919, Miočić"
+  },
+  {
+    "id": 99166,
+    "action": "edit",
+    "soldier_id": "0046000058",
+    "fields": {
+      "additional_info": "borac, rođen 1922, Tugare, Omiš, zemljoradnik, Hrvat, u NOB od 1942, poginuo na Donjim Barama 8. juna 1943. godine u sastavu 2. dalmatinske brigade."
+    },
+    "reason": "The next entry, Ajrjć Šime Jere, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"AJRJĆ Šime JERE, politički komesar čete,\")"
+  },
+  {
+    "id": 99167,
+    "action": "add",
+    "soldier_id": "0046000058",
+    "new_id": "0046001323",
+    "record": {
+      "last_name": "Barić",
+      "middle_name": "Šime",
+      "fathers_name": "Šime",
+      "first_name": "Jere",
+      "additional_info": "politički komesar čete, rođen 1911, Pirovac, Šibenik, zemljoradnik, Hrvat, u NOB od 1941, član KPJ, poginuo na Zelengori juna 1943. u sastavu 2. dalmatinske brigade.",
+      "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+      "pdf_page": 4,
+      "pdf_y": 467.1,
+      "pdf_x": 11.8
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 4): it was glued into 0046000058's text; between (B)arić Frane Ivan and (B)arić Marija, the B lost at the edge; 2. dalmatinska's book prints Barić Šime Jere, 1911, Pirovac"
+  },
+  {
+    "id": 99168,
+    "action": "edit",
+    "soldier_id": "0046001101",
+    "fields": {
+      "additional_info": "borac, rođen 1923, Donje Ogorje, Split, zemljoradnik, [irvat, u NOB od 1942, član SKOJ-a 1942, poginuo kod Lopara na pl. Majevici 8. juna 1944. godine."
+    },
+    "reason": "The next entry, Iis Mate Šime, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"I IS Mate ŠIME, borac, rođen 1919, 'odgr\")"
+  },
+  {
+    "id": 99169,
+    "action": "add",
+    "soldier_id": "0046001101",
+    "new_id": "0046001324",
+    "record": {
+      "last_name": "Iis",
+      "middle_name": "Mate",
+      "fathers_name": "Mate",
+      "first_name": "Šime",
+      "additional_info": "borac, rođen 1919, 'odgradina, Metković, radnik, Hrvat, NOB od 1942, kao borac 1. prosterske brigade ranjen maja 1944. odine i prebačen na lečenje u Italiju, de ga je zatekao kraj rata.",
+      "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+      "pdf_page": 6,
+      "pdf_y": 433.5,
+      "pdf_x": 16.1
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 6): it was glued into 0046001101's text"
+  },
+  {
+    "id": 99170,
+    "action": "edit",
+    "soldier_id": "0047000415",
+    "fields": {
+      "additional_info": "borac, rođen 1911, Brnjeuška, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo u bici na Sutjesci. šLIJEPČE VIĆ Đure UROŠ, politički komesar brigade, rođen 1921, Dvor, student, Srbin, u NOB od 1941, član KPJ."
+    },
+    "reason": "The next entry, Smoljenović Pere Jovan, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"SMOLJENOV1Ć Pere JOVAN, borac 2. bataljo\")"
+  },
+  {
+    "id": 99171,
+    "action": "add",
+    "soldier_id": "0047000415",
+    "new_id": "0047000592",
+    "record": {
+      "last_name": "Smoljenović",
+      "middle_name": "Pere",
+      "fathers_name": "Pero",
+      "first_name": "Jovan",
+      "additional_info": "borac 2. bataljona, rođen 1904, Donji Javoranj, Dvor, zemljoradnik, Srbin, u NOB od 1942,poginuo na Sutjesci. iMOLJENOVIC Pere MILAN, intendant 2. bataljona, rođen 1912, Donji Javoranj, Dvor, službenik, Srbin, u NOB od 1942, član KPJ od marta 1943, krajem rata intendant divizije KNOJ-a.",
+      "pdf_file": "borci-sutjeske-16-banijska.pdf",
+      "pdf_page": 24,
+      "pdf_y": 234.3,
+      "pdf_x": 6.2
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 24): it was glued into 0047000415's text"
+  },
+  {
+    "id": 99172,
+    "action": "add",
+    "soldier_id": "0048001072",
+    "new_id": "0048001113",
+    "record": {
+      "last_name": "Ponjević",
+      "middle_name": "Mile",
+      "fathers_name": "Mile",
+      "first_name": "Bogoljub",
+      "additional_info": "borac 1. čete 1. bataljona, rođen 1922, Natpolje, Šipovo, zemljoradnik, Srbin, u NÖB od 1941, član SKOJ-a, poginuo na Zelengori 13. juna 1943. godine.",
+      "pdf_file": "borci-sutjeske-7-krajiska.pdf",
+      "pdf_page": 39,
+      "pdf_y": 491.5,
+      "pdf_x": 225.9
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 39): an earlier correction trimmed its text off the entry before"
+  },
+  {
+    "id": 99173,
+    "action": "edit",
+    "soldier_id": "0049000058",
+    "fields": {
+      "additional_info": "zamenik političkog komesara 4. bataljona, rođen 1920, Čardak, Mrkonjić Grad, student, Srbin, u NOB od 1941, član KPJ, poginuo na brdu Humić, istočno od Foče, 21. maja 1943. godine."
+    },
+    "reason": "The next entry, D Am, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"D AM JANO VIĆ MILORAD, borac 4. bataljon\")"
+  },
+  {
+    "id": 99174,
+    "action": "add",
+    "soldier_id": "0049000058",
+    "new_id": "0049000511",
+    "record": {
+      "last_name": "Damjanović",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Milorad",
+      "additional_info": "borac 4. bataljona, rođen 1923, Krbeti, Brčko, zemljoradnik, Srbin, u NOB od 1942.",
+      "pdf_file": "borci-sutjeske-15-majevicka.pdf",
+      "pdf_page": 5,
+      "pdf_y": 289.8,
+      "pdf_x": 38.7
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 5): it was glued into 0049000058's text; printed \"D AM JANO VIĆ MILORAD\""
+  },
+  {
+    "id": 99175,
+    "action": "edit",
+    "soldier_id": "0049000320",
+    "fields": {
+      "additional_info": "zvani Veso; intendant brigade, rođen 1912, Lipovac, Doboj, radnik, Srbin, u NOB od 1941, član KPJ od oktobra 1942, krajem rata intendant 27. divizije."
+    },
+    "reason": "The next entry, Radošević Simeuna Nenad, was glued to the end of this one (Borci Sutjeske; the parser now reads its start: \"RADOŠEVIĆ Simeuna ing. NENAD, borac priš\")"
+  },
+  {
+    "id": 99176,
+    "action": "add",
+    "soldier_id": "0049000320",
+    "new_id": "0049000512",
+    "record": {
+      "last_name": "Radošević",
+      "middle_name": "Simeuna",
+      "fathers_name": "Simeun",
+      "first_name": "Nenad",
+      "additional_info": "ing.; borac prištapskih jedinica brigade, rođen 1912, Sarajevo, inženjer, Srbin, u NOB od 1942. godine, krajem rata intendant divizije.",
+      "pdf_file": "borci-sutjeske-15-majevicka.pdf",
+      "pdf_page": 18,
+      "pdf_y": 555.0,
+      "pdf_x": 198.4
+    },
+    "reason": "Missing entry of Borci Sutjeske (p. 18): it was glued into 0049000320's text"
+  },
+  {
+    "id": 99177,
+    "action": "merge",
+    "soldier_id": "0001003981",
+    "merge_id": "0001101876",
+    "merge_name": "Ivković Spasoja Dane",
+    "reason": "Same soldier in prva-proleterska-1.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, birthplace, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99178,
+    "action": "merge",
+    "soldier_id": "0001000508",
+    "merge_id": "0001101873",
+    "merge_name": "Banjac Steve Veljko",
+    "reason": "Same soldier in prva-proleterska-1.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, death place, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99179,
+    "action": "merge",
+    "soldier_id": "0001003274",
+    "merge_id": "0001101874",
+    "merge_name": "Glavan Ante Mijo",
+    "reason": "Same soldier in prva-proleterska-1.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99180,
+    "action": "merge",
+    "soldier_id": "0001003671",
+    "merge_id": "0001101875",
+    "merge_name": "Hrnjak Spasoja Branko",
+    "reason": "Same soldier in prva-proleterska-1.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, birthplace, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99181,
+    "action": "merge",
+    "soldier_id": "0001007125",
+    "merge_id": "0001101877",
+    "merge_name": "Mihaljica Marka Veljko",
+    "reason": "Same soldier in prva-proleterska-2.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, birthplace, death place, death year, duty. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99182,
+    "action": "merge",
+    "soldier_id": "0001007514",
+    "merge_id": "0001101878",
+    "merge_name": "Milojević Stojana Miloje",
+    "reason": "Same soldier in prva-proleterska-2.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, birthplace. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99183,
+    "action": "merge",
+    "soldier_id": "0001011642",
+    "merge_id": "0001101880",
+    "merge_name": "Stefanović-Gabričević Dragomira Anđelija",
+    "reason": "Same soldier in prva-proleterska-3.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, birthplace. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99184,
+    "action": "merge",
+    "soldier_id": "0001011911",
+    "merge_id": "0001101881",
+    "merge_name": "Stojković Teodora Slobodan",
+    "reason": "Same soldier in prva-proleterska-3.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, birthplace, death place, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99185,
+    "action": "merge",
+    "soldier_id": "0001012200",
+    "merge_id": "0001101883",
+    "merge_name": "Šoljak Ante Milan",
+    "reason": "Same soldier in prva-proleterska-3.pdf and borci-sutjeske-prva-proleterska.pdf; same father, birth year, death place, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99186,
+    "action": "merge",
+    "soldier_id": "0007004900",
+    "merge_id": "0007101622",
+    "merge_name": "Sučević Đurđa Branko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and borci-sutjeske-2-dalmatinska.pdf; same father, birth year, birthplace. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99187,
+    "action": "merge",
+    "soldier_id": "0007005450",
+    "merge_id": "0007101623",
+    "merge_name": "Vetnić Ilije Ilija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and borci-sutjeske-2-dalmatinska.pdf; same birth year, birthplace. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99188,
+    "action": "merge",
+    "soldier_id": "0010001460",
+    "merge_id": "0010101527",
+    "merge_name": "Radaković Dane Đuro",
+    "reason": "Same soldier in 3-krajiska-proleterska.pdf and borci-sutjeske-3-krajiska.pdf; same father, birth year, birthplace, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99189,
+    "action": "link",
+    "soldier_id": "0007000273",
+    "link_id": "0046001323",
+    "link_name": "Barić Šime Jere",
+    "reason": "Same soldier in 2. Dalmatinska Proleterska and 3. Dalmatinska; same father, birth year, birthplace, death year. Borci Sutjeske entry recovered from a glued entry"
+  },
+  {
+    "id": 99190,
+    "action": "link",
+    "soldier_id": "0023000010",
+    "link_id": "0043001479",
+    "link_name": "Alajbegović-Prodanović Hasana Razija",
+    "reason": "Same soldier in 19. Birčanska and 10. Hercegovačka; same father, birth year, birthplace. Borci Sutjeske entry recovered from a glued entry"
   }
 ]

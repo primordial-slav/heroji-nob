@@ -201,6 +201,14 @@ def apply_edit(soldiers, correction):
             return soldiers, True
 
     if sid in MERGED_IDS:
+        # merged into another record: its entry's text lives in that record's other_sources (an edit that came
+        # before the merge set it already; one that came after, such as trimming a glued entry, sets it there)
+        if 'additional_info' in fields:
+            for s in soldiers:
+                for o in s.get('other_sources', ()):
+                    if o.get('soldier_id') == sid and not o.get('unit_file') and o.get('additional_info') != fields['additional_info']:
+                        o['additional_info'] = fields['additional_info']
+                        print(f"    EDIT {sid}: merged entry of {s.get('full_name', '')}, text")
         return soldiers, True
     print(f"    WARNING: Soldier {sid} not found for edit")
     return soldiers, False

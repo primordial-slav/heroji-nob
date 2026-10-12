@@ -22809,9 +22809,9 @@
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ],
+    "ethnicity": "Crnogorac",
     "pdf_x_end": 354.1,
-    "pdf_y_end": 171.0,
-    "ethnicity": "Crnogorac"
+    "pdf_y_end": 171.0
   },
   {
     "soldier_id": "0005000511",
@@ -68223,7 +68223,7 @@
     "first_name": "Vojislav",
     "fathers_name": "",
     "full_name": "Kovauski Vojislav",
-    "additional_info": "politički komesar 2. čete 2. bataljona, rođen 1921, neutvrđenog mesta rođenja, đak, član KPJ od 1942, dezertirao sa Vučeva 11. juna 1943. i stupio u četničke redove. KOVIJANIĆ-PREBIRAČEVIC Radoša DRAGINJA, borac 4. bataljona, rođena 1927, Slijepač Most, Bijelo Polje, domaćica, Crnogorka, u NOB od maja 1943, član SKOJ-a od avgusta 1943, krajem rata četna bolničarka.",
+    "additional_info": "politički komesar 2. čete 2. bataljona, rođen 1921, neutvrđenog mesta rođenja, đak, član KPJ od 1942, dezertirao sa Vučeva 11. juna 1943. i stupio u četničke redove.",
     "birth_year": "1921",
     "pdf_page": 29,
     "pdf_y": 63.3,
@@ -68231,11 +68231,31 @@
     "pdf_y_end": 115.2,
     "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
     "soldier_id": "0005100427",
-    "ethnicity": "Crnogorka",
-    "occupation": "đak",
     "rank": "politički komesar",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 214.2
+    "pdf_x_end": 214.2,
+    "occupation": "đak",
+    "unit_detail": "2. četa, 2. bataljon"
+  },
+  {
+    "soldier_id": "0005101209",
+    "last_name": "Kovijanić-Prebiračević",
+    "middle_name": "Radoša",
+    "first_name": "Draginja",
+    "fathers_name": "Radoš",
+    "full_name": "Kovijanić-Prebiračević Radoša Draginja",
+    "additional_info": "borac 4. bataljona, rođena 1927, Slijepač Most, Bijelo Polje, domaćica, Crnogorka, u NOB od maja 1943, član SKOJ-a od avgusta 1943, krajem rata četna bolničarka.",
+    "birth_year": "1927",
+    "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
+    "pdf_page": 29,
+    "pdf_y": 117.3,
+    "pdf_x": 45.1,
+    "birth_place": "Slijepač Most, Bijelo Polje",
+    "ethnicity": "Crnogorka",
+    "occupation": "domaćica",
+    "rank": "borac",
+    "unit_detail": "4. bataljon",
+    "pdf_x_end": 213.7,
+    "pdf_y_end": 180.0
   },
   {
     "last_name": "Kovačević",
@@ -71568,7 +71588,7 @@
     "first_name": "Radovan",
     "fathers_name": "Gligo",
     "full_name": "Pejanović Glige Radovan",
-    "additional_info": "borac prateće čete 4. bataljona, rođen 1924, Snjegotina, Čelinac, Banja Luka, zemljoradnik, Srbin, u NOB od januara 1943, krajem rata komandir PA voda. PEJANOVIĆ-BUGARINOVIĆ Milutina SLAVA, bolničarka 2. čete 5. bataljona, rođena 1924, Prizren, učenica, Črnogorka, član SKOJ-a.",
+    "additional_info": "borac prateće čete 4. bataljona, rođen 1924, Snjegotina, Čelinac, Banja Luka, zemljoradnik, Srbin, u NOB od januara 1943, krajem rata komandir PA voda.",
     "birth_year": "1924",
     "pdf_page": 42,
     "pdf_y": 164.8,
@@ -71576,12 +71596,32 @@
     "pdf_y_end": 217.2,
     "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
     "soldier_id": "0005100676",
+    "rank": "borac",
+    "pdf_x_end": 193.3,
     "birth_place": "Snjegotina, Čelinac, Banja Luka",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "4. bataljon, prateća četa",
-    "pdf_x_end": 193.3
+    "unit_detail": "4. bataljon, prateća četa"
+  },
+  {
+    "soldier_id": "0005101210",
+    "last_name": "Pejanović-Bugarinović",
+    "middle_name": "Milutina",
+    "first_name": "Slava",
+    "fathers_name": "Milutin",
+    "full_name": "Pejanović-Bugarinović Milutina Slava",
+    "additional_info": "bolničarka 2. čete 5. bataljona, rođena 1924, Prizren, učenica, Črnogorka, član SKOJ-a.",
+    "birth_year": "1924",
+    "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
+    "pdf_page": 42,
+    "pdf_y": 219.5,
+    "pdf_x": 22.8,
+    "birth_place": "Prizren",
+    "occupation": "učenica",
+    "rank": "bolničarka",
+    "unit_detail": "2. četa, 5. bataljon",
+    "pdf_x_end": 193.1,
+    "pdf_y_end": 261.1
   },
   {
     "last_name": "Pejić",
