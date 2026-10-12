@@ -428,8 +428,8 @@ UNITS = {
     "posavski-odred": dict(
         name="Posavski partizanski odred", tags=["posavo-tamnavski-partizan­s­k­i-odred"],
         caption=r"posavsk\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred(?![\w-]*\s*trebav)|tamnavsk\w*\s+(?:[cč]et|odred|bataljon)|posav\w*[\s-]+tamnav",
-        photo=9823,
-        note="The Tamnava partisans in the autumn of 1941 were the odred's own 3. tamnavski battalion (Bojić's book, 00001/279; "
+        photo=None,
+        note="Candidate, not used until the user decides: 9823, 'Tamnavski partizanski odred, jesen 1941' (the caption names the Tamnava partisans, not the Posavski odred). The Tamnava partisans in the autumn of 1941 were the odred's own 3. tamnavski battalion (Bojić's book, 00001/279; "
              "the 3. tamnavski and 4. posavotamnavski battalions hold 1,312 of the roster's 2,529 names); znaci.org tags the "
              "photo with the Posavo-tamnavski odred, and Ustanak naroda Jugoslavije 1941, knj. I (00002/340, p. 958) prints it "
              "as 'Grupa tamnavskih partizana u jesen 1941. godine'. No photo names the Posavski odred itself; its book prints "
