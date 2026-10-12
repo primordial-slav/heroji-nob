@@ -22,6 +22,10 @@ export const sr = {
   nav: { label: 'Glavna navigacija', home: 'Početna', gallery: 'Galerija', sources: 'Izvori' },
   theme: { label: 'Tema', light: 'Svetla tema', dark: 'Tamna tema', system: 'Sistemska tema' },
   language: { label: 'Jezik' },
+  notFound: {
+    title: 'Ova strana ne postoji',
+    text: 'Adresa je možda stara ili pogrešno upisana. Borca potražite po imenu na početnoj strani.',
+  },
 
   /** "15 boraca" */
   borci,

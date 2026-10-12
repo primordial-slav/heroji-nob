@@ -1,14 +1,8 @@
 import type { ReactNode } from 'react'
 import { Golos_Text, PT_Serif } from 'next/font/google'
 import '../globals.css'
-import HomeLink from './HomeLink'
-import Navigation from './Navigation'
-import ThemeToggle from './ThemeToggle'
-import LanguageMenu from './LanguageMenu'
-import { ThemeProvider } from '../lib/ThemeContext'
-import { LangProvider } from '../i18n/LangContext'
+import SiteFrame from './SiteFrame'
 import { HTML_LANG, type Lang } from '../i18n/config'
-import { messagesFor } from '../i18n'
 
 // Self-hosted at build time; both faces cover Serbo-Croatian, Slovene and Macedonian, Latin and Cyrillic
 const golos = Golos_Text({
@@ -38,30 +32,24 @@ const themeScript = `
   })();
 `
 
-// The page around every route, in its language: the two root layouts ((sr) and (intl)/[lang]) render it
-export default function SiteShell({ lang, children }: { lang: Lang; children: ReactNode }) {
+// The document: fonts, styles and the theme before the first paint. The 404 page (global-not-found.tsx) puts its
+// own frame in it, since it learns its language only in the browser.
+export function SiteDocument({ lang, children }: { lang: Lang; children: ReactNode }) {
   return (
     <html lang={HTML_LANG[lang]} className={`${golos.variable} ${ptSerif.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>
-        <LangProvider lang={lang}>
-          <ThemeProvider>
-            <header className="masthead">
-              <div className="container masthead-bar">
-                <HomeLink className="site-name">{messagesFor(lang).site.name}</HomeLink>
-                <Navigation />
-                <LanguageMenu />
-                <ThemeToggle />
-              </div>
-            </header>
-            <main>
-              {children}
-            </main>
-          </ThemeProvider>
-        </LangProvider>
-      </body>
+      <body>{children}</body>
     </html>
+  )
+}
+
+// The page around every route, in its language: the two root layouts ((sr) and (intl)/[lang]) render it
+export default function SiteShell({ lang, children }: { lang: Lang; children: ReactNode }) {
+  return (
+    <SiteDocument lang={lang}>
+      <SiteFrame lang={lang}>{children}</SiteFrame>
+    </SiteDocument>
   )
 }
