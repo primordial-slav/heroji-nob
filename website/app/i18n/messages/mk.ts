@@ -35,6 +35,10 @@ export const mk: Messages = {
   nav: { label: 'Главна навигација', home: 'Почетна', gallery: 'Галерија', sources: 'Извори' },
   theme: { label: 'Изглед', light: 'Светла тема', dark: 'Темна тема', system: 'Според системот' },
   language: { label: 'Јазик' },
+  notFound: {
+    title: 'Оваа страница не постои',
+    text: 'Адресата можеби е стара или погрешно внесена. Борецот побарајте го по име на почетната страница.',
+  },
 
   borci,
   found: (x: number) => `${plural('mk', x, { one: 'Најден', other: 'Најдени' })} ${borci(x)}`,

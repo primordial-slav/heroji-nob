@@ -78,8 +78,9 @@ export function citation(soldier: Soldier, lang: Lang): string {
   return messagesFor(lang).record.citation(soldier.full_name, where, soldier.pdf_page ?? null, soldier.soldier_id)
 }
 
-// "narodni heroj", "proglašen za narodnog heroja", "Nosilac Ordena narodnog heroja"; not "predložen za narodnog heroja"
-const HERO = /narodn(?:i|og|im)\s*heroj/i      // the OCR can lose the space ("Narodniheroj")
+// "narodni heroj", "proglašen za narodnog heroja", "Nosilac Ordena narodnog heroja"; not "predložen za narodnog heroja",
+// and not the plural ("NARODNI HEROJI JUGOSLAVIJE ...", a page heading glued to an entry)
+const HERO = /narodn(?:i|og|im)\s*heroj(?!i)/i      // the OCR can lose the space ("Narodniheroj")
 const PROPOSED = /predložen\w*\s+za\s+narodnog\s+heroja/gi
 const SPOMENICA = /spomenic/i
 

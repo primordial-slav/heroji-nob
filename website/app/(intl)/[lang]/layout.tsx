@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import SiteShell from '../../components/SiteShell'
-import { messagesFor } from '../../i18n'
+import { siteMetadata } from '../../i18n/metadata'
 import { PREFIXED_LANGS, type Lang } from '../../i18n/config'
 import { missingUnitTexts } from '../../i18n/units'
 import { missingSourceTexts } from '../../i18n/sources'
@@ -22,8 +22,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-  const t = messagesFor((await params).lang as Lang)
-  return { title: t.site.name, description: t.site.description }
+  return siteMetadata((await params).lang as Lang)
 }
 
 export default async function LanguageLayout({ children, params }: { children: ReactNode; params: Promise<{ lang: string }> }) {

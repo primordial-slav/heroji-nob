@@ -652,6 +652,10 @@ def main():
         except Exception as e:                                           # noqa: BLE001
             print(f"\n  WARNING: life events not written ({e.__class__.__name__}: {e})")
 
+    # The site tells women from men by the same names (website/app/data/name-genders.json)
+    if args.apply and feminine_alias.write_site(names, project_root):
+        print(f"\n  Written: {feminine_alias.SITE_FILE}")
+
     # Update units.ts counts
     changed = {}
     if args.apply and count_updates:

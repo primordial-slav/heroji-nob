@@ -1,5 +1,6 @@
 import type { Soldier } from '@/app/lib/types'
 import { silhouettes } from '@/app/data/silhouettes'
+import genders from '@/app/data/name-genders.json'
 
 // The stand-in portrait for a soldier without a photograph: an anonymous outline of a partisan in a cap, a man's
 // or a woman's (data/silhouettes.ts, from period portraits). The titovka was everyone's; the šajkača mostly worn
@@ -42,32 +43,44 @@ const UNIT_REGION: Record<string, Region> = {
 // How often a Serb of such a unit gets the šajkača rather than the titovka
 const SAJKACA_SHARE: Record<Region, number> = { srbija: 0.35, proleterska: 0.25, bosna: 0.15 }
 
-// A bio's word forms tell a woman from a man ("rođena", "poginula", "bolničarka")
-const FEM = /\b(rođena|rodjena|poginula|umrla|nestala|ranjena|streljana|ubijena|zarobljena|stupila|bila|radila|borkinja|bolničarka|srpkinja|hrvatica|crnogorka|slovenka|muslimanka|jevrejka|učenica|domaćica|radnica|zemljoradnica|partizanka|omladinka|skojevka|zvana)\b/gi
-const MASC = /\b(rođen|rodjen|poginuo|umro|nestao|ranjen|streljan|ubijen|zarobljen|stupio|bio|radio|srbin|hrvat|crnogorac|slovenac|musliman|jevrejin|učenik|zemljoradnik|radnik|zvani)\b/gi
-// Men's names that end in -a
-const MALE_A = new Set([
-  'Nikola', 'Luka', 'Ilija', 'Andrija', 'Sava', 'Toma', 'Kosta', 'Mića', 'Pera', 'Jova', 'Đura', 'Raša', 'Laza',
-  'Vasa', 'Uča', 'Mika', 'Saša', 'Ljuba', 'Joca', 'Boža', 'Sima', 'Vlada', 'Jura', 'Krsta', 'Mileta', 'Steva',
-  'Gaja', 'Jakša', 'Zarija', 'Jeremija', 'Zaharija', 'Avdija', 'Alija', 'Hamza', 'Musa', 'Isa', 'Mustafa', 'Mija',
-  'Jovica', 'Perica', 'Nikica', 'Ivica', 'Đoka', 'Paja', 'Neđa', 'Baća', 'Slaviša', 'Miša', 'Joviša', 'Periša',
-  'Ljubiša', 'Dragiša', 'Rajica', 'Radojica', 'Milija',
-])
+// The same rule as the pipeline's "zvana" (scripts/feminine_alias.py): a bio's word forms tell a woman from a man
+// ("rođena", "padla", "bolničarka"), and a married or maiden name ("por. Ciglar"); a bio that says neither, or
+// as much of both, is decided by the given name, as the other bios show it. Words are whole words: \b doesn't
+// know č or ž.
+const word = (words: string) => new RegExp(`(?<!\\p{L})(?:${words})(?!\\p{L})`, 'giu')
+const FEM = word(
+  'rođena|rodjena|poginula|umrla|stupila|ranjena|nestala|streljana|ubijena|zarobljena|internirana|' +
+  'demobilisana|demobilizirana|penzionisana|umirovljena|bila|živjela|živela|radila|padla|ubita|obešena|' +
+  'obješena|borkinja|bolničarka|srpkinja|hrvatica|crnogorka|slovenka|muslimanka|jevrejka|židovka|makedonka|' +
+  'ruskinja|italijanka|mađarica|slovakinja|učenica|domaćica|radnica|krojačica|studentkinja|kuharica|kuvarica|' +
+  'sekretarka|komesarka|referentkinja|delegatkinja|desetarka|službenica|učiteljica|seljanka|zemljoradnica|' +
+  'tkalja|švalja|partizanka|omladinka|skojevka|članica')
+const MASC = word(
+  'rođen|rodjen|poginuo|umro|stupio|nestao|streljan|ubijen|zarobljen|interniran|demobilisan|bio|živio|' +
+  'živeo|radio|padel|umrl|ubit|srbin|hrvat|crnogorac|slovenac|musliman|jevrej|židov|makedonac|rus|italijan|' +
+  'mađar|slovak|učenik|zemljoradnik|radnik|krojač|kuhar|kuvar|službenik|učitelj|seljak|tkač|kovač|stolar|' +
+  'obućar|pekar|zidar|mesar|bravar|mehaničar|trgovac|omladinac|skojevac')
+const MAIDEN = /(?:^|;)\s*(?:(?:por|ud)\. [A-ZČĆŽŠĐ]|roj\. [A-ZČĆŽŠĐ][^\s;,\d]*;)/g
+// nicknames and parents say nothing of the soldier
+const ASIDE = /(^|; )(?:majka|otac|zvan[ai]|ili) [^;]*;/g
+const MEN_A = new Set(genders.menA)          // men's names that end in -a
+const WOMEN = new Set(genders.women)         // women's names that don't
 
 function count(text: string, re: RegExp): number {
   return (text.match(re) ?? []).length
 }
 
 export function isWoman(soldier: Soldier): boolean {
-  const ethnicity = soldier.ethnicity ?? ''
-  if (/kinja$|ica$|ka$/.test(ethnicity)) return true          // Srpkinja, Hrvatica, Crnogorka
-  if (ethnicity) return false
-  const text = [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)].join(' ')
-  const f = count(text, FEM)
+  if (genders.womenIds.includes(soldier.soldier_id)) return true
+  if (genders.menIds.includes(soldier.soldier_id)) return false
+  const text = [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)]
+    .join(' ').replace(ASIDE, ' ')
+  const f = count(text, FEM) + count(text, MAIDEN)
   const m = count(text, MASC)
   if (f !== m) return f > m
   const name = soldier.first_name ?? ''
-  return name.endsWith('a') && !MALE_A.has(name)
+  if (MEN_A.has(name)) return false
+  return WOMEN.has(name) || name.endsWith('a')
 }
 
 function isSerb(soldier: Soldier): boolean | undefined {

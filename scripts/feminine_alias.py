@@ -77,6 +77,30 @@ def is_woman(s: dict, women: set, men: set) -> bool:
     return name.endswith('a') and name not in MALE_A
 
 
+SITE_FILE = 'website/app/data/name-genders.json'
+
+
+def write_site(names: tuple[set, set], root) -> bool:
+    """The site's isWoman (website/app/lib/standIn.ts) reads the same rule: the men's names ending in -a and the
+    women's names that don't, as is_woman() decides them, and the records set by hand. Returns whether it changed."""
+    import json
+    from pathlib import Path
+    women, men = names
+    data = {
+        'menA': sorted(n for n in men | MALE_A | MALE_ALWAYS
+                       if n.endswith('a') and (n in MALE_ALWAYS or n in men or n not in women)),
+        'women': sorted(n for n in women if n and not n.endswith('a') and n not in MALE_ALWAYS),
+        'womenIds': sorted(WOMEN),
+        'menIds': sorted(MEN),
+    }
+    path = Path(root) / SITE_FILE
+    text = json.dumps(data, ensure_ascii=False, indent=0) + '\n'
+    if path.exists() and path.read_text(encoding='utf-8') == text:
+        return False
+    path.write_text(text, encoding='utf-8')
+    return True
+
+
 def apply(soldiers: list[dict], names: tuple[set, set] | None = None) -> int:
     """Turn "zvani" into "zvana" in women's bios (and their merged entries), in place; returns how many changed.
     names: name_genders() of all units (default: of these soldiers only)."""

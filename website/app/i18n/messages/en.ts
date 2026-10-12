@@ -28,6 +28,10 @@ export const en: Messages = {
   nav: { label: 'Main navigation', home: 'Home', gallery: 'Gallery', sources: 'Sources' },
   theme: { label: 'Theme', light: 'Light theme', dark: 'Dark theme', system: 'Same as system' },
   language: { label: 'Language' },
+  notFound: {
+    title: 'This page doesn’t exist',
+    text: 'The address may be old or mistyped. Look for a Partisan by name on the home page.',
+  },
 
   borci: partisans,
   found: (x: number) => `${partisans(x)} found`,

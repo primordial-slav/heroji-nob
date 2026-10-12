@@ -26,6 +26,10 @@ export const sl: Messages = {
   nav: { label: 'Glavna navigacija', home: 'Domov', gallery: 'Galerija', sources: 'Viri' },
   theme: { label: 'Videz', light: 'Svetla tema', dark: 'Temna tema', system: 'Kot v sistemu' },
   language: { label: 'Jezik' },
+  notFound: {
+    title: 'Te strani ni',
+    text: 'Naslov je morda star ali napačno vpisan. Borca poiščite po imenu na začetni strani.',
+  },
 
   borci,
   found: (x: number) => `${plural('sl', x, { one: 'Najden', two: 'Najdena', few: 'Najdeni', other: 'Najdenih' })} ${borci(x)}`,

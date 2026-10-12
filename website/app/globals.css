@@ -3532,3 +3532,36 @@ span.rail-face {
     transition: none;
   }
 }
+
+/* On a touch screen the small controls keep their look but take a finger: an invisible layer around each
+   button makes it 44px high (a select can't have one, so it grows) */
+@media (pointer: coarse) {
+  .theme-toggle-btn,
+  .lang-menu-button,
+  .filter-clear,
+  .share-search {
+    position: relative;
+  }
+
+  .theme-toggle-btn::after,
+  .lang-menu-button::after {
+    content: '';
+    position: absolute;
+    inset: -8px 0;
+  }
+
+  .lang-menu-button::after {
+    inset: -9px -1px;           /* from inside its border */
+  }
+
+  .filter-clear::after,
+  .share-search::after {
+    content: '';
+    position: absolute;
+    inset: -12px -6px;
+  }
+
+  .per-page select {
+    min-height: 2.75rem;
+  }
+}
