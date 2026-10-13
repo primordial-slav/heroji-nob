@@ -156,6 +156,8 @@ interface UseFuseSearchOptions {
   showAllOnEmpty: boolean
   /** Only soldiers whose name or bio has every query word as a whole word */
   wholeWords?: boolean
+  /** The words typed, when the page keeps them itself (setSearchTerm then does nothing) */
+  term?: string
 }
 
 interface UseFuseSearchReturn {
@@ -176,7 +178,8 @@ export function useFuseSearch(
   data: Soldier[],
   options: UseFuseSearchOptions
 ): UseFuseSearchReturn {
-  const [searchTerm, setSearchTerm] = useState('')
+  const [ownTerm, setSearchTerm] = useState('')
+  const searchTerm = options.term ?? ownTerm
   const [debouncedTerm, setDebouncedTerm] = useState('')
   // The last search's results, with the term and the list they are for
   const [found, setFound] = useState({ key: '', data: NO_SOLDIERS, results: NO_SOLDIERS, near: NO_NEAR })

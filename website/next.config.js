@@ -31,6 +31,10 @@ const nextConfig = {
   outputFileTracingExcludes: {
     '*': ['public/**/*', 'data/life-events/**/*'],
   },
+  // The search route reads the search data built before the build (scripts/prepare-search.ts), not the data files
+  outputFileTracingIncludes: {
+    '/api/search': ['./search-data/**/*'],
+  },
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;

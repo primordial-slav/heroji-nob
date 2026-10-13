@@ -7,7 +7,7 @@ import { SoldierMedals } from './Medal'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { unitName } from '@/app/i18n/units'
 import { unitByName } from '@/app/lib/records'
-import { FIRST_PAGE } from '@/app/lib/searchIndex'
+import { PAGE_SIZES } from '@/app/lib/searchIndex'
 
 // Surname first, as the books print it; the surname carries the weight
 export function SoldierName({ soldier }: { soldier: Soldier }) {
@@ -34,28 +34,35 @@ interface SoldierResultsProps {
   total?: number
   /** Results that are only similar to the search (useFuseSearch), listed after the others under "Slični zapisi" */
   near?: ReadonlySet<Soldier>
+  /**
+   * A list the server pages (useServerSearch): `results` is only the page shown, and this says where it is in the
+   * whole list; a change of page or of page size goes to `onPage`
+   */
+  paged?: { count: number; firstNear: number; page: number; perPage: number; onPage: (page: number, perPage: number) => void }
 }
 
-const PAGE_SIZES = [FIRST_PAGE, 100, 200]
-
-export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, total, near }: SoldierResultsProps) {
+export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, total, near, paged }: SoldierResultsProps) {
   const t = useT()
   const lang = useLang()
-  const [page, setPage] = useState(1)
-  const [perPage, setPerPage] = useState(PAGE_SIZES[0])
+  const [ownPage, setOwnPage] = useState(1)
+  const [ownPerPage, setOwnPerPage] = useState(PAGE_SIZES[0])
 
-  useEffect(() => setPage(1), [results])
+  useEffect(() => setOwnPage(1), [results])
 
-  const count = total ?? results.length
+  const page = paged?.page ?? ownPage
+  const perPage = paged?.perPage ?? ownPerPage
+  const count = paged?.count ?? total ?? results.length
   // Where the similar results start, -1 if there are none
-  const firstNear = useMemo(() => (near?.size ? results.findIndex((soldier) => near.has(soldier)) : -1), [results, near])
-  const partial = count > results.length
+  const ownFirstNear = useMemo(() => (near?.size ? results.findIndex((soldier) => near.has(soldier)) : -1), [results, near])
+  const firstNear = paged ? paged.firstNear : ownFirstNear
+  const partial = !paged && count > results.length
   const totalPages = Math.max(1, Math.ceil(count / perPage))
   const start = (page - 1) * perPage
-  const shown = results.slice(start, start + perPage)
+  const shown = paged ? results : results.slice(start, start + perPage)
 
   const goTo = (p: number) => {
-    setPage(p)
+    if (paged) paged.onPage(p, perPage)
+    else setOwnPage(p)
     document.getElementById(scrollTargetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
@@ -83,7 +90,11 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
                 id="per-page"
                 value={perPage}
                 disabled={partial}
-                onChange={(e) => { setPerPage(Number(e.target.value)); setPage(1) }}
+                onChange={(e) => {
+                  const n = Number(e.target.value)
+                  if (paged) paged.onPage(1, n)
+                  else { setOwnPerPage(n); setOwnPage(1) }
+                }}
               >
                 {PAGE_SIZES.map(n => <option key={n} value={n}>{n}</option>)}
               </select>

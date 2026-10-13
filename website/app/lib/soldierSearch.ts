@@ -219,7 +219,11 @@ function alphabetical(text: string): number {
 }
 
 export interface SoldierIndex {
-  data: SearchFields[]
+  /** How many soldiers */
+  size: number
+  /** Each soldier's place in alphabetical order: of the surname, and of the given name and father */
+  key: Float64Array
+  key2: Float64Array
   /** Every word of the soldiers', and its number */
   ids: Map<string, number>
   words: string[]
@@ -290,8 +294,11 @@ export function createSoldierIndex(data: SearchFields[]): SoldierIndex {
   const unitWords: string[][] = []
   const unitMembers: number[][] = []
   const unitOf = new Int32Array(data.length).fill(-1)
+  const key = new Float64Array(data.length), key2 = new Float64Array(data.length)
 
   data.forEach((soldier, i) => {
+    key[i] = alphabetical(soldier.last_name ?? '')
+    key2[i] = alphabetical(`${soldier.first_name ?? ''} ${soldier.middle_name ?? ''}`)
     const name = (word: string, role: number) => {
       const w = id(word)
       const posting = i * 8 + role
@@ -340,7 +347,7 @@ export function createSoldierIndex(data: SearchFields[]): SoldierIndex {
   const byWord = (a: number, b: number) => (words_[a] < words_[b] ? -1 : words_[a] > words_[b] ? 1 : 0)
   const nameWords = Int32Array.from(words_.keys()).filter((w) => nameAt[w + 1] > nameAt[w]).sort(byWord)
   const entryWords = Int32Array.from(words_.keys()).filter((w) => entryAt[w + 1] > entryAt[w]).sort(byWord)
-  return { data, ids, words: words_, nameAt, names, entryAt, entries, nameWords, entryWords, unitWords, unitMembers, unitOf }
+  return { size: data.length, key, key2, ids, words: words_, nameAt, names, entryAt, entries, nameWords, entryWords, unitWords, unitMembers, unitOf }
 }
 
 /** The words of `sorted` that start with `start` (but are not it), with what each is worth */
@@ -380,9 +387,9 @@ interface WordMatch {
 
 function matchWord(index: SoldierIndex, typed: string, wholeOnly: boolean, alone: boolean): WordMatch {
   const { ids, words: vocab, nameAt, names, entryAt, entries } = index
-  const worth = new Float32Array(index.data.length)
-  const part = new Uint8Array(index.data.length)
-  const asTyped = new Uint8Array(index.data.length)
+  const worth = new Float32Array(index.size)
+  const part = new Uint8Array(index.size)
+  const asTyped = new Uint8Array(index.size)
   const touched: number[] = []
   const give = (i: number, value: number, of: number, how: number) => {
     if (worth[i] === 0) touched.push(i)
@@ -514,7 +521,7 @@ export function searchSoldiers(index: SoldierIndex, query: string, wholeWords = 
   const named = index.unitWords.map((_, pos) => matches.every((match) => match.units[pos] > 0))
 
   // Everyone a word found, and the soldiers of those units
-  const seen = new Uint8Array(index.data.length)
+  const seen = new Uint8Array(index.size)
   const candidates: number[] = []
   const consider = (i: number) => {
     if (!seen[i]) {
@@ -549,9 +556,8 @@ export function searchSoldiers(index: SoldierIndex, query: string, wholeWords = 
 
   const key = new Float64Array(found.length), key2 = new Float64Array(found.length)
   const order = found.map((hit, k) => {
-    const s = index.data[hit.i]
-    key[k] = alphabetical(s.last_name ?? '')
-    key2[k] = alphabetical(`${s.first_name ?? ''} ${s.middle_name ?? ''}`)
+    key[k] = index.key[hit.i]
+    key2[k] = index.key2[hit.i]
     return k
   })
   order.sort((a, b) =>
