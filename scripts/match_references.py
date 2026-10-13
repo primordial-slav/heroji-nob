@@ -35,12 +35,14 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, str(Path(__file__).parent))
 import extract_structured_fields as structured  # noqa: E402
+from name_utils import OSTALI_CODES  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CORRECTIONS = ROOT / 'corrections.json'
 # the books' entries: the Poreklo library's (no scan on the site) and znaci.org's (the PDF on the site)
-ENTRY_DIRS = (ROOT / 'data-extraction' / 'poreklo', ROOT / 'data-extraction' / 'znaci')
+ENTRY_DIRS = (ROOT / 'data-extraction' / 'poreklo', ROOT / 'data-extraction' / 'znaci',
+              ROOT / 'data-extraction' / 'zrtve-rata')      # the 1964 census of the war's dead, a volume a republic
 
 
 def entries_path(book: str) -> Path:
@@ -90,10 +92,11 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
         def possessive(p, g):                                   # either side may give the possessive ("Lazin")
             m = re.match(r'^(.{3,}?)(?:ov|ev|in|ova|eva|ina)$', p)
             return bool(m) and len(g) >= 3 and m.group(1) == re.sub(r'[aeiou]$', '', g)
+        # (and the same name in another case: the census's nominative "Mašan" against the site's genitive "Mašana")
         if rf == sf or (len(rf) == 1 and sf.startswith(rf)) or (len(sf) == 1 and rf.startswith(sf)) or (
-                possessive(rf, sf) or possessive(sf, rf)):
+                possessive(rf, sf) or possessive(sf, rf)) or same_father(rf, sf):
             agree.append('father')
-        elif not same_father(rf, sf):
+        else:
             # a father whose name begins the same but is not clearly the same name ("Mile" and "Miloša", or an OCR
             # slip, "Mustave" for Mustafe) weighs against the pair without ruling it out (see grade)
             clash.append('father?' if min(len(rf), len(sf)) >= 4 and rf[:3] == sf[:3] else 'father')
@@ -197,7 +200,7 @@ def main():
             r['hero'] = True                               # every entry of these books is a narodni heroj
     index = defaultdict(list)
     for code, (_, soldiers) in structured.load_live().items():
-        if code == 122:                                    # Ostali borci: made of the entries no unit's record took
+        if code in OSTALI_CODES:                           # Ostali borci: made of the entries no unit's record took
             continue
         for s in soldiers:
             index[(fold(s.get('last_name')), fold(s.get('first_name')))].append(s)

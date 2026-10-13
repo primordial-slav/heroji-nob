@@ -20,11 +20,13 @@ interface YearGroup {
   noUnit?: boolean // the soldiers of the books across units who have no unit on the site
 }
 
-// Not a unit: its card stands last, under a heading of its own
+// Not units: Ostali borci (the books across units) and its parts for the 1964 census, one a republic or province;
+// their cards stand last, under a heading of their own
 const NO_UNIT = 'ostali-borci'
+const isNoUnit = (u: Unit) => u.id === NO_UNIT || u.id.startsWith(`${NO_UNIT}-`)
 
 function groupByYear(all: Unit[]): YearGroup[] {
-  const units = all.filter((u) => u.id !== NO_UNIT)
+  const units = all.filter((u) => !isNoUnit(u))
   const dated = units
     .filter((u) => formation[u.id])
     .sort((a, b) => formationKey(formation[a.id].date) - formationKey(formation[b.id].date))
@@ -37,7 +39,7 @@ function groupByYear(all: Unit[]): YearGroup[] {
   }
   const undated = units.filter((u) => !formation[u.id])
   if (undated.length) groups.push({ year: null, units: undated })
-  const noUnit = all.filter((u) => u.id === NO_UNIT)
+  const noUnit = all.filter(isNoUnit)
   if (noUnit.length) groups.push({ year: null, units: noUnit, noUnit: true })
   return groups
 }
