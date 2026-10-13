@@ -77,6 +77,9 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
 # moves between odd and even pages.
 TWO_COLUMN = {
     'hak-10-korenica-udbina.pdf',           # Korenica i Udbina (Karlovac knj. 10): the fallen
+    'hak-14-donji-lapac.pdf',               # Donji Lapac (Karlovac knj. 14): the fallen
+    'hak-13-gracac.pdf',                    # Gračac (Karlovac knj. 13): the fallen
+    'hak-7-plascanska-dolina.pdf',          # Plaščanska dolina (Karlovac knj. 7): the fallen
     '13-proleterska-spisak.pdf',
     '7-krajiska-spisak.pdf',
     '11-dalmatinska.pdf',

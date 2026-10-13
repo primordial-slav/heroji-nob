@@ -58,6 +58,10 @@ START_LINE = re.compile(rf'^(\d{{1,3}})\s?[.,]\s*(?=[{U}])')
 NATION = re.compile(r'(?:Srbin|Srpkinja|Hrvat|Hrvatica|Musliman|Muslimanka|Slovenac|Slovenka|Crnogorac|Jevrej|Rus|Talijan)\b')
 # a start whose number the OCR lost: SURNAME Father GIVEN
 NAME = re.compile(rf'^[{U}]{{3,}}(?:\s+[{U}]{{3,}})?\s+(?:[{U}][{L}]+|[{U}]\.)\s+[{U}]{{3,}}\b')
+# a volume that prints the names in small letters (knj. 14: "16. Glušica Vuje Spaso Pajo, 1920. Srbin."): a start is
+# the number before Surname Father; one whose number the OCR lost is Surname Father Given, and the year
+START_TITLE = re.compile(rf'^(\d{{1,3}})\s?(?:[.,]\s*|\s+)(?=[{U}][{L}]+(?:-[{U}][{L}]+)?\s+(?:[{U}][{L}]+|[{U}]\.)\s)')
+NAME_TITLE = re.compile(rf'^[{U}][{L}]{{2,}}\s+[{U}][{L}]+\s+[{U}][{L}]+(?:\s+[{U}][{L}]+)?,\s*1[89]\d\d\b')
 # how a fallen fighter's entry tells his death ("Ubile ga ustaše", "ranjena ... i umrla"): the first such word, and the
 # first year after it
 DEATH = re.compile(r'\b(?:pogin\w*|poeinu\w*|po\W?\s?g[mi]nu\w*|ubil\w*|ubijen\w*|ubi[oj]|[sš]tr[ie]*jelja\w*|zaklal\w*|'
@@ -106,7 +110,15 @@ def place_spelled(name: str) -> str:
         fits = [s for s, n in c.most_common() if n >= 3 and len(s) == len(w)
                 and all(a == b or b.upper() in ofz.LOST.get(a.upper(), '') for a, b in zip(w, s))]
         return fits[0] if fits else w
-    return re.sub(rf'[{U}][{L}]+', lambda m: one(m.group(0)), name)
+    # a heading the OCR broke apart ("KESTENOV AC" = Kestenovac): joined where the site knows the whole
+    words = name.split(' ')
+    for i in range(len(words) - 1):
+        whole = words[i] + words[i + 1].lower()
+        if (len(words[i + 1]) <= 3 and not re.fullmatch(r'I{1,3}|IV|V|i', words[i + 1])     # "Bunić II", "Komić i Poljice"
+                and _places.get(whole.upper().translate(ofz.FOLD))):
+            words[i:i + 2] = [whole]
+            break
+    return re.sub(rf'[{U}][{L}]+', lambda m: one(m.group(0)), ' '.join(words))
 
 
 def clean(text: str) -> str:
@@ -136,8 +148,9 @@ def spelled(word: str, part: str) -> str:
 
 def read(book: dict) -> list[dict]:
     """The entries of the volume's lists in the book's order: their lines, page, start and the headings over them."""
-    entries, opcina, village = [], '', ''
-    kind_of = {p: (kind, cols) for kind, pages, cols in book['lists'] for p in pages}
+    entries, opcina, village, ended = [], '', '', False
+    kind_of ={p: (kind, cols) for kind, pages, cols in book['lists'] for p in pages}
+    title_case = book.get('names') == 'title'
     firsts = {pages[0] for _, pages, _ in book['lists']}
     with pdfplumber.open(HERE.parent / 'website' / 'public' / 'pdfs' / book['pdf']) as pdf:
         for pno, page in enumerate(pdf.pages, 1):
@@ -149,7 +162,20 @@ def read(book: dict) -> list[dict]:
                                          gutter=entry_boxes.GUTTER.get((book['pdf'], pno)))
             if pno in firsts:
                 opcina = village = ''                                      # a list starts: its title, then its headings
+                ended = False
+            # on a list's first page, the title runs across both columns above the first općina's heading
+            heads = [ln['top'] for col in data['columns'] for ln in col if re.match(r'OP[ĆČC]INA\s', ln['text'])]
+            title_above = min(heads) - 10 if pno in firsts and heads else None
+            table = False
             for col in data['columns']:
+                # a footnote: the column's last lines, all in a smaller type ("* Naziv mjesta odnosi se ...", 7 pt
+                # against 8.5; the OCR drops its asterisk as a speck)
+                hs = sorted(ln['bottom'] - ln['top'] for ln in col)
+                h = hs[len(hs) // 2] if hs else 0
+                foot = len(col)
+                while foot > len(col) // 2 and col[foot - 1]['bottom'] - col[foot - 1]['top'] < 0.85 * h:
+                    foot -= 1
+                col = col[:foot]
                 lines = [dict(ln) for ln in col]
                 # an entry's number hangs left of its text, where the lines run on: a line that starts with a number
                 # there ("1. LPO »Velebit«", "2. bat.") runs on; in a list of a line each most lines are entries
@@ -163,11 +189,27 @@ def read(book: dict) -> list[dict]:
                                           top=min(ln['top'], merged[-1]['top']))
                     else:
                         merged.append(ln)
-                for ln in merged:
+                for k, ln in enumerate(merged):
+                    if title_above is not None and ln['top'] < title_above:
+                        continue                                           # "Gračac 1941—1945.", the title's other half
+                    if re.match(r'Tabela\s+\d', ln['text']):
+                        table = True                                       # tables between the spomenica's pages,
+                    if table and not START_LINE.match(ln['text']):         # up to the list's next entry
+                        continue
+                    table = False
                     t = clean(ln['text'].replace('­', '-').strip())
-                    if ln['top'] > data['height'] - 40 and re.fullmatch(r'\d{3,4}', t):
-                        continue                                           # the page number
-                    m = re.fullmatch(rf'OPĆINA\s+([{U} -]+)', t)
+                    if book.get('spaced'):
+                        # capitals the OCR spaced out ("M A Č AK" = MAČAK, "N O V"); a volume's own setting, since in
+                        # another it would find entries its IDs, given in the book's order, don't count
+                        t = re.sub(rf'(?<!\S)[{U}](?: [{U}]){{1,}}(?: [{U}]{{2}})?(?!\S)', lambda m: m.group(0).replace(' ', ''), t)
+                    if re.fullmatch(r'\d{3,4}', t) and ln['top'] > data['height'] - 40 or (
+                            re.fullmatch(r'\d{3,4}(?:\s+\d{3,4})?', t) and k >= len(merged) - 2):
+                        continue                                           # the page number (two, on a spread)
+                    if re.match(r'(?:Žrtve fašističkog|Umrli od tifusa)', t):
+                        ended = True                                       # the next list, of civilians, starts here
+                    if ended:
+                        continue
+                    m = re.fullmatch(rf'OP[ĆČC]INA\s+([{U} -]+)', t)              # "OPČINA ZRMANJA" (knj. 13)
                     if m:
                         opcina, village = place_spelled(place(m.group(1))), ''
                         continue
@@ -177,11 +219,12 @@ def read(book: dict) -> list[dict]:
                     if not opcina:
                         continue                                           # the list's title
                     hanging = ln['x0'] < text_x - 5 if two else ln['x0'] < text_x + 5
-                    m = (START if two else START_LINE).match(t) if hanging else None
+                    first = START_TITLE if title_case else START if two else START_LINE
+                    m = first.match(t) if hanging else None
                     m = m or (START_LOST.match(t) if hanging and two and entries and entries[-1]['list'] == kind else None)
                     if not m and two and not hanging and entries and entries[-1]['list'] == kind and entries[-1]['lines'][-1].rstrip().endswith('.'):
                         m = START_EDGE.match(t)
-                    lost = not m and NAME.match(t) and entries and entries[-1]['list'] == kind
+                    lost = not m and (NAME_TITLE if title_case else NAME).match(t) and entries and entries[-1]['list'] == kind
                     if m or lost:
                         no = int(m.group(1)) if m and m.re is not START_LOST else entries[-1]['no'] + 1
                         entries.append({'no': no, 'lines': [t[m.end():] if m else t], 'pdf_page': pno,
@@ -239,6 +282,31 @@ def split_name(head: str) -> tuple[list[str], str, str, str]:
     return surnames, father, given, nick
 
 
+def split_title(head: str) -> tuple[list[str], str, str, str]:
+    """A name in small letters, by its order: "Glušica Vuje Spaso Pajo" -> (["Glušica"], "Vuje", "Spaso", "Pajo"); a
+    married woman's maiden name after "r." ("Kosanović r. Vukša Rade Mara") is a second surname."""
+    head = re.sub(r'\s*[—–]\s*', ' — ', head.strip().rstrip('.'))
+    nick = ''
+    paren = re.search(r'\s*\(([^)]+)\)', head)
+    if paren:
+        head, nick = (head[:paren.start()] + head[paren.end():]).strip(), paren.group(1)
+    if ' — ' in head:
+        head, nick = head.split(' — ', 1)
+    # the OCR's marks in a name: "M-ilan", "Lazar-", "Stevo*"
+    head, nick = (re.sub(rf'(?<=[{U}])-(?=[{L}])|-(?=\s|$)|\*', '', x).strip() for x in (head, nick))
+    words = head.split()
+    surnames = [words.pop(0)] if words else ['']
+    if len(words) >= 2 and words[0] in ('r.', 'rođ.'):
+        words.pop(0)
+        surnames.append(words.pop(0))
+    if len(words) == 1:
+        return surnames, '', words[0], nick                               # "Popović Milka": no father
+    father, given = (words[0], words[1]) if len(words) >= 2 else ('', '')
+    if len(words) > 2 and not nick:
+        nick = ' '.join(words[2:])                                         # "Spaso Pajo": what he was called
+    return surnames, father, given, nick
+
+
 def unsplit(head: str) -> str:
     """Capitals the OCR broke apart ("RAKI C" = RAKIĆ, "PUP A VAC" = PUPAVAC, "ELZ A" = ELZA): joined where the site knows
     the joined name and not the first piece."""
@@ -252,7 +320,8 @@ def unsplit(head: str) -> str:
                 whole = ''.join(part)
                 kind = 'last' if not out else 'first'
                 # "BAN J AC": Ban is a name too, but no name ends in a piece of a letter or two
-                if ofz.known(whole, kind)[0] >= 2 and (ofz.known(part[0], kind)[0] < 2 or all(len(w) <= 2 for w in part[1:])):
+                n_whole, n_first = ofz.known(whole, kind)[0], ofz.known(part[0], kind)[0]
+                if n_whole >= 2 and (n_first < 2 or all(len(w) <= 2 for w in part[1:]) or n_whole >= 20 * n_first):
                     joined = whole
                     break
         if joined:
@@ -278,14 +347,25 @@ def parse(book: dict, e: dict, n: int) -> dict:
     elif y0:                                                                # "MARKO 1922 seljak."
         head, info = head[:y0.start()], f'{y0.group(1)}, ' + head[y0.end():] + (', ' + info if info else '')
     head = book.get('heads', {}).get(head, head)
+    # marks the OCR set inside or after a name: "M.ILE", "ORL»OVIC", "KOVAČEV^", "JOJA>", "RADUSIN -Ilije"
+    head = re.sub(rf'(?<=[{U}{L}])[.»^](?=[{U}{L}])|[>^»]+(?=\s|$)|(?<=\s)-(?=[{U}])', '', head)
     head = unsplit(head)
     trade = re.search(r'\s([a-zčćžšđ]{4,})$', head)
     if trade:                                                               # "DANICA seljanka, Srpkinja"
         head, info = head[:trade.start()], f'{trade.group(1)}, {info}'
-    # a nickname after the given name, before the year: "JOSO, Brico, 1912", "MILAN, MIĆA, 1924"
+    # a comma after the surname alone: "MOMČILOVIĆ, Miloša MARKO, 1899"
+    rest = re.match(rf'^([{U}][{L}]+\s+[{U}]{{2,}}(?:\s+[{U}]{{2,}})?)\s*,\s*', info) if re.fullmatch(rf'[{U}]{{3,}}', head) else None
+    if rest:
+        head, info = f'{head} {rest.group(1)}', info[rest.end():]
+    # a nickname after the given name, before the year: "JOSO, Brico, 1912", "MILAN, MIĆA, 1924"; or her maiden name,
+    # "MILKA, rođ. Miščević, 1908"
     alias = re.match(r'^([^,\d]{2,25}),\s*(?=1[89]\d\d)', info)
-    surnames, father, given, nick = split_name(head)
-    if alias and not nick:
+    surnames, father, given, nick = split_title(head) if book.get('names') == 'title' else split_name(head)
+    maiden = re.fullmatch(rf'(?:rođ\.|r\.)\s*([{U}][{U}{L}]+)', alias.group(1).strip()) if alias else None
+    if maiden:
+        surnames, info = surnames + [maiden.group(1).upper()], info[alias.end():]
+        head = f'{head} r. '                                               # shown as "Popović r. Miščević Rade Milka"
+    elif alias and not nick:
         nick, info = alias.group(1).replace('- ', '').strip(), info[alias.end():]
     if '-' in given and all(len(p) > 2 for p in given.split('-')):        # "IVAN-Ćujo", "PETAR-PEKISA"
         given, nick = given.split('-', 1)[0], nick or given.split('-', 1)[1]
@@ -305,7 +385,7 @@ def parse(book: dict, e: dict, n: int) -> dict:
     # a village the entry names after the year ("1921, Pavlovac, seljak") is his own, under a heading of several
     # ("PAVLOVAC—VREBAC—ZAVODE") or none
     segs = [x.strip() for x in info.split(',')]
-    own = segs[1] if (y and len(segs) > 2 and re.fullmatch(r'1[89]\d\d', segs[0])
+    own = segs[1] if (y and len(segs) > 2 and re.fullmatch(r'1[89]\d\d', segs[0]) and len(segs[1]) >= 3
                       and re.fullmatch(rf'[{U}][{L}]+(?:[\s—–-]+[{U}]?[{L}]+){{0,3}}', segs[1])
                       and not NATION.match(segs[1])) else ''
     village = own or e['village']

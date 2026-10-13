@@ -1503,5 +1503,32 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/hronika-labukovo.jpg',
     brigadeName: '',
     description: 'Monografija sela Labukovo kod Svrljiga (2007): meštani poginuli u NOB-u od 1941. do 1945. (str. 44); oni koje knjiga navodi kao taoce, žrtve terora i logoraše nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'hak-14-donji-lapac',
+    title: 'Kotar Donji Lapac u narodnooslobodilačkom ratu 1941–1945.',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-14-donji-lapac.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-14-donji-lapac.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 14): pali borci s područja kotara Donji Lapac 1941–1945 (str. 1041–1094), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'hak-13-gracac',
+    title: 'Kotar Gračac u narodnooslobodilačkom ratu 1941–1945.',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-13-gracac.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-13-gracac.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 13): pali borci s područja kotara Gračac 1941–1945 (str. 917–965), po opštinama, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'hak-7-plascanska-dolina',
+    title: 'Plaščanska dolina i okolica u NOR-u 1941–1945.',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-7-plascanska-dolina.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-7-plascanska-dolina.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 7): pali borci s područja Plaščanske doline i okoline 1941–1945 (str. 689–701), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
   }
 ]
