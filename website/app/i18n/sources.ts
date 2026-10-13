@@ -266,6 +266,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     'pionirska-ceta':
       'Seznam borcev čete, ki jo je avtor vodil kot komandir: rojstvo, kdaj je kdo postal borec, dolžnost v četi in življenje po vojni (str. 125–132). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'zbornik-heroja-1957':
+      'Portreti narodnih herojev, razglašenih do leta 1957: rojstvo, pot v NOB, smrt ali življenje po vojni in dan razglasitve. Knjiga ne pripada eni enoti: portret je dodan zapisu vsakega heroja, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -521,6 +523,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     'pionirska-ceta':
       'Список на борците на четата што авторот ја водел како командир: раѓање, кога кој станал борец, должност во четата и живот по војната (стр. 125–132). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'zbornik-heroja-1957':
+      'Портрети на народните херои прогласени до 1957: раѓање, пат во НОБ, смрт или живот по војната и денот на прогласувањето. Книгата не припаѓа на една единица: портретот е додаден на записот на секој херој што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -775,6 +779,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     'pionirska-ceta':
       'The roll of the company the author led as its commander: birth, when each became a fighter, duty in the company and life after the war (pp. 125–132). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'zbornik-heroja-1957':
+      'Portraits of the People’s Heroes proclaimed up to 1957: birth, the way into the war, death or life after it, and the day each was proclaimed. The book belongs to no single unit: a portrait is added to the record of each hero on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
   },
 }
 

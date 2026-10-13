@@ -324,6 +324,8 @@ def life_events(s: dict, code: int) -> list[dict]:
     steps: list[dict] = []
     if code not in PARSER_FIELDS:
         for i, e in enumerate(entries):
+            if e.get('ref_book'):
+                continue                    # a book across units (a hero's portrait): its summary is not read here
             for step in read_entry(e.get('additional_info') or ''):
                 step['s'] = i
                 steps.append(step)

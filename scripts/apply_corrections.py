@@ -88,7 +88,7 @@ def load_corrections(corrections_path):
         if 'action' not in c:
             print(f"  WARNING: Correction #{i} missing 'action', skipping")
             continue
-        if c['action'] not in ('edit', 'delete', 'split', 'add', 'merge', 'link'):
+        if c['action'] not in ('edit', 'delete', 'split', 'add', 'merge', 'link', 'reference'):
             print(f"  WARNING: Correction #{i} unknown action '{c['action']}', skipping")
             continue
         if c['action'] == 'add' and ('record' not in c or 'new_id' not in c):
@@ -102,6 +102,9 @@ def load_corrections(corrections_path):
             continue
         if c['action'] == 'link' and 'link_id' not in c:
             print(f"  WARNING: Correction #{i} link missing 'link_id', skipping")
+            continue
+        if c['action'] == 'reference' and ('ref_book' not in c or 'ref_id' not in c):
+            print(f"  WARNING: Correction #{i} reference missing 'ref_book' or 'ref_id', skipping")
             continue
         if c['action'] == 'merge' and 'merge_id' not in c:
             print(f"  WARNING: Correction #{i} merge missing 'merge_id', skipping")
@@ -281,6 +284,43 @@ def apply_merge(soldiers, correction):
     return soldiers, True
 
 
+REFERENCE_DIR = Path(__file__).resolve().parent.parent / 'data-extraction' / 'poreklo'
+
+
+def apply_references(refs, units):
+    """Books across units (the Zbornik narodnih heroja): a soldier the book portrays gets its entry in other_sources,
+    with ref_book, as a merged entry from another book (the text, the page in the Poreklo library). The entries are
+    read by the book's parser into data-extraction/poreklo/<book>-entries.json, matched by
+    scripts/match_references.py, and rebuilt on every run. units: {code: soldiers}, changed in place.
+    Returns how many references were applied."""
+    books = {}
+    by_id = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
+    for s in by_id.values():
+        if any(o.get('ref_book') for o in s.get('other_sources', ())):
+            s['other_sources'] = [o for o in s['other_sources'] if not o.get('ref_book')]
+            if not s['other_sources']:
+                del s['other_sources']
+    applied = 0
+    for c in refs:
+        s = by_id.get(c['soldier_id'])
+        if s is None:
+            continue                                                  # a unit not processed in this run
+        book = books.get(c['ref_book'])
+        if book is None:
+            path = REFERENCE_DIR / f"{c['ref_book']}-entries.json"
+            book = books[c['ref_book']] = {e['soldier_id']: e for e in json.loads(path.read_text(encoding='utf-8'))}
+        e = book.get(c['ref_id'])
+        if e is None or (c.get('ref_name') and e['name'] != c['ref_name']):
+            print(f"    WARNING: reference {c['ref_id']} of {c['ref_book']} is "
+                  f"{e['name'] if e else 'missing'!r}, not {c.get('ref_name')!r}; skipped")
+            continue
+        entry = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info'],
+                 'source_url': e['source_url'], 'source_page': e['source_page'], 'ref_book': c['ref_book']}
+        s['other_sources'] = s.get('other_sources', []) + [entry]
+        applied += 1
+    return applied
+
+
 def apply_links(links, units):
     """The same soldier in two units' books: each record keeps its place in its own unit and gets the other units'
     entries in other_sources (with unit_file, the other unit's data file; that record's own merged entries come
@@ -332,7 +372,8 @@ def apply_links(links, units):
                 entry = {'soldier_id': o['soldier_id'], 'name': o.get('full_name', ''), 'additional_info': o.get('additional_info', '')}
                 entry.update({k: o[k] for k in SOURCE_FIELDS if o.get(k) not in (None, '')})
                 linked.append({**entry, 'unit_file': unit_file})
-                linked += [{**e, 'unit_file': unit_file} for e in o.get('other_sources', ()) if not e.get('unit_file')]
+                linked += [{**e, 'unit_file': unit_file} for e in o.get('other_sources', ())
+                           if not e.get('unit_file') and not e.get('ref_book')]   # a book across units: its own match
                 for k in LINK_FILL:
                     if not s.get(k) and o.get(k):
                         s[k] = o[k]
@@ -529,7 +570,8 @@ def main():
             MERGED_IDS.add(c['merge_id'])
 
     links = [c for c in corrections if c['action'] == 'link']
-    corrections = [c for c in corrections if c['action'] != 'link']
+    refs = [c for c in corrections if c['action'] == 'reference']
+    corrections = [c for c in corrections if c['action'] not in ('link', 'reference')]
 
     # Group corrections by brigade
     by_brigade = {}
@@ -621,6 +663,12 @@ def main():
         results[brigade_code] = (json_path, original_text, soldiers)
 
     box_cache.save()
+
+    # Books across units (references), before the links, which leave them out: the units processed in this run
+    if refs:
+        n = apply_references(refs, {code: res[2] for code, res in results.items()})
+        print(f"\n  References from books across units: {n} applied")
+        total_applied += n
 
     # The same soldier in two units (links): every unit file is read, the processed ones from this run
     if links:

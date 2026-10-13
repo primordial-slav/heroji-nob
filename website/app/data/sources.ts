@@ -1331,5 +1331,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/pionirska-ceta.jpg',
     brigadeName: 'Prva naoružana pionirska partizanska četa',
     description: 'Popis boraca čete koju je autor vodio kao komandir: rođenje, kad je ko postao borac, dužnost u četi i život posle rata (str. 125–132). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'zbornik-heroja-1957',
+    title: 'Zbornik narodnih heroja Jugoslavije',
+    author: 'Grupa autora',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279',
+    thumbnail: '/images/pdf-thumbs/zbornik-heroja.jpg',
+    brigadeName: '',
+    description: 'Portreti narodnih heroja proglašenih do 1957: rođenje, put u NOB, smrt ili život posle rata i dan kad je ko proglašen. Knjiga ne pripada jednoj jedinici: portret je dodat zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]

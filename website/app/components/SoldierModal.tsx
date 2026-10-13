@@ -294,7 +294,10 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
                     <p className="modal-source-label">
                       {/* the other unit's name, unless the book's title already starts with it */}
                       {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
-                      {sourceTitle(e)}
+                      {/* a book with no scan here (the Poreklo library): its title opens the page there */}
+                      {e.source_url && !e.pdf_file
+                        ? <a href={e.source_url} target="_blank" rel="noopener noreferrer">{sourceTitle(e)}</a>
+                        : sourceTitle(e)}
                       {(e.pdf_page ?? e.source_page) != null && `, ${t.record.page((e.pdf_page ?? e.source_page)!)}`}
                       {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
                     </p>

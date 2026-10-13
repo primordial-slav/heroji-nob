@@ -887,7 +887,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
     got = {}
-    entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file')]   # another unit's: its own fields
+    # another unit's entries: its own fields; a book across units (a hero's portrait): read by no rule here
+    entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
     for e in entries:
         info = e.get('additional_info', '')
         if PARTIZANKE in (e.get('source_url') or ''):
