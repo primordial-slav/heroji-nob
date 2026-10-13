@@ -46,6 +46,10 @@ OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json
 # OCR took a line of the text for the name (Pal Šoti, born 19 January 1916 in Bečej, as Narodni heroji 1982 has him)
 NAME_FIXES = {'9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac', 'Joakim', ''),
               '9001001039': ('Šoti', 'Pal', 'Pala')}
+# given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
+GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
+               '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
+               '9010000363': 'Dmitar'}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',
                  'pdf_x_left', 'pdf_rects')
 
@@ -190,7 +194,11 @@ def main():
             if e['soldier_id'] in NAME_FIXES:
                 e['last_name'], e['first_name'], e['fathers_name'] = NAME_FIXES[e['soldier_id']]
                 e['name'] = f"{e['last_name']} {e['first_name']}"
-            if e.get('last_name') and e.get('first_name'):
+            if e['soldier_id'] in GIVEN_FIXES:
+                e['first_name'] = GIVEN_FIXES[e['soldier_id']]
+                e['name'] = f"{e['last_name']} {e['first_name']}"
+            # a man the book could not name ("Nepoznati borac") is no one a search can find
+            if e.get('last_name') and e.get('first_name') and not e.get('unnamed'):
                 entries.append(e)
     by_name = defaultdict(list)
     for e in entries:
