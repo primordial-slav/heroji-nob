@@ -70,6 +70,20 @@ export function encodeRow(soldier: Soldier): IndexRow {
   return withoutTrailingEmpties(row)
 }
 
+/**
+ * A soldier's row in his unit's kin list (app/kin/[unit]/route.ts): what the record dialog's previous and next and
+ * its comrades tree read, and the ids his merged entries had (findRecord), without the entries' text
+ */
+export function encodeKinRow(soldier: Soldier): IndexRow {
+  return encodeRow({
+    ...soldier,
+    additional_info: '',
+    death_place: '',
+    fathers_name: soldier.middle_name,
+    other_sources: soldier.other_sources?.filter((o) => o.soldier_id).map((o) => ({ soldier_id: o.soldier_id, additional_info: '' })),
+  })
+}
+
 export function decodeRow(row: IndexRow, unit: string): Soldier {
   const soldier: Record<string, unknown> = { fathers_name: '', unit }
   FIELDS.forEach((f, i) => { soldier[f] = row[i] ?? '' })
@@ -195,6 +209,29 @@ export function loadUnitList(unit: Unit): Promise<Soldier[]> {
 
 /** A unit's list if it has loaded in this visit */
 export const loadedUnitList = (unit: Unit) => unitLists.get(unit.id)
+
+export const kinPath = (unit: Unit) => `/kin/${unit.id}`
+const kinLists = new Map<string, Promise<Soldier[]>>()
+
+/**
+ * A unit's soldiers as the record dialog needs them, for its previous and next and its comrades tree, and for a
+ * link to one record: the kin list, a fraction of the unit's list, or that list if the page has it already
+ */
+export function loadKinList(unit: Unit): Promise<Soldier[]> {
+  const full = unitLists.get(unit.id)
+  if (full) return Promise.resolve(full)
+  let load = kinLists.get(unit.id)
+  if (!load) {
+    load = fetchJson<IndexRow[]>(kinPath(unit))
+      .then((rows) => decodeList(rows, unit))
+      .catch((error) => {
+        kinLists.delete(unit.id)
+        throw error
+      })
+    kinLists.set(unit.id, load)
+  }
+  return load
+}
 
 const dayLists = new Map<string, Soldier[]>()
 

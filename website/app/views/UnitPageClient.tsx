@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Unit } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
 import { useServerSearch } from '@/app/lib/useServerSearch'
-import { PAGE_SIZES, fullRecord, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
+import { PAGE_SIZES, fullRecord, loadKinList, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
@@ -61,23 +61,31 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   const server = useServerSearch({ query: searchTerm, filters, page, perPage, unit: unit.id, enabled: !local && !onFirstPage })
   useEffect(() => { if (server.failed) setLocal(true) }, [server.failed])
 
-  // The unit's list in its short search form (lib/searchIndex.ts), loaded only when it is needed: to search here,
-  // for a link to one record, and for the dialog's previous and next and its comrades tree
+  // The unit's list in its short search form (lib/searchIndex.ts), loaded only to search here when the server doesn't
+  // answer; for a link to one record and for the dialog's previous and next and its comrades tree, the kin list does
+  // (loadKinList), loaded when one is asked for
   const [list, setList] = useState<Soldier[] | null>(() => loadedUnitList(unit) ?? null)
-  const soldiers = list ?? NO_SOLDIERS
+  const [kin, setKin] = useState<Soldier[] | null>(null)
+  const known = local ? list : list ?? kin
   const [loadFailed, setLoadFailed] = useState(false)
   const [linked, setLinked] = useState(false)
-  const needList = local || linked || selectedSoldier !== null
   useEffect(() => {
-    if (!needList || list) return
+    if (!local || list) return
     let current = true
     loadUnitList(unit)
       .then((loaded) => current && setList(loaded))
       .catch(() => current && setLoadFailed(true))
     return () => { current = false }
-  }, [unit, needList, list])
+  }, [unit, local, list])
+  const wantKin = linked || selectedSoldier !== null
+  useEffect(() => {
+    if (local || known || !wantKin) return
+    let current = true
+    loadKinList(unit).then((loaded) => current && setKin(loaded)).catch(() => {})
+    return () => { current = false }
+  }, [unit, local, known, wantKin])
 
-  const localSearch = useFuseSearch(local ? soldiers : NO_SOLDIERS, { showAllOnEmpty: true, wholeWords: filters.wholeWords, term: searchTerm })
+  const localSearch = useFuseSearch(local ? list ?? NO_SOLDIERS : NO_SOLDIERS, { showAllOnEmpty: true, wholeWords: filters.wholeWords, term: searchTerm })
   const shownFilters = useDeferredValue(filters)
   const localListed = useMemo(
     () => (local ? applyFilters(localSearch.results, shownFilters, false) : NO_SOLDIERS),
@@ -114,12 +122,12 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   }
 
   useEffect(() => {
-    if (linkHandled.current || soldiers.length === 0) return
+    if (linkHandled.current || !known?.length) return
     linkHandled.current = true
     const id = new URLSearchParams(window.location.search).get(RECORD_PARAM)
-    const record = id ? findRecord(soldiers, id) : undefined
+    const record = id ? findRecord(known, id) : undefined
     if (record) openSoldier(record)
-  }, [soldiers])
+  }, [known])
 
   // The address bar follows the open record, so copying it gives that record's link
   useEffect(() => {
@@ -254,7 +262,7 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
           unitName={unit.name}
-          unitSoldiers={list ?? undefined}
+          unitSoldiers={known ?? undefined}
           onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />

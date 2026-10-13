@@ -5,7 +5,7 @@ import { units } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
 import { useServerSearch } from '@/app/lib/useServerSearch'
 import {
-  PAGE_SIZES, fullRecord, loadHomeLists, loadPortraitPeople, loadUnitList, loadedHomeLists, loadedPortraitPeople,
+  PAGE_SIZES, fullRecord, loadHomeLists, loadKinList, loadPortraitPeople, loadedHomeLists, loadedPortraitPeople,
   type HomeLists,
 } from '@/app/lib/searchIndex'
 import { unitByName } from '@/app/lib/records'
@@ -108,14 +108,15 @@ export default function HomePage() {
     if (opening.current === soldier) setSelectedSoldier(record)
   }
 
-  // The open soldier's unit list, for the dialog's previous and next and its comrades tree: loaded when he is opened
+  // The open soldier's unit, for the dialog's previous and next and its comrades tree: loaded when he is opened, as
+  // the kin list (loadKinList)
   const dialogUnit = selectedSoldier?.unit
   const [dialogList, setDialogList] = useState<{ unit: string; list: Soldier[] } | null>(null)
   useEffect(() => {
     const unit = unitByName(dialogUnit)
     if (local || !unit) return
     let current = true
-    loadUnitList(unit).then((list) => current && setDialogList({ unit: unit.name, list })).catch(() => {})
+    loadKinList(unit).then((list) => current && setDialogList({ unit: unit.name, list })).catch(() => {})
     return () => { current = false }
   }, [dialogUnit, local])
   const unitSoldiers = local
