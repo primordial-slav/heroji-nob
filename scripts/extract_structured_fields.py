@@ -142,7 +142,8 @@ DUTY_AFTER_PLACE = re.compile(
     r',\s*(?:[a-z]\s+)?(?:(?:politi\w+|zamjenik\w*|zamenik\w*|pomoćnik\w*|pompćnik\w*)\s+)*'
     r'(?:komandir\w*|komandant\w*|komesar\w*|vodnik|desetar|ekonom|četn\w+\s+bolničar\w*|bolničar\w*|borac|kurir|'
     r'intendant\w*|\w*mitraljez\w*)\b[^A-ZČĆŽŠĐ]*$')
-PREP = r'(?:u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izmedu|prema|pred|za|iz|na putu za|u selu|u s\.|s\.|selo|u rejonu|rejon)'
+# ("u mestu" first: "poginuo ... u mestu Bačevac", 51. divizija's Savić, names the place in the nominative)
+PREP = r'(?:u mestu|u mjestu|u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izmedu|prema|pred|za|iz|na putu za|u selu|u s\.|s\.|selo|u rejonu|rejon)'
 STOP_PLACE = re.compile(r'^(?:u NOB|u NOV|u NOVJ|u NOR|u brigadi|u \d|član|stupio|stupila|borac od|od \d|od [a-z]|sa |iz |zvan[ai]|ili |'
                         r'drugih|nema |ostali|nepoznat|\(drugih|\(nema|\(nedostaju)', re.I)
 
@@ -605,7 +606,7 @@ class Extractor:
             prep = re.match(rf'^{PREP}\s+', p.strip())
             p = re.sub(rf'^{PREP}\s+', '', p.strip())
             p = re.sub(r'^(?:selu|selo|s\.)\s+', '', p)
-            bare.append(not prep or prep.group(0).strip() in ('s.', 'selo'))
+            bare.append(not prep or prep.group(0).strip() in ('s.', 'selo', 'u mestu', 'u mjestu'))
             known = self._known(p, locative=(locative and not names) or not bare[-1])   # after u/kod/na: inflected
             if not known:
                 if keep or bare[-1]:

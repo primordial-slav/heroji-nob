@@ -1252,6 +1252,15 @@ export const sources: PdfSource[] = [
     description: 'Borci 51. vojvođanske divizije poginuli i nestali u Batinskoj bici, novembra 1944: rođenje, dužnost, gde i kada su pali (str. 469–501)'
   },
   {
+    id: '51-divizija-savic',
+    title: '51. vojvođanska divizija',
+    author: 'Sreta Savić',
+    pdfPath: '/pdfs/51-divizija-savic.pdf',
+    thumbnail: '/images/pdf-thumbs/51-divizija-savic.jpg',
+    brigadeName: '51. vojvođanska divizija',
+    description: 'Spisak poginulih boraca i rukovodilaca divizije od formiranja, 1. novembra 1944, do kraja rata, 15. maja 1945, po brigadama: 7, 8, 12. i 14. (slovačka), artiljerijska, prištapske jedinice; rođenje, dužnost, gde i kada su pali (str. 219–288)'
+  },
+  {
     id: 'borci-sutjeske-vrhovni-stab',
     title: 'Borci Sutjeske — pripadnici na Sutjesci',
     author: 'Viktor Kučan',

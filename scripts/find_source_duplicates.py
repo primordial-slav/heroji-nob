@@ -454,8 +454,9 @@ def unit_name(code: int) -> str:
 
 def main_across(args):
     units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
+    # not Ostali borci (122): its records come and go as their men find their units, so a link to one would dangle
     units = {code: json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
-             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts}
+             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts and code != 122}
     found = across_units(units)
     grades = defaultdict(int)
     for p in found:

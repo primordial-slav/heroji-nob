@@ -15003,11 +15003,11 @@
   {
     "soldier_id": "0003000378",
     "last_name": "Gajić",
-    "middle_name": "",
+    "middle_name": "Samoila",
     "first_name": "Mile",
     "additional_info": "rođen 1920. u s. Ploča-Gospić. Borac. Poginuo na Dvoru na Uni 1942. godine",
-    "fathers_name": "",
-    "full_name": "Gajić Mile",
+    "fathers_name": "Samoila",
+    "full_name": "Gajić Samoila Mile",
     "birth_year": "1920",
     "pdf_page": 15,
     "pdf_y": 351.5,
@@ -15031,6 +15031,18 @@
         "pdf_y": 17.6,
         "pdf_x_end": 367.8,
         "pdf_y_end": 45.8
+      },
+      {
+        "soldier_id": "0002002187",
+        "name": "Gajić Samoila Mile",
+        "additional_info": "zvani Mornar; 1920, Ploča, Gračac, u NOB od 1941, poginuo 27. 11. 1942",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 637,
+        "pdf_x": 123.0,
+        "pdf_y": 376.4,
+        "pdf_x_end": 458.4,
+        "pdf_y_end": 396.2,
+        "unit_file": "soldiers.json"
       }
     ]
   },
@@ -63556,7 +63568,21 @@
     "birth_place": "Mekinjar, T. Korenica",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 368.2
+    "pdf_x_end": 368.2,
+    "other_sources": [
+      {
+        "soldier_id": "0002000284",
+        "name": "Barać Luke Dane",
+        "additional_info": "zvani Daniša; 1920, Mekinjar, T. Korenica, u NOB od 1941, 1. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 567,
+        "pdf_x": 128.6,
+        "pdf_y": 286.6,
+        "pdf_x_end": 463.4,
+        "pdf_y_end": 306.2,
+        "unit_file": "soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Barać",
@@ -97341,7 +97367,22 @@
     "soldier_id": "0003011952",
     "birth_place": "Doljani, D. Lapac",
     "rank": "komandant bataljona, načelnik štaba brigade, pukovnik",
-    "pdf_x_end": 191.7
+    "pdf_x_end": 191.7,
+    "occupation": "trgovački pomoćnik",
+    "other_sources": [
+      {
+        "soldier_id": "0002004721",
+        "name": "Medić Petrov Mirko",
+        "additional_info": "zvani Cukić; 5. 8. 1914, Doljani, D. Lapac, trgovački pomoćnik, u NOB od 15. 8. 1941, kapetan, u ratu posljednji načelnik štaba brigade",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 731,
+        "pdf_x": 126.1,
+        "pdf_y": 178.4,
+        "pdf_x_end": 461.2,
+        "pdf_y_end": 198.0,
+        "unit_file": "soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Medić",

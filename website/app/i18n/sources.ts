@@ -244,6 +244,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev Posavskega partizanskega odreda leta 1941: poveljstvo, bolnišnica in bataljoni, s podatki o vsakem (str. 565–742)',
     '51-divizija':
       'Borci 51. vojvodinske divizije, padli in pogrešani v bitki pri Batini novembra 1944: rojstvo, dolžnost, kje in kdaj so padli (str. 469–501)',
+    '51-divizija-savic':
+      'Seznam padlih borcev in starešin divizije od ustanovitve, 1. novembra 1944, do konca vojne, 15. maja 1945, po brigadah: 7., 8., 12. in 14. (slovaška), artilerijska, enote pri štabu; rojstvo, dolžnost, kje in kdaj so padli (str. 219–288)',
     'borci-sutjeske-vrhovni-stab':
       'Imenski seznam borcev s Sutjeske: vsi pripadniki Vrhovnega štaba, njegovih služb, Spremljevalnega bataljona in britanske vojaške misije v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-1-proleterska-divizija':
@@ -555,6 +557,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на Посавскиот партизански одред во 1941: команда, болница и баталјони, со податоци за секого (стр. 565–742)',
     '51-divizija':
       'Борците на 51. војводинска дивизија загинати и исчезнати во Батинската битка, ноември 1944: раѓање, должност, каде и кога загинале (стр. 469–501)',
+    '51-divizija-savic':
+      'Список на загинатите борци и старешини на дивизијата од формирањето, 1 ноември 1944, до крајот на војната, 15 мај 1945, по бригади: 7., 8., 12. и 14. (словачка), артилериска, единиците при штабот; раѓање, должност, каде и кога загинале (стр. 219–288)',
     'borci-sutjeske-vrhovni-stab':
       'Поименичен список на борците од Сутјеска: сите припадници на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-1-proleterska-divizija':
@@ -865,6 +869,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters of the Posavina Partisan Detachment in 1941: command, hospital and battalions, with details of each (pp. 565–742)',
     '51-divizija':
       'The 51st Vojvodina Division’s fallen and missing in the Battle of Batina, November 1944: birth, duty, where and when they fell (pp. 469–501)',
+    '51-divizija-savic':
+      'The fighters and officers of the division who fell from its formation, 1 November 1944, to the end of the war, 15 May 1945, by brigade: the 7th, 8th, 12th and 14th (Slovak), the artillery brigade and the staff units; birth, duty, where and when they fell (pp. 219–288)',
     'borci-sutjeske-vrhovni-stab':
       'The roll of the Sutjeska: every member of the Supreme Headquarters, its services, the Escort Battalion and the British military mission in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-1-proleterska-divizija':
