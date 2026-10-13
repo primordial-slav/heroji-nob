@@ -33,6 +33,10 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '18-srpska-brigada': {
+    date: '1944-06', place: 'Veliki Jastrebac (Toplica)', source: 'https://znaci.org/00001/88_2.pdf',
+    note: 'Milosavljević, Osamnaesta srpska brigada (pogl. „Pripreme i formiranje 18. brigade“): naredba o formiranju nije sačuvana; po kazivanju boraca u brigadu se stupalo „između 3. i 8. juna 1944. godine, a mnogi i najviše 6. juni“, pod Velikim Jastrepcem (Vojna enciklopedija navodi Gornju Bresnicu, autor to ne prihvata).',
+  },
   '5-srpska-brigada': {
     date: '1944-01-14', place: 'Velika Plana (Prokuplje)', source: 'https://znaci.org/00001/86_2.pdf',
     note: 'Jovanović, Mirčetić, Peta srpska NOU brigada (pogl. „Brigada je rođena“): Treća južnomoravska brigada formirana je naredbom Glavnog štaba NOV i PO Srbije; o njenom osnivanju „tog dana, 14. januara 1944. godine … u selu Velika Plana (toplička) kod Prokuplja“ izveštava Nedeljko Karaičić.',

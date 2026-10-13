@@ -589,6 +589,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '18-srpska-brigada': {
+    name: '18. srbska brigada',
+    description: 'Ustanovljena junija 1944 pod Velikim Jastrebcem. Vsi borci in starešine brigade, z letom in krajem rojstva ter tem, kako so padli ali bili ranjeni.',
+  },
   '5-srpska-brigada': {
     name: '5. srbska brigada',
     description: 'Ustanovljena 14. januarja 1944 v Veliki Plani pri Prokuplju kot 3. južnomoravska brigada. Padli in umrli borci in starešine brigade.',
@@ -1194,6 +1198,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '18-srpska-brigada': {
+    name: '18-та српска бригада',
+    description: 'Формирана во јуни 1944 под Велики Јастребац. Сите борци и раководители на бригадата, со година и место на раѓање и како загинале или биле ранети.',
   },
   '5-srpska-brigada': {
     name: '5-та српска бригада',
@@ -1802,6 +1810,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '18-srpska-brigada': {
+    name: '18th Serbian Brigade',
+    description: 'Formed in June 1944 below Mount Veliki Jastrebac. Every fighter and officer of the brigade, with year and place of birth and how they fell or were wounded.',
   },
   '5-srpska-brigada': {
     name: '5th Serbian Brigade',

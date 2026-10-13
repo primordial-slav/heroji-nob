@@ -1271,6 +1271,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/5-srpska.pdf']
   },
   {
+    id: '18-srpska-brigada',
+    name: '18. srpska brigada',
+    nameEn: '18th Serbian Brigade',
+    description: 'Formirana u junu 1944. pod Velikim Jastrepcem. Svi borci i rukovodioci brigade, s godinom i mestom rođenja i time kako su pali ili ranjeni.',
+    image: '/images/18-srpska-brigada.jpg',
+    soldierCount: 5032,
+    dataFile: '/18-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/18-srpska.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

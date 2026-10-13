@@ -487,6 +487,14 @@ UNITS = {
         caption=nth(5, r"srpsk") + r"|(?:3\.|tre[cć]\w*)\s+ju[zž]nomoravsk", photo=None,
         note="Nothing in the gallery names the brigade, and its book (Jovanović, Mirčetić, Peta srpska NOU brigada) "
              "prints only maps: the card shows the first page of its list of the fallen."),
+    "18-srpska-brigada": dict(
+        name="18. srpska brigada", tags=["18-srpska-brigada"],
+        caption=nth(18, r"srpsk") + r"|jastreba[cč]k\w*\s+brigad", photo=None,
+        book=dict(pdf="00001/88_8.pdf", page=15, xref=81,
+                  caption="Grupa rukovodilaca iz 18. brigade po završetku borbenih operacija u Bosni, april 1945, "
+                          "Bosanska Posavina"),
+        note="Nothing in the gallery names the brigade; the photo is from its own book (Milosavljević, Osamnaesta "
+             "srpska brigada)."),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,

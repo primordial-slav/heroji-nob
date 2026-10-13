@@ -1171,6 +1171,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    128: {
+        'name': '18. Srpska',
+        'json_file': '18-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "МИЛИЋ РАДИВОЈЕ, 1918, Везичево. Погинуо марта 1945. код Градачца" (Cyrillic)
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

@@ -1631,6 +1631,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih i umrlih boraca i rukovodilaca brigade (prilog br. 2): godina i mesto rođenja, zanimanje, kada je ko stupio u NOVJ, bataljon i dužnost, kada i gde je pao i gde je sahranjen (str. 450–510).'
   },
   {
+    id: '18-srpska',
+    title: 'Osamnaesta srpska brigada',
+    author: 'Krstivoje Milosavljević',
+    pdfPath: '/pdfs/18-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/18-srpska.jpg',
+    brigadeName: '18. srpska brigada',
+    description: '„Oni su se borili u 18. srpskoj brigadi“: 5.047 boraca i rukovodilaca brigade po autorovom računu, od toga 780 poginulih, 787 ranjenih, 47 nestalih i 49 umrlih od bolesti, s godinom i mestom rođenja, dužnošću i time gde je ko pao ili bio ranjen (str. 313–426). Spisak je sastavljen iz evidencije SUBNOR-a, ratne sanitetske dokumentacije 25. divizije i sačuvanih dokumenata brigade.'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',
