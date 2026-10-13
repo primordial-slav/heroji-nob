@@ -1,8 +1,9 @@
 """
-The order of battle of the NOVJ: the brigade, division and corps tables ("Pregledi") of Nikola Anić, Sekula Joksimović,
+The order of battle of the NOVJ: the detachment, brigade, division and corps tables ("Pregledi") of Nikola Anić, Sekula Joksimović,
 Mirko Gutić, Narodnooslobodilačka vojska Jugoslavije - pregled razvoja oružanih snaga narodnooslobodilačkog pokreta
-1941-1945 (znaci.org 00003/523, book pp. 689-860), read into data-extraction/novj/: brigades.json (367), divisions.json
-(68: the NOVJ's, KNOJ's, air force and Italian divisions) and corps.json (18), each row with its cells as printed and
+1941-1945 (znaci.org 00003/523, book pp. 589-860), read into data-extraction/novj/: detachments.json (512 of the 556
+partisan odredi: the scan lacks the spreads with rows 36-45, 394-406, 458-470 and 541-547, and row 324's first lines),
+brigades.json (367), divisions.json (68: the NOVJ's, KNOJ's, air force and Italian divisions) and corps.json (18), each row with its cells as printed and
 its periods (who it was under, and when) read from them; site_links.json ties the site's brigades and divisions to
 their rows.
 
@@ -35,6 +36,9 @@ TABLES = {
     'divisions': (748, 769, [29, 99, 155, 214, 272, 309, 400, 471, 558, 700],
                   ['no', 'name', 'formed', 'from_brigades', 'from_units', 'strength', 'parent', 'strength_changes',
                    'composition', 'arms', 'sources']),
+    'detachments': (657, 701, [44, 152, 212, 280, 322, 410, 503, 588, 648, 700],
+                    ['no', 'name', 'formed', 'place', 'strength', 'makeup', 'parent', 'disbanded', 'reorganized', 'note',
+                     'sources']),
     'corps': (780, 787, [26, 86, 145, 203, 261, 319, 410, 470, 529, 581, 702],
               ['no', 'name', 'formed', 'subordinate', 'divisions', 'detachments', 'units', 'territorial', 'staff', 'area',
                'strength_arms', 'sources']),
@@ -110,7 +114,7 @@ def read(first, last, EDGES=EDGES, COLS=COLS):
             if sum(1 for w in ws if re.fullmatch(r'\d{1,2}', w[4])) >= 7 and len(ws) <= 13:
                 continue                                                  # the header row "1 2 3 ... 11"
             first = ws[0]
-            if (first[0] < edges[0] - 3 and len(first[4]) <= 4 and len(ws) > 1 and first[4] not in ('Red.', 'br.', 'broj')):
+            if ((first[0] < edges[0] - 3 or (first[0] < edges[0] and first[4].rstrip('.').isdigit())) and len(first[4]) <= 4 and len(ws) > 1 and first[4] not in ('Red.', 'br.', 'broj')):
                 n = first[4].rstrip('.')
                 starts.append((mid - 4, int(n) if n.isdigit() else 0, pg))   # 0: a number the OCR garbled ("SY")
             elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', t):
@@ -225,8 +229,8 @@ UNITS_ORD = {'prva': 1, 'prvi': 1, 'druga': 2, 'drugi': 2, 'treća': 3, 'treći'
              'deveta': 9, 'deveti': 9}
 FOLD = str.maketrans('čćžšđ', 'cczsd')
 MONTH = r'(?:januar\w*|februar\w*|mart\w*|april\w*|maj\w*|jun\w*|jul\w*|avgust\w*|septemb\w*|oktob\w*|novemb\w*|decemb\w*|jan\.|feb\.|sept?\.|okt\.|nov\.|dec\.|avg\.)'
-DATE = (rf'(?:(?:početk\w*|početak|sredin\w*|sred\.|kraj\w*|polovin\w*|prv\w+\s+polovin\w*|drug\w+\s+polovin\w*|jesen\w*|'
-        rf'proleć\w*|prolje\w*|leta|ljeta|zim\w*)\s+)?(?:\d{{1,2}}\.?\s*)?(?:[IVX]{{1,4}}\.?\s*|{MONTH}\s*)?(?:19\d\d|194\.\d)\.?'
+DATE = (rf'(?:(?:početk\w*|početak|poč\.|sredin\w*|sred\.|kraj\w*|kr\.|[pd]\.\s?p\.|polovin\w*|prv\w+\s+polovin\w*|drug\w+\s+polovin\w*|jesen\w*|'
+        rf'proleć\w*|prolje\w*|leto|ljeto|leta|ljeta|zim\w*)\s+)?(?:\d{{1,2}}\.?\s*)?(?:[IVX]{{1,4}}\.?\s*|{MONTH}\s*)?(?:19\d\d|194\.\d)\.?'
         rf'|kraja\s+rata|rasformiranja|formiranja'
         rf'|\d{{1,2}}\.\s*(?:[IVX]{{1,4}}\.?|{MONTH})(?=\s+(?:do|i)\b)')     # "od 13. II do maja 1943": the year after
 
@@ -244,20 +248,25 @@ def number(name: str) -> int | None:
     return ORD.get(w.group(1)) if w else None
 
 
-def periods(text: str, chain: bool = True) -> list[dict]:
+def periods(text: str, chain: bool = True, bare: bool = False) -> list[dict]:
     """"pod Vrhovnim štabom NOP i DVJ do 1. XI 1942. u 1. proleterskoj diviziji do septembra 1943. u 2. ..." ->
     [{unit, from, to}, ...]. A unit is the words before its "od"/"do". In a chain (who a unit was under, one at a
     time) a period without its own end runs to the next one's start, and one without its start begins where the one
-    before ended; a list of what a unit held at once (a division's brigades, a corps' divisions) is no chain."""
+    before ended; a list of what a unit held at once (a division's brigades, a corps' divisions) is no chain. With
+    bare, a date with no "od" before it starts its unit's period too (the detachments: "14. divizija oktobar 1943.
+    7. korpus od 24. decembra 1943.")."""
     text = re.sub(r'\s+', ' ', text or '').strip(' .;')
     if not text or text in ('—', '-'):
         return []
     marks = list(re.finditer(rf'\b(od|do|potom|i ponovo od|ponovo od)\s+({DATE})', text))
+    if bare:
+        marks = [m for m in re.finditer(rf'(?:\b(od|do|potom|i ponovo od|ponovo od)\s+|(?<![\w.]))({DATE})', text)
+                 if m.group(1) or re.search(r'19\d\d|194\.\d', m.group(2))]
     out, pos = [], 0
     for m in marks:
         unit = text[pos:m.start()].strip(' ,.;')
-        unit = re.sub(r'^(?:i\s+)?(?:potom\s+)?(?:u\s+|pod\s+)?', '', unit).strip()
-        kind, date = m.group(1), m.group(2).strip(' .')
+        unit = re.sub(r'^(?:[—–-]\s*)?(?:i\s+)?(?:potom\s+)?(?:u\s+|pod\s+)?', '', unit).strip()
+        kind, date = m.group(1) or 'od', m.group(2).strip(' .')
         if unit and re.search(r'[A-Za-zČĆŽŠĐčćžšđ]{2,}', unit):
             out.append({'unit': unit, 'from': '', 'to': ''})
         if out:
@@ -270,8 +279,8 @@ def periods(text: str, chain: bool = True) -> list[dict]:
                     out[-1]['from'] = date
         pos = m.end()
     tail = text[pos:].strip(' ,.;')
-    tail = re.sub(r'^(?:i\s+)?(?:potom\s+)?(?:u\s+|pod\s+)?', '', tail).strip()
-    if tail and re.search(r'[A-Za-zČĆŽŠĐčćžšđ]{3,}', tail):
+    tail = re.sub(r'^(?:[—–-]\s*)?(?:i\s+)?(?:potom\s+)?(?:u\s+|pod\s+)?', '', tail).strip()
+    if tail and re.search(r'[A-Za-zČĆŽŠĐčćžšđ]{3,}', tail) and not re.match(r'(?:od|do)\s+\w+$', tail):   # "od juna"
         out.append({'unit': tail, 'from': '', 'to': ''})
     for a, b in zip(out, out[1:]) if chain else ():
         if not a['to'] and b['from']:
@@ -315,6 +324,15 @@ def key(name: str) -> tuple:
 
 # the site's units whose row the book's name doesn't give away: a KNOJ brigade of the same name, a brigade named for
 # its place or person, two brigades that bore one number (12. krajiška: the one formed at Drinić, 19-20 February 1943)
+# the book's own errata ("Ispravke", PDF p. 892) for cells of these tables, each checked on the scan
+ERRATA = {
+    ('detachments', 56, 'parent'): ('uradni', 'udarni'),                        # book p. 599
+    ('detachments', 66, 'parent'): ('operativnia', 'operativna'),               # p. 601
+    ('detachments', 228, 'disbanded'): ('8. VIII 1941', '8. VIII 1944'),       # p. 627, Imotski odred
+    ('brigades', 95, 'parent'): ('27. divizija', '26. divizija'),              # p. 715, 11. dalmatinska
+    ('brigades', 313, 'name'): ('(. hercegovačka', '(3. hercegovačka'),        # p. 768
+}
+
 LINKS = {
     'ljubljanska-brigada': ('brigades', 148), '4-splitska-brigada': ('brigades', 72),
     'prva-vojvodjanska-brigada': ('brigades', 18), '2-vojvodjanska-brigada': ('brigades', 206),
@@ -333,6 +351,9 @@ LINKS = {
     '51-divizija': ('divisions', 53), '3-udarna-divizija': ('divisions', 3), '7-banijska-divizija': ('divisions', 7),
     '16-slavonska-omladinska-brigada': ('brigades', 71), 'druga-licka-brigada': ('brigades', 11),
     '13-proleterska-brigada': ('brigades', 17), '7-banijska-brigada': ('brigades', 62),
+    'posavsko-trebavski-odred': ('detachments', 70), 'skofjeloski-odred': ('detachments', 443),
+    'istrski-odred': ('detachments', 423), 'zapadnodolenjski-odred': ('detachments', 445),
+    'posavski-odred': ('detachments', 486),
 }
 
 
@@ -343,6 +364,9 @@ def main():
     for name, (first, last, edges, cols) in TABLES.items():
         rows = read(first, last, edges, cols)
         for r in rows:
+            for (table, no, col), (wrong, right) in ERRATA.items():
+                if table == name and r['no'] == no and wrong in r[col]:
+                    r[col] = r[col].replace(wrong, right)
             r['name'] = clean(r['name'])
         tables[name] = rows
     for b in tables['brigades']:
@@ -352,6 +376,12 @@ def main():
         d['brigades'] = periods(clean(d['composition']), chain=False)
     for c in tables['corps']:
         c['divisions_periods'] = periods(clean(c['divisions']), chain=False)
+    for o in tables['detachments']:
+        o['periods'] = periods(clean(o['parent']), bare=True)
+        if 'C R N E' in o['section']:                            # the heading set in spaced capitals
+            o['section'] = 'NOP ODREDI CRNE GORE I SANDŽAKA'
+        if o['no'] > 540:      # Kosovo's heading is on a spread the scan lacks; Vojvodina's rows end at 540 (Ž)
+            o['section'] = 'NOP ODREDI KOSOVA I METOHIJE'
     OUT.mkdir(exist_ok=True)
     for name, rows in tables.items():
         (OUT / f'{name}.json').write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding='utf-8')
@@ -359,7 +389,8 @@ def main():
     site = re.findall(r"id: '([^']+)',\s*name: '([^']+)'", UNITS_TS.read_text(encoding='utf-8'))
     links = {}
     for uid, uname in site:
-        kind = 'divisions' if 'divizij' in uname else 'brigades' if 'brigad' in uname else None
+        kind = ('divisions' if 'divizij' in uname else 'brigades' if 'brigad' in uname
+                else 'detachments' if 'odred' in uname else None)
         if not kind:
             continue
         if uid in LINKS:
