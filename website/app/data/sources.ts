@@ -1505,6 +1505,24 @@ export const sources: PdfSource[] = [
     description: 'Monografija sela Labukovo kod Svrljiga (2007): meštani poginuli u NOB-u od 1941. do 1945. (str. 44); oni koje knjiga navodi kao taoce, žrtve terora i logoraše nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   },
   {
+    id: 'hronika-beli-breg',
+    title: 'Beli Breg (Aleksinac)',
+    author: 'Slobodan V. Stanojević',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000464',
+    thumbnail: '/images/pdf-thumbs/hronika-beli-breg.jpg',
+    brigadeName: '',
+    description: 'Monografija sela Beli Breg kod Aleksinca (2009): meštani učesnici NOR-a, s godinom rođenja, danom kad su stupili u jedinicu i jedinicom, i poginuli i umrli neposredno posle rata (str. 113–114). Zarobljenici, internirani i vojnici Jugoslovenske vojske iz iste tabele nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'hronika-donja-gorevnica',
+    title: 'Donja Gorevnica (zemlja i ljudi)',
+    author: 'Radul Marković, Miloljub S. Pantović',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000094',
+    thumbnail: '/images/pdf-thumbs/hronika-donja-gorevnica.jpg',
+    brigadeName: '',
+    description: 'Monografija sela Donja Gorevnica kod Čačka (1996): iz spiska palih boraca i žrtava iz sela uneti su samo borci (str. 233–238), ne i žrtve terora i vojnici Jugoslovenske vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
     id: 'hak-14-donji-lapac',
     title: 'Kotar Donji Lapac u narodnooslobodilačkom ratu 1941–1945.',
     author: 'Grupa autora',

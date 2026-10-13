@@ -1219,6 +1219,17 @@ export const units: Unit[] = [
     soldierCount: 78,
     dataFile: '/pionirska-ceta-soldiers.json',
     pdfFiles: []
+  },
+  {
+    // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
+    id: 'ostali-borci',
+    name: 'Ostali borci',
+    nameEn: 'Other fighters',
+    description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zbornik-heroja.jpg',
+    soldierCount: 7334,
+    dataFile: '/ostali-borci.json',
+    pdfFiles: []
   }
   // Add more units here as you get more data
 ]

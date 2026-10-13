@@ -58,6 +58,7 @@ _names: Counter = Counter()      # NAME as spelled on the site, upper-case Latin
 _words: Counter = Counter()      # words of the site's texts, as spelled (case kept)
 _lower: Counter = Counter()      # the same, lower-case
 _prefix: Counter = Counter()     # their first six letters, for a word the site has only in another case
+_given: Counter = Counter()      # the site's given names alone
 
 
 def corpus() -> None:
@@ -67,6 +68,8 @@ def corpus() -> None:
                 for w in re.split(r'[\s-]+', s.get(k) or ''):
                     if w:
                         _names[w.upper()] += 1
+                        if k == 'first_name':
+                            _given[w.upper()] += 1
             text = ' '.join(s.get(k) or '' for k in ('additional_info', 'birth_place', 'death_place', 'unit_detail'))
             for w in re.findall(r'[A-Za-zČĆŽŠĐčćžšđ]+', text):
                 add(w)
@@ -270,6 +273,19 @@ def raw_entries() -> list[dict]:
     return out
 
 
+def fix_head(words: list[str]) -> list[str]:
+    """A heading the letter spacing broke apart ("ГОЈ КО", "СПАСОЈ Е", "БОГ ДАНОВИЋ"), a title before the name ("Др"),
+    a nickname set as a word of its own ("КОВАЧЕВИЋ ВУКАШИН ВУКОТА" = Vukašin, called Vukota)"""
+    words = [w for w in words if latin(w).strip('.').upper() != 'DR' and w.strip('·.–-')]
+    if len(words) >= 3 and len(words[-1]) <= 2:
+        words = words[:-2] + [best_name(words[-2] + words[-1])]
+    if len(words) >= 3 and _names[latin(words[0] + words[1]).upper()] and not _names[latin(words[1]).upper()]:
+        words = [best_name(words[0] + words[1])] + words[2:]
+    if len(words) >= 3 and '-' not in words[-1] and _given[latin(words[-2]).upper()] >= 3:
+        words = words[:-2] + [words[-2] + '-' + words[-1]]
+    return words
+
+
 def parse(e: dict) -> dict:
     head = re.sub(r'\s+', ' ', e['head']).strip()
     maiden = re.search(r'\(([^)]*)\)', head)
@@ -283,6 +299,7 @@ def parse(e: dict) -> dict:
             merged.append(w)
     # each part of a name joined by a dash on its own: "БААГОЈЕ–БААЖО" = Благоје–Блажо, the second a nickname
     words = ['-'.join(best_name(p) for p in re.split(r'\s*[–—-]+\s*', w) if p) for w in merged]
+    words = fix_head(words)
     given_parts = re.split(r'-', words[-1])
     surname, given = ' '.join(words[:-1]), given_parts[0]
     nick = given_parts[1] if len(given_parts) > 1 else ''

@@ -68,7 +68,7 @@ BOOKS = {
                      municipality='Svrljig', offset=None),
     '00000130': dict(title='Donje Vidovo', author='Miroslav Dimitrijević', year=1997, place='Donje Vidovo',
                      municipality='Paraćin', offset=None),
-    '00000094': dict(title='Donja Gorevnica (zemlja i ljudi)', author='Radul Marković', year=1996,
+    '00000094': dict(title='Donja Gorevnica (zemlja i ljudi)', author='Radul Marković, Miloljub S. Pantović', year=1996,
                      place='Donja Gorevnica', municipality='Čačak', offset=-5),
     '00000784': dict(title='Podgočka naselja trsteničkog kraja', author='Momčilo R. Todosijević', year=2008,
                      place='', municipality='Trstenik', offset=6),

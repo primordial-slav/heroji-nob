@@ -1116,6 +1116,16 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    # not a unit: the books across units' soldiers who have no record of a unit (data-extraction/build_ostali_borci.py)
+    122: {
+        'name': 'Ostali borci',
+        'json_file': 'ostali-borci.json',
+        'language': 'sr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 
