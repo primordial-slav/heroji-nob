@@ -122,6 +122,8 @@ def read(first, last, EDGES=EDGES, COLS=COLS, gutter=None, number_left=None):
         scale = page.rect.width / 841.85
         for mid, ws in lines_of(words):
             t = ' '.join(w[4] for w in ws)
+            # a heading's line without the scraps of cells beside it ("... BRIGADE SLOVENIJE a")
+            caps = ' '.join(w[4] for w in ws if not (len(w[4]) <= 2 and w[4].islower()))
             if (sum(1 for w in ws if re.fullmatch(r'\d{1,2}', w[4])) >= 7
                     and sum(1 for w in ws if not re.fullmatch(r'\d{1,2}|[I|l]', w[4])) <= 3):
                 continue                                                  # the header row "1 2 3 ... 11"
@@ -130,13 +132,13 @@ def read(first, last, EDGES=EDGES, COLS=COLS, gutter=None, number_left=None):
                 if re.fullmatch(r'[\dSIlO]{1,2}\.', first[4]) and first[0] < number_left and len(ws) > 1:
                     n = first[4][:-1]                                   # "S." for 5: read from the run
                     starts.append((mid - 4, int(n) if n.isdigit() else 0, pg))
-                elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', t):
-                    starts.append((mid - 4, None, (first[0], t)))
+                elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', caps):
+                    starts.append((mid - 4, None, (first[0], caps)))
             elif ((first[0] < edges[0] - 3 or (first[0] < edges[0] and first[4].rstrip('.').isdigit())) and len(first[4]) <= 4 and len(ws) > 1 and first[4] not in ('Red.', 'br.', 'broj')):
                 n = first[4].rstrip('.')
                 starts.append((mid - 4, int(n) if n.isdigit() else 0, pg))   # 0: a number the OCR garbled ("SY")
-            elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', t):
-                starts.append((mid - 4, None, (first[0], t)))
+            elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', caps):
+                starts.append((mid - 4, None, (first[0], caps)))
         # a row whose number the OCR dropped: a name that starts after a blank gap (rows stand apart, an entry's own
         # lines about 8 pt), as at the top of a page
         prev_mid = -1e9
@@ -397,7 +399,10 @@ def periods(text: str, chain: bool = True, bare: bool = False) -> list[dict]:
             if kind == 'do':
                 out[-1]['to'] = date
             elif kind.endswith('od'):
-                if out[-1]['from'] and kind != 'od':
+                if 'ponovo' in kind and out[-1]['to']:
+                    # "do 3. XI 1943. i ponovo od V 1944. do kraja rata": a second span of the same unit
+                    out.append({'unit': out[-1]['unit'], 'from': date, 'to': ''})
+                elif out[-1]['from'] and kind != 'od':
                     out[-1]['again'] = date
                 elif not out[-1]['from']:
                     out[-1]['from'] = date
