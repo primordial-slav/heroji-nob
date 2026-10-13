@@ -1376,5 +1376,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/trebinjci-pali.jpg',
     brigadeName: '',
     description: 'Spomenica SUBNOR-a Trebinje (1974): borci sa područja opštine koji su pali u ratu (str. 13–96) i borci iz cele Jugoslavije koji su poginuli kod Trebinja (str. 159–174), s rođenjem, jedinicama i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spisak žrtava fašističkog terora iz iste knjige nije unet. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'pali-za-lepsa-svitanja',
+    title: 'Pali za lepša svitanja',
+    author: 'Al. Tadić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00008604',
+    thumbnail: '/images/pdf-thumbs/pali-za-lepsa-svitanja.jpg',
+    brigadeName: '',
+    description: 'Majke narodnih heroja pričaju o svojim sinovima i kćerima (1967); nad svakom pričom je kratka biografija heroja: rođenje, zanimanje, KPJ, NOB, smrt i dan kad je proglašen. Knjiga ne pripada jednoj jedinici: biografija je dodata zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]
