@@ -122,30 +122,36 @@ export interface Place {
   members: PlaceMember[]
 }
 
-interface PlaceIndex {
-  byId: Map<string, Place>
+/** A place as the place files give it: village, municipality, and its people as [id, name, data file, years] */
+export type PlaceRow = [string, string, [string, string, string, string][]]
+
+// The places index is cut into small files (app/lib/placeFiles.ts), so opening a record loads its soldier's place
+// alone: a shard of ids says which chunk of places his is in, and where
+export const placeShard = (id: string) => id.slice(0, 7)
+/** About how much of the index a chunk holds; a place larger than that is a chunk of its own */
+export const PLACE_CHUNK_BYTES = 24000
+
+// Each file once per visit
+const placeFiles = new Map<string, Promise<unknown>>()
+
+function placeFile<T>(path: string): Promise<T> {
+  let file = placeFiles.get(path)
+  if (!file) {
+    file = fetch(path).then((res) => {
+      if (!res.ok) throw new Error(`${path}: ${res.status}`)
+      return res.json()
+    })
+    file.catch(() => placeFiles.delete(path))
+    placeFiles.set(path, file)
+  }
+  return file as Promise<T>
 }
 
-let placeIndex: Promise<PlaceIndex> | null = null
-
-export function loadPlaces(): Promise<PlaceIndex> {
-  placeIndex ??= fetch('/relations/places.json')
-    .then((res) => res.json())
-    .then((doc: { files: string[]; places: [string, string, [string, string, number, string][]][] }) => {
-      const byId = new Map<string, Place>()
-      for (const [village, municipality, rows] of doc.places) {
-        const place: Place = {
-          village,
-          municipality,
-          members: rows.map(([id, name, file, years]) => ({ id, name, file: doc.files[file], years })),
-        }
-        for (const m of place.members) byId.set(m.id, place)
-      }
-      return { byId }
-    })
-    .catch((e) => {
-      placeIndex = null
-      throw e
-    })
-  return placeIndex
+/** The place a soldier was born in, with everyone else born there, or null if the index doesn't place him */
+export async function placeOf(id: string): Promise<Place | null> {
+  const shard = await placeFile<Record<string, [number, number]>>(`/places/of/${placeShard(id)}`)
+  const at = shard[id]
+  if (!at) return null
+  const [village, municipality, rows] = (await placeFile<PlaceRow[]>(`/places/chunk/${at[0]}`))[at[1]]
+  return { village, municipality, members: rows.map(([id, name, file, years]) => ({ id, name, file, years })) }
 }

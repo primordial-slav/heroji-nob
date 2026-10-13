@@ -31,6 +31,10 @@ const nextConfig = {
   outputFileTracingExcludes: {
     '*': ['public/**/*', 'data/life-events/**/*'],
   },
+  // The search route reads the search data built before the build (scripts/prepare-search.ts), not the data files
+  outputFileTracingIncludes: {
+    '/api/search': ['./search-data/**/*'],
+  },
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;
@@ -49,6 +53,12 @@ const nextConfig = {
           { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
         ],
       },
+      // Photos seldom change: a browser keeps its copy for a day and then asks again in the background for a week,
+      // instead of asking about every card and portrait on every visit
+      ...['/images/:path*', '/portreti/:path*', '/porodica/:path*', '/medalje/:path*'].map((source) => ({
+        source,
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' }],
+      })),
     ]
   },
 }

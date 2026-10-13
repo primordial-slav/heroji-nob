@@ -28,6 +28,8 @@ export const searchIndexPath = (part: number) => `/search-index/${part}`
 export const RECORDS_PER_PART = 250
 // Rows on the first page of a results list; a unit page's HTML has its unit's first page
 export const FIRST_PAGE = 50
+/** The page sizes a results list offers */
+export const PAGE_SIZES = [FIRST_PAGE, 100, 200]
 
 // A soldier's fields in an index row, then his other_sources (0 if none), then full_name if it isn't
 // "last middle first". fathers_name is there only where it isn't middle_name (the father in the nominative, which
@@ -68,7 +70,7 @@ export function encodeRow(soldier: Soldier): IndexRow {
   return withoutTrailingEmpties(row)
 }
 
-function decodeRow(row: IndexRow, unit: string): Soldier {
+export function decodeRow(row: IndexRow, unit: string): Soldier {
   const soldier: Record<string, unknown> = { fathers_name: '', unit }
   FIELDS.forEach((f, i) => { soldier[f] = row[i] ?? '' })
   const sources = row[FIELDS.length]
@@ -85,18 +87,27 @@ function decodeRow(row: IndexRow, unit: string): Soldier {
  * unit's book in other_sources) is listed once, in the first of his units, with the others named in also_units.
  */
 export function listOnce(lists: Soldier[][]): Soldier[] {
-  const linkedAway = new Set<string>()
   const listed: Soldier[] = []
-  for (const soldier of lists.flat()) {
-    if (linkedAway.has(soldier.soldier_id)) continue
-    const links = (soldier.other_sources ?? []).filter((o) => o.unit_file)
-    links.forEach((o) => o.soldier_id && linkedAway.add(o.soldier_id))
-    const also = links
-      .map((o) => units.find((u) => u.dataFile === `/${o.unit_file}`)?.name)
-      .filter((u, i, list): u is string => Boolean(u) && u !== soldier.unit && list.indexOf(u) === i)
-    listed.push(also.length ? { ...soldier, also_units: also } : soldier)
-  }
+  eachListedOnce(lists, (soldier, also) => listed.push(also.length ? { ...soldier, also_units: also } : soldier))
   return listed
+}
+
+/** Each soldier listOnce lists, with the other units he is listed in, and his place in all the lists together */
+export function eachListedOnce(lists: Soldier[][], each: (soldier: Soldier, also: string[], at: number) => void) {
+  const linkedAway = new Set<string>()
+  let at = -1
+  for (const list of lists) {
+    for (const soldier of list) {
+      at++
+      if (linkedAway.has(soldier.soldier_id)) continue
+      const links = (soldier.other_sources ?? []).filter((o) => o.unit_file)
+      links.forEach((o) => o.soldier_id && linkedAway.add(o.soldier_id))
+      const also = links
+        .map((o) => units.find((u) => u.dataFile === `/${o.unit_file}`)?.name)
+        .filter((u, i, list): u is string => Boolean(u) && u !== soldier.unit && list.indexOf(u) === i)
+      each(soldier, also, at)
+    }
+  }
 }
 
 export const recordsPath = (unitId: string, part: number) => `/records/${unitId}/${part}`
@@ -192,8 +203,14 @@ export async function loadOnThisDay(month: number, day: number): Promise<Soldier
   const key = dayKey(month, day)
   const loaded = dayLists.get(key)
   if (loaded) return loaded
-  const entries = await fetchJson<PlacedRow[]>(`/on-this-day/${key}`)
-  const list = entries.flatMap(({ unit: id, position, row, also }) => {
+  const list = placedSoldiers(await fetchJson<PlacedRow[]>(`/on-this-day/${key}`))
+  dayLists.set(key, list)
+  return list
+}
+
+/** The soldiers of a day's list or of a page of search results, each with where his full record is */
+export function placedSoldiers(entries: PlacedRow[]): Soldier[] {
+  return entries.flatMap(({ unit: id, position, row, also }) => {
     const unit = units.find((u) => u.id === id)
     if (!unit) return []
     const soldier = decodeRow(row, unit.name)
@@ -201,9 +218,53 @@ export async function loadOnThisDay(month: number, day: number): Promise<Soldier
     located.set(soldier.soldier_id, { unit: unit.id, position })
     return [soldier]
   })
-  dayLists.set(key, list)
-  return list
 }
+
+// The search the server answers (app/api/search/route.ts): the page's own address parameters, and these
+export const SEARCH_API = '/api/search'
+export const SEARCH_PAGE = { page: 'strana', perPage: 'po' } as const
+/** The unit whose soldiers alone are searched, on a unit's page */
+export const UNIT_PARAM = 'u'
+
+export interface SearchResultPage {
+  /** How many soldiers the search found, after the filters */
+  count: number
+  /** Where the similar ones start among them, -1 if there are none */
+  firstNear: number
+  /** How many it found before the filters */
+  unfiltered: number
+  /** Which page this is, from 1, and how many soldiers a page has */
+  page: number
+  perPage: number
+  /** The page's soldiers */
+  soldiers: Soldier[]
+}
+
+/** One page of a search the server answers */
+export async function searchOnServer(params: URLSearchParams, signal?: AbortSignal): Promise<SearchResultPage> {
+  const response = await fetch(`${SEARCH_API}?${params}`, { signal })
+  if (!response.ok) throw new Error(`${SEARCH_API}: ${response.status}`)
+  const page: Omit<SearchResultPage, 'soldiers'> & { rows: PlacedRow[] } = await response.json()
+  const { rows, ...counts } = page
+  return { ...counts, soldiers: placedSoldiers(rows) }
+}
+
+let portraitPeople: Soldier[] | null = null
+let portraitLoad: Promise<Soldier[]> | null = null
+
+/** The soldiers whose portraits are in the home page's margins (app/portrait-people/route.ts) */
+export function loadPortraitPeople(): Promise<Soldier[]> {
+  portraitLoad ??= fetchJson<PlacedRow[]>('/portrait-people')
+    .then((rows) => (portraitPeople = placedSoldiers(rows)))
+    .catch((error) => {
+      portraitLoad = null
+      throw error
+    })
+  return portraitLoad
+}
+
+/** Those soldiers if they have loaded in this visit */
+export const loadedPortraitPeople = () => portraitPeople
 
 /** A day's list if it has loaded in this visit */
 export const loadedOnThisDay = (month: number, day: number) => dayLists.get(dayKey(month, day))

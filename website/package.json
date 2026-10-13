@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 127.0.0.1",
-    "build": "next build",
+    "build": "npm run prepare-search && next build",
+    "prepare-search": "esbuild scripts/prepare-search.ts --bundle --platform=node --format=cjs --outfile=.next/cache/prepare-search.cjs --log-level=warning && node --max-old-space-size=6144 .next/cache/prepare-search.cjs",
     "start": "next start"
   },
   "description": "Website showcasing heroes from the 1st Lika Proletarian Brigade",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@types/node": "25.0.3",
     "@types/react": "19.2.7",
+    "esbuild": "^0.28.2",
     "typescript": "5.9.3"
   },
   "overrides": {

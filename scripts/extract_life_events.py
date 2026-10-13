@@ -148,7 +148,9 @@ PLACE_BEFORE = (rf'\s+(?P<place>(?:kod|na|u|pri)\s+{CAP}'
 BRIGADE = r'[Bb]r[inš]g?ad[a-zp]'
 # sent or transferred elsewhere, and where: "prekomandovan u 5. brigadu", "upućen u bolnicu Sehovići"
 MOVED_WORD = r'(?:prekomand\w+|premje?šten[a]?|upućen[a]?)(?![a-zčćžšđ])'
-MOVED = rf'{MOVED_WORD}(?:\s+(?:u|na|za)\s+[^.,;()\d]{{2,40}}?(?=[.,;(]|\s\d|$))?'
+# (a numbered unit too, "upućen u 5. dalm. brigadu za komandanta bataljona": the destination ends before "za")
+MOVED = (rf'{MOVED_WORD}(?:\s+(?:u|na|za)\s+(?:\d{{1,3}}\.\s+)?(?:(?:dalm|krajišk|srp|hrv|slav|prolet)[a-zčćžšđ]*\.\s*)?'
+         rf'[^.,;()\d]{{2,40}}?(?=[.,;(]|\s\d|\s+za\s|$))?')
 I = re.I
 
 RULES = [
