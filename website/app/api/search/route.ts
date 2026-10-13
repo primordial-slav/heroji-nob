@@ -14,7 +14,8 @@ export const dynamic = 'force-dynamic'
 // every function, as it does not take this route's own preferredRegion
 export const maxDuration = 30
 
-const LONGEST_QUERY = 200
+// The search field takes 200 letters; Cyrillic written in Latin letters can be longer ("љ" is "lj")
+const LONGEST_QUERY = 400
 
 // Read once per instance of the function; under `next dev`, built from the data files, again when one changes
 let loaded: SearchData | null = null
