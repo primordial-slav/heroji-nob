@@ -10,13 +10,15 @@ site and can be found.
 
 One man printed in several of these books is one record: entries of the same name from different books that agree
 (the father and one of birth year, birthplace, year of death; or birth year and birthplace; for two hero books the
-father or the birth year), with nothing that disagrees, are merged, the richest entry first (a page on the site's
-scans before the library's, then the longest text) and the others in `other_sources`. An entry of the same man as an
-entry already on the site (a record took one of his entries) is left out: he has his record.
+father or the birth year; for the books that give little more than the name, a unit or the place of death together
+with the year of death or each other), with nothing that disagrees, are merged, the richest entry first (a page on the
+site's scans before the library's, then the longest text) and the others in `other_sources`. An entry of the same man
+as an entry already on the site (a record took one of his entries) is left out: he has his record.
 
-Record IDs: 0122 + the book's two digits (9001... -> 01) + the entry's number in its book (4 digits), so a record keeps
-its ID as long as its first entry stays first; a re-run after new references only drops the records whose men have
-found their unit.
+Record IDs are kept in data-extraction/ostali_borci_ids.json (entry ID -> record ID), so a record keeps its ID however
+its entries change: a man whose entries had an ID keeps it (the first entry's, if two records of before become one), a
+new man gets the next free one (0122900001 on; the first records took 0122 + the book's two digits + the entry's
+number). A re-run after new references only drops the records whose men have found their unit.
 
 Usage:
     python data-extraction/build_ostali_borci.py            # dry run: counts and samples
@@ -37,6 +39,8 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
 
 CODE = 122
+IDS = ROOT / 'data-extraction' / 'ostali_borci_ids.json'
+FIRST_NEW = 900001
 OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json, which the parsers' corpora read
 # names a parser read wrong, by entry: the Zbornik's headings "DEMONJ A (NIKOLA)", "RAKOVAC J (OAKIM)" and one whose
 # OCR took a line of the text for the name (Pal Šoti, born 19 January 1916 in Bečej, as Narodni heroji 1982 has him)
@@ -81,22 +85,44 @@ def same_man(a: dict, b: dict) -> bool:
         if abs(ya - yb) > 1:
             return False
         agree.add('birth year')
-    da, db = year(a, 'death_year'), year(b, 'death_year')
-    if da and db:
-        if da != db:
+    sa, sb = death_years(a), death_years(b)
+    if sa and sb:
+        if not sa & sb:
             return False
-        agree.add('death year')
+        if len(sa) == len(sb) == 1:
+            agree.add('death year')
+    da, db = max(sa, default=None), max(sb, default=None)
     if (a.get('survived') and db and db <= 1945) or (b.get('survived') and da and da <= 1945):
         return False
     pa, pb = places(a), places(b)
     if pa and pb and any(x[:4] == y[:4] for x in pa for y in pb):
         agree.add('birthplace')
+    if set(a.get('units') or ()) & set(b.get('units') or ()):
+        agree.add('unit')
+    qa, qb = death_places(a), death_places(b)
+    if qa and qb and any(x[:4] == y[:4] for x in qa for y in qb):
+        agree.add('death place')
     core = agree & {'birth year', 'birthplace', 'death year'}
     if 'father' in agree and core:
         return True
     if {'birth year', 'birthplace'} <= agree:
         return True
+    # the lists that give a name, a brigade and where he fell (Gončin's Srem): the unit or the place of his death,
+    # with the year of it or with each other
+    if ('unit' in agree or 'death place' in agree) and len(agree & {'unit', 'death place', 'death year'}) >= 2:
+        return True
     return bool(a.get('_hero') and b.get('_hero') and agree & {'father', 'birth year'})
+
+
+def death_years(e: dict) -> set[int]:
+    """The years he can have died in: the year the entry gives, or the span a list gives (`death_years`)"""
+    ys = {int(y) for y in e.get('death_years') or () if re.fullmatch(r'19[34]\d', str(y))}
+    y = year(e, 'death_year') or year(e, 'death_date')
+    return {y} if y else ys
+
+
+def death_places(e: dict) -> set[str]:
+    return {stem(w) for w in fold(e.get('death_place') or '').split() if len(w) >= 4} - {'selu', 'kod', 'blizu'}
 
 
 _given: Counter = Counter()
@@ -130,10 +156,19 @@ def from_possessive(word: str) -> str:
     return best if _given[best] else ''
 
 
-def record_id(entry_id: str) -> str:
-    book, number = int(entry_id[2:4]), int(entry_id[4:])
-    assert number < 10000, entry_id
-    return f'{CODE:04d}{book:02d}{number:04d}'
+def registry() -> dict[str, str]:
+    """Entry ID -> record ID; started from the file the first records were written to (0122 + the book's two digits +
+    the entry's number, and the record's other entries)"""
+    if IDS.exists():
+        return json.loads(IDS.read_text(encoding='utf-8'))
+    out = {}
+    if OUT.exists():
+        for r in json.loads(OUT.read_text(encoding='utf-8')):
+            for o in r.get('other_sources') or ():
+                if re.fullmatch(r'90\d{8}', o.get('soldier_id') or ''):
+                    out[o['soldier_id']] = r['soldier_id']
+            out.setdefault(f"90{r['soldier_id'][4:6]}00{r['soldier_id'][6:]}", r['soldier_id'])
+    return out
 
 
 def source_entry(e: dict) -> dict:
@@ -178,6 +213,21 @@ def main():
     for e in entries:
         clusters[find(e['soldier_id'])].append(e)
 
+    ids = registry()
+    next_number = max([int(v[4:]) for v in ids.values() if int(v[4:]) >= FIRST_NEW], default=FIRST_NEW - 1) + 1
+    used = set()
+
+    def record_id(group: list[dict]) -> str:
+        """The ID the group's man had (its first entry's, if two records of before become one), else a new one"""
+        nonlocal next_number
+        for m in group:
+            rid = ids.get(m['soldier_id'])
+            if rid and rid not in used:
+                return rid
+        rid = f'{CODE:04d}{next_number:06d}'
+        next_number += 1
+        return rid
+
     records, counts, on_site = [], Counter(), []
     for members in clusters.values():
         # a cluster that took two entries of one book is two men (or the book's one man printed twice): the entries of
@@ -207,7 +257,11 @@ def main():
             if first.get('nick') and first['nick'] not in text:
                 text = f"zvani {first['nick']}; {text}"
             father = first.get('fathers_name') or ''
-            rec = {'soldier_id': record_id(first['soldier_id']), 'last_name': first['last_name'],
+            rid = record_id(g)
+            used.add(rid)
+            for m in g:
+                ids[m['soldier_id']] = rid
+            rec = {'soldier_id': rid, 'last_name': first['last_name'],
                    'middle_name': father, 'first_name': first['first_name'],
                    'fathers_name': from_possessive(father) if first['_book'] == 'trebinjci-pali' else '',
                    'full_name': '', 'additional_info': text,
@@ -219,15 +273,17 @@ def main():
             counts[f'{len(g)} book(s)'] += 1
             counts['from ' + first['_book']] += 1
     records.sort(key=lambda r: (fold(r['last_name']), fold(r['first_name']), fold(r['middle_name']), r['soldier_id']))
-    ids = Counter(r['soldier_id'] for r in records)
-    assert max(ids.values()) == 1, [i for i, n in ids.items() if n > 1][:5]
+    n_ids = Counter(r['soldier_id'] for r in records)
+    assert max(n_ids.values()) == 1, [i for i, n in n_ids.items() if n > 1][:5]
     print(f'{len(entries)} entries, {len(taken)} on records of units; {len(records)} records')
     print(f'{len(on_site)} more entries are the same man as an entry on the site and stay out')
     for k, v in sorted(counts.items()):
         print(f'  {k}: {v}')
+    print(f'{sum(1 for r in records if int(r["soldier_id"][4:]) >= FIRST_NEW)} records with a new ID')
     if write:
         OUT.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding='utf-8')
-        print('Written', OUT)
+        IDS.write_text(json.dumps(dict(sorted(ids.items())), ensure_ascii=False, indent=0), encoding='utf-8')
+        print('Written', OUT, 'and', IDS)
     else:
         import random
         random.seed(1)
