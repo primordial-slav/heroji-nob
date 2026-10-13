@@ -1,13 +1,17 @@
 """
 Find the records a reference book's entries belong to: the soldiers of the site's units that a book across units
 (a hero's portrait in the Zbornik narodnih heroja, ...) describes. The book's entries are read by its parser into
-data-extraction/poreklo/<book>-entries.json; each match becomes a `reference` correction, which apply_corrections.py
-turns into an entry in the record's other_sources (the book's text, its page in the library), as a merge would.
+data-extraction/poreklo/<book>-entries.json (a book of the Poreklo library) or data-extraction/znaci/<book>-entries.json
+(a znaci.org book whose PDF is on the site); each match becomes a `reference` correction, which apply_corrections.py
+turns into an entry in the record's other_sources (the book's text, its page in the library or the PDF's page and the
+entry's box), as a merge would.
 
 A match needs the same surname and given name (letters folded) and more that agrees, with nothing that disagrees:
     sure     the father's name and one of: birth year (within a year), birthplace, year of death; or birth year and
-             birthplace; or the record already calls him a narodni heroj and one of father, birth year, birthplace
-    likely   one of father, birth year, birthplace, year of death
+             birthplace; or the record already calls him a narodni heroj and one of father, birth year, birthplace;
+             or, in a book that lists soldiers by unit, a record of that unit and one of father, birth year,
+             birthplace, the day of death
+    likely   one of father, birth year, birthplace, year of death, day of death
 A father's name printed differently (not an initial of it, nor the same name in another case), birth years more than a
 year apart, a different year of death, a hero who lived past the war against a record of the fallen, or (where the record
 doesn't call him a hero) a birthplace that shares no place name with the book's, rule a pair out.
@@ -31,9 +35,17 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, str(Path(__file__).parent))
 import extract_structured_fields as structured  # noqa: E402
+from extract_life_events import iso, parse_when  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CORRECTIONS = ROOT / 'corrections.json'
+# the books' entries: the Poreklo library's (no scan on the site) and znaci.org's (the PDF on the site)
+ENTRY_DIRS = (ROOT / 'data-extraction' / 'poreklo', ROOT / 'data-extraction' / 'znaci')
+
+
+def entries_path(book: str) -> Path:
+    paths = [d / f'{book}-entries.json' for d in ENTRY_DIRS]
+    return next((p for p in paths if p.exists()), paths[0])
 FOLD = str.maketrans('ČĆŽŠĐčćžšđ', 'CCZSDcczsd')
 HERO = re.compile(r'narodn\w*\s*heroj(?!i)', re.I)
 HERO_BOOKS = {'zbornik-heroja-1957', 'narodni-heroji-1982'}
@@ -124,6 +136,14 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
         clash.append('alive after the war')                # the book has him alive, the record killed in the war
     if hero and HERO.search(texts):
         agree.append('hero on the site')
+    # a book that lists the soldiers by unit (Ofanziva 1942: the fallen of four brigades) gives the site's unit codes,
+    # and the day he fell when it prints one
+    if int(s['soldier_id'][:4]) in ref.get('units', ()):
+        agree.append('unit')
+    if re.fullmatch(r'\d{4}-\d\d-\d\d', ref.get('death_date') or '') and s.get('death_date'):
+        when = parse_when(s['death_date'])
+        if when and when[0][2] and iso(when[0]) == ref['death_date']:
+            agree.append('death day')
     return agree, clash
 
 
@@ -144,20 +164,22 @@ def grade(agree: list[str], clash: list[str]) -> str | None:
         return 'sure'
     if 'hero on the site' in a and (a & {'father', 'birth year', 'birthplace'}):
         return 'sure'
-    if a - {'hero on the site'}:
+    if 'unit' in a and (a & {'father', 'birth year', 'birthplace', 'death day'}):
+        return 'sure'
+    if a - {'hero on the site', 'unit'}:
         return 'likely'
     return None
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('book', help='the entries file: data-extraction/poreklo/<book>-entries.json')
+    ap.add_argument('book', help='the entries file: data-extraction/{poreklo,znaci}/<book>-entries.json')
     ap.add_argument('--json', help='write every match here, for review')
     ap.add_argument('--write', help='grades to append as reference corrections, e.g. "sure"')
     ap.add_argument('--only', help='file of "record_id ref_id" lines: append exactly these (reviewed) matches')
     args = ap.parse_args()
 
-    refs = json.loads((ROOT / 'data-extraction' / 'poreklo' / f'{args.book}-entries.json').read_text(encoding='utf-8'))
+    refs = json.loads(entries_path(args.book).read_text(encoding='utf-8'))
     if args.book in HERO_BOOKS:
         for r in refs:
             r['hero'] = True                               # every entry of these books is a narodni heroj

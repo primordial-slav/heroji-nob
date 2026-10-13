@@ -284,15 +284,13 @@ def apply_merge(soldiers, correction):
     return soldiers, True
 
 
-REFERENCE_DIR = Path(__file__).resolve().parent.parent / 'data-extraction' / 'poreklo'
-
-
 def apply_references(refs, units):
     """Books across units (the Zbornik narodnih heroja): a soldier the book portrays gets its entry in other_sources,
-    with ref_book, as a merged entry from another book (the text, the page in the Poreklo library). The entries are
-    read by the book's parser into data-extraction/poreklo/<book>-entries.json, matched by
-    scripts/match_references.py, and rebuilt on every run. units: {code: soldiers}, changed in place.
-    Returns how many references were applied."""
+    with ref_book, as a merged entry from another book (the text, and the page in the Poreklo library, or for a
+    znaci.org book the PDF's page and the entry's box). The entries are read by the book's parser into
+    data-extraction/{poreklo,znaci}/<book>-entries.json, matched by scripts/match_references.py, and rebuilt on every
+    run. units: {code: soldiers}, changed in place. Returns how many references were applied."""
+    from match_references import entries_path
     books = {}
     by_id = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
     for s in by_id.values():
@@ -307,15 +305,16 @@ def apply_references(refs, units):
             continue                                                  # a unit not processed in this run
         book = books.get(c['ref_book'])
         if book is None:
-            path = REFERENCE_DIR / f"{c['ref_book']}-entries.json"
+            path = entries_path(c['ref_book'])
             book = books[c['ref_book']] = {e['soldier_id']: e for e in json.loads(path.read_text(encoding='utf-8'))}
         e = book.get(c['ref_id'])
         if e is None or (c.get('ref_name') and e['name'] != c['ref_name']):
             print(f"    WARNING: reference {c['ref_id']} of {c['ref_book']} is "
                   f"{e['name'] if e else 'missing'!r}, not {c.get('ref_name')!r}; skipped")
             continue
-        entry = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info'],
-                 'source_url': e['source_url'], 'source_page': e['source_page'], 'ref_book': c['ref_book']}
+        entry = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info']}
+        entry.update({k: e[k] for k in SOURCE_FIELDS if e.get(k) not in (None, '')})
+        entry['ref_book'] = c['ref_book']
         s['other_sources'] = s.get('other_sources', []) + [entry]
         applied += 1
     return applied
