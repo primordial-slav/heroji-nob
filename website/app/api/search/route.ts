@@ -10,8 +10,8 @@ import type { Soldier } from '@/app/lib/types'
 // parameters (?q=Petrović&mesto=Gračac, searchFilters.ts) and ?strana=, ?po=, and ?u=<unit id> on a unit's page
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
-// Near the site's readers
-export const preferredRegion = 'fra1'
+// The function runs in Frankfurt, near the site's readers: website/vercel.json ("regions"), which Vercel applies to
+// every function, as it does not take this route's own preferredRegion
 export const maxDuration = 30
 
 const LONGEST_QUERY = 200

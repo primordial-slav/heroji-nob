@@ -4,7 +4,8 @@ import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
 import Link from 'next/link'
 import { Unit } from '@/app/data/units'
 import { useFuseSearch } from '@/app/lib/useFuseSearch'
-import { fullRecord, listPath, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
+import { useServerSearch } from '@/app/lib/useServerSearch'
+import { PAGE_SIZES, fullRecord, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal from '@/app/components/SoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
@@ -20,7 +21,7 @@ import RichText from '@/app/i18n/RichText'
 
 interface UnitPageClientProps {
   unit: Unit
-  /** The list's first page, full records, shown until the list has loaded */
+  /** The list's first page, full records, in the page itself */
   firstPage: Soldier[]
   /** How many soldiers the list has */
   total: number
@@ -34,48 +35,72 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   const lang = useLang()
   const t = useT()
   const to = useLocalePath()
-  // The unit's list in its short search form (lib/searchIndex.ts); already there when the visitor comes back
-  const [list, setList] = useState<Soldier[] | null>(() => loadedUnitList(unit) ?? null)
-  const soldiers = list ?? NO_SOLDIERS
-  const [loadFailed, setLoadFailed] = useState(false)
-  const loading = !list && !loadFailed
+  const [searchTerm, setSearchTerm] = useState('')
+  const [filters, setFilters] = useState(NO_FILTERS)
+  const [showFilters, setShowFilters] = useState(false)
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
   // The soldier whose full record is being loaded for the dialog
   const opening = useRef<Soldier | null>(null)
-  const [filters, setFilters] = useState(NO_FILTERS)
-  const [showFilters, setShowFilters] = useState(false)
-
-  const { results, searchTerm, setSearchTerm, pending, near } = useFuseSearch(
-    soldiers,
-    { showAllOnEmpty: true, wholeWords: filters.wholeWords }
-  )
-  const shownFilters = useDeferredValue(filters)
-  const listed = useMemo(() => applyFilters(results, shownFilters, false), [results, shownFilters])
   const filtersSet = filterCount(filters, false) > 0
+
+  // Which page of the list is shown: a new search starts on its first
+  const searchKey = JSON.stringify([searchTerm.trim(), filters])
+  const [paging, setPaging] = useState({ search: '', page: 1 })
+  const [perPage, setPerPage] = useState(PAGE_SIZES[0])
+  const page = paging.search === searchKey ? paging.page : 1
+  const onPage = (to: number, size: number) => {
+    setPaging({ search: searchKey, page: to })
+    setPerPage(size)
+  }
+  // The whole list's first page is in the page itself
+  const onFirstPage = !searchTerm.trim() && !filtersSet && page === 1 && perPage === PAGE_SIZES[0]
+
+  // The server searches the unit's soldiers and sends a page of them (useServerSearch); if it doesn't answer, the
+  // page loads the unit's list and searches it itself, as it did before
+  const [local, setLocal] = useState(false)
+  const server = useServerSearch({ query: searchTerm, filters, page, perPage, unit: unit.id, enabled: !local && !onFirstPage })
+  useEffect(() => { if (server.failed) setLocal(true) }, [server.failed])
+
+  // The unit's list in its short search form (lib/searchIndex.ts), loaded only when it is needed: to search here,
+  // for a link to one record, and for the dialog's previous and next and its comrades tree
+  const [list, setList] = useState<Soldier[] | null>(() => loadedUnitList(unit) ?? null)
+  const soldiers = list ?? NO_SOLDIERS
+  const [loadFailed, setLoadFailed] = useState(false)
+  const [linked, setLinked] = useState(false)
+  const needList = local || linked || selectedSoldier !== null
+  useEffect(() => {
+    if (!needList || list) return
+    let current = true
+    loadUnitList(unit)
+      .then((loaded) => current && setList(loaded))
+      .catch(() => current && setLoadFailed(true))
+    return () => { current = false }
+  }, [unit, needList, list])
+
+  const localSearch = useFuseSearch(local ? soldiers : NO_SOLDIERS, { showAllOnEmpty: true, wholeWords: filters.wholeWords, term: searchTerm })
+  const shownFilters = useDeferredValue(filters)
+  const localListed = useMemo(
+    () => (local ? applyFilters(localSearch.results, shownFilters, false) : NO_SOLDIERS),
+    [local, localSearch.results, shownFilters]
+  )
 
   // The search and its filters are in the address (next to an open record's ?borac=), so a search can be sent as a link
   const [addressRead, setAddressRead] = useState(false)
   useEffect(() => {
-    const linked = readSearch(new URLSearchParams(window.location.search))
-    if (linked.query) setSearchTerm(linked.query)
-    setFilters({ ...linked.filters, unit: '' })
-    if (filterCount(linked.filters, false) > 0) setShowFilters(true)
+    const params = new URLSearchParams(window.location.search)
+    const fromAddress = readSearch(params)
+    if (fromAddress.query) setSearchTerm(fromAddress.query)
+    setFilters({ ...fromAddress.filters, unit: '' })
+    if (filterCount(fromAddress.filters, false) > 0) setShowFilters(true)
+    if (params.get(RECORD_PARAM)) setLinked(true)
     setAddressRead(true)
-  }, [setSearchTerm])
+  }, [])
   useEffect(() => {
     if (!addressRead) return
     const url = new URL(window.location.href)
     writeSearch(url, searchTerm, filters, false)
     if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url)
   }, [addressRead, searchTerm, filters])
-
-  useEffect(() => {
-    let current = true
-    loadUnitList(unit)
-      .then((loaded) => current && setList(loaded))
-      .catch(() => current && setLoadFailed(true))
-    return () => { current = false }
-  }, [unit])
 
   // A link to one record (?borac=<id>) opens it once the list has loaded, unless the visitor has opened one by then
   const linkHandled = useRef(false)
@@ -92,8 +117,8 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
     if (linkHandled.current || soldiers.length === 0) return
     linkHandled.current = true
     const id = new URLSearchParams(window.location.search).get(RECORD_PARAM)
-    const linked = id ? findRecord(soldiers, id) : undefined
-    if (linked) openSoldier(linked)
+    const record = id ? findRecord(soldiers, id) : undefined
+    if (record) openSoldier(record)
   }, [soldiers])
 
   // The address bar follows the open record, so copying it gives that record's link
@@ -105,13 +130,21 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
     window.history.replaceState(window.history.state, '', url)
   }, [selectedSoldier])
 
-  // Before the list has loaded, the page's own first page shows, unless the address asks for a search
-  const early = loading && !searchTerm.trim() && !filtersSet
+  // What the list says, whoever searched
+  const found = server.result
+  const searching = searchTerm.trim().length > 0
+  const count = local ? localListed.length : found?.count ?? 0
+  const unfiltered = local ? localSearch.results.length : found?.unfiltered ?? 0
+  const loading = local && !list && !loadFailed
+  // The page's own first page shows until the list or the server's first answer is in, unless the address asks for
+  // a search
+  const early = onFirstPage && !(local && list)
+  const waiting = local
+    ? loading || (!loadFailed && localSearch.pending && localListed.length === 0)
+    : server.pending && count === 0
 
   return (
     <div>
-      {/* The list starts loading with the page rather than once its scripts have run, after what the page shows */}
-      {!list && <link rel="preload" href={listPath(unit)} as="fetch" crossOrigin="anonymous" fetchPriority="low" />}
       <section className="container unit-hero">
         <Link href={to('/')} className="back-link"><ArrowLeftIcon size={16} /> {t.unit.allUnits}</Link>
         <div className="unit-hero-body">
@@ -135,6 +168,7 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
               placeholder={t.unit.placeholder}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              maxLength={200}
               autoComplete="off"
               spellCheck={false}
             />
@@ -151,19 +185,28 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
         <div id="results">
           {/* A search after an empty result shows the loading rows until its results are in */}
           {early ? (
-            <SoldierResults results={firstPage} total={total} onSelect={openSoldier} scrollTargetId="results" />
-          ) : loading || (!loadFailed && pending && listed.length === 0) ? (
+            local
+              ? <SoldierResults results={firstPage} total={total} onSelect={openSoldier} scrollTargetId="results" />
+              : (
+                <SoldierResults
+                  results={firstPage}
+                  paged={{ count: total, firstNear: -1, page: 1, perPage, onPage }}
+                  onSelect={openSoldier}
+                  scrollTargetId="results"
+                />
+              )
+          ) : waiting ? (
             <ul className="loading-rows" aria-label={loading ? t.unit.loading : t.results.searching}>
               {Array.from({ length: 8 }, (_, i) => <li key={i} />)}
             </ul>
-          ) : loadFailed ? (
+          ) : local && loadFailed ? (
             <div className="empty">
               <h2>{t.unit.loadFailedTitle}</h2>
               <p>{t.unit.loadFailedText}</p>
             </div>
-          ) : listed.length === 0 && filtersSet && results.length > 0 ? (
+          ) : count === 0 && filtersSet && unfiltered > 0 ? (
             <div className="empty">
-              <h2>{t.filters.noneTitle(searchTerm.trim() ? searchTerm : '')}</h2>
+              <h2>{t.filters.noneTitle(searching ? searchTerm : '')}</h2>
               <p>
                 <RichText
                   text={t.filters.noneText}
@@ -173,20 +216,34 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
                 />
               </p>
             </div>
-          ) : listed.length === 0 ? (
+          ) : count === 0 ? (
             <div className="empty">
               <h2>{t.unit.noneTitle(searchTerm)}</h2>
               <p>
                 <RichText text={t.unit.noneText} render={(part) => <Link href={to('/')}>{part}</Link>} />
               </p>
             </div>
-          ) : (
+          ) : local ? (
             <SoldierResults
-              results={listed}
-              near={near}
+              results={localListed}
+              near={localSearch.near}
               onSelect={openSoldier}
               scrollTargetId="results"
-              actions={(searchTerm.trim() || filtersSet) && <ShareSearch />}
+              actions={(searching || filtersSet) && <ShareSearch />}
+            />
+          ) : (
+            <SoldierResults
+              results={found?.soldiers ?? NO_SOLDIERS}
+              paged={{
+                count,
+                firstNear: found?.firstNear ?? -1,
+                page: found?.page ?? page,
+                perPage: found?.perPage ?? perPage,
+                onPage,
+              }}
+              onSelect={openSoldier}
+              scrollTargetId="results"
+              actions={(searching || filtersSet) && <ShareSearch />}
             />
           )}
         </div>
