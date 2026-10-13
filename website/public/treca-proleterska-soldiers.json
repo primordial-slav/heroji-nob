@@ -13899,15 +13899,12 @@
     "first_name": "Vidoje",
     "fathers_name": "",
     "full_name": "Dujović Vidoje",
-    "additional_info": "borac, rođen 1911, Šavnik, radnik. Predao se četnicima avgusta 1943. i pognuo kao četnik.",
+    "additional_info": "borac, rođen 1911, Šavnik, radnik. Predao se četnicima avgusta 1943. i poginuo kao četnik.",
     "birth_year": "1911",
     "pdf_file": "treca-proleterska-brigada.pdf",
     "pdf_page": 400,
     "pdf_y": 115.6,
     "pdf_x": 81.4,
-    "birth_place": "Šavnik",
-    "occupation": "radnik",
-    "rank": "borac",
     "pdf_x_end": 361.1,
     "pdf_y_end": 141.4,
     "other_sources": [
@@ -13923,7 +13920,10 @@
         "pdf_x_end": 331.5
       }
     ],
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "birth_place": "Šavnik",
+    "occupation": "radnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000303",
@@ -37346,7 +37346,7 @@
     "last_name": "Kovačević",
     "middle_name": "",
     "first_name": "Marijan",
-    "additional_info": "borac, rcđen 1918, Bukovica, Pljevlja, zemljoradnik; član SKOJ-a.",
+    "additional_info": "borac, rođen 1918, Bukovica, Pljevlja, zemljoradnik; član SKOJ-a.",
     "fathers_name": "",
     "full_name": "Kovačević Marijan",
     "pdf_page": 442,
@@ -37354,8 +37354,6 @@
     "pdf_x": 87.3,
     "pdf_y_end": 448.5,
     "pdf_file": "treca-proleterska-brigada.pdf",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "birth_year": "1918",
     "pdf_x_end": 367.3,
     "other_sources": [
@@ -37371,7 +37369,9 @@
         "pdf_x_end": 334.0
       }
     ],
-    "birth_place": "Bukovica, Pljevlja"
+    "birth_place": "Bukovica, Pljevlja",
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0005000820",
@@ -53088,7 +53088,7 @@
     "first_name": "Nedeljko",
     "fathers_name": "Tomo",
     "full_name": "Parandulović Toma Nedeljko",
-    "additional_info": "borac 5. bat„ 1925, Lučica, Prijepolje, zemljoradnik, član Skoja. Borac 3. brigade od oktobra 1944. Poginuo U borbi potiv Nijemaca, 1. januara 1945, na Vijencu, Savin Lakat, Prijepolje, sahranjen u Vijencu.",
+    "additional_info": "borac 5. bat„ 1925, Lučica, Prijepolje, zemljoradnik, član Skoja. Borac 3. brigade od oktobra 1944. Poginuo U borbi protiv Nijemaca, 1. januara 1945, na Vijencu, Savin Lakat, Prijepolje, sahranjen u Vijencu.",
     "birth_year": "1925",
     "pdf_page": 104,
     "pdf_y": 98.2,
@@ -53096,13 +53096,13 @@
     "pdf_y_end": 133.3,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005010800",
+    "death_place": "U borbi potiv Nijemaca, Vijencu, Savin Lakat, Prijepolje",
+    "pdf_x_end": 359.4,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1. januara 1945",
-    "death_place": "U borbi potiv Nijemaca, Vijencu, Savin Lakat, Prijepolje",
     "rank": "borac",
-    "unit_detail": "5. bataljon",
-    "pdf_x_end": 359.4
+    "unit_detail": "5. bataljon"
   },
   {
     "last_name": "Parezanović",
@@ -56923,7 +56923,7 @@
     "first_name": "Dume",
     "fathers_name": "Marko",
     "full_name": "Skračić Marka Dume",
-    "additional_info": "Prinčev, borac prištapskih jeidnica brigade. 1920, Murter, Šibenik, zemljoradnik, u NOB od 1942. Član SKOJ-a. Poginuo u bici na Sutjesci.",
+    "additional_info": "Prinčev, borac prištapskih jedinica brigade. 1920, Murter, Šibenik, zemljoradnik, u NOB od 1942. Član SKOJ-a. Poginuo u bici na Sutjesci.",
     "birth_year": "1920",
     "pdf_page": 50,
     "pdf_y": 411.6,
@@ -56931,10 +56931,6 @@
     "pdf_y_end": 437.9,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011004",
-    "birth_place": "Prinčev",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "borac",
     "pdf_x_end": 361.3,
     "other_sources": [
       {
@@ -56952,7 +56948,11 @@
     "ethnicity": "Hrvat",
     "death_date": "juna 1943",
     "death_place": "Sutjeska",
-    "unit_detail": "prištapske jedinice"
+    "unit_detail": "prištapske jedinice",
+    "birth_place": "Prinčev",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "rank": "borac"
   },
   {
     "last_name": "Skračić",
@@ -56960,7 +56960,7 @@
     "first_name": "Ive",
     "fathers_name": "Nikola",
     "full_name": "Skračić Nikole Ive",
-    "additional_info": "zvani Prinčev; borac, 1922, Murter, Šibenik, zemljoradnik - ribar, član SKOJ-a počegkom 1942, borac 3. brigade od 14. oktobra 1942. Poginuo kao borac 2. dalmatinske brigade, 10. juna 1943, na Zelen-gori.",
+    "additional_info": "zvani Prinčev; borac, 1922, Murter, Šibenik, zemljoradnik - ribar, član SKOJ-a početkom 1942, borac 3. brigade od 14. oktobra 1942. Poginuo kao borac 2. dalmatinske brigade, 10. juna 1943, na Zelen-gori.",
     "birth_year": "1922",
     "pdf_page": 50,
     "pdf_y": 445.0,
@@ -56968,14 +56968,14 @@
     "pdf_y_end": 480.3,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011005",
-    "death_type": "poginuo",
-    "death_date": "10. juna 1943",
-    "rank": "borac",
     "pdf_x_end": 360.9,
     "birth_place": "Murter, Šibenik",
     "ethnicity": "Hrvat",
     "occupation": "ribar",
     "death_place": "Zelengora",
+    "death_type": "poginuo",
+    "death_date": "10. juna 1943",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0007004754",
@@ -58749,7 +58749,7 @@
     "first_name": "Vukajlo",
     "fathers_name": "Savo",
     "full_name": "Tošović Sava Vukajlo",
-    "additional_info": "borac 2. bat„ 1922, Crkvene Toci, Prijepolje, borac 3. brigade od avgusta 1944. Poginuo u borbi protiv Bugara, 29. avagusta 1944. u Negbini, Nova Varoš, sahranjen u Negbini.",
+    "additional_info": "borac 2. bat„ 1922, Crkvene Toci, Prijepolje, borac 3. brigade od avgusta 1944. Poginuo u borbi protiv Bugara, 29. avgusta 1944. u Negbini, Nova Varoš, sahranjen u Negbini.",
     "birth_year": "1922",
     "pdf_page": 82,
     "pdf_y": 459.4,
@@ -58757,11 +58757,11 @@
     "pdf_y_end": 492.8,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011109",
+    "pdf_x_end": 356.9,
     "death_type": "poginuo",
-    "death_date": "1944",
+    "death_date": "29. avgusta 1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 356.9
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Tripković",
@@ -59512,7 +59512,7 @@
     "first_name": "Vojislav",
     "fathers_name": "Vidoje",
     "full_name": "Vojinović Vidoja Vojislav",
-    "additional_info": "borac 2. bat., 1923, Prenćani, Pljevlja, zemljoradnik, član KPJ, borac 3. brigade od oktobra Poginuo u borbi protiv Nijemaca, 21. marta 1944. na Jabuci, Prijepolje, eahranjen u Obardama, Pljevlja.",
+    "additional_info": "borac 2. bat., 1923, Prenćani, Pljevlja, zemljoradnik, član KPJ, borac 3. brigade od oktobra Poginuo u borbi protiv Nijemaca, 21. marta 1944. na Jabuci, Prijepolje, sahranjen u Obardama, Pljevlja.",
     "birth_year": "1923",
     "pdf_page": 83,
     "pdf_y": 367.9,
@@ -59520,12 +59520,12 @@
     "pdf_y_end": 401.1,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011158",
+    "pdf_x_end": 331.9,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "21. marta 1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 331.9
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Vrakela",
@@ -59653,7 +59653,7 @@
     "first_name": "Nikola",
     "fathers_name": "Vučić",
     "full_name": "Vujičić Vučića Nikola",
-    "additional_info": "desetar 1. bat., 1917, Prošćenje, Mojkovac, borac 3. brigade od 12. jula 1944. Poginuo u borbi nrotiv Nijemaca, 5. aprila 1945, na Rakovcu, sahranjen u Rakovcu, Pale, Sarajevo.",
+    "additional_info": "desetar 1. bat., 1917, Prošćenje, Mojkovac, borac 3. brigade od 12. jula 1944. Poginuo u borbi protiv Nijemaca, 5. aprila 1945, na Rakovcu, sahranjen u Rakovcu, Pale, Sarajevo.",
     "birth_year": "1917",
     "pdf_page": 112,
     "pdf_y": 67.0,
@@ -59661,11 +59661,11 @@
     "pdf_y_end": 102.9,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011166",
+    "pdf_x_end": 356.6,
     "death_type": "poginuo",
     "death_date": "5. aprila 1945",
     "rank": "desetar",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 356.6
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Vukašinović",
@@ -60092,7 +60092,7 @@
     "first_name": "Božidar",
     "fathers_name": "",
     "full_name": "Zdravković Božidar",
-    "additional_info": "borac 5. bat„ Bazovik, Pirot, borac od 15. januara 1945. Poginuo u borbi nrotiv Nijemaca, 20. februara Čitluci, Goražde, sahranjen kod Goražda.",
+    "additional_info": "borac 5. bat„ Bazovik, Pirot, borac od 15. januara 1945. Poginuo u borbi protiv Nijemaca, 20. februara Čitluci, Goražde, sahranjen kod Goražda.",
     "birth_year": "",
     "pdf_page": 112,
     "pdf_y": 161.1,
@@ -60100,10 +60100,10 @@
     "pdf_y_end": 187.6,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011200",
+    "pdf_x_end": 356.5,
     "death_type": "poginuo",
     "rank": "borac",
-    "unit_detail": "5. bataljon",
-    "pdf_x_end": 356.5
+    "unit_detail": "5. bataljon"
   },
   {
     "last_name": "Zebić",
@@ -60306,7 +60306,7 @@
     "first_name": "Milosav",
     "fathers_name": "Vidoje",
     "full_name": "Zečević Vidoja Milosav",
-    "additional_info": "zastavnik, zamjenik ksmandira čete 2. bat„ 1920, Popov Do, Pljevlja, zemljoradnik, član KPJ, borac 3. brigade od maja 1943. Poginuo u borbi protiv Nijemaca, 8. novembra 1944. na Savinu Laktu, Prijepolje, sahranjen u Vlaci.",
+    "additional_info": "zastavnik, zamjenik komandira čete 2. bat„ 1920, Popov Do, Pljevlja, zemljoradnik, član KPJ, borac 3. brigade od maja 1943. Poginuo u borbi protiv Nijemaca, 8. novembra 1944. na Savinu Laktu, Prijepolje, sahranjen u Vlaci.",
     "birth_year": "1920",
     "pdf_page": 84,
     "pdf_y": 268.1,
@@ -60314,12 +60314,12 @@
     "pdf_y_end": 303.7,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011213",
+    "pdf_x_end": 355.8,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "8. novembra 1944",
-    "rank": "zastavnik",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 355.8
+    "rank": "zastavnik, zamjenik komandira čete",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Zečević",
@@ -60367,7 +60367,7 @@
     "first_name": "Radisav",
     "fathers_name": "Vidoje",
     "full_name": "Zečević Vidoja Radisav",
-    "additional_info": "borac, 1923, Popov Do, Pljevlja, zemljoradnik, član KPJ. Borac 3. brigade od aprila 1943. Kao nntendant bataljona u 5. sandžačkoj NOU brigadi, poginuo od njemačke avijacije, 17. oktobra 1944. kod Sevojna, Užice.",
+    "additional_info": "borac, 1923, Popov Do, Pljevlja, zemljoradnik, član KPJ. Borac 3. brigade od aprila 1943. Kao intendant bataljona u 5. sandžačkoj NOU brigadi, poginuo od njemačke avijacije, 17. oktobra 1944. kod Sevojna, Užice.",
     "birth_year": "1923",
     "pdf_page": 84,
     "pdf_y": 349.2,
@@ -60375,12 +60375,12 @@
     "pdf_y_end": 382.7,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005011216",
+    "pdf_x_end": 356.1,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "17. oktobra 1944",
     "death_place": "Sevojno, Užice",
-    "rank": "borac",
-    "pdf_x_end": 356.1
+    "rank": "intendant bataljona"
   },
   {
     "last_name": "Zečević",
@@ -69655,7 +69655,7 @@
     "first_name": "Radoš",
     "fathers_name": "Jovan",
     "full_name": "Kušljević Jovana Radoš",
-    "additional_info": "kurir štaba brigade, rođen 1919. godine, La-•j dana, Pljevlja, zemljoradnik, Crno-, gorac, posle Sutjeske dezertirao i stuf-, pio u četničke redove.",
+    "additional_info": "kurir štaba brigade, rođen 1919. godine, La-•j dana, Pljevlja, zemljoradnik, Crno-, borac, posle Sutjeske dezertirao i stuf-, pio u četničke redove.",
     "birth_year": "1919",
     "pdf_page": 30,
     "pdf_y": 405.4,
@@ -69663,10 +69663,10 @@
     "pdf_y_end": 425.7,
     "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
     "soldier_id": "0005100462",
+    "pdf_x_end": 188.7,
     "birth_place": "La-•j dana, Pljevlja",
     "occupation": "zemljoradnik",
-    "rank": "kurir",
-    "pdf_x_end": 188.7
+    "rank": "kurir"
   },
   {
     "last_name": "Lakićević",
@@ -77674,7 +77674,7 @@
     "first_name": "Miloš",
     "fathers_name": "Ivo",
     "full_name": "Vučković Iva Miloš",
-    "additional_info": "zvani Vučko; komandant 2. bataljona, rođen 1914, Ulcinj, podoficir Jugoslovenske vojske, Crnogorac, u NOB od 1941, član KPJ od 1941, krajem rata načelnik obaveštajnog odeljenja 1. armije. Odlikovan Ordenom narodnog ìieroja. Umro 24. avgusta 1992. u Beogradu.",
+    "additional_info": "zvani Vučko; komandant 2. bataljona, rođen 1914, Ulcinj, podoficir Jugoslovenske vojske, Crnogorac, u NOB od 1941, član KPJ od 1941, krajem rata načelnik obaveštajnog odeljenja 1. armije. Odlikovan Ordenom narodnog ìheroja. Umro 24. avgusta 1992. u Beogradu.",
     "birth_year": "1914",
     "pdf_page": 60,
     "pdf_y": 171.6,
@@ -77682,12 +77682,6 @@
     "pdf_y_end": 254.7,
     "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
     "soldier_id": "0005101042",
-    "birth_place": "Ulcinj",
-    "ethnicity": "Crnogorac",
-    "death_type": "umro",
-    "death_date": "24. avgusta 1992",
-    "death_place": "Beograd",
-    "unit_detail": "2. bataljon",
     "pdf_x_end": 374.4,
     "other_sources": [
       {
@@ -77710,7 +77704,13 @@
         "pdf_y_end": 290.7,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Ulcinj",
+    "ethnicity": "Crnogorac",
+    "death_type": "umro",
+    "death_date": "24. avgusta 1992",
+    "death_place": "Beograd",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Vučković",

@@ -2669,7 +2669,7 @@
     "first_name": "Paja",
     "fathers_name": "",
     "full_name": "Balog Paja",
-    "additional_info": "iuškomitraljezac 2. bataljona, pog. 1944. kod Batine.",
+    "additional_info": "puškomitraljezac 2. bataljona, pog. 1944. kod Batine.",
     "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 402.1,
@@ -2677,8 +2677,9 @@
     "pdf_y_end": 421.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000146",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 351.5
+    "pdf_x_end": 351.5,
+    "rank": "puškomitraljezac",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Baloš",
@@ -18878,7 +18879,7 @@
     "first_name": "Mihajlo",
     "fathers_name": "",
     "full_name": "Ivančević Mihajlo",
-    "additional_info": "1912, Vrdnik sepgembra 1944, borac 1. bataljona.",
+    "additional_info": "1912, Vrdnik septembra 1944, borac 1. bataljona.",
     "birth_year": "1912",
     "pdf_page": 47,
     "pdf_y": 321.1,
@@ -18886,9 +18887,9 @@
     "pdf_y_end": 339.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001024",
+    "pdf_x_end": 352.1,
     "rank": "borac",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 352.1
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Ivančević",
@@ -20688,7 +20689,7 @@
     "first_name": "Milan",
     "fathers_name": "",
     "full_name": "Ješić Milan",
-    "additional_info": "zvani Ibra; 1914, Petrovci, 2.07.1944, komaidant brigade, Narodni heroj.",
+    "additional_info": "zvani Ibra; 1914, Petrovci, 2.07.1944, komandant brigade, Narodni heroj.",
     "birth_year": "1914",
     "pdf_page": 52,
     "pdf_y": 382.9,
@@ -20696,7 +20697,6 @@
     "pdf_y_end": 401.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001121",
-    "birth_place": "Petrovci",
     "pdf_x_end": 365.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -20731,7 +20731,8 @@
         "pdf_x_left": 88.5,
         "unit_file": "2-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Petrovci"
   },
   {
     "last_name": "Jocić",
@@ -36471,7 +36472,7 @@
     "first_name": "Jan Gligorij",
     "fathers_name": "",
     "full_name": "Misak Jan Gligorij",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljoia, 2. 07—12.10.1944.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2. 07—12.10.1944.",
     "birth_year": "",
     "pdf_page": 87,
     "pdf_y": 128.6,
@@ -36479,9 +36480,10 @@
     "pdf_y_end": 147.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001962",
+    "pdf_x_end": 346.0,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 346.0
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Mitrov",
@@ -38432,7 +38434,7 @@
     "first_name": "Rada",
     "fathers_name": "",
     "full_name": "Nestorović Rada",
-    "additional_info": "1925, Opovci, zameiik komaidira čete, pog. 20.01.1945, Bazija.",
+    "additional_info": "1925, Opovci, zameiik komandira čete, pog. 20.01.1945, Bazija.",
     "birth_year": "1925",
     "pdf_page": 94,
     "pdf_y": 54.8,
@@ -38440,8 +38442,8 @@
     "pdf_y_end": 73.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002067",
-    "birth_place": "Opovci",
-    "pdf_x_end": 355.9
+    "pdf_x_end": 355.9,
+    "birth_place": "Opovci"
   },
   {
     "last_name": "Nešić",
@@ -43451,7 +43453,7 @@
     "first_name": "Smilja",
     "fathers_name": "",
     "full_name": "Petrov Smilja",
-    "additional_info": "1926, Grgurevci, 2.07.1944, referent saiiteta.",
+    "additional_info": "1926, Grgurevci, 2.07.1944, referent saniteta.",
     "birth_year": "1926",
     "pdf_page": 102,
     "pdf_y": 462.5,
@@ -43459,8 +43461,9 @@
     "pdf_y_end": 472.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002337",
+    "pdf_x_end": 362.3,
     "birth_place": "Grgurevci",
-    "pdf_x_end": 362.3
+    "rank": "referent saniteta"
   },
   {
     "last_name": "Petrov",
@@ -60829,7 +60832,7 @@
     "first_name": "Branislav",
     "fathers_name": "",
     "full_name": "Vujkov Branislav",
-    "additional_info": "1910, Čurug, 22.10.1944, stariji vodiik.",
+    "additional_info": "1910, Čurug, 22.10.1944, stariji vodnik.",
     "birth_year": "1910",
     "pdf_page": 26,
     "pdf_y": 65.0,
@@ -60837,8 +60840,9 @@
     "pdf_y_end": 75.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003262",
+    "pdf_x_end": 366.4,
     "birth_place": "Čurug",
-    "pdf_x_end": 366.4
+    "rank": "stariji vodnik"
   },
   {
     "last_name": "Vujkov",
