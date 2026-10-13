@@ -268,6 +268,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'mostarski-bataljon':
+      'Borci Konjiškega bataljona (september 1941 — junij 1942), Mostarskega bataljona (junij 1942 — junij 1943) in Mostarskega bataljona v Mostarskem partizanskem odredu (junij 1943 — maj 1944), vsak s kratkim življenjepisom: rojstvo, poklic, SKOJ in KPJ, prihod v bataljon, dolžnost in usoda (str. 329–392).',
     '13-krajiska':
       'Dva seznama: borci in starešine, ki so bili v brigadi avgusta in septembra 1943, s krajem, dolžnostjo in za padle, kdaj in kje so padli in kje so pokopani; člani partijske organizacije KPJ brigade maja 1945, z dnem sprejema v Partijo in dolžnostjo (str. 365–404).',
     '1-krajiska':
@@ -585,6 +587,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'mostarski-bataljon':
+      'Борците на Коњичкиот баталјон (септември 1941 — јуни 1942), на Мостарскиот баталјон (јуни 1942 — јуни 1943) и на Мостарскиот баталјон во Мостарскиот партизански одред (јуни 1943 — мај 1944), секој со кратка биографија: раѓање, занимање, СКОЈ и КПЈ, доаѓање во баталјонот, должност и судбина (стр. 329–392).',
     '13-krajiska':
       'Два списока: борците и раководителите што биле во бригадата во август и септември 1943, со место, должност и, за загинатите, кога и каде загинале и каде се погребани; членовите на партиската организација на КПЈ во бригадата во мај 1945, со денот на приемот во Партијата и должноста (стр. 365–404).',
     '1-krajiska':
@@ -901,6 +905,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'mostarski-bataljon':
+      'The fighters of the Konjic Battalion (September 1941 — June 1942), the Mostar Battalion (June 1942 — June 1943) and the Mostar Battalion in the Mostar Partisan Detachment (June 1943 — May 1944), each with a short biography: birth, trade, SKOJ and Party membership, when they joined, duty and fate (pp. 329–392).',
     '13-krajiska':
       'Two lists: the fighters and officers in the brigade in August and September 1943, with village, duty and, for the fallen, when and where they fell and where they are buried; the members of the brigade’s Communist Party organisation in May 1945, with the day each joined the Party and duty (pp. 365–404).',
     '1-krajiska':

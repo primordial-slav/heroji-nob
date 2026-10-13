@@ -1241,6 +1241,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/13-krajiska.pdf']
   },
   {
+    id: 'mostarski-bataljon',
+    name: 'Mostarski bataljon',
+    nameEn: 'Mostar Battalion',
+    description: 'Formiran u septembru 1941. kao Konjički bataljon, Mostarski od 21. juna 1942. Borci bataljona do maja 1944, s kratkim životopisima.',
+    image: '/images/mostarski-bataljon.jpg',
+    soldierCount: 818,
+    dataFile: '/mostarski-bataljon-soldiers.json',
+    pdfFiles: ['/pdfs/mostarski-bataljon.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

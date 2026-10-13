@@ -1144,6 +1144,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    125: {
+        'name': 'Mostarski bataljon',
+        'json_file': 'mostarski-bataljon-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ALEKSANDAR M. ALAGIĆ, rođen 1923, Gospić, đak, član SKOJ-a od 1940. ..." (given name first)
+        'has_fathers_name': True,
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_all',
+    },
 }
 
 

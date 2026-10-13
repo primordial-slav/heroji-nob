@@ -139,6 +139,7 @@ BRIGADE_CODES = {
     122: 'Ostali borci',
     123: '1. Krajiška proleterska',
     124: '13. Krajiška',
+    125: 'Mostarski bataljon',
     # Add new brigades here with next available code
 }
 

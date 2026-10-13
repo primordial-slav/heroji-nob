@@ -589,6 +589,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  'mostarski-bataljon': {
+    name: 'Mostarski bataljon',
+    description: 'Ustanovljen septembra 1941 kot Konjiški bataljon, od 21. junija 1942 Mostarski. Borci bataljona do maja 1944, s kratkimi življenjepisi.',
+  },
   '13-krajiska-brigada': {
     name: '13. krajiška brigada',
     description: 'Ustanovljena 23. avgusta 1943 iz Ribniškega partizanskega odreda. Borci brigade avgusta in septembra 1943 in njeni člani KPJ maja 1945.',
@@ -1182,6 +1186,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  'mostarski-bataljon': {
+    name: 'Мостарски баталјон',
+    description: 'Формиран во септември 1941 како Коњички баталјон, Мостарски од 21 јуни 1942. Борците на баталјонот до мај 1944, со кратки биографии.',
   },
   '13-krajiska-brigada': {
     name: '13-та краишка бригада',
@@ -1778,6 +1786,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  'mostarski-bataljon': {
+    name: 'Mostar Battalion',
+    description: 'Formed in September 1941 as the Konjic Battalion, named the Mostar Battalion on 21 June 1942. Its fighters up to May 1944, each with a short biography.',
   },
   '13-krajiska-brigada': {
     name: '13th Krajina Brigade',

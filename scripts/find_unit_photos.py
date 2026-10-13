@@ -476,6 +476,9 @@ UNITS = {
         book=dict(pdf="00001/263.pdf", page=344, xref=1533,
                   caption="Treći bataljon 13. krajiške brigade na povratku sa austrijske granice maja 1945. godine"),
         note="Nothing in the gallery names the brigade; the photo is from its own book (Zorić, Trinaesta krajiška brigada)."),
+    "mostarski-bataljon": dict(
+        name="Mostarski bataljon", tags=[],
+        caption=r"mostarsk\w*\s+(?:partizansk\w*\s+)?bataljon|konji[cč]k\w*\s+bataljon", photo=10607),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,

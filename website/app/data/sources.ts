@@ -1604,6 +1604,15 @@ export const sources: PdfSource[] = [
     description: 'Dva spiska: borci i rukovodioci koji su bili u brigadi u avgustu i septembru 1943, s mestom, dužnošću i, za poginule, kada su pali i gde su sahranjeni; članovi KPJ partijske organizacije brigade u maju 1945, s danom prijema u Partiju i dužnošću (str. 365–404).'
   },
   {
+    id: 'mostarski-bataljon',
+    title: 'Mostarski bataljon',
+    author: 'Enver Ćemalović',
+    pdfPath: '/pdfs/mostarski-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/mostarski-bataljon.jpg',
+    brigadeName: 'Mostarski bataljon',
+    description: 'Borci Konjičkog bataljona (septembar 1941 — jun 1942), Mostarskog bataljona (jun 1942 — jun 1943) i Mostarskog bataljona u Mostarskom partizanskom odredu (jun 1943 — maj 1944), svaki s kratkim životopisom: rođenje, zanimanje, SKOJ i KPJ, dolazak u bataljon, dužnost i sudbina (str. 329–392).'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',
