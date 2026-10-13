@@ -274,6 +274,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Življenjepisi vseh narodnih herojev, druga izdaja (1982), 1. zvezek (A–M): rojstvo, življenje pred vojno, pot v NOB, smrt ali življenje po vojni in dan razglasitve. Knjiga ne pripada eni enoti: življenjepis je dodan zapisu vsakega heroja, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     'narodni-heroji-1982-2':
       'Življenjepisi vseh narodnih herojev, druga izdaja (1982), 2. zvezek (N–Ž): rojstvo, življenje pred vojno, pot v NOB, smrt ali življenje po vojni in dan razglasitve. Knjiga ne pripada eni enoti: življenjepis je dodan zapisu vsakega heroja, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'trebinjci-pali':
+      'Spominska knjiga Zveze borcev Trebinje (1974): borci z območja občine, ki so padli v vojni (str. 13–96), in borci iz vse Jugoslavije, padli pri Trebinju (str. 159–174), z rojstvom, enotami in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznama žrtev fašističnega terorja iz iste knjige nismo vnesli. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -537,6 +539,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Биографии на сите народни херои, второ издание (1982), том 1 (A–M): раѓање, живот пред војната, пат во НОБ, смрт или живот по војната и денот на прогласувањето. Книгата не припаѓа на една единица: биографијата е додадена на записот на секој херој што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     'narodni-heroji-1982-2':
       'Биографии на сите народни херои, второ издание (1982), том 2 (N–Ž): раѓање, живот пред војната, пат во НОБ, смрт или живот по војната и денот на прогласувањето. Книгата не припаѓа на една единица: биографијата е додадена на записот на секој херој што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'trebinjci-pali':
+      'Споменица на Сојузот на борците од Требиње (1974): борците од општината што паднале во војната (стр. 13–96) и борците од цела Југославија што загинале кај Требиње (стр. 159–174), со раѓање, единици и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списокот на жртвите на фашистичкиот терор од истата книга не е внесен. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -799,6 +803,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The lives of all the People’s Heroes, second edition (1982), volume 1 (A–M): birth, life before the war, the way into it, death or life after it, and the day each was proclaimed. The book belongs to no single unit: a life is added to the record of each hero on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     'narodni-heroji-1982-2':
       'The lives of all the People’s Heroes, second edition (1982), volume 2 (N–Ž): birth, life before the war, the way into it, death or life after it, and the day each was proclaimed. The book belongs to no single unit: a life is added to the record of each hero on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'trebinjci-pali':
+      'The memorial book of the Trebinje veterans’ association (1974): the fighters of the municipality who fell in the war (pp. 13–96) and fighters from all over Yugoslavia who were killed near Trebinje (pp. 159–174), with birth, units and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s list of civilian victims of fascist terror was left out. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
   },
 }
 

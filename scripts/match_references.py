@@ -53,7 +53,11 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
     agree, clash = [], []
     rf, sf = fold(ref['fathers_name']), fold(s.get('middle_name') or '')
     if rf and sf:
-        if rf == sf or (len(rf) == 1 and sf.startswith(rf)) or (len(sf) == 1 and rf.startswith(sf)):
+        # a book that gives the father as a possessive (Trebinjci pali: "Muharemov", "Jovičin") against the site's
+        # genitive ("Muharema", "Jovice"): the same name once both endings are off
+        pos = re.match(r'^(.{3,}?)(?:ov|ev|in|ova|eva|ina)$', rf)
+        if rf == sf or (len(rf) == 1 and sf.startswith(rf)) or (len(sf) == 1 and rf.startswith(sf)) or (
+                pos and len(sf) >= 3 and pos.group(1) == re.sub(r'[aeiou]$', '', sf)):
             agree.append('father')
         elif not (min(len(rf), len(sf)) >= 4 and rf[:3] == sf[:3]):      # "Jurja" and "Juraj" are one father
             clash.append('father')
@@ -126,18 +130,20 @@ def main():
     for code, (_, soldiers) in structured.load_live().items():
         for s in soldiers:
             index[(fold(s.get('last_name')), fold(s.get('first_name')))].append(s)
-    found, grades = [], Counter()
+    found, grades, every = [], Counter(), {}
     for ref in refs:
         names = {fold(ref['first_name'])} | ({fold(ref['nick'])} if ref.get('nick') else set())
         cands = [s for n in names for s in index.get((fold(ref['last_name']), n), [])]
         for s in cands:
             agree, clash = evidence(ref, s)
             g = grade(agree, clash)
+            pair = {'grade': g, 'agree': agree, 'record': s['soldier_id'], 'record_name': s.get('full_name'),
+                    'ref': ref['soldier_id'], 'ref_name': ref['name'], 'ref_info': ref['additional_info'][:160],
+                    'record_info': (s.get('additional_info') or '')[:160]}
+            every[(s['soldier_id'], ref['soldier_id'])] = pair
             if g:
                 grades[g] += 1
-                found.append({'grade': g, 'agree': agree, 'record': s['soldier_id'], 'record_name': s.get('full_name'),
-                              'ref': ref['soldier_id'], 'ref_name': ref['name'], 'ref_info': ref['additional_info'][:160],
-                              'record_info': (s.get('additional_info') or '')[:160]})
+                found.append(pair)
     heroes = {f['ref'] for f in found if f['grade'] == 'sure'}
     print(f'{len(refs)} entries; matches {dict(grades)}; heroes with a sure match: {len(heroes)}')
     for f in found[:0]:
@@ -147,14 +153,21 @@ def main():
     chosen = [f for f in found if args.write and f['grade'] in set(args.write.split(','))]
     if args.only:
         pairs = {tuple(ln.split()[:2]) for ln in Path(args.only).read_text(encoding='utf-8').splitlines() if ln.strip()}
-        chosen += [f for f in found if (f['record'], f['ref']) in pairs and f not in chosen]
+        # a reviewed pair of the same name is taken whatever its grade: a clash that the book's text explains (a
+        # death a month off, a village printed in another case) was read and judged
+        missing = sorted(p for p in pairs if p not in every)
+        if missing:
+            sys.exit(f'--only: no record and entry of the same name for {missing}')
+        chosen += [dict(every[p], grade=every[p]['grade'] or 'reviewed') for p in sorted(pairs)
+                   if not any((f['record'], f['ref']) == p for f in chosen)]
     if chosen:
         corr = json.loads(CORRECTIONS.read_text(encoding='utf-8'))
         have = {(c['soldier_id'], c.get('ref_id')) for c in corr if c['action'] == 'reference'}
         start = max(c['id'] for c in corr) + 1
         new = [{'id': 0, 'action': 'reference', 'soldier_id': f['record'], 'ref_book': args.book, 'ref_id': f['ref'],
                 'ref_name': f['ref_name'], 'reason': f"{f['record_name']} is the {f['ref_name']} of the book; same "
-                                                     f"{', '.join(f['agree'])}"}
+                                                     f"{', '.join(f['agree'])}"
+                                                     + ('; checked by hand' if f['grade'] in ('likely', 'reviewed') else '')}
                for f in chosen if (f['record'], f['ref']) not in have]
         for i, c in enumerate(new):
             c['id'] = start + i

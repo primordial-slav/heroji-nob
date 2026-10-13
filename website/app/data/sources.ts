@@ -1367,5 +1367,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/narodni-heroji-1982-2.jpg',
     brigadeName: '',
     description: 'Biografije svih narodnih heroja, drugo izdanje (1982), drugi tom (N–Ž): rođenje, život pre rata, put u NOB, smrt ili život posle rata i dan kad je ko proglašen. Knjiga ne pripada jednoj jedinici: biografija je dodata zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'trebinjci-pali',
+    title: 'Trebinjci pali u borbi za slobodu 1941–1945',
+    author: 'Grupa autora',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701',
+    thumbnail: '/images/pdf-thumbs/trebinjci-pali.jpg',
+    brigadeName: '',
+    description: 'Spomenica SUBNOR-a Trebinje (1974): borci sa područja opštine koji su pali u ratu (str. 13–96) i borci iz cele Jugoslavije koji su poginuli kod Trebinja (str. 159–174), s rođenjem, jedinicama i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spisak žrtava fašističkog terora iz iste knjige nije unet. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]
