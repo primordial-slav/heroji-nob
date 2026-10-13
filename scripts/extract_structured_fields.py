@@ -51,6 +51,10 @@ FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'deat
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
 # its campaign's period would be a death date, "poginuo ili nestao" a death
 PARSER_FIELDS = {39, 121}                  # Druga proleterska; the pioneer company (its 1990s deaths are no falls)
+# names-only lists of the fallen, books across units whose men without a record are in Ostali borci (122): "Deseta
+# krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
+# build_ostali_borci.py sets the death from the entry's own fields
+NAME_LISTS = {'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf', 'bitka-kod-oborova-poginuli.pdf'}
 # Borci Sutjeske prints the duty at the battle, then "krajem rata ..." the duty at the war's end: the first is the rank
 DUTY_BEFORE_WAR_END = set(range(40, 50))
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
@@ -899,6 +903,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
         for k, v in ex.extract(info, code, duty_first=sutjeska).items():
             if k == 'death_place' and PARTIZANKE in (e.get('source_url') or ''):
                 continue            # the bios tell the death in a story: "poginula Plana", "Tako se ugasio ..." are no places
+            if k != 'rank' and e.get('pdf_file') in NAME_LISTS:
+                continue            # a list's heading is no birthplace: only the duty after a name is read
             got.setdefault(k, v)
     return got
 

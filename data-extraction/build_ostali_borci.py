@@ -37,6 +37,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
+from extract_structured_fields import NAME_LISTS  # noqa: E402
 
 CODE = 122
 IDS = ROOT / 'data-extraction' / 'ostali_borci_ids.json'
@@ -89,15 +90,16 @@ def same_man(a: dict, b: dict) -> bool:
     if sa and sb:
         if not sa & sb:
             return False
-        if len(sa) == len(sb) == 1:
-            agree.add('death year')
+        if len(sa) == len(sb) == 1 or sa == sb:
+            agree.add('death year')                        # or the same front's years (Gončin's and Tmušić's Srem)
     da, db = max(sa, default=None), max(sb, default=None)
     if (a.get('survived') and db and db <= 1945) or (b.get('survived') and da and da <= 1945):
         return False
     pa, pb = places(a), places(b)
     if pa and pb and any(x[:4] == y[:4] for x in pa for y in pb):
         agree.add('birthplace')
-    if set(a.get('units') or ()) & set(b.get('units') or ()):
+    if set(a.get('units') or ()) & set(b.get('units') or ()) or (
+            not a.get('units') and not b.get('units') and unit_key(a) and unit_key(a) == unit_key(b)):
         agree.add('unit')
     qa, qb = death_places(a), death_places(b)
     if qa and qb and any(x[:4] == y[:4] for x in qa for y in qb):
@@ -112,6 +114,42 @@ def same_man(a: dict, b: dict) -> bool:
     if ('unit' in agree or 'death place' in agree) and len(agree & {'unit', 'death place', 'death year'}) >= 2:
         return True
     return bool(a.get('_hero') and b.get('_hero') and agree & {'father', 'birth year'})
+
+
+ORDINALS = [('jedanaest', 11), ('dvanaest', 12), ('trinaest', 13), ('cetrnaest', 14), ('petnaest', 15),
+            ('sesnaest', 16), ('sedamnaest', 17), ('osamnaest', 18), ('devetnaest', 19), ('prv', 1), ('drug', 2),
+            ('trec', 3), ('cetvrt', 4), ('pet', 5), ('sest', 6), ('sedm', 7), ('osm', 8), ('devet', 9), ('deset', 10)]
+ADJECTIVES = ('proletersk', 'krajisk', 'lick', 'srpsk', 'vojvodansk', 'crnogorsk', 'makedonsk', 'majevick',
+              'istocnobosansk', 'konjick', 'kordunask', 'banijsk', 'dalmatinsk', 'slavonsk', 'hercegovack')
+_keys: dict[str, str] = {}
+
+
+def unit_key(e: dict) -> str:
+    """A brigade not on the site, as two lists of one front name it ("Trideset prva srpska udarna brigada" and "Trideset
+    prve srpske narodnooslobodilačke brigade": "31 srpsk"; an artillery brigade or the staff units of a division:
+    "art 5 krajisk"; the brigade formed in the USSR, "Prva jugoslovenska" to Gončin): '' when the entry names none"""
+    label = e.get('unit') or ''
+    if label not in _keys:
+        words = fold(label).split()
+        key = ''
+        if 'sssr' in words or 'jugoslovenska' in words:
+            key = 'novj sssr'
+        else:
+            for i, w in enumerate(words):
+                n = next((v for s, v in ORDINALS if w.startswith(s)), None)
+                if w in ('dvadeset', 'trideset', 'cetrdeset', 'pedeset') and i + 1 < len(words):
+                    n = {'dvadeset': 20, 'trideset': 30, 'cetrdeset': 40, 'pedeset': 50}[w] + next(
+                        (v for s, v in ORDINALS if words[i + 1].startswith(s)), 0)
+                    i += 1
+                if n:
+                    adj = next((a for x in words[i + 1:i + 4] for a in ADJECTIVES if x.startswith(a)), None)
+                    if adj:
+                        kind = ('art ' if any(x.startswith('artiljerij') for x in words) else
+                                'stab ' if any(x.startswith('pristap') for x in words) else '')
+                        key = f'{kind}{n} {adj}'
+                    break
+        _keys[label] = key
+    return _keys[label]
 
 
 def death_years(e: dict) -> set[int]:
@@ -267,6 +305,18 @@ def main():
                    'full_name': '', 'additional_info': text,
                    'birth_year': str(year(first, 'birth_year') or '')}
             rec.update({k: first[k] for k in SOURCE_FIELDS if first.get(k) not in (None, '')})
+            # a names-only list of the fallen (Gončin's and Tmušić's Srem, Oborovo) holds no bio for the field
+            # extractor: the death from its entries' fields, the village he fell at and the day where it gives them
+            listed = [m for m in g if m.get('pdf_file') in NAME_LISTS]
+            if listed:
+                rec['death_type'] = 'poginuo'
+                place = next((m['death_place'] for m in listed if m.get('death_place')), '')
+                day = next((m['death_date'] for m in listed if re.fullmatch(r'\d{4}-\d\d-\d\d', m.get('death_date') or '')), '')
+                if place:
+                    rec['death_place'] = place
+                if day:
+                    y, mo, d = day.split('-')
+                    rec['death_date'] = f'{int(d)}. {int(mo)}. {y}.'
             if rest:
                 rec['other_sources'] = [source_entry(m) for m in rest]
             records.append(rec)

@@ -187,7 +187,8 @@ def main():
     ap.add_argument('book', help='the entries file: data-extraction/{poreklo,znaci}/<book>-entries.json')
     ap.add_argument('--json', help='write every match here, for review')
     ap.add_argument('--write', help='grades to append as reference corrections, e.g. "sure"')
-    ap.add_argument('--only', help='file of "record_id ref_id" lines: append exactly these (reviewed) matches')
+    ap.add_argument('--only', help='file of "record_id ref_id [why]" lines: append exactly these (reviewed) matches')
+    ap.add_argument('--start', type=int, help="the first correction id to give (a session's own range)")
     args = ap.parse_args()
 
     refs = json.loads(entries_path(args.book).read_text(encoding='utf-8'))
@@ -253,8 +254,12 @@ def main():
     if args.json:
         Path(args.json).write_text(json.dumps(found, ensure_ascii=False, indent=1), encoding='utf-8')
     chosen = [f for f in found if args.write and f['grade'] in set(args.write.split(','))]
+    why = {}
     if args.only:
-        pairs = {tuple(ln.split()[:2]) for ln in Path(args.only).read_text(encoding='utf-8').splitlines() if ln.strip()}
+        # a third column says why a script chose the pair (select_front_references.py: "front:months+place")
+        lines = [ln.split() for ln in Path(args.only).read_text(encoding='utf-8').splitlines() if ln.strip()]
+        why = {tuple(x[:2]): ' '.join(x[2:]) for x in lines if len(x) > 2}
+        pairs = {tuple(x[:2]) for x in lines}
         # a reviewed pair of the same name is taken whatever its grade: a clash that the book's text explains (a
         # death a month off, a village printed in another case) was read and judged
         missing = sorted(p for p in pairs if p not in every)
@@ -265,14 +270,19 @@ def main():
     if chosen:
         corr = json.loads(CORRECTIONS.read_text(encoding='utf-8'))
         have = {(c['soldier_id'], c.get('ref_id')) for c in corr if c['action'] == 'reference'}
-        start = max(c['id'] for c in corr) + 1
+        start = args.start or max(c['id'] for c in corr) + 1
         new = [{'id': 0, 'action': 'reference', 'soldier_id': f['record'], 'ref_book': args.book, 'ref_id': f['ref'],
                 'ref_name': f['ref_name'], 'reason': f"{f['record_name']} is the {f['ref_name']} of the book; same "
                                                      f"{', '.join(f['agree'])}"
-                                                     + ('; checked by hand' if f['grade'] in ('likely', 'reviewed') else '')}
+                                                     + (f"; {why[f['record'], f['ref']]}" if (f['record'], f['ref']) in why
+                                                        else '; checked by hand' if f['grade'] in ('likely', 'reviewed')
+                                                        else '')}
                for f in chosen if (f['record'], f['ref']) not in have]
         for i, c in enumerate(new):
             c['id'] = start + i
+        taken = {c['id'] for c in corr}
+        if any(c['id'] in taken for c in new):
+            sys.exit(f'--start {start}: ids from there are taken')
         tmp = CORRECTIONS.with_suffix('.json.tmp')
         tmp.write_text(json.dumps(corr + new, ensure_ascii=False, indent=2), encoding='utf-8')
         os.replace(tmp, CORRECTIONS)

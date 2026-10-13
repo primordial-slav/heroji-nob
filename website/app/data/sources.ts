@@ -1566,5 +1566,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/u-rovovima-srema-poginuli.jpg',
     brigadeName: '',
     description: 'Spisak boraca poginulih na Sremskom frontu (str. 230–267), po brigadama i po mestu gde su pali, samo imena, ponekad s dužnošću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, po imenu, brigadi i mestu pogibije.'
+  },
+  {
+    id: 'sremski-front-poginuli',
+    title: 'Sremski front',
+    author: 'Dragoljub Tmušić',
+    pdfPath: '/pdfs/sremski-front-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/sremski-front-poginuli.jpg',
+    brigadeName: '',
+    description: 'Spiskovi boraca poginulih na Sremskom frontu od oktobra 1944. do aprila 1945, po divizijama i brigadama, svaki posle kratke istorije jedinice: samo imena, ponekad s očevim inicijalom. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, po imenu, brigadi i vremenu pogibije. Spiskovi palih crvenoarmejaca s kraja knjige nisu uneti.'
+  },
+  {
+    id: 'bitka-kod-oborova-poginuli',
+    title: 'Bitka kod Oborova',
+    author: 'Milan Brunović, Tomo Sović',
+    pdfPath: '/pdfs/bitka-kod-oborova-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/bitka-kod-oborova-poginuli.jpg',
+    brigadeName: '',
+    description: 'Imena 128 boraca 2. moslavačke brigade i Posavskog partizanskog odreda poginulih kod Oborova 29. marta 1944 (str. 158–160). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   }
 ]
