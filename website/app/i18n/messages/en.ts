@@ -48,6 +48,7 @@ export const en: Messages = {
       'Try the surname alone, or the first name and surname without the father’s name. The books often give the father’s name in the possessive form, such as ‘Milorada’ (Milorad’s) rather than ‘Milorad’. Letters such as č and ć can be typed as c.',
     unitsTitle: 'Units',
     otherUnits: 'Other units',
+    noUnit: 'Without a unit',
     /** The wartime portraits in the home page's margins */
     rails: 'Partisans in wartime photographs',
     bandCredit: 'In the photograph:',

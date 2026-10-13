@@ -798,7 +798,9 @@ def load_live():
 
 
 def build_extractor(brigades) -> Extractor:
-    all_recs = [s for _, d in brigades.values() for s in d]
+    # the units' own records teach the vocabulary; Ostali borci (122), made of many books' OCR, would teach it wrong
+    # ("španski borac" for an occupation)
+    all_recs = [s for code, (_, d) in brigades.items() if code != 122 for s in d]
     # occupations: what follows the ethnicity in the books that print both, plus values already in the data
     occ = Counter()
     for s in all_recs:

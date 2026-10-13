@@ -17,9 +17,14 @@ const CARD_SIZES =
 interface YearGroup {
   year: string | null // null: units whose formation date isn't recorded yet
   units: Unit[]
+  noUnit?: boolean // the soldiers of the books across units who have no unit on the site
 }
 
-function groupByYear(units: Unit[]): YearGroup[] {
+// Not a unit: its card stands last, under a heading of its own
+const NO_UNIT = 'ostali-borci'
+
+function groupByYear(all: Unit[]): YearGroup[] {
+  const units = all.filter((u) => u.id !== NO_UNIT)
   const dated = units
     .filter((u) => formation[u.id])
     .sort((a, b) => formationKey(formation[a.id].date) - formationKey(formation[b.id].date))
@@ -32,6 +37,8 @@ function groupByYear(units: Unit[]): YearGroup[] {
   }
   const undated = units.filter((u) => !formation[u.id])
   if (undated.length) groups.push({ year: null, units: undated })
+  const noUnit = all.filter((u) => u.id === NO_UNIT)
+  if (noUnit.length) groups.push({ year: null, units: noUnit, noUnit: true })
   return groups
 }
 
@@ -42,10 +49,12 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
   const to = useLocalePath()
   return (
     <div className="unit-years">
-      {groupByYear(units).map(({ year, units: group }) => (
-        <section key={year ?? 'ostale'} className="unit-year" aria-labelledby={`godina-${year ?? 'ostale'}`}>
-          <h3 className={year ? 'unit-year-head' : 'unit-year-head is-undated'} id={`godina-${year ?? 'ostale'}`}>
-            {year ? <span className="unit-year-number">{year}</span> : t.home.otherUnits}
+      {groupByYear(units).map(({ year, units: group, noUnit }) => {
+        const key = year ?? (noUnit ? 'bez-jedinice' : 'ostale')
+        return (
+        <section key={key} className="unit-year" aria-labelledby={`godina-${key}`}>
+          <h3 className={year ? 'unit-year-head' : 'unit-year-head is-undated'} id={`godina-${key}`}>
+            {year ? <span className="unit-year-number">{year}</span> : noUnit ? t.home.noUnit : t.home.otherUnits}
           </h3>
           <ul className="unit-grid">
             {group.map((unit) => (
@@ -64,7 +73,8 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
             ))}
           </ul>
         </section>
-      ))}
+        )
+      })}
     </div>
   )
 }

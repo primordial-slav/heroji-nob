@@ -589,6 +589,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  'ostali-borci': {
+    name: 'Drugi borci',
+    description:
+      'Borci iz spominskih knjig, vaških kronik in zbornikov narodnih herojev, katerih enote še ni na strani.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1169,6 +1174,11 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  'ostali-borci': {
+    name: 'Други борци',
+    description:
+      'Борци од споменици, хроники на селата и зборници на народни херои чија единица сè уште не е на сајтот.',
   },
 }
 
@@ -1752,6 +1762,11 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  'ostali-borci': {
+    name: 'Other fighters',
+    description:
+      'Fighters from memorial books, village histories and the collections of People’s Heroes whose unit is not on the site yet.',
   },
 }
 

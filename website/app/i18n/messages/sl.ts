@@ -46,6 +46,7 @@ export const sl: Messages = {
       'Poskusite samo s priimkom ali z imenom in priimkom brez očetovega imena. Knjige očetovo ime pogosto zapišejo v rodilniku, na primer »Milorada« namesto »Milorad«. Črki ć in đ lahko vpišete kot c in d.',
     unitsTitle: 'Enote',
     otherUnits: 'Druge enote',
+    noUnit: 'Brez enote',
     /** The wartime portraits in the home page's margins */
     rails: 'Borci na fotografijah iz vojne',
     bandCredit: 'Na fotografiji:',

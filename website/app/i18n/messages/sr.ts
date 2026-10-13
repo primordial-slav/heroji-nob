@@ -45,6 +45,7 @@ export const sr = {
       'Pokušajte samo prezime, ili ime i prezime bez očevog imena. Knjige često beleže očevo ime u genitivu, na primer „Milorada“ umesto „Milorad“.',
     unitsTitle: 'Jedinice',
     otherUnits: 'Ostale jedinice',
+    noUnit: 'Bez jedinice',
     /** The wartime portraits in the home page's margins */
     rails: 'Borci na fotografijama iz rata',
     bandCredit: 'Na fotografiji:',

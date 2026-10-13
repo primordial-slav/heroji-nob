@@ -55,6 +55,7 @@ export const mk: Messages = {
       'Обидете се само со презимето, или со име и презиме без татковото име. Книгите често го пишуваат татковото име со падежна наставка, на пример „Milorada“ наместо „Milorad“.',
     unitsTitle: 'Единици',
     otherUnits: 'Други единици',
+    noUnit: 'Без единица',
     /** The wartime portraits in the home page's margins */
     rails: 'Борци на фотографии од војната',
     bandCredit: 'На фотографијата:',

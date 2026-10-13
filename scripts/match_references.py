@@ -185,6 +185,8 @@ def main():
             r['hero'] = True                               # every entry of these books is a narodni heroj
     index = defaultdict(list)
     for code, (_, soldiers) in structured.load_live().items():
+        if code == 122:                                    # Ostali borci: made of the entries no unit's record took
+            continue
         for s in soldiers:
             index[(fold(s.get('last_name')), fold(s.get('first_name')))].append(s)
     found, grades, every = [], Counter(), {}
