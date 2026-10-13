@@ -280,6 +280,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Pripovedujejo matere narodnih herojev o svojih sinovih in hčerah (1967); nad vsako zgodbo je kratek življenjepis heroja: rojstvo, poklic, KPJ, NOB, smrt in dan razglasitve. Knjiga ne pripada eni enoti: življenjepis je dodan zapisu vsakega heroja, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     'ofanziva-1942-poginuli':
       'Seznam borcev 1., 2., 3. in 4. proleterske brigade, ki so padli ali izginili na pohodu v zahodno Bosno od 24. junija do 30. septembra 1942 (str. 698–711), po brigadah in bataljonih, z rojstvom, poklicem in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'hak-20-gospic-perusic':
+      'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 20): padli borci z območja okrajev Gospić in Perušić 1941–1945 (str. 986–1045) in nosilci Partizanske spomenice 1941 (str. 1194–1209), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -549,6 +551,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Мајките на народните херои раскажуваат за своите синови и ќерки (1967); над секоја приказна е кратка биографија на херојот: раѓање, занимање, КПЈ, НОБ, смрт и денот на прогласувањето. Книгата не припаѓа на една единица: биографијата е додадена на записот на секој херој што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     'ofanziva-1942-poginuli':
       'Список на борците од 1., 2., 3. и 4. пролетерска бригада што загинале или исчезнале во походот кон западна Босна, од 24 јуни до 30 септември 1942 (стр. 698–711), по бригади и баталјони, со раѓање, занимање и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'hak-20-gospic-perusic':
+      'Од зборникот на Историскиот архив во Карловац (кн. 20): паднатите борци од околиите Госпиќ и Перушиќ 1941–1945 (стр. 986–1045) и носителите на Партизанската споменица 1941 (стр. 1194–1209), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -817,6 +821,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Mothers of People’s Heroes tell of their sons and daughters (1967); above each story stands a short life of the hero: birth, trade, the Party, the war, death and the day proclaimed. The book belongs to no single unit: a life is added to the record of each hero on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     'ofanziva-1942-poginuli':
       'The fighters of the 1st, 2nd, 3rd and 4th Proletarian Brigades killed or missing on the march into western Bosnia, 24 June to 30 September 1942 (pp. 698–711), by brigade and battalion, with birth, trade and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'hak-20-gospic-perusic':
+      'From the Karlovac Historical Archive’s collection (vol. 20): the fighters from the districts of Gospić and Perušić who fell in 1941–1945 (pp. 986–1045) and the holders of the Partisan Commemorative Medal 1941 (pp. 1194–1209), by municipality and village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
   },
 }
 

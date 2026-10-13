@@ -143,7 +143,12 @@ TWO_COLUMN_PAGES = {
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster in two columns, the fallen and wounded in one
     '1-konjicka.pdf': range(5, 12),              # 1. konjička: the fallen in one column, the war roster in two
     '13-hercegovacka.pdf': range(15, 33),              # 13. hercegovačka: the roster of names
+    'hak-20-gospic-perusic.pdf': range(1, 61),   # Gospić i Perušić: the fallen in two columns, the spomenica in one
 }
+# two-column books whose right column sets its entry numbers in the gutter, left of the column's text
+NUMBERS_IN_GUTTER = {'hak-20-gospic-perusic.pdf'}
+# pages whose gutter the words don't show (a title across it): the split's x
+GUTTER = {('hak-20-gospic-perusic.pdf', 1): 188.0}
 
 
 def page_columns(pdf_file: str, page: int | None = None) -> int:
@@ -222,9 +227,10 @@ def group_lines(words: list[dict]) -> list[dict]:
     return out
 
 
-def read_page(page, columns: int = 1) -> dict:
+def read_page(page, columns: int = 1, numbers_in_gutter: bool = False, gutter: float | None = None) -> dict:
     """{'columns': [[line, ...], ...], 'split': x (or [x, ...] for more than two columns) or None,
-    'width', 'height'} in viewer coordinates."""
+    'width', 'height'} in viewer coordinates. numbers_in_gutter: the right column's entry numbers stand in the
+    gutter (NUMBERS_IN_GUTTER), so the gutter is found without them; gutter: the split, where it is given (GUTTER)."""
     from pdf_coords import viewer_words
     words = [w for w in viewer_words(page, keep_blank_chars=False) if w['text'].strip()]
     for w in words:     # pdfplumber versions differ in the last bits; don't let that flip a rounding
@@ -232,7 +238,8 @@ def read_page(page, columns: int = 1) -> dict:
             w[k] = round(w[k], 2)
     width, height = float(page.width), float(page.height)
     if columns == 2 and words:
-        split = find_gutter(words, width)
+        split = gutter or find_gutter(
+            [w for w in words if not (numbers_in_gutter and re.fullmatch(r'\d{1,3}[.,]?', w['text']))], width)
         cols = [[w for w in words if (w['x0'] + w['x1']) / 2 < split],
                 [w for w in words if (w['x0'] + w['x1']) / 2 >= split]]
     elif columns > 2 and words:
@@ -255,7 +262,8 @@ def _read_pages(job) -> dict[str, dict]:
                 out[str(p)] = None
                 continue
             page = pdf.pages[p - 1]
-            out[str(p)] = read_page(page, page_columns(Path(path).name, p))
+            name = Path(path).name
+            out[str(p)] = read_page(page, page_columns(name, p), name in NUMBERS_IN_GUTTER, GUTTER.get((name, p)))
             # pdfplumber keeps every parsed page in memory otherwise (0.9 has no close())
             (getattr(page, 'close', None) or page.flush_cache)()
     return out
@@ -350,6 +358,7 @@ ONE_LINE_ENTRIES = {
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster, names only
     '1-konjicka.pdf': range(5, 12),              # 1. konjička: the war roster, names only
     '13-hercegovacka.pdf': range(15, 33),              # 13. hercegovačka: the roster of names
+    'hak-20-gospic-perusic.pdf': range(61, 77),  # Gospić i Perušić: the spomenica holders, a line each
 }
 
 

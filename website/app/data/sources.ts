@@ -1394,5 +1394,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/ofanziva-1942-poginuli.jpg',
     brigadeName: '',
     description: 'Spisak boraca 1, 2, 3. i 4. proleterske brigade poginulih i nestalih u pohodu u zapadnu Bosnu, od 24. juna do 30. septembra 1942 (str. 698–711), po brigadama i bataljonima, s rođenjem, zanimanjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'hak-20-gospic-perusic',
+    title: 'Kotar Gospić i kotar Perušić u narodnooslobodilačkom ratu 1941–1945.',
+    author: 'Zdenka Krivokuća',
+    pdfPath: '/pdfs/hak-20-gospic-perusic.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-20-gospic-perusic.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 20): pali borci s područja kotara Gospić i kotara Perušić 1941–1945 (str. 986–1045) i nosioci Partizanske spomenice 1941 (str. 1194–1209), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
   }
 ]

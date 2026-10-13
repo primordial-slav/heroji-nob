@@ -155,7 +155,9 @@ def main():
     found, grades, every = [], Counter(), {}
     for ref in refs:
         names = {fold(ref['first_name'])} | ({fold(ref['nick'])} if ref.get('nick') else set())
-        cands = [s for n in names for s in index.get((fold(ref['last_name']), n), [])]
+        # a woman the book gives two surnames (married, maiden) may be on the site under either
+        lasts = {fold(ref['last_name'])} | {fold(x) for x in ref.get('also', ())}
+        cands = [s for l in lasts for n in names for s in index.get((l, n), [])]
         for s in cands:
             agree, clash = evidence(ref, s)
             g = grade(agree, clash)
