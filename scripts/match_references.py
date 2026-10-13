@@ -8,7 +8,9 @@ A match needs the same surname and given name (letters folded) and more that agr
     sure     the father's name and one of: birth year (within a year), birthplace, year of death; or birth year and
              birthplace; or the record already calls him a narodni heroj and one of father, birth year, birthplace
     likely   one of father, birth year, birthplace, year of death
-A father's name printed differently (not an initial of it), or birth years more than a year apart, rule a pair out.
+A father's name printed differently (not an initial of it, nor the same name in another case), birth years more than a
+year apart, a different year of death, a hero who lived past the war against a record of the fallen, or (where the record
+doesn't call him a hero) a birthplace that shares no place name with the book's, rule a pair out.
 
 Usage:
     python scripts/match_references.py zbornik-heroja-1957                   # dry run: grades and samples
@@ -53,7 +55,7 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
     if rf and sf:
         if rf == sf or (len(rf) == 1 and sf.startswith(rf)) or (len(sf) == 1 and rf.startswith(sf)):
             agree.append('father')
-        else:
+        elif not (min(len(rf), len(sf)) >= 4 and rf[:3] == sf[:3]):      # "Jurja" and "Juraj" are one father
             clash.append('father')
     ry, sy = ref.get('birth_year'), re.search(r'1[89]\d\d', s.get('birth_year') or '')
     if ry and sy:
@@ -69,16 +71,27 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
         v = stem(village.split()[-1] if len(village.split()) > 1 and len(village.split()[-1]) > 3 else village.split()[0])
         if len(v) >= 4 and any(w.startswith(v) for w in words):
             agree.append('birthplace')
-    death = DEATH.search(ref['additional_info'])
+        elif s.get('birth_place') and not HERO.search(texts):
+            # a record that doesn't call him a hero, whose birthplace shares no place name with the book's village and
+            # district, is another man of the same name (Kukić Nikole Milan of Gorička, Dvor, is not the hero born in
+            # Baljci, Bileća); a record that does is the hero, his village printed in another case ("u Stocu", Stolac)
+            places = {stem(w) for w in fold(ref['born_in']).split() if len(w) >= 4} - {'selu', 'opst', 'opsti', 'kotar', 'srez', 'okrug'}
+            record = {stem(w) for w in fold(s['birth_place']).split() if len(w) >= 4}
+            if places and record and not any(a[:3] == b[:3] for a in places for b in record):
+                clash.append('birthplace')
+    # a book whose entries keep only part of the biography gives the year he fell and whether he lived past the war
+    # as fields of their own (Narodni heroji Jugoslavije, 1982); the Zbornik's summary says it in its words
+    death = DEATH.search(ref['additional_info']) if 'death_year' not in ref else None
+    dy = death.group(1) if death else ref.get('death_year') or ''
+    alive = bool(re.search(r'\bDanas\s*:', ref['additional_info'])) or bool(ref.get('survived'))
     record_death = re.search(r'19[34]\d', s.get('death_date') or '') if s.get('death_type') in ('poginuo', 'streljan', 'ubijen', 'nestao') else None
-    if death:
-        dy = death.group(1)
+    if dy:
         if dy in (s.get('death_date') or '') or re.search(rf'\b(?:pogin|strelj|umr|ubijen|obe[sš]en)\w*[^.;]{{0,60}}\b{dy}\b', texts, re.I):
             agree.append('death year')
         elif record_death and record_death.group(0) != dy:
             clash.append('death year')                     # Kostić Blagoje "Crni Marko" fell in 1943, the other in 1944
-    elif re.search(r'\bDanas\s*:', ref['additional_info']) and record_death:
-        clash.append('alive in 1957')                      # the book has him alive, the record killed in the war
+    elif alive and record_death:
+        clash.append('alive after the war')                # the book has him alive, the record killed in the war
     if HERO.search(texts):
         agree.append('hero on the site')
     return agree, clash

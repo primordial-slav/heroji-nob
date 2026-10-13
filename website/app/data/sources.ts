@@ -1340,5 +1340,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zbornik-heroja.jpg',
     brigadeName: '',
     description: 'Portreti narodnih heroja proglašenih do 1957: rođenje, put u NOB, smrt ili život posle rata i dan kad je ko proglašen. Knjiga ne pripada jednoj jedinici: portret je dodat zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'narodni-heroji-1982-1',
+    title: 'Narodni heroji Jugoslavije — tom 1',
+    author: 'Grupa autora',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644',
+    thumbnail: '/images/pdf-thumbs/narodni-heroji-1982-1.jpg',
+    brigadeName: '',
+    description: 'Biografije svih narodnih heroja, drugo izdanje (1982), prvi tom (A–M): rođenje, život pre rata, put u NOB, smrt ili život posle rata i dan kad je ko proglašen. Knjiga ne pripada jednoj jedinici: biografija je dodata zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'narodni-heroji-1982-2',
+    title: 'Narodni heroji Jugoslavije — tom 2',
+    author: 'Grupa autora',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645',
+    thumbnail: '/images/pdf-thumbs/narodni-heroji-1982-2.jpg',
+    brigadeName: '',
+    description: 'Biografije svih narodnih heroja, drugo izdanje (1982), drugi tom (N–Ž): rođenje, život pre rata, put u NOB, smrt ili život posle rata i dan kad je ko proglašen. Knjiga ne pripada jednoj jedinici: biografija je dodata zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]
