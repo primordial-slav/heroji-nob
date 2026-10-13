@@ -1,13 +1,15 @@
 """
-The order of battle of the NOVJ: the detachment, brigade, division and corps tables ("Pregledi") of Nikola Anić, Sekula Joksimović,
-Mirko Gutić, Narodnooslobodilačka vojska Jugoslavije - pregled razvoja oružanih snaga narodnooslobodilačkog pokreta
-1941-1945 (znaci.org 00003/523, book pp. 589-860), read into data-extraction/novj/: detachments.json (512 of the 556
-partisan odredi: the scan lacks the spreads with rows 36-45, 394-406, 458-470 and 541-547, and row 324's first lines),
-brigades.json (367), divisions.json (68: the NOVJ's, KNOJ's, air force and Italian divisions) and corps.json (18), each row with its cells as printed and
-its periods (who it was under, and when) read from them; site_links.json ties the site's brigades and divisions to
-their rows.
+The order of battle of the NOVJ: the detachment, brigade, division, operational zone and corps tables ("Pregledi") of
+Nikola Anić, Sekula Joksimović, Mirko Gutić, Narodnooslobodilačka vojska Jugoslavije - pregled razvoja oružanih snaga
+narodnooslobodilačkog pokreta 1941-1945 (znaci.org 00003/523, book pp. 589-860), read into data-extraction/novj/:
+detachments.json (512 of the 556 partisan odredi: the scan lacks the spreads with rows 36-45, 394-406, 458-470 and
+541-547, and row 324's first lines), brigades.json (367), divisions.json (68: the NOVJ's, KNOJ's, air force and Italian
+divisions), zones.json (the 25 operational zones of Croatia, Slovenia, Macedonia, Kosovo and Metohija and Vojvodina)
+and corps.json (18), each row with its cells as printed and its periods (who it was under, and when) read from them;
+site_links.json ties the site's brigades, divisions and odredi to their rows.
 
-The tables are spreads of two book pages, each row started by its number in the first column; the reader finds each
+The tables are spreads of two book pages, each row started by its number in the first column (the zones print it at
+the head of the name); the reader finds each
 column's edges on each spread (the scan shifts them up to 6 pt) and lines the right-hand page up with the left, which
 sits a few points off. Row numbers the OCR dropped or misread ("SY", "225") are read back from the run of numbers.
 The 86 MB book is cached in data-extraction/.cache/znaci_library/books/00003_523.pdf (git-ignored); fetch it from
@@ -39,10 +41,17 @@ TABLES = {
     'detachments': (657, 701, [44, 152, 212, 280, 322, 410, 503, 588, 648, 700],
                     ['no', 'name', 'formed', 'place', 'strength', 'makeup', 'parent', 'disbanded', 'reorganized', 'note',
                      'sources']),
+    'zones': (771, 779, [26, 82, 143, 201, 260, 319, 400, 473, 527, 578, 695],
+              ['no', 'name', 'formed', 'parent', 'divisions', 'detachments', 'units', 'territorial', 'staff', 'area',
+               'strength_arms', 'sources']),
     'corps': (780, 787, [26, 86, 145, 203, 261, 319, 410, 470, 529, 581, 702],
               ['no', 'name', 'formed', 'subordinate', 'divisions', 'detachments', 'units', 'territorial', 'staff', 'area',
                'strength_arms', 'sources']),
 }
+# where the spread's right-hand page begins, for a table whose seventh column is still on the left one
+GUTTER = {'zones': 421}
+# a table that prints each row's number at the head of its name, not in a column of its own: left of this x
+NUMBER_LEFT = {'zones': 30}
 EDGES = TABLES['brigades'][2]
 COLS = TABLES['brigades'][3]
 
@@ -92,7 +101,7 @@ def join(lines):
     return re.sub(r'\s+', ' ', text).strip()
 
 
-def read(first, last, EDGES=EDGES, COLS=COLS):
+def read(first, last, EDGES=EDGES, COLS=COLS, gutter=None, number_left=None):
     doc = fitz.open(PDF)
     rows, section = [], ''
     for pg in range(first, last + 1):
@@ -111,14 +120,21 @@ def read(first, last, EDGES=EDGES, COLS=COLS):
         scale = page.rect.width / 841.85
         for mid, ws in lines_of(words):
             t = ' '.join(w[4] for w in ws)
-            if sum(1 for w in ws if re.fullmatch(r'\d{1,2}', w[4])) >= 7 and len(ws) <= 13:
+            if (sum(1 for w in ws if re.fullmatch(r'\d{1,2}', w[4])) >= 7
+                    and sum(1 for w in ws if not re.fullmatch(r'\d{1,2}|[I|l]', w[4])) <= 3):
                 continue                                                  # the header row "1 2 3 ... 11"
             first = ws[0]
-            if ((first[0] < edges[0] - 3 or (first[0] < edges[0] and first[4].rstrip('.').isdigit())) and len(first[4]) <= 4 and len(ws) > 1 and first[4] not in ('Red.', 'br.', 'broj')):
+            if number_left:                   # "12." at the head of the name column, left of its lines
+                if re.fullmatch(r'[\dSIlO]{1,2}\.', first[4]) and first[0] < number_left and len(ws) > 1:
+                    n = first[4][:-1]                                   # "S." for 5: read from the run
+                    starts.append((mid - 4, int(n) if n.isdigit() else 0, pg))
+                elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', t):
+                    starts.append((mid - 4, None, (first[0], t)))
+            elif ((first[0] < edges[0] - 3 or (first[0] < edges[0] and first[4].rstrip('.').isdigit())) and len(first[4]) <= 4 and len(ws) > 1 and first[4] not in ('Red.', 'br.', 'broj')):
                 n = first[4].rstrip('.')
                 starts.append((mid - 4, int(n) if n.isdigit() else 0, pg))   # 0: a number the OCR garbled ("SY")
             elif re.fullmatch(r'[A-ZČĆŽŠĐ „"“\-—–().:]{12,}', t):
-                starts.append((mid - 4, None, t))
+                starts.append((mid - 4, None, (first[0], t)))
         # a row whose number the OCR dropped: a name that starts after a blank gap (rows stand apart, an entry's own
         # lines about 8 pt), as at the top of a page
         prev_mid = -1e9
@@ -131,10 +147,19 @@ def read(first, last, EDGES=EDGES, COLS=COLS):
                     and not re.search(r'Naziv|jedinice|Datum|formiranja|NARODNO|BRIGADE|DIVIZIJE|KORPUS|Red\.', t)
                     and not any(abs(y + 4 - mid) < 7 for y, _, _ in starts)):
                 starts.append((mid - 4, 0, pg))
-        starts.sort()
+        starts.sort(key=lambda s: s[0])
+        # a heading set across both pages, its halves a few points apart: "OPERATIVNE ZONE" / "NOV I PO HRVATSKE"
+        merged = []
+        for s in starts:
+            if s[1] is None and merged and merged[-1][1] is None and s[0] - merged[-1][0] < 8:
+                a, b = sorted([merged[-1][2], s[2]])
+                merged[-1] = (merged[-1][0], None, (a[0], a[1] + ' ' + b[1]))
+            else:
+                merged.append(s)
+        starts = merged
         # the right-hand page of the spread sits a few points off the left: its first line under each row start
-        gutter = (edges[5] + edges[6]) / 2 if len(edges) > 6 else 410
-        right = sorted((w[1] + w[3]) / 2 for w in words if w[0] > gutter)
+        gut = (gutter * scale if gutter else (edges[5] + edges[6]) / 2 if len(edges) > 6 else 410)
+        right = sorted((w[1] + w[3]) / 2 for w in words if w[0] > gut)
         offs = []
         for y, no, _ in starts:
             if no is not None:
@@ -145,12 +170,12 @@ def read(first, last, EDGES=EDGES, COLS=COLS):
         shift = offs[len(offs) // 2] if offs else 0.0
         for i, (y, no, extra) in enumerate(starts):
             if no is None:
-                section = re.sub(r'\s+', ' ', extra).strip()
+                section = re.sub(r'\s+', ' ', extra[1]).strip()
                 continue
             y_end = starts[i + 1][0] if i + 1 < len(starts) else 1e9
             cells = {c: [] for c in COLS}
-            mine = [w for w in words if (y <= (w[1] + w[3]) / 2 < y_end and w[0] <= gutter)
-                    or (y + shift - 5 <= (w[1] + w[3]) / 2 < y_end + shift - 5 and w[0] > gutter)]
+            mine = [w for w in words if (y <= (w[1] + w[3]) / 2 < y_end and w[0] <= gut)
+                    or (y + shift - 5 <= (w[1] + w[3]) / 2 < y_end + shift - 5 and w[0] > gut)]
             for mid, ws in lines_of(mine):
                 by = {c: [] for c in COLS}
                 for w in ws:
@@ -362,7 +387,7 @@ def main():
         sys.exit(f'{PDF} is missing: fetch https://znaci.org/00003/523.pdf')
     tables = {}
     for name, (first, last, edges, cols) in TABLES.items():
-        rows = read(first, last, edges, cols)
+        rows = read(first, last, edges, cols, GUTTER.get(name), NUMBER_LEFT.get(name))
         for r in rows:
             for (table, no, col), (wrong, right) in ERRATA.items():
                 if table == name and r['no'] == no and wrong in r[col]:
@@ -374,6 +399,12 @@ def main():
     for d in tables['divisions']:
         d['periods'] = periods(clean(d['parent']))
         d['brigades'] = periods(clean(d['composition']), chain=False)
+    for z in tables['zones']:
+        z['name'] = re.sub(r'^[\dSIlO]{1,2}\.\s+', '', z['name'])       # the number printed at its head
+        z['section'] = z['section'].replace('PO.', 'PO')
+        z['periods'] = periods(clean(z['parent']), bare=True)
+        z['divisions_periods'] = periods(clean(z['divisions']), chain=False, bare=True)
+        z['detachments_periods'] = periods(clean(z['detachments']), chain=False, bare=True)
     for c in tables['corps']:
         c['divisions_periods'] = periods(clean(c['divisions']), chain=False)
     for o in tables['detachments']:
