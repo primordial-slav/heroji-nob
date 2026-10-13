@@ -194,9 +194,9 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 |---|---|---|
 | Mišo Leković, *Ofanziva proleterskih brigada u leto 1942.* | fallen and missing 24. VI–30. IX 1942, by brigade and battalion ([183_15.pdf](https://znaci.org/00001/183_15.pdf), 14 pp.; on the site as `ofanziva-1942-poginuli.pdf`, a book across units: **done**, `parse_ofanziva_1942.py`) | [00001/183](https://znaci.org/00001/183.htm) |
 | Dragoljub Tmušić, *Sremski front* | fallen, by unit | [00003/724](https://znaci.org/00003/724.htm) |
-| Milorad Gončin, *U rovovima Srema* | fallen ([211_1.pdf](https://znaci.org/00001/211_1.pdf), 39 pp.) | [00001/211](https://znaci.org/00001/211.htm) |
+| Milorad Gončin, *U rovovima Srema* | fallen ([211_1.pdf](https://znaci.org/00001/211_1.pdf), 39 pp.; **done**: `u-rovovima-srema-poginuli.pdf`, a book across units) | [00001/211](https://znaci.org/00001/211.htm) |
 | Nikola Božić, *Batinska bitka* | 51. divizija fallen (p. 469, 22 pp.) and missing (p. 491, 11 pp.); Soviet fallen (p. 502, 59 pp.) | [00002/427](https://znaci.org/00002/427.htm) |
-| *Oslobođenje Kruševca 1944.* | fallen ([292_32.pdf](https://znaci.org/00001/292_32.pdf), 11 pp.) | [00001/292](https://znaci.org/00001/292.htm) |
+| *Oslobođenje Kruševca 1944.* | fallen ([292_32.pdf](https://znaci.org/00001/292_32.pdf), 11 pp.; **done**: `krusevac-1944-poginuli.pdf`, a book across units) | [00001/292](https://znaci.org/00001/292.htm) |
 | Milan Brunović, Tomo Sović, *Bitka kod Oborova* | the fallen (p. 158, 18 pp.) | [00003/660](https://znaci.org/00003/660.htm) |
 | *Istočna Bosna u NOR-u* 2 | fallen of the 6. istočnobosanska (PDF p. 478, 7 pp.) | [00003/751](https://znaci.org/00003/751.php) |
 | *Žene Hrvatske u NOB* | women of the VI. korpus who fell (p. 301, 12 pp.), women of the 1. bataljon of the Osječka (p. 282) | [00003/585](https://znaci.org/00003/585.htm) |

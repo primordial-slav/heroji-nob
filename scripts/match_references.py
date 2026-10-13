@@ -144,6 +144,17 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
         when = parse_when(s['death_date'])
         if when and when[0][2] and iso(when[0]) == ref['death_date']:
             agree.append('death day')
+    # a book that names only where he fell (U rovovima Srema: the villages of the Srem front under each brigade) gives
+    # that place, and the years its fighting lasted: a record that has him fall in another year is another man
+    if ref.get('death_place'):
+        place = ref['death_place'].split()
+        p = stem(place[-1] if len(place) > 1 and len(place[-1]) > 3 else place[0])
+        died = fold(' '.join([s.get('death_place') or '', s.get('additional_info') or ''] +
+                             [o.get('additional_info') or '' for o in s.get('other_sources', ())])).split()
+        if len(p) >= 4 and any(w.startswith(p) for w in died):
+            agree.append('death place')
+    if ref.get('death_years') and record_death and record_death.group(0) not in ref['death_years']:
+        clash.append('death year')
     return agree, clash
 
 
@@ -164,7 +175,7 @@ def grade(agree: list[str], clash: list[str]) -> str | None:
         return 'sure'
     if 'hero on the site' in a and (a & {'father', 'birth year', 'birthplace'}):
         return 'sure'
-    if 'unit' in a and (a & {'father', 'birth year', 'birthplace', 'death day'}):
+    if 'unit' in a and (a & {'father', 'birth year', 'birthplace', 'death day', 'death place'}):
         return 'sure'
     if a - {'hero on the site', 'unit'}:
         return 'likely'
