@@ -589,6 +589,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '13-krajiska-brigada': {
+    name: '13. krajiška brigada',
+    description: 'Ustanovljena 23. avgusta 1943 iz Ribniškega partizanskega odreda. Borci brigade avgusta in septembra 1943 in njeni člani KPJ maja 1945.',
+  },
   '1-krajiska-brigada': {
     name: '1. krajiška proletarska udarna brigada',
     description: 'Ustanovljena 21. maja 1942 v Lamoviti pri Prijedoru. Padli, umrli in pogrešani borci brigade.',
@@ -1178,6 +1182,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '13-krajiska-brigada': {
+    name: '13-та краишка бригада',
+    description: 'Формирана на 23 август 1943 од Рибничкиот партизански одред. Борците на бригадата во август и септември 1943 и нејзините членови на КПЈ во мај 1945.',
   },
   '1-krajiska-brigada': {
     name: '1-ва краишка пролетерска ударна бригада',
@@ -1770,6 +1778,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '13-krajiska-brigada': {
+    name: '13th Krajina Brigade',
+    description: 'Formed on 23 August 1943 from the Ribnik Partisan Detachment. The brigade’s fighters in August and September 1943, and its Communist Party members in May 1945.',
   },
   '1-krajiska-brigada': {
     name: '1st Krajina Proletarian Assault Brigade',

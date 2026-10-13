@@ -1231,6 +1231,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/1-krajiska.pdf']
   },
   {
+    id: '13-krajiska-brigada',
+    name: '13. krajiška brigada',
+    nameEn: '13th Krajina Brigade',
+    description: 'Formirana 23. avgusta 1943. od Ribničkog partizanskog odreda. Borci brigade u avgustu i septembru 1943. i njeni članovi KPJ u maju 1945.',
+    image: '/images/13-krajiska-brigada.jpg',
+    soldierCount: 1101,
+    dataFile: '/13-krajiska-soldiers.json',
+    pdfFiles: ['/pdfs/13-krajiska.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

@@ -1595,6 +1595,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih, umrlih i nestalih boraca brigade, 2.127 imena: rođenje, kada su stupili u NOB i u brigadu, četa i bataljon, dužnost, kada i gde su pali i gde su sahranjeni (str. 331–442). Podatke je istražio i obradio Slobodan Spegar Spego.'
   },
   {
+    id: '13-krajiska',
+    title: 'Trinaesta krajiška brigada',
+    author: 'Milan N. Zorić',
+    pdfPath: '/pdfs/13-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/13-krajiska.jpg',
+    brigadeName: '13. krajiška brigada',
+    description: 'Dva spiska: borci i rukovodioci koji su bili u brigadi u avgustu i septembru 1943, s mestom, dužnošću i, za poginule, kada su pali i gde su sahranjeni; članovi KPJ partijske organizacije brigade u maju 1945, s danom prijema u Partiju i dužnošću (str. 365–404).'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',

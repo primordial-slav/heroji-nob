@@ -1135,6 +1135,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    124: {
+        'name': '13. Krajiška',
+        'json_file': '13-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOVIČ ĐURO iz Vranovine, Krnjeuša, Bosanski Petrovac, borac, poginuo ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 

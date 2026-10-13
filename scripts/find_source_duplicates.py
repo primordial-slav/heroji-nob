@@ -51,6 +51,7 @@ CORRECTIONS = ROOT / 'corrections.json'
 # PDFs that hold more than one list: {pdf_file: [(first page, list name), ...]}
 LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
+    '13-krajiska.pdf': [(2, 'u brigadi avgusta i septembra 1943'), (25, 'članovi KPJ, maj 1945')],
     '4-splitska-brigada.pdf': [(1, 'poginuli'), (23, 'preživjeli')],
     '11-dalmatinska.pdf': [(1, 'poginuli'), (27, 'nestali'), (28, 'preživjeli')],
     'cankarjeva.pdf': [(1, 'seznam'), (33, 'padli')],
