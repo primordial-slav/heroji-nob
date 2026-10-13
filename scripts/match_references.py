@@ -36,6 +36,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CORRECTIONS = ROOT / 'corrections.json'
 FOLD = str.maketrans('ČĆŽŠĐčćžšđ', 'CCZSDcczsd')
 HERO = re.compile(r'narodn\w*\s*heroj(?!i)', re.I)
+HERO_BOOKS = {'zbornik-heroja-1957', 'narodni-heroji-1982'}
 DEATH = re.compile(r'\b(?:Poginu[oa]|Pogin|Streljan[a]?|Strelian|Obešen[a]?|Umr[oe]|Umrla|Ubijen[a]?|Ubio se|Ubila se|'
                    r'Umoren[a]?|Zaklan[a]?|Nestao|Nestala|Spaljen|Podlegao|Podlegla)\b[^.]*?\b(19[34]\d)\b')
 
@@ -49,18 +50,41 @@ def stem(word: str) -> str:
     return w[:5] if len(w) >= 5 else w
 
 
+def same_father(a: str, b: str) -> bool:
+    """Two spellings of one father's name in different cases or forms: "Jurja" and "Juraj", "Petra" and "Petar",
+    "Pavla" and "Pavao", "Mile" and "Mileta", "Jove" and "Jovana"; not "Mile" and "Miloša" (folded, lower case)"""
+    if min(len(a), len(b)) < 4 or a[:3] != b[:3]:
+        return False
+    def bases(x):
+        x = re.sub(r'ao$', 'l', x)                                              # Pavao/Pavla
+        x = re.sub(r'(?:ov|ev|in|ova|eva|ina|[aeiou])$', '', x)
+        return {x, re.sub(r'a(?=[^aeiou]$)', '', x)}                            # Juraj/Jurja, Petar/Petra
+    ba, bb = bases(a), bases(b)
+    if ba & bb:
+        return True
+    return any(y.startswith(x) and y[len(x):] in ('et', 'ot', 'an', 'o', 'ij', 'k')     # Mile/Mileta, Jove/Jovana
+               for p, q in ((ba, bb), (bb, ba)) for x in p for y in q)
+
+
 def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
     agree, clash = [], []
+    # a record that calls him a narodni heroj counts only for an entry that does too: a village book's Živković Živko of
+    # Makce is not the hero Živković Radosava Živko of Buče because both were born in 1912
+    hero = bool(HERO.search(ref['additional_info'])) or bool(ref.get('hero'))
     rf, sf = fold(ref['fathers_name']), fold(s.get('middle_name') or '')
     if rf and sf:
         # a book that gives the father as a possessive (Trebinjci pali: "Muharemov", "Jovičin") against the site's
         # genitive ("Muharema", "Jovice"): the same name once both endings are off
-        pos = re.match(r'^(.{3,}?)(?:ov|ev|in|ova|eva|ina)$', rf)
+        def possessive(p, g):                                   # either side may give the possessive ("Lazin")
+            m = re.match(r'^(.{3,}?)(?:ov|ev|in|ova|eva|ina)$', p)
+            return bool(m) and len(g) >= 3 and m.group(1) == re.sub(r'[aeiou]$', '', g)
         if rf == sf or (len(rf) == 1 and sf.startswith(rf)) or (len(sf) == 1 and rf.startswith(sf)) or (
-                pos and len(sf) >= 3 and pos.group(1) == re.sub(r'[aeiou]$', '', sf)):
+                possessive(rf, sf) or possessive(sf, rf)):
             agree.append('father')
-        elif not (min(len(rf), len(sf)) >= 4 and rf[:3] == sf[:3]):      # "Jurja" and "Juraj" are one father
-            clash.append('father')
+        elif not same_father(rf, sf):
+            # a father whose name begins the same but is not clearly the same name ("Mile" and "Miloša", or an OCR
+            # slip, "Mustave" for Mustafe) weighs against the pair without ruling it out (see grade)
+            clash.append('father?' if min(len(rf), len(sf)) >= 4 and rf[:3] == sf[:3] else 'father')
     ry, sy = ref.get('birth_year'), re.search(r'1[89]\d\d', s.get('birth_year') or '')
     if ry and sy:
         if abs(int(ry) - int(sy.group(0))) <= 1:
@@ -75,7 +99,7 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
         v = stem(village.split()[-1] if len(village.split()) > 1 and len(village.split()[-1]) > 3 else village.split()[0])
         if len(v) >= 4 and any(w.startswith(v) for w in words):
             agree.append('birthplace')
-        elif s.get('birth_place') and not HERO.search(texts):
+        elif s.get('birth_place') and not (hero and HERO.search(texts)):
             # a record that doesn't call him a hero, whose birthplace shares no place name with the book's village and
             # district, is another man of the same name (Kukić Nikole Milan of Gorička, Dvor, is not the hero born in
             # Baljci, Bileća); a record that does is the hero, his village printed in another case ("u Stocu", Stolac)
@@ -94,18 +118,26 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
             agree.append('death year')
         elif record_death and record_death.group(0) != dy:
             clash.append('death year')                     # Kostić Blagoje "Crni Marko" fell in 1943, the other in 1944
+        if re.search(r'\bŽivi\b', s.get('additional_info') or ''):
+            clash.append('alive on the site')              # the book has him fallen, the record alive (Ilić Mile Sava)
     elif alive and record_death:
         clash.append('alive after the war')                # the book has him alive, the record killed in the war
-    if HERO.search(texts):
+    if hero and HERO.search(texts):
         agree.append('hero on the site')
     return agree, clash
 
 
 def grade(agree: list[str], clash: list[str]) -> str | None:
-    if clash:
+    if [c for c in clash if c != 'father?']:
         return None
     a = set(agree)
     core = a & {'birth year', 'birthplace', 'death year'}
+    if 'father?' in clash:
+        # a father not clearly the same: sure only with all three of birth year, birthplace and death, or a hero on
+        # the site and one more (Ilić Miloša Nikola, alive, is not the Ilić Mile Nikola who fell near Gračac)
+        if len(core) == 3 or ('hero on the site' in a and core):
+            return 'sure'
+        return 'likely' if core else None
     if 'father' in a and core:
         return 'sure'
     if {'birth year', 'birthplace'} <= a:
@@ -126,6 +158,9 @@ def main():
     args = ap.parse_args()
 
     refs = json.loads((ROOT / 'data-extraction' / 'poreklo' / f'{args.book}-entries.json').read_text(encoding='utf-8'))
+    if args.book in HERO_BOOKS:
+        for r in refs:
+            r['hero'] = True                               # every entry of these books is a narodni heroj
     index = defaultdict(list)
     for code, (_, soldiers) in structured.load_live().items():
         for s in soldiers:
@@ -144,6 +179,36 @@ def main():
             if g:
                 grades[g] += 1
                 found.append(pair)
+    # two entries of the book that are not one man (another father, birth years apart) matched to one record: which of
+    # them it is, the record doesn't say (Đaković Dane Nikola and Đaković Mile Nikola, both of 1914, of Mogorić)
+    refs = {r['soldier_id']: r for r in refs}
+    by_record = defaultdict(list)
+    for f in found:
+        by_record[f['record']].append(f)
+
+    def one_man(a, b):
+        fa, fb = fold(a['fathers_name']), fold(b['fathers_name'])
+        ya, yb = (re.search(r'1[89]\d\d', x.get('birth_year') or '') for x in (a, b))
+        return not (fa and fb and fa != fb and not same_father(fa, fb)) and not (
+            ya and yb and abs(int(ya.group(0)) - int(yb.group(0))) > 1)
+    for fs in by_record.values():
+        if len({f['ref'] for f in fs}) > 1 and not all(one_man(refs[a['ref']], refs[b['ref']]) for a in fs for b in fs):
+            for f in fs:
+                f['grade'] = None
+    # an entry matched to two records of one unit, one with its father and one without: two men of the name in that
+    # unit, and the entry is the one with the father (Bokan Milana Dušan, not Bokan Mile Dušan of the same village);
+    # unless the other record calls him a narodni heroj too (a hero the unit's second book prints without his father)
+    by_unit = defaultdict(list)
+    for f in found:
+        if f['grade']:
+            by_unit[(f['ref'], f['record'][:4])].append(f)
+    for fs in by_unit.values():
+        if any('father' in f['agree'] for f in fs):
+            for f in fs:
+                if 'father' not in f['agree'] and 'hero on the site' not in f['agree']:
+                    f['grade'] = None
+    grades = Counter(f['grade'] for f in found if f['grade'])
+    found = [f for f in found if f['grade']]
     heroes = {f['ref'] for f in found if f['grade'] == 'sure'}
     print(f'{len(refs)} entries; matches {dict(grades)}; heroes with a sure match: {len(heroes)}')
     for f in found[:0]:
