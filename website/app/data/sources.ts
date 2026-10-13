@@ -1613,6 +1613,15 @@ export const sources: PdfSource[] = [
     description: 'Borci Konjičkog bataljona (septembar 1941 — jun 1942), Mostarskog bataljona (jun 1942 — jun 1943) i Mostarskog bataljona u Mostarskom partizanskom odredu (jun 1943 — maj 1944), svaki s kratkim životopisom: rođenje, zanimanje, SKOJ i KPJ, dolazak u bataljon, dužnost i sudbina (str. 329–392).'
   },
   {
+    id: 'cacanski-odred',
+    title: 'Čačanski narodnooslobodilački partizanski odred „Dr Dragiša Mišović“',
+    author: 'Milojica Pantelić, Radovan M. Marinković, Vladimir Nikšić',
+    pdfPath: '/pdfs/cacanski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/cacanski-odred.jpg',
+    brigadeName: 'Čačanski NOP odred „Dr Dragiša Mišović“',
+    description: 'Pali borci odreda, po krajevima (Dragačevo, Ljubić, Trnava, Takovo, Čačak) i selima: otac, zanimanje, rođenje, bataljon u kome je borac bio i kako je i gde poginuo.'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',

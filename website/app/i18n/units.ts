@@ -589,6 +589,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  'cacanski-odred': {
+    name: 'Čačanski partizanski odred „Dr. Dragiša Mišović“',
+    description: 'Ustanovljen 6. julija 1941 v Kulinovcih pri Čačku. Padli borci odreda, po pokrajinah in vaseh.',
+  },
   'mostarski-bataljon': {
     name: 'Mostarski bataljon',
     description: 'Ustanovljen septembra 1941 kot Konjiški bataljon, od 21. junija 1942 Mostarski. Borci bataljona do maja 1944, s kratkimi življenjepisi.',
@@ -1186,6 +1190,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  'cacanski-odred': {
+    name: 'Чачански партизански одред „Д-р Драгиша Мишовиќ“',
+    description: 'Формиран на 6 јули 1941 во Кулиновци кај Чачак. Загинатите борци на одредот, по краеви и села.',
   },
   'mostarski-bataljon': {
     name: 'Мостарски баталјон',
@@ -1786,6 +1794,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  'cacanski-odred': {
+    name: 'Čačak Partisan Detachment “Dr Dragiša Mišović”',
+    description: 'Formed on 6 July 1941 at Kulinovci near Čačak. The detachment’s fallen, by district and village.',
   },
   'mostarski-bataljon': {
     name: 'Mostar Battalion',

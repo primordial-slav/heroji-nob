@@ -33,6 +33,10 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  'cacanski-odred': {
+    date: '1941-07-06', place: 'Kulinovci (Čačak)', source: 'https://znaci.org/00001/51_4.pdf',
+    note: 'Pantelić, Marinković, Nikšić, Čačanski NOP odred (pogl. „Formiranje Čačanskog NOP odreda“): na sastanku Okružnog komiteta KPJ „u Kulinovcima, u kući braće Desimira i Ratka Vasiljevića, 6. jula“ imenovan je štab odreda; ustanak je počeo sutradan, na Ivanjdan 7. jula, kod manastira Stjenik.',
+  },
   'mostarski-bataljon': {
     date: '1941-09', place: 'Konjic', source: 'https://znaci.org/00001/182_3.pdf',
     note: 'Ćemalović, Mostarski bataljon: spisak počinje „Borcima Konjičkog bataljona (septembar 1941 — juni 1942)“; na savetovanju na Tisovici 21. juna 1942. odlučeno je da se bataljon „umjesto Konjički … nazove Mostarski bataljon, što je u stvari bio od svog osnutka“ (str. 93).',

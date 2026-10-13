@@ -140,6 +140,7 @@ BRIGADE_CODES = {
     123: '1. Krajiška proleterska',
     124: '13. Krajiška',
     125: 'Mostarski bataljon',
+    126: 'Čačanski odred',
     # Add new brigades here with next available code
 }
 

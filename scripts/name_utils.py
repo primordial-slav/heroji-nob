@@ -1153,6 +1153,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'upper_all',
     },
+    126: {
+        'name': 'Čačanski odred',
+        'json_file': 'cacanski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "БОШКОВИЋ. Раденка БОГДАН, земљорадник, рођен 1906. у Вирову, ..." (Cyrillic)
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

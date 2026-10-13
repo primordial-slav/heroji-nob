@@ -1251,6 +1251,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/mostarski-bataljon.pdf']
   },
   {
+    id: 'cacanski-odred',
+    name: 'Čačanski NOP odred „Dr Dragiša Mišović“',
+    nameEn: 'Čačak Partisan Detachment “Dr Dragiša Mišović”',
+    description: 'Formiran 6. jula 1941. u Kulinovcima kod Čačka. Pali borci odreda, po krajevima i selima.',
+    image: '/images/cacanski-odred.jpg',
+    soldierCount: 1265,
+    dataFile: '/cacanski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/cacanski-odred.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

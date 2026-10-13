@@ -268,6 +268,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'cacanski-odred':
+      'Padli borci odreda, po pokrajinah (Dragačevo, Ljubić, Trnava, Takovo, Čačak) in vaseh: oče, poklic, rojstvo, bataljon, v katerem se je boril, in kako in kje je padel.',
     'mostarski-bataljon':
       'Borci Konjiškega bataljona (september 1941 — junij 1942), Mostarskega bataljona (junij 1942 — junij 1943) in Mostarskega bataljona v Mostarskem partizanskem odredu (junij 1943 — maj 1944), vsak s kratkim življenjepisom: rojstvo, poklic, SKOJ in KPJ, prihod v bataljon, dolžnost in usoda (str. 329–392).',
     '13-krajiska':
@@ -587,6 +589,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'cacanski-odred':
+      'Загинатите борци на одредот, по краеви (Драгачево, Љубиќ, Трнава, Таково, Чачак) и села: татко, занимање, раѓање, баталјонот во кој се борел и како и каде загинал.',
     'mostarski-bataljon':
       'Борците на Коњичкиот баталјон (септември 1941 — јуни 1942), на Мостарскиот баталјон (јуни 1942 — јуни 1943) и на Мостарскиот баталјон во Мостарскиот партизански одред (јуни 1943 — мај 1944), секој со кратка биографија: раѓање, занимање, СКОЈ и КПЈ, доаѓање во баталјонот, должност и судбина (стр. 329–392).',
     '13-krajiska':
@@ -905,6 +909,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'cacanski-odred':
+      'The detachment’s fallen, by district (Dragačevo, Ljubić, Trnava, Takovo, Čačak) and village: father, trade, birth, the battalion each fought in, and how and where they died.',
     'mostarski-bataljon':
       'The fighters of the Konjic Battalion (September 1941 — June 1942), the Mostar Battalion (June 1942 — June 1943) and the Mostar Battalion in the Mostar Partisan Detachment (June 1943 — May 1944), each with a short biography: birth, trade, SKOJ and Party membership, when they joined, duty and fate (pp. 329–392).',
     '13-krajiska':

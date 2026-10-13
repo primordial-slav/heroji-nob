@@ -479,6 +479,9 @@ UNITS = {
     "mostarski-bataljon": dict(
         name="Mostarski bataljon", tags=[],
         caption=r"mostarsk\w*\s+(?:partizansk\w*\s+)?bataljon|konji[cč]k\w*\s+bataljon", photo=10607),
+    "cacanski-odred": dict(
+        name="Čačanski NOP odred", tags=[],
+        caption=r"[cč]a[cč]ansk\w*\s+(?:nop\s+|narodnooslobodila[cč]k\w*\s+)?(?:partizansk\w*\s+)?odred", photo=14459),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,
