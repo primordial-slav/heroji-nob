@@ -1620,5 +1620,77 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/bitka-kod-oborova-poginuli.jpg',
     brigadeName: '',
     description: 'Imena 128 boraca 2. moslavačke brigade i Posavskog partizanskog odreda poginulih kod Oborova 29. marta 1944 (str. 158–160). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'zrtve-rata-1964-slo',
+    title: 'Žrtve rata 1941–1945: SR Slovenija',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-slo.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Slovenije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-hrv',
+    title: 'Žrtve rata 1941–1945: SR Hrvatska',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-hrv.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Hrvatske, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-bih',
+    title: 'Žrtve rata 1941–1945: SR Bosna i Hercegovina',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-bih.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Bosne i Hercegovine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-crg',
+    title: 'Žrtve rata 1941–1945: SR Crna Gora',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-crg.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Crne Gore, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-mak',
+    title: 'Žrtve rata 1941–1945: SR Makedonija',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Mak.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-mak.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Makedonije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-srb',
+    title: 'Žrtve rata 1941–1945: SR Srbija (bez pokrajina)',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja uže Srbije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-kos',
+    title: 'Žrtve rata 1941–1945: Kosovo i Metohija',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-kos.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Kosova i Metohije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'zrtve-rata-1964-voj',
+    title: 'Žrtve rata 1941–1945: Vojvodina',
+    author: 'Savezni zavod za statistiku (popis 1964); Muzej žrtava genocida',
+    pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf',
+    thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-voj.jpg',
+    brigadeName: '',
+    description: 'Popis žrtava rata iz 1964, sa područja Vojvodine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
   }
 ]

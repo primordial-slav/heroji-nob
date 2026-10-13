@@ -1153,7 +1153,29 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'initial',
         'original_casing': 'upper_all',
     },
+    # not units either: the fallen partisans of the 1964 census (Žrtve rata 1941-1945) who have no record of a unit,
+    # one part per volume of the census, a republic or province (build_ostali_borci.py, CENSUS_VOLUMES)
+    **{code: {
+        'name': f'Ostali borci: {name}',
+        'json_file': f'ostali-borci-{slug}.json',
+        'language': 'sr',
+        'name_format': 'standard',
+        'has_fathers_name': True,
+        'fathers_name_form': 'nominative',   # "Marković (Rade) Tomo": the father in parens, nominative
+        'original_casing': 'title',
+    } for code, (vol, slug, name) in {
+        131: ('slo', 'slovenija', 'Slovenija'), 132: ('hrv', 'hrvatska', 'Hrvatska'),
+        133: ('bih', 'bih', 'Bosna i Hercegovina'), 134: ('crg', 'crna-gora', 'Crna Gora'),
+        135: ('mak', 'makedonija', 'Makedonija'), 136: ('srb', 'srbija', 'Srbija'),
+        137: ('kos', 'kosovo', 'Kosovo i Metohija'), 138: ('voj', 'vojvodina', 'Vojvodina'),
+    }.items()},
 }
+
+# Ostali borci: the soldiers of the books across units who have no record of a unit (122), and the census's (131-138).
+# Their records come and go as their men find their units: no reference, link or vocabulary is taken from them.
+OSTALI_CODES = {122, *range(131, 139)}
+# the census's volumes: volume -> the code of its part of Ostali borci
+CENSUS_VOLUMES = {'slo': 131, 'hrv': 132, 'bih': 133, 'crg': 134, 'mak': 135, 'srb': 136, 'kos': 137, 'voj': 138}
 
 
 # ─────────────────────────────────────────────

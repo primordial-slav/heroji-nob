@@ -1,5 +1,6 @@
 """
-Ostali borci (unit 122): every soldier of a book across units who has no record on the site.
+Ostali borci (unit 122, and 131-138 for the 1964 census): every soldier of a book across units who has no record on
+the site.
 
 The books across units (the hero books, Trebinjci pali, the village chronicles, the Karlovac archive's volumes,
 Ofanziva 1942, ...) are read by their parsers into data-extraction/{poreklo,znaci}/<book>-entries.json, and
@@ -20,10 +21,18 @@ its entries change: a man whose entries had an ID keeps it (the first entry's, i
 new man gets the next free one (0122900001 on; the first records took 0122 + the book's two digits + the entry's
 number). A re-run after new references only drops the records whose men have found their unit.
 
+The 1964 census of the war's dead (Žrtve rata 1941-1945, data-extraction/zrtve-rata/, one volume a republic or
+province) names 180,000 fallen partisans, most with no other book: a man only the census names is a record of his
+volume's part of Ostali borci (131-138, CENSUS_VOLUMES; 160,000 men would make one unit too big for a search part or
+a file in git), with the ID of his census entry under the part's code (9021004235 -> 0132004235), so the registry
+doesn't hold him; a man the census and another book name is a record of 122. Two census entries are never one man:
+the volumes list each of the dead once, and one name, father and year in two republics are as a rule two men. The
+census gives its columns as fields (born_in, ethnicity, death_year, death_place), which become the record's fields.
+
 Usage:
     python data-extraction/build_ostali_borci.py            # dry run: counts and samples
-    python data-extraction/build_ostali_borci.py --write    # write website/public/ostali-borci.json
-Then: python scripts/normalize_all_json.py --brigade 122 --apply; python scripts/apply_corrections.py --apply.
+    python data-extraction/build_ostali_borci.py --write    # write website/public/ostali-borci*.json
+Then: python scripts/normalize_all_json.py --brigade 122 --apply (and 131-138); python scripts/apply_corrections.py --apply.
 """
 from __future__ import annotations
 
@@ -38,11 +47,13 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
 from extract_structured_fields import NAME_LISTS  # noqa: E402
+from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES  # noqa: E402
 
 CODE = 122
 IDS = ROOT / 'data-extraction' / 'ostali_borci_ids.json'
 FIRST_NEW = 900001
 OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json, which the parsers' corpora read
+CENSUS = 'zrtve-rata-1964'                                  # the census's volumes: zrtve-rata-1964-<vol>
 # names a parser read wrong, by entry: the Zbornik's headings "DEMONJ A (NIKOLA)", "RAKOVAC J (OAKIM)" and one whose
 # OCR took a line of the text for the name (Pal Šoti, born 19 January 1916 in Bečej, as Narodni heroji 1982 has him)
 NAME_FIXES = {'9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac', 'Joakim', ''),
@@ -61,6 +72,19 @@ def books() -> dict[str, list[dict]]:
         for p in sorted(d.glob('*-entries.json')):
             out[p.name[:-len('-entries.json')]] = json.loads(p.read_text(encoding='utf-8'))
     return out
+
+
+def census_fields(e: dict) -> dict:
+    """A census entry's columns as the record's fields: "rođen 1888, Arbnež (Bar). Crnogorac, poginuo 1942. u NOBu, Zec
+    Planina" (born_in "Arbnež, Bar", ethnicity, death_year, death_place; "Nepoznato" is no place)"""
+    # its wordings: poginuo/poginula (157,000), umro/umrla (10,700, "od bolesti", "od ranjavanja"), ubijen (4,400),
+    # nestao, streljan, obešen
+    m = re.search(r'\b(poginu|umr|ubijen|nesta|streljan|obešen)', e['additional_info'])
+    kind = ({'poginu': 'poginuo', 'umr': 'umro', 'nesta': 'nestao', 'obešen': 'ubijen'}.get(m.group(1), m.group(1))
+            if m else 'poginuo')                       # the site's types: poginuo, umro, nestao, streljan, ubijen
+    out = {'birth_place': e.get('born_in') or '', 'ethnicity': e.get('ethnicity') or '', 'death_type': kind,
+           'death_date': e.get('death_year') or '', 'death_place': e.get('death_place') or ''}
+    return {k: v for k, v in out.items() if v}
 
 
 def year(e: dict, key: str) -> int | None:
@@ -172,10 +196,9 @@ _given: Counter = Counter()
 
 def given_names() -> None:
     """The site's given names, for a father the book gives as a possessive"""
-    from name_utils import BRIGADE_CONFIGS
     for code, cfg in BRIGADE_CONFIGS.items():
         path = ROOT / 'website' / 'public' / cfg['json_file']
-        if code != CODE and path.exists():
+        if code not in OSTALI_CODES and path.exists():
             for r in json.loads(path.read_text(encoding='utf-8')):
                 if r.get('first_name'):
                     _given[r['first_name']] += 1
@@ -224,11 +247,15 @@ def main():
     given_names()
     corrections = json.loads((ROOT / 'corrections.json').read_text(encoding='utf-8'))
     # an entry a record of a unit took (not one of this unit's: those come and go with this script)
-    taken = {c['ref_id'] for c in corrections if c['action'] == 'reference' and not c['soldier_id'].startswith(f'{CODE:04d}')}
+    ostali = {f'{c:04d}' for c in OSTALI_CODES}
+    taken = {c['ref_id'] for c in corrections if c['action'] == 'reference' and c['soldier_id'][:4] not in ostali}
     entries = []
     for book, es in books().items():
+        # the census's volumes are one book, its volume kept for the part of Ostali borci its men go to
+        vol = book[len(CENSUS) + 1:] if book.startswith(CENSUS + '-') else ''
         for e in es:
-            e = dict(e, _book=book, _hero=book in HERO_BOOKS or bool(re.search(r'narodn\w*\s*heroj', e['additional_info'], re.I)))
+            e = dict(e, _book=CENSUS if vol else book, _vol=vol,
+                     _hero=book in HERO_BOOKS or bool(re.search(r'narodn\w*\s*heroj', e['additional_info'], re.I)))
             if e['soldier_id'] in NAME_FIXES:
                 e['last_name'], e['first_name'], e['fathers_name'] = NAME_FIXES[e['soldier_id']]
                 e['name'] = f"{e['last_name']} {e['first_name']}"
@@ -303,13 +330,23 @@ def main():
             if first.get('nick') and first['nick'] not in text:
                 text = f"zvani {first['nick']}; {text}"
             father = first.get('fathers_name') or ''
-            rid = record_id(g)
+            census = [m for m in g if m['_vol']]
+            if census and len(census) == len(g):
+                # only the census names him: his volume's part, his census entry's number (no registry)
+                code = CENSUS_VOLUMES[first['_vol']]
+                rid = f"{code:04d}{first['soldier_id'][4:]}"
+            else:
+                code = CODE
+                rid = record_id(g)
+                for m in g:
+                    ids[m['soldier_id']] = rid
             used.add(rid)
-            for m in g:
-                ids[m['soldier_id']] = rid
+            # the census prints the father in the nominative ("Marković (Rade) Tomo"): as printed in its parts (their
+            # config says nominative), only as fathers_name in 122, whose normalization reads a middle name as genitive
             rec = {'soldier_id': rid, 'last_name': first['last_name'],
-                   'middle_name': father, 'first_name': first['first_name'],
-                   'fathers_name': from_possessive(father) if first['_book'] == 'trebinjci-pali' else '',
+                   'middle_name': '' if first['_vol'] and code == CODE else father, 'first_name': first['first_name'],
+                   'fathers_name': (from_possessive(father) if first['_book'] == 'trebinjci-pali' else
+                                    father if first['_vol'] else ''),
                    'full_name': '', 'additional_info': text,
                    'birth_year': str(year(first, 'birth_year') or '')}
             rec.update({k: first[k] for k in SOURCE_FIELDS if first.get(k) not in (None, '')})
@@ -325,23 +362,35 @@ def main():
                 if day:
                     y, mo, d = day.split('-')
                     rec['death_date'] = f'{int(d)}. {int(mo)}. {y}.'
+            if census:
+                for k, v in census_fields(census[0]).items():
+                    rec.setdefault(k, v)                     # the census's columns, where a list gave no death
             if rest:
                 rec['other_sources'] = [source_entry(m) for m in rest]
             records.append(rec)
             counts[f'{len(g)} book(s)'] += 1
-            counts['from ' + first['_book']] += 1
-    records.sort(key=lambda r: (fold(r['last_name']), fold(r['first_name']), fold(r['middle_name']), r['soldier_id']))
+            counts['from ' + first['_book'] + (f" ({first['_vol']})" if first['_vol'] else '')] += 1
     n_ids = Counter(r['soldier_id'] for r in records)
     assert max(n_ids.values()) == 1, [i for i, n in n_ids.items() if n > 1][:5]
+    parts = defaultdict(list)                                 # code -> its records
+    for r in records:
+        parts[int(r['soldier_id'][:4])].append(r)
+    for recs in parts.values():
+        recs.sort(key=lambda r: (fold(r['last_name']), fold(r['first_name']), fold(r['middle_name']), r['soldier_id']))
     print(f'{len(entries)} entries, {len(taken)} on records of units; {len(records)} records')
     print(f'{len(on_site)} more entries are the same man as an entry on the site and stay out')
     for k, v in sorted(counts.items()):
         print(f'  {k}: {v}')
-    print(f'{sum(1 for r in records if int(r["soldier_id"][4:]) >= FIRST_NEW)} records with a new ID')
+    for code in sorted(parts):
+        print(f"  {code}: {len(parts[code])} records")
+    print(f'{sum(1 for r in parts[CODE] if int(r["soldier_id"][4:]) >= FIRST_NEW)} records of {CODE} with a new ID')
     if write:
-        OUT.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding='utf-8')
+        for code in [CODE, *CENSUS_VOLUMES.values()]:
+            path = ROOT / 'website' / 'public' / BRIGADE_CONFIGS[code]['json_file']
+            path.write_text(json.dumps(parts.get(code, []), ensure_ascii=False, indent=2), encoding='utf-8')
+            print('Written', path)
         IDS.write_text(json.dumps(dict(sorted(ids.items())), ensure_ascii=False, indent=0), encoding='utf-8')
-        print('Written', OUT, 'and', IDS)
+        print('Written', IDS)
     else:
         import random
         random.seed(1)

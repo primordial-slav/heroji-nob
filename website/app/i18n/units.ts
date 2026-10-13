@@ -606,6 +606,46 @@ const sl: Record<string, UnitText> = {
     description:
       'Borci iz spominskih knjig, vaških kronik in zbornikov narodnih herojev, katerih enote še ni na strani.',
   },
+  'ostali-borci-slovenija': {
+    name: 'Drugi borci – Slovenija',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Slovenije, katerih enote še ni na strani.',
+  },
+  'ostali-borci-hrvatska': {
+    name: 'Drugi borci – Hrvaška',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Hrvaške, katerih enote še ni na strani.',
+  },
+  'ostali-borci-bih': {
+    name: 'Drugi borci – Bosna in Hercegovina',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Bosne in Hercegovine, katerih enote še ni na strani.',
+  },
+  'ostali-borci-crna-gora': {
+    name: 'Drugi borci – Črna gora',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Črne gore, katerih enote še ni na strani.',
+  },
+  'ostali-borci-makedonija': {
+    name: 'Drugi borci – Makedonija',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Makedonije, katerih enote še ni na strani.',
+  },
+  'ostali-borci-srbija': {
+    name: 'Drugi borci – Srbija',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja ožje Srbije, katerih enote še ni na strani.',
+  },
+  'ostali-borci-kosovo': {
+    name: 'Drugi borci – Kosovo in Metohija',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Kosova in Metohije, katerih enote še ni na strani.',
+  },
+  'ostali-borci-vojvodina': {
+    name: 'Drugi borci – Vojvodina',
+    description:
+      'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Vojvodine, katerih enote še ni na strani.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1203,6 +1243,46 @@ const mk: Record<string, UnitText> = {
     name: 'Други борци',
     description:
       'Борци од споменици, хроники на селата и зборници на народни херои чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-slovenija': {
+    name: 'Други борци – Словенија',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Словенија, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-hrvatska': {
+    name: 'Други борци – Хрватска',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Хрватска, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-bih': {
+    name: 'Други борци – Босна и Херцеговина',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Босна и Херцеговина, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-crna-gora': {
+    name: 'Други борци – Црна Гора',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Црна Гора, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-makedonija': {
+    name: 'Други борци – Македонија',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Македонија, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-srbija': {
+    name: 'Други борци – Србија',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Србија без покраините, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-kosovo': {
+    name: 'Други борци – Косово и Метохија',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Косово и Метохија, чија единица сè уште не е на сајтот.',
+  },
+  'ostali-borci-vojvodina': {
+    name: 'Други борци – Војводина',
+    description:
+      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Војводина, чија единица сè уште не е на сајтот.',
   },
 }
 
@@ -1803,6 +1883,46 @@ const en: Record<string, UnitText> = {
     name: 'Other fighters',
     description:
       'Fighters from memorial books, village histories and the collections of People’s Heroes whose unit is not on the site yet.',
+  },
+  'ostali-borci-slovenija': {
+    name: 'Other fighters – Slovenia',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Slovenia, whose unit is not on the site yet.',
+  },
+  'ostali-borci-hrvatska': {
+    name: 'Other fighters – Croatia',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Croatia, whose unit is not on the site yet.',
+  },
+  'ostali-borci-bih': {
+    name: 'Other fighters – Bosnia and Herzegovina',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Bosnia and Herzegovina, whose unit is not on the site yet.',
+  },
+  'ostali-borci-crna-gora': {
+    name: 'Other fighters – Montenegro',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Montenegro, whose unit is not on the site yet.',
+  },
+  'ostali-borci-makedonija': {
+    name: 'Other fighters – Macedonia',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Macedonia, whose unit is not on the site yet.',
+  },
+  'ostali-borci-srbija': {
+    name: 'Other fighters – Serbia',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Serbia without its provinces, whose unit is not on the site yet.',
+  },
+  'ostali-borci-kosovo': {
+    name: 'Other fighters – Kosovo and Metohija',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Kosovo and Metohija, whose unit is not on the site yet.',
+  },
+  'ostali-borci-vojvodina': {
+    name: 'Other fighters – Vojvodina',
+    description:
+      'Fighters killed or dead in the war, from the 1964 census of war victims in Vojvodina, whose unit is not on the site yet.',
   },
 }
 

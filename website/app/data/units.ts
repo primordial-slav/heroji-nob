@@ -1257,8 +1257,96 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 15877,
+    soldierCount: 15814,
     dataFile: '/ostali-borci.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-slovenija',
+    name: 'Ostali borci – Slovenija',
+    nameEn: 'Other fighters – Slovenia',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Slovenije, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-slo.jpg',
+    soldierCount: 16034,
+    dataFile: '/ostali-borci-slovenija.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-hrvatska',
+    name: 'Ostali borci – Hrvatska',
+    nameEn: 'Other fighters – Croatia',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Hrvatske, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-hrv.jpg',
+    soldierCount: 52441,
+    dataFile: '/ostali-borci-hrvatska.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-bih',
+    name: 'Ostali borci – Bosna i Hercegovina',
+    nameEn: 'Other fighters – Bosnia and Herzegovina',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Bosne i Hercegovine, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-bih.jpg',
+    soldierCount: 33604,
+    dataFile: '/ostali-borci-bih.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-crna-gora',
+    name: 'Ostali borci – Crna Gora',
+    nameEn: 'Other fighters – Montenegro',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Crne Gore, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-crg.jpg',
+    soldierCount: 6310,
+    dataFile: '/ostali-borci-crna-gora.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-makedonija',
+    name: 'Ostali borci – Makedonija',
+    nameEn: 'Other fighters – Macedonia',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Makedonije, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-mak.jpg',
+    soldierCount: 4781,
+    dataFile: '/ostali-borci-makedonija.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-srbija',
+    name: 'Ostali borci – Srbija',
+    nameEn: 'Other fighters – Serbia',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
+    soldierCount: 33927,
+    dataFile: '/ostali-borci-srbija.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-kosovo',
+    name: 'Ostali borci – Kosovo i Metohija',
+    nameEn: 'Other fighters – Kosovo and Metohija',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Kosova i Metohije, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-kos.jpg',
+    soldierCount: 2714,
+    dataFile: '/ostali-borci-kosovo.json',
+    pdfFiles: []
+  },
+  {
+    // not a unit: the census's fallen partisans who have no record of a unit, a part per volume (build_ostali_borci.py)
+    id: 'ostali-borci-vojvodina',
+    name: 'Ostali borci – Vojvodina',
+    nameEn: 'Other fighters – Vojvodina',
+    description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Vojvodine, čija jedinica još nije na sajtu.',
+    image: '/images/pdf-thumbs/zrtve-rata-1964-voj.jpg',
+    soldierCount: 9994,
+    dataFile: '/ostali-borci-vojvodina.json',
     pdfFiles: []
   }
   // Add more units here as you get more data

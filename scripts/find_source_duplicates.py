@@ -43,7 +43,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from name_utils import BRIGADE_CONFIGS  # noqa: E402
+from name_utils import BRIGADE_CONFIGS, OSTALI_CODES  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CORRECTIONS = ROOT / 'corrections.json'
@@ -457,9 +457,10 @@ def unit_name(code: int) -> str:
 
 def main_across(args):
     units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
-    # not Ostali borci (122): its records come and go as their men find their units, so a link to one would dangle
+    # not Ostali borci (122, 131-138): its records come and go as their men find their units, so a link to one would
+    # dangle
     units = {code: json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
-             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts and code != 122}
+             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts and code not in OSTALI_CODES}
     found = across_units(units)
     grades = defaultdict(int)
     for p in found:
