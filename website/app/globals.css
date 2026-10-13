@@ -3148,6 +3148,14 @@ button.kin-row:not(:disabled):hover .kin-label {
     inset: 0;
     overflow: clip;
     pointer-events: none;
+    /* the faces come once the lists have loaded (each with its name), so they fade in */
+    animation: rails-in 0.8s ease-out both;
+  }
+}
+
+@keyframes rails-in {
+  from {
+    opacity: 0;
   }
 }
 

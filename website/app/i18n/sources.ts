@@ -308,6 +308,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Monografija vasi Beli Breg pri Aleksincu (2009): vaščani, udeleženci NOB, z letom rojstva, dnem vstopa v enoto in enoto, ter padli in umrli takoj po vojni (str. 113–114). Ujetnikov, interniranih in vojakov jugoslovanske vojske iz iste tabele nismo vnesli. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     'hronika-donja-gorevnica':
       'Monografija vasi Donja Gorevnica pri Čačku (1996): s seznama padlih borcev in žrtev iz vasi smo vnesli le borce (str. 233–238), ne pa žrtev terorja in vojakov jugoslovanske vojske. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'hak-14-donji-lapac':
+      'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 14): padli borci z območja okraja Donji Lapac 1941–1945 (str. 1041–1094), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
+    'hak-13-gracac':
+      'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 13): padli borci z območja okraja Gračac 1941–1945 (str. 917–965), po občinah, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
+    'hak-7-plascanska-dolina':
+      'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 7): padli borci iz Plaščanske doline in okolice 1941–1945 (str. 689–701), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -605,6 +611,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Монографија на селото Бели Брег кај Алексинац (2009): жителите учесници во НОБ, со година на раѓање, денот кога влегле во единицата и единицата, и загинатите и починатите веднаш по војната (стр. 113–114). Заробениците, интернираните и војниците на Југословенската војска од истата табела не се внесени. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     'hronika-donja-gorevnica':
       'Монографија на селото Доња Горевница кај Чачак (1996): од списокот на паднатите борци и жртви од селото се внесени само борците (стр. 233–238), а не и жртвите на теророт и војниците на Југословенската војска. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'hak-14-donji-lapac':
+      'Од зборникот на Историскиот архив во Карловац (кн. 14): паднатите борци од околијата Доњи Лапац 1941–1945 (стр. 1041–1094), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
+    'hak-13-gracac':
+      'Од зборникот на Историскиот архив во Карловац (кн. 13): паднатите борци од околијата Грачац 1941–1945 (стр. 917–965), по општини, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
+    'hak-7-plascanska-dolina':
+      'Од зборникот на Историскиот архив во Карловац (кн. 7): паднатите борци од Плашчанската долина и околината 1941–1945 (стр. 689–701), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -901,6 +913,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'A history of the village of Beli Breg near Aleksinac (2009): the villagers who fought in the war, with year of birth, the day they joined their unit and the unit, and those killed or who died soon after the war (pp. 113–114). The prisoners, internees and soldiers of the Yugoslav army in the same table were left out. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     'hronika-donja-gorevnica':
       'A history of the village of Donja Gorevnica near Čačak (1996): of its list of the village’s fallen fighters and victims, only the fighters were entered (pp. 233–238), not the victims of terror and the soldiers of the Yugoslav army. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'hak-14-donji-lapac':
+      'From the Karlovac Historical Archive’s collection (vol. 14): the fighters from the district of Donji Lapac who fell in 1941–1945 (pp. 1041–1094), by municipality and village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
+    'hak-13-gracac':
+      'From the Karlovac Historical Archive’s collection (vol. 13): the fighters from the district of Gračac who fell in 1941–1945 (pp. 917–965), by municipality, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
+    'hak-7-plascanska-dolina':
+      'From the Karlovac Historical Archive’s collection (vol. 7): the fighters from the Plaški valley and its surroundings who fell in 1941–1945 (pp. 689–701), by municipality and village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
   },
 }
 

@@ -1,6 +1,7 @@
 // Portraits from the war itself (uniforms, partisan caps, young faces in period prints), picked by eye from
 // portrait-index.json, plus every soldier there who died in the war. For displays of many faces at once;
-// the record popup shows any portrait a soldier has.
+// the record popup shows any portrait a soldier has. One id per person: a man printed in several units' books has
+// the same photo under each of his records, and only one of them goes here (PortraitRails also skips repeats).
 export const WARTIME_PORTRAITS: string[] = [
   '0001003638',
   '0002000133',
@@ -122,8 +123,6 @@ export const WARTIME_PORTRAITS: string[] = [
   '0005000413',
   '0005000736',
   '0005010943',
-  '0005011038',
-  '0007000828',
   '0007001505',
   '0007005334',
   '0007005598',
@@ -158,11 +157,9 @@ export const WARTIME_PORTRAITS: string[] = [
   '0016002006',
   '0026000296',
   '0034000603',
-  '0039100106',
   '0039100340',
   '0039100681',
   '0039101049',
-  '0039101051',
   '0040000013',
   '0040000461',
   '0040000702',
@@ -173,7 +170,6 @@ export const WARTIME_PORTRAITS: string[] = [
   '0040010891',
   '0040010906',
   '0040011070',
-  '0041000367',
   '0041000428',
   '0041000572',
   '0041000948',
@@ -182,7 +178,6 @@ export const WARTIME_PORTRAITS: string[] = [
   '0042000201',
   '0043000515',
   '0043001188',
-  '0046001083',
   '0048000051',
   '0048000432',
   '0048000979',
@@ -191,7 +186,6 @@ export const WARTIME_PORTRAITS: string[] = [
   '0053000936',
   '0053001693',
   '0054000995',
-  '0054001717',
   '0054003477',
   '0055000490',
   '0058000195',
@@ -227,7 +221,6 @@ export const WARTIME_PORTRAITS: string[] = [
   '0093000199',
   '0101000096',
   '0101000135',
-  '0101000260',
   '0104000052',
   '0104000565',
   '0104000646',
