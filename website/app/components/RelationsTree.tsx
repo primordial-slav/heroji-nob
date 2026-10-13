@@ -48,6 +48,7 @@ export type KinPart = 'comrades' | 'neighbours'
 
 /** What the record's facts link to: the soldier's own sub-unit, those who fell the same day, his village */
 export interface KinCounts {
+  of?: string                  // the soldier they are counted for
   unit?: { size: number }      // the deepest sub-unit he is listed in, himself included
   sameDay?: number             // others of the unit who fell the same day
   place?: { others: number }   // others of all units born in his village
@@ -174,11 +175,12 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
   // What the record's facts link to, for the counts they show
   const unitSize = deepest?.size ?? 0
   const dayOthers = dayGroup ? dayGroup.size - 1 : 0
+  const of = soldier.soldier_id
   useEffect(() => {
     if (!onCounts) return
-    if (part === 'comrades') onCounts(part, { unit: unitSize ? { size: unitSize } : undefined, sameDay: dayOthers || undefined })
-    else onCounts(part, { place: showPlaceTree && others ? { others } : undefined })
-  }, [onCounts, part, unitSize, dayOthers, showPlaceTree, others])
+    if (part === 'comrades') onCounts(part, { of, unit: unitSize ? { size: unitSize } : undefined, sameDay: dayOthers || undefined })
+    else onCounts(part, { of, place: showPlaceTree && others ? { others } : undefined })
+  }, [onCounts, part, of, unitSize, dayOthers, showPlaceTree, others])
 
   // A fact asked this fold to open on a group: open it, scroll to it and flash its row
   const placeKey = placeGroups.length === 1 ? 'place' : null

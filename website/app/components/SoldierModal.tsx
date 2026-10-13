@@ -113,7 +113,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     setShownPage(0)
     setFlash(0)
     setKinRequest(null)
-    setCounts({ comrades: {}, neighbours: {} })
+    // the counts are not cleared here: on a first opening the folds may have counted him before this runs
   }, [soldier.soldier_id])
 
   // The entries before and after this one in the unit's list, which is in the order of the books
@@ -178,7 +178,10 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const woman = isWoman(soldier)
   const born = soldier.life_events?.find((e) => e.k === 'born')
   const bornDay = born && /^\d{4}-\d\d-\d\d$/.test(born.d) ? born.d.split('-').map(Number) : null
-  const { comrades, neighbours } = counts
+  // only the counts made for this soldier; the last one's until the folds have counted his
+  const counted = (c: KinCounts): KinCounts => (c.of === soldier.soldier_id ? c : {})
+  const comrades = counted(counts.comrades)
+  const neighbours = counted(counts.neighbours)
   const facts: Fact[] = []
   if (soldier.birth_year || soldier.birth_place) {
     facts.push({
