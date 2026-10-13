@@ -505,8 +505,9 @@ def entries(soldiers: list[dict]):
     (other_sources, see apply_corrections.apply_merge), which have the same position and box fields."""
     for s in soldiers:
         yield s
-        # an entry from another unit's book (unit_file) is that unit's record, boxed in its own file
-        yield from (o for o in s.get('other_sources', ()) if not o.get('unit_file'))
+        # an entry from another unit's book (unit_file) is that unit's record, boxed in its own file; one from a book
+        # across units (ref_book) is boxed with the book's entries (data-extraction/znaci/<book>-entries.json)
+        yield from (o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book'))
 
 
 def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:

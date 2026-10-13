@@ -1385,5 +1385,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/pali-za-lepsa-svitanja.jpg',
     brigadeName: '',
     description: 'Majke narodnih heroja pričaju o svojim sinovima i kćerima (1967); nad svakom pričom je kratka biografija heroja: rođenje, zanimanje, KPJ, NOB, smrt i dan kad je proglašen. Knjiga ne pripada jednoj jedinici: biografija je dodata zapisu svakog heroja koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'ofanziva-1942-poginuli',
+    title: 'Ofanziva proleterskih brigada u leto 1942.',
+    author: 'Mišo Leković',
+    pdfPath: '/pdfs/ofanziva-1942-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/ofanziva-1942-poginuli.jpg',
+    brigadeName: '',
+    description: 'Spisak boraca 1, 2, 3. i 4. proleterske brigade poginulih i nestalih u pohodu u zapadnu Bosnu, od 24. juna do 30. septembra 1942 (str. 698–711), po brigadama i bataljonima, s rođenjem, zanimanjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   }
 ]

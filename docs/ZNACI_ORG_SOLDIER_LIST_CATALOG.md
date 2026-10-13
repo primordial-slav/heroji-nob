@@ -192,7 +192,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 
 | Book | Lists | Link |
 |---|---|---|
-| Mišo Leković, *Ofanziva proleterskih brigada u leto 1942.* | fallen and missing 24. VI–30. IX 1942, by brigade and battalion ([183_15.pdf](https://znaci.org/00001/183_15.pdf), 14 pp.; downloaded as `ofanziva-1942-poginuli.pdf`) | [00001/183](https://znaci.org/00001/183.htm) |
+| Mišo Leković, *Ofanziva proleterskih brigada u leto 1942.* | fallen and missing 24. VI–30. IX 1942, by brigade and battalion ([183_15.pdf](https://znaci.org/00001/183_15.pdf), 14 pp.; on the site as `ofanziva-1942-poginuli.pdf`, a book across units: **done**, `parse_ofanziva_1942.py`) | [00001/183](https://znaci.org/00001/183.htm) |
 | Dragoljub Tmušić, *Sremski front* | fallen, by unit | [00003/724](https://znaci.org/00003/724.htm) |
 | Milorad Gončin, *U rovovima Srema* | fallen ([211_1.pdf](https://znaci.org/00001/211_1.pdf), 39 pp.) | [00001/211](https://znaci.org/00001/211.htm) |
 | Nikola Božić, *Batinska bitka* | 51. divizija fallen (p. 469, 22 pp.) and missing (p. 491, 11 pp.); Soviet fallen (p. 502, 59 pp.) | [00002/427](https://znaci.org/00002/427.htm) |

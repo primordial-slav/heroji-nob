@@ -278,6 +278,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Spominska knjiga Zveze borcev Trebinje (1974): borci z območja občine, ki so padli v vojni (str. 13–96), in borci iz vse Jugoslavije, padli pri Trebinju (str. 159–174), z rojstvom, enotami in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznama žrtev fašističnega terorja iz iste knjige nismo vnesli. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     'pali-za-lepsa-svitanja':
       'Pripovedujejo matere narodnih herojev o svojih sinovih in hčerah (1967); nad vsako zgodbo je kratek življenjepis heroja: rojstvo, poklic, KPJ, NOB, smrt in dan razglasitve. Knjiga ne pripada eni enoti: življenjepis je dodan zapisu vsakega heroja, ki je na strani in za katerega je zanesljivo, da je to on. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'ofanziva-1942-poginuli':
+      'Seznam borcev 1., 2., 3. in 4. proleterske brigade, ki so padli ali izginili na pohodu v zahodno Bosno od 24. junija do 30. septembra 1942 (str. 698–711), po brigadah in bataljonih, z rojstvom, poklicem in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -545,6 +547,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Споменица на Сојузот на борците од Требиње (1974): борците од општината што паднале во војната (стр. 13–96) и борците од цела Југославија што загинале кај Требиње (стр. 159–174), со раѓање, единици и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списокот на жртвите на фашистичкиот терор од истата книга не е внесен. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     'pali-za-lepsa-svitanja':
       'Мајките на народните херои раскажуваат за своите синови и ќерки (1967); над секоја приказна е кратка биографија на херојот: раѓање, занимање, КПЈ, НОБ, смрт и денот на прогласувањето. Книгата не припаѓа на една единица: биографијата е додадена на записот на секој херој што е на сајтот и за кого сигурно се знае дека е тоа тој. Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'ofanziva-1942-poginuli':
+      'Список на борците од 1., 2., 3. и 4. пролетерска бригада што загинале или исчезнале во походот кон западна Босна, од 24 јуни до 30 септември 1942 (стр. 698–711), по бригади и баталјони, со раѓање, занимање и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -811,6 +815,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The memorial book of the Trebinje veterans’ association (1974): the fighters of the municipality who fell in the war (pp. 13–96) and fighters from all over Yugoslavia who were killed near Trebinje (pp. 159–174), with birth, units and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s list of civilian victims of fascist terror was left out. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     'pali-za-lepsa-svitanja':
       'Mothers of People’s Heroes tell of their sons and daughters (1967); above each story stands a short life of the hero: birth, trade, the Party, the war, death and the day proclaimed. The book belongs to no single unit: a life is added to the record of each hero on the site where the match is certain. The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'ofanziva-1942-poginuli':
+      'The fighters of the 1st, 2nd, 3rd and 4th Proletarian Brigades killed or missing on the march into western Bosnia, 24 June to 30 September 1942 (pp. 698–711), by brigade and battalion, with birth, trade and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
   },
 }
 
