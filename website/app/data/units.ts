@@ -1221,6 +1221,16 @@ export const units: Unit[] = [
     pdfFiles: []
   },
   {
+    id: '1-krajiska-brigada',
+    name: '1. krajiška proleterska udarna brigada',
+    nameEn: '1st Krajina Proletarian Assault Brigade',
+    description: 'Formirana 21. maja 1942. u Lamoviti kod Prijedora. Poginuli, umrli i nestali borci brigade.',
+    image: '/images/1-krajiska-brigada.jpg',
+    soldierCount: 2127,
+    dataFile: '/1-krajiska-soldiers.json',
+    pdfFiles: ['/pdfs/1-krajiska.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

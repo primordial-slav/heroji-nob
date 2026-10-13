@@ -1126,6 +1126,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'title',
     },
+    123: {
+        'name': '1. Krajiška proleterska',
+        'json_file': '1-krajiska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ADAMOVIĆ Jove BOŽO, rođen 1908. u Vranovini, Bosanski Petrovac, Srbin, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

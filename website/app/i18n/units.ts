@@ -589,6 +589,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '1-krajiska-brigada': {
+    name: '1. krajiška proletarska udarna brigada',
+    description: 'Ustanovljena 21. maja 1942 v Lamoviti pri Prijedoru. Padli, umrli in pogrešani borci brigade.',
+  },
   'ostali-borci': {
     name: 'Drugi borci',
     description:
@@ -1174,6 +1178,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '1-krajiska-brigada': {
+    name: '1-ва краишка пролетерска ударна бригада',
+    description: 'Формирана на 21 мај 1942 во Ламовита кај Приједор. Загинатите, умрените и исчезнатите борци на бригадата.',
   },
   'ostali-borci': {
     name: 'Други борци',
@@ -1762,6 +1770,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '1-krajiska-brigada': {
+    name: '1st Krajina Proletarian Assault Brigade',
+    description: 'Formed on 21 May 1942 at Lamovita near Prijedor. The brigade’s fallen, dead and missing fighters.',
   },
   'ostali-borci': {
     name: 'Other fighters',
