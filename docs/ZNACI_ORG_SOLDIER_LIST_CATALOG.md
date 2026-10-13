@@ -212,7 +212,7 @@ The Karlovac archive's kotar volumes each print four lists, village by village u
 | Volume | Pali borci | Žrtve | Tifus | Spomenica | Name index |
 |---|---|---|---|---|---|
 | knj. 20 Gospić i Perušić ([642](https://znaci.org/00003/642.htm); lists also as chapter [642_2.pdf](https://znaci.org/00003/642_2.pdf), pp. 1, 61, 203, 209; **done**: fallen and spomenica on the site as `hak-20-gospic-perusic.pdf`, a book across units) | 642_2 p. 1 | p. 1043 | 642_2 p. 203 | 642_2 p. 209 | p. 1211 (book) |
-| knj. 10 Korenica i Udbina ([489](https://znaci.org/00003/489.htm)) | p. 963 | p. 969 | p. 982 | | p. 1150 |
+| knj. 10 Korenica i Udbina ([489](https://znaci.org/00003/489.htm); **done**: fallen on the site as `hak-10-korenica-udbina.pdf`, whole-book PDF pp. 986-1035) | p. 963 | p. 969 | p. 982 | | p. 1150 |
 | knj. 14 Donji Lapac ([458](https://znaci.org/00003/458.htm)) | p. 1039 | p. 1091 | p. 1136 | | p. 1194 |
 | knj. 13 Gračac ([638](https://znaci.org/00003/638.htm)) | p. 914 | p. 888 | p. 1012 | | p. 1030 |
 | knj. 7 Plaščanska dolina ([487](https://znaci.org/00003/487.htm)) | p. 720 | p. 733 | p. 758 | | |

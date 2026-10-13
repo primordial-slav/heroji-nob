@@ -1404,6 +1404,15 @@ export const sources: PdfSource[] = [
     brigadeName: '',
     description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 20): pali borci s područja kotara Gospić i kotara Perušić 1941–1945 (str. 986–1045) i nosioci Partizanske spomenice 1941 (str. 1194–1209), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
   },
+  {
+    id: 'hak-10-korenica-udbina',
+    title: 'Kotar Korenica i kotar Udbina u NOR-u i socijalističkoj izgradnji',
+    author: 'Gojko Vezmar',
+    pdfPath: '/pdfs/hak-10-korenica-udbina.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-10-korenica-udbina.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 10): pali borci s područja kotara Korenica i kotara Udbina 1941–1945 (str. 990–1039), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
   // Village chronicles of the Poreklo library ("Hronike sela" and others): the fighters' lists, a book across units each
   {
     id: 'hronika-prigrevica',
