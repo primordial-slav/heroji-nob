@@ -10,7 +10,7 @@ import { photoPosition } from '@/app/data/photoFocus'
 import {
   RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordDetails, recordPath, sourceTitle,
 } from '@/app/lib/records'
-import { fullRecord, loadUnitList } from '@/app/lib/searchIndex'
+import { fullRecord, loadKinList } from '@/app/lib/searchIndex'
 import { portraitFor } from '@/app/data/portraits'
 import SoldierPortrait from '@/app/components/SoldierPortrait'
 import { SoldierName } from '@/app/components/SoldierResults'
@@ -44,8 +44,8 @@ export default function MemorialCard() {
       setState({ status: 'missing' })
       return
     }
-    // The unit's short list says where the record is; only that slice of full records loads
-    loadUnitList(unit)
+    // The unit's kin list says where the record is; only that slice of full records loads
+    loadKinList(unit)
       .then((list) => {
         const found = findRecord(list, id)
         return found ? fullRecord(found) : undefined
