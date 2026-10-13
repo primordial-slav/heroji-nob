@@ -66,7 +66,9 @@ BOX_FIELDS = ('pdf_x_end', 'pdf_y_end', 'pdf_x_left', 'pdf_rects')
 INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjanska.pdf', '13-vojvodjanska.pdf',
                   '7-srpska.pdf',   # these three: their parsers' boxes (layouts this module misreads)
                   '11-krajiska-zene.pdf',   # 11. krajiška's women, names run on
-                  '3-banijska.pdf'}   # 3. banijska: names only, three columns that stand anywhere
+                  '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
+                  # books across units whose names run on (Gončin's and Tmušić's Srem): their records in unit 122
+                  'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf'}
 
 
 # ─────────────────────────────────────────────
@@ -80,6 +82,7 @@ TWO_COLUMN = {
     'hak-14-donji-lapac.pdf',               # Donji Lapac (Karlovac knj. 14): the fallen
     'hak-13-gracac.pdf',                    # Gračac (Karlovac knj. 13): the fallen
     'hak-7-plascanska-dolina.pdf',          # Plaščanska dolina (Karlovac knj. 7): the fallen
+    'bitka-kod-oborova-poginuli.pdf',       # Bitka kod Oborova: the names in two columns
     '13-proleterska-spisak.pdf',
     '7-krajiska-spisak.pdf',
     '11-dalmatinska.pdf',

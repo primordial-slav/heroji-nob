@@ -318,6 +318,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev, padlih v bojih za osvoboditev Kruševca septembra in oktobra 1944, po enotah: 4. proleterska črnogorska, 3., 6. in 17. srbska brigada ter Poveljstvo kruševačkega vojnega področja (str. 273–283), z rojstvom in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'u-rovovima-srema-poginuli':
       'Seznam borcev, padlih na sremski fronti (str. 230–267), po brigadah in krajih, kjer so padli, samo imena, včasih z dolžnostjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on, po imenu, brigadi in kraju smrti.',
+    'sremski-front-poginuli':
+      'Seznami borcev, padlih na sremski fronti od oktobra 1944 do aprila 1945, po divizijah in brigadah, vsak za kratko zgodovino enote: samo imena, včasih z očetovo začetnico. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on, po imenu, brigadi in času smrti. Seznamov padlih rdečearmejcev s konca knjige nismo vnesli.',
+    'bitka-kod-oborova-poginuli':
+      'Imena 128 borcev 2. moslavaške brigade in Posavskega partizanskega odreda, padlih pri Oborovem 29. marca 1944 (str. 158–160). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -625,6 +629,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците загинати во борбите за ослободувањето на Крушевац во септември и октомври 1944, по единици: 4. пролетерска црногорска, 3., 6. и 17. српска бригада и Командата на крушевачкото воено подрачје (стр. 273–283), со раѓање и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'u-rovovima-srema-poginuli':
       'Список на борците загинати на Сремскиот фронт (стр. 230–267), по бригади и по местото каде што паднале, само имиња, понекогаш со должноста. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој, по име, бригада и место на загинувањето.',
+    'sremski-front-poginuli':
+      'Списоци на борците загинати на Сремскиот фронт од октомври 1944 до април 1945, по дивизии и бригади, секој по кратката историја на единицата: само имиња, понекогаш со иницијалот на таткото. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој, по име, бригада и време на загинувањето. Списоците на паднатите црвеноармејци од крајот на книгата не се внесени.',
+    'bitka-kod-oborova-poginuli':
+      'Имињата на 128 борци од 2. мославачка бригада и Посавскиот партизански одред загинати кај Оборово на 29 март 1944 (стр. 158–160). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -931,6 +939,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters killed in the battles for the liberation of Kruševac in September and October 1944, by unit: the 4th Montenegrin Proletarian, the 3rd, 6th and 17th Serbian Brigades and the Kruševac military area command (pp. 273–283), with birth and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'u-rovovima-srema-poginuli':
       'The fighters killed on the Srem front (pp. 230–267), by brigade and by the place where they fell, names only, sometimes with a duty. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain, by name, brigade and place of death.',
+    'sremski-front-poginuli':
+      'The fighters killed on the Srem front from October 1944 to April 1945, by division and brigade, each list after a short history of the unit: names only, sometimes with the father’s initial. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain, by name, brigade and time of death. The lists of fallen Red Army soldiers at the end of the book were left out.',
+    'bitka-kod-oborova-poginuli':
+      'The names of the 128 fighters of the 2nd Moslavina Brigade and the Posavina Partisan Detachment killed at Oborovo on 29 March 1944 (pp. 158–160). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
   },
 }
 
