@@ -1114,11 +1114,11 @@ export const units: Unit[] = [
     id: '51-divizija',
     name: '51. vojvođanska divizija',
     nameEn: '51st Vojvodina Division',
-    description: 'Formirana 31. oktobra 1944. u Novom Sadu, od 7, 8. i 12. vojvođanske brigade. Borci divizije poginuli i nestali u Batinskoj bici, novembra 1944.',
+    description: 'Formirana 31. oktobra 1944. u Novom Sadu, od 7, 8. i 12. vojvođanske brigade. Borci divizije poginuli od formiranja do kraja rata, maja 1945, i nestali u Batinskoj bici.',
     image: '/images/51-divizija.jpg',
-    soldierCount: 648,
+    soldierCount: 2108,
     dataFile: '/51-divizija-soldiers.json',
-    pdfFiles: ['/pdfs/51-divizija.pdf']
+    pdfFiles: ['/pdfs/51-divizija.pdf', '/pdfs/51-divizija-savic.pdf']
   },
   {
     id: 'vrhovni-stab',

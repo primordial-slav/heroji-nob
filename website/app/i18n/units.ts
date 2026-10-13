@@ -537,7 +537,7 @@ const sl: Record<string, UnitText> = {
   '51-divizija': {
     name: '51. vojvodinska divizija',
     description:
-      'Ustanovljena 31. oktobra 1944 v Novem Sadu iz 7., 8. in 12. vojvodinske brigade. Borci divizije, padli in pogrešani v bitki pri Batini, novembra 1944.',
+      'Ustanovljena 31. oktobra 1944 v Novem Sadu iz 7., 8. in 12. vojvodinske brigade. Borci divizije, padli od ustanovitve do konca vojne, maja 1945, in pogrešani v bitki pri Batini.',
   },
   'vrhovni-stab': {
     name: 'Vrhovni štab NOV in POJ',
@@ -1127,7 +1127,7 @@ const mk: Record<string, UnitText> = {
   '51-divizija': {
     name: '51-ва војводинска дивизија',
     description:
-      'Формирана на 31 октомври 1944 во Нови Сад, од 7., 8. и 12. војводинска бригада. Борците на дивизијата загинати и исчезнати во Батинската битка, ноември 1944.',
+      'Формирана на 31 октомври 1944 во Нови Сад, од 7., 8. и 12. војводинска бригада. Борците на дивизијата загинати од формирањето до крајот на војната, мај 1945, и исчезнати во Батинската битка.',
   },
   'vrhovni-stab': {
     name: 'Врховен штаб на НОВ и ПОЈ',
@@ -1719,7 +1719,7 @@ const en: Record<string, UnitText> = {
   '51-divizija': {
     name: '51st Vojvodina Division',
     description:
-      'Formed on 31 October 1944 in Novi Sad, from the 7th, 8th and 12th Vojvodina Brigades. The division’s fallen and missing in the Battle of Batina, November 1944.',
+      'Formed on 31 October 1944 in Novi Sad, from the 7th, 8th and 12th Vojvodina Brigades. The division’s fallen from its formation to the end of the war, May 1945, and its missing in the Battle of Batina.',
   },
   'vrhovni-stab': {
     name: 'Supreme Headquarters of the NOV and POJ',

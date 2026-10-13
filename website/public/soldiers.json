@@ -2442,8 +2442,46 @@
         "pdf_x_end": 393.2,
         "pdf_y_end": 349.4,
         "ref_book": "hak-20-gospic-perusic"
+      },
+      {
+        "soldier_id": "0001000227",
+        "name": "Antončić Mate Milan",
+        "additional_info": "zvani Velebit; 1918, Gospić, Hrvatska, Hrvat, podoficir BJV, član KPJ od 1942, u NOB od 1941, u brigadi od decembra 1941, IV bataljon, komandant brigade, narodni heroj",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 26,
+        "pdf_x": 67.2,
+        "pdf_y": 214.2,
+        "pdf_x_end": 374.1,
+        "pdf_y_end": 246.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100020",
+        "name": "Antončić Mate Milan",
+        "additional_info": "zvani Velebit;; zamenik komandanta 4. bataljona, rođen 1918, Gospić, art.podoficir Jugoslovenske vojske, Hrvat, u NOB od 1941, član KPJ od avgusta 1942, krajem rata komandant art. brigade. Odlikovan Ordenom narodnog heroja.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 199.2,
+        "pdf_y": 200.2,
+        "pdf_x_end": 369.4,
+        "pdf_y_end": 274.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200022",
+        "name": "Antončić Milan",
+        "additional_info": "zvani Velebit; komandir čete, rođen 1918. u Gospiću, Lika, SRH, podoficir bivše jugoslovenske vojske. Narodni heroj.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 31,
+        "pdf_x": 275.4,
+        "pdf_y": 721.7,
+        "pdf_x_end": 583.6,
+        "pdf_y_end": 742.5,
+        "pdf_x_left": 250.9,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "soldier_id": "0002000122",
@@ -5843,7 +5881,22 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "pdf_x_end": 463.4,
     "birth_place": "Mekinjar, T. Korenica",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0003010192",
+        "name": "Barać Luke Dane",
+        "additional_info": "rođen 1920. u Mekinjaru - T. Korenica. U NOB-1941. Borac 3. bataljona i komesar diviziona u artiljerijskoj brigadi 6. divizije. Živi u Apatinu.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 207.0,
+        "pdf_y": 376.2,
+        "pdf_x_end": 368.2,
+        "pdf_y_end": 423.1,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002000285",
@@ -45707,7 +45760,35 @@
     "pdf_x_end": 458.4,
     "birth_place": "Ploča, Gračac",
     "death_type": "poginuo",
-    "death_date": "27. 11. 1942"
+    "death_date": "27. 11. 1942",
+    "rank": "borac",
+    "death_place": "Dvor na Uni",
+    "other_sources": [
+      {
+        "soldier_id": "0003000378",
+        "name": "Gajić Mile",
+        "additional_info": "rođen 1920. u s. Ploča-Gospić. Borac. Poginuo na Dvoru na Uni 1942. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 15,
+        "pdf_x": 123.7,
+        "pdf_y": 351.5,
+        "pdf_x_end": 482.5,
+        "pdf_y_end": 368.9,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003020528",
+        "name": "Gajić Mile",
+        "additional_info": "rođen u s. Ploča - Gospić. Borac. Poginuo na Dvoru na Uni 1942. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 206.6,
+        "pdf_y": 17.6,
+        "pdf_x_end": 367.8,
+        "pdf_y_end": 45.8,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002002188",
@@ -84155,7 +84236,22 @@
     "birth_place": "Krš, Perušić",
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0080000481",
+        "name": "Lemić Mila Đuro",
+        "additional_info": "majka Milica; zamenik komandanta 3. bataljona, rođen 1919. u Kosinu, Lika, radnik, član KPJ, od 1943, nosilac Partizanske spomenice od 1941, u brigadi od 3. 10. 1944. do 13. 1. 1945,potom u 21. diviziji. Živi u Beogradu.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 59.8,
+        "pdf_y": 268.6,
+        "pdf_x_end": 395.3,
+        "pdf_y_end": 301.8,
+        "pdf_x_left": 38.4,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002004046",
@@ -98100,7 +98196,21 @@
     "pdf_x_end": 461.2,
     "birth_place": "Doljani, D. Lapac",
     "occupation": "trgovački pomoćnik",
-    "rank": "kapetan, načelnik štaba brigade"
+    "rank": "kapetan, načelnik štaba brigade",
+    "other_sources": [
+      {
+        "soldier_id": "0003011952",
+        "name": "Medić Petra Mirko",
+        "additional_info": "zvani Dukić; rođen 1914. u Doljanima - D. Lapac. U NOB-1941. Komandant bataljona i načelnik štaba brigade. Pukovnik u penziji - živi u N. Beogradu.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 91,
+        "pdf_x": 30.9,
+        "pdf_y": 64.3,
+        "pdf_x_end": 191.7,
+        "pdf_y_end": 113.2,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002004722",
@@ -126330,7 +126440,27 @@
     "death_type": "nestao",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 460.4,
-    "pdf_y_end": 596.1
+    "pdf_y_end": 596.1,
+    "birth_place": "Krš, Gospić",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "kurir",
+    "death_date": "13. juna 1943",
+    "death_place": "Sutjeska, Tjentište",
+    "other_sources": [
+      {
+        "soldier_id": "0117000430",
+        "name": "Paripović Dane Petar",
+        "additional_info": "kurir Centralne bolnice, rođen 1919, Krš, Gospić, zemljoradnik, Srbin, u NOB od 1942, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-centralna-bolnica.pdf",
+        "pdf_page": 27,
+        "pdf_x": 52.0,
+        "pdf_y": 552.9,
+        "pdf_x_end": 223.4,
+        "pdf_y_end": 573.6,
+        "unit_file": "centralna-bolnica-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002006089",
@@ -149115,7 +149245,38 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "25. 7. 1943",
-    "unit_detail": "1. proleterski bataljon"
+    "unit_detail": "1. proleterski bataljon",
+    "death_place": "kod Radatovića u Žumberku",
+    "other_sources": [
+      {
+        "soldier_id": "0006005744",
+        "name": "Radošević Ilija",
+        "additional_info": "1920. Počitelj, Gospić. Poginuo 25. VII1943. kod Radatovića u Žumberku i tu sahranjen.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 79,
+        "pdf_x": 119.2,
+        "pdf_y": 447.1,
+        "pdf_x_end": 290.9,
+        "pdf_y_end": 471.2,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0118000702",
+        "name": "Radošević Ilija",
+        "additional_info": "iz Počitelja, Medak, Gospić, poginuo 28. IV 1943. u Brušanima. Sahranjen u Počitelju.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=401",
+        "source_page": 396,
+        "unit_file": "3-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0120000310",
+        "name": "Radošević Ilija",
+        "additional_info": "1920, Počitelj, Gospić. Poginuo 25. 7. 1943. kod Radatovića u Žumberku.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=296",
+        "source_page": 272,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002007165",
@@ -154170,7 +154331,24 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Barajevo",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 423.5
+    "pdf_x_end": 423.5,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0001010474",
+        "name": "Ranković Slobodan",
+        "additional_info": "1927, Barajevo, Beograd, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, III bataljon, borac",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 132,
+        "pdf_x": 60.7,
+        "pdf_y": 40.6,
+        "pdf_x_end": 367.7,
+        "pdf_y_end": 70.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002007412",
