@@ -5,8 +5,8 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { normalizeForSearch } from './diacritics'
 import { createSoldierIndex, mergeHits, searchFields, searchSoldiers, type SearchHits, type SoldierIndex } from './soldierSearch'
-import { decodeRow, eachListedOnce, encodeRow } from './searchIndex'
-import { applyFilters, narrows, type SearchFilters } from './searchFilters'
+import { eachListedOnce, encodeRow } from './searchIndex'
+import { FATES, birthYear, entryWords, narrows, placeNeedle, type SearchFilters } from './searchFilters'
 import type { Soldier } from './types'
 
 // Server only: the search that app/api/search/route.ts answers, over every unit's soldiers at once, so a page asks
@@ -31,6 +31,22 @@ export interface SearchData {
   rowAt: Int32Array
   /** Each unit's soldiers are unitStart[u] .. unitStart[u + 1] */
   unitStart: Int32Array
+  /**
+   * What the place filter looks in for each soldier (entryWords): filterText()[filterAt[i] .. filterAt[i + 1]]; read
+   * from its file the first time a place is asked for, not when the function starts
+   */
+  filterText: () => Buffer
+  filterAt: Int32Array
+  /** What the year and fate filters read: the birth year as a number (NaN if none), how he died (deathTypes) */
+  born: Float64Array
+  deathType: Uint16Array
+  deathTypes: string[]
+}
+
+/** `make`'s value, made the first time it is asked for */
+function once<T>(make: () => T): () => T {
+  let value: T | undefined
+  return () => (value ??= make())
 }
 
 /** Every unit's soldiers, in the order of `units` and of each unit's data file */
@@ -56,18 +72,30 @@ export function buildSearchData(read: (unit: Unit) => Soldier[]): SearchData {
   const texts = all.map((soldier) => Buffer.from(JSON.stringify(encodeRow(soldier))))
   const rowAt = new Int32Array(all.length + 1)
   texts.forEach((text, i) => { rowAt[i + 1] = rowAt[i] + text.length })
+  const filterTexts = all.map((soldier) => Buffer.from(entryWords(soldier)))
+  const filterAt = new Int32Array(all.length + 1)
+  filterTexts.forEach((text, i) => { filterAt[i + 1] = filterAt[i] + text.length })
+  const born = Float64Array.from(all, (soldier) => parseInt(soldier.birth_year ?? '', 10))
+  const deathTypes: string[] = []
+  const deathType = Uint16Array.from(all, (soldier) => {
+    const type = soldier.death_type ?? ''
+    const k = deathTypes.indexOf(type)
+    return k >= 0 ? k : deathTypes.push(type) - 1
+  })
   return {
     index: createSoldierIndex(all.map(searchFields)),
     unitAt, position, away, also, rows: Buffer.concat(texts), rowAt, unitStart,
+    filterText: once(() => Buffer.concat(filterTexts)), filterAt, born, deathType, deathTypes,
   }
 }
 
 // The files: index.bin.gz holds a JSON header (the words, the units' words, `also`, and where each array is) and
-// then the arrays; rows.bin.gz the rows
+// then the arrays; rows.bin.gz the rows; filters.bin.gz what the place filter looks in
 const ARRAYS = {
   key: Float64Array, key2: Float64Array, nameAt: Int32Array, names: Int32Array, entryAt: Int32Array,
   entries: Int32Array, nameWords: Int32Array, entryWords: Int32Array, unitOf: Int32Array,
   unitAt: Uint16Array, position: Int32Array, away: Uint8Array, rowAt: Int32Array, unitStart: Int32Array,
+  filterAt: Int32Array, born: Float64Array, deathType: Uint16Array,
 } as const
 type ArrayName = keyof typeof ARRAYS
 
@@ -76,6 +104,7 @@ interface Header {
   words: string[]
   unitWords: string[][]
   also: [number, string[]][]
+  deathTypes: string[]
   arrays: Record<ArrayName, [offset: number, length: number]>
 }
 
@@ -85,9 +114,11 @@ export function writeSearchData(dir: string, data: SearchData) {
     key: index.key, key2: index.key2, nameAt: index.nameAt, names: index.names, entryAt: index.entryAt,
     entries: index.entries, nameWords: index.nameWords, entryWords: index.entryWords, unitOf: index.unitOf,
     unitAt: data.unitAt, position: data.position, away: data.away, rowAt: data.rowAt, unitStart: data.unitStart,
+    filterAt: data.filterAt, born: data.born, deathType: data.deathType,
   }
   const header: Header = {
-    size: index.size, words: index.words, unitWords: index.unitWords, also: [...data.also], arrays: {} as Header['arrays'],
+    size: index.size, words: index.words, unitWords: index.unitWords, also: [...data.also], deathTypes: data.deathTypes,
+    arrays: {} as Header['arrays'],
   }
   // Each array starts at a multiple of 8 bytes, so it can be read where it lies
   const chunks: Buffer[] = []
@@ -107,6 +138,7 @@ export function writeSearchData(dir: string, data: SearchData) {
   fs.mkdirSync(dir, { recursive: true })
   fs.writeFileSync(path.join(dir, 'index.bin.gz'), zlib.gzipSync(Buffer.concat([headLength, head, headPadding, ...chunks])))
   fs.writeFileSync(path.join(dir, 'rows.bin.gz'), zlib.gzipSync(data.rows))
+  fs.writeFileSync(path.join(dir, 'filters.bin.gz'), zlib.gzipSync(data.filterText()))
 }
 
 export function readSearchData(dir: string): SearchData {
@@ -134,23 +166,52 @@ export function readSearchData(dir: string): SearchData {
   return {
     index, unitAt: get('unitAt'), position: get('position'), away: get('away'), also: new Map(header.also),
     rows: zlib.gunzipSync(fs.readFileSync(path.join(dir, 'rows.bin.gz'))), rowAt: get('rowAt'), unitStart: get('unitStart'),
+    filterText: once(() => zlib.gunzipSync(fs.readFileSync(path.join(dir, 'filters.bin.gz')))), filterAt: get('filterAt'),
+    born: get('born'), deathType: get('deathType'), deathTypes: header.deathTypes,
   }
 }
 
-// Soldiers read from their rows, for the filters; kept, as the same soldiers are asked for search after search
-const decoded = new WeakMap<SearchData, (Soldier | undefined)[]>()
-
-function soldierAt(data: SearchData, i: number): Soldier {
-  let cache = decoded.get(data)
-  if (!cache) decoded.set(data, (cache = []))
-  let soldier = cache[i]
-  if (!soldier) {
-    soldier = decodeRow(JSON.parse(data.rows.toString('utf8', data.rowAt[i], data.rowAt[i + 1])), units[data.unitAt[i]].name)
-    const also = data.also.get(i)
-    if (also) soldier.also_units = also
-    cache[i] = soldier
+/**
+ * Whom the filters keep, as applyFilters (searchFilters.ts) decides, from what the data keeps of each soldier, so no
+ * soldier's row is read; null if they keep everyone
+ */
+function filterTest(data: SearchData, filters: SearchFilters, withUnit: boolean): ((i: number) => boolean) | null {
+  const year = birthYear(filters.year)
+  const unitName = withUnit && filters.unit ? units.find((u) => u.id === filters.unit)?.name : undefined
+  const fate = FATES.find((f) => f.value === filters.fate)
+  const needle = placeNeedle(filters.place)
+  if (year === null && !unitName && !fate && !needle) return null
+  const fateTypes = fate ? new Set(fate.types.map((type) => data.deathTypes.indexOf(type))) : null
+  // A place is looked for in every soldier's text at once
+  const named = needle ? namingPlace(data, needle) : null
+  return (i) => {
+    if (unitName && units[data.unitAt[i]].name !== unitName && !data.also.get(i)?.includes(unitName)) return false
+    if (fateTypes && !fateTypes.has(data.deathType[i])) return false
+    if (year !== null && (Number.isNaN(data.born[i]) || Math.abs(data.born[i] - year) > filters.range)) return false
+    if (named && !named[i]) return false
+    return true
   }
-  return soldier
+}
+
+/** 1 for each soldier whose place filter text (entryWords) holds `needle` */
+function namingPlace(data: SearchData, needle: string): Uint8Array {
+  const named = new Uint8Array(data.index.size)
+  const bytes = Buffer.from(needle)
+  const filterText = data.filterText()
+  const { filterAt } = data
+  let at = filterText.indexOf(bytes)
+  while (at >= 0) {
+    // The soldier whose text this is: the last one starting at or before it
+    let lo = 0, hi = data.index.size - 1
+    while (lo < hi) {
+      const mid = (lo + hi + 1) >> 1
+      if (filterAt[mid] <= at) lo = mid
+      else hi = mid - 1
+    }
+    named[lo] = 1
+    at = filterText.indexOf(bytes, filterAt[lo + 1])
+  }
+  return named
 }
 
 /** The hits of the soldiers `keep` takes, in their order */
@@ -253,11 +314,10 @@ function runSearch(data: SearchData, typed: string, filters: SearchFilters, unit
   const unfiltered = found.length
 
   let listed: number[] = Array.from(found)
-  if (narrows(filters, home)) {
-    const kept = new Set(applyFilters(listed.map((i) => soldierAt(data, i)), filters, home))
-    const exact = listed.slice(0, nearFrom).filter((i) => kept.has(soldierAt(data, i))).length
-    listed = listed.filter((i) => kept.has(soldierAt(data, i)))
-    nearFrom = exact
+  const keep = filterTest(data, filters, home)
+  if (keep) {
+    nearFrom = listed.slice(0, nearFrom).filter(keep).length
+    listed = listed.filter(keep)
   }
   return { listed: Int32Array.from(listed), nearFrom, unfiltered }
 }
