@@ -54,6 +54,82 @@ OPTS = {'А': 'АЛД', 'Б': 'БЋЂ', 'д': 'дл', 'Д': 'ДЛ', 'ћ': 'ћђ'
         'k': 'к', 'M': 'М', 'm': 'м', 'O': 'О', 'o': 'о', 'P': 'Р', 'p': 'р', 'T': 'Т', 'X': 'Х', 'x': 'х',
         'Y': 'У', 'y': 'у', 'J': 'Ј', 'j': 'ј', 'n': 'п', 'u': 'и', 'r': 'г'}
 
+# Names the readings above get wrong (a surname the site doesn't know, a drop cap whose entry the next letter's
+# initial misleads), read from the page images: (scan page, the OCR's heading) -> (surname, given name, nickname).
+# The book's heading font prints Ц, Ћ and Ђ alike to the OCR (Џ, Б, В); "Nepoznati borac" is a man the book could
+# not name (a German soldier of Czech birth who came over), kept as an entry but `unnamed`.
+SCAN = {
+    (18, 'АМБУАИЈА СИМО'): ('Ambulija', 'Simo', ''),
+    (18, 'АНВЕАИБ ВЕАоКО'): ('Anđelić', 'Veljko', ''),
+    (19, 'АНВУШИН ИАИЈА'): ('Anđušić', 'Ilija', ''),
+    (19, 'АНБУШИБ НИКОАА'): ('Anđušić', 'Nikola', ''),
+    (19, 'АЏОВИБ ААНИАО'): ('Acović', 'Danilo', ''),
+    (22, 'БЕНАЕРАБ ВЕАоКО'): ('Benderać', 'Veljko', ''),
+    (22, 'БЕНАЕРАБ МАНОЈАО–МАЈО'): ('Benderać', 'Manojlo', 'Majo'),
+    (22, 'БЕНАЕРАБ МИАЕ'): ('Benderać', 'Mile', ''),
+    (22, 'БЕНАЕРАБ МИАОВАН'): ('Benderać', 'Milovan', ''),
+    (22, 'БЕНАЕРАБ МИРКО'): ('Benderać', 'Mirko', ''),
+    (22, 'БЕРАБ БОЖО'): ('Berać', 'Božo', ''),
+    (22, 'БЕРАБ МИААН'): ('Berać', 'Milan', ''),
+    (23, 'БИЈЕАЕ ВЕАоКО'): ('Bijele', 'Veljko', ''),
+    (23, 'БОГ ААНОВИБ РИСТО'): ('Bogdanović', 'Risto', ''),
+    (23, 'БОГ ААНОВИБ ТААИЈА'): ('Bogdanović', 'Tadija', ''),
+    (26, 'БУБРЕШКО ТОАО'): ('Bubreško', 'Todo', ''),
+    (26, 'БУАААИЦА КАСИМ'): ('Budalica', 'Kasim', ''),
+    (26, 'БУАААИЦА ХАМИА'): ('Budalica', 'Hamid', ''),
+    (26, 'БУБЕН ААНИАО'): ('Buđen', 'Danilo', ''),
+    (26, 'БУБЕН ТОАОР-ТОШО'): ('Buđen', 'Todor', 'Tošo'),
+    (27, 'БУТУАИЈ А АоУБО'): ('Butulija', 'Ljubo', ''),
+    (36, 'FPEAO БОРБО'): ('Gredo', 'Đorđo', ''),
+    (38, 'ГУАЕА) ВУРО'): ('Gudelj', 'Đuro', ''),
+    (40, 'АЕРИКУЧКА БОЖО'): ('Derikučka', 'Božo', ''),
+    (40, 'АЕРИКУЧКА ВАСО-ВАСИБ'): ('Derikučka', 'Vaso', 'Vasić'),
+    (40, 'АОБРОСААВИБ ЈАНКО'): ('Dobroslavić', 'Janko', ''),
+    (40, 'АРЕЧ МИАОРАА'): ('Dreč', 'Milorad', ''),
+    (42, 'БЕАМО РИСТО –РИНАА'): ('Đelmo', 'Risto', 'Rinda'),
+    (42, 'ЕРАВИЦА ПЕТАР'): ('Žeravica', 'Petar', ''),
+    (56, 'ААМБЕТА МИААН'): ('Lambeta', 'Milan', ''),
+    (56, 'ААМБЕТА БЕТКО'): ('Lambeta', 'Ćetko', ''),
+    (64, 'MI/IADAHOBI/IB МИХАЈАО'): ('Miljanović', 'Mihajlo', ''),
+    (65, 'МИРАИЊА ААНИАО'): ('Mirdinja', 'Danilo', ''),
+    (65, 'МИРАИЊА ПАНТО'): ('Mirdinja', 'Panto', ''),
+    (66, 'МИТРОВИБ – KHCA НОВИЦА'): ('Mitrović-Kisa', 'Novica', ''),
+    (69, 'НОЖИЦА ЕЕТКО'): ('Nožica', 'Ćetko', ''),
+    (70, 'ОМЕРБАЈИБ КААРИЈА'): ('Omerćajić', 'Kadrija', ''),
+    (71, 'ПЕАААО МИААН'): ('Pedalo', 'Milan', ''),
+    (72, 'ПЕТКОВИБ. МИААН'): ('Petković', 'Milan', ''),
+    (73, 'ПЕШИБ. РИСТО'): ('Pešić', 'Risto', ''),
+    (74, 'ПИПЈТИГЊАТ АРАШКО'): ('Pištignjat', 'Draško', ''),
+    (75, 'ПРОВИЏААО ТОМО'): ('Provicalo', 'Tomo', ''),
+    (79, 'РАШЕВИБ ЈЕРЕМИЈЕ – ЈОКО'): ('Rašević', 'Jeremije', 'Joko'),
+    (80, 'РЕЏО БААГОЈЕ'): ('Reco', 'Blagoje', ''),
+    (80, 'РЕЏО (Ј ОВАНОВИБ) Ј ОВО'): ('Reco', 'Jovo', '', 'Jovanović'),
+    (80, 'РИКААО ВИАОЈ Е'): ('Rikalo', 'Vidoje', ''),
+    (83, 'СВРАААН РААОСААВ'): ('Svrdlan', 'Radoslav', ''),
+    (90, 'ТУПАЊАНИН АРАГО'): ('Tupanjanin', 'Drago', ''),
+    (90, 'ТУПАЊАНИН АоУБИЦА'): ('Tupanjanin', 'Ljubica', ''),
+    (91, 'НАТОВИБ ИРФАН'): ('Ćatović', 'Irfan', ''),
+    (92, 'БУЗУААН МИХАЈАО'): ('Ćuzulan', 'Mihajlo', ''),
+    (94, 'ЕТАХАГИБ ОМЕР'): ('Fetahagić', 'Omer', ''),
+    (97, 'ЧОКАоАТ МИТАР'): ('Čokljat', 'Mitar', ''),
+    (98, 'ЏУЏА БОРБО'): ('Cuca', 'Đorđo', ''),
+    (182, 'ВАИЈИБ ГАШО'): ('Avdijić', 'Gašo', ''),
+    (182, 'АЈАГИБ МИАКА'): ('Bajagić', 'Milka', ''),
+    (182, 'ISA/b PAAE'): ('Balj', 'Rade', ''),
+    (182, 'БЕАААО ВИНКО'): ('Bedalo', 'Vinko', ''),
+    (185, 'АЕМИРЏИБ СВЕТОЗАР'): ('Demircić', 'Svetozar', ''),
+    (186, 'PBE3 HAHJA'): ('Erbez', 'Ilija', ''),
+    (186, 'ВИЗАИБ МУЈО'): ('Zvizdić', 'Mujo', ''),
+    (188, 'КЕШЕАоЕВИБ СТАНКО'): ('Kešeljević', 'Stanko', ''),
+    (188, 'КИКИА ТОМИСААВ'): ('Kikil', 'Tomislav', ''),
+    (188, 'КРОАоЕВИЕ ГАШПАР'): ('Kroljević', 'Gašpar', ''),
+    (191, 'НЕПОЗНАТИ БОРАЦ'): ('Nepoznati borac', '', ''),
+    (195, 'ИРОВИБ БААГОЈЕ'): ('Đirović', 'Blagoje', ''),
+    (196, 'ЕРТИАИО ЈЕРКО'): ('Fertilio', 'Jerko', ''),
+    (196, 'ВИТКОВИБ ПЕТАР'): ('Cvitković', 'Petar', ''),
+    (197, 'ШЕШАН JOBO'): ('Šešan', 'Jozo', ''),
+}
+
 _names: Counter = Counter()      # NAME as spelled on the site, upper-case Latin
 _words: Counter = Counter()      # words of the site's texts, as spelled (case kept)
 _lower: Counter = Counter()      # the same, lower-case
@@ -344,6 +420,8 @@ def main():
     book = load(BOOK)
     book_words(book)
     raw = raw_entries()
+    for e in raw:
+        e['key'] = (e['page'], e['head'])
     # a drop cap: the letter of the entries after it
     for i, e in enumerate(raw):
         if e['drop_cap'] and i + 1 < len(raw):
@@ -352,11 +430,17 @@ def main():
     entries = []
     for n, e in enumerate(raw, 1):
         p = parse(e)
+        if e['key'] in SCAN:
+            p['last_name'], p['first_name'], p['nick'], *other = SCAN[e['key']]
+            if other:
+                p['maiden_name'] = other[0]
         name = (f"{p['last_name']}{' (' + p['maiden_name'] + ')' if p['maiden_name'] else ''} {p['first_name']}"
-                f"{'–' + p['nick'] if p['nick'] else ''}")
+                f"{'–' + p['nick'] if p['nick'] else ''}").strip()
         entries.append({'soldier_id': f'{PREFIX}{n:06d}', 'name': name, **{k: v for k, v in p.items() if k != 'maiden_name'},
                         'survived': False, 'list': e['list'], 'source_url': viewer_url(book, e['page']),
-                        'source_page': e['printed']})
+                        'source_page': e['printed'], **({'unnamed': True} if not p['first_name'] else {})})
+    missing = set(SCAN) - {e['key'] for e in raw}
+    assert not missing, f'readings for headings that are not there: {sorted(missing)}'
     OUT.write_text(json.dumps(entries, ensure_ascii=False, indent=1), encoding='utf-8')
     by_list = Counter(e['list'] for e in entries)
     print(f'{len(entries)} entries: {dict(by_list)}; with birth year {sum(1 for e in entries if e["birth_year"])}, '
