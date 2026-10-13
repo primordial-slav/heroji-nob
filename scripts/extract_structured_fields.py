@@ -42,7 +42,7 @@ from pathlib import Path
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, str(Path(__file__).parent))
-from name_utils import BRIGADE_CONFIGS  # noqa: E402
+from name_utils import BRIGADE_CONFIGS, OSTALI_CODES  # noqa: E402
 from cleanup_text_fields import live_json_files  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -55,6 +55,8 @@ PARSER_FIELDS = {39, 121}                  # Druga proleterska; the pioneer comp
 # krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
 # build_ostali_borci.py sets the death from the entry's own fields
 NAME_LISTS = {'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf', 'bitka-kod-oborova-poginuli.pdf'}
+# the 1964 census of the war's dead (the Museum of Genocide Victims' PDFs): its entries' fields are the census's columns
+CENSUS = 'muzejgenocida.rs/'
 # Borci Sutjeske prints the duty at the battle, then "krajem rata ..." the duty at the war's end: the first is the rank
 DUTY_BEFORE_WAR_END = set(range(40, 50))
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
@@ -331,8 +333,9 @@ class Extractor:
             elif re.match(r'^\s*(?:\.\s*)+', t):
                 t = re.sub(r'^[\s.,…]+', '', t)
         t = re.sub(r'^us\.\s*', 'u s. ', t.strip())                            # OCR "us. Lalincu"
-        # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada)
-        from_place = code in (2, 31, 50, 51, 58, 73, 75, 79, 118) and re.match(rf'^iz\s+[{U}]', t) is not None
+        # where he came from: "iz Zavlake, Donji Lapac" (Prva lička), "iz Gostuše, srez nišavski" (25. srpska brigada),
+        # "iz Ribnika, Ključ" (13. krajiška)
+        from_place = code in (2, 31, 50, 51, 58, 73, 75, 79, 118, 124) and re.match(rf'^iz\s+[{U}]', t) is not None
         if from_place:
             t = re.sub(r',\s*srez\s+[a-zčćžšđ]+', '', t[3:])
         elif re.match(rf'^(?:kod|na|pri|v|nad|pod|blizu|iz)\s', t):
@@ -803,9 +806,10 @@ def load_live():
 
 
 def build_extractor(brigades) -> Extractor:
-    # the units' own records teach the vocabulary; Ostali borci (122), made of many books' OCR, would teach it wrong
+    # the units' own records teach the vocabulary; Ostali borci (122, 131-138), made of many books' OCR, would teach
+    # it wrong
     # ("španski borac" for an occupation)
-    all_recs = [s for code, (_, d) in brigades.items() if code != 122 for s in d]
+    all_recs = [s for code, (_, d) in brigades.items() if code not in OSTALI_CODES for s in d]
     # occupations: what follows the ethnicity in the books that print both, plus values already in the data
     occ = Counter()
     for s in all_recs:
@@ -898,6 +902,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
     for e in entries:
         info = e.get('additional_info', '')
+        if CENSUS in (e.get('source_url') or ''):
+            continue                # the 1964 census: build_ostali_borci.py sets its fields from the entry's own
         if PARTIZANKE in (e.get('source_url') or ''):
             info = her_own_deaths(info)
         sutjeska = (e.get('pdf_file') or '').startswith('borci-sutjeske')          # the duty at the battle comes first

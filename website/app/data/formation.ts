@@ -33,6 +33,14 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  'mostarski-bataljon': {
+    date: '1941-09', place: 'Konjic', source: 'https://znaci.org/00001/182_3.pdf',
+    note: 'Ćemalović, Mostarski bataljon: spisak počinje „Borcima Konjičkog bataljona (septembar 1941 — juni 1942)“; na savetovanju na Tisovici 21. juna 1942. odlučeno je da se bataljon „umjesto Konjički … nazove Mostarski bataljon, što je u stvari bio od svog osnutka“ (str. 93).',
+  },
+  '13-krajiska-brigada': {
+    date: '1943-08-23', place: 'Ribnik (Ključ)', source: 'https://znaci.org/00001/263_2.pdf',
+    note: 'Zorić, Trinaesta krajiška brigada (str. 24): „Dvadeset trećeg avgusta Štab 2. NOU bosanskog korpusa izdao je naređenje kojim je Ribnički NOP odred proglasio 13. krajiškom brigadom“; odred je tada čistio Manjaču od četnika. Mesto je kraj odreda, ne mesto proglašenja.',
+  },
   '1-krajiska-brigada': {
     date: '1942-05-21', place: 'Lamovita (Prijedor)', source: 'https://znaci.org/00001/226_1.pdf',
     note: 'Gončin, Rauš, Prva krajiška udarna proleterska brigada (str. 7): kolone boraca su „21. maja 1942. godine“ pristizale u dvorište škole pod Kozarom, iznad Lamovite, na drumu između Prijedora i Banjaluke.',

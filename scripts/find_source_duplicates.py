@@ -43,7 +43,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from name_utils import BRIGADE_CONFIGS  # noqa: E402
+from name_utils import BRIGADE_CONFIGS, OSTALI_CODES  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CORRECTIONS = ROOT / 'corrections.json'
@@ -51,6 +51,9 @@ CORRECTIONS = ROOT / 'corrections.json'
 # PDFs that hold more than one list: {pdf_file: [(first page, list name), ...]}
 LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
+    '13-krajiska.pdf': [(2, 'u brigadi avgusta i septembra 1943'), (25, 'članovi KPJ, maj 1945')],
+    'mostarski-bataljon.pdf': [(2, 'Konjički bataljon 1941-42'), (35, 'Mostarski bataljon 1942-43'),
+                               (49, 'Mostarski bataljon u Mostarskom odredu 1943-44')],
     '4-splitska-brigada.pdf': [(1, 'poginuli'), (23, 'preživjeli')],
     '11-dalmatinska.pdf': [(1, 'poginuli'), (27, 'nestali'), (28, 'preživjeli')],
     'cankarjeva.pdf': [(1, 'seznam'), (33, 'padli')],
@@ -454,9 +457,10 @@ def unit_name(code: int) -> str:
 
 def main_across(args):
     units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
-    # not Ostali borci (122): its records come and go as their men find their units, so a link to one would dangle
+    # not Ostali borci (122, 131-138): its records come and go as their men find their units, so a link to one would
+    # dangle
     units = {code: json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
-             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts and code != 122}
+             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts and code not in OSTALI_CODES}
     found = across_units(units)
     grades = defaultdict(int)
     for p in found:

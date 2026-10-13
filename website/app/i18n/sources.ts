@@ -268,6 +268,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'mostarski-bataljon':
+      'Borci Konjiškega bataljona (september 1941 — junij 1942), Mostarskega bataljona (junij 1942 — junij 1943) in Mostarskega bataljona v Mostarskem partizanskem odredu (junij 1943 — maj 1944), vsak s kratkim življenjepisom: rojstvo, poklic, SKOJ in KPJ, prihod v bataljon, dolžnost in usoda (str. 329–392).',
+    '13-krajiska':
+      'Dva seznama: borci in starešine, ki so bili v brigadi avgusta in septembra 1943, s krajem, dolžnostjo in za padle, kdaj in kje so padli in kje so pokopani; člani partijske organizacije KPJ brigade maja 1945, z dnem sprejema v Partijo in dolžnostjo (str. 365–404).',
     '1-krajiska':
       'Seznam padlih, umrlih in pogrešanih borcev brigade, 2.127 imen: rojstvo, kdaj so stopili v NOB in v brigado, četa in bataljon, dolžnost, kdaj in kje so padli in kje so pokopani (str. 331–442). Podatke je zbral in uredil Slobodan Spegar Spego.',
     'pionirska-ceta':
@@ -326,6 +330,22 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznami borcev, padlih na sremski fronti od oktobra 1944 do aprila 1945, po divizijah in brigadah, vsak za kratko zgodovino enote: samo imena, včasih z očetovo začetnico. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on, po imenu, brigadi in času smrti. Seznamov padlih rdečearmejcev s konca knjige nismo vnesli.',
     'bitka-kod-oborova-poginuli':
       'Imena 128 borcev 2. moslavaške brigade in Posavskega partizanskega odreda, padlih pri Oborovem 29. marca 1944 (str. 158–160). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'zrtve-rata-1964-slo':
+      'Popis žrtev vojne iz leta 1964 z območja Slovenije, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-hrv':
+      'Popis žrtev vojne iz leta 1964 z območja Hrvaške, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-bih':
+      'Popis žrtev vojne iz leta 1964 z območja Bosne in Hercegovine, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-crg':
+      'Popis žrtev vojne iz leta 1964 z območja Črne gore, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-mak':
+      'Popis žrtev vojne iz leta 1964 z območja Makedonije, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-srb':
+      'Popis žrtev vojne iz leta 1964 z območja ožje Srbije, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-kos':
+      'Popis žrtev vojne iz leta 1964 z območja Kosova in Metohije, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
+    'zrtve-rata-1964-voj':
+      'Popis žrtev vojne iz leta 1964 z območja Vojvodine, po občinah in vaseh: vneseni so le borci NOB, ki so padli ali umrli v vojni, ne žrtve terorja. Popis ne pripada eni enoti: zapis iz njega je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci. Popis je objavil Muzej žrtev genocida.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -583,6 +603,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'mostarski-bataljon':
+      'Борците на Коњичкиот баталјон (септември 1941 — јуни 1942), на Мостарскиот баталјон (јуни 1942 — јуни 1943) и на Мостарскиот баталјон во Мостарскиот партизански одред (јуни 1943 — мај 1944), секој со кратка биографија: раѓање, занимање, СКОЈ и КПЈ, доаѓање во баталјонот, должност и судбина (стр. 329–392).',
+    '13-krajiska':
+      'Два списока: борците и раководителите што биле во бригадата во август и септември 1943, со место, должност и, за загинатите, кога и каде загинале и каде се погребани; членовите на партиската организација на КПЈ во бригадата во мај 1945, со денот на приемот во Партијата и должноста (стр. 365–404).',
     '1-krajiska':
       'Список на загинатите, умрените и исчезнатите борци на бригадата, 2.127 имиња: раѓање, кога стапиле во НОБ и во бригадата, чета и баталјон, должност, кога и каде загинале и каде се погребани (стр. 331–442). Податоците ги истражил и обработил Слободан Спегар Спего.',
     'pionirska-ceta':
@@ -641,6 +665,22 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Списоци на борците загинати на Сремскиот фронт од октомври 1944 до април 1945, по дивизии и бригади, секој по кратката историја на единицата: само имиња, понекогаш со иницијалот на таткото. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој, по име, бригада и време на загинувањето. Списоците на паднатите црвеноармејци од крајот на книгата не се внесени.',
     'bitka-kod-oborova-poginuli':
       'Имињата на 128 борци од 2. мославачка бригада и Посавскиот партизански одред загинати кај Оборово на 29 март 1944 (стр. 158–160). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'zrtve-rata-1964-slo':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Словенија, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-hrv':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Хрватска, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-bih':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Босна и Херцеговина, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-crg':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Црна Гора, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-mak':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Македонија, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-srb':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Србија без покраините, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-kos':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Косово и Метохија, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
+    'zrtve-rata-1964-voj':
+      'Пописот на жртвите на војната од 1964, од подрачјето на Војводина, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не припаѓа на една единица: записот од него е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци. Пописот го објави Музејот на жртвите на геноцидот.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -897,6 +937,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'mostarski-bataljon':
+      'The fighters of the Konjic Battalion (September 1941 — June 1942), the Mostar Battalion (June 1942 — June 1943) and the Mostar Battalion in the Mostar Partisan Detachment (June 1943 — May 1944), each with a short biography: birth, trade, SKOJ and Party membership, when they joined, duty and fate (pp. 329–392).',
+    '13-krajiska':
+      'Two lists: the fighters and officers in the brigade in August and September 1943, with village, duty and, for the fallen, when and where they fell and where they are buried; the members of the brigade’s Communist Party organisation in May 1945, with the day each joined the Party and duty (pp. 365–404).',
     '1-krajiska':
       'The brigade’s fallen, dead and missing, 2,127 names: birth, when each joined the struggle and the brigade, company and battalion, duty, when and where they fell and where they are buried (pp. 331–442). Researched and compiled by Slobodan Spegar Spego.',
     'pionirska-ceta':
@@ -955,6 +999,22 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters killed on the Srem front from October 1944 to April 1945, by division and brigade, each list after a short history of the unit: names only, sometimes with the father’s initial. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain, by name, brigade and time of death. The lists of fallen Red Army soldiers at the end of the book were left out.',
     'bitka-kod-oborova-poginuli':
       'The names of the 128 fighters of the 2nd Moslavina Brigade and the Posavina Partisan Detachment killed at Oborovo on 29 March 1944 (pp. 158–160). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'zrtve-rata-1964-slo':
+      'The 1964 census of the war’s victims in Slovenia, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-hrv':
+      'The 1964 census of the war’s victims in Croatia, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-bih':
+      'The 1964 census of the war’s victims in Bosnia and Herzegovina, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-crg':
+      'The 1964 census of the war’s victims in Montenegro, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-mak':
+      'The 1964 census of the war’s victims in Macedonia, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-srb':
+      'The 1964 census of the war’s victims in Serbia without its provinces, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-kos':
+      'The 1964 census of the war’s victims in Kosovo and Metohija, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
+    'zrtve-rata-1964-voj':
+      'The 1964 census of the war’s victims in Vojvodina, by municipality and village: only the fighters of the Liberation War who were killed or died in it are included, not the victims of terror. The census belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters. Published by the Museum of Genocide Victims.',
   },
 }
 

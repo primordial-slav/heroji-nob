@@ -78,6 +78,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
 # Books printed in two columns; the gutter is found on every page, since it
 # moves between odd and even pages.
 TWO_COLUMN = {
+    'mostarski-bataljon.pdf',               # Mostarski bataljon (Ćemalović): the fighters' bios
     'hak-10-korenica-udbina.pdf',           # Korenica i Udbina (Karlovac knj. 10): the fallen
     'hak-14-donji-lapac.pdf',               # Donji Lapac (Karlovac knj. 14): the fallen
     'hak-13-gracac.pdf',                    # Gračac (Karlovac knj. 13): the fallen
