@@ -466,6 +466,10 @@ UNITS = {
         caption=r"pionirsk\w*\s+(?:partizansk\w*\s+)?[cč]et\w*|divosel\w*\s+pionir", photo=None,
         note="Nothing in the gallery names the company, and its book (Matić, Ratnici od puške manji, 2003) prints no "
              "photo of it: the card shows the book's cover."),
+    "1-krajiska-brigada": dict(
+        name="1. krajiška proleterska brigada",
+        tags=["1-krajiska-udarna-brigada"],
+        caption=nth(1, r"kraji[sš]k"), photo=14951),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,

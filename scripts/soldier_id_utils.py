@@ -136,6 +136,8 @@ BRIGADE_CODES = {
     119: 'Požarevački odred',
     120: '1. proleterski bataljon Hrvatske',
     121: 'Pionirska četa Divosela',
+    122: 'Ostali borci',
+    123: '1. Krajiška proleterska',
     # Add new brigades here with next available code
 }
 

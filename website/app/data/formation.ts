@@ -33,6 +33,10 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '1-krajiska-brigada': {
+    date: '1942-05-21', place: 'Lamovita (Prijedor)', source: 'https://znaci.org/00001/226_1.pdf',
+    note: 'Gončin, Rauš, Prva krajiška udarna proleterska brigada (str. 7): kolone boraca su „21. maja 1942. godine“ pristizale u dvorište škole pod Kozarom, iznad Lamovite, na drumu između Prijedora i Banjaluke.',
+  },
   '1-dalmatinska-brigada': {
     date: '1942-09-06', place: 'Dobro kod Livna', source: 'https://znaci.org/00001/108_3.pdf',
     note: 'znaci.org odrednica: 5. 9. 1942.',
