@@ -143,13 +143,16 @@ export const en: Messages = {
     entries: 'Entries in the books',
     page: (p: number | string) => `p. ${p}`,
     nameInBook: 'Name in the book:',
+    moreEntries: (count: number) =>
+      count === 1 ? 'One more entry in another book' : `${n(count)} more entries in other books`,
+    showPage: 'Show the page in the book',
     references: 'References',
     book: 'Book',
     loadingPage: 'Loading the page…',
     source: 'Source',
     noScan: 'There is no scanned book for this roll: it was published as text on [znaci.org].',
-    noScanPoreklo: (page: number | null) =>
-      `The book is scanned in the Poreklo digital library: [${page != null ? `page ${page}` : 'open the book'}]. Only Poreklo members can open it.`,
+    noScanPoreklo: (title: string, page: number | null) =>
+      `${title}${page != null ? `, page ${page}` : ''}. The book is scanned in the Poreklo digital library, which only its members can open.`,
     steps: 'Neighbouring records on the roll',
     previous: 'Previous',
     next: 'Next',
@@ -305,6 +308,7 @@ export const en: Messages = {
     openPdf: 'Open PDF',
     download: 'Download',
     openList: 'Open the roll',
+    inPoreklo: 'In the Poreklo digital library, for its members only',
     medalsTitle: 'Images of the decorations',
     hero:
       'Order of the People’s Hero: photograph by [Pinki, Wikimedia Commons], licence [CC BY-SA 4.0]. The cut-out and the drawing of the order on this site were made from that photograph and are published under the same licence.',

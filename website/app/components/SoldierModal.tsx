@@ -1,6 +1,6 @@
 'use client'
 
-import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
@@ -32,10 +32,12 @@ const RECORD_PHOTO_SIZES = '(max-width: 640px) 100vw, 832px'
 // Lazy-load PdfViewer so PDF.js (~500KB) is not in the initial bundle
 const PdfViewer = lazy(() => import('./PdfViewer'))
 
-/** A short name for the book switch: "Spisak poginulih" from "Brodska brigada — spisak poginulih", in English "The fallen" */
-function shortTitle(entry: SoldierSource, lang: Lang): string {
-  const part = titlePart(sourceTitle(entry), lang)
-  return part.charAt(0).toUpperCase() + part.slice(1)
+/** A book's title with the list it names after " — " in the page's language ("tom 3" is "volume 3" in English);
+ *  the Cyrillic pages keep the title as it is, the book's name and the list in one script */
+function bookTitle(entry: SoldierSource, lang: Lang): string {
+  const title = sourceTitle(entry)
+  const cut = title.lastIndexOf(' — ')
+  return cut < 0 || lang === 'sr-cyrl' ? title : `${title.slice(0, cut)} — ${titlePart(title, lang)}`
 }
 
 /** A unit's name (as the records give it, in Serbo-Croatian) in the page's language */
@@ -69,9 +71,8 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const pages = entries.filter(hasPage)
   const [shownPage, setShownPage] = useState(0)
   const page = pages[Math.min(shownPage, pages.length - 1)]
-  const pageLabels = pages.map((e) => shortTitle(e, lang))
-  const switchLabels = pages.map((e, i) =>
-    pageLabels.indexOf(pageLabels[i]) !== pageLabels.lastIndexOf(pageLabels[i]) ? `${pageLabels[i]}, ${t.record.page(e.pdf_page!)}` : pageLabels[i])
+  // the line over the page viewer: the book and its page
+  const bookLabel = (e: SoldierSource) => `${bookTitle(e, lang)}, ${t.record.page(e.pdf_page!)}`
   const sourceHref = page?.pdf_file ? to(`/izvori#${page.pdf_file.replace('.pdf', '')}`) : undefined
   const unit = unitName || soldier.unit
   const unitRecord = unitByName(unit)
@@ -81,6 +82,9 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const allUnits = [unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
     .filter((u, i, list): u is string => Boolean(u) && list.indexOf(u) === i)
   const hasLine = (soldier.life_events?.length ?? 0) > 0
+  // The record's own entry stays open; its other books fold under it
+  const [moreOpen, setMoreOpen] = useState(false)
+  const moreId = useId()
 
   const [showReportForm, setShowReportForm] = useState(false)
   const [reportText, setReportText] = useState('')
@@ -100,6 +104,19 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     pageRef.current?.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
   }
+  // An entry's line: the other unit, the book, its page, the name as printed there. A list published as a web
+  // page links to it; a book in the Poreklo library is only named, since only its members can open it.
+  const entryLabel = (e: SoldierSource) => (
+    <>
+      {/* the other unit's name, unless the book's title already starts with it */}
+      {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
+      {e.source_url && !e.pdf_file && !isPoreklo(e.source_url)
+        ? <a href={e.source_url} target="_blank" rel="noopener noreferrer">{bookTitle(e, lang)}</a>
+        : bookTitle(e, lang)}
+      {(e.pdf_page ?? e.source_page) != null && `, ${t.record.page((e.pdf_page ?? e.source_page)!)}`}
+      {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
+    </>
+  )
   const pageOf = (i: number) => (entries[i] && hasPage(entries[i]) ? entries[i].pdf_page : undefined)
 
   // The facts link to the folds at the end: how many are in them, and a request to open one on a group
@@ -112,6 +129,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   useEffect(() => {
     setShownPage(0)
     setFlash(0)
+    setMoreOpen(false)
     setKinRequest(null)
     // the counts are not cleared here: on a first opening the folds may have counted him before this runs
   }, [soldier.soldier_id])
@@ -275,15 +293,6 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
           <section className="record-page" ref={pageRef}>
             <div className="modal-source-head">
               <h3>{page || !soldier.source_url ? t.record.references : t.record.source}</h3>
-              {pages.length > 1 && (
-                <div className="modal-source-switch" role="group" aria-label={t.record.book}>
-                  {pages.map((e, i) => (
-                    <button key={i} type="button" aria-pressed={e === page} onClick={() => setShownPage(i)}>
-                      {switchLabels[i]}
-                    </button>
-                  ))}
-                </div>
-              )}
             </div>
 
             {entries.length === 1 && soldier.additional_info && (
@@ -291,25 +300,57 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
             )}
 
             {entries.length > 1 && (
-              <ol className="modal-sources" aria-label={t.record.entries}>
-                {entries.map((e, i) => (
-                  <li key={i} className="modal-source-entry">
-                    <p className="modal-source-label">
-                      {/* the other unit's name, unless the book's title already starts with it */}
-                      {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
-                      {/* a book with no scan here (the Poreklo library): its title opens the page there */}
-                      {e.source_url && !e.pdf_file
-                        ? <a href={e.source_url} target="_blank" rel="noopener noreferrer">{sourceTitle(e)}</a>
-                        : sourceTitle(e)}
-                      {(e.pdf_page ?? e.source_page) != null && `, ${t.record.page((e.pdf_page ?? e.source_page)!)}`}
-                      {e.name && e.name !== soldier.full_name && <>. {t.record.nameInBook} {e.name}</>}
+              <div className="record-entries">
+                <p className="modal-source-label">{entryLabel(entries[0])}</p>
+                {entries[0].additional_info && <p className="modal-entry">{entries[0].additional_info}</p>}
+                <div className="entries-more">
+                  <button type="button" className="entries-more-button" aria-expanded={moreOpen} aria-controls={moreId}
+                    onClick={() => setMoreOpen((open) => !open)}>
+                    <ChevronRightIcon size={16} />
+                    <span>{t.record.moreEntries(entries.length - 1)}</span>
+                  </button>
+                  {moreOpen ? (
+                    <ol className="modal-sources entries-more-list" id={moreId} aria-label={t.record.entries}>
+                      {entries.slice(1).map((e, k) => (
+                        <li key={k} className="modal-source-entry">
+                          <p className="modal-source-label">{entryLabel(e)}</p>
+                          {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
+                          {hasPage(e) && (
+                            <button type="button" className="entry-show-page" onClick={() => showEntry(k + 1)}>
+                              {t.record.showPage}
+                            </button>
+                          )}
+                        </li>
+                      ))}
+                    </ol>
+                  ) : (
+                    // the books it holds, each named once
+                    <p className="entries-more-books">
+                      {entries.slice(1).map((e) => sourceTitle(e).split(' — ')[0])
+                        .filter((b, i, list) => list.indexOf(b) === i).join(' · ')}
                     </p>
-                    {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
-                  </li>
-                ))}
-              </ol>
+                  )}
+                </div>
+              </div>
             )}
 
+            {/* Over the viewer, outside it, so the menu keeps its focus while the other book's page loads: the book
+                shown, and with more than one, a menu of the others (the select lies unseen over the name) */}
+            {page && (
+              <div className="pdf-book-bar">
+                {pages.length > 1 ? (
+                  <label className="pdf-book">
+                    <span className="pdf-book-name" aria-hidden="true">{bookLabel(page)}</span>
+                    <ChevronRightIcon size={14} />
+                    <select aria-label={t.record.book} value={pages.indexOf(page)} onChange={(ev) => setShownPage(Number(ev.target.value))}>
+                      {pages.map((e, i) => <option key={i} value={i}>{bookLabel(e)}</option>)}
+                    </select>
+                  </label>
+                ) : (
+                  <span className="pdf-book-name">{bookLabel(page)}</span>
+                )}
+              </div>
+            )}
             {page && (
               <Suspense fallback={<div className="pdf-viewer-loading">{t.record.loadingPage}</div>}>
                 <PdfViewer
@@ -330,10 +371,11 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
             {!page && soldier.source_url && (
               <p className="modal-source-note">
-                <RichText
-                  text={isPoreklo(soldier.source_url) ? t.record.noScanPoreklo(soldier.source_page ?? null) : t.record.noScan}
-                  render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>}
-                />
+                {/* a book in the Poreklo library is named with its page, not linked: only its members can open it */}
+                {isPoreklo(soldier.source_url)
+                  ? t.record.noScanPoreklo(bookTitle(soldier, lang),soldier.source_page ?? null)
+                  : <RichText text={t.record.noScan}
+                      render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>} />}
               </p>
             )}
           </section>
