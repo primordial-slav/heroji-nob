@@ -60,11 +60,11 @@ BOOKS = {
                      municipality='Aleksinac', offset=7),
     '00000196': dict(title='Petrlaš: selo koje nestaje', author='Stanimir Stavrov', year=2001, place='Petrlaš',
                      municipality='Dimitrovgrad', offset=None),
-    '00000722': dict(title='Prekopčelica — predgrađe Caričinog Grada', author='Nikola C. Stanković', year=2012,
+    '00000722': dict(title='Prekopčelica, predgrađe Caričinog Grada', author='Nikola C. Stanković', year=2012,
                      place='Prekopčelica', municipality='Lebane', offset=None),
     '00000849': dict(title='Brezovica i Stublica', author='Milan Bogićević, Milan Panić', year=2015,
                      place='Brezovica', municipality='Trstenik', offset=None),
-    '00000721': dict(title='Labukovo — zapisi obojeni lirikom', author='', year=None, place='Labukovo',
+    '00000721': dict(title='Labukovo: zapisi obojeni lirikom', author='Srbislav Jocić', year=2007, place='Labukovo',
                      municipality='Svrljig', offset=None),
     '00000130': dict(title='Donje Vidovo', author='Miroslav Dimitrijević', year=1997, place='Donje Vidovo',
                      municipality='Paraćin', offset=None),
@@ -404,7 +404,7 @@ def split_name(raw: str, style: str) -> tuple[str, str, str, str, str]:
 
 # an entry the line reader left inside the one before it: a number (or the list's dot) and three capitalized words, then
 # a comma, "rođen" or a year ("... kod Prijedora 63. Zorić Marka Nikola, Mala Krupska Rujiška")
-GLUED = re.compile(r'(?<=\S)\s+(?:\d{1,3}\.|\.)\s+(?=[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+'
+GLUED = re.compile(r'(?<=\S)\s+(?:\d{1,3}\.|\.)\s+(?=[A-ZČĆŽŠĐ][a-zčćžšđ]+(?:-[A-ZČĆŽŠĐ][a-zčćžšđ]+)?\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+'
                    r'(?:\s*\([^)]*\))?\s*(?:,|rođ|1[89]\d\d))')
 
 
@@ -446,6 +446,23 @@ def main():
             text = re.sub(r'\by\s+ceny\b', 'u selu', text)
             text = re.sub(r'\by\b', 'u', text)
             text = re.sub(r'(?<=[a-zčćžšđ])iđ\b', 'ić', text)
+            # the divisions' Roman numerals as the OCR reads them ("U! proleterske", "UN banijske", "HHHU divizije")
+            text = re.sub(r'(?<!\S)(?:U!|Vl|U\||U1|V\|)(?=\s+(?:proleterske|ličke)\b)', 'VI', text)
+            text = re.sub(r'(?<!\S)(?:UN|U!!|VI\||Vll|V\|I)(?=\s+banijske\b)', 'VII', text)
+            text = re.sub(r'(?<!\S)HHHU(?=\s+divizije\b)', 'XXXV', text)
+            text = re.sub(r'(?<!\S)XlX(?=\s)', 'XIX', text)
+            text = re.sub(r'(?<!\S)(\|{1,3})(?=\s+(?:proleterske|krajiške|ličke|brigade|divizije|bataljona)\b)',
+                          lambda m: 'I' * len(m.group(1)), text)                        # "borac || proleterske brigade"
+            text = re.sub(r'(?<=[a-zčćžšđ])\](?=\s)', 'j', text)                         # "Široko] Kuli"
+            text = re.sub(r'(?<!\S)\](?=\.)', '1', text)                                  # "]. bat."
+            text = re.sub(r'(?<=\d\.)[áéíóú]|[←\\]', '', text)                           # stray marks
+            text = re.sub(r'\b([Uu]) (?:[Ss]epu|Selu)\b', r'\1 selu', text)              # "u sepu Široka Kula"
+            text = re.sub(r'([a-zčćžšđ]) · ([A-ZČĆŽŠĐ])', r'\1-\2', text)               # "Rašeta · Slećaš"
+            # the book's page number or a footnote after the last entry of a page ("Umro je 1976. godine. 99",
+            # "66. Podaci uzeti iz evidencije ...")
+            text = re.sub(r'\s+\d{1,3}\.?\s+(?:Podaci|Izvor|Prema|Spisak je)\b.*$', '', text)
+            text = re.sub(r'(?<=\.)\s+\d{1,3}$', '', text.strip())
+            text = re.sub(r'(?:\s+\S*[°+_=~^*#@<>{}|]\S*)+$', '', text)                 # "Srbin rrfčfdž+", "mmm__"
             text = re.sub(r'\bNjubi(?=ć)', 'Ljubi', text)                  # Љ read as Њ (Ljubić, Donja Gorevnica)
             text = re.sub(r'(\w)[–—-]\s+(\w)', r'\1\2', text)
             # a capital the OCR set apart from the rest of its word ("Donjoj G orevnici"); not the one-letter words
