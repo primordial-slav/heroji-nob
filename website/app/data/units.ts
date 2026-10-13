@@ -46,7 +46,7 @@ export const units: Unit[] = [
     nameEn: '2nd Lika Proletarian Brigade',
     description: 'Formirana 18. avgusta 1942. u Laudonovom gaju. Poginuli, umrli i nestali borci, i oni koji su preživeli rat.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 7591,
+    soldierCount: 7596,
     dataFile: '/druga-licka-soldiers.json',
     pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf', '/pdfs/druga-licka-sjecanja-poginuli.pdf']
   },
