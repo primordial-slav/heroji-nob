@@ -7,7 +7,7 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import {
-  dayParts, deathDay, lifeSpan, loadPlaces, subunitPath, unitIndex, type Level, type Place, type PlaceMember,
+  dayParts, deathDay, lifeSpan, placeOf, subunitPath, unitIndex, type Level, type Place, type PlaceMember,
 } from '@/app/lib/relations'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
@@ -86,7 +86,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
 
   useEffect(() => {
     let live = true
-    loadPlaces().then((index) => { if (live) setPlace(index.byId.get(soldier.soldier_id) ?? null) }).catch(() => {})
+    placeOf(soldier.soldier_id).then((found) => { if (live) setPlace(found) }).catch(() => {})
     return () => { live = false }
   }, [soldier.soldier_id])
 
