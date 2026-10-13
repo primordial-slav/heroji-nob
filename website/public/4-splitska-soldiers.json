@@ -6206,7 +6206,7 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Maras Ante",
-    "additional_info": ".. , Studenci, Imotski, 2. bat, borac, 7. mj. 1944. striljan u Kninu od četnika",
+    "additional_info": ".. , Studenci, Imotski, 2. bat, borac, 7. mj. 1944. streljan u Kninu od četnika",
     "birth_year": "",
     "soldier_id": "0008000286",
     "pdf_page": 13,
@@ -6214,9 +6214,6 @@
     "pdf_x": 39.9,
     "pdf_y_end": 498.6,
     "pdf_file": "4-splitska-brigada.pdf",
-    "birth_place": "Studenci, Imotski",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
     "pdf_x_end": 370.8,
     "other_sources": [
       {
@@ -6232,7 +6229,10 @@
       }
     ],
     "death_type": "zarobljen",
-    "death_place": "Knin"
+    "death_place": "Knin",
+    "birth_place": "Studenci, Imotski",
+    "rank": "borac",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Marinović",
@@ -15887,7 +15887,7 @@
     "middle_name": "Josipa",
     "fathers_name": "Josip",
     "full_name": "Bjedov Josipa Vjera",
-    "additional_info": "1921, . . . , 1. bat, botrac, ranjena 1944. Preodac",
+    "additional_info": "1921, . . . , 1. bat, borac, ranjena 1944. Preodac",
     "birth_year": "1921",
     "soldier_id": "0008000769",
     "pdf_page": 28,
@@ -15895,8 +15895,9 @@
     "pdf_x": 48.9,
     "pdf_y_end": 384.6,
     "pdf_file": "4-splitska-brigada.pdf",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 375.4
+    "pdf_x_end": 375.4,
+    "rank": "borac",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Bjelanski",
@@ -20779,7 +20780,7 @@
     "middle_name": "Jure",
     "fathers_name": "Jure",
     "full_name": "Čotić Jure Stjepan",
-    "additional_info": ". . . , . .. , 4. bat, prateći vod, nesato 28. 1. 1945, selo Radišići, čitluk",
+    "additional_info": ". . . , . .. , 4. bat, prateći vod, nestao 28. 1. 1945, selo Radišići, čitluk",
     "birth_year": "",
     "soldier_id": "0008001032",
     "pdf_page": 34,
@@ -20787,8 +20788,10 @@
     "pdf_x": 43.4,
     "pdf_y_end": 193.3,
     "pdf_file": "4-splitska-brigada.pdf",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 369.5
+    "pdf_x_end": 369.5,
+    "death_type": "nestao",
+    "death_date": "28. 1. 1945",
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Čovič",
@@ -26370,7 +26373,7 @@
     "middle_name": "",
     "fathers_name": "",
     "full_name": "Gostijanović Roko",
-    "additional_info": ". ., . ., 2. bat, borac; 810 eOSLJEVlC IVAN, r. . . borac",
+    "additional_info": ". ., . ., 2. bat, borac;",
     "birth_year": "",
     "soldier_id": "0008001329",
     "pdf_page": 41,
@@ -26378,9 +26381,26 @@
     "pdf_x": 51.8,
     "pdf_y_end": 53.1,
     "pdf_file": "4-splitska-brigada.pdf",
+    "pdf_x_end": 277.9,
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 277.9
+    "unit_detail": "2. bataljon"
+  },
+  {
+    "soldier_id": "0008003119",
+    "last_name": "Gosljević",
+    "middle_name": "",
+    "first_name": "Ivan",
+    "fathers_name": "",
+    "full_name": "Gosljević Ivan",
+    "additional_info": ". ., . ., borac;",
+    "birth_year": "",
+    "pdf_file": "4-splitska-brigada.pdf",
+    "pdf_page": 41,
+    "pdf_y": 54.2,
+    "pdf_x": 51.8,
+    "rank": "borac",
+    "pdf_x_end": 244.2,
+    "pdf_y_end": 63.2
   },
   {
     "last_name": "Gotovac",
@@ -32079,7 +32099,7 @@
     "middle_name": "Petra",
     "fathers_name": "Petar",
     "full_name": "Klisović Petra Marko",
-    "additional_info": ".., Gornje Danilo, Perković, 3. bat, bosrac",
+    "additional_info": ".., Gornje Danilo, Perković, 3. bat, borac",
     "birth_year": "",
     "soldier_id": "0008001634",
     "pdf_page": 47,
@@ -32087,9 +32107,10 @@
     "pdf_x": 45.6,
     "pdf_y_end": 442.0,
     "pdf_file": "4-splitska-brigada.pdf",
+    "pdf_x_end": 376.2,
     "birth_place": "Gornje Danilo, Perković",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 376.2
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Klisović",
@@ -32773,7 +32794,7 @@
       {
         "soldier_id": "0046000509",
         "name": "Komić Ante Petar",
-        "additional_info": "borac 2. čete 3. bataljona, rođen 1924, Dubrava, Omiš, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a od februara 1943, ksajem rata komandir voda. Umro 1983.",
+        "additional_info": "borac 2. čete 3. bataljona, rođen 1924, Dubrava, Omiš, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a od februara 1943, krajem rata komandir voda. Umro 1983.",
         "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
         "pdf_page": 29,
         "pdf_x": 227.3,
@@ -44905,7 +44926,7 @@
     "middle_name": "Joze",
     "fathers_name": "Jozo",
     "full_name": "Pleić Joze Štipan",
-    "additional_info": "1910, Cista, Imotski, borac, ranjen 6. 12. 1944, Runjevica; 1816. -dPfcEPEL (MATE) DOMINIK, r. 1927, K. Sućurac, Split, 2. bat, borac, ranjen 6. 12. 1944, Otrić, Gračac",
+    "additional_info": "1910, Cista, Imotski, borac, ranjen 6. 12. 1944, Runjevica",
     "birth_year": "1910",
     "soldier_id": "0008002325",
     "pdf_page": 63,
@@ -44913,10 +44934,28 @@
     "pdf_x": 45.1,
     "pdf_y_end": 60.6,
     "pdf_file": "4-splitska-brigada.pdf",
+    "pdf_x_end": 375.3,
     "birth_place": "Cista, Imotski",
+    "rank": "borac"
+  },
+  {
+    "soldier_id": "0008003120",
+    "last_name": "Plepel",
+    "middle_name": "Mate",
+    "first_name": "Dominik",
+    "fathers_name": "Mate",
+    "full_name": "Plepel Mate Dominik",
+    "additional_info": "1927, K. Sućurac, Split, 2. bat, borac, ranjen 6. 12. 1944, Otrić, Gračac",
+    "birth_year": "1927",
+    "pdf_file": "4-splitska-brigada.pdf",
+    "pdf_page": 63,
+    "pdf_y": 60.5,
+    "pdf_x": 44.8,
+    "birth_place": "K. Sućurac, Split",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 375.3
+    "pdf_x_end": 375.2,
+    "pdf_y_end": 77.9
   },
   {
     "last_name": "Plepel",
@@ -50478,7 +50517,7 @@
     "middle_name": "Ignacija",
     "fathers_name": "Ignacija",
     "full_name": "Stipojev Ignacija Petar",
-    "additional_info": "1905, K. Stari, Split, 3. bat, st. vodnik, indendant",
+    "additional_info": "1905, K. Stari, Split, 3. bat, st. vodnik, intendant",
     "birth_year": "1905",
     "soldier_id": "0008002623",
     "pdf_page": 69,
@@ -50486,10 +50525,10 @@
     "pdf_x": 42.8,
     "pdf_y_end": 377.4,
     "pdf_file": "4-splitska-brigada.pdf",
-    "birth_place": "K. Stari, Split",
     "rank": "vodnik",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 373.2
+    "pdf_x_end": 373.2,
+    "birth_place": "K. Stari, Split",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Stipulin",

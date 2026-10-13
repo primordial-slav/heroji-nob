@@ -1548,5 +1548,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/hak-7-plascanska-dolina.jpg',
     brigadeName: '',
     description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 7): pali borci s područja Plaščanske doline i okoline 1941–1945 (str. 689–701), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'krusevac-1944-poginuli',
+    title: 'Oslobođenje Kruševca 1944. godine',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/krusevac-1944-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/krusevac-1944-poginuli.jpg',
+    brigadeName: '',
+    description: 'Spisak boraca poginulih u borbama za oslobođenje Kruševca septembra i oktobra 1944, po jedinicama: 4. proleterska crnogorska, 3, 6. i 17. srpska brigada i Komanda kruševačkog vojnog područja (str. 273–283), s rođenjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'u-rovovima-srema-poginuli',
+    title: 'U rovovima Srema',
+    author: 'Milorad Gončin',
+    pdfPath: '/pdfs/u-rovovima-srema-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/u-rovovima-srema-poginuli.jpg',
+    brigadeName: '',
+    description: 'Spisak boraca poginulih na Sremskom frontu (str. 230–267), po brigadama i po mestu gde su pali, samo imena, ponekad s dužnošću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, po imenu, brigadi i mestu pogibije.'
   }
 ]

@@ -2186,7 +2186,7 @@
     "first_name": "Aleksandar",
     "fathers_name": "",
     "full_name": "Bajić Aleksandar",
-    "additional_info": "rođen 1925. Beška, Inćija, ćak, polptički delegat voda, ranjen 18. 1, 1945. Otrovanec, Podravina.",
+    "additional_info": "rođen 1925. Beška, Inćija, ćak, politički delegat voda, ranjen 18. 1, 1945. Otrovanec, Podravina.",
     "birth_year": "1925",
     "pdf_page": 69,
     "pdf_y": 98.7,
@@ -2197,7 +2197,7 @@
     "pdf_x_end": 328.9,
     "birth_place": "Beška, Inćija",
     "occupation": "ćak",
-    "rank": "delegat voda"
+    "rank": "politički delegat voda"
   },
   {
     "last_name": "Bajić",
@@ -3578,7 +3578,7 @@
     "first_name": "Lazar",
     "fathers_name": "",
     "full_name": "Baškot Lazar",
-    "additional_info": "rođen 1917. Stara Pazova, zemljoradnik, bomandir čete, ranjen 16. 5. 1944. na Stolicama, Majevica, istočna Bosna.",
+    "additional_info": "rođen 1917. Stara Pazova, zemljoradnik, komandir čete, ranjen 16. 5. 1944. na Stolicama, Majevica, istočna Bosna.",
     "birth_year": "1917",
     "pdf_page": 70,
     "pdf_y": 428.2,
@@ -3588,7 +3588,8 @@
     "soldier_id": "0057000188",
     "pdf_x_end": 350.1,
     "birth_place": "Stara Pazova",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "rank": "komandir čete"
   },
   {
     "soldier_id": "0057004098",
@@ -6193,7 +6194,7 @@
     "first_name": "Milan",
     "fathers_name": "",
     "full_name": "Bojin Milan",
-    "additional_info": "roćn 1926. Stara Pazova, zemljoradnik, borac, oanjen 21. 1. 1945. Otrovanec, G1odravina.",
+    "additional_info": "roćn 1926. Stara Pazova, zemljoradnik, borac, ranjen 21. 1. 1945. Otrovanec, G1odravina.",
     "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 293.9,
@@ -7102,7 +7103,7 @@
     "first_name": "Rajko",
     "fathers_name": "S",
     "full_name": "Božić S Rajko",
-    "additional_info": "rođen 1927. Kuzmin, Sremska Mitrovica, iuškomitraljezac, ranjen 19. 10. 1944. kod Beograda.",
+    "additional_info": "rođen 1927. Kuzmin, Sremska Mitrovica, puškomitraljezac, ranjen 19. 10. 1944. kod Beograda.",
     "birth_year": "1927",
     "pdf_page": 75,
     "pdf_y": 339.9,
@@ -7111,7 +7112,8 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057000370",
     "pdf_x_end": 335.0,
-    "birth_place": "Kuzmin, Sremska Mitrovica"
+    "birth_place": "Kuzmin, Sremska Mitrovica",
+    "rank": "puškomitraljezac"
   },
   {
     "last_name": "Božić",
@@ -9441,7 +9443,7 @@
     "first_name": "Nikola",
     "fathers_name": "I",
     "full_name": "Burčić I Nikola",
-    "additional_info": "rođen 1919. Adaševci, Šid, nolitički komeear čete, ranjen 1945. u Slavoniji.",
+    "additional_info": "rođen 1919. Adaševci, Šid, politički komeear čete, ranjen 1945. u Slavoniji.",
     "birth_year": "1919",
     "pdf_page": 87,
     "pdf_y": 196.1,
@@ -11553,7 +11555,7 @@
     "first_name": "Radovan",
     "fathers_name": "",
     "full_name": "Delić Radovan",
-    "additional_info": "rođen 1924. Ogar, Pećinci, radnik, kestao juna 1944. na Jelici, Majevica",
+    "additional_info": "rođen 1924. Ogar, Pećinci, radnik, nestao juna 1944. na Jelici, Majevica",
     "birth_year": "1924",
     "pdf_page": 47,
     "pdf_y": 118.3,
@@ -11563,7 +11565,10 @@
     "soldier_id": "0057000598",
     "pdf_x_end": 334.2,
     "birth_place": "Ogar, Pećinci",
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "death_type": "nestao",
+    "death_date": "juna 1944",
+    "death_place": "na Jelici, Majevica"
   },
   {
     "last_name": "Delić",
@@ -11663,7 +11668,7 @@
     "first_name": "Blagoje",
     "fathers_name": "",
     "full_name": "Dević Blagoje",
-    "additional_info": "rođen 1925. Novi Slankamen, Inđija, zemltoradnik, borac, ranjen 4. 4. 1944. Brusnica, istočna Bosna.",
+    "additional_info": "rođen 1925. Novi Slankamen, Inđija, zemljoradnik, borac, ranjen 4. 4. 1944. Brusnica, istočna Bosna.",
     "birth_year": "1925",
     "pdf_page": 83,
     "pdf_y": 187.8,
@@ -11673,6 +11678,7 @@
     "soldier_id": "0057000604",
     "pdf_x_end": 339.5,
     "birth_place": "Novi Slankamen, Inđija",
+    "occupation": "zemljoradnik",
     "rank": "borac"
   },
   {
@@ -13777,7 +13783,7 @@
     "first_name": "Franja",
     "fathers_name": "",
     "full_name": "Dulić Franja",
-    "additional_info": "rođen 1926. Subotica, zemljoradnik, borac. lanjen 12. 4. 1945. kod Napda na Dravi.",
+    "additional_info": "rođen 1926. Subotica, zemljoradnik, borac. ranjen 12. 4. 1945. kod Napda na Dravi.",
     "birth_year": "1926",
     "pdf_page": 85,
     "pdf_y": 392.4,
@@ -13786,12 +13792,12 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057000711",
     "pdf_x_end": 331.0,
-    "birth_place": "Subotica",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "8. II 1945",
     "death_place": "Cabuna",
+    "birth_place": "Subotica",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0078000203",
@@ -14455,7 +14461,7 @@
     "first_name": "Milenko",
     "fathers_name": "",
     "full_name": "Fabek Milenko",
-    "additional_info": "rođen 1924. Zagreb, obućar, politički ^omesar čete, poginuo 26. 3. 1944. kod s. Rahići, istočna Bosna.",
+    "additional_info": "rođen 1924. Zagreb, obućar, politički ^komesar čete, poginuo 26. 3. 1944. kod s. Rahići, istočna Bosna.",
     "birth_year": "1924",
     "pdf_page": 9,
     "pdf_y": 309.2,
@@ -14464,11 +14470,12 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057000747",
     "pdf_x_end": 331.7,
+    "death_place": "Rahići, istočna Bosna",
     "birth_place": "Zagreb",
     "occupation": "obućar",
     "death_type": "poginuo",
     "death_date": "26. 3. 1944",
-    "death_place": "Rahići, istočna Bosna"
+    "rank": "komesar čete"
   },
   {
     "last_name": "Fabeković",
@@ -14750,7 +14757,7 @@
     "first_name": "Ante",
     "fathers_name": "",
     "full_name": "Fehir Ante",
-    "additional_info": "rođen 1910. Bročevci, Bakovo, bivši iodoficir, nestao 6. 12. 1944. Liiovac, Slavonija.",
+    "additional_info": "rođen 1910. Bročevci, Bakovo, bivši podoficir, nestao 6. 12. 1944. Liiovac, Slavonija.",
     "birth_year": "1910",
     "pdf_page": 48,
     "pdf_y": 242.1,
@@ -16650,7 +16657,7 @@
     "first_name": "Miša",
     "fathers_name": "M",
     "full_name": "Gireg M Miša",
-    "additional_info": "rođen 1913. Stara Pazova, radnik, politkčki delegat voda, nestao 9. 2. 1945. Črešnjevica, Podravina.",
+    "additional_info": "rođen 1913. Stara Pazova, radnik, politički delegat voda, nestao 9. 2. 1945. Črešnjevica, Podravina.",
     "birth_year": "1913",
     "pdf_page": 48,
     "pdf_y": 369.9,
@@ -16659,12 +16666,12 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057000861",
     "pdf_x_end": 355.7,
+    "death_place": "kod Črešnjevica, Podravina",
     "birth_place": "Stara Pazova",
     "occupation": "radnik",
     "death_type": "nestao",
     "death_date": "9. 2. 1945",
-    "death_place": "kod Črešnjevica, Podravina",
-    "rank": "delegat voda"
+    "rank": "politički delegat voda"
   },
   {
     "last_name": "Gizmadija",
@@ -16702,11 +16709,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "GLAVAšKI",
+    "last_name": "Glavaški",
     "middle_name": "",
     "first_name": "Dragomir",
     "fathers_name": "",
-    "full_name": "GLAVAšKI Dragomir",
+    "full_name": "Glavaški Dragomir",
     "additional_info": "iz Velikih Radinaca, Sremska Mitrovica.",
     "birth_year": "",
     "pdf_page": 92,
@@ -21145,7 +21152,7 @@
     "first_name": "Ljubipa",
     "fathers_name": "",
     "full_name": "Ismatlović Ljubipa",
-    "additional_info": "rođena 1923. Šid, domaćica, bolničrrka. ranjena 19. 8. 1944. iznad Pive, Crna Gora.",
+    "additional_info": "rođena 1923. Šid, domaćica, bolničarka. ranjena 19. 8. 1944. iznad Pive, Crna Gora.",
     "birth_year": "1923",
     "pdf_page": 96,
     "pdf_y": 313.0,
@@ -21155,7 +21162,8 @@
     "soldier_id": "0057001095",
     "pdf_x_end": 355.7,
     "birth_place": "Šid",
-    "occupation": "domaćica"
+    "occupation": "domaćica",
+    "rank": "bolničarka"
   },
   {
     "last_name": "Ćumurija",
@@ -21981,7 +21989,7 @@
     "first_name": "Ljubomir",
     "fathers_name": "S",
     "full_name": "Jakšić S Ljubomir",
-    "additional_info": "rođen 1920. Adaševci, JPid, zemljo radnik, borac, ranjen 1944. kod Zovika, istčna Bosna.",
+    "additional_info": "rođen 1920. Adaševci, JPid, zemljo radnik, borac, ranjen 1944. kod Zovika, istočna Bosna.",
     "birth_year": "1920",
     "pdf_page": 97,
     "pdf_y": 291.1,
@@ -22229,7 +22237,7 @@
     "first_name": "Borislav",
     "fathers_name": "",
     "full_name": "Janković Borislav",
-    "additional_info": "rođen 1923. Ogar, Pećinci, politički l^Jtegat voda, ranjen 1*anuara 1945. kod Pitomače. Podravina.",
+    "additional_info": "rođen 1923. Ogar, Pećinci, politički l^Jtegat voda, ranjen 1*januara 1945. kod Pitomače. Podravina.",
     "birth_year": "1923",
     "pdf_page": 98,
     "pdf_y": 243.6,
@@ -22712,7 +22720,7 @@
     "first_name": "Iada",
     "fathers_name": "",
     "full_name": "Jačković Iada",
-    "additional_info": "rođena 1925. Vrdnik, Irig, domaćica, bopničarka, ranjena avgusta 1944. na komunikaciji Srebrenica — Vlaseniia, istočna Bosna.",
+    "additional_info": "rođena 1925. Vrdnik, Irig, domaćica, bolničarka, ranjena avgusta 1944. na komunikaciji Srebrenica — Vlaseniia, istočna Bosna.",
     "birth_year": "1925",
     "pdf_page": 98,
     "pdf_y": 113.0,
@@ -22722,7 +22730,8 @@
     "soldier_id": "0057001174",
     "pdf_x_end": 358.3,
     "birth_place": "Vrdnik, Irig",
-    "occupation": "domaćica"
+    "occupation": "domaćica",
+    "rank": "bolničarka"
   },
   {
     "last_name": "Jašarević",
@@ -23429,7 +23438,7 @@
     "first_name": "Paja",
     "fathers_name": "",
     "full_name": "Jokinović Paja",
-    "additional_info": "rođen 1919. Berkasovo, Šid, stolar, borac, poginuo 8. 8. 1944. pruga Sarajevo — Višegrad, kod s. Renovice u istočjnoj Bosni.",
+    "additional_info": "rođen 1919. Berkasovo, Šid, stolar, borac, poginuo 8. 8. 1944. pruga Sarajevo — Višegrad, kod s. Renovice u istočnoj Bosni.",
     "birth_year": "1919",
     "pdf_page": 14,
     "pdf_y": 418.7,
@@ -23569,7 +23578,7 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "JOKSIp Nikola",
-    "additional_info": "rođen 1919. Beograd, sgudent, borac, ranjen 4. 12. 1944. Opatovac.",
+    "additional_info": "rođen 1919. Beograd, student, borac, ranjen 4. 12. 1944. Opatovac.",
     "birth_year": "1919",
     "pdf_page": 100,
     "pdf_y": 104.8,
@@ -23579,6 +23588,7 @@
     "soldier_id": "0057001219",
     "pdf_x_end": 348.7,
     "birth_place": "Beograd",
+    "occupation": "student",
     "rank": "borac"
   },
   {
@@ -25124,7 +25134,7 @@
     "first_name": "Svetislav",
     "fathers_name": "",
     "full_name": "Jovanović Svetislav",
-    "additional_info": "rođen 1924. Jakovo, Zemun, nestao dedembra 1943. u istočnoj Bosni.",
+    "additional_info": "rođen 1924. Jakovo, Zemun, nestao decembra 1943. u istočnoj Bosni.",
     "birth_year": "1924",
     "pdf_page": 51,
     "pdf_y": 92.7,
@@ -25135,7 +25145,7 @@
     "pdf_x_end": 326.8,
     "birth_place": "Jakovo, Zemun",
     "death_type": "nestao",
-    "death_date": "1943"
+    "death_date": "decembra 1943"
   },
   {
     "last_name": "Jovanović",
@@ -27621,7 +27631,7 @@
     "first_name": "Dušan",
     "fathers_name": "Ž",
     "full_name": "Kepić Ž Dušan",
-    "additional_info": "rođen 1926. Novi Karlovap. Iićita, zemljooadnik, borap. ranjen 20. 4. 1945. Petrovdc. Podoavina.",
+    "additional_info": "rođen 1926. Novi Karlovap. Iićita, zemljoradnik, borap. ranjen 20. 4. 1945. Petrovdc. Podoavina.",
     "birth_year": "1926",
     "pdf_page": 105,
     "pdf_y": 353.3,
@@ -27630,7 +27640,8 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057001428",
     "pdf_x_end": 334.4,
-    "birth_place": "Novi Karlovap"
+    "birth_place": "Novi Karlovap",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Keravica",
@@ -27689,7 +27700,7 @@
     "first_name": "Nikola",
     "fathers_name": "J",
     "full_name": "Keser J Nikola",
-    "additional_info": "rođen 1921. Rakovica, Slunj, zemljoradnnk. pesetar.",
+    "additional_info": "rođen 1921. Rakovica, Slunj, zemljoradnnk. desetar.",
     "birth_year": "1921",
     "pdf_page": 105,
     "pdf_y": 413.9,
@@ -27699,7 +27710,8 @@
     "soldier_id": "0057001432",
     "pdf_x_end": 333.8,
     "birth_place": "Rakovica, Slunj",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "rank": "desetar"
   },
   {
     "soldier_id": "0057004213",
@@ -28422,7 +28434,7 @@
     "first_name": "Gordana",
     "fathers_name": "",
     "full_name": "Knežević Gordana",
-    "additional_info": "rođena 1925. Vojka, Stara Pazova, domaćkca, vodna bolnnčarka, poginula 8. 2. 1945. Sedlarica, Podravina.",
+    "additional_info": "rođena 1925. Vojka, Stara Pazova, domaćica, vodna bolničarka, poginula 8. 2. 1945. Sedlarica, Podravina.",
     "birth_year": "1925",
     "pdf_page": 17,
     "pdf_y": 88.0,
@@ -28432,9 +28444,11 @@
     "soldier_id": "0057001470",
     "pdf_x_end": 332.0,
     "birth_place": "Vojka, Stara Pazova",
+    "occupation": "domaćica",
     "death_type": "poginuo",
     "death_date": "8. 2. 1945",
-    "death_place": "Sedlarica, Podravina"
+    "death_place": "Sedlarica, Podravina",
+    "rank": "bolničarka"
   },
   {
     "last_name": "Knežević",
@@ -29223,17 +29237,17 @@
     "first_name": "Stevan",
     "fathers_name": "",
     "full_name": "Konjušin Stevan",
-    "additional_info": "rođen 1924. Ralešnić, Galičnica, zemljoradnik, borac, ranjen 28. 7. 1944. na Bišini, istoina Bosna.",
+    "additional_info": "rođen 1924. Ralešnić, Galičnica, zemljoradnik, borac, ranjen 28. 7. 1944. na Bišini, istočna Bosna.",
     "birth_year": "1924",
     "pdf_file": "3-vojvodjanska.pdf",
     "pdf_page": 107,
     "pdf_y": 345.2,
     "pdf_x": 56.9,
+    "pdf_x_end": 338.0,
+    "pdf_y_end": 371.7,
     "birth_place": "Ralešnić, Galičnica",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 338.0,
-    "pdf_y_end": 371.7
+    "rank": "borac"
   },
   {
     "soldier_id": "0057004113",
@@ -31295,7 +31309,7 @@
     "first_name": "Miloš",
     "fathers_name": "",
     "full_name": "Kretić Miloš",
-    "additional_info": "rođen 1925. Vrdnnk, Irig, zemljoradnik, zamenik političkog komeeara čete, ranjen 12. 8. 1944. na komunikaciji Kalinovik-Foča, istočna Bosna.",
+    "additional_info": "rođen 1925. Vrdnnk, Irig, zemljoradnik, zamenik političkog komesara čete, ranjen 12. 8. 1944. na komunikaciji Kalinovik-Foča, istočna Bosna.",
     "birth_year": "1925",
     "pdf_page": 110,
     "pdf_y": 86.0,
@@ -31305,7 +31319,8 @@
     "soldier_id": "0057001608",
     "pdf_x_end": 349.4,
     "birth_place": "Vrdnnk, Irig",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "rank": "zamenik političkog komesara čete"
   },
   {
     "last_name": "Kristović",
@@ -33914,7 +33929,7 @@
     "first_name": "Sava",
     "fathers_name": "",
     "full_name": "Lazić Sava",
-    "additional_info": "rođen 1924. Šuljam, Sremska Mitrovica, zemljoradnik, komandir voda, rađnjen 25. 4. 1945. Ovčara, Podravina.",
+    "additional_info": "rođen 1924. Šuljam, Sremska Mitrovica, zemljoradnik, komandir voda, ranjen 25. 4. 1945. Ovčara, Podravina.",
     "birth_year": "1924",
     "pdf_page": 113,
     "pdf_y": 160.8,
@@ -35847,7 +35862,7 @@
     "first_name": "Viktor",
     "fathers_name": "",
     "full_name": "Mamek Viktor",
-    "additional_info": "rođen 1920. Zemun, poslastičar, polktički delegat voda, poginuo 8. 2. 1945. Velika Črešnjevica, Podravina.",
+    "additional_info": "rođen 1920. Zemun, poslastičar, politički delegat voda, poginuo 8. 2. 1945. Velika Črešnjevica, Podravina.",
     "birth_year": "1920",
     "pdf_page": 21,
     "pdf_y": 106.2,
@@ -35861,7 +35876,7 @@
     "death_type": "poginuo",
     "death_date": "8. 2. 1945",
     "death_place": "Velika Črešnjevica, Podravina",
-    "rank": "delegat voda"
+    "rank": "politički delegat voda"
   },
   {
     "last_name": "Manastirac",
@@ -36592,7 +36607,7 @@
     "first_name": "Milivoje",
     "fathers_name": "",
     "full_name": "Markov Milivoje",
-    "additional_info": "politčki delegat voda, poginuo 21. 3. 1945. kod Bolmana, Baranja.",
+    "additional_info": "politički delegat voda, poginuo 21. 3. 1945. kod Bolmana, Baranja.",
     "birth_year": "",
     "pdf_page": 21,
     "pdf_y": 305.7,
@@ -36604,7 +36619,7 @@
     "death_type": "poginuo",
     "death_date": "21. 3. 1945",
     "death_place": "Bolman, Baranja",
-    "rank": "delegat voda"
+    "rank": "politički delegat voda"
   },
   {
     "last_name": "Markov",
@@ -37213,7 +37228,7 @@
     "first_name": "Marko",
     "fathers_name": "",
     "full_name": "Martinović Marko",
-    "additional_info": "rođen 1913. s. Ličko Cerje, Gračac, radkik, komandir čete, poginuo 3- 12. 1944. kod s. Opatovca, Slavonija.",
+    "additional_info": "rođen 1913. s. Ličko Cerje, Gračac, radnik, komandir čete, poginuo 3- 12. 1944. kod s. Opatovca, Slavonija.",
     "birth_year": "1913",
     "pdf_page": 21,
     "pdf_y": 482.4,
@@ -37223,6 +37238,7 @@
     "soldier_id": "0057001891",
     "pdf_x_end": 339.3,
     "birth_place": "Ličko Cerje, Gračac",
+    "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "komandir čete"
@@ -43515,7 +43531,7 @@
     "first_name": "Hajrudin",
     "fathers_name": "",
     "full_name": "Mulić Hajrudin",
-    "additional_info": "rođen 1925. Rahići, Brčko, nsetao u gškretu.",
+    "additional_info": "rođen 1925. Rahići, Brčko, nestao u gškretu.",
     "birth_year": "1925",
     "pdf_page": 56,
     "pdf_y": 142.8,
@@ -43524,7 +43540,8 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057002212",
     "pdf_x_end": 347.6,
-    "birth_place": "Rahići, Brčko"
+    "birth_place": "Rahići, Brčko",
+    "death_type": "nestao"
   },
   {
     "last_name": "Mumbašić",
@@ -46234,7 +46251,7 @@
     "first_name": "Svetozar",
     "fathers_name": "",
     "full_name": "Ninković Svetozar",
-    "additional_info": "rođen 1921. Grgurevci, Sremska Mitrovica, pekar, kohmandir čete, ranjen 26. 3. 1944. Rahić, istočna Bosna.",
+    "additional_info": "rođen 1921. Grgurevci, Sremska Mitrovica, pekar, komandir čete, ranjen 26. 3. 1944. Rahić, istočna Bosna.",
     "birth_year": "1921",
     "pdf_page": 130,
     "pdf_y": 222.1,
@@ -46244,7 +46261,8 @@
     "soldier_id": "0057002354",
     "pdf_x_end": 356.1,
     "birth_place": "Grgurevci, Sremska Mitrovica",
-    "occupation": "pekar"
+    "occupation": "pekar",
+    "rank": "komandir čete"
   },
   {
     "last_name": "Ninković",
@@ -49819,7 +49837,7 @@
     "first_name": "Drago",
     "fathers_name": "",
     "full_name": "Pejčin Drago",
-    "additional_info": "rođen u Ilkncima, Šid, borac, poginuo u istočioj Bosni.",
+    "additional_info": "rođen u Ilkncima, Šid, borac, poginuo u istočnoj Bosni.",
     "birth_year": "",
     "pdf_page": 27,
     "pdf_y": 234.7,
@@ -53465,7 +53483,7 @@
     "first_name": "Ilija",
     "fathers_name": "",
     "full_name": "Popović Ilija",
-    "additional_info": "rođen 1926. Prhovo, Ruma, zemljoradvik, borac, ranjen 11. 12. 1944. Sotin.",
+    "additional_info": "rođen 1926. Prhovo, Ruma, zemljoradnik, borac, ranjen 11. 12. 1944. Sotin.",
     "birth_year": "1926",
     "pdf_page": 139,
     "pdf_y": 306.9,
@@ -53475,8 +53493,8 @@
     "soldier_id": "0057002727",
     "pdf_x_end": 331.6,
     "birth_place": "Prhovo, Ruma",
-    "rank": "borac",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "last_name": "Popović",
@@ -53789,7 +53807,7 @@
     "first_name": "Paja",
     "fathers_name": "",
     "full_name": "Popović Paja",
-    "additional_info": "roćev 1926. Prhovo, Ruma, zemljoradvik, borac, ranjen 26. 9. 1944. Lešnica, Srbija.",
+    "additional_info": "roćev 1926. Prhovo, Ruma, zemljoradnik, borac, ranjen 26. 9. 1944. Lešnica, Srbija.",
     "birth_year": "",
     "pdf_page": 139,
     "pdf_y": 450.8,
@@ -53798,8 +53816,8 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057002745",
     "pdf_x_end": 333.1,
-    "rank": "borac",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "last_name": "Popović",
@@ -55985,7 +56003,7 @@
     "first_name": "Nenad",
     "fathers_name": "N",
     "full_name": "Radmanović N Nenad",
-    "additional_info": "rođen 1915. Adaševci, Šid, zemljooadnik, borac.",
+    "additional_info": "rođen 1915. Adaševci, Šid, zemljoradnik, borac.",
     "birth_year": "1915",
     "pdf_page": 142,
     "pdf_y": 377.5,
@@ -55995,6 +56013,7 @@
     "soldier_id": "0057002860",
     "pdf_x_end": 342.6,
     "birth_place": "Adaševci, Šid",
+    "occupation": "zemljoradnik",
     "rank": "borac"
   },
   {
@@ -56549,7 +56568,7 @@
     "first_name": "Slavko",
     "fathers_name": "",
     "full_name": "Radosavljević Slavko",
-    "additional_info": "rođen 1923. u s. Karlovčić, Pećinci, zemljoradnik, borac, pogikuo 29. 4. 1944- Stupari, Birač, istočna Bosna.",
+    "additional_info": "rođen 1923. u s. Karlovčić, Pećinci, zemljoradnik, borac, poginuo 29. 4. 1944- Stupari, Birač, istočna Bosna.",
     "birth_year": "1923",
     "pdf_page": 31,
     "pdf_y": 197.6,
@@ -56560,6 +56579,8 @@
     "pdf_x_end": 327.9,
     "birth_place": "Karlovčić, Pećinci",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "29. 4. 1944",
     "rank": "borac"
   },
   {
@@ -60205,7 +60226,7 @@
     "first_name": "Jovan",
     "fathers_name": "G",
     "full_name": "Sapunnin G Jovan",
-    "additional_info": "rođen 1R25. Stapi Kallovii, Novi Sac, zemljo-rztgnik. bolap. g>anjen 25. 4. 1945. Ovčara, Polpavina.",
+    "additional_info": "rođen 1R25. Stapi Kallovii, Novi Sac, zemljo-rztgnik. bolap. g>ranjen 25. 4. 1945. Ovčara, Polpavina.",
     "birth_year": "",
     "pdf_page": 147,
     "pdf_y": 369.2,
@@ -60437,7 +60458,7 @@
     "first_name": "Ivanka",
     "fathers_name": "",
     "full_name": "Savić Ivanka",
-    "additional_info": "rođena 192^ GGovi Kaplovpi, Inći1a. bolničatža, -oanjena 8. <1. 1944. Bučte. ttgtočna Bosna.",
+    "additional_info": "rođena 192^ GGovi Kaplovpi, Inći1a. bolničatža, -ranjena 8. <1. 1944. Bučte. ttgtočna Bosna.",
     "birth_year": "",
     "pdf_page": 147,
     "pdf_y": 430.1,
@@ -62353,7 +62374,7 @@
     "first_name": "Žika",
     "fathers_name": "",
     "full_name": "Smuban Žika",
-    "additional_info": "/rođen 1919. s Vojka, Stara Pazova, zemljoradnik, borac, poginuo 5. 12. 1944. kod s. Opatovca, Slavonija.",
+    "additional_info": "rođen 1919. s Vojka, Stara Pazova, zemljoradnik, borac, poginuo 5. 12. 1944. kod s. Opatovca, Slavonija.",
     "birth_year": "1919",
     "pdf_page": 34,
     "pdf_y": 386.9,
@@ -62705,7 +62726,7 @@
     "first_name": "Dušan",
     "fathers_name": "",
     "full_name": "Srdanović Dušan",
-    "additional_info": "rođen 1920. Dobanovci, Zemun, berberin, politički delegat voda, ranjen 23. 3. 1944. Ratkovići, čstočna Bosna i 29. 10. 1944. u Bešenovu, Srem.",
+    "additional_info": "rođen 1920. Dobanovci, Zemun, berberin, politički delegat voda, ranjen 23. 3. 1944. Ratkovići, istočna Bosna i 29. 10. 1944. u Bešenovu, Srem.",
     "birth_year": "1920",
     "pdf_page": 150,
     "pdf_y": 392.4,
@@ -62803,7 +62824,7 @@
     "first_name": "Đura",
     "fathers_name": "",
     "full_name": "Srenkov Đura",
-    "additional_info": "rođen 1925. Bavanište, Kovin, zemljoradnik. booap lanjen 12. 1945. Nard na Dravi.",
+    "additional_info": "rođen 1925. Bavanište, Kovin, zemljoradnik. booap ranjen 12. 1945. Nard na Dravi.",
     "birth_year": "1925",
     "pdf_page": 150,
     "pdf_y": 444.2,
@@ -63033,7 +63054,7 @@
       {
         "soldier_id": "0018001617",
         "name": "Stanimirović A Ljubica",
-        "additional_info": "rođena 1920, Rača Kragujevačka Srpkinja, student, stuiila u NOVJ 1941, pomoćnik komesara brigade.",
+        "additional_info": "rođena 1920, Rača Kragujevačka Srpkinja, student, stupila u NOVJ 1941, pomoćnik komesara brigade.",
         "pdf_file": "2-vojvodjanska.pdf",
         "pdf_page": 116,
         "pdf_x": 104.6,
@@ -70701,7 +70722,7 @@
     "first_name": "Jordan",
     "fathers_name": "",
     "full_name": "Veselinović Jordan",
-    "additional_info": "rođen 1921. zamenik politkčkog komesara čete, ranjen 19. 12. 1943. Biberovo Polje, istočna Bosna.",
+    "additional_info": "rođen 1921. zamenik političkog komesara čete, ranjen 19. 12. 1943. Biberovo Polje, istočna Bosna.",
     "birth_year": "1921",
     "pdf_page": 163,
     "pdf_y": 357.6,
@@ -70709,7 +70730,8 @@
     "pdf_y_end": 384.4,
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057003593",
-    "pdf_x_end": 315.9
+    "pdf_x_end": 315.9,
+    "rank": "zamenik političkog komesara čete"
   },
   {
     "last_name": "Veselinović",
@@ -71139,8 +71161,8 @@
     "first_name": "Bogdan",
     "fathers_name": "",
     "full_name": "Vidonjić Bogdan",
-    "additional_info": "rrđen 1911. Farkaždin, Zrenjanin, zemljoradnik, borac, pogin\\o 29. 10. 1944. kod Bešenova, Srem.",
-    "birth_year": "",
+    "additional_info": "rođen 1911. Farkaždin, Zrenjanin, zemljoradnik, borac, pogin\\o 29. 10. 1944. kod Bešenova, Srem.",
+    "birth_year": "1911",
     "pdf_page": 40,
     "pdf_y": 152.9,
     "pdf_x": 70.2,
@@ -71148,6 +71170,7 @@
     "pdf_file": "3-vojvodjanska.pdf",
     "soldier_id": "0057003615",
     "pdf_x_end": 351.3,
+    "birth_place": "Farkaždin, Zrenjanin",
     "occupation": "zemljoradnik",
     "rank": "borac"
   },
@@ -71576,15 +71599,16 @@
     "first_name": "Milica",
     "fathers_name": "Ž",
     "full_name": "Vladisavljević Ž Milica",
-    "additional_info": "rođena 1927. Kuzmin, Sremska Mitrovica, domaćkca, bolničarka-",
+    "additional_info": "rođena 1927. Kuzmin, Sremska Mitrovica, domaćica, bolničarka-",
     "birth_year": "1927",
     "pdf_file": "3-vojvodjanska.pdf",
     "pdf_page": 164,
     "pdf_y": 463.0,
     "pdf_x": 74.0,
-    "birth_place": "Kuzmin, Sremska Mitrovica",
     "pdf_x_end": 356.3,
-    "pdf_y_end": 482.6
+    "pdf_y_end": 482.6,
+    "birth_place": "Kuzmin, Sremska Mitrovica",
+    "occupation": "domaćica"
   },
   {
     "soldier_id": "0057004193",
@@ -79695,7 +79719,7 @@
     "first_name": "Radovan",
     "fathers_name": "",
     "full_name": "Žigić Radovan",
-    "additional_info": "rođen 1922- u s. Jakovo, Zemun, zemljoradnik, zamenik komandkra čete, poginuo 20. 7. 1944. kod Rubišnje u istočnoj Bosni.",
+    "additional_info": "rođen 1922- u s. Jakovo, Zemun, zemljoradnik, zamenik komandira čete, poginuo 20. 7. 1944. kod Rubišnje u istočnoj Bosni.",
     "birth_year": "1922",
     "pdf_page": 42,
     "pdf_y": 340.8,
@@ -79707,7 +79731,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "20. 7. 1944",
-    "death_place": "kod Rubišnje u istočnoj Bosni"
+    "death_place": "kod Rubišnje u istočnoj Bosni",
+    "rank": "zamenik komandira čete"
   },
   {
     "last_name": "Žigmand",

@@ -314,6 +314,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 13): padli borci z območja okraja Gračac 1941–1945 (str. 917–965), po občinah, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
     'hak-7-plascanska-dolina':
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 7): padli borci iz Plaščanske doline in okolice 1941–1945 (str. 689–701), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
+    'krusevac-1944-poginuli':
+      'Seznam borcev, padlih v bojih za osvoboditev Kruševca septembra in oktobra 1944, po enotah: 4. proleterska črnogorska, 3., 6. in 17. srbska brigada ter Poveljstvo kruševačkega vojnega področja (str. 273–283), z rojstvom in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'u-rovovima-srema-poginuli':
+      'Seznam borcev, padlih na sremski fronti (str. 230–267), po brigadah in krajih, kjer so padli, samo imena, včasih z dolžnostjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on, po imenu, brigadi in kraju smrti.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -617,6 +621,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од зборникот на Историскиот архив во Карловац (кн. 13): паднатите борци од околијата Грачац 1941–1945 (стр. 917–965), по општини, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
     'hak-7-plascanska-dolina':
       'Од зборникот на Историскиот архив во Карловац (кн. 7): паднатите борци од Плашчанската долина и околината 1941–1945 (стр. 689–701), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
+    'krusevac-1944-poginuli':
+      'Список на борците загинати во борбите за ослободувањето на Крушевац во септември и октомври 1944, по единици: 4. пролетерска црногорска, 3., 6. и 17. српска бригада и Командата на крушевачкото воено подрачје (стр. 273–283), со раѓање и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'u-rovovima-srema-poginuli':
+      'Список на борците загинати на Сремскиот фронт (стр. 230–267), по бригади и по местото каде што паднале, само имиња, понекогаш со должноста. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој, по име, бригада и место на загинувањето.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -919,6 +927,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From the Karlovac Historical Archive’s collection (vol. 13): the fighters from the district of Gračac who fell in 1941–1945 (pp. 917–965), by municipality, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
     'hak-7-plascanska-dolina':
       'From the Karlovac Historical Archive’s collection (vol. 7): the fighters from the Plaški valley and its surroundings who fell in 1941–1945 (pp. 689–701), by municipality and village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
+    'krusevac-1944-poginuli':
+      'The fighters killed in the battles for the liberation of Kruševac in September and October 1944, by unit: the 4th Montenegrin Proletarian, the 3rd, 6th and 17th Serbian Brigades and the Kruševac military area command (pp. 273–283), with birth and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'u-rovovima-srema-poginuli':
+      'The fighters killed on the Srem front (pp. 230–267), by brigade and by the place where they fell, names only, sometimes with a duty. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain, by name, brigade and place of death.',
   },
 }
 

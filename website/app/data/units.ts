@@ -86,7 +86,7 @@ export const units: Unit[] = [
     nameEn: '4th Split Assault Brigade',
     description: 'Formirana u septembru 1943. Poginuli i preživeli borci.',
     image: '/images/4-splitska-brigada.jpg',
-    soldierCount: 3078,
+    soldierCount: 3080,
     dataFile: '/4-splitska-soldiers.json',
     pdfFiles: ['/pdfs/4-splitska-brigada.pdf']
   },
@@ -586,7 +586,7 @@ export const units: Unit[] = [
     nameEn: 'Kalnik Partisan Detachment',
     description: 'Formiran 10. oktobra 1942. u Bijeloj kod Daruvara. Borci odreda, poginuli i preživeli.',
     image: '/images/kalnicki-odred.jpg',
-    soldierCount: 3273,
+    soldierCount: 3276,
     dataFile: '/kalnicki-odred-soldiers.json',
     pdfFiles: ['/pdfs/kalnicki-odred.pdf']
   },
@@ -746,7 +746,7 @@ export const units: Unit[] = [
     nameEn: '22nd Serbian (Kosmaj) Brigade',
     description: 'Formirana 12. septembra 1944. na Brdnjaku kod Drugovca. Poginuli i preživeli borci i starešine.',
     image: '/images/22-srpska-brigada.jpg',
-    soldierCount: 1300,
+    soldierCount: 1313,
     dataFile: '/22-srpska-soldiers.json',
     pdfFiles: ['/pdfs/22-srpska.pdf']
   },
@@ -886,7 +886,7 @@ export const units: Unit[] = [
     nameEn: '10th Serbian Brigade',
     description: 'Formirana 8. maja 1944. u Jabukoviku kod Crne Trave. Poginuli, umrli i nestali borci i rukovodioci brigade.',
     image: '/images/10-srpska-brigada.jpg',
-    soldierCount: 376,
+    soldierCount: 377,
     dataFile: '/10-srpska-soldiers.json',
     pdfFiles: ['/pdfs/10-srpska.pdf']
   },
@@ -896,7 +896,7 @@ export const units: Unit[] = [
     nameEn: '23rd Serbian Brigade',
     description: 'Formirana 2. septembra 1944. u Šuman Topli kod Knjaževca. Poginuli i umrli borci i rukovodioci brigade.',
     image: '/images/23-srpska-brigada.jpg',
-    soldierCount: 467,
+    soldierCount: 469,
     dataFile: '/23-srpska-soldiers.json',
     pdfFiles: ['/pdfs/23-srpska.pdf']
   },
@@ -906,7 +906,7 @@ export const units: Unit[] = [
     nameEn: '12th Serbian Brigade',
     description: 'Formirana 22. maja 1944. na Ostrozubu, južno od Bistrice. Poginuli i umrli borci i rukovodioci brigade.',
     image: '/images/12-srpska-brigada.jpg',
-    soldierCount: 425,
+    soldierCount: 426,
     dataFile: '/12-srpska-soldiers.json',
     pdfFiles: ['/pdfs/12-srpska.pdf']
   },
@@ -1227,7 +1227,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 7334,
+    soldierCount: 11185,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   }

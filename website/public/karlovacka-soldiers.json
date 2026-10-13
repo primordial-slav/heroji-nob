@@ -1344,21 +1344,21 @@
     "first_name": "Ivan",
     "fathers_name": "Janko",
     "full_name": "Bert Janka Ivan",
-    "additional_info": ".1904, Ribnik. Stupio u NOV 1. 8. 1944, borac 4. bat. Poginuo kod Mavračića 23. 10. 1944.",
+    "additional_info": "1904, Ribnik. Stupio u NOV 1. 8. 1944, borac 4. bat. Poginuo kod Mavračića 23. 10. 1944.",
     "birth_year": "1904",
     "birth_place": "Ribnik",
-    "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 193.9,
     "pdf_x": 91.8,
     "pdf_y_end": 219.7,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000058",
-    "death_date": "23. 10. 1944",
     "death_place": "kod Mavračića",
+    "pdf_x_end": 255.8,
+    "death_type": "poginuo",
+    "death_date": "23. 10. 1944",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 255.8,
     "other_sources": [
       {
         "soldier_id": "0097000079",
@@ -7945,10 +7945,9 @@
     "first_name": "Ivan",
     "fathers_name": "Petar",
     "full_name": "Katić Petra Ivan",
-    "additional_info": ",1912, Dobrinići, Generalski Stol. Stupio u NOV 20. 9. 1943, borac 2. bat. Poginuo kod Tobolića 7. 4. 1945.",
+    "additional_info": "1912, Dobrinići, Generalski Stol. Stupio u NOV 20. 9. 1943, borac 2. bat. Poginuo kod Tobolića 7. 4. 1945.",
     "birth_year": "1912",
     "birth_place": "Dobrinići, Generalski Stol",
-    "death_type": "poginuo",
     "pdf_page": 28,
     "pdf_y": 283.5,
     "pdf_x": 96.0,
@@ -7980,11 +7979,12 @@
         "unit_file": "34-divizija-soldiers.json"
       }
     ],
+    "pdf_x_end": 262.7,
+    "death_type": "poginuo",
     "death_date": "7. 4. 1945",
     "death_place": "Tobolić",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 262.7
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Katkić",
@@ -12481,10 +12481,9 @@
     "first_name": "Petar",
     "fathers_name": "",
     "full_name": "Mrljak Petar",
-    "additional_info": ",1918, Fratrovci, Ozalj. Stupio u NOV 19. 1. 1944, borac 3. bat. Strijeljan radi grubog narušavanja discipline i moralnog lika borca u ljeto 1944.",
+    "additional_info": "1918, Fratrovci, Ozalj. Stupio u NOV 19. 1. 1944, borac 3. bat. Strijeljan radi grubog narušavanja discipline i moralnog lika borca u ljeto 1944.",
     "birth_year": "1918",
     "birth_place": "Fratrovci, Ozalj",
-    "death_type": "streljan",
     "pdf_page": 30,
     "pdf_y": 380.8,
     "pdf_x": 280.7,
@@ -12516,11 +12515,12 @@
         "unit_file": "34-divizija-soldiers.json"
       }
     ],
+    "pdf_x_end": 442.0,
+    "death_place": "Sud. i strelj.",
+    "death_type": "streljan",
     "death_date": "ljeto 1944",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 442.0,
-    "death_place": "Sud. i strelj."
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Muhić",
