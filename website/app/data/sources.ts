@@ -1577,6 +1577,15 @@ export const sources: PdfSource[] = [
     description: 'Spiskovi boraca poginulih na Sremskom frontu od oktobra 1944. do aprila 1945, po divizijama i brigadama, svaki posle kratke istorije jedinice: samo imena, ponekad s očevim inicijalom. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, po imenu, brigadi i vremenu pogibije. Spiskovi palih crvenoarmejaca s kraja knjige nisu uneti.'
   },
   {
+    id: '1-krajiska',
+    title: 'Prva krajiška udarna proleterska brigada',
+    author: 'Milorad Gončin, Stevo Rauš',
+    pdfPath: '/pdfs/1-krajiska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-krajiska.jpg',
+    brigadeName: '1. krajiška proleterska udarna brigada',
+    description: 'Spisak poginulih, umrlih i nestalih boraca brigade, 2.127 imena: rođenje, kada su stupili u NOB i u brigadu, četa i bataljon, dužnost, kada i gde su pali i gde su sahranjeni (str. 331–442). Podatke je istražio i obradio Slobodan Spegar Spego.'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',
