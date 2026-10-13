@@ -268,6 +268,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '5-srpska':
+      'Seznam padlih in umrlih borcev in starešin brigade (priloga št. 2): leto in kraj rojstva, poklic, kdaj je kdo stopil v NOVJ, bataljon in dolžnost, kdaj in kje je padel in kje je pokopan (str. 450–510).',
     'cacanski-odred':
       'Padli borci odreda, po pokrajinah (Dragačevo, Ljubić, Trnava, Takovo, Čačak) in vaseh: oče, poklic, rojstvo, bataljon, v katerem se je boril, in kako in kje je padel.',
     'mostarski-bataljon':
@@ -589,6 +591,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '5-srpska':
+      'Список на загинатите и умрените борци и раководители на бригадата (прилог бр. 2): година и место на раѓање, занимање, кога кој стапил во НОВЈ, баталјон и должност, кога и каде загинал и каде е погребан (стр. 450–510).',
     'cacanski-odred':
       'Загинатите борци на одредот, по краеви (Драгачево, Љубиќ, Трнава, Таково, Чачак) и села: татко, занимање, раѓање, баталјонот во кој се борел и како и каде загинал.',
     'mostarski-bataljon':
@@ -909,6 +913,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '5-srpska':
+      'The brigade’s fallen and dead fighters and officers (appendix 2): year and place of birth, trade, when each joined the army, battalion and duty, when and where they fell and where they are buried (pp. 450–510).',
     'cacanski-odred':
       'The detachment’s fallen, by district (Dragačevo, Ljubić, Trnava, Takovo, Čačak) and village: father, trade, birth, the battalion each fought in, and how and where they died.',
     'mostarski-bataljon':

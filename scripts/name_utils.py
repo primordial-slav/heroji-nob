@@ -1162,6 +1162,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    127: {
+        'name': '5. Srpska',
+        'json_file': '5-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "АКСЕНТИЈЕВИЋ Јована МИЛОЉУБ, 1914, Бољковци, Горњи Милановац, ..." (Cyrillic)
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
 }
 
 

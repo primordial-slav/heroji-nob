@@ -1622,6 +1622,15 @@ export const sources: PdfSource[] = [
     description: 'Pali borci odreda, po krajevima (Dragačevo, Ljubić, Trnava, Takovo, Čačak) i selima: otac, zanimanje, rođenje, bataljon u kome je borac bio i kako je i gde poginuo.'
   },
   {
+    id: '5-srpska',
+    title: 'Peta srpska NOU brigada',
+    author: 'Stanimir Jovanović, Dragoljub Mirčetić',
+    pdfPath: '/pdfs/5-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/5-srpska.jpg',
+    brigadeName: '5. srpska brigada',
+    description: 'Spisak poginulih i umrlih boraca i rukovodilaca brigade (prilog br. 2): godina i mesto rođenja, zanimanje, kada je ko stupio u NOVJ, bataljon i dužnost, kada i gde je pao i gde je sahranjen (str. 450–510).'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',

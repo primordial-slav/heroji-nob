@@ -139,4 +139,5 @@ These units keep their current image (the book's first page, or a photo flagged 
 |---|---|
 | Požarevački NOP odred | Nothing in the znaci.org gallery names the unit; its book hasn't been checked (`--book`). |
 | Prva naoružana pionirska partizanska četa | Nothing in the gallery names the company, and its book (Matić, Ratnici od puške manji, 2003) prints no photo of it: the card shows the book's cover. |
+| 5. srpska brigada | Nothing in the gallery names the brigade, and its book (Jovanović, Mirčetić, Peta srpska NOU brigada) prints only maps: the card shows the first page of its list of the fallen. |
 | 1. proleterski bataljon Hrvatske | Nothing in the gallery names the battalion. The card's photo is from its own book in the Poreklo library (Mamula et al., Prvi proleterski bataljon Hrvatske, 1983, p. 260: 'Narod iz sela Sjeničaka donosi hranu borcima Prvog proleterskog bataljona'), cut from the page scan by hand (not by --apply). |

@@ -589,6 +589,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '5-srpska-brigada': {
+    name: '5. srbska brigada',
+    description: 'Ustanovljena 14. januarja 1944 v Veliki Plani pri Prokuplju kot 3. južnomoravska brigada. Padli in umrli borci in starešine brigade.',
+  },
   'cacanski-odred': {
     name: 'Čačanski partizanski odred „Dr. Dragiša Mišović“',
     description: 'Ustanovljen 6. julija 1941 v Kulinovcih pri Čačku. Padli borci odreda, po pokrajinah in vaseh.',
@@ -1190,6 +1194,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '5-srpska-brigada': {
+    name: '5-та српска бригада',
+    description: 'Формирана на 14 јануари 1944 во Велика Плана кај Прокупље како 3-та јужноморавска бригада. Загинатите и умрените борци и раководители на бригадата.',
   },
   'cacanski-odred': {
     name: 'Чачански партизански одред „Д-р Драгиша Мишовиќ“',
@@ -1794,6 +1802,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '5-srpska-brigada': {
+    name: '5th Serbian Brigade',
+    description: 'Formed on 14 January 1944 at Velika Plana near Prokuplje as the 3rd South Morava Brigade. The brigade’s fallen and dead fighters and officers.',
   },
   'cacanski-odred': {
     name: 'Čačak Partisan Detachment “Dr Dragiša Mišović”',

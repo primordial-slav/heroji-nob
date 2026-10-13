@@ -33,6 +33,10 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '5-srpska-brigada': {
+    date: '1944-01-14', place: 'Velika Plana (Prokuplje)', source: 'https://znaci.org/00001/86_2.pdf',
+    note: 'Jovanović, Mirčetić, Peta srpska NOU brigada (pogl. „Brigada je rođena“): Treća južnomoravska brigada formirana je naredbom Glavnog štaba NOV i PO Srbije; o njenom osnivanju „tog dana, 14. januara 1944. godine … u selu Velika Plana (toplička) kod Prokuplja“ izveštava Nedeljko Karaičić.',
+  },
   'cacanski-odred': {
     date: '1941-07-06', place: 'Kulinovci (Čačak)', source: 'https://znaci.org/00001/51_4.pdf',
     note: 'Pantelić, Marinković, Nikšić, Čačanski NOP odred (pogl. „Formiranje Čačanskog NOP odreda“): na sastanku Okružnog komiteta KPJ „u Kulinovcima, u kući braće Desimira i Ratka Vasiljevića, 6. jula“ imenovan je štab odreda; ustanak je počeo sutradan, na Ivanjdan 7. jula, kod manastira Stjenik.',

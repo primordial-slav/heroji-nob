@@ -482,6 +482,11 @@ UNITS = {
     "cacanski-odred": dict(
         name="Čačanski NOP odred", tags=[],
         caption=r"[cč]a[cč]ansk\w*\s+(?:nop\s+|narodnooslobodila[cč]k\w*\s+)?(?:partizansk\w*\s+)?odred", photo=14459),
+    "5-srpska-brigada": dict(
+        name="5. srpska brigada", tags=[],
+        caption=nth(5, r"srpsk") + r"|(?:3\.|tre[cć]\w*)\s+ju[zž]nomoravsk", photo=None,
+        note="Nothing in the gallery names the brigade, and its book (Jovanović, Mirčetić, Peta srpska NOU brigada) "
+             "prints only maps: the card shows the first page of its list of the fallen."),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,

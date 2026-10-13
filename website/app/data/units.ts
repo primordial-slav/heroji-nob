@@ -1261,6 +1261,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/cacanski-odred.pdf']
   },
   {
+    id: '5-srpska-brigada',
+    name: '5. srpska brigada',
+    nameEn: '5th Serbian Brigade',
+    description: 'Formirana 14. januara 1944. u Velikoj Plani kod Prokuplja kao 3. južnomoravska brigada. Poginuli i umrli borci i rukovodioci brigade.',
+    image: '/images/pdf-thumbs/5-srpska.jpg',
+    soldierCount: 892,
+    dataFile: '/5-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/5-srpska.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',
