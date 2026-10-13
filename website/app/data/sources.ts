@@ -604,6 +604,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: 'prva-proleterska-stroj-u-rudom',
+    title: 'Prva proleterska brigada — borci brigade na dan njenog osnivanja (stroj u Rudom)',
+    author: 'Miloš Vuksanović',
+    pdfPath: '/pdfs/prva-proleterska-stroj-u-rudom.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-proleterska-stroj-u-rudom.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Borci koji su 21. decembra 1941. stajali u stroju u Rudom, po štabovima, bataljonima i četama: rođenje, zanimanje, dužnost i šta je s kim bilo u ratu (str. 433–492). Zvezdica uz ime označava borca koji je poginuo u ratu.'
+  },
+  {
     id: 'borci-sutjeske-druga-proleterska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',

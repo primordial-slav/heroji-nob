@@ -88,6 +88,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-prva-proleterska':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'prva-proleterska-stroj-u-rudom':
+      'Borci, ki so 21. decembra 1941 stali v zboru v Rudem, po štabih, bataljonih in četah: rojstvo, poklic, dolžnost in kaj se je s kom zgodilo v vojni (str. 433–492). Zvezdica ob imenu označuje borca, ki je padel v vojni.',
     'borci-sutjeske-druga-proleterska':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-treca-proleterska':
@@ -349,6 +351,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-prva-proleterska':
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
+    'prva-proleterska-stroj-u-rudom':
+      'Борците што на 21 декември 1941 стоеја во строј во Рудо, по штабови, баталјони и чети: раѓање, занимање, должност и што било со секого во војната (стр. 433–492). Ѕвездичката до името го означува борецот што загинал во војната.',
     'borci-sutjeske-druga-proleterska':
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-treca-proleterska':
@@ -609,6 +613,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-prva-proleterska':
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
+    'prva-proleterska-stroj-u-rudom':
+      'The men and women in the line-up at Rudo on 21 December 1941, when the brigade was formed, by staff, battalion and company: birth, trade, duty and what became of each in the war (pp. 433–492). An asterisk by a name marks one who fell in the war.',
     'borci-sutjeske-druga-proleterska':
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-treca-proleterska':
@@ -827,6 +833,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spiskovi poginulih i rukovodilaca': 'seznama padlih in vodstva',
     'ilustrovana monografija (1942—1992)': 'ilustrirana monografija (1942–1992)',
     'borci brigade na Sutjesci': 'borci brigade na Sutjeski',
+    'borci brigade na dan njenog osnivanja (stroj u Rudom)': 'borci brigade na dan ustanovitve (zbor v Rudem)',
   },
   mk: {
     'tom 1': 'том 1',
@@ -857,6 +864,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spiskovi poginulih i rukovodilaca': 'списоци на загинатите и на раководството',
     'ilustrovana monografija (1942—1992)': 'илустрирана монографија (1942–1992)',
     'borci brigade na Sutjesci': 'борците на бригадата на Сутјеска',
+    'borci brigade na dan njenog osnivanja (stroj u Rudom)': 'борците на бригадата на денот на формирањето (строј во Рудо)',
   },
   en: {
     'tom 1': 'volume 1',
@@ -887,6 +895,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spiskovi poginulih i rukovodilaca': 'the fallen and the leaders',
     'ilustrovana monografija (1942—1992)': 'illustrated history (1942–1992)',
     'borci brigade na Sutjesci': 'the brigade at the Sutjeska',
+    'borci brigade na dan njenog osnivanja (stroj u Rudom)': 'the brigade on the day it was formed (the line-up at Rudo)',
   },
 }
 
