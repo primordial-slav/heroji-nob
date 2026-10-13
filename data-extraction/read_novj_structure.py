@@ -1,12 +1,14 @@
 """
-The order of battle of the NOVJ: the detachment, brigade, division, operational zone and corps tables ("Pregledi") of
+The order of battle of the NOVJ: the detachment, brigade, division, operational zone, corps and territorial tables ("Pregledi") of
 Nikola Anić, Sekula Joksimović, Mirko Gutić, Narodnooslobodilačka vojska Jugoslavije - pregled razvoja oružanih snaga
-narodnooslobodilačkog pokreta 1941-1945 (znaci.org 00003/523, book pp. 589-860), read into data-extraction/novj/:
+narodnooslobodilačkog pokreta 1941-1945 (znaci.org 00003/523, book pp. 589-868), read into data-extraction/novj/:
 detachments.json (512 of the 556 partisan odredi: the scan lacks the spreads with rows 36-45, 394-406, 458-470 and
 541-547, and row 324's first lines), brigades.json (367), divisions.json (68: the NOVJ's, KNOJ's, air force and Italian
 divisions), zones.json (the 25 operational zones of Croatia, Slovenia, Macedonia, Kosovo and Metohija and Vojvodina)
 and corps.json (18), each row with its cells as printed and its periods (who it was under, and when) read from them;
-site_links.json ties the site's brigades, divisions and odredi to their rows.
+territorial.json, the military areas of April-May 1945 (95 commands by republic, each with the srezovi or kotari and
+town commands it held; the sideways column naming their military oblasti is lost, see read_territorial); and
+site_links.json, which ties the site's brigades, divisions and odredi to their rows.
 
 The tables are spreads of two book pages, each row started by its number in the first column (the zones print it at
 the head of the name); the reader finds each
@@ -241,6 +243,103 @@ def read(first, last, EDGES=EDGES, COLS=COLS, gutter=None, number_left=None):
     return rows
 
 
+# the territorial table: one book page a PDF page, three columns (the military oblast printed sideways, the command
+# of each military area, the srezovi or kotari and the town commands it held), republics as headings
+TERRITORIAL = (790, 795)
+LABELS = (r'Samostalne komande mesta:?|Samostalna komanda mesta:?|Komande mesta:|Srezovi:|Kotari:|Katari:'
+          r'|Srez(?=\s)|Kotar(?=\s)')
+TERRITORIAL_NOTES = {
+    'Komanda bridskog vojnog područja': ('Komanda brodskog vojnog područja',
+                                         'printed "bridskog", which the errata turns into "brdskog"; its kotari '
+                                         '(slavonskobrodski, đakovački, županjski) are those of Slavonski Brod'),
+    'Komanda novogradiškog vojnog područja|Kotar slunjski': (None, 'printed so; the row after it is the II kordunaško '
+                                                             'area, and Slunj and Plaški are on Kordun'),
+}
+
+
+def items(text: str) -> list[str]:
+    """"Sokolovići, Sočice, Glasinac i Prača" -> four places; a comma or "i" inside brackets ("(Caribrod, danas
+    Dimitrovgrad)") stays"""
+    out, depth, cur = [], 0, ''
+    for ch in text:
+        depth += (ch == '(') - (ch == ')')
+        if ch == ',' and depth == 0:
+            out.append(cur)
+            cur = ''
+        else:
+            cur += ch
+    out.append(cur)
+    res = []
+    for part in out:
+        res += re.split(r'\s+i\s+(?![^(]*\))', part)
+    return [p.strip(' .;') for p in res if p.strip(' .;')]
+
+
+def spaced(t: str) -> str:
+    """Letters the OCR set apart: "š k o f j a Loka" -> "škofja Loka", "romani j skog" -> "romanijskog" """
+    t = re.sub(r'\b(?:\w ){2,}\w\b', lambda m: m.group(0).replace(' ', ''), t)
+    return re.sub(r'(?<=[a-zčćžšđ]) j (?=[a-zčćžšđ])', 'j', t)
+
+
+def read_territorial(first=TERRITORIAL[0], last=TERRITORIAL[1]):
+    """Each military area's command and what it held, by republic. The sideways column of military oblasti is lost:
+    znaci.org re-typeset these pages from the OCR, which left only debris in that column ("9l", "H M ci") and drew a
+    rule under every row, so neither the oblast's name nor its rows can be read."""
+    doc = fitz.open(PDF)
+    rows, section = [], ''
+    for pg in range(first, last + 1):
+        page = doc[pg - 1]
+        words = [w for w in page.get_text('words') if w[4].strip()]
+        left = min(w[0] for w in words if w[4] == 'Komanda' and w[0] < 200)   # column 2; column 1 is debris
+        words = [w for w in words if w[0] >= left - 4]
+        lines = lines_of(words)
+        # the column heads: the lines about the one with "u sastavu", up to the first gap between rows
+        i = next(k for k, (mid, ws) in enumerate(lines) if any('sastavu' in w[4] for w in ws))
+        while i + 1 < len(lines) and lines[i + 1][0] - lines[i][0] <= 11:
+            i += 1
+        head = lines[i][0]
+        foot = next((mid for mid, ws in lines if re.match(r"^['’]?\d?\)", ws[0][4]) and mid > head), 1e9)
+        col3 = min(w[0] for w in words if re.match(LABELS, w[4]) and w[0] > left + 90) - 3
+        groups, prev = [], -1e9
+        for mid, ws in lines:
+            if mid <= head + 2 or mid >= foot - 2:
+                continue
+            t = ' '.join(w[4] for w in ws)
+            if re.fullmatch(r'[A-ZČĆŽŠĐ ]{5,}', t):
+                groups.append(('section', t))
+            elif mid - prev > 11 or not groups or groups[-1][0] == 'section':
+                groups.append(('row', [(mid, ws)]))
+            else:
+                groups[-1][1].append((mid, ws))
+            prev = mid
+        for kind, g in groups:
+            if kind == 'section':
+                section = g
+                continue
+            cmd = join(' '.join(w[4] for w in ws if w[0] < col3) for _, ws in g)
+            text = join(' '.join(w[4] for w in ws if w[0] >= col3) for _, ws in g)
+            row = {'section': section, 'command': spaced(clean(cmd)), 'composition': spaced(clean(text)),
+                   'pdf_page': pg}
+            parts = re.split(rf'({LABELS})\s*', row['composition'])
+            for label, content in zip(parts[1::2], parts[2::2]):
+                key_ = ('samostalne_komande_mesta' if label.startswith('Samostaln') else
+                        'komande_mesta' if label.startswith('Komand') else 'srezovi')
+                for it in items(content):
+                    city = re.match(r'(?:Komanda grada)\s+(.+)', it)
+                    if city:
+                        row.setdefault('komande_grada', []).append(city.group(1))
+                    else:
+                        row.setdefault(key_, []).append(it)
+            for k, (name, note) in TERRITORIAL_NOTES.items():
+                cmd_k, _, comp_k = k.partition('|')
+                if row['command'] == cmd_k and comp_k in row['composition']:
+                    if name:
+                        row['command_printed'], row['command'] = row['command'], name
+                    row['note'] = note
+            rows.append(row)
+    return rows
+
+
 ORD = {'prva': 1, 'prvi': 1, 'druga': 2, 'drugi': 2, 'treća': 3, 'treći': 3, 'četvrta': 4, 'četvrti': 4, 'peta': 5,
        'peti': 5, 'šesta': 6, 'šesti': 6, 'sedma': 7, 'sedmi': 7, 'osma': 8, 'osmi': 8, 'deveta': 9, 'deveti': 9,
        'deseta': 10, 'deseti': 10, 'jedanaesta': 11, 'jedanaesti': 11, 'dvanaesta': 12, 'dvanaesti': 12,
@@ -413,6 +512,7 @@ def main():
             o['section'] = 'NOP ODREDI CRNE GORE I SANDŽAKA'
         if o['no'] > 540:      # Kosovo's heading is on a spread the scan lacks; Vojvodina's rows end at 540 (Ž)
             o['section'] = 'NOP ODREDI KOSOVA I METOHIJE'
+    tables['territorial'] = read_territorial()
     OUT.mkdir(exist_ok=True)
     for name, rows in tables.items():
         (OUT / f'{name}.json').write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding='utf-8')
