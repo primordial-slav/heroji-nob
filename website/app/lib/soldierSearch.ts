@@ -385,25 +385,34 @@ interface WordMatch {
   unitsAsTyped: Uint8Array
 }
 
-function matchWord(index: SoldierIndex, typed: string, wholeOnly: boolean, alone: boolean): WordMatch {
-  const { ids, words: vocab, nameAt, names, entryAt, entries } = index
-  const worth = new Float32Array(index.size)
-  const part = new Uint8Array(index.size)
-  const asTyped = new Uint8Array(index.size)
-  const touched: number[] = []
-  const give = (i: number, value: number, of: number, how: number) => {
-    if (worth[i] === 0) touched.push(i)
-    if (value > worth[i]) {
-      worth[i] = value
-      part[i] = of
-    }
-    if (how >= MISREAD) asTyped[i] = 1
+/** The soldiers' words a typed word matches, with what each is worth: in names, as a father, in entries, as a place */
+interface WordsMatched {
+  inName: Map<number, number>
+  asFather: Map<number, number>
+  inEntry: Map<number, number>
+  asPlace: Map<number, number>
+}
+
+// Comparing a typed word with every word of the soldiers' is most of a search, and its outcome depends on the word
+// alone, so it is kept for the words typed last: "Milan Petrović" after "Milan" compares "milan" only once. The
+// same maps come back, in the same order, so the results are the same
+const KEPT_WORDS = 300
+const matchedWords = new WeakMap<SoldierIndex, Map<string, WordsMatched>>()
+
+function wordsMatching(index: SoldierIndex, typed: string, wholeOnly: boolean): WordsMatched {
+  let kept = matchedWords.get(index)
+  if (!kept) matchedWords.set(index, (kept = new Map()))
+  const key = (wholeOnly ? '=' : '~') + typed
+  const known = kept.get(key)
+  if (known) {
+    // Last used last
+    kept.delete(key)
+    kept.set(key, known)
+    return known
   }
+  const { ids, words: vocab } = index
   const numeric = /^\d+$/.test(typed)
   const exact = ids.get(typed)
-  // A word typed alone counts for more as a surname than as a given name only when it looks like a surname:
-  // "Jelić" lists the Jelićs first, "Branko" the Brankos, wherever the book prints the name
-  const where = alone && !SURNAME_LIKE.test(typed) ? AS_GIVEN : WHERE
 
   // Names: what each matching word is worth, and what it is worth as a father (another case counts there)
   const inName = new Map<number, number>()
@@ -428,24 +437,13 @@ function matchWord(index: SoldierIndex, typed: string, wholeOnly: boolean, alone
       if (typed.length >= 4 && word.length > typed.length && word.indexOf(typed, 1) > 0) keep(inName, w, INSIDE)
     }
   }
-  const credit = (w: number, value: number, father: number) => {
-    for (let p = nameAt[w]; p < nameAt[w + 1]; p++) {
-      const role = names[p] & 7
-      const how = role === FATHER ? Math.max(value, father) : value
-      if (how > 0) give(names[p] >> 3, how * where[role], PART_OF[role], how)
-    }
-  }
-  for (const [w, value] of inName) credit(w, value, asFather.get(w) ?? 0)
-  for (const [w, father] of asFather) if (!inName.has(w)) credit(w, 0, father)
 
-  // Entries: places, years, duties. A short word there is often an abbreviation or a day ("jel.", "st.", "13."),
-  // so it counts for less than a name that starts with it; one letter is not looked for
+  // Entries: one letter is not looked for
+  const inEntry = new Map<number, number>()
+  // Another case counts in an entry only for a word with a capital, a place or a name: "u Gračacu", not "u radu"
+  // for "Rade"
+  const asPlace = new Map<number, number>()
   if (typed.length >= 2) {
-    const inEntryWorth = typed.length >= 4 || (numeric && typed.length === 4) ? IN_ENTRY : typed.length === 3 ? SHORT_IN_ENTRY : TINY_IN_ENTRY
-    const inEntry = new Map<number, number>()
-    // Another case counts in an entry only for a word with a capital, a place or a name: "u Gračacu", not "u radu"
-    // for "Rade"
-    const asPlace = new Map<number, number>()
     if (exact !== undefined) inEntry.set(exact, WHOLE)
     if (!wholeOnly) {
       if (!numeric && typed.length >= 4) {
@@ -465,12 +463,52 @@ function matchWord(index: SoldierIndex, typed: string, wholeOnly: boolean, alone
         }
       }
     }
-    for (const [w, value] of inEntry) {
-      for (let p = entryAt[w]; p < entryAt[w + 1]; p++) give(entries[p] >> 1, value * inEntryWorth, 0, value)
+  }
+
+  const matched = { inName, asFather, inEntry, asPlace }
+  kept.set(key, matched)
+  if (kept.size > KEPT_WORDS) kept.delete(kept.keys().next().value!)
+  return matched
+}
+
+function matchWord(index: SoldierIndex, typed: string, wholeOnly: boolean, alone: boolean): WordMatch {
+  const { nameAt, names, entryAt, entries } = index
+  const worth = new Float32Array(index.size)
+  const part = new Uint8Array(index.size)
+  const asTyped = new Uint8Array(index.size)
+  const touched: number[] = []
+  const give = (i: number, value: number, of: number, how: number) => {
+    if (worth[i] === 0) touched.push(i)
+    if (value > worth[i]) {
+      worth[i] = value
+      part[i] = of
     }
-    for (const [w, value] of asPlace) {
-      for (let p = entryAt[w]; p < entryAt[w + 1]; p++) if (entries[p] & 1) give(entries[p] >> 1, value * inEntryWorth, 0, value)
+    if (how >= MISREAD) asTyped[i] = 1
+  }
+  // A word typed alone counts for more as a surname than as a given name only when it looks like a surname:
+  // "Jelić" lists the Jelićs first, "Branko" the Brankos, wherever the book prints the name
+  const where = alone && !SURNAME_LIKE.test(typed) ? AS_GIVEN : WHERE
+  const { inName, asFather, inEntry, asPlace } = wordsMatching(index, typed, wholeOnly)
+
+  const credit = (w: number, value: number, father: number) => {
+    for (let p = nameAt[w]; p < nameAt[w + 1]; p++) {
+      const role = names[p] & 7
+      const how = role === FATHER ? Math.max(value, father) : value
+      if (how > 0) give(names[p] >> 3, how * where[role], PART_OF[role], how)
     }
+  }
+  for (const [w, value] of inName) credit(w, value, asFather.get(w) ?? 0)
+  for (const [w, father] of asFather) if (!inName.has(w)) credit(w, 0, father)
+
+  // Entries: places, years, duties. A short word there is often an abbreviation or a day ("jel.", "st.", "13."),
+  // so it counts for less than a name that starts with it
+  const numeric = /^\d+$/.test(typed)
+  const inEntryWorth = typed.length >= 4 || (numeric && typed.length === 4) ? IN_ENTRY : typed.length === 3 ? SHORT_IN_ENTRY : TINY_IN_ENTRY
+  for (const [w, value] of inEntry) {
+    for (let p = entryAt[w]; p < entryAt[w + 1]; p++) give(entries[p] >> 1, value * inEntryWorth, 0, value)
+  }
+  for (const [w, value] of asPlace) {
+    for (let p = entryAt[w]; p < entryAt[w + 1]; p++) if (entries[p] & 1) give(entries[p] >> 1, value * inEntryWorth, 0, value)
   }
 
   // Units: "proleterska", "13."
