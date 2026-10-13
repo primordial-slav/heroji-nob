@@ -135,3 +135,4 @@ These units keep their current image (the book's first page, or a photo flagged 
 | Unit | Why |
 |---|---|
 | Požarevački NOP odred | Nothing in the znaci.org gallery names the unit; its book hasn't been checked (`--book`). |
+| Prva naoružana pionirska partizanska četa | Nothing in the gallery names the company, and its book (Matić, *Ratnici od puške manji*, 2003, in the Poreklo library) prints no photo of it: the card shows the book's cover. |

@@ -1107,6 +1107,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    121: {
+        'name': 'Prva naoružana pionirska partizanska četa',
+        'json_file': 'pionirska-ceta-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "7. Matić Ise Gojko, rođen 1929. godine u Divoselu; borac od 1. 1. 1942. ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'title',
+    },
 }
 
 

@@ -461,6 +461,11 @@ UNITS = {
         name="Požarevački NOP odred", tags=[],
         caption=r"po[zž]arevač?k\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred|po[zž]arevač?k\w*\s+partizan"
                 r"|mlavsk\w*\s+(?:[cč]et|odred)|zvi[sš]k\w*\s+(?:[cč]et|odred)|majdanpe[cč]k\w*\s+(?:[cč]et|odred)", photo=None),
+    "pionirska-ceta-divoselo": dict(
+        name="Prva naoružana pionirska partizanska četa", tags=[],
+        caption=r"pionirsk\w*\s+(?:partizansk\w*\s+)?[cč]et\w*|divosel\w*\s+pionir", photo=None,
+        note="Nothing in the gallery names the company, and its book (Matić, Ratnici od puške manji, 2003) prints no "
+             "photo of it: the card shows the book's cover."),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,

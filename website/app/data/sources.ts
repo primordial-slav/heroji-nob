@@ -1322,5 +1322,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/1-proleterski-bataljon.jpg',
     brigadeName: '1. proleterski bataljon Hrvatske',
     description: 'Spisak boraca bataljona, s godinom i mestom rođenja i sudbinom (str. 262–277). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'pionirska-ceta',
+    title: 'Ratnici od puške manji',
+    author: 'Gojko Matić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009857',
+    thumbnail: '/images/pdf-thumbs/pionirska-ceta.jpg',
+    brigadeName: 'Prva naoružana pionirska partizanska četa',
+    description: 'Popis boraca čete koju je autor vodio kao komandir: rođenje, kad je ko postao borac, dužnost u četi i život posle rata (str. 125–132). Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   }
 ]

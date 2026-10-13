@@ -1209,6 +1209,16 @@ export const units: Unit[] = [
     soldierCount: 488,
     dataFile: '/1-proleterski-bataljon-soldiers.json',
     pdfFiles: []
+  },
+  {
+    id: 'pionirska-ceta-divoselo',
+    name: 'Prva naoružana pionirska partizanska četa',
+    nameEn: 'First Armed Pioneer Partisan Company',
+    description: 'Formirana 7. novembra 1942. u Divoselu kod Gospića. Borci čete, deca iz Divosela i okolnih sela.',
+    image: '/images/pdf-thumbs/pionirska-ceta.jpg',
+    soldierCount: 78,
+    dataFile: '/pionirska-ceta-soldiers.json',
+    pdfFiles: []
   }
   // Add more units here as you get more data
 ]

@@ -50,7 +50,7 @@ FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'deat
 # Units whose parser sets the fields itself and whose text is written from them, not printed: Druga proleterska's
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
 # its campaign's period would be a death date, "poginuo ili nestao" a death
-PARSER_FIELDS = {39}
+PARSER_FIELDS = {39, 121}                  # Druga proleterska; the pioneer company (its 1990s deaths are no falls)
 # Borci Sutjeske prints the duty at the battle, then "krajem rata ..." the duty at the war's end: the first is the rank
 DUTY_BEFORE_WAR_END = set(range(40, 50))
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'

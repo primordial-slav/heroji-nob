@@ -584,6 +584,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 7. maja 1942 v Korenici. Borci bataljona, do njegovega vstopa v 13. proletarsko brigado „Rade Končar“.',
   },
+  'pionirska-ceta-divoselo': {
+    name: 'Prva oborožena pionirska partizanska četa',
+    description:
+      'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
+  },
 }
 
 const mk: Record<string, UnitText> = {
@@ -1159,6 +1164,11 @@ const mk: Record<string, UnitText> = {
     name: '1. пролетерски баталјон на Хрватска',
     description:
       'Формиран на 7 мај 1942 во Кореница. Борците на баталјонот, до неговото влегување во 13. пролетерска бригада „Раде Кончар“.',
+  },
+  'pionirska-ceta-divoselo': {
+    name: 'Прва вооружена пионерска партизанска чета',
+    description:
+      'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
   },
 }
 
@@ -1737,6 +1747,11 @@ const en: Record<string, UnitText> = {
     name: '1st Proletarian Battalion of Croatia',
     description:
       'Formed on 7 May 1942 in Korenica. Its fighters, until it joined the 13th Proletarian Brigade “Rade Končar”.',
+  },
+  'pionirska-ceta-divoselo': {
+    name: 'First Armed Pioneer Partisan Company',
+    description:
+      'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
   },
 }
 
