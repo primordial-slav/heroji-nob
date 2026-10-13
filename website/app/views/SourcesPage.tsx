@@ -1,4 +1,5 @@
 import { sources } from '@/app/data/sources'
+import { isPoreklo } from '@/app/lib/records'
 import { DocumentIcon, DownloadIcon } from '@/app/components/Icons'
 import RichText from '@/app/i18n/RichText'
 import { messagesFor } from '@/app/i18n'
@@ -44,6 +45,9 @@ export default function SourcesPage({ lang }: { lang: Lang }) {
                         <DownloadIcon size={16} /> {t.download}
                       </a>
                     </>
+                  ) : isPoreklo(source.pdfPath) ? (
+                    // a book scanned in the Poreklo library: named, not linked, since only its members can open it
+                    <p className="source-library">{t.inPoreklo}</p>
                   ) : (
                     // a list published only as a web page (no scan)
                     <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">

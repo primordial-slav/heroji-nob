@@ -158,14 +158,18 @@ export const sr = {
     entries: 'Zapisi u knjigama',
     page: (p: number | string) => `str. ${p}`,
     nameInBook: 'Ime u knjizi:',
+    /** The record's other books, folded under its own entry: "Još 6 zapisa u drugim knjigama" */
+    moreEntries: (count: number) =>
+      count === 1 ? 'Još jedan zapis u drugoj knjizi' : `Još ${n(count)} ${plural('sr', count, { one: 'zapis', other: 'zapisa' })} u drugim knjigama`,
+    showPage: 'Prikaži stranu u knjizi',
     references: 'Reference',
     book: 'Knjiga',
     loadingPage: 'Učitavanje strane…',
     source: 'Izvor',
     noScan: 'Za ovaj spisak nema skenirane knjige: objavljen je kao tekst na [znaci.org].',
     /** A book scanned in the Poreklo library, which only its members can open */
-    noScanPoreklo: (page: number | null) =>
-      `Knjiga je skenirana u Digitalnoj biblioteci Porekla: [${page != null ? `strana ${page}` : 'otvori knjigu'}]. Otvaraju je samo članovi Porekla.`,
+    noScanPoreklo: (title: string, page: number | null) =>
+      `${title}${page != null ? `, strana ${page}` : ''}. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo njeni članovi.`,
     steps: 'Susedni zapisi u spisku',
     previous: 'Prethodni',
     next: 'Sledeći',
@@ -323,6 +327,8 @@ export const sr = {
     openPdf: 'Otvori PDF',
     download: 'Preuzmi',
     openList: 'Otvori spisak',
+    /** A book scanned in the Poreklo library: named, not linked, since only its members can open it */
+    inPoreklo: 'U Digitalnoj biblioteci Porekla, samo za njene članove',
     medalsTitle: 'Slike odlikovanja',
     hero:
       'Orden narodnog heroja: fotografija [Pinki, Wikimedia Commons], licenca [CC BY-SA 4.0]. Isečak i crtež ordena na ovom sajtu napravljeni su od te fotografije i objavljeni pod istom licencom.',

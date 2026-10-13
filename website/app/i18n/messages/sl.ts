@@ -146,13 +146,16 @@ export const sl: Messages = {
     entries: 'Zapisi v knjigah',
     page: (p: number | string) => `str. ${p}`,
     nameInBook: 'Ime v knjigi:',
+    moreEntries: (count: number) =>
+      count === 1 ? 'Še en zapis v drugi knjigi' : `Še ${n(count)} ${plural('sl', count, { one: 'zapis', two: 'zapisa', few: 'zapisi', other: 'zapisov' })} v drugih knjigah`,
+    showPage: 'Pokaži stran v knjigi',
     references: 'Reference',
     book: 'Knjiga',
     loadingPage: `Nalaganje strani${dots}`,
     source: 'Vir',
     noScan: 'Za ta seznam ni skenirane knjige: objavljen je kot besedilo na [znaci.org].',
-    noScanPoreklo: (page: number | null) =>
-      `Knjiga je skenirana v digitalni knjižnici Poreklo: [${page != null ? `stran ${page}` : 'odpri knjigo'}]. Odprejo jo lahko le člani Poreklo.`,
+    noScanPoreklo: (title: string, page: number | null) =>
+      `${title}${page != null ? `, stran ${page}` : ''}. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo lahko odprejo le njeni člani.`,
     steps: 'Sosednji zapisi na seznamu',
     previous: 'Prejšnji',
     next: 'Naslednji',
@@ -308,6 +311,7 @@ export const sl: Messages = {
     openPdf: 'Odpri PDF',
     download: 'Prenesi',
     openList: 'Odpri seznam',
+    inPoreklo: 'V digitalni knjižnici Poreklo, le za njene člane',
     medalsTitle: 'Slike odlikovanj',
     hero:
       'Red narodnega heroja: fotografija [Pinki, Wikimedia Commons], licenca [CC BY-SA 4.0]. Izrez in risba reda na tej strani sta narejena iz te fotografije in objavljena pod isto licenco.',
