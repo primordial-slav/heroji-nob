@@ -458,14 +458,20 @@ UNITS = {
         note="The gallery's only photo of the brigade: fighters of its 3rd battalion in the trenches of the Srem front, "
              "10 February 1945. Its book (Šijan, Treća lička brigada, 1970) is in the Poreklo library, not on znaci.org."),
     "pozarevacki-odred": dict(
-        name="Požarevački NOP odred", tags=[],
+        name="Požarevački NOP odred", tags=["pozarevacki-partizanski-odred"],
         caption=r"po[zž]arevač?k\w*\s+(?:no\s+|nop\s+|partizansk\w*\s+)*odred|po[zž]arevač?k\w*\s+partizan"
-                r"|mlavsk\w*\s+(?:[cč]et|odred)|zvi[sš]k\w*\s+(?:[cč]et|odred)|majdanpe[cč]k\w*\s+(?:[cč]et|odred)", photo=None),
+                r"|mlavsk\w*\s+(?:[cč]et|odred)|zvi[sš]k\w*\s+(?:[cč]et|odred)|majdanpe[cč]k\w*\s+(?:[cč]et|odred)", photo=5418,
+        card="Borci Požarevačkog partizanskog odreda u južnom Stigu, oko 15. avgusta 1942. godine.",
+        note="Tagged with the odred on znaci.org; the gallery's only other photo under the tag (12215) is a school group "
+             "of 1940. Its book (Popović, Požarevački NOP odred, 1992, in the Poreklo library) prints no group photo: only "
+             "named portraits of its fighters, nine a page (scan pp. 321-329)."),
     "pionirska-ceta-divoselo": dict(
         name="Prva naoružana pionirska partizanska četa", tags=[],
         caption=r"pionirsk\w*\s+(?:partizansk\w*\s+)?[cč]et\w*|divosel\w*\s+pionir", photo=None,
-        note="Nothing in the gallery names the company, and its book (Matić, Ratnici od puške manji, 2003) prints no "
-             "photo of it: the card shows the book's cover."),
+        note="Nothing in the gallery names the company (its Divoselo photos of 1942 show the village's youth company and "
+             "the 1. lički odred). The card's photo is from its own book in the Poreklo library (Matić, Ratnici od puške "
+             "manji, 2003, p. 92: 'Skupina boraca Pionirske čete u predahu borbi, Divoselo, 1944. godine'), cut from the "
+             "page scan by hand (not by --apply), with the halftone screen blurred at 1.6."),
     "1-krajiska-brigada": dict(
         name="1. krajiška proleterska brigada",
         tags=["1-krajiska-udarna-brigada"],

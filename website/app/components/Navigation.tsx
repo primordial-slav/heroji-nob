@@ -12,18 +12,20 @@ export default function Navigation() {
   const { path } = splitPath(usePathname())
   const links = [
     { href: '/', label: t.nav.home },
+    { href: '/jedinice', label: t.nav.units },
     { href: '/galerija', label: t.nav.gallery },
     { href: '/izvori', label: t.nav.sources },
   ]
 
+  // a unit's own page belongs to Jedinice
   const isActive = (href: string) =>
-    href === '/' ? path === '/' || path.startsWith('/units') : path === href
+    href === '/jedinice' ? path === href || path.startsWith('/units') : path === href
 
   return (
     <nav className="nav" aria-label={t.nav.label}>
       {links.map(({ href, label }) => {
         const props = {
-          className: isActive(href) ? 'nav-link active' : 'nav-link',
+          className: `nav-link${href === '/' ? ' nav-link-home' : ''}${isActive(href) ? ' active' : ''}`,
           'aria-current': isActive(href) ? ('page' as const) : undefined,
           children: label,
         }

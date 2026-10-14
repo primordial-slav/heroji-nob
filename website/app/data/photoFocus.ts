@@ -44,6 +44,8 @@ const FOCUS: Record<string, number> = {
   '3-primorsko-goranska': 63,
   'centralna-bolnica': 55,
   'posavsko-trebavski-odred': 34,
+  'pozarevacki-odred': 23,
+  'pionirska-ceta-divoselo': 25,
 }
 
 // The object-position for a unit's photo in a wide crop; undefined keeps the stylesheet's default

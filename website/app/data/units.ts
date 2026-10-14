@@ -1255,7 +1255,7 @@ export const units: Unit[] = [
     name: 'Požarevački NOP odred',
     nameEn: 'Požarevac Partisan Detachment',
     description: 'Formiran u avgustu 1941. u Požarevačkom okrugu. Svi borci odreda od 1941. do oktobra 1944, kad je ušao u NOVJ.',
-    image: '/images/pdf-thumbs/pozarevacki-odred.jpg',
+    image: '/images/pozarevacki-odred.jpg',
     soldierCount: 1339,
     dataFile: '/pozarevacki-odred-soldiers.json',
     pdfFiles: []
@@ -1275,7 +1275,7 @@ export const units: Unit[] = [
     name: 'Prva naoružana pionirska partizanska četa',
     nameEn: 'First Armed Pioneer Partisan Company',
     description: 'Formirana 7. novembra 1942. u Divoselu kod Gospića. Borci čete, deca iz Divosela i okolnih sela.',
-    image: '/images/pdf-thumbs/pionirska-ceta.jpg',
+    image: '/images/pionirska-ceta-divoselo.jpg',
     soldierCount: 78,
     dataFile: '/pionirska-ceta-soldiers.json',
     pdfFiles: []

@@ -12,16 +12,17 @@ export function galleryMetadata(lang: Lang) {
   return pageMetadata(lang, '/galerija', { title: t.title, description: t.description })
 }
 
-const PORTRAITS = index as Record<string, { f: string }>
+const PORTRAITS = index as Record<string, { f: string; same?: string }>
 
 // Built from the unit files (at build time, fresh on each request under next dev), so each portrait knows which
-// slice of its unit's records (/records/<unit>/<part>) holds the soldier's full record
+// slice of its unit's records (/records/<unit>/<part>) holds the soldier's full record. A man with a portrait under
+// several records (one in each unit or book that prints him) is shown once, by the record `same` names.
 function galleryItems(): GalleryItem[] {
   const items: GalleryItem[] = []
   for (const unit of units) {
     readUnitFile(unit.dataFile).forEach((s, i) => {
       const portrait = PORTRAITS[s.soldier_id]
-      if (portrait) {
+      if (portrait && !portrait.same) {
         items.push({ id: s.soldier_id, name: s.full_name, unit: unit.id, part: Math.floor(i / RECORDS_PER_PART), file: portrait.f })
       }
     })
