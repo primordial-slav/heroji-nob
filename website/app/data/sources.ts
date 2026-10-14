@@ -1838,6 +1838,42 @@ export const sources: PdfSource[] = [
     description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su samo borci; civilne žrtve, saradnici NOP-a i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: '1-tenkovski-bataljon',
+    title: 'Prvi tenkovski bataljon',
+    author: 'Vujo Vidaković',
+    pdfPath: '/pdfs/1-tenkovski-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/1-tenkovski-bataljon.jpg',
+    brigadeName: 'Prvi tenkovski bataljon',
+    description: 'Popis pripadnika Tenkovskog voda Grupe partizanskih odreda za Liku, Tenkovske čete 1. korpusa i Tenkovskog bataljona Glavnog štaba NOV i PO Hrvatske (251 ime, str. 337–340).'
+  },
+  {
+    id: '3-diverzantski-odred',
+    title: 'Treći diverzantski odred',
+    author: 'Vukašin Karanović',
+    pdfPath: '/pdfs/3-diverzantski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/3-diverzantski-odred.jpg',
+    brigadeName: 'Treći diverzantski odred',
+    description: 'Pregled boraca i starešina 3. diverzantske grupe, čete, bataljona i odreda (imena, sa oznakom poginulih i umrlih posle rata) i pregled poginulih diverzanata sa dužnošću i godinom (prilog IV, str. 587–591).'
+  },
+  {
+    id: '1-2-prekomorska',
+    title: 'Prva in druga prekomorska brigada',
+    author: 'Srečko Vilhar, Albert Klun',
+    pdfPath: '/pdfs/1-2-prekomorska.pdf',
+    thumbnail: '/images/pdf-thumbs/1-2-prekomorska.jpg',
+    brigadeName: '1. i 2. prekomorska brigada',
+    description: 'Spisak poginulih boraca i borkinja obe brigade (rođenje, kada i gde je ko pao) i komandni kadar u logorima Carbonara i Gravina, na Korčuli, Hvaru i Visu, i komande četa (str. 357–372).'
+  },
+  {
+    id: '5-prekomorska',
+    title: 'Peta prekomorska brigada',
+    author: 'Albert Klun, Rado Bordon i dr.',
+    pdfPath: '/pdfs/5-prekomorska.pdf',
+    thumbnail: '/images/pdf-thumbs/5-prekomorska.jpg',
+    brigadeName: '5. prekomorska brigada',
+    description: 'Spisak poginulih boraca i borkinja (256: rođenje, kada i gde je ko pao) i komandni kadar brigade, bataljona i četa (str. 283–301).'
+  },
+  {
     id: 'sercerjeva',
     title: 'Šercerjeva brigada I',
     author: 'Lado Ambrožič-Novljan',

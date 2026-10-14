@@ -33,6 +33,22 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '1-tenkovski-bataljon': {
+    date: '1943-09-21', place: 'Lika', source: 'https://znaci.org/00003/543.pdf',
+    note: 'Vidaković, Prvi tenkovski bataljon, str. 125: „Odluku o formiranju tenkovskog bataljona doneo je Glavni štab NOV i PO Hrvatske 21. septembra 1943. godine“, od Tenkovske čete 1. korpusa (formirane 5. marta 1943), a ova od Prvog tenkovskog voda u Korenici.',
+  },
+  '3-diverzantski-odred': {
+    date: '1944-09-07', place: 'Pobjenik kod Čazme', source: 'https://znaci.org/00003/541.pdf',
+    note: 'Karanović, Treći diverzantski odred, str. 196-197: „u Pobjeniku kod Čazme na području Moslavine 7. 9. 1944. formiran Štab grupe diverzantskih odreda“; „Istog dana, također u Pobjeniku, formiran je Štab 3. diverzantskog odreda“, od 3. diverzantskog bataljona.',
+  },
+  '1-2-prekomorska-brigada': {
+    date: '1943-10', place: 'Carbonara kod Barija (Italija)', source: 'https://znaci.org/00003/769.pdf',
+    note: 'Vilhar i Klun, Prva in druga prekomorska brigada: prva se formirala u logoru Carbonara u oktobru 1943 (str. 242-243); za drugu „so bili trije bataljoni ... formirani 20. oktobra 1943; zaradi česar mora veljati ta datum tudi za osnovanje 2. prekomorske brigade“ (str. 268).',
+  },
+  '5-prekomorska-brigada': {
+    date: '1944-12-23', place: 'Split', source: 'https://znaci.org/00003/816.pdf',
+    note: 'Peta prekomorska brigada, str. 136: „Uradna ustanovitev brigade datira z dne 23. decembra 1944. Tega dne je bil v Splitu formiran štab brigade in ustanovljene so bile brigadne enote, razen 4. bataljona, ki je bil formiran 5. januarja 1945.“',
+  },
   'sercerjeva-brigada': {
     date: '1942-10-06', place: 'Mokrc', source: 'https://znaci.org/00003/813.pdf',
     note: 'Ambrožič-Novljan, Šercerjeva brigada I, str. 16: „Tako je bila 6. oktobra 1942 popoldne opravljena na Mokrcu ustanovitev IV. slovenske narodnoosvobodilne udarne brigade Ljuba Šercerja“ (jasa Pri debeli bukvi).',

@@ -1216,6 +1216,51 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    143: {
+        'name': '5. prekomorska',
+        'json_file': '5-prekomorska-soldiers.json',
+        'language': 'sl',
+        'name_format': 'standard',    # "BAŠA FRANC, r. 26. decembra 1923 Podgraje—Ilirska Bistrica, p. 28. februarja 1945 Gospić"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
+    144: {
+        'name': '1. i 2. prekomorska',
+        'json_file': '1-2-prekomorska-soldiers.json',
+        'language': 'sl',
+        'name_format': 'standard',    # "ADAM Anton, r. 26. 5. 1918 (Dol. Košana—Pivka), p. 26. 5. 1944 (Drvar)"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
+    161: {
+        'name': 'Treći diverzantski odred',
+        'json_file': '3-diverzantski-odred-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "BREZAK MILAN**," (names only; ** the fallen)
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
+    162: {
+        'name': 'Prvi tenkovski bataljon',
+        'json_file': '1-tenkovski-bataljon-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "65. Dokić Đuro" (names only, numbered)
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
+    163: {
+        'name': 'Proleterski bataljon Bosanske krajine',
+        'json_file': 'proleterski-bataljon-bk-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ANIC (Nikole) ĐURO, rođen 1914. Otiš-Lušci Palanka, Sanski Most. Srbin, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
     # not units either: the fallen partisans of the 1964 census (Žrtve rata 1941-1945) who have no record of a unit,
     # one part per volume of the census, a republic or province (build_ostali_borci.py, CENSUS_VOLUMES)
     **{code: {
