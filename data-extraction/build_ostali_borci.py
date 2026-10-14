@@ -275,9 +275,17 @@ def printed_twice(a: dict, b: dict) -> bool:
     fa, fb = father_forms(a), father_forms(b)
     if not (fa and fb and any(fathers_agree(x, y) or one_slip(x, y) for x in fa for y in fb)):
         return False
-    ya, sa, sb = year(a, 'birth_year'), death_years(a), death_years(b)
-    return bool(ya and ya == year(b, 'birth_year') and sa and sa == sb and
-                (overlap(death_places(a), death_places(b)) or overlap(village(a), village(b))))
+    ya, yb, sa, sb = year(a, 'birth_year'), year(b, 'birth_year'), death_years(a), death_years(b)
+    if not (ya and yb and sa and sa == sb and
+            (overlap(death_places(a), death_places(b)) or overlap(village(a), village(b)))):
+        return False
+    if ya == yb:
+        return True
+    # born a year apart: only under two municipalities (one chapter's two of a name are as likely two cousins), and
+    # the father in full, not a letter off ("Burić Stanko", Đuro's son, 1912 under Danilovgrad and 1911 under Šavnik,
+    # fell at Pljevlja in 1941; not "Jovanović Veselin", Marko's or Mirko's)
+    return (abs(ya - yb) == 1 and a.get('opstina') != b.get('opstina') and
+            any(fathers_agree(x, y) for x in fa for y in fb))
 
 
 def tied(members: list[dict]) -> list[list[dict]]:
@@ -492,6 +500,17 @@ def main():
                 best = max(score)
                 if best[0] >= 0 and score.count(best) == 1:
                     groups[score.index(best)].extend(u)
+                    continue
+                # a man printed twice who fits two of the doubled book's entries alike, each of his entries best
+                # another, is as likely two men that book prints too ("Martinović Ljubica", Marko's, of 1923 and 1924
+                # in the Spomenica and in the census): each entry goes to its own
+                picks = []
+                for m in (u if len(u) > 1 and best[0] >= 0 else ()):
+                    s = [max(closeness(x, m) for x in g) if m['_book'] not in books_of(g) else (-1, 0) for g in groups]
+                    picks.append(s.index(max(s)) if max(s)[0] >= 0 and s.count(max(s)) == 1 else None)
+                if picks and None not in picks and len(set(picks)) == len(picks):
+                    for m, i in zip(u, picks):
+                        groups[i].append(m)
                 else:
                     left.append(u)
             for u in left:
