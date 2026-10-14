@@ -389,6 +389,7 @@ ONE_LINE_ENTRIES = {
     '5-prekomorska.pdf': range(17, 20),          # 5. prekomorska: the officers, run on (the box is the name's line)
     '1-2-prekomorska.pdf': range(11, 15),        # 1. i 2. prekomorska: the officers, run on
     '9-srpska.pdf': range(1, 27),                # 9. srpska: the line-up (two names a line), the officers, the women
+    '4-prekomorska.pdf': range(3, 8),            # 4. prekomorska: the officers, a name a line
     '3-diverzantski-odred.pdf': range(1, 5),     # Treći diverzantski odred: a name a line, two columns
     'kosovelova.pdf': range(18, 23),             # Kosovelova: the officers, a duty a line
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster, names only

@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~449,000 WWII Yugoslav partisan soldiers across 144 units (104 brigades, fourteen divisions, seventeen detachments, four battalions, the 1. and 2. eskadrila NOVJ, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~449,000 WWII Yugoslav partisan soldiers across 145 units (105 brigades, fourteen divisions, seventeen detachments, four battalions, the 1. and 2. eskadrila NOVJ, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -155,6 +155,7 @@ Historical archive website for searching ~449,000 WWII Yugoslav partisan soldier
 | 163 | Proleterski bataljon Bosanske krajine | `data-extraction/parse_proleterski_bataljon_bk.py` | `proleterski-bataljon-bk-soldiers.json` | 1 PDF (a bio beside each fighter's portrait, in blocks that stand anywhere on the page; book pp. 256-362) | 296 |
 | 164 | Kozjanski odred | `data-extraction/parse_kozjanski_odred.py` | `kozjanski-odred-soldiers.json` | 1 PDF (a table: name, birth, joined, trade, note; Teropšič II, PDF pp. 78-418, its scans made 1-bit) | 3493 |
 | 165 | 9. srpska | `data-extraction/parse_9_srpska.py` | `9-srpska-soldiers.json` | 2 PDFs as one (znaci 121_1, 121_2, Cyrillic: the 377 at its founding, the officers, the women; the book's roll of bios is not on znaci.org) | 468 |
+| 166 | 4. prekomorska | `data-extraction/parse_4_prekomorska.py` | `4-prekomorska-soldiers.json` | 1 PDF (the fallen and dead; the officers, a name a line under each staff and duty; book pp. 327-333) | 125 |
 | 122 | Ostali borci (not a unit) | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci.json` | none of its own: the entries of the books across units that no record took (see "Ostali borci") | 18,442 |
 | 131-138 | Ostali borci, the 1964 census's parts (not units): Slovenija, Hrvatska, Bosna i Hercegovina, Crna Gora, Makedonija, Srbija, Kosovo i Metohija, Vojvodina | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci-<slovenija, hrvatska, bih, crna-gora, makedonija, srbija, kosovo, vojvodina>.json` | none of their own: the census's fallen partisans whom no record took, one part a volume | 157,240 |
 
@@ -284,7 +285,7 @@ Five more Karlovac volumes, their fallen only, each a config for `_karlovac_list
 
 A list published only as a web page (1. Dalmatinska, Mačvanski odred) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0165), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0166), last 6 = sequence.
 
 ## Known OCR Issues
 

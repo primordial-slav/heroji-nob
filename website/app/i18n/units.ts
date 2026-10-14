@@ -619,6 +619,10 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '4-prekomorska-brigada': {
+    name: '4. prekomorska brigada',
+    description: 'Ustanovljena 7. septembra 1944 v Italiji pri bazi NOVJ v Bariju: nakladanje in prevoz zavezniške pomoči. Padli in umrli ter vodilni kader.',
+  },
   '9-srpska-brigada': {
     name: '9. srbska brigada',
     description: 'Ustanovljena 11. marca 1944 v Rečici. Borci v stroju na dan ustanovitve, poveljniški kader brigade, bataljonov in čet ter bolničarke in borke.',
@@ -1342,6 +1346,10 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '4-prekomorska-brigada': {
+    name: '4-та прекуморска бригада',
+    description: 'Формирана на 7 септември 1944 во Италија, при базата на НОВЈ во Бари: товарење и превоз на сојузничката помош. Загинатите и умрените и командниот кадар.',
   },
   '9-srpska-brigada': {
     name: '9-та српска бригада',
@@ -2068,6 +2076,10 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '4-prekomorska-brigada': {
+    name: '4th Overseas Brigade',
+    description: 'Formed on 7 September 1944 in Italy, at the Yugoslav army’s base in Bari: loading and shipping Allied aid. The fallen and dead, and the officers.',
   },
   '9-srpska-brigada': {
     name: '9th Serbian Brigade',

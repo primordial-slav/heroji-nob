@@ -1288,6 +1288,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    167: {
+        'name': 'Deveta (IX. SNOUB)',
+        'json_file': 'deveta-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Batinica Angela 1927 / Kočevje, p. 1944 Suhorje"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
     # not units either: the fallen partisans of the 1964 census (Žrtve rata 1941-1945) who have no record of a unit,
     # one part per volume of the census, a republic or province (build_ostali_borci.py, CENSUS_VOLUMES)
     **{code: {

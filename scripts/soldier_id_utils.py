@@ -155,6 +155,7 @@ BRIGADE_CODES = {
     164: 'Kozjanski odred',
     165: '9. srpska',
     166: '4. prekomorska',
+    167: 'Deveta (IX. SNOUB)',
     # Add new brigades here with next available code
 }
 

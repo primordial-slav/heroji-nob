@@ -1838,6 +1838,15 @@ export const sources: PdfSource[] = [
     description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su samo borci; civilne žrtve, saradnici NOP-a i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: '4-prekomorska',
+    title: 'Četrta prekomorska brigada',
+    author: 'Edvin Pervanje, Jože A. Hočevar',
+    pdfPath: '/pdfs/4-prekomorska.pdf',
+    thumbnail: '/images/pdf-thumbs/4-prekomorska.jpg',
+    brigadeName: '4. prekomorska brigada',
+    description: 'Spisak poginulih i umrlih boraca i komandni kadar brigade: štab, komanda mesta, bataljoni, samostalna četa i komande četa (str. 327–333).'
+  },
+  {
     id: '9-srpska',
     title: 'Deveta srpska udarna brigada u stroju i s narodom',
     author: 'spomen-knjiga',

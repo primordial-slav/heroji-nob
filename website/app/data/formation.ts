@@ -33,6 +33,10 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '4-prekomorska-brigada': {
+    date: '1944-09-07', place: 'Bari (Italija)', source: 'https://znaci.org/00003/783.pdf',
+    note: 'Pervanje i Hočevar, Četrta prekomorska brigada, str. 105: „Brigada je dobila naziv po vrstnem redu ustanovitve prekomorskih brigad, in sicer Četrta prekomorska brigada. Ustanovljena je bila 7. septembra 1944.“',
+  },
   '9-srpska-brigada': {
     date: '1944-03-11', place: 'Rečica', source: 'https://znaci.org/00001/121_1.pdf',
     note: 'Deveta srpska udarna brigada u stroju i s narodom, „Rođenje Devete / Stroj u Rečici“: „Ovo poglavlje Spomen knjige govori o 11. martu 1944. — danu osnivanja Devete srpske brigade u Rečici.“',

@@ -1451,6 +1451,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/9-srpska.pdf']
   },
   {
+    id: '4-prekomorska-brigada',
+    name: '4. prekomorska brigada',
+    nameEn: '4th Overseas Brigade',
+    description: 'Formirana 7. septembra 1944. u Italiji, pri bazi NOVJ u Bariju: utovar i prevoz savezničke pomoći. Poginuli i umrli i komandni kadar.',
+    image: '/images/4-prekomorska-brigada.jpg',
+    soldierCount: 125,
+    dataFile: '/4-prekomorska-soldiers.json',
+    pdfFiles: ['/pdfs/4-prekomorska.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',
