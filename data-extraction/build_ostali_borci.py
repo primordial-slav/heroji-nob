@@ -75,6 +75,27 @@ REFERENCE_ONLY: set = set()
 # books printed as a table of columns, whose columns are the record's fields (as the census's are); every man of the
 # Spomenica counts as a partisan who fell (the user's decision), so his death is "poginuo"
 COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima'}
+# books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
+# born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
+# Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
+# lists its dead once, and two of its entries of one name and village are as often two cousins)
+PRINTS_TWICE = {'spomenica-crnogorskim-antifasistima'}
+# entries checked by hand to be one man, where an OCR slip in the father hides it from same_man, or where the Spomenica
+# prints him in two chapters with two villages
+ONE_MAN = [
+    ('9060000001', '9035011183', 'Adilović Hilmo, Kovačevići 1918, fell 1943; the Spomenica\'s "Recov" is Redžov'),
+    ('9060000096', '9035011488', 'Gerina Muharem, Šumani 1928, fell 1943; the Spomenica\'s "Radišin" is Rašidov'),
+    ('9060000387', '9035012663', 'Popović Gruban, Kakmuži 1927 (the Spomenica\'s "Kukmuži"); "Neđelžov" is Neđeljkov'),
+    ('9060000432', '9035012899', 'Soković Živan, Bobovo 1911; the father Jovo to Prilog u krvi, Jovan to the Spomenica'),
+    ('9060000475', '9035013044', 'Tomašević Novica, Mataruge 1915, fell 1944; the Spomenica\'s "Ć." is Đ. (Đerosim)'),
+    ('9035007827', '9035012049', 'Kontić Radoje, Andrija\'s son, fell 1943: the Spomenica\'s chapters of Nikšić '
+                                 '(Pješivci, 1920) and Pljevlja (Tikava, 1919), as his brother Radoš'),
+    ('9035007830', '9035012050', 'Kontić Radoš, Andrija\'s son, fell 1943: Nikšić (Pješivci, 1922) and Pljevlja '
+                                 '(Tikava, 1921)'),
+    ('9035017001', '9035012349', 'Maričević Radmila, born in Prijepolje 1900 or 1901, fell at the Sutjeska 1943: the '
+                                 'chapters of Šavnik ("N.") and Pljevlja ("D.", Prilog u krvi\'s Danila)'),
+]
+ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 
 
 def column_fields(e: dict) -> dict:
@@ -147,58 +168,132 @@ def fathers_agree(x: str, y: str) -> bool:
     return x == y or (len(x) <= 2 and y.startswith(x)) or (len(y) <= 2 and x.startswith(y)) or same_father(x, y)   # "Lj"
 
 
-def same_man(a: dict, b: dict) -> bool:
-    """Two entries of different books that are one man (see the module's note)"""
+def village(e: dict) -> set[str]:
+    """The village alone, without the municipality after it ("Kosanica, Pljevlja": the Spomenica's chapter and the
+    Pljevlja lists name the municipality in every entry, so it tells no two men apart)"""
+    first = (e.get('born_in') or '').split(',')[0]
+    return {stem(w) for w in fold(first).split() if len(w) >= 4} - {'selu', 'opst', 'opsti', 'kotar', 'srez', 'okrug', 'kod'}
+
+
+def overlap(x: set[str], y: set[str]) -> bool:
+    return any(p[:4] == q[:4] for p in x for q in y)
+
+
+def agreement(a: dict, b: dict) -> set[str] | None:
+    """What two entries of different books agree on when they are one man (see the module's note), else None"""
+    if frozenset((a['soldier_id'], b['soldier_id'])) in ONE_MAN_PAIRS:
+        return {'checked by hand'}
     agree = set()
     fa, fb = father_forms(a), father_forms(b)
+    ya, yb = year(a, 'birth_year'), year(b, 'birth_year')
     if fa and fb:
         if any(fathers_agree(x, y) for x in fa for y in fb):
             agree.add('father')
         elif not ((a.get('_book') in POSSESSIVE_FATHERS) != (b.get('_book') in POSSESSIVE_FATHERS) and
-                  any(one_slip(x, y) for x in fa for y in fb) and year(a, 'birth_year') and
-                  year(a, 'birth_year') == year(b, 'birth_year') and places(a) and places(b) and
-                  any(x[:4] == y[:4] for x in places(a) for y in places(b))):
-            return False
+                  any(one_slip(x, y) for x in fa for y in fb) and ya and ya == yb and overlap(places(a), places(b))):
+            return None
         else:
             agree.add('father')              # an OCR slip in a possessive father ("Pegrov" Petrov, "Jueov" Jusov), where
             #                                  the birth year and the village agree as well
-    ya, yb = year(a, 'birth_year'), year(b, 'birth_year')
     if ya and yb:
         if abs(ya - yb) > 1:
-            return False
+            return None
         agree.add('birth year')
     sa, sb = death_years(a), death_years(b)
+    qa, qb = death_places(a), death_places(b)
     if sa and sb:
         if not sa & sb:
-            return False
-        if len(sa) == len(sb) == 1 or sa == sb:
+            # the books often disagree on the year he fell: no clash where the father, the exact birth year and the
+            # village agree ("Joknić Mihailo" of Jugovo, 1908: 1943 and 1945), or they and the place he fell, a year
+            # apart ("Markišić Aleksa", 1908: Soko Banja, 1941 and 1942)
+            same = 'father' in agree and ya and ya == yb
+            if not (same and (overlap(village(a), village(b)) or
+                              (overlap(qa, qb) and min(abs(x - y) for x in sa for y in sb) == 1))):
+                return None
+            agree.add('death year differs')
+        elif len(sa) == len(sb) == 1 or sa == sb:
             agree.add('death year')                        # or the same front's years (Gončin's and Tmušić's Srem)
     da, db = max(sa, default=None), max(sb, default=None)
     if (a.get('survived') and db and db <= 1945) or (b.get('survived') and da and da <= 1945):
-        return False
-    pa, pb = places(a), places(b)
-    if pa and pb and any(x[:4] == y[:4] for x in pa for y in pb):
+        return None
+    if overlap(places(a), places(b)):
         agree.add('birthplace')
     if set(a.get('units') or ()) & set(b.get('units') or ()) or (
             not a.get('units') and not b.get('units') and unit_key(a) and unit_key(a) == unit_key(b)):
         agree.add('unit')
-    qa, qb = death_places(a), death_places(b)
-    if qa and qb and any(x[:4] == y[:4] for x in qa for y in qb):
+    if overlap(qa, qb):
         agree.add('death place')
     core = agree & {'birth year', 'birthplace', 'death year'}
     if 'father' in agree and core:
-        return True
+        return agree
     if {'birth year', 'birthplace'} <= agree:
-        return True
+        return agree
     # the lists that give a name, a brigade and where he fell (Gončin's Srem): the unit or the place of his death,
     # with the year of it or with each other
     if ('unit' in agree or 'death place' in agree) and len(agree & {'unit', 'death place', 'death year'}) >= 2:
-        return True
+        return agree
     # a narodni heroj and an entry that names no father (a spomenica list's "Maček Ivan, 1908", Romano's "Albahari Nisim"):
     # the hero's name and his birth year
     if bool(a.get('_hero')) != bool(b.get('_hero')) and 'birth year' in agree and not (father_of(a) and father_of(b)):
+        return agree
+    return agree if a.get('_hero') and b.get('_hero') and agree & {'father', 'birth year'} else None
+
+
+def same_man(a: dict, b: dict) -> bool:
+    return agreement(a, b) is not None
+
+
+def closeness(a: dict, b: dict) -> tuple[int, int]:
+    """How much two entries that are one man agree on, to choose between two of a book's entries that both fit: a pair
+    whose years of death differ comes after every pair whose don't, then the more they agree on, an exact birth year
+    counting once more"""
+    agree = agreement(a, b)
+    if agree is None:
+        return (-1, 0)
+    if 'checked by hand' in agree:
+        return (2, 0)
+    exact = bool(year(a, 'birth_year') and year(a, 'birth_year') == year(b, 'birth_year'))
+    return (0 if 'death year differs' in agree else 1, len(agree - {'death year differs'}) + exact)
+
+
+def printed_twice(a: dict, b: dict) -> bool:
+    """Two entries of one book that prints a man in more than one chapter (PRINTS_TWICE), or that ONE_MAN ties: the same
+    father (an initial, an OCR slip: "Risga" and "Ristov"), birth year and year of death, and the same place of death
+    or village ("Minić Milisav", 1926, Perišin and Nerišin, fell at Polja in 1944; "Ivović Momčilo", 1923, born in
+    Podgorica, in the chapters of Bar, Pljevlja and Podgorica)"""
+    if a['_book'] != b['_book']:
+        return False
+    if frozenset((a['soldier_id'], b['soldier_id'])) in ONE_MAN_PAIRS:
         return True
-    return bool(a.get('_hero') and b.get('_hero') and agree & {'father', 'birth year'})
+    if a['_book'] not in PRINTS_TWICE:
+        return False
+    fa, fb = father_forms(a), father_forms(b)
+    if not (fa and fb and any(fathers_agree(x, y) or one_slip(x, y) for x in fa for y in fb)):
+        return False
+    ya, sa, sb = year(a, 'birth_year'), death_years(a), death_years(b)
+    return bool(ya and ya == year(b, 'birth_year') and sa and sa == sb and
+                (overlap(death_places(a), death_places(b)) or overlap(village(a), village(b))))
+
+
+def tied(members: list[dict]) -> list[list[dict]]:
+    """A cluster's entries with each book's entries of one man (printed_twice) together, and a narodni heroj's entries
+    of the hero books ("Rolović Niko": the Zbornik's of 1910 and Narodni heroji's of 1909, whom the Spomenica and the
+    census each print twice)"""
+    parent = {m['soldier_id']: m['soldier_id'] for m in members}
+
+    def find(x):
+        while parent[x] != x:
+            x = parent[x]
+        return x
+    for i, a in enumerate(members):
+        for b in members[i + 1:]:
+            if printed_twice(a, b) or (a['_book'] != b['_book'] and a['_book'] in HERO_BOOKS and
+                                       b['_book'] in HERO_BOOKS and same_man(a, b)):
+                parent[find(a['soldier_id'])] = find(b['soldier_id'])
+    out = defaultdict(list)
+    for m in members:
+        out[find(m['soldier_id'])].append(m)
+    return list(out.values())
 
 
 ORDINALS = [('jedanaest', 11), ('dvanaest', 12), ('trinaest', 13), ('cetrnaest', 14), ('petnaest', 15),
@@ -339,8 +434,11 @@ def main():
     for group in by_name.values():
         for i, a in enumerate(group):
             for b in group[i + 1:]:
-                if a['_book'] != b['_book'] and same_man(a, b):
+                if (a['_book'] != b['_book'] and same_man(a, b)) or printed_twice(a, b):
                     parent[find(a['soldier_id'])] = find(b['soldier_id'])
+    for x, y, _ in ONE_MAN:
+        if x in parent and y in parent:
+            parent[find(x)] = find(y)
     clusters = defaultdict(list)
     for e in entries:
         clusters[find(e['soldier_id'])].append(e)
@@ -362,37 +460,51 @@ def main():
 
     records, counts, on_site = [], Counter(), []
     for members in clusters.values():
-        # a cluster that took two entries of one book is two men (or the book's one man printed twice): the entries of
-        # that book stay apart, and an entry of another book joins the one it agrees with; one that agrees with both
-        # (or neither) joins the other books' entries it is one man with ("Tešović Neđeljko": the census prints him
-        # twice, the Spomenica crnogorska and Prilog u krvi once each), else stays alone
-        if len({m['_book'] for m in members}) < len(members):
-            book = Counter(m['_book'] for m in members).most_common(1)[0][0]
-            groups = [[m] for m in members if m['_book'] == book]
+        # a cluster that took two entries of one book (not one man it prints twice) is two men: the entries of that
+        # book stay apart, and an entry of another book joins the one it agrees with, or the one it agrees with best
+        # ("Vujošević Stanko": the census's two of Mataguži, 1910 and 1911, and the Spomenica's of 1910); one that
+        # agrees with two alike (or with neither) joins the other books' entries it is one man with ("Tešović
+        # Neđeljko": the census prints him twice, the Spomenica crnogorska and Prilog u krvi once each), else stays alone
+        units = tied(members)
+        books_of = lambda g: {x['_book'] for x in g}
+        per_book = Counter(b for u in units for b in books_of(u))
+        if max(per_book.values()) > 1:
+            book = per_book.most_common(1)[0][0]
+            groups = [list(u) for u in units if book in books_of(u)]
             loose, left = [], []
-            for m in members:
-                if m['_book'] == book:
-                    continue
-                fits = [g for g in groups if same_man(g[0], m) and m['_book'] not in {x['_book'] for x in g}]
-                if len(fits) == 1:
-                    fits[0].append(m)
+            # the entry that fits the fewest groups first, each scored against all a group holds by then ("Burić
+            # Stanko": the Spomenica's, which fits only the census's 1919, before the hero books', which then follow
+            # it there rather than to the census's 1920)
+            pending = [u for u in units if book not in books_of(u)]
+            while pending:
+                scored = []
+                for u in pending:
+                    score = [max(closeness(x, y) for x in g for y in u)
+                             if not books_of(u) & books_of(g) else (-1, 0) for g in groups]
+                    scored.append((sum(s[0] >= 0 for s in score), u, score))
+                fits, u, score = min(scored, key=lambda t: (t[0] if t[0] else 99, [-x for x in max(t[2])]))
+                pending.remove(u)
+                best = max(score)
+                if best[0] >= 0 and score.count(best) == 1:
+                    groups[score.index(best)].extend(u)
                 else:
-                    left.append(m)
-            for m in left:
-                fit = lambda g: m['_book'] not in {x['_book'] for x in g} and all(same_man(x, m) for x in g)
+                    left.append(u)
+            for u in left:
+                fit = lambda g: not books_of(u) & books_of(g) and all(same_man(x, y) for x in g for y in u)
                 joins = [g for g in loose if fit(g)]          # another book's entry left over as well
                 if joins:
-                    joins[0].append(m)
+                    joins[0].extend(u)
                     continue
-                # else the one largest group it agrees with whole, if that already joined another book's entry to the
-                # doubled book's ("Anđelić Vukoman": the census man who took Prilog u krvi's entry, and the Spomenica's)
+                # else the one group of most books it agrees with whole, if that already joined another book's entry to
+                # the doubled book's ("Anđelić Vukoman": the census man who took Prilog u krvi's entry, and the
+                # Spomenica's)
                 cands = [g for g in groups if fit(g)]
-                best = max((len(g) for g in cands), default=0)
-                top = [g for g in cands if len(g) == best]
+                best = max((len(books_of(g)) for g in cands), default=0)
+                top = [g for g in cands if len(books_of(g)) == best]
                 if best > 1 and len(top) == 1:
-                    top[0].append(m)
+                    top[0].extend(u)
                 else:
-                    loose.append([m])
+                    loose.append(list(u))
             groups += loose
             counts['clusters split (two entries of one book)'] += 1
         else:
