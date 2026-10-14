@@ -204,6 +204,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Jaša Romano, *Jevreji Jugoslavije 1941–1945* | Jewish participants in the NOR ([191_4.pdf](https://znaci.org/00001/191_4.pdf), 205 pp.), spomenica holders, narodni heroji | [00001/191](https://znaci.org/00001/191.htm) |
 | *Sanitetska služba u NOR-u*, knj. IV | doctors who lost their lives in the war, a bio each ([199_15.htm](https://znaci.org/00001/199_15.htm), a web page; on the site as a book across units, those in the army only: **done**, `parse_sanitetska_lekari.py`) | [00001/199](https://znaci.org/00001/199.htm) |
 | *Vojnotehnička radionica Vrhovnog štaba NOV i POJ u Grmeču* | the workshop’s workers, guards and the Drvar foundry’s workers (PDF pp. 359-362): **done**, a second book of unit 112, `parse_vtr_grmec.py` | [00003/766](https://znaci.org/00003/766.php) |
+| Ikovic, Linasi, *Koroško partizansko zdravstvo* | the Carinthian wounded and sick, the partisan hospitals’ patients and staff, a bio each (PDF pp. 282-355): **done**, a book across units, `parse_korosko_zdravstvo.py` | [bk=756](https://znaci.org/00003/7xx.php?bk=756) |
 
 ## 7. Lists by place (not by unit)
 

@@ -81,7 +81,22 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000004",
     "pdf_x_end": 124.2,
-    "birth_place": "Notranje Gorice"
+    "birth_place": "Notranje Gorice",
+    "other_sources": [
+      {
+        "soldier_id": "9056000017",
+        "name": "Alič Franc",
+        "additional_info": "Dolomiti v NOB: Nosilci spominskega znaka 1941 (Partizanske spomenice 1941): Alič Franc, 27. 1. UHO, Notranje Gorice.",
+        "pdf_file": "dolomiti-v-nob-3.pdf",
+        "pdf_page": 2,
+        "pdf_x": 59.0,
+        "pdf_y": 167.4,
+        "pdf_x_end": 243.9,
+        "pdf_y_end": 176.7,
+        "source_page": 668,
+        "ref_book": "dolomiti-v-nob-3"
+      }
+    ]
   },
   {
     "last_name": "Alič",
@@ -1249,7 +1264,23 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000053",
     "pdf_x_end": 230.4,
-    "birth_place": "Podhosta"
+    "birth_place": "Podhosta",
+    "death_type": "umro",
+    "death_date": "1971",
+    "other_sources": [
+      {
+        "soldier_id": "0150000039",
+        "name": "Bradač Franc",
+        "additional_info": "zvani Boštjan; 27.1.1907, Podhosta; 21, 20; † 1971",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 2,
+        "pdf_x": 141.9,
+        "pdf_y": 469.4,
+        "pdf_x_end": 273.9,
+        "pdf_y_end": 488.7,
+        "unit_file": "zascitna-enota-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bradač",
@@ -2991,7 +3022,23 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000126",
     "pdf_x_end": 113.4,
-    "birth_place": "Jama pri Dvoru"
+    "birth_place": "Jama pri Dvoru",
+    "death_type": "umro",
+    "death_date": "1993",
+    "other_sources": [
+      {
+        "soldier_id": "0150000084",
+        "name": "Glavić Jaka",
+        "additional_info": "25.6.1922, Jama, Novo mesto; † 1993; 20",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 3,
+        "pdf_x": 315.1,
+        "pdf_y": 547.7,
+        "pdf_x_end": 440.1,
+        "pdf_y_end": 566.7,
+        "unit_file": "zascitna-enota-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Glavič",
@@ -3105,6 +3152,18 @@
         "pdf_y_end": 621.6,
         "pdf_x_end": 334.4,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000086",
+        "name": "Golob Franc",
+        "additional_info": "zvani Januš; 22.1.1913, Virmaše; Novi breg; † 1981",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 3,
+        "pdf_x": 315.1,
+        "pdf_y": 583.9,
+        "pdf_x_end": 435.4,
+        "pdf_y_end": 603.4,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -3142,6 +3201,8 @@
     "soldier_id": "0068000133",
     "pdf_x_end": 118.6,
     "birth_place": "Prapreče",
+    "death_type": "umro",
+    "death_date": "1995",
     "other_sources": [
       {
         "soldier_id": "0062000612",
@@ -3154,6 +3215,30 @@
         "pdf_x_end": 285.9,
         "pdf_y_end": 243.6,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000087",
+        "name": "Golob Jože",
+        "additional_info": "zvani Edi; 18.3.1923, † 1995, Praproče, Novo mesto; 20",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 3,
+        "pdf_x": 315.1,
+        "pdf_y": 607.9,
+        "pdf_x_end": 447.2,
+        "pdf_y_end": 627.2,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000088",
+        "name": "Golob Jože",
+        "additional_info": "Nosilec Partizanske spomenice 1941: Golob Jože-Edi",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 17,
+        "pdf_x": 133.6,
+        "pdf_y": 613.2,
+        "pdf_y_end": 621.7,
+        "pdf_x_end": 192.8,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -3202,6 +3287,18 @@
         "pdf_x_end": 262.2,
         "pdf_y_end": 295.0,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000089",
+        "name": "Golob Martin",
+        "additional_info": "zvani Tinček; 9.11.1925, Litija; 20",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 4,
+        "pdf_x": 142.7,
+        "pdf_y": 179.5,
+        "pdf_x_end": 269.2,
+        "pdf_y_end": 198.6,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -3430,7 +3527,21 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000145",
     "pdf_x_end": 225.8,
-    "birth_place": "Cerov Log"
+    "birth_place": "Cerov Log",
+    "other_sources": [
+      {
+        "soldier_id": "0150000091",
+        "name": "Gosenar Jože",
+        "additional_info": "17.11.1926, Cerov log, Št. Jernej; 24",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 4,
+        "pdf_x": 142.0,
+        "pdf_y": 226.8,
+        "pdf_x_end": 268.1,
+        "pdf_y_end": 246.1,
+        "unit_file": "zascitna-enota-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gospodaric",
@@ -3633,6 +3744,30 @@
         "pdf_x_end": 275.6,
         "pdf_y_end": 503.1,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000095",
+        "name": "Grajzer Albin",
+        "additional_info": "Tisovec, Novi breg, Podlipoglav, Dolomiti, 21; † 1944, Metnaj pri Stični",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 13,
+        "pdf_x": 306.9,
+        "pdf_y": 342.2,
+        "pdf_x_end": 438.3,
+        "pdf_y_end": 371.1,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000096",
+        "name": "Grajzer Albin",
+        "additional_info": "Narodni heroj: Grajzer Albin, 15.2.1922, Smlednik; Tisovec, Novi breg, Podlipoglav, Dolomiti, 21; † december 1944, Metnaj pri Stični",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 15,
+        "pdf_x": 127.9,
+        "pdf_y": 315.3,
+        "pdf_y_end": 367.3,
+        "pdf_x_end": 269.1,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -4384,7 +4519,35 @@
     "soldier_id": "0068000189",
     "pdf_x_end": 329.3,
     "birth_place": "Cleveland, ZDA",
-    "death_type": "umro"
+    "death_type": "umro",
+    "death_date": "1970",
+    "other_sources": [
+      {
+        "soldier_id": "0150000112",
+        "name": "Hrovat Ivan",
+        "additional_info": "zvani Žan; 7.7.1915, Cleveland, ZDA; 21, 20, 24; † 1970",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 4,
+        "pdf_x": 310.7,
+        "pdf_y": 204.0,
+        "pdf_x_end": 450.9,
+        "pdf_y_end": 234.1,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000113",
+        "name": "Hrovat Ivan",
+        "additional_info": "Narodni heroj: Hrovat Ivan-Žan, 7.7.1915, Cleveland, ZDA; 24; † 7.7.1970",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 15,
+        "pdf_x": 160.9,
+        "pdf_y": 371.3,
+        "pdf_y_end": 390.6,
+        "pdf_x_end": 267.3,
+        "pdf_x_left": 145.9,
+        "unit_file": "zascitna-enota-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hrovat",
@@ -5857,7 +6020,22 @@
     "soldier_id": "0068000247",
     "pdf_x_end": 123.5,
     "birth_place": "Trbovlje",
-    "death_type": "umro"
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "9058000006",
+        "name": "Kastelic Franjo",
+        "additional_info": "Koroško partizansko zdravstvo: Ranjeni in bolni borci in aktivisti na Koroškem in Solčavskem od začetka NOV do februarja 1944: 6. KASTELIC Franjo-Džon Rojen 1. 9. 1921 v Trbovljah. V NOV 28. 7. 1941 v Revirsko četo, nato v Zapadnodolenjski odred, od aprila 1943 na Štajerskem, od maja 1943 do decembra 1944 politični delavec na Koroškem. Ranjen I. na Dolenjskem od minometa v čeljust. II. na Dolenjskem, v obe nogi. III. 22. maja 1943 na Selah pri Slovenj Gradcu (težko ranjen v desno nogo in levo roko). Zdravil gaje Rožankov Zepa (Jozc /dove) v gozdu pod Jurčkovo domačijo v Podgori pri Košljah.",
+        "pdf_file": "korosko-zdravstvo.pdf",
+        "pdf_page": 2,
+        "pdf_x": 163.5,
+        "pdf_y": 275.1,
+        "pdf_x_end": 436.6,
+        "pdf_y_end": 389.7,
+        "source_page": 283,
+        "ref_book": "korosko-zdravstvo"
+      }
+    ]
   },
   {
     "last_name": "Kavčič",
@@ -6024,7 +6202,35 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000255",
     "pdf_x_end": 123.2,
-    "birth_place": "Zagorje"
+    "birth_place": "Zagorje",
+    "death_type": "umro",
+    "death_date": "1953",
+    "other_sources": [
+      {
+        "soldier_id": "0150000148",
+        "name": "Kladivar Ludvik",
+        "additional_info": "zvani Bibi; 7.7.1924, Zagorje; 21; † 1953",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 5,
+        "pdf_x": 136.3,
+        "pdf_y": 482.1,
+        "pdf_x_end": 276.2,
+        "pdf_y_end": 501.2,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000149",
+        "name": "Kladivar Ludvik",
+        "additional_info": "Nosilec Partizanske spomenice 1941: Kladivar Ludvik-Bibi",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 17,
+        "pdf_x": 302.1,
+        "pdf_y": 536.6,
+        "pdf_y_end": 545.1,
+        "pdf_x_end": 386.9,
+        "unit_file": "zascitna-enota-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Klančar",
@@ -6042,6 +6248,8 @@
     "soldier_id": "0068000256",
     "pdf_x_end": 123.8,
     "birth_place": "Ljubljana",
+    "death_type": "umro",
+    "death_date": "1946",
     "other_sources": [
       {
         "soldier_id": "0062001060",
@@ -6054,6 +6262,18 @@
         "pdf_x_end": 301.8,
         "pdf_y_end": 446.2,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000150",
+        "name": "Klančar Mirko",
+        "additional_info": "21.3.1923, Ljubljana; 20; † 1946",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 5,
+        "pdf_x": 136.1,
+        "pdf_y": 507.6,
+        "pdf_x_end": 274.1,
+        "pdf_y_end": 526.9,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -8582,8 +8802,22 @@
         "pdf_x_end": 393.6,
         "pdf_y_end": 295.5,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0150000210",
+        "name": "Lovše Andrej",
+        "additional_info": "zvani Miloš; 1910, Kašelj, Ljubljana; 20; † 1966",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 6,
+        "pdf_x": 313.9,
+        "pdf_y": 468.0,
+        "pdf_x_end": 444.2,
+        "pdf_y_end": 487.0,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "umro",
+    "death_date": "1966"
   },
   {
     "last_name": "Lovše",
@@ -8613,6 +8847,30 @@
         "pdf_x_end": 403.3,
         "pdf_y_end": 316.4,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0150000211",
+        "name": "Lovše Terezija",
+        "additional_info": "zvana Uška; 14.4.1913, Sostro, Ljubljana; 20",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 6,
+        "pdf_x": 313.9,
+        "pdf_y": 491.3,
+        "pdf_x_end": 437.6,
+        "pdf_y_end": 510.6,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000212",
+        "name": "Lovše Terezija",
+        "additional_info": "Nosilec Partizanske spomenice 1941: Lovše Terezija-Uška",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 18,
+        "pdf_x": 145.6,
+        "pdf_y": 230.1,
+        "pdf_y_end": 238.6,
+        "pdf_x_end": 224.4,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -8650,7 +8908,21 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000364",
     "pdf_x_end": 120.2,
-    "birth_place": "Snebeije"
+    "birth_place": "Snebeije",
+    "other_sources": [
+      {
+        "soldier_id": "0150000214",
+        "name": "Ložar Anton",
+        "additional_info": "zvani Murat; 26.4.1924, Sneberje; 21, 20",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 6,
+        "pdf_x": 313.7,
+        "pdf_y": 527.5,
+        "pdf_x_end": 434.8,
+        "pdf_y_end": 547.0,
+        "unit_file": "zascitna-enota-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lukek",
@@ -9298,6 +9570,18 @@
         "pdf_y_end": 227.4,
         "pdf_x_end": 279.8,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000232",
+        "name": "Mede Jože",
+        "additional_info": "zvani Janez; 24.11.1924, Jurka vas; 20",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 7,
+        "pdf_x": 126.9,
+        "pdf_y": 504.9,
+        "pdf_x_end": 242.6,
+        "pdf_y_end": 524.2,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -10114,6 +10398,18 @@
         "pdf_x_end": 347.2,
         "pdf_y_end": 317.5,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000251",
+        "name": "Mojškerc Jakob",
+        "additional_info": "zvani Jaka; 7.3.1918, Bizovik; 21, 20; † 1984",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 7,
+        "pdf_x": 296.4,
+        "pdf_y": 402.0,
+        "pdf_x_end": 420.0,
+        "pdf_y_end": 421.0,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -11190,6 +11486,8 @@
     "soldier_id": "0068000477",
     "pdf_x_end": 124.8,
     "birth_place": "Ljubljana",
+    "death_type": "umro",
+    "death_date": "1995",
     "other_sources": [
       {
         "soldier_id": "0062001826",
@@ -11202,6 +11500,18 @@
         "pdf_x_end": 132.3,
         "pdf_y_end": 64.6,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000290",
+        "name": "Pajk Franc",
+        "additional_info": "zvani Zelen; 20.12.1922, Ljubljana; 21, 20; † 1995",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 8,
+        "pdf_x": 312.2,
+        "pdf_y": 238.1,
+        "pdf_x_end": 429.5,
+        "pdf_y_end": 257.4,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -11953,6 +12263,18 @@
         "pdf_x_end": 302.8,
         "pdf_y_end": 124.8,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000308",
+        "name": "Pečnik Peter",
+        "additional_info": "7.5.1924, Bizeljsko, Brezice, Zaščitna patrola",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 8,
+        "pdf_x": 311.7,
+        "pdf_y": 379.9,
+        "pdf_x_end": 439.8,
+        "pdf_y_end": 399.2,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -12644,6 +12966,19 @@
     "birth_place": "Martinja vas",
     "other_sources": [
       {
+        "soldier_id": "9058000177",
+        "name": "Pohleven Karel",
+        "additional_info": "Koroško partizansko zdravstvo: Ranjenci in bolniki koroških in solčavskih partizanskih bolnišnic ter borci koroških enot, ki so se zdravili v drugih bolnišnicah: 157. POHLEVEN Karel-Drago Rojen 5. 11. 1922 v Martinji vasi — Sv. Lovrenc na Dolenjskem. V NOV 6. 6. 1942. Komandant bataljona v ZKO. V letu 1944 komandant mesta Solčava in Mozirje. Ranjen 24. 12. 1944 na Polšaku — Belska planina (prestrel desne noge nad kolenom). V SVPB-SZC II o'd 25. do 29. 12. 1944, nato poslan na domaće zdravljenje na Suhadol v Robanovem kotu. Tam ga je operiral dr. Milorad Hadžić.",
+        "pdf_file": "korosko-zdravstvo.pdf",
+        "pdf_page": 30,
+        "pdf_x": 145.9,
+        "pdf_y": 277.0,
+        "pdf_x_end": 420.3,
+        "pdf_y_end": 370.4,
+        "source_page": 311,
+        "ref_book": "korosko-zdravstvo"
+      },
+      {
         "soldier_id": "0062002014",
         "name": "Pohleven Karel",
         "additional_info": "zvani Drago; 1922, Martinja vas",
@@ -12957,8 +13292,34 @@
         "pdf_y_end": 179.8,
         "pdf_x_end": 299.5,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000323",
+        "name": "Prusnik Anton",
+        "additional_info": "zvani Gašper; 29.8.1921, † 1994, Podlipoglav; 24",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 9,
+        "pdf_x": 131.5,
+        "pdf_y": 454.3,
+        "pdf_x_end": 264.0,
+        "pdf_y_end": 473.6,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000324",
+        "name": "Prusnik Anton",
+        "additional_info": "Nosilec Partizanske spomenice 1941: Prusnik Anton-Gašper",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 18,
+        "pdf_x": 143.3,
+        "pdf_y": 487.4,
+        "pdf_y_end": 495.9,
+        "pdf_x_end": 230.9,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "umro",
+    "death_date": "1994"
   },
   {
     "last_name": "Pucelj",
@@ -14810,6 +15171,18 @@
         "pdf_x_end": 398.2,
         "pdf_y_end": 148.3,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0150000356",
+        "name": "Smrekar Ludvik",
+        "additional_info": "12.8.1918, Podlipoglav; Novi breg, Podlipoglav, Dolomiti; † 1982",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 10,
+        "pdf_x": 144.7,
+        "pdf_y": 360.7,
+        "pdf_x_end": 284.4,
+        "pdf_y_end": 390.6,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -16486,6 +16859,18 @@
         "pdf_x_end": 273.0,
         "pdf_y_end": 138.7,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000388",
+        "name": "Vidmar Franc",
+        "additional_info": "zvani Brko; 12.10.1910, Zagrade c; 15 A",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 11,
+        "pdf_x": 308.6,
+        "pdf_y": 225.3,
+        "pdf_x_end": 448.0,
+        "pdf_y_end": 244.6,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -17247,6 +17632,18 @@
         "pdf_x_end": 260.4,
         "pdf_y_end": 540.9,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000413",
+        "name": "Zavodnik Franc",
+        "additional_info": "zvani Jon; 4.1.1914, Trebnja gorica, Krka; 21, 24",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 12,
+        "pdf_x": 158.6,
+        "pdf_y": 326.4,
+        "pdf_x_end": 280.4,
+        "pdf_y_end": 345.4,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
   },
@@ -19067,8 +19464,34 @@
         "pdf_x_end": 280.3,
         "pdf_y_end": 462.5,
         "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000457",
+        "name": "Židan Stane",
+        "additional_info": "zvani Cvet; 20.12.1915, Zalog; 20, 21; † 1989",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 12,
+        "pdf_x": 327.6,
+        "pdf_y": 323.5,
+        "pdf_x_end": 446.0,
+        "pdf_y_end": 342.3,
+        "unit_file": "zascitna-enota-soldiers.json"
+      },
+      {
+        "soldier_id": "0150000458",
+        "name": "Židan Stane",
+        "additional_info": "Nosilec Partizanske spomenice 1941: Židan Stane-Cvet",
+        "pdf_file": "zascitna-enota-vpv.pdf",
+        "pdf_page": 18,
+        "pdf_x": 312.0,
+        "pdf_y": 517.7,
+        "pdf_y_end": 526.2,
+        "pdf_x_end": 380.8,
+        "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "umro",
+    "death_date": "1989"
   },
   {
     "last_name": "Žigon",

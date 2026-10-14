@@ -490,6 +490,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Narodni heroji Dolomitov, hribovja zahodno od Ljubljane, nosilci spominskega znaka 1941 in padli prvoborci, z datumom in krajem rojstva (str. 667–671). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'sanitetska-sluzba-lekari':
       'Zdravniki, ki so izgubili življenje v vojni, s kratkim življenjepisom: od kod so bili, kdaj so vstopili v NOVJ, dolžnost in enota, smrt (besedilo na znaci.org, brez skenirane knjige). Vpisani so le tisti, ki so bili v vojski, ne zdravniki, ki so jih kot sodelavce gibanja ubili v zaledju. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'korosko-zdravstvo':
+      'Ranjeni in bolni borci in aktivisti na Koroškem do februarja 1944, pacienti koroških partizanskih bolnišnic, koroški borci, ki so se zdravili izven bolnišnic, in sanitetno osebje, s kratkim življenjepisom (str. 282–355). Vpisani so borci in osebje partizanskih bolnišnic, ne politični delavci na terenu ne zdravniki, ki so partizanom pošiljali zdravila. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -981,6 +983,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Народните херои од Доломитите, ридовите западно од Љубљана, носителите на Споменицата 1941 и првоборците што загинаа, со датум и место на раѓање (стр. 667–671). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'sanitetska-sluzba-lekari':
       'Лекарите што го загубија животот во војната, со кратка биографија: од каде биле, кога влегле во НОВЈ, должност и единица, смрт (текст на znaci.org, без скенирана книга). Внесени се само оние што биле во војската, не и лекарите што како соработници на движењето биле убиени во позадината. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'korosko-zdravstvo':
+      'Ранетите и болните борци и активисти во Корушка до февруари 1944, пациентите на корушките партизански болници, корушките борци лекувани надвор од болниците и санитетскиот персонал, со кратка биографија (стр. 282–355). Внесени се борците и персоналот на партизанските болници, не политичките работници на теренот ниту лекарите што им праќале лекови на партизаните. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1471,6 +1475,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The national heroes of the Dolomiti, the hills west of Ljubljana, the holders of the 1941 Commemorative Medal and the first fighters who fell, with date and place of birth (pp. 667–671). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'sanitetska-sluzba-lekari':
       'The doctors who lost their lives in the war, each with a short biography: where they came from, when they joined the army, their duty and unit, their death (a text on znaci.org, no scan of the book). Only those who served in the army are entered, not the doctors killed behind the lines as helpers of the movement. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'korosko-zdravstvo':
+      'The wounded and sick fighters and activists in Carinthia to February 1944, the patients of the Carinthian partisan hospitals, the Carinthian fighters treated outside them and the medical staff, each with a short biography (pp. 282–355). Entered are the fighters and the staff of the partisan hospitals, not the political workers in the field or the doctors who sent medicines to the partisans. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

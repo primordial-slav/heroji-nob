@@ -2045,6 +2045,15 @@ export const sources: PdfSource[] = [
     description: 'Lekari koji su izgubili život u ratu, s kratkom biografijom: odakle su, kada su stupili u NOVJ, dužnost i jedinica, smrt (tekst na znaci.org, bez skenirane knjige). Uneti su samo oni koji su bili u vojsci, ne i lekari koji su kao saradnici pokreta ubijeni u pozadini. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'korosko-zdravstvo',
+    title: 'Koroško partizansko zdravstvo — seznami pacientov in osebja',
+    author: 'Anton Ikovic, Marijan Linasi',
+    pdfPath: '/pdfs/korosko-zdravstvo.pdf',
+    thumbnail: '/images/pdf-thumbs/korosko-zdravstvo.jpg',
+    brigadeName: '',
+    description: 'Ranjeni i bolesni borci i aktivisti u Koruškoj do februara 1944, pacijenti koruških partizanskih bolnica, koruški borci lečeni van bolnica i sanitetsko osoblje, s kratkom biografijom (str. 282–355). Uneti su borci i osoblje partizanskih bolnica, ne politički radnici na terenu ni lekari koji su partizanima slali lekove. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
