@@ -391,6 +391,7 @@ ONE_LINE_ENTRIES = {
     'cazinska-krajina-pali-borci.pdf': range(1, 35),  # the fallen fighters of the Cazin region, a line each
     'susak-rijeka-spomenica.pdf': range(1, 3),        # the spomenica's holders of the Rijeka municipality
     'zascitna-enota-vpv.pdf': range(17, 19),          # the protection battalion's spomenica holders, a name a line
+    'dolomiti-v-nob-3.pdf': range(1, 6),              # Dolomiti v NOB: the heroes, spomenica holders, fallen, a line each
     '9-dalmatinska-divizija.pdf': range(1, 7),        # names only, a name a line
     'turopoljsko-posavski-odred.pdf': range(1, 5),    # a table, a row an entry
     '3-dalmatinska-poginuli.pdf': range(1, 4),

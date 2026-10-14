@@ -161,8 +161,8 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 | Istrski odred | Maks Zadnik 1975 | **Seznam borcev (827 of 901)**, padli odredovci | [bk=811](https://znaci.org/00003/7xx.php?bk=811) |
 | Škofjeloški odred | Tone Lotrič 1971 | **Seznam borcev odreda (314 of 335)** | [bk=809](https://znaci.org/00003/7xx.php?bk=809) |
 | Zapadnodolenjski odred | Velimir Kraševec 1985 | **Seznam odredovcev**, Padli | [bk=808](https://znaci.org/00003/7xx.php?bk=808) |
-| Dolomitski odred | Rudolf Hribernik, *Dolomiti v NOB* 3 | padli prvoborci (130 of 163) | [bk=1079](https://znaci.org/00003/7xx.php?bk=1079) |
-| Mira Mihevc, *Na nevarnih poteh* | | Padli borci (303), spomenica holders (307 of 328) | [757](https://znaci.org/00003/757.php) |
+| Dolomitski odred | Rudolf Hribernik, *Dolomiti v NOB* 3 | heroes, spomenica holders and padli prvoborci (pp. 126-130 of 163; on the site as `dolomiti-v-nob-3.pdf`, a book across units: **done**, `parse_dolomiti_v_nob.py`) | [bk=1079](https://znaci.org/00003/7xx.php?bk=1079) |
+| Mira Mihevc, *Na nevarnih poteh* | | members of the protection unit of the VPV (p. 291), Padli borci (303), heroes (305), spomenica holders (307 of 328): **done**, unit 150, `parse_zascitna_enota.py` | [757](https://znaci.org/00003/757.php) |
 
 Commanders only (small): 31. divizija (Petelin, [823](https://znaci.org/00003/7xx.php?bk=823)), 15. divizija ([770](https://znaci.org/00003/770.php)), Petnajsta brigada ([815](https://znaci.org/00003/7xx.php?bk=815)), Vojkova brigada (unlisted, [573](https://znaci.org/00003/573.htm), p. 517), Jeseniško-bohinjski odred ([771](https://znaci.org/00003/771.php)).
 

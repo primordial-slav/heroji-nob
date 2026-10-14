@@ -2018,6 +2018,15 @@ export const sources: PdfSource[] = [
     description: 'Spiskovi boraca poginulih u dve borbe za Ludbreg: 17. slavonske brigade u Ludbregu i Šemovcu 3. oktobra 1943, brigade »Braća Radić« kod Šemovca istog dana i 17. slavonske u Ludbregu 6. jula 1944 (str. 84–85, 287–289), s godinom i mestom rođenja. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'dolomiti-v-nob-3',
+    title: 'Dolomiti v NOB (3)',
+    author: 'Rudolf Hribernik - Svarun',
+    pdfPath: '/pdfs/dolomiti-v-nob-3.pdf',
+    thumbnail: '/images/pdf-thumbs/dolomiti-v-nob-3.jpg',
+    brigadeName: '',
+    description: 'Narodni heroji Dolomita, brda zapadno od Ljubljane, nosioci Spomenice 1941. i prvoborci koji su poginuli, s datumom i mestom rođenja (str. 667–671). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

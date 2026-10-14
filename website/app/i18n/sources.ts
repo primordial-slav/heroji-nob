@@ -484,6 +484,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz zbornika dokumentov o ženah Hrvaške v NOB (dokument 427): seznam padlih tovarišic borcev in voditeljic v enotah VI. korpusa NOVJ, ki ga je štab korpusa sestavil 23. decembra 1944, z dolžnostjo in enoto, letom in krajem rojstva ter tem, kdaj in v katerem boju je padla. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'ludbreg-poginuli':
       'Seznami borcev, padlih v dveh bojih za Ludbreg: 17. slavonske brigade v Ludbregu in Šemovcu 3. oktobra 1943, brigade »Braća Radić« pri Šemovcu istega dne in 17. slavonske v Ludbregu 6. julija 1944 (str. 84–85, 287–289), z letom in krajem rojstva. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'dolomiti-v-nob-3':
+      'Narodni heroji Dolomitov, hribovja zahodno od Ljubljane, nosilci spominskega znaka 1941 in padli prvoborci, z datumom in krajem rojstva (str. 667–671). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -969,6 +971,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од зборникот документи за жените на Хрватска во НОБ (документ 427): пописот на загинатите другарки борци и раководителки во единиците на VI корпус на НОВЈ, што штабот на корпусот го составил на 23 декември 1944, со должноста и единицата, годината и местото на раѓање и кога и во која борба загинала. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'ludbreg-poginuli':
       'Списоци на борците загинати во двете борби за Лудбрег: од 17. славонска бригада во Лудбрег и Шемовец на 3 октомври 1943, од бригадата „Браќа Радиќ“ кај Шемовец истиот ден и од 17. славонска во Лудбрег на 6 јули 1944 (стр. 84–85, 287–289), со година и место на раѓање. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'dolomiti-v-nob-3':
+      'Народните херои од Доломитите, ридовите западно од Љубљана, носителите на Споменицата 1941 и првоборците што загинаа, со датум и место на раѓање (стр. 667–671). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1453,6 +1457,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From a collection of documents on the women of Croatia in the war (document 427): the VI Corps staff’s list of its women fighters and officers who fell, drawn up on 23 December 1944, with duty and unit, year and place of birth, and when and in which fight each fell. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'ludbreg-poginuli':
       'The fighters killed in the two battles for Ludbreg: the 17th Slavonian Brigade’s in Ludbreg and Šemovec on 3 October 1943, the »Braća Radić« Brigade’s at Šemovec the same day, and the 17th Slavonian’s in Ludbreg on 6 July 1944 (pp. 84–85, 287–289), with year and place of birth. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'dolomiti-v-nob-3':
+      'The national heroes of the Dolomiti, the hills west of Ljubljana, the holders of the 1941 Commemorative Medal and the first fighters who fell, with date and place of birth (pp. 667–671). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
