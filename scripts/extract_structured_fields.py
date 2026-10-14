@@ -576,12 +576,14 @@ class Extractor:
         ('pcu', 'bac'), ('pca', 'bac'), ('ocu', 'olac'), ('oca', 'olac'),          # "u Šapcu" = Šabac, "u Stocu" = Stolac
     ]
 
-    def _variants(self, word: str) -> set[str]:
-        out = {word}
+    def _variants(self, word: str) -> list[str]:
+        """The word and its nominatives by the rules, in the rules' order: _known keeps the first of two forms the
+        corpus knows equally often ("u Jezdini": Jezdina before Jezdine), where a set's order changed from run to run"""
+        out = {word: None}
         for suf, rep in self._WORD_RULES:
             if word.endswith(suf) and len(word) - len(suf) >= 2:
-                out.add(word[:-len(suf)] + rep)
-        return out
+                out.setdefault(word[:-len(suf)] + rep, None)
+        return list(out)
 
     def _known(self, phrase: str, locative: bool = False) -> str | None:
         """locative: the phrase follows "u" ("u Gradačcu"), so a form read earlier as printed may be in the corpus

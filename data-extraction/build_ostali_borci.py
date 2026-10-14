@@ -542,7 +542,13 @@ def main():
             text = first['additional_info'].strip()
             if first.get('nick') and first['nick'] not in text:
                 text = f"zvani {first['nick']}; {text}"
-            father = first.get('fathers_name') or ''
+            # the father as the lead entry gives him, else (it names none, or only an initial) as the first entry that
+            # gives him in full ("Bukovec Franc": Dolomiti's scanned entry leads, the hero books name Franc his father),
+            # read as that entry's book prints him (nominative, possessive or genitive)
+            given = lambda m, n: len(re.sub(r'\W', '', m.get('fathers_name') or '')) > n
+            fsrc = first if given(first, 2) else next((m for m in g if given(m, 2)), None)
+            fsrc = fsrc or (first if given(first, 0) else next((m for m in g if given(m, 0)), first))
+            father = fsrc.get('fathers_name') or ''
             census = [m for m in g if m['_vol']]
             if census and len(census) == len(g):
                 # only the census names him: his volume's part, his census entry's number (no registry)
@@ -557,17 +563,21 @@ def main():
             # the census prints the father in the nominative ("Marković (Rade) Tomo"): as printed in its parts (their
             # config says nominative), only as fathers_name in 122, whose normalization reads a middle name as genitive
             # (and so does the Tuzla memorial book: "AJDASLIĆ, MUJO (Avdo i Fatima)")
-            nominative = first['_vol'] or first['_book'] in NOMINATIVE_FATHERS
+            nominative = fsrc['_vol'] or fsrc['_book'] in NOMINATIVE_FATHERS
             rec = {'soldier_id': rid, 'last_name': first['last_name'],
                    'middle_name': '' if nominative and code == CODE else father, 'first_name': first['first_name'],
-                   'fathers_name': (from_possessive(father) if first['_book'] in POSSESSIVE_FATHERS else
+                   'fathers_name': (from_possessive(father) if fsrc['_book'] in POSSESSIVE_FATHERS else
                                     father if nominative else ''),
                    'full_name': '', 'additional_info': text,
                    'birth_year': str(year(first, 'birth_year') or '')}
+            if fsrc is not first and given(first, 0) and (nominative or fsrc['_book'] in POSSESSIVE_FATHERS):
+                rec['middle_name'] = first['fathers_name']     # the lead's initial stays in the name ("Zec B. Drago"),
+                #                                                his father in full from the census beside it (Bojan)
             rec.update({k: first[k] for k in SOURCE_FIELDS if first.get(k) not in (None, '')})
             # a names-only list of the fallen (Gončin's and Tmušić's Srem, Oborovo) holds no bio for the field
-            # extractor: the death from its entries' fields, the village he fell at and the day where it gives them
-            listed = [m for m in g if m.get('pdf_file') in NAME_LISTS]
+            # extractor: the death from its entries' fields, the village he fell at and the day where it gives them (not
+            # a names-only list of survivors: the Vis spomenica's holders)
+            listed = [m for m in g if m.get('pdf_file') in NAME_LISTS and not m.get('survived')]
             if listed:
                 rec['death_type'] = 'poginuo'
                 place = next((m['death_place'] for m in listed if m.get('death_place')), '')
