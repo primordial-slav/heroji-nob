@@ -15,7 +15,7 @@ import { useT } from '@/app/i18n/LangContext'
 const INDEX = index as Record<string, { f: string; y?: number; h?: string; same?: string }>
 
 // A soldier's photo as his record shows it: a family's first (public/porodica/), else a book's (public/portreti/)
-function photoOf(id: string): { src: string; focus: number } | null {
+export function photoOf(id: string): { src: string; focus: number } | null {
   const family = familyContributions.find((c) => c.soldierId === id && c.photo)
   if (family) return { src: `/porodica/${family.photo}`, focus: 30 }
   return INDEX[id] ? { src: `/portreti/${INDEX[id].f}`, focus: INDEX[id].y ?? 30 } : null

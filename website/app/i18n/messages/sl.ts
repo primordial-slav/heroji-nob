@@ -23,7 +23,7 @@ export const sl: Messages = {
     name: 'Knjiga borcev',
     description: 'Seznami borcev partizanskih enot. Iščete lahko po imenu, ob vsakem zapisu je stran iz knjige.',
   },
-  nav: { label: 'Glavna navigacija', home: 'Domov', gallery: 'Galerija', sources: 'Viri' },
+  nav: { label: 'Glavna navigacija', home: 'Domov', units: 'Enote', gallery: 'Galerija', sources: 'Viri' },
   theme: { label: 'Videz', light: 'Svetla tema', dark: 'Temna tema', system: 'Kot v sistemu' },
   language: { label: 'Jezik' },
   notFound: {
@@ -44,7 +44,19 @@ export const sl: Messages = {
     noneTitle: (q: string) => `Za »${q}« ni zadetkov`,
     noneText:
       'Poskusite samo s priimkom ali z imenom in priimkom brez očetovega imena. Knjige očetovo ime pogosto zapišejo v rodilniku, na primer »Milorada« namesto »Milorad«. Črki ć in đ lahko vpišete kot c in d.',
-    unitsTitle: 'Enote',
+    doors: {
+      title: 'Raziščite',
+      units: 'Enote',
+      unitsText: 'Brigade, divizije in odredi po letu ustanovitve, vsaka s seznamom svojih borcev.',
+      unitsCount: (x: number) => `${n(x)} ${plural('sl', x, { one: 'enota', two: 'enoti', few: 'enote', other: 'enot' })}`,
+      photos: 'Fotografije',
+      photosText: 'Obrazi borcev iz knjig njihovih enot, z znaci.org in iz družinskih albumov.',
+      photosCount: (x: number) =>
+        `${n(x)} ${plural('sl', x, { one: 'fotografija', two: 'fotografiji', few: 'fotografije', other: 'fotografij' })}`,
+      books: 'Knjige',
+      booksText: 'Knjige in seznami, iz katerih so imena, s skeniranimi stranmi.',
+      booksCount: (x: number) => `${n(x)} ${plural('sl', x, { one: 'vir', two: 'vira', few: 'viri', other: 'virov' })}`,
+    },
     otherUnits: 'Druge enote',
     noUnit: 'Brez enote',
     census: 'Popis žrtev vojne iz leta 1964',
@@ -298,6 +310,17 @@ export const sl: Messages = {
     noneText: 'Poskusite samo s priimkom ali pa iščite po vseh enotah na [začetni strani].',
   },
 
+  unitsPage: {
+    title: 'Enote',
+    description: 'Vse enote na strani po letu ustanovitve: brigade, divizije in odredi, vsaka s seznamom svojih borcev.',
+    lead: (x: number) =>
+      `${n(x)} ${plural('sl', x, { one: 'enota', two: 'enoti', few: 'enote', other: 'enot' })} po letu ustanovitve, vsaka s seznamom svojih borcev.`,
+    years: 'Leto ustanovitve',
+    allYears: 'Vsa',
+    find: 'Ime enote',
+    none: (q: string) => `Nobena enota ne ustreza iskanju „${q}“`,
+    noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer „lička“ ali „13.“.',
+  },
   gallery: {
     title: 'Galerija',
     description: 'Fotografije borcev: obrazi iz knjig enot in iz fotogalerije znaci.org.',

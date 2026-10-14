@@ -16,7 +16,7 @@ import { SearchIcon } from '@/app/components/Icons'
 import { totalNames } from '@/app/lib/totals'
 import BandPhoto from '@/app/components/BandPhoto'
 import OnThisDay from '@/app/components/OnThisDay'
-import UnitsByYear from '@/app/components/UnitsByYear'
+import HomeDoors from '@/app/components/HomeDoors'
 import PortraitRails from '@/app/components/PortraitRails'
 import { HOME_RESET } from '@/app/components/HomeLink'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
@@ -239,8 +239,7 @@ export default function HomePage() {
         ) : (
           <>
             <OnThisDay onSelect={openSoldier} />
-            <h2 className="visually-hidden">{t.home.unitsTitle}</h2>
-            <UnitsByYear units={units} />
+            <HomeDoors />
           </>
         )}
       </div>

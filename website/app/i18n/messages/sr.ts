@@ -19,7 +19,7 @@ export const sr = {
     name: 'Knjiga boraca',
     description: 'Spiskovi boraca partizanskih jedinica, pretraživi po imenu, sa stranom iz knjige uz svaki zapis.',
   },
-  nav: { label: 'Glavna navigacija', home: 'Početna', gallery: 'Galerija', sources: 'Izvori' },
+  nav: { label: 'Glavna navigacija', home: 'Početna', units: 'Jedinice', gallery: 'Galerija', sources: 'Izvori' },
   theme: { label: 'Tema', light: 'Svetla tema', dark: 'Tamna tema', system: 'Sistemska tema' },
   language: { label: 'Jezik' },
   notFound: {
@@ -43,7 +43,19 @@ export const sr = {
     noneTitle: (q: string) => `Nema boraca za „${q}“`,
     noneText:
       'Pokušajte samo prezime, ili ime i prezime bez očevog imena. Knjige često beleže očevo ime u genitivu, na primer „Milorada“ umesto „Milorad“.',
-    unitsTitle: 'Jedinice',
+    /** After "Na današnji dan": the ways into the archive, each a door to its own page */
+    doors: {
+      title: 'Istražite',
+      units: 'Jedinice',
+      unitsText: 'Brigade, divizije i odredi po godini formiranja, svaka sa spiskom svojih boraca.',
+      unitsCount: (x: number) => `${n(x)} ${plural('sr', x, { one: 'jedinica', few: 'jedinice', other: 'jedinica' })}`,
+      photos: 'Fotografije',
+      photosText: 'Lica boraca iz knjiga njihovih jedinica, sa znaci.org i iz porodičnih albuma.',
+      photosCount: (x: number) => `${n(x)} ${plural('sr', x, { one: 'fotografija', few: 'fotografije', other: 'fotografija' })}`,
+      books: 'Knjige',
+      booksText: 'Knjige i spiskovi iz kojih su imena, sa skeniranim stranama.',
+      booksCount: (x: number) => `${n(x)} ${plural('sr', x, { one: 'izvor', other: 'izvora' })}`,
+    },
     otherUnits: 'Ostale jedinice',
     noUnit: 'Bez jedinice',
     /** Under "Bez jedinice", beside the Ostali borci card: the 1964 census's parts, a region and its count each */
@@ -315,6 +327,18 @@ export const sr = {
     noneText: 'Pokušajte samo prezime, ili potražite na [početnoj strani] u svim jedinicama.',
   },
 
+  /** The Jedinice page, /jedinice: every unit under the year it was formed */
+  unitsPage: {
+    title: 'Jedinice',
+    description: 'Sve jedinice na sajtu po godini formiranja: brigade, divizije i odredi, svaka sa spiskom svojih boraca.',
+    lead: (x: number) =>
+      `${n(x)} ${plural('sr', x, { one: 'jedinica', few: 'jedinice', other: 'jedinica' })} po godini formiranja, svaka sa spiskom svojih boraca.`,
+    years: 'Godina formiranja',
+    allYears: 'Sve',
+    find: 'Naziv jedinice',
+    none: (q: string) => `Nijedna jedinica ne odgovara upitu „${q}“`,
+    noneText: 'Pokušajte deo naziva: broj, kraj ili ime, na primer „lička“ ili „13.“.',
+  },
   gallery: {
     title: 'Galerija',
     description: 'Fotografije boraca: lica iz knjiga jedinica i iz fotogalerije znaci.org.',

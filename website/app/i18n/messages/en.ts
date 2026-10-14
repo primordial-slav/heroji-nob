@@ -25,7 +25,7 @@ export const en: Messages = {
     name: 'Knjiga boraca',
     description: 'The rolls of Yugoslav Partisan units, searchable by name, with the page from the book beside every record.',
   },
-  nav: { label: 'Main navigation', home: 'Home', gallery: 'Gallery', sources: 'Sources' },
+  nav: { label: 'Main navigation', home: 'Home', units: 'Units', gallery: 'Gallery', sources: 'Sources' },
   theme: { label: 'Theme', light: 'Light theme', dark: 'Dark theme', system: 'Same as system' },
   language: { label: 'Language' },
   notFound: {
@@ -46,7 +46,18 @@ export const en: Messages = {
     noneTitle: (q: string) => `No one found for ‘${q}’`,
     noneText:
       'Try the surname alone, or the first name and surname without the father’s name. The books often give the father’s name in the possessive form, such as ‘Milorada’ (Milorad’s) rather than ‘Milorad’. Letters such as č and ć can be typed as c.',
-    unitsTitle: 'Units',
+    doors: {
+      title: 'Explore',
+      units: 'Units',
+      unitsText: 'Brigades, divisions and detachments by the year they were formed, each with its list of fighters.',
+      unitsCount: (x: number) => `${n(x)} ${x === 1 ? 'unit' : 'units'}`,
+      photos: 'Photographs',
+      photosText: 'Faces of fighters from their units’ books, from znaci.org and from family albums.',
+      photosCount: (x: number) => `${n(x)} ${x === 1 ? 'photograph' : 'photographs'}`,
+      books: 'Books',
+      booksText: 'The books and lists the names come from, with their scanned pages.',
+      booksCount: (x: number) => `${n(x)} ${x === 1 ? 'source' : 'sources'}`,
+    },
     otherUnits: 'Other units',
     noUnit: 'Without a unit',
     census: 'The 1964 census of war victims',
@@ -295,6 +306,16 @@ export const en: Messages = {
     noneText: 'Try the surname alone, or search every unit from the [home page].',
   },
 
+  unitsPage: {
+    title: 'Units',
+    description: 'Every unit on the site by the year it was formed: brigades, divisions and detachments, each with its list of fighters.',
+    lead: (x: number) => `${n(x)} ${x === 1 ? 'unit' : 'units'} by the year they were formed, each with its list of fighters.`,
+    years: 'Year formed',
+    allYears: 'All',
+    find: 'Unit name',
+    none: (q: string) => `No unit matches “${q}”`,
+    noneText: 'Try part of the name: a number, a place or a name, such as “Lika” or “13th”.',
+  },
   gallery: {
     title: 'Gallery',
     description: 'Photographs of the Partisans: faces from the units’ books and from the znaci.org photo archive.',
