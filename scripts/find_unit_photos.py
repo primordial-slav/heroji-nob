@@ -521,6 +521,17 @@ UNITS = {
     "1-tenkovski-bataljon": dict(
         name="Prvi tenkovski bataljon", tags=[],
         caption=r"tenkovsk\w*\s+(?:bataljon|čet|vod)\w*\s+(?:glavnog\s+štaba|1\.\s+korpusa|hrvatsk)|(?:1\.|prv\w*)\s+tenkovsk\w*\s+bataljon", photo=16316),
+    "proleterski-bataljon-bk": dict(
+        name="Proleterski bataljon Bosanske krajine", tags=[],
+        caption=r"proletersk\w*\s+bataljon\w*\s+bosansk\w*\s+krajin|1\.\s+krajišk\w*\s+proletersk\w*\s+bataljon|udarn\w*\s+bataljon\w*\s+(?:bosansk\w*\s+)?krajin", photo=11282),
+    "kozjanski-odred": dict(
+        name="Kozjanski odred", tags=[],
+        caption=r"kozjansk\w*\s+(?:partizansk\w*\s+)?(?:odred|bataljon|čet)", photo=None,
+        note="Nothing in the gallery names the odred, and its book on znaci.org (00003/2085-2086) is whole-page scans; the card shows the roster's first page."),
+    "9-srpska-brigada": dict(
+        name="9. srpska brigada", tags=[],
+        caption=r"(?:9\.|devet\w*)\s+srpsk\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
+        note="The gallery's only match (4909) shows the 19. srpska entering Negotin; znaci.org has no photo pages of its spomen-knjiga. The card shows the list's first page."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,

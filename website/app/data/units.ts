@@ -1361,6 +1361,36 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/1-tenkovski-bataljon.pdf']
   },
   {
+    id: 'proleterski-bataljon-bk',
+    name: 'Proleterski bataljon Bosanske krajine',
+    nameEn: 'Proletarian Battalion of the Bosnian Krajina',
+    description: 'Formiran 25. marta 1942. u Čelincu, od Kozaračke i Grmečke proleterske čete i Drvarskog proleterskog voda. Biografije boraca, uz fotografiju svakog.',
+    image: '/images/proleterski-bataljon-bk.jpg',
+    soldierCount: 296,
+    dataFile: '/proleterski-bataljon-bk-soldiers.json',
+    pdfFiles: ['/pdfs/proleterski-bataljon-bk.pdf']
+  },
+  {
+    id: 'kozjanski-odred',
+    name: 'Kozjanski odred',
+    nameEn: 'Kozjansko Detachment',
+    description: 'Formiran 27. aprila 1944. na Kozjanskom, od Kozjanskog bataljona. Svi borci i borkinje odreda do njegovog rasformiranja: rođenje, dolazak u NOV, zanimanje i sudbina.',
+    image: '/images/pdf-thumbs/kozjanski-odred.jpg',
+    soldierCount: 3493,
+    dataFile: '/kozjanski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/kozjanski-odred.pdf']
+  },
+  {
+    id: '9-srpska-brigada',
+    name: '9. srpska brigada',
+    nameEn: '9th Serbian Brigade',
+    description: 'Formirana 11. marta 1944. u Rečici. Borci u stroju na dan formiranja, komandni sastav brigade, bataljona i četa i bolničarke i borkinje.',
+    image: '/images/pdf-thumbs/9-srpska.jpg',
+    soldierCount: 468,
+    dataFile: '/9-srpska-soldiers.json',
+    pdfFiles: ['/pdfs/9-srpska.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

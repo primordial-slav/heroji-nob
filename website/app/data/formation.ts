@@ -33,6 +33,18 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '9-srpska-brigada': {
+    date: '1944-03-11', place: 'Rečica', source: 'https://znaci.org/00001/121_1.pdf',
+    note: 'Deveta srpska udarna brigada u stroju i s narodom, „Rođenje Devete / Stroj u Rečici“: „Ovo poglavlje Spomen knjige govori o 11. martu 1944. — danu osnivanja Devete srpske brigade u Rečici.“',
+  },
+  'kozjanski-odred': {
+    date: '1944-04-27', place: 'Kozjansko', source: 'https://znaci.org/00003/2086.pdf',
+    note: 'Teropšič, Kozjanski odred II, str. 70 (izvori): Marjan Jerin, „Dan ustanovitve Kozjanskega odreda 27. 4. 1944“; Milan Kostevc, „Ustanovitev Kozjanskega bataljona 16. 3. 1944 in borbe do ustanovitve Kozjanskega odreda 27. 4. 1944“.',
+  },
+  'proleterski-bataljon-bk': {
+    date: '1942-03-25', place: 'Čelinac', source: 'https://znaci.org/00003/490.pdf',
+    note: 'Trikić i Repajić, Proleterski bataljon Bosanske krajine, str. 47: „Formiranju 1. krajiškog proleterskog bataljona, 25. marta 1942. godine, prisustvovali su najviši rukovodioci narodnooslobodilačkog pokreta u Bosanskoj krajini“; toga dana u Čelincu je bio narodni zbor.',
+  },
   '1-tenkovski-bataljon': {
     date: '1943-09-21', place: 'Lika', source: 'https://znaci.org/00003/543.pdf',
     note: 'Vidaković, Prvi tenkovski bataljon, str. 125: „Odluku o formiranju tenkovskog bataljona doneo je Glavni štab NOV i PO Hrvatske 21. septembra 1943. godine“, od Tenkovske čete 1. korpusa (formirane 5. marta 1943), a ova od Prvog tenkovskog voda u Korenici.',

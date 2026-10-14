@@ -589,6 +589,18 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '9-srpska-brigada': {
+    name: '9. srbska brigada',
+    description: 'Ustanovljena 11. marca 1944 v Rečici. Borci v stroju na dan ustanovitve, poveljniški kader brigade, bataljonov in čet ter bolničarke in borke.',
+  },
+  'kozjanski-odred': {
+    name: 'Kozjanski odred',
+    description: 'Ustanovljen 27. aprila 1944 na Kozjanskem iz Kozjanskega bataljona. Vsi borci in borke odreda do njegove ukinitve: rojstvo, vstop v NOV, poklic in usoda.',
+  },
+  'proleterski-bataljon-bk': {
+    name: 'Proletarski bataljon Bosanske krajine',
+    description: 'Ustanovljen 25. marca 1942 v Čelincu iz Kozaraške in Grmečke proletarske čete ter Drvarskega proletarskega voda. Življenjepisi borcev, ob fotografiji vsakega.',
+  },
   '1-tenkovski-bataljon': {
     name: 'Prvi tankovski bataljon',
     description: 'Ustanovljen 21. septembra 1943 v Liki iz Tankovske čete 1. korpusa. Pripadniki tankovskega voda, čete in bataljona Glavnega štaba Hrvaške.',
@@ -1270,6 +1282,18 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '9-srpska-brigada': {
+    name: '9-та српска бригада',
+    description: 'Формирана на 11 март 1944 во Речица. Борците во строј на денот на формирањето, командниот кадар на бригадата, баталјоните и четите и болничарките и борките.',
+  },
+  'kozjanski-odred': {
+    name: 'Козјански одред',
+    description: 'Формиран на 27 април 1944 на Козјанско, од Козјанскиот баталјон. Сите борци и борки на одредот до неговото расформирање: раѓање, влез во НОВ, занимање и судбина.',
+  },
+  'proleterski-bataljon-bk': {
+    name: 'Пролетерски баталјон на Босанска Краина',
+    description: 'Формиран на 25 март 1942 во Челинац, од Козарачката и Грмечката пролетерска чета и Дрварскиот пролетерски вод. Биографии на борците, со фотографија на секој.',
   },
   '1-tenkovski-bataljon': {
     name: 'Прв тенковски баталјон',
@@ -1954,6 +1978,18 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '9-srpska-brigada': {
+    name: '9th Serbian Brigade',
+    description: 'Formed on 11 March 1944 at Rečica. The fighters in its line on the day it was formed, the officers of the brigade, its battalions and companies, and its nurses and women fighters.',
+  },
+  'kozjanski-odred': {
+    name: 'Kozjansko Detachment',
+    description: 'Formed on 27 April 1944 in Kozjansko, from the Kozjansko Battalion. Every man and woman of the detachment until it was disbanded: birth, joining the partisans, trade and fate.',
+  },
+  'proleterski-bataljon-bk': {
+    name: 'Proletarian Battalion of the Bosnian Krajina',
+    description: 'Formed on 25 March 1942 at Čelinac, from the Kozara and Grmeč proletarian companies and the Drvar proletarian platoon. Each fighter’s biography, beside his photograph.',
   },
   '1-tenkovski-bataljon': {
     name: '1st Tank Battalion',

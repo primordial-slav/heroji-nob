@@ -1261,6 +1261,24 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': 'genitive',
         'original_casing': 'upper_all',
     },
+    164: {
+        'name': 'Kozjanski odred',
+        'json_file': 'kozjanski-odred-soldiers.json',
+        'language': 'sl',
+        'name_format': 'standard',    # a table: "ABRAM / Franc | 10. 8. 1917, Brezje | VII. 1944 | kmečki sin | ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_last',
+    },
+    165: {
+        'name': '9. srpska',
+        'json_file': '9-srpska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ALEKSIĆ Vitomir Đura" (Cyrillic); the women "BABIĆ Jovičić (Sima) Jelena"
+        'has_fathers_name': True,
+        'fathers_name_form': 'nominative',
+        'original_casing': 'upper_last',
+    },
     # not units either: the fallen partisans of the 1964 census (Žrtve rata 1941-1945) who have no record of a unit,
     # one part per volume of the census, a republic or province (build_ostali_borci.py, CENSUS_VOLUMES)
     **{code: {

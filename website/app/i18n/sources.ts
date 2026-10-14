@@ -268,6 +268,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '9-srpska':
+      'Stroj v Rečici: 377 borcev na dan ustanovitve, 11. marca 1944; poveljniški kader brigade, bataljonov in čet z datumi dolžnosti; bolničarke in borke. Imenika borcev s kratkimi življenjepisi (str. 47–372) znaci.org nima.',
+    'kozjanski-odred':
+      'Seznam borcev in bork Kozjanskega odreda: 3.495 oseb od ustanovitve do ukinitve, z datumom in krajem rojstva, vstopom v NOV in POS, poklicem in opombo (kje je kdo bil, kdo je padel); strani so tu črno-bele, besedilo kot v knjigi.',
+    'proleterski-bataljon-bk':
+      'Seznam borcev bataljona: življenjepis vsakega ob njegovi fotografiji, od rojstva in prihoda v Kozaraško, Grmečko ali Drvarsko proletarsko četo do smrti ali konca vojne (str. 256–362).',
     '1-tenkovski-bataljon':
       'Seznam pripadnikov Tankovskega voda Skupine partizanskih odredov za Liko, Tankovske čete 1. korpusa in Tankovskega bataljona Glavnega štaba NOV in PO Hrvaške (251 imen, str. 337–340).',
     '3-diverzantski-odred':
@@ -629,6 +635,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '9-srpska':
+      'Строј во Речица: 377 борци на денот на формирањето, 11 март 1944; командниот кадар на бригадата, баталјоните и четите со датумите на должностите; болничарките и борките. Именикот на борците со кратки биографии (стр. 47–372) znaci.org го нема.',
+    'kozjanski-odred':
+      'Список на борците и борките на Козјанскиот одред: 3.495 лица од формирањето до расформирањето, со датум и место на раѓање, влез во НОВ, занимање и забелешка (каде кој бил, кој паднал); страниците се тука црно-бели, текстот како во книгата.',
+    'proleterski-bataljon-bk':
+      'Список на борците на баталјонот: биографија на секој, со неговата фотографија, од раѓањето и доаѓањето во Козарачката, Грмечката или Дрварската пролетерска чета до загинувањето или крајот на војната (стр. 256–362).',
     '1-tenkovski-bataljon':
       'Попис на припадниците на Тенковскиот вод на Групата партизански одреди за Лика, Тенковската чета на 1-от корпус и Тенковскиот баталјон на Главниот штаб на НОВ и ПО на Хрватска (251 име, стр. 337–340).',
     '3-diverzantski-odred':
@@ -989,6 +1001,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '9-srpska':
+      'The line at Rečica: 377 fighters on the day the brigade was formed, 11 March 1944; the officers of the brigade, its battalions and companies with the dates of their duties; the nurses and women fighters. The book’s roll of every fighter with a short biography (pp. 47–372) is not on znaci.org.',
+    'kozjanski-odred':
+      'Every man and woman of the Kozjansko Detachment, 3,495 people from its founding to its disbanding, with date and place of birth, joining the partisans, trade and a note (where each served, who fell); the pages are black and white here, the text as in the book.',
+    'proleterski-bataljon-bk':
+      'The battalion’s fighters: each one’s biography beside his photograph, from his birth and coming to the Kozara, Grmeč or Drvar proletarian company to his death or the end of the war (pp. 256–362).',
     '1-tenkovski-bataljon':
       'The roll of the tank platoon of the Lika partisan detachments, the 1st Corps’ tank company and the tank battalion of the Croatian General Staff (251 names, pp. 337–340).',
     '3-diverzantski-odred':

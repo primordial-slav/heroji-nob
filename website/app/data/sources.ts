@@ -1658,6 +1658,33 @@ export const sources: PdfSource[] = [
     description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su samo borci; civilne žrtve, saradnici NOP-a i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: '9-srpska',
+    title: 'Deveta srpska udarna brigada u stroju i s narodom',
+    author: 'spomen-knjiga',
+    pdfPath: '/pdfs/9-srpska.pdf',
+    thumbnail: '/images/pdf-thumbs/9-srpska.jpg',
+    brigadeName: '9. srpska brigada',
+    description: 'Stroj u Rečici: 377 boraca na dan formiranja, 11. marta 1944; komandni sastav brigade, bataljona i četa sa datumima dužnosti; bolničarke i borci, stroj žena. Imenik boraca s kratkim životopisom (str. 47–372) znaci.org nema.'
+  },
+  {
+    id: 'kozjanski-odred',
+    title: 'Kozjanski odred II',
+    author: 'Tomaž Teropšič',
+    pdfPath: '/pdfs/kozjanski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/kozjanski-odred.jpg',
+    brigadeName: 'Kozjanski odred',
+    description: 'Seznam borcev in bork Kozjanskega odreda: 3.495 osoba od osnivanja do rasformiranja, s datumom i mestom rođenja, dolaskom u NOV, zanimanjem i napomenom (gde je ko bio, ko je pao); stranice su ovde crno-bele, tekst kao u knjizi.'
+  },
+  {
+    id: 'proleterski-bataljon-bk',
+    title: 'Proleterski bataljon Bosanske krajine',
+    author: 'Savo Trikić, Dušan Repajić',
+    pdfPath: '/pdfs/proleterski-bataljon-bk.pdf',
+    thumbnail: '/images/pdf-thumbs/proleterski-bataljon-bk.jpg',
+    brigadeName: 'Proleterski bataljon Bosanske krajine',
+    description: 'Spisak boraca bataljona: biografija svakog, uz njegovu fotografiju, od rođenja i dolaska u Kozaračku, Grmečku ili Drvarsku proletersku četu do pogibije ili kraja rata (str. 256–362).'
+  },
+  {
     id: '1-tenkovski-bataljon',
     title: 'Prvi tenkovski bataljon',
     author: 'Vujo Vidaković',
