@@ -1910,6 +1910,15 @@ export const sources: PdfSource[] = [
     description: 'Iz priloga knjige o Selcima kod Crikvenice u ratu: spisak boraca iz Selaca poginulih u NOB, s dužnošću, jedinicom, rođenjem i pogibijom, i prvoborci i nosioci Partizanske spomenice 1941. Spisak organizovanih učesnika NOB (samo imena, s članicama AFŽ-a i odbornicima) i spiskovi žrtava nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'susak-rijeka-spomenica',
+    title: 'Sušak i Rijeka u NOB — nosioci Partizanske spomenice 1941',
+    author: 'Radule Butorović',
+    pdfPath: '/pdfs/susak-rijeka-spomenica.pdf',
+    thumbnail: '/images/pdf-thumbs/susak-rijeka-spomenica.jpg',
+    brigadeName: '',
+    description: 'Iz priloga knjige o Sušaku i Rijeci u NOB: nosioci Partizanske spomenice 1941. s područja opštine Rijeka, ime i mesto, kako ih je sastavio opštinski odbor SUBNOR-a. Spiskovi članova KPJ i SKOJ-a iz 1941. poginulih u NOB nisu uneti, jer ne kažu ko je bio borac. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

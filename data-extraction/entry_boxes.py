@@ -88,6 +88,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
 TWO_COLUMN = {
     'iskra-in-plamen-padli.pdf',            # Iskra in plamen 3: the dead of Polje's villages, the fallen in the army
     'cazinska-krajina-pali-borci.pdf',      # Stradanja u Cazinskoj krajini: the fallen fighters, a line each
+    'susak-rijeka-spomenica.pdf',           # Sušak i Rijeka u NOB: the spomenica's holders, a name a line
     'mostarski-bataljon.pdf',               # Mostarski bataljon (Ćemalović): the fighters' bios
     '18-srpska.pdf',                        # 18. srpska (Milosavljević): everyone in the brigade
     'eskadrile-novj.pdf',                   # 1. i 2. eskadrila NOVJ (Pejčić): the squadrons' people
@@ -380,6 +381,7 @@ class PageCache:
 # the data), rather than continuing the entry above it.
 ONE_LINE_ENTRIES = {
     'cazinska-krajina-pali-borci.pdf': range(1, 35),  # the fallen fighters of the Cazin region, a line each
+    'susak-rijeka-spomenica.pdf': range(1, 3),        # the spomenica's holders of the Rijeka municipality
     '9-dalmatinska-divizija.pdf': range(1, 7),        # names only, a name a line
     'turopoljsko-posavski-odred.pdf': range(1, 5),    # a table, a row an entry
     '3-dalmatinska-poginuli.pdf': range(1, 4),
