@@ -1784,6 +1784,24 @@ export const sources: PdfSource[] = [
     description: 'Spomen-knjiga opštine Tuzla: biografije njenih učesnika NOR-a koji su poginuli 1941–1945 (str. 13–300), rođenih, nastanjenih ili zaposlenih u Tuzli ili onih koji su iz nje otišli u partizane, često s fotografijom, s jedinicom, rođenjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Drugi deo knjige, žrtve fašističkog terora, nije unet.'
   },
   {
+    id: 'jajce-1941-poginuli',
+    title: 'Jajačko područje u oslobodilačkom ratu i revoluciji 1941–1945, knj. I',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/jajce-1941-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/jajce-1941-poginuli.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika sećanja o jajačkom kraju (knj. I): spisak boraca s jajačkog područja poginulih 1941. godine, s rođenjem, jedinicom i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'jajce-1942-poginuli',
+    title: 'Jajačko područje u oslobodilačkom ratu i revoluciji 1941–1945, knj. II',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/jajce-1942-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/jajce-1942-poginuli.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika sećanja o jajačkom kraju (knj. II): spisak boraca i aktivista NOP-a s jajačkog područja poginulih 1942. godine, s rođenjem, jedinicom i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

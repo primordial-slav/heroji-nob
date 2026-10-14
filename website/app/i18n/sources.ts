@@ -432,6 +432,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Kronika kordunske vasi, ki jo je izdal Zgodovinski arhiv v Karlovcu, z dvema njenima seznamoma: padli in umrli borci 1941–1945 iz Donjega, Gornjega in Lasinjskega Sjeničaka (str. 330–338), po vaseh, z rojstvom, potjo v NOB in smrtjo, ter nosilci Partizanske spomenice 1941 (str. 385–389). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom in prehladom iz iste knjige nismo vnesli.',
     'tuzla-spomen-knjiga':
       'Spominska knjiga občine Tuzla: življenjepisi njenih udeležencev NOB, ki so padli v letih 1941–1945 (str. 13–300), rojenih, živečih ali zaposlenih v Tuzli ali takih, ki so od tam odšli v partizane, pogosto s fotografijo, z enoto, rojstvom in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Drugega dela knjige, žrtev fašističnega terorja, nismo vnesli.',
+    'jajce-1941-poginuli':
+      'Iz zbornika spominov o jajškem območju (knj. I): seznam borcev z jajškega območja, padlih leta 1941, z rojstvom, enoto in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'jajce-1942-poginuli':
+      'Iz zbornika spominov o jajškem območju (knj. II): seznam borcev in aktivistov NOG z jajškega območja, padlih leta 1942, z rojstvom, enoto in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -865,6 +869,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Хроника на едно кордунско село, издадена од Историскиот архив во Карловац, со два нејзини списока: паднатите и умрените борци 1941–1945 од Долни, Горни и Ласињски Сјеничак (стр. 330–338), по села, со раѓање, пат во НОБ и смрт, и носителите на Партизанската споменица 1941 (стр. 385–389). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус и настинка од истата книга не се внесени.',
     'tuzla-spomen-knjiga':
       'Спомен-книга на општина Тузла: биографии на нејзините учесници во НОБ што загинале во 1941–1945 (стр. 13–300), родени, живееле или работеле во Тузла или од неа тргнале во партизаните, често со фотографија, со единицата, раѓањето и смртта. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Вториот дел на книгата, жртвите на фашистичкиот терор, не е внесен.',
+    'jajce-1941-poginuli':
+      'Од зборникот спомени за јајачкиот крај (кн. I): списокот на борците од јајачкото подрачје загинати во 1941 година, со раѓање, единица и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'jajce-1942-poginuli':
+      'Од зборникот спомени за јајачкиот крај (кн. II): списокот на борците и активистите на НОД од јајачкото подрачје загинати во 1942 година, со раѓање, единица и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1297,6 +1305,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The chronicle of a Kordun village, published by the Karlovac Historical Archive, with two of its lists: the fighters from Donji, Gornji and Lasinjski Sjeničak who fell or died in 1941–1945 (pp. 330–338), by village, with birth, the way into the war and death, and the holders of the Partisan Commemorative Medal 1941 (pp. 385–389). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus and cold were left out.',
     'tuzla-spomen-knjiga':
       'The memorial book of the municipality of Tuzla: biographies of its partisans who fell in 1941–1945 (pp. 13–300), born, living or working in Tuzla or joining the army from there, often with a photograph, with unit, birth and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The book’s second part, the victims of fascist terror, was left out.',
+    'jajce-1941-poginuli':
+      'From the collection of memoirs on the Jajce area (vol. I): the fighters from the Jajce area who fell in 1941, with birth, unit and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'jajce-1942-poginuli':
+      'From the collection of memoirs on the Jajce area (vol. II): the fighters and activists of the liberation movement from the Jajce area who fell in 1942, with birth, unit and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
