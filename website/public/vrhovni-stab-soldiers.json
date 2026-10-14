@@ -950,6 +950,18 @@
         "pdf_x_end": 471.9,
         "pdf_y_end": 666.6,
         "unit_file": "uzicki-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0026010027",
+        "name": "Bojić Slavko",
+        "additional_info": "Spisak boraca 2. požeške čete od 22. septembra 1941. do 1. marta 1942. godine, Bakionica: Bojić (Miljko) Slavko",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 5,
+        "pdf_x": 161.2,
+        "pdf_y": 345.4,
+        "pdf_x_end": 272.6,
+        "pdf_y_end": 354.4,
+        "unit_file": "uzicki-odred-soldiers.json"
       }
     ]
   },
@@ -4707,7 +4719,21 @@
     "occupation": "radnik",
     "rank": "borac",
     "unit_detail": "1. četa",
-    "pdf_x_end": 215.9
+    "pdf_x_end": 215.9,
+    "other_sources": [
+      {
+        "soldier_id": "0040020338",
+        "name": "Knežević Radivoja Miloš",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Krušica, Danilovgrad, 1902, zemljoradnik, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 43,
+        "pdf_x": 172.7,
+        "pdf_y": 554.4,
+        "pdf_x_end": 470.0,
+        "pdf_y_end": 571.5,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Knežević",
@@ -5745,7 +5771,21 @@
     "death_date": "4. novembra 1994",
     "rank": "borac",
     "unit_detail": "2. četa",
-    "pdf_x_end": 210.7
+    "pdf_x_end": 210.7,
+    "other_sources": [
+      {
+        "soldier_id": "0026010182",
+        "name": "Leković Petra Boško",
+        "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Rečice: Leković (Petar) Boško",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 3,
+        "pdf_x": 240.1,
+        "pdf_y": 311.2,
+        "pdf_x_end": 357.2,
+        "pdf_y_end": 320.2,
+        "unit_file": "uzicki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lelas",
@@ -6477,8 +6517,21 @@
         "pdf_x_end": 354.0,
         "pdf_y_end": 212.8,
         "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020454",
+        "name": "Masleša Aleksandra Veselin",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Politodjel Brigade: Banjaluka, 1906, publicista, član KPJ, Poginuo 1943. na Sutjesci",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 1,
+        "pdf_x": 163.7,
+        "pdf_y": 448.6,
+        "pdf_x_end": 448.3,
+        "pdf_y_end": 466.5,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Matijašević",
@@ -8605,7 +8658,22 @@
     "death_type": "umro",
     "death_date": "8. marta 1984",
     "death_place": "u Beogradu Ì",
-    "pdf_x_end": 397.7
+    "pdf_x_end": 397.7,
+    "rank": "komandant bataljona",
+    "other_sources": [
+      {
+        "soldier_id": "0040020620",
+        "name": "Poleksić Dimitrijev Momčilo",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: komandant bataljona, Mokro, Šavnik, 1912, vojni službnik, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 73,
+        "pdf_x": 166.7,
+        "pdf_y": 441.1,
+        "pdf_x_end": 482.9,
+        "pdf_y_end": 458.0,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Polovina",
@@ -8687,8 +8755,21 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=114",
         "source_page": 110,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0040020622",
+        "name": "Popivoda Gorčina Krsto",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: borac, Bjelice, Cetinje, 1910, student, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 23,
+        "pdf_x": 162.9,
+        "pdf_y": 504.4,
+        "pdf_x_end": 477.6,
+        "pdf_y_end": 513.4,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "last_name": "Popović",
@@ -8827,7 +8908,21 @@
     "death_type": "umro",
     "death_date": "1971",
     "death_place": "Beograd",
-    "pdf_x_end": 187.1
+    "pdf_x_end": 187.1,
+    "other_sources": [
+      {
+        "soldier_id": "0040020631",
+        "name": "Popović Milića Milentije",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Politodjel Brigade: Crna Trava, 1913, inženjer, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 1,
+        "pdf_x": 163.7,
+        "pdf_y": 427.3,
+        "pdf_x_end": 458.9,
+        "pdf_y_end": 444.9,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Popović",
@@ -12108,7 +12203,21 @@
     "death_date": "15. novembra 1995",
     "rank": "borac",
     "unit_detail": "1. četa",
-    "pdf_x_end": 376.7
+    "pdf_x_end": 376.7,
+    "other_sources": [
+      {
+        "soldier_id": "0040020817",
+        "name": "Vujanović Luke Dušan",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Meterizi, Rijeka Crnojevića, 1921, đak, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 11,
+        "pdf_x": 162.8,
+        "pdf_y": 485.9,
+        "pdf_x_end": 487.2,
+        "pdf_y_end": 503.3,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vujasinović",
@@ -12699,6 +12808,18 @@
         "pdf_x_end": 365.1,
         "pdf_y_end": 115.8,
         "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020890",
+        "name": "Zindović Ilije Tomaš",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: borac, Kolašinska Polja, 1903, zemljoradnik, član KPJ, Poginuo 1943. u V ofanzivi",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 63,
+        "pdf_x": 160.7,
+        "pdf_y": 539.6,
+        "pdf_x_end": 488.4,
+        "pdf_y_end": 548.6,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ]
   },
@@ -12772,6 +12893,18 @@
         "pdf_x_end": 371.2,
         "pdf_y_end": 311.4,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020892",
+        "name": "Zogović Mate Vera",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Tehnika Brigade: Zagreb, 1920, ekonomist, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 1,
+        "pdf_x": 163.0,
+        "pdf_y": 555.9,
+        "pdf_x_end": 437.3,
+        "pdf_y_end": 564.9,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ]
   },
@@ -14015,7 +14148,21 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "2. četa",
-    "pdf_x_end": 210.2
+    "pdf_x_end": 210.2,
+    "other_sources": [
+      {
+        "soldier_id": "0040021003",
+        "name": "Žugić Mitrov Mihailo",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Novakovići, Žabljak, 1919, zemljoradnik, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 79,
+        "pdf_x": 162.6,
+        "pdf_y": 339.0,
+        "pdf_x_end": 465.2,
+        "pdf_y_end": 356.4,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Žugić",
