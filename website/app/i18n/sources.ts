@@ -494,6 +494,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Ranjeni in bolni borci in aktivisti na Koroškem do februarja 1944, pacienti koroških partizanskih bolnišnic, koroški borci, ki so se zdravili izven bolnišnic, in sanitetno osebje, s kratkim življenjepisom (str. 282–355). Vpisani so borci in osebje partizanskih bolnišnic, ne politični delavci na terenu ne zdravniki, ki so partizanom pošiljali zdravila. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'artileristi-prekomorci':
       'Seznam padlih artileristov prekomorcev, Slovencev in Istranov, ki so iz Italije in Afrike prišli v artilerijske enote, ustanovljene na Visu in v Italiji, in seznam vodilnega kadra teh enot (str. 227–234). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'virovitica-spomenica-1941':
+      'Nosilci partizanske spomenice 1941 iz občine Virovitica, štirinajst življenjepisov s fotografijami (str. 221–239). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'vis-zrtve-nob':
+      'Žrtve NOB s spominskih plošč viškega otočja (str. 516–520): padli v bojih in umrli zaradi ran in bolezni iz Visa, Komiže, Biševa, Oključne in vasi pod Humom, samo ime in očetovo ime. Talci, ki so jih Italijani ustrelili leta 1943, in umrli v ustaških zaporih niso vpisani. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca z otoka, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'xxxi-divizija-stabi':
+      'Štabi XXXI. divizije ter Gradnikove, Prešernove in Vojkove brigade (str. 557–562): komandanti, komisarji, njihovi namestniki in načelniki štaba, vsak s časom, ko je bil na dolžnosti, in kdo od njih je padel. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    '15-brigada-stabi':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba 15. brigade ter komandanti in komisarji njenih bataljonov (str. 447–450), vsak s časom, ko je bil na dolžnosti, in kjer se je dolžnost tako končala, da je bil ranjen, je zbolel ali padel. Brigade ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    '15-divizija-stabi':
+      'Poveljniška sestava 15. divizije NOV in POS (str. 583–584): komandanti, politični komisarji, njihovi namestniki in pomočniki ter načelniki štaba, vsak s časom, ko je bil na dolžnosti. Divizije ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'jb-odred-stabi':
+      'Štabi Jeseniško-bohinjskega odreda, njegovih treh bataljonov in šolskega taborišča, avgust 1944 – maj 1945 (str. 354–356): komandanti, politični komisarji, njihovi pomočniki in namestniki ter načelnik štaba, vsak s časom, ko je bil na dolžnosti. Odreda ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -989,6 +1001,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Ранетите и болните борци и активисти во Корушка до февруари 1944, пациентите на корушките партизански болници, корушките борци лекувани надвор од болниците и санитетскиот персонал, со кратка биографија (стр. 282–355). Внесени се борците и персоналот на партизанските болници, не политичките работници на теренот ниту лекарите што им праќале лекови на партизаните. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'artileristi-prekomorci':
       'Списокот на загинатите артилерци прекуморци, Словенци и Истрани што од Италија и Африка дошле во артилериските единици формирани на Вис и во Италија, и списокот на командантите и комесарите на тие единици (стр. 227–234). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'virovitica-spomenica-1941':
+      'Носителите на Партизанската споменица 1941 од општина Вировитица, четиринаесет биографии со фотографии (стр. 221–239). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'vis-zrtve-nob':
+      'Жртвите во НОБ од спомен-плочите на вишкото островје (стр. 516–520): загинатите во борбите и умрените од рани и болести од Вис, Комижа, Бишево, Окључна и селата под Хум, само име и татково име. Заложниците што Италијанците ги стрелаа во 1943 и умрените во усташките затвори не се внесени. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец од островот што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'xxxi-divizija-stabi':
+      'Штабовите на XXXI дивизија и на нејзините бригади, Градникова, Прешернова и Војкова (стр. 557–562): командантите, комесарите, нивните заменици и началниците на штабот, секој со времето кога бил на должноста, и кој од нив загинал. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    '15-brigada-stabi':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на 15. словенечка бригада и командантите и комесарите на нејзините баталјони (стр. 447–450), секој со времето кога бил на должноста и, каде што должноста така завршила, дека бил ранет, се разболел или загинал. Бригадата не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    '15-divizija-stabi':
+      'Командниот состав на 15. дивизија на НОВ и ПО на Словенија (стр. 583–584): командантите, политичките комесари, нивните заменици и помошници и началниците на штабот, секој со времето кога бил на должноста. Дивизијата не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'jb-odred-stabi':
+      'Штабовите на Јесеничко-бохињскиот одред, на неговите три баталјони и на школскиот логор, август 1944 – мај 1945 (стр. 354–356): командантите, политичките комесари, нивните помошници и заменици и началникот на штабот, секој со времето кога бил на должноста. Одредот не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1483,6 +1507,18 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The wounded and sick fighters and activists in Carinthia to February 1944, the patients of the Carinthian partisan hospitals, the Carinthian fighters treated outside them and the medical staff, each with a short biography (pp. 282–355). Entered are the fighters and the staff of the partisan hospitals, not the political workers in the field or the doctors who sent medicines to the partisans. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'artileristi-prekomorci':
       'The fallen gunners among the "prekomorci", the Slovenes and Istrians who came from Italy and Africa to the artillery units formed on Vis and in Italy, and the commanders and commissars of those units (pp. 227–234). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'virovitica-spomenica-1941':
+      'The holders of the Partisan Commemorative Medal of 1941 from the Virovitica municipality, fourteen biographies with photographs (pp. 221–239). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'vis-zrtve-nob':
+      'The war\'s dead from the memorial plaques of the Vis islands (pp. 516–520): those who fell in battle and those who died of wounds and illness, from Vis, Komiža, Biševo, Oključna and the villages under Hum, the name and the father\'s name only. The hostages the Italians shot in 1943 and those who died in Ustaša prisons are left out. The book belongs to no single unit: an entry is added to the record of each fighter from the island on the site where the match is certain; the others are among the Other fighters.',
+    'xxxi-divizija-stabi':
+      'The staffs of the XXXI Division and its brigades, the Gradnik, Prešeren and Vojko brigades (pp. 557–562): commanders, commissars, their deputies and the chiefs of staff, each with the dates he held the post, and which of them fell. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    '15-brigada-stabi':
+      'The commanders, political commissars, their deputies and the chiefs of staff of the Slovene 15th Brigade, and the commanders and commissars of its battalions (pp. 447–450), each with the dates he held the post and, where it ended so, that he was wounded, fell ill or fell. The brigade is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    '15-divizija-stabi':
+      'The command of the 15th Division of the Slovene partisan army (pp. 583–584): commanders, political commissars, their deputies and assistants, and the chiefs of staff, each with the dates he held the post. The division is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'jb-odred-stabi':
+      'The staffs of the Jesenice-Bohinj Detachment, its three battalions and its school camp, August 1944 – May 1945 (pp. 354–356): commanders, political commissars, their assistants and deputies, and the chief of staff, each with the dates he held the post. The detachment is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

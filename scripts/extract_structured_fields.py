@@ -59,7 +59,7 @@ PARSER_FIELDS = {39, 121, 150, 170, 171, 172}   # Druga proleterska; the pioneer
 # krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
 # build_ostali_borci.py sets the death from the entry's own fields
 NAME_LISTS = {'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf', 'bitka-kod-oborova-poginuli.pdf',
-              'vis-spomenica-1941.pdf'}
+              'vis-spomenica-1941.pdf', 'vis-zrtve-nob.pdf'}
 # the 1964 census of the war's dead (the Museum of Genocide Victims' PDFs): its entries' fields are the census's columns
 CENSUS = 'muzejgenocida.rs/'
 # Borci Sutjeske prints the duty at the battle, then "krajem rata ..." the duty at the war's end: the first is the rank

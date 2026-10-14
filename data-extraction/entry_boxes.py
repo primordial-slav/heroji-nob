@@ -70,6 +70,12 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '4-proleterska-formiranje.pdf',   # the 4. proleterska at formation: a table over each spread, its rows the parser's
                   'ludbreg-poginuli.pdf',   # the Ludbreg lists: the name left, its place set apart on the right
                   'artileristi-prekomorci.pdf',   # the fallen boxed by their parser, the officers on their posts' line
+                  'virovitica-spomenica-1941.pdf',   # a bio under a portrait: its heading down to the page's end
+                  'vis-zrtve-nob.pdf',   # the Vis memorial plaques' names, two columns, a number moved to the other's line
+                  'xxxi-divizija-stabi.pdf',   # the XXXI. divizija's staffs: a man boxed at his first post
+                  '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
+                  '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
+                  'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
                   'dalmatinci-prva-proleterska.pdf',   # Dalmatinci u Prvoj proleterskoj: two or three columns, a page each its own

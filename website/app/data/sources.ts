@@ -2063,6 +2063,60 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih artiljeraca prekomoraca, Slovenaca i Istrana koji su iz Italije i Afrike došli u artiljerijske jedinice formirane na Visu i u Italiji, i spisak komandanata i komesara tih jedinica (str. 227–234). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'virovitica-spomenica-1941',
+    title: 'Virovitica u narodnooslobodilačkoj borbi i socijalističkoj revoluciji',
+    author: 'Savo Velagić',
+    pdfPath: '/pdfs/virovitica-spomenica-1941.pdf',
+    thumbnail: '/images/pdf-thumbs/virovitica-spomenica-1941.jpg',
+    brigadeName: '',
+    description: 'Nosioci Partizanske spomenice 1941 iz opštine Virovitica, četrnaest biografija uz fotografije (str. 221–239). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'vis-zrtve-nob',
+    title: 'Vis 1941–1945',
+    author: 'Veseljko Huljić',
+    pdfPath: '/pdfs/vis-zrtve-nob.pdf',
+    thumbnail: '/images/pdf-thumbs/vis-zrtve-nob.jpg',
+    brigadeName: '',
+    description: 'Žrtve tokom NOB-a sa spomen-ploča viškog otočja (str. 516–520): poginuli u borbama i umrli od rana i bolesti iz Visa, Komiže, Biševa, Oključne i sela pod Humom, samo ime i ime oca. Taoci koje su Italijani streljali 1943. i umrli u ustaškim zatvorima nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'xxxi-divizija-stabi',
+    title: 'Med Triglavom in Trstom — Zgodovina XXXI. divizije',
+    author: 'Stanko Petelin-Vojko',
+    pdfPath: '/pdfs/xxxi-divizija-stabi.pdf',
+    thumbnail: '/images/pdf-thumbs/xxxi-divizija-stabi.jpg',
+    brigadeName: '',
+    description: 'Štabovi XXXI. divizije i njenih brigada, Gradnikove, Prešernove i Vojkove (str. 557–562): komandanti, komesari, njihovi zamenici i načelnici štaba, svaki s danima kad je bio na dužnosti, i ko je od njih poginuo. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: '15-brigada-stabi',
+    title: 'Petnajsta brigada',
+    author: 'Mile Pavlin',
+    pdfPath: '/pdfs/15-brigada-stabi.pdf',
+    thumbnail: '/images/pdf-thumbs/15-brigada-stabi.jpg',
+    brigadeName: '',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba 15. slovenačke brigade i komandanti i komesari njenih bataljona (str. 447–450), svaki s danima kad je bio na dužnosti i, gde je dužnost tako završio, da je ranjen, oboleo ili poginuo. Brigada nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: '15-divizija-stabi',
+    title: 'Petnajsta divizija',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/15-divizija-stabi.pdf',
+    thumbnail: '/images/pdf-thumbs/15-divizija-stabi.jpg',
+    brigadeName: '',
+    description: 'Komandni sastav 15. divizije NOV i PO Slovenije (str. 583–584): komandanti, politički komesari, njihovi zamenici i pomoćnici i načelnici štaba, svaki s danima kad je bio na dužnosti. Divizija nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'jb-odred-stabi',
+    title: 'Jeseniško-bohinjski odred',
+    author: 'Mile Pavlin',
+    pdfPath: '/pdfs/jb-odred-stabi.pdf',
+    thumbnail: '/images/pdf-thumbs/jb-odred-stabi.jpg',
+    brigadeName: '',
+    description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
