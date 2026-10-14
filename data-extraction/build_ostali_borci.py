@@ -64,6 +64,12 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
                '9010000363': 'Dmitar'}
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga'}
+# books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
+POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima'}
+# books used only as references for men who have a unit record: their unmatched entries make no records (the user's
+# decision of 2026-10-14 for the Spomenica crnogorskim antifašistima, which lists fighters and antifascists killed in
+# camps and prisons together); taking a book out of this set adds its unmatched men to Ostali borci
+REFERENCE_ONLY = {'spomenica-crnogorskim-antifasistima'}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',
                  'pdf_x_left', 'pdf_rects')
 
@@ -72,7 +78,9 @@ def books() -> dict[str, list[dict]]:
     out = {}
     for d in ENTRY_DIRS:
         for p in sorted(d.glob('*-entries.json')):
-            out[p.name[:-len('-entries.json')]] = json.loads(p.read_text(encoding='utf-8'))
+            name = p.name[:-len('-entries.json')]
+            if name not in REFERENCE_ONLY:
+                out[name] = json.loads(p.read_text(encoding='utf-8'))
     return out
 
 
@@ -349,7 +357,7 @@ def main():
             nominative = first['_vol'] or first['_book'] in NOMINATIVE_FATHERS
             rec = {'soldier_id': rid, 'last_name': first['last_name'],
                    'middle_name': '' if nominative and code == CODE else father, 'first_name': first['first_name'],
-                   'fathers_name': (from_possessive(father) if first['_book'] == 'trebinjci-pali' else
+                   'fathers_name': (from_possessive(father) if first['_book'] in POSSESSIVE_FATHERS else
                                     father if nominative else ''),
                    'full_name': '', 'additional_info': text,
                    'birth_year': str(year(first, 'birth_year') or '')}

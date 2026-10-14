@@ -1333,6 +1333,15 @@ export const sources: PdfSource[] = [
     description: 'Popis boraca Mosorskog partizanskog odreda 1942–1944 (prvi deo popisa, str. 355–562): I mosorski odred, Mosorski bataljon, Leteća mosorska četa i odred od oktobra 1943. do novembra 1944, s rođenjem, zanimanjem, dolaskom u odred i sudbinom. Drugi deo popisa, borci komandi mesta i terenski radnici, nije unet.'
   },
   {
+    id: 'mosorski-odred-2',
+    title: 'Mosorski partizanski odred — drugi deo popisa',
+    author: 'Miroslav Velić, Ante V. Petrić',
+    pdfPath: '/pdfs/mosorski-odred-2.pdf',
+    thumbnail: '/images/pdf-thumbs/mosorski-odred-2.jpg',
+    brigadeName: 'Mosorski partizanski odred',
+    description: 'Drugi deo popisa iz iste knjige (str. 573–648): borci komandi mesta, partijsko-politički i terenski radnici s područja Mosora. Uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; terenski radnici, odbornici, članice AFŽ i radni bataljoni nisu uneti.'
+  },
+  {
     id: 'turopoljsko-posavski-odred',
     title: 'Turopoljsko-posavski partizanski odred — spisak poginulih i umrlih',
     author: 'Višnja Huzjak',
@@ -1800,6 +1809,33 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/jajce-1942-poginuli.jpg',
     brigadeName: '',
     description: 'Iz zbornika sećanja o jajačkom kraju (knj. II): spisak boraca i aktivista NOP-a s jajačkog područja poginulih 1942. godine, s rođenjem, jedinicom i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'spomenica-crnogorskim-antifasistima',
+    title: 'Spomenica crnogorskim antifašistima 1941–1945',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/spomenica-crnogorskim-antifasistima.pdf',
+    thumbnail: '/images/pdf-thumbs/spomenica-crnogorskim-antifasistima.jpg',
+    brigadeName: '',
+    description: 'Spisak crnogorskih antifašista poginulih i umrlih 1941–1945, po opštinama, u tabeli: ime, ime oca, godina i mesto rođenja, godina smrti i mesto pogibije. Knjiga zajedno navodi pale borce i antifašiste streljane ili umrle u logorima i zatvorima, bez rubrike koja ih razlikuje, pa je zapis iz nje dodat samo zapisima boraca koji su već na sajtu i za koje se pouzdano zna da je to on.'
+  },
+  {
+    id: 'hrvatsko-zagorje-1981',
+    title: 'Hrvatsko zagorje u revoluciji',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hrvatsko-zagorje-1981.pdf',
+    thumbnail: '/images/pdf-thumbs/hrvatsko-zagorje-1981.jpg',
+    brigadeName: '',
+    description: 'Popis poginulih učesnika NOB-a 1941–1945. s područja općina Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić i Zlatar-Bistrica, s rođenjem, jedinicom i smrću. Popis zajedno navodi borce i žrtve fašističkog terora; uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'imotska-krajina-pali-borci',
+    title: 'Imotska krajina u NOB-u 1941–1945.',
+    author: 'Nedjeljko Kujundžić (ur.)',
+    pdfPath: '/pdfs/imotska-krajina-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/imotska-krajina-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Pali borci i žrtve fašističkog terora po selima Imotske krajine (str. 163–472), s rođenjem, putem u NOV i smrću. Uneti su samo pali borci, iz dela koji knjiga za svako selo naslovljava »Poginuli borci«, i od njih oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'krusevac-1944-poginuli',
