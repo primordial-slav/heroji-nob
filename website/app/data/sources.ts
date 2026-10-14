@@ -2054,6 +2054,15 @@ export const sources: PdfSource[] = [
     description: 'Ranjeni i bolesni borci i aktivisti u Koruškoj do februara 1944, pacijenti koruških partizanskih bolnica, koruški borci lečeni van bolnica i sanitetsko osoblje, s kratkom biografijom (str. 282–355). Uneti su borci i osoblje partizanskih bolnica, ne politički radnici na terenu ni lekari koji su partizanima slali lekove. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'artileristi-prekomorci',
+    title: 'Artileristi prekomorci',
+    author: 'Karel Levičnik',
+    pdfPath: '/pdfs/artileristi-prekomorci.pdf',
+    thumbnail: '/images/pdf-thumbs/artileristi-prekomorci.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih artiljeraca prekomoraca, Slovenaca i Istrana koji su iz Italije i Afrike došli u artiljerijske jedinice formirane na Visu i u Italiji, i spisak komandanata i komesara tih jedinica (str. 227–234). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

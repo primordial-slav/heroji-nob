@@ -69,6 +69,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   'pozega-cete.pdf',   # the Požega companies' rolls (Užički odred, 2. proleterska): names run on
                   '4-proleterska-formiranje.pdf',   # the 4. proleterska at formation: a table over each spread, its rows the parser's
                   'ludbreg-poginuli.pdf',   # the Ludbreg lists: the name left, its place set apart on the right
+                  'artileristi-prekomorci.pdf',   # the fallen boxed by their parser, the officers on their posts' line
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
                   'dalmatinci-prva-proleterska.pdf',   # Dalmatinci u Prvoj proleterskoj: two or three columns, a page each its own
