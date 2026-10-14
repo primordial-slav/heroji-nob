@@ -74,8 +74,10 @@ POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima'}
 REFERENCE_ONLY: set = set()
 # books printed as a table of columns, whose columns are the record's fields (as the census's are); every man of the
 # Spomenica counts as a partisan who fell (the user's decision), so his death is "poginuo"; and lists of the fallen
-# whose entries give only the years ("1905/44" in the Cazin region's, "1920-1942" in Iskra in plamen's)
-COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli'}
+# whose entries give only the years ("1905/44" in the Cazin region's, "1920-1942" in Iskra in plamen's) or a name, a
+# birth year and a village under the battle they fell in (Ludbreg's)
+COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli',
+                'ludbreg-poginuli'}
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
@@ -100,7 +102,9 @@ ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 
 
 def column_fields(e: dict) -> dict:
-    out = {'birth_place': e.get('born_in') or '', 'death_type': 'poginuo', 'death_date': e.get('death_year') or '',
+    day = re.fullmatch(r'(\d{4})-(\d\d)-(\d\d)', e.get('death_date') or '')     # the Ludbreg lists give the battle's day
+    out = {'birth_place': e.get('born_in') or '', 'death_type': 'poginuo',
+           'death_date': f'{int(day[3])}. {int(day[2])}. {day[1]}.' if day else e.get('death_year') or '',
            'death_place': e.get('death_place') or ''}
     return {k: v for k, v in out.items() if v}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',

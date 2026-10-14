@@ -34,6 +34,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '5-kozaracka': 'Seznam padlih, pogrešanih in umrlih borcev in poveljnikov brigade',
     '2-vojvodjanska': 'Seznam borcev in poveljnikov 2. vojvodinske brigade',
     '8-krajiska': 'Seznam padlih in umrlih v NOB iz 8. krajiške brigade',
+    '8-krajiska-sjecanja-poginuli':
+      'Seznam padlih in umrlih borcev brigade iz zbornika spominov: oče, leto in kraj rojstva, kdaj in kje je padel, dolžnost.',
     '6-krajiska': 'Seznam padlih in umrlih borcev in poveljnikov brigade, z dopolnilnim seznamom',
     '4-krajiska': 'Seznam padlih, umrlih in pogrešanih borcev in poveljnikov 4. krajiške brigade',
     '3-krajiska-proleterska': 'Seznam padlih borcev Tretje proletarske krajiške brigade z osnovnimi osebnimi podatki',
@@ -478,6 +480,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz prilog knjige o Sušaku in Reki v NOB: nosilci Partizanske spomenice 1941 z območja občine Reka, ime in kraj, kot jih je sestavil občinski odbor ZZB. Seznama članov KPJ in SKOJ iz leta 1941, padlih v NOB, nista vnesena, ker ne povesta, kdo je bil borec. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-vi-korpus-poginule':
       'Iz zbornika dokumentov o ženah Hrvaške v NOB (dokument 427): seznam padlih tovarišic borcev in voditeljic v enotah VI. korpusa NOVJ, ki ga je štab korpusa sestavil 23. decembra 1944, z dolžnostjo in enoto, letom in krajem rojstva ter tem, kdaj in v katerem boju je padla. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'ludbreg-poginuli':
+      'Seznami borcev, padlih v dveh bojih za Ludbreg: 17. slavonske brigade v Ludbregu in Šemovcu 3. oktobra 1943, brigade »Braća Radić« pri Šemovcu istega dne in 17. slavonske v Ludbregu 6. julija 1944 (str. 84–85, 287–289), z letom in krajem rojstva. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -513,6 +517,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '5-kozaracka': 'Список на загинатите, исчезнатите и починатите борци и старешини на бригадата',
     '2-vojvodjanska': 'Список на борците и старешините на 2-ра војводинска бригада',
     '8-krajiska': 'Список на загинатите и починатите во НОБ од 8-ма краишка бригада',
+    '8-krajiska-sjecanja-poginuli':
+      'Списокот на загинатите и умрените борци на бригадата од зборникот спомени: татко, година и место на раѓање, кога и каде загинал, должност.',
     '6-krajiska': 'Список на загинатите и починатите борци и старешини на бригадата, со дополнителен список',
     '4-krajiska': 'Список на загинатите, починатите и исчезнатите борци и старешини на 4-та краишка бригада',
     '3-krajiska-proleterska': 'Список на загинатите борци на Третата пролетерска краишка бригада, со основните лични податоци',
@@ -957,6 +963,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од прилозите на книгата за Сушак и Риека во НОБ: носителите на Партизанската споменица 1941 од подрачјето на општина Риека, име и место, како ги составил општинскиот одбор на СУБНОР. Списоците на членовите на КПЈ и СКОЈ од 1941 загинати во НОБ не се внесени, бидејќи не кажуваат кој бил борец. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-vi-korpus-poginule':
       'Од зборникот документи за жените на Хрватска во НОБ (документ 427): пописот на загинатите другарки борци и раководителки во единиците на VI корпус на НОВЈ, што штабот на корпусот го составил на 23 декември 1944, со должноста и единицата, годината и местото на раѓање и кога и во која борба загинала. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'ludbreg-poginuli':
+      'Списоци на борците загинати во двете борби за Лудбрег: од 17. славонска бригада во Лудбрег и Шемовец на 3 октомври 1943, од бригадата „Браќа Радиќ“ кај Шемовец истиот ден и од 17. славонска во Лудбрег на 6 јули 1944 (стр. 84–85, 287–289), со година и место на раѓање. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -992,6 +1000,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '5-kozaracka': 'The brigade’s Partisans and officers who were killed, went missing or died',
     '2-vojvodjanska': 'Partisans and officers of the 2nd Vojvodina Brigade',
     '8-krajiska': 'Members of the 8th Krajina Brigade who were killed or died in the war',
+    '8-krajiska-sjecanja-poginuli':
+      'The brigade’s fighters who fell or died in the war, from its collection of memoirs: father, year and place of birth, when and where each fell, duty.',
     '6-krajiska': 'The brigade’s Partisans and officers who were killed or died, with a supplementary list',
     '4-krajiska': 'Partisans and officers of the 4th Krajina Brigade who were killed, died or went missing',
     '3-krajiska-proleterska': 'Fallen Partisans of the 3rd Krajina Proletarian Brigade, with their basic personal details',
@@ -1435,6 +1445,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From the appendices of a book on Sušak and Rijeka in the war: the holders of the Partisan Commemorative Medal of 1941 from the Rijeka municipality, name and place, as the veterans’ board compiled them. The lists of the KPJ and SKOJ members of 1941 who fell were not entered, since they do not say who was a fighter. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-vi-korpus-poginule':
       'From a collection of documents on the women of Croatia in the war (document 427): the VI Corps staff’s list of its women fighters and officers who fell, drawn up on 23 December 1944, with duty and unit, year and place of birth, and when and in which fight each fell. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'ludbreg-poginuli':
+      'The fighters killed in the two battles for Ludbreg: the 17th Slavonian Brigade’s in Ludbreg and Šemovec on 3 October 1943, the »Braća Radić« Brigade’s at Šemovec the same day, and the 17th Slavonian’s in Ludbreg on 6 July 1944 (pp. 84–85, 287–289), with year and place of birth. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

@@ -68,6 +68,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '11-krajiska-zene.pdf',   # 11. krajiška's women, names run on
                   'pozega-cete.pdf',   # the Požega companies' rolls (Užički odred, 2. proleterska): names run on
                   '4-proleterska-formiranje.pdf',   # the 4. proleterska at formation: a table over each spread, its rows the parser's
+                  'ludbreg-poginuli.pdf',   # the Ludbreg lists: the name left, its place set apart on the right
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
                   'dalmatinci-prva-proleterska.pdf',   # Dalmatinci u Prvoj proleterskoj: two or three columns, a page each its own
@@ -91,6 +92,7 @@ TWO_COLUMN = {
     'iskra-in-plamen-padli.pdf',            # Iskra in plamen 3: the dead of Polje's villages, the fallen in the army
     'cazinska-krajina-pali-borci.pdf',      # Stradanja u Cazinskoj krajini: the fallen fighters, a line each
     'susak-rijeka-spomenica.pdf',           # Sušak i Rijeka u NOB: the spomenica's holders, a name a line
+    '8-krajiska-sjecanja-poginuli.pdf',     # Osma krajiška - sjećanja boraca: the fallen, landscape pages
     'mostarski-bataljon.pdf',               # Mostarski bataljon (Ćemalović): the fighters' bios
     '18-srpska.pdf',                        # 18. srpska (Milosavljević): everyone in the brigade
     'eskadrile-novj.pdf',                   # 1. i 2. eskadrila NOVJ (Pejčić): the squadrons' people

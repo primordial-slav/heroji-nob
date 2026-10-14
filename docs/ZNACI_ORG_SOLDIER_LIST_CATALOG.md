@@ -180,12 +180,12 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Prva proleterska (1) | Miloš Vuksanović | at formation, Rudo (p. 433) | [00003/382](https://znaci.org/00003/382.htm) |
 | Treća krajiška (10) | Zbornik sjećanja knj. 1–2; knj. 3 | roster XI 1942 ([31_263.htm](https://znaci.org/00001/31_263.htm)); **everyone who served in the war** (knj. 3, p. 579) | [00001/31](https://znaci.org/00001/31.htm), [00003/394](https://znaci.org/00003/394.htm) |
 | Šesta krajiška (13) | *Ratna sjećanja* | wartime cadre 1942–43 (p. 739), **survivors** (p. 747) | [00001/147](https://znaci.org/00001/147.htm) |
-| Osma krajiška (14) | *Sjećanja boraca* | fallen and died (p. 689), corrections to the monograph (p. 743) | [00001/68](https://znaci.org/00001/68.htm) |
+| Osma krajiška (14) | *Sjećanja boraca* | fallen and died (p. 689; on the site as `8-krajiska-sjecanja-poginuli.pdf`, a second book: **done**, `parse_8_krajiska_sjecanja.py`), corrections to the monograph (p. 743) | [00001/68](https://znaci.org/00001/68.htm) |
 | Prva vojvođanska (9) | *Mladost slobodi darovana* | roster ([132_7.pdf](https://znaci.org/00001/132_7.pdf), 33 pp.) | [00001/132](https://znaci.org/00001/132.htm) |
-| 7. crnogorska omladinska (28) | Zbornik sjećanja | fallen (p. 709, 26 pp.) | [00003/471](https://znaci.org/00003/471.htm) |
+| 7. crnogorska omladinska (28) | Zbornik sjećanja | fallen (p. 709, 26 pp.; a second book: **done**, `parse_7_crnogorska_zbornik.py`) | [00003/471](https://znaci.org/00003/471.htm) |
 | 32. divizija (35) | *32. divizija NOVJ* | **Borci 32. divizije** (p. 431, ~220 pp.), incomplete (p. 653) | [00003/542](https://znaci.org/00003/542.htm) |
-| Tuzlanski odred (25) | companion volume | roster (p. 325, 114 pp.) | [00003/469](https://znaci.org/00003/469.htm) |
-| 17. slavonska (16) | *28. slavonska divizija* | fallen at Ludbreg 6. VII 1944 (p. 287) | [00001/189](https://znaci.org/00001/189.htm) |
+| Tuzlanski odred (25) | companion volume | roster (p. 325, 114 pp.; the same list as the site’s, not added) | [00003/469](https://znaci.org/00003/469.htm) |
+| 17. slavonska (16) | *28. slavonska divizija* | fallen at Ludbreg 6. VII 1944 (p. 287), and 3. X 1943 with the Braća Radić at Šemovec (pp. 84-85) (on the site as `ludbreg-poginuli.pdf`, a book across units: **done**, `parse_ludbreg_poginuli.py`) | [00001/189](https://znaci.org/00001/189.htm) |
 | Druga proleterska, Treća sandžačka, Treća krajiška, Prva i Druga dalmatinska | *Borci Sutjeske* | see §1 | |
 
 ## 6. Lists across units

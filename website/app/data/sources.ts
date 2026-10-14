@@ -172,6 +172,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih i umrlih u toku NOR-a iz 8. krajiške brigade'
   },
   {
+    id: '8-krajiska-sjecanja-poginuli',
+    title: 'Osma krajiška brigada — sjećanja boraca: spisak poginulih i umrlih u toku NOR-a',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/8-krajiska-sjecanja-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/8-krajiska-sjecanja-poginuli.jpg',
+    brigadeName: '8. krajiška udarna brigada',
+    description: 'Spisak poginulih i umrlih boraca brigade iz zbornika sećanja: otac, godina i mesto rođenja, kada je i gde poginuo, dužnost.'
+  },
+  {
     id: '6-krajiska',
     title: 'Šesta krajiška NOU brigada',
     author: 'Branko Damjanović, Savo Popović',
@@ -1989,6 +1998,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zene-vi-korpus-poginule.jpg',
     brigadeName: '',
     description: 'Iz zbornika dokumenata o ženama Hrvatske u NOB (dokument 427): popis poginulih drugarica boraca i rukovodilaca u jedinicama VI. korpusa NOVJ, koji je štab korpusa sastavio 23. decembra 1944, s dužnošću i jedinicom, godinom i mestom rođenja i time kada je i u kojoj borbi poginula. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'ludbreg-poginuli',
+    title: 'Dvadeset osma slavonska NO udarna divizija u sjeverozapadnoj Hrvatskoj i u dvije borbe za oslobođenje Ludbrega',
+    author: 'Radojica Nenezić i drugi',
+    pdfPath: '/pdfs/ludbreg-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/ludbreg-poginuli.jpg',
+    brigadeName: '',
+    description: 'Spiskovi boraca poginulih u dve borbe za Ludbreg: 17. slavonske brigade u Ludbregu i Šemovcu 3. oktobra 1943, brigade »Braća Radić« kod Šemovca istog dana i 17. slavonske u Ludbregu 6. jula 1944 (str. 84–85, 287–289), s godinom i mestom rođenja. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'krusevac-1944-poginuli',
