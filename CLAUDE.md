@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~462,000 WWII Yugoslav partisan soldiers across 150 units (106 brigades, fourteen divisions, nineteen detachments, five battalions, the 1. and 2. eskadrila NOVJ, a naval coastal sector, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~464,000 WWII Yugoslav partisan soldiers across 150 units (106 brigades, fourteen divisions, nineteen detachments, five battalions, the 1. and 2. eskadrila NOVJ, a naval coastal sector, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both

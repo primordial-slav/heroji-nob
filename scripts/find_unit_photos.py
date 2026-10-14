@@ -558,7 +558,11 @@ UNITS = {
     "kokrski-odred": dict(
         name="Kokrški odred", tags=[],
         caption=r"kokršk\w*\s+odred", photo=None,
-        note="Nothing in the gallery names the odred; its book on znaci.org (00003/1046-1052) prints its photos inside whole-page scans. The card shows the roster's first page."),
+        book=dict(pdf="00003/1052.pdf", page=381, xref=6018,
+                  caption="Skupina borcev Kokrškega odreda z nekaterimi, jugoslovanskim borcem naklonjenimi britanskimi "
+                          "vojaki pred tiskarno, kmalu po prihodu v Celovec"),
+        crop=(0.08, 0.085, 0.89, 0.40), descreen=1.6,
+        note="Nothing in the gallery names the odred; the photo is from its book (Jan, III, p. 377), a 1-bit page scan: the crop keeps the photo, the descreen softens its dots."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,
