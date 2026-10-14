@@ -49,6 +49,8 @@ export const en: Messages = {
     unitsTitle: 'Units',
     otherUnits: 'Other units',
     noUnit: 'Without a unit',
+    census: 'The 1964 census of war victims',
+    censusLead: 'Fighters killed or dead in the war whose unit is not on the site yet, by republic and province.',
     /** The wartime portraits in the home page's margins */
     rails: 'Partisans in wartime photographs',
     bandCredit: 'In the photograph:',

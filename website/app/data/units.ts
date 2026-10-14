@@ -1096,9 +1096,9 @@ export const units: Unit[] = [
     nameEn: 'Mosor Partisan Detachment',
     description: 'Formiran 21. februara 1942. na Mosoru, ponovo 11. oktobra 1943, rasformiran 10. novembra 1944. Svi borci odreda 1942–1944, s kratkim životopisima.',
     image: '/images/pdf-thumbs/mosorski-odred.jpg',
-    soldierCount: 3432,
+    soldierCount: 3573,
     dataFile: '/mosorski-odred-soldiers.json',
-    pdfFiles: ['/pdfs/mosorski-odred.pdf']
+    pdfFiles: ['/pdfs/mosorski-odred.pdf', '/pdfs/mosorski-odred-2.pdf']
   },
   {
     id: 'turopoljsko-posavski-odred',
@@ -1527,7 +1527,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 19506,
+    soldierCount: 20318,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1549,7 +1549,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Croatia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Hrvatske, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-hrv.jpg',
-    soldierCount: 51269,
+    soldierCount: 51043,
     dataFile: '/ostali-borci-hrvatska.json',
     pdfFiles: []
   },
@@ -1571,7 +1571,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Montenegro',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Crne Gore, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-crg.jpg',
-    soldierCount: 6306,
+    soldierCount: 6305,
     dataFile: '/ostali-borci-crna-gora.json',
     pdfFiles: []
   },
@@ -1593,7 +1593,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Serbia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
-    soldierCount: 32688,
+    soldierCount: 32683,
     dataFile: '/ostali-borci-srbija.json',
     pdfFiles: []
   },

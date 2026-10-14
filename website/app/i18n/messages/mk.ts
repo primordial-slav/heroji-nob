@@ -56,6 +56,8 @@ export const mk: Messages = {
     unitsTitle: 'Единици',
     otherUnits: 'Други единици',
     noUnit: 'Без единица',
+    census: 'Попис на жртвите на војната од 1964',
+    censusLead: 'Загинати и умрени борци чија единица сè уште не е на сајтот, по републики и покраини.',
     /** The wartime portraits in the home page's margins */
     rails: 'Борци на фотографии од војната',
     bandCredit: 'На фотографијата:',
