@@ -1865,6 +1865,15 @@ export const sources: PdfSource[] = [
     description: 'Nosioci Partizanske spomenice 1941 sa viškog otočja (str. 521), samo imena, i rečenica knjige o narodnom heroju Andriji Božaniću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
+    id: 'prilog-u-krvi-pali-borci',
+    title: 'Prilog u krvi',
+    author: 'Opštinski odbor SUBNOR-a Pljevlja',
+    pdfPath: '/pdfs/prilog-u-krvi-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/prilog-u-krvi-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Pali borci NOR-a pljevaljskog sreza od aprila 1941. do 15. maja 1945 (str. 141–216), sa biografijom svakog. Knjiga među pale borce ubraja i partijske i političke radnike, odbornike i saradnike NOP-a: uneti su samo oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
