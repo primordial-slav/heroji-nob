@@ -161,7 +161,8 @@ def read(book: dict) -> list[dict]:
             data = entry_boxes.read_page(page, columns=cols, numbers_in_gutter=book['pdf'] in entry_boxes.NUMBERS_IN_GUTTER,
                                          gutter=entry_boxes.GUTTER.get((book['pdf'], pno)))
             if pno in firsts:
-                opcina = village = ''                                      # a list starts: its title, then its headings
+                # a list starts: its title, then its headings; a volume of one općina prints none (knj. 12, 16)
+                opcina, village = book.get('opcina', ''), ''
                 ended = False
             # on a list's first page, the title runs across both columns above the first općina's heading
             heads = [ln['top'] for col in data['columns'] for ln in col if re.match(r'OP[ĆČC]INA\s', ln['text'])]

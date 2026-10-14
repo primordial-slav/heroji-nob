@@ -177,6 +177,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-11-12', place: 'Vrba kod Sinja', source: 'https://znaci.org/odrednica.php?slug=3-dalmatinska-udarna-brigada',
     note: 'Od Mosećkog i Mosorskog partizanskog bataljona i Rogozničke čete. Rasformirana 6. 6. 1943. na Sutjesci, kasnije ponovo formirana.',
   },
+  '9-dalmatinska-divizija': {
+    date: '1943-02-11', place: 'Livno', source: 'https://znaci.org/00001/187.htm',
+    note: 'Egić, Dva rođenja Devete dalmatinske divizije (str. 14): „Odmah nakon sjednice PK KPH za Dalmaciju, održane u Livnu 11. februara 1943. godine, u jeku četvrte neprijateljske ofanzive formirana je 9. dalmatinska divizija“, od 3, 4. i 5. brigade; na dan formiranja 2.119 boraca.',
+  },
   '16-banijska-brigada': {
     date: '1942-12-26', place: 'Klasnić', source: 'https://znaci.org/odrednica.php?slug=16-banijska-udarna-brigada',
     note: 'Formirana kao 16. hrvatska NO brigada, od po jednog bataljona 7, 8. i 15. hrvatske brigade; odrednica: „s. Klasnić (kod Ogulina)“. Rasformirana 30. 6. 1943.',
@@ -408,6 +412,26 @@ export const formation: Record<string, Formation> = {
   'osjecka-brigada': {
     date: '1944-03-01', place: 'Slobodna Vlast (Đakovo)', source: 'https://znaci.org/00003/450.pdf',
     note: 'Cvetković, Osječka udarna brigada (str. 25): stvoreni su uvjeti „da se 1. ožujka 1944. formira i Osječka brigada, na prostoru kod sela Slobodne Vlasti“; u prvom stroju oko 600 boraca i rukovodilaca.',
+  },
+  '4-brigada-slavonije': {
+    date: '1944-09-28', place: 'Podravska Slatina', source: 'https://znaci.org/00001/190_2.pdf',
+    note: 'Obradović, Miletić, 4. NOU brigada Slavonije (str. 20): po naredbi štaba 6. korpusa od 24. 9. 1944. „Dvadeset osmog septembra zvanično je formirana 4. brigada 12. slavonske divizije“, u Podravskoj Slatini; na dan formiranja imala je 924 borca i rukovodioca.',
+  },
+  '12-slavonska-brigada': {
+    date: '1942-10-11', place: 'Budići (Pakrac)', source: 'https://znaci.org/00003/523.htm',
+    note: 'Anić, Joksimović, Gutić, Narodnooslobodilačka vojska Jugoslavije (tabela proleterskih brigada): Dvanaesta slavonska NO udarna brigada, „1. slavonska NOU brigada pri formiranju“, formirana 11. X 1942. u s. Budići (Pakrac) od delova 1. i 2. slavonskog NOP odreda, 958 boraca; proleterska od 26. X 1944.',
+  },
+  'zagrebacki-odred': {
+    date: '1943-09-13', place: 'Zagrebačka gora', source: 'https://znaci.org/00003/523.htm',
+    note: 'Anić, Joksimović, Gutić, Narodnooslobodilačka vojska Jugoslavije (tabela NOP odreda Hrvatske): Zagrebački odred, formiran 13. IX 1943. na Zagrebačkoj gori, dva bataljona, pod štabom 2. operativne zone Hrvatske.',
+  },
+  'mosorski-odred': {
+    date: '1942-02-21', place: 'Mosor', source: 'https://znaci.org/00003/794.pdf',
+    note: 'Velić, Petrić, Mosorski partizanski odred (str. 569–571): borci odreda „Od 21. veljače 1942. do 16. studenog 1944.“; I mosorski PO osnovan 21. veljače 1942, rasformiran 19. travnja 1942, ponovo formiran 11. listopada 1943, rasformiran 10. studenog 1944 (Anić i dr., tabela NOP odreda Hrvatske).',
+  },
+  'turopoljsko-posavski-odred': {
+    date: '1943-08-08', place: 'Čička Poljana', source: 'https://znaci.org/00003/835.pdf',
+    note: 'Huzjak, Turopoljsko-posavski partizanski odred (str. 5): „8. kolovoza 1943. godine na cvijetnim livadama kod sela Čička Poljana, pod vodstvom Kotarskog komiteta Komunističke partije Hrvatske — Velika Gorica osnovan je Turopoljsko-posavski partizanski odred.“',
   },
   '1-zagorska-brigada': {
     date: '1944-05-08', place: 'Selnica (Zlatar)', source: 'https://znaci.org/00003/625.pdf',

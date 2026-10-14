@@ -83,8 +83,16 @@ TWO_COLUMN = {
     'eskadrile-novj.pdf',                   # 1. i 2. eskadrila NOVJ (Pejčić): the squadrons' people
     'sercerjeva.pdf',                       # Šercerjeva brigada (Ambrožič-Novljan): volunteers, the fallen
     '42-vazduhoplovna.pdf',                 # 42. vazduhoplovna divizija (Pejčić): the division's people
+    '9-dalmatinska-divizija.pdf',           # 9. dalmatinska divizija (Egić): the fallen, names only
+    '3-dalmatinska-poginuli.pdf',           # 3. dalmatinska (Egić): the fallen, names only
+    'zagrebacki-odred.pdf',                 # Zagrebački odred: the roster, a fighter a line or two
     'hak-10-korenica-udbina.pdf',           # Korenica i Udbina (Karlovac knj. 10): the fallen
     'hak-14-donji-lapac.pdf',               # Donji Lapac (Karlovac knj. 14): the fallen
+    'hak-19-vojnic.pdf',                   # Karlovac knj. 19: the fallen
+    'hak-18-slunj-veljun.pdf',             # Karlovac knj. 18: the fallen
+    'hak-15-duga-resa.pdf',                # Karlovac knj. 15: the fallen
+    'hak-12-dreznica.pdf',                 # Karlovac knj. 12: the fallen
+    'hak-16-gornje-dubrave.pdf',           # Karlovac knj. 16: the fallen
     'hak-13-gracac.pdf',                    # Gračac (Karlovac knj. 13): the fallen
     'hak-7-plascanska-dolina.pdf',          # Plaščanska dolina (Karlovac knj. 7): the fallen
     'bitka-kod-oborova-poginuli.pdf',       # Bitka kod Oborova: the names in two columns
@@ -145,11 +153,13 @@ MULTI_COLUMN = {
     '32-divizija.pdf': 4,           # a roster, names only
     'gradnikova.pdf': 3,            # Gradnikova: the fallen and the others, three columns
     'zapadnodolenjski-odred.pdf': 3,  # Zapadnodolenjski odred: roster and fallen, three columns
+    'beogradski-bataljon.pdf': 3,   # Beogradski bataljon: the roster, three columns of bios
 }
 
 
 # Books two columns on some pages only: {file: pages}
 TWO_COLUMN_PAGES = {
+    '1-dalmatinska-monografija.pdf': range(1, 5),  # 1. dalmatinska: the company commanders and commissars side by side
     '14-srednjobosanska.pdf': range(30, 65),     # the fallen in one column, the survivors in two
     'braciceva.pdf': range(25, 72),              # Bračičeva: the fallen in one column, the survivors in two
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster in two columns, the fallen and wounded in one
@@ -357,6 +367,11 @@ class PageCache:
 # any line not known to start an entry still starts one (a soldier missing from
 # the data), rather than continuing the entry above it.
 ONE_LINE_ENTRIES = {
+    '9-dalmatinska-divizija.pdf': range(1, 7),        # names only, a name a line
+    'turopoljsko-posavski-odred.pdf': range(1, 5),    # a table, a row an entry
+    '3-dalmatinska-poginuli.pdf': range(1, 4),
+    '1-dalmatinska-monografija.pdf': range(1, 5),     # the company commanders and commissars, a name a line
+    '6-istocnobosanska-dopuna.pdf': range(13, 14),    # those whose death was not established, a name a line
     '18-slavonska.pdf': range(30, 55),     # survivors
     '32-divizija.pdf': range(1, 42),       # the roster: one name a line, four columns
     '6-krajiska-prezivjeli.pdf': range(1, 17),   # survivors: one name a line, two columns

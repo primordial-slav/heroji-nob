@@ -17273,6 +17273,18 @@
         "unit_file": "13-proleterska-soldiers.json"
       },
       {
+        "soldier_id": "0049010285",
+        "name": "Hinić Jovana Božo",
+        "additional_info": "1919, Debelo Brdo, Titova Korenica, SRH, Srbin, radnik, u NOB od 1941, nosilac »Spomenice 1941«, u brigadi od septembra 1944, zamjenik komandanta brigade.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 15,
+        "pdf_x": 41.8,
+        "pdf_y": 480.4,
+        "pdf_x_end": 398.5,
+        "pdf_y_end": 505.7,
+        "unit_file": "15-majevicka-soldiers.json"
+      },
+      {
         "soldier_id": "0120000119",
         "name": "Hinić Jovana Božo",
         "additional_info": "1919, Debelo Brdo, T. Korenica.",
@@ -17280,7 +17292,9 @@
         "source_page": 266,
         "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "radnik"
   },
   {
     "soldier_id": "0003000415",
@@ -82736,6 +82750,19 @@
         "pdf_x_end": 372.1,
         "pdf_y_end": 549.9,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001300478",
+        "name": "Ivanović Jelenka Milomir",
+        "additional_info": "Uveden 7. 2. 1945. u bolesnički protokol 1. proleterske divizije. AVMA.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 55,
+        "pdf_x": 218.2,
+        "pdf_y": 255.6,
+        "pdf_y_end": 281.9,
+        "pdf_x_end": 368.5,
+        "pdf_x_left": 214.2,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
   },
@@ -104503,6 +104530,18 @@
         "pdf_y": 519.1,
         "pdf_x_end": 350.0,
         "pdf_y_end": 550.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001301047",
+        "name": "Milojković Živojina Veselin",
+        "additional_info": "Zemljoradnik, rođen 1923, Plužina, Svrljig. U NOB od novembra 1944. godine.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 47,
+        "pdf_x": 386.9,
+        "pdf_y": 560.5,
+        "pdf_y_end": 597.4,
+        "pdf_x_end": 540.1,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
@@ -163063,7 +163102,23 @@
     "death_date": "20. 04. 1945",
     "death_place": "u Brodskoj Varoši",
     "rank": "borac",
-    "pdf_x_end": 207.5
+    "pdf_x_end": 207.5,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0049010353",
+        "name": "Janković Dragutina Svetomir",
+        "additional_info": "1922, Osipaonica, Smederevo, SRS, Srbin, zemljoradnik, u NOB od 5. 12. 1944 u brigadi od 6. 1.1945, borac.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 19,
+        "pdf_x": 38.3,
+        "pdf_y": 189.5,
+        "pdf_x_end": 395.4,
+        "pdf_y_end": 206.6,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janković",
@@ -164682,7 +164737,21 @@
     "death_place": "Udbina",
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
-    "pdf_x_end": 212.4
+    "pdf_x_end": 212.4,
+    "other_sources": [
+      {
+        "soldier_id": "9019000785",
+        "name": "Klarić Rade Ilija",
+        "additional_info": "Kordunski Ueskovac, općina Rakovica: 1920, seljak, Srbin. Stupio u NOV 18. 7. 1942, borac 2. ličke brig. Poginuo kod Udbine 13. 8. 1942.",
+        "pdf_file": "hak-18-slunj-veljun.pdf",
+        "pdf_page": 33,
+        "pdf_x": 308.0,
+        "pdf_y": 449.0,
+        "pdf_x_end": 482.3,
+        "pdf_y_end": 484.9,
+        "ref_book": "hak-18-slunj-veljun"
+      }
+    ]
   },
   {
     "last_name": "Klarić",
@@ -175276,6 +175345,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2153",
         "source_page": 2153,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9019000323",
+        "name": "Panjević Rade Gojko",
+        "additional_info": "Sadilovac, općina Drežnik: 1922, seljak, Srbin. Stupio u NOV 1. 7. 1942, borac Ličkog partiz. odreda. Poginuo od stražara jer je bio gluh kod Plitvičkih jezera 20. 9. 1942.",
+        "pdf_file": "hak-18-slunj-veljun.pdf",
+        "pdf_page": 14,
+        "pdf_x": 289.0,
+        "pdf_y": 390.9,
+        "pdf_x_end": 463.9,
+        "pdf_y_end": 434.5,
+        "ref_book": "hak-18-slunj-veljun"
       }
     ]
   },

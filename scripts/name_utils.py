@@ -1232,6 +1232,60 @@ BRIGADE_CONFIGS = {
         135: ('mak', 'makedonija', 'Makedonija'), 136: ('srb', 'srbija', 'Srbija'),
         137: ('kos', 'kosovo', 'Kosovo i Metohija'), 138: ('voj', 'vojvodina', 'Vojvodina'),
     }.items()},
+    129: {
+        'name': '4. brigada Slavonije',
+        'json_file': '4-brigada-slavonije-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a table: "ADAMOVIĆ Laze PERO | int. oficir 4. bataljona | 5. VIII 1922. Osijek | ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
+    145: {
+        'name': '9. dalmatinska divizija',
+        'json_file': '9-dalmatinska-divizija-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # names only: "ALAVANJA PAVAO Vasiljev"; the parser sets the father's nominative
+        'has_fathers_name': True,
+        'fathers_name_form': 'possessive',
+        'original_casing': 'upper_all',
+    },
+    146: {
+        'name': '12. Slavonska',
+        'json_file': '12-slavonska-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # the women fighters: "Anđelić RUŽICA, rođena 1924. u Grahovljanima - Daruvar, ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
+    147: {
+        'name': 'Zagrebački odred',
+        'json_file': 'zagrebacki-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ROČIĆ Mirka MIRKO, Dešćevec, Zagreb"; most without the father
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
+    148: {
+        'name': 'Mosorski odred',
+        'json_file': 'mosorski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "ABRAM Mate STJEPAN, borac Mosorskog PO. Rođen 1. 7. 1915. Nova Sela, Omiš, ..."
+        'has_fathers_name': True,
+        'fathers_name_form': 'genitive',
+        'original_casing': 'upper_all',
+    },
+    149: {
+        'name': 'Turopoljsko-posavski odred',
+        'json_file': 'turopoljsko-posavski-odred-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # a table: "ANTOLOVIĆ STJEPAN | Čakanac | 20. VI 1944. Horvati (Žumberak)"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
 }
 
 # Ostali borci: the soldiers of the books across units who have no record of a unit (122), and the census's (131-138).
