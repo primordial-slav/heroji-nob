@@ -1820,33 +1820,6 @@ export const sources: PdfSource[] = [
     description: 'Spisak crnogorskih antifašista poginulih i umrlih 1941–1945, po opštinama, u tabeli: ime, ime oca, godina i mesto rođenja, godina smrti i mesto pogibije. Svi koje knjiga navodi vode se kao partizani: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, a ostali su među ostalim borcima.'
   },
   {
-    id: 'hrvatsko-zagorje-1981',
-    title: 'Hrvatsko zagorje u revoluciji',
-    author: 'Grupa autora',
-    pdfPath: '/pdfs/hrvatsko-zagorje-1981.pdf',
-    thumbnail: '/images/pdf-thumbs/hrvatsko-zagorje-1981.jpg',
-    brigadeName: '',
-    description: 'Popis poginulih učesnika NOB-a 1941–1945. s područja općina Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić i Zlatar-Bistrica, s rođenjem, jedinicom i smrću. Popis zajedno navodi borce i žrtve fašističkog terora; uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
-  },
-  {
-    id: 'imotska-krajina-pali-borci',
-    title: 'Imotska krajina u NOB-u 1941–1945.',
-    author: 'Nedjeljko Kujundžić (ur.)',
-    pdfPath: '/pdfs/imotska-krajina-pali-borci.pdf',
-    thumbnail: '/images/pdf-thumbs/imotska-krajina-pali-borci.jpg',
-    brigadeName: '',
-    description: 'Pali borci i žrtve fašističkog terora po selima Imotske krajine (str. 163–472), s rođenjem, putem u NOV i smrću. Uneti su samo pali borci, iz dela koji knjiga za svako selo naslovljava »Poginuli borci«, i od njih oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
-  },
-  {
-    id: 'knjazevac-pomenik',
-    title: 'Pomenik žrtava Drugog svetskog rata područja opštine Knjaževac',
-    author: 'Radiša Dragićević (prir.)',
-    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00002204',
-    thumbnail: '/images/pdf-thumbs/knjazevac-pomenik.jpg',
-    brigadeName: '',
-    description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su samo partizanski borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu NOVJ. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
-  },
-  {
     id: 'moste-polje-spomenica-1941',
     title: 'Zbornik občine Ljubljana Moste-Polje',
     author: 'Polde Maček ml. (gl. ur.)',
@@ -1881,6 +1854,33 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/jevreji-jugoslavije-ucesnici-nor.jpg',
     brigadeName: '',
     description: 'Spisak jevrejskih učesnika u narodnooslobodilačkom ratu, sa biografijom svakog (str. 307 i dalje). Spisak broji sve koji su bili u NOP-u: uneti su samo oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske, a ne politički i pozadinski radnici. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'hrvatsko-zagorje-1981',
+    title: 'Hrvatsko zagorje u revoluciji',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hrvatsko-zagorje-1981.pdf',
+    thumbnail: '/images/pdf-thumbs/hrvatsko-zagorje-1981.jpg',
+    brigadeName: '',
+    description: 'Popis poginulih učesnika NOB-a 1941–1945. s područja općina Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić i Zlatar-Bistrica, s rođenjem, jedinicom i smrću. Popis zajedno navodi borce i žrtve fašističkog terora; uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'imotska-krajina-pali-borci',
+    title: 'Imotska krajina u NOB-u 1941–1945.',
+    author: 'Nedjeljko Kujundžić (ur.)',
+    pdfPath: '/pdfs/imotska-krajina-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/imotska-krajina-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Pali borci i žrtve fašističkog terora po selima Imotske krajine (str. 163–472), s rođenjem, putem u NOV i smrću. Uneti su samo pali borci, iz dela koji knjiga za svako selo naslovljava »Poginuli borci«, i od njih oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'knjazevac-pomenik',
+    title: 'Pomenik žrtava Drugog svetskog rata područja opštine Knjaževac',
+    author: 'Radiša Dragićević (prir.)',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00002204',
+    thumbnail: '/images/pdf-thumbs/knjazevac-pomenik.jpg',
+    brigadeName: '',
+    description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su samo partizanski borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu NOVJ. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'krusevac-1944-poginuli',

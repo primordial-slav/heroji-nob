@@ -56,7 +56,9 @@ OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json
 CENSUS = 'zrtve-rata-1964'                                  # the census's volumes: zrtve-rata-1964-<vol>
 # names a parser read wrong, by entry: the Zbornik's headings "DEMONJ A (NIKOLA)", "RAKOVAC J (OAKIM)" and one whose
 # OCR took a line of the text for the name (Pal Šoti, born 19 January 1916 in Bečej, as Narodni heroji 1982 has him)
-NAME_FIXES = {'9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac', 'Joakim', ''),
+NAME_FIXES = {'9061000128': ('Albahari', 'Nisim', 'Abrahama'),   # Romano's "Avrama": the hero books' Abraham
+              '9035011823': ('Jelovac', 'Milan', 'Vučetin'), '9035011826': ('Jelovac', 'Strainj', 'Vučetin'),  # "Vučegin"
+              '9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac', 'Joakim', ''),
               '9001001039': ('Šoti', 'Pal', 'Pala')}
 # given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
@@ -119,15 +121,47 @@ def father_of(e: dict) -> str:
     return fold(e.get('fathers_name') or '')
 
 
+def father_forms(e: dict) -> set[str]:
+    """the father as printed and, for a possessive ("Vukadinov", "Mićov"), in the nominative the site's names know, so
+    that it meets another book's genitive ("Vukadina", "Mića")"""
+    father = e.get('fathers_name') or ''
+    forms = {fold(father)}
+    if e.get('_book') in POSSESSIVE_FATHERS and len(father) > 2:
+        forms.add(fold(from_possessive(father)))
+    return {f for f in forms if f}
+
+
+def one_slip(x: str, y: str) -> bool:
+    """two fathers a letter apart once their endings are cut ("pegrov"/"petra", "colov"/"dola", "jusufof"/"jusufa")"""
+    cut = lambda s: re.sub(r'(?:ov|ev|of|in|a|e|o|u)$', '', s)
+    x, y = cut(x), cut(y)
+    if min(len(x), len(y)) < 3 or abs(len(x) - len(y)) > 1:
+        return False
+    if len(x) == len(y):
+        return sum(c != d for c, d in zip(x, y)) <= 1
+    short, long_ = sorted((x, y), key=len)
+    return any(long_[:i] + long_[i + 1:] == short for i in range(len(long_)))
+
+
+def fathers_agree(x: str, y: str) -> bool:
+    return x == y or (len(x) <= 2 and y.startswith(x)) or (len(y) <= 2 and x.startswith(y)) or same_father(x, y)   # "Lj"
+
+
 def same_man(a: dict, b: dict) -> bool:
     """Two entries of different books that are one man (see the module's note)"""
     agree = set()
-    fa, fb = father_of(a), father_of(b)
+    fa, fb = father_forms(a), father_forms(b)
     if fa and fb:
-        if fa == fb or (len(fa) == 1 and fb.startswith(fa)) or (len(fb) == 1 and fa.startswith(fb)) or same_father(fa, fb):
+        if any(fathers_agree(x, y) for x in fa for y in fb):
             agree.add('father')
-        else:
+        elif not ((a.get('_book') in POSSESSIVE_FATHERS) != (b.get('_book') in POSSESSIVE_FATHERS) and
+                  any(one_slip(x, y) for x in fa for y in fb) and year(a, 'birth_year') and
+                  year(a, 'birth_year') == year(b, 'birth_year') and places(a) and places(b) and
+                  any(x[:4] == y[:4] for x in places(a) for y in places(b))):
             return False
+        else:
+            agree.add('father')              # an OCR slip in a possessive father ("Pegrov" Petrov, "Jueov" Jusov), where
+            #                                  the birth year and the village agree as well
     ya, yb = year(a, 'birth_year'), year(b, 'birth_year')
     if ya and yb:
         if abs(ya - yb) > 1:
@@ -159,6 +193,10 @@ def same_man(a: dict, b: dict) -> bool:
     # the lists that give a name, a brigade and where he fell (Gončin's Srem): the unit or the place of his death,
     # with the year of it or with each other
     if ('unit' in agree or 'death place' in agree) and len(agree & {'unit', 'death place', 'death year'}) >= 2:
+        return True
+    # a narodni heroj and an entry that names no father (a spomenica list's "Maček Ivan, 1908", Romano's "Albahari Nisim"):
+    # the hero's name and his birth year
+    if bool(a.get('_hero')) != bool(b.get('_hero')) and 'birth year' in agree and not (father_of(a) and father_of(b)):
         return True
     return bool(a.get('_hero') and b.get('_hero') and agree & {'father', 'birth year'})
 
@@ -236,7 +274,8 @@ def from_possessive(word: str) -> str:
         cands = [base, base + 'o', base + 'e', re.sub(r'([^aeiou])([rl])$', r'\1a\2', base)]
     else:
         soft = base[:-1] + {'č': 'k', 'ž': 'g', 'š': 'h'}.get(base[-1], base[-1])      # Lučin: Luka
-        cands = [base + 'a', soft + 'a', base[:-1] + 'ca']                              # Jovičin: Jovica
+        cands = [base + 'a', soft + 'a'] + ([base[:-1] + 'ca'] if base.endswith('č') else [])   # Jovičin: Jovica;
+        #                                                       not Milijin: Milica, Perišin: Perica (Milija, Periša)
     best = max(cands, key=lambda c: _given[c])
     return best if _given[best] else ''
 
@@ -324,11 +363,13 @@ def main():
     records, counts, on_site = [], Counter(), []
     for members in clusters.values():
         # a cluster that took two entries of one book is two men (or the book's one man printed twice): the entries of
-        # that book stay apart, and an entry of another book joins the one it agrees with, or stays alone if it agrees
-        # with both
+        # that book stay apart, and an entry of another book joins the one it agrees with; one that agrees with both
+        # (or neither) joins the other books' entries it is one man with ("Tešović Neđeljko": the census prints him
+        # twice, the Spomenica crnogorska and Prilog u krvi once each), else stays alone
         if len({m['_book'] for m in members}) < len(members):
             book = Counter(m['_book'] for m in members).most_common(1)[0][0]
             groups = [[m] for m in members if m['_book'] == book]
+            loose, left = [], []
             for m in members:
                 if m['_book'] == book:
                     continue
@@ -336,7 +377,23 @@ def main():
                 if len(fits) == 1:
                     fits[0].append(m)
                 else:
-                    groups.append([m])
+                    left.append(m)
+            for m in left:
+                fit = lambda g: m['_book'] not in {x['_book'] for x in g} and all(same_man(x, m) for x in g)
+                joins = [g for g in loose if fit(g)]          # another book's entry left over as well
+                if joins:
+                    joins[0].append(m)
+                    continue
+                # else the one largest group it agrees with whole, if that already joined another book's entry to the
+                # doubled book's ("Anđelić Vukoman": the census man who took Prilog u krvi's entry, and the Spomenica's)
+                cands = [g for g in groups if fit(g)]
+                best = max((len(g) for g in cands), default=0)
+                top = [g for g in cands if len(g) == best]
+                if best > 1 and len(top) == 1:
+                    top[0].append(m)
+                else:
+                    loose.append([m])
+            groups += loose
             counts['clusters split (two entries of one book)'] += 1
         else:
             groups = [members]
