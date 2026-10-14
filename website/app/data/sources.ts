@@ -685,6 +685,33 @@ export const sources: PdfSource[] = [
     description: 'Svi borci Beogradskog bataljona od prvih dana ustanka do 1. marta 1945, kada je postao 3. bataljon Prve proleterske, po tome kada su došli u bataljon: zanimanje, rođenje, članstvo u KPJ i SKOJ-u, šta je s kim bilo u ratu'
   },
   {
+    id: 'dalmatinci-prva-proleterska',
+    title: 'Dalmatinci u Prvoj proleterskoj — popis boraca',
+    author: 'Tomislav Jelić, Vitomir Pirak',
+    pdfPath: '/pdfs/dalmatinci-prva-proleterska.pdf',
+    thumbnail: '/images/pdf-thumbs/dalmatinci-prva-proleterska.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Borci Prve proleterske brigade iz Dalmacije, s biografijom svakog: rođenje, zanimanje, put u NOB i u brigadu, borbe, sudbina; i dodatni spisak onih za koje autori nisu prikupili podatke (str. 467–754)'
+  },
+  {
+    id: 'crnogorski-bataljon',
+    title: 'Prvi crnogorski bataljon Prve proleterske NOU brigade — spiskovi boraca koji su stupili u bataljon 1942–1945',
+    author: 'Zbornik sjećanja',
+    pdfPath: '/pdfs/crnogorski-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/crnogorski-bataljon.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Borci koji su u Prvi crnogorski bataljon Prve proleterske stupili 1942, 1943, 1944. i 1945. i borci bez potpunih podataka: rođenje, zanimanje, kada su stupili u NOB, sudbina; ćirilica (str. 713–795)'
+  },
+  {
+    id: 'rudarska-ceta',
+    title: 'Rudarska četa — spisak boraca u Rudom 21. XII 1941.',
+    author: 'Branislav Božović',
+    pdfPath: '/pdfs/rudarska-ceta.pdf',
+    thumbnail: '/images/pdf-thumbs/rudarska-ceta.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Borci Rudarske čete (rudari Trepče i Kopaonika) kada je ušla u Prvu proletersku u Rudom 21. decembra 1941, s biografijom svakog (str. 426–430)'
+  },
+  {
     id: 'borci-sutjeske-druga-proleterska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',
