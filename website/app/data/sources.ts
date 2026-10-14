@@ -1874,6 +1874,15 @@ export const sources: PdfSource[] = [
     description: 'Popis boraca IV POS-a 1943–1945, koji su sastavili Sekcija boraca sektora i autor (4.702 imena, sa mestom odakle je ko), i poginuli i umrli borci sektora, sa dužnošću i kako su pali (str. 418–478).'
   },
   {
+    id: 'kokrski-odred-1',
+    title: 'Kokrški odred - narodnoosvobodilni boj pod Karavankami I',
+    author: 'Ivan Jan',
+    pdfPath: '/pdfs/kokrski-odred-1.pdf',
+    thumbnail: '/images/pdf-thumbs/kokrski-odred.jpg',
+    brigadeName: 'Kokrški odred',
+    description: 'Spisak boraca Kokrškog odreda prvog sastava, jun 1942 - januar 1943, po štabu, bataljonima i četama: odakle je ko, dužnosti i šta je s kim bilo (str. 509–525).'
+  },
+  {
     id: 'kokrski-odred',
     title: 'Kokrški odred - narodnoosvobodilni boj pod Karavankami III',
     author: 'Ivan Jan',

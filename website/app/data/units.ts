@@ -1504,11 +1504,11 @@ export const units: Unit[] = [
     id: 'kokrski-odred',
     name: 'Kokrški odred',
     nameEn: 'Kokra Detachment',
-    description: 'Formiran 27. avgusta 1944. u Dragi kod Begunja, pod Karavankama, kao drugi Kokrški odred. Borci odreda: štabovi, obaveštajci, kuriri, bolnica i radionice, bataljoni po četama.',
+    description: 'Formiran 18. juna 1942. na Kališču pod Storžičem, a drugi put 27. avgusta 1944. u Dragi kod Begunja. Borci prvog odreda s biografijama i spisak drugog po štabovima, službama i četama.',
     image: '/images/pdf-thumbs/kokrski-odred.jpg',
-    soldierCount: 1061,
+    soldierCount: 1366,
     dataFile: '/kokrski-odred-soldiers.json',
-    pdfFiles: ['/pdfs/kokrski-odred.pdf']
+    pdfFiles: ['/pdfs/kokrski-odred.pdf', '/pdfs/kokrski-odred-1.pdf']
   },
   {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)

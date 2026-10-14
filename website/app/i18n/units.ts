@@ -625,7 +625,7 @@ const sl: Record<string, UnitText> = {
   },
   'kokrski-odred': {
     name: 'Kokrški odred',
-    description: 'Ustanovljen 27. avgusta 1944 v Dragi pri Begunjah pod Karavankami kot drugi Kokrški odred. Borci odreda: štabi, obveščevalci, kurirji, bolnišnica in delavnice, bataljoni po četah.',
+    description: 'Ustanovljen 18. junija 1942 na Kališču pod Storžičem, drugič 27. avgusta 1944 v Dragi pri Begunjah. Borci prvega odreda z življenjepisi in spisek drugega po štabih, službah in četah.',
   },
   'cankarjev-bataljon': {
     name: 'Cankarjev bataljon',
@@ -1373,7 +1373,7 @@ const mk: Record<string, UnitText> = {
   },
   'kokrski-odred': {
     name: 'Кокршки одред',
-    description: 'Формиран на 27 август 1944 во Драга кај Бегуње, под Караванките, како втор Кокршки одред. Борците на одредот: штабовите, разузнавачите, куририте, болницата и работилниците, баталјоните по чети.',
+    description: 'Формиран на 18 јуни 1942 на Калишче под Сторжич, а втор пат на 27 август 1944 во Драга кај Бегуње. Борците на првиот одред со биографии и списокот на вториот по штабови, служби и чети.',
   },
   'cankarjev-bataljon': {
     name: 'Цанкаров баталјон',
@@ -2123,7 +2123,7 @@ const en: Record<string, UnitText> = {
   },
   'kokrski-odred': {
     name: 'Kokra Detachment',
-    description: 'Formed on 27 August 1944 at Draga near Begunje, under the Karavanke, as the second Kokra Detachment. Its men: the staffs, intelligence, couriers, hospital and workshops, and the battalions company by company.',
+    description: 'Formed on 18 June 1942 at Kališče under Storžič, and again on 27 August 1944 at Draga near Begunje. The first detachment’s fighters with their stories, and the second’s roll by staff, service and company.',
   },
   'cankarjev-bataljon': {
     name: 'Cankar Battalion',
