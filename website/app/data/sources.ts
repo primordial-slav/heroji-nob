@@ -1892,6 +1892,15 @@ export const sources: PdfSource[] = [
     description: 'Iz knjige o deci Kozare u ratu, poglavlje „Pali kao borci narodnooslobodilačkog rata”: 370 kozarskih dečaka i devojčica mlađih od 15 godina koji su poginuli kao borci, po opštinama, s mestom i godinama rođenja i pogibije (tekst na znaci.org, bez skenirane knjige). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'krizani-v-boju-za-svobodo',
+    title: 'Križani v boju za svobodo / S. Croce nella lotta per la libertà',
+    author: 'Skupina avtorjev',
+    pdfPath: '/pdfs/krizani-v-boju-za-svobodo.pdf',
+    thumbnail: '/images/pdf-thumbs/krizani-v-boju-za-svobodo.jpg',
+    brigadeName: '',
+    description: 'Knjiga o ljudima sela Križ kod Trsta u ratu: životopisi palih (uneti su samo oni koji su bili u partizanima ili u vojsci), i tabele Križana u NOVJ i boraca NOV koji su živeli u Križu, s ocem, rođenjem, stupanjem u NOV, činom i jedinicom. Dobrovoljci u Španiji, Križani u italijanskim jedinicama i deportirci nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
