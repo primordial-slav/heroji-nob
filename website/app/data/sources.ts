@@ -1838,6 +1838,15 @@ export const sources: PdfSource[] = [
     description: 'Pali borci i žrtve fašističkog terora po selima Imotske krajine (str. 163–472), s rođenjem, putem u NOV i smrću. Uneti su samo pali borci, iz dela koji knjiga za svako selo naslovljava »Poginuli borci«, i od njih oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'knjazevac-pomenik',
+    title: 'Pomenik žrtava Drugog svetskog rata područja opštine Knjaževac',
+    author: 'Radiša Dragićević (prir.)',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00002204',
+    thumbnail: '/images/pdf-thumbs/knjazevac-pomenik.jpg',
+    brigadeName: '',
+    description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su samo partizanski borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu NOVJ. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
