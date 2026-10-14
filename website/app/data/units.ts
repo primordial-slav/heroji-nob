@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 48305,
+    soldierCount: 48300,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },

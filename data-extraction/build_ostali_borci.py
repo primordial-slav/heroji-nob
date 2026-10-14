@@ -112,6 +112,15 @@ ONE_MAN = [
     # the Slovene staff lists name an officer and what he was called, nothing more
     ('9072000059', '9075000001', 'Jernejc Franc-Milče, the Prešernova\'s and Vojkova\'s officer to August 1944, then '
                                  'the Jeseniško-bohinjski odred\'s commander from 30 August 1944'),
+    ('9072000005', '9002000690', 'Matejka Evgen-Pemc, the XXXI. divizija\'s commander who fell at the Soča in May '
+                                 '1945, and the narodni heroj of the 1982 book'),
+    ('9074000011', '9002000519', 'Kolman Alojz-Marok, the 15. divizija\'s deputy commander in 1943, and the narodni '
+                                 'heroj'),
+    ('9001000469', '9002000519', 'Kolman Alojz-Marok in the two hero books: born 1 July in Zabukovje, proclaimed '
+                                 '20 December (1911 and 1951 against 1913 and 1952)'),
+    ('9070000013', '9061004420', 'Volner Zdenko-Sanjo of Virovitica, a spomenica holder, and the Jewish student of '
+                                 'Virovitica in the NOV from 1941 (born 1922 and 1921)'),
+    ('9070000003', '9002000320', 'Fiket Mirko-Mesarić, proclaimed a narodni heroj on 24 July 1953 in both books'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 
