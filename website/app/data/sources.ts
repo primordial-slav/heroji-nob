@@ -1847,6 +1847,24 @@ export const sources: PdfSource[] = [
     description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su samo partizanski borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu NOVJ. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'moste-polje-spomenica-1941',
+    title: 'Zbornik občine Ljubljana Moste-Polje',
+    author: 'Polde Maček ml. (gl. ur.)',
+    pdfPath: '/pdfs/moste-polje-spomenica-1941.pdf',
+    thumbnail: '/images/pdf-thumbs/moste-polje-spomenica-1941.jpg',
+    brigadeName: '',
+    description: 'Nosioci Partizanske spomenice 1941 sa područja današnje opštine Moste-Polje u Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, godina rođenja i zanimanje, a za one koji su umrli posle rata i godina smrti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'vis-spomenica-1941',
+    title: 'Vis 1941–1945',
+    author: 'Veseljko Huljić',
+    pdfPath: '/pdfs/vis-spomenica-1941.pdf',
+    thumbnail: '/images/pdf-thumbs/vis-spomenica-1941.jpg',
+    brigadeName: '',
+    description: 'Nosioci Partizanske spomenice 1941 sa viškog otočja (str. 521), samo imena, i rečenica knjige o narodnom heroju Andriji Božaniću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

@@ -446,6 +446,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Padli borci in žrtve fašističnega terorja po vaseh Imotske krajine (str. 163–472), z rojstvom, potjo v NOV in smrtjo. Vneseni so le padli borci, iz dela, ki ga knjiga za vsako vas naslovi »Poginuli borci«, in med njimi tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske; žrtev terorja nismo vnesli. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'knjazevac-pomenik':
       'Vsi, ki so umrli v drugi svetovni vojni z območja občine Knjaževac, po vaseh (str. 37–327), z rojstvom in smrtjo: partizani, četniki, ustreljeni in civilisti skupaj. Vneseni so le partizanski borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto NOVJ. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'moste-polje-spomenica-1941':
+      'Nosilci partizanske spomenice 1941 z območja današnje občine Moste-Polje v Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, letnica rojstva in poklic, za tiste, ki so umrli po vojni, tudi letnica smrti. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'vis-spomenica-1941':
+      'Nosilci partizanske spomenice 1941 z viškega otočja (str. 521), samo imena, in stavek knjige o narodnem heroju Andriji Božaniću. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca z otoka, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -893,6 +897,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Паднатите борци и жртвите на фашистичкиот терор по селата на Имотската крајина (стр. 163–472), со раѓање, пат во НОВ и смрт. Внесени се само паднатите борци, од делот што книгата за секое село го насловува »Poginuli borci«, и од нив оние за кои записот вели дека биле борци или наведува воена должност или единица на војската; жртвите на теророт не се внесени. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'knjazevac-pomenik':
       'Сите настрадани во Втората светска војна од подрачјето на општина Књажевац, по села (стр. 37–327), со раѓање и смрт: партизани, четници, стрелани и цивили заедно. Внесени се само партизанските борци, оние за кои записот вели дека биле борци или наведува воена должност или единица на НОВЈ. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'moste-polje-spomenica-1941':
+      'Носителите на Партизанската споменица 1941 од подрачјето на денешната општина Мосте-Поље во Љубљана, од архивот на ЦК ЗКС (стр. 257–260): име, година на раѓање и занимање, а за оние што умреле по војната и година на смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'vis-spomenica-1941':
+      'Носителите на Партизанската споменица 1941 од вишкото островје (стр. 521), само имиња, и реченицата на книгата за народниот херој Андрија Божаниќ. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец од островот што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1339,6 +1347,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fallen fighters and the victims of fascist terror of the villages of the Imotski region (pp. 163–472), with birth, the way into the army and death. Only the fallen fighters were entered, from the part the book heads “Poginuli borci” in each village, and of them those whose entry says they fought or names a military duty or an army unit; the victims of terror were left out. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'knjazevac-pomenik':
       'Everyone from the municipality of Knjaževac who died in the Second World War, by village (pp. 37–327), with birth and death: partisans, Chetniks, the executed and civilians together. Only the partisan fighters were entered, those whose entry says they fought or names a military duty or a unit of the army. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'moste-polje-spomenica-1941':
+      'The holders of the Partisan Commemorative Medal of 1941 from the area of today\'s Moste-Polje district of Ljubljana, from the archive of the Slovene party\'s central committee (pp. 257–260): name, year of birth and trade, and for those who died after the war the year of death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'vis-spomenica-1941':
+      'The holders of the Partisan Commemorative Medal of 1941 from the Vis islands (p. 521), names only, with the book\'s sentence on the national hero Andrija Božanić. The book belongs to no single unit: an entry is added to the record of each fighter from the island on the site where the match is certain; the others are among the Other fighters.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
