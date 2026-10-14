@@ -55,7 +55,7 @@ UNITS = {
     (5, 'krajišk'): 12, (12, 'krajišk'): 54, (6, 'istočnobosansk'): 42, (2, 'krajišk'): 24, (15, 'majevičk'): 49,
     (4, 'srpsk'): 21, (21, 'srpsk'): 80, (8, 'srpsk'): 87, (10, 'srpsk'): 88, (12, 'srpsk'): 90, (1, 'vojvođansk'): 9,
     (2, 'vojvođansk'): 18, (4, 'vojvođansk'): 76, (3, 'vojvođansk'): 57, (5, 'vojvođansk'): 82, (6, 'vojvođansk'): 83,
-    (7, 'vojvođansk'): 22, (3, 'makedonsk'): 51, (1, 'konjičk'): 92,
+    (7, 'vojvođansk'): 22, (3, 'makedonsk'): 51, (1, 'konjičk'): 92, (1, 'krajišk'): 123, (5, 'srpsk'): 127,
 }
 ORDINALS = [('jedanaest', 11), ('dvanaest', 12), ('trinaest', 13), ('četrnaest', 14), ('petnaest', 15),
             ('šesnaest', 16), ('sedamnaest', 17), ('osamnaest', 18), ('devetnaest', 19), ('prv', 1), ('drug', 2),

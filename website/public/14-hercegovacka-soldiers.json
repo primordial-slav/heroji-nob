@@ -3023,13 +3023,27 @@
         "pdf_y": 510.2,
         "pdf_y_end": 531.7,
         "pdf_x_end": 352.6
+      },
+      {
+        "soldier_id": "0125000110",
+        "name": "Brkić M Ahmet",
+        "additional_info": "zvani Lebro; rođen 1924, Mostar, đak, članj SKOJ-a od 1940. i KPJ od 1942, u Bataljonu od početka 1942, poginuo kod Nevesinja u jesen 1944.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 7,
+        "pdf_x": 125.4,
+        "pdf_y": 278.4,
+        "pdf_x_end": 293.2,
+        "pdf_y_end": 351.1,
+        "unit_file": "mostarski-bataljon-soldiers.json"
       }
     ],
     "death_type": "poginuo",
     "death_date": "28. novembra 1944",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 229.3
+    "pdf_x_end": 229.3,
+    "occupation": "đak",
+    "death_place": "kod Nevesinja u"
   },
   {
     "last_name": "Brković",
@@ -6568,7 +6582,23 @@
     "pdf_file": "14-hercegovacka.pdf",
     "birth_place": "Mostar",
     "soldier_id": "0081000367",
-    "pdf_x_end": 208.1
+    "pdf_x_end": 208.1,
+    "occupation": "đak",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0125000266",
+        "name": "Hamzić S Ahmed",
+        "additional_info": "rođen 1926, Mostar, đak, član SKOJ-a od 1941. i KPJ od 1944, u Bataljonu od kraja 1943, borac.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 55,
+        "pdf_x": 126.0,
+        "pdf_y": 462.8,
+        "pdf_x_end": 292.4,
+        "pdf_y_end": 522.7,
+        "unit_file": "mostarski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hamzić",
@@ -9784,11 +9814,26 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=438",
         "source_page": 434,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0125000388",
+        "name": "Kujundžić Đ Maksim",
+        "additional_info": "rođen 1923, Čelebići, Konjic, zemljoradnik, član SKOJ-a od 1942. i KPJ od 1943, u Bataljonu od septembra 1941, komandir voda, poginuo kod Nevesinja 1944, narodni heroj.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 19,
+        "pdf_x": 314.4,
+        "pdf_y": 362.7,
+        "pdf_x_end": 480.6,
+        "pdf_y_end": 460.8,
+        "unit_file": "mostarski-bataljon-soldiers.json"
       }
     ],
     "death_type": "poginuo",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 277.3
+    "pdf_x_end": 277.3,
+    "occupation": "zemljoradnik",
+    "rank": "komandir voda",
+    "death_date": "1944"
   },
   {
     "last_name": "Kujundžić",
@@ -9839,7 +9884,22 @@
     "pdf_file": "14-hercegovacka.pdf",
     "birth_place": "Borci, Konjic",
     "soldier_id": "0081000554",
-    "pdf_x_end": 220.2
+    "pdf_x_end": 220.2,
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0125000391",
+        "name": "Kukič S Ilija",
+        "additional_info": "rođen 1902, Borci, Konjic, zemljoradnik, član KPJ od 1941, u Bataljonu od septembra 1941, komandant Konjičkog bataljona u Mostarskom odredu.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 19,
+        "pdf_x": 314.2,
+        "pdf_y": 466.6,
+        "pdf_x_end": 480.9,
+        "pdf_y_end": 539.2,
+        "unit_file": "mostarski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kuko",
@@ -24757,6 +24817,18 @@
         "ref_book": "trebinjci-pali"
       },
       {
+        "soldier_id": "0043001411",
+        "name": "Šakotić Ćetka Radovan",
+        "additional_info": "komandant 3. bataljona, rođen 1906, Orahovac, Trebinje, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1939, poginuo kod Postojne u Istri 5. maja 1945. godine, komandant 14. hercegovačke brigade. Odlikovan Ordenom narodnog heroja.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 64,
+        "pdf_x": 284.8,
+        "pdf_y": 673.6,
+        "pdf_x_end": 455.0,
+        "pdf_y_end": 704.4,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      },
+      {
         "soldier_id": "0101000260",
         "name": "Šakotić Ć Radovan",
         "additional_info": "rođen 1906. god. u Orahovcu-Lastva-Trebinje. Komandant bataljona. Poginuo 5. maja 1945. god. kod Logateca u Sloveniji. Narodni heroj.",
@@ -24767,13 +24839,27 @@
         "pdf_x_end": 356.6,
         "pdf_y_end": 146.5,
         "unit_file": "12-hercegovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0125000594",
+        "name": "Sakotić C Radovan",
+        "additional_info": "rođen 1906, Orahovac, Trebinje, kamenorezac, član KPj od 1939, u Bataljonu od novembra 1942, komandant Bataljona, poginuo kod Postojne maja 1945, narodni heroj.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 46,
+        "pdf_x": 297.1,
+        "pdf_y": 478.5,
+        "pdf_x_end": 464.2,
+        "pdf_y_end": 575.0,
+        "unit_file": "mostarski-bataljon-soldiers.json"
       }
     ],
     "death_type": "poginuo",
     "death_date": "5. maja 1945",
     "death_place": "kod Logateca u Sloveniji",
     "pdf_x_end": 288.7,
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Šakotić",

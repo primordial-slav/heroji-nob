@@ -33,6 +33,22 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  'sercerjeva-brigada': {
+    date: '1942-10-06', place: 'Mokrc', source: 'https://znaci.org/00003/813.pdf',
+    note: 'Ambrožič-Novljan, Šercerjeva brigada I, str. 16: „Tako je bila 6. oktobra 1942 popoldne opravljena na Mokrcu ustanovitev IV. slovenske narodnoosvobodilne udarne brigade Ljuba Šercerja“ (jasa Pri debeli bukvi).',
+  },
+  'kosovelova-brigada': {
+    date: '1943-09-23', place: 'Gabrovica (Kras)', source: 'https://znaci.org/00003/773.pdf',
+    note: 'Petelin, Kosovelova brigada, str. 25 i 37-38: operativni štab za zapadnu Sloveniju naredio je 23. septembra 1943. obrazovanje primorskih brigada; štab brigade sastao se 24. septembra u Gabrovici; spisak komandnog kadra počinje 23. septembrom 1943.',
+  },
+  'eskadrile-novj': {
+    date: '1944-04-22', place: 'Benina (Libija)', source: 'https://znaci.org/00001/115_2.pdf',
+    note: 'Pejčić, Prva i druga eskadrila NOVJ: „Prva eskadrila NOVJ formirana je 22. aprila 1944. na aerodromu Benina u Libiji“ kao No. 352 (Yugoslav) Squadron; druga, No. 351, „1. jula 1944.“',
+  },
+  '42-vazduhoplovna-divizija': {
+    date: '1944-12-29', place: 'Zemun', source: 'https://znaci.org/00001/238_2.pdf',
+    note: 'Pejčić, 42. vazduhoplovna divizija: „29. decembar 1944. smatra se datumom obrazovanja i formiranja 42. divizije“; štab je naređen usmenom naredbom Štaba Vazduhoplovstva NOVJ u Zemunu od 5. januara 1945.',
+  },
   '18-srpska-brigada': {
     date: '1944-06', place: 'Veliki Jastrebac (Toplica)', source: 'https://znaci.org/00001/88_2.pdf',
     note: 'Milosavljević, Osamnaesta srpska brigada (pogl. „Pripreme i formiranje 18. brigade“): naredba o formiranju nije sačuvana; po kazivanju boraca u brigadu se stupalo „između 3. i 8. juna 1944. godine, a mnogi i najviše 6. juni“, pod Velikim Jastrepcem (Vojna enciklopedija navodi Gornju Bresnicu, autor to ne prihvata).',

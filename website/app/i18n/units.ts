@@ -589,6 +589,22 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  'sercerjeva-brigada': {
+    name: 'Šercerjeva brigada',
+    description: 'Ustanovljena 6. oktobra 1942 na Mokrcu. Prostovoljci do konca februarja 1943 in padli do konca leta 1943, po kraju in dnevu smrti.',
+  },
+  'kosovelova-brigada': {
+    name: 'Kosovelova brigada',
+    description: 'Ustanovljena 23. septembra 1943 na Krasu. Padli, pogrešani in za posledicami ran umrli ter poveljniški kader brigade in bataljonov.',
+  },
+  'eskadrile-novj': {
+    name: '1. in 2. eskadrilja NOVJ',
+    description: 'Prva ustanovljena 22. aprila 1944 na letališču Benina v Libiji, druga 1. julija 1944. Piloti, mehaniki in drugo moštvo obeh eskadrilj.',
+  },
+  '42-vazduhoplovna-divizija': {
+    name: '42. letalska divizija',
+    description: 'Ustanovljena 29. decembra 1944 v Zemunu. Moštvo divizije po polkih in delavnicah: čin in dolžnost.',
+  },
   '18-srpska-brigada': {
     name: '18. srbska brigada',
     description: 'Ustanovljena junija 1944 pod Velikim Jastrebcem. Vsi borci in starešine brigade, z letom in krajem rojstva ter tem, kako so padli ali bili ranjeni.',
@@ -1238,6 +1254,22 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  'sercerjeva-brigada': {
+    name: 'Шерцерјева бригада',
+    description: 'Формирана на 6 октомври 1942 на Мокрц. Доброволците до крајот на февруари 1943 и загинатите до крајот на 1943, по местото и денот на загинувањето.',
+  },
+  'kosovelova-brigada': {
+    name: 'Косовелова бригада',
+    description: 'Формирана на 23 септември 1943 на Крас. Загинатите, исчезнатите и умрените од рани и командниот кадар на бригадата и баталјоните.',
+  },
+  'eskadrile-novj': {
+    name: '1-ва и 2-ра ескадрила НОВЈ',
+    description: 'Првата формирана на 22 април 1944 на аеродромот Бенина во Либија, втората на 1 јули 1944. Пилотите, механичарите и другиот состав на двете ескадрили.',
+  },
+  '42-vazduhoplovna-divizija': {
+    name: '42-ра воздухопловна дивизија',
+    description: 'Формирана на 29 декември 1944 во Земун. Составот на дивизијата по полкови и работилници: чин и должност.',
   },
   '18-srpska-brigada': {
     name: '18-та српска бригада',
@@ -1890,6 +1922,22 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  'sercerjeva-brigada': {
+    name: 'Šercer Brigade',
+    description: 'Formed on 6 October 1942 on Mokrc. The volunteers to the end of February 1943, and the fallen to the end of 1943 by the place and day they fell.',
+  },
+  'kosovelova-brigada': {
+    name: 'Kosovel Brigade',
+    description: 'Formed on 23 September 1943 on the Karst. The fallen, the missing and those who died of wounds, and the officers of the brigade and its battalions.',
+  },
+  'eskadrile-novj': {
+    name: '1st and 2nd Squadrons of the Yugoslav Army (RAF 352 and 351)',
+    description: 'The first formed on 22 April 1944 at Benina airfield in Libya, the second on 1 July 1944. The pilots, mechanics and other men of both squadrons.',
+  },
+  '42-vazduhoplovna-divizija': {
+    name: '42nd Air Division',
+    description: 'Formed on 29 December 1944 in Zemun. The division’s men by regiment and workshop: rank and duty.',
   },
   '18-srpska-brigada': {
     name: '18th Serbian Brigade',

@@ -1180,6 +1180,42 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    139: {
+        'name': '1. i 2. eskadrila NOVJ',
+        'json_file': 'eskadrile-novj-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "BARUCA JOSIP 791326, desetar, avio-mehaničar, rođen 1922. u Koštabani ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'upper_all',
+    },
+    140: {
+        'name': '42. vazduhoplovna divizija',
+        'json_file': '42-vazduhoplovna-soldiers.json',
+        'language': 'sr',
+        'name_format': 'standard',    # "MARIČIĆ R. NIKOLA, mlađi vodnik, radio-telegrafist"
+        'has_fathers_name': True,
+        'fathers_name_form': 'initial',
+        'original_casing': 'upper_all',
+    },
+    141: {
+        'name': 'Šercerjeva',
+        'json_file': 'sercerjeva-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Delač Ivan-Mirko, Jakšiči pri Fari"; the fallen under the place and day they fell
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
+    142: {
+        'name': 'Kosovelova',
+        'json_file': 'kosovelova-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Abram Marjan, rojen 5. februarja 1923, Kosovelje, umrl 29. aprila 1945, Kosovelje"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
     # not units either: the fallen partisans of the 1964 census (Žrtve rata 1941-1945) who have no record of a unit,
     # one part per volume of the census, a republic or province (build_ostali_borci.py, CENSUS_VOLUMES)
     **{code: {

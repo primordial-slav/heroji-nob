@@ -80,6 +80,9 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
 TWO_COLUMN = {
     'mostarski-bataljon.pdf',               # Mostarski bataljon (Ćemalović): the fighters' bios
     '18-srpska.pdf',                        # 18. srpska (Milosavljević): everyone in the brigade
+    'eskadrile-novj.pdf',                   # 1. i 2. eskadrila NOVJ (Pejčić): the squadrons' people
+    'sercerjeva.pdf',                       # Šercerjeva brigada (Ambrožič-Novljan): volunteers, the fallen
+    '42-vazduhoplovna.pdf',                 # 42. vazduhoplovna divizija (Pejčić): the division's people
     'hak-10-korenica-udbina.pdf',           # Korenica i Udbina (Karlovac knj. 10): the fallen
     'hak-14-donji-lapac.pdf',               # Donji Lapac (Karlovac knj. 14): the fallen
     'hak-13-gracac.pdf',                    # Gračac (Karlovac knj. 13): the fallen
@@ -153,6 +156,7 @@ TWO_COLUMN_PAGES = {
     '1-konjicka.pdf': range(5, 12),              # 1. konjička: the fallen in one column, the war roster in two
     '13-hercegovacka.pdf': range(15, 33),              # 13. hercegovačka: the roster of names
     'hak-20-gospic-perusic.pdf': range(1, 61),   # Gospić i Perušić: the fallen in two columns, the spomenica in one
+    'kosovelova.pdf': range(1, 18),              # Kosovelova: the fallen in two columns, the officers in one
 }
 # two-column books whose right column sets its entry numbers in the gutter, left of the column's text
 NUMBERS_IN_GUTTER = {'hak-20-gospic-perusic.pdf'}
@@ -364,6 +368,7 @@ ONE_LINE_ENTRIES = {
     'tomsiceva-4.pdf': range(1, 107),
     'artilerija-9-korpusa.pdf': range(1, 9),     # Artilerija 9. korpusa: the roster, a soldier a line
     '14-hercegovacka.pdf': range(1, 33),         # 14. hercegovačka: everyone who served, a soldier a line
+    'kosovelova.pdf': range(18, 23),             # Kosovelova: the officers, a duty a line
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster, names only
     '1-konjicka.pdf': range(5, 12),              # 1. konjička: the war roster, names only
     '13-hercegovacka.pdf': range(15, 33),              # 13. hercegovačka: the roster of names

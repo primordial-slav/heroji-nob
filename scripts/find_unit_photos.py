@@ -495,6 +495,30 @@ UNITS = {
                           "Bosanska Posavina"),
         note="Nothing in the gallery names the brigade; the photo is from its own book (Milosavljević, Osamnaesta "
              "srpska brigada)."),
+    "sercerjeva-brigada": dict(
+        name="Šercerjeva brigada", tags=[],
+        caption=r"[sš]ercerjev\w*\s+brigad|brigad\w*\s+ljub[aeo]\s+[sš]ercerj", photo=None,
+        book=dict(pdf="00003/813.pdf", page=154, xref=1206,
+                  caption="Borci II. bataljona Šercerjeve brigade s komandantom Jožetom Mirtičem, na njegovi desnici mitraljezec Jože Ožbolt"),
+        note="Nothing in the gallery names the brigade; the photo is from its book (Ambrožič-Novljan)."),
+    "kosovelova-brigada": dict(
+        name="Kosovelova brigada", tags=[],
+        caption=r"kosovelov\w*\s+brigad|brigad\w*\s+sre[cč]k[ao]\s+kosovel", photo=None,
+        book=dict(pdf="00003/773.pdf", page=270, xref=1965,
+                  caption="Skupina kosovelovcev pri Coljavi blizu Gabrovice v začetku oktobra 1943"),
+        note="Nothing in the gallery names the brigade; the photo is from its book (Petelin)."),
+    "eskadrile-novj": dict(
+        name="1. i 2. eskadrila NOVJ", tags=[],
+        caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,
+        book=dict(pdf="00001/115_4.pdf", page=18, xref=75,
+                  caption="Piloti Prve eskadrile sa engleskim komandantom Proktorom i pukovnikom Pireom (u sredini) na "
+                          "aerodromu Lete kod Benine u Libiji"),
+        note="The gallery has only an aircraft and one pilot of the squadrons; the photo is from their book (Pejčić)."),
+    "42-vazduhoplovna-divizija": dict(
+        name="42. vazduhoplovna divizija", tags=[],
+        caption=r"42\.?\s+(?:vazduhoplovn|jurišn)\w*\s+divizij|42[123]\.?\s+(?:vazduhoplovn|jurišn|lovačk)\w*\s+puk",
+        photo=None, book=dict(pdf="00001/238_12.pdf", page=21, xref=93, caption="Grupa pripadnika 423. vazduhoplovnog puka"),
+        note="Nothing in the gallery names the division; the photo is from its book (Pejčić): men of its 423. regiment."),
     "1-proleterski-bataljon-hrvatske": dict(
         name="1. proleterski bataljon Hrvatske", tags=[],
         caption=r"(?:1\.|I\.?|prv\w*)\s+proletersk\w*\s+(?:no\s+|udarn\w*\s+)*bataljon\w*\s+hrvatsk", photo=None,

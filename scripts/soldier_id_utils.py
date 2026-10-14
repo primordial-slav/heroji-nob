@@ -143,6 +143,10 @@ BRIGADE_CODES = {
     126: 'Čačanski odred',
     127: '5. Srpska',
     128: '18. Srpska',
+    139: '1. i 2. eskadrila NOVJ',
+    140: '42. vazduhoplovna divizija',
+    141: 'Šercerjeva',
+    142: 'Kosovelova',
     # Add new brigades here with next available code
 }
 

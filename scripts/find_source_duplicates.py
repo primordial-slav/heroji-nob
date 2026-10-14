@@ -79,6 +79,8 @@ LISTS = {
     '4-sandzacka.pdf': [(1, 'poginuli'), (11, 'ranjeni')],
     '3-primorsko-goranska.pdf': [(1, 'starešine i bolničari'), (8, 'poginuli')],
     'tomsiceva-4.pdf': [(1, '1943-1944'), (49, '1944-1945')],
+    'sercerjeva.pdf': [(1, 'prostovoljci 1942-43'), (10, 'padli')],
+    'kosovelova.pdf': [(2, 'padli'), (18, 'poveljniški kader')],
 }
 
 
@@ -162,6 +164,7 @@ LIST_FATE = {
     '12-krajiska-poginuli.pdf': 'fell', '12-krajiska-prezivjeli.pdf': 'lived',
     'cankarjeva.pdf (seznam)': 'lived', 'cankarjeva.pdf (padli)': 'fell',          # a list of a PDF (LISTS) by its name
     'gubceva.pdf (seznam)': 'lived', 'gubceva.pdf (padli)': 'fell',
+    'sercerjeva.pdf (padli)': 'fell', 'kosovelova.pdf (padli)': 'fell',                                          # its roster: everyone who joined by February 1943
     'dvanajsta.pdf (seznam)': 'lived', 'dvanajsta.pdf (padli)': 'fell',
     'gradnikova.pdf (padli)': 'fell',
     'istrski-odred.pdf (padli)': 'fell',

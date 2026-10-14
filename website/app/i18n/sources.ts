@@ -268,6 +268,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    'sercerjeva':
+      'Seznam partizanov prostovoljcev Šercerjeve brigade od ustanovitve 6. oktobra 1942 do konca februarja 1943 (ime, partizansko ime in kraj) in seznam padlih do konca leta 1943, po kraju in dnevu smrti (str. 509–523).',
+    'kosovelova':
+      'Seznam padlih, pogrešanih in za posledicami ran umrlih borcev (504 imena: rojstvo, kraj, kdaj in kje je kdo padel) in poveljniški kader brigade in njenih bataljonov z datumi dolžnosti (str. 803–824).',
+    'eskadrile-novj':
+      'Seznama moštva prve in druge eskadrilje NOVJ (352. in 351. eskadrilja RAF): številka, čin, dolžnost, rojstvo in kako je kdo prišel v eskadrilji, z Bližnjega vzhoda, iz italijanskega ujetništva ali iz domovine; na koncu imena, katerih eskadrilja ni ugotovljena (str. 331–354).',
+    '42-vazduhoplovna':
+      'Seznam moštva divizije po polkih (421., 422. in 423. letalski polk), štabu, samostojni četi in letalskih delavnicah: čin in dolžnost (str. 291–321).',
     '18-srpska':
       '„Borili so se v 18. srbski brigadi“: 5.047 borcev in starešin brigade po avtorjevem štetju, od tega 780 padlih, 787 ranjenih, 47 pogrešanih in 49 umrlih zaradi bolezni, z letom in krajem rojstva, dolžnostjo in tem, kje je kdo padel ali bil ranjen (str. 313–426).',
     '5-srpska':
@@ -278,6 +286,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci Konjiškega bataljona (september 1941 — junij 1942), Mostarskega bataljona (junij 1942 — junij 1943) in Mostarskega bataljona v Mostarskem partizanskem odredu (junij 1943 — maj 1944), vsak s kratkim življenjepisom: rojstvo, poklic, SKOJ in KPJ, prihod v bataljon, dolžnost in usoda (str. 329–392).',
     '13-krajiska':
       'Dva seznama: borci in starešine, ki so bili v brigadi avgusta in septembra 1943, s krajem, dolžnostjo in za padle, kdaj in kje so padli in kje so pokopani; člani partijske organizacije KPJ brigade maja 1945, z dnem sprejema v Partijo in dolžnostjo (str. 365–404).',
+    'pozega-pali':
+      'Priloga Dragoljuba Munjića: seznam padlih borcev NOB, žrtev fašističnega terorja in civilnih žrtev vojne v okraju Požega, po vaseh, z rojstvom, enoto in tem, kako je kdo padel. Vneseni so le borci; civilne žrtve, sodelavci NOP in vojaki nekdanje jugoslovanske vojske niso. Knjiga ne pripada eni enoti: njen zapis je dodan zapisu vsakega borca, ki je na strani in za katerega se zanesljivo ve, da je on.',
+    'cacanski-kraj-pali':
+      'Padli in umrli iz čačanskega okraja 1941–1945, po pokrajinah (Dragačevo, Ljubić, Takovo, Trnava, Čačak) in vaseh: oče, poklic, rojstvo, enota in kako je kdo padel. Vneseni so le borci; civilne žrtve in četniki niso. Knjiga ne pripada eni enoti: njen zapis je dodan zapisu vsakega borca, ki je na strani in za katerega se zanesljivo ve, da je on.',
     '1-krajiska':
       'Seznam padlih, umrlih in pogrešanih borcev brigade, 2.127 imen: rojstvo, kdaj so stopili v NOB in v brigado, četa in bataljon, dolžnost, kdaj in kje so padli in kje so pokopani (str. 331–442). Podatke je zbral in uredil Slobodan Spegar Spego.',
     'pionirska-ceta':
@@ -609,6 +621,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    'sercerjeva':
+      'Список на доброволците на Шерцерјевата бригада од формирањето на 6 октомври 1942 до крајот на февруари 1943 (име, партизанско име и место) и список на загинатите до крајот на 1943, по местото и денот на загинувањето (стр. 509–523).',
+    'kosovelova':
+      'Список на загинатите, исчезнатите и умрените од рани (504 имиња: раѓање, место, кога и каде паднал) и командниот кадар на бригадата и нејзините баталјони со датумите на должностите (стр. 803–824).',
+    'eskadrile-novj':
+      'Списоци на составот на првата и втората ескадрила на НОВЈ (352-ри и 351-ви сквадрон на РАФ): број, чин, должност, раѓање и како кој дошол во ескадрилите, од Блискиот Исток, од италијанско заробеништво или од земјата; на крајот имиња чија ескадрила не е утврдена (стр. 331–354).',
+    '42-vazduhoplovna':
+      'Список на составот на дивизијата по полкови (421-ви, 422-ри и 423-ти воздухопловен полк), штаб, самостојна чета и авиоработилници: чин и должност (стр. 291–321).',
     '18-srpska':
       '„Тие се бореа во 18-та српска бригада“: 5.047 борци и раководители на бригадата според пресметката на авторот, од кои 780 загинати, 787 ранети, 47 исчезнати и 49 умрени од болест, со година и место на раѓање, должност и каде кој загинал или бил ранет (стр. 313–426).',
     '5-srpska':
@@ -619,6 +639,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борците на Коњичкиот баталјон (септември 1941 — јуни 1942), на Мостарскиот баталјон (јуни 1942 — јуни 1943) и на Мостарскиот баталјон во Мостарскиот партизански одред (јуни 1943 — мај 1944), секој со кратка биографија: раѓање, занимање, СКОЈ и КПЈ, доаѓање во баталјонот, должност и судбина (стр. 329–392).',
     '13-krajiska':
       'Два списока: борците и раководителите што биле во бригадата во август и септември 1943, со место, должност и, за загинатите, кога и каде загинале и каде се погребани; членовите на партиската организација на КПЈ во бригадата во мај 1945, со денот на приемот во Партијата и должноста (стр. 365–404).',
+    'pozega-pali':
+      'Прилогот на Драгољуб Муњиќ: список на загинатите борци од НОБ, жртвите на фашистичкиот терор и цивилните жртви на војната во срезот Пожега, по села, со раѓање, единица и како загинал секој. Внесени се само борците; цивилните жртви, соработниците на НОП и војниците на поранешната југословенска војска не се. Книгата не припаѓа на една единица: записот од неа е додаден кон записот на секој борец што е на сајтот и за кого сигурно се знае дека е тој.',
+    'cacanski-kraj-pali':
+      'Загинатите и настраданите од чачанскиот крај 1941–1945, по краеви (Драгачево, Љубиќ, Таково, Трнава, Чачак) и села: татко, занимање, раѓање, единица и како загинал секој. Внесени се само борците; цивилните жртви и четниците не се. Книгата не припаѓа на една единица: записот од неа е додаден кон записот на секој борец што е на сајтот и за кого сигурно се знае дека е тој.',
     '1-krajiska':
       'Список на загинатите, умрените и исчезнатите борци на бригадата, 2.127 имиња: раѓање, кога стапиле во НОБ и во бригадата, чета и баталјон, должност, кога и каде загинале и каде се погребани (стр. 331–442). Податоците ги истражил и обработил Слободан Спегар Спего.',
     'pionirska-ceta':
@@ -949,6 +973,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    'sercerjeva':
+      'The volunteers of the Šercer Brigade from its founding on 6 October 1942 to the end of February 1943 (name, partisan name and place), and its fallen to the end of 1943, by the place and day they fell (pp. 509–523).',
+    'kosovelova':
+      'The fallen, the missing and those who died of wounds (504 names: birth, home, when and where each fell), and the officers of the brigade and its battalions with the dates of their duties (pp. 803–824).',
+    'eskadrile-novj':
+      'The rolls of the Yugoslav Army’s first and second squadrons (RAF 352 and 351 Squadrons): service number, rank, duty, birth and how each came to the squadrons, from the Middle East, from Italian captivity or from home; at the end, names whose squadron was not established (pp. 331–354).',
+    '42-vazduhoplovna':
+      'The division’s men by regiment (the 421st, 422nd and 423rd Air Regiments), staff, independent company and aircraft workshops: rank and duty (pp. 291–321).',
     '18-srpska':
       '“They fought in the 18th Serbian Brigade”: 5,047 fighters and officers by the author’s count, of them 780 fallen, 787 wounded, 47 missing and 49 dead of illness, with year and place of birth, duty and where each fell or was wounded (pp. 313–426).',
     '5-srpska':
@@ -959,6 +991,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters of the Konjic Battalion (September 1941 — June 1942), the Mostar Battalion (June 1942 — June 1943) and the Mostar Battalion in the Mostar Partisan Detachment (June 1943 — May 1944), each with a short biography: birth, trade, SKOJ and Party membership, when they joined, duty and fate (pp. 329–392).',
     '13-krajiska':
       'Two lists: the fighters and officers in the brigade in August and September 1943, with village, duty and, for the fallen, when and where they fell and where they are buried; the members of the brigade’s Communist Party organisation in May 1945, with the day each joined the Party and duty (pp. 365–404).',
+    'pozega-pali':
+      'Dragoljub Munjić’s appendix: the fallen fighters, the victims of the fascist terror and the civilian dead of the Požega district, by village, with birth, unit and how each died. Only the fighters are included; civilians, supporters of the movement and soldiers of the old Yugoslav army are not. The book belongs to no single unit: its entry is added to the record of every fighter on the site who is surely the same man.',
+    'cacanski-kraj-pali':
+      'The dead of the Čačak region, 1941–1945, by district (Dragačevo, Ljubić, Takovo, Trnava, Čačak) and village: father, trade, birth, unit and how each died. Only the fighters are included; civilian victims and Chetniks are not. The book belongs to no single unit: its entry is added to the record of every fighter on the site who is surely the same man.',
     '1-krajiska':
       'The brigade’s fallen, dead and missing, 2,127 names: birth, when each joined the struggle and the brigade, company and battalion, duty, when and where they fell and where they are buried (pp. 331–442). Researched and compiled by Slobodan Spegar Spego.',
     'pionirska-ceta':

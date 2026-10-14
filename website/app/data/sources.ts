@@ -1640,6 +1640,60 @@ export const sources: PdfSource[] = [
     description: '„Oni su se borili u 18. srpskoj brigadi“: 5.047 boraca i rukovodilaca brigade po autorovom računu, od toga 780 poginulih, 787 ranjenih, 47 nestalih i 49 umrlih od bolesti, s godinom i mestom rođenja, dužnošću i time gde je ko pao ili bio ranjen (str. 313–426). Spisak je sastavljen iz evidencije SUBNOR-a, ratne sanitetske dokumentacije 25. divizije i sačuvanih dokumenata brigade.'
   },
   {
+    id: 'cacanski-kraj-pali',
+    title: 'Čačanski kraj u NOB — pali borci i žrtve',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/cacanski-kraj-pali.pdf',
+    thumbnail: '/images/pdf-thumbs/cacanski-kraj-pali.jpg',
+    brigadeName: '',
+    description: 'Poginuli i stradali iz čačanskog kraja 1941–1945, po krajevima (Dragačevo, Ljubić, Takovo, Trnava, Čačak) i selima: otac, zanimanje, rođenje, jedinica i kako je ko poginuo. Uneti su samo borci; civilne žrtve i četnici nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'pozega-pali',
+    title: 'Požega u NOR i revoluciji 1941—1945',
+    author: 'Jovan R. Radovanović',
+    pdfPath: '/pdfs/pozega-pali.pdf',
+    thumbnail: '/images/pdf-thumbs/pozega-pali.jpg',
+    brigadeName: '',
+    description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su samo borci; civilne žrtve, saradnici NOP-a i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'sercerjeva',
+    title: 'Šercerjeva brigada I',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/sercerjeva.pdf',
+    thumbnail: '/images/pdf-thumbs/sercerjeva.jpg',
+    brigadeName: 'Šercerjeva brigada',
+    description: 'Spisak dobrovoljaca Šercerjeve brigade od osnivanja 6. oktobra 1942. do kraja februara 1943. (ime, partizansko ime i mesto) i spisak poginulih do kraja 1943, po mestu i danu pogibije (str. 509–523).'
+  },
+  {
+    id: 'kosovelova',
+    title: 'Kosovelova brigada',
+    author: 'Stanko Petelin',
+    pdfPath: '/pdfs/kosovelova.pdf',
+    thumbnail: '/images/pdf-thumbs/kosovelova.jpg',
+    brigadeName: 'Kosovelova brigada',
+    description: 'Spisak poginulih, nestalih i umrlih od rana (504 imena: rođenje, mesto, kada i gde je ko pao) i komandni kadar brigade i njenih bataljona sa datumima dužnosti (str. 803–824).'
+  },
+  {
+    id: 'eskadrile-novj',
+    title: 'Prva i druga eskadrila NOVJ',
+    author: 'Predrag Pejčić',
+    pdfPath: '/pdfs/eskadrile-novj.pdf',
+    thumbnail: '/images/pdf-thumbs/eskadrile-novj.jpg',
+    brigadeName: '1. i 2. eskadrila NOVJ',
+    description: 'Spiskovi ljudstva prve i druge eskadrile NOVJ (352. i 351. skvadron RAF-a): broj, čin, dužnost, rođenje i kako je ko došao u eskadrile, sa Bliskog istoka, iz italijanskog zarobljeništva ili iz zemlje; na kraju imena čija eskadrila nije utvrđena (str. 331–354).'
+  },
+  {
+    id: '42-vazduhoplovna',
+    title: '42. vazduhoplovna divizija',
+    author: 'Predrag Pejčić',
+    pdfPath: '/pdfs/42-vazduhoplovna.pdf',
+    thumbnail: '/images/pdf-thumbs/42-vazduhoplovna.jpg',
+    brigadeName: '42. vazduhoplovna divizija',
+    description: 'Spisak ljudstva divizije po pukovima (421, 422. i 423. vazduhoplovni puk), štabu, samostalnoj četi i aeroplanskim radionicama: čin i dužnost (str. 291–321).'
+  },
+  {
     id: 'bitka-kod-oborova-poginuli',
     title: 'Bitka kod Oborova',
     author: 'Milan Brunović, Tomo Sović',
