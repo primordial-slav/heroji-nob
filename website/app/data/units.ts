@@ -1461,6 +1461,36 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/4-prekomorska.pdf']
   },
   {
+    id: 'deveta-brigada',
+    name: 'Deveta brigada (Kočevska)',
+    nameEn: 'Ninth (Kočevje) Brigade',
+    description: 'Formirana 14. septembra 1943. od bataljona Zapadnodolenjskog odreda, u sastavu 18. divizije. Borci brigade: godina i mesto rođenja, a poginuli i gde su pali.',
+    image: '/images/pdf-thumbs/deveta.jpg',
+    soldierCount: 2372,
+    dataFile: '/deveta-soldiers.json',
+    pdfFiles: ['/pdfs/deveta.pdf']
+  },
+  {
+    id: '4-pomorski-sektor',
+    name: 'IV pomorski obalni sektor',
+    nameEn: '4th Naval Coastal Sector',
+    description: 'Formiran 30. oktobra 1943. u Hvaru, sektor Mornarice NOVJ za srednju Dalmaciju i ostrva. Svi borci sektora i odakle je ko, a poginuli i umrli i gde su pali.',
+    image: '/images/4-pomorski-sektor.jpg',
+    soldierCount: 4703,
+    dataFile: '/4-pomorski-sektor-soldiers.json',
+    pdfFiles: ['/pdfs/4-pomorski-sektor.pdf']
+  },
+  {
+    id: 'novosadski-odred',
+    name: 'Novosadski partizanski odred',
+    nameEn: 'Novi Sad Partisan Detachment',
+    description: 'Formiran 1941, a ponovo 28. avgusta 1944. na Palenkaševom salašu kod Bačkog Petrovca. Pripadnici odreda 1941. i 1944. godine.',
+    image: '/images/pdf-thumbs/novosadski-odred.jpg',
+    soldierCount: 124,
+    dataFile: '/novosadski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/novosadski-odred.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

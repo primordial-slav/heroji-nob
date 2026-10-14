@@ -69,6 +69,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
                   'proleterski-bataljon-bk.pdf',   # Proleterski bataljon Bosanske krajine: bio blocks beside the portraits
+                  '4-pomorski-sektor.pdf',   # IV pomorski obalni sektor: the fallen's name left, death right (roster boxed alike)
                   # books across units whose names run on (Gončin's and Tmušić's Srem): their records in unit 122
                   'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf'}
 
@@ -155,6 +156,7 @@ TWO_COLUMN = {
 MULTI_COLUMN = {
     '32-divizija.pdf': 4,           # a roster, names only
     'gradnikova.pdf': 3,            # Gradnikova: the fallen and the others, three columns
+    'deveta.pdf': 3,                # Deveta brigada: the roster, three columns
     'zapadnodolenjski-odred.pdf': 3,  # Zapadnodolenjski odred: roster and fallen, three columns
     'beogradski-bataljon.pdf': 3,   # Beogradski bataljon: the roster, three columns of bios
 }
@@ -390,6 +392,7 @@ ONE_LINE_ENTRIES = {
     '1-2-prekomorska.pdf': range(11, 15),        # 1. i 2. prekomorska: the officers, run on
     '9-srpska.pdf': range(1, 27),                # 9. srpska: the line-up (two names a line), the officers, the women
     '4-prekomorska.pdf': range(3, 8),            # 4. prekomorska: the officers, a name a line
+    'novosadski-odred.pdf': range(1, 9),         # Novosadski odred: a member a line
     '3-diverzantski-odred.pdf': range(1, 5),     # Treći diverzantski odred: a name a line, two columns
     'kosovelova.pdf': range(18, 23),             # Kosovelova: the officers, a duty a line
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster, names only

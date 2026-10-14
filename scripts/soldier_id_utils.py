@@ -156,6 +156,8 @@ BRIGADE_CODES = {
     165: '9. srpska',
     166: '4. prekomorska',
     167: 'Deveta (IX. SNOUB)',
+    168: 'IV pomorski obalni sektor',
+    169: 'Novosadski odred',
     # Add new brigades here with next available code
 }
 

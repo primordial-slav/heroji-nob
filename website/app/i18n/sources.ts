@@ -268,6 +268,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '4-pomorski-sektor':
+      'Seznam borcev IV. POS 1943–1945, ki so ga sestavili Sekcija borcev sektorja in avtor (4.702 imeni, s krajem, od koder je kdo), ter padli in umrli borci sektorja z dolžnostjo in okoliščinami smrti (str. 418–478).',
+    'novosadski-odred':
+      'Seznam pripadnikov Novosadskega partizanskega odreda v letih 1941 in 1944: ime, dolžnost, od kod je kdo in od kdaj (str. 85–92).',
+    'deveta':
+      'Seznam borcev IX. SNOB Kočevske: ime, leto in kraj rojstva, pri padlih leto in kraj smrti (str. 425–446).',
     '4-prekomorska':
       'Seznam padlih in umrlih borcev in vodilni kader brigade: štab, komanda stana, bataljoni, samostojna četa in komande čet (str. 327–333).',
     '9-srpska':
@@ -677,6 +683,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '4-pomorski-sektor':
+      'Попис на борците на IV ПОС 1943–1945, што го составија Секцијата на борците на секторот и авторот (4.702 имиња, со местото од каде е кој), и загинатите и умрените борци на секторот, со должноста и како загинале (стр. 418–478).',
+    'novosadski-odred':
+      'Попис на припадниците на Новосадскиот партизански одред во 1941 и 1944 година: име, должност, од каде е кој и од кога (стр. 85–92).',
+    'deveta':
+      'Список на борците на IX. СНОБ Кочевска: име, година и место на раѓање, а за загинатите година и место на смртта (стр. 425–446).',
     '4-prekomorska':
       'Список на загинатите и умрените борци и командниот кадар на бригадата: штаб, команда на место, баталјони, самостојна чета и команди на четите (стр. 327–333).',
     '9-srpska':
@@ -1085,6 +1097,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '4-pomorski-sektor':
+      'The roll of the 4th Naval Coastal Sector, 1943–1945, drawn up by the sector’s veterans’ section and the author (4,702 names, with where each came from), and the sector’s fallen and dead, with their duty and how they died (pp. 418–478).',
+    'novosadski-odred':
+      'The members of the Novi Sad Partisan Detachment in 1941 and in 1944: name, duty, where each came from and since when (pp. 85–92).',
+    'deveta':
+      'The roll of the 9th Slovene Brigade “Kočevska”: name, year and place of birth, and for the fallen the year and place of death (pp. 425–446).',
     '4-prekomorska':
       'The brigade’s fallen and dead, and its officers: the staff, the base command, the battalions, the independent company and the companies (pp. 327–333).',
     '9-srpska':
