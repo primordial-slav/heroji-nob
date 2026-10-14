@@ -462,6 +462,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz prilog knjige o Selcah pri Crikvenici v vojni: seznam borcev iz Selc, padlih v NOB, z dolžnostjo, enoto, rojstvom in smrtjo, ter prvoborci in nosilci Partizanske spomenice 1941. Seznam organiziranih udeležencev NOB (le imena, s članicami AFŽ in odborniki) in seznami žrtev niso vneseni. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'susak-rijeka-spomenica':
       'Iz prilog knjige o Sušaku in Reki v NOB: nosilci Partizanske spomenice 1941 z območja občine Reka, ime in kraj, kot jih je sestavil občinski odbor ZZB. Seznama članov KPJ in SKOJ iz leta 1941, padlih v NOB, nista vnesena, ker ne povesta, kdo je bil borec. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'zene-vi-korpus-poginule':
+      'Iz zbornika dokumentov o ženah Hrvaške v NOB (dokument 427): seznam padlih tovarišic borcev in voditeljic v enotah VI. korpusa NOVJ, ki ga je štab korpusa sestavil 23. decembra 1944, z dolžnostjo in enoto, letom in krajem rojstva ter tem, kdaj in v katerem boju je padla. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -925,6 +927,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од прилозите на книгата за Селце кај Цриквеница во војната: списокот на борците од Селце загинати во НОБ, со должноста, единицата, раѓањето и загинувањето, и првоборците и носителите на Партизанската споменица 1941. Списокот на организираните учесници во НОБ (само имиња, со членките на АФЖ и одборниците) и списоците на жртвите не се внесени. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'susak-rijeka-spomenica':
       'Од прилозите на книгата за Сушак и Риека во НОБ: носителите на Партизанската споменица 1941 од подрачјето на општина Риека, име и место, како ги составил општинскиот одбор на СУБНОР. Списоците на членовите на КПЈ и СКОЈ од 1941 загинати во НОБ не се внесени, бидејќи не кажуваат кој бил борец. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'zene-vi-korpus-poginule':
+      'Од зборникот документи за жените на Хрватска во НОБ (документ 427): пописот на загинатите другарки борци и раководителки во единиците на VI корпус на НОВЈ, што штабот на корпусот го составил на 23 декември 1944, со должноста и единицата, годината и местото на раѓање и кога и во која борба загинала. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1387,6 +1391,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From the appendices of a book on Selce near Crikvenica in the war: the fighters of Selce who fell, with duty, unit, birth and death, and the first fighters and holders of the Partisan Commemorative Medal of 1941. The list of organized participants (names only, with the AFŽ women and committee members) and the lists of victims were not entered. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'susak-rijeka-spomenica':
       'From the appendices of a book on Sušak and Rijeka in the war: the holders of the Partisan Commemorative Medal of 1941 from the Rijeka municipality, name and place, as the veterans’ board compiled them. The lists of the KPJ and SKOJ members of 1941 who fell were not entered, since they do not say who was a fighter. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'zene-vi-korpus-poginule':
+      'From a collection of documents on the women of Croatia in the war (document 427): the VI Corps staff’s list of its women fighters and officers who fell, drawn up on 23 December 1944, with duty and unit, year and place of birth, and when and in which fight each fell. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

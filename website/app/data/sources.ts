@@ -1919,6 +1919,15 @@ export const sources: PdfSource[] = [
     description: 'Iz priloga knjige o Sušaku i Rijeci u NOB: nosioci Partizanske spomenice 1941. s područja opštine Rijeka, ime i mesto, kako ih je sastavio opštinski odbor SUBNOR-a. Spiskovi članova KPJ i SKOJ-a iz 1941. poginulih u NOB nisu uneti, jer ne kažu ko je bio borac. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'zene-vi-korpus-poginule',
+    title: 'Žene Hrvatske u narodnooslobodilačkoj borbi — poginule drugarice borci VI. korpusa',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/zene-vi-korpus-poginule.pdf',
+    thumbnail: '/images/pdf-thumbs/zene-vi-korpus-poginule.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika dokumenata o ženama Hrvatske u NOB (dokument 427): popis poginulih drugarica boraca i rukovodilaca u jedinicama VI. korpusa NOVJ, koji je štab korpusa sastavio 23. decembra 1944, s dužnošću i jedinicom, godinom i mestom rođenja i time kada je i u kojoj borbi poginula. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
