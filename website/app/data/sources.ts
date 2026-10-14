@@ -1784,6 +1784,24 @@ export const sources: PdfSource[] = [
     description: 'Spomen-knjiga opštine Tuzla: biografije njenih učesnika NOR-a koji su poginuli 1941–1945 (str. 13–300), rođenih, nastanjenih ili zaposlenih u Tuzli ili onih koji su iz nje otišli u partizane, često s fotografijom, s jedinicom, rođenjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Drugi deo knjige, žrtve fašističkog terora, nije unet.'
   },
   {
+    id: 'jajce-1941-poginuli',
+    title: 'Jajačko područje u oslobodilačkom ratu i revoluciji 1941–1945, knj. I',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/jajce-1941-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/jajce-1941-poginuli.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika sećanja o jajačkom kraju (knj. I): spisak boraca s jajačkog područja poginulih 1941. godine, s rođenjem, jedinicom i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'jajce-1942-poginuli',
+    title: 'Jajačko područje u oslobodilačkom ratu i revoluciji 1941–1945, knj. II',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/jajce-1942-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/jajce-1942-poginuli.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika sećanja o jajačkom kraju (knj. II): spisak boraca i aktivista NOP-a s jajačkog područja poginulih 1942. godine, s rođenjem, jedinicom i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
@@ -1890,6 +1908,33 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/4-pomorski-sektor.jpg',
     brigadeName: 'IV pomorski obalni sektor',
     description: 'Popis boraca IV POS-a 1943–1945, koji su sastavili Sekcija boraca sektora i autor (4.702 imena, sa mestom odakle je ko), i poginuli i umrli borci sektora, sa dužnošću i kako su pali (str. 418–478).'
+  },
+  {
+    id: 'kokrski-odred-1',
+    title: 'Kokrški odred - narodnoosvobodilni boj pod Karavankami I',
+    author: 'Ivan Jan',
+    pdfPath: '/pdfs/kokrski-odred-1.pdf',
+    thumbnail: '/images/pdf-thumbs/kokrski-odred.jpg',
+    brigadeName: 'Kokrški odred',
+    description: 'Spisak boraca Kokrškog odreda prvog sastava, jun 1942 - januar 1943, po štabu, bataljonima i četama: odakle je ko, dužnosti i šta je s kim bilo (str. 509–525).'
+  },
+  {
+    id: 'kokrski-odred',
+    title: 'Kokrški odred - narodnoosvobodilni boj pod Karavankami III',
+    author: 'Ivan Jan',
+    pdfPath: '/pdfs/kokrski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/kokrski-odred.jpg',
+    brigadeName: 'Kokrški odred',
+    description: 'Spisak boraca Drugog kokrškog odreda, autorova rekonstrukcija po spiskovima i dokumentima odreda: štabovi, obaveštajni centar i tačke, kurirske stanice, sanitet, radionice i bataljoni po četama i periodima, s godinom rođenja i ko je pao (str. 453–478).'
+  },
+  {
+    id: 'cankarjev-bataljon',
+    title: 'Cankarjev bataljon in dražgoška bitka',
+    author: 'Ivan Jan',
+    pdfPath: '/pdfs/cankarjev-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/cankarjev-bataljon.jpg',
+    brigadeName: 'Cankarjev bataljon',
+    description: 'Formacija bataljona u Dražgošama, španski borci i narodni heroji, poginuli cankarjevci po bitkama 1941–1942, preživeli nosioci Spomenice 1941. i ostali preživeli učesnici dražgoške bitke (str. 338–346).'
   },
   {
     id: 'novosadski-odred',

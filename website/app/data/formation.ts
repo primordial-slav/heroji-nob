@@ -37,6 +37,14 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-30', place: 'Hvar', source: 'https://znaci.org/00003/652.pdf',
     note: 'Pribilović, Četvrti pomorski obalni sektor Mornarice NOVJ: „Štab IV pomorskog obalnog sektora uspostavljen je, odnosno počeo je djelovati 30. oktobra 1943. u Hvaru“; do nove podele obale 10. novembra 1943. zvao se III POS (Prilog IX, str. 484).',
   },
+  'kokrski-odred': {
+    date: '1942-06-18', place: 'Kališče pod Storžičem', source: 'https://znaci.org/00003/1046.pdf',
+    note: 'Jan, Kokrški odred I, str. 234: „Odlok o ustanovitvi Kokrškega odreda je bil torej dokončno realiziran 18. junija 1942 na Kališču“; drugi Kokrški odred „je bil sestavljen 27. avgusta 1944. leta, in sicer v Dragi pri Begunjah“ (II, str. 146).',
+  },
+  'cankarjev-bataljon': {
+    date: '1941-08-05', place: 'Vodiška planina (Jelovica)', source: 'https://znaci.org/00003/1080.pdf',
+    note: 'Jan, Cankarjev bataljon in dražgoška bitka, str. 11 i 16: bataljon je „ustanovljen sredi vročega poletja: 5. avgusta 1941“, na Vodiški planini iz Jeseniške in Jelovške čete.',
+  },
   'novosadski-odred': {
     date: '1944-08-28', place: 'Palenkašev salaš kod Bačkog Petrovca', source: 'https://znaci.org/00003/2851.pdf',
     note: 'Sanader, Novosadski partizanski odred - dva puta rođen, str. 10 i 56-57: odred iz 1941. ponovo je „formiran u avgustu 1944. godine na Palenkašovom salašu kod Bačkog Petrovca“, po naredbi broj 3 štaba Bačkobaranjske operativne zone od 28. avgusta 1944.',

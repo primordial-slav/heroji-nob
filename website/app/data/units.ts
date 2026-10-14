@@ -1491,13 +1491,33 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/novosadski-odred.pdf']
   },
   {
+    id: 'cankarjev-bataljon',
+    name: 'Cankarjev bataljon',
+    nameEn: 'Cankar Battalion',
+    description: 'Formiran 5. avgusta 1941. na Vodiškoj planini na Jelovici; u januaru 1942. bitka za Dražgoše. Poginuli borci bataljona i preživeli učesnici dražgoške bitke.',
+    image: '/images/pdf-thumbs/cankarjev-bataljon.jpg',
+    soldierCount: 218,
+    dataFile: '/cankarjev-bataljon-soldiers.json',
+    pdfFiles: ['/pdfs/cankarjev-bataljon.pdf']
+  },
+  {
+    id: 'kokrski-odred',
+    name: 'Kokrški odred',
+    nameEn: 'Kokra Detachment',
+    description: 'Formiran 18. juna 1942. na Kališču pod Storžičem, a drugi put 27. avgusta 1944. u Dragi kod Begunja. Borci prvog odreda s biografijama i spisak drugog po štabovima, službama i četama.',
+    image: '/images/kokrski-odred.jpg',
+    soldierCount: 1366,
+    dataFile: '/kokrski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/kokrski-odred.pdf', '/pdfs/kokrski-odred-1.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 19265,
+    soldierCount: 19506,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1508,7 +1528,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Slovenia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Slovenije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-slo.jpg',
-    soldierCount: 15642,
+    soldierCount: 15579,
     dataFile: '/ostali-borci-slovenija.json',
     pdfFiles: []
   },
@@ -1530,7 +1550,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Bosnia and Herzegovina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Bosne i Hercegovine, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-bih.jpg',
-    soldierCount: 32689,
+    soldierCount: 32661,
     dataFile: '/ostali-borci-bih.json',
     pdfFiles: []
   },

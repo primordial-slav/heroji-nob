@@ -270,6 +270,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '4-pomorski-sektor':
       'Seznam borcev IV. POS 1943–1945, ki so ga sestavili Sekcija borcev sektorja in avtor (4.702 imeni, s krajem, od koder je kdo), ter padli in umrli borci sektorja z dolžnostjo in okoliščinami smrti (str. 418–478).',
+    'kokrski-odred-1':
+      'Seznam borcev Kokrškega odreda prve sestave, junij 1942 - januar 1943, po štabu, bataljonih in četah: od kod je kdo, dolžnosti in kaj se je s kom zgodilo (str. 509–525).',
+    'kokrski-odred':
+      'Spisek borcev Drugega kokrškega odreda, avtorjeva rekonstrukcija po spiskih in dokumentih odreda: štabi, obveščevalni center in točke, kurirske postaje, sanitetne ustanove, delavnice in bataljoni po četah in obdobjih, z letnico rojstva in kdo je padel (str. 453–478).',
+    'cankarjev-bataljon':
+      'Formacija bataljona v Dražgošah, španski borci in narodni heroji, padli cankarjevci po bojih 1941–1942, preživeli nosilci spomenice 1941 in ostali preživeli udeleženci dražgoške bitke (str. 338–346).',
     'novosadski-odred':
       'Seznam pripadnikov Novosadskega partizanskega odreda v letih 1941 in 1944: ime, dolžnost, od kod je kdo in od kdaj (str. 85–92).',
     'deveta':
@@ -424,6 +430,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Kronika kordunske vasi, ki jo je izdal Zgodovinski arhiv v Karlovcu, z dvema njenima seznamoma: padli in umrli borci 1941–1945 iz Donjega, Gornjega in Lasinjskega Sjeničaka (str. 330–338), po vaseh, z rojstvom, potjo v NOB in smrtjo, ter nosilci Partizanske spomenice 1941 (str. 385–389). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom in prehladom iz iste knjige nismo vnesli.',
     'tuzla-spomen-knjiga':
       'Spominska knjiga občine Tuzla: življenjepisi njenih udeležencev NOB, ki so padli v letih 1941–1945 (str. 13–300), rojenih, živečih ali zaposlenih v Tuzli ali takih, ki so od tam odšli v partizane, pogosto s fotografijo, z enoto, rojstvom in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Drugega dela knjige, žrtev fašističnega terorja, nismo vnesli.',
+    'jajce-1941-poginuli':
+      'Iz zbornika spominov o jajškem območju (knj. I): seznam borcev z jajškega območja, padlih leta 1941, z rojstvom, enoto in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'jajce-1942-poginuli':
+      'Iz zbornika spominov o jajškem območju (knj. II): seznam borcev in aktivistov NOG z jajškega območja, padlih leta 1942, z rojstvom, enoto in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -695,6 +705,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '4-pomorski-sektor':
       'Попис на борците на IV ПОС 1943–1945, што го составија Секцијата на борците на секторот и авторот (4.702 имиња, со местото од каде е кој), и загинатите и умрените борци на секторот, со должноста и како загинале (стр. 418–478).',
+    'kokrski-odred-1':
+      'Списокот на борците на Кокршкиот одред од првиот состав, јуни 1942 - јануари 1943, по штабот, баталјоните и четите: од каде е кој, должностите и што се случило со секого (стр. 509–525).',
+    'kokrski-odred':
+      'Списокот на борците на Вториот кокршки одред, авторова реконструкција според списоците и документите на одредот: штабовите, разузнавачкиот центар и точки, куририските станици, санитетот, работилниците и баталјоните по чети и периоди, со годината на раѓање и кој загинал (стр. 453–478).',
+    'cankarjev-bataljon':
+      'Формацијата на баталјонот во Драгоше, шпанските борци и народните херои, загинатите борци по битките 1941–1942, преживеаните носители на Споменицата 1941 и другите преживеани учесници во битката за Драгоше (стр. 338–346).',
     'novosadski-odred':
       'Попис на припадниците на Новосадскиот партизански одред во 1941 и 1944 година: име, должност, од каде е кој и од кога (стр. 85–92).',
     'deveta':
@@ -849,6 +865,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Хроника на едно кордунско село, издадена од Историскиот архив во Карловац, со два нејзини списока: паднатите и умрените борци 1941–1945 од Долни, Горни и Ласињски Сјеничак (стр. 330–338), по села, со раѓање, пат во НОБ и смрт, и носителите на Партизанската споменица 1941 (стр. 385–389). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус и настинка од истата книга не се внесени.',
     'tuzla-spomen-knjiga':
       'Спомен-книга на општина Тузла: биографии на нејзините учесници во НОБ што загинале во 1941–1945 (стр. 13–300), родени, живееле или работеле во Тузла или од неа тргнале во партизаните, често со фотографија, со единицата, раѓањето и смртта. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Вториот дел на книгата, жртвите на фашистичкиот терор, не е внесен.',
+    'jajce-1941-poginuli':
+      'Од зборникот спомени за јајачкиот крај (кн. I): списокот на борците од јајачкото подрачје загинати во 1941 година, со раѓање, единица и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'jajce-1942-poginuli':
+      'Од зборникот спомени за јајачкиот крај (кн. II): списокот на борците и активистите на НОД од јајачкото подрачје загинати во 1942 година, со раѓање, единица и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1119,6 +1139,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '4-pomorski-sektor':
       'The roll of the 4th Naval Coastal Sector, 1943–1945, drawn up by the sector’s veterans’ section and the author (4,702 names, with where each came from), and the sector’s fallen and dead, with their duty and how they died (pp. 418–478).',
+    'kokrski-odred-1':
+      'The roll of the first Kokra Detachment, June 1942 - January 1943, by staff, battalion and company: where each came from, their duties and what became of them (pp. 509–525).',
+    'kokrski-odred':
+      'The roll of the second Kokra Detachment, the author’s reconstruction from the detachment’s own lists and papers: the staffs, intelligence centre and posts, courier stations, medical staff, workshops and the battalions by company and period, with years of birth and who fell (pp. 453–478).',
+    'cankarjev-bataljon':
+      'The battalion’s order of battle at Dražgoše, its Spanish Civil War veterans and narodni heroji, its fallen battle by battle, 1941–1942, the surviving holders of the Partisan Commemorative Medal 1941 and the other survivors of Dražgoše (pp. 338–346).',
     'novosadski-odred':
       'The members of the Novi Sad Partisan Detachment in 1941 and in 1944: name, duty, where each came from and since when (pp. 85–92).',
     'deveta':
@@ -1273,6 +1299,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The chronicle of a Kordun village, published by the Karlovac Historical Archive, with two of its lists: the fighters from Donji, Gornji and Lasinjski Sjeničak who fell or died in 1941–1945 (pp. 330–338), by village, with birth, the way into the war and death, and the holders of the Partisan Commemorative Medal 1941 (pp. 385–389). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus and cold were left out.',
     'tuzla-spomen-knjiga':
       'The memorial book of the municipality of Tuzla: biographies of its partisans who fell in 1941–1945 (pp. 13–300), born, living or working in Tuzla or joining the army from there, often with a photograph, with unit, birth and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The book’s second part, the victims of fascist terror, was left out.',
+    'jajce-1941-poginuli':
+      'From the collection of memoirs on the Jajce area (vol. I): the fighters from the Jajce area who fell in 1941, with birth, unit and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'jajce-1942-poginuli':
+      'From the collection of memoirs on the Jajce area (vol. II): the fighters and activists of the liberation movement from the Jajce area who fell in 1942, with birth, unit and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

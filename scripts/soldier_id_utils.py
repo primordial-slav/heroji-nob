@@ -158,6 +158,8 @@ BRIGADE_CODES = {
     167: 'Deveta (IX. SNOUB)',
     168: 'IV pomorski obalni sektor',
     169: 'Novosadski odred',
+    170: 'Cankarjev bataljon',
+    171: 'Kokrški odred',
     # Add new brigades here with next available code
 }
 
