@@ -37,7 +37,7 @@ const PARAM = {
   query: 'q', year: 'godina', range: 'raspon', place: 'mesto', unit: 'jedinica', fate: 'sudbina', wholeWords: 'cele',
 } as const
 
-const birthYear = (year: string) => (/^\d{4}$/.test(year.trim()) ? Number(year.trim()) : null)
+export const birthYear = (year: string) => (/^\d{4}$/.test(year.trim()) ? Number(year.trim()) : null)
 
 /** Filters that narrow the list by themselves; whole words only changes how the query matches */
 export function narrows(filters: SearchFilters, withUnit = true): boolean {
@@ -52,7 +52,8 @@ export function filterCount(filters: SearchFilters, withUnit = true): number {
 
 // " gracac sumarina donji lapac ": an entry's words, normalized, between spaces
 const entryText = new WeakMap<Soldier, string>()
-function entryWords(soldier: Soldier): string {
+/** What the place filter looks in (the server keeps it for every soldier, lib/searchData.ts) */
+export function entryWords(soldier: Soldier): string {
   let text = entryText.get(soldier)
   if (text === undefined) {
     const parts = [soldier.additional_info, soldier.death_place, ...(soldier.other_sources ?? []).map((o) => o.additional_info)]
@@ -63,7 +64,11 @@ function entryWords(soldier: Soldier): string {
 }
 
 const words = (text: string) => normalizeForSearch(text).toLowerCase().replace(/[^a-z0-9À-ɏ]+/g, ' ').trim()
+/** A place as the filter looks for it in entryWords: " gracac" */
+export const placeNeedle = (place: string) => (words(place) ? ` ${words(place)}` : '')
 
+// The search server applies the same rules from arrays it builds (lib/searchData.ts, filterTest), without reading the
+// soldiers: a change here goes there too
 export function applyFilters(list: Soldier[], filters: SearchFilters, withUnit = true): Soldier[] {
   const year = birthYear(filters.year)
   const unitName = withUnit && filters.unit ? units.find((u) => u.id === filters.unit)?.name : undefined
