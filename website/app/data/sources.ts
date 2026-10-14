@@ -1883,6 +1883,87 @@ export const sources: PdfSource[] = [
     description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su samo partizanski borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu NOVJ. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'iskra-in-plamen-padli',
+    title: 'Iskra in plamen 3',
+    author: 'Marjan Moškrič (ur.)',
+    pdfPath: '/pdfs/iskra-in-plamen-padli.pdf',
+    thumbnail: '/images/pdf-thumbs/iskra-in-plamen-padli.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika o NOB u selima nekadašnje opštine Polje kod Ljubljane: „Svoja življenja so dali za svobodo”, umrli iz tih sela po selima, s godinama rođenja i smrti i mestom pogibije. Uneti su samo pali u NOV; umrli u internaciji i zatvorima, taoci i ostale žrtve nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'cazinska-krajina-pali-borci',
+    title: 'Stradanja u Cazinskoj krajini i antifašistička borba (1941–1945)',
+    author: 'Dušan D. Miljković',
+    pdfPath: '/pdfs/cazinska-krajina-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/cazinska-krajina-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Spisak palih boraca Cazinske krajine, po opštinama (Bihać, Bosanska Krupa, Cazin, Velika Kladuša) i selima, s imenom oca i godinama rođenja i pogibije. Spisak srpskih civilnih žrtava iz iste knjige nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'derventa-pali-borci',
+    title: 'Radnički pokret i NOR Dervente – dokumenti i sjećanja',
+    author: 'Midhat Dizdarević',
+    pdfPath: '/pdfs/derventa-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/derventa-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Spisak palih boraca narodnooslobodilačkog rata s područja opštine Derventa, s rođenjem, jedinicom i mestom pogibije. Spisak žrtava fašističkog terora iz iste knjige nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'sanski-most-borci',
+    title: 'Srez Sanski Most u NOB 1941–1945. godine, knj. III',
+    author: 'Branko J. Bokan',
+    pdfPath: '/pdfs/sanski-most-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/sanski-most-borci.jpg',
+    brigadeName: '',
+    description: 'Spiskovi boraca sanskog sreza po naseljima: poginuli u NOB, nosioci Partizanske spomenice 1941. i borci NOB živi 15. maja 1945, s rođenjem, zanimanjem, stupanjem u NOB i dužnošću. Iz trećeg spiska uneti su samo borci (borac, vojna dužnost ili čin, jedinica); odbornici, članovi SKOJ-a i AFŽ-a bez vojne dužnosti i žrtve fašističkog terora nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'rat-i-djeca-kozare',
+    title: 'Rat i djeca Kozare — pali kao borci narodnooslobodilačkog rata',
+    author: 'Dragoje Lukić',
+    pdfPath: 'https://znaci.org/00001/106_8.htm',
+    thumbnail: '/images/pdf-thumbs/rat-i-djeca-kozare.jpg',
+    brigadeName: '',
+    description: 'Iz knjige o deci Kozare u ratu, poglavlje „Pali kao borci narodnooslobodilačkog rata”: 370 kozarskih dečaka i devojčica mlađih od 15 godina koji su poginuli kao borci, po opštinama, s mestom i godinama rođenja i pogibije (tekst na znaci.org, bez skenirane knjige). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'krizani-v-boju-za-svobodo',
+    title: 'Križani v boju za svobodo / S. Croce nella lotta per la libertà',
+    author: 'Skupina avtorjev',
+    pdfPath: '/pdfs/krizani-v-boju-za-svobodo.pdf',
+    thumbnail: '/images/pdf-thumbs/krizani-v-boju-za-svobodo.jpg',
+    brigadeName: '',
+    description: 'Knjiga o ljudima sela Križ kod Trsta u ratu: životopisi palih (uneti su samo oni koji su bili u partizanima ili u vojsci), i tabele Križana u NOVJ i boraca NOV koji su živeli u Križu, s ocem, rođenjem, stupanjem u NOV, činom i jedinicom. Dobrovoljci u Španiji, Križani u italijanskim jedinicama i deportirci nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'vinodolska-selca',
+    title: 'Vinodolska Selca u borbi',
+    author: 'Vinko Antić',
+    pdfPath: '/pdfs/vinodolska-selca.pdf',
+    thumbnail: '/images/pdf-thumbs/vinodolska-selca.jpg',
+    brigadeName: '',
+    description: 'Iz priloga knjige o Selcima kod Crikvenice u ratu: spisak boraca iz Selaca poginulih u NOB, s dužnošću, jedinicom, rođenjem i pogibijom, i prvoborci i nosioci Partizanske spomenice 1941. Spisak organizovanih učesnika NOB (samo imena, s članicama AFŽ-a i odbornicima) i spiskovi žrtava nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'susak-rijeka-spomenica',
+    title: 'Sušak i Rijeka u NOB — nosioci Partizanske spomenice 1941',
+    author: 'Radule Butorović',
+    pdfPath: '/pdfs/susak-rijeka-spomenica.pdf',
+    thumbnail: '/images/pdf-thumbs/susak-rijeka-spomenica.jpg',
+    brigadeName: '',
+    description: 'Iz priloga knjige o Sušaku i Rijeci u NOB: nosioci Partizanske spomenice 1941. s područja opštine Rijeka, ime i mesto, kako ih je sastavio opštinski odbor SUBNOR-a. Spiskovi članova KPJ i SKOJ-a iz 1941. poginulih u NOB nisu uneti, jer ne kažu ko je bio borac. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'zene-vi-korpus-poginule',
+    title: 'Žene Hrvatske u narodnooslobodilačkoj borbi — poginule drugarice borci VI. korpusa',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/zene-vi-korpus-poginule.pdf',
+    thumbnail: '/images/pdf-thumbs/zene-vi-korpus-poginule.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika dokumenata o ženama Hrvatske u NOB (dokument 427): popis poginulih drugarica boraca i rukovodilaca u jedinicama VI. korpusa NOVJ, koji je štab korpusa sastavio 23. decembra 1944, s dužnošću i jedinicom, godinom i mestom rođenja i time kada je i u kojoj borbi poginula. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

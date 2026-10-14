@@ -73,8 +73,9 @@ POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima'}
 # user decided, on 2026-10-14, that every man it names counts as a partisan)
 REFERENCE_ONLY: set = set()
 # books printed as a table of columns, whose columns are the record's fields (as the census's are); every man of the
-# Spomenica counts as a partisan who fell (the user's decision), so his death is "poginuo"
-COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima'}
+# Spomenica counts as a partisan who fell (the user's decision), so his death is "poginuo"; and lists of the fallen
+# whose entries give only the years ("1905/44" in the Cazin region's, "1920-1942" in Iskra in plamen's)
+COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli'}
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
