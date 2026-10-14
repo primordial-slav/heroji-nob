@@ -154,7 +154,7 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 | 4. prekomorska | Pervanje, Hočevar 1969 | Padli in umrli (327), leaders (329 of 365) | [bk=783](https://znaci.org/00003/7xx.php?bk=783) |
 | 5. prekomorska | Šmit, Bordon, Klun 1969 | Padli (279), leaders (297 of 342) | [bk=816](https://znaci.org/00003/7xx.php?bk=816) |
 | Artileristi prekomorci | Karel Levičnik 1968 | Padli (218), leaders (222 of 253): **done**, a book across units, `parse_artileristi_prekomorci.py` | [bk=778](https://znaci.org/00003/7xx.php?bk=778) |
-| Letalci prekomorci | Rafael Perhauc 1968 | the squadrons’ leaders only (319 of 354; no list of the fallen, the men surely in unit 139 already): not added | [bk=786](https://znaci.org/00003/7xx.php?bk=786) |
+| Letalci prekomorci | Rafael Perhauc 1968 | the squadrons’ and the Algerian detachment’s leaders (319 of 354; no list of the fallen): **done**, a book across units, `parse_letalci_prekomorci.py`, their posts added to unit 139’s records | [bk=786](https://znaci.org/00003/7xx.php?bk=786) |
 | 1. slovenska artilerijska | Borivoj Lah 1975 | **Seznam topničarjev**, officers (389), Padli (404 of 427) | [bk=826](https://znaci.org/00003/7xx.php?bk=826) |
 | Artilerija 9. korpusa | Borivoj Lah 1985 | **Seznam borcev (316)**, Padli (324 of 353) | [bk=824](https://znaci.org/00003/7xx.php?bk=824) |
 | Deveta (Kočevska) | Velimir Kraševec 1991, 2 vols | fallen and wounded (vol. 1, ch. 24), a roster mentioned in the preface | [2849](https://znaci.org/00003/7xx.php?bk=2849), [2850](https://znaci.org/00003/7xx.php?bk=2850) |

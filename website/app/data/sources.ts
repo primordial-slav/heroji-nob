@@ -2117,6 +2117,15 @@ export const sources: PdfSource[] = [
     description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
+    id: 'letalci-prekomorci-kader',
+    title: 'Letalci prekomorci',
+    author: 'Rafael Perhauc',
+    pdfPath: '/pdfs/letalci-prekomorci-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/letalci-prekomorci-kader.jpg',
+    brigadeName: '',
+    description: 'Rukovodeći kadar 1. i 2. lovačke eskadrile NOVJ, vazduhoplovnog odreda NOVJ u Alžiru i 1. vazduhoplovnog puka (str. 322–325): čin i dužnost svakog, s danima kad je bio na njoj. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

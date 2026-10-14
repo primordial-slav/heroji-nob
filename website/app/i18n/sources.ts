@@ -506,6 +506,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Poveljniška sestava 15. divizije NOV in POS (str. 583–584): komandanti, politični komisarji, njihovi namestniki in pomočniki ter načelniki štaba, vsak s časom, ko je bil na dolžnosti. Divizije ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'jb-odred-stabi':
       'Štabi Jeseniško-bohinjskega odreda, njegovih treh bataljonov in šolskega taborišča, avgust 1944 – maj 1945 (str. 354–356): komandanti, politični komisarji, njihovi pomočniki in namestniki ter načelnik štaba, vsak s časom, ko je bil na dolžnosti. Odreda ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'letalci-prekomorci-kader':
+      'Vodilni kader 1. in 2. lovske eskadrilje NOVJ, letalskega detašmana NOVJ v Alžiriji in 1. letalskega polka (str. 322–325): čin in dolžnost vsakega, s časom, ko jo je opravljal. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -1013,6 +1015,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Командниот состав на 15. дивизија на НОВ и ПО на Словенија (стр. 583–584): командантите, политичките комесари, нивните заменици и помошници и началниците на штабот, секој со времето кога бил на должноста. Дивизијата не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'jb-odred-stabi':
       'Штабовите на Јесеничко-бохињскиот одред, на неговите три баталјони и на школскиот логор, август 1944 – мај 1945 (стр. 354–356): командантите, политичките комесари, нивните помошници и заменици и началникот на штабот, секој со времето кога бил на должноста. Одредот не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'letalci-prekomorci-kader':
+      'Раководниот кадар на 1. и 2. ловечка ескадрила на НОВЈ, на воздухопловниот одред на НОВЈ во Алжир и на 1. воздухопловен полк (стр. 322–325): чинот и должноста на секој, со времето кога ја вршел. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1519,6 +1523,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The command of the 15th Division of the Slovene partisan army (pp. 583–584): commanders, political commissars, their deputies and assistants, and the chiefs of staff, each with the dates he held the post. The division is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'jb-odred-stabi':
       'The staffs of the Jesenice-Bohinj Detachment, its three battalions and its school camp, August 1944 – May 1945 (pp. 354–356): commanders, political commissars, their assistants and deputies, and the chief of staff, each with the dates he held the post. The detachment is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'letalci-prekomorci-kader':
+      'The leading officers of the 1st and 2nd fighter squadrons of the NOVJ, of the NOVJ air detachment in Algeria and of the 1st air regiment (pp. 322–325): each man’s rank and duty, with the dates he held it. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

@@ -76,6 +76,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
                   'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post
+                  'letalci-prekomorci-kader.pdf',   # the squadrons' and detachment's leaders: the surname's word
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
                   'dalmatinci-prva-proleterska.pdf',   # Dalmatinci u Prvoj proleterskoj: two or three columns, a page each its own
