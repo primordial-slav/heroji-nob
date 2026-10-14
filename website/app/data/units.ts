@@ -1527,7 +1527,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 36771,
+    soldierCount: 43811,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1538,7 +1538,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Slovenia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Slovenije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-slo.jpg',
-    soldierCount: 15579,
+    soldierCount: 15436,
     dataFile: '/ostali-borci-slovenija.json',
     pdfFiles: []
   },
@@ -1549,7 +1549,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Croatia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Hrvatske, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-hrv.jpg',
-    soldierCount: 51025,
+    soldierCount: 50979,
     dataFile: '/ostali-borci-hrvatska.json',
     pdfFiles: []
   },
@@ -1560,7 +1560,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Bosnia and Herzegovina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Bosne i Hercegovine, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-bih.jpg',
-    soldierCount: 32643,
+    soldierCount: 31110,
     dataFile: '/ostali-borci-bih.json',
     pdfFiles: []
   },
@@ -1582,7 +1582,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Macedonia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Makedonije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-mak.jpg',
-    soldierCount: 4761,
+    soldierCount: 4760,
     dataFile: '/ostali-borci-makedonija.json',
     pdfFiles: []
   },
@@ -1593,7 +1593,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Serbia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
-    soldierCount: 32446,
+    soldierCount: 32420,
     dataFile: '/ostali-borci-srbija.json',
     pdfFiles: []
   },
@@ -1604,7 +1604,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Kosovo and Metohija',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Kosova i Metohije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-kos.jpg',
-    soldierCount: 2650,
+    soldierCount: 2646,
     dataFile: '/ostali-borci-kosovo.json',
     pdfFiles: []
   },
@@ -1615,7 +1615,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Vojvodina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Vojvodine, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-voj.jpg',
-    soldierCount: 9891,
+    soldierCount: 9861,
     dataFile: '/ostali-borci-vojvodina.json',
     pdfFiles: []
   }
