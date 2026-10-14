@@ -577,7 +577,7 @@ const sl: Record<string, UnitText> = {
   'vrhovni-stab': {
     name: 'Vrhovni štab NOV in POJ',
     description:
-      'Ustanovljen 27. junija 1941 v Beogradu kot Glavni štab partizanskih odredov Jugoslavije. Pripadniki Vrhovnega štaba, njegovih služb, Spremljevalnega bataljona in britanske vojaške misije v bitki na Sutjeski, maja in junija 1943.',
+      'Ustanovljen 27. junija 1941 v Beogradu kot Glavni štab partizanskih odredov Jugoslavije. Pripadniki Vrhovnega štaba, njegovih služb, Spremljevalnega bataljona in britanske vojaške misije v bitki na Sutjeski, maja in junija 1943, in delavci njegove vojaškotehnične delavnice v Grmeču 1942–1943.',
   },
   '1-proleterska-divizija': {
     name: '1. proletarska divizija',
@@ -1334,7 +1334,7 @@ const mk: Record<string, UnitText> = {
   'vrhovni-stab': {
     name: 'Врховен штаб на НОВ и ПОЈ',
     description:
-      'Формиран на 27 јуни 1941 во Белград, како Главен штаб на партизанските одреди на Југославија. Припадниците на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката на Сутјеска, мај и јуни 1943.',
+      'Формиран на 27 јуни 1941 во Белград, како Главен штаб на партизанските одреди на Југославија. Припадниците на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката на Сутјеска, мај и јуни 1943, и работниците на неговата воено-техничка работилница во Грмеч 1942–1943.',
   },
   '1-proleterska-divizija': {
     name: '1-ва пролетерска дивизија',
@@ -2093,7 +2093,7 @@ const en: Record<string, UnitText> = {
   'vrhovni-stab': {
     name: 'Supreme Headquarters of the NOV and POJ',
     description:
-      'Formed on 27 June 1941 in Belgrade, as the General Staff of the Partisan Detachments of Yugoslavia. Members of the Supreme Headquarters, its services, the Escort Battalion and the British military mission in the Battle of the Sutjeska, May and June 1943.',
+      'Formed on 27 June 1941 in Belgrade, as the General Staff of the Partisan Detachments of Yugoslavia. Members of the Supreme Headquarters, its services, the Escort Battalion and the British military mission in the Battle of the Sutjeska, May and June 1943, and the workers of its military workshop in Grmeč, 1942–1943.',
   },
   '1-proleterska-divizija': {
     name: '1st Proletarian Division',

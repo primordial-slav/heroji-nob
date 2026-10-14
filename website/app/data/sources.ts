@@ -1486,6 +1486,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi pripadnici Vrhovnog štaba, njegovih službi, Pratećeg bataljona i britanske vojne misije u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: 'vtr-grmec',
+    title: 'Vojnotehnička radionica Vrhovnog štaba NOV i POJ u Grmeču',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/vtr-grmec.pdf',
+    thumbnail: '/images/pdf-thumbs/vtr-grmec.jpg',
+    brigadeName: 'Vrhovni štab NOV i POJ',
+    description: 'Radnici vojnotehničke radionice Vrhovnog štaba u Grmeču 1942–1943, sa zanatom i mestom odakle su, oni koji su poginuli ili umrli u ratu i posle njega, obezbeđenje radionice i radnici drvarske livnice (str. 361–364).'
+  },
+  {
     id: 'borci-sutjeske-1-proleterska-divizija',
     title: 'Borci Sutjeske — štab divizije na Sutjesci',
     author: 'Viktor Kučan',

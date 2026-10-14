@@ -1194,11 +1194,11 @@ export const units: Unit[] = [
     id: 'vrhovni-stab',
     name: 'Vrhovni štab NOV i POJ',
     nameEn: 'Supreme Headquarters of the NOV and POJ',
-    description: 'Formiran 27. juna 1941. u Beogradu, kao Glavni štab partizanskih odreda Jugoslavije. Pripadnici Vrhovnog štaba, njegovih službi, Pratećeg bataljona i britanske vojne misije u bici na Sutjesci, maja i juna 1943.',
+    description: 'Formiran 27. juna 1941. u Beogradu, kao Glavni štab partizanskih odreda Jugoslavije. Pripadnici Vrhovnog štaba, njegovih službi, Pratećeg bataljona i britanske vojne misije u bici na Sutjesci, maja i juna 1943, i radnici njegove vojnotehničke radionice u Grmeču 1942–1943.',
     image: '/images/vrhovni-stab.jpg',
-    soldierCount: 565,
+    soldierCount: 647,
     dataFile: '/vrhovni-stab-soldiers.json',
-    pdfFiles: ['/pdfs/borci-sutjeske-vrhovni-stab.pdf']
+    pdfFiles: ['/pdfs/borci-sutjeske-vrhovni-stab.pdf', '/pdfs/vtr-grmec.pdf']
   },
   {
     id: '1-proleterska-divizija',

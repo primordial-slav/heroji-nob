@@ -256,6 +256,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev in starešin divizije od ustanovitve, 1. novembra 1944, do konca vojne, 15. maja 1945, po brigadah: 7., 8., 12. in 14. (slovaška), artilerijska, enote pri štabu; rojstvo, dolžnost, kje in kdaj so padli (str. 219–288)',
     'borci-sutjeske-vrhovni-stab':
       'Imenski seznam borcev s Sutjeske: vsi pripadniki Vrhovnega štaba, njegovih služb, Spremljevalnega bataljona in britanske vojaške misije v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
+    'vtr-grmec':
+      'Delavci vojaškotehnične delavnice Vrhovnega štaba v Grmeču 1942–1943, z obrtjo in krajem, od koder so bili, tisti, ki so padli ali umrli med vojno in po njej, straža delavnice in delavci drvarske livarne (str. 361–364).',
     'borci-sutjeske-1-proleterska-divizija':
       'Imenski seznam borcev s Sutjeske: štab divizije z njegovimi službami in spremljevalnimi enotami v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-2-proleterska-divizija':
@@ -745,6 +747,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци и старешини на дивизијата од формирањето, 1 ноември 1944, до крајот на војната, 15 мај 1945, по бригади: 7., 8., 12. и 14. (словачка), артилериска, единиците при штабот; раѓање, должност, каде и кога загинале (стр. 219–288)',
     'borci-sutjeske-vrhovni-stab':
       'Поименичен список на борците од Сутјеска: сите припадници на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката, со податоци за секого и што било со него до крајот на војната.',
+    'vtr-grmec':
+      'Работниците на воено-техничката работилница на Врховниот штаб во Грмеч 1942–1943, со занаетот и местото од каде што биле, оние што загинале или умреле во војната и по неа, обезбедувањето на работилницата и работниците на дрварската леарница (стр. 361–364).',
     'borci-sutjeske-1-proleterska-divizija':
       'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-2-proleterska-divizija':
@@ -1233,6 +1237,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters and officers of the division who fell from its formation, 1 November 1944, to the end of the war, 15 May 1945, by brigade: the 7th, 8th, 12th and 14th (Slovak), the artillery brigade and the staff units; birth, duty, where and when they fell (pp. 219–288)',
     'borci-sutjeske-vrhovni-stab':
       'The roll of the Sutjeska: every member of the Supreme Headquarters, its services, the Escort Battalion and the British military mission in the battle, with details of each and what became of them by the end of the war.',
+    'vtr-grmec':
+      'The workers of the Supreme Headquarters’ military workshop in Grmeč, 1942–1943, with their trade and home town, those who fell or died during the war and after it, the workshop’s guards and the workers of the Drvar foundry (pp. 361–364).',
     'borci-sutjeske-1-proleterska-divizija':
       'The roll of the Sutjeska: the division staff, its services and escort units in the battle, with details of each and what became of them by the end of the war.',
     'borci-sutjeske-2-proleterska-divizija':
