@@ -270,6 +270,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '4-pomorski-sektor':
       'Seznam borcev IV. POS 1943–1945, ki so ga sestavili Sekcija borcev sektorja in avtor (4.702 imeni, s krajem, od koder je kdo), ter padli in umrli borci sektorja z dolžnostjo in okoliščinami smrti (str. 418–478).',
+    'kokrski-odred':
+      'Spisek borcev Drugega kokrškega odreda, avtorjeva rekonstrukcija po spiskih in dokumentih odreda: štabi, obveščevalni center in točke, kurirske postaje, sanitetne ustanove, delavnice in bataljoni po četah in obdobjih, z letnico rojstva in kdo je padel (str. 453–478).',
     'cankarjev-bataljon':
       'Formacija bataljona v Dražgošah, španski borci in narodni heroji, padli cankarjevci po bojih 1941–1942, preživeli nosilci spomenice 1941 in ostali preživeli udeleženci dražgoške bitke (str. 338–346).',
     'novosadski-odred':
@@ -693,6 +695,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '4-pomorski-sektor':
       'Попис на борците на IV ПОС 1943–1945, што го составија Секцијата на борците на секторот и авторот (4.702 имиња, со местото од каде е кој), и загинатите и умрените борци на секторот, со должноста и како загинале (стр. 418–478).',
+    'kokrski-odred':
+      'Списокот на борците на Вториот кокршки одред, авторова реконструкција според списоците и документите на одредот: штабовите, разузнавачкиот центар и точки, куририските станици, санитетот, работилниците и баталјоните по чети и периоди, со годината на раѓање и кој загинал (стр. 453–478).',
     'cankarjev-bataljon':
       'Формацијата на баталјонот во Драгоше, шпанските борци и народните херои, загинатите борци по битките 1941–1942, преживеаните носители на Споменицата 1941 и другите преживеани учесници во битката за Драгоше (стр. 338–346).',
     'novosadski-odred':
@@ -1115,6 +1119,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '4-pomorski-sektor':
       'The roll of the 4th Naval Coastal Sector, 1943–1945, drawn up by the sector’s veterans’ section and the author (4,702 names, with where each came from), and the sector’s fallen and dead, with their duty and how they died (pp. 418–478).',
+    'kokrski-odred':
+      'The roll of the second Kokra Detachment, the author’s reconstruction from the detachment’s own lists and papers: the staffs, intelligence centre and posts, courier stations, medical staff, workshops and the battalions by company and period, with years of birth and who fell (pp. 453–478).',
     'cankarjev-bataljon':
       'The battalion’s order of battle at Dražgoše, its Spanish Civil War veterans and narodni heroji, its fallen battle by battle, 1941–1942, the surviving holders of the Partisan Commemorative Medal 1941 and the other survivors of Dražgoše (pp. 338–346).',
     'novosadski-odred':

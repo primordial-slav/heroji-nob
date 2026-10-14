@@ -37,6 +37,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-30', place: 'Hvar', source: 'https://znaci.org/00003/652.pdf',
     note: 'Pribilović, Četvrti pomorski obalni sektor Mornarice NOVJ: „Štab IV pomorskog obalnog sektora uspostavljen je, odnosno počeo je djelovati 30. oktobra 1943. u Hvaru“; do nove podele obale 10. novembra 1943. zvao se III POS (Prilog IX, str. 484).',
   },
+  'kokrski-odred': {
+    date: '1944-08-27', place: 'Draga pri Begunjah', source: 'https://znaci.org/00003/1051.pdf',
+    note: 'Jan, Kokrški odred II, str. 146: „Novi Kokrški odred je bil sestavljen 27. avgusta 1944. leta, in sicer v Dragi pri Begunjah“.',
+  },
   'cankarjev-bataljon': {
     date: '1941-08-05', place: 'Vodiška planina (Jelovica)', source: 'https://znaci.org/00003/1080.pdf',
     note: 'Jan, Cankarjev bataljon in dražgoška bitka, str. 11 i 16: bataljon je „ustanovljen sredi vročega poletja: 5. avgusta 1941“, na Vodiški planini iz Jeseniške in Jelovške čete.',

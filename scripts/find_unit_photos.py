@@ -555,6 +555,10 @@ UNITS = {
         name="Cankarjev bataljon", tags=[],
         caption=r"cankarjev\w*\s+bataljon|dražgo\w*", photo=None,
         note="Nothing in the gallery names the battalion, and its book on znaci.org (00003/1080) has no captioned group photo. The card shows the list of its fallen."),
+    "kokrski-odred": dict(
+        name="Kokrški odred", tags=[],
+        caption=r"kokršk\w*\s+odred", photo=None,
+        note="Nothing in the gallery names the odred; its book on znaci.org (00003/1046-1052) prints its photos inside whole-page scans. The card shows the roster's first page."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,
