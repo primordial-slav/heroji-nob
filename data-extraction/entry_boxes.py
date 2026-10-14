@@ -108,6 +108,9 @@ TWO_COLUMN = {
     'hak-13-gracac.pdf',                    # Gračac (Karlovac knj. 13): the fallen
     'hak-7-plascanska-dolina.pdf',          # Plaščanska dolina (Karlovac knj. 7): the fallen
     'bitka-kod-oborova-poginuli.pdf',       # Bitka kod Oborova: the names in two columns
+    'moste-polje-spomenica-1941.pdf',       # Moste-Polje: the spomenica holders, each entry hanging
+    'vis-spomenica-1941.pdf',               # Vis: the spomenica holders, a name a line
+    'jevreji-jugoslavije-ucesnici-nor.pdf', # Romano, Jevreji Jugoslavije: the participants, each entry hanging
     '13-proleterska-spisak.pdf',
     '7-krajiska-spisak.pdf',
     '11-dalmatinska.pdf',
@@ -184,7 +187,7 @@ TWO_COLUMN_PAGES = {
 # two-column books whose right column sets its entry numbers in the gutter, left of the column's text
 NUMBERS_IN_GUTTER = {'hak-20-gospic-perusic.pdf'}
 # pages whose gutter the words don't show (a title across it): the split's x
-GUTTER = {('hak-20-gospic-perusic.pdf', 1): 188.0}
+GUTTER = {('hak-20-gospic-perusic.pdf', 1): 188.0, ('moste-polje-spomenica-1941.pdf', 1): 225.0}
 
 
 def page_columns(pdf_file: str, page: int | None = None) -> int:
@@ -409,6 +412,7 @@ ONE_LINE_ENTRIES = {
     '1-konjicka.pdf': range(5, 12),              # 1. konjička: the war roster, names only
     '13-hercegovacka.pdf': range(15, 33),              # 13. hercegovačka: the roster of names
     'hak-20-gospic-perusic.pdf': range(61, 77),  # Gospić i Perušić: the spomenica holders, a line each
+    'vis-spomenica-1941.pdf': range(1, 2),       # Vis: the spomenica holders, a name a line
 }
 
 

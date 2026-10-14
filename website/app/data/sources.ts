@@ -1820,6 +1820,42 @@ export const sources: PdfSource[] = [
     description: 'Spisak crnogorskih antifašista poginulih i umrlih 1941–1945, po opštinama, u tabeli: ime, ime oca, godina i mesto rođenja, godina smrti i mesto pogibije. Svi koje knjiga navodi vode se kao partizani: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, a ostali su među ostalim borcima.'
   },
   {
+    id: 'moste-polje-spomenica-1941',
+    title: 'Zbornik občine Ljubljana Moste-Polje',
+    author: 'Polde Maček ml. (gl. ur.)',
+    pdfPath: '/pdfs/moste-polje-spomenica-1941.pdf',
+    thumbnail: '/images/pdf-thumbs/moste-polje-spomenica-1941.jpg',
+    brigadeName: '',
+    description: 'Nosioci Partizanske spomenice 1941 sa područja današnje opštine Moste-Polje u Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, godina rođenja i zanimanje, a za one koji su umrli posle rata i godina smrti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'vis-spomenica-1941',
+    title: 'Vis 1941–1945',
+    author: 'Veseljko Huljić',
+    pdfPath: '/pdfs/vis-spomenica-1941.pdf',
+    thumbnail: '/images/pdf-thumbs/vis-spomenica-1941.jpg',
+    brigadeName: '',
+    description: 'Nosioci Partizanske spomenice 1941 sa viškog otočja (str. 521), samo imena, i rečenica knjige o narodnom heroju Andriji Božaniću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'prilog-u-krvi-pali-borci',
+    title: 'Prilog u krvi',
+    author: 'Opštinski odbor SUBNOR-a Pljevlja',
+    pdfPath: '/pdfs/prilog-u-krvi-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/prilog-u-krvi-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Pali borci NOR-a pljevaljskog sreza od aprila 1941. do 15. maja 1945 (str. 141–216), sa biografijom svakog. Knjiga među pale borce ubraja i partijske i političke radnike, odbornike i saradnike NOP-a: uneti su samo oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'jevreji-jugoslavije-ucesnici-nor',
+    title: 'Jevreji Jugoslavije 1941–1945. Žrtve genocida i učesnici narodnooslobodilačkog rata',
+    author: 'Jaša Romano',
+    pdfPath: '/pdfs/jevreji-jugoslavije-ucesnici-nor.pdf',
+    thumbnail: '/images/pdf-thumbs/jevreji-jugoslavije-ucesnici-nor.jpg',
+    brigadeName: '',
+    description: 'Spisak jevrejskih učesnika u narodnooslobodilačkom ratu, sa biografijom svakog (str. 307 i dalje). Spisak broji sve koji su bili u NOP-u: uneti su samo oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske, a ne politički i pozadinski radnici. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
     id: 'hrvatsko-zagorje-1981',
     title: 'Hrvatsko zagorje u revoluciji',
     author: 'Grupa autora',
