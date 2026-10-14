@@ -107,6 +107,7 @@ TWO_COLUMN = {
     'bitka-kod-oborova-poginuli.pdf',       # Bitka kod Oborova: the names in two columns
     'moste-polje-spomenica-1941.pdf',       # Moste-Polje: the spomenica holders, each entry hanging
     'vis-spomenica-1941.pdf',               # Vis: the spomenica holders, a name a line
+    'jevreji-jugoslavije-ucesnici-nor.pdf', # Romano, Jevreji Jugoslavije: the participants, each entry hanging
     '13-proleterska-spisak.pdf',
     '7-krajiska-spisak.pdf',
     '11-dalmatinska.pdf',

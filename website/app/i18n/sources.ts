@@ -452,6 +452,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Nosilci partizanske spomenice 1941 z viškega otočja (str. 521), samo imena, in stavek knjige o narodnem heroju Andriji Božaniću. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca z otoka, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'prilog-u-krvi-pali-borci':
       'Padli borci NOB iz pljevaljskega okraja od aprila 1941 do 15. maja 1945 (str. 141–216), z življenjepisom vsakega. Knjiga med padle borce šteje tudi partijske in politične delavce, odbornike in sodelavce NOG: vneseni so le tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'jevreji-jugoslavije-ucesnici-nor':
+      'Seznam judovskih udeležencev narodnoosvobodilne vojne, z življenjepisom vsakega (str. 307 in dalje). Seznam šteje vse, ki so bili v NOG: vneseni so le tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske, ne politični in zaledni delavci. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -905,6 +907,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Носителите на Партизанската споменица 1941 од вишкото островје (стр. 521), само имиња, и реченицата на книгата за народниот херој Андрија Божаниќ. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец од островот што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'prilog-u-krvi-pali-borci':
       'Паднатите борци на НОБ од пљеваљската околија од април 1941 до 15 мај 1945 (стр. 141–216), со биографија на секој. Книгата меѓу паднатите борци ги вбројува и партиските и политичките работници, одборниците и соработниците на НОД: внесени се само оние за кои записот вели дека биле борци или наведува воена должност или единица на војската. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'jevreji-jugoslavije-ucesnici-nor':
+      'Списокот на еврејските учесници во народноослободителната војна, со биографија на секој (стр. 307 и понатаму). Списокот ги брои сите што биле во НОД: внесени се само оние за кои записот вели дека биле борци или наведува воена должност или единица на војската, а не политичките и позадинските работници. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1357,6 +1361,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The holders of the Partisan Commemorative Medal of 1941 from the Vis islands (p. 521), names only, with the book\'s sentence on the national hero Andrija Božanić. The book belongs to no single unit: an entry is added to the record of each fighter from the island on the site where the match is certain; the others are among the Other fighters.',
     'prilog-u-krvi-pali-borci':
       'The fallen fighters of the Pljevlja district, April 1941 to 15 May 1945 (pp. 141–216), each with a biography. The book counts party and political workers, committee members and helpers of the movement among its fallen fighters too: only those whose entry says they fought or names a military duty or an army unit were entered. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'jevreji-jugoslavije-ucesnici-nor':
+      'The list of the Jewish participants in the war of liberation, each with a biography (p. 307 on). The list counts everyone in the movement: only those whose entry says they fought or names a military duty or an army unit were entered, not the political workers and the rear. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
