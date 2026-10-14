@@ -447,12 +447,16 @@ def main():
             if e['soldier_id'] in GIVEN_FIXES:
                 e['first_name'] = GIVEN_FIXES[e['soldier_id']]
                 e['name'] = f"{e['last_name']} {e['first_name']}"
-            # a man the book could not name ("Nepoznati borac") is no one a search can find
-            if e.get('last_name') and e.get('first_name') and not e.get('unnamed'):
+            # a man the book names by one name is still its man (Romano's "Ašer (prezime nepoznato)", Oborovo's "Ivica
+            # ...", Gončin's "Janković"; the user's decision of 2026-10-14); one it could not name ("Nepoznati borac"),
+            # or a number its parser keeps with no one, is no one a search can find
+            if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed'):
                 entries.append(e)
     by_name = defaultdict(list)
     for e in entries:
-        by_name[(fold(e['last_name']), fold(e['first_name']))].append(e)
+        # one name alone is too little to make two books' entries one man: such an entry stays apart
+        key = (fold(e['last_name']), fold(e['first_name'])) if e.get('last_name') and e.get('first_name') else e['soldier_id']
+        by_name[key].append(e)
 
     # one man across books: the entries of a name joined pair by pair (never two entries of one book)
     parent = {e['soldier_id']: e['soldier_id'] for e in entries}

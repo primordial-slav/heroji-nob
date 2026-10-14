@@ -52,6 +52,21 @@ UNITS = {
 PLACE = re.compile(rf'^([{U}][{U}.-]*(?:\s+(?:[{U}][{U}.-]*|[—–-]))*)\s*:$')    # "ERDEVIK:", "OTOK — RIPAĆA:"
 HEAD_WORD = re.compile(rf'[{U}][{U}.-]*:?|[—–-]')                               # a word of such a heading
 UNIT_LINE = re.compile(rf'[{U}][{U} .»«"()-]{{6,}}')                             # "PETA KRAJIŠKA (KOZARSKA) UDARNA BRIGADA"
+# a duty's words: one of them the text layer set as a name after a comma is the duty of the man before ("Ilija Nikolić,
+# Vodnik", "Milorad Tmušić, delegat Voda"), and a small word not among them before a surname is a given name its capital
+# lost ("živan Janković", "jovan Prerad", "šaip Maksut")
+DUTIES = {'vodnik', 'voda', 'desetar', 'komandir', 'komesar', 'politički', 'delegat', 'bolničar', 'bolničarka', 'kurir',
+          'zastavnik', 'poručnik', 'potporučnik', 'kapetan', 'major', 'zamenik', 'pomoćnik', 'intendant', 'referent',
+          'sekretar', 'borac', 'puškomitraljezac', 'mitraljezac', 'nišandžija', 'član', 'čete', 'bataljona', 'brigade'}
+
+
+def given_name(words: list[dict], j: int) -> bool:
+    """words[j] in small letters is a given name: a name the site knows as one, not a duty, a surname after it"""
+    w = words[j]['text'].rstrip(',.')
+    nxt = words[j + 1]['text'] if j + 1 < len(words) else ''
+    if w in DUTIES or not re.match(rf'[{U}]', nxt):
+        return False
+    return sum(ofz._spell['first'].get(w.upper().translate(ofz.FOLD), {}).values()) >= 5
 
 
 def title(text: str) -> str:
@@ -146,8 +161,11 @@ def read() -> list[dict]:
         # a duty after a name ("bolničarka", "zamenik komandira čete") belongs to the name before it, also when its
         # comma is missing before the next name ("vodnik Vukašin Petrović")
         j = 0
-        while j < len(words) and words[j]['text'][:1].islower() and not re.match(rf'[čćžšđ][{L}]+(?:ić|ović|ević)\b', words[j]['text']):
+        while j < len(words) and words[j]['text'][:1].islower() and not re.match(rf'[čćžšđ][{L}]+(?:ić|ović|ević)\b', words[j]['text']) \
+                and not given_name(words, j):
             j += 1
+        if j < len(words) and words[j]['text'][:1].islower() and given_name(words, j):
+            words = words[:j] + [dict(words[j], text=words[j]['text'][:1].upper() + words[j]['text'][1:])] + words[j + 1:]
         if j and entries:
             duty = ' '.join(x['text'] for x in words[:j]).rstrip(',.')
             entries[-1]['duty'] = (entries[-1].get('duty', '') + ', ' + duty).strip(', ')
@@ -175,11 +193,32 @@ def read() -> list[dict]:
         text = ' '.join(ws)
         if not re.search(rf'[{U}{L}]{{2}}', text) or text in ('Skoja', 'SKOJ-a', 'KPJ'):
             continue                                                   # "član Skoja", a duty
+        if text.lower() in DUTIES and entries:
+            # a duty set as a name: the man before's ("delegat Voda" one duty), and this number stays with no one
+            duty = entries[-1].get('duty', '')
+            entries[-1]['duty'] = (duty + (' ' if j else ', ') + text.lower()).strip(', ')
+            entries.append(dict(it, words=words, text='', note='', own=''))
+            continue
         names = text.split()
         # two names whose comma the text layer lost: "Miladin Zavić Branko Živković"
         groups = [names[:2], names[2:]] if len(names) == 4 and all(x[:1].isupper() for x in names) else [names]
         for g in groups:
             entries.append(dict(it, words=words, text=' '.join(g), note=note, own=own))
+    # a man the text split in two keeps the first number, and the second stays with no one, so the numbers after it
+    # stay put: a father's initial of two letters or in Cyrillic ended his name ("Sima Lj." / "Kostić", "Adam С." /
+    # "Vladisavljević"), or a stray full stop his given name ("Mito." / "M. Tasevski")
+    for a, b in zip(entries, entries[1:]):
+        aw, bw = a['text'].split(), b['text'].split()
+        if not (aw and bw) or (a['unit'], a['place']) != (b['unit'], b['place']):
+            continue
+        if len(aw) == 2 and re.fullmatch(r'Lj|Nj|Dž|[А-Я]', aw[1]) and len(bw) == 1:
+            text = f"{aw[0]} {aw[1].replace('С', 'C')}. {bw[0]}"
+        elif len(aw) == 1 and len(bw) == 2 and re.fullmatch(rf'[{U}]\.', bw[0]) and given_name([{'text': aw[0]}] + b['words'], 0):
+            text = f"{aw[0]} {b['text']}"
+        else:
+            continue
+        a.update(text=text, words=a['words'] + b['words'], duty=', '.join(x for x in (a.get('duty'), b.get('duty')) if x))
+        b.update(text='', note='', own='', duty='')
     return entries
 
 
@@ -219,7 +258,7 @@ def parse(e: dict, n: int) -> dict:
     given, last = (joined[0], joined[-1]) if len(joined) >= 2 else ('', joined[0] if joined else '')
     middle = ' '.join(joined[1:-1])
     name = ' '.join(joined)
-    father = middle if re.fullmatch(rf'[{U}]\.', middle) else ''     # "Dragomir U. Stanković"
+    father = middle if re.fullmatch(rf'(?:[{U}]|Lj|Nj|Dž)\.', middle) else ''     # "Dragomir U. Stanković", "Sima Lj. Kostić"
     nick = e.get('own') or ('' if father else middle)
     shown = ' '.join(x for x in (last, father, given) if x) + (f' {nick}' if nick else '')
     rec = {'soldier_id': f'{PREFIX}{n:06d}', 'name': shown,
@@ -227,7 +266,7 @@ def parse(e: dict, n: int) -> dict:
            'death_place': e['place'], 'death_years': ['1944', '1945'], 'death_year': '',
            'units': [UNITS[e['unit']]] if e['unit'] in UNITS else [], 'unit': title(e['unit'])}
     rec['additional_info'] = (f"{rec['unit']}, {e['place']}: {name}" + (f" ({e['note']})" if e.get('note') else '')
-                              + (f", {e['duty']}" if e.get('duty') else '') + '.')
+                              + (f", {e['duty']}" if e.get('duty') else '') + '.') if name else ''   # a number with no one
     rec.update(boxes(e['words']))
     return rec
 

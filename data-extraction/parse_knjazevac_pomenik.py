@@ -47,6 +47,13 @@ OTHER_SIDE = re.compile(r'\bčetni\w*|\bčetovođ\w*|\bJVuO\b|ravnogor\w*|ljoti�
                         r'državn\w*\s+straž\w*|dobrovoljačk\w*|bugarsk\w*\s+vojsk\w*|\bDM\b', re.I)
 AGAINST = re.compile(r'\b(?:protiv|od|sa)\s+(?:strane\s+)?(?:\S+\s+){0,2}(?:četni\w*|ljotićev\w*|nedićev\w*|bugar\w*)'
                      r'(?:\s+DM)?', re.I)
+# a man the partisans killed is none of theirs (the user's rule, 2026-10-14): his entry's first word of a death
+# ("Ubijen ... od pripadnika Timočke partizanske čete", "likvidiran je od mesne partizanske desetine"); a fighter who fell
+# by a comrade's hand ("Poginuo kao vodnik ... od saborca partizana") stays
+DEATH_WORD = re.compile(r'\b(?:poginu\w*|pao|pala|ubijen\w*|streljan\w*|likvidiran\w*|zaklan\w*|obešen\w*|umr\w*|nesta\w*)\b',
+                        re.I)
+BY_PARTISANS = re.compile(r'(?:ubijen|streljan|likvidiran|zaklan|obešen)\w*\b[^;]{0,120}?\bod\s+(?:strane\s+)?'
+                          r'(?:\S+\s+){0,3}?(?:partizan\w*|NOVJ?|NOP\w*)\b', re.I)
 # Serbian brigades by their number (in this book "14. бригада" is the 14. srpska) -> the site's unit
 BRIGADES = {4: 21, 5: 127, 7: 85, 8: 87, 9: 165, 10: 88, 12: 90, 14: 27, 15: 86, 17: 55, 18: 128, 19: 73, 20: 91, 21: 80,
             22: 74, 23: 89, 25: 31}
@@ -136,6 +143,9 @@ def fighter(rec: dict) -> bool:
         return False                                      # a note of the book's ("Protokol umrlih ..."), not a name
     info = REAR.sub('', rec['additional_info'])
     own = AGAINST.sub('', info)                           # "u borbi protiv četnika DM", "ubijen od četnika"
+    death = DEATH_WORD.search(info)
+    if death and BY_PARTISANS.match(info, death.start()):
+        return False
     return bool(FIGHTER.search(info)) and not OTHER_SIDE.search(own)
 
 

@@ -37,7 +37,7 @@ sys.path.insert(0, str(HERE.parent / 'scripts'))
 import entry_boxes  # noqa: E402
 from _parser_scaffold import cyrillic_to_latin, extract_lines_single_column  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
-from parse_cacanski_kraj import CAPS, CHETNIK, FIGHTER, L, U, join  # noqa: E402
+from parse_cacanski_kraj import CAPS, CHETNIK, FIGHTER, L, U, join, name_of  # noqa: E402
 from parse_cacanski_odred import fix_digits  # noqa: E402
 
 PDF = 'pozega-pali.pdf'
@@ -91,22 +91,7 @@ def read() -> list[dict]:
 
 
 def parse(e: dict, n: int) -> dict:
-    text = join(e['lines'])
-    head, _, info = text.partition(',')
-    parts = [p.split() for p in re.split(r'\s+[—–-]\s+', head)]
-    words = [w.strip('.') for w in parts[0]]
-    nick = ' '.join(w for p in parts[1:] for w in p).title()
-    last = []
-    while words and re.fullmatch(CAPS, words[0]):
-        last.append(words.pop(0))
-    father = words.pop(0) if words and re.fullmatch(rf'[{U}][{L}]+', words[0]) else ''
-    given = [w for w in words if re.fullmatch(CAPS, w)]
-    if not given and len(last) > 1:
-        given = [last.pop()]
-    if len(given) > 1 and not nick:
-        given, nick = given[:1], ' '.join(given[1:]).title()
-    last_name = ' '.join(w[:1] + w[1:].lower() for w in last)
-    first_name = ' '.join(w[:1] + w[1:].lower() for w in given)
+    last_name, father, first_name, nick, info = name_of(join(e['lines']))
     info = re.sub(r'\bro[đćdcnN]e{1,2}n(a?)\b', r'rođen\1', info.strip())
     rec = {'soldier_id': f'{PREFIX}{n:06d}',
            'name': ' '.join(x for x in (last_name, father, first_name) if x) + (f' — {nick}' if nick else ''),

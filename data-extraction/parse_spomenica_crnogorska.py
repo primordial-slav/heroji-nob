@@ -45,6 +45,8 @@ OPSTINE = ['Andrijevica', 'Bar', 'Berane', 'Bijelo Polje', 'Budva', 'Danilovgrad
            'Nikšić', 'Plav', 'Plužine', 'Pljevlja', 'Podgorica', 'Rožaje', 'Ulcinj', 'Herceg Novi', 'Cetinje', 'Šavnik']
 NUMBER = re.compile(r"^[•·'*]?\d(?:-?\d){0,3}[.,]+[,:]?$")             # "•320.", "293,", "8-96."
 YEAR = re.compile(r'^1[89]\d\d\.?$')
+# the page's slips (Plav 683., read from its neighbours) and the OCR's Л and Љ ("ЈТука", "ЈБубо", "Ал>о")
+READ = {'Radenovnć': 'Radenović', 'JTuka': 'Luka', 'JBubo': 'Ljubo', 'Al>o': 'Aljo'}
 
 
 def build_pdf() -> list[str]:
@@ -61,7 +63,8 @@ def build_pdf() -> list[str]:
 
 def header_cols(words: list[dict]) -> dict | None:
     head = [w for w in words if w['top'] < 175 and not NUMBER.match(w['text'])]
-    god = sorted(w['x0'] for w in head if w['text'].startswith('Год'))
+    # the header's "Год." (not a name of the first rows: "Вујадиновић Годоров Митар", p. 367)
+    god = sorted(w['x0'] for w in head if re.fullmatch(r'Год\.?', w['text']))
     name = [w['x0'] for w in head if w['text'].startswith('Презиме')]
     if len(god) < 2 or not name or god[-1] - god[0] < 60:
         return None
@@ -134,8 +137,13 @@ def cell(ws: list[dict]) -> str:
 
 def split_name(text: str) -> tuple[str, str, str, str]:
     """"Asanović N. Đoko" -> Asanović, N., Đoko; "Bojović Dragojev Batrić" -> father Dragojev; "Vujović S. Đuro-Španac"
-    -> given Đuro, nick Španac; "Aleksić Mirko" -> no father."""
-    words = [w for w in re.split(r'\s+', text.replace('|', ' ')) if w and not re.fullmatch(r'[\W\d]+', w)]
+    -> given Đuro, nick Španac; "Aleksić Mirko" -> no father. A name the page prints without its spaces is parted where
+    a capital starts the next word after a surname's, father's or possessive's ending ("ДабановићЂураЗарија",
+    "ОсманаТемо", "ТадићЈ.Ћурко", "М.Јована"); not at a capital the OCR set inside a word ("РадоМан", "БогиНевиН"), nor
+    at its J for Љ or Њ ("ЖиваЈвевић", "НеђеЈнков"), but "ЋуровЈанко"."""
+    text = re.sub(r'(?<=[a-zčćžšđ]{2}[ćvnae])(?=[A-IK-ZČĆŽŠĐ][a-zčćžšđ]|[A-ZČĆŽŠĐ]\.)|(?<=ić|ov|ev|in)(?=J[a-zčćžšđ])|'
+                  r'(?<=[A-ZČĆŽŠĐ]\.)(?=[A-ZČĆŽŠĐ][a-zčćžšđ])', ' ', text)
+    words = [READ.get(w, w) for w in re.split(r'\s+', text.replace('|', ' ')) if w and not re.fullmatch(r'[\W\d]+', w)]
     if not words:
         return '', '', '', ''
     last, rest = words[0], words[1:]

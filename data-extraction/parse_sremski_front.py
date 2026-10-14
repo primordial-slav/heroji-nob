@@ -13,7 +13,8 @@ So an entry has the name, the father's initial and the brigade (the site's unit 
 matcher weighs the unit and the father, and rules out a record that has him fall outside 1944-1945 (`death_years`).
 Each name gets a box around its words (two when it runs on, pdf_rects).
 
-Output: data-extraction/znaci/sremski-front-poginuli-entries.json (IDs 9014xxxxxx, in the book's order), in Latin.
+Output: data-extraction/znaci/sremski-front-poginuli-entries.json (IDs 9014xxxxxx, in the book's order; the 840 names
+the reader first lost after the sheets' signatures, from 9014011973 on), in Latin.
 Usage: python data-extraction/parse_sremski_front.py [--sample N]
 """
 from __future__ import annotations
@@ -40,13 +41,19 @@ U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 # words the OCR garbled past the rules, read from the page images (znaci re-typeset it in Cyrillic from the OCR, so
 # "Сре1.ковић" stands there too: Srećković by the list's order and the corpus)
 WORDS = {'Mij1S,': ['Mile,'], 'Sre1.ković': ['Srećković'], 'Vukadin,..1.35.': ['Vukadin,', '135.'],
-         "Po'luzzi": ['Poluzzi']}
+         "Po'luzzi": ['Poluzzi'], '!41.Đurović': ['141.', 'Đurović'], '253.Nedić': ['253.', 'Nedić'],
+         '50L<ostadinović': ['50.', 'Kostadinović']}
 # names the OCR garbled, as the list's order, the brigade's own records and the corpus read them ("Bojat^ć Pero" is
 # 5. krajiška's Bojanić Pero)
 SPELLED = {'Š^pirić': 'Špirić', 'Jov^nović': 'Jovanović', 'J?remić': 'Jeremić', 'Bojat^ć': 'Bojanić',
            'BoiJKOVić': 'Bojković', 'Mi.pojković': 'Milojković', 'Jovanović " adovan': 'Jovanović Radovan',
            'Cvetićanin radomir': 'Cvetićanin Radomir', 'Sv tozar': 'Svetozar', 'Dobri la': 'Dobrila',
-           'li Arsić': 'Arsić', 'Biljić te Branislav': 'Biljić Branislav', 'brekić': 'Brekić', 'Mi go': 'Migo'}
+           'li Arsić': 'Arsić', 'Biljić te Branislav': 'Biljić Branislav', 'brekić': 'Brekić', 'Mi go': 'Migo',
+           'Toši^Milorad': 'Tošić Milorad', 'Mišković-Aleksandar': 'Mišković Aleksandar', 'VI. ': 'Vl. ',
+           'Pantelić — Rančić Grujica': 'Pantelić-Rančić Grujica',       # two surnames, as the Čačak lists write them
+           'Stanojevi*!—Ljubić': 'Stanojević-Ljubić', 'ZlokasĐ.': 'Zlokas Đ.', 'Risti- Gević': 'Ristićević'}
+# the printer's signature at a sheet's foot ("5* SREMSKI FRONT"): page furniture inside a list
+SIGNATURE = re.compile(r'\d+\* SREMSKI FRONT')
 # a brigade by its number and its first adjective, in any case ("Deseta krajiška", "Treće krajiške proleterske") ->
 # the site's unit
 UNITS = {
@@ -165,10 +172,16 @@ def read() -> list[dict]:
             joined.append(ln)
     stream = joined
     entries, label, listing, heading, brigade = [], None, False, None, None
+    crossed = False                                                    # the list has run past a sheet's signature
     for ln in stream:
         t = ln['text']
         if re.match(r'^\d{1,3}$', t):
             continue                                                   # a page number
+        if SIGNATURE.fullmatch(t):
+            # (the reader once took it for the next unit's heading and lost the list's names after it: those are
+            # numbered after the book's last, `lost`, so the others keep their numbers)
+            crossed = crossed or listing
+            continue
         if re.match(r'^\d+\. Streljački korpus', t):
             break                                                      # the Red Army's lists
         if t.startswith('Poginuli borci'):
@@ -182,6 +195,7 @@ def read() -> list[dict]:
                 # the list begins: "Poginuli borci <the brigade>", or the heading above when it says only "Poginuli
                 # borci" (Deseta krajiška) or nothing at all
                 label, listing = (heading or brigade or '').strip().replace('irištapske', 'prištapske'), True
+                crossed = False
             elif heading is not None:
                 heading += ' ' + t                                     # "Poginuli borci Prve proleterske / brigade"
                 continue
@@ -193,7 +207,7 @@ def read() -> list[dict]:
                 brigade = t
             continue
         for w in ln['words']:
-            entries.append({'word': w, 'label': label})
+            entries.append({'word': w, 'label': label, 'lost': crossed})
     # the run-on names: a number after a comma (or the list's start) opens one; a "3." inside a name is the initial
     # З. the OCR read as a digit ("Čoković 3. Milisav")
     # a comma and the next number read as one word ("Milenko,155.", "Petar,'272."): two tokens
@@ -231,11 +245,11 @@ def read() -> list[dict]:
                     or 0 < int(num.group(1)) - cur['no'] <= 2):
             if cur:
                 out.append(cur)
-            cur = {'no': int(num.group(1)), 'words': [], 'label': e['label']}
+            cur = {'no': int(num.group(1)), 'words': [], 'label': e['label'], 'lost': e['lost']}
         elif cur is not None and prev.endswith(',') and (re.search(r'\d', w['text'])
                                                           or re.fullmatch(r'[^\w\s]{1,2}[-.]|[A-Z]-', w['text'])):
             out.append(cur)                                            # a number the OCR garbled: "b9.", "129;", "P-"
-            cur = {'no': cur['no'] + 1, 'words': [], 'label': e['label']}
+            cur = {'no': cur['no'] + 1, 'words': [], 'label': e['label'], 'lost': e['lost']}
         elif cur is not None:
             if w['text'] == '3.':
                 w = dict(w, text='Z.')
@@ -337,7 +351,7 @@ def parse(e: dict, n: int) -> dict | None:
     if len(words) >= 3 and words[0] in ('De', 'Di', 'Da', 'Dal', 'Del', 'Della', 'Dalla', 'Lo', 'La'):
         words = [f'{words[0]} {words[1]}'] + words[2:]                 # brigade »Italija«: "De Biasi Ferdinando"
     last = words[0] if words else ''
-    father = next((w for w in words[1:] if re.fullmatch(rf'[{U}]\.', w)), '')
+    father = next((w for w in words[1:] if re.fullmatch(rf'[{U}][{L}]?\.', w)), '')       # "B.", "Lj.", "Vl."
     given = ' '.join(w for w in words[1:] if w != father)
     shown = ' '.join(x for x in (last, father, given) if x) + (f' — {nick}' if nick else '')
     label = (e['label'] or '').strip()
@@ -353,11 +367,13 @@ def parse(e: dict, n: int) -> dict | None:
 
 def main():
     raw = read()
-    recs = []
-    for e in raw:
-        r = parse(e, len(recs) + 1)
-        if r:
-            recs.append(r)
+    parsed = [(e, r) for e in raw for r in [parse(e, 0)] if r]
+    # the book's order; the names the reader once lost after a sheet's signature numbered after the others
+    numbered = [r for e, r in parsed if not e['lost']] + [r for e, r in parsed if e['lost']]
+    for n, r in enumerate(numbered, 1):
+        r['soldier_id'] = f'{PREFIX}{n:06d}'
+    recs = numbered
+    print(f"{sum(1 for e, _ in parsed if e['lost'])} names after a sheet's signature, from {numbered[-1]['soldier_id']} back")
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding='utf-8')
     by = Counter((r['unit'][:60], tuple(r['units'])) for r in recs)
