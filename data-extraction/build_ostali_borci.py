@@ -97,6 +97,18 @@ ONE_MAN = [
                                  '(Tikava, 1921)'),
     ('9035017001', '9035012349', 'Maričević Radmila, born in Prijepolje 1900 or 1901, fell at the Sutjeska 1943: the '
                                  'chapters of Šavnik ("N.") and Pljevlja ("D.", Prilog u krvi\'s Danila)'),
+    # the Spomenica's men under two municipalities born a year apart, whose villages and places of death differ but
+    # lie together (the Šavnik chapter gives the town for the village)
+    ('9035008310', '9035014511', 'Nikolić Radivoje, Nikola\'s son, fell 1944 in Bosnia: Nikšić (Broćanac, 1907, '
+                                 '"Bosna") and Podgorica (Rubež by Nikšić, 1908, Busovačka stijena)'),
+    ('9035008022', '9035017034', 'Marković Savo, Rade\'s son, fell 1944: Nikšić (Bubrežak, 1887, Danilovgrad) and '
+                                 'Šavnik (Nikšić, 1888, Pješivci by Danilovgrad)'),
+    ('9035008463', '9035017386', 'Perović Danilo, Petar\'s son ("Pegrov"), fell 1943: Nikšić (Rudine, 1918, Trubjela) '
+                                 'and Šavnik (Nikšić, 1919, Nikšić)'),
+    ('9035001203', '9035003363', 'Raičević Dušan, Niko\'s son, fell 1942 by Petrovac: Bar (Bukovik, 1912, Petrovac) '
+                                 'and Budva (Buljarica, 1913, Novoselje)'),
+    ('9035002709', '9035006704', 'Medojević Vlastimir, "B.", fell 1944: Bijelo Polje (Prošćenje, 1927) and Mojkovac '
+                                 '(Stevanovac, 1926, Trnovica)'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 
