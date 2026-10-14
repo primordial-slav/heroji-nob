@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import type { Unit } from '@/app/data/units'
 import { formation, formationKey } from '@/app/data/formation'
+import type { Lang } from '@/app/i18n/config'
+import { formatNumber } from '@/app/i18n/format'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { unitDescription, unitName } from '@/app/i18n/units'
 import { unitImageProps } from '@/app/lib/unitImage'
@@ -18,12 +20,20 @@ interface YearGroup {
   year: string | null // null: units whose formation date isn't recorded yet
   units: Unit[]
   noUnit?: boolean // the soldiers of the books across units who have no unit on the site
+  census?: Unit[] // with them, the 1964 census's parts: listed by region beside the card, not as cards of their own
 }
 
 // Not units: Ostali borci (the books across units) and its parts for the 1964 census, one a republic or province;
-// their cards stand last, under a heading of their own
+// they stand last, under a heading of their own
 const NO_UNIT = 'ostali-borci'
 const isNoUnit = (u: Unit) => u.id === NO_UNIT || u.id.startsWith(`${NO_UNIT}-`)
+
+/** A census part's region, its name after " – " in the page's language: "Ostali borci – Slovenija" -> "Slovenija" */
+function regionOf(unit: Unit, lang: Lang): string {
+  const name = unitName(unit, lang)
+  const cut = name.indexOf(' – ')
+  return cut < 0 ? name : name.slice(cut + 3)
+}
 
 function groupByYear(all: Unit[]): YearGroup[] {
   const units = all.filter((u) => !isNoUnit(u))
@@ -39,8 +49,9 @@ function groupByYear(all: Unit[]): YearGroup[] {
   }
   const undated = units.filter((u) => !formation[u.id])
   if (undated.length) groups.push({ year: null, units: undated })
-  const noUnit = all.filter(isNoUnit)
-  if (noUnit.length) groups.push({ year: null, units: noUnit, noUnit: true })
+  const noUnit = all.filter((u) => u.id === NO_UNIT)
+  const census = all.filter((u) => isNoUnit(u) && u.id !== NO_UNIT)
+  if (noUnit.length || census.length) groups.push({ year: null, units: noUnit, census, noUnit: true })
   return groups
 }
 
@@ -51,7 +62,7 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
   const to = useLocalePath()
   return (
     <div className="unit-years">
-      {groupByYear(units).map(({ year, units: group, noUnit }) => {
+      {groupByYear(units).map(({ year, units: group, noUnit, census }) => {
         const key = year ?? (noUnit ? 'bez-jedinice' : 'ostale')
         return (
         <section key={key} className="unit-year" aria-labelledby={`godina-${key}`}>
@@ -73,6 +84,26 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
                 </Link>
               </li>
             ))}
+            {census && census.length > 0 && (
+              // one panel for the census: its eight parts would be eight cards of the same scanned page
+              <li className="census-index">
+                <div>
+                  <h4 className="unit-name">{t.home.census}</h4>
+                  <p className="unit-desc">{t.home.censusLead}</p>
+                  <ul className="census-parts">
+                    {census.map((unit) => (
+                      <li key={unit.id}>
+                        <Link href={to(`/units/${unit.id}`)} aria-label={`${regionOf(unit, lang)}, ${t.borci(unit.soldierCount)}`}>
+                          <span className="census-part-name">{regionOf(unit, lang)}</span>
+                          <span className="census-part-count">{formatNumber(lang, unit.soldierCount)}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="unit-count">{t.borci(census.reduce((sum, unit) => sum + unit.soldierCount, 0))}</p>
+                </div>
+              </li>
+            )}
           </ul>
         </section>
         )

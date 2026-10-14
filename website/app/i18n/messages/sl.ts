@@ -47,6 +47,8 @@ export const sl: Messages = {
     unitsTitle: 'Enote',
     otherUnits: 'Druge enote',
     noUnit: 'Brez enote',
+    census: 'Popis žrtev vojne iz leta 1964',
+    censusLead: 'Padli in umrli borci, katerih enote še ni na strani, po republikah in pokrajinah.',
     /** The wartime portraits in the home page's margins */
     rails: 'Borci na fotografijah iz vojne',
     bandCredit: 'Na fotografiji:',

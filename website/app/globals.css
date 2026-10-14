@@ -2854,6 +2854,72 @@ button.kin-row:not(:disabled):hover .kin-label {
   }
 }
 
+/* Under "Bez jedinice", beside the Ostali borci card: the 1964 census's parts as one panel, a region and its count
+   on a rule each. Where the grid has three columns the panel spans two and the list runs in two; the total stands
+   at its foot, level with the card's count. */
+.census-index > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--space-4) var(--space-5) var(--space-5);
+  background: var(--surface);
+}
+
+.census-parts {
+  list-style: none;
+  margin-top: var(--space-3);
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.census-parts li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.census-parts a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.census-parts a:hover .census-part-name {
+  color: var(--red-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.census-part-name {
+  font-family: var(--font-name);
+  font-size: var(--step-0);
+}
+
+.census-part-count {
+  color: var(--red-ink);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 1056px) {
+  .census-index {
+    grid-column: span 2;
+  }
+
+  .census-index .census-parts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-6);
+    border-top: 0;
+  }
+
+  .census-index .census-parts li:nth-child(-n + 2) {
+    border-top: 1px solid var(--rule);
+  }
+}
+
 /* ========== Search filters, search links, stepping through records ========== */
 
 /* "Filteri" at the end of a search field */
