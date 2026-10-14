@@ -268,6 +268,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '1-tenkovski-bataljon':
+      'Seznam pripadnikov Tankovskega voda Skupine partizanskih odredov za Liko, Tankovske čete 1. korpusa in Tankovskega bataljona Glavnega štaba NOV in PO Hrvaške (251 imen, str. 337–340).',
+    '3-diverzantski-odred':
+      'Pregled borcev in starešin 3. diverzantske skupine, čete, bataljona in odreda (imena, z oznako padlih in po vojni umrlih) in pregled padlih diverzantov z dolžnostjo in letom (priloga IV, str. 587–591).',
+    '1-2-prekomorska':
+      'Seznam padlih borcev in bork obeh brigad (rojstvo, kdaj in kje je kdo padel) in vodilni kader v taboriščih Carbonara in Gravina, na Korčuli, Hvaru in Visu ter komande čet (str. 357–372).',
+    '5-prekomorska':
+      'Seznam padlih borcev in bork (256: rojstvo, kdaj in kje je kdo padel) in vodilni kader brigade, bataljonov in čet (str. 283–301).',
     'sercerjeva':
       'Seznam partizanov prostovoljcev Šercerjeve brigade od ustanovitve 6. oktobra 1942 do konca februarja 1943 (ime, partizansko ime in kraj) in seznam padlih do konca leta 1943, po kraju in dnevu smrti (str. 509–523).',
     'kosovelova':
@@ -621,6 +629,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '1-tenkovski-bataljon':
+      'Попис на припадниците на Тенковскиот вод на Групата партизански одреди за Лика, Тенковската чета на 1-от корпус и Тенковскиот баталјон на Главниот штаб на НОВ и ПО на Хрватска (251 име, стр. 337–340).',
+    '3-diverzantski-odred':
+      'Преглед на борците и старешините на 3-та диверзантска група, чета, баталјон и одред (имиња, со ознака за загинатите и умрените по војната) и преглед на загинатите диверзанти со должност и година (прилог IV, стр. 587–591).',
+    '1-2-prekomorska':
+      'Список на загинатите борци и борки на двете бригади (раѓање, кога и каде паднал) и командниот кадар во логорите Карбонара и Гравина, на Корчула, Хвар и Вис и командите на четите (стр. 357–372).',
+    '5-prekomorska':
+      'Список на загинатите борци и борки (256: раѓање, кога и каде паднал) и командниот кадар на бригадата, баталјоните и четите (стр. 283–301).',
     'sercerjeva':
       'Список на доброволците на Шерцерјевата бригада од формирањето на 6 октомври 1942 до крајот на февруари 1943 (име, партизанско име и место) и список на загинатите до крајот на 1943, по местото и денот на загинувањето (стр. 509–523).',
     'kosovelova':
@@ -973,6 +989,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '1-tenkovski-bataljon':
+      'The roll of the tank platoon of the Lika partisan detachments, the 1st Corps’ tank company and the tank battalion of the Croatian General Staff (251 names, pp. 337–340).',
+    '3-diverzantski-odred':
+      'Every fighter and officer of the 3rd sabotage group, company, battalion and detachment (names, marking the fallen and those who died after the war), and the fallen saboteurs with their duty and year (appendix IV, pp. 587–591).',
+    '1-2-prekomorska':
+      'The fallen of both brigades (birth, when and where each fell), and the officers in the Carbonara and Gravina camps, on Korčula, Hvar and Vis, and the companies’ officers (pp. 357–372).',
+    '5-prekomorska':
+      'The brigade’s fallen (256: birth, when and where each fell), and the officers of the brigade, its battalions and companies (pp. 283–301).',
     'sercerjeva':
       'The volunteers of the Šercer Brigade from its founding on 6 October 1942 to the end of February 1943 (name, partisan name and place), and its fallen to the end of 1943, by the place and day they fell (pp. 509–523).',
     'kosovelova':

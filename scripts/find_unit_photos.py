@@ -507,6 +507,20 @@ UNITS = {
         book=dict(pdf="00003/773.pdf", page=270, xref=1965,
                   caption="Skupina kosovelovcev pri Coljavi blizu Gabrovice v začetku oktobra 1943"),
         note="Nothing in the gallery names the brigade; the photo is from its book (Petelin)."),
+    "5-prekomorska-brigada": dict(
+        name="5. prekomorska brigada", tags=[],
+        caption=r"(?:5\.|pet\w*)\s+prekomorsk\w*\s+brigad", photo=3996),
+    "1-2-prekomorska-brigada": dict(
+        name="1. i 2. prekomorska brigada", tags=[],
+        caption=r"(?:1\.|2\.|prv\w*|drug\w*)\s+(?:in\s+(?:2\.|drug\w*)\s+)?prekomorsk\w*\s+brigad", photo=5059),
+    "3-diverzantski-odred": dict(
+        name="Treći diverzantski odred", tags=[],
+        caption=r"(?:3\.|tre[cć]\w*)\s+diverzantsk\w*\s+(?:odred|bataljon|čet)", photo=None,
+        book=dict(pdf="00003/541.pdf", page=129, xref=597, caption="Grupa diverzanata 3. DB u Vrtlinskoj krajem 1943. godine"),
+        note="Nothing in the gallery names the odred; the photo is from its book (Karanović): men of its 3. diverzantski bataljon."),
+    "1-tenkovski-bataljon": dict(
+        name="Prvi tenkovski bataljon", tags=[],
+        caption=r"tenkovsk\w*\s+(?:bataljon|čet|vod)\w*\s+(?:glavnog\s+štaba|1\.\s+korpusa|hrvatsk)|(?:1\.|prv\w*)\s+tenkovsk\w*\s+bataljon", photo=16316),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,

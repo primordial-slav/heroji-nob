@@ -142,6 +142,10 @@ Historical archive website for searching ~428,000 WWII Yugoslav partisan soldier
 | 140 | 42. vazduhoplovna divizija | `data-extraction/parse_42_vazduhoplovna.py` | `42-vazduhoplovna-soldiers.json` | 1 PDF (two columns, each entry hanging; by regiment and workshop; book pp. 291-321) | 1,180 |
 | 141 | Šercerjeva (II. SNOUB "Ljubo Šercer") | `data-extraction/parse_sercerjeva.py` | `sercerjeva-soldiers.json` | 1 PDF (two columns: the volunteers to February 1943; the fallen to the end of 1943 under the place and day they fell; book pp. 509-523) | 638 |
 | 142 | Kosovelova (19. SNOUB "Srečko Kosovel") | `data-extraction/parse_kosovelova.py` | `kosovelova-soldiers.json` | 1 PDF (the fallen, missing and died of wounds, two columns; the officers of the brigade and its battalions, a duty a line; book pp. 803-824) | 583 |
+| 143 | 5. prekomorska | `data-extraction/parse_5_prekomorska.py` | `5-prekomorska-soldiers.json` | 1 PDF (the fallen, a paragraph each; the officers run on under each unit; book pp. 283-301) | 344 |
+| 144 | 1. i 2. prekomorska | `data-extraction/parse_1_2_prekomorska.py` | `1-2-prekomorska-soldiers.json` | 1 PDF (the fallen of both brigades, a paragraph each; the officers by camp and island, run on; book pp. 357-372) | 468 |
+| 161 | Treći diverzantski odred | `data-extraction/parse_3_diverzantski_odred.py` | `3-diverzantski-odred-soldiers.json` | 1 PDF (Prilog IV: everyone, names only, two columns, ** fallen, * died after the war; the fallen with duty and year; book pp. 587-591) | 404 |
+| 162 | Prvi tenkovski bataljon | `data-extraction/parse_1_tenkovski_bataljon.py` | `1-tenkovski-bataljon-soldiers.json` | 1 PDF (the roll of the tank platoon, company and battalion, numbered names, two columns; book pp. 337-340) | 251 |
 | 122 | Ostali borci (not a unit) | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci.json` | none of its own: the entries of the books across units that no record took (see "Ostali borci") | 15,814 |
 | 131-138 | Ostali borci, the 1964 census's parts (not units): Slovenija, Hrvatska, Bosna i Hercegovina, Crna Gora, Makedonija, Srbija, Kosovo i Metohija, Vojvodina | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci-<slovenija, hrvatska, bih, crna-gora, makedonija, srbija, kosovo, vojvodina>.json` | none of their own: the census's fallen partisans whom no record took, one part a volume | 159,805 |
 
@@ -270,7 +274,7 @@ The seventeenth is *Čačanski kraj u NOB — pali borci i žrtve* (grupa autora
 
 A list published only as a web page (1. Dalmatinska, Mačvanski odred) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0142), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0162), last 6 = sequence.
 
 ## Known OCR Issues
 

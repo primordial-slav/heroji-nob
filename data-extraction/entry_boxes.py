@@ -67,6 +67,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '7-srpska.pdf',   # these three: their parsers' boxes (layouts this module misreads)
                   '11-krajiska-zene.pdf',   # 11. krajiška's women, names run on
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
+                  '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
                   # books across units whose names run on (Gončin's and Tmušić's Srem): their records in unit 122
                   'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf'}
 
@@ -82,6 +83,7 @@ TWO_COLUMN = {
     '18-srpska.pdf',                        # 18. srpska (Milosavljević): everyone in the brigade
     'eskadrile-novj.pdf',                   # 1. i 2. eskadrila NOVJ (Pejčić): the squadrons' people
     'sercerjeva.pdf',                       # Šercerjeva brigada (Ambrožič-Novljan): volunteers, the fallen
+    '3-diverzantski-odred.pdf',             # Treći diverzantski odred (Karanović): the roster, the fallen
     '42-vazduhoplovna.pdf',                 # 42. vazduhoplovna divizija (Pejčić): the division's people
     'hak-10-korenica-udbina.pdf',           # Korenica i Udbina (Karlovac knj. 10): the fallen
     'hak-14-donji-lapac.pdf',               # Donji Lapac (Karlovac knj. 14): the fallen
@@ -368,6 +370,9 @@ ONE_LINE_ENTRIES = {
     'tomsiceva-4.pdf': range(1, 107),
     'artilerija-9-korpusa.pdf': range(1, 9),     # Artilerija 9. korpusa: the roster, a soldier a line
     '14-hercegovacka.pdf': range(1, 33),         # 14. hercegovačka: everyone who served, a soldier a line
+    '5-prekomorska.pdf': range(17, 20),          # 5. prekomorska: the officers, run on (the box is the name's line)
+    '1-2-prekomorska.pdf': range(11, 15),        # 1. i 2. prekomorska: the officers, run on
+    '3-diverzantski-odred.pdf': range(1, 5),     # Treći diverzantski odred: a name a line, two columns
     'kosovelova.pdf': range(18, 23),             # Kosovelova: the officers, a duty a line
     '15-srpska.pdf': range(1, 13),               # 15. srpska: the roster, names only
     '1-konjicka.pdf': range(5, 12),              # 1. konjička: the war roster, names only

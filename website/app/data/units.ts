@@ -1321,6 +1321,46 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/kosovelova.pdf']
   },
   {
+    id: '5-prekomorska-brigada',
+    name: '5. prekomorska brigada',
+    nameEn: '5th Overseas Brigade',
+    description: 'Formirana 23. decembra 1944. u Splitu, od Slovenaca koji su prešli iz savezničkih armija i zarobljeništva. Poginuli i komandni kadar.',
+    image: '/images/5-prekomorska-brigada.jpg',
+    soldierCount: 344,
+    dataFile: '/5-prekomorska-soldiers.json',
+    pdfFiles: ['/pdfs/5-prekomorska.pdf']
+  },
+  {
+    id: '1-2-prekomorska-brigada',
+    name: '1. i 2. prekomorska brigada',
+    nameEn: '1st and 2nd Overseas Brigades',
+    description: 'Formirane oktobra 1943. u Italiji, u logorima Carbonara i Gravina, od Primoraca i Istrana iz italijanske vojske, zatvora i internacije. Poginuli i komandni kadar.',
+    image: '/images/1-2-prekomorska-brigada.jpg',
+    soldierCount: 468,
+    dataFile: '/1-2-prekomorska-soldiers.json',
+    pdfFiles: ['/pdfs/1-2-prekomorska.pdf']
+  },
+  {
+    id: '3-diverzantski-odred',
+    name: 'Treći diverzantski odred',
+    nameEn: '3rd Sabotage Detachment',
+    description: 'Formiran 7. septembra 1944. u Pobjeniku kod Čazme, od 3. diverzantskog bataljona. Svi borci i starešine diverzantske grupe, čete, bataljona i odreda.',
+    image: '/images/3-diverzantski-odred.jpg',
+    soldierCount: 404,
+    dataFile: '/3-diverzantski-odred-soldiers.json',
+    pdfFiles: ['/pdfs/3-diverzantski-odred.pdf']
+  },
+  {
+    id: '1-tenkovski-bataljon',
+    name: 'Prvi tenkovski bataljon',
+    nameEn: '1st Tank Battalion',
+    description: 'Formiran 21. septembra 1943. u Lici, od Tenkovske čete 1. korpusa. Pripadnici tenkovskog voda, čete i bataljona Glavnog štaba Hrvatske.',
+    image: '/images/1-tenkovski-bataljon.jpg',
+    soldierCount: 251,
+    dataFile: '/1-tenkovski-bataljon-soldiers.json',
+    pdfFiles: ['/pdfs/1-tenkovski-bataljon.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

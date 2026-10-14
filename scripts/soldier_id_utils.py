@@ -147,6 +147,11 @@ BRIGADE_CODES = {
     140: '42. vazduhoplovna divizija',
     141: 'Šercerjeva',
     142: 'Kosovelova',
+    143: '5. prekomorska',
+    144: '1. i 2. prekomorska',
+    161: 'Treći diverzantski odred',
+    162: 'Prvi tenkovski bataljon',
+    163: 'Proleterski bataljon Bosanske krajine',
     # Add new brigades here with next available code
 }
 

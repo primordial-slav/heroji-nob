@@ -589,6 +589,22 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '1-tenkovski-bataljon': {
+    name: 'Prvi tankovski bataljon',
+    description: 'Ustanovljen 21. septembra 1943 v Liki iz Tankovske čete 1. korpusa. Pripadniki tankovskega voda, čete in bataljona Glavnega štaba Hrvaške.',
+  },
+  '3-diverzantski-odred': {
+    name: 'Tretji diverzantski odred',
+    description: 'Ustanovljen 7. septembra 1944 v Pobjeniku pri Čazmi iz 3. diverzantskega bataljona. Vsi borci in starešine diverzantske skupine, čete, bataljona in odreda.',
+  },
+  '1-2-prekomorska-brigada': {
+    name: '1. in 2. prekomorska brigada',
+    description: 'Ustanovljeni oktobra 1943 v Italiji, v taboriščih Carbonara in Gravina, iz Primorcev in Istranov iz italijanske vojske, zaporov in internacije. Padli in vodilni kader.',
+  },
+  '5-prekomorska-brigada': {
+    name: '5. prekomorska brigada',
+    description: 'Ustanovljena 23. decembra 1944 v Splitu iz Slovencev, ki so prešli iz zavezniških armad in ujetništva. Padli in poveljniški kader.',
+  },
   'sercerjeva-brigada': {
     name: 'Šercerjeva brigada',
     description: 'Ustanovljena 6. oktobra 1942 na Mokrcu. Prostovoljci do konca februarja 1943 in padli do konca leta 1943, po kraju in dnevu smrti.',
@@ -1254,6 +1270,22 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '1-tenkovski-bataljon': {
+    name: 'Прв тенковски баталјон',
+    description: 'Формиран на 21 септември 1943 во Лика, од Тенковската чета на 1-от корпус. Припадниците на тенковскиот вод, чета и баталјон на Главниот штаб на Хрватска.',
+  },
+  '3-diverzantski-odred': {
+    name: 'Трет диверзантски одред',
+    description: 'Формиран на 7 септември 1944 во Побјеник кај Чазма, од 3-от диверзантски баталјон. Сите борци и старешини на диверзантската група, чета, баталјон и одред.',
+  },
+  '1-2-prekomorska-brigada': {
+    name: '1-ва и 2-ра прекуморска бригада',
+    description: 'Формирани во октомври 1943 во Италија, во логорите Карбонара и Гравина, од Приморци и Истрани од италијанската војска, затворите и интернацијата. Загинатите и командниот кадар.',
+  },
+  '5-prekomorska-brigada': {
+    name: '5-та прекуморска бригада',
+    description: 'Формирана на 23 декември 1944 во Сплит, од Словенци што преминале од сојузничките армии и заробеништво. Загинатите и командниот кадар.',
   },
   'sercerjeva-brigada': {
     name: 'Шерцерјева бригада',
@@ -1922,6 +1954,22 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '1-tenkovski-bataljon': {
+    name: '1st Tank Battalion',
+    description: 'Formed on 21 September 1943 in Lika, from the 1st Corps’ tank company. The men of the tank platoon, company and battalion of the Croatian General Staff.',
+  },
+  '3-diverzantski-odred': {
+    name: '3rd Sabotage Detachment',
+    description: 'Formed on 7 September 1944 at Pobjenik near Čazma, from the 3rd Sabotage Battalion. Every fighter and officer of the sabotage group, company, battalion and detachment.',
+  },
+  '1-2-prekomorska-brigada': {
+    name: '1st and 2nd Overseas Brigades',
+    description: 'Formed in October 1943 in Italy, in the Carbonara and Gravina camps, from Slovenes and Istrians out of the Italian army, prisons and internment. The fallen and the officers.',
+  },
+  '5-prekomorska-brigada': {
+    name: '5th Overseas Brigade',
+    description: 'Formed on 23 December 1944 in Split, from Slovenes who came over from the Allied armies and from captivity. The fallen and the officers.',
   },
   'sercerjeva-brigada': {
     name: 'Šercer Brigade',
