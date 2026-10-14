@@ -1496,7 +1496,7 @@ export const units: Unit[] = [
     nameEn: 'Cankar Battalion',
     description: 'Formiran 5. avgusta 1941. na Vodiškoj planini na Jelovici; u januaru 1942. bitka za Dražgoše. Poginuli borci bataljona i preživeli učesnici dražgoške bitke.',
     image: '/images/pdf-thumbs/cankarjev-bataljon.jpg',
-    soldierCount: 218,
+    soldierCount: 211,
     dataFile: '/cankarjev-bataljon-soldiers.json',
     pdfFiles: ['/pdfs/cankarjev-bataljon.pdf']
   },
@@ -1506,7 +1506,7 @@ export const units: Unit[] = [
     nameEn: 'Kokra Detachment',
     description: 'Formiran 18. juna 1942. na Kališču pod Storžičem, a drugi put 27. avgusta 1944. u Dragi kod Begunja. Borci prvog odreda s biografijama i spisak drugog po štabovima, službama i četama.',
     image: '/images/kokrski-odred.jpg',
-    soldierCount: 1366,
+    soldierCount: 1357,
     dataFile: '/kokrski-odred-soldiers.json',
     pdfFiles: ['/pdfs/kokrski-odred.pdf', '/pdfs/kokrski-odred-1.pdf']
   },
