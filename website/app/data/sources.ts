@@ -2027,6 +2027,15 @@ export const sources: PdfSource[] = [
     description: 'Narodni heroji Dolomita, brda zapadno od Ljubljane, nosioci Spomenice 1941. i prvoborci koji su poginuli, s datumom i mestom rođenja (str. 667–671). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'sanitetska-sluzba-lekari',
+    title: 'Sanitetska služba u NOR-u 1941–1945, knjiga IV — spisak lekara poginulih u NOR-u',
+    author: 'Zbornik radova',
+    pdfPath: 'https://znaci.org/00001/199_15.htm',
+    thumbnail: '/images/pdf-thumbs/sanitetska-sluzba-lekari.jpg',
+    brigadeName: '',
+    description: 'Lekari koji su izgubili život u ratu, s kratkom biografijom: odakle su, kada su stupili u NOVJ, dužnost i jedinica, smrt (tekst na znaci.org, bez skenirane knjige). Uneti su samo oni koji su bili u vojsci, ne i lekari koji su kao saradnici pokreta ubijeni u pozadini. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

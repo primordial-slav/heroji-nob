@@ -202,6 +202,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | *Žene Hrvatske u NOB* | women of the VI. korpus who fell (p. 301, 12 pp.), women of the 1. bataljon of the Osječka (p. 282) | [00003/585](https://znaci.org/00003/585.htm) |
 | Kažimir Pribilović, *Četvrti pomorski obalni sektor* | fallen and died (p. 473, 6 pp.) | [00003/652](https://znaci.org/00003/652.htm) |
 | Jaša Romano, *Jevreji Jugoslavije 1941–1945* | Jewish participants in the NOR ([191_4.pdf](https://znaci.org/00001/191_4.pdf), 205 pp.), spomenica holders, narodni heroji | [00001/191](https://znaci.org/00001/191.htm) |
+| *Sanitetska služba u NOR-u*, knj. IV | doctors who lost their lives in the war, a bio each ([199_15.htm](https://znaci.org/00001/199_15.htm), a web page; on the site as a book across units, those in the army only: **done**, `parse_sanitetska_lekari.py`) | [00001/199](https://znaci.org/00001/199.htm) |
 
 ## 7. Lists by place (not by unit)
 
