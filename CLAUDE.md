@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~449,000 WWII Yugoslav partisan soldiers across 141 units (103 brigades, fourteen divisions, sixteen detachments, three battalions, the 1. and 2. eskadrila NOVJ, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~455,000 WWII Yugoslav partisan soldiers across 144 units (104 brigades, fourteen divisions, seventeen detachments, four battalions, the 1. and 2. eskadrila NOVJ, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -11,7 +11,7 @@ Historical archive website for searching ~449,000 WWII Yugoslav partisan soldier
 
 | Code | Name | Parser | JSON | PDF | Count |
 |------|------|--------|------|-----|-------|
-| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py`; `data-extraction/parse_prva_proleterska_rudo.py` (the line-up at Rudo); `data-extraction/parse_beogradski_bataljon.py` (the Beogradski bataljon's roster); `data-extraction/parse_dalmatinci_prva_proleterska.py` (the fighters from Dalmatia); `data-extraction/parse_crnogorski_bataljon.py` (the 1. crnogorski bataljon's joiners); `data-extraction/parse_rudarska_ceta.py` (the Rudarska četa at Rudo) | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3); Borci Sutjeske chapter; Vuksanović's monograph, "Borci brigade na dan njenog osnivanja - stroj u Rudom" (1,196 by staff, battalion and company, re-typeset by znaci.org, book pp. 433-492); *Beogradski bataljon Prve proleterske brigade 1941-1945.*, every fighter of the battalion to 1 March 1945, three columns; *Dalmatinci u Prvoj proleterskoj*, its fighters from Dalmatia with a bio each, two or three columns a page, the parser gives the boxes, book pp. 467-754; *Prvi crnogorski bataljon*, those who joined the battalion 1942-1945 by year, Cyrillic, book pp. 713-795; Božović, *Rudarska četa*, the company at Rudo with bios (PDF pp. 426-430) | 17,650 |
+| 1 | Prva Proleterska | `data-extraction/parse_prva_proleterska.py`; `data-extraction/parse_prva_proleterska_rudo.py` (the line-up at Rudo); `data-extraction/parse_beogradski_bataljon.py` (the Beogradski bataljon's roster); `data-extraction/parse_dalmatinci_prva_proleterska.py` (the fighters from Dalmatia); `data-extraction/parse_crnogorski_bataljon.py` (the 1. crnogorski bataljon's joiners); `data-extraction/parse_rudarska_ceta.py` (the Rudarska četa at Rudo) | `prva-proleterska-soldiers.json` | 3 PDFs (vol 1-3); Borci Sutjeske chapter; Vuksanović's monograph, "Borci brigade na dan njenog osnivanja - stroj u Rudom" (1,196 by staff, battalion and company, re-typeset by znaci.org, book pp. 433-492); *Beogradski bataljon Prve proleterske brigade 1941-1945.*, every fighter of the battalion to 1 March 1945, three columns; *Dalmatinci u Prvoj proleterskoj*, its fighters from Dalmatia with a bio each, two or three columns a page, the parser gives the boxes, book pp. 467-754; *Prvi crnogorski bataljon*, those who joined the battalion 1942-1945 by year, Cyrillic, book pp. 713-795; Božović, *Rudarska četa*, the company at Rudo with bios (PDF pp. 426-430) | 17,661 |
 | 2 | Prva Lička "Marko Orešković" | `data-extraction/parse_soldiers.py` | `soldiers.json` | 1 PDF | 9,863 |
 | 3 | Druga Lička | via `scripts/` (fallen); `data-extraction/parse_druga_licka_prezivjeli.py` (survivors); `data-extraction/parse_druga_licka_sjecanja_poginuli.py` (fallen, memoir book) | `druga-licka-soldiers.json` | 3 PDFs (fallen; survivors and fallen from the memoir book, two columns) | 7,591 |
 | 4 | Ljubljanska (10. SNOUB) | `data-extraction/parse_ljubljanska_v2.py` | `ljubljanska-soldiers.json` | 1 PDF | 3,175 |
@@ -152,6 +152,9 @@ Historical archive website for searching ~449,000 WWII Yugoslav partisan soldier
 | 149 | Turopoljsko-posavski partizanski odred | `data-extraction/parse_turopoljsko_posavski_odred.py` (table) | `turopoljsko-posavski-odred-soldiers.json` | 1 PDF (Huzjak: the fallen, the shot and dead; book pp. 17-20) | 115 |
 | 161 | Treći diverzantski odred | `data-extraction/parse_3_diverzantski_odred.py` | `3-diverzantski-odred-soldiers.json` | 1 PDF (Prilog IV: everyone, names only, two columns, ** fallen, * died after the war; the fallen with duty and year; book pp. 587-591) | 404 |
 | 162 | Prvi tenkovski bataljon | `data-extraction/parse_1_tenkovski_bataljon.py` | `1-tenkovski-bataljon-soldiers.json` | 1 PDF (the roll of the tank platoon, company and battalion, numbered names, two columns; book pp. 337-340) | 251 |
+| 163 | Proleterski bataljon Bosanske krajine | `data-extraction/parse_proleterski_bataljon_bk.py` | `proleterski-bataljon-bk-soldiers.json` | 1 PDF (a bio beside each fighter's portrait, in blocks that stand anywhere on the page; book pp. 256-362) | 296 |
+| 164 | Kozjanski odred | `data-extraction/parse_kozjanski_odred.py` | `kozjanski-odred-soldiers.json` | 1 PDF (a table: name, birth, joined, trade, note; Teropšič II, PDF pp. 78-418, its scans made 1-bit) | 3493 |
+| 165 | 9. srpska | `data-extraction/parse_9_srpska.py` | `9-srpska-soldiers.json` | 2 PDFs as one (znaci 121_1, 121_2, Cyrillic: the 377 at its founding, the officers, the women; the book's roll of bios is not on znaci.org) | 468 |
 | 122 | Ostali borci (not a unit) | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci.json` | none of its own: the entries of the books across units that no record took (see "Ostali borci") | 18,442 |
 | 131-138 | Ostali borci, the 1964 census's parts (not units): Slovenija, Hrvatska, Bosna i Hercegovina, Crna Gora, Makedonija, Srbija, Kosovo i Metohija, Vojvodina | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci-<slovenija, hrvatska, bih, crna-gora, makedonija, srbija, kosovo, vojvodina>.json` | none of their own: the census's fallen partisans whom no record took, one part a volume | 157,240 |
 
@@ -281,7 +284,7 @@ Five more Karlovac volumes, their fallen only, each a config for `_karlovac_list
 
 A list published only as a web page (1. Dalmatinska, Mačvanski odred) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0149), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0165), last 6 = sequence.
 
 ## Known OCR Issues
 

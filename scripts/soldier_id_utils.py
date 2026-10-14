@@ -152,6 +152,9 @@ BRIGADE_CODES = {
     161: 'Treći diverzantski odred',
     162: 'Prvi tenkovski bataljon',
     163: 'Proleterski bataljon Bosanske krajine',
+    164: 'Kozjanski odred',
+    165: '9. srpska',
+    166: '4. prekomorska',
     # Add new brigades here with next available code
 }
 

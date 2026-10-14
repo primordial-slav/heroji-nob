@@ -1198843,6 +1198843,53 @@
     "reason": "Same soldier in 1-2-prekomorska.pdf (padli) and 1-2-prekomorska.pdf (vodilni kader)"
   },
   {
+    "id": 155193,
+    "action": "edit",
+    "soldier_id": "0139000166",
+    "fields": {
+      "birth_place": "Bosanska Dubica"
+    },
+    "reason": "The field extractor ran the birthplace on into the bio (\"u Jokšiu kod Bosanske Dubice u vazduhoplovstvu NOV i POJ od 23. 5. 1942. ...\"); the municipality the bio names"
+  },
+  {
+    "id": 155194,
+    "action": "edit",
+    "soldier_id": "0143000081",
+    "fields": {
+      "death_place": "Split"
+    },
+    "reason": "Died in the hospital at Split of wounds from Gospić (\"u. v bolnišnici Split za posledicami ran\"); the parser took the rest of the sentence as the place"
+  },
+  {
+    "id": 155195,
+    "action": "edit",
+    "soldier_id": "0143000220",
+    "fields": {
+      "birth_place": "Ponikve, Tolmin",
+      "death_place": ""
+    },
+    "reason": "Died of wounds from the fight at Podturn, place of death not given; \"Tolrnin\" is the scan's Tolmin"
+  },
+  {
+    "id": 155196,
+    "action": "edit",
+    "soldier_id": "0163000004",
+    "fields": {
+      "birth_place": "Otiš-Lušci Palanka, Sanski Most",
+      "death_place": "Bijela, Daruvar"
+    },
+    "reason": "Fell \"na Skupiduši — Bijela kod Daruvara u Slavoniji\"; \"Palaka\" is the scan's Palanka"
+  },
+  {
+    "id": 155197,
+    "action": "edit",
+    "soldier_id": "0163000174",
+    "fields": {
+      "birth_place": "Rašinovac, Bosanski Petrovac"
+    },
+    "reason": "The birthplace ran on into ethnicity and trade"
+  },
+  {
     "id": 200001,
     "action": "reference",
     "soldier_id": "0002008592",
