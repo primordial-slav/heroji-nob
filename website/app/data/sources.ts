@@ -1901,6 +1901,15 @@ export const sources: PdfSource[] = [
     description: 'Knjiga o ljudima sela Križ kod Trsta u ratu: životopisi palih (uneti su samo oni koji su bili u partizanima ili u vojsci), i tabele Križana u NOVJ i boraca NOV koji su živeli u Križu, s ocem, rođenjem, stupanjem u NOV, činom i jedinicom. Dobrovoljci u Španiji, Križani u italijanskim jedinicama i deportirci nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
+    id: 'vinodolska-selca',
+    title: 'Vinodolska Selca u borbi',
+    author: 'Vinko Antić',
+    pdfPath: '/pdfs/vinodolska-selca.pdf',
+    thumbnail: '/images/pdf-thumbs/vinodolska-selca.jpg',
+    brigadeName: '',
+    description: 'Iz priloga knjige o Selcima kod Crikvenice u ratu: spisak boraca iz Selaca poginulih u NOB, s dužnošću, jedinicom, rođenjem i pogibijom, i prvoborci i nosioci Partizanske spomenice 1941. Spisak organizovanih učesnika NOB (samo imena, s članicama AFŽ-a i odbornicima) i spiskovi žrtava nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

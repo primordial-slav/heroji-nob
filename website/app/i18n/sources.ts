@@ -458,6 +458,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz knjige o otrocih Kozare v vojni, poglavje „Pali kao borci narodnooslobodilačkog rata”: 370 kozarskih dečkov in deklic, mlajših od 15 let, ki so padli kot borci, po občinah, s krajem in letnicama rojstva in smrti (besedilo na znaci.org, brez skenirane knjige). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'krizani-v-boju-za-svobodo':
       'Knjiga o ljudeh vasi Križ pri Trstu v vojni: življenjepisi padlih (vneseni so le tisti, ki so bili v partizanih ali v vojski), in tabeli Križanov v NOVJ in borcev NOV, ki so živeli v Križu, z očetom, rojstvom, vstopom v NOV, činom in enoto. Prostovoljci v Španiji, Križani v italijanskih enotah in deportiranci niso vneseni. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
+    'vinodolska-selca':
+      'Iz prilog knjige o Selcah pri Crikvenici v vojni: seznam borcev iz Selc, padlih v NOB, z dolžnostjo, enoto, rojstvom in smrtjo, ter prvoborci in nosilci Partizanske spomenice 1941. Seznam organiziranih udeležencev NOB (le imena, s članicami AFŽ in odborniki) in seznami žrtev niso vneseni. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -917,6 +919,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од книгата за децата на Козара во војната, поглавјето „Pali kao borci narodnooslobodilačkog rata”: 370 козарски момчиња и девојчиња помлади од 15 години кои загинале како борци, по општини, со местото и годините на раѓање и загинување (текст на znaci.org, без скенирана книга). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'krizani-v-boju-za-svobodo':
       'Книга за луѓето од селото Криж кај Трст во војната: животописите на загинатите (внесени се само оние што биле во партизаните или во војската), и табелите на Крижаните во НОВЈ и на борците на НОВ што живееле во Криж, со таткото, раѓањето, стапувањето во НОВ, чинот и единицата. Доброволците во Шпанија, Крижаните во италијански единици и депортираните не се внесени. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
+    'vinodolska-selca':
+      'Од прилозите на книгата за Селце кај Цриквеница во војната: списокот на борците од Селце загинати во НОБ, со должноста, единицата, раѓањето и загинувањето, и првоборците и носителите на Партизанската споменица 1941. Списокот на организираните учесници во НОБ (само имиња, со членките на АФЖ и одборниците) и списоците на жртвите не се внесени. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1375,6 +1379,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From the book on the children of Kozara in the war, the chapter “Pali kao borci narodnooslobodilačkog rata”: the 370 boys and girls of Kozara under fifteen who fell as fighters, by municipality, with place and years of birth and death (text on znaci.org, no scan of the book). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'krizani-v-boju-za-svobodo':
       'A book on the people of Križ (Santa Croce) by Trieste in the war: the biographies of the fallen (only those who were partisans or in the army were entered), and the tables of the men and women of Križ in the Yugoslav army and of the fighters who lived there, with father, birth, joining, rank and unit. The volunteers in Spain, those in Italian units and the deportees were not entered. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+    'vinodolska-selca':
+      'From the appendices of a book on Selce near Crikvenica in the war: the fighters of Selce who fell, with duty, unit, birth and death, and the first fighters and holders of the Partisan Commemorative Medal of 1941. The list of organized participants (names only, with the AFŽ women and committee members) and the lists of victims were not entered. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
