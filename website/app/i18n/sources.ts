@@ -412,6 +412,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 12): padli borci z območja občine Drežnica 1941–1945 (str. 865–876), po vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznama žrtev fašističnega terorja in vojne iz iste knjige nismo vnesli.',
     'hak-16-gornje-dubrave':
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 16): padli borci z območja občine Gornje Dubrave 1941–1945 (str. 889–899), po vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznama žrtev fašističnega terorja in vojne iz iste knjige nismo vnesli.',
+    'sjenicak':
+      'Kronika kordunske vasi, ki jo je izdal Zgodovinski arhiv v Karlovcu, z dvema njenima seznamoma: padli in umrli borci 1941–1945 iz Donjega, Gornjega in Lasinjskega Sjeničaka (str. 330–338), po vaseh, z rojstvom, potjo v NOB in smrtjo, ter nosilci Partizanske spomenice 1941 (str. 385–389). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom in prehladom iz iste knjige nismo vnesli.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -825,6 +827,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од зборникот на Историскиот архив во Карловац (кн. 12): паднатите борци од општината Дрежница 1941–1945 (стр. 865–876), по села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
     'hak-16-gornje-dubrave':
       'Од зборникот на Историскиот архив во Карловац (кн. 16): паднатите борци од општината Горње Дубраве 1941–1945 (стр. 889–899), по села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
+    'sjenicak':
+      'Хроника на едно кордунско село, издадена од Историскиот архив во Карловац, со два нејзини списока: паднатите и умрените борци 1941–1945 од Долни, Горни и Ласињски Сјеничак (стр. 330–338), по села, со раѓање, пат во НОБ и смрт, и носителите на Партизанската споменица 1941 (стр. 385–389). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус и настинка од истата книга не се внесени.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1237,6 +1241,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From the Karlovac Historical Archive’s collection (vol. 12): the fighters from the municipality of Drežnica who fell in 1941–1945 (pp. 865–876), by village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s list of victims of fascist terror and of the war was left out.',
     'hak-16-gornje-dubrave':
       'From the Karlovac Historical Archive’s collection (vol. 16): the fighters from the municipality of Gornje Dubrave who fell in 1941–1945 (pp. 889–899), by village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s list of victims of fascist terror and of the war was left out.',
+    'sjenicak':
+      'The chronicle of a Kordun village, published by the Karlovac Historical Archive, with two of its lists: the fighters from Donji, Gornji and Lasinjski Sjeničak who fell or died in 1941–1945 (pp. 330–338), by village, with birth, the way into the war and death, and the holders of the Partisan Commemorative Medal 1941 (pp. 385–389). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus and cold were left out.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
