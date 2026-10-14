@@ -534,6 +534,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljen 8. avgusta 1943 pri Čički Poljani. Padli borci odreda ter tisti, ki so jih sovražniki ustrelili ali so umrli med vojno.',
   },
+  'zascitni-bataljon-vpv': {
+    name: 'Zaščitni bataljon IOOF in CK KPS',
+    description:
+      'Ustanovljen aprila 1944 iz čet, ki so od leta 1942 varovale baze in člane političnega vodstva Slovenije. Preživeli in padli pripadniki.',
+  },
   '1-zagorska-brigada': {
     name: '1. zagorska brigada',
     description:
@@ -1285,6 +1290,11 @@ const mk: Record<string, UnitText> = {
     name: 'Туропољско-посавски партизански одред',
     description:
       'Формиран на 8 август 1943 кај Чичка Пољана. Загинатите борци на одредот и оние што непријателите ги стрелаа или умреа во војната.',
+  },
+  'zascitni-bataljon-vpv': {
+    name: 'Заштитен баталјон на ИООФ и ЦК КПС',
+    description:
+      'Формиран во април 1944 од четите што од 1942 ги чуваа базите и членовите на политичкото раководство на Словенија. Преживеаните и загинатите припадници.',
   },
   '1-zagorska-brigada': {
     name: '1-ва загорска бригада',
@@ -2039,6 +2049,11 @@ const en: Record<string, UnitText> = {
     name: 'Turopolje-Posavina Partisan Detachment',
     description:
       'Formed on 8 August 1943 near Čička Poljana. Its fighters killed in action, and those shot by the enemy or who died during the war.',
+  },
+  'zascitni-bataljon-vpv': {
+    name: 'Protection Battalion of the Slovene Partisan Leadership',
+    description:
+      'Formed in April 1944 from the companies that had guarded the bases and members of the Slovene political leadership since 1942. Its members who survived and those who fell.',
   },
   '1-zagorska-brigada': {
     name: '1st Zagorje Brigade',

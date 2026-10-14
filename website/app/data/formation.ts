@@ -485,6 +485,10 @@ export const formation: Record<string, Formation> = {
     date: '1942-02-21', place: 'Mosor', source: 'https://znaci.org/00003/794.pdf',
     note: 'Velić, Petrić, Mosorski partizanski odred (str. 569–571): borci odreda „Od 21. veljače 1942. do 16. studenog 1944.“; I mosorski PO osnovan 21. veljače 1942, rasformiran 19. travnja 1942, ponovo formiran 11. listopada 1943, rasformiran 10. studenog 1944 (Anić i dr., tabela NOP odreda Hrvatske).',
   },
+  'zascitni-bataljon-vpv': {
+    date: '1944-04', place: 'Kočevski Rog (Baza 20)', source: 'https://znaci.org/00003/757.pdf',
+    note: 'Mihevc, Na nevarnih poteh, str. 117-118: zaščitne čete Baze 20, Baze 80 (SNOS), PK Skoja in partijske šole (Baza 15 A) „so se v političnem vodstvu aprila 1944 odločili“ združiti v bataljon, „ki so ga poimenovali Zaščitni bataljon IOOF in CK KPS“; formalno 5. bataljon 2. brigade 1. divizije KNOJ. Baze vodstva, ki jih je enota varovala od 1942 (Tisovec, Novi breg, Podlipoglav, Dolomiti), so v seznamu pripadnikov (str. 293).',
+  },
   'turopoljsko-posavski-odred': {
     date: '1943-08-08', place: 'Čička Poljana', source: 'https://znaci.org/00003/835.pdf',
     note: 'Huzjak, Turopoljsko-posavski partizanski odred (str. 5): „8. kolovoza 1943. godine na cvijetnim livadama kod sela Čička Poljana, pod vodstvom Kotarskog komiteta Komunističke partije Hrvatske — Velika Gorica osnovan je Turopoljsko-posavski partizanski odred.“',

@@ -1387,6 +1387,15 @@ export const sources: PdfSource[] = [
     description: 'Popis poginulih boraca odreda (99, s mestom rođenja, datumom i mestom pogibije) i streljani i umrli borci odreda u ratu (16), str. 17–20 (Muzej Turopolja, Velika Gorica 1983)'
   },
   {
+    id: 'zascitna-enota-vpv',
+    title: 'Na nevarnih poteh: razvoj zaščitne enote vojaško političnega vodstva narodnoosvobodilnega boja Slovenije 1943–1945',
+    author: 'Mira Mihevc',
+    pdfPath: '/pdfs/zascitna-enota-vpv.pdf',
+    thumbnail: '/images/pdf-thumbs/zascitna-enota-vpv.jpg',
+    brigadeName: 'Zaščitni bataljon IOOF in CK KPS',
+    description: 'Pripadnici zaštitne jedinice vojno-političkog rukovodstva NOB Slovenije koji su preživeli rat, s datumom i mestom rođenja i bazama u kojima su služili, zatim poginuli borci, narodni heroji i nosioci Spomenice 1941 (str. 293–310).'
+  },
+  {
     id: '1-zagorska',
     title: '1. zagorska brigada — spisak poginulih boraca i rukovodilaca',
     author: 'Vladimir Hlaić',

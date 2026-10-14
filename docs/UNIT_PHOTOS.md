@@ -153,6 +153,7 @@ Point the unit's `image` in `units.ts` at `/images/<Image>` when it's added.
 | Unit | Image | Photo | Description |
 |---|---|---|---|
 | Kokrški odred | `kokrski-odred.jpg` | [book, p. 381](https://www.znaci.org/00003/1052.pdf#page=381) | Skupina borcev Kokrškega odreda z nekaterimi, jugoslovanskim borcem naklonjenimi britanskimi vojaki pred tiskarno, kmalu po prihodu v Celovec *(caption in the unit's book)* — Nothing in the gallery names the odred; the photo is from its book (Jan, III, p. 377), a 1-bit page scan: the crop keeps the photo, the descreen softens its dots. |
+| Zaščitni bataljon IOOF in CK KPS | `zascitni-bataljon-vpv.jpg` | [book, p. 127](https://www.znaci.org/00003/757.pdf#page=127) | Skupina borcev zaščitnega bataljona VPV na Tanci Gori poleti 1944; od leve stojijo: Franc Štrekelj, Franc Bradač, Franc Pajk, Franc Trkman, Tone Končan, Kazimir Klešnik, Vlado Avsec, Branko Jereb *(caption in the unit's book)* — From its book (Mihevc, Na nevarnih poteh), which prints some twenty captioned photos of the battalion and its companies; the gallery wasn't searched for it. |
 
 ## No qualifying photo
 

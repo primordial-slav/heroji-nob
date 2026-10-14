@@ -92,6 +92,7 @@ TWO_COLUMN = {
     'iskra-in-plamen-padli.pdf',            # Iskra in plamen 3: the dead of Polje's villages, the fallen in the army
     'cazinska-krajina-pali-borci.pdf',      # Stradanja u Cazinskoj krajini: the fallen fighters, a line each
     'susak-rijeka-spomenica.pdf',           # Sušak i Rijeka u NOB: the spomenica's holders, a name a line
+    'zascitna-enota-vpv.pdf',               # the protection battalion of the Slovene leadership: four lists
     '8-krajiska-sjecanja-poginuli.pdf',     # Osma krajiška - sjećanja boraca: the fallen, landscape pages
     'mostarski-bataljon.pdf',               # Mostarski bataljon (Ćemalović): the fighters' bios
     '18-srpska.pdf',                        # 18. srpska (Milosavljević): everyone in the brigade
@@ -389,6 +390,7 @@ class PageCache:
 ONE_LINE_ENTRIES = {
     'cazinska-krajina-pali-borci.pdf': range(1, 35),  # the fallen fighters of the Cazin region, a line each
     'susak-rijeka-spomenica.pdf': range(1, 3),        # the spomenica's holders of the Rijeka municipality
+    'zascitna-enota-vpv.pdf': range(17, 19),          # the protection battalion's spomenica holders, a name a line
     '9-dalmatinska-divizija.pdf': range(1, 7),        # names only, a name a line
     'turopoljsko-posavski-odred.pdf': range(1, 5),    # a table, a row an entry
     '3-dalmatinska-poginuli.pdf': range(1, 4),

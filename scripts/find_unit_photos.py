@@ -824,6 +824,16 @@ UNITS = {
         photo=7720, card="Borci VII divizije na železničkoj stanici u Glini, januara 1944.",
         note="Glina is in Banija, and znaci.org tags the photo with the 7. banijska divizija. The gallery also has a column of "
              "the division in the Rama valley in March 1943 (10585, a narrow print) and its wounded at the Neretva (9035)."),
+    "zascitni-bataljon-vpv": dict(
+        name="Zaščitni bataljon IOOF in CK KPS", tags=[],
+        caption=r"zaščit\w*\s+(?:bataljon|enot|čet|patrul)|baz[ai]\s+20\b|\bVPV\b",
+        photo=None,
+        book=dict(pdf="00003/757.pdf", page=127, xref=841,
+                  caption="Skupina borcev zaščitnega bataljona VPV na Tanci Gori poleti 1944; od leve stojijo: Franc "
+                          "Štrekelj, Franc Bradač, Franc Pajk, Franc Trkman, Tone Končan, Kazimir Klešnik, Vlado Avsec, "
+                          "Branko Jereb"),
+        note="From its book (Mihevc, Na nevarnih poteh), which prints some twenty captioned photos of the battalion and its "
+             "companies; the gallery wasn't searched for it."),
 }
 
 # Words that suggest a group of soldiers; words that suggest something else.

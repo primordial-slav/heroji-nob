@@ -1412,6 +1412,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'upper_all',
     },
+    150: {
+        'name': 'Zaščitni bataljon IOOF in CK KPS',
+        'json_file': 'zascitna-enota-soldiers.json',
+        'language': 'sl',
+        'name_format': 'slovenian',   # "Anžur Anton-Bernard, 18.11.1913, Podmolnik; 24; † 1971"
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
 }
 
 # Ostali borci: the soldiers of the books across units who have no record of a unit (122), and the census's (131-138).

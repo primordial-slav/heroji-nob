@@ -428,6 +428,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Drugi del seznama iz iste knjige (str. 573–648): borci komand mest ter partijsko-politični in terenski delavci s področja Mosorja. Vneseni so le borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske; terenski delavci, odborniki in članice AFŽ niso vneseni; pripadniki delovnih bataljonov so.',
     'turopoljsko-posavski-odred':
       'Seznam padlih borcev odreda (99, s krajem rojstva, datumom in krajem smrti) ter ustreljeni in umrli borci odreda med vojno (16), str. 17–20 (Muzej Turopolja, Velika Gorica 1983)',
+    'zascitna-enota-vpv':
+      'Pripadniki zaščitne enote vojaško-političnega vodstva NOB Slovenije, ki so preživeli vojno, z datumom in krajem rojstva in bazami, v katerih so služili, nato padli borci, narodni heroji in nosilci Partizanske spomenice 1941 (str. 293–310).',
     'hak-19-vojnic':
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 19): padli borci z območja okraja Vojnić 1941–1945 (str. 1123–1177), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
     'hak-18-slunj-veljun':
@@ -911,6 +913,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Вториот дел од пописот од истата книга (стр. 573–648): борците на командите на места, партиско-политичките и теренските работници од подрачјето на Мосор. Внесени се само борците, оние за кои записот вели дека биле борци или наведува воена должност или единица на војската; теренските работници, одборниците и членките на АФЖ не се внесени; припадниците на работните баталјони се.',
     'turopoljsko-posavski-odred':
       'Список на загинатите борци на одредот (99, со место на раѓање, датум и место на загинувањето) и стрелани и починати борци на одредот во војната (16), стр. 17–20 (Музеј на Туропоље, Велика Горица 1983)',
+    'zascitna-enota-vpv':
+      'Припадниците на заштитната единица на воено-политичкото раководство на НОБ на Словенија што ја преживеаја војната, со датум и место на раѓање и базите во кои служеле, потоа загинатите борци, народните херои и носителите на Партизанската споменица 1941 (стр. 293–310).',
     'hak-19-vojnic':
       'Од зборникот на Историскиот архив во Карловац (кн. 19): паднатите борци од околијата Војниќ 1941–1945 (стр. 1123–1177), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус од истата книга не се внесени.',
     'hak-18-slunj-veljun':
@@ -1393,6 +1397,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The second part of the same book’s roll (pp. 573–648): the fighters of the town commands and the party, political and field workers of the Mosor area. Only the fighters were entered, those whose entry says they fought or names a military duty or an army unit; field workers, council members and AFŽ members were left out; the labour battalions’ men were entered.',
     'turopoljsko-posavski-odred':
       'The detachment’s fighters killed in action (99, with birthplace, date and place of death) and those shot or who died during the war (16), pp. 17–20 (Turopolje Museum, Velika Gorica 1983)',
+    'zascitna-enota-vpv':
+      'The members of the protection unit of the Slovene partisan leadership who survived the war, with date and place of birth and the bases they served at, then its fallen, its national heroes and the holders of the Partisan Commemorative Medal 1941 (pp. 293–310).',
     'hak-19-vojnic':
       'From the Karlovac Historical Archive’s collection (vol. 19): the fighters from the district of Vojnić who fell in 1941–1945 (pp. 1123–1177), by municipality and village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus were left out.',
     'hak-18-slunj-veljun':

@@ -1111,6 +1111,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/turopoljsko-posavski-odred.pdf']
   },
   {
+    id: 'zascitni-bataljon-vpv',
+    name: 'Zaščitni bataljon IOOF in CK KPS',
+    nameEn: 'Protection Battalion of the Slovene Partisan Leadership',
+    description: 'Formiran u aprilu 1944. od četa koje su od 1942. čuvale baze i članove političkog rukovodstva Slovenije. Preživeli i poginuli pripadnici.',
+    image: '/images/zascitni-bataljon-vpv.jpg',
+    soldierCount: 404,
+    dataFile: '/zascitna-enota-soldiers.json',
+    pdfFiles: ['/pdfs/zascitna-enota-vpv.pdf']
+  },
+  {
     id: '1-zagorska-brigada',
     name: '1. zagorska brigada',
     nameEn: '1st Zagorje Brigade',
