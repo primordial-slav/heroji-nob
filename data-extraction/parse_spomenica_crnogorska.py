@@ -144,6 +144,12 @@ def split_name(text: str) -> tuple[str, str, str, str]:
         father, rest = rest[0], rest[1:]
     given = rest[0] if rest else ''
     nick = ' '.join(rest[1:])
+    # an initial is a letter and its full stop, the OCR's Latin X the Cyrillic Х ("Nurak Х. Džeka"); a capital the OCR
+    # set inside a name is a small letter ("МилоbиН")
+    if re.fullmatch(r'[A-ZČĆŽŠĐX][a-zčćžšđ]?\.?', father):
+        father = father.rstrip('.').replace('X', 'H') + '.'
+    fix = lambda w: w[0] + w[1:].lower() if w and '-' not in w and re.search(r'[a-zčćžšđ][A-ZČĆŽŠĐ]', w) else w
+    last, given = fix(last), fix(given)
     if '-' in given and all(len(p) > 2 for p in given.split('-')):
         given, nick = given.split('-', 1)[0], (given.split('-', 1)[1] + (' ' + nick if nick else '')).strip()
     return last, father, given, nick
@@ -165,7 +171,7 @@ def main() -> None:
                  f"godina smrti {dy}" if dy else '', f"mjesto pogibije {c['dp']}" if c['dp'] else '']
         info = f"{TITLE}, {r['opstina']}: " + '; '.join(p for p in parts if p)
         rec = {'soldier_id': f'{PREFIX}{n:06d}', 'name': c['name'], 'last_name': last, 'also': [], 'first_name': given,
-               'nick': nick, 'fathers_name': father.rstrip('.') if len(father.rstrip('.')) > 1 else father.rstrip('.'),
+               'nick': nick, 'fathers_name': father if re.fullmatch(r'\w\.', father) else father.rstrip('.'),
                'birth_year': by, 'born_in': ', '.join(x for x in (c['bp'], r['opstina']) if x),
                'death_year': dy, 'death_place': c['dp'], 'opstina': r['opstina'], 'no': r['no'],
                'additional_info': info, 'list': TITLE,
