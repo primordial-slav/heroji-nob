@@ -1386,7 +1386,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'vinodolska-selca':
       'From the appendices of a book on Selce near Crikvenica in the war: the fighters of Selce who fell, with duty, unit, birth and death, and the first fighters and holders of the Partisan Commemorative Medal of 1941. The list of organized participants (names only, with the AFŽ women and committee members) and the lists of victims were not entered. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'susak-rijeka-spomenica':
-      'From the appendices of a book on Sušak and Rijeka in the war: the holders of the Partisan Commemorative Medal of 1941 from the Rijeka municipality, name and place, as the veterans' board compiled them. The lists of the KPJ and SKOJ members of 1941 who fell were not entered, since they do not say who was a fighter. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
+      'From the appendices of a book on Sušak and Rijeka in the war: the holders of the Partisan Commemorative Medal of 1941 from the Rijeka municipality, name and place, as the veterans’ board compiled them. The lists of the KPJ and SKOJ members of 1941 who fell were not entered, since they do not say who was a fighter. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':
