@@ -76,7 +76,7 @@ export const units: Unit[] = [
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. Borci brigade.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 6071,
+    soldierCount: 6067,
     dataFile: '/2-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf']
   },
@@ -396,7 +396,7 @@ export const units: Unit[] = [
     nameEn: '2nd Proletarian Brigade',
     description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta.',
     image: '/images/druga-proleterska-brigada.jpg',
-    soldierCount: 2237,
+    soldierCount: 2235,
     dataFile: '/druga-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf']
   },
@@ -406,7 +406,7 @@ export const units: Unit[] = [
     nameEn: '4th Proletarian Montenegrin Brigade',
     description: 'Formirana 10. juna 1942. Borci brigade u bici na Sutjesci, i borci i starešine poginuli od 1942. do 1945.',
     image: '/images/4-proleterska-brigada.jpg',
-    soldierCount: 3526,
+    soldierCount: 3525,
     dataFile: '/4-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf', '/pdfs/4-proleterska-poginuli.pdf']
   },
@@ -456,7 +456,7 @@ export const units: Unit[] = [
     nameEn: '8th Banija Brigade',
     description: 'Formirana 7. septembra 1942. u Obljaju kod Gline. Borci brigade u bici na Sutjesci, maja i juna 1943, i poginuli i umrli borci brigade.',
     image: '/images/8-banijska-brigada.jpg',
-    soldierCount: 1556,
+    soldierCount: 1555,
     dataFile: '/8-banijska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-8-banijska.pdf', '/pdfs/8-banijska-poginuli.pdf']
   },
@@ -496,7 +496,7 @@ export const units: Unit[] = [
     nameEn: '7th Krajina Brigade',
     description: 'Formirana 27. decembra 1942. u Orahovljanima kod Ključa. Preživeli i poginuli borci i starešine, od formiranja do kraja rata.',
     image: '/images/7-krajiska-brigada.jpg',
-    soldierCount: 4325,
+    soldierCount: 4324,
     dataFile: '/7-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-7-krajiska.pdf', '/pdfs/7-krajiska-spisak.pdf']
   },
@@ -976,7 +976,7 @@ export const units: Unit[] = [
     nameEn: '22nd Division',
     description: 'Formirana maja 1944. na desnoj obali Južne Morave. Poginuli borci 8., 10. i 12. srpske brigade.',
     image: '/images/22-divizija.jpg',
-    soldierCount: 1005,
+    soldierCount: 1004,
     dataFile: '/22-divizija-soldiers.json',
     pdfFiles: ['/pdfs/22-divizija.pdf']
   },
@@ -1496,7 +1496,7 @@ export const units: Unit[] = [
     nameEn: 'Cankar Battalion',
     description: 'Formiran 5. avgusta 1941. na Vodiškoj planini na Jelovici; u januaru 1942. bitka za Dražgoše. Poginuli borci bataljona i preživeli učesnici dražgoške bitke.',
     image: '/images/pdf-thumbs/cankarjev-bataljon.jpg',
-    soldierCount: 218,
+    soldierCount: 211,
     dataFile: '/cankarjev-bataljon-soldiers.json',
     pdfFiles: ['/pdfs/cankarjev-bataljon.pdf']
   },
@@ -1506,7 +1506,7 @@ export const units: Unit[] = [
     nameEn: 'Kokra Detachment',
     description: 'Formiran 18. juna 1942. na Kališču pod Storžičem, a drugi put 27. avgusta 1944. u Dragi kod Begunja. Borci prvog odreda s biografijama i spisak drugog po štabovima, službama i četama.',
     image: '/images/kokrski-odred.jpg',
-    soldierCount: 1366,
+    soldierCount: 1357,
     dataFile: '/kokrski-odred-soldiers.json',
     pdfFiles: ['/pdfs/kokrski-odred.pdf', '/pdfs/kokrski-odred-1.pdf']
   },
@@ -1527,7 +1527,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 36335,
+    soldierCount: 36771,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1549,7 +1549,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Croatia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Hrvatske, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-hrv.jpg',
-    soldierCount: 51026,
+    soldierCount: 51025,
     dataFile: '/ostali-borci-hrvatska.json',
     pdfFiles: []
   },
@@ -1571,7 +1571,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Montenegro',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Crne Gore, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-crg.jpg',
-    soldierCount: 4889,
+    soldierCount: 4887,
     dataFile: '/ostali-borci-crna-gora.json',
     pdfFiles: []
   },
@@ -1582,7 +1582,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Macedonia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Makedonije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-mak.jpg',
-    soldierCount: 4762,
+    soldierCount: 4761,
     dataFile: '/ostali-borci-makedonija.json',
     pdfFiles: []
   },
@@ -1593,7 +1593,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Serbia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
-    soldierCount: 32591,
+    soldierCount: 32446,
     dataFile: '/ostali-borci-srbija.json',
     pdfFiles: []
   },
@@ -1604,7 +1604,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Kosovo and Metohija',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Kosova i Metohije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-kos.jpg',
-    soldierCount: 2651,
+    soldierCount: 2650,
     dataFile: '/ostali-borci-kosovo.json',
     pdfFiles: []
   },
@@ -1615,7 +1615,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Vojvodina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Vojvodine, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-voj.jpg',
-    soldierCount: 9892,
+    soldierCount: 9891,
     dataFile: '/ostali-borci-vojvodina.json',
     pdfFiles: []
   }
