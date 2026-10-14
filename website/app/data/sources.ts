@@ -433,6 +433,24 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca Prve dalmatinske proleterske NOU brigade poginulih u toku narodnooslobodilačkog rata (tekst na znaci.org, bez skenirane knjige)'
   },
   {
+    id: '1-dalmatinska-monografija',
+    title: 'Prva dalmatinska proleterska brigada — komandiri i komesari četa, narodni heroji, poginuli',
+    author: 'Mirko Novović, Stevan Petković',
+    pdfPath: '/pdfs/1-dalmatinska-monografija.pdf',
+    thumbnail: '/images/pdf-thumbs/1-dalmatinska-monografija.jpg',
+    brigadeName: '1. dalmatinska proleterska brigada',
+    description: 'Komandiri i politički komesari četa po bataljonima, biografije narodnih heroja brigade i spisak boraca poginulih u ratu, isti kao na znaci.org, ovde sa skeniranom knjigom'
+  },
+  {
+    id: 'zene-1-dalmatinska',
+    title: 'Žene Hrvatske u narodnooslobodilačkoj borbi — žene borci I. dalmatinske proleterske brigade',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/zene-1-dalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/zene-1-dalmatinska.jpg',
+    brigadeName: '1. dalmatinska proleterska brigada',
+    description: 'Spisak žena boraca brigade iz 1944–1945 (dokument 368): dužnost i čin, datum i mesto rođenja, kada su stupile u NOV, odlikovanja i mišljenje štaba o svakoj'
+  },
+  {
     id: '16-slavonska-omladinska',
     title: '16. slavonska omladinska NOU brigada „Jože Vlahović“ — spiskovi poginulih i rukovodilaca',
     author: 'Stevo Pravdić, Nail Redžić',
@@ -505,6 +523,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: '6-istocnobosanska-dopuna',
+    title: 'Šesta proleterska istočnobosanska brigada — dopuna spiska boraca',
+    author: 'Rudi Petovar, Savo Trikić',
+    pdfPath: '/pdfs/6-istocnobosanska-dopuna.pdf',
+    thumbnail: '/images/pdf-thumbs/6-istocnobosanska-dopuna.jpg',
+    brigadeName: '6. istočnobosanska proleterska brigada',
+    description: 'Borci brigade čiji podaci nisu objavljeni u knjizi „Borbeni put Šeste proleterske brigade“ (1977), prikupljeni do 1981: rođenje, kada su stupili u NOB, dužnost, sudbina; i borci kojima nije utvrđeno mesto i vreme pogibije (str. 676 i dalje)'
+  },
+  {
     id: 'borci-sutjeske-10-hercegovacka',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',
@@ -521,6 +548,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/borci-sutjeske-7-banijska.jpg',
     brigadeName: '7. banijska brigada „Vasilj Gaćeša“',
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: '7-banijska-poginuli',
+    title: 'Sedma banijska brigada — spisak poginulih i umrlih',
+    author: 'Ljuban Đurić',
+    pdfPath: '/pdfs/7-banijska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/7-banijska-poginuli.jpg',
+    brigadeName: '7. banijska brigada „Vasilj Gaćeša“',
+    description: 'Nepotpun spisak poginulih u ratu i umrlih pripadnika brigade: rođenje, narodnost, zanimanje, kada su stupili u NOVJ, bataljon, gde i kada su pali (str. 394–462)'
   },
   {
     id: 'borci-sutjeske-8-banijska',
@@ -548,6 +584,24 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/borci-sutjeske-3-dalmatinska.jpg',
     brigadeName: '3. dalmatinska brigada',
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
+  },
+  {
+    id: '9-dalmatinska-divizija',
+    title: 'Dva rođenja Devete dalmatinske divizije — spisak poginulih i nestalih',
+    author: 'Obrad Egić',
+    pdfPath: '/pdfs/9-dalmatinska-divizija.pdf',
+    thumbnail: '/images/pdf-thumbs/9-dalmatinska-divizija.jpg',
+    brigadeName: '9. dalmatinska divizija',
+    description: 'Borci i rukovodioci divizije koji su poginuli i nestali u borbama od 11. februara do 15. aprila 1943, imena sa očevim imenom (str. 121–126)'
+  },
+  {
+    id: '3-dalmatinska-poginuli',
+    title: 'Dva rođenja Devete dalmatinske divizije — spisak poginulih i nestalih',
+    author: 'Obrad Egić',
+    pdfPath: '/pdfs/3-dalmatinska-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/3-dalmatinska-poginuli.jpg',
+    brigadeName: '3. dalmatinska brigada',
+    description: 'Poginuli i nestali borci i rukovodioci 3. samostalne dalmatinske brigade od 14. aprila do 6. juna 1943, imena sa očevim imenom (str. 126–128)'
   },
   {
     id: 'borci-sutjeske-16-banijska',
@@ -595,6 +649,15 @@ export const sources: PdfSource[] = [
     description: 'Prozivka boraca sa Sutjeske: svi borci brigade u bici, s podacima o svakom i šta je s njim bilo do kraja rata.'
   },
   {
+    id: '15-majevicka-spisak',
+    title: 'Petnaesta majevička brigada — spisak boraca',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/15-majevicka-spisak.pdf',
+    thumbnail: '/images/pdf-thumbs/15-majevicka-spisak.jpg',
+    brigadeName: '15. majevička brigada',
+    description: 'Narodni heroji brigade i spisak svih njenih boraca: godina i mesto rođenja, narodnost, zanimanje, kada su stupili u NOB i došli u brigadu, sudbina (str. 484–557)'
+  },
+  {
     id: 'borci-sutjeske-prva-proleterska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',
@@ -611,6 +674,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/prva-proleterska-stroj-u-rudom.jpg',
     brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
     description: 'Borci koji su 21. decembra 1941. stajali u stroju u Rudom, po štabovima, bataljonima i četama: rođenje, zanimanje, dužnost i šta je s kim bilo u ratu (str. 433–492). Zvezdica uz ime označava borca koji je poginuo u ratu.'
+  },
+  {
+    id: 'beogradski-bataljon',
+    title: 'Beogradski bataljon Prve proleterske brigade 1941–1945. — spisak boraca',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/beogradski-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/beogradski-bataljon.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Svi borci Beogradskog bataljona od prvih dana ustanka do 1. marta 1945, kada je postao 3. bataljon Prve proleterske, po tome kada su došli u bataljon: zanimanje, rođenje, članstvo u KPJ i SKOJ-u, šta je s kim bilo u ratu'
   },
   {
     id: 'borci-sutjeske-druga-proleterska',
@@ -692,6 +764,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/11-dalmatinska.jpg',
     brigadeName: '11. dalmatinska brigada',
     description: 'Popis boraca brigade: poginuli, nestali i preživeli (na dan 15. maja 1945): dužnost, rođenje, zanimanje, kada su stupili u NOB, sudbina (str. 479–600 knjige)'
+  },
+  {
+    id: 'zene-11-dalmatinska',
+    title: 'Žene Hrvatske u narodnooslobodilačkoj borbi — žene borci XI. dalmatinske brigade',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/zene-11-dalmatinska.pdf',
+    thumbnail: '/images/pdf-thumbs/zene-11-dalmatinska.jpg',
+    brigadeName: '11. dalmatinska brigada',
+    description: 'Spisak žena boraca brigade iz 1944–1945 (dokument 376): datum i mesto rođenja, dužnost i čin, kada su stupile u NOV, odlikovanja i mišljenje štaba o svakoj'
   },
   {
     id: '12-krajiska-poginuli',
@@ -1180,6 +1261,60 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih i umrlih boraca brigade i spisak preživelih boraca, po opštinama rođenja (str. 207–254)'
   },
   {
+    id: 'osjecka-zene',
+    title: 'Žene Hrvatske u narodnooslobodilačkoj borbi — žene borci Osječke brigade',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/osjecka-zene.pdf',
+    thumbnail: '/images/pdf-thumbs/osjecka-zene.jpg',
+    brigadeName: 'Osječka udarna brigada',
+    description: 'Drugarice Osječke brigade po bataljonima, kako ih je štab brigade popisao za I. kongres AFŽ Hrvatske (dokument 420): datum i mesto rođenja, od kada su u partizanima'
+  },
+  {
+    id: '4-brigada-slavonije',
+    title: '4. NOU brigada Slavonije (Druga brodska brigada) — spiskovi poginulih i ranjenih',
+    author: 'Stanko Obradović, Antun Miletić',
+    pdfPath: '/pdfs/4-brigada-slavonije.pdf',
+    thumbnail: '/images/pdf-thumbs/4-brigada-slavonije.jpg',
+    brigadeName: '4. brigada Slavonije',
+    description: 'Spisak poginulih boraca i rukovodilaca brigade (četa i dužnost, datum i mesto rođenja, datum i mesto pogibije) i spisak ranjenih (jedinica i dužnost, kada su ranjeni), prilozi 2 i 3 knjige (str. 164 i dalje)'
+  },
+  {
+    id: '12-slavonska-zene',
+    title: 'Dvanaesta slavonska — spisak žena boraca',
+    author: 'Jovan Kokot',
+    pdfPath: 'https://znaci.org/00001/46_225.htm',
+    thumbnail: '/images/pdf-thumbs/12-slavonska-zene.jpg',
+    brigadeName: '12. proleterska slavonska brigada',
+    description: 'Spisak žena boraca 12. proleterske slavonske brigade, poginulih, umrlih i preživelih, s kratkim životopisima (tekst na znaci.org, bez skenirane knjige; spisak svih boraca brigade knjiga je najavila, ali nije objavljen)'
+  },
+  {
+    id: 'zagrebacki-odred',
+    title: 'Zagrebački partizanski odred — popis boraca',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/zagrebacki-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/zagrebacki-odred.jpg',
+    brigadeName: 'Zagrebački partizanski odred',
+    description: 'Popis boraca odreda iz zbornika dokumenata i sećanja (str. 407–418): uglavnom preživeli koji su se posle rata prijavili SUBNOR-u u Zelini i poginuli koje pominju ratni dokumenti i sećanja; selo, opština i sudbina. Bataljoni koji su celi otišli u brigadu „Matija Gubec“ i u Zagorsku brigadu nisu u njemu.'
+  },
+  {
+    id: 'mosorski-odred',
+    title: 'Mosorski partizanski odred — popis boraca',
+    author: 'Miroslav Velić, Ante V. Petrić',
+    pdfPath: '/pdfs/mosorski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/mosorski-odred.jpg',
+    brigadeName: 'Mosorski partizanski odred',
+    description: 'Popis boraca Mosorskog partizanskog odreda 1942–1944 (prvi deo popisa, str. 355–562): I mosorski odred, Mosorski bataljon, Leteća mosorska četa i odred od oktobra 1943. do novembra 1944, s rođenjem, zanimanjem, dolaskom u odred i sudbinom. Drugi deo popisa, borci komandi mesta i terenski radnici, nije unet.'
+  },
+  {
+    id: 'turopoljsko-posavski-odred',
+    title: 'Turopoljsko-posavski partizanski odred — spisak poginulih i umrlih',
+    author: 'Višnja Huzjak',
+    pdfPath: '/pdfs/turopoljsko-posavski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/turopoljsko-posavski-odred.jpg',
+    brigadeName: 'Turopoljsko-posavski partizanski odred',
+    description: 'Popis poginulih boraca odreda (99, s mestom rođenja, datumom i mestom pogibije) i streljani i umrli borci odreda u ratu (16), str. 17–20 (Muzej Turopolja, Velika Gorica 1983)'
+  },
+  {
     id: '1-zagorska',
     title: '1. zagorska brigada — spisak poginulih boraca i rukovodilaca',
     author: 'Vladimir Hlaić',
@@ -1557,6 +1692,51 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/hak-7-plascanska-dolina.jpg',
     brigadeName: '',
     description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 7): pali borci s područja Plaščanske doline i okoline 1941–1945 (str. 689–701), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'hak-19-vojnic',
+    title: 'Kotar Vojnić u narodnooslobodilačkoj borbi i socijalističkoj revoluciji',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-19-vojnic.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-19-vojnic.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 19): pali borci s područja kotara Vojnić 1941–1945 (str. 1123–1177), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'hak-18-slunj-veljun',
+    title: 'Kotar Slunj i kotar Veljun u NOR i socijalističkoj izgradnji, 2. dio',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-18-slunj-veljun.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-18-slunj-veljun.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 18): pali borci s područja kotara Slunj i kotara Veljun 1941–1945 (str. 921–977), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'hak-15-duga-resa',
+    title: 'Duga Resa: radovi iz dalje prošlosti, NOB-e i socijalističke izgradnje',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-15-duga-resa.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-15-duga-resa.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 15): pali borci s područja sadašnje opštine Duga Resa 1941–1945 (str. 1060–1090), po opštinama i selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'hak-12-dreznica',
+    title: 'Partizanska Drežnica',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-12-dreznica.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-12-dreznica.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 12): pali borci s područja opštine Drežnica 1941–1945 (str. 865–876), po selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spisak žrtava fašističkog terora i rata iz iste knjige nije unet.'
+  },
+  {
+    id: 'hak-16-gornje-dubrave',
+    title: 'Općina Gornje Dubrave',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/hak-16-gornje-dubrave.pdf',
+    thumbnail: '/images/pdf-thumbs/hak-16-gornje-dubrave.jpg',
+    brigadeName: '',
+    description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 16): pali borci s područja opštine Gornje Dubrave 1941–1945 (str. 889–899), po selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spisak žrtava fašističkog terora i rata iz iste knjige nije unet.'
   },
   {
     id: 'krusevac-1944-poginuli',

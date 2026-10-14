@@ -532,6 +532,9 @@ UNITS = {
         name="9. srpska brigada", tags=[],
         caption=r"(?:9\.|devet\w*)\s+srpsk\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
         note="The gallery's only match (4909) shows the 19. srpska entering Negotin; znaci.org has no photo pages of its spomen-knjiga. The card shows the list's first page."),
+    "4-prekomorska-brigada": dict(
+        name="4. prekomorska brigada", tags=[],
+        caption=r"(?:4\.|[cč]etrt\w*)\s+prekomorsk\w*\s+brigad", photo=None),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,

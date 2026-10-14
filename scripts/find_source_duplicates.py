@@ -52,6 +52,7 @@ CORRECTIONS = ROOT / 'corrections.json'
 LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
     '13-krajiska.pdf': [(2, 'u brigadi avgusta i septembra 1943'), (25, 'članovi KPJ, maj 1945')],
+    '4-brigada-slavonije.pdf': [(1, 'poginuli'), (14, 'ranjeni')],
     'mostarski-bataljon.pdf': [(2, 'Konjički bataljon 1941-42'), (35, 'Mostarski bataljon 1942-43'),
                                (49, 'Mostarski bataljon u Mostarskom odredu 1943-44')],
     '4-splitska-brigada.pdf': [(1, 'poginuli'), (23, 'preživjeli')],

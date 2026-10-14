@@ -79,6 +79,18 @@
         "additional_info": "rođen 1921. godine u Sinju, borac 1 bat, poginuo u V ofanzivi.",
         "source_url": "https://znaci.org/00001/32_1.htm",
         "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010003",
+        "name": "Acalija I Ante",
+        "additional_info": "rođen 1921. godine u Sinju, borac I bat., poginuo u V ofanzn",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 41,
+        "pdf_x": 88.9,
+        "pdf_y": 182.5625,
+        "pdf_y_end": 191.1,
+        "pdf_x_end": 418.3,
+        "unit_file": "1-dalmatinska-soldiers.json"
       }
     ]
   },
@@ -197,7 +209,22 @@
     "ethnicity": "Hrvatica",
     "occupation": "domaćica",
     "rank": "bolničarka",
-    "pdf_x_end": 389.5
+    "pdf_x_end": 389.5,
+    "other_sources": [
+      {
+        "soldier_id": "0148000045",
+        "name": "Aljinović-Gojak Valentina Vinka",
+        "additional_info": "borac Leteće mosorske čete. Rođena 7. 12. 1920. u Zrnovnici, Split, domaćica, Hrvatica, član SKOJ-a 1941. Polovinom 1942. je član odbora AFŽ u Žrnovnici. U Mosorsku četu stupila početkom listopada 1942. i 7. listopada upućena na kurs AFZ pri Štabu 4. operativne zone, a zatim u sastav bolnice. U lipnju 1943 zarobljena i odvedena u logor.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 4,
+        "pdf_x": 237.7,
+        "pdf_y": 822.7,
+        "pdf_x_end": 577.6,
+        "pdf_y_end": 864.3,
+        "pdf_x_left": 220.6,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Andesilić",
@@ -688,6 +715,19 @@
         "additional_info": "zvani Cefera; rođen 1913. godine u Smokvici — Korčula, prištabna jedinica, poginuo u V ofanzivi.",
         "source_url": "https://znaci.org/00001/32_1.htm",
         "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010091",
+        "name": "Baničević M Ante Cefera",
+        "additional_info": "rođen 1913. godine u Smokvici — Korčula, pi štabna jedinica, poginuo u V ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 43,
+        "pdf_x": 86.0,
+        "pdf_y": 549.3625,
+        "pdf_y_end": 567.0,
+        "pdf_x_end": 415.5,
+        "pdf_x_left": 64.6,
+        "unit_file": "1-dalmatinska-soldiers.json"
       }
     ]
   },
@@ -718,8 +758,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2200",
         "source_page": 2200,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148000176",
+        "name": "Banje Ante Branko",
+        "additional_info": "borac Mosorskog bataljona. Rođen 22. 6. 1919. u Podstrani, Split, zemljoradnik, Hrvat. U Mosorski bataljon stupio u veljači 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo 1943. u bici na Sutjesci kao borac 1. čete 4. bataljona 3. dalmatinske brigade (umro od tifusa u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 12,
+        "pdf_x": 239.3,
+        "pdf_y": 715.3,
+        "pdf_x_end": 579.6,
+        "pdf_y_end": 757.4,
+        "pdf_x_left": 222.3,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac",
+    "death_date": "1943"
   },
   {
     "last_name": "Barbir",
@@ -977,8 +1032,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1327",
         "source_page": 1327,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148000228",
+        "name": "Baučić Marijana Duje",
+        "additional_info": "puškomitraljezac u 3. vodu I mosorskog PO. Rođen 1922, Omiš, mesar, Hrvat, član KPJ. U I mosorski PO došao 12. ožujka 1942. Rasformiranjem Odreda upućen na teren. Ponovno stupio u Mosorski leteći vod i 27 rujna 1942. upućen u 4. operativnu zonu. Poginuo lipnja 1943. u bici na Sutjesci (u Centralnoj bolnici), kao borac 3. dalmatinske brigade.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 16,
+        "pdf_x": 241.5,
+        "pdf_y": 662.7,
+        "pdf_x_end": 581.5,
+        "pdf_y_end": 705.0,
+        "pdf_x_left": 224.4,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "lipnja 1943"
   },
   {
     "last_name": "Baučić",
@@ -1009,8 +1078,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1327",
         "source_page": 1327,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148000236",
+        "name": "Baučić Mate Luka",
+        "additional_info": "borac Leteće mosorske čete. Rođen 1922. u Omišu, radnik, Hrvat, član KPJ. U Mosorsku četu stupio početkom 1943. i u veljači upućen u 5. dalmatinsku brigadu. Poginuo 1943. u bici na Sutjesci kao borac 3. dalmatinske brigade (umro u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 17,
+        "pdf_x": 263.2,
+        "pdf_y": 494.0,
+        "pdf_x_end": 603.0,
+        "pdf_y_end": 528.0,
+        "pdf_x_left": 245.9,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Baučić",
@@ -1801,7 +1884,21 @@
     "birth_place": "Kuta, Nikšić",
     "ethnicity": "Crnogorac",
     "occupation": "đak učiteljske škole",
-    "pdf_x_end": 218.8
+    "pdf_x_end": 218.8,
+    "other_sources": [
+      {
+        "soldier_id": "0049010130",
+        "name": "Bojović Mihaila Milonja",
+        "additional_info": "1921, Nikšićka Zupa, SRCG, nosilac »Spomenice 1941 x, Crnogorac, učenik učiteljske škole, u NOB od 13. 7.1941, u brigadi od aprila 1944, komandant pozadine divizije.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 7,
+        "pdf_x": 39.6,
+        "pdf_y": 19.4,
+        "pdf_x_end": 398.6,
+        "pdf_y_end": 44.7,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Boltić-Mastilo",
@@ -2068,6 +2165,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2204",
         "source_page": 2204,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148000385",
+        "name": "Božiković Mate Luka",
+        "additional_info": "borac mosorskog bataljona. Rođen 17.10.1923, Podstrana, Split, zemljoradnik, Hrvat. U Mosorski bataljon došao 11. veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo 13. lipnja kod Tjentišta u bici na Sutjesci u Centralnoj bolnici.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 25,
+        "pdf_x": 282.3,
+        "pdf_y": 480.1,
+        "pdf_x_end": 622.6,
+        "pdf_y_end": 514.5,
+        "pdf_x_left": 263.8,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
     ]
   },
@@ -2219,7 +2329,22 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 187.4
+    "pdf_x_end": 187.4,
+    "other_sources": [
+      {
+        "soldier_id": "0148000421",
+        "name": "Brajičić Stipe Dragutin",
+        "additional_info": "borac Mosorske čete. Rođen 10. 9. 1911, Podstrana, Split, zemljoradnik, Hrvat. Stupio u Mosorsku četu 3. siječnja 1943. i polovinom istog mjeseca upućen s glazbom iz Podstrane u sastav 4. dalmatinske brigade 9. divizije.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 26,
+        "pdf_x": 236.2,
+        "pdf_y": 594.8,
+        "pdf_x_end": 577.4,
+        "pdf_y_end": 620.0,
+        "pdf_x_left": 220.1,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bralić",
@@ -5486,8 +5611,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2214",
         "source_page": 2214,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148000954",
+        "name": "Jerković Nikole Danko",
+        "additional_info": "zvani Jurela; borac I udarnog mosorskog bataljona. Rođen 1913, Zrnovnica, Split, zemljoradnik, Hrvat. U Mosorski bataljon došao u listopadu 1942. i u studenom ušao u sastav 3. dalmatinske brigade. Poginuo početkom lipnja 1943. kod s. Rudine na Pivskoj planini, kao borac 2. dalmatinske brigade (u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 66,
+        "pdf_x": 238.8,
+        "pdf_y": 726.8,
+        "pdf_x_end": 578.6,
+        "pdf_y_end": 769.6,
+        "pdf_x_left": 221.5,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "last_name": "Jojić",
@@ -5849,8 +5988,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2215",
         "source_page": 2215,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001038",
+        "name": "Juretin Ante Drago",
+        "additional_info": "borac Mosorskog bataljona. Rođen 1924, Sitno Donje. Split, zemljoradnik, Hrvat. U Mosorski bataljon došao 8. veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo svibnja-lipnja 1943, u 5. ofenzivi, kao borac u Centralnoj bolnici.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 71,
+        "pdf_x": 273.0,
+        "pdf_y": 714.8,
+        "pdf_x_end": 612.8,
+        "pdf_y_end": 749.2,
+        "pdf_x_left": 255.5,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "lipnja 1943"
   },
   {
     "last_name": "Jurić",
@@ -6548,8 +6701,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2217",
         "source_page": 2217,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001243",
+        "name": "Knezović Ante Srećko",
+        "additional_info": "borac I mosorskog PO. Rođen 1922. u Stobreču, Split, mehaničar u brodogradilištu, Hrvat, član SKOJ-a, član KPJ od 1942, član MK SKOJ-a Zrnovnica 1937. i jedan od organizatora ustanka u Stobreču. U I mosorski PO stupio 7. travnja 1942. i privremenim raspustom Odreda vraćen na teren. Ponovo stupio rujna 1942. u Leteći mosorski vod i 24. isLog mjeseca upućen u Stab 4. operativne zone. Poginuo lipnja 1943. u bici na Sutjesci u 2. dalmatinskoj brigadi (umro od tifusa u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 83,
+        "pdf_x": 261.8,
+        "pdf_y": 558.8,
+        "pdf_x_end": 601.6,
+        "pdf_y_end": 618.1,
+        "pdf_x_left": 244.2,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac",
+    "death_date": "lipnja 1943"
   },
   {
     "last_name": "Knezović",
@@ -6578,8 +6746,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2217",
         "source_page": 2217,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001244",
+        "name": "Knezović Marina Stipe",
+        "additional_info": "borac Mosorskog bataljona. Rođen 20. 12. 1922. u Stobreču, Split, zemljoradnik, Hrvat, član SKOJ-a. U Mosorski bataljon stupio 16. veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo 1943. u 5. ofenzivi kao borac 3. dalmatinske brigade (umro od ti/usa u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 83,
+        "pdf_x": 262.0,
+        "pdf_y": 620.5,
+        "pdf_x_end": 602.0,
+        "pdf_y_end": 654.4,
+        "pdf_x_left": 245.0,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac",
+    "death_date": "1943"
   },
   {
     "last_name": "Knežević",
@@ -8097,8 +8280,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2220",
         "source_page": 2220,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001487",
+        "name": "Ljiljak Ivana Luka",
+        "additional_info": "borac Mosorskog bataljona. Rođen 1923, Sitno Donje, Split, zemljoradnik, Hrvat. U Mosorski bataljon došao u veljači 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo lipnja 1943. u bici na Sutjesci (u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 102,
+        "pdf_x": 238.3,
+        "pdf_y": 655.1,
+        "pdf_x_end": 578.4,
+        "pdf_y_end": 689.3,
+        "pdf_x_left": 221.0,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "lipnja 1943"
   },
   {
     "last_name": "Ljulica",
@@ -9136,8 +9333,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1324",
         "source_page": 1324,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001668",
+        "name": "Martinović Petra Olga",
+        "additional_info": "borac Mosorskog bataljona. Rođena 1923, Krilo--Jesenice, Omiš, domaćica, Hrvatica. U Mosorski bataljon došla u siječnju 1943, a zatim upućena u 5. dalmatinsku brigadu. Poginula 1943. u 5. ofenzivi, kao bolničarka u 2. dalmatinskoj brigadi.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 110,
+        "pdf_x": 243.4,
+        "pdf_y": 803.6,
+        "pdf_x_end": 584.1,
+        "pdf_y_end": 837.6,
+        "pdf_x_left": 226.3,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Marčeta",
@@ -9315,6 +9526,19 @@
         "pdf_x_end": 587.4,
         "pdf_y_end": 424.0,
         "pdf_x_left": 255.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001300953",
+        "name": "Matić Života",
+        "additional_info": "Radnik, rođen 1922. Vranić, Barajevo; član KPJ od oktobra 1941. Danas penzioner.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 11,
+        "pdf_x": 213.4,
+        "pdf_y": 152.6,
+        "pdf_y_end": 187.3,
+        "pdf_x_end": 365.0,
+        "pdf_x_left": 211.4,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -9620,8 +9844,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2223",
         "source_page": 2223,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001804",
+        "name": "Mihanović Petra Špiro",
+        "additional_info": "borac Mosorskog bataljona. Rođen 1925. u Žmovnici, Split, zemljoradnik, Hrvat. U Mosorski bataljon došao 12. veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo 1943. u 5. ofenzivi (u Centralnoj bolnici VS).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 118,
+        "pdf_x": 240.1,
+        "pdf_y": 558.0,
+        "pdf_x_end": 580.6,
+        "pdf_y_end": 592.3,
+        "pdf_x_left": 223.1,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Mijač",
@@ -9975,7 +10213,22 @@
     "death_date": "krajem maja 1943",
     "death_place": "Sandžak",
     "rank": "borac",
-    "pdf_x_end": 214.0
+    "pdf_x_end": 214.0,
+    "other_sources": [
+      {
+        "soldier_id": "0148001861",
+        "name": "Milković Lovre Davor",
+        "additional_info": "borac-kurir Mosorskog bataljona. Rođen 25. 9. 1929. u Šibeniku, đak, Hrvat, član SKOJ-a. U Mosorski bataljon stupio 13. veljače 1943. Poginuo 1943. u 5. ofenzivi.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 121,
+        "pdf_x": 274.8,
+        "pdf_y": 730.4,
+        "pdf_x_end": 613.2,
+        "pdf_y_end": 755.4,
+        "pdf_x_left": 258.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milković",
@@ -11068,7 +11321,22 @@
     "death_date": "14. juna 1943",
     "death_place": "Miljevina",
     "rank": "borac",
-    "pdf_x_end": 185.4
+    "pdf_x_end": 185.4,
+    "other_sources": [
+      {
+        "soldier_id": "0148002135",
+        "name": "Peričić Martina Stjepan",
+        "additional_info": "borac Mosorskog bataljona. Rođen 1914, Sitno Gornje, Split, zemljoradnik, Hrvat. U Mosorski bataljon došao 11. veljače 1943. Poginuo 14. lipnja 1943. u rejonu Miljevine, kao borac u Centralnoj bolnici.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 140,
+        "pdf_x": 242.0,
+        "pdf_y": 399.0,
+        "pdf_x_end": 582.8,
+        "pdf_y_end": 424.5,
+        "pdf_x_left": 225.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Perišić",
@@ -11134,8 +11402,43 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2228",
         "source_page": 2228,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0036001464",
+        "name": "Perko P Špiro",
+        "additional_info": "rođen 1901. gocline u Mravincu — Split, prištabske jedi nice, poginuo u V ofanzivi.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036011567",
+        "name": "Perko P Špiro",
+        "additional_info": "rođen 1901. godine u Mravincu — Split, prištabske jedi nice, poginuo u V ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 89,
+        "pdf_x": 80.8,
+        "pdf_y": 365.115,
+        "pdf_y_end": 382.5,
+        "pdf_x_end": 413.6,
+        "pdf_x_left": 58.7,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0148002191",
+        "name": "Perko Petra Špiro",
+        "additional_info": "borac Mosorskog bataljona. Rođen 1901, Mravince, Split, radnik. Hrvat, kandidat KPJ od 1941. U NOB od 6. prosinca 1942. Poginuo 31. svibnja 1943. u 5. ofenzivi kao borac u intendanturi 9. dalmatinske divizije (umro od tifusa u Centralnoj bolnici).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 143,
+        "pdf_x": 265.2,
+        "pdf_y": 391.2,
+        "pdf_x_end": 606.5,
+        "pdf_y_end": 425.1,
+        "pdf_x_left": 248.4,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac",
+    "death_date": "31. svibnja 1943"
   },
   {
     "last_name": "Perković",
@@ -11201,7 +11504,22 @@
     "death_date": "juna 1943",
     "death_place": "Zelengora",
     "rank": "borac",
-    "pdf_x_end": 184.2
+    "pdf_x_end": 184.2,
+    "other_sources": [
+      {
+        "soldier_id": "0148002200",
+        "name": "Peroš Mate Benjamin",
+        "additional_info": "borac Mosorskog bataljona. Rođen 3. 8. 1925, Mravince, Split, stolar, Hrvat, član SKOJ-a. U Mosorski bataljon stupio 16. veljače 1943. Poginuo 1943. u 5. ofenzivi na Zelengori.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 143,
+        "pdf_x": 263.9,
+        "pdf_y": 752.2,
+        "pdf_x_end": 601.9,
+        "pdf_y_end": 777.4,
+        "pdf_x_left": 247.4,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petković-Ipavec",
@@ -12315,6 +12633,19 @@
         "name": "Radmilović A Branko",
         "additional_info": "rođen 1914. godine u Sutivanu — Brač, borac 1 bat, poginuo u V ofanzivi.",
         "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036011736",
+        "name": "Radmilović A Branko",
+        "additional_info": "rođen 1914. godine u Sutivanu — Brač, borac I bat, poginuo u V ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 94,
+        "pdf_x": 46.3,
+        "pdf_y": 261.91499999999996,
+        "pdf_y_end": 279.3,
+        "pdf_x_end": 383.6,
+        "pdf_x_left": 24.4,
         "unit_file": "1-dalmatinska-soldiers.json"
       }
     ]
@@ -13597,7 +13928,22 @@
     "ethnicity": "Hrvat",
     "occupation": "metalski radnik",
     "rank": "politički komesar",
-    "pdf_x_end": 402.5
+    "pdf_x_end": 402.5,
+    "other_sources": [
+      {
+        "soldier_id": "0148002612",
+        "name": "Sirotković Ivana Marin",
+        "additional_info": "politički delegat 3. voda I mosorskog PO. Rođen 13. 2. 1909. u Splitu, bravar, Hrvat, predratni član KPJ i sekretar partijske organizacije splitskog brodogradilišta. Aktivni je učesnik u prikupljanju oružja i opreme za NOP od početka ustanka do odlaska u NOV. U I mosorski PO stupio 6. ožujka 1942. i zbog ranjavanja kod Putišića staja 16. travnja upućen na liječenje, f ormiranjem 1. dalmatinske brigade 6. rujna 1942. postaje zamjenik politkomesara 1. bataljona. Nosilac je Partizanske spomenice 1941.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 168,
+        "pdf_x": 240.5,
+        "pdf_y": 328.2,
+        "pdf_x_end": 580.1,
+        "pdf_y_end": 387.6,
+        "pdf_x_left": 223.1,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Skrobić",
@@ -14974,7 +15320,22 @@
     "death_date": "juna 1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 376.4
+    "pdf_x_end": 376.4,
+    "other_sources": [
+      {
+        "soldier_id": "0148002981",
+        "name": "Vlahović Šimuna Dušan",
+        "additional_info": "borac Mosorske čete. Rođen 31. 8. 1921, Korčula, đak, Hrvat, član SKOJ-a 1941. U NOP od 1941. U Mosorsku četu stupio 16. lipnja 1942. Poginuo 1943. u 5 neprijateljskoj ofenzivi (ostali podaci nepoznati).",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 196,
+        "pdf_x": 245.4,
+        "pdf_y": 762.0,
+        "pdf_x_end": 586.5,
+        "pdf_y_end": 787.2,
+        "pdf_x_left": 228.9,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vojvodić",
@@ -15037,7 +15398,21 @@
     "birth_place": "Gluhi Do, Bar",
     "ethnicity": "Crnogorac",
     "occupation": "maturant gimnazije",
-    "pdf_x_end": 220.3
+    "pdf_x_end": 220.3,
+    "other_sources": [
+      {
+        "soldier_id": "0049011743",
+        "name": "Vojvodić Dušana Radovan",
+        "additional_info": "1922, Gluhi Do, SRCG, Crnogorac, student, u NOB od 1941, nosilac »Spomenice 1941«, u brigadi od jula 1943, član OK KPJ.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 68,
+        "pdf_x": 10.8,
+        "pdf_y": 433.2,
+        "pdf_x_end": 368.2,
+        "pdf_y_end": 450.3,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vojvodić",
@@ -15796,7 +16171,23 @@
     "birth_place": "Nisko, Split",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 370.1
+    "pdf_x_end": 370.1,
+    "rank": "zamjenik komandira",
+    "other_sources": [
+      {
+        "soldier_id": "0148003161",
+        "name": "Zokić Petra Josip",
+        "additional_info": "zamjenik komandira 3. čete I udarnog mosorskog bataljona. Rođen 19. 3. 1914, Nisko, Split, radnik, Hrvat, član KPJ od 1942. godine. Došao krajem kolovoza 1942. iz Kaštelanskog odreda u Leteći mosorski vod, a zatim i u I mosorski bataljon sa kojim je 12. studenog ušao u sastav 3. dalmatinske brigade. Teže ranjen 27. siječnja 1943. u Bihaću.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 206,
+        "pdf_x": 239.7,
+        "pdf_y": 537.5,
+        "pdf_x_end": 578.2,
+        "pdf_y_end": 579.8,
+        "pdf_x_left": 222.6,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zurovac",

@@ -214,6 +214,11 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 12. novembra 1942 v Vrbi pri Sinju. Borci brigade v bitki na Sutjeski, maja in junija 1943.',
   },
+  '9-dalmatinska-divizija': {
+    name: '9. dalmatinska divizija',
+    description:
+      'Ustanovljena 11. februarja 1943 iz 3., 4. in 5. dalmatinske brigade, razpuščena aprila istega leta. Padli in pogrešani borci divizije od februarja do aprila 1943.',
+  },
   '16-banijska-brigada': {
     name: '16. banijska brigada',
     description:
@@ -503,6 +508,31 @@ const sl: Record<string, UnitText> = {
     name: 'Osiješka udarna brigada',
     description:
       'Ustanovljena 1. marca 1944 pri Slobodni Vlasti blizu Đakova. Padli in umrli borci brigade ter preživeli, po občinah.',
+  },
+  '4-brigada-slavonije': {
+    name: '4. brigada Slavonije',
+    description:
+      'Ustanovljena 28. septembra 1944 v Podravski Slatini kot 4. brigada 12. divizije, imenovana Druga brodska. Padli in ranjeni borci brigade.',
+  },
+  '12-slavonska-brigada': {
+    name: '12. proletarska slavonska brigada',
+    description:
+      'Ustanovljena 11. oktobra 1942 v Budićih pri Pakracu kot 1. slavonska brigada, proletarska od 26. oktobra 1944. Borke brigade, padle, umrle in preživele.',
+  },
+  'zagrebacki-odred': {
+    name: 'Zagrebški partizanski odred',
+    description:
+      'Ustanovljen 13. septembra 1943 na Zagrebški gori. Seznam borcev odreda: vas, občina in usoda.',
+  },
+  'mosorski-odred': {
+    name: 'Mosorski partizanski odred',
+    description:
+      'Ustanovljen 21. februarja 1942 na Mosorju, znova 11. oktobra 1943, razpuščen 10. novembra 1944. Vsi borci odreda 1942–1944, s kratkimi življenjepisi.',
+  },
+  'turopoljsko-posavski-odred': {
+    name: 'Turopoljsko-posavski partizanski odred',
+    description:
+      'Ustanovljen 8. avgusta 1943 pri Čički Poljani. Padli borci odreda ter tisti, ki so jih sovražniki ustrelili ali so umrli med vojno.',
   },
   '1-zagorska-brigada': {
     name: '1. zagorska brigada',
@@ -908,6 +938,11 @@ const mk: Record<string, UnitText> = {
     description:
       'Формирана на 12 ноември 1942 во Врба кај Сињ. Борците на бригадата во битката на Сутјеска, мај и јуни 1943.',
   },
+  '9-dalmatinska-divizija': {
+    name: '9-та далматинска дивизија',
+    description:
+      'Формирана на 11 февруари 1943 од 3., 4. и 5. далматинска бригада, расформирана во април истата година. Загинатите и исчезнатите борци на дивизијата од февруари до април 1943.',
+  },
   '16-banijska-brigada': {
     name: '16-та банијска бригада',
     description:
@@ -1197,6 +1232,31 @@ const mk: Record<string, UnitText> = {
     name: 'Осиечка ударна бригада',
     description:
       'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и умрените борци на бригадата и преживеаните, по општини.',
+  },
+  '4-brigada-slavonije': {
+    name: '4-та бригада на Славонија',
+    description:
+      'Формирана на 28 септември 1944 во Подравска Слатина, како 4. бригада на 12. дивизија, наречена Втора бродска. Загинатите и ранетите борци на бригадата.',
+  },
+  '12-slavonska-brigada': {
+    name: '12-та пролетерска славонска бригада',
+    description:
+      'Формирана на 11 октомври 1942 во Будиќи кај Пакрац, како 1. славонска бригада, пролетерска од 26 октомври 1944. Жените борци на бригадата, загинати, починати и преживеани.',
+  },
+  'zagrebacki-odred': {
+    name: 'Загрепски партизански одред',
+    description:
+      'Формиран на 13 септември 1943 на Загрепска Гора. Список на борците на одредот: село, општина и судбина.',
+  },
+  'mosorski-odred': {
+    name: 'Мосорски партизански одред',
+    description:
+      'Формиран на 21 февруари 1942 на Мосор, повторно на 11 октомври 1943, расформиран на 10 ноември 1944. Сите борци на одредот 1942–1944, со кратки биографии.',
+  },
+  'turopoljsko-posavski-odred': {
+    name: 'Туропољско-посавски партизански одред',
+    description:
+      'Формиран на 8 август 1943 кај Чичка Пољана. Загинатите борци на одредот и оние што непријателите ги стрелаа или умреа во војната.',
   },
   '1-zagorska-brigada': {
     name: '1-ва загорска бригада',
@@ -1604,6 +1664,11 @@ const en: Record<string, UnitText> = {
     description:
       'Formed on 12 November 1942 in Vrba near Sinj. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943.',
   },
+  '9-dalmatinska-divizija': {
+    name: '9th Dalmatian Division',
+    description:
+      'Formed on 11 February 1943 from the 3rd, 4th and 5th Dalmatian Brigades, disbanded that April. The division’s killed and missing, February to April 1943.',
+  },
   '16-banijska-brigada': {
     name: '16th Banija Brigade',
     description:
@@ -1893,6 +1958,31 @@ const en: Record<string, UnitText> = {
     name: 'Osijek Assault Brigade',
     description:
       'Formed on 1 March 1944 near Slobodna Vlast, close to Đakovo. The brigade’s fallen and dead, and its survivors, by municipality.',
+  },
+  '4-brigada-slavonije': {
+    name: '4th Slavonia Brigade',
+    description:
+      'Formed on 28 September 1944 at Podravska Slatina, as the 4th Brigade of the 12th Division, called the 2nd Brod Brigade. The brigade’s fallen and wounded.',
+  },
+  '12-slavonska-brigada': {
+    name: '12th Proletarian Slavonian Brigade',
+    description:
+      'Formed on 11 October 1942 at Budići near Pakrac as the 1st Slavonian Brigade, Proletarian from 26 October 1944. The brigade’s women fighters: the fallen, those who died later, and the survivors.',
+  },
+  'zagrebacki-odred': {
+    name: 'Zagreb Partisan Detachment',
+    description:
+      'Formed on 13 September 1943 on Zagrebačka Gora. The roll of its fighters: village, municipality and fate.',
+  },
+  'mosorski-odred': {
+    name: 'Mosor Partisan Detachment',
+    description:
+      'Formed on 21 February 1942 on Mosor, again on 11 October 1943, disbanded on 10 November 1944. All its fighters, 1942–1944, with short lives.',
+  },
+  'turopoljsko-posavski-odred': {
+    name: 'Turopolje-Posavina Partisan Detachment',
+    description:
+      'Formed on 8 August 1943 near Čička Poljana. Its fighters killed in action, and those shot by the enemy or who died during the war.',
   },
   '1-zagorska-brigada': {
     name: '1st Zagorje Brigade',
