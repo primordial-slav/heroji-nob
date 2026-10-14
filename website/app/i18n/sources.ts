@@ -426,6 +426,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam bork brigade iz let 1944–1945 (dokument 376): datum in kraj rojstva, dolžnost in čin, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'osjecka-zene':
       'Borke Osiješke brigade po bataljonih, kot jih je štab brigade popisal za I. kongres AFŽ Hrvaške (dokument 420): datum in kraj rojstva, od kdaj so v partizanih',
+    'dalmatinci-prva-proleterska':
+      'Borci Prve proletarske brigade iz Dalmacije, z življenjepisom vsakega: rojstvo, poklic, pot v NOB in v brigado, boji, usoda; in dodatni seznam tistih, za katere avtorja nista zbrala podatkov (str. 467–754)',
+    'crnogorski-bataljon':
+      'Borci, ki so v Prvi črnogorski bataljon Prve proletarske vstopili v letih 1942, 1943, 1944 in 1945, ter borci brez popolnih podatkov: rojstvo, poklic, vstop v NOB, usoda; v cirilici (str. 713–795)',
+    'rudarska-ceta':
+      'Borci Rudarske čete (rudarji Trepče in Kopaonika), ko je 21. decembra 1941 v Rudem vstopila v Prvo proletarsko, z življenjepisom vsakega (str. 426–430)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -841,6 +847,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на жените борци на бригадата од 1944–1945 (документ 376): датум и место на раѓање, должност и чин, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'osjecka-zene':
       'Жените борци на Осиечката бригада по баталјони, како што ги попишал штабот на бригадата за I конгрес на АФЖ на Хрватска (документ 420): датум и место на раѓање, од кога се во партизани',
+    'dalmatinci-prva-proleterska':
+      'Борците на Првата пролетерска бригада од Далмација, со биографија за секого: раѓање, занимање, пат во НОБ и во бригадата, борби, судбина; и дополнителен список на оние за кои авторите не собрале податоци (стр. 467–754)',
+    'crnogorski-bataljon':
+      'Борците што стапиле во Првиот црногорски баталјон на Првата пролетерска во 1942, 1943, 1944 и 1945 и борците без целосни податоци: раѓање, занимање, кога стапиле во НОБ, судбина; на кирилица (стр. 713–795)',
+    'rudarska-ceta':
+      'Борците на Рударската чета (рудари од Трепча и Копаоник) кога влезе во Првата пролетерска во Рудо на 21 декември 1941, со биографија за секого (стр. 426–430)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -1255,6 +1267,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s women fighters, 1944–1945 (document 376): date and place of birth, duty and rank, when they joined the army, decorations, and the staff’s opinion of each',
     'osjecka-zene':
       'The women of the Osijek Brigade by battalion, as the brigade’s staff listed them for the 1st Congress of the AFŽ of Croatia (document 420): date and place of birth, when they joined the Partisans',
+    'dalmatinci-prva-proleterska':
+      'The 1st Proletarian Brigade’s fighters from Dalmatia, each with a short life: birth, occupation, the way into the war and the brigade, battles, fate; and a supplementary list of those the authors could not gather details on (pp. 467–754)',
+    'crnogorski-bataljon':
+      'The fighters who joined the 1st Montenegrin Battalion of the 1st Proletarian in 1942, 1943, 1944 and 1945, and those with incomplete details: birth, occupation, when they joined the struggle, fate; in Cyrillic (pp. 713–795)',
+    'rudarska-ceta':
+      'The Miners’ Company (miners of Trepča and Kopaonik) as it joined the 1st Proletarian at Rudo on 21 December 1941, each with a short life (pp. 426–430)',
   },
 }
 
@@ -1297,6 +1315,8 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci I. dalmatinske proleterske brigade': 'borke I. dalmatinske proletarske brigade',
     'žene borci XI. dalmatinske brigade': 'borke XI. dalmatinske brigade',
     'žene borci Osječke brigade': 'borke Osiješke brigade',
+    'spiskovi boraca koji su stupili u bataljon 1942–1945': 'seznami borcev, ki so vstopili v bataljon 1942–1945',
+    'spisak boraca u Rudom 21. XII 1941.': 'seznam borcev v Rudem 21. 12. 1941',
   },
   mk: {
     'tom 1': 'том 1',
@@ -1335,6 +1355,8 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci I. dalmatinske proleterske brigade': 'жените борци на I далматинска пролетерска бригада',
     'žene borci XI. dalmatinske brigade': 'жените борци на XI далматинска бригада',
     'žene borci Osječke brigade': 'жените борци на Осиечката бригада',
+    'spiskovi boraca koji su stupili u bataljon 1942–1945': 'списоци на борците што стапиле во баталјонот 1942–1945',
+    'spisak boraca u Rudom 21. XII 1941.': 'список на борците во Рудо, 21. XII 1941',
   },
   en: {
     'tom 1': 'volume 1',
@@ -1373,6 +1395,8 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci I. dalmatinske proleterske brigade': 'the women fighters of the 1st Dalmatian Proletarian Brigade',
     'žene borci XI. dalmatinske brigade': 'the women fighters of the 11th Dalmatian Brigade',
     'žene borci Osječke brigade': 'the women fighters of the Osijek Brigade',
+    'spiskovi boraca koji su stupili u bataljon 1942–1945': 'the fighters who joined the battalion, 1942–1945',
+    'spisak boraca u Rudom 21. XII 1941.': 'the company at Rudo, 21 December 1941',
   },
 }
 

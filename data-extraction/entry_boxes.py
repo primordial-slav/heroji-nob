@@ -68,6 +68,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '11-krajiska-zene.pdf',   # 11. krajiška's women, names run on
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle
+                  'dalmatinci-prva-proleterska.pdf',   # Dalmatinci u Prvoj proleterskoj: two or three columns, a page each its own
                   'proleterski-bataljon-bk.pdf',   # Proleterski bataljon Bosanske krajine: bio blocks beside the portraits
                   '4-pomorski-sektor.pdf',   # IV pomorski obalni sektor: the fallen's name left, death right (roster boxed alike)
                   # books across units whose names run on (Gončin's and Tmušić's Srem): their records in unit 122
