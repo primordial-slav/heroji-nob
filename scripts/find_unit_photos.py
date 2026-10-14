@@ -534,7 +534,23 @@ UNITS = {
         note="The gallery's only match (4909) shows the 19. srpska entering Negotin; znaci.org has no photo pages of its spomen-knjiga. The card shows the list's first page."),
     "4-prekomorska-brigada": dict(
         name="4. prekomorska brigada", tags=[],
-        caption=r"(?:4\.|[cč]etrt\w*)\s+prekomorsk\w*\s+brigad", photo=None),
+        caption=r"(?:4\.|[cč]etrt\w*)\s+prekomorsk\w*\s+brigad", photo=None,
+        book=dict(pdf="00003/783.pdf", page=95, xref=765, caption="Skupina pripadnikov 4. prekomorske brigade v Monopoliju leta 1944"),
+        note="Nothing in the gallery names the brigade; the photo is from its book (Pervanje, Hočevar)."),
+    "deveta-brigada": dict(
+        name="Deveta brigada (IX. SNOUB)", tags=[],
+        caption=r"(?:9\.|devet\w*|IX\.)\s+(?:slovensk\w*\s+)?(?:narodnoosvobodilne\s+)?(?:udarne\s+)?brigad\w*(?!\s+(?:srpsk|dalmat|krajišk|hercegov|crnogorsk))|kočevsk\w*\s+brigad", photo=None,
+        note="The gallery's only match (15572) is a portrait of one doctor; the brigade's book on znaci.org (00003/2849-2850) is whole-page scans. The card shows the roster's page."),
+    "novosadski-odred": dict(
+        name="Novosadski partizanski odred", tags=[],
+        caption=r"novosadsk\w*\s+(?:partizansk\w*\s+|nop\s+)?odred|novosadsk\w*\s+partizansk\w*\s+čet", photo=None,
+        note="Nothing in the gallery; the book's one photo of the odred's men (2851.pdf p. 80, \"Smotra boraca Novosadskog partizanskog odreda\") is a small, murky crop of three men. The card shows the roll's page."),
+    "4-pomorski-sektor": dict(
+        name="IV pomorski obalni sektor", tags=[],
+        caption=r"(?:IV|4\.|[cč]etvrt\w*)\s+pomorsk\w*\s+obal\w*\s+sektor|\bIV\.?\s+POS\b", photo=None,
+        book=dict(pdf="00003/652_2.pdf", page=35, xref=275,
+                  caption="Četa mornaričke pješadije IV POS-a u Hvaru, septembar 1944."),
+        note="Nothing in the gallery names the sektor; the photo is from its book (Pribilović, Sl. 67)."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,

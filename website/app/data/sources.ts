@@ -1775,6 +1775,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika kordunaškog sela iz izdanja Historijskog arhiva u Karlovcu, s dva njena spiska: pali i umrli borci 1941–1945 iz Donjeg, Gornjeg i Lasinjskog Sjeničaka (str. 330–338), po selima, s rođenjem, putem u NOB i smrću, i nosioci Partizanske spomenice 1941 (str. 385–389). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa i prehlade iz iste knjige nisu uneti.'
   },
   {
+    id: 'tuzla-spomen-knjiga',
+    title: 'Spomen-knjiga poginulih tuzlanskih boraca NOR-a i žrtava fašističkog terora 1941–1945.',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/tuzla-spomen-knjiga.pdf',
+    thumbnail: '/images/pdf-thumbs/tuzla-spomen-knjiga.jpg',
+    brigadeName: '',
+    description: 'Spomen-knjiga opštine Tuzla: biografije njenih učesnika NOR-a koji su poginuli 1941–1945 (str. 13–300), rođenih, nastanjenih ili zaposlenih u Tuzli ili onih koji su iz nje otišli u partizane, često s fotografijom, s jedinicom, rođenjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Drugi deo knjige, žrtve fašističkog terora, nije unet.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',
@@ -1872,6 +1881,42 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/pozega-pali.jpg',
     brigadeName: '',
     description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su samo borci; civilne žrtve, saradnici NOP-a i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: '4-pomorski-sektor',
+    title: 'Četvrti pomorski obalni sektor Mornarice NOVJ',
+    author: 'Kažimir Pribilović',
+    pdfPath: '/pdfs/4-pomorski-sektor.pdf',
+    thumbnail: '/images/4-pomorski-sektor.jpg',
+    brigadeName: 'IV pomorski obalni sektor',
+    description: 'Popis boraca IV POS-a 1943–1945, koji su sastavili Sekcija boraca sektora i autor (4.702 imena, sa mestom odakle je ko), i poginuli i umrli borci sektora, sa dužnošću i kako su pali (str. 418–478).'
+  },
+  {
+    id: 'novosadski-odred',
+    title: 'Novosadski partizanski odred - dva puta rođen',
+    author: 'Vanja Sanader',
+    pdfPath: '/pdfs/novosadski-odred.pdf',
+    thumbnail: '/images/pdf-thumbs/novosadski-odred.jpg',
+    brigadeName: 'Novosadski partizanski odred',
+    description: 'Popis pripadnika Novosadskog partizanskog odreda 1941. i 1944. godine: ime, dužnost, odakle je ko i od kada (str. 85–92).'
+  },
+  {
+    id: 'deveta',
+    title: 'Deveta brigada II',
+    author: 'Velimir Kraševec-Igor',
+    pdfPath: '/pdfs/deveta.pdf',
+    thumbnail: '/images/pdf-thumbs/deveta.jpg',
+    brigadeName: 'Deveta brigada (Kočevska)',
+    description: 'Seznam borcev IX. SNOB Kočevske: ime, godina i mesto rođenja, a za poginule godina i mesto pogibije (str. 425–446).'
+  },
+  {
+    id: '4-prekomorska',
+    title: 'Četrta prekomorska brigada',
+    author: 'Edvin Pervanje, Jože A. Hočevar',
+    pdfPath: '/pdfs/4-prekomorska.pdf',
+    thumbnail: '/images/pdf-thumbs/4-prekomorska.jpg',
+    brigadeName: '4. prekomorska brigada',
+    description: 'Spisak poginulih i umrlih boraca i komandni kadar brigade: štab, komanda mesta, bataljoni, samostalna četa i komande četa (str. 327–333).'
   },
   {
     id: '9-srpska',

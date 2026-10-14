@@ -268,6 +268,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda od 1941 do oktobra 1944, s podatki o vsakem (str. 238–307; uredil Miodrag Stojanović Kole). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '1-proleterski-bataljon':
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
+    '4-pomorski-sektor':
+      'Seznam borcev IV. POS 1943–1945, ki so ga sestavili Sekcija borcev sektorja in avtor (4.702 imeni, s krajem, od koder je kdo), ter padli in umrli borci sektorja z dolžnostjo in okoliščinami smrti (str. 418–478).',
+    'novosadski-odred':
+      'Seznam pripadnikov Novosadskega partizanskega odreda v letih 1941 in 1944: ime, dolžnost, od kod je kdo in od kdaj (str. 85–92).',
+    'deveta':
+      'Seznam borcev IX. SNOB Kočevske: ime, leto in kraj rojstva, pri padlih leto in kraj smrti (str. 425–446).',
+    '4-prekomorska':
+      'Seznam padlih in umrlih borcev in vodilni kader brigade: štab, komanda stana, bataljoni, samostojna četa in komande čet (str. 327–333).',
     '9-srpska':
       'Stroj v Rečici: 377 borcev na dan ustanovitve, 11. marca 1944; poveljniški kader brigade, bataljonov in čet z datumi dolžnosti; bolničarke in borke. Imenika borcev s kratkimi življenjepisi (str. 47–372) znaci.org nima.',
     'kozjanski-odred':
@@ -414,6 +422,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 16): padli borci z območja občine Gornje Dubrave 1941–1945 (str. 889–899), po vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznama žrtev fašističnega terorja in vojne iz iste knjige nismo vnesli.',
     'sjenicak':
       'Kronika kordunske vasi, ki jo je izdal Zgodovinski arhiv v Karlovcu, z dvema njenima seznamoma: padli in umrli borci 1941–1945 iz Donjega, Gornjega in Lasinjskega Sjeničaka (str. 330–338), po vaseh, z rojstvom, potjo v NOB in smrtjo, ter nosilci Partizanske spomenice 1941 (str. 385–389). Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Seznamov žrtev fašističnega terorja in umrlih za tifusom in prehladom iz iste knjige nismo vnesli.',
+    'tuzla-spomen-knjiga':
+      'Spominska knjiga občine Tuzla: življenjepisi njenih udeležencev NOB, ki so padli v letih 1941–1945 (str. 13–300), rojenih, živečih ali zaposlenih v Tuzli ali takih, ki so od tam odšli v partizane, pogosto s fotografijo, z enoto, rojstvom in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on. Drugega dela knjige, žrtev fašističnega terorja, nismo vnesli.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'zene-11-dalmatinska':
@@ -683,6 +693,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот од 1941 до октомври 1944, со податоци за секого (стр. 238–307; приредил Миодраг Стојановиќ Коле). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '1-proleterski-bataljon':
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
+    '4-pomorski-sektor':
+      'Попис на борците на IV ПОС 1943–1945, што го составија Секцијата на борците на секторот и авторот (4.702 имиња, со местото од каде е кој), и загинатите и умрените борци на секторот, со должноста и како загинале (стр. 418–478).',
+    'novosadski-odred':
+      'Попис на припадниците на Новосадскиот партизански одред во 1941 и 1944 година: име, должност, од каде е кој и од кога (стр. 85–92).',
+    'deveta':
+      'Список на борците на IX. СНОБ Кочевска: име, година и место на раѓање, а за загинатите година и место на смртта (стр. 425–446).',
+    '4-prekomorska':
+      'Список на загинатите и умрените борци и командниот кадар на бригадата: штаб, команда на место, баталјони, самостојна чета и команди на четите (стр. 327–333).',
     '9-srpska':
       'Строј во Речица: 377 борци на денот на формирањето, 11 март 1944; командниот кадар на бригадата, баталјоните и четите со датумите на должностите; болничарките и борките. Именикот на борците со кратки биографии (стр. 47–372) znaci.org го нема.',
     'kozjanski-odred':
@@ -829,6 +847,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Од зборникот на Историскиот архив во Карловац (кн. 16): паднатите борци од општината Горње Дубраве 1941–1945 (стр. 889–899), по села, со раѓање, пат во НОБ и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
     'sjenicak':
       'Хроника на едно кордунско село, издадена од Историскиот архив во Карловац, со два нејзини списока: паднатите и умрените борци 1941–1945 од Долни, Горни и Ласињски Сјеничак (стр. 330–338), по села, со раѓање, пат во НОБ и смрт, и носителите на Партизанската споменица 1941 (стр. 385–389). Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Списоците на жртвите на фашистичкиот терор и на умрените од тифус и настинка од истата книга не се внесени.',
+    'tuzla-spomen-knjiga':
+      'Спомен-книга на општина Тузла: биографии на нејзините учесници во НОБ што загинале во 1941–1945 (стр. 13–300), родени, живееле или работеле во Тузла или од неа тргнале во партизаните, често со фотографија, со единицата, раѓањето и смртта. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој. Вториот дел на книгата, жртвите на фашистичкиот терор, не е внесен.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'zene-11-dalmatinska':
@@ -1097,6 +1117,14 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the detachment’s fighters from 1941 to October 1944, with details of each (pp. 238–307; compiled by Miodrag Stojanović Kole). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '1-proleterski-bataljon':
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
+    '4-pomorski-sektor':
+      'The roll of the 4th Naval Coastal Sector, 1943–1945, drawn up by the sector’s veterans’ section and the author (4,702 names, with where each came from), and the sector’s fallen and dead, with their duty and how they died (pp. 418–478).',
+    'novosadski-odred':
+      'The members of the Novi Sad Partisan Detachment in 1941 and in 1944: name, duty, where each came from and since when (pp. 85–92).',
+    'deveta':
+      'The roll of the 9th Slovene Brigade “Kočevska”: name, year and place of birth, and for the fallen the year and place of death (pp. 425–446).',
+    '4-prekomorska':
+      'The brigade’s fallen and dead, and its officers: the staff, the base command, the battalions, the independent company and the companies (pp. 327–333).',
     '9-srpska':
       'The line at Rečica: 377 fighters on the day the brigade was formed, 11 March 1944; the officers of the brigade, its battalions and companies with the dates of their duties; the nurses and women fighters. The book’s roll of every fighter with a short biography (pp. 47–372) is not on znaci.org.',
     'kozjanski-odred':
@@ -1243,6 +1271,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'From the Karlovac Historical Archive’s collection (vol. 16): the fighters from the municipality of Gornje Dubrave who fell in 1941–1945 (pp. 889–899), by village, with birth, the way into the war and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s list of victims of fascist terror and of the war was left out.',
     'sjenicak':
       'The chronicle of a Kordun village, published by the Karlovac Historical Archive, with two of its lists: the fighters from Donji, Gornji and Lasinjski Sjeničak who fell or died in 1941–1945 (pp. 330–338), by village, with birth, the way into the war and death, and the holders of the Partisan Commemorative Medal 1941 (pp. 385–389). The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The same book’s lists of victims of fascist terror and of those who died of typhus and cold were left out.',
+    'tuzla-spomen-knjiga':
+      'The memorial book of the municipality of Tuzla: biographies of its partisans who fell in 1941–1945 (pp. 13–300), born, living or working in Tuzla or joining the army from there, often with a photograph, with unit, birth and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain. The book’s second part, the victims of fascist terror, was left out.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     'zene-11-dalmatinska':

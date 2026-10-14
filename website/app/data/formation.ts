@@ -33,6 +33,22 @@ export const formation: Record<string, Formation> = {
     note: 'Neki dokumenti navode 14. ili 20. avgust; hr.wikipedia 19. avgust.',
   },
   '3-krajiska-proleterska-brigada': { date: '1942-08-22', place: 'Kamenica kod Drvara', source: FROM_CARD },
+  '4-pomorski-sektor': {
+    date: '1943-10-30', place: 'Hvar', source: 'https://znaci.org/00003/652.pdf',
+    note: 'Pribilović, Četvrti pomorski obalni sektor Mornarice NOVJ: „Štab IV pomorskog obalnog sektora uspostavljen je, odnosno počeo je djelovati 30. oktobra 1943. u Hvaru“; do nove podele obale 10. novembra 1943. zvao se III POS (Prilog IX, str. 484).',
+  },
+  'novosadski-odred': {
+    date: '1944-08-28', place: 'Palenkašev salaš kod Bačkog Petrovca', source: 'https://znaci.org/00003/2851.pdf',
+    note: 'Sanader, Novosadski partizanski odred - dva puta rođen, str. 10 i 56-57: odred iz 1941. ponovo je „formiran u avgustu 1944. godine na Palenkašovom salašu kod Bačkog Petrovca“, po naredbi broj 3 štaba Bačkobaranjske operativne zone od 28. avgusta 1944.',
+  },
+  'deveta-brigada': {
+    date: '1943-09-14', place: 'Zdenska vas', source: 'https://znaci.org/00003/2849.pdf',
+    note: 'Kraševec, Deveta brigada I, str. 23: „tega dne je bila z odredbo ustanovljena 18. divizija NOV in POJ, ki so jo sestavljale: 8. brigada, Levstikova, 9. brigada, sestavljena iz bataljonov Zapadnodolenjskega odreda, in 10. brigada“ (Odredba Glavnega štaba Slovenije z dne 14. septembra 1943); zborno mesto Zdenska vas.',
+  },
+  '4-prekomorska-brigada': {
+    date: '1944-09-07', place: 'Bari (Italija)', source: 'https://znaci.org/00003/783.pdf',
+    note: 'Pervanje i Hočevar, Četrta prekomorska brigada, str. 105: „Brigada je dobila naziv po vrstnem redu ustanovitve prekomorskih brigad, in sicer Četrta prekomorska brigada. Ustanovljena je bila 7. septembra 1944.“',
+  },
   '9-srpska-brigada': {
     date: '1944-03-11', place: 'Rečica', source: 'https://znaci.org/00001/121_1.pdf',
     note: 'Deveta srpska udarna brigada u stroju i s narodom, „Rođenje Devete / Stroj u Rečici“: „Ovo poglavlje Spomen knjige govori o 11. martu 1944. — danu osnivanja Devete srpske brigade u Rečici.“',

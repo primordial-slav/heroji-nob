@@ -619,6 +619,22 @@ const sl: Record<string, UnitText> = {
     description:
       'Ustanovljena 7. novembra 1942 v Divoselu pri Gospiću. Borci čete, otroci iz Divosela in okoliških vasi.',
   },
+  '4-pomorski-sektor': {
+    name: 'IV. pomorski obalni sektor',
+    description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja in od kod je kdo, pri padlih in umrlih tudi kje so padli.',
+  },
+  'novosadski-odred': {
+    name: 'Novosadski partizanski odred',
+    description: 'Ustanovljen leta 1941, znova 28. avgusta 1944 na Palenkaševem salašu pri Bačkem Petrovcu. Pripadniki odreda v letih 1941 in 1944.',
+  },
+  'deveta-brigada': {
+    name: 'Deveta brigada (Kočevska)',
+    description: 'Ustanovljena 14. septembra 1943 iz bataljonov Zapadnodolenjskega odreda, v sestavu 18. divizije. Borci brigade: leto in kraj rojstva, pri padlih tudi kje so padli.',
+  },
+  '4-prekomorska-brigada': {
+    name: '4. prekomorska brigada',
+    description: 'Ustanovljena 7. septembra 1944 v Italiji pri bazi NOVJ v Bariju: nakladanje in prevoz zavezniške pomoči. Padli in umrli ter vodilni kader.',
+  },
   '9-srpska-brigada': {
     name: '9. srbska brigada',
     description: 'Ustanovljena 11. marca 1944 v Rečici. Borci v stroju na dan ustanovitve, poveljniški kader brigade, bataljonov in čet ter bolničarke in borke.',
@@ -1342,6 +1358,22 @@ const mk: Record<string, UnitText> = {
     name: 'Прва вооружена пионерска партизанска чета',
     description:
       'Формирана на 7 ноември 1942 во Дивосело кај Госпиќ. Борците на четата, деца од Дивосело и околните села.',
+  },
+  '4-pomorski-sektor': {
+    name: 'IV поморски крајбрежен сектор',
+    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и умрените и каде паднале.',
+  },
+  'novosadski-odred': {
+    name: 'Новосадски партизански одред',
+    description: 'Формиран во 1941, а повторно на 28 август 1944 на Паленкашевиот салаш кај Бачки Петровац. Припадниците на одредот во 1941 и 1944 година.',
+  },
+  'deveta-brigada': {
+    name: 'Деветта бригада (Кочевска)',
+    description: 'Формирана на 14 септември 1943 од баталјоните на Западнодолењскиот одред, во составот на 18-та дивизија. Борците на бригадата: година и место на раѓање, а за загинатите и каде паднале.',
+  },
+  '4-prekomorska-brigada': {
+    name: '4-та прекуморска бригада',
+    description: 'Формирана на 7 септември 1944 во Италија, при базата на НОВЈ во Бари: товарење и превоз на сојузничката помош. Загинатите и умрените и командниот кадар.',
   },
   '9-srpska-brigada': {
     name: '9-та српска бригада',
@@ -2068,6 +2100,22 @@ const en: Record<string, UnitText> = {
     name: 'First Armed Pioneer Partisan Company',
     description:
       'Formed on 7 November 1942 in Divoselo near Gospić. Its fighters, children from Divoselo and the villages around it.',
+  },
+  '4-pomorski-sektor': {
+    name: '4th Naval Coastal Sector',
+    description: 'Formed on 30 October 1943 at Hvar, the Partisan Navy’s sector for central Dalmatia and its islands. Every fighter of the sector and where each came from, and for the fallen and dead where they fell.',
+  },
+  'novosadski-odred': {
+    name: 'Novi Sad Partisan Detachment',
+    description: 'Formed in 1941 and again on 28 August 1944 at Palenkaš farm near Bački Petrovac. Its members in 1941 and in 1944.',
+  },
+  'deveta-brigada': {
+    name: 'Ninth (Kočevje) Brigade',
+    description: 'Formed on 14 September 1943 from the battalions of the Western Dolenjska Detachment, in the 18th Division. The brigade’s fighters: year and place of birth, and for the fallen where they fell.',
+  },
+  '4-prekomorska-brigada': {
+    name: '4th Overseas Brigade',
+    description: 'Formed on 7 September 1944 in Italy, at the Yugoslav army’s base in Bari: loading and shipping Allied aid. The fallen and dead, and the officers.',
   },
   '9-srpska-brigada': {
     name: '9th Serbian Brigade',

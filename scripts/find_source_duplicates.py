@@ -81,6 +81,7 @@ LISTS = {
     '3-primorsko-goranska.pdf': [(1, 'starešine i bolničari'), (8, 'poginuli')],
     'tomsiceva-4.pdf': [(1, '1943-1944'), (49, '1944-1945')],
     'sercerjeva.pdf': [(1, 'prostovoljci 1942-43'), (10, 'padli')],
+    '4-pomorski-sektor.pdf': [(1, 'borci'), (56, 'poginuli')],       # the roster leaves the fallen out
     'kosovelova.pdf': [(2, 'padli'), (18, 'poveljniški kader')],
     '5-prekomorska.pdf': [(1, 'padli'), (17, 'vodilni kader')],
     '1-2-prekomorska.pdf': [(1, 'padli'), (11, 'vodilni kader')],
@@ -170,6 +171,7 @@ LIST_FATE = {
     'sercerjeva.pdf (padli)': 'fell', 'kosovelova.pdf (padli)': 'fell', '5-prekomorska.pdf (padli)': 'fell', '1-2-prekomorska.pdf (padli)': 'fell',                                          # its roster: everyone who joined by February 1943
     'dvanajsta.pdf (seznam)': 'lived', 'dvanajsta.pdf (padli)': 'fell',
     'gradnikova.pdf (padli)': 'fell',
+    '4-pomorski-sektor.pdf (poginuli)': 'fell',
     'istrski-odred.pdf (padli)': 'fell',
     'zapadnodolenjski-odred.pdf (padli)': 'fell',
     'braciceva.pdf (padli)': 'fell', 'braciceva.pdf (preziveli)': 'lived',
