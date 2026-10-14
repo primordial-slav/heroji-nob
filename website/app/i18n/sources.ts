@@ -417,7 +417,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'mosorski-odred':
       'Seznam borcev Mosorskega partizanskega odreda 1942–1944 (prvi del seznama, str. 355–562): I. mosorski odred, Mosorski bataljon, Leteča mosorska četa in odred od oktobra 1943 do novembra 1944, z rojstvom, poklicem, prihodom v odred in usodo. Drugi del seznama, borci komand mest in terenski delavci, ni vnesen.',
     'mosorski-odred-2':
-      'Drugi del seznama iz iste knjige (str. 573–648): borci komand mest ter partijsko-politični in terenski delavci s področja Mosorja. Vneseni so le borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske; terenski delavci, odborniki, članice AFŽ in delovni bataljoni niso vneseni.',
+      'Drugi del seznama iz iste knjige (str. 573–648): borci komand mest ter partijsko-politični in terenski delavci s področja Mosorja. Vneseni so le borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske; terenski delavci, odborniki in članice AFŽ niso vneseni; pripadniki delovnih bataljonov so.',
     'turopoljsko-posavski-odred':
       'Seznam padlih borcev odreda (99, s krajem rojstva, datumom in krajem smrti) ter ustreljeni in umrli borci odreda med vojno (16), str. 17–20 (Muzej Turopolja, Velika Gorica 1983)',
     'hak-19-vojnic':
@@ -439,7 +439,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'jajce-1942-poginuli':
       'Iz zbornika spominov o jajškem območju (knj. II): seznam borcev in aktivistov NOG z jajškega območja, padlih leta 1942, z rojstvom, enoto in smrtjo. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'spomenica-crnogorskim-antifasistima':
-      'Seznam črnogorskih antifašistov, padlih in umrlih v letih 1941–1945, po občinah, v tabeli: ime, očetovo ime, leto in kraj rojstva, leto smrti in kraj smrti. Knjiga skupaj navaja padle borce in antifašiste, ustreljene ali umrle v taboriščih in zaporih, brez stolpca, ki bi jih ločil, zato je zapis iz nje dodan le zapisom borcev, ki so že na strani in za katere je zanesljivo, da je to on.',
+      'Seznam črnogorskih antifašistov, padlih in umrlih v letih 1941–1945, po občinah, v tabeli: ime, očetovo ime, leto in kraj rojstva, leto smrti in kraj smrti. Vsi, ki jih knjiga navaja, so šteti za partizane: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on, drugi so med drugimi borci.',
     'hrvatsko-zagorje-1981':
       'Seznam padlih udeležencev NOB 1941–1945 z območja občin Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić in Zlatar-Bistrica, z rojstvom, enoto in smrtjo. Seznam skupaj navaja borce in žrtve fašističnega terorja; vneseni so le borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on.',
     'imotska-krajina-pali-borci':
@@ -862,7 +862,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'mosorski-odred':
       'Список на борците на Мосорскиот партизански одред 1942–1944 (првиот дел од списокот, стр. 355–562): I мосорски одред, Мосорскиот баталјон, Летечката мосорска чета и одредот од октомври 1943 до ноември 1944, со раѓање, занимање, доаѓање во одредот и судбина. Вториот дел од списокот, борците на командите на места и теренските работници, не е внесен.',
     'mosorski-odred-2':
-      'Вториот дел од пописот од истата книга (стр. 573–648): борците на командите на места, партиско-политичките и теренските работници од подрачјето на Мосор. Внесени се само борците, оние за кои записот вели дека биле борци или наведува воена должност или единица на војската; теренските работници, одборниците, членките на АФЖ и работните баталјони не се внесени.',
+      'Вториот дел од пописот од истата книга (стр. 573–648): борците на командите на места, партиско-политичките и теренските работници од подрачјето на Мосор. Внесени се само борците, оние за кои записот вели дека биле борци или наведува воена должност или единица на војската; теренските работници, одборниците и членките на АФЖ не се внесени; припадниците на работните баталјони се.',
     'turopoljsko-posavski-odred':
       'Список на загинатите борци на одредот (99, со место на раѓање, датум и место на загинувањето) и стрелани и починати борци на одредот во војната (16), стр. 17–20 (Музеј на Туропоље, Велика Горица 1983)',
     'hak-19-vojnic':
@@ -884,7 +884,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'jajce-1942-poginuli':
       'Од зборникот спомени за јајачкиот крај (кн. II): списокот на борците и активистите на НОД од јајачкото подрачје загинати во 1942 година, со раѓање, единица и смрт. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'spomenica-crnogorskim-antifasistima':
-      'Список на црногорските антифашисти загинати и умрени во 1941–1945, по општини, во табела: име, татково име, година и место на раѓање, година на смрт и место на загинување. Книгата заедно ги наведува паднатите борци и антифашистите стрелани или умрени во логори и затвори, без колона што ги разликува, па записот од неа е додаден само на записите на борците што веќе се на сајтот и за кои сигурно се знае дека е тоа тој.',
+      'Список на црногорските антифашисти загинати и умрени во 1941–1945, по општини, во табела: име, татково име, година и место на раѓање, година на смрт и место на загинување. Сите што книгата ги наведува се водат како партизани: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој, а другите се меѓу другите борци.',
     'hrvatsko-zagorje-1981':
       'Попис на загинатите учесници во НОБ 1941–1945 од подрачјето на општините Доња Стубица, Иванец, Клањец, Крапина, Прерада, Забок, Запрешиќ и Златар-Бистрица, со раѓање, единица и смрт. Пописот заедно ги наведува борците и жртвите на фашистичкиот терор; внесени се само борците, оние за кои записот вели дека биле борци или наведува воена должност или единица на војската. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој.',
     'imotska-krajina-pali-borci':
@@ -1306,7 +1306,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'mosorski-odred':
       'The roll of the Mosor Partisan Detachment, 1942–1944 (the list’s first part, pp. 355–562): the 1st Mosor Detachment, the Mosor Battalion, the Flying Mosor Company and the detachment of October 1943 to November 1944, with birth, occupation, joining and fate. The list’s second part, the town commands’ men and the field workers, is not included.',
     'mosorski-odred-2':
-      'The second part of the same book’s roll (pp. 573–648): the fighters of the town commands and the party, political and field workers of the Mosor area. Only the fighters were entered, those whose entry says they fought or names a military duty or an army unit; field workers, council members, AFŽ members and the labour battalions were left out.',
+      'The second part of the same book’s roll (pp. 573–648): the fighters of the town commands and the party, political and field workers of the Mosor area. Only the fighters were entered, those whose entry says they fought or names a military duty or an army unit; field workers, council members and AFŽ members were left out; the labour battalions’ men were entered.',
     'turopoljsko-posavski-odred':
       'The detachment’s fighters killed in action (99, with birthplace, date and place of death) and those shot or who died during the war (16), pp. 17–20 (Turopolje Museum, Velika Gorica 1983)',
     'hak-19-vojnic':
@@ -1328,7 +1328,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'jajce-1942-poginuli':
       'From the collection of memoirs on the Jajce area (vol. II): the fighters and activists of the liberation movement from the Jajce area who fell in 1942, with birth, unit and death. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'spomenica-crnogorskim-antifasistima':
-      'Montenegro’s antifascists who were killed or died in 1941–1945, by municipality, in a table: name, father’s name, year and place of birth, year and place of death. The book lists fallen fighters together with antifascists shot or dead in camps and prisons, with no column that tells them apart, so an entry from it is added only to the record of a fighter already on the site where the match is certain.',
+      'Montenegro’s antifascists who were killed or died in 1941–1945, by municipality, in a table: name, father’s name, year and place of birth, year and place of death. Everyone the book names is counted as a partisan: an entry is added to the record of each fighter on the site where the match is certain, and the others are among the other fighters.',
     'hrvatsko-zagorje-1981':
       'The roll of the participants of the war who fell in 1941–1945 from the municipalities of Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić and Zlatar-Bistrica, with birth, unit and death. The roll lists fighters and victims of fascist terror together; only the fighters were entered, those whose entry says they fought or names a military duty or an army unit. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain.',
     'imotska-krajina-pali-borci':

@@ -45,10 +45,11 @@ FIGHTER = re.compile(
 CHETNIK = re.compile(r'četničk\w* (?:odred|brigad|korpus|bataljon|čet\w*|komand)|ustašk\w* (?:bojn|postroj|vojsk)|domobran', re.I)
 
 
-# units of the rear that are no fighting units: the labour battalions (mostly older men, from the autumn of 1944), a
-# komanda mjesta's rear unit, the children's pioneer companies
-REAR = re.compile(r'\b(?:\w+\s+)?(?:radn\w*\s+bataljon\w*|pozadinsk\w*\s+jedinic\w*|pionirsk\w*\s+čet\w*)', re.I)   # and
-#                                                       the word before it: "komandir pionirske čete", "pripadnik radnog"
+# units of the rear that are no fighting units: a komanda mjesta's rear unit, the children's pioneer companies; the
+# labour battalions (radni bataljon, mostly older men, from the autumn of 1944) count, by the user's decision of
+# 2026-10-14
+REAR = re.compile(r'\b(?:\w+\s+)?(?:pozadinsk\w*\s+jedinic\w*|pionirsk\w*\s+čet\w*)', re.I)   # and the word before it:
+#                                                                                           "komandir pionirske čete"
 
 
 def fighter(rec: dict) -> bool:

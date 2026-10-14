@@ -66,10 +66,19 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga'}
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
 POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima'}
-# books used only as references for men who have a unit record: their unmatched entries make no records (the user's
-# decision of 2026-10-14 for the Spomenica crnogorskim antifašistima, which lists fighters and antifascists killed in
-# camps and prisons together); taking a book out of this set adds its unmatched men to Ostali borci
-REFERENCE_ONLY = {'spomenica-crnogorskim-antifasistima'}
+# books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
+# out of this set adds its unmatched men to Ostali borci (the Spomenica crnogorskim antifašistima was here until the
+# user decided, on 2026-10-14, that every man it names counts as a partisan)
+REFERENCE_ONLY: set = set()
+# books printed as a table of columns, whose columns are the record's fields (as the census's are); every man of the
+# Spomenica counts as a partisan who fell (the user's decision), so his death is "poginuo"
+COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima'}
+
+
+def column_fields(e: dict) -> dict:
+    out = {'birth_place': e.get('born_in') or '', 'death_type': 'poginuo', 'death_date': e.get('death_year') or '',
+           'death_place': e.get('death_place') or ''}
+    return {k: v for k, v in out.items() if v}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',
                  'pdf_x_left', 'pdf_rects')
 
@@ -218,6 +227,7 @@ def from_possessive(word: str) -> str:
     """The father's name from the possessive Trebinjci pali prints, -ov/-ev of a name without -a ("Mitrov" Mitar, "Vulov"
     Vule or Vulo), -in of a name in -a ("Lučin" Luka, "Savin" Sava): the form the site's given names know best; '' when
     none of them is a name"""
+    word = re.sub(r'(ov|ev|in)a$', r'\1', word)          # a daughter's: "Đokova", "Lučina"
     m = re.match(r'^(.+?)(ov|ev|in)$', word)
     if not m:
         return ''
@@ -377,6 +387,10 @@ def main():
             if census:
                 for k, v in census_fields(census[0]).items():
                     rec.setdefault(k, v)                     # the census's columns, where a list gave no death
+            columns = [m for m in g if m['_book'] in COLUMN_BOOKS]
+            if columns:
+                for k, v in column_fields(columns[0]).items():
+                    rec.setdefault(k, v)                     # the Spomenica's columns
             if rest:
                 rec['other_sources'] = [source_entry(m) for m in rest]
             records.append(rec)
