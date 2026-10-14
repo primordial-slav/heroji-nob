@@ -62,7 +62,7 @@ PEOPLE = [
 ]
 # the footnotes: (fate, ISO day or year, place)
 DEATHS = {
-    'Evgen Matejka-Pemc': ('Padel je 3. maja 1945 ob Soči.', 'poginuo', '1945-05-03', 'ob Soči'),
+    'Evgen Matejka-Pemc': ('Padel je 3. maja 1945 ob Soči.', 'poginuo', '1945-05-03', 'Soča'),
     'Ciril Keršič-Metod': ('Ko je bil na partijskem tečaju na Dolenjskem, se je iz nepojasnjenih razlogov sam ustrelil.',
                            'umro', '1944', ''),
     'Jože Kuk-Branko': ('Leta 1946 se je smrtno ponesrečil.', '', '', ''),

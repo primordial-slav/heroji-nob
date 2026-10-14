@@ -77,7 +77,7 @@ REFERENCE_ONLY: set = set()
 # whose entries give only the years ("1905/44" in the Cazin region's, "1920-1942" in Iskra in plamen's) or a name, a
 # birth year and a village under the battle they fell in (Ludbreg's)
 COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli',
-                'ludbreg-poginuli'}
+                'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi'}   # (the last two: the officers who fell)
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
@@ -109,13 +109,19 @@ ONE_MAN = [
                                  'and Budva (Buljarica, 1913, Novoselje)'),
     ('9035002709', '9035006704', 'Medojević Vlastimir, "B.", fell 1944: Bijelo Polje (Prošćenje, 1927) and Mojkovac '
                                  '(Stevanovac, 1926, Trnovica)'),
+    # the Slovene staff lists name an officer and what he was called, nothing more
+    ('9072000059', '9075000001', 'Jernejc Franc-Milče, the Prešernova\'s and Vojkova\'s officer to August 1944, then '
+                                 'the Jeseniško-bohinjski odred\'s commander from 30 August 1944'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 
 
 def column_fields(e: dict) -> dict:
+    # a list of officers names who fell and who lived (the XXXI. divizija's staffs): no death for one who lived
+    if e.get('survived') and not e.get('death_date'):
+        return {'birth_place': e['born_in']} if e.get('born_in') else {}
     day = re.fullmatch(r'(\d{4})-(\d\d)-(\d\d)', e.get('death_date') or '')     # the Ludbreg lists give the battle's day
-    out = {'birth_place': e.get('born_in') or '', 'death_type': 'poginuo',
+    out = {'birth_place': e.get('born_in') or '', 'death_type': e.get('death_type') or 'poginuo',
            'death_date': f'{int(day[3])}. {int(day[2])}. {day[1]}.' if day else e.get('death_year') or '',
            'death_place': e.get('death_place') or ''}
     return {k: v for k, v in out.items() if v}
@@ -591,7 +597,8 @@ def main():
             # a names-only list of survivors: the Vis spomenica's holders)
             listed = [m for m in g if m.get('pdf_file') in NAME_LISTS and not m.get('survived')]
             if listed:
-                rec['death_type'] = 'poginuo'
+                # (an entry may say how: the Vis plaques' died of wounds are "umro")
+                rec['death_type'] = next((m['death_type'] for m in listed if m.get('death_type')), 'poginuo')
                 place = next((m['death_place'] for m in listed if m.get('death_place')), '')
                 day = next((m['death_date'] for m in listed if re.fullmatch(r'\d{4}-\d\d-\d\d', m.get('death_date') or '')), '')
                 if place:
