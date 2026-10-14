@@ -551,6 +551,10 @@ UNITS = {
         book=dict(pdf="00003/652_2.pdf", page=35, xref=275,
                   caption="Četa mornaričke pješadije IV POS-a u Hvaru, septembar 1944."),
         note="Nothing in the gallery names the sektor; the photo is from its book (Pribilović, Sl. 67)."),
+    "cankarjev-bataljon": dict(
+        name="Cankarjev bataljon", tags=[],
+        caption=r"cankarjev\w*\s+bataljon|dražgo\w*", photo=None,
+        note="Nothing in the gallery names the battalion, and its book on znaci.org (00003/1080) has no captioned group photo. The card shows the list of its fallen."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,

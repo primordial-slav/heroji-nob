@@ -50,7 +50,8 @@ FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'deat
 # Units whose parser sets the fields itself and whose text is written from them, not printed: Druga proleterska's
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
 # its campaign's period would be a death date, "poginuo ili nestao" a death
-PARSER_FIELDS = {39, 121}                  # Druga proleterska; the pioneer company (its 1990s deaths are no falls)
+PARSER_FIELDS = {39, 121, 170}             # Druga proleterska; the pioneer company (its 1990s deaths are no falls);
+                                           # the Cankarjev bataljon (its deserters and men who fell on the other side)
 # names-only lists of the fallen, books across units whose men without a record are in Ostali borci (122): "Deseta
 # krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
 # build_ostali_borci.py sets the death from the entry's own fields

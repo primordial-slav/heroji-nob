@@ -1874,6 +1874,15 @@ export const sources: PdfSource[] = [
     description: 'Popis boraca IV POS-a 1943–1945, koji su sastavili Sekcija boraca sektora i autor (4.702 imena, sa mestom odakle je ko), i poginuli i umrli borci sektora, sa dužnošću i kako su pali (str. 418–478).'
   },
   {
+    id: 'cankarjev-bataljon',
+    title: 'Cankarjev bataljon in dražgoška bitka',
+    author: 'Ivan Jan',
+    pdfPath: '/pdfs/cankarjev-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/cankarjev-bataljon.jpg',
+    brigadeName: 'Cankarjev bataljon',
+    description: 'Formacija bataljona u Dražgošama, španski borci i narodni heroji, poginuli cankarjevci po bitkama 1941–1942, preživeli nosioci Spomenice 1941. i ostali preživeli učesnici dražgoške bitke (str. 338–346).'
+  },
+  {
     id: 'novosadski-odred',
     title: 'Novosadski partizanski odred - dva puta rođen',
     author: 'Vanja Sanader',

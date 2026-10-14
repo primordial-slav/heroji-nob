@@ -1491,6 +1491,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/novosadski-odred.pdf']
   },
   {
+    id: 'cankarjev-bataljon',
+    name: 'Cankarjev bataljon',
+    nameEn: 'Cankar Battalion',
+    description: 'Formiran 5. avgusta 1941. na Vodiškoj planini na Jelovici; u januaru 1942. bitka za Dražgoše. Poginuli borci bataljona i preživeli učesnici dražgoške bitke.',
+    image: '/images/pdf-thumbs/cankarjev-bataljon.jpg',
+    soldierCount: 218,
+    dataFile: '/cankarjev-bataljon-soldiers.json',
+    pdfFiles: ['/pdfs/cankarjev-bataljon.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

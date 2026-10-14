@@ -623,6 +623,10 @@ const sl: Record<string, UnitText> = {
     name: 'IV. pomorski obalni sektor',
     description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja in od kod je kdo, pri padlih in umrlih tudi kje so padli.',
   },
+  'cankarjev-bataljon': {
+    name: 'Cankarjev bataljon',
+    description: 'Ustanovljen 5. avgusta 1941 na Vodiški planini na Jelovici; januarja 1942 dražgoška bitka. Padli cankarjevci in preživeli udeleženci dražgoške bitke.',
+  },
   'novosadski-odred': {
     name: 'Novosadski partizanski odred',
     description: 'Ustanovljen leta 1941, znova 28. avgusta 1944 na Palenkaševem salašu pri Bačkem Petrovcu. Pripadniki odreda v letih 1941 in 1944.',
@@ -1362,6 +1366,10 @@ const mk: Record<string, UnitText> = {
   '4-pomorski-sektor': {
     name: 'IV поморски крајбрежен сектор',
     description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и умрените и каде паднале.',
+  },
+  'cankarjev-bataljon': {
+    name: 'Цанкаров баталјон',
+    description: 'Формиран на 5 август 1941 на Водишката планина на Јеловица; во јануари 1942 битката за Драгоше. Загинатите борци на баталјонот и преживеаните учесници во битката за Драгоше.',
   },
   'novosadski-odred': {
     name: 'Новосадски партизански одред',
@@ -2104,6 +2112,10 @@ const en: Record<string, UnitText> = {
   '4-pomorski-sektor': {
     name: '4th Naval Coastal Sector',
     description: 'Formed on 30 October 1943 at Hvar, the Partisan Navy’s sector for central Dalmatia and its islands. Every fighter of the sector and where each came from, and for the fallen and dead where they fell.',
+  },
+  'cankarjev-bataljon': {
+    name: 'Cankar Battalion',
+    description: 'Formed on 5 August 1941 on Vodiška planina in the Jelovica hills; in January 1942 the battle of Dražgoše. The battalion’s fallen and the survivors of Dražgoše.',
   },
   'novosadski-odred': {
     name: 'Novi Sad Partisan Detachment',
