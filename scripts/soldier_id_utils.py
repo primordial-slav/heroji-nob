@@ -160,6 +160,7 @@ BRIGADE_CODES = {
     169: 'Novosadski odred',
     170: 'Cankarjev bataljon',
     171: 'Kokrški odred',
+    172: 'Viški dobrovoljački bataljon',
     # Add new brigades here with next available code
 }
 

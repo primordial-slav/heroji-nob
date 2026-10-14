@@ -1,7 +1,7 @@
 # Knjiga Boraca - WWII Yugoslav Partisan Soldier Database
 
 ## Project Overview
-Historical archive website for searching ~464,000 WWII Yugoslav partisan soldiers across 150 units (106 brigades, fourteen divisions, nineteen detachments, five battalions, the 1. and 2. eskadrila NOVJ, a naval coastal sector, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
+Historical archive website for searching ~464,000 WWII Yugoslav partisan soldiers across 151 units (106 brigades, fourteen divisions, nineteen detachments, six battalions, the 1. and 2. eskadrila NOVJ, a naval coastal sector, a company, a corps' artillery, the Vrhovni štab and the Centralna bolnica), and the soldiers of the books across units whose unit is not on the site ("Ostali borci", code 122, and the 1964 census's fallen partisans in eight parts, 131-138). Next.js frontend with Python data extraction pipeline. Data comes from OCR'd PDF books ("Knjiga boraca").
 
 ## Git
 - **Two remotes**: `origin` and `prod` — always push to both
@@ -161,6 +161,7 @@ Historical archive website for searching ~464,000 WWII Yugoslav partisan soldier
 | 169 | Novosadski partizanski odred | `data-extraction/parse_novosadski_odred.py` | `novosadski-odred-soldiers.json` | 1 PDF (Cyrillic, born digital: the members of 1941 and of 1944, one a line; book pp. 85-92) | 124 |
 | 170 | Cankarjev bataljon (Dražgoše, 1941-42) | `data-extraction/parse_cankarjev_bataljon.py` | `cankarjev-bataljon-soldiers.json` | 1 PDF (one column: the fallen by battle, the surviving spomenica holders, the other survivors of Dražgoše; the staff, Spanish fighters and narodni heroji added to their entries; book pp. 338-346) | 218 |
 | 171 | Kokrški odred (the first, 1942-43, and the second, 1944-45) | `data-extraction/parse_kokrski_odred.py` (the second); `data-extraction/parse_kokrski_odred_prvi.py` (the first, vol. I) | `kokrski-odred-soldiers.json` | 2 PDFs (the second odred's reconstructed roll, under the staffs', services' and companies' headings, vol. III pp. 453-478; the first odred's numbered roll with bios, vol. I pp. 509-525) | 1,366 |
+| 172 | Viški dobrovoljački bataljon (January - April 1944) | `data-extraction/parse_viski_bataljon.py` | `viski-bataljon-soldiers.json` | 1 PDF (Huljić, *Vis 1941-1945*, Prilog II/8: the roll at the end of January 1944, names run on under the command, each company and platoon and the desetine of Biševo and Oključna; book pp. 538-539) | 123 |
 | 122 | Ostali borci (not a unit) | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci.json` | none of its own: the entries of the books across units that no record took (see "Ostali borci") | 19,265 |
 | 131-138 | Ostali borci, the 1964 census's parts (not units): Slovenija, Hrvatska, Bosna i Hercegovina, Crna Gora, Makedonija, Srbija, Kosovo i Metohija, Vojvodina | `data-extraction/build_ostali_borci.py` (generated) | `ostali-borci-<slovenija, hrvatska, bih, crna-gora, makedonija, srbija, kosovo, vojvodina>.json` | none of their own: the census's fallen partisans whom no record took, one part a volume | 155,983 |
 
@@ -291,7 +292,7 @@ The memorial book of Tuzla, *Spomen-knjiga poginulih tuzlanskih boraca NOR-a i �
 
 A list published only as a web page (1. Dalmatinska, Mačvanski odred) has no `pdf_*` fields; its records carry `source_url` instead, which the soldier dialog links, and its source in `sources.ts` has that URL as `pdfPath` (the Sources page then offers "Otvori spisak" rather than a PDF).
 
-Soldier IDs: 10 digits — first 4 = brigade code (0001-0171), last 6 = sequence.
+Soldier IDs: 10 digits — first 4 = brigade code (0001-0172), last 6 = sequence.
 
 ## Known OCR Issues
 

@@ -1511,6 +1511,16 @@ export const units: Unit[] = [
     pdfFiles: ['/pdfs/kokrski-odred.pdf', '/pdfs/kokrski-odred-1.pdf']
   },
   {
+    id: 'viski-bataljon',
+    name: 'Viški dobrovoljački bataljon',
+    nameEn: 'Vis Volunteer Battalion',
+    description: 'Formiran u januaru 1944. na Visu za odbranu ostrva, rasformiran krajem aprila 1944. Borci bataljona po četama i vodovima, krajem januara 1944.',
+    image: '/images/pdf-thumbs/viski-bataljon.jpg',
+    soldierCount: 123,
+    dataFile: '/viski-bataljon-soldiers.json',
+    pdfFiles: ['/pdfs/viski-bataljon.pdf']
+  },
+  {
     // not a unit: the soldiers of the books across units who have no record of a unit (build_ostali_borci.py)
     id: 'ostali-borci',
     name: 'Ostali borci',

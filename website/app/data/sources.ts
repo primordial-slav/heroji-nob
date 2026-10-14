@@ -1892,6 +1892,15 @@ export const sources: PdfSource[] = [
     description: 'Popis boraca IV POS-a 1943–1945, koji su sastavili Sekcija boraca sektora i autor (4.702 imena, sa mestom odakle je ko), i poginuli i umrli borci sektora, sa dužnošću i kako su pali (str. 418–478).'
   },
   {
+    id: 'viski-bataljon',
+    title: 'Vis 1941-1945',
+    author: 'Veseljko Huljić',
+    pdfPath: '/pdfs/viski-bataljon.pdf',
+    thumbnail: '/images/pdf-thumbs/viski-bataljon.jpg',
+    brigadeName: 'Viški dobrovoljački bataljon',
+    description: 'Spisak boraca Viškog dobrovoljačkog bataljona na Visu krajem januara 1944: komanda, čete, vodovi i desetine Biševa i Oključne (str. 538–539).'
+  },
+  {
     id: 'kokrski-odred-1',
     title: 'Kokrški odred - narodnoosvobodilni boj pod Karavankami I',
     author: 'Ivan Jan',

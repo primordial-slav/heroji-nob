@@ -73,6 +73,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   'tuzla-spomen-knjiga.pdf',   # the Tuzla memorial book: bios beside photographs (its records in unit 122)
                   '4-pomorski-sektor.pdf',   # IV pomorski obalni sektor: the fallen's name left, death right (roster boxed alike)
                   'kokrski-odred.pdf',   # Kokrški odred: names run on in a few paragraphs (each boxed by its lines)
+                  'viski-bataljon.pdf',   # Viški dobrovoljački bataljon: names run on under each platoon
                   # books across units whose names run on (Gončin's and Tmušić's Srem): their records in unit 122
                   'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf'}
 

@@ -37,6 +37,10 @@ export const formation: Record<string, Formation> = {
     date: '1943-10-30', place: 'Hvar', source: 'https://znaci.org/00003/652.pdf',
     note: 'Pribilović, Četvrti pomorski obalni sektor Mornarice NOVJ: „Štab IV pomorskog obalnog sektora uspostavljen je, odnosno počeo je djelovati 30. oktobra 1943. u Hvaru“; do nove podele obale 10. novembra 1943. zvao se III POS (Prilog IX, str. 484).',
   },
+  'viski-bataljon': {
+    date: '1944-01', place: 'Vis', source: 'https://znaci.org/00003/804.pdf',
+    note: 'Huljić, Vis 1941-1945, str. 539: „Viški dobrovoljački bataljon formiran je siječnja 1944. god. radi pojačanja obrambenih snaga na otoku. Rasformiran je koncem travnja 1944. godine“.',
+  },
   'kokrski-odred': {
     date: '1942-06-18', place: 'Kališče pod Storžičem', source: 'https://znaci.org/00003/1046.pdf',
     note: 'Jan, Kokrški odred I, str. 234: „Odlok o ustanovitvi Kokrškega odreda je bil torej dokončno realiziran 18. junija 1942 na Kališču“; drugi Kokrški odred „je bil sestavljen 27. avgusta 1944. leta, in sicer v Dragi pri Begunjah“ (II, str. 146).',

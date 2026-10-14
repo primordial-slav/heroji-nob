@@ -623,6 +623,10 @@ const sl: Record<string, UnitText> = {
     name: 'IV. pomorski obalni sektor',
     description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja in od kod je kdo, pri padlih in umrlih tudi kje so padli.',
   },
+  'viski-bataljon': {
+    name: 'Viški prostovoljni bataljon',
+    description: 'Ustanovljen januarja 1944 na Visu za obrambo otoka, razpuščen konec aprila 1944. Borci bataljona po četah in vodih, konec januarja 1944.',
+  },
   'kokrski-odred': {
     name: 'Kokrški odred',
     description: 'Ustanovljen 18. junija 1942 na Kališču pod Storžičem, drugič 27. avgusta 1944 v Dragi pri Begunjah. Borci prvega odreda z življenjepisi in spisek drugega po štabih, službah in četah.',
@@ -1370,6 +1374,10 @@ const mk: Record<string, UnitText> = {
   '4-pomorski-sektor': {
     name: 'IV поморски крајбрежен сектор',
     description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и умрените и каде паднале.',
+  },
+  'viski-bataljon': {
+    name: 'Вишки доброволен баталјон',
+    description: 'Формиран во јануари 1944 на Вис за одбрана на островот, расформиран кон крајот на април 1944. Борците на баталјонот по чети и водови, кон крајот на јануари 1944.',
   },
   'kokrski-odred': {
     name: 'Кокршки одред',
@@ -2120,6 +2128,10 @@ const en: Record<string, UnitText> = {
   '4-pomorski-sektor': {
     name: '4th Naval Coastal Sector',
     description: 'Formed on 30 October 1943 at Hvar, the Partisan Navy’s sector for central Dalmatia and its islands. Every fighter of the sector and where each came from, and for the fallen and dead where they fell.',
+  },
+  'viski-bataljon': {
+    name: 'Vis Volunteer Battalion',
+    description: 'Formed in January 1944 on Vis to defend the island and disbanded at the end of April 1944. Its men by company and platoon at the end of January 1944.',
   },
   'kokrski-odred': {
     name: 'Kokra Detachment',

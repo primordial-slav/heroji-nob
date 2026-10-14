@@ -1333,6 +1333,15 @@ BRIGADE_CONFIGS = {
         'fathers_name_form': None,
         'original_casing': 'title',
     },
+    172: {
+        'name': 'Viški dobrovoljački bataljon',
+        'json_file': 'viski-bataljon-soldiers.json',
+        'language': 'hr',
+        'name_format': 'standard',    # "Vodnik: Žaja Vicko; borci: Roki Roko, Karuza Marica, ..."
+        'has_fathers_name': False,
+        'fathers_name_form': None,
+        'original_casing': 'title',
+    },
     # not units either: the fallen partisans of the 1964 census (Žrtve rata 1941-1945) who have no record of a unit,
     # one part per volume of the census, a republic or province (build_ostali_borci.py, CENSUS_VOLUMES)
     **{code: {

@@ -563,6 +563,10 @@ UNITS = {
                           "vojaki pred tiskarno, kmalu po prihodu v Celovec"),
         crop=(0.08, 0.085, 0.89, 0.40), descreen=1.6,
         note="Nothing in the gallery names the odred; the photo is from its book (Jan, III, p. 377), a 1-bit page scan: the crop keeps the photo, the descreen softens its dots."),
+    "viski-bataljon": dict(
+        name="Viški dobrovoljački bataljon", tags=[],
+        caption=r"višk\w*\s+dobrovolja\w*\s+bataljon", photo=None,
+        note="Nothing in the gallery names the battalion. The card shows its roll's page."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,
