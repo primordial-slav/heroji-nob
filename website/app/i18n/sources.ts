@@ -49,8 +49,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '2-krajiska': 'Seznam padlih in umrlih borcev in poveljnikov 2. krajiške brigade v NOB',
     'tuzlanski-odred': 'Seznam borcev Tuzelskega partizanskega odreda',
     'uzicki-odred': 'Seznam borcev Užiškega partizanskega odreda, ki so padli v narodnoosvobodilni vojni 1941–1945',
+    'pozega-cete':
+      'Seznami borcev 1. in 2. požeške čete Užiškega odreda 1941—1942, Pilatovačke čete na dan ustanovitve, borcev, ki so varovali objekte v Požegi, udeležencev NOB iz vasi okoli Požege v drugih enotah leta 1941, 1. čete 5. bataljona Užiškega odreda leta 1944 ter padlih in umrlih borcev Požeške čete 2. proletarske brigade, po vaseh; po vojni so jih sestavili preživeli borci čet. Seznami delavcev partizanskih delavnic, simpatizerjev in beguncev niso vneseni.',
     '14-srpska': 'Seznam padlih borcev in poveljnikov odreda in 14. srbske brigade',
     '7-crnogorska-omladinska': 'Seznam padlih borcev 7. črnogorske mladinske brigade',
+    '7-crnogorska-zbornik-poginuli':
+      'Padli borci in starešine brigade iz zbornika spominov: rojstvo, četa in bataljon, kdaj in kje je padel.',
     '17-majevicka': 'Seznam borcev Tretjega majeviškega partizanskega odreda in 17. majeviške brigade, ki so padli ali umrli v NOB',
     '25-brodska-poginuli': 'Seznam padlih borcev Brodske brigade 28. divizije',
     '25-brodska-sastav': 'Seznam borcev in poveljnikov, ki so bili oktobra 1943 v Brodski brigadi',
@@ -126,6 +130,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih, umrlih in pogrešanih borcev in poveljnikov brigade ter seznam borcev, ki so vojno preživeli, po občinah (str. 393–458 knjige)',
     '4-proleterska-poginuli':
       'Borci in poveljniki brigade, padli od 1942 do 1945, po letih: rojstvo, poklic, dolžnost, kdaj in kje so padli',
+    '4-proleterska-formiranje':
+      'Seznam borcev in starešin na dan ustanovitve brigade, 17. junija 1942, po štabih, bataljonih in četah: dolžnost, kraj in leto rojstva, poklic, članstvo v KPJ in SKOJ in kaj je bilo z njim.',
     '3-vojvodjanska':
       'Seznami borcev in poveljnikov brigade: padli, tisti, katerih usoda ni znana, in preživeli (str. 479 in naprej)',
     'kalnicki-odred':
@@ -522,8 +528,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '2-krajiska': 'Список на загинатите и починатите борци и старешини на 2-ра краишка бригада во НОБ',
     'tuzlanski-odred': 'Список на борците на Тузланскиот партизански одред',
     'uzicki-odred': 'Список на борците на Ужичкиот партизански одред загинати во народноослободителната војна 1941–1945',
+    'pozega-cete':
+      'Списоците на борците од 1. и 2. пожешка чета на Ужичкиот одред 1941—1942, Пилатовачката чета на денот на формирањето, борците што ги чувале објектите во Пожега, учесниците во НОБ од селата околу Пожега во други единици во 1941, 1. чета на 5. баталјон на Ужичкиот одред во 1944 и загинатите и умрените борци од Пожешката чета на 2. пролетерска бригада, по села; по војната ги составиле преживеаните борци од четите. Списоците на работниците во партизанските работилници, симпатизерите и бегалците не се внесени.',
     '14-srpska': 'Список на загинатите борци и старешини на одредот и на 14-та српска бригада',
     '7-crnogorska-omladinska': 'Список на загинатите борци на 7-ма црногорска младинска бригада',
+    '7-crnogorska-zbornik-poginuli':
+      'Загинатите борци и старешини на бригадата од зборникот спомени: раѓање, чета и баталјон, кога и каде загинал.',
     '17-majevicka': 'Список на борците на Третиот мајевички партизански одред и на 17-та мајевичка бригада загинати или починати во НОБ',
     '25-brodska-poginuli': 'Список на загинатите борци на Бродската бригада од 28-ма дивизија',
     '25-brodska-sastav': 'Список на борците и старешините што биле во Бродската бригада во октомври 1943',
@@ -599,6 +609,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите, починатите и исчезнатите борци и раководители на бригадата, и список на борците што ја преживеаја војната, по општини (стр. 393–458 од книгата)',
     '4-proleterska-poginuli':
       'Борци и старешини на бригадата загинати од 1942 до 1945, по години: раѓање, занимање, должност, кога и каде загинале',
+    '4-proleterska-formiranje':
+      'Списокот на борците и старешините на денот на формирањето на бригадата, 17 јуни 1942, по штабови, баталјони и чети: должност, место и година на раѓање, занимање, членство во КПЈ и СКОЈ и што се случило со него.',
     '3-vojvodjanska':
       'Списоци на борците и старешините на бригадата: загинати, оние чија судбина остана неутврдена, и преживеани (стр. 479 и натаму)',
     'kalnicki-odred':
@@ -995,8 +1007,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '2-krajiska': 'Partisans and officers of the 2nd Krajina Brigade who were killed or died in the war',
     'tuzlanski-odred': 'Roll of the Tuzla Partisan Detachment',
     'uzicki-odred': 'Members of the Užice Partisan Detachment killed in the war of 1941–1945',
+    'pozega-cete':
+      'The rolls of the 1st and 2nd Požega companies of the Užice Detachment, 1941–1942, the Pilatovići company on the day it was formed, the fighters guarding the town, the villagers who fought in other units in 1941, the 1st company of the detachment’s 5th battalion in 1944, and the fallen of the Požega company of the 2nd Proletarian Brigade, by village, as the companies’ survivors reconstructed them after the war. The lists of the partisan workshops’ workers, sympathizers and refugees were not entered.',
     '14-srpska': 'Fallen Partisans and officers of the detachment and of the 14th Serbian Brigade',
     '7-crnogorska-omladinska': 'Fallen Partisans of the 7th Montenegrin Youth Brigade',
+    '7-crnogorska-zbornik-poginuli':
+      'The brigade’s fallen fighters and officers from its collection of memoirs: birth, company and battalion, when and where each fell.',
     '17-majevicka': 'Members of the 3rd Majevica Partisan Detachment and the 17th Majevica Brigade who were killed or died in the war',
     '25-brodska-poginuli': 'Fallen Partisans of the Brod Brigade, 28th Division',
     '25-brodska-sastav': 'Partisans and officers who served in the Brod Brigade in October 1943',
@@ -1071,6 +1087,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s Partisans and officers who were killed, died or went missing, and those who survived the war, by municipality (pp. 393–458 of the book)',
     '4-proleterska-poginuli':
       'The brigade’s Partisans and officers killed from 1942 to 1945, year by year: birth, occupation, duty, when and where they fell',
+    '4-proleterska-formiranje':
+      'The brigade’s fighters and officers on the day it was formed, 17 June 1942, by staff, battalion and company: duty, place and year of birth, trade, membership of the KPJ and SKOJ, and what became of each.',
     '3-vojvodjanska':
       'Lists of the brigade’s Partisans and officers: those killed, those whose fate remains unknown, and the survivors (pp. 479 ff.)',
     'kalnicki-odred':

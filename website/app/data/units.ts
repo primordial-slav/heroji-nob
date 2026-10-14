@@ -266,9 +266,9 @@ export const units: Unit[] = [
     nameEn: 'Užice Partisan Detachment',
     description: 'Formiran 7. jula 1941. u Užicu. Borci odreda poginuli u ratu 1941–1945.',
     image: '/images/uzicki-odred.jpg',
-    soldierCount: 1283,
+    soldierCount: 1670,
     dataFile: '/uzicki-odred-soldiers.json',
-    pdfFiles: ['/pdfs/uzicki-odred.pdf']
+    pdfFiles: ['/pdfs/uzicki-odred.pdf', '/pdfs/pozega-cete.pdf']
   },
   {
     id: '14-srpska-brigada',
@@ -286,9 +286,9 @@ export const units: Unit[] = [
     nameEn: '7th Montenegrin Youth Brigade',
     description: 'Formirana 30. decembra 1943. u Kolašinu. Poginuli borci brigade.',
     image: '/images/7-crnogorska-omladinska-brigada.jpg',
-    soldierCount: 439,
+    soldierCount: 658,
     dataFile: '/7-crnogorska-soldiers.json',
-    pdfFiles: ['/pdfs/7-crnogorska-omladinska.pdf']
+    pdfFiles: ['/pdfs/7-crnogorska-omladinska.pdf', '/pdfs/7-crnogorska-zbornik-poginuli.pdf']
   },
   {
     id: '17-majevicka-brigada',
@@ -396,9 +396,9 @@ export const units: Unit[] = [
     nameEn: '2nd Proletarian Brigade',
     description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta.',
     image: '/images/druga-proleterska-brigada.jpg',
-    soldierCount: 2235,
+    soldierCount: 2276,
     dataFile: '/druga-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf']
+    pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf', '/pdfs/pozega-cete.pdf']
   },
   {
     id: '4-proleterska-brigada',
@@ -406,9 +406,9 @@ export const units: Unit[] = [
     nameEn: '4th Proletarian Montenegrin Brigade',
     description: 'Formirana 10. juna 1942. Borci brigade u bici na Sutjesci, i borci i starešine poginuli od 1942. do 1945.',
     image: '/images/4-proleterska-brigada.jpg',
-    soldierCount: 3525,
+    soldierCount: 4011,
     dataFile: '/4-proleterska-soldiers.json',
-    pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf', '/pdfs/4-proleterska-poginuli.pdf']
+    pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf', '/pdfs/4-proleterska-poginuli.pdf', '/pdfs/4-proleterska-formiranje.pdf']
   },
   {
     id: '5-proleterska-brigada',

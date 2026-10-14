@@ -85,6 +85,8 @@ LISTS = {
     'kosovelova.pdf': [(2, 'padli'), (18, 'poveljniški kader')],
     '5-prekomorska.pdf': [(1, 'padli'), (17, 'vodilni kader')],
     '1-2-prekomorska.pdf': [(1, 'padli'), (11, 'vodilni kader')],
+    'pozega-cete.pdf': [(1, '1. požeška četa'), (5, '2. požeška četa'), (9, 'Pilatovačka četa'), (10, 'na obezbeđivanju'),
+                        (12, 'u drugim jedinicama 1941'), (24, '1. četa 5. bataljona 1944'), (25, 'poginuli 2. proleterske')],
 }
 
 

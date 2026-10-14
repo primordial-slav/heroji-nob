@@ -325,6 +325,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca Užičkog NOP odreda poginulih u narodnooslobodilačkom ratu 1941-1945.'
   },
   {
+    id: 'pozega-cete',
+    title: 'Požega u NOR i revoluciji 1941—1945 — spiskovi požeških četa',
+    author: 'Jovan R. Radovanović',
+    pdfPath: '/pdfs/pozega-cete.pdf',
+    thumbnail: '/images/pdf-thumbs/pozega-cete.jpg',
+    brigadeName: 'Užički NOP odred',
+    description: 'Spiskovi boraca 1. i 2. požeške čete Užičkog odreda 1941—1942, Pilatovačke čete na dan formiranja, boraca na obezbeđivanju objekata u Požegi, učesnika NOR-a iz sela Požege u drugim jedinicama 1941, 1. čete 5. bataljona Užičkog odreda 1944. i poginulih i umrlih boraca Požeške čete 2. proleterske brigade, po selima; spiskove su posle rata sastavili preživeli borci četa. Spiskovi radnika partizanskih radionica, simpatizera i izbeglica nisu uneti.'
+  },
+  {
     id: '14-srpska',
     title: 'Četrnaesta srpska (niška) NO brigada — spisak poginulih',
     author: 'Zbornik',
@@ -341,6 +350,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/7-crnogorska.jpg',
     brigadeName: '7. crnogorska omladinska brigada',
     description: 'Spisak poginulih boraca 7. crnogorske omladinske NOU brigade'
+  },
+  {
+    id: '7-crnogorska-zbornik-poginuli',
+    title: 'Sedma crnogorska omladinska brigada „Budo Tomović“ — zbornik sjećanja, poginuli borci i starješine',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/7-crnogorska-zbornik-poginuli.pdf',
+    thumbnail: '/images/pdf-thumbs/7-crnogorska-zbornik-poginuli.jpg',
+    brigadeName: '7. crnogorska omladinska brigada',
+    description: 'Poginuli borci i starešine brigade iz zbornika sećanja: rođenje, četa i bataljon, kada je i gde poginuo.'
   },
   {
     id: '17-majevicka',
@@ -494,6 +512,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/4-proleterska-poginuli.jpg',
     brigadeName: '4. proleterska crnogorska brigada',
     description: 'Borci i starešine brigade poginuli od 1942. do 1945, po godinama: rođenje, zanimanje, dužnost, kada su i gde pali'
+  },
+  {
+    id: '4-proleterska-formiranje',
+    title: 'Četvrta proleterska — zbornik sjećanja, knj. 2: borci i starešine na dan formiranja brigade',
+    author: 'Zbornik',
+    pdfPath: '/pdfs/4-proleterska-formiranje.pdf',
+    thumbnail: '/images/pdf-thumbs/4-proleterska-formiranje.jpg',
+    brigadeName: '4. proleterska crnogorska brigada',
+    description: 'Spisak boraca i starešina na dan formiranja brigade, 17. juna 1942, po štabovima, bataljonima i četama: dužnost, mesto i godina rođenja, zanimanje, članstvo u KPJ i SKOJ-u i šta je s njim bilo.'
   },
   {
     id: 'borci-sutjeske-5-proleterska',
