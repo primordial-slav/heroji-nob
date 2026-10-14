@@ -10,7 +10,9 @@ headings ("OPĆINA GOSPIĆ", "ČITLUK", "PAVLOVAC—VREBAC—ZAVODE"), numbered 
     in some volumes the nosioci partizanske spomenice 1941, a line each ("1. BAKIĆ Maksima MILE, 1923, seljak, Srbin.").
 The site's PDF of a volume holds only its fighters' lists. A volume's parser gives the book's config to main():
     pdf, prefix (the IDs' first four digits), lists: [(kind, pages of the site's PDF, columns)], heads (names the reader
-    can't take apart: what the page prints -> how it is read).
+    can't take apart: what the page prints -> how it is read); optionally opcina (a volume of one općina prints no
+    OPĆINA headings), names: 'title', spaced, and drop (a pattern for lines that are the page's furniture, not text).
+The archive's village chronicles have the same lists (Mrkalj, *Sjeničak*, 1980), one column.
 
 An entry starts where its number hangs left of the text (a line that starts with a number at the text's edge, "1. LPO
 »Velebit«", "2. bat.", runs on), or, where the OCR lost the number, with SURNAME Father GIVEN. In a two-column volume
@@ -54,7 +56,7 @@ START = re.compile(rf'^(\d{{1,3}})\s?(?:[.,]\s*|\s+){NOT_A_NAME}(?=[{U}]{{3}}|[{
 START_EDGE = re.compile(rf'^(\d{{1,3}})\.?\s+{NOT_A_NAME}(?=[{U}]{{2,}}(?:\s[{U}]{{1,4}})*\s[{U}][{L}]+\s)')
 # a number the OCR read as letters ("e. BORJAN", "U. DRAGAŠ"): a start where it hangs, its number unknown
 START_LOST = re.compile(rf'^\S{{1,2}}[.,]\s+{NOT_A_NAME}(?=[{U}]{{3}})')
-START_LINE = re.compile(rf'^(\d{{1,3}})\s?[.,]\s*(?=[{U}])')
+START_LINE = re.compile(rf'^(\d{{1,3}})\s?[.,]\s*{NOT_A_NAME}(?!KPO\b)(?=[{U}])')   # not "1. KPO 18. 4. 1942"
 NATION = re.compile(r'(?:Srbin|Srpkinja|Hrvat|Hrvatica|Musliman|Muslimanka|Slovenac|Slovenka|Crnogorac|Jevrej|Rus|Talijan)\b')
 # a start whose number the OCR lost: SURNAME Father GIVEN
 NAME = re.compile(rf'^[{U}]{{3,}}(?:\s+[{U}]{{3,}})?\s+(?:[{U}][{L}]+|[{U}]\.)\s+[{U}]{{3,}}\b')
@@ -206,6 +208,8 @@ def read(book: dict) -> list[dict]:
                     if re.fullmatch(r'\d{3,4}', t) and ln['top'] > data['height'] - 40 or (
                             re.fullmatch(r'\d{3,4}(?:\s+\d{3,4})?', t) and k >= len(merged) - 2):
                         continue                                           # the page number (two, on a spread)
+                    if book.get('drop') and re.match(book['drop'], t):
+                        continue                                           # a volume's own furniture ("22 SJENIČAK")
                     if re.match(r'(?:Žrtve fašističkog|Umrli od tifusa)', t):
                         ended = True                                       # the next list, of civilians, starts here
                     if ended:

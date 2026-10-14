@@ -1766,6 +1766,24 @@ export const sources: PdfSource[] = [
     description: 'Iz zbornika Historijskog arhiva u Karlovcu (knj. 16): pali borci s područja opštine Gornje Dubrave 1941–1945 (str. 889–899), po selima, s rođenjem, putem u NOB i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spisak žrtava fašističkog terora i rata iz iste knjige nije unet.'
   },
   {
+    id: 'sjenicak',
+    title: 'Sjeničak: kronika kordunaškog sela',
+    author: 'Mile Mrkalj',
+    pdfPath: '/pdfs/sjenicak.pdf',
+    thumbnail: '/images/pdf-thumbs/sjenicak.jpg',
+    brigadeName: '',
+    description: 'Hronika kordunaškog sela iz izdanja Historijskog arhiva u Karlovcu, s dva njena spiska: pali i umrli borci 1941–1945 iz Donjeg, Gornjeg i Lasinjskog Sjeničaka (str. 330–338), po selima, s rođenjem, putem u NOB i smrću, i nosioci Partizanske spomenice 1941 (str. 385–389). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Spiskovi žrtava fašističkog terora i umrlih od tifusa i prehlade iz iste knjige nisu uneti.'
+  },
+  {
+    id: 'tuzla-spomen-knjiga',
+    title: 'Spomen-knjiga poginulih tuzlanskih boraca NOR-a i žrtava fašističkog terora 1941–1945.',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/tuzla-spomen-knjiga.pdf',
+    thumbnail: '/images/pdf-thumbs/tuzla-spomen-knjiga.jpg',
+    brigadeName: '',
+    description: 'Spomen-knjiga opštine Tuzla: biografije njenih učesnika NOR-a koji su poginuli 1941–1945 (str. 13–300), rođenih, nastanjenih ili zaposlenih u Tuzli ili onih koji su iz nje otišli u partizane, često s fotografijom, s jedinicom, rođenjem i smrću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Drugi deo knjige, žrtve fašističkog terora, nije unet.'
+  },
+  {
     id: 'krusevac-1944-poginuli',
     title: 'Oslobođenje Kruševca 1944. godine',
     author: 'Grupa autora',

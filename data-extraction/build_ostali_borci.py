@@ -62,6 +62,8 @@ NAME_FIXES = {'9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac',
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
                '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
                '9010000363': 'Dmitar'}
+# books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
+NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga'}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',
                  'pdf_x_left', 'pdf_rects')
 
@@ -343,10 +345,12 @@ def main():
             used.add(rid)
             # the census prints the father in the nominative ("Marković (Rade) Tomo"): as printed in its parts (their
             # config says nominative), only as fathers_name in 122, whose normalization reads a middle name as genitive
+            # (and so does the Tuzla memorial book: "AJDASLIĆ, MUJO (Avdo i Fatima)")
+            nominative = first['_vol'] or first['_book'] in NOMINATIVE_FATHERS
             rec = {'soldier_id': rid, 'last_name': first['last_name'],
-                   'middle_name': '' if first['_vol'] and code == CODE else father, 'first_name': first['first_name'],
+                   'middle_name': '' if nominative and code == CODE else father, 'first_name': first['first_name'],
                    'fathers_name': (from_possessive(father) if first['_book'] == 'trebinjci-pali' else
-                                    father if first['_vol'] else ''),
+                                    father if nominative else ''),
                    'full_name': '', 'additional_info': text,
                    'birth_year': str(year(first, 'birth_year') or '')}
             rec.update({k: first[k] for k in SOURCE_FIELDS if first.get(k) not in (None, '')})
