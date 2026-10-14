@@ -836,7 +836,7 @@ export const units: Unit[] = [
     nameEn: '5th Vojvodina Brigade',
     description: 'Formirana 15. novembra 1943. u Obršinama na Majevici. Borci i starešine brigade.',
     image: '/images/5-vojvodjanska-brigada.jpg',
-    soldierCount: 4262,
+    soldierCount: 4261,
     dataFile: '/5-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/5-vojvodjanska.pdf']
   },
@@ -1336,7 +1336,7 @@ export const units: Unit[] = [
     nameEn: '18th Serbian Brigade',
     description: 'Formirana u junu 1944. pod Velikim Jastrepcem. Svi borci i rukovodioci brigade, s godinom i mestom rođenja i time kako su pali ili ranjeni.',
     image: '/images/18-srpska-brigada.jpg',
-    soldierCount: 5032,
+    soldierCount: 5038,
     dataFile: '/18-srpska-soldiers.json',
     pdfFiles: ['/pdfs/18-srpska.pdf']
   },
