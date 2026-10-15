@@ -9,7 +9,9 @@ Source: Živojin Nikolić Brka, "22. divizija" (znaci.org 00001/235_8.pdf, its p
         Анђелковић Јован | Одоровци | 15. XII 1944. | Сјеница
 The rows don't sit level: a date's year or a place often stands a line above or below its name. read_rows takes
 each page's column edges from its header ("1 2 3 4") and gives every cell line to the nearest name, a name's own
-second line ("Стоја- / дин") to that name. The book's re-typeset text spaces some names out ("Ж и в о ј и н").
+second line ("Стоја- / дин") to that name, and a cell's second line ("Липовица (Вла-" / "сотинце)", "Кумарево" /
+"(Врање)") to the row of its first, with what stands beside it off any name's line. A note at a page's foot ("Борци
+за које је наведено ...") is no row's. The book's re-typeset text spaces some names out ("Ж и в о ј и н").
 The brigade goes to unit_detail; the birthplace, the date and the place of death to their fields.
 """
 import re
@@ -21,6 +23,10 @@ from pdf_coords import viewer_words
 
 U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 SECTIONS = ((22, '12. srpska brigada'), (14, '10. srpska brigada'), (1, '8. srpska brigada'))
+# cells the OCR garbled (znaci's re-typeset page shows them so) or the page cut off at its edge: the place as named
+SLIPS = {'Strezimirova]': 'Strezimirovac', 'Osogovo planin;': 'Osogovo planina', 'Lipovac (Srem;': 'Lipovac (Srem)',
+         'Suvo.1nica': 'Suvojnica', 'Ogošte (Kosovs': 'Ogošte (Kosovska Kamenica)', 'Tumba (Vlasotince': 'Tumba (Vlasotince)',
+         'Plačkovica P': 'Plačkovica'}
 
 
 
@@ -54,6 +60,9 @@ def read_rows(pdf_path: str, start_page: int, end_page: int | None) -> list[dict
             b12, b23, b34 = _columns(words)
             top = max((w['top'] for w in words if w['text'] in ('1', '2', '3', '4') and w['top'] < 270), default=0) + 5
             notes = [w['top'] for w in words if w['text'].startswith('*)') and w['top'] > 300]
+            notes += [ln[0]['top'] for ln in _lines([w for w in words if w['top'] > 300])     # "Борци за које је
+                      if ln[0]['x0'] < b12 and re.match(r'^[А-ЯЂЈЉЊЋЏ]\S*\s+[а-яђјљњћџ]{2,}\s+[а-яђјљњћџ]{2,}\s',  # наведено ...":
+                                                        ' '.join(w['text'] for w in ln))]          # a note, to the foot
             bottom = min(notes + [page.height * 0.875])
             words = [w for w in words if top < w['top'] < bottom - 2 and not re.fullmatch(r'\d{2,3}\*?', w['text'])]
             head = [w for w in words if re.match(r'Из$', w['text']) or 'бригад' in w['text']]
@@ -84,11 +93,41 @@ def read_rows(pdf_path: str, start_page: int, end_page: int | None) -> list[dict
             def dist(a: dict, y: float) -> float:                            # 0 within the name's own lines
                 return 0 if a['y'] - 1 <= y <= a['last'] + 1 else min(abs(a['y'] - y), abs(a['last'] - y))
 
-            for c in (1, 2, 3):
-                for ln in _lines(cols[c]):
-                    y = ln[0]['top']
-                    a = min(anchors, key=lambda a: (dist(a, y), -a['y']))
+            # a cell broken over two lines ("Липовица (Вла-" / "сотинце)", "Кумарево" / "(Врање)") goes with its
+            # first line, and so does what stands beside its second line off any name's line (the date under
+            # "Широка Пла-" / "нина"); else a line between two rows went to the lower one
+            cells = sorted(((ln[0]['top'], c, ln) for c in (1, 2, 3) for ln in _lines(cols[c])), key=lambda t: t[0])
+            physical: list[list[tuple]] = []
+            for t in cells:
+                if physical and t[0] - physical[-1][0][0] <= 3:
+                    physical[-1].append(t)
+                else:
+                    physical.append([t])
+            above: dict[int, tuple[str, dict]] = {}                          # each column's last cell so far and its row
+
+            def wraps(c: int, text: str) -> dict | None:
+                """The row whose cell this line ends: "(Врање)" under a place, or a line that starts small or
+                closes a bracket under one that breaks a word or leaves a bracket open; not "умро у Београду"."""
+                prev_text, prev_a = above.get(c, ('', None))
+                if prev_a and (re.match(r'^\([А-ЯЂЈЉЊЋЏ]', text)
+                               or (re.match(r'^[а-яђјљњћџ]', text) or text.count(')') > text.count('('))
+                               and (prev_text.endswith('-') or prev_text.count('(') > prev_text.count(')'))):
+                    return prev_a
+                return None
+
+            for group in physical:
+                cont = next((a for a in (wraps(c, ' '.join(w['text'] for w in ln)) for _, c, ln in group) if a), None)
+                for y, c, ln in group:
+                    text = ' '.join(w['text'] for w in ln)
+                    own = wraps(c, text)
+                    if own:
+                        a = own
+                    elif cont and min(dist(b, y) for b in anchors) > 0:
+                        a = cont
+                    else:
+                        a = min(anchors, key=lambda a: (dist(a, y), -a['y']))
                     a['cells'][c - 1].append(ln)
+                    above[c] = ((above[c][0] + ' ' if c in above and above[c][1] is a else '') + text, a)
             for i in range(len(anchors) - 1, 0, -1):                         # "Мицко" alone on a row: the line above's
                 a = anchors[i]
                 if len(a['text']) == 1 and len(a['text'][0].split()) == 1 and not any(a['cells']):
@@ -143,6 +182,8 @@ def parse(text: str) -> dict:
         notes.append('zvani ' + dash.group(1))
         name = name[:dash.start()]
     place = re.sub(r'(?<=\w),?-\s+(?=[a-zčćžšđ])', '', place).strip(' —-')     # "Doganica pla,- nina"
+    born = re.sub(r'(?<=\w)-\s+(?=[a-zčćžšđ])', '', born)                     # "Široka Pla- nina"
+    place, born = SLIPS.get(place, place), SLIPS.get(born, born)
     date = re.sub(r"['/]", ' ', date)
     date = re.sub(r'(?<=[IVX]) (?=[IVX])', '', re.sub(r'\s+', ' ', date))     # "X I I" = XII
     tail = re.search(r'\s([A-Z]\.)$', name)                                  # "Jovanča D." | "Stajovac": the place's initial
@@ -162,8 +203,9 @@ def parse(text: str) -> dict:
         last, father, given = toks[0], '', ' '.join(toks[1:])
     else:
         last, father, given = (toks[0] if toks else ''), '', ''
+    date = re.sub(r'^(\d)\1(\d)\2\.\.', r'\1\2.', date)                      # "1122.. IV": the day set twice
     date = re.sub(r'(?<=[IVX])(?=1[89]\d\d)', ' ', date).replace(',', '.').strip(' .\'')
-    info = ', '.join(p for p in (born, date, place) if p and p not in ('—', '-'))
+    info =', '.join(p for p in (born, date, place) if p and p not in ('—', '-'))
     rec = _record(last, given, father, '; '.join(notes + [info]))
     if born and born not in ('—', '-'):
         rec['birth_place'] = born
@@ -172,15 +214,16 @@ def parse(text: str) -> dict:
     fate = place.lower()
     rec['death_type'] = ('umro' if re.search(r'\bumr', fate) else 'streljan' if 'streljan' in fate
                          else 'nestao' if 'nesta' in fate else 'poginuo')
-    later = re.search(r'\(umro\s+u\s+([^)]+)\)', place)                      # "Sakar (umro u Šapcu)"
+    later = re.search(r'\((?:umro|(?:zarobljen i )?streljan)\s+u\s+([^)]+)\)', place)  # "Sakar (umro u Šapcu)",
+                                                                             # "Lipovica (zarobljen i streljan u Vlasotincu)"
     if later:
         rec['_death_at'] = later.group(1)
     elif place and not re.match(r'^\(.*\)$', place):                          # "(umro kod kuće)": no place
-        m = re.match(r'^(?:umro|umrla|streljan|nestao)\s+(?:u|kod|na)\s+(.+)$', place)
+        m = re.match(r'^(?:umro|umrla|streljan|nestao)\s+(?:u|kod|na)\s+(.+)$', place, re.I)   # "Umro u Beogradu"
         if m:
             rec['_death_at'] = m.group(1)
-        elif not re.search(r'\bumr', place):                                 # "od zadobijenih kod kuće, rana umro"
-            rec['death_place'] = place
+        elif not re.search(r'\bumr', fate) and fate not in ('nestao', 'nestala'):   # "od zadobijenih kod kuće,
+            rec['death_place'] = place                                       # rana umro"; "nestao" is no place
     rec['unit_detail'] = section
     return rec
 
@@ -196,7 +239,7 @@ def post(soldiers: list[dict]) -> list[dict]:
         at = s.pop('_death_at', None)
         if at:                                                               # "umro u Beogradu" = Beograd
             forms = [' '.join(c) for c in product(*(Extractor._variants(Extractor, w) for w in at.split()))]
-            s['death_place'] = {'Šapcu': 'Šabac', 'Beogradu': 'Beograd'}.get(at) or (
+            s['death_place'] = {'Šapcu': 'Šabac', 'Beogradu': 'Beograd', 'Vlasotincu': 'Vlasotince'}.get(at) or (
                 max(forms, key=lambda f: known[f]) if any(known[f] for f in forms) else at)
         if s['last_name'] == '§':                                            # "Aljoša (Rus)": one name
             s['last_name'] = ''

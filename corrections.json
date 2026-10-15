@@ -1574132,15 +1574132,6 @@
     "reason": "Place of death: \"na Zegulji kod Stoca\" is Zegulja, Stolac (the locative or a misspelling the field extractor's known places repeat, or a cause of death glued on)"
   },
   {
-    "id": 158997,
-    "action": "edit",
-    "soldier_id": "0096000413",
-    "fields": {
-      "death_place": "Šabac"
-    },
-    "reason": "Place of death: \"Šapcu) Bosut\" is Šabac (the locative or a misspelling the field extractor's known places repeat, or a cause of death glued on)"
-  },
-  {
     "id": 158998,
     "action": "edit",
     "soldier_id": "0096000439",
@@ -1574643,5 +1574634,23 @@
       "last_name": "Ramić"
     },
     "reason": "Borci Sutjeske: the scan's left edge garbled the surname's first letters ('Iiamić'); the chapter's order (Pavlović ... Rebrača) and the units' spellings give 'Ramić'"
+  },
+  {
+    "id": 159054,
+    "action": "edit",
+    "soldier_id": "0042000677",
+    "fields": {
+      "death_place": "Donja Trnova, Ugljevik"
+    },
+    "reason": "Place of death: \"poginuo u Donjoj Trnovi, Ugljevik\" is Donja Trnova (the locative)"
+  },
+  {
+    "id": 159055,
+    "action": "edit",
+    "soldier_id": "0044000265",
+    "fields": {
+      "death_place": "Oborovo, Ivanić-Grad"
+    },
+    "reason": "Place of death: \"poginuo u selu Oborovo, Ivanič-Grad\" (the extractor read none); Bitka kod Oborova has him fall there on 29 March 1944"
   }
 ]
