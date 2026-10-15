@@ -75,6 +75,47 @@ def fix_place(value: str) -> str:
     return ','.join(out)
 
 
+# a trade or an abbreviation of one, and the stray words of the bio, which a birthplace read from a list's columns
+# can end with ("Konjevrate, Šibenik, ugost.", "Brzi Brod, Niš zemljoradnik", "Ljubuški. radnik u Beogradu")
+# (lowercase: a village's name is capitalized, "Gornje Trgovište" is no "trg."; a trade capitalized only after a full
+# stop, "SSSR. Zemljoradnik")
+TRADE = re.compile(r'(?:zemljo|poljo|građ|ugos|trg\.|ptt|stud|učen|đak|rad(?:nik|nica)|seljak|domać|krojač|stolar|kovač|obuć|'
+                   r'činovn|služben|šofer|mehan|bravar|tesar|zidar|pekar|mesar|brijač|težak|ribar|mornar|nadničar|'
+                   r'izbegl|izbjegl)\w*\.?')
+TRADE_AFTER_STOP = r'(?:Zemljoradnik|Radnik|Radnica|Student|Učenik|Đak|Seljak|Domaćica|Činovnik|Službenik|Trgovac)\b'
+
+
+def clean_birthplace(value: str) -> str:
+    """A birthplace without the words of the bio its reader took along: a trade after the place, after a comma, a
+    full stop or a space ("Hvar, ugos.", "Kučevo. student prava", "Crna Trava građevinski radnik"), a word cut at a
+    line's end ("zemljo-", "i"), an ethnicity ("Zemun, Nemac"), the stray marks of the scan ("obućar'"); the place
+    names' own small words stay ("Šćepan polje", "Bijeli potoci")"""
+    # after a whole word's full stop (not an initial's: "V. šušnjar", "G. vrsinje"), the bio's words: "Novi Sad. monter",
+    # "SSSR. Zemljoradnik"; not the place's own ("Zapuntel. o. Molat", "Liješta. opština Titograd")
+    bio = (r'(?:(?=[a-zčćžšđ])(?:' + TRADE.pattern + r'|borac|živ\w+|rad\w+|izbegl\w*|izbjegl\w*|gimnaz\w*|telefon\w*|'
+           r'monter|štriker|voskar|desetar|komandant\w*|zam\.|čl\.|\w+arsk[ia]\b|metalsk\w*|poljoprivredn\w*|učitelj\w*|'
+           r'seosk\w*|svršen\w*)|'
+           + TRADE_AFTER_STOP + ')')                     # not "-ni", "-ski" at large: "Šempeter v Sav. dolini"
+    v = re.sub(r'[\^`*]+', '', value)                                   # the scan's marks, never a name's letters
+    v = re.split(r'(?<=[A-Za-zčćžšđČĆŽŠĐ]{3})\.\s+(?=' + bio + ')', v, maxsplit=1)[0]
+    # "Niš zemljoradnik", "Crna Trava građevinski radnik"; not "Laj kovač (ili Lazarevac)", "Novo radnik Miloševo"
+    v = re.sub(r'\s+(?:' + TRADE.pattern + r')(?:\s+[a-zčćžšđ][\w.-]*)*\s*$', '', v)
+    parts = [p.strip(" ^'`*") for p in v.split(',')]                     # the scan's marks first: "Srbin^", "Kozje'"
+    while len(parts) > 1:
+        last = parts[-1].strip()
+        if (not last or TRADE.fullmatch(last.strip(" ^'`*")) or re.match(r'^(?:zemljo|poljo)-', last, re.I)
+                or re.fullmatch(r'[a-zčćžšđ]{1,3}\.?', last) or re.search(r'\d', last) or last in ETHNIC
+                or re.fullmatch(r'[A-ZČĆŽŠĐ][a-zčćžšđ]{1,3}-\s+\.?\s*[a-zčćžšđ]+', last)               # "Mus- . liman", not "Sin-j"
+                or re.match(r'^[a-zčćžšđ]+(?:ačka|ička|ska)\s+brigad', last)):
+            parts.pop()
+            continue
+        break
+    out = ', '.join(p.strip() for p in parts).strip(" ,^'`*") if parts else ''
+    out = re.sub(r'\)\.$', ')', out)                                    # "Šabac (opština). zemljoradnik"
+    norm = lambda s: re.sub(r'\s*,\s*', ',', s.strip())                                    # noqa: E731
+    return value if norm(out) == norm(value) else out                 # nothing taken off: as it was, its spacing too
+
+
 # names-only lists of the fallen, books across units whose men without a record are in Ostali borci (122): "Deseta
 # krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
 # build_ostali_borci.py sets the death from the entry's own fields
@@ -963,6 +1004,10 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
             got.setdefault(k, v)
     if got.get('death_place'):
         got['death_place'] = fix_place(got['death_place'])
+    if got.get('birth_place'):
+        got['birth_place'] = clean_birthplace(got['birth_place'])
+        if not got['birth_place']:
+            del got['birth_place']
     return got
 
 
