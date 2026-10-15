@@ -48,6 +48,9 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
 from extract_structured_fields import NAME_LISTS  # noqa: E402
 from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES  # noqa: E402
+import convert_fathers_genitive as fathers_genitive  # noqa: E402
+
+FATHER_WORD = re.compile(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+$')
 
 CODE = 122
 IDS = ROOT / 'data-extraction' / 'ostali_borci_ids.json'
@@ -386,14 +389,41 @@ def death_places(e: dict) -> set[str]:
 _given: Counter = Counter()
 
 
+_father_forms: Counter = Counter()
+
+
 def given_names() -> None:
-    """The site's given names, for a father the book gives as a possessive"""
+    """The site's given names, for a father the book gives as a possessive or a genitive; and how often each father's
+    form stands in the units, for convert_fathers_genitive's stricter test of a rare one"""
     for code, cfg in BRIGADE_CONFIGS.items():
         path = ROOT / 'website' / 'public' / cfg['json_file']
         if code not in OSTALI_CODES and path.exists():
             for r in json.loads(path.read_text(encoding='utf-8')):
                 if r.get('first_name'):
                     _given[r['first_name']] += 1
+                if r.get('fathers_name'):
+                    _father_forms[r['fathers_name']] += 1
+
+
+def from_genitive(word: str, local: Counter | None = None) -> str:
+    """The father's nominative for a genitive the book prints ("Miloša" Miloš, "Janka" Janko, "Franca" Franc), chosen
+    as convert_fathers_genitive.py chooses it for the units' records (which get it as corrections, and 122's can't):
+    the form the book's own given names clearly favour (local: the Spomenica's "Mila" is Milo, Lika's Mile), else the
+    site's; '' when none does or it is the printed form itself"""
+    if not FATHER_WORD.match(word) or not word.endswith(('a', 'e')):
+        return ''
+    if word in fathers_genitive.OVERRIDES:
+        return fathers_genitive.OVERRIDES[word][1]
+    nom = fathers_genitive.pick(word, local or _given, _given, rare=_father_forms[word] <= 3)
+    return nom if nom and nom != word else ''
+
+
+def from_possessive_or_genitive(word: str, local: Counter | None = None) -> str:
+    """A book of possessive fathers prints some in the genitive too: "Jova" and "Steva" are Jovo's and Stevo's, not a
+    daughter's possessive of "J" and "St" (from_possessive alone gave "J" and "Sto"): the reading whose name the site
+    knows best"""
+    found = [n for n in (from_possessive(word), from_genitive(word, local)) if n]
+    return max(found, key=lambda n: _given[n], default='')
 
 
 def from_possessive(word: str) -> str:
@@ -461,6 +491,11 @@ def main():
             # or a number its parser keeps with no one, is no one a search can find
             if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed'):
                 entries.append(e)
+    # each book's own given names, to read its genitive fathers by its region's names (from_genitive)
+    book_given: dict[str, Counter] = defaultdict(Counter)
+    for e in entries:
+        if e.get('first_name'):
+            book_given[e['_book']][e['first_name']] += 1
     by_name = defaultdict(list)
     for e in entries:
         # one name alone is too little to make two books' entries one man: such an entry stays apart
@@ -597,13 +632,17 @@ def main():
             nominative = fsrc['_vol'] or fsrc['_book'] in NOMINATIVE_FATHERS
             rec = {'soldier_id': rid, 'last_name': first['last_name'],
                    'middle_name': '' if nominative and code == CODE else father, 'first_name': first['first_name'],
-                   'fathers_name': (from_possessive(father) if fsrc['_book'] in POSSESSIVE_FATHERS else
+                   'fathers_name': (from_possessive_or_genitive(father, book_given[fsrc['_book']])
+                                    if fsrc['_book'] in POSSESSIVE_FATHERS else
                                     father if nominative else ''),
                    'full_name': '', 'additional_info': text,
                    'birth_year': str(year(first, 'birth_year') or '')}
             if fsrc is not first and given(first, 0) and (nominative or fsrc['_book'] in POSSESSIVE_FATHERS):
                 rec['middle_name'] = first['fathers_name']     # the lead's initial stays in the name ("Zec B. Drago"),
                 #                                                his father in full from the census beside it (Bojan)
+            if rec['middle_name'] and not rec['fathers_name']:
+                rec['fathers_name'] = from_genitive(rec['middle_name'], book_given[fsrc['_book']])   # "Miloša": Miloš (the normalizer's
+                #                                                           own dictionary leaves most as printed)
             rec.update({k: first[k] for k in SOURCE_FIELDS if first.get(k) not in (None, '')})
             # a names-only list of the fallen (Gončin's and Tmušić's Srem, Oborovo) holds no bio for the field
             # extractor: the death from its entries' fields, the village he fell at and the day where it gives them (not
