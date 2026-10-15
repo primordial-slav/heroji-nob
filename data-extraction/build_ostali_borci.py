@@ -46,7 +46,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
-from extract_structured_fields import NAME_LISTS  # noqa: E402
+from extract_structured_fields import NAME_LISTS, fix_place  # noqa: E402
 from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES  # noqa: E402
 import convert_fathers_genitive as fathers_genitive  # noqa: E402
 
@@ -135,7 +135,7 @@ def column_fields(e: dict) -> dict:
     day = re.fullmatch(r'(\d{4})-(\d\d)-(\d\d)', e.get('death_date') or '')     # the Ludbreg lists give the battle's day
     out = {'birth_place': e.get('born_in') or '', 'death_type': e.get('death_type') or 'poginuo',
            'death_date': f'{int(day[3])}. {int(day[2])}. {day[1]}.' if day else e.get('death_year') or '',
-           'death_place': e.get('death_place') or ''}
+           'death_place': death_column(e.get('death_place') or '')}
     return {k: v for k, v in out.items() if v}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',
                  'pdf_x_left', 'pdf_rects')
@@ -160,8 +160,16 @@ def census_fields(e: dict) -> dict:
     kind = ({'poginu': 'poginuo', 'umr': 'umro', 'nesta': 'nestao', 'obešen': 'ubijen'}.get(m.group(1), m.group(1))
             if m else 'poginuo')                       # the site's types: poginuo, umro, nestao, streljan, ubijen
     out = {'birth_place': e.get('born_in') or '', 'ethnicity': e.get('ethnicity') or '', 'death_type': kind,
-           'death_date': e.get('death_year') or '', 'death_place': e.get('death_place') or ''}
+           'death_date': e.get('death_year') or '', 'death_place': death_column(e.get('death_place') or '')}
     return {k: v for k, v in out.items() if v}
+
+
+def death_column(place: str) -> str:
+    """A census column's place of death without a cause of death written into it: "Beograd-od rana" is Beograd,
+    "Kuća-od tifusa" Kuća, "Umro od tifusa" and "Umrla od bolesti" no place"""
+    place = re.sub(r'\s*-?\s*\b(?:umr[oal]\w*\s+)?od\s+(?:tifusa|rana|rane|bolesti|posledica|posljedica|ranjavanja|zadob\w*)\b.*$',
+                   '', place, flags=re.I)
+    return '' if re.fullmatch(r'\s*(?:umr[oal]\w*)?\s*', place, re.I) else fix_place(place.strip(' ,-'))
 
 
 def year(e: dict, key: str) -> int | None:

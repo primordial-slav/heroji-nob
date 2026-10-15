@@ -55,6 +55,26 @@ PARSER_FIELDS = {39, 121, 150, 170, 171, 172}   # Druga proleterska; the pioneer
                                            # birth dates read as deaths); the Cankarjev bataljon (its deserters and
                                            # men who fell on the other side); the Kokrški odred (its section
                                            # headings in each entry read as places)
+# places of death the data held in the locative or misspelt, often enough that the known places' vote picked them
+# (2026-10-15): the place they are. fix_place puts a place of death in this form, after "u", "na", "kod" as well.
+LOCATIVE_PLACES = {'Manjači': 'Manjača', 'Peći': 'Peć', 'Jajcu': 'Jajce', 'Čačku': 'Čačak', 'Laćarku': 'Laćarak',
+                   'Somborn': 'Sombor', 'Somboru': 'Sombor', 'Zadr': 'Zadar', 'Zadru': 'Zadar', 'Sabac': 'Šabac',
+                   'Šapcu': 'Šabac', 'Sapcu': 'Šabac', 'Stoca': 'Stolac', 'Sremeka Mitrovica': 'Sremska Mitrovica'}
+
+
+def fix_place(value: str) -> str:
+    """A place of death with each part that is one of LOCATIVE_PLACES (alone or after its preposition, before a
+    bracket) put right: "Manjači, Banja Luka" -> "Manjača, Banja Luka", "u Somborn" -> "Sombor", "na Manjači (Ključ)" ->
+    "Manjača (Ključ)"; any other part as it was"""
+    out = []
+    for part in value.split(','):
+        m = re.fullmatch(r'(\s*)(?:(?:u|na|kod)\s+)?([^(),]+?)(\s*\([^)]*\))?(\s*)', part)
+        if m and m.group(2) in LOCATIVE_PLACES:
+            part = f'{m.group(1)}{LOCATIVE_PLACES[m.group(2)]}{m.group(3) or ""}{m.group(4)}'
+        out.append(part)
+    return ','.join(out)
+
+
 # names-only lists of the fallen, books across units whose men without a record are in Ostali borci (122): "Deseta
 # krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
 # build_ostali_borci.py sets the death from the entry's own fields
@@ -478,6 +498,25 @@ class Extractor:
         clause = re.sub(r'\s*\((?:nema|drugih|nedostaju|ostali)[^)]*\)?', '', clause)
         clause = re.sub(rf'^[{U}]\.,\s*', '', clause.strip())                # "S., Soljani" (OCR)
         clause = re.sub(r'^[\s,]*(?:od|usled|uslijed|zbog)\s+[^,]*?(?=,|\s(?:u|na|kod|v|pri)\s|$)', '', clause.strip())   # cause of death
+        # a hospital is where, not a place: "u Vojnoj bolnici u Šapcu", "u Divizijskoj bolnici"; not a town's ("u
+        # Zagrebačkoj bolnici" names the town)
+        clause = re.sub(r'\b(?:u|v)\s+(?:(?:Centraln|Divizijsk|Vojn|Korpusn|Oblasn|Brigadn|Partizansk|Armijsk)\w*\s+)?bolnici\b'
+                        r'(?:\s+(?:NOVJ|NOV(?:\s+i\s+POJ)?|VŠ|(?:[IVX]+\.?\s+)?\w+\s+(?:armije|divizije|korpusa|brigade)|'
+                        r'[IVX]+\.\s*\w+|\w+\s+vojnog\s+područja))?\s*(?:u\s+MSB\b)?', '', clause, flags=re.I)
+        # "u bolnici" went with the words of a battle above, its army's name stays: "NOVJ u Jelsi, Hvar"
+        clause = re.sub(r'^\s*(?:NOVJ|NOV(?:\s+i\s+POJ)?|VŠ)\b\s*', '', clause.strip())
+        clause = re.sub(r'\b(?:S|SH)VPB(?:-\w+)?\b[,\s]*', '', clause)           # the Slovene partisan hospitals' codes
+        # words of a time or a circumstance beside the place: "u Sremskoj Mitrovici. krajem novembra (ili početkom
+        # decembra)", "u Beogradu poslije težeg ranjavanja", "nakon teškog ranjavanja u Mostaru", "(uhvaćen pri liječenju"
+        clause = re.sub(r'\b(?:nakon|poslije|posle)\s+(?:te[šž]\w+\s+)?ranjavanja\b', '', clause)
+        clause = re.sub(r'[.,]?\s*\b(?:krajem|početkom|polovinom|sredinom)\b.*$', '', clause)
+        clause = re.sub(r'\s*\(?\buhvaćen\w*\b.*$|\s*\bpri\s+(?:lij?ečenju|amputaciji)\b.*$', '', clause)
+        # and the cause after the place, with whatever follows it (where he was wounded, by whom): "u Šapcu od posledica
+        # ranjavanja", "u selu Koprivni kod Modriče od zadobijenih rana", "Knin od rana zadobijenih na Runjevici",
+        # "u Šapcu od strane Nemaca", "Tuzla, ili je umro od tifusa"
+        clause = re.sub(r'[\s,.]*(?:\(?\s*(?:ili\s+je\s+)?umr[oal]\w*\s+)?\b(?:od|usled|uslijed|zbog)\s+(?:posledic|posljedic|zadob|rana\b|rane\b|'
+                        r'ranjav|teškog|tešk|tifus|bolest|ratnih|rata\b|unutrašnj|iscrplj|smrzav|promrzav|kontuz|oboljen|trovanj|'
+                        r'logorsk|strane\b|Igmanskog)\w*.*$', '', clause, flags=re.I)
         place = DUTY_AFTER_PLACE.sub('', clause)                            # "s. Topola kod Banja Luke, ekonom čete"
         if not re.search(r'\b[A-ZČĆŽŠĐ]{3,}\b', place):                     # unless the next entry's NAME is glued on
             clause = place
@@ -572,7 +611,7 @@ class Extractor:
         ('ju', 'j'), ('ju', 'je'), ('om', 'o'), ('em', 'e'), ('i', 'a'), ('i', 'e'), ('oj', 'a'), ('oj', 'o'), ('om', 'i'), ('om', ''), ('em', 'i'),
         ('eg', 'i'), ('og', 'i'), ('og', 'o'), ('e', 'a'), ('a', ''), ('a', 'o'), ('a', 'e'), ('a', 'i'), ('ova', 'ovi'), ('eva', 'evi'), ('aca', 'ci'),
         ('ije', 'ija'), ('ske', 'ska'), ('ke', 'ka'), ('cu', 'ec'), ('cu', 'ac'), ('ca', 'ac'), ('ca', 'ec'), ('ga', 'g'), ('ka', 'ak'), ('e', 'i'), ('ih', 'i'), ('i', 'o'),
-        ('aka', 'ci'), ('ra', 'ar'),
+        ('aka', 'ci'), ('ra', 'ar'), ('ru', 'ar'),                                # "u Zadru" = Zadar
         ('pcu', 'bac'), ('pca', 'bac'), ('ocu', 'olac'), ('oca', 'olac'),          # "u Šapcu" = Šabac, "u Stocu" = Stolac
     ]
 
@@ -853,6 +892,8 @@ def build_extractor(brigades) -> Extractor:
                   'Hercegovina', 'Lika', 'Kordun', 'Banija', 'Dalmacija', 'Crna Gora', 'Sandžak', 'Istra', 'Italija', 'Nemačka', 'Njemačka',
                   'Mađarska', 'Austrija', 'Albanija', 'Grčka', 'Bugarska', 'Rumunija'):
         places[extra] += 5
+    for wrong, right in LOCATIVE_PLACES.items():                          # their votes go to the place they are
+        places[right] += places.pop(wrong, 0)
     return ex
 
 
@@ -920,6 +961,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
             if k != 'rank' and e.get('pdf_file') in NAME_LISTS:
                 continue            # a list's heading is no birthplace: only the duty after a name is read
             got.setdefault(k, v)
+    if got.get('death_place'):
+        got['death_place'] = fix_place(got['death_place'])
     return got
 
 
