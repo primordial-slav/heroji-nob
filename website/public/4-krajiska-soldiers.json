@@ -1910,10 +1910,10 @@
   },
   {
     "last_name": "Bajić",
-    "middle_name": "",
+    "middle_name": "Đurđa",
     "first_name": "Jovan",
-    "fathers_name": "",
-    "full_name": "Bajić Jovan",
+    "fathers_name": "Đurđa",
+    "full_name": "Bajić Đurđa Jovan",
     "additional_info": "st. vodnik, rođen 1920, Mokronoge, Drvar, Srbin, u NOB od 27. VII 1941, poginuo 16. XI 1943. kod sela Kačeva, Prijepolje.",
     "birth_year": "1920",
     "pdf_page": 6,
@@ -1936,8 +1936,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1289",
         "source_page": 1289,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0123000059",
+        "name": "Bajić Đurđa Jovan",
+        "additional_info": "rođen 1920. u Mokronogama, Drvar, Srbin, zemljoradnik, u NOB od 27.7. 1941, u brigadi od 21. 5. 1942, 2. četa, 1. bataljon, borac, poginuo 22. 8. 1943. kod Prozora, gdje je i sahranjen",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 114.8,
+        "pdf_y": 254.4,
+        "pdf_x_end": 474.6,
+        "pdf_y_end": 279.6,
+        "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "death_place": "Prozor"
   },
   {
     "last_name": "Bajić",
@@ -3017,8 +3031,22 @@
         "pdf_x_end": 280.6,
         "pdf_y_end": 831.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0123000108",
+        "name": "Bauk Stipe Mate",
+        "additional_info": "rođen 1915. u Lokvama, Omiš, Hrvat, kapetan trgovačke mornarice, u NOB od 15. 12. 1942, u brigadi od 18. 10. 1944, desetar, poginuo 23. 12. 1944. kod Otoka (Vinkovci), nije sahranjen",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 114.2,
+        "pdf_y": 656.9,
+        "pdf_x_end": 473.4,
+        "pdf_y_end": 681.1,
+        "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "death_place": "Otok (Vinkovci)"
   },
   {
     "last_name": "Bauk",
@@ -4951,7 +4979,7 @@
     "fathers_name": "Stevan",
     "full_name": "Bradonjić Stevana Ratko",
     "additional_info": "borac, rođei u Užičkoj Požegi, poginuo 17. IV 1945. kod sela Posavskih Podgajaca, Županja.",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 12,
     "pdf_y": 166.0,
     "pdf_x": 67.7,
@@ -4974,8 +5002,24 @@
         "pdf_x_end": 355.1,
         "pdf_y_end": 441.6,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0123000178",
+        "name": "Bradonjić Stevana Ratko",
+        "additional_info": "rođen 1919. u Rečicama, Požega, Srbin, trgovački radnik, u brigadi od 18. 11. 1944, borac, poginuo 12. 4. 1945. kod Posavskih Podgajaca (Županja), gdje je i sahranjen",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 111.8,
+        "pdf_y": 216.7,
+        "pdf_x_end": 470.4,
+        "pdf_y_end": 241.5,
+        "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Rečice, Požega",
+    "ethnicity": "Srbin",
+    "occupation": "trgovački radnik",
+    "death_place": "kod Posavskih Podgajaca (Županja)"
   },
   {
     "last_name": "Branković",
@@ -22319,7 +22363,22 @@
     "death_type": "umro",
     "death_date": "juna 1945",
     "death_place": "Zagreb",
-    "rank": "major"
+    "rank": "major",
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0163000160",
+        "name": "Marčeta Stevana Miloš",
+        "additional_info": "rođen 1920. g. Prekaja, Drvar, Srbin, radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio je 27. 2. 1942. g. a kasnije prešao u Drvarsku. Bio barjaktar u bataljonu, član KPJ, zamjenik komandanta za pozadinu 5. kra-. jiške divizije. Umro maja 1945. g. u Zagrebu po završetku rata.",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 59,
+        "pdf_x": 305.1,
+        "pdf_y": 538.9,
+        "pdf_x_end": 437.1,
+        "pdf_y_end": 644.8,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marčeta",
@@ -44897,8 +44956,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1048",
         "source_page": 1048,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0163000267",
+        "name": "Vukobrat Pere Boško",
+        "additional_info": "zvani Boco; rođen 1918. g. Resa novci, Bosansko Grahovo, Srbin, radnik, u NOB-u od 1941. g. U Drvarsku proletersku četu stupio 28. 2. 1942. g. Komesar čete, Clan KPJ od 1940. g. Poginuo decembra 1942. g. kod Sanskog Mosta kao komesar bataljona u IV krajiškoj brigadi.",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 99,
+        "pdf_x": 187.7,
+        "pdf_y": 275.0,
+        "pdf_x_end": 317.9,
+        "pdf_y_end": 374.2,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "radnik"
   },
   {
     "last_name": "Vukobrat",

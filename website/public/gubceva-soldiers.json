@@ -3658,8 +3658,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=575",
         "source_page": 575,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0164000229",
+        "name": "Bohorč Jože",
+        "additional_info": "rojen 1. 3.1926, Presladol; v NOV in POS od VIII. 1944; kmet; Avgusta 1944 je odšel v Belo Krajino, kjer je bil hudo ranjen",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 23,
+        "pdf_x": 72.0,
+        "pdf_y": 205.7,
+        "pdf_x_end": 512.1,
+        "pdf_y_end": 224.8,
+        "unit_file": "kozjanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "kmet"
   },
   {
     "last_name": "Bohte",
@@ -4404,6 +4417,18 @@
         "pdf_x_end": 236.2,
         "pdf_y_end": 356.1,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000180",
+        "name": "Bradač Jože",
+        "additional_info": "zvani Jurko; 1918, Loška vas, Novo mesto",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 2,
+        "pdf_x": 240.7,
+        "pdf_y": 155.0,
+        "pdf_x_end": 306.0,
+        "pdf_y_end": 167.1,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -8124,6 +8149,18 @@
         "pdf_x_end": 329.7,
         "pdf_y_end": 398.9,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000295",
+        "name": "Dolenc Franc",
+        "additional_info": "zvani Frenk; 1914, Šentrupert",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 4,
+        "pdf_x": 35.7,
+        "pdf_y": 77.4,
+        "pdf_x_end": 100.3,
+        "pdf_y_end": 89.6,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -8918,7 +8955,22 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000468",
     "pdf_x_end": 291.3,
-    "birth_place": "Harkov (ZSSR)"
+    "birth_place": "Harkov (ZSSR)",
+    "occupation": "rudar",
+    "other_sources": [
+      {
+        "soldier_id": "0164000566",
+        "name": "Dubovik Valentin",
+        "additional_info": "rojen 28. 8.1925, Harkov, Rusija; v NOV in POS od XI. 1944; rudar; Bil je v transportu novincev prek Savinje 9. novembra 1944",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 62,
+        "pdf_x": 72.5,
+        "pdf_y": 262.3,
+        "pdf_x_end": 496.8,
+        "pdf_y_end": 282.2,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dular",
@@ -10994,7 +11046,22 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000574",
     "pdf_x_end": 130.1,
-    "birth_place": "Rožno, Brestanica"
+    "birth_place": "Rožno, Brestanica",
+    "occupation": "kmet",
+    "other_sources": [
+      {
+        "soldier_id": "0164000680",
+        "name": "Glas Leopold",
+        "additional_info": "rojen 21. 11. 1909, Rožno; v NOV in POS od IX.1944; kmet; Bil je v 4. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 73,
+        "pdf_x": 73.4,
+        "pdf_y": 265.7,
+        "pdf_x_end": 435.5,
+        "pdf_y_end": 285.0,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Glavič",
@@ -13061,6 +13128,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=91",
         "source_page": 91,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0167000468",
+        "name": "Gregorič Anton",
+        "additional_info": "1922, Kuželjevec, p. l 944 Sela pri Šumberku",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 5,
+        "pdf_x": 137.5,
+        "pdf_y": 152.2,
+        "pdf_x_end": 192.3,
+        "pdf_y_end": 171.2,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -17322,7 +17401,22 @@
     "pdf_y_end": 115.4,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000896",
-    "pdf_x_end": 275.0
+    "pdf_x_end": 275.0,
+    "death_place": "Uršna sela",
+    "other_sources": [
+      {
+        "soldier_id": "0167000652",
+        "name": "Jenič Franc",
+        "additional_info": "1926, Pristava, p. 1944 Uršna sela",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 6,
+        "pdf_x": 237.8,
+        "pdf_y": 447.5,
+        "pdf_x_end": 313.8,
+        "pdf_y_end": 460.2,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jenko",
@@ -18274,6 +18368,18 @@
         "pdf_x_end": 117.8,
         "pdf_y_end": 121.4,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000669",
+        "name": "Jeršin Jože",
+        "additional_info": "zvani Kragulj; 1917, Račje selo",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 7,
+        "pdf_x": 32.6,
+        "pdf_y": 217.2,
+        "pdf_x_end": 95.7,
+        "pdf_y_end": 229.5,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -22384,6 +22490,18 @@
         "pdf_x_end": 222.4,
         "pdf_y_end": 240.2,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000857",
+        "name": "Koračin Jože",
+        "additional_info": "zvani Činki; 1925, Mokronog",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 8,
+        "pdf_x": 246.5,
+        "pdf_y": 181.0,
+        "pdf_x_end": 309.6,
+        "pdf_y_end": 193.2,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -22482,6 +22600,18 @@
         "pdf_x_end": 225.0,
         "pdf_y_end": 279.8,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000860",
+        "name": "Korelc Pavel",
+        "additional_info": "1923, Ostrožnik",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 8,
+        "pdf_x": 246.5,
+        "pdf_y": 206.9,
+        "pdf_x_end": 292.3,
+        "pdf_y_end": 219.2,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -22947,6 +23077,18 @@
         "pdf_x_end": 230.6,
         "pdf_y_end": 327.8,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000879",
+        "name": "Kosec Mirko",
+        "additional_info": "1928, Kočevje",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 8,
+        "pdf_x": 245.0,
+        "pdf_y": 427.2,
+        "pdf_x_end": 291.1,
+        "pdf_y_end": 439.3,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -25414,8 +25556,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=573",
         "source_page": 573,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0164001484",
+        "name": "Krevelj Karel",
+        "additional_info": "rojen 27. 10. 1925, Lokve; v NOV in POS od VII. 1944; kmet; Bil je dodeljen 4. brigadi, kjer je bil aprila 1945 v boju pri Podturnu hudo ranjen. Umrl je štirinajst dni pred koncem vojne v bolnici v Črnomlju",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 152,
+        "pdf_x": 75.6,
+        "pdf_y": 189.4,
+        "pdf_x_end": 514.9,
+        "pdf_y_end": 227.7,
+        "unit_file": "kozjanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "kmet"
   },
   {
     "last_name": "Krevs",
@@ -25505,6 +25660,18 @@
         "pdf_x_end": 330.9,
         "pdf_y_end": 272.9,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167000951",
+        "name": "Krese Anton",
+        "additional_info": "zvani Tonček; 1924, Bognača vas, Mokronog",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 9,
+        "pdf_x": 143.0,
+        "pdf_y": 334.2,
+        "pdf_x_end": 210.0,
+        "pdf_y_end": 346.4,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -28620,6 +28787,18 @@
         "pdf_x_end": 124.1,
         "pdf_y_end": 268.1,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001088",
+        "name": "Lukšič Jože",
+        "additional_info": "1923, Spodnje Vodale, Sevnica",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 10,
+        "pdf_x": 244.6,
+        "pdf_y": 142.5,
+        "pdf_x_end": 314.5,
+        "pdf_y_end": 154.6,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -30192,7 +30371,22 @@
     "pdf_y_end": 462.7,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001544",
-    "pdf_x_end": 140.9
+    "pdf_x_end": 140.9,
+    "death_place": "Dolenjske Toylice",
+    "other_sources": [
+      {
+        "soldier_id": "0167001148",
+        "name": "Marolt Stane",
+        "additional_info": "zvani Ervin; 1917, Zgornja Zadobrova p. 1944 Dolenjske Toylice",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 11,
+        "pdf_x": 35.7,
+        "pdf_y": 384.4,
+        "pdf_x_end": 110.6,
+        "pdf_y_end": 403.3,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marolt",
@@ -30209,7 +30403,21 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001545",
     "pdf_x_end": 285.5,
-    "birth_place": "Ljubljana"
+    "birth_place": "Ljubljana",
+    "other_sources": [
+      {
+        "soldier_id": "0167001149",
+        "name": "Marolt Viktor",
+        "additional_info": "zvani Cuk; 1918, Ljubljana",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 11,
+        "pdf_x": 35.7,
+        "pdf_y": 403.9,
+        "pdf_x_end": 97.3,
+        "pdf_y_end": 416.2,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Martelanc",
@@ -30243,7 +30451,21 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001547",
     "pdf_x_end": 301.1,
-    "birth_place": "Krška vas"
+    "birth_place": "Krška vas",
+    "other_sources": [
+      {
+        "soldier_id": "0167001154",
+        "name": "Martinčič Franc",
+        "additional_info": "zvani Janša; 1901, Krška vas",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 11,
+        "pdf_x": 35.5,
+        "pdf_y": 461.9,
+        "pdf_x_end": 105.6,
+        "pdf_y_end": 474.3,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Martinčič",
@@ -30906,6 +31128,18 @@
         "pdf_x_end": 227.7,
         "pdf_y_end": 180.7,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001177",
+        "name": "Medved Ivan",
+        "additional_info": "1916, Mačkovec pri Škocjanu",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 11,
+        "pdf_x": 136.8,
+        "pdf_y": 273.8,
+        "pdf_x_end": 202.7,
+        "pdf_y_end": 286.2,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -31372,7 +31606,21 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001603",
     "pdf_x_end": 135.1,
-    "birth_place": "Gorenja vas, Mirna"
+    "birth_place": "Gorenja vas, Mirna",
+    "other_sources": [
+      {
+        "soldier_id": "0167001195",
+        "name": "Meserko Alojz",
+        "additional_info": "1900, Gorenja vas",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 11,
+        "pdf_x": 136.1,
+        "pdf_y": 474.7,
+        "pdf_x_end": 186.9,
+        "pdf_y_end": 487.0,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mesojedec",
@@ -31882,6 +32130,18 @@
         "pdf_x_end": 206.8,
         "pdf_y_end": 380.4,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001222",
+        "name": "Mikec Ivan",
+        "additional_info": "zvani Mitja; 1922, Šentrupert",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 11,
+        "pdf_x": 239.7,
+        "pdf_y": 297.3,
+        "pdf_x_end": 297.3,
+        "pdf_y_end": 309.9,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -32395,6 +32655,18 @@
         "pdf_x_end": 224.3,
         "pdf_y_end": 468.2,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001253",
+        "name": "Mišmaš Ignac",
+        "additional_info": "zvani Nace; 1921, Ambrus",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 12,
+        "pdf_x": 36.5,
+        "pdf_y": 162.9,
+        "pdf_x_end": 99.8,
+        "pdf_y_end": 175.3,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -34432,7 +34704,22 @@
     "pdf_y_end": 306.0,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001755",
-    "pdf_x_end": 163.1
+    "pdf_x_end": 163.1,
+    "death_place": "Vavta vas",
+    "other_sources": [
+      {
+        "soldier_id": "0167001356",
+        "name": "Novina Franc",
+        "additional_info": "1912, Podturn pri Dolenjskih Toplicah, p. 1944 Vavta vas",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 12,
+        "pdf_x": 241.5,
+        "pdf_y": 459.1,
+        "pdf_x_end": 330.8,
+        "pdf_y_end": 477.9,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Novina",
@@ -34644,6 +34931,18 @@
         "pdf_x_end": 109.8,
         "pdf_y_end": 469.4,
         "unit_file": "1-slovenska-artilerijska-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001370",
+        "name": "Oblak Lojze",
+        "additional_info": "1928, Novo mesto",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 13,
+        "pdf_x": 35.5,
+        "pdf_y": 171.3,
+        "pdf_x_end": 79.9,
+        "pdf_y_end": 183.4,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -34749,7 +35048,22 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001772",
     "pdf_x_end": 117.0,
-    "birth_place": "Velike Gorelce"
+    "birth_place": "Velike Gorelce",
+    "occupation": "zidar",
+    "other_sources": [
+      {
+        "soldier_id": "0164001929",
+        "name": "Obrez Anton",
+        "additional_info": "rojen 14.1.1927, Vel. Gorelce; v NOV in POS od VIII. 1944; zidar; Do srede novembra 1944 je bil v 3. četi 1. bataljona, nato v 4. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 195,
+        "pdf_x": 71.5,
+        "pdf_y": 274.8,
+        "pdf_x_end": 515.8,
+        "pdf_y_end": 294.8,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Obreza",
@@ -36887,6 +37201,18 @@
         "pdf_x_end": 112.8,
         "pdf_y_end": 487.4,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001456",
+        "name": "Pernek Ivan",
+        "additional_info": "1902, Gruškovec, Ptuj",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 13,
+        "pdf_x": 238.1,
+        "pdf_y": 281.5,
+        "pdf_x_end": 284.0,
+        "pdf_y_end": 293.8,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -37185,7 +37511,23 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001896",
     "pdf_x_end": 118.2,
-    "birth_place": "Veliki Kamen"
+    "birth_place": "Veliki Kamen",
+    "occupation": "rudar",
+    "rank": "kurir",
+    "other_sources": [
+      {
+        "soldier_id": "0164002082",
+        "name": "Petan Anton",
+        "additional_info": "rojen 10.6.1911, Veliki Kamen; v NOV in POS od VIII. 1944; rudar; V odredu je bil kurir, od oktobra 1944 pa je bil v 4. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 212,
+        "pdf_x": 70.8,
+        "pdf_y": 222.9,
+        "pdf_x_end": 524.3,
+        "pdf_y_end": 242.7,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petan",
@@ -38826,7 +39168,23 @@
     "pdf_y_end": 58.6,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001981",
-    "pdf_x_end": 107.2
+    "pdf_x_end": 107.2,
+    "occupation": "poljedelski delavec",
+    "rank": "borec",
+    "other_sources": [
+      {
+        "soldier_id": "0164002203",
+        "name": "Pleterski Alojz",
+        "additional_info": "rojen 19. 5.1906, Anže; v NOV in POS od IX. 1944; poljedelski delavec; Padel je kot borec 4. brigade februarja 1945",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 222,
+        "pdf_x": 69.6,
+        "pdf_y": 161.5,
+        "pdf_x_end": 514.2,
+        "pdf_y_end": 181.3,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Plevel",
@@ -40585,6 +40943,18 @@
         "pdf_x_end": 333.3,
         "pdf_y_end": 196.1,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001581",
+        "name": "Prijatelj Stane",
+        "additional_info": "1924, Sentrupert",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 14,
+        "pdf_x": 238.3,
+        "pdf_y": 381.1,
+        "pdf_x_end": 287.7,
+        "pdf_y_end": 393.4,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -40898,7 +41268,21 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002092",
     "pdf_x_end": 96.1,
-    "birth_place": "Ptuj"
+    "birth_place": "Ptuj",
+    "other_sources": [
+      {
+        "soldier_id": "0167001588",
+        "name": "Puc Ciril",
+        "additional_info": "zvani Čim; 1924, Ptuj",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 14,
+        "pdf_x": 237.3,
+        "pdf_y": 477.9,
+        "pdf_x_end": 286.5,
+        "pdf_y_end": 490.1,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Puc",
@@ -42171,7 +42555,21 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002158",
     "pdf_x_end": 160.4,
-    "birth_place": "Poljane, Mirna peč"
+    "birth_place": "Poljane, Mirna peč",
+    "other_sources": [
+      {
+        "soldier_id": "0167001640",
+        "name": "Režek Anton",
+        "additional_info": "1925, Poljana",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 15,
+        "pdf_x": 139.2,
+        "pdf_y": 210.8,
+        "pdf_x_end": 186.0,
+        "pdf_y_end": 223.0,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Režek",
@@ -42815,6 +43213,7 @@
     "soldier_id": "0062002191",
     "pdf_x_end": 293.1,
     "birth_place": "Brezje",
+    "occupation": "čevljar",
     "other_sources": [
       {
         "soldier_id": "0070103774",
@@ -42827,6 +43226,18 @@
         "pdf_x_end": 287.0,
         "pdf_y_end": 502.1,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0164002488",
+        "name": "Romih Ignac",
+        "additional_info": "rojen 31. 1. 1925, Brezje; v NOV in POS od XI. 1944; čevljar; Bil je v transportu novincev prek Savinje 24. novembra 1944",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 250,
+        "pdf_x": 71.8,
+        "pdf_y": 34.8,
+        "pdf_x_end": 496.2,
+        "pdf_y_end": 54.8,
+        "unit_file": "kozjanski-odred-soldiers.json"
       }
     ]
   },
@@ -43599,7 +44010,21 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002231",
     "pdf_x_end": 292.7,
-    "birth_place": "Podgora"
+    "birth_place": "Podgora",
+    "other_sources": [
+      {
+        "soldier_id": "0167001722",
+        "name": "Saje Franc",
+        "additional_info": "zvani Franček; 1921, Podgora, Prečna",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 16,
+        "pdf_x": 36.1,
+        "pdf_y": 258.9,
+        "pdf_x_end": 98.8,
+        "pdf_y_end": 271.0,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Saje",
@@ -47615,7 +48040,22 @@
     "pdf_y_end": 113.8,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002431",
-    "pdf_x_end": 285.6
+    "pdf_x_end": 285.6,
+    "occupation": "rudar",
+    "other_sources": [
+      {
+        "soldier_id": "0164002670",
+        "name": "Sotošek Ludvik",
+        "additional_info": "rojen 9.9.1910, Dovško; v NOV in POS od IX.1944; rudar; Bil je dodeljen 4. brigad^ padel je 22. marca 1945 v okolici Žužemberka",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 267,
+        "pdf_x": 71.7,
+        "pdf_y": 229.9,
+        "pdf_x_end": 510.9,
+        "pdf_y_end": 250.2,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sošič",
@@ -51493,6 +51933,18 @@
         "pdf_x_end": 126.1,
         "pdf_y_end": 362.2,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167001965",
+        "name": "Urbančič Rafael",
+        "additional_info": "zvani Ralel; 1921, Kriška Reber",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 19,
+        "pdf_x": 138.7,
+        "pdf_y": 87.6,
+        "pdf_x_end": 207.1,
+        "pdf_y_end": 100.1,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -53248,7 +53700,22 @@
     "pdf_y_end": 61.7,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002722",
-    "pdf_x_end": 146.3
+    "pdf_x_end": 146.3,
+    "occupation": "rudar",
+    "other_sources": [
+      {
+        "soldier_id": "0164002980",
+        "name": "Vodopivec Franc",
+        "additional_info": "rojen 1905, Brežice; v NOV in POS od X. 1944; rudar; Bil je v 14. brigadi. Padel je konec februarja 1945 v Jurkovi vasi na Dolenjskem",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 313,
+        "pdf_x": 70.8,
+        "pdf_y": 250.6,
+        "pdf_x_end": 498.5,
+        "pdf_y_end": 280.5,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vodopivec",
@@ -55091,6 +55558,18 @@
         "pdf_x_end": 238.2,
         "pdf_y_end": 377.8,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167002099",
+        "name": "Zapušek Marko",
+        "additional_info": "zvani Majski; 1906, Hrastnik",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 20,
+        "pdf_x": 136.5,
+        "pdf_y": 251.5,
+        "pdf_x_end": 209.3,
+        "pdf_y_end": 264.1,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },
@@ -57840,6 +58319,18 @@
         "pdf_x_end": 331.2,
         "pdf_y_end": 435.2,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0167002298",
+        "name": "Štrumbelj Franc",
+        "additional_info": "zvani Hasan; 1920, Tomišelj",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 18,
+        "pdf_x": 137.4,
+        "pdf_y": 128.6,
+        "pdf_x_end": 210.7,
+        "pdf_y_end": 140.9,
+        "unit_file": "deveta-soldiers.json"
       }
     ]
   },

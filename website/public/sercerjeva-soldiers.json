@@ -466,7 +466,7 @@
     "fathers_name": "",
     "full_name": "Bežan Emil",
     "additional_info": "Ljubljana",
-    "birth_year": "",
+    "birth_year": "1913",
     "birth_place": "Ljubljana",
     "pdf_page": 1,
     "pdf_y": 437.0,
@@ -485,6 +485,30 @@
         "pdf_y": 194.4,
         "pdf_y_end": 230.0,
         "pdf_x_end": 134.0
+      },
+      {
+        "soldier_id": "0070000078",
+        "name": "Bežan Emil",
+        "additional_info": "zvani Emil; * 1913 Ljubljana † 1943 Jurišče",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 2,
+        "pdf_x": 137.8,
+        "pdf_y": 571.6,
+        "pdf_x_end": 285.0,
+        "pdf_y_end": 578.1,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100252",
+        "name": "Bežan Emil",
+        "additional_info": "zvani Emil; * 1913 Ljubljana † 1943 Jurišče",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 4,
+        "pdf_x": 111.0,
+        "pdf_y": 362.8,
+        "pdf_y_end": 373.4,
+        "pdf_x_end": 350.1,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
     "death_type": "poginuo",
@@ -5373,7 +5397,7 @@
     "fathers_name": "",
     "full_name": "Križič Janez",
     "additional_info": "Čekovnik nad Idrijo; padel 27. aprila 1943, Brezova Reber pri Semiču",
-    "birth_year": "",
+    "birth_year": "1906",
     "birth_place": "Čekovnik nad Idrijo",
     "death_type": "poginuo",
     "death_date": "27. aprila 1943",
@@ -5384,7 +5408,21 @@
     "pdf_y_end": 414.3,
     "pdf_file": "sercerjeva.pdf",
     "soldier_id": "0141000302",
-    "pdf_x_end": 139.6
+    "pdf_x_end": 139.6,
+    "other_sources": [
+      {
+        "soldier_id": "0061001213",
+        "name": "Križič Janez",
+        "additional_info": "Čekovnik 1906—1943",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 39,
+        "pdf_x": 175.6,
+        "pdf_y": 582.0,
+        "pdf_x_end": 261.4,
+        "pdf_y_end": 598.6,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Križič",
@@ -11307,7 +11345,7 @@
     "fathers_name": "",
     "full_name": "Vrbinc Anton",
     "additional_info": "Bizovik; padel 15. septembra 1943, Ilirska Bistrica",
-    "birth_year": "",
+    "birth_year": "1917",
     "birth_place": "Bizovik",
     "death_type": "poginuo",
     "death_date": "15. septembra 1943",
@@ -11331,6 +11369,18 @@
         "pdf_x_end": 182.7,
         "pdf_y_end": 377.5,
         "ref_book": "iskra-in-plamen-padli"
+      },
+      {
+        "soldier_id": "0068000729",
+        "name": "Vrbinc Anton",
+        "additional_info": "zvani Nebošme; Bizovik, 1917-1943",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 10,
+        "pdf_x": 243.3,
+        "pdf_y": 63.8,
+        "pdf_x_end": 330.4,
+        "pdf_y_end": 78.2,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       }
     ]
   },
@@ -12374,7 +12424,7 @@
     "fathers_name": "",
     "full_name": "Škvarča Jože",
     "additional_info": "Vranoviči; padel 14. novembra 1943, Tatre v Brkinih",
-    "birth_year": "",
+    "birth_year": "1922",
     "birth_place": "Vranoviči",
     "death_type": "poginuo",
     "death_date": "14. novembra 1943",
@@ -12385,7 +12435,33 @@
     "pdf_y_end": 464.2,
     "pdf_file": "sercerjeva.pdf",
     "soldier_id": "0141000694",
-    "pdf_x_end": 142.5
+    "pdf_x_end": 142.5,
+    "other_sources": [
+      {
+        "soldier_id": "0070001553",
+        "name": "Škvarča Jože",
+        "additional_info": "* 1922 Vranoviči † 1943 Tatre v Brkinih",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 26,
+        "pdf_x": 142.2,
+        "pdf_y": 569.8,
+        "pdf_x_end": 340.5,
+        "pdf_y_end": 577.8,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070103913",
+        "name": "Skvarća Jože",
+        "additional_info": "* 1922 Vranovići † 1943 Tatre",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 37,
+        "pdf_x": 134.3,
+        "pdf_y": 261.9,
+        "pdf_y_end": 269.9,
+        "pdf_x_end": 303.6,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šlamberger",

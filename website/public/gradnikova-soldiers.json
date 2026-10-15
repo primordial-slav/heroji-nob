@@ -4309,8 +4309,21 @@
         "pdf_y_end": 636.5,
         "pdf_x_left": 309.4,
         "ref_book": "krizani-v-boju-za-svobodo"
+      },
+      {
+        "soldier_id": "0142000038",
+        "name": "Bogatec Miroslav",
+        "additional_info": "rojen 13. aprila 1923, Sv. Križ, obešen v Trstu 23. aprila 1944",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 3,
+        "pdf_x": 159.0,
+        "pdf_y": 225.5,
+        "pdf_x_end": 295.8,
+        "pdf_y_end": 251.2,
+        "unit_file": "kosovelova-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "streljan"
   },
   {
     "last_name": "Bogo",
@@ -30154,7 +30167,24 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001683",
     "birth_place": "Branik",
-    "pdf_x_end": 306.4
+    "pdf_x_end": 306.4,
+    "death_type": "poginuo",
+    "death_date": "10. septembra 1944",
+    "death_place": "Stanjel",
+    "other_sources": [
+      {
+        "soldier_id": "0142000265",
+        "name": "Ličen Andrej",
+        "additional_info": "rojen 30. novembra 1918, Branjik, padel 10. septembra 1944. Stanjel",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 8,
+        "pdf_x": 287.1,
+        "pdf_y": 595.1,
+        "pdf_x_end": 420.6,
+        "pdf_y_end": 620.3,
+        "unit_file": "kosovelova-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ličen",
@@ -37791,8 +37821,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=6",
         "source_page": 6,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0142000330",
+        "name": "Nusdorfer Franc",
+        "additional_info": "rojen 15. avgusta 1908. Lože, padel 16. marca 1945, Mala lazma",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 10,
+        "pdf_x": 286.2,
+        "pdf_y": 329.4,
+        "pdf_x_end": 410.4,
+        "pdf_y_end": 354.9,
+        "unit_file": "kosovelova-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "16. marca 1945",
+    "death_place": "Mala lazma"
   },
   {
     "last_name": "Nusdorfer",
@@ -39111,8 +39155,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=352",
         "source_page": 352,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0142000340",
+        "name": "Pahor Boris",
+        "additional_info": "rojen 1924, Renče, padel 11. aprila 1944, Vrsnik",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 10,
+        "pdf_x": 287.3,
+        "pdf_y": 553.8,
+        "pdf_x_end": 416.8,
+        "pdf_y_end": 570.4,
+        "unit_file": "kosovelova-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "11. aprila 1944",
+    "death_place": "Vrsnik"
   },
   {
     "last_name": "Pahor",
@@ -53262,7 +53321,22 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002980",
     "birth_place": "Podraga",
-    "pdf_x_end": 205.7
+    "pdf_x_end": 205.7,
+    "rank": "stariji vodnik",
+    "other_sources": [
+      {
+        "soldier_id": "0139000419",
+        "name": "Trošt Ivan",
+        "additional_info": "791317, stariji vodnik, avio-mehaničar rođen 8. 1. 1918, u Podragi kod Ajdovščine, došao sa Bliskog istoka 1944",
+        "pdf_file": "eskadrile-novj.pdf",
+        "pdf_page": 12,
+        "pdf_x": 203.2,
+        "pdf_y": 284.2,
+        "pdf_x_end": 364.0,
+        "pdf_y_end": 323.4,
+        "unit_file": "eskadrile-novj-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Trošt",
@@ -59653,7 +59727,24 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003344",
     "birth_place": "Doberdob",
-    "pdf_x_end": 190.5
+    "pdf_x_end": 190.5,
+    "death_type": "poginuo",
+    "death_date": "16. oktobra 1943",
+    "death_place": "Novem mestu",
+    "other_sources": [
+      {
+        "soldier_id": "0142000069",
+        "name": "Cernič Rudolf",
+        "additional_info": "rojen 20. septembra 1914, Doberdob, padel 16. oktobra 1943, pri Novem mestu",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 4,
+        "pdf_x": 161.5,
+        "pdf_y": 429.7,
+        "pdf_x_end": 295.8,
+        "pdf_y_end": 463.9,
+        "unit_file": "kosovelova-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Černuta",
@@ -60929,7 +61020,23 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003414",
     "birth_place": "Čepovan",
-    "pdf_x_end": 209.1
+    "pdf_x_end": 209.1,
+    "death_date": "1944",
+    "death_place": "Hotedršica",
+    "other_sources": [
+      {
+        "soldier_id": "0142000434",
+        "name": "Savli Franc",
+        "additional_info": "rojen 26. septembra 1926, Cepovan, padel 1944, Hotedršica",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 14,
+        "pdf_x": 144.8,
+        "pdf_y": 297.2,
+        "pdf_x_end": 279.8,
+        "pdf_y_end": 322.7,
+        "unit_file": "kosovelova-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šavli",

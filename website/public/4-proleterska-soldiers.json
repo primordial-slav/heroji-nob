@@ -21975,6 +21975,18 @@
         "pdf_y": 352.0,
         "pdf_x_end": 486.4,
         "pdf_y_end": 361.0
+      },
+      {
+        "soldier_id": "0128001769",
+        "name": "Leković Luka",
+        "additional_info": "1923, Godinje (Bar), politički komesar bataljona",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 48,
+        "pdf_x": 219.1,
+        "pdf_y": 182.9,
+        "pdf_x_end": 368.5,
+        "pdf_y_end": 201.2,
+        "unit_file": "18-srpska-soldiers.json"
       }
     ]
   },
@@ -42186,7 +42198,34 @@
     "death_type": "poginuo",
     "death_date": "juna 1943",
     "death_place": "Sutjeska",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0148002733",
+        "name": "Sudić Ivana Marin",
+        "additional_info": "borac Mosorskog bataljona. Rođen 1913, Krilo-Jesenice, Omiš, mornar, Hrvat. U Mosorski bataljon stupio 10. veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo u prosincu 1944. u Šibeniku, kao brodar (mornar) 4. pomorskog sektora.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 174,
+        "pdf_x": 243.3,
+        "pdf_y": 431.9,
+        "pdf_x_end": 583.6,
+        "pdf_y_end": 465.9,
+        "pdf_x_left": 226.2,
+        "unit_file": "mosorski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0168003771",
+        "name": "Sudić Ivana Marin",
+        "additional_info": "Krilo Jesenice",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 45,
+        "pdf_x": 200.1,
+        "pdf_y": 126.4,
+        "pdf_x_end": 351.7,
+        "pdf_y_end": 135.9,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sušić",
@@ -74172,7 +74211,23 @@
     "death_type": "poginuo",
     "death_date": "aprila 1943",
     "rank": "desetar",
-    "pdf_x_end": 367.5
+    "pdf_x_end": 367.5,
+    "ethnicity": "Hrvat",
+    "other_sources": [
+      {
+        "soldier_id": "0148001798",
+        "name": "Mihanović Marina Petar",
+        "additional_info": "borac Mosorskog bataljona. Roden 1918, Sitno Donje, Split, zemljoradnik, Hrvat. U Mosorski bataljon došao 12. veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo 1943. u bici na Sutjesci, kao desetar u 2. četi 1. bataljona 4. crnogorske brigade.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 118,
+        "pdf_x": 241.1,
+        "pdf_y": 387.6,
+        "pdf_x_end": 582.3,
+        "pdf_y_end": 421.4,
+        "pdf_x_left": 224.2,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mijailović",

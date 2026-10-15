@@ -9796,7 +9796,18 @@
     "birth_place": "M. Bastaji",
     "death_type": "poginuo",
     "death_date": "januara 1943",
-    "pdf_x_end": 200.0
+    "pdf_x_end": 200.0,
+    "rank": "borac",
+    "death_place": "u Ravnoj gori za vrijeme ofanzive » Braun",
+    "other_sources": [
+      {
+        "soldier_id": "0146000018",
+        "name": "Dobraš Sa Veta",
+        "additional_info": "rođena 1925. u Malim Bastajima, Daruvar. U NOVJ od 1942, vrlo hrabar borac. Poginula 1943. u Ravnoj gori za vrijeme ofanzive » Braun «.",
+        "source_url": "https://znaci.org/00001/46_225.htm",
+        "unit_file": "12-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dobrić",
@@ -24317,6 +24328,18 @@
         "pdf_y_end": 195.8,
         "source_page": 288,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "0147000510",
+        "name": "Kovačić Ivan",
+        "additional_info": "Đurđekovec, Sesvete, poginuo 1944.",
+        "pdf_file": "zagrebacki-odred.pdf",
+        "pdf_page": 6,
+        "pdf_x": 599.5,
+        "pdf_y": 470.03700000000003,
+        "pdf_x_end": 813.5,
+        "pdf_y_end": 479.5,
+        "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ]
   },
@@ -61885,10 +61908,10 @@
   },
   {
     "last_name": "Vuković",
-    "middle_name": "",
+    "middle_name": "Petra",
     "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Vuković Branko",
+    "fathers_name": "Petar",
+    "full_name": "Vuković Petra Branko",
     "additional_info": "1916, G. Vodičevo, B. Novi (općina Beograd)",
     "birth_year": "1916",
     "pdf_page": 2,
@@ -61898,7 +61921,24 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016003315",
     "birth_place": "G. Vodičevo, B. Novi",
-    "pdf_x_end": 322.2
+    "pdf_x_end": 322.2,
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "rank": "komandir voda, komandant bataljona, komandant brigade",
+    "other_sources": [
+      {
+        "soldier_id": "0163000269",
+        "name": "Vuković Petra Branko",
+        "additional_info": "rođen 1916. g. Vodičevo, Bosanski Novi, Srbin, radnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g. Komandir voda, komandant bataljona, član KPJ. Komandant brigade, major. Ratni vojni invalid 60%. Nosilac partizanske Spomenice 1941. g. General-major u penziji.",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 100,
+        "pdf_x": 147.4,
+        "pdf_y": 542.4,
+        "pdf_x_end": 277.3,
+        "pdf_y_end": 648.3,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vuković",
