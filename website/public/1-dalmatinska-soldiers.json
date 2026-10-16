@@ -18953,9 +18953,22 @@
         "pdf_x_end": 441.4,
         "pdf_y_end": 379.6,
         "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007100035",
+        "name": "Eraković Tanasija Milan",
+        "additional_info": "borac 2. čete 3. bataljona, rođen 1920, Bratiškovci, Šibenik, zemljoradnik, Srbin, u NOB od 1942, poginuo na Crornjim Barama 7. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 4.6,
+        "pdf_y": 146.6,
+        "pdf_x_end": 171.8,
+        "pdf_y_end": 198.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
       }
     ],
-    "unit_detail": "II bataljon"
+    "unit_detail": "II bataljon",
+    "rank": "borac"
   },
   {
     "last_name": "Erceg",
@@ -23376,6 +23389,17 @@
         "pdf_x_left": 23.5
       },
       {
+        "soldier_id": "0036100993",
+        "name": "Graovac Marija",
+        "additional_info": "bolničarka, rođena 1924, Stikovo, Drniš, domaćica, Hrvatica, u NOB od 1942. godine, poginula u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 7.8,
+        "pdf_y": 62.0,
+        "pdf_x_end": 168.5,
+        "pdf_y_end": 102.9
+      },
+      {
         "soldier_id": "9021008291",
         "name": "Graovac (Nikola) Marija",
         "additional_info": "rođena 1925, Štikovo (Drniš). Srpkinja, poginula 1943. u NOBu, Nevesinje",
@@ -23383,7 +23407,9 @@
         "source_page": 361,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvatica",
+    "occupation": "domaćica"
   },
   {
     "last_name": "Grbavac",
@@ -24878,10 +24904,10 @@
   },
   {
     "last_name": "Grčić",
-    "middle_name": "",
+    "middle_name": "Ćire",
     "first_name": "Dušan",
-    "fathers_name": "",
-    "full_name": "Grčić Dušan",
+    "fathers_name": "Ćiro",
+    "full_name": "Grčić Ćire Dušan",
     "additional_info": "rođen 1918. godine u Ivoševcu — Knin, vodnik N bat, poginuo u V ofanzivi.",
     "birth_year": "1918",
     "source_url": "https://znaci.org/00001/32_1.htm",
@@ -24903,6 +24929,17 @@
         "pdf_x_left": 54.0
       },
       {
+        "soldier_id": "0036101005",
+        "name": "Grcić Ćire Dušan",
+        "additional_info": "komandir voda u 2. četi 2. bataljona, rođen 1918, Ivoševci, Knin, zemljoradnik, Srbin, u NOB od 1942, član KPJ od januara 1943., poginuo u Hercegovini 1944.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 8.3,
+        "pdf_y": 104.3,
+        "pdf_x_end": 169.1,
+        "pdf_y_end": 155.7
+      },
+      {
         "soldier_id": "9021018388",
         "name": "Grčić (Obrad) Dušan",
         "additional_info": "rođen 1919, Ivoševci (Knin). Srbin, ubijen 1942. kao zarobljenik prip. NOV i POJ, Kistanje",
@@ -24911,7 +24948,11 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "unit_detail": "II bataljon"
+    "unit_detail": "II bataljon",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_date": "1944",
+    "death_place": "Hercegovina"
   },
   {
     "last_name": "Grčić",
@@ -24939,8 +24980,35 @@
         "pdf_y_end": 87.8,
         "pdf_x_end": 412.3,
         "pdf_x_left": 54.0
+      },
+      {
+        "soldier_id": "0036101042",
+        "name": "Grćić Nikole Ilija",
+        "additional_info": "komandir voda u 1. četi 2. bataljona, rođen 1912, Ivoševci, Knin, zemljoradnik, Srbin, u NOB od 1942, član KPJ od 1942, poginuo u rejonu sela Bogetići, kod Danilovgrada, 2. aprila 1944, komandir čete.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 8.3,
+        "pdf_y": 157.1,
+        "pdf_x_end": 169.1,
+        "pdf_y_end": 219.1
+      },
+      {
+        "soldier_id": "0007001771",
+        "name": "Grčić N Ilija",
+        "additional_info": "Ivoševici, Knin. Srbin, zemljoradnik. U NOV od 1942. U 2. dalm. brigadi komandir čete. Poginuo 2. 4. 1944. kod s. Bogetići Danilovgrad.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 123.1,
+        "pdf_y": 478.8,
+        "pdf_x_end": 447.0,
+        "pdf_y_end": 494.6,
+        "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_date": "2. aprila 1944",
+    "death_place": "kod s. Bogetići Danilovgrad"
   },
   {
     "last_name": "Grčić",
@@ -32528,6 +32596,14 @@
         "pdf_y": 441.5,
         "pdf_x_end": 206.4,
         "pdf_y_end": 482.7
+      },
+      {
+        "soldier_id": "9021055277",
+        "name": "Katić (Joze) Drago",
+        "additional_info": "rođen 1922, Kozica (Vrgorac). Hrvat, poginuo 1943. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2701",
+        "source_page": 2701,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
     "ethnicity": "Hrvat",
@@ -34322,6 +34398,17 @@
         "pdf_x_left": 39.4
       },
       {
+        "soldier_id": "0036100843",
+        "name": "Kordić Petra Marko",
+        "additional_info": "borac 2. bataljona, rođen 1913, Podhume, Brač, zemljoradnik, Hrvat, u NOB od 1942. godine, poginuo posle bitke na Sutjesci, u Podšpilju, na Visu.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 11.0,
+        "pdf_y": 542.4,
+        "pdf_x_end": 177.3,
+        "pdf_y_end": 573.2
+      },
+      {
         "soldier_id": "9021001945",
         "name": "Kordić (Petar) Marko",
         "additional_info": "rođen 1913, Milna (Brač). Hrvat, poginuo 1943. u NOBu, Kalinovnik",
@@ -34329,7 +34416,10 @@
         "source_page": 74,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Podhume, Brač",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Kordić",
@@ -40481,7 +40571,21 @@
     "death_date": "novembra 1944",
     "death_place": "Knin",
     "rank": "bolničarka",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036011161",
+        "name": "Lukin Zorka",
+        "additional_info": "iz Iža — Zadar; bolničarka I bat., poginula kod Knina novembra 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 77,
+        "pdf_x": 75.7,
+        "pdf_y": 261.33,
+        "pdf_x_end": 411.1,
+        "pdf_y_end": 277.7,
+        "pdf_x_left": 53.9
+      }
+    ]
   },
   {
     "last_name": "Lukin",
@@ -43183,8 +43287,23 @@
         "pdf_y_end": 400.3,
         "pdf_x_end": 411.4,
         "pdf_x_left": 57.6
+      },
+      {
+        "soldier_id": "0036100057",
+        "name": "Markotić Josipa Ante",
+        "additional_info": "politički komesar čete u 3. bataljonu, rođen 1911, Vrgorac, zemljoradnik, Hrvat, u NOB od 1942. godine, član KPJ, poginuo u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 11.4,
+        "pdf_y": 559.0,
+        "pdf_x_end": 172.6,
+        "pdf_y_end": 579.0
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "unit_detail": "3. bataljon",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Markotić",
@@ -43381,10 +43500,10 @@
   },
   {
     "last_name": "Marmun",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Nikola",
-    "fathers_name": "",
-    "full_name": "Marmun Nikola",
+    "fathers_name": "V",
+    "full_name": "Marmun V Nikola",
     "additional_info": "iz Hrvaca — Sinj, borac V bat, poginuo kod Posušja, oktc bra 1943. godine.",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/32_1.htm",
@@ -43393,7 +43512,21 @@
     "death_date": "1943",
     "death_place": "Posušje, oktc bra",
     "rank": "borac",
-    "unit_detail": "V bataljon"
+    "unit_detail": "V bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036011243",
+        "name": "Marmun V Nikola",
+        "additional_info": "iz Hrvača — Sinj; poginuo kod Posušja, oktc bra 1943. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 79,
+        "pdf_x": 79.9,
+        "pdf_y": 486.65,
+        "pdf_x_end": 411.1,
+        "pdf_y_end": 503.1,
+        "pdf_x_left": 58.0
+      }
+    ]
   },
   {
     "last_name": "Marović",
@@ -44529,7 +44662,21 @@
     "death_date": "novembra 1944",
     "death_place": "Knin",
     "rank": "borac",
-    "unit_detail": "IV bataljon"
+    "unit_detail": "IV bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036011269",
+        "name": "Marčelo Ante",
+        "additional_info": "iz Ugljena — Zadar; borac II bat., poginuo kod Knina, novembra 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 78,
+        "pdf_x": 48.6,
+        "pdf_y": 305.73,
+        "pdf_x_end": 385.4,
+        "pdf_y_end": 322.1,
+        "pdf_x_left": 27.0
+      }
+    ]
   },
   {
     "last_name": "Marčić",
@@ -44708,6 +44855,17 @@
         "pdf_x_left": 25.8
       },
       {
+        "soldier_id": "0036100731",
+        "name": "Mateljak Ante Stanko",
+        "additional_info": "komandir voda u 3. bataljonu, rođen 1919, Desne, Metković, zemljoradnik, Hrvat, u NOB od 1942. godine, član KPJ, poginuo u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 37,
+        "pdf_x": 223.2,
+        "pdf_y": 429.9,
+        "pdf_x_end": 388.5,
+        "pdf_y_end": 481.3
+      },
+      {
         "soldier_id": "9021023628",
         "name": "Mateljak (Ante) Stanko",
         "additional_info": "rođen 1919, Desne (Metković). Hrvat, poginuo 1943. u NOBu, Zelengora",
@@ -44715,7 +44873,9 @@
         "source_page": 1091,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Mateljan",
@@ -45927,7 +46087,21 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "kod Knina novemb",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "other_sources": [
+      {
+        "soldier_id": "0036011312",
+        "name": "Medarić Tina",
+        "additional_info": "iz Iža — Zadar; bolničarka, poginula kod Knina novemb 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 81,
+        "pdf_x": 81.8,
+        "pdf_y": 553.89,
+        "pdf_x_end": 409.7,
+        "pdf_y_end": 570.3,
+        "pdf_x_left": 60.4
+      }
+    ]
   },
   {
     "last_name": "Medić",
@@ -63098,6 +63272,17 @@
         "pdf_x_left": 19.7
       },
       {
+        "soldier_id": "0036101017",
+        "name": "Rokov Dragutin",
+        "additional_info": "borac 1. bataljona, rođen 1921, Kaštel Gomilica, Split, zemljoradnik, Hrvat, u NOB od novembra 1942, poginuo na Sutjesci.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 54,
+        "pdf_x": 7.4,
+        "pdf_y": 48.5,
+        "pdf_x_end": 167.8,
+        "pdf_y_end": 89.4
+      },
+      {
         "soldier_id": "9021046796",
         "name": "Rokov (Kajo) Dragutin",
         "additional_info": "rođen 1921, Split. Hrvat, poginuo 1943. u NOBu, Oko mostara",
@@ -63105,7 +63290,10 @@
         "source_page": 2232,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Romac",
@@ -69985,6 +70173,17 @@
         "pdf_x_left": 58.8
       },
       {
+        "soldier_id": "0036100430",
+        "name": "Šubašić Roka Ante",
+        "additional_info": "zvani Tonči; borac 1. bataljona, rođen 1912, Split, radnik, Hrvat, u NOB od 1942, poginuo na Sutjesci, kod Dragoš Sedla, 11. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 5.0,
+        "pdf_y": 175.8,
+        "pdf_x_end": 171.7,
+        "pdf_y_end": 227.3
+      },
+      {
         "soldier_id": "9021046961",
         "name": "Šubašić (Roko) Ante",
         "additional_info": "rođen 1912, Split. Hrvat, poginuo 1943. u NOBu, Soča",
@@ -69992,7 +70191,11 @@
         "source_page": 2236,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "death_date": "11. juna 1943",
+    "death_place": "Sutjeska, Dragoš Sedlo"
   },
   {
     "last_name": "Sule",
@@ -72103,6 +72306,17 @@
         "pdf_x_left": 28.4
       },
       {
+        "soldier_id": "0036100425",
+        "name": "Visković Mate Bogdan",
+        "additional_info": "borac 2. čete 3. bataljona, rođen 1928, Podaca, Ploče, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a, poginuo na Zelengori 16. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 64,
+        "pdf_x": 4.9,
+        "pdf_y": 52.4,
+        "pdf_x_end": 167.5,
+        "pdf_y_end": 103.8
+      },
+      {
         "soldier_id": "9021023933",
         "name": "Visković (Mate) Bogdan",
         "additional_info": "rođen 1928, Podaca (Metković). Hrvat, poginuo 1943. u NOBu, Bosna",
@@ -72110,7 +72324,11 @@
         "source_page": 1103,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "death_date": "16. juna 1943",
+    "death_place": "Zelengora"
   },
   {
     "last_name": "Visković",
@@ -79173,6 +79391,18 @@
         "pdf_y": 440.7,
         "pdf_x_end": 395.5,
         "pdf_y_end": 492.1
+      },
+      {
+        "soldier_id": "0036012266",
+        "name": "Špika M Ivan",
+        "additional_info": "zvani Pinčina; rođen 1907. godine u Segetu — Trogir, bora IV bat., poginuo u V ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 103,
+        "pdf_x": 81.1,
+        "pdf_y": 76.91499999999996,
+        "pdf_x_end": 413.4,
+        "pdf_y_end": 94.3,
+        "pdf_x_left": 59.0
       }
     ],
     "ethnicity": "Hrvat",
@@ -79288,6 +79518,17 @@
         "pdf_x_left": 58.6
       },
       {
+        "soldier_id": "0036101147",
+        "name": "Šundov Josipa Filip",
+        "additional_info": "borac 3. bataljona, rođen 1909, Bračević, Split, zemljoradnik, Hrvat, u NOB od 1942, poginuo u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 7.4,
+        "pdf_y": 325.6,
+        "pdf_x_end": 172.0,
+        "pdf_y_end": 366.5
+      },
+      {
         "soldier_id": "9021044434",
         "name": "Šundov (Josip) Filip",
         "additional_info": "rođen 1909, Bračević (Split). Hrvat, poginuo 1943. u NOBu, 3.dalmatinska brig.",
@@ -79295,7 +79536,9 @@
         "source_page": 2177,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Šundov",
@@ -81388,27 +81631,6 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 168.5
-  },
-  {
-    "last_name": "Markotić",
-    "middle_name": "Josipa",
-    "first_name": "Ante",
-    "fathers_name": "Josip",
-    "full_name": "Markotić Josipa Ante",
-    "additional_info": "politički komesar čete u 3. bataljonu, rođen 1911, Vrgorac, zemljoradnik, Hrvat, u NOB od 1942. godine, član KPJ, poginuo u bici na Sutjesci.",
-    "birth_year": "1911",
-    "pdf_page": 36,
-    "pdf_y": 559.0,
-    "pdf_x": 11.4,
-    "pdf_y_end": 579.0,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036100057",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "politički komesar čete",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 172.6
   },
   {
     "last_name": "Atar",
@@ -86539,30 +86761,6 @@
     "unit_detail": "1. četa"
   },
   {
-    "last_name": "Visković",
-    "middle_name": "Mate",
-    "first_name": "Bogdan",
-    "fathers_name": "Mate",
-    "full_name": "Visković Mate Bogdan",
-    "additional_info": "borac 2. čete 3. bataljona, rođen 1928, Podaca, Ploče, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a, poginuo na Zelengori 16. juna 1943. godine.",
-    "birth_year": "1928",
-    "pdf_page": 64,
-    "pdf_y": 52.4,
-    "pdf_x": 4.9,
-    "pdf_y_end": 103.8,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036100425",
-    "birth_place": "Podaca, Ploče",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "16. juna 1943",
-    "death_place": "Zelengora",
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon",
-    "pdf_x_end": 167.5
-  },
-  {
     "last_name": "Isković",
     "middle_name": "Ivana",
     "first_name": "Bosiljka",
@@ -86649,30 +86847,6 @@
     "rank": "bolničarka",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 167.4
-  },
-  {
-    "last_name": "Šubašić",
-    "middle_name": "Roka",
-    "first_name": "Ante",
-    "fathers_name": "Roko",
-    "full_name": "Šubašić Roka Ante",
-    "additional_info": "zvani Tonči; borac 1. bataljona, rođen 1912, Split, radnik, Hrvat, u NOB od 1942, poginuo na Sutjesci, kod Dragoš Sedla, 11. juna 1943. godine.",
-    "birth_year": "1912",
-    "pdf_page": 60,
-    "pdf_y": 175.8,
-    "pdf_x": 5.0,
-    "pdf_y_end": 227.3,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036100430",
-    "birth_place": "Split",
-    "ethnicity": "Hrvat",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "11. juna 1943",
-    "death_place": "Sutjeska, Dragoš Sedlo",
-    "rank": "borac",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 171.7
   },
   {
     "last_name": "Iurazer",
@@ -90853,28 +91027,6 @@
     "pdf_x_end": 391.8
   },
   {
-    "last_name": "Mateljak",
-    "middle_name": "Ante",
-    "first_name": "Stanko",
-    "fathers_name": "Ante",
-    "full_name": "Mateljak Ante Stanko",
-    "additional_info": "komandir voda u 3. bataljonu, rođen 1919, Desne, Metković, zemljoradnik, Hrvat, u NOB od 1942. godine, član KPJ, poginuo u bici na Sutjesci.",
-    "birth_year": "1919",
-    "pdf_page": 37,
-    "pdf_y": 429.9,
-    "pdf_x": 223.2,
-    "pdf_y_end": 481.3,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036100731",
-    "birth_place": "Desne, Metković",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "komandir voda",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 388.5
-  },
-  {
     "last_name": "Matijaš",
     "middle_name": "Mate",
     "first_name": "Ivan",
@@ -92521,28 +92673,6 @@
     "death_date": "1985",
     "death_place": "Split",
     "rank": "politički komesar brigade"
-  },
-  {
-    "last_name": "Kordić",
-    "middle_name": "Petra",
-    "first_name": "Marko",
-    "fathers_name": "Petar",
-    "full_name": "Kordić Petra Marko",
-    "additional_info": "borac 2. bataljona, rođen 1913, Podhume, Brač, zemljoradnik, Hrvat, u NOB od 1942. godine, poginuo posle bitke na Sutjesci, u Podšpilju, na Visu.",
-    "birth_year": "1913",
-    "pdf_page": 30,
-    "pdf_y": 542.4,
-    "pdf_x": 11.0,
-    "pdf_y_end": 573.2,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036100843",
-    "birth_place": "Podhume, Brač",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 177.3
   },
   {
     "last_name": "Ović",
@@ -94772,27 +94902,6 @@
     "pdf_x_end": 175.8
   },
   {
-    "last_name": "Graovac",
-    "middle_name": "",
-    "first_name": "Marija",
-    "fathers_name": "",
-    "full_name": "Graovac Marija",
-    "additional_info": "bolničarka, rođena 1924, Stikovo, Drniš, domaćica, Hrvatica, u NOB od 1942. godine, poginula u bici na Sutjesci.",
-    "birth_year": "1924",
-    "pdf_page": 22,
-    "pdf_y": 62.0,
-    "pdf_x": 7.8,
-    "pdf_y_end": 102.9,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036100993",
-    "birth_place": "Stikovo, Drniš",
-    "ethnicity": "Hrvatica",
-    "occupation": "domaćica",
-    "death_type": "poginuo",
-    "rank": "bolničarka",
-    "pdf_x_end": 168.5
-  },
-  {
     "last_name": "Ravlić",
     "middle_name": "Marijana",
     "first_name": "Josip",
@@ -94908,30 +95017,6 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 382.2
-  },
-  {
-    "last_name": "Grcić",
-    "middle_name": "Ćire",
-    "first_name": "Dušan",
-    "fathers_name": "Ćiro",
-    "full_name": "Grcić Ćire Dušan",
-    "additional_info": "komandir voda u 2. četi 2. bataljona, rođen 1918, Ivoševci, Knin, zemljoradnik, Srbin, u NOB od 1942, član KPJ od januara 1943., poginuo u Hercegovini 1944.",
-    "birth_year": "1918",
-    "pdf_page": 22,
-    "pdf_y": 104.3,
-    "pdf_x": 8.3,
-    "pdf_y_end": 155.7,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036101005",
-    "birth_place": "Ivoševci, Knin",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Hercegovina",
-    "rank": "komandir voda",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 169.1
   },
   {
     "last_name": "Rdić-Jednak",
@@ -95187,29 +95272,6 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 175.9
-  },
-  {
-    "last_name": "Rokov",
-    "middle_name": "",
-    "first_name": "Dragutin",
-    "fathers_name": "",
-    "full_name": "Rokov Dragutin",
-    "additional_info": "borac 1. bataljona, rođen 1921, Kaštel Gomilica, Split, zemljoradnik, Hrvat, u NOB od novembra 1942, poginuo na Sutjesci.",
-    "birth_year": "1921",
-    "pdf_page": 54,
-    "pdf_y": 48.5,
-    "pdf_x": 7.4,
-    "pdf_y_end": 89.4,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036101017",
-    "birth_place": "Kaštel Gomilica, Split",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_place": "Sutjeska",
-    "rank": "borac",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 167.8
   },
   {
     "last_name": "Rmac",
@@ -95708,44 +95770,6 @@
     "death_place": "Nin",
     "rank": "borac",
     "pdf_x_end": 169.5
-  },
-  {
-    "last_name": "Grćić",
-    "middle_name": "Nikole",
-    "first_name": "Ilija",
-    "fathers_name": "Nikola",
-    "full_name": "Grćić Nikole Ilija",
-    "additional_info": "komandir voda u 1. četi 2. bataljona, rođen 1912, Ivoševci, Knin, zemljoradnik, Srbin, u NOB od 1942, član KPJ od 1942, poginuo u rejonu sela Bogetići, kod Danilovgrada, 2. aprila 1944, komandir čete.",
-    "birth_year": "1912",
-    "pdf_page": 22,
-    "pdf_y": 157.1,
-    "pdf_x": 8.3,
-    "pdf_y_end": 219.1,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036101042",
-    "birth_place": "Ivoševci, Knin",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "2. aprila 1944",
-    "rank": "komandir voda, komandir čete",
-    "unit_detail": "1. četa, 2. bataljon",
-    "pdf_x_end": 169.1,
-    "death_place": "kod s. Bogetići Danilovgrad",
-    "other_sources": [
-      {
-        "soldier_id": "0007001771",
-        "name": "Grčić Nikole Ilija",
-        "additional_info": "Ivoševici, Knin. Srbin, zemljoradnik. U NOV od 1942. U 2. dalm. brigadi komandir čete. Poginuo 2. 4. 1944. kod s. Bogetići Danilovgrad.",
-        "pdf_file": "2-dalmatinska-proleterska.pdf",
-        "pdf_page": 60,
-        "pdf_x": 123.1,
-        "pdf_y": 478.8,
-        "pdf_x_end": 447.0,
-        "pdf_y_end": 494.6,
-        "unit_file": "2-dalmatinska-soldiers.json"
-      }
-    ]
   },
   {
     "last_name": "Rčić",
@@ -97611,28 +97635,6 @@
     "rank": "borac",
     "unit_detail": "intendantura",
     "pdf_x_end": 172.1
-  },
-  {
-    "last_name": "Šundov",
-    "middle_name": "Josipa",
-    "first_name": "Filip",
-    "fathers_name": "Josip",
-    "full_name": "Šundov Josipa Filip",
-    "additional_info": "borac 3. bataljona, rođen 1909, Bračević, Split, zemljoradnik, Hrvat, u NOB od 1942, poginuo u bici na Sutjesci.",
-    "birth_year": "1909",
-    "pdf_page": 60,
-    "pdf_y": 325.6,
-    "pdf_x": 7.4,
-    "pdf_y_end": 366.5,
-    "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
-    "soldier_id": "0036101147",
-    "birth_place": "Bračević, Split",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 172.0
   },
   {
     "last_name": "Šundov",
@@ -102437,28 +102439,6 @@
     "pdf_x_end": 294.5
   },
   {
-    "last_name": "Lukin",
-    "middle_name": "",
-    "first_name": "Zorka",
-    "fathers_name": "",
-    "full_name": "Lukin Zorka",
-    "additional_info": "iz Iža — Zadar; bolničarka I bat., poginula kod Knina novembra 1944. godine.",
-    "birth_year": "",
-    "pdf_page": 77,
-    "pdf_y": 261.33,
-    "pdf_x": 75.7,
-    "pdf_y_end": 277.7,
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "soldier_id": "0036011161",
-    "pdf_x_end": 411.1,
-    "pdf_x_left": 53.9,
-    "death_type": "poginuo",
-    "death_date": "novembra 1944",
-    "death_place": "Knin",
-    "rank": "bolničarka",
-    "unit_detail": "I bataljon"
-  },
-  {
     "last_name": "Lučin",
     "middle_name": "",
     "first_name": "Sveto",
@@ -102513,47 +102493,6 @@
     "pdf_x_end": 290.5
   },
   {
-    "last_name": "Marmun",
-    "middle_name": "V",
-    "first_name": "Nikola",
-    "fathers_name": "V",
-    "full_name": "Marmun V Nikola",
-    "additional_info": "iz Hrvača — Sinj; poginuo kod Posušja, oktc bra 1943. godine.",
-    "birth_year": "",
-    "pdf_page": 79,
-    "pdf_y": 486.65,
-    "pdf_x": 79.9,
-    "pdf_y_end": 503.1,
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "soldier_id": "0036011243",
-    "pdf_x_end": 411.1,
-    "pdf_x_left": 58.0,
-    "death_type": "poginuo",
-    "death_date": "1943"
-  },
-  {
-    "last_name": "Marčelo",
-    "middle_name": "",
-    "first_name": "Ante",
-    "fathers_name": "",
-    "full_name": "Marčelo Ante",
-    "additional_info": "iz Ugljena — Zadar; borac II bat., poginuo kod Knina, novembra 1944. godine.",
-    "birth_year": "",
-    "pdf_page": 78,
-    "pdf_y": 305.73,
-    "pdf_x": 48.6,
-    "pdf_y_end": 322.1,
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "soldier_id": "0036011269",
-    "pdf_x_end": 385.4,
-    "pdf_x_left": 27.0,
-    "death_type": "poginuo",
-    "death_date": "novembra 1944",
-    "death_place": "Knin",
-    "rank": "borac",
-    "unit_detail": "II bataljon"
-  },
-  {
     "last_name": "Matković",
     "middle_name": "",
     "first_name": "Vlado",
@@ -102606,27 +102545,6 @@
     "rank": "komandir čete",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 123.8
-  },
-  {
-    "last_name": "Medarić",
-    "middle_name": "",
-    "first_name": "Tina",
-    "fathers_name": "",
-    "full_name": "Medarić Tina",
-    "additional_info": "iz Iža — Zadar; bolničarka, poginula kod Knina novemb 1944. godine.",
-    "birth_year": "",
-    "pdf_page": 81,
-    "pdf_y": 553.89,
-    "pdf_x": 81.8,
-    "pdf_y_end": 570.3,
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "soldier_id": "0036011312",
-    "pdf_x_end": 409.7,
-    "pdf_x_left": 60.4,
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "kod Knina novemb",
-    "rank": "bolničarka"
   },
   {
     "last_name": "Mi",
@@ -103812,26 +103730,6 @@
     "rank": "komandir čete",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 218.3
-  },
-  {
-    "last_name": "Špika",
-    "middle_name": "M",
-    "first_name": "Ivan",
-    "fathers_name": "M",
-    "full_name": "Špika M Ivan",
-    "additional_info": "zvani Pinčina; rođen 1907. godine u Segetu — Trogir, bora IV bat., poginuo u V ofanzivi.",
-    "birth_year": "1907",
-    "pdf_page": 103,
-    "pdf_y": 76.91499999999996,
-    "pdf_x": 81.1,
-    "pdf_y_end": 94.3,
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "soldier_id": "0036012266",
-    "pdf_x_end": 413.4,
-    "pdf_x_left": 59.0,
-    "birth_place": "Seget, Trogir",
-    "death_type": "poginuo",
-    "unit_detail": "IV bataljon"
   },
   {
     "last_name": "Špika",

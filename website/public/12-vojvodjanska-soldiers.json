@@ -621,6 +621,18 @@
         "pdf_x_end": 532.5,
         "pdf_y_end": 671.8,
         "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111010020",
+        "name": "Anić Luka",
+        "additional_info": "1922, Kruševar, Padina Benkovac, poginuo 10. 11. 1944. u Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 44,
+        "pdf_x": 92.8,
+        "pdf_y": 469.5,
+        "pdf_x_end": 369.3,
+        "pdf_y_end": 486.9,
+        "unit_file": "51-divizija-soldiers.json"
       }
     ]
   },
@@ -4653,7 +4665,47 @@
     "soldier_id": "0075000220",
     "birth_place": "Rajino Selo",
     "death_type": "poginuo",
-    "death_place": "Batina"
+    "death_place": "Batina",
+    "rank": "borac",
+    "death_date": "novembra 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0022000329",
+        "name": "Boroš Laslo",
+        "additional_info": "1929, Rajino Selo, borac, pog. novembra 1944.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 60.4,
+        "pdf_y": 322.8,
+        "pdf_x_end": 343.3,
+        "pdf_y_end": 332.8,
+        "unit_file": "7-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0111000062",
+        "name": "Boroš Laslo",
+        "additional_info": "rođ. 1929, Rajino Selo (Vojlovica), pog. novembra 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 243.8,
+        "pdf_y": 516.1,
+        "pdf_x_end": 516.5,
+        "pdf_y_end": 534.6,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111010169",
+        "name": "Boroš Laslo",
+        "additional_info": "1929, Rajino Selo, poginuo novembra 1944. u Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 47,
+        "pdf_x": 78.2,
+        "pdf_y": 195.5,
+        "pdf_y_end": 212.7,
+        "pdf_x_end": 354.9,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Boroš",
@@ -7405,6 +7457,17 @@
     "soldier_id": "0075000352",
     "other_sources": [
       {
+        "soldier_id": "0075002429",
+        "name": "Čurčić T Petar",
+        "additional_info": "iz Sivca, poginuo kod Batine.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 37,
+        "pdf_x": 162.4,
+        "pdf_y": 272.0,
+        "pdf_x_end": 359.1,
+        "pdf_y_end": 280.5
+      },
+      {
         "soldier_id": "9027005858",
         "name": "Ćurčić (Toma) Petar",
         "additional_info": "rođen 1923, Miletićevo (Plandište). Srbin, poginuo 1944. u NOBu, Batina",
@@ -7420,7 +7483,10 @@
         "source_page": 293,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Sivac",
+    "death_type": "poginuo",
+    "death_place": "Batina"
   },
   {
     "last_name": "Curguz",
@@ -9232,7 +9298,7 @@
     "fathers_name": "",
     "full_name": "Dragišić Stevan",
     "additional_info": "iz Jarkovca, poginuo kod Bolmana.",
-    "birth_year": "",
+    "birth_year": "1923",
     "death_type": "poginuo",
     "pdf_page": 37,
     "pdf_y": 562.6,
@@ -9242,7 +9308,32 @@
     "pdf_x_end": 401.8,
     "soldier_id": "0075000452",
     "birth_place": "Jarkovac",
-    "death_place": "Bolman"
+    "death_place": "Bolman",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_date": "10. III 1945",
+    "other_sources": [
+      {
+        "soldier_id": "9027006599",
+        "name": "Dragišić (Ljubomir) Stevan",
+        "additional_info": "rođen 1923, Jarkovac (Ruma). Srbin, poginuo 1945. u NOBu, Bolman",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=323",
+        "source_page": 323,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0082000657",
+        "name": "Dragišić Stevan",
+        "additional_info": "1923, Jarkovac, Kovačica, zemljoradnik, borac, umro posle ranjavanja 10. III 1945. kod Starog Bolmana.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 97.3,
+        "pdf_y": 402.9,
+        "pdf_x_end": 378.4,
+        "pdf_y_end": 422.3,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dragoj",
@@ -11686,6 +11777,18 @@
         "pdf_y": 466.3,
         "pdf_x_end": 526.1,
         "pdf_y_end": 484.8,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111010372",
+        "name": "Golub Ivan",
+        "additional_info": "1925, Bački Monoštor, poginuo 16. 11. 1944. na Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 50,
+        "pdf_x": 85.8,
+        "pdf_y": 185.2,
+        "pdf_x_end": 366.2,
+        "pdf_y_end": 202.4,
         "unit_file": "51-divizija-soldiers.json"
       }
     ]
@@ -33912,6 +34015,18 @@
         "pdf_x_end": 525.4,
         "pdf_y_end": 826.4,
         "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111011091",
+        "name": "Petrović Milan",
+        "additional_info": "1924, Vrbanja, Županja, borac, poginuo 16. 11. 1944. na Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 58,
+        "pdf_x": 80.0,
+        "pdf_y": 482.0,
+        "pdf_x_end": 360.4,
+        "pdf_y_end": 498.9,
+        "unit_file": "51-divizija-soldiers.json"
       }
     ]
   },
@@ -48741,25 +48856,6 @@
     "birth_place": "Sivac"
   },
   {
-    "last_name": "Čurčić",
-    "middle_name": "T",
-    "first_name": "Petar",
-    "fathers_name": "T",
-    "full_name": "Čurčić T Petar",
-    "additional_info": "iz Sivca, poginuo kod Batine.",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "pdf_page": 37,
-    "pdf_y": 272.0,
-    "pdf_x": 162.4,
-    "pdf_y_end": 280.5,
-    "pdf_file": "12-vojvodjanska.pdf",
-    "pdf_x_end": 359.1,
-    "soldier_id": "0075002429",
-    "birth_place": "Sivac",
-    "death_place": "Batina"
-  },
-  {
     "last_name": "Đacanin",
     "middle_name": "",
     "first_name": "Vlada",
@@ -49929,6 +50025,7 @@
     "birth_place": "Stapar",
     "death_place": "Batina",
     "death_date": "16. 11. 1944",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111000631",
@@ -49940,6 +50037,18 @@
         "pdf_y": 763.7,
         "pdf_x_end": 526.4,
         "pdf_y_end": 782.8,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111011580",
+        "name": "Šalajić Nedeljko",
+        "additional_info": "1926, Stapar, Apatin, borac, poginuo 16. 11. 1944. na Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 62,
+        "pdf_x": 86.2,
+        "pdf_y": 430.1,
+        "pdf_x_end": 366.4,
+        "pdf_y_end": 447.1,
         "unit_file": "51-divizija-soldiers.json"
       }
     ]

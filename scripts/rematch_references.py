@@ -13,6 +13,8 @@ Each book's pairs are chosen by the rule it was first matched with:
 Never an entry that a record of the same unit already holds, nor a record that already holds an entry of the book;
 and never a pair whose record dies elsewhere (the entry's place of death and the record's share no name) or in
 another month than the entry says: the matcher doesn't weigh these, and the first matchings dropped such pairs by hand.
+scripts/find_identities.py runs the same (rematch()) with the other kinds of pair, and puts the pairs left out here
+on its review queue.
 
 Usage:
     python scripts/rematch_references.py out_dir                 # dry run: per book, the new pairs and the ones left out
@@ -147,34 +149,39 @@ def against(entry: dict, rec: dict) -> list[str]:
     return out
 
 
-def main():
-    out = Path(sys.argv[1])
-    out.mkdir(parents=True, exist_ok=True)
-    start = int(sys.argv[sys.argv.index('--write') + 1]) if '--write' in sys.argv else None
-    books = sorted(p.name[:-len('-entries.json')] for d in M.ENTRY_DIRS for p in d.glob('*-entries.json'))
-    live = M.structured.load_live()
+def load_units() -> tuple[dict, dict]:
+    """The units' records (not Ostali borci's) by folded name, and by id."""
     index, recs = defaultdict(list), {}
-    for code, (_, soldiers) in live.items():
+    for code, (_, soldiers) in M.structured.load_live().items():
         if code in OSTALI_CODES:
             continue
         for s in soldiers:
             index[(M.fold(s.get('last_name')), M.fold(s.get('first_name')))].append(s)
             recs[s['soldier_id']] = s
-    corr = json.loads(M.CORRECTIONS.read_text(encoding='utf-8'))
+    return index, recs
+
+
+def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozenset(), log=print):
+    """Each book's new pairs by its rule (new), the chosen pairs left out for another death (left), and the pairs
+    worth a look that the rule doesn't take (review: those, an entry two records of one unit fit, and a likely pair
+    the rule leaves where two things agree, or the father or village alone and no other pairing). blocked:
+    (book, record, entry) triples answered 'different' (identity_decisions.json), never taken nor offered."""
+    books = sorted(p.name[:-len('-entries.json')] for d in M.ENTRY_DIRS for p in d.glob('*-entries.json'))
     have, ref_units, rec_books = defaultdict(set), defaultdict(set), defaultdict(set)
     for c in corr:
         if c['action'] == 'reference':
             have[c['ref_book']].add((c['soldier_id'], c['ref_id']))
             ref_units[(c['ref_book'], c['ref_id'])].add(c['soldier_id'][:4])
             rec_books[(c['ref_book'], c['soldier_id'])].add(c['ref_id'])
-    new, left = [], []
+    new, left, review = [], [], []
     for book in books:
-        found = match(book, index)
-        agree = {(f['record'], f['ref']): f['agree'] for f in found}
+        found = [f for f in match(book, index) if (book, f['record'], f['ref']) not in blocked]
+        by_pair = {(f['record'], f['ref']): f for f in found}
         entries = {e['soldier_id']: e for e in json.loads(M.entries_path(book).read_text(encoding='utf-8'))}
-        took, why_not, seen = 0, Counter(), set()
+        took, why_not, seen, mine, chosen = 0, Counter(), set(), [], set()
         for rec, ref, why in choose(book, found, out):
-            if (rec, ref) in have[book]:
+            chosen.add((rec, ref))
+            if (rec, ref) in have[book] or (book, rec, ref) in blocked:
                 continue
             if rec[:4] in ref_units[(book, ref)]:
                 why_not['entry on a record of that unit'] += 1
@@ -186,20 +193,50 @@ def main():
             if flags:
                 why_not['another death'] += 1
                 left.append({'book': book, 'record': rec, 'ref': ref, 'against': flags})
+                review.append({'grade': '', 'agree': [], **by_pair.get((rec, ref), {'record': rec, 'ref': ref}),
+                               'book': book, 'clash': flags, 'note': 'dies elsewhere or in another month'})
                 continue
             seen.add(rec)
             took += 1
-            new.append({'book': book, 'record': rec, 'ref': ref, 'why': why, 'agree': agree.get((rec, ref), []),
-                        'ref_name': entries[ref]['name'], 'record_name': recs[rec].get('full_name')})
+            mine.append({'book': book, 'record': rec, 'ref': ref, 'why': why,
+                         'agree': by_pair.get((rec, ref), {}).get('agree', []),
+                         'ref_name': entries[ref]['name'], 'record_name': recs[rec].get('full_name')})
         # an entry two records of one unit fit (the unit's two lists, never merged: the same man, or a cousin of the
         # name, father and village) goes to neither
-        per_unit = Counter((p['ref'], p['record'][:4]) for p in new if p['book'] == book)
+        per_unit = Counter((p['ref'], p['record'][:4]) for p in mine)
         twice = {k for k, n in per_unit.items() if n > 1}
         if twice:
-            new = [p for p in new if not (p['book'] == book and (p['ref'], p['record'][:4]) in twice)]
+            for p in mine:
+                if (p['ref'], p['record'][:4]) in twice:
+                    review.append({'grade': '', 'agree': p['agree'], **by_pair.get((p['record'], p['ref']), {}),
+                                   'record': p['record'], 'ref': p['ref'], 'book': book, 'clash': [],
+                                   'note': 'two records of one unit fit the entry'})
+            mine = [p for p in mine if (p['ref'], p['record'][:4]) not in twice]
             why_not['two records of one unit'] += sum(per_unit[k] for k in twice)
             took -= sum(per_unit[k] for k in twice)
-        print(f'{book:40} new {took:4}  {dict(why_not)}')
+        new += mine
+        # a likely pair the book's rule leaves
+        by_ref, by_rec = Counter(f['ref'] for f in found), Counter(f['record'] for f in found)
+        for f in found:
+            rec, ref = f['record'], f['ref']
+            if f['grade'] != 'likely' or (rec, ref) in chosen or (rec, ref) in have[book] \
+                    or rec[:4] in ref_units[(book, ref)] or rec_books[(book, rec)]:
+                continue
+            strong = set(f['agree']) & {'father', 'birthplace', 'death place', 'death day'}
+            alone = by_ref[ref] == 1 and by_rec[rec] == 1
+            if len(set(f['agree']) - {'hero on the site'}) >= 2 or (strong and alone):
+                review.append({**f, 'book': book, 'clash': [], 'note': 'likely' + ('' if alone else ', other pairings too')})
+        log(f'{book:40} new {took:4}  {dict(why_not)}')
+    return new, left, review
+
+
+def main():
+    out = Path(sys.argv[1])
+    out.mkdir(parents=True, exist_ok=True)
+    start = int(sys.argv[sys.argv.index('--write') + 1]) if '--write' in sys.argv else None
+    index, recs = load_units()
+    corr = json.loads(M.CORRECTIONS.read_text(encoding='utf-8'))
+    new, left, _ = rematch(index, recs, corr, out)
     (out / 'rematch_new.json').write_text(json.dumps(new, ensure_ascii=False, indent=1), encoding='utf-8')
     (out / 'rematch_left_out.json').write_text(json.dumps(left, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(new)} new pairs, {len(left)} left out for another death (in {out})')

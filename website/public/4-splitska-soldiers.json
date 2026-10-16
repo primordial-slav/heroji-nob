@@ -1405,7 +1405,20 @@
     "death_type": "poginuo",
     "death_date": "23. 7. 1944",
     "death_place": "Kijevo, Sinj",
-    "pdf_x_end": 378.3
+    "pdf_x_end": 378.3,
+    "other_sources": [
+      {
+        "soldier_id": "0008000784",
+        "name": "Boban Ante",
+        "additional_info": ". . . , Solin, 1. bat, desetar, nestao 5. 2. 1944",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 28,
+        "pdf_x": 48.7,
+        "pdf_y": 509.5,
+        "pdf_x_end": 333.3,
+        "pdf_y_end": 518.5
+      }
+    ]
   },
   {
     "last_name": "Boban",
@@ -1440,9 +1453,9 @@
   {
     "last_name": "Boban",
     "first_name": "Kajo",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Boban Kajo",
+    "middle_name": "Mate",
+    "fathers_name": "Mate",
+    "full_name": "Boban Mate Kajo",
     "additional_info": "..., Solin, Split, ..., borac, poginuo 1943, ...",
     "birth_year": "",
     "soldier_id": "0008000059",
@@ -1458,6 +1471,17 @@
     "pdf_x_end": 327.2,
     "other_sources": [
       {
+        "soldier_id": "0008000788",
+        "name": "Boban Mate Kajo",
+        "additional_info": ". . ., Solin, 2. bat., borac",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 29,
+        "pdf_x": 51.0,
+        "pdf_y": 45.1,
+        "pdf_x_end": 285.1,
+        "pdf_y_end": 54.1
+      },
+      {
         "soldier_id": "9021045576",
         "name": "Boban (Petar) Kajo",
         "additional_info": "rođen 1905, Split. Hrvat, poginuo 1943. u NOBu, Kod vrlike",
@@ -1465,7 +1489,8 @@
         "source_page": 2203,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Bodić",
@@ -8421,7 +8446,20 @@
     "death_place": "Polača, Knin",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 374.1
+    "pdf_x_end": 374.1,
+    "other_sources": [
+      {
+        "soldier_id": "0008002118",
+        "name": "Murat Jure",
+        "additional_info": ".., Glavice, Sinj, 2. bat, borac",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 58,
+        "pdf_x": 40.5,
+        "pdf_y": 231.0,
+        "pdf_x_end": 286.8,
+        "pdf_y_end": 239.9
+      }
+    ]
   },
   {
     "last_name": "Muslin",
@@ -10102,7 +10140,20 @@
     "death_place": "Caići, Livno",
     "rank": "vodnik",
     "unit_detail": "2. četa, 1. bataljon",
-    "pdf_x_end": 377.1
+    "pdf_x_end": 377.1,
+    "other_sources": [
+      {
+        "soldier_id": "0008002397",
+        "name": "Radić Ivan",
+        "additional_info": ".., Marina, Trogir, 3. bat, borac, nestao 11. 5. 1944",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 64,
+        "pdf_x": 39.2,
+        "pdf_y": 398.8,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 407.8
+      }
+    ]
   },
   {
     "last_name": "Radić",
@@ -17815,27 +17866,6 @@
   },
   {
     "last_name": "Boban",
-    "first_name": "Ante",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Boban Ante",
-    "additional_info": ". . . , Solin, 1. bat, desetar, nestao 5. 2. 1944",
-    "birth_year": "",
-    "soldier_id": "0008000784",
-    "pdf_page": 28,
-    "pdf_y": 509.5,
-    "pdf_x": 48.7,
-    "pdf_file": "4-splitska-brigada.pdf",
-    "birth_place": "Solin",
-    "death_type": "nestao",
-    "death_date": "5. 2. 1944",
-    "rank": "desetar",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 333.3,
-    "pdf_y_end": 518.5
-  },
-  {
-    "last_name": "Boban",
     "first_name": "Grgo",
     "middle_name": "Stipe",
     "fathers_name": "Stipe",
@@ -17889,25 +17919,6 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 264.8
-  },
-  {
-    "last_name": "Boban",
-    "first_name": "Kajo",
-    "middle_name": "Mate",
-    "fathers_name": "Mate",
-    "full_name": "Boban Mate Kajo",
-    "additional_info": ". . ., Solin, 2. bat., borac",
-    "birth_year": "",
-    "soldier_id": "0008000788",
-    "pdf_page": 29,
-    "pdf_y": 45.1,
-    "pdf_x": 51.0,
-    "pdf_y_end": 54.1,
-    "pdf_file": "4-splitska-brigada.pdf",
-    "birth_place": "Solin",
-    "unit_detail": "2. bataljon",
-    "rank": "borac",
-    "pdf_x_end": 285.1
   },
   {
     "last_name": "Boban",
@@ -43399,25 +43410,6 @@
     "pdf_x_end": 371.2
   },
   {
-    "last_name": "Murat",
-    "first_name": "Jure",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Murat Jure",
-    "additional_info": ".., Glavice, Sinj, 2. bat, borac",
-    "birth_year": "",
-    "soldier_id": "0008002118",
-    "pdf_page": 58,
-    "pdf_y": 231.0,
-    "pdf_x": 40.5,
-    "pdf_y_end": 239.9,
-    "pdf_file": "4-splitska-brigada.pdf",
-    "birth_place": "Glavice, Sinj",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 286.8
-  },
-  {
     "last_name": "Murtezović",
     "first_name": "Redžep",
     "middle_name": "Avdije",
@@ -48801,27 +48793,6 @@
     "rank": "komandant bataljona",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 370.0
-  },
-  {
-    "last_name": "Radić",
-    "first_name": "Ivan",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Radić Ivan",
-    "additional_info": ".., Marina, Trogir, 3. bat, borac, nestao 11. 5. 1944",
-    "birth_year": "",
-    "soldier_id": "0008002397",
-    "pdf_page": 64,
-    "pdf_y": 398.8,
-    "pdf_x": 39.2,
-    "pdf_y_end": 407.8,
-    "pdf_file": "4-splitska-brigada.pdf",
-    "birth_place": "Marina, Trogir",
-    "death_type": "nestao",
-    "death_date": "11. 5. 1944",
-    "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 370.6
   },
   {
     "last_name": "Radić",
