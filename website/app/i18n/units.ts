@@ -482,7 +482,7 @@ const sl: Record<string, UnitText> = {
   '3-primorsko-goranska': {
     name: '3. primorsko-goranska brigada',
     description:
-      'Ustanovljena 15. septembra 1943 v Škrljevem v Hrvaškem primorju. Starešine in četni bolničarji brigade ter padli.',
+      'Ustanovljena 15. septembra 1943 v Škrljevem v Hrvaškem primorju. Štabi brigade in bataljonov, starešine in četni bolničarji brigade ter padli.',
   },
   '13-hercegovacka-brigada': {
     name: '13. hercegovska brigada',
@@ -1239,7 +1239,7 @@ const mk: Record<string, UnitText> = {
   '3-primorsko-goranska': {
     name: '3-та приморско-горанска бригада',
     description:
-      'Формирана на 15 септември 1943 во Шкрљево во Хрватското приморје. Старешините и четните болничари на бригадата и загинатите.',
+      'Формирана на 15 септември 1943 во Шкрљево во Хрватското приморје. Штабовите на бригадата и баталјоните, старешините и четните болничари на бригадата и загинатите.',
   },
   '13-hercegovacka-brigada': {
     name: '13-та херцеговска бригада',
@@ -1998,7 +1998,7 @@ const en: Record<string, UnitText> = {
   '3-primorsko-goranska': {
     name: '3rd Primorje–Gorski Kotar Brigade',
     description:
-      'Formed on 15 September 1943 at Škrljevo in the Croatian Littoral. Its officers and company medics, and its fallen.',
+      'Formed on 15 September 1943 at Škrljevo in the Croatian Littoral. The staffs of the brigade and its battalions, its officers and company medics, and its fallen.',
   },
   '13-hercegovacka-brigada': {
     name: '13th Herzegovina Brigade',

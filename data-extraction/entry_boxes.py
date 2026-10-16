@@ -76,6 +76,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '6-krajiska-kadar.pdf',   # the 6. krajiška's war cadre: a man boxed at each post on his first's page
                   '18-hrvatska-starjesine.pdf',   # the 18. hrvatska's officers: names run on under each duty
                   'osjecka-rukovodioci.pdf',   # the Osječka's leaders: a man boxed at each post on his first's page
+                  '3-primorsko-goranska-stabovi.pdf',   # the 3. primorsko-goranska's staffs: names run on under each duty
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
                   'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post

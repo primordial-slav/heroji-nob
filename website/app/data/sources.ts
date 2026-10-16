@@ -1306,6 +1306,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak starešina brigade i četnih bolničara, s dužnošću, i spisak poginulih pripadnika brigade, s rođenjem i mestom pogibije (str. 234–259)'
   },
   {
+    id: '3-primorsko-goranska-stabovi',
+    title: '3. primorsko-goranska brigada — štabovi brigade i bataljona',
+    author: 'Bogdan Mamula',
+    pdfPath: '/pdfs/3-primorsko-goranska-stabovi.pdf',
+    thumbnail: '/images/pdf-thumbs/3-primorsko-goranska-stabovi.jpg',
+    brigadeName: '3. primorsko-goranska brigada',
+    description: 'Članovi štaba brigade, štabova bataljona i starešine samostalnih jedinica, po dužnostima, s vremenom na dužnosti i kako se završila (str. 227–233)'
+  },
+  {
     id: '13-hercegovacka',
     title: '13. hercegovačka brigada — poginuli i borci brigade',
     author: 'Mensur Seferović',

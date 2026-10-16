@@ -71,7 +71,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | Osječka udarna | Zdravko B. Cvetković | leaders (p. 203; **done**, `osjecka-rukovodioci.pdf`), fallen (p. 207, 12 pp.), survivors (p. 219) | [00003/450](https://znaci.org/00003/450.htm) |
 | Karlovačka udarna | Lulik, Zatezalo | at formation 5. III 1944 (p. 379, 22 pp.), fallen (p. 401, 14 pp.) | [00003/546](https://znaci.org/00003/546.htm) |
 | 1. zagorska | Vladimir Hlaić, *Grebeni Ivančice* | fallen (p. 191) | [00003/625](https://znaci.org/00003/625.htm) |
-| 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
+| 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227; **done**, `3-primorsko-goranska-stabovi.pdf`), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
 | 14. primorsko-goranska | Vladimir-Dušan Matetić | fallen (p. 227, 38 pp.) | [00003/544](https://znaci.org/00003/544.htm) |
 | 6. dalmatinska | Danilo Damjanović | command (p. 257), fallen (p. 259) | [00001/105](https://znaci.org/00001/105.htm) |
 | 11. dalmatinska | Rako, Družijanić | fallen (p. 479, 26 pp.), missing (p. 505), survivors (p. 507, 94 pp.) | [00003/547](https://znaci.org/00003/547.htm) |

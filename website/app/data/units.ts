@@ -1004,11 +1004,11 @@ export const units: Unit[] = [
     id: '3-primorsko-goranska',
     name: '3. primorsko-goranska brigada',
     nameEn: '3rd Primorje–Gorski Kotar Brigade',
-    description: 'Formirana 15. septembra 1943. u Škrljevu u Hrvatskom primorju. Starešine i četni bolničari brigade i poginuli.',
+    description: 'Formirana 15. septembra 1943. u Škrljevu u Hrvatskom primorju. Štabovi brigade i bataljona, starešine i četni bolničari brigade i poginuli.',
     image: '/images/3-primorsko-goranska.jpg',
-    soldierCount: 804,
+    soldierCount: 829,
     dataFile: '/3-primorsko-goranska-soldiers.json',
-    pdfFiles: ['/pdfs/3-primorsko-goranska.pdf']
+    pdfFiles: ['/pdfs/3-primorsko-goranska.pdf', '/pdfs/3-primorsko-goranska-stabovi.pdf']
   },
   {
     id: '13-hercegovacka-brigada',
