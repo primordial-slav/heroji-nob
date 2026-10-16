@@ -502,7 +502,7 @@ const sl: Record<string, UnitText> = {
   '6-dalmatinska-brigada': {
     name: '6. dalmatinska brigada',
     description:
-      'Ustanovljena 8. oktobra 1943 v Erveniku kot 2. brigada 19. divizije. Padli borci brigade.',
+      'Ustanovljena 8. oktobra 1943 v Erveniku kot 2. brigada 19. divizije. Štabi brigade in bataljonov ter padli borci brigade.',
   },
   'osjecka-brigada': {
     name: 'Osiješka udarna brigada',
@@ -1259,7 +1259,7 @@ const mk: Record<string, UnitText> = {
   '6-dalmatinska-brigada': {
     name: '6-та далматинска бригада',
     description:
-      'Формирана на 8 октомври 1943 во Ервеник, како 2. бригада на 19. дивизија. Загинатите борци на бригадата.',
+      'Формирана на 8 октомври 1943 во Ервеник, како 2. бригада на 19. дивизија. Штабовите на бригадата и баталјоните и загинатите борци на бригадата.',
   },
   'osjecka-brigada': {
     name: 'Осиечка ударна бригада',
@@ -2018,7 +2018,7 @@ const en: Record<string, UnitText> = {
   '6-dalmatinska-brigada': {
     name: '6th Dalmatian Brigade',
     description:
-      'Formed on 8 October 1943 at Ervenik, as the 2nd Brigade of the 19th Division. The brigade’s fallen.',
+      'Formed on 8 October 1943 at Ervenik, as the 2nd Brigade of the 19th Division. The staffs of the brigade and its battalions, and the brigade’s fallen.',
   },
   'osjecka-brigada': {
     name: 'Osijek Assault Brigade',

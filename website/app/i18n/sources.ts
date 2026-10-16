@@ -240,6 +240,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in umrlih borcev brigade ter pogrešanih v boju: bataljon, rojstvo, kje in kdaj so padli (str. 315–321)',
     '6-dalmatinska':
       'Seznam padlih borcev brigade: od kod so bili, kje in kdaj so padli (str. 259–271)',
+    '6-dalmatinska-kadar':
+      'Komandanti, komisarji, njihovi namestniki, načelniki in drugi starešine štaba brigade in štabov bataljonov, po dolžnostih, samo imena (str. 257–258)',
     'osjecka':
       'Seznam padlih in umrlih borcev brigade in seznam preživelih borcev, po občinah rojstva (str. 207–254)',
     'osjecka-rukovodioci':
@@ -763,6 +765,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и умрените борци на бригадата и на исчезнатите во борба: баталјон, раѓање, каде и кога загинале (стр. 315–321)',
     '6-dalmatinska':
       'Список на загинатите борци на бригадата: од каде се, каде и кога загинале (стр. 259–271)',
+    '6-dalmatinska-kadar':
+      'Командантите, комесарите, нивните заменици, началниците и другите старешини на штабот на бригадата и на штабовите на баталјоните, по должности, само имиња (стр. 257–258)',
     'osjecka':
       'Список на загинатите и умрените борци на бригадата и список на преживеаните борци, по општини на раѓање (стр. 207–254)',
     'osjecka-rukovodioci':
@@ -1285,6 +1289,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen and dead, and those missing in battle: battalion, birth, where and when they fell (pp. 315–321)',
     '6-dalmatinska':
       'The brigade’s fallen: where they came from, where and when they fell (pp. 259–271)',
+    '6-dalmatinska-kadar':
+      'The commanders, commissars, their deputies, chiefs and other officers of the brigade staff and the battalion staffs, by duty, names only (pp. 257–258)',
     'osjecka':
       'The brigade’s fallen and dead, and its survivors, by the municipality they were born in (pp. 207–254)',
     'osjecka-rukovodioci':
@@ -1623,6 +1629,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci Osječke brigade': 'borke Osiješke brigade',
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'seznami borcev, ki so vstopili v bataljon 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'seznam borcev v Rudem 21. 12. 1941',
+    'spisak komandnog kadra': 'seznam poveljniškega kadra',
   },
   mk: {
     'tom 1': 'том 1',
@@ -1663,6 +1670,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci Osječke brigade': 'жените борци на Осиечката бригада',
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'списоци на борците што стапиле во баталјонот 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'список на борците во Рудо, 21. XII 1941',
+    'spisak komandnog kadra': 'список на командниот кадар',
   },
   en: {
     'tom 1': 'volume 1',
@@ -1703,6 +1711,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci Osječke brigade': 'the women fighters of the Osijek Brigade',
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'the fighters who joined the battalion, 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'the company at Rudo, 21 December 1941',
+    'spisak komandnog kadra': 'the command roll',
   },
 }
 

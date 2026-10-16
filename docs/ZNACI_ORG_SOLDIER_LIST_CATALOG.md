@@ -73,7 +73,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 1. zagorska | Vladimir Hlaić, *Grebeni Ivančice* | fallen (p. 191) | [00003/625](https://znaci.org/00003/625.htm) |
 | 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227; **done**, `3-primorsko-goranska-stabovi.pdf`), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
 | 14. primorsko-goranska | Vladimir-Dušan Matetić | fallen (p. 227, 38 pp.) | [00003/544](https://znaci.org/00003/544.htm) |
-| 6. dalmatinska | Danilo Damjanović | command (p. 257), fallen (p. 259) | [00001/105](https://znaci.org/00001/105.htm) |
+| 6. dalmatinska | Danilo Damjanović | command (p. 257; **done**, `6-dalmatinska-kadar.pdf`), fallen (p. 259) | [00001/105](https://znaci.org/00001/105.htm) |
 | 11. dalmatinska | Rako, Družijanić | fallen (p. 479, 26 pp.), missing (p. 505), survivors (p. 507, 94 pp.) | [00003/547](https://znaci.org/00003/547.htm) |
 | 12. dalmatinska (Prva otočka) | Nikola Anić | notes and fallen (already downloaded: `website/public/pdfs/12-dalmatinska.pdf`, 58 pp.) | [00001/80](https://znaci.org/00001/80.htm) |
 | 12. hercegovačka | Osman Đikić | fallen (p. 207, 15 pp.) | [00001/243](https://znaci.org/00001/243.htm) |

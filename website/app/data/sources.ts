@@ -1369,6 +1369,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih boraca brigade: odakle su, gde i kada su pali (str. 259–271)'
   },
   {
+    id: '6-dalmatinska-kadar',
+    title: '6. dalmatinska brigada — spisak komandnog kadra',
+    author: 'Danilo Damjanović',
+    pdfPath: '/pdfs/6-dalmatinska-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/6-dalmatinska-kadar.jpg',
+    brigadeName: '6. dalmatinska brigada',
+    description: 'Komandanti, komesari, njihovi zamenici, načelnici i ostale starešine štaba brigade i štabova bataljona, po dužnostima, samo imena (str. 257–258)'
+  },
+  {
     id: 'osjecka',
     title: 'Osječka udarna brigada — poginuli, umrli i preživeli borci',
     author: 'Zdravko B. Cvetković',

@@ -1044,11 +1044,11 @@ export const units: Unit[] = [
     id: '6-dalmatinska-brigada',
     name: '6. dalmatinska brigada',
     nameEn: '6th Dalmatian Brigade',
-    description: 'Formirana 8. oktobra 1943. u Erveniku, kao 2. brigada 19. divizije. Poginuli borci brigade.',
+    description: 'Formirana 8. oktobra 1943. u Erveniku, kao 2. brigada 19. divizije. Štabovi brigade i bataljona i poginuli borci brigade.',
     image: '/images/6-dalmatinska-brigada.jpg',
-    soldierCount: 363,
+    soldierCount: 432,
     dataFile: '/6-dalmatinska-soldiers.json',
-    pdfFiles: ['/pdfs/6-dalmatinska.pdf']
+    pdfFiles: ['/pdfs/6-dalmatinska.pdf', '/pdfs/6-dalmatinska-kadar.pdf']
   },
   {
     id: 'osjecka-brigada',
