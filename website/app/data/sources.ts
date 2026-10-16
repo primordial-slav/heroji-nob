@@ -991,6 +991,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca brigade koji su preživeli rat (str. 979 i dalje) i spisak njenih poginulih (str. 1016 i dalje)'
   },
   {
+    id: 'gubceva-kader',
+    title: 'Gubčeva brigada — poveljniški kader',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/gubceva-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/gubceva-kader.jpg',
+    brigadeName: 'Gubčeva brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba brigade i komandanti i komesari bataljona, s vremenom na dužnosti (str. 975–978)'
+  },
+  {
     id: 'dvanajsta',
     title: 'Dvanajsta brigada — seznam padlih, seznam borcev XII. SNOUB',
     author: 'Lado Ambrožič-Novljan',
@@ -1511,6 +1520,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/mosorski-odred-2.jpg',
     brigadeName: 'Mosorski partizanski odred',
     description: 'Drugi deo popisa iz iste knjige (str. 573–648): borci komandi mesta, partijsko-politički i terenski radnici s područja Mosora. Uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; terenski radnici, odbornici i članice AFŽ nisu uneti; pripadnici radnih bataljona jesu.'
+  },
+  {
+    id: 'mosorski-odred-kader',
+    title: 'Mosorski partizanski odred — pregled rukovodećeg kadra',
+    author: 'Miroslav Velić, Ante V. Petrić',
+    pdfPath: '/pdfs/mosorski-odred-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/mosorski-odred-kader.jpg',
+    brigadeName: 'Mosorski partizanski odred',
+    description: 'Rukovodeći kadar odreda 1942–1944, po dužnostima, od komandanata odreda do komandira vodova, vodnih delegata i četnih bolničarki, samo imena (str. 563–568)'
   },
   {
     id: 'turopoljsko-posavski-odred',

@@ -85,6 +85,8 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   'zidanskova-kader.pdf',   # the Zidanškova's command, the same
                   'dvanajsta-kader.pdf',   # the Dvanajsta's command, the same
                   'deveta-kader.pdf',   # the Deveta's command, the same
+                  'gubceva-kader.pdf',   # the Gubčeva's command, the same
+                  'mosorski-odred-kader.pdf',   # the Mosorski odred's leaders: a man boxed at his name
                   '4-banijska-starjesine.pdf',   # the 4. banijska's officers: names run on under each duty
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row

@@ -297,7 +297,7 @@ const sl: Record<string, UnitText> = {
   'gubceva-brigada': {
     name: 'Gubčeva brigada',
     description:
-      'Ustanovljena 4. septembra 1942 pri Trebelnem nad Mokronogom. Padli in preživeli borci.',
+      'Ustanovljena 4. septembra 1942 pri Trebelnem nad Mokronogom. Štabi brigade in bataljonov, padli in preživeli borci.',
   },
   'dvanajsta-brigada': {
     name: 'Dvanajsta brigada',
@@ -527,7 +527,7 @@ const sl: Record<string, UnitText> = {
   'mosorski-odred': {
     name: 'Mosorski partizanski odred',
     description:
-      'Ustanovljen 21. februarja 1942 na Mosorju, znova 11. oktobra 1943, razpuščen 10. novembra 1944. Vsi borci odreda 1942–1944, s kratkimi življenjepisi.',
+      'Ustanovljen 21. februarja 1942 na Mosorju, znova 11. oktobra 1943, razpuščen 10. novembra 1944. Vsi borci odreda 1942–1944, s kratkimi življenjepisi, in vodstvo odreda.',
   },
   'turopoljsko-posavski-odred': {
     name: 'Turopoljsko-posavski partizanski odred',
@@ -1054,7 +1054,7 @@ const mk: Record<string, UnitText> = {
   'gubceva-brigada': {
     name: 'Губчева бригада',
     description:
-      'Формирана на 4 септември 1942 кај Требелно над Мокроног. Загинати и преживеани борци.',
+      'Формирана на 4 септември 1942 кај Требелно над Мокроног. Штабовите на бригадата и баталјоните, загинати и преживеани борци.',
   },
   'dvanajsta-brigada': {
     name: '12-та словенечка бригада',
@@ -1284,7 +1284,7 @@ const mk: Record<string, UnitText> = {
   'mosorski-odred': {
     name: 'Мосорски партизански одред',
     description:
-      'Формиран на 21 февруари 1942 на Мосор, повторно на 11 октомври 1943, расформиран на 10 ноември 1944. Сите борци на одредот 1942–1944, со кратки биографии.',
+      'Формиран на 21 февруари 1942 на Мосор, повторно на 11 октомври 1943, расформиран на 10 ноември 1944. Сите борци на одредот 1942–1944, со кратки биографии, и раководниот кадар на одредот.',
   },
   'turopoljsko-posavski-odred': {
     name: 'Туропољско-посавски партизански одред',
@@ -1813,7 +1813,7 @@ const en: Record<string, UnitText> = {
   'gubceva-brigada': {
     name: 'Gubec Brigade',
     description:
-      'Formed on 4 September 1942 near Trebelno above Mokronog. Partisans who were killed and those who survived.',
+      'Formed on 4 September 1942 near Trebelno above Mokronog. The staffs of the brigade and its battalions, and its Partisans who were killed and those who survived.',
   },
   'dvanajsta-brigada': {
     name: '12th Slovene Brigade',
@@ -2043,7 +2043,7 @@ const en: Record<string, UnitText> = {
   'mosorski-odred': {
     name: 'Mosor Partisan Detachment',
     description:
-      'Formed on 21 February 1942 on Mosor, again on 11 October 1943, disbanded on 10 November 1944. All its fighters, 1942–1944, with short lives.',
+      'Formed on 21 February 1942 on Mosor, again on 11 October 1943, disbanded on 10 November 1944. All its fighters, 1942–1944, with short lives, and its leaders.',
   },
   'turopoljsko-posavski-odred': {
     name: 'Turopolje-Posavina Partisan Detachment',

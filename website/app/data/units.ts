@@ -634,11 +634,11 @@ export const units: Unit[] = [
     id: 'gubceva-brigada',
     name: 'Gubčeva brigada',
     nameEn: 'Gubec Brigade',
-    description: 'Formirana 4. septembra 1942. kod Trebelnog iznad Mokronoga. Poginuli i preživeli borci.',
+    description: 'Formirana 4. septembra 1942. kod Trebelnog iznad Mokronoga. Štabovi brigade i bataljona, poginuli i preživeli borci.',
     image: '/images/gubceva-brigada.jpg',
-    soldierCount: 2995,
+    soldierCount: 3004,
     dataFile: '/gubceva-soldiers.json',
-    pdfFiles: ['/pdfs/gubceva.pdf']
+    pdfFiles: ['/pdfs/gubceva.pdf', '/pdfs/gubceva-kader.pdf']
   },
   {
     id: 'dvanajsta-brigada',
@@ -1094,11 +1094,11 @@ export const units: Unit[] = [
     id: 'mosorski-odred',
     name: 'Mosorski partizanski odred',
     nameEn: 'Mosor Partisan Detachment',
-    description: 'Formiran 21. februara 1942. na Mosoru, ponovo 11. oktobra 1943, rasformiran 10. novembra 1944. Svi borci odreda 1942–1944, s kratkim životopisima.',
+    description: 'Formiran 21. februara 1942. na Mosoru, ponovo 11. oktobra 1943, rasformiran 10. novembra 1944. Svi borci odreda 1942–1944, s kratkim životopisima, i rukovodeći kadar odreda.',
     image: '/images/pdf-thumbs/mosorski-odred.jpg',
-    soldierCount: 3623,
+    soldierCount: 3657,
     dataFile: '/mosorski-odred-soldiers.json',
-    pdfFiles: ['/pdfs/mosorski-odred.pdf', '/pdfs/mosorski-odred-2.pdf']
+    pdfFiles: ['/pdfs/mosorski-odred.pdf', '/pdfs/mosorski-odred-2.pdf', '/pdfs/mosorski-odred-kader.pdf']
   },
   {
     id: 'turopoljsko-posavski-odred',

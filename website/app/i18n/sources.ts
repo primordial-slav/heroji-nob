@@ -155,6 +155,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade ter komandanti in komisarji bataljonov, s časom na dolžnosti (str. 810–814)',
     'gubceva':
       'Seznam gubčevcev, ki so preživeli vojno (str. 979 in naprej), in seznam padlih (str. 1016 in naprej)',
+    'gubceva-kader':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade ter komandanti in komisarji bataljonov, s časom na dolžnosti (str. 975–978)',
     'dvanajsta':
       'Seznam padlih borcev brigade in seznam borcev, ki so preživeli vojno, na koncu knjige',
     'dvanajsta-kader':
@@ -455,6 +457,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev Mosorskega partizanskega odreda 1942–1944 (prvi del seznama, str. 355–562): I. mosorski odred, Mosorski bataljon, Leteča mosorska četa in odred od oktobra 1943 do novembra 1944, z rojstvom, poklicem, prihodom v odred in usodo. Drugi del seznama, borci komand mest in terenski delavci, ni vnesen.',
     'mosorski-odred-2':
       'Drugi del seznama iz iste knjige (str. 573–648): borci komand mest ter partijsko-politični in terenski delavci s področja Mosorja. Vneseni so le borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske; terenski delavci, odborniki in članice AFŽ niso vneseni; pripadniki delovnih bataljonov so.',
+    'mosorski-odred-kader':
+      'Vodstvo odreda 1942–1944, po dolžnostih, od komandantov odreda do komandirjev vodov, vodnih delegatov in četnih bolničark, samo imena (str. 563–568)',
     'turopoljsko-posavski-odred':
       'Seznam padlih borcev odreda (99, s krajem rojstva, datumom in krajem smrti) ter ustreljeni in umrli borci odreda med vojno (16), str. 17–20 (Muzej Turopolja, Velika Gorica 1983)',
     'zascitna-enota-vpv':
@@ -695,6 +699,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и командантите и комесарите на баталјоните, со времето на должноста (стр. 810–814)',
     'gubceva':
       'Список на борците на бригадата што ја преживеале војната (стр. 979 и натаму) и список на нејзините загинати (стр. 1016 и натаму)',
+    'gubceva-kader':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и командантите и комесарите на баталјоните, со времето на должноста (стр. 975–978)',
     'dvanajsta':
       'Список на загинатите борци на бригадата и список на оние што ја преживеале војната, на крајот на книгата',
     'dvanajsta-kader':
@@ -995,6 +1001,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на Мосорскиот партизански одред 1942–1944 (првиот дел од списокот, стр. 355–562): I мосорски одред, Мосорскиот баталјон, Летечката мосорска чета и одредот од октомври 1943 до ноември 1944, со раѓање, занимање, доаѓање во одредот и судбина. Вториот дел од списокот, борците на командите на места и теренските работници, не е внесен.',
     'mosorski-odred-2':
       'Вториот дел од пописот од истата книга (стр. 573–648): борците на командите на места, партиско-политичките и теренските работници од подрачјето на Мосор. Внесени се само борците, оние за кои записот вели дека биле борци или наведува воена должност или единица на војската; теренските работници, одборниците и членките на АФЖ не се внесени; припадниците на работните баталјони се.',
+    'mosorski-odred-kader':
+      'Раководниот кадар на одредот 1942–1944, по должности, од командантите на одредот до командирите на водови, водните делегати и четните болничарки, само имиња (стр. 563–568)',
     'turopoljsko-posavski-odred':
       'Список на загинатите борци на одредот (99, со место на раѓање, датум и место на загинувањето) и стрелани и починати борци на одредот во војната (16), стр. 17–20 (Музеј на Туропоље, Велика Горица 1983)',
     'zascitna-enota-vpv':
@@ -1234,6 +1242,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s commanders, political commissars, their deputies and chiefs of staff, and its battalions’ commanders and commissars, with how long each held the post (pp. 810–814)',
     'gubceva':
       'List of the brigade’s members who survived the war (pp. 979 ff.) and of its fallen (pp. 1016 ff.)',
+    'gubceva-kader':
+      'The brigade’s commanders, political commissars, their deputies and chiefs of staff, and its battalions’ commanders and commissars, with how long each held the post (pp. 975–978)',
     'dvanajsta':
       'Lists of the brigade’s fallen and of those who survived the war, at the end of the book',
     'dvanajsta-kader':
@@ -1534,6 +1544,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the Mosor Partisan Detachment, 1942–1944 (the list’s first part, pp. 355–562): the 1st Mosor Detachment, the Mosor Battalion, the Flying Mosor Company and the detachment of October 1943 to November 1944, with birth, occupation, joining and fate. The list’s second part, the town commands’ men and the field workers, is not included.',
     'mosorski-odred-2':
       'The second part of the same book’s roll (pp. 573–648): the fighters of the town commands and the party, political and field workers of the Mosor area. Only the fighters were entered, those whose entry says they fought or names a military duty or an army unit; field workers, council members and AFŽ members were left out; the labour battalions’ men were entered.',
+    'mosorski-odred-kader':
+      'The detachment’s leaders, 1942–1944, by duty, from its commanders to its platoon commanders, platoon delegates and company nurses, names only (pp. 563–568)',
     'turopoljsko-posavski-odred':
       'The detachment’s fighters killed in action (99, with birthplace, date and place of death) and those shot or who died during the war (16), pp. 17–20 (Turopolje Museum, Velika Gorica 1983)',
     'zascitna-enota-vpv':
@@ -1679,6 +1691,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'pregled komandnog kadra': 'pregled poveljniškega kadra',
     'poveljniški kader': 'poveljniški kader',
     'starešine štabova': 'starešine štabov',
+    'pregled rukovodećeg kadra': 'pregled vodilnega kadra',
   },
   mk: {
     'tom 1': 'том 1',
@@ -1724,6 +1737,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'pregled komandnog kadra': 'преглед на командниот кадар',
     'poveljniški kader': 'командниот кадар',
     'starešine štabova': 'старешините на штабовите',
+    'pregled rukovodećeg kadra': 'преглед на раководниот кадар',
   },
   en: {
     'tom 1': 'volume 1',
@@ -1769,6 +1783,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'pregled komandnog kadra': 'the commanders',
     'poveljniški kader': 'the commanders',
     'starešine štabova': 'the officers of the staffs',
+    'pregled rukovodećeg kadra': 'the leaders',
   },
 }
 

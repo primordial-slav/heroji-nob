@@ -132,7 +132,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | Kalnički odred | Žarko Milićević | roster (p. 311, 90 pp.) | [00003/558](https://znaci.org/00003/558.htm) |
 | Zagrebački odred | Zbornik | roster (p. 407), wounded, fallen, missing of the 1. bataljon | [00003/607](https://znaci.org/00003/607.htm) |
 | Turopoljsko-posavski odred | Višnja Huzjak | fallen (PDF p. 19 of 32) | [bk=835](https://znaci.org/00003/7xx.php?bk=835) |
-| Mosorski odred | Velić, Petrić, Vuletić | odred 1942–44 (PDF p. 357), komande mjesta and field workers (PDF p. 575), leaders | [bk=794](https://znaci.org/00003/7xx.php?bk=794) |
+| Mosorski odred | Velić, Petrić, Vuletić | odred 1942–44 (PDF p. 357), komande mjesta and field workers (PDF p. 575), leaders (PDF p. 565, **done**, `mosorski-odred-kader.pdf`) | [bk=794](https://znaci.org/00003/7xx.php?bk=794) |
 | Novosadski odred | Vanja Sanader (2026) | members 1941 and 1944 (pp. 85–86; Cyrillic) | [bk=2851](https://znaci.org/00003/7xx.php?bk=2851) |
 
 ## 4. New units — Slovene brigades and odredi
@@ -142,7 +142,7 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 | Unit | Book | Lists (PDF page of total) | Link |
 |---|---|---|---|
 | Cankarjeva | Lado Ambrožič-Novljan 1975 | commanders 810 (**done**, `cankarjeva-kader.pdf`), **Seznam cankarjevcev 815**, Padli 847 (of 910) | [767](https://znaci.org/00003/767.php) |
-| Gubčeva | Ambrožič-Novljan 1972 | **Seznam gubčevcev**, Padli | [bk=782](https://znaci.org/00003/7xx.php?bk=782) |
+| Gubčeva | Ambrožič-Novljan 1972 | commanders (976, **done**, `gubceva-kader.pdf`), **Seznam gubčevcev**, Padli | [bk=782](https://znaci.org/00003/7xx.php?bk=782) |
 | Tomšičeva I–IV | Franci Strle 1980–89 | I: udarna grupa, 1. proletarski bataljon (535–539 of 615; **done**, `tomsiceva-1.pdf`); II: **roster VII 1942–VII 1943** (840 of 941); III: names left out of II (646 of 715); IV: **rosters VII 1943–IV 1944 (573) and IV 1944–V 1945 (621)** (of 746) | [790](https://znaci.org/00003/7xx.php?bk=790), [787](https://znaci.org/00003/7xx.php?bk=787), [792](https://znaci.org/00003/7xx.php?bk=792), [788](https://znaci.org/00003/7xx.php?bk=788) |
 | Šercerjeva | Milan Guček 1973 | Padli (518 of 550), volunteers | [bk=813](https://znaci.org/00003/7xx.php?bk=813) |
 | XII. SNOUB (Dvanajsta) | Ambrožič-Novljan 1976 | Padli (609), **Seznam borcev (613 of 648)**, commanders (573, **done**, `dvanajsta-kader.pdf`) | [bk=814](https://znaci.org/00003/7xx.php?bk=814) |
