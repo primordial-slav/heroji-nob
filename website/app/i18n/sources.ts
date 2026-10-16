@@ -530,6 +530,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci, ki so v Prvi črnogorski bataljon Prve proletarske vstopili v letih 1942, 1943, 1944 in 1945, ter borci brez popolnih podatkov: rojstvo, poklic, vstop v NOB, usoda; v cirilici (str. 713–795)',
     'rudarska-ceta':
       'Borci Rudarske čete (rudarji Trepče in Kopaonika), ko je 21. decembra 1941 v Rudem vstopila v Prvo proletarsko, z življenjepisom vsakega (str. 426–430)',
+    'prva-proleterska-dopunski':
+      'Pripadniki brigade, ki jih je uredništvo našlo po seznamu v prvih treh knjigah, s podatki o vsakem (str. 1065–1071)',
+    'prva-proleterska-garibaldi':
+      'Italijanski vojaki, ki so se po kapitulaciji Italije pridružili partizanom, s štabom bataljona, samo imena in dolžnosti (str. 1072–1082)',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -1049,6 +1053,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борците што стапиле во Првиот црногорски баталјон на Првата пролетерска во 1942, 1943, 1944 и 1945 и борците без целосни податоци: раѓање, занимање, кога стапиле во НОБ, судбина; на кирилица (стр. 713–795)',
     'rudarska-ceta':
       'Борците на Рударската чета (рудари од Трепча и Копаоник) кога влезе во Првата пролетерска во Рудо на 21 декември 1941, со биографија за секого (стр. 426–430)',
+    'prva-proleterska-dopunski':
+      'Припадниците на бригадата што редакцијата ги најде по списокот во првите три книги, со податоци за секого (стр. 1065–1071)',
+    'prva-proleterska-garibaldi':
+      'Италијанските војници што по капитулацијата на Италија им се приклучија на партизаните, со штабот на баталјонот, само имиња и должности (стр. 1072–1082)',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -1567,6 +1575,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The fighters who joined the 1st Montenegrin Battalion of the 1st Proletarian in 1942, 1943, 1944 and 1945, and those with incomplete details: birth, occupation, when they joined the struggle, fate; in Cyrillic (pp. 713–795)',
     'rudarska-ceta':
       'The Miners’ Company (miners of Trepča and Kopaonik) as it joined the 1st Proletarian at Rudo on 21 December 1941, each with a short life (pp. 426–430)',
+    'prva-proleterska-dopunski':
+      'Members of the brigade the editors found after the roster of the first three books was set, each with a short life (pp. 1065–1071)',
+    'prva-proleterska-garibaldi':
+      'The Italian soldiers who joined the Partisans after Italy’s capitulation, with the battalion staff, names and duties only (pp. 1072–1082)',
   },
 }
 

@@ -757,6 +757,24 @@ export const sources: PdfSource[] = [
     description: 'Borci Rudarske čete (rudari Trepče i Kopaonika) kada je ušla u Prvu proletersku u Rudom 21. decembra 1941, s biografijom svakog (str. 426–430)'
   },
   {
+    id: 'prva-proleterska-dopunski',
+    title: 'Prva proleterska brigada, knjiga 4 — dopunski spisak pripadnika',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/prva-proleterska-dopunski.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-proleterska-dopunski.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Pripadnici brigade koje je redakcija pronašla posle spiska u prve tri knjige, s podacima o svakom (str. 1065–1071)'
+  },
+  {
+    id: 'prva-proleterska-garibaldi',
+    title: 'Prva proleterska brigada, knjiga 4 — spisak pripadnika bataljona »Garibaldi«',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/prva-proleterska-garibaldi.pdf',
+    thumbnail: '/images/pdf-thumbs/prva-proleterska-garibaldi.jpg',
+    brigadeName: 'Prva proleterska narodnooslobodilačka udarna brigada',
+    description: 'Italijanski vojnici koji su posle kapitulacije Italije prišli partizanima, sa štabom bataljona, samo imena i dužnosti (str. 1072–1082)'
+  },
+  {
     id: 'borci-sutjeske-druga-proleterska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',

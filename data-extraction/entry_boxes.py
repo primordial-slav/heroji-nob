@@ -102,6 +102,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
 # moves between odd and even pages.
 TWO_COLUMN = {
     'iskra-in-plamen-padli.pdf',            # Iskra in plamen 3: the dead of Polje's villages, the fallen in the army
+    'prva-proleterska-garibaldi.pdf',       # Prva proleterska knj. 4: the battalion Garibaldi, a name a line
     'cazinska-krajina-pali-borci.pdf',      # Stradanja u Cazinskoj krajini: the fallen fighters, a line each
     'susak-rijeka-spomenica.pdf',           # Sušak i Rijeka u NOB: the spomenica's holders, a name a line
     'zascitna-enota-vpv.pdf',               # the protection battalion of the Slovene leadership: four lists

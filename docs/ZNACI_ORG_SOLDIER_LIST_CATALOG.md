@@ -178,6 +178,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Prva proleterska (1) | *Beogradski bataljon* | roster 1941–45 | [00003/499](https://znaci.org/00003/499.htm) |
 | Prva proleterska (1) | Branislav Božović, *Rudarska četa* | roster (PDF p. 426, 7 pp.) | [00003/748](https://znaci.org/00003/748.php) |
 | Prva proleterska (1) | Miloš Vuksanović | at formation, Rudo (p. 433) | [00003/382](https://znaci.org/00003/382.htm) |
+| Prva proleterska (1) | *Prva proleterska brigada*, knj. 4, Spisak boraca | the roster A–Ž (97_1–3, on the site), the supplement (97_4, **done**), the battalion Garibaldi (97_5, **done**), the brigade on the day of formation, Cyrillic (97_6, pp. 10–33; the Rudo line-up again, not read), narodni heroji (97_6, images) | [00001/97](https://znaci.org/00001/97.htm) |
 | Treća krajiška (10) | Zbornik sjećanja knj. 1–2; knj. 3 | roster XI 1942 ([31_263.htm](https://znaci.org/00001/31_263.htm)); **everyone who served in the war** (knj. 3, p. 579) | [00001/31](https://znaci.org/00001/31.htm), [00003/394](https://znaci.org/00003/394.htm) |
 | Šesta krajiška (13) | *Ratna sjećanja* | wartime cadre 1942–43 (p. 739; **done**, `6-krajiska-kadar.pdf`), **survivors** (p. 747) | [00001/147](https://znaci.org/00001/147.htm) |
 | Osma krajiška (14) | *Sjećanja boraca* | fallen and died (p. 689; on the site as `8-krajiska-sjecanja-poginuli.pdf`, a second book: **done**, `parse_8_krajiska_sjecanja.py`), corrections to the monograph (p. 743) | [00001/68](https://znaci.org/00001/68.htm) |
