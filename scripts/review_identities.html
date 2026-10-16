@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Same soldier?</title>
+<style>
+:root {
+  --bg: #f6f3ee; --panel: #fffdf9; --ink: #1d1b19; --muted: #6b655d; --line: #e2dcd2;
+  --red: #b3261e; --green: #1f7a3d; --amber: #9a6700; --chip: #efe9df; --agree: #e3f2e7; --clash: #fbe4e1; --near: #fbf1d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161412; --panel: #1f1c19; --ink: #ece6dd; --muted: #a39b90; --line: #36312b;
+          --red: #ef6b5f; --green: #5cc282; --amber: #e0a93a; --chip: #2b2723; --agree: #1d3324; --clash: #3b201d; --near: #3a3018; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 2; background: var(--panel); border-bottom: 1px solid var(--line);
+         display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 10px 16px; }
+header h1 { font-size: 17px; margin: 0 8px 0 0; }
+header h1 b { color: var(--red); }
+.tabs button, select { font: inherit; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+                       border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+.tabs button.on { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.count { color: var(--muted); font-size: 13px; }
+main { max-width: 1280px; margin: 0 auto; padding: 16px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 12px; }
+.kind { font-weight: 600; margin-right: 6px; }
+.chip { background: var(--chip); border-radius: 999px; padding: 1px 9px; font-size: 13px; }
+.chip.ok { background: var(--agree); color: var(--green); }
+.chip.no { background: var(--clash); color: var(--red); }
+.note { color: var(--muted); font-size: 13px; }
+table.cmp { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+            overflow: hidden; table-layout: fixed; }
+table.cmp th, table.cmp td { text-align: left; vertical-align: top; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+table.cmp th { width: 110px; color: var(--muted); font-weight: 500; font-size: 13px; }
+table.cmp tr:last-child td, table.cmp tr:last-child th { border-bottom: 0; }
+td.same { background: var(--agree); }
+td.diff { background: var(--clash); }
+td.near { background: var(--near); }
+.name { font-size: 19px; font-weight: 650; }
+.src { color: var(--muted); font-size: 13px; }
+.info { white-space: pre-wrap; font-size: 14px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.side { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; min-width: 0; }
+.side h3 { margin: 0 0 6px; font-size: 13px; color: var(--muted); font-weight: 500; }
+.scan { display: block; max-width: 100%; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+.side a { color: var(--red); }
+details { margin-top: 8px; font-size: 13px; }
+details .entry { border-top: 1px dashed var(--line); padding: 6px 0; }
+.bar { position: sticky; bottom: 0; background: var(--panel); border-top: 1px solid var(--line); padding: 10px 16px;
+       display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; }
+.bar button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer; color: #fff; }
+.bar .same { background: var(--green); } .bar .diff { background: var(--red); } .bar .unsure { background: var(--amber); }
+.bar .nav { background: var(--chip); color: var(--ink); font-weight: 500; }
+.bar input { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg);
+             color: var(--ink); min-width: 220px; flex: 1; max-width: 380px; }
+.answered { padding: 6px 10px; border-radius: 6px; font-weight: 600; margin-bottom: 10px; display: inline-block; }
+.answered.same { background: var(--agree); color: var(--green); }
+.answered.different { background: var(--clash); color: var(--red); }
+.answered.unsure { background: var(--chip); color: var(--amber); }
+.empty { text-align: center; color: var(--muted); padding: 60px 0; }
+kbd { font: 12px ui-monospace, monospace; background: rgba(255,255,255,.2); border-radius: 3px; padding: 0 4px; margin-left: 4px; }
+@media (max-width: 760px) {
+  .cols { grid-template-columns: 1fr; }
+  table.cmp th { width: 80px; }
+  main { padding: 12px 16px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Same <b>soldier</b>?</h1>
+  <div class="tabs">
+    <button id="t-review" class="on">To decide</button>
+    <button id="t-check">Spot checks</button>
+  </div>
+  <select id="kind">
+    <option value="">all kinds</option>
+    <option value="merge">two lists of one unit</option>
+    <option value="link">two units</option>
+    <option value="reference">book across units</option>
+  </select>
+  <label class="count"><input type="checkbox" id="hide" checked> hide answered</label>
+  <span class="count" id="count"></span>
+</header>
+<main id="main"><div class="empty">Loading…</div></main>
+<div class="bar">
+  <button class="nav" id="prev">← Back</button>
+  <button class="same" id="b-same">Same man<kbd>S</kbd></button>
+  <button class="diff" id="b-diff">Different men<kbd>D</kbd></button>
+  <button class="unsure" id="b-unsure">Not sure<kbd>U</kbd></button>
+  <input id="noteIn" placeholder="note (optional): why">
+  <button class="nav" id="undo">Undo<kbd>Z</kbd></button>
+  <button class="nav" id="next">Next →</button>
+</div>
+<script>
+const KINDS = { merge: 'Two lists of one unit', link: 'Two units', reference: 'Book across units → a unit’s record' };
+const FACTS = [['father', 'Father'], ['born', 'Born'], ['birthplace', 'Birthplace'], ['death', 'Death'],
+               ['death place', 'Death place'], ['rank', 'Duty'], ['in unit', 'In unit']];
+let data = null, tab = 'review', pos = 0, list = [];
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]/g, '');
+
+// same: the same text once case, marks and leading zeros are off, or one begins the other; near: a word in common
+// (its first four letters: "Vinište" and "Viniscu"); diff: nothing in common
+const words = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd')
+  .replace(/\b0+(\d)/g, '$1').split(/[^a-z0-9]+/).filter(Boolean);
+function compare(a, b) {
+  const wa = words(a), wb = words(b), ja = wa.join(' '), jb = wb.join(' ');
+  if (ja === jb || ja.startsWith(jb) || jb.startsWith(ja)) return 'same';
+  const stems = new Set(wa.filter(w => w.length >= 4 || /\d/.test(w)).map(w => w.slice(0, 4)));
+  return wb.some(w => (w.length >= 4 || /\d/.test(w)) && stems.has(w.slice(0, 4))) ? 'near' : 'diff';
+}
+
+async function load() {
+  const r = await fetch('/api/queue');
+  data = await r.json();
+  if (data.error) { $('main').innerHTML = `<div class="empty">${esc(data.error)}</div>`; return; }
+  filter();
+}
+
+function filter(keepKey) {
+  const kind = $('kind').value, hide = $('hide').checked;
+  list = (data[tab] || []).filter(x => (!kind || x.kind === kind) && (!hide || !data.answers[x.key] || x.key === keepKey));
+  pos = keepKey ? Math.max(0, list.findIndex(x => x.key === keepKey)) : 0;
+  render();
+}
+
+function cropUrl(p) {
+  const q = new URLSearchParams({ file: p.file, page: p.page, box: p.box.join(',') });
+  if (p.rects) q.set('rects', JSON.stringify(p.rects));
+  return '/crop?' + q;
+}
+
+function sideHtml(s, label) {
+  let h = `<div class="side"><h3>${label}: ${esc(s.unit)}</h3><div class="info">${esc(s.info) || '<span class="note">no text</span>'}</div>`;
+  if (s.pdf) {
+    h += `<p class="src">${esc(s.pdf.title)}, page ${s.pdf.page} · <a href="/pdfs/${encodeURIComponent(s.pdf.file)}#page=${s.pdf.page}" target="_blank">open the page</a></p>
+          <img class="scan" loading="lazy" src="${cropUrl(s.pdf)}" alt="the entry on its page">`;
+  } else if (s.url) {
+    h += `<p class="src">No scan on the site · <a href="${esc(s.url)}" target="_blank" rel="noreferrer">open the source</a></p>`;
+  }
+  if (s.more && s.more.length) {
+    h += `<details><summary>${s.more.length} more ${s.more.length === 1 ? 'entry' : 'entries'} of this record</summary>`;
+    for (const m of s.more) {
+      h += `<div class="entry"><b>${esc(m.name)}</b> <span class="src">${esc(m.title)}</span><div class="info">${esc(m.info)}</div>`;
+      if (m.pdf) h += `<a href="/pdfs/${encodeURIComponent(m.pdf.file)}#page=${m.pdf.page}" target="_blank">page ${m.pdf.page}</a>`;
+      h += `</div>`;
+    }
+    h += `</details>`;
+  }
+  return h + `</div>`;
+}
+
+function render() {
+  const answered = (data[tab] || []).filter(x => data.answers[x.key]).length;
+  $('count').textContent = `${list.length ? pos + 1 : 0} of ${list.length} shown · ${answered} answered · ${data[tab].length} in all · made ${data.made}`;
+  $('t-review').textContent = `To decide (${data.review.length})`;
+  $('t-check').textContent = `Spot checks (${data.check.length})`;
+  const x = list[pos];
+  if (!x) { $('main').innerHTML = `<div class="empty">Nothing left here. Run <code>python scripts/find_identities.py --write</code> to make the answers into corrections.</div>`; return; }
+  const ans = data.answers[x.key];
+  let h = ans ? `<div class="answered ${ans}">Answered: ${ans === 'same' ? 'same man' : ans === 'different' ? 'different men' : 'not sure'}</div>` : '';
+  h += `<div class="meta"><span class="kind">${KINDS[x.kind]}</span>`;
+  if (x.grade && x.grade !== 'made') h += `<span class="chip">${esc(x.grade)}</span>`;
+  if (x.made) h += `<span class="chip">already made: correction ${x.made}</span>`;
+  for (const a of x.agree) h += `<span class="chip ok">✓ ${esc(a)}</span>`;
+  for (const c of x.clash) h += `<span class="chip no">✗ ${esc(c)}</span>`;
+  if (x.note) h += `<span class="note">${esc(x.note)}</span>`;
+  h += `</div><table class="cmp"><tr><th></th><td><div class="name">${esc(x.a.name)}</div><div class="src">${esc(x.a.unit)} · ${x.a.id}</div></td>
+        <td><div class="name">${esc(x.b.name)}</div><div class="src">${esc(x.b.unit)} · ${x.b.id}</div></td></tr>`;
+  for (const [k, label] of FACTS) {
+    const a = x.a.facts[k], b = x.b.facts[k];
+    if (!a && !b) continue;
+    const cls = a && b ? compare(a, b) : '';
+    h += `<tr><th>${label}</th><td class="${cls}">${esc(a) || '—'}</td><td class="${cls}">${esc(b) || '—'}</td></tr>`;
+  }
+  h += `</table><div class="cols">${sideHtml(x.a, 'A')}${sideHtml(x.b, 'B')}</div>`;
+  $('main').innerHTML = h;
+  $('noteIn').value = '';
+  for (const y of list.slice(pos + 1, pos + 3)) for (const s of [y.a, y.b]) if (s.pdf) new Image().src = cropUrl(s.pdf);
+}
+
+async function answer(a) {
+  const x = list[pos];
+  if (!x) return;
+  const r = await fetch('/api/answer', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ key: x.key, answer: a, a_name: x.a.name, b_name: x.b.name, note: $('noteIn').value }) });
+  if (!r.ok) { alert('Not saved: ' + await r.text()); return; }
+  if (a === 'clear') delete data.answers[x.key]; else data.answers[x.key] = a;
+  if (a !== 'clear' && pos < list.length - 1) pos++;
+  render();
+}
+
+$('b-same').onclick = () => answer('same');
+$('b-diff').onclick = () => answer('different');
+$('b-unsure').onclick = () => answer('unsure');
+$('undo').onclick = () => answer('clear');
+$('prev').onclick = () => { if (pos > 0) { pos--; render(); } };
+$('next').onclick = () => { if (pos < list.length - 1) { pos++; render(); } };
+$('kind').onchange = () => filter();
+$('hide').onchange = () => filter(list[pos] && list[pos].key);
+for (const t of ['review', 'check']) $('t-' + t).onclick = () => {
+  tab = t; $('t-review').classList.toggle('on', t === 'review'); $('t-check').classList.toggle('on', t === 'check'); filter();
+};
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.ctrlKey || e.metaKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  if (k === 's') answer('same');
+  else if (k === 'd') answer('different');
+  else if (k === 'u') answer('unsure');
+  else if (k === 'z') answer('clear');
+  else if (k === 'arrowright' || k === 'j') $('next').click();
+  else if (k === 'arrowleft' || k === 'k') $('prev').click();
+  else return;
+  e.preventDefault();
+});
+load();
+</script>
+</body>
+</html>
