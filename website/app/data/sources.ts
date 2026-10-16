@@ -136,6 +136,15 @@ export const sources: PdfSource[] = [
     description: 'Popis boraca 2. dalmatinske proleterske brigade NOVJ'
   },
   {
+    id: '2-dalmatinska-stabovi',
+    title: '2. dalmatinska proleterska udarna brigada — pregled štabova i komandi',
+    author: 'Nikola Anić',
+    pdfPath: '/pdfs/2-dalmatinska-stabovi.pdf',
+    thumbnail: '/images/pdf-thumbs/2-dalmatinska-stabovi.jpg',
+    brigadeName: '2. dalmatinska proleterska udarna brigada',
+    description: 'Starešine štaba brigade s vremenom kad je ko bio na dužnosti, prištapskih četa, brigadne bolnice, štabova bataljona i komandi četa, po dužnostima (str. 473–486)'
+  },
+  {
     id: '4-splitska-brigada',
     title: '4. splitska udarna brigada',
     author: 'Vinko Uvodić (ur.)',
@@ -1270,6 +1279,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca koji su prošli kroz brigadu: godina i mesto rođenja; poginuli, s jedinicom i mestom pogibije (str. 243–287)'
   },
   {
+    id: '14-hercegovacka-komandni-sastav',
+    title: 'Četrnaesta hercegovačka omladinska NOU brigada — komandni sastav',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/14-hercegovacka-komandni-sastav.pdf',
+    thumbnail: '/images/pdf-thumbs/14-hercegovacka-komandni-sastav.jpg',
+    brigadeName: '14. hercegovačka (omladinska) brigada',
+    description: 'Štab brigade, štabovi bataljona, komande četa, prateći vodovi, komandiri i politički delegati vodova i prištapske jedinice, po dužnostima, s vremenom kad je ko bio na dužnosti (str. 234–242)'
+  },
+  {
     id: '5-vojvodjanska',
     title: 'Peta vojvođanska brigada — spisak boraca i starešina',
     author: 'Nikola Mraović',
@@ -1457,6 +1475,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/13-hercegovacka.jpg',
     brigadeName: '13. hercegovačka brigada',
     description: 'Poginuli borci i starešine brigade (rođenje, dan i mesto pogibije) i spisak boraca koji su se borili u brigadi, samo imena (str. 316–347)'
+  },
+  {
+    id: '13-hercegovacka-starjesine',
+    title: '13. hercegovačka brigada — starešinski sastav',
+    author: 'Mensur Seferović',
+    pdfPath: '/pdfs/13-hercegovacka-starjesine.pdf',
+    thumbnail: '/images/pdf-thumbs/13-hercegovacka-starjesine.jpg',
+    brigadeName: '13. hercegovačka brigada',
+    description: 'Štab brigade i jedinice pri štabu, štabovi bataljona i komande četa, po dužnostima, s vremenom kad je ko bio na dužnosti (str. 305–315)'
   },
   {
     id: '12-hercegovacka',

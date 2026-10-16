@@ -1628715,5 +1628715,1800 @@
       "additional_info": "rođena 1925. u s. Sečivica-Turjanski. Borac 1. bataljona »S. Matić«. Poginula u 4. ofanzivi u s. Vrpile kod T. Korenice 1943. godine."
     },
     "reason": "The entry's second line, which the parser lost, read from the page (druga-licka-spisak.pdf p. 42); the user flagged Kolundžić Petra Bosiljka 2026-10-16 ('fix parsed text')"
+  },
+  {
+    "id": 140258,
+    "soldier_id": "0104000646",
+    "fields": {
+      "additional_info": "rođen 1926. u s. Oprisavci."
+    },
+    "reason": "Glued entry: Knez Ivan (printed KNE2) was inside Klenuk Antun's bio",
+    "action": "edit"
+  },
+  {
+    "id": 140259,
+    "action": "add",
+    "soldier_id": "0104000646",
+    "new_id": "0104001880",
+    "record": {
+      "last_name": "Knez",
+      "middle_name": "Antuna",
+      "fathers_name": "Antun",
+      "first_name": "Ivan",
+      "additional_info": "rođen 1922. u s. Oprisavci.",
+      "birth_year": "1922",
+      "pdf_file": "osjecka.pdf",
+      "pdf_page": 34,
+      "pdf_x": 180.6,
+      "pdf_y": 314.6
+    },
+    "reason": "Missing soldier glued into the previous bio (KNE2 = Knez, Antuna Ivan, b. 1922, Oprisavci)"
+  },
+  {
+    "id": 242942,
+    "action": "reference",
+    "soldier_id": "0002005328",
+    "ref_book": "hak-14-donji-lapac",
+    "ref_id": "9009000978",
+    "ref_name": "Mišković Sime Milan",
+    "reason": "Mišković Sime Milan is the Mišković Sime Milan of the book; same father, birth year, birthplace, death year; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242943,
+    "action": "reference",
+    "soldier_id": "0002006287",
+    "ref_book": "hak-14-donji-lapac",
+    "ref_id": "9009000979",
+    "ref_name": "Pećanac Đure Branko",
+    "reason": "Pećanac Đure Branko is the Pećanac Đure Branko of the book; same father, birth year, birthplace, death year; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242944,
+    "action": "merge",
+    "soldier_id": "0081000017",
+    "merge_id": "0081010006",
+    "merge_name": "Andrić Mara",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242945,
+    "action": "merge",
+    "soldier_id": "0081000390",
+    "merge_id": "0081010069",
+    "merge_name": "Ignjatić Mirko",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242946,
+    "action": "merge",
+    "soldier_id": "0081000454",
+    "merge_id": "0081010088",
+    "merge_name": "Kebo Hamid",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242947,
+    "action": "merge",
+    "soldier_id": "0081000493",
+    "merge_id": "0081010098",
+    "merge_name": "Kolak Mijat",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242948,
+    "action": "merge",
+    "soldier_id": "0081000550",
+    "merge_id": "0081010110",
+    "merge_name": "Kujundžić Maksim",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242949,
+    "action": "merge",
+    "soldier_id": "0081000774",
+    "merge_id": "0081010158",
+    "merge_name": "Nadaždin Slavko",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242950,
+    "action": "merge",
+    "soldier_id": "0081000857",
+    "merge_id": "0081010172",
+    "merge_name": "Pervan Asim",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242951,
+    "action": "merge",
+    "soldier_id": "0081001005",
+    "merge_id": "0081010198",
+    "merge_name": "Ružić Vukan",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242952,
+    "action": "merge",
+    "soldier_id": "0081001058",
+    "merge_id": "0081010205",
+    "merge_name": "Senić Vukašin",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242953,
+    "action": "merge",
+    "soldier_id": "0081001085",
+    "merge_id": "0081010213",
+    "merge_name": "Stanković Gojko",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242954,
+    "action": "merge",
+    "soldier_id": "0081001097",
+    "merge_id": "0081010217",
+    "merge_name": "Subotić Gojko",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242955,
+    "action": "merge",
+    "soldier_id": "0081001224",
+    "merge_id": "0081010236",
+    "merge_name": "Vukoje B Živana",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same father; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242956,
+    "action": "merge",
+    "soldier_id": "0081001385",
+    "merge_id": "0081010256",
+    "merge_name": "Šakota Slavko",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242957,
+    "action": "merge",
+    "soldier_id": "0081001390",
+    "merge_id": "0081010257",
+    "merge_name": "Šakotić Radovan",
+    "reason": "Same soldier in 14-hercegovacka.pdf (spisak) and 14-hercegovacka-komandni-sastav.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242958,
+    "action": "merge",
+    "soldier_id": "0100000872",
+    "merge_id": "0100010108",
+    "merge_name": "Livnjak Omer",
+    "reason": "Same soldier in 13-hercegovacka.pdf and 13-hercegovacka-starjesine.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242959,
+    "action": "merge",
+    "soldier_id": "0007000010",
+    "merge_id": "0007010010",
+    "merge_name": "Ačimović Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242960,
+    "action": "merge",
+    "soldier_id": "0007000040",
+    "merge_id": "0007010002",
+    "merge_name": "Alfirević S Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same father initial; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242961,
+    "action": "merge",
+    "soldier_id": "0007000058",
+    "merge_id": "0007010003",
+    "merge_name": "Amižić Blaž",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242962,
+    "action": "merge",
+    "soldier_id": "0007000099",
+    "merge_id": "0007010009",
+    "merge_name": "Antulov-Fantulin Šime",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242963,
+    "action": "merge",
+    "soldier_id": "0007000237",
+    "merge_id": "0007010013",
+    "merge_name": "Banje Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242964,
+    "action": "merge",
+    "soldier_id": "0007000259",
+    "merge_id": "0007010015",
+    "merge_name": "Barbir Marijan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242965,
+    "action": "merge",
+    "soldier_id": "0007000262",
+    "merge_id": "0007010016",
+    "merge_name": "Barbir Stanko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242966,
+    "action": "merge",
+    "soldier_id": "0007000284",
+    "merge_id": "0007010017",
+    "merge_name": "Barin Karmelo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242967,
+    "action": "merge",
+    "soldier_id": "0007000307",
+    "merge_id": "0007010019",
+    "merge_name": "Bartulović Zoran",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242968,
+    "action": "merge",
+    "soldier_id": "0007000345",
+    "merge_id": "0007010022",
+    "merge_name": "Baučić Jakov",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242969,
+    "action": "merge",
+    "soldier_id": "0007000352",
+    "merge_id": "0007010024",
+    "merge_name": "Beban Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242970,
+    "action": "merge",
+    "soldier_id": "0007000453",
+    "merge_id": "0007010032",
+    "merge_name": "Bezbradica Rade",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242971,
+    "action": "merge",
+    "soldier_id": "0007000605",
+    "merge_id": "0007010043",
+    "merge_name": "Borović Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242972,
+    "action": "merge",
+    "soldier_id": "0007000615",
+    "merge_id": "0007010045",
+    "merge_name": "Bošković Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242973,
+    "action": "merge",
+    "soldier_id": "0007000713",
+    "merge_id": "0007010048",
+    "merge_name": "Brkić Vojin",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242974,
+    "action": "merge",
+    "soldier_id": "0007000715",
+    "merge_id": "0007010049",
+    "merge_name": "Brković Dinko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242975,
+    "action": "merge",
+    "soldier_id": "0007000745",
+    "merge_id": "0007010060",
+    "merge_name": "Buća Berislav",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242976,
+    "action": "merge",
+    "soldier_id": "0007000750",
+    "merge_id": "0007010050",
+    "merge_name": "Budimir Mirko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242977,
+    "action": "merge",
+    "soldier_id": "0007000775",
+    "merge_id": "0007010055",
+    "merge_name": "Bukorović Ilija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242978,
+    "action": "merge",
+    "soldier_id": "0007000776",
+    "merge_id": "0007010056",
+    "merge_name": "Bukorović Miloš",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242979,
+    "action": "merge",
+    "soldier_id": "0007000818",
+    "merge_id": "0007010058",
+    "merge_name": "Bumbak Mile",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242980,
+    "action": "merge",
+    "soldier_id": "0007000828",
+    "merge_id": "0007010059",
+    "merge_name": "Burić Savo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242981,
+    "action": "merge",
+    "soldier_id": "0007000879",
+    "merge_id": "0007010061",
+    "merge_name": "Carić-Marušić Štefica",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242982,
+    "action": "merge",
+    "soldier_id": "0007000929",
+    "merge_id": "0007010063",
+    "merge_name": "Crnogorac Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242983,
+    "action": "merge",
+    "soldier_id": "0007000938",
+    "merge_id": "0007010067",
+    "merge_name": "Cvetić Đorđe",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242984,
+    "action": "merge",
+    "soldier_id": "0007000948",
+    "merge_id": "0007010068",
+    "merge_name": "Cvitan Dunko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242985,
+    "action": "merge",
+    "soldier_id": "0007000959",
+    "merge_id": "0007010069",
+    "merge_name": "Cvitanović Marinko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242986,
+    "action": "merge",
+    "soldier_id": "0007000960",
+    "merge_id": "0007010070",
+    "merge_name": "Cvitanović Paško",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242987,
+    "action": "merge",
+    "soldier_id": "0007001006",
+    "merge_id": "0007010379",
+    "merge_name": "Ćaleta Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242988,
+    "action": "merge",
+    "soldier_id": "0007001027",
+    "merge_id": "0007010386",
+    "merge_name": "Čarija Frane",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242989,
+    "action": "merge",
+    "soldier_id": "0007001048",
+    "merge_id": "0007010387",
+    "merge_name": "Čelebić Milovan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242990,
+    "action": "merge",
+    "soldier_id": "0007001062",
+    "merge_id": "0007010390",
+    "merge_name": "Četnik Jovo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242991,
+    "action": "merge",
+    "soldier_id": "0007001073",
+    "merge_id": "0007010392",
+    "merge_name": "Čimbur Petar",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242992,
+    "action": "merge",
+    "soldier_id": "0007001081",
+    "merge_id": "0007010393",
+    "merge_name": "Čolović Tode",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242993,
+    "action": "merge",
+    "soldier_id": "0007001099",
+    "merge_id": "0007010394",
+    "merge_name": "Čule Martin",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242994,
+    "action": "merge",
+    "soldier_id": "0007001130",
+    "merge_id": "0007010383",
+    "merge_name": "Ćuk Glišo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242995,
+    "action": "merge",
+    "soldier_id": "0007001234",
+    "merge_id": "0007010074",
+    "merge_name": "Dimić Stevan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242996,
+    "action": "merge",
+    "soldier_id": "0007001245",
+    "merge_id": "0007010077",
+    "merge_name": "Dmitrović Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242997,
+    "action": "merge",
+    "soldier_id": "0007001258",
+    "merge_id": "0007010078",
+    "merge_name": "Dobrijević Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242998,
+    "action": "merge",
+    "soldier_id": "0007001259",
+    "merge_id": "0007010079",
+    "merge_name": "Dobrijević Uroš",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 242999,
+    "action": "merge",
+    "soldier_id": "0007001316",
+    "merge_id": "0007010084",
+    "merge_name": "Drezga Božidar",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243000,
+    "action": "merge",
+    "soldier_id": "0007001331",
+    "merge_id": "0007010086",
+    "merge_name": "Držak Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243001,
+    "action": "merge",
+    "soldier_id": "0007001350",
+    "merge_id": "0007010087",
+    "merge_name": "Dude Branko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243002,
+    "action": "merge",
+    "soldier_id": "0007001394",
+    "merge_id": "0007010088",
+    "merge_name": "Dundović Mirko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243003,
+    "action": "merge",
+    "soldier_id": "0007001408",
+    "merge_id": "0007010089",
+    "merge_name": "Durbaba Jošo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243004,
+    "action": "merge",
+    "soldier_id": "0007001416",
+    "merge_id": "0007010091",
+    "merge_name": "Dvokić Stevo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243005,
+    "action": "merge",
+    "soldier_id": "0007001438",
+    "merge_id": "0007010397",
+    "merge_name": "Đapić Stevan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243006,
+    "action": "merge",
+    "soldier_id": "0007001463",
+    "merge_id": "0007010402",
+    "merge_name": "Đujić Petar",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243007,
+    "action": "merge",
+    "soldier_id": "0007001466",
+    "merge_id": "0007010404",
+    "merge_name": "Đujić Veljko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243008,
+    "action": "merge",
+    "soldier_id": "0007001509",
+    "merge_id": "0007010095",
+    "merge_name": "Ećim Vjekoslav",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243009,
+    "action": "merge",
+    "soldier_id": "0007001512",
+    "merge_id": "0007010092",
+    "merge_name": "Egić Obrad",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243010,
+    "action": "merge",
+    "soldier_id": "0007001560",
+    "merge_id": "0007010097",
+    "merge_name": "Fejić Salko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243011,
+    "action": "merge",
+    "soldier_id": "0007001572",
+    "merge_id": "0007010100",
+    "merge_name": "Filipović Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243012,
+    "action": "merge",
+    "soldier_id": "0007001583",
+    "merge_id": "0007010102",
+    "merge_name": "Forlić Branko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243013,
+    "action": "merge",
+    "soldier_id": "0007001600",
+    "merge_id": "0007010104",
+    "merge_name": "Frlekin Krste",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243014,
+    "action": "merge",
+    "soldier_id": "0007001612",
+    "merge_id": "0007010106",
+    "merge_name": "Gaće Ivan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243015,
+    "action": "merge",
+    "soldier_id": "0007001731",
+    "merge_id": "0007010109",
+    "merge_name": "Goreta Mirko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243016,
+    "action": "merge",
+    "soldier_id": "0007001744",
+    "merge_id": "0007010110",
+    "merge_name": "Govorčin Rade",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243017,
+    "action": "merge",
+    "soldier_id": "0007001761",
+    "merge_id": "0007010111",
+    "merge_name": "Grbić Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243018,
+    "action": "merge",
+    "soldier_id": "0007001771",
+    "merge_id": "0007010124",
+    "merge_name": "Grčić Ilija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243019,
+    "action": "merge",
+    "soldier_id": "0007001780",
+    "merge_id": "0007010112",
+    "merge_name": "Grgas Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243020,
+    "action": "merge",
+    "soldier_id": "0007001807",
+    "merge_id": "0007010113",
+    "merge_name": "Grubelić Josip",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243021,
+    "action": "merge",
+    "soldier_id": "0007001810",
+    "merge_id": "0007010115",
+    "merge_name": "Grubelić Miljenko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243022,
+    "action": "merge",
+    "soldier_id": "0007001814",
+    "merge_id": "0007010116",
+    "merge_name": "Grubelić Šime",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243023,
+    "action": "merge",
+    "soldier_id": "0007001819",
+    "merge_id": "0007010117",
+    "merge_name": "Grubić Zvonko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243024,
+    "action": "merge",
+    "soldier_id": "0007001825",
+    "merge_id": "0007010119",
+    "merge_name": "Grubišić Jerko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243025,
+    "action": "merge",
+    "soldier_id": "0007001830",
+    "merge_id": "0007010121",
+    "merge_name": "Grubišić Stipe",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243026,
+    "action": "merge",
+    "soldier_id": "0007001982",
+    "merge_id": "0007010130",
+    "merge_name": "Ivas Šime",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243027,
+    "action": "merge",
+    "soldier_id": "0007002049",
+    "merge_id": "0007010134",
+    "merge_name": "Janković Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243028,
+    "action": "merge",
+    "soldier_id": "0007002161",
+    "merge_id": "0007010140",
+    "merge_name": "Jovičić Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243029,
+    "action": "merge",
+    "soldier_id": "0007002172",
+    "merge_id": "0007010143",
+    "merge_name": "Jukić Augustin",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243030,
+    "action": "merge",
+    "soldier_id": "0007002185",
+    "merge_id": "0007010144",
+    "merge_name": "Juras Jakov",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243031,
+    "action": "merge",
+    "soldier_id": "0007002193",
+    "merge_id": "0007010145",
+    "merge_name": "Juretić Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243032,
+    "action": "merge",
+    "soldier_id": "0007002272",
+    "merge_id": "0007010149",
+    "merge_name": "Kapičić Jovo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243033,
+    "action": "merge",
+    "soldier_id": "0007002435",
+    "merge_id": "0007010155",
+    "merge_name": "Knežević Boško",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243034,
+    "action": "merge",
+    "soldier_id": "0007002512",
+    "merge_id": "0007010158",
+    "merge_name": "Korčulanin Jerko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243035,
+    "action": "merge",
+    "soldier_id": "0007002547",
+    "merge_id": "0007010159",
+    "merge_name": "Kotaraš Jošo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243036,
+    "action": "merge",
+    "soldier_id": "0007002558",
+    "merge_id": "0007010160",
+    "merge_name": "Kovač Krešimir",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243037,
+    "action": "merge",
+    "soldier_id": "0007002602",
+    "merge_id": "0007010164",
+    "merge_name": "Kranjac Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243038,
+    "action": "merge",
+    "soldier_id": "0007002646",
+    "merge_id": "0007010165",
+    "merge_name": "Krneta Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243039,
+    "action": "merge",
+    "soldier_id": "0007002702",
+    "merge_id": "0007010169",
+    "merge_name": "Kuljača Ivo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243040,
+    "action": "merge",
+    "soldier_id": "0007002721",
+    "merge_id": "0007010172",
+    "merge_name": "Kurtić Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243041,
+    "action": "merge",
+    "soldier_id": "0007002768",
+    "merge_id": "0007010173",
+    "merge_name": "Lalić Ljubo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243042,
+    "action": "merge",
+    "soldier_id": "0007002834",
+    "merge_id": "0007010176",
+    "merge_name": "Letunica Tode",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243043,
+    "action": "merge",
+    "soldier_id": "0007002894",
+    "merge_id": "0007010180",
+    "merge_name": "Lovrić Josip",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243044,
+    "action": "merge",
+    "soldier_id": "0007002955",
+    "merge_id": "0007010181",
+    "merge_name": "Lukin Salvo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243045,
+    "action": "merge",
+    "soldier_id": "0007002978",
+    "merge_id": "0007010179",
+    "merge_name": "Ljubičić Petar",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243046,
+    "action": "merge",
+    "soldier_id": "0007002992",
+    "merge_id": "0007010187",
+    "merge_name": "Maglov Damjan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243047,
+    "action": "merge",
+    "soldier_id": "0007003004",
+    "merge_id": "0007010188",
+    "merge_name": "Majica Marko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243048,
+    "action": "merge",
+    "soldier_id": "0007003072",
+    "merge_id": "0007010215",
+    "merge_name": "Marčetić Mićan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243049,
+    "action": "merge",
+    "soldier_id": "0007003119",
+    "merge_id": "0007010197",
+    "merge_name": "Marić Danica",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243050,
+    "action": "merge",
+    "soldier_id": "0007003121",
+    "merge_id": "0007010198",
+    "merge_name": "Marić Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243051,
+    "action": "merge",
+    "soldier_id": "0007003133",
+    "merge_id": "0007010191",
+    "merge_name": "Marin Mate",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243052,
+    "action": "merge",
+    "soldier_id": "0007003138",
+    "merge_id": "0007010193",
+    "merge_name": "Marinković Simo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243053,
+    "action": "merge",
+    "soldier_id": "0007003150",
+    "merge_id": "0007010196",
+    "merge_name": "Marinović Veljko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243054,
+    "action": "merge",
+    "soldier_id": "0007003153",
+    "merge_id": "0007010201",
+    "merge_name": "Marjanović Bogdan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243055,
+    "action": "merge",
+    "soldier_id": "0007003172",
+    "merge_id": "0007010202",
+    "merge_name": "Marković Drago",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243056,
+    "action": "merge",
+    "soldier_id": "0007003193",
+    "merge_id": "0007010212",
+    "merge_name": "Martić Jovo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243057,
+    "action": "merge",
+    "soldier_id": "0007003197",
+    "merge_id": "0007010204",
+    "merge_name": "Martinac Mijo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243058,
+    "action": "merge",
+    "soldier_id": "0007003205",
+    "merge_id": "0007010205",
+    "merge_name": "Martinović Božo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243059,
+    "action": "merge",
+    "soldier_id": "0007003224",
+    "merge_id": "0007010213",
+    "merge_name": "Marušić Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243060,
+    "action": "merge",
+    "soldier_id": "0007003241",
+    "merge_id": "0007010221",
+    "merge_name": "Mašće Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243061,
+    "action": "merge",
+    "soldier_id": "0007003296",
+    "merge_id": "0007010218",
+    "merge_name": "Matulić Celestin",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243062,
+    "action": "merge",
+    "soldier_id": "0007003355",
+    "merge_id": "0007010226",
+    "merge_name": "Meštrović Mate",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243063,
+    "action": "merge",
+    "soldier_id": "0007003397",
+    "merge_id": "0007010229",
+    "merge_name": "Mijan Paško",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243064,
+    "action": "merge",
+    "soldier_id": "0007003398",
+    "merge_id": "0007010230",
+    "merge_name": "Mijanić Andrija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243065,
+    "action": "merge",
+    "soldier_id": "0007003407",
+    "merge_id": "0007010231",
+    "merge_name": "Mikin Metod",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243066,
+    "action": "merge",
+    "soldier_id": "0007003419",
+    "merge_id": "0007010232",
+    "merge_name": "Milanović Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243067,
+    "action": "merge",
+    "soldier_id": "0007003423",
+    "merge_id": "0007010233",
+    "merge_name": "Milanović Lazar",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243068,
+    "action": "merge",
+    "soldier_id": "0007003470",
+    "merge_id": "0007010234",
+    "merge_name": "Milinković Branko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243069,
+    "action": "merge",
+    "soldier_id": "0007003531",
+    "merge_id": "0007010236",
+    "merge_name": "Miljević Pantelija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243070,
+    "action": "merge",
+    "soldier_id": "0007003535",
+    "merge_id": "0007010240",
+    "merge_name": "Mimica Hrvoje",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243071,
+    "action": "merge",
+    "soldier_id": "0007003585",
+    "merge_id": "0007010245",
+    "merge_name": "Modrić Stipe",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243072,
+    "action": "merge",
+    "soldier_id": "0007003636",
+    "merge_id": "0007010246",
+    "merge_name": "Mrkić Pajo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243073,
+    "action": "merge",
+    "soldier_id": "0007003641",
+    "merge_id": "0007010248",
+    "merge_name": "Mrša Ivan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243074,
+    "action": "merge",
+    "soldier_id": "0007003711",
+    "merge_id": "0007010252",
+    "merge_name": "Nikitović Milorad",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243075,
+    "action": "merge",
+    "soldier_id": "0007003715",
+    "merge_id": "0007010254",
+    "merge_name": "Niković Gojko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243076,
+    "action": "merge",
+    "soldier_id": "0007003731",
+    "merge_id": "0007010257",
+    "merge_name": "Nižetić Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243077,
+    "action": "merge",
+    "soldier_id": "0007003757",
+    "merge_id": "0007010260",
+    "merge_name": "Novaković Ilija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243078,
+    "action": "merge",
+    "soldier_id": "0007003765",
+    "merge_id": "0007010261",
+    "merge_name": "Novaković Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243079,
+    "action": "merge",
+    "soldier_id": "0007003767",
+    "merge_id": "0007010262",
+    "merge_name": "Novaković Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243080,
+    "action": "merge",
+    "soldier_id": "0007003807",
+    "merge_id": "0007010265",
+    "merge_name": "Opačić Glišo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243081,
+    "action": "merge",
+    "soldier_id": "0007003818",
+    "merge_id": "0007010266",
+    "merge_name": "Opačić Stevo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243082,
+    "action": "merge",
+    "soldier_id": "0007003863",
+    "merge_id": "0007010270",
+    "merge_name": "Padrov Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243083,
+    "action": "merge",
+    "soldier_id": "0007003903",
+    "merge_id": "0007010271",
+    "merge_name": "Parun Jere",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243084,
+    "action": "merge",
+    "soldier_id": "0007003942",
+    "merge_id": "0007010273",
+    "merge_name": "Paša Hugo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243085,
+    "action": "merge",
+    "soldier_id": "0007003954",
+    "merge_id": "0007010272",
+    "merge_name": "Pavić Selić",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243086,
+    "action": "merge",
+    "soldier_id": "0007003970",
+    "merge_id": "0007010283",
+    "merge_name": "Pećanac Stevo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243087,
+    "action": "merge",
+    "soldier_id": "0007003992",
+    "merge_id": "0007010278",
+    "merge_name": "Perčić Stipe",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243088,
+    "action": "merge",
+    "soldier_id": "0007004012",
+    "merge_id": "0007010276",
+    "merge_name": "Periša Branko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243089,
+    "action": "merge",
+    "soldier_id": "0007004212",
+    "merge_id": "0007010286",
+    "merge_name": "Popović Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243090,
+    "action": "merge",
+    "soldier_id": "0007004216",
+    "merge_id": "0007010287",
+    "merge_name": "Popović Simo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243091,
+    "action": "merge",
+    "soldier_id": "0007004225",
+    "merge_id": "0007010288",
+    "merge_name": "Poznanović Rade",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243092,
+    "action": "merge",
+    "soldier_id": "0007004242",
+    "merge_id": "0007010289",
+    "merge_name": "Prijić Svetozar",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243093,
+    "action": "merge",
+    "soldier_id": "0007004253",
+    "merge_id": "0007010290",
+    "merge_name": "Prlja Vaso",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243094,
+    "action": "merge",
+    "soldier_id": "0007004261",
+    "merge_id": "0007010291",
+    "merge_name": "Prodanović Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243095,
+    "action": "merge",
+    "soldier_id": "0007004381",
+    "merge_id": "0007010297",
+    "merge_name": "Radović Radovan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243096,
+    "action": "merge",
+    "soldier_id": "0007004430",
+    "merge_id": "0007010299",
+    "merge_name": "Rak Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243097,
+    "action": "merge",
+    "soldier_id": "0007004446",
+    "merge_id": "0007010300",
+    "merge_name": "Rankov Roko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243098,
+    "action": "merge",
+    "soldier_id": "0007004467",
+    "merge_id": "0007010302",
+    "merge_name": "Rašković Jovo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243099,
+    "action": "merge",
+    "soldier_id": "0007004498",
+    "merge_id": "0007010303",
+    "merge_name": "Režić Jakov",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243100,
+    "action": "merge",
+    "soldier_id": "0007004518",
+    "merge_id": "0007010304",
+    "merge_name": "Rimac Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243101,
+    "action": "merge",
+    "soldier_id": "0007004539",
+    "merge_id": "0007010305",
+    "merge_name": "Roguljić Jakov",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243102,
+    "action": "merge",
+    "soldier_id": "0007004544",
+    "merge_id": "0007010306",
+    "merge_name": "Roje Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243103,
+    "action": "merge",
+    "soldier_id": "0007004551",
+    "merge_id": "0007010307",
+    "merge_name": "Romac Stipe",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243104,
+    "action": "merge",
+    "soldier_id": "0007004565",
+    "merge_id": "0007010308",
+    "merge_name": "Rosandić Marko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243105,
+    "action": "merge",
+    "soldier_id": "0007004573",
+    "merge_id": "0007010309",
+    "merge_name": "Rožić Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243106,
+    "action": "merge",
+    "soldier_id": "0007004637",
+    "merge_id": "0007010311",
+    "merge_name": "Samohod Stipe",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243107,
+    "action": "merge",
+    "soldier_id": "0007004646",
+    "merge_id": "0007010312",
+    "merge_name": "Santini Zvonimir",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243108,
+    "action": "merge",
+    "soldier_id": "0007004674",
+    "merge_id": "0007010314",
+    "merge_name": "Sažunić Zlatan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243109,
+    "action": "merge",
+    "soldier_id": "0007004697",
+    "merge_id": "0007010317",
+    "merge_name": "Sesartić Jozo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243110,
+    "action": "merge",
+    "soldier_id": "0007004730",
+    "merge_id": "0007010319",
+    "merge_name": "Sinobad Branko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243111,
+    "action": "merge",
+    "soldier_id": "0007004735",
+    "merge_id": "0007010320",
+    "merge_name": "Sinobad Mirko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243112,
+    "action": "merge",
+    "soldier_id": "0007004797",
+    "merge_id": "0007010323",
+    "merge_name": "Sofijanić Ratko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243113,
+    "action": "merge",
+    "soldier_id": "0007004897",
+    "merge_id": "0007010326",
+    "merge_name": "Subašić Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243114,
+    "action": "merge",
+    "soldier_id": "0007004975",
+    "merge_id": "0007010420",
+    "merge_name": "Šćepanović Mirko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243115,
+    "action": "merge",
+    "soldier_id": "0007005003",
+    "merge_id": "0007010409",
+    "merge_name": "Šibić Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243116,
+    "action": "merge",
+    "soldier_id": "0007005004",
+    "merge_id": "0007010410",
+    "merge_name": "Šijan Bogdan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243117,
+    "action": "merge",
+    "soldier_id": "0007005097",
+    "merge_id": "0007010417",
+    "merge_name": "Špika Ivan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243118,
+    "action": "merge",
+    "soldier_id": "0007005126",
+    "merge_id": "0007010418",
+    "merge_name": "Šupe Jere",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243119,
+    "action": "merge",
+    "soldier_id": "0007005136",
+    "merge_id": "0007010419",
+    "merge_name": "Šušnjić Ante",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243120,
+    "action": "merge",
+    "soldier_id": "0007005165",
+    "merge_id": "0007010329",
+    "merge_name": "Tanjga Luka",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243121,
+    "action": "merge",
+    "soldier_id": "0007005204",
+    "merge_id": "0007010333",
+    "merge_name": "Tojaga Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243122,
+    "action": "merge",
+    "soldier_id": "0007005219",
+    "merge_id": "0007010334",
+    "merge_name": "Tomasović Bogdan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243123,
+    "action": "merge",
+    "soldier_id": "0007005251",
+    "merge_id": "0007010336",
+    "merge_name": "Tomić Gojko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243124,
+    "action": "merge",
+    "soldier_id": "0007005257",
+    "merge_id": "0007010338",
+    "merge_name": "Tomović Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243125,
+    "action": "merge",
+    "soldier_id": "0007005309",
+    "merge_id": "0007010340",
+    "merge_name": "Trlaja Duško",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243126,
+    "action": "merge",
+    "soldier_id": "0007005370",
+    "merge_id": "0007010344",
+    "merge_name": "Ujević Mate",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243127,
+    "action": "merge",
+    "soldier_id": "0007005372",
+    "merge_id": "0007010345",
+    "merge_name": "Ukić Karmelo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243128,
+    "action": "merge",
+    "soldier_id": "0007005440",
+    "merge_id": "0007010347",
+    "merge_name": "Velimirović Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243129,
+    "action": "merge",
+    "soldier_id": "0007005448",
+    "merge_id": "0007010348",
+    "merge_name": "Vetma Nikola",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243130,
+    "action": "merge",
+    "soldier_id": "0007005501",
+    "merge_id": "0007010354",
+    "merge_name": "Višić Miro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243131,
+    "action": "merge",
+    "soldier_id": "0007005511",
+    "merge_id": "0007010355",
+    "merge_name": "Vještica-Obradović Đuro",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243132,
+    "action": "merge",
+    "soldier_id": "0007005520",
+    "merge_id": "0007010356",
+    "merge_name": "Vladušić Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243133,
+    "action": "merge",
+    "soldier_id": "0007005526",
+    "merge_id": "0007010357",
+    "merge_name": "Vlahov Milo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243134,
+    "action": "merge",
+    "soldier_id": "0007005534",
+    "merge_id": "0007010358",
+    "merge_name": "Vlahović Vlado",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243135,
+    "action": "merge",
+    "soldier_id": "0007005575",
+    "merge_id": "0007010361",
+    "merge_name": "Vranješ Milan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243136,
+    "action": "merge",
+    "soldier_id": "0007005579",
+    "merge_id": "0007010362",
+    "merge_name": "Vrekalo Ivan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243137,
+    "action": "merge",
+    "soldier_id": "0007005598",
+    "merge_id": "0007010374",
+    "merge_name": "Vučković Ljubo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243138,
+    "action": "merge",
+    "soldier_id": "0007005621",
+    "merge_id": "0007010366",
+    "merge_name": "Vujić Dušan",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243139,
+    "action": "merge",
+    "soldier_id": "0007005640",
+    "merge_id": "0007010368",
+    "merge_name": "Vujnić Stevo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243140,
+    "action": "merge",
+    "soldier_id": "0007005706",
+    "merge_id": "0007010373",
+    "merge_name": "Vuletić Bruno",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243141,
+    "action": "merge",
+    "soldier_id": "0007005752",
+    "merge_id": "0007010377",
+    "merge_name": "Zečević Mirko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243142,
+    "action": "merge",
+    "soldier_id": "0007005767",
+    "merge_id": "0007010376",
+    "merge_name": "Zenić Nikica",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243143,
+    "action": "merge",
+    "soldier_id": "0007005856",
+    "merge_id": "0007010425",
+    "merge_name": "Žuanić Tomislav",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243144,
+    "action": "merge",
+    "soldier_id": "0007005862",
+    "merge_id": "0007010429",
+    "merge_name": "Žunić Boško",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243145,
+    "action": "merge",
+    "soldier_id": "0007005878",
+    "merge_id": "0007010072",
+    "merge_name": "Cvrlje Zdenko",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243146,
+    "action": "merge",
+    "soldier_id": "0007005882",
+    "merge_id": "0007010085",
+    "merge_name": "Drljevič Savo",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243147,
+    "action": "merge",
+    "soldier_id": "0007005887",
+    "merge_id": "0007010294",
+    "merge_name": "Radić Ilija",
+    "reason": "Same soldier in 2-dalmatinska-proleterska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243148,
+    "action": "merge",
+    "soldier_id": "0007100161",
+    "merge_id": "0007010051",
+    "merge_name": "Budimir-Jelić Ilija",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243149,
+    "action": "merge",
+    "soldier_id": "0007100471",
+    "merge_id": "0007010313",
+    "merge_name": "Sardelić Ante",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243150,
+    "action": "merge",
+    "soldier_id": "0007100519",
+    "merge_id": "0007010141",
+    "merge_name": "Jovović Vuko",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243151,
+    "action": "merge",
+    "soldier_id": "0007100800",
+    "merge_id": "0007010209",
+    "merge_name": "Martinović Marijan",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243152,
+    "action": "merge",
+    "soldier_id": "0007100946",
+    "merge_id": "0007010255",
+    "merge_name": "Ninić Ivan",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243153,
+    "action": "merge",
+    "soldier_id": "0007101038",
+    "merge_id": "0007010274",
+    "merge_name": "Pendžer Ivo",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243154,
+    "action": "merge",
+    "soldier_id": "0007101277",
+    "merge_id": "0007010325",
+    "merge_name": "Stupin Slavomir",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243155,
+    "action": "merge",
+    "soldier_id": "0007101483",
+    "merge_id": "0007010384",
+    "merge_name": "Ćuruvija Aleksandar",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243156,
+    "action": "merge",
+    "soldier_id": "0007101592",
+    "merge_id": "0007010422",
+    "merge_name": "Žarnić Mate",
+    "reason": "Same soldier in borci-sutjeske-2-dalmatinska.pdf and 2-dalmatinska-stabovi.pdf; same duty; found by find_identities.py, 2026-10-17"
+  },
+  {
+    "id": 243157,
+    "action": "edit",
+    "soldier_id": "0007001234",
+    "fields": {
+      "rank": "komandir čete"
+    },
+    "reason": "Dimić Milana Stevan: his own entry gives the post; the staff list merged into the record lists his lower post last, which the field reader took (2026-10-17)"
+  },
+  {
+    "id": 243158,
+    "action": "edit",
+    "soldier_id": "0007001814",
+    "fields": {
+      "rank": "komandir čete"
+    },
+    "reason": "Grubelić Roka Šime: his own entry gives the post; the staff list merged into the record lists his lower post last, which the field reader took (2026-10-17)"
+  },
+  {
+    "id": 243159,
+    "action": "edit",
+    "soldier_id": "0007001394",
+    "fields": {
+      "rank": "komandir čete"
+    },
+    "reason": "Dundović Mirko: his own entry gives the post; the staff list merged into the record lists his lower post last, which the field reader took (2026-10-17)"
+  },
+  {
+    "id": 243160,
+    "action": "edit",
+    "soldier_id": "0007001819",
+    "fields": {
+      "rank": "zamjenik komandanta"
+    },
+    "reason": "Grubić Marka Zvonko: his own entry gives the post; the staff list merged into the record lists his lower post last, which the field reader took (2026-10-17)"
+  },
+  {
+    "id": 243161,
+    "action": "edit",
+    "soldier_id": "0007001982",
+    "fields": {
+      "rank": "zamjenik komandanta bataljona"
+    },
+    "reason": "Ivas Stipe Šime: his own entry gives the post; the staff list merged into the record lists his lower post last, which the field reader took (2026-10-17)"
   }
 ]

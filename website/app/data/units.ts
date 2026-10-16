@@ -74,11 +74,11 @@ export const units: Unit[] = [
     id: '2-dalmatinska-brigada',
     name: '2. dalmatinska proleterska udarna brigada',
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
-    description: 'Formirana 3. oktobra 1942. Borci brigade.',
+    description: 'Formirana 3. oktobra 1942. Borci brigade i štabovi i komande brigade, bataljona i četa.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 6033,
+    soldierCount: 6264,
     dataFile: '/2-dalmatinska-soldiers.json',
-    pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf']
+    pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf', '/pdfs/2-dalmatinska-stabovi.pdf']
   },
   {
     id: '4-splitska-brigada',
@@ -824,11 +824,11 @@ export const units: Unit[] = [
     id: '14-hercegovacka-brigada',
     name: '14. hercegovačka brigada',
     nameEn: '14th Herzegovina Brigade',
-    description: 'Formirana 4. septembra 1944. kod Ljubinja, kao omladinska brigada. Svi borci koji su prošli kroz brigadu i poginuli.',
+    description: 'Formirana 4. septembra 1944. kod Ljubinja, kao omladinska brigada. Svi borci koji su prošli kroz brigadu, poginuli i komandni sastav.',
     image: '/images/14-hercegovacka-brigada.jpg',
-    soldierCount: 1296,
+    soldierCount: 1551,
     dataFile: '/14-hercegovacka-soldiers.json',
-    pdfFiles: ['/pdfs/14-hercegovacka.pdf']
+    pdfFiles: ['/pdfs/14-hercegovacka.pdf', '/pdfs/14-hercegovacka-komandni-sastav.pdf']
   },
   {
     id: '5-vojvodjanska-brigada',
@@ -1014,11 +1014,11 @@ export const units: Unit[] = [
     id: '13-hercegovacka-brigada',
     name: '13. hercegovačka brigada',
     nameEn: '13th Herzegovina Brigade',
-    description: 'Formirana 14. maja 1944. u Hercegovini. Poginuli borci i starešine brigade i svi koji su se borili u njoj.',
+    description: 'Formirana 14. maja 1944. u Hercegovini. Poginuli borci i starešine brigade, svi koji su se borili u njoj i starešinski sastav.',
     image: '/images/13-hercegovacka-brigada.jpg',
-    soldierCount: 2043,
+    soldierCount: 2272,
     dataFile: '/13-hercegovacka-soldiers.json',
-    pdfFiles: ['/pdfs/13-hercegovacka.pdf']
+    pdfFiles: ['/pdfs/13-hercegovacka.pdf', '/pdfs/13-hercegovacka-starjesine.pdf']
   },
   {
     id: '12-hercegovacka-brigada',
@@ -1056,7 +1056,7 @@ export const units: Unit[] = [
     nameEn: 'Osijek Assault Brigade',
     description: 'Formirana 1. marta 1944. kod Slobodne Vlasti blizu Đakova. Poginuli i umrli borci brigade i preživeli, po opštinama, i njene starešine.',
     image: '/images/osjecka-brigada.jpg',
-    soldierCount: 2018,
+    soldierCount: 2019,
     dataFile: '/osjecka-soldiers.json',
     pdfFiles: ['/pdfs/osjecka.pdf', '/pdfs/osjecka-zene.pdf', '/pdfs/osjecka-rukovodioci.pdf']
   },
