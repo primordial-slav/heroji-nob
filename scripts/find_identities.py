@@ -336,7 +336,8 @@ def find_pairs(units, corr, decisions, log=print):
         return entries[book][ref]
     for p in new:
         auto.append(('reference', p['record'], p['ref'], p['book'],
-                     f"{p['record_name']} is the {p['ref_name']} of the book; same {', '.join(p['agree'])}"
+                     f"{p['record_name']} is the {p['ref_name']} of the book"
+                     + (f"; same {', '.join(p['agree'])}" if p['agree'] else '')
                      + (f"; {p['why']}" if p['why'] else ''), p['agree'], p['ref_name']))
     for f in rev:
         k = key('reference', f['record'], f['ref'], f['book'])
@@ -429,6 +430,7 @@ def repoint(corr: list[dict], gone_to: dict[str, str], names: dict[str, str]) ->
     into it earlier are merged into the keeper. Edits by its id stay: apply_corrections edits a merged entry's text."""
     done = Counter()
     refs = {(c['soldier_id'], c['ref_book'], c['ref_id']) for c in corr if c['action'] == 'reference'}
+    books = {(c['soldier_id'], c['ref_book']) for c in corr if c['action'] == 'reference'}
     links = {frozenset((c['soldier_id'], c['link_id'])) for c in corr if c['action'] == 'link'}
     drop = set()
     for c in corr:
@@ -436,7 +438,13 @@ def repoint(corr: list[dict], gone_to: dict[str, str], names: dict[str, str]) ->
             keep = gone_to[c['soldier_id']]
             if (keep, c['ref_book'], c['ref_id']) in refs:
                 drop.add(c['id'])
+            elif (keep, c['ref_book']) in books:
+                print(f"  reference {c['id']}: {keep} holds another entry of {c['ref_book']} already; "
+                      f"{c['ref_id']} left on {c['soldier_id']}, merged away")
+                done['reference left'] += 1
+                continue
             else:
+                books.add((keep, c['ref_book']))
                 refs.add((keep, c['ref_book'], c['ref_id']))
                 c['soldier_id'] = keep
             done['reference'] += 1
@@ -457,6 +465,28 @@ def repoint(corr: list[dict], gone_to: dict[str, str], names: dict[str, str]) ->
     return done
 
 
+def strays(units, corr) -> dict[str, str]:
+    """Links and references that point at a record merged away since they were made (a second book's merges written
+    after them): its id -> the record it went into, following merges of merges. apply_corrections skips them, so the
+    entry shows nowhere."""
+    ids = {s['soldier_id'] for soldiers in units.values() for s in soldiers}
+    into = {c['merge_id']: c['soldier_id'] for c in corr if c['action'] == 'merge'}
+    out = {}
+    for c in corr:
+        for f in ('soldier_id', 'link_id'):
+            # (and a merge into a record that a later merge took away: its entry came along, the keeper holds it)
+            i = c.get(f) if c['action'] in ('link', 'reference', 'merge') else None
+            if not i or i in ids or int(i[:4]) in OSTALI_CODES:
+                continue
+            k, seen = i, set()
+            while k not in ids and k in into and k not in seen:
+                seen.add(k)
+                k = into[k]
+            if k in ids:
+                out[i] = k
+    return out
+
+
 def move_portraits(gone_to: dict[str, str]) -> int:
     """A portrait of a record merged away goes to the record it went into (merge_groups keeps groups with two out)."""
     path = ROOT / 'website' / 'app' / 'data' / 'portrait-index.json'
@@ -471,16 +501,20 @@ def move_portraits(gone_to: dict[str, str]) -> int:
             src = folder / f'{gone}{suffix}.jpg'
             if src.exists():
                 os.replace(src, folder / f'{keep}{suffix}.jpg')
-        e['f'] = e['f'].replace(gone, keep)
+        for k in ('f', 'v'):
+            if e.get(k):
+                e[k] = e[k].replace(gone, keep)
         index[keep] = e
         moved += 1
     for e in index.values():
         if e.get('same') in gone_to:
             e['same'] = gone_to[e['same']]
     if moved:
-        path.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
-        for name in ('wartimePortraits.ts', 'family.ts', 'portraits.ts'):
-            ts = ROOT / 'website' / 'app' / 'data' / name
+        # as extract_book_portraits.py writes it: sorted, a key a line, no indent
+        path.write_bytes(json.dumps(dict(sorted(index.items())), ensure_ascii=False, indent=0).encode('utf-8'))
+        # (and the hand-checked pairings in extract_book_portraits.py, so a re-run finds the record)
+        for ts in [ROOT / 'website' / 'app' / 'data' / n for n in ('wartimePortraits.ts', 'family.ts', 'portraits.ts')] + [
+                ROOT / 'scripts' / 'extract_book_portraits.py']:
             text = ts.read_text(encoding='utf-8')
             new = re.sub(r'\b\d{10}\b', lambda m: gone_to.get(m.group(0), m.group(0)), text)
             if new != text:
@@ -525,7 +559,7 @@ def write(auto, decisions, corr, units, start=None) -> None:
     if any(i in taken for i in ids):
         sys.exit(f'ids from {first} are taken: pass --start')
     out = [c for c in corr if c['id'] not in drop]
-    moved = repoint(out, gone_to, names)
+    moved = repoint(out, {**strays(units, out), **gone_to}, names)
     out += [{'id': i, **c} for i, c in zip(ids, new)]
     tmp = M.CORRECTIONS.with_suffix('.json.tmp')
     tmp.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -589,6 +623,8 @@ def main():
     QUEUE.write_text(json.dumps({'made': datetime.datetime.now().isoformat(timespec='seconds'), 'review': review,
                                  'check': checks}, ensure_ascii=False), encoding='utf-8')
     kinds = Counter(x[0] for x in auto)
+    print(f'links and references at records merged away since (pointed at their keeper on --write): '
+          f'{len(strays(units, corr))}')
     print(f"auto: {dict(kinds)}; review: {dict(Counter(x['kind'] for x in review))}; checks: {len(checks)}; "
           f"answers: {dict(Counter(d['answer'] for d in load_decisions().values()))}")
     for d in stale:

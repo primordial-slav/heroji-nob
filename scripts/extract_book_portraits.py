@@ -79,7 +79,7 @@ GALLERY = [
     # second pass (October 2026), over the records added since
     ('0112000079', 121, (0, 0, 1, 1), 'Milovan Đilas in Jajce, October 1943; the record: member of the Vrhovni štab, councillor of the second AVNOJ session'),
     ('0109000647', 3498, (0.08, 0.27, 0.55, 0.62), "Danilo Lekić with the 1. proleterska's flag, 1942; the record: zvani Španac, born 1913 in Kralje, narodni heroj"),
-    ('0001200477', 11661, (0.27, 0.08, 0.6, 0.45), 'vodnik of the 2. četa, 2. bataljon, from Kržanja, badly wounded at Mioč 24 December 1941 (caption and record)'),
+    ('0001006419', 11661, (0.27, 0.08, 0.6, 0.45), 'vodnik of the 2. četa, 2. bataljon, from Kržanja, badly wounded at Mioč 24 December 1941 (caption and record)'),
     ('0126000698', 14630, (0, 0, 1, 1), 'trgovac, born 1897 in Milićevci, organizer of the rising around Čačak (caption and record)'),
     ('0126000170', 14649, (0, 0, 1, 1), 'učiteljica, born 1920 in Prijevor, Ljubićka četa, killed by chetniks (caption and record)'),
     ('0126000328', 14654, (0, 0, 1, 1), 'zemljoradnik and poet, born 1913 in Preljina, political commissar in the Ljubićki bataljon (caption and record)'),
@@ -971,7 +971,7 @@ DALMATINCI = [
     ('0001008690', 170, (123.4, 142.8, 236.1, 268.5), 'the photo set in the entry "ORLIĆ Roka JERKO" (its text runs above and below it)'),
     ('0001008698', 170, (245.3, 490.1, 359.8, 617.2), 'the photo set in the entry "OROŠNJAK Đure ILIJA" (its text runs above and below it); born 1913 in Vučevica, as the record'),
     ('0001008725', 170, (368.4, 368.2, 481.1, 492.4), 'the photo set in the entry "OŠTRIĆ Marka PAŠKO" (its text runs above and below it)'),
-    ('0001400631', 171, (93.5, 143.8, 205.8, 269.4), 'the photo set in the entry "PALTRINJERI Jure JERKO" (its text runs above and below it)'),
+    ('0001008789', 171, (93.5, 143.8, 205.8, 269.4), 'the photo set in the entry "PALTRINJERI Jure JERKO" (its text runs above and below it)'),
     ('0001008882', 172, (128.2, 144.2, 231.6, 269.9), 'the photo set in the entry "PARAĆ Ivana JAKOV" (its text runs above and below it)'),
     ('0001008883', 172, (128.0, 555.1, 237.1, 680.8), 'the photo set in the entry "PARAĐINA Mitra MARKO" (its text runs above and below it)'),
     ('0001008958', 173, (338.0, 386.9, 450.0, 512.2), 'the photo set in the entry "PAVIČIĆ Ivana STJEPAN" (its text runs above and below it)'),
