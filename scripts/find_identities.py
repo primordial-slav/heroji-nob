@@ -204,6 +204,18 @@ def components(links: list[tuple[str, str]]) -> dict[str, str]:
     return {x: find(x) for x in parent}
 
 
+def list_order(s: dict, rank: dict) -> tuple:
+    """Which of a unit's records keeps its id when entries merge: the one of the list the unit names first."""
+    if s.get('pdf_file'):
+        r = rank.get(s['pdf_file'], 99)
+    else:
+        # a web page that is the unit's first list (1. dalmatinska, Mačvanski odred) keeps its records; a later
+        # one (3. krajiška's roll of 1942) gives way to the scanned books, so their records keep their ids
+        r = 200 if 'biblioteka.poreklo.rs' in (s.get('source_url') or '') else \
+            (-1 if s.get('source_url') and s['soldier_id'][4:6] == '00' else 99)
+    return r, F.list_index(s), s['soldier_id']
+
+
 def merged_lists(s: dict) -> set[str]:
     """The lists a record's entries come from: its own and those of the entries merged into it."""
     return {F.list_of(s)} | {F.list_of(o) for o in s.get('other_sources', ()) if not o.get('ref_book') and not o.get('unit_file')}
@@ -226,14 +238,7 @@ def merge_groups(sure: list[dict], rank: dict, refs_of: dict, portraits: set):
         groups[group_of[p['keep']['soldier_id']]].append(p)
 
     def order(s):
-        if s.get('pdf_file'):
-            r = rank.get(s['pdf_file'], 99)
-        else:
-            # a web page that is the unit's first list (1. dalmatinska, Mačvanski odred) keeps its records; a later
-            # one (3. krajiška's roll of 1942) gives way to the scanned books, so their records keep their ids
-            r = 200 if 'biblioteka.poreklo.rs' in (s.get('source_url') or '') else \
-                (-1 if s.get('source_url') and s['soldier_id'][4:6] == '00' else 99)
-        return r, F.list_index(s), s['soldier_id']
+        return list_order(s, rank)
     taken, tangled = [], []
     for pairs in groups.values():
         members = sorted({x for p in pairs for x in (p['keep']['soldier_id'], p['merge']['soldier_id'])},
@@ -353,8 +358,17 @@ def find_pairs(units, corr, decisions, log=print):
     # an answer 'same' not made yet is taken; one whose names don't fit the records any more is stale
     stale = []
     made = made_keys(corr)
+    into = {c['merge_id']: c['soldier_id'] for c in corr if c['action'] == 'merge'}
+
+    def home(i):
+        """The record that holds an entry now: its own, or the one it was merged into (merges of merges followed)."""
+        seen = set()
+        while i not in recs and i in into and i not in seen:
+            seen.add(i)
+            i = into[i]
+        return i
     for k, d in answered.items():
-        if d['answer'] != 'same' or k in made:
+        if d['answer'] != 'same' or k in made or (d['kind'] == 'merge' and home(d['a']) == home(d['b'])):
             continue
         a_now = recs.get(d['a'], {}).get('full_name')
         if d['kind'] == 'reference':
@@ -368,7 +382,32 @@ def find_pairs(units, corr, decisions, log=print):
             continue
         auto.append((d['kind'], d['a'], d['b'], d.get('book', ''), f"answered 'same' by {d['by']} ({d['date']})"
                      + (f": {d['note']}" if d.get('note') else ''), [], d['b_name']))
-    return auto, review, stale
+    return group_merges(auto, recs), review, stale
+
+
+def group_merges(auto: list[tuple], recs: dict) -> list[tuple]:
+    """Merges that share a record are one man in several entries: answers 'same' on two pairs of a man printed in three
+    lists (Živković Ivana Jere: the roster, Borci Sutjeske, Dalmatinci), or twice in one list and twice in another
+    (Rašeta Milana Nikola). The whole group goes into one record, the one of the list the unit names first; else the
+    second merge of a record already merged finds nothing."""
+    merges = [x for x in auto if x[0] == 'merge' and x[1] in recs and x[2] in recs]
+    group_of = components([(x[1], x[2]) for x in merges])
+    groups = defaultdict(list)
+    for x in merges:
+        groups[group_of[x[1]]].append(x)
+    out = [x for x in auto if not (x[0] == 'merge' and x[1] in recs and x[2] in recs)]
+    for xs in groups.values():
+        keepers, gone = {x[1] for x in xs}, [x[2] for x in xs]
+        if len(keepers) == 1 and len(set(gone)) == len(gone) and not keepers & set(gone):
+            out += xs                                                   # one record and the entries merged into it
+            continue
+        ids = {i for x in xs for i in (x[1], x[2])}
+        rank = F.list_rank(int(next(iter(ids))[:4]))
+        members = sorted((recs[i] for i in ids), key=lambda s: list_order(s, rank))
+        why = '; '.join(sorted({x[4] for x in xs}))
+        out += [('merge', members[0]['soldier_id'], s['soldier_id'], '', why + f' (one man in {len(members)} entries)',
+                 sorted({a for x in xs for a in x[5]}), s.get('full_name')) for s in members[1:]]
+    return out
 
 
 def made_keys(corr) -> dict[str, dict]:
