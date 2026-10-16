@@ -863,10 +863,10 @@
   },
   {
     "last_name": "Baso",
-    "middle_name": "Pa",
-    "first_name": "J E Pal",
-    "fathers_name": "Pa",
-    "full_name": "Baso Pa J E Pal",
+    "middle_name": "Paje",
+    "first_name": "Pal",
+    "fathers_name": "Paja",
+    "full_name": "Baso Paje Pal",
     "additional_info": "rođ. 1921, Ivanovo (Pančevo), borac, pog. 12. 11. 1944, Batina.",
     "birth_year": "1921",
     "birth_place": "Ivanovo (Pančevo)",
@@ -16192,6 +16192,17 @@
     "pdf_x_end": 569.9,
     "other_sources": [
       {
+        "soldier_id": "0111011343",
+        "name": "Tajdić Slobodan",
+        "additional_info": "1927, Banatsko Novo Selo, Pančevo, borac, poginuo 12. 11. 1944. na Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 63,
+        "pdf_x": 75.1,
+        "pdf_y": 252.5,
+        "pdf_x_end": 355.2,
+        "pdf_y_end": 269.4
+      },
+      {
         "soldier_id": "0075002137",
         "name": "Tajdič Slobodan",
         "additional_info": "iz Ban. Novog Sela, 1927, poginuo kod Batine.",
@@ -16202,20 +16213,9 @@
         "pdf_x_end": 393.9,
         "pdf_y_end": 397.6,
         "unit_file": "12-vojvodjanska-soldiers.json"
-      },
-      {
-        "soldier_id": "0111011343",
-        "name": "Tajdić Slobodan",
-        "additional_info": "1927, Banatsko Novo Selo, Pančevo, borac, poginuo 12. 11. 1944. na Batini.",
-        "pdf_file": "51-divizija-savic.pdf",
-        "pdf_page": 63,
-        "pdf_x": 75.1,
-        "pdf_y": 252.5,
-        "pdf_x_end": 355.2,
-        "pdf_y_end": 269.4,
-        "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "unit_detail": "12. vojvođanska brigada"
   },
   {
     "last_name": "Tajegić",
@@ -56663,54 +56663,6 @@
     "death_place": "Batina",
     "rank": "borac",
     "pdf_x_end": 344.8
-  },
-  {
-    "last_name": "Tajdić",
-    "middle_name": "",
-    "first_name": "Slobodan",
-    "fathers_name": "",
-    "full_name": "Tajdić Slobodan",
-    "additional_info": "1927, Banatsko Novo Selo, Pančevo, borac, poginuo 12. 11. 1944. na Batini.",
-    "birth_year": "1927",
-    "unit_detail": "12. vojvođanska brigada",
-    "pdf_page": 63,
-    "pdf_y": 252.5,
-    "pdf_x": 75.1,
-    "pdf_y_end": 269.4,
-    "pdf_file": "51-divizija-savic.pdf",
-    "soldier_id": "0111011343",
-    "birth_place": "Banatsko Novo Selo, Pančevo",
-    "death_type": "poginuo",
-    "death_date": "12. 11. 1944",
-    "death_place": "Batina",
-    "rank": "borac",
-    "pdf_x_end": 355.2,
-    "other_sources": [
-      {
-        "soldier_id": "0075002137",
-        "name": "Tajdič Slobodan",
-        "additional_info": "iz Ban. Novog Sela, 1927, poginuo kod Batine.",
-        "pdf_file": "12-vojvodjanska.pdf",
-        "pdf_page": 50,
-        "pdf_x": 112.7,
-        "pdf_y": 389.1,
-        "pdf_x_end": 393.9,
-        "pdf_y_end": 397.6,
-        "unit_file": "12-vojvodjanska-soldiers.json"
-      },
-      {
-        "soldier_id": "0111000520",
-        "name": "Tajdić Slobodan",
-        "additional_info": "rođ. 1927, Bač. Novo Selo (Pančevo), borac, pog. 12. 11. 1944, Batina.",
-        "pdf_file": "51-divizija.pdf",
-        "pdf_page": 20,
-        "pdf_x": 293.1,
-        "pdf_y": 650.6,
-        "pdf_x_end": 569.9,
-        "pdf_y_end": 669.6,
-        "unit_file": "51-divizija-soldiers.json"
-      }
-    ]
   },
   {
     "last_name": "Tajdić",

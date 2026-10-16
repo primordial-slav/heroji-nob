@@ -1153266,14 +1153266,6 @@
     "reason": "Same soldier in 12. Vojvođanska and 51. divizija; same birth year, birthplace, death place"
   },
   {
-    "id": 137839,
-    "action": "link",
-    "soldier_id": "0075002137",
-    "link_id": "0111011343",
-    "link_name": "Tajdić Slobodan",
-    "reason": "Same soldier in 12. Vojvođanska and 51. divizija; same birth year, birthplace, death place, death year"
-  },
-  {
     "id": 137840,
     "action": "link",
     "soldier_id": "0075002146",
@@ -1422472,14 +1422464,6 @@
     "reason": "Same soldier in 3. Krajiška Proleterska and Mosorski odred; same father, birth year"
   },
   {
-    "id": 225366,
-    "action": "link",
-    "soldier_id": "0023000511",
-    "link_id": "0049010324",
-    "link_name": "Ivanović Todora Vojo",
-    "reason": "Same soldier in 19. Birčanska and 15. Majevička; same father, birth year, birthplace"
-  },
-  {
     "id": 225367,
     "action": "link",
     "soldier_id": "0024000362",
@@ -1516729,9 +1516713,9 @@
     "action": "edit",
     "soldier_id": "0026000186",
     "fields": {
-      "first_name": "Pajko"
+      "first_name": "Rajko"
     },
-    "reason": "the page prints ДУКИЋ В. ПАЈКО; the parser had read the name back as Rajko. As printed. Site audit 2026-10-14 (user: \"do 1\")"
+    "reason": "the page prints ДУКИЋ В. ПАЈКО, a misprint: his name is Rajko (user, 2026-10-16)"
   },
   {
     "id": 140225,
@@ -1574652,5 +1574636,3682 @@
       "death_place": "Oborovo, Ivanić-Grad"
     },
     "reason": "Place of death: \"poginuo u selu Oborovo, Ivanič-Grad\" (the extractor read none); Bitka kod Oborova has him fall there on 29 March 1944"
+  },
+  {
+    "id": 159056,
+    "action": "reference",
+    "soldier_id": "0048000364",
+    "ref_book": "zbornik-heroja-1957",
+    "ref_id": "9001000443",
+    "ref_name": "Kecman Jova Pero (Mukonja)",
+    "reason": "Kecman Jove Pero (Mukonja) is the Kecman Jova Pero (Mukonja) of the book; born 1921 in Bukovača, Bosanski Petrovac, podoficir, narodni heroj proclaimed 27 November 1953 in both hero books; the 1957 pass ran before his records came to units 48 and 163"
+  },
+  {
+    "id": 159057,
+    "action": "reference",
+    "soldier_id": "0163000104",
+    "ref_book": "zbornik-heroja-1957",
+    "ref_id": "9001000443",
+    "ref_name": "Kecman Jova Pero (Mukonja)",
+    "reason": "Kecman Jove Pero (Mukonja) is the Kecman Jova Pero (Mukonja) of the book; born 1921 in Bukovača, Bosanski Petrovac, podoficir, narodni heroj proclaimed 27 November 1953 in both hero books; the 1957 pass ran before his records came to units 48 and 163"
+  },
+  {
+    "id": 159058,
+    "action": "edit",
+    "soldier_id": "0080000010",
+    "fields": {
+      "last_name": "Aleksić",
+      "middle_name": "Čedomira",
+      "fathers_name": "Čedomir",
+      "first_name": "Dušan",
+      "additional_info": "borac, rođen 1910. u Banji, Aranđelovac, zemljoradnik, Srbin, član SKOJ-a od 1942, u brigadi od 19. 9. 1944. do 20. 9. 1944. potom radio na terenu. Živi u Aranđelovcu."
+    },
+    "reason": "21. srpska: the head \"ALEKSIĆ Čedomira Dušan\" read whole; the name pattern had cut the surname in two (\"Aleks Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159059,
+    "action": "edit",
+    "soldier_id": "0080000016",
+    "fields": {
+      "last_name": "Anić",
+      "middle_name": "Aleksandra",
+      "fathers_name": "Aleksandar",
+      "first_name": "",
+      "additional_info": "majka Zorka; borac, rođen 1920. u Orašcu, Aranđelovac, zemljoradnik, Srbin, u brigadi od 5. 10. 1944, poginuo 3. 1. 1945. u Komletincima."
+    },
+    "reason": "21. srpska: the head \"ANIĆ, Aleksaidra i Zorke\" read whole; the name pattern had cut the surname in two (\"An Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159060,
+    "action": "edit",
+    "soldier_id": "0080000029",
+    "fields": {
+      "last_name": "Antonijević",
+      "middle_name": "Dragića",
+      "fathers_name": "Dragić",
+      "first_name": "Desimir",
+      "additional_info": "majka Mirka; borac u 2. bataljonu, rođen 1921. u Liplju, Ljig, zemljoradnik, Srbin, u brigadi od septembra 1944. do 13. 1. 1945, potom u 31. srpskoj brigadi. Živi u J1iplju."
+    },
+    "reason": "21. srpska: the head \"ANTONIJEVIĆ, Dragića i Mirke\", DESIMIR\" read whole; the name pattern had cut the surname in two (\"Antonijev Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159061,
+    "action": "edit",
+    "soldier_id": "0080000032",
+    "fields": {
+      "last_name": "Anđelić",
+      "middle_name": "Mirka",
+      "fathers_name": "Mirko",
+      "first_name": "Života",
+      "additional_info": "borac, rođen 1905. u Bukoviku, Aranđelovac. zemljoradnik, Srbin, u 1. šumadijskom NOP odredu od 27. 9. 1943, u brigadi od 22. 12. 1943. do 13. 1. 1945, poginuo 13. 3. 1945. u 21, diviziji."
+    },
+    "reason": "21. srpska: the head \"ANĐELIĆ Mirka Života\" read whole; the name pattern had cut the surname in two (\"Anđel Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159062,
+    "action": "edit",
+    "soldier_id": "0080000051",
+    "fields": {
+      "last_name": "Avramović",
+      "middle_name": "Vlajka",
+      "fathers_name": "Vlajko",
+      "first_name": "Dragoslav",
+      "additional_info": "majka Rosa; borac, rođen 16. 1. 1923. u Duboni, Mladenovac, zemljoradnik, Srbin, član SKOJ-a, u brigadi od 28. 9. 1944, poginuo 22. 12. 1944. iepred Otoka."
+    },
+    "reason": "21. srpska: the head \"AVRAMOVIĆ, Vlajka i Rose, Dragoslav\" read whole; the name pattern had cut the surname in two (\"Avramov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159063,
+    "action": "edit",
+    "soldier_id": "0080000059",
+    "fields": {
+      "last_name": "Bakić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Milan",
+      "additional_info": "po zapisima, borac, rođen 1921. u Vrgin Mostu, činovnik, 10. 5. 1944. bio u brigadi."
+    },
+    "reason": "21. srpska: the head \"BAKIĆ Milan\" read whole; the name pattern had cut the surname in two (\"Bak Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159064,
+    "action": "edit",
+    "soldier_id": "0080000073",
+    "fields": {
+      "last_name": "Besara",
+      "middle_name": "Đorđa",
+      "fathers_name": "Đorđe",
+      "first_name": "Žarko",
+      "additional_info": "dr.; majka Milka; načelnik saniteta, rođen 15. 7. 1920. u Livnu, podoficir jugoslovenske vojske, Srbin, član SKOJ-a od novembra 1943, a KPJ od maja 1944, pobegao iz nemačkog zarobljeništva u Beograd, u 1. šumadijski NOP odred stupio 27. 11. 1943, u brigadi od 22. 12. 1943. do 13. 1. 1945, potom pomoćnik načelnika saniteta 21. divizije. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"BESARA. Đorća i Milke, dr ŽARKO\" read whole; the name pattern had cut the surname in two (\"Besa Ra\") and left the given name in the bio; \"u LivpTGTTbdoficir jugosloveneke voJSke\" (the re-typeset page garbles it too) is \"u Livnu, podoficir jugoslovenske vojske\""
+  },
+  {
+    "id": 159065,
+    "action": "edit",
+    "soldier_id": "0080000074",
+    "fields": {
+      "last_name": "Besara",
+      "middle_name": "Miodraga",
+      "fathers_name": "Miodrag",
+      "first_name": "Nada",
+      "additional_info": "dr.; rođ. Nedeljković; majka Magdalena; upravnik ćrigadne bolnice. rođsna 28. 5. 1922, u inđiji, Stud{!N'№inja, Srpkinja član KPJ od 20. 10. 1944, u brigadi od avgusta 1944. do 13. 1. 1945, potom u bolnici. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"BESARA. rođ. NEDELJKOVIĐ Miodraga i Magdalene, dr NADA\" read whole; the name pattern had cut the surname in two (\"Besa Ra\") and left the given name in the bio"
+  },
+  {
+    "id": 159066,
+    "action": "edit",
+    "soldier_id": "0080000076",
+    "fields": {
+      "last_name": "Blagojević",
+      "middle_name": "Ludomila",
+      "fathers_name": "Ludomil",
+      "first_name": "Sonja",
+      "additional_info": "dr.; rođ. Rupenšek; majka Ana; borac, rođena 17. 6. 1922. u Sloveniji, student, Slovenka, član KPJ od maja 1945, u NOP-u Beograda od J\"ula 1943, u brigadi od avgusta 1944, posle oslobođeša Beograda radila u vojnoj bolnici. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"BLAGOJEVIĆ, rođ. RUPENŠEK, Ludomila i Ane, dr SONJA\" read whole; the name pattern had cut the surname in two (\"Blagojev Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159067,
+    "action": "edit",
+    "soldier_id": "0080000086",
+    "fields": {
+      "last_name": "Bogdanović",
+      "middle_name": "Lazara",
+      "fathers_name": "Lazar",
+      "first_name": "Živomir",
+      "additional_info": "majka Jana; zvani Ljutica; borac, rođen 1922. u Bukoviku, Aranđelovac, zeml»oradnik, Srbin, u 1. šumadijski NOP odred stupio maja, a u brigadu 22. 12. 1943, poginuo 7. 8. 1944. u Bukoviku."
+    },
+    "reason": "21. srpska: the head \"BOGDANOVIĆ, Lazara i Jane, Živomir Ljutica\" read whole; the name pattern had cut the surname in two (\"Bogdanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159068,
+    "action": "edit",
+    "soldier_id": "0080000111",
+    "fields": {
+      "last_name": "Bušić",
+      "middle_name": "Dimitrija",
+      "fathers_name": "Dimitrije",
+      "first_name": "Veselin",
+      "additional_info": "majka Stanojka; borac prateće čete brigade, rođen 1922. u Ivanovcima, Ljig, zemljoradnik, Srbin, član SKOJ-a od 1944, u brigadi od 7. 10. 1944. do 13. 1. 1945, poginuo 12. 4. 1945. u pratećoj četi 31. srpske brigade, ispred Vukovara."
+    },
+    "reason": "21. srpska: the head \"BUŠIĆ, Dimitrij.a i Stanojke, VESELIN\" read whole; the name pattern had cut the surname in two (\"Buš Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159069,
+    "action": "edit",
+    "soldier_id": "0080000126",
+    "fields": {
+      "last_name": "Daniti",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Zora",
+      "additional_info": "udata Pavlović; zvana Luna; rukovodilac SKOJ-a u brigadi, rođena 1924. u Sarajevu, đak, Jevrejka, član SKOJ-a od 1942, KPJ od 1943, u Romanijski NOP odred stupila 1941, potom u 6. (beogradski) bataljon 1. proleterske brigade, a od 3. 10. 1944. u brigadi, potom u 21. diviziji. Umrla 6. 7. 1979. u Beogradu."
+    },
+    "reason": "21. srpska: the head \"DANITI, udata PAVLOVIĆ, ZORA Luna\" read whole; the name pattern had cut the surname in two (\"Dani Ti\") and left the given name in the bio"
+  },
+  {
+    "id": 159070,
+    "action": "edit",
+    "soldier_id": "0080000128",
+    "fields": {
+      "last_name": "Daničić",
+      "middle_name": "Milorada",
+      "fathers_name": "Milorad",
+      "first_name": "Milan",
+      "additional_info": "majka Saja; borac, rođen 1923. u Gukošima, LJIG, zemljoradnik, Srbin, u brigadi od 7. 10. 1944, poginuo 22. 12. 1944. ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"DANIČIĆ, Milorada i Saje, Milan\" read whole; the name pattern had cut the surname in two (\"Danič Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159071,
+    "action": "edit",
+    "soldier_id": "0080000154",
+    "fields": {
+      "last_name": "Dolamić",
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan",
+      "first_name": "Milina",
+      "additional_info": "rođ. Bogosavljević; bolničarka, rođena 1926. u Baćevcu, Barajevo, krojačica, Srpkinja, član SKOJ-a od 1943, u Kosmajski NOP odred stupila 1943, a 10. 5. 1944. u brigadu. Živi u Tešnju."
+    },
+    "reason": "21. srpska: the head \"DOLAMIĆ, rođ. BOGOSAVLJEVIĆ, Stevana MILINA\" read whole; the name pattern had cut the surname in two (\"Dolam Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159072,
+    "action": "edit",
+    "soldier_id": "0080000156",
+    "fields": {
+      "last_name": "Draganić",
+      "middle_name": "Lj.",
+      "fathers_name": "",
+      "first_name": "Kata",
+      "additional_info": "bolničarka, rođena 1928. u Beogradu, učenica, poginula 24. 12. 1944. ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"DRAGANIĆ Lj. KATA\" read whole; the name pattern had cut the surname in two (\"Dragan Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159073,
+    "action": "edit",
+    "soldier_id": "0080000165",
+    "fields": {
+      "last_name": "Dugalić",
+      "middle_name": "Svetislava",
+      "fathers_name": "Svetislav",
+      "first_name": "Zaga",
+      "additional_info": "dr.; majka Darinka; zamenik političkog komesara čete, rođena 2. 8. 1920. u Negotino, Makedonija, učenica, Srpkinja, član SKOJ-a od 1939, KPJ od 1941, nosilac Partizanske spomenice od 1941, borac u Posavsko--tamnavskom NOP odredu 1941, potom zatvorenik Banjičkog logora, u brigadi od oktobra 1944. do 13. 1. 1945, potom zamenik političkog komesara 21. medicinskog centra. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"DUGALIĆ, Svetislava i Darinke, dr ZAGA\" read whole; the name pattern had cut the surname in two (\"Dugal Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159074,
+    "action": "edit",
+    "soldier_id": "0080000253",
+    "fields": {
+      "last_name": "Ivanović",
+      "middle_name": "Miloja",
+      "fathers_name": "Miloje",
+      "first_name": "Petar",
+      "additional_info": "majka Miroslava; zvani Pera; politički komesar čete, rođen 1919. u Venčanima, Aranđelovac, zemljoradnik, Srbin, član KPJ, u 1. gcumadijski NOP odred stupio 25. 7. 1941, gvosle prekida u 1942. ponovo stupio u isti odred, u brigadi od 22. 12. 1943, poginuo 16. 5. 1944. u Rudovcima, Lazarevac."
+    },
+    "reason": "21. srpska: the head \"IVANOVIĆ, Miloj,a i Miroslave, PETAR Pera\" read whole; the name pattern had cut the surname in two (\"Ivanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159075,
+    "action": "edit",
+    "soldier_id": "0080000324",
+    "fields": {
+      "last_name": "Joksimović",
+      "middle_name": "Milovana",
+      "fathers_name": "Milovan",
+      "first_name": "Grozdana",
+      "additional_info": "majka Milena; borac 2. čete 1. bataljona, rođena 13. 11. 1923. u Orašcu, Aranđelovac, domaćica, Srpkinja, u 1. šumadijski NOP odred stupila 6. 9. 1943, a u brigadu 22. 12. 1943, zarobili je ranjenu četnici i streljali 17. 3. 1944. u Bosuti. __ JOKSIMOVIĆ, Ljubomira i Radojke, DRAGOLJUB, borac, rođen 1925. u Orašcu, Aranđelovac, zemljoradnik, Srbin, u brigadi od 24. 9. 1944. do 13. 1. 1945, poginuo 24. 4. 1945. u 21. diviziji."
+    },
+    "reason": "21. srpska: the head \"JOKSIMOVIĆ, Milovana i Milene, Grozdana\" read whole; the name pattern had cut the surname in two (\"Joksimov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159076,
+    "action": "edit",
+    "soldier_id": "0080000325",
+    "fields": {
+      "last_name": "Joksimović",
+      "middle_name": "Vladimira",
+      "fathers_name": "Vladimir",
+      "first_name": "Nadežda",
+      "additional_info": "rođ. Dobričić; majka Zorka; zvana Nada; borac, rođena 5. 3. 1921. u Stojniku, Aranđelovac, domaćica, Srpkiša, član KPJ od 1943, nosilac Partizanske spomenice od 1941, u 1. šumadijskom NOP odredu bila 1941, u brigadi od 22. 12. 1943, teško ranjena, zarobljeia i oterana u logor 14. 3. 1944.'u Bukoviku. Umrla 17. 5. 1954. u Aranđelovcu."
+    },
+    "reason": "21. srpska: the head \"JOKSIMOVIĆ, rođena DOBRIČIĆ, Vladimira i Zorke. NADEŽDA Nada\" read whole; the name pattern had cut the surname in two (\"Joksimov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159077,
+    "action": "edit",
+    "soldier_id": "0080000337",
+    "fields": {
+      "last_name": "Josipović",
+      "middle_name": "Ljubomira",
+      "fathers_name": "Ljubomir",
+      "first_name": "Momčilo",
+      "additional_info": "majka Stanica; borac, rođen 1922. u Dragolju, Gornji Milanovac, zemljoradnik, Srbin, u brigadi od 7. 10. 1944. do 13. 1, 1945, potom u 21. diviziji. Živi u Dragolju."
+    },
+    "reason": "21. srpska: the head \"JOSIPOVIĆ, JBubomira i Stanice, MOMČILO\" read whole; the name pattern had cut the surname in two (\"Josipović Jb\") and left the given name in the bio"
+  },
+  {
+    "id": 159078,
+    "action": "edit",
+    "soldier_id": "0080000340",
+    "fields": {
+      "last_name": "Jovanović",
+      "middle_name": "Tihomira",
+      "fathers_name": "Tihomir",
+      "first_name": "Dobrivoje",
+      "additional_info": "ili Dražić; majka Poleksija; zvani Doša; borac, rođen 1907. u Bukoviku, Aranđelovac, radnik, Srbin, član KPJ od 1943, u 1. šumadijskom NOP odredu od 1942, u brigadi od 22. 12. 1943. do 20. 9. 1944, potom radio na terenu. Umro 1972, u Bukoviku."
+    },
+    "reason": "21. srpska: the head \"JOVANOVIĆ (Dražić), Tihomira i Poleksije, DOVRIVOJE Doša\" read whole; the name pattern had cut the surname in two (\"Jovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159079,
+    "action": "edit",
+    "soldier_id": "0080000341",
+    "fields": {
+      "last_name": "Jovanović",
+      "middle_name": "Đorđa",
+      "fathers_name": "Đorđe",
+      "first_name": "Mirjana",
+      "additional_info": "rođ. Zrnić; majka Smilja; zvana Mileva; zamenik političkog komesara čete, rođena 14. 12. 1923. u Zemunu, đak, Srpkinja, član SKOJ-a od 1940, KPJ od juna 1944, učesnik u NOP-u Zemuna, u 1. gcumadijskom NOP odredu od 14. 4. 1943, u brigadi o,d 22. 12. 1943. do 3. 10. 1944, potom u 31. srpskoj brigadi rukovodilac SKOJ-a u bataljonu. Živi u Zemunu."
+    },
+    "reason": "21. srpska: the head \"JOVANOVIĆ, rođ. ZRNIĆ, Đorđa i Smilje, MIRJANA Mileva\" read whole; the name pattern had cut the surname in two (\"Jovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159080,
+    "action": "edit",
+    "soldier_id": "0080000342",
+    "fields": {
+      "last_name": "Jovanović",
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan",
+      "first_name": "Petar",
+      "additional_info": "dr.; majka Krunija; zvani Sekula; zamenik političkog komesara 4. bataljona, rođen 19. 10. 1920. u Šimanovcima, Sremska Mitrovica, učitelj, Srbin, član SKOJ-a od 1941, KPJ od 20. 10. 1943, nosilac Partizanske spomenice od 1941, u Mačvanskoj četi od 20. 10. 1943, u Posavsko-tamnavskom NOP odredu od 1. 4. 1944, u brigadi od 25. 8. 1944. do 3. 10. 1944. potom u 31. srpskoj brigadi politički komeoar bataljona. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"JOVANOVIĆ, Stevana i Krunije, dr PETAR Sekula\" read whole; the name pattern had cut the surname in two (\"Jovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159081,
+    "action": "edit",
+    "soldier_id": "0080000343",
+    "fields": {
+      "last_name": "Jovanović",
+      "middle_name": "Mihaila",
+      "fathers_name": "Mihailo",
+      "first_name": "Rajna",
+      "additional_info": "rođ. Švabić; majka Radmila; borac, rođena 1929. u Misači, Aranđelovac, domaćica, Srpkinja, u NOP-u od jula 1943, u brigadi od juna 1944. do 13. 1. 1945, cotom u Izviđačkoj četi 31. srpske brigade. Živi u Misači."
+    },
+    "reason": "21. srpska: the head \"JOVANOVIĆ, rođ. ŠVABIĆ, Mihaila i Radmile, RAJNA\" read whole; the name pattern had cut the surname in two (\"Jovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159082,
+    "action": "edit",
+    "soldier_id": "0080000406",
+    "fields": {
+      "last_name": "",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Kolja",
+      "additional_info": "po sećanju, poručnik Crvene armije, rođen u SSSR-u, inženjer, Rus, pobegao iz zarobljeničkog logora u Rakovici i 27. 4. 1944. stupio u brigadu, poginuo u Orašcu (Preseka) 14. 9. 1944. kao nišandžija na mitraljezu. U đonu pete na cipeli sačuvao člansku knjižicu SKP (b) do dolaska u brigadu."
+    },
+    "reason": "21. srpska: the head \"KOLJA\" read whole; the name pattern had cut the surname in two (\"Kol Ja\") and left the given name in the bio"
+  },
+  {
+    "id": 159083,
+    "action": "edit",
+    "soldier_id": "0080000413",
+    "fields": {
+      "last_name": "Kostić",
+      "middle_name": "Svetislava",
+      "fathers_name": "Svetislav",
+      "first_name": "Dobrila",
+      "additional_info": "rođ. Stojković; majka Mara; borac, rođena 1. 3. 1911. u Vršcu, učiteljica, Srpkinja, član KPJ od 1945, u brigadi od aprila do kraja maja 1944, kada se vratila u Beograd. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"KOSTIĆ, rođ. STOJKOVIĆ, Svetislava i Mare, DOBRILA\" read whole; the name pattern had cut the surname in two (\"Kost Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159084,
+    "action": "edit",
+    "soldier_id": "0080000424",
+    "fields": {
+      "last_name": "Krajinović",
+      "middle_name": "Đorđa",
+      "fathers_name": "Đorđe",
+      "first_name": "Slobodan",
+      "additional_info": "dr.; majka Zorka; zvani Danko; medicinar 1. bataljona, rođen 23. 7. 1921. u Velikom Gradištu, student, Srbin, član SKOJ-a od januara 1945, KPJ od 1949, u brigadi od 4. 10. 1944. do 13. 1. 1945, potom u 21. medicinskom centru. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"KRAJINOVIĆ, Đorđa i Zorke, dr SLOBODAN Danko\" read whole; the name pattern had cut the surname in two (\"Krajinov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159085,
+    "action": "edit",
+    "soldier_id": "0080000484",
+    "fields": {
+      "last_name": "Lončar",
+      "middle_name": "Milivoja",
+      "fathers_name": "Milivoje",
+      "first_name": "Kata",
+      "additional_info": "rođ. Župunski; majka Leposava; sanitetski referent 3. bataljona, rođena 15. 2. 1924. u M!artincima, Smederevska Mitrovica, domaćica, Srpkinja, član SKOJ-a od oktobra 1943, KPJ od 1. 12. 1944, u NOP-u od 1942, u Posavsko-tamnavskom NOP odredu od maja 1944, u brigadi od 25. 8. 1944. do 13. 1. 1945, potom u 21. diviziji. Živi u Pančevu."
+    },
+    "reason": "21. srpska: the head \"LONČAR, rođ. ŽUPUNSKI, Milivoja i Leposave, KATA\" read whole; the name pattern had cut the surname in two (\"Lonč Ar\") and left the given name in the bio"
+  },
+  {
+    "id": 159086,
+    "action": "edit",
+    "soldier_id": "0080000513",
+    "fields": {
+      "last_name": "Marić",
+      "middle_name": "Milana",
+      "fathers_name": "Milan",
+      "first_name": "Petar",
+      "additional_info": "ing.; majka Bosiljka; zvani Jastreb; rukovodilac SKOJ-a u brigadi, rođen 5. 7. 1924. u Bjelovaru, izbeglica u Beogradu, đak, Srbin, član SKOJ-a od marta, KPJ od juna 1943, učesnik u NOP-u Beograda od 1942, u Kosmajskom NOP odredu od 25. 2. 1943, član OK SKOJ-a za Mladenovac, od juna do 25. 10. 1944. rukovodilac SKOJ-a u brigadi, potom politički radnik u Beogradu. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"MARIĆ, Milana i Bosiljke, ing. PETAR Jastreb\" read whole; the name pattern had cut the surname in two (\"Mar Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159087,
+    "action": "edit",
+    "soldier_id": "0080000514",
+    "fields": {
+      "last_name": "Marinković",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Zagorka",
+      "additional_info": "rođ. Luković; majka Ljubinka; borac, rođena 1920. u Bosuti, živela u Garašima i Venčanima, Aranđelovac, domaćica, Srpkinja, u 1. šumadijski NOP odred stupila 1943, a u brigadu 22. 12. 1943, poginula 6. 7. 1944. u Malom Orašju."
+    },
+    "reason": "21. srpska: the head \"MARINKOVIĆ, rođ. LUKOVIĆ Ljubinke ZAGORKA\" read whole; the name pattern had cut the surname in two (\"Marinkov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159088,
+    "action": "edit",
+    "soldier_id": "0080000527",
+    "fields": {
+      "last_name": "Marković",
+      "middle_name": "Milorada",
+      "fathers_name": "Milorad",
+      "first_name": "Milan",
+      "additional_info": "majka Živana; zvani Dolfus; rukovodilac SKOJ-a u 1. bataljonu, rođen 16. 9. 1921. u Beogradu, student, Srbin, član SKOJ-a od 1939. a KPJ od 1941, učesnik u NOP Beograda, u 1942. tri puta hapšen, zatvoren u logor na Banjici i prebačen u logor Smederevska Palanka, pobegao 3. 9. 1944. sprovodnicima, iskočio iz voza u Đurincima, stupio u brigadu i ostao u njoj do 13. 1. 1945, poginuo 11. 5. 1945. u Podsredi (Slovenija), kao rukovodilac SKOJ-a 21. artiljerijske brigade."
+    },
+    "reason": "21. srpska: the head \"MARKOVIĆ, Milorada i Živane. MILAN Dolfus\" read whole; the name pattern had cut the surname in two (\"Markov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159089,
+    "action": "edit",
+    "soldier_id": "0080000588",
+    "fields": {
+      "last_name": "Mijailović",
+      "middle_name": "Mihaila",
+      "fathers_name": "Mihailo",
+      "first_name": "Radoje",
+      "additional_info": "ili Radovanović; majka Stanica; borac, rođen 1921. u Pinosavi, Voždovac, zemljoradnik, Srbin, u brigadi od septembra 1944, poginuo 22. 12. 1944. ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"MIJAILOVIĆ (RADOVANOVIĆ), Mihaila i Stanice, RADOJE\" read whole; the name pattern had cut the surname in two (\"Mijailov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159090,
+    "action": "edit",
+    "soldier_id": "0080000589",
+    "fields": {
+      "last_name": "Mijailović",
+      "middle_name": "Svetislava",
+      "fathers_name": "Svetislav",
+      "first_name": "Miloje",
+      "additional_info": "ili Babić; borac, rođen 1920. u Velikoj Ivanči, Mladenovac, zemljordnik, Srbin, u NOP-u od 1943, u brigadi od 10. 5. 1944. do 13. 1. 1945. potom u 21. diviziji. Živi u Velikoj Ivanči."
+    },
+    "reason": "21. srpska: the head \"MIJAILOVIĆ (BABIĆ) Svetislava MILOJE\" read whole; the name pattern had cut the surname in two (\"Mijailov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159091,
+    "action": "edit",
+    "soldier_id": "0080000660",
+    "fields": {
+      "last_name": "Milojković",
+      "middle_name": "Radomira",
+      "fathers_name": "Radomir",
+      "first_name": "Milisav",
+      "additional_info": "majka Perka; zvani Miša; komandir čete, rođen 17. 4. 1923. u Dražnju, Grocka, opančar, Srbin, član KPJ od 1944, u NOP-u od 1942, u Kosmajskom NOP odredu od avgusta 1943, u brigadi od 22. 12. 1943. do 3. 10. 1944, potom u 31. srpskoj brigadi. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"MILOJKOVIĆ, Radomira ,i Perke, MILISAV Miša\" read whole; the name pattern had cut the surname in two (\"Milojkov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159092,
+    "action": "edit",
+    "soldier_id": "0080000665",
+    "fields": {
+      "last_name": "Milovanović",
+      "middle_name": "Živojina",
+      "fathers_name": "Živojin",
+      "first_name": "Sreten",
+      "additional_info": "ili Savić; majka Sava; borac, rođen 4. 8. 1920. u Orašcu, Aranđelovac, zemljoradnik, Srbin, u brigadi od maja 1944. do 13. 1. 1945, potom u 21. diviziji. Poginuo nesrećnim slučajem 29. 7. 1966. u Orašcu."
+    },
+    "reason": "21. srpska: the head \"MILOVANOVIĆ (SAVIĆ), Živojina i Save, SRETEN\" read whole; the name pattern had cut the surname in two (\"Milovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159093,
+    "action": "edit",
+    "soldier_id": "0080000682",
+    "fields": {
+      "last_name": "Milošević",
+      "middle_name": "Svetislava",
+      "fathers_name": "Svetislav",
+      "first_name": "Radmila",
+      "additional_info": "majka Milica; borac, rođena 1925. u Bukoviku, Aranđelovac, domaćica, Srpkiša, u brigadi od 19. 9. 1944, poginula 14. 12. 1944. ispred Grabova."
+    },
+    "reason": "21. srpska: the head \"MILOŠEVIĆ, Svetislav,a i Milice, RADMILA\" read whole; the name pattern had cut the surname in two (\"Milošev Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159094,
+    "action": "edit",
+    "soldier_id": "0080000701",
+    "fields": {
+      "last_name": "Milutinović",
+      "middle_name": "Živka",
+      "fathers_name": "Živko",
+      "first_name": "Jeremija",
+      "additional_info": "majka Ljubica; borac, rođen 14. 5. 1919. u Kniću, Kragujevac, opančar, Srbin, u 1. šumadijski NOP odred stupio je 1942. a 22. 12. 1943. u brigadu, poginuo 22. 12. 1944. ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"MILUTINOVIĆ, Živka i JBubice, JEREMIJA\" read whole; the name pattern had cut the surname in two (\"Milutinov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159095,
+    "action": "edit",
+    "soldier_id": "0080000702",
+    "fields": {
+      "last_name": "Milutinović",
+      "middle_name": "Lazara",
+      "fathers_name": "Lazar",
+      "first_name": "Leposava",
+      "additional_info": "rođ. Mršić; majka Hristina; zvana Lepa; rukovodilac SKOJ-a 4. bataljona, rođena 6. 11. 1928. u Surčinu, đak, Srpkinja, član , SKOJ-a od 1943, KPJ od 28. 8. 1944, u Posavsko-tamnavskom NOP odredu od juna 1944, u brigadi od 25. 8. 1944. do 13. 1. 1945, potom u 21. diviziji. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"MILUTINOVIĆ, rođ. MRŠIĆ, Lazara i Hristine, LEPOSAVA Lepa\" read whole; the name pattern had cut the surname in two (\"Milutinov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159096,
+    "action": "edit",
+    "soldier_id": "0080000742",
+    "fields": {
+      "last_name": "Nedeljković",
+      "middle_name": "Miodraga",
+      "fathers_name": "Miodrag",
+      "first_name": "Sava",
+      "additional_info": "dr.; majka Magdalena; zvani Bata; medicinar brigadne bolnice, rođen 4. 10. 1924. u Inđiji, student, Srbin, u brigadi od 20. 10. 1944. do 13. 1. 1945, potom referent saniteta u 21. artiljerijskoj brigadi. Radi i živi u SAD."
+    },
+    "reason": "21. srpska: the head \"NEDELJKOVIĆ, Miodraga i Magdalene, dr SAVA Bata\" read whole; the name pattern had cut the surname in two (\"Nedeljkov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159097,
+    "action": "edit",
+    "soldier_id": "0080000757",
+    "fields": {
+      "last_name": "Negovanović",
+      "middle_name": "Milutina",
+      "fathers_name": "Milutin",
+      "first_name": "Mihailo",
+      "additional_info": "ili Lakić; borac, rođen 1922. u Rudovcima, Lazarevac, zemljoradnik, Srbin, u brigadi od 10. 4. 1944, zarobljen i ubijen od četnika 16. 5. 1944. u Darosavi (Partizanima)."
+    },
+    "reason": "21. srpska: the head \"NEGOVANOVIĆ (LAKIĆ) Milutina MIHAILO\" read whole; the name pattern had cut the surname in two (\"Negovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159098,
+    "action": "edit",
+    "soldier_id": "0080000764",
+    "fields": {
+      "last_name": "Nikolić",
+      "middle_name": "Sima",
+      "fathers_name": "Simo",
+      "first_name": "Marica",
+      "additional_info": "rođ. Pavlović; majka Ljubica; zvana Marija; sanitetski referent 1. bataljona, rođena 3. 6. 1925. u Glinici, Cazin, metalostrugar, Srpkinja, član SKOJ-a od 1941, KPJ od 1944, učesnik NOP-a u Beogradu od 1941, u brigadi od 15. 8. 1944. do 13. 1. 1945, potom u 21. diviziji. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"NIKOLIĆ, rođ. PAVLOVIĆ, Sima i Ljubice, MARICA Marija\" read whole; the name pattern had cut the surname in two (\"Nikol Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159099,
+    "action": "edit",
+    "soldier_id": "0080000801",
+    "fields": {
+      "last_name": "Obradović",
+      "middle_name": "Jeremije",
+      "fathers_name": "Jeremija",
+      "first_name": "Vukosava",
+      "additional_info": "udata Blaznavac; majka Milojka; zvana Bojana; rođena 9. 12. 1928. u Granicama, Mladenovac, domaćica, Srpkinja, član SKOJ-a od 1943, KPJ od 8. 1. 1944, potom politički radnik u mladenovačkom srezu. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"OBRADOVIĆ, udata BLAZNAVAC, Jeremije i Milojke, VUKOSAVA Bojana\" read whole; the name pattern had cut the surname in two (\"Obradov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159100,
+    "action": "edit",
+    "soldier_id": "0080000804",
+    "fields": {
+      "last_name": "Ocokoljić",
+      "middle_name": "Borivoja",
+      "fathers_name": "Borivoje",
+      "first_name": "Vera",
+      "additional_info": "rođ. Petković; majka Ljubica; borac, rođena 25. 5. 1923. u Beotradu, đak, Srpkinja, član SKOJ-a od 1944, KPJ od 1945, u brigadi od juna 1944. do 3. 10. 1944, potom sanitetski referent bataljona u 31. srpskoj brigadi. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"OCOKOLJIĆ, rođ. PETKOVIĆ, Borivoja i Ljubice, VERA\" read whole; the name pattern had cut the surname in two (\"Ocokolj Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159101,
+    "action": "edit",
+    "soldier_id": "0080000819",
+    "fields": {
+      "last_name": "Panić",
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan",
+      "first_name": "Dušan",
+      "additional_info": "majka Milojka; zvani Jova; komandlr čete, rođen 6. 3. 1913. u Selevcu, Smederevska Palanka, trgovački radnik, Srbmn, član KPJ od februara 1944, u 1. šumadijski NOP odred stupio 1942, a u brigadu 22. 12. 1943, teško ranjen marta 1944. u Lunjevcu, ubrzo umro u Selevcu."
+    },
+    "reason": "21. srpska: the head \"PANIĆ, Stevana i Milojke, Dušan Jova\" read whole; the name pattern had cut the surname in two (\"Pan Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159102,
+    "action": "edit",
+    "soldier_id": "0080000846",
+    "fields": {
+      "last_name": "Pavlović",
+      "middle_name": "Miloša",
+      "fathers_name": "Miloš",
+      "first_name": "Milorad",
+      "additional_info": "dr.; majka Stanojka; zvani Bata; profesor, lekar brigade, rođen 9. 2. 1919. u Aranđelovcu, Srbin, član KPJ od 20. 10. 1944, u brigadi od 8. 9. 1944. do 13. 1. 1945. potom u 21. medicinskom centru. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"PAVLOVIĆ, Miloša i Stanojke, profesor dr MILORAD Bata\" read whole; the name pattern had cut the surname in two (\"Pavlov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159103,
+    "action": "edit",
+    "soldier_id": "0080000847",
+    "fields": {
+      "last_name": "Pavlović",
+      "middle_name": "Zlativoja",
+      "fathers_name": "Zlativoje",
+      "first_name": "Milan",
+      "additional_info": "borac, rođen 1920. u Duboni, Mladenovac, zemljoradnik, Srbin, u brigadi od 30. 9. 1944. do 13. 1. 1945, potom u 21. diviziji. Živi u Duboni."
+    },
+    "reason": "21. srpska: the head \"PAVLOVIĆ Zlativoj.a MILAN\" read whole; the name pattern had cut the surname in two (\"Pavlov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159104,
+    "action": "edit",
+    "soldier_id": "0080000892",
+    "fields": {
+      "last_name": "Petrović",
+      "middle_name": "G.",
+      "fathers_name": "",
+      "first_name": "Miroslav",
+      "additional_info": "borac, rođen 1930. u Opaljeniku, Ivanjica, zemljoradnik, Srbin, poginuo 23. 12. 1944 ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"PETROVIĆ I'. MIROSLAV\" read whole; the name pattern had cut the surname in two (\"Petrov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159105,
+    "action": "edit",
+    "soldier_id": "0080000935",
+    "fields": {
+      "last_name": "Popović",
+      "middle_name": "Jure",
+      "fathers_name": "Jure",
+      "first_name": "Ljubica",
+      "additional_info": "rođ. Bračić; majka Margareta; sanitetski referent 4. bataljona, rođena 1925. u Beogradu, domaćica, Hrvatica, član SKOJ-a od 1943, KPJ od maja 1944, učesnik NOP-a Beograda, u Posavsko-tamnavskom NOP odredu od 20. 4. 1944, u brigadi od 25. 8. 1944. do 13. 1. 1945, potom politički komesar 21. sanitetskog bataljona. Umrla 1970. u Beogradu."
+    },
+    "reason": "21. srpska: the head \"POPOVIĆ, rođ. BRAČIĆ, Jure i Margarete, LJUBICA\" read whole; the name pattern had cut the surname in two (\"Popov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159106,
+    "action": "edit",
+    "soldier_id": "0080000962",
+    "fields": {
+      "last_name": "Prokić",
+      "middle_name": "Milojka",
+      "fathers_name": "Milojko",
+      "first_name": "Živan",
+      "additional_info": "barac, rođen 1922. u Dražnju, Grocka, zemljoradnik, Srbin, u brigadi od 10. 10. 1944, poginuo 22. 12. 1944. ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"PROKIĆ Milojka Živan\" read whole; the name pattern had cut the surname in two (\"Prok Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159107,
+    "action": "edit",
+    "soldier_id": "0080001001",
+    "fields": {
+      "last_name": "Radovanović",
+      "middle_name": "Milovana",
+      "fathers_name": "Milovan",
+      "first_name": "Jagodinka",
+      "additional_info": "udata Marković; majka Danica; zvana Jagoda; vodnik, rođena 14. 10. 1924. u Raniloviću, Aranđelovac, domaćica, Srpkinja, član SKOJ-a od 5. 8. 1943, u 1. šumadijskom NOP odredu od 5. 8. 1943, u brigadi od 22. 12. 1943. do 13. 1. 1945, potom u 21. diviziji. Živi u Raniloviću."
+    },
+    "reason": "21. srpska: the head \"RADOVANOVIĆ, udata MARKOVIĆ, Milovana i Danice, JAGODINKA Jagoda\" read whole; the name pattern had cut the surname in two (\"Radovanov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159108,
+    "action": "edit",
+    "soldier_id": "0080001037",
+    "fields": {
+      "last_name": "Ristić",
+      "middle_name": "Radojice",
+      "fathers_name": "Radojica",
+      "first_name": "Radojka",
+      "additional_info": "udata Bosiljčić; majka Sofija; zvana Rada; borac, rođena 24. 4. 1926. u Manojlovcima, Topola, domaćica, Srpkinja, član SKOJ-a od 1943, KPJ od septembra 1944, u NOP-u od 1942, u brigadi od 15. 9. 1944. do 3. 10. 1944, potom u 31. srpskoj brigadi. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"RISTIĆ, udata BOSILJČIĆ, Radojice i Oofije, RADOJKA Rada\" read whole; the name pattern had cut the surname in two (\"Rist Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159109,
+    "action": "edit",
+    "soldier_id": "0080001054",
+    "fields": {
+      "last_name": "Rosić",
+      "middle_name": "Ljubomira",
+      "fathers_name": "Ljubomir",
+      "first_name": "Angelina",
+      "additional_info": "udata Puhar; majka Milenija; bolničarka, rođena 19. 11. 1926. u Vrbici, Aranđelovac, domaćica, Srpkinja, član SKOJ-a od 1944, KPJ od 1948, u brigadi od 10. 8. 1944. do 13. 1. 1945, potom u 4. srpskoj brigadi. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"ROSIĆ, udata PUHAR, Ljubomira i Milenije, ANGELINA\" read whole; the name pattern had cut the surname in two (\"Ros Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159110,
+    "action": "edit",
+    "soldier_id": "0080001103",
+    "fields": {
+      "last_name": "Stamatović",
+      "middle_name": "Radovana",
+      "fathers_name": "Radovan",
+      "first_name": "Budimka",
+      "additional_info": "rođ. Đorđević; majka Lena; zvana Olga; zamenik političkog komesara čete, rođena 11. 11. 1922. u Divostinu, Kragujevac, učiteljica, Srpkinja, član SKOJ-a od 1941, KPJ od novembra 1943, nosilac Partizanske spomenice od 1941, u 1. šumadijskom NOP odredu od jula 1943, u brigadi od 22. 12. 1943. do 13.1. 1945, potom politički radnik na terenu. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"STAMATOVIĆ, rođ. ĐORĐEVIĆ, Radovana i Lene, BUDIMKA Olga\" read whole; the name pattern had cut the surname in two (\"Stamatov Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159111,
+    "action": "edit",
+    "soldier_id": "0080001112",
+    "fields": {
+      "last_name": "Staničić",
+      "middle_name": "Milorada",
+      "fathers_name": "Milorad",
+      "first_name": "Miloje",
+      "additional_info": "ili Dugalić; majka Ljubica; borac, rođen 15. 10. 1925. u Darosavi (Partizanima), Aranđelovac, zemljoradnik, Srbin, u 1. šumadijskom NOP odredu od 1. 8. 1943, u brigadi od 22. 12. 1943. do 20. 9. 1944, potom na političkom radu na terenu. Živi u Aranđelovcu."
+    },
+    "reason": "21. srpska: the head \"STANIČIĆ (DUGALIĆ), Milorada i Ljubice, MILOJE\" read whole; the name pattern had cut the surname in two (\"Stanič Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159112,
+    "action": "edit",
+    "soldier_id": "0080001169",
+    "fields": {
+      "last_name": "Stojić",
+      "middle_name": "Aleksandra",
+      "fathers_name": "Aleksandar",
+      "first_name": "Ilija",
+      "additional_info": "majka Lena; zamenik komandira čete, rođen 1916. u Banji, Aranđelovac, stolar, Srbin, član KPJ od novembra 1943, u 1. šumadijski NOP odred etupiz 15. 9. 1943, a u brigadu 22. 12. 1943, poginuo 12. 6. 1944, na Čađevcu u Bosuti."
+    },
+    "reason": "21. srpska: the head \"STOJIĆ, Aleksandra i Lene, Ilija\" read whole; the name pattern had cut the surname in two (\"Stoj Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159113,
+    "action": "edit",
+    "soldier_id": "0080001240",
+    "fields": {
+      "last_name": "",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Vanja",
+      "additional_info": "po sećanju, Crvenoarmejac, rođen u SSSR-u, Rus, pobegao iz zarobljeničkog logora u Rakovici i 27. 4. 1944. stupio u brigadu, poginuo 14. 10. 1944. u Malom Požarevcu."
+    },
+    "reason": "21. srpska: the head \"VANJA\" read whole; the name pattern had cut the surname in two (\"Vanja\") and left the given name in the bio"
+  },
+  {
+    "id": 159114,
+    "action": "edit",
+    "soldier_id": "0080001298",
+    "fields": {
+      "last_name": "Vujačić",
+      "middle_name": "Dragomira",
+      "fathers_name": "Dragomir",
+      "first_name": "Radojka",
+      "additional_info": "rođ. Marković; majka Nikola; zvana Ruža; zamenik političkog komesara bataljona, rođena 29. 1. 1915. u Čumiću, Kragujevac, učiteljica, Srpkinja, član SKOJ-a od 1941, KPJ od 1943, nosilac Partizanske spomenice od 1941, u 1. šumadijskom NOP odredu od početka 1943, u brigadi od 22. 12 1943. do 20. 9. 1944, potom politički radnik na terenu. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"VUJAČIĆ, rođ. MARKOVIĆ, Dragomira i Nikole, RADOJKA Ruža\" read whole; the name pattern had cut the surname in two (\"Vujač Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159115,
+    "action": "edit",
+    "soldier_id": "0080001309",
+    "fields": {
+      "last_name": "Vukosavljević",
+      "middle_name": "Živka",
+      "fathers_name": "Živko",
+      "first_name": "Emilo",
+      "additional_info": "dr.; majka Milojka; medicinar 4. bataljona, rođen 28. 2. 1920. u Lisoviću, Barajevo, student, Srbin, član SKOJ-a od maja 1945, u brigadi od 25. 10. 1944. do 13. 1. 1945, potom u 21. medicinskom centru. Živi u Beogradu."
+    },
+    "reason": "21. srpska: the head \"VUKOSAVLJEVIĆ, Živka i Milojke, dr EMILO\" read whole; the name pattern had cut the surname in two (\"Vukosavljev Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159116,
+    "action": "edit",
+    "soldier_id": "0080001341",
+    "fields": {
+      "last_name": "Đorđević",
+      "middle_name": "Aleksandra",
+      "fathers_name": "Aleksandar",
+      "first_name": "Radivoje",
+      "additional_info": "ili Pavlović; majka Leposava; zvani Raca; komandir čete, rođen 11. 5. 1944. u Drenu, Lazarevac, zemljoradnik, Srbin, član KPJ od decembra 1944, u 1. šumadijskom NOP odredu od 26. 8. 1943, u brigadi od 22. 12. 1943. do 3. 10. 1944, potom u 31. srpskoj brigadi. Živi u Lazarevcu."
+    },
+    "reason": "21. srpska: the head \"ĐORĐEVIĆ (PAVLOVIĆ), Aleksandra i Leposave, RADIVOJE Raca\" read whole; the name pattern had cut the surname in two (\"Đorđev Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159117,
+    "action": "edit",
+    "soldier_id": "0080001372",
+    "fields": {
+      "last_name": "Đurđević",
+      "middle_name": "Petra",
+      "fathers_name": "Petar",
+      "first_name": "Živorad",
+      "additional_info": "majka Persa; borac 2. čete 3. bataljona, rođen 1922. u Kozelju, JBig, zemljoradnik, u brigadu stupio 7. 10. 1944, poginuo krajem decembra 1944. ispred Otoka."
+    },
+    "reason": "21. srpska: the head \"ĐURĐEVIĆ, Petra i Perse, Živorad\" read whole; the name pattern had cut the surname in two (\"Đurđev Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159118,
+    "action": "edit",
+    "soldier_id": "0080001392",
+    "fields": {
+      "last_name": "Šćekić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Olga",
+      "additional_info": "udata Kazagrande; zvana Sonja; borac, rođena 1923. u Saranovu, Topola, grafička radnica, Srpkinja, član KPJ, u brigadi od aprila do 3. 10. 1944, potom politički komesar čete u 31. srpskoj brigadi. Umrla 1970. u Kopru, sahranjena u Topoli."
+    },
+    "reason": "21. srpska: the head \"ŠĆEKIĆ, udata KAZAGRANDE OLGA Sonja\" read whole; the name pattern had cut the surname in two (\"Šćek Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159119,
+    "action": "edit",
+    "soldier_id": "0080001393",
+    "fields": {
+      "last_name": "Žakić",
+      "middle_name": "Miše",
+      "fathers_name": "Miša",
+      "first_name": "Milan",
+      "additional_info": "politički komesar 2. čete 4. bataljona, rođen 6. 4. 1924. u Beogradu, metaloetrugar, Srbin, član SKOJ-a od 1941, a KPJ od 1943, u Pooavsko-tamnavksi NOP odred stupio aprila 1944, a u brigadu 25. 8. 1944, poginuo 15. 10. 1944. u Kaluđerici, Zvezdara."
+    },
+    "reason": "21. srpska: the head \"ŽAKIĆ Miše Milan\" read whole; the name pattern had cut the surname in two (\"Žak Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159120,
+    "action": "edit",
+    "soldier_id": "0080001405",
+    "fields": {
+      "last_name": "Živkov",
+      "middle_name": "Laka",
+      "fathers_name": "Lako",
+      "first_name": "Obrenija",
+      "additional_info": "rođ. Šarova; majka Milica; bolničarka, rođena 14. 3. 1920. u Turmenti, Trebinje, radnica, Srpkiša, član SKOJ-a od novembra 1944, KPJ od septembra 1945, u Posavsko-tamnavskom NOP odredu od juna 1944, u brigadi od 25. 8. 1944. do novembra 1944, potom na radu u Zemunu. Živi u Zemunu."
+    },
+    "reason": "21. srpska: the head \"ŽIVKOV, rođ. ŠAROVA, Laka i Milice, OBRENIJA\" read whole; the name pattern had cut the surname in two (\"Živk Ov\") and left the given name in the bio"
+  },
+  {
+    "id": 159121,
+    "action": "edit",
+    "soldier_id": "0080001423",
+    "fields": {
+      "last_name": "Žunić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Miodrag",
+      "additional_info": "dr.; po sećanju, borac (medicinar u bataljonu), studeš medicine, posle rata radio, živeo i umro u Konjicu."
+    },
+    "reason": "21. srpska: the head \"ŽUNIĆ dr. MIODRAG\" read whole; the name pattern had cut the surname in two (\"Žun Ić\") and left the given name in the bio"
+  },
+  {
+    "id": 159122,
+    "action": "edit",
+    "soldier_id": "0003010138",
+    "fields": {
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Milan Miloš"
+    },
+    "reason": "Name read from the page: \"Bajić I Lue Milan Miloš\" is Bajić Ilije Milan Miloš"
+  },
+  {
+    "id": 159123,
+    "action": "edit",
+    "soldier_id": "0003010139",
+    "fields": {
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Jovo"
+    },
+    "reason": "Name read from the page: \"Bajić I Uje Jovo\" is Bajić Ilije Jovo"
+  },
+  {
+    "id": 159124,
+    "action": "edit",
+    "soldier_id": "0003010756",
+    "fields": {
+      "last_name": "Gavrilović",
+      "middle_name": "Krstivoja",
+      "fathers_name": "Krstivoje",
+      "first_name": "Branimir"
+    },
+    "reason": "Name read from the page: \"Gavrilo Vic Krstivoja Branimir\" is Gavrilović Krstivoja Branimir"
+  },
+  {
+    "id": 159125,
+    "action": "edit",
+    "soldier_id": "0003011142",
+    "fields": {
+      "last_name": "Jelovac-Šijan",
+      "middle_name": "Bude",
+      "fathers_name": "Budo",
+      "first_name": "Evica"
+    },
+    "reason": "Name read from the page: \"Jelo Vac Ši Jan Bude Evica\" is Jelovac-Šijan Bude Evica"
+  },
+  {
+    "id": 159126,
+    "action": "edit",
+    "soldier_id": "0003011515",
+    "fields": {
+      "first_name": "Jevgenije"
+    },
+    "reason": "Name read from the page: \"Krestini Ivana Je Vg Eni Je\" is Krestini Ivana Jevgenije"
+  },
+  {
+    "id": 159127,
+    "action": "edit",
+    "soldier_id": "0003011564",
+    "fields": {
+      "last_name": "Kumpar-Mandić",
+      "middle_name": "Mise",
+      "first_name": "Lela"
+    },
+    "reason": "Name read from the page: \"Kum Par-Man Dić Mise Lela\" is Kumpar-Mandić Mise Lela"
+  },
+  {
+    "id": 159128,
+    "action": "edit",
+    "soldier_id": "0003011851",
+    "fields": {
+      "middle_name": "Krstimira",
+      "fathers_name": "Krstimir",
+      "first_name": "Vlastimir"
+    },
+    "reason": "Name read from the page: \"Marković Krsti Mira Vlastimir\" is Marković Krstimira Vlastimir"
+  },
+  {
+    "id": 159129,
+    "action": "edit",
+    "soldier_id": "0003012013",
+    "fields": {
+      "middle_name": "Krstimira",
+      "fathers_name": "Krstimir",
+      "first_name": "Vukosav"
+    },
+    "reason": "Name read from the page: \"Miladinović Krsti Mira Vukosav\" is Miladinović Krstimira Vukosav"
+  },
+  {
+    "id": 159130,
+    "action": "edit",
+    "soldier_id": "0003012248",
+    "fields": {
+      "first_name": "Slaviša",
+      "additional_info": "rođen 1925. u Odžacima - Trstenik. U NOB-1944. Borac brigade."
+    },
+    "reason": "Name read from the page: \"Milutinović Jove Sla\" is Milutinović Jove Slaviša (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159131,
+    "action": "edit",
+    "soldier_id": "0003012314",
+    "fields": {
+      "last_name": "Mitrović-Krajevern",
+      "first_name": "Živodarka"
+    },
+    "reason": "Name read from the page: \"Mitro Vić Krajevern Živodarka\" is Mitrović-Krajevern Živodarka"
+  },
+  {
+    "id": 159132,
+    "action": "edit",
+    "soldier_id": "0003012954",
+    "fields": {
+      "first_name": "Mićun Mićo"
+    },
+    "reason": "Name read from the page: \"Prtina Ilije Mi Un Mićo\" is Prtina Ilije Mićun Mićo"
+  },
+  {
+    "id": 159133,
+    "action": "edit",
+    "soldier_id": "0003012965",
+    "fields": {
+      "last_name": "Pupavac",
+      "middle_name": "Steve",
+      "fathers_name": "Stevo",
+      "first_name": "Vajo"
+    },
+    "reason": "Name read from the page: \"Pupa Vac Steve Vajo\" is Pupavac Steve Vajo"
+  },
+  {
+    "id": 159134,
+    "action": "edit",
+    "soldier_id": "0003013008",
+    "fields": {
+      "middle_name": "Milaka",
+      "fathers_name": "Milak",
+      "first_name": "Milan"
+    },
+    "reason": "Name read from the page: \"Radivojević Ml La Ka Milan\" is Radivojević Milaka Milan"
+  },
+  {
+    "id": 159135,
+    "action": "edit",
+    "soldier_id": "0003020239",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Dimitrije",
+      "additional_info": "desetar u 2. ćeti 3. bataljona. U NOB-1944. Ranjen, umro i sahranjen u Strašincima 13. 04. 1945. godine. ~ —"
+    },
+    "reason": "Name read from the page: \"Brkić Dl Mitri\" is Brkić Dimitrije (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159136,
+    "action": "edit",
+    "soldier_id": "0003020280",
+    "fields": {
+      "middle_name": "Miusava",
+      "fathers_name": "Miusav",
+      "first_name": "Dobrosav"
+    },
+    "reason": "Name read from the page: \"Bzjenić Mi Usava Dobrosav\" is Bzjenić Miusava Dobrosav"
+  },
+  {
+    "id": 159137,
+    "action": "edit",
+    "soldier_id": "0003020420",
+    "fields": {
+      "first_name": "Sava Savagan"
+    },
+    "reason": "Name read from the page: \"Dopuđa Petra Sava Sa Vagan\" is Dopuđa Petra Sava Savagan"
+  },
+  {
+    "id": 159138,
+    "action": "edit",
+    "soldier_id": "0003020607",
+    "fields": {
+      "last_name": "Habija",
+      "middle_name": "F.",
+      "first_name": "Derviš"
+    },
+    "reason": "Name read from the page: \"Hab I Ja F Derviš\" is Habija F. Derviš"
+  },
+  {
+    "id": 159139,
+    "action": "edit",
+    "soldier_id": "0003020705",
+    "fields": {
+      "last_name": "Jagnič",
+      "first_name": "Rade"
+    },
+    "reason": "Name read from the page: \"Jag Nič Rade\" is Jagnič Rade"
+  },
+  {
+    "id": 159140,
+    "action": "edit",
+    "soldier_id": "0003020744",
+    "fields": {
+      "last_name": "Joba",
+      "middle_name": "Martina",
+      "fathers_name": "Martin",
+      "first_name": "Petar",
+      "additional_info": "rođen 1919. u Novom Itebeju - J. Tomić. U NOB-1945. Borac brigade. Poginuo u Palošniku 03. 05. 1945. godine."
+    },
+    "reason": "Name read from the page: \"Job A Martina\" is Joba Martina Petar (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159141,
+    "action": "edit",
+    "soldier_id": "0003020998",
+    "fields": {
+      "last_name": "Leontijević",
+      "middle_name": "Svetozara",
+      "fathers_name": "Svetozar",
+      "first_name": "Spasoje"
+    },
+    "reason": "Name read from the page: \"Leontue Vic Svetozara Spasoje\" is Leontijević Svetozara Spasoje"
+  },
+  {
+    "id": 159142,
+    "action": "edit",
+    "soldier_id": "0003021041",
+    "fields": {
+      "middle_name": "Stojana",
+      "fathers_name": "Stojan",
+      "first_name": "Dane"
+    },
+    "reason": "Name read from the page: \"Lukić Sto Jana Dane\" is Lukić Stojana Dane"
+  },
+  {
+    "id": 159143,
+    "action": "edit",
+    "soldier_id": "0003021047",
+    "fields": {
+      "first_name": "Dane Daćina"
+    },
+    "reason": "Name read from the page: \"Majstorović Luke Dane Daći Na\" is Majstorović Luke Dane Daćina"
+  },
+  {
+    "id": 159144,
+    "action": "edit",
+    "soldier_id": "0003021779",
+    "fields": {
+      "middle_name": "Krstimira",
+      "fathers_name": "Krstimir",
+      "first_name": "Slavko"
+    },
+    "reason": "Name read from the page: \"Radojćić Krstim Ira Slavko\" is Radojćić Krstimira Slavko"
+  },
+  {
+    "id": 159145,
+    "action": "edit",
+    "soldier_id": "0003021984",
+    "fields": {
+      "last_name": "Sakal",
+      "middle_name": "Ferenca",
+      "fathers_name": "Ferenc",
+      "first_name": "Ferenc"
+    },
+    "reason": "Name read from the page: \"Sa Kal Ferenca Ferenc\" is Sakal Ferenca Ferenc"
+  },
+  {
+    "id": 159146,
+    "action": "edit",
+    "soldier_id": "0003022039",
+    "fields": {
+      "first_name": "Stojan",
+      "additional_info": "roden u Širokoj Kuli - Gospić. U NOB-1941. Borac 2. bataljona. Ranjen umro u Belim Potocima u bolnici 1942. godine."
+    },
+    "reason": "Name read from the page: \"Serdar Mile Sto\" is Serdar Mile Stojan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159147,
+    "action": "edit",
+    "soldier_id": "0003022104",
+    "fields": {
+      "last_name": "Srećković-Brkić",
+      "middle_name": "Milorada",
+      "fathers_name": "Milorad",
+      "first_name": "Dragoljub"
+    },
+    "reason": "Name read from the page: \"Srećko Vić Brkić Milorada Dragoljub\" is Srećković-Brkić Milorada Dragoljub"
+  },
+  {
+    "id": 159148,
+    "action": "edit",
+    "soldier_id": "0003022274",
+    "fields": {
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Marko"
+    },
+    "reason": "Name read from the page: \"Tica I Lue Marko\" is Tica Ilije Marko"
+  },
+  {
+    "id": 159149,
+    "action": "edit",
+    "soldier_id": "0003022382",
+    "fields": {
+      "last_name": "Vasović",
+      "middle_name": "Tadije",
+      "fathers_name": "Tadija",
+      "first_name": "Milorad"
+    },
+    "reason": "Name read from the page: \"Vaso Vic Tadije Milorad\" is Vasović Tadije Milorad"
+  },
+  {
+    "id": 159150,
+    "action": "edit",
+    "soldier_id": "0010000855",
+    "fields": {
+      "last_name": "Labus",
+      "middle_name": "Petra",
+      "fathers_name": "Petar",
+      "first_name": "Ilija",
+      "additional_info": "rođen 1921, Oraško Brdo, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, u Brigadi od 22. 8. 1942, borac, poginuo juna 1943. na Sutjesci"
+    },
+    "reason": "Name read from the page: \"Lab Us\" is Labus Petra Ilija (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159151,
+    "action": "edit",
+    "soldier_id": "0010001049",
+    "fields": {
+      "last_name": "Milisavljević",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Milisav"
+    },
+    "reason": "Name read from the page: \"Mi Lisa Vlje Vić Milisav\" is Milisavljević Milisav"
+  },
+  {
+    "id": 159152,
+    "action": "edit",
+    "soldier_id": "0010001855",
+    "fields": {
+      "last_name": "Todosijević",
+      "middle_name": "Milorada",
+      "fathers_name": "Milorad",
+      "first_name": "Čedomir",
+      "additional_info": "rođen 1919, Mirosaljci, Lazarevac, zemljoradnik, Srbin, desetar, poginuo 16 4. 1945. kod s. Ruševa, sahranjen u Pleternici"
+    },
+    "reason": "Name read from the page: \"To Do Si Jević\" is Todosijević Milorada Čedomir (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159153,
+    "action": "edit",
+    "soldier_id": "0010001995",
+    "fields": {
+      "last_name": "Vujatović",
+      "first_name": "Stevo"
+    },
+    "reason": "Name read from the page: \"Vu Jato Vić Stevo\" is Vujatović Stevo"
+  },
+  {
+    "id": 159154,
+    "action": "edit",
+    "soldier_id": "0010100010",
+    "fields": {
+      "middle_name": "Nikole",
+      "fathers_name": "Nikola",
+      "first_name": "Milorad",
+      "additional_info": "zvani Miša; politički komesar 3. čete 2. bataljona, rođen 1923, Podtabor, Grosuplje, đak, Slovenac, u NOB od 1941, član SKOJ-a od 1939, član KPJ od 1942, krajem rata zamenik političkog komesara 14. makedonske brigade."
+    },
+    "reason": "Name read from the page: \"Ajnšpiler Nikole Ml Sa\" is Ajnšpiler Nikole Milorad (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159155,
+    "action": "edit",
+    "soldier_id": "0010100377",
+    "fields": {
+      "first_name": "Savica",
+      "additional_info": "bolničarka 1. čete 3. bataljona, rođena 1927, Vodenica, Bosanski Petrovac, domaćica, Srpkinja, u NOB od januara 1942, član SKOJ-a od 1942, član KPJ od 1944. godine."
+    },
+    "reason": "Name read from the page: \"Jeličić-Marić Nikole Sa\" is Jeličić-Marić Nikole Savica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159156,
+    "action": "edit",
+    "soldier_id": "0010100907",
+    "fields": {
+      "first_name": "Nikica",
+      "additional_info": "intendant 2. bataljona, rođen 1922, Vrtoče, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ od 1942, krajem rata načelnik operativnog odseka u štabu brigade."
+    },
+    "reason": "Name read from the page: \"Pilipović-Dajanović Pere Nj\" is Pilipović-Dajanović Pere Nikica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159157,
+    "action": "edit",
+    "soldier_id": "0010204887",
+    "fields": {
+      "middle_name": "J.",
+      "fathers_name": "",
+      "first_name": "Novica"
+    },
+    "reason": "Name read from the page: \"Stojanović J No Vi Ca\" is Stojanović J. Novica"
+  },
+  {
+    "id": 159158,
+    "action": "edit",
+    "soldier_id": "0012000031",
+    "fields": {
+      "first_name": "Živorad"
+    },
+    "reason": "Name read from the page: \"Aćimović Z Ivor Ad\" is Aćimović Živorad"
+  },
+  {
+    "id": 159159,
+    "action": "edit",
+    "soldier_id": "0012000263",
+    "fields": {
+      "last_name": "Hardanović",
+      "first_name": "Božidar"
+    },
+    "reason": "Name read from the page: \"Hard Ano Vic Bozidar\" is Hardanović Božidar"
+  },
+  {
+    "id": 159160,
+    "action": "edit",
+    "soldier_id": "0012000546",
+    "fields": {
+      "last_name": "Milošavljević",
+      "first_name": "Živan"
+    },
+    "reason": "Name read from the page: \"Miloša Vljevic Živ An\" is Milošavljević Živan"
+  },
+  {
+    "id": 159161,
+    "action": "edit",
+    "soldier_id": "0013010066",
+    "fields": {
+      "last_name": "Baltić",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Bal Gić Mirko\" is Baltić Mirko"
+  },
+  {
+    "id": 159162,
+    "action": "edit",
+    "soldier_id": "0016000336",
+    "fields": {
+      "last_name": "Brdal",
+      "middle_name": "J.",
+      "first_name": "Vaclav",
+      "additional_info": "1927, Daruvar (općina Daruvar)"
+    },
+    "reason": "Name read from the page: \"Brd Al\" is Brdal J. Vaclav (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159163,
+    "action": "edit",
+    "soldier_id": "0016000797",
+    "fields": {
+      "middle_name": "G.",
+      "fathers_name": "",
+      "first_name": "Ignjatije"
+    },
+    "reason": "Name read from the page: \"Gojković G Ign Jati Je\" is Gojković G. Ignjatije"
+  },
+  {
+    "id": 159164,
+    "action": "edit",
+    "soldier_id": "0016001605",
+    "fields": {
+      "first_name": "Velimir",
+      "additional_info": "zvani Veljo; 1923, Šabac (općina Šabac)"
+    },
+    "reason": "Name read from the page: \"Maksimović Velimir Ve-Ljo\" is Maksimović Velimir (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159165,
+    "action": "edit",
+    "soldier_id": "0016002480",
+    "fields": {
+      "last_name": "Pupavac",
+      "middle_name": "B.",
+      "fathers_name": "",
+      "first_name": "Dušan"
+    },
+    "reason": "Name read from the page: \"Pup A Vac B Dušan\" is Pupavac B. Dušan"
+  },
+  {
+    "id": 159166,
+    "action": "edit",
+    "soldier_id": "0016003230",
+    "fields": {
+      "last_name": "Vojnović",
+      "first_name": "Stoja"
+    },
+    "reason": "Name read from the page: \"Vojno Vic Sto Ja\" is Vojnović Stoja"
+  },
+  {
+    "id": 159167,
+    "action": "edit",
+    "soldier_id": "0018000361",
+    "fields": {
+      "middle_name": "Stanoja",
+      "fathers_name": "Stanoje",
+      "first_name": "Milena"
+    },
+    "reason": "Name read from the page: \"Gajić Ct Aho Ja Milena\" is Gajić Stanoja Milena"
+  },
+  {
+    "id": 159168,
+    "action": "edit",
+    "soldier_id": "0018000513",
+    "fields": {
+      "first_name": "Jovan"
+    },
+    "reason": "Name read from the page: \"Josić Job Ah\" is Josić Jovan"
+  },
+  {
+    "id": 159169,
+    "action": "edit",
+    "soldier_id": "0035100155",
+    "fields": {
+      "last_name": "Brijan",
+      "first_name": "Franjo"
+    },
+    "reason": "Name read from the page: \"B Rij An Franjo\" is Brijan Franjo"
+  },
+  {
+    "id": 159170,
+    "action": "edit",
+    "soldier_id": "0035102799",
+    "fields": {
+      "last_name": "Gobac",
+      "first_name": "Mirko Filip"
+    },
+    "reason": "Name read from the page: \"Gob Mate Ac Mirko Filip\" is Gobac Mate Mirko Filip"
+  },
+  {
+    "id": 159171,
+    "action": "edit",
+    "soldier_id": "0035103542",
+    "fields": {
+      "last_name": "Holobar Gothe",
+      "first_name": "Marija",
+      "additional_info": "zvana Maca; Frederika, r. 1926, s. Kasaze, Žalec, Slovenka, učenica, čl. SKOJ-a, NOV 1942."
+    },
+    "reason": "Name read from the page: \"Holobar Gothe Marija Maca\" is Holobar Gothe Marija (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159172,
+    "action": "edit",
+    "soldier_id": "0035104054",
+    "fields": {
+      "last_name": "Jardas",
+      "first_name": "Josip"
+    },
+    "reason": "Name read from the page: \"J Ard As Josip\" is Jardas Josip"
+  },
+  {
+    "id": 159173,
+    "action": "edit",
+    "soldier_id": "0035104531",
+    "fields": {
+      "last_name": "Kamisan",
+      "first_name": "Stjepan"
+    },
+    "reason": "Name read from the page: \"K Amis An Stjepan\" is Kamisan Stjepan"
+  },
+  {
+    "id": 159174,
+    "action": "edit",
+    "soldier_id": "0035105935",
+    "fields": {
+      "last_name": "Kuharović",
+      "first_name": "Pavao"
+    },
+    "reason": "Name read from the page: \"Kuh Mate ARO vič PAVAO\" is Kuharović Mate Pavao"
+  },
+  {
+    "id": 159175,
+    "action": "edit",
+    "soldier_id": "0035106574",
+    "fields": {
+      "last_name": "Lukunić Les",
+      "first_name": "Slavica"
+    },
+    "reason": "Name read from the page: \"Lukunić Đure Les Sla Vica\" is Lukunić Les Đure Slavica"
+  },
+  {
+    "id": 159176,
+    "action": "edit",
+    "soldier_id": "0035106602",
+    "fields": {
+      "last_name": "Maltar",
+      "first_name": "Josip"
+    },
+    "reason": "Name read from the page: \"M Roka Alt Ar Josip\" is Maltar Roka Josip"
+  },
+  {
+    "id": 159177,
+    "action": "edit",
+    "soldier_id": "0035107962",
+    "fields": {
+      "last_name": "Ostaruaš",
+      "first_name": "Đuro"
+    },
+    "reason": "Name read from the page: \"O Đure Staru Aš Đuro\" is Ostaruaš Đure Đuro"
+  },
+  {
+    "id": 159178,
+    "action": "edit",
+    "soldier_id": "0035108140",
+    "fields": {
+      "last_name": "Pavić",
+      "first_name": "Stjepan"
+    },
+    "reason": "Name read from the page: \"P Đure A vić STJEPAN\" is Pavić Đure Stjepan"
+  },
+  {
+    "id": 159179,
+    "action": "edit",
+    "soldier_id": "0035108141",
+    "fields": {
+      "last_name": "Pavišić",
+      "middle_name": "S.",
+      "first_name": "Valent"
+    },
+    "reason": "Name read from the page: \"P A Višić Valent\" is Pavišić S. Valent"
+  },
+  {
+    "id": 159180,
+    "action": "edit",
+    "soldier_id": "0035108142",
+    "fields": {
+      "last_name": "Pavleković",
+      "first_name": "Stjepan"
+    },
+    "reason": "Name read from the page: \"P A VLEKO vič STJEPAN\" is Pavleković Stjepan"
+  },
+  {
+    "id": 159181,
+    "action": "edit",
+    "soldier_id": "0035110955",
+    "fields": {
+      "first_name": "Josip",
+      "additional_info": "zvani Žuti Joža; Hrvat, čl. KPJ, NOV 1943, ranjen"
+    },
+    "reason": "Name read from the page: \"Trajbar Ivana Josip Žuti Joža\" is Trajbar Ivana Josip (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159182,
+    "action": "edit",
+    "soldier_id": "0035110986",
+    "fields": {
+      "last_name": "Trijak",
+      "first_name": "Slavica"
+    },
+    "reason": "Name read from the page: \"Triu Ak Sla Vica\" is Trijak Slavica"
+  },
+  {
+    "id": 159183,
+    "action": "edit",
+    "soldier_id": "0035111419",
+    "fields": {
+      "last_name": "Vesanović Dijanošić",
+      "first_name": "Ljubica Amalija"
+    },
+    "reason": "Name read from the page: \"Vesanović Đure Dijanošić Ljubica Amalija\" is Vesanović Dijanošić Đure Ljubica Amalija"
+  },
+  {
+    "id": 159184,
+    "action": "edit",
+    "soldier_id": "0035111912",
+    "fields": {
+      "last_name": "Vukomanović",
+      "first_name": "Stipe"
+    },
+    "reason": "Name read from the page: \"Vukom ANO vić STIPE\" is Vukomanović Stipe"
+  },
+  {
+    "id": 159185,
+    "action": "edit",
+    "soldier_id": "0035112141",
+    "fields": {
+      "last_name": "Zobanović",
+      "first_name": "Mijo"
+    },
+    "reason": "Name read from the page: \"Zob ANO vić MIJO\" is Zobanović Mijo"
+  },
+  {
+    "id": 159186,
+    "action": "edit",
+    "soldier_id": "0035112232",
+    "fields": {
+      "last_name": "Čavić"
+    },
+    "reason": "Name read from the page: \"ČA-vić Simo\" is Čavić Simo"
+  },
+  {
+    "id": 159187,
+    "action": "edit",
+    "soldier_id": "0035112543",
+    "fields": {
+      "last_name": "Švetak",
+      "first_name": "Stjepan"
+    },
+    "reason": "Name read from the page: \"Š Franje Vet Ak Stjepan\" is Švetak Franje Stjepan"
+  },
+  {
+    "id": 159188,
+    "action": "edit",
+    "soldier_id": "0036000913",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Kongramanjani Serjoža iz Serjoža\" is Kongramanjani Serjoža"
+  },
+  {
+    "id": 159189,
+    "action": "edit",
+    "soldier_id": "0036100089",
+    "fields": {
+      "first_name": "Dobrila",
+      "additional_info": "borac 1. čete 1. bataljona, rođena 1924, Draževitići, Vrgorac, domaćica, Hrvatica, u NOB od 1942, član SKOJ-a od 1942, član KPJ od juna 1943, krajem rata četna bolničarka."
+    },
+    "reason": "Name read from the page: \"Barbir-Perić Mate Dob\" is Barbir-Perić Mate Dobrila (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159190,
+    "action": "edit",
+    "soldier_id": "0036012067",
+    "fields": {
+      "last_name": "Vranješ"
+    },
+    "reason": "Name read from the page: \"Vranje5 Mirko\" is Vranješ Mirko"
+  },
+  {
+    "id": 159191,
+    "action": "edit",
+    "soldier_id": "0001100050",
+    "fields": {
+      "last_name": "Baruh",
+      "first_name": "Nisim",
+      "additional_info": "desetar u 3. četi 6 bataljona, rođen 1915, Sarajevo, fotografski radnik, Jevrejin, u NOB od 1941 clan KPJ od jula 1943, poginuo kod liavinka novembra 1943, komandir voda."
+    },
+    "reason": "Name read from the page: \"Bar Uh\" is Baruh Nisim (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159192,
+    "action": "edit",
+    "soldier_id": "0001100205",
+    "fields": {
+      "first_name": "Radmila",
+      "additional_info": "borac Protivkolske čete brigade, rođena 1927, Glamoč, učenica, Srpkinja, u NOB od marta 1942, član SKOJ-a od avgusta 1942, član KPJ od novembra 1943. godine, krajem rata politički komesar čete."
+    },
+    "reason": "Name read from the page: \"Cvetkovic-Lizdek Save Rad\" is Cvetkovic-Lizdek Save Radmila (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159193,
+    "action": "edit",
+    "soldier_id": "0001100268",
+    "fields": {
+      "last_name": "Drecun",
+      "first_name": "Joko",
+      "additional_info": "politički delegat voda u Pratećoj četi brigade, rođen 1916, Boguti, Cetinje, pravnik, Crnogorac, u NOB od 1941, član KPJ od 1942, krajem rata komesar političke škole."
+    },
+    "reason": "Name read from the page: \"Dre Cun\" is Drecun Joko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159194,
+    "action": "edit",
+    "soldier_id": "0001100343",
+    "fields": {
+      "last_name": "Gruočić",
+      "first_name": "Ljubo",
+      "additional_info": "borac 3. bataljona, rodom od Srpca, zemljoradnik, Srbin, u NOB od januara 1943, poginuo u se. lu Ponor, kod Rogatice, 19. juna 1943"
+    },
+    "reason": "Name read from the page: \"Gr Uočić\" is Gruočić Ljubo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159195,
+    "action": "edit",
+    "soldier_id": "0001101704",
+    "fields": {
+      "last_name": "Čubrilo",
+      "first_name": "Milan",
+      "additional_info": "zamenik političkog komesara 1. čete 6. bataljona, rođen 1914, Rudopolje, Gračac, radnik, Srbin, u NOB od 1941, član KPJ od 1939, krajem rata politički komesar brigade. Umro 1947. godine."
+    },
+    "reason": "Name read from the page: \"Ču Bri\" is Čubrilo Milan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159196,
+    "action": "edit",
+    "soldier_id": "0001101705",
+    "fields": {
+      "last_name": "Čudina-Begović",
+      "middle_name": "Mije"
+    },
+    "reason": "Name read from the page: \"Ču Dl Mije Marko\" is Čudina-Begović Mije Marko"
+  },
+  {
+    "id": 159197,
+    "action": "edit",
+    "soldier_id": "0005100135",
+    "fields": {
+      "last_name": "Davidović",
+      "first_name": "Ljutomir",
+      "additional_info": "borac 1. čete 1. bataljona, rođen 1917, Vraneša, Nova Varoš, radnik, Srbin, u NOB od 1941, član KPJ od 1942, zarobljen i ubijen kod Prijepolja septembra 1943."
+    },
+    "reason": "Name read from the page: \"Da Vidović\" is Davidović Ljutomir (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159198,
+    "action": "edit",
+    "soldier_id": "0005100136",
+    "fields": {
+      "last_name": "Davidović",
+      "first_name": "Vlajko",
+      "additional_info": "borac 1. bataljona, rođen u Crnoj Gori, zemljoradnik, Crnogorac, poginuo kod sela Bosača, Žabljak 6. juna 1943. godine."
+    },
+    "reason": "Name read from the page: \"Da Vidović\" is Davidović Vlajko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159199,
+    "action": "edit",
+    "soldier_id": "0005100313",
+    "fields": {
+      "first_name": "Mileta",
+      "additional_info": "borac 3. čete 4. bataljona, rođen 1921, Mioče, Bijelo Polje, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1942, poginuo na Plavče Brdu kod Šahovića, Bijelo Polje, 14. aprila 1944."
+    },
+    "reason": "Name read from the page: \"Janković Marka Mi\" is Janković Marka Mileta (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159200,
+    "action": "edit",
+    "soldier_id": "0005100461",
+    "fields": {
+      "first_name": "Arsenije",
+      "additional_info": "borac 4. bataljona, rođen 1915, Ivanje, Bijelo Polje, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od aprila 1942."
+    },
+    "reason": "Name read from the page: \"Kuč Vase Ar\" is Kuč Vase Arsenije (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159201,
+    "action": "edit",
+    "soldier_id": "0005100608",
+    "fields": {
+      "first_name": "Relja",
+      "additional_info": "borac 1. bataljona, rođen u Bradini, Konjic, zemljoradnik, Srbin, poginuo na Sutjesci juna 1943."
+    },
+    "reason": "Name read from the page: \"Mrkaić Rei\" is Mrkaić Relja (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159202,
+    "action": "edit",
+    "soldier_id": "0005100774",
+    "fields": {
+      "first_name": "Pavić",
+      "additional_info": "komandir čete, rođen 1908, Mojkovac, pravnik, Jugosloven, u NOB od 1941, član KPJ od 1941, krajem rata politički komesar divizijske vojne oblasti Sandžak."
+    },
+    "reason": "Name read from the page: \"Radović Milivoja Pa\" is Radović Milivoja Pavić (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159203,
+    "action": "edit",
+    "soldier_id": "0005101027",
+    "fields": {
+      "first_name": "Savica",
+      "additional_info": "borac, rođena 1916, Podbišće, Mojkovac, domaćica, Crnogorka, u NOB od 1941, član KPJ od 1943. godine."
+    },
+    "reason": "Name read from the page: \"Vuković Milivoja Sa\" is Vuković Milivoja Savica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159204,
+    "action": "edit",
+    "soldier_id": "0007100097",
+    "fields": {
+      "first_name": "Ljuba",
+      "additional_info": "bolničarka u 2. bataljonu, rođena 1914, Solin, Split, domaćica, Hrvatica, u NOB od novembra 1942, poginula na Gornjim Barama 7. juna 1943. godine."
+    },
+    "reason": "Name read from the page: \"Bedalov-Poljak Mate Lj\" is Bedalov-Poljak Mate Ljuba (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159205,
+    "action": "edit",
+    "soldier_id": "0039100081",
+    "fields": {
+      "first_name": "Radoš",
+      "additional_info": "puškomitraljezac 2. čete 1. bataljona, rođen 1919, Čičkovo, Arilje, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo u Košuru, kod Tjentišta, početkom juna 1943. Odlikovan Ordenom narodnog heroja."
+    },
+    "reason": "Name read from the page: \"Bojović Budimira Rad\" is Bojović Budimira Radoš (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159206,
+    "action": "edit",
+    "soldier_id": "0039100086",
+    "fields": {
+      "first_name": "Jovica",
+      "additional_info": "desetar u 2. četi 2. bataljona, rođen 1923, Hrgar, Bihać, zemljoradnik, Srbin, u NOB od februara 1942, član KIM od februara 1943. godine."
+    },
+    "reason": "Name read from the page: \"Borjanović Steve Jo\" is Borjanović Steve Jovica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159207,
+    "action": "edit",
+    "soldier_id": "0039100176",
+    "fields": {
+      "last_name": "Dubljević",
+      "first_name": "Radojica",
+      "additional_info": "borac prištapskih jedinica brigade, rođen u Dubljevićima, Plužine, zemljoradnik, Crnogorac, poginuo u Prijepolju 4. decembra 1943. godine."
+    },
+    "reason": "Name read from the page: \"Dub Ue\" is Dubljević Radojica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159208,
+    "action": "edit",
+    "soldier_id": "0039100177",
+    "fields": {
+      "last_name": "Dugić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Vlada",
+      "additional_info": "zvani Čarča; borac 1. čete 3. bataljona, rođen u Saranovu, Rača Kragujevačka, podoficir Jugoslovenske vojske, Srbin, u NOB od 1941, član KPJ, poginuo na Košuru, kod Tjentišta, početkom juna 1943."
+    },
+    "reason": "Name read from the page: \"Dugićvlada Cr Ar\" is Dugić Vlada (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159209,
+    "action": "edit",
+    "soldier_id": "0039100245",
+    "fields": {
+      "first_name": "Ante",
+      "additional_info": "puškomitraljezac 1. čete 3. bataljona, rođen 1921, Vranjic, Split, radnik, Hrvat, u NOB od 1941, član SKOJ-a od 1941, krajem rata politički komesar art. diviziona u 2. proleterskoj diviziji."
+    },
+    "reason": "Name read from the page: \"Grubić Josipa An\" is Grubić Josipa Ante (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159210,
+    "action": "edit",
+    "soldier_id": "0039100260",
+    "fields": {
+      "first_name": "Slavica",
+      "additional_info": "bolničarka u 4. bataljonu, rođena 1923, Lozovac, Šibenik, domaćica, Hrvatica, u NOB od 1942."
+    },
+    "reason": "Name read from the page: \"Gulin Sla\" is Gulin Slavica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159211,
+    "action": "edit",
+    "soldier_id": "0039100616",
+    "fields": {
+      "first_name": "Ante",
+      "additional_info": "mitraljezac u Pratećoj četi brigade, rođen 1924, Jučepi, Makarska, zemljoradnik, Hrvat, u NOB od oktobra 1942, član SKOJ-a, krajem rata komandir voda."
+    },
+    "reason": "Name read from the page: \"Mijacjka Duje An\" is Mijacjka Duje Ante (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159212,
+    "action": "edit",
+    "soldier_id": "0039100740",
+    "fields": {
+      "first_name": "Sirahinja",
+      "additional_info": "borac u intendanturi brigade, rođen 1912, Ivanjica, radnik, Srbin, u NOB od 1941. Umro u Jagodini 28. avgusU. 1963."
+    },
+    "reason": "Name read from the page: \"Pacić Slavka Sir\" is Pacić Slavka Sirahinja (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159213,
+    "action": "edit",
+    "soldier_id": "0039101207",
+    "fields": {
+      "first_name": "Silvan",
+      "additional_info": "borac 1. čete 1. bataljona, rođen 1926, Bukovica, Šavnik, zemljoradnik, Crnogorac, poginuo na Sutjesci, kod Tjentišta, 30. maja 1943. godine."
+    },
+    "reason": "Name read from the page: \"Ćorović Pere Si\" is Ćorović Pere Silvan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159214,
+    "action": "edit",
+    "soldier_id": "0040000355",
+    "fields": {
+      "first_name": "Arsenije",
+      "additional_info": "borac 5. bataljona, rođen 1925, Gradac, Šavnik, zemljoradnik, Crnogorac, u NOB od aprila 1943, član SKOJ-a od 1943, član KPJ od 1944. godine."
+    },
+    "reason": "Name read from the page: \"Guzina Blagote Ar\" is Guzina Blagote Arsenije (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159215,
+    "action": "edit",
+    "soldier_id": "0040000430",
+    "fields": {
+      "first_name": "Relja",
+      "additional_info": "borac u 5. bataljonu, rođen 1929, Dobra Sela, Šavnik, đak, Crnogorac, u NOB od aprila 1943, umro u bolnici u Šekovićima jula 1943."
+    },
+    "reason": "Name read from the page: \"Jakić Matije Rei\" is Jakić Matije Relja (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159216,
+    "action": "edit",
+    "soldier_id": "0040000475",
+    "fields": {
+      "first_name": "Arsenije",
+      "additional_info": "borac 5. bataljona, rođen 1923, Bare, Šavnik, zemljoradnik, Crnogorac, u NOB od maja 1943, član SKOJ-a od 1943, poginuo u Penezićima kod Priboja marta 1944, politički delegat voda."
+    },
+    "reason": "Name read from the page: \"Jelić Pere Ar\" is Jelić Pere Arsenije (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159217,
+    "action": "edit",
+    "soldier_id": "0040000504",
+    "fields": {
+      "last_name": "Jovićević-Mijuš",
+      "first_name": "Ljubica",
+      "additional_info": "borac 2. čete 2. bataljona, r<Hl en;l 1925, Šinđon, Cetinje, domaćica, p nogorka, u NOB od 1941, član SKf ^ ' od marta 1942, član KPJ od febr^ 1944, krajem rata p>politički delegat v"
+    },
+    "reason": "Name read from the page: \"Jovićlvić-Mjijuš Andrije LKj\" is Jovićević-Mijuš Andrije Ljubica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159218,
+    "action": "edit",
+    "soldier_id": "0040001276",
+    "fields": {
+      "middle_name": "Đure",
+      "fathers_name": "Đuro",
+      "first_name": "Milika",
+      "additional_info": "kurir štaba brigade, rođen 1922, Gornja Morača, Kolašin, đak, Crnogorac, u NOB od 1941, član KPJ od 1942, poginuo na L>rini kod Ustikoline 13. septembra 1943, politički komesar čete."
+    },
+    "reason": "Name read from the page: \"Sisović Dure Ml Lj\" is Sisović Đure Milika (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159219,
+    "action": "edit",
+    "soldier_id": "0041000209",
+    "fields": {
+      "first_name": "Pavić",
+      "additional_info": "borac 5. bataljona, rođen 1919, Seoca, Podgorica, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od maja 1943, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943. kao ranjenik u Centralnoj bolnici."
+    },
+    "reason": "Name read from the page: \"Dakić Radoša Pa\" is Dakić Radoša Pavić (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159220,
+    "action": "edit",
+    "soldier_id": "0041000621",
+    "fields": {
+      "first_name": "Veselin",
+      "additional_info": "borac 3. bataljona, rođen 1914, Jablan, Podgorica, službenik, Crnogorac, u NOB od 1941, član KPJ, poginuo na brdu Boan, kod sela Trepča, Nikšić, 27. septembra 1943, politički komesar bataljona."
+    },
+    "reason": "Name read from the page: \"Lalović Arse Vhs\" is Lalović Arse Veselin (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159221,
+    "action": "edit",
+    "soldier_id": "0042000520",
+    "fields": {
+      "first_name": "Zora",
+      "additional_info": "bolničarka u 2. bataljonu, rođena 1920, Maglaj, učenica, Jugoslovenka, u NOB od 1941. godine."
+    },
+    "reason": "Name read from the page: \"Pijunović-Sinobad Alekse Zo\" is Pijunović-Sinobad Alekse Zora (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159222,
+    "action": "edit",
+    "soldier_id": "0043000285",
+    "fields": {
+      "first_name": "Salko",
+      "additional_info": "politički komesar čete u 3. bataljonu, rođen 1921, Mostar, učitelj, Musliman, u NOB od 1941, član KPJ od 1940, poginuo na Krekovima kod Tjentišta 13. juna 1943."
+    },
+    "reason": "Name read from the page: \"Ezo M Sai\" is Ezo M Salko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159223,
+    "action": "edit",
+    "soldier_id": "0043000617",
+    "fields": {
+      "last_name": "Labaio",
+      "middle_name": "Lazara",
+      "fathers_name": "Lazar",
+      "first_name": "Milan",
+      "additional_info": "borac u intendanturi 4. bataljona, rođen 1900, Lukavac, Nevesinje, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942. Umro 1971. godine."
+    },
+    "reason": "Name read from the page: \"Lab Ai\" is Labaio Lazara Milan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159224,
+    "action": "edit",
+    "soldier_id": "0046000067",
+    "fields": {
+      "first_name": "Helena"
+    },
+    "reason": "Name read from the page: \"Aska-Delević Maksimilijana ieena\" is Aska-Delević Maksimilijana Helena"
+  },
+  {
+    "id": 159225,
+    "action": "edit",
+    "soldier_id": "0046001158",
+    "fields": {
+      "first_name": "Ljubica",
+      "additional_info": "borac u intendanturi brigade, rođena 1927, Kotlenice, Split, domaćica, Hrvatica, u NOB od 1942, umrla od tifusa u Sandžaku u drugoj polovini maja 1943."
+    },
+    "reason": "Name read from the page: \"Vladović Pavla Lj\" is Vladović Pavla Ljubica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159226,
+    "action": "edit",
+    "soldier_id": "0048000360",
+    "fields": {
+      "first_name": "Smilja",
+      "additional_info": "borac 2. čete 3. bataljona, rođena 1924, Lastve, Bosanski Petrovac, domaćica, Srpkinja, u NOB od aprila 1942, član KPJ od maja 1945, krajem rata referent saniteta jirištapskih jedinica armije."
+    },
+    "reason": "Name read from the page: \"Kačar-Tojčić Lode Sm\" is Kačar-Tojčić Lode Smilja (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159227,
+    "action": "edit",
+    "soldier_id": "0112000366",
+    "fields": {
+      "first_name": "Stevan",
+      "additional_info": "član grupe Kazališta narodnog oslobođenja Jugoslavije, rođen 1889, Podgorica, radnik, Crnogorac, u NOB od 1941. godine, član KPJ."
+    },
+    "reason": "Name read from the page: \"Radovanović Mijata Ste\" is Radovanović Mijata Stevan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159228,
+    "action": "edit",
+    "soldier_id": "0116000076",
+    "fields": {
+      "last_name": "Markiš",
+      "middle_name": "Đure",
+      "fathers_name": "Đuro"
+    },
+    "reason": "Name read from the page: \"Mar Kl Đure Petar\" is Markiš Đure Petar"
+  },
+  {
+    "id": 159229,
+    "action": "edit",
+    "soldier_id": "0117000331",
+    "fields": {
+      "first_name": "Jenko",
+      "additional_info": "borac, rođen 1923, Split, trgovački pomoćnik, Hrvat, u NOB od februara 1943, poginuo u kanjonu Tare, kod sela Tepci, 31. maja 1943."
+    },
+    "reason": "Name read from the page: \"Lovrić Mil Jen\" is Lovrić Mil Jenko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159230,
+    "action": "edit",
+    "soldier_id": "0117000435",
+    "fields": {
+      "last_name": "Paškvalin-Bujas",
+      "first_name": "Vesela",
+      "additional_info": "bolničarka, rođena 1907, Šibenik, domaćica, Hrvatica, u NOB od jula 1942, poginula na Pivskoj planini, kod Rudina, početkom juna 1943. godine."
+    },
+    "reason": "Name read from the page: \"Paš Kvalin-Bu\" is Paškvalin-Bujas Vesela (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159231,
+    "action": "edit",
+    "soldier_id": "0117000624",
+    "fields": {
+      "last_name": "Vučelić",
+      "first_name": "Nada",
+      "additional_info": "bolničarka, rođena u Bosanskoj Krajini, domaćica, Srpkinja, u NOB od 1942, teško ranjena u kanjonu Pive 9. juna 1943. i posle dva dana umrla na Vučevu."
+    },
+    "reason": "Name read from the page: \"Vuče Iić\" is Vučelić Nada (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159232,
+    "action": "edit",
+    "soldier_id": "0040020087",
+    "fields": {
+      "first_name": "Vlastimir",
+      "additional_info": "zvani Vlajko; Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Kosić, Danilovgrad, 1923, đak član, SKOJ-a, Pog. 10. 6. 1943. na Ljubin- Grobu"
+    },
+    "reason": "Name read from the page: \"Brajović Jakše Vlasti- Mir Vlajko\" is Brajović Jakše Vlastimir (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159233,
+    "action": "edit",
+    "soldier_id": "0040020149",
+    "fields": {
+      "first_name": "Dimitrije",
+      "additional_info": "zvani Mitar; Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Prateći Vod: k-dir batalj. komore, Martinićko Gostilje, Danilovgrad, 1915, zemljoradnik, člai KPJ, Poginuo jula 1943. na Ozrenu"
+    },
+    "reason": "Name read from the page: \"Dragojević Đorđa Dimi- Trije Mitar\" is Dragojević Đorđa Dimitrije (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159234,
+    "action": "edit",
+    "soldier_id": "0040020204",
+    "fields": {
+      "first_name": "Olga"
+    },
+    "reason": "Name read from the page: \"Grubač Filipa Olga Ranjenici Bolesnici\" is Grubač Filipa Olga"
+  },
+  {
+    "id": 159235,
+    "action": "edit",
+    "soldier_id": "0040020293",
+    "fields": {
+      "first_name": "Dragoljub",
+      "additional_info": "zvani Bata; Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Kolašin, 1920, đak, član SKOJ-a, Poginuo 1942."
+    },
+    "reason": "Name read from the page: \"Jovović Milivoja Drago- Jbub Bata\" is Jovović Milivoja Dragoljub (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159236,
+    "action": "edit",
+    "soldier_id": "0040020629",
+    "fields": {
+      "first_name": "Ljubo"
+    },
+    "reason": "Name read from the page: \"Popović Ilije Ljubo Brigadna Intendantura\" is Popović Ilije Ljubo"
+  },
+  {
+    "id": 159237,
+    "action": "edit",
+    "soldier_id": "0040020658",
+    "fields": {
+      "first_name": "Vaso",
+      "additional_info": "zvani Rus; Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Prateći Vod: borac, Vražegrmci, Danilovgrad, 1920, zemljoradnik, član SKOJ-a, Poginuo januara 1943. na Strmici"
+    },
+    "reason": "Name read from the page: \"Radonjić K. Vaso Rus\" is Radonjić Vaso (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159238,
+    "action": "edit",
+    "soldier_id": "0040020864",
+    "fields": {
+      "last_name": "Vukoslavčević",
+      "middle_name": "R.",
+      "first_name": "Ljubo"
+    },
+    "reason": "Name read from the page: \"Vukoslavč Ević R. Ljubo\" is Vukoslavčević R. Ljubo"
+  },
+  {
+    "id": 159239,
+    "action": "edit",
+    "soldier_id": "0001000173",
+    "fields": {
+      "last_name": "Andrijanov",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"And Rij Ano V Rus\" is Andrijanov Rus"
+  },
+  {
+    "id": 159240,
+    "action": "edit",
+    "soldier_id": "0001000404",
+    "fields": {
+      "last_name": "Badini",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Bad Ini Roberto\" is Badini Roberto"
+  },
+  {
+    "id": 159241,
+    "action": "edit",
+    "soldier_id": "0001000462",
+    "fields": {
+      "middle_name": "Hasana",
+      "fathers_name": "Hasan"
+    },
+    "reason": "Name read from the page: \"Bajrić Has ana Smajo\" is Bajrić Hasana Smajo"
+  },
+  {
+    "id": 159242,
+    "action": "edit",
+    "soldier_id": "0001001329",
+    "fields": {
+      "last_name": "Bundalo",
+      "middle_name": "Janko",
+      "fathers_name": "Janko"
+    },
+    "reason": "Name read from the page: \"Bund Alo Janko Cvijo\" is Bundalo Janko Cvijo"
+  },
+  {
+    "id": 159243,
+    "action": "edit",
+    "soldier_id": "0001001958",
+    "fields": {
+      "first_name": "Zora",
+      "additional_info": "zvana Luna; 1924, Sarajevo, BiH, Jevrejka, učenica, član SKOJ-a od 1940, član KPJ od 1942, u NOB od 1941, u brigadi od februara 1942, V bataljon, bolničarka"
+    },
+    "reason": "Name read from the page: \"Daniti-Pavlović Leona Lun\" is Daniti-Pavlović Leona Zora (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159244,
+    "action": "edit",
+    "soldier_id": "0001003168",
+    "fields": {
+      "last_name": "Gatani Tindari",
+      "middle_name": "Antonio",
+      "fathers_name": "Antonio"
+    },
+    "reason": "Name read from the page: \"Gat Ani Tindari Mario\" is Gatani Tindari Antonio Mario"
+  },
+  {
+    "id": 159245,
+    "action": "edit",
+    "soldier_id": "0001003681",
+    "fields": {
+      "middle_name": "Hasana",
+      "fathers_name": "Hasan"
+    },
+    "reason": "Name read from the page: \"Husetović Has ana Husein\" is Husetović Hasana Husein"
+  },
+  {
+    "id": 159246,
+    "action": "edit",
+    "soldier_id": "0001005010",
+    "fields": {
+      "middle_name": "Mojse",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Katan Moj se Jozef\" is Katan Mojse Jozef"
+  },
+  {
+    "id": 159247,
+    "action": "edit",
+    "soldier_id": "0001005816",
+    "fields": {
+      "first_name": "Vidak",
+      "additional_info": "1911, Titograd, Crna Gora, Crnogorac, zemljoradnik, u NOB od 1944, u brigadi od 1944, II bataljon, borac, poginuo 00. 01. 1945"
+    },
+    "reason": "Name read from the page: \"Laković Spase Vid\" is Laković Spase Vidak (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159248,
+    "action": "edit",
+    "soldier_id": "0001006419",
+    "fields": {
+      "first_name": "Ananije",
+      "additional_info": "1911, D. Kržanja, Titograd, Crna Gora, Crnogorac, zemljoradnik, u NOB od jula 1941, u brigadi od decembra 1941, II bataljon, vodnik, zarobljen 00. 03. 1945, streljan u Sarajevu"
+    },
+    "reason": "Name read from the page: \"Manojlović Andrije An\" is Manojlović Andrije Ananije (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159249,
+    "action": "edit",
+    "soldier_id": "0001006699",
+    "fields": {
+      "middle_name": "Miloja",
+      "fathers_name": "Miloje"
+    },
+    "reason": "Name read from the page: \"Marković Miloj a Momčilo\" is Marković Miloja Momčilo"
+  },
+  {
+    "id": 159250,
+    "action": "edit",
+    "soldier_id": "0001007685",
+    "fields": {
+      "last_name": "Milovanović-Kačar",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Milo Vano Vić-kačar Radmila\" is Milovanović-Kačar Radmila"
+  },
+  {
+    "id": 159251,
+    "action": "edit",
+    "soldier_id": "0001010708",
+    "fields": {
+      "last_name": "Rosić-Abramović",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Rosić-ab Ramo Vić Danica\" is Rosić-Abramović Danica"
+  },
+  {
+    "id": 159252,
+    "action": "edit",
+    "soldier_id": "0001013826",
+    "fields": {
+      "last_name": "Žigić-Rabrenović",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Žigić-Rab Reno Vić Ivka\" is Žigić-Rabrenović Ivka"
+  },
+  {
+    "id": 159253,
+    "action": "edit",
+    "soldier_id": "0001600016",
+    "fields": {
+      "first_name": "Stevan",
+      "additional_info": "borac, rođen 1898, Gospić, Srbin, rudarski radnik u Ibarskim rudnicima u Baljevcu; umro 11. januara 1942. u Podromaniji."
+    },
+    "reason": "Name read from the page: \"Lučić Ste\" is Lučić Stevan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159254,
+    "action": "edit",
+    "soldier_id": "0001400043",
+    "fields": {
+      "first_name": "Mate",
+      "additional_info": "zvani Bedac; rođen 1922, Draževitići, Vrgorac, zemljoradnik. NOP je počeo pomagati u jesen 1941. Clan SKOJ-a je od 1942. Lipnja mjeseca 1942. stupio je u bataljon »Josip Jurčević« i učestvuje u borbama na Biokovu i Zagori. Kolovoza 1942. je postao borac Saniteta 1. proleterske NOU brigade. Borbeni put je nastavio na Ključu, Bosanskom Grahovu, Sitnici, Jajcu, u centalnoj Bosni: oko Ivan-sedla, Bradine, Konjica, Gornjeg Vakufa i Bugojna, Glavatičeva, Treskavice, Drine, Kapka, Ifsara, Bijelog Polja. U V ofanzivi: na Čelebiću, Zlatnom boru, Tari, Vučevu Sutjesci, Zelengori, Balinovcu, Miljevini, u istočnoj Bosni: na Vlasenici, Zvorniku, Vranduku; u centralnoj Bosni, na Turbetu i Dalmaciji. Vodeći borbe s Nijemcima i ustašama na Cisti Velikoj u Dalmaciji 23. rujna 1943, Mate je poginuo od jedne neprijateljske kolone koja je napala sanitet, braneći svoje ranjene i bolesne, drugove."
+    },
+    "reason": "Name read from the page: \"Barbir Josipa Mate Be-Dac\" is Barbir Josipa Mate (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159255,
+    "action": "edit",
+    "soldier_id": "0001400299",
+    "fields": {
+      "first_name": "Jerko",
+      "additional_info": "zvani Rampo; rođen 1915. Vrpolje, Šibenik, željeznički radnik, porijeklom iz siromašne seljačke obitelji. Početkom listopada 1942. odlazi u partizane i u Ključu ulazi u sastav 1. crnogorskog bataljona 1. proleterske NOU brigade. Učestvuje u borbama oko Grahova, Strmice, na Sitnici, Jajcu, te u narednim borbama preko centralne Bosne - Kotor-Varoš, Crni vrh, Jašavka, Devetine, Čelinac, Maslovara, oko Teslića, Prnjavora, kroz IV i V neprijateljsku ofanzivu, gdje kratko vrijeme boravi kao borac u prištapskim jedinicama, a potom u četi, učestvujući u teškim bitkama na Ivan-sedlu, Gornjem Vakufu, Čićevu-Glavatičevu, Treskavici, po prelasku Drine na Krčinom brdu, Kapku, Ifsaru, na prostoru Čajniče-Goražde. Drugom polovinom travnja postaje kandidat za člana KPJ. Nastavio je borbu kao pomoćnik puškomitraljesca kod Pljevlja, Bijelog Polja, na pravcu Čelebić-Borje-Zavajt, gdje prima puškomitraljez kojim uspješno rukuje u jurišima na Zlatnom boru, Tari, Vučevu, Magliću, Sutjesci, sve do 9. lipnja 1943. kada je poginuo na Zelengori blizu Vrbničkih koliba u V neprijateljskoj ofanzivi."
+    },
+    "reason": "Name read from the page: \"Jelić Ivana Jerko Ram-Po\" is Jelić Ivana Jerko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159256,
+    "action": "edit",
+    "soldier_id": "0001400301",
+    "fields": {
+      "first_name": "Stipe",
+      "additional_info": "zvani Rampo; rođen 1921. Vrpolje, Šibenik, pitomac mornaričke podoficirske škole BJV. Potiče iz siromašne seljačko-radničke obitelji. Kapitulacija bivše Jugoslavije zatekla ga je u Risnu, Boka-Kotorska, odakle je krenuo kući. Na putu je bio zarobljen od Talijana i odveden u logor Cividale kod Udina-Italija. Poslije dva mjeseca pušten je iz logora i odlazi u svoje rodno mjesto. Za NOP radi od druge polovine 1941. a studenog iste godine postaje član SKOJ-a. Početkom listopada 1942. odlazi u partizane i u Kliuču ulazi u sastav 2. bataljona 1. proleterske NOU brigade. Nastavlja u borbama kod Grahova, Strmice, na Sitnici, Jajcu, te preko centralne Bosne, Kotor-Varoš, Crni vrh, Jošavka, Prnjavor i drugim mjestima na prostoru Teslića, Prnjavora, Banja Luke, potom preko Snjegotine, Maslovara, Sipraga, r. Ugra, Komara, sela Bojska, sve do sredine veljače 1943. kada je otišao u dalmatinske jedinice i kraj rata dočekao kao komandant bataljona. Penzioniran kao potpukovnik. JELIĆ Tome TOMISLAV TOMIŠA, rođen 1923. Vrpolje, Šibenik, zemljoradnik iz siromašne seljačke obitelji. Za NOP radi od početka 1942. a prvih dana listopada te godine odlazi u partizane i u Ključu stupa u 2. crnogorski bataljon 1. proleterske NOU brigade s kojim učestvuje u borbama: Grahovo, Strni ica, Sitnicii, Jajce, Skender-Vakuf, Kotor-Varoš, Crni vrh, Jošavka, Teslić, Devetine, Prnjavor, Srbac, Snjegotina, Bojska, Ivan-sedlo, Raštelica, Tarčin, Gornji Vakuf, Glavatičevo, Treskavica, kod Kalinovika, na Drini Krčino brdo, Kapak, Ifsar, Cajniče-Goražde, Lim, Brodarevo, Kovren, Čelebić, Zavajit, Zlatni bor, Tara, Uzlup, Piva, Vučevo, dolina Sutjeske, Zelengora, Bavan, Balinovac, Miljevina, r. Prača, Renovica, Vlasenica, Drinjača, Zvornik, Caparde, Nemila, r. Bosna, Turbe, Dalmacija, Suica, Kupres, Travnik, Turbe, Komar, r. Ugar, Kotor-Varoš, Jošavka, Mrkonjić-Grad, Lisina, Mliništa, Raduša, Komar, Vranića, Bitovnja, Bjelašnica, Sandžak, Uvac, Zlatibor, Palisad, Bajina Bašta, Kosjerić, Valievo, Kolubara. Ub. Ralja, Avala, Beograd, Sid, Tovarnik, Šidski Banovci, Sarengrad, Vukovar, Borovo, Pleternica, Okučani, Ilova, Vrbovec, Zagreb, gdje dočekuje kraj rata kao komandir čete. Clan SKOJ-a postao je početkom ožujka 1943. a član KPJ sredinom srpnja 1943. Učesnik je u borbama IV i V neprijateljske ofanzive. Ranjavan. Poslije rata ostaje u aktivnoj službi JNA. Penzioniran u činu potpukovnika.."
+    },
+    "reason": "Name read from the page: \"Jelić Krste Stipe Ram-Po\" is Jelić Krste Stipe (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159257,
+    "action": "edit",
+    "soldier_id": "0001400358",
+    "fields": {
+      "first_name": "Tonći"
+    },
+    "reason": "Name read from the page: \"Katunarić Tonča Ton-Ći\" is Katunarić Tonča Tonći"
+  },
+  {
+    "id": 159258,
+    "action": "edit",
+    "soldier_id": "0001400486",
+    "fields": {
+      "first_name": "Josip",
+      "additional_info": "zvani Jolpaz; rođen 1919, Vrpolje, Šibenik, obalni radnik. Potiče iz siromašne seljačke obitelji. Po okupaciji zemlje opredjeljuje se za NOP. U partizane odlazi početkom listopada 1942. godine i u Ključu ulazi u sastav 2. bataljona 1. proleterske NOU brigade. Vodi borbe na Sitnici i Jajcu, te centralnoj Bosni. Početkom IV neprijateljske ofanzive, iz 2. čete odlazi u vod za snabdijevanje bataljona. Svoje obaveze savjesno izvršava, posebno u teškim danima V neprijateljske ofanzive. Tokom V neprijateljske ofanzive vrši i dužnost zamjenika intendanta, ali već po prelasku Sutjeske osijetili su se na njemu znaci tifusa. Ostaje u bataljonu do Balinovca, kada se upućuje u bolnicu. Tako je kao tifusar, ispred Miljevine pao u ruke Nijemcima, koji su ga uputili u logor, zatim na liječenje, ispitivanje, a potom su ga mučili. Po završetku rata ostaje živ i vraća se natrag u domovinu. Sada kao penzioner živi u Kamniku u Sloveniji."
+    },
+    "reason": "Name read from the page: \"Ljubetić Ante Josip Jol-Paz\" is Ljubetić Ante Josip (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159259,
+    "action": "edit",
+    "soldier_id": "0001400530",
+    "fields": {
+      "first_name": "Nikola",
+      "additional_info": "rođen 1919, Zavojane, Vrgorac, zemljoradnik iz siromašne seljačke obitelji. Član SKOJa postao je 1940, a član KPJ 1943. godine. U svibnju 1942, stupa u bataljon »Josip Jurčević«, a kasnije u bataljon »Vid Mihaljević«, s kojim se bori na Biokovu, Zagori i dolini Neretve, zatim dolazi u 4. dalmatinsku brigadu sa kojom nastavlja borbu kroz IV neprijateljsku ofanzivu oko Imotskog, Posušja, Cvrsnice, Plas-grebena, dolinom Neretve, Prenja i Nevesinja. Travnja 1943, postaje borac 3. dalmatinske brigade s kojom vrši pokret preko Uloga, Kalinovika, Broda, Zavajita ka Pljevljima, a zatim učestvuje u borbama kroz V neprijateljsku ofanzivu na Čehotini, Ljubinji, Čelebiću, Tari, Pivi, Mratinu, Vučevu. Početkom lipnja 1943, preko Sutjeske i Zelengori dolazi u sastav 1. crnogorska. taljona 1. proleterske NO gade sa kojom kao puškon ljezac produžuje borbu preku Miljevine, r. Prače, Renovice, Vlasenice, Drinjače, Zvornika, Caparda, Nemile, Turbeta i Dalmacije, kada je rujna 1943, prekomandovan za kurira Okružnog NOO Biokovo-Neretva. Godine 1944, odlazi u političku školu, a po završetku postaje sekretar SKOJ-a u Zagvozdu, a od početka 1945 postaje član Kotarskog komiteta SKOJ-a Imotski na kojoj je dužnosti i dočekao kraj rata. Penzionisan je u činu majora Milicije. MATOŠIĆ Jere PAVO PAVE, rođen 1914, Split, mesarski radnik. Clan SKOJ-a od prije rata, sindikalno organiziran u URS-vim sindikatima. Clan KPJ postao je <1\"'« godine. Okupacijo^ t n bio je hapšr. zatva ~ >d strane Talijanr . j j e m l . 2, stupa u Mosorski odred, a zatim u sastav 3. dalmatinske brigade i učestvuje u borbama kod Knina, Vrlike, kroz IV i V r . prijateljsku ofanzivu prekc i notskog, Posušja, Ljubuško^ 'lasgrebena, dolinom Nfiretv ?atim u nošenju ranjenika pit <• Prenja, u borbama oko Ne > nja, potom u Sandžaku u b. . - bama kroz V neprijateljsku ofanzivu na Čehotini, Pl. Ljubišnji, Čelebiću, Tari, Pivi, Mratinju, Vučevu. Početkom lipnja 1943, preko Sutjeske i Zelengore dolazi u sastav 1. crnogorskog bataljona 1. proleterske NOU brigade sa kojom nastavlja borbu preko Miljevine, r. Prače, Renovice, Vlasenice, Drinjače, Zvornika, Caparda, Nemile, Turbeta. Poginuo je prvom polovinom rujna 1943, između Gornjeg Vakufa i Maljevina, u borbi s četnicima.",
+      "birth_place": "Zavojane, Vrgorac"
+    },
+    "reason": "Name read from the page: \"Matković Frane NIKO-LA ođen\" is Matković Frane Nikola (the bio's head that belonged to the name moved back); \"Vrzemljoradnik iz siromaš-,,-ljačke\" (the line broke over a speck) is \"Vrgorac, zemljoradnik iz siromašne seljačke\""
+  },
+  {
+    "id": 159260,
+    "action": "edit",
+    "soldier_id": "0001400558",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Martin",
+      "additional_info": "zvani Bugar; Borac 4. bataljona."
+    },
+    "reason": "Name read from the page: \"Milišić Martin Bu-Gar\" is Milišić Martin (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159261,
+    "action": "edit",
+    "soldier_id": "0001400720",
+    "fields": {
+      "first_name": "Josip",
+      "additional_info": "zvani Butić; rođen 1914, Puharići, Makarska, zemljoradnik. Povremeno radio na građevinama. Učesnik političkih manifestacija u Makarskoj. Clan SKOJ-a od prije rata. Radio na pripremi ustanka 1941. Bio vojni ilegalac. Godine 1941. stupa u prvi Makarsku partizansku grupu. Clan KPJ od 1942. Bio u URS Sindikatima. Učesnik oduzimanja oružja iz Građanske škole u Makarskoj 18. travnja 1941. Bio borac 3. voda Južnodalmatinske čete, 3. čete bataljona »Josip Jurčević« i »Vid Mihaljević, s kojim je ušao u sastav 4. dalmatinske brigade i nastavio borbu kao komandir odjeljenja u IV neprijateljskoj ofenzivi, oko Imotskog i Vrgorca, Širokog Brijega, Posušja, Tihaline i Klobuka, Plas-grebena, doline Neretve i Nevesinja kada je krajem travnja 1943. godine postao komandir odjeljenja u 3. dalmatinskoj brigadi i nastavio borbu u Sandžaku u V ofenziv, Cehotine, Celebića, Tare, Martinja, i Vučeva, da bi početkom lipnja 1943. godine postao borac 6. beograskog bataljona 1. proleterske NOU brigade s kojim nastavlja borbu u razbijanje obruča, na Rataju i Miljevini, kada je u jednom od juriša sa Njemcima hrabro poginuo. Bio je to hrabar i postojan borac naše partije. Cijela njegova porodica radila je i bila uz NOP i NOB-i."
+    },
+    "reason": "Name read from the page: \"Puharić Grge Josip-Bu-Tić\" is Puharić Grge Josip (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159262,
+    "action": "edit",
+    "soldier_id": "0001400778",
+    "fields": {
+      "first_name": "Roko",
+      "additional_info": "zvani Pivćev; rođen 1913. o. Žirje, Šibenik, mornar-ribar. Potiče iz siromašne seljačke obitelji. Za NOP radi od druge polovine 1941. U partizane odlazi krajem 1942. ili početkom 1943. godine, ali nije utvrđeno u koju je jedinicu prvo stupio. Listopada 1943. dolazi u sastav 3. krajiške proleterske brigade. Istakao se u prvim borbama oko Travnika, te u borbama preko centralne i zapadne Bosne. U veljači 1944. postaje član KPJ, nastavljajući borbu tokom ožujka, travnja 1944. učestvuje u proboju, zatim za vrijeme drvarske operacije, kao puškomitraljezac. Neutvrđenog datuma u lipnju 1944. godine odlazi u sastav 3. kragujevačkog bataljona 1. proleterske NOU brigade s kojom nastavlja borbe, na Makljanu, Vranići, Bešerincu, Bitovnji, na komunikaciji Ivan-sedlo-Tarčin, Bjelašnici, Trnovi, Drini, Sandžaku, potom po prelasku u Srbiju na Zlatiboru, Palisadu. Dubu, Kosjeriću, Maljenu, Valjevu, Ubu. Ralji, Avali, Beogradu, zatim u teškim borbama, kod Šida, Tovarnika, Šidskih Banovaca, zatim u završnim operacijama pravcem Šarengrad, Vukovar, Borovo, Đakovo, Pleternica, Okučani, Novska, Čazma, Vrbovec, Zagreb, gdje i dočekuje kraj rata, kao komandir voda. Poslije rata 1945. godine je demobilisan. Umro je 23. kolovoza 1962. godine."
+    },
+    "reason": "Name read from the page: \"Roman Sime Roko Piv-Ćev\" is Roman Sime Roko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159263,
+    "action": "edit",
+    "soldier_id": "0001400832",
+    "fields": {
+      "last_name": "",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Stipe",
+      "additional_info": "Dalmatinac. Borac 3. bataljona.",
+      "birth_place": "Dalmacija"
+    },
+    "reason": "Name read from the page: \"Stipe DalmatinacBorac3 bataljona\" is Stipe (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159264,
+    "action": "edit",
+    "soldier_id": "0001400833",
+    "fields": {
+      "first_name": "Ante",
+      "additional_info": "zvani Galin; rođen Zrnovica, Split, radnik-kovač. Član KPJ od 1939. Bio jedan od naprednih radnika koji je u pripremnom razdoblju ustanka neumorno radio i učestvovao u nizu ilegalnih akcija protiv okupatora i domaćih izdajnika. U NOB-u stupio je od 1941. godine u Žrnovačku udarnu grupu, a ožujka 1942. u Mosorski odred, iz kojeg je kolovoza 1942. godine, kod Livna, ušao u sastav Prateće čete 1. crnogorskog bataljona 1. proleterske NOU brigade, s kojom nastavlja borbe, na Ključu, Strmici, Sitnici, Jajcu, u centralnoj Bosni, kod Kotor-Varoši, Calinca, Banje Luke, Teslića, kada je siječnja 1943. prekomandiran u sastav artiljerije 1. proleterske divizije, a kasnije 3. diviziju, iz koje je prekomandiran u artiljeriju V Komande. Hrabro je poginuo, krajem 1. maja 1943. f odine, u borbi s Nijemcima od Tare."
+    },
+    "reason": "Name read from the page: \"Stipica Blaža Ante Ga-Lin\" is Stipica Blaža Ante (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159265,
+    "action": "edit",
+    "soldier_id": "0001400877",
+    "fields": {
+      "first_name": "Šime",
+      "additional_info": "zvani Škoda; rođen 1919, Murter, Šibenik, radnik-ribar. Potiče iz siromašne seljačko-ribarske obitelji. Napredan omladinac. Početkom 1941. bio je u zatvoru 15 dana zbog političkih opredjeljenja. Po okupaciji zemlje opredjeljuje se i radi za NOP. Drugom polovinom 1942. postaje član SKOJ-a. Krajem 1942. odlazi u partizane i stupa u 3. dalmatinsku brigadu u čijim se redovima bori po Bosni i Dalmaciji pokazujući se vrlo hrabrim, posebno kroz IV i V neprijateljsku ofanzivu, u teškim bitkama, na prostoru Imotski-Posušje-Jablanica, zatim po prelasku Neretve duž Hercegovine - Nevesinje, Ulog, Kalinovik, Zavajita, Ljubinja i Sandžaka, Tare, Mratinje, Pive, Vučevo, sve do početka lipnja 1943. kada na Zelengori dolazi u sastav 3. kragujevačkog bataljona 1. proleterske NOU brigade s kojim nastavlja borbu preko Miljevine, a potom preko istočne i srednje Bosne do Dalmacije, i natrag u borbama, oko Travnika, Turbeta, Jajca, Mrkonjić-Grada, Lisine, Mliništa; za vreme drvarske operacije, te u nadiranju brigade na istok, preko Kupreškog polja, Vukovskog, pl. Vraniće, Bitovnje, Bjelašnice, Foče, Sandžaka, zatim prelaskom u Srbiju, pravcem Zlatibor-Palisad-Kosjerić-Makljen, Valjevo, Ub, Ralja, Beograd; potom preko Srijema i Slavonije do Zagreba, gdje i dočekuje kraj rata kao član KPJ i komandir Minobacačke čete, u činu potporučnika. U Armiji ostaje do travnja 1946. godine kada se demobilizira."
+    },
+    "reason": "Name read from the page: \"Turčinov Marka ŠIME ŠKODA rc^đen\" is Turčinov Marka Šime (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159266,
+    "action": "edit",
+    "soldier_id": "0001401062",
+    "fields": {
+      "first_name": "Ante",
+      "additional_info": "zvani Longo; rođen 1923, Gradina-Lozovac, Šibenik, radnik. Potiče iz siromašne seljačke obitelji. Za NOP radi od početka 1942. godine, a prvih dana listopada, te godine odlazi u partizane i u Ključu ulazi u sastav 6. beogradskog bataljona 1. proleterske NOU brigade. Već u prvim borbama na Grahovu, Jajcu, ističe se kao izvanredno hrabar, što je u narednim borbama preko centralne Bosne stalno potvrđivao, naročito toko IV i V neprijateljske ofanzive, u teškim bitkama, Lukoču, Konjicu, Brazdini, G. Vakufu, Ulogu, kod Kalinovika, kada su ga drugovi zbog svoje hrabrosti prozvali »Longo« postaje član SKOJ-a, potom nastavlja bitke preko Drine, Krčinog brda, Kapka, Ifsara, Čajniče, Bijelog Polja, Celebića, Korlata, Trovrha, Tare, Vučeva, Suhe-Sutjeske, Zelengore, Balinovca, Miljevine kao puškomitraljezac »šardžija« koji nemilosrdno tuče neprijatelja; potom preko istočne Bosne Han-Pijesak, Vlasenice, Zvornika, zatim preko Vanduka, i srednje Bosne do Dalmacije i natrag oko Travnika, gdje je 1. studenog 1943. godine kod Turbeta poginuo od neprijateljske granate. Bio je čuven u bataljonu i brigadi po svojoj hrabrosti. Član KPJ postao je lipnja"
+    },
+    "reason": "Name read from the page: \"Šupe Jakova Ante Lon-Go\" is Šupe Jakova Ante (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159267,
+    "action": "edit",
+    "soldier_id": "0002001280",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Todor"
+    },
+    "reason": "Name read from the page: \"Ćurčić Tod or\" is Ćurčić Todor"
+  },
+  {
+    "id": 159268,
+    "action": "edit",
+    "soldier_id": "0002001326",
+    "fields": {
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan"
+    },
+    "reason": "Name read from the page: \"Damjanović St e van a Đuro\" is Damjanović Stevana Đuro"
+  },
+  {
+    "id": 159269,
+    "action": "edit",
+    "soldier_id": "0002001706",
+    "fields": {
+      "middle_name": "D.",
+      "fathers_name": "",
+      "first_name": "Franjo",
+      "additional_info": "iz Sinca, Otočac, poginuo u Sremu februara 1945"
+    },
+    "reason": "Name read from the page: \"Dubravčić D. Franjom iz Sinca\" is Dubravčić D. Franjo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159270,
+    "action": "edit",
+    "soldier_id": "0002002404",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Miha",
+      "additional_info": "iz Sušaka, mitraljeska četa"
+    },
+    "reason": "Name read from the page: \"Grheš Miha iz Sušaka\" is Grheš Miha (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159271,
+    "action": "edit",
+    "soldier_id": "0002005161",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Kata",
+      "additional_info": "iz Brezovca s Korduna, poginula kod Lovinca 17. 3. 1943",
+      "birth_place": "Brezovac"
+    },
+    "reason": "Name read from the page: \"Milošević Kata iz Brezovca s Korduna\" is Milošević Kata (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159272,
+    "action": "edit",
+    "soldier_id": "0002005310",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Mile",
+      "additional_info": "iz Dabra, Otočac, 3. bataljon"
+    },
+    "reason": "Name read from the page: \"Miščević Mile iz Dabra\" is Miščević Mile (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159273,
+    "action": "edit",
+    "soldier_id": "0002006331",
+    "fields": {
+      "middle_name": "Dacinov",
+      "fathers_name": "",
+      "first_name": "Janko",
+      "additional_info": "iz Raduča, Gospić, u prvom sastavu »Jurišne čete«. 49 801"
+    },
+    "reason": "Name read from the page: \"Pejnović Dacinov Janko iz Raduča\" is Pejnović Dacinov Janko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159274,
+    "action": "edit",
+    "soldier_id": "0002006974",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Ante",
+      "additional_info": "iz Smiljana, u NOB od 1942, 2. bataljon"
+    },
+    "reason": "Name read from the page: \"Prpić Ante iz Smiljana\" is Prpić Ante (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159275,
+    "action": "edit",
+    "soldier_id": "0002007569",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Milan",
+      "additional_info": "u jesen politički delegat voda, 1. bataljon"
+    },
+    "reason": "Name read from the page: \"Rogić Milan u jesen politički delegat voda\" is Rogić Milan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159276,
+    "action": "edit",
+    "soldier_id": "0002008037",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Dragan",
+      "additional_info": "u spisku boraca nestalih u NOB"
+    },
+    "reason": "Name read from the page: \"Stanković Dragan u spisku Nob\" is Stanković Dragan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159277,
+    "action": "edit",
+    "soldier_id": "0002008409",
+    "fields": {
+      "middle_name": "Mile",
+      "fathers_name": "Mile",
+      "first_name": "Jovo",
+      "additional_info": "iz Turjanskog, Otočac, desetar, u spisku teže ranjenih 13. 4. 1945. u Gradištu",
+      "birth_place": "Turjansko, Otočac"
+    },
+    "reason": "Name read from the page: \"Svilar Mile Jovo iz Turjanskog\" is Svilar Mile Jovo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159278,
+    "action": "edit",
+    "soldier_id": "0002009053",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Miloš",
+      "additional_info": "iz Poduma, 3. bataljon"
+    },
+    "reason": "Name read from the page: \"Uzelac Miloš iz Poduma\" is Uzelac Miloš (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159279,
+    "action": "edit",
+    "soldier_id": "0006000325",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Banić Ranjen u Žuberku Jure\" is Banić Jure"
+  },
+  {
+    "id": 159280,
+    "action": "edit",
+    "soldier_id": "0006001233",
+    "fields": {
+      "last_name": "Doganović",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Velisav"
+    },
+    "reason": "Name read from the page: \"Dog Vić Velisav Ano\" is Doganović Velisav"
+  },
+  {
+    "id": 159281,
+    "action": "edit",
+    "soldier_id": "0006002153",
+    "fields": {
+      "middle_name": "Ile",
+      "fathers_name": "",
+      "first_name": "Makso"
+    },
+    "reason": "Name read from the page: \"Ilić Makso lie\" is Ilić Ile Makso"
+  },
+  {
+    "id": 159282,
+    "action": "edit",
+    "soldier_id": "0006003254",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Kuiči Italija. t Giovani\" is Kuiči Giovani"
+  },
+  {
+    "id": 159283,
+    "action": "edit",
+    "soldier_id": "0006005455",
+    "fields": {
+      "last_name": "Podviz",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Mijo"
+    },
+    "reason": "Name read from the page: \"Pod Mijo Viz\" is Podviz Mijo"
+  },
+  {
+    "id": 159284,
+    "action": "edit",
+    "soldier_id": "0006005937",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Stjepan",
+      "additional_info": "ili Randula; Sibilj, Slavonski Brod."
+    },
+    "reason": "Name read from the page: \"Rendula Randula Stjepan ili\" is Rendula Stjepan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159285,
+    "action": "edit",
+    "soldier_id": "0009000440",
+    "fields": {
+      "first_name": "Aleksandar",
+      "additional_info": "zvani Aca; Novi Karlovci (Sase), komandir čete"
+    },
+    "reason": "Name read from the page: \"Jovanović Aleksandar Aca Novi\" is Jovanović Aleksandar (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159286,
+    "action": "edit",
+    "soldier_id": "0009000698",
+    "fields": {
+      "last_name": "Marjoš",
+      "first_name": "Andraš"
+    },
+    "reason": "Name read from the page: \"Mar Ileš još i Andraš\" is Marjoš Ileš Andraš"
+  },
+  {
+    "id": 159287,
+    "action": "edit",
+    "soldier_id": "0009001195",
+    "fields": {
+      "last_name": "Terzin",
+      "first_name": "Srbinko"
+    },
+    "reason": "Name read from the page: \"Terz Veljko in Srbinko Srba\" is Terzin Veljko Srbinko"
+  },
+  {
+    "id": 159288,
+    "action": "edit",
+    "soldier_id": "0009001337",
+    "fields": {
+      "last_name": "Vutikajlo",
+      "first_name": "Stevan"
+    },
+    "reason": "Name read from the page: \"Vutìka j lo Stevan\" is Vutikajlo Stevan"
+  },
+  {
+    "id": 159289,
+    "action": "edit",
+    "soldier_id": "0014000211",
+    "fields": {
+      "last_name": "Erceg",
+      "middle_name": "Š.",
+      "first_name": "Živko",
+      "additional_info": "rođen 1921, s. G. Rakani, Bosanski Novi, poginuo 28. septembra 1944, kod D. Topole, Bosanska Gradiška."
+    },
+    "reason": "Name read from the page: \"Erc Eg\" is Erceg Š. Živko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159290,
+    "action": "edit",
+    "soldier_id": "0021000753",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Milić",
+      "additional_info": "ili Drlačić; iz Loznice (ili okoline). U Brigadi od 20. decembra 1944, u 2. četi 1. bataljona. Ranjen 16. aprila 1945. u Đakovu."
+    },
+    "reason": "Name read from the page: \"Dragetić Ili Drlačić\" is Dragetić Milić (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159291,
+    "action": "edit",
+    "soldier_id": "0021004802",
+    "fields": {
+      "middle_name": "Hr.",
+      "first_name": "Stanoje",
+      "additional_info": "rođen 1926, Porodin. Aleksinac, zemljoradnik. U Brigadi od februara 1944. politički delegat u 1. četi 1. bataljona. Ranjen (oštećeno oko) 22. decembra 1944. kod Otoka."
+    },
+    "reason": "Name read from the page: \"Stanković Hr\" is Stanković Hr. Stanoje (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159292,
+    "action": "edit",
+    "soldier_id": "0021005146",
+    "fields": {
+      "first_name": "Velimir",
+      "additional_info": "rođen 1923, Crkvice, Bojnik, zemljoradnik. U Brigadi od maja 1944. godine, prateća četa. Ranjen 14. septembra kod Požege."
+    },
+    "reason": "Name read from the page: \"Stojiljković Čedomira Ve\" is Stojiljković Čedomira Velimir (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159293,
+    "action": "edit",
+    "soldier_id": "0024000054",
+    "fields": {
+      "last_name": "Babić",
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Bab tĆ Rade\" is Babić Rade"
+  },
+  {
+    "id": 159294,
+    "action": "edit",
+    "soldier_id": "0024000599",
+    "fields": {
+      "last_name": "Kubet",
+      "middle_name": "Milana",
+      "fathers_name": "Milan",
+      "first_name": "Gojko",
+      "additional_info": "rođen 1909, u Ljusini, Bosanska Krupa, Srbin, zemljoradnik, u NOB od oktobra 1942, u brigadi od 1942, borac, poginuo 1944. u istočnoj Bosni, 1. četa, 3. bataljon;"
+    },
+    "reason": "Name read from the page: \"Kub Et\" is Kubet Milana Gojko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159295,
+    "action": "edit",
+    "soldier_id": "0029000395",
+    "fields": {
+      "first_name": "Silja",
+      "additional_info": "rođen 1905. godine u s. Meljenica — Kosovo. U NOB od 1943. godine. Poginuo 10. marta 1945. godine kod Sokolca u borbi sa Nijemcima."
+    },
+    "reason": "Name read from the page: \"Meholi Imer Sil\" is Meholi Imer Silja (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159296,
+    "action": "edit",
+    "soldier_id": "0029000800",
+    "fields": {
+      "first_name": "Mijo",
+      "additional_info": "rođen 1923. godine u Bistarcu — Lukavac. U NOB od 1943. godine. Poginuo kao komandir čete decembra 1944. godine na Romaniji u borbi sa četnicima."
+    },
+    "reason": "Name read from the page: \"Tunjić Tomo Mi\" is Tunjić Tomo Mijo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159297,
+    "action": "edit",
+    "soldier_id": "0030000196",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": ""
+    },
+    "reason": "Name read from the page: \"Feh iuR Stjepan\" is Feh Stjepan"
+  },
+  {
+    "id": 159298,
+    "action": "edit",
+    "soldier_id": "0030000736",
+    "fields": {
+      "last_name": "Stojanović",
+      "first_name": "Dragutin",
+      "additional_info": "rođen 1923, Bujavica, Pakrac, 2. četa 2. bataljon, poginuo 27. I 1945. u s. Amajlije, Bijeljina"
+    },
+    "reason": "Name read from the page: \"Stc Janovič\" is Stojanović Dragutin (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159299,
+    "action": "edit",
+    "soldier_id": "0045010786",
+    "fields": {
+      "first_name": "Savan",
+      "additional_info": "1902, Kobiljak, kotar Dvor, zemljoradnik, Srbin. Borac od 1942. godine, poginuo 14. 11. 1942. u napadu na Slunj."
+    },
+    "reason": "Name read from the page: \"Stanar Milana Sa\" is Stanar Milana Savan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159300,
+    "action": "edit",
+    "soldier_id": "0048011000",
+    "fields": {
+      "first_name": "Aljup"
+    },
+    "reason": "Name read from the page: \"Hodžić Alj Up\" is Hodžić Aljup"
+  },
+  {
+    "id": 159301,
+    "action": "edit",
+    "soldier_id": "0048013672",
+    "fields": {
+      "first_name": "Stojan",
+      "additional_info": "zvani Čojda; rođen 1912. Brđani, Šipovo. Srbin, radnik. U NOB-i od 1941. Član KPJ od 1943. Borac 3. čete 4. bataljona. U ratu intendant bataljona."
+    },
+    "reason": "Name read from the page: \"Vujković Maksima Stojan-Čoj-Da\" is Vujković Maksima Stojan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159302,
+    "action": "edit",
+    "soldier_id": "0049011662",
+    "fields": {
+      "last_name": "Trikić-Stević",
+      "middle_name": "Lazara",
+      "fathers_name": "Lazar",
+      "first_name": "Dragica"
+    },
+    "reason": "Name read from the page: \"Trikić — STEVIČ Lazara DRAGICA\" is Trikić-Stević Lazara Dragica"
+  },
+  {
+    "id": 159303,
+    "action": "edit",
+    "soldier_id": "0049011726",
+    "fields": {
+      "first_name": "Hata",
+      "additional_info": "1924, Tuzla, Jugosloven, radnica, u NOB od septembra 1943, u brigadi od 15.3.1945, referent saniteta bataljona."
+    },
+    "reason": "Name read from the page: \"Vidas Muharema Hat\" is Vidas Muharema Hata (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159304,
+    "action": "edit",
+    "soldier_id": "0052001383",
+    "fields": {
+      "first_name": "Dragoslav",
+      "additional_info": "zvani Mali Muratovac; rođen 1921. godine u Amajlijama, Bijeljina, SRBiH, Srbin, zemljoradnik. U NOB-u stupio 17. 8. 1942. godine, a u Brigadu aprila 1944. godine, borac 3. bataljona, desetar izviđačke čete. Član KPJ od 1944. godine, ratni vojni invalid. Umro 1983. godine."
+    },
+    "reason": "Name read from the page: \"Stanojlović Jovana Dragoslav Mali Muratovac\" is Stanojlović Jovana Dragoslav (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159305,
+    "action": "edit",
+    "soldier_id": "0052001499",
+    "fields": {
+      "first_name": "Toso",
+      "additional_info": "zvani Posavac; rođen 1914. godine u Bosanskom Šamcu, SRBiH, Srbin, radnik. U NOB-u stupio 10. 12. 1942. godine, a u Brigadu juna 1944. godine, borac pri Štabu Brigade. Član KPJ od marta 1943. godine."
+    },
+    "reason": "Name read from the page: \"Tovirac Luke Toso Posa Vac\" is Tovirac Luke Toso (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159306,
+    "action": "edit",
+    "soldier_id": "0053000609",
+    "fields": {
+      "last_name": "Doković",
+      "first_name": "Roko"
+    },
+    "reason": "Name read from the page: \"Do Ko Vić Roko\" is Doković Roko"
+  },
+  {
+    "id": 159307,
+    "action": "edit",
+    "soldier_id": "0053000667",
+    "fields": {
+      "first_name": "Marija",
+      "additional_info": "sekretar SKOJ-a 1. č. 4. bat., r. 18. 7. 1925, Lastovo, domaćica, u NOB od 15. 3. 1944, član SKOJ-a od novembra 1943, član KPJ od marta 1945, NOP-u pristupila septembra 1943."
+    },
+    "reason": "Name read from the page: \"Dražinić-Pavlicević Emanuela Ma\" is Dražinić-Pavlicević Emanuela Marija (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159308,
+    "action": "edit",
+    "soldier_id": "0053001465",
+    "fields": {
+      "first_name": "Slavica",
+      "additional_info": "bolničarka prateće čete brigade, r. 11. 11.1928, Stranice, Celje, u NOB od 7. 8. 1943, član SKOJ-a od 1943, NOP-u pristupila početkom 1943."
+    },
+    "reason": "Name read from the page: \"Križanac-Valerijev Zvonimira Sla\" is Križanac-Valerijev Zvonimira Slavica (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159309,
+    "action": "edit",
+    "soldier_id": "0053001598",
+    "fields": {
+      "last_name": "Lončar-Milovanović",
+      "middle_name": "Petra",
+      "fathers_name": "Petar",
+      "first_name": "Jela",
+      "additional_info": "bolničarka 1. č. 4. bat., r. 1926, Nebriževac, Imotski, domaćica, u NOB od 23. 1. 1943, član SKOJ-a, NOP-u pristupila"
+    },
+    "reason": "Name read from the page: \"Loncar-M Ilo Vano Vić\" is Lončar-Milovanović Petra Jela (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159310,
+    "action": "edit",
+    "soldier_id": "0053002537",
+    "fields": {
+      "first_name": "Veronika",
+      "additional_info": "bolničarka 1. č. 2. bat., r. 20. 9. 1926, Bast, Makarska, domaćica, u NOB od 10. 6. 1943, član SKOJ-a od 1943, član KPJ od 1944, NOP-u pristupila početkom 1942."
+    },
+    "reason": "Name read from the page: \"Ribarović-Jozipović Marijana Ve\" is Ribarović-Jozipović Marijana Veronika (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159311,
+    "action": "edit",
+    "soldier_id": "0053003055",
+    "fields": {
+      "first_name": "Mugdim"
+    },
+    "reason": "Name read from the page: \"Vukotić Salke Mug Dim\" is Vukotić Salke Mugdim"
+  },
+  {
+    "id": 159312,
+    "action": "edit",
+    "soldier_id": "0055000288",
+    "fields": {
+      "last_name": "Kovačević",
+      "middle_name": "Alekse",
+      "fathers_name": "Aleksa",
+      "first_name": "Mirko"
+    },
+    "reason": "Name read from the page: \"Kova ČEVIĆ Alekse Mirko\" is Kovačević Alekse Mirko"
+  },
+  {
+    "id": 159313,
+    "action": "edit",
+    "soldier_id": "0055000671",
+    "fields": {
+      "last_name": "Ranđić-Alijagić",
+      "middle_name": "Boža",
+      "fathers_name": "Božo",
+      "first_name": "Ljubinka"
+    },
+    "reason": "Name read from the page: \"Ranđić ALIJAGIĆ Boža Ljubinka\" is Ranđić-Alijagić Boža Ljubinka"
+  },
+  {
+    "id": 159314,
+    "action": "edit",
+    "soldier_id": "0055000719",
+    "fields": {
+      "last_name": "Stamenković-Cvetković",
+      "middle_name": "Janja",
+      "first_name": "Stanko"
+    },
+    "reason": "Name read from the page: \"Stamenković CVETKOVIĆ Janja Stanko\" is Stamenković-Cvetković Janja Stanko"
+  },
+  {
+    "id": 159315,
+    "action": "edit",
+    "soldier_id": "0056000456",
+    "fields": {
+      "last_name": "Duraković",
+      "middle_name": "I.",
+      "first_name": "Ale",
+      "additional_info": "1916, Kruševo Brdo (opština Kotor-Varoš)"
+    },
+    "reason": "Name read from the page: \"Dur Ako Vic\" is Duraković I. Ale (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159316,
+    "action": "edit",
+    "soldier_id": "0056001580",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Damljan"
+    },
+    "reason": "Name read from the page: \"Petrović Milanka D Aml Jan\" is Petrović Damljan"
+  },
+  {
+    "id": 159317,
+    "action": "edit",
+    "soldier_id": "0056001727",
+    "fields": {
+      "first_name": "Milivoje"
+    },
+    "reason": "Name read from the page: \"Radovanović M Mili Vo Je\" is Radovanović M Milivoje"
+  },
+  {
+    "id": 159318,
+    "action": "edit",
+    "soldier_id": "0057002420",
+    "fields": {
+      "last_name": "Orlovin-Cvejin"
+    },
+    "reason": "Name read from the page: \"Orlovin — Cvejin Emilija\" is Orlovin-Cvejin Emilija"
+  },
+  {
+    "id": 159319,
+    "action": "edit",
+    "soldier_id": "0057003805",
+    "fields": {
+      "middle_name": "H.",
+      "first_name": "Rešad",
+      "additional_info": "zvani Mrki; rođen 1925. s. Ograđenovac, Brčko, zemljoradnik, borac, poginuo 22. 10. 1943. kod Brčkog."
+    },
+    "reason": "Name read from the page: \"Zohorović X Rešad Mrki\" is Zohorović H. Rešad (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159320,
+    "action": "edit",
+    "soldier_id": "0064000881",
+    "fields": {
+      "first_name": "Milka",
+      "additional_info": "por. Blažič; 1920, Ajdovščina"
+    },
+    "reason": "Name read from the page: \"Gul p. Blažič Milka\" is Gul Milka (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159321,
+    "action": "edit",
+    "soldier_id": "0064003340",
+    "fields": {
+      "first_name": "Ivan"
+    },
+    "reason": "Name read from the page: \"Černigoj lvan\" is Černigoj Ivan"
+  },
+  {
+    "id": 159322,
+    "action": "edit",
+    "soldier_id": "0069000364",
+    "fields": {
+      "last_name": "Garidov",
+      "middle_name": "Pavlovič",
+      "first_name": "Nikolaj"
+    },
+    "reason": "Name read from the page: \"Garidovni Ko Laj Pavlo-Vič\" is Garidov Pavlovič Nikolaj"
+  },
+  {
+    "id": 159323,
+    "action": "edit",
+    "soldier_id": "0069000751",
+    "fields": {
+      "last_name": "Kogovšek",
+      "first_name": "Gabrijel"
+    },
+    "reason": "Name read from the page: \"Kogovšekgab Rij El\" is Kogovšek Gabrijel"
+  },
+  {
+    "id": 159324,
+    "action": "edit",
+    "soldier_id": "0069000932",
+    "fields": {
+      "last_name": "Kumbatovič",
+      "first_name": "Filip",
+      "additional_info": "inž.; zvani Kalan; * Maribor; Ljubljana, književnik; † po vojni"
+    },
+    "reason": "Name read from the page: \"Kumbatovičinž Filip Ka Lan\" is Kumbatovič Filip (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159325,
+    "action": "edit",
+    "soldier_id": "0075000220",
+    "fields": {
+      "first_name": "Laslo",
+      "additional_info": "iz Rajinog Sela, 1929, poginuo kod Batine."
+    },
+    "reason": "Name read from the page: \"Boroš La\" is Boroš Laslo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159326,
+    "action": "edit",
+    "soldier_id": "0075000922",
+    "fields": {
+      "last_name": "Kovačev",
+      "first_name": "Milorad",
+      "additional_info": "dr.; Novo Miloševo"
+    },
+    "reason": "Name read from the page: \"Kovače Vdr\" is Kovačev Milorad (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159327,
+    "action": "edit",
+    "soldier_id": "0075001250",
+    "fields": {
+      "first_name": "Đorđe",
+      "additional_info": "Sivac"
+    },
+    "reason": "Name read from the page: \"Milesev Do\" is Milesev Đorđe (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159328,
+    "action": "edit",
+    "soldier_id": "0075001562",
+    "fields": {
+      "last_name": "Pavlović",
+      "first_name": "Dragoslav",
+      "additional_info": "dr.; Bela Crkva"
+    },
+    "reason": "Name read from the page: \"Pavlovi Cdr\" is Pavlović Dragoslav (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159329,
+    "action": "edit",
+    "soldier_id": "0077000990",
+    "fields": {
+      "first_name": "Ben Damjan",
+      "additional_info": "rođen u Sarajevu. Jevrejin. U NOB-i od"
+    },
+    "reason": "Name read from the page: \"Samokovlija Ben\" is Samokovlija Ben Damjan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159330,
+    "action": "edit",
+    "soldier_id": "0079000452",
+    "fields": {
+      "first_name": "Stojan",
+      "additional_info": "iz Nina, u borbi na Grižama, 16. IV 1945."
+    },
+    "reason": "Name read from the page: \"Kević Blaže Sto\" is Kević Blaže Stojan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159331,
+    "action": "edit",
+    "soldier_id": "0079000821",
+    "fields": {
+      "last_name": "Opačić",
+      "first_name": "Miloš",
+      "additional_info": "iz Gračaca, u borbi na Šupljaji, 30. IX 1943."
+    },
+    "reason": "Name read from the page: \"Op Acic\" is Opačić Miloš (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159332,
+    "action": "edit",
+    "soldier_id": "0079000994",
+    "fields": {
+      "first_name": "Stojan",
+      "additional_info": "iz Novigrada, u borbi kod Murvica, 12. X 1944."
+    },
+    "reason": "Name read from the page: \"Salina Jose Sto\" is Salina Jose Stojan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159333,
+    "action": "edit",
+    "soldier_id": "0079001105",
+    "fields": {
+      "middle_name": "Stevana",
+      "fathers_name": "Stevan",
+      "first_name": "Petar"
+    },
+    "reason": "Name read from the page: \"Tampelja St Evana Petar\" is Tampelja Stevana Petar"
+  },
+  {
+    "id": 159334,
+    "action": "edit",
+    "soldier_id": "0085000475",
+    "fields": {
+      "first_name": "Stojan",
+      "additional_info": "zvani Tabak; (1921. Pirot), borac od 1943. u brigadi, komandir čete u Trećem bataljonu, poginuo 23. 4. 1944. na Rnjosu, u Lužnici-u borbi protiv bugarskih fašista."
+    },
+    "reason": "Name read from the page: \"Miladinović V Stojan - Tabak\" is Miladinović V Stojan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159335,
+    "action": "edit",
+    "soldier_id": "0087000259",
+    "fields": {
+      "middle_name": "",
+      "fathers_name": "",
+      "additional_info": "ili Mitić; iz Preševa; poginuo 27.04.1944, Lisec, Osogovske planine."
+    },
+    "reason": "Name read from the page: \"Mitrović Ijš Mitić Dobrivoje\" is Mitrović Dobrivoje (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159336,
+    "action": "edit",
+    "soldier_id": "0088000110",
+    "fields": {
+      "middle_name": "Vojislava",
+      "fathers_name": "Vojislav",
+      "additional_info": "rođen 4. 3. 1921. u selu Gradištu, Vlasotince, Srbin, zemljoradnik, u NOB od prve polovine avgusta 1944, u Brigadi od 15. 8. 1944, borac 2. čete 2. bataljona, poginuo 3. 9. 1944. prilikom napada na selo Džep, Vladičin Han. Nije sahranjen."
+    },
+    "reason": "Name read from the page: \"Kostić Voj Blagoje\" is Kostić Vojislava Blagoje (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159337,
+    "action": "edit",
+    "soldier_id": "0097000982",
+    "fields": {
+      "first_name": "Milan",
+      "additional_info": "zvani Čokara; k-dant, T-P odreda, Dugo Selo, 17.06.44"
+    },
+    "reason": "Name read from the page: \"Radović Milan - Čokara\" is Radović Milan (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159338,
+    "action": "edit",
+    "soldier_id": "0097001207",
+    "fields": {
+      "first_name": "Pavao",
+      "additional_info": "narodni heroj, ŽB, 1907. Novaki. Samobor, poginuo Kerestinec, 10.04.43"
+    },
+    "reason": "Name read from the page: \"Videković Pavao - Nar\" is Videković Pavao (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159339,
+    "action": "edit",
+    "soldier_id": "0107000279",
+    "fields": {
+      "middle_name": "Stanije"
+    },
+    "reason": "Name read from the page: \"Kukolj Stani je Milan\" is Kukolj Stanije Milan"
+  },
+  {
+    "id": 159340,
+    "action": "edit",
+    "soldier_id": "0111000026",
+    "fields": {
+      "middle_name": "Paje",
+      "fathers_name": "Paja",
+      "first_name": "Pal"
+    },
+    "reason": "Name read from the page: \"Baso Pa J E Pal\" is Baso Paje Pal"
+  },
+  {
+    "id": 159341,
+    "action": "edit",
+    "soldier_id": "0120000126",
+    "fields": {
+      "first_name": "Gojko",
+      "additional_info": "1916, Kafanci, Grahovo."
+    },
+    "reason": "Name read from the page: \"Ignac Goj\" is Ignac Gojko (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159342,
+    "action": "edit",
+    "soldier_id": "0125000040",
+    "fields": {
+      "last_name": "Atijas",
+      "middle_name": "E.",
+      "fathers_name": "",
+      "additional_info": "rođen 1924, Sarajevo, đak, član SKOJ-a od 1942, u Bataljonu od početka 1942, borac, poginuo na Sutjesci."
+    },
+    "reason": "Name read from the page: \"Ati E Cevi\" is Atijas E. Cevi (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159343,
+    "action": "edit",
+    "soldier_id": "0125000105",
+    "fields": {
+      "middle_name": "T.",
+      "fathers_name": "",
+      "first_name": "Mitar",
+      "additional_info": "rođen 1921, Tasovčići, Čapljina, radnik, predratni aktivista radničkog pokreta, u Bataljonu od oktobra 1941, borac i ekonom."
+    },
+    "reason": "Name read from the page: \"Boškovič T Mit\" is Boškovič T. Mitar (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159344,
+    "action": "edit",
+    "soldier_id": "0125000419",
+    "fields": {
+      "last_name": "Lojpur",
+      "middle_name": "L.",
+      "fathers_name": "",
+      "additional_info": "rođen 1919, Spiljani, Konjic, radnik, u Bataljonu od septembra 1943, borac, poginuo u Spiljanima kod Konjica u jesen 1943."
+    },
+    "reason": "Name read from the page: \"Loj L Miloš\" is Lojpur L. Miloš (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159345,
+    "action": "edit",
+    "soldier_id": "0125000488",
+    "fields": {
+      "middle_name": "D.",
+      "fathers_name": "",
+      "first_name": "Ferhat",
+      "additional_info": "rođen 1904, Kopoići, Prozor, zemljoradnik, u Bataljonu od februara 1943, borac, umro od iscrpljenosti 1944."
+    },
+    "reason": "Name read from the page: \"Muratbegović D Fer\" is Muratbegović D. Ferhat (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159346,
+    "action": "edit",
+    "soldier_id": "0127000629",
+    "fields": {
+      "first_name": "Ljubiša",
+      "additional_info": "1924, Jovne Livade, Prokuplje, zemljoradnik. U NOVJ od maja 1944. godine, borac a zatim vodnik u 4. bataljonu. Poginuo 3. januara 1945. godine kod Donjeg Novog Sela, na Sremskom frontu."
+    },
+    "reason": "Name read from the page: \"Radević Bože Lj\" is Radević Bože Ljubiša (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159347,
+    "action": "edit",
+    "soldier_id": "0128001104",
+    "fields": {
+      "middle_name": "L.",
+      "first_name": "Mihajlo",
+      "additional_info": "1920, Turija"
+    },
+    "reason": "Name read from the page: \"Janković L)\" is Janković L. Mihajlo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159348,
+    "action": "edit",
+    "soldier_id": "0128004423",
+    "fields": {
+      "last_name": "Tomić",
+      "first_name": "Dobrosav",
+      "additional_info": "1912, Žitkovica"
+    },
+    "reason": "Name read from the page: \"Tom Ić\" is Tomić Dobrosav (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159349,
+    "action": "edit",
+    "soldier_id": "0128004756",
+    "fields": {
+      "first_name": "Ljubiša",
+      "additional_info": "1921. Kučajna"
+    },
+    "reason": "Name read from the page: \"Đorđević Lj\" is Đorđević Ljubiša (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159350,
+    "action": "edit",
+    "soldier_id": "0139000410",
+    "fields": {
+      "last_name": "Tomilov",
+      "first_name": "Igor",
+      "additional_info": ""
+    },
+    "reason": "Name read from the page: \"Tomi Lov\" is Tomilov Igor (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159351,
+    "action": "edit",
+    "soldier_id": "0139000478",
+    "fields": {
+      "first_name": "Izet",
+      "additional_info": "791378, vodnik, avio-mehaničar, rođen 12. 2. 1923, u Plevljima, došao sa Bliskog istoka 1944., u vazduhoplovstvu NOVJ od 10. 4. 1944"
+    },
+    "reason": "Name read from the page: \"Čaušević I\" is Čaušević Izet (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159352,
+    "action": "edit",
+    "soldier_id": "0161000275",
+    "fields": {
+      "middle_name": "M.",
+      "first_name": "Tomo",
+      "additional_info": "zvani Soplica; "
+    },
+    "reason": "Name read from the page: \"Prelec M. Tomo Soplica I)\" is Prelec M. Tomo (the bio's head that belonged to the name moved back)"
+  },
+  {
+    "id": 159353,
+    "action": "edit",
+    "soldier_id": "0164002686",
+    "fields": {
+      "last_name": "Stasevski",
+      "first_name": "August"
+    },
+    "reason": "Name read from the page: \"Stas E VS KI August\" is Stasevski August"
+  },
+  {
+    "id": 159354,
+    "action": "edit",
+    "soldier_id": "0164003464",
+    "fields": {
+      "last_name": "Žrvič"
+    },
+    "reason": "Name read from the page: \"žrvič Vlado\" is Žrvič Vlado"
+  },
+  {
+    "id": 159355,
+    "action": "delete",
+    "soldier_id": "0036010002",
+    "reason": "Not a soldier: \"4. b/ »tadija anusić«\" is the heading of the 4. bataljon (named after tadija anušić) in the monograph's list of company commanders and commissars (p. 3)"
+  },
+  {
+    "id": 159356,
+    "action": "delete",
+    "soldier_id": "0036010060",
+    "reason": "Not a soldier: the second half of the heading \"4. b/ »tadija anusić«\" (monograph p. 3)"
+  },
+  {
+    "id": 159357,
+    "action": "delete",
+    "soldier_id": "0036010474",
+    "reason": "Not a soldier: \"do kraja rata\" is the end of the heading \"3. bataljon - novi »biokovski« od 20. januara 1943. do kraja rata\" (monograph p. 3)"
+  },
+  {
+    "id": 159358,
+    "action": "delete",
+    "soldier_id": "0036011765",
+    "reason": "Not a soldier: \"rata\" is the end of the heading \"... do kraja rata\" (monograph p. 3)"
+  },
+  {
+    "id": 159359,
+    "action": "delete",
+    "soldier_id": "0014010705",
+    "reason": "Not a soldier: the list's title \"spisak poginulih i umrlih u toku nor-a iz 8. krajiške brigade\" read as an entry"
+  },
+  {
+    "id": 159360,
+    "action": "edit",
+    "soldier_id": "0040020050",
+    "fields": {
+      "last_name": "Leković",
+      "middle_name": "Nika",
+      "fathers_name": "Niko",
+      "first_name": "Blažo",
+      "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: borac, Boljevići, Crmnica, 1915, radnik, član KPJ, Poginuo 1943. na Gvozdu"
+    },
+    "reason": "Rows 44 and 45 of the list are printed over each other (\"ЛЕКОВИЋ Ника БЛАЖО\", \"ЛЕКОВИЋ Ђура ДАНИЦА\"), read as \"Bl i Ic\"; the right page sets their rows apart: the housewife born 1910 is Danica, so this row is Blažo's"
+  },
+  {
+    "id": 159361,
+    "action": "add",
+    "soldier_id": "0040020050",
+    "new_id": "0040021010",
+    "record": {
+      "last_name": "Leković",
+      "middle_name": "Đura",
+      "fathers_name": "Đuro",
+      "first_name": "Danica",
+      "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: borac, Boljevići, Crmnica, 1910, domaćica, član SKOJ-a",
+      "birth_year": "1910",
+      "unit_detail": "1. Četa",
+      "pdf_y": 498.2,
+      "pdf_file": "4-proleterska-formiranje.pdf",
+      "pdf_page": 9,
+      "pdf_x": 164.2
+    },
+    "reason": "Row 45 of the formation list, printed over row 44 (p. 9): Leković Đura Danica, 1910, domaćica, član SKOJ-a"
+  },
+  {
+    "id": 159362,
+    "action": "edit",
+    "soldier_id": "0040020291",
+    "fields": {
+      "first_name": "Veljko",
+      "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Češljari, Rijeka Crnojevića, 1923, zemljoradnik, član SKOJ-a, Poginuo 1944. na Čevu",
+      "birth_year": "1923"
+    },
+    "reason": "Rows 84 and 85 read as one (\"Veljko Jovićević Bogić\"): row 84 is Jovićević Boška Veljko (Češljari, 1923, fell 1944 on Čevo)"
+  },
+  {
+    "id": 159363,
+    "action": "add",
+    "soldier_id": "0040020291",
+    "new_id": "0040021011",
+    "record": {
+      "last_name": "Jovićević",
+      "middle_name": "Andrije",
+      "fathers_name": "Andrija",
+      "first_name": "Bogić",
+      "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Šinđon, Rijeka Crnojevića, 1919, zemljoradnik, član SKOJ-a",
+      "birth_year": "1919",
+      "unit_detail": "2. Četa",
+      "pdf_y": 384.6,
+      "pdf_file": "4-proleterska-formiranje.pdf",
+      "pdf_page": 27,
+      "pdf_x": 160.7
+    },
+    "reason": "Row 85 of the formation list (p. 27), read into row 84: Jovićević Andrije Bogić, Šinđon, 1919"
+  },
+  {
+    "id": 159364,
+    "action": "edit",
+    "soldier_id": "0009000378",
+    "fields": {
+      "first_name": "Nikola",
+      "additional_info": ""
+    },
+    "reason": "Two lines read as one (\"Ivić Nikola tvkov Kristifor, borac\"): this is Ivić Nikola, a name alone"
+  },
+  {
+    "id": 159365,
+    "action": "add",
+    "soldier_id": "0009000378",
+    "new_id": "0009001699",
+    "record": {
+      "last_name": "Ivkov",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Kristifor",
+      "additional_info": "borac",
+      "pdf_y": 118.8,
+      "pdf_x": 54.0,
+      "pdf_file": "prva-vojvodjanska.pdf",
+      "pdf_page": 12
+    },
+    "reason": "The line under Ivić Nikola (p. 12): \"Ivkov Kristifor, borac\" (the scan reads Iv as tv)"
+  },
+  {
+    "id": 159366,
+    "action": "edit",
+    "soldier_id": "0001400048",
+    "fields": {
+      "last_name": "Barišić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Ana",
+      "additional_info": ""
+    },
+    "reason": "Two entries read as one (\"Barišićanabarišićborou NOB-u\"): BARIŠIĆ ... ANA, a name alone (p. 285)"
+  },
+  {
+    "id": 159367,
+    "action": "add",
+    "soldier_id": "0001400048",
+    "new_id": "0001401117",
+    "record": {
+      "last_name": "Barišić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Boro",
+      "additional_info": "U NOB-u 1942. Ključ. Bio u 3. bataljonu.",
+      "pdf_y": 457.0,
+      "pdf_x": 103.0,
+      "pdf_file": "dalmatinci-prva-proleterska.pdf",
+      "pdf_page": 285
+    },
+    "reason": "The entry under Barišić Ana (p. 285): BARIŠIĆ . . BORO U NOB-u 1942. Ključ. Bio u 3. bataljonu."
+  },
+  {
+    "id": 159368,
+    "action": "edit",
+    "soldier_id": "0001400116",
+    "fields": {
+      "last_name": "Brajčić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Mate",
+      "additional_info": ""
+    },
+    "reason": "Two entries read as one (\"Brajčićmatebrajković Lovre PE-TARUNOB-u\"): BRAJČIĆ . . . MATE, a name alone (p. 285)"
+  },
+  {
+    "id": 159369,
+    "action": "add",
+    "soldier_id": "0001400116",
+    "new_id": "0001401118",
+    "record": {
+      "last_name": "Brajković",
+      "middle_name": "Lovre",
+      "fathers_name": "Lovro",
+      "first_name": "Petar",
+      "additional_info": "U NOB-u 1942. Bio u 4. bataljonu.",
+      "pdf_y": 312.0,
+      "pdf_x": 224.0,
+      "pdf_file": "dalmatinci-prva-proleterska.pdf",
+      "pdf_page": 285
+    },
+    "reason": "The entry under Brajčić Mate (p. 285): BRAJKOVIĆ Lovre PETAR. U NOB-u 1942. Bio u 4. bataljonu."
+  },
+  {
+    "id": 159370,
+    "action": "merge",
+    "soldier_id": "0001001150",
+    "merge_id": "0001401118",
+    "merge_name": "Brajković Lovre Petar",
+    "reason": "Same soldier in the brigade's roll and Dalmatinci u Prvoj proleterskoj: Brajković Lovre Petar, from Dalmatia (Lađevci, Šibenik)"
+  },
+  {
+    "id": 159371,
+    "action": "edit",
+    "soldier_id": "0001400660",
+    "fields": {
+      "middle_name": "Pere",
+      "fathers_name": "Pero",
+      "first_name": "Jure",
+      "additional_info": ""
+    },
+    "reason": "Three entries read as one (p. 286): PERKOVIĆ Pere JURE, a name alone"
+  },
+  {
+    "id": 159372,
+    "action": "add",
+    "soldier_id": "0001400660",
+    "new_id": "0001401119",
+    "record": {
+      "last_name": "Perković",
+      "middle_name": "Petra",
+      "fathers_name": "Petar",
+      "first_name": "Kuzman",
+      "additional_info": "Borac 6. bataljona.",
+      "pdf_y": 622.0,
+      "pdf_x": 382.0,
+      "pdf_file": "dalmatinci-prva-proleterska.pdf",
+      "pdf_page": 286
+    },
+    "reason": "The entry under Perković Pere Jure (p. 286): PERKOVIĆ Petra KUZMAN. Borac 6. bataljona."
+  },
+  {
+    "id": 159373,
+    "action": "merge",
+    "soldier_id": "0001009178",
+    "merge_id": "0001401119",
+    "merge_name": "Perković Petra Kuzman",
+    "reason": "Same soldier in the brigade's roll and Dalmatinci u Prvoj proleterskoj: Perković Petra Kuzman, from Čista Velika, Šibenik"
+  },
+  {
+    "id": 159374,
+    "action": "add",
+    "soldier_id": "0001400660",
+    "new_id": "0001401120",
+    "record": {
+      "last_name": "Petričević",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Darko",
+      "additional_info": "",
+      "pdf_y": 638.0,
+      "pdf_x": 382.0,
+      "pdf_file": "dalmatinci-prva-proleterska.pdf",
+      "pdf_page": 286
+    },
+    "reason": "The third entry read into Perković Pere Jure (p. 286): PETRIČEVIĆ . . . DARKO, a name alone"
+  },
+  {
+    "id": 159375,
+    "action": "edit",
+    "soldier_id": "0001400723",
+    "fields": {
+      "first_name": "Ferdo",
+      "additional_info": ""
+    },
+    "reason": "Two entries read as one (\"Ferdo Putniković Niko-La\"): PUPOVAC Spase FERDO, a name alone (p. 287)"
+  },
+  {
+    "id": 159376,
+    "action": "add",
+    "soldier_id": "0001400723",
+    "new_id": "0001401121",
+    "record": {
+      "last_name": "Putniković",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Nikola",
+      "additional_info": "rođen 1920. U NOB-u 1942. Borac 4. bataljona.",
+      "birth_year": "1920",
+      "pdf_y": 360.0,
+      "pdf_x": 89.0,
+      "pdf_file": "dalmatinci-prva-proleterska.pdf",
+      "pdf_page": 287
+    },
+    "reason": "The entry under Pupovac Spase Ferdo (p. 287): PUTNIKOVIĆ ... NIKOLA, rođen 1920. U NOB-u 1942. Borac 4. bataljona."
+  },
+  {
+    "id": 159377,
+    "action": "merge",
+    "soldier_id": "0001009989",
+    "merge_id": "0001401121",
+    "merge_name": "Putniković Nikola",
+    "reason": "Same soldier in the brigade's roll and Dalmatinci u Prvoj proleterskoj: Putniković Nikola, born 1920, in the NOB from 1942"
+  },
+  {
+    "id": 159378,
+    "action": "edit",
+    "soldier_id": "0048010818",
+    "fields": {
+      "additional_info": "rođen 1926. Ljubinje, Ključ. Srbin, zemljoradnik. U NOB-i od 1941. Borac-kuvar 2. čete 2. bataljona."
+    },
+    "reason": "The entry's end, at the head of the next column (p. 44: \"NOB-I OD 1941. Borac-kuvar 2. čete 2. bataljona.\"), had been read as an entry"
+  },
+  {
+    "id": 159379,
+    "action": "delete",
+    "soldier_id": "0048012374",
+    "reason": "Not a soldier: \"NOB-I OD 1941. Borac-kuvar 2. čete 2. bataljona.\" is the end of Garić S Nikola's entry (0048010818), at the head of the next column (p. 44)"
+  },
+  {
+    "id": 159380,
+    "action": "edit",
+    "soldier_id": "0015000212",
+    "fields": {
+      "additional_info": "majka Vasilija; zvani Feđa; politički komesar brigade. Rođen 27. XII 1913. godine u Kragujevcu. Visokokvalifikovani mašinbravar. Srbin. Član KPJ od 1939. godine. U radničkom pokretu od pre rata. Nosilac Partizanske spomenice od 1941. godine. Bio na rukovodećim dužnostima u Kragujevačkom NOP odredu, 1. proleterskoj i 4. krajiškoj brigadi. Politički komesar 1. šumadijske brigade od početka novembra 1943. godine. Na istoj dužnosti u 3. srpskoj brigadi. Posle oslobođenja radio u Udbi. Penzionisan decembra 1964. godine sa dužnosti načelnika uprave. Rezervni pukovnik JNA. Član Saveta Republike i aktiva CK SKS. Živi u Beogradu."
+    },
+    "reason": "The entry's end (\"CK SKS. Živi u Beogradu.\", p. 47) had been read as an entry of its own"
+  },
+  {
+    "id": 159381,
+    "action": "delete",
+    "soldier_id": "0015000032",
+    "reason": "Not a soldier: \"CK SKS. Živi u Beogradu.\" is the end of Radojičić Ilije Sava's entry (0015000212, p. 47)"
+  },
+  {
+    "id": 159382,
+    "action": "edit",
+    "soldier_id": "0056000447",
+    "fields": {
+      "last_name": "Dukić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Nedeljko",
+      "additional_info": "rođen 1928, Agići, Derventa, borac 3. bat. poginuo 1. decembra 1944. god. Sivša, Doboj."
+    },
+    "reason": "Two printed lines read into one, letter by letter (\"Duk1i.ć | d eNceEmDbEraL J1K9O44, ...\"): DUKIĆ NEDELJKO, rođen 1928, Agići, Derventa, borac 3. bat. / poginuo 1. decembra 1944. god. Sivša, Doboj (p. 6)"
+  },
+  {
+    "id": 159383,
+    "action": "edit",
+    "soldier_id": "0056000947",
+    "fields": {
+      "last_name": "Komljenović",
+      "middle_name": "S.",
+      "fathers_name": "",
+      "first_name": "Stanko",
+      "additional_info": "rođen 1926, Travnik, polit. delegat voda 2. bat. poginuo 10. aprila 1945. god. Karaula, Žepče."
+    },
+    "reason": "Two printed lines read into one, letter by letter (\"Kom2l | JbEaNt. OpVogIĆin uSo. ...\"): KOMLJENOVIĆ S. STANKO, rođen 1926, Travnik, polit. delegat voda / 2. bat. poginuo 10. aprila 1945. god. Karaula, Žepče (p. 12)"
+  },
+  {
+    "id": 159384,
+    "action": "merge",
+    "soldier_id": "0049000106",
+    "merge_id": "0049010324",
+    "merge_name": "Ivanović Todora Vojo",
+    "reason": "One man in two lists of the 15. majevička (Borci Sutjeske and the zbornik's heroes): Ivanović Teodora/Todora Vojo, \"Crnogorac\", born 1914 in Donja Bukovica, Bijeljina, narodni heroj; the two records had been linked to each other through the 19. birčanska. Link 225366 (0023000511 - 0049010324) removed: 224877 links the same man"
+  },
+  {
+    "id": 159385,
+    "action": "merge",
+    "soldier_id": "0111000520",
+    "merge_id": "0111011343",
+    "merge_name": "Tajdić Slobodan",
+    "reason": "One man in the 51. divizija's two lists (Batina, Božić; Savić): Tajdić Slobodan, born 1927 in Banatsko Novo Selo, fell at Batina 12. 11. 1944; the two records had been linked to each other through the 12. vojvođanska. Link 137839 (0075002137 - 0111011343) removed: 96842 links the same man"
   }
 ]
