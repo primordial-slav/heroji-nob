@@ -946,6 +946,15 @@ export const sources: PdfSource[] = [
     description: 'Popis palih boraca Osme divizije, po prezimenu, s brigadom u kojoj su bili (str. 806 i dalje)'
   },
   {
+    id: '8-kordunaska-divizija-kadar',
+    title: 'Osma kordunaška udarna divizija — pregled komandnog kadra',
+    author: 'Ignjatije Perić',
+    pdfPath: '/pdfs/8-kordunaska-divizija-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/8-kordunaska-divizija-kadar.jpg',
+    brigadeName: '8. kordunaška divizija',
+    description: 'Komandanti, politički komesari i načelnici štaba divizije, njenih brigada i bataljona, s vremenom na dužnosti i šta je s kim bilo (str. 762–775)'
+  },
+  {
     id: 'cankarjeva',
     title: 'Cankarjeva brigada — seznam cankarjevcev, padli',
     author: 'Lado Ambrožič-Novljan',

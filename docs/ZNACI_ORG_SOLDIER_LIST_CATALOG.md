@@ -111,7 +111,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 
 | Unit | Book | Lists (page) | Link |
 |---|---|---|---|
-| 8. kordunaška divizija | Zbornik HAK, knj. 9 | fallen by unit (p. 806, 109 pp.), command (p. 762) | [00003/571](https://znaci.org/00003/571.htm) |
+| 8. kordunaška divizija | Zbornik HAK, knj. 9 | fallen by unit (p. 806, 109 pp.), command (p. 762; **done**, `8-kordunaska-divizija-kadar.pdf`), Primišlje's fallen in other units (p. 746, 27) | [00003/571](https://znaci.org/00003/571.htm) |
 | 9. dalmatinska divizija | Obrad Egić | fallen of the division (p. 121, 5 pp.) and of the 3. dalmatinska (p. 126) | [00001/187](https://znaci.org/00001/187.htm) |
 | 19. sjevernodalmatinska divizija | Dragutin Grgurević | fallen and died (p. 253, 48 pp.), leaders (p. 233; the command table, Politodjel and heroes pp. 240-252 **done**, `19-sjevernodalmatinska-kadar.pdf`) | [00003/575](https://znaci.org/00003/575.htm) |
 | 22. divizija | Živojin Nikolić Brka | fallen (p. 445, 32 pp.) | [00001/235](https://znaci.org/00001/235.htm) |

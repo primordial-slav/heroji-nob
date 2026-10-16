@@ -146,6 +146,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda po občinah, iz katerih so prišli (str. 313 in naprej)',
     '8-kordunaska-divizija':
       'Seznam padlih borcev Osme divizije po priimkih, z brigado, v kateri so bili (str. 806 in naprej)',
+    '8-kordunaska-divizija-kadar':
+      'Komandanti, politični komisarji in načelniki štaba divizije, njenih brigad in bataljonov, s časom na dolžnosti in usodo vsakega (str. 762–775)',
     'cankarjeva':
       'Seznam cankarjevcev, ki so preživeli vojno (str. 815 in naprej), in seznam padlih (str. 847 in naprej)',
     'gubceva':
@@ -673,6 +675,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот по општините од кои дошле (стр. 313 и натаму)',
     '8-kordunaska-divizija':
       'Список на загинатите борци на Осмата дивизија, по презиме, со бригадата во која биле (стр. 806 и натаму)',
+    '8-kordunaska-divizija-kadar':
+      'Командантите, политичките комесари и началниците на штабот на дивизијата, нејзините бригади и баталјони, со времето на должноста и што станало со секој (стр. 762–775)',
     'cankarjeva':
       'Список на борците на бригадата што ја преживеале војната (стр. 815 и натаму) и список на нејзините загинати (стр. 847 и натаму)',
     'gubceva':
@@ -1199,6 +1203,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members by the municipality they came from (pp. 313 ff.)',
     '8-kordunaska-divizija':
       'List of the Eighth Division’s fallen, by surname, with the brigade each served in (pp. 806 ff.)',
+    '8-kordunaska-divizija-kadar':
+      'The commanders, political commissars and chiefs of staff of the division, its brigades and battalions, with how long each held the post and what became of him (pp. 762–775)',
     'cankarjeva':
       'List of the brigade’s members who survived the war (pp. 815 ff.) and of its fallen (pp. 847 ff.)',
     'gubceva':
@@ -1637,6 +1643,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak boraca u Rudom 21. XII 1941.': 'seznam borcev v Rudem 21. 12. 1941',
     'spisak komandnog kadra': 'seznam poveljniškega kadra',
     'pregled komandnog kadra i narodni heroji': 'pregled poveljniškega kadra in narodni heroji',
+    'pregled komandnog kadra': 'pregled poveljniškega kadra',
   },
   mk: {
     'tom 1': 'том 1',
@@ -1679,6 +1686,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak boraca u Rudom 21. XII 1941.': 'список на борците во Рудо, 21. XII 1941',
     'spisak komandnog kadra': 'список на командниот кадар',
     'pregled komandnog kadra i narodni heroji': 'преглед на командниот кадар и народните херои',
+    'pregled komandnog kadra': 'преглед на командниот кадар',
   },
   en: {
     'tom 1': 'volume 1',
@@ -1721,6 +1729,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spisak boraca u Rudom 21. XII 1941.': 'the company at Rudo, 21 December 1941',
     'spisak komandnog kadra': 'the command roll',
     'pregled komandnog kadra i narodni heroji': 'the commanders and the People’s Heroes',
+    'pregled komandnog kadra': 'the commanders',
   },
 }
 

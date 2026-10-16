@@ -614,11 +614,11 @@ export const units: Unit[] = [
     id: '8-kordunaska-divizija',
     name: '8. kordunaška divizija',
     nameEn: '8th Kordun Division',
-    description: 'Formirana 22. novembra 1942. u Crevarskoj Strani na Petrovoj gori. Poginuli borci divizije.',
+    description: 'Formirana 22. novembra 1942. u Crevarskoj Strani na Petrovoj gori. Štabovi divizije, brigada i bataljona i poginuli borci divizije.',
     image: '/images/8-kordunaska-divizija.jpg',
-    soldierCount: 2674,
+    soldierCount: 2829,
     dataFile: '/8-kordunaska-divizija-soldiers.json',
-    pdfFiles: ['/pdfs/8-kordunaska-divizija.pdf']
+    pdfFiles: ['/pdfs/8-kordunaska-divizija.pdf', '/pdfs/8-kordunaska-divizija-kadar.pdf']
   },
   {
     id: 'cankarjeva-brigada',
