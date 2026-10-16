@@ -68,7 +68,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 8. banijska | Ljuban Đurić | fallen and died (p. 247, 66 pp.) | [00003/383](https://znaci.org/00003/383.htm) |
 | 12. proleterska slavonska | Jovan Kokot | women (survived or fell), fallen: as web pages ([46_225](https://znaci.org/00001/46_225.htm), [46_226](https://znaci.org/00001/46_226.htm)) | [00001/46](https://znaci.org/00001/46.htm) |
 | 4. brigada Slavonije (2. brodska) | Obradović, Miletić | fallen and wounded (p. 164) | [00001/190](https://znaci.org/00001/190.htm) |
-| Osječka udarna | Zdravko B. Cvetković | leaders (p. 203), fallen (p. 207, 12 pp.), survivors (p. 219) | [00003/450](https://znaci.org/00003/450.htm) |
+| Osječka udarna | Zdravko B. Cvetković | leaders (p. 203; **done**, `osjecka-rukovodioci.pdf`), fallen (p. 207, 12 pp.), survivors (p. 219) | [00003/450](https://znaci.org/00003/450.htm) |
 | Karlovačka udarna | Lulik, Zatezalo | at formation 5. III 1944 (p. 379, 22 pp.), fallen (p. 401, 14 pp.) | [00003/546](https://znaci.org/00003/546.htm) |
 | 1. zagorska | Vladimir Hlaić, *Grebeni Ivančice* | fallen (p. 191) | [00003/625](https://znaci.org/00003/625.htm) |
 | 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
@@ -81,7 +81,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 14. hercegovačka (omladinska) | | everyone who served (p. 243, 32 pp.), fallen (p. 275) | [00001/268](https://znaci.org/00001/268.htm) |
 | 14. srednjobosanska | Stevo Samardžija | fallen (p. 393, 30 pp.), survivors (p. 423, 36 pp.) | [00003/579](https://znaci.org/00003/579.htm) |
 | 15. majevička | Sjećanja i članci | roster (p. 485), narodni heroji | [00002/408](https://znaci.org/00002/408.htm) |
-| 18. hrvatska istočnobosanska | | officers (p. 573, 9 pp.), roster (p. 582, 115 pp.; [251_4.pdf](https://znaci.org/00001/251_4.pdf), 142 pp.) | [00001/251](https://znaci.org/00001/251.htm) |
+| 18. hrvatska istočnobosanska | | officers (p. 573, 9 pp.; **done**, `18-hrvatska-starjesine.pdf`), roster (p. 582, 115 pp.; [251_4.pdf](https://znaci.org/00001/251_4.pdf), 142 pp.) | [00001/251](https://znaci.org/00001/251.htm) |
 | 1. kosovsko-metohijska | Milutin Milković | rosters ([185_15.pdf](https://znaci.org/00001/185_15.pdf), 40 pp.) | [00001/185](https://znaci.org/00001/185.htm) |
 | 3. makedonska | Kiril Mihailovski Grujica | decorations, narodni heroji, fallen (already downloaded: `3-makedonska.pdf`, Cyrillic) | [00001/71](https://znaci.org/00001/71.htm) |
 | 5. srpska | Jovanović, Mirčetić | fallen and died (p. 450) | [00001/86](https://znaci.org/00001/86.htm) |
@@ -92,12 +92,12 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 12. srpska | Dragoljub Mirčetić | fallen and died (Prilog 3, PDF p. 357 of 421) | [bk=841](https://znaci.org/00003/7xx.php?bk=841) |
 | 15. srpska | Vojislav Nikčević | roster (p. 155, 12 pp.), fallen (p. 167), wounded (p. 171) | [00003/477](https://znaci.org/00003/477.htm) |
 | 17. srpska | Predrag Milenković | survivors (p. 317, 53 pp.), fallen (p. 370) | [00001/274](https://znaci.org/00001/274.htm) |
-| 19. srpska | Predrag Pejčić | *Pali za slobodu*, *Preživeli rat* (p. 473), staffs (p. 613) | [00001/87](https://znaci.org/00001/87.htm) |
+| 19. srpska | Predrag Pejčić | *Pali za slobodu*, *Preživeli rat* (p. 473), staffs (p. 613; **done**) | [00001/87](https://znaci.org/00001/87.htm) |
 | 20. srpska | Dragoljub Mirčetić | fallen and died (Prilog 2, PDF p. 339 of 408) | [bk=840](https://znaci.org/00003/7xx.php?bk=840) |
 | 21. srpska (2. šumadijska) | Isidor Đuković | *Preživeli su rat* (p. 413) | [00001/197](https://znaci.org/00001/197.htm) |
 | 22. srpska kosmajska | Milorad Gončin | fallen (p. 295, 24 pp.), survivors (p. 319) | [00003/445](https://znaci.org/00003/445.htm) |
 | 23. srpska | Dragoljub Mirčetić | fallen and died (p. 352, 37 pp.) | [00001/214](https://znaci.org/00001/214.htm) |
-| 31. srpska | Isidor Đuković | fallen, missing, died (p. 290, 64 pp.); fallen of incomplete identity (p. 354); survivors (p. 364) | [00001/231](https://znaci.org/00001/231.htm) |
+| 31. srpska | Isidor Đuković | (the appendix, 231_6.pdf, is missing on znaci.org: 404 on 2026-10-16) fallen, missing, died (p. 290, 64 pp.); fallen of incomplete identity (p. 354); survivors (p. 364) | [00001/231](https://znaci.org/00001/231.htm) |
 | 3. vojvođanska | Radovan Panić | fallen (p. 479), fate unknown (p. 521), survivors (p. 544). The unlisted copy [00001/57](https://znaci.org/00001/57.htm) has all three as web pages (57_49–51.htm) | [00001/70](https://znaci.org/00001/70.htm) |
 | 4. vojvođanska | Špiro Lagator | members 7. X 1943 (p. 281, 31 pp.), fallen and died (p. 312) | [00001/230](https://znaci.org/00001/230.htm) |
 | 5. vojvođanska | Nikola Mraović | soldiers and officers (p. 429) | [00001/81](https://znaci.org/00001/81.htm) |

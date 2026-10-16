@@ -534,11 +534,11 @@ export const units: Unit[] = [
     id: '18-hrvatska-brigada',
     name: '18. hrvatska istočnobosanska brigada',
     nameEn: '18th Croatian East Bosnian Brigade',
-    description: 'Formirana 10. oktobra 1943. kod Tuzle, a proglašena 17. oktobra u Husinu. Borci brigade.',
+    description: 'Formirana 10. oktobra 1943. kod Tuzle, a proglašena 17. oktobra u Husinu. Borci i starešine brigade.',
     image: '/images/18-hrvatska-brigada.jpg',
-    soldierCount: 1738,
+    soldierCount: 1858,
     dataFile: '/18-hrvatska-soldiers.json',
-    pdfFiles: ['/pdfs/18-hrvatska.pdf']
+    pdfFiles: ['/pdfs/18-hrvatska.pdf', '/pdfs/18-hrvatska-starjesine.pdf']
   },
   {
     id: '11-dalmatinska-brigada',
@@ -744,9 +744,9 @@ export const units: Unit[] = [
     id: '19-srpska-brigada',
     name: '19. srpska brigada',
     nameEn: '19th Serbian Brigade',
-    description: 'Formirana 12. juna 1944. u Gornjoj Jošanici. Poginuli, nestali i umrli borci i oni koji su preživeli rat.',
+    description: 'Formirana 12. juna 1944. u Gornjoj Jošanici. Poginuli, nestali i umrli borci, oni koji su preživeli rat i štabovi brigade i bataljona.',
     image: '/images/19-srpska-brigada.jpg',
-    soldierCount: 3557,
+    soldierCount: 3596,
     dataFile: '/19-srpska-soldiers.json',
     pdfFiles: ['/pdfs/19-srpska.pdf']
   },
@@ -1054,11 +1054,11 @@ export const units: Unit[] = [
     id: 'osjecka-brigada',
     name: 'Osječka udarna brigada',
     nameEn: 'Osijek Assault Brigade',
-    description: 'Formirana 1. marta 1944. kod Slobodne Vlasti blizu Đakova. Poginuli i umrli borci brigade i preživeli, po opštinama.',
+    description: 'Formirana 1. marta 1944. kod Slobodne Vlasti blizu Đakova. Poginuli i umrli borci brigade i preživeli, po opštinama, i njene starešine.',
     image: '/images/osjecka-brigada.jpg',
-    soldierCount: 1915,
+    soldierCount: 2018,
     dataFile: '/osjecka-soldiers.json',
-    pdfFiles: ['/pdfs/osjecka.pdf', '/pdfs/osjecka-zene.pdf']
+    pdfFiles: ['/pdfs/osjecka.pdf', '/pdfs/osjecka-zene.pdf', '/pdfs/osjecka-rukovodioci.pdf']
   },
   {
     id: '4-brigada-slavonije',

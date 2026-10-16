@@ -74,6 +74,8 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   'vis-zrtve-nob.pdf',   # the Vis memorial plaques' names, two columns, a number moved to the other's line
                   'xxxi-divizija-stabi.pdf',   # the XXXI. divizija's staffs: a man boxed at his first post
                   '6-krajiska-kadar.pdf',   # the 6. krajiška's war cadre: a man boxed at each post on his first's page
+                  '18-hrvatska-starjesine.pdf',   # the 18. hrvatska's officers: names run on under each duty
+                  'osjecka-rukovodioci.pdf',   # the Osječka's leaders: a man boxed at each post on his first's page
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
                   'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post
@@ -188,6 +190,10 @@ MULTI_COLUMN = {
 
 
 # Books two columns on some pages only: {file: pages}
+# pages of a PDF whose entries keep their parser's box, a list run on after the PDF's others: the 19. srpska's
+# staffs (names run on under each duty) after its roster
+INLINE_PAGES = {'19-srpska.pdf': {201, 202}}
+
 TWO_COLUMN_PAGES = {
     '1-dalmatinska-monografija.pdf': range(1, 5),  # 1. dalmatinska: the company commanders and commissars side by side
     '14-srednjobosanska.pdf': range(30, 65),     # the fallen in one column, the survivors in two
@@ -599,7 +605,8 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
     stats = {'boxed': 0, 'unmatched': 0, 'cleared': 0, 'stops': Counter(), 'layouts': {}}
     by_page: dict[str, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
     for s in entries(soldiers):
-        if s.get('pdf_file') in INLINE_ENTRIES and s.get('pdf_y') is not None:
+        inline = s.get('pdf_file') in INLINE_ENTRIES or s.get('pdf_page') in INLINE_PAGES.get(s.get('pdf_file'), ())
+        if inline and s.get('pdf_y') is not None:
             stats['inline'] = stats.get('inline', 0) + 1
         elif s.get('pdf_file') and s.get('pdf_page') and s.get('pdf_y') is not None:
             by_page[s['pdf_file']][int(s['pdf_page'])].append(s)

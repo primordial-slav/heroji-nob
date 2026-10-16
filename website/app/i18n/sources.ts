@@ -120,6 +120,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci štaba divizije, spremljevalnih enot, brigad Braća Radić, Matija Gubec, Mihovil Pavlek Miškina in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
     '18-hrvatska':
       'Seznam borcev brigade, preživelih in padlih: leto in kraj rojstva, narodnost, poklic, vstop v brigado, dolžnost, usoda (str. 582–696 knjige)',
+    '18-hrvatska-starjesine':
+      'Poveljniki štaba brigade, bataljonov in čet ter enot pri štabu, po dolžnostih, samo imena (str. 573–581 knjige)',
     '11-dalmatinska':
       'Seznam borcev brigade: padli, pogrešani in preživeli (na dan 15. maja 1945): dolžnost, rojstvo, poklic, vstop v NOB, usoda (str. 479–600 knjige)',
     '7-krajiska-spisak':
@@ -238,6 +240,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev brigade: od kod so bili, kje in kdaj so padli (str. 259–271)',
     'osjecka':
       'Seznam padlih in umrlih borcev brigade in seznam preživelih borcev, po občinah rojstva (str. 207–254)',
+    'osjecka-rukovodioci':
+      'Komandanti, komisarji in načelniki štaba brigade, komandanti in komisarji bataljonov, komandirji in komisarji čet, samo imena (str. 203–206)',
     '1-zagorska':
       'Seznam padlih borcev in starešin brigade od 8. maja 1944 do 15. maja 1945: leto in kraj rojstva, kdaj in kje so padli (str. 191–205)',
     '6-crnogorska':
@@ -633,6 +637,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борци на штабот на дивизијата, придружните единици, бригадите „Браќа Радиќ“, „Матија Губец“, „Миховил Павлек Мишкина“ и I ударна загорска, и борци со нецелосни податоци: година и место на раѓање, народност, занимање, кога стапиле во НОВ, судбина; борецот е наведен во секоја единица во која се борел (стр. 431–662 од книгата)',
     '18-hrvatska':
       'Список на борците на бригадата, преживеани и загинати: година и место на раѓање, народност, занимање, кога стапиле во бригадата, должност, судбина (стр. 582–696 од книгата)',
+    '18-hrvatska-starjesine':
+      'Старешините на штабот на бригадата, на баталјоните и четите и на единиците при штабот, по должности, само имиња (стр. 573–581 од книгата)',
     '11-dalmatinska':
       'Список на борците на бригадата: загинати, исчезнати и преживеани (на 15 мај 1945): должност, раѓање, занимање, кога стапиле во НОБ, судбина (стр. 479–600 од книгата)',
     '7-krajiska-spisak':
@@ -751,6 +757,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци на бригадата: од каде се, каде и кога загинале (стр. 259–271)',
     'osjecka':
       'Список на загинатите и умрените борци на бригадата и список на преживеаните борци, по општини на раѓање (стр. 207–254)',
+    'osjecka-rukovodioci':
+      'Командантите, комесарите и началниците на штабот на бригадата, командантите и комесарите на баталјоните, командирите и комесарите на четите, само имиња (стр. 203–206)',
     '1-zagorska':
       'Список на загинатите борци и раководители на бригадата од 8 мај 1944 до 15 мај 1945: година и место на раѓање, кога и каде загинале (стр. 191–205)',
     '6-crnogorska':
@@ -1145,6 +1153,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Partisans of the division’s staff, its attached units, the Braća Radić, Matija Gubec, Mihovil Pavlek Miškina and 1st Zagorje Assault brigades, and some with incomplete details: year and place of birth, nationality, occupation, when they joined the army, fate; each is listed under every unit he fought in (pp. 431–662 of the book)',
     '18-hrvatska':
       'The brigade’s Partisans, survivors and the fallen: year and place of birth, nationality, occupation, when they joined the brigade, duty and fate (pp. 582–696 of the book)',
+    '18-hrvatska-starjesine':
+      'The officers of the brigade’s staff, its battalions and companies and the units attached to the staff, by duty, names only (pp. 573–581 of the book)',
     '11-dalmatinska':
       'The brigade’s Partisans: those killed, the missing, and the survivors (as of 15 May 1945): duty, birth, occupation, when they joined the struggle, fate (pp. 479–600 of the book)',
     '7-krajiska-spisak':
@@ -1263,6 +1273,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen: where they came from, where and when they fell (pp. 259–271)',
     'osjecka':
       'The brigade’s fallen and dead, and its survivors, by the municipality they were born in (pp. 207–254)',
+    'osjecka-rukovodioci':
+      'The brigade’s commanders, commissars and chiefs of staff, its battalions’ commanders and commissars, and its company commanders and commissars, names only (pp. 203–206)',
     '1-zagorska':
       'The brigade’s fallen fighters and officers, 8 May 1944 to 15 May 1945: year and place of birth, when and where they fell (pp. 191–205)',
     '6-crnogorska':

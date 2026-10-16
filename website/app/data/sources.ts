@@ -829,6 +829,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca brigade, preživelih i poginulih: godina i mesto rođenja, narodnost, zanimanje, kada su stupili u brigadu, dužnost, sudbina (str. 582–696 knjige)'
   },
   {
+    id: '18-hrvatska-starjesine',
+    title: 'Osamnaesta hrvatska istočnobosanska brigada — spisak starješinskog sastava',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/18-hrvatska-starjesine.pdf',
+    thumbnail: '/images/pdf-thumbs/18-hrvatska-starjesine.jpg',
+    brigadeName: '18. hrvatska istočnobosanska brigada',
+    description: 'Starešine štaba brigade, bataljona i četa i prištapskih jedinica, po dužnostima, samo imena (str. 573–581 knjige)'
+  },
+  {
     id: '11-dalmatinska',
     title: 'Jedanaesta dalmatinska udarna brigada — popis boraca',
     author: 'Milan Rako, Slavko Družijanić',
@@ -1340,6 +1349,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/osjecka.jpg',
     brigadeName: 'Osječka udarna brigada',
     description: 'Spisak poginulih i umrlih boraca brigade i spisak preživelih boraca, po opštinama rođenja (str. 207–254)'
+  },
+  {
+    id: 'osjecka-rukovodioci',
+    title: 'Osječka udarna brigada — spisak rukovodilaca',
+    author: 'Zdravko B. Cvetković',
+    pdfPath: '/pdfs/osjecka-rukovodioci.pdf',
+    thumbnail: '/images/pdf-thumbs/osjecka-rukovodioci.jpg',
+    brigadeName: 'Osječka udarna brigada',
+    description: 'Komandanti, komesari i načelnici štaba brigade, komandanti i komesari bataljona, komandiri i komesari četa, samo imena (str. 203–206)'
   },
   {
     id: 'osjecka-zene',

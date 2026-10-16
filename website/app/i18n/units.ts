@@ -247,7 +247,7 @@ const sl: Record<string, UnitText> = {
   '18-hrvatska-brigada': {
     name: '18. hrvaška vzhodnobosanska brigada',
     description:
-      'Ustanovljena 10. oktobra 1943 pri Tuzli, razglašena 17. oktobra v Husinu. Borci brigade.',
+      'Ustanovljena 10. oktobra 1943 pri Tuzli, razglašena 17. oktobra v Husinu. Borci in poveljniki brigade.',
   },
   '11-dalmatinska-brigada': {
     name: '11. dalmatinska brigada',
@@ -352,7 +352,7 @@ const sl: Record<string, UnitText> = {
   '19-srpska-brigada': {
     name: '19. srbska brigada',
     description:
-      'Ustanovljena 12. junija 1944 v Gornji Jošanici. Padli, pogrešani in umrli borci ter tisti, ki so vojno preživeli.',
+      'Ustanovljena 12. junija 1944 v Gornji Jošanici. Padli, pogrešani in umrli borci, tisti, ki so vojno preživeli, ter štabi brigade in bataljonov.',
   },
   '22-srpska-brigada': {
     name: '22. srbska kosmajska brigada',
@@ -507,7 +507,7 @@ const sl: Record<string, UnitText> = {
   'osjecka-brigada': {
     name: 'Osiješka udarna brigada',
     description:
-      'Ustanovljena 1. marca 1944 pri Slobodni Vlasti blizu Đakova. Padli in umrli borci brigade ter preživeli, po občinah.',
+      'Ustanovljena 1. marca 1944 pri Slobodni Vlasti blizu Đakova. Padli in umrli borci brigade ter preživeli, po občinah, in njeni poveljniki.',
   },
   '4-brigada-slavonije': {
     name: '4. brigada Slavonije',
@@ -1004,7 +1004,7 @@ const mk: Record<string, UnitText> = {
   '18-hrvatska-brigada': {
     name: '18-та хрватска источнобосанска бригада',
     description:
-      'Формирана на 10 октомври 1943 кај Тузла, а прогласена на 17 октомври во Хусино. Борци на бригадата.',
+      'Формирана на 10 октомври 1943 кај Тузла, а прогласена на 17 октомври во Хусино. Борци и старешини на бригадата.',
   },
   '11-dalmatinska-brigada': {
     name: '11-та далматинска бригада',
@@ -1109,7 +1109,7 @@ const mk: Record<string, UnitText> = {
   '19-srpska-brigada': {
     name: '19-та српска бригада',
     description:
-      'Формирана на 12 јуни 1944 во Горња Јошаница. Загинати, исчезнати и починати борци и оние што ја преживеаја војната.',
+      'Формирана на 12 јуни 1944 во Горња Јошаница. Загинати, исчезнати и починати борци, оние што ја преживеаја војната и штабовите на бригадата и баталјоните.',
   },
   '22-srpska-brigada': {
     name: '22-ра српска космајска бригада',
@@ -1264,7 +1264,7 @@ const mk: Record<string, UnitText> = {
   'osjecka-brigada': {
     name: 'Осиечка ударна бригада',
     description:
-      'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и умрените борци на бригадата и преживеаните, по општини.',
+      'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и умрените борци на бригадата и преживеаните, по општини, и нејзините старешини.',
   },
   '4-brigada-slavonije': {
     name: '4-та бригада на Славонија',
@@ -1763,7 +1763,7 @@ const en: Record<string, UnitText> = {
   '18-hrvatska-brigada': {
     name: '18th Croatian East Bosnian Brigade',
     description:
-      'Formed on 10 October 1943 near Tuzla and proclaimed on 17 October in Husino. Members of the brigade.',
+      'Formed on 10 October 1943 near Tuzla and proclaimed on 17 October in Husino. Members and officers of the brigade.',
   },
   '11-dalmatinska-brigada': {
     name: '11th Dalmatian Brigade',
@@ -1868,7 +1868,7 @@ const en: Record<string, UnitText> = {
   '19-srpska-brigada': {
     name: '19th Serbian Brigade',
     description:
-      'Formed on 12 June 1944 in Gornja Jošanica. Partisans who were killed, went missing or died, and those who survived the war.',
+      'Formed on 12 June 1944 in Gornja Jošanica. Partisans who were killed, went missing or died, those who survived the war, and the staffs of the brigade and its battalions.',
   },
   '22-srpska-brigada': {
     name: '22nd Serbian (Kosmaj) Brigade',
@@ -2023,7 +2023,7 @@ const en: Record<string, UnitText> = {
   'osjecka-brigada': {
     name: 'Osijek Assault Brigade',
     description:
-      'Formed on 1 March 1944 near Slobodna Vlast, close to Đakovo. The brigade’s fallen and dead, and its survivors, by municipality.',
+      'Formed on 1 March 1944 near Slobodna Vlast, close to Đakovo. The brigade’s fallen and dead, and its survivors, by municipality, and its officers.',
   },
   '4-brigada-slavonije': {
     name: '4th Slavonia Brigade',
