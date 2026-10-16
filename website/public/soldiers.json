@@ -4289,6 +4289,30 @@
         "ref_book": "zbornik-heroja-1957"
       },
       {
+        "soldier_id": "0003010121",
+        "name": "Babić Trifuna Petar",
+        "additional_info": "zvani Pepa; rođen 1913. u Ličkom Tiškovcu - D. Lapac. U NOB-1941. Prvi komesar brigade i komesar 19. dalmatinske divizije. Narodni heroj Jugoslavije.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 6,
+        "pdf_x": 227.0,
+        "pdf_y": 307.8,
+        "pdf_x_end": 388.4,
+        "pdf_y_end": 356.6,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0079010001",
+        "name": "Babić Trifuna Petar",
+        "additional_info": "Pregled komandnog kadra 19. divizije od formiranja do kraja rata: politički komesar divizije, od formiranja divizije do kraja rata. Narodni heroji Jugoslavije, pripadnici 19. sjevernodalmatinske divizije: narodni heroj; Rođen 1. studenog 1919. godine u selu Lički Tiškovac, Donji Lapac, Hrvatska. Strojobravar. Član SKJ od 17. siječnja 1942. U NOB stupio 1941. Za narodnog heroja proglašen 27. studenog 1953. U 19. diviziji politički komesar divizije od njenog formiranja do kraja rata.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 329.6,
+        "pdf_y": 334.0,
+        "pdf_x_end": 378.7,
+        "pdf_y_end": 343.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      },
+      {
         "soldier_id": "0118000029",
         "name": "Babić Trivunov Petar",
         "additional_info": "zvani Pera; narodni heroj; Rođen je 1. novembra 1919. godine u selu Lički Tiškovac, opština Donji Lapac. Po zanimanju mašinski bravar. Pre rata je pripadao naprednom sindikalnom pokretu u Drvaru. Član KPJ od 17. januara 1942. godine. U narodnooslobodilačku borbu stupio je 27. jula 1941. godine. Danas je general—major JNA. Za narodnog heroja proglašen je 1953. godine. Kao politički delegat voda i komesar čete u bataljonu »Marko Orešković« ispoljio je veliku hrabrost u borbi i umešnost u političkom radu. Posle toga bio je pomoćnik političkog komesara 3. partizanskog odreda, pa politički komesar 2. brigade. U 3. ličkoj brigadi bio je na dužnosti pomoćnika političkog komesara brigade od februara do maja 1943. godine. Posle toga se nalazio na raznim političkim funkcijama do kraja rata.",
@@ -12476,7 +12500,21 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "occupation": "student",
     "birth_place": "Belotić",
-    "pdf_x_end": 462.4
+    "pdf_x_end": 462.4,
+    "other_sources": [
+      {
+        "soldier_id": "0079010004",
+        "name": "Bojanić Vladan",
+        "additional_info": "Članovi Politodjela u diviziji i brigadama od 1943. do 1945. godine: član Politodjela.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 3,
+        "pdf_x": 267.6,
+        "pdf_y": 226.1,
+        "pdf_x_end": 337.3,
+        "pdf_y_end": 235.6,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002000566",
@@ -28521,9 +28559,6 @@
     "pdf_y_end": 543.3,
     "pdf_file": "prva-licka-proleterska.pdf",
     "pdf_x_end": 465.4,
-    "birth_place": "Kunovac, D. Lapac",
-    "occupation": "policajac",
-    "unit_detail": "1. bataljon",
     "other_sources": [
       {
         "soldier_id": "9002000220",
@@ -28540,8 +28575,36 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=171",
         "source_page": 149,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0079010009",
+        "name": "Damjanović Đure Danilo",
+        "additional_info": "zvani Danić; Pregled komandnog kadra 19. divizije od formiranja do kraja rata: komandant 6. brigade, od 20. XI 1943. do srpnja 1944. Narodni heroji Jugoslavije, pripadnici 19. sjevernodalmatinske divizije: narodni heroj; Rođen 22. studenog 1915. u Kunovcu, Srb, Donji Lapac, Hrvatska. Službenik. Član SKJ od listopada 1941. U NOB stupio 1941. Za narodnog heroja proglašen 27. studenog 1953. U 19. diviziji bio komandant 6. brigade i zamjenik komandanta divizije.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 2,
+        "pdf_x": 114.8,
+        "pdf_y": 215.6,
+        "pdf_x_end": 197.7,
+        "pdf_y_end": 225.1,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0103010019",
+        "name": "Damjanović Đure Danilo",
+        "additional_info": "zvani Danić; Spisak komandnog kadra 6. dalmatinske udarne brigade: Štab brigade, komandanti",
+        "pdf_file": "6-dalmatinska-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 98.9,
+        "pdf_y": 221.9,
+        "pdf_x_end": 124.5,
+        "pdf_y_end": 230.4,
+        "unit_file": "6-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "rank": "zamjenik komandanta divizije",
+    "birth_place": "Kunovac, D. Lapac",
+    "occupation": "policajac",
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0002001312",
@@ -74811,7 +74874,34 @@
     "death_type": "poginuo",
     "death_date": "marta 1945",
     "rank": "zamjenik komandanta brigade, načelnik štaba",
-    "pdf_x_end": 473.7
+    "pdf_x_end": 473.7,
+    "death_place": "Pokuplje",
+    "other_sources": [
+      {
+        "soldier_id": "0060010058",
+        "name": "Karaš Milutin",
+        "additional_info": "Pregled komandnog kadra Osme udarne divizije: Štab Druge udarne brigade, zamjenici komandanta brigade, od 20. 11. 1942. do 20. 3. 1943. Poginuo marta 1945. u Pokuplju kao načelnik Štaba 34. divizije.",
+        "pdf_file": "8-kordunaska-divizija-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 127.7,
+        "pdf_y": 505.3,
+        "pdf_x_end": 183.5,
+        "pdf_y_end": 513.8,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000489",
+        "name": "Karaš Milutin",
+        "additional_info": "major, nač., Štaba, 34.div, u NOB 1941, poginuo D. Kupčina, 07.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 13,
+        "pdf_x": 40.3,
+        "pdf_y": 458.50399999999973,
+        "pdf_x_end": 369.0,
+        "pdf_y_end": 467.5,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002003452",
@@ -93819,7 +93909,21 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Slavsko Polje, Vrginmost",
     "unit_detail": "2. četa, 3. kordunaški bataljon",
-    "pdf_x_end": 456.2
+    "pdf_x_end": 456.2,
+    "other_sources": [
+      {
+        "soldier_id": "0060010082",
+        "name": "Mamula Mihajlov Branko",
+        "additional_info": "Pregled komandnog kadra Osme udarne divizije: Treća udarna brigada, Drugi bataljon, politički komesari bataljona, od 20. 12. 1942. do 12. 2. 1943. Admiral JNA.",
+        "pdf_file": "8-kordunaska-divizija-kadar.pdf",
+        "pdf_page": 12,
+        "pdf_x": 156.9,
+        "pdf_y": 292.1,
+        "pdf_x_end": 220.6,
+        "pdf_y_end": 300.6,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002004312",
@@ -131989,6 +132093,32 @@
         "pdf_x_end": 171.3,
         "pdf_y_end": 101.7,
         "unit_file": "3-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0079010026",
+        "name": "Parmač Ante Stanko",
+        "additional_info": "Pregled komandnog kadra 19. divizije od formiranja do kraja rata: komandant divizije, od polovine kolovoza 1944. do kraja rata; komandant 5. brigade, od svibnja 1944. do kolovoza iste godine. Narodni heroji Jugoslavije, pripadnici 19. sjevernodalmatinske divizije: narodni heroj; Rođen 3. ožujka 1913. godine u Opuzenu, Metković, Hrvatska. Učitelj. Član SKJ od kolovoza 1941. U NOB stupio 1941. Za narodnog heroja proglašen 27. studenog 1953. godine. U 19. diviziji: komandant 5. udarne brigade i komandant divizije od polovine kolovoza 1944. godine do kraja rata.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 150.4,
+        "pdf_y": 473.7,
+        "pdf_x_end": 214.3,
+        "pdf_y_end": 483.2,
+        "pdf_rects": [
+          [
+            150.4,
+            473.7,
+            214.3,
+            483.2
+          ],
+          [
+            150.6,
+            583.6,
+            213.8,
+            593.1
+          ]
+        ],
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
       }
     ]
   },
@@ -152530,6 +152660,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=143",
         "source_page": 139,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0079010028",
+        "name": "Radaković Trifuna Ilija",
+        "additional_info": "Pregled komandnog kadra 19. divizije od formiranja do kraja rata: politički komesar 5. brigade, od početka 1944. do 18. XI iste godine; politički komesar 6. brigade, od formiranja do polovine studenog 1943. godine. Narodni heroji Jugoslavije, pripadnici 19. sjevernodalmatinske divizije: narodni heroj; Rođen 6. travnja 1923. godine u selu Jošani, Udbina, Hrvatska. Član SKJ od 25. prosinca 1941. godine. U NOB stupio 1941. Za narodnog heroja proglašen 20. prosinca 1951. godine. U 19. diviziji: politički komesar 6. i 5. brigade.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 329.9,
+        "pdf_y": 583.2,
+        "pdf_x_end": 394.7,
+        "pdf_y_end": 592.7,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
       }
     ]
   },
@@ -191694,7 +191836,22 @@
     "birth_place": "Gospić",
     "occupation": "učenik",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 463.4
+    "pdf_x_end": 463.4,
+    "rank": "politički komesar",
+    "other_sources": [
+      {
+        "soldier_id": "0079010031",
+        "name": "Toplak Ferdo",
+        "additional_info": "Pregled komandnog kadra 19. divizije od formiranja do kraja rata: politički komesar 14. brigade, od formiranja do 1. IX 1944.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 2,
+        "pdf_x": 292.2,
+        "pdf_y": 486.3,
+        "pdf_x_end": 349.4,
+        "pdf_y_end": 495.8,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002008877",
