@@ -382,7 +382,7 @@ const sl: Record<string, UnitText> = {
   '19-sjevernodalmatinska-divizija': {
     name: '19. severnodalmatinska divizija',
     description:
-      'Ustanovljena 11. oktobra 1943 v Biovičinem Selu v Bukovici. Padli in umrli borci divizije.',
+      'Ustanovljena 11. oktobra 1943 v Biovičinem Selu v Bukovici. Komandanti in komisarji divizije in brigad, narodni heroji ter padli in umrli borci divizije.',
   },
   '21-srpska-brigada': {
     name: '21. srbska brigada',
@@ -1139,7 +1139,7 @@ const mk: Record<string, UnitText> = {
   '19-sjevernodalmatinska-divizija': {
     name: '19-та севернодалматинска дивизија',
     description:
-      'Формирана на 11 октомври 1943 во Биовичино Село во Буковица. Загинати и починати борци на дивизијата.',
+      'Формирана на 11 октомври 1943 во Биовичино Село во Буковица. Командантите и комесарите на дивизијата и бригадите, народните херои и загинатите и починатите борци на дивизијата.',
   },
   '21-srpska-brigada': {
     name: '21-ва српска бригада',
@@ -1898,7 +1898,7 @@ const en: Record<string, UnitText> = {
   '19-sjevernodalmatinska-divizija': {
     name: '19th North Dalmatian Division',
     description:
-      'Formed on 11 October 1943 at Biovičino Selo in Bukovica. The division’s Partisans who were killed or died.',
+      'Formed on 11 October 1943 at Biovičino Selo in Bukovica. The commanders and commissars of the division and its brigades, its People’s Heroes, and its Partisans who were killed or died.',
   },
   '21-srpska-brigada': {
     name: '21st Serbian Brigade',

@@ -28,7 +28,7 @@ U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 # the text layer's slips, read from the page
 WORDS = [('Stab ', 'Štab '), ('Duro ', 'Đuro '), ('Cedomlr', 'Čedomir'), ('Cedomir', 'Čedomir'), ('Luka Jai ić', 'Luka Jaić'),
          ('Kazimir Neki:', 'Kazimir Nekić;'), ('Ante Dukić;* »', 'Ante Dukić;'), ('Milan ćelić', 'Milan Celić'),
-         ('Papo Mario', 'Mario Papo')]
+         ('Papo Mario', 'Mario Papo'), ('Sime ', 'Šime '), ('(Danćić)', '(Danić)')]
 NAME = re.compile(rf'([{U}][{L}]+)(?:\s+\(([{U}][{L}]+)\))?\s+([{U}][{L}]+(?:-[{U}][{L}]+)?)')
 POSTS: list = []
 

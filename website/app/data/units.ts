@@ -804,11 +804,11 @@ export const units: Unit[] = [
     id: '19-sjevernodalmatinska-divizija',
     name: '19. severnodalmatinska divizija',
     nameEn: '19th North Dalmatian Division',
-    description: 'Formirana 11. oktobra 1943. u Biovičinom Selu u Bukovici. Poginuli i umrli borci divizije.',
+    description: 'Formirana 11. oktobra 1943. u Biovičinom Selu u Bukovici. Komandanti i komesari divizije i brigada, narodni heroji i poginuli i umrli borci divizije.',
     image: '/images/19-sjevernodalmatinska-divizija.jpg',
-    soldierCount: 1418,
+    soldierCount: 1451,
     dataFile: '/19-sjevernodalmatinska-soldiers.json',
-    pdfFiles: ['/pdfs/19-sjevernodalmatinska.pdf']
+    pdfFiles: ['/pdfs/19-sjevernodalmatinska.pdf', '/pdfs/19-sjevernodalmatinska-kadar.pdf']
   },
   {
     id: '21-srpska-brigada',

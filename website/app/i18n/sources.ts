@@ -190,6 +190,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in pogrešanih borcev in voditeljev brigade: rojstvo, kje in kdaj so padli ali izginili (str. 675–722)',
     '19-sjevernodalmatinska':
       'Seznam padlih in umrlih borcev divizije od ustanovitve do konca vojne: od kod so bili, kje in kdaj so padli (str. 253–299)',
+    '19-sjevernodalmatinska-kadar':
+      'Komandanti in politični komisarji divizije in njenih brigad, s časom na dolžnosti, člani politodela 1943–1945 in narodni heroji divizije, s kratkim življenjepisom (str. 240–252)',
     '21-srpska':
       'Padli, preživeli in drugi, ki so se borili v brigadi (Druga šumadijska): starši, rojstvo, dolžnost, vstop v brigado in kje so padli (str. 387–472)',
     '14-hercegovacka':
@@ -715,6 +717,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и исчезнатите борци и раководители на бригадата: раѓање, каде и кога загинале или исчезнале (стр. 675–722)',
     '19-sjevernodalmatinska':
       'Список на загинатите и починатите борци на дивизијата од формирањето до крајот на војната: од каде се, каде и кога загинале (стр. 253–299)',
+    '19-sjevernodalmatinska-kadar':
+      'Командантите и политичките комесари на дивизијата и нејзините бригади, со времето на должноста, членовите на политодделот 1943–1945 и народните херои на дивизијата, со кратка биографија (стр. 240–252)',
     '21-srpska':
       'Загинати, преживеани и други што се бореа во бригадата (Втора шумадиска): родители, раѓање, должност, кога стапиле во бригадата и каде загинале (стр. 387–472)',
     '14-hercegovacka':
@@ -1239,6 +1243,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s killed and missing Partisans and leaders: birth, where and when they fell or went missing (pp. 675–722)',
     '19-sjevernodalmatinska':
       'The division’s Partisans killed or dead from its formation to the end of the war: where they came from, where and when they fell (pp. 253–299)',
+    '19-sjevernodalmatinska-kadar':
+      'The commanders and political commissars of the division and its brigades, with how long each held the post, the members of its political department 1943–1945, and its People’s Heroes, with a short biography (pp. 240–252)',
     '21-srpska':
       'The brigade’s (2nd Šumadija) Partisans who were killed or survived, and others who fought in it: parents, birth, duty, when they joined and where they fell (pp. 387–472)',
     '14-hercegovacka':
@@ -1630,6 +1636,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'seznami borcev, ki so vstopili v bataljon 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'seznam borcev v Rudem 21. 12. 1941',
     'spisak komandnog kadra': 'seznam poveljniškega kadra',
+    'pregled komandnog kadra i narodni heroji': 'pregled poveljniškega kadra in narodni heroji',
   },
   mk: {
     'tom 1': 'том 1',
@@ -1671,6 +1678,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'списоци на борците што стапиле во баталјонот 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'список на борците во Рудо, 21. XII 1941',
     'spisak komandnog kadra': 'список на командниот кадар',
+    'pregled komandnog kadra i narodni heroji': 'преглед на командниот кадар и народните херои',
   },
   en: {
     'tom 1': 'volume 1',
@@ -1712,6 +1720,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'the fighters who joined the battalion, 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'the company at Rudo, 21 December 1941',
     'spisak komandnog kadra': 'the command roll',
+    'pregled komandnog kadra i narodni heroji': 'the commanders and the People’s Heroes',
   },
 }
 

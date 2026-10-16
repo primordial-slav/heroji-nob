@@ -1144,6 +1144,15 @@ export const sources: PdfSource[] = [
     description: 'Popis poginulih i umrlih boraca divizije od formiranja do kraja rata: odakle su, gde su i kada pali (str. 253–299)'
   },
   {
+    id: '19-sjevernodalmatinska-kadar',
+    title: 'Devetnaesta sjevernodalmatinska divizija — pregled komandnog kadra i narodni heroji',
+    author: 'Dragutin Grgurević',
+    pdfPath: '/pdfs/19-sjevernodalmatinska-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/19-sjevernodalmatinska-kadar.jpg',
+    brigadeName: '19. severnodalmatinska divizija',
+    description: 'Komandanti i politički komesari divizije i njenih brigada, s vremenom na dužnosti, članovi politodela 1943–1945. i narodni heroji divizije, s kratkom biografijom (str. 240–252)'
+  },
+  {
     id: '21-srpska',
     title: 'Druga šumadijska - 21. srpska brigada — u koloni brigade',
     author: 'Isidor Đuković',
