@@ -537,6 +537,25 @@ def write(auto, decisions, corr, units, start=None) -> None:
         print(f"  merge {c['id']} ({c['soldier_id']} <- {c['merge_id']} {c['merge_name']}) answered 'different': undo by hand")
 
 
+def names_of(k: str) -> tuple[str, str]:
+    """The names a pair's records (or the book's entry) hold now: for an answer to a pair that is not in the queue
+    (one made already, or one found by reading)."""
+    kind, a, b, book = parse_key(k)
+
+    def record(i):
+        cfg = BRIGADE_CONFIGS.get(int(i[:4]))
+        path = ROOT / 'website' / 'public' / cfg['json_file'] if cfg else None
+        if not path or not path.exists():
+            return ''
+        hit = next((s for s in json.loads(path.read_text(encoding='utf-8')) if s['soldier_id'] == i), None)
+        return hit.get('full_name') or '' if hit else ''
+    if kind == 'reference':
+        path = M.entries_path(book)
+        e = next((x for x in json.loads(path.read_text(encoding='utf-8')) if x['soldier_id'] == b), None) if path.exists() else None
+        return record(a), (e or {}).get('name', '')
+    return record(a), record(b)
+
+
 def main():
     global TITLES_PDF, TITLES_ID
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -551,10 +570,10 @@ def main():
         k, answer = args.answer
         queue = json.loads(QUEUE.read_text(encoding='utf-8')) if QUEUE.exists() else {}
         item = next((x for x in queue.get('review', []) + queue.get('check', []) if x['key'] == k), None)
-        if not item and answer != 'clear':
-            sys.exit(f'{k}: not in the queue (run the script first)')
-        d = save_answer(k, answer, item['a']['name'] if item else '', item['b']['name'] if item else '', args.by, args.note)
-        print(json.dumps(d, ensure_ascii=False))
+        names = (item['a']['name'], item['b']['name']) if item else names_of(k)
+        if not all(names) and answer != 'clear':
+            sys.exit(f'{k}: no such records (or entry)')
+        print(json.dumps(save_answer(k, answer, *names, args.by, args.note), ensure_ascii=False))
         return
 
     TITLES_PDF, TITLES_ID = sources_titles()
