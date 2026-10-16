@@ -73,6 +73,7 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   'virovitica-spomenica-1941.pdf',   # a bio under a portrait: its heading down to the page's end
                   'vis-zrtve-nob.pdf',   # the Vis memorial plaques' names, two columns, a number moved to the other's line
                   'xxxi-divizija-stabi.pdf',   # the XXXI. divizija's staffs: a man boxed at his first post
+                  '6-krajiska-kadar.pdf',   # the 6. krajiška's war cadre: a man boxed at each post on his first's page
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
                   'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post

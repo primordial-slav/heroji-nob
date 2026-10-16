@@ -114,6 +114,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev, ki so se v brigadi borili od 22. 8. 1942 do 9. 5. 1945, preživelih in padlih: od kod so bili, poklic, kdaj so vstopili v NOB in v brigado, dolžnost, usoda; z dopolnilom in prilogo (str. 579 in naprej)',
     '6-krajiska-prezivjeli':
       'Seznam borcev brigade, ki so vojno preživeli, samo imena, z naknadnim seznamom (str. 747–762 knjige)',
+    '6-krajiska-kadar':
+      'Starešine brigade 1942–1943 po dolžnostih, od komandantov brigade do četnih bolničark, samo imena (str. 739–745 knjige)',
     '32-divizija-borci':
       'Borci štaba divizije, spremljevalnih enot, brigad Braća Radić, Matija Gubec, Mihovil Pavlek Miškina in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
     '18-hrvatska':
@@ -160,6 +162,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam odredovcev (str. 333 in naprej) in seznam padlih (str. 340 in naprej)',
     'braciceva':
       'Seznam padlih borcev brigade (str. 722 in naprej) in tistih, ki so vojno preživeli (str. 746 in naprej)',
+    'tomsiceva-1':
+      'Seznama borcev enot, iz katerih je nastala brigada: udarne grupe 3. bataljona Ljuba Šercerja, Dakijeve leteče udarne patrulje, Proletarske udarne patrulje in čete ter 1. slovenskega proletarskega udarnega bataljona Toneta Tomšiča (1. knjiga, str. 535 in naprej)',
     'tomsiceva-2':
       'Seznam borcev brigade od 16. julija 1942 do 13. julija 1943 (2. knjiga, str. 847 in naprej)',
     'tomsiceva-3':
@@ -623,6 +627,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците што се бореле во бригадата од 22. 8. 1942 до 9. 5. 1945, преживеани и загинати: од каде се, занимање, кога стапиле во НОБ и во бригадата, должност, судбина; со дополнување и прилог (стр. 579 и натаму)',
     '6-krajiska-prezivjeli':
       'Список на борците на бригадата што ја преживеаја војната, само имиња, со дополнителен список (стр. 747–762 од книгата)',
+    '6-krajiska-kadar':
+      'Старешините на бригадата 1942–1943 по должности, од командантите на бригадата до четните болничарки, само имиња (стр. 739–745 од книгата)',
     '32-divizija-borci':
       'Борци на штабот на дивизијата, придружните единици, бригадите „Браќа Радиќ“, „Матија Губец“, „Миховил Павлек Мишкина“ и I ударна загорска, и борци со нецелосни податоци: година и место на раѓање, народност, занимање, кога стапиле во НОВ, судбина; борецот е наведен во секоја единица во која се борел (стр. 431–662 од книгата)',
     '18-hrvatska':
@@ -669,6 +675,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот (стр. 333 и натаму) и список на неговите загинати (стр. 340 и натаму)',
     'braciceva':
       'Список на загинатите борци на бригадата (стр. 722 и натаму) и на оние што ја преживеале војната (стр. 746 и натаму)',
+    'tomsiceva-1':
+      'Списоци на борците на единиците од кои настанала бригадата: ударната група на 3. баталјон Љубо Шерцер, Дакиевата летечка ударна патрола, Пролетерската ударна патрола и чета и 1. словенечки пролетерски ударен баталјон Тоне Томшич (1. книга, стр. 535 и натаму)',
     'tomsiceva-2':
       'Список на борците на бригадата од 16 јули 1942 до 13 јули 1943 (2. книга, стр. 847 и натаму)',
     'tomsiceva-3':
@@ -1131,6 +1139,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Every Partisan who fought in the brigade from 22 August 1942 to 9 May 1945, survivors and the fallen: where they came from, occupation, when they joined the struggle and the brigade, duty and fate; with a supplement and an addendum (pp. 579 ff.)',
     '6-krajiska-prezivjeli':
       'The brigade’s Partisans who survived the war, names only, with a later list (pp. 747–762 of the book)',
+    '6-krajiska-kadar':
+      'The brigade’s officers and cadre of 1942–1943 by duty, from its commanders to the company nurses, names only (pp. 739–745 of the book)',
     '32-divizija-borci':
       'Partisans of the division’s staff, its attached units, the Braća Radić, Matija Gubec, Mihovil Pavlek Miškina and 1st Zagorje Assault brigades, and some with incomplete details: year and place of birth, nationality, occupation, when they joined the army, fate; each is listed under every unit he fought in (pp. 431–662 of the book)',
     '18-hrvatska':
@@ -1177,6 +1187,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members (pp. 333 ff.) and of its fallen (pp. 340 ff.)',
     'braciceva':
       'Lists of the brigade’s fallen (pp. 722 ff.) and of those who survived the war (pp. 746 ff.)',
+    'tomsiceva-1':
+      'Lists of the fighters of the units the brigade grew from: the strike group of the 3rd Ljubo Šercer Battalion, Daki’s flying strike patrol, the Proletarian strike patrol and company, and the 1st Slovene Proletarian Strike Battalion Tone Tomšič (book 1, pp. 535 ff.)',
     'tomsiceva-2':
       'List of the brigade’s members from 16 July 1942 to 13 July 1943 (book 2, pp. 847 ff.)',
     'tomsiceva-3':

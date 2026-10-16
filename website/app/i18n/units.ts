@@ -65,7 +65,7 @@ const sl: Record<string, UnitText> = {
   },
   '6-krajiska-brigada': {
     name: '6. krajiška udarna brigada',
-    description: 'Ustanovljena 14. oktobra 1942 iz enot Prvega krajiškega odreda. Padli in umrli borci in poveljniki ter borci, ki so vojno preživeli.',
+    description: 'Ustanovljena 14. oktobra 1942 iz enot Prvega krajiškega odreda. Padli in umrli borci in poveljniki, poveljniki brigade 1942–1943 ter borci, ki so vojno preživeli.',
   },
   '4-krajiska-brigada': {
     name: '4. krajiška udarna brigada',
@@ -182,7 +182,7 @@ const sl: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4. proletarska črnogorska brigada',
     description:
-      'Ustanovljena 10. junija 1942. Borci brigade v bitki na Sutjeski ter borci in poveljniki, padli od 1942 do 1945.',
+      'Ustanovljena 10. junija 1942. Borci na dan ustanovitve in v bitki na Sutjeski, poveljniki brigade in narodni heroji ter borci in poveljniki, padli od 1942 do 1945.',
   },
   '5-proleterska-brigada': {
     name: '5. proletarska črnogorska brigada',
@@ -337,7 +337,7 @@ const sl: Record<string, UnitText> = {
   'tomsiceva-brigada': {
     name: 'Tomšičeva brigada',
     description:
-      'Ustanovljena 16. julija 1942 na Cesti na Kočevskem. Borci brigade od ustanovitve do konca vojne.',
+      'Ustanovljena 16. julija 1942 na Cesti na Kočevskem. Borci enot, iz katerih je nastala, in borci brigade do konca vojne.',
   },
   '1-slovenska-artilerijska-brigada': {
     name: '1. slovenska artilerijska brigada',
@@ -818,7 +818,7 @@ const mk: Record<string, UnitText> = {
   },
   '6-krajiska-brigada': {
     name: '6-та краишка ударна бригада',
-    description: 'Формирана на 14 октомври 1942 од единиците на Првиот краишки одред. Загинати и починати борци и старешини, и борци што ја преживеаја војната.',
+    description: 'Формирана на 14 октомври 1942 од единиците на Првиот краишки одред. Загинати и починати борци и старешини, старешините на бригадата 1942–1943 и борци што ја преживеаја војната.',
   },
   '4-krajiska-brigada': {
     name: '4-та краишка ударна бригада',
@@ -939,7 +939,7 @@ const mk: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4-та пролетерска црногорска бригада',
     description:
-      'Формирана на 10 јуни 1942. Борците на бригадата во битката на Сутјеска, и борци и старешини загинати од 1942 до 1945.',
+      'Формирана на 10 јуни 1942. Борците на денот на формирањето и во битката на Сутјеска, старешините на бригадата и народните херои, и борци и старешини загинати од 1942 до 1945.',
   },
   '5-proleterska-brigada': {
     name: '5-та пролетерска црногорска бригада',
@@ -1094,7 +1094,7 @@ const mk: Record<string, UnitText> = {
   'tomsiceva-brigada': {
     name: 'Томшичева бригада',
     description:
-      'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на бригадата од формирањето до крајот на војната.',
+      'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на единиците од кои настана и борци на бригадата до крајот на војната.',
   },
   '1-slovenska-artilerijska-brigada': {
     name: '1. словенечка артилериска бригада',
@@ -1575,7 +1575,7 @@ const en: Record<string, UnitText> = {
   },
   '6-krajiska-brigada': {
     name: '6th Krajina Assault Brigade',
-    description: 'Formed on 14 October 1942 from units of the 1st Krajina Detachment. Partisans and officers who were killed or died, and Partisans who survived the war.',
+    description: 'Formed on 14 October 1942 from units of the 1st Krajina Detachment. Partisans and officers who were killed or died, the brigade’s officers of 1942–1943, and Partisans who survived the war.',
   },
   '4-krajiska-brigada': {
     name: '4th Krajina Assault Brigade',
@@ -1698,7 +1698,7 @@ const en: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4th Proletarian Montenegrin Brigade',
     description:
-      'Formed on 10 June 1942. Partisans of the brigade in the Battle of the Sutjeska, and Partisans and officers killed from 1942 to 1945.',
+      'Formed on 10 June 1942. Partisans on the day it was formed and in the Battle of the Sutjeska, the brigade’s officers and People’s Heroes, and Partisans and officers killed from 1942 to 1945.',
   },
   '5-proleterska-brigada': {
     name: '5th Proletarian Montenegrin Brigade',
@@ -1853,7 +1853,7 @@ const en: Record<string, UnitText> = {
   'tomsiceva-brigada': {
     name: 'Tomšič Brigade',
     description:
-      'Formed on 16 July 1942 at Cesta in the Kočevje region. The brigade’s members from its formation to the end of the war.',
+      'Formed on 16 July 1942 at Cesta in the Kočevje region. Partisans of the units it grew from, and the brigade’s members to the end of the war.',
   },
   '1-slovenska-artilerijska-brigada': {
     name: '1st Slovene Artillery Brigade',

@@ -54,7 +54,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 
 | Unit | Book | Lists (page) | Link |
 |---|---|---|---|
-| 4. proleterska (crnogorska) | Blažo Janković | at formation 10. VI 1942; fallen 1942–45 ([148_13.pdf](https://znaci.org/00001/148_13.pdf), 131 pp. with the chapter) | [00001/148](https://znaci.org/00001/148.htm) |
+| 4. proleterska (crnogorska) | Blažo Janković | at formation 10. VI 1942; fallen 1942–45; officers by battalion and duty (pp. 109–126) and narodni heroji (pp. 129–131) ([148_13.pdf](https://znaci.org/00001/148_13.pdf), 131 pp. with the chapter; **all done**) | [00001/148](https://znaci.org/00001/148.htm) |
 | 4. proleterska | Zbornik sjećanja, knj. 2 | at formation (p. 491, ~82 pp.) | [00001/287](https://znaci.org/00001/287.htm) |
 | 6. crnogorska | Zbornik sjećanja | fallen (p. 871) | [00003/537](https://znaci.org/00003/537.htm) |
 | 1. bokeljska | Dušan Živković | fallen and died (p. 315, 10 pp.) | [00003/384](https://znaci.org/00003/384.htm) |
@@ -143,7 +143,7 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 |---|---|---|---|
 | Cankarjeva | Lado Ambrožič-Novljan 1975 | commanders 810, **Seznam cankarjevcev 815**, Padli 847 (of 910) | [767](https://znaci.org/00003/767.php) |
 | Gubčeva | Ambrožič-Novljan 1972 | **Seznam gubčevcev**, Padli | [bk=782](https://znaci.org/00003/7xx.php?bk=782) |
-| Tomšičeva I–IV | Franci Strle 1980–89 | I: udarna grupa, 1. proletarski bataljon (535–539 of 615); II: **roster VII 1942–VII 1943** (840 of 941); III: names left out of II (646 of 715); IV: **rosters VII 1943–IV 1944 (573) and IV 1944–V 1945 (621)** (of 746) | [790](https://znaci.org/00003/7xx.php?bk=790), [787](https://znaci.org/00003/7xx.php?bk=787), [792](https://znaci.org/00003/7xx.php?bk=792), [788](https://znaci.org/00003/7xx.php?bk=788) |
+| Tomšičeva I–IV | Franci Strle 1980–89 | I: udarna grupa, 1. proletarski bataljon (535–539 of 615; **done**, `tomsiceva-1.pdf`); II: **roster VII 1942–VII 1943** (840 of 941); III: names left out of II (646 of 715); IV: **rosters VII 1943–IV 1944 (573) and IV 1944–V 1945 (621)** (of 746) | [790](https://znaci.org/00003/7xx.php?bk=790), [787](https://znaci.org/00003/7xx.php?bk=787), [792](https://znaci.org/00003/7xx.php?bk=792), [788](https://znaci.org/00003/7xx.php?bk=788) |
 | Šercerjeva | Milan Guček 1973 | Padli (518 of 550), volunteers | [bk=813](https://znaci.org/00003/7xx.php?bk=813) |
 | XII. SNOUB (Dvanajsta) | Ambrožič-Novljan 1976 | Padli (609), **Seznam borcev (613 of 648)** | [bk=814](https://znaci.org/00003/7xx.php?bk=814) |
 | Kosovelova | Radosav Isaković 1973 | Padli (802), commanders (819 of 854) | [bk=773](https://znaci.org/00003/7xx.php?bk=773) |
@@ -164,7 +164,7 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 | Dolomitski odred | Rudolf Hribernik, *Dolomiti v NOB* 3 | heroes, spomenica holders and padli prvoborci (pp. 126-130 of 163; on the site as `dolomiti-v-nob-3.pdf`, a book across units: **done**, `parse_dolomiti_v_nob.py`) | [bk=1079](https://znaci.org/00003/7xx.php?bk=1079) |
 | Mira Mihevc, *Na nevarnih poteh* | | members of the protection unit of the VPV (p. 291), Padli borci (303), heroes (305), spomenica holders (307 of 328): **done**, unit 150, `parse_zascitna_enota.py` | [757](https://znaci.org/00003/757.php) |
 
-Commanders only (small): 31. divizija (Petelin, [823](https://znaci.org/00003/7xx.php?bk=823)), 15. divizija ([770](https://znaci.org/00003/770.php); **done**, `15-divizija-stabi.pdf`), Petnajsta brigada ([815](https://znaci.org/00003/7xx.php?bk=815); **done**, `15-brigada-stabi.pdf`), Vojkova brigada (unlisted, [573](https://znaci.org/00003/573.htm), p. 517), Jeseniško-bohinjski odred ([771](https://znaci.org/00003/771.php); **done**, `jb-odred-stabi.pdf`). The XXXI. divizija's staffs are on the site from *Med Triglavom in Trstom* 2 (`xxxi-divizija-stabi.pdf`), books across units.
+Commanders only (small): 31. divizija (Petelin, [823](https://znaci.org/00003/7xx.php?bk=823); the XXXI. divizija's list again, not read), 15. divizija ([770](https://znaci.org/00003/770.php); **done**, `15-divizija-stabi.pdf`), Petnajsta brigada ([815](https://znaci.org/00003/7xx.php?bk=815); **done**, `15-brigada-stabi.pdf`), Vojkova brigada (unlisted, [573](https://znaci.org/00003/573.htm), p. 517; the same, not read), Jeseniško-bohinjski odred ([771](https://znaci.org/00003/771.php); **done**, `jb-odred-stabi.pdf`). The XXXI. divizija's staffs are on the site from *Med Triglavom in Trstom* 2 (`xxxi-divizija-stabi.pdf`), books across units.
 
 Not checked (the PDF makes the reader scan the whole file, or has no text layer): Kozjanski odred 1–2 (Teropšič, [2085](https://znaci.org/00003/7xx.php?bk=2085), [2086](https://znaci.org/00003/7xx.php?bk=2086); a leaflet says its roster holds 1,182 names), Kokrški odred I–III (Ivan Jan), Druga grupa odredov (Ferlež), *Med Triglavom in Trstom* (XXXI. divizija), *Cankarjev bataljon* (Ivan Jan), *Najboljši so padli* I–III, *Iskra in plamen* 1–3, Lovćenski odred ([2425](https://znaci.org/00003/7xx.php?bk=2425)), Nikšićki odred ([1024](https://znaci.org/00003/7xx.php?bk=1024)), *Teslić u NOB* ([1026](https://znaci.org/00003/7xx.php?bk=1026)).
 
@@ -179,7 +179,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Prva proleterska (1) | Branislav Božović, *Rudarska četa* | roster (PDF p. 426, 7 pp.) | [00003/748](https://znaci.org/00003/748.php) |
 | Prva proleterska (1) | Miloš Vuksanović | at formation, Rudo (p. 433) | [00003/382](https://znaci.org/00003/382.htm) |
 | Treća krajiška (10) | Zbornik sjećanja knj. 1–2; knj. 3 | roster XI 1942 ([31_263.htm](https://znaci.org/00001/31_263.htm)); **everyone who served in the war** (knj. 3, p. 579) | [00001/31](https://znaci.org/00001/31.htm), [00003/394](https://znaci.org/00003/394.htm) |
-| Šesta krajiška (13) | *Ratna sjećanja* | wartime cadre 1942–43 (p. 739), **survivors** (p. 747) | [00001/147](https://znaci.org/00001/147.htm) |
+| Šesta krajiška (13) | *Ratna sjećanja* | wartime cadre 1942–43 (p. 739; **done**, `6-krajiska-kadar.pdf`), **survivors** (p. 747) | [00001/147](https://znaci.org/00001/147.htm) |
 | Osma krajiška (14) | *Sjećanja boraca* | fallen and died (p. 689; on the site as `8-krajiska-sjecanja-poginuli.pdf`, a second book: **done**, `parse_8_krajiska_sjecanja.py`), corrections to the monograph (p. 743) | [00001/68](https://znaci.org/00001/68.htm) |
 | Prva vojvođanska (9) | *Mladost slobodi darovana* | roster ([132_7.pdf](https://znaci.org/00001/132_7.pdf), 33 pp.) | [00001/132](https://znaci.org/00001/132.htm) |
 | 7. crnogorska omladinska (28) | Zbornik sjećanja | fallen (p. 709, 26 pp.; a second book: **done**, `parse_7_crnogorska_zbornik.py`) | [00003/471](https://znaci.org/00003/471.htm) |

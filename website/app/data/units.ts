@@ -134,11 +134,11 @@ export const units: Unit[] = [
     id: '6-krajiska-brigada',
     name: '6. krajiška udarna brigada',
     nameEn: '6th Krajina Assault Brigade',
-    description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine, i borci koji su preživeli rat.',
+    description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine, starešine brigade 1942–1943. i borci koji su preživeli rat.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 3656,
+    soldierCount: 4224,
     dataFile: '/6-krajiska-soldiers.json',
-    pdfFiles: ['/pdfs/6-krajiska.pdf', '/pdfs/6-krajiska-prezivjeli.pdf']
+    pdfFiles: ['/pdfs/6-krajiska.pdf', '/pdfs/6-krajiska-prezivjeli.pdf', '/pdfs/6-krajiska-kadar.pdf']
   },
   {
     id: '4-krajiska-brigada',
@@ -404,9 +404,9 @@ export const units: Unit[] = [
     id: '4-proleterska-brigada',
     name: '4. proleterska crnogorska brigada',
     nameEn: '4th Proletarian Montenegrin Brigade',
-    description: 'Formirana 10. juna 1942. Borci brigade u bici na Sutjesci, i borci i starešine poginuli od 1942. do 1945.',
+    description: 'Formirana 10. juna 1942. Borci na dan formiranja i u bici na Sutjesci, starešine brigade i narodni heroji, i borci i starešine poginuli od 1942. do 1945.',
     image: '/images/4-proleterska-brigada.jpg',
-    soldierCount: 4011,
+    soldierCount: 4046,
     dataFile: '/4-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf', '/pdfs/4-proleterska-poginuli.pdf', '/pdfs/4-proleterska-formiranje.pdf']
   },
@@ -714,11 +714,11 @@ export const units: Unit[] = [
     id: 'tomsiceva-brigada',
     name: 'Tomšičeva brigada',
     nameEn: 'Tomšič Brigade',
-    description: 'Formirana 16. jula 1942. na Cesti na Kočevskom. Borci brigade od formiranja do kraja rata.',
+    description: 'Formirana 16. jula 1942. na Cesti na Kočevskom. Borci jedinica iz kojih je nastala i borci brigade do kraja rata.',
     image: '/images/tomsiceva-brigada.jpg',
-    soldierCount: 5921,
+    soldierCount: 6016,
     dataFile: '/tomsiceva-soldiers.json',
-    pdfFiles: ['/pdfs/tomsiceva-2.pdf', '/pdfs/tomsiceva-3.pdf', '/pdfs/tomsiceva-4.pdf']
+    pdfFiles: ['/pdfs/tomsiceva-2.pdf', '/pdfs/tomsiceva-3.pdf', '/pdfs/tomsiceva-4.pdf', '/pdfs/tomsiceva-1.pdf']
   },
   {
     id: '1-slovenska-artilerijska-brigada',

@@ -199,6 +199,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca brigade koji su preživeli rat, samo imena, s naknadnim spiskom (str. 747–762 knjige)'
   },
   {
+    id: '6-krajiska-kadar',
+    title: 'Šesta krajiška NOU brigada — spisak ratnog kadra 1942—1943 (ratna sjećanja)',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/6-krajiska-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/6-krajiska-kadar.jpg',
+    brigadeName: '6. krajiška udarna brigada',
+    description: 'Starešine brigade 1942–1943. po dužnostima, od komandanata brigade do četnih bolničarki, samo imena (str. 739–745 knjige)'
+  },
+  {
     id: '4-krajiska',
     title: 'Četvrta krajiška NOU brigada',
     author: 'Rade Zorić',
@@ -989,6 +998,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/braciceva.jpg',
     brigadeName: 'Bračičeva brigada',
     description: 'Spisak poginulih boraca brigade (str. 722 i dalje) i onih koji su preživeli rat (str. 746 i dalje)'
+  },
+  {
+    id: 'tomsiceva-1',
+    title: 'Tomšičeva brigada, 1. knjiga — borci udarne grupe, udarnih patrulj in čete ter 1. proletarskega bataljona',
+    author: 'Franci Strle',
+    pdfPath: '/pdfs/tomsiceva-1.pdf',
+    thumbnail: '/images/pdf-thumbs/tomsiceva-1.jpg',
+    brigadeName: 'Tomšičeva brigada',
+    description: 'Spiskovi boraca jedinica iz kojih je brigada nastala: udarne grupe 3. bataljona Ljube Šercera, Dakijeve leteće udarne patrole, Proleterske udarne patrole i čete i 1. slovenačkog proleterskog udarnog bataljona Toneta Tomšiča (1. knjiga, str. 535 i dalje)'
   },
   {
     id: 'tomsiceva-2',

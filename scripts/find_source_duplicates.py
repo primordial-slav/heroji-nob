@@ -51,6 +51,7 @@ CORRECTIONS = ROOT / 'corrections.json'
 # PDFs that hold more than one list: {pdf_file: [(first page, list name), ...]}
 LISTS = {
     '16-slavonska-omladinska.pdf': [(1, 'poginuli'), (34, 'Pokuplje i Žumberak'), (38, 'rukovodioci')],
+    '4-proleterska-poginuli.pdf': [(1, 'poginuli'), (109, 'rukovodioci'), (129, 'narodni heroji')],
     '13-krajiska.pdf': [(2, 'u brigadi avgusta i septembra 1943'), (25, 'članovi KPJ, maj 1945')],
     '4-brigada-slavonije.pdf': [(1, 'poginuli'), (14, 'ranjeni')],
     'mostarski-bataljon.pdf': [(2, 'Konjički bataljon 1941-42'), (35, 'Mostarski bataljon 1942-43'),
@@ -79,6 +80,7 @@ LISTS = {
     'karlovacka.pdf': [(1, 'na dan formiranja'), (23, 'poginuli')],
     '4-sandzacka.pdf': [(1, 'poginuli'), (11, 'ranjeni')],
     '3-primorsko-goranska.pdf': [(1, 'starešine i bolničari'), (8, 'poginuli')],
+    'tomsiceva-1.pdf': [(1, 'udarne enote'), (5, '1. proletarski bataljon')],
     'tomsiceva-4.pdf': [(1, '1943-1944'), (49, '1944-1945')],
     'sercerjeva.pdf': [(1, 'prostovoljci 1942-43'), (10, 'padli')],
     '4-pomorski-sektor.pdf': [(1, 'borci'), (56, 'poginuli')],       # the roster leaves the fallen out
