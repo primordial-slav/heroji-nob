@@ -73,6 +73,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih, umrlih i nestalih boraca Druge ličke proleterske brigade (iz zbornika sjećanja); većina je i na spisku Vojnoistorijskog instituta'
   },
   {
+    id: 'druga-licka-staresine',
+    title: 'Druga lička proleterska brigada — starešinski sastav štaba brigade i bataljona',
+    author: 'Đorđe J. Orlović',
+    pdfPath: '/pdfs/druga-licka-staresine.pdf',
+    thumbnail: '/images/pdf-thumbs/druga-licka-staresine.jpg',
+    brigadeName: 'Druga lička proleterska brigada',
+    description: 'Komandanti, komesari, njihovi zamenici, operativni, obaveštajni oficiri i intendanti štaba brigade i štabova bataljona od formiranja do kraja rata, s kratkom biografijom većine (str. 349–360)'
+  },
+  {
     id: 'treca-proleterska-brigada',
     title: 'Treća proleterska (sandžačka) brigada',
     author: 'Žarko Vidović',
@@ -233,6 +242,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/3-krajiska-spisak-boraca.jpg',
     brigadeName: '3. krajiška proleterska udarna brigada',
     description: 'Spisak boraca brigade koji su se borili u njenom sastavu od 22. 8. 1942. do 9. 5. 1945, preživelih i poginulih: odakle su, zanimanje, kada su stupili u NOB i u brigadu, dužnost, sudbina; s dopunom i prilogom (str. 579 i dalje)'
+  },
+  {
+    id: '3-krajiska-sastav-1942',
+    title: 'Treća krajiška brigada — sastav brigade polovinom novembra 1942. (zbornik sjećanja, knj. 1–2)',
+    author: 'Grupa autora',
+    pdfPath: 'https://znaci.org/00001/31_263.htm',
+    thumbnail: '/images/pdf-thumbs/3-krajiska-sastav-1942.jpg',
+    brigadeName: '3. krajiška proleterska udarna brigada',
+    description: 'Svi borci i starešine brigade polovinom novembra 1942, po štabu, politodjelu, intendanturi, bataljonima, četama i vodovima: dužnost, godina i mesto rođenja, narodnost, zanimanje, kod mnogih i kasnija sudbina (tekst na znaci.org, bez skenirane knjige)'
   },
   {
     id: '17-slavonska-poginuli',
@@ -494,6 +512,24 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zene-1-dalmatinska.jpg',
     brigadeName: '1. dalmatinska proleterska brigada',
     description: 'Spisak žena boraca brigade iz 1944–1945 (dokument 368): dužnost i čin, datum i mesto rođenja, kada su stupile u NOV, odlikovanja i mišljenje štaba o svakoj'
+  },
+  {
+    id: '1-dalmatinska-komandni-sastav',
+    title: 'Prva dalmatinska proleterska brigada — promene u komandnom sastavu',
+    author: 'Mirko Novović, Stevan Petković',
+    pdfPath: '/pdfs/1-dalmatinska-komandni-sastav.pdf',
+    thumbnail: '/images/pdf-thumbs/1-dalmatinska-komandni-sastav.jpg',
+    brigadeName: '1. dalmatinska proleterska brigada',
+    description: 'Komandanti, komesari, njihovi zamenici, načelnici štaba, intendanti, referenti saniteta, omladinski rukovodioci i obaveštajni oficiri štaba brigade i svakog bataljona od 6. septembra 1942. do kraja rata, s vremenom kad je ko bio na dužnosti (str. 435–443)'
+  },
+  {
+    id: '1-dalmatinska-formiranje',
+    title: 'Prva dalmatinska proleterska brigada — starešinski sastav na dan formiranja',
+    author: 'Mirko Novović, Stevan Petković',
+    pdfPath: '/pdfs/1-dalmatinska-formiranje.pdf',
+    thumbnail: '/images/pdf-thumbs/1-dalmatinska-formiranje.jpg',
+    brigadeName: '1. dalmatinska proleterska brigada',
+    description: 'Starešine štaba brigade, političkog odeljenja, bataljona i četa 6. septembra 1942. u selu Dobro kod Livna: dužnost, godina rođenja, narodnost, zanimanje (str. 55–58)'
   },
   {
     id: '16-slavonska-omladinska',
@@ -835,7 +871,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/12-dalmatinska.pdf',
     thumbnail: '/images/pdf-thumbs/12-dalmatinska.jpg',
     brigadeName: '12. dalmatinska (1. otočka) brigada',
-    description: 'Spisak poginulih boraca i rukovodilaca brigade, po borbama, od Sućurja, 22. septembra 1943, do Ilirske Bistrice, 6. maja 1945. (str. 353–366 knjige)'
+    description: 'Spisak poginulih boraca i rukovodilaca brigade, po borbama, od Sućurja, 22. septembra 1943, do Ilirske Bistrice, 6. maja 1945. (str. 353–366 knjige), i pregled rukovodećeg kadra štaba brigade i štabova bataljona, s vremenom kad je ko bio na dužnosti (str. 339–342)'
   },
   {
     id: '3-makedonska',
@@ -1250,6 +1286,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/6-vojvodjanska.jpg',
     brigadeName: '6. vojvođanska brigada',
     description: 'Spisak poginulih boraca i rukovodilaca: godina i mesto rođenja, datum i mesto pogibije, gde su sahranjeni (str. 175–199)'
+  },
+  {
+    id: '6-vojvodjanska-stabovi',
+    title: 'Šesta vojvođanska udarna brigada — spisak štabova i komandi',
+    author: 'Živan M. Ninković',
+    pdfPath: '/pdfs/6-vojvodjanska-stabovi.pdf',
+    thumbnail: '/images/pdf-thumbs/6-vojvodjanska-stabovi.jpg',
+    brigadeName: '6. vojvođanska brigada',
+    description: 'Članovi štaba brigade i štabova njenih bataljona i komandi četa, po dužnostima, samo imena (str. 171–174)'
   },
   {
     id: '13-vojvodjanska',

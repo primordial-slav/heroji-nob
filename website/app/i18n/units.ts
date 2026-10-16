@@ -29,7 +29,7 @@ const sl: Record<string, UnitText> = {
   },
   'druga-licka-brigada': {
     name: 'Druga liška proletarska brigada',
-    description: 'Ustanovljena 18. avgusta 1942 v Laudonovem gaju. Padli, umrli in pogrešani borci ter tisti, ki so vojno preživeli.',
+    description: 'Ustanovljena 18. avgusta 1942 v Laudonovem gaju. Padli, umrli in pogrešani borci, tisti, ki so vojno preživeli, ter starešine štaba brigade in bataljonov.',
   },
   'treca-proleterska-brigada': {
     name: 'Tretja proletarska (sandžaška) brigada',
@@ -163,7 +163,7 @@ const sl: Record<string, UnitText> = {
   '1-dalmatinska-brigada': {
     name: '1. dalmatinska proletarska brigada',
     description:
-      'Ustanovljena 6. septembra 1942 v vasi Dobro pri Livnu. Borci, ki so padli v vojni. Seznam obstaja samo kot besedilo na znaci.org, brez skenirane knjige.',
+      'Ustanovljena 6. septembra 1942 v vasi Dobro pri Livnu. Borci, ki so padli v vojni, borci na Sutjeski, borke 1944–1945, komandirji in komisarji čet ter poveljstvo brigade in bataljonov.',
   },
   '16-slavonska-omladinska-brigada': {
     name: '16. slavonska mladinska brigada "Jože Vlahović"',
@@ -237,7 +237,7 @@ const sl: Record<string, UnitText> = {
   '12-dalmatinska-brigada': {
     name: '12. dalmatinska (1. otoška) brigada',
     description:
-      'Ustanovljena 15. septembra 1943 na otokih Brač, Hvar, Vis in Šolta. Padli borci in poveljniki, po bojih, v katerih so padli.',
+      'Ustanovljena 15. septembra 1943 na otokih Brač, Hvar, Vis in Šolta. Padli borci in poveljniki, po bojih, v katerih so padli, ter vodilni kader štaba brigade in bataljonov.',
   },
   '3-makedonska-brigada': {
     name: '3. makedonska brigada',
@@ -402,7 +402,7 @@ const sl: Record<string, UnitText> = {
   '6-vojvodjanska-brigada': {
     name: '6. vojvodinska brigada',
     description:
-      'Ustanovljena 17. januarja 1944 na Jabučju pri Sremski Rači. Padli borci in starešine brigade.',
+      'Ustanovljena 17. januarja 1944 na Jabučju pri Sremski Rači. Padli borci in starešine brigade ter člani štabov in poveljstev čet.',
   },
   '13-vojvodjanska-brigada': {
     name: '13. vojvodinska brigada',
@@ -782,7 +782,7 @@ const mk: Record<string, UnitText> = {
   },
   'druga-licka-brigada': {
     name: 'Втора личка пролетерска бригада',
-    description: 'Формирана на 18 август 1942 во Лаудонов Гај. Загинати, починати и исчезнати борци, и оние што ја преживеаја војната.',
+    description: 'Формирана на 18 август 1942 во Лаудонов Гај. Загинати, починати и исчезнати борци, оние што ја преживеаја војната, и старешините на штабот на бригадата и на баталјоните.',
   },
   'treca-proleterska-brigada': {
     name: 'Трета пролетерска (санџачка) бригада',
@@ -920,7 +920,7 @@ const mk: Record<string, UnitText> = {
   '1-dalmatinska-brigada': {
     name: '1-ва далматинска пролетерска бригада',
     description:
-      'Формирана на 6 септември 1942 во селото Добро кај Ливно. Борци загинати во војната. Списокот постои само како текст на znaci.org, без скенирана книга.',
+      'Формирана на 6 септември 1942 во селото Добро кај Ливно. Борци загинати во војната, борци на Сутјеска, жени борци 1944–1945, командири и комесари на четите и командниот состав на бригадата и баталјоните.',
   },
   '16-slavonska-omladinska-brigada': {
     name: '16-та славонска младинска бригада "Јоже Влаховиќ"',
@@ -994,7 +994,7 @@ const mk: Record<string, UnitText> = {
   '12-dalmatinska-brigada': {
     name: '12-та далматинска (1-ва островска) бригада',
     description:
-      'Формирана на 15 септември 1943 на островите Брач, Хвар, Вис и Шолта. Загинати борци и старешини, по борбите во кои загинале.',
+      'Формирана на 15 септември 1943 на островите Брач, Хвар, Вис и Шолта. Загинати борци и старешини, по борбите во кои загинале, и раководниот кадар на штабот на бригадата и на баталјоните.',
   },
   '3-makedonska-brigada': {
     name: '3-та македонска бригада',
@@ -1159,7 +1159,7 @@ const mk: Record<string, UnitText> = {
   '6-vojvodjanska-brigada': {
     name: '6-та војводинска бригада',
     description:
-      'Формирана на 17 јануари 1944 на Јабучје кај Сремска Рача. Загинатите борци и раководители на бригадата.',
+      'Формирана на 17 јануари 1944 на Јабучје кај Сремска Рача. Загинатите борци и раководители на бригадата и членовите на штабовите и командите на четите.',
   },
   '13-vojvodjanska-brigada': {
     name: '13-та војводинска бригада',
@@ -1539,7 +1539,7 @@ const en: Record<string, UnitText> = {
   },
   'druga-licka-brigada': {
     name: '2nd Lika Proletarian Brigade',
-    description: 'Formed on 18 August 1942 in Laudonov Gaj. Partisans who were killed, died or went missing, and those who survived the war.',
+    description: 'Formed on 18 August 1942 in Laudonov Gaj. Partisans who were killed, died or went missing, those who survived the war, and the officers of the brigade and battalion staffs.',
   },
   'treca-proleterska-brigada': {
     name: '3rd Proletarian (Sandžak) Brigade',
@@ -1679,7 +1679,7 @@ const en: Record<string, UnitText> = {
   '1-dalmatinska-brigada': {
     name: '1st Dalmatian Proletarian Brigade',
     description:
-      'Formed on 6 September 1942 in the village of Dobro near Livno. Partisans killed in the war. The roll exists only as text on znaci.org, with no scanned book.',
+      'Formed on 6 September 1942 in the village of Dobro near Livno. Partisans killed in the war, Partisans at the Sutjeska, women fighters of 1944–1945, company commanders and commissars, and the command of the brigade and its battalions.',
   },
   '16-slavonska-omladinska-brigada': {
     name: '16th Slavonian Youth Brigade "Jože Vlahović"',
@@ -1753,7 +1753,7 @@ const en: Record<string, UnitText> = {
   '12-dalmatinska-brigada': {
     name: '12th Dalmatian (1st Island) Brigade',
     description:
-      'Formed on 15 September 1943 on the islands of Brač, Hvar, Vis and Šolta. Partisans and officers who were killed, by the battle in which they fell.',
+      'Formed on 15 September 1943 on the islands of Brač, Hvar, Vis and Šolta. Partisans and officers who were killed, by the battle in which they fell, and the officers of the brigade and battalion staffs.',
   },
   '3-makedonska-brigada': {
     name: '3rd Macedonian Brigade',
@@ -1918,7 +1918,7 @@ const en: Record<string, UnitText> = {
   '6-vojvodjanska-brigada': {
     name: '6th Vojvodina Brigade',
     description:
-      'Formed on 17 January 1944 at Jabučje near Sremska Rača. The brigade’s fallen soldiers and officers.',
+      'Formed on 17 January 1944 at Jabučje near Sremska Rača. The brigade’s fallen soldiers and officers, and the members of its staffs and company commands.',
   },
   '13-vojvodjanska-brigada': {
     name: '13th Vojvodina Brigade',

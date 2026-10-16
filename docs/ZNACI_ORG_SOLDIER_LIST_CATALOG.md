@@ -74,8 +74,10 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227; **done**, `3-primorsko-goranska-stabovi.pdf`), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
 | 14. primorsko-goranska | Vladimir-Dušan Matetić | fallen (p. 227, 38 pp.) | [00003/544](https://znaci.org/00003/544.htm) |
 | 6. dalmatinska | Danilo Damjanović | command (p. 257; **done**, `6-dalmatinska-kadar.pdf`), fallen (p. 259) | [00001/105](https://znaci.org/00001/105.htm) |
+| 1. dalmatinska | Mirko Novović, Stevan Petković | officers at formation (108_3, pp. 55-58; **done**, `1-dalmatinska-formiranje.pdf`), changes in the command of the brigade and its battalions (108_20, pp. 435-443; **done**, `1-dalmatinska-komandni-sastav.pdf`), company commanders and commissars, narodni heroji, fallen (108_21; **done**, `1-dalmatinska-monografija.pdf`) | [00001/108](https://znaci.org/00001/108.htm) |
+| Druga lička | Đorđe J. Orlović | the officers of the brigade staff and its battalions' staffs, in prose (160_20, pp. 349-360; **done**, `druga-licka-staresine.pdf`) | [00001/160](https://znaci.org/00001/160.htm) |
 | 11. dalmatinska | Rako, Družijanić | fallen (p. 479, 26 pp.), missing (p. 505), survivors (p. 507, 94 pp.) | [00003/547](https://znaci.org/00003/547.htm) |
-| 12. dalmatinska (Prva otočka) | Nikola Anić | notes and fallen (already downloaded: `website/public/pdfs/12-dalmatinska.pdf`, 58 pp.) | [00001/80](https://znaci.org/00001/80.htm) |
+| 12. dalmatinska (Prva otočka) | Nikola Anić | notes and fallen (already downloaded: `website/public/pdfs/12-dalmatinska.pdf`, 58 pp.); the staffs (PDF pp. 22-25, book pp. 339-342; **done**, `parse_12_dalmatinska_kadrovi.py`) | [00001/80](https://znaci.org/00001/80.htm) |
 | 12. hercegovačka | Osman Đikić | fallen (p. 207, 15 pp.) | [00001/243](https://znaci.org/00001/243.htm) |
 | 13. hercegovačka | Mensur Seferović | fallen (p. 316, 14 pp.) | [00001/270](https://znaci.org/00001/270.htm) |
 | 14. hercegovačka (omladinska) | | everyone who served (p. 243, 32 pp.), fallen (p. 275) | [00001/268](https://znaci.org/00001/268.htm) |
@@ -101,7 +103,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 3. vojvođanska | Radovan Panić | fallen (p. 479), fate unknown (p. 521), survivors (p. 544). The unlisted copy [00001/57](https://znaci.org/00001/57.htm) has all three as web pages (57_49–51.htm) | [00001/70](https://znaci.org/00001/70.htm) |
 | 4. vojvođanska | Špiro Lagator | members 7. X 1943 (p. 281, 31 pp.), fallen and died (p. 312) | [00001/230](https://znaci.org/00001/230.htm) |
 | 5. vojvođanska | Nikola Mraović | soldiers and officers (p. 429) | [00001/81](https://znaci.org/00001/81.htm) |
-| 6. vojvođanska | Živan M. Ninković | fallen (p. 175, 25 pp.), thanked for the liberation (p. 200, 7 pp.) | [00001/252](https://znaci.org/00001/252.htm) |
+| 6. vojvođanska | Živan M. Ninković | staffs and company commands (p. 171; **done**, `6-vojvodjanska-stabovi.pdf`), fallen (p. 175, 25 pp.), thanked for the liberation (p. 200, 7 pp.) | [00001/252](https://znaci.org/00001/252.htm) |
 | 8. vojvođanska | Nikola Božić, *Rovovi i mostobrani* | fallen and missing (p. 675, 48 pp.) | [00001/184](https://znaci.org/00001/184.htm) |
 | 12. vojvođanska | Branislav Popov Miša | roster (p. 206, 33 pp.), fallen (p. 239, 19 pp.) | [00003/443](https://znaci.org/00003/443.htm) |
 | 13. vojvođanska | Đorđe Momčilović, *Kako do brigade* | roster (p. 771) | [00003/431](https://znaci.org/00003/431.htm) |
@@ -179,7 +181,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Prva proleterska (1) | Branislav Božović, *Rudarska četa* | roster (PDF p. 426, 7 pp.) | [00003/748](https://znaci.org/00003/748.php) |
 | Prva proleterska (1) | Miloš Vuksanović | at formation, Rudo (p. 433) | [00003/382](https://znaci.org/00003/382.htm) |
 | Prva proleterska (1) | *Prva proleterska brigada*, knj. 4, Spisak boraca | the roster A–Ž (97_1–3, on the site), the supplement (97_4, **done**), the battalion Garibaldi (97_5, **done**), the brigade on the day of formation, Cyrillic (97_6, pp. 10–33; the Rudo line-up again, not read), narodni heroji (97_6, images) | [00001/97](https://znaci.org/00001/97.htm) |
-| Treća krajiška (10) | Zbornik sjećanja knj. 1–2; knj. 3 | roster XI 1942 ([31_263.htm](https://znaci.org/00001/31_263.htm)); **everyone who served in the war** (knj. 3, p. 579) | [00001/31](https://znaci.org/00001/31.htm), [00003/394](https://znaci.org/00003/394.htm) |
+| Treća krajiška (10) | Zbornik sjećanja knj. 1–2; knj. 3 | roster XI 1942 ([31_263.htm](https://znaci.org/00001/31_263.htm); **done**, `parse_3_krajiska_sastav_1942.py`); **everyone who served in the war** (knj. 3, p. 579) | [00001/31](https://znaci.org/00001/31.htm), [00003/394](https://znaci.org/00003/394.htm) |
 | Šesta krajiška (13) | *Ratna sjećanja* | wartime cadre 1942–43 (p. 739; **done**, `6-krajiska-kadar.pdf`), **survivors** (p. 747) | [00001/147](https://znaci.org/00001/147.htm) |
 | Osma krajiška (14) | *Sjećanja boraca* | fallen and died (p. 689; on the site as `8-krajiska-sjecanja-poginuli.pdf`, a second book: **done**, `parse_8_krajiska_sjecanja.py`), corrections to the monograph (p. 743) | [00001/68](https://znaci.org/00001/68.htm) |
 | Prva vojvođanska (9) | *Mladost slobodi darovana* | roster ([132_7.pdf](https://znaci.org/00001/132_7.pdf), 33 pp.) | [00001/132](https://znaci.org/00001/132.htm) |

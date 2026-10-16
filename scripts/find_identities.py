@@ -229,7 +229,10 @@ def merge_groups(sure: list[dict], rank: dict, refs_of: dict, portraits: set):
         if s.get('pdf_file'):
             r = rank.get(s['pdf_file'], 99)
         else:
-            r = 200 if 'biblioteka.poreklo.rs' in (s.get('source_url') or '') else (-1 if s.get('source_url') else 99)
+            # a web page that is the unit's first list (1. dalmatinska, Mačvanski odred) keeps its records; a later
+            # one (3. krajiška's roll of 1942) gives way to the scanned books, so their records keep their ids
+            r = 200 if 'biblioteka.poreklo.rs' in (s.get('source_url') or '') else \
+                (-1 if s.get('source_url') and s['soldier_id'][4:6] == '00' else 99)
         return r, F.list_index(s), s['soldier_id']
     taken, tangled = [], []
     for pairs in groups.values():

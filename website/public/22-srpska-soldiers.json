@@ -14632,7 +14632,19 @@
     "soldier_id": "0074000634",
     "birth_place": "Smoljani, Bosanski Petrovac",
     "unit_detail": "IV bataljon",
-    "pdf_x_end": 452.1
+    "pdf_x_end": 452.1,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0010300686",
+        "name": "Mrđa Steve Boško",
+        "additional_info": "2. četa 3. bataljona: borac, rođen 1924, Smoljane, Bos. Petrovac, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm",
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mrđenović",
@@ -16249,7 +16261,77 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000702",
     "birth_place": "Dobašnica",
-    "pdf_x_end": 367.1
+    "pdf_x_end": 367.1,
+    "other_sources": [
+      {
+        "soldier_id": "9009000579",
+        "name": "Obradović Stevana Mićo — Milan",
+        "additional_info": "Mišljenovac, općina Donji Lapac: 1918, radnik, Srbin. Stupio u NOB 27. 7. 1941, borac ustaničkog voda Mišljenovac, početkom 1943. komandant 4. bat. 2. brig. 6. div. Clan KPJ od 1942. Poginuo kao slušalac škole VS NOV i POJ u Drvaru 25. 5. 1944. U. Obradović Jove Stevo, 1921, seljak, Srbin. Stupio u NOB 1942, borac 1. bat. 2. brig. 6. div. Poginuo na Zelengori 1944.",
+        "pdf_file": "hak-14-donji-lapac.pdf",
+        "pdf_page": 26,
+        "pdf_x": 410.4,
+        "pdf_y": 719.5,
+        "pdf_x_end": 583.0,
+        "pdf_y_end": 777.9,
+        "ref_book": "hak-14-donji-lapac"
+      },
+      {
+        "soldier_id": "0003030058",
+        "name": "Obradović Stevana Milan",
+        "additional_info": "zvani Miča; Starešinski sastav štaba Druge ličke brigade i štabova njenih bataljona. Komandant 4. bataljona: U februaru 1943. godine komandovanje bataljonom povereno je Milanu Stevana Obradoviću (Miči), rođenom u Mišljenovcu 1918. godine, zanatliji. Bataljonom je veoma uspešno komandovao sve do proleća 1944. godine, kada je upućen za slušaoca Više oficirske škole Vrhovnog štaba u Drvaru. Ovde je 25. maja, sa sovjetskim automatom u ruci, kojim ga je nagradio štab 1. proleterskog korpusa kao komandanta najboljeg bataljona, uzor - bataljona u 6. neprijateljskoj ofanzivi (borbe oko Šuice), junački pao u borbi sa nemačkim vazdušnim desantom u odbrani Vrhovnog štaba.",
+        "pdf_file": "druga-licka-staresine.pdf",
+        "pdf_page": 10,
+        "pdf_x": 141.8,
+        "pdf_y": 323.9,
+        "pdf_x_end": 481.0,
+        "pdf_y_end": 385.9,
+        "pdf_rects": [
+          [
+            141.8,
+            323.9,
+            480.9,
+            332.6
+          ],
+          [
+            121.7,
+            332.8,
+            480.5,
+            341.5
+          ],
+          [
+            121.7,
+            341.7,
+            481.0,
+            350.4
+          ],
+          [
+            121.4,
+            350.5,
+            480.8,
+            359.2
+          ],
+          [
+            121.7,
+            359.4,
+            480.8,
+            368.1
+          ],
+          [
+            121.7,
+            368.3,
+            480.8,
+            377.0
+          ],
+          [
+            121.9,
+            377.2,
+            371.4,
+            385.9
+          ]
+        ],
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Obradović",
@@ -16549,10 +16631,10 @@
   },
   {
     "last_name": "Palija",
-    "middle_name": "",
+    "middle_name": "Ilije",
     "first_name": "Ilija",
-    "fathers_name": "",
-    "full_name": "Palija Ilija",
+    "fathers_name": "Ilija",
+    "full_name": "Palija Ilije Ilija",
     "additional_info": "rođen 05. 02. 1915. godine, Orahovo, Bosanska Gradiška. Učesnik NOB od 1941. godine, osam puta ranjavan. Načelnik štaba Kosmajske brigade. U Brigadi od 12. 09. 1944. godine, major, poginuo 06. 04. 1945. godine na Sremskom frontu, kao komandant artiljerijske brigade Šeste ličke proleterske divizije.",
     "birth_year": "1915",
     "pdf_page": 13,
@@ -16570,7 +16652,7 @@
     "other_sources": [
       {
         "soldier_id": "0003000861",
-        "name": "Palija Ilija",
+        "name": "Palija Ilije Ilija",
         "additional_info": "rođen 5. 2. 1915. u s. Orahovo-Bosanska Gradiška. Bio je komandant 1. bataljona »Stojan Matić« od proleća 1943. pa do oslobođenja Beograda. Na sremskom frontu komanduje sa Artiljerijskom brigadom gde je po 8 put ranjen kod sela Lipovca 5. aprila i umro u bolnici 6. aprila 1945. godine. Šahranjen u groblju Sremska Mitrovica gde su mu meštani podigli spomenik",
         "pdf_file": "druga-licka-spisak.pdf",
         "pdf_page": 32,
@@ -16578,6 +16660,50 @@
         "pdf_y": 475.8,
         "pdf_x_end": 486.3,
         "pdf_y_end": 519.8,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003030065",
+        "name": "Palija Ilije Ilija",
+        "additional_info": "Starešinski sastav štaba Druge ličke brigade i štabova njenih bataljona. Operativni oficir brigade: Od maja 1943. godine do septembra iste godine na ovoj dužnosti su se smenjivali Danilo Damjanović i Ljubomir Medić. Od oktorba 1943. godine do početka januara 1944. godine na dužnosti operativnog oficira bio je Ilija Ilije Palija, rođen u selu Orahova kod Bosanske Gradiške 1915. godine, žandarm, da bi se potom vratio na raniju dužnost komandanta 1. bataljona. Komandant 1. bataljona: Od tada pa do oktobra 1943. godine bataljonom je komandovao, uz dva prekida zbog ranjavanja, Ilija Palija. Pošto je on koncem aprila bio ranjen na Baškim Oštarijama, a potom i 26. jula na Kijevu (rejon Knina), bataljonom je u tim intervalima njegovog lečenja privremeno komandovao Bude Divjak do tada komandant rasformiranog 5. mitraljeskog bataljona, koji je imao zaduženje u štabu brigade. Komandant 1. bataljona: Pošto je Tankosić teže ranjen 16. decembra 1943. godine u miniranoj kući iznad Šuice, komandovanje bataljonom je početkom januara ponovo preuzeo Ilija Palija i vodio ga sve do oslobođenja Valjeva, septembra 1944. godine, kada je otišao na novu dužnost i definitivno napustio brigadu.",
+        "pdf_file": "druga-licka-staresine.pdf",
+        "pdf_page": 2,
+        "pdf_x": 143.4,
+        "pdf_y": 582.6,
+        "pdf_x_end": 483.3,
+        "pdf_y_end": 627.6,
+        "pdf_rects": [
+          [
+            143.4,
+            582.6,
+            482.2,
+            592.1
+          ],
+          [
+            123.5,
+            591.4,
+            483.3,
+            600.9
+          ],
+          [
+            123.2,
+            600.3,
+            481.8,
+            609.8
+          ],
+          [
+            123.5,
+            607.5,
+            482.1,
+            618.7
+          ],
+          [
+            123.2,
+            618.1,
+            227.9,
+            627.6
+          ]
+        ],
         "unit_file": "druga-licka-soldiers.json"
       }
     ]

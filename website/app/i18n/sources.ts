@@ -21,6 +21,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'druga-licka-sjecanja-prezivjeli': 'Seznam preživelih borcev in poveljnikov Druge liške proletarske brigade (iz zbornika spominov)',
     'druga-licka-sjecanja-poginuli':
       'Seznam padlih, umrlih in pogrešanih borcev Druge liške proletarske brigade (iz zbornika spominov); večina je tudi na seznamu Vojnozgodovinskega inštituta',
+    'druga-licka-staresine':
+      'Komandanti, komisarji, njihovi namestniki, operativni in obveščevalni častniki ter intendanti štaba brigade in štabov bataljonov od ustanovitve do konca vojne, pri večini s kratkim življenjepisom (str. 349–360)',
     'treca-proleterska-brigada': 'Monografija, zbirka Ratna prošlost naših naroda, knj. 144',
     'treca-proleterska-poginuli-knj3':
       'Seznam padlih in umrlih borcev in poveljnikov po letih, 1942–1945 (1.374 imen; v tem izvodu manjkajo strani z začetkom leta 1944)',
@@ -108,11 +110,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'borci-sutjeske-2-dalmatinska':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     '12-dalmatinska':
-      'Seznam padlih borcev in poveljnikov brigade, po bojih, od Sućurja 22. septembra 1943 do Ilirske Bistrice 6. maja 1945 (str. 353–366 knjige)',
+      'Seznam padlih borcev in poveljnikov brigade, po bojih, od Sućurja 22. septembra 1943 do Ilirske Bistrice 6. maja 1945 (str. 353–366 knjige), in pregled vodilnega kadra štaba brigade in štabov bataljonov, s časom, ko je kdo opravljal dolžnost (str. 339–342)',
     '3-makedonska':
       'Seznam padlih borcev brigade: od kod so bili, leto rojstva, kje in kdaj so padli (str. 359–368 knjige)',
     '3-krajiska-spisak-boraca':
       'Seznam borcev, ki so se v brigadi borili od 22. 8. 1942 do 9. 5. 1945, preživelih in padlih: od kod so bili, poklic, kdaj so vstopili v NOB in v brigado, dolžnost, usoda; z dopolnilom in prilogo (str. 579 in naprej)',
+    '3-krajiska-sastav-1942':
+      'Vsi borci in starešine brigade sredi novembra 1942, po štabu, politodjelu, intendanturi, bataljonih, četah in vodih: dolžnost, leto in kraj rojstva, narodnost, poklic, pri mnogih tudi poznejša usoda (besedilo na znaci.org, brez skenirane knjige)',
     '6-krajiska-prezivjeli':
       'Seznam borcev brigade, ki so vojno preživeli, samo imena, z naknadnim seznamom (str. 747–762 knjige)',
     '6-krajiska-kadar':
@@ -213,6 +217,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev in starešin brigade: leto in kraj rojstva, poklic, dolžnost v brigadi, kje so padli ali izginili (str. 429–584)',
     '6-vojvodjanska':
       'Seznam padlih borcev in starešin: leto in kraj rojstva, datum in kraj smrti, kje so pokopani (str. 175–199)',
+    '6-vojvodjanska-stabovi':
+      'Člani štaba brigade, štabov njenih bataljonov in poveljstev čet, po dolžnostih, samo imena (str. 171–174)',
     '13-vojvodjanska':
       'Seznam pripadnikov brigade: imena, ponekod vzdevek ali kraj; avtor opozarja, da seznam ni popoln (str. 771–793)',
     '7-srpska':
@@ -541,6 +547,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Vodilni kader 1. in 2. lovske eskadrilje NOVJ, letalskega detašmana NOVJ v Alžiriji in 1. letalskega polka (str. 322–325): čin in dolžnost vsakega, s časom, ko jo je opravljal. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
+    '1-dalmatinska-komandni-sastav':
+      'Komandanti, komisarji, njihovi namestniki, načelniki štaba, intendanti, referenti saniteta, mladinski voditelji in obveščevalni častniki štaba brigade in vsakega bataljona od 6. septembra 1942 do konca vojne, s časom, ko je kdo opravljal dolžnost (str. 435–443)',
+    '1-dalmatinska-formiranje':
+      'Starešine štaba brigade, političnega oddelka, bataljonov in čet 6. septembra 1942 v vasi Dobro pri Livnu: dolžnost, leto rojstva, narodnost, poklic (str. 55–58)',
     'zene-11-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 376): datum in kraj rojstva, dolžnost in čin, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     'osjecka-zene':
@@ -565,6 +575,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'druga-licka-sjecanja-prezivjeli': 'Список на преживеаните борци и старешини на Втората личка пролетерска бригада (од зборникот спомени)',
     'druga-licka-sjecanja-poginuli':
       'Список на загинатите, починатите и исчезнатите борци на Втората личка пролетерска бригада (од зборникот спомени); повеќето ги има и на списокот на Воено-историскиот институт',
+    'druga-licka-staresine':
+      'Командантите, комесарите, нивните заменици, оперативните и разузнавачките офицери и интендантите на штабот на бригадата и на штабовите на баталјоните од формирањето до крајот на војната, за повеќето со кратка биографија (стр. 349–360)',
     'treca-proleterska-brigada': 'Монографија, библиотека „Ratna prošlost naših naroda“, кн. 144',
     'treca-proleterska-poginuli-knj3':
       'Список на загинатите и починатите борци и старешини по години, 1942–1945 (1.374 имиња; во овој примерок недостасуваат страниците со почетокот на 1944 година)',
@@ -652,11 +664,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'borci-sutjeske-2-dalmatinska':
       'Поименичен список на борците од Сутјеска: сите борци на бригадата во битката, со податоци за секого и што било со него до крајот на војната.',
     '12-dalmatinska':
-      'Список на загинатите борци и старешини на бригадата, по борбите, од Суќурај на 22 септември 1943 до Илирска Бистрица на 6 мај 1945 (стр. 353–366 од книгата)',
+      'Список на загинатите борци и старешини на бригадата, по борбите, од Суќурај на 22 септември 1943 до Илирска Бистрица на 6 мај 1945 (стр. 353–366 од книгата), и прегледот на раководниот кадар на штабот на бригадата и на штабовите на баталјоните, со времето кога кој ја вршел должноста (стр. 339–342)',
     '3-makedonska':
       'Список на загинатите борци на бригадата: од каде се, година на раѓање, каде и кога загинале (стр. 359–368 од книгата)',
     '3-krajiska-spisak-boraca':
       'Список на борците што се бореле во бригадата од 22. 8. 1942 до 9. 5. 1945, преживеани и загинати: од каде се, занимање, кога стапиле во НОБ и во бригадата, должност, судбина; со дополнување и прилог (стр. 579 и натаму)',
+    '3-krajiska-sastav-1942':
+      'Сите борци и старешини на бригадата во средината на ноември 1942, по штабот, политодделот, интендантурата, баталјоните, четите и водовите: должност, година и место на раѓање, народност, занимање, кај многумина и подоцнежната судбина (текст на znaci.org, без скенирана книга)',
     '6-krajiska-prezivjeli':
       'Список на борците на бригадата што ја преживеаја војната, само имиња, со дополнителен список (стр. 747–762 од книгата)',
     '6-krajiska-kadar':
@@ -757,6 +771,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците и старешините на бригадата: година и место на раѓање, занимање, должност во бригадата, каде загинале или исчезнале (стр. 429–584)',
     '6-vojvodjanska':
       'Список на загинатите борци и раководители: година и место на раѓање, датум и место на загинување, каде се погребани (стр. 175–199)',
+    '6-vojvodjanska-stabovi':
+      'Членовите на штабот на бригадата, на штабовите на нејзините баталјони и на командите на четите, по должности, само имиња (стр. 171–174)',
     '13-vojvodjanska':
       'Список на припадниците на бригадата: имиња, понекаде прекар или место; авторот напоменува дека списокот не е целосен (стр. 771–793)',
     '7-srpska':
@@ -1085,6 +1101,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Раководниот кадар на 1. и 2. ловечка ескадрила на НОВЈ, на воздухопловниот одред на НОВЈ во Алжир и на 1. воздухопловен полк (стр. 322–325): чинот и должноста на секој, со времето кога ја вршел. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
+    '1-dalmatinska-komandni-sastav':
+      'Командантите, комесарите, нивните заменици, началниците на штабот, интендантите, референтите за санитет, младинските раководители и разузнавачките офицери на штабот на бригадата и на секој баталјон од 6 септември 1942 до крајот на војната, со времето кога кој ја вршел должноста (стр. 435–443)',
+    '1-dalmatinska-formiranje':
+      'Старешините на штабот на бригадата, на политичкиот оддел, на баталјоните и четите на 6 септември 1942 во селото Добро кај Ливно: должност, година на раѓање, народност, занимање (стр. 55–58)',
     'zene-11-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 376): датум и место на раѓање, должност и чин, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     'osjecka-zene':
@@ -1109,6 +1129,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'druga-licka-sjecanja-prezivjeli': 'Surviving Partisans and officers of the 2nd Lika Proletarian Brigade (from a collection of memoirs)',
     'druga-licka-sjecanja-poginuli':
       'Partisans of the 2nd Lika Proletarian Brigade who were killed, died or went missing (from a collection of memoirs); most are also on the Military History Institute’s list',
+    'druga-licka-staresine':
+      'The commanders, commissars, their deputies, operations and intelligence officers and quartermasters of the brigade staff and the battalion staffs from its formation to the end of the war, most with a short biography (pp. 349–360)',
     'treca-proleterska-brigada': 'Brigade history, in the series Ratna prošlost naših naroda, vol. 144',
     'treca-proleterska-poginuli-knj3':
       'Partisans and officers who were killed or died, year by year, 1942–1945 (1,374 names; this copy lacks the pages for early 1944)',
@@ -1195,11 +1217,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'borci-sutjeske-2-dalmatinska':
       'The roll of the Sutjeska: every Partisan of the brigade in the battle, with details of each and what became of them by the end of the war.',
     '12-dalmatinska':
-      'The brigade’s Partisans and officers who were killed, battle by battle, from Sućuraj on 22 September 1943 to Ilirska Bistrica on 6 May 1945 (pp. 353–366 of the book)',
+      'The brigade’s Partisans and officers who were killed, battle by battle, from Sućuraj on 22 September 1943 to Ilirska Bistrica on 6 May 1945 (pp. 353–366 of the book), and the officers of the brigade staff and the battalion staffs, with the time each held the post (pp. 339–342)',
     '3-makedonska':
       'The brigade’s Partisans who were killed: where they came from, the year of birth, where and when they fell (pp. 359–368 of the book)',
     '3-krajiska-spisak-boraca':
       'Every Partisan who fought in the brigade from 22 August 1942 to 9 May 1945, survivors and the fallen: where they came from, occupation, when they joined the struggle and the brigade, duty and fate; with a supplement and an addendum (pp. 579 ff.)',
+    '3-krajiska-sastav-1942':
+      'Every Partisan and officer of the brigade in mid-November 1942, by staff, political department, quartermaster service, battalion, company and platoon: duty, year and place of birth, nationality, occupation, and for many what became of them later (text on znaci.org, with no scanned book)',
     '6-krajiska-prezivjeli':
       'The brigade’s Partisans who survived the war, names only, with a later list (pp. 747–762 of the book)',
     '6-krajiska-kadar':
@@ -1300,6 +1324,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s soldiers and officers: year and place of birth, trade, duty in the brigade, where they fell or went missing (pp. 429–584)',
     '6-vojvodjanska':
       'The fallen soldiers and officers: year and place of birth, date and place of death, where they were buried (pp. 175–199)',
+    '6-vojvodjanska-stabovi':
+      'The members of the brigade staff, of its battalions’ staffs and of the company commands, by duty, names only (pp. 171–174)',
     '13-vojvodjanska':
       'The brigade’s members: names, here and there a nickname or a place; the author notes the list is incomplete (pp. 771–793)',
     '7-srpska':
@@ -1628,6 +1654,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The leading officers of the 1st and 2nd fighter squadrons of the NOVJ, of the NOVJ air detachment in Algeria and of the 1st air regiment (pp. 322–325): each man’s rank and duty, with the dates he held it. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
+    '1-dalmatinska-komandni-sastav':
+      'The commanders, commissars, their deputies, chiefs of staff, quartermasters, medical officers, youth leaders and intelligence officers of the brigade staff and of each battalion from 6 September 1942 to the end of the war, with the time each held the post (pp. 435–443)',
+    '1-dalmatinska-formiranje':
+      'The officers of the brigade staff, the political department, the battalions and companies on 6 September 1942 in the village of Dobro near Livno: duty, year of birth, nationality, occupation (pp. 55–58)',
     'zene-11-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 376): date and place of birth, duty and rank, when they joined the army, decorations, and the staff’s opinion of each',
     'osjecka-zene':

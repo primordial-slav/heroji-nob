@@ -289,12 +289,14 @@ def matches(soldiers: list[dict], rank: dict) -> list[dict]:
     def consider(a, b, how):
         if list_of(a) == list_of(b) or a is b:
             return
-        # a list published only as a web page (1. Dalmatinska) is the unit's own list: it comes first; a book from the
-        # Poreklo library (no scan here, a second book of a unit) comes after the unit's scanned books
+        # a list published only as a web page (1. Dalmatinska) is the unit's own list: it comes first, when it is the
+        # unit's first list (a later one, the 3. krajiška's roll of 1942, comes after the scanned books); a book from
+        # the Poreklo library (no scan here, a second book of a unit) comes after the unit's scanned books
         def book_rank(s):
             if s.get('pdf_file'):
                 return rank.get(s['pdf_file'], 99)
-            return 200 if 'biblioteka.poreklo.rs' in (s.get('source_url') or '') else (-1 if s.get('source_url') else 99)
+            return 200 if 'biblioteka.poreklo.rs' in (s.get('source_url') or '') else \
+                (-1 if s.get('source_url') and s['soldier_id'][4:6] == '00' else 99)
         ra, rb = book_rank(a), book_rank(b)
         if (rb, list_index(b), b['soldier_id']) < (ra, list_index(a), a['soldier_id']):
             a, b = b, a
