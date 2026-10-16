@@ -45,6 +45,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '1-sumadijska': 'Seznama padlih borcev in poveljnikov ter borcev, ki so vojno preživeli',
     '18-slavonska': 'Seznam padlih in umrlih borcev in poveljnikov 18. udarne brigade ter seznam preživelih borcev',
     '4-banijska': 'Seznam borcev 4. banijske brigade',
+    '4-banijska-starjesine': 'Komandanti, politični komisarji, njihovi namestniki, načelniki štaba in drugi starešine štaba brigade in štabov bataljonov, po dolžnostih, samo imena (str. 52–53)',
     '4-srpska': 'Seznam borcev Četrte srbske udarne brigade',
     '7-vojvodjanska': 'Seznam borcev 7. vojvodinske udarne brigade (preživeli, padli in po vojni umrli)',
     '19-bircanska': 'Seznam borcev 19. birčanske brigade',
@@ -146,20 +147,30 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev odreda po občinah, iz katerih so prišli (str. 313 in naprej)',
     '8-kordunaska-divizija':
       'Seznam padlih borcev Osme divizije po priimkih, z brigado, v kateri so bili (str. 806 in naprej)',
+    '8-kordunaska-divizija-kadar':
+      'Komandanti, politični komisarji in načelniki štaba divizije, njenih brigad in bataljonov, s časom na dolžnosti in usodo vsakega (str. 762–775)',
     'cankarjeva':
       'Seznam cankarjevcev, ki so preživeli vojno (str. 815 in naprej), in seznam padlih (str. 847 in naprej)',
+    'cankarjeva-kader':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade ter komandanti in komisarji bataljonov, s časom na dolžnosti (str. 810–814)',
     'gubceva':
       'Seznam gubčevcev, ki so preživeli vojno (str. 979 in naprej), in seznam padlih (str. 1016 in naprej)',
     'dvanajsta':
       'Seznam padlih borcev brigade in seznam borcev, ki so preživeli vojno, na koncu knjige',
+    'dvanajsta-kader':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade in bataljonov, s časom na dolžnosti; šefi obveščevalnega centra, intendanti, sanitetni referenti in sekretarji SKOJ, samo imena (str. 571–574)',
     'gradnikova':
       'Seznam v brigadi padlih borcev in seznam drugih borcev brigade, ki so preživeli vojno ali niso padli v njej (str. 840 in naprej)',
     'zidanskova':
       'Seznam borcev brigade; padli so označeni z letnicama rojstva in padca (str. 731 in naprej)',
+    'zidanskova-kader':
+      'Komandanti, politični komisarji, njihovi namestniki, načelniki štaba in sekretarji SKOJ brigade, s časom na dolžnosti (str. 729–730)',
     'skofjeloski-odred':
       'Seznam borcev odreda, samo imena, kot so vpisani v ohranjenem arhivu odreda (str. 314 in naprej)',
     'istrski-odred':
       'Seznam borcev odreda (str. 827 in naprej), brez padlih, in seznam padlih s kratkimi podatki (str. 849 in naprej)',
+    'istrski-odred-kader':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba odreda, njegovih bataljonov in čet, s časom na dolžnosti (str. 821–826)',
     'zapadnodolenjski-odred':
       'Seznam odredovcev (str. 333 in naprej) in seznam padlih (str. 340 in naprej)',
     'braciceva':
@@ -190,6 +201,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in pogrešanih borcev in voditeljev brigade: rojstvo, kje in kdaj so padli ali izginili (str. 675–722)',
     '19-sjevernodalmatinska':
       'Seznam padlih in umrlih borcev divizije od ustanovitve do konca vojne: od kod so bili, kje in kdaj so padli (str. 253–299)',
+    '19-sjevernodalmatinska-kadar':
+      'Komandanti in politični komisarji divizije in njenih brigad, s časom na dolžnosti, člani politodela 1943–1945 in narodni heroji divizije, s kratkim življenjepisom (str. 240–252)',
     '21-srpska':
       'Padli, preživeli in drugi, ki so se borili v brigadi (Druga šumadijska): starši, rojstvo, dolžnost, vstop v brigado in kje so padli (str. 387–472)',
     '14-hercegovacka':
@@ -240,6 +253,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih in umrlih borcev brigade ter pogrešanih v boju: bataljon, rojstvo, kje in kdaj so padli (str. 315–321)',
     '6-dalmatinska':
       'Seznam padlih borcev brigade: od kod so bili, kje in kdaj so padli (str. 259–271)',
+    '6-dalmatinska-kadar':
+      'Komandanti, komisarji, njihovi namestniki, načelniki in drugi starešine štaba brigade in štabov bataljonov, po dolžnostih, samo imena (str. 257–258)',
     'osjecka':
       'Seznam padlih in umrlih borcev brigade in seznam preživelih borcev, po občinah rojstva (str. 207–254)',
     'osjecka-rukovodioci':
@@ -302,6 +317,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam pripadnikov Novosadskega partizanskega odreda v letih 1941 in 1944: ime, dolžnost, od kod je kdo in od kdaj (str. 85–92).',
     'deveta':
       'Seznam borcev IX. SNOB Kočevske: ime, leto in kraj rojstva, pri padlih leto in kraj smrti (str. 425–446).',
+    'deveta-kader':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade ter komandanti in komisarji bataljonov, s časom na dolžnosti in kdo je padel na dolžnosti (str. 401–404)',
     '4-prekomorska':
       'Seznam padlih in umrlih borcev in vodilni kader brigade: štab, komanda stana, bataljoni, samostojna četa in komande čet (str. 327–333).',
     '9-srpska':
@@ -568,6 +585,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '1-sumadijska': 'Списоци на загинатите борци и старешини и на борците што ја преживеаја војната',
     '18-slavonska': 'Список на загинатите и починатите борци и старешини на 18-та ударна бригада и список на преживеаните борци',
     '4-banijska': 'Список на борците на 4-та банијска бригада',
+    '4-banijska-starjesine': 'Командантите, политичките комесари, нивните заменици, началниците на штабот и другите старешини на штабот на бригадата и на штабовите на баталјоните, по должности, само имиња (стр. 52–53)',
     '4-srpska': 'Список на борците на Четвртата српска ударна бригада',
     '7-vojvodjanska': 'Список на борците на 7-ма војводинска ударна бригада (преживеани, загинати и починати по војната)',
     '19-bircanska': 'Список на борците на 19-та бирчанска бригада',
@@ -669,20 +687,30 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на одредот по општините од кои дошле (стр. 313 и натаму)',
     '8-kordunaska-divizija':
       'Список на загинатите борци на Осмата дивизија, по презиме, со бригадата во која биле (стр. 806 и натаму)',
+    '8-kordunaska-divizija-kadar':
+      'Командантите, политичките комесари и началниците на штабот на дивизијата, нејзините бригади и баталјони, со времето на должноста и што станало со секој (стр. 762–775)',
     'cankarjeva':
       'Список на борците на бригадата што ја преживеале војната (стр. 815 и натаму) и список на нејзините загинати (стр. 847 и натаму)',
+    'cankarjeva-kader':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и командантите и комесарите на баталјоните, со времето на должноста (стр. 810–814)',
     'gubceva':
       'Список на борците на бригадата што ја преживеале војната (стр. 979 и натаму) и список на нејзините загинати (стр. 1016 и натаму)',
     'dvanajsta':
       'Список на загинатите борци на бригадата и список на оние што ја преживеале војната, на крајот на книгата',
+    'dvanajsta-kader':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и баталјоните, со времето на должноста; шефовите на разузнавачкиот центар, интендантите, санитетските референти и секретарите на СКОЈ, само имиња (стр. 571–574)',
     'gradnikova':
       'Список на борците загинати во бригадата и список на другите: оние што ја преживеале војната или не загинале додека биле во неа (стр. 840 и натаму)',
     'zidanskova':
       'Список на борците на бригадата; кај загинатите годината на раѓање и на загинување (стр. 731 и натаму)',
+    'zidanskova-kader':
+      'Командантите, политичките комесари, нивните заменици, началниците на штабот и секретарите на СКОЈ на бригадата, со времето на должноста (стр. 729–730)',
     'skofjeloski-odred':
       'Список на борците на одредот, само имиња, како што се запишани во зачуваната архива на одредот (стр. 314 и натаму)',
     'istrski-odred':
       'Список на борците на одредот (стр. 827 и натаму), без загинатите, и список на загинатите со кратки податоци (стр. 849 и натаму)',
+    'istrski-odred-kader':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на одредот, неговите баталјони и чети, со времето на должноста (стр. 821–826)',
     'zapadnodolenjski-odred':
       'Список на борците на одредот (стр. 333 и натаму) и список на неговите загинати (стр. 340 и натаму)',
     'braciceva':
@@ -713,6 +741,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и исчезнатите борци и раководители на бригадата: раѓање, каде и кога загинале или исчезнале (стр. 675–722)',
     '19-sjevernodalmatinska':
       'Список на загинатите и починатите борци на дивизијата од формирањето до крајот на војната: од каде се, каде и кога загинале (стр. 253–299)',
+    '19-sjevernodalmatinska-kadar':
+      'Командантите и политичките комесари на дивизијата и нејзините бригади, со времето на должноста, членовите на политодделот 1943–1945 и народните херои на дивизијата, со кратка биографија (стр. 240–252)',
     '21-srpska':
       'Загинати, преживеани и други што се бореа во бригадата (Втора шумадиска): родители, раѓање, должност, кога стапиле во бригадата и каде загинале (стр. 387–472)',
     '14-hercegovacka':
@@ -763,6 +793,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите и умрените борци на бригадата и на исчезнатите во борба: баталјон, раѓање, каде и кога загинале (стр. 315–321)',
     '6-dalmatinska':
       'Список на загинатите борци на бригадата: од каде се, каде и кога загинале (стр. 259–271)',
+    '6-dalmatinska-kadar':
+      'Командантите, комесарите, нивните заменици, началниците и другите старешини на штабот на бригадата и на штабовите на баталјоните, по должности, само имиња (стр. 257–258)',
     'osjecka':
       'Список на загинатите и умрените борци на бригадата и список на преживеаните борци, по општини на раѓање (стр. 207–254)',
     'osjecka-rukovodioci':
@@ -825,6 +857,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Попис на припадниците на Новосадскиот партизански одред во 1941 и 1944 година: име, должност, од каде е кој и од кога (стр. 85–92).',
     'deveta':
       'Список на борците на IX. СНОБ Кочевска: име, година и место на раѓање, а за загинатите година и место на смртта (стр. 425–446).',
+    'deveta-kader':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и командантите и комесарите на баталјоните, со времето на должноста и кој паднал на должноста (стр. 401–404)',
     '4-prekomorska':
       'Список на загинатите и умрените борци и командниот кадар на бригадата: штаб, команда на место, баталјони, самостојна чета и команди на четите (стр. 327–333).',
     '9-srpska':
@@ -1091,6 +1125,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '1-sumadijska': 'Lists of fallen Partisans and officers, and of Partisans who survived the war',
     '18-slavonska': 'Partisans and officers of the 18th Assault Brigade who were killed or died, and a list of survivors',
     '4-banijska': 'Roll of the 4th Banija Brigade',
+    '4-banijska-starjesine': 'The commanders, political commissars, their deputies, chiefs of staff and other officers of the brigade staff and the battalion staffs, by duty, names only (pp. 52–53)',
     '4-srpska': 'Roll of the 4th Serbian Assault Brigade',
     '7-vojvodjanska': 'Roll of the 7th Vojvodina Assault Brigade (survivors, the fallen, and those who died after the war)',
     '19-bircanska': 'Roll of the 19th Birač Brigade',
@@ -1191,20 +1226,30 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'List of the detachment’s members by the municipality they came from (pp. 313 ff.)',
     '8-kordunaska-divizija':
       'List of the Eighth Division’s fallen, by surname, with the brigade each served in (pp. 806 ff.)',
+    '8-kordunaska-divizija-kadar':
+      'The commanders, political commissars and chiefs of staff of the division, its brigades and battalions, with how long each held the post and what became of him (pp. 762–775)',
     'cankarjeva':
       'List of the brigade’s members who survived the war (pp. 815 ff.) and of its fallen (pp. 847 ff.)',
+    'cankarjeva-kader':
+      'The brigade’s commanders, political commissars, their deputies and chiefs of staff, and its battalions’ commanders and commissars, with how long each held the post (pp. 810–814)',
     'gubceva':
       'List of the brigade’s members who survived the war (pp. 979 ff.) and of its fallen (pp. 1016 ff.)',
     'dvanajsta':
       'Lists of the brigade’s fallen and of those who survived the war, at the end of the book',
+    'dvanajsta-kader':
+      'The commanders, political commissars, their deputies and chiefs of staff of the brigade and its battalions, with how long each held the post; the heads of its intelligence centre, its quartermasters, medical officers and SKOJ secretaries, names only (pp. 571–574)',
     'gradnikova':
       'Lists of the Partisans killed in the brigade and of its other members, who survived the war or did not fall while in it (pp. 840 ff.)',
     'zidanskova':
       'List of the brigade’s members; for those killed, the years of birth and death (pp. 731 ff.)',
+    'zidanskova-kader':
+      'The brigade’s commanders, political commissars, their deputies, chiefs of staff and SKOJ secretaries, with how long each held the post (pp. 729–730)',
     'skofjeloski-odred':
       'List of the detachment’s members, names only, as the surviving files of the detachment record them (pp. 314 ff.)',
     'istrski-odred':
       'List of the detachment’s members (pp. 827 ff.), without the fallen, and of the fallen with a short account of each (pp. 849 ff.)',
+    'istrski-odred-kader':
+      'The commanders, political commissars, their deputies and chiefs of staff of the detachment, its battalions and companies, with how long each held the post (pp. 821–826)',
     'zapadnodolenjski-odred':
       'List of the detachment’s members (pp. 333 ff.) and of its fallen (pp. 340 ff.)',
     'braciceva':
@@ -1235,6 +1280,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s killed and missing Partisans and leaders: birth, where and when they fell or went missing (pp. 675–722)',
     '19-sjevernodalmatinska':
       'The division’s Partisans killed or dead from its formation to the end of the war: where they came from, where and when they fell (pp. 253–299)',
+    '19-sjevernodalmatinska-kadar':
+      'The commanders and political commissars of the division and its brigades, with how long each held the post, the members of its political department 1943–1945, and its People’s Heroes, with a short biography (pp. 240–252)',
     '21-srpska':
       'The brigade’s (2nd Šumadija) Partisans who were killed or survived, and others who fought in it: parents, birth, duty, when they joined and where they fell (pp. 387–472)',
     '14-hercegovacka':
@@ -1285,6 +1332,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen and dead, and those missing in battle: battalion, birth, where and when they fell (pp. 315–321)',
     '6-dalmatinska':
       'The brigade’s fallen: where they came from, where and when they fell (pp. 259–271)',
+    '6-dalmatinska-kadar':
+      'The commanders, commissars, their deputies, chiefs and other officers of the brigade staff and the battalion staffs, by duty, names only (pp. 257–258)',
     'osjecka':
       'The brigade’s fallen and dead, and its survivors, by the municipality they were born in (pp. 207–254)',
     'osjecka-rukovodioci':
@@ -1347,6 +1396,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The members of the Novi Sad Partisan Detachment in 1941 and in 1944: name, duty, where each came from and since when (pp. 85–92).',
     'deveta':
       'The roll of the 9th Slovene Brigade “Kočevska”: name, year and place of birth, and for the fallen the year and place of death (pp. 425–446).',
+    'deveta-kader':
+      'The brigade’s commanders, political commissars, their deputies and chiefs of staff, and its battalions’ commanders and commissars, with how long each held the post and who fell in it (pp. 401–404)',
     '4-prekomorska':
       'The brigade’s fallen and dead, and its officers: the staff, the base command, the battalions, the independent company and the companies (pp. 327–333).',
     '9-srpska':
@@ -1623,6 +1674,11 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci Osječke brigade': 'borke Osiješke brigade',
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'seznami borcev, ki so vstopili v bataljon 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'seznam borcev v Rudem 21. 12. 1941',
+    'spisak komandnog kadra': 'seznam poveljniškega kadra',
+    'pregled komandnog kadra i narodni heroji': 'pregled poveljniškega kadra in narodni heroji',
+    'pregled komandnog kadra': 'pregled poveljniškega kadra',
+    'poveljniški kader': 'poveljniški kader',
+    'starešine štabova': 'starešine štabov',
   },
   mk: {
     'tom 1': 'том 1',
@@ -1663,6 +1719,11 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci Osječke brigade': 'жените борци на Осиечката бригада',
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'списоци на борците што стапиле во баталјонот 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'список на борците во Рудо, 21. XII 1941',
+    'spisak komandnog kadra': 'список на командниот кадар',
+    'pregled komandnog kadra i narodni heroji': 'преглед на командниот кадар и народните херои',
+    'pregled komandnog kadra': 'преглед на командниот кадар',
+    'poveljniški kader': 'командниот кадар',
+    'starešine štabova': 'старешините на штабовите',
   },
   en: {
     'tom 1': 'volume 1',
@@ -1703,6 +1764,11 @@ const PART: Partial<Record<Lang, Texts>> = {
     'žene borci Osječke brigade': 'the women fighters of the Osijek Brigade',
     'spiskovi boraca koji su stupili u bataljon 1942–1945': 'the fighters who joined the battalion, 1942–1945',
     'spisak boraca u Rudom 21. XII 1941.': 'the company at Rudo, 21 December 1941',
+    'spisak komandnog kadra': 'the command roll',
+    'pregled komandnog kadra i narodni heroji': 'the commanders and the People’s Heroes',
+    'pregled komandnog kadra': 'the commanders',
+    'poveljniški kader': 'the commanders',
+    'starešine štabova': 'the officers of the staffs',
   },
 }
 

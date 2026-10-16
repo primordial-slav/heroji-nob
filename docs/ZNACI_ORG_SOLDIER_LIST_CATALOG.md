@@ -73,7 +73,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 1. zagorska | Vladimir Hlaić, *Grebeni Ivančice* | fallen (p. 191) | [00003/625](https://znaci.org/00003/625.htm) |
 | 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227; **done**, `3-primorsko-goranska-stabovi.pdf`), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
 | 14. primorsko-goranska | Vladimir-Dušan Matetić | fallen (p. 227, 38 pp.) | [00003/544](https://znaci.org/00003/544.htm) |
-| 6. dalmatinska | Danilo Damjanović | command (p. 257), fallen (p. 259) | [00001/105](https://znaci.org/00001/105.htm) |
+| 6. dalmatinska | Danilo Damjanović | command (p. 257; **done**, `6-dalmatinska-kadar.pdf`), fallen (p. 259) | [00001/105](https://znaci.org/00001/105.htm) |
 | 11. dalmatinska | Rako, Družijanić | fallen (p. 479, 26 pp.), missing (p. 505), survivors (p. 507, 94 pp.) | [00003/547](https://znaci.org/00003/547.htm) |
 | 12. dalmatinska (Prva otočka) | Nikola Anić | notes and fallen (already downloaded: `website/public/pdfs/12-dalmatinska.pdf`, 58 pp.) | [00001/80](https://znaci.org/00001/80.htm) |
 | 12. hercegovačka | Osman Đikić | fallen (p. 207, 15 pp.) | [00001/243](https://znaci.org/00001/243.htm) |
@@ -111,9 +111,9 @@ For units on the site its entries are a second book (merge with `find_source_dup
 
 | Unit | Book | Lists (page) | Link |
 |---|---|---|---|
-| 8. kordunaška divizija | Zbornik HAK, knj. 9 | fallen by unit (p. 806, 109 pp.), command (p. 762) | [00003/571](https://znaci.org/00003/571.htm) |
+| 8. kordunaška divizija | Zbornik HAK, knj. 9 | fallen by unit (p. 806, 109 pp.), command (p. 762; **done**, `8-kordunaska-divizija-kadar.pdf`), Primišlje's fallen in other units (p. 746, 27) | [00003/571](https://znaci.org/00003/571.htm) |
 | 9. dalmatinska divizija | Obrad Egić | fallen of the division (p. 121, 5 pp.) and of the 3. dalmatinska (p. 126) | [00001/187](https://znaci.org/00001/187.htm) |
-| 19. sjevernodalmatinska divizija | Dragutin Grgurević | fallen and died (p. 253, 48 pp.), leaders (p. 233) | [00003/575](https://znaci.org/00003/575.htm) |
+| 19. sjevernodalmatinska divizija | Dragutin Grgurević | fallen and died (p. 253, 48 pp.), leaders (p. 233; the command table, Politodjel and heroes pp. 240-252 **done**, `19-sjevernodalmatinska-kadar.pdf`) | [00003/575](https://znaci.org/00003/575.htm) |
 | 22. divizija | Živojin Nikolić Brka | fallen (p. 445, 32 pp.) | [00001/235](https://znaci.org/00001/235.htm) |
 | 34. divizija | Vladimir Hlaić | fallen (p. 401, 32 pp.; [641_1.pdf](https://znaci.org/00003/641_1.pdf)) | [00003/641](https://znaci.org/00003/641.htm) |
 | 51. vojvođanska divizija | Sreta Savić | fallen, by brigade ([152_8.pdf](https://znaci.org/00001/152_8.pdf)) | [00001/152](https://znaci.org/00001/152.htm) |
@@ -141,24 +141,24 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 
 | Unit | Book | Lists (PDF page of total) | Link |
 |---|---|---|---|
-| Cankarjeva | Lado Ambrožič-Novljan 1975 | commanders 810, **Seznam cankarjevcev 815**, Padli 847 (of 910) | [767](https://znaci.org/00003/767.php) |
+| Cankarjeva | Lado Ambrožič-Novljan 1975 | commanders 810 (**done**, `cankarjeva-kader.pdf`), **Seznam cankarjevcev 815**, Padli 847 (of 910) | [767](https://znaci.org/00003/767.php) |
 | Gubčeva | Ambrožič-Novljan 1972 | **Seznam gubčevcev**, Padli | [bk=782](https://znaci.org/00003/7xx.php?bk=782) |
 | Tomšičeva I–IV | Franci Strle 1980–89 | I: udarna grupa, 1. proletarski bataljon (535–539 of 615; **done**, `tomsiceva-1.pdf`); II: **roster VII 1942–VII 1943** (840 of 941); III: names left out of II (646 of 715); IV: **rosters VII 1943–IV 1944 (573) and IV 1944–V 1945 (621)** (of 746) | [790](https://znaci.org/00003/7xx.php?bk=790), [787](https://znaci.org/00003/7xx.php?bk=787), [792](https://znaci.org/00003/7xx.php?bk=792), [788](https://znaci.org/00003/7xx.php?bk=788) |
 | Šercerjeva | Milan Guček 1973 | Padli (518 of 550), volunteers | [bk=813](https://znaci.org/00003/7xx.php?bk=813) |
-| XII. SNOUB (Dvanajsta) | Ambrožič-Novljan 1976 | Padli (609), **Seznam borcev (613 of 648)** | [bk=814](https://znaci.org/00003/7xx.php?bk=814) |
+| XII. SNOUB (Dvanajsta) | Ambrožič-Novljan 1976 | Padli (609), **Seznam borcev (613 of 648)**, commanders (573, **done**, `dvanajsta-kader.pdf`) | [bk=814](https://znaci.org/00003/7xx.php?bk=814) |
 | Kosovelova | Radosav Isaković 1973 | Padli (802), commanders (819 of 854) | [bk=773](https://znaci.org/00003/7xx.php?bk=773) |
 | Gradnikova | Stanko Petelin 1983 | Padli (840), **Pregled borcev** (849 of 888) | [bk=825](https://znaci.org/00003/7xx.php?bk=825) |
 | Bračičeva II | Mirko Fajdiga 1994 | Padli (304), **survivors (328 of 446)** | [bk=775](https://znaci.org/00003/7xx.php?bk=775) |
-| Zidanšekova II | Mirko Fajdiga 1975 | **Seznam borcev (732 of 793)** | [bk=776](https://znaci.org/00003/7xx.php?bk=776) |
+| Zidanšekova II | Mirko Fajdiga 1975 | commanders (730, **done**, `zidanskova-kader.pdf`), **Seznam borcev (732 of 793)** | [bk=776](https://znaci.org/00003/7xx.php?bk=776) |
 | 1. in 2. prekomorska | Vilhar, Klun 1967 | Padli (346), leaders (358 of 399) | [769](https://znaci.org/00003/769.php) |
 | 4. prekomorska | Pervanje, Hočevar 1969 | Padli in umrli (327), leaders (329 of 365) | [bk=783](https://znaci.org/00003/7xx.php?bk=783) |
 | 5. prekomorska | Šmit, Bordon, Klun 1969 | Padli (279), leaders (297 of 342) | [bk=816](https://znaci.org/00003/7xx.php?bk=816) |
 | Artileristi prekomorci | Karel Levičnik 1968 | Padli (218), leaders (222 of 253): **done**, a book across units, `parse_artileristi_prekomorci.py` | [bk=778](https://znaci.org/00003/7xx.php?bk=778) |
 | Letalci prekomorci | Rafael Perhauc 1968 | the squadrons’ and the Algerian detachment’s leaders (319 of 354; no list of the fallen): **done**, a book across units, `parse_letalci_prekomorci.py`, their posts added to unit 139’s records | [bk=786](https://znaci.org/00003/7xx.php?bk=786) |
-| 1. slovenska artilerijska | Borivoj Lah 1975 | **Seznam topničarjev**, officers (389), Padli (404 of 427) | [bk=826](https://znaci.org/00003/7xx.php?bk=826) |
+| 1. slovenska artilerijska | Borivoj Lah 1975 | **Seznam topničarjev**, officers (389, **done**), Padli (404 of 427) | [bk=826](https://znaci.org/00003/7xx.php?bk=826) |
 | Artilerija 9. korpusa | Borivoj Lah 1985 | **Seznam borcev (316)**, Padli (324 of 353) | [bk=824](https://znaci.org/00003/7xx.php?bk=824) |
-| Deveta (Kočevska) | Velimir Kraševec 1991, 2 vols | fallen and wounded (vol. 1, ch. 24), a roster mentioned in the preface | [2849](https://znaci.org/00003/7xx.php?bk=2849), [2850](https://znaci.org/00003/7xx.php?bk=2850) |
-| Istrski odred | Maks Zadnik 1975 | **Seznam borcev (827 of 901)**, padli odredovci | [bk=811](https://znaci.org/00003/7xx.php?bk=811) |
+| Deveta (Kočevska) | Velimir Kraševec 1991, 2 vols | fallen and wounded (vol. 1, ch. 24), a roster mentioned in the preface; vol. 2: commanders (p. 401, **done**, `deveta-kader.pdf`) | [2849](https://znaci.org/00003/7xx.php?bk=2849), [2850](https://znaci.org/00003/7xx.php?bk=2850) |
+| Istrski odred | Maks Zadnik 1975 | commanders (821, **done**, `istrski-odred-kader.pdf`), **Seznam borcev (827 of 901)**, padli odredovci | [bk=811](https://znaci.org/00003/7xx.php?bk=811) |
 | Škofjeloški odred | Tone Lotrič 1971 | **Seznam borcev odreda (314 of 335)** | [bk=809](https://znaci.org/00003/7xx.php?bk=809) |
 | Zapadnodolenjski odred | Velimir Kraševec 1985 | **Seznam odredovcev**, Padli | [bk=808](https://znaci.org/00003/7xx.php?bk=808) |
 | Dolomitski odred | Rudolf Hribernik, *Dolomiti v NOB* 3 | heroes, spomenica holders and padli prvoborci (pp. 126-130 of 163; on the site as `dolomiti-v-nob-3.pdf`, a book across units: **done**, `parse_dolomiti_v_nob.py`) | [bk=1079](https://znaci.org/00003/7xx.php?bk=1079) |

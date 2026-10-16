@@ -4517,7 +4517,35 @@
     "soldier_id": "0094000175",
     "death_date": "1976",
     "death_place": "Zagreb",
-    "pdf_x_end": 290.3
+    "pdf_x_end": 290.3,
+    "other_sources": [
+      {
+        "soldier_id": "0060010035",
+        "name": "Erdeljac M Petar",
+        "additional_info": "Pregled komandnog kadra Osme udarne divizije: Treća udarna brigada, Četvrti bataljon, politički komesari bataljona, od sep. 1943. do 31. 12. 1943. Umro 1976; Štab Karlovačke brigade, komesar. Umro 1976. godine.",
+        "pdf_file": "8-kordunaska-divizija-kadar.pdf",
+        "pdf_page": 13,
+        "pdf_x": 125.3,
+        "pdf_y": 314.7,
+        "pdf_x_end": 184.1,
+        "pdf_y_end": 323.2,
+        "pdf_rects": [
+          [
+            125.3,
+            314.7,
+            184.1,
+            323.2
+          ],
+          [
+            141.9,
+            408.7,
+            202.2,
+            417.2
+          ]
+        ],
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Fabac",
@@ -13453,6 +13481,18 @@
         "pdf_x_end": 449.0
       },
       {
+        "soldier_id": "0060010094",
+        "name": "Molek Franje Franjo",
+        "additional_info": "Pregled komandnog kadra Osme udarne divizije: Štab Karlovačke brigade, komandant. Poginuo kao komandant brigade 1944. godine.",
+        "pdf_file": "8-kordunaska-divizija-kadar.pdf",
+        "pdf_page": 13,
+        "pdf_x": 153.6,
+        "pdf_y": 400.3,
+        "pdf_x_end": 210.5,
+        "pdf_y_end": 408.8,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0097000789",
         "name": "Molek F Franjo",
         "additional_info": "Karlovačke, brig., 1914. Bos. Novi. BiH, u NOB 1942, Ranj., umro, 02.07.44",
@@ -13466,7 +13506,8 @@
       }
     ],
     "death_date": "2. 7. 1944",
-    "pdf_x_end": 447.6
+    "pdf_x_end": 447.6,
+    "rank": "komandant brigade"
   },
   {
     "last_name": "Moškun",

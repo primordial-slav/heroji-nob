@@ -289,6 +289,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca 4. banijske brigade'
   },
   {
+    id: '4-banijska-starjesine',
+    title: 'Četvrta banijska brigada — starešine štabova',
+    author: 'Zbornik sjećanja',
+    pdfPath: '/pdfs/4-banijska-starjesine.pdf',
+    thumbnail: '/images/pdf-thumbs/4-banijska-starjesine.jpg',
+    brigadeName: '4. banijska brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici, načelnici štaba i ostale starešine štaba brigade i štabova bataljona, po dužnostima, samo imena (str. 52–53)'
+  },
+  {
     id: '4-srpska',
     title: 'Četvrta srpska udarna brigada',
     author: 'Milorad Gončin',
@@ -946,6 +955,15 @@ export const sources: PdfSource[] = [
     description: 'Popis palih boraca Osme divizije, po prezimenu, s brigadom u kojoj su bili (str. 806 i dalje)'
   },
   {
+    id: '8-kordunaska-divizija-kadar',
+    title: 'Osma kordunaška udarna divizija — pregled komandnog kadra',
+    author: 'Ignjatije Perić',
+    pdfPath: '/pdfs/8-kordunaska-divizija-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/8-kordunaska-divizija-kadar.jpg',
+    brigadeName: '8. kordunaška divizija',
+    description: 'Komandanti, politički komesari i načelnici štaba divizije, njenih brigada i bataljona, s vremenom na dužnosti i šta je s kim bilo (str. 762–775)'
+  },
+  {
     id: 'cankarjeva',
     title: 'Cankarjeva brigada — seznam cankarjevcev, padli',
     author: 'Lado Ambrožič-Novljan',
@@ -953,6 +971,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/cankarjeva.jpg',
     brigadeName: 'Cankarjeva brigada',
     description: 'Spisak boraca brigade koji su preživeli rat (str. 815 i dalje) i spisak njenih poginulih (str. 847 i dalje)'
+  },
+  {
+    id: 'cankarjeva-kader',
+    title: 'Cankarjeva brigada — poveljniški kader',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/cankarjeva-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/cankarjeva-kader.jpg',
+    brigadeName: 'Cankarjeva brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba brigade i komandanti i komesari bataljona, s vremenom na dužnosti (str. 810–814)'
   },
   {
     id: 'gubceva',
@@ -973,6 +1000,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih boraca brigade i spisak onih koji su preživeli rat, na kraju knjige'
   },
   {
+    id: 'dvanajsta-kader',
+    title: 'Dvanajsta brigada — poveljniški kader',
+    author: 'Lado Ambrožič-Novljan',
+    pdfPath: '/pdfs/dvanajsta-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/dvanajsta-kader.jpg',
+    brigadeName: 'Dvanajsta brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba brigade i bataljona, s vremenom na dužnosti; šefovi obaveštajnog centra, intendanti, sanitetski referenti i sekretari SKOJ-a, samo imena (str. 571–574)'
+  },
+  {
     id: 'gradnikova',
     title: 'Gradnikova brigada — pregled borcev',
     author: 'Stanko Petelin',
@@ -991,6 +1027,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca brigade; kod poginulih godina rođenja i pogibije (str. 731 i dalje)'
   },
   {
+    id: 'zidanskova-kader',
+    title: 'Zidanškova brigada — poveljniški kader',
+    author: 'Mirko Fajdiga',
+    pdfPath: '/pdfs/zidanskova-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/zidanskova-kader.jpg',
+    brigadeName: 'Zidanškova brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici, načelnici štaba i sekretari SKOJ-a brigade, s vremenom na dužnosti (str. 729–730)'
+  },
+  {
     id: 'skofjeloski-odred',
     title: 'Škofjeloški odred — seznam borcev',
     author: 'Tone Lotrič',
@@ -1007,6 +1052,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/istrski-odred.jpg',
     brigadeName: 'Istarski odred',
     description: 'Spisak boraca odreda (str. 827 i dalje), bez poginulih, i spisak poginulih s kratkim podacima (str. 849 i dalje)'
+  },
+  {
+    id: 'istrski-odred-kader',
+    title: 'Istrski odred — poveljniški kader',
+    author: 'Maks Zadnik',
+    pdfPath: '/pdfs/istrski-odred-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/istrski-odred-kader.jpg',
+    brigadeName: 'Istrski odred',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba odreda, njegovih bataljona i četa, s vremenom na dužnosti (str. 821–826)'
   },
   {
     id: 'zapadnodolenjski-odred',
@@ -1142,6 +1196,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/19-sjevernodalmatinska.jpg',
     brigadeName: '19. severnodalmatinska divizija',
     description: 'Popis poginulih i umrlih boraca divizije od formiranja do kraja rata: odakle su, gde su i kada pali (str. 253–299)'
+  },
+  {
+    id: '19-sjevernodalmatinska-kadar',
+    title: 'Devetnaesta sjevernodalmatinska divizija — pregled komandnog kadra i narodni heroji',
+    author: 'Dragutin Grgurević',
+    pdfPath: '/pdfs/19-sjevernodalmatinska-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/19-sjevernodalmatinska-kadar.jpg',
+    brigadeName: '19. severnodalmatinska divizija',
+    description: 'Komandanti i politički komesari divizije i njenih brigada, s vremenom na dužnosti, članovi politodela 1943–1945. i narodni heroji divizije, s kratkom biografijom (str. 240–252)'
   },
   {
     id: '21-srpska',
@@ -1367,6 +1430,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/6-dalmatinska.jpg',
     brigadeName: '6. dalmatinska brigada',
     description: 'Spisak poginulih boraca brigade: odakle su, gde i kada su pali (str. 259–271)'
+  },
+  {
+    id: '6-dalmatinska-kadar',
+    title: '6. dalmatinska brigada — spisak komandnog kadra',
+    author: 'Danilo Damjanović',
+    pdfPath: '/pdfs/6-dalmatinska-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/6-dalmatinska-kadar.jpg',
+    brigadeName: '6. dalmatinska brigada',
+    description: 'Komandanti, komesari, njihovi zamenici, načelnici i ostale starešine štaba brigade i štabova bataljona, po dužnostima, samo imena (str. 257–258)'
   },
   {
     id: 'osjecka',
@@ -2349,6 +2421,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/deveta.jpg',
     brigadeName: 'Deveta brigada (Kočevska)',
     description: 'Seznam borcev IX. SNOB Kočevske: ime, godina i mesto rođenja, a za poginule godina i mesto pogibije (str. 425–446).'
+  },
+  {
+    id: 'deveta-kader',
+    title: 'Deveta brigada II — poveljniški kader',
+    author: 'Velimir Kraševec-Igor',
+    pdfPath: '/pdfs/deveta-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/deveta-kader.jpg',
+    brigadeName: 'Deveta brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba brigade i komandanti i komesari bataljona, s vremenom na dužnosti i ko je pao na dužnosti (str. 401–404)'
   },
   {
     id: '4-prekomorska',

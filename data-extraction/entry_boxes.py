@@ -77,6 +77,15 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '18-hrvatska-starjesine.pdf',   # the 18. hrvatska's officers: names run on under each duty
                   'osjecka-rukovodioci.pdf',   # the Osječka's leaders: a man boxed at each post on his first's page
                   '3-primorsko-goranska-stabovi.pdf',   # the 3. primorsko-goranska's staffs: names run on under each duty
+                  '6-dalmatinska-kadar.pdf',   # the 6. dalmatinska's command: a man boxed at each post on his first's page
+                  '19-sjevernodalmatinska-kadar.pdf',   # the 19. division's command: a man boxed at his posts, a hero at his summary
+                  '8-kordunaska-divizija-kadar.pdf',   # the 8. division's command: a man boxed at each post on his first's page
+                  'cankarjeva-kader.pdf',   # the Cankarjeva's command: a man boxed at each post on his first's page
+                  'istrski-odred-kader.pdf',   # the Istrski odred's command, the same
+                  'zidanskova-kader.pdf',   # the Zidanškova's command, the same
+                  'dvanajsta-kader.pdf',   # the Dvanajsta's command, the same
+                  'deveta-kader.pdf',   # the Deveta's command, the same
+                  '4-banijska-starjesine.pdf',   # the 4. banijska's officers: names run on under each duty
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
                   'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post
@@ -193,8 +202,8 @@ MULTI_COLUMN = {
 
 # Books two columns on some pages only: {file: pages}
 # pages of a PDF whose entries keep their parser's box, a list run on after the PDF's others: the 19. srpska's
-# staffs (names run on under each duty) after its roster
-INLINE_PAGES = {'19-srpska.pdf': {201, 202}}
+# staffs (names run on under each duty) after its roster; the 1. slovenska artilerijska's officers before its gunners
+INLINE_PAGES = {'19-srpska.pdf': {201, 202}, '1-slovenska-artilerijska.pdf': {1, 2, 3, 4}}
 
 TWO_COLUMN_PAGES = {
     '1-dalmatinska-monografija.pdf': range(1, 5),  # 1. dalmatinska: the company commanders and commissars side by side
