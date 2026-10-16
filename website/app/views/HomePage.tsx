@@ -17,6 +17,7 @@ import { totalNames } from '@/app/lib/totals'
 import BandPhoto from '@/app/components/BandPhoto'
 import OnThisDay from '@/app/components/OnThisDay'
 import HomeDoors from '@/app/components/HomeDoors'
+import HomeNews from '@/app/components/HomeNews'
 import PortraitRails from '@/app/components/PortraitRails'
 import { HOME_RESET } from '@/app/components/HomeLink'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
@@ -240,6 +241,7 @@ export default function HomePage() {
           <>
             <OnThisDay onSelect={openSoldier} />
             <HomeDoors />
+            <HomeNews />
           </>
         )}
       </div>

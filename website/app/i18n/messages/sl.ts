@@ -57,6 +57,11 @@ export const sl: Messages = {
       booksText: 'Knjige in seznami, iz katerih so imena, s skeniranimi stranmi.',
       booksCount: (x: number) => `${n(x)} ${plural('sl', x, { one: 'vir', two: 'vira', few: 'viri', other: 'virov' })}`,
     },
+    news: {
+      title: 'Kaj je novega',
+      date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}`,
+      more: 'Pokaži starejše',
+    },
     otherUnits: 'Druge enote',
     noUnit: 'Brez enote',
     census: 'Popis žrtev vojne iz leta 1964',
@@ -320,6 +325,15 @@ export const sl: Messages = {
     find: 'Ime enote',
     none: (q: string) => `Nobena enota ne ustreza iskanju „${q}“`,
     noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer „lička“ ali „13.“.',
+    kinds: 'Vrsta enote',
+    kind: { brigada: 'Brigade', divizija: 'Divizije', odred: 'Odredi', ostalo: 'Druge' },
+    lands: 'Republika',
+    land: {
+      bih: 'Bosna in Hercegovina', 'crna-gora': 'Črna gora', hrvatska: 'Hrvaška', makedonija: 'Makedonija',
+      slovenija: 'Slovenija', srbija: 'Srbija',
+    },
+    noneChosen: 'Nobena enota ne ustreza temu izboru',
+    noneChosenText: 'Odstranite kakšen filter ali izberite drugo leto.',
   },
   gallery: {
     title: 'Galerija',

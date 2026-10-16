@@ -65,6 +65,11 @@ export const mk: Messages = {
       booksText: 'Книгите и списоците од кои се имињата, со скенирани страници.',
       booksCount: (x: number) => `${n(x)} ${plural('mk', x, { one: 'извор', other: 'извори' })}`,
     },
+    news: {
+      title: 'Што е ново',
+      date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}`,
+      more: 'Прикажи постари',
+    },
     otherUnits: 'Други единици',
     noUnit: 'Без единица',
     census: 'Попис на жртвите на војната од 1964',
@@ -328,6 +333,15 @@ export const mk: Messages = {
     find: 'Име на единицата',
     none: (q: string) => `Ниту една единица не одговара на „${q}“`,
     noneText: 'Обидете се со дел од името: број, место или име, на пример „личка“ или „13.“.',
+    kinds: 'Вид на единица',
+    kind: { brigada: 'Бригади', divizija: 'Дивизии', odred: 'Одреди', ostalo: 'Други' },
+    lands: 'Република',
+    land: {
+      bih: 'Босна и Херцеговина', 'crna-gora': 'Црна Гора', hrvatska: 'Хрватска', makedonija: 'Македонија',
+      slovenija: 'Словенија', srbija: 'Србија',
+    },
+    noneChosen: 'Ниту една единица не одговара на овој избор',
+    noneChosenText: 'Отстранете некој филтер или изберете друга година.',
   },
   gallery: {
     title: 'Галерија',
