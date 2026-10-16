@@ -3057,6 +3057,104 @@ button.kin-row:not(:disabled):hover .kin-label {
   }
 }
 
+/* Home: "Šta je novo" after the doors. The big changes side by side, each under a rule; the small ones a line each,
+   the date in a column before the text (above it on phones) */
+.news {
+  margin-top: var(--space-8);
+}
+
+.news-big {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: var(--space-5);
+}
+
+.news-big li {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule-strong);
+}
+
+.news-date {
+  display: block;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+}
+
+.news-title {
+  margin-top: var(--space-1);
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  font-weight: 400;
+}
+
+.news-text {
+  margin-top: var(--space-2);
+  color: var(--ink-muted);
+}
+
+.news-small {
+  list-style: none;
+  margin-top: var(--space-6);
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.news-small li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.news-small .news-date {
+  flex: 0 0 8.5rem;
+}
+
+.news-more {
+  margin-top: var(--space-5);
+}
+
+@media (max-width: 640px) {
+  .news-small li {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .news-small .news-date {
+    flex-basis: auto;
+  }
+}
+
+/* The Jedinice page's filters by kind and republic: the years' quiet tabs, a row each under a small label */
+.units-filters {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.units-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-4);
+}
+
+.units-filter-label {
+  flex: 0 0 9rem;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+@media (max-width: 640px) {
+  .units-filter-label {
+    flex-basis: 100%;
+  }
+}
+
 /* Four links and the language menu don't fit one row on a narrow phone: there the site name leads home */
 @media (max-width: 460px) {
   .nav-link-home {

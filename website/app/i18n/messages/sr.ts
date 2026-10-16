@@ -56,6 +56,12 @@ export const sr = {
       booksText: 'Knjige i spiskovi iz kojih su imena, sa skeniranim stranama.',
       booksCount: (x: number) => `${n(x)} ${plural('sr', x, { one: 'izvor', other: 'izvora' })}`,
     },
+    /** "Šta je novo" under the doors: the site's recent changes (data/news.ts) */
+    news: {
+      title: 'Šta je novo',
+      date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}.`,
+      more: 'Prikaži starije',
+    },
     otherUnits: 'Ostale jedinice',
     noUnit: 'Bez jedinice',
     /** Under "Bez jedinice", beside the Ostali borci card: the 1964 census's parts, a region and its count each */
@@ -338,6 +344,16 @@ export const sr = {
     find: 'Naziv jedinice',
     none: (q: string) => `Nijedna jedinica ne odgovara upitu „${q}“`,
     noneText: 'Pokušajte deo naziva: broj, kraj ili ime, na primer „lička“ ili „13.“.',
+    /** The filters by kind and by the republic the unit came from (data/unitKinds.ts) */
+    kinds: 'Vrsta jedinice',
+    kind: { brigada: 'Brigade', divizija: 'Divizije', odred: 'Odredi', ostalo: 'Ostale' },
+    lands: 'Republika',
+    land: {
+      bih: 'Bosna i Hercegovina', 'crna-gora': 'Crna Gora', hrvatska: 'Hrvatska', makedonija: 'Makedonija',
+      slovenija: 'Slovenija', srbija: 'Srbija',
+    },
+    noneChosen: 'Nijedna jedinica ne odgovara ovom izboru',
+    noneChosenText: 'Uklonite neki filter ili izaberite drugu godinu.',
   },
   gallery: {
     title: 'Galerija',

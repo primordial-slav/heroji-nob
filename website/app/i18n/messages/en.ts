@@ -58,6 +58,13 @@ export const en: Messages = {
       booksText: 'The books and lists the names come from, with their scanned pages.',
       booksCount: (x: number) => `${n(x)} ${x === 1 ? 'source' : 'sources'}`,
     },
+    news: {
+      title: 'What’s new',
+      date: (d: number, m: number, y: number) =>
+        `${d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+          'November', 'December'][m - 1]} ${y}`,
+      more: 'Show older',
+    },
     otherUnits: 'Other units',
     noUnit: 'Without a unit',
     census: 'The 1964 census of war victims',
@@ -315,6 +322,15 @@ export const en: Messages = {
     find: 'Unit name',
     none: (q: string) => `No unit matches “${q}”`,
     noneText: 'Try part of the name: a number, a place or a name, such as “Lika” or “13th”.',
+    kinds: 'Kind of unit',
+    kind: { brigada: 'Brigades', divizija: 'Divisions', odred: 'Detachments', ostalo: 'Other' },
+    lands: 'Republic',
+    land: {
+      bih: 'Bosnia and Herzegovina', 'crna-gora': 'Montenegro', hrvatska: 'Croatia', makedonija: 'Macedonia',
+      slovenija: 'Slovenia', srbija: 'Serbia',
+    },
+    noneChosen: 'No unit matches this choice',
+    noneChosenText: 'Remove a filter or choose another year.',
   },
   gallery: {
     title: 'Gallery',
