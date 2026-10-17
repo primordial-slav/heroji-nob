@@ -68,6 +68,22 @@ import entry_boxes
 
 POSITION_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y')
 
+# The Lika battalion and the Kordun odred named after Ognjen Prica come out "Ognjen Priča" and "»O. Priča«" in the
+# entries (Druga lička, the Karlovac lists, Ostali borci); the user asked for Prica everywhere (2026-10-17). Put right
+# in every string of every record written, merged and referenced entries too; one letter for one, so the life
+# events' offsets into the text stay put.
+PRICA = re.compile(r'(?i)\b((?:ognjen\w*|o\.)[\s»«„“"]*pri)(č)')
+
+
+def fix_names(value):
+    if isinstance(value, str):
+        return PRICA.sub(lambda m: m.group(1) + ('C' if m.group(2) == 'Č' else 'c'), value)
+    if isinstance(value, list):
+        return [fix_names(v) for v in value]
+    if isinstance(value, dict):
+        return {k: fix_names(v) for k, v in value.items()}
+    return value
+
 
 def load_corrections(corrections_path):
     """Load and validate corrections from JSON file."""
@@ -682,6 +698,7 @@ def main():
         total_skipped += len(links) - n
 
     for brigade_code, (json_path, original_text, soldiers) in results.items():
+        soldiers[:] = [fix_names(s) for s in soldiers]
         new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
         if args.apply and new_text != original_text:
             with open(json_path, 'w', encoding='utf-8') as f:

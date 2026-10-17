@@ -245,6 +245,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 - **Dry run by default**: Run without `--apply` to preview changes
 - **Idempotent**: re-applying the whole file is a no-op. An `add` whose `new_id` exists is not inserted again, but the record gets back the fields the correction sets (unless a later `edit` sets them), so the full pipeline (normalize all units, then apply corrections) leaves a committed tree unchanged
 - **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount. Include `birth_year` in `fields` to pin it.
+- **Ognjen Prica**: the battalion and odred named after him come out "Ognjen Priča" / "»O. Priča«" in the entries (Druga lička, the Karlovac lists, Ostali borci); every record written gets "Prica" (`fix_names`, the user's wish of 2026-10-17, against "as printed"). The surname Priča is left alone.
 
 ```json
 [
