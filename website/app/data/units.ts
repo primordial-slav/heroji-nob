@@ -1346,7 +1346,7 @@ export const units: Unit[] = [
     nameEn: '18th Serbian Brigade',
     description: 'Formirana u junu 1944. pod Velikim Jastrepcem. Svi borci i rukovodioci brigade, s godinom i mestom rođenja i time kako su pali ili ranjeni.',
     image: '/images/18-srpska-brigada.jpg',
-    soldierCount: 5038,
+    soldierCount: 5055,
     dataFile: '/18-srpska-soldiers.json',
     pdfFiles: ['/pdfs/18-srpska.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 48067,
+    soldierCount: 48061,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1603,7 +1603,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Serbia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
-    soldierCount: 32227,
+    soldierCount: 32226,
     dataFile: '/ostali-borci-srbija.json',
     pdfFiles: []
   },
