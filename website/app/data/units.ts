@@ -76,7 +76,7 @@ export const units: Unit[] = [
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. Borci brigade i štabovi i komande brigade, bataljona i četa.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 6223,
+    soldierCount: 6220,
     dataFile: '/2-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf', '/pdfs/2-dalmatinska-stabovi.pdf']
   },
@@ -356,7 +356,7 @@ export const units: Unit[] = [
     nameEn: '32nd Zagorje Division',
     description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda, i borci štaba i brigada divizije, s podacima o svakom, i komandni sastav.',
     image: '/images/32-zagorska-divizija.jpg',
-    soldierCount: 18635,
+    soldierCount: 18347,
     dataFile: '/32-divizija-soldiers.json',
     pdfFiles: ['/pdfs/32-divizija.pdf', '/pdfs/32-divizija-borci.pdf', '/pdfs/32-divizija-kadar.pdf']
   },
@@ -366,7 +366,7 @@ export const units: Unit[] = [
     nameEn: '1st Dalmatian Proletarian Brigade',
     description: 'Formirana 6. septembra 1942. u selu Dobro kod Livna. Borci poginuli u ratu, borci na Sutjesci, žene borci 1944–1945, komandiri i komesari četa i komandni sastav brigade i bataljona.',
     image: '/images/1-dalmatinska-brigada.jpg',
-    soldierCount: 3330,
+    soldierCount: 3314,
     dataFile: '/1-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-monografija.pdf', '/pdfs/zene-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-komandni-sastav.pdf', '/pdfs/1-dalmatinska-formiranje.pdf']
   },
@@ -546,7 +546,7 @@ export const units: Unit[] = [
     nameEn: '11th Dalmatian Brigade',
     description: 'Formirana 2. oktobra 1943. na Biokovu. Poginuli, nestali i preživeli borci i starešine štabova i komandi.',
     image: '/images/11-dalmatinska-brigada.jpg',
-    soldierCount: 3588,
+    soldierCount: 3586,
     dataFile: '/11-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/11-dalmatinska.pdf', '/pdfs/zene-11-dalmatinska.pdf', '/pdfs/11-dalmatinska-stabovi.pdf']
   },
@@ -826,7 +826,7 @@ export const units: Unit[] = [
     nameEn: '14th Herzegovina Brigade',
     description: 'Formirana 4. septembra 1944. kod Ljubinja, kao omladinska brigada. Svi borci koji su prošli kroz brigadu, poginuli i komandni sastav.',
     image: '/images/14-hercegovacka-brigada.jpg',
-    soldierCount: 1548,
+    soldierCount: 1539,
     dataFile: '/14-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/14-hercegovacka.pdf', '/pdfs/14-hercegovacka-komandni-sastav.pdf']
   },
@@ -986,7 +986,7 @@ export const units: Unit[] = [
     nameEn: '34th Division',
     description: 'Formirana 30. januara 1944. na Žumberku i u Pokuplju. Poginuli borci i rukovodioci divizije i njenih brigada, i komandni sastav.',
     image: '/images/34-divizija.jpg',
-    soldierCount: 1857,
+    soldierCount: 1848,
     dataFile: '/34-divizija-soldiers.json',
     pdfFiles: ['/pdfs/34-divizija.pdf', '/pdfs/34-divizija-kadar.pdf']
   },
@@ -1016,7 +1016,7 @@ export const units: Unit[] = [
     nameEn: '13th Herzegovina Brigade',
     description: 'Formirana 14. maja 1944. u Hercegovini. Poginuli borci i starešine brigade, svi koji su se borili u njoj i starešinski sastav.',
     image: '/images/13-hercegovacka-brigada.jpg',
-    soldierCount: 2272,
+    soldierCount: 2263,
     dataFile: '/13-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/13-hercegovacka.pdf', '/pdfs/13-hercegovacka-starjesine.pdf']
   },
