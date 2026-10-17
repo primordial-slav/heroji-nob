@@ -654,11 +654,11 @@ export const units: Unit[] = [
     id: 'gradnikova-brigada',
     name: 'Gradnikova brigada',
     nameEn: 'Gradnik Brigade',
-    description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade.',
+    description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade, njen štab i narodni heroji.',
     image: '/images/gradnikova-brigada.jpg',
-    soldierCount: 3654,
+    soldierCount: 3665,
     dataFile: '/gradnikova-soldiers.json',
-    pdfFiles: ['/pdfs/gradnikova.pdf']
+    pdfFiles: ['/pdfs/gradnikova.pdf', '/pdfs/gradnikova-kader.pdf']
   },
   {
     id: 'zidanskova-brigada',
@@ -986,7 +986,7 @@ export const units: Unit[] = [
     nameEn: '34th Division',
     description: 'Formirana 30. januara 1944. na Žumberku i u Pokuplju. Poginuli borci i rukovodioci divizije i njenih brigada, i komandni sastav.',
     image: '/images/34-divizija.jpg',
-    soldierCount: 1848,
+    soldierCount: 1847,
     dataFile: '/34-divizija-soldiers.json',
     pdfFiles: ['/pdfs/34-divizija.pdf', '/pdfs/34-divizija-kadar.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 48079,
+    soldierCount: 48067,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },

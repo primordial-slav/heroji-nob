@@ -307,7 +307,7 @@ const sl: Record<string, UnitText> = {
   'gradnikova-brigada': {
     name: 'Gradnikova brigada',
     description:
-      'Ustanovljena aprila 1943 na Golobarju pri Bovcu. Padli borci in drugi borci brigade.',
+      'Ustanovljena aprila 1943 na Golobarju pri Bovcu. Padli borci in drugi borci brigade, njen štab in narodni heroji.',
   },
   'zidanskova-brigada': {
     name: 'Zidanškova brigada',
@@ -1064,7 +1064,7 @@ const mk: Record<string, UnitText> = {
   'gradnikova-brigada': {
     name: 'Градникова бригада',
     description:
-      'Формирана во април 1943 на Голобар кај Бовец. Загинати борци и другите борци на бригадата.',
+      'Формирана во април 1943 на Голобар кај Бовец. Загинати борци и другите борци на бригадата, нејзиниот штаб и народните херои.',
   },
   'zidanskova-brigada': {
     name: 'Зиданшкова бригада',
@@ -1823,7 +1823,7 @@ const en: Record<string, UnitText> = {
   'gradnikova-brigada': {
     name: 'Gradnik Brigade',
     description:
-      'Formed in April 1943 on Golobar near Bovec. Partisans who were killed, and the brigade’s other members.',
+      'Formed in April 1943 on Golobar near Bovec. Partisans who were killed, the brigade’s other members, its staff and its People’s Heroes.',
   },
   'zidanskova-brigada': {
     name: 'Zidanšek Brigade',

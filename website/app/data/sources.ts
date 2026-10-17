@@ -1108,6 +1108,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak boraca poginulih u brigadi i spisak ostalih: onih koji su preživeli rat ili nisu poginuli dok su bili u njoj (str. 840 i dalje)'
   },
   {
+    id: 'gradnikova-kader',
+    title: 'Gradnikova brigada — poveljstvo in narodni heroji',
+    author: 'Stanko Petelin',
+    pdfPath: '/pdfs/gradnikova-kader.pdf',
+    thumbnail: '/images/pdf-thumbs/gradnikova-kader.jpg',
+    brigadeName: 'Gradnikova brigada',
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba brigade, s vremenom kad je ko bio na dužnosti, i kratke biografije narodnih heroja brigade (str. 791–799)'
+  },
+  {
     id: 'zidanskova',
     title: 'Zidanškova brigada — seznam borcev',
     author: 'Mirko Fajdiga',

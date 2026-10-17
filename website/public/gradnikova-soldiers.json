@@ -708,7 +708,73 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000041",
     "birth_place": "Bistrica",
-    "pdf_x_end": 216.1
+    "pdf_x_end": 216.1,
+    "other_sources": [
+      {
+        "soldier_id": "0064010001",
+        "name": "Avsec Jože",
+        "additional_info": "zvani Čapajev; Poveljstvo Gradnikove brigade: namestnik komandanta (od 3. novembra 1943 do 28. decembra 1943). Smrtno se je ponesrečil 8. februarja 1944 na Cerkljanskem vrhu.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 57.6,
+        "pdf_y": 230.9,
+        "pdf_x_end": 180.7,
+        "pdf_y_end": 240.4
+      },
+      {
+        "soldier_id": "9072000034",
+        "name": "Avsec Jože — Čapajev",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komandanta (od 4. nov. 1943 do 30. nov. 1943); XVI. SNOUB »Janka Premrla-Vojka«, komandant (od 19. jan. 1944 do 8. febr. 1944); XVI. SNOUB »Janka Premrla-Vojka«, načelnik štaba (od 30. nov. 1943 do 19. jan. 1944). Smrtno se je ponesrečil 8. februarja 1944 na Cerkljanskem vrhu.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.4,
+        "pdf_y": 123.1,
+        "pdf_x_end": 298.1,
+        "pdf_y_end": 131.4,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
+      },
+      {
+        "soldier_id": "0068000018",
+        "name": "Avsec Jože",
+        "additional_info": "zvani Čapajev; Bistrica, 1922-1944",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 28.3,
+        "pdf_y": 223.4,
+        "pdf_x_end": 120.9,
+        "pdf_y_end": 238.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0070000027",
+        "name": "Avsec Jože",
+        "additional_info": "zvani Čapajev; * 1922 Bistrica pri Mokronogu † 1944 Cerkno",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 1,
+        "pdf_x": 136.2,
+        "pdf_y": 547.9,
+        "pdf_x_end": 333.5,
+        "pdf_y_end": 554.4,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100099",
+        "name": "Avsec Jože",
+        "additional_info": "zvani Čapajev; * 1922 Bistrica pri Mokronogu 15 † 1944 Cerkno",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 2,
+        "pdf_x": 149.3,
+        "pdf_y": 381.2,
+        "pdf_y_end": 389.2,
+        "pdf_x_end": 417.6,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
+    "unit_detail": "Štab brigade",
+    "death_type": "umro",
+    "death_date": "8. 2. 1944",
+    "death_place": "Cerkljanski vrh"
   },
   {
     "last_name": "Avsenik",
@@ -2084,6 +2150,17 @@
     "pdf_x_end": 141.5,
     "other_sources": [
       {
+        "soldier_id": "0064010002",
+        "name": "Bavec Anton",
+        "additional_info": "zvani Cene; Poveljstvo Gradnikove brigade: politični komisar (od 27. aprila do junija 1943); namestnik komandanta (26. aprila 1943).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 51.8,
+        "pdf_y": 351.4,
+        "pdf_x_end": 159.6,
+        "pdf_y_end": 360.9
+      },
+      {
         "soldier_id": "9072000025",
         "name": "Bavec Anton — Cene",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od 27. aprila 1943 do junija 1943); III. SNOUB »Ivana Gradnika«, namestnik komandanta (26. aprila 1943); XVI. SNOUB »Janka Premrla-Vojka«, načelnik štaba (od 15. marca 1944 do 6. maja 1944); XVI. SNOUB »Janka Premrla-Vojka«, načelnik štaba (od 20. maja 1944 do 3. sept. 1944).",
@@ -2096,7 +2173,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Bavec",
@@ -4510,6 +4588,17 @@
     "pdf_x_end": 201.4,
     "other_sources": [
       {
+        "soldier_id": "0064010003",
+        "name": "Bombač Slavko",
+        "additional_info": "zvani Boris; Poveljstvo Gradnikove brigade: namestnik komandanta (junija 1943).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 57.3,
+        "pdf_y": 220.1,
+        "pdf_x_end": 183.1,
+        "pdf_y_end": 229.6
+      },
+      {
         "soldier_id": "9072000033",
         "name": "Bombač Slavko — Boris",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komandanta (junija 1943).",
@@ -4522,7 +4611,8 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Bončina",
@@ -5274,6 +5364,17 @@
     "pdf_x_end": 313.0,
     "other_sources": [
       {
+        "soldier_id": "0064010004",
+        "name": "Braniselj Drago",
+        "additional_info": "zvani Svarun; Poveljstvo Gradnikove brigade: namestnik političnega komisarja (od 3. novembra 1943 do 17. januarja 1944). Padel je 17. januarja 1944 na Vojskem.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 56.4,
+        "pdf_y": 403.9,
+        "pdf_x_end": 199.6,
+        "pdf_y_end": 413.4
+      },
+      {
         "soldier_id": "9072000038",
         "name": "Braniselj Drago — Svarun",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komisarja (od 4. nov. 1943 do 17. jan. 1944). Padel je 17. januarja 1944 na Vojskem.",
@@ -5286,7 +5387,10 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade",
+    "death_date": "17. 1. 1944",
+    "death_place": "Vojsko"
   },
   {
     "last_name": "Brankovič",
@@ -11652,6 +11756,17 @@
     "pdf_x_end": 106.4,
     "other_sources": [
       {
+        "soldier_id": "0064010005",
+        "name": "Flis Drago",
+        "additional_info": "zvani Strela; Poveljstvo Gradnikove brigade: politični komisar (od 3. novembra 1943 do približno 10. februarja 1944). Narodni heroj Gradnikove brigade: DRAGO FLIS-STRELA, je bil rojen leta 1921 v Blanci pri Krškem. V partizane je odšel sredi julija 1941 na Pohorje. Ko je zbolel, so ga poslali v Ljubljano, odtod pa je sredi septembra 1941 odšel znova v partizane. Bil je v Šercerjevem bataljonu, kasneje v Loškem odredu, z njim pa je oktobra 1942 prišel na Primorsko. Pred kapitulacijo Italije je bil namestnik političnega komisarja Severnoprimorskega odreda in nato Primorskega odreda, po kapitulaciji politični komisar Goriške in Gradnikove brigade, kasneje pa šef obveščevalnega centra štaba 9. korpusa.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 63.1,
+        "pdf_y": 38.2,
+        "pdf_x_end": 169.8,
+        "pdf_y_end": 47.7
+      },
+      {
         "soldier_id": "9072000029",
         "name": "Flis Drago — Strela",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od 4. nov. 1943 do približno 10. febr. 1944).",
@@ -11663,8 +11778,25 @@
         "pdf_y_end": 412.2,
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
+      },
+      {
+        "soldier_id": "9002000324",
+        "name": "Flis Antona Drago (Strela)",
+        "additional_info": "Rođen je 14. avgusta 1921. godine u Blanci, kod Krškog, Slovenija. … Narodnim herojem proglašen je 27. novembra 1953. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=254",
+        "source_page": 250,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000288",
+        "name": "Flis Antona Drago (Strela)",
+        "additional_info": "Rođen I4-VIII-1921 na Blanci, Raihenburg, Štajerska. Sloveniia. Student medicine. Član KPJ od 1941. U NOB stupio 1941. Danas: savetnik u DSIP-u. Za narodnog heroja proglašen 27-XI-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=241",
+        "source_page": 219,
+        "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Florjančič",
@@ -12068,6 +12200,17 @@
     "pdf_x_end": 204.7,
     "other_sources": [
       {
+        "soldier_id": "0064010006",
+        "name": "Franko Ivan",
+        "additional_info": "zvani Iztok; Poveljstvo Gradnikove brigade: politični komisar (od februarja 1944 do konca aprila 1944); politični komisar (od začetka avgusta 1944 do 27. novembra 1944).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 63.1,
+        "pdf_y": 59.5,
+        "pdf_x_end": 171.9,
+        "pdf_y_end": 69.0
+      },
+      {
         "soldier_id": "9020013778",
         "name": "Franko (Janez) Ivan",
         "additional_info": "rođen 1921, Škofja Loka. Slovenac, poginuo 1943. u NOBu, Š.loka",
@@ -12088,7 +12231,8 @@
         "source_page": 557,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Frančeškin",
@@ -15001,6 +15145,17 @@
     "pdf_x_end": 328.6,
     "other_sources": [
       {
+        "soldier_id": "0064010007",
+        "name": "Greif Martin",
+        "additional_info": "zvani Rudi; Poveljstvo Gradnikove brigade: komandant (od 3. novembra 1943 do 30. januarja 1944).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 46.8,
+        "pdf_y": 179.5,
+        "pdf_x_end": 152.5,
+        "pdf_y_end": 189.0
+      },
+      {
         "soldier_id": "9072000019",
         "name": "Greif Martin — Rudi",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komandant (od 4. nov. 1943 do 30. jan. 1944).",
@@ -15013,7 +15168,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Grejf",
@@ -16111,6 +16267,17 @@
     "pdf_x_end": 112.2,
     "other_sources": [
       {
+        "soldier_id": "0064010008",
+        "name": "Horvat Samuel",
+        "additional_info": "zvani Samo; Poveljstvo Gradnikove brigade: komandant (od 21. januarja 1945 do 10. marca 1945); načelnik štaba (od 1. oktobra 1944 do 21. januarja 1945).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 47.0,
+        "pdf_y": 265.2,
+        "pdf_x_end": 170.7,
+        "pdf_y_end": 274.7
+      },
+      {
         "soldier_id": "9072000017",
         "name": "Horvat Samuel — Samo",
         "additional_info": "Štabi XXXI. divizije: XXXI. divizija NOV in POJ, načelnik štaba (od 10. marca 1945 dalje); III. SNOUB »Ivana Gradnika«, komandant (od 21. jan. 1945 do 10. marca 1945); III. SNOUB »Ivana Gradnika«, načelnik štaba (od konca septembra 1944 do 21. jan. 1945). Čin: polkovnik JLA.",
@@ -16136,7 +16303,9 @@
         "source_page": 448,
         "ref_book": "15-brigada-stabi"
       }
-    ]
+    ],
+    "rank": "načelnik štaba",
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Hočevar",
@@ -18238,6 +18407,17 @@
     "pdf_x_end": 114.9,
     "other_sources": [
       {
+        "soldier_id": "0064010009",
+        "name": "Jakin Rado",
+        "additional_info": "Poveljstvo Gradnikove brigade: načelnik štaba (od 15. februarja 1945 do 24. februarja 1945); načelnik štaba (od aprila 1945 dalje).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 3,
+        "pdf_x": 46.6,
+        "pdf_y": 237.1,
+        "pdf_x_end": 115.5,
+        "pdf_y_end": 246.6
+      },
+      {
         "soldier_id": "9072000045",
         "name": "Jakin Rado",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, načelnik štaba (od 16. febr. 1945 do 24. febr. 1945); III. SNOUB »Ivana Gradnika«, načelnik štaba (od aprila 1945 dalje); VII. SNOUB »Franceta Prešerna«, namestnik komandanta (od 4. avg. 1944 do decembra 1944). Čin: podpolkovnik JLA.",
@@ -18250,7 +18430,9 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "rank": "načelnik štaba",
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Jakomin",
@@ -19549,6 +19731,17 @@
     "pdf_x_end": 321.2,
     "other_sources": [
       {
+        "soldier_id": "0064010011",
+        "name": "Jovanovič Svetolik",
+        "additional_info": "zvani Mito; Poveljstvo Gradnikove brigade: namestnik komandanta (od 21. septembra do 20. decembra 1944). Padel je 20. decembra 1944 v Dobravi pri Gorenji vasi.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 56.9,
+        "pdf_y": 329.1,
+        "pdf_x_end": 203.3,
+        "pdf_y_end": 338.6
+      },
+      {
         "soldier_id": "9072000037",
         "name": "Jovanović Svetolik — Mito",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komandanta (od 18. sept. 1944 do 20. dec. 1944). Padel je 20. decembra 1944 v Dobravi pri Gorenji vasi.",
@@ -19561,7 +19754,10 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade",
+    "death_date": "20. 12. 1944",
+    "death_place": "Dobrava pri Gorenji vasi"
   },
   {
     "last_name": "Jug",
@@ -21633,6 +21829,17 @@
     "pdf_x_end": 199.3,
     "other_sources": [
       {
+        "soldier_id": "0064010013",
+        "name": "Klemenc Viljem",
+        "additional_info": "zvani Vili; Poveljstvo Gradnikove brigade: politični komisar (od 27. novembra 1944 do 21. januarja 1945).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 58.5,
+        "pdf_y": 123.9,
+        "pdf_x_end": 178.9,
+        "pdf_y_end": 133.4
+      },
+      {
         "soldier_id": "9072000030",
         "name": "Klemenc Viljem — Vili",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od 20. nov. 1944 do 21. jan. 1945). Čin: podpolkovnik JLA.",
@@ -21645,7 +21852,8 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Klemenčič",
@@ -27845,6 +28053,17 @@
     "pdf_x_end": 123.9,
     "other_sources": [
       {
+        "soldier_id": "0064010015",
+        "name": "Kvaternik Anton",
+        "additional_info": "Poveljstvo Gradnikove brigade: politični komisar (od 12. marca dalje).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 58.5,
+        "pdf_y": 156.0,
+        "pdf_x_end": 165.4,
+        "pdf_y_end": 165.5
+      },
+      {
         "soldier_id": "9072000032",
         "name": "Kvaternik Anton",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od 5. marca 1945 dalje). Čin: polkovnik JLA.",
@@ -27857,7 +28076,8 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Lah",
@@ -29720,6 +29940,17 @@
     "pdf_x_end": 317.1,
     "other_sources": [
       {
+        "soldier_id": "0064010017",
+        "name": "Likar Ivan",
+        "additional_info": "zvani Sočan; Narodni heroj Gradnikove brigade: IVAN LIKAR-SOČAN je bil rojen leta 1921 v Logu pod Mangartom. V partizane je stopil marca 1943 v 2. bataljon Severnoprimorskega odreda, v Gradnikovi brigadi pa je bil namestnik komandirja čete. Udeležil se je bojev na Golobarju, Stolu in Krnu. Po kapitulaciji Italije je bil najprej v Bazoviški brigadi, kasneje pa komandant 2. bataljona Briško-beneškega odreda. Proti koncu vojne je kot vodja diverzantske skupine izvajal diverzantske akcije med Kobaridom in Trento.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 5,
+        "pdf_x": 199.5,
+        "pdf_y": 110.9,
+        "pdf_x_end": 326.7,
+        "pdf_y_end": 255.3
+      },
+      {
         "soldier_id": "9002000612",
         "name": "Likar Ivana Ivan (Sočan)",
         "additional_info": "Rođen je 9. septembra 1921. u Logu pod Mangartom, Tolmin, Slovenija.",
@@ -29727,7 +29958,8 @@
         "source_page": 457,
         "ref_book": "narodni-heroji-1982"
       }
-    ]
+    ],
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Likar",
@@ -32418,6 +32650,17 @@
     "pdf_x_end": 125.0,
     "other_sources": [
       {
+        "soldier_id": "0064010018",
+        "name": "Marjanovič Ratko",
+        "additional_info": "Poveljstvo Gradnikove brigade: komandant (od 20. marca 1944 do 21. septembra 1944); namestnik komandanta (od 28. decembra 1943 do približno 15. marca 1944).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 47.0,
+        "pdf_y": 222.5,
+        "pdf_x_end": 156.4,
+        "pdf_y_end": 232.0
+      },
+      {
         "soldier_id": "9072000021",
         "name": "Marjanović Ratko",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komandant (od 20. marca 1944 do 18. sept. 1944); III. SNOUB »Ivana Gradnika«, namestnik komandanta (od 30. nov. 1943 do približno 15. marca 1944). Umrl je po končani vojni v Sarajevu.",
@@ -32430,7 +32673,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Markič",
@@ -34482,6 +34726,17 @@
     "pdf_x_end": 111.1,
     "other_sources": [
       {
+        "soldier_id": "0064010020",
+        "name": "Mihevc Jože",
+        "additional_info": "zvani Rudar; Poveljstvo Gradnikove brigade: namestnik komandanta (od približno 15. marca 1944 do 15. maja 1944). Padel je 20. junija 1944 na Jelovici. Narodni heroj Gradnikove brigade: JOŽE MIHEVC-RUDAR je bil rojen leta 1922 v Idriji. V partizane je stopil novembra 1942. Najprej je bil v Soškem in Južnoprimorskem odredu, nato pa v Gregorčičevi brigadi, s katero se je udeležil pohoda v Beneško Slovenijo. Ob združitvi obeh primorskih brigad je prišel v Gradnikovo brigado, kjer je jeseni 1943 postal komandant 3. bataljona, nato pa namestnik komandanta brigade. Spomladi 1944 je bil imenovan za komandanta Vojkove brigade, toda že 20. junija 1944 je padel na Jelovici.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 57.1,
+        "pdf_y": 273.6,
+        "pdf_x_end": 169.8,
+        "pdf_y_end": 283.1
+      },
+      {
         "soldier_id": "9072000035",
         "name": "Mihevc Jože — Rudar",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komandanta (od približno 15. marca 1945 do 20. maja 1944). Padel je 20. junija 1944 na Jelovici.",
@@ -34493,8 +34748,28 @@
         "pdf_y_end": 166.1,
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
+      },
+      {
+        "soldier_id": "9002000727",
+        "name": "Mihevc Ivana Jože (Rudar)",
+        "additional_info": "Rođen je 25. jula 1922. u Gorici, ldrija, Slovenija. … Narodnim herojem proglašen je 21. jula 1953. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=543",
+        "source_page": 539,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000670",
+        "name": "Mihevc Ivana Jože (Rudar)",
+        "additional_info": "Rođen 25-VII-1922 u Jelavic-i, Idrija, Slovenija. Stolar. Član KPJ. U NOB stupio 1942. Poginuo avgusta 1944 na Jelovici. Za narodnog heroja proglašen 21-VII-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=526",
+        "source_page": 504,
+        "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade",
+    "death_type": "poginuo",
+    "death_date": "20. 6. 1944",
+    "death_place": "Jelovica"
   },
   {
     "last_name": "Mijan",
@@ -36047,6 +36322,17 @@
     "pdf_x_end": 232.2,
     "other_sources": [
       {
+        "soldier_id": "0064010021",
+        "name": "Močnik Cveto",
+        "additional_info": "zvani Florjan; Poveljstvo Gradnikove brigade: politični komisar (26. aprila 1943). Padel je na dan ustanovitve brigade na Golobarju. Narodni heroj Gradnikove brigade: CVETO MOČNIK-FLORJAN je bil rojen leta 1914 v Ljubljani. Septembra 1941 je odšel v partizane na Mokre in se v naslednjem mesecu udeležil napada na Lož. Kasneje je bil v Šercerjevem bataljonu, junija 1942 je postal politični komisar Kočevskega odreda, po prihodu na Primorsko z Loškim odredom pa spomladi 1943 politični komisar Severnoprimorskega odreda in nato prvi politični komisar Gradnikove brigade. Padel je prvi dan obstoja nove brigade 26. aprila 1943 na Golobarju.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 52.8,
+        "pdf_y": 340.8,
+        "pdf_x_end": 183.7,
+        "pdf_y_end": 350.3
+      },
+      {
         "soldier_id": "9001000708",
         "name": "Močnik Ivana Cveto (Florjan)",
         "additional_info": "Rođen I-V-1914 u Ljubljani. Slovenija. Pravnik. Član KPJ od decembra 1941. U NOB stupio 1941. Poginuo 26-IV-1943 na Golobarju iznad Bovca. Za narodnog heroja proglašen 27 -X 1-1 95 3 .",
@@ -36075,7 +36361,10 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade",
+    "death_date": "26. 4. 1943",
+    "death_place": "Golobar"
   },
   {
     "last_name": "Močnik",
@@ -37556,6 +37845,17 @@
     "pdf_x_end": 207.5,
     "other_sources": [
       {
+        "soldier_id": "0064010023",
+        "name": "Nemgar Franc",
+        "additional_info": "Poveljstvo Gradnikove brigade: namestnik komandanta (od 15. maja 1944 do 3. septembra 1944). Padel je 2. maja 1945 na Opčinah pri Trstu.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 57.1,
+        "pdf_y": 295.7,
+        "pdf_x_end": 147.1,
+        "pdf_y_end": 305.2
+      },
+      {
         "soldier_id": "9072000036",
         "name": "Nemgar Franc",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komandanta (od 20. maja 1944 do 3. sept. 1944); XVI. SNOUB »Janka Premrla-Vojka«, komandant (od 3. sept. 1944 do 25. dec. 1944); XVI. SNOUB »Janka Premrla-Vojka«, namestnik komandanta (od 15. aprila 1944 do 20. maja 1944). Padel je 2. maja 1945 na Bazovici pri Trstu.",
@@ -37568,7 +37868,11 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade",
+    "death_type": "poginuo",
+    "death_date": "2. 5. 1945",
+    "death_place": "Opčine"
   },
   {
     "last_name": "Nenart",
@@ -41700,6 +42004,17 @@
     "pdf_x_end": 148.7,
     "other_sources": [
       {
+        "soldier_id": "0064010025",
+        "name": "Petelin Stanko",
+        "additional_info": "zvani Vojko; Poveljstvo Gradnikove brigade: namestnik političnega komisarja (od 30. januarja 1944 do 23. junija 1944).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 3,
+        "pdf_x": 47.3,
+        "pdf_y": 44.7,
+        "pdf_x_end": 179.8,
+        "pdf_y_end": 54.2
+      },
+      {
         "soldier_id": "9072000016",
         "name": "Petelin Stanko — Vojko",
         "additional_info": "Štabi XXXI. divizije: XXXI. divizija NOV in POJ, načelnik štaba (od 3. sept. 1944 do 10. marca 1945); III. SNOUB »Ivana Gradnika«, namestnik komisarja (od 30. jan. 1944 do 23. jun. 1944); XVI. SNOUB »Janka Premrla-Vojka«, komandant (od 23. jun. 1944 do 3. sept. 1944).",
@@ -41712,7 +42027,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Peterman",
@@ -43662,7 +43978,7 @@
     "fathers_name": "",
     "full_name": "Pokovec Franc",
     "additional_info": "zvani Poki; Zelena jama, Ljubljana",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 30,
     "pdf_y": 272.9,
     "pdf_x": 264.3,
@@ -43672,6 +43988,17 @@
     "birth_place": "Zelena jama, Ljubljana",
     "pdf_x_end": 335.4,
     "other_sources": [
+      {
+        "soldier_id": "0064010026",
+        "name": "Pokovec Franc",
+        "additional_info": "zvani Poki; Narodni heroj Gradnikove brigade: FRANC POKOVEC-POKI je bil rojen leta 1921 v Ljubljani. V narodnoosvobodilno gibanje se je vključil v prvih mesecih italijanske okupacije in deloval v VOS v Ljubljani in njeni okolici. Leta 1943 je bil poslan v Slovensko primorje, kjer je bil inštruktor pokrajinske komisije VOS. Ob ustanovitvi Gradnikove brigade je postal njen obveščevalec. Kasneje, po kapitulaciji Italije, je bil med drugim tudi na dolžnosti namestnika političnega komisarja 2. brigade VDV, iz katere je bil jeseni 1944 premeščen v 3. brigado VDV na Štajerskem za njenega političnega komisarja.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 7,
+        "pdf_x": 202.8,
+        "pdf_y": 296.2,
+        "pdf_x_end": 330.2,
+        "pdf_y_end": 465.8
+      },
       {
         "soldier_id": "9002000918",
         "name": "Pokovec Josipa Franc (Poki)",
@@ -51511,6 +51838,17 @@
     "pdf_x_end": 124.7,
     "other_sources": [
       {
+        "soldier_id": "0064010029",
+        "name": "Sulič Ivan",
+        "additional_info": "zvani Iztok; Poveljstvo Gradnikove brigade: komandant (od 21. septembra 1944 do 21. januarja 1945); politični komisar (od konca aprila 1944 do začetka avgusta 1944); namestnik komandanta (od 3. septembra 1944 do 21. septembra 1944).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 46.8,
+        "pdf_y": 243.9,
+        "pdf_x_end": 144.3,
+        "pdf_y_end": 253.4
+      },
+      {
         "soldier_id": "9072000022",
         "name": "Sulič Ivan — Iztok",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komandant (od 18. sept. 1944 do 21. jan. 1945); III. SNOUB »Ivana Gradnika«, komisar (od konca aprila 1944 do začetka avgusta 1944); III. SNOUB »Ivana Gradnika«, namestnik komandanta (od 3. sept. 1944 do 18. sept. 1944). Čin: podpolkovnik JLA.",
@@ -51523,7 +51861,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Sulič",
@@ -51886,6 +52225,17 @@
     "pdf_x_end": 302.3,
     "other_sources": [
       {
+        "soldier_id": "0064010030",
+        "name": "Tavčar Franc",
+        "additional_info": "zvani Rok; Poveljstvo Gradnikove brigade: politični komisar (od začetka avgusta 1943 do 2. septembra 1943). Narodni heroj Gradnikove brigade: FRANC TAVČAR-ROK je bil rojen leta 1920 v Jaršah pri Ljubljani, že leta 1941 je ilegalno deloval na območju Ježice in Tomačevega, kjer je organiziral Narodno zaščito in bil član VOS. Julija 1942 je odšel v Tomšičevo brigado, marca 1943 pa je bil poslan v Slovensko primorje, kjer je postal najprej politični komisar Gregorčičeve, nato pa Gradnikove brigade. V bojih na Krvavi peči 1. septembra je bil ranjen. Ko se je pozdravil, je bil komandant 7. korpusa, nato pa pomočnik načelnika Glavnega štaba NOV in POS.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 52.1,
+        "pdf_y": 383.5,
+        "pdf_x_end": 160.4,
+        "pdf_y_end": 393.0
+      },
+      {
         "soldier_id": "9002001163",
         "name": "Tavčar Franca Franc (Rok)",
         "additional_info": "Rođen je 6. marta 1920. u .Iaršama, Ljubljana, Slovenija. … Narodnim herojem proglašen je 21. novembra 1953. godine.",
@@ -51918,7 +52268,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Tavčar",
@@ -54670,6 +55021,17 @@
     "pdf_x_end": 310.3,
     "other_sources": [
       {
+        "soldier_id": "0064010032",
+        "name": "Učakar Janez",
+        "additional_info": "Narodni heroj Gradnikove brigade: JANEZ UČAKAR je bil rojen leta 1918 na Pristavi pri Moravčah. Leta 1941 je bil član VOS v Ljubljani, nato pa ujet in odpeljan v taborišče v Gonarsu. Od tam je skupno z nekaterimi drugimi tovariši ušel po rovu, ki so ga bili izkopali, in se pridružil primorskim partizanom. Bil je komandant 3. bataljona Severnoprimorskega odreda, nato pa obveščevalec Gradnikove brigade v prvih mesecih po njeni ustanovitvi. Kasneje je spet delal v VOS, bil načelnik štaba Briško-beneškega odreda, od septembra 1944 dalje pa obveščevalni oficir v štabu 9. korpusa.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 9,
+        "pdf_x": 192.5,
+        "pdf_y": 73.0,
+        "pdf_x_end": 320.9,
+        "pdf_y_end": 242.3
+      },
+      {
         "soldier_id": "9002001200",
         "name": "Učakar Janeza Janez",
         "additional_info": "Rođen je ili. aprila 1919. na Pristavi kod Moravce, Ljubljana, Slovenije, od oca Janeza, stolara, i majka Marije srenko. … Narodnim herojem proglašen je 27. novembra 1953. godine.",
@@ -54685,7 +55047,9 @@
         "source_page": 820,
         "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "rank": "načelnik štaba",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Ušaj",
@@ -55129,6 +55493,17 @@
     "pdf_x_end": 191.4,
     "other_sources": [
       {
+        "soldier_id": "0064010033",
+        "name": "Vehar Franc",
+        "additional_info": "Poveljstvo Gradnikove brigade: namestnik političnega komisarja (od 5. februarja 1945 do 5. marca 1945).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 3,
+        "pdf_x": 47.0,
+        "pdf_y": 98.2,
+        "pdf_x_end": 126.1,
+        "pdf_y_end": 107.7
+      },
+      {
         "soldier_id": "9072000040",
         "name": "Vehar Franc",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komisarja (od 5. febr. 1945 do 5. marca 1945).",
@@ -55141,7 +55516,8 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Vel",
@@ -57722,6 +58098,17 @@
     "pdf_x_end": 206.6,
     "other_sources": [
       {
+        "soldier_id": "0064010034",
+        "name": "Vrhunec Oto",
+        "additional_info": "zvani Blaž Ostrovrhar; Poveljstvo Gradnikove brigade: načelnik štaba (od 15. maja 1944 do 1. oktobra 1944). Padel je 5. aprila 1945 nad Selško dolino.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 3,
+        "pdf_x": 46.5,
+        "pdf_y": 183.6,
+        "pdf_x_end": 237.8,
+        "pdf_y_end": 193.1
+      },
+      {
         "soldier_id": "9072000043",
         "name": "Vrhunec Oto — Blaž Ostrovrhar",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, načelnik štaba (od 20. maja 1944 do konca septembra 1944); XVI. SNOUB »Janka Premrla-Vojka«, komandant (od 6. maja 1944 do 20. maja 1944); XVI. SNOUB »Janka Premrla-Vojka«, namestnik komandanta (od 23. sept. 1943 do februarja 1944); XVI. SNOUB »Janka Premrla-Vojka«, načelnik štaba (od februarja 1944 do marca 1944). Padel je 5. aprila 1945 pod Blegošem.",
@@ -57734,7 +58121,12 @@
         "source_page": 559,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "rank": "načelnik štaba",
+    "unit_detail": "Štab brigade",
+    "death_type": "poginuo",
+    "death_date": "5. 4. 1945",
+    "death_place": "Selška dolina"
   },
   {
     "last_name": "Vrljan",
@@ -59447,6 +59839,17 @@
     "pdf_x_end": 200.9,
     "other_sources": [
       {
+        "soldier_id": "0064010036",
+        "name": "Čerin Jože",
+        "additional_info": "zvani Peter; Poveljstvo Gradnikove brigade: politični komisar (od junija 1943 do začetka avgusta 1943); namestnik političnega komisarja (maja in junija 1943).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 52.1,
+        "pdf_y": 361.9,
+        "pdf_x_end": 149.1,
+        "pdf_y_end": 371.4
+      },
+      {
         "soldier_id": "9072000026",
         "name": "Čerin Jože — Peter",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od junija 1943 do avgusta 1943); XVI. SNOUB »Janka Premrla-Vojka«, komisar (od 3. sept. 1944 do 12. dec. 1944). Čin: polkovnik LM.",
@@ -59459,7 +59862,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Čermelj",
@@ -61656,6 +62060,17 @@
     "pdf_x_end": 223.7,
     "other_sources": [
       {
+        "soldier_id": "0064010037",
+        "name": "Škapin Mihaela",
+        "additional_info": "zvana Drina; Narodni heroj Gradnikove brigade: MIHAELA ŠKAPIN-DRINA je bila rojena leta 1922 v Velikem polju pri Sežani. Marca 1943 so ji fašisti požgali dom, očeta pa ubili. Istega dne je z bratom, sestro in materjo odšla v Južnoprimorski odred, medtem ko je bil starejši brat že prej v partizanih. Iz odreda je prešla v Gregorčičevo brigado, avgusta 1943 pa se je vključila v Gradnikovo brigado. Po kapitulaciji Italije so jo premestili v Vojkovo brigado, kjer je kot namestnica političnega komisarja 2. bataljona padla 15. novembra 1943 na Žirovskem vrhu.",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 8,
+        "pdf_x": 208.1,
+        "pdf_y": 93.6,
+        "pdf_x_end": 335.7,
+        "pdf_y_end": 246.2
+      },
+      {
         "soldier_id": "9002001136",
         "name": "Škapin Jožeta Mihaela (Drina)",
         "additional_info": "Rođena je 29. septembra 1922. u selu Veliko Polje, Sežana, Slovenija. … Narodnim herojem proglašena je 5. septembra 1953. godine.",
@@ -61671,7 +62086,11 @@
         "source_page": 476,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "unit_detail": "2. bataljon",
+    "death_type": "poginuo",
+    "death_date": "15. 11. 1943",
+    "death_place": "Žirovski vrh"
   },
   {
     "last_name": "Škarabot",
@@ -62339,6 +62758,17 @@
     "pdf_x_end": 314.6,
     "other_sources": [
       {
+        "soldier_id": "0064010038",
+        "name": "Šorovič Danilo",
+        "additional_info": "Poveljstvo Gradnikove brigade: komandant (od 26. aprila 1943 do 3. novembra 1943).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 47.7,
+        "pdf_y": 158.2,
+        "pdf_x_end": 139.5,
+        "pdf_y_end": 167.7
+      },
+      {
         "soldier_id": "9072000018",
         "name": "Šorović Danilo",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komandant (od 26. aprila 1943 do 4. nov. 1943).",
@@ -62351,7 +62781,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Šošnja",
@@ -64396,6 +64827,17 @@
     "pdf_x_end": 299.4,
     "other_sources": [
       {
+        "soldier_id": "0064010039",
+        "name": "Šumrada Vinko",
+        "additional_info": "zvani Radoš; Poveljstvo Gradnikove brigade: politični komisar (od 2. septembra 1943 do 3. novembra 1943).",
+        "pdf_file": "gradnikova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 52.1,
+        "pdf_y": 404.9,
+        "pdf_x_end": 179.9,
+        "pdf_y_end": 414.4
+      },
+      {
         "soldier_id": "9072000028",
         "name": "Šumrada Vinko — Radoš",
         "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od 2. sept. 1943 do 4. nov. 1943); XVI. SNOUB »Janka Premrla-Vojka«, komisar (od 8. nov. 1943 do 8. jan. 1944).",
@@ -64408,7 +64850,8 @@
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
       }
-    ]
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Šušmelj",
@@ -66433,6 +66876,346 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=11",
         "source_page": 11,
         "ref_book": "zrtve-rata-1964-slo"
+      }
+    ]
+  },
+  {
+    "last_name": "Jež",
+    "middle_name": "",
+    "first_name": "Pavel",
+    "fathers_name": "",
+    "full_name": "Jež Pavel",
+    "additional_info": "zvani Stanko; Poveljstvo Gradnikove brigade: komandant (od 30. januarja 1944 do 20. marca 1944).",
+    "birth_year": "",
+    "pdf_page": 1,
+    "pdf_y": 201.1,
+    "pdf_x": 47.0,
+    "pdf_y_end": 210.6,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 149.0,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010010",
+    "other_sources": [
+      {
+        "soldier_id": "9072000020",
+        "name": "Jež Stanko",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komandant (od 30. jan. 1944 do 20. marca 1944). Čin: polkovnik LM.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 54.1,
+        "pdf_y": 255.5,
+        "pdf_x_end": 340.6,
+        "pdf_y_end": 263.6,
+        "source_page": 558,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Klanjšček",
+    "middle_name": "",
+    "first_name": "Rado",
+    "fathers_name": "",
+    "full_name": "Klanjšček Rado",
+    "additional_info": "zvani Jakec; Poveljstvo Gradnikove brigade: komandant (od 10. marca 1945 dalje).",
+    "birth_year": "",
+    "pdf_page": 1,
+    "pdf_y": 286.8,
+    "pdf_x": 47.0,
+    "pdf_y_end": 296.3,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 175.7,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010012",
+    "other_sources": [
+      {
+        "soldier_id": "9072000023",
+        "name": "Klanjšček Rado",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komandant (od 10. marca 1945 dalje). Čin: polkovnik JLA.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 54.2,
+        "pdf_y": 307.8,
+        "pdf_x_end": 340.4,
+        "pdf_y_end": 315.9,
+        "source_page": 558,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Kranjc",
+    "middle_name": "",
+    "first_name": "Franc",
+    "fathers_name": "",
+    "full_name": "Kranjc Franc",
+    "additional_info": "zvani Franjo; Poveljstvo Gradnikove brigade: namestnik političnega komisarja (od 16. septembra 1944 do 5. februarja 1945).",
+    "birth_year": "",
+    "pdf_page": 3,
+    "pdf_y": 76.8,
+    "pdf_x": 47.1,
+    "pdf_y_end": 86.3,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 175.7,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010014",
+    "other_sources": [
+      {
+        "soldier_id": "9072000013",
+        "name": "Kranjc Franc — Franjo",
+        "additional_info": "Štabi XXXI. divizije: XXXI. divizija NOV in POJ, namestnik komisarja (od 5. febr. 1945 dalje); III. SNOUB »Ivana Gradnika«, namestnik komisarja (od 1. sept. 1944 do 5. febr. 1945). Čin: polkovnik JLA.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 53.9,
+        "pdf_y": 66.4,
+        "pdf_x_end": 340.4,
+        "pdf_y_end": 83.1,
+        "source_page": 558,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Leban",
+    "middle_name": "",
+    "first_name": "Ivan",
+    "fathers_name": "",
+    "full_name": "Leban Ivan",
+    "additional_info": "Poveljstvo Gradnikove brigade: načelnik štaba (od 21. januarja 1945 do 7. februarja 1945).",
+    "birth_year": "",
+    "pdf_page": 3,
+    "pdf_y": 226.3,
+    "pdf_x": 46.6,
+    "pdf_y_end": 235.8,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 116.6,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010016",
+    "rank": "načelnik štaba",
+    "other_sources": [
+      {
+        "soldier_id": "9072000044",
+        "name": "Leban Ivan",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, načelnik štaba (od 21. jan. 1945 do 16. febr. 1945). Čin: podpolkovnik JLA.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.5,
+        "pdf_y": 367.7,
+        "pdf_x_end": 322.8,
+        "pdf_y_end": 384.5,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Maslo",
+    "middle_name": "",
+    "first_name": "Drago",
+    "fathers_name": "",
+    "full_name": "Maslo Drago",
+    "additional_info": "Narodni heroj Gradnikove brigade: DRAGO MASLO je bil rojen 21. avgusta 1912 na Ostrožnem Brdu pri Postojni. V partizane je stopil leta 1941, že aprila naslednjega leta pa je postal komandir Brkinsko-pivške čete. Četa je pod njegovim poveljstvom dosegla vrsto uspehov. Po ustanovitvi Južnoprimorskega odreda je bil imenovan za komandanta njegovega 2. bataljona. Nato je bil v Gregorčičevi brigadi, po njeni združitvi z Gradnikovo brigado pa je kmalu zatem postal komandant njenega 2. bataljona. V začetku leta 1944 je iz brigade odšel za komandanta Istrskega odreda, nato pa za komandirja udarne čete 30. divizije, s katero je med boji za Trst vdrl v mesto pred drugimi enotami 9. korpusa in 4. armade.",
+    "birth_year": "1912",
+    "pdf_page": 6,
+    "pdf_y": 275.8,
+    "pdf_x": 209.5,
+    "pdf_y_end": 481.4,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 353.0,
+    "unit_detail": "2. bataljon",
+    "birth_place": "Ostrožno Brdo",
+    "soldier_id": "0064010019"
+  },
+  {
+    "last_name": "Munih",
+    "middle_name": "",
+    "first_name": "Dušan",
+    "fathers_name": "",
+    "full_name": "Munih Dušan",
+    "additional_info": "zvani Darko; Narodni heroj Gradnikove brigade: DUŠAN MUNIH-DARKO je bil rojen leta 1924 v Selih pri Volčah. V partizane je prišel septembra 1942, po ustanovitvi Gradnikove brigade pa je postal komandir njene minerske čete in izvajal diverzantske akcije predvsem v dolini Soče. Maja 1943 je prešel v Varnostno-obveščevalno službo (VOS), po kapitulaciji Italije pa je diverzantske akcije opravljal v glavnem v Gorici in Trstu. Nemci so njegovo skrivališče v Borštu pri Trstu 10. januarja 1945 odkrili in napadli. Darko se je skušal prebiti, vendar je bil ranjen, nato pa ubit.",
+    "birth_year": "1924",
+    "pdf_page": 7,
+    "pdf_y": 82.8,
+    "pdf_x": 202.1,
+    "pdf_y_end": 243.8,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 329.5,
+    "unit_detail": null,
+    "birth_place": "Sela pri Volčah",
+    "death_type": "poginuo",
+    "death_date": "10. 1. 1945",
+    "death_place": "Boršt",
+    "soldier_id": "0064010022",
+    "other_sources": [
+      {
+        "soldier_id": "9002000798",
+        "name": "Munih Jožeta Dušan (Darko)",
+        "additional_info": "Rođen je 31. oktobra 1924. odine u Selima kod Volča, Slovenija. … Narodnim herojem proglašen je 20. decembra 1951. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=589",
+        "source_page": 585,
+        "ref_book": "narodni-heroji-1982"
+      }
+    ]
+  },
+  {
+    "last_name": "Pavlin",
+    "middle_name": "",
+    "first_name": "Miro",
+    "fathers_name": "",
+    "full_name": "Pavlin Miro",
+    "additional_info": "Poveljstvo Gradnikove brigade: namestnik političnega komisarja (od 28. junija 1943 do 16. septembra 1944).",
+    "birth_year": "",
+    "pdf_page": 3,
+    "pdf_y": 66.0,
+    "pdf_x": 46.8,
+    "pdf_y_end": 75.5,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 121.1,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010024",
+    "other_sources": [
+      {
+        "soldier_id": "9072000039",
+        "name": "Pavlin Miro",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komisarja (od 23. jun. 1944 do 1. sept. 1944).",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.4,
+        "pdf_y": 248.6,
+        "pdf_x_end": 256.4,
+        "pdf_y_end": 256.9,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Primožič",
+    "middle_name": "",
+    "first_name": "Franc",
+    "fathers_name": "",
+    "full_name": "Primožič Franc",
+    "additional_info": "Poveljstvo Gradnikove brigade: namestnik političnega komisarja (od 5. marca 1945 dalje).",
+    "birth_year": "",
+    "pdf_page": 3,
+    "pdf_y": 109.0,
+    "pdf_x": 47.0,
+    "pdf_y_end": 118.5,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 138.5,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010027",
+    "other_sources": [
+      {
+        "soldier_id": "9072000041",
+        "name": "Primožič Franc",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, namestnik komisarja (od 5. marca 1945 dalje). Čin: podpolkovnik JLA.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.1,
+        "pdf_y": 283.4,
+        "pdf_x_end": 322.8,
+        "pdf_y_end": 291.7,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Rustja",
+    "middle_name": "",
+    "first_name": "Franc",
+    "fathers_name": "",
+    "full_name": "Rustja Franc",
+    "additional_info": "zvani Čanči; Poveljstvo Gradnikove brigade: načelnik štaba (od 15. septembra 1943 do sredi februarja 1944).",
+    "birth_year": "",
+    "pdf_page": 3,
+    "pdf_y": 162.3,
+    "pdf_x": 47.5,
+    "pdf_y_end": 171.8,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 171.2,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010028",
+    "rank": "načelnik štaba",
+    "other_sources": [
+      {
+        "soldier_id": "9072000042",
+        "name": "Rustja Franc — Čanči",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, načelnik štaba (od 15. sept. 1943 do sredi februarja 1944). Čin: kontraadmiral.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.8,
+        "pdf_y": 315.6,
+        "pdf_x_end": 323.8,
+        "pdf_y_end": 332.3,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Tomšič",
+    "middle_name": "",
+    "first_name": "Alojz",
+    "fathers_name": "",
+    "full_name": "Tomšič Alojz",
+    "additional_info": "Poveljstvo Gradnikove brigade: politični komisar (od 21. januarja 1945 do 5. marca 1945).",
+    "birth_year": "",
+    "pdf_page": 2,
+    "pdf_y": 145.5,
+    "pdf_x": 58.5,
+    "pdf_y_end": 155.0,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 141.7,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010031",
+    "other_sources": [
+      {
+        "soldier_id": "9072000031",
+        "name": "Tomšič Alojz",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, komisar (od 21. jan. 1945 do 5. marca 1945). Čin: kapetan fregate.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.5,
+        "pdf_y": 57.1,
+        "pdf_x_end": 323.1,
+        "pdf_y_end": 73.7,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
+      }
+    ]
+  },
+  {
+    "last_name": "Vukadinovič",
+    "middle_name": "",
+    "first_name": "Dušan",
+    "fathers_name": "",
+    "full_name": "Vukadinovič Dušan",
+    "additional_info": "Poveljstvo Gradnikove brigade: načelnik štaba (od 2. marca 1945 do 28. marca 1945).",
+    "birth_year": "",
+    "pdf_page": 3,
+    "pdf_y": 247.9,
+    "pdf_x": 46.6,
+    "pdf_y_end": 257.4,
+    "pdf_file": "gradnikova-kader.pdf",
+    "pdf_x_end": 161.4,
+    "unit_detail": "Štab brigade",
+    "soldier_id": "0064010035",
+    "rank": "načelnik štaba",
+    "other_sources": [
+      {
+        "soldier_id": "9072000046",
+        "name": "Vukadinović Dušan",
+        "additional_info": "Štabi XXXI. divizije: III. SNOUB »Ivana Gradnika«, načelnik štaba (od 2. marca 1945 do 28. marca 1945); XVI. SNOUB »Janka Premrla-Vojka«, komandant (od 28. marca 1945 dalje). Čin: polkovnik JLA.",
+        "pdf_file": "xxxi-divizija-stabi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.4,
+        "pdf_y": 402.5,
+        "pdf_x_end": 323.0,
+        "pdf_y_end": 419.2,
+        "source_page": 559,
+        "ref_book": "xxxi-divizija-stabi"
       }
     ]
   }

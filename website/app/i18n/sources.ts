@@ -173,6 +173,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade in bataljonov, s časom na dolžnosti; šefi obveščevalnega centra, intendanti, sanitetni referenti in sekretarji SKOJ, samo imena (str. 571–574)',
     'gradnikova':
       'Seznam v brigadi padlih borcev in seznam drugih borcev brigade, ki so preživeli vojno ali niso padli v njej (str. 840 in naprej)',
+    'gradnikova-kader':
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade s časom, ko je kdo opravljal dolžnost, ter kratki življenjepisi narodnih herojev brigade (str. 791–799)',
     'zidanskova':
       'Seznam borcev brigade; padli so označeni z letnicama rojstva in padca (str. 731 in naprej)',
     'zidanskova-kader':
@@ -751,6 +753,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и баталјоните, со времето на должноста; шефовите на разузнавачкиот центар, интендантите, санитетските референти и секретарите на СКОЈ, само имиња (стр. 571–574)',
     'gradnikova':
       'Список на борците загинати во бригадата и список на другите: оние што ја преживеале војната или не загинале додека биле во неа (стр. 840 и натаму)',
+    'gradnikova-kader':
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата, со времето кога кој ја вршел должноста, и кратки биографии на народните херои на бригадата (стр. 791–799)',
     'zidanskova':
       'Список на борците на бригадата; кај загинатите годината на раѓање и на загинување (стр. 731 и натаму)',
     'zidanskova-kader':
@@ -1328,6 +1332,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The commanders, political commissars, their deputies and chiefs of staff of the brigade and its battalions, with how long each held the post; the heads of its intelligence centre, its quartermasters, medical officers and SKOJ secretaries, names only (pp. 571–574)',
     'gradnikova':
       'Lists of the Partisans killed in the brigade and of its other members, who survived the war or did not fall while in it (pp. 840 ff.)',
+    'gradnikova-kader':
+      'The brigade’s commanders, political commissars, their deputies and chiefs of staff, with the time each held the post, and short biographies of the brigade’s People’s Heroes (pp. 791–799)',
     'zidanskova':
       'List of the brigade’s members; for those killed, the years of birth and death (pp. 731 ff.)',
     'zidanskova-kader':

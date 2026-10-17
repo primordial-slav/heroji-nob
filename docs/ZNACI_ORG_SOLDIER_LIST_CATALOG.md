@@ -152,7 +152,7 @@ Most of the Knjižnica NOV in POS monographs end with a roster ("Seznam borcev")
 | Šercerjeva | Milan Guček 1973 | Padli (518 of 550), volunteers | [bk=813](https://znaci.org/00003/7xx.php?bk=813) |
 | XII. SNOUB (Dvanajsta) | Ambrožič-Novljan 1976 | Padli (609), **Seznam borcev (613 of 648)**, commanders (573, **done**, `dvanajsta-kader.pdf`) | [bk=814](https://znaci.org/00003/7xx.php?bk=814) |
 | Kosovelova | Radosav Isaković 1973 | Padli (802), commanders (819 of 854) | [bk=773](https://znaci.org/00003/7xx.php?bk=773) |
-| Gradnikova | Stanko Petelin 1983 | Padli (840), **Pregled borcev** (849 of 888) | [bk=825](https://znaci.org/00003/7xx.php?bk=825) |
+| Gradnikova | Stanko Petelin 1983 | Padli (840), **Pregled borcev** (849 of 888), the command and narodni heroji (791-799; **done**, `gradnikova-kader.pdf`) | [bk=825](https://znaci.org/00003/7xx.php?bk=825) |
 | Bračičeva II | Mirko Fajdiga 1994 | Padli (304), **survivors (328 of 446)** | [bk=775](https://znaci.org/00003/7xx.php?bk=775) |
 | Zidanšekova II | Mirko Fajdiga 1975 | commanders (730, **done**, `zidanskova-kader.pdf`), **Seznam borcev (732 of 793)** | [bk=776](https://znaci.org/00003/7xx.php?bk=776) |
 | 1. in 2. prekomorska | Vilhar, Klun 1967 | Padli (346), leaders (358 of 399) | [769](https://znaci.org/00003/769.php) |
@@ -204,7 +204,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Nikola Božić, *Batinska bitka* | 51. divizija fallen (p. 469, 22 pp.) and missing (p. 491, 11 pp.); Soviet fallen (p. 502, 59 pp.) | [00002/427](https://znaci.org/00002/427.htm) |
 | *Oslobođenje Kruševca 1944.* | fallen ([292_32.pdf](https://znaci.org/00001/292_32.pdf), 11 pp.; **done**: `krusevac-1944-poginuli.pdf`, a book across units) | [00001/292](https://znaci.org/00001/292.htm) |
 | Milan Brunović, Tomo Sović, *Bitka kod Oborova* | the fallen (p. 158, 3 pp.; **done**: `bitka-kod-oborova-poginuli.pdf`, a book across units) | [00003/660](https://znaci.org/00003/660.htm) |
-| *Istočna Bosna u NOR-u* 2 | fallen of the 6. istočnobosanska (PDF p. 478, 7 pp.) | [00003/751](https://znaci.org/00003/751.php) |
+| *Istočna Bosna u NOR-u* 2 | fallen of the 6. istočnobosanska (PDF p. 478, 7 pp.; checked 2026-10-17: memoirs of a few of its fallen, "Poginuli su kao borci 6. istočnobosanske brigade", no list) | [00003/751](https://znaci.org/00003/751.php) |
 | *Žene Hrvatske u NOB* | women of the VI. korpus who fell (p. 301, 12 pp.), women of the 1. bataljon of the Osječka (p. 282) | [00003/585](https://znaci.org/00003/585.htm) |
 | Ljuban Đurić, *Banijski partizanski odredi* | the officers of the odredi 1941-1945 (PDF pp. 354-360, book pp. 372-378; **done**, a book across units, `banijski-odredi-kadar.pdf`) | [00003/549](https://znaci.org/00003/549.htm) |
 | Kažimir Pribilović, *Četvrti pomorski obalni sektor* | fallen and died (p. 473, 6 pp.), the staff (Prilog X, 652_1 p. 70, book p. 485; **done**, `4-pomorski-sektor-stab.pdf`) | [00003/652](https://znaci.org/00003/652.htm) |
