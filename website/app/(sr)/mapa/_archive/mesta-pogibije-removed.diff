@@ -1,0 +1,358 @@
+--- a/Sheet.tsx
++++ b/Sheet.tsx
+@@ -273,56 +273,6 @@
+   )
+ }
+ 
+-// Where the unit's fighters were killed, in grey ink so the red stays the brigade's own: a circle per place, larger
+-// where more fell, the largest named. A circle (or its name) opens the list of those killed there, in the month or
+-// the year shown, in a new tab.
+-// The places the unit's fighters were killed in a month or a year, largest first, and the few the sheet names
+-function killedSpots(unit: Unit, view: View, months: { month?: string; year?: Year | null }, most: number) {
+-  const T = toSheet(view)
+-  const counted = (f: Unit['FALLEN'][number]) => {
+-    const { month, year } = months
+-    if (month) return f.months[month] ?? 0
+-    if (year) return Object.entries(f.months).filter(([m]) => yearOf(day(m)) === year).reduce((a, [, n]) => a + n, 0)
+-    return f.n
+-  }
+-  const spots = unit.FALLEN
+-    .map((f, i) => ({ ...f, ...T(f), i, k: counted(f) }))
+-    .filter(f => f.k > 0 && f.x > INNER && f.x < W - INNER && f.y > INNER && f.y < H - INNER)
+-    .sort((a, b) => b.k - a.k)
+-  const named: typeof spots = []
+-  for (const s of spots) {
+-    if (named.length >= most) break
+-    if (s.k >= 8 && named.every(o => Math.hypot(o.x - s.x, o.y - s.y) > 40)) named.push(s)
+-  }
+-  return { spots, named }
+-}
+-
+-function Fallen({ unit, view, months, named: most }: {
+-  unit: Unit; view: View; months: { month?: string; year?: Year | null }; named: number
+-}) {
+-  const { spots, named } = killedSpots(unit, view, months, most)
+-  const href = (i: number) => killedPath(unit.key, { spot: i, month: months.month, year: months.year ?? undefined })
+-  return (
+-    <g>
+-      {[...spots].reverse().map(s => (
+-        <a key={s.i} href={href(s.i)} target="_blank" rel="noopener" className={styles.fallenLink}>
+-          <circle cx={s.x} cy={s.y} r={1.2 + 1.05 * Math.sqrt(s.k)} className={styles.fallen} />
+-          <title>{`${s.place}: ${borci(s.k)}. Spisak se otvara u novoj kartici.`}</title>
+-        </a>
+-      ))}
+-      {named.map(s => {
+-        const r = 1.2 + 1.05 * Math.sqrt(s.k)
+-        return (
+-          <a key={s.i} href={href(s.i)} target="_blank" rel="noopener" className={styles.fallenLink}>
+-            <text x={s.x + r + 3} y={s.y + 3} className={styles.fallenHalo}>{`${s.place} ${num(s.k)}`}</text>
+-            <text x={s.x + r + 3} y={s.y + 3} className={styles.fallenLabel}>{`${s.place} ${num(s.k)}`}</text>
+-          </a>
+-        )
+-      })}
+-    </g>
+-  )
+-}
+-
+ // Crossed sabres, the maps' sign for a battle, centred on 0,0
+ function Sabres() {
+   return (
+@@ -347,21 +297,20 @@
+ }
+ 
+ // The battles a sheet shows, and what their labels keep off: the brigade's line (on the timeline as walked so far,
+-// on the war path the year's or all of it), its event numbers and the killed shown
+-function battlesFor(unit: Unit, variant: 'put' | 'vreme', month: number, year: Year | null, view: View, numbers: Pt[], fallen: boolean) {
++// on the war path the year's or all of it) and its event numbers
++function battlesFor(unit: Unit, variant: 'put' | 'vreme', month: number, year: Year | null, view: View, numbers: Pt[]) {
+   const T = toSheet(view)
+   if (variant === 'vreme') {
+     const ym = MONTHS[month], now = monthEnd(ym)
+     return {
+       list: bigBattlesOn(unit, month) as ShownBattle[],
+-      busy: [...unit.samples.filter(s => s.t <= now).map(T), ...numbers, ...unit.FALLEN.filter(f => f.months[ym]).map(T)],
++      busy: [...unit.samples.filter(s => s.t <= now).map(T), ...numbers],
+     }
+   }
+   return {
+     list: BATTLES.filter(b => unit.battles.includes(b.key))
+       .map(b => ({ ...b, dim: !!year && yearOf(day(b.from)) !== year && yearOf(day(b.to)) !== year })),
+-    busy: [...unit.samples.filter(s => !year || yearOf(s.t) === year).map(T), ...numbers,
+-      ...(fallen ? killedSpots(unit, view, { year }, 10).spots : [])],
++    busy: [...unit.samples.filter(s => !year || yearOf(s.t) === year).map(T), ...numbers],
+   }
+ }
+ 
+@@ -471,9 +420,8 @@
+ // route marks as a battle, with small sabres and the place's name, so a village the map doesn't otherwise name shows
+ // where the fighting was. Where the map names the town already, only the sabres are added; where a great battle of
+ // the stretch stands, it alone is drawn; a name that would run into another is left to the sabres' tooltip.
+-function Fights({ unit, from, to, big, view, numbers, townNames, townBoxes, killedNames }: {
++function Fights({ unit, from, to, big, view, numbers, townNames, townBoxes }: {
+   unit: Unit; from: number; to: number; big: Pt[]; view: View; numbers: Pt[]; townNames: Set<string>; townBoxes: Box[]
+-  killedNames: Pt[]
+ }) {
+   const { setOpen, fight, setFight } = useMap()
+   const T = toSheet(view)
+@@ -488,9 +436,8 @@
+         if (p.x < INNER || p.x > W - INNER || p.y < INNER || p.y > H - INNER) return null
+         // clear of an event number on the place
+         const under = numbers.some(q => Math.hypot(q.x - p.x, q.y - p.y) < EVENT_R + 4)
+-        const byKilled = killedNames.some(k => Math.hypot(k.x - p.x, k.y - p.y) < 14)
+-        const named = townNames.has(w.place.toLowerCase()) || byKilled
+-        const sx = byKilled ? p.x - 12 : p.x + (under ? EVENT_R + 9 : 8), sy = p.y - (named && !byKilled ? 9 : 0)
++        const named = townNames.has(w.place.toLowerCase())
++        const sx = p.x + (under ? EVENT_R + 9 : 8), sy = p.y - (named ? 9 : 0)
+         const nameBox: Box = [sx + 6, sy - 4.5, sx + 8 + w.place.length * 10.5 * 0.52, sy + 5.5]
+         const lettered = !named && !placed.some(b => overlaps(b, nameBox))
+         if (lettered) placed.push(nameBox)
+@@ -522,7 +469,7 @@
+ }
+ 
+ function Route({ townBoxes, townNames, battles }: { townBoxes: Box[]; townNames: Set<string>; battles: BattleLabel[] }) {
+-  const { unit, variant, year, fallen, month, view, marker, numbers } = useMap()
++  const { unit, variant, year, month, view, marker, numbers } = useMap()
+   const T = toSheet(view)
+   const first = T(unit.ROUTE[0]), last = T(unit.ROUTE[unit.ROUTE.length - 1])
+   const ends = (
+@@ -545,7 +492,7 @@
+     }
+     body = (
+       <>
+-        <g style={{ opacity: fallen ? 0.8 : 1 }}>
++        <g>
+           {runs.map((r, i) => (
+             <g key={i} className={year && year !== r.year ? styles.faded : undefined}>
+               {r.move
+@@ -556,11 +503,9 @@
+           ))}
+           {ends}
+         </g>
+-        {fallen && <Fallen unit={unit} view={view} months={{ year }} named={10} />}
+         {year && (
+           <Fights unit={unit} from={yearStart(year)} to={yearEnd(year)} big={battles.filter(l => !l.b.dim).map(l => { const [x, y] = project(l.b.lon, l.b.lat); return { x, y } })}
+-            view={view} numbers={numbers} townNames={townNames} townBoxes={townBoxes}
+-            killedNames={fallen ? killedSpots(unit, view, { year }, 10).named : []} />
++            view={view} numbers={numbers} townNames={townNames} townBoxes={townBoxes} />
+         )}
+         <Battles labels={battles} />
+         <EventNumbers year={year} />
+@@ -588,10 +533,8 @@
+           <path key={`r${i}`} d={pathOf(r.pts)} className={r.move ? styles.routeMove : styles.route} style={{ opacity: fade(r.age) }} />
+         ))}
+         {arrowRuns.map((r, i) => <g key={`a${i}`} style={{ opacity: fade(r.age) }}><Arrows pts={r.pts} /></g>)}
+-        {/* only the month's killed: the months before are in the column beside the map */}
+-        {fallen && <Fallen unit={unit} view={view} months={{ month: ym }} named={4} />}
+         <Fights unit={unit} from={monthStart(ym)} to={now} big={bigBattlesOn(unit, month)} view={view} numbers={numbers}
+-          townNames={townNames} townBoxes={townBoxes} killedNames={fallen ? killedSpots(unit, view, { month: ym }, 4).named : []} />
++          townNames={townNames} townBoxes={townBoxes} />
+         <Battles labels={battles} />
+         <circle cx={at.x} cy={at.y} r={8.5} className={styles.hereRing} />
+         <circle cx={at.x} cy={at.y} r={4.2} className={styles.here} />
+@@ -639,13 +582,12 @@
+ // country shows): the brigade's marks, a rule, then the country as it was divided after the April war. It stays
+ // folded to a small tab with its name until it is opened, so it covers nothing of a close-up
+ const KEY_W = 214, KEY_ROW = 13
+-function keyRows(variant: 'put' | 'vreme', fallen: boolean, transfers: boolean, battles: boolean, year: Year | null): [ReactNode, string][] {
++function keyRows(variant: 'put' | 'vreme', transfers: boolean, battles: boolean, year: Year | null): [ReactNode, string][] {
+   return [
+     [<line key="r" x1={0} x2={20} y1={0} y2={0} className={styles.route} />, 'put brigade'],
+     ...(transfers ? [[<line key="m" x1={0} x2={20} y1={0} y2={0} className={styles.routeMove} />, 'premeštanje van borbe'] as [ReactNode, string]] : []),
+     ...(variant === 'vreme' ? [[<g key="h"><circle cx={10} cy={0} r={5.2} className={styles.hereRing} /><circle cx={10} cy={0} r={2.6} className={styles.here} /></g>, 'brigada u tom mesecu'] as [ReactNode, string]] : []),
+     [<g key="e"><circle cx={10} cy={0} r={5.8} className={styles.eventMark} /><text x={10} y={2.9} className={styles.eventNumber} style={{ fontSize: 8 }}>1</text></g>, 'događaj (klik: opis)'],
+-    ...(fallen ? [[<circle key="f" cx={10} cy={0} r={4.6} className={styles.fallen} />, 'mesto pogibije (klik: spisak)'] as [ReactNode, string]] : []),
+     ...(battles ? [[<g key="b" transform="translate(10 0) scale(0.5)"><circle r={BIG_RING} className={styles.battleRing} /><g transform="scale(1.25)" className={styles.battleMarkBig}><Sabres /></g></g>, variant === 'vreme' ? 'velika bitka, dok traje' : 'velika bitka'] as [ReactNode, string]] : []),
+     ...(variant === 'vreme' || year ? [[<g key="s" transform="translate(10 0) scale(0.62)" className={styles.battleMark}><Sabres /></g>, variant === 'vreme' ? 'borba brigade u tom mesecu' : 'borba brigade te godine'] as [ReactNode, string]] : []),
+     [<g key="t"><circle cx={10} cy={0} r={2} className={styles.markOpen} /><circle cx={10} cy={0} r={0.7} className={styles.markFull} /></g>, 'naselje'],
+@@ -917,7 +859,7 @@
+ // ---------- the sheet ----------
+ 
+ export default function MapSheet({ below, aside }: { below?: ReactNode; aside?: ReactNode }) {
+-  const { unit, variant, year, month, partition, view, fallen, manual, setManual, colors, toneScale, numbers, battle } = useMap()
++  const { unit, variant, year, month, partition, view, manual, setManual, colors, toneScale, numbers, battle } = useMap()
+   const shownMonth = variant === 'vreme' ? MONTHS[month] : YEAR_MONTH[year ?? ''] ?? '1942-06'
+   const period = partition ? periodAt(shownMonth) : null
+   // the liberated territory only on the timeline, in the months a map of it covers
+@@ -936,7 +878,7 @@
+   const titleW = Math.max(title.name.length * 13 * 0.64, (title.honour?.length ?? 0) * 9 * 0.64, title.sub.length * subSize * 0.56, 150,
+     (standIn?.[0].length ?? 0) * 8.5 * 0.5)
+   const titleH = scaleY - TITLE_TOP + 12 + (standIn ? 25 : 0)
+-  const rows = keyRows(variant, fallen, unit.ROUTE.some(w => w.kind === 'transfer'), unit.battles.length > 0, variant === 'put' ? year : null)
++  const rows = keyRows(variant, unit.ROUTE.some(w => w.kind === 'transfer'), unit.battles.length > 0, variant === 'put' ? year : null)
+   const titleBox: Box = [TITLE_RIGHT - titleW - 10, TITLE_TOP - 6, TITLE_RIGHT + 6, TITLE_TOP + titleH + 20]
+   // the key stays as the reader left it, in this browser (it opens folded where storage is not to be had)
+   const [keyOpen, setKeyOpen] = useState(false)
+@@ -963,7 +905,7 @@
+   const keepClear: Box[] = [titleBox, ...(zoomed ? [[corner.x - 4, corner.y - 4, corner.x + LOC_W + 4, corner.y + LOC_H + 4] as Box] : [])]
+   // the great battles' labels before the villages: a village's name makes way for a battle's, which keeps off the
+   // overview's towns and the title block
+-  const shown = battlesFor(unit, variant, month, year, view, numbers, fallen)
++  const shown = battlesFor(unit, variant, month, year, view, numbers)
+   const battleLabels = placeBattles(shown.list, battle, view, numbers, shown.busy, [...keepClear, ...mainTowns(view).map(m => m.box)])
+   const labelBoxes = battleLabels.flatMap(l => (l.box ? [l.box] : []))
+   const towns = placeTowns(view, [...keepClear, ...labelBoxes])
+--- a/Controls.tsx
++++ b/Controls.tsx
+@@ -45,12 +45,11 @@
+   )
+ }
+ 
+-// The sheet's own switches, under the tabs: where the killed fell, how much of the country
++// The sheet's own switch, under the tabs: how much of the country
+ function SheetSwitches() {
+   const { whole, setWhole } = useMap()
+   return (
+     <div className={styles.sheetOptions}>
+-      <FallenToggle />
+       <div className={styles.choice} role="group" aria-label="Prikaz karte">
+         Karta:
+         <button type="button" aria-pressed={!whole} className={styles.choiceButton} onClick={() => setWhole(false)}>oblast jedinice</button>
+@@ -60,18 +59,7 @@
+   )
+ }
+ 
+-// Where the unit's fighters were killed, on the map or not; each view keeps its own choice
+-function FallenToggle() {
+-  const { fallen, setFallen } = useMap()
+-  return (
+-    <button type="button" aria-pressed={fallen} className={fallen ? styles.yearOn : styles.year} onClick={() => setFallen(!fallen)}>
+-      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5" className={styles.fallen} /></svg>
+-      Mesta pogibije
+-    </button>
+-  )
+-}
+-
+-// Ratni put: the whole way or one year of it, and where its fighters were killed laid over it
++// Ratni put: the whole way or one year of it
+ function RouteControls() {
+   const { year, setYear } = useMap()
+   return (
+--- a/state.tsx
++++ b/state.tsx
+@@ -12,9 +12,8 @@
+ 
+ // What the map page shows, kept in its address so a link can open it as it was (and a soldier's record can open
+ // his unit's way with the place he was killed marked). Kroz vreme is the page's own view, Ratni put is asked for:
+-//   ?jedinica=prva-licka&mesec=1943-06&poginuli=0&cela=1&mesto=18.55,43.37&oznaka=Ime Prezime
+-//   ?prikaz=put&godina=1943&poginuli=1
+-// The killed are shown on the timeline unless poginuli=0, on the war path only with poginuli=1.
++//   ?jedinica=prva-licka&mesec=1943-06&cela=1&mesto=18.55,43.37&oznaka=Ime Prezime
++//   ?prikaz=put&godina=1943
+ 
+ export type Variant = 'put' | 'vreme'
+ 
+@@ -30,7 +29,7 @@
+ export type Marker = { x: number; y: number; label: string }
+ 
+ export type Initial = {
+-  unit?: string; view?: string; year?: string; fallen?: string; month?: string
++  unit?: string; view?: string; year?: string; month?: string
+   whole?: boolean; place?: string; label?: string
+ }
+ 
+@@ -57,7 +56,6 @@
+   unit: Unit; setUnit: (key: string) => void
+   variant: Variant; setVariant: (v: Variant) => void
+   year: Year | null; setYear: (y: Year | null) => void
+-  fallen: boolean; setFallen: (f: boolean) => void
+   month: number; setMonth: (m: number | ((m: number) => number)) => void
+   playing: boolean; setPlaying: (p: boolean) => void
+   open: number | null; setOpen: (i: number | null) => void
+@@ -138,11 +136,6 @@
+   const unit = unitOf(unitKey)
+   const [variant, setVariantState] = useState<Variant>(initial.view === 'put' ? 'put' : 'vreme')
+   const [year, setYear] = useState<Year | null>((YEARS as readonly string[]).includes(initial.year ?? '') ? (initial.year as Year) : null)
+-  // each view keeps its own choice: the timeline shows a month's killed unless asked not to, the war path all of
+-  // them only when asked
+-  const [fallenPut, setFallenPut] = useState(initial.view === 'put' && initial.fallen === '1')
+-  const [fallenTime, setFallenTime] = useState(!(initial.view !== 'put' && initial.fallen === '0'))
+-  const fallen = variant === 'put' ? fallenPut : fallenTime
+   // the timeline starts where the unit does
+   const startMonth = initial.month && MONTHS.includes(initial.month) ? MONTHS.indexOf(initial.month) : unit.first
+   const [month, setMonth] = useState(Math.min(unit.last, Math.max(unit.first, startMonth)))
+@@ -248,14 +241,12 @@
+     if (variant === 'vreme') q.set('mesec', MONTHS[month])
+     else q.set('prikaz', 'put')
+     if (variant === 'put' && year) q.set('godina', year)
+-    if (variant === 'put' && fallen) q.set('poginuli', '1')
+-    if (variant === 'vreme' && !fallen) q.set('poginuli', '0')
+     if (whole) q.set('cela', '1')
+     if (initial.place) q.set('mesto', initial.place)
+     if (initial.label) q.set('oznaka', initial.label)
+     const url = `${window.location.pathname}${q.size ? `?${q}` : ''}`
+     if (url !== `${window.location.pathname}${window.location.search}`) window.history.replaceState(null, '', url)
+-  }, [unit.key, variant, year, fallen, month, whole, initial.place, initial.label])
++  }, [unit.key, variant, year, month, whole, initial.place, initial.label])
+ 
+   const auto = useMemo(() => targetView(unit, variant, year, month, whole, marker),
+     [unit, variant, year, month, whole, marker])
+@@ -275,7 +266,6 @@
+     },
+     variant, setVariant: v => { setVariantState(v); setPlaying(false); setOpen(null); setBattle(null); setFight(null); setManualState(null) },
+     year, setYear: y => { setYear(y); setOpen(null); setManualState(null) },
+-    fallen, setFallen: f => (variant === 'put' ? setFallenPut(f) : setFallenTime(f)),
+     month, setMonth, playing, setPlaying, partition,
+     // one card at a time: an event's, a great battle's or a fight's
+     open, setOpen: i => { setOpen(i); if (i !== null) { setBattle(null); setFight(null) } },
+--- a/page.tsx
++++ b/page.tsx
+@@ -16,7 +16,7 @@
+ export default async function Page({ searchParams }: { searchParams: Params }) {
+   const q = await searchParams
+   const initial = {
+-    unit: one(q.jedinica), view: one(q.prikaz), year: one(q.godina), fallen: one(q.poginuli),
++    unit: one(q.jedinica), view: one(q.prikaz), year: one(q.godina),
+     month: one(q.mesec), whole: one(q.cela) === '1',
+     place: one(q.mesto), label: one(q.oznaka),
+   }
+--- a/mapa.module.css
++++ b/mapa.module.css
+@@ -299,48 +299,6 @@
+   text-anchor: middle;
+ }
+ 
+-/* the killed, in grey ink with a fine dotted edge: red is only the brigade's own */
+-.fallen {
+-  fill: var(--ink);
+-  fill-opacity: 0.09;
+-  stroke: var(--ink);
+-  stroke-opacity: 0.6;
+-  stroke-width: 0.7;
+-  stroke-dasharray: 1.6 1.4;
+-  pointer-events: visiblePainted;
+-}
+-
+-.fallenLink {
+-  cursor: pointer;
+-}
+-
+-.fallenLink:hover .fallen,
+-.fallenLink:focus-visible .fallen {
+-  fill-opacity: 0.22;
+-  stroke-opacity: 1;
+-}
+-
+-.fallenLink:hover .fallenLabel {
+-  text-decoration: underline;
+-}
+-
+-.fallenLabel,
+-.fallenHalo {
+-  font-family: var(--font-lettering), sans-serif;
+-  font-size: 10px;
+-}
+-
+-.fallenLabel {
+-  fill: var(--ink);
+-}
+-
+-.fallenHalo {
+-  fill: none;
+-  stroke: var(--surface);
+-  stroke-width: 3;
+-  stroke-linejoin: round;
+-}
+-
+ /* a great battle, while it lasts: crossed sabres in ink, the name in the map's lettering */
+ .battleMark path {
+   fill: none;

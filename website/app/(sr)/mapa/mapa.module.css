@@ -1,0 +1,1504 @@
+/* The map page's sheet: black ink on the page's paper, the way the books print their sketches */
+
+.plate {
+  margin: 0;
+  /* the water's own ink, as atlases print it: a muted blue beside the black of the land and the red of the brigade */
+  --water: #3f6482;
+}
+
+:global([data-theme='dark']) .plate {
+  --water: #8fafc9;
+}
+
+/* each occupier's tint (the zones' colour, at a low strength): the colour itself on paper, mixed with the light ink
+   in the dark theme so it still shows */
+.plate {
+  --tint-de: var(--zone-de);
+  --tint-it: var(--zone-it);
+  --tint-hu: var(--zone-hu);
+  --tint-bg: var(--zone-bg);
+  --tint-al: var(--zone-al);
+}
+
+:global([data-theme='dark']) .plate {
+  --tint-de: color-mix(in srgb, var(--zone-de) 25%, var(--ink));
+  --tint-it: color-mix(in srgb, var(--zone-it) 45%, var(--ink));
+  --tint-hu: color-mix(in srgb, var(--zone-hu) 45%, var(--ink));
+  --tint-bg: color-mix(in srgb, var(--zone-bg) 45%, var(--ink));
+  --tint-al: color-mix(in srgb, var(--zone-al) 45%, var(--ink));
+}
+
+.scroller {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+}
+
+.sheetWrap {
+  position: relative;
+  /* a drag on the map moves it: nothing on it is selected or dragged away */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.sheetWrap .card {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.sheet {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* what the page draws over the map, in the sheet's own units */
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* On a phone the sheet keeps a width its lettering can be read at, and scrolls sideways */
+@media (max-width: 40rem) {
+  .sheetWrap {
+    width: 44rem;
+  }
+}
+
+.paper {
+  fill: var(--surface);
+}
+
+.frameOuter {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2.4;
+}
+
+.frameInner {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 0.7;
+}
+
+.land path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+}
+
+/* the land gained after the war: the coast in a faint thin line, the later border with Italy faintly dashed */
+.gained path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-opacity: 0.32;
+  stroke-width: 0.7;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.gained .gainedBorder {
+  stroke-opacity: 0.4;
+  stroke-dasharray: 3 2.5;
+}
+
+.rivers path {
+  fill: var(--water);
+}
+
+/* under the title block's scale: the free territory's map is another month's */
+.titleNote {
+  fill: var(--ink-muted);
+  font-style: italic;
+}
+
+.lakes path {
+  fill: color-mix(in srgb, var(--water) 7%, var(--surface));
+  stroke: var(--water);
+  stroke-width: 0.8;
+}
+
+.lakeLines path {
+  fill: none;
+  stroke: var(--water);
+  stroke-width: 0.45;
+}
+
+.markFull {
+  fill: var(--ink);
+}
+
+.markOpen {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 0.9;
+}
+
+.lettering text {
+  font-family: var(--font-lettering), 'Segoe UI', sans-serif;
+  fill: var(--ink);
+}
+
+/* the paper showing round a town's name where it crosses a river */
+.lettering .halo {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.underline {
+  stroke: var(--ink);
+  stroke-width: 0.7;
+}
+
+.lettering .river,
+.lettering .sea {
+  fill: var(--water);
+}
+
+.lettering .neighbour {
+  fill: var(--ink-muted);
+}
+
+.caption {
+  margin-top: var(--space-3);
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: var(--step-0);
+  text-align: center;
+}
+
+.credits {
+  margin-top: var(--space-2);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+/* ========== A unit on the map ========== */
+
+.unitLine {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  margin-bottom: var(--space-2);
+}
+
+.tabs {
+  display: flex;
+  gap: var(--space-5);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--space-4);
+  overflow: auto hidden;
+  scrollbar-width: none;
+}
+
+.tab,
+.tabOn {
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 500;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: var(--space-2) 0;
+  color: var(--ink-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tabOn {
+  color: var(--ink);
+  border-bottom-color: var(--red);
+}
+
+/* the unit's lines are printed in red over the black plate, as the books' two-colour maps are */
+.route {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 2.3;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+}
+
+.routeDotted {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+/* a move away from the fighting: back to rest, by train */
+.routeMove {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+  stroke-linecap: butt;
+}
+
+.routeFaint {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 0.9;
+  stroke-dasharray: 3 3;
+  opacity: 0.55;
+}
+
+.routeArrow {
+  fill: var(--red-ink);
+}
+
+.faded {
+  opacity: 0.14;
+}
+
+.here {
+  fill: var(--red-ink);
+  stroke: var(--surface);
+  stroke-width: 1.2;
+}
+
+.hereRing {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1;
+}
+
+.endRing {
+  fill: var(--surface);
+  stroke: var(--red-ink);
+  stroke-width: 1.2;
+}
+
+.leader {
+  stroke: var(--red-ink);
+  stroke-width: 0.6;
+}
+
+.eventMark {
+  fill: var(--surface);
+  stroke: var(--red-ink);
+  stroke-width: 1;
+}
+
+.eventNumber {
+  font-family: var(--font-lettering), sans-serif;
+  font-size: 11.5px;
+  fill: var(--red-ink);
+  text-anchor: middle;
+}
+
+/* a great battle, while it lasts: crossed sabres in ink, the name in the map's lettering */
+.battleMark path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+.battleMark circle {
+  fill: var(--ink);
+}
+
+.battleHalo path {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.battleHalo circle {
+  fill: var(--surface);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+/* a great battle: heavier sabres in a fine ring, its name larger */
+.battleMarkBig path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.battleMarkBig circle {
+  fill: var(--ink);
+}
+
+.battleRing {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 0.9;
+}
+
+.battleRingHalo {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: 3;
+}
+
+.lettering .battleName {
+  font-weight: 600;
+}
+
+.lettering .fightName {
+  font-weight: 600;
+}
+
+/* a great battle, and a numbered fight, open their cards */
+.battle,
+.battleOn,
+.fight,
+.fightOn {
+  cursor: pointer;
+  outline: none;
+}
+
+.battleHit {
+  fill: transparent;
+}
+
+.battle:hover .battleName,
+.battle:focus-visible .battleName,
+.battleOn .battleName {
+  fill: var(--red-ink);
+}
+
+.battle:hover .battleRing,
+.battle:focus-visible .battleRing,
+.battleOn .battleRing {
+  stroke: var(--red-ink);
+}
+
+.fight:hover text:not(.halo),
+.fight:focus-visible text:not(.halo),
+.fightOn text:not(.halo) {
+  fill: var(--red-ink);
+}
+
+.fight:hover .battleMark path,
+.fightOn .battleMark path {
+  stroke: var(--red-ink);
+}
+
+.battleLeader {
+  stroke: var(--ink);
+  stroke-width: 0.6;
+}
+
+.lettering .battleDates {
+  fill: var(--ink-muted);
+  font-style: italic;
+}
+
+/* the events the map numbers, as a book's legend lists them */
+.legend {
+  list-style: none;
+  columns: 3 17rem;
+  column-gap: var(--space-6);
+  margin-top: var(--space-4);
+  font-family: var(--font-lettering), sans-serif;
+  font-size: 0.95rem;
+}
+
+.legend li {
+  break-inside: avoid;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+}
+
+.legendNumber {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 1px solid var(--red-ink);
+  border-radius: 50%;
+  color: var(--red-ink);
+  font-size: 0.75rem;
+}
+
+.controls {
+  margin-top: var(--space-4);
+}
+
+.years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.year,
+.yearOn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 36px;
+  padding: 0 0.8rem;
+  font: inherit;
+  font-size: var(--step--1);
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.year:hover {
+  border-color: var(--ink);
+}
+
+.yearOn {
+  border-color: var(--ink);
+  background: var(--surface-sunk);
+}
+
+.note {
+  margin-top: var(--space-3);
+  max-width: 68ch;
+  font-size: var(--step--1);
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.noteKey {
+  margin-right: var(--space-2);
+  vertical-align: middle;
+}
+
+/* Kroz vreme, above the map */
+.timelineTop {
+  margin-bottom: var(--space-2);
+}
+
+/* two lines of room, so the map stays put as the months change */
+.timelineHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--space-5);
+  min-height: 4.2rem;
+}
+
+.month {
+  flex: none;
+  min-width: 12rem;
+  font-family: var(--font-name);
+  font-size: var(--step-3);
+  line-height: 1.15;
+}
+
+.timelineNote {
+  flex: 1 1 22rem;
+  max-width: 62ch;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.timeline {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.track {
+  flex: 1;
+  min-width: 0;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+  margin: 0.55rem 0 0;
+  accent-color: var(--red);
+}
+
+.ticks {
+  position: relative;
+  height: 1.2rem;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.ticks span {
+  position: absolute;
+  top: 0.15rem;
+  transform: translateX(-50%);
+}
+
+/* ========== The partition of 1941 ========== */
+
+.hatch line {
+  stroke: var(--ink-muted);
+  stroke-width: 0.35;
+}
+
+.hatch circle {
+  fill: var(--ink-muted);
+}
+
+/* who held a zone, as a grey of the ink: the share is set on each zone (partition1941.ts) */
+.tone {
+  fill: var(--ink);
+  fill-rule: evenodd;
+  stroke: none;
+}
+
+/* the liberated territory: a wash of the Partisan red with a fine dotted edge; the semi-liberated in red hatching */
+.free {
+  fill: var(--red-ink);
+  fill-opacity: 0.13;
+  fill-rule: evenodd;
+  stroke: var(--red-ink);
+  stroke-opacity: 0.55;
+  stroke-width: 0.7;
+  stroke-dasharray: 1.2 2.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.semiFree {
+  fill-rule: evenodd;
+  opacity: 0.6;
+}
+
+.freeHatch line {
+  stroke: var(--red-ink);
+  stroke-width: 0.45;
+}
+
+.zones path {
+  stroke: none;
+  opacity: 0.5;
+}
+
+/* a border as maps draw one: dash, dot, dash */
+.zoneLines path,
+.zoneLine {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 1;
+  stroke-dasharray: 7 2.6 1.4 2.6;
+  stroke-linejoin: round;
+}
+
+.banatLines path,
+.banatLine {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 0.7;
+  stroke-dasharray: 4 2.5;
+}
+
+.lettering .zoneUnder {
+  fill: var(--ink-muted);
+  font-style: italic;
+}
+
+.lettering .zoneName {
+  fill: var(--ink-muted);
+}
+
+.legendFrame {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 0.7;
+}
+
+.swatch {
+  stroke: var(--ink-muted);
+  stroke-width: 0.6;
+}
+
+/* the key's heading, which opens and folds it */
+.keyTab {
+  cursor: pointer;
+  outline: none;
+}
+
+.keyTabHit {
+  fill: transparent;
+}
+
+.keyTab:hover text,
+.keyTab:focus-visible text {
+  fill: var(--red-ink);
+}
+
+.keyTab:focus-visible .keyTabHit {
+  stroke: var(--red-ink);
+  stroke-width: 1;
+}
+
+.keyChevron {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.keyTab:hover .keyChevron {
+  stroke: var(--red-ink);
+}
+
+.keyRule {
+  stroke: var(--rule-strong, var(--ink-muted));
+  stroke-width: 0.5;
+}
+
+.choice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.choice a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 0.7rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.choice a:hover {
+  border-color: var(--ink);
+}
+
+.choiceButton {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 0.7rem;
+  font: inherit;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.choiceButton:hover {
+  border-color: var(--ink);
+}
+
+.choiceButton[aria-pressed='true'],
+.choice a[aria-current='true'] {
+  border-color: var(--ink);
+  background: var(--surface-sunk);
+}
+
+/* inside NDH: the German-Italian line as a line with ticks across it, Italy's zones II and III dashed, the
+   variant dotted */
+.demarcationLine {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 0.9;
+  stroke-linejoin: round;
+}
+
+.demarcationTicks {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 3.6;
+  stroke-dasharray: 0.8 5.5;
+}
+
+.zoneIILine {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 0.8;
+  stroke-dasharray: 5 3;
+}
+
+.variantLine {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-dasharray: 0.1 3.4;
+}
+
+.lettering .ndhZoneName {
+  fill: var(--ink-muted);
+}
+
+/* ========== A numbered event's card ========== */
+
+.eventHit {
+  pointer-events: visiblePainted;
+  cursor: pointer;
+  outline: none;
+}
+
+.eventHit:focus-visible circle {
+  stroke-width: 2;
+}
+
+.eventMarkOn {
+  fill: var(--red-ink);
+  stroke: var(--red-ink);
+  stroke-width: 1;
+}
+
+.eventNumberOn {
+  font-family: var(--font-lettering), sans-serif;
+  font-size: 11.5px;
+  fill: var(--surface);
+  text-anchor: middle;
+}
+
+.card {
+  position: absolute;
+  z-index: 2;
+  width: min(19rem, 70vw);
+  padding: var(--space-3) var(--space-4) var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cardTitle {
+  flex: 1;
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  line-height: 1.25;
+}
+
+.cardClose {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin-right: -0.4rem;
+  background: none;
+  border: 0;
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+
+.cardClose:hover {
+  color: var(--ink);
+}
+
+.cardWhat {
+  margin-top: var(--space-2);
+  font-weight: 600;
+  font-size: var(--step-0);
+}
+
+.cardText {
+  margin-top: var(--space-2);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+/* a battle's card: its sign, and the brigade's own events in it */
+.cardSabres {
+  flex: none;
+}
+
+.cardSub {
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+.cardEvents {
+  list-style: none;
+  margin: var(--space-1) 0 0;
+  padding: 0;
+  font-size: var(--step--1);
+}
+
+.cardSource {
+  margin-top: var(--space-2);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
+.legendItem,
+.legendItemOn {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.15rem 0.2rem;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.legendItem:hover {
+  background: var(--surface-sunk);
+}
+
+.legendItemOn {
+  background: var(--surface-sunk);
+}
+
+/* ========== The sheet that frames a unit ========== */
+
+/* lines keep their weight as the ground is enlarged */
+.land path,
+.lakes path,
+.lakeLines path,
+.riverLines path,
+.zoneLines path,
+.banatLines path,
+.variantLine,
+.zoneIILine,
+.demarcationLine,
+.demarcationTicks {
+  vector-effect: non-scaling-stroke;
+}
+
+/* close up, rivers are single pen lines, as a detail sheet draws them */
+.riverLines path {
+  fill: none;
+  stroke: var(--water);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.riverLines .major {
+  stroke-width: 1.7;
+}
+
+.riverLines .river {
+  stroke-width: 0.95;
+}
+
+.riverLines .minor {
+  stroke-width: 0.6;
+}
+
+.detailTown text {
+  letter-spacing: 0.02em;
+}
+
+/* the month on the timeline, large in the title block */
+.lettering .titleMonth {
+  fill: var(--ink);
+}
+
+.titlePaper {
+  fill: var(--surface);
+  opacity: 0.92;
+}
+
+.locatorPaper {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 0.7;
+}
+
+.locatorLand {
+  fill: var(--surface-sunk);
+  stroke: var(--ink);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.locatorView {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1.2;
+}
+
+/* a place a link asks the map to mark: a red ring, never a cross */
+.markerRing {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1.4;
+}
+
+.lettering .markerLabel {
+  fill: var(--red-ink);
+}
+
+/* ---------- controls ---------- */
+
+.toolbar {
+  margin-bottom: var(--space-3);
+}
+
+.toolbarRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--space-3);
+}
+
+.toolbarRow .tabs {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.unitPick {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+.unitPick select {
+  min-height: 36px;
+  max-width: min(28rem, 80vw);
+  padding: 0 2rem 0 0.7rem;
+  font: inherit;
+  font-size: var(--step-0);
+  color: var(--ink);
+  background-color: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.unitPick select:hover,
+.unitPick select:focus-visible {
+  border-color: var(--ink);
+}
+
+/* under the tabs: the view's own controls on the left, the sheet's switches on the right */
+.toolbarSub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-5);
+}
+
+.toolbarView {
+  flex: 1 1 24rem;
+  min-width: 0;
+}
+
+.toolbarSub .sheetOptions {
+  flex: none;
+  justify-content: flex-end;
+  gap: var(--space-2) var(--space-4);
+}
+
+.viewControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.below {
+  margin-top: var(--space-3);
+}
+
+.sheetOptions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-6);
+}
+
+@media (max-width: 40rem) {
+  .toolbarRow {
+    align-items: stretch;
+  }
+
+  .unitPick {
+    width: 100%;
+  }
+
+  .unitPick select {
+    flex: 1;
+    max-width: none;
+  }
+}
+
+/* A count of the killed: the list of those soldiers, in a new tab */
+.killedLink {
+  color: var(--red-ink);
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--red-ink) 40%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+.killedLink:hover {
+  text-decoration-color: currentColor;
+}
+
+.killedLink svg {
+  margin-left: 0.2em;
+  vertical-align: -0.1em;
+}
+
+/* mapa/spisak */
+.listKicker {
+  color: var(--red-ink);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+.listHead {
+  margin-bottom: var(--space-6);
+}
+
+.listHead h1 {
+  margin: var(--space-1) 0 var(--space-2);
+}
+
+.listContext,
+.listNote {
+  max-width: 64ch;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+.listNote {
+  margin-top: var(--space-3);
+  font-size: var(--step--1);
+}
+
+/* Kroz vreme: the war as a ruler beside the sheet, its line against the map; no scrollbar, it spans the sheet's height */
+.plateRow {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: var(--space-2);
+  align-items: stretch;
+}
+
+.rail {
+  position: relative;
+  min-height: 12rem;
+}
+
+.railColumn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* the play mark, at the head of the line */
+.railHead {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: var(--space-2);
+}
+
+.play {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 1px solid var(--red-ink);
+  border-radius: 50%;
+  background: var(--ground);
+  color: var(--red-ink);
+  cursor: pointer;
+}
+
+.play svg {
+  fill: currentColor;
+}
+
+.play svg path {
+  transform: translateX(0.6px);
+}
+
+.play:hover {
+  background: var(--red-ink);
+  color: var(--ground);
+}
+
+.ruler {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* the line, under the play mark's middle */
+.ruler::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.75rem;
+  border-left: 1px solid var(--ink);
+  pointer-events: none;
+}
+
+.ruler li {
+  flex: 1 1 0;
+  display: flex;
+  min-height: 0.7rem;
+}
+
+.rulerRow,
+.rulerRowOn {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.rulerLabel {
+  flex: 1;
+  padding-right: 0.15rem;
+  font-family: var(--font-name);
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* how many were killed: a grey bar back from the line, under the names */
+.rulerBar {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  height: 3px;
+  background: var(--ink-muted);
+  opacity: 0.45;
+  transform: translateY(-50%);
+}
+
+.rulerRow:hover .rulerBar {
+  opacity: 0.75;
+}
+
+.rulerRowOn .rulerBar {
+  background: var(--red-ink);
+  opacity: 0.7;
+}
+
+.rulerYear,
+.rulerMonth {
+  position: relative;
+  z-index: 1;
+  padding: 0 0.2rem;
+  background: var(--ground);
+}
+
+.rulerMonth {
+  display: none;
+}
+
+.rulerRow:hover .rulerYear,
+.rulerRowOn .rulerYear {
+  display: none;
+}
+
+.rulerRow:hover .rulerMonth,
+.rulerRowOn .rulerMonth {
+  display: inline;
+}
+
+.rulerRow:hover .rulerMonth {
+  color: var(--ink-muted);
+}
+
+.rulerRowOn .rulerMonth {
+  color: var(--red-ink);
+}
+
+.rulerAxis {
+  position: relative;
+  flex: none;
+  width: 1.5rem;
+  height: 100%;
+}
+
+.rulerTick,
+.rulerTickYear {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  height: 1px;
+  background: var(--ink);
+}
+
+.rulerTick {
+  width: 0.3rem;
+}
+
+.rulerTickYear {
+  width: 0.65rem;
+}
+
+.rulerRow:hover .rulerTick {
+  width: 0.5rem;
+}
+
+.rulerRowOn .rulerTick,
+.rulerRowOn .rulerTickYear {
+  width: 0.75rem;
+  background: var(--red-ink);
+}
+
+.rulerEvent,
+.rulerNow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background: var(--red-ink);
+  transform: translate(-50%, -50%);
+}
+
+.rulerEvent {
+  width: 5px;
+  height: 5px;
+}
+
+.rulerNow {
+  z-index: 2;
+  width: 9px;
+  height: 9px;
+  box-shadow: 0 0 0 2px var(--ground);
+}
+
+.railStrip {
+  display: none;
+}
+
+.railEvents {
+  color: var(--red-ink);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.keysHint {
+  margin: var(--space-2) 0 0;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+/* on a phone the months run across, above the map */
+@media (max-width: 720px) {
+  .plateRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rail {
+    min-height: 0;
+  }
+
+  .railColumn {
+    display: none;
+  }
+
+  .railStrip {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    overflow-x: auto;
+    padding-bottom: var(--space-2);
+    scrollbar-width: none;
+  }
+
+  .railStrip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stripMonth,
+  .stripMonthOn {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    padding: 0.3rem 0.45rem;
+    background: none;
+    border: 0;
+    color: var(--ink);
+    font: inherit;
+    font-size: var(--step--1);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .stripMonth b,
+  .stripMonthOn b {
+    font-family: var(--font-name);
+    font-weight: 400;
+  }
+
+  .stripMonthOn {
+    box-shadow: inset 0 -2px 0 var(--red-ink);
+    font-weight: 600;
+  }
+
+  .keysHint {
+    display: none;
+  }
+}
+
+/* the reader's own frame: moving it, and letting it go */
+.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+/* + and -, and the way back to the timeline's frame, in the sheet's top corner */
+.zoomTools {
+  position: absolute;
+  top: 2.2%;
+  left: 2.2%;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.zoomButton {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.zoomButton:hover {
+  color: var(--red-ink);
+  border-color: var(--red-ink);
+}
+
+.resetView {
+  padding: 0.2rem 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  color: var(--ink);
+  font: inherit;
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+
+.resetView:hover {
+  color: var(--red-ink);
+  border-color: var(--red-ink);
+}
+
+/* trying the occupiers' colours */
+.colorPanel {
+  margin-top: var(--space-4);
+  font-size: var(--step--1);
+}
+
+.colorPanel summary {
+  cursor: pointer;
+  color: var(--ink-muted);
+}
+
+.colorRows {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.colorRow input[type='color'] {
+  width: 2.2rem;
+  height: 1.6rem;
+  padding: 0;
+  border: 1px solid var(--rule-strong);
+  background: none;
+  cursor: pointer;
+}
+
+.colorRow input[type='range'] {
+  width: 10rem;
+}
+
+.colorRow code,
+.colorValues {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+.colorChanged {
+  color: var(--red-ink);
+  font-size: 0.75rem;
+}
+
+.colorFoot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.colorValues {
+  user-select: all;
+  overflow-wrap: anywhere;
+}
+
+/* the unit, named (no switch: one unit a page, 2026-10-17) */
+.unitPick b {
+  color: var(--ink);
+  font-size: var(--step-0);
+  font-weight: 500;
+}

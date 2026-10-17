@@ -1,0 +1,616 @@
+/* The unit overview pages (local only). DESIGN.md: neutral ground, ink text, 1px rules, square corners, names in
+   PT Serif surname first; red only for links and the primary action. */
+
+.page {
+  padding-bottom: var(--space-8);
+}
+
+.title {
+  margin-top: var(--space-3);
+  font-family: var(--font-name);
+  font-size: var(--step-3, 1.875rem);
+  font-weight: 400;
+}
+
+.head {
+  margin: var(--space-7) 0 var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--red);
+  font-family: var(--font-name);
+  font-size: var(--step-2);
+  font-weight: 400;
+}
+
+.subhead {
+  margin: var(--space-6) 0 var(--space-3);
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.section {
+  margin-top: var(--space-6);
+}
+
+.lead {
+  max-width: 44rem;
+  margin: var(--space-2) 0 var(--space-4);
+  color: var(--ink-muted);
+}
+
+.muted {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+.unknown {
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+/* ---------- the chart */
+
+.chartScroll {
+  overflow-x: auto;
+  margin: var(--space-4) 0 var(--space-5);
+}
+
+.chart {
+  min-width: 44rem;
+  display: grid;
+  gap: 6px;
+}
+
+.chartRow {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.chartLabel {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  text-align: right;
+}
+
+.chartTrack {
+  position: relative;
+  height: 1.9rem;
+}
+
+.chartRow:first-child .chartTrack {
+  height: 1.2rem;
+}
+
+.chartYear {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-name);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  font-variant-numeric: lining-nums;
+}
+
+.chartTick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid var(--rule);
+}
+
+.span {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  color: var(--ink);
+  font-size: var(--step--1);
+  text-decoration: none;
+}
+
+.spanLink:hover {
+  border-color: var(--ink);
+  color: var(--red-ink);
+}
+
+.spanText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- dated lines */
+
+.events {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.events li {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.events time {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.events a,
+.person a,
+.personNote a,
+.lead a {
+  color: var(--red-ink);
+}
+
+/* ---------- ways on */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+.battalions {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.battalions a {
+  display: grid;
+  gap: 2px;
+  height: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.battalions a:hover {
+  border-color: var(--ink);
+}
+
+.batName {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+}
+
+.batSpan {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+.batCount {
+  color: var(--red-ink);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+/* ---------- the command */
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+  gap: var(--space-5) var(--space-6);
+}
+
+.post h3 {
+  margin-bottom: var(--space-2);
+  font-size: var(--step-0);
+  font-weight: 600;
+}
+
+.post .post {
+  margin-top: var(--space-3);
+}
+
+.people {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.person {
+  display: grid;
+  gap: 1px;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.personName {
+  font-family: var(--font-name);
+  font-size: var(--step-0);
+}
+
+.personName a {
+  text-decoration: none;
+}
+
+.personName a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.hero {
+  margin-left: var(--space-2);
+  color: var(--ink-muted);
+  font-family: var(--font-ui, inherit);
+  font-size: var(--step--1);
+}
+
+.personWhen {
+  font-size: var(--step--1);
+}
+
+.personNote {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+/* ---------- soldiers */
+
+.fold {
+  margin-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--space-2);
+}
+
+.fold summary {
+  cursor: pointer;
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+}
+
+.names {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-3);
+  columns: 3 14rem;
+  column-gap: var(--space-6);
+}
+
+.names li {
+  break-inside: avoid;
+  padding: 2px 0;
+  font-family: var(--font-name);
+}
+
+.names a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.names a:hover {
+  color: var(--red-ink);
+}
+
+@media (max-width: 640px) {
+  .events li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .events time {
+    text-align: left;
+  }
+}
+
+/* ---------- the unit page's doors (the home page's .doors cards) */
+
+.doors {
+  margin-top: var(--space-7);
+}
+
+.doorSketch {
+  background: var(--surface-sunk);
+}
+
+.sketch {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sketchLand {
+  fill: var(--surface);
+  stroke: var(--ink-muted);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.sketchRoute {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.sketchStart {
+  fill: var(--red);
+}
+
+.doorNumbers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 0 var(--space-3);
+  font-family: var(--font-name);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--ink-muted);
+}
+
+.spanGuess {
+  border-style: dashed;
+  color: var(--ink-muted);
+}
+
+/* ---------- a post's holders: the time, the portrait, the name and what is known of him */
+
+.holders {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.holder {
+  display: grid;
+  grid-template-columns: 12rem 3rem 1fr;
+  gap: var(--space-4);
+  align-items: start;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.holderWhen {
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+  padding-top: 3px;
+}
+
+.holderWhen i {
+  color: var(--ink-muted);
+}
+
+.holderPhoto img {
+  display: block;
+  width: 3rem;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  filter: var(--photo-filter);
+}
+
+.holderBody {
+  display: grid;
+  gap: 2px;
+}
+
+.holderName {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+}
+
+.holderName a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.holderName a:hover {
+  color: var(--red-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.holderHero {
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+.holderNote {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+.holderSource {
+  color: var(--red-ink);
+  font-size: var(--step--1);
+}
+
+.staffPost {
+  margin-top: var(--space-4);
+}
+
+.staffPost h4 {
+  margin-bottom: var(--space-2);
+  font-size: var(--step-0);
+  font-weight: 600;
+}
+
+/* ---------- compact tables: other posts, companies, platoons */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+}
+
+.table th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--ink-muted);
+  padding: var(--space-2) var(--space-3) var(--space-2) 0;
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.table td {
+  padding: var(--space-2) var(--space-3) var(--space-2) 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.tableKey {
+  width: 10rem;
+  font-weight: 600;
+}
+
+.tableName {
+  font-family: var(--font-name);
+  font-size: var(--step-0);
+}
+
+.tableName a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.tableName a:hover {
+  color: var(--red-ink);
+}
+
+/* ---------- the battalions by number */
+
+.numberCards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.numberCards a {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-3);
+  height: 100%;
+  padding: var(--space-4);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.numberCards a:hover .numberTitle {
+  color: var(--red-ink);
+}
+
+.numberBig {
+  font-family: var(--font-name);
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--ink-muted);
+}
+
+.numberBody {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.numberTitle {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+}
+
+.numberLine {
+  font-size: var(--step--1);
+}
+
+.batSection {
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 640px) {
+  .holder {
+    grid-template-columns: 3rem 1fr;
+  }
+
+  .holderWhen {
+    grid-column: 1 / -1;
+  }
+
+  .tableKey {
+    width: auto;
+  }
+}
+
+.sketchBar {
+  fill: var(--ink-muted);
+  opacity: 0.55;
+}
+
+.sketchBarAlt {
+  fill: var(--ink-muted);
+  opacity: 0.3;
+}
+
+.sketchBarGuess {
+  fill: none;
+  stroke: var(--ink-muted);
+  stroke-dasharray: 4 3;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: var(--space-1) var(--space-4);
+  max-width: 46rem;
+  margin: var(--space-2) 0 var(--space-4);
+}
+
+.facts dt {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  padding-top: 2px;
+}
+
+.facts a {
+  color: var(--red-ink);
+}
+
+.numberGroup {
+  margin-top: var(--space-6);
+}
+
+.numberHead {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--rule-strong);
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.numberGroup .numberCards {
+  margin-top: var(--space-3);
+}
+
+.numberGroup .numberCards a {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}

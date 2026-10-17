@@ -1,0 +1,1050 @@
+/* A battalion's episodes: the close-up sheet in the main map's hand, its card, and the summer along the top.
+   The sheet's paper, frame, lettering and furniture come from ../mapa.module.css; this file adds the close-up's
+   ground (contours, railway, roads) and the marks of the fighting. Some selectors are doubled to win over the
+   main sheet's `.lettering text`. */
+
+.page {
+  /* the contours' ink: the black, thinned toward the paper */
+  --contour: color-mix(in srgb, var(--ink) 26%, var(--surface));
+  --contour-index: color-mix(in srgb, var(--ink) 42%, var(--surface));
+  --water: #3f6482;
+  /* the enemy's forces, each a faint colour under the hatch and behind its numbers in the text: the Italians in
+     the main map's green for Italy, the NDH's ustaše, gendarmes and domobrani in ochre, the Chetniks in slate */
+  --force-it: #2c5a37;
+  --force-ndh: #94621f;
+  --force-cet: #4a4f7c;
+  /* the Germans, at Dvor na Uni, in field grey */
+  --force-de: #55595c;
+  /* the other partisan units, brigades and odredi: a fuller red than the brigade's own battalions */
+  --ally: #b8141d;
+  /* their labels, a shade darker than the fill so they read over the ground */
+  --force-it-ink: #1f4a2b;
+  --force-ndh-ink: #7a4c12;
+  --force-cet-ink: #383d6b;
+  --force-de-ink: #3a3d40;
+}
+
+:global([data-theme='dark']) .page {
+  --force-it: #86b892;
+  --force-ndh: #d6a65e;
+  --force-cet: #a9addf;
+  --force-de: #b4b8bb;
+  --ally: #ff5a4a;
+  --force-it-ink: #9fd1aa;
+  --force-ndh-ink: #e6b874;
+  --force-cet-ink: #c0c3ee;
+  --force-de-ink: #cdd1d4;
+}
+
+:global([data-theme='dark']) .page {
+  --contour: color-mix(in srgb, var(--ink) 22%, var(--surface));
+  --contour-index: color-mix(in srgb, var(--ink) 36%, var(--surface));
+  --water: #8fafc9;
+}
+
+/* the page takes more than the site's column, up to a large screen's width: the sheet wants the room */
+.wide {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-5) 0;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.headTitle {
+  font-family: var(--font-name);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.sheetWrap {
+  cursor: grab;
+}
+
+/* a unit of the sheet is a screen pixel: it is as wide as its room on a phone too, not the main sheet's 44rem */
+.room .sheetWrap {
+  width: auto;
+}
+
+.sheetHint {
+  margin-top: var(--space-2);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+.headKicker {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+/* ---------- the ground ---------- */
+
+.contours path {
+  fill: none;
+  stroke: var(--contour);
+  stroke-width: var(--w-contour);
+  stroke-linejoin: round;
+}
+
+.contours .contourIndex {
+  stroke: var(--contour-index);
+  stroke-width: var(--w-index);
+}
+
+.lakes path {
+  fill: color-mix(in srgb, var(--water) 14%, var(--surface));
+  stroke: var(--water);
+  stroke-width: var(--w-lake);
+}
+
+.rivers path {
+  fill: none;
+  stroke: var(--water);
+  stroke-width: var(--w-river);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rivers .riverBig {
+  stroke-width: var(--w-river-big);
+}
+
+.roadsMinor path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-opacity: 0.7;
+  stroke-width: var(--w-road-minor);
+  stroke-linejoin: round;
+}
+
+.roadsMinor .track {
+  stroke-opacity: 0.45;
+  stroke-width: var(--w-track);
+  stroke-dasharray: var(--d-track);
+}
+
+.roadsCase path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-opacity: 0.8;
+  stroke-width: var(--w-road-case);
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.roadsFill path {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: var(--w-road-fill);
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.railCase path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: var(--w-rail-case);
+  stroke-linejoin: round;
+}
+
+.railFill path {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: var(--w-rail-fill);
+  stroke-dasharray: var(--d-rail);
+  stroke-linejoin: round;
+}
+
+.railTunnel path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: var(--w-tunnel);
+  stroke-dasharray: var(--d-tunnel);
+}
+
+.station {
+  fill: var(--ink);
+}
+
+/* ---------- lettering on the ground ---------- */
+
+.halo.halo {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: 3.8;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.placeSmall.placeSmall {
+  fill: var(--ink-muted);
+}
+
+.placeKey.placeKey {
+  fill: var(--ink);
+  font-weight: 700;
+}
+
+.peak path {
+  fill: var(--ink);
+  opacity: 0.75;
+}
+
+.peak.peak text {
+  fill: var(--ink-muted);
+  font-style: italic;
+}
+
+.peak.peak .peakHeight {
+  font-style: normal;
+}
+
+/* ---------- the marks ---------- */
+
+.own {
+  --mark: var(--red-ink);
+}
+
+.friend {
+  --mark: var(--red-ink);
+}
+
+.ally {
+  --mark: var(--ally);
+}
+
+.enemy {
+  --mark: var(--ink);
+}
+
+.markLabel.markLabel {
+  fill: var(--mark);
+}
+
+.markLabel.own,
+.markLabel.friend,
+.markLabel.ally {
+  font-weight: 700;
+  stroke: var(--mark);
+  stroke-width: 0.35;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.markLabel.own {
+  stroke-width: 0.6;
+}
+
+.markLabel.ally {
+  stroke-width: 0.5;
+}
+
+/* the enemy's labels upright and bold, so they never read as the ground's names */
+.markLabel.enemy {
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+/* the battalion's place: the red laid on, as with a brush */
+.areaOwn {
+  fill: color-mix(in srgb, var(--red-ink) 26%, transparent);
+  stroke: var(--red-ink);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+/* another battalion of the brigade: the red line alone, broken */
+.areaFriend {
+  fill: color-mix(in srgb, var(--red-ink) 5%, transparent);
+  stroke: var(--red-ink);
+  stroke-width: 1.1;
+  stroke-dasharray: 4 2.5;
+  stroke-linejoin: round;
+}
+
+/* a brigade or odred from outside: its fuller red, the line whole and heavier */
+.areaAlly {
+  fill: color-mix(in srgb, var(--ally) 12%, transparent);
+  stroke: var(--ally);
+  stroke-width: 2.1;
+  stroke-linejoin: round;
+}
+
+/* the enemy: its ground hatched in ink; where the book does not fix it, a dotted edge and a lighter hatch */
+.areaEnemy {
+  fill: url(#bat-hatch);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.tint {
+  fill-opacity: 0.22;
+}
+
+.tintGuess {
+  fill-opacity: 0.12;
+}
+
+.areaGuess {
+  fill-opacity: 0.55;
+  stroke-width: 1.3;
+  stroke-dasharray: 0.1 3.2;
+  stroke-linecap: round;
+}
+
+/* an outside unit's place the book doesn't fix keeps its heavier line, dotted */
+.areaAlly.areaGuess {
+  stroke-width: 2;
+  stroke-dasharray: 0.1 3.6;
+}
+
+.hatch line {
+  stroke: var(--ink);
+  stroke-width: 0.75;
+  opacity: 0.6;
+}
+
+.move {
+  fill: none;
+  stroke: var(--mark);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.moveOwn {
+  stroke-width: 3.2;
+}
+
+.moveAlly {
+  stroke-width: 2.6;
+}
+
+/* a march: where the book names the way but not the path, a broken line */
+.move_march {
+  stroke-width: 1.8;
+  stroke-dasharray: 7 2.5 1.5 2.5;
+  stroke-linecap: butt;
+}
+
+.moveOwn.move_march {
+  stroke-width: 2.5;
+}
+
+.moveAlly.move_march {
+  stroke-width: 2.2;
+}
+
+.move_back {
+  stroke-dasharray: 5 3.5;
+  stroke-linecap: butt;
+}
+
+.move_fire {
+  stroke-width: 1.3;
+  stroke-dasharray: 0.1 3;
+  stroke-linecap: round;
+}
+
+/* the enemy's moves heavier than the ground's lines, in its force's colour */
+.move.enemy:not(.move_fire) {
+  stroke-width: 2.7;
+}
+
+/* a move whose way the book doesn't give: dash and dot, as the approximate marches, its label asking */
+.move.moveGuess {
+  stroke-dasharray: 7 2.5 1.5 2.5;
+  stroke-linecap: butt;
+}
+
+/* a march into an ambush: a plain line, no arrow, and where it ends the red cross of the patrol smashed */
+.move_caught {
+  stroke-width: 2.4;
+}
+
+.caughtCross {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+/* an ambush, as the sketches draw it: an arc open toward the road, the strokes of its fire across it */
+.ambush {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+}
+
+.ambushFire {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+.moveHead {
+  fill: var(--mark);
+}
+
+.moveOpenHead {
+  fill: none;
+  stroke: var(--mark);
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+}
+
+.moveBar {
+  fill: none;
+  stroke: var(--mark);
+  stroke-width: 2.6;
+  stroke-linecap: square;
+}
+
+.post {
+  fill: var(--ink);
+}
+
+.postGuess {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+  stroke-dasharray: 0.1 2.4;
+  stroke-linecap: round;
+}
+
+.postTaken {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+
+.takenCross {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.train {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.1;
+}
+
+.trainArmoured {
+  fill: var(--ink);
+  stroke: var(--ink);
+  stroke-width: 1.1;
+}
+
+.cut {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1.3;
+  stroke-linecap: round;
+}
+
+.sabres path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.sabres circle {
+  fill: var(--ink);
+}
+
+.kota {
+  fill: var(--ink);
+}
+
+.spot {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+
+/* what stands all through the episode */
+.baseMark {
+  opacity: 0.92;
+}
+
+.nowMark {
+  animation: markIn 0.45s ease-out both;
+}
+
+@keyframes markIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nowMark {
+    animation: none;
+  }
+}
+
+/* the title block's day, large, and its hour */
+.titleDate.titleDate {
+  fill: var(--ink);
+}
+
+.titleTime.titleTime {
+  fill: var(--red-ink);
+}
+
+.titleWhen.titleWhen {
+  fill: var(--red-ink);
+  font-style: italic;
+}
+
+.locatorHalo {
+  fill: color-mix(in srgb, var(--red-ink) 22%, transparent);
+}
+
+.locatorSpot {
+  fill: var(--red-ink);
+}
+
+.keyRailCase {
+  stroke: var(--ink);
+  stroke-width: 2.6;
+}
+
+.keyRailFill {
+  stroke: var(--surface);
+  stroke-width: 1.3;
+  stroke-dasharray: 5 5;
+}
+
+.keyContour {
+  stroke: var(--contour-index);
+  stroke-width: 0.8;
+}
+
+/* ---------- the summer along the top ---------- */
+
+.timeline {
+  margin-bottom: var(--space-2);
+  overflow-x: auto;
+}
+
+/* the days, a tick each; the episodes as red bars on the line, their names above and below in turn */
+.axis {
+  position: relative;
+  min-width: 46rem;
+  height: 4.3rem;
+  margin: 0 var(--space-2);
+}
+
+.axis::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.75rem;
+  border-top: 1px solid var(--ink);
+}
+
+.dayTick {
+  position: absolute;
+  top: 1.75rem;
+  height: 0.25rem;
+  border-left: 1px solid var(--rule-strong);
+}
+
+.monthMark,
+.monthMarkFirst {
+  position: absolute;
+  top: 1.75rem;
+  padding: 1.55rem 0 0 0.3rem;
+  border-left: 1px solid var(--ink);
+  height: 2.5rem;
+  line-height: 1;
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.between {
+  position: absolute;
+  top: 3.3rem;
+  overflow: hidden;
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+  font-style: italic;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.episode,
+.episodeOn {
+  position: absolute;
+  top: 0;
+  height: 3.3rem;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.episodeBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(1.75rem - 3px);
+  height: 7px;
+  background: var(--red-ink);
+  opacity: 0.55;
+  border-radius: 1px;
+}
+
+.episodeOn .episodeBar {
+  top: calc(1.75rem - 5px);
+  height: 11px;
+  opacity: 1;
+}
+
+.episode:hover .episodeBar {
+  opacity: 0.85;
+}
+
+/* a name starts at its bar (the last one ends there), so the first and last stay inside the line */
+.episodeName,
+.episodeNameEnd {
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  font-family: var(--font-name);
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.episodeNameEnd {
+  left: auto;
+  right: 0;
+}
+
+.episodeName b,
+.episodeNameEnd b {
+  font-weight: 700;
+  color: var(--ink-muted);
+}
+
+/* every other episode named under the line, where they stand close */
+.episode:nth-of-type(even) .episodeName,
+.episodeOn:nth-of-type(even) .episodeName {
+  top: 2.15rem;
+}
+
+.episodeOn .episodeName,
+.episodeOn .episodeName b,
+.episodeOn .episodeNameEnd,
+.episodeOn .episodeNameEnd b,
+.episode:hover .episodeName,
+.episode:hover .episodeNameEnd {
+  color: var(--red-ink);
+}
+
+.episode:focus-visible,
+.episodeOn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* ---------- the sheet and its card ---------- */
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(18rem, 27vw, 23rem);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+@media (max-width: 52rem) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.card {
+  position: sticky;
+  top: var(--space-4);
+}
+
+.kicker {
+  padding-top: var(--space-2);
+  border-top: 2px solid var(--red-ink);
+}
+
+.kicker {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.title {
+  margin-top: var(--space-1);
+  font-family: var(--font-name);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about {
+  margin-top: var(--space-1);
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+/* the steps as the record's life line: the hour on the left, a fine line with a square mark, the step beside it */
+.steps {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+}
+
+.step,
+.stepOn {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5.2rem 0.9rem minmax(0, 1fr);
+  width: 100%;
+  padding: 0.3rem 0;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* the line through the marks */
+.step::before,
+.stepOn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(5.2rem + 0.45rem);
+  border-left: 1px solid var(--rule-strong);
+}
+
+.steps li:first-child .step::before,
+.steps li:first-child .stepOn::before {
+  top: 0.75rem;
+}
+
+.steps li:last-child .step::before,
+.steps li:last-child .stepOn::before {
+  bottom: calc(100% - 0.75rem);
+}
+
+.stepWhen {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0.5rem;
+  text-align: right;
+}
+
+.stepTime {
+  font-family: var(--font-name);
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.stepDay {
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+}
+
+.stepMark {
+  position: relative;
+  z-index: 1;
+  justify-self: center;
+  width: 7px;
+  height: 7px;
+  margin-top: 0.42rem;
+  background: var(--surface);
+  border: 1px solid var(--ink);
+}
+
+.stepOn .stepMark {
+  background: var(--red-ink);
+  border-color: var(--red-ink);
+}
+
+.stepOn .stepTime {
+  color: var(--red-ink);
+}
+
+.stepTextShort,
+.stepText {
+  align-self: start;
+  padding-left: 0.35rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.stepTextShort {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 1.5em;
+  overflow: hidden;
+  color: var(--ink-muted);
+}
+
+/* what the map shows that the book does not say: small, under the step, each point a line of its own */
+.stepNotes {
+  display: block;
+  margin-top: var(--space-2);
+  padding: var(--space-2) 0 0;
+  border-top: 1px dotted var(--rule-strong);
+}
+
+.stepNotesHead {
+  display: block;
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.stepNote {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--ink-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.step:hover .stepTextShort {
+  color: var(--ink);
+}
+
+.step:focus-visible,
+.stepOn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.stepNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.navButton {
+  height: 2rem;
+  padding: 0 0.75rem;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.navButton:hover:not(:disabled) {
+  border-color: var(--ink);
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.navCount {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+/* the facts, label over value on hairline rules, as in the record popup */
+.facts {
+  margin-top: var(--space-3);
+}
+
+.fact {
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--rule);
+}
+
+.factLabel {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+.factList {
+  margin: 0.15rem 0 0;
+  padding-left: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.factText {
+  margin-top: 0.15rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.people {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+}
+
+.people li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.5rem;
+  padding: 0.1rem 0;
+}
+
+.person,
+.personPlain {
+  font-family: var(--font-name);
+  font-size: 0.9375rem;
+}
+
+.person {
+  color: var(--red-ink);
+  text-decoration: none;
+}
+
+.person:hover {
+  text-decoration: underline;
+}
+
+.personNote {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+.source {
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.source a {
+  color: var(--red-ink);
+}
+
+.credits {
+  margin-top: var(--space-3);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+/* ---------- one screen ----------
+   Where the window is wide and tall enough the page ends at its foot: the header and the summer take what they
+   need, the sheet and the card share the rest, the sheet's frame takes the shape of its room, and only the card
+   scrolls, inside itself, when an episode has much to say */
+@media (min-width: 52rem) and (min-height: 32rem) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    height: var(--fill-h, calc(100dvh - 5rem));
+  }
+
+  .layout {
+    flex: 1 1 0;
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .sheetColumn {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+  }
+
+  .room {
+    flex: 1 1 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .room .sheetWrap,
+  .room .sheet {
+    height: 100%;
+  }
+
+  .card {
+    position: static;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: var(--space-2);
+    scrollbar-width: thin;
+  }
+}
+
+/* ---------- forces and units in the text ---------- */
+
+/* a number of men, on its force's colour (the battalion's own in red); a count of the dead or taken in bold */
+.force {
+  padding: 0 0.18em;
+  border-radius: 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.force[data-f='it'] {
+  background: color-mix(in srgb, var(--force-it) 20%, transparent);
+}
+
+.force[data-f='ndh'] {
+  background: color-mix(in srgb, var(--force-ndh) 22%, transparent);
+}
+
+.force[data-f='cet'] {
+  background: color-mix(in srgb, var(--force-cet) 22%, transparent);
+}
+
+.force[data-f='de'] {
+  background: color-mix(in srgb, var(--force-de) 22%, transparent);
+}
+
+.force[data-f='own'] {
+  background: color-mix(in srgb, var(--red-ink) 14%, transparent);
+}
+
+.force[data-f='n'] {
+  font-weight: 600;
+}
+
+/* while a region's ground is on its way */
+.loading {
+  display: grid;
+  place-items: center;
+  min-height: 20rem;
+  color: var(--ink-muted);
+  font-family: var(--font-name);
+  font-style: italic;
+}
