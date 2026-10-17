@@ -6,6 +6,7 @@ import { project } from '../projection'
 import base from '../mapa.module.css'
 import styles from './bataljon.module.css'
 import { BETWEEN, EPISODES, SOURCE, type Episode, type Force, type LL, type Mark, type Pos, type Region, type Side, type Step } from './episodes'
+import { lightOf, seasonOf, type Phase } from './light'
 
 // A battalion's war as the book tells it, episode by episode: a close-up sheet in the main map's hand (ink on paper,
 // the unit in red), the episode's card beside it, and the episodes along the months above. The sheet is in
@@ -566,7 +567,50 @@ const KEY_ROWS: [ReactNode, string][] = [
   [<path key="c" d="M2.4 -2.6l5.2 5.2m0 -5.2l-5.2 5.2M12.4 -2.6l5.2 5.2m0 -5.2l-5.2 5.2" className={styles.cut} />, 'porušena pruga, prekopana cesta'],
   [<g key="r"><path d="M0 0H20" className={styles.keyRailCase} /><path d="M0 0H20" className={styles.keyRailFill} /></g>, 'pruga'],
   [<g key="h"><path d="M0 0H20" className={styles.keyContour} /></g>, 'izohipse na 50 m'],
+  [<g key="l" transform="translate(10 0) scale(0.62)"><PhaseSign phase="night" /></g>, 'doba dana po satu ili rečima knjige'],
 ]
+
+const SEASON_CLASS = {
+  summer: styles.seasonSummer, earlyAutumn: styles.seasonEarlyAutumn, autumn: styles.seasonAutumn, lateAutumn: styles.seasonLateAutumn,
+}
+// the hours that shade the sheet (the day's light leaves it as it is); each layer fades in and out on its own
+const LIGHTS: Phase[] = ['night', 'dawn', 'golden', 'dusk']
+const LIGHT_CLASS: Record<Phase, string> = {
+  night: styles.lightNight, dawn: styles.lightDawn, golden: styles.lightGolden, dusk: styles.lightDusk, day: '',
+}
+
+// The step's light by the date in the title block: a moon, the sun high, low, or half over the horizon (rising and
+// setting are told apart by a small arrow). Drawn about (0, 0), some 16 units across
+function PhaseSign({ phase }: { phase: Phase }) {
+  if (phase === 'night') return <path d="M2.5 -6.5A6.6 6.6 0 1 0 6.4 4.3A5.2 5.2 0 1 1 2.5 -6.5Z" className={styles.phaseFill} />
+  if (phase === 'day') {
+    return (
+      <g className={styles.phaseLine}>
+        <circle r={3.2} />
+        {[0, 45, 90, 135, 180, 225, 270, 315].map(a => (
+          <path key={a} d="M0 -5.2V-7.4" transform={`rotate(${a})`} />
+        ))}
+      </g>
+    )
+  }
+  if (phase === 'golden') {
+    return (
+      <g className={styles.phaseLine}>
+        <path d="M-7.5 4.5H7.5" />
+        <circle cy={-0.6} r={3} />
+        {[-60, -30, 0, 30, 60].map(a => <path key={a} d="M0 -4.6V-6.3" transform={`translate(0 -0.6) rotate(${a})`} />)}
+      </g>
+    )
+  }
+  return (
+    <g className={styles.phaseLine}>
+      <path d="M-7.5 2.5H7.5" />
+      <path d="M-3.6 2.5A3.6 3.6 0 0 1 3.6 2.5" />
+      {[-50, 0, 50].map(a => <path key={a} d="M0 -2.4V-4" transform={`translate(0 2.5) rotate(${a}) translate(0 -2.6)`} />)}
+      <path d={phase === 'dawn' ? 'M5.6 -3.2l1.6 -1.8 1.6 1.8' : 'M5.6 -5l1.6 1.8 1.6 -1.8'} />
+    </g>
+  )
+}
 
 const TAB_W = 112, TAB_H = 22, KEY_W = 196, KEY_ROW = 13
 
@@ -760,6 +804,8 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
 
   // the title block: the battalion, its brigade, then the step's day large and its hour
   const when = step.time ?? step.when ?? ''
+  const light = lightOf(ep, si)
+  const season = seasonOf(step.date)
   const titleW = 268
   const titleBox: Box = [TITLE_RIGHT - titleW, TITLE_TOP - 6, TITLE_RIGHT + 6, TITLE_TOP + 86]
   // the country in small goes to the corner this step's marks leave emptiest: bottom right, else top left (under the
@@ -819,13 +865,30 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
               <feDisplacementMap in="SourceGraphic" in2="grain" scale="0.8" xChannelSelector="R" yChannelSelector="G" />
             </filter>
             <clipPath id="bat-inside"><rect x={INNER} y={INNER} width={W - 2 * INNER} height={H - 2 * INNER} /></clipPath>
+            {/* the low sun's light from the side it stands on: in the east at dawn, in the west at dusk */}
+            <linearGradient id="bat-dawn" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" className={styles.dawnWest} /><stop offset="1" className={styles.dawnEast} />
+            </linearGradient>
+            <linearGradient id="bat-dusk" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" className={styles.duskWest} /><stop offset="1" className={styles.duskEast} />
+            </linearGradient>
           </defs>
           <rect width={W} height={H} className={base.paper} />
+          {/* the season, by the step's month: the paper yellows through the autumn */}
+          <rect width={W} height={H} className={`${styles.season} ${SEASON_CLASS[season]}`} />
           <g clipPath="url(#bat-inside)">
             <g filter="url(#bat-ink)">
               <g transform={ground} style={groundStyle(v.z)}><Ground area={area} t={t} /></g>
             </g>
             <g className={base.lettering}>{labels}</g>
+            {/* the light of the hour over the ground and its names, under the units, which stay legible */}
+            <g aria-hidden="true">
+              {LIGHTS.map(p => (
+                <rect key={p} width={W} height={H} className={`${styles.light} ${LIGHT_CLASS[p]}`}
+                  fill={p === 'dawn' ? 'url(#bat-dawn)' : p === 'dusk' ? 'url(#bat-dusk)' : undefined}
+                  style={{ opacity: light?.phase === p ? 1 : 0 }} />
+              ))}
+            </g>
             <g className={base.lettering} filter="url(#bat-ink)">{marks}</g>
             <MapKey open={keyOpen} onToggle={toggleKey} />
             <Locator at={at} x={locBox[0]} y={locBox[1]} />
@@ -835,6 +898,13 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
               <text x={TITLE_RIGHT} y={TITLE_TOP + 25} textAnchor="end" fontSize={9.6} letterSpacing="0.06em">PRVE LIČKE PROLETERSKE BRIGADE</text>
               <text x={TITLE_RIGHT} y={TITLE_TOP + 52} textAnchor="end" fontSize={25} letterSpacing="0.02em" className={styles.titleDate}>{step.date}</text>
               {when && <text x={TITLE_RIGHT} y={TITLE_TOP + 66} textAnchor="end" fontSize={10.5} className={step.time ? styles.titleTime : styles.titleWhen}>{when}</text>}
+              {light && (
+                <g transform={`translate(${titleBox[0] + 20} ${TITLE_TOP + 45})`} className={styles.phaseSign}>
+                  <title>{light.why}</title>
+                  <circle r={10} className={styles.phaseHit} />
+                  <PhaseSign phase={light.phase} />
+                </g>
+              )}
               <ScaleBar x={TITLE_RIGHT - 12} y={TITLE_TOP + 74} z={v.z} />
             </g>
           </g>
@@ -1043,6 +1113,7 @@ function Card({ ep, e, si, go }: { ep: Episode; e: number; si: number; go: (e: n
               <span className={styles.stepMark} aria-hidden="true" />
               <span className={i === si ? styles.stepText : styles.stepTextShort}>
                 {marked(s.text, ep.foe)}
+                {i === si && lightOf(ep, i) ? <span className={styles.stepLight}>{lightOf(ep, i)!.why}</span> : null}
                 {i === si && s.notes?.length ? (
                   <span className={styles.stepNotes}>
                     <span className={styles.stepNotesHead}>Procena na karti</span>

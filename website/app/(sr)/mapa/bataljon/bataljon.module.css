@@ -1048,3 +1048,122 @@
   font-family: var(--font-name);
   font-style: italic;
 }
+
+/* ---------- the hour and the season ----------
+   The light of the step's hour lies over the ground and its names, under the units; the season tints the paper. Both
+   are multiplied into what lies under them, so the ink stays ink, and fade from one step to the next. */
+
+.page {
+  --season-early-autumn: #e9c98c;
+  --season-autumn: #d79d62;
+  --season-late-autumn: #9b9386;
+  --light-night: #1d2b55;
+  --light-low-sun: #ef9f74;
+  --light-golden: #efb35a;
+}
+
+:global([data-theme='dark']) .page {
+  --light-night: #4d5f9e;
+  --light-low-sun: #e9a483;
+  --light-golden: #f0c07a;
+}
+
+.season,
+.light {
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.season {
+  transition: fill 0.9s ease, fill-opacity 0.9s ease;
+}
+
+.seasonSummer {
+  fill: #fff;
+  fill-opacity: 0;
+}
+
+.seasonEarlyAutumn {
+  fill: var(--season-early-autumn);
+  fill-opacity: 0.16;
+}
+
+.seasonAutumn {
+  fill: var(--season-autumn);
+  fill-opacity: 0.2;
+}
+
+.seasonLateAutumn {
+  fill: var(--season-late-autumn);
+  fill-opacity: 0.22;
+}
+
+.light {
+  transition: opacity 1.1s ease;
+}
+
+.lightNight {
+  fill: var(--light-night);
+  fill-opacity: 0.4;
+}
+
+.lightGolden {
+  fill: var(--light-golden);
+  fill-opacity: 0.18;
+}
+
+/* dawn: the night still in the west, the sun coming up in the east; dusk the other way round */
+.dawnWest,
+.duskEast {
+  stop-color: var(--light-night);
+  stop-opacity: 0.32;
+}
+
+.dawnEast,
+.duskWest {
+  stop-color: var(--light-low-sun);
+  stop-opacity: 0.32;
+}
+
+:global([data-theme='dark']) .lightNight {
+  fill-opacity: 0.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .season,
+  .light {
+    transition: none;
+  }
+}
+
+/* the sun or the moon by the date: what the shading is read from, on hover */
+.phaseSign {
+  pointer-events: all;
+  cursor: help;
+}
+
+.phaseHit {
+  fill: transparent;
+}
+
+.phaseLine {
+  fill: none;
+  stroke: var(--red-ink);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.phaseFill {
+  fill: var(--red-ink);
+}
+
+/* and the same in words, under the step's text in the card */
+.stepLight {
+  display: block;
+  margin-top: var(--space-2);
+  color: var(--ink-muted);
+  font-size: 0.76rem;
+  font-style: italic;
+  line-height: 1.45;
+}
