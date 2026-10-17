@@ -685,6 +685,15 @@ export const sources: PdfSource[] = [
     description: 'Pali i umrli borci brigade od 7. septembra 1942. do 6. decembra 1944: rođenje, zanimanje, kada su stupili u brigadu, dužnost, gde i kada su pali (str. 247–312)'
   },
   {
+    id: '8-banijska-kadar',
+    title: 'Osma banijska NOU brigada — pregled komandnog kadra',
+    author: 'Ljuban Đurić',
+    pdfPath: '/pdfs/8-banijska-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/8-banijska-kadar.jpg',
+    brigadeName: '8. banijska brigada',
+    description: 'Štab brigade, Politodel i štabovi pet bataljona, po dužnostima (str. 244–246)'
+  },
+  {
     id: 'borci-sutjeske-3-dalmatinska',
     title: 'Borci Sutjeske — borci brigade na Sutjesci',
     author: 'Viktor Kučan',
@@ -998,6 +1007,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/kalnicki-odred.jpg',
     brigadeName: 'Kalnički partizanski odred',
     description: 'Spisak boraca Kalničkoga partizanskog odreda, poginulih i preživelih (str. 311 i dalje)'
+  },
+  {
+    id: 'kalnicki-odred-kadar',
+    title: 'Kalnički partizanski odred — rukovodioci',
+    author: 'Žarko Milićević',
+    pdfPath: '/pdfs/kalnicki-odred-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/kalnicki-odred-kadar.jpg',
+    brigadeName: 'Kalnički partizanski odred',
+    description: 'Rukovodioci prvih oružanih grupa i formacija na Kalniku 1941–1942, štaba odreda, njegovih bataljona, četa i vodova, s vremenom kad je ko bio na dužnosti (str. 282–303, 305)'
   },
   {
     id: 'posavsko-trebavski-odred',
@@ -1432,6 +1450,15 @@ export const sources: PdfSource[] = [
     description: 'Popis boraca i rukovodilaca brigade na dan formiranja u Hrašću 5. marta 1944. i popis poginulih boraca i rukovodilaca (str. 379–414)'
   },
   {
+    id: 'karlovacka-kadar',
+    title: 'Karlovačka udarna brigada — pregled komandnog kadra',
+    author: 'Josip Lulik Pepo, Đuro Zatezalo',
+    pdfPath: '/pdfs/karlovacka-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/karlovacka-kadar.jpg',
+    brigadeName: 'Karlovačka udarna brigada',
+    description: 'Štab brigade i štabovi četiri bataljona s vremenom kad je ko bio na dužnosti i šta je s kim bilo, komandiri, komesari i delegati četa i vodova, prištapske čete i vodovi, pozadina (str. 371–378)'
+  },
+  {
     id: '14-primorsko-goranska',
     title: '14. primorsko-goranska brigada — spisak poginulih boraca',
     author: 'Vladimir-Dušan Matetić',
@@ -1583,6 +1610,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/4-brigada-slavonije.jpg',
     brigadeName: '4. brigada Slavonije',
     description: 'Spisak poginulih boraca i rukovodilaca brigade (četa i dužnost, datum i mesto rođenja, datum i mesto pogibije) i spisak ranjenih (jedinica i dužnost, kada su ranjeni), prilozi 2 i 3 knjige (str. 164 i dalje)'
+  },
+  {
+    id: '4-brigada-slavonije-rukovodioci',
+    title: '4. NOU brigada Slavonije (Druga brodska brigada) — pregled rukovodilaca',
+    author: 'Stanko Obradović, Antun Miletić',
+    pdfPath: '/pdfs/4-brigada-slavonije-rukovodioci.pdf',
+    thumbnail: '/images/pdf-thumbs/4-brigada-slavonije-rukovodioci.jpg',
+    brigadeName: '4. brigada Slavonije',
+    description: 'Rukovodioci štaba brigade i prištapskih jedinica i četiri bataljona, od komandanta do vodnika, po dužnostima, s tim odakle su i kad su bili na dužnosti, i drugovi na raznim dužnostima u brigadi, prilog 1 knjige (str. 177–182)'
   },
   {
     id: '12-slavonska-zene',
@@ -2367,6 +2403,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/jb-odred-stabi.jpg',
     brigadeName: '',
     description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'banijski-odredi-kadar',
+    title: 'Banijski partizanski odredi — pregled starešinskog kadra',
+    author: 'Ljuban Đurić',
+    pdfPath: '/pdfs/banijski-odredi-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/banijski-odredi-kadar.jpg',
+    brigadeName: '',
+    description: 'Starešine banijskih partizanskih odreda 1941–1945 (str. 372–378): malih odreda i seoskih grupa boraca 1941, Banijskog partizanskog odreda i njegovih bataljona, udarnih bataljona, partizanskih četa i dva odreda Banije 1944, po dužnostima. Odredi nisu na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
     id: 'letalci-prekomorci-kader',

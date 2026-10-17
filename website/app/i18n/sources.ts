@@ -151,6 +151,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznami borcev in poveljnikov brigade: padli, tisti, katerih usoda ni znana, in preživeli (str. 479 in naprej)',
     'kalnicki-odred':
       'Seznam borcev Kalniškega partizanskega odreda, padlih in preživelih (str. 311 in naprej)',
+    'kalnicki-odred-kadar':
+      'Voditelji prvih oboroženih skupin in formacij na Kalniku 1941–1942, štaba odreda, njegovih bataljonov, čet in vodov, s časom, ko je kdo opravljal dolžnost (str. 282–303, 305)',
     'posavsko-trebavski-odred':
       'Seznam borcev odreda po občinah, iz katerih so prišli (str. 313 in naprej)',
     '8-kordunaska-divizija':
@@ -247,6 +249,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Borci odreda na dan ustanovitve, seznam padlih in umrlih borcev in starešin ter narodni heroji, ki so se borili v odredu, s fotografijami (str. 302–344)',
     'karlovacka':
       'Seznam borcev in starešin brigade na dan ustanovitve v Hrašću 5. marca 1944 in seznam padlih borcev in starešin (str. 379–414)',
+    'karlovacka-kadar':
+      'Štab brigade in štabi štirih bataljonov s časom, ko je kdo opravljal dolžnost, in kaj je bilo z njim, komandirji, komisarji in delegati čet in vodov, čete in vodi pri štabu, zaledje (str. 371–378)',
     '14-primorsko-goranska':
       'Seznam padlih borcev brigade z rojstvom, dolžnostjo in krajem smrti (str. 227–264)',
     '22-divizija':
@@ -289,6 +293,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam poveljnikov in borcev brigade, samo imena (str. 195–205)',
     '8-banijska-poginuli':
       'Padli in umrli borci brigade od 7. septembra 1942 do 6. decembra 1944: rojstvo, poklic, kdaj so prišli v brigado, dolžnost, kje in kdaj so padli (str. 247–312)',
+    '8-banijska-kadar':
+      'Štab brigade, politodel in štabi petih bataljonov, po dolžnostih (str. 244–246)',
     'macvanski-odred':
       'Seznam borcev Mačvanskega (Podrinjskega) partizanskega odreda, prvi del (julij 1941 – marec 1942): po krajih, iz katerih so vstopili v odred, s podatki o vsakem (besedilo na znaci.org, brez skenirane knjige; drugi del ni objavljen)',
     'posavski-odred':
@@ -463,6 +469,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Komandirji in politični komisarji čet po bataljonih, življenjepisi narodnih herojev brigade in seznam v vojni padlih borcev, isti kot na znaci.org, tukaj s skenirano knjigo',
     '4-brigada-slavonije':
       'Seznam padlih borcev in starešin brigade (četa in dolžnost, datum in kraj rojstva, datum in kraj smrti) ter seznam ranjenih (enota in dolžnost, kdaj so bili ranjeni), prilogi 2 in 3 knjige (str. 164 in naprej)',
+    '4-brigada-slavonije-rukovodioci':
+      'Voditelji štaba brigade in enot pri štabu ter štirih bataljonov, od komandanta do vodnika, po dolžnostih, s tem, od kod so bili in kdaj so opravljali dolžnost, ter tovariši na raznih dolžnostih v brigadi, priloga 1 knjige (str. 177–182)',
     '9-dalmatinska-divizija':
       'Borci in starešine divizije, ki so padli ali izginili v bojih od 11. februarja do 15. aprila 1943, imena z očetovim imenom (str. 121–126)',
     '3-dalmatinska-poginuli':
@@ -555,6 +563,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Poveljniška sestava 15. divizije NOV in POS (str. 583–584): komandanti, politični komisarji, njihovi namestniki in pomočniki ter načelniki štaba, vsak s časom, ko je bil na dolžnosti. Divizije ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'jb-odred-stabi':
       'Štabi Jeseniško-bohinjskega odreda, njegovih treh bataljonov in šolskega taborišča, avgust 1944 – maj 1945 (str. 354–356): komandanti, politični komisarji, njihovi pomočniki in namestniki ter načelnik štaba, vsak s časom, ko je bil na dolžnosti. Odreda ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'banijski-odredi-kadar':
+      'Starešine banijskih partizanskih odredov 1941–1945 (str. 372–378): malih odredov in vaških skupin borcev 1941, Banijskega partizanskega odreda in njegovih bataljonov, udarnih bataljonov, partizanskih čet in dveh odredov Banije 1944, po dolžnostih. Odredov ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'letalci-prekomorci-kader':
       'Vodilni kader 1. in 2. lovske eskadrilje NOVJ, letalskega detašmana NOVJ v Alžiriji in 1. letalskega polka (str. 322–325): čin in dolžnost vsakega, s časom, ko jo je opravljal. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
@@ -719,6 +729,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Списоци на борците и старешините на бригадата: загинати, оние чија судбина остана неутврдена, и преживеани (стр. 479 и натаму)',
     'kalnicki-odred':
       'Список на борците на Калничкиот партизански одред, загинати и преживеани (стр. 311 и натаму)',
+    'kalnicki-odred-kadar':
+      'Раководителите на првите вооружени групи и формации на Калник 1941–1942, на штабот на одредот, неговите баталјони, чети и водови, со времето кога кој ја вршел должноста (стр. 282–303, 305)',
     'posavsko-trebavski-odred':
       'Список на борците на одредот по општините од кои дошле (стр. 313 и натаму)',
     '8-kordunaska-divizija':
@@ -815,6 +827,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Борците на одредот на денот на формирањето, списокот на загинатите и умрените борци и раководители и народните херои што се бореле во одредот, со фотографии (стр. 302–344)',
     'karlovacka':
       'Список на борците и раководителите на бригадата на денот на формирањето во Храшќе на 5 март 1944 и список на загинатите борци и раководители (стр. 379–414)',
+    'karlovacka-kadar':
+      'Штабот на бригадата и штабовите на четирите баталјони со времето кога кој ја вршел должноста и што станало со него, командирите, комесарите и делегатите на четите и водовите, четите и водовите при штабот, позадината (стр. 371–378)',
     '14-primorsko-goranska':
       'Список на загинатите борци на бригадата, со раѓањето, должноста и местото на загинувањето (стр. 227–264)',
     '22-divizija':
@@ -857,6 +871,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на раководителите и борците на бригадата, само имиња (стр. 195–205)',
     '8-banijska-poginuli':
       'Загинатите и умрените борци на бригадата од 7 септември 1942 до 6 декември 1944: раѓање, занимање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 247–312)',
+    '8-banijska-kadar':
+      'Штабот на бригадата, политоделот и штабовите на петте баталјони, по должности (стр. 244–246)',
     'macvanski-odred':
       'Список на борците на Мачванскиот (Подринскиот) партизански одред, прв дел (јули 1941 – март 1942): по местата од кои стапиле во одредот, со податоци за секого (текст на znaci.org, без скенирана книга; вториот дел не е објавен)',
     'posavski-odred':
@@ -1031,6 +1047,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Командирите и политичките комесари на четите по баталјони, биографиите на народните херои на бригадата и списокот на борците загинати во војната, истиот како на znaci.org, тука со скенираната книга',
     '4-brigada-slavonije':
       'Список на загинатите борци и старешини на бригадата (чета и должност, датум и место на раѓање, датум и место на загинувањето) и список на ранетите (единица и должност, кога биле ранети), прилозите 2 и 3 од книгата (стр. 164 и натаму)',
+    '4-brigada-slavonije-rukovodioci':
+      'Раководителите на штабот на бригадата и на единиците при штабот и на четирите баталјони, од командантот до водникот, по должности, со тоа од каде биле и кога ја вршеле должноста, и другарите на разни должности во бригадата, прилогот 1 од книгата (стр. 177–182)',
     '9-dalmatinska-divizija':
       'Борците и старешините на дивизијата што загинале или исчезнале во борбите од 11 февруари до 15 април 1943, имиња со татковото име (стр. 121–126)',
     '3-dalmatinska-poginuli':
@@ -1123,6 +1141,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Командниот состав на 15. дивизија на НОВ и ПО на Словенија (стр. 583–584): командантите, политичките комесари, нивните заменици и помошници и началниците на штабот, секој со времето кога бил на должноста. Дивизијата не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'jb-odred-stabi':
       'Штабовите на Јесеничко-бохињскиот одред, на неговите три баталјони и на школскиот логор, август 1944 – мај 1945 (стр. 354–356): командантите, политичките комесари, нивните помошници и заменици и началникот на штабот, секој со времето кога бил на должноста. Одредот не е на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'banijski-odredi-kadar':
+      'Старешините на банискиот партизански одреди 1941–1945 (стр. 372–378): на малите одреди и селските групи борци од 1941, на Банискиот партизански одред и неговите баталјони, ударните баталјони, партизанските чети и двата одреди на Банија од 1944, по должности. Одредите не се на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'letalci-prekomorci-kader':
       'Раководниот кадар на 1. и 2. ловечка ескадрила на НОВЈ, на воздухопловниот одред на НОВЈ во Алжир и на 1. воздухопловен полк (стр. 322–325): чинот и должноста на секој, со времето кога ја вршел. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
@@ -1286,6 +1306,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Lists of the brigade’s Partisans and officers: those killed, those whose fate remains unknown, and the survivors (pp. 479 ff.)',
     'kalnicki-odred':
       'List of the members of the Kalnik Partisan Detachment, killed and surviving (pp. 311 ff.)',
+    'kalnicki-odred-kadar':
+      'The leaders of the first armed groups and formations on Kalnik in 1941–1942, of the detachment’s staff, its battalions, companies and platoons, with the time each held the post (pp. 282–303, 305)',
     'posavsko-trebavski-odred':
       'List of the detachment’s members by the municipality they came from (pp. 313 ff.)',
     '8-kordunaska-divizija':
@@ -1382,6 +1404,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The detachment’s men on the day it was formed, its fallen and dead soldiers and officers, and the People’s Heroes who fought in it, with their photographs (pp. 302–344)',
     'karlovacka':
       'The brigade’s soldiers and officers on the day it was formed at Hrašće, 5 March 1944, and its fallen soldiers and officers (pp. 379–414)',
+    'karlovacka-kadar':
+      'The brigade staff and the staffs of its four battalions with the time each held the post and what became of him, the company and platoon commanders, commissars and delegates, the companies and platoons at the staff, the rear (pp. 371–378)',
     '14-primorsko-goranska':
       'The brigade’s fallen, with their birth, duty and where they fell (pp. 227–264)',
     '22-divizija':
@@ -1424,6 +1448,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s officers and fighters, names only (pp. 195–205)',
     '8-banijska-poginuli':
       'The brigade’s fallen and dead, 7 September 1942 to 6 December 1944: birth, occupation, when they joined, duty, where and when they fell (pp. 247–312)',
+    '8-banijska-kadar':
+      'The brigade staff, its political department and the staffs of its five battalions, by duty (pp. 244–246)',
     'macvanski-odred':
       'The fighters of the Mačva (Podrinje) Partisan Detachment, part one (July 1941 – March 1942), by the place they joined from, with details of each (a text on znaci.org, no scan of the book; part two is not published)',
     'posavski-odred':
@@ -1598,6 +1624,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Company commanders and political commissars by battalion, the lives of the brigade’s People’s Heroes and the list of its Partisans killed in the war, the same as on znaci.org, here with the scanned book',
     '4-brigada-slavonije':
       'The brigade’s Partisans and officers who were killed (company and duty, date and place of birth, date and place of death) and those who were wounded (unit and duty, when they were wounded), appendices 2 and 3 of the book (pp. 164 ff.)',
+    '4-brigada-slavonije-rukovodioci':
+      'The leaders of the brigade staff and its units and of its four battalions, from the commander to the platoon sergeants, by duty, with where they came from and when they held the post, and the comrades in other duties in the brigade, appendix 1 of the book (pp. 177–182)',
     '9-dalmatinska-divizija':
       'The division’s Partisans and officers killed or missing in the fighting from 11 February to 15 April 1943, names with the father’s name (pp. 121–126)',
     '3-dalmatinska-poginuli':
@@ -1690,6 +1718,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The command of the 15th Division of the Slovene partisan army (pp. 583–584): commanders, political commissars, their deputies and assistants, and the chiefs of staff, each with the dates he held the post. The division is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'jb-odred-stabi':
       'The staffs of the Jesenice-Bohinj Detachment, its three battalions and its school camp, August 1944 – May 1945 (pp. 354–356): commanders, political commissars, their assistants and deputies, and the chief of staff, each with the dates he held the post. The detachment is not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'banijski-odredi-kadar':
+      'The officers of the Banija partisan detachments, 1941–1945 (pp. 372–378): of the small detachments and village groups of 1941, the Banija Partisan Detachment and its battalions, the shock battalions, the partisan companies and the two Banija detachments of 1944, by duty. The detachments are not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'letalci-prekomorci-kader':
       'The leading officers of the 1st and 2nd fighter squadrons of the NOVJ, of the NOVJ air detachment in Algeria and of the 1st air regiment (pp. 322–325): each man’s rank and duty, with the dates he held it. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'zene-1-dalmatinska':

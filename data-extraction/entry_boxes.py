@@ -96,12 +96,17 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '11-dalmatinska-stabovi.pdf',   # the 11. dalmatinska's staffs and commands, the same
                   '34-divizija-kadar.pdf',   # the 34. divizija's command, a name boxed where it runs on
                   '32-divizija-kadar.pdf',   # the 32. divizija's command, the same
+                  '8-banijska-kadar.pdf',   # the 8. banijska's command, the same
+                  'karlovacka-kadar.pdf',   # the Karlovačka's command, a man boxed at his name
+                  'kalnicki-odred-kadar.pdf',   # the Kalnički odred's leaders, the same
+                  '4-brigada-slavonije-rukovodioci.pdf',   # the 4. brigada Slavonije's leaders, a man boxed at his name
                   '4-pomorski-sektor-stab.pdf',   # the IV POS's staff, a man boxed at his name
                   '6-vojvodjanska-stabovi.pdf',   # the 6. vojvođanska's staffs: names run on under each duty
                   '4-banijska-starjesine.pdf',   # the 4. banijska's officers: names run on under each duty
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
                   '15-divizija-stabi.pdf',   # the 15. divizija's command: a man boxed at his first post's row
                   'jb-odred-stabi.pdf',   # the Jeseniško-bohinjski odred's staffs: a man boxed at his first post
+                  'banijski-odredi-kadar.pdf',   # the Banija odredi's officers: a man boxed at his first post's name
                   'letalci-prekomorci-kader.pdf',   # the squadrons' and detachment's leaders: the surname's word
                   '3-banijska.pdf',   # 3. banijska: names only, three columns that stand anywhere
                   '1-tenkovski-bataljon.pdf',   # Prvi tenkovski bataljon: two narrow columns left of the page's middle

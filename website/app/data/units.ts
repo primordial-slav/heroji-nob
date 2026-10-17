@@ -454,11 +454,11 @@ export const units: Unit[] = [
     id: '8-banijska-brigada',
     name: '8. banijska brigada',
     nameEn: '8th Banija Brigade',
-    description: 'Formirana 7. septembra 1942. u Obljaju kod Gline. Borci brigade u bici na Sutjesci, maja i juna 1943, i poginuli i umrli borci brigade.',
+    description: 'Formirana 7. septembra 1942. u Obljaju kod Gline. Borci brigade u bici na Sutjesci, maja i juna 1943, poginuli i umrli borci brigade i komandni sastav.',
     image: '/images/8-banijska-brigada.jpg',
-    soldierCount: 1546,
+    soldierCount: 1658,
     dataFile: '/8-banijska-soldiers.json',
-    pdfFiles: ['/pdfs/borci-sutjeske-8-banijska.pdf', '/pdfs/8-banijska-poginuli.pdf']
+    pdfFiles: ['/pdfs/borci-sutjeske-8-banijska.pdf', '/pdfs/8-banijska-poginuli.pdf', '/pdfs/8-banijska-kadar.pdf']
   },
   {
     id: '3-dalmatinska-brigada',
@@ -594,11 +594,11 @@ export const units: Unit[] = [
     id: 'kalnicki-odred',
     name: 'Kalnički partizanski odred',
     nameEn: 'Kalnik Partisan Detachment',
-    description: 'Formiran 10. oktobra 1942. u Bijeloj kod Daruvara. Borci odreda, poginuli i preživeli.',
+    description: 'Formiran 10. oktobra 1942. u Bijeloj kod Daruvara. Borci odreda, poginuli i preživeli, i rukovodioci odreda i njegovih jedinica.',
     image: '/images/kalnicki-odred.jpg',
-    soldierCount: 3276,
+    soldierCount: 3484,
     dataFile: '/kalnicki-odred-soldiers.json',
-    pdfFiles: ['/pdfs/kalnicki-odred.pdf']
+    pdfFiles: ['/pdfs/kalnicki-odred.pdf', '/pdfs/kalnicki-odred-kadar.pdf']
   },
   {
     id: 'posavsko-trebavski-odred',
@@ -954,11 +954,11 @@ export const units: Unit[] = [
     id: 'karlovacka-brigada',
     name: 'Karlovačka udarna brigada',
     nameEn: 'Karlovac Assault Brigade',
-    description: 'Formirana 5. marta 1944. u Hrašću kod Ozlja. Borci brigade na dan formiranja i poginuli.',
+    description: 'Formirana 5. marta 1944. u Hrašću kod Ozlja. Borci brigade na dan formiranja, poginuli i komandni sastav.',
     image: '/images/karlovacka-brigada.jpg',
-    soldierCount: 842,
+    soldierCount: 1270,
     dataFile: '/karlovacka-soldiers.json',
-    pdfFiles: ['/pdfs/karlovacka.pdf']
+    pdfFiles: ['/pdfs/karlovacka.pdf', '/pdfs/karlovacka-kadar.pdf']
   },
   {
     id: '14-primorsko-goranska',
@@ -1064,11 +1064,11 @@ export const units: Unit[] = [
     id: '4-brigada-slavonije',
     name: '4. brigada Slavonije',
     nameEn: '4th Slavonia Brigade',
-    description: 'Formirana 28. septembra 1944. u Podravskoj Slatini kao 4. brigada 12. divizije, zvana Druga brodska. Poginuli i ranjeni borci brigade.',
+    description: 'Formirana 28. septembra 1944. u Podravskoj Slatini kao 4. brigada 12. divizije, zvana Druga brodska. Poginuli i ranjeni borci brigade i njeni rukovodioci.',
     image: '/images/4-brigada-slavonije.jpg',
-    soldierCount: 404,
+    soldierCount: 689,
     dataFile: '/4-brigada-slavonije-soldiers.json',
-    pdfFiles: ['/pdfs/4-brigada-slavonije.pdf']
+    pdfFiles: ['/pdfs/4-brigada-slavonije.pdf', '/pdfs/4-brigada-slavonije-rukovodioci.pdf']
   },
   {
     id: '12-slavonska-brigada',

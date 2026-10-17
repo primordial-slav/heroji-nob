@@ -207,7 +207,7 @@ const sl: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8. banijska brigada',
     description:
-      'Ustanovljena 7. septembra 1942 v Obljaju pri Glini. Borci brigade v bitki na Sutjeski, maja in junija 1943, ter padli in umrli borci brigade.',
+      'Ustanovljena 7. septembra 1942 v Obljaju pri Glini. Borci brigade v bitki na Sutjeski, maja in junija 1943, padli in umrli borci brigade ter poveljniški sestav.',
   },
   '3-dalmatinska-brigada': {
     name: '3. dalmatinska brigada',
@@ -277,7 +277,7 @@ const sl: Record<string, UnitText> = {
   'kalnicki-odred': {
     name: 'Kalniški partizanski odred',
     description:
-      'Ustanovljen 10. oktobra 1942 v Bijeli pri Daruvarju. Borci odreda, padli in preživeli.',
+      'Ustanovljen 10. oktobra 1942 v Bijeli pri Daruvarju. Borci odreda, padli in preživeli, ter voditelji odreda in njegovih enot.',
   },
   'posavsko-trebavski-odred': {
     name: 'Posavsko-trebavski partizanski odred',
@@ -457,7 +457,7 @@ const sl: Record<string, UnitText> = {
   'karlovacka-brigada': {
     name: 'Karlovška udarna brigada',
     description:
-      'Ustanovljena 5. marca 1944 v Hrašću pri Ozlju. Borci brigade na dan ustanovitve in padli.',
+      'Ustanovljena 5. marca 1944 v Hrašću pri Ozlju. Borci brigade na dan ustanovitve, padli in poveljniški sestav.',
   },
   '14-primorsko-goranska': {
     name: '14. primorsko-goranska brigada',
@@ -512,7 +512,7 @@ const sl: Record<string, UnitText> = {
   '4-brigada-slavonije': {
     name: '4. brigada Slavonije',
     description:
-      'Ustanovljena 28. septembra 1944 v Podravski Slatini kot 4. brigada 12. divizije, imenovana Druga brodska. Padli in ranjeni borci brigade.',
+      'Ustanovljena 28. septembra 1944 v Podravski Slatini kot 4. brigada 12. divizije, imenovana Druga brodska. Padli in ranjeni borci brigade ter njeni voditelji.',
   },
   '12-slavonska-brigada': {
     name: '12. proletarska slavonska brigada',
@@ -964,7 +964,7 @@ const mk: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8-ма банијска бригада',
     description:
-      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, и загинатите и умрените борци на бригадата.',
+      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, загинатите и умрените борци на бригадата и командниот состав.',
   },
   '3-dalmatinska-brigada': {
     name: '3-та далматинска бригада',
@@ -1034,7 +1034,7 @@ const mk: Record<string, UnitText> = {
   'kalnicki-odred': {
     name: 'Калнички партизански одред',
     description:
-      'Формиран на 10 октомври 1942 во Бијела кај Дарувар. Борци на одредот, загинати и преживеани.',
+      'Формиран на 10 октомври 1942 во Бијела кај Дарувар. Борци на одредот, загинати и преживеани, и раководителите на одредот и неговите единици.',
   },
   'posavsko-trebavski-odred': {
     name: 'Посавско-требавски партизански одред',
@@ -1214,7 +1214,7 @@ const mk: Record<string, UnitText> = {
   'karlovacka-brigada': {
     name: 'Карловачка ударна бригада',
     description:
-      'Формирана на 5 март 1944 во Храшќе кај Озаљ. Борците на бригадата на денот на формирањето и загинатите.',
+      'Формирана на 5 март 1944 во Храшќе кај Озаљ. Борците на бригадата на денот на формирањето, загинатите и командниот состав.',
   },
   '14-primorsko-goranska': {
     name: '14-та приморско-горанска бригада',
@@ -1269,7 +1269,7 @@ const mk: Record<string, UnitText> = {
   '4-brigada-slavonije': {
     name: '4-та бригада на Славонија',
     description:
-      'Формирана на 28 септември 1944 во Подравска Слатина, како 4. бригада на 12. дивизија, наречена Втора бродска. Загинатите и ранетите борци на бригадата.',
+      'Формирана на 28 септември 1944 во Подравска Слатина, како 4. бригада на 12. дивизија, наречена Втора бродска. Загинатите и ранетите борци на бригадата и нејзините раководители.',
   },
   '12-slavonska-brigada': {
     name: '12-та пролетерска славонска бригада',
@@ -1723,7 +1723,7 @@ const en: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8th Banija Brigade',
     description:
-      'Formed on 7 September 1942 in Obljaj near Glina. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, and the brigade’s fallen and dead.',
+      'Formed on 7 September 1942 in Obljaj near Glina. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, the brigade’s fallen and dead, and its command.',
   },
   '3-dalmatinska-brigada': {
     name: '3rd Dalmatian Brigade',
@@ -1793,7 +1793,7 @@ const en: Record<string, UnitText> = {
   'kalnicki-odred': {
     name: 'Kalnik Partisan Detachment',
     description:
-      'Formed on 10 October 1942 at Bijela near Daruvar. Members of the detachment, those killed and the survivors.',
+      'Formed on 10 October 1942 at Bijela near Daruvar. Members of the detachment, those killed and the survivors, and the leaders of the detachment and its units.',
   },
   'posavsko-trebavski-odred': {
     name: 'Posavina-Trebava Partisan Detachment',
@@ -1973,7 +1973,7 @@ const en: Record<string, UnitText> = {
   'karlovacka-brigada': {
     name: 'Karlovac Assault Brigade',
     description:
-      'Formed on 5 March 1944 at Hrašće near Ozalj. Its men on the day it was formed, and its fallen.',
+      'Formed on 5 March 1944 at Hrašće near Ozalj. Its men on the day it was formed, its fallen, and its command.',
   },
   '14-primorsko-goranska': {
     name: '14th Primorje–Gorski Kotar Brigade',
@@ -2028,7 +2028,7 @@ const en: Record<string, UnitText> = {
   '4-brigada-slavonije': {
     name: '4th Slavonia Brigade',
     description:
-      'Formed on 28 September 1944 at Podravska Slatina, as the 4th Brigade of the 12th Division, called the 2nd Brod Brigade. The brigade’s fallen and wounded.',
+      'Formed on 28 September 1944 at Podravska Slatina, as the 4th Brigade of the 12th Division, called the 2nd Brod Brigade. The brigade’s fallen and wounded, and its leaders.',
   },
   '12-slavonska-brigada': {
     name: '12th Proletarian Slavonian Brigade',

@@ -65,11 +65,11 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 12. krajiška | Marjanović et al. | fallen ([168_7.pdf](https://znaci.org/00001/168_7.pdf), 39 pp.), survivors ([168_8.pdf](https://znaci.org/00001/168_8.pdf), 72 pp.) | [00001/168](https://znaci.org/00001/168.htm) |
 | 3. banijska | Jovo Borojević, *Sinovi Šamarice* | members (p. 195, 10 pp.) | [00003/447](https://znaci.org/00003/447.htm) |
 | 7. banijska | Ljuban Đurić | fallen | [00001/63](https://znaci.org/00001/63.htm) |
-| 8. banijska | Ljuban Đurić | fallen and died (p. 247, 66 pp.) | [00003/383](https://znaci.org/00003/383.htm) |
+| 8. banijska | Ljuban Đurić | fallen and died (p. 247, 66 pp.), the command (pp. 244-246; **done**, `8-banijska-kadar.pdf`) | [00003/383](https://znaci.org/00003/383.htm) |
 | 12. proleterska slavonska | Jovan Kokot | women (survived or fell), fallen: as web pages ([46_225](https://znaci.org/00001/46_225.htm), [46_226](https://znaci.org/00001/46_226.htm)) | [00001/46](https://znaci.org/00001/46.htm) |
-| 4. brigada Slavonije (2. brodska) | Obradović, Miletić | fallen and wounded (p. 164) | [00001/190](https://znaci.org/00001/190.htm) |
+| 4. brigada Slavonije (2. brodska) | Obradović, Miletić | fallen and wounded (p. 164), the leaders (pp. 177-182; **done**, `4-brigada-slavonije-rukovodioci.pdf`) | [00001/190](https://znaci.org/00001/190.htm) |
 | Osječka udarna | Zdravko B. Cvetković | leaders (p. 203; **done**, `osjecka-rukovodioci.pdf`), fallen (p. 207, 12 pp.), survivors (p. 219) | [00003/450](https://znaci.org/00003/450.htm) |
-| Karlovačka udarna | Lulik, Zatezalo | at formation 5. III 1944 (p. 379, 22 pp.), fallen (p. 401, 14 pp.) | [00003/546](https://znaci.org/00003/546.htm) |
+| Karlovačka udarna | Lulik, Zatezalo | at formation 5. III 1944 (p. 379, 22 pp.), fallen (p. 401, 14 pp.), the command (pp. 371-378; **done**, `karlovacka-kadar.pdf`) | [00003/546](https://znaci.org/00003/546.htm) |
 | 1. zagorska | Vladimir Hlaić, *Grebeni Ivančice* | fallen (p. 191) | [00003/625](https://znaci.org/00003/625.htm) |
 | 3. primorsko-goranska | Bogdan Mamula | staffs (p. 227; **done**, `3-primorsko-goranska-stabovi.pdf`), officers and medics (p. 234), fallen (p. 241, 19 pp.) | [00001/122](https://znaci.org/00001/122.htm) |
 | 14. primorsko-goranska | Vladimir-Dušan Matetić | fallen (p. 227, 38 pp.) | [00003/544](https://znaci.org/00003/544.htm) |
@@ -134,7 +134,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | Čačanski odred | Pantelić et al. | the fallen, narodni heroji | [00001/51](https://znaci.org/00001/51.htm) |
 | Toplički odred | Dragoljub Dinić | at formation (p. 302), fallen and died (p. 305, 28 pp.) | [00001/280](https://znaci.org/00001/280.htm) |
 | Posavsko-trebavski odred | Esad Tihić | roster (p. 311, 91 pp.) | [00001/302](https://znaci.org/00001/302.htm) |
-| Kalnički odred | Žarko Milićević | roster (p. 311, 90 pp.) | [00003/558](https://znaci.org/00003/558.htm) |
+| Kalnički odred | Žarko Milićević | roster (p. 311, 90 pp.), the leaders (pp. 282-305; **done**, `kalnicki-odred-kadar.pdf`) | [00003/558](https://znaci.org/00003/558.htm) |
 | Zagrebački odred | Zbornik | roster (p. 407), wounded, fallen, missing of the 1. bataljon | [00003/607](https://znaci.org/00003/607.htm) |
 | Turopoljsko-posavski odred | Višnja Huzjak | fallen (PDF p. 19 of 32) | [bk=835](https://znaci.org/00003/7xx.php?bk=835) |
 | Mosorski odred | Velić, Petrić, Vuletić | odred 1942–44 (PDF p. 357), komande mjesta and field workers (PDF p. 575), leaders (PDF p. 565, **done**, `mosorski-odred-kader.pdf`) | [bk=794](https://znaci.org/00003/7xx.php?bk=794) |
@@ -206,6 +206,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Milan Brunović, Tomo Sović, *Bitka kod Oborova* | the fallen (p. 158, 3 pp.; **done**: `bitka-kod-oborova-poginuli.pdf`, a book across units) | [00003/660](https://znaci.org/00003/660.htm) |
 | *Istočna Bosna u NOR-u* 2 | fallen of the 6. istočnobosanska (PDF p. 478, 7 pp.) | [00003/751](https://znaci.org/00003/751.php) |
 | *Žene Hrvatske u NOB* | women of the VI. korpus who fell (p. 301, 12 pp.), women of the 1. bataljon of the Osječka (p. 282) | [00003/585](https://znaci.org/00003/585.htm) |
+| Ljuban Đurić, *Banijski partizanski odredi* | the officers of the odredi 1941-1945 (PDF pp. 354-360, book pp. 372-378; **done**, a book across units, `banijski-odredi-kadar.pdf`) | [00003/549](https://znaci.org/00003/549.htm) |
 | Kažimir Pribilović, *Četvrti pomorski obalni sektor* | fallen and died (p. 473, 6 pp.), the staff (Prilog X, 652_1 p. 70, book p. 485; **done**, `4-pomorski-sektor-stab.pdf`) | [00003/652](https://znaci.org/00003/652.htm) |
 | Jaša Romano, *Jevreji Jugoslavije 1941–1945* | Jewish participants in the NOR ([191_4.pdf](https://znaci.org/00001/191_4.pdf), 205 pp.), spomenica holders, narodni heroji | [00001/191](https://znaci.org/00001/191.htm) |
 | *Sanitetska služba u NOR-u*, knj. IV | doctors who lost their lives in the war, a bio each ([199_15.htm](https://znaci.org/00001/199_15.htm), a web page; on the site as a book across units, those in the army only: **done**, `parse_sanitetska_lekari.py`) | [00001/199](https://znaci.org/00001/199.htm) |
