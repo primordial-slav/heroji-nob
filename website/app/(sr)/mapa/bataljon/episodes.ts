@@ -1016,20 +1016,20 @@ export const EPISODES: Episode[] = [
         date: '21. septembra 1942.', time: '9.15',
         view: [15.190, 44.690, 15.262, 44.728],
         text: 'Petnaest minuta posle roka dve čete zaposednu položaje na južnim i jugozapadnim prilazima Bakovcu, a '
-          + 'Treća četa izbija na severne prilaze, da sačeka bataljon „Ognjen Priča“ Druge ličke. Kad taj bataljon upadne '
+          + 'Treća četa izbija na severne prilaze, da sačeka bataljon „Ognjen Prica“ Druge ličke. Kad taj bataljon upadne '
           + 'u Bakovac, priključi mu se i Treća četa Mile Počuče. Neprijatelj se iz sela povuče na obližnja brda, kote 788 '
           + 'i 894, i odatle pruža jak otpor: bataljonu je sprečen brz prodor na istok, prema Kosinju.',
         notes: [
           'Mesta četa knjiga daje samo kao prilaze selu.',
           'Kote knjiga ne smešta. Najbliži vrh od 894 m je Veliki vrh (910 m na OpenStreetMap, 895 m u visinama '
             + 'terena), jugoistočno od sela; vrha od 788 m blizu Bakovca nema, pa kota 788 nije nacrtana.',
-          'Odakle je naišao bataljon „Ognjen Priča“, knjiga ne kaže.',
+          'Odakle je naišao bataljon „Ognjen Prica“, knjiga ne kaže.',
         ],
         marks: [
           { t: 'area', side: 'own', at: [15.2085, 44.7040], rx: 0.5, ry: 0.25, rot: -30, label: 'dve čete II bat.', lp: 'sw', guess: true },
           { t: 'area', side: 'own', at: [15.2125, 44.7172], rx: 0.3, ry: 0.18, label: '3/II (M. Počuča)', lp: 'n', guess: true },
           { t: 'move', side: 'ally', kind: 'attack', path: [[15.2000, 44.7262], [15.2060, 44.7190], [15.2110, 44.7130]],
-            label: 'bat. „Ognjen Priča“', lp: 'w', at: 0.2, guess: true },
+            label: 'bat. „Ognjen Prica“', lp: 'w', at: 0.2, guess: true },
           { t: 'move', side: 'enemy', kind: 'back', path: [[15.2150, 44.7090], [15.2300, 44.7022], [15.2440, 44.6968]], guess: true },
           { t: 'kota', at: K.velikiVrh, label: '894', lp: 'e', guess: true },
           { t: 'area', side: 'enemy', at: [15.2468, 44.6968], rx: 0.4, ry: 0.25, label: 'ustaše na kotama', lp: 'n', guess: true },
@@ -1041,7 +1041,7 @@ export const EPISODES: Episode[] = [
         text: 'Prvi bataljon je u 9 sati pred Kruščicom, gde Vujo Miljuš mitraljeskim rafalom pokosi četvoricu ustaša, '
           + 'pa čisti Podjelar. Uspaničen neprijatelj beži na sve strane, i Prvi bataljon u 18.30, bez većih okršaja, '
           + 'ulazi u Kosinj; na brdima oko njega uhvaćeno je šest velikih ustaških zastava. Neprijatelj iz Bakovca se '
-          + 'izvukao bez većih gubitaka; komandant brigade za to je okrivio bataljon „Ognjen Priča“, „koji nije zaposjeo '
+          + 'izvukao bez većih gubitaka; komandant brigade za to je okrivio bataljon „Ognjen Prica“, „koji nije zaposjeo '
           + 'svoje određene položaje“.',
         marks: [
           { t: 'move', side: 'friend', kind: 'attack', path: [[15.2560, 44.6700], K.kruscica, K.podjelar, [15.2740, 44.7152]],
@@ -1060,7 +1060,7 @@ export const EPISODES: Episode[] = [
     friends: [
       'Prvi bataljon „Marko Orešković“: Duliba, Kruščica, Poljanak, Sušanj, Podjelar, Kosinj',
       'Četvrti, banijski bataljon: čete uz Prvi bataljon i Drugu ličku, jedna u rezervi u Poljanu',
-      'Druga lička brigada: bataljon „Ognjen Priča“ na Bakovac, njen Četvrti bataljon na Vukelić-Selo',
+      'Druga lička brigada: bataljon „Ognjen Prica“ na Bakovac, njen Četvrti bataljon na Vukelić-Selo',
       'Bataljon „Matija Gubec“ Četvrtog ličkog odreda: grupe od 10 do 12 boraca, kao vodiči',
     ],
     result: 'Kosinj je zauzet, ali je „skoro svim ustaškim i četničkim banditima“ uspelo da umaknu. Brigada je imala '
