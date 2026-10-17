@@ -253,6 +253,7 @@ def apply_delete(soldiers, correction):
     return soldiers, False
 
 
+FILL_ON_MERGE = False   # the unit being processed is on the site: a merge reads the record's own bio first
 SOURCE_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y') + entry_boxes.BOX_FIELDS + ('source_url', 'source_page')
 # what the soldier's entry takes from another book's entry when its own is empty
 MERGE_FILL = ('middle_name', 'fathers_name', 'birth_year') + tuple(structured.FIELDS)
@@ -287,6 +288,10 @@ def apply_merge(soldiers, correction):
     others = [o for o in keep.get('other_sources', ()) if o.get('soldier_id') != mid]
     # a soldier merged into `gone` earlier comes along
     others += [o for o in gone.get('other_sources', ()) if o.get('soldier_id') != sid]
+    if FILL_ON_MERGE:
+        # the record's own bio first, as the final fill reads it: two edits of its text drop the fields read from it
+        # on every run (forget_stale), and the other book's values would take their place for good
+        structured.fill([keep])
     keep['other_sources'] = others + [source]
     taken = [k for k in MERGE_FILL if not keep.get(k) and gone.get(k)]
     if 'middle_name' in taken and 'fathers_name' not in taken:
@@ -631,6 +636,8 @@ def main():
         original_count = len(soldiers)
         original_boxes = entry_boxes.box_snapshot(soldiers)
 
+        global FILL_ON_MERGE
+        FILL_ON_MERGE = json_path.name in live_files
         applied_count = 0
         for c in brigade_corrections:
             action = c['action']
