@@ -31,6 +31,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'ljubljanska-brigada': 'Monografija Ljubljanske brigade',
     '13-proleterska-spisak': 'Seznam padlih in preživelih borcev (tretji del monografije)',
     '2-dalmatinska-proleterska': 'Seznam borcev 2. dalmatinske proletarske brigade NOVJ',
+    '2-dalmatinska-stabovi':
+      'Starešine štaba brigade s časom, ko je kdo opravljal dolžnost, čet pri štabu, brigadne bolnišnice, štabov bataljonov in poveljstev čet, po dolžnostih (str. 473–486)',
     '4-splitska-brigada': 'Seznam padlih in preživelih borcev brigade',
     'prva-vojvodjanska': 'Seznam borcev Prve vojvodinske brigade',
     '5-kozaracka': 'Seznam padlih, pogrešanih in umrlih borcev in poveljnikov brigade',
@@ -213,6 +215,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Padli, preživeli in drugi, ki so se borili v brigadi (Druga šumadijska): starši, rojstvo, dolžnost, vstop v brigado in kje so padli (str. 387–472)',
     '14-hercegovacka':
       'Seznam borcev, ki so šli skozi brigado: leto in kraj rojstva; padli, z enoto in krajem smrti (str. 243–287)',
+    '14-hercegovacka-komandni-sastav':
+      'Štab brigade, štabi bataljonov, poveljstva čet, spremljevalni vodi, komandirji in politični delegati vodov ter enote pri štabu, po dolžnostih, s časom, ko je kdo opravljal dolžnost (str. 234–242)',
     '5-vojvodjanska':
       'Seznam borcev in starešin brigade: leto in kraj rojstva, poklic, dolžnost v brigadi, kje so padli ali izginili (str. 429–584)',
     '6-vojvodjanska':
@@ -255,6 +259,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Člani štaba brigade, štabov bataljonov in poveljniki samostojnih enot, po dolžnostih, s časom na dolžnosti in kako se je končal (str. 227–233)',
     '13-hercegovacka':
       'Padli borci in starešine brigade (rojstvo, dan in kraj smrti) in seznam borcev, ki so se borili v brigadi, samo imena (str. 316–347)',
+    '13-hercegovacka-starjesine':
+      'Štab brigade in enote pri štabu, štabi bataljonov in poveljstva čet, po dolžnostih, s časom, ko je kdo opravljal dolžnost (str. 305–315)',
     '12-hercegovacka':
       'Seznam padlih borcev in starešin brigade po občinah: rojstvo, dolžnost, kje in kdaj so padli (str. 207–220)',
     '1-bokeljska':
@@ -585,6 +591,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'ljubljanska-brigada': 'Монографија на Љубљанската бригада',
     '13-proleterska-spisak': 'Список на загинатите и преживеаните борци (трет дел од монографијата)',
     '2-dalmatinska-proleterska': 'Список на борците на 2-ра далматинска пролетерска бригада на НОВЈ',
+    '2-dalmatinska-stabovi':
+      'Старешините на штабот на бригадата со времето кога кој ја вршел должноста, на четите при штабот, на бригадната болница, на штабовите на баталјоните и на командите на четите, по должности (стр. 473–486)',
     '4-splitska-brigada': 'Список на загинатите и преживеаните борци на бригадата',
     'prva-vojvodjanska': 'Список на борците на Првата војводинска бригада',
     '5-kozaracka': 'Список на загинатите, исчезнатите и починатите борци и старешини на бригадата',
@@ -767,6 +775,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Загинати, преживеани и други што се бореа во бригадата (Втора шумадиска): родители, раѓање, должност, кога стапиле во бригадата и каде загинале (стр. 387–472)',
     '14-hercegovacka':
       'Список на борците што поминале низ бригадата: година и место на раѓање; загинатите, со единицата и местото на загинување (стр. 243–287)',
+    '14-hercegovacka-komandni-sastav':
+      'Штабот на бригадата, штабовите на баталјоните, командите на четите, придружните водови, командирите и политичките делегати на водовите и единиците при штабот, по должности, со времето кога кој ја вршел должноста (стр. 234–242)',
     '5-vojvodjanska':
       'Список на борците и старешините на бригадата: година и место на раѓање, занимање, должност во бригадата, каде загинале или исчезнале (стр. 429–584)',
     '6-vojvodjanska':
@@ -809,6 +819,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Членовите на штабот на бригадата, на штабовите на баталјоните и старешините на самостојните единици, по должности, со времето на должноста и како завршило (стр. 227–233)',
     '13-hercegovacka':
       'Загинатите борци и старешини на бригадата (раѓање, ден и место на загинувањето) и список на борците што се бореле во бригадата, само имиња (стр. 316–347)',
+    '13-hercegovacka-starjesine':
+      'Штабот на бригадата и единиците при штабот, штабовите на баталјоните и командите на четите, по должности, со времето кога кој ја вршел должноста (стр. 305–315)',
     '12-hercegovacka':
       'Список на загинатите борци и старешини на бригадата, по општини: раѓање, должност, каде и кога загинале (стр. 207–220)',
     '1-bokeljska':
@@ -1139,6 +1151,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'ljubljanska-brigada': 'History of the Ljubljana Brigade',
     '13-proleterska-spisak': 'The fallen and the survivors (part three of the brigade history)',
     '2-dalmatinska-proleterska': 'Roll of the 2nd Dalmatian Proletarian Brigade',
+    '2-dalmatinska-stabovi':
+      'The officers of the brigade staff with the time each held the post, of the companies at the staff, the brigade hospital, the battalion staffs and company commands, by duty (pp. 473–486)',
     '4-splitska-brigada': 'The brigade’s fallen and survivors',
     'prva-vojvodjanska': 'Roll of the 1st Vojvodina Brigade',
     '5-kozaracka': 'The brigade’s Partisans and officers who were killed, went missing or died',
@@ -1320,6 +1334,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s (2nd Šumadija) Partisans who were killed or survived, and others who fought in it: parents, birth, duty, when they joined and where they fell (pp. 387–472)',
     '14-hercegovacka':
       'Everyone who served in the brigade: year and place of birth; the fallen, with their unit and where they fell (pp. 243–287)',
+    '14-hercegovacka-komandni-sastav':
+      'The brigade staff, the battalion staffs, company commands, escort platoons, platoon commanders and political delegates and the units at the staff, by duty, with the time each held the post (pp. 234–242)',
     '5-vojvodjanska':
       'The brigade’s soldiers and officers: year and place of birth, trade, duty in the brigade, where they fell or went missing (pp. 429–584)',
     '6-vojvodjanska':
@@ -1362,6 +1378,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The members of the brigade staff and the battalion staffs and the officers of its independent units, by duty, with how long each held it and how it ended (pp. 227–233)',
     '13-hercegovacka':
       'The brigade’s fallen soldiers and officers (birth, day and place of death) and everyone who fought in it, names only (pp. 316–347)',
+    '13-hercegovacka-starjesine':
+      'The brigade staff and the units at the staff, the battalion staffs and company commands, by duty, with the time each held the post (pp. 305–315)',
     '12-hercegovacka':
       'The brigade’s fallen soldiers and officers, by municipality: birth, duty, where and when they fell (pp. 207–220)',
     '1-bokeljska':

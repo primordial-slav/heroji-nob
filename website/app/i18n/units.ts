@@ -41,7 +41,7 @@ const sl: Record<string, UnitText> = {
   },
   '2-dalmatinska-brigada': {
     name: '2. dalmatinska proletarska udarna brigada',
-    description: 'Ustanovljena 3. oktobra 1942. Borci brigade.',
+    description: 'Ustanovljena 3. oktobra 1942. Borci brigade ter štabi in poveljstva brigade, bataljonov in čet.',
   },
   '4-splitska-brigada': {
     name: '4. splitska udarna brigada',
@@ -392,7 +392,7 @@ const sl: Record<string, UnitText> = {
   '14-hercegovacka-brigada': {
     name: '14. hercegovska brigada',
     description:
-      'Ustanovljena 4. septembra 1944 pri Ljubinju kot mladinska brigada. Vsi borci, ki so šli skozi brigado, in padli.',
+      'Ustanovljena 4. septembra 1944 pri Ljubinju kot mladinska brigada. Vsi borci, ki so šli skozi brigado, padli in poveljstvo.',
   },
   '5-vojvodjanska-brigada': {
     name: '5. vojvodinska brigada',
@@ -487,7 +487,7 @@ const sl: Record<string, UnitText> = {
   '13-hercegovacka-brigada': {
     name: '13. hercegovska brigada',
     description:
-      'Ustanovljena 14. maja 1944 v Hercegovini. Padli borci in starešine brigade ter vsi, ki so se borili v njej.',
+      'Ustanovljena 14. maja 1944 v Hercegovini. Padli borci in starešine brigade, vsi, ki so se borili v njej, in starešinski sestav.',
   },
   '12-hercegovacka-brigada': {
     name: '12. hercegovska brigada',
@@ -794,7 +794,7 @@ const mk: Record<string, UnitText> = {
   },
   '2-dalmatinska-brigada': {
     name: '2-ра далматинска пролетерска ударна бригада',
-    description: 'Формирана на 3 октомври 1942. Борци на бригадата.',
+    description: 'Формирана на 3 октомври 1942. Борци на бригадата и штабовите и командите на бригадата, баталјоните и четите.',
   },
   '4-splitska-brigada': {
     name: '4-та сплитска ударна бригада',
@@ -1149,7 +1149,7 @@ const mk: Record<string, UnitText> = {
   '14-hercegovacka-brigada': {
     name: '14-та херцеговска бригада',
     description:
-      'Формирана на 4 септември 1944 кај Љубиње, како младинска бригада. Сите борци што поминале низ бригадата и загинатите.',
+      'Формирана на 4 септември 1944 кај Љубиње, како младинска бригада. Сите борци што поминале низ бригадата, загинатите и командниот состав.',
   },
   '5-vojvodjanska-brigada': {
     name: '5-та војводинска бригада',
@@ -1244,7 +1244,7 @@ const mk: Record<string, UnitText> = {
   '13-hercegovacka-brigada': {
     name: '13-та херцеговска бригада',
     description:
-      'Формирана на 14 мај 1944 во Херцеговина. Загинатите борци и старешини на бригадата и сите што се бореле во неа.',
+      'Формирана на 14 мај 1944 во Херцеговина. Загинатите борци и старешини на бригадата, сите што се бореле во неа и старешинскиот состав.',
   },
   '12-hercegovacka-brigada': {
     name: '12-та херцеговска бригада',
@@ -1551,7 +1551,7 @@ const en: Record<string, UnitText> = {
   },
   '2-dalmatinska-brigada': {
     name: '2nd Dalmatian Proletarian Assault Brigade',
-    description: 'Formed on 3 October 1942. Members of the brigade.',
+    description: 'Formed on 3 October 1942. Members of the brigade, and the staffs and commands of the brigade, its battalions and companies.',
   },
   '4-splitska-brigada': {
     name: '4th Split Assault Brigade',
@@ -1908,7 +1908,7 @@ const en: Record<string, UnitText> = {
   '14-hercegovacka-brigada': {
     name: '14th Herzegovina Brigade',
     description:
-      'Formed on 4 September 1944 near Ljubinje as a youth brigade. Everyone who served in it, and its fallen.',
+      'Formed on 4 September 1944 near Ljubinje as a youth brigade. Everyone who served in it, its fallen, and its command.',
   },
   '5-vojvodjanska-brigada': {
     name: '5th Vojvodina Brigade',
@@ -2003,7 +2003,7 @@ const en: Record<string, UnitText> = {
   '13-hercegovacka-brigada': {
     name: '13th Herzegovina Brigade',
     description:
-      'Formed on 14 May 1944 in Herzegovina. Its fallen soldiers and officers, and all who fought in it.',
+      'Formed on 14 May 1944 in Herzegovina. Its fallen soldiers and officers, all who fought in it, and the officers of its staffs and companies.',
   },
   '12-hercegovacka-brigada': {
     name: '12th Herzegovina Brigade',
