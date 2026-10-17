@@ -1084,13 +1084,39 @@ function People({ list, label }: { list: Episode['fallen']; label: string }) {
   )
 }
 
+// The book's own words in a step, set in its italic: a quotation, three words or more with one in small letters
+// („temeljito tako da se saobraćaj …“); a unit's name in quotes („Pekiša Vuksan“, „Genova cavalleria“) stays as it is
+const QUOTE = /„[^„“]+“/g
+const isQuotation = (q: string) => q.split(/\s+/).length >= 3 && /(?:^|\s)[„]?\p{Ll}/u.test(q)
+function quoted(nodes: ReactNode[]): ReactNode[] {
+  return nodes.flatMap((n, i) => {
+    if (typeof n !== 'string') return [n]
+    const out: ReactNode[] = []
+    let at = 0
+    for (const m of n.matchAll(QUOTE)) {
+      if (!isQuotation(m[0])) continue
+      if (m.index! > at) out.push(n.slice(at, m.index))
+      out.push(<span key={`q${i}-${m.index}`} className={styles.quote}>{m[0]}</span>)
+      at = m.index! + m[0].length
+    }
+    if (at < n.length) out.push(n.slice(at))
+    return out
+  })
+}
+
+// a step's button: its hour as printed, else the book's word for when (cut short by the row, whole on hover)
+const stepLabel = (s: Step) => s.time ?? s.when ?? ''
+
 function Card({ ep, e, si, go }: { ep: Episode; e: number; si: number; go: (e: number, s: number) => void }) {
   const flat = STEPS.findIndex(x => x.e === e && x.i === si)
   const prev = STEPS[flat - 1], next = STEPS[flat + 1]
   const [from, to] = ep.pages
+  const step = ep.steps[si]
+  const last = si === ep.steps.length - 1
+  const light = lightOf(ep, si)
   return (
     <article className={styles.card} aria-live="polite">
-      {/* first in the card, so the buttons stay where they are as the steps open and close */}
+      {/* first in the card, so the buttons stay where they are as the step's text grows and shrinks */}
       <div className={styles.stepNav}>
         <button type="button" className={styles.navButton} disabled={!prev} onClick={() => prev && go(prev.e, prev.i)}
           title="Strelica ←">‹ Prethodno</button>
@@ -1100,57 +1126,72 @@ function Card({ ep, e, si, go }: { ep: Episode; e: number; si: number; go: (e: n
       </div>
       <p className={styles.kicker}>{e + 1}. od {EPISODES.length} · {ep.dates}</p>
       <h2 className={styles.title}>{ep.title}</h2>
-      <p className={styles.about}>{marked(ep.about, ep.foe)}</p>
+      {si === 0 && <p className={styles.about}>{quoted(marked(ep.about, ep.foe))}</p>}
 
-      <ol className={styles.steps}>
+      {/* the steps, a faint row to jump by; the step being read is the card's text, its day and hour on the sheet */}
+      <ol className={styles.pips} aria-label="Koraci">
         {ep.steps.map((s, i) => (
           <li key={i}>
-            <button type="button" className={i === si ? styles.stepOn : styles.step} aria-current={i === si ? 'step' : undefined} onClick={() => go(e, i)}>
-              <span className={styles.stepWhen}>
-                <span className={styles.stepTime}>{s.time ?? s.when}</span>
-                {(i === 0 || s.date !== ep.steps[i - 1].date) && <span className={styles.stepDay}>{s.date.replace(' 1942.', '')}</span>}
-              </span>
-              <span className={styles.stepMark} aria-hidden="true" />
-              <span className={i === si ? styles.stepText : styles.stepTextShort}>
-                {marked(s.text, ep.foe)}
-                {i === si && lightOf(ep, i) ? <span className={styles.stepLight}>{lightOf(ep, i)!.why}</span> : null}
-                {i === si && s.notes?.length ? (
-                  <span className={styles.stepNotes}>
-                    <span className={styles.stepNotesHead}>Procena na karti</span>
-                    {s.notes.map(x => <span key={x} className={styles.stepNote}>{x}</span>)}
-                  </span>
-                ) : null}
-              </span>
+            <button type="button" className={i === si ? styles.pipOn : styles.pip} aria-current={i === si ? 'step' : undefined}
+              onClick={() => go(e, i)} title={`${s.date}${stepLabel(s) ? `, ${stepLabel(s)}` : ''}`}>
+              {stepLabel(s) || i + 1}
             </button>
           </li>
         ))}
       </ol>
+      <p className={styles.stepBody}>{quoted(marked(step.text, ep.foe))}</p>
+      <p className={styles.stepSource}>
+        {SOURCE.author}, str. {from}–{to}{' '}
+        <a href={`${SOURCE.pdf}#page=${pdfPage(from)}`} target="_blank" rel="noopener">otvori u knjizi</a>
+      </p>
 
-      <div className={styles.facts}>
-        <div className={styles.fact}>
-          <p className={styles.factLabel}>Neprijatelj</p>
+      {/* the rest folded, one line each; the outcome and the dead come with the last step, as the episode's end */}
+      <div className={styles.rows}>
+        {(step.notes?.length || light) ? (
+          <details className={styles.row}>
+            <summary>Kako je nacrtano</summary>
+            <div className={styles.rowBody}>
+              {step.notes?.map(x => <p key={x} className={styles.rowNote}>{x}</p>)}
+              {light && <p className={styles.rowNote}>{light.why}</p>}
+            </div>
+          </details>
+        ) : null}
+        {si > 0 && (
+          <details className={styles.row}>
+            <summary>O borbi</summary>
+            <div className={styles.rowBody}><p className={styles.rowNote}>{quoted(marked(ep.about, ep.foe))}</p></div>
+          </details>
+        )}
+        <details className={styles.row}>
+          <summary>Neprijatelj</summary>
           <ul className={styles.factList}>{ep.enemy.map(x => <li key={x}>{marked(x, ep.foe)}</li>)}</ul>
-        </div>
-        <div className={styles.fact}>
-          <p className={styles.factLabel}>Naše snage</p>
+        </details>
+        <details className={styles.row}>
+          <summary>Naše snage</summary>
           <ul className={styles.factList}>{ep.friends.map(x => <li key={x}>{marked(x, ep.foe)}</li>)}</ul>
-        </div>
-        <div className={styles.fact}>
-          <p className={styles.factLabel}>Ishod</p>
-          <p className={styles.factText}>{marked(ep.result, ep.foe)}</p>
-        </div>
-        <People list={ep.fallen} label="Poginuli iz bataljona" />
-        <People list={ep.wounded} label="Ranjeni" />
+        </details>
+        {last ? (
+          <div className={styles.ending}>
+            <div className={styles.fact}>
+              <p className={styles.factLabel}>Ishod</p>
+              <p className={styles.factText}>{quoted(marked(ep.result, ep.foe))}</p>
+            </div>
+            <People list={ep.fallen} label="Poginuli iz bataljona" />
+            <People list={ep.wounded} label="Ranjeni" />
+          </div>
+        ) : (
+          <p className={styles.rowLater}><span>Ishod i poginuli</span><span>posle poslednjeg koraka</span></p>
+        )}
+        <details className={styles.row}>
+          <summary>Podaci karte</summary>
+          <div className={styles.rowBody}>
+            <p className={styles.rowNote}>
+              {SOURCE.author}, <i>{SOURCE.title}</i>, {SOURCE.place}. Reljef: AWS Terrain Tiles (EU-DEM, Copernicus;
+              SRTM). Pruga, ceste, vode i zaseoci: © OpenStreetMap (ODbL). Stanice: GeoNames (CC BY 4.0).
+            </p>
+          </div>
+        </details>
       </div>
-
-      <p className={styles.source}>
-        {SOURCE.author}, <i>{SOURCE.title}</i>, {SOURCE.place}, str. {from}–{to}.{' '}
-        <a href={`${SOURCE.pdf}#page=${pdfPage(from)}`} target="_blank" rel="noopener">Otvori stranu u knjizi</a>
-      </p>
-      <p className={styles.credits}>
-        Reljef: AWS Terrain Tiles (EU-DEM, Copernicus; SRTM). Pruga, ceste, vode i zaseoci: © OpenStreetMap (ODbL).
-        Stanice: GeoNames (CC BY 4.0).
-      </p>
     </article>
   )
 }

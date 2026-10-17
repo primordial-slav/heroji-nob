@@ -715,135 +715,159 @@
   line-height: 1.5;
 }
 
-/* the steps as the record's life line: the hour on the left, a fine line with a square mark, the step beside it */
-.steps {
+/* the steps, a faint row to jump by: the hour or the book's word for when, cut short; the one being read in red */
+.pips {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: 2px;
   list-style: none;
   margin: var(--space-3) 0 0;
   padding: 0;
 }
 
-.step,
-.stepOn {
-  position: relative;
-  display: grid;
-  grid-template-columns: 5.2rem 0.9rem minmax(0, 1fr);
+.pip,
+.pipOn {
+  display: block;
   width: 100%;
-  padding: 0.3rem 0;
+  padding: 0.2rem 0.15rem 0.25rem;
+  overflow: hidden;
   background: none;
   border: 0;
-  color: var(--ink);
+  border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  color: color-mix(in srgb, var(--ink-muted) 70%, transparent);
   font: inherit;
-  text-align: left;
+  font-size: 0.6875rem;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
 }
 
-/* the line through the marks */
-.step::before,
-.stepOn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: calc(5.2rem + 0.45rem);
-  border-left: 1px solid var(--rule-strong);
+.pip:hover {
+  border-top-color: var(--ink-muted);
+  color: var(--ink);
 }
 
-.steps li:first-child .step::before,
-.steps li:first-child .stepOn::before {
-  top: 0.75rem;
-}
-
-.steps li:last-child .step::before,
-.steps li:last-child .stepOn::before {
-  bottom: calc(100% - 0.75rem);
-}
-
-.stepWhen {
-  display: flex;
-  flex-direction: column;
-  padding-right: 0.5rem;
-  text-align: right;
-}
-
-.stepTime {
-  font-family: var(--font-name);
-  font-size: 0.875rem;
-  line-height: 1.3;
-}
-
-.stepDay {
-  color: var(--ink-muted);
-  font-size: 0.72rem;
-}
-
-.stepMark {
-  position: relative;
-  z-index: 1;
-  justify-self: center;
-  width: 7px;
-  height: 7px;
-  margin-top: 0.42rem;
-  background: var(--surface);
-  border: 1px solid var(--ink);
-}
-
-.stepOn .stepMark {
-  background: var(--red-ink);
-  border-color: var(--red-ink);
-}
-
-.stepOn .stepTime {
+.pipOn {
+  border-top: 2px solid var(--red-ink);
   color: var(--red-ink);
 }
 
-.stepTextShort,
-.stepText {
-  align-self: start;
-  padding-left: 0.35rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
+.pip:focus-visible,
+.pipOn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
 }
 
-.stepTextShort {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  max-height: 1.5em;
-  overflow: hidden;
-  color: var(--ink-muted);
+/* the step being read: the card's main text */
+.stepBody {
+  margin-top: var(--space-3);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-/* what the map shows that the book does not say: small, under the step, each point a line of its own */
-.stepNotes {
-  display: block;
+/* the book's own words, in its serif italic */
+.quote {
+  font-family: var(--font-name);
+  font-style: italic;
+}
+
+.stepSource {
   margin-top: var(--space-2);
-  padding: var(--space-2) 0 0;
-  border-top: 1px dotted var(--rule-strong);
-}
-
-.stepNotesHead {
-  display: block;
   color: var(--ink-muted);
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 0.75rem;
 }
 
-.stepNote {
-  display: block;
+.stepSource a {
+  color: var(--red-ink);
+}
+
+/* the rest, folded: one line each on hairline rules */
+.rows {
+  margin-top: var(--space-4);
+}
+
+.row {
+  border-top: 1px solid var(--rule);
+}
+
+.row summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.row summary::-webkit-details-marker {
+  display: none;
+}
+
+.row summary::after {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.2rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-0.12rem) rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.row[open] summary::after {
+  transform: translateY(0.1rem) rotate(-135deg);
+}
+
+.row summary:hover {
+  color: var(--ink);
+}
+
+.row summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.row .factList {
+  margin-bottom: var(--space-2);
+}
+
+.rowBody {
+  padding-bottom: var(--space-2);
+}
+
+.rowNote {
   margin-top: 0.2rem;
   color: var(--ink-muted);
   font-size: 0.78rem;
   line-height: 1.45;
 }
 
-.step:hover .stepTextShort {
-  color: var(--ink);
+/* the outcome and the dead, until the last step: named, not told */
+.rowLater {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--rule);
+  color: color-mix(in srgb, var(--ink-muted) 70%, transparent);
+  font-size: 0.8125rem;
 }
 
-.step:focus-visible,
-.stepOn:focus-visible {
-  outline: 2px solid var(--ink);
-  outline-offset: 1px;
+.rowLater span:last-child {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.ending {
+  border-top: 2px solid var(--red-ink);
+}
+
+.ending .fact:first-child {
+  border-top: 0;
 }
 
 .stepNav {
@@ -942,24 +966,8 @@
   font-size: 0.75rem;
 }
 
-.source {
-  margin-top: var(--space-3);
-  padding-top: var(--space-2);
-  border-top: 1px solid var(--rule);
-  color: var(--ink-muted);
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
 
-.source a {
-  color: var(--red-ink);
-}
 
-.credits {
-  margin-top: var(--space-3);
-  color: var(--ink-muted);
-  font-size: 0.75rem;
-}
 
 /* ---------- one screen ----------
    Where the window is wide and tall enough the page ends at its foot: the header and the summer take what they
@@ -1158,12 +1166,3 @@
   fill: var(--red-ink);
 }
 
-/* and the same in words, under the step's text in the card */
-.stepLight {
-  display: block;
-  margin-top: var(--space-2);
-  color: var(--ink-muted);
-  font-size: 0.76rem;
-  font-style: italic;
-  line-height: 1.45;
-}
