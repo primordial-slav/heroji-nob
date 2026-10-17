@@ -59,6 +59,63 @@ CHECK_SAMPLE = 60                   # pairs already made, offered for spot check
 WEIGHT = {'father': 3, 'birthplace': 3, 'death place': 3, 'death day': 3, 'unit': 2, 'hero on the site': 2, 'duty': 2,
           'birth year': 1, 'death year': 1, 'father initial': 1}
 
+# A unit's lists of its staffs and commands (the id's unit code and list number): their entries give a name and a post,
+# its rolls often a name and little more, so a pair of them is mostly 'name' (the only one of the name in each list,
+# nothing more to go on). Such a pair is taken when the two put him in the same battalion (in a division: the same
+# brigade); else it goes to review.
+STAFF_LISTS = {
+    '000303', '000701', '001302', '002001', '003520', '003603', '003604', '004003', '004502', '005001', '005201',
+    '005302', '005801', '006001', '006101', '006201', '006301', '006501', '006701', '007101', '007301', '007901',
+    '008101', '008301', '009401', '009701', '009901', '010001', '010301', '010402', '012901', '014802', '016701',
+    '016801',
+}
+ROMAN = {'i': 1, 'ii': 2, 'iii': 3, 'iv': 4, 'v': 5, 'vi': 6, 'vii': 7, 'viii': 8, 'ix': 9, 'x': 10}
+BATTALION = re.compile(r'\b(\d{1,2}|[ivx]{1,4})\.?\s*(?:bataljon\w*|bat\.)', re.I)
+QUOTED = re.compile(r'[»„“"]([^«“”"]{3,60})[«“”"]')
+NOT_A_NAME = {'brigada', 'brigade', 'brigadi', 'udarna', 'udarne', 'udarni', 'bataljon', 'bataljona', 'divizija',
+              'divizije', 'stab', 'staba', 'proleterska', 'proleterske', 'narodnooslobodilacka', 'partizanski',
+              'partizanskog', 'odred', 'odreda', 'zastitna', 'cete', 'komanda', 'prateca', 'pratece'}
+
+
+def is_staff(s: dict) -> bool:
+    return s['soldier_id'][:6] in STAFF_LISTS
+
+
+def sub_units(s: dict) -> tuple[set[int], set[str]]:
+    """The battalions a record puts him in ("4. bataljon", "3. č. 2. bat.", "II bataljon") and the words of the
+    brigades it names (from its unit and the names in quotes: »Braća Radić«, „Franjo Ogulinac Seljo“)."""
+    texts = [s.get('unit_detail') or '', s.get('additional_info') or '']
+    texts += [t for o in s.get('other_sources', ()) if not o.get('ref_book') and not o.get('unit_file')
+              for t in (o.get('unit_detail') or '', o.get('additional_info') or '')]
+    battalions = set()
+    for t in texts:
+        for m in BATTALION.finditer(t):
+            n = m.group(1).lower()
+            battalions.add(int(n) if n.isdigit() else ROMAN.get(n, 0))
+    names = [s.get('unit_detail') or ''] + [q for t in texts for q in QUOTED.findall(t)]
+    words = {F.fold(w) for n in names for w in re.findall(r'\w{5,}', n)} - NOT_A_NAME
+    if re.search(r'štab\w*\s+(?:\d+\.\s*)?divizij', s.get('unit_detail') or '', re.I):
+        words.add('the division staff')
+    return battalions - {0}, words
+
+
+def plain_fighter(s: dict) -> bool:
+    """The roll calls him a borac (as the 11. dalmatinska's "borac 3. č. 2. bat." does): against a post in a staff list
+    that is another man as often as his rise, so the pair goes to review."""
+    return F.fold(s.get('rank') or '') == 'borac' or bool(re.match(r'\W*bor[ae]c\b', s.get('additional_info') or '', re.I))
+
+
+def same_sub_unit(a: dict, b: dict, division: bool) -> bool:
+    """A staff entry and a roll entry in the same battalion (a division's: in the same brigade), the roll not calling
+    him a plain fighter."""
+    roll = b if is_staff(a) else a
+    if plain_fighter(roll):
+        return False
+    (ba, wa), (bb, wb) = sub_units(a), sub_units(b)
+    if division:
+        return bool(wa & wb)
+    return bool(ba & bb)
+
 
 # ---------------------------------------------------------------- the answers
 
@@ -289,6 +346,7 @@ def find_pairs(units, corr, decisions, log=print):
     portraits = set(json.loads((ROOT / 'website' / 'app' / 'data' / 'portrait-index.json').read_text(encoding='utf-8')))
     for code, soldiers in units.items():
         rank = F.list_rank(code)
+        division = 'divizij' in BRIGADE_CONFIGS[code]['name'].lower()
         sure = []
         for p in F.matches(soldiers, rank):
             a, b = p['keep']['soldier_id'], p['merge']['soldier_id']
@@ -297,6 +355,16 @@ def find_pairs(units, corr, decisions, log=print):
                 continue
             if p['grade'] == 'sure':
                 sure.append(p)
+            elif p['grade'] == 'name' and is_staff(p['keep']) != is_staff(p['merge']):
+                if same_sub_unit(p['keep'], p['merge'], division):
+                    p['agree'] = ['unit']
+                    sure.append(p)
+                    merges['staff by unit'] += 1
+                else:
+                    offer('merge', record_side(p['keep']), record_side(p['merge']), k, 'name', [], [],
+                          'a staff list and a roll: the only one of the name in each, nothing more to go on')
+                    merges['review'] += 1
+                    merges['staff, name only'] += 1
             elif p['agree'] and (len(p['agree']) >= 2 or not p['clash']) and score(p['agree'], p['clash']) >= 2:
                 offer('merge', record_side(p['keep']), record_side(p['merge']), k, p['grade'], p['agree'], p['clash'],
                       p.get('note') or ('the books name different fathers' if 'father' in p['clash'] else ''))
