@@ -2690,6 +2690,17 @@
     "death_place": "Postojna",
     "other_sources": [
       {
+        "soldier_id": "0081010023",
+        "name": "Bošković Radojka",
+        "additional_info": "Komandni sastav 14. hercegovačke (omladinske) brigade: referent saniteta 2. bataljona.",
+        "pdf_file": "14-hercegovacka-komandni-sastav.pdf",
+        "pdf_page": 4,
+        "pdf_x": 40.8,
+        "pdf_y": 113.1,
+        "pdf_x_end": 124.9,
+        "pdf_y_end": 123.1
+      },
+      {
         "soldier_id": "9003000083",
         "name": "Bošković Radojka",
         "additional_info": "Nikolina, rođena 1926. godine u selu Mrkonjićima, Popovo polje. Referent saniteta u 2. bataljonu XIV I 3. bataljonu XIII hercegovačke brigade. Član SKOJ—a. Poginula u borbi protiv njemačkih snaga kod Postojne, 1. V 1945. godine; sahranjena u San Petru, Pivka.",
@@ -2717,7 +2728,9 @@
         "pdf_y_end": 137.1,
         "unit_file": "13-hercegovacka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "referent saniteta",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Bošković",
@@ -7391,13 +7404,25 @@
         "pdf_y": 487.6,
         "pdf_y_end": 519.2,
         "pdf_x_end": 371.3
+      },
+      {
+        "soldier_id": "0081010078",
+        "name": "Ivković Danilo",
+        "additional_info": "Komandni sastav 14. hercegovačke (omladinske) brigade: intendant brigade, 5. 5.-15. 45.",
+        "pdf_file": "14-hercegovacka-komandni-sastav.pdf",
+        "pdf_page": 1,
+        "pdf_x": 203.0,
+        "pdf_y": 320.1,
+        "pdf_x_end": 271.1,
+        "pdf_y_end": 330.1
       }
     ],
     "death_type": "poginuo",
     "death_date": "5. maja 1945",
     "death_place": "Slovenija",
     "rank": "intendant",
-    "pdf_x_end": 273.6
+    "pdf_x_end": 273.6,
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Ivković",
@@ -8743,6 +8768,17 @@
         "pdf_y": 379.1,
         "pdf_y_end": 412.1,
         "pdf_x_end": 355.0
+      },
+      {
+        "soldier_id": "0081010096",
+        "name": "Kolak Ljubo",
+        "additional_info": "Komandni sastav 14. hercegovačke (omladinske) brigade: omladinski rukovodilac 2. čete 4. bataljona, 5. 9. 44-4. 10. 44.",
+        "pdf_file": "14-hercegovacka-komandni-sastav.pdf",
+        "pdf_page": 8,
+        "pdf_x": 217.4,
+        "pdf_y": 18.8,
+        "pdf_x_end": 275.1,
+        "pdf_y_end": 28.8
       },
       {
         "soldier_id": "9003000331",
@@ -26940,24 +26976,6 @@
   {
     "last_name": "Bošković",
     "middle_name": "",
-    "first_name": "Radojka",
-    "fathers_name": "",
-    "full_name": "Bošković Radojka",
-    "additional_info": "Komandni sastav 14. hercegovačke (omladinske) brigade: referent saniteta 2. bataljona.",
-    "birth_year": "",
-    "pdf_page": 4,
-    "pdf_y": 113.1,
-    "pdf_x": 40.8,
-    "pdf_y_end": 123.1,
-    "pdf_file": "14-hercegovacka-komandni-sastav.pdf",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 124.9,
-    "soldier_id": "0081010023",
-    "rank": "referent saniteta"
-  },
-  {
-    "last_name": "Bošković",
-    "middle_name": "",
     "first_name": "Savo",
     "fathers_name": "",
     "full_name": "Bošković Savo",
@@ -27985,24 +28003,6 @@
   {
     "last_name": "Ivković",
     "middle_name": "",
-    "first_name": "Danilo",
-    "fathers_name": "",
-    "full_name": "Ivković Danilo",
-    "additional_info": "Komandni sastav 14. hercegovačke (omladinske) brigade: intendant brigade, 5. 5.-15. 45.",
-    "birth_year": "",
-    "pdf_page": 1,
-    "pdf_y": 320.1,
-    "pdf_x": 203.0,
-    "pdf_y_end": 330.1,
-    "pdf_file": "14-hercegovacka-komandni-sastav.pdf",
-    "unit_detail": "Štab brigade",
-    "pdf_x_end": 271.1,
-    "soldier_id": "0081010078",
-    "rank": "intendant brigade"
-  },
-  {
-    "last_name": "Ivković",
-    "middle_name": "",
     "first_name": "Sava",
     "fathers_name": "",
     "full_name": "Ivković Sava",
@@ -28285,24 +28285,6 @@
     "pdf_x_end": 112.0,
     "soldier_id": "0081010095",
     "rank": "zamjenik komandanta"
-  },
-  {
-    "last_name": "Kolak",
-    "middle_name": "",
-    "first_name": "Ljubo",
-    "fathers_name": "",
-    "full_name": "Kolak Ljubo",
-    "additional_info": "Komandni sastav 14. hercegovačke (omladinske) brigade: omladinski rukovodilac 2. čete 4. bataljona, 5. 9. 44-4. 10. 44.",
-    "birth_year": "",
-    "pdf_page": 8,
-    "pdf_y": 18.8,
-    "pdf_x": 217.4,
-    "pdf_y_end": 28.8,
-    "pdf_file": "14-hercegovacka-komandni-sastav.pdf",
-    "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 275.1,
-    "soldier_id": "0081010096",
-    "rank": "omladinski rukovodilac"
   },
   {
     "last_name": "Kolak",

@@ -125,6 +125,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Starešine brigade 1942–1943 po dolžnostih, od komandantov brigade do četnih bolničark, samo imena (str. 739–745 knjige)',
     '32-divizija-borci':
       'Borci štaba divizije, spremljevalnih enot, brigad Braća Radić, Matija Gubec, Mihovil Pavlek Miškina in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
+    '32-divizija-kadar':
+      'Starešine štaba divizije in enot pri štabu, brigad »Braća Radić«, »Matija Gubec«, »Mihovil Pavlek Miškina« in 1. zagorske, njihovih bataljonov in spremljevalnih čet, po dolžnostih (str. 286–295)',
     '18-hrvatska':
       'Seznam borcev brigade, preživelih in padlih: leto in kraj rojstva, narodnost, poklic, vstop v brigado, dolžnost, usoda (str. 582–696 knjige)',
     '18-hrvatska-starjesine':
@@ -251,6 +253,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev in starešin divizije po brigadah: kraj rojstva, dan in kraj smrti (str. 445–476)',
     '34-divizija':
       'Pregled padlih borcev in starešin divizije: čin, brigada, rojstvo, vstop v NOB, kraj in dan smrti (str. 401–432)',
+    '34-divizija-kadar':
+      'Starešine štaba divizije, divizijskega komiteja KPJ, političnega oddelka, intendanture in saniteta, brigad »Franjo Ogulinac Seljo«, 16. mladinske »Joža Vlahović«, karlovške in žumberške, partizanskih odredov in samostojnih enot divizije, po dolžnostih (str. 389–399)',
     '4-sandzacka':
       'Seznam padlih borcev in starešin (rojstvo, kje so padli) in seznam ranjenih s krajem in dnem ranitve (str. 460–485)',
     '3-primorsko-goranska':
@@ -319,6 +323,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam borcev bataljona, z letnico in krajem rojstva ter usodo (str. 262–277). Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo odprejo le člani Poreklo.',
     '4-pomorski-sektor':
       'Seznam borcev IV. POS 1943–1945, ki so ga sestavili Sekcija borcev sektorja in avtor (4.702 imeni, s krajem, od koder je kdo), ter padli in umrli borci sektorja z dolžnostjo in okoliščinami smrti (str. 418–478).',
+    '4-pomorski-sektor-stab':
+      'Komandanti, politični komisarji, njihovi pomočniki in načelniki štaba sektorja, s časom, ko je kdo opravljal dolžnost (priloga X, str. 485)',
     'viski-bataljon':
       'Seznam borcev Viškega prostovoljnega bataljona na Visu konec januarja 1944: poveljstvo, čete, vodi in desetini Biševa in Oključne (str. 538–539).',
     'kokrski-odred-1':
@@ -559,6 +565,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Starešine štaba brigade, političnega oddelka, bataljonov in čet 6. septembra 1942 v vasi Dobro pri Livnu: dolžnost, leto rojstva, narodnost, poklic (str. 55–58)',
     'zene-11-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 376): datum in kraj rojstva, dolžnost in čin, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
+    '11-dalmatinska-stabovi':
+      'Starešine štaba brigade s časom, ko je kdo opravljal dolžnost, čet pri štabu, previjališč in podčastniškega tečaja, štabov bataljonov in poveljstev čet, po dolžnostih (str. 611–624)',
     'osjecka-zene':
       'Borke Osiješke brigade po bataljonih, kot jih je štab brigade popisal za I. kongres AFŽ Hrvaške (dokument 420): datum in kraj rojstva, od kdaj so v partizanih',
     'dalmatinci-prva-proleterska':
@@ -685,6 +693,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Старешините на бригадата 1942–1943 по должности, од командантите на бригадата до четните болничарки, само имиња (стр. 739–745 од книгата)',
     '32-divizija-borci':
       'Борци на штабот на дивизијата, придружните единици, бригадите „Браќа Радиќ“, „Матија Губец“, „Миховил Павлек Мишкина“ и I ударна загорска, и борци со нецелосни податоци: година и место на раѓање, народност, занимање, кога стапиле во НОВ, судбина; борецот е наведен во секоја единица во која се борел (стр. 431–662 од книгата)',
+    '32-divizija-kadar':
+      'Старешините на штабот на дивизијата и единиците при штабот, на нејзините четири бригади, нивните баталјони и придружни чети, по должности (стр. 286–295)',
     '18-hrvatska':
       'Список на борците на бригадата, преживеани и загинати: година и место на раѓање, народност, занимање, кога стапиле во бригадата, должност, судбина (стр. 582–696 од книгата)',
     '18-hrvatska-starjesine':
@@ -811,6 +821,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци и раководители на дивизијата по бригади: место на раѓање, ден и место на загинувањето (стр. 445–476)',
     '34-divizija':
       'Преглед на загинатите борци и раководители на дивизијата: чин, бригада, раѓање, стапување во НОБ, место и ден на загинувањето (стр. 401–432)',
+    '34-divizija-kadar':
+      'Старешините на штабот на дивизијата, нејзиниот комитет на КПЈ, политичкиот оддел, интендантурата и санитетот, на нејзините четири бригади, партизанските одреди и самостојните единици, по должности (стр. 389–399)',
     '4-sandzacka':
       'Список на загинатите борци и раководители (раѓање, каде загинале) и список на ранетите, со местото и денот на ранувањето (стр. 460–485)',
     '3-primorsko-goranska':
@@ -879,6 +891,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на баталјонот, со година и место на раѓање и судбина (стр. 262–277). Книгата е скенирана во дигиталната библиотека на Порекло, која ја отвораат само членовите на Порекло.',
     '4-pomorski-sektor':
       'Попис на борците на IV ПОС 1943–1945, што го составија Секцијата на борците на секторот и авторот (4.702 имиња, со местото од каде е кој), и загинатите и умрените борци на секторот, со должноста и како загинале (стр. 418–478).',
+    '4-pomorski-sektor-stab':
+      'Командантите, политичките комесари, нивните помошници и началниците на штабот на секторот, со времето кога кој ја вршел должноста (прилог X, стр. 485)',
     'viski-bataljon':
       'Списокот на борците на Вишкиот доброволен баталјон на Вис кон крајот на јануари 1944: командата, четите, водовите и десетините од Бишево и Оклучна (стр. 538–539).',
     'kokrski-odred-1':
@@ -1119,6 +1133,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Старешините на штабот на бригадата, на политичкиот оддел, на баталјоните и четите на 6 септември 1942 во селото Добро кај Ливно: должност, година на раѓање, народност, занимање (стр. 55–58)',
     'zene-11-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 376): датум и место на раѓање, должност и чин, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
+    '11-dalmatinska-stabovi':
+      'Старешините на штабот на бригадата со времето кога кој ја вршел должноста, на четите при штабот, превивалиштата и подофицерскиот курс, на штабовите на баталјоните и командите на четите, по должности (стр. 611–624)',
     'osjecka-zene':
       'Жените борци на Осиечката бригада по баталјони, како што ги попишал штабот на бригадата за I конгрес на АФЖ на Хрватска (документ 420): датум и место на раѓање, од кога се во партизани',
     'dalmatinci-prva-proleterska':
@@ -1244,6 +1260,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s officers and cadre of 1942–1943 by duty, from its commanders to the company nurses, names only (pp. 739–745 of the book)',
     '32-divizija-borci':
       'Partisans of the division’s staff, its attached units, the Braća Radić, Matija Gubec, Mihovil Pavlek Miškina and 1st Zagorje Assault brigades, and some with incomplete details: year and place of birth, nationality, occupation, when they joined the army, fate; each is listed under every unit he fought in (pp. 431–662 of the book)',
+    '32-divizija-kadar':
+      'The officers of the division staff and the units at it, of its four brigades, their battalions and escort companies, by duty (pp. 286–295)',
     '18-hrvatska':
       'The brigade’s Partisans, survivors and the fallen: year and place of birth, nationality, occupation, when they joined the brigade, duty and fate (pp. 582–696 of the book)',
     '18-hrvatska-starjesine':
@@ -1370,6 +1388,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The division’s fallen soldiers and officers, by brigade: birthplace, and the day and place they fell (pp. 445–476)',
     '34-divizija':
       'The division’s fallen soldiers and officers: rank, brigade, birth, when they joined, and where and when they fell (pp. 401–432)',
+    '34-divizija-kadar':
+      'The officers of the division staff, its party committee, political department, intendance and medical service, of its four brigades, the partisan detachments and the units at the division staff, by duty (pp. 389–399)',
     '4-sandzacka':
       'The fallen soldiers and officers (birth, where they fell) and the wounded, with where and when they were wounded (pp. 460–485)',
     '3-primorsko-goranska':
@@ -1438,6 +1458,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The roll of the battalion’s fighters, with year and place of birth and what became of each (pp. 262–277). The book is scanned in the Poreklo digital library, which only Poreklo members can open.',
     '4-pomorski-sektor':
       'The roll of the 4th Naval Coastal Sector, 1943–1945, drawn up by the sector’s veterans’ section and the author (4,702 names, with where each came from), and the sector’s fallen and dead, with their duty and how they died (pp. 418–478).',
+    '4-pomorski-sektor-stab':
+      'The sector’s commanders, political commissars, their assistants and chiefs of staff, with the time each held the post (Appendix X, p. 485)',
     'viski-bataljon':
       'The roll of the Vis Volunteer Battalion at the end of January 1944: its command, companies, platoons and the Biševo and Oključna sections (pp. 538–539).',
     'kokrski-odred-1':
@@ -1678,6 +1700,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The officers of the brigade staff, the political department, the battalions and companies on 6 September 1942 in the village of Dobro near Livno: duty, year of birth, nationality, occupation (pp. 55–58)',
     'zene-11-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 376): date and place of birth, duty and rank, when they joined the army, decorations, and the staff’s opinion of each',
+    '11-dalmatinska-stabovi':
+      'The officers of the brigade staff with the time each held the post, of the companies at the staff, the dressing stations and the NCO course, the battalion staffs and company commands, by duty (pp. 611–624)',
     'osjecka-zene':
       'The women of the Osijek Brigade by battalion, as the brigade’s staff listed them for the 1st Congress of the AFŽ of Croatia (document 420): date and place of birth, when they joined the Partisans',
     'dalmatinci-prva-proleterska':

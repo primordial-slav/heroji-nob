@@ -79,7 +79,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 13. hercegovačka | Mensur Seferović | the officers, "Starješinski sastav" (270_7, pp. 305-315; **done**, `13-hercegovacka-starjesine.pdf`) | [00001/270](https://znaci.org/00001/270.htm) |
 | 2. dalmatinska | Nikola Anić | the staffs and commands, "Pregled štabova i komandi" (33_21, pp. 473-486; **done**, `2-dalmatinska-stabovi.pdf`) | [00001/33](https://znaci.org/00001/33.htm) |
 | 14. hercegovačka (omladinska) | Grupa autora | the command, Prilog 4 (268_5, pp. 234-242; **done**, `14-hercegovacka-komandni-sastav.pdf`) | [00001/268](https://znaci.org/00001/268.htm) |
-| 11. dalmatinska | Rako, Družijanić | fallen (p. 479, 26 pp.), missing (p. 505), survivors (p. 507, 94 pp.) | [00003/547](https://znaci.org/00003/547.htm) |
+| 11. dalmatinska | Rako, Družijanić | fallen (p. 479, 26 pp.), missing (p. 505), survivors (p. 507, 94 pp.), the staffs and commands (PDF pp. 599-612, book pp. 611-624; **done**, `11-dalmatinska-stabovi.pdf`) | [00003/547](https://znaci.org/00003/547.htm) |
 | 12. dalmatinska (Prva otočka) | Nikola Anić | notes and fallen (already downloaded: `website/public/pdfs/12-dalmatinska.pdf`, 58 pp.); the staffs (PDF pp. 22-25, book pp. 339-342; **done**, `parse_12_dalmatinska_kadrovi.py`) | [00001/80](https://znaci.org/00001/80.htm) |
 | 12. hercegovačka | Osman Đikić | fallen (p. 207, 15 pp.) | [00001/243](https://znaci.org/00001/243.htm) |
 | 13. hercegovačka | Mensur Seferović | fallen (p. 316, 14 pp.) | [00001/270](https://znaci.org/00001/270.htm) |
@@ -120,7 +120,7 @@ For units on the site its entries are a second book (merge with `find_source_dup
 | 9. dalmatinska divizija | Obrad Egić | fallen of the division (p. 121, 5 pp.) and of the 3. dalmatinska (p. 126) | [00001/187](https://znaci.org/00001/187.htm) |
 | 19. sjevernodalmatinska divizija | Dragutin Grgurević | fallen and died (p. 253, 48 pp.), leaders (p. 233; the command table, Politodjel and heroes pp. 240-252 **done**, `19-sjevernodalmatinska-kadar.pdf`) | [00003/575](https://znaci.org/00003/575.htm) |
 | 22. divizija | Živojin Nikolić Brka | fallen (p. 445, 32 pp.) | [00001/235](https://znaci.org/00001/235.htm) |
-| 34. divizija | Vladimir Hlaić | fallen (p. 401, 32 pp.; [641_1.pdf](https://znaci.org/00003/641_1.pdf)) | [00003/641](https://znaci.org/00003/641.htm) |
+| 34. divizija | Vladimir Hlaić | fallen (p. 401, 32 pp.; [641_1.pdf](https://znaci.org/00003/641_1.pdf)), command (PDF pp. 407-417, book pp. 389-399; **done**, `34-divizija-kadar.pdf`) | [00003/641](https://znaci.org/00003/641.htm) |
 | 51. vojvođanska divizija | Sreta Savić | fallen, by brigade ([152_8.pdf](https://znaci.org/00001/152_8.pdf)) | [00001/152](https://znaci.org/00001/152.htm) |
 | 42. vazduhoplovna divizija | Predrag Pejčić | fallen (p. 279), personnel by regiment | [00001/238](https://znaci.org/00001/238.htm) |
 | 1. i 2. eskadrila NOVJ | Predrag Pejčić | personnel (p. 331), fallen (p. 311) | [00001/115](https://znaci.org/00001/115.htm) |
@@ -189,7 +189,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Osma krajiška (14) | *Sjećanja boraca* | fallen and died (p. 689; on the site as `8-krajiska-sjecanja-poginuli.pdf`, a second book: **done**, `parse_8_krajiska_sjecanja.py`), corrections to the monograph (p. 743) | [00001/68](https://znaci.org/00001/68.htm) |
 | Prva vojvođanska (9) | *Mladost slobodi darovana* | roster ([132_7.pdf](https://znaci.org/00001/132_7.pdf), 33 pp.) | [00001/132](https://znaci.org/00001/132.htm) |
 | 7. crnogorska omladinska (28) | Zbornik sjećanja | fallen (p. 709, 26 pp.; a second book: **done**, `parse_7_crnogorska_zbornik.py`) | [00003/471](https://znaci.org/00003/471.htm) |
-| 32. divizija (35) | *32. divizija NOVJ* | **Borci 32. divizije** (p. 431, ~220 pp.), incomplete (p. 653) | [00003/542](https://znaci.org/00003/542.htm) |
+| 32. divizija (35) | *32. divizija NOVJ* | **Borci 32. divizije** (p. 431, ~220 pp.), incomplete (p. 653), the command (PDF pp. 373-382, book pp. 286-295; **done**, `32-divizija-kadar.pdf`) | [00003/542](https://znaci.org/00003/542.htm) |
 | Tuzlanski odred (25) | companion volume | roster (p. 325, 114 pp.; the same list as the site’s, not added) | [00003/469](https://znaci.org/00003/469.htm) |
 | 17. slavonska (16) | *28. slavonska divizija* | fallen at Ludbreg 6. VII 1944 (p. 287), and 3. X 1943 with the Braća Radić at Šemovec (pp. 84-85) (on the site as `ludbreg-poginuli.pdf`, a book across units: **done**, `parse_ludbreg_poginuli.py`) | [00001/189](https://znaci.org/00001/189.htm) |
 | Druga proleterska, Treća sandžačka, Treća krajiška, Prva i Druga dalmatinska | *Borci Sutjeske* | see §1 | |
@@ -206,7 +206,7 @@ Not checked (the PDF makes the reader scan the whole file, or has no text layer)
 | Milan Brunović, Tomo Sović, *Bitka kod Oborova* | the fallen (p. 158, 3 pp.; **done**: `bitka-kod-oborova-poginuli.pdf`, a book across units) | [00003/660](https://znaci.org/00003/660.htm) |
 | *Istočna Bosna u NOR-u* 2 | fallen of the 6. istočnobosanska (PDF p. 478, 7 pp.) | [00003/751](https://znaci.org/00003/751.php) |
 | *Žene Hrvatske u NOB* | women of the VI. korpus who fell (p. 301, 12 pp.), women of the 1. bataljon of the Osječka (p. 282) | [00003/585](https://znaci.org/00003/585.htm) |
-| Kažimir Pribilović, *Četvrti pomorski obalni sektor* | fallen and died (p. 473, 6 pp.) | [00003/652](https://znaci.org/00003/652.htm) |
+| Kažimir Pribilović, *Četvrti pomorski obalni sektor* | fallen and died (p. 473, 6 pp.), the staff (Prilog X, 652_1 p. 70, book p. 485; **done**, `4-pomorski-sektor-stab.pdf`) | [00003/652](https://znaci.org/00003/652.htm) |
 | Jaša Romano, *Jevreji Jugoslavije 1941–1945* | Jewish participants in the NOR ([191_4.pdf](https://znaci.org/00001/191_4.pdf), 205 pp.), spomenica holders, narodni heroji | [00001/191](https://znaci.org/00001/191.htm) |
 | *Sanitetska služba u NOR-u*, knj. IV | doctors who lost their lives in the war, a bio each ([199_15.htm](https://znaci.org/00001/199_15.htm), a web page; on the site as a book across units, those in the army only: **done**, `parse_sanitetska_lekari.py`) | [00001/199](https://znaci.org/00001/199.htm) |
 | *Vojnotehnička radionica Vrhovnog štaba NOV i POJ u Grmeču* | the workshop’s workers, guards and the Drvar foundry’s workers (PDF pp. 359-362): **done**, a second book of unit 112, `parse_vtr_grmec.py` | [00003/766](https://znaci.org/00003/766.php) |

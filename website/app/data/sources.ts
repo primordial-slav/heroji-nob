@@ -496,6 +496,15 @@ export const sources: PdfSource[] = [
     description: 'Borci štaba divizije, prištapskih jedinica, brigada Braća Radić, Matija Gubec, Mihovil Pavlek Miškina i I udarne zagorske, i borci s nepotpunim podacima: godina i mesto rođenja, narodnost, zanimanje, kada su stupili u NOV, sudbina; borac je naveden u svakoj jedinici u kojoj se borio (str. 431–662 knjige)'
   },
   {
+    id: '32-divizija-kadar',
+    title: '32. divizija NOVJ — komandni sastav',
+    author: 'Grupa autora',
+    pdfPath: '/pdfs/32-divizija-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/32-divizija-kadar.jpg',
+    brigadeName: '32. divizija',
+    description: 'Starešine štaba divizije i jedinica pri štabu, brigada »Braća Radić«, »Matija Gubec«, »Mihovil Pavlek Miškina« i 1. zagorske, njihovih bataljona i pratećih četa, po dužnostima (str. 286–295)'
+  },
+  {
     id: '1-dalmatinska',
     title: 'Prva dalmatinska proleterska brigada — spisak poginulih',
     author: 'Mirko Novović',
@@ -926,6 +935,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zene-11-dalmatinska.jpg',
     brigadeName: '11. dalmatinska brigada',
     description: 'Spisak žena boraca brigade iz 1944–1945 (dokument 376): datum i mesto rođenja, dužnost i čin, kada su stupile u NOV, odlikovanja i mišljenje štaba o svakoj'
+  },
+  {
+    id: '11-dalmatinska-stabovi',
+    title: 'Jedanaesta dalmatinska udarna brigada — pregled štabova i komandi',
+    author: 'Milan Rako, Slavko Družijanić',
+    pdfPath: '/pdfs/11-dalmatinska-stabovi.pdf',
+    thumbnail: '/images/pdf-thumbs/11-dalmatinska-stabovi.jpg',
+    brigadeName: '11. dalmatinska brigada',
+    description: 'Starešine štaba brigade s vremenom kad je ko bio na dužnosti, prištapskih četa, previjališta i podoficirskog kursa, štabova bataljona i komandi četa, po dužnostima (str. 611–624)'
   },
   {
     id: '12-krajiska-poginuli',
@@ -1439,6 +1457,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/34-divizija.jpg',
     brigadeName: '34. divizija',
     description: 'Pregled poginulih boraca i rukovodilaca divizije: čin, brigada, rođenje, stupanje u NOB, mesto i dan pogibije (str. 401–432)'
+  },
+  {
+    id: '34-divizija-kadar',
+    title: '34. udarna divizija — vojno i političko-partijsko rukovodstvo',
+    author: 'Vladimir Hlaić',
+    pdfPath: '/pdfs/34-divizija-kadar.pdf',
+    thumbnail: '/images/pdf-thumbs/34-divizija-kadar.jpg',
+    brigadeName: '34. divizija',
+    description: 'Starešine štaba divizije, divizijskog komiteta KPJ, političkog odeljenja, intendanture i saniteta, brigada »Franjo Ogulinac Seljo«, 16. omladinske »Joža Vlahović«, Karlovačke i Žumberačke, partizanskih odreda i samostalnih jedinica divizije, po dužnostima (str. 389–399)'
   },
   {
     id: '4-sandzacka',
@@ -2457,6 +2484,15 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/4-pomorski-sektor.jpg',
     brigadeName: 'IV pomorski obalni sektor',
     description: 'Popis boraca IV POS-a 1943–1945, koji su sastavili Sekcija boraca sektora i autor (4.702 imena, sa mestom odakle je ko), i poginuli i umrli borci sektora, sa dužnošću i kako su pali (str. 418–478).'
+  },
+  {
+    id: '4-pomorski-sektor-stab',
+    title: 'Četvrti pomorski obalni sektor Mornarice NOVJ — štab IV POS-a',
+    author: 'Kažimir Pribilović',
+    pdfPath: '/pdfs/4-pomorski-sektor-stab.pdf',
+    thumbnail: '/images/pdf-thumbs/4-pomorski-sektor-stab.jpg',
+    brigadeName: 'IV pomorski obalni sektor',
+    description: 'Komandanti, politički komesari, njihovi pomoćnici i načelnici štaba sektora, s vremenom kad je ko bio na dužnosti (Prilog X, str. 485)'
   },
   {
     id: 'viski-bataljon',

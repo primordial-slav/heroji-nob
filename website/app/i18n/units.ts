@@ -158,7 +158,7 @@ const sl: Record<string, UnitText> = {
   '32-zagorska-divizija': {
     name: '32. zagorska divizija',
     description:
-      'Ustanovljena 12. decembra 1943 na Kalniku. Borci divizije in Zahodne skupine odredov ter borci štaba in brigad divizije, s podatki o vsakem.',
+      'Ustanovljena 12. decembra 1943 na Kalniku. Borci divizije in Zahodne skupine odredov ter borci štaba in brigad divizije, s podatki o vsakem, in poveljniški sestav.',
   },
   '1-dalmatinska-brigada': {
     name: '1. dalmatinska proletarska brigada',
@@ -252,7 +252,7 @@ const sl: Record<string, UnitText> = {
   '11-dalmatinska-brigada': {
     name: '11. dalmatinska brigada',
     description:
-      'Ustanovljena 2. oktobra 1943 na Biokovu. Padli, pogrešani in preživeli borci.',
+      'Ustanovljena 2. oktobra 1943 na Biokovu. Padli, pogrešani in preživeli borci ter starešine štabov in poveljstev.',
   },
   '12-krajiska-brigada': {
     name: '12. krajiška brigada',
@@ -472,7 +472,7 @@ const sl: Record<string, UnitText> = {
   '34-divizija': {
     name: '34. divizija',
     description:
-      'Ustanovljena 30. januarja 1944 na Žumberku in v Pokuplju. Padli borci in starešine divizije in njenih brigad.',
+      'Ustanovljena 30. januarja 1944 na Žumberku in v Pokuplju. Padli borci in starešine divizije in njenih brigad ter poveljniški sestav.',
   },
   '4-sandzacka-brigada': {
     name: '4. sandžaška brigada',
@@ -626,7 +626,7 @@ const sl: Record<string, UnitText> = {
   },
   '4-pomorski-sektor': {
     name: 'IV. pomorski obalni sektor',
-    description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja in od kod je kdo, pri padlih in umrlih tudi kje so padli.',
+    description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja in od kod je kdo, pri padlih in umrlih tudi kje so padli, ter štab sektorja.',
   },
   'viski-bataljon': {
     name: 'Viški prostovoljni bataljon',
@@ -915,7 +915,7 @@ const mk: Record<string, UnitText> = {
   '32-zagorska-divizija': {
     name: '32-ра загорска дивизија',
     description:
-      'Формирана на 12 декември 1943 на Калник. Борци на дивизијата и на Западната група одреди, и борци на штабот и бригадите на дивизијата, со податоци за секого.',
+      'Формирана на 12 декември 1943 на Калник. Борци на дивизијата и на Западната група одреди, и борци на штабот и бригадите на дивизијата, со податоци за секого, и командниот состав.',
   },
   '1-dalmatinska-brigada': {
     name: '1-ва далматинска пролетерска бригада',
@@ -1009,7 +1009,7 @@ const mk: Record<string, UnitText> = {
   '11-dalmatinska-brigada': {
     name: '11-та далматинска бригада',
     description:
-      'Формирана на 2 октомври 1943 на Биоково. Загинати, исчезнати и преживеани борци.',
+      'Формирана на 2 октомври 1943 на Биоково. Загинати, исчезнати и преживеани борци и старешините на штабовите и командите.',
   },
   '12-krajiska-brigada': {
     name: '12-та краишка бригада',
@@ -1229,7 +1229,7 @@ const mk: Record<string, UnitText> = {
   '34-divizija': {
     name: '34-та дивизија',
     description:
-      'Формирана на 30 јануари 1944 на Жумберак и во Покупље. Загинатите борци и раководители на дивизијата и нејзините бригади.',
+      'Формирана на 30 јануари 1944 на Жумберак и во Покупље. Загинатите борци и раководители на дивизијата и нејзините бригади и командниот состав.',
   },
   '4-sandzacka-brigada': {
     name: '4-та санџачка бригада',
@@ -1383,7 +1383,7 @@ const mk: Record<string, UnitText> = {
   },
   '4-pomorski-sektor': {
     name: 'IV поморски крајбрежен сектор',
-    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и умрените и каде паднале.',
+    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и умрените и каде паднале, и штабот на секторот.',
   },
   'viski-bataljon': {
     name: 'Вишки доброволен баталјон',
@@ -1674,7 +1674,7 @@ const en: Record<string, UnitText> = {
   '32-zagorska-divizija': {
     name: '32nd Zagorje Division',
     description:
-      'Formed on 12 December 1943 on Kalnik. Members of the division and of the Western Group of Detachments, and of the division’s staff and brigades, with details of each.',
+      'Formed on 12 December 1943 on Kalnik. Members of the division and of the Western Group of Detachments, and of the division’s staff and brigades, with details of each, and its command.',
   },
   '1-dalmatinska-brigada': {
     name: '1st Dalmatian Proletarian Brigade',
@@ -1768,7 +1768,7 @@ const en: Record<string, UnitText> = {
   '11-dalmatinska-brigada': {
     name: '11th Dalmatian Brigade',
     description:
-      'Formed on 2 October 1943 on Biokovo. Partisans who were killed, went missing or survived.',
+      'Formed on 2 October 1943 on Biokovo. Partisans who were killed, went missing or survived, and the officers of its staffs and companies.',
   },
   '12-krajiska-brigada': {
     name: '12th Krajina Brigade',
@@ -1988,7 +1988,7 @@ const en: Record<string, UnitText> = {
   '34-divizija': {
     name: '34th Division',
     description:
-      'Formed on 30 January 1944 in Žumberak and Pokuplje. The fallen soldiers and officers of the division and its brigades.',
+      'Formed on 30 January 1944 in Žumberak and Pokuplje. The fallen soldiers and officers of the division and its brigades, and its command.',
   },
   '4-sandzacka-brigada': {
     name: '4th Sandžak Brigade',
@@ -2142,7 +2142,7 @@ const en: Record<string, UnitText> = {
   },
   '4-pomorski-sektor': {
     name: '4th Naval Coastal Sector',
-    description: 'Formed on 30 October 1943 at Hvar, the Partisan Navy’s sector for central Dalmatia and its islands. Every fighter of the sector and where each came from, and for the fallen and dead where they fell.',
+    description: 'Formed on 30 October 1943 at Hvar, the Partisan Navy’s sector for central Dalmatia and its islands. Every fighter of the sector and where each came from, and for the fallen and dead where they fell, and the sector’s staff.',
   },
   'viski-bataljon': {
     name: 'Vis Volunteer Battalion',

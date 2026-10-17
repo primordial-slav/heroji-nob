@@ -46,7 +46,7 @@ export const units: Unit[] = [
     nameEn: '2nd Lika Proletarian Brigade',
     description: 'Formirana 18. avgusta 1942. u Laudonovom gaju. Poginuli, umrli i nestali borci, oni koji su preživeli rat, i starešine štaba brigade i bataljona.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 7608,
+    soldierCount: 7601,
     dataFile: '/druga-licka-soldiers.json',
     pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf', '/pdfs/druga-licka-sjecanja-poginuli.pdf', '/pdfs/druga-licka-staresine.pdf']
   },
@@ -76,7 +76,7 @@ export const units: Unit[] = [
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. Borci brigade i štabovi i komande brigade, bataljona i četa.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 6264,
+    soldierCount: 6223,
     dataFile: '/2-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf', '/pdfs/2-dalmatinska-stabovi.pdf']
   },
@@ -86,7 +86,7 @@ export const units: Unit[] = [
     nameEn: '4th Split Assault Brigade',
     description: 'Formirana u septembru 1943. Poginuli i preživeli borci.',
     image: '/images/4-splitska-brigada.jpg',
-    soldierCount: 3076,
+    soldierCount: 3075,
     dataFile: '/4-splitska-soldiers.json',
     pdfFiles: ['/pdfs/4-splitska-brigada.pdf']
   },
@@ -354,11 +354,11 @@ export const units: Unit[] = [
     id: '32-zagorska-divizija',
     name: '32. zagorska divizija',
     nameEn: '32nd Zagorje Division',
-    description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda, i borci štaba i brigada divizije, s podacima o svakom.',
+    description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda, i borci štaba i brigada divizije, s podacima o svakom, i komandni sastav.',
     image: '/images/32-zagorska-divizija.jpg',
-    soldierCount: 18069,
+    soldierCount: 18635,
     dataFile: '/32-divizija-soldiers.json',
-    pdfFiles: ['/pdfs/32-divizija.pdf', '/pdfs/32-divizija-borci.pdf']
+    pdfFiles: ['/pdfs/32-divizija.pdf', '/pdfs/32-divizija-borci.pdf', '/pdfs/32-divizija-kadar.pdf']
   },
   {
     id: '1-dalmatinska-brigada',
@@ -366,7 +366,7 @@ export const units: Unit[] = [
     nameEn: '1st Dalmatian Proletarian Brigade',
     description: 'Formirana 6. septembra 1942. u selu Dobro kod Livna. Borci poginuli u ratu, borci na Sutjesci, žene borci 1944–1945, komandiri i komesari četa i komandni sastav brigade i bataljona.',
     image: '/images/1-dalmatinska-brigada.jpg',
-    soldierCount: 3357,
+    soldierCount: 3330,
     dataFile: '/1-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-monografija.pdf', '/pdfs/zene-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-komandni-sastav.pdf', '/pdfs/1-dalmatinska-formiranje.pdf']
   },
@@ -544,11 +544,11 @@ export const units: Unit[] = [
     id: '11-dalmatinska-brigada',
     name: '11. dalmatinska brigada',
     nameEn: '11th Dalmatian Brigade',
-    description: 'Formirana 2. oktobra 1943. na Biokovu. Poginuli, nestali i preživeli borci.',
+    description: 'Formirana 2. oktobra 1943. na Biokovu. Poginuli, nestali i preživeli borci i starešine štabova i komandi.',
     image: '/images/11-dalmatinska-brigada.jpg',
-    soldierCount: 3529,
+    soldierCount: 3588,
     dataFile: '/11-dalmatinska-soldiers.json',
-    pdfFiles: ['/pdfs/11-dalmatinska.pdf', '/pdfs/zene-11-dalmatinska.pdf']
+    pdfFiles: ['/pdfs/11-dalmatinska.pdf', '/pdfs/zene-11-dalmatinska.pdf', '/pdfs/11-dalmatinska-stabovi.pdf']
   },
   {
     id: '12-krajiska-brigada',
@@ -826,7 +826,7 @@ export const units: Unit[] = [
     nameEn: '14th Herzegovina Brigade',
     description: 'Formirana 4. septembra 1944. kod Ljubinja, kao omladinska brigada. Svi borci koji su prošli kroz brigadu, poginuli i komandni sastav.',
     image: '/images/14-hercegovacka-brigada.jpg',
-    soldierCount: 1551,
+    soldierCount: 1548,
     dataFile: '/14-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/14-hercegovacka.pdf', '/pdfs/14-hercegovacka-komandni-sastav.pdf']
   },
@@ -984,11 +984,11 @@ export const units: Unit[] = [
     id: '34-divizija',
     name: '34. divizija',
     nameEn: '34th Division',
-    description: 'Formirana 30. januara 1944. na Žumberku i u Pokuplju. Poginuli borci i rukovodioci divizije i njenih brigada.',
+    description: 'Formirana 30. januara 1944. na Žumberku i u Pokuplju. Poginuli borci i rukovodioci divizije i njenih brigada, i komandni sastav.',
     image: '/images/34-divizija.jpg',
-    soldierCount: 1415,
+    soldierCount: 1857,
     dataFile: '/34-divizija-soldiers.json',
-    pdfFiles: ['/pdfs/34-divizija.pdf']
+    pdfFiles: ['/pdfs/34-divizija.pdf', '/pdfs/34-divizija-kadar.pdf']
   },
   {
     id: '4-sandzacka-brigada',
@@ -1006,7 +1006,7 @@ export const units: Unit[] = [
     nameEn: '3rd Primorje–Gorski Kotar Brigade',
     description: 'Formirana 15. septembra 1943. u Škrljevu u Hrvatskom primorju. Štabovi brigade i bataljona, starešine i četni bolničari brigade i poginuli.',
     image: '/images/3-primorsko-goranska.jpg',
-    soldierCount: 829,
+    soldierCount: 825,
     dataFile: '/3-primorsko-goranska-soldiers.json',
     pdfFiles: ['/pdfs/3-primorsko-goranska.pdf', '/pdfs/3-primorsko-goranska-stabovi.pdf']
   },
@@ -1484,11 +1484,11 @@ export const units: Unit[] = [
     id: '4-pomorski-sektor',
     name: 'IV pomorski obalni sektor',
     nameEn: '4th Naval Coastal Sector',
-    description: 'Formiran 30. oktobra 1943. u Hvaru, sektor Mornarice NOVJ za srednju Dalmaciju i ostrva. Svi borci sektora i odakle je ko, a poginuli i umrli i gde su pali.',
+    description: 'Formiran 30. oktobra 1943. u Hvaru, sektor Mornarice NOVJ za srednju Dalmaciju i ostrva. Svi borci sektora i odakle je ko, a poginuli i umrli i gde su pali, i štab sektora.',
     image: '/images/4-pomorski-sektor.jpg',
-    soldierCount: 4703,
+    soldierCount: 4718,
     dataFile: '/4-pomorski-sektor-soldiers.json',
-    pdfFiles: ['/pdfs/4-pomorski-sektor.pdf']
+    pdfFiles: ['/pdfs/4-pomorski-sektor.pdf', '/pdfs/4-pomorski-sektor-stab.pdf']
   },
   {
     id: 'novosadski-odred',

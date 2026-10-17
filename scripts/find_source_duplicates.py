@@ -216,9 +216,11 @@ def fate(s: dict) -> str:
     return ''
 
 
-DUTY = re.compile(r'\b(komandant|komandir|komesar|na[cč]elnik|zamjeni|zameni|pomo[cć]ni|delegat)\w*', re.I)
-LEVEL = re.compile(r'^\W*(?:\S+\s+){0,3}?\(?(brigad|bataljon|[cč]et)', re.I)
-SAME_DUTY = {'pomocn': 'zamjen', 'zameni': 'zamjen'}       # "zamjenik (pomoćnik) komesara" = "pomoćnik komesara"
+DUTY = re.compile(r'\b(komandant|komandir|(?:polit)?komesar|na[cč]elnik|zamjeni|zameni|pomo[cć]ni|delegat|intendant|'
+                  r'referent|rukovodila|sekretar|oficir)\w*', re.I)
+# the level, also as the 11. dalmatinska's roll writes it: "politkomesar 2. č. 5. bat."
+LEVEL = re.compile(r'^\W*(?:\S+\s+){0,3}?\(?(brigad|bataljon|bat\.|[cč]et|[cč]\.)', re.I)
+SAME_DUTY = {'pomocn': 'zamjen', 'zameni': 'zamjen', 'politk': 'komesa'}   # "zamjenik (pomoćnik) komesara" = "pomoćnik komesara"
 
 
 def duties(s: dict) -> set:
@@ -229,8 +231,8 @@ def duties(s: dict) -> set:
     for m in DUTY.finditer(text):
         level = LEVEL.match(text[m.end():m.end() + 40])
         if level:
-            duty = fold(m.group(1))[:6]
-            found.add((SAME_DUTY.get(duty, duty), fold(level.group(1))[:3]))
+            duty, lv = fold(m.group(1))[:6], fold(level.group(1))
+            found.add((SAME_DUTY.get(duty, duty), 'cet' if lv[:1] == 'c' else lv[:3]))
     return found
 
 

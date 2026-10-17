@@ -47,6 +47,7 @@ OVERRIDES = {
     'Ignjatija': (None, 'Ignjatije'), 'Aleksija': (None, 'Aleksije'),
     'Isaila': (None, 'Isailo'), 'Mikaila': (None, 'Mikailo'),
     'Ćetka': (None, 'Ćetko'), 'Trivka': (None, 'Trivko'), 'Vica': (None, 'Vice'),
+    'Emanuela': (None, 'Emanuel'),          # a rare form once the 11. dalmatinska's became Emanuel; 9 Emanuels fail the rare test
 }
 
 

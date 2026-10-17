@@ -93,6 +93,10 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '13-hercegovacka-starjesine.pdf',   # the 13. hercegovačka's officers: a man boxed at his name
                   '14-hercegovacka-komandni-sastav.pdf',   # the 14. hercegovačka's command, the same
                   '2-dalmatinska-stabovi.pdf',   # the 2. dalmatinska's staffs and commands, the same
+                  '11-dalmatinska-stabovi.pdf',   # the 11. dalmatinska's staffs and commands, the same
+                  '34-divizija-kadar.pdf',   # the 34. divizija's command, a name boxed where it runs on
+                  '32-divizija-kadar.pdf',   # the 32. divizija's command, the same
+                  '4-pomorski-sektor-stab.pdf',   # the IV POS's staff, a man boxed at his name
                   '6-vojvodjanska-stabovi.pdf',   # the 6. vojvođanska's staffs: names run on under each duty
                   '4-banijska-starjesine.pdf',   # the 4. banijska's officers: names run on under each duty
                   '15-brigada-stabi.pdf',   # the 15. brigada's officers: a man boxed at his first post
