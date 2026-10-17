@@ -46,6 +46,14 @@ const FOCUS: Record<string, number> = {
   'posavsko-trebavski-odred': 34,
   'pozarevacki-odred': 23,
   'pionirska-ceta-divoselo': 25,
+  '9-dalmatinska-divizija': 62,
+  '4-brigada-slavonije': 56,
+  '12-slavonska-brigada': 35,
+  'zagrebacki-odred': 27,
+  'mosorski-odred': 37,
+  'turopoljsko-posavski-odred': 46,
+  '5-srpska-brigada': 60,
+  '9-srpska-brigada': 44,
 }
 
 // The object-position for a unit's photo in a wide crop; undefined keeps the stylesheet's default

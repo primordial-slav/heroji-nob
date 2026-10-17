@@ -489,10 +489,12 @@ UNITS = {
         name="Čačanski NOP odred", tags=[],
         caption=r"[cč]a[cč]ansk\w*\s+(?:nop\s+|narodnooslobodila[cč]k\w*\s+)?(?:partizansk\w*\s+)?odred", photo=14459),
     "5-srpska-brigada": dict(
-        name="5. srpska brigada", tags=[],
-        caption=nth(5, r"srpsk") + r"|(?:3\.|tre[cć]\w*)\s+ju[zž]nomoravsk", photo=None,
-        note="Nothing in the gallery names the brigade, and its book (Jovanović, Mirčetić, Peta srpska NOU brigada) "
-             "prints only maps: the card shows the first page of its list of the fallen."),
+        name="5. srpska brigada", tags=['5-srpska-brigada-3-juznomoravska'],
+        caption=nth(5, r"srpsk") + r"|(?:3\.|tre[cć]\w*)\s+ju[zž]nomoravsk", photo=5422,
+        card="III omladinski bataljon V srpske brigade, XXI srpske divizije pri povratku sa Sremskog fronta "
+             "/na Savskom mostu/. Marta 1945.",
+        note="Tagged with the brigade on znaci.org, the description is on the museum's caption card. Its book "
+             "(Jovanović, Mirčetić, Peta srpska NOU brigada) prints only maps."),
     "18-srpska-brigada": dict(
         name="18. srpska brigada", tags=["18-srpska-brigada"],
         caption=nth(18, r"srpsk") + r"|jastreba[cč]k\w*\s+brigad", photo=None,
@@ -535,16 +537,21 @@ UNITS = {
         caption=r"kozjansk\w*\s+(?:partizansk\w*\s+)?(?:odred|bataljon|čet)", photo=None,
         note="Nothing in the gallery names the odred, and its book on znaci.org (00003/2085-2086) is whole-page scans; the card shows the roster's first page."),
     "9-srpska-brigada": dict(
-        name="9. srpska brigada", tags=[],
+        name="9. srpska brigada", tags=['9-srpska-brigada-ozrenska'],
         caption=r"(?:9\.|devet\w*)\s+srpsk\w*\s+(?:udarn\w*\s+)?brigad", photo=None,
-        note="The gallery's only match (4909) shows the 19. srpska entering Negotin; znaci.org has no photo pages of its spomen-knjiga. The card shows the list's first page."),
+        book=dict(pdf="00001/121_4.pdf", page=29, xref=235,
+                  caption="Prva, druga i treća četa 9. brigade, „negde u Bosni\", (proleće 1945)"),
+        crop=(0.0, 0.282, 1.0, 0.712),
+        note="The gallery's only match (4909) shows the 19. srpska entering Negotin. The photo is from its own book's "
+             "pictures (\"Portret Devete u brojkama, svedočanstva u slici\"): three companies' photos printed one above "
+             "the other, the crop keeps the middle one."),
     "4-prekomorska-brigada": dict(
         name="4. prekomorska brigada", tags=[],
         caption=r"(?:4\.|[cč]etrt\w*)\s+prekomorsk\w*\s+brigad", photo=None,
         book=dict(pdf="00003/783.pdf", page=95, xref=765, caption="Skupina pripadnikov 4. prekomorske brigade v Monopoliju leta 1944"),
         note="Nothing in the gallery names the brigade; the photo is from its book (Pervanje, Hočevar)."),
     "deveta-brigada": dict(
-        name="Deveta brigada (IX. SNOUB)", tags=[],
+        name="Deveta brigada (IX. SNOUB)", tags=['9-slovenska-brigada'],
         caption=r"(?:9\.|devet\w*|IX\.)\s+(?:slovensk\w*\s+)?(?:narodnoosvobodilne\s+)?(?:udarne\s+)?brigad\w*(?!\s+(?:srpsk|dalmat|krajišk|hercegov|crnogorsk))|kočevsk\w*\s+brigad", photo=None,
         note="The gallery's only match (15572) is a portrait of one doctor; the brigade's book on znaci.org (00003/2849-2850) is whole-page scans. The card shows the roster's page."),
     "novosadski-odred": dict(
@@ -558,7 +565,7 @@ UNITS = {
                   caption="Četa mornaričke pješadije IV POS-a u Hvaru, septembar 1944."),
         note="Nothing in the gallery names the sektor; the photo is from its book (Pribilović, Sl. 67)."),
     "cankarjev-bataljon": dict(
-        name="Cankarjev bataljon", tags=[],
+        name="Cankarjev bataljon", tags=['cankarjev-bataljon'],
         caption=r"cankarjev\w*\s+bataljon|dražgo\w*", photo=None,
         note="Nothing in the gallery names the battalion, and its book on znaci.org (00003/1080) has no captioned group photo. The card shows the list of its fallen."),
     "kokrski-odred": dict(
@@ -569,10 +576,49 @@ UNITS = {
                           "vojaki pred tiskarno, kmalu po prihodu v Celovec"),
         crop=(0.08, 0.085, 0.89, 0.40), descreen=1.6,
         note="Nothing in the gallery names the odred; the photo is from its book (Jan, III, p. 377), a 1-bit page scan: the crop keeps the photo, the descreen softens its dots."),
+    "9-dalmatinska-divizija": dict(
+        name="9. dalmatinska divizija", tags=["9-dalmatinska-divizija-novj"],
+        caption=r"(?<![\dXVIL.])(?:9\.|IX\.?|devet\w*)\s+(?:dalmatinsk\w*\s+)?(?:udarn\w*\s+)?divizij", photo=8134,
+        card="Borci IX dalmatinske divizije prenose ranjenike preko Neretve kod Jablanice, marta 1943. godine.",
+        crop=(0.0, 0.3, 1.0, 1.0),
+        note="Tagged with the division on znaci.org, the description is on the museum's caption card (the crop keeps "
+             "the column on the broken bridge)."),
+    "4-brigada-slavonije": dict(
+        name="4. brigada Slavonije", tags=[],
+        caption=r"(?<![\d.])(?:4\.|IV\.?|četvrt\w*)\s+(?:udarn\w*\s+)?brigad\w*\s+slavonij|(?<![\d.])(?:2\.|II\.?|drug\w*)\s+brodsk", photo=None,
+        book=dict(pdf="00001/190_6.pdf", page=2, xref=9, caption="Stroj brigade 28. 09. 1944., u Podravskoj Slatini."),
+        note="Nothing in the gallery names the brigade; the photo is from its own book's pictures (00001/190_6, Sl. 4)."),
+    "12-slavonska-brigada": dict(
+        name="12. proleterska slavonska brigada", tags=["12-slavonska-proleterska-udarna-brigada"],
+        caption=r"(?<![\d.])(?:12\.|XII\.?|dvanaest\w*)\s+(?:proletersk\w*\s+)?slavonsk\w*\s+(?:proletersk\w*\s+)?(?:udarn\w*\s+)?brigad", photo=7729,
+        card="Deo XII udarne brigade /Slavonske/ posle predaje zastave, jesen 1943.",
+        crop=(0.0, 0.22, 1.0, 0.66),
+        note="Tagged with the brigade on znaci.org, the description is on the museum's caption card (the crop drops "
+             "the caption printed on the photo)."),
+    "zagrebacki-odred": dict(
+        name="Zagrebački partizanski odred", tags=["zagrebacki-partizanski-odred"],
+        caption=r"zagrebač\w*\s+(?:partizansk\w*\s+|nop\s+)?odred", photo=None,
+        book=dict(pdf="00003/607.pdf", page=250, xref=1597,
+                  caption="Postrojavanje boraca Zagrebačkog odreda na Zelinskoj gori koncem svibnja 1944, nakon "
+                          "ustaško-njemačke ofenzive na jedinice X korpusa Zagrebačkog u Zagorju."),
+        note="Nothing in the gallery is a group of the odred's soldiers; the photo is from its own book."),
+    "mosorski-odred": dict(
+        name="Mosorski partizanski odred", tags=[],
+        caption=r"mosorsk\w*\s+(?:partizansk\w*\s+|nop\s+)?(?:odred|bataljon|čet)|leteć\w*\s+mosorsk|\bMPO\b", photo=None,
+        book=dict(pdf="00003/794.pdf", page=297, xref=1956,
+                  caption="Komandant Odreda Jakiša Baučić-Brko (u sredini s dvogledom) s borcima i starješinama 1. bataljona"),
+        note="Nothing in the gallery names the odred; the photo is from its own book (Velić, Petrić)."),
+    "turopoljsko-posavski-odred": dict(
+        name="Turopoljsko-posavski partizanski odred", tags=[],
+        caption=r"turopoljsk\w*", photo=None,
+        book=dict(pdf="00003/835.pdf", page=28, xref=164,
+                  caption="Borci Prve čete I bataljona Turopoljsko-posavskog partizanskog odreda Šiljakovina, proljeće 1944. godine"),
+        note="Nothing in the gallery names the odred; the photo is from its own book (Huzjak)."),
     "viski-bataljon": dict(
-        name="Viški dobrovoljački bataljon", tags=[],
+        name="Viški dobrovoljački bataljon", tags=['vis'],
         caption=r"višk\w*\s+dobrovolja\w*\s+bataljon", photo=None,
-        note="Nothing in the gallery names the battalion. The card shows its roll's page."),
+        note="Nothing in the gallery names the battalion, nor does its book (Huljić, Vis 1941-1945): the photos of the "
+             "3. (viški) bataljon of the XII brigade show another unit. The card shows its roll's page."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,
