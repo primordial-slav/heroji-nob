@@ -221,13 +221,15 @@ def apply_edit(soldiers, correction):
 
     if sid in MERGED_IDS:
         # merged into another record: its entry's text lives in that record's other_sources (an edit that came
-        # before the merge set it already; one that came after, such as trimming a glued entry, sets it there)
-        if 'additional_info' in fields:
+        # before the merge set it already; one that came after, such as trimming a glued entry, sets it there), and
+        # so does its box where the list's parser draws the boxes (entry_boxes.INLINE_ENTRIES: the Dalmatinci list)
+        kept = {k: v for k, v in fields.items() if k == 'additional_info' or k in entry_boxes.BOX_FIELDS}
+        if kept:
             for s in soldiers:
                 for o in s.get('other_sources', ()):
-                    if o.get('soldier_id') == sid and not o.get('unit_file') and o.get('additional_info') != fields['additional_info']:
-                        o['additional_info'] = fields['additional_info']
-                        print(f"    EDIT {sid}: merged entry of {s.get('full_name', '')}, text")
+                    if o.get('soldier_id') == sid and not o.get('unit_file') and any(o.get(k) != v for k, v in kept.items()):
+                        o.update(kept)
+                        print(f"    EDIT {sid}: merged entry of {s.get('full_name', '')}, {', '.join(sorted(kept))}")
         return soldiers, True
     print(f"    WARNING: Soldier {sid} not found for edit")
     return soldiers, False
