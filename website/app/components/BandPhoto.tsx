@@ -3,6 +3,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { Unit } from '@/app/data/units'
+import { unitHref } from '@/app/data/unitPages'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { unitName } from '@/app/i18n/units'
 import { unitImageProps } from '@/app/lib/unitImage'
@@ -46,7 +47,7 @@ export default function BandPhoto({ units }: { units: Unit[] }) {
         <img {...unitImageProps(unit.image, BAND_SIZES)} alt="" />
       </div>
       <p className="band-credit">
-        {t.home.bandCredit} <Link href={to(`/units/${unit.id}`)}>{unitName(unit, lang)}</Link>
+        {t.home.bandCredit} <Link href={to(unitHref(unit.id, lang))}>{unitName(unit, lang)}</Link>
       </p>
     </>
   )

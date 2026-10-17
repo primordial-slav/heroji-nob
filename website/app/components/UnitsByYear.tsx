@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import type { Unit } from '@/app/data/units'
+import { unitHref } from '@/app/data/unitPages'
 import { formation, formationKey } from '@/app/data/formation'
 import type { Lang } from '@/app/i18n/config'
 import { formatNumber } from '@/app/i18n/format'
@@ -72,7 +73,7 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
           <ul className="unit-grid">
             {group.map((unit) => (
               <li key={unit.id}>
-                <Link href={to(`/units/${unit.id}`)} className="unit-card">
+                <Link href={to(unitHref(unit.id, lang))} className="unit-card">
                   <div className="unit-card-photo">
                     <img loading="lazy" {...unitImageProps(unit.image, CARD_SIZES)} alt="" />
                   </div>

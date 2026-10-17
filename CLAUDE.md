@@ -203,6 +203,20 @@ Corrections run LAST before build so they always win over automated pipeline out
 
 **Places index** (`website/public/relations/places.json`) groups soldiers of all units by birthplace (village + municipality, folded spellings) for the record popup's "Saborci i zemljaci" tree; its unit and same-day branches are worked out in the browser from `unit_detail` and `death_date`. The popup doesn't load the whole index: the build cuts it into small files (`app/lib/placeFiles.ts`), `/places/of/<first 7 digits of the id>` (which chunk each soldier's place is in) and `/places/chunk/<n>` (~24 KB of places each), so a record loads its own place alone. It is not part of `apply_corrections.py`: after a run that adds records or changes birth places, rebuild it with `python scripts/build_relations.py --write` (dry run without `--write` prints coverage and the rules' samples). A village printed without its municipality is linked only when the unit's own records, or the corpus, give it one municipality.
 
+**Map and unit pages** (in git since 2026-10-17, on the site but not linked from it, `robots: noindex`; their text is still written in the pages, Serbo-Croatian only, and moves to the messages before they are linked):
+- `/mapa` (`app/(sr)/mapa/`) is the 1941 map in the style of the books' sketches.
+  - It shows the war paths of the Prva lička, the Prva proleterska and the 3. krajiška (`units/<key>.ts`, from `scripts/make_unit_route.py` and each brigade's book), the occupation zones by period (`scripts/make_map_1941.py`, `trace_ndh_zones.py`) and the liberated territory month by month (`scripts/trace_liberated.py`).
+  - The liberated territory is traced from the 1952 *Istoriski atlas* as photographed by the Hrvatski povijesni muzej, whose catalogue reserves all rights; settle that before linking the map.
+  - `?jedinica=<key>` opens one unit with no switch to another (`UNIT_PAGES` links back to its unit page).
+  - `/mapa/spisak` lists the fallen a count stands for.
+- `/mapa/bataljon` is the 2. bataljon of the Prva lička, its fights step by step on terrain sheets (`bataljon/episodes.ts`, `scripts/make_battalion_map.py`). Anything the book does not state is marked as the map's estimate.
+- `/jedinica/<id>` is a unit's overview, the Prva lička alone so far (`app/(sr)/jedinica/`):
+  - its path as lanes (names, commands, battalions) and dated events;
+  - doors to the map, the staff (`/stab`), the battalions (`/bataljoni`, a page each: staff, companies, platoons, soldiers) and the soldiers list;
+  - its data is `_data/<id>.ts`, written by hand from the unit's book and its entries, and `_data/<id>.posts.json`, the posts the unit's own entries name (`scripts/make_unit_overview.py <id>`).
+  - The pages are built with the site (`generateStaticParams`): they read the unit files at build time.
+- `/sastav` stays local (excluded in `.git/info/exclude`).
+
 ## Site Text
 
 Text written for the site (unit cards, headings, buttons, hints, messages) follows `VOICE.md`: ekavica, plain words, one formula for unit cards, Serbo-Croatian typography. The books' entries are shown as printed. How the site looks is in `DESIGN.md`.
@@ -231,6 +245,7 @@ For fixing individual soldier records (OCR errors, merged entries, duplicates) w
 - **Dry run by default**: Run without `--apply` to preview changes
 - **Idempotent**: re-applying the whole file is a no-op. An `add` whose `new_id` exists is not inserted again, but the record gets back the fields the correction sets (unless a later `edit` sets them), so the full pipeline (normalize all units, then apply corrections) leaves a committed tree unchanged
 - **Auto-updates**: Recalculates `full_name`, `birth_year`, and `units.ts` soldierCount. Include `birth_year` in `fields` to pin it.
+- **Ognjen Prica**: the battalion and odred named after him come out "Ognjen Priča" / "»O. Priča«" in the entries (Druga lička, the Karlovac lists, Ostali borci); every record written gets "Prica" (`fix_names`, the user's wish of 2026-10-17, against "as printed"). The surname Priča is left alone.
 
 ```json
 [
