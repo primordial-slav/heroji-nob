@@ -1567,6 +1567,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih i umrlih boraca brigade i nestalih u borbi: bataljon, rođenje, gde i kada su pali (str. 315–321)'
   },
   {
+    id: '1-bokeljska-spisak',
+    title: '1. bokeljska brigada — jedinični spisak brigade',
+    author: 'Dušan Živković',
+    pdfPath: '/pdfs/1-bokeljska-spisak.pdf',
+    thumbnail: '/images/pdf-thumbs/1-bokeljska-spisak.jpg',
+    brigadeName: '1. bokeljska brigada',
+    description: 'Spisak brigade od formiranja 5. oktobra 1944. do kraja rata, po jedinicama: štab, bataljoni i jedinice pri štabu, dužnost i ime svakog borca i starešine (str. 291–314). Borac prekomandovan u drugu jedinicu upisan je i u nju, pa se neki javljaju dva puta. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika.'
+  },
+  {
     id: '6-dalmatinska',
     title: '6. dalmatinska brigada — spisak poginulih boraca',
     author: 'Danilo Damjanović',
@@ -2502,6 +2511,33 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/letalci-prekomorci-kader.jpg',
     brigadeName: '',
     description: 'Rukovodeći kadar 1. i 2. lovačke eskadrile NOVJ, vazduhoplovnog odreda NOVJ u Alžiru i 1. vazduhoplovnog puka (str. 322–325): čin i dužnost svakog, s danima kad je bio na njoj. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'niksicki-odred-pali-borci',
+    title: 'Nikšićki odred',
+    author: 'Gojko Miljanić',
+    pdfPath: '/pdfs/niksicki-odred-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/niksicki-odred-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Imena palih boraca sa područja bivšeg nikšićkog sreza i opštine Herceg-Novi (str. 393–420): mesto i godina rođenja, mesto i godina pogibije; i narodni heroji Nikšića i Herceg-Novog, sa biografijom svakog (str. 423–427). Skoro svi su prošli kroz Nikšićki odred, a pali su u brigadama, u odredu i na drugim dužnostima. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'teslic-u-nob-borci',
+    title: 'Teslić u NOB',
+    author: 'Advan Hozić',
+    pdfPath: '/pdfs/teslic-u-nob-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/teslic-u-nob-borci.jpg',
+    brigadeName: '',
+    description: 'Spisak boraca narodnooslobodilačkog rata opštine Teslić (str. 234–267) i spisak poginulih i umrlih boraca (str. 269–279), sa biografijom svakog. Spiskovi uz borce broje i odbornike i saradnike NOP-a: uneti su samo oni za koje zapis kaže da su bili borci ili u NOVJ, ili navodi vojnu dužnost ili jedinicu vojske. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'lovcenski-odred-pali-borci',
+    title: 'Lovćenski partizanski odred',
+    author: 'Đuro Vujović',
+    pdfPath: '/pdfs/lovcenski-odred-pali-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/lovcenski-odred-pali-borci.jpg',
+    brigadeName: '',
+    description: 'Poginuli, streljani i umrli borci NOR-a 1941–1945. sa teritorije Lovćenskog NOP odreda, po srezovima (cetinjski, barski, kotorski) i selima, sa biografijom svakog (str. 611–713). Autor u pale borce broji sve iz pokreta koji su izgubili život, i aktiviste, a žrtve terora ne; uneti su svi. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
     id: 'krusevac-1944-poginuli',

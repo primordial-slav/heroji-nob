@@ -497,7 +497,7 @@ const sl: Record<string, UnitText> = {
   '1-bokeljska-brigada': {
     name: '1. bokeljska brigada',
     description:
-      'Ustanovljena 5. oktobra 1944 v Konjskem pri Trebinju. Padli, umrli in pogrešani borci brigade.',
+      'Ustanovljena 5. oktobra 1944 v Konjskem pri Trebinju. Vsi borci in starešine brigade po enotah ter padli, umrli in pogrešani.',
   },
   '6-dalmatinska-brigada': {
     name: '6. dalmatinska brigada',
@@ -1254,7 +1254,7 @@ const mk: Record<string, UnitText> = {
   '1-bokeljska-brigada': {
     name: '1-ва бокељска бригада',
     description:
-      'Формирана на 5 октомври 1944 во Коњско кај Требиње. Загинатите, умрените и исчезнатите борци на бригадата.',
+      'Формирана на 5 октомври 1944 во Коњско кај Требиње. Сите борци и старешини на бригадата по единици, и загинатите, умрените и исчезнатите.',
   },
   '6-dalmatinska-brigada': {
     name: '6-та далматинска бригада',
@@ -2013,7 +2013,7 @@ const en: Record<string, UnitText> = {
   '1-bokeljska-brigada': {
     name: '1st Boka Brigade',
     description:
-      'Formed on 5 October 1944 at Konjsko near Trebinje. The brigade’s fallen, dead and missing.',
+      'Formed on 5 October 1944 at Konjsko near Trebinje. Every fighter and officer of the brigade by unit, and its fallen, dead and missing.',
   },
   '6-dalmatinska-brigada': {
     name: '6th Dalmatian Brigade',

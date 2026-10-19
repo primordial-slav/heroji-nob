@@ -505,7 +505,7 @@ COMMONS = [
     ('0005101136', 'Boško_Đuričković.jpg', (0.1, 0.18, 0.85, 0.7), 'Public domain', '', 'Boško Đuričković, narodni heroj: birth year 1914; birthplace danilovgrad'),
     ('0041000367', 'Dragiša_Ivanović,_politkom_Pete_crnogorske_brigade.jpg', (0, 0, 0.91, 0.864), 'Public domain', 'Žorž Skrigin', 'Dragiša Ivanović, narodni heroj: birth year 1914; birthplace sjenice'),
     ('0026000296', 'Dušan_Jerković_heroj.jpg', (0, 0, 1, 1), 'Public domain', '', 'Dušan Jerković, narodni heroj: birth year 1914; birthplace ogar; year 1941'),
-    ('0039100340', 'Dušan_Ječmenić.jpg', (0, 0, 1, 1), 'Public domain', '', 'Dušan Ječmenić, narodni heroj: birth year 1911'),
+    ('0039000287', 'Dušan_Ječmenić.jpg', (0, 0, 1, 1), 'Public domain', '', 'Dušan Ječmenić, narodni heroj: birth year 1911'),
     ('0040010906', 'Jelica_Maskovic.jpg', (0, 0, 1, 1), 'Public domain', '', 'Jelica Mašković, narodni heroj: birth year 1924; birthplace plane; year 1942'),
     ('0110001685', 'Koča-Popovic.png', (0.119, 0, 0.923, 0.776), 'Public domain', '', 'Koča Popović, narodni heroj: birth year 1908; birthplace beograd'),
     ('0093000135', 'Kiril_Mihajlovski.jpg', (0, 0, 1, 1), 'Public domain', '', 'Kiril Mihajlovski, narodni heroj: birth year 1916'),

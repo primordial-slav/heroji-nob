@@ -28556,6 +28556,18 @@
         "pdf_x_end": 216.5,
         "pdf_y_end": 243.7,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0068000468",
+        "name": "Omahen Lovro",
+        "additional_info": "zvani Orlov; 1898, Zgornja Besnica, † 1980",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 5,
+        "pdf_x": 29.5,
+        "pdf_y": 114.7,
+        "pdf_x_end": 118.0,
+        "pdf_y_end": 129.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       }
     ]
   },
@@ -33245,7 +33257,22 @@
     "soldier_id": "0070001116",
     "pdf_x_end": 287.8,
     "death_type": "umro",
-    "death_date": "po osvoboditvi"
+    "death_date": "po osvoboditvi",
+    "other_sources": [
+      {
+        "soldier_id": "0070200210",
+        "name": "Purkart Franc",
+        "additional_info": "zvani Čopek; * 1924 Rob na Dolenjskem † 1972 Turjak",
+        "pdf_file": "tomsiceva-1.pdf",
+        "pdf_page": 8,
+        "pdf_x": 143.1,
+        "pdf_y": 354.6,
+        "pdf_x_end": 370.8,
+        "pdf_y_end": 363.6
+      }
+    ],
+    "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
+    "death_place": "Turjak"
   },
   {
     "last_name": "Purkart",
@@ -135386,27 +135413,6 @@
     "unit_detail": "Proletarska udarna četa",
     "soldier_id": "0070200207",
     "pdf_x_end": 285.9
-  },
-  {
-    "last_name": "Purkart",
-    "middle_name": "",
-    "first_name": "Franc",
-    "fathers_name": "",
-    "full_name": "Purkart Franc",
-    "additional_info": "zvani Čopek; * 1924 Rob na Dolenjskem † 1972 Turjak",
-    "birth_year": "1924",
-    "birth_place": "Rob na Dolenjskem",
-    "pdf_page": 8,
-    "pdf_y": 354.6,
-    "pdf_x": 143.1,
-    "pdf_y_end": 363.6,
-    "pdf_file": "tomsiceva-1.pdf",
-    "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
-    "soldier_id": "0070200210",
-    "death_type": "umro",
-    "death_date": "1972",
-    "death_place": "Turjak",
-    "pdf_x_end": 370.8
   },
   {
     "last_name": "Rebolj",
