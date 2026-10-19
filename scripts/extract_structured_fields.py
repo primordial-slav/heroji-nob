@@ -121,6 +121,9 @@ def clean_birthplace(value: str) -> str:
 # build_ostali_borci.py sets the death from the entry's own fields
 NAME_LISTS = {'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf', 'bitka-kod-oborova-poginuli.pdf',
               'vis-spomenica-1941.pdf', 'vis-zrtve-nob.pdf'}
+# a unit's roster by its sub-units, a duty and a name a line ("Komanda pozadine: sekretar intendanta"): the heading is
+# the sub-unit and the duty the rank; nothing else is read (the heading is no birthplace)
+ROSTERS = {'1-bokeljska-spisak.pdf'}
 # the 1964 census of the war's dead (the Museum of Genocide Victims' PDFs): its entries' fields are the census's columns
 CENSUS = 'muzejgenocida.rs/'
 # Borci Sutjeske prints the duty at the battle, then "krajem rata ..." the duty at the war's end: the first is the rank
@@ -999,9 +1002,13 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
         for k, v in ex.extract(info, code, duty_first=sutjeska).items():
             if k == 'death_place' and PARTIZANKE in (e.get('source_url') or ''):
                 continue            # the bios tell the death in a story: "poginula Plana", "Tako se ugasio ..." are no places
-            if k != 'rank' and e.get('pdf_file') in NAME_LISTS:
+            if k != 'rank' and e.get('pdf_file') in NAME_LISTS | ROSTERS:
                 continue            # a list's heading is no birthplace: only the duty after a name is read
             got.setdefault(k, v)
+        if e.get('pdf_file') in ROSTERS:
+            head = re.match(r'([^:;]{3,40}):', info)          # the unit the roster lists him under
+            if head and not head.group(1).startswith('Ne zna se'):
+                got.setdefault('unit_detail', head.group(1).strip())
     if got.get('death_place'):
         got['death_place'] = fix_place(got['death_place'])
     if got.get('birth_place'):

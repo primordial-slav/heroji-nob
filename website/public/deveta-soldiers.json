@@ -22515,7 +22515,21 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001169",
     "pdf_x_end": 195.6,
-    "birth_place": "Slavski Laz, Kočevje"
+    "birth_place": "Slavski Laz, Kočevje",
+    "other_sources": [
+      {
+        "soldier_id": "0067000733",
+        "name": "Mavrovič Jože",
+        "additional_info": "6. 1. 1908, Slavski laz",
+        "pdf_file": "istrski-odred.pdf",
+        "pdf_page": 13,
+        "pdf_x": 202.8,
+        "pdf_y": 276.3,
+        "pdf_x_end": 305.2,
+        "pdf_y_end": 292.7,
+        "unit_file": "istrski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mavsar",
@@ -40189,10 +40203,25 @@
         "pdf_y": 141.9,
         "pdf_x_end": 124.0,
         "pdf_y_end": 151.6
+      },
+      {
+        "soldier_id": "0004003095",
+        "name": "Zidar Franjo",
+        "additional_info": "zvani Jazbec; 1917, Dolga njiva. Bloke, padel 14.7.1944 pri Težki vodi pri Novem mestu",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 446,
+        "pdf_x": 315.3,
+        "pdf_y": 325.5,
+        "pdf_x_end": 480.7,
+        "pdf_y_end": 351.8,
+        "unit_file": "ljubljanska-soldiers.json"
       }
     ],
     "unit_detail": "Štab brigade",
-    "birth_place": "Dolga Njiva"
+    "birth_place": "Dolga Njiva",
+    "death_type": "poginuo",
+    "death_date": "14.7.1944",
+    "death_place": "pri Težki vodi pri Novem mestu"
   },
   {
     "last_name": "Zmareli",
@@ -44182,7 +44211,17 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167002334",
     "pdf_x_end": 314.2,
-    "birth_place": "Podvrh, Osilnica"
+    "birth_place": "Podvrh, Osilnica",
+    "other_sources": [
+      {
+        "soldier_id": "9020004397",
+        "name": "Žagar (Aton) Franc",
+        "additional_info": "rođen 1921, Podvrh (Kočevje). Slovenac, poginuo 1945. u NOBu, Lička gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=157",
+        "source_page": 157,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ]
   },
   {
     "last_name": "Žagar",

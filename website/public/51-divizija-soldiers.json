@@ -2036,7 +2036,33 @@
     "pdf_y_end": 513.0,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000061",
-    "pdf_x_end": 516.8
+    "pdf_x_end": 516.8,
+    "other_sources": [
+      {
+        "soldier_id": "0111010168",
+        "name": "Boroš Ladislav",
+        "additional_info": "Pančevo, poginuo 12. 11. 1944 u Batini.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 47,
+        "pdf_x": 78.2,
+        "pdf_y": 169.6,
+        "pdf_x_end": 354.9,
+        "pdf_y_end": 178.1
+      },
+      {
+        "soldier_id": "0075000221",
+        "name": "Boroš Julijana Ladislav",
+        "additional_info": "iz Pančeva, poginuo kod Batine.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 168.6,
+        "pdf_y": 537.0,
+        "pdf_x_end": 374.4,
+        "pdf_y_end": 545.5,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ],
+    "unit_detail": "12. vojvođanska brigada"
   },
   {
     "last_name": "Boroš",
@@ -18808,7 +18834,21 @@
     "pdf_y_end": 713.8,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000581",
-    "pdf_x_end": 568.9
+    "pdf_x_end": 568.9,
+    "other_sources": [
+      {
+        "soldier_id": "0078000989",
+        "name": "Vujković Nikole Antun",
+        "additional_info": "ili Lamić; rođ. 1916, Tavankut, poginuo kod Kazuka 20. XI 1944.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 46,
+        "pdf_x": 55.9,
+        "pdf_y": 364.8,
+        "pdf_x_end": 347.8,
+        "pdf_y_end": 384.4,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vukan",
@@ -19086,6 +19126,19 @@
         "pdf_y": 374.4,
         "pdf_y_end": 391.7,
         "pdf_x_end": 368.9
+      },
+      {
+        "soldier_id": "9083000191",
+        "name": "Vučić Steve Branko",
+        "additional_info": "Spisak poginulih i umrlih boraca narodnooslobodilačkog rata opštine Teslić: r. 1912, Čečava, Teslić, Srbin, radnik, poginuo 15. 11. 1944, kao komesar 3. čete 2. b. 7. vojvođanske brigade kod sela Batine, član KPJ, u NOVJ stupio 13. 1. 1943",
+        "pdf_file": "teslic-u-nob-borci.pdf",
+        "pdf_page": 46,
+        "pdf_x": 66.5,
+        "pdf_y": 438.7,
+        "pdf_x_end": 423.4,
+        "pdf_y_end": 474.0,
+        "pdf_x_left": 66.5,
+        "ref_book": "teslic-u-nob-poginuli"
       },
       {
         "soldier_id": "0022003296",
@@ -25047,41 +25100,6 @@
         "pdf_y": 562.2,
         "pdf_x_end": 410.9,
         "pdf_y_end": 570.7,
-        "unit_file": "12-vojvodjanska-soldiers.json"
-      }
-    ]
-  },
-  {
-    "last_name": "Boroš",
-    "middle_name": "",
-    "first_name": "Ladislav",
-    "fathers_name": "",
-    "full_name": "Boroš Ladislav",
-    "additional_info": "Pančevo, poginuo 12. 11. 1944 u Batini.",
-    "birth_year": "",
-    "unit_detail": "12. vojvođanska brigada",
-    "pdf_page": 47,
-    "pdf_y": 169.6,
-    "pdf_x": 78.2,
-    "pdf_y_end": 178.1,
-    "pdf_file": "51-divizija-savic.pdf",
-    "soldier_id": "0111010168",
-    "birth_place": "Pančevo",
-    "death_type": "poginuo",
-    "death_date": "12. 11. 1944",
-    "death_place": "Batina",
-    "pdf_x_end": 354.9,
-    "other_sources": [
-      {
-        "soldier_id": "0075000221",
-        "name": "Boroš Ladislav",
-        "additional_info": "iz Pančeva, poginuo kod Batine.",
-        "pdf_file": "12-vojvodjanska.pdf",
-        "pdf_page": 35,
-        "pdf_x": 168.6,
-        "pdf_y": 537.0,
-        "pdf_x_end": 374.4,
-        "pdf_y_end": 545.5,
         "unit_file": "12-vojvodjanska-soldiers.json"
       }
     ]
