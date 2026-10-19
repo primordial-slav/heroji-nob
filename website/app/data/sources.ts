@@ -2063,6 +2063,60 @@ export const sources: PdfSource[] = [
     description: 'Monografija sela Donja Gorevnica kod Čačka (1996): iz spiska palih boraca i žrtava iz sela uneti su samo borci (str. 233–238), ne i žrtve terora i vojnici Jugoslovenske vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   },
   {
+    id: 'ostrvica',
+    title: 'Ostrvica: selo Ostrvica kod Gospića',
+    author: 'Jovan D. Pandžić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000260',
+    thumbnail: '/images/pdf-thumbs/ostrvica.jpg',
+    brigadeName: '',
+    description: 'Monografija sela Ostrvica kod Gospića (2003): popis domaćinstava sela s promenama u toku rata (str. 617–663), svaki član porodice i šta je s njim bilo. Uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu; civili, žrtve terora i pripadnici vojske NDH nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'divoselo',
+    title: 'Divoselo, Čitluk i Ornice u vremenu i trajanju',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00010331',
+    thumbnail: '/images/pdf-thumbs/divoselo.jpg',
+    brigadeName: '',
+    description: 'Monografija sela Divoselo, Čitluk i Ornice kod Gospića: pali borci i oficiri tih sela 1941–1945, svaki s kratkom biografijom (str. 425–435). Dvojica vojnika Jugoslovenske vojske poginulih u aprilskom ratu nisu uneta. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'mogoric',
+    title: 'Mogorić (Lika)',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000431',
+    thumbnail: '/images/pdf-thumbs/mogoric.jpg',
+    brigadeName: '',
+    description: 'Monografija sela Mogorić u Lici: 110 palih boraca sela sa spomen-ploče na Spomen-domu, svaki s kratkom biografijom (str. 191–199), i nosioci Partizanske spomenice 1941. iz sela (str. 201). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'vrebac',
+    title: 'Vrebac, Zavođe, Pavlovac: koreni vekovnog trajanja',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00007959',
+    thumbnail: '/images/pdf-thumbs/vrebac.jpg',
+    brigadeName: '',
+    description: 'Monografija sela Vrebac, Zavođe i Pavlovac kod Gospića: pali borci NOR-a tih sela od 1941. do 1945, po selima, svaki s kratkom biografijom (str. 298–311). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'licko-petrovo-selo',
+    title: 'Da se ne ponovi: Ratna kronika ranije općine Ličko Petrovo Selo',
+    author: 'Miloš Pužić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00009859',
+    thumbnail: '/images/pdf-thumbs/licko-petrovo-selo.jpg',
+    brigadeName: '',
+    description: 'Ratna kronika nekadašnje općine Ličko Petrovo Selo (1985): pali borci po selima (Ličko Petrovo Selo, Novo Selo, Željava, Arapov Do, Rešetar, Zaklopača i Lisina, Donji Vaganac), u tabeli s godinama rođenja, stupanja u NOV i pogibije, mestom pogibije, jedinicom i dužnošću (str. 207–214). Umrli od tifusa, gladi i mina nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'bosansko-grahovo',
+    title: 'Bosansko Grahovo u NOR-u 1941–1945',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00010313',
+    thumbnail: '/images/pdf-thumbs/bosansko-grahovo.jpg',
+    brigadeName: '',
+    description: 'Pali borci narodnooslobodilačkog rata sa područja Bosanskog Grahova, po selima, svaki s kratkom biografijom (str. 642–697). Spisak žrtava fašističkog terora koji sledi nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
     id: 'hak-14-donji-lapac',
     title: 'Kotar Donji Lapac u narodnooslobodilačkom ratu 1941–1945.',
     author: 'Grupa autora',

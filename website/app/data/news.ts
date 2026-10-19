@@ -15,6 +15,15 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-10-19',
+    text: {
+      sr: 'Šest knjiga o selima Like i Bosanskog Grahova: oko 1.500 palih i drugih boraca, 400 pridruženo zapisima koji već postoje.',
+      sl: 'Šest knjig o vaseh Like in Bosanskega Grahova: okoli 1.500 padlih in drugih borcev, 400 pridruženih zapisom, ki že obstajajo.',
+      mk: 'Шест книги за селата во Лика и Босанско Грахово: околу 1.500 загинати и други борци, 400 приклучени кон записите што веќе постојат.',
+      en: 'Six books on the villages of Lika and Bosansko Grahovo: some 1,500 fallen and other fighters, 400 of them added to records already on the site.',
+    },
+  },
+  {
     date: '2026-10-17',
     text: {
       sr: 'Druga lička brigada: 15 zapisa dobilo je nazad drugi red iz knjige, koji je izostao pri čitanju.',
