@@ -15,7 +15,8 @@ identity_decisions.json, so no pair is offered twice:
     same        the pair becomes its correction on the next --write
     different   the pair is never taken nor offered again; a link or reference already made is taken off
                 (a merge already made is listed, to be undone by hand: its record is gone from the unit's file)
-    unsure      left out of the queue; offered again with --unsure
+    unsure      left out of the queue to decide; listed in the viewer's own tab ('Not sure'), with who was unsure
+                and why, until someone else answers it; offered again with the rest with --unsure
 Each answer keeps both names: if a re-parse moves the ids, an answer whose names no longer fit is ignored (and listed).
 The queue (data-extraction/.cache/identities/queue.json) also holds a sample of the pairs already made ('check'), for
 spot checks; a 'different' there takes the pair off as above.
@@ -233,6 +234,39 @@ def merged_side(o: dict) -> dict:
 
 def score(agree, clash) -> int:
     return sum(WEIGHT.get(a, 1) for a in agree) - 3 * len(clash)
+
+
+def unsure_items(units, decisions) -> list[dict]:
+    """The pairs answered 'unsure', for a person to look at again (the viewer's 'Not sure' tab): who was unsure and
+    why in the note. An answer whose record is gone (merged away) or holds another name now (a re-parse) is left out."""
+    recs = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
+    entries, out = {}, []
+    for k, d in decisions.items():
+        if d['answer'] != 'unsure':
+            continue
+        a = recs.get(d['a'])
+        if not a or (d.get('a_name') and M.fold(a.get('full_name')) != M.fold(d['a_name'])):
+            continue
+        if d['kind'] == 'reference':
+            book = d.get('book') or ''
+            if book not in entries:
+                path = M.entries_path(book)
+                entries[book] = ({e['soldier_id']: e for e in json.loads(path.read_text(encoding='utf-8'))}
+                                 if path.exists() else {})
+            e = entries[book].get(d['b'])
+            if not e:
+                continue
+            b_side = entry_side(e, book)
+        else:
+            b = recs.get(d['b'])
+            if not b or (d.get('b_name') and M.fold(b.get('full_name')) != M.fold(d['b_name'])):
+                continue
+            b_side = record_side(b)
+        note = f"{d.get('by') or 'someone'} was not sure" + (f": {d['note']}" if d.get('note') else '')
+        out.append({'key': k, 'kind': d['kind'], 'a': record_side(a), 'b': b_side, 'grade': 'not sure', 'agree': [],
+                    'clash': [], 'note': note, 'score': 0, 'by': d.get('by') or ''})
+    out.sort(key=lambda x: (x['kind'] != 'merge', x['kind'] != 'link', x['key']))
+    return out
 
 
 # ---------------------------------------------------------------- finding the pairs
@@ -729,9 +763,10 @@ def main():
     auto, review, stale = find_pairs(units, corr, decisions)
     review.sort(key=lambda x: (-x['score'], x['kind'], x['key']))
     checks = spot_checks(units, corr, decisions)
+    unsure = [] if args.unsure else unsure_items(units, decisions)
     CACHE.mkdir(parents=True, exist_ok=True)
     QUEUE.write_text(json.dumps({'made': datetime.datetime.now().isoformat(timespec='seconds'), 'review': review,
-                                 'check': checks}, ensure_ascii=False), encoding='utf-8')
+                                 'check': checks, 'unsure': unsure}, ensure_ascii=False), encoding='utf-8')
     kinds = Counter(x[0] for x in auto)
     print(f'links and references at records merged away since (pointed at their keeper on --write): '
           f'{len(strays(units, corr))}')

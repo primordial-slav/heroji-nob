@@ -106,7 +106,10 @@ class Handler(BaseHTTPRequestHandler):
                 if not FI.QUEUE.exists():
                     return self.send(b'{"error": "no queue: run scripts/find_identities.py first"}', 'application/json')
                 queue = json.loads(FI.QUEUE.read_text(encoding='utf-8'))
-                queue['answers'] = {k: d['answer'] for k, d in FI.load_decisions().items()}
+                # another's 'not sure' is no answer here: those pairs wait in the 'Not sure' tab for this reviewer
+                queue['answers'] = {k: d['answer'] for k, d in FI.load_decisions().items()
+                                    if not (d['answer'] == 'unsure' and d.get('by') != self.by)}
+                queue.setdefault('unsure', [])
                 queue['by'] = self.by
                 return self.send(json.dumps(queue, ensure_ascii=False).encode('utf-8'), 'application/json; charset=utf-8')
             if url.path == '/crop':
