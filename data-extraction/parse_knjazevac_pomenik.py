@@ -34,6 +34,7 @@ import poreklo_text as pt  # noqa: E402
 import _karlovac_lists as kl  # noqa: E402
 import parse_ofanziva_1942 as ofz  # noqa: E402
 from _parser_scaffold import cyrillic_to_latin  # noqa: E402
+import parse_mosorski_odred_2 as mos  # noqa: E402
 from parse_mosorski_odred_2 import FIGHTER, REAR  # noqa: E402
 
 BOOK = 'knjazevac-pomenik'
@@ -52,7 +53,7 @@ AGAINST = re.compile(r'\b(?:protiv|od|sa)\s+(?:strane\s+)?(?:\S+\s+){0,2}(?:čet
 # by a comrade's hand ("Poginuo kao vodnik ... od saborca partizana") stays
 DEATH_WORD = re.compile(r'\b(?:poginu\w*|pao|pala|ubijen\w*|streljan\w*|likvidiran\w*|zaklan\w*|obešen\w*|umr\w*|nesta\w*)\b',
                         re.I)
-BY_PARTISANS = re.compile(r'(?:ubijen|streljan|likvidiran|zaklan|obešen)\w*\b[^;]{0,120}?\bod\s+(?:strane\s+)?'
+BY_PARTISANS = re.compile(r'(?:ubijen|streljan|likvidiran|zaklan|obešen)\w*\b[^;]{0,120}?\bo[dn]\s+(?:strane\s+)?'
                           r'(?:\S+\s+){0,3}?(?:partizan\w*|NOVJ?|NOP\w*)\b', re.I)
 # Serbian brigades by their number (in this book "14. бригада" is the 14. srpska) -> the site's unit
 BRIGADES = {4: 21, 5: 127, 7: 85, 8: 87, 9: 165, 10: 88, 12: 90, 14: 27, 15: 86, 17: 55, 18: 128, 19: 73, 20: 91, 21: 80,
@@ -138,22 +139,48 @@ def parse(e: dict, n: int, book: dict) -> dict:
     return rec
 
 
-def fighter(rec: dict) -> bool:
-    if len(rec['name'].split()) > 5:
-        return False                                      # a note of the book's ("Protokol umrlih ..."), not a name
+def ours(rec: dict) -> bool:
+    """Not a note of the book's, not one of the other side, nor a man the partisans killed"""
+    if len(rec['name'].split()) > 5 or re.search(r'\s(?:iz|i|od|sa|u)\s', rec['name']):
+        return False                       # a note of the book's ("Protokol umrlih ...", "Mtadići iz ..."), not a name
     info = REAR.sub('', rec['additional_info'])
+    if re.search(r'\bpo\s+presudi\b|\bnov\w*\s+vlast', info):
+        return False                     # tried and shot by the new authorities in 1944-45, one of the other side
     own = AGAINST.sub('', info)                           # "u borbi protiv četnika DM", "ubijen od četnika"
     death = DEATH_WORD.search(info)
     if death and BY_PARTISANS.match(info, death.start()):
         return False
-    return bool(FIGHTER.search(info)) and not OTHER_SIDE.search(own)
+    return not OTHER_SIDE.search(own)
+
+
+def fighter(rec: dict) -> bool:
+    return ours(rec) and bool(FIGHTER.search(REAR.sub('', rec['additional_info'])))
+
+
+def kind(rec: dict) -> str:
+    """'fighter', 'activist' (in too, marked, by the user's decision of 2026-10-19), or '' (out). A fighter also by his
+    rank, or by a unit the entry puts him in without a verb of joining (parse_mosorski_odred_2.fighter_or_officer)."""
+    if not ours(rec):
+        return ''
+    # (the book's notes on another record of the name, "Različit navod: ... Kao komunista uhapšen", are not his)
+    own = AGAINST.sub('', re.split(r'\bRazli\w*\s+(?:i\s+dupli\s+)?(?:navod|podat)', rec['additional_info'])[0])
+    if fighter(rec) or mos.fighter_or_officer({'additional_info': own}):
+        return 'fighter'
+    return 'activist' if mos.activist({'additional_info': own}) else ''
 
 
 def main() -> None:
     ofz.corpus()
     raw, book = entries()
     every = [parse(e, i, book) for i, e in enumerate(raw, 1)]
-    kept = [r for r in every if fighter(r)]
+    kinds = {r['soldier_id']: kind(r) for r in every}
+    for r in every:
+        if kinds[r['soldier_id']] == 'activist':
+            r['role'] = 'activist'
+    kept = [r for r in every if kinds[r['soldier_id']]]
+    print(f"fighters by the rule {sum(fighter(r) for r in every)}, by rank or unit "
+          f"{sum(kinds[r['soldier_id']] == 'fighter' and not fighter(r) for r in every)}, "
+          f"activists {sum(bool(r.get('role')) for r in kept)}")
     OUT.write_text(json.dumps(kept, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(every)} entries read, {len(kept)} fighters -> {OUT.relative_to(HERE.parent)}; villages: '
           f'{len({r["additional_info"].split(":")[0] for r in every})}')
@@ -163,8 +190,12 @@ def main() -> None:
     if '--sample' in sys.argv:
         for r in random.sample(kept, int(sys.argv[sys.argv.index('--sample') + 1])):
             print(f"  IN  {r['name']!r} [{r['born_in']}] {r['birth_year']} d{r['death_year']} {r['units']} | {r['additional_info'][:130]}")
+    if '--extra' in sys.argv:
+        for r in every:
+            if kinds[r['soldier_id']] and not fighter(r):
+                print(f"  {'ACT' if r.get('role') else 'F  '} {r['name']!r} | {r['additional_info'][:150]}")
     if '--dropped' in sys.argv:
-        out = [r for r in every if not fighter(r)]
+        out = [r for r in every if not kinds[r['soldier_id']]]
         for r in random.sample(out, int(sys.argv[sys.argv.index('--dropped') + 1])):
             print(f"  OUT {r['name']!r} | {r['additional_info'][:140]}")
 

@@ -1663,7 +1663,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/mosorski-odred-2.pdf',
     thumbnail: '/images/pdf-thumbs/mosorski-odred-2.jpg',
     brigadeName: 'Mosorski partizanski odred',
-    description: 'Drugi deo popisa iz iste knjige (str. 573–648): borci komandi mesta, partijsko-politički i terenski radnici s područja Mosora. Uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; terenski radnici, odbornici i članice AFŽ nisu uneti; pripadnici radnih bataljona jesu.'
+    description: 'Drugi deo popisa iz iste knjige (str. 573–648): borci komandi mesta, partijsko-politički i terenski radnici s područja Mosora. U spisku odreda su borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske, i pripadnici radnih bataljona. Terenski i politički radnici, odbornici i članice AFŽ uneti su kao aktivisti, svako uz zapis borca koji je na sajtu ako je to on, ostali među Ostalim borcima.'
   },
   {
     id: 'mosorski-odred-kader',
@@ -2108,6 +2108,24 @@ export const sources: PdfSource[] = [
     description: 'Pali borci narodnooslobodilačkog rata sa područja Bosanskog Grahova, po selima, svaki s kratkom biografijom (str. 642–697). Spisak žrtava fašističkog terora koji sledi nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   },
   {
+    id: 'staromajdansko',
+    title: 'Staromajdansko područje u NOB 1941–1945. godine',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00002581',
+    thumbnail: '/images/pdf-thumbs/staromajdansko.jpg',
+    brigadeName: '',
+    description: 'Poginuli borci i žrtve fašističkog terora sa područja Starog Majdana kod Sanskog Mosta, po selima, svaki s kratkom biografijom (str. 177–216, sela od Ališića do Podluga). Uneti su samo borci poginuli u NOR-u, ne i žrtve terora. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'otocac-brinje',
+    title: 'Otočac i Brinje u NOB 1941–1945',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246',
+    thumbnail: '/images/pdf-thumbs/otocac-brinje.jpg',
+    brigadeName: '',
+    description: 'Popis palih boraca, žrtava fašističkog terora i preživelih boraca i aktivnih učesnika NOB-a nekadašnje opštine Otočac, po selima: pali borci (str. 411–433) i preživeli borci i aktivni učesnici NOB-a (str. 461–531), s rođenjem, stupanjem u NOB i dužnošću. Uneti su i aktivni učesnici, politički radnici, odbornici i članovi SKOJ-a i AFŽ-a, označeni kao aktivisti; žrtve terora nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
     id: 'hak-14-donji-lapac',
     title: 'Kotar Donji Lapac u narodnooslobodilačkom ratu 1941–1945.',
     author: 'Grupa autora',
@@ -2249,7 +2267,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/prilog-u-krvi-pali-borci.pdf',
     thumbnail: '/images/pdf-thumbs/prilog-u-krvi-pali-borci.jpg',
     brigadeName: '',
-    description: 'Pali borci NOR-a pljevaljskog sreza od aprila 1941. do 15. maja 1945 (str. 141–216), sa biografijom svakog. Knjiga među pale borce ubraja i partijske i političke radnike, odbornike i saradnike NOP-a: uneti su samo oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Pali borci NOR-a pljevaljskog sreza od aprila 1941. do 15. maja 1945 (str. 141–216), sa biografijom svakog. Knjiga među pale borce ubraja i partijske i političke radnike, odbornike i saradnike NOP-a: i oni su uneti, označeni kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
     id: 'jevreji-jugoslavije-ucesnici-nor',
@@ -2258,7 +2276,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/jevreji-jugoslavije-ucesnici-nor.pdf',
     thumbnail: '/images/pdf-thumbs/jevreji-jugoslavije-ucesnici-nor.jpg',
     brigadeName: '',
-    description: 'Spisak jevrejskih učesnika u narodnooslobodilačkom ratu, sa biografijom svakog (str. 307 i dalje). Spisak broji sve koji su bili u NOP-u: uneti su samo oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske, a ne politički i pozadinski radnici. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Spisak jevrejskih učesnika u narodnooslobodilačkom ratu, sa biografijom svakog (str. 307 i dalje). Spisak broji sve koji su bili u NOP-u: uneti su svi, a politički i pozadinski radnici i oni koje su uhvatili na putu u partizane označeni su kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
     id: 'hrvatsko-zagorje-1981',
@@ -2267,7 +2285,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/hrvatsko-zagorje-1981.pdf',
     thumbnail: '/images/pdf-thumbs/hrvatsko-zagorje-1981.jpg',
     brigadeName: '',
-    description: 'Popis poginulih učesnika NOB-a 1941–1945. s područja općina Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić i Zlatar-Bistrica, s rođenjem, jedinicom i smrću. Popis zajedno navodi borce i žrtve fašističkog terora; uneti su samo borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Popis poginulih učesnika NOB-a 1941–1945. s područja općina Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić i Zlatar-Bistrica, s rođenjem, jedinicom i smrću. Popis zajedno navodi borce i žrtve fašističkog terora; uneti su borci i, označeni kao aktivisti, članovi KPJ, SKOJ-a i NOO-a, politički radnici i kuriri, a žrtve terora nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'imotska-krajina-pali-borci',
@@ -2276,7 +2294,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/imotska-krajina-pali-borci.pdf',
     thumbnail: '/images/pdf-thumbs/imotska-krajina-pali-borci.jpg',
     brigadeName: '',
-    description: 'Pali borci i žrtve fašističkog terora po selima Imotske krajine (str. 163–472), s rođenjem, putem u NOV i smrću. Uneti su samo pali borci, iz dela koji knjiga za svako selo naslovljava »Poginuli borci«, i od njih oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Pali borci i žrtve fašističkog terora po selima Imotske krajine (str. 163–472), s rođenjem, putem u NOV i smrću. Uneti su pali borci iz dela koji knjiga za svako selo naslovljava »Poginuli borci«, a skojevci, komunisti i politički radnici koje knjiga tamo ubraja označeni su kao aktivisti; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'knjazevac-pomenik',
@@ -2285,7 +2303,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00002204',
     thumbnail: '/images/pdf-thumbs/knjazevac-pomenik.jpg',
     brigadeName: '',
-    description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su samo partizanski borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu NOVJ. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Svi stradali u Drugom svetskom ratu s područja opštine Knjaževac, po selima (str. 37–327), s rođenjem i smrću: partizani, četnici, streljani i civili zajedno. Uneti su partizanski borci i, označeni kao aktivisti, komunisti, skojevci, odbornici i saradnici partizana; četnici, civili i oni koje je osudila nova vlast nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'iskra-in-plamen-padli',
@@ -2321,7 +2339,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/sanski-most-borci.pdf',
     thumbnail: '/images/pdf-thumbs/sanski-most-borci.jpg',
     brigadeName: '',
-    description: 'Spiskovi boraca sanskog sreza po naseljima: poginuli u NOB, nosioci Partizanske spomenice 1941. i borci NOB živi 15. maja 1945, s rođenjem, zanimanjem, stupanjem u NOB i dužnošću. Iz trećeg spiska uneti su samo borci (borac, vojna dužnost ili čin, jedinica); odbornici, članovi SKOJ-a i AFŽ-a bez vojne dužnosti i žrtve fašističkog terora nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Spiskovi boraca sanskog sreza po naseljima: poginuli u NOB, nosioci Partizanske spomenice 1941. i borci NOB živi 15. maja 1945, s rođenjem, zanimanjem, stupanjem u NOB i dužnošću. Iz trećeg spiska uneti su borci (borac, vojna dužnost ili čin, jedinica) i, označeni kao aktivisti, odbornici i članovi SKOJ-a i AFŽ-a bez vojne dužnosti; žrtve fašističkog terora nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'rat-i-djeca-kozare',
@@ -2402,7 +2420,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/korosko-zdravstvo.pdf',
     thumbnail: '/images/pdf-thumbs/korosko-zdravstvo.jpg',
     brigadeName: '',
-    description: 'Ranjeni i bolesni borci i aktivisti u Koruškoj do februara 1944, pacijenti koruških partizanskih bolnica, koruški borci lečeni van bolnica i sanitetsko osoblje, s kratkom biografijom (str. 282–355). Uneti su borci i osoblje partizanskih bolnica, ne politički radnici na terenu ni lekari koji su partizanima slali lekove. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Ranjeni i bolesni borci i aktivisti u Koruškoj do februara 1944, pacijenti koruških partizanskih bolnica, koruški borci lečeni van bolnica i sanitetsko osoblje, s kratkom biografijom (str. 282–355). Uneti su borci i osoblje partizanskih bolnica, a politički radnici na terenu i lekari i medicinske sestre koji su partizanima slali lekove označeni su kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'artileristi-prekomorci',
@@ -2573,7 +2591,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/cacanski-kraj-pali.pdf',
     thumbnail: '/images/pdf-thumbs/cacanski-kraj-pali.jpg',
     brigadeName: '',
-    description: 'Poginuli i stradali iz čačanskog kraja 1941–1945, po krajevima (Dragačevo, Ljubić, Takovo, Trnava, Čačak) i selima: otac, zanimanje, rođenje, jedinica i kako je ko poginuo. Uneti su samo borci; civilne žrtve i četnici nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Poginuli i stradali iz čačanskog kraja 1941–1945, po krajevima (Dragačevo, Ljubić, Takovo, Trnava, Čačak) i selima: otac, zanimanje, rođenje, jedinica i kako je ko poginuo. Uneti su borci i, označeni kao aktivisti, članovi KPJ i SKOJ-a, odbornici, saradnici NOP-a i radnici partizanskih radionica 1941; civilne žrtve i četnici nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'pozega-pali',
@@ -2582,7 +2600,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/pozega-pali.pdf',
     thumbnail: '/images/pdf-thumbs/pozega-pali.jpg',
     brigadeName: '',
-    description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su samo borci; civilne žrtve, saradnici NOP-a i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Prilog Dragoljuba Munjića: spisak palih boraca NOR-a, žrtava fašističkog terora i civilnih žrtava rata u srezu požeškom, po selima, s rođenjem, jedinicom i time kako je ko poginuo. Uneti su borci i, označeni kao aktivisti, saradnici NOP-a, odbornici i radnici partizanskih radionica; civilne žrtve i vojnici bivše jugoslovenske vojske nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: '4-pomorski-sektor',

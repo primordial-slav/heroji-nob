@@ -38,6 +38,7 @@ import entry_boxes  # noqa: E402
 from _parser_scaffold import cyrillic_to_latin, extract_lines_single_column  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
 from parse_cacanski_kraj import CAPS, CHETNIK, FIGHTER, L, U, join, name_of  # noqa: E402
+from parse_cacanski_kraj import kind as ck_kind  # noqa: E402
 from parse_cacanski_odred import fix_digits  # noqa: E402
 
 PDF = 'pozega-pali.pdf'
@@ -123,7 +124,24 @@ def main():
         shutil.copy(SOURCE, PDF_PATH)
     raw = read()
     recs = [parse(e, i) for i, e in enumerate(raw, 1)]
-    kept = [r for r in recs if fighter(r)]
+    for r in recs:
+        # the book sets a narodni heroj's biography after his village's list: one of another man ("Rođen je 12.
+        # oktobra 1917. godine, u Otnju" after Trnavac Jevto, born 1905) is not this entry's
+        m = re.search(r'\.\s+Rođen[a]? je\b', r['additional_info'])
+        if m:
+            year = re.search(r'\b(1[89]\d\d)\b', r['additional_info'][m.end():m.end() + 80])
+            own = re.search(r'\b(1[89]\d\d)\b', r['additional_info'][:m.start()])
+            if year and own and year.group(1) != own.group(1):
+                r['additional_info'] = r['additional_info'][:m.start() + 1]
+    # the activists in too, marked, and the fighters by the rule of the mixed lists (the user's decision of
+    # 2026-10-19; parse_cacanski_kraj.kind): the old army's men count by what they did in this war
+    kinds = {r['soldier_id']: ck_kind(r) for r in recs}
+    for r in recs:
+        if kinds[r['soldier_id']] == 'activist':
+            r['role'] = 'activist'
+    kept = [r for r in recs if kinds[r['soldier_id']]]
+    print(f"by the old rule {sum(fighter(r) for r in recs)}; now {sum(v == 'fighter' for v in kinds.values())} fighters, "
+          f"{sum(v == 'activist' for v in kinds.values())} activists")
     stats = entry_boxes.fill_boxes(kept)
     OUT.write_text(json.dumps(kept, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(recs)} entries read, {len(kept)} fighters -> {OUT.relative_to(HERE.parent)}; '

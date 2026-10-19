@@ -34,6 +34,7 @@ sys.path.insert(0, str(HERE.parent / 'scripts'))
 import _karlovac_lists as kl  # noqa: E402
 import parse_ofanziva_1942 as ofz  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
+import parse_mosorski_odred_2 as mos  # noqa: E402
 from parse_mosorski_odred_2 import CHETNIK, FIGHTER, REAR  # noqa: E402
 from pdf_coords import viewer_offset  # noqa: E402
 
@@ -206,8 +207,23 @@ def main() -> None:
     every = [parse(e, i, page_map) for i, e in enumerate(raw, 1)]          # IDs by place among the section's entries
     # within the section too, only the fighters (the book counts there SKOJ members and political workers killed in
     # prison, and Lovreć's heading over its victims is lost): the rule of parse_mosorski_odred_2
-    recs = [r for r in every if FIGHTER.search(REAR.sub('', r['additional_info'])) and not CHETNIK.search(r['additional_info'])]
-    print(f'{len(every)} entries in the fighters\' sections, {len(recs)} fighters by the rule')
+    fighters = [r for r in every if FIGHTER.search(REAR.sub('', r['additional_info'])) and not CHETNIK.search(r['additional_info'])]
+    # an officer given only his rank, or a man the entry puts in a unit without a verb of joining, is a fighter too; the
+    # activists whose entry names their part in the movement (SKOJ, the party, the NOO) go in, marked (the user's
+    # decision of 2026-10-19); the rest, Lovreć's massacre among them, stay out
+    extra = [r for r in every if r not in fighters and mos.fighter_or_officer(r)]
+    for r in every:
+        if r not in fighters and r not in extra and mos.activist(r):
+            r['role'] = 'activist'
+    recs = [r for r in every if r in fighters or r in extra or r.get('role')]
+    print(f'{len(every)} entries in the fighters\' sections, {len(fighters)} fighters by the rule, {len(extra)} by rank '
+          f'or unit, {sum(bool(r.get("role")) for r in recs)} activists')
+    if '--dropped' in sys.argv:
+        for r in extra:
+            print(f"  F   {r['name']!r} | {r['additional_info'][:140]}")
+        for r in every:
+            if r not in recs or r.get('role'):
+                print(f"  {'ACT' if r.get('role') else 'OUT'} {r['name']!r} | {r['additional_info'][:140]}")
     OUT.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(recs)} fighters on {len(pages)} pages -> {OUT.relative_to(HERE.parent)}; villages: {len({r["additional_info"].split(":")[0] for r in recs})}')
     print(f"no given: {sum(not r['first_name'] for r in recs)}, no surname: {sum(not r['last_name'] for r in recs)}, "

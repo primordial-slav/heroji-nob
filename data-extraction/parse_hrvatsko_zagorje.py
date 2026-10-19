@@ -40,7 +40,8 @@ import _karlovac_lists as kl  # noqa: E402
 import entry_boxes  # noqa: E402
 import parse_ofanziva_1942 as ofz  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
-from parse_mosorski_odred_2 import CHETNIK, FIGHTER, REAR  # noqa: E402
+import parse_mosorski_odred_2 as mos  # noqa: E402
+from parse_mosorski_odred_2 import CHETNIK, FIGHTER, REAR, VICTIM  # noqa: E402
 from pdf_coords import viewer_words  # noqa: E402
 
 BOOK = 'hrvatsko-zagorje-1981'
@@ -192,7 +193,20 @@ def main() -> None:
     ofz.corpus()
     raw = read()
     recs = [parse(e, i) for i, e in enumerate(raw, 1)]
-    kept = [r for r in recs if fighter(r)]
+    # the activists who were no fighters go in too, marked (the user's decision of 2026-10-19): those whose entry names
+    # their part in the movement, since the list also holds victims of terror whose "ŽFT" the OCR or the book missed
+    # (a burned village's people, hostages). An officer given only his rank, or a man the entry puts in a unit without
+    # a verb of joining ("poginuo u Vojvođanskoj brigadi"), is a fighter.
+    for r in recs:
+        if fighter(r):
+            continue
+        if mos.fighter_or_officer(r) and not VICTIM.search(r['additional_info']):
+            r['_extra'] = True
+        elif mos.activist(r):
+            r['role'] = 'activist'
+    kept = [r for r in recs if fighter(r) or r.pop('_extra', False) or r.get('role')]
+    print(f"fighters by rank or unit: {len(kept) - sum(fighter(r) for r in recs) - sum(bool(r.get('role')) for r in recs)}, "
+          f"activists: {sum(bool(r.get('role')) for r in recs)}")
     OUT.write_text(json.dumps(kept, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(recs)} entries read, {len(kept)} fighters -> {OUT.relative_to(HERE.parent)}')
     print(f"no given: {sum(not r['first_name'] for r in kept)}, father: {sum(bool(r['fathers_name']) for r in kept)}, "
@@ -204,6 +218,12 @@ def main() -> None:
             print(f"  IN  {r['name']!r} [{r['born_in']}] {r['birth_year']} d{r['death_year']} {r['units']} | {r['additional_info'][:110]}")
     if '--dropped' in sys.argv:
         out = [r for r in recs if r not in kept]
+        print('-- activists:')
+        for r in random.sample([r for r in kept if r.get('role')], int(sys.argv[sys.argv.index('--dropped') + 1])):
+            print(f"  ACT {r['name']!r} | {r['additional_info'][:130]}")
+        print('-- officers by rank:')
+        for r in [r for r in kept if not fighter(r) and not r.get('role')]:
+            print(f"  OFF {r['name']!r} | {r['additional_info'][:130]}")
         for r in random.sample(out, int(sys.argv[sys.argv.index('--dropped') + 1])):
             print(f"  OUT {r['name']!r} | {r['additional_info'][:130]}")
 

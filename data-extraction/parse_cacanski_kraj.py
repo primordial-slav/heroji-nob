@@ -37,6 +37,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / 'scripts'))
 import entry_boxes  # noqa: E402
+import parse_mosorski_odred_2 as mos  # noqa: E402
 from _parser_scaffold import cyrillic_to_latin, extract_lines_single_column  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
 from parse_cacanski_odred import fix_digits  # noqa: E402
@@ -290,12 +291,55 @@ def fighter(rec: dict) -> bool:
     return bool(FIGHTER.search(info)) and not CHETNIK.search(info)
 
 
+# Read again on 2026-10-19, when the user had the mixed lists' activists added (marked) and asked to check what the
+# rule left out. The rule above stands near the partisans' words, not by them: it took the dead of a fight between
+# partisans and Chetniks, those shot on the „Borac" football ground, a commander's mother, and it left out the fighters
+# whom Ljotić's men caught ("predali ljotićevcima", its CHETNIK). Now a fighter by the rule of the mixed lists
+# (parse_mosorski_odred_2.fighter_or_officer: a duty, a unit, a rank, "u partizane"), an activist by its words, else
+# by the rule above where the scan garbled "borac" ("Oorac Čačanskog NOP odreda"); never a man the partisans killed,
+# nor one of Ljotić's, Nedić's or the Chetniks' men who did not go over to them.
+AROUND = re.compile(r'za\s+vreme\s+borb\w*\s+između\s+\S+\s+i\s+\S+|lutajuć\w*\s+metk\w*|igrališt\w*\s+\S?Borc\w*\S?',
+                    re.I)
+BY_PARTISANS = re.compile(r'(?:ubijen|streljan|ubil|streljal|likvidiran)\w*\s+(?:\S+\s+){0,2}?od\s+(?:\S+\s+){0,2}?'
+                          r'partizan\w*', re.I)
+# (the adjective is his unit, "pripadnik četničkog Jeličkog odreda", "Ljotićevim jedinicama"; the noun is the men who
+# caught him, "predali ljotićevcima")
+OTHER_MEMBER = re.compile(r'(?:pripadni\w*|član\w*|borac|stupi\w*|mobilisan\w*)\s+(?:\S+\s+){0,2}?(?:četničk\w*|'
+                          r'(?:ljotićev|nedićev|ravnogorsk|dobrovoljačk)(?:og|om|e|i|a|u|ih|im|ima|oj|ki|kog|kom)?\b|'
+                          r'SDK|SDS|državn\w*\s+straž)', re.I)
+# the rule above without its bare "partizan" and "kurir": a unit or duty the scan's garbled "borac" stands before
+# ("Rorac Takovskog bataljona", "komeoar Pete trnavske čete Trnavskog bataljona")
+UNIT_WORD = re.compile(r'\bbor(?:ac|ca|kinja)\b|\bbolničar|\bkomandir|\bkomandant|\bkomesar|\bdesetar|\bvodnik|'
+                       r'\bNOVJ?\b|\bNOP odred|\bbrigad|\bbataljon', re.I)
+
+
+def kind(rec: dict) -> str:
+    """'fighter', 'activist' (in, marked `role`), or '' (out)"""
+    info = AROUND.sub('', rec['additional_info'])
+    if BY_PARTISANS.search(info) or (OTHER_MEMBER.search(info) and not mos.WENT_OVER.search(info)):
+        return ''
+    r = {'additional_info': info}
+    if mos.fighter_or_officer(r):
+        return 'fighter'
+    own = mos.SUSPECTED.sub('', mos.KIN.sub('', info))
+    if (UNIT_WORD.search(own) and not CHETNIK.search(own) and not mos.OTHER_ARMY.search(own)
+            and not mos.AGAINST_THEM.search(own)):
+        return 'fighter'
+    return 'activist' if mos.activist(r) else ''
+
+
 def main():
     join_chapters()
     raw = read()
     ordered = [e for e in raw if not e.get('late')] + [e for e in raw if e.get('late')]
     recs = sorted((parse(e, i) for i, e in enumerate(ordered, 1)), key=lambda r: r['soldier_id'])
-    kept = [r for r in recs if fighter(r)]
+    kinds = {r['soldier_id']: kind(r) for r in recs}
+    for r in recs:
+        if kinds[r['soldier_id']] == 'activist':
+            r['role'] = 'activist'
+    kept = [r for r in recs if kinds[r['soldier_id']]]
+    print(f"by the old rule {sum(fighter(r) for r in recs)}; now {sum(v == 'fighter' for v in kinds.values())} fighters, "
+          f"{sum(v == 'activist' for v in kinds.values())} activists")
     stats = entry_boxes.fill_boxes(kept)
     OUT.write_text(json.dumps(kept, ensure_ascii=False, indent=1), encoding='utf-8')
     by = {}

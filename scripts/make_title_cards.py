@@ -17,6 +17,8 @@ CARDS = {
     'vrebac': (['ВРЕБАЦ', 'ЗАВОЂЕ', 'ПАВЛОВАЦ', 'Корени вековног трајања'], [], ''),
     'licko-petrovo-selo': (['DA SE NE PONOVI', 'Ratna kronika ranije', 'općine', 'LIČKO PETROVO SELO'], ['Miloš Pužić'], '1985.'),
     'bosansko-grahovo': (['БОСАНСКО ГРАХОВО', 'У НОР-у', '1941–1945'], [], ''),
+    'staromajdansko': (['STAROMAJDANSKO', 'PODRUČJE U NOB', '1941–1945. godine'], [], ''),
+    'otocac-brinje': (['OTOČAC I BRINJE', 'U NOB', '1941–1945'], [], ''),
 }
 
 

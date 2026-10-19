@@ -120,8 +120,16 @@ def parse(e: dict, n: int) -> dict:
 def main() -> None:
     raw = read()
     every = [parse(e, i) for i, e in enumerate(raw, 1)]
-    recs = [r for r in every if mos.fighter(r)]
-    dropped = [r for r in every if not mos.fighter(r)]
+    # the list is of the participants in the NOR: the fighters (also by a rank, a unit the entry puts them in, or "u
+    # partizane"), and since the user's decision of 2026-10-19 everyone else in it too, marked as activists (the party's
+    # and SKOJ's people, the NOO's, the helpers, those caught on the way to the partisans)
+    for r in every:
+        if not mos.fighter(r) and not mos.fighter_or_officer(r):
+            r['role'] = 'activist'
+    recs = every
+    dropped = []
+    print(f"fighters by the rule {sum(mos.fighter(r) for r in every)}, by rank or unit "
+          f"{sum(not mos.fighter(r) and not r.get('role') for r in every)}, activists {sum(bool(r.get('role')) for r in every)}")
     stats = entry_boxes.fill_boxes(recs)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding='utf-8')

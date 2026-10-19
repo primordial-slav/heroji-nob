@@ -17,10 +17,19 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-19',
     text: {
-      sr: 'Šest knjiga o selima Like i Bosanskog Grahova: oko 1.500 palih i drugih boraca, 400 pridruženo zapisima koji već postoje.',
-      sl: 'Šest knjig o vaseh Like in Bosanskega Grahova: okoli 1.500 padlih in drugih borcev, 400 pridruženih zapisom, ki že obstajajo.',
-      mk: 'Шест книги за селата во Лика и Босанско Грахово: околу 1.500 загинати и други борци, 400 приклучени кон записите што веќе постојат.',
-      en: 'Six books on the villages of Lika and Bosansko Grahovo: some 1,500 fallen and other fighters, 400 of them added to records already on the site.',
+      sr: 'Iz jedanaest spiskova koji zajedno navode borce i ostale učesnike pokreta uneti su i aktivisti NOP-a, oko 7.200 članova KPJ i SKOJ-a, odbornika i terenskih radnika, označeni kao aktivisti.',
+      sl: 'Iz enajstih seznamov, ki skupaj navajajo borce in druge udeležence gibanja, so vneseni tudi aktivisti NOG, okoli 7.200 članov KPJ in SKOJ, odbornikov in terenskih delavcev, označeni kot aktivisti.',
+      mk: 'Од единаесет списоци што заедно ги наведуваат борците и другите учесници во движењето внесени се и активистите на НОД, околу 7.200 членови на КПЈ и СКОЈ, одборници и теренски работници, означени како активисти.',
+      en: 'From eleven lists that name fighters together with others in the movement, its activists are now in too, some 7,200 party and youth league members, committee members and field workers, marked as activists.',
+    },
+  },
+  {
+    date: '2026-10-19',
+    text: {
+      sr: 'Osam knjiga o selima Like, Otočca i Brinja, Bosanskog Grahova i Starog Majdana: oko 5.800 palih i preživelih boraca i aktivista, 710 pridruženo zapisima koji već postoje.',
+      sl: 'Osem knjig o vaseh Like, Otočca in Brinja, Bosanskega Grahova in Starega Majdana: okoli 5.800 padlih in preživelih borcev ter aktivistov, 710 pridruženih zapisom, ki že obstajajo.',
+      mk: 'Осум книги за селата во Лика, Оточац и Бриње, Босанско Грахово и Стари Мајдан: околу 5.800 загинати и преживеани борци и активисти, 710 приклучени кон записите што веќе постојат.',
+      en: 'Eight books on the villages of Lika, Otočac and Brinje, Bosansko Grahovo and Stari Majdan: some 5,800 fallen and surviving fighters and activists, 710 of them added to records already on the site.',
     },
   },
   {

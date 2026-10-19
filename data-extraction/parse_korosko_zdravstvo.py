@@ -29,6 +29,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import entry_boxes  # noqa: E402
+import parse_mosorski_odred_2 as mos  # noqa: E402
 import parse_ofanziva_1942 as ofz  # noqa: E402
 import _karlovac_lists as kl  # noqa: E402
 
@@ -56,11 +57,29 @@ ARMY_ABBR = re.compile(r'\bV NOV\b|\bNOV\b|\bNOVJ\b|\bVKO\b|\bZKO\b|\bKO\b|K\.\s
 
 def army(text: str) -> bool:
     return bool(ARMY_WORDS.search(text) or ARMY_ABBR.search(text))
+
+
+# Read again on 2026-10-19, when the user had the mixed lists' activists added, marked: a patient whom his comrades
+# carried ("Soborci so ga ...") is a fighter; the movement's people the entry names (SKOJ, the party's political
+# workers, the illegal printing shop "Netopir") are activists, and so is everyone in list IV, the medical service's
+# helpers (the doctors and nurses in the towns who sent the partisans medicines, the leaders of the field ambulances),
+# whose entry says what they did; a patient of whom nothing more is known stays out
+SOBOREC = re.compile(r'\bsoborc\w*', re.I)
+
+
+def later(person: dict, p: dict, text: str) -> str:
+    if SOBOREC.search(text):
+        return 'fighter'
+    if mos.activist({'additional_info': text}):
+        return 'activist'
+    if 'IV' in person['kinds'] and len(p['text'].split()) > 4:
+        return 'activist'
+    return ''
 UNITS = [(r'Šercerjev', 141), (r'Tomšičev', 70), (r'Zidanškov', 65), (r'Bračičev', 69), (r'Gradnikov', 64),
          (r'Cankarjev\w* brigad', 61), (r'Gubčev', 62), (r'Kosovelov', 142), (r'Kozjansk\w* odred', 164),
          (r'Kokršk\w* odred', 171), (r'Zapadnodolenjsk\w* odred', 68), (r'Ljubljansk\w* brigad', 4),
          (r'Dvanajst\w* brigad|XII\. brigad', 63)]
-FIXES = {'TOM AZI N': 'TOMAZIN', 'SLEjyiENIK': 'SLEMENIK'}
+FIXES = {'TOM AZI N': 'TOMAZIN', 'SLEjyiENIK': 'SLEMENIK', 'KMET _Janez': 'KMET Janez'}
 
 
 def build_pdf() -> None:
@@ -183,12 +202,15 @@ def main() -> None:
         if key:
             people[key] = person
         order.append(person)
-    out, left = [], []
+    out, left, added = [], [], []
     for person in order:
         e, p, all_text = person['e'], person['p'], ' '.join(person['texts'])
+        new = ''
         if 'III' not in person['kinds'] and not army(all_text):
-            left.append(f"{e['kind']} {e['no']}. {p['text'][:100]}")
-            continue
+            new = later(person, p, all_text)
+            if not new:
+                left.append(f"{e['kind']} {e['no']}. {p['text'][:100]}")
+                continue
         born = re.search(r'\bRoj(?:en|ena|\.)\b[^;]{0,25}?((?:18|19)\d\d)', all_text)
         died = re.search(r'\b(?:Padel|Padla|[Uu]mrl[a]?|[Uu]streljen\w*|[Pp]obit\w*)\b[^;]{0,40}?(194\d)', all_text)
         rec = {'soldier_id': '', 'name': ' '.join(x for x in (p.get('last'), p.get('given')) if x),
@@ -201,9 +223,20 @@ def main() -> None:
                'pdf_file': PDF.name, 'pdf_page': e['page'], 'pdf_x': round(e['x0'], 1), 'pdf_y': round(e['top'], 1)}
         if p['unnamed']:
             rec['unnamed'] = True
-        out.append(rec)
+        if new == 'activist':
+            rec['role'] = 'activist'
+        if new and rec['first_name'] in ('Zdravnik', 'Zdravnica', 'Učitelj', 'Učiteljica'):
+            # "Dr. ARH Zdravnik na Ljubnem ob Savinji": the book gives the surname and the trade, no given name
+            rec['first_name'], rec['name'] = '', rec['last_name']
+        rec['_at'] = len(out) + len(added)
+        (added if new else out).append(rec)
     for i, r in enumerate(out, 1):
         r['soldier_id'] = f'{PREFIX}{i:06d}'
+    for i, r in enumerate(added, 1001):                      # after the first reading's, whose numbers stay put
+        r['soldier_id'] = f'{PREFIX}{i:06d}'
+    print(f"added on 2026-10-19: {sum(not r.get('role') for r in added)} fighters, "
+          f"{sum(bool(r.get('role')) for r in added)} activists")
+    out = sorted(out + added, key=lambda r: r.pop('_at'))
     stats = entry_boxes.fill_boxes(out)
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(out)} entries -> {OUT.relative_to(HERE.parent)}; boxes: {entry_boxes.describe(stats, stats["boxed"])}')

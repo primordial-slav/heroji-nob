@@ -337,6 +337,8 @@ def apply_references(refs, units):
             continue
         entry = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info']}
         entry.update({k: e[k] for k in SOURCE_FIELDS if e.get(k) not in (None, '')})
+        if e.get('role'):
+            entry['role'] = e['role']        # 'activist': a mixed list's man of the movement who was no fighter
         entry['ref_book'] = c['ref_book']
         s['other_sources'] = s.get('other_sources', []) + [entry]
         applied += 1

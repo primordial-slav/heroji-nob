@@ -66,7 +66,7 @@ NAME_FIXES = {'9061000128': ('Albahari', 'Nisim', 'Abrahama'),   # Romano's "Avr
 # given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
                '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
-               '9010000363': 'Dmitar'}
+               '9010000363': 'Dmitar', '9038001274': 'Đorđe'}
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica'}      # (Ostrvica's census names the head, the father)
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
@@ -472,6 +472,8 @@ def registry() -> dict[str, str]:
 def source_entry(e: dict) -> dict:
     out = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info']}
     out.update({k: e[k] for k in SOURCE_FIELDS if e.get(k) not in (None, '')})
+    if e.get('role'):
+        out['role'] = e['role']
     return out
 
 
@@ -676,6 +678,10 @@ def main():
                     rec.setdefault(k, v)                     # the Spomenica's columns
             if rest:
                 rec['other_sources'] = [source_entry(m) for m in rest]
+            # a man of the movement whom a mixed list names and no book calls a fighter (the user's decision of
+            # 2026-10-19: such lists' activists go in, marked, so the site can tell them apart)
+            if all(m.get('role') == 'activist' for m in g):
+                rec['role'] = 'activist'
             records.append(rec)
             counts[f'{len(g)} book(s)'] += 1
             counts['from ' + first['_book'] + (f" ({first['_vol']})" if first['_vol'] else '')] += 1

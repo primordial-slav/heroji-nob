@@ -64,8 +64,8 @@ MILITARY = re.compile(r'\b(?:pot?poručnik|poručnik|kapetan|major|potpukovnik|p
 
 
 def fighter(rec: dict) -> bool:
-    return mosor.fighter(rec) or (bool(MILITARY.search(rec['additional_info']))
-                                  and not mosor.CHETNIK.search(rec['additional_info']))
+    return mosor.fighter_or_officer(rec) or (bool(MILITARY.search(rec['additional_info']))
+                                             and not mosor.CHETNIK.search(rec['additional_info']))
 
 
 def build_pdf() -> None:
@@ -140,8 +140,9 @@ def parse(e: dict, n: int) -> dict:
     head = re.split(r',\s*(?=ro[dđ]en\w*|r\.\s*1[89]|1[89]\d\d)', text, maxsplit=1)
     name, rest = (head[0], head[1]) if len(head) == 2 else (text.split(',')[0], ','.join(text.split(',')[1:]))
     name = name.replace('Ä', 'A')
-    # a name in capitals with a lowercase caron ("BRAJIć") or digits the OCR read for letters ("B0DIR02A" = Bodiroža)
-    name = re.sub(rf'\b[{U}\d]*[{U}][{U}\d]*[čćžšđ]?\b', lambda m: m.group(0).upper().translate(str.maketrans('012', 'OIŽ'))
+    # a name in capitals with a lowercase caron ("BRAJIć") or digits the OCR read for letters ("B0DIR02A" = Bodiroža,
+    # "M4JKIĆ" = Majkić)
+    name = re.sub(rf'\b[{U}\d]*[{U}][{U}\d]*[čćžšđ]?\b', lambda m: m.group(0).upper().translate(str.maketrans('0124', 'OIŽA'))
                   if re.search(r'\d', m.group(0)) or m.group(0)[-1] in 'čćžšđ' else m.group(0), name)
     nick = ''
     m = re.search(r'\s+[—–-]\s+([{U}][{U}{L}]+)$'.replace('{U}', U).replace('{L}', L), name) or \
@@ -196,7 +197,13 @@ def main() -> None:
     ofz.corpus()
     raw = read()
     recs = [parse(e, i) for i, e in enumerate(raw, 1)]
-    kept = [r for r in recs if r['kind'] != 'alive' or fighter(r)]
+    # the list of 15 May 1945 names the village's people in the movement: the fighters, and the activists, who go in
+    # too, marked (the user's decision of 2026-10-19)
+    for r in recs:
+        if r['kind'] == 'alive' and not fighter(r):
+            r['role'] = 'activist'
+    kept = [r for r in recs if r['kind'] != 'alive' or fighter(r) or not mosor.CHETNIK.search(r['additional_info'])]
+    print('activists:', sum(r.get('role') == 'activist' for r in kept))
     print(f'{len(recs)} entries, {len(kept)} kept -> {OUT.relative_to(HERE.parent)}')
     print(Counter(r['kind'] for r in recs), 'kept:', Counter(r['kind'] for r in kept))
     stats = entry_boxes.fill_boxes(kept)

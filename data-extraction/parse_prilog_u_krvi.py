@@ -161,8 +161,16 @@ def fighter(rec: dict) -> bool:
 def main() -> None:
     raw = read()
     every = [parse(e) for e in raw]
-    recs = [r for r in every if fighter(r)]
-    dropped = [r for r in every if not fighter(r)]
+    # the book's fallen of the NOR count its party and SKOJ workers, the NOO's men and the NOP's helpers too: since the
+    # user's decision of 2026-10-19 they go in, marked as activists, and a man it puts in a unit or calls a partisan,
+    # or who fell in battle, is a fighter
+    for r in every:
+        if not fighter(r) and not mos.fighter_or_officer(r):
+            r['role'] = 'activist'
+    recs = every
+    dropped = []
+    print(f"fighters {sum(not r.get('role') for r in every)} (by the rule {sum(fighter(r) for r in every)}), "
+          f"activists {sum(bool(r.get('role')) for r in every)}")
     stats = entry_boxes.fill_boxes(recs)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding='utf-8')
