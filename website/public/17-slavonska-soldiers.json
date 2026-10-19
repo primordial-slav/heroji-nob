@@ -39842,6 +39842,14 @@
         "pdf_y_end": 551.1,
         "pdf_x_left": 243.7,
         "ref_book": "zene-vi-korpus-poginule"
+      },
+      {
+        "soldier_id": "9021032593",
+        "name": "Ojkić (Lazo) Milka",
+        "additional_info": "rođena 1924, Voćin (Podravska Slatina). Srpkinja, poginula 1944. u NOBu, Dilj kod Paučja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1674",
+        "source_page": 1674,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ]
   },
@@ -43150,8 +43158,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1365",
         "source_page": 1365,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0034000725",
+        "name": "Petrović T Obren",
+        "additional_info": "borac 1. bataljona, rođen 1926. u Zablaću, Loznica, Srbin, zemljoradnik, poginuo 27. 1. 1945, Patkovača, Bijeljina.",
+        "pdf_file": "21-slavonska.pdf",
+        "pdf_page": 37,
+        "pdf_x": 32.5,
+        "pdf_y": 366.2,
+        "pdf_x_end": 313.4,
+        "pdf_y_end": 392.5,
+        "unit_file": "21-slavonska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_date": "27. 1. 1945",
+    "death_place": "Patkovači, Bijeljina"
   },
   {
     "last_name": "Petrović",
@@ -48323,32 +48348,16 @@
     "pdf_x_end": 355.4,
     "other_sources": [
       {
-        "soldier_id": "9021015176",
-        "name": "Rašeta (Petar) Nikola",
-        "additional_info": "rođen 1916, Lončarica (Grubišno Polje). Srbin, poginuo 1943. u NOBu, Lončarica",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=732",
-        "source_page": 732,
-        "ref_book": "zrtve-rata-1964-hrv"
-      }
-    ]
-  },
-  {
-    "last_name": "Rašeta",
-    "middle_name": "P",
-    "first_name": "Nikola",
-    "fathers_name": "P",
-    "full_name": "Rašeta P Nikola",
-    "additional_info": "1916, Lončarica (općina Grubišno Polje)",
-    "birth_year": "1916",
-    "pdf_page": 15,
-    "pdf_y": 184.3,
-    "pdf_x": 216.8,
-    "pdf_y_end": 201.4,
-    "pdf_file": "17-slavonska-prezivjeli.pdf",
-    "soldier_id": "0016002598",
-    "birth_place": "Lončarica",
-    "pdf_x_end": 334.0,
-    "other_sources": [
+        "soldier_id": "0016002598",
+        "name": "Rašeta P Nikola",
+        "additional_info": "1916, Lončarica (općina Grubišno Polje)",
+        "pdf_file": "17-slavonska-prezivjeli.pdf",
+        "pdf_page": 15,
+        "pdf_x": 216.8,
+        "pdf_y": 184.3,
+        "pdf_x_end": 334.0,
+        "pdf_y_end": 201.4
+      },
       {
         "soldier_id": "9021015176",
         "name": "Rašeta (Petar) Nikola",
@@ -48765,10 +48774,10 @@
   },
   {
     "last_name": "Renac",
-    "middle_name": "",
+    "middle_name": "Đure",
     "first_name": "Stevo",
-    "fathers_name": "",
-    "full_name": "Renac Stevo",
+    "fathers_name": "Đuro",
+    "full_name": "Renac Đure Stevo",
     "additional_info": "rođen 1910, V. Grabičani — poginuo 1943, Voćin (općina Koprivnica)",
     "birth_year": "1910",
     "pdf_page": 10,
@@ -48785,8 +48794,20 @@
     "rank": "borac",
     "other_sources": [
       {
+        "soldier_id": "0058002362",
+        "name": "Renac Đure Stevo",
+        "additional_info": "r.1914; Veliki Grabičani, Rasinja, Koprivnica; u KPO od listopadal942; poginuo kod Vočina (Podravska Slatina), 1943. kao vodnik voda u 17. slavonskoj brigade.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 67,
+        "pdf_x": 126.6,
+        "pdf_y": 588.0,
+        "pdf_x_end": 281.2,
+        "pdf_y_end": 636.4,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      },
+      {
         "soldier_id": "0058002363",
-        "name": "Renac Stevo",
+        "name": "Renac Đure Stevo",
         "additional_info": "r. 1910; Veliki Grabičani, Koprivnica; u KPO od studenog 1942; poginuo 1943. u Vočinu (Podravska Slatina), kao borac 17. slavonske brigade.",
         "pdf_file": "kalnicki-odred.pdf",
         "pdf_page": 67,
@@ -59836,6 +59857,18 @@
         "pdf_y": 134.6,
         "pdf_x_end": 467.2,
         "pdf_y_end": 192.8,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0058010180",
+        "name": "Vitanović Marijan",
+        "additional_info": "Rukovodioci Kalničkoga partizanskog odreda: rukovodilac osječko-kalničke oružane grupe, od kolovoza 1941.",
+        "pdf_file": "kalnicki-odred-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 253.4,
+        "pdf_y": 210.3,
+        "pdf_x_end": 368.4,
+        "pdf_y_end": 221.8,
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ]

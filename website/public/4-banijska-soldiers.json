@@ -3216,10 +3216,10 @@
   },
   {
     "last_name": "Bobetko",
-    "middle_name": "",
+    "middle_name": "Ivana",
     "first_name": "Janko",
-    "fathers_name": "",
-    "full_name": "Bobetko Janko",
+    "fathers_name": "Ivan",
+    "full_name": "Bobetko Ivana Janko",
     "additional_info": "rođen 1919. u Crncu (Sisak)",
     "birth_year": "1919",
     "pdf_page": 5,
@@ -3246,8 +3246,56 @@
         "pdf_y_end": 566.1
       },
       {
-        "soldier_id": "0045000071",
+        "soldier_id": "0035100933",
+        "name": "Bobetko Ivana Janko",
+        "additional_info": "r. 1919, s. Crnac, Sisak, Hrvat, student veterine, čl. KPJ, NOV 1941, ranjen 1943, 1944, 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 92,
+        "pdf_x": 298.4,
+        "pdf_y": 413.2,
+        "pdf_x_end": 450.2,
+        "pdf_y_end": 439.4,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035100932",
         "name": "Bobetko Janko",
+        "additional_info": "r. 1919, s. Crnac, Sisak, Hrvat, student, čl. KPJ, NOV 1941, ranjen 1943, 1944. i 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 2,
+        "pdf_x": 120.8,
+        "pdf_y": 462.2,
+        "pdf_y_end": 487.9,
+        "pdf_x_end": 273.2,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035000750",
+        "name": "Bobetko Janko",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 199.9,
+        "pdf_y": 214.6,
+        "pdf_x_end": 274.5,
+        "pdf_y_end": 224.1,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035200048",
+        "name": "Bobetko Janko",
+        "additional_info": "Komandni sastav 32. divizije i njenih brigada: politički komesar 32. divizije; politički komesar brigade »Matija Gubec«.",
+        "pdf_file": "32-divizija-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 367.7,
+        "pdf_y": 404.8,
+        "pdf_x_end": 434.6,
+        "pdf_y_end": 414.3,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0045000071",
+        "name": "Bobetko Ivana Janko",
         "additional_info": "referent saniteta brigade, rođen 1919, Crnci, Petrinja, student veterine, Hrvat, u NOB od 1941, član KPJ od od 1938, krajem rata politički komesar 32. divizije.",
         "pdf_file": "borci-sutjeske-8-banijska.pdf",
         "pdf_page": 4,
@@ -5562,7 +5610,21 @@
     "soldier_id": "0020000281",
     "birth_place": "Dobrom Selu (Otoka)",
     "death_type": "poginuo",
-    "pdf_x_end": 352.7
+    "pdf_x_end": 352.7,
+    "other_sources": [
+      {
+        "soldier_id": "9040000773",
+        "name": "Cimeša Jovo Marko",
+        "additional_info": "Spisak palih boraca u Cazinskoj krajini, Dobro Selo, opština Bosanska Krupa: Cimeša Jovo Marko, 1912–1943",
+        "pdf_file": "cazinska-krajina-pali-borci.pdf",
+        "pdf_page": 10,
+        "pdf_x": 282.9,
+        "pdf_y": 563.0,
+        "pdf_x_end": 397.7,
+        "pdf_y_end": 572.0,
+        "ref_book": "cazinska-krajina-pali-borci"
+      }
+    ]
   },
   {
     "last_name": "Cizek",
@@ -10493,7 +10555,36 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Majur",
-    "pdf_x_end": 383.3
+    "pdf_x_end": 383.3,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0045000182",
+        "name": "Grmuša Đure Jovan",
+        "additional_info": "borac, rođen 1923, Bojna, Glina, zemljoradnik, Srbin, u NÓB od 1942, poginuo na Mošćenici, kod Petrinje, početkom decembra 1944. godine.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 191.9,
+        "pdf_y": 98.8,
+        "pdf_x_end": 362.1,
+        "pdf_y_end": 150.2,
+        "unit_file": "8-banijska-soldiers.json"
+      },
+      {
+        "soldier_id": "0045010222",
+        "name": "Grmuša Đure Jovan",
+        "additional_info": "1923, Hrvatska Bojna, kotar Glina, zemljoradnik, Srbin. Borac od 1942. godine, član KPJ, poginuo 5. 12. 1944. u napadu na selo Mošćenica kod Petrinje.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 302.2,
+        "pdf_y": 486.4,
+        "pdf_y_end": 548.1,
+        "pdf_x_end": 461.1,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grmuša",
@@ -12230,7 +12321,29 @@
     "soldier_id": "0020000638",
     "birth_place": "Dobrom Selu (Otoka)",
     "death_type": "poginuo",
-    "pdf_x_end": 363.0
+    "pdf_x_end": 363.0,
+    "other_sources": [
+      {
+        "soldier_id": "9040000810",
+        "name": "Janković Đuro Dušan",
+        "additional_info": "Spisak palih boraca u Cazinskoj krajini, Dobro Selo, opština Bosanska Krupa: Janković Đuro Dušan, 1916–1943",
+        "pdf_file": "cazinska-krajina-pali-borci.pdf",
+        "pdf_page": 10,
+        "pdf_x": 469.6,
+        "pdf_y": 417.6,
+        "pdf_x_end": 594.8,
+        "pdf_y_end": 426.6,
+        "ref_book": "cazinska-krajina-pali-borci"
+      },
+      {
+        "soldier_id": "9022006655",
+        "name": "Janković (Đuro) Dušan",
+        "additional_info": "rođen 1916, Dobro Selo (Bosanska Krupa). Srbin, poginuo 1943. u NOBu, Zrinj hrvatska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=704",
+        "source_page": 704,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Janošević",
@@ -14002,7 +14115,24 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Mošćenica",
-    "pdf_x_end": 380.4
+    "pdf_x_end": 380.4,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0045000264",
+        "name": "Karapandža Mile Dmitar",
+        "additional_info": "borac 1. bataljona, rođen 1919, Ravno Rašće, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Petrinje 1944.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 223.7,
+        "pdf_y": 362.5,
+        "pdf_x_end": 393.7,
+        "pdf_y_end": 404.1,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Karapandža",
@@ -14943,7 +15073,26 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000777",
     "birth_place": "Kepčijama (Dvor na Uni)",
-    "pdf_x_end": 350.0
+    "pdf_x_end": 350.0,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "18. 6. 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0045010353",
+        "name": "Kepcija Miloša Đuro",
+        "additional_info": "1924, Kepčije, kotar Dvor, zemljoradnik, Srbin. Borac od 1942. godine, član SKOJ-a, poginuo 18. 6. 1943. kod sela Podgrab u proboju 8. brigade preko komunikacija Sarajevo - Višegrad.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 27,
+        "pdf_x": 293.2,
+        "pdf_y": 258.3,
+        "pdf_x_end": 452.1,
+        "pdf_y_end": 320.1,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kerkez",
@@ -15444,7 +15593,26 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000803",
     "birth_place": "Donjem Selištu (Glina)",
-    "pdf_x_end": 354.6
+    "pdf_x_end": 354.6,
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "juna 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0045010357",
+        "name": "Klobučar Steve Nikola",
+        "additional_info": "1925, Donje Selište, kotar Glina, zemljoradnik, Hrvat. Borac od 1942. godine, poginuo juna 1943. u bici na Stujesci.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 27,
+        "pdf_x": 292.7,
+        "pdf_y": 581.6,
+        "pdf_x_end": 451.8,
+        "pdf_y_end": 622.2,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Klobučar",
@@ -16563,7 +16731,24 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Ličko Petrovo Selo",
-    "pdf_x_end": 374.3
+    "pdf_x_end": 374.3,
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0044010415",
+        "name": "Kreštalica Mate Janko",
+        "additional_info": "rođen 1913, Jošavica — Glina, Hrvat, zemljoradnik, u NOVJ od 1944, borac. Poginuo 1945. kod Ličkog Petrovog Sela.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 30,
+        "pdf_x": 56.2,
+        "pdf_y": 146.7,
+        "pdf_x_end": 337.0,
+        "pdf_y_end": 173.2,
+        "unit_file": "7-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kreštalica",
@@ -19076,7 +19261,24 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "u Luščanima",
-    "pdf_x_end": 376.3
+    "pdf_x_end": 376.3,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0045010428",
+        "name": "Lukač Pere Lazo",
+        "additional_info": "1904, Ivanjska, kotar Bosanska Krupa, zemljoradnik, Srbin. Borac od januara 1943. godine iz zbjega za Bosnu, poginuo 24. februara 1944. kod sela Luščani, Petrinja.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 31,
+        "pdf_x": 302.8,
+        "pdf_y": 545.2,
+        "pdf_x_end": 461.8,
+        "pdf_y_end": 607.0,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lukač",
@@ -28058,12 +28260,12 @@
   },
   {
     "last_name": "Relić",
-    "middle_name": "",
+    "middle_name": "Pere",
     "first_name": "Đuro",
-    "fathers_name": "",
-    "full_name": "Relić Đuro",
+    "fathers_name": "Pero",
+    "full_name": "Relić Pere Đuro",
     "additional_info": "rođen u Gornjem Selištu (Glina), poginuo 1945. u Ličkom Petrovom Selu.",
-    "birth_year": "",
+    "birth_year": "1908",
     "pdf_page": 37,
     "pdf_y": 304.6,
     "pdf_x": 51.5,
@@ -28074,7 +28276,32 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Ličko Petrovo Selo",
-    "pdf_x_end": 358.2
+    "pdf_x_end": 358.2,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9021012110",
+        "name": "Relić (Pero) Đuro",
+        "additional_info": "rođen 1908, Gornje Selište (Glina). Srbin, poginuo 1944. u NOBu, Petrovo ličko s",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=516",
+        "source_page": 516,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0045010727",
+        "name": "Relić Pere Đuro",
+        "additional_info": "1908, Gornje Selište, kotar Glina, zemljoradnik, Srbin. Borac od 1942. godine, član KPJ, poginuo 1944. godine kod Ličkog Petrovog Sela.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 303.3,
+        "pdf_y": 592.4,
+        "pdf_x_end": 462.1,
+        "pdf_y_end": 643.6,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Repak",
@@ -28218,9 +28445,27 @@
             632.3
           ]
         ]
+      },
+      {
+        "soldier_id": "0047000368",
+        "name": "Resanović Bogoljuba Branko",
+        "additional_info": "omladinski rukovodilac brigade, rođen 1921, Gvozdansko, Dvor, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a od avgusta 1941, član KPJ od januara 1943, krajem rata politički komesar bataljona. Umro 1992. u Beogradu.",
+        "pdf_file": "borci-sutjeske-16-banijska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 179.8,
+        "pdf_y": 194.4,
+        "pdf_x_end": 350.1,
+        "pdf_y_end": 269.9,
+        "unit_file": "16-banijska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "omladinski rukovodilac brigade",
+    "death_type": "umro",
+    "death_date": "1992",
+    "death_place": "Beograd"
   },
   {
     "last_name": "Resanović",
@@ -29779,7 +30024,24 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "u Prekopi (Glina)",
-    "pdf_x_end": 369.1
+    "pdf_x_end": 369.1,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0045000618",
+        "name": "Simić Nikole Đuro",
+        "additional_info": "borac, rođen 1928, Buzeta, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo 1944. u selu Prekopa kod Gline.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 223.9,
+        "pdf_y": 363.0,
+        "pdf_x_end": 393.9,
+        "pdf_y_end": 404.6,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sjever",
@@ -32814,6 +33076,18 @@
         "pdf_x_end": 388.8,
         "pdf_y_end": 536.4,
         "unit_file": "8-banijska-soldiers.json"
+      },
+      {
+        "soldier_id": "0045020097",
+        "name": "Tintor Đuro",
+        "additional_info": "zvani Duda; Pregled komandnog kadra 8. banijske brigade: zamjenik komesara 4. bataljona (od septembra 1943. godine).",
+        "pdf_file": "8-banijska-kadar.pdf",
+        "pdf_page": 3,
+        "pdf_x": 233.1,
+        "pdf_y": 196.5,
+        "pdf_x_end": 317.9,
+        "pdf_y_end": 205.5,
+        "unit_file": "8-banijska-soldiers.json"
       }
     ],
     "unit_detail": "Štab brigade"
@@ -35173,8 +35447,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=417",
         "source_page": 417,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0045000736",
+        "name": "Vujanić Miloša Adam",
+        "additional_info": "borac 3. bataljona, rođen 1918, Šamarički Brđani, Dvor, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Koprivnice oktobra 1944. godine.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 36.7,
+        "pdf_y": 393.3,
+        "pdf_x_end": 206.4,
+        "pdf_y_end": 445.7,
+        "unit_file": "8-banijska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "last_name": "Vujanić",
@@ -35737,7 +36026,21 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Brekovica",
-    "pdf_x_end": 359.4
+    "pdf_x_end": 359.4,
+    "other_sources": [
+      {
+        "soldier_id": "9018000798",
+        "name": "Vukić Miloša Đorđe",
+        "additional_info": "Tušilovački Cerovac, općina Tušilović: 1926, seljak, Srbin. Stuplio u NOV 25. 10. 1942. Desetar 2. brig. 8. div. Poginuo kod Bihaća 28. 3. 1945.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 34,
+        "pdf_x": 208.8,
+        "pdf_y": 379.0,
+        "pdf_x_end": 376.3,
+        "pdf_y_end": 413.9,
+        "ref_book": "hak-19-vojnic"
+      }
+    ]
   },
   {
     "last_name": "Vukič",

@@ -11743,8 +11743,22 @@
         "pdf_x_end": 286.5,
         "pdf_y_end": 457.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0007000833",
+        "name": "Bursać Petra Jovan",
+        "additional_info": "12. 1. 1925. Plavno, Knin. Srbin, zemljoradnik. U NOV od 13. 2. 1945. u 2. dalm. brigadi.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 29,
+        "pdf_x": 138.3,
+        "pdf_y": 317.9,
+        "pdf_x_end": 459.9,
+        "pdf_y_end": 333.7,
+        "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Burzanović",
@@ -12843,7 +12857,37 @@
     "soldier_id": "0021000595",
     "pdf_x_end": 358.4,
     "birth_place": "Grdanovci, Sanski Most",
-    "occupation": "gimnazijalac"
+    "occupation": "gimnazijalac",
+    "ethnicity": "Srbin",
+    "rank": "omladinski rukovodilac brigade",
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0010100185",
+        "name": "Daljević Mihajla Milan",
+        "additional_info": "omladinski rukovodilac brigade, rođen 1925, Grdanovci, Sanski Most, đak, Srbin, u NOB od 1941, član KPJ od 1942. godine, krajem rata zamenik političkog komesara brigade.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 192.2,
+        "pdf_y": 65.8,
+        "pdf_x_end": 362.9,
+        "pdf_y_end": 129.0,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010200808",
+        "name": "Daljević Mihajla Milan",
+        "additional_info": "rod. 1925, Grdanovci, S. Most, đak, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941« u brigadi od maja 1943, član KPJ od 1942, pom. komesara brigade. DAMIANO, Italijan, u NOB i brigadi od 1943, poginuo.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 70,
+        "pdf_x": 81.0,
+        "pdf_y": 321.8,
+        "pdf_x_end": 345.2,
+        "pdf_y_end": 358.1,
+        "pdf_x_left": 62.1,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Damjanović",
@@ -20791,7 +20835,22 @@
     "death_type": "poginuo",
     "death_date": "26. jula 1944",
     "death_place": "na Veljoj Glavi",
-    "unit_detail": "1. četa, 2. bataljon"
+    "unit_detail": "1. četa, 2. bataljon",
+    "rank": "komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "0093000051",
+        "name": "Glušac Pavla Mirko",
+        "additional_info": "1923, Jovine Livade, Prokuplje, član SKOJ-a, član KPJ od 1943. U odredu od 1941. Bio komandir čete u Četvrtoj srpskoj udarnoj brigadi. Poginuo jula 1944. na planini Kitki (Kosovo) za vreme sedme neprijateljske ofanzive.",
+        "pdf_file": "toplicki-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 53.0,
+        "pdf_y": 344.7,
+        "pdf_x_end": 360.1,
+        "pdf_y_end": 385.4,
+        "unit_file": "toplicki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gmitrović",
@@ -24674,6 +24733,18 @@
         "unit_file": "soldiers.json"
       },
       {
+        "soldier_id": "0002002620",
+        "name": "Ilić Svetolika Radoje",
+        "additional_info": "17. 9. 1917, Potočac, Paraćin, zemljoradnik, u NOB od 1944",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 653,
+        "pdf_x": 125.1,
+        "pdf_y": 521.6,
+        "pdf_x_end": 459.9,
+        "pdf_y_end": 541.0,
+        "unit_file": "soldiers.json"
+      },
+      {
         "soldier_id": "0074000263",
         "name": "Ilić Svetislava Radoje",
         "additional_info": "rođen 1919. godine, Potočac, Paraćin. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu. Ranjen 25. januara 1945. godine kod Tovarnika.",
@@ -26632,7 +26703,23 @@
     "death_type": "poginuo",
     "death_date": "3. januara 1945",
     "death_place": "u Košetincima",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "occupation": "zemljoradnik",
+    "rank": "politički delegat voda",
+    "other_sources": [
+      {
+        "soldier_id": "0127000174",
+        "name": "Ivković D Milorad",
+        "additional_info": "1924, Gornje Konjuvce, Pusta Reka, Leskovac, zemljoradnik. Član aktiva SKOJ-a u svom selu. U NOVJ od početka 1944. godine, politički delegat voda u 2. četi 4. bataljona. Poginuo 3. januara 1945. godine kod Donjeg Novog Sela, na Sremskom frontu, gde je i sahranjen.",
+        "pdf_file": "5-srpska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 48.5,
+        "pdf_y": 197.6,
+        "pdf_x_end": 353.6,
+        "pdf_y_end": 241.9,
+        "unit_file": "5-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ivković",
@@ -27218,7 +27305,36 @@
     "pdf_x_end": 357.8,
     "birth_place": "Kozličić, Valjevo",
     "occupation": "zemljoradnik",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9013005222",
+        "name": "Jakovljević D. Milivoje",
+        "additional_info": "Artiljerijske jedinice šeste ličke proleterske divizije, Šid: Milivoje D. Jakovljević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 36,
+        "pdf_x": 365.2,
+        "pdf_y": 649.8,
+        "pdf_x_end": 462.5,
+        "pdf_y_end": 670.0,
+        "pdf_x_left": 104.1,
+        "pdf_rects": [
+          [
+            365.2,
+            649.8,
+            462.5,
+            659.5
+          ],
+          [
+            104.1,
+            660.3,
+            118.7,
+            670.0
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Jakovljević",
@@ -27493,6 +27609,14 @@
     "rank": "borac",
     "death_place": "u selu Pirkovcima kod Lopara (istočna Bosna)",
     "other_sources": [
+      {
+        "soldier_id": "9025022019",
+        "name": "Jakovljević (Žarko) Vlastimir",
+        "additional_info": "rođen 1927, Niš. Srbin, poginuo 1945. u NOBu, Vlasenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=869",
+        "source_page": 869,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
       {
         "soldier_id": "0019000167",
         "name": "Jakovljević Vlastimir",
@@ -30820,7 +30944,24 @@
     "birth_place": "Donja Trepča, Čačak",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "unit_detail": "izviđačka četa"
+    "unit_detail": "izviđačka četa",
+    "ethnicity": "Srbin",
+    "rank": "borac",
+    "death_date": "maja 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0024000428",
+        "name": "Jevtović Vladimira Miloš",
+        "additional_info": "rođen 1919, u Donjoj Trepči, Čačak, Srbin, zemljoradnik, u NOB od kraja 1944, u brigadi od kraja 1944, borac, poginuo maja 1945.;",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 36.3,
+        "pdf_y": 392.6,
+        "pdf_x_end": 394.1,
+        "pdf_y_end": 407.8,
+        "unit_file": "2-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jevđić",
@@ -32568,7 +32709,17 @@
     "birth_place": "Mijajlica, Bojnik",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_place": "Sremski front"
+    "death_place": "Sremski front",
+    "other_sources": [
+      {
+        "soldier_id": "9025007676",
+        "name": "Jovanović (Nikola) Dragoljub",
+        "additional_info": "rođen 1924, Mijaljica (Bojnik). Srbin, poginuo 1944. u NOBu, Sremska mitrovica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=314",
+        "source_page": 314,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -32685,6 +32836,14 @@
         "pdf_x_end": 411.2,
         "pdf_y_end": 411.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025015342",
+        "name": "Jovanović (Milun) Dragomir",
+        "additional_info": "rođen 1925, Buci (Kruševac). Srbin, poginuo 1944. u NOBu, Tovarnik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=634",
+        "source_page": 634,
+        "ref_book": "zrtve-rata-1964-srb"
       },
       {
         "soldier_id": "0123000590",
@@ -35250,6 +35409,14 @@
     "rank": "borac",
     "other_sources": [
       {
+        "soldier_id": "9025002500",
+        "name": "Jovanović (Stanislav) Velisav",
+        "additional_info": "rođen 1927, Barajevo. Srbin, umro 1945. u NOBu, Novi sad",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=70",
+        "source_page": 70,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0002003308",
         "name": "Jovanović Stanislavov Velisav",
         "additional_info": "18. 2. 1927, Barajevo, zemljoradnik, borac od 14. 12. 1944",
@@ -36563,7 +36730,24 @@
     "soldier_id": "0021001682",
     "pdf_x_end": 363.1,
     "birth_place": "Ranilović",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "ethnicity": "Srbin",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0080000384",
+        "name": "Jovičić Pante Milivoje",
+        "additional_info": "majka Draga; borac, rođen 18. 1. 1915. u Raniloviću, Aranđelovac, zemljoradnik, Srbin, u brigadi od 20. 9. 1944. do 13. 1. 1945 potom u 4. srpskoj brigadi. Živi u Raniloviću.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 47,
+        "pdf_x": 52.1,
+        "pdf_y": 342.6,
+        "pdf_x_end": 387.0,
+        "pdf_y_end": 367.9,
+        "pdf_x_left": 31.0,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovičić",
@@ -45289,7 +45473,21 @@
     "death_type": "poginuo",
     "death_date": "15. decembra 1943",
     "death_place": "Kosančić",
-    "rank": "komandant brigade"
+    "rank": "komandant brigade",
+    "other_sources": [
+      {
+        "soldier_id": "0110000954",
+        "name": "Ljubić Vuksana Stojan",
+        "additional_info": "komandir 3. čete, rođen 1919, Vujanovo, Bojnik, student prava u Beogradu. Član KPJ od 1941. Ostao do razbijanja odreda. Odlazi u svoj rodni kraj da nastavi borbu. Poginuo je 15. 12. 1943, kao komandant 2. južno-moravske brigade, u borbi sa četnicima, kod Kosančića, Bojnik. Za narodnog heroja proglašen 9. maja 1945. godine.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 25,
+        "pdf_x": 57.6,
+        "pdf_y": 292.6,
+        "pdf_x_end": 339.7,
+        "pdf_y_end": 346.2,
+        "unit_file": "posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ljubić",
@@ -50649,7 +50847,23 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "komandir čete",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "death_date": "3. decembra 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0019000341",
+        "name": "Marković V Miloš",
+        "additional_info": "komandir čete u 4. bataljonu 16. srpske brigade, rođen 1920. god. u selu Stragarama kod Trstenika, poginuo 3. decembra 1944. god. kod sela Lisa blizu Lučana (Požega) u borbi protiv Nemaca, sahranjen u Guči.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 16,
+        "pdf_x": 84.3,
+        "pdf_y": 50.7,
+        "pdf_x_end": 342.2,
+        "pdf_y_end": 94.8,
+        "pdf_x_left": 62.7,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marković",
@@ -51218,7 +51432,22 @@
     "soldier_id": "0021002362",
     "pdf_x_end": 362.0,
     "birth_place": "Vinča, Grocka",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0003011873",
+        "name": "Marković Cvetka Radoje",
+        "additional_info": "rođen 1926. u Vinći - Beograd. U NOB-1944. Borac brigade.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 87,
+        "pdf_x": 203.2,
+        "pdf_y": 411.2,
+        "pdf_x_end": 363.6,
+        "pdf_y_end": 439.9,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marković",
@@ -53715,7 +53944,17 @@
     "soldier_id": "0021002475",
     "pdf_x_end": 364.0,
     "death_type": "umro",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9025018367",
+        "name": "Mićić (Milorad) Stanoje",
+        "additional_info": "rođen 1919, Gornja Sipulja (Loznica). Srbin, poginuo 1944. u NOBu, Sremska mitrovica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=740",
+        "source_page": 740,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Micić",
@@ -58991,7 +59230,17 @@
     "pdf_x_end": 360.1,
     "birth_place": "Nova Topola, Lebane",
     "rank": "zamenik komandira",
-    "unit_detail": "1. četa, 2. bataljon"
+    "unit_detail": "1. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9025017339",
+        "name": "Milićević (Rista) Ratko",
+        "additional_info": "rođen 1902, Nova Topola (Lebane). Srbin, poginuo 1944. u NOBu, 7 ofanziva",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=692",
+        "source_page": 692,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Milićević",
@@ -62379,6 +62628,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=464",
         "source_page": 464,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0006004460",
+        "name": "Milovanović Bogdana Živorad",
+        "additional_info": "1923. Miličinica, Valjevo. Poginuo januara 1945.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 61,
+        "pdf_x": 303.1,
+        "pdf_y": 647.4,
+        "pdf_x_end": 475.8,
+        "pdf_y_end": 663.7,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -65217,7 +65478,21 @@
     "death_date": "16. aprila 1945",
     "death_place": "Đakovo",
     "rank": "desetar",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0074000612",
+        "name": "Mirković Vladimira Milisav",
+        "additional_info": "rođen 1921. godine, Lugavčina, Smederevo. Marta meseca 1945. prekomandovan u IV srpsku brigadu. Poginuo 16. aprila 1945. godine u Đakovu.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 126.5,
+        "pdf_y": 400.9,
+        "pdf_x_end": 419.5,
+        "pdf_y_end": 428.6,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mirković",
@@ -65634,7 +65909,36 @@
     "soldier_id": "0021003029",
     "pdf_x_end": 364.9,
     "birth_place": "Lipe, Smederevo.",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "ethnicity": "Srbin",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0074000613",
+        "name": "Mitić Milutina Božidar",
+        "additional_info": "rođen 12. 12. 1924. godine, Lipe, Smederevo. U Brigadu stupio 12. 09. 1944. godine, borac.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 160.2,
+        "pdf_y": 606.7,
+        "pdf_x_end": 453.5,
+        "pdf_y_end": 624.8,
+        "unit_file": "22-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0080000717",
+        "name": "Mitić Milutina Božidar",
+        "additional_info": "borac, rođen 1924. u Lipama, Smederevo, zemljoradnik, Srbin, u Kosmajskom NOP odredu od 1. 10. u brigadi od 22. 12. 1943. do septembra 1944, potom radio na terenu. Živi u Lipama.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 59,
+        "pdf_x": 55.4,
+        "pdf_y": 121.9,
+        "pdf_x_end": 391.4,
+        "pdf_y_end": 147.2,
+        "pdf_x_left": 33.8,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mitić",
@@ -66360,6 +66664,18 @@
         "pdf_y": 478.2,
         "pdf_x_end": 419.6,
         "pdf_y_end": 505.6,
+        "unit_file": "22-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0074000620",
+        "name": "Mitrović Radivoja Dragoljub",
+        "additional_info": "rođen 1909. godine, Velika Ivanča, Mladenovac, zemljoradnik. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu. Ranjen 8. aprila 1945. godine pred proboj Sremskog fronta.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 52,
+        "pdf_x": 129.8,
+        "pdf_y": 301.4,
+        "pdf_x_end": 422.8,
+        "pdf_y_end": 339.6,
         "unit_file": "22-srpska-soldiers.json"
       }
     ],
@@ -67564,7 +67880,23 @@
     "birth_place": "Jagnjilo",
     "occupation": "zemljoradnik",
     "rank": "vodnik",
-    "unit_detail": "3. četa, 3. bataljon"
+    "unit_detail": "3. četa, 3. bataljon",
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0080000728",
+        "name": "Mićić Ljubomira Ilija",
+        "additional_info": "majka Vidosava; zvani Mali; rođen 7. 3. 1927. u Jagnjilu, Mladenovac, zemljoradnik, Srbin, član KPJ od 3. 1. 1945, u NOP-u od juna 1942, u 3. četi 4. bataljona od 10. 10. 1944. do 13. 1. 1945, potom u 4. srpskoj brigadi. Živi u Beogradu.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 59,
+        "pdf_x": 56.4,
+        "pdf_y": 405.8,
+        "pdf_x_end": 391.3,
+        "pdf_y_end": 439.7,
+        "pdf_x_left": 34.8,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mićić",
@@ -72256,7 +72588,21 @@
     "soldier_id": "0021003337",
     "pdf_x_end": 358.7,
     "birth_place": "Selevac, Smederevska Palanka.",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0074000667",
+        "name": "Nikolić Pante Branislav",
+        "additional_info": "rođen 1920. godine, Selevac, Smederevska Palanka. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 54,
+        "pdf_x": 127.9,
+        "pdf_y": 547.1,
+        "pdf_x_end": 421.5,
+        "pdf_y_end": 575.5,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -74726,6 +75072,9 @@
     "unit_detail": "2. bataljon",
     "ethnicity": "Srbin",
     "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "13. aprila 1945",
+    "death_place": "Vinkovci",
     "other_sources": [
       {
         "soldier_id": "0010203456",
@@ -74739,6 +75088,18 @@
         "pdf_y_end": 179.0,
         "pdf_x_left": 38.1,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0021003443",
+        "name": "Nikolić Vojislava Živojin",
+        "additional_info": "Resnik. Beograd, zemljoradnik. U Brigadi od marta 1945. Poginuo 13. aprila 1945. kod Vinkovaca.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 257,
+        "pdf_x": 59.1,
+        "pdf_y": 201.6,
+        "pdf_x_end": 361.8,
+        "pdf_y_end": 222.7,
+        "unit_file": "4-srpska-soldiers.json"
       }
     ]
   },
@@ -74749,7 +75110,7 @@
     "fathers_name": "Vojislav",
     "full_name": "Nikolić Vojislava Živojin",
     "additional_info": "Resnik. Beograd, zemljoradnik. U Brigadi od marta 1945. Poginuo 13. aprila 1945. kod Vinkovaca.",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 257,
     "pdf_y": 201.6,
     "pdf_x": 59.1,
@@ -74774,8 +75135,35 @@
         "pdf_x_end": 513.7,
         "pdf_y_end": 525.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0010203456",
+        "name": "Nikolić Vojislava Živojin",
+        "additional_info": "rod. 1921, Resnik, Beograd, zemljoradnik, Srbin, u NOB i brigadi od 13. 10. 1944, borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 289,
+        "pdf_x": 54.9,
+        "pdf_y": 161.2,
+        "pdf_x_end": 320.1,
+        "pdf_y_end": 179.0,
+        "pdf_x_left": 38.1,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0021003442",
+        "name": "Nikolić Vojislava Živojin",
+        "additional_info": "rođen 1922, Resnik, Beograd, zemljoradnik. U Brigadi od marta 1945, 2. bataljon. Ranjen 26. aprila 1945. kod Donjeg Rajića.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 257,
+        "pdf_x": 59.1,
+        "pdf_y": 164.7,
+        "pdf_x_end": 362.2,
+        "pdf_y_end": 197.2,
+        "unit_file": "4-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "rank": "borac"
   },
   {
     "last_name": "Nikolić",
@@ -80038,6 +80426,18 @@
     "occupation": "zemljoradnik",
     "other_sources": [
       {
+        "soldier_id": "0021003693",
+        "name": "Pavlović Dušana Radivoje",
+        "additional_info": "rođen 1927, Stragari, Trstenik, zemljoradnik. U Brigadi od decembra 1944. godine.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 274,
+        "pdf_x": 59.1,
+        "pdf_y": 436.1,
+        "pdf_x_end": 362.7,
+        "pdf_y_end": 457.6,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0074000747",
         "name": "Pavlović Dušana Radivoje",
         "additional_info": "rođen 1920. godine, Stragare, Trstenik, zemljoradnik. Marta meseca 1945. prekomandovan u IV srpsku brigadu.",
@@ -80067,7 +80467,33 @@
     "soldier_id": "0021003693",
     "pdf_x_end": 362.7,
     "birth_place": "Stragari, Trstenik",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0021003692",
+        "name": "Pavlović Dušana Radivoje",
+        "additional_info": "rođen 1920. Stragare, Trstenik. zemljoradnik. U Brigadi od 9. marta 1945. (iz Kosmajske brigade).",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 274,
+        "pdf_x": 59.1,
+        "pdf_y": 410.6,
+        "pdf_x_end": 362.7,
+        "pdf_y_end": 432.1,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0074000747",
+        "name": "Pavlović Dušana Radivoje",
+        "additional_info": "rođen 1920. godine, Stragare, Trstenik, zemljoradnik. Marta meseca 1945. prekomandovan u IV srpsku brigadu.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 131.7,
+        "pdf_y": 319.1,
+        "pdf_x_end": 425.2,
+        "pdf_y_end": 347.2,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -81593,7 +82019,17 @@
     "pdf_file": "4-srpska.pdf",
     "soldier_id": "0021003766",
     "pdf_x_end": 361.8,
-    "birth_place": "Konjaršk"
+    "birth_place": "Konjaršk",
+    "other_sources": [
+      {
+        "soldier_id": "9025039881",
+        "name": "Perović (Lazar) Radovan",
+        "additional_info": "rođen 1909, Konjarnik (Žitoradja). Srbin, poginuo 1944. u NOBu, Obražda",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1448",
+        "source_page": 1448,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Perović",
@@ -83084,8 +83520,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=499",
         "source_page": 499,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0074000783",
+        "name": "Petrović Milije Dragoljub",
+        "additional_info": "rođen 30. 01. 1912. godine Suvodol, Smederevo, desetar. U Brigadi od 12. 09. 1944. godine. Poginuo januara 1945. godine na Đakovu.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 158.2,
+        "pdf_y": 484.9,
+        "pdf_x_end": 451.9,
+        "pdf_y_end": 513.3,
+        "unit_file": "22-srpska-soldiers.json"
       }
-    ]
+    ],
+    "rank": "desetar"
   },
   {
     "last_name": "Petrović",
@@ -83138,8 +83587,21 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=99",
         "source_page": 95,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0093000193",
+        "name": "Petrović Srbina Dragoslav",
+        "additional_info": "zvani Gorski; rođen 1919. godine u Nišu. Završio je oficirsku školu i 1941. godine postao aktivni potporučnik. U NOP se uključio 1941. godine, a krajem novembra došao je u Toplički NOP odred. Bio je borac — puškomitraljezac, desetar, pa komandir čete, maja 1942. godine postao je komandant Rasinskog NOP odreda. U KPJ je primljen aprila 1942. godine. Oktobra 1943. godine otišao za komandanta Oficirskog kursa, a već novembra iste godine za komandanta 2. južnomoravske brigade. Posle rata vršio je odgovorne dužnosti u JNA. Penzionisan je u činu general-pukovnika. Nosilac je »Spomenice 1941« i niza drugih odlikovanja. Za narodnog heroja Jugoslavije proglašen je novembra 1953. godine.",
+        "pdf_file": "toplicki-odred.pdf",
+        "pdf_page": 34,
+        "pdf_x": 51.7,
+        "pdf_y": 303.7,
+        "pdf_x_end": 358.1,
+        "pdf_y_end": 504.9,
+        "unit_file": "toplicki-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Niš"
   },
   {
     "last_name": "Petrović",
@@ -87594,6 +88056,14 @@
         "pdf_x_end": 576.2,
         "pdf_y_end": 787.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025006635",
+        "name": "Prodanović (Branko) Milan",
+        "additional_info": "rođen 1926, Beograd-Zvezdara (Beograd Zvezdara). Srbin, poginuo 1944. u NOBu, Sremski front",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=272",
+        "source_page": 272,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ]
   },
@@ -89494,7 +89964,21 @@
     "pdf_x_end": 362.9,
     "birth_place": "Drugovac",
     "occupation": "zemljoradnik",
-    "unit_detail": "3. bataljon, mitraljeska četa"
+    "unit_detail": "3. bataljon, mitraljeska četa",
+    "other_sources": [
+      {
+        "soldier_id": "0074000850",
+        "name": "Radojević Milorada Dragomir",
+        "additional_info": "rođen 1922. godine, Drugovagr Smederevo, zemljoradnik. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu. 27. aprila teže ranjen od nagazne mine ispred Novske.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 62,
+        "pdf_x": 122.1,
+        "pdf_y": 557.7,
+        "pdf_x_end": 419.7,
+        "pdf_y_end": 596.4,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radojević",
@@ -89656,6 +90140,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=496",
         "source_page": 496,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0074000853",
+        "name": "Radojević Dragomira Svetozar",
+        "additional_info": "rođen 1912. godine, Drugovac, Smederevo. U Brigadu stupio 01. 10. 1944. godine. Ranjen 12. aprila 1945. godine kod Lovasa, Vukovar i ubrzo umro u divizijskoj bolnici.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 122.7,
+        "pdf_y": 483.3,
+        "pdf_x_end": 416.9,
+        "pdf_y_end": 512.2,
+        "unit_file": "22-srpska-soldiers.json"
       }
     ]
   },
@@ -91668,8 +92164,46 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=504",
         "source_page": 504,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0002007197",
+        "name": "Radovanović Marka Vidoje",
+        "additional_info": "1926, Mušići, Rosjerić, poginuo 15. 4. 1945. kod Đakova",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 822,
+        "pdf_x": 135.5,
+        "pdf_y": 610.5,
+        "pdf_x_end": 469.6,
+        "pdf_y_end": 630.5,
+        "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003001017",
+        "name": "Radovanović Marka Vidoje",
+        "additional_info": "rođen u s. Mušići-Kosjerić. Borac 4. bataljona. Poginuo na sremskom frontu 1945. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 38,
+        "pdf_x": 126.2,
+        "pdf_y": 135.3,
+        "pdf_x_end": 484.7,
+        "pdf_y_end": 152.7,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003021804",
+        "name": "Radovanović Marka Vidoje",
+        "additional_info": "rođen u s. Mušiči - Kosjerić. U NOB-1944. Borac 4. bataljona. Poginuo na Sremskom frontu 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 92,
+        "pdf_x": 227.8,
+        "pdf_y": 396.8,
+        "pdf_x_end": 388.7,
+        "pdf_y_end": 445.6,
+        "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac",
+    "death_date": "15. 4. 1945"
   },
   {
     "last_name": "Radovanović",
@@ -91959,8 +92493,34 @@
         "pdf_x_end": 350.6,
         "pdf_y_end": 853.8,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0001010268",
+        "name": "Radović Luke Spasoje",
+        "additional_info": "1922, Kosijeri, Cetinje, Crna Gora, Crnogorac, zemljoradnik, član SKOJ-a od 1941, član KPJ od 1944, u NOB od 1941, u brigadi od januara 1944, I bataljon, komandir voda, poginuo 07. 12. 1944, kod Ilače, Vinkovci",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 115,
+        "pdf_x": 45.5,
+        "pdf_y": 534.8,
+        "pdf_x_end": 352.7,
+        "pdf_y_end": 555.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001501953",
+        "name": "Radović Luke Spasoje",
+        "additional_info": "u bataljon stupio 1944. godine; rođen 1922, Kosjeri, Cetinje, SRCG, zemljoradnik, član SKOJ-a, u NOB od 1941, poginuo decembra 1944. kod Iloka kao komandir voda.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 54,
+        "pdf_x": 195.0,
+        "pdf_y": 440.7,
+        "pdf_y_end": 465.5,
+        "pdf_x_end": 554.7,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Radović",
@@ -111199,6 +111759,18 @@
         "pdf_x_end": 352.8,
         "pdf_y_end": 469.4,
         "unit_file": "4-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0074001023",
+        "name": "Stojanović S Života",
+        "additional_info": "rođen 1911. godine, Markovac, Mladenovac, zemljoradnik. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 70,
+        "pdf_x": 127.0,
+        "pdf_y": 404.3,
+        "pdf_x_end": 421.8,
+        "pdf_y_end": 432.6,
+        "unit_file": "22-srpska-soldiers.json"
       }
     ]
   },
@@ -111730,10 +112302,10 @@
   },
   {
     "last_name": "Stojić",
-    "middle_name": "",
+    "middle_name": "Luke",
     "first_name": "Dragojlo",
-    "fathers_name": "",
-    "full_name": "Stojić Dragojlo",
+    "fathers_name": "Luka",
+    "full_name": "Stojić Luke Dragojlo",
     "additional_info": "rođen 1917. Stupčevići, Arilje. stolarski radnik. Učesnž NOB-a od 1941. godine. U Brigadu došao 15. jula 1944. (iz 2. proleterske brigade); bio zamenik komandanta Brigade do 1. septembra 1944.",
     "birth_year": "1917",
     "pdf_page": 376,
@@ -111745,7 +112317,21 @@
     "pdf_x_end": 363.8,
     "birth_place": "Stupčevići, Arilje",
     "occupation": "stolarski radnik",
-    "rank": "zamenik komandanta brigade"
+    "rank": "zamenik komandanta brigade",
+    "other_sources": [
+      {
+        "soldier_id": "0039100999",
+        "name": "Stojić Luke Dragojlo",
+        "additional_info": "komandir Prateće čete brigade, rođen 1917, Stupčevići, Arilje, radnik, Srbin, u NOB od 1941, član KPJ od 1942, krajem rata komandant brigade. Umro 1975. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 283.9,
+        "pdf_y": 294.7,
+        "pdf_x_end": 454.3,
+        "pdf_y_end": 347.1,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojić",
@@ -115722,7 +116308,34 @@
     "death_date": "7. februara 1945",
     "unit_detail": "3. četa, 3. bataljon",
     "occupation": "zemljoradnik",
+    "ethnicity": "Srbin",
+    "rank": "borac",
+    "death_place": "Ćele Kula, Niš",
     "other_sources": [
+      {
+        "soldier_id": "0001012506",
+        "name": "Todorović Živka Miodrag",
+        "additional_info": "1927, Ripanj, Voždovac-Beograd, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, I bataljon, borac, umro 03. 05. 1945, Ćele Kula, Niš",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 283,
+        "pdf_x": 48.0,
+        "pdf_y": 157.0,
+        "pdf_x_end": 355.2,
+        "pdf_y_end": 199.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001502356",
+        "name": "Todorović Živka Miodrag",
+        "additional_info": "u bataljon stupio 1944. godine; rođen 1927, Ripanj, Beograd, SRS, zemljoradnik, u NOB od oktobra 1944. godine.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 60,
+        "pdf_x": 169.8,
+        "pdf_y": 629.5,
+        "pdf_y_end": 645.9,
+        "pdf_x_end": 529.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
       {
         "soldier_id": "0002008783",
         "name": "Todorović Živka Miodrag",
@@ -115733,6 +116346,18 @@
         "pdf_y": 481.4,
         "pdf_x_end": 373.8,
         "pdf_y_end": 490.9,
+        "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0002008785",
+        "name": "Todorović Zivka Miodrag",
+        "additional_info": "12. 6. 1927, Ripanj, Beograd, zemljoradnik, u NOB od 1944, 1. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 881,
+        "pdf_x": 124.6,
+        "pdf_y": 519.8,
+        "pdf_x_end": 459.5,
+        "pdf_y_end": 539.6,
         "unit_file": "soldiers.json"
       }
     ]
@@ -117103,7 +117728,21 @@
     "pdf_x_end": 358.6,
     "birth_place": "Bogdanje, Trstenik",
     "occupation": "stolar",
-    "unit_detail": "3. četa, 3. bataljon"
+    "unit_detail": "3. četa, 3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0074001090",
+        "name": "Topolac Dragoljuba Dragutin",
+        "additional_info": "rođen 1927. godine, Bogdanje, Trstenik, stolar. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu. Ranjen 12. aprila 1945. godine kod Lovasa, Vukovar.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 73,
+        "pdf_x": 173.1,
+        "pdf_y": 518.5,
+        "pdf_x_end": 468.4,
+        "pdf_y_end": 547.4,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Torbica",
@@ -120325,7 +120964,17 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "desetar",
-    "unit_detail": "3. četa, 2. bataljon"
+    "unit_detail": "3. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9025033307",
+        "name": "Vasić (Filip) Milan",
+        "additional_info": "rođen 1923, Bogdanje (Trstenik). Srbin, poginuo 1945. u NOBu, Celje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1252",
+        "source_page": 1252,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Vasić",
@@ -122453,7 +123102,21 @@
     "soldier_id": "0021005639",
     "pdf_x_end": 354.9,
     "birth_place": "Drenovci",
-    "unit_detail": "1. četa, 2. bataljon"
+    "unit_detail": "1. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0074001133",
+        "name": "Verić I Anton",
+        "additional_info": "ili Velić; rođen 1927. godine, Drenovci, Županja. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 76,
+        "pdf_x": 125.3,
+        "pdf_y": 234.5,
+        "pdf_x_end": 420.8,
+        "pdf_y_end": 262.9,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Veršić",
@@ -125946,6 +126609,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=465",
         "source_page": 465,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0006007481",
+        "name": "Vučičević Miloja Aleksandar",
+        "additional_info": "1924, Ostalić, T. Užice. Poginuo 19. IV 1945. kod Pleternice.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 103,
+        "pdf_x": 125.8,
+        "pdf_y": 600.5,
+        "pdf_x_end": 297.9,
+        "pdf_y_end": 624.5,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -132390,8 +133065,21 @@
         "pdf_x_end": 480.5,
         "pdf_y_end": 660.2,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0074001237",
+        "name": "Đorđević Bogoljuba Živorad",
+        "additional_info": "rođen 1927. godine, Kovačevac, Mladenovac, stolar. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu. Nestao januara 1945. godine kod Novak Bapske.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 80,
+        "pdf_x": 124.7,
+        "pdf_y": 623.3,
+        "pdf_x_end": 419.9,
+        "pdf_y_end": 651.3,
+        "unit_file": "22-srpska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Novak Bapska"
   },
   {
     "last_name": "Đorđević",
@@ -134527,7 +135215,23 @@
     "birth_place": "Velika Krsna",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_date": "13. 04. 1945",
+    "death_place": "Vinkovci",
+    "other_sources": [
+      {
+        "soldier_id": "0074001262",
+        "name": "Šarković Dragoljuba Dušan",
+        "additional_info": "rođen 17. 05. 1924. godine, Velika Krsna, Mladenovac. U Brigadu stupio 20. 09. 1944. godine. Poginuo 13. 04. 1945. godine u Vinkovcima.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 121.9,
+        "pdf_y": 200.0,
+        "pdf_x_end": 415.1,
+        "pdf_y_end": 228.6,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šarlović",
@@ -135264,7 +135968,35 @@
     "pdf_x_end": 360.9,
     "birth_place": "Vlaška",
     "occupation": "domaćica",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "ethnicity": "Srpkinja",
+    "other_sources": [
+      {
+        "soldier_id": "0021006240",
+        "name": "Živanović Milete Milica",
+        "additional_info": "ili Davidović; rođena 1924, Vlaška. Mtadenovac, živela u Beogradu, domaćica. U Brigadi od 13. januara 1945. Bolničarka u četi. Došta iz 2. iJumadijske brigade.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 103,
+        "pdf_x": 58.7,
+        "pdf_y": 354.0,
+        "pdf_x_end": 361.6,
+        "pdf_y_end": 386.5,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0080001398",
+        "name": "Živanović Milete Milica",
+        "additional_info": "majka Miroslava; bolničarka, rođena 1924. u Vlaški, Mladenovac, domaćica, Srpkinja, u brigadi od 15. 8. 1944. do 13. 1. 1945, potom u 21. diviziji. Živi u Beogradu.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 42,
+        "pdf_x": 34.3,
+        "pdf_y": 151.5,
+        "pdf_x_end": 370.4,
+        "pdf_y_end": 176.7,
+        "pdf_x_left": 13.2,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Živanović",
@@ -135283,7 +136015,35 @@
     "pdf_x_end": 361.6,
     "birth_place": "Vlaška",
     "occupation": "domaćica",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "ethnicity": "Srpkinja",
+    "other_sources": [
+      {
+        "soldier_id": "0021006239",
+        "name": "Živanović Milete Milica",
+        "additional_info": "rođ. Davidović; rođena 1924, Vlaška. Mladenovac. živela u Beogradu, domaćica. U Brigadi od 13. januara 1945, (došta iz 2. šumadijske brigade). Bolničarka u Četi automatičara.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 102,
+        "pdf_x": 55.4,
+        "pdf_y": 227.0,
+        "pdf_x_end": 360.9,
+        "pdf_y_end": 260.5,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0080001398",
+        "name": "Živanović Milete Milica",
+        "additional_info": "majka Miroslava; bolničarka, rođena 1924. u Vlaški, Mladenovac, domaćica, Srpkinja, u brigadi od 15. 8. 1944. do 13. 1. 1945, potom u 21. diviziji. Živi u Beogradu.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 42,
+        "pdf_x": 34.3,
+        "pdf_y": 151.5,
+        "pdf_x_end": 370.4,
+        "pdf_y_end": 176.7,
+        "pdf_x_left": 13.2,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Živanović",

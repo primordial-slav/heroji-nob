@@ -297,7 +297,21 @@
     "birth_place": "Sašinci, Sremska Mitrovića",
     "soldier_id": "0083000015",
     "pdf_x_end": 350.9,
-    "death_date": "19. januara 1945"
+    "death_date": "19. januara 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0083010010",
+        "name": "Belas Miladin",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: pomoćnik političkog komesara čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 4,
+        "pdf_x": 220.0,
+        "pdf_y": 294.4,
+        "pdf_x_end": 287.7,
+        "pdf_y_end": 303.1
+      }
+    ],
+    "rank": "pomoćnik političkog komesara čete"
   },
   {
     "last_name": "Beloševič",
@@ -1528,7 +1542,35 @@
     "birth_place": "Dobrinci, Ruma",
     "soldier_id": "0083000072",
     "pdf_x_end": 326.2,
-    "death_date": "17. januara 1945"
+    "death_date": "17. januara 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0083010046",
+        "name": "Gazibarić Rajko",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: komandir čete; zamenik komandira čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 160.2,
+        "pdf_y": 379.1,
+        "pdf_x_end": 244.8,
+        "pdf_y_end": 387.8,
+        "pdf_rects": [
+          [
+            160.2,
+            379.1,
+            244.8,
+            387.8
+          ],
+          [
+            134.8,
+            521.6,
+            218.1,
+            530.3
+          ]
+        ]
+      }
+    ],
+    "rank": "komandir čete, zamenik komandira čete"
   },
   {
     "last_name": "Gašpič",
@@ -1651,6 +1693,17 @@
     "death_date": "8. februara 1945",
     "other_sources": [
       {
+        "soldier_id": "0083010050",
+        "name": "Grujić Ilija",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: pomoćnik političkog komesara čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 4,
+        "pdf_x": 226.7,
+        "pdf_y": 302.8,
+        "pdf_x_end": 284.5,
+        "pdf_y_end": 311.5
+      },
+      {
         "soldier_id": "9027001978",
         "name": "Grujić (Vasa) Ilija",
         "additional_info": "rođen 1925, Krušedolski Prnjavor (Irig). Srbin, poginuo 1945. u NOBu, Trešnjevica",
@@ -1658,7 +1711,8 @@
         "source_page": 102,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "rank": "pomoćnik političkog komesara čete"
   },
   {
     "last_name": "Gršič",
@@ -2025,7 +2079,42 @@
     "birth_place": "Klenak, Ruma",
     "soldier_id": "0083000094",
     "pdf_x_end": 344.0,
-    "death_date": "13. aprila 1945"
+    "death_date": "13. aprila 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0083010062",
+        "name": "Jovanović Boško",
+        "additional_info": "zvani Popa; Spisak štabova i komandi 6. vojvođanske brigade: politički komesar 1. bataljona; politički komesar 2. bataljona.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 329.1,
+        "pdf_y": 180.1,
+        "pdf_x_end": 352.5,
+        "pdf_y_end": 188.8,
+        "pdf_rects": [
+          [
+            329.1,
+            180.1,
+            352.5,
+            188.8
+          ],
+          [
+            71.1,
+            188.7,
+            157.9,
+            197.4
+          ],
+          [
+            150.3,
+            345.2,
+            269.3,
+            353.9
+          ]
+        ]
+      }
+    ],
+    "rank": "politički komesar",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Jovanovic",
@@ -2158,6 +2247,31 @@
     "death_date": "18. oktobra 1944",
     "other_sources": [
       {
+        "soldier_id": "0083010068",
+        "name": "Jovičić Branko",
+        "additional_info": "zvani Baja; Spisak štabova i komandi 6. vojvođanske brigade: zamenik komandanta 1. bataljona; zamenik komandira čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 278.8,
+        "pdf_y": 156.3,
+        "pdf_x_end": 352.6,
+        "pdf_y_end": 165.0,
+        "pdf_rects": [
+          [
+            278.8,
+            156.3,
+            352.6,
+            165.0
+          ],
+          [
+            71.8,
+            165.0,
+            94.8,
+            173.7
+          ]
+        ]
+      },
+      {
         "soldier_id": "9027005249",
         "name": "Jovičić (Raja) Branko",
         "additional_info": "rođen 1918, Pećinci. Srbin, poginuo 1944. u NOBu, Beograd",
@@ -2173,7 +2287,9 @@
         "source_page": 276,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "rank": "zamenik komandanta, zamenik komandira čete",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Jurkovič",
@@ -3875,7 +3991,17 @@
     "birth_place": "Gaj, Kovin",
     "soldier_id": "0083000176",
     "pdf_x_end": 355.7,
-    "death_date": "13. aprila 1945"
+    "death_date": "13. aprila 1945",
+    "other_sources": [
+      {
+        "soldier_id": "9027002798",
+        "name": "Milutinović (Vasa) Nikola",
+        "additional_info": "rođen 1915, Gaj (Kovin). Srbin, poginuo 1945. u NOBu, Osijek",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=136",
+        "source_page": 136,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ]
   },
   {
     "last_name": "Mirkovic",
@@ -3898,6 +4024,17 @@
     "death_date": "20. oktobra 1944",
     "other_sources": [
       {
+        "soldier_id": "0083010115",
+        "name": "Mirković Ljubica",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: pomoćnik političkog komesara čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 4,
+        "pdf_x": 168.2,
+        "pdf_y": 336.4,
+        "pdf_x_end": 257.1,
+        "pdf_y_end": 345.1
+      },
+      {
         "soldier_id": "9027006420",
         "name": "Mirković (Đoka) Ljubica",
         "additional_info": "rođena 1926, Ruma. Srpkinja, poginula 1944. u NOBu, Beograd",
@@ -3905,7 +4042,8 @@
         "source_page": 315,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "rank": "pomoćnik političkog komesara čete"
   },
   {
     "last_name": "Mirkovic",
@@ -4218,6 +4356,17 @@
     "death_date": "15. aprila 1945",
     "other_sources": [
       {
+        "soldier_id": "0083010123",
+        "name": "Nešić Vitomir",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: zamenik komandira čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 4,
+        "pdf_x": 143.8,
+        "pdf_y": 113.7,
+        "pdf_x_end": 212.1,
+        "pdf_y_end": 122.4
+      },
+      {
         "soldier_id": "9027007458",
         "name": "Nešić (Milivoj) Vitomir",
         "additional_info": "rođen 1919, Vizić (Šid). Srbin, poginuo 1945. u NOBu, Budimci-slavoni",
@@ -4225,7 +4374,8 @@
         "source_page": 387,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "rank": "zamenik komandira čete"
   },
   {
     "last_name": "Neškovič",
@@ -4993,6 +5143,17 @@
     "death_date": "15. aprila 1945",
     "other_sources": [
       {
+        "soldier_id": "0083010144",
+        "name": "Popov Miloš",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: politički komesar 2. bataljona; politički komesar čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 136.4,
+        "pdf_y": 362.5,
+        "pdf_x_end": 196.7,
+        "pdf_y_end": 371.2
+      },
+      {
         "soldier_id": "9027003509",
         "name": "Popov (Živa) Miloš",
         "additional_info": "rođen 1913, Novo Miloševo (Novi Bečej). Srbin, poginuo 1945. u NOBu, Našice-podgorač",
@@ -5000,7 +5161,9 @@
         "source_page": 163,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "rank": "politički komesar čete",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Poturica",
@@ -5092,6 +5255,17 @@
     "death_date": "30. oktobra 1944",
     "other_sources": [
       {
+        "soldier_id": "0083010150",
+        "name": "Pupavac Stevan",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: komandir čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 124.6,
+        "pdf_y": 437.9,
+        "pdf_x_end": 203.8,
+        "pdf_y_end": 446.6
+      },
+      {
         "soldier_id": "9013004326",
         "name": "Pupavac Stevan",
         "additional_info": "Šesta vojvođanska brigada, Grgurevci: Stevan Pupavac.",
@@ -5130,7 +5304,8 @@
         ],
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "rank": "komandir čete"
   },
   {
     "last_name": "Pupin",
@@ -6368,7 +6543,21 @@
     "birth_place": "Jazak, Irig",
     "soldier_id": "0083000288",
     "pdf_x_end": 323.7,
-    "death_date": "16. aprila 1945"
+    "death_date": "16. aprila 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0083010187",
+        "name": "Stričević Paja",
+        "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: komandir čete.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 147.6,
+        "pdf_y": 463.1,
+        "pdf_x_end": 225.3,
+        "pdf_y_end": 471.8
+      }
+    ],
+    "rank": "komandir čete"
   },
   {
     "last_name": "Strmac",
@@ -7892,24 +8081,6 @@
     "rank": "pomoćnik političkog komesara čete"
   },
   {
-    "last_name": "Belas",
-    "middle_name": "",
-    "first_name": "Miladin",
-    "fathers_name": "",
-    "full_name": "Belas Miladin",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: pomoćnik političkog komesara čete.",
-    "birth_year": "",
-    "pdf_page": 4,
-    "pdf_y": 294.4,
-    "pdf_x": 220.0,
-    "pdf_y_end": 303.1,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 287.7,
-    "soldier_id": "0083010010",
-    "rank": "pomoćnik političkog komesara čete"
-  },
-  {
     "last_name": "Benković",
     "middle_name": "",
     "first_name": "Juraj",
@@ -8710,38 +8881,6 @@
     "rank": "sekretar SKOJ-a brigade"
   },
   {
-    "last_name": "Gazibarić",
-    "middle_name": "",
-    "first_name": "Rajko",
-    "fathers_name": "",
-    "full_name": "Gazibarić Rajko",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: komandir čete; zamenik komandira čete.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 379.1,
-    "pdf_x": 160.2,
-    "pdf_y_end": 387.8,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 244.8,
-    "pdf_rects": [
-      [
-        160.2,
-        379.1,
-        244.8,
-        387.8
-      ],
-      [
-        134.8,
-        521.6,
-        218.1,
-        530.3
-      ]
-    ],
-    "soldier_id": "0083010046",
-    "rank": "komandir čete, zamenik komandira čete"
-  },
-  {
     "last_name": "Georgijević",
     "middle_name": "",
     "first_name": "Todor",
@@ -8822,24 +8961,6 @@
     ],
     "soldier_id": "0083010049",
     "rank": "pomoćnik političkog komesara brigade"
-  },
-  {
-    "last_name": "Grujić",
-    "middle_name": "",
-    "first_name": "Ilija",
-    "fathers_name": "",
-    "full_name": "Grujić Ilija",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: pomoćnik političkog komesara čete.",
-    "birth_year": "",
-    "pdf_page": 4,
-    "pdf_y": 302.8,
-    "pdf_x": 226.7,
-    "pdf_y_end": 311.5,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 284.5,
-    "soldier_id": "0083010050",
-    "rank": "pomoćnik političkog komesara čete"
   },
   {
     "last_name": "Grujić",
@@ -9056,44 +9177,6 @@
   {
     "last_name": "Jovanović",
     "middle_name": "",
-    "first_name": "Boško",
-    "fathers_name": "",
-    "full_name": "Jovanović Boško",
-    "additional_info": "zvani Popa; Spisak štabova i komandi 6. vojvođanske brigade: politički komesar 1. bataljona; politički komesar 2. bataljona.",
-    "birth_year": "",
-    "pdf_page": 2,
-    "pdf_y": 180.1,
-    "pdf_x": 329.1,
-    "pdf_y_end": 188.8,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 352.5,
-    "pdf_rects": [
-      [
-        329.1,
-        180.1,
-        352.5,
-        188.8
-      ],
-      [
-        71.1,
-        188.7,
-        157.9,
-        197.4
-      ],
-      [
-        150.3,
-        345.2,
-        269.3,
-        353.9
-      ]
-    ],
-    "soldier_id": "0083010062",
-    "rank": "politički komesar"
-  },
-  {
-    "last_name": "Jovanović",
-    "middle_name": "",
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Jovanović Nikola",
@@ -9178,38 +9261,6 @@
     "pdf_x_end": 176.4,
     "soldier_id": "0083010067",
     "rank": "načelnik štaba brigade"
-  },
-  {
-    "last_name": "Jovičić",
-    "middle_name": "",
-    "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Jovičić Branko",
-    "additional_info": "zvani Baja; Spisak štabova i komandi 6. vojvođanske brigade: zamenik komandanta 1. bataljona; zamenik komandira čete.",
-    "birth_year": "",
-    "pdf_page": 2,
-    "pdf_y": 156.3,
-    "pdf_x": 278.8,
-    "pdf_y_end": 165.0,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 352.6,
-    "pdf_rects": [
-      [
-        278.8,
-        156.3,
-        352.6,
-        165.0
-      ],
-      [
-        71.8,
-        165.0,
-        94.8,
-        173.7
-      ]
-    ],
-    "soldier_id": "0083010068",
-    "rank": "zamenik komandanta, zamenik komandira čete"
   },
   {
     "last_name": "Jovičić",
@@ -10303,24 +10354,6 @@
   {
     "last_name": "Mirković",
     "middle_name": "",
-    "first_name": "Ljubica",
-    "fathers_name": "",
-    "full_name": "Mirković Ljubica",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: pomoćnik političkog komesara čete.",
-    "birth_year": "",
-    "pdf_page": 4,
-    "pdf_y": 336.4,
-    "pdf_x": 168.2,
-    "pdf_y_end": 345.1,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 257.1,
-    "soldier_id": "0083010115",
-    "rank": "pomoćnik političkog komesara čete"
-  },
-  {
-    "last_name": "Mirković",
-    "middle_name": "",
     "first_name": "Ljubomir",
     "fathers_name": "",
     "full_name": "Mirković Ljubomir",
@@ -10497,24 +10530,6 @@
     ],
     "soldier_id": "0083010122",
     "rank": "komandir čete"
-  },
-  {
-    "last_name": "Nešić",
-    "middle_name": "",
-    "first_name": "Vitomir",
-    "fathers_name": "",
-    "full_name": "Nešić Vitomir",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: zamenik komandira čete.",
-    "birth_year": "",
-    "pdf_page": 4,
-    "pdf_y": 113.7,
-    "pdf_x": 143.8,
-    "pdf_y_end": 122.4,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 212.1,
-    "soldier_id": "0083010123",
-    "rank": "zamenik komandira čete"
   },
   {
     "last_name": "Nikolić",
@@ -10976,24 +10991,6 @@
     "rank": "zamenik komandanta, komandir čete"
   },
   {
-    "last_name": "Popov",
-    "middle_name": "",
-    "first_name": "Miloš",
-    "fathers_name": "",
-    "full_name": "Popov Miloš",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: politički komesar 2. bataljona; politički komesar čete.",
-    "birth_year": "",
-    "pdf_page": 2,
-    "pdf_y": 362.5,
-    "pdf_x": 136.4,
-    "pdf_y_end": 371.2,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 196.7,
-    "soldier_id": "0083010144",
-    "rank": "politički komesar čete"
-  },
-  {
     "last_name": "Popović",
     "middle_name": "",
     "first_name": "Dimitrije",
@@ -11109,24 +11106,6 @@
     "pdf_x_end": 238.2,
     "soldier_id": "0083010149",
     "rank": "zamenik komandira čete"
-  },
-  {
-    "last_name": "Pupavac",
-    "middle_name": "",
-    "first_name": "Stevan",
-    "fathers_name": "",
-    "full_name": "Pupavac Stevan",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: komandir čete.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 437.9,
-    "pdf_x": 124.6,
-    "pdf_y_end": 446.6,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 203.8,
-    "soldier_id": "0083010150",
-    "rank": "komandir čete"
   },
   {
     "last_name": "Putniković",
@@ -11952,24 +11931,6 @@
     "pdf_x_end": 266.9,
     "soldier_id": "0083010186",
     "rank": "zamenik komandira čete"
-  },
-  {
-    "last_name": "Stričević",
-    "middle_name": "",
-    "first_name": "Paja",
-    "fathers_name": "",
-    "full_name": "Stričević Paja",
-    "additional_info": "Spisak štabova i komandi 6. vojvođanske brigade: komandir čete.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 463.1,
-    "pdf_x": 147.6,
-    "pdf_y_end": 471.8,
-    "pdf_file": "6-vojvodjanska-stabovi.pdf",
-    "unit_detail": "",
-    "pdf_x_end": 225.3,
-    "soldier_id": "0083010187",
-    "rank": "komandir čete"
   },
   {
     "last_name": "Stupovski",

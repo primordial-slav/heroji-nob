@@ -2233,7 +2233,17 @@
     "birth_place": "Crveni Breg, Crna Trava",
     "pdf_x_end": 363.5,
     "soldier_id": "0085000111",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9025011563",
+        "name": "Cvetković (Milan) Branislav",
+        "additional_info": "rođen 1924, Crveni Breg (Grdelica). Srbin, poginuo 1944. u NOBu, Oruglica-leskov",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=435",
+        "source_page": 435,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Cvetković",
@@ -7738,6 +7748,18 @@
         "pdf_y": 523.5,
         "pdf_x_end": 138.2,
         "pdf_y_end": 531.5
+      },
+      {
+        "soldier_id": "0096000347",
+        "name": "Lepojević I Adam",
+        "additional_info": "D. Polje, 27. VI 1944, Oruglica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 27,
+        "pdf_x": 54.1,
+        "pdf_y": 116.707,
+        "pdf_x_end": 324.6,
+        "pdf_y_end": 123.7,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "occupation": "građevinski radnik",
@@ -12050,6 +12072,30 @@
         "pdf_y": 210.0,
         "pdf_x_end": 338.4,
         "pdf_y_end": 218.0
+      },
+      {
+        "soldier_id": "0090000212",
+        "name": "Momčilović Milovana Vitomir",
+        "additional_info": "1903, Jabukovik, Vlasotince, zemljoradnik. U NOVJ od maja 1944, borac. Poginuo 10. jula 1944. godine kod Lipovice, Konopnica, Vlasotince.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 34.5,
+        "pdf_y": 83.6,
+        "pdf_x_end": 341.3,
+        "pdf_y_end": 126.0,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000516",
+        "name": "Momčilović M Vitomir",
+        "additional_info": "Jabukovik, 10. VII 1944, Lipovica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 61.2,
+        "pdf_y": 498.307,
+        "pdf_x_end": 333.4,
+        "pdf_y_end": 516.1,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "occupation": "građevinski radnik",
@@ -12453,32 +12499,11 @@
   {
     "last_name": "Nestorović",
     "middle_name": "S",
-    "first_name": "Čedomir",
-    "fathers_name": "S",
-    "full_name": "Nestorović S Čedomir",
-    "additional_info": "(17. 11. 1924, Crna Trava), borac od 10. 1. 1944. u 4/2. bataljonu, umro od tifusa 27. 2. 1945. u tuzlanskoj bolnici.",
-    "birth_year": "1924",
-    "death_type": "umro",
-    "pdf_page": 32,
-    "pdf_y": 359.7,
-    "pdf_x": 68.8,
-    "pdf_y_end": 385.5,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Crna Trava",
-    "pdf_x_end": 349.2,
-    "soldier_id": "0085000630",
-    "death_date": "27. 2. 1945",
-    "rank": "borac",
-    "unit_detail": "2. bataljon"
-  },
-  {
-    "last_name": "Nestorović",
-    "middle_name": "S",
     "first_name": "Čelomir",
     "fathers_name": "S",
     "full_name": "Nestorović S Čelomir",
     "additional_info": "iz Crna Trava",
-    "birth_year": "",
+    "birth_year": "1924",
     "pdf_page": 11,
     "pdf_y": 178.3,
     "pdf_x": 46.8,
@@ -12486,7 +12511,24 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Crna Trava",
     "pdf_x_end": 156.0,
-    "soldier_id": "0085000631"
+    "soldier_id": "0085000631",
+    "other_sources": [
+      {
+        "soldier_id": "0085000630",
+        "name": "Nestorović S Čedomir",
+        "additional_info": "(17. 11. 1924, Crna Trava), borac od 10. 1. 1944. u 4/2. bataljonu, umro od tifusa 27. 2. 1945. u tuzlanskoj bolnici.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 68.8,
+        "pdf_y": 359.7,
+        "pdf_x_end": 349.2,
+        "pdf_y_end": 385.5
+      }
+    ],
+    "rank": "borac",
+    "unit_detail": "2. bataljon",
+    "death_type": "umro",
+    "death_date": "27. 2. 1945"
   },
   {
     "last_name": "Nikolić",
@@ -12506,34 +12548,6 @@
     "soldier_id": "0085000633",
     "other_sources": [
       {
-        "soldier_id": "9025002060",
-        "name": "Nikolić (Radivoje) Borisav",
-        "additional_info": "rođen 1925, Studena (Babušnica). Srbin, poginuo 1944. u NOBu, Kod čačka",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=57",
-        "source_page": 57,
-        "ref_book": "zrtve-rata-1964-srb"
-      }
-    ]
-  },
-  {
-    "last_name": "Nikolić",
-    "middle_name": "R",
-    "first_name": "Borislav",
-    "fathers_name": "R",
-    "full_name": "Nikolić R Borislav",
-    "additional_info": "(s. Studena, lužnički srez), radnik, borac od 1944. god., poginuo 21. 5. 1944. na Korubama kod Crne Trave-u borbi protiv bugarskih fašista.",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "pdf_page": 31,
-    "pdf_y": 354.1,
-    "pdf_x": 24.7,
-    "pdf_y_end": 379.9,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Studena",
-    "pdf_x_end": 304.7,
-    "soldier_id": "0085000634",
-    "other_sources": [
-      {
         "soldier_id": "0085000632",
         "name": "Nikolić R Borisav",
         "additional_info": "iz Studena",
@@ -12543,12 +12557,32 @@
         "pdf_y": 388.1,
         "pdf_x_end": 328.0,
         "pdf_y_end": 396.1
+      },
+      {
+        "soldier_id": "0085000634",
+        "name": "Nikolić R Borislav",
+        "additional_info": "(s. Studena, lužnički srez), radnik, borac od 1944. god., poginuo 21. 5. 1944. na Korubama kod Crne Trave-u borbi protiv bugarskih fašista.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 24.7,
+        "pdf_y": 354.1,
+        "pdf_x_end": 304.7,
+        "pdf_y_end": 379.9
+      },
+      {
+        "soldier_id": "9025002060",
+        "name": "Nikolić (Radivoje) Borisav",
+        "additional_info": "rođen 1925, Studena (Babušnica). Srbin, poginuo 1944. u NOBu, Kod čačka",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=57",
+        "source_page": 57,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
     "occupation": "radnik",
+    "rank": "borac",
+    "death_type": "poginuo",
     "death_date": "21. 5. 1944",
-    "death_place": "na Korubama kod Crne Trave-protiv bugarskih fašista",
-    "rank": "borac"
+    "death_place": "na Korubama kod Crne Trave-protiv bugarskih fašista"
   },
   {
     "last_name": "Nikolić",
@@ -19346,6 +19380,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00002204&pg_seq=311",
         "source_page": 308,
         "ref_book": "knjazevac-pomenik"
+      },
+      {
+        "soldier_id": "9025020009",
+        "name": "Stojanović (Stojan) Ljubomir",
+        "additional_info": "rođen 1923, Trnovac (Minićevo). Srbin, poginuo 1944. u NOBu, S.brđane g.mila",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=804",
+        "source_page": 804,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ]
   },
@@ -22016,33 +22058,11 @@
   {
     "last_name": "Vojinović",
     "middle_name": "J",
-    "first_name": "Živojin",
-    "fathers_name": "J",
-    "full_name": "Vojinović J Živojin",
-    "additional_info": "(1925, s.Jabukovik - Crna Trava), građevinski radnik, borac od 4. 2. 1944, poginuo 23. 4. 1944. kod s. Kijevca - Lužnica.",
-    "birth_year": "1925",
-    "death_type": "poginuo",
-    "pdf_page": 15,
-    "pdf_y": 510.2,
-    "pdf_x": 30.3,
-    "pdf_y_end": 535.9,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Jabukovik, Crna Trava",
-    "pdf_x_end": 306.3,
-    "soldier_id": "0085001125",
-    "occupation": "građevinski radnik",
-    "death_date": "23. 4. 1944",
-    "death_place": "Kijevci, Lužnica",
-    "rank": "borac"
-  },
-  {
-    "last_name": "Vojinović",
-    "middle_name": "J",
     "first_name": "Živojpn",
     "fathers_name": "J",
     "full_name": "Vojinović J Živojpn",
     "additional_info": "iz Jabukovik",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 4,
     "pdf_y": 209.3,
     "pdf_x": 77.7,
@@ -22050,7 +22070,25 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Jabukovik",
     "pdf_x_end": 170.9,
-    "soldier_id": "0085001126"
+    "soldier_id": "0085001126",
+    "other_sources": [
+      {
+        "soldier_id": "0085001125",
+        "name": "Vojinović J Živojin",
+        "additional_info": "(1925, s.Jabukovik - Crna Trava), građevinski radnik, borac od 4. 2. 1944, poginuo 23. 4. 1944. kod s. Kijevca - Lužnica.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 30.3,
+        "pdf_y": 510.2,
+        "pdf_x_end": 306.3,
+        "pdf_y_end": 535.9
+      }
+    ],
+    "occupation": "građevinski radnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "23. 4. 1944",
+    "death_place": "Kijevci, Lužnica"
   },
   {
     "last_name": "Vuculović",

@@ -1359,7 +1359,21 @@
     "pdf_y_end": 489.3,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000048",
-    "pdf_x_end": 336.6
+    "pdf_x_end": 336.6,
+    "other_sources": [
+      {
+        "soldier_id": "0096000070",
+        "name": "Bogdanović D Petko",
+        "additional_info": "Kalovo, 27. IV 1944, Lisac planina",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 2,
+        "pdf_x": 64.2,
+        "pdf_y": 341.62699999999995,
+        "pdf_x_end": 361.8,
+        "pdf_y_end": 349.1,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogdanović",
@@ -1540,7 +1554,21 @@
     "pdf_y_end": 234.8,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000056",
-    "pdf_x_end": 363.5
+    "pdf_x_end": 363.5,
+    "other_sources": [
+      {
+        "soldier_id": "0096000077",
+        "name": "Bojković T Nikola",
+        "additional_info": "Crvena Reka, 13. IX 1944, Čestelin (Vranje)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 2,
+        "pdf_x": 64.2,
+        "pdf_y": 405.947,
+        "pdf_x_end": 371.2,
+        "pdf_y_end": 413.7,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Cekić",
@@ -1623,6 +1651,14 @@
     "pdf_x_end": 361.1,
     "other_sources": [
       {
+        "soldier_id": "9025037966",
+        "name": "Cvetković (Sima) Dušan",
+        "additional_info": "rođen 1916, Kriva feja (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Čupino brdo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1377",
+        "source_page": 1377,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0096000099",
         "name": "Cvetković Dušan",
         "additional_info": "Kriva Feja, 22. V 1944, Osogovo planina",
@@ -1656,6 +1692,14 @@
     "soldier_id": "0087000061",
     "pdf_x_end": 361.1,
     "other_sources": [
+      {
+        "soldier_id": "9025037967",
+        "name": "Cvetković (Sima) Jovan",
+        "additional_info": "rođen 1909, Kriva feja (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Kriva feja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1377",
+        "source_page": 1377,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
       {
         "soldier_id": "0096000100",
         "name": "Cvetković Jovan",
@@ -1816,6 +1860,18 @@
           ]
         ],
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0096000110",
+        "name": "Cvetković V Vasilije",
+        "additional_info": "Barbarušince, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 13,
+        "pdf_x": 52.9,
+        "pdf_y": 325.787,
+        "pdf_x_end": 306.9,
+        "pdf_y_end": 332.8,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -2765,6 +2821,18 @@
         "pdf_x_end": 490.2,
         "pdf_y_end": 862.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0096000160",
+        "name": "Gligorov B Vojin",
+        "additional_info": "Petraljiš, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 54.8,
+        "pdf_y": 125.90700000000004,
+        "pdf_x_end": 308.6,
+        "pdf_y_end": 132.9,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -3396,6 +3464,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1380",
         "source_page": 1380,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0096000194",
+        "name": "Ilić A Uroš",
+        "additional_info": "Vranjska Banja, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 66.0,
+        "pdf_y": 497.067,
+        "pdf_x_end": 319.6,
+        "pdf_y_end": 504.6,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -3633,12 +3713,12 @@
   },
   {
     "last_name": "Janković",
-    "middle_name": "",
+    "middle_name": "Stanka",
     "first_name": "Petronije",
-    "fathers_name": "",
-    "full_name": "Janković Petronije",
+    "fathers_name": "Stanko",
+    "full_name": "Janković Stanka Petronije",
     "additional_info": "iz PRVENIKA, Vranje; poginuo 4.09.1944, Jastrebac kod Vlasotinca.",
-    "birth_year": "",
+    "birth_year": "1924",
     "birth_place": "PRVENIKA, Vranje",
     "death_type": "poginuo",
     "death_date": "4.09.1944",
@@ -3649,7 +3729,47 @@
     "pdf_y_end": 224.9,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000127",
-    "pdf_x_end": 344.7
+    "pdf_x_end": 344.7,
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0088000085",
+        "name": "Janković Stanka Petronije",
+        "additional_info": "rođen 30. 10. 1924. u selu Prvonek, Vranje, Srbin, radnik, u NOB od septembra 1943, u Brigadi od 10. 5. 1944, komandir 1. čete 1. bataljona, ranjen 6. 10. 1944. prilikom napada na selo Crnu Baru, Vlasotince, umro 7. 10. 1944. od posledica ranjavanja na putu za bolnicu u selu Ramni Del, Vlasotince. Sahranjen u selu Ramni Del, Vlasotince.",
+        "pdf_file": "10-srpska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 155.9,
+        "pdf_y": 297.3,
+        "pdf_x_end": 461.9,
+        "pdf_y_end": 359.8,
+        "unit_file": "10-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000229",
+        "name": "Janković Stanka Petronije",
+        "additional_info": "Prvonek, 4. X 1944, Jastrebac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 52.4,
+        "pdf_y": 151.46700000000004,
+        "pdf_x_end": 324.5,
+        "pdf_y_end": 158.5,
+        "unit_file": "22-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000230",
+        "name": "Janković Stanka Petronije",
+        "additional_info": "Prvonek, 1944",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 16,
+        "pdf_x": 62.1,
+        "pdf_y": 291.987,
+        "pdf_x_end": 289.1,
+        "pdf_y_end": 299.0,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jančić",
@@ -3876,7 +3996,21 @@
     "pdf_y_end": 495.1,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000135",
-    "pdf_x_end": 341.2
+    "pdf_x_end": 341.2,
+    "other_sources": [
+      {
+        "soldier_id": "0096000242",
+        "name": "Jovanović V Dušan",
+        "additional_info": "Stajkovac, 4. III 1945, Balatinac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 52.8,
+        "pdf_y": 248.42700000000002,
+        "pdf_x_end": 328.3,
+        "pdf_y_end": 255.4,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -4160,6 +4294,18 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0096000253",
+        "name": "Jovanović V Stanimir",
+        "additional_info": "Sukovo, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 52.6,
+        "pdf_y": 302.427,
+        "pdf_x_end": 307.3,
+        "pdf_y_end": 309.4,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -4509,6 +4655,14 @@
     "pdf_x_end": 362.6,
     "other_sources": [
       {
+        "soldier_id": "9025036646",
+        "name": "Jović (Ljubisav) Vera",
+        "additional_info": "rođena 1924, Vladičin Han. Srpkinja, poginula 1944. u NOBu, Sveti ilija vra",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1340",
+        "source_page": 1340,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0096000273",
         "name": "Jović Vera",
         "additional_info": "Vladičin Han, 12. V 1944, Stari Glog",
@@ -4811,7 +4965,21 @@
     "pdf_y_end": 236.2,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000165",
-    "pdf_x_end": 338.9
+    "pdf_x_end": 338.9,
+    "other_sources": [
+      {
+        "soldier_id": "0096000300",
+        "name": "Kostadinović D Stanojko",
+        "additional_info": "Gološevac, 12. V 1944, Plana planina",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 53.1,
+        "pdf_y": 476.66700000000003,
+        "pdf_x_end": 351.1,
+        "pdf_y_end": 494.7,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kostić",
@@ -6094,6 +6262,14 @@
     "pdf_x_end": 369.2,
     "other_sources": [
       {
+        "soldier_id": "9025038071",
+        "name": "Mihajlović (Toma) Milić",
+        "additional_info": "rođen 1922, Slivnica (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Klinovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1380",
+        "source_page": 1380,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0096000394",
         "name": "Mihajlović Milić",
         "additional_info": "Slivnica, 3. VIII 1944, Klinovac",
@@ -6777,7 +6953,33 @@
     "pdf_y_end": 312.7,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000231",
-    "pdf_x_end": 331.3
+    "pdf_x_end": 331.3,
+    "other_sources": [
+      {
+        "soldier_id": "0096000415",
+        "name": "Miljković Cvetana Čedomir",
+        "additional_info": "Dugi Del, 8. IX 1944, Momin Kamen",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 49.2,
+        "pdf_y": 275.627,
+        "pdf_x_end": 345.2,
+        "pdf_y_end": 283.1,
+        "unit_file": "22-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000416",
+        "name": "Miljković Cvetana Čedomir",
+        "additional_info": "Dugi Del, 8. IX 1944, Momin Kamen",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 63.2,
+        "pdf_y": 105.34700000000004,
+        "pdf_x_end": 355.3,
+        "pdf_y_end": 112.8,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milojeić",
@@ -6902,6 +7104,14 @@
     "soldier_id": "0087000235",
     "pdf_x_end": 356.6,
     "other_sources": [
+      {
+        "soldier_id": "9025036604",
+        "name": "Milosavljević (Ranđel) Čedomir",
+        "additional_info": "rođen 1925, Ravna Reka (Vladičin Han). Srbin, poginuo 1944. u NOBu, Niš",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1337",
+        "source_page": 1337,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
       {
         "soldier_id": "0096000421",
         "name": "Milosavljević Čedomir",
@@ -7038,6 +7248,14 @@
     "pdf_x_end": 342.8,
     "death_place": "Osogovo planina",
     "other_sources": [
+      {
+        "soldier_id": "9025037981",
+        "name": "Milošević (Dušan) Arsa",
+        "additional_info": "rođen 1923, Kriva feja (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Palanka",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1377",
+        "source_page": 1377,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
       {
         "soldier_id": "0096000428",
         "name": "Milošević Arsa",
@@ -7801,7 +8019,17 @@
     "pdf_y_end": 143.3,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000265",
-    "pdf_x_end": 333.3
+    "pdf_x_end": 333.3,
+    "other_sources": [
+      {
+        "soldier_id": "9025038024",
+        "name": "Mišić (Kosta) Živko",
+        "additional_info": "rođen 1927, Prevalac (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Lisac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1379",
+        "source_page": 1379,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Mladenović",
@@ -7875,7 +8103,17 @@
     "pdf_y_end": 221.3,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000268",
-    "pdf_x_end": 333.3
+    "pdf_x_end": 333.3,
+    "other_sources": [
+      {
+        "soldier_id": "9025024880",
+        "name": "Mladenović (Petar) Karlo",
+        "additional_info": "rođen 1919, Jelovica (Pirot). Srbin, poginuo 1945. u NOBu, Međuše na drini",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=960",
+        "source_page": 960,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Mladenović",
@@ -7955,7 +8193,36 @@
     "pdf_y_end": 318.7,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000272",
-    "pdf_x_end": 332.1
+    "pdf_x_end": 332.1,
+    "other_sources": [
+      {
+        "soldier_id": "9013002449",
+        "name": "Nastasović Đ. Danca",
+        "additional_info": "Deseta srpska udarna brigada, Spačva: Danca Đ. Nastasović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 17,
+        "pdf_x": 378.1,
+        "pdf_y": 656.6,
+        "pdf_x_end": 464.7,
+        "pdf_y_end": 676.8,
+        "pdf_x_left": 105.8,
+        "pdf_rects": [
+          [
+            378.1,
+            656.6,
+            464.7,
+            666.3
+          ],
+          [
+            105.8,
+            667.1,
+            120.6,
+            676.8
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Nedeljković",
@@ -8122,6 +8389,18 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0096000530",
+        "name": "Nešić P Ilija",
+        "additional_info": "D. Žapsko, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 65.0,
+        "pdf_y": 315.267,
+        "pdf_x_end": 319.6,
+        "pdf_y_end": 322.3,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -8663,6 +8942,18 @@
         "pdf_x_end": 345.1,
         "pdf_y_end": 184.8,
         "unit_file": "22-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000568",
+        "name": "Pavlović D Božidar",
+        "additional_info": "Suvojnica, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 29,
+        "pdf_x": 55.6,
+        "pdf_y": 325.267,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 332.3,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -8684,7 +8975,17 @@
     "pdf_y_end": 449.6,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000295",
-    "pdf_x_end": 363.2
+    "pdf_x_end": 363.2,
+    "other_sources": [
+      {
+        "soldier_id": "9025037937",
+        "name": "Pavlović (Vladimir) Dragomir",
+        "additional_info": "rođen 1922, Klisurica (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Petrova gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1376",
+        "source_page": 1376,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -8888,7 +9189,21 @@
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000302",
     "death_place": "na Drini između Malog Zvornika i Ljubovije",
-    "pdf_x_end": 325.6
+    "pdf_x_end": 325.6,
+    "other_sources": [
+      {
+        "soldier_id": "0096000584",
+        "name": "Petković M Čedomir",
+        "additional_info": "Stajkovac, 4. III 1945, Balatinac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 9,
+        "pdf_x": 53.8,
+        "pdf_y": 128.54700000000003,
+        "pdf_x_end": 329.5,
+        "pdf_y_end": 136.0,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petrović",
@@ -9400,6 +9715,18 @@
         "pdf_x_end": 401.6,
         "pdf_y_end": 573.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0096000616",
+        "name": "Radulović S Blagoje",
+        "additional_info": "G. Stajovac, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 9,
+        "pdf_x": 53.1,
+        "pdf_y": 293.427,
+        "pdf_x_end": 307.7,
+        "pdf_y_end": 300.4,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -9692,6 +10019,18 @@
         "ref_book": "zrtve-rata-1964-srb"
       },
       {
+        "soldier_id": "0090000269",
+        "name": "Ristić S Petar",
+        "additional_info": "1924, Bitevrđa, Srez masurički, Surdulica, zemljoradnik. U NOVJ od 16. septembra 1944, borac. Poginuo 30. novembra 1944. godine na položaju Varničko brdo, kod Sjenice.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 25.9,
+        "pdf_y": 116.9,
+        "pdf_x_end": 332.1,
+        "pdf_y_end": 159.8,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0096000630",
         "name": "Ristić Stanojla Petar",
         "additional_info": "Bitvrđa, 5. :XII 1944, Novi Pazar",
@@ -9703,7 +10042,9 @@
         "pdf_y_end": 377.5,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "last_name": "Ristić",
@@ -9904,6 +10245,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1248",
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0096000646",
+        "name": "Smiljković S Stevan",
+        "additional_info": "D. Stajovac, 9. IX 1944, Belo Polje",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 9,
+        "pdf_x": 52.6,
+        "pdf_y": 413.907,
+        "pdf_x_end": 332.2,
+        "pdf_y_end": 420.9,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -9975,6 +10328,18 @@
         "pdf_x_end": 415.9,
         "pdf_y_end": 398.8,
         "unit_file": "10-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000650",
+        "name": "Spasić Stamena Andon",
+        "additional_info": "Crveni Grad, 21. VII 1944, Klinovac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 9,
+        "pdf_x": 52.6,
+        "pdf_y": 435.267,
+        "pdf_x_end": 323.9,
+        "pdf_y_end": 442.3,
+        "unit_file": "22-divizija-soldiers.json"
       },
       {
         "soldier_id": "0096000651",
@@ -10617,6 +10982,14 @@
     "pdf_x_end": 378.6,
     "other_sources": [
       {
+        "soldier_id": "9025037924",
+        "name": "Stamenković (Dragutin) Vera",
+        "additional_info": "rođena 1926, Izumno (Vranje). Srpkinja, poginula 1944. u NOBu, Bujanovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1376",
+        "source_page": 1376,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0096000683",
         "name": "Stamenković Vera",
         "additional_info": "Izumno, 13. V 1944, Strezimirovac",
@@ -10969,6 +11342,14 @@
     "pdf_x_end": 340.7,
     "other_sources": [
       {
+        "soldier_id": "9025037992",
+        "name": "Stanković (Dragutn) Milentije",
+        "additional_info": "rođen 1922, Kriva feja (Vranjska Banja). Srbin, poginuo 1944. u NOBu, Kriva feja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1377",
+        "source_page": 1377,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0096000698",
         "name": "Stanković Milentije",
         "additional_info": "Kriva Feja, 12. IV 1944, Kriva Feja",
@@ -11213,6 +11594,18 @@
         "unit_file": "12-srpska-soldiers.json"
       },
       {
+        "soldier_id": "0096000717",
+        "name": "Stanković Vojina Čedomir",
+        "additional_info": "Svođe, 18. II 1945, Zvornik",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 10,
+        "pdf_x": 60.2,
+        "pdf_y": 378.067,
+        "pdf_x_end": 326.1,
+        "pdf_y_end": 385.1,
+        "unit_file": "22-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0096000718",
         "name": "Stanković V Čedomir",
         "additional_info": "Svođe, 9. II 1945, D. Trešnjevica",
@@ -11318,7 +11711,21 @@
     "pdf_y_end": 452.7,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000381",
-    "pdf_x_end": 340.7
+    "pdf_x_end": 340.7,
+    "other_sources": [
+      {
+        "soldier_id": "0096000724",
+        "name": "Stanojković Đ Jovan",
+        "additional_info": "B. Poljana, 15. VII 1944, Gorunovac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 10,
+        "pdf_x": 60.2,
+        "pdf_y": 463.98699999999997,
+        "pdf_x_end": 333.9,
+        "pdf_y_end": 471.0,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanojković",
@@ -11486,7 +11893,21 @@
     "pdf_y_end": 312.7,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000388",
-    "pdf_x_end": 364.3
+    "pdf_x_end": 364.3,
+    "other_sources": [
+      {
+        "soldier_id": "0096000737",
+        "name": "Stefanović B Krsta",
+        "additional_info": "B. Poljana, 14. VIII 1944, S. Brezovica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 56.8,
+        "pdf_y": 184.90700000000004,
+        "pdf_x_end": 344.3,
+        "pdf_y_end": 191.9,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stefanović",
@@ -12517,7 +12938,21 @@
     "pdf_y_end": 421.6,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000422",
-    "pdf_x_end": 341.1
+    "pdf_x_end": 341.1,
+    "other_sources": [
+      {
+        "soldier_id": "0096000771",
+        "name": "Stojanović R Predrag",
+        "additional_info": "Surdulica, 9. IX 1945, Belo Polje",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 55.3,
+        "pdf_y": 357.227,
+        "pdf_x_end": 334.4,
+        "pdf_y_end": 364.5,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -13127,7 +13562,33 @@
     "pdf_y_end": 136.0,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000441",
-    "pdf_x_end": 341.0
+    "pdf_x_end": 341.0,
+    "other_sources": [
+      {
+        "soldier_id": "0096000820",
+        "name": "Stojković Mladen",
+        "additional_info": "Kriva Feja, 12. IV 1944, Kriva Feja",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 12,
+        "pdf_x": 61.3,
+        "pdf_y": 233.86700000000002,
+        "pdf_x_end": 342.4,
+        "pdf_y_end": 241.1,
+        "unit_file": "22-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000821",
+        "name": "Stojković Mladen",
+        "additional_info": "Kriva Feja, 12. IV 1944, Kriva Feja",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 12,
+        "pdf_x": 60.8,
+        "pdf_y": 427.547,
+        "pdf_x_end": 342.4,
+        "pdf_y_end": 435.0,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojković",
@@ -13297,7 +13758,21 @@
     "pdf_y_end": 319.1,
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000447",
-    "pdf_x_end": 339.9
+    "pdf_x_end": 339.9,
+    "other_sources": [
+      {
+        "soldier_id": "0096000830",
+        "name": "Stojmenović Z Dragan",
+        "additional_info": "Biljača, 27. IV 1944, Lisac planina",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 12,
+        "pdf_x": 61.1,
+        "pdf_y": 266.267,
+        "pdf_x_end": 358.2,
+        "pdf_y_end": 273.3,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojmenović",
@@ -13739,7 +14214,21 @@
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000461",
     "death_place": "na Drini između Malog Zvornika i Ljubovije",
-    "pdf_x_end": 359.7
+    "pdf_x_end": 359.7,
+    "other_sources": [
+      {
+        "soldier_id": "0096000851",
+        "name": "Tančić D Dušan",
+        "additional_info": "Bela Palanka, 4. III 1945, Balatinac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 12,
+        "pdf_x": 60.8,
+        "pdf_y": 440.50699999999995,
+        "pdf_x_end": 335.8,
+        "pdf_y_end": 447.8,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tančić",
@@ -14181,7 +14670,22 @@
     "pdf_file": "8-srpska.pdf",
     "soldier_id": "0087000477",
     "death_place": "na Drini između Malog Zvornika i Ljubovije",
-    "pdf_x_end": 339.5
+    "pdf_x_end": 339.5,
+    "death_date": "4. III 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0096000878",
+        "name": "Todorović K Radomir",
+        "additional_info": "Dojkinci, 4. III 1945, Balatinac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 13,
+        "pdf_x": 52.6,
+        "pdf_y": 170.267,
+        "pdf_x_end": 327.9,
+        "pdf_y_end": 177.3,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tomev",
@@ -14935,7 +15439,21 @@
     "soldier_id": "0087000507",
     "death_date": "4.03 1945",
     "death_place": "na Drinskom frontu između Zvornika i Ljubovije",
-    "pdf_x_end": 364.1
+    "pdf_x_end": 364.1,
+    "other_sources": [
+      {
+        "soldier_id": "0096000916",
+        "name": "Veljković J Vojislav",
+        "additional_info": "Davidovac, 4. III 1945, Balotinac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 2,
+        "pdf_x": 64.0,
+        "pdf_y": 451.067,
+        "pdf_x_end": 338.9,
+        "pdf_y_end": 458.8,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Veselinović",
@@ -15815,7 +16333,21 @@
     "soldier_id": "0087000538",
     "death_date": "4.03 1945",
     "death_place": "na Drinskom frontu između Ljubovije i Zvornika",
-    "pdf_x_end": 331.3
+    "pdf_x_end": 331.3,
+    "other_sources": [
+      {
+        "soldier_id": "0096000966",
+        "name": "Đorđević S Danil",
+        "additional_info": "Vava, 4. III 1945, Balatinac",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 55.2,
+        "pdf_y": 441.027,
+        "pdf_x_end": 330.4,
+        "pdf_y_end": 448.0,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Đorđević",
@@ -16318,6 +16850,14 @@
     "birth_place": "Bujkovac, Vranje",
     "pdf_x_end": 379.6,
     "other_sources": [
+      {
+        "soldier_id": "9025037888",
+        "name": "Đorđević (Manasija) Stojadin",
+        "additional_info": "rođen 1924, Bujkovac (Vranje). Srbin, poginuo 1944. u NOBu, Đevđelija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1375",
+        "source_page": 1375,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
       {
         "soldier_id": "0096000984",
         "name": "Đorđević Stojadin",

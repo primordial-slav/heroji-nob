@@ -980,6 +980,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=419",
         "source_page": 419,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0082000091",
+        "name": "Avakumović Stanka Đorđe",
+        "additional_info": "1926, Divoš, Sremska Mitro* vica, zemljoradnik, borac, poginuo 12. V 1944. kod s. Peljave u istočnoj Bosni.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 71.7,
+        "pdf_y": 347.2,
+        "pdf_x_end": 352.9,
+        "pdf_y_end": 375.2,
+        "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
   },
@@ -7218,7 +7230,23 @@
     "death_place": "Romanija",
     "rank": "borac",
     "pdf_x_end": 363.4,
-    "pdf_x_left": 83.0
+    "pdf_x_left": 83.0,
+    "occupation": "radnik",
+    "death_date": "juna 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0042000109",
+        "name": "Dudić Đoke Jovan",
+        "additional_info": "borac, rođen 1919, Krčedin, Indija, radnik, Srbin, u NOB od 1942, poginuo kod Zvornika juna 1943 politički delegat voda.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 46.2,
+        "pdf_y": 103.8,
+        "pdf_x_end": 216.2,
+        "pdf_y_end": 146.0,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dugošija",
@@ -25753,7 +25781,25 @@
     "occupation": "đak",
     "rank": "komesar čete",
     "pdf_x_end": 362.5,
-    "pdf_x_left": 81.8
+    "pdf_x_left": 81.8,
+    "birth_place": "Ležimir, Sremska Mitrovica",
+    "death_type": "poginuo",
+    "death_date": "10. XI 1944",
+    "death_place": "kod Bilalića",
+    "other_sources": [
+      {
+        "soldier_id": "0082002426",
+        "name": "Novaković M Sava",
+        "additional_info": "1925, Ležimir, Sr. Mitrovica, đak, pomoćnik komesara čete, poginuo 10. XI 1944. kod Bilalića.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 97,
+        "pdf_x": 67.7,
+        "pdf_y": 53.7,
+        "pdf_x_end": 347.9,
+        "pdf_y_end": 72.4,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nović",
@@ -26222,10 +26268,10 @@
   },
   {
     "last_name": "Omerović",
-    "middle_name": "",
+    "middle_name": "Mahmuta",
     "first_name": "Sulejman",
-    "fathers_name": "",
-    "full_name": "Omerović Sulejman",
+    "fathers_name": "Mahmut",
+    "full_name": "Omerović Mahmuta Sulejman",
     "additional_info": "zvani Car; rođen 1923, Maglaj, Musliman, učenik, stupio u NOVJ 1942, zamenik komesara bataljona i komandant brigade, poginuo 1945.",
     "birth_year": "1923",
     "pdf_page": 88,
@@ -26250,8 +26296,33 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=47",
         "source_page": 43,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0001008666",
+        "name": "Omerović Mahmuta Sulejman",
+        "additional_info": "zvani Car; 1923, Maglaj, BiH, Musliman, učenik, član SKOJ-a od 1941, član KPJ od 1942, u NOB od 1941, u brigadi od marta 1942, I bataljon, komandant brigade, narodni heroj",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 351,
+        "pdf_x": 43.2,
+        "pdf_y": 213.4,
+        "pdf_x_end": 350.4,
+        "pdf_y_end": 253.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001101036",
+        "name": "Omerović Mahmuta Sulejman",
+        "additional_info": "zvani Car; zamenik političkog komesara 3. čete 1. bataljona, rođen 1923, Maglaj, dak, Musliman, u NOB od 1941, član SKOJ-a od 1941, član KPJ od 1942, krajem rata komandant 3. vojvođanske brigade. Odlikovan Ordenom narodnog heroja. Poginuo kod Našica 17. novembra 1945. u čišćenju terena od ostataka ustaških jedinica.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 67,
+        "pdf_x": 38.6,
+        "pdf_y": 560.5,
+        "pdf_x_end": 207.5,
+        "pdf_y_end": 580.5,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "kod Našica . u čišćenju terena od ostataka ustaških jedinica"
   },
   {
     "last_name": "Omorac",
@@ -32105,10 +32176,10 @@
   },
   {
     "last_name": "Radulović",
-    "middle_name": "",
+    "middle_name": "Boška",
     "first_name": "Milorad",
-    "fathers_name": "",
-    "full_name": "Radulović Milorad",
+    "fathers_name": "Boško",
+    "full_name": "Radulović Boška Milorad",
     "additional_info": "rođen 1919, Crnotorac, student stupio u NOVJ 1941, član politodjela, komesar brigade i divizije.",
     "birth_year": "1919",
     "pdf_page": 104,
@@ -32119,7 +32190,24 @@
     "soldier_id": "0018001440",
     "rank": "komesar brigade",
     "pdf_x_end": 368.1,
-    "pdf_x_left": 87.2
+    "pdf_x_left": 87.2,
+    "birth_place": "Pažići, Danilovgrad",
+    "ethnicity": "Crnogorac",
+    "occupation": "student",
+    "other_sources": [
+      {
+        "soldier_id": "0041001085",
+        "name": "Radulović Boška Milorad",
+        "additional_info": "omladinski rukovodilac brigade, rođen 1919, Pažići, Danilovgrad, student, Crnogorac, u NOB od 1941, član KPJ, krajem rata politički komesar brigade.",
+        "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+        "pdf_page": 62,
+        "pdf_x": 196.0,
+        "pdf_y": 302.0,
+        "pdf_x_end": 366.5,
+        "pdf_y_end": 354.4,
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radulović",
@@ -35372,7 +35460,22 @@
     "death_place": "Srbija",
     "rank": "borac",
     "pdf_x_end": 366.5,
-    "pdf_x_left": 84.4
+    "pdf_x_left": 84.4,
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0042000598",
+        "name": "Sokolović Dušana Lazar",
+        "additional_info": "borac 2. bataljona, rođen 1912, Karlovčić, Pećinci, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Loznice 1944.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 7.4,
+        "pdf_y": 330.0,
+        "pdf_x_end": 177.8,
+        "pdf_y_end": 371.6,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sokolović",
@@ -42918,7 +43021,22 @@
     "death_date": "1944",
     "rank": "borac",
     "pdf_x_end": 386.9,
-    "pdf_x_left": 105.7
+    "pdf_x_left": 105.7,
+    "death_place": "Bijeljina",
+    "other_sources": [
+      {
+        "soldier_id": "0057003741",
+        "name": "Vuković S Todor",
+        "additional_info": "rođen 1907. Irig, zemljoradnkk, borac, poginuo 24. 9. 1943. u Bijeljini-",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 53.0,
+        "pdf_y": 483.5,
+        "pdf_x_end": 334.5,
+        "pdf_y_end": 501.7,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vuletić",
@@ -46526,7 +46644,21 @@
     "death_place": "Tuzla",
     "rank": "borac",
     "pdf_x_end": 365.6,
-    "pdf_x_left": 82.7
+    "pdf_x_left": 82.7,
+    "other_sources": [
+      {
+        "soldier_id": "0082004131",
+        "name": "Šipoš Andrije Stevan",
+        "additional_info": "1925, Divoš, Sr. Mitrovica, zemljoradnik, puškomitraljezac, poginuo 31. III 1944. kod Donjeg Zovika.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 136,
+        "pdf_x": 100.1,
+        "pdf_y": 230.1,
+        "pdf_x_end": 381.6,
+        "pdf_y_end": 248.8,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šišakov",

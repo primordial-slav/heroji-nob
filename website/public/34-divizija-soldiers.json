@@ -22,10 +22,10 @@
   },
   {
     "last_name": "Ajdinović",
-    "middle_name": "",
+    "middle_name": "Stanka",
     "first_name": "Ljuban",
-    "fathers_name": "",
-    "full_name": "Ajdinović Ljuban",
+    "fathers_name": "Stanko",
+    "full_name": "Ajdinović Stanka Ljuban",
     "additional_info": "kapetan, ŽB, 1919. Bovič, Vrgin most, u NOB 1941, poginuo Plešivica, 07.05.45",
     "birth_year": "1919",
     "birth_place": "Bovič, Vrgin most",
@@ -40,7 +40,46 @@
     "pdf_y_end": 178.8,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000002",
-    "pdf_x_end": 375.6
+    "pdf_x_end": 375.6,
+    "other_sources": [
+      {
+        "soldier_id": "0097010003",
+        "name": "Ajdinović Ljuban",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: operativni oficir brigade »Franjo Ogulinac Seljo«; komandant 3. bataljona brigade »Franjo Ogulinac Seljo«; komandant Žumberačke brigade.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 2,
+        "pdf_x": 371.7,
+        "pdf_y": 459.8,
+        "pdf_x_end": 465.9,
+        "pdf_y_end": 470.3,
+        "pdf_rects": [
+          [
+            371.7,
+            459.8,
+            465.9,
+            470.3
+          ],
+          [
+            403.0,
+            678.4,
+            494.0,
+            688.9
+          ]
+        ]
+      },
+      {
+        "soldier_id": "0006000025",
+        "name": "Ajdinović Stanka Ljuban",
+        "additional_info": "1919. Bović, Vrginmost. Poginuo 7. V 1943. na Plešivici u Zumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 4,
+        "pdf_x": 117.5,
+        "pdf_y": 518.5,
+        "pdf_x_end": 289.1,
+        "pdf_y_end": 542.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Albilin",
@@ -319,6 +358,14 @@
     "soldier_id": "0097000013",
     "pdf_x_end": 375.1,
     "other_sources": [
+      {
+        "soldier_id": "9021049944",
+        "name": "Arbanas (Franjo) Mijo",
+        "additional_info": "rođen 1927, Donja Lomnica (Velika Gorica). Hrvat, poginuo 1944. u NOBu, Lukinić brdo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2379",
+        "source_page": 2379,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0149000003",
         "name": "Arbanas Mijo",
@@ -872,6 +919,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=51",
         "source_page": 47,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0006000223",
+        "name": "Badel Slavka Marijan",
+        "additional_info": "1920. Koprivnica. Poginuo 22. IV 1944. kod Sv. Jane, sahranjen u Sošicama na Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 6,
+        "pdf_x": 299.4,
+        "pdf_y": 618.2,
+        "pdf_x_end": 471.6,
+        "pdf_y_end": 642.3,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -2132,8 +2191,33 @@
         "pdf_x_end": 200.4,
         "pdf_y_end": 366.9,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0094000056",
+        "name": "Benković Mije Stjepan",
+        "additional_info": "1919, Novo Selo, Bosiljevo. Stupio u NOV 22. 1. 1944, komandir voda 2. bat. Poginuo kod Gornjeg Pokuplja 4. 5.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 23,
+        "pdf_x": 323.5,
+        "pdf_y": 680.1,
+        "pdf_x_end": 483.1,
+        "pdf_y_end": 697.0,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000054",
+        "name": "Benković M Stjepan",
+        "additional_info": "1919, Novo Selo, Bosiljevo. Stupio u NOV 22. 1. 1944, borac 2. bat. Poginuo kao komandir voda kod G. Pokuplja 4. 5. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 2,
+        "pdf_x": 278.0,
+        "pdf_y": 150.1,
+        "pdf_y_end": 193.2,
+        "pdf_x_end": 444.7,
+        "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "komandir voda"
   },
   {
     "last_name": "Benkovčić",
@@ -3798,6 +3882,17 @@
     "death_date": "travnja 1945",
     "other_sources": [
       {
+        "soldier_id": "0097010047",
+        "name": "Brdarić Josip",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: zamjenik komesara inžinjerijske čete Žumberačke brigade.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 9,
+        "pdf_x": 371.9,
+        "pdf_y": 559.7,
+        "pdf_x_end": 445.4,
+        "pdf_y_end": 570.2
+      },
+      {
         "soldier_id": "9021035508",
         "name": "Brdarič (Stjepan) Josip",
         "additional_info": "rođen 1921, Draganje Selo (Rovinj). Hrvat, poginuo 1945. u NOBu, Banija-lušćani",
@@ -4224,6 +4319,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=811",
         "source_page": 811,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000101",
+        "name": "Brkljačić Antuna Ivan",
+        "additional_info": "1921, Banski Marović, Lasinja. Stupio u NOV 1944, borac brig. Poginuo kod Vukšin Sipka (Draganići) 7. 5. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 24,
+        "pdf_x": 276.3,
+        "pdf_y": 389.1,
+        "pdf_x_end": 434.5,
+        "pdf_y_end": 423.5,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -5522,7 +5629,22 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000181",
     "pdf_x_end": 345.3,
-    "death_date": "5. 4. 1944"
+    "death_date": "5. 4. 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0149000021",
+        "name": "Cigetić Ivan",
+        "additional_info": "Lukavec; poginuo 5. V 1944. Slavetić.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 1,
+        "pdf_x": 52.6,
+        "pdf_y": 268.39499999999987,
+        "pdf_x_end": 391.9,
+        "pdf_y_end": 276.1,
+        "pdf_x_left": 35.8,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ciglar",
@@ -5962,7 +6084,21 @@
     "pdf_y_end": 468.3,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000198",
-    "pdf_x_end": 363.8
+    "pdf_x_end": 363.8,
+    "other_sources": [
+      {
+        "soldier_id": "0094000145",
+        "name": "Delač A Juraj",
+        "additional_info": "1925, Skrad, Delnice. Stupio u NOV 10. 12. 1944, borac 2. bat. Poginuo kod Odre (Sisak) 15. 2. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 25,
+        "pdf_x": 124.5,
+        "pdf_y": 530.9,
+        "pdf_x_end": 281.0,
+        "pdf_y_end": 565.0,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Delimarić",
@@ -6643,6 +6779,30 @@
         "pdf_y": 449.2,
         "pdf_x_end": 447.8,
         "pdf_y_end": 459.7
+      },
+      {
+        "soldier_id": "0037000210",
+        "name": "Drezgić Petar",
+        "additional_info": "zvani Drezga; poručnik, poginuo kao zamjenik komandanta bataljona ožujka 1944. u borbi na Draganiću. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
+        "pdf_file": "16-slavonska-omladinska.pdf",
+        "pdf_page": 34,
+        "pdf_x": 160.6,
+        "pdf_y": 610.8,
+        "pdf_x_end": 441.6,
+        "pdf_y_end": 627.7,
+        "unit_file": "16-slavonska-omladinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0037010032",
+        "name": "Drezgić Petar",
+        "additional_info": "Zamjenik komandanta bataljona.",
+        "pdf_file": "16-slavonska-omladinska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 133.8,
+        "pdf_y": 516.0,
+        "pdf_y_end": 524.5,
+        "pdf_x_end": 369.7,
+        "unit_file": "16-slavonska-omladinska-soldiers.json"
       }
     ]
   },
@@ -7123,6 +7283,22 @@
     "pdf_x_end": 345.3,
     "other_sources": [
       {
+        "soldier_id": "9021050224",
+        "name": "Dulmin (Blaž) Zvonko",
+        "additional_info": "rođen 1921, Veleševec (Velika Gorica). Hrvat, poginuo 1945. u NOBu, Lornek",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2389",
+        "source_page": 2389,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9021050225",
+        "name": "Dulmin (Blažo) Zvonko",
+        "additional_info": "rođen 1921, Veleševec (Velika Gorica). Hrvat, poginuo 1945. u NOBu, Drnak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2389",
+        "source_page": 2389,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0149000029",
         "name": "Dulmin Zvonko",
         "additional_info": "Veleševec; poginuo 8. II 1945. Drnek.",
@@ -7242,6 +7418,18 @@
         "pdf_y": 205.4,
         "pdf_y_end": 240.6,
         "pdf_x_end": 289.8,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010068",
+        "name": "Dvorabić Tomo",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir voda 1. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 3,
+        "pdf_x": 268.4,
+        "pdf_y": 420.1,
+        "pdf_x_end": 333.2,
+        "pdf_y_end": 428.6,
         "unit_file": "karlovacka-soldiers.json"
       }
     ]
@@ -8118,6 +8306,18 @@
         "pdf_x_end": 466.6,
         "pdf_y_end": 700.9,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010081",
+        "name": "Franjković Milan",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: pomoćnik komesara čete 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 133.5,
+        "pdf_y": 296.3,
+        "pdf_x_end": 203.3,
+        "pdf_y_end": 304.8,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -8343,7 +8543,21 @@
     "pdf_y_end": 142.8,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000274",
-    "pdf_x_end": 380.8
+    "pdf_x_end": 380.8,
+    "other_sources": [
+      {
+        "soldier_id": "0094000199",
+        "name": "Frtalj Ivana Mirko",
+        "additional_info": "1927, Breznik, Jaškovo. Stupio u NOV 8. 9. 1944, borac 1. bat. Poginuo kod Slunja 14. 4. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 98.9,
+        "pdf_y": 203.2,
+        "pdf_x_end": 256.7,
+        "pdf_y_end": 238.1,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Fudurić",
@@ -9233,7 +9447,33 @@
     "pdf_y_end": 232.4,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000302",
-    "pdf_x_end": 345.8
+    "pdf_x_end": 345.8,
+    "other_sources": [
+      {
+        "soldier_id": "0094000216",
+        "name": "Gluščič Grge Marko",
+        "additional_info": "1907, Maletić, Netretić. Stupio u NOV 10. 11. 1943, pom. puškomitraljesca 3. bat. Poginuo kod Donje Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 98.6,
+        "pdf_y": 385.6,
+        "pdf_x_end": 254.6,
+        "pdf_y_end": 428.6,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000215",
+        "name": "Gluščič G Marko",
+        "additional_info": "1907, Maletić, Netretić. Stupio u NOV 10. 11. 1943, borac 3. bat. Poginuo u Kupčini 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 6,
+        "pdf_x": 94.5,
+        "pdf_y": 245.2,
+        "pdf_y_end": 279.6,
+        "pdf_x_end": 255.8,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gojišić",
@@ -9258,6 +9498,31 @@
     "pdf_x_end": 345.8,
     "other_sources": [
       {
+        "soldier_id": "0097010112",
+        "name": "Gojišić Alojz",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandir izviđačkog voda Karlovačke brigade; delegat izviđačkog voda Karlovačke brigade.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 8,
+        "pdf_x": 364.0,
+        "pdf_y": 365.7,
+        "pdf_x_end": 431.6,
+        "pdf_y_end": 376.2,
+        "pdf_rects": [
+          [
+            364.0,
+            365.7,
+            431.6,
+            376.2
+          ],
+          [
+            364.0,
+            390.7,
+            435.0,
+            401.2
+          ]
+        ]
+      },
+      {
         "soldier_id": "0094000218",
         "name": "Gojišić Gabrijela Alojz",
         "additional_info": "1910, Čeglji, Draganić. Stupio u NOV 10. 4. 1943, borac 1. bat. Poginuo na Kurjevcu kod Primišlja 15. 4. 1945.",
@@ -9267,6 +9532,32 @@
         "pdf_y": 432.9,
         "pdf_x_end": 255.9,
         "pdf_y_end": 467.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010100",
+        "name": "Gojišić Alojz",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir izviđačkog voda brigade; politički delegat izviđačkog voda brigade.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 8,
+        "pdf_x": 161.5,
+        "pdf_y": 274.3,
+        "pdf_x_end": 217.1,
+        "pdf_y_end": 282.8,
+        "pdf_rects": [
+          [
+            161.5,
+            274.3,
+            217.1,
+            282.8
+          ],
+          [
+            167.4,
+            282.9,
+            223.8,
+            291.4
+          ]
+        ],
         "unit_file": "karlovacka-soldiers.json"
       }
     ]
@@ -9603,7 +9894,33 @@
     "pdf_y_end": 366.8,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000313",
-    "pdf_x_end": 380.8
+    "pdf_x_end": 380.8,
+    "other_sources": [
+      {
+        "soldier_id": "0094000228",
+        "name": "Grabar Izidora Ljudevit",
+        "additional_info": "1902, Vrbno, Ivanec. Stupio u NOV 22. 12. 1944, borac 1. bat. Poginuo kod Rečice 4, 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 98.2,
+        "pdf_y": 627.0,
+        "pdf_x_end": 259.1,
+        "pdf_y_end": 661.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000314",
+        "name": "Grabar I Ljudevit",
+        "additional_info": "borac, KB, 1902. Vrbno.Ivanec, u NOB 1944, poginuo Rečica, 04.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 17.8,
+        "pdf_y": 298.788,
+        "pdf_x_end": 345.7,
+        "pdf_y_end": 307.0,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grabar",
@@ -9638,6 +9955,18 @@
         "pdf_x_end": 259.1,
         "pdf_y_end": 661.5,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000313",
+        "name": "Grabar I Ljudevit",
+        "additional_info": "borac, KB, 1909. Vrbno, Ivanec, poginuo Rećica, 04.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 52.8,
+        "pdf_y": 358.78799999999995,
+        "pdf_x_end": 380.8,
+        "pdf_y_end": 366.8,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ]
   },
@@ -9714,6 +10043,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1466",
         "source_page": 1466,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000233",
+        "name": "Graša Josipa Josip",
+        "additional_info": "1927, Police, Ozalj. Stupio u NOV 8. 1. 1944, borac 3. bat. Ranjen kod Lazine 26. 12. 1944. i od povreda umro istoga dana.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 283.9,
+        "pdf_y": 163.1,
+        "pdf_x_end": 442.3,
+        "pdf_y_end": 206.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000232",
+        "name": "Graša J Josip",
+        "additional_info": "1927, Police, Ozalj. Stupio u NOV 8. 1. 1944, borac 3. bat. Poginuo kod Lazine 26. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 6,
+        "pdf_x": 93.3,
+        "pdf_y": 566.3,
+        "pdf_y_end": 592.1,
+        "pdf_x_end": 263.4,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -10474,7 +10827,21 @@
     "pdf_y_end": 120.3,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000339",
-    "pdf_x_end": 346.0
+    "pdf_x_end": 346.0,
+    "other_sources": [
+      {
+        "soldier_id": "0006001926",
+        "name": "Grubačević Janka Janko",
+        "additional_info": "1923. Kuljaji, Ozalj. Poginuo 1945.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 29,
+        "pdf_x": 127.7,
+        "pdf_y": 441.5,
+        "pdf_x_end": 299.5,
+        "pdf_y_end": 457.8,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grubešić",
@@ -10646,7 +11013,34 @@
     "pdf_y_end": 219.9,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000347",
-    "pdf_x_end": 345.9
+    "pdf_x_end": 345.9,
+    "other_sources": [
+      {
+        "soldier_id": "0097010123",
+        "name": "Grčić Daniel",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandant 3. bataljona brigade »Franjo Ogulinac Seljo«; komandant 4. bataljona brigade »Franjo Ogulinac Seljo«; zamjenik komandanta 1. bataljona brigade »Franjo Ogulinac Seljo«; zamjenik komandanta 4. bataljona brigade »Franjo Ogulinac Seljo«.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 2,
+        "pdf_x": 409.2,
+        "pdf_y": 703.2,
+        "pdf_x_end": 474.5,
+        "pdf_y_end": 713.7,
+        "pdf_rects": [
+          [
+            409.2,
+            703.2,
+            474.5,
+            713.7
+          ],
+          [
+            478.2,
+            728.1,
+            549.0,
+            738.6
+          ]
+        ]
+      }
+    ]
   },
   {
     "last_name": "Gukov",
@@ -11257,6 +11651,17 @@
     "pdf_x_end": 366.4,
     "other_sources": [
       {
+        "soldier_id": "0097010127",
+        "name": "Herceg Vilim",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: član divizijskog komiteta KPJ 34. divizije; zamjenik komesara Žumberačke brigade; zamjenik komesara 1. Žumberačko-pokupskog NOP odreda.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 368.3,
+        "pdf_y": 557.2,
+        "pdf_x_end": 443.1,
+        "pdf_y_end": 567.7
+      },
+      {
         "soldier_id": "9021059010",
         "name": "Herceg (Nn) Vilim",
         "additional_info": "rođen 1916, Horvati (Zagreb-Remetinec). Hrvat, poginuo 1944. u NOBu, Horvati",
@@ -11264,7 +11669,8 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "rank": "zamjenik komesara"
   },
   {
     "last_name": "Herceg",
@@ -11320,6 +11726,18 @@
         "pdf_y": 188.8,
         "pdf_x_end": 296.4,
         "pdf_y_end": 223.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010116",
+        "name": "Heruc Predrag",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komesar čete 2. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 364.1,
+        "pdf_y": 465.0,
+        "pdf_x_end": 427.3,
+        "pdf_y_end": 473.5,
         "unit_file": "karlovacka-soldiers.json"
       }
     ]
@@ -12294,6 +12712,18 @@
         "pdf_y": 432.6,
         "pdf_y_end": 467.3,
         "pdf_x_end": 290.3,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010126",
+        "name": "Ilijanić Janko",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir voda 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 302.8,
+        "pdf_y": 348.4,
+        "pdf_x_end": 362.1,
+        "pdf_y_end": 356.9,
         "unit_file": "karlovacka-soldiers.json"
       }
     ]
@@ -13661,7 +14091,21 @@
     "pdf_y_end": 108.2,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000448",
-    "pdf_x_end": 363.1
+    "pdf_x_end": 363.1,
+    "other_sources": [
+      {
+        "soldier_id": "0094000306",
+        "name": "Janković Stjepana Ivan",
+        "additional_info": "1925, Farkašić, Sisak. Stupio u NOV 14. 9. 1944, borac 2, bat. Poginuo kod Mavračića 23. 10. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 27,
+        "pdf_x": 313.2,
+        "pdf_y": 278.1,
+        "pdf_x_end": 478.0,
+        "pdf_y_end": 312.5,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janković",
@@ -13727,6 +14171,30 @@
         "pdf_x_end": 204.1,
         "pdf_y_end": 397.8,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0094000309",
+        "name": "Janković Nikole Juraj",
+        "additional_info": "1915, Kunić Ribnički, Netretić. Stupio u NOV 20. 1. 1944, borac brig. Poginuo kod Donje Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 27,
+        "pdf_x": 313.6,
+        "pdf_y": 237.7,
+        "pdf_x_end": 478.6,
+        "pdf_y_end": 272.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000307",
+        "name": "Janković N Jura",
+        "additional_info": "1915, Kunić Ribnički, Netretić. Stupio u NOV 20. 1. 1944, borac 3. bat. Poginuo kod Donje Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 7,
+        "pdf_x": 312.4,
+        "pdf_y": 550.2,
+        "pdf_y_end": 584.6,
+        "pdf_x_end": 471.3,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -13850,7 +14318,33 @@
     "pdf_y_end": 133.2,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000454",
-    "pdf_x_end": 363.0
+    "pdf_x_end": 363.0,
+    "other_sources": [
+      {
+        "soldier_id": "0094000314",
+        "name": "Jarnjević Jure Franjo",
+        "additional_info": "1905, Jarnjevići, Ribnik. Stupio u NOV 6. 9. 1944, borac brig. Poginuo kod Donje Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 27,
+        "pdf_x": 312.7,
+        "pdf_y": 358.0,
+        "pdf_x_end": 468.9,
+        "pdf_y_end": 392.4,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000455",
+        "name": "Jarnjević J Franjo",
+        "additional_info": "borac, KB, 1905. Ribnik, Netretić, poginuo D. Kupčina, 07.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 34.3,
+        "pdf_y": 347.90399999999994,
+        "pdf_x_end": 362.8,
+        "pdf_y_end": 357.1,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jarnjević",
@@ -13872,7 +14366,33 @@
     "pdf_y_end": 357.1,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000455",
-    "pdf_x_end": 362.8
+    "pdf_x_end": 362.8,
+    "other_sources": [
+      {
+        "soldier_id": "0094000314",
+        "name": "Jarnjević Jure Franjo",
+        "additional_info": "1905, Jarnjevići, Ribnik. Stupio u NOV 6. 9. 1944, borac brig. Poginuo kod Donje Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 27,
+        "pdf_x": 312.7,
+        "pdf_y": 358.0,
+        "pdf_x_end": 468.9,
+        "pdf_y_end": 392.4,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000454",
+        "name": "Jarnjević J Franjo",
+        "additional_info": "borac, KB, 1905. Jamjevići, Ribnik, u NOB 1944, poginuo D. Kupčina, 07.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 34.5,
+        "pdf_y": 123.70400000000001,
+        "pdf_x_end": 363.0,
+        "pdf_y_end": 133.2,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jarnjević",
@@ -13906,6 +14426,18 @@
         "pdf_y": 398.1,
         "pdf_x_end": 473.2,
         "pdf_y_end": 432.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010143",
+        "name": "Jarnjević Ivan",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir voda 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 133.5,
+        "pdf_y": 357.0,
+        "pdf_x_end": 194.1,
+        "pdf_y_end": 365.5,
         "unit_file": "karlovacka-soldiers.json"
       }
     ]
@@ -13974,7 +14506,21 @@
     "pdf_y_end": 270.0,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000459",
-    "pdf_x_end": 362.8
+    "pdf_x_end": 362.8,
+    "other_sources": [
+      {
+        "soldier_id": "0006002403",
+        "name": "Jelenić Pere Janko",
+        "additional_info": "1919. Jelenići, Samobor. Poginuo 1945. na Baniji.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 35,
+        "pdf_x": 307.8,
+        "pdf_y": 484.1,
+        "pdf_x_end": 480.1,
+        "pdf_y_end": 500.4,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jelenić",
@@ -14443,6 +14989,18 @@
     "pdf_x_end": 363.1,
     "other_sources": [
       {
+        "soldier_id": "0094000329",
+        "name": "Jurkas L Dragutin",
+        "additional_info": "1913, Duga Resa. Stupio u NOV 9. 9. 1943, pomoćnik komesara čete 4. bat. Poginuo kod Petrovine 30. 6. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 8,
+        "pdf_x": 93.8,
+        "pdf_y": 558.2,
+        "pdf_x_end": 262.3,
+        "pdf_y_end": 592.6,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
         "soldier_id": "0094000330",
         "name": "Jurkas Konrada Dragutin",
         "additional_info": "19il3, Duga Resa. Stupio u NOV 6. 9. 1943, komesar čete 4. bat. Poginuo kod Petrovine 30. 6. 1944.",
@@ -14452,6 +15010,18 @@
         "pdf_y": 612.6,
         "pdf_x_end": 475.2,
         "pdf_y_end": 646.8,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010150",
+        "name": "Jurkas Dragutin",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: pomoćnik komesara čete 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 391.7,
+        "pdf_y": 279.0,
+        "pdf_x_end": 462.1,
+        "pdf_y_end": 287.5,
         "unit_file": "karlovacka-soldiers.json"
       }
     ]
@@ -14667,6 +15237,18 @@
         "pdf_x_end": 477.3,
         "pdf_y_end": 695.0,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010152",
+        "name": "Kalanja Vjekoslav",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 2. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 275.1,
+        "pdf_y": 652.7,
+        "pdf_x_end": 353.1,
+        "pdf_y_end": 661.2,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -14783,6 +15365,17 @@
     "occupation": "trgovac",
     "other_sources": [
       {
+        "soldier_id": "0097010154",
+        "name": "Karaš Milutin",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: načelnik štaba 34. divizije.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 369.0,
+        "pdf_y": 437.0,
+        "pdf_x_end": 443.7,
+        "pdf_y_end": 447.5
+      },
+      {
         "soldier_id": "0002003451",
         "name": "Karaš Milutin",
         "additional_info": "1910, Svojić, Duga Resa, trgovac, u NOB od 1941, prvi zamjenik komandanta brigade (septembar-oktobar 1942), poginuo marta 1945. kao načelnik štaba 34. divizije",
@@ -14806,7 +15399,8 @@
         "pdf_y_end": 513.8,
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       }
-    ]
+    ],
+    "unit_detail": "34. divizija"
   },
   {
     "last_name": "Karlović",
@@ -15555,6 +16149,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1608",
         "source_page": 1608,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000360",
+        "name": "Klarić I Janko",
+        "additional_info": "1920, Gora, Petrinja. Stupio u NOV 19. 11. 1944, borac 1. bat. Poginuo kod Rečice 15. 1. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 95.1,
+        "pdf_y": 464.7,
+        "pdf_x_end": 258.1,
+        "pdf_y_end": 499.1,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -15688,7 +16294,21 @@
     "pdf_y_end": 70.6,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000514",
-    "pdf_x_end": 346.4
+    "pdf_x_end": 346.4,
+    "other_sources": [
+      {
+        "soldier_id": "0094000364",
+        "name": "Klemenčič Ivana Ivan",
+        "additional_info": "1919, Veselić, Ribnik. Stupio u NOV 1944, borac brig. Poginuo kod Netretića 3. 5. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 94.8,
+        "pdf_y": 503.6,
+        "pdf_x_end": 258.6,
+        "pdf_y_end": 537.0,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Klenović",
@@ -15851,6 +16471,18 @@
         "pdf_x_end": 180.0,
         "pdf_y_end": 547.5,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0060000871",
+        "name": "Knapić Josipa Josip",
+        "additional_info": "1926, Duga Resa, stupio u NOV 7. 4. 1943, komesar čete Karlovačke brig. 8. div, poginuo 12. 3. 1944. kod Bosiljeva",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 38,
+        "pdf_x": 304.6,
+        "pdf_y": 624.9,
+        "pdf_x_end": 462.1,
+        "pdf_y_end": 658.6,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
       },
       {
         "soldier_id": "0094000372",
@@ -16026,7 +16658,21 @@
     "pdf_y_end": 505.2,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000523",
-    "pdf_x_end": 342.9
+    "pdf_x_end": 342.9,
+    "other_sources": [
+      {
+        "soldier_id": "0094000377",
+        "name": "Kocmanić J Petar",
+        "additional_info": "1910, Bučica, Glina. Stupio u NOV 4. 11. 1944, borac 1. bat. Poginuo kod Odre (Sisak) 16. 2. 1945,",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 280.8,
+        "pdf_y": 207.0,
+        "pdf_x_end": 451.0,
+        "pdf_y_end": 241.1,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kodavec",
@@ -16707,7 +17353,22 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000547",
     "pdf_x_end": 346.4,
-    "death_date": "veljače 1945"
+    "death_date": "veljače 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0097010182",
+        "name": "Kosanović Milan",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: načelnik saniteta 34. divizije.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 444.2,
+        "pdf_y": 814.0,
+        "pdf_x_end": 536.3,
+        "pdf_y_end": 824.5
+      }
+    ],
+    "rank": "načelnik saniteta",
+    "unit_detail": "34. divizija"
   },
   {
     "last_name": "Kosmač",
@@ -16728,7 +17389,46 @@
     "pdf_y_end": 529.9,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000548",
-    "pdf_x_end": 342.9
+    "pdf_x_end": 342.9,
+    "death_place": "na Zumberku",
+    "other_sources": [
+      {
+        "soldier_id": "0094000382",
+        "name": "Kosmač Nikole Vid",
+        "additional_info": "1922, Fratrovci, Ozalj. Stupio u NOV 8. 1. 19*14, komandir čete 3. bat. Ranjen 30. 6. 1944. kod Okruga {Žumberak) i od posljedica umro u bolnici na Zumberku 3. 7. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 280.6,
+        "pdf_y": 289.3,
+        "pdf_x_end": 448.0,
+        "pdf_y_end": 341.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000381",
+        "name": "Kosmač M Vid",
+        "additional_info": "1922, Fratrovci, Ozalj. Stupio u NOV 8. 1. 1944, komandir čete 3. bat. Ranjen 30. 6. 1944, kod Okruga na Zumberku i od posljedica umro 3. 7. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 9,
+        "pdf_x": 129.0,
+        "pdf_y": 647.2,
+        "pdf_y_end": 689.8,
+        "pdf_x_end": 294.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010176",
+        "name": "Kosmač Vid",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir čete 3. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 5,
+        "pdf_x": 171.9,
+        "pdf_y": 564.4,
+        "pdf_x_end": 223.8,
+        "pdf_y_end": 572.9,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kosojević",
@@ -16882,6 +17582,14 @@
     "soldier_id": "0097000554",
     "pdf_x_end": 376.5,
     "other_sources": [
+      {
+        "soldier_id": "9021050024",
+        "name": "Kotrman (Stjepan) Josip",
+        "additional_info": "rođen 1927, Kobilići (Velika Gorica). Hrvat, poginuo 1945. u NOBu, Martinska ves",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2382",
+        "source_page": 2382,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0149000057",
         "name": "Kotrman Josip",
@@ -17673,6 +18381,18 @@
         "pdf_y_end": 315.4,
         "pdf_x_end": 470.8,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010177",
+        "name": "Kralj Josip",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir voda čete za vezu brigade.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 405.2,
+        "pdf_y": 537.3,
+        "pdf_x_end": 456.0,
+        "pdf_y_end": 545.8,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -17718,7 +18438,21 @@
     "pdf_y_end": 590.6,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000583",
-    "pdf_x_end": 342.6
+    "pdf_x_end": 342.6,
+    "other_sources": [
+      {
+        "soldier_id": "0094000392",
+        "name": "Kraljević J Stjepan",
+        "additional_info": "1913, Cerje, Pokupsko. Stupio u NOV 17. 9. 1944, borac 2. bat. Poginuo kod Odre (Sisak) 16. 2. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 279.6,
+        "pdf_y": 519.7,
+        "pdf_x_end": 446.8,
+        "pdf_y_end": 554.3,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kraljik",
@@ -17820,7 +18554,33 @@
     "pdf_y_end": 44.6,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000586",
-    "pdf_x_end": 369.5
+    "pdf_x_end": 369.5,
+    "other_sources": [
+      {
+        "soldier_id": "0094000393",
+        "name": "Kramarić Jurja Juraj",
+        "additional_info": "1927, Osojnik, Severin na Kupi. Stupio u NOV 16. 9. 1944, borac 2. bat. Poginuo kod Donje Kuipčine 7. 3.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 279.2,
+        "pdf_y": 560.5,
+        "pdf_x_end": 440.9,
+        "pdf_y_end": 603.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000587",
+        "name": "Kramarić J Juraj",
+        "additional_info": "borac, KB, 1927. Osojnik, Severin na Kupi, poginuo D. Kupčina, 07.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 19.2,
+        "pdf_y": 49.063999999999965,
+        "pdf_x_end": 346.4,
+        "pdf_y_end": 58.1,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kramarić",
@@ -17842,7 +18602,33 @@
     "pdf_y_end": 58.1,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000587",
-    "pdf_x_end": 346.4
+    "pdf_x_end": 346.4,
+    "other_sources": [
+      {
+        "soldier_id": "0094000393",
+        "name": "Kramarić Jurja Juraj",
+        "additional_info": "1927, Osojnik, Severin na Kupi. Stupio u NOV 16. 9. 1944, borac 2. bat. Poginuo kod Donje Kuipčine 7. 3.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 279.2,
+        "pdf_y": 560.5,
+        "pdf_x_end": 440.9,
+        "pdf_y_end": 603.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000586",
+        "name": "Kramarić J Juraj",
+        "additional_info": "borac, KB, 1927. Osojnik, Severin na Kupi, u NOB 1944, poginuo D. Kupčina, 07.03.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 13,
+        "pdf_x": 40.8,
+        "pdf_y": 35.40399999999988,
+        "pdf_x_end": 369.5,
+        "pdf_y_end": 44.6,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kranjec",
@@ -19056,6 +19842,18 @@
         "pdf_x_end": 307.1,
         "pdf_y_end": 420.9,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010186",
+        "name": "Ladika Antun",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 133.2,
+        "pdf_y": 428.8,
+        "pdf_x_end": 192.6,
+        "pdf_y_end": 437.3,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -19158,8 +19956,45 @@
         "pdf_y": 860.4,
         "pdf_x_end": 445.1,
         "pdf_y_end": 870.9
+      },
+      {
+        "soldier_id": "0094000422",
+        "name": "Lapčević Save Đuro",
+        "additional_info": "1907, Vrginmost. Stupio u NOV 27. 6. 1943, komandir Inž. čete brig. Poginuo kod Donje Kupčine 27. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 29,
+        "pdf_x": 137.2,
+        "pdf_y": 465.7,
+        "pdf_x_end": 306.6,
+        "pdf_y_end": 500.1,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000421",
+        "name": "Lapčević S Đuro",
+        "additional_info": "1907, Vrginmost. Stupio u NOV 27. 6. 1943, komandir čete 2. bat. Poginuo kod Donje Kupčine 27. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 10,
+        "pdf_x": 92.5,
+        "pdf_y": 396.2,
+        "pdf_y_end": 430.6,
+        "pdf_x_end": 261.4,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010188",
+        "name": "Lapčević Đuro",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir čete 2. bataljona; komandir čete 4. bataljona; komandir inžinjerijske čete brigade.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 199.7,
+        "pdf_y": 419.7,
+        "pdf_x_end": 261.8,
+        "pdf_y_end": 428.2,
+        "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "komandir čete"
   },
   {
     "last_name": "Latarcov",
@@ -21130,6 +21965,54 @@
         "pdf_x_end": 375.9,
         "pdf_y_end": 127.1,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0094000471",
+        "name": "Malović Janka Mijo",
+        "additional_info": "1911, Duga Resa. Stupio u NOV 15. 8. 1943, borac 4. bat. Poginuo kod Lazine 24. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 29,
+        "pdf_x": 321.0,
+        "pdf_y": 661.1,
+        "pdf_x_end": 485.4,
+        "pdf_y_end": 695.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000470",
+        "name": "Malović J Mijo",
+        "additional_info": "1911, Duga Resa. Stupio u NOV 15. 8. 1943, delegat voda 4. bat. Poginuo kod Lazine 24. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 11,
+        "pdf_x": 138.2,
+        "pdf_y": 433.1,
+        "pdf_y_end": 467.8,
+        "pdf_x_end": 309.7,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010209",
+        "name": "Malović Mijo",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 281.1,
+        "pdf_y": 428.8,
+        "pdf_x_end": 337.8,
+        "pdf_y_end": 437.3,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000691",
+        "name": "Malović J Mijo",
+        "additional_info": "borac, KB, 1911. Duga Resa, poginuo Lazina, 27.12.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 17,
+        "pdf_x": 48.3,
+        "pdf_y": 437.64400000000023,
+        "pdf_x_end": 376.2,
+        "pdf_y_end": 446.6,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ]
   },
@@ -21174,6 +22057,54 @@
         "pdf_x_end": 375.9,
         "pdf_y_end": 127.1,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0094000471",
+        "name": "Malović Janka Mijo",
+        "additional_info": "1911, Duga Resa. Stupio u NOV 15. 8. 1943, borac 4. bat. Poginuo kod Lazine 24. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 29,
+        "pdf_x": 321.0,
+        "pdf_y": 661.1,
+        "pdf_x_end": 485.4,
+        "pdf_y_end": 695.5,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000470",
+        "name": "Malović J Mijo",
+        "additional_info": "1911, Duga Resa. Stupio u NOV 15. 8. 1943, delegat voda 4. bat. Poginuo kod Lazine 24. 12. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 11,
+        "pdf_x": 138.2,
+        "pdf_y": 433.1,
+        "pdf_y_end": 467.8,
+        "pdf_x_end": 309.7,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010209",
+        "name": "Malović Mijo",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 281.1,
+        "pdf_y": 428.8,
+        "pdf_x_end": 337.8,
+        "pdf_y_end": 437.3,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000690",
+        "name": "Malović J Mijo",
+        "additional_info": "borac, KB, 1911. Duga Resa, u NOB 1943, poginuo Lazina, 24.12.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 16,
+        "pdf_x": 199.9,
+        "pdf_y": 578.004,
+        "pdf_x_end": 529.4,
+        "pdf_y_end": 587.0,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ]
   },
@@ -21407,8 +22338,33 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=795",
         "source_page": 795,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000476",
+        "name": "Maretić Stjepana Janko",
+        "additional_info": "1912, Bratina* Pisarovina. Stupio u NOV 20. 9. 1944, borac 3, bat. Ranjen 27. 12. 1944. kod Donje Kupčine i od teških povreda umro u bolnici 34. div.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 30,
+        "pdf_x": 96.6,
+        "pdf_y": 207.3,
+        "pdf_x_end": 260.4,
+        "pdf_y_end": 259.0,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000699",
+        "name": "Maretić S Janko",
+        "additional_info": "borac, KB, 1912. Bratina, Pisarovina, poginuo D. Kupčina, 27.12.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 17,
+        "pdf_x": 48.3,
+        "pdf_y": 450.14400000000023,
+        "pdf_x_end": 376.2,
+        "pdf_y_end": 459.1,
+        "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "D. Kupčina"
   },
   {
     "last_name": "Maretić",
@@ -21439,6 +22395,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=795",
         "source_page": 795,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000476",
+        "name": "Maretić Stjepana Janko",
+        "additional_info": "1912, Bratina* Pisarovina. Stupio u NOV 20. 9. 1944, borac 3, bat. Ranjen 27. 12. 1944. kod Donje Kupčine i od teških povreda umro u bolnici 34. div.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 30,
+        "pdf_x": 96.6,
+        "pdf_y": 207.3,
+        "pdf_x_end": 260.4,
+        "pdf_y_end": 259.0,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000698",
+        "name": "Maretić S Janko",
+        "additional_info": "borac, KB, 1912. Bratina, Pisarovina, u NOB 1944, Ranj., umro, 27.12.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 16,
+        "pdf_x": 199.9,
+        "pdf_y": 602.804,
+        "pdf_x_end": 529.3,
+        "pdf_y_end": 611.8,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ]
   },
@@ -21721,6 +22701,18 @@
         "pdf_y_end": 418.1,
         "pdf_x_end": 489.1,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010219",
+        "name": "Marković Stjepan",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir voda 3. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 6,
+        "pdf_x": 163.8,
+        "pdf_y": 198.6,
+        "pdf_x_end": 238.2,
+        "pdf_y_end": 207.1,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -21822,6 +22814,14 @@
     "pdf_x_end": 529.4,
     "rank": "komesar čete",
     "other_sources": [
+      {
+        "soldier_id": "9021017449",
+        "name": "Markus (Pavle) Rudolf",
+        "additional_info": "rođen 1921, Karlovac. Srbin, poginuo 1945. u NOBu, Žažina sisak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=843",
+        "source_page": 843,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0094000490",
         "name": "Markus P Rudolf",
@@ -22695,6 +23695,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=843",
         "source_page": 843,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006004032",
+        "name": "Mejašić Josipa Mato",
+        "additional_info": "1903. s. Brdo, Karlovac. Poginuo 19. XI 1942. kod N. Sela, sahranjen u istom mjestu na Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 56,
+        "pdf_x": 114.3,
+        "pdf_y": 341.3,
+        "pdf_x_end": 284.7,
+        "pdf_y_end": 365.4,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -23521,6 +24533,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1768",
         "source_page": 1768,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006004177",
+        "name": "Milaković Petra Janko",
+        "additional_info": "1912. Osredek Žumberački, Samobor. Poginuo 1943. u Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 58,
+        "pdf_x": 120.0,
+        "pdf_y": 250.4,
+        "pdf_x_end": 290.8,
+        "pdf_y_end": 274.5,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -24703,6 +25727,18 @@
         "pdf_x_end": 441.5,
         "pdf_y_end": 631.5,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010254",
+        "name": "Navratil Mladen",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 1. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 3,
+        "pdf_x": 251.1,
+        "pdf_y": 524.1,
+        "pdf_x_end": 320.7,
+        "pdf_y_end": 532.6,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -25198,6 +26234,18 @@
         "pdf_x_end": 308.2,
         "pdf_y_end": 599.8,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010259",
+        "name": "Novosel Franjo",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 2. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 275.4,
+        "pdf_y": 669.5,
+        "pdf_x_end": 339.1,
+        "pdf_y_end": 678.0,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -25495,6 +26543,66 @@
         "pdf_x_end": 199.6,
         "pdf_y_end": 126.1,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0060001577",
+        "name": "Oreščanin Srđana Nikola",
+        "additional_info": "1919, Mateško Selo, stupio u NOV augusta 1941. u odred »Perjasica«, operat. oficir Karlovačke brig. 8. div, poginuo 4. 4. 1944. u s. Lipici kod Ozlja",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 67,
+        "pdf_x": 97.6,
+        "pdf_y": 580.3,
+        "pdf_x_end": 252.3,
+        "pdf_y_end": 622.4,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0060010108",
+        "name": "Oreščanin Nikola",
+        "additional_info": "Pregled komandnog kadra Osme udarne divizije: Štab Karlovačke brigade, operativni oficir. Poginuo u toku NOR-a.",
+        "pdf_file": "8-kordunaska-divizija-kadar.pdf",
+        "pdf_page": 13,
+        "pdf_x": 174.7,
+        "pdf_y": 430.8,
+        "pdf_x_end": 246.2,
+        "pdf_y_end": 439.3,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000574",
+        "name": "Oreščanin Srđana Nikola",
+        "additional_info": "1919, Mateško Selo, Perjasica. Stupio u NOV 31. 8. 1941. Poginuo kao operativni oficir brig, u Rovnici kod Ribnika 4. 4. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 31,
+        "pdf_x": 137.8,
+        "pdf_y": 341.1,
+        "pdf_x_end": 308.4,
+        "pdf_y_end": 383.9,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000573",
+        "name": "Oreščanin S Nikola",
+        "additional_info": "1919, Mateško Selo, Perjasica. Stupio u NOV 31. 8. 1941, operativni oficir brig. Poginuo kod Ribnika 4. 4. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 13,
+        "pdf_x": 323.8,
+        "pdf_y": 302.8,
+        "pdf_y_end": 337.2,
+        "pdf_x_end": 491.1,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010262",
+        "name": "Oreščanin Srđana Nikola",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: operativni oficir brigade, od 5. 3. do 4. 4. 1944, poginuo u Lipici kod Ozlja 4. 4. 1944.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 141.4,
+        "pdf_y": 587.9,
+        "pdf_x_end": 234.4,
+        "pdf_y_end": 596.4,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -26068,17 +27176,42 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2383",
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0097000855",
+        "name": "Pavišić M Vinko",
+        "additional_info": "borac, T-PO, Lukavec, Vel. Gorica, poginuo Veleševec, 08.02.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 48.9,
+        "pdf_y": 569.6039999999999,
+        "pdf_x_end": 376.4,
+        "pdf_y_end": 578.6,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000080",
+        "name": "Pavišić M Vinko",
+        "additional_info": "Lukavec; poginuo 8 II 1945. Veleševec.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 217.5,
+        "pdf_y": 420.755,
+        "pdf_x_end": 562.5,
+        "pdf_y_end": 429.2,
+        "pdf_x_left": 205.0,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
     ]
   },
   {
     "last_name": "Pavišić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Vinko",
-    "fathers_name": "",
-    "full_name": "Pavišić Vinko",
+    "fathers_name": "M",
+    "full_name": "Pavišić M Vinko",
     "additional_info": "borac, T-PO, Lukavec, Vel. Gorica, poginuo Veleševec, 08.02.45",
-    "birth_year": "",
+    "birth_year": "1921",
     "birth_place": "Lukavec, Vel. Gorica",
     "death_date": "8. 2. 1945",
     "death_type": "poginuo",
@@ -26091,7 +27224,34 @@
     "pdf_y_end": 578.6,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000855",
-    "pdf_x_end": 376.4
+    "pdf_x_end": 376.4,
+    "other_sources": [
+      {
+        "soldier_id": "0097000854",
+        "name": "Pavišić M Vinko",
+        "additional_info": "borac, TPO, 1921. Lukavec, Vel. Gorica, poginuo Dubranec, 08.02.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 47.7,
+        "pdf_y": 211.30399999999986,
+        "pdf_x_end": 375.8,
+        "pdf_y_end": 220.8,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000080",
+        "name": "Pavišić M Vinko",
+        "additional_info": "Lukavec; poginuo 8 II 1945. Veleševec.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 217.5,
+        "pdf_y": 420.755,
+        "pdf_x_end": 562.5,
+        "pdf_y_end": 429.2,
+        "pdf_x_left": 205.0,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavlak",
@@ -26421,7 +27581,42 @@
     "pdf_y_end": 394.6,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000866",
-    "pdf_x_end": 375.5
+    "pdf_x_end": 375.5,
+    "other_sources": [
+      {
+        "soldier_id": "9021049936",
+        "name": "Pejak (Đuro) Ivan",
+        "additional_info": "rođen 1925, Čakanec (Varadžin). Hrvat, poginuo 1944. u NOBu, Lukinić brdo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2379",
+        "source_page": 2379,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0097000867",
+        "name": "Pejak Ivan",
+        "additional_info": "borac, T-PO, Čakanec, poginuo Lukinić Brdc), 07.05.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 48.9,
+        "pdf_y": 581.4039999999999,
+        "pdf_x_end": 376.2,
+        "pdf_y_end": 590.6,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000081",
+        "name": "Pejak Ivan",
+        "additional_info": "Čakanec; poginuo 7. V 1944. Lukinić Brdo.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 217.2,
+        "pdf_y": 431.355,
+        "pdf_x_end": 562.5,
+        "pdf_y_end": 440.1,
+        "pdf_x_left": 204.7,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pejak",
@@ -26443,7 +27638,42 @@
     "pdf_y_end": 590.6,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000867",
-    "pdf_x_end": 376.2
+    "pdf_x_end": 376.2,
+    "other_sources": [
+      {
+        "soldier_id": "9021049936",
+        "name": "Pejak (Đuro) Ivan",
+        "additional_info": "rođen 1925, Čakanec (Varadžin). Hrvat, poginuo 1944. u NOBu, Lukinić brdo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2379",
+        "source_page": 2379,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0097000866",
+        "name": "Pejak Ivan",
+        "additional_info": "borac, ZPO, Čakanec, Kravarsko, poginuo Kravarsko, 07.05.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 47.5,
+        "pdf_y": 385.30399999999975,
+        "pdf_x_end": 375.5,
+        "pdf_y_end": 394.6,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000081",
+        "name": "Pejak Ivan",
+        "additional_info": "Čakanec; poginuo 7. V 1944. Lukinić Brdo.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 217.2,
+        "pdf_y": 431.355,
+        "pdf_x_end": 562.5,
+        "pdf_y_end": 440.1,
+        "pdf_x_left": 204.7,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pejak",
@@ -28010,6 +29240,18 @@
         "pdf_x_end": 441.5,
         "pdf_y_end": 581.0,
         "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010288",
+        "name": "Pogačić Ivan",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir voda 2. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 339.8,
+        "pdf_y": 589.8,
+        "pdf_x_end": 395.6,
+        "pdf_y_end": 598.3,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -28154,7 +29396,34 @@
     "pdf_y_end": 530.4,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000923",
-    "pdf_x_end": 349.6
+    "pdf_x_end": 349.6,
+    "rank": "komandir voda",
+    "other_sources": [
+      {
+        "soldier_id": "0094000639",
+        "name": "Polimac Vitomira Branko",
+        "additional_info": "1922, Bubnjarci, Ribnik. Stupio u NOV 17. 8. 1943, komandir voda 3. bat. Poginuo kod Sv. Jane (Zumberak) 10. 6. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 32,
+        "pdf_x": 94.7,
+        "pdf_y": 282.6,
+        "pdf_x_end": 263.6,
+        "pdf_y_end": 325.7,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000638",
+        "name": "Polimac V Branko",
+        "additional_info": "1922, Bubnjarci, Ribnik. Stupio u NOV 17. 8. 1943, desetar 3. bat Poginuo kod Sv. Jane 10. 6. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 14,
+        "pdf_x": 278.1,
+        "pdf_y": 586.5,
+        "pdf_y_end": 621.4,
+        "pdf_x_end": 434.2,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Polić",
@@ -28393,6 +29662,18 @@
         "pdf_x_end": 381.1,
         "pdf_y_end": 416.7,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0060001734",
+        "name": "Polović Tome Mijo",
+        "additional_info": "1924, Donje Bukovlje, stupio u NOV 10. 8. 1943, borac Karlovačke brig. 8. div, poginuo 4. 4. 1944. u selu Lipice kod Ozlja",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 73,
+        "pdf_x": 98.0,
+        "pdf_y": 627.4,
+        "pdf_x_end": 253.9,
+        "pdf_y_end": 661.6,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
       },
       {
         "soldier_id": "0094000647",
@@ -29108,6 +30389,14 @@
     "soldier_id": "0097000956",
     "pdf_x_end": 376.3,
     "other_sources": [
+      {
+        "soldier_id": "9021059231",
+        "name": "Prinčić (Franjo) Zvonko",
+        "additional_info": "rođen 1924, Zagreb Dio (Zagreb-Trešnjevka). Hrvat, ubijen 1944. kao zarobljenik prip. NOV i POJ, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2972",
+        "source_page": 2972,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0037000739",
         "name": "Prinčić Zvonko",
@@ -31034,7 +32323,21 @@
     "pdf_y_end": 319.4,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001025",
-    "pdf_x_end": 351.7
+    "pdf_x_end": 351.7,
+    "other_sources": [
+      {
+        "soldier_id": "0094000697",
+        "name": "Rozgaj M Mirko",
+        "additional_info": "1924, Sopči Vrh, Ribnik. Stupio u NOV 5. 2. 1944, borac 2. bat. Poginuo kod Plješivice na Zumberku 7. 6. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 16,
+        "pdf_x": 93.8,
+        "pdf_y": 288.4,
+        "pdf_x_end": 263.7,
+        "pdf_y_end": 322.9,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Roščić",
@@ -33054,7 +34357,17 @@
     "pdf_y_end": 565.7,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001096",
-    "pdf_x_end": 346.7
+    "pdf_x_end": 346.7,
+    "other_sources": [
+      {
+        "soldier_id": "9021049951",
+        "name": "Smolković (Nikola) Mirko",
+        "additional_info": "rođen 1922, Donja Lomnica (Velika Gorica). Hrvat, poginuo 1944. u NOBu, Kupčina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2379",
+        "source_page": 2379,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Smolković",
@@ -33076,7 +34389,17 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001097",
     "pdf_x_end": 349.9,
-    "death_date": "veljače 1944"
+    "death_date": "veljače 1944",
+    "other_sources": [
+      {
+        "soldier_id": "9021049951",
+        "name": "Smolković (Nikola) Mirko",
+        "additional_info": "rođen 1922, Donja Lomnica (Velika Gorica). Hrvat, poginuo 1944. u NOBu, Kupčina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2379",
+        "source_page": 2379,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Smolčić",
@@ -33619,16 +34942,43 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001118",
     "pdf_x_end": 346.6,
-    "death_date": "1943"
+    "death_date": "1943",
+    "other_sources": [
+      {
+        "soldier_id": "0097001119",
+        "name": "Stančić S Karlo",
+        "additional_info": "borac, T-PO, Vukovina, Vel. Gorica, poginuo Zumberak, ljeto 43",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.3,
+        "pdf_y": 199.82399999999996,
+        "pdf_x_end": 349.9,
+        "pdf_y_end": 208.8,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000095",
+        "name": "Stančić S Karlo",
+        "additional_info": "Vukovina; poginuo ljeto 1943. Žumberak.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 216.8,
+        "pdf_y": 607.2550000000001,
+        "pdf_x_end": 561.8,
+        "pdf_y_end": 616.0,
+        "pdf_x_left": 204.3,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stančić",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Karlo",
-    "fathers_name": "",
-    "full_name": "Stančić Karlo",
+    "fathers_name": "S",
+    "full_name": "Stančić S Karlo",
     "additional_info": "borac, T-PO, Vukovina, Vel. Gorica, poginuo Zumberak, ljeto 43",
-    "birth_year": "",
+    "birth_year": "1916",
     "birth_place": "Vukovina, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Zumberak",
@@ -33650,6 +35000,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2390",
         "source_page": 2390,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0097001118",
+        "name": "Stančić S Karlo",
+        "additional_info": "borac, ŽB, 1916. Vukovina, Vel. Gorica, poginuo Plewsivica, 1943",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 24,
+        "pdf_x": 18.9,
+        "pdf_y": 198.404,
+        "pdf_x_end": 346.6,
+        "pdf_y_end": 207.4,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000095",
+        "name": "Stančić S Karlo",
+        "additional_info": "Vukovina; poginuo ljeto 1943. Žumberak.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 216.8,
+        "pdf_y": 607.2550000000001,
+        "pdf_x_end": 561.8,
+        "pdf_y_end": 616.0,
+        "pdf_x_left": 204.3,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
     ]
   },
@@ -34266,10 +35641,10 @@
   },
   {
     "last_name": "Stupljanec",
-    "middle_name": "",
+    "middle_name": "Stjepana",
     "first_name": "Stjepan",
-    "fathers_name": "",
-    "full_name": "Stupljanec Stjepan",
+    "fathers_name": "Stjepan",
+    "full_name": "Stupljanec Stjepana Stjepan",
     "additional_info": "k-dir č., KB, 1920. Donja Kupčina, Pisarovina, u NOB 1942, poginuo Mavračići, 23.10.44",
     "birth_year": "1920",
     "birth_place": "Donja Kupčina, Pisarovina",
@@ -34293,6 +35668,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=799",
         "source_page": 799,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000779",
+        "name": "Stupljanec Stjepana Stjepan",
+        "additional_info": "1920, D. Kupčina, Pisarovina. Stupio u NOV 24. 4. 1942, komandir čete 4. bat. Poginuo kod Mavračića. 23. 10.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 33,
+        "pdf_x": 326.0,
+        "pdf_y": 484.0,
+        "pdf_x_end": 495.0,
+        "pdf_y_end": 527.8,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -34444,16 +35831,43 @@
     "pdf_y_end": 143.5,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001149",
-    "pdf_x_end": 381.1
+    "pdf_x_end": 381.1,
+    "other_sources": [
+      {
+        "soldier_id": "0097001150",
+        "name": "Sučić V Tomo",
+        "additional_info": "borac, T-PO, Lukavec, Vel. Gorica, poginuo Blatnica, 17.06.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.3,
+        "pdf_y": 224.82399999999996,
+        "pdf_x_end": 349.9,
+        "pdf_y_end": 233.8,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000097",
+        "name": "Sučić V Tomo",
+        "additional_info": "Lukavec; poginuo 17. VI 1944. Blatnica.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 216.8,
+        "pdf_y": 629.1550000000001,
+        "pdf_x_end": 561.8,
+        "pdf_y_end": 637.6,
+        "pdf_x_left": 204.3,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sučić",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Tomo",
-    "fathers_name": "",
-    "full_name": "Sučić Tomo",
+    "fathers_name": "V",
+    "full_name": "Sučić V Tomo",
     "additional_info": "borac, T-PO, Lukavec, Vel. Gorica, poginuo Blatnica, 17.06.44",
-    "birth_year": "",
+    "birth_year": "1927",
     "birth_place": "Lukavec, Vel. Gorica",
     "death_date": "17. 6. 1944",
     "death_type": "poginuo",
@@ -34475,6 +35889,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2383",
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0097001149",
+        "name": "Sučić V Tomo",
+        "additional_info": "k-dir od., FOS, 1927. Lukavec, Vel. Gorica, u NOB 1943, poginuo Blatnica, 17.06.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 23,
+        "pdf_x": 52.8,
+        "pdf_y": 134.50399999999996,
+        "pdf_x_end": 381.1,
+        "pdf_y_end": 143.5,
+        "unit_file": "34-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0149000097",
+        "name": "Sučić V Tomo",
+        "additional_info": "Lukavec; poginuo 17. VI 1944. Blatnica.",
+        "pdf_file": "turopoljsko-posavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 216.8,
+        "pdf_y": 629.1550000000001,
+        "pdf_x_end": 561.8,
+        "pdf_y_end": 637.6,
+        "pdf_x_left": 204.3,
+        "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
     ]
   },
@@ -34857,7 +36296,22 @@
     "pdf_y_end": 145.2,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001163",
-    "pdf_x_end": 370.5
+    "pdf_x_end": 370.5,
+    "other_sources": [
+      {
+        "soldier_id": "0097010379",
+        "name": "Tepšić Vaso",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: zamjenik komandanta 1. bataljona brigade »Franjo Ogulinac Seljo«.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 3,
+        "pdf_x": 402.6,
+        "pdf_y": 401.0,
+        "pdf_x_end": 464.4,
+        "pdf_y_end": 411.5
+      }
+    ],
+    "rank": "zamjenik komandanta",
+    "unit_detail": "brigada »Franjo Ogulinac Seljo«"
   },
   {
     "last_name": "Terpež",
@@ -35300,6 +36754,18 @@
         "ref_book": "hak-15-duga-resa"
       },
       {
+        "soldier_id": "0060002131",
+        "name": "Tonćić Ane Josip",
+        "additional_info": "1927, Tončići, Duga Resa, stupio u NOV 10. 4. 1943, borac Karlovačke brig. 8. div, poginuo 12. 3. 1944. kod Bosiljeva",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 92,
+        "pdf_x": 107.6,
+        "pdf_y": 534.6,
+        "pdf_x_end": 263.8,
+        "pdf_y_end": 568.8,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0094000804",
         "name": "Tonćić Ane Josip",
         "additional_info": "1927, Tončić Selo, Netretić. Stupio u NOV 10. 4. 1943, borac 2. bat. Poginuo kod Bosanaca 12. 3. 1944.",
@@ -35566,7 +37032,21 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001186",
     "pdf_x_end": 370.8,
-    "death_date": "15. 2. 1945"
+    "death_date": "15. 2. 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0097010391",
+        "name": "Trkulja Svetozar",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandant 1. bataljona Žumberačke brigade.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 8,
+        "pdf_x": 397.4,
+        "pdf_y": 710.9,
+        "pdf_x_end": 486.0,
+        "pdf_y_end": 721.4
+      }
+    ],
+    "unit_detail": "Žumberačka brigada"
   },
   {
     "last_name": "Trputec",
@@ -36105,7 +37585,34 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001206",
     "pdf_x_end": 359.4,
-    "death_date": "veljače 1945"
+    "death_date": "veljače 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0097010400",
+        "name": "Veseljko Julije",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: operativni oficir brigade »Franjo Ogulinac Seljo«; komandant 2. bataljona brigade »Franjo Ogulinac Seljo«; komandant vojne škole 34. divizije.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 2,
+        "pdf_x": 371.2,
+        "pdf_y": 472.5,
+        "pdf_x_end": 451.4,
+        "pdf_y_end": 483.0,
+        "pdf_rects": [
+          [
+            371.2,
+            472.5,
+            451.4,
+            483.0
+          ],
+          [
+            403.0,
+            641.0,
+            482.9,
+            651.5
+          ]
+        ]
+      }
+    ]
   },
   {
     "last_name": "Videković",
@@ -36136,6 +37643,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=864",
         "source_page": 842,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "9021035585",
+        "name": "Videković (Juro) Pavao",
+        "additional_info": "rođen 1907, Novaki Samoborski (Samobor). Hrvat, poginuo 1943. u NOBu, Jordan-kerestin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1767",
+        "source_page": 1767,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ]
   },
@@ -36569,7 +38084,20 @@
     "pdf_y_end": 506.2,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001223",
-    "pdf_x_end": 343.6
+    "pdf_x_end": 343.6,
+    "other_sources": [
+      {
+        "soldier_id": "0097010404",
+        "name": "Vodir Stjepan",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: zamjenik komesara 1. bataljona Žumberačke brigade.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 8,
+        "pdf_x": 397.1,
+        "pdf_y": 858.2,
+        "pdf_x_end": 467.1,
+        "pdf_y_end": 868.7
+      }
+    ]
   },
   {
     "last_name": "Vojnović",
@@ -37535,7 +39063,21 @@
     "pdf_y_end": 83.0,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001257",
-    "pdf_x_end": 359.8
+    "pdf_x_end": 359.8,
+    "other_sources": [
+      {
+        "soldier_id": "0006007597",
+        "name": "Vuković Vujo Vukašin",
+        "additional_info": "1919. Donja Trstenica, Glina. Poginuo 15. VIII 1943. u Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 104,
+        "pdf_x": 294.6,
+        "pdf_y": 598.0,
+        "pdf_x_end": 466.3,
+        "pdf_y_end": 622.4,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vular",
@@ -38477,7 +40019,21 @@
     "pdf_y_end": 120.0,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001292",
-    "pdf_x_end": 364.6
+    "pdf_x_end": 364.6,
+    "other_sources": [
+      {
+        "soldier_id": "0094000887",
+        "name": "Čačić K Grga",
+        "additional_info": "1912, Pazarište, Perušić. Stupio u NOV 10. 12. 1944, borac 3. bat. Poginuo kod Odre (Sisak) 12. 2. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 25,
+        "pdf_x": 124.7,
+        "pdf_y": 286.6,
+        "pdf_x_end": 281.0,
+        "pdf_y_end": 320.7,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čeić",
@@ -39757,6 +41313,42 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1298",
         "source_page": 1298,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000906",
+        "name": "Šepelj Đure Jovo",
+        "additional_info": "1921, Višnjići, G. Dubrave. Stupio u NOV 10, 1. 1942, komesar čete 4. bat. Poginuo kod Luščana na Baniji 2. 4. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 34,
+        "pdf_x": 96.9,
+        "pdf_y": 274.7,
+        "pdf_x_end": 260.8,
+        "pdf_y_end": 309.1,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000905",
+        "name": "Šepelj Đ Jovo",
+        "additional_info": "1921, Višnjići, G. Dubrave. Stupio u NOV 10. 1. 1942, komesar čete 4. bat. Poginuo kod Luščana na Baniji 2. 4. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 18,
+        "pdf_x": 98.1,
+        "pdf_y": 223.2,
+        "pdf_y_end": 257.3,
+        "pdf_x_end": 255.0,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010399",
+        "name": "Šepelj Jovo",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komesar čete 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 166.0,
+        "pdf_y": 244.0,
+        "pdf_x_end": 214.9,
+        "pdf_y_end": 252.5,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ]
   },
@@ -39871,7 +41463,21 @@
     "pdf_y_end": 68.9,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001338",
-    "pdf_x_end": 346.3
+    "pdf_x_end": 346.3,
+    "other_sources": [
+      {
+        "soldier_id": "0094000908",
+        "name": "Šiljan M Santo",
+        "additional_info": "1925, Vinkuran, Pula. Stupio u NOV 9. 4. 1944, borac 3. bat. Poginuo na Plješivici (Zumberak) 10. 6. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 34,
+        "pdf_x": 96.4,
+        "pdf_y": 313.8,
+        "pdf_x_end": 264.9,
+        "pdf_y_end": 348.7,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šiljevinec",
@@ -42365,37 +43971,6 @@
     "rank": "načelnik štaba"
   },
   {
-    "last_name": "Ajdinović",
-    "middle_name": "",
-    "first_name": "Ljuban",
-    "fathers_name": "",
-    "full_name": "Ajdinović Ljuban",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: operativni oficir brigade »Franjo Ogulinac Seljo«; komandant 3. bataljona brigade »Franjo Ogulinac Seljo«; komandant Žumberačke brigade.",
-    "birth_year": "",
-    "pdf_page": 2,
-    "pdf_y": 459.8,
-    "pdf_x": 371.7,
-    "pdf_y_end": 470.3,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "brigada »Franjo Ogulinac Seljo«",
-    "pdf_x_end": 465.9,
-    "pdf_rects": [
-      [
-        371.7,
-        459.8,
-        465.9,
-        470.3
-      ],
-      [
-        403.0,
-        678.4,
-        494.0,
-        688.9
-      ]
-    ],
-    "soldier_id": "0097010003"
-  },
-  {
     "last_name": "Albert",
     "middle_name": "",
     "first_name": "Željko",
@@ -43209,24 +44784,6 @@
       ]
     ],
     "soldier_id": "0097010046"
-  },
-  {
-    "last_name": "Brdarić",
-    "middle_name": "",
-    "first_name": "Josip",
-    "fathers_name": "",
-    "full_name": "Brdarić Josip",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: zamjenik komesara inžinjerijske čete Žumberačke brigade.",
-    "birth_year": "",
-    "pdf_page": 9,
-    "pdf_y": 559.7,
-    "pdf_x": 371.9,
-    "pdf_y_end": 570.2,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "Žumberačka brigada",
-    "pdf_x_end": 445.4,
-    "soldier_id": "0097010047",
-    "rank": "zamjenik komesara"
   },
   {
     "last_name": "Brdarić",
@@ -44337,37 +45894,6 @@
     "soldier_id": "0097010111"
   },
   {
-    "last_name": "Gojišić",
-    "middle_name": "",
-    "first_name": "Alojz",
-    "fathers_name": "",
-    "full_name": "Gojišić Alojz",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandir izviđačkog voda Karlovačke brigade; delegat izviđačkog voda Karlovačke brigade.",
-    "birth_year": "",
-    "pdf_page": 8,
-    "pdf_y": 365.7,
-    "pdf_x": 364.0,
-    "pdf_y_end": 376.2,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "Karlovačka brigada",
-    "pdf_x_end": 431.6,
-    "pdf_rects": [
-      [
-        364.0,
-        365.7,
-        431.6,
-        376.2
-      ],
-      [
-        364.0,
-        390.7,
-        435.0,
-        401.2
-      ]
-    ],
-    "soldier_id": "0097010112"
-  },
-  {
     "last_name": "Goleš",
     "middle_name": "",
     "first_name": "Marko",
@@ -44591,38 +46117,6 @@
     "soldier_id": "0097010122"
   },
   {
-    "last_name": "Grčić",
-    "middle_name": "",
-    "first_name": "Daniel",
-    "fathers_name": "",
-    "full_name": "Grčić Daniel",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandant 3. bataljona brigade »Franjo Ogulinac Seljo«; komandant 4. bataljona brigade »Franjo Ogulinac Seljo«; zamjenik komandanta 1. bataljona brigade »Franjo Ogulinac Seljo«; zamjenik komandanta 4. bataljona brigade »Franjo Ogulinac Seljo«.",
-    "birth_year": "",
-    "pdf_page": 2,
-    "pdf_y": 703.2,
-    "pdf_x": 409.2,
-    "pdf_y_end": 713.7,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "brigada »Franjo Ogulinac Seljo«",
-    "pdf_x_end": 474.5,
-    "pdf_rects": [
-      [
-        409.2,
-        703.2,
-        474.5,
-        713.7
-      ],
-      [
-        478.2,
-        728.1,
-        549.0,
-        738.6
-      ]
-    ],
-    "soldier_id": "0097010123",
-    "rank": "zamjenik komandanta"
-  },
-  {
     "last_name": "Guštin",
     "middle_name": "",
     "first_name": "Lovro",
@@ -44673,24 +46167,6 @@
     "pdf_x_end": 430.7,
     "soldier_id": "0097010126",
     "rank": "zamjenik komandira"
-  },
-  {
-    "last_name": "Herceg",
-    "middle_name": "",
-    "first_name": "Vilim",
-    "fathers_name": "",
-    "full_name": "Herceg Vilim",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: član divizijskog komiteta KPJ 34. divizije; zamjenik komesara Žumberačke brigade; zamjenik komesara 1. Žumberačko-pokupskog NOP odreda.",
-    "birth_year": "",
-    "pdf_page": 1,
-    "pdf_y": 557.2,
-    "pdf_x": 368.3,
-    "pdf_y_end": 567.7,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "34. divizija",
-    "pdf_x_end": 443.1,
-    "soldier_id": "0097010127",
-    "rank": "zamjenik komesara"
   },
   {
     "last_name": "Heđi",
@@ -45144,24 +46620,6 @@
     "pdf_x_end": 475.2,
     "soldier_id": "0097010153",
     "rank": "komandant bataljona"
-  },
-  {
-    "last_name": "Karaš",
-    "middle_name": "",
-    "first_name": "Milutin",
-    "fathers_name": "",
-    "full_name": "Karaš Milutin",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: načelnik štaba 34. divizije.",
-    "birth_year": "",
-    "pdf_page": 1,
-    "pdf_y": 437.0,
-    "pdf_x": 369.0,
-    "pdf_y_end": 447.5,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "34. divizija",
-    "pdf_x_end": 443.7,
-    "soldier_id": "0097010154",
-    "rank": "načelnik štaba"
   },
   {
     "last_name": "Kasun",
@@ -45661,24 +47119,6 @@
     "unit_detail": "2. Karlovački NOP odred",
     "pdf_x_end": 449.7,
     "soldier_id": "0097010181"
-  },
-  {
-    "last_name": "Kosanović",
-    "middle_name": "",
-    "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Kosanović Milan",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: načelnik saniteta 34. divizije.",
-    "birth_year": "",
-    "pdf_page": 1,
-    "pdf_y": 814.0,
-    "pdf_x": 444.2,
-    "pdf_y_end": 824.5,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "34. divizija",
-    "pdf_x_end": 536.3,
-    "soldier_id": "0097010182",
-    "rank": "načelnik saniteta"
   },
   {
     "last_name": "Kosmanić",
@@ -49319,24 +50759,6 @@
     "rank": "zamjenik komandanta"
   },
   {
-    "last_name": "Tepšić",
-    "middle_name": "",
-    "first_name": "Vaso",
-    "fathers_name": "",
-    "full_name": "Tepšić Vaso",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: zamjenik komandanta 1. bataljona brigade »Franjo Ogulinac Seljo«.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 401.0,
-    "pdf_x": 402.6,
-    "pdf_y_end": 411.5,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "brigada »Franjo Ogulinac Seljo«",
-    "pdf_x_end": 464.4,
-    "soldier_id": "0097010379",
-    "rank": "zamjenik komandanta"
-  },
-  {
     "last_name": "Tesla",
     "middle_name": "",
     "first_name": "Savo",
@@ -49559,23 +50981,6 @@
     "rank": "načelnik štaba brigade"
   },
   {
-    "last_name": "Trkulja",
-    "middle_name": "",
-    "first_name": "Svetozar",
-    "fathers_name": "",
-    "full_name": "Trkulja Svetozar",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandant 1. bataljona Žumberačke brigade.",
-    "birth_year": "",
-    "pdf_page": 8,
-    "pdf_y": 710.9,
-    "pdf_x": 397.4,
-    "pdf_y_end": 721.4,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "Žumberačka brigada",
-    "pdf_x_end": 486.0,
-    "soldier_id": "0097010391"
-  },
-  {
     "last_name": "Trnski",
     "middle_name": "",
     "first_name": "Ivan",
@@ -49744,37 +51149,6 @@
     "soldier_id": "0097010399"
   },
   {
-    "last_name": "Veseljko",
-    "middle_name": "",
-    "first_name": "Julije",
-    "fathers_name": "",
-    "full_name": "Veseljko Julije",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: operativni oficir brigade »Franjo Ogulinac Seljo«; komandant 2. bataljona brigade »Franjo Ogulinac Seljo«; komandant vojne škole 34. divizije.",
-    "birth_year": "",
-    "pdf_page": 2,
-    "pdf_y": 472.5,
-    "pdf_x": 371.2,
-    "pdf_y_end": 483.0,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "brigada »Franjo Ogulinac Seljo«",
-    "pdf_x_end": 451.4,
-    "pdf_rects": [
-      [
-        371.2,
-        472.5,
-        451.4,
-        483.0
-      ],
-      [
-        403.0,
-        641.0,
-        482.9,
-        651.5
-      ]
-    ],
-    "soldier_id": "0097010400"
-  },
-  {
     "last_name": "Višnjić",
     "middle_name": "",
     "first_name": "Todor",
@@ -49824,24 +51198,6 @@
     "unit_detail": "brigada »Franjo Ogulinac Seljo«",
     "pdf_x_end": 522.8,
     "soldier_id": "0097010403",
-    "rank": "zamjenik komesara"
-  },
-  {
-    "last_name": "Vodir",
-    "middle_name": "",
-    "first_name": "Stjepan",
-    "fathers_name": "",
-    "full_name": "Vodir Stjepan",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: zamjenik komesara 1. bataljona Žumberačke brigade.",
-    "birth_year": "",
-    "pdf_page": 8,
-    "pdf_y": 858.2,
-    "pdf_x": 397.1,
-    "pdf_y_end": 868.7,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "Žumberačka brigada",
-    "pdf_x_end": 467.1,
-    "soldier_id": "0097010404",
     "rank": "zamjenik komesara"
   },
   {

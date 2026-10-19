@@ -303,8 +303,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1819",
         "source_page": 1819,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0025000010",
+        "name": "Alihodžić Omerov Iljaz",
+        "additional_info": "borac, 1923. Lukavac. U Odredu od oktobra 1943, poginuo oktobra 1944, Rašljani, Graćanica.",
+        "pdf_file": "tuzlanski-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 252.9,
+        "pdf_y": 469.9,
+        "pdf_x_end": 422.4,
+        "pdf_y_end": 511.0,
+        "unit_file": "tuzlanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "last_name": "Alihodzić",
@@ -5133,7 +5146,24 @@
     "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "25. decembra 1943",
-    "death_place": "na Romanovcu — Vareš"
+    "death_place": "na Romanovcu — Vareš",
+    "ethnicity": "Srbin",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0052000536",
+        "name": "Jakšić Vukana Vojin",
+        "additional_info": "rođen 1923. godine u Tuzli, SRBiH, Srbin, rad nik. U Brigadu stupio oktobra 1943. godine, borac. Poginuo kod Vareša, novembra 1943. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 127.7,
+        "pdf_y": 248.4,
+        "pdf_x_end": 452.2,
+        "pdf_y_end": 278.9,
+        "pdf_x_left": 98.2,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janjić",
@@ -5312,7 +5342,17 @@
     "soldier_id": "0029000222",
     "pdf_x_end": 437.0,
     "pdf_x_left": 105.4,
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "9025032270",
+        "name": "Jelić (Radoje) Živorad",
+        "additional_info": "rođen 1915, Gostinica (Titovo Užice). Srbin, poginuo 1945. u NOBu, Romanija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1218",
+        "source_page": 1218,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Jeremić",
@@ -11089,7 +11129,24 @@
     "birth_place": "Donja Bukovica, Bijeljina",
     "death_type": "poginuo",
     "death_date": "novembra 1944",
-    "death_place": "Zvornik"
+    "death_place": "Zvornik",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0049010747",
+        "name": "Micić Mike Vaskrsije",
+        "additional_info": "zvani Vaso; 1922, Bukovica, Bijeljina, SRBiH, Srbin, zemljoradnik, u NOB i brigadi od 1943, borac. Poginuo 8. 8.1944.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 37,
+        "pdf_x": 39.6,
+        "pdf_y": 101.6,
+        "pdf_x_end": 397.0,
+        "pdf_y_end": 118.5,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mićić",
@@ -13690,7 +13747,25 @@
     "birth_place": "Vršani, Bijeljina",
     "death_type": "poginuo",
     "death_date": "juna 1944",
-    "death_place": "Majevica"
+    "death_place": "Majevica",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "desetar",
+    "other_sources": [
+      {
+        "soldier_id": "0052001170",
+        "name": "Petrović Bogdana Milan",
+        "additional_info": "rođen 1921. godine u Vršanima, Bijeljina, SRBiH, Srbin, zemljoradnik. U NOB-u stupio novembra 1943. godine, a u Brigadu marta 1944. godine, desetar. Član SKOJ-a od maja 1944. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 82,
+        "pdf_x": 150.8,
+        "pdf_y": 210.7,
+        "pdf_x_end": 475.3,
+        "pdf_y_end": 240.3,
+        "pdf_x_left": 120.6,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petrović",
@@ -15003,7 +15078,27 @@
     "soldier_id": "0029000634",
     "pdf_x_end": 441.5,
     "pdf_x_left": 109.4,
-    "birth_place": "Janja, Bijeljina"
+    "birth_place": "Janja, Bijeljina",
+    "ethnicity": "Musliman",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "na Han-Pijesku",
+    "other_sources": [
+      {
+        "soldier_id": "0049011325",
+        "name": "Redžić Smaje Meho",
+        "additional_info": "1918, Janja, Bijeljina, SRBiH, Musliman, zemljoradnik, u brigadi od avgusta 1943, borac. Poginuo 1944. na Han-Pijesku.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 52,
+        "pdf_x": 7.7,
+        "pdf_y": 313.5,
+        "pdf_x_end": 364.9,
+        "pdf_y_end": 331.1,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rikić",
@@ -17452,7 +17547,24 @@
     "birth_place": "Modranu, Bijeljina",
     "death_type": "poginuo",
     "death_date": "aprila 1944",
-    "death_place": "Majevica"
+    "death_place": "Majevica",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0049011546",
+        "name": "Stevanović Vase Petar",
+        "additional_info": "1924, Bijeljina, SRBiH, Srbin, zemljoradnik, u brigadi od aprila 1943, borac. Umro na Majevici.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 54,
+        "pdf_x": 4.8,
+        "pdf_y": 453.3,
+        "pdf_x_end": 361.4,
+        "pdf_y_end": 470.2,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stevanović",

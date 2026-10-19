@@ -2970,7 +2970,7 @@
     "fathers_name": "Andrija",
     "full_name": "Bogdan Andrije Milan",
     "additional_info": "borac 2. bataljona, rođen u Žrnovnici, Split, zemljoradnik, Hrvat, u NOB od 1942, član KPJ, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943. godine.",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 7,
     "pdf_y": 103.0,
     "pdf_x": 225.1,
@@ -2985,7 +2985,22 @@
     "death_date": "13. juna 1943",
     "death_place": "Sutjeska, Tjentište",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0148000344",
+        "name": "Bogdan Andrije Milan",
+        "additional_info": "zvani Tarin; borac Mosorskog bataljona. Rođen 1919, Zrnovnica, Split, zemljoradnik, Hrvat. Stupio u drugoj polovini 1942. u Leteću mosorsku četu, a zatim i u Mosorski bataljon. Poginuo 13. lipnja 1943. na Zelengori, kao borac 2. bataljona 5. crnogorske brigade.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 22,
+        "pdf_x": 239.2,
+        "pdf_y": 452.0,
+        "pdf_x_end": 579.7,
+        "pdf_y_end": 486.2,
+        "pdf_x_left": 222.4,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogićević",
@@ -3600,7 +3615,21 @@
     "death_date": "13. juna 1943",
     "death_place": "Sutjeska, Tjentište",
     "rank": "omladinski rukovodilac",
-    "unit_detail": "1. četa, 4. bataljon"
+    "unit_detail": "1. četa, 4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0001001001",
+        "name": "Borić Sime Vlado",
+        "additional_info": "1924, Bučovača, Kupres, BiH, Srbin, zemljoradnik, u NOB od 1942, u brigadi od 1942, borac, poginuo 1943, na Zelengori",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 85,
+        "pdf_x": 49.9,
+        "pdf_y": 116.3,
+        "pdf_x_end": 356.9,
+        "pdf_y_end": 148.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Borović",
@@ -10790,8 +10819,21 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=322",
         "source_page": 318,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0049010354",
+        "name": "Janković Mila Veljko",
+        "additional_info": "1913, Podgorica, Titograd, SRCG, Crnogorac, stolarski radnik, u NOB od 1941, nosilac »Spomenice 1941«, u brigadi od juna 1943, komandant brigade.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 18,
+        "pdf_x": 6.7,
+        "pdf_y": 513.9,
+        "pdf_x_end": 363.8,
+        "pdf_y_end": 539.9,
+        "unit_file": "15-majevicka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "komandant brigade"
   },
   {
     "last_name": "Janotić",
@@ -19906,8 +19948,45 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=511",
         "source_page": 507,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0010001024",
+        "name": "Martinović Vasa Nikola",
+        "additional_info": "zvani Niko; rođen 1919, Bajice, Cetinje, učitelj-rezervni oficir JV, Crnogorac, u NOB od 13. 7. 1941, u Brigadi od avgusta do oktobra 1943, načelnik Štaba brigade, poginuo krajem 1943. u Golubiću, Dalmacija kao komandant divizije, NARODNI HEROJ",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 23.6,
+        "pdf_y": 358.9,
+        "pdf_x_end": 183.9,
+        "pdf_y_end": 435.9,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040010882",
+        "name": "Martinović Vasov Nikola",
+        "additional_info": "rođen 1915. u Bajicama (Cetinje), oficir bivše jugoslovenske vojske, poginuo kao komandant 26. dalmatinske divizije, aprila 1944. na Visu, narodni heroj.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 78,
+        "pdf_x": 62.4,
+        "pdf_y": 478.8,
+        "pdf_x_end": 368.6,
+        "pdf_y_end": 504.1,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020448",
+        "name": "Martinović Vasa Nikola",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: k-ndir čete, Bajice, Cetinje 111888999777..., član KPJ, Poginuo, 31. 12. 1943, Korčula",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 21,
+        "pdf_x": 141.4,
+        "pdf_y": 447.8,
+        "pdf_x_end": 519.7,
+        "pdf_y_end": 463.2,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Golubić, Dalmacija"
   },
   {
     "last_name": "Martinović",
@@ -23345,7 +23424,21 @@
     "death_date": "juna 1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0007003592",
+        "name": "Monti Mile Jovo",
+        "additional_info": "1914. Knin. Srbin, radnik. U NOV od 1942. Poginuo lipnja 1943. na Sutjesci.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 121,
+        "pdf_x": 137.8,
+        "pdf_y": 508.8,
+        "pdf_x_end": 463.5,
+        "pdf_y_end": 524.7,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mračević",
@@ -24693,7 +24786,21 @@
     "ethnicity": "Hrvat",
     "occupation": "đak",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon"
+    "unit_detail": "3. četa, 4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0007003850",
+        "name": "Ostojić Ivana Jure",
+        "additional_info": "26. 6. 1925. Zapadna Plina, Ploče. Hrvat, đak. Član SKOJ-a od rujna 1941, a KPJ od rujna 1943. U NOV od 5. 9. 1942. u Biokovskom PO, a zatim u 5. crnogorskoj i 10. hercegovačkoj brigadi. U 2. dalm. brigadi od 13. 3. 1944. komandir čete.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 130,
+        "pdf_x": 117.2,
+        "pdf_y": 195.8,
+        "pdf_x_end": 441.6,
+        "pdf_y_end": 227.2,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ostojić",
@@ -26310,6 +26417,18 @@
         "pdf_x_end": 495.4,
         "pdf_y_end": 671.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "0106000146",
+        "name": "Perović Vasa Milosav",
+        "additional_info": "rođen 1919. godine u Gornjim Trepčima — Nikšić, student, borac 2. čete 3. bataljona, poginuo 8. aprila 1944. na Dobrskoj ploči — Riječka nahija.",
+        "pdf_file": "6-crnogorska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 130.2,
+        "pdf_y": 363.8,
+        "pdf_x_end": 461.8,
+        "pdf_y_end": 393.9,
+        "unit_file": "6-crnogorska-soldiers.json"
       }
     ]
   },
@@ -27220,6 +27339,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=214",
         "source_page": 214,
         "ref_book": "zrtve-rata-1964-crg"
+      },
+      {
+        "soldier_id": "9035014623",
+        "name": "Popović Mijajlov Branko",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1924; mjesto rođenja Blizna Piperi; godina smrti 1943; mjesto pogibije Sutjeska",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 356,
+        "pdf_x": 68.9,
+        "pdf_y": 515.0,
+        "pdf_x_end": 464.8,
+        "pdf_y_end": 525.2,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       },
       {
         "soldier_id": "0001014138",
@@ -29101,7 +29232,22 @@
     "birth_place": "Pažići, Danilovgrad",
     "ethnicity": "Crnogorac",
     "occupation": "student",
-    "rank": "omladinski rukovodilac brigade"
+    "rank": "omladinski rukovodilac brigade",
+    "other_sources": [
+      {
+        "soldier_id": "0018001440",
+        "name": "Radulović Boška Milorad",
+        "additional_info": "rođen 1919, Crnotorac, student stupio u NOVJ 1941, član politodjela, komesar brigade i divizije.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 104,
+        "pdf_x": 108.4,
+        "pdf_y": 414.0,
+        "pdf_x_end": 368.1,
+        "pdf_y_end": 441.0,
+        "pdf_x_left": 87.2,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radulović",
@@ -30513,7 +30659,17 @@
     "death_type": "poginuo",
     "death_date": "13. juna 1943",
     "death_place": "Sutjeska, Tjentište",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "other_sources": [
+      {
+        "soldier_id": "0041010372",
+        "name": "Ristić Riste Mira",
+        "additional_info": "Rođena 1922. godine u selu Glavica, opština Livno, domaćica; Srpkinja. Pod uticajem KPJ i napredne omladine opredijelila se za NOP i aktivno se borila za ostvarenje njegovih programskih ciljeva. Najprije se kao borac protiv okupatora svrstava u Livanjski NOP odred „Vojin Zirojević\", gdje je i primljena za člana SKOJ—a. Borac 5. proleterske crnogorske brigade postala je novembra 1942. godine, i to u 3. bataljonu, a kasnije je bolničarka u prištapskim jedinicama brigade. Učestvovala je u mnogim borbama na teritoriji Bosne, Hercegovine i Crne Gore. Učesnik je velikih bitaka na Neretvi i Sutjeski. U borbama je ispoljavala primjernu hrabrost, izdržljivost i požrtvovanje. Te osolbine su iz borbe u borbu dolazile sve više do izražaja, a posebno pri zbrinjavanju ranjenika. Zbog hrabrosti i pozitivnih karakternih osoibina bila je omiljena u kolektivu svoje jedinice. Hra'bro je poginula u ·b·itki na Sutjeski, 13. juna 1943. godine. Tako se ugasio još jedan mladi život u bonbi za slobodu naroda. Njeni posmrtni ostaci počivaju u zajedničkoj Spomen—kosturnici sa hiljadama junaka NOR-a .palih ina Sutjeski.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=226",
+        "source_page": 222
+      }
+    ],
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Rizvanović-Grcić",
@@ -33661,7 +33817,21 @@
     "death_date": "1944",
     "death_place": "Bogetići, Nikšić",
     "rank": "komandir voda",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0106000186",
+        "name": "Tomić Radoja Milija",
+        "additional_info": "rođen 1916. u Župi — Nikšić, komandir voda u 3. četi 3. bataljona, poginuo 11. marta 1944. na Bogetićima — Nikšić.",
+        "pdf_file": "6-crnogorska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 142.4,
+        "pdf_y": 607.8,
+        "pdf_x_end": 473.9,
+        "pdf_y_end": 637.4,
+        "unit_file": "6-crnogorska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tomković",
@@ -37859,6 +38029,18 @@
         "pdf_x_end": 354.6,
         "pdf_y_end": 446.2,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001502585",
+        "name": "Zelen Shanojka",
+        "additional_info": "u bataljon stupio 1942. godine; rođena 1926, Cibare, Duvno, SRBiH, u NOB od 1942. poginula 4. januara 1945. u selu Nijemcima (Srem) kao četna bolničarka.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 12,
+        "pdf_x": 99.0,
+        "pdf_y": 460.8,
+        "pdf_x_end": 455.7,
+        "pdf_y_end": 477.2,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
   },
@@ -38904,7 +39086,21 @@
     "ethnicity": "Crnogorac",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0007001453",
+        "name": "Đorojević Luke Miladin",
+        "additional_info": "12. 8. 1923. Gornje Polje, Nikšić. Crnogorac, zemljoradnik. Član SKOJ-a od 1942. KPJ od 1944. U NOV od 1941. u Zetskom PO i 5. crnogorskoj brigadi. U 2. dalm. od ožujka 1944. Nosilac »Partizanske spomenice 1941.«",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 125.5,
+        "pdf_y": 277.9,
+        "pdf_x_end": 449.7,
+        "pdf_y_end": 302.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Đorojević",
@@ -39000,6 +39196,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1317",
         "source_page": 1317,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0001002689",
+        "name": "Đugum Sulje Sulejman",
+        "additional_info": "1925, Oplećani, Duvno, BiH, Musliman, zemljoradnik, u NOB od maja 1942, u brigadi od avgusta 1942, borac, poginuo 00. 03. 1945, Šarengrad, Vukovar",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 213,
+        "pdf_x": 45.8,
+        "pdf_y": 135.2,
+        "pdf_x_end": 353.1,
+        "pdf_y_end": 165.8,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
   },
@@ -39882,7 +40090,16 @@
     "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0041010506",
+        "name": "Đurović Pavića Rumica",
+        "additional_info": "rođena Lazarević; Rođena 1901. godine u selu Rogami, opština Titograd; domaćica; Crnogorka. U trinaestojulskom ustanku 1941. godine aktivno učestvuje sa mužem Burom i sinom Petrom. Pošto je njihova kuća bila pod neposrednom kontrolom okupatora, napuštaju imanje i pristupaju Rogamsko-đurkovačkoj partizanskoj četi, gdje Rumica ostaje sve do povlačenja partizanskih snaga za Bosnu. Na dan formiranja 5. proleterske crnogorske brigade bila je borac u 3. četi 4. bataljona (u ekonomatu čete). Kao starija i iskusnija žena, uz to sposobna i požrtvovana, organizovala je, i u najtežim uslovima, donošenja hrane borcima na položaju. Veoma hrabra, a nadasve skromna, uporna i dokraja odana borbi, neobično je cijenjena i voljena u jedinicama gdje se nalazila. Sa svojom jedinicom prolazi kroz mnoge borbe (Prozor, Neretva, Nevesinje, Javorak i Sutjeska). U borbama kod Nevesinja gine joj suprug Euro; njegovu smrt stoički podnosi, i sa borcima svoje čete dijeli i tugu i radost, uvijek tiha i nenametljiva. Poslije bitke na Sutjesci, sa grupom partizana vraća se u Crnu Goru i postaje borac Zetskog NOP odreda. Formiranjem brigade KNOJ-a prešla je u nju i nastavila borbu sve do oslobođenja, kada je demobilisana. Ratni je vojni invalid. Nosilac je „Partizanske spomenice 1941.\" Odlikovana je Ordenom za hrabrost, Ordenom zasluga za narod, Ordenom bratstva i jedinstva i Medaljom zasluga za narod.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=94",
+        "source_page": 90
+      }
+    ]
   },
   {
     "last_name": "Đurović",
@@ -41890,7 +42107,22 @@
     "death_type": "poginuo",
     "death_date": "aprila 1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_place": "na Bojnoj njivi (Mojkovac)",
+    "other_sources": [
+      {
+        "soldier_id": "0038000047",
+        "name": "Bešić Milije Grana",
+        "additional_info": "rođena 1907. u Gostilju, sanitet čete, u brigadi od februara 1944, poginula 23. aprila 1944. na Bojnoj njivi (Mojkovac).",
+        "pdf_file": "8-crnogorska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 138.3,
+        "pdf_y": 296.8,
+        "pdf_x_end": 494.4,
+        "pdf_y_end": 313.6,
+        "unit_file": "8-crnogorska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bilanović",
@@ -42952,7 +43184,33 @@
     "occupation": "domaćica",
     "death_type": "umro",
     "death_date": "1948",
-    "rank": "bolničarka, referent saniteta bataljona, stariji vodnik"
+    "rank": "bolničarka, referent saniteta bataljona, stariji vodnik",
+    "other_sources": [
+      {
+        "soldier_id": "0007001782",
+        "name": "Grgičević Ante Bonina",
+        "additional_info": "1918. Vrisnik, Hvar. Hrvatica, domaćica. Član SKOJ-a od 1942. KPJ 1944. U NOV od 1942. u Bikovskom PO i 3. dalm. brigadi. U 2. dalm. od 9. 6. 1943.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 61,
+        "pdf_x": 134.2,
+        "pdf_y": 203.6,
+        "pdf_x_end": 458.4,
+        "pdf_y_end": 227.4,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0046000342",
+        "name": "Grgičević Ante Bonina",
+        "additional_info": "bolničarka, rođena 1918, Vrisnik, Hvar, domaćica, Hrvatica, u NOB od 1942, član KPJ od 1943. Umrla 1948.",
+        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 221.8,
+        "pdf_y": 170.9,
+        "pdf_x_end": 392.0,
+        "pdf_y_end": 211.8,
+        "unit_file": "3-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grčić",
@@ -43735,8 +43993,35 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=53",
         "source_page": 53,
         "ref_book": "zrtve-rata-1964-crg"
+      },
+      {
+        "soldier_id": "0028000152",
+        "name": "Kovačević Miloša Ilinka",
+        "additional_info": "1920, Dolovi, Danilovgrad, 1. bataljon, poginuo 14. IX 1944, u Zatonu, Bijelo Polje",
+        "pdf_file": "7-crnogorska-omladinska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 100.2,
+        "pdf_y": 355.6,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 381.8,
+        "pdf_x_left": 74.4,
+        "unit_file": "7-crnogorska-soldiers.json"
+      },
+      {
+        "soldier_id": "0028010164",
+        "name": "Kovačević Miloševa Ilinka",
+        "additional_info": "rođ. 1920. u Dolovima, Danilovgrad, 1. bataljon, poginula, 14. septembra 1944. u Zatonu, Bijelo Polje.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 221.6,
+        "pdf_y": 542.2,
+        "pdf_y_end": 573.8,
+        "pdf_x_end": 577.8,
+        "unit_file": "7-crnogorska-soldiers.json"
       }
-    ]
+    ],
+    "death_date": "14. IX 1944",
+    "death_place": "Zaton, Bijelo Polje"
   },
   {
     "last_name": "Kovačević",
@@ -44848,7 +45133,34 @@
     "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "rank": "referent saniteta",
-    "unit_detail": "2. četa, 2. bataljon"
+    "unit_detail": "2. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0001007283",
+        "name": "Milatović Blaže Zlatija",
+        "additional_info": "1920, Crnci, Titograd, Crna Gora, Crnogorska, zemljoradnica, član KPJ od 1942, u NOB od jula 1941, u brigadi od decembra 1941, II bataljon, bolničarka",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 249,
+        "pdf_x": 46.5,
+        "pdf_y": 60.5,
+        "pdf_x_end": 353.9,
+        "pdf_y_end": 92.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200554",
+        "name": "Milatović Zlatija",
+        "additional_info": "bolničarka, rođena 1920. u Crncima, Titograd, SRCG, domaćica.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 13,
+        "pdf_x": 272.6,
+        "pdf_y": 336.7,
+        "pdf_x_end": 580.9,
+        "pdf_y_end": 357.8,
+        "pdf_x_left": 248.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milačić",
@@ -45750,8 +46062,23 @@
         "pdf_x_end": 506.0,
         "pdf_y_end": 716.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "0115000104",
+        "name": "Perović Radosava Cvijeta",
+        "additional_info": "borac prištapskih jedinica, rođena 1919, Boronjina, Danilovgrad, domaćica, Crnogorka, u NOB od 1941, član KPJ, poginula nesretnim slučajem 1944. godine kod Nikšića kao referent saniteta 3. bataljona 5. proleterske crnogorske brigade.",
+        "pdf_file": "borci-sutjeske-3-udarna-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 227.2,
+        "pdf_y": 473.1,
+        "pdf_x_end": 397.7,
+        "pdf_y_end": 557.9,
+        "unit_file": "3-udarna-divizija-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "domaćica",
+    "death_type": "poginuo",
+    "death_date": "1944"
   },
   {
     "last_name": "Perović",
@@ -46727,25 +47054,6 @@
     "birth_place": "Fundina",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica"
-  },
-  {
-    "last_name": "Ristić",
-    "middle_name": "Riste",
-    "first_name": "Mira",
-    "fathers_name": "Risto",
-    "full_name": "Ristić Riste Mira",
-    "additional_info": "Rođena 1922. godine u selu Glavica, opština Livno, domaćica; Srpkinja. Pod uticajem KPJ i napredne omladine opredijelila se za NOP i aktivno se borila za ostvarenje njegovih programskih ciljeva. Najprije se kao borac protiv okupatora svrstava u Livanjski NOP odred „Vojin Zirojević\", gdje je i primljena za člana SKOJ—a. Borac 5. proleterske crnogorske brigade postala je novembra 1942. godine, i to u 3. bataljonu, a kasnije je bolničarka u prištapskim jedinicama brigade. Učestvovala je u mnogim borbama na teritoriji Bosne, Hercegovine i Crne Gore. Učesnik je velikih bitaka na Neretvi i Sutjeski. U borbama je ispoljavala primjernu hrabrost, izdržljivost i požrtvovanje. Te osolbine su iz borbe u borbu dolazile sve više do izražaja, a posebno pri zbrinjavanju ranjenika. Zbog hrabrosti i pozitivnih karakternih osoibina bila je omiljena u kolektivu svoje jedinice. Hra'bro je poginula u ·b·itki na Sutjeski, 13. juna 1943. godine. Tako se ugasio još jedan mladi život u bonbi za slobodu naroda. Njeni posmrtni ostaci počivaju u zajedničkoj Spomen—kosturnici sa hiljadama junaka NOR-a .palih ina Sutjeski.",
-    "birth_year": "1922",
-    "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=226",
-    "source_page": 222,
-    "soldier_id": "0041010372",
-    "birth_place": "Glavica",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "death_type": "poginuo",
-    "death_date": "13. juna 1943",
-    "rank": "bolničarka",
-    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Romano",
@@ -48622,23 +48930,6 @@
     "occupation": "domaćica",
     "rank": "referent saniteta",
     "unit_detail": "2. bataljon"
-  },
-  {
-    "last_name": "Đurović",
-    "middle_name": "Pavića",
-    "first_name": "Rumica",
-    "fathers_name": "Pavića",
-    "full_name": "Đurović Pavića Rumica",
-    "additional_info": "rođena Lazarević; Rođena 1901. godine u selu Rogami, opština Titograd; domaćica; Crnogorka. U trinaestojulskom ustanku 1941. godine aktivno učestvuje sa mužem Burom i sinom Petrom. Pošto je njihova kuća bila pod neposrednom kontrolom okupatora, napuštaju imanje i pristupaju Rogamsko-đurkovačkoj partizanskoj četi, gdje Rumica ostaje sve do povlačenja partizanskih snaga za Bosnu. Na dan formiranja 5. proleterske crnogorske brigade bila je borac u 3. četi 4. bataljona (u ekonomatu čete). Kao starija i iskusnija žena, uz to sposobna i požrtvovana, organizovala je, i u najtežim uslovima, donošenja hrane borcima na položaju. Veoma hrabra, a nadasve skromna, uporna i dokraja odana borbi, neobično je cijenjena i voljena u jedinicama gdje se nalazila. Sa svojom jedinicom prolazi kroz mnoge borbe (Prozor, Neretva, Nevesinje, Javorak i Sutjeska). U borbama kod Nevesinja gine joj suprug Euro; njegovu smrt stoički podnosi, i sa borcima svoje čete dijeli i tugu i radost, uvijek tiha i nenametljiva. Poslije bitke na Sutjesci, sa grupom partizana vraća se u Crnu Goru i postaje borac Zetskog NOP odreda. Formiranjem brigade KNOJ-a prešla je u nju i nastavila borbu sve do oslobođenja, kada je demobilisana. Ratni je vojni invalid. Nosilac je „Partizanske spomenice 1941.\" Odlikovana je Ordenom za hrabrost, Ordenom zasluga za narod, Ordenom bratstva i jedinstva i Medaljom zasluga za narod.",
-    "birth_year": "1901",
-    "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=94",
-    "source_page": 90,
-    "soldier_id": "0041010506",
-    "birth_place": "Rogami",
-    "ethnicity": "Crnogorka",
-    "occupation": "domaćica",
-    "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "last_name": "Đurović",

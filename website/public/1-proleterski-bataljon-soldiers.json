@@ -10,7 +10,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=286",
     "source_page": 262,
     "soldier_id": "0120000001",
-    "birth_place": "Zlarin, Šibenik"
+    "birth_place": "Zlarin, Šibenik",
+    "other_sources": [
+      {
+        "soldier_id": "0006000030",
+        "name": "Aleksa Tomo Ivo",
+        "additional_info": "1920. Zlarin, Šibenik.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 4,
+        "pdf_x": 117.5,
+        "pdf_y": 589.2,
+        "pdf_x_end": 270.2,
+        "pdf_y_end": 597.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ambrožić",
@@ -317,6 +331,18 @@
         "pdf_x_end": 302.5,
         "pdf_y_end": 559.0,
         "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0006000263",
+        "name": "Badovinac Nikole Nikola",
+        "additional_info": "1923. Badovinci, Ozalj.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 7,
+        "pdf_x": 131.1,
+        "pdf_y": 629.7,
+        "pdf_x_end": 300.0,
+        "pdf_y_end": 638.2,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -525,7 +551,21 @@
     "birth_place": "Grižani, Crikvenica",
     "death_type": "poginuo",
     "death_date": "2. 1. 1943",
-    "death_place": "Krašić"
+    "death_place": "Krašić",
+    "other_sources": [
+      {
+        "soldier_id": "0006000339",
+        "name": "Barac Grižane Mihovil",
+        "additional_info": "1922. Grižane, Crikvenica. Poginuo 2.1. 1943. na Krašiću, sahranjen u Sošicama na Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 8,
+        "pdf_x": 290.6,
+        "pdf_y": 110.9,
+        "pdf_x_end": 462.2,
+        "pdf_y_end": 135.1,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Barac",
@@ -1182,7 +1222,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=287",
     "source_page": 263,
     "soldier_id": "0120000046",
-    "birth_place": "Bović, Vrginmost"
+    "birth_place": "Bović, Vrginmost",
+    "other_sources": [
+      {
+        "soldier_id": "0006000636",
+        "name": "Borota Đure Dragan",
+        "additional_info": "1917. Bović, Vrginmost.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 12,
+        "pdf_x": 105.4,
+        "pdf_y": 223.9,
+        "pdf_x_end": 276.6,
+        "pdf_y_end": 241.4,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Božac",
@@ -1228,7 +1282,21 @@
     "birth_place": "Perna, Vrginmost",
     "death_type": "poginuo",
     "death_date": "27. 3. 1944",
-    "death_place": "kod Nebojne"
+    "death_place": "kod Nebojne",
+    "other_sources": [
+      {
+        "soldier_id": "0006007983",
+        "name": "Božić Pavla Savo",
+        "additional_info": "1925. Perna, Vrginmost. Poginuo 27. III. 1944. kod Nabojne u Bosni. Sahranjen na položaju.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 12,
+        "pdf_x": 289.2,
+        "pdf_y": 324.3,
+        "pdf_x_end": 461.4,
+        "pdf_y_end": 348.4,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brakus",
@@ -2199,8 +2267,33 @@
         "pdf_x_end": 488.9,
         "pdf_y_end": 443.1,
         "ref_book": "hak-10-korenica-udbina"
+      },
+      {
+        "soldier_id": "0003000284",
+        "name": "Dozet Sime Nikola",
+        "additional_info": "rođen 1924. u s. Pećani - T. Korenica. Komandir voda u 4. bataljonu. Poginuo u Ličkom Osiku kod Gospića 1943. godine. Bosni 1944. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 11,
+        "pdf_x": 119.8,
+        "pdf_y": 488.2,
+        "pdf_x_end": 478.5,
+        "pdf_y_end": 505.6,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003020432",
+        "name": "Dozet Sime Nikola",
+        "additional_info": "rođen 1924. u s. Pećani - T. Korenica. U NOB-1942. Komandir voda u 4. bataljonu. Poginuo u Ličkom Osiku kod Gospića 1943. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 26,
+        "pdf_x": 48.7,
+        "pdf_y": 173.6,
+        "pdf_x_end": 209.6,
+        "pdf_y_end": 222.7,
+        "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "komandir voda"
   },
   {
     "last_name": "Drakulić",
@@ -2267,7 +2360,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=289",
     "source_page": 265,
     "soldier_id": "0120000093",
-    "birth_place": "Brod na Kupi, Delnice"
+    "birth_place": "Brod na Kupi, Delnice",
+    "other_sources": [
+      {
+        "soldier_id": "0006001355",
+        "name": "Dvoržak Franje Franjo",
+        "additional_info": "1915. Brod na Kupi, Delnice.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 22,
+        "pdf_x": 114.6,
+        "pdf_y": 250.0,
+        "pdf_x_end": 285.6,
+        "pdf_y_end": 266.3,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Felker",
@@ -2659,7 +2766,21 @@
     "birth_place": "Gostovo Polje, Otočac",
     "death_type": "poginuo",
     "death_date": "24. 3. 1943",
-    "death_place": "na Plješevici u Žumberku"
+    "death_place": "na Plješevici u Žumberku",
+    "other_sources": [
+      {
+        "soldier_id": "0006001849",
+        "name": "Gostović Srbin Mile",
+        "additional_info": "1908. Gostovo Polje, Otočac. Poginuo 24. III. 1943. na Plešivici u Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 28,
+        "pdf_x": 116.0,
+        "pdf_y": 391.0,
+        "pdf_x_end": 287.3,
+        "pdf_y_end": 414.8,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grbac",
@@ -2781,6 +2902,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1819",
         "source_page": 1819,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006001951",
+        "name": "Guberina Ante Aleksandar",
+        "additional_info": "1920. Šibenik. Poginuo 1944.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 29,
+        "pdf_x": 310.7,
+        "pdf_y": 203.9,
+        "pdf_x_end": 482.6,
+        "pdf_y_end": 220.2,
+        "unit_file": "13-proleterska-soldiers.json"
       },
       {
         "soldier_id": "0079000342",
@@ -3395,7 +3528,44 @@
     "birth_place": "Zlarin, Šibenik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "ethnicity": "Hrvat",
+    "occupation": "konobar",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0007002131",
+        "name": "Jerkov Jakova Ivan",
+        "additional_info": "1922. Zlarin, Šibenik. Hrvat, konobar. U NOV od 5. 1942. u Sjevernodalmatinskom odredu. U 2. dalm. od 3. 10. 1942. Poginuo 27. 2. 1943. kod s. Vrdi, Mostar.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 73,
+        "pdf_x": 140.0,
+        "pdf_y": 177.5,
+        "pdf_x_end": 465.9,
+        "pdf_y_end": 201.1,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036000760",
+        "name": "Jerkov J Ivan",
+        "additional_info": "rođen 1922. godine u Zlarinu — Šibenik, borac IV bat, poginuo u IV ofanzivi.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010826",
+        "name": "Jerkov J Ivan",
+        "additional_info": "rođen 1922. godine u Zlarinu — Šibenik, borac II ba poginuo u IV ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 67,
+        "pdf_x": 81.6,
+        "pdf_y": 299.01,
+        "pdf_y_end": 315.4,
+        "pdf_x_end": 411.2,
+        "pdf_x_left": 60.2,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jerković",
@@ -4313,6 +4483,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1836",
         "source_page": 1836,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006003136",
+        "name": "Kranjac Marka Silvio",
+        "additional_info": "1922. Vodice, Šibenik. Poginuo 6. IX 1944. iznad Titovog Užica i tu sahranjen.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 44,
+        "pdf_x": 295.6,
+        "pdf_y": 396.1,
+        "pdf_x_end": 467.6,
+        "pdf_y_end": 420.2,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -4330,7 +4512,21 @@
     "birth_place": "Tribunj, Šibenik",
     "death_type": "poginuo",
     "death_date": "2. 1. 1942",
-    "death_place": "Krašić"
+    "death_place": "Krašić",
+    "other_sources": [
+      {
+        "soldier_id": "0006003144",
+        "name": "Krapljanov Šime Roko",
+        "additional_info": "1917. Tribunj, Šibenik. Poginuo 2.1 1943. na Krašiću, sahranjen u skupnu grobnicu u s. Sošica na Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 44,
+        "pdf_x": 296.3,
+        "pdf_y": 530.1,
+        "pdf_x_end": 468.3,
+        "pdf_y_end": 554.2,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kravaja",
@@ -4651,7 +4847,36 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=293",
     "source_page": 269,
     "soldier_id": "0120000202",
-    "birth_place": "Škalić, Otočac"
+    "birth_place": "Škalić, Otočac",
+    "death_type": "poginuo",
+    "death_date": "7. IV 1944",
+    "death_place": "na Velikoj Kapeli",
+    "other_sources": [
+      {
+        "soldier_id": "0006003452",
+        "name": "Lonćar Branka Bosko",
+        "additional_info": "12924. Škalić, Otočac. Poginuo 7. IV 1944. na Velikoj Kapeli.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 48,
+        "pdf_x": 299.0,
+        "pdf_y": 384.1,
+        "pdf_x_end": 470.9,
+        "pdf_y_end": 400.5,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0095000287",
+        "name": "Lončar Branka Boško",
+        "additional_info": "rođen 1925. u s. Skalić — Brinje, politkomesar čete u 2. bataljonu, poginuo 7. IV 1944. na Vrhu Kapele, sahranjen na položaju.",
+        "pdf_file": "14-primorsko-goranska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 37.2,
+        "pdf_y": 248.7,
+        "pdf_x_end": 317.3,
+        "pdf_y_end": 273.0,
+        "unit_file": "14-primorsko-goranska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lončar",
@@ -4676,6 +4901,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1446",
         "source_page": 1446,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006003455",
+        "name": "Lončar Prsan Mane",
+        "additional_info": "1920. Škalić, Otočac. Poginuo aprila 1943. kod Pazarišta u Lici.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 48,
+        "pdf_x": 299.1,
+        "pdf_y": 423.7,
+        "pdf_x_end": 471.4,
+        "pdf_y_end": 440.1,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -4854,7 +5091,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=293",
     "source_page": 269,
     "soldier_id": "0120000209",
-    "birth_place": "Viškovo, Rijeka"
+    "birth_place": "Viškovo, Rijeka",
+    "other_sources": [
+      {
+        "soldier_id": "0006003490",
+        "name": "Lučić Franje Vladimir",
+        "additional_info": "1927. Viškovo, Rijeka.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 49,
+        "pdf_x": 126.6,
+        "pdf_y": 327.8,
+        "pdf_x_end": 298.6,
+        "pdf_y_end": 336.3,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Macura",
@@ -4868,7 +5119,20 @@
     "source_page": 269,
     "soldier_id": "0120000210",
     "birth_place": "Kistanje, Knin",
+    "rank": "komandir voda",
     "other_sources": [
+      {
+        "soldier_id": "0002004227",
+        "name": "Macura Save Dmitar",
+        "additional_info": "1919, Kistanje, Knin, u prvom sastavu 1. bataljona, komandir voda",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 712,
+        "pdf_x": 134.8,
+        "pdf_y": 575.0,
+        "pdf_x_end": 469.5,
+        "pdf_y_end": 593.8,
+        "unit_file": "soldiers.json"
+      },
       {
         "soldier_id": "0006003555",
         "name": "Macura Save Dmitar",
@@ -5667,7 +5931,21 @@
     "birth_place": "Tribalj, Crikvenica",
     "death_type": "poginuo",
     "death_date": "9. 1. 1944",
-    "death_place": "kod Mudrike u Bosni"
+    "death_place": "kod Mudrike u Bosni",
+    "other_sources": [
+      {
+        "soldier_id": "0006004145",
+        "name": "Miklić Tribalj Zvonko",
+        "additional_info": "1922. Tribalj, Crikvenica. Poginuo 9. I 1944. u selu Mudrike kod Travnika.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 57,
+        "pdf_x": 310.4,
+        "pdf_y": 305.2,
+        "pdf_x_end": 482.2,
+        "pdf_y_end": 329.3,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mikšić",
@@ -5717,8 +5995,21 @@
         "pdf_x_end": 475.4,
         "pdf_y_end": 282.9,
         "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0060001317",
+        "name": "Milašinović Janka Petar",
+        "additional_info": "1918, Jurga, stupio u NOV augusta 1941. u odred »Jurga«, borac 3. brig. 8. div, poginuo 23. 11. 1944. kod Plaškog",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 56,
+        "pdf_x": 288.5,
+        "pdf_y": 454.5,
+        "pdf_x_end": 439.6,
+        "pdf_y_end": 490.1,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "last_name": "Milašinović",
@@ -5800,8 +6091,21 @@
         "pdf_x_end": 270.7,
         "pdf_y_end": 341.5,
         "ref_book": "hak-20-gospic-perusic"
+      },
+      {
+        "soldier_id": "0002005021",
+        "name": "Milinović Karlov Petar",
+        "additional_info": "zvani Aga; 1918, Smiljan, Gospić, zemljoradnik, u NOB od 1941, 2. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 741,
+        "pdf_x": 126.8,
+        "pdf_y": 624.9,
+        "pdf_x_end": 461.3,
+        "pdf_y_end": 644.2,
+        "unit_file": "soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Milić",
@@ -6117,7 +6421,37 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=295",
     "source_page": 271,
     "soldier_id": "0120000270",
-    "birth_place": "Grabušić, T. Korenica"
+    "birth_place": "Grabušić, T. Korenica",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "24. 10. 1942",
+    "death_place": "u Tušiloviću (Kordun)",
+    "other_sources": [
+      {
+        "soldier_id": "0003021434",
+        "name": "Ognjenović Steve Jovo",
+        "additional_info": "rođen u Grabušiću - T. Korenica. U NOB-1942. Borac brigade. Poginuo u Tušiloviću (Kordun) 24. 10. 1942. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 75,
+        "pdf_x": 200.4,
+        "pdf_y": 105.9,
+        "pdf_x_end": 361.8,
+        "pdf_y_end": 144.7,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003021435",
+        "name": "Ognjenović Steve Jovo",
+        "additional_info": "rođen 1924. u s. Grabušić - T. Korenica. U NOB-1942. Borac 4. bataljona. Poginuo u Tušiloviću (Kordun) 24. 10. 1942. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 75,
+        "pdf_x": 200.6,
+        "pdf_y": 214.9,
+        "pdf_x_end": 362.7,
+        "pdf_y_end": 261.8,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ognjenović",
@@ -6220,7 +6554,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=295",
     "source_page": 271,
     "soldier_id": "0120000278",
-    "birth_place": "Jurge, Vojnić"
+    "birth_place": "Jurge, Vojnić",
+    "other_sources": [
+      {
+        "soldier_id": "0006004938",
+        "name": "Pajić Petra Stevan",
+        "additional_info": "1923. Jurga, Vojnić.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 68,
+        "pdf_x": 302.2,
+        "pdf_y": 222.1,
+        "pdf_x_end": 454.9,
+        "pdf_y_end": 230.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pasariček",
@@ -6603,7 +6951,21 @@
     "birth_place": "Grižani, Crikvenica",
     "death_type": "poginuo",
     "death_date": "10. 9. 1944",
-    "death_place": "kod Slovca u Srbiji"
+    "death_place": "kod Slovca u Srbiji",
+    "other_sources": [
+      {
+        "soldier_id": "0006005294",
+        "name": "Petrović Ivana Ivan",
+        "additional_info": "1919. Grižane, Crikvenica. Poginuo 10. IX 1944. ko Mionice.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 73,
+        "pdf_x": 123.9,
+        "pdf_y": 301.2,
+        "pdf_x_end": 294.9,
+        "pdf_y_end": 317.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pilaš",
@@ -6628,6 +6990,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=154",
         "source_page": 154,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006005384",
+        "name": "Pilaš Bože Rudolf",
+        "additional_info": "1919. Tribalj, Crikvenica. Poginuo januara 1943. kod Novog Sela u Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 74,
+        "pdf_x": 120.5,
+        "pdf_y": 560.3,
+        "pdf_x_end": 292.2,
+        "pdf_y_end": 584.7,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -6685,7 +7059,49 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=296",
     "source_page": 272,
     "soldier_id": "0120000296",
-    "birth_place": "Vojvoduša, Otočac"
+    "birth_place": "Vojvoduša, Otočac",
+    "rank": "komesar čete",
+    "death_type": "poginuo",
+    "death_date": "18. marta 1945",
+    "death_place": "Uvalici, Korenica",
+    "other_sources": [
+      {
+        "soldier_id": "0006005416",
+        "name": "Platiša Mane Milan",
+        "additional_info": "1912. Vojvoduša, Oto-",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 74,
+        "pdf_x": 303.5,
+        "pdf_y": 393.2,
+        "pdf_x_end": 475.3,
+        "pdf_y_end": 401.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0099000553",
+        "name": "Platiša M Milan",
+        "additional_info": "komesar čete, rođen u Vojvoduši - Brinje, poginuo 18. marta 1945. godine u Uvalici kod Korenice",
+        "pdf_file": "3-primorsko-goranska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 223.0,
+        "pdf_y": 265.5,
+        "pdf_x_end": 382.6,
+        "pdf_y_end": 306.2,
+        "unit_file": "3-primorsko-goranska-soldiers.json"
+      },
+      {
+        "soldier_id": "0099000552",
+        "name": "Platiša Milan",
+        "additional_info": "politički komesar čete^",
+        "pdf_file": "3-primorsko-goranska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 220.6,
+        "pdf_y": 516.5,
+        "pdf_y_end": 536.7,
+        "pdf_x_end": 380.3,
+        "unit_file": "3-primorsko-goranska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Platiša",
@@ -6714,7 +7130,21 @@
     "birth_place": "Divoselo, Gospić",
     "death_type": "poginuo",
     "death_date": "6. 12. 1944",
-    "death_place": "u Lemirovom salašu kod Tovarnika"
+    "death_place": "u Lemirovom salašu kod Tovarnika",
+    "other_sources": [
+      {
+        "soldier_id": "0006005422",
+        "name": "Plećaš Dušan Milan",
+        "additional_info": "1919. Divoselo, Gospić. Poginuo 6. XII 1944. na Lemirovom salašu kod Tovarnika.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 74,
+        "pdf_x": 303.8,
+        "pdf_y": 488.3,
+        "pdf_x_end": 475.9,
+        "pdf_y_end": 512.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pleše",
@@ -6734,10 +7164,10 @@
   },
   {
     "last_name": "Popović",
-    "middle_name": "",
+    "middle_name": "Jovana",
     "first_name": "Ilija",
-    "fathers_name": "",
-    "full_name": "Popović Ilija",
+    "fathers_name": "Jovan",
+    "full_name": "Popović Jovana Ilija",
     "additional_info": "1917, Donji Lapac. Poginuo 2. 5. 1943. kod Santruperta, sahranjen u Tihoboju.",
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=296",
@@ -6783,6 +7213,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=658",
         "source_page": 636,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0006005497",
+        "name": "Popović Jovana Ilija",
+        "additional_info": "1917. Donji Lapac. Poginuo 2. IV 1943. kod Šentruperta u Sloveniji. Sahranjen u skupnu grobnicu u mjestu.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 75,
+        "pdf_x": 312.9,
+        "pdf_y": 434.3,
+        "pdf_x_end": 485.3,
+        "pdf_y_end": 458.4,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ]
   },
@@ -6814,8 +7256,35 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1466",
         "source_page": 1466,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0006005500",
+        "name": "Popović Janka Janko",
+        "additional_info": "1921. Malinci, Ozalj. Poginuo 22. X 1944. u Zemunu.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 75,
+        "pdf_x": 313.3,
+        "pdf_y": 481.9,
+        "pdf_x_end": 485.7,
+        "pdf_y_end": 498.2,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0006005502",
+        "name": "Popović Janka Janko",
+        "additional_info": "1921. Malinci, Ozalj.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 75,
+        "pdf_x": 313.4,
+        "pdf_y": 513.6,
+        "pdf_x_end": 479.4,
+        "pdf_y_end": 522.1,
+        "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "22. X 1944",
+    "death_place": "Zemun"
   },
   {
     "last_name": "Puhalo",
@@ -7181,6 +7650,7 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Livno",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0006008122",
@@ -7193,6 +7663,26 @@
         "pdf_x_end": 460.1,
         "pdf_y_end": 318.9,
         "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036001635",
+        "name": "Rak J Ante",
+        "additional_info": "rođen 1924. godine u Dubravi — Šibenik, borac IV bat, poginuo kod Prozora februara 1943. godine.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036011749",
+        "name": "Rak J Ante",
+        "additional_info": "rođen 1924. godine u Dubravi — Šibenik, borac II bat., poginuo kod Prozora februara 1943. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 94,
+        "pdf_x": 47.7,
+        "pdf_y": 501.195,
+        "pdf_y_end": 518.6,
+        "pdf_x_end": 384.9,
+        "pdf_x_left": 26.1,
+        "unit_file": "1-dalmatinska-soldiers.json"
       }
     ]
   },
@@ -7601,7 +8091,21 @@
     "birth_place": "Dubrava, Šibenik",
     "death_type": "poginuo",
     "death_date": "27. 9. 1943",
-    "death_place": "kod Krašića u Žumberku"
+    "death_place": "kod Krašića u Žumberku",
+    "other_sources": [
+      {
+        "soldier_id": "0006006005",
+        "name": "Rupić Jerka Krsto",
+        "additional_info": "1924. Dubrava, Šibenik. Poginuo 27. IX 1943. u Krašiću na Žumberku i tu sahranjen.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 83,
+        "pdf_x": 303.7,
+        "pdf_y": 295.8,
+        "pdf_x_end": 475.9,
+        "pdf_y_end": 319.9,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Saftić",
@@ -7617,7 +8121,21 @@
     "birth_place": "Bribir, Crikvenica",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Jasenak"
+    "death_place": "Jasenak",
+    "other_sources": [
+      {
+        "soldier_id": "0006006031",
+        "name": "Saftić Bare Anton",
+        "additional_info": "1915. Bribir, Crikvenica. Pog. 1943. kod Jasenka u Gorskom kotaru.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 84,
+        "pdf_x": 110.5,
+        "pdf_y": 179.4,
+        "pdf_x_end": 279.0,
+        "pdf_y_end": 195.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Saršon",
@@ -8055,7 +8573,21 @@
     "birth_place": "Vodoteč, Otočac",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Lika"
+    "death_place": "Lika",
+    "other_sources": [
+      {
+        "soldier_id": "0006006344",
+        "name": "Stanić Petra Branko",
+        "additional_info": "1921. Vodoteč, Otočac. Poginuo 1943. u Gorskom kotaru.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 87,
+        "pdf_x": 305.0,
+        "pdf_y": 319.4,
+        "pdf_x_end": 476.7,
+        "pdf_y_end": 335.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanić",
@@ -8219,7 +8751,33 @@
     "birth_place": "Vojvoduša, Otočac",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "kod Škara u Lici"
+    "death_place": "kod Škara u Lici",
+    "other_sources": [
+      {
+        "soldier_id": "0006008190",
+        "name": "Stokuća Petra Ilija",
+        "additional_info": "1914. Vojvoduša, Otočac. Poginuo 1944. u Škarama kod Otočca.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 90,
+        "pdf_x": 285.1,
+        "pdf_y": 447.7,
+        "pdf_x_end": 457.2,
+        "pdf_y_end": 464.0,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0099000670",
+        "name": "Stokuća P Ilija",
+        "additional_info": "operativni oficir bataljona, rođen u Vojvoduši kod Brinja, poginuo 14. marta 1944. godine u Glavacima kod Otočca",
+        "pdf_file": "3-primorsko-goranska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 55.2,
+        "pdf_y": 168.5,
+        "pdf_x_end": 214.7,
+        "pdf_y_end": 209.9,
+        "unit_file": "3-primorsko-goranska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stokuća",
@@ -8745,7 +9303,24 @@
     "source_page": 276,
     "soldier_id": "0120000386",
     "birth_place": "Bribir, Crikvenica",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "rank": "borac",
+    "death_date": "17. V 1943",
+    "death_place": "Gomirje",
+    "other_sources": [
+      {
+        "soldier_id": "0095000603",
+        "name": "Tonković Stjepana Jakov",
+        "additional_info": "rođen 1921. godine u s. Bribir — Crikvenica, borac 1. čete 2. bataljona brigade, poginuo 17. V 1943. godine kod Gomirja.",
+        "pdf_file": "14-primorsko-goranska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 25.9,
+        "pdf_y": 144.8,
+        "pdf_x_end": 307.5,
+        "pdf_y_end": 169.1,
+        "unit_file": "14-primorsko-goranska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Travanković",
@@ -9830,7 +10405,21 @@
     "birth_place": "Jelenje, Rijeka",
     "death_type": "poginuo",
     "death_date": "21. 4. 1943",
-    "death_place": "kod Pleterja u Sloveniji"
+    "death_place": "kod Pleterja u Sloveniji",
+    "other_sources": [
+      {
+        "soldier_id": "0006007907",
+        "name": "Žmarić Petra Dragutin",
+        "additional_info": "1919. Jelenje, Rijeka. Poginuo 12. IV 1943. kod Pleterja u Sloveniji.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 109,
+        "pdf_x": 115.9,
+        "pdf_y": 461.3,
+        "pdf_x_end": 286.9,
+        "pdf_y_end": 477.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zmarić",
@@ -9991,7 +10580,22 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=289",
     "source_page": 265,
     "soldier_id": "0120000443",
-    "birth_place": "Cuić Krčavina, T. Korenica"
+    "birth_place": "Cuić Krčavina, T. Korenica",
+    "rank": "vodni delegat",
+    "other_sources": [
+      {
+        "soldier_id": "0003014259",
+        "name": "Ćuić Ljube Nikola",
+        "additional_info": "rođen 1920. u Ćuić Krčevini - T. Korenica. U NOB-1941. Vodni delegat u 4. bataljonu. RVI penzioner - živi u Somboru.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 26,
+        "pdf_x": 50.6,
+        "pdf_y": 287.3,
+        "pdf_x_end": 211.9,
+        "pdf_y_end": 324.6,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ćuić",
@@ -10196,6 +10800,18 @@
         "pdf_x_end": 371.9,
         "pdf_y_end": 201.8,
         "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003022629",
+        "name": "Čortan Jovana Dušan",
+        "additional_info": "rođen 1923. u s. Debelo Brdo - T. Korenica. U NOB-1941. Komandir odelenja u 1. bataljonu. Poginuo na Zelengori 1943. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 45.6,
+        "pdf_y": 176.7,
+        "pdf_x_end": 207.3,
+        "pdf_y_end": 225.6,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ]
   },
@@ -10410,7 +11026,21 @@
     "birth_place": "J ezernica, Jastrebarsko",
     "death_type": "poginuo",
     "death_date": "25. 5. 1945",
-    "death_place": "Dolovi"
+    "death_place": "Dolovi",
+    "other_sources": [
+      {
+        "soldier_id": "0006006622",
+        "name": "Šajatović Janka Janko",
+        "additional_info": "1922. Jezernice, Jastrebarsko. Poginuo 25. V 1944. u selu Dolovi kod Vakufa u Bosni.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 91,
+        "pdf_x": 316.4,
+        "pdf_y": 391.5,
+        "pdf_x_end": 488.4,
+        "pdf_y_end": 415.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šantić",
@@ -10822,6 +11452,14 @@
     "soldier_id": "0120000480",
     "birth_place": "Šibenik",
     "other_sources": [
+      {
+        "soldier_id": "9001001044",
+        "name": "Šurkalo Marjana Dinko",
+        "additional_info": "Rođen 13-1511-1920 u šibeniku. Hrvatska. Trgovački pomoćnik. Član KPJ od 15-XI-1942. U NOB stupio 1941. Danas: kapetan fregate JRM. Za narodnog heroja proglašen 27-XI-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=810",
+        "source_page": 788,
+        "ref_book": "zbornik-heroja-1957"
+      },
       {
         "soldier_id": "0006006869",
         "name": "Šurkalo Marijana Dinko",

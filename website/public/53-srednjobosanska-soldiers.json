@@ -238,7 +238,17 @@
     "death_type": "poginuo",
     "death_date": "27. VIII 1944",
     "death_place": "Kotor Varoš",
-    "pdf_x_end": 549.8
+    "pdf_x_end": 549.8,
+    "other_sources": [
+      {
+        "soldier_id": "9022031869",
+        "name": "Aleksić (Jovan) Aleksa",
+        "additional_info": "rođen 1919, Srđevići (Srbac). Srbin, poginuo 1944. u NOBu, Teslić",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2551",
+        "source_page": 2551,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Aleksić",
@@ -483,8 +493,23 @@
         "pdf_y_end": 926.0,
         "pdf_x_left": 180.2,
         "ref_book": "tuzla-spomen-knjiga"
+      },
+      {
+        "soldier_id": "0023000064",
+        "name": "Babić Grge Ivo",
+        "additional_info": "rođen 1924. godine u Husinu - Tuzla, Hrvat, radnik, u NOB stupio 1943. godine, a u Brigadu stupio 9. 09. 1944. godine, borac, poginuo 1944. godine.",
+        "pdf_file": "19-bircanska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 283.4,
+        "pdf_y": 357.0,
+        "pdf_x_end": 438.5,
+        "pdf_y_end": 405.3,
+        "unit_file": "19-bircanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "rank": "borac"
   },
   {
     "last_name": "Badelić",
@@ -1066,10 +1091,10 @@
   },
   {
     "last_name": "Bijelić",
-    "middle_name": "",
+    "middle_name": "Tane",
     "first_name": "Mirko",
-    "fathers_name": "",
-    "full_name": "Bijelić Mirko",
+    "fathers_name": "Tane",
+    "full_name": "Bijelić Tane Mirko",
     "additional_info": "rođen 1912, Kremna, Glogovac Prnjavor, komandir 1. čete, 2. bat. 14. brig., poginuo, 19. I 1944, Prnjavor, sahranjen: Kremna Prnjavor",
     "birth_year": "1912",
     "pdf_page": 3,
@@ -1083,7 +1108,48 @@
     "death_date": "19. I 1944",
     "death_place": "Prnjavor",
     "unit_detail": "1. četa, 2. bataljon",
-    "pdf_x_end": 625.4
+    "pdf_x_end": 625.4,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "0001000748",
+        "name": "Bijelić Tane Mirko",
+        "additional_info": "1909, Kremna, Prnjavor, BiH, Srbin, zemljoradnik, član KPJ od 1942, u NOB od 1941, u brigadi od decembra 1942, VI bataljon, komandir čete, poginuo 19. 01. 1944, Prnjavor",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 65,
+        "pdf_x": 49.0,
+        "pdf_y": 192.4,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 233.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100092",
+        "name": "Bijelić Tane Mirko",
+        "additional_info": "borac 6. bataljona, rođen 1909, Kremna, Prnjavor, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo kod Prnjavora 19. januara 1944, komandir čete.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 44.8,
+        "pdf_y": 103.8,
+        "pdf_x_end": 213.8,
+        "pdf_y_end": 156.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056000157",
+        "name": "Bijelič T Mirko",
+        "additional_info": "rođen 1909, Kremna, Prnjavor, komandir 1. č. 2. bat. poginuo 19. januara 1944. god. Prnjavor.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 94.2,
+        "pdf_y": 658.2,
+        "pdf_x_end": 453.6,
+        "pdf_y_end": 679.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bijelić",
@@ -1398,6 +1464,18 @@
         "pdf_y": 334.9,
         "pdf_x_end": 496.6,
         "pdf_y_end": 355.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056000201",
+        "name": "Bogosavac S Dušan",
+        "additional_info": "1918, G. Lepenica (opština Prnjavor)",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 318.7,
+        "pdf_y": 680.7,
+        "pdf_x_end": 485.5,
+        "pdf_y_end": 700.8,
         "unit_file": "14-srednjobosanska-soldiers.json"
       }
     ]
@@ -1984,6 +2062,18 @@
         "pdf_x_end": 353.8,
         "pdf_y_end": 280.1,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056000279",
+        "name": "Budak S Božo",
+        "additional_info": "rođen 1922, Lužani, Prnjavor, polit, komesar 2. č. 2. bat. nestao 19. novembra 1943. god. Crni Vrh, Banja Luka.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 96.7,
+        "pdf_y": 318.4,
+        "pdf_x_end": 456.1,
+        "pdf_y_end": 338.9,
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
     ]
   },
@@ -2886,6 +2976,18 @@
         "ref_book": "zrtve-rata-1964-bih"
       },
       {
+        "soldier_id": "0001002072",
+        "name": "Dević Ilije Rajko",
+        "additional_info": "1913, Štrpci, Prnjavor, BiH, Srbin, zemljoradnik, u NOB od decembra 1942, u brigadi od decembra 1942, IV bataljon, borac, poginuo 1944, Ljevče Polje",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 166,
+        "pdf_x": 60.0,
+        "pdf_y": 446.3,
+        "pdf_x_end": 367.5,
+        "pdf_y_end": 477.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0056000398",
         "name": "Dević I Rajko",
         "additional_info": "rođen 1914, Strpci, Prnjavor, komandir voda u 4. bat. poginuo 18. septembra 1944. god. Banja Luka.",
@@ -2897,7 +2999,9 @@
         "pdf_y_end": 174.0,
         "unit_file": "14-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Deđić",
@@ -3714,7 +3818,22 @@
     "death_type": "poginuo",
     "death_date": "13. I 1945",
     "death_place": "Karaula, Zepče",
-    "pdf_x_end": 662.0
+    "pdf_x_end": 662.0,
+    "rank": "desetar",
+    "other_sources": [
+      {
+        "soldier_id": "0056000505",
+        "name": "Gajić J Vojislav",
+        "additional_info": "rođen 1925, Kriškovci, Laktaši, desetar, 4. bat. poginuo 13. januara 1945. god. Brezovi Dani, Maglaj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 135.8,
+        "pdf_y": 623.0,
+        "pdf_x_end": 494.1,
+        "pdf_y_end": 643.8,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gaković",
@@ -4240,6 +4359,14 @@
     "rank": "borac",
     "other_sources": [
       {
+        "soldier_id": "9022020149",
+        "name": "Grubač (Tane) Dujko",
+        "additional_info": "rođen 1907, Imljani (Kotor Varoš). Srbin, poginuo 1944. u NOBu, Ukrinica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1681",
+        "source_page": 1681,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0056000561",
         "name": "Grubać Dujko",
         "additional_info": "rođen u Imljanima, Kotor Varoš, borac 1. bat. poginuo^ 1. avgusta 1944. god. Ukrinjica, Teslić.",
@@ -4453,6 +4580,18 @@
     "rank": "borac",
     "other_sources": [
       {
+        "soldier_id": "0033000171",
+        "name": "Halilović Alija",
+        "additional_info": "rođen Travnik, 14. brigada, poginuo, 18. XII 1944, Trepča, Tešanj",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 63,
+        "pdf_x": 8.4,
+        "pdf_y": 350.3,
+        "pdf_x_end": 548.1,
+        "pdf_y_end": 364.1,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      },
+      {
         "soldier_id": "0056000610",
         "name": "Halilovič Alija",
         "additional_info": "rođen 1913, Travnik, borac 4. bat. poginuo 18. decembra 1944. god. Trepča, Tešanj.",
@@ -4473,7 +4612,7 @@
     "fathers_name": "",
     "full_name": "Halilović Alija",
     "additional_info": "rođen Travnik, 14. brigada, poginuo, 18. XII 1944, Trepča, Tešanj",
-    "birth_year": "",
+    "birth_year": "1913",
     "pdf_page": 63,
     "pdf_y": 350.3,
     "pdf_x": 8.4,
@@ -4484,7 +4623,34 @@
     "death_type": "poginuo",
     "death_date": "18. XII 1944",
     "death_place": "Trepča, Tešanj",
-    "pdf_x_end": 548.1
+    "pdf_x_end": 548.1,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0033000170",
+        "name": "Halilović Alija",
+        "additional_info": "rođen 1913, Prnjavor Travnik, 4. bataljon 14. brigade, poginuo, 18. XII 1944, Trepča, sahranjen: Trepča",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 62,
+        "pdf_x": 6.0,
+        "pdf_y": 430.7,
+        "pdf_x_end": 639.1,
+        "pdf_y_end": 455.9,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056000610",
+        "name": "Halilovič Alija",
+        "additional_info": "rođen 1913, Travnik, borac 4. bat. poginuo 18. decembra 1944. god. Trepča, Tešanj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 117.3,
+        "pdf_y": 155.4,
+        "pdf_x_end": 475.7,
+        "pdf_y_end": 175.9,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Halilović",
@@ -5527,7 +5693,17 @@
     "death_type": "poginuo",
     "death_date": "28. XII 1944",
     "death_place": "Kotor Varoš",
-    "pdf_x_end": 529.0
+    "pdf_x_end": 529.0,
+    "other_sources": [
+      {
+        "soldier_id": "9022031874",
+        "name": "Ivanović (Gligorija) Svetozar",
+        "additional_info": "rođen 1925, Srđevići (Srbac). Srbin, poginuo 1944. u NOBu, Kotor varoš",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2551",
+        "source_page": 2551,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Ivančević",
@@ -7322,8 +7498,33 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2119",
         "source_page": 2119,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0033000285",
+        "name": "Kitić Gavro",
+        "additional_info": "rođen 1926, Ilova Prnjavor, 3. bataljon 14. brigade, poginuo, 4. X 1944, Vel. Sočanica, sahranjen: Velika Sočanica",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 29,
+        "pdf_x": 18.7,
+        "pdf_y": 100.1,
+        "pdf_x_end": 642.6,
+        "pdf_y_end": 125.8,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056000912",
+        "name": "Kitić Gavro",
+        "additional_info": "rođen 1926, Sereg Ilova, Prnjavor, potporučnik poginuo 4. oktobra 1944. god. Velika Sočanica, Derventa.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 85.6,
+        "pdf_y": 231.5,
+        "pdf_x_end": 445.1,
+        "pdf_y_end": 251.8,
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "rank": "potporučnik"
   },
   {
     "last_name": "Kitić",
@@ -7353,8 +7554,33 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2119",
         "source_page": 2119,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0033000284",
+        "name": "Kitić Gavro",
+        "additional_info": "rođen 1926, Ilova Prnjavor, p.poručgnk 14. brigade, poginuo, 7. X 1944, Vel. Sočanica, sahranjen: Velika Sočanica",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 17.8,
+        "pdf_y": 306.7,
+        "pdf_x_end": 637.5,
+        "pdf_y_end": 332.0,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056000912",
+        "name": "Kitić Gavro",
+        "additional_info": "rođen 1926, Sereg Ilova, Prnjavor, potporučnik poginuo 4. oktobra 1944. god. Velika Sočanica, Derventa.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 85.6,
+        "pdf_y": 231.5,
+        "pdf_x_end": 445.1,
+        "pdf_y_end": 251.8,
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "rank": "potporučnik"
   },
   {
     "last_name": "Kleha",
@@ -7563,7 +7789,22 @@
     "death_date": "10. V 1945",
     "death_place": "Karaula",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 649.9
+    "pdf_x_end": 649.9,
+    "rank": "politički delegat voda",
+    "other_sources": [
+      {
+        "soldier_id": "0056000947",
+        "name": "Komljenović S. Stanko",
+        "additional_info": "rođen 1926, Travnik, polit. delegat voda 2. bat. poginuo 10. aprila 1945. god. Karaula, Žepče.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 84.9,
+        "pdf_y": 444.4,
+        "pdf_x_end": 443.9,
+        "pdf_y_end": 456.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Komsa",
@@ -8357,7 +8598,22 @@
     "death_date": "10. I 1945",
     "death_place": "Teslić",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 765.9
+    "pdf_x_end": 765.9,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056001033",
+        "name": "Kulesević Đ Mirko",
+        "additional_info": "rođen 1924, Novi Grad, Odžak, borac 1. bat. umro 12. januara 1945. god. u bolnici u Tesliću.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 124.0,
+        "pdf_y": 384.4,
+        "pdf_x_end": 482.8,
+        "pdf_y_end": 404.9,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kulhaj",
@@ -9030,10 +9286,10 @@
   },
   {
     "last_name": "Lukić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Đuro",
-    "fathers_name": "",
-    "full_name": "Lukić Đuro",
+    "fathers_name": "M",
+    "full_name": "Lukić M Đuro",
     "additional_info": "rođen 1918, V. Sočanica Derventa, p.poručnik 14. brigada, poginuo, 7. VIII 1944, Klupe",
     "birth_year": "1918",
     "pdf_page": 31,
@@ -9047,7 +9303,21 @@
     "death_date": "7. VIII 1944",
     "death_place": "Klupe",
     "rank": "poručnik",
-    "pdf_x_end": 639.2
+    "pdf_x_end": 639.2,
+    "other_sources": [
+      {
+        "soldier_id": "0056001116",
+        "name": "Lukić M Đuro",
+        "additional_info": "rođen 1912, Sočanica, Derventa, p. poručnik, poginuo 18. avgusta 1944. god. Klupe, Pribinić, Teslić.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 94.5,
+        "pdf_y": 178.0,
+        "pdf_x_end": 453.8,
+        "pdf_y_end": 198.8,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lučić",
@@ -10548,7 +10818,21 @@
     "death_date": "1943",
     "death_place": "Srbac jesen",
     "unit_detail": "2. četa",
-    "pdf_x_end": 748.7
+    "pdf_x_end": 748.7,
+    "other_sources": [
+      {
+        "soldier_id": "0056001282",
+        "name": "Mikić J Vojislav",
+        "additional_info": "rođen 1923, Orašje, Prnjavor, komandir 2. čete, 2. bat. poginuo nesretnim slučajem, 1. nov. 1943. god. kod Srpca.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 93.9,
+        "pdf_y": 258.9,
+        "pdf_x_end": 452.0,
+        "pdf_y_end": 279.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Miladinović",
@@ -11040,12 +11324,12 @@
   },
   {
     "last_name": "Mitrović",
-    "middle_name": "",
+    "middle_name": "Petra",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Mitrović Milan",
+    "fathers_name": "Petar",
+    "full_name": "Mitrović Petra Milan",
     "additional_info": "rođen Mravića Prnjavor, 3. bataljon 18. brigade, poginuo, 19. IX 1944, Banja Luka",
-    "birth_year": "",
+    "birth_year": "1922",
     "pdf_page": 34,
     "pdf_y": 140.6,
     "pdf_x": 18.9,
@@ -11066,8 +11350,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2105",
         "source_page": 2105,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0001007975",
+        "name": "Mitrović Petra Milan",
+        "additional_info": "1922, Mravića, Prnjavor, BiH, Srbin, zemljoradnik, u NOB od 1942, u brigadi od decembra 1942, IV bataljon, borac, poginuo 20. 09. 1943, u Banja Luci",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 300,
+        "pdf_x": 64.4,
+        "pdf_y": 247.2,
+        "pdf_x_end": 371.8,
+        "pdf_y_end": 279.8,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "last_name": "Mitrović",
@@ -11814,7 +12113,22 @@
     "death_date": "21. II 1945",
     "death_place": "Sivša",
     "unit_detail": "3. četa, 2. bataljon",
-    "pdf_x_end": 766.8
+    "pdf_x_end": 766.8,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056001452",
+        "name": "Nikolić M Franjo",
+        "additional_info": "rođen 1919, Gradište, Županja, borac 3. č. 2. bat. umro u bolnici Teslić 21. februara 1945. god.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 94.6,
+        "pdf_y": 322.9,
+        "pdf_x_end": 453.4,
+        "pdf_y_end": 343.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -12320,7 +12634,22 @@
     "death_date": "28. V 1945",
     "death_place": "Punt",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 644.1
+    "pdf_x_end": 644.1,
+    "rank": "desetar",
+    "other_sources": [
+      {
+        "soldier_id": "0056001533",
+        "name": "Panić R Živko",
+        "additional_info": "rođen 1922, Novi Grad, Odžak, desetar u 3. bat. poginuo 29. februara 1945. god. Putnikovo Brdo, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 137.8,
+        "pdf_y": 186.8,
+        "pdf_x_end": 496.5,
+        "pdf_y_end": 207.6,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pap",
@@ -13356,10 +13685,10 @@
   },
   {
     "last_name": "Prolić",
-    "middle_name": "",
+    "middle_name": "Đ",
     "first_name": "Veljko",
-    "fathers_name": "",
-    "full_name": "Prolić Veljko",
+    "fathers_name": "Đ",
+    "full_name": "Prolić Đ Veljko",
     "additional_info": "rođen 1924, Mravića Prnjavor, Omlad. ruk. 3. bat. 14. brig., poginuo, 15. XII 1944, Miljanovci, sahranjen: Tešanj",
     "birth_year": "1924",
     "pdf_page": 44,
@@ -13382,6 +13711,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2108",
         "source_page": 2108,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0056001681",
+        "name": "Prolić Đ Veljko",
+        "additional_info": "rođen 1926, Mravića, Prnjavor, omlad. rukovodilac 3. bat. poginuo 18. decembra 1944. god. Miljanovci, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 93.4,
+        "pdf_y": 385.9,
+        "pdf_x_end": 452.4,
+        "pdf_y_end": 406.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
     ]
   },
@@ -13619,8 +13960,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1434",
         "source_page": 1434,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0056001708",
+        "name": "Radić G Ljubo",
+        "additional_info": "rođen 1928, Dilac. Glamoč, borac 2. č. 4. bat. poginuo 8. maja 1945. god. Vlaška Mala, Odžak.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 93.4,
+        "pdf_y": 683.3,
+        "pdf_x_end": 452.7,
+        "pdf_y_end": 703.6,
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "last_name": "Radoišević",
@@ -13714,7 +14068,22 @@
     "death_date": "1. XII 1944",
     "death_place": "Sivša",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 767.1
+    "pdf_x_end": 767.1,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056001720",
+        "name": "Radosinović Petko",
+        "additional_info": "rođen 1915, Brestovo, Doboj, borac 3. bat. nestao 1. decembra 1944. god. Sivša, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 133.4,
+        "pdf_y": 239.5,
+        "pdf_x_end": 492.4,
+        "pdf_y_end": 260.3,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radošević",
@@ -14433,7 +14802,22 @@
     "death_type": "poginuo",
     "death_date": "2. XII 1944",
     "death_place": "Ozimica",
-    "pdf_x_end": 641.4
+    "pdf_x_end": 641.4,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056001786",
+        "name": "Sadek Đ Vinko",
+        "additional_info": "rođen 1911, Đurđevac, Križevci, borac čete pratećih oruđa brigade, poginuo 2. decembra 1944. godine, Ozimica, Zepče.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 132.7,
+        "pdf_y": 579.3,
+        "pdf_x_end": 491.1,
+        "pdf_y_end": 600.1,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sadiković",
@@ -14495,7 +14879,22 @@
     "death_date": "6. I 1945",
     "death_place": "Uzlomac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 639.2
+    "pdf_x_end": 639.2,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056001788",
+        "name": "Safin Zlatko",
+        "additional_info": "rođen Nova Ves, Srbac, borac 1. bat. poginuo 6. januara 1944. god. Uzlomac, Kotor-Varoš.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 132.7,
+        "pdf_y": 603.5,
+        "pdf_x_end": 491.2,
+        "pdf_y_end": 624.4,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Salama",
@@ -15144,7 +15543,7 @@
     "fathers_name": "Dušan",
     "full_name": "Simić Dušana Slavko",
     "additional_info": "rođen Tabak Ilova, k-dir čete 3. bat. 14. brig., poginuo, 1945, Javorani april, sahranjen: Kotor Varoš",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 52,
     "pdf_y": 551.9,
     "pdf_x": 5.5,
@@ -15156,7 +15555,48 @@
     "death_date": "1945",
     "death_place": "Javorani april",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 646.9
+    "pdf_x_end": 646.9,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "0001011105",
+        "name": "Simić Dušana Slavko",
+        "additional_info": "1925, D. Ilova, Prnjavor, BiH, Srbin, zemljoradnik, u NOB od januara 1943, u brigadi od januara 1943, II bataljon, komandir čete, poginuo 06. 05. 1945, Liplje, Kotor Varoš",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 178,
+        "pdf_x": 61.4,
+        "pdf_y": 296.0,
+        "pdf_x_end": 368.1,
+        "pdf_y_end": 339.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001101346",
+        "name": "Simić Dušana Slavko",
+        "additional_info": "borac 2. bataljona, rođen 1925, Donja Ilova, Prnjavor, zemljoradnik, Srbin, u NOB od januara 1943, poginuo u Ljilju, kod Teslića, 6. maja 1945. kao komandir čete u 14. srednjebosanskoj brigadi.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 85,
+        "pdf_x": 229.5,
+        "pdf_y": 272.8,
+        "pdf_x_end": 399.1,
+        "pdf_y_end": 336.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056001900",
+        "name": "Simić D Slavko",
+        "additional_info": "rođen 1921, Donja Ilova, Prnjavor, komandir 2. čete, 3. bat. poginuo 18. aprila 1944. god. Javorani, K. Varoš.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 127.9,
+        "pdf_y": 203.2,
+        "pdf_x_end": 486.0,
+        "pdf_y_end": 226.3,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Simunik",
@@ -16560,7 +17000,25 @@
     "death_date": "25. V 1945",
     "death_place": "D. Dubica",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 648.0
+    "pdf_x_end": 648.0,
+    "ethnicity": "Musliman",
+    "occupation": "radnik",
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0107000533",
+        "name": "Sujaldžić A Ismet",
+        "additional_info": "rod. 1909. u Travniku, Musliman, radnik. Stupio u NOV novembra 1944. Poginuo kao borac maja 1945. na Odžaku.",
+        "pdf_file": "11-krajiska-poginuli.pdf",
+        "pdf_page": 22,
+        "pdf_x": 91.3,
+        "pdf_y": 115.8,
+        "pdf_x_end": 351.0,
+        "pdf_y_end": 142.3,
+        "pdf_x_left": 70.2,
+        "unit_file": "11-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Suvajac",
@@ -17065,7 +17523,22 @@
     "death_date": "1. I 1943",
     "death_place": "Trapisti",
     "unit_detail": "3. četa, 2. bataljon",
-    "pdf_x_end": 635.9
+    "pdf_x_end": 635.9,
+    "rank": "desetar",
+    "other_sources": [
+      {
+        "soldier_id": "0056002147",
+        "name": "Todič Spasoje",
+        "additional_info": "rođen 1917, Ilova, Prnjavor, desetar, 3. č. 2. bat. poginuo 1. januara 1944. god. Trapisti, Banja Luka.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 96.6,
+        "pdf_y": 158.5,
+        "pdf_x_end": 455.0,
+        "pdf_y_end": 180.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Todorović",
@@ -17142,7 +17615,22 @@
     "death_date": "11. II 1945",
     "death_place": "Karaula",
     "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 522.9
+    "pdf_x_end": 522.9,
+    "rank": "vodnik",
+    "other_sources": [
+      {
+        "soldier_id": "0056002154",
+        "name": "Todorović J Rade",
+        "additional_info": "rođen 1921, Raškovci, Doboj, vodnik voda, 3. č. 3. bat. poginuo 11. februara 1945. god. Karaula, Zepče.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 96.6,
+        "pdf_y": 207.0,
+        "pdf_x_end": 455.2,
+        "pdf_y_end": 228.0,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Todorović",
@@ -17318,8 +17806,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1274",
         "source_page": 1274,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0010001874",
+        "name": "Tomić Sime Uroš",
+        "additional_info": "rođen 1921. Bastasi, Drvar, zemljoradnik, Srbin, u NOB od 1941, u Brigadi od 1942, član KPJ, poginuo 1945. kod Maglaja kao komesar čete u 19. bosanskoj brigadi",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 114,
+        "pdf_x": 32.4,
+        "pdf_y": 314.0,
+        "pdf_x_end": 192.9,
+        "pdf_y_end": 361.5,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "komesar čete"
   },
   {
     "last_name": "Tomljenović",
@@ -18429,7 +18932,36 @@
     "birth_place": "Srđevići Sitneš Prnjavor",
     "death_type": "poginuo",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 655.4
+    "pdf_x_end": 655.4,
+    "rank": "desetar",
+    "death_date": "12. IV 1945",
+    "death_place": "Karaula",
+    "other_sources": [
+      {
+        "soldier_id": "0033000706",
+        "name": "Vodnar Alekse Vasilj",
+        "additional_info": "rođen 1S26. Brestova Prnjavor, desetar 14. brig., poginuo, 12. IV 1945, Karaula",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 12,
+        "pdf_x": 11.0,
+        "pdf_y": 96.7,
+        "pdf_x_end": 518.7,
+        "pdf_y_end": 122.0,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056002298",
+        "name": "Vodnar A Vasilj",
+        "additional_info": "rođen 1920, Sitneši, Srbac, desetar 3. č. 4. bat. poginuo 9. aprila 1945. god. Karaula, Zepče.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 95.0,
+        "pdf_y": 157.1,
+        "pdf_x_end": 453.6,
+        "pdf_y_end": 179.3,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vodnar",
@@ -18438,7 +18970,7 @@
     "fathers_name": "Aleksa",
     "full_name": "Vodnar Alekse Vasilj",
     "additional_info": "rođen 1S26. Brestova Prnjavor, desetar 14. brig., poginuo, 12. IV 1945, Karaula",
-    "birth_year": "",
+    "birth_year": "1920",
     "pdf_page": 12,
     "pdf_y": 96.7,
     "pdf_x": 11.0,
@@ -18449,7 +18981,34 @@
     "death_date": "12. IV 1945",
     "death_place": "Karaula",
     "rank": "desetar",
-    "pdf_x_end": 518.7
+    "pdf_x_end": 518.7,
+    "birth_place": "Srđevići Sitneš Prnjavor",
+    "other_sources": [
+      {
+        "soldier_id": "0033000705",
+        "name": "Vodnar Alekse Vasilj",
+        "additional_info": "rođen 1920, Srđevići Sitneš Prnjavor, 3. četa 4. bataljon 14. brigade, poginuo",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 10.1,
+        "pdf_y": 427.6,
+        "pdf_x_end": 655.4,
+        "pdf_y_end": 443.0,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056002298",
+        "name": "Vodnar A Vasilj",
+        "additional_info": "rođen 1920, Sitneši, Srbac, desetar 3. č. 4. bat. poginuo 9. aprila 1945. god. Karaula, Zepče.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 95.0,
+        "pdf_y": 157.1,
+        "pdf_x_end": 453.6,
+        "pdf_y_end": 179.3,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Voćar",
@@ -19015,6 +19574,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1730",
         "source_page": 1730,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0056002356",
+        "name": "Vuković Đ Milovan",
+        "additional_info": "rođen 1921, Maglajani, Laktaši, desetar 1. bat. poginuo 1. marta 1945. god. Perković Han, Maglaj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 29,
+        "pdf_x": 135.6,
+        "pdf_y": 190.5,
+        "pdf_x_end": 494.5,
+        "pdf_y_end": 211.3,
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
     ]
   },
@@ -19157,7 +19728,22 @@
     "death_date": "8. III 1945",
     "death_place": "Bilešić",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 683.0
+    "pdf_x_end": 683.0,
+    "rank": "desetar",
+    "other_sources": [
+      {
+        "soldier_id": "0056002371",
+        "name": "Vučković V Gojko",
+        "additional_info": "rođen 1919, Maglajani, Laktaši, desetar, 2. bat. poginuo 8. marta 1945. god. Ritešić, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 94.7,
+        "pdf_y": 324.6,
+        "pdf_x_end": 453.5,
+        "pdf_y_end": 346.8,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vučković",
@@ -20399,7 +20985,22 @@
     "death_type": "poginuo",
     "death_date": "2. XII 1944",
     "death_place": "Sivša",
-    "pdf_x_end": 529.5
+    "pdf_x_end": 529.5,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056002518",
+        "name": "Šedek Đ Vinko",
+        "additional_info": "rođen u Đurđevcu, Križevci, borac 3. bat. poginuo 1. decembra 1944. god. Sivša, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 100.1,
+        "pdf_y": 596.8,
+        "pdf_x_end": 459.3,
+        "pdf_y_end": 617.6,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šekororanji",
@@ -20676,7 +21277,22 @@
     "death_date": "25. V 1945",
     "death_place": "Vlaška Mala",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 632.5
+    "pdf_x_end": 632.5,
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0056002534",
+        "name": "Šljiva V Juzek",
+        "additional_info": "rođen 1919, Martinac, Srbac, borac 3. č. 4. bat. poginuo 25. maja 1945. god. Vlaška Mala, Odžak.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 136.4,
+        "pdf_y": 227.0,
+        "pdf_x_end": 494.6,
+        "pdf_y_end": 247.5,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šljivić",
