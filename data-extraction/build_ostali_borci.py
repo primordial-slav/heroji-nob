@@ -68,7 +68,7 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
                '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
                '9010000363': 'Dmitar'}
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
-NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga'}
+NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica'}      # (Ostrvica's census names the head, the father)
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
 POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima'}
 # books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
@@ -80,7 +80,8 @@ REFERENCE_ONLY: set = set()
 # whose entries give only the years ("1905/44" in the Cazin region's, "1920-1942" in Iskra in plamen's) or a name, a
 # birth year and a village under the battle they fell in (Ludbreg's)
 COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli',
-                'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi'}   # (the last two: the officers who fell)
+                'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi',   # (those two: the officers who fell)
+                'licko-petrovo-selo'}                  # (Ličko Petrovo Selo's table of the fallen)
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
