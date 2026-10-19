@@ -275,6 +275,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznam padlih borcev in starešin brigade po občinah: rojstvo, dolžnost, kje in kdaj so padli (str. 207–220)',
     '1-bokeljska':
       'Seznam padlih in umrlih borcev brigade ter pogrešanih v boju: bataljon, rojstvo, kje in kdaj so padli (str. 315–321)',
+    '1-bokeljska-spisak':
+      'Seznam brigade od ustanovitve 5. oktobra 1944 do konca vojne, po enotah: štab, bataljoni in enote pri štabu, dolžnost in ime vsakega borca in starešine (str. 291–314). Borec, premeščen v drugo enoto, je vpisan tudi vanjo, zato se nekateri pojavijo dvakrat. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik.',
     '6-dalmatinska':
       'Seznam padlih borcev brigade: od kod so bili, kje in kdaj so padli (str. 259–271)',
     '6-dalmatinska-kadar':
@@ -569,6 +571,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Starešine banijskih partizanskih odredov 1941–1945 (str. 372–378): malih odredov in vaških skupin borcev 1941, Banijskega partizanskega odreda in njegovih bataljonov, udarnih bataljonov, partizanskih čet in dveh odredov Banije 1944, po dolžnostih. Odredov ni na strani: zapis iz knjige je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'letalci-prekomorci-kader':
       'Vodilni kader 1. in 2. lovske eskadrilje NOVJ, letalskega detašmana NOVJ v Alžiriji in 1. letalskega polka (str. 322–325): čin in dolžnost vsakega, s časom, ko jo je opravljal. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'niksicki-odred-pali-borci':
+      'Imena padlih borcev z območja nekdanjega nikšiškega okraja in občine Herceg Novi (str. 393–420): kraj in leto rojstva, kraj in leto smrti; ter narodni heroji Nikšića in Herceg Novega, z življenjepisom vsakega (str. 423–427). Skoraj vsi so šli skozi Nikšićki odred, padli pa so v brigadah, v odredu in na drugih dolžnostih. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
+    'teslic-u-nob-borci':
+      'Seznam borcev narodnoosvobodilne vojne občine Teslić (str. 234–267) in seznam padlih in umrlih borcev (str. 269–279), z življenjepisom vsakega. Seznama ob borcih štejeta tudi odbornike in sodelavce NOG: vneseni so le tisti, za katere zapis pravi, da so bili borci ali v NOVJ, ali navaja vojaško dolžnost ali enoto vojske. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik. Knjiga ne pripada eni enoti: zapis iz nje je dodan zapisu vsakega borca, ki je na strani in za katerega je zanesljivo, da je to on; drugi so med Drugimi borci.',
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     '1-dalmatinska-komandni-sastav':
@@ -855,6 +861,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на загинатите борци и старешини на бригадата, по општини: раѓање, должност, каде и кога загинале (стр. 207–220)',
     '1-bokeljska':
       'Список на загинатите и умрените борци на бригадата и на исчезнатите во борба: баталјон, раѓање, каде и кога загинале (стр. 315–321)',
+    '1-bokeljska-spisak':
+      'Списокот на бригадата од формирањето на 5 октомври 1944 до крајот на војната, по единици: штабот, баталјоните и единиците при штабот, должноста и името на секој борец и старешина (стр. 291–314). Борец преместен во друга единица е запишан и во неа, па некои се појавуваат двапати. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите.',
     '6-dalmatinska':
       'Список на загинатите борци на бригадата: од каде се, каде и кога загинале (стр. 259–271)',
     '6-dalmatinska-kadar':
@@ -1149,6 +1157,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Старешините на банискиот партизански одреди 1941–1945 (стр. 372–378): на малите одреди и селските групи борци од 1941, на Банискиот партизански одред и неговите баталјони, ударните баталјони, партизанските чети и двата одреди на Банија од 1944, по должности. Одредите не се на сајтот: записот од книгата е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'letalci-prekomorci-kader':
       'Раководниот кадар на 1. и 2. ловечка ескадрила на НОВЈ, на воздухопловниот одред на НОВЈ во Алжир и на 1. воздухопловен полк (стр. 322–325): чинот и должноста на секој, со времето кога ја вршел. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'niksicki-odred-pali-borci':
+      'Имињата на паднатите борци од подрачјето на поранешната никшиќка околија и општината Херцег Нови (стр. 393–420): место и година на раѓање, место и година на загинување; и народните херои на Никшиќ и Херцег Нови, со биографија на секој (стр. 423–427). Речиси сите поминале низ Никшиќкиот одред, а загинале во бригадите, во одредот и на други должности. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
+    'teslic-u-nob-borci':
+      'Списокот на борците од народноослободителната војна од општината Теслиќ (стр. 234–267) и списокот на загинатите и умрените борци (стр. 269–279), со биографија на секој. Списоците покрај борците ги бројат и одборниците и соработниците на НОД: внесени се само оние за кои записот вели дека биле борци или во НОВЈ, или наведува воена должност или единица на војската. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не припаѓа на една единица: записот од неа е додаден на записот на секој борец што е на сајтот и за кого сигурно се знае дека е тоа тој; другите се меѓу Другите борци.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     '1-dalmatinska-komandni-sastav':
@@ -1434,6 +1446,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The brigade’s fallen soldiers and officers, by municipality: birth, duty, where and when they fell (pp. 207–220)',
     '1-bokeljska':
       'The brigade’s fallen and dead, and those missing in battle: battalion, birth, where and when they fell (pp. 315–321)',
+    '1-bokeljska-spisak':
+      'The brigade’s roll from its formation on 5 October 1944 to the end of the war, by unit: the staff, the battalions and the units at the staff, each fighter’s and officer’s duty and name (pp. 291–314). A man transferred to another unit was entered there too, so some stand twice. The pages on znaci.org have no text, only images: the names were read from the images.',
     '6-dalmatinska':
       'The brigade’s fallen: where they came from, where and when they fell (pp. 259–271)',
     '6-dalmatinska-kadar':
@@ -1728,6 +1742,10 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The officers of the Banija partisan detachments, 1941–1945 (pp. 372–378): of the small detachments and village groups of 1941, the Banija Partisan Detachment and its battalions, the shock battalions, the partisan companies and the two Banija detachments of 1944, by duty. The detachments are not on the site: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
     'letalci-prekomorci-kader':
       'The leading officers of the 1st and 2nd fighter squadrons of the NOVJ, of the NOVJ air detachment in Algeria and of the 1st air regiment (pp. 322–325): each man’s rank and duty, with the dates he held it. The book belongs to no single unit: an entry is added to the record of each fighter on the site where the match is certain; the others are among the Other fighters.',
+    'niksicki-odred-pali-borci':
+      'The names of the fallen of the former Nikšić district and the Herceg Novi municipality (pp. 393–420): place and year of birth, place and year of death; and the national heroes of Nikšić and Herceg Novi, with a biography of each (pp. 423–427). Nearly all of them passed through the Nikšić Detachment, and they fell in the brigades, in the detachment and in other duties. The pages on znaci.org have no text, only images: the names were read from the images. The book belongs to no single unit: its entry has been added to the record of every fighter on the site who is known for certain to be the one it describes; the others are among the Other fighters.',
+    'teslic-u-nob-borci':
+      'The roll of the fighters of the war of liberation from the Teslić municipality (pp. 234–267) and the list of its fighters who fell or died (pp. 269–279), with a biography of each. Besides the fighters the lists count members of the liberation committees and helpers of the movement: only those whose entry says they were fighters or in the army, or names a military duty or an army unit, were taken in. The pages on znaci.org have no text, only images: the names were read from the images. The book belongs to no single unit: its entry has been added to the record of every fighter on the site who is known for certain to be the one it describes; the others are among the Other fighters.',
     'zene-1-dalmatinska':
       'The brigade’s women fighters, 1944–1945 (document 368): duty and rank, date and place of birth, when they joined the army, decorations, and the staff’s opinion of each',
     '1-dalmatinska-komandni-sastav':
@@ -1780,6 +1798,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'preživjeli i poginuli (zbornik, knj. 2)': 'preživeli in padli (zbornik, 2. knjiga)',
     'popis boraca': 'seznam borcev',
     'borci divizije po jedinicama': 'borci divizije po enotah',
+    'jedinični spisak brigade': 'seznam brigade po enotah',
     'spisak boraca (zbornik sjećanja, knj. 3)': 'seznam borcev (zbornik spominov, 3. knjiga)',
     'spiskovi poginulih i rukovodilaca': 'seznama padlih in vodstva',
     'ilustrovana monografija (1942—1992)': 'ilustrirana monografija (1942–1992)',
@@ -1826,6 +1845,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'preživjeli i poginuli (zbornik, knj. 2)': 'преживеани и загинати (зборник, кн. 2)',
     'popis boraca': 'список на борците',
     'borci divizije po jedinicama': 'борци на дивизијата по единици',
+    'jedinični spisak brigade': 'список на бригадата по единици',
     'spisak boraca (zbornik sjećanja, knj. 3)': 'список на борците (зборник спомени, кн. 3)',
     'spiskovi poginulih i rukovodilaca': 'списоци на загинатите и на раководството',
     'ilustrovana monografija (1942—1992)': 'илустрирана монографија (1942–1992)',
@@ -1872,6 +1892,7 @@ const PART: Partial<Record<Lang, Texts>> = {
     'preživjeli i poginuli (zbornik, knj. 2)': 'survivors and the fallen (memoirs, vol. 2)',
     'popis boraca': 'roll',
     'borci divizije po jedinicama': 'the division’s Partisans, by unit',
+    'jedinični spisak brigade': 'the brigade’s roll, by unit',
     'spisak boraca (zbornik sjećanja, knj. 3)': 'roll (memoirs, vol. 3)',
     'spiskovi poginulih i rukovodilaca': 'the fallen and the leaders',
     'ilustrovana monografija (1942—1992)': 'illustrated history (1942–1992)',

@@ -76,6 +76,9 @@ INLINE_ENTRIES = {'druga-proleterska.pdf', '12-dalmatinska.pdf', '12-vojvodjansk
                   '6-krajiska-kadar.pdf',   # the 6. krajiška's war cadre: a man boxed at each post on his first's page
                   '18-hrvatska-starjesine.pdf',   # the 18. hrvatska's officers: names run on under each duty
                   'osjecka-rukovodioci.pdf',   # the Osječka's leaders: a man boxed at each post on his first's page
+                  # scans with no text layer, read by ocr_scan.py: their parsers box each entry by the OCR's lines
+                  'niksicki-odred-pali-borci.pdf', '1-bokeljska-spisak.pdf', 'teslic-u-nob-borci.pdf',
+                  'lovcenski-odred-pali-borci.pdf',
                   '3-primorsko-goranska-stabovi.pdf',   # the 3. primorsko-goranska's staffs: names run on under each duty
                   '6-dalmatinska-kadar.pdf',   # the 6. dalmatinska's command: a man boxed at each post on his first's page
                   '19-sjevernodalmatinska-kadar.pdf',   # the 19. division's command: a man boxed at his posts, a hero at his summary

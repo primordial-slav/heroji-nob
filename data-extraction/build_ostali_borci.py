@@ -80,7 +80,8 @@ REFERENCE_ONLY: set = set()
 # whose entries give only the years ("1905/44" in the Cazin region's, "1920-1942" in Iskra in plamen's) or a name, a
 # birth year and a village under the battle they fell in (Ludbreg's)
 COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli',
-                'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi'}   # (the last two: the officers who fell)
+                'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi',   # (these two: the officers who fell)
+                'niksicki-odred-pali-borci'}   # the Nikšić region's fallen: a table of birthplace and year, death place and year
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume

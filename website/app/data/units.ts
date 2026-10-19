@@ -1034,11 +1034,11 @@ export const units: Unit[] = [
     id: '1-bokeljska-brigada',
     name: '1. bokeljska brigada',
     nameEn: '1st Boka Brigade',
-    description: 'Formirana 5. oktobra 1944. u Konjskom kod Trebinja. Poginuli, umrli i nestali borci brigade.',
+    description: 'Formirana 5. oktobra 1944. u Konjskom kod Trebinja. Svi borci i starešine brigade po jedinicama, i poginuli, umrli i nestali.',
     image: '/images/1-bokeljska-brigada.jpg',
     soldierCount: 201,
     dataFile: '/1-bokeljska-soldiers.json',
-    pdfFiles: ['/pdfs/1-bokeljska.pdf']
+    pdfFiles: ['/pdfs/1-bokeljska.pdf', '/pdfs/1-bokeljska-spisak.pdf']
   },
   {
     id: '6-dalmatinska-brigada',
