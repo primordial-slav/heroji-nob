@@ -8,6 +8,8 @@ import type { Lang } from '@/app/i18n/config'
 import { formatNumber } from '@/app/i18n/format'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { unitDescription, unitName } from '@/app/i18n/units'
+import { formationName, formationYears } from '@/app/i18n/formations'
+import { SITE_DIVISIONS, UNIT_FORMATIONS } from '@/app/data/unitFormations'
 import { unitImageProps } from '@/app/lib/unitImage'
 
 // How wide a card's photo is drawn (.unit-grid in .container, globals.css): one column up to 711px
@@ -71,20 +73,43 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
             {year ? <span className="unit-year-number">{year}</span> : noUnit ? t.home.noUnit : t.home.otherUnits}
           </h3>
           <ul className="unit-grid">
-            {group.map((unit) => (
+            {group.map((unit) => {
+              const parents = UNIT_FORMATIONS[unit.id]
+              return (
               <li key={unit.id}>
-                <Link href={to(unitHref(unit.id, lang))} className="unit-card">
+                {/* the name's link covers the card (.unit-card-link::after), so the line of divisions can link too */}
+                <div className="unit-card">
                   <div className="unit-card-photo">
                     <img loading="lazy" {...unitImageProps(unit.image, CARD_SIZES)} alt="" />
                   </div>
                   <div className="unit-card-body">
-                    <h4 className="unit-name">{unitName(unit, lang)}</h4>
+                    <h4 className="unit-name">
+                      <Link href={to(unitHref(unit.id, lang))} className="unit-card-link">{unitName(unit, lang)}</Link>
+                    </h4>
                     <p className="unit-desc">{unitDescription(unit, lang)}</p>
+                    {parents && (
+                      <p className="unit-parents">
+                        {t.unitsPage.partOf}:{' '}
+                        {parents.map((part, i) => {
+                          const [level, n] = part
+                          const name = formationName(level, n, lang)
+                          const site = level === 'd' ? SITE_DIVISIONS[n] : undefined
+                          return (
+                            <span key={i}>
+                              {i > 0 && ', '}
+                              {site && site !== unit.id ? <Link href={to(unitHref(site, lang))}>{name}</Link> : name}
+                              {' '}({formationYears(part)})
+                            </span>
+                          )
+                        })}
+                      </p>
+                    )}
                     <p className="unit-count">{t.borci(unit.soldierCount)}</p>
                   </div>
-                </Link>
+                </div>
               </li>
-            ))}
+              )
+            })}
             {census && census.length > 0 && (
               // one panel for the census: its eight parts would be eight cards of the same scanned page
               <li className="census-index">

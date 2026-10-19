@@ -320,6 +320,7 @@ export const en: Messages = {
     years: 'Year formed',
     allYears: 'All',
     find: 'Unit name',
+    partOf: 'Part of',
     none: (q: string) => `No unit matches “${q}”`,
     noneText: 'Try part of the name: a number, a place or a name, such as “Lika” or “13th”.',
     kinds: 'Kind of unit',

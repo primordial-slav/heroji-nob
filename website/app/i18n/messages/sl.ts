@@ -323,6 +323,7 @@ export const sl: Messages = {
     years: 'Leto ustanovitve',
     allYears: 'Vsa',
     find: 'Ime enote',
+    partOf: 'V sestavi',
     none: (q: string) => `Nobena enota ne ustreza iskanju „${q}“`,
     noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer „lička“ ali „13.“.',
     kinds: 'Vrsta enote',

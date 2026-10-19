@@ -600,6 +600,49 @@ body:has(.band-photo[data-ready]) header.masthead {
   line-height: 1.45;
 }
 
+/* On the Jedinice page the card is a box and its name the link, stretched over the whole card, so the line of the
+   divisions it belonged to can hold links of its own above it */
+.unit-card:has(.unit-card-link) {
+  position: relative;
+}
+
+.unit-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.unit-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.unit-card-link:hover {
+  text-decoration: none;
+}
+
+.unit-card-link:focus-visible {
+  outline: none;
+}
+
+.unit-card:has(.unit-card-link:focus-visible) {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.unit-parents {
+  margin-top: var(--space-2);
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  line-height: 1.45;
+}
+
+.unit-parents a {
+  position: relative;
+  z-index: 1;
+  color: var(--red-ink);
+}
+
 .unit-count {
   margin-top: auto;
   padding-top: var(--space-2);

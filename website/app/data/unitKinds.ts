@@ -1,7 +1,7 @@
 // Each unit's kind and the land (republic) it came from, for the Jedinice page's filters. The lands are those
-// of Yugoslavia's republics, Vojvodina and Kosovo with Srbija. A unit whose men came from two (the Prva
-// proleterska: Serbian and Montenegrin battalions; the sandžačka: Sandžak) has both; the units of the whole army
-// (the proletarian divisions, the Vrhovni štab, the air units) none. Every unit added to data/units.ts needs a
+// of Yugoslavia's republics, Vojvodina and Kosovo with Srbija. A unit whose men came from two (the sandžačka:
+// Sandžak) has both; the units of the whole army (the Prva proleterska, which the NOVJ tables list among the
+// proletarian brigades with no republic, the proletarian divisions, the Vrhovni štab, the air units) none. Every unit added to data/units.ts needs a
 // line here; one without falls back to its id (…-odred, …-divizija, …-brigada) and no land.
 
 export const UNIT_KINDS = ['brigada', 'divizija', 'odred', 'ostalo'] as const
@@ -11,7 +11,7 @@ export type UnitLand = (typeof UNIT_LANDS)[number]
 
 const TABLE: Record<string, [UnitKind, UnitLand[]]> = {
   'prva-licka-brigada': ['brigada', ['hrvatska']],
-  'prva-proleterska-brigada': ['brigada', ['srbija', 'crna-gora']],
+  'prva-proleterska-brigada': ['brigada', []],
   'ljubljanska-brigada': ['brigada', ['slovenija']],
   'druga-licka-brigada': ['brigada', ['hrvatska']],
   'treca-proleterska-brigada': ['brigada', ['srbija', 'crna-gora']],

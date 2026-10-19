@@ -342,6 +342,7 @@ export const sr = {
     years: 'Godina formiranja',
     allYears: 'Sve',
     find: 'Naziv jedinice',
+    partOf: 'U sastavu',
     none: (q: string) => `Nijedna jedinica ne odgovara upitu „${q}“`,
     noneText: 'Pokušajte deo naziva: broj, kraj ili ime, na primer „lička“ ili „13.“.',
     /** The filters by kind and by the republic the unit came from (data/unitKinds.ts) */
