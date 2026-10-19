@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941.',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 17285,
+    soldierCount: 17271,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf', '/pdfs/borci-sutjeske-prva-proleterska.pdf', '/pdfs/prva-proleterska-stroj-u-rudom.pdf', '/pdfs/beogradski-bataljon.pdf', '/pdfs/dalmatinci-prva-proleterska.pdf', '/pdfs/crnogorski-bataljon.pdf', '/pdfs/rudarska-ceta.pdf', '/pdfs/prva-proleterska-dopunski.pdf', '/pdfs/prva-proleterska-garibaldi.pdf']
   },
@@ -286,7 +286,7 @@ export const units: Unit[] = [
     nameEn: '7th Montenegrin Youth Brigade',
     description: 'Formirana 30. decembra 1943. u Kolašinu. Poginuli borci brigade.',
     image: '/images/7-crnogorska-omladinska-brigada.jpg',
-    soldierCount: 603,
+    soldierCount: 602,
     dataFile: '/7-crnogorska-soldiers.json',
     pdfFiles: ['/pdfs/7-crnogorska-omladinska.pdf', '/pdfs/7-crnogorska-zbornik-poginuli.pdf']
   },
@@ -546,7 +546,7 @@ export const units: Unit[] = [
     nameEn: '11th Dalmatian Brigade',
     description: 'Formirana 2. oktobra 1943. na Biokovu. Poginuli, nestali i preživeli borci i starešine štabova i komandi.',
     image: '/images/11-dalmatinska-brigada.jpg',
-    soldierCount: 3579,
+    soldierCount: 3577,
     dataFile: '/11-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/11-dalmatinska.pdf', '/pdfs/zene-11-dalmatinska.pdf', '/pdfs/11-dalmatinska-stabovi.pdf']
   },
@@ -576,7 +576,7 @@ export const units: Unit[] = [
     nameEn: '14th Central Bosnian Brigade',
     description: 'Formirana 17. oktobra 1943. na Ceru kod Prnjavora. Poginuli, umrli i nestali borci, i borci koji su preživeli rat.',
     image: '/images/14-srednjobosanska-brigada.jpg',
-    soldierCount: 2570,
+    soldierCount: 2567,
     dataFile: '/14-srednjobosanska-soldiers.json',
     pdfFiles: ['/pdfs/14-srednjobosanska.pdf']
   },
@@ -626,7 +626,7 @@ export const units: Unit[] = [
     nameEn: 'Cankar Brigade',
     description: 'Formirana 28. septembra 1942. kod Lapinja na Kočevskom. Štabovi brigade i bataljona, poginuli i preživeli borci.',
     image: '/images/cankarjeva-brigada.jpg',
-    soldierCount: 2911,
+    soldierCount: 2910,
     dataFile: '/cankarjeva-soldiers.json',
     pdfFiles: ['/pdfs/cankarjeva.pdf', '/pdfs/cankarjeva-kader.pdf']
   },
@@ -656,7 +656,7 @@ export const units: Unit[] = [
     nameEn: 'Gradnik Brigade',
     description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade, njen štab i narodni heroji.',
     image: '/images/gradnikova-brigada.jpg',
-    soldierCount: 3664,
+    soldierCount: 3662,
     dataFile: '/gradnikova-soldiers.json',
     pdfFiles: ['/pdfs/gradnikova.pdf', '/pdfs/gradnikova-kader.pdf']
   },
@@ -696,7 +696,7 @@ export const units: Unit[] = [
     nameEn: 'West Lower Carniola Detachment',
     description: 'Formiran krajem juna 1942. na Dolenjskom. Poginuli i ostali borci odreda.',
     image: '/images/zapadnodolenjski-odred.jpg',
-    soldierCount: 831,
+    soldierCount: 828,
     dataFile: '/zapadnodolenjski-odred-soldiers.json',
     pdfFiles: ['/pdfs/zapadnodolenjski-odred.pdf']
   },
@@ -786,7 +786,7 @@ export const units: Unit[] = [
     nameEn: '1st Kosovo-Metohija Brigade',
     description: 'Formirana 24. juna 1944. u selu Zbaždi u zapadnoj Makedoniji. Borci brigade, poginuli i ranjeni.',
     image: '/images/1-kosovsko-metohijska-brigada.jpg',
-    soldierCount: 1074,
+    soldierCount: 1072,
     dataFile: '/1-kosovsko-metohijska-soldiers.json',
     pdfFiles: ['/pdfs/1-kosovsko-metohijska.pdf']
   },
@@ -1056,7 +1056,7 @@ export const units: Unit[] = [
     nameEn: 'Osijek Assault Brigade',
     description: 'Formirana 1. marta 1944. kod Slobodne Vlasti blizu Đakova. Poginuli i umrli borci brigade i preživeli, po opštinama, i njene starešine.',
     image: '/images/osjecka-brigada.jpg',
-    soldierCount: 1986,
+    soldierCount: 1985,
     dataFile: '/osjecka-soldiers.json',
     pdfFiles: ['/pdfs/osjecka.pdf', '/pdfs/osjecka-zene.pdf', '/pdfs/osjecka-rukovodioci.pdf']
   },
@@ -1476,7 +1476,7 @@ export const units: Unit[] = [
     nameEn: 'Ninth (Kočevje) Brigade',
     description: 'Formirana 14. septembra 1943. od bataljona Zapadnodolenjskog odreda, u sastavu 18. divizije. Štabovi brigade i bataljona; borci brigade: godina i mesto rođenja, a poginuli i gde su pali.',
     image: '/images/pdf-thumbs/deveta.jpg',
-    soldierCount: 2379,
+    soldierCount: 2362,
     dataFile: '/deveta-soldiers.json',
     pdfFiles: ['/pdfs/deveta.pdf', '/pdfs/deveta-kader.pdf']
   },
