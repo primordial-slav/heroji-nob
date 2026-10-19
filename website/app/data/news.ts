@@ -23,10 +23,10 @@ export const NEWS: NewsItem[] = [
       en: 'Lists that were only images',
     },
     text: {
-      sr: 'Četiri spiska sa znaci.org koji su bili samo skenirane slike sada su pročitani: ceo spisak 1. bokeljske brigade po jedinicama (oko 3.100 boraca), pali borci Nikšićkog i Lovćenskog odreda i borci opštine Teslić. Oko 630 zapisa iz njih dodato je zapisima koji već postoje, a oko 2.000 drugih je među Ostalim borcima.',
-      sl: 'Štirje seznami z znaci.org, ki so bili le skenirane slike, so zdaj prebrani: celoten seznam 1. bokeljske brigade po enotah (okoli 3.100 borcev), padli borci Nikšićkega in Lovćenskega odreda ter borci občine Teslić. Okoli 630 zapisov iz njih je dodanih zapisom, ki že obstajajo, okoli 2.000 drugih je med Drugimi borci.',
-      mk: 'Четири списоци од znaci.org што беа само скенирани слики сега се прочитани: целиот список на 1-ва бокељска бригада по единици (околу 3.100 борци), паднатите борци на Никшиќкиот и Ловќенскиот одред и борците од општината Теслиќ. Околу 630 записи од нив се приклучени кон записите што веќе постојат, а околу 2.000 други се меѓу Другите борци.',
-      en: 'Four lists on znaci.org that were only scanned images have now been read: the 1st Boka Brigade’s whole roll by unit (some 3,100 fighters), the fallen of the Nikšić and Lovćen detachments, and the fighters of the Teslić municipality. About 630 of their entries have been added to records already on the site; some 2,000 others are among the Other fighters.',
+      sr: 'Četiri spiska sa znaci.org koji su bili samo skenirane slike sada su pročitani: ceo spisak 1. bokeljske brigade po jedinicama (oko 3.100 boraca), pali borci Nikšićkog i Lovćenskog odreda i borci opštine Teslić. Oko 640 zapisa iz njih dodato je zapisima koji već postoje, a oko 2.200 drugih je među Ostalim borcima.',
+      sl: 'Štirje seznami z znaci.org, ki so bili le skenirane slike, so zdaj prebrani: celoten seznam 1. bokeljske brigade po enotah (okoli 3.100 borcev), padli borci Nikšićkega in Lovćenskega odreda ter borci občine Teslić. Okoli 640 zapisov iz njih je dodanih zapisom, ki že obstajajo, okoli 2.200 drugih je med Drugimi borci.',
+      mk: 'Четири списоци од znaci.org што беа само скенирани слики сега се прочитани: целиот список на 1-ва бокељска бригада по единици (околу 3.100 борци), паднатите борци на Никшиќкиот и Ловќенскиот одред и борците од општината Теслиќ. Околу 640 записи од нив се приклучени кон записите што веќе постојат, а околу 2.200 други се меѓу Другите борци.',
+      en: 'Four lists on znaci.org that were only scanned images have now been read: the 1st Boka Brigade’s whole roll by unit (some 3,100 fighters), the fallen of the Nikšić and Lovćen detachments, and the fighters of the Teslić municipality. About 640 of their entries have been added to records already on the site; some 2,200 others are among the Other fighters.',
     },
   },
   {

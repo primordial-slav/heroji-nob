@@ -12,10 +12,12 @@ made 1-bit), saved in data-extraction/ocr/lovcenski-odred-pali-borci.json; this 
 Cyrillic, two columns, each entry hanging, numbered through the list and within its place ("642 (36)."), under the
 heading of its srez ("ЦЕТИЊСКИ СРЕЗ") and of its village or town ("Ц е т и њ е"): "1. АНДРИЋ Андра МАРКО — МАРКИША,
 рођен 1914. у Цетињу, кројач, погинуо 1. децембра 1941. на Пљевљима." The book titles the list as the region's
-fallen fighters, and its author's note says it counts every one he could find; every entry goes in (a man of the other
-side would be named so, and none is). The author's note under the title (book pp. 611-612) is not read. IDs
-9084xxxxxx, by the book's number. Each entry names the site's brigades its text names (`units`) and has the box of its
-lines on its first page.
+fallen fighters. The author's note under it (book pp. 611-612, not read) says he counted as fallen fighters everyone
+of the NOP who lost his life in the war, its activists too, and none of the victims of terror: every entry goes in,
+those shot, dead in camps and prisons or killed at home too (the user's decision of 2026-10-19, as for the Spomenica
+crnogorskim antifašistima); one the rule for mixed lists would leave out is marked "role":
+"activist". IDs 9084xxxxxx, by the book's number. Each entry names the site's brigades its text names (`units`) and
+has the box of its lines on its first page.
 
 Output: data-extraction/znaci/lovcenski-odred-pali-borci-entries.json
 Usage: python data-extraction/parse_lovcenski_odred.py [--sample N] [--heads]
@@ -699,12 +701,11 @@ NAMES = {
 }
 
 
-# The author counts among the fallen fighters "everyone who died in the war and belonged to the NOP" (his note under
-# the title), its activists too, and none of the victims of terror; by the rule for such lists (the user's decision of
-# 2026-10-14) only the fighters go in: the entry says borac, names a military duty or an army unit
-# (parse_mosorski_odred_2.fighter, or "u 2. bataljonu ...", "u Lovćenskom NOP odredu"), or he fell, died of wounds,
-# was captured or went missing; one shot, dead in a camp or prison, killed at home, or killed as an illegal party
-# worker stays out
+# Every entry goes in (the user's decision), and one that is no fighter by the rule for mixed lists is marked
+# "role": "activist" (the user's wish of 2026-10-19, that a mixed list's activists be told apart): a fighter's bio says
+# borac, names a military duty or an army unit (parse_mosorski_odred_2.fighter, or "u 2. bataljonu ...", "u
+# Lovćenskom NOP odredu"), or that he fell, died of wounds, was captured or went missing; one shot, dead in a camp or
+# prison, killed at home, or killed as an illegal party worker is an activist
 UNIT_IN = re.compile(r'\bu\s+(?:\S+\s+){0,4}(?:bataljon\w*|brigad\w*|odred\w*|čet[ia]\b|divizij\w*|korpus\w*|KNOJ\w*|'
                      r'artiljerij\w*|NOVJ|NOV\b|partizan\w*|eskadril\w*|bateriji)|\bna\s+vojnoj\s+dužnosti', re.I)
 COMBAT = re.compile(r'\bpogin(?:uo|ula)\b|\bpodleg\w*\b|\bzadobijen\w*|\bu\s+borbi\b|\bzarobljen\w*|\bnesta[oa]\b|'
@@ -809,9 +810,10 @@ def main() -> None:
         recs.append(entry(e, recs[-1] if recs else None))
     alphabet_fix(recs)
     every = recs
-    recs = [r for r in every if fighter(r)]
-    print(f'{len(every)} entries, {len(recs)} fighters kept, {len(every) - len(recs)} left out (shot, died in camps '
-          f'and prisons, killed at home, illegal workers)')
+    for r in every:
+        if not fighter(r):
+            r['role'] = 'activist'
+    print(f"{len(every)} entries, {sum(1 for r in every if r.get('role') == 'activist')} of them activists")
     OUT.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding='utf-8')
     # the book numbers 2,107 entries, and read in the page's order the numbers rise by one
     order = sorted(raw, key=lambda e: (e['page'], e['band'], e['col'], e['top']))

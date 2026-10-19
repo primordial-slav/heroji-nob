@@ -2519,7 +2519,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/lovcenski-odred-pali-borci.pdf',
     thumbnail: '/images/pdf-thumbs/lovcenski-odred-pali-borci.jpg',
     brigadeName: '',
-    description: 'Poginuli, streljani i umrli borci NOR-a 1941–1945. sa teritorije Lovćenskog NOP odreda, po srezovima (cetinjski, barski, kotorski) i selima, sa biografijom svakog (str. 611–713). Autor u pale borce broji sve iz pokreta koji su izgubili život, i aktiviste: uneti su samo oni za koje zapis kaže da su bili borci ili navodi jedinicu vojske, ili da su poginuli, umrli od rana, zarobljeni ili nestali. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Poginuli, streljani i umrli borci NOR-a 1941–1945. sa teritorije Lovćenskog NOP odreda, po srezovima (cetinjski, barski, kotorski) i selima, sa biografijom svakog (str. 611–713). Autor u pale borce broji sve iz pokreta koji su izgubili život, i aktiviste, a žrtve terora ne; uneti su svi. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
   },
   {
     id: 'krusevac-1944-poginuli',

@@ -1036,7 +1036,7 @@ export const units: Unit[] = [
     nameEn: '1st Boka Brigade',
     description: 'Formirana 5. oktobra 1944. u Konjskom kod Trebinja. Svi borci i starešine brigade po jedinicama, i poginuli, umrli i nestali.',
     image: '/images/1-bokeljska-brigada.jpg',
-    soldierCount: 3318,
+    soldierCount: 3315,
     dataFile: '/1-bokeljska-soldiers.json',
     pdfFiles: ['/pdfs/1-bokeljska.pdf', '/pdfs/1-bokeljska-spisak.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zbornik-heroja.jpg',
-    soldierCount: 50320,
+    soldierCount: 50566,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1581,7 +1581,7 @@ export const units: Unit[] = [
     nameEn: 'Other fighters – Montenegro',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Crne Gore, čija jedinica još nije na sajtu.',
     image: '/images/pdf-thumbs/zrtve-rata-1964-crg.jpg',
-    soldierCount: 4262,
+    soldierCount: 4249,
     dataFile: '/ostali-borci-crna-gora.json',
     pdfFiles: []
   },
