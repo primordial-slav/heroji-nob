@@ -80,6 +80,23 @@ def same_father(a: str, b: str) -> bool:
                for p, q in ((ba, bb), (bb, ba)) for x in p for y in q)
 
 
+FOLD_BUT_DJ = str.maketrans('ČĆŽŠčćžš', 'CCZScczs')
+
+
+def initial_of(a: str, b: str) -> bool:
+    """One father is the other's initial: "M." for Milan, "Lj." for Ljubo, "Dž." for Džemal, "Đ." (or "Dj.") for Đura
+    or Djura but not Dušan; "D." for Đura too (a stroke the print or the OCR lost). From the printed names, since
+    fold() writes Đ as D and leaves Lj, Nj, Dž two letters."""
+    def letters(x):
+        return re.sub(r'[^a-zđ]', '', (x or '').translate(FOLD_BUT_DJ).lower().replace('dj', 'đ'))
+    short, long = sorted((letters(a), letters(b)), key=len)
+    if not short:
+        return False
+    if len(short) == 1:
+        return long[0] == short or (short == 'd' and long[0] == 'đ')
+    return short in ('lj', 'nj', 'dz') and long.startswith(short)
+
+
 def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
     agree, clash = [], []
     # a record that calls him a narodni heroj counts only for an entry that does too: a village book's Živković Živko of
@@ -93,7 +110,7 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
             m = re.match(r'^(.{3,}?)(?:ov|ev|in|ova|eva|ina)$', p)
             return bool(m) and len(g) >= 3 and m.group(1) == re.sub(r'[aeiou]$', '', g)
         # (and the same name in another case: the census's nominative "Mašan" against the site's genitive "Mašana")
-        if rf == sf or (len(rf) == 1 and sf.startswith(rf)) or (len(sf) == 1 and rf.startswith(sf)) or (
+        if rf == sf or initial_of(ref['fathers_name'], s.get('middle_name')) or (
                 possessive(rf, sf) or possessive(sf, rf)) or same_father(rf, sf):
             agree.append('father')
         else:
