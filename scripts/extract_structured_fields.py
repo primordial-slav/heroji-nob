@@ -217,6 +217,41 @@ DUTY_AFTER_PLACE = re.compile(
 PREP = r'(?:u mestu|u mjestu|u|na|kod|v|pri|nad|pod|iznad|ispod|blizu|kraj|pored|oko|između|izmedu|prema|pred|za|iz|na putu za|u selu|u s\.|s\.|selo|u rejonu|rejon)'
 STOP_PLACE = re.compile(r'^(?:u NOB|u NOV|u NOVJ|u NOR|u brigadi|u \d|član|stupio|stupila|borac od|od \d|od [a-z]|sa |iz |zvan[ai]|ili |'
                         r'drugih|nema |ostali|nepoznat|\(drugih|\(nema|\(nedostaju)', re.I)
+# a nickname, another surname, a title ("dr.; ", "ing.; " in the Slovene lists) before the bio
+NICK_PREFIX = re.compile(r'^(?:(?:zvan[ai]|ili|rođ\.|roj\.|por\.)\s[^;]{0,60};\s*|(?:dr|ing|arh|mr)\.;\s*)+')
+# The heading a list's parser sets before each entry, up to a colon: the list's title, the village or sub-unit it is
+# printed under ("Pali borci, Zalužnica: Bolješić I. Ivan", "Poginuli, strijeljani i umrli borci NOR-a 1941-1945. sa
+# teritorije Lovćenskog NOP odreda, Kotorski srez, Grbalj: ...", "Mosorski partizanski odred, II dio: komande mjesta,
+# partijsko-politički i terenski radnici Mosora: 1921, Krilo-Jesenice, Omiš"), or the village alone ("Mogorić, općina
+# Medak: 1925, seljanka"). Only its village is a birthplace, never the title or a sub-unit: their words, and a note's
+# heading that starts with a preposition ("U Almanahu Brigade: borac"); a bio's "Borci, Konjic" is not read by this
+HEADING_TITLE = re.compile(
+    r'\b(?:borc[ie]\w*|boraca|borec|pali|palih|padl\w*|poginul\w*|žrtv\w*|spisak|popis|seznam|pregled|nosioc\w*|nosilc\w*|'
+    r'nosilec|štab\w*|kad[ae]r\w*|sastav\w*|rukovod\w*|starje?šin\w*|almanah\w*|naredb\w*|heroj\w*|učesni\w*|udeležen\w*|'
+    r'radnic\w*|zdravstv\w*|odred\w*|brigad\w*|bataljon\w*|divizij\w*|korpus\w*|jedinic\w*|komand\w*|imena|jevrej\w*|'
+    r'spomenic\w*|pripadni\w*|vod|voda|desetin\w*|čet[aeiu]|baterij\w*|eskadril\w*|dio|del|NOB|NOR|NOV|NOP|NOVJ|POS|'
+    r'S?NOUB|KNOJ)\b|^(?:U|Na|Iz|Za|Od|Kod|Sa|Pri|V)\s', re.I)
+# the municipality or district a heading names after the village ("Mogorić, općina Medak", "Kotorski srez")
+ADMIN = re.compile(r'\b(?:op(?:ć|č|št)in\w*|občin\w*|srez\w*|sreza|kotar\w*|okrug\w*)\b', re.I)
+# the scan's marks, which no village's name has ("Mbežanja/}", "Prča- |")
+JUNK = re.compile(r'[/{}|<>\[\]=+#@$%&~]')
+# lists whose heading names the area they cover, not a village (the Montenegrin Spomenica's municipality, its
+# birthplace a column the builder of Ostali borci sets; the holders of the spomenica in Moste-Polje): no birthplace
+AREA_HEADINGS = {'spomenica-crnogorskim-antifasistima.pdf', 'moste-polje-spomenica-1941.pdf'}
+
+
+def list_colons(s: str) -> list[int]:
+    """Where the colons are that end a heading or a clause: outside brackets ("Draškova Kutina (danas: Taskovići)" has
+    none) and followed by a space and more text (not the scan's "Golubincr:ma", "Irr:g", nor a colon at the end)"""
+    out, depth = [], 0
+    for i, ch in enumerate(s):
+        if ch in '([':
+            depth += 1
+        elif ch in ')]':
+            depth = max(0, depth - 1)
+        elif ch == ':' and not depth and re.match(r'\s+\S', s[i + 1:]):
+            out.append(i)
+    return out
 
 # Books whose list has no column for a trade: 22. divizija (birthplace | date | place of death), 34. divizija (duty,
 # brigade, birth, joined, place and date of death: its duty "miner" is a sapper, "Mrežn. Venac" a village)
@@ -350,6 +385,50 @@ class Extractor:
             return False
         return w.lower() in self.occupations and not (w[:1].isupper() and self.places.get(w, 0) >= 2)
 
+    def no_place(self, s: str) -> bool:
+        """A segment of the bio that is no place: an ethnicity, a trade, a duty or a unit, a clause, a number, a phrase
+        too long for a village's name, a word in lowercase"""
+        return bool(s in ETHNIC or looks_ethnic(s) or self.is_occupation(s) or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
+                    or UNIT_WORD_RE.search(s)
+                    or any(rx.search(s) for rx, _ in SPECIAL_UNITS)
+                    or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s) or len(s) > 40 or len(s.split()) > 4
+                    or not re.match(rf'^(?:[{U}]|\((?=[{U}])|(?:s|sv|st)\.\s[{U}])', s))
+
+    def village_like(self, s: str) -> bool:
+        """A heading's part, or the words before a colon, that can be a village: a place by the bio's rules, and no
+        title, sub-unit, municipality or scan's marks"""
+        return not (self.no_place(s) or HEADING_TITLE.search(s) or ADMIN.search(s) or JUNK.search(s) or list_colons(s))
+
+    def heading(self, t: str):
+        """A list's heading before the entry (HEADING_TITLE): the village it names, as parts ("Pali borci, Zalužnica"
+        -> ["Zalužnica"], "Krš — Gradina, općina Kosinj" -> ["Krš", "Gradina"]), the entry's text after it, and whether
+        a title comes before the village; None when the text starts with no heading. The heading ends at the first
+        sentence's first colon, or a later one where the words between are a title's ("Mosorski partizanski odred, II
+        dio: komande mjesta, ...: 1921, Krilo")"""
+        if not re.match(rf'[{U}]', t):
+            return None
+        first = sentences(t)[0]
+        colons = list_colons(first)
+        if not colons:
+            return None
+        end = colons[0]
+        for c in colons[1:]:
+            if re.search(r'\d', first[end:c]):
+                break
+            end = c
+        head, body = first[:end], NICK_PREFIX.sub('', t[end + 1:].strip())
+        village, titled = [], False
+        for p in (clean_segment(p) for p in re.split(r'[,;]', re.sub(r'\s[—–-]\s', ', ', head))):
+            if p and self.village_like(p):
+                village.append(p)
+                if len(village) == 3:
+                    break
+            elif village:
+                break
+            else:
+                titled = True
+        return village, body, titled
+
     # ── birth / ethnicity / occupation ───────────────────────
     def life(self, text: str, code: int) -> dict:
         out = {}
@@ -370,9 +449,11 @@ class Extractor:
             t = re.sub(r'\b([Rr])ođ\.', r'\1ođen', t)
         # a maiden name set before the bio (5. proleterska's Partizanke: "rođena Perunović; Rođena 1894. godine u ...")
         t = re.sub(r'(?:^|(?<=;\s))rođena\s+[A-ZČĆŽŠĐ][\w-]*;\s*', '', t)
+        t = re.sub(rf'(?<=[{L}])\s+:\s+(?=[{U}])', ' ', t)                  # the scan's speck: "Pljevlja, Crna : Gora"
         # a function printed before "rođen" (Treća proleterska, 5. kozaračka): "desetar 3. desetine, rođen 1920, ..."
         m = re.search(r'\b[Rr]ođen[a]?\b', t)
         head = t[:m.start()] if m else ''
+        heading = None
         if m:
             t = t[m.start():]
         elif code in (15, 119):
@@ -389,6 +470,31 @@ class Extractor:
             # odred, 21. tuzlanska); a year after the enlistment or the death is no year of birth
             ym = re.match(r'^[^\d]*?\b1[89]\d\d[.,]\s*', t)
             t = t[ym.end():] if ym and not re.search(r'pogin|umr|nesta|NOB|Brigad|Odred|\bod\b', ym.group(0)) else ''
+        else:
+            heading = self.heading(t)
+            if heading:
+                # a list's heading leads: the place after the scan's "roden", "rađen" in the entry ("Gornji Kraj:
+                # Gostović Mane Dane, roden 1901. godine u Gostovu Polju"), else the heading's village ("Pali borci,
+                # Zalužnica: Bolješić I. Ivan"), else the place after a year of birth that starts the entry ("...: 1921,
+                # Krilo-Jesenice, Omiš"); never the title, nor the entry's name after it
+                village, body, _ = heading
+                m = re.search(r'\b(?:[Rr][oa][dđĐa]|[xi]o[dđ])en(a?)\b', body)      # roden, rađen, roaena, xodena
+                if m:
+                    born = f'rođen{m.group(1)} {body[m.end():].lstrip()}'
+                    bm = BIRTH_DATE_RE.match(born)
+                    rest = born[bm.end():] if bm and bm.group(0).strip() else re.sub(r'^rođena?\s+', '', born)
+                    if not re.match(rf'u\s+[{U}]', rest):
+                        m = None                    # no place said: "roden 1893. Učesnik oktobarske revolucije"
+                bm = BIRTH_DATE_RE.match(body)
+                rest = body[bm.end():] if bm and bm.group(0).strip() else ''
+                if m:
+                    t = born
+                elif village:
+                    t = ''
+                elif re.match(r'u\s', rest) or self.places.get(clean_segment(re.split(r'[,;]|\.\s', rest)[0])):
+                    t = body                        # "1921, Krilo-Jesenice, Omiš", "1924. u Omišu"; not the scan's
+                else:                               # "1923 Mberagragazđ, 24"
+                    t = ''
         bm = BIRTH_DATE_RE.match(t)
         if bm and (bm.group(0).strip() or m):
             t = t[bm.end():]
@@ -422,6 +528,16 @@ class Extractor:
                 if place:
                     break
                 continue
+            colon = list_colons(s)
+            if colon:
+                # a colon ends the place: "u Stančićima: član KPJ" (the book's slip for ";"); the text after it is the
+                # entry, a title before it no place ("u Almanahu: borac")
+                s = clean_segment(s[:colon[0]])
+                if s and self.village_like(s):
+                    place.append(s)
+                break
+            if heading and JUNK.search(s):
+                break                                   # an entry under a heading: "1920 Mbežanja/};??? 24"
             tail = re.match(r'^(.*\S)\s+(\S+)$', s)
             if (tail and (tail.group(2) in ETHNIC or tail.group(2) in self.occupations)   # "Italija Talijan" (comma missing)
                     and re.match(rf'^[{U}]', tail.group(1))):                      # not "brigadni telegrafist"
@@ -430,15 +546,19 @@ class Extractor:
                             if not re.search(rf'(?:^|\s)(?:[{U}][{L}]?|{"|".join(ABBREV)})$', tail.group(1)[:m.start()])), None)
                 place.append(clean_segment(tail.group(1)[:cut]))
                 break
-            if (s in ETHNIC or looks_ethnic(s) or self.is_occupation(s) or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
-                    or UNIT_WORD_RE.search(s)
-                    or any(rx.search(s) for rx, _ in SPECIAL_UNITS)
-                    or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s) or len(s) > 40 or len(s.split()) > 4
-                    or not re.match(rf'^(?:[{U}]|\((?=[{U}])|(?:s|sv|st)\.\s[{U}])', s)):
+            if self.no_place(s):
                 break
             place.append(s)
             if len(place) == 3:
                 break
+        if not place and heading and heading[0]:
+            # the heading's village, in the nominative; one after a list's title ("Pali borci, Zalužnica") is the
+            # list's, not the entry's: read_all takes it only where no entry's bio says where he was born, and it
+            # teaches the known places nothing (a village that opens the text, "Mogorić, općina Medak: 1925", is read
+            # as the bio's first word)
+            place, locative = list(heading[0]), False
+            if heading[2]:
+                out['_heading'] = True
         if place:
             if locative or any(' kod ' in p for p in place):                  # "u selu Makcima kod Velikog Gradišta"
                 place = [self.nominative(p, keep=True, locative=bool(locative) and i == 0) for i, p in enumerate(place)]
@@ -788,8 +908,7 @@ class Extractor:
     def extract(self, info: str, code: int, duty_first: bool = False) -> dict:
         if code in PARSER_FIELDS:
             return {}
-        # a nickname, another surname, a title ("dr.; ", "ing.; " in the Slovene lists) before the bio
-        text = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.|roj\.|por\.)\s[^;]{0,60};\s*|(?:dr|ing|arh|mr)\.;\s*)+', '', info or '').strip()
+        text = NICK_PREFIX.sub('', info or '').strip()
         text = re.sub(r'\s*\((?:općina [^)]*|ČSSR)\)$', '', text)          # 17. slavonska: section the soldier was listed under
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
@@ -925,10 +1044,11 @@ def build_extractor(brigades) -> Extractor:
     ex = Extractor(occupations, places)
     for code, (_, d) in brigades.items():
         for s in d:
-            info = re.sub(r'^(?:(?:zvan[ai]|ili|rođ\.|roj\.|por\.)\s[^;]{0,60};\s*|(?:dr|ing|arh|mr)\.;\s*)+', '', s.get('additional_info') or '')
+            info = NICK_PREFIX.sub('', s.get('additional_info') or '')
             if re.search(r'\bro[dđ]en[a]?\s+(?:\S+\s+){0,2}u\s+(?!s\.|selu)', info[:50]):   # "rođen 1923. godine u"
                 continue                                                  # "rođen u Donjem Lapcu" is a locative, not a place name
-            bp = ex.life(info, code).get('birth_place', '')
+            lf = ex.life(info, code)
+            bp = '' if lf.get('_heading') else lf.get('birth_place', '')
             for p in re.split(r',\s*', bp):
                 if p and re.match(rf'^[{U}][{L}]', p) and '(' not in p:
                     places[p] += 1
@@ -989,7 +1109,7 @@ def her_own_deaths(info: str) -> str:
 def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
-    got = {}
+    got, village = {}, ''
     # another unit's entries: its own fields; a book across units (a hero's portrait): read by no rule here
     entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
     for e in entries:
@@ -999,16 +1119,25 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
         if PARTIZANKE in (e.get('source_url') or ''):
             info = her_own_deaths(info)
         sutjeska = (e.get('pdf_file') or '').startswith('borci-sutjeske')          # the duty at the battle comes first
-        for k, v in ex.extract(info, code, duty_first=sutjeska).items():
+        fields = ex.extract(info, code, duty_first=sutjeska)
+        from_heading = fields.pop('_heading', False)
+        for k, v in fields.items():
             if k == 'death_place' and PARTIZANKE in (e.get('source_url') or ''):
                 continue            # the bios tell the death in a story: "poginula Plana", "Tako se ugasio ..." are no places
             if k != 'rank' and e.get('pdf_file') in NAME_LISTS | ROSTERS:
                 continue            # a list's heading is no birthplace: only the duty after a name is read
+            if k == 'birth_place' and e.get('pdf_file') in AREA_HEADINGS:
+                continue            # the heading names the list's area, not his village
+            if k == 'birth_place' and from_heading:
+                village = village or v          # the village of a list's heading: where no entry says where he was born
+                continue
             got.setdefault(k, v)
         if e.get('pdf_file') in ROSTERS:
             head = re.match(r'([^:;]{3,40}):', info)          # the unit the roster lists him under
             if head and not head.group(1).startswith('Ne zna se'):
                 got.setdefault('unit_detail', head.group(1).strip())
+    if village and not got.get('birth_place'):
+        got['birth_place'] = village
     if got.get('death_place'):
         got['death_place'] = fix_place(got['death_place'])
     if got.get('birth_place'):
