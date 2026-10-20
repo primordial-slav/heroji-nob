@@ -9,9 +9,10 @@ Two lists go in:
   bio's last line apart, so the page's words are grouped into blocks by the gaps between them, and a block that
   begins with no name runs on from the block above it in its column.
   "Prvoborci i nosioci »Partizanske spomenice 1941«": sixteen, numbered, "1. ANTIĆ Mate EMIL, rođen 6. X 1910."
-The other lists stay out: "Organizirani učesnici NOB-a" gives names and births only and counts the AFŽ's women and
-the NOO's men with the fighters (the mixed-list rule finds no fighter in it), those executed in camps as NOP
-collaborators, and the victims of terror.
+  "Popis pogubljenih u logorima i stradalih na drugi način": the five shot as "suradnik NOP-a", marked activists
+  (`role`, the user's decision of 2026-10-19 and 2026-10-20; typed from the page, `EXECUTED`).
+The other lists stay out: "Organizirani učesnici NOB-a" (not in the site's PDF) gives names and births only and counts
+the AFŽ's women and the NOO's men with the fighters, so none of its people can be told apart; and the victims of terror.
 Output: data-extraction/znaci/vinodolska-selca-entries.json, IDs 9052xxxxxx, each with its box.
 Usage: python data-extraction/parse_vinodolska_selca.py
 """
@@ -31,6 +32,7 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / 'scripts'))
 import _karlovac_lists as kl  # noqa: E402
 import entry_boxes  # noqa: E402
+import parse_mosorski_odred_2 as mos  # noqa: E402
 import parse_ofanziva_1942 as ofz  # noqa: E402
 from pdf_coords import viewer_words  # noqa: E402
 
@@ -131,6 +133,44 @@ def record(text: str, kind: str, e: dict, n: int) -> dict:
             'pdf_file': PDF.name, 'pdf_page': e['pdf_page'], 'pdf_x': e['pdf_x'], 'pdf_y': e['pdf_y']}
 
 
+# "Popis pogubljenih u logorima i stradalih na drugi način" (the site PDF's pp. 9-10), read on 2026-10-20 when the
+# user had the activists of the lists beside the fighters' added too, marked (`role: 'activist'`): the five shot "kao
+# suradnik NOP-a"; Kršul Jerolim, killed in the massacre of Kragujevac in 1941, is a victim and stays out. The text
+# layer spaces these justified lines word from word, so the entries are typed from the page (the surname as the text
+# layer has it, for its place); IDs from 9052000101, after the first reading's.
+EXECUTED_TITLE = 'Popis pogubljenih u logorima i stradalih na drugi način'
+EXECUTED = [
+    (9, 'JELČIĆ', 'Jelčić', '', 'Jurja', 'Juraj',
+     'JELČIĆ Jurja JURAJ, rođen 21. V 1908. u Selcima, kao suradnik NOP-a strijeljan u logoru Jasenovac 1945.'),
+    (9, 'JELIČIC', 'Jeličić', '', 'Marije', 'Josip',
+     'JELIČIĆ Marije JOSIP, rođen 19. X 1899. u Selcima, kao suradnik NOP-a strijeljan po Nijemcima 1945.'),
+    (9, 'JELICIĆ', 'Jeličić', '', 'Vicka', 'Juraj',
+     'JELIČIĆ Vicka JURAJ, rođen 23. IV 1920. godine u Selcima, kao suradnik NOP-a strijeljan u logoru Jasenovac 1945.'),
+    (10, 'MAKSIMOVIĆ', 'Maksimović', 'Lončarić', 'Nikole', 'Katarina',
+     'MAKSIMOVIĆ r. Lončarić Nikole KATARINA, rođena 12. IX 1905. u Selcima, strijeljana kao suradnik NOP-a u Nišu.'),
+    (10, 'POBOR', 'Pobor', '', 'Stjepana', 'Juraj',
+     'POBOR Stjepana JURAJ, rođen 6. X 1877. u Selcima, kao suradnik NOP-a strijeljan po ustašama 19. II 1945. kod '
+     'Bjelovara.'),
+]
+
+
+def executed(pdf) -> list[dict]:
+    out = []
+    for i, (pno, printed, last, maiden, father, given, text) in enumerate(EXECUTED, 101):
+        w = next(w for w in viewer_words(pdf.pages[pno - 1]) if w['text'].rstrip(',') == printed)
+        if not mos.activist({'additional_info': text}):
+            continue
+        by = re.search(r'ro\s?đen\w*,?\s+(?:\d{1,2}\.\s*[IVXL]+\s*)?(1[89]\d\d)', text)
+        dy = DEATH.search(text)
+        out.append({'soldier_id': f'{PREFIX}{i:06d}', 'name': f'{last} {given}', 'last_name': last,
+                    'also': [maiden] if maiden else [], 'first_name': given, 'nick': '', 'fathers_name': father,
+                    'birth_year': by.group(1) if by else '', 'born_in': 'Selce, Crikvenica',
+                    'death_year': dy.group(1) if dy else '', 'death_place': '', 'units': [], 'role': 'activist',
+                    'additional_info': f'{EXECUTED_TITLE}: {text}', 'list': EXECUTED_TITLE,
+                    'pdf_file': PDF.name, 'pdf_page': pno, 'pdf_x': round(w['x0'], 1), 'pdf_y': round(w['top'], 1)})
+    return out
+
+
 def main() -> None:
     build_pdf()
     ofz.corpus()
@@ -145,6 +185,7 @@ def main() -> None:
                 n += 1
                 out.append(record(ln['text'].strip(), 'spomenica', {'pdf_page': SPOMENICA, 'pdf_x': round(ln['x0'], 1),
                                                                     'pdf_y': round(ln['top'], 1)}, n))
+        out += executed(pdf)
     stats = entry_boxes.fill_boxes(out)
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f"{sum(r['list'] == TITLES['fallen'] for r in out)} fallen, {sum(r['list'] == TITLES['spomenica'] for r in out)} "

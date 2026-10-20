@@ -145,10 +145,22 @@ def tables(pdf) -> list[dict]:
     return rows
 
 
+# the dead of "Padli za svobodo" outside the army who were the movement's people, read one by one on 2026-10-20 when
+# the user had the activists beside the fighters added too, marked (`role: 'activist'`), by the bio's number in the
+# list: 5 Bogateč Ivan (pristaš OF, died in Mauthausen), 9 Dovšak Ferdinand (aktivist, arrested 1941), 29 Sedmak Danilo
+# (aktivist OF), 46 Štok Livij (in a sabotage group in Trieste, hanged 1945), 54 Tence Josip (the head of the village's
+# liberation movement, died in Buchenwald), 64 Kenda Josip (terenec in the OF's action at the Nabrežina stores) and
+# 66 Sedmak Guido (in the same action, shot). Not Bogateč Peter, who fell in Spain in 1937, nor the deported men whose
+# bios name no part in the movement (44, 47, 55).
+ACTIVISTS = {5, 9, 29, 46, 54, 64, 66}
+DEATH_YEARS = {64: 1943}            # Kenda Josip, shot "ob polomu italijanske vojske", on 12 September (1943)
+
+
 def parse_bio(e: dict, n: int) -> dict | None:
     text = join(e['lines'])
-    deaths = [int(y) for y in WAR_YEAR.findall(text)]
-    if not ARMY.search(text) or not deaths:
+    deaths = [int(y) for y in WAR_YEAR.findall(text)] or ([DEATH_YEARS[n]] if n in DEATH_YEARS else [])
+    activist = n in ACTIVISTS                 # (all of them left out by the army rule before; Kenda's "partizansko zaledje")
+    if not (ARMY.search(text) or activist) or not deaths:
         return None
     last, *given = e['name'].split()
     by = re.search(r'rojen\w*\.?\s+(?:\d+\s*\.\s*\w+\s+)?(1[89]\d\d)', text)
@@ -156,6 +168,7 @@ def parse_bio(e: dict, n: int) -> dict | None:
     return {'soldier_id': f'{PREFIX}{n:06d}', 'name': e['name'], 'last_name': last, 'also': [], 'first_name': given[0],
             'nick': '', 'fathers_name': father.group(1) if father else '', 'birth_year': by.group(1) if by else '',
             'born_in': 'Križ, Trst', 'death_year': str(deaths[-1]),
+            **({'role': 'activist'} if activist else {}),
             'units': sorted({c for p, c in UNITS if re.search(p, text, re.I)}),
             'additional_info': f'Padli za svobodo: {text}', 'list': 'Padli za svobodo',
             'pdf_file': PDF.name, 'pdf_page': e['pdf_page'], 'pdf_x': e['pdf_x'], 'pdf_y': e['pdf_y']}

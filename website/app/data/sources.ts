@@ -2123,7 +2123,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00002581',
     thumbnail: '/images/pdf-thumbs/staromajdansko.jpg',
     brigadeName: '',
-    description: 'Poginuli borci i žrtve fašističkog terora sa područja Starog Majdana kod Sanskog Mosta, po selima, svaki s kratkom biografijom (str. 177–216, sela od Ališića do Podluga). Uneti su samo borci poginuli u NOR-u, ne i žrtve terora. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+    description: 'Poginuli borci i žrtve fašističkog terora sa područja Starog Majdana kod Sanskog Mosta, po selima, svaki s kratkom biografijom (str. 177–246), i spiskovi preminulih i živih boraca i učesnika rata 1983. i nosilaca Partizanske spomenice 1941, samo imena (str. 247–266). Uneti su poginuli borci i nosioci spomenice; borci i učesnici rata iz spiskova imena označeni su kao učesnici, jer spisak ne kaže ko je bio borac, a ko aktivista; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   },
   {
     id: 'otocac-brinje',
@@ -2366,7 +2366,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/krizani-v-boju-za-svobodo.pdf',
     thumbnail: '/images/pdf-thumbs/krizani-v-boju-za-svobodo.jpg',
     brigadeName: '',
-    description: 'Knjiga o ljudima sela Križ kod Trsta u ratu: životopisi palih (uneti su samo oni koji su bili u partizanima ili u vojsci), i tabele Križana u NOVJ i boraca NOV koji su živeli u Križu, s ocem, rođenjem, stupanjem u NOV, činom i jedinicom. Dobrovoljci u Španiji, Križani u italijanskim jedinicama i deportirci nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Knjiga o ljudima sela Križ kod Trsta u ratu: životopisi palih (uneti su oni koji su bili u partizanima ili u vojsci i, označeni kao aktivisti, aktivisti Osvobodilne fronte i terenci), i tabele Križana u NOVJ i boraca NOV koji su živeli u Križu, s ocem, rođenjem, stupanjem u NOV, činom i jedinicom. Dobrovoljci u Španiji, Križani u italijanskim jedinicama i deportirci nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'vinodolska-selca',
@@ -2375,7 +2375,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/vinodolska-selca.pdf',
     thumbnail: '/images/pdf-thumbs/vinodolska-selca.jpg',
     brigadeName: '',
-    description: 'Iz priloga knjige o Selcima kod Crikvenice u ratu: spisak boraca iz Selaca poginulih u NOB, s dužnošću, jedinicom, rođenjem i pogibijom, i prvoborci i nosioci Partizanske spomenice 1941. Spisak organizovanih učesnika NOB (samo imena, s članicama AFŽ-a i odbornicima) i spiskovi žrtava nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Iz priloga knjige o Selcima kod Crikvenice u ratu: spisak boraca iz Selaca poginulih u NOB, s dužnošću, jedinicom, rođenjem i pogibijom, i prvoborci i nosioci Partizanske spomenice 1941. Uneti su i, označeni kao aktivisti, saradnici NOP-a pogubljeni u logorima. Spisak organizovanih učesnika NOB (samo imena, s članicama AFŽ-a i odbornicima) i spiskovi žrtava nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'susak-rijeka-spomenica',
@@ -2420,7 +2420,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://znaci.org/00001/199_15.htm',
     thumbnail: '/images/pdf-thumbs/sanitetska-sluzba-lekari.jpg',
     brigadeName: '',
-    description: 'Lekari koji su izgubili život u ratu, s kratkom biografijom: odakle su, kada su stupili u NOVJ, dužnost i jedinica, smrt (tekst na znaci.org, bez skenirane knjige). Uneti su samo oni koji su bili u vojsci, ne i lekari koji su kao saradnici pokreta ubijeni u pozadini. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Lekari koji su izgubili život u ratu, s kratkom biografijom: odakle su, kada su stupili u NOVJ, dužnost i jedinica, smrt (tekst na znaci.org, bez skenirane knjige). Uneti su oni koji su bili u vojsci, a lekari koji su kao saradnici pokreta ubijeni u pozadini (organizovali ustanak, krili i lečili partizane) označeni su kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'korosko-zdravstvo',
