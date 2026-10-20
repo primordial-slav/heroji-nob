@@ -680,9 +680,11 @@ def main():
             if rest:
                 rec['other_sources'] = [source_entry(m) for m in rest]
             # a man of the movement whom a mixed list names and no book calls a fighter (the user's decision of
-            # 2026-10-19: such lists' activists go in, marked, so the site can tell them apart)
-            if all(m.get('role') == 'activist' for m in g):
-                rec['role'] = 'activist'
+            # 2026-10-19: such lists' activists go in, marked, so the site can tell them apart); 'participant' where
+            # the book doesn't say which he was (Staromajdansko's names-only "borci i učesnici rata", 2026-10-20)
+            roles = {m.get('role') for m in g}
+            if None not in roles:
+                rec['role'] = 'activist' if 'activist' in roles else 'participant'
             records.append(rec)
             counts[f'{len(g)} book(s)'] += 1
             counts['from ' + first['_book'] + (f" ({first['_vol']})" if first['_vol'] else '')] += 1

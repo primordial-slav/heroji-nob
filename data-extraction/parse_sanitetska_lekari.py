@@ -21,6 +21,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import parse_mosorski_odred_2 as mos  # noqa: E402
+
 sys.stdout.reconfigure(encoding='utf-8')
 HERE = Path(__file__).resolve().parent
 SRC = HERE / 'sources' / 'sanitetska-sluzba-lekari-199_15.htm'      # https://znaci.org/00001/199_15.htm
@@ -37,6 +40,15 @@ CIVILIAN = re.compile(r'^Saradnik NOP-a')
 # bios whose only sign of the army is a word in passing, read one by one: the town hospital of Karlovac, doctors
 # killed for helping or hiding partisans, the underground's medical organizer, a prisoner the partisans freed
 NOT_ARMY = {38, 58, 80, 84, 92, 117, 128, 132, 183, 190, 201, 209}
+# the doctors outside the army who were the movement's people go in too, marked (`role: 'activist'`; the user's
+# decisions of 2026-10-19 and 2026-10-20): by the mixed lists' rule (parse_mosorski_odred_2.activist: "Saradnik
+# NOP-a", "Član MK KPJ", "Organizator ustanka", "Aktivista NOP-a"), and by what these bios say a doctor did for it:
+# organized or prepared the uprising, worked with the partisans, hid and treated them, "U NOP-u od 1941"; not the two
+# whose bio names no part in it (127 Nahmijaš Lora, killed by the Ustaše in 1941; 141 Pavičević Andrija, by Chetniks)
+HELPED = re.compile(r'\borganizovanj\w*\s+ustank\w*|\bpripremanj\w*\s+(?:i\s+organizovanj\w*\s+)?ustank\w*|'
+                    r'\bsaradnj\w*\s+sa?\s+partizan\w*|\blečen\w*\s+(?:\S+\s+){0,2}?partizan\w*|'
+                    r'\blečeć\w*\s+(?:\S+\s+){0,3}?partizan\w*|\bleči\w*\s+(?:\S+\s+){0,2}?(?:ranjenik\w*|partizan\w*)|'
+                    r'\bpomoći\s+ranjenim\s+partizan\w*|\bu\s+NOP-u\s+od\b', re.I)
 UNITS = [(r'Centraln\w+ bolnic', 117), (r'Vrhovn\w+ štab|\bVŠ\b', 112), (r'Čačansk\w+ (?:partizansk\w+ )?odred', 126),
          (r'Užičk\w+ (?:partizansk\w+ )?odred', 26), (r'Kalničk\w+ (?:partizansk\w+ )?odred', 58),
          (r'Prv\w+ proletersk\w+ brigad', 1), (r'Drug\w+ proletersk\w+ brigad', 39)]
@@ -81,10 +93,13 @@ def main() -> None:
             last = ' '.join(w if '-' in w else w.capitalize() for w in last.split())
             given, nick, bio = m.group(2).capitalize(), (m.group(3) or '').capitalize(), m.group(5)
         bio_body = re.sub(r'^(?:[^.]*?,\s*)?iz [^,.]+[,.]\s*', '', bio)
+        activist = False
         if CIVILIAN.search(bio_body) and not re.search(r'\bNOVJ\b|partizan|odred|brigad', bio) or not ARMY.search(bio) \
                 or n in NOT_ARMY:
-            left.append((n, f'{last} {given}: {bio[:90]}'))
-            continue
+            if not (mos.activist({'additional_info': bio}) or HELPED.search(bio)):
+                left.append((n, f'{last} {given}: {bio[:90]}'))
+                continue
+            activist = True
         born = re.search(r'[Rr]ođen[a]?\s+(?:\d{1,2}\.\s*\w+\s+)?((?:18|19)\d\d)', bio)
         place = re.search(r'[Rr]ođen[a]?\s+[^.]*?(?:18|19)\d\d\.?\s+u\s+([^.,(]+)', bio)
         died = re.search(r'(?:Poginu|[Uu]mr|[Uu]bij|[Ss]trelj|[Ss]trada|[Nn]esta|[Zz]aklan|[Oo]bešen)\w*[^;]{0,60}?(194\d)', bio)
@@ -94,6 +109,7 @@ def main() -> None:
                     # the birthplace is printed in the locative ("u Bugojnu"), which the matcher would take for
                     # another place: left out, the text has it
                     'born_in': '', 'death_year': died.group(1) if died else '',
+                    **({'role': 'activist'} if activist else {}),
                     'units': units, 'no': n, 'additional_info': f'{TITLE}: {n}. {text}',
                     'source_url': URL, 'source_page': None})
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
