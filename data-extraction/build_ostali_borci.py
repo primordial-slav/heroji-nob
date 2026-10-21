@@ -62,7 +62,9 @@ CENSUS = 'zrtve-rata-1964'                                  # the census's volum
 NAME_FIXES = {'9061000128': ('Albahari', 'Nisim', 'Abrahama'),   # Romano's "Avrama": the hero books' Abraham
               '9035011823': ('Jelovac', 'Milan', 'Vučetin'), '9035011826': ('Jelovac', 'Strainj', 'Vučetin'),  # "Vučegin"
               '9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac', 'Joakim', ''),
-              '9001001039': ('Šoti', 'Pal', 'Pala')}
+              '9001001039': ('Šoti', 'Pal', 'Pala'),
+              '9035015149': ('Migrović', 'Arso', 'Petrov')}   # the Spomenica prints "Ми гровић Петров Арсо" (Podgorica 128)
+NO_NICK = {'9035015149'}      # entries whose parser read a given name as a nickname
 # given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
                '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
@@ -507,6 +509,8 @@ def main():
             if e['soldier_id'] in NAME_FIXES:
                 e['last_name'], e['first_name'], e['fathers_name'] = NAME_FIXES[e['soldier_id']]
                 e['name'] = f"{e['last_name']} {e['first_name']}"
+                if e['soldier_id'] in NO_NICK:
+                    e.pop('nick', None)
             if e['soldier_id'] in GIVEN_FIXES:
                 e['first_name'] = GIVEN_FIXES[e['soldier_id']]
                 e['name'] = f"{e['last_name']} {e['first_name']}"
