@@ -4071,7 +4071,17 @@
     "birth_place": "Raškovci, Doboj",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9022014439",
+        "name": "Bogdanović (Ljubomir) Rade",
+        "additional_info": "rođen 1923, Raškovci (Doboj). Srbin, poginuo 1944. u NOBu, Bišnja-derventa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1256",
+        "source_page": 1256,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Bogdanović",
@@ -12028,7 +12038,21 @@
     "death_date": "17. aprila 1945",
     "death_place": "Putnikovo Brdo, Doboj",
     "rank": "vodnik",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0033000164",
+        "name": "Gunjević Đure Vid",
+        "additional_info": "rođen 1926, Ilova Prnjavor, 3. batalj. 14. brigade, poginuo, 17. IV 1945, Doboj, sahranjen: Teslić",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 13,
+        "pdf_x": 8.2,
+        "pdf_y": 464.3,
+        "pdf_x_end": 624.0,
+        "pdf_y_end": 476.9,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gunjević",
@@ -15334,6 +15358,18 @@
         "pdf_x_end": 264.1,
         "pdf_y_end": 218.1,
         "ref_book": "derventa-pali-borci"
+      },
+      {
+        "soldier_id": "0033000218",
+        "name": "Ivković Đure Nedo",
+        "additional_info": "rođen 1924, Miišinci Derventa, 1 bataljon 14. brigade, poginuo, 15. IV 1945, Matužići, sahranjen: Tešanj",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 20,
+        "pdf_x": 8.1,
+        "pdf_y": 505.4,
+        "pdf_x_end": 629.2,
+        "pdf_y_end": 512.9,
+        "unit_file": "53-srednjobosanska-soldiers.json"
       }
     ]
   },
@@ -42223,7 +42259,27 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056002045",
     "pdf_x_end": 498.4,
-    "birth_place": "D. Lepenica, Prnjavor"
+    "birth_place": "D. Lepenica, Prnjavor",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "00. 05. 1945",
+    "death_place": "Odžak kod Bos. Samca",
+    "other_sources": [
+      {
+        "soldier_id": "0001011914",
+        "name": "Stojković Đure Vladimir",
+        "additional_info": "1925, Lepenica, Srbac, BiH, Srbin, zemljoradnik, u NOB od septembra 1942, u brigadi od januara 1943, prištapske jedinice, borac, poginuo 00. 05. 1945, Odžak kod Bos. Samca",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 237,
+        "pdf_x": 50.1,
+        "pdf_y": 530.7,
+        "pdf_x_end": 357.0,
+        "pdf_y_end": 551.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojković",
@@ -52982,7 +53038,20 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1730",
         "source_page": 1730,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0033000749",
+        "name": "Zivković Đurđa Živko",
+        "additional_info": "rođen 1918, Maglajani Banja Luka, 1. bataljon 14. brigade, poginuo, 25. XII 1944, Ljubatovići Zepče, sahranjen: Teslić",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 20,
+        "pdf_x": 9.6,
+        "pdf_y": 180.7,
+        "pdf_x_end": 525.7,
+        "pdf_y_end": 206.0,
+        "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Ljubatovići Zepče"
   }
 ]

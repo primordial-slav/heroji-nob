@@ -5490,7 +5490,17 @@
     "birth_place": "M. Bastaji",
     "death_type": "poginuo",
     "death_date": "marta 1944",
-    "pdf_x_end": 349.8
+    "pdf_x_end": 349.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021004295",
+        "name": "Bosanac (Ljuban) Milan",
+        "additional_info": "rođen 1921, Daruvar. Srbin, poginuo 1944. u NOBu, Bela stena",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=179",
+        "source_page": 179,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Bosanac",
@@ -10840,6 +10850,14 @@
         "pdf_y_end": 568.7,
         "source_page": 287,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9021003413",
+        "name": "Dražić (Ljuban) Stojan",
+        "additional_info": "rođen 1923, Rastovac (Čazma). Srbin, poginuo 1944. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=140",
+        "source_page": 140,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ]
   },
@@ -12177,6 +12195,14 @@
     "occupation": "zemljoradnik",
     "death_place": "Hercegovac, Garešnica",
     "other_sources": [
+      {
+        "soldier_id": "9021004748",
+        "name": "Džodan (Ljuboje) Ljuban",
+        "additional_info": "rođen 1916, Pakrani (Daruvar). Srbin, poginuo 1944. u NOBu, Hercegovina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=204",
+        "source_page": 204,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0034000197",
         "name": "Džodan Lj Ljuban",
@@ -18693,7 +18719,7 @@
     "fathers_name": "Đ",
     "full_name": "Jancijev Đ Mato",
     "additional_info": "Đurđevac (općina Đurđevac)",
-    "birth_year": "",
+    "birth_year": "1922",
     "pdf_page": 11,
     "pdf_y": 430.0,
     "pdf_x": 215.2,
@@ -18701,7 +18727,35 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001009",
     "birth_place": "Đurđevac",
-    "pdf_x_end": 348.7
+    "pdf_x_end": 348.7,
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0035104301",
+        "name": "Jančijev Đure Mato",
+        "additional_info": "r. 1922, s. Đurđevac, Hrvat, radnik, NOV 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 149,
+        "pdf_x": 297.6,
+        "pdf_y": 385.2,
+        "pdf_x_end": 448.9,
+        "pdf_y_end": 402.5,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035003251",
+        "name": "Jančijev Mato",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 200.2,
+        "pdf_y": 186.4,
+        "pdf_x_end": 269.3,
+        "pdf_y_end": 195.9,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jančić",
@@ -19037,7 +19091,7 @@
     "fathers_name": "Đ",
     "full_name": "Janković Đ Stjepan",
     "additional_info": "Kalinovac (općina Đurđevac)",
-    "birth_year": "",
+    "birth_year": "1924",
     "pdf_page": 11,
     "pdf_y": 438.8,
     "pdf_x": 215.1,
@@ -19045,7 +19099,35 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001029",
     "birth_place": "Kalinovac",
-    "pdf_x_end": 323.6
+    "pdf_x_end": 323.6,
+    "ethnicity": "Hrvat",
+    "occupation": "poljopriv",
+    "other_sources": [
+      {
+        "soldier_id": "0035104270",
+        "name": "Janković Đure Stjepan",
+        "additional_info": "r. 1924, s. Kalinovac, Đurđevac, Hrvat, poljopriv., NOV 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 149,
+        "pdf_x": 297.2,
+        "pdf_y": 633.4,
+        "pdf_x_end": 448.8,
+        "pdf_y_end": 658.6,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035003235",
+        "name": "Janković Stjepan",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 200.9,
+        "pdf_y": 542.5,
+        "pdf_x_end": 286.0,
+        "pdf_y_end": 552.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janković",
@@ -23957,17 +24039,7 @@
     "death_type": "poginuo",
     "death_date": "jula 1944",
     "death_place": "Ludbreg",
-    "pdf_x_end": 351.2,
-    "other_sources": [
-      {
-        "soldier_id": "9021024583",
-        "name": "Kosanović (Dmitar) Stevo",
-        "additional_info": "rođen 1925, Teodorovac (Našice). Srbin, poginuo 1944. u NOBu, Visilovci",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1134",
-        "source_page": 1134,
-        "ref_book": "zrtve-rata-1964-hrv"
-      }
-    ]
+    "pdf_x_end": 351.2
   },
   {
     "last_name": "Kosanovič",
@@ -25948,7 +26020,17 @@
     "birth_place": "Imsovac",
     "death_type": "poginuo",
     "death_date": "aprila 1944",
-    "pdf_x_end": 345.8
+    "pdf_x_end": 345.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021004562",
+        "name": "Krančević (Ljuboje) Savo",
+        "additional_info": "rođen 1925, Imsovci (Daruvar). Srbin, poginuo 1944. u NOBu, Čaglin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=191",
+        "source_page": 191,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Krasavac",
@@ -41095,7 +41177,7 @@
     "fathers_name": "Đ",
     "full_name": "Patacko Đ Martin",
     "additional_info": "Đurđevac (općina Đurđevac)",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 12,
     "pdf_y": 420.3,
     "pdf_x": 63.7,
@@ -41103,7 +41185,23 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016002207",
     "birth_place": "Đurđevac",
-    "pdf_x_end": 167.1
+    "pdf_x_end": 167.1,
+    "ethnicity": "Hrvat",
+    "occupation": "poljopriv",
+    "other_sources": [
+      {
+        "soldier_id": "0035108290",
+        "name": "Patačko Đure Martin",
+        "additional_info": "r. 1921, Đurđevac, Hrvat, poljopriv., NOV 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 159,
+        "pdf_x": 120.2,
+        "pdf_y": 132.4,
+        "pdf_x_end": 271.4,
+        "pdf_y_end": 148.8,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Paunović",
@@ -46601,7 +46699,17 @@
     "death_type": "poginuo",
     "death_date": "23. 1. 1944",
     "death_place": "Caglin",
-    "pdf_x_end": 353.1
+    "pdf_x_end": 353.1,
+    "other_sources": [
+      {
+        "soldier_id": "9021055750",
+        "name": "Radan (Ljubomir) Jovan",
+        "additional_info": "rođen 1925, Bršadin (Vukovar). Srbin, poginuo 1944. u NOBu, Ćaglin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2718",
+        "source_page": 2718,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Radanović",
