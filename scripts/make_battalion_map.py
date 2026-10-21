@@ -56,6 +56,9 @@ REGIONS = {
     # the Una between Dvor and Kostajnica, and Zrinska gora: the end of November 1942
     'dvor': {'west': 16.28, 'east': 16.58, 'south': 45.03, 'north': 45.25,
              'towns': {'Dvor', 'Hrvatska Kostajnica', 'Bosanska Kostajnica', 'Novi Grad'}},
+    # Udbina, Komić and the Lika railway from Medak to Lovinac: December 1942
+    'lovinac': {'west': 15.45, 'east': 15.86, 'south': 44.31, 'north': 44.59,
+                'towns': {'Udbina', 'Lovinac', 'Medak', 'Sveti Rok'}},
 }
 REGION: dict = {}
 LON0 = LAT0 = KX = 0.0

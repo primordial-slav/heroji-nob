@@ -21,6 +21,7 @@ const TERRAIN: Record<Region, () => Promise<Terrain>> = {
   glina: () => import('./terrain/glina'),
   slunj: () => import('./terrain/slunj'),
   dvor: () => import('./terrain/dvor'),
+  lovinac: () => import('./terrain/lovinac'),
 }
 // the ground the sheet being drawn stands on, as Sheet last set it (like W and H)
 let TR: Terrain
@@ -572,6 +573,7 @@ const KEY_ROWS: [ReactNode, string][] = [
 
 const SEASON_CLASS = {
   summer: styles.seasonSummer, earlyAutumn: styles.seasonEarlyAutumn, autumn: styles.seasonAutumn, lateAutumn: styles.seasonLateAutumn,
+  winter: styles.seasonWinter,
 }
 // the hours that shade the sheet (the day's light leaves it as it is); each layer fades in and out on its own
 const LIGHTS: Phase[] = ['night', 'dawn', 'golden', 'dusk']
@@ -926,9 +928,12 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
 // ---------- the episodes along the months ----------
 
 const dayOf = (iso: string) => Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 864e5
-const AXIS_FROM = dayOf('1942-07-12'), AXIS_TO = dayOf('1942-12-03')
+// the line runs from the first episode to a few days past the last episode or rest
+const AXIS_FROM = dayOf('1942-07-12')
+const AXIS_TO = Math.max(...EPISODES.map(ep => dayOf(ep.end)), ...BETWEEN.map(b => dayOf(b.end))) + 3
 const MONTHS_AXIS = [['1942-07-12', 'jul 1942.'], ['1942-08-01', 'avgust'], ['1942-09-01', 'septembar'],
-  ['1942-10-01', 'oktobar'], ['1942-11-01', 'novembar'], ['1942-12-01', 'decembar']] as const
+  ['1942-10-01', 'oktobar'], ['1942-11-01', 'novembar'], ['1942-12-01', 'decembar'], ['1943-01-01', 'januar 1943.'],
+  ['1943-02-01', 'februar'], ['1943-03-01', 'mart']] as const
 
 // The line is time, though not evenly: each episode's bar and name need their room, and the weeks between take what
 // is left in proportion to their length. Names stand above and below the line in turn (the last one ends at its bar),
@@ -978,7 +983,8 @@ function Timeline({ e, go }: { e: number; go: (e: number, s: number) => void }) 
   // the months' names and the rests between the episodes share the line's foot: a month that would run past the
   // line's end goes unnamed, and a rest gives way to a month's name, or goes when too little of it is left to read
   const monthW = (name: string) => name.length * 6.4 + 8
-  const months = MONTHS_AXIS.map(([d, name]) => ({ d, name, x: px(dayOf(d)) })).filter(m => m.x + monthW(m.name) <= length + 2)
+  const months = MONTHS_AXIS.filter(([d]) => dayOf(d) <= AXIS_TO).map(([d, name]) => ({ d, name, x: px(dayOf(d)) }))
+    .filter(m => m.x + monthW(m.name) <= length + 2)
   const rests = BETWEEN.map(b => {
     let x0 = px(dayOf(b.start)), x1 = px(dayOf(b.end) + 1)
     for (const m of months) {
@@ -1060,7 +1066,7 @@ function marked(text: string, foe: Force): ReactNode[] {
 
 // ---------- the card ----------
 
-const pdfPage = (book: number) => book + SOURCE.pdfOffset
+const pdfPage = (book: number) => book + SOURCE.pdfOffset - SOURCE.missing.filter((p) => p < book).length
 
 function People({ list, label }: { list: Episode['fallen']; label: string }) {
   if (!list?.length) return null
@@ -1270,7 +1276,7 @@ export default function Battalion({ initial }: { initial: { epizoda?: string; ko
       <header className={styles.head}>
         <h1 className={styles.headTitle}>Drugi bataljon „Pekiša Vuksan“</h1>
         <p className={styles.headKicker}>Prva lička proleterska brigada „Marko Orešković“ · šta knjiga o brigadi piše o
-          bataljonu, borba po borba · prvi nacrt, leto i jesen 1942.</p>
+          bataljonu, borba po borba · prvi nacrt, jul – decembar 1942.</p>
       </header>
       <Timeline e={pos.e} go={go} />
       <div className={styles.layout}>

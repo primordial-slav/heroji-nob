@@ -6,7 +6,7 @@
 import type { Episode } from './episodes'
 
 export type Phase = 'night' | 'dawn' | 'day' | 'golden' | 'dusk'
-export type Season = 'summer' | 'earlyAutumn' | 'autumn' | 'lateAutumn'
+export type Season = 'summer' | 'earlyAutumn' | 'autumn' | 'lateAutumn' | 'winter'
 export type Light = { phase: Phase; why: string } | null
 
 const MONTHS: Record<string, number> = {
@@ -23,7 +23,8 @@ function dayOf(date: string): [number, number, number] | null {
 
 export function seasonOf(date: string): Season {
   const m = dayOf(date)?.[1] ?? 7
-  return m <= 8 ? 'summer' : m === 9 ? 'earlyAutumn' : m === 10 ? 'autumn' : 'lateAutumn'
+  // the winter from December to February; March to August untinted, as the summer
+  return m === 12 || m <= 2 ? 'winter' : m <= 8 ? 'summer' : m === 9 ? 'earlyAutumn' : m === 10 ? 'autumn' : 'lateAutumn'
 }
 
 // Lika, about the middle of the battalion's ground

@@ -650,7 +650,9 @@
 
 /* every other episode named under the line, where they stand close */
 .episode:nth-of-type(even) .episodeName,
-.episodeOn:nth-of-type(even) .episodeName {
+.episodeOn:nth-of-type(even) .episodeName,
+.episode:nth-of-type(even) .episodeNameEnd,
+.episodeOn:nth-of-type(even) .episodeNameEnd {
   top: 2.15rem;
 }
 
@@ -1065,6 +1067,7 @@
   --season-early-autumn: #e9c98c;
   --season-autumn: #d79d62;
   --season-late-autumn: #9b9386;
+  --season-winter: #93a3b8;
   --light-night: #1d2b55;
   --light-low-sun: #ef9f74;
   --light-golden: #efb35a;
@@ -1104,6 +1107,12 @@
 .seasonLateAutumn {
   fill: var(--season-late-autumn);
   fill-opacity: 0.22;
+}
+
+/* winter: the paper cools toward the grey-blue of a snowless frost */
+.seasonWinter {
+  fill: var(--season-winter);
+  fill-opacity: 0.2;
 }
 
 .light {

@@ -18,7 +18,7 @@ export type Pos = 'n' | 'ne' | 'e' | 'se' | 's' | 'sw' | 'w' | 'nw'
 // Germans. A mark that doesn't say takes it from its label's words, else from its episode (`foe`)
 export type Force = 'it' | 'ndh' | 'cet' | 'de'
 // the sheet an episode is drawn on: scripts/make_battalion_map.py writes each region's ground to terrain/<region>.ts
-export type Region = 'kapela' | 'kosinj' | 'glina' | 'slunj' | 'dvor'
+export type Region = 'kapela' | 'kosinj' | 'glina' | 'slunj' | 'dvor' | 'lovinac'
 
 export type Mark = (
   // a unit's place: an ellipse (rx, ry in km, turned by rot degrees) round `at`
@@ -84,6 +84,7 @@ export const SOURCE = {
   place: 'Beograd 1988',
   pdf: '/pdfs/prva-licka-proleterska.pdf',
   pdfOffset: -4,               // the PDF's page = the book's page - 4
+  missing: [146, 147],         // book pages the scan lacks: from 148 on the PDF's page is the book's - 6
   unitPath: '/units/prva-licka-brigada',
 }
 
@@ -105,6 +106,8 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
   { start: '1942-11-15', end: '1942-11-20', label: 'Slunj, Veljun' },
   { start: '1942-11-21', end: '1942-11-25', label: 'Kladuša, Rujevac' },
   { start: '1942-11-30', end: '1942-12-02', label: 'Podzvizd' },
+  { start: '1942-12-03', end: '1942-12-13', label: 'povratak u Liku' },
+  { start: '1942-12-31', end: '1943-01-14', label: 'Mogorić, Vrebac, Pavlovac' },
 ]
 
 // places used more than once
@@ -217,6 +220,33 @@ const D = {
   crljesnica: [16.4683, 45.1913] as LL,        // OSM: Crlješnica, 288 m; the book's 284
   k219: [16.4642, 45.1841] as LL,              // the elevation's 218 m top under it
   volinja: [16.4862, 45.2015] as LL,
+}
+
+// Udbina, Komić and the railway from Medak to Lovinac: OpenStreetMap's villages and tops, GeoNames' stations
+const L = {
+  udbina: [15.7656, 44.5306] as LL,
+  baste: [15.7398, 44.4903] as LL,             // OSM: the Baste between Udbina and Komić, the book's "kurjački zaselak"
+  komic: [15.7403, 44.4509] as LL,
+  poljice: [15.7886, 44.4558] as LL,
+  paklaric: [15.7594, 44.4300] as LL,          // GeoNames
+  mirkaca: [15.7563, 44.4370] as LL,           // OSM: Mirkača, 1131 m; the book's 1130
+  komaca: [15.7269, 44.4413] as LL,            // OSM: Komača, 1177 m
+  okrugla: [15.7324, 44.4225] as LL,           // OSM: Okrugla, 967 m; the book's 969
+  catrnja: [15.7300, 44.4330] as LL,           // the cut between Komača and Okrugla
+  kopjuv: [15.7535, 44.4131] as LL,            // a 1015 m top of the elevation, for the book's Kopjuv, 1007 m
+  lovinac: [15.6856, 44.3914] as LL,
+  station: [15.6031, 44.4159] as LL,           // GeoNames: the station Raduč
+  raduc: [15.5817, 44.4004] as LL,
+  kruskovac: [15.5675, 44.4306] as LL,
+  bogunica: [15.5444, 44.4417] as LL,          // GeoNames
+  k706: [15.5414, 44.4346] as LL,              // a 694 m top of the elevation south of Bogunica, for the book's 706
+  papuca: [15.5453, 44.4265] as LL,
+  rastik: [15.5404, 44.4215] as LL,            // OSM: Rastik, 613 m; the book's 630
+  zir: [15.6144, 44.4302] as LL,               // OSM: Zir, 850 m; the book's Žir, 852
+  ploca: [15.6492, 44.4605] as LL,             // OSM: Gornja Ploča
+  parcici: [15.6601, 44.4221] as LL,
+  mogoric: [15.5911, 44.4895] as LL,
+  medakSt: [15.5184, 44.4559] as LL,           // GeoNames: the station Medak
 }
 
 export const EPISODES: Episode[] = [
@@ -1699,5 +1729,323 @@ export const EPISODES: Episode[] = [
       { name: 'Dejanović Markov Dragan', id: '0002001393', note: 'komandir mitraljeskog voda („Muso“)' },
     ],
     pages: [122, 128],
+  },
+  {
+    key: 'komic',
+    foe: 'ndh',
+    region: 'lovinac',
+    title: 'Udbinska kolona kod Komića',
+    short: 'Komić',
+    dates: '14. decembra 1942.',
+    start: '1942-12-14', end: '1942-12-14',
+    about: 'Početkom decembra brigada se vraća u Liku kao Prva udarna brigada Šeste divizije, s novim Trećim i Četvrtim '
+      + 'bataljonom, „Božidarom Adžijom“ i „Matijom Gupcem“ iz Četvrtog ličkog odreda. Ustaška posada Udbine, koja je u '
+      + 'septembru poklala Jošan, po dogovoru s Talijanima pokušava da se izvuče prema Lovincu i Raduču, gde je čekaju '
+      + 'talijanske i ustaške jedinice. Prvi su na nju naišli „Pekiša Vuksan“ i „Matija Gubec“.',
+    view: [15.660, 44.385, 15.860, 44.545],
+    places: ['Udbina', 'Komić', 'Kurjak', 'Baste', 'Poljice', 'Lovinac', 'Mutilić', 'Gornja Klapavica'],
+    base: [
+      { t: 'post', at: L.lovinac, label: 'Lovinac: Talijani i ustaše', lp: 's', force: 'it' },
+    ],
+    steps: [
+      {
+        date: '14. decembra 1942.', time: '4.00–5.00',
+        text: 'U maglovito predjutro ustaški satnik Josip Baljak Ventura izvede iz Udbine 416 ustaša i 940 delimično '
+          + 'naoružanih civila i krene prema ustaško-talijanskim jedinicama koje ga po dogovoru čekaju na istočnim '
+          + 'prilazima Lovincu i Raduču. Kad kolona od hiljadu i po ljudi izbije pred kurjački zaselak Baste, na nju su, '
+          + 'piše štab divizije, zapucale razređene straže Udbinske čete Ličkog odreda. Četvrti bataljon, na maršu od '
+          + 'Komića prema Poljicu, tri-četiri kilometra istočnije, između 4 i 5 sati nikakvu pucnjavu nije čuo.',
+        notes: [
+          'Je li iko pucao kod Basta, nije sigurno: tako piše štab divizije, a vodnik „Matije Gupca“ Stevo Kokotović '
+            + 'tvrdi da seoske straže nisu ni pokušale.',
+          'Knjiga kaže da su na prve pucnje kod Komića u taj rejon upućeni Drugi i Četvrti bataljon, „zatečen u '
+            + 'Paklariću“; Drugi je zato nacrtan u Paklariću, a njegova Druga četa, koja tek polazi, u Komiću.',
+          'Put kolone od Udbine do Basta nacrtan je približno.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'march', path: [L.udbina, [15.7560, 44.5120], L.baste],
+            label: '416 ustaša i 940 civila', lp: 'e', at: 0.4, force: 'ndh', guess: true },
+          { t: 'move', side: 'friend', kind: 'march', path: [L.komic, [15.7650, 44.4540], L.poljice], label: 'IV bat.', lp: 'n', at: 0.5, guess: true },
+          { t: 'area', side: 'own', at: L.paklaric, rx: 0.4, ry: 0.25, label: 'II bat. (Paklarić)', lp: 'e', id: 'II', guess: true },
+          // the company goes with the battalion when Palija takes all its companies to Mirkača (step 2)
+          { t: 'area', side: 'own', at: L.komic, rx: 0.2, ry: 0.13, label: '2/II', lp: 'n', id: '2/II', until: 2 },
+        ],
+      },
+      {
+        date: '14. decembra 1942.', when: 'zatim',
+        text: 'Bilo zbog pucnjave kod Basta, bilo zato što se ustaški komandanti boje da kolonu uvedu u uski klanac Tušice '
+          + 'prema Ploči, kolona skrene na jug, prema Komiću, da se kroz usek Čatrnju, između Komače i Malog Romića, '
+          + 'probije prema Lovincu. Prva s njom uđe u borbu Druga četa „Pekiše Vuksana“ (komandir Đurika Potkonjak, '
+          + 'komesar Gojko Milekić), koja je upravo krenula iz Komića preko Poljica prema Klapavicama i Paklariću, za '
+          + 'Četvrtim bataljonom.',
+        notes: [
+          'Tušica, Čatrnja i Mali Romić nisu na kartama. Čatrnja je nacrtana između Komače (1177 m) i Okrugle, nad '
+            + 'čijim je južnim izlazom, po knjizi, Okrugla.',
+          'Gde je četa dočekala kolonu, knjiga ne kaže; nacrtana je kod Komića, odakle je pošla.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'march', path: [L.baste, [15.7400, 44.4700], L.komic, L.catrnja],
+            label: 'udbinska kolona', lp: 'w', at: 0.3, force: 'ndh', guess: true },
+          { t: 'move', side: 'own', kind: 'fire', path: [[15.7520, 44.4535], [15.7445, 44.4515]], label: '2/II', lp: 'e', at: 0, guess: true },
+          { t: 'fight', at: L.komic },
+          { t: 'spot', at: L.catrnja, label: 'Čatrnja', lp: 'w', guess: true },
+        ],
+      },
+      {
+        date: '14. decembra 1942.', when: 'u magli',
+        text: 'Na prve pucnje kod Komića u taj rejon krenu Drugi i Četvrti bataljon. Ilija Palija je čete „Pekiše '
+          + 'Vuksana“, „maglom zagrnute“, lukavo „privukao neprijatelju i stjerao neprijatelja s položaja Mirkače preko '
+          + 'Poljane i Čatrnje“. Pružajući grčevit otpor, ustaše zaposednu Okruglu (969 m), nad južnim izlazom iz '
+          + 'Čatrnje, i Kopjuv (1007 m), i bataljon se tu bori više sati. Istovremeno dva bataljona Druge brigade hitaju '
+          + 'preko Mirkače (1130 m) u rejon Korita.',
+        notes: [
+          'Okruglu OpenStreetMap ima sa 967 m (knjiga: 969), a Mirkaču sa 1131 m (knjiga: 1130).',
+          'Kopjuv nije na kartama; nacrtan je na visu od oko 1015 m jugoistočno od Okrugle, prema visini koju daje '
+            + 'knjiga (1007 m). Mogao bi biti i drugi vis te visine tu blizu.',
+          'Poljana i Korita nisu nacrtani: na kartama su to druga mesta (selo Poljana kod Lovinca, kraško polje Korita '
+            + 'kod Udbine).',
+          'Odakle je bataljon napao Mirkaču i odakle su došla dva bataljona Druge brigade, knjiga ne kaže.',
+        ],
+        marks: [
+          { t: 'kota', at: L.mirkaca, label: '1130 Mirkača', lp: 'e' },
+          { t: 'kota', at: L.okrugla, label: '969 Okrugla', lp: 'w' },
+          { t: 'kota', at: L.kopjuv, label: '1007 Kopjuv', lp: 'e', guess: true },
+          { t: 'move', side: 'own', kind: 'attack', path: [L.paklaric, [15.7575, 44.4345], L.mirkaca, [15.7420, 44.4352], L.catrnja], guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [L.mirkaca, [15.7400, 44.4330], L.okrugla], force: 'ndh', guess: true },
+          { t: 'area', side: 'enemy', at: L.okrugla, rx: 0.35, ry: 0.2, label: 'ustaše', lp: 'w', force: 'ndh' },
+          { t: 'area', side: 'enemy', at: L.kopjuv, rx: 0.35, ry: 0.2, label: 'ustaše', lp: 'e', force: 'ndh', guess: true },
+          { t: 'area', side: 'own', at: [15.7400, 44.4340], rx: 0.4, ry: 0.22, label: 'II bat.', lp: 'n', id: 'II', guess: true },
+          { t: 'move', side: 'ally', kind: 'march', path: [[15.7900, 44.4470], [15.7720, 44.4410], L.mirkaca],
+            label: 'dva bataljona 2. ličke br.', lp: 's', at: 0.3, guess: true },
+        ],
+      },
+      {
+        date: '14. decembra 1942.', time: 'oko 12.00',
+        text: 'Oko podne na produženje desnog krila Drugog bataljona stigne Četvrti: „krenuo sjevernim padinama kote '
+          + 'Mirkača i napao neprijateljsku komoru, koja je svojim zadnjim dijelom izlazila iz Komića“. Deo „Matije '
+          + 'Gupca“ izbije na jugoistočni kraj sela, „braneći selo od paljevine i protjerivajući ustaške bande“.',
+        notes: ['Desno krilo Drugog bataljona knjiga ne smešta; Četvrti je nacrtan kako ga opisuje, severnim padinama '
+          + 'Mirkače prema Komiću.'],
+        marks: [
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.7690, 44.4400], [15.7600, 44.4440], [15.7480, 44.4490], [15.7425, 44.4505]],
+            label: 'IV bat.', lp: 'n', at: 0.3, guess: true },
+          { t: 'move', side: 'enemy', kind: 'march', path: [L.komic, [15.7350, 44.4420], L.catrnja], label: 'komora', lp: 'w', at: 0.4, force: 'ndh', guess: true },
+        ],
+      },
+      {
+        date: '14. decembra 1942.', when: 'u rane popodnevne sate',
+        text: 'Četvrtom bataljonu neočekivano „došao s leđa neprijatelj preko kota iz Lovinca“, i bataljon pređe u '
+          + 'defanzivu. Uz sav napor dva bataljona Prve i dva Druge brigade ishod nije bio naročit: nije bilo jedinstvene '
+          + 'komande ni veza među bataljonima, i ustaše umaknu prema Lovincu.',
+        notes: ['Kuda je neprijatelj iz Lovinca došao, i kuda je kolona otišla, knjiga ne kaže; strele su nacrtane '
+          + 'približno.'],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [L.lovinac, [15.7050, 44.4150], [15.7250, 44.4400], [15.7430, 44.4475]],
+            label: 'iz Lovinca', lp: 'w', at: 0.3, guess: true },
+          { t: 'move', side: 'friend', kind: 'back', path: [[15.7430, 44.4500], [15.7560, 44.4470]], label: 'IV bat.', lp: 'n', guess: true },
+          { t: 'move', side: 'enemy', kind: 'march', path: [L.okrugla, [15.7100, 44.4050], L.lovinac], label: 'ustaše umiču', lp: 'e', at: 0.5, force: 'ndh', guess: true },
+        ],
+      },
+    ],
+    enemy: [
+      'Udbinska ustaška posada satnika Josipa Baljka Venture: 416 ustaša i 940 delimično naoružanih civila '
+        + '(„mobilizirano i naoružano sve stanovništvo sposobno za borbu“)',
+      'Ustaško-talijanske jedinice na istočnim prilazima Lovincu i Raduču, koje su kolonu čekale',
+    ],
+    friends: [
+      'Četvrti bataljon „Matija Gubec“: od Paklarića, severnim padinama Mirkače, na komoru kod Komića',
+      'Dva bataljona Druge ličke brigade: preko Mirkače u rejon Korita',
+      'Straže Udbinske čete Ličkog partizanskog odreda kod Basta',
+    ],
+    result: 'Udbinske ustaše umakle su ovoga puta „ne plativši dug“: po talijanskim dokumentima imale su 9 poginulih, '
+      + 'među njima jednog satnika, 14 ranjenih i „nekoliko nestalih“; po štabu korpusa zarobljen je jedan vojnik. Prva '
+      + 'brigada nije imala gubitaka; Druga je imala dva poginula i deset ranjenih.',
+    pages: [142, 144],
+  },
+  {
+    key: 'raduc',
+    foe: 'it',
+    region: 'lovinac',
+    title: 'Na pruzi kod Raduča',
+    short: 'Raduč',
+    dates: '25–30. decembra 1942.',
+    start: '1942-12-25', end: '1942-12-30',
+    about: 'Talijani se spremaju da napuste Liku, a Šesta divizija treba da ovlada prugom od Medka do Gračaca. Na '
+      + 'katolički Božić, 25. decembra u 17 sati, kad se računa da je pažnja branilaca posle božićnog ručka najslabija, '
+      + 'brigade napadaju uporišta duž pruge. Prva napada utvrđenu železničku stanicu Raduč, a „Pekiša Vuksan“ treba da '
+      + 'je zaštiti od Metka, odakle dolaze ustaše, domobrani i Talijani divizije „Re“.',
+    view: [15.495, 44.385, 15.685, 44.475],
+    places: ['Raduč', 'Kruškovac', 'Papuča', 'Drenovac Radučki', 'Gornja Ploča', 'Parčići', 'Mogorić', 'Medak', 'Lovinac'],
+    base: [
+      { t: 'post', at: L.station, label: 'stanica Raduč: Talijani i četnici', lp: 's', force: 'it' },
+    ],
+    steps: [
+      {
+        date: '25. decembra 1942.', when: 'pred napad',
+        text: 'Brigada se prikupi u Ploči, odakle je poljskim putem sedam kilometara do stanice Raduč, preko gole, '
+          + 'spržene visoravni na 600 metara, s kamenom gromadom Žira (852 m) na pola puta. Naređenje je: s Gospićkim '
+          + 'bataljonom Ličkog odreda, topom 75 mm i minerskim vodom napasti stanicu i bunker kod mosta zapadno od nje, '
+          + 'porušiti cestu i prugu i postaviti osiguranje prema Metku. Napad na svim sektorima počinje u 17 sati.',
+        notes: ['Ploča je ovde selo Gornja Ploča (OpenStreetMap); Žir je na OpenStreetMap Zir, 850 m (knjiga: 852).',
+          'Put od Ploče do stanice nacrtan je približno.'],
+        marks: [
+          { t: 'area', side: 'friend', at: L.ploca, rx: 0.55, ry: 0.32, label: 'brigada, s II bat.', lp: 'e', until: 1 },
+          { t: 'kota', at: L.zir, label: '852 Žir', lp: 'e' },
+          { t: 'move', side: 'friend', kind: 'march', path: [L.ploca, L.zir, L.station], at: 0.5, guess: true },
+        ],
+      },
+      {
+        date: '25. decembra 1942.', time: '17.00',
+        text: '„Pekiša Vuksan“ zaposedne položaje kod Kruškovca, par kilometara zapadno od stanice, rastera neprijatelja '
+          + 's okolnih čuka i rasporedi se prema Metku tako da može, „ustreba li, a ustrebat će“, odbiti napade od Metka. '
+          + 'Između njega i stanice „Božidar Adžija“ treba da posedne prugu i da napadne bunkere na njoj, a „Matija Gubec“ '
+          + 'zaposeda kote 706, 592 i 601 da spreči odstupanje neprijatelja. Talijane i četnike u stanici napada „Marko '
+          + 'Orešković“, s topom pratećeg voda divizije, ali uzalud: pred bunkerima pogine šest krntijaša. Radne grupe '
+          + 'te večeri razore 1600 metara pruge i sruše most dug 12 metara.',
+        notes: [
+          'Metak nije na kartama. Knjiga ga stavlja osam kilometara od stanice Raduč, a voz iz njega vraća se u Medak; '
+            + 'zato napadi „od Metka“ dolaze sa severozapada, uz prugu.',
+          'Kotu 706 knjiga stavlja jednom kod Bogunice, a jednom „jugozapadno od stanice“; nacrtana je na visu od 694 m '
+            + 'južno od Bogunice, nad Papučom, odakle su Četvrti bataljon napali četnici. Kote 592 i 601 nisu nacrtane.',
+          'Za Treći bataljon knjiga kaže samo: na pruzi, između stanice i Drugog bataljona. Gde su razorena pruga i '
+            + 'most, ne kaže; naređenje je bilo da se pruga poruši „ispred sela Kruškovca“.',
+        ],
+        marks: [
+          // the first positions stand until the battalions are redeployed on the 29th (step 6), which the book doesn't
+          // tell battalion by battalion
+          { t: 'area', side: 'own', at: L.kruskovac, rx: 0.5, ry: 0.28, rot: -30, label: 'II bat.', lp: 'n', until: 6 },
+          { t: 'area', side: 'friend', at: [15.5860, 44.4260], rx: 0.45, ry: 0.2, rot: -35, label: 'III bat.', lp: 's', guess: true, until: 6 },
+          { t: 'area', side: 'friend', at: L.k706, rx: 0.45, ry: 0.28, label: 'IV bat.', lp: 'w', guess: true, until: 6 },
+          { t: 'kota', at: L.k706, label: '706', lp: 'n', guess: true },
+          { t: 'move', side: 'friend', kind: 'stopped', path: [[15.6170, 44.4250], [15.6090, 44.4200], [15.6045, 44.4170]],
+            label: 'I bat.', lp: 'e', at: 0.2, guess: true },
+          { t: 'cut', path: [[15.5960, 44.4205], [15.5880, 44.4250], [15.5790, 44.4300]], label: '1600 m pruge', lp: 's', guess: true },
+        ],
+      },
+      {
+        date: '26. decembra 1942.', when: 'ujutro',
+        text: 'Od Metka od jutra nadiru ustaško-domobranske jedinice. General Pelligra, koji u Metku ima dva pešadijska '
+          + 'bataljona i dve mitraljeske čete divizije „Re“, pošalje vozom 2. domobransku lovačku bojnu. Voz dočekaju '
+          + 'delovi brigade nekoliko kilometara jugoistočno od Metka, kod Bogunice, gde pruga prelazi Vedošića potok: '
+          + 'strojovođa je smrtno ranjen, ali vrati voz u Medak, a oko 800 ustaša i domobrana pređe u oštar napad.',
+        notes: ['Koji su delovi brigade dočekali voz, knjiga ne kaže. Vedošića potok nije na kartama; voz je nacrtan na '
+          + 'pruzi kod Bogunice.'],
+        marks: [
+          { t: 'train', at: [15.5509, 44.4431], label: 'voz s 2. lovačkom bojnom', lp: 'n', force: 'ndh', guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.5180, 44.4530], [15.5350, 44.4450], [15.5500, 44.4385]],
+            label: 'oko 800 ustaša i domobrana', lp: 'n', at: 0.2, force: 'ndh', guess: true },
+          { t: 'fight', at: [15.5509, 44.4431] },
+        ],
+      },
+      {
+        date: '26. decembra 1942.', when: 'zatim',
+        text: 'Jedna ustaška kolona vešto se ubaci u pozadinu „Matije Gupca“. Prva četa Četvrtog bataljona na koti 706 '
+          + 'ne odoli, jer je u taj mah s leđa napadnu četnici iz Papuče; opkoljena, krene u napad na ustaše i bije se '
+          + 'prsa u prsa. Pogine vodnik Ivica Blažević iz Smiljana, a dok ga izvlače, sedamnaestogodišnji Mićo Lemić '
+          + 'Tubonjin i njegov otac Petar. Tešku situaciju reši Treća četa, koju zamenik komandira Đuro Lemić povede u '
+          + 'napad: ustaše se povuku s kote 706 prema Metku i odvedu dvojicu zarobljenih boraca, Danu Brujića i Niku '
+          + 'Vuksana, koji su u Gospiću posle mučenja streljani.',
+        notes: ['Odakle je ustaška kolona ušla u pozadinu Četvrtog bataljona i odakle je napala Treća četa, knjiga ne kaže.'],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.5290, 44.4450], [15.5320, 44.4385], [15.5385, 44.4345]],
+            label: 'ustaška kolona', lp: 'w', at: 0.3, force: 'ndh', guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [L.papuca, [15.5440, 44.4300], [15.5420, 44.4335]], label: 'četnici iz Papuče', lp: 's', at: 0, force: 'cet' },
+          { t: 'fight', at: L.k706 },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.5500, 44.4300], [15.5455, 44.4330], [15.5410, 44.4365]],
+            label: '3/IV (Đ. Lemić)', lp: 'ne', at: 0.1, guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [L.k706, [15.5300, 44.4430], [15.5180, 44.4530]], force: 'ndh', guess: true },
+        ],
+      },
+      {
+        date: '26. decembra 1942.', when: 'pred mrak',
+        text: 'Kod stanice Prva četa Prvog bataljona pođe za komesarom Ilijom Radakovićem („Komunisti i skojevci, za '
+          + 'mnom!“) na bunkere uz vijadukt i, zasuta bombama, odbrana ne odoli. Pred mrak svi bunkeri oko stanice su '
+          + 'zauzeti; uveče minerski vod digne u vazduh železni most na Jadovi. Stanica ostaje u talijanskim rukama.',
+        notes: ['Gde su vijadukt i most na Jadovi, knjiga ne kaže; nisu nacrtani.'],
+        marks: [
+          { t: 'post', at: [15.5995, 44.4185], label: 'bunkeri oko stanice', lp: 'e', taken: true, small: true, guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.6100, 44.4230], [15.6040, 44.4200], [15.6000, 44.4188]], label: '1/I', lp: 'n', at: 0.2, guess: true },
+        ],
+      },
+      {
+        date: '27. decembra 1942.', when: 'preko dana',
+        text: 'Kad su čete „Matije Gupca“ odbacile ustaše prema Metku, vršilac dužnosti komandanta Četvrtog bataljona '
+          + 'Mane Pražić i komandant Drugog Ilija Palija povedu sve snage na četnike u rejonu Papuče. Trećeg dana borbe '
+          + 'brigada ima protiv sebe Talijane, ustaše i četnike, i talijansku avijaciju; jedan avion oboren je između '
+          + 'Raduča i Lovinca. Pešadija dobije tenkove i oklopni voz: dva tenka uništi protivtenkovskim topom komandir '
+          + 'odeljenja Viktor Ostojić, a oklopni voz, zaustavljen gde je pruga razorena i zasut vatrom s obe strane, brzo '
+          + 'se vrati u Medak. Tog dana brigada ima 6 mrtvih i 16 ranjenih.',
+        notes: [
+          'Odakle su Drugi i Četvrti bataljon napali Papuču, knjiga ne kaže.',
+          'Gde su uništeni tenkovi, knjiga ne kaže; oklopni voz je nacrtan na pruzi kod Kruškovca, gde je bila razorena.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: L.papuca, rx: 0.3, ry: 0.18, label: 'četnici', lp: 's', force: 'cet', until: 6 },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.5650, 44.4290], [15.5560, 44.4275], [15.5485, 44.4265]],
+            label: 'II bat.', lp: 's', at: 0.2, guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.5440, 44.4385], [15.5450, 44.4320], [15.5455, 44.4285]],
+            label: 'IV bat.', lp: 'w', at: 0.75, guess: true },
+          { t: 'train', at: [15.5735, 44.4344], label: 'oklopni voz', lp: 'n', armoured: true, force: 'it', guess: true },
+        ],
+      },
+      {
+        date: '28–29. decembra 1942.',
+        text: 'Borbe se vode i četvrtog dana, a zatim štab divizije oceni da je zadatak uglavnom izvršen i da brigade '
+          + 'mogu postepeno da se izvlače. Naređenje 29. decembra: jedan bataljon u Kruškovac, da zadržava neprijatelja i '
+          + 'pred njim se povlači prema Raduču i u Miletić Gaju ili Svetom Roku se poveže s Drugom brigadom; jedan u '
+          + 'Parčiće, s patrolama prema stanici; dva u Ploču i Mogorić. Pre nego što jedinice napuste položaje, „od '
+          + 'neprestane artiljerijske vatre iz Metka i velikih bacača iz Raduča“ poginu dva borca, a osam je ranjeno.',
+        notes: ['Koji je bataljon gde ostao, knjiga ne kaže; Drugi zato nije posebno označen.'],
+        marks: [
+          { t: 'area', side: 'friend', at: L.kruskovac, rx: 0.35, ry: 0.2, label: 'jedan bataljon', lp: 's' },
+          { t: 'area', side: 'friend', at: L.parcici, rx: 0.35, ry: 0.2, label: 'jedan bataljon', lp: 's' },
+          { t: 'area', side: 'friend', at: L.ploca, rx: 0.35, ry: 0.2, label: 'dva bataljona, Ploča i Mogorić', lp: 'e' },
+          { t: 'area', side: 'friend', at: L.mogoric, rx: 0.35, ry: 0.2 },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.5250, 44.4520], [15.5600, 44.4335]], label: 'artiljerija iz Metka', lp: 'n', at: 0.3, guess: true },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [L.station, [15.5760, 44.4290]], label: 'bacači iz Raduča', lp: 's', at: 0.5 },
+        ],
+      },
+      {
+        date: '30. decembra 1942.', time: '8.00',
+        text: 'U 8 sati neprijatelj krene iz Metka u tri kolone, koje su napadnute samo mestimično, s bokova. Šesta '
+          + 'divizija više nema snage da se održi: borci su promrzli, šesti dan bez krova nad glavom, neredovno hranjeni '
+          + 'i slabo odeveni, a vreme je vedro, s vrlo niskim temperaturama. Brigade se povuku prema Bruvnu i Udbini, a '
+          + 'Talijani s ustašama i četnicima, uz gubitke od 30 mrtvih i još više ranjenih, probiju se preko Raduča u '
+          + 'Lovinac i Ričice, gde se spoje s divizijom „Sassari“, koja s četnicima nastupa od Gračaca. Bataljoni Prve '
+          + 'brigade razmeste se u Mogoriću, Vrepcu, Pavlovcu, Buljmizama i Zavalju.',
+        notes: ['Putevi kolona i povlačenja nacrtani su približno; knjiga ih ne opisuje. Bruvno je izvan ovog lista.'],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.5100, 44.4565], [15.5500, 44.4420], [15.5900, 44.4235], L.station, [15.6400, 44.3950], L.lovinac],
+            label: 'tri kolone iz Metka', lp: 'n', at: 0.15, guess: true },
+          { t: 'move', side: 'friend', kind: 'back', path: [L.kruskovac, [15.5750, 44.4600], L.mogoric], label: 'u Mogorić', lp: 'w', at: 0.5, guess: true },
+          { t: 'move', side: 'friend', kind: 'back', path: [L.ploca, [15.6700, 44.4720]], label: 'prema Udbini', lp: 'e', at: 0.6, guess: true },
+        ],
+      },
+    ],
+    enemy: [
+      'Uporište Raduč: železnička stanica s bunkerima, rovovima i žicom, „snabdjevena velikim brojem automatskih '
+        + 'oruđa“; Talijani i četnici',
+      'U Metku dva pešadijska bataljona i dve mitraljeske čete divizije „Re“ (general Raffaele Pelligra); 26. decembra '
+        + '2. domobranska lovačka bojna, vozom, i oko 800 ustaša i domobrana',
+      'Četnici u Papuči',
+      '27. decembra talijanska avijacija, tenkovi i oklopni voz',
+      '30. decembra tri kolone iz Metka; od Gračaca divizija „Sassari“ s četnicima',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“, s topom 75 mm pratećeg voda divizije: napad na stanicu Raduč',
+      'Treći bataljon „Božidar Adžija“: pruga i bunkeri između stanice i Drugog bataljona',
+      'Četvrti bataljon „Matija Gubec“: kote 706, 592 i 601',
+      'Gospićki bataljon Ličkog odreda, minerski vod i četa za vezu',
+      'Druga i Treća brigada Šeste divizije: napadi duž pruge prema Lovincu, Ričicama i Guduri',
+    ],
+    result: 'Pruga je bila prekinuta pet dana: razoreno je 1600 metara pruge, srušena su dva mosta i zauzeti bunkeri oko '
+      + 'stanice Raduč. Stanicu brigada nije zauzela, i 30. decembra Talijani, ustaše i četnici probili su se do Lovinca. '
+      + 'Od 25. do 30. decembra brigada je imala 17 poginulih i 45 ranjenih, a ustaše su zarobile dvojicu „Gupčevih“ '
+      + 'boraca. Štab divizije javio je da borcima treba nekoliko dana odmora, „ne toliko zbog umorenosti, nego zbog '
+      + 'uređivanja obuće, jer su borci zbog rđavog vremena obosili“.',
+    wounded: [
+      { name: 'Njegovan Nikola', id: '0002005831', note: 'vršilac dužnosti komandira' },
+    ],
+    pages: [148, 153],
   },
 ]
