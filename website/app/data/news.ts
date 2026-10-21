@@ -17,6 +17,15 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-21',
     text: {
+      sr: 'Ime oca je sada u nominativu i kod oko 7.900 boraca kod kojih je ostalo onako kako je štampano u knjizi, najviše iz Mosorskog odreda, IV pomorskog obalnog sektora, 1. krajiške, Čačanskog odreda, 15. majevičke i 1. bokeljske: „Miloša“ je Miloš, „Jove“ Jovo. Gde popis iz 1964. daje oca istog čoveka, uzeto je njegovo ime. Po imenu oca sada ih nalazi i pretraga.',
+      sl: 'Ime očeta je zdaj v imenovalniku tudi pri okoli 7.900 borcih, pri katerih je ostalo tako, kot je natisnjeno v knjigi, največ iz Mosorskega odreda, IV. pomorskega obalnega sektorja, 1. krajiške, Čačanskega odreda, 15. majeviške in 1. bokeljske: »Miloša« je Miloš, »Jove« Jovo. Kjer popis iz leta 1964 daje očeta istega človeka, je vzeto njegovo ime. Po imenu očeta jih zdaj najde tudi iskanje.',
+      mk: 'Името на таткото сега е во основна форма и кај околу 7.900 борци кај кои остана онака како што е отпечатено во книгата, најмногу од Мосорскиот одред, IV поморски крајбрежен сектор, 1-ва краишка, Чачанскиот одред, 15-та мајевичка и 1-ва бокељска: „Miloša“ е Miloš, „Jove“ Jovo. Каде што пописот од 1964 година го дава таткото на истиот човек, земено е неговото име. Според името на таткото сега ги наоѓа и пребарувањето.',
+      en: 'The father’s name is now in its base form for some 7,900 more fighters, where it had stayed as the book prints it, most of them of the Mosor detachment, the IV naval coastal sector, the 1st Krajina, the Čačak detachment, the 15th Majevica and the 1st Boka: “Miloša” is Miloš, “Jove” Jovo. Where the 1964 census gives the same man’s father, his name was taken. Search now finds them by the father’s name too.',
+    },
+  },
+  {
+    date: '2026-10-21',
+    text: {
       sr: 'Mesta rođenja i pogibije prepoznata su po bazi geografskih imena GeoNames: oko 8.400 mesta koja su bila u padežu sada stoje u nominativu („Užicu“ je Užice), a u stablu „Saborci i zemljaci“ borci iz istog sela su zajedno kako god ga knjige pisale, dok dva sela istog imena više nisu jedno. Tako je sa svojim zemljacima povezano još oko 15.000 boraca.',
       sl: 'Kraji rojstva in smrti so prepoznani po zbirki zemljepisnih imen GeoNames: okoli 8.400 krajev, ki so bili v sklonu, je zdaj v imenovalniku (»Užicu« je Užice), v drevesu »Soborci in rojaki« pa so borci iz iste vasi skupaj, kakor koli jo pišejo knjige, dve vasi z istim imenom pa nista več ena. Tako je s svojimi rojaki povezanih še okoli 15.000 borcev.',
       mk: 'Местата на раѓање и загинување се препознаени според базата на географски имиња GeoNames: околу 8.400 места што беа во падеж сега стојат во основна форма („Užicu“ е Užice), а во стеблото „Соборци и земјаци“ борците од исто село се заедно, како и да го пишуваат книгите, додека две села со исто име веќе не се едно. Така со своите земјаци се поврзани уште околу 15.000 борци.',
