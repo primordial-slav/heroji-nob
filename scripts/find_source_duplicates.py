@@ -245,7 +245,7 @@ def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
         # the same name in another case (Nikole / Nikola), an initial (N. / Nikole), a letter misread (Cije / Cvije)
         same = fa & fb or any(x[:4] == y[:4] or (min(len(x), len(y)) >= 4 and one_letter_apart(x, y))
                                for x in fa for y in fb)
-        initial = any(min(len(x), len(y)) == 1 and x[0] == y[0] for x in fa for y in fb)
+        initial = any(initial_of(x, y) for x in fa for y in fb)
         if same:
             agree.append('father')
         elif initial:
@@ -268,6 +268,19 @@ def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
     if duties(a) & duties(b):                       # a duty both name (a list of leaders gives nothing else)
         agree.append('duty')
     return agree, clash
+
+
+# the letters fold() writes as two: Đ, Lj, Nj, Dž ("Đ." folds to 'dj', so an initial is not always one letter)
+LETTER_GROUPS = {'dj', 'lj', 'nj', 'dz'}
+
+
+def initial_of(a: str, b: str) -> bool:
+    """One is the other's initial (folded): 'm' for Milan, 'dj' for Đura or Djura, 'lj' for Ljubo; 'dj' is not
+    Dušan's, but 'd' is Đura's (an initial whose stroke the print or the OCR lost)."""
+    short, long = sorted((a, b), key=len)
+    if len(short) == 1:
+        return long[0] == short
+    return short in LETTER_GROUPS and long.startswith(short)
 
 
 def one_letter_apart(a: str, b: str) -> bool:
