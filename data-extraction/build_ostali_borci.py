@@ -70,7 +70,8 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica'}      # (Ostrvica's census names the head, the father)
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
-POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima'}
+POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
+                      'revolucionarno-grahovo', 'bozice'}       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")
 # books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
 # out of this set adds its unmatched men to Ostali borci (the Spomenica crnogorskim antifašistima was here until the
 # user decided, on 2026-10-14, that every man it names counts as a partisan)
@@ -82,7 +83,8 @@ REFERENCE_ONLY: set = set()
 COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-borci', 'iskra-in-plamen-padli',
                 'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi',   # (those two: the officers who fell)
                 'licko-petrovo-selo',                  # (Ličko Petrovo Selo's table of the fallen)
-                'niksicki-odred-pali-borci'}   # the Nikšić region's fallen: a table of birthplace and year, death place and year
+                'niksicki-odred-pali-borci',   # the Nikšić region's fallen: a table of birthplace and year, death place and year
+                'brod-crna-trava'}             # Brod's table of the fallen: mahala, day and place of death, unit
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
@@ -128,6 +130,14 @@ ONE_MAN = [
     ('9070000003', '9002000320', 'Fiket Mirko-Mesarić, proclaimed a narodni heroj on 24 July 1953 in both books'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
+# entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
+# of one name and birth year)
+TWO_MEN = [
+    ('9085000107', '9001000745', 'Nikolić Živojin-Žoja of Stubline (Obrenovac), killed at Han Pijesak in January 1942, '
+                                 'is not the narodni heroj Nikolić Vujice Živojin-Brka of Stol (Babušnica)'),
+    ('9085000107', '9002000819', 'the same, against Narodni heroji Jugoslavije\'s entry of Brka'),
+]
+TWO_MEN_PAIRS = {frozenset(p[:2]) for p in TWO_MEN}
 
 
 def column_fields(e: dict) -> dict:
@@ -228,6 +238,8 @@ def agreement(a: dict, b: dict) -> set[str] | None:
     """What two entries of different books agree on when they are one man (see the module's note), else None"""
     if frozenset((a['soldier_id'], b['soldier_id'])) in ONE_MAN_PAIRS:
         return {'checked by hand'}
+    if frozenset((a['soldier_id'], b['soldier_id'])) in TWO_MEN_PAIRS:
+        return None
     agree = set()
     fa, fb = father_forms(a), father_forms(b)
     ya, yb = year(a, 'birth_year'), year(b, 'birth_year')

@@ -2126,6 +2126,69 @@ export const sources: PdfSource[] = [
     description: 'Poginuli borci i žrtve fašističkog terora sa područja Starog Majdana kod Sanskog Mosta, po selima, svaki s kratkom biografijom (str. 177–246), i spiskovi preminulih i živih boraca i učesnika rata 1983. i nosilaca Partizanske spomenice 1941, samo imena (str. 247–266). Uneti su poginuli borci i nosioci spomenice; borci i učesnici rata iz spiskova imena označeni su kao učesnici, jer spisak ne kaže ko je bio borac, a ko aktivista; žrtve terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
   },
   {
+    id: 'han-pijesak',
+    title: 'Han Pijesak, prostor-vrijeme-ljudi',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00004058',
+    thumbnail: '/images/pdf-thumbs/han-pijesak.jpg',
+    brigadeName: '',
+    description: 'Borci opštine Han Pijesak i oni koji su pali na njenom području: poginuli u Pjenovcu 21. januara 1942. i u drugoj neprijateljskoj ofanzivi, većinom borci Prve proleterske brigade (str. 106–109), narodni heroji i istaknuti učesnici NOB-a (str. 147–150) i poginuli borci 1941–1945, svaki s kratkom biografijom (str. 151–161). Uneti su i, označeni kao aktivisti, partijski i terenski radnici koje spisak broji među poginulima. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'skakavac',
+    title: 'Skakavac i Skakavčani kod Petrovca',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000067',
+    thumbnail: '/images/pdf-thumbs/skakavac.jpg',
+    brigadeName: '',
+    description: 'Borci i učesnici NOB-a iz sela Skakavca kod Bosanskog Petrovca: prvoborci, nosioci Partizanske spomenice 1941. (str. 163–165), učesnici NOR-a koji su preživeli rat (str. 166–173) i poginuli borci (str. 173–177), svaki s kratkom biografijom, i članovi narodnooslobodilačkih odbora, odbora AFŽ-a, omladinske organizacije i KPJ, samo imena (str. 181–191), uneti kao aktivisti. Preživeli za koje biografija kaže samo da su bili učesnici NOR-a označeni su kao učesnici. Žrtve terora i jedan koji je 1943. prešao četnicima nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'zitoradje',
+    title: 'Žitorađe kroz istoriju',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00005907',
+    thumbnail: '/images/pdf-thumbs/zitoradje.jpg',
+    brigadeName: '',
+    description: 'Učesnici NOR-a iz Žitorađa kod Vladičinog Hana, samo imena (str. 86), ranjeni i poginuli borci iz sela (str. 86–88) i borci srpskih brigada poginuli prilikom oslobođenja sela u septembru i oktobru 1944, svaki s kratkom biografijom (str. 89–91). Žrtve fašističkog terora nisu unete. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'brod-crna-trava',
+    title: 'Brod - selo kod Crne Trave',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000448',
+    thumbnail: '/images/pdf-thumbs/brod-crna-trava.jpg',
+    brigadeName: '',
+    description: 'Prilog III, poginuli 1941–1945. iz sela Brod kod Crne Trave, tabela s mahalom, datumom i mestom pogibije i jedinicom (str. 808–809). Uneti su samo oni za koje tabela navodi jedinicu, jer se među ostalima nalaze i civilne žrtve. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'revolucionarno-grahovo',
+    title: 'Revolucionarno Grahovo',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010235',
+    thumbnail: '/images/pdf-thumbs/revolucionarno-grahovo.jpg',
+    brigadeName: '',
+    description: 'Borci iz Grahova kod Nikšića pali u NOR-u i revoluciji 1941–1945, svaki s kratkom biografijom (str. 93–128), i poginuli narodni heroji (str. 81–91). Uneti su i, označeni kao aktivisti, pripadnici pokreta stradali u zatvorima i logorima, a od žrtava fašističkog terora (str. 129–133) samo aktivisti i borci. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'kolasin',
+    title: 'Kolašin',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484',
+    thumbnail: '/images/pdf-thumbs/kolasin.jpg',
+    brigadeName: '',
+    description: 'Poginuli u NOR-u i revoluciji sa područja Kolašina, svaki s kratkom biografijom (str. 683–724), i nosioci Partizanske spomenice 1941. s dužnošću koju su imali krajem rata (str. 732–743). Aktivisti pokreta označeni su kao aktivisti, a poginuli za koje biografija kaže samo da su bili u NOP-u kao učesnici; od žrtava fašizma i rata (str. 726–731) uneti su samo borci. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
+    id: 'bozice',
+    title: 'Vasojevićko selo Božiće i Božićani',
+    author: 'Vladimir Radovanov Dubak',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00003336',
+    thumbnail: '/images/pdf-thumbs/bozice.jpg',
+    brigadeName: '',
+    description: 'Borci iz Božića kod Andrijevice po bratstvima, samo imena, kako ih autor broji po Konvenciji o borcu (str. 316–317), nosioci Partizanske spomenice 1941. (str. 317) i poginuli kao borci ili saradnici NOPJ (str. 318–319). Poginuli pripadnici četničkog pokreta nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo članovi Porekla.'
+  },
+  {
     id: 'otocac-brinje',
     title: 'Otočac i Brinje u NOB 1941–1945',
     author: '',

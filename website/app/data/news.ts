@@ -15,6 +15,15 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-10-21',
+    text: {
+      sr: 'Sedam knjiga o selima i krajevima iz Digitalne biblioteke Porekla: Han Pijesak, Skakavac kod Petrovca, Žitorađe, Brod kod Crne Trave, Grahovo kod Nikšića, Kolašin i Božiće, oko 1.450 boraca i aktivista; 288 zapisa iz njih dodato je zapisima koji već postoje.',
+      sl: 'Sedem knjig o vaseh in krajih iz digitalne knjižnice Poreklo: Han Pijesak, Skakavac pri Petrovcu, Žitorađe, Brod pri Crni Travi, Grahovo pri Nikšiću, Kolašin in Božiće, okoli 1.450 borcev in aktivistov; 288 zapisov iz njih je dodanih zapisom, ki že obstajajo.',
+      mk: 'Седум книги за селата и краиштата од дигиталната библиотека на Порекло: Хан Пијесак, Скакавац кај Петровац, Житорађе, Брод кај Црна Трава, Грахово кај Никшиќ, Колашин и Божиќе, околу 1.450 борци и активисти; 288 записи од нив се додадени на записите што веќе постојат.',
+      en: 'Seven books on villages and districts from the Poreklo digital library: Han Pijesak, Skakavac near Petrovac, Žitorađe, Brod near Crna Trava, Grahovo near Nikšić, Kolašin and Božiće, some 1,450 fighters and activists; 288 of their entries have been added to records already on the site.',
+    },
+  },
+  {
     date: '2026-10-20',
     text: {
       sr: 'Stari Majdan: uneti su pali borci ostalih sela i spiskovi boraca i učesnika rata iz 1983. godine i nosilaca Partizanske spomenice 1941, oko 1.200 imena; borci i učesnici iz spiskova označeni su kao učesnici. Iz tri druga spiska uneti su i aktivisti NOP-a koji su stradali van vojske, njih 82.',
