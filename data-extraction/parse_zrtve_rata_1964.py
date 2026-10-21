@@ -65,6 +65,18 @@ FATE = re.compile(r'^(?P<nat>[^,]*?), (?P<verb>[^\W\d_]+)'
 END = re.compile(r'\([0-9A-Za-z]{10}\)\s*$')      # the census number ends an entry ("5033s00105" too)
 
 
+def birthplace(village: str, opstina: str) -> str:
+    """The entry's village and općina as one birthplace: "Arbnež, Bar"; the village alone where it is the općina. A
+    district of Belgrade is Belgrade (the census heads them "Beograd-Stari Grad" under "Opština BEOGRAD STARI GRAD",
+    and cuts the longer ones, "Beograd-Čukarica i Rakovi", "Beograd-Palilula i Karabu"); the parts it numbers of one
+    village ("Donje Selište 1", "Donje Selište 2") are that village; and its "Vodžovac" is Voždovac (2026-10-21)"""
+    if village.startswith('Beograd-'):
+        return 'Beograd'
+    village = re.sub(r'\s+\d+$', '', village)
+    opstina = opstina.replace('Vodžovac', 'Voždovac')
+    return village if village == opstina else ', '.join(x for x in (village, opstina) if x)
+
+
 def title_case(s: str) -> str:
     """"BELI MANASTIR" -> "Beli Manastir", "AJDOVŠČINA" -> "Ajdovščina", "HERCEG-NOVI" -> "Herceg-Novi" """
     return re.sub(r'[^\W\d_]+', lambda m: m.group(0)[0].upper() + m.group(0)[1:].lower(), s.strip())
@@ -120,7 +132,7 @@ def read_volume(key: str) -> tuple[list[dict], Counter]:
     doc.close()
     out = []
     for i, e in enumerate(entries, 1):
-        born_in = e['village'] if e['village'] == e['opstina'] else ', '.join(x for x in (e['village'], e['opstina']) if x)
+        born_in = birthplace(e['village'], e['opstina'])
         father = '' if e['father'].lower() in ('nn', 'n.n.', 'n', '') else e['father']
         out.append({
             'soldier_id': f'{prefix}{i:06d}',

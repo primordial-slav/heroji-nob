@@ -112,8 +112,114 @@ def clean_birthplace(value: str) -> str:
         break
     out = ', '.join(p.strip() for p in parts).strip(" ,^'`*") if parts else ''
     out = re.sub(r'\)\.$', ')', out)                                    # "Šabac (opština). zemljoradnik"
+    out = tidy_birthplace(out)
     norm = lambda s: re.sub(r'\s*,\s*', ',', s.strip())                                    # noqa: E731
     return value if norm(out) == norm(value) else out                 # nothing taken off: as it was, its spacing too
+
+
+# what a bio says of a man that no birthplace holds: a duty, a unit, the party, the war (2026-10-21: "Borac brigade",
+# "Zamjenik (pomoćnik) komesara brigade", "Štab brigade", "Lastovo, MC brigada", "Timok, Bio borac Boljevačkog
+# bataljona", "Mitraljeskoj četi Drugog bataljona"); a part that holds one of these words is no place
+NOT_PLACE_WORD = re.compile(
+    r'\b(?:borac|borca|boraca|brigad\w*|bataljon\w*|bat\.|odred\w*|čet[aei]|štab\w*|stab(?:a|u)?|divizij\w*|'
+    r'komandir\w*|komandant\w*|komesar(?:a|i|u|om|ka)?|zam(?:j)?enik\w*|pomoćnik\w*|vodnik\w*|desetar\w*|delegat\w*|kurir\w*|'
+    r'bolničar\w*|puškomitraljez\w*|mitraljez\w*|član\w*|čl\.|(?-i:SKOJ\w*|KPJ|NOB\w*|NOV|NOVJ|NOR|NOO)|poginu\w*|'
+    r'politički|političk[aoi]|obavje?štajn\w*|obaveštajn\w*|odbornik\w*|sekretar\w*|referent\w*|intendant\w*|'
+    r'oficir\w*|podoficir\w*|udarn\w*\s+grup\w*|partizansk\w*\s+odred\w*|[ŠS]pansk(?:i|a|og|ih)|bio\s+(?:je|u)|'
+    r'bila\s+je|učesnik\w*|pripadnik\w*|pokret\w*|simpatizer\w*|kandidat\w*|aktivist\w*|revolucionar\w*|'
+    r'primljen\w*|do\s+rata|clan|(?-i:KPO|ZPO|BPC|GDO|NOO|KP))\b', re.I)
+# the same words where a bio's sentence runs on after the place without a comma: "Split borac", "Sombor desetar",
+# "Bečej politički delegat", "Sukošana poginuo", "Turčinovcu, Virovitica, Hrvat član Skoja", "Hrvat čl. SKOJ-a"
+# (lowercase only: a village's own words are capitalized)
+NOT_PLACE_TAIL = re.compile(
+    r'\s+(?:(?:Srbin|Srpkinja|Hrvat|Hrvatica|Crnogorac|Crnogorka|Musliman|Muslimanka|Slovenac|Slovenka|Jevrejin|'
+    r'Mađar|Slovak)\s+)?(?:borac|desetar|politički|polit\.?|član|čl\.?|poginu\w*|umro|umrla|vodnik|komandir\w*|'
+    r'delegat\w*|kurir|bolničar\w*|puškomitraljezac|mitraljezac|komesar\w*|[tf]\s+v\s+NOV|u\s+NOB|'
+    r'(?:\w+(?:ski|čki|čkn)\s+)?pomoćnik)(?!\w).*$')
+# a Yugoslav republic or province named after the place (the books of the 1970s and 80s): "Krasica, Bakar, SR
+# Hrvatska", "Vreli, SO Istok, SAP Kosovo", "S. Brodac, Bijeljina, SRBiH"; a foreign state keeps its name without
+# the abbreviation ("Sokolovca (SR Rumunija)" -> "(Rumunija)")
+YU_REPUBLIC = re.compile(r'^(?-i:SR|SAP)\s*-?\s*(?:Hrvatsk\w*|Srbij\w*|Sloveni\w*|Bosn\w*(?:\s+i\s+Hercegovin\w*)?|BiH|'
+                         r'Crn\w*\s+Gor\w*|Črn\w*\s+gor\w*|Makedonij\w*|Kosov\w*|Vojvodin\w*|SG)\.?$|'
+                         r'^(?-i:SRBiH|SRBIH|SRS|SRH|SRCG|SRM|SFRJ)\.?(?:\s+\S+)?$|^Jugoslo?ven\w*(?:\s+\w+\s+porekla)?$|'
+                         r'^Jevrej\w*$', re.I)
+UNCLEAR_WORD = {'otac', 'ob', 'ili', 'vodni', 'pravoslavni', 'poljoprivredni', 'pol', 'iz', 'sa', 'živeo', 'nije', 'roćen',
+                'rođen', 'roden', 'zvani', 'zvana', 'rod', 'udata', 'udana', 'kod', 'u', 'na', 'd'}
+
+
+DASH_PREPOSITIONS = {'u', 'na', 'kod', 'iz', 'pri', 'v', 'od', 'do', 'za', 'sa', 's', 'pod', 'nad', 'blizu'}
+DASH_NAMES = {'Kotor', 'Herceg', 'Skender', 'Ivanić', 'Mrkonjić'}
+
+
+def dash_as(text: str, m: re.Match) -> str:
+    """What an em dash between two words of a bio stands for: a comma between a village and its municipality
+    ("Kostel Bregu—Pregrada"), nothing after a preposition ("u — Staniseljićima"), a hyphen in a town's name
+    ("Kotor—Varoš", "Herceg—Novi")"""
+    before = re.search(r'(\S+)$', text[:m.start()])
+    word = before.group(1) if before else ''
+    if word.lower() in DASH_PREPOSITIONS:
+        return ' '
+    if word in DASH_NAMES:
+        return '-'
+    return ', '
+
+
+def tidy_birthplace(value: str) -> str:
+    """A birthplace without what an older reading left in it (2026-10-21): the parts that name a duty, a unit or the
+    party (NOT_PLACE_WORD; nothing left of them: no birthplace), the bio's words run on after the place
+    (NOT_PLACE_TAIL), a Yugoslav republic after it (YU_REPUBLIC), "s." for selo before it, a woman's maiden or married
+    name before it ("rod. Fiamengo, Komiža" -> "Komiža"), an unclosed bracket ("Varna (", "Trnjanama (verovatno,
+    Aleksinac") and a first letter the scan set small ("črna pri Stahovici" -> "Črna pri Stahovici"); a dash between a
+    village and its municipality is read as a comma in the text (dash_as)"""
+    v = value.strip()
+    if not v:
+        return v
+    v = re.sub(r'^(?:rod\.|rođ\.|rođena|udata|udana|ud\.)\s+[A-ZČĆŽŠĐ][\w-]+,\s*(?=[A-ZČĆŽŠĐ])', '', v)
+    v = re.sub(r'^s\.\s+(?=[A-ZČĆŽŠĐ])', '', v)                                  # "s. Jalovik, Šabac": selo
+    v = re.sub(r'\s+-\s*(?=,|$)', '', v)                                          # "Lozovik -, Svetozarevo"
+    # an unclosed bracket: the book's doubt ("(verovatno, Aleksinac" is the municipality), the rest of a note, or a
+    # bracket the scan made of nothing ("Varna (", "(Italijan")
+    if v.count('(') > v.count(')'):
+        v = re.sub(r'\s*\((?:verovatno|vjerovatno|možda),\s*', ', ', v, count=1)
+        v = re.sub(r'\s*\((?:verovatno|vjerovatno|možda|ili|podr|tadašnja|danas)\b[^)]*$', '', v)
+        v = re.sub(r'\s*\(\s*$', '', v)
+        if v.startswith('(') and ')' not in v:
+            v = v[1:]
+    if v.count(')') > v.count('(') and v.endswith(')'):
+        v = v[:-1].rstrip()                                                        # "Jabuka, Pančevo)"
+    v = re.sub(r'\s*\([^()]*\)', lambda m: '' if NOT_PLACE_WORD.search(m.group(0)) else m.group(0), v)  # "(vodnik)"
+    v = re.sub(r',?\s+(?-i:SR|SAP)\s*-?\s*(?:Hrvatsk\w*|Srbij\w*|Sloveni\w*|Bosn\w*(?:\s+i\s+Hercegovin\w*)?|BiH|'
+               r'Crn\w*\s+Gor\w*|Makedonij\w*|Kosov\w*|Vojvodin\w*)$', '', v)         # "Gornji Brežević SR Srbija"
+    v = re.sub(r'(?<=[a-zčćžšđ]{3})\.$', '', v)                                    # "Krnule, Mionica. u NOB"
+    parts = [p.strip() for p in v.split(',')]
+    parts = [re.sub(r'^SO\s+(?=[A-ZČĆŽŠĐ])', '', p) for p in parts]               # "SO Istok": its općina
+    parts = [re.sub(r'\b(?:SR|NR|SFR)\s+(?=[A-ZČĆŽŠĐ][a-zčćžšđ]+\)?$)', '', p)     # "(SR Rumunija)", "SR Mađarska"
+             if not YU_REPUBLIC.match(p) else p for p in parts]
+    # a part that names a duty or a unit ends the place ("Lukovo, Svrljig . Borac brigade": its sentence too)
+    keep = []
+    for p in parts:
+        stop = next((m.start() for m in re.finditer(r'(?<=[a-zčćžšđ]{2})\s*\.\s+', p)
+                     if NOT_PLACE_WORD.search(p[m.end():])), None)
+        p = p[:stop].strip() if stop is not None else p
+        if not p or YU_REPUBLIC.match(p) or (p in ETHNIC and (keep or p not in ('Grk', 'Rom'))):
+            continue                    # "Musliman, Travnik"; not the village Grk ("Grk, Sremska Mitrovica")
+        tail = NOT_PLACE_TAIL.search(p)
+        if tail:
+            p = p[:tail.start()].strip()
+            if (p and p not in ETHNIC and not NOT_PLACE_WORD.search(p) and p not in ('Bio', 'Bila', 'Kao', 'Je')
+                    and not re.fullmatch(r'[A-ZČĆŽŠĐ][a-zčćžšđ]{0,3}\.', p)):
+                keep.append(p)          # "Split borac"; not "Ml." of "Ml. vodnik-komandir voda"
+            break
+        if NOT_PLACE_WORD.search(p):
+            break
+        keep.append(p)
+    v = ', '.join(keep)
+    if re.match(r'^[a-zčćžšđ]', v):
+        first = re.match(r'^[a-zčćžšđ]+', v).group(0)
+        if first in UNCLEAR_WORD or (len(first) < 3 and not v[len(first):].startswith('.')) or re.search(r'\d|[^\w\s,.()\'’-]', v):
+            return ''                                       # "ob.", "otac", "politički", "nije imao ni 16. godina."
+        v = v[0].upper() + v[1:]
+    return v.strip(' ,')
 
 
 # names-only lists of the fallen, books across units whose men without a record are in Ostali borci (122): "Deseta
@@ -436,7 +542,7 @@ class Extractor:
         return village, body, titled
 
     # ── birth / ethnicity / occupation ───────────────────────
-    def life(self, text: str, code: int) -> dict:
+    def life(self, text: str, code: int, group_heading: bool = False) -> dict:
         out = {}
         t = text
         if code == 58:
@@ -493,9 +599,12 @@ class Extractor:
                         m = None                    # no place said: "roden 1893. Učesnik oktobarske revolucije"
                 bm = BIRTH_DATE_RE.match(body)
                 rest = body[bm.end():] if bm and bm.group(0).strip() else ''
+                # a heading of several villages ("Pavlovac—Vrebac—Zavode, općina Medak: 1904, Vrebac, seljak"): the
+                # entry's own village, where it names a known one, says which
+                own = len(village) > 1 and rest and self.places.get(clean_segment(re.split(r'[,;]|\.\s', rest)[0]))
                 if m:
                     t = born
-                elif village:
+                elif village and not own:
                     t = ''
                 elif re.match(r'u\s', rest) or self.places.get(clean_segment(re.split(r'[,;]|\.\s', rest)[0])):
                     t = body                        # "1921, Krilo-Jesenice, Omiš", "1924. u Omišu"; not the scan's
@@ -557,7 +666,11 @@ class Extractor:
             place.append(s)
             if len(place) == 3:
                 break
-        if not place and heading and heading[0]:
+        if not place and heading and heading[0] and len(heading[0]) > 1 and group_heading:
+            # a heading of several villages joined by dashes, "Pavlovac—Vrebac—Zavode", where the entry names none of
+            # them: the heading as printed, which says he is of one of them
+            place, locative = [' — '.join(heading[0])], False
+        elif not place and heading and heading[0]:
             # the heading's village, in the nominative; one after a list's title ("Pali borci, Zalužnica") is the
             # list's, not the entry's: read_all takes it only where no entry's bio says where he was born, and it
             # teaches the known places nothing (a village that opens the text, "Mogorić, općina Medak: 1925", is read
@@ -919,6 +1032,12 @@ class Extractor:
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
             return {}
+        # a dash between a village and its municipality, or between the villages of one heading (Hrvatsko zagorje's
+        # "rođen 1917. u Kostel Bregu—Pregrada", the Karlovac lists' "Pavlovac—Vrebac—Zavode, općina Medak: 1904,
+        # Vrebac"): a comma, so the village is read in the nominative and the entry's own village wins
+        # (after a preposition the scan's dash is nothing, "u — Staniseljićima"; in a town's name a hyphen, "Kotor—Varoš")
+        group_heading = re.match(rf'[^:;.]*[{L}]\s*—\s*[{U}][^:;.]*:\s', text) is not None
+        text = re.sub(rf'(?<=[{L}])\s*—\s*(?=[{U}])', lambda m: dash_as(text, m), text)
         # a month the scan read with a capital inside it: "krajem oKtobra 1944"
         text = re.sub(rf'\b[{L}]+[{U}][{L}]*\b', lambda m: m.group(0).lower() if m.group(0).lower() in MONTH_SET else m.group(0), text)
         text = re.sub(rf'\bSI\.(?=\s?[{U}])', 'Sl.', text)                   # "kod SI. Broda": Sl(avonskog), the l read as I
@@ -947,6 +1066,8 @@ class Extractor:
         if code == 35:
             # "Borci 32. divizije NOVJ": "r. 1923, s. Kloštar, Ivanić Grad, Hrvat, ..." (the roster has names only)
             text = re.sub(r'^r\.\s*(?=1[89]\d\d)', 'rođen ', text)
+            # and "S. Stari Pavijani, Bjelovar, Hrvat, ...": its S. is selo
+            text = re.sub(rf'^S\.\s+(?=[{U}])', '', text)
         if code == 58:
             # Kalnički odred: "r. 1922; Martinišće, Zabok; u KPO od lipnja 1943." or "iz Luke Ludbreške, Ludbreg."
             text = re.sub(r'^(?:dr\.;\s*)?r\.\s*(?=1[89]\d\d)', 'rođen ', text)
@@ -986,7 +1107,7 @@ class Extractor:
             text = re.sub(r'^[^:;]{2,80}:\s*(?:(?:zvan[ai]|dr\.)[^;]{0,60};\s*)*', '', text)
         dm = DEATH_RE.search(text) or re.search('†', text)
         life_text = text[:dm.start()] if dm else text
-        out = self.life(life_text, code)
+        out = self.life(life_text, code, group_heading)
         head = out.pop('_head', '')
         if code == 109:
             out = {k: v for k, v in out.items() if k == 'ethnicity'}       # its parser reads the birthplace and the trade

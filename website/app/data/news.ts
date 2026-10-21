@@ -17,6 +17,15 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-21',
     text: {
+      sr: 'Ispravljeno je oko 8.000 mesta rođenja u koja je ušlo nešto drugo: dužnost, jedinica ili republika („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); poginuli iz Beograda u popisu iz 1964. sada su rođeni u Beogradu, a ne u njegovim opštinama.',
+      sl: 'Popravljenih je okoli 8.000 krajev rojstva, v katere je zašlo kaj drugega: dolžnost, enota ali republika („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); padli iz Beograda v popisu iz leta 1964 so zdaj rojeni v Beogradu, ne v njegovih občinah.',
+      mk: 'Поправени се околу 8.000 места на раѓање во кои влегло нешто друго: должност, единица или република („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); загинатите од Белград во пописот од 1964 година сега се родени во Белград, а не во неговите општини.',
+      en: 'About 8,000 birthplaces that held something else, a duty, a unit or a republic (“Borac brigade”, “Krasica, Bakar, SR Hrvatska”), have been put right; the 1964 census’s fallen from Belgrade are now born in Belgrade, not in its municipalities.',
+    },
+  },
+  {
+    date: '2026-10-21',
+    text: {
       sr: 'Sedam knjiga o selima i krajevima iz Digitalne biblioteke Porekla: Han Pijesak, Skakavac kod Petrovca, Žitorađe, Brod kod Crne Trave, Grahovo kod Nikšića, Kolašin i Božiće, oko 1.450 boraca i aktivista; 288 zapisa iz njih dodato je zapisima koji već postoje.',
       sl: 'Sedem knjig o vaseh in krajih iz digitalne knjižnice Poreklo: Han Pijesak, Skakavac pri Petrovcu, Žitorađe, Brod pri Crni Travi, Grahovo pri Nikšiću, Kolašin in Božiće, okoli 1.450 borcev in aktivistov; 288 zapisov iz njih je dodanih zapisom, ki že obstajajo.',
       mk: 'Седум книги за селата и краиштата од дигиталната библиотека на Порекло: Хан Пијесак, Скакавац кај Петровац, Житорађе, Брод кај Црна Трава, Грахово кај Никшиќ, Колашин и Божиќе, околу 1.450 борци и активисти; 288 записи од нив се додадени на записите што веќе постојат.',
