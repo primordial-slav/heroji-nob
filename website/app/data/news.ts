@@ -17,6 +17,15 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-21',
     text: {
+      sr: 'Mesta rođenja i pogibije prepoznata su po bazi geografskih imena GeoNames: oko 8.400 mesta koja su bila u padežu sada stoje u nominativu („Užicu“ je Užice), a u stablu „Saborci i zemljaci“ borci iz istog sela su zajedno kako god ga knjige pisale, dok dva sela istog imena više nisu jedno. Tako je sa svojim zemljacima povezano još oko 15.000 boraca.',
+      sl: 'Kraji rojstva in smrti so prepoznani po zbirki zemljepisnih imen GeoNames: okoli 8.400 krajev, ki so bili v sklonu, je zdaj v imenovalniku (»Užicu« je Užice), v drevesu »Soborci in rojaki« pa so borci iz iste vasi skupaj, kakor koli jo pišejo knjige, dve vasi z istim imenom pa nista več ena. Tako je s svojimi rojaki povezanih še okoli 15.000 borcev.',
+      mk: 'Местата на раѓање и загинување се препознаени според базата на географски имиња GeoNames: околу 8.400 места што беа во падеж сега стојат во основна форма („Užicu“ е Užice), а во стеблото „Соборци и земјаци“ борците од исто село се заедно, како и да го пишуваат книгите, додека две села со исто име веќе не се едно. Така со своите земјаци се поврзани уште околу 15.000 борци.',
+      en: 'Places of birth and death are now identified with the GeoNames geographical database: some 8,400 places printed in a grammatical case are given in their base form (“Užicu” is Užice), and the “Comrades and neighbours” tree keeps the fighters of one village together however the books spell it, while two villages of one name are no longer one. Some 15,000 more fighters are now linked with their neighbours.',
+    },
+  },
+  {
+    date: '2026-10-21',
+    text: {
       sr: 'Ispravljeno je oko 8.000 mesta rođenja u koja je ušlo nešto drugo: dužnost, jedinica ili republika („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); poginuli iz Beograda u popisu iz 1964. sada su rođeni u Beogradu, a ne u njegovim opštinama.',
       sl: 'Popravljenih je okoli 8.000 krajev rojstva, v katere je zašlo kaj drugega: dolžnost, enota ali republika („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); padli iz Beograda v popisu iz leta 1964 so zdaj rojeni v Beogradu, ne v njegovih občinah.',
       mk: 'Поправени се околу 8.000 места на раѓање во кои влегло нешто друго: должност, единица или република („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); загинатите од Белград во пописот од 1964 година сега се родени во Белград, а не во неговите општини.',

@@ -355,6 +355,10 @@ export const en: Messages = {
     heroLicense: 'https://creativecommons.org/licenses/by-sa/4.0/deed.en',
     spomenica:
       'Partisan Commemorative Medal 1941: image from the register of state emblems of the World Intellectual Property Organization (WIPO), [public domain].',
+    placesTitle: 'Places',
+    places:
+      'Places of birth and death are identified with the [GeoNames] geographical database, licence [CC BY 4.0]. With it, the “Comrades and neighbours” tree keeps together the fighters of one village however the books spell it, and a place a book prints in a grammatical case (“u Užicu”) is given here in its base form.',
+    placesLicense: 'https://creativecommons.org/licenses/by/4.0/deed.en',
   },
 
   date: (day: number | undefined, month: number, year: number) =>

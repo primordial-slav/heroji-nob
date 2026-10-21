@@ -358,6 +358,10 @@ export const sl: Messages = {
     heroLicense: 'https://creativecommons.org/licenses/by-sa/4.0/deed.sl',
     spomenica:
       'Partizanska spomenica 1941: slika iz registra državnih simbolov Svetovne organizacije za intelektualno lastnino (WIPO), [javna domena].',
+    placesTitle: 'Kraji',
+    places:
+      'Kraji rojstva in smrti so prepoznani po zbirki zemljepisnih imen [GeoNames], licenca [CC BY 4.0]. Po njej so v drevesu »Soborci in rojaki« skupaj borci iz iste vasi, kakor koli jo pišejo knjige, kraj, ki je v knjigi v sklonu (»u Užicu«), pa je tu v imenovalniku.',
+    placesLicense: 'https://creativecommons.org/licenses/by/4.0/deed.sl',
   },
 
   date: (day: number | undefined, month: number, year: number) =>

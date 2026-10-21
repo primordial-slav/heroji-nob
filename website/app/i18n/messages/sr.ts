@@ -379,6 +379,10 @@ export const sr = {
     heroLicense: 'https://creativecommons.org/licenses/by-sa/4.0/deed.sr-latn',
     spomenica:
       'Partizanska spomenica 1941: slika iz registra državnih znakova Svetske organizacije za intelektualnu svojinu (WIPO), [javno dobro].',
+    placesTitle: 'Mesta',
+    places:
+      'Mesta rođenja i pogibije prepoznata su po bazi geografskih imena [GeoNames], licenca [CC BY 4.0]. Po njoj su u stablu „Saborci i zemljaci“ zajedno borci iz istog sela, kako god ga knjige pisale, a mesto koje je u knjizi u padežu („u Užicu“) ovde stoji u nominativu.',
+    placesLicense: 'https://creativecommons.org/licenses/by/4.0/deed.sr-latn',
   },
 
   /** The month by name in running text: "8. jula 1942.", "u septembru 1943." */

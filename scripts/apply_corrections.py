@@ -63,6 +63,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(
 from name_utils import BRIGADE_CONFIGS, extract_birth_info
 from soldier_id_utils import generate_soldier_id, parse_soldier_id
 import extract_structured_fields as structured
+import resolved_places
 import feminine_alias
 import entry_boxes
 
@@ -674,6 +675,13 @@ def main():
             filled = structured.fill(soldiers)
             if filled:
                 print(f"    Structured fields read from the bio for {filled} record(s)")
+
+        # a birthplace or place of death resolved through a case gets its village in the nominative
+        # (scripts/resolved_places.py); values corrections set stay
+        if json_path.name in live_files:
+            moved = resolved_places.apply(json_path.name, soldiers, MANUAL_FIELDS)
+            if moved:
+                print(f"    Places put in the nominative: {', '.join(f'{k} {n}' for k, n in moved.items())}")
 
         # units.ts follows the file, also when a re-parse (not a correction) changed its size
         count_updates[brigade_code] = new_count

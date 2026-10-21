@@ -366,6 +366,10 @@ export const mk: Messages = {
     heroLicense: 'https://creativecommons.org/licenses/by-sa/4.0/deed.mk',
     spomenica:
       'Партизанска споменица 1941: слика од регистарот на државни знаци на Светската организација за интелектуална сопственост (WIPO), [јавен домен].',
+    placesTitle: 'Места',
+    places:
+      'Местата на раѓање и загинување се препознаени според базата на географски имиња [GeoNames], лиценца [CC BY 4.0]. Според неа во стеблото „Соборци и земјаци“ заедно се борците од исто село, како и да го пишуваат книгите, а местото што во книгата е напишано во падеж („u Užicu“) тука стои во основна форма.',
+    placesLicense: 'https://creativecommons.org/licenses/by/4.0/deed.mk',
   },
 
   date: (day: number | undefined, month: number, year: number) =>

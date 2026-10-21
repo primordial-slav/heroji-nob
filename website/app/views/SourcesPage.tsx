@@ -79,6 +79,16 @@ export default function SourcesPage({ lang }: { lang: Lang }) {
           />
         </p>
       </section>
+
+      <section className="sources-credits" id="mesta">
+        <h2>{t.placesTitle}</h2>
+        <p>
+          <RichText
+            text={t.places}
+            render={(part, i) => external(i === 0 ? 'https://www.geonames.org/' : t.placesLicense, part)}
+          />
+        </p>
+      </section>
     </div>
   )
 }

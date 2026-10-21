@@ -32,6 +32,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 sys.path.insert(0, str(Path(__file__).parent))
 from name_utils import BRIGADE_CONFIGS  # noqa: E402
 from cleanup_text_fields import live_json_files  # noqa: E402
+import resolved_places  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'website' / 'public' / 'relations' / 'places.json'
@@ -248,6 +249,58 @@ class Places:
         return out, ambiguous
 
 
+def by_resolved_place(files, recs, keyed):
+    """Where the places tool resolved a birthplace to one place, the place is the key: its spellings and cases join
+    ("Gradcu, Virovitica", "Gradac (Virovitica)"), and two villages of one name stay apart ("Gradac, Ploče" is not
+    the Gradac by Virovitica). A printed key whose resolved records all name one place takes its unresolved records
+    along, as does one whose records name one place nearly all (85%, 10 records); one whose records name several
+    keeps its unresolved ones to itself, as before."""
+    gid_of, n_of = {}, Counter()
+    for fi, s in recs:
+        r = (s.get('birth_place') or '').strip()
+        n_of[fi, r] += 1
+        if r and (fi, r) not in gid_of:
+            g = resolved_places.place_id(files[fi], 'birth_place', r)
+            if g:
+                gid_of[fi, r] = g
+    named = defaultdict(Counter)                     # printed key -> the places its resolved records name
+    for pair, key in keyed.items():
+        if pair in gid_of:
+            named[key][gid_of[pair]] += n_of[pair]
+
+    def one_place(key):
+        c = named.get(key)
+        if not c:
+            return None
+        top, n = c.most_common(1)[0]
+        return top if len(c) == 1 or (n >= 0.85 * sum(c.values()) and n >= 10) else None
+
+    out, moved = {}, Counter()
+    for pair in set(keyed) | set(gid_of):
+        key = keyed.get(pair)
+        if pair in gid_of:
+            out[pair] = ('place', gid_of[pair])
+            moved['resolved' if key else 'resolved, unkeyed before'] += 1
+        elif one_place(key):
+            out[pair] = ('place', one_place(key))
+            moved['with its key'] += 1
+        else:
+            out[pair] = key
+            moved['as before'] += 1
+    return out, dict(moved)
+
+
+def muni_label(key, spelled: Counter, votes: Counter | None, places, vspell: Counter) -> str:
+    """the municipality shown beside a place: the one its records print most, none where most print none (a few
+    "Trogir, Šavnik" don't make Trogir Šavnik's)"""
+    if votes is None:
+        return display(spelled) if spelled else ''
+    best = votes.most_common(1)[0][0]
+    if not best or best == places.norm(display(vspell)):              # "Plužine, Plužine"
+        return ''
+    return display(Counter({k: n for k, n in spelled.items() if places.muni(places.norm(k)) == best}) or spelled)
+
+
 def display(spelled: Counter) -> str:
     # the commonest spelling with diacritics and a capital
     best = max(spelled.items(), key=lambda kv: (kv[1] * (2 if re.search('[čćžšđČĆŽŠĐ]', kv[0]) else 1), kv[1]))[0]
@@ -269,19 +322,24 @@ def main():
     raws = Counter(s['birth_place'].strip() for _, s in recs if s.get('birth_place'))
     places = Places(raws)
     keyed, ambiguous = places.keys(recs)
+    keyed, moved = by_resolved_place(files, recs, keyed)
+    print(f'by the resolved places (scripts/resolved_places.py): {moved}')
 
     members = defaultdict(list)
     vspell, mspell = defaultdict(Counter), defaultdict(Counter)
+    mvote = defaultdict(Counter)        # a resolved place's municipality as its records print it, '' for none
     for fi, s in recs:
         r = (s.get('birth_place') or '').strip()
         if (fi, r) not in keyed:
             continue
         key = keyed[fi, r]
         members[key].append([s['soldier_id'], s.get('full_name') or '', fi, life(s)])
-        segs = places.split_glued(places.seg[r])
+        segs = places.split_glued(places.seg[r]) or [r]
         vspell[key][segs[0]] += 1
         if key[1] and len(segs) > 1:
             mspell[key][segs[1]] += 1
+        if key[0] == 'place':
+            mvote[key][places.muni(places.norm(segs[1])) if len(segs) > 1 else ''] += 1
 
     linked = {k: v for k, v in members.items() if len(v) >= 2}
     with_bp = sum(1 for _, s in recs if s.get('birth_place'))
@@ -294,7 +352,8 @@ def main():
         print(f'\n{rule}: {n}\n  ' + '\n  '.join(places.samples[rule]))
     print('\nlargest places:')
     for k, v in sorted(linked.items(), key=lambda kv: -len(kv[1]))[:15]:
-        print(f'  {display(vspell[k])}{", " + display(mspell[k]) if mspell[k] else ""}: {len(v)}  ({len({m[2] for m in v})} units)')
+        muni = muni_label(k, mspell[k], mvote.get(k), places, vspell[k])
+        print(f'  {display(vspell[k])}{", " + muni if muni else ""}: {len(v)}  ({len({m[2] for m in v})} units)')
 
     if args.write:
         order = sorted(linked, key=lambda k: -len(linked[k]))
@@ -302,8 +361,8 @@ def main():
         doc = {
             'files': files,
             # [village, municipality, [[soldier_id, name, file, years], ...]]; the site finds a record's place by its id
-            'places': [[display(vspell[k]), display(mspell[k]) if mspell[k] else '', sorted(linked[k], key=lambda m: m[1])]
-                       for k in order],
+            'places': [[display(vspell[k]), muni_label(k, mspell[k], mvote.get(k), places, vspell[k]),
+                        sorted(linked[k], key=lambda m: m[1])] for k in order],
         }
         OUT.parent.mkdir(parents=True, exist_ok=True)
         OUT.write_text(json.dumps(doc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
