@@ -225,12 +225,17 @@ NICK_PREFIX = re.compile(r'^(?:(?:zvan[ai]|ili|rođ\.|roj\.|por\.)\s[^;]{0,60};\
 # partijsko-politički i terenski radnici Mosora: 1921, Krilo-Jesenice, Omiš"), or the village alone ("Mogorić, općina
 # Medak: 1925, seljanka"). Only its village is a birthplace, never the title or a sub-unit: their words, and a note's
 # heading that starts with a preposition ("U Almanahu Brigade: borac"); a bio's "Borci, Konjic" is not read by this
-HEADING_TITLE = re.compile(
+TITLE_WORDS = (
     r'\b(?:borc[ie]\w*|boraca|borec|pali|palih|padl\w*|poginul\w*|žrtv\w*|spisak|popis|seznam|pregled|nosioc\w*|nosilc\w*|'
     r'nosilec|štab\w*|kad[ae]r\w*|sastav\w*|rukovod\w*|starje?šin\w*|almanah\w*|naredb\w*|heroj\w*|učesni\w*|udeležen\w*|'
     r'radnic\w*|zdravstv\w*|odred\w*|brigad\w*|bataljon\w*|divizij\w*|korpus\w*|jedinic\w*|komand\w*|imena|jevrej\w*|'
-    r'spomenic\w*|pripadni\w*|vod|voda|desetin\w*|čet[aeiu]|baterij\w*|eskadril\w*|dio|del|NOB|NOR|NOV|NOP|NOVJ|POS|'
-    r'S?NOUB|KNOJ)\b|^(?:U|Na|Iz|Za|Od|Kod|Sa|Pri|V)\s', re.I)
+    r'spomenic\w*|pripadni\w*|vod[au]?|desetin\w*|čet[aeiu]|baterij\w*|eskadril\w*|dio|del|listu?|NOB|NOR|NOV|NOP|NOVJ|'
+    r'POS|S?NOUB|KNOJ)\b')
+NOTE_START = r'^(?:U|Na|Iz|Za|Od|Kod|Sa|Pri|V)\s'
+HEADING_TITLE = re.compile(f'{TITLE_WORDS}|{NOTE_START}', re.I)
+# a note in the bio's place, a capitalized preposition and a title's word: "U Almanahu Brigade; nepismen.", "U PT vodu"
+# (not a locative a book printed so, "U Trnovcu, T. Korenica", nor the Slovene "Za vrhe")
+NOTE_RE = re.compile(f'{NOTE_START}.*{TITLE_WORDS}', re.I)
 # the municipality or district a heading names after the village ("Mogorić, općina Medak", "Kotorski srez")
 ADMIN = re.compile(r'\b(?:op(?:ć|č|št)in\w*|občin\w*|srez\w*|sreza|kotar\w*|okrug\w*)\b', re.I)
 # the scan's marks, which no village's name has ("Mbežanja/}", "Prča- |")
@@ -240,16 +245,17 @@ JUNK = re.compile(r'[/{}|<>\[\]=+#@$%&~]')
 AREA_HEADINGS = {'spomenica-crnogorskim-antifasistima.pdf', 'moste-polje-spomenica-1941.pdf'}
 
 
-def list_colons(s: str) -> list[int]:
+def list_colons(s: str, at_end: bool = False) -> list[int]:
     """Where the colons are that end a heading or a clause: outside brackets ("Draškova Kutina (danas: Taskovići)" has
-    none) and followed by a space and more text (not the scan's "Golubincr:ma", "Irr:g", nor a colon at the end)"""
+    none) and followed by a space and more text (not the scan's "Golubincr:ma", "Irr:g"); at_end: also one that ends the
+    text, a heading whose entry starts with the death the text was cut at ("..., Grbalj: poginuo krajem 1944")"""
     out, depth = [], 0
     for i, ch in enumerate(s):
         if ch in '([':
             depth += 1
         elif ch in ')]':
             depth = max(0, depth - 1)
-        elif ch == ':' and not depth and re.match(r'\s+\S', s[i + 1:]):
+        elif ch == ':' and not depth and (re.match(r'\s+\S', s[i + 1:]) or (at_end and not s[i + 1:].strip())):
             out.append(i)
     return out
 
@@ -408,7 +414,7 @@ class Extractor:
         if not re.match(rf'[{U}]', t):
             return None
         first = sentences(t)[0]
-        colons = list_colons(first)
+        colons = list_colons(first, at_end=True)
         if not colons:
             return None
         end = colons[0]
@@ -536,7 +542,7 @@ class Extractor:
                 if s and self.village_like(s):
                     place.append(s)
                 break
-            if heading and JUNK.search(s):
+            if (heading and JUNK.search(s)) or NOTE_RE.match(s):
                 break                                   # an entry under a heading: "1920 Mbežanja/};??? 24"
             tail = re.match(r'^(.*\S)\s+(\S+)$', s)
             if (tail and (tail.group(2) in ETHNIC or tail.group(2) in self.occupations)   # "Italija Talijan" (comma missing)
