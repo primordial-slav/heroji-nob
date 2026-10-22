@@ -108,7 +108,8 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
   { start: '1942-11-21', end: '1942-11-25', label: 'Kladuša, Rujevac' },
   { start: '1942-11-30', end: '1942-12-02', label: 'Podzvizd' },
   { start: '1942-12-03', end: '1942-12-13', label: 'povratak u Liku' },
-  { start: '1942-12-31', end: '1943-01-14', label: 'Mogorić, Vrebac, Pavlovac' },
+  { start: '1942-12-31', end: '1943-01-05', label: 'Mogorić, Vrebac, Pavlovac' },
+  { start: '1943-01-08', end: '1943-01-11', label: 'Mogorić, Vrebac, Pavlovac' },
 ]
 
 // places used more than once
@@ -176,6 +177,11 @@ const K = {
   metlaca: [15.3066, 44.6572] as LL,           // OSM: Metlača, 800 m
   vaganac: [15.2616, 44.6512] as LL,
   otes: [15.2811, 44.6160] as LL,
+  // Gospić and its railway, January 1943
+  osikSt: [15.4179, 44.6055] as LL,            // OSM: the station Lički Osik
+  gospicSt: [15.3938, 44.5361] as LL,          // OSM: the station Gospić
+  ostrvica: [15.4533, 44.5629] as LL,
+  cukovac: [15.4511, 44.5990] as LL,
 }
 
 // Glina and the Maja's valley
@@ -2278,5 +2284,52 @@ export const EPISODES: Episode[] = [
       { name: 'Njegovan Nikola', id: '0002005831', note: 'vršilac dužnosti komandira' },
     ],
     pages: [148, 153],
+  },
+  {
+    key: 'pruga-osik',
+    foe: 'it',
+    region: 'kosinj',
+    title: 'Na pruzi kod Ličkog Osika',
+    short: 'Lički Osik',
+    dates: '6–7. januara 1943.',
+    start: '1943-01-06', end: '1943-01-07',
+    about: 'Početkom januara brigada se odmara u selima jugoistočno od Gospića, „ne toliko zbog umornosti, nego zbog '
+      + 'uređivanja obuće, jer su borci zbog rđavog vremena obosili“, i tek povremeno izlazi na prugu južno i severno '
+      + 'od Gospića da je ruši.',
+    view: [15.360, 44.535, 15.500, 44.625],
+    places: ['Lički Osik', 'Gospić', 'Ćukovac', 'Ostrvica', 'Budak', 'Mušaluk'],
+    base: [],
+    steps: [
+      {
+        date: '6–7. januara 1943.', when: 'noću',
+        text: 'Naročito je uspela akcija u noći 6. i 7. januara, kad Ilija Palija izvede čete „Pekiše Vuksana“ i dve '
+          + 'čete Mitraljeskog bataljona na prugu između Ličkog Osika i Gospića. S njima je i brigada omladine iz '
+          + 'Ćukovca i Ostrvice. Te noći razoren je kilometar pruge, tako da je železnički saobraćaj bio obustavljen '
+          + 'nekoliko dana.',
+        notes: [
+          'Koji je kilometar pruge razoren i odakle su čete došle, knjiga ne kaže; razaranje je nacrtano na pruzi '
+            + 'između dveju stanica, najbliže Ćukovcu i Ostrvici, odakle je bila omladina.',
+          'Lički Osik i Gospić su ovde železničke stanice (OpenStreetMap).',
+        ],
+        marks: [
+          { t: 'move', side: 'own', kind: 'march', path: [[15.4950, 44.5560], K.ostrvica, [15.4320, 44.5680], [15.4150, 44.5705]],
+            label: 'II bat.', lp: 's', at: 0.3, guess: true },
+          { t: 'area', side: 'own', at: [15.4112, 44.5714], rx: 0.6, ry: 0.22, rot: 82, label: 'čete II bat.', lp: 'w', guess: true },
+          { t: 'area', side: 'friend', at: [15.4150, 44.5815], rx: 0.3, ry: 0.18, label: 'dve čete Mitraljeskog bat.', lp: 'e', guess: true },
+          { t: 'move', side: 'ally', kind: 'march', path: [K.cukovac, [15.4330, 44.5900], [15.4170, 44.5835]],
+            label: 'omladina iz Ćukovca i Ostrvice', lp: 'n', at: 0.4, guess: true },
+          { t: 'cut', path: [[15.4119, 44.5760], [15.4112, 44.5714], [15.4106, 44.5672]], label: 'kilometar pruge', lp: 'e', guess: true },
+        ],
+      },
+    ],
+    enemy: ['Železnički saobraćaj na pruzi Lički Osik–Gospić'],
+    friends: [
+      'Čete Drugog bataljona „Pekiša Vuksan“, s Ilijom Palijom',
+      'Dve čete Mitraljeskog bataljona',
+      'Brigada omladine iz Ćukovca i Ostrvice',
+    ],
+    result: 'Razoren je kilometar pruge, i železnički saobraćaj između Ličkog Osika i Gospića bio je obustavljen '
+      + 'nekoliko dana.',
+    pages: [158, 159],
   },
 ]

@@ -48,8 +48,8 @@ REGIONS = {
                'towns': {'Plaški', 'Brinje', 'Otočac', 'Saborsko', 'Vrhovine', 'Josipdol', 'Ogulin'},
                # the northern of Pothum Plaščanski's two hamlets Vorkapići, by the 388 crossing (OSM has neither)
                'jna': [('Vorkapići', 15.3442, 45.1379, 'hamlet')]},
-    # the Lika valley under Velebit, Kosinj to Pazarišta and Perušić: September 1942
-    'kosinj': {'west': 15.10, 'east': 15.44, 'south': 44.57, 'north': 44.80,
+    # the Lika valley under Velebit, Kosinj to Pazarišta and Perušić: September 1942; Gospić and its railway: 1943
+    'kosinj': {'west': 15.10, 'east': 15.50, 'south': 44.45, 'north': 44.80,
                'towns': {'Gospić', 'Perušić', 'Gornji Kosinj', 'Donji Kosinj'}},
     # Glina and the Maja's valley up to Šamarica: October 1942
     'glina': {'west': 15.96, 'east': 16.30, 'south': 45.20, 'north': 45.42,

@@ -1364,7 +1364,7 @@ export default function Battalion({ initial }: { initial: { epizoda?: string; ko
       <header className={styles.head}>
         <h1 className={styles.headTitle}>Drugi bataljon „Pekiša Vuksan“</h1>
         <p className={styles.headKicker}>Prva lička proleterska brigada „Marko Orešković“ · šta knjiga o brigadi piše o
-          bataljonu, borba po borba · prvi nacrt, jul – decembar 1942.</p>
+          bataljonu, borba po borba · prvi nacrt, jul 1942. – januar 1943.</p>
       </header>
       <Timeline e={pos.e} go={go} />
       <div className={styles.layout}>
