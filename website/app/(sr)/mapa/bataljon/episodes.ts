@@ -90,6 +90,7 @@ export const SOURCE = {
 
 // Rest and marches between the episodes, where the book says where the battalion was
 export const BETWEEN: { start: string; end: string; label: string }[] = [
+  { start: '1942-07-09', end: '1942-07-12', label: 'izvor Mrežnice' },
   { start: '1942-07-16', end: '1942-07-18', label: 'Glibodol, Kunić-Selo' },
   { start: '1942-07-20', end: '1942-07-21', label: 'Kunić-Selo' },
   { start: '1942-07-23', end: '1942-07-31', label: 'Letište, Kunić-Selo' },
@@ -211,6 +212,14 @@ const S = {
   lumbardenik: [15.5976, 45.1021] as LL,
   ladjevac: [15.6316, 45.0888] as LL,          // OSM: Donji Lađevac
   zbjeg: [15.5333, 45.1000] as LL,             // GeoNames: Zbjeg Močilski
+  // the July 1942 fight
+  rakovica: [15.6503, 44.9932] as LL,
+  svetaPetka: [15.6564, 45.0531] as LL,        // GeoNames: the church Sveta Petka above Brezovac
+  oklinak: [15.6750, 45.0542] as LL,           // GeoNames: the locality Oklinak
+  furjan: [15.6875, 45.0642] as LL,            // GeoNames: Furjan, by Gornji and Donji Furjan
+  k376: [15.6066, 45.0958] as LL,              // JNA map: M. Pluznik, 376 m, between Lađevac and Slunj
+  katici: [15.5672, 45.0805] as LL,            // OSM: the hamlet Katići under the Melnice
+  ilici: [15.4858, 45.0946] as LL,             // OSM: Ilići, by the Mrežnica's spring
 }
 
 // The Una between Dvor and Kostajnica
@@ -264,6 +273,158 @@ const L = {
 }
 
 export const EPISODES: Episode[] = [
+  {
+    key: 'ladjevac-1942',
+    foe: 'ndh',
+    region: 'slunj',
+    title: 'Lađevac i Melnice',
+    short: 'Lađevac',
+    dates: '4–8. jula 1942.',
+    start: '1942-07-04', end: '1942-07-08',
+    about: 'Prva akcija Udarne brigade prve operativne zone, kako se brigada tada zove, s tri bataljona, pre nego što '
+      + 'stigne Banijski: napad na ustaško uporište Lađevac i na šire utvrđenje Slunja s juga i zapada. Drugi bataljon, '
+      + 'kome komanduje Momčilo Novković, drži osiguranje prema Rakovici i Furjanu.',
+    view: [15.545, 45.030, 15.705, 45.125],
+    places: ['Slunj', 'Donji Lađevac', 'Gornji Lađevac', 'Brezovac', 'Sveta Petka', 'Oklinak', 'Gornji Furjan', 'Donji Furjan',
+      'Rakovica', 'Podmelnica', 'Mala Melnica', 'Velika Melnica', 'Katići', 'Lumbardenik', 'Ilići'],
+    base: [
+      { t: 'area', side: 'enemy', at: S.slunj, rx: 0.7, ry: 0.5, label: 'Slunj: ustaška posada', lp: 'n' },
+      { t: 'area', side: 'enemy', at: S.rakovica, rx: 0.5, ry: 0.35, label: 'Rakovica: oko 200 ustaša i oružnika', lp: 'e' },
+      { t: 'area', side: 'enemy', at: S.furjan, rx: 0.4, ry: 0.28, label: 'Furjan: manja posada', lp: 'e' },
+      { t: 'kota', at: S.k471, label: '471', lp: 'e' },
+      { t: 'kota', at: S.k518, label: '518', lp: 'w' },
+    ],
+    steps: [
+      {
+        date: '4–5. jula 1942.', when: 'noću',
+        view: [15.545, 44.982, 15.705, 45.125],
+        text: 'Zapovest Stevana Opsenice glasi da u noći između 4. i 5. jula, „tačno u tri sata“, sve jedinice moraju '
+          + 'biti na svojim položajima. Kordunaški bataljon zaposedne Melnice bez borbe, dve čete Malu i jednu Veliku, a '
+          + 'Drugi bataljon Drugog kordunaškog odreda Pliješ; vezu među sobom ne uspostave, i prostor između Melnica i '
+          + 'Pliješa ostaje prazan. Dve čete „Pekiše Vuksana“ drže osiguranje prema Rakovici, na Oklinku i Svetoj Petki '
+          + 'iznad Brezovca, presecajući cestu Rakovica–Slunj, a Treća četa, s jednom četom Trećeg bataljona Drugog '
+          + 'kordunaškog odreda, osiguranje prema Furjanu.',
+        notes: [
+          'Oklinak i Sveta Petka (crkva iznad Brezovca) su mesta GeoNames; kako su čete bile raspoređene na njima, '
+            + 'knjiga ne kaže. Mesto Treće čete prema Furjanu je procena.',
+          'Na topografskoj karti JNA 1:25.000 Pliješ je Plješ (387 m), a Mala Melnica Lalića vrh (473 m).',
+          'Prvi bataljon je nacrtan pred Lađevcem, između Slunjčice i Korane; levim krilom se vezivao s Kordunašima '
+            + 'kod kote 353, kraj izvora Slunjčice. Kote 353 karta JNA nema.',
+        ],
+        marks: [
+          { t: 'area', side: 'own', at: [15.6657, 45.0537], rx: 0.95, ry: 0.25, label: 'dve čete II bat.', lp: 's', id: 'II-rakovica', until: 4 },
+          { t: 'area', side: 'own', at: [15.6687, 45.0754], rx: 0.3, ry: 0.18, label: '3/II i četa 2. KPO', lp: 'n', id: '3/II', guess: true, until: 4 },
+          { t: 'area', side: 'friend', at: S.k471, rx: 0.35, ry: 0.2, label: 'dve čete III bat.', lp: 'e', id: 'III-mala', until: 2 },
+          { t: 'area', side: 'friend', at: S.k518, rx: 0.3, ry: 0.18, label: 'četa III bat.', lp: 'w', id: 'III-velika', until: 2 },
+          { t: 'area', side: 'ally', at: S.plijes, rx: 0.35, ry: 0.22, label: '2. bat. 2. kordunaškog odreda', lp: 'w', id: 'ally-plijes', until: 4 },
+          { t: 'area', side: 'friend', at: [15.6230, 45.0790], rx: 0.45, ry: 0.22, label: 'I bat.', lp: 's', id: 'I', guess: true, until: 1 },
+          { t: 'area', side: 'enemy', at: S.ladjevac, rx: 0.45, ry: 0.28, label: 'Lađevac: ustaše i milicija', lp: 'e', until: 1 },
+          { t: 'spot', at: S.izvor, label: 'izvor Slunjčice', lp: 'w' },
+        ],
+      },
+      {
+        date: '5. jula 1942.', time: '3.00',
+        view: [15.585, 45.060, 15.665, 45.115],
+        text: 'U 3 sata „Marko Orešković“ kreće na Lađevac, „s pjesmom i izvikivanjem parola“, neopaženo se privuče u '
+          + 'samo selo i napadne ga s dve strane. Ustaše i domaći milicioneri, „obezglavljeni i rastjerani“, izvlače se '
+          + 'po mraku prema Slunju i Korani i u šumu kote 376 Kamenita glava, gde se ponovo grupišu. U Lađevcu su ustaški '
+          + 'magacini puni robe. Na položajima Drugog bataljona prema Rakovici i Furjanu nema dodira: rakovičke ustaše '
+          + 'i oružnici i posada Furjana ne izlaze iz utvrđenih sela.',
+        notes: [
+          'Kota 376 je ovde Mali Pluznik (376 m) topografske karte JNA, između Lađevca i Slunja; ime Kamenita glava '
+            + 'karta nema.',
+          'S kojih je dveju strana Prvi bataljon napao selo, knjiga ne kaže; strelice su nacrtane s juga i jugoistoka.',
+        ],
+        marks: [
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.6210, 45.0770], [15.6260, 45.0830], [15.6300, 45.0875]], label: 'I bat.', lp: 'w', at: 0.2, guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.6420, 45.0810], [15.6390, 45.0860], [15.6340, 45.0885]], guess: true },
+          { t: 'post', at: S.ladjevac, label: 'Lađevac', lp: 's', taken: true, until: 2 },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.6290, 45.0905], [15.6180, 45.0935], S.k376], guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.6340, 45.0920], [15.6250, 45.1010], [15.6050, 45.1080]],
+            label: 'prema Slunju i Korani', lp: 'e', at: 0.5, guess: true },
+          { t: 'kota', at: S.k376, label: '376 Kamenita glava', lp: 'n' },
+        ],
+      },
+      {
+        date: '5. jula 1942.', time: 'oko 8.00',
+        text: 'Oko 8 sati plen, 160 pari cipela, oko 500 kilograma masti, 40.000 cigareta, novac, platno i šunke, '
+          + 'spakovan je u kola za slobodnu teritoriju. Na Melnicama, gde je i komandant zone Srećko Manola, Kordunaši '
+          + 'menjaju raspored: Treća četa treba da zauzme Veliku Melnicu, a Druga da se pomeri prema Pliješu. Neprijatelj '
+          + 'se dotle sredio, uvukao se starom cestom između Pliješa i Melnica, iznenadio Drugu četu i izbacio Treću s '
+          + 'Velike Melnice, pa se nije mogla održati ni Mala. Ugroženo je levo krilo Prvog bataljona: plen je ostavljen, '
+          + 'zametne se žestok okršaj, i bataljon napusti Lađevac.',
+        notes: [
+          'Kuda je išla „stara cesta“ između Pliješa i Melnica, knjiga ne kaže; strelica je nacrtana od Podmelnice.',
+          'Gde je bio okršaj Prvog bataljona i kuda se povukao, knjiga ne kaže; nacrtano je približno.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.5780, 45.1110], [15.5700, 45.1060], [15.5670, 45.1000]],
+            label: 'ustaše starom cestom', lp: 'e', at: 0.6, guess: true },
+          { t: 'fight', at: [15.5680, 45.1015] },
+          { t: 'move', side: 'friend', kind: 'back', path: [S.k518, [15.5680, 45.0900], S.katici], guess: true },
+          { t: 'move', side: 'friend', kind: 'back', path: [S.k471, [15.5770, 45.0840], S.katici], label: 'III bat.', lp: 'e', at: 0.5, guess: true },
+          { t: 'fight', at: [15.6270, 45.0865] },
+          { t: 'move', side: 'friend', kind: 'back', path: [S.ladjevac, [15.6250, 45.0800], [15.6200, 45.0740]],
+            label: 'I bat. napušta Lađevac', lp: 'w', at: 0.6, guess: true },
+        ],
+      },
+      {
+        date: '6–7. jula 1942.', when: 'noću, pa sutradan',
+        view: [15.545, 45.068, 15.625, 45.125],
+        text: 'Rukovodioci Trećeg bataljona postroje bataljon u Katićima i pred svima iznesu grešku, a borci '
+          + '„kolektivno izjave“ da će je „pošto-poto ispraviti“: tokom noći ponovo zauzmu Melnice, uspostave čvrstu vezu '
+          + 's Drugim bataljonom Drugog kordunaškog odreda na Pliješu i 7. jula jurišem odbiju tri neprijateljska napada. '
+          + 'U jednom sudaru prsa u prsa ustaše zarobe sedamnaestogodišnjeg Pavla Bunjevčevića iz Vrginmosta, jednog od '
+          + 'najhrabrijih skojevaca u bataljonu; u Slunju je zverski mučen i ubijen.',
+        notes: [
+          'Odakle su dolazila tri napada, knjiga ne kaže; strelice su nacrtane od Slunja.',
+          'Zapis Pavla Bunjevčevića na sajtu kaže da je zarobljen na Melnicama 5. jula; knjiga ga pominje uz borbe 7. jula.',
+        ],
+        marks: [
+          { t: 'move', side: 'friend', kind: 'march', path: [S.katici, [15.5700, 45.0900], S.k518], guess: true },
+          { t: 'move', side: 'friend', kind: 'march', path: [S.katici, [15.5780, 45.0850], S.k471], label: 'III bat.', lp: 'e', at: 0.5, guess: true },
+          { t: 'area', side: 'friend', at: S.k471, rx: 0.35, ry: 0.2, label: 'III bat.', lp: 'e', id: 'III-mala', until: 4 },
+          { t: 'area', side: 'friend', at: S.k518, rx: 0.3, ry: 0.18, id: 'III-velika', until: 4 },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.5820, 45.1110], [15.5790, 45.1050], [15.5760, 45.1005]],
+            label: 'tri napada, 7. jula', lp: 'e', at: 0.2, guess: true },
+          { t: 'fight', at: [15.5750, 45.0995] },
+        ],
+      },
+      {
+        date: '8. jula 1942.', when: 'predveče',
+        view: [15.470, 45.030, 15.705, 45.125],
+        text: 'Brigada je još nekoliko dana zadržana na položajima jugozapadno od Slunja i severozapadno od Rakovice: '
+          + 'čeka se Banijski bataljon, koji četiri dana maršuje od Malog Gradca, a štiti se kordunaške snage koje '
+          + 'napadaju Primišlje. Predveče 8. jula sva četiri bataljona, 1110 boraca, postrojena su pred komandantom '
+          + 'Stevanom Opsenicom i komesarom Urošem Krunićem, na zaravanku pored groblja zaseoka Ilići, kod vrela '
+          + 'Mrežnice, uz put od Zbjega preko Vrela prema Toboliću.',
+        notes: ['Put do Ilića knjiga ne opisuje; nacrtan je približno. Ilići i izvor Mrežnice su po OpenStreetMap.'],
+        marks: [
+          { t: 'move', side: 'own', kind: 'march', path: [[15.6560, 45.0540], [15.6200, 45.0620], [15.5800, 45.0720], [15.5400, 45.0860],
+            [15.5000, 45.0930], S.ilici], label: 'II bat.', lp: 's', at: 0.45, guess: true },
+          { t: 'area', side: 'friend', at: S.ilici, rx: 0.5, ry: 0.3, label: 'postrojena brigada, 1110 boraca', lp: 'n' },
+        ],
+      },
+    ],
+    enemy: [
+      'Slunj: ustaška posada, brojčano znatno jača od dva bataljona određena za eventualni napad na grad',
+      'Lađevac: grupa uniformiranih ustaša i domaći ustaški milicioneri („majari“)',
+      'Rakovica: oko 200 ustaša i oružnika; Furjan: nešto manja posada',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“: Lađevac',
+      'Treći, kordunaški bataljon, 320 boraca: Velika i Mala Melnica',
+      'Drugi bataljon Drugog kordunaškog odreda: Pliješ; četa njegovog Trećeg bataljona s Trećom četom „Pekiše '
+        + 'Vuksana“ prema Furjanu',
+      'Komandant 1. operativne zone Srećko Manola, s Kordunašima na Maloj Melnici',
+    ],
+    result: 'Lađevac je zauzet, ali je plen ostavljen kad su ustaše, prošavši između Pliješa i Melnica, ugrozile levo '
+      + 'krilo Prvog bataljona; Melnice su izgubljene, pa noću ponovo zauzete. Na Slunj se nije ni krenulo: dva '
+      + 'bataljona određena za njega bila su slabija od njegove posade. Na položajima Drugog bataljona prema Rakovici i '
+      + 'Furjanu borbe nije bilo. Brigada je postrojena 8. jula kod vrela Mrežnice.',
+    fallen: [{ name: 'Bunjevčević Pavao', id: '0002000833', note: 'Treći, kordunaški bataljon; zarobljen na Melnicama, ubijen mučenjem u Slunju' }],
+    pages: [18, 22],
+  },
   {
     key: 'kapelska-pruga',
     foe: 'it',

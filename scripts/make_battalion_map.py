@@ -40,7 +40,8 @@ OUT_DIR = ROOT / 'website' / 'app' / '(sr)' / 'mapa' / 'bataljon' / 'terrain'
 
 # Where the 2. bataljon of the Prva lička fought in 1942, a sheet each. `towns` are lettered as towns; `old_rail`
 # draws the lines OpenStreetMap has as disused or abandoned, where the book shows them working in the war; `jna`
-# adds places the book names that OSM lacks, read from the JNA map 1:25,000 (quality/tk25): name, lon, lat, kind
+# adds places the book names that OSM lacks, read from the JNA map 1:25,000 (quality/tk25) or GeoNames: name, lon,
+# lat, kind
 REGIONS = {
     # the plašćanska dolina, Mala Kapela and the country round Brinje and Dabar: the summer of 1942
     'kapela': {'west': 15.00, 'east': 15.58, 'south': 44.84, 'north': 45.22,
@@ -56,7 +57,9 @@ REGIONS = {
               'jna': [('Crni Lug', 16.1060, 45.3268, 'village'), ('Jukinac', 16.0975, 45.3485, 'hamlet')]},
     # Slunj, the Korana and Melnice, Lađevac and Rakovica: November 1942
     'slunj': {'west': 15.45, 'east': 15.73, 'south': 44.97, 'north': 45.20,
-              'towns': {'Slunj', 'Rakovica'}},
+              'towns': {'Slunj', 'Rakovica'},
+              # GeoNames: the church above Brezovac and the locality by it, where the II stood in July 1942
+              'jna': [('Sveta Petka', 15.6564, 45.0531, 'hamlet'), ('Oklinak', 15.6750, 45.0542, 'hamlet')]},
     # the Una between Dvor and Kostajnica, and Zrinska gora: the end of November 1942
     'dvor': {'west': 16.28, 'east': 16.58, 'south': 45.03, 'north': 45.25,
              'towns': {'Dvor', 'Hrvatska Kostajnica', 'Bosanska Kostajnica', 'Novi Grad'}},

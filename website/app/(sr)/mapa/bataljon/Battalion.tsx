@@ -1017,9 +1017,9 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
 
 const dayOf = (iso: string) => Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 864e5
 // the line runs from the first episode to a few days past the last episode or rest
-const AXIS_FROM = dayOf('1942-07-12')
+const AXIS_FROM = dayOf('1942-07-02')
 const AXIS_TO = Math.max(...EPISODES.map(ep => dayOf(ep.end)), ...BETWEEN.map(b => dayOf(b.end))) + 3
-const MONTHS_AXIS = [['1942-07-12', 'jul 1942.'], ['1942-08-01', 'avgust'], ['1942-09-01', 'septembar'],
+const MONTHS_AXIS = [['1942-07-02', 'jul 1942.'], ['1942-08-01', 'avgust'], ['1942-09-01', 'septembar'],
   ['1942-10-01', 'oktobar'], ['1942-11-01', 'novembar'], ['1942-12-01', 'decembar'], ['1943-01-01', 'januar 1943.'],
   ['1943-02-01', 'februar'], ['1943-03-01', 'mart']] as const
 
