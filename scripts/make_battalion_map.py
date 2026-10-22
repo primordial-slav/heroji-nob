@@ -39,7 +39,8 @@ GEONAMES = ROOT / 'data-extraction' / '.cache' / 'map1941' / 'geonames'
 OUT_DIR = ROOT / 'website' / 'app' / '(sr)' / 'mapa' / 'bataljon' / 'terrain'
 
 # Where the 2. bataljon of the Prva lička fought in 1942, a sheet each. `towns` are lettered as towns; `old_rail`
-# draws the lines OpenStreetMap has as disused or abandoned, where the book shows them working in the war
+# draws the lines OpenStreetMap has as disused or abandoned, where the book shows them working in the war; `jna`
+# adds places the book names that OSM lacks, read from the JNA map 1:25,000 (quality/tk25): name, lon, lat, kind
 REGIONS = {
     # the plašćanska dolina, Mala Kapela and the country round Brinje and Dabar: the summer of 1942
     'kapela': {'west': 15.00, 'east': 15.58, 'south': 44.84, 'north': 45.22,
@@ -49,7 +50,8 @@ REGIONS = {
                'towns': {'Gospić', 'Perušić', 'Gornji Kosinj', 'Donji Kosinj'}},
     # Glina and the Maja's valley up to Šamarica: October 1942
     'glina': {'west': 15.96, 'east': 16.30, 'south': 45.20, 'north': 45.42,
-              'towns': {'Glina', 'Petrinja', 'Topusko'}, 'old_rail': True},
+              'towns': {'Glina', 'Petrinja', 'Topusko'}, 'old_rail': True,
+              'jna': [('Crni Lug', 16.1060, 45.3268, 'village'), ('Jukinac', 16.0975, 45.3485, 'hamlet')]},
     # Slunj, the Korana and Melnice, Lađevac and Rakovica: November 1942
     'slunj': {'west': 15.45, 'east': 15.73, 'south': 44.97, 'north': 45.20,
               'towns': {'Slunj', 'Rakovica'}},
@@ -58,7 +60,9 @@ REGIONS = {
              'towns': {'Dvor', 'Hrvatska Kostajnica', 'Bosanska Kostajnica', 'Novi Grad'}},
     # Udbina, Komić and the Lika railway from Medak to Lovinac: December 1942
     'lovinac': {'west': 15.45, 'east': 15.86, 'south': 44.31, 'north': 44.59,
-                'towns': {'Udbina', 'Lovinac', 'Medak', 'Sveti Rok'}},
+                'towns': {'Udbina', 'Lovinac', 'Medak', 'Sveti Rok'},
+                # Kurjak's hamlet Baste, where the road west to Ploča leaves the road south to Komić
+                'jna': [('Baste', 15.7208, 44.4923, 'hamlet')]},
 }
 REGION: dict = {}
 LON0 = LAT0 = KX = 0.0
@@ -267,6 +271,9 @@ def features(els, gn):
                 continue
             x, y = km(e['lon'], e['lat'])
             peaks.append({'name': t['name'], 'x': round(x, 3), 'y': round(y, 3), 'h': h})
+    for name, lon, lat, kind in REGION.get('jna', ()):
+        x, y = km(lon, lat)
+        places[(name, round(x, 1), round(y, 1))] = {'name': name, 'x': round(x, 3), 'y': round(y, 3), 'r': PLACE_RANK[kind]}
     # a lake the books name that OSM draws as no shape: a small mark at its place
     for g in gn:
         if g['fc'] == 'H' and g['code'] == 'LK' and g['name'] == 'Jezero Begovac':

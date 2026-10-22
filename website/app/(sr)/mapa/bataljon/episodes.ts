@@ -113,9 +113,9 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
 // places used more than once
 const P = {
   kunic: [15.3321, 45.1021] as LL,
-  krasnica: [15.3443, 45.0446] as LL,          // Krasnički vrh
-  krmesac: [15.3284, 45.0519] as LL,
-  ridge: [15.3362, 45.0470] as LL,             // the 677 m ridge between Krasnica and Krmesač
+  krasnica: [15.3443, 45.0446] as LL,          // JNA map: Krasnički vrh
+  krmesac: [15.3284, 45.0519] as LL,           // JNA map: Krmesac, 947 m; the book's 937
+  ridge: [15.3385, 45.0478] as LL,             // JNA map: the ridge Kupusarica (892) between Krasnički vrh and Krmesac
   kota816: [15.3985, 44.9773] as LL,           // an 820 m top of the elevation, 1.7 km above the line
   descent: [15.4182, 44.9849] as LL,           // the line's nearest point to it
   jesenicaSt: [15.4298, 44.9776] as LL,
@@ -134,17 +134,17 @@ const P = {
   plaski: [15.3624, 45.0810] as LL,
   plaskiSt: [15.3681, 45.0783] as LL,
   vojnovac: [15.3342, 45.1500] as LL,
-  ambush: [15.3611, 45.1244] as LL,            // the line at Vorkapići (Pothum Plaščanski)
+  ambush: [15.3611, 45.1244] as LL,            // the line at Vorkapići by the 408 crossing (JNA map; OSM: Pothum Plaščanski)
   north: [15.3514, 45.1354] as LL,             // 1.5 km up the line, toward Vojnovac
   south: [15.3621, 45.1112] as LL,             // 1.5 km down it, toward Plaški
-  tunnel: [15.3398, 45.1414] as LL,            // OSM: the tunnel between Vojnovac and the ambush
-  hum: [15.3898, 45.1360] as LL,               // OSM: Hum, 861 m
+  tunnel: [15.3398, 45.1414] as LL,            // OSM and the JNA map: the short tunnel under the road junction 413
+  hum: [15.3898, 45.1360] as LL,               // OSM and the JNA map: Hum, 861 m
   brinje: [15.1313, 44.9998] as LL,
-  kip: [15.1503, 45.0105] as LL,               // OSM: Kip, 577.7 m
-  k586: [15.1558, 45.0188] as LL,              // a 586 m top of the elevation, 1 km north of Kip
+  kip: [15.1503, 45.0105] as LL,               // JNA map and OSM: Kip, 578 m
+  k586: [15.1558, 45.0188] as LL,              // a knoll of some 590 m by the road 1 km north of Kip (JNA map: no height printed)
   krispolje: [15.1661, 45.0271] as LL,
   jezerane: [15.2063, 45.0519] as LL,
-  maljen: [15.1918, 45.0460] as LL,
+  maljen: [15.1918, 45.0460] as LL,            // JNA map: Maljen, 682 m; the book's 684
   pernari: [15.1985, 45.0122] as LL,
   letinac: [15.2246, 44.9818] as LL,
   dabar: [15.3105, 44.9545] as LL,
@@ -159,7 +159,9 @@ const K = {
   poljan: [15.3127, 44.7148] as LL,
   bakovac: [15.2122, 44.7108] as LL,           // OSM: Bakovac Kosinjski
   antinovica: [15.2314, 44.6900] as LL,        // OSM: Antinovica, the book's Antinovac
-  velikiVrh: [15.2481, 44.6960] as LL,         // OSM: Veliki vrh, 910 m; the elevation's 895 m top beside it
+  velikiVrh: [15.2481, 44.6960] as LL,         // JNA map and OSM: Veliki vrh, 910 m
+  k788: [15.1874, 44.7178] as LL,              // JNA map: Brneci vršak, 788 m, north-west of Bakovac
+  k894: [15.2246, 44.7162] as LL,              // JNA map: a top of 891 m north-east of Bakovac, for the book's 894
   gornjiKosinj: [15.2754, 44.7164] as LL,
   podjelar: [15.2682, 44.7094] as LL,
   kruscica: [15.2621, 44.6781] as LL,
@@ -179,6 +181,9 @@ const G = {
   kozarica: [16.0815, 45.3250] as LL,          // OSM: Kozarica, 184 m
   church: [16.08922, 45.34189] as LL,          // OSM: crkva svetog Ivana Nepomuka
   battery: [16.1000, 45.3402] as LL,           // "kod klaonice": the town's east side, where the I attacked
+  jukinacMost: [16.1094, 45.3470] as LL,       // JNA map: where the road from Jukinac crosses the Maja
+  ciglana: [16.0985, 45.3439] as LL,           // JNA map: the brickworks (cg.) and its clay pits, between the centre and Jukinac
+  crniLug: [16.1060, 45.3268] as LL,           // JNA map: Crni Lug Glinski
   majskePoljane: [16.1169, 45.3408] as LL,
   klasnic: [16.1748, 45.2407] as LL,           // OSM: Donji Klasnić
   rudici: [16.1643, 45.2298] as LL,
@@ -194,12 +199,12 @@ const G = {
 const S = {
   slunj: [15.5850, 45.1145] as LL,
   church: [15.58751, 45.11560] as LL,          // OSM: crkva Presvetog Trojstva
-  k471: [15.5863, 45.0879] as LL,              // Mala Melnica: the elevation's 471 m top
+  k471: [15.5863, 45.0879] as LL,              // JNA map: Lalića vrh, 473 m, the top of Mala Melnica
   k518: [15.5729, 45.0974] as LL,              // Velika Melnica, 518 m
-  plijes: [15.5544, 45.1146] as LL,            // a 386 m top west of Podmelnica, for the book's 389
-  k292: [15.5798, 45.1182] as LL,              // a 288 m top north-west of the town
-  k402: [15.6303, 45.1035] as LL,              // the elevation's 402 m top north of Lađevac
-  izvor: [15.5883, 45.0784] as LL,             // where OSM's Slunjčica begins
+  plijes: [15.5614, 45.1124] as LL,            // JNA map: Plješ, 387 m, west of Podmelnica; the book's Pliješ, 389
+  k292: [15.5798, 45.1182] as LL,              // JNA map: 295, north-west of the town, for the book's 292
+  k402: [15.6131, 45.0928] as LL,              // JNA map: V. Pluznik, 400 m, between Slunj and Lađevac, for the book's 402
+  izvor: [15.5883, 45.0784] as LL,             // JNA map: the spring of the Slunjčica (Slušnica), 241 m
   lumbardenik: [15.5976, 45.1021] as LL,
   ladjevac: [15.6316, 45.0888] as LL,          // OSM: Donji Lađevac
   zbjeg: [15.5333, 45.1000] as LL,             // GeoNames: Zbjeg Močilski
@@ -225,7 +230,7 @@ const D = {
 // Udbina, Komić and the railway from Medak to Lovinac: OpenStreetMap's villages and tops, GeoNames' stations
 const L = {
   udbina: [15.7656, 44.5306] as LL,
-  baste: [15.7398, 44.4903] as LL,             // OSM: the Baste between Udbina and Komić, the book's "kurjački zaselak"
+  baste: [15.7208, 44.4923] as LL,             // JNA map: Kurjak's hamlet Baste, where the roads to Ploča and to Komić part
   komic: [15.7403, 44.4509] as LL,
   poljice: [15.7886, 44.4558] as LL,
   // the valley Paklarić east of Mirkača and Opačić vrh, by its hamlets Pavlice (723), Račići, Šarići and Krtinići
@@ -234,8 +239,9 @@ const L = {
   mirkaca: [15.7563, 44.4370] as LL,           // OSM: Mirkača, 1131 m; the book's 1130
   komaca: [15.7269, 44.4413] as LL,            // OSM: Komača, 1177 m
   okrugla: [15.7324, 44.4225] as LL,           // OSM: Okrugla, 967 m; the book's 969
-  catrnja: [15.7300, 44.4330] as LL,           // the cut between Komača and Okrugla
-  kopjuv: [15.7535, 44.4131] as LL,            // a 1015 m top of the elevation, for the book's Kopjuv, 1007 m
+  catrnja: [15.7365, 44.4391] as LL,           // JNA map: the spring Čatrnja, 826 m, in the cut between Komača and M. Komić
+  korita: [15.7385, 44.4284] as LL,            // JNA map: the hollow Korita, at the cut's southern end
+  kopjuv: [15.7419, 44.4206] as LL,            // JNA map: Kapljuv, 1003 m; the book's Kopjuv, 1007 m
   lovinac: [15.6856, 44.3914] as LL,
   station: [15.6031, 44.4159] as LL,           // GeoNames: the station Raduč
   raduc: [15.5817, 44.4004] as LL,
@@ -284,8 +290,9 @@ export const EPISODES: Episode[] = [
         notes: [
           'Put kolone knjiga daje mestima (zapadno od Plaškog, Crni potok, Prokos, Bijeli potok, Krasnica, greben između '
             + 'Krasnice i Krmesača); linija između njih prati teren i nije zapisana.',
-          'Kotu 816 knjiga ne smešta na kartu: to je vrh od 820 m iznad pruge zapadno od stanice Jesenica, na strani '
-            + 'odakle je bataljon dolazio; drugi vrh te visine, istočno od Blata, s druge je strane doline.',
+          'Kotu 816 knjiga ne smešta na kartu, a topografska karta JNA 1:25.000 kote te visine blizu pruge nema. '
+            + 'Nacrtana je na visu od oko 820 m iznad pruge zapadno od stanice Jesenica, na strani odakle je bataljon '
+            + 'dolazio, kod kota 805 i 820 na karti JNA.',
           'Put Prvog bataljona na jug, preko Krasničke uvale i Vrletne drage do pruge kod Leskove strane, samo je naznačen.',
         ],
         marks: [
@@ -413,6 +420,9 @@ export const EPISODES: Episode[] = [
           'Koja je četa bila gde, knjiga kaže tek po onome što su radile: Treća je dočekala patrolu iz Vojnovca, Prva '
             + 'voz iz Plaškog. Mesto Druge nije zapisano.',
           'Udaljenost bočnih četa od zasede (oko 1,5 km niz i uz prugu) nije zapisana.',
+          'Na topografskoj karti JNA 1:25.000 Vorkapića su dva zaseoka uz prugu: kod prelaza 408, gde je nacrtana '
+            + 'zaseda, pet kilometara od Plaškog, i kod prelaza 388, kilometar i po severnije, gde je nacrtana Treća četa. '
+            + 'Knjiga kaže da je zaseda bila sedam kilometara severno od Plaškog, što bolje odgovara severnom.',
         ],
         marks: [
           { t: 'area', side: 'friend', at: P.ambush, rx: 0.55, ry: 0.3, rot: -60, label: 'III (kordunaški) bat.', lp: 'e' },
@@ -476,14 +486,15 @@ export const EPISODES: Episode[] = [
           + 'probije napolje; tu pogine Marko Šimulija Zore.',
         notes: [
           'Gde su se oklopni vozovi zaustavili, knjiga ne kaže; nacrtani su na pruzi severno i južno od zasede.',
-          'Knjiga ne imenuje tunel; ovo je tunel između Vojnovca i zasede, u pravcu kojim su Kordunaši gonili Italijane.',
+          'Knjiga ne imenuje tunel; ovo je jedini tunel između Vojnovca i zasede (i na karti JNA), kratak, pod raskršćem '
+            + 'puteva južno od stanice Vojnovac, u pravcu kojim su Kordunaši gonili Italijane.',
         ],
         marks: [
           { t: 'train', at: [15.3381, 45.1441], label: 'oklopni voz iz Ogulina', lp: 'w', armoured: true, guess: true },
           { t: 'train', at: [15.3626, 45.0985], label: 'oklopni voz iz Plaškog', lp: 'e', armoured: true, guess: true },
           { t: 'move', side: 'enemy', kind: 'fire', path: [[15.3400, 45.1430], [15.3480, 45.1370]] },
           { t: 'move', side: 'enemy', kind: 'fire', path: [[15.3622, 45.1005], [15.3618, 45.1090]] },
-          { t: 'spot', at: P.tunnel, label: 'tunel', lp: 'nw', guess: true },
+          { t: 'spot', at: P.tunnel, label: 'tunel', lp: 'nw' },
         ],
       },
       {
@@ -493,7 +504,7 @@ export const EPISODES: Episode[] = [
           + 'na odstojanju dok mu komandant brigade Stevan Opsenica džepnim nožićem vadi gelere iz noge. Popodne ga '
           + 'bolničarka Zora Kovačević odvozi u bolnicu u Korenici; bataljonom od tada komanduje inž. Mićo Jović.',
         notes: [
-          'Veliki Hum je ovde Hum (861 m), istočno od zasede; knjiga ne kaže koji je.',
+          'Veliki Hum je ovde Hum (861 m, i na karti JNA), istočno od zasede; knjiga ne kaže koji je.',
           'Kuda se povukao Drugi bataljon i odakle je išao streljački stroj, knjiga ne kaže.',
         ],
         marks: [
@@ -547,7 +558,9 @@ export const EPISODES: Episode[] = [
           + 'najjužnijih četa Prvog, prema Saborskom. Četvrti bataljon zauzima položaje na jugozapadu, oko stanice '
           + 'Jesenica. Mićo Jović i operativni oficir Jovo Ljeskovac razradili su plan za svaku četu.',
         notes: [
-          '„Jezero Blata“ je ovde jedino jezero kod Blata (Jezero Begovac); knjiga ne daje bliže mesto.',
+          '„Jezero Blata“ je ovde jedino jezero kod Blata (Jezero Begovac, GeoNames); knjiga ne daje bliže mesto. Na '
+            + 'topografskoj karti JNA 1:25.000 polje Blata između Grbe, Ogrizovića i Begovca je močvarno, a jezera na '
+            + 'njemu nema.',
           'Prvi bataljon je nacrtan kod Vukelić-Poljane, koju je napao, na južnom kraju rasporeda prema Saborskom.',
           'Jovo Ljeskovac je nacrtao skice rasporeda obe strane, i one su sačuvane (knjiga, str. 36); po njima bi se '
             + 'ova karta mogla nacrtati tačno.',
@@ -655,8 +668,8 @@ export const EPISODES: Episode[] = [
           + 'su vezane bombe da eksplodiraju ako ih neko dirne.',
         view: [15.105, 44.990, 15.195, 45.040],
         notes: [
-          'Kip je vrh od 578 m na OpenStreetMap kraj ceste Brinje–Krišpolje. Vrha od 586 m ima dva blizu Kipa; '
-            + 'nacrtan je onaj 1 km severnije, uz cestu.',
+          'Kip je na topografskoj karti JNA 1:25.000 vrh od 578 m kraj ceste Brinje–Krišpolje, kao kota 578 u knjizi. '
+            + 'Kote 586 karta JNA nema; nacrtana je na uzvišici uz cestu kilometar severnije, kod Košara.',
           'Gde je cesta prekopana, knjiga ne kaže; nacrtano je ispod Kipa.',
         ],
         marks: [
@@ -1049,15 +1062,15 @@ export const EPISODES: Episode[] = [
       },
       {
         date: '21. septembra 1942.', time: '9.15',
-        view: [15.190, 44.690, 15.262, 44.728],
+        view: [15.180, 44.690, 15.262, 44.730],
         text: 'Petnaest minuta posle roka dve čete zaposednu položaje na južnim i jugozapadnim prilazima Bakovcu, a '
           + 'Treća četa izbija na severne prilaze, da sačeka bataljon „Ognjen Prica“ Druge ličke. Kad taj bataljon upadne '
           + 'u Bakovac, priključi mu se i Treća četa Mile Počuče. Neprijatelj se iz sela povuče na obližnja brda, kote 788 '
           + 'i 894, i odatle pruža jak otpor: bataljonu je sprečen brz prodor na istok, prema Kosinju.',
         notes: [
           'Mesta četa knjiga daje samo kao prilaze selu.',
-          'Kote knjiga ne smešta. Najbliži vrh od 894 m je Veliki vrh (910 m na OpenStreetMap, 895 m u visinama '
-            + 'terena), jugoistočno od sela; vrha od 788 m blizu Bakovca nema, pa kota 788 nije nacrtana.',
+          'Kote knjiga ne smešta. Na topografskoj karti JNA 1:25.000 kota 788 je Brneci vršak, severozapadno od sela, '
+            + 'a kota 894 vis od 891 m severoistočno od njega, nad cestom prema Gornjem Kosinju.',
           'Odakle je naišao bataljon „Ognjen Prica“, knjiga ne kaže.',
         ],
         marks: [
@@ -1065,10 +1078,13 @@ export const EPISODES: Episode[] = [
           { t: 'area', side: 'own', at: [15.2125, 44.7172], rx: 0.3, ry: 0.18, label: '3/II (M. Počuča)', lp: 'n', guess: true },
           { t: 'move', side: 'ally', kind: 'attack', path: [[15.2000, 44.7262], [15.2060, 44.7190], [15.2110, 44.7130]],
             label: 'bat. „Ognjen Prica“', lp: 'w', at: 0.2, guess: true },
-          { t: 'move', side: 'enemy', kind: 'back', path: [[15.2150, 44.7090], [15.2300, 44.7022], [15.2440, 44.6968]], guess: true },
-          { t: 'kota', at: K.velikiVrh, label: '894', lp: 'e', guess: true },
-          { t: 'area', side: 'enemy', at: [15.2468, 44.6968], rx: 0.4, ry: 0.25, label: 'ustaše na kotama', lp: 'n', guess: true },
-          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.2455, 44.6975], [15.2300, 44.7010], [15.2165, 44.7035]] },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.2060, 44.7115], [15.1960, 44.7150], K.k788], guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.2140, 44.7110], [15.2200, 44.7140], K.k894], guess: true },
+          { t: 'kota', at: K.k788, label: '788 Brneci vršak', lp: 'w' },
+          { t: 'kota', at: K.k894, label: '894', lp: 'e' },
+          { t: 'area', side: 'enemy', at: K.k788, rx: 0.35, ry: 0.22, label: 'ustaše', lp: 'n', id: 'k788' },
+          { t: 'area', side: 'enemy', at: K.k894, rx: 0.35, ry: 0.22, label: 'ustaše', lp: 'n', id: 'k894' },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [K.k894, [15.2180, 44.7110], [15.2110, 44.7060]], guess: true },
         ],
       },
       {
@@ -1153,7 +1169,7 @@ export const EPISODES: Episode[] = [
           + 'preko Kaluđerovca i mosta na Lici.',
         notes: [
           'Koji je bataljon krenuo odakle, knjiga ne kaže, pa nijedna strelica nije označena kao Drugi bataljon.',
-          'Babino brdo nije pronađeno na kartama; nacrtan je put od Sušnja i od Kruščice.',
+          'Babino brdo nije pronađeno na kartama, ni na topografskoj karti JNA; nacrtan je put od Sušnja i od Kruščice.',
           'Putevi su približni: knjiga daje samo mesta kroz koja su išli.',
         ],
         marks: [
@@ -1204,7 +1220,7 @@ export const EPISODES: Episode[] = [
       + 'Hrvatske, napadaju ustaško-domobranski garnizon u Glini. Glavni štab je verovao da domobrani samo čekaju '
       + 'priliku da se predaju, a garnizon je od svog obaveštajca znao kada će napad biti i s kakvim snagama.',
     view: [16.050, 45.220, 16.250, 45.360],
-    places: ['Glina', 'Majske Poljane', 'Prekopa', 'Drenovac Banski', 'Donji Klasnić', 'Rudići', 'Majski Trtnik', 'Ravno Rašće',
+    places: ['Glina', 'Jukinac', 'Crni Lug', 'Majske Poljane', 'Prekopa', 'Drenovac Banski', 'Donji Klasnić', 'Rudići', 'Majski Trtnik', 'Ravno Rašće',
       'Roviška', 'Gređani', 'Hrastovica', 'Graberje', 'Trtnik Glinski'],
     base: [
       { t: 'area', side: 'enemy', at: G.glina, rx: 0.75, ry: 0.5, label: 'Glina: oko 650 ustaša i domobrana', lp: 'w', until: 2 },
@@ -1239,11 +1255,12 @@ export const EPISODES: Episode[] = [
         text: 'Brigada se pomera desetak kilometara na sever, u Drenovac na Bručini, a odatle polazi na položaje preko '
           + 'Majskog Trtnika, Ravnog Rašća, Roviške, Crnog Luga i Maje. Popodne počne snažan pljusak; potok Maja postaje '
           + 'bujica, i nijedan bataljon nije na polaznim položajima u dogovoreno vreme, u 24 sata.',
-        notes: ['Put je nacrtan kroz mesta koja knjiga navodi; Crni Lug nije pronađen na kartama.'],
+        notes: ['Put je nacrtan kroz mesta koja knjiga navodi; Crni Lug je selo Crni Lug Glinski jugoistočno od Gline '
+          + '(topografska karta JNA 1:25.000).'],
         marks: [
           { t: 'move', side: 'own', kind: 'march', path: [G.klasnic, [16.2050, 45.2700], G.drenovac], label: 'brigada', lp: 'e', at: 0.5, guess: true },
           { t: 'move', side: 'own', kind: 'march', path: [G.drenovac, [16.1900, 45.2965], G.majskiTrtnik, G.ravnoRasce, G.roviska,
-            [16.1180, 45.3250], [16.1160, 45.3385]], at: 0.55, guess: true },
+            G.crniLug, [16.1160, 45.3385]], at: 0.55, guess: true },
           { t: 'area', side: 'own', at: [16.1160, 45.3395], rx: 0.4, ry: 0.22, label: 'II bat.', lp: 'e', guess: true },
         ],
       },
@@ -1258,7 +1275,8 @@ export const EPISODES: Episode[] = [
           'Knjiga napad Drugog bataljona opisuje dvojako: desno od Prvog, koji je išao preko Jukinačkog mosta, i od '
             + 'železničke stanice prema crkvi. Strelica je nacrtana po drugom opisu.',
           'Crkva je ovde katolička crkva svetog Ivana Nepomuka (OpenStreetMap); knjiga ne kaže koja.',
-          'Gde je Jukinački most, knjiga ne kaže; po ustaškom izveštaju, krntijaši su napali istočni deo mesta.',
+          'Jukinac je severoistočni deo Gline (karta JNA 1:25.000); Jukinački most je nacrtan gde cesta iz Jukinca '
+            + 'prelazi Maju. Po ustaškom izveštaju, krntijaši su napali istočni deo mesta.',
           'Raspored neprijatelja u gradu knjiga daje ukratko: oko 3 satnije u rovovima oko Gline, 2 satnije, oko 50 '
             + 'ustaša i 30 žandara u samom gradu, utvrđene zgrade oko Jukinačkog mosta, oružnička postaja i baterija na '
             + 'istoku. Mesta su procena; ulica kojom je išao Drugi bataljon ostavljena je prazna, jer u njoj „većinom '
@@ -1267,8 +1285,8 @@ export const EPISODES: Episode[] = [
         marks: [
           { t: 'move', side: 'own', kind: 'attack', path: [[16.1140, 45.3392], [16.1040, 45.3335], [16.0948, 45.3322], [16.0908, 45.3400]], guess: true },
           { t: 'area', side: 'own', at: [16.0928, 45.3352], rx: 0.17, ry: 0.11, label: 'II bat.', lp: 'e', guess: true },
-          { t: 'move', side: 'friend', kind: 'attack', path: [[16.1150, 45.3422], [16.1060, 45.3414], [16.1008, 45.3405]],
-            label: 'I bat.', lp: 's', at: 0.3, guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[16.1170, 45.3478], G.jukinacMost, [16.1045, 45.3440], [16.1008, 45.3408]],
+            label: 'I bat.', lp: 'e', at: 0.2, guess: true },
           { t: 'move', side: 'friend', kind: 'attack', path: [[16.1000, 45.3212], [16.0900, 45.3222], [16.0838, 45.3244]],
             label: 'III bat.', lp: 's', at: 0.4, guess: true },
           { t: 'move', side: 'ally', kind: 'attack', path: [[16.1062, 45.3560], [16.0990, 45.3500], [16.0932, 45.3446]],
@@ -1278,7 +1296,7 @@ export const EPISODES: Episode[] = [
           { t: 'area', side: 'enemy', id: 'rov-jug', at: [16.0835, 45.3348], rx: 0.32, ry: 0.09, rot: -20, label: 'rovovi: oko 3 satnije', lp: 'sw', guess: true, until: 4 },
           { t: 'area', side: 'enemy', id: 'rov-zapad', at: [16.0795, 45.3405], rx: 0.09, ry: 0.28, guess: true, until: 4 },
           { t: 'area', side: 'enemy', id: 'rov-sever', at: [16.0880, 45.3465], rx: 0.3, ry: 0.09, rot: 8, guess: true, until: 4 },
-          { t: 'area', side: 'enemy', id: 'most', at: [16.0990, 45.3455], rx: 0.17, ry: 0.11, label: 'satnija kod mosta', lp: 'ne', guess: true, until: 4 },
+          { t: 'area', side: 'enemy', id: 'most', at: [16.1072, 45.3468], rx: 0.17, ry: 0.11, label: 'satnija kod mosta', lp: 'n', guess: true, until: 4 },
           { t: 'area', side: 'enemy', id: 'centar', at: [16.0868, 45.3395], rx: 0.18, ry: 0.12, label: 'rezerve u gradu', lp: 'w', guess: true, until: 4 },
           { t: 'post', at: [16.0975, 45.3388], label: 'oružnička postaja', lp: 'ne', small: true, guess: true, until: 4 },
         ],
@@ -1292,8 +1310,11 @@ export const EPISODES: Episode[] = [
           + 'da i on uđe u borbu, ali Operativni štab to ne dozvoli. Za Drugi bataljon Operativni štab će reći da je „bio '
           + 'skoro potpuno pasivan“, da je „ušao u ulicu gdje većinom neprijatelja nije ni bilo i borbe skoro nije ni '
           + 'imao“. Neprijatelj rezerve, dve satnije, oko 50 ustaša i oko 30 žandara, baca tamo gde je najugroženiji.',
-        notes: ['Ciglana nije na kartama, pa nije nacrtana; gde je bio Drugi bataljon u gradu, knjiga ne kaže.'],
+        notes: ['Ciglana je na karti JNA između centra i Jukinca, kod glinokopa; gde je bio Drugi bataljon u gradu, '
+          + 'knjiga ne kaže.'],
         marks: [
+          { t: 'spot', at: G.ciglana, label: 'ciglana', lp: 'nw' },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [G.ciglana, [16.1010, 45.3425]] },
           { t: 'area', side: 'own', at: [16.0918, 45.3368], rx: 0.17, ry: 0.11, label: 'II bat.', lp: 's', guess: true },
           { t: 'fight', at: [16.0992, 45.3402] },
           { t: 'move', side: 'enemy', kind: 'attack', path: [[16.0880, 45.3402], [16.0935, 45.3406], [16.0978, 45.3405]], guess: true },
@@ -1369,7 +1390,8 @@ export const EPISODES: Episode[] = [
         notes: [
           'Strelice ovog koraka su zadaci iz zapovesti štaba brigade, ne pokreti.',
           'Slušnica je reka i selo na cesti od Rakovice, na kartama Slunjčica.',
-          'Pliješ i kota 292 nisu na kartama; nacrtani su na vrhovima te visine zapadno i severozapadno od grada.',
+          'Na topografskoj karti JNA 1:25.000 Pliješ je Plješ, 387 m, zapadno od Podmelnice, kota 292 je kota 295 '
+            + 'severozapadno od grada, a kota 471 Lalića vrh (473 m), vrh Male Melnice.',
         ],
         marks: [
           { t: 'move', side: 'own', kind: 'march', path: [[15.5800, 45.0760], S.k471, [15.5835, 45.0990], [15.5815, 45.1085]],
@@ -1378,8 +1400,8 @@ export const EPISODES: Episode[] = [
           { t: 'move', side: 'friend', kind: 'march', path: [[15.5420, 45.1060], S.plijes, [15.5650, 45.1210]], label: 'IV bat.', lp: 'w', at: 0.3, guess: true },
           { t: 'move', side: 'friend', kind: 'march', path: [[15.5550, 45.1320], [15.5700, 45.1250], S.k292], label: 'III bat.', lp: 'n', at: 0.2, guess: true },
           { t: 'move', side: 'ally', kind: 'march', path: [[15.6050, 45.0720], S.lumbardenik, [15.5920, 45.1090]], label: '2. lička br.', lp: 'e', at: 0.3, guess: true },
-          { t: 'kota', at: S.plijes, label: '389 Pliješ', lp: 'w', guess: true },
-          { t: 'kota', at: S.k292, label: '292', lp: 'n', guess: true },
+          { t: 'kota', at: S.plijes, label: '389 Pliješ', lp: 'w' },
+          { t: 'kota', at: S.k292, label: '292', lp: 'n' },
         ],
       },
       {
@@ -1473,13 +1495,14 @@ export const EPISODES: Episode[] = [
           + 'Korane na istoku, levim krilom povezan s „Pekišom Vuksanom“, koji zatvara izlaze iz Slunja na jug, prema '
           + 'Melnicama. Ustaše iz Slunja ovog puta ne interveniraju: uzbunio ih je lažni napad Četvrtog bataljona.',
         notes: [
-          'Kota 402 je ovde vrh te visine severno od Lađevca; knjiga je ne smešta bliže.',
+          'Kota 402 je na karti JNA V. Pluznik (400 m), između Slunja i Lađevca, gde se desno krilo Drugog bataljona '
+            + 'sastaje s Trećim; Korana teče severno od Lađevca na zapad, prema Slunju, pa je njena leva obala južna.',
           'Položaj Drugog bataljona knjiga daje samo kao zadatak: zatvoriti izlaze iz Slunja na jug.',
         ],
         marks: [
           { t: 'area', side: 'own', at: [15.5985, 45.0985], rx: 1.0, ry: 0.28, rot: -12, label: 'II bat.', lp: 's', guess: true },
-          { t: 'area', side: 'friend', at: [15.6600, 45.1062], rx: 1.5, ry: 0.3, rot: -12, label: 'III bat.', lp: 'n', guess: true },
-          { t: 'kota', at: S.k402, label: '402', lp: 'w', guess: true },
+          { t: 'area', side: 'friend', at: [15.6560, 45.0975], rx: 3.3, ry: 0.28, rot: -4, label: 'III bat.', lp: 'n', guess: true },
+          { t: 'kota', at: S.k402, label: '402', lp: 'w' },
           { t: 'move', side: 'friend', kind: 'attack', path: [[15.6120, 45.0800], [15.6220, 45.0850], [15.6290, 45.0880]],
             label: 'I bat. i „Mićo Radaković“', lp: 's', at: 0.2, guess: true },
         ],
@@ -1497,7 +1520,7 @@ export const EPISODES: Episode[] = [
           { t: 'fight', at: S.k402 },
           { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.5880, 45.1100], [15.5910, 45.1052], [15.5945, 45.1012]],
             label: 'satnije iz Slunja', lp: 'e', at: 0.2, guess: true },
-          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.6000, 45.1150], [15.6150, 45.1112], [15.6262, 45.1072]], guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.6000, 45.1150], [15.6075, 45.1060], [15.6110, 45.0990]], guess: true },
         ],
       },
       {
@@ -1763,6 +1786,8 @@ export const EPISODES: Episode[] = [
         notes: [
           'Je li iko pucao kod Basta, nije sigurno: tako piše štab divizije, a vodnik „Matije Gupca“ Stevo Kokotović '
             + 'tvrdi da seoske straže nisu ni pokušale.',
+          'Baste su na topografskoj karti JNA 1:25.000 zaselak Kurjaka, na raskršću puteva prema Ploči i prema '
+            + 'Komiću; Basta kod Jurinovca, bliže Udbini, na putu je kolone pre njega.',
           'Knjiga kaže da su na prve pucnje kod Komića u taj rejon upućeni Drugi i Četvrti bataljon, „zatečen u '
             + 'Paklariću“; Drugi je zato nacrtan u Paklariću, a njegova Druga četa, koja tek polazi, u Komiću.',
           'Paklarić je dolina istočno od Mirkače i Opačić vrha, sa zaseocima Pavlice, Račići, Šarići i Krtinići; '
@@ -1770,7 +1795,7 @@ export const EPISODES: Episode[] = [
           'Put kolone od Udbine do Basta nacrtan je približno.',
         ],
         marks: [
-          { t: 'move', side: 'enemy', kind: 'march', path: [L.udbina, [15.7560, 44.5120], L.baste],
+          { t: 'move', side: 'enemy', kind: 'march', path: [L.udbina, [15.7560, 44.5120], [15.7390, 44.4905], [15.7341, 44.4861], L.baste],
             label: '416 ustaša i 940 civila', lp: 'e', at: 0.4, force: 'ndh', guess: true },
           { t: 'move', side: 'friend', kind: 'march', path: [L.komic, [15.7650, 44.4540], L.poljice], label: 'IV bat.', lp: 'n', at: 0.5, guess: true },
           { t: 'area', side: 'own', at: L.paklaric, rx: 0.4, ry: 0.25, label: 'II bat. (Paklarić)', lp: 'e', id: 'II', guess: true },
@@ -1786,16 +1811,17 @@ export const EPISODES: Episode[] = [
           + 'komesar Gojko Milekić), koja je upravo krenula iz Komića preko Poljica prema Klapavicama i Paklariću, za '
           + 'Četvrtim bataljonom.',
         notes: [
-          'Tušica, Čatrnja i Mali Romić nisu na kartama. Čatrnja je nacrtana između Komače (1177 m) i Okrugle, nad '
-            + 'čijim je južnim izlazom, po knjizi, Okrugla.',
+          'Na topografskoj karti JNA 1:25.000 Čatrnja je izvor (826 m) u useku između Komače (1177 m) i Malog Komića '
+            + '(1026 m); „Mali Romić“ u knjizi je Mali Komić. Južno od useka je udolina Korita, pa Okrugla. Tušice nema ni na '
+            + 'toj karti.',
           'Gde je četa dočekala kolonu, knjiga ne kaže; nacrtana je kod Komića, odakle je pošla.',
         ],
         marks: [
-          { t: 'move', side: 'enemy', kind: 'march', path: [L.baste, [15.7400, 44.4700], L.komic, L.catrnja],
+          { t: 'move', side: 'enemy', kind: 'march', path: [L.baste, [15.7175, 44.4835], [15.7250, 44.4700], L.komic, L.catrnja],
             label: 'udbinska kolona', lp: 'w', at: 0.3, force: 'ndh', guess: true },
           { t: 'move', side: 'own', kind: 'fire', path: [[15.7520, 44.4535], [15.7445, 44.4515]], label: '2/II', lp: 'e', at: 0, guess: true },
           { t: 'fight', at: L.komic },
-          { t: 'spot', at: L.catrnja, label: 'Čatrnja', lp: 'w', guess: true },
+          { t: 'spot', at: L.catrnja, label: 'Čatrnja', lp: 'w' },
         ],
       },
       {
@@ -1806,23 +1832,21 @@ export const EPISODES: Episode[] = [
           + 'Čatrnje, i Kopjuv (1007 m), i bataljon se tu bori više sati. Istovremeno dva bataljona Druge brigade hitaju '
           + 'preko Mirkače (1130 m) u rejon Korita.',
         notes: [
-          'Okruglu OpenStreetMap ima sa 967 m (knjiga: 969), a Mirkaču sa 1131 m (knjiga: 1130).',
-          'Kopjuv nije na kartama; nacrtan je na visu od oko 1015 m jugoistočno od Okrugle, prema visini koju daje '
-            + 'knjiga (1007 m). Mogao bi biti i drugi vis te visine tu blizu.',
-          'Poljana i Korita nisu nacrtani: na kartama su to druga mesta (selo Poljana kod Lovinca, kraško polje Korita '
-            + 'kod Udbine).',
+          'Na karti JNA Okrugla ima 967 m (knjiga: 969), Mirkača 1131 m (knjiga: 1130), a Kopjuv je Kapljuv, 1003 m '
+            + '(knjiga: 1007), jugoistočno od Okrugle. Korita su udolina između Malog Komića, Mirkače i Okrugle.',
+          'Poljane nema ni na karti JNA.',
           'Odakle je bataljon napao Mirkaču i odakle su došla dva bataljona Druge brigade, knjiga ne kaže.',
         ],
         marks: [
           { t: 'kota', at: L.mirkaca, label: '1130 Mirkača', lp: 'e' },
           { t: 'kota', at: L.okrugla, label: '969 Okrugla', lp: 'w' },
-          { t: 'kota', at: L.kopjuv, label: '1007 Kopjuv', lp: 'e', guess: true },
+          { t: 'kota', at: L.kopjuv, label: '1007 Kopjuv', lp: 'e' },
           { t: 'move', side: 'own', kind: 'attack', path: [L.paklaric, [15.7575, 44.4345], L.mirkaca, [15.7420, 44.4352], L.catrnja], guess: true },
-          { t: 'move', side: 'enemy', kind: 'back', path: [L.mirkaca, [15.7400, 44.4330], L.okrugla], force: 'ndh', guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [L.mirkaca, L.korita, L.okrugla], force: 'ndh', guess: true },
           { t: 'area', side: 'enemy', at: L.okrugla, rx: 0.35, ry: 0.2, label: 'ustaše', lp: 'w', force: 'ndh' },
-          { t: 'area', side: 'enemy', at: L.kopjuv, rx: 0.35, ry: 0.2, label: 'ustaše', lp: 'e', force: 'ndh', guess: true },
-          { t: 'area', side: 'own', at: [15.7400, 44.4340], rx: 0.4, ry: 0.22, label: 'II bat.', lp: 'n', id: 'II', guess: true },
-          { t: 'move', side: 'ally', kind: 'march', path: [[15.7900, 44.4470], [15.7720, 44.4410], L.mirkaca],
+          { t: 'area', side: 'enemy', at: L.kopjuv, rx: 0.35, ry: 0.2, label: 'ustaše', lp: 'e', force: 'ndh' },
+          { t: 'area', side: 'own', at: L.korita, rx: 0.4, ry: 0.22, label: 'II bat.', lp: 'n', id: 'II', guess: true },
+          { t: 'move', side: 'ally', kind: 'march', path: [[15.7900, 44.4470], [15.7720, 44.4410], L.mirkaca, L.korita],
             label: 'dva bataljona 2. ličke br.', lp: 's', at: 0.3, guess: true },
         ],
       },
@@ -1910,8 +1934,8 @@ export const EPISODES: Episode[] = [
           + 'Orešković“, s topom pratećeg voda divizije, ali uzalud: pred bunkerima pogine šest krntijaša. Radne grupe '
           + 'te večeri razore 1600 metara pruge i sruše most dug 12 metara.',
         notes: [
-          'Metak nije na kartama. Knjiga ga stavlja osam kilometara od stanice Raduč, a voz iz njega vraća se u Medak; '
-            + 'zato napadi „od Metka“ dolaze sa severozapada, uz prugu.',
+          'Metak je, po svemu sudeći, Medak: knjiga ga stavlja osam kilometara od stanice Raduč, koliko je do stanice '
+            + 'Medak, a voz poslat iz njega vraća se u Medak. Napadi „od Metka“ zato dolaze sa severozapada, uz prugu.',
           'Naređenje brigadi stavlja kote 706 i 592 kod Bogunice, a Četvrti bataljon drži kote 706, 592 i 601. Na '
             + 'topografskoj karti JNA 1:25.000 kota 706 je vis Bagunica južno od sela (703 m), nad Papučom, odakle su '
             + 'bataljon napali četnici, a kota 592 Visoko brdo severno od sela i pruge (592,0). Knjiga kaže da su kote '
@@ -1945,13 +1969,13 @@ export const EPISODES: Episode[] = [
           + 'bataljona i dve mitraljeske čete divizije „Re“, pošalje vozom 2. domobransku lovačku bojnu. Voz dočekaju '
           + 'delovi brigade nekoliko kilometara jugoistočno od Metka, kod Bogunice, gde pruga prelazi Vedošića potok: '
           + 'strojovođa je smrtno ranjen, ali vrati voz u Medak, a oko 800 ustaša i domobrana pređe u oštar napad.',
-        notes: ['Koji su delovi brigade dočekali voz, knjiga ne kaže. Vedošića potok nije na kartama; voz je nacrtan na '
-          + 'pruzi kod Bogunice.'],
+        notes: ['Koji su delovi brigade dočekali voz, knjiga ne kaže. Vedošića potok je na topografskoj karti JNA 1:25.000 '
+          + 'Vedašica; voz je nacrtan gde ga pruga prelazi, kod Bogunice.'],
         marks: [
-          { t: 'train', at: [15.5509, 44.4431], label: 'voz s 2. lovačkom bojnom', lp: 'n', force: 'ndh', guess: true },
+          { t: 'train', at: [15.5524, 44.4428], label: 'voz s 2. lovačkom bojnom', lp: 'n', force: 'ndh', guess: true },
           { t: 'move', side: 'enemy', kind: 'attack', path: [[15.5180, 44.4530], [15.5350, 44.4450], [15.5500, 44.4385]],
             label: 'oko 800 ustaša i domobrana', lp: 'n', at: 0.2, force: 'ndh', guess: true },
-          { t: 'fight', at: [15.5509, 44.4431] },
+          { t: 'fight', at: [15.5524, 44.4428] },
         ],
       },
       {
@@ -1978,7 +2002,8 @@ export const EPISODES: Episode[] = [
         text: 'Kod stanice Prva četa Prvog bataljona pođe za komesarom Ilijom Radakovićem („Komunisti i skojevci, za '
           + 'mnom!“) na bunkere uz vijadukt i, zasuta bombama, odbrana ne odoli. Pred mrak svi bunkeri oko stanice su '
           + 'zauzeti; uveče minerski vod digne u vazduh železni most na Jadovi. Stanica ostaje u talijanskim rukama.',
-        notes: ['Gde su vijadukt i most na Jadovi, knjiga ne kaže; nisu nacrtani.'],
+        notes: ['Gde su vijadukt i most na Jadovi, knjiga ne kaže; nisu nacrtani. Reku koju OpenStreetMap zove Jadova '
+          + '(na karti JNA Glamočnica) pruga prelazi kod stanice Medak, pod italijanskim garnizonom.'],
         marks: [
           { t: 'post', at: [15.5995, 44.4185], label: 'bunkeri oko stanice', lp: 'e', taken: true, small: true, guess: true },
           { t: 'move', side: 'friend', kind: 'attack', path: [[15.6100, 44.4230], [15.6040, 44.4200], [15.6000, 44.4188]], label: '1/I', lp: 'n', at: 0.2, guess: true },
