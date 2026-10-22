@@ -228,8 +228,8 @@ const L = {
   baste: [15.7398, 44.4903] as LL,             // OSM: the Baste between Udbina and Komić, the book's "kurjački zaselak"
   komic: [15.7403, 44.4509] as LL,
   poljice: [15.7886, 44.4558] as LL,
-  // the valley Paklarić east of Mirkača and Opačić vrh, by its hamlets Pavlice (723), Račići, Šarići and Kelinići
-  // on the topographic map; GeoNames puts a Paklarić 1.9 km west, in the saddle between the two heights
+  // the valley Paklarić east of Mirkača and Opačić vrh, by its hamlets Pavlice (723), Račići, Šarići and Krtinići
+  // on the JNA map 1:25,000 (470-2-1); GeoNames puts a Paklarić 1.9 km west, in the saddle between the two heights
   paklaric: [15.7795, 44.4275] as LL,
   mirkaca: [15.7563, 44.4370] as LL,           // OSM: Mirkača, 1131 m; the book's 1130
   komaca: [15.7269, 44.4413] as LL,            // OSM: Komača, 1177 m
@@ -241,8 +241,9 @@ const L = {
   raduc: [15.5817, 44.4004] as LL,
   kruskovac: [15.5675, 44.4306] as LL,
   bogunica: [15.5444, 44.4417] as LL,          // GeoNames
-  k706: [15.5416, 44.4352] as LL,              // OSM: Bagunica, 703 m, south of Bogunica; the order's "Bogunici kota 706"
-  k592: [15.5491, 44.4558] as LL,              // OSM: Visoko brdo, 592 m, north of Bogunica; the order's "i 592"
+  k706: [15.5416, 44.4352] as LL,              // JNA map and OSM: Bagunica, 703 m, south of Bogunica; the order's "Bogunici kota 706"
+  k592: [15.5491, 44.4558] as LL,              // JNA map: Visoko br., 592.0, north of Bogunica; the order's "i 592"
+  k601: [15.5625, 44.4378] as LL,              // JNA map: 599.6, east of Uzelci by the spring Popovac, for the book's 601
   miletic: [15.6603, 44.3572] as LL,           // OSM: the hamlet Miletić by Sveti Rok, the order's "Miletić Gaj"
   papuca: [15.5453, 44.4265] as LL,
   rastik: [15.5404, 44.4215] as LL,            // OSM: Rastik, 613 m; the book's 630
@@ -1764,8 +1765,8 @@ export const EPISODES: Episode[] = [
             + 'tvrdi da seoske straže nisu ni pokušale.',
           'Knjiga kaže da su na prve pucnje kod Komića u taj rejon upućeni Drugi i Četvrti bataljon, „zatečen u '
             + 'Paklariću“; Drugi je zato nacrtan u Paklariću, a njegova Druga četa, koja tek polazi, u Komiću.',
-          'Paklarić je dolina istočno od Mirkače i Opačić vrha, sa zaseocima Pavlice, Račići, Šarići i Kelinići; '
-            + 'nacrtan je po topografskoj karti. Na putu je od Poljica prema Klapavici, kuda je Četvrti bataljon išao.',
+          'Paklarić je dolina istočno od Mirkače i Opačić vrha, sa zaseocima Pavlice, Račići, Šarići i Krtinići; '
+            + 'nacrtan je po topografskoj karti JNA 1:25.000. Na putu je od Poljica prema Klapavici, kuda je Četvrti bataljon išao.',
           'Put kolone od Udbine do Basta nacrtan je približno.',
         ],
         marks: [
@@ -1911,11 +1912,13 @@ export const EPISODES: Episode[] = [
         notes: [
           'Metak nije na kartama. Knjiga ga stavlja osam kilometara od stanice Raduč, a voz iz njega vraća se u Medak; '
             + 'zato napadi „od Metka“ dolaze sa severozapada, uz prugu.',
-          'Naređenje stavlja kote 706 i 592 kod Bogunice; knjiga kaže da su kote Četvrtog bataljona „jugozapadno od '
-            + 'stanice“, a obe su zapadno od nje. Kota 706 je vis Bagunica južno od sela (OpenStreetMap: 703 m), nad '
-            + 'Papučom, odakle su bataljon napali četnici; kota 592 je Visoko brdo severno od sela i pruge (OpenStreetMap: '
-            + '592 m). Kotu 601 nijedna karta ne imenuje, a na visoravni oko Bogunice, na 585–600 metara, takvih uzvišica '
-            + 'ima mnogo, pa nije nacrtana. Koliko je bataljon zauzeo zemljišta između kota, knjiga ne kaže.',
+          'Naređenje brigadi stavlja kote 706 i 592 kod Bogunice, a Četvrti bataljon drži kote 706, 592 i 601. Na '
+            + 'topografskoj karti JNA 1:25.000 kota 706 je vis Bagunica južno od sela (703 m), nad Papučom, odakle su '
+            + 'bataljon napali četnici, a kota 592 Visoko brdo severno od sela i pruge (592,0). Knjiga kaže da su kote '
+            + '„jugozapadno od stanice“; Bogunica je zapadno od nje.',
+          'Kote 601 nema na karti JNA, čije se visine od ratnih karata razlikuju za po nekoliko metara (706 i 703). '
+            + 'Nacrtana je na koti 599,6 istočno od Uzelaca, kod izvora Popovac, između Bogunice i Kruškovca; mogla bi '
+            + 'biti i kota 602 kod Potrebića, zapadno od Bagunice.',
           'Za Treći bataljon knjiga kaže samo: na pruzi, između stanice i Drugog bataljona. Gde su razorena pruga i '
             + 'most, ne kaže; naređenje je bilo da se pruga poruši „ispred sela Kruškovca“.',
         ],
@@ -1924,10 +1927,13 @@ export const EPISODES: Episode[] = [
           // tell battalion by battalion
           { t: 'area', side: 'own', at: L.kruskovac, rx: 0.5, ry: 0.28, rot: -30, label: 'II bat.', lp: 'n', until: 6 },
           { t: 'area', side: 'friend', at: [15.5860, 44.4260], rx: 0.45, ry: 0.2, rot: -35, label: 'III bat.', lp: 's', guess: true, until: 6 },
-          // the battalion between its two kote, across Bogunica and the railway
-          { t: 'area', side: 'friend', at: [15.5454, 44.4455], rx: 1.35, ry: 0.3, rot: -75, label: 'IV bat.', lp: 'w', guess: true, until: 6 },
+          // the battalion on its three kote, across Bogunica and the railway; a company on each is the map's guess
+          { t: 'area', side: 'friend', at: L.k706, rx: 0.3, ry: 0.2, label: 'IV bat.', lp: 'w', guess: true, until: 6, id: 'IV-706' },
+          { t: 'area', side: 'friend', at: L.k592, rx: 0.3, ry: 0.2, guess: true, until: 6, id: 'IV-592' },
+          { t: 'area', side: 'friend', at: L.k601, rx: 0.3, ry: 0.2, guess: true, until: 6, id: 'IV-601' },
           { t: 'kota', at: L.k706, label: '706', lp: 'e' },
           { t: 'kota', at: L.k592, label: '592', lp: 'e' },
+          { t: 'kota', at: L.k601, label: '601', lp: 'e', guess: true },
           { t: 'move', side: 'friend', kind: 'stopped', path: [[15.6170, 44.4250], [15.6090, 44.4200], [15.6045, 44.4170]],
             label: 'I bat.', lp: 'e', at: 0.2, guess: true },
           { t: 'cut', path: [[15.5960, 44.4205], [15.5880, 44.4250], [15.5790, 44.4300]], label: '1600 m pruge', lp: 's', guess: true },
