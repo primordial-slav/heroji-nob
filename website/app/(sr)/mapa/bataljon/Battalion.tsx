@@ -156,7 +156,7 @@ function groundStyle(z: number) {
 
 // The book's own spelling where the map's sources write a place otherwise (today's names, mostly)
 const AS_IN_BOOK: Record<string, string> = {
-  'Križpolje': 'Krišpolje', 'Pothum Plaščanski': 'Vorkapići', 'Kunić': 'Kunić-Selo',
+  'Križpolje': 'Krišpolje', 'Kunić': 'Kunić-Selo',
   'Bakovac Kosinjski': 'Kosinjski Bakovac', 'Drenovac Banski': 'Drenovac', 'Donji Klasnić': 'Klasnić', 'Rudići': 'Rudić',
   'Slunjčica': 'Slušnica', 'Golubovac Divuški': 'Golubovac', 'Novi Grad': 'Bosanski Novi',
   'Hrvatska Kostajnica': 'Kostajnica', 'Kostajnica': 'Bosanska Kostajnica', 'Bagunica': 'Bogunica',

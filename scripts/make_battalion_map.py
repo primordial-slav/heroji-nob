@@ -44,7 +44,9 @@ OUT_DIR = ROOT / 'website' / 'app' / '(sr)' / 'mapa' / 'bataljon' / 'terrain'
 REGIONS = {
     # the plašćanska dolina, Mala Kapela and the country round Brinje and Dabar: the summer of 1942
     'kapela': {'west': 15.00, 'east': 15.58, 'south': 44.84, 'north': 45.22,
-               'towns': {'Plaški', 'Brinje', 'Otočac', 'Saborsko', 'Vrhovine', 'Josipdol', 'Ogulin'}},
+               'towns': {'Plaški', 'Brinje', 'Otočac', 'Saborsko', 'Vrhovine', 'Josipdol', 'Ogulin'},
+               # the northern of Pothum Plaščanski's two hamlets Vorkapići, by the 388 crossing (OSM has neither)
+               'jna': [('Vorkapići', 15.3442, 45.1379, 'hamlet')]},
     # the Lika valley under Velebit, Kosinj to Pazarišta and Perušić: September 1942
     'kosinj': {'west': 15.10, 'east': 15.44, 'south': 44.57, 'north': 44.80,
                'towns': {'Gospić', 'Perušić', 'Gornji Kosinj', 'Donji Kosinj'}},

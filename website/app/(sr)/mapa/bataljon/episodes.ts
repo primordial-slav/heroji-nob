@@ -134,9 +134,9 @@ const P = {
   plaski: [15.3624, 45.0810] as LL,
   plaskiSt: [15.3681, 45.0783] as LL,
   vojnovac: [15.3342, 45.1500] as LL,
-  ambush: [15.3611, 45.1244] as LL,            // the line at Vorkapići by the 408 crossing (JNA map; OSM: Pothum Plaščanski)
-  north: [15.3514, 45.1354] as LL,             // 1.5 km up the line, toward Vojnovac
-  south: [15.3621, 45.1112] as LL,             // 1.5 km down it, toward Plaški
+  ambush: [15.3498, 45.1369] as LL,            // the line at the northern Vorkapići, by the 388 crossing (JNA map), 7 km from Plaški
+  north: [15.3448, 45.1397] as LL,             // 0.5 km up the line, short of the tunnel and Vojnovac
+  south: [15.3613, 45.1242] as LL,             // 1.6 km down it, at the southern Vorkapići by the 408 crossing
   tunnel: [15.3398, 45.1414] as LL,            // OSM and the JNA map: the short tunnel under the road junction 413
   hum: [15.3898, 45.1360] as LL,               // OSM and the JNA map: Hum, 861 m
   brinje: [15.1313, 44.9998] as LL,
@@ -406,7 +406,7 @@ export const EPISODES: Episode[] = [
     about: 'Ogulinski ilegalci javili su da 19. jula iz Ogulina vozom kreće oko 150 Italijana za osiguranje kapelske '
       + 'pruge. Zaseda je postavljena 7 km severno od Plaškog, kod Vorkapića.',
     view: [15.322, 45.085, 15.400, 45.155],
-    places: ['Vojnovac', 'Pothum Plaščanski', 'Lički Podhum', 'Plaški', 'Kunić'],
+    places: ['Vojnovac', 'Vorkapići', 'Pothum Plaščanski', 'Lički Podhum', 'Plaški', 'Kunić'],
     base: [
       { t: 'area', side: 'enemy', at: P.vojnovac, rx: 0.45, ry: 0.3, label: 'Vojnovac: 200 Ital.', lp: 'w' },
       { t: 'area', side: 'enemy', at: P.plaski, rx: 0.65, ry: 0.42, label: 'Plaški: 800 Ital.', lp: 'w' },
@@ -419,18 +419,19 @@ export const EPISODES: Episode[] = [
         notes: [
           'Koja je četa bila gde, knjiga kaže tek po onome što su radile: Treća je dočekala patrolu iz Vojnovca, Prva '
             + 'voz iz Plaškog. Mesto Druge nije zapisano.',
-          'Udaljenost bočnih četa od zasede (oko 1,5 km niz i uz prugu) nije zapisana.',
-          'Na topografskoj karti JNA 1:25.000 Vorkapića su dva zaseoka uz prugu: kod prelaza 408, gde je nacrtana '
-            + 'zaseda, pet kilometara od Plaškog, i kod prelaza 388, kilometar i po severnije, gde je nacrtana Treća četa. '
-            + 'Knjiga kaže da je zaseda bila sedam kilometara severno od Plaškog, što bolje odgovara severnom.',
+          'Na topografskoj karti JNA 1:25.000 Vorkapića su dva zaseoka uz prugu, kod prelaza 388 i kilometar i po '
+            + 'južnije, kod prelaza 408. Zaseda je nacrtana kod severnog, sedam kilometara od Plaškog, kako knjiga kaže, '
+            + 'i blizu tunela u koji su Kordunaši kasnije uleteli.',
+          'Udaljenost bočnih četa od zasede nije zapisana: Treća je nacrtana pola kilometra uz prugu, pred tunelom i '
+            + 'stanicom Vojnovac, Prva kilometar i po niz prugu, kod južnih Vorkapića.',
         ],
         marks: [
-          { t: 'area', side: 'friend', at: P.ambush, rx: 0.55, ry: 0.3, rot: -60, label: 'III (kordunaški) bat.', lp: 'e' },
-          { t: 'cut', path: [[15.3606, 45.1258], [15.3615, 45.1232]] },
-          { t: 'ambush', at: [15.3592, 45.1249], face: [15.3624, 45.1243], label: 'zaseda', lp: 'nw' },
-          { t: 'area', side: 'own', at: P.north, rx: 0.42, ry: 0.24, rot: -40, label: '3/II', lp: 'e', guess: true },
-          { t: 'area', side: 'own', at: P.south, rx: 0.55, ry: 0.22, rot: 88, label: '1/II', lp: 'e', guess: true },
-          { t: 'area', side: 'own', at: [15.3555, 45.1205], rx: 0.3, ry: 0.2, label: '2/II', lp: 'w', guess: true },
+          { t: 'area', side: 'friend', at: P.ambush, rx: 0.55, ry: 0.3, rot: -40, label: 'III (kordunaški) bat.', lp: 'e' },
+          { t: 'cut', path: [[15.3488, 45.1378], [15.3508, 45.1360]] },
+          { t: 'ambush', at: [15.3483, 45.1360], face: [15.3507, 45.1371], label: 'zaseda', lp: 'sw' },
+          { t: 'area', side: 'own', at: P.north, rx: 0.3, ry: 0.18, rot: -20, label: '3/II', lp: 'n', guess: true },
+          { t: 'area', side: 'own', at: P.south, rx: 0.55, ry: 0.22, rot: 58, label: '1/II', lp: 'e', guess: true },
+          { t: 'area', side: 'own', at: [15.3445, 45.1340], rx: 0.3, ry: 0.2, label: '2/II', lp: 'w', guess: true },
         ],
       },
       {
@@ -441,23 +442,23 @@ export const EPISODES: Episode[] = [
           + 'Pucnjava je uzbunila garnizon u Plaškom.',
         notes: ['Patrola je nacrtana kraj pruge, kojom je išla prema vaktarnici; put joj knjiga ne opisuje.'],
         marks: [
-          { t: 'ambush', at: [15.3502, 45.1367], face: [15.3458, 45.1396], label: 'zaseda 3/II', lp: 'e', guess: true },
-          { t: 'move', side: 'enemy', kind: 'caught', path: [[15.3343, 45.1483], [15.3389, 45.1428], [15.3436, 45.1399], [15.3474, 45.1380]],
+          { t: 'ambush', at: [15.3455, 45.1390], face: [15.3420, 45.1406], label: 'zaseda 3/II', lp: 'se', guess: true },
+          { t: 'move', side: 'enemy', kind: 'caught', path: [[15.3343, 45.1483], [15.3368, 45.1467], [15.3389, 45.1422], [15.3428, 45.1402]],
             label: 'patrola, 16 ljudi', lp: 'w', at: 0.4 },
         ],
       },
       {
         date: '19. jula 1942.', when: 'odmah zatim',
-        view: [15.346, 45.074, 15.382, 45.122],
+        view: [15.344, 45.074, 15.384, 45.130],
         text: 'Iz Plaškog, uzbunjenog pucnjavom, krene voz s Italijanima, koji pucaju čim krenu sa stanice. Prva četa '
           + 'ga dočeka žestokom vatrom iz zaklona duž pruge, i voz posle prvih plotuna uzmakne prema Plaškom. Iz '
           + 'Plaškog je kasnije javljeno da je u njemu bilo „samo mrtvih oko 50“.',
         notes: ['Dokle je voz stigao, knjiga ne kaže; nacrtan je pred Prvom četom.'],
         marks: [
-          { t: 'train', at: [15.3612, 45.1060], label: 'voz iz Plaškog', lp: 'e', guess: true },
-          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.3681, 45.0815], [15.3650, 45.0930], [15.3636, 45.0985], [15.3620, 45.1060]] },
-          { t: 'move', side: 'own', kind: 'fire', path: [[15.3600, 45.1105], [15.3606, 45.1072]] },
-          { t: 'move', side: 'enemy', kind: 'back', path: [[15.3640, 45.1045], [15.3660, 45.0960], [15.3700, 45.0870]], label: 'natrag', lp: 'e', at: 0.6 },
+          { t: 'train', at: [15.3626, 45.1180], label: 'voz iz Plaškog', lp: 'e', guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.3686, 45.0790], [15.3709, 45.0844], [15.3728, 45.0908], [15.3638, 45.0959], [15.3603, 45.1007], [15.3624, 45.1135], [15.3626, 45.1172]] },
+          { t: 'move', side: 'own', kind: 'fire', path: [[15.3612, 45.1230], [15.3622, 45.1195]] },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.3646, 45.1160], [15.3640, 45.1060], [15.3660, 45.0960]], label: 'natrag', lp: 'e', at: 0.6 },
         ],
       },
       {
@@ -471,11 +472,11 @@ export const EPISODES: Episode[] = [
           'Gde je stajala Druga četa kordunaškog bataljona, knjiga ne kaže; strelica polazi od zasede.',
         ],
         marks: [
-          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.3361, 45.1465], [15.3421, 45.1415], [15.3469, 45.1379]],
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.3361, 45.1465], [15.3389, 45.1422], [15.3438, 45.1400]],
             label: 'pedesetak Ital.', lp: 'w', at: 0.3 },
-          { t: 'move', side: 'enemy', kind: 'back', path: [[15.3468, 45.1410], [15.3423, 45.1445], [15.3388, 45.1467]] },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.3428, 45.1412], [15.3402, 45.1432], [15.3386, 45.1452]] },
           { t: 'post', at: [15.3372, 45.1455], label: 'vaktarnica', lp: 'w', small: true, guess: true },
-          { t: 'move', side: 'friend', kind: 'attack', path: [[15.3585, 45.1290], [15.3555, 45.1330], [15.3530, 45.1360]], label: '2/III', lp: 'e', at: 0.4, guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.3505, 45.1380], [15.3478, 45.1393], [15.3452, 45.1402]], label: '2/III', lp: 'n', at: 0.4, guess: true },
         ],
       },
       {
@@ -491,9 +492,9 @@ export const EPISODES: Episode[] = [
         ],
         marks: [
           { t: 'train', at: [15.3381, 45.1441], label: 'oklopni voz iz Ogulina', lp: 'w', armoured: true, guess: true },
-          { t: 'train', at: [15.3626, 45.0985], label: 'oklopni voz iz Plaškog', lp: 'e', armoured: true, guess: true },
+          { t: 'train', at: [15.3622, 45.1215], label: 'oklopni voz iz Plaškog', lp: 'e', armoured: true, guess: true },
           { t: 'move', side: 'enemy', kind: 'fire', path: [[15.3400, 45.1430], [15.3480, 45.1370]] },
-          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.3622, 45.1005], [15.3618, 45.1090]] },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.3612, 45.1232], [15.3530, 45.1340]] },
           { t: 'spot', at: P.tunnel, label: 'tunel', lp: 'nw' },
         ],
       },
@@ -508,10 +509,10 @@ export const EPISODES: Episode[] = [
           'Kuda se povukao Drugi bataljon i odakle je išao streljački stroj, knjiga ne kaže.',
         ],
         marks: [
-          { t: 'move', side: 'friend', kind: 'back', path: [[15.3640, 45.1250], [15.3760, 45.1300], [15.3870, 45.1345]],
+          { t: 'move', side: 'friend', kind: 'back', path: [[15.3525, 45.1360], [15.3700, 45.1366], [15.3870, 45.1360]],
             label: 'prema Velikom Humu', lp: 'n', at: 0.6, guess: true },
-          { t: 'move', side: 'own', kind: 'back', path: [[15.3545, 45.1210], [15.3470, 45.1180], [15.3400, 45.1140]], guess: true },
-          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.3660, 45.1165], [15.3610, 45.1190], [15.3575, 45.1205]],
+          { t: 'move', side: 'own', kind: 'back', path: [[15.3440, 45.1335], [15.3380, 45.1305], [15.3320, 45.1270]], guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.3580, 45.1262], [15.3530, 45.1295], [15.3478, 45.1328]],
             label: 'streljački stroj', lp: 'se', at: 0.2, guess: true },
         ],
       },
