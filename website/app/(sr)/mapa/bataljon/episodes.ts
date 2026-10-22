@@ -1934,8 +1934,8 @@ export const EPISODES: Episode[] = [
           + 'Orešković“, s topom pratećeg voda divizije, ali uzalud: pred bunkerima pogine šest krntijaša. Radne grupe '
           + 'te večeri razore 1600 metara pruge i sruše most dug 12 metara.',
         notes: [
-          'Metak je, po svemu sudeći, Medak: knjiga ga stavlja osam kilometara od stanice Raduč, koliko je do stanice '
-            + 'Medak, a voz poslat iz njega vraća se u Medak. Napadi „od Metka“ zato dolaze sa severozapada, uz prugu.',
+          '„Od Metka“ i „u Metku“ su padeži od Medak (kao redak, retka): do stanice Medak je od stanice Raduč osam '
+            + 'kilometara, koliko knjiga i kaže. Napadi od Medka zato dolaze sa severozapada, uz prugu.',
           'Naređenje brigadi stavlja kote 706 i 592 kod Bogunice, a Četvrti bataljon drži kote 706, 592 i 601. Na '
             + 'topografskoj karti JNA 1:25.000 kota 706 je vis Bagunica južno od sela (703 m), nad Papučom, odakle su '
             + 'bataljon napali četnici, a kota 592 Visoko brdo severno od sela i pruge (592,0). Knjiga kaže da su kote '
