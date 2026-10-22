@@ -165,6 +165,9 @@ const K = {
   gornjiKosinj: [15.2754, 44.7164] as LL,
   podjelar: [15.2682, 44.7094] as LL,
   kruscica: [15.2621, 44.6781] as LL,
+  duliba: [15.2405, 44.6750] as LL,            // JNA map: the clearing Duliba, 732 m, west of Kruščica
+  poljanka: [15.2809, 44.7041] as LL,          // OSM and the JNA map: the hamlet Poljanka by Sušanj, the book's Poljanak
+  vukelici: [15.2698, 44.7449] as LL,          // OSM: Vukelići between Gornji and Donji Kosinj, the book's Vukelić-Selo
   susanj: [15.2801, 44.7086] as LL,
   lipovoPolje: [15.2164, 44.7509] as LL,
   klanac: [15.2975, 44.6328] as LL,            // the heart of Pazarišta
@@ -1039,26 +1042,43 @@ export const EPISODES: Episode[] = [
           'Put je nacrtan približno, kao obilazak s juga, jer su čete izbile na južne i jugozapadne prilaze Bakovcu; '
             + 'knjiga ga ne opisuje.',
           'Kosinjski Ribnik je u GeoNames selo Ribnik, kraj Bakovca; OpenStreetMap ga nema.',
+          'Duliba je na topografskoj karti JNA 1:25.000 krčevina zapadno od Kruščice (732 m); Poljanak je zaselak '
+            + 'Poljanka kraj Sušnja, a Vukelić-Selo zaselak Vukelići između Gornjeg i Donjeg Kosinja.',
+          'Puteve Prvog bataljona i jedinica Druge ličke knjiga ne daje; nacrtani su približno, kao i mesta četa '
+            + 'Četvrtog bataljona, koje su išle s Prvim bataljonom i s Četvrtim bataljonom Druge ličke.',
         ],
         marks: [
-          { t: 'move', side: 'own', kind: 'march', path: [K.krs, [15.3100, 44.7150], [15.2950, 44.6990], [15.2720, 44.6880],
-            [15.2520, 44.6930], K.antinovica, [15.2160, 44.6990]], label: 'II bat.', lp: 's', at: 0.35, guess: true },
+          { t: 'move', side: 'own', kind: 'march', path: [K.krs, [15.3100, 44.7150], [15.2950, 44.6990], [15.2780, 44.6850],
+            [15.2600, 44.6850], [15.2450, 44.6880], K.antinovica, [15.2380, 44.6975], [15.2250, 44.7010], [15.2130, 44.7030]],
+            label: 'II bat.', lp: 's', at: 0.3, guess: true },
+          { t: 'move', side: 'friend', kind: 'march', path: [[15.3150, 44.7260], [15.3030, 44.7080], [15.2900, 44.6900],
+            [15.2750, 44.6720], [15.2580, 44.6680], K.duliba], label: 'I bat. s četama IV bat.', lp: 'e', at: 0.55, guess: true },
+          { t: 'move', side: 'ally', kind: 'attack', path: [[15.2950, 44.7570], [15.2820, 44.7500], [15.2720, 44.7455]],
+            label: '4. bat. 2. ličke i čete IV bat.', lp: 'w', at: 0.6, guess: true },
           { t: 'area', side: 'friend', at: K.poljan, rx: 0.3, ry: 0.2, label: 'četa IV bat., rezerva', lp: 'e' },
         ],
       },
       {
         date: '21. septembra 1942.', when: 'na maršu',
-        view: [15.200, 44.680, 15.265, 44.715],
+        view: [15.175, 44.660, 15.270, 44.745],
         text: 'Prvi okršaj bataljon ima u selu Antinovcu, gde zarobi neprijateljsku stražu. Na obilaznom maršu prema '
           + 'Kosinjskom Bakovcu savlada i stražu kod Velikog vrha.',
         notes: [
-          'Antinovac je ovde zaselak Antinovica (OpenStreetMap), jedino tako nazvano mesto blizu Bakovca.',
-          'Velikih vrhova ima više; nacrtan je onaj od 910 m između Antinovice i Kruščice. Knjiga Antinovac pominje '
-            + 'pre Velikog vrha, a na ovom putu bi Veliki vrh bio prvi: red okršaja nije siguran.',
+          'Antinovac je ovde zaselak Antinovica (OpenStreetMap i karta JNA), jedino tako nazvano mesto blizu Bakovca.',
+          'Veliki vrh je vrh od 910 m između Antinovice i Kruščice (i na karti JNA). Put je nacrtan od Antinovice '
+            + 'zapadnom stranom Velikog vrha prema Bakovcu, pa su okršaji redom kao u knjizi.',
+          'Odakle je bataljon „Ognjen Prica“ obišao Bakovac, knjiga ne kaže; po planu je Druga lička išla „iz '
+            + 'podvelebitskih vrleti“.',
         ],
         marks: [
+          { t: 'move', side: 'own', kind: 'march', path: [[15.2600, 44.6850], [15.2450, 44.6880], K.antinovica, [15.2380, 44.6975],
+            [15.2250, 44.7010], [15.2130, 44.7030]], label: 'II bat.', lp: 's', at: 0.15, guess: true },
           { t: 'post', at: K.antinovica, label: 'straža u Antinovcu', lp: 's', taken: true, small: true, guess: true },
-          { t: 'post', at: [15.2470, 44.6952], label: 'straža kod Velikog vrha', lp: 'e', taken: true, small: true, guess: true },
+          { t: 'post', at: [15.2395, 44.6978], label: 'straža kod Velikog vrha', lp: 'e', taken: true, small: true, guess: true },
+          { t: 'kota', at: K.velikiVrh, label: '910 Veliki vrh', lp: 'e' },
+          { t: 'area', side: 'friend', at: K.duliba, rx: 0.4, ry: 0.25, label: 'I bat., polazni položaj', lp: 'w', guess: true, until: 3 },
+          { t: 'move', side: 'ally', kind: 'march', path: [[15.1760, 44.7470], [15.1880, 44.7380], [15.2000, 44.7262]],
+            label: 'bat. „Ognjen Prica“', lp: 'w', at: 0.3, guess: true },
         ],
       },
       {
@@ -1096,7 +1116,7 @@ export const EPISODES: Episode[] = [
           + 'izvukao bez većih gubitaka; komandant brigade za to je okrivio bataljon „Ognjen Prica“, „koji nije zaposjeo '
           + 'svoje određene položaje“.',
         marks: [
-          { t: 'move', side: 'friend', kind: 'attack', path: [[15.2560, 44.6700], K.kruscica, K.podjelar, [15.2740, 44.7152]],
+          { t: 'move', side: 'friend', kind: 'attack', path: [K.duliba, K.kruscica, K.poljanka, K.susanj, K.podjelar, [15.2740, 44.7152]],
             label: 'I bat.', lp: 'e', at: 0.25 },
           { t: 'fight', at: K.kruscica },
           { t: 'post', at: K.gornjiKosinj, label: 'Kosinj, 18.30', lp: 'e', taken: true },
