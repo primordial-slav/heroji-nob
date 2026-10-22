@@ -255,7 +255,10 @@ def features(els, gn):
                 lakes.append({'name': t.get('name', ''), 'd': path_of(pts) + 'z', 'b': bbox(pts)})
         elif e['type'] == 'node' and t.get('place') in PLACE_RANK and t.get('name'):
             x, y = km(e['lon'], e['lat'])
-            rank = 0 if t['name'] in REGION['towns'] else PLACE_RANK[t['place']]
+            # a town's name lettered as a town only on the town or village itself, not on a hamlet of the same name
+            # (OSM has a hamlet Udbina by Vrebac, 21 km from the town)
+            town = t['name'] in REGION['towns'] and t['place'] in ('city', 'town', 'village')
+            rank = 0 if town else PLACE_RANK[t['place']]
             places[(t['name'], round(x, 1), round(y, 1))] = {'name': t['name'], 'x': round(x, 3), 'y': round(y, 3), 'r': rank}
         elif e['type'] == 'node' and t.get('natural') == 'peak' and t.get('name') and t.get('ele'):
             try:

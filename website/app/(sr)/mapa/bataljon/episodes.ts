@@ -239,7 +239,9 @@ const L = {
   raduc: [15.5817, 44.4004] as LL,
   kruskovac: [15.5675, 44.4306] as LL,
   bogunica: [15.5444, 44.4417] as LL,          // GeoNames
-  k706: [15.5414, 44.4346] as LL,              // a 694 m top of the elevation south of Bogunica, for the book's 706
+  k706: [15.5416, 44.4352] as LL,              // OSM: Bagunica, 703 m, south of Bogunica; the order's "Bogunici kota 706"
+  k592: [15.5491, 44.4558] as LL,              // OSM: Visoko brdo, 592 m, north of Bogunica; the order's "i 592"
+  miletic: [15.6603, 44.3572] as LL,           // OSM: the hamlet Miletić by Sveti Rok, the order's "Miletić Gaj"
   papuca: [15.5453, 44.4265] as LL,
   rastik: [15.5404, 44.4215] as LL,            // OSM: Rastik, 613 m; the book's 630
   zir: [15.6144, 44.4302] as LL,               // OSM: Zir, 850 m; the book's Žir, 852
@@ -1875,7 +1877,7 @@ export const EPISODES: Episode[] = [
       + 'brigade napadaju uporišta duž pruge. Prva napada utvrđenu železničku stanicu Raduč, a „Pekiša Vuksan“ treba da '
       + 'je zaštiti od Metka, odakle dolaze ustaše, domobrani i Talijani divizije „Re“.',
     view: [15.495, 44.385, 15.685, 44.475],
-    places: ['Raduč', 'Kruškovac', 'Papuča', 'Drenovac Radučki', 'Gornja Ploča', 'Parčići', 'Mogorić', 'Medak', 'Lovinac'],
+    places: ['Raduč', 'Kruškovac', 'Bagunica', 'Papuča', 'Drenovac Radučki', 'Gornja Ploča', 'Parčići', 'Mogorić', 'Medak', 'Lovinac', 'Miletić', 'Sveti Rok'],
     base: [
       { t: 'post', at: L.station, label: 'stanica Raduč: Talijani i četnici', lp: 's', force: 'it' },
     ],
@@ -1905,8 +1907,11 @@ export const EPISODES: Episode[] = [
         notes: [
           'Metak nije na kartama. Knjiga ga stavlja osam kilometara od stanice Raduč, a voz iz njega vraća se u Medak; '
             + 'zato napadi „od Metka“ dolaze sa severozapada, uz prugu.',
-          'Kotu 706 knjiga stavlja jednom kod Bogunice, a jednom „jugozapadno od stanice“; nacrtana je na visu od 694 m '
-            + 'južno od Bogunice, nad Papučom, odakle su Četvrti bataljon napali četnici. Kote 592 i 601 nisu nacrtane.',
+          'Naređenje stavlja kote 706 i 592 kod Bogunice; knjiga kaže da su kote Četvrtog bataljona „jugozapadno od '
+            + 'stanice“, a obe su zapadno od nje. Kota 706 je vis Bagunica južno od sela (OpenStreetMap: 703 m), nad '
+            + 'Papučom, odakle su bataljon napali četnici; kota 592 je Visoko brdo severno od sela i pruge (OpenStreetMap: '
+            + '592 m). Kotu 601 nijedna karta ne imenuje, a na visoravni oko Bogunice, na 585–600 metara, takvih uzvišica '
+            + 'ima mnogo, pa nije nacrtana. Koliko je bataljon zauzeo zemljišta između kota, knjiga ne kaže.',
           'Za Treći bataljon knjiga kaže samo: na pruzi, između stanice i Drugog bataljona. Gde su razorena pruga i '
             + 'most, ne kaže; naređenje je bilo da se pruga poruši „ispred sela Kruškovca“.',
         ],
@@ -1915,8 +1920,10 @@ export const EPISODES: Episode[] = [
           // tell battalion by battalion
           { t: 'area', side: 'own', at: L.kruskovac, rx: 0.5, ry: 0.28, rot: -30, label: 'II bat.', lp: 'n', until: 6 },
           { t: 'area', side: 'friend', at: [15.5860, 44.4260], rx: 0.45, ry: 0.2, rot: -35, label: 'III bat.', lp: 's', guess: true, until: 6 },
-          { t: 'area', side: 'friend', at: L.k706, rx: 0.45, ry: 0.28, label: 'IV bat.', lp: 'w', guess: true, until: 6 },
-          { t: 'kota', at: L.k706, label: '706', lp: 'n', guess: true },
+          // the battalion between its two kote, across Bogunica and the railway
+          { t: 'area', side: 'friend', at: [15.5454, 44.4455], rx: 1.35, ry: 0.3, rot: -75, label: 'IV bat.', lp: 'w', guess: true, until: 6 },
+          { t: 'kota', at: L.k706, label: '706', lp: 'e' },
+          { t: 'kota', at: L.k592, label: '592', lp: 'e' },
           { t: 'move', side: 'friend', kind: 'stopped', path: [[15.6170, 44.4250], [15.6090, 44.4200], [15.6045, 44.4170]],
             label: 'I bat.', lp: 'e', at: 0.2, guess: true },
           { t: 'cut', path: [[15.5960, 44.4205], [15.5880, 44.4250], [15.5790, 44.4300]], label: '1600 m pruge', lp: 's', guess: true },
@@ -1995,10 +2002,17 @@ export const EPISODES: Episode[] = [
           + 'pred njim se povlači prema Raduču i u Miletić Gaju ili Svetom Roku se poveže s Drugom brigadom; jedan u '
           + 'Parčiće, s patrolama prema stanici; dva u Ploču i Mogorić. Pre nego što jedinice napuste položaje, „od '
           + 'neprestane artiljerijske vatre iz Metka i velikih bacača iz Raduča“ poginu dva borca, a osam je ranjeno.',
-        notes: ['Koji je bataljon gde ostao, knjiga ne kaže; Drugi zato nije posebno označen.'],
+        view: [15.495, 44.345, 15.705, 44.475],
+        notes: [
+          'Koji je bataljon gde ostao, knjiga ne kaže; Drugi zato nije posebno označen.',
+          'Miletić Gaj je zaselak Miletić kod Svetog Roka (OpenStreetMap). Pravac povlačenja je iz naređenja; put preko '
+            + 'Raduča do Miletića nacrtan je približno.',
+        ],
         marks: [
-          { t: 'area', side: 'friend', at: L.kruskovac, rx: 0.35, ry: 0.2, label: 'jedan bataljon', lp: 's' },
-          { t: 'area', side: 'friend', at: L.parcici, rx: 0.35, ry: 0.2, label: 'jedan bataljon', lp: 's' },
+          { t: 'area', side: 'friend', at: L.kruskovac, rx: 0.35, ry: 0.2, label: 'jedan bataljon u Kruškovcu', lp: 'sw', id: 'kruskovac' },
+          { t: 'move', side: 'friend', kind: 'back', path: [L.kruskovac, [15.5790, 44.4110], L.raduc, [15.6150, 44.3800], L.miletic],
+            label: 'zadržava, pa prema Miletić Gaju', lp: 'e', at: 0.62, guess: true },
+          { t: 'area', side: 'friend', at: L.parcici, rx: 0.35, ry: 0.2, label: 'jedan bataljon u Parčićima', lp: 's', id: 'parcici' },
           { t: 'area', side: 'friend', at: L.ploca, rx: 0.35, ry: 0.2, label: 'dva bataljona, Ploča i Mogorić', lp: 'e' },
           { t: 'area', side: 'friend', at: L.mogoric, rx: 0.35, ry: 0.2 },
           { t: 'move', side: 'enemy', kind: 'fire', path: [[15.5250, 44.4520], [15.5600, 44.4335]], label: 'artiljerija iz Metka', lp: 'n', at: 0.3, guess: true },

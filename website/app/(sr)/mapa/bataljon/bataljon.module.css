@@ -176,12 +176,15 @@
 
 /* ---------- lettering on the ground ---------- */
 
+/* the halo is the paper as it shows there, tinted by the season (and the hour, for the units' labels): set from the
+   sheet (haloOf in Battalion.tsx), so it reads as a gap in the lines and never as a white patch */
 .halo.halo {
   fill: none;
-  stroke: var(--surface);
+  stroke: var(--halo-ground, var(--surface));
   stroke-width: 3.8;
   stroke-linejoin: round;
   paint-order: stroke;
+  transition: stroke 0.9s ease;
 }
 
 .placeSmall.placeSmall {

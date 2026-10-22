@@ -1,6 +1,6 @@
 'use client'
 
-import { memo, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { memo, useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { LAND, SHEET } from '../map1941'
 import { project } from '../projection'
 import base from '../mapa.module.css'
@@ -151,7 +151,7 @@ function groundStyle(z: number) {
     '--w-road-case': px(2.6), '--w-road-fill': px(1.2),
     '--w-rail-case': px(2.6), '--w-rail-fill': px(1.3), '--d-rail': `${px(5)} ${px(5)}`,
     '--w-tunnel': px(0.9), '--d-tunnel': `${px(2)} ${px(2)}`, '--w-lake': px(0.7),
-  } as React.CSSProperties
+  } as CSSProperties
 }
 
 // The book's own spelling where the map's sources write a place otherwise (today's names, mostly)
@@ -159,7 +159,7 @@ const AS_IN_BOOK: Record<string, string> = {
   'Križpolje': 'Krišpolje', 'Pothum Plaščanski': 'Vorkapići', 'Kunić': 'Kunić-Selo',
   'Bakovac Kosinjski': 'Kosinjski Bakovac', 'Drenovac Banski': 'Drenovac', 'Donji Klasnić': 'Klasnić', 'Rudići': 'Rudić',
   'Slunjčica': 'Slušnica', 'Golubovac Divuški': 'Golubovac', 'Novi Grad': 'Bosanski Novi',
-  'Hrvatska Kostajnica': 'Kostajnica', 'Kostajnica': 'Bosanska Kostajnica',
+  'Hrvatska Kostajnica': 'Kostajnica', 'Kostajnica': 'Bosanska Kostajnica', 'Bagunica': 'Bogunica',
 }
 const bookName = (n: string) => AS_IN_BOOK[n] ?? n
 
@@ -191,6 +191,29 @@ function detail(k: number) {
   }
 }
 
+// A name the episode's text uses is one place: of the sheet's places of that name the largest, then the one nearest
+// the ground its marks stand on. Its namesakes go unnamed, lest the reader take them for it (OSM has a hamlet Udbina
+// by Vrebac and three hamlets Baste on the Lovinac sheet)
+type Place = Terrain['PLACES'][number]
+function namedPlaces(ep: Episode): Map<string, Place> {
+  const wanted = new Set(ep.places)
+  const ground: Pt[] = []
+  const walk = (x: unknown) => {
+    if (!Array.isArray(x) && (typeof x !== 'object' || x === null)) return
+    if (Array.isArray(x) && x.length === 2 && typeof x[0] === 'number' && typeof x[1] === 'number') ground.push(km(x as LL))
+    else for (const y of Object.values(x)) walk(y)
+  }
+  walk([ep.base, ep.steps])
+  const off = (p: Place) => Math.min(...ground.map(g => Math.hypot(p.x - g.x, p.y - g.y)))
+  const best = new Map<string, Place>()
+  for (const p of TR.PLACES) {
+    if (!wanted.has(p.name)) continue
+    const b = best.get(p.name)
+    if (!b || p.r < b.r || (p.r === b.r && off(p) < off(b))) best.set(p.name, p)
+  }
+  return best
+}
+
 // Places, stations and heights, each named only where its name finds room, the episode's own places first; with
 // the room the marks' labels and the sheet's furniture already took
 // f: how much larger the lettering is than at the step's own frame (it grows as the reader enlarges the map)
@@ -200,18 +223,18 @@ function groundLabels(v: View, ep: Episode, taken: Box[], f: number, k: number):
   const out: ReactNode[] = []
   const placed: Box[] = [...taken]
   const fits = (b: Box) => b[0] > INNER + 2 && b[2] < W - INNER - 2 && b[1] > INNER + 2 && b[3] < H - INNER - 2 && !placed.some(o => overlaps(o, b))
-  const wanted = new Set(ep.places)
+  const named = namedPlaces(ep)
   // the towns and villages always, the hamlets only close in and not too many, the localities only where the
   // episode names them
   const d = detail(k)
   const maxRank = d.hamlets ? 2 : 1
   const places = TR.PLACES.filter(p => p.x > box[0] && p.x < box[2] && p.y > box[1] && p.y < box[3])
-    .filter(p => wanted.has(p.name) || p.r <= maxRank)
-    .sort((a, b) => Number(wanted.has(b.name)) - Number(wanted.has(a.name)) || a.r - b.r)
+    .filter(p => named.has(p.name) ? named.get(p.name) === p : p.r <= maxRank)
+    .sort((a, b) => Number(named.has(b.name)) - Number(named.has(a.name)) || a.r - b.r)
   let hamlets = 0
   for (const p of places) {
-    if (p.r >= 2 && !wanted.has(p.name) && hamlets >= d.hamlets) continue
-    const at = T(p), name = bookName(p.name), key = wanted.has(p.name)
+    if (p.r >= 2 && !named.has(p.name) && hamlets >= d.hamlets) continue
+    const at = T(p), name = bookName(p.name), key = named.has(p.name)
     const size = (p.r === 0 ? 16 : p.r === 1 ? 13.5 : p.r === 2 ? 11.8 : 10.6) * f
     const fs = key ? size + 1.4 * f : size
     const w = name.length * fs * 0.5
@@ -224,7 +247,7 @@ function groundLabels(v: View, ep: Episode, taken: Box[], f: number, k: number):
       const mark: Box = [at.x - 2.6, at.y - 2.6, at.x + 2.6, at.y + 2.6]
       if (!fits(b) || placed.some(o => overlaps(o, mark))) continue
       placed.push(b, mark)
-      if (p.r >= 2 && !wanted.has(p.name)) hamlets++
+      if (p.r >= 2 && !named.has(p.name)) hamlets++
       out.push(
         <g key={`p${p.name}${p.x}`}>
           {p.r <= 1 ? <circle cx={at.x} cy={at.y} r={p.r === 0 ? 3.2 : 2.3} className={base.markOpen} /> : <circle cx={at.x} cy={at.y} r={1.3} className={base.markFull} />}
@@ -366,7 +389,8 @@ function label(at: Pt, text: string, lp: Pos = 'e', side: Side, base: number, bo
   const { x, y, anchor } = free
   return (
     <g key="label">
-      <text x={x} y={y} textAnchor={anchor} fontSize={size} className={styles.halo}>{text}</text>
+      <text x={x} y={y} textAnchor={anchor} fontSize={size} className={styles.halo}
+        style={HALO ? { stroke: HALO.mark(x) } : undefined}>{text}</text>
       <text x={x} y={y} textAnchor={anchor} fontSize={size} className={`${styles.markLabel} ${ink(side)}`}
         style={force ? { fill: `var(--force-${force}-ink)` } : undefined}>{text}</text>
     </g>
@@ -388,7 +412,7 @@ function Sabres() {
 // the enemy in ink
 // an enemy mark's colour: its own, else its label's, else its episode's
 const forceFor = (m: { force?: Force; label?: string }, foe: Force): Force => m.force ?? forceOf(m.label ?? '') ?? foe
-const tinted = (force: Force) => ({ '--mark': `var(--force-${force}-ink)` }) as React.CSSProperties
+const tinted = (force: Force) => ({ '--mark': `var(--force-${force}-ink)` }) as CSSProperties
 
 function markShape(m: Mark, v: View, boxes: Box[], seed: number, f: number, foe: Force): ReactNode {
   const T = (ll: LL) => toSheet(v)(km(ll))
@@ -579,6 +603,55 @@ const SEASON_CLASS = {
 const LIGHTS: Phase[] = ['night', 'dawn', 'golden', 'dusk']
 const LIGHT_CLASS: Record<Phase, string> = {
   night: styles.lightNight, dawn: styles.lightDawn, golden: styles.lightGolden, dusk: styles.lightDusk, day: '',
+}
+
+// The halo round a label is the paper as it shows under that label, so it reads as a gap in the lines and not as a
+// white patch: the paper with the season's tint over it, and for the units' labels, which lie above the hour's light,
+// that light too (at dawn and dusk the light at the label's place across the sheet). The tints multiply, as in the
+// CSS, whose colours are read from the page; their strengths are bataljon.module.css's
+type RGB = [number, number, number]
+const SEASON_TINT: Partial<Record<ReturnType<typeof seasonOf>, [string, number]>> = {
+  earlyAutumn: ['--season-early-autumn', 0.16], autumn: ['--season-autumn', 0.2],
+  lateAutumn: ['--season-late-autumn', 0.22], winter: ['--season-winter', 0.2],
+}
+const LIGHT_TINT = { night: 0.4, nightDark: 0.55, golden: 0.18, low: 0.32 }
+function rgbOf(css: string): RGB | null {
+  const s = css.trim()
+  const h = s.match(/^#([0-9a-f]{6})$/i)
+  if (h) return [0, 2, 4].map(i => parseInt(h[1].slice(i, i + 2), 16)) as RGB
+  const r = s.match(/^rgba?\(\s*([\d.]+)[\s,]+([\d.]+)[\s,]+([\d.]+)/i)
+  return r ? [+r[1], +r[2], +r[3]] : null
+}
+const multiply = (c: RGB, t: RGB, a: number): RGB => c.map((v, i) => v * (1 - a + (a * t[i]) / 255)) as RGB
+const mixed = (a: RGB, b: RGB, k: number): RGB => a.map((v, i) => v + (b[i] - v) * k) as RGB
+const hex = (c: RGB) => `#${c.map(v => Math.round(Math.max(0, Math.min(255, v))).toString(16).padStart(2, '0')).join('')}`
+type Halo = { ground: string; mark: (x: number) => string }
+let HALO: Halo | null = null
+
+function haloOf(el: Element, season: ReturnType<typeof seasonOf>, phase: Phase | undefined): Halo | null {
+  const cs = getComputedStyle(el)
+  const v = (name: string) => rgbOf(cs.getPropertyValue(name))
+  const paper = v('--surface')
+  if (!paper) return null
+  const tint = SEASON_TINT[season]
+  const seasoned = tint && v(tint[0]) ? multiply(paper, v(tint[0])!, tint[1]) : paper
+  const ground = hex(seasoned)
+  const night = v('--light-night'), golden = v('--light-golden'), low = v('--light-low-sun')
+  const dark = paper[0] + paper[1] + paper[2] < 3 * 128
+  if (phase === 'night' && night) {
+    const c = hex(multiply(seasoned, night, dark ? LIGHT_TINT.nightDark : LIGHT_TINT.night))
+    return { ground, mark: () => c }
+  }
+  if (phase === 'golden' && golden) {
+    const c = hex(multiply(seasoned, golden, LIGHT_TINT.golden))
+    return { ground, mark: () => c }
+  }
+  if ((phase === 'dawn' || phase === 'dusk') && night && low) {
+    // dawn: the night still in the west, the sun in the east; dusk the other way round
+    const [west, east] = phase === 'dawn' ? [night, low] : [low, night]
+    return { ground, mark: (x: number) => hex(multiply(seasoned, mixed(west, east, Math.max(0, Math.min(1, x / W))), LIGHT_TINT.low)) }
+  }
+  return { ground, mark: () => ground }
 }
 
 // The step's light by the date in the title block: a moon, the sun high, low, or half over the horizon (rising and
@@ -808,6 +881,20 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
   const when = step.time ?? step.when ?? ''
   const light = lightOf(ep, si)
   const season = seasonOf(step.date)
+  // the halos' colours (haloOf), from the page's colours once the sheet is drawn, and again when the theme changes
+  const svgRef = useRef<SVGSVGElement>(null)
+  const [theme, setTheme] = useState(0)
+  useEffect(() => {
+    const bump = () => setTheme(n => n + 1)
+    const mo = new MutationObserver(bump)
+    mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
+    return () => mo.disconnect()
+  }, [])
+  const [halo, setHalo] = useState<Halo | null>(null)
+  useEffect(() => {
+    if (svgRef.current) setHalo(haloOf(svgRef.current, season, light?.phase))
+  }, [season, light?.phase, theme])
+  HALO = halo
   const titleW = 268
   const titleBox: Box = [TITLE_RIGHT - titleW, TITLE_TOP - 6, TITLE_RIGHT + 6, TITLE_TOP + 86]
   // the country in small goes to the corner this step's marks leave emptiest: bottom right, else top left (under the
@@ -856,7 +943,8 @@ function Sheet({ ep, si, t }: { ep: Episode; si: number; t: Terrain }) {
     <div className={styles.sheetColumn}>
       <div className={`${base.scroller} ${styles.room}`} ref={room}>
       <div className={`${base.sheetWrap} ${styles.sheetWrap}`} ref={wrap}>
-        <svg viewBox={`0 0 ${W} ${H}`} className={`${base.sheet} ${styles.sheet}`} style={size.measured ? undefined : { visibility: 'hidden' }} role="img" aria-label={`${ep.title}, ${step.date}`}>
+        <svg ref={svgRef} viewBox={`0 0 ${W} ${H}`} className={`${base.sheet} ${styles.sheet}`} role="img" aria-label={`${ep.title}, ${step.date}`}
+          style={{ ...(size.measured ? {} : { visibility: 'hidden' as const }), ...(halo ? { '--halo-ground': halo.ground } as CSSProperties : {}) }}>
           <defs>
             {/* the enemy's ground, hatched as on the books' one-colour sketches */}
             <pattern id="bat-hatch" width="4.2" height="4.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)" className={styles.hatch}>
