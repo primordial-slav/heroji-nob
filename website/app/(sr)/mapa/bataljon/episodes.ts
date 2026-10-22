@@ -18,7 +18,7 @@ export type Pos = 'n' | 'ne' | 'e' | 'se' | 's' | 'sw' | 'w' | 'nw'
 // Germans. A mark that doesn't say takes it from its label's words, else from its episode (`foe`)
 export type Force = 'it' | 'ndh' | 'cet' | 'de'
 // the sheet an episode is drawn on: scripts/make_battalion_map.py writes each region's ground to terrain/<region>.ts
-export type Region = 'kapela' | 'kosinj' | 'glina' | 'slunj' | 'dvor' | 'lovinac'
+export type Region = 'kapela' | 'kosinj' | 'glina' | 'slunj' | 'dvor' | 'lovinac' | 'gracac'
 
 export type Mark = (
   // a unit's place: an ellipse (rx, ry in km, turned by rot degrees) round `at`
@@ -276,6 +276,21 @@ const L = {
   parcici: [15.6601, 44.4221] as LL,
   mogoric: [15.5911, 44.4895] as LL,
   medakSt: [15.5184, 44.4559] as LL,           // GeoNames: the station Medak
+}
+
+// Gračac and the valley to Lapac, January and February 1943: the JNA map 1:25,000 (470-2-3) and OpenStreetMap
+const GR = {
+  gracac: [15.8469, 44.2990] as LL,
+  station: [15.8222, 44.3003] as LL,           // OSM: the station Gračac
+  gradina: [15.8498, 44.3030] as LL,           // JNA map: Gradina, 614 m, over the town
+  tupale: [15.8213, 44.3693] as LL,            // OSM: the hamlet Tupale
+  goliVrh: [15.8143, 44.3282] as LL,           // JNA map: Golover, 980 m; the book's Goli vrh, k. 981
+  plasce: [15.8086, 44.3233] as LL,            // JNA map: Plase, 920 m; the book's Plašće
+  bukoviVrh: [15.8286, 44.3090] as LL,         // JNA map: Vrh bukovi, 830 m; the book's Bukovi vrh, k. 832
+  stikada: [15.7958, 44.3161] as LL,           // OSM: Štikada
+  vrace: [15.8071, 44.2770] as LL,             // OSM and the JNA map: Vrace
+  kijani: [15.8743, 44.3323] as LL,
+  deringaj: [15.8699, 44.3466] as LL,
 }
 
 export const EPISODES: Episode[] = [
@@ -2331,5 +2346,124 @@ export const EPISODES: Episode[] = [
     result: 'Razoren je kilometar pruge, i železnički saobraćaj između Ličkog Osika i Gospića bio je obustavljen '
       + 'nekoliko dana.',
     pages: [158, 159],
+  },
+  {
+    key: 'gracac',
+    foe: 'cet',
+    region: 'gracac',
+    title: 'Borba za Gračac',
+    short: 'Gračac',
+    dates: '14–15. januara 1943.',
+    start: '1943-01-14', end: '1943-01-15',
+    about: 'Štab korpusa, uveren da Italijani napuštaju Liku, naređuje napad na Gračac, za koji se veruje da ga brani '
+      + 'najviše 600 četnika. Prva brigada je desna kolona: zatvara prilaze Gračacu i stanici od Lovinca preko Ričica, '
+      + 'dok Druga brigada prodire u grad.',
+    view: [15.770, 44.265, 15.885, 44.380],
+    places: ['Gračac', 'Tupale', 'Štikada', 'Vrace', 'Tomingaj', 'Kijani', 'Deringaj', 'Ričice'],
+    base: [
+      { t: 'area', side: 'enemy', at: GR.gracac, rx: 0.65, ry: 0.45, label: 'Gračac: četnici', lp: 'e' },
+      { t: 'post', at: GR.station, label: 'stanica: oko 450 Italijana', lp: 'w', force: 'it' },
+      { t: 'post', at: GR.gradina, label: 'Gradina', lp: 'n', small: true },
+      { t: 'kota', at: GR.goliVrh, label: '981 Goli vrh', lp: 'e' },
+      { t: 'kota', at: GR.plasce, label: 'Plašće', lp: 'w' },
+      { t: 'kota', at: GR.bukoviVrh, label: '832 Bukovi vrh', lp: 'e' },
+    ],
+    steps: [
+      {
+        date: '14. januara 1943.', when: 'popodne',
+        text: 'Posle sastanaka po četama, gde je pročitano pismo komesara divizije o „vrlo povoljnim uslovima“, bataljoni '
+          + 'Prve brigade krenu iz Tupala, uz desnu obalu nabujale Bašinice, gazeći sneg uz padine Resnika. Počne sitna, '
+          + 'hladna kiša. Polazni položaji su na Čankovića brdu, Golom vrhu i Plašću. Prvi bataljon treba da razbije '
+          + 'četničko utvrđenje na Bukovom vrhu, Drugi i Treći da zaposednu puteve na zapadnom izlazu iz Gračačkih dolova, '
+          + 'kod Štikade, a Četvrti da pređe dolove i izađe u Vrace, da zatvori cestu Obrovac–Gračac.',
+        notes: [
+          'Tupale, Štikada i Vrace su po OpenStreetMap i topografskoj karti JNA 1:25.000; na njoj je Goli vrh Golover '
+            + '(980 m), Plašće Plase (920 m), a Bukovi vrh Vrh bukovi (830 m). Kote 696 Čankovića brda karta nema.',
+          'Putevi bataljona preko Resnika nacrtani su približno; knjiga daje samo polazne položaje i ciljeve.',
+          'Gde su tačno stajali Drugi i Treći bataljon kod Štikade, knjiga ne kaže; nacrtani su na cesti i pruzi '
+            + 'zapadno od sela, prema Ričicama i Lovincu, odakle se čuvao prilaz.',
+        ],
+        marks: [
+          { t: 'move', side: 'own', kind: 'march', path: [GR.tupale, [15.8245, 44.3500], GR.goliVrh, GR.plasce, [15.7900, 44.3185]],
+            label: 'II bat.', lp: 'w', at: 0.25, guess: true },
+          { t: 'move', side: 'friend', kind: 'march', path: [GR.tupale, [15.8270, 44.3480], [15.8300, 44.3250], GR.bukoviVrh],
+            label: 'I bat.', lp: 'e', at: 0.35, guess: true },
+          { t: 'move', side: 'friend', kind: 'march', path: [GR.plasce, [15.8050, 44.3130], [15.8130, 44.3010], [15.8100, 44.2880], GR.vrace],
+            label: 'IV bat.', lp: 'w', at: 0.45, guess: true },
+          { t: 'area', side: 'own', at: [15.7880, 44.3185], rx: 0.45, ry: 0.22, rot: -30, label: 'II bat.', lp: 'n', guess: true, until: 4 },
+          { t: 'area', side: 'friend', at: [15.7990, 44.3115], rx: 0.4, ry: 0.2, rot: -30, label: 'III bat.', lp: 's', guess: true, until: 4 },
+          { t: 'area', side: 'friend', at: GR.vrace, rx: 0.35, ry: 0.22, label: 'IV bat.', lp: 'w', until: 4 },
+        ],
+      },
+      {
+        date: '14. januara 1943.', time: 'oko 18.00',
+        view: [15.780, 44.268, 15.872, 44.330],
+        text: 'Dok bataljoni maršuju, u Gračacu se sve menja: na stanicu vozom iz Knina stižu prvi ešeloni divizije '
+          + '„Sassari“, koja se prikuplja za operaciju „Weiss“, i oko 18 sati jedan pešadijski bataljon krene sa stanice '
+          + 'u centar grada. Stižu i nove grupe četnika, iz Hercegovine: uveče je u Gračacu više od 2000 četnika. '
+          + 'Obaveštajci su to javili štabu divizije pre 16 sati, ali plan nije menjan. Četvrti bataljon prelazi preko '
+          + 'Štikaćkih bara, nekoliko stotina metara zapadno od italijanskih bunkera oko stanice, kroz vodu do pojasa, i '
+          + 'pre ponoći izbije u Vrace.',
+        notes: ['Put voza i bataljona od stanice do grada nacrtan je cestom.'],
+        marks: [
+          { t: 'train', at: [15.8272, 44.2930], label: 'voz iz Knina: „Sassari“', lp: 'se', force: 'it' },
+          { t: 'move', side: 'enemy', kind: 'march', path: [GR.station, [15.8330, 44.2985], [15.8430, 44.2990]],
+            label: 'bataljon u grad', lp: 'n', at: 0.4, force: 'it' },
+        ],
+      },
+      {
+        date: '14. januara 1943.', time: '23.00–24.00',
+        view: [15.775, 44.285, 15.872, 44.340],
+        text: 'Napad počinje. Na Bukovi vrh se dve čete „Marka Oreškovića“ privuku sasvim prikriveno, bombaši ogrnuti '
+          + 'belim čaršavima; u žičanu prepreku, jer alat nisu poneli, čupaju kolje. Bunkere i betonsku baraku, gde '
+          + 'četnici piju i kartaju, osvoje bombama: 12 četnika je ubijeno, 52 zarobljena. Milan Šijan telefonira '
+          + 'komandi u Gračacu kao četnički komandir s Bukovog vrha i traži pomoć; poslatih 30 četnika uhvaćeno je bez '
+          + 'otpora. Delovi Druge brigade prodru u Gračac. Kod Štikade i kod Vraca do dodira ne dođe, ali Drugi i Treći '
+          + 'bataljon u nevremenu poruše gotovo kilometar pruge.',
+        notes: ['Koji je kilometar pruge porušen, knjiga ne kaže; nacrtan je kod Štikade.'],
+        marks: [
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.8240, 44.3165], [15.8268, 44.3120], GR.bukoviVrh], label: 'dve čete I bat.', lp: 'w', at: 0.1 },
+          { t: 'post', at: [15.8300, 44.3082], label: 'bunkeri: 12 ubijenih, 52 zarobljena', lp: 'e', taken: true, small: true, force: 'cet', until: 3 },
+          { t: 'move', side: 'enemy', kind: 'caught', path: [GR.gracac, [15.8400, 44.3030], [15.8320, 44.3075]], label: '30 četnika', lp: 's', at: 0.4, force: 'cet', guess: true },
+          { t: 'move', side: 'ally', kind: 'attack', path: [GR.kijani, [15.8580, 44.3150], [15.8500, 44.3020]], label: '2. lička br.', lp: 'e', at: 0.2, guess: true },
+          { t: 'cut', path: [[15.7858, 44.3161], [15.7919, 44.3146], [15.7994, 44.3112]], label: 'gotovo kilometar pruge', lp: 's', guess: true },
+        ],
+      },
+      {
+        date: '15. januara 1943.', when: 'danju',
+        view: [15.775, 44.285, 15.872, 44.350],
+        text: 'Komandant divizije Srećko Manola, uz pristanak komandanta korpusa, naredi povlačenje. Dve čete krntijaša '
+          + 'napuste Bukovi vrh pre nego što se iz Gračaca izvuku delovi Druge brigade: Milan Šijan i Nikica Pejnović ne '
+          + 'znaju da je Udarni bataljon Druge brigade, s kojim su mesecima ratovali, ostao u gradu, gde se celu noć i dan, '
+          + 'do sumraka, bori utvrđen u dve kuće. Gračac nije osvojen.',
+        notes: ['Kuda su se bataljoni Prve brigade povukli, knjiga ne kaže; strelice idu natrag preko Resnika.'],
+        marks: [
+          { t: 'move', side: 'own', kind: 'back', path: [[15.7880, 44.3185], [15.8000, 44.3260], [15.8143, 44.3350]], guess: true },
+          { t: 'move', side: 'friend', kind: 'back', path: [GR.bukoviVrh, [15.8270, 44.3250], [15.8250, 44.3420]], label: 'I bat.', lp: 'e', at: 0.5, guess: true },
+          { t: 'area', side: 'ally', at: [15.8460, 44.2995], rx: 0.15, ry: 0.1, label: 'Udarni bat. 2. ličke u dve kuće', lp: 's' },
+        ],
+      },
+    ],
+    enemy: [
+      'U Gračacu uveče 14. januara više od 2000 četnika, gračačko-kninskih i dovedenih iz Hercegovine',
+      'Na stanici 450–460 Italijana; vozom iz Knina prvi ešeloni divizije „Sassari“, i jedan pešadijski bataljon u grad',
+      'Grad utvrđen rovovima, žicom u više redova i betonskim bunkerima; glavni oslonac spoljne odbrane na Gradini',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“: dve čete na Bukovi vrh (Milan Šijan, Nikica Pejnović)',
+      'Drugi i Treći bataljon: putevi kod Štikade, rušenje pruge',
+      'Četvrti bataljon „Matija Gubec“: Vrace, cesta Obrovac–Gračac',
+      'Druga lička brigada: napad na grad sa severa; njen Udarni bataljon prodro u Gračac',
+    ],
+    result: 'Prva brigada je zadatak „u potpunosti izvršila“, ali Gračac nije osvojen i četnici nisu razbijeni. Prva '
+      + 'brigada je imala tri ranjena, sve s Bukovog vrha; Druga brigada 40 poginulih, 2 utopljena i 64 nestala, Treća 9 '
+      + 'poginulih. Pisac knjige zaključuje da Gračac te noći „napasti nije trebalo“: do 16 sati se moglo odustati, i zbog '
+      + 'pojačanja u gradu i zbog nevremena.',
+    wounded: [
+      { name: 'Damjanović Momčilo', id: '0002001343', note: 'zamenik komesara Prve čete Prvog bataljona' },
+      { name: 'Damjanović Boško', id: '0002001303', note: 'bombaš; umro u bolnici početkom marta 1943' },
+      { name: 'Stoisavljević Mile', note: 'bombaš' },
+    ],
+    pages: [160, 164],
   },
 ]

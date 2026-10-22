@@ -22,6 +22,7 @@ const TERRAIN: Record<Region, () => Promise<Terrain>> = {
   slunj: () => import('./terrain/slunj'),
   dvor: () => import('./terrain/dvor'),
   lovinac: () => import('./terrain/lovinac'),
+  gracac: () => import('./terrain/gracac'),
 }
 // the ground the sheet being drawn stands on, as Sheet last set it (like W and H)
 let TR: Terrain
