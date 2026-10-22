@@ -228,7 +228,9 @@ const L = {
   baste: [15.7398, 44.4903] as LL,             // OSM: the Baste between Udbina and Komić, the book's "kurjački zaselak"
   komic: [15.7403, 44.4509] as LL,
   poljice: [15.7886, 44.4558] as LL,
-  paklaric: [15.7594, 44.4300] as LL,          // GeoNames
+  // the valley Paklarić east of Mirkača and Opačić vrh, by its hamlets Pavlice (723), Račići, Šarići and Kelinići
+  // on the topographic map; GeoNames puts a Paklarić 1.9 km west, in the saddle between the two heights
+  paklaric: [15.7795, 44.4275] as LL,
   mirkaca: [15.7563, 44.4370] as LL,           // OSM: Mirkača, 1131 m; the book's 1130
   komaca: [15.7269, 44.4413] as LL,            // OSM: Komača, 1177 m
   okrugla: [15.7324, 44.4225] as LL,           // OSM: Okrugla, 967 m; the book's 969
@@ -1762,6 +1764,8 @@ export const EPISODES: Episode[] = [
             + 'tvrdi da seoske straže nisu ni pokušale.',
           'Knjiga kaže da su na prve pucnje kod Komića u taj rejon upućeni Drugi i Četvrti bataljon, „zatečen u '
             + 'Paklariću“; Drugi je zato nacrtan u Paklariću, a njegova Druga četa, koja tek polazi, u Komiću.',
+          'Paklarić je dolina istočno od Mirkače i Opačić vrha, sa zaseocima Pavlice, Račići, Šarići i Kelinići; '
+            + 'nacrtan je po topografskoj karti. Na putu je od Poljica prema Klapavici, kuda je Četvrti bataljon išao.',
           'Put kolone od Udbine do Basta nacrtan je približno.',
         ],
         marks: [
@@ -1827,10 +1831,10 @@ export const EPISODES: Episode[] = [
           + 'Mirkača i napao neprijateljsku komoru, koja je svojim zadnjim dijelom izlazila iz Komića“. Deo „Matije '
           + 'Gupca“ izbije na jugoistočni kraj sela, „braneći selo od paljevine i protjerivajući ustaške bande“.',
         notes: ['Desno krilo Drugog bataljona knjiga ne smešta; Četvrti je nacrtan kako ga opisuje, severnim padinama '
-          + 'Mirkače prema Komiću.'],
+          + 'Mirkače od Paklarića prema Komiću.'],
         marks: [
-          { t: 'move', side: 'friend', kind: 'attack', path: [[15.7690, 44.4400], [15.7600, 44.4440], [15.7480, 44.4490], [15.7425, 44.4505]],
-            label: 'IV bat.', lp: 'n', at: 0.3, guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [L.paklaric, [15.7690, 44.4400], [15.7600, 44.4440], [15.7480, 44.4490], [15.7425, 44.4505]],
+            label: 'IV bat.', lp: 'n', at: 0.45, guess: true },
           { t: 'move', side: 'enemy', kind: 'march', path: [L.komic, [15.7350, 44.4420], L.catrnja], label: 'komora', lp: 'w', at: 0.4, force: 'ndh', guess: true },
         ],
       },
