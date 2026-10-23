@@ -1565,6 +1565,11 @@ GENITIVE_TO_NOMINATIVE = {
 # Build case-insensitive lookup
 _GENITIVE_LOOKUP = {k.lower(): v for k, v in GENITIVE_TO_NOMINATIVE.items()}
 
+# Genitives of two names, the Serbian -a and the -o of Lika, Kordun, Banija, the Krajina and Montenegro (the 1964
+# census: Simo 639 to Sima 31 in Croatia, Sima 95 to Simo 92 in Serbia). The normalizer leaves them as printed for
+# convert_fathers_genitive.py, which picks by the unit's own given names; the table still maps them for the parsers
+REGIONAL_GENITIVES = {'Sime', 'Tome', 'Save', 'Vlade'}
+
 
 def genitive_to_nominative(name):
     """
@@ -1891,6 +1896,9 @@ def normalize_soldier(record, brigade_code):
     fathers_name_nominative = ''
     if config.get('has_fathers_name') and middle_name:
         if config.get('fathers_name_form') == 'nominative':
+            fathers_name_nominative = middle_name
+        elif middle_name in REGIONAL_GENITIVES:
+            # Simo or Sima, Tomo or Toma: the unit's own men decide (convert_fathers_genitive.py), not the table
             fathers_name_nominative = middle_name
         else:
             fathers_name_nominative = genitive_to_nominative(middle_name)
