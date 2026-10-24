@@ -112,6 +112,7 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
   { start: '1943-01-08', end: '1943-01-11', label: 'Mogorić, Vrebac, Pavlovac' },
   { start: '1943-01-16', end: '1943-01-19', label: 'između Gračaca i Bruvna' },
   { start: '1943-02-01', end: '1943-02-02', label: 'Plješevica, nad Mazinom' },
+  { start: '1943-02-23', end: '1943-02-27', label: 'prema Grahovu, do Očijeva' },
 ]
 
 // places used more than once
@@ -308,6 +309,16 @@ const WS = {
   cankovici: [15.8348, 44.3401] as LL,         // JNA map: Brdeljci Čankovića under Glavica Čankovića, the book's Čanković-Draga
   radakovici: [15.8273, 44.3308] as LL,        // JNA map: Radakovići by Samardžije, west of Tomingaj
   ljubovic: [15.8331, 44.3197] as LL,          // JNA map: Ljubović, under the hills west of the Gračac field (Agbabe); the book's Ljubovići
+  // March: Ploča, Mogorić and Vrebac (JNA map 470-1-2, OSM)
+  jeloviVrh: [15.6839, 44.4715] as LL,         // OSM and the JNA map: Vrh Jelovi, 898 m, over Ploča; the book's Jelovi vrh, 909
+  viojla: [15.6510, 44.4867] as LL,            // OSM and the JNA map: Vijojla, 836 m; the book's Viojla
+  lipac: [15.6615, 44.4662] as LL,             // OSM and the JNA map: Lipač, 791 m; the book's 794
+  durinVrh: [15.6403, 44.4805] as LL,          // JNA map: the lettering Đurin vrh, west of Vijojla (no height printed)
+  plocanskiKlanac: [15.6841, 44.4531] as LL,   // JNA map: Pločanski klanac, south-east of Ploča
+  srednjaGora: [15.6672, 44.5162] as LL,
+  vrebac: [15.5014, 44.5265] as LL,
+  pavlovac: [15.5363, 44.5113] as LL,          // OSM: Pavlovac Vrebački
+  barlete: [15.4694, 44.5339] as LL,
   opcuv: [15.8858, 44.4091] as LL,             // OSM and the JNA map: Opčuv, 970 m; the book's 972
   stolac: [15.8485, 44.4154] as LL,            // OSM: Stolac, 925 m (JNA map: the ridge Stolac under V. vrh, 967)
   ljutoc: [15.8362, 44.4253] as LL,            // OSM and the JNA map: Ljutočak, 885 m; the book's Ljutoč
@@ -3221,5 +3232,134 @@ export const EPISODES: Episode[] = [
       { name: 'Ljubojević Jovo', id: '0002004205', note: 'u spisku ranjenih od 16. do 22. februara' },
     ],
     pages: [199, 204],
+  },
+  {
+    key: 'jelovi-vrh',
+    foe: 'it',
+    region: 'lovinac',
+    title: 'Jelovi vrh i Ploča',
+    short: 'Jelovi vrh',
+    dates: '1–2. marta 1943.',
+    start: '1943-03-01', end: '1943-03-02',
+    about: 'Kad se ofanziva u Lici slomila, „Pekiša Vuksan“ je jedini bataljon brigade koji je krenuo iz Like, prema '
+      + 'Bosanskom Grahovu; stigao je do Očijeva, ali nije uveden u borbe s „Princom Eugenom“, i 27. februara se vratio. '
+      + 'Štab divizije 28. februara saznaje da Talijani, ustaše i četnici iz garnizona na pruzi Gospić–Lovinac spremaju '
+      + 'napad na slobodnu teritoriju istočno od pruge, na Ploču, Mogorić i Vrebac, ali prilaze i dalje drže samo '
+      + 'bataljoni Treće brigade, na frontu od dvadesetak kilometara.',
+    view: [15.480, 44.405, 15.720, 44.545],
+    places: ['Gornja Ploča', 'Mogorić', 'Srednja Gora', 'Vrebac', 'Pavlovac Vrebački', 'Barlete', 'Medak'],
+    base: [
+      { t: 'area', side: 'enemy', at: [15.5100, 44.4555], rx: 0.45, ry: 0.3, label: 'Medak: Talijani i četnici', lp: 's', id: 'medak' },
+    ],
+    steps: [
+      {
+        date: '1. marta 1943.', time: '4.00',
+        text: 'U 4 sata od Lovinca, Raduča, Metka i Bilaja krene 11 talijanskih bataljona s gospićkim i lovinačkim '
+          + 'ustašama i medačkim četnicima, pod komandom štaba divizije „Re“, uz desetak tenkova: jedna grupa kroz '
+          + 'Pločanski klanac i preko brda iznad Ploče i Mogorića, druga kroz Ploču, a treća poljem i cestom od Metka '
+          + 'prema Mogoriću. Ujutro, kad se borba već razgoreva pred Pločom i pred Mogorićem, „Pekiši Vuksanu“ je '
+          + 'naređeno da što brže zaposedne 909 metara visoki Jelovi vrh: manje snage Treće brigade tamo se bez pomoći '
+          + 'ne mogu održati.',
+        notes: [
+          'Putevi talijanskih grupa nacrtani su približno: knjiga daje Pločanski klanac, Ploču i cestu od Metka prema '
+            + 'Mogoriću. Gde su tačno bili bataljoni Treće brigade, knjiga ne kaže.',
+          'Jelovi vrh je na topografskoj karti JNA 1:25.000 i na OpenStreetMap Vrh Jelovi, 898 m (knjiga: 909), između '
+            + 'Ploče i Srednje Gore. Odakle je bataljon krenuo, knjiga ne kaže; strelica dolazi od Srednje Gore.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.jeloviVrh, label: '909 Jelovi vrh', lp: 'e' },
+          { t: 'spot', at: WS.plocanskiKlanac, label: 'Pločanski klanac', lp: 'e' },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.7050, 44.4330], WS.plocanskiKlanac, [15.6700, 44.4640], [15.6520, 44.4750]],
+            label: 'kroz Pločanski klanac', lp: 'e', at: 0.35, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.6350, 44.4300], [15.6430, 44.4480], L.ploca], label: 'kroz Ploču', lp: 'w', at: 0.15, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.5150, 44.4590], [15.5500, 44.4720], [15.5800, 44.4850]],
+            label: 'od Metka prema Mogoriću', lp: 'se', at: 0.45, guess: true },
+          { t: 'area', side: 'ally', at: [15.6520, 44.4660], rx: 0.6, ry: 0.3, label: 'delovi 3. ličke br.', lp: 'w', guess: true, id: '3lb-ploca', until: 2 },
+          { t: 'area', side: 'ally', at: [15.5850, 44.4830], rx: 0.5, ry: 0.3, label: 'delovi 3. ličke br.', lp: 'n', guess: true, id: '3lb-mogoric', until: 2 },
+          { t: 'move', side: 'own', kind: 'march', path: [[15.7000, 44.5000], [15.6930, 44.4880], [15.6870, 44.4760]], label: 'II bat.', lp: 'e', at: 0.2, guess: true },
+        ],
+      },
+      {
+        date: '1. marta 1943.', when: 'ujutro',
+        view: [15.610, 44.443, 15.705, 44.502],
+        text: 'Kad bataljon izađe na Jelovi vrh, prostim osmatranjem, a i po jeci borbe, vidi se da je neprijatelj '
+          + 'potisnuo Treću brigadu i izbio na dominantne kote Lipač (794) i Đurin vrh (833). Dalje ostajanje na Jelovom '
+          + 'vrhu nema smisla. Štab divizije ozbiljnost situacije sagleda tek kasno uveče, i tek u noći 1. i 2. marta u '
+          + 'borbu uvodi „Božidara Adžiju“ i „Matiju Gupca“, ojačane delovima Mitraljeskog bataljona.',
+        notes: [
+          'Na karti JNA Lipač ima 791 m (knjiga: 794); Đurin vrh karta imenuje bez visine, zapadno od Vijojle, a visinu '
+            + '833 ima Đakovića vrh, dva kilometra severozapadnije.',
+          'Kuda se Treća brigada povukla, knjiga ne kaže.',
+        ],
+        marks: [
+          { t: 'area', side: 'own', at: WS.jeloviVrh, rx: 0.5, ry: 0.3, label: 'II bat.', lp: 'n', id: 'II' },
+          { t: 'kota', at: WS.lipac, label: '794 Lipač', lp: 's' },
+          { t: 'kota', at: WS.durinVrh, label: '833 Đurin vrh', lp: 'w' },
+          { t: 'area', side: 'enemy', at: WS.lipac, rx: 0.4, ry: 0.25, id: 'lipac-en', until: 3 },
+          { t: 'area', side: 'enemy', at: WS.durinVrh, rx: 0.4, ry: 0.25, id: 'durin-en', until: 3 },
+          { t: 'move', side: 'ally', kind: 'back', path: [[15.6500, 44.4700], [15.6420, 44.4880], [15.6350, 44.4960]], label: '3. lička br.', lp: 'w', at: 0.5, guess: true },
+        ],
+      },
+      {
+        date: '2. marta 1943.', when: 'pred podne',
+        view: [15.480, 44.440, 15.710, 44.548],
+        text: '„Pekiša Vuksan“ je zadržan na položajima Jelovi vrh–Viojla. Komandant brigade Lazo Radaković izvede čete '
+          + '„Matije Gupca“ na brda svog detinjstva, nad uski seoski drum Mogorić–Srednja Gora, malo istočnije od '
+          + 'najistočnijih mogorićkih kuća; „Božidar Adžija“ je u rezervi. Pred podne dva bataljona Treće brigade i '
+          + '„Matija Gubec“ u Vrepcu izvedu silovit „protivjuriš na neprijatelja nanijevši mu gubitke i zarobivši dva '
+          + 'neispravna tenka“.',
+        notes: [
+          'Viojla je na karti JNA i na OpenStreetMap Vijojla (836 m), severozapadno od Jelovog vrha.',
+          'Odakle je izveden protivjuriš u Vrepcu, knjiga ne kaže; strelica je nacrtana približno.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.viojla, label: 'Viojla', lp: 'n' },
+          { t: 'area', side: 'own', at: [15.6675, 44.4790], rx: 1.5, ry: 0.35, rot: -25, label: 'II bat.', lp: 'n', id: 'II' },
+          { t: 'area', side: 'friend', at: [15.6060, 44.4960], rx: 0.5, ry: 0.25, label: 'IV bat.', lp: 'n', guess: true, id: 'IV', until: 3 },
+          { t: 'move', side: 'ally', kind: 'attack', path: [[15.5450, 44.5380], [15.5250, 44.5320], [15.5060, 44.5275]],
+            label: 'protivjuriš u Vrepcu', lp: 'n', at: 0.2, guess: true },
+          { t: 'fight', at: WS.vrebac },
+        ],
+      },
+      {
+        date: '2. marta 1943.', when: 'nešto kasnije',
+        view: [15.465, 44.425, 15.710, 44.548],
+        text: 'Nešto kasnije protivudar se izvede na svim pravcima. Talijane, četnike i ustaše napadaju i „Pekiša Vuksan“ i '
+          + '„Božidar Adžija“; silini napada ne odole. „Pekiša Vuksan“ s delovima Treće brigade brzo prodire prema Ploči, a '
+          + '„Božidar Adžija“, izveden iz rezerve, odmah ulazi u oštre borbe duž ceste Bilaj–Barlete–Vrebac. Za nekoliko '
+          + 'sati, u rano popodne, neprijatelj se povuče u žicom ograđene i bunkerima utvrđene garnizone Gospić i Medak; '
+          + 'iza njega sve je u plamenu, sve kuće su zapaljene. Najveći gubici naneseni su Talijanima na Jadovi, između '
+          + 'Pavlovca i Vrepca. Rano se smrklo, i noć je pomogla Talijanima.',
+        notes: [
+          'Putevi Drugog bataljona prema Ploči i povlačenja neprijatelja nacrtani su približno; knjiga daje samo pravce.',
+          'Bilaj je zapadno od lista; borba „Božidara Adžije“ nacrtana je na cesti od Vrepca prema Barletama.',
+        ],
+        marks: [
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.6750, 44.4740], [15.6620, 44.4680], L.ploca], label: 'II bat. i delovi 3. ličke br.', lp: 'e', at: 0.1 },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.5150, 44.5300], WS.vrebac, [15.4850, 44.5310], WS.barlete], label: 'III bat.', lp: 'n', at: 0.4, guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.6400, 44.4580], [15.6000, 44.4500], [15.5500, 44.4500], [15.5220, 44.4540]], label: 'u Medak', lp: 's', at: 0.5, guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [WS.pavlovac, [15.4950, 44.5200], [15.4700, 44.5180]], label: 'prema Gospiću', lp: 's', at: 0.6, guess: true },
+          { t: 'fight', at: [15.5190, 44.5180] },
+        ],
+      },
+    ],
+    enemy: [
+      '11 talijanskih bataljona pod komandom štaba divizije „Re“, s gospićkim i lovinačkim ustašama i medačkim '
+        + 'četnicima, uz desetak tenkova',
+      'Napad od Lovinca, Raduča, Metka i Bilaja: kroz Pločanski klanac i preko brda iznad Ploče i Mogorića, kroz Ploču, '
+        + 'i poljem i cestom od Metka prema Mogoriću',
+    ],
+    friends: [
+      'Bataljoni Treće ličke brigade: pred Pločom, Mogorićem i Vrepcem',
+      'Četvrti bataljon „Matija Gubec“: nad drumom Mogorić–Srednja Gora, protivjuriš u Vrepcu',
+      'Treći bataljon „Božidar Adžija“: rezerva, zatim cesta Bilaj–Barlete–Vrebac',
+      'Delovi Mitraljeskog bataljona',
+    ],
+    result: 'Neprijatelj je za nekoliko sati vraćen u Gospić i Medak, a za sobom je zapalio sva sela; štab divizije pisao je '
+      + 'da partizanska sela „danas više ne predstavljaju bazu“. U tim borbama i u dva naredna dana, dok Talijani, četnici '
+      + 'i ustaše nisu sterani u utvrđene krugove Metka, Lovinca, Bilaja i Gospića, Prva brigada je imala jednog mrtvog i '
+      + 'pet ranjenih, a Treća četiri mrtva i 15 ranjenih. Talijani su, po svojim podacima, imali 16 poginulih i 73 '
+      + 'ranjena, a jedan poručnik s 25 vojnika je zarobljen; ustaše i domobrani imali su 43 izbačena iz stroja.',
+    pages: [211, 213],
   },
 ]

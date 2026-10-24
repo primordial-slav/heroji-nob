@@ -161,7 +161,7 @@ const AS_IN_BOOK: Record<string, string> = {
   'Bakovac Kosinjski': 'Kosinjski Bakovac', 'Drenovac Banski': 'Drenovac', 'Donji Klasnić': 'Klasnić', 'Rudići': 'Rudić',
   'Slunjčica': 'Slušnica', 'Golubovac Divuški': 'Golubovac', 'Novi Grad': 'Bosanski Novi',
   'Hrvatska Kostajnica': 'Kostajnica', 'Kostajnica': 'Bosanska Kostajnica', 'Bagunica': 'Bogunica',
-  'Rudopolje Bruvanjsko': 'Rudopolje', 'Brezovac Dobroselski': 'Brezovac',
+  'Rudopolje Bruvanjsko': 'Rudopolje', 'Brezovac Dobroselski': 'Brezovac', 'Pavlovac Vrebački': 'Pavlovac',
 }
 const bookName = (n: string) => AS_IN_BOOK[n] ?? n
 
