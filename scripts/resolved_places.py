@@ -13,6 +13,10 @@ unresolved (several places of the name, or none GeoNames knows) and is left alon
                                        anywhere ("Užicu", "Tugarima", "Bosanskom Petrovcu"); one that could be a
                                        nominative too ("Kuli" of Kula, but "Radenkovići") only where the entry
                                        prints a preposition before it ("u Kuli"). Fields set by corrections stay.
+    case_nominative(text)              a place stored in a case that GeoNames left unresolved (a name of several
+                                       places, or of none it knows), from data-extraction/places/case_forms.json:
+                                       "na Sutjesci" -> "Sutjeska", "u s. Bazje, Šid" -> "Bazje, Šid"; apply()
+                                       uses it where the resolved places have nothing
 
 scripts/apply_corrections.py runs apply() on every unit it writes. The entries' text is never touched.
 
@@ -32,8 +36,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RESOLVED = ROOT / 'data-extraction' / 'places' / 'resolved.json'
+CASES = ROOT / 'data-extraction' / 'places' / 'case_forms.json'
 FIELDS = ('birth_place', 'death_place')
 PREP = r'(?:u|iz|kod|na|pri|v|od|do|blizu|ispod|iznad|pod|nad|prema|kraj|oko)'
+# what a place in a case is stored after: a preposition the nominative drops, then the village's own word
+# ("u s. Bazje", "u selu Dinjevcu"); "kod", "pod", "pri" stay ("kod Bihaća" is near it)
+CASE_LEAD = re.compile(r'(?:(u|na|v)\s+)?(?:(s\.|selu|selo)\s*)?')
 
 
 @lru_cache(maxsize=1)
@@ -42,6 +50,31 @@ def load() -> dict:
         return json.loads(RESOLVED.read_text(encoding='utf-8'))
     except FileNotFoundError:
         return {'units': {}, 'places': {}}
+
+
+@lru_cache(maxsize=1)
+def case_forms() -> dict:
+    """the reviewed table of places in a case (quality/places/case_forms.py writes it): forms -> nominative, and
+    the forms that may change with no preposition before them"""
+    try:
+        t = json.loads(CASES.read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        return {'forms': {}, 'bare': set()}
+    return {'forms': t['forms'], 'bare': set(t['bare'])}
+
+
+def case_nominative(text: str) -> str | None:
+    """'na Sutjesci' -> 'Sutjeska', 'u s. Bazje, Šid' -> 'Bazje, Šid', the census's 'Pločama' -> 'Ploče' (a bare
+    form only where the table says it can only be a case); None where the table has nothing"""
+    first, sep, rest = (text or '').partition(',')
+    first = first.strip()
+    m = CASE_LEAD.match(first)
+    form = first[m.end():].strip()
+    t = case_forms()
+    new = t['forms'].get(form)
+    if new is None or not (m.group(1) or m.group(2) or form in t['bare']):
+        return None
+    return new + sep + rest
 
 
 def _value(unit_file: str, field: str, text: str):
@@ -87,7 +120,7 @@ def apply(unit_file: str, soldiers: list[dict], manual: dict | None = None) -> C
         for field in FIELDS:
             if field in kept or not s.get(field):
                 continue
-            new = nominative(unit_file, field, s)
+            new = nominative(unit_file, field, s) or case_nominative(s[field])
             if new and new != s[field]:
                 s[field] = new
                 done[field] += 1
