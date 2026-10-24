@@ -471,7 +471,7 @@
     "fathers_name": "Miladin",
     "full_name": "Anić Miladina Života",
     "additional_info": "rođen aprila 1913. godine, Drugovar Smederevo. U Brigadi od decembra 1944. godine, boršJ:",
-    "birth_year": "",
+    "birth_year": "1913",
     "pdf_page": 25,
     "pdf_y": 312.2,
     "pdf_x": 160.0,
@@ -488,7 +488,7 @@
     "fathers_name": "Vladimir",
     "full_name": "Antić Vladimira Božidar",
     "additional_info": "rođen juna 1919. godine u Drugovcu, srez Smederevo. Poginuo januara 1945. godine ispred Tovarnika na Sremskom frontu.",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 1,
     "pdf_y": 458.9,
     "pdf_x": 124.4,
@@ -947,6 +947,7 @@
     "rank": "komandant bataljona, obaveštajni oficir",
     "pdf_x_end": 418.2,
     "ethnicity": "Srbin",
+    "occupation": "pilot",
     "other_sources": [
       {
         "soldier_id": "0080000035",
@@ -1836,7 +1837,8 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000080",
     "unit_detail": "II bataljon",
-    "pdf_x_end": 449.2
+    "pdf_x_end": 449.2,
+    "rank": "komandir voda"
   },
   {
     "last_name": "Bašić",
@@ -3272,7 +3274,7 @@
     "fathers_name": "Doagoljuba",
     "full_name": "Branković Doagoljuba Milan",
     "additional_info": "roćen 1926. godine, Ostružnica. Beograd, zemljoradnik. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu.",
-    "birth_year": "",
+    "birth_year": "1926",
     "pdf_page": 30,
     "pdf_y": 356.6,
     "pdf_x": 131.5,
@@ -3280,7 +3282,8 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000140",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 424.3
+    "pdf_x_end": 424.3,
+    "birth_place": "Ostružnica"
   },
   {
     "last_name": "Branković",
@@ -5717,7 +5720,8 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000245",
     "birth_place": "Selevac, Smederevska Palanka",
-    "pdf_x_end": 452.8
+    "pdf_x_end": 452.8,
+    "rank": "komesar čete"
   },
   {
     "last_name": "Ignjatović",
@@ -9373,6 +9377,7 @@
     "pdf_x_end": 452.1,
     "pdf_y_end": 433.9,
     "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "other_sources": [
       {
         "soldier_id": "0080000420",
@@ -11316,6 +11321,7 @@
     "birth_place": "Bjelovar",
     "pdf_x_end": 451.3,
     "ethnicity": "Srbin",
+    "occupation": "đak",
     "other_sources": [
       {
         "soldier_id": "0080000513",
@@ -11971,7 +11977,8 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000519",
     "unit_detail": "III bataljon",
-    "pdf_x_end": 453.8
+    "pdf_x_end": 453.8,
+    "rank": "komandir čete"
   },
   {
     "last_name": "Mađarov",
@@ -14812,7 +14819,8 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000635",
     "unit_detail": "prateća četa",
-    "pdf_x_end": 451.8
+    "pdf_x_end": 451.8,
+    "rank": "delegat voda"
   },
   {
     "last_name": "Munjas",
@@ -16497,7 +16505,8 @@
         ],
         "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "rank": "komandant bataljona"
   },
   {
     "last_name": "Obradović",
@@ -18435,7 +18444,8 @@
     "soldier_id": "0074000773",
     "birth_place": "Ponikvica, Nik šić",
     "unit_detail": "IV bataljon",
-    "pdf_x_end": 451.4
+    "pdf_x_end": 451.4,
+    "rank": "komesar bataljona"
   },
   {
     "last_name": "Peruničić",
@@ -19404,7 +19414,8 @@
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000814",
     "unit_detail": "III bataljon",
-    "pdf_x_end": 461.4
+    "pdf_x_end": 461.4,
+    "rank": "komandir čete"
   },
   {
     "last_name": "Popović",
@@ -21608,6 +21619,7 @@
     "birth_place": "Osipaonica",
     "ethnicity": "Srbin",
     "rank": "politički komesar čete",
+    "occupation": "stolar",
     "other_sources": [
       {
         "soldier_id": "0080001061",
@@ -23242,7 +23254,8 @@
     "pdf_y_end": 505.6,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000984",
-    "pdf_x_end": 424.7
+    "pdf_x_end": 424.7,
+    "birth_place": "Sremčica"
   },
   {
     "last_name": "Stepanović",
@@ -26975,6 +26988,7 @@
     "rank": "komandir voda, potpukovnik",
     "pdf_x_end": 420.7,
     "ethnicity": "Srbin",
+    "occupation": "đak",
     "other_sources": [
       {
         "soldier_id": "0080001273",
@@ -27427,7 +27441,8 @@
     "soldier_id": "0074001155",
     "birth_place": "Mekinjar, Korenica",
     "unit_detail": "III bataljon",
-    "pdf_x_end": 457.9
+    "pdf_x_end": 457.9,
+    "rank": "komandant bataljona"
   },
   {
     "last_name": "Vrzić",
@@ -28913,6 +28928,7 @@
     "death_type": "umro",
     "death_date": "1975",
     "death_place": "Lipe",
+    "occupation": "zemljoradnik",
     "other_sources": [
       {
         "soldier_id": "0080001346",
@@ -29392,7 +29408,8 @@
     "pdf_y_end": 594.5,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074001245",
-    "pdf_x_end": 462.4
+    "pdf_x_end": 462.4,
+    "birth_place": "Malo Orašje"
   },
   {
     "last_name": "Đurić",
@@ -30574,7 +30591,8 @@
     "death_type": "poginuo",
     "death_place": "Sremski front",
     "unit_detail": "III bataljon",
-    "pdf_x_end": 419.8
+    "pdf_x_end": 419.8,
+    "rank": "komesar čete"
   },
   {
     "last_name": "Žustra",

@@ -352,21 +352,23 @@ ETHNIC = {
 }
 
 # functions / ranks, longest first; genitive forms after a number are units, not ranks
-_UNITS_GEN = r'(?:odeljenja|odjeljenja|desetine|voda|čete|baterije|bataljona|brigade|divizije|korpusa|odreda|štaba)'
+_UNITS_GEN = r'(?:odeljenja|odjeljenja|odelenja|desetine|voda|[čć]ete|baterije|bataljona|brigade|divizije|korpusa|odreda|štaba)'
+# a duty with the unit's number between: "Komandant 2. bataljona", "komandir I. čete" (stored without it: ranks())
+_UNIT_NO = r'(?:(?:\d{1,2}|[IVX]{1,4})\.?\s?)?'
 RANK_PATTERNS = [
-    rf'zam(?:j)?enik (?:političkog |polit\. )?komesara(?: {_UNITS_GEN})?',
-    rf'pomoćnik (?:političkog |polit\. )?komesara(?: {_UNITS_GEN})?',
-    rf'zam(?:j)?enik komand(?:ira|anta)(?: {_UNITS_GEN})?',
-    rf'(?:politički|polit\.) (?:komesar|delegat)(?: {_UNITS_GEN})?',
-    rf'komesar(?: {_UNITS_GEN})',
-    rf'komand(?:ir|ant)(?: {_UNITS_GEN})',
-    rf'načelnik (?:štaba|saniteta)(?: {_UNITS_GEN})?',
+    rf'zam(?:j)?enik (?:političkog |polit\. )?komesara(?: {_UNIT_NO}{_UNITS_GEN})?',
+    rf'pomoćnik (?:političkog |polit\. )?komesara(?: {_UNIT_NO}{_UNITS_GEN})?',
+    rf'zam(?:j)?enik komand(?:ira|anta)(?: {_UNIT_NO}{_UNITS_GEN})?',
+    rf'(?:politički|polit\.) (?:komesar|delegat)(?: {_UNIT_NO}{_UNITS_GEN})?',
+    rf'komesar(?: {_UNIT_NO}{_UNITS_GEN})',
+    rf'komand(?:ir|ant)(?: {_UNIT_NO}{_UNITS_GEN})',
+    rf'načelnik (?:štaba|saniteta|veze)(?: {_UNIT_NO}{_UNITS_GEN})?',
     rf'referent (?:saniteta|za vezu|za ishranu)(?: {_UNITS_GEN})?',
     rf'sanitetski referent(?: {_UNITS_GEN})?',
     rf'obaveštajni oficir(?: {_UNITS_GEN})?', rf'obavještajni oficir(?: {_UNITS_GEN})?',
     rf'(?:omladinski|skojevski) rukovodilac(?: {_UNITS_GEN})?', rf'sekretar SKOJ-a(?: {_UNITS_GEN})?',
     rf'intendant(?: {_UNITS_GEN})?', rf'ekonom(?: {_UNITS_GEN})?',
-    r'(?:vodni|četni|politički) delegat', r'delegat voda',
+    r'(?:vodni|četni|politički) delegat', r'delegat (?:prvog |drugog |trećeg |četvrtog |\d\. )?voda',
     r'(?:mlađi|stariji) vodnik', r'(?:ml|st)\.\s?vodnik', r'vodnik I\. klase', r'kapetan I\. klase',
     r'general-(?:major|lajtnant|potpukovnik)',
     r'borac', r'borec', r'kuvar(?:ica)?', r'kuhar(?:ica)?', r'bolničar(?:ka)?', r'kurir(?:ka)?', r'desetar', r'vodnik', r'podnarednik', r'narednik', r'zastavnik',
@@ -625,7 +627,10 @@ class Extractor:
     # ── birth / ethnicity / occupation ───────────────────────
     def life(self, text: str, code: int, group_heading: bool = False) -> dict:
         out = {}
-        t = text
+        # the word as the scans spell it: "roden" (Druga lička's memoir book), "roćen" (19. birčanska, 7. krajiška),
+        # "rođe n", "-ođen" (its first letter lost), "rodjen", "rod. 1921" (not "rod. Fiamengo", a maiden name)
+        t = re.sub(r'(?:\b([Rr])o(?:d|ć|dj)e\s?n|(?<![\w])-ođen)(a?)\b', lambda r: f"{r.group(1) or 'r'}ođen{r.group(2)}", text)
+        t = re.sub(r'\b([Rr])od\.\s*(?=1[89]\d\d)', r'\1ođen ', t)
         if code == 58:
             t = re.sub(r'^(?:dr\.;\s*)?r\.\s*(?=1[89]\d\d)', 'rođen ', t)     # Kalnički odred: "r. 1922; Martinišće, Zabok"
         if code == 75 and not re.match(r'^(?:iz|rođ)\b', t):
@@ -777,7 +782,10 @@ class Extractor:
         if code in NO_OCCUPATION:
             out.pop('occupation', None)
         elif 'occupation' not in out:
-            for w in words[:8]:
+            # the trade stands after the birth: from the year on where the bio opens with a unit and a date ("borac 3. č.
+            # 3. bat., r. 18. 12. 1919, Ljubitovica, Trogir, zemljoradnik", the 11. dalmatinska)
+            born_at = next((i for i, w in enumerate(words[:12]) if re.fullmatch(YEAR, w)), 0)
+            for w in words[born_at:born_at + 8]:
                 if self.is_occupation(w) and w.lower() not in ('borac',):
                     out['occupation'] = self.occupation(w.lower())
                     break
@@ -1069,6 +1077,9 @@ class Extractor:
         for m in RANK_RE.finditer(text):
             r = m.group(1).lower().replace('polit. ', 'politički ').replace('skoj-a', 'SKOJ-a')
             r = re.sub(r'^st\.\s?vodnik$', 'stariji vodnik', re.sub(r'^ml\.\s?vodnik$', 'mlađi vodnik', r))   # "st.vodnik"
+            # "komandant 2. bataljona", "delegat prvog voda": the number is the unit's, not the duty's; the scan's "ćete"
+            r = re.sub(rf'\s(?:\d{{1,2}}|[ivx]{{1,4}})\.?\s(?={_UNITS_GEN}\b)', ' ', r)
+            r = re.sub(r'\b(?:prvog|drugog|trećeg|četvrtog|\d\.)\s(?=voda$)', '', r).replace('ćete', 'čete')
             if r not in found:
                 found.append(r)
         # a specific function makes the generic "borac" redundant; "politički komesar" is covered by "politički komesar brigade"
