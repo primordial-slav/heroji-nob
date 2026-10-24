@@ -87,6 +87,17 @@ def process_brigade(json_path, brigade_code, config):
             if birth_year:
                 result['birth_year'] = birth_year
                 stats['birth_year_extracted'] += 1
+        # else from another book's entry merged into the record (a book across units' is not read), a year a man
+        # could be born in: "10. 4. 1944, Oprisavci, ..., poginuo 25. 9. 1944" opens with no birth
+        if not result.get('birth_year'):
+            for o in result.get('other_sources') or []:
+                if o.get('ref_book'):
+                    continue
+                _, birth_year = extract_birth_info(o.get('additional_info') or '')
+                if birth_year and 1860 <= int(birth_year) <= 1935:
+                    result['birth_year'] = birth_year
+                    stats['birth_year_extracted'] += 1
+                    break
 
         # Track what changed
         if original.get('last_name', '') != result.get('last_name', ''):
