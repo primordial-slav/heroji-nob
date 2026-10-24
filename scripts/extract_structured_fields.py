@@ -360,6 +360,7 @@ RANK_PATTERNS = [
     rf'pomoćnik (?:političkog |polit\. )?komesara(?: {_UNIT_NO}{_UNITS_GEN})?',
     rf'zam(?:j)?enik komand(?:ira|anta)(?: {_UNIT_NO}{_UNITS_GEN})?',
     rf'(?:politički|polit\.) (?:komesar|delegat)(?: {_UNIT_NO}{_UNITS_GEN})?',
+    rf'(?:zam(?:j)?enik |pomoćnik )?politkomesara?(?: {_UNIT_NO}{_UNITS_GEN})?',     # the Mosor odred's one word
     rf'komesar(?: {_UNIT_NO}{_UNITS_GEN})',
     rf'komand(?:ir|ant)(?: {_UNIT_NO}{_UNITS_GEN})',
     rf'načelnik (?:štaba|saniteta|veze)(?: {_UNIT_NO}{_UNITS_GEN})?',
@@ -580,6 +581,25 @@ class Extractor:
             return False
         return w.lower() in self.occupations and not (w[:1].isupper() and self.places.get(w, 0) >= 2)
 
+    def trade_of(self, w: str) -> str | None:
+        """A segment of the bio as a trade: as printed, or before the words run on after it ("avio-mehaničar rođen
+        19", "opančarski radnik u Belom Polju", "radnik u NOB od"), and a craft's worker the trades seen so far lack
+        ("krznarski radnik")"""
+        for c in dict.fromkeys((w, re.split(r'\s+(?:rođen\w*|u|na|kod|iz|od)\s', w)[0])):
+            rest = w[len(c):]
+            # not a career after the war ("Oficir u penziji") or a rank in it ("oficir u NOV"): no trade before it
+            if re.match(r'\s+u\s+(?:penzij|penz\b)', rest) or (
+                    c.lower() in ('oficir', 'podoficir', 'zastavnik') and re.match(r'\s+u\s+(?:NOV|NOVJ|JNA|JA)\b', rest)):
+                continue
+            if self.is_occupation(c) and c.lower() != 'borac':
+                return self.occupation(c.lower())
+            if re.fullmatch(rf'[{L}]+(?:ski|čki|ški)\s+radni(?:k|ca)', c):
+                return c
+            # a compound whose last word is a trade: "avio-mehaničar", "učenik-metalac"
+            if re.fullmatch(rf'[{L}]+-[{L}]+', c) and c.lower().split('-')[-1] in self.occupations:
+                return c.lower()
+        return None
+
     def no_place(self, s: str) -> bool:
         """A segment of the bio that is no place: an ethnicity, a trade, a duty or a unit, a clause, a number, a phrase
         too long for a village's name, a word in lowercase"""
@@ -776,8 +796,9 @@ class Extractor:
         for i, w in enumerate(words):
             if w in ETHNIC:
                 out['ethnicity'] = w
-                if i + 1 < len(words) and self.is_occupation(words[i + 1]):
-                    out['occupation'] = self.occupation(words[i + 1].lower())
+                trade = self.trade_of(words[i + 1]) if i + 1 < len(words) else None
+                if trade:
+                    out['occupation'] = trade
                 break
         if code in NO_OCCUPATION:
             out.pop('occupation', None)
@@ -786,8 +807,9 @@ class Extractor:
             # 3. bat., r. 18. 12. 1919, Ljubitovica, Trogir, zemljoradnik", the 11. dalmatinska)
             born_at = next((i for i, w in enumerate(words[:12]) if re.fullmatch(YEAR, w)), 0)
             for w in words[born_at:born_at + 8]:
-                if self.is_occupation(w) and w.lower() not in ('borac',):
-                    out['occupation'] = self.occupation(w.lower())
+                trade = self.trade_of(w)
+                if trade:
+                    out['occupation'] = trade
                     break
         if head:
             out['_head'] = head
@@ -1074,8 +1096,14 @@ class Extractor:
     @staticmethod
     def ranks(text: str) -> str:
         found = []
+        # "borac-ranjenik", "Borac-telefonista", "borac-puškomitraljezac": two words, the second a duty or none
+        text = re.sub(rf'\b([Bb]or(?:ac|ka))-(?=[{L}])', r'\1, ', text)
         for m in RANK_RE.finditer(text):
             r = m.group(1).lower().replace('polit. ', 'politički ').replace('skoj-a', 'SKOJ-a')
+            r = re.sub(r'\bpolitkomesar(a?)\b', r'političkog komesar\1' if False else r'politički komesar\1', r)
+            r = r.replace('zamjenik politički komesara', 'zamjenik političkog komesara').replace(
+                'zamenik politički komesara', 'zamenik političkog komesara').replace(
+                'pomoćnik politički komesara', 'pomoćnik političkog komesara')
             r = re.sub(r'^st\.\s?vodnik$', 'stariji vodnik', re.sub(r'^ml\.\s?vodnik$', 'mlađi vodnik', r))   # "st.vodnik"
             # "komandant 2. bataljona", "delegat prvog voda": the number is the unit's, not the duty's; the scan's "ćete"
             r = re.sub(rf'\s(?:\d{{1,2}}|[ivx]{{1,4}})\.?\s(?={_UNITS_GEN}\b)', ' ', r)
