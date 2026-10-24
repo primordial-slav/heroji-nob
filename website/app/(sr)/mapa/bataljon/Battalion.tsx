@@ -1038,7 +1038,7 @@ function axisOf(width: number) {
   const min: number[] = days.map((_, j) => (j % 2 ? BAR_MIN : j && j < days.length - 1 ? GAP_MIN : 0))
   const total = days.reduce((a, b) => a + b, 0)
   let xs: number[] = []
-  for (let round = 0; round < 40; round++) {
+  for (let round = 0; round < 400; round++) {
     const base = Math.max(0.15, (width - min.reduce((a, b) => a + b, 0)) / total)
     xs = [0]
     days.forEach((d, j) => xs.push(xs[j] + min[j] + base * d))
@@ -1366,7 +1366,7 @@ export default function Battalion({ initial }: { initial: { epizoda?: string; ko
       <header className={styles.head}>
         <h1 className={styles.headTitle}>Drugi bataljon „Pekiša Vuksan“</h1>
         <p className={styles.headKicker}>Prva lička proleterska brigada „Marko Orešković“ · šta knjiga o brigadi piše o
-          bataljonu, borba po borba · prvi nacrt, jul 1942. – januar 1943.</p>
+          bataljonu, borba po borba · prvi nacrt, jul 1942. – februar 1943.</p>
       </header>
       <Timeline e={pos.e} go={go} />
       <div className={styles.layout}>

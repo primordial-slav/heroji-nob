@@ -348,6 +348,14 @@ const ROAD = {
     [15.9689, 44.4930], [15.9687, 44.4957], [15.9689, 44.4980], [15.9706, 44.4994], [15.9729, 44.5010], [15.9732, 44.5054],
     [15.9808, 44.5097], [15.9793, 44.5107], [15.9792, 44.5120], [15.9854, 44.5108], [15.9819, 44.5146], [15.9877, 44.5143],
     [15.9940, 44.5140], [15.9950, 44.5151]] as LL[],
+  // from Gornji Lapac by Boričevac to Kulen-Vakuf
+  lapacKulen: [[15.9950, 44.5151], [15.9972, 44.5150], [16.0006, 44.5173], [16.0042, 44.5190], [16.0079, 44.5191], [16.0114, 44.5176],
+    [16.0140, 44.5221], [16.0189, 44.5254], [16.0214, 44.5284], [16.0258, 44.5322], [16.0278, 44.5334], [16.0370, 44.5357],
+    [16.0437, 44.5374], [16.0481, 44.5418], [16.0555, 44.5485], [16.0589, 44.5534], [16.0641, 44.5565], [16.0677, 44.5595],
+    [16.0718, 44.5638], [16.0748, 44.5664], [16.0785, 44.5685], [16.0840, 44.5680]] as LL[],
+  // from Udbina north to Jošan
+  udbinaJosan: [[15.7640, 44.5330], [15.7650, 44.5400], [15.7656, 44.5444], [15.7635, 44.5492], [15.7612, 44.5531], [15.7605, 44.5554],
+    [15.7583, 44.5598], [15.7557, 44.5652], [15.7531, 44.5706], [15.7510, 44.5738], [15.7480, 44.5768], [15.7451, 44.5793]] as LL[],
 }
 
 export const EPISODES: Episode[] = [
@@ -2789,5 +2797,181 @@ export const EPISODES: Episode[] = [
       { name: 'Vojnović Steve Nikola', id: '0002009279', note: 'u spisku boraca poginuo januara 1943. kod Gračaca; knjiga ga navodi među poginulima u operaciji „Weiss“ („Nikola Vojnović Stevin“)' },
     ],
     pages: [165, 176],
+  },
+  {
+    key: 'mazinska-planina',
+    foe: 'it',
+    region: 'gracac',
+    title: 'Mazinska planina',
+    short: 'Mazinska planina',
+    dates: '3–13. februara 1943.',
+    start: '1943-02-03', end: '1943-02-13',
+    about: 'Dve nedelje, do 14. februara, položaji brigade ostaju na istim kotama Plješevice, nad cestom Mazin–Gornji '
+      + 'Lapac i mazinskim zaseocima: istočno od ceste, prema Dobroselu, na Kuku, Rašetinoj strani, Zavišića vršini, '
+      + 'Jasenovom vrhu, Lumbardeniku, Škorića brdu i Ilića kosi, a zapadno od nje po šumama Kremena, na Ravnoj draži, '
+      + 'Javorniku i Zuleševici. Pet bataljona drži ih dok se jedinice pod komandom Vrhovnog štaba s Centralnom bolnicom '
+      + 'povlače prema Drvaru i Glamoču. Bataljoni se ukopavaju u sneg, a noću šalju bombaške grupe i čete na talijanske '
+      + 'položaje.',
+    view: [15.930, 44.440, 16.060, 44.540],
+    places: ['Mazin', 'Bajići', 'Končari', 'Vagan', 'Gornji Lapac', 'Dobroselo', 'Brezovac Dobroselski', 'Udbina', 'Jošani', 'Visuć'],
+    base: [
+      { t: 'area', side: 'enemy', at: WS.mazin, rx: 0.5, ry: 0.3, label: 'Mazin: Talijani', lp: 'w', id: 'mazin' },
+    ],
+    steps: [
+      {
+        date: '3–4. februara 1943.', when: 'uveče, pa noću',
+        view: [15.935, 44.450, 16.015, 44.505],
+        text: 'U noći 2. i 3. februara talijanski položaji napadani su na više mesta. Naredne noći, poneseni uspehom '
+          + 'prethodnog dana, bataljoni brigade napadaju utvrđene položaje severno od Bajića i Končara, na koti 980 nad '
+          + 'lapačkom cestom. U napadu je šest četa, po dve iz Prvog, Drugog i Trećeg bataljona; pokazuje se da više uspeha '
+          + 'postižu manje grupe bombaša. Po Talijanima, na koti 980 „odbijen je novi napad“, a oni su imali 6 mrtvih i 51 '
+          + 'ranjenog, od toga 4 oficira. Komandant brigade Lazo Radaković sutradan javlja: „Napad nije uspio zbog '
+          + 'zamorenosti ljudstva i solidno utvrđenih neprijateljskih položaja“; brigada je imala tri mrtva i devet '
+          + 'ranjenih, među poginulima zamenika komandira Treće čete Prvog bataljona Iliju Obradovića.',
+        notes: [
+          'Kota 980 je prevoj na cesti „iznad Bajića“, gde se odvaja staza za Dobroselo, na „serpentinama zapadnih padina '
+            + 'Škorića-brda“; na topografskoj karti JNA 1:25.000 to je tačka 973, a Prpino brdo (976) je zapadno od ceste.',
+          'Knjiga priča napad „naredne noći“ posle noći 2. i 3. februara, a odmah zatim napad „uvečer 3. februara“ na '
+            + 'položaje severno od Bajića i Končara; nacrtani su kao jedan.',
+          'Odakle su napadale čete Drugog bataljona i ostalih, knjiga ne kaže; strelice su nacrtane sa planine, '
+            + 'severno i istočno od kote.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.k980, label: '980', lp: 'w' },
+          { t: 'area', side: 'enemy', at: WS.k980, rx: 0.4, ry: 0.25, label: 'Talijani, utvrđeni', lp: 'w', id: 'k980', until: 2 },
+          { t: 'move', side: 'own', kind: 'stopped', path: [[15.9840, 44.4920], [15.9790, 44.4880], [15.9755, 44.4845]],
+            label: 'dve čete II bat.', lp: 'e', at: 0, guess: true },
+          { t: 'move', side: 'friend', kind: 'stopped', path: [[15.9930, 44.4790], [15.9850, 44.4815], [15.9770, 44.4828]],
+            label: 'čete I i III bat.', lp: 'e', at: 0, guess: true },
+          { t: 'fight', at: [15.9745, 44.4832] },
+        ],
+      },
+      {
+        date: '8–11. februara 1943.',
+        view: [15.712, 44.515, 15.880, 44.602],
+        text: 'Štab divizije 7. februara naređuje da se veći deo snaga odmara, a da se ispitaju mogućnosti akcija u '
+          + 'pozadini neprijatelja, „a težište tih bilo bi postavljanje zasjeda saobraćaju“. Dve čete „Pekiše Vuksana“ '
+          + 'pođu u zasedu u Krbavu, „na cesti Jošane–Udbina“. Na putu do ceste, „visoko u šumi“, na Plješevici, naiđu na '
+          + 'delove Šeste primorsko-goranske brigade i od njih čuju „da je cesta obezbijeđena i da joj se ne može prići“. '
+          + 'Čete pošalju patrole, a patrole „su utvrdile da cesta nije obezbijeđena, te su se spustile na samu cestu, '
+          + 'gdje su ubile 7 ustaša i otele 30 zarobljenih goveda“.',
+        notes: [
+          'Dan zasede knjiga ne daje. Javljaju je Srećko Manola i Rade Žigić Glavnom štabu, u izveštaju koji knjiga '
+            + 'navodi uz događaje od 10. i 11. februara, posle naređenja od 7. februara o zasedama saobraćaju.',
+          'Mesto na cesti i put četa preko Plješevice nacrtani su približno; knjiga kaže samo „u Krbavi, na cesti '
+            + 'Jošane–Udbina“ i „visoko u šumi“. Jošane su Jošan (OpenStreetMap: Jošani), severno od Udbine.',
+          'Kojim su putem ustaše naišle, knjiga ne kaže; strelica ide od Udbine.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: WS.udbina, rx: 0.55, ry: 0.35, label: 'Udbina: Talijani i ustaše', lp: 'w', force: 'it', id: 'udbina', until: 2 },
+          { t: 'move', side: 'own', kind: 'march', path: [[15.8700, 44.5350], [15.8450, 44.5450], [15.8150, 44.5520], [15.7900, 44.5570], [15.7660, 44.5600]],
+            label: 'dve čete II bat.', lp: 's', at: 0.25, guess: true },
+          { t: 'area', side: 'ally', at: [15.8150, 44.5560], rx: 0.6, ry: 0.3, label: 'delovi 6. primorsko-goranske br.', lp: 'n', guess: true, id: '6pgb', until: 2 },
+          { t: 'ambush', at: [15.7612, 44.5602], face: [15.7600, 44.5545], label: 'zaseda', lp: 'e', guess: true },
+          { t: 'move', side: 'enemy', kind: 'caught', path: ROAD.udbinaJosan.slice(0, 7), label: '7 ustaša ubijeno', lp: 'w', at: 0.45, force: 'ndh', guess: true },
+        ],
+      },
+      {
+        date: '12. februara 1943.', time: '6.00',
+        view: [15.950, 44.473, 16.008, 44.506],
+        text: 'Ujutro kolona pukovnika Zanottija izvrši dubok prodor u sektoru Prvog bataljona: izbije na kotu 1229, Ilića '
+          + 'kosu, i na severne padine kota 1132 i 960. Napadnut je i „Pekiša Vuksan“, koji drži položaje iznad Vagana, na '
+          + 'desnom krilu Prvog bataljona, i u Lumbardeniku. Četu na desnom krilu Prvog bataljona u 6 sati napadne oko 300 '
+          + 'talijanskih vojnika. Četa Đure Božičkovića i Petra Radeke „pustila je neprijatelja na daljinu od 100 metara i '
+          + 'otvorila paljbu, razvila se borba, ali pošto je desno krilo I bataljona bilo odbačeno, to se i ova četa morala '
+          + 'povući“. Talijani se probiju do Lumbardenika i zapale sve šumske barake. U Prvom bataljonu pogine zamenik '
+          + 'komandanta Mane Pražić, a desno krilo se po naređenju Milana Šijana povlači prema Logorištu i '
+          + 'Lumbardeniku; „Matija Gubec“, na položaju Ilića '
+          + 'kosa–cesta–zapadne padine nad cestom, bori se do 18 sati, pa se i on povuče na prihvatne položaje.',
+        notes: [
+          'Gde je stajala četa Božičkovića i Radeke, knjiga kaže samo „na desnom krilu 1. bataljona“, a bataljon „iznad '
+            + 'Vagana“; nacrtana je na visu istočno od Vagana, kod kote 982 (na karti JNA Čardačina), između Vagana i ceste. '
+            + 'Knjiga Vagan opisuje kao dolinu između Javornika, Dražice i kote 982.',
+          'Da je ta četa bila iz Drugog bataljona, knjiga kaže posredno: povukla se jer je odbačeno desno krilo Prvog, a '
+            + 'Đuro Božičković je od januara u Drugom bataljonu (knjiga, str. 225).',
+          'Lumbardenik je na topografskoj karti JNA 1:25.000 Lubardenik (1159 m), istočno od ceste; Ilića kosa ima 1207 m '
+            + '(knjiga: 1229).',
+          'Raspored triju bataljona knjiga daje rečima koje se ne slažu sasvim: Prvi je nacrtan južno od Ilića kose, prema '
+            + 'Škorića brdu, odakle se, po knjizi, pojavila kolona „Verdi“; Četvrti preko Ilića kose do ceste. Putevi '
+            + 'Talijana su procena.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.ilicaKosa, label: '1229 Ilića kosa', lp: 'e' },
+          { t: 'kota', at: WS.lumbardenik, label: 'Lumbardenik', lp: 'e' },
+          { t: 'kota', at: WS.cardacina, label: '982', lp: 'ne' },
+          { t: 'area', side: 'own', at: [15.9665, 44.4905], rx: 0.4, ry: 0.25, label: 'četa II bat.', lp: 'w', guess: true, id: 'II-vagan', until: 3 },
+          { t: 'area', side: 'own', at: WS.lumbardenik, rx: 0.4, ry: 0.25, label: 'II bat.', lp: 'n', id: 'II-lumb', until: 3 },
+          { t: 'area', side: 'friend', at: [15.9810, 44.4945], rx: 0.9, ry: 0.25, rot: 5, label: 'IV bat.', lp: 'n', id: 'IV', until: 3 },
+          { t: 'area', side: 'friend', at: [15.9930, 44.4770], rx: 0.9, ry: 0.3, rot: -20, label: 'I bat.', lp: 'se', guess: true, id: 'I', until: 3 },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.9745, 44.4800], [15.9725, 44.4850], [15.9680, 44.4885]],
+            label: 'oko 300 Talijana', lp: 'e', at: 0.55, guess: true },
+          { t: 'move', side: 'own', kind: 'back', path: [[15.9660, 44.4915], [15.9650, 44.4950], [15.9650, 44.4985]], guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [WS.skorica, [15.9890, 44.4840], [15.9930, 44.4860]],
+            label: 'kolona „Verdi“', lp: 'se', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.9780, 44.4830], [15.9840, 44.4900], [15.9880, 44.4945]], guess: true },
+          { t: 'fight', at: [15.9690, 44.4880] },
+        ],
+      },
+      {
+        date: '13. februara 1943.', when: 'ujutro',
+        view: [15.950, 44.464, 16.050, 44.532],
+        text: 'U noći 12. i 13. februara delovi brigade opet izađu iz zemunica i udare po talijanskim položajima pored '
+          + 'mazinske ceste, najjače na koti 1229. Ujutro krenu u napad sve talijanske snage prikupljene oko Mazina: dva '
+          + 'puka, s tenkovima, artiljerijom i avijacijom, u tri streljačka stroja, jedan za drugim, preko snegom pokrivenih '
+          + 'hiljadumetarskih brda između ceste i Dobrosela. Vedro je i studeno. Glavni teret trpe čete „Pekiše Vuksana“, '
+          + 'međusobno udaljene, u času napada nepovezane sa svojim štabom i bez oslonca na ostale bataljone: delovi „Marka '
+          + 'Oreškovića“ i „Matije Gupca“ vratili su se iznureni s noćne akcije na cesti Bruvno–Mazin i nisu na vreme '
+          + 'zaposeli stare položaje. Čete Drugog bataljona su zaskočene, pocepane i odbačene. Prodirući između njih, '
+          + 'talijanska kolona istog dana uđe u Gornji Lapac; jedan tenk je uništen na ulazu u mesto, a Gornji Lapac je '
+          + 'zapaljen čim su Talijani ušli.',
+        notes: [
+          'Gde su bile čete bataljona, knjiga ne kaže, osim da su bile međusobno udaljene, na brdima između ceste i '
+            + 'Dobrosela; nacrtane su na Lumbardeniku i na visovima severno i istočno od njega, sve kao procena.',
+          'Tri streljačka stroja nacrtana su od juga prema Gornjem Lapcu, kroz razmake među četama; tačan put knjiga ne '
+            + 'daje. Kolona s tenkovima nacrtana je starom cestom preko Vagana i zuleševičkih serpentina.',
+          'Ko je uništio tenk na ulazu u Gornji Lapac, knjiga ne kaže.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.ilicaKosa, label: '1229 Ilića kosa', lp: 'w' },
+          { t: 'area', side: 'own', at: WS.lumbardenik, rx: 0.35, ry: 0.22, guess: true, id: 'II-a' },
+          { t: 'area', side: 'own', at: [16.0110, 44.4891], rx: 0.35, ry: 0.22, label: 'čete II bat.', lp: 'e', guess: true, id: 'II-b' },
+          { t: 'area', side: 'own', at: [16.0065, 44.5045], rx: 0.35, ry: 0.22, guess: true, id: 'II-c' },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.9820, 44.4740], [15.9850, 44.4860], [15.9880, 44.4980], [15.9910, 44.5090]],
+            label: 'dva puka, tri streljačka stroja', lp: 'w', at: 0.05, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[16.0000, 44.4720], [16.0035, 44.4820], [16.0015, 44.4960], [15.9980, 44.5095]], guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: ROAD.mazinLapac.slice(3), label: 'tenkovi', lp: 'w', at: 0.6, guess: true },
+          { t: 'area', side: 'enemy', at: WS.gornjiLapac, rx: 0.5, ry: 0.32, label: 'Talijani u Gornjem Lapcu', lp: 'n', id: 'lapac' },
+        ],
+      },
+    ],
+    enemy: [
+      'Divizija „Sassari“: 5. februara 2. bataljon 152. puka na koti 980 iznad Bajića, 2. bataljon 151. puka na Škorića '
+        + 'brdu, bataljon „Zara“ do Jasenovog vrha; u Mazinu komanda divizije, 26. bataljon bersaljera i četa 3. bataljona '
+        + '25. puka',
+      'Od 9. februara pukovska grupa pukovnika Zanottija (kolona „Verdi“); 12. februara oko 600 Talijana i oko 50 četnika '
+        + 'prema Ilića kosi, uz sedam aviona',
+      '13. februara dva puka s tenkovima, artiljerijom i avijacijom, u tri streljačka stroja',
+      'U Udbini delovi divizije „Re“ i ustaše',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“: Mazinska planina, rub šume Jelovi vrh, prema Ilića kosi; dve čete na koti 980',
+      'Treći bataljon „Božidar Adžija“: dve čete na koti 980; od 5. februara nad Unom, kod Martin-broda',
+      'Četvrti bataljon „Matija Gubec“: između Vagana i Ilića kose, preko ceste',
+      'Delovi Šeste primorsko-goranske brigade, na Plješevici nad Krbavom',
+      'Haubička baterija Prvog hrvatskog korpusa (Stevo Leka), u šumi Logorište',
+    ],
+    result: 'Neprijatelj je prema lapačkoj dolini nastupao u tri kolone; najjača, srednja, prodirući između nepovezanih '
+      + 'četa „Pekiše Vuksana“, 13. februara ušla je u Gornji Lapac. Kasnije je rečeno da je za proboj kriv štab '
+      + 'bataljona; pisac knjige smatra da su odgovorni pretpostavljeni štabovi, Glavni štab Hrvatske i štab trećeg '
+      + 'sektora, koji su, planirajući svoju protivofanzivu i šaljući bataljone na akcije u pozadinu neprijatelja, '
+      + 'prerano oslabili položaje na mazinskom pravcu. Na jednoj četnoj konferenciji smenjen je komandir čete koji je '
+      + 'napustio dominantni položaj, gde su Talijani otvorili brešu prema Gornjem Lapcu; knjiga ne kaže čija je četa '
+      + 'bila. Ilija Palija otišao je već sutradan na novu dužnost u Drugu brigadu, smenjen je i komesar Simo Radaković, '
+      + 'a na čelo „Pekiše Vuksana“ došao je Bogdan Dukić iz Deringaja.',
+    fallen: [
+      { name: 'Lučić Milenko', id: '0002004111', note: 'u spisku boraca poginuo februara 1943. na Mazinskoj planini; knjiga ga navodi među poginulima u operaciji „Weiss“, bez dana' },
+      { name: 'Radaković Dušan Duvina', id: '0002007025', note: 'u spisku boraca poginuo februara 1943. na Mazinskoj planini; knjiga ga navodi među poginulima u operaciji „Weiss“, bez dana' },
+    ],
+    pages: [177, 193],
   },
 ]
