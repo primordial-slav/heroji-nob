@@ -113,6 +113,7 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
   { start: '1943-01-16', end: '1943-01-19', label: 'između Gračaca i Bruvna' },
   { start: '1943-02-01', end: '1943-02-02', label: 'Plješevica, nad Mazinom' },
   { start: '1943-02-23', end: '1943-02-27', label: 'prema Grahovu, do Očijeva' },
+  { start: '1943-03-05', end: '1943-03-12', label: 'severozapadno od Gračaca' },
 ]
 
 // places used more than once
@@ -319,6 +320,14 @@ const WS = {
   vrebac: [15.5014, 44.5265] as LL,
   pavlovac: [15.5363, 44.5113] as LL,          // OSM: Pavlovac Vrebački
   barlete: [15.4694, 44.5339] as LL,
+  // Sveti Rok and Lovinac (JNA map 470-1-4, OSM)
+  svetiRok: [15.6536, 44.3615] as LL,
+  crkvaRok: [15.65967, 44.35768] as LL,        // OSM: crkva svetog Roka, south-east of the village, by Miletić
+  gradinaRok: [15.6673, 44.3510] as LL,        // JNA map and OSM: Gradina, 600 m, south-east of the church
+  miletic: [15.6630, 44.3589] as LL,           // JNA map: Miletić, the book's Miletića-gaj
+  lovinacSt: [15.6638, 44.3760] as LL,         // GeoNames: the station Lovinac
+  cavcici: [15.6657, 44.3726] as LL,           // JNA map: Čavčić, at the crossroads by the station
+  ricice: [15.7453, 44.3367] as LL,
   opcuv: [15.8858, 44.4091] as LL,             // OSM and the JNA map: Opčuv, 970 m; the book's 972
   stolac: [15.8485, 44.4154] as LL,            // OSM: Stolac, 925 m (JNA map: the ridge Stolac under V. vrh, 967)
   ljutoc: [15.8362, 44.4253] as LL,            // OSM and the JNA map: Ljutočak, 885 m; the book's Ljutoč
@@ -3361,5 +3370,195 @@ export const EPISODES: Episode[] = [
       + 'pet ranjenih, a Treća četiri mrtva i 15 ranjenih. Talijani su, po svojim podacima, imali 16 poginulih i 73 '
       + 'ranjena, a jedan poručnik s 25 vojnika je zarobljen; ustaše i domobrani imali su 43 izbačena iz stroja.',
     pages: [211, 213],
+  },
+  {
+    key: 'sveti-rok',
+    foe: 'ndh',
+    region: 'lovinac',
+    title: 'Sveti Rok i Lovinac',
+    short: 'Sveti Rok',
+    dates: '13–19. marta 1943.',
+    start: '1943-03-13', end: '1943-03-19',
+    about: 'Talijani i četnici su 4. marta napustili Gračac. Štab divizije tri puta planira i odgađa napad na Lovinac; '
+      + 'konačno je rešeno da ga Druga i Treća brigada blokiraju, a da Prva brigada razbije ustašku posadu Svetog Roka. '
+      + 'Na Sveti Rok treba da udare čete „Božidara Adžije“ s jugoistoka i „Pekiše Vuksana“ sa severozapada, da ovladaju '
+      + 'selom i zatvore ulaze u Lovinac od Ričica i od Svetog Roka. Čete Mitraljeskog bataljona pridodate su Drugom, '
+      + 'Trećem i Četvrtom bataljonu.',
+    view: [15.600, 44.320, 15.760, 44.415],
+    places: ['Sveti Rok', 'Lovinac', 'Miletić', 'Ričice', 'Raduč', 'Kik'],
+    base: [
+      { t: 'area', side: 'enemy', at: [15.6864, 44.3909], rx: 0.55, ry: 0.35, label: 'Lovinac: ustaše i oružnici', lp: 'n', id: 'lovinac' },
+    ],
+    steps: [
+      {
+        date: '13–14. marta 1943.', when: 'noću',
+        text: 'U rejonu Svetog Roka i Lovinca je 32. ustaška bojna s oružnicima i mesnim ustašama, a u Svetom Roku i delovi '
+          + '1. bojne 12. domobranske pukovnije. „Pekiša Vuksan“ je još prethodne noći upućen da izvede obilazni '
+          + 'maršmanevar preko Velebita i da napadne Sveti Rok sa severozapada; dogovoreno je da napad počne 15. marta u '
+          + '5.30. „Matija Gubec“ zaposeda položaje jugozapadno od Gračaca, kod Vrace, i delom snaga s brda uz cestu '
+          + 'kontroliše prostor prema Lovincu.',
+        notes: [
+          'Put bataljona preko Velebita knjiga ne opisuje, ni odakle je krenuo: brigada je od 5. marta bila '
+            + 'severozapadno od Gračaca, nad komunikacijama Gračac–Lovinac. Strelica je samo znak da je obilazio preko '
+            + 'velebitskih padina jugozapadno od Svetog Roka.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: WS.svetiRok, rx: 0.45, ry: 0.3, label: 'Sveti Rok: ustaše i domobrani', lp: 'w', id: 'rok', until: 2 },
+          { t: 'move', side: 'own', kind: 'march', path: [[15.7350, 44.3330], [15.7000, 44.3260], [15.6600, 44.3290], [15.6300, 44.3420], [15.6260, 44.3630], [15.6380, 44.3720]],
+            label: 'II bat., preko Velebita', lp: 's', at: 0.4, guess: true },
+          { t: 'area', side: 'friend', at: [15.7100, 44.3480], rx: 0.5, ry: 0.25, label: 'III bat.', lp: 's', guess: true, id: 'III' },
+        ],
+      },
+      {
+        date: '14. marta 1943.', time: '21.00',
+        view: [15.610, 44.330, 15.760, 44.400],
+        text: 'Ujutro 14. marta štab divizije zatraži da napad počne uveče 14, a ne ujutro 15. marta, i štab brigade pošalje '
+          + 'kurire da stignu Bogdana Dukića i prenesu mu nove direktive; bataljon se za štab brigade već izgubio u '
+          + 'velebitskim šumama. Oko 21 sat „Božidar Adžija“ i četa mitraljezaca, razbivši ustaške položaje između Ričica '
+          + 'i Svetog Roka, izbiju do svetoročke crkve. Kad komandant Trećeg bataljona Dmitar Zaklan izađe na uzvisinu kod '
+          + 'crkve, kuriri i izvidnice izaslane prema padinama Velebita, odakle se očekuje „Pekiša Vuksan“, jave da od '
+          + 'njega nema nikakvih vesti. Bez podrške sa severozapada štab Trećeg bataljona odustane od napada i zadrži '
+          + 'čete jugoistočno od Svetog Roka, s osloncem na delove „Matije Gupca“ u Ričicama.',
+        notes: [
+          'Crkva svetog Roka je na OpenStreetMap, jugoistočno od sela, kraj Miletića.',
+          'Gde je tada bio Drugi bataljon, knjiga ne kaže; nacrtan je kao procena na padinama Velebita, severozapadno '
+            + 'od Svetog Roka.',
+          'Pisac knjige krivicu za izostanak bataljona ne pripisuje četi za vezu, kako su to učinili štab brigade i '
+            + 'divizije, nego štabu brigade, koji je promenio precizno utanačen dogovor.',
+        ],
+        marks: [
+          { t: 'spot', at: WS.crkvaRok, label: 'crkva', lp: 's' },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.7150, 44.3450], [15.6900, 44.3520], [15.6660, 44.3570]], label: 'III bat. i četa mitraljezaca', lp: 's', at: 0.3, guess: true },
+          { t: 'area', side: 'friend', at: [15.6680, 44.3555], rx: 0.4, ry: 0.22, label: 'III bat.', lp: 's', id: 'III' },
+          { t: 'area', side: 'own', at: [15.6330, 44.3720], rx: 0.6, ry: 0.35, label: 'II bat.', lp: 'n', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: WS.ricice, rx: 0.4, ry: 0.25, label: 'delovi IV bat.', lp: 'e', id: 'IV', until: 3 },
+        ],
+      },
+      {
+        date: '16. marta 1943.', time: '4.20',
+        view: [15.625, 44.340, 15.700, 44.385],
+        text: 'U drugom napadu, koji je po planu štaba brigade trebalo da počne u 4 sata 16. marta, zakasni „Božidar '
+          + 'Adžija“, koji se pre toga povukao prema Ričicama; zašto, knjiga ne zna. Odbrana Svetog Roka nije ni dobro '
+          + 'organizovana ni uporna: već u 4.20 „Pekiša Vuksan“ ovlada rejonom oko svetoročke crkve, s jedne strane ceste, '
+          + 'i Gradinom, s druge strane ceste Zadar–Sveti Rok–Lovinac. Nešto jači otpor pruža se samo s Gradine, nad '
+          + 'raskršćem ceste prema Miletića-gaju i Lovincu. Ustaše se iz Svetog Roka povuku u Lovinac, pet kilometara na '
+          + 'severoistok, preko pruge i ceste Gračac–Gospić.',
+        notes: [
+          'Gradina je ovde vis Gradina (600 m) topografske karte JNA 1:25.000, jugoistočno od crkve; kod Svetog Roka je '
+            + 'i Gradina Rukavinska (637 m), zapadno od sela.',
+          'Odakle je bataljon napao, knjiga ne kaže, osim da je trebalo sa severozapada; strelice su nacrtane približno.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.gradinaRok, label: 'Gradina', lp: 'e' },
+          { t: 'area', side: 'friend', at: [15.7050, 44.3480], rx: 0.45, ry: 0.25, label: 'III bat.', lp: 's', guess: true, id: 'III' },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.6420, 44.3700], [15.6520, 44.3640], [15.6585, 44.3585]], label: 'II bat.', lp: 'w', at: 0.1, guess: true },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.6560, 44.3620], [15.6620, 44.3560], [15.6660, 44.3520]], guess: true },
+          { t: 'area', side: 'own', at: [15.6620, 44.3555], rx: 0.5, ry: 0.3, rot: -30, label: 'II bat.', lp: 'w', id: 'II' },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.6560, 44.3630], [15.6650, 44.3750], [15.6800, 44.3870]], label: 'ustaše u Lovinac', lp: 'e', at: 0.5, guess: true },
+        ],
+      },
+      {
+        date: '16. marta 1943.', time: 'oko 9.00',
+        view: [15.625, 44.343, 15.705, 44.408],
+        text: 'Svetoročka posada, ojačana ustašama iz Lovinca, odmah iz Lovinca izvrši prodor prema Svetom Roku: „Matija '
+          + 'Gubec“ nije zaposeo položaje s kojih bi kontrolisao izlaze iz Lovinca, a delovi bataljona u Svetom Roku su '
+          + 'bez ikakvog osiguranja. Oko 9 sati ustaše odjednom izbiju u Sveti Rok. U kući u kojoj se smestio štab '
+          + '„Pekiše Vuksana“ zateknu i ubiju zamenika komandanta brigade Radu Bubala i referenta saniteta Četvrtog '
+          + 'bataljona Sofiju Radović Soku. Biće Plećaš, Ferdo Toplak i barjaktar Drugog bataljona Dane Crnobrnja odluče '
+          + 'se na proboj iz opkoljene kuće; barjaktar skine sa stega bataljonsku zastavu, koju su pre nepune godine šile i '
+          + 'vezle smiljanske skojevke, Hrvatice, i veže je oko pojasa. Upadnu u pakao i probiju se, neranjeni. U protivnapadu '
+          + 'se naročito istaknu delovi Drugog bataljona koje vodi Jure Brmbolić. Ustaše su brzo proterane, ali su imale '
+          + 'dovoljno vremena da počine zločine. Na kolonu koja se vraća u Lovinac samoinicijativno napadne Druga četa '
+          + '„Matije Gupca“; pogine njen komandir Damjan Mileusnić.',
+        notes: [
+          'Gde je bila kuća štaba bataljona, knjiga ne kaže; nacrtana je u selu.',
+          'Ime vođe protivnapada knjiga štampa „Brrnbolić“; u spisku boraca to je Jure Brmbolić iz Gospića, od aprila 1943. '
+            + 'zamenik komesara Drugog bataljona.',
+          'Putevi ustaša od Lovinca i natrag nacrtani su približno.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.6800, 44.3870], [15.6660, 44.3740], [15.6560, 44.3630]], label: 'ustaše iz Lovinca', lp: 'e', at: 0.3, guess: true },
+          { t: 'post', at: [15.6545, 44.3612], label: 'kuća štaba II bat.', lp: 'w', small: true, guess: true, until: 4 },
+          { t: 'fight', at: [15.6555, 44.3622] },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.6630, 44.3575], [15.6590, 44.3600], [15.6560, 44.3615]], label: 'delovi II bat. (J. Brmbolić)', lp: 's', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'back', path: [[15.6580, 44.3650], [15.6680, 44.3770], [15.6800, 44.3880]], guess: true },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.6900, 44.3660], [15.6800, 44.3720], [15.6720, 44.3770]], label: '2/IV', lp: 'e', at: 0.1, guess: true },
+        ],
+      },
+      {
+        date: '18. marta 1943.', time: '18.00',
+        view: [15.620, 44.345, 15.725, 44.418],
+        text: 'Posle okršaja u Svetom Roku štab divizije odluči da se u 18 sati 18. marta napadne i Lovinac. Prva brigada '
+          + 'treba da dočeka i tuče delove ustaškog garnizona kad budu prinuđeni da napuste Lovinac: dva bataljona '
+          + 'strelaca i tri čete Mitraljeskog bataljona raspoređeni su u polukrugu oko lovinačke železničke stanice, od '
+          + 'Razvale (kota 640) preko raskršća kod Čavčića do Miletića-gaja, „da spriječi neprijatelju bjegstvo u pravcu '
+          + 'Velebita i u pravcu Miletić-gaj – Raduč“. „Matija Gubec“ ostaje na čukama nad putevima prema Gračacu i '
+          + 'Obrovcu. Lovinac napada Treća brigada, „frontalno, samo sa jednoga pravca“. Oko 200 ustaša pokuša da '
+          + 'pobegne prema Velebitu, ali upadne u raspored „Božidara Adžije“ i posle kratkog i žestokog okršaja vrati se '
+          + 'u Lovinac.',
+        notes: [
+          'Koji su bataljoni stajali gde, knjiga ne kaže; po tome kuda su ustaše bežale, „Božidar Adžija“ je nacrtan '
+            + 'prema Velebitu, a „Pekiša Vuksan“ kod Miletića, kuda je ujutro naišla ustaška kolona.',
+          'Razvale (kota 640) nema na kartama ovog kraja; nije nacrtana. Odakle je napadala Treća brigada, knjiga ne kaže.',
+        ],
+        marks: [
+          { t: 'spot', at: WS.lovinacSt, label: 'stanica Lovinac', lp: 'w' },
+          { t: 'spot', at: WS.cavcici, label: 'raskršće kod Čavčića', lp: 'e', until: 5 },
+          { t: 'area', side: 'own', at: WS.miletic, rx: 0.5, ry: 0.28, label: 'II bat.', lp: 'w', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: [15.6420, 44.3680], rx: 0.45, ry: 0.25, label: 'III bat.', lp: 'w', guess: true, id: 'III' },
+          { t: 'move', side: 'ally', kind: 'attack', path: [[15.7280, 44.3860], [15.7100, 44.3890], [15.6940, 44.3905]], label: '3. lička br.', lp: 's', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.6800, 44.3880], [15.6650, 44.3800], [15.6480, 44.3700]], label: 'oko 200 ustaša', lp: 'n', at: 0.5, guess: true },
+        ],
+      },
+      {
+        date: '19. marta 1943.', time: '4.00',
+        view: [15.625, 44.345, 15.710, 44.412],
+        text: 'Posle toga na povlačenje se odluči ceo ustaško-domobranski garnizon Lovinca. Povlačeći se u tri kolone, '
+          + 'prema Miletića-gaju i Raduču, ustaše u 4 sata uđu u raspored „Pekiše Vuksana“. Borci su dobro raspoređeni, '
+          + 'ali od silnog umora niko ne uoči ustaške kolone. „Možda je tek poneki borac bio budan, kad sam čuo zveket '
+          + 'oružja i plač djeteta“, seća se Slavko Glumac. „Viknem: Pekiša, na noge! Ljudi u polusnu, Bogdan iskoči '
+          + 'preda me, viče: Juriš! Sijeva od pucnjave. Ustaše preskaču živicu, lete. Okrenem se, s leđa nam druga '
+          + 'njihova kolona. Tu pogibe Bogdan Dukić, komandant velikih mogućnosti, hrabar i pametan.“',
+        notes: [
+          'Dan nije siguran: napad na Lovinac je bio u 18 sati 18. marta, pa su ustaške kolone naišle u 4 sata 19. marta; '
+            + 'u spisku boraca Bogdan Dukić je poginuo 18. marta u Miletić Gaju.',
+          'Kojim su putevima išle tri kolone, knjiga ne kaže; strelice su nacrtane približno.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.6800, 44.3870], [15.6720, 44.3720], [15.6650, 44.3610]], label: 'tri ustaške kolone', lp: 'e', at: 0.2, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.6750, 44.3860], [15.6600, 44.3760], [15.6420, 44.3780]], guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.6880, 44.3850], [15.6800, 44.3680], [15.6700, 44.3560]], guess: true },
+          { t: 'fight', at: [15.6640, 44.3600] },
+        ],
+      },
+    ],
+    enemy: [
+      '32. ustaška bojna s oružnicima i mesnim ustašama u rejonu Sveti Rok–Lovinac; u Svetom Roku delovi 1. bojne 12. '
+        + 'domobranske pukovnije',
+      'U Lici je u martu 1943. bilo gotovo 9000 ustaša i četnika',
+    ],
+    friends: [
+      'Treći bataljon „Božidar Adžija“: napad na Sveti Rok s jugoistoka, 18. marta prema Velebitu',
+      'Četvrti bataljon „Matija Gubec“: Vrace, Ričice, čuke nad putevima prema Gračacu i Obrovcu',
+      'Čete Mitraljeskog bataljona, pridodate Drugom, Trećem i Četvrtom bataljonu',
+      'Druga i Treća lička brigada: blokada Lovinca, 18. marta napad Treće brigade',
+    ],
+    result: 'Ustaške kolone su se probile, mada, kako i sama ustaška komanda navodi, uz izuzetno velike gubitke; oni koji su '
+      + 'ostali u Lovincu branili su se grčevito, i štab divizije je obustavio dalje napade. Odgovornost za neuspeh primio '
+      + 'je štab divizije: komandant Srećko Manola je smenjen, a 21. marta za komandanta Šeste divizije postavljen je Đoko '
+      + 'Jovanić. Štab divizije pisao je da je brigada od 14. do 19. marta imala šest poginulih, poimence Radu Bubala, '
+      + 'Bogdana Dukića i Soku Radović; pisac knjige utvrdio je još sedam imena poginulih u borbama oko Lovinca, a Danica '
+      + 'Munjas je zarobljena i posle mučenja ubijena. Među ranjenima u borbama 16. i 17. marta bili su Dujo Čubrilo i '
+      + 'Stevo Potkonjak. Komanda Prve čete Drugog bataljona poverena je Bogdi Potkonjaku, bratu Steve Potkonjaka Mačka, '
+      + 'i Peri Rađenoviću, a za komandanta „Pekiše Vuksana“ postavljen je Jovica Zorić.',
+    fallen: [
+      { name: 'Dukić Todora Bogdan', id: '0002001723', note: 'komandant bataljona; u spisku boraca poginuo 18. marta u Miletić Gaju' },
+      { name: 'Puvalić Stevo', id: '0002007013', note: 'u spisku boraca: Drugi bataljon, poginuo 17. marta u Miletić gaju kod Lovinca' },
+    ],
+    wounded: [
+      { name: 'Čubrilo Dujo', note: 'komandir Prve čete' },
+      { name: 'Potkonjak Simin Stevo', id: '0002006895', note: 'komesar čete („Mačak“)' },
+    ],
+    pages: [213, 218],
   },
 ]
