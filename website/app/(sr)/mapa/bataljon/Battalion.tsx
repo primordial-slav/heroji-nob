@@ -1051,9 +1051,13 @@ function axisOf(width: number) {
     }
     if (!short) break
   }
-  const px = (d: number) => {
-    const j = Math.max(0, Math.min(days.length - 1, ts.findIndex((t, i) => i < ts.length - 1 && d >= t && d <= ts[i + 1])))
-    return xs[j] + (days[j] ? ((d - ts[j]) / days[j]) * (xs[j + 1] - xs[j]) : 0)
+  // a day where two segments meet is the end of the first; an episode's start (`late`) is the start of the last, so
+  // an episode that begins the day after another ends still stands its gap's width apart
+  const px = (d: number, late = false) => {
+    let j = -1
+    for (let i = 0; i < ts.length - 1; i++) if (d >= ts[i] && d <= ts[i + 1]) { j = i; if (!late) break }
+    j = Math.max(0, Math.min(days.length - 1, j))
+    return xs[j] + (days[j] ? ((d - ts[j]) / days[j]) * (xs[j + 1] - xs[j]) : late ? xs[j + 1] - xs[j] : 0)
   }
   return { px, length: xs[xs.length - 1] }
 }
@@ -1100,7 +1104,7 @@ function Timeline({ e, go }: { e: number; go: (e: number, s: number) => void }) 
             title={b.label}>{b.label}</span>
         ))}
         {EPISODES.map((ep, i) => {
-          const from = px(dayOf(ep.start)), to = px(dayOf(ep.end) + 1)
+          const from = px(dayOf(ep.start), true), to = px(dayOf(ep.end) + 1)
           return (
             <button key={ep.key} type="button" className={i === e ? styles.episodeOn : styles.episode}
               style={{ left: `${from.toFixed(1)}px`, width: `${(to - from).toFixed(1)}px` }}

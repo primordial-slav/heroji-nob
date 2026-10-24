@@ -2637,7 +2637,7 @@ export const EPISODES: Episode[] = [
           { t: 'kota', at: WS.vodenaGlava, label: '933 Vodena glava', lp: 'w' },
           { t: 'area', side: 'own', at: [15.8935, 44.4270], rx: 0.9, ry: 0.35, rot: -35, label: 'II bat.', lp: 'ne', guess: true, id: 'II' },
           { t: 'area', side: 'friend', at: [15.8570, 44.4300], rx: 0.8, ry: 0.4, rot: 60, label: 'IV bat.', lp: 'ne', id: 'IV' },
-          { t: 'area', side: 'friend', at: [15.8470, 44.3880], rx: 1.1, ry: 0.35, rot: -10, label: 'desno krilo brigade', lp: 's', id: 'desno', until: 5 },
+          { t: 'area', side: 'friend', at: [15.8470, 44.3880], rx: 1.1, ry: 0.35, rot: -10, label: 'desno krilo brigade', lp: 'w', id: 'desno', until: 5 },
           { t: 'area', side: 'friend', at: [15.9330, 44.4250], rx: 1.0, ry: 0.35, rot: -50, label: 'levo krilo brigade', lp: 'e', id: 'levo', until: 5 },
           { t: 'area', side: 'enemy', at: WS.opcuv, rx: 0.55, ry: 0.32, id: 'opcuv-en', until: 5 },
           { t: 'area', side: 'enemy', at: WS.stolac, rx: 0.45, ry: 0.25, id: 'stolac-en', until: 5 },
@@ -3098,5 +3098,128 @@ export const EPISODES: Episode[] = [
       + 'talijanskog plana: put Gornji Lapac–Boričevac–Kulen-Vakuf zatvaran je tek kad ga je čelo kolone „Sassari“ već '
       + 'prešlo. Gubitke Drugog bataljona u ovim borbama knjiga ne navodi.',
     pages: [194, 198],
+  },
+  {
+    key: 'zulesevica',
+    foe: 'it',
+    region: 'gracac',
+    title: 'Zuleševica',
+    short: 'Zuleševica',
+    dates: '20–21. februara 1943.',
+    start: '1943-02-20', end: '1943-02-21',
+    about: 'Od 17. februara Glavni štab Hrvatske i štab Prvog hrvatskog korpusa spremaju obračun s talijanskim '
+      + 'trupama u lapačkoj dolini: neprijatelja u povlačenju treba zaustavljati i po zaustavljenim delovima tući. '
+      + 'Bataljoni Prve brigade usiljenim maršem zaposedaju položaje istočno od ceste Mazin–Gornji Lapac, Petnaesta '
+      + 'kordunaška napada Gornji Lapac, a Treća lička kolonu od gornjolapačkih serpentina do Zuleševice. Talijani od 18. '
+      + 'februara pokušavaju da se izvuku prema Mazinu; presečeni i po grupama opkoljeni, drže se delom u Gornjem Lapcu, '
+      + 'a delom na okukama ceste prema Zuleševici. Bataljoni brigade smenjuju se u napadima; jedinice na odmoru su u '
+      + 'Dobroselu.',
+    view: [15.945, 44.470, 16.035, 44.530],
+    places: ['Gornji Lapac', 'Vagan', 'Mazin', 'Dobroselo', 'Gajine'],
+    base: [
+      { t: 'area', side: 'enemy', at: WS.gornjiLapac, rx: 0.45, ry: 0.3, label: 'Talijani u Gornjem Lapcu', lp: 'n', id: 'lapac' },
+    ],
+    steps: [
+      {
+        date: '20. februara 1943.', time: '1.00',
+        view: [15.960, 44.488, 16.015, 44.522],
+        text: 'Posebno je uspešan napad grupe bataljona 20. februara, kojim rukovodi zamenik komandanta Treće ličke '
+          + 'brigade Momčilo Novković, nekad komandant Drugog bataljona. Iz Prve brigade u napadu je „Pekiša Vuksan“, '
+          + 'koji ima novi štab: komandant je Bogdan Dukić, komesar Slavko Glumac, a njihovi zamenici Jovica Zorić i Antun '
+          + 'Borić. Napadnuti su Talijani sabijeni na istočnoj strani ceste, iznad drugog zavijutka između Logorišta i '
+          + 'Gornjeg Lapca. Borba se zametne u 1 sat noću i rasplamsava se narednih pet sati. Mnogo uspeha nema, osim što '
+          + 'je, kako javlja štab Treće brigade, „neprijatelj izbačen iz dva reda rovova“, gde je zaplenjeno 12.000 metaka '
+          + 'i hiljadu raznih topovskih i minobacačkih granata.',
+        notes: [
+          'Logorište knjiga smešta u šumu kilometar južno od kote 671, na istočnim obroncima Zuleševice; karte ga ne '
+            + 'imenuju. Koji je zavijutak ceste „drugi“, knjiga ne kaže: Talijani su nacrtani na istočnoj strani '
+            + 'zuleševičkih serpentina, nad Gornjim Lapcem. Topografske karte JNA 1:25.000 za taj kraj nema.',
+          'Odakle je bataljon napao i gde su bili ostali bataljoni Novkovićeve grupe, knjiga ne kaže.',
+          'Zuleševica je na GeoNames greben zapadno od serpentina (963 m); knjiga joj daje 1106 m.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: [15.9865, 44.5095], rx: 0.35, ry: 0.2, label: 'Talijani, dva reda rovova', lp: 'w', guess: true, id: 'rovovi', until: 1 },
+          { t: 'move', side: 'own', kind: 'attack', path: [[16.0020, 44.5020], [15.9960, 44.5060], [15.9895, 44.5088]], label: 'II bat.', lp: 'e', at: 0, guess: true },
+          { t: 'fight', at: [15.9880, 44.5093] },
+        ],
+      },
+      {
+        date: '21. februara 1943.', time: 'oko 6.00',
+        view: [15.955, 44.475, 16.020, 44.522],
+        text: 'Opkoljenima se 21. februara od Gračaca probija prva značajnija pomoć, jaka talijanska kolona s oko 200 '
+          + 'četnika. Oko 6 sati neprijatelj artiljerijom i bacačima zauzme Ilića kosu, a 1000 vojnika s osam tenkova '
+          + 'probije se od Mazina prema Gornjem Lapcu i pojača opkoljenu kolonu. Prvi bataljon drži dve čete na cesti '
+          + 'Mazin–Gornji Lapac i jednu prema Ilića kosi. „Drugi bataljon držao je položaj i obezbeđivao od pravca Ilića '
+          + 'kose“, piše u izveštaju štaba korpusa.',
+        notes: [
+          'Gde je bio položaj Drugog bataljona, knjiga ne kaže; nacrtan je severno od Ilića kose, između nje i Gornjeg '
+            + 'Lapca, okrenut prema njoj. Gde su bile čete Prvog bataljona na cesti, takođe nije zapisano.',
+          'Put kolone od Mazina nacrtan je starom cestom preko Vagana i zuleševičkih serpentina.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.ilicaKosa, label: '1229 Ilića kosa', lp: 'e' },
+          { t: 'area', side: 'enemy', at: WS.ilicaKosa, rx: 0.4, ry: 0.22, id: 'ilica' },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.9780, 44.4830], [15.9870, 44.4935]], label: 'artiljerija i bacači', lp: 'e', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: ROAD.mazinLapac.slice(10), label: '1000 vojnika s 8 tenkova', lp: 'w', at: 0.3 },
+          { t: 'area', side: 'own', at: [15.9930, 44.5035], rx: 0.45, ry: 0.22, rot: 20, label: 'II bat.', lp: 'e', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: [15.9760, 44.5000], rx: 0.35, ry: 0.2, label: 'dve čete I bat.', lp: 'w', guess: true, id: 'I' },
+        ],
+      },
+      {
+        date: '21. februara 1943.', time: 'od 11.00',
+        view: [15.955, 44.475, 16.020, 44.522],
+        text: 'Oko 11 sati jedna četa Prvog bataljona posedne cestu i napadne Talijane koji se, pod zaštitom jake '
+          + 'artiljerijske i minobacačke vatre, povlače iz Gornjeg Lapca prema Mazinu; neprijatelj se zbuni i u panici '
+          + 'beži natrag prema Gornjem Lapcu, ali druga kolona, s tenkovima i artiljerijom, posle trosatne borbe odbaci '
+          + 'četu. U 16.30 dve čete Prvog bataljona ponovo zaposednu iste položaje i napadnu novu kolonu od 1000 vojnika, '
+          + 'koja u panici beži prema Mazinu, ostavljajući mrtve i ranjene mazge i kamione. Drugi bataljon i dalje '
+          + 'drži položaj prema Ilića kosi. U borbama oko Ilića kose ranjen je komandir Prve čete Duja Čubrilo; zamenio '
+          + 'ga je komandir Prvog voda Mirko Čubrilo Žicar.',
+        notes: [
+          'Gde su napadale čete Prvog bataljona, knjiga ne kaže, osim da su bile na cesti; nacrtano je približno.',
+          'Kad je Duja Čubrilo ranjen, knjiga ne kaže; pominje ga uz gubitke Drugog bataljona u borbama oko Ilića kose.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'back', path: [...ROAD.mazinLapac.slice(10)].reverse(), label: 'Talijani prema Mazinu', lp: 'w', at: 0.55 },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.9800, 44.4985], [15.9745, 44.4985], [15.9715, 44.4990]], label: '11.00 i 16.30', lp: 'sw', at: 1, guess: true },
+          { t: 'fight', at: [15.9705, 44.4990] },
+        ],
+      },
+    ],
+    enemy: [
+      'Opkoljeni u Gornjem Lapcu i na okukama prema Zuleševici: delovi divizija „Sassari“, „Re“ i „Bergamo“; 151. puk '
+        + '„Sassari“ na Zuleševici uglavnom desetkovan',
+      '21. februara od Gračaca jaka kolona s oko 200 četnika; od Mazina 1000 vojnika s osam tenkova',
+      'Avijacija sa Zemunika, nad Zuleševicom i do 17 lovaca i bombardera',
+    ],
+    friends: [
+      'Grupa bataljona pod komandom Momčila Novkovića, zamenika komandanta Treće ličke brigade',
+      'Prvi bataljon „Marko Orešković“: cesta Mazin–Gornji Lapac, Ilića kosa',
+      'Četvrti bataljon „Matija Gubec“',
+      'Treća lička brigada; Petnaesta kordunaška i druge jedinice Osme divizije',
+    ],
+    result: 'U borbama oko Ilića kose Drugi bataljon imao je jednog mrtvog i osam ranjenih. Kad su se Talijani spojenih '
+      + 'kolona počeli izvlačiti preko Mazina prema Bruvnu i Gračacu, jedinice brigade navalile su na njih sa svih '
+      + 'strana. Glavni štab Hrvatske 23. februara javlja Vrhovnom komandantu da su „noćas dovršene borbe kod Donjeg '
+      + 'Lapca“ i da je „cesta od Kulen-Vakufa do Mazina pokrivena talijanskim leševima“. Od 16. do 22. februara '
+      + 'ranjeno je 50 boraca brigade. U operaciji „Weiss“ iz brigade su, po operacijskim dnevnicima korpusa i divizije, '
+      + 'poginula 33 borca, a 183 su ranjena; dnevnik brigade pisan 1945. navodi 561 izbačenog iz stroja (125 poginulih '
+      + 'i 8 nestalih), a pisac knjige utvrdio je imena 96 poginulih, umrlih od rana i nestalih.',
+    fallen: [
+      { name: 'Bogunović Petra Rade', id: '0002000556', note: 'u spisku boraca poginuo februara 1943. na Zuleševici; knjiga ga navodi među poginulima u operaciji „Weiss“, bez dana' },
+      { name: 'Pavković Milin Milan Mile', id: '0002006170', note: 'u spisku boraca poginuo februara 1943. na Zuleševici; knjiga ga navodi među poginulima u operaciji „Weiss“, bez dana' },
+      { name: 'Radaković Marka Maksim', id: '0002007034', note: 'u spisku boraca poginuo na Zuleševici februara 1943; knjiga ga navodi među poginulima u operaciji „Weiss“, bez dana' },
+    ],
+    wounded: [
+      { name: 'Čubrilo Dušan (Duja)', note: 'komandir Prve čete, 21. februara' },
+      { name: 'Plećaš Slavko', id: '0002006738', note: 'desetar; u spisku ranjenih od 16. do 22. februara' },
+      { name: 'Basarić Milan', note: 'u spisku ranjenih od 16. do 22. februara' },
+      { name: 'Potrebić Milan', id: '0002006906', note: 'u spisku ranjenih od 16. do 22. februara' },
+      { name: 'Korica Jovo', id: '0002003617', note: 'u spisku ranjenih od 16. do 22. februara' },
+      { name: 'Pjevač Sava', note: 'u spisku ranjenih od 16. do 22. februara' },
+      { name: 'Rajčević Novak', id: '0002007317', note: 'u spisku ranjenih od 16. do 22. februara; nestao u koloni Centralne bolnice' },
+      { name: 'Ljubojević Jovo', id: '0002004205', note: 'u spisku ranjenih od 16. do 22. februara' },
+    ],
+    pages: [199, 204],
   },
 ]
