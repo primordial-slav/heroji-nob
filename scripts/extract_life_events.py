@@ -67,6 +67,7 @@ Y = r'(?:18[89]\d|19\d\d)'
 D1 = r'\d{1,2}(?:\s?[/-]\s?\d{1,2})?'                    # a night or days: 29/30. X 1944, 29-31. XI 1944
 # "krajem 1943", "u toku 1942", "od jeseni 1944" (a season leaves the year)
 QUAL = (r'(?:(?:krajem|početkom|sredinom|polovinom|koncem|potkraj|tokom|u\s+toku|u|početka|kraja|polovine|sredine|konca|'
+        r'(?:prve|druge)\s+polovine|(?:prvih|poslednjih|posljednjih)\s+dana|'      # the 10. srpska's "od prve polovine oktobra 1944"
         r'jeseni|jesen|proleća|proljeća|proleće|proljeće|leta|ljeta|leto|ljeto|zime|zimi|zima)\s+)?')
 GOD = r'(?:\.?\s*god(?:ine|\.|\b))?'
 # one date: 17. 01. 1945 / 1.11.1944 / 14. XII1944 / 3. decembra 1944 / aprila 1945 / IX 1944 / 1941
@@ -166,6 +167,10 @@ RULES = [
             rf'\s*(?:-|—)?\s*(?:i\s+(?:u\s+)?[Bb]rigad\w*\s+)?(?:je\s+)?(?:stupi\w*\s+)?(?P<when>{WHEN}){INTO}', 0),
     # "U Čačanski NOP odred stupio 10. VII 1941."
     ('nob', rf'\b[Uu]\s+(?P<what>[A-ZČĆŽŠĐ]\w+\s+(?:NOP\s+|partizansk\w+\s+)?odred)\s+(?:je\s+)?stupi\w*\s+(?P<when>{WHEN})', 0),
+    # "U Mosorski PO stupio 1943", "U Mosorsku četu stupio svibnja 1942", "U Mosorski bataljon stupio početkom siječnja 1943"
+    ('nob', rf'\b[Uu]\s+(?P<what>[A-ZČĆŽŠĐ]\w+\s+(?:PO|NOPO|bataljon|vod|četu))\s+(?:je\s+)?stupi\w*\s+(?P<when>{WHEN})', 0),
+    # the Mačvanski odred's roster: "...; stupio avgusta 1941, četa P. Savića; ..."
+    ('nob', rf'(?<=;\s)[Ss]tupi\w*\s+(?P<when>{WHEN})', 0),
     # "u brigadi od decembra 1941", "U 2. dalm. brigadi od prosinca 1942", "a u Brigadu oktobra 1943", "U brigadu
     # došao januara 1945", "U Odredu od 20. 10. 1944. do 15. 5. 1945", "u Brigadiod20. oktobra 1944" (glued)
     ('unit', rf'\b[Uu]\s+(?:\d{{1,2}}\.\s*[\w.]+\s+(?:prolet\.\s+|proleterskoj\s+)?)?(?:{BRIGADE}|[Oo]dred[u]?|[Dd]iviziji|[Dd]iviziju)'
