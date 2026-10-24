@@ -63,7 +63,7 @@ const STEPS = EPISODES.flatMap((ep, e) => ep.steps.map((s, i) => ({ ep, e, s, i 
 // the Germans. "Vojnici" alone are the episode's enemy
 const FORCE_NAMES: Record<Force, string> = { it: 'Italijani', ndh: 'ustaše, oružnici, domobrani', cet: 'četnici', de: 'Nemci' }
 function forceOf(text: string): Force | null {
-  if (/ital/i.test(text)) return 'it'
+  if (/ital|talij/i.test(text)) return 'it'                  // the book writes both Italijani and Talijani
   if (/četni/i.test(text)) return 'cet'
   if (/usta|oružni|domobran|žandar|milicion/i.test(text)) return 'ndh'
   if (/nemac|nemc|nemač/i.test(text)) return 'de'
@@ -161,6 +161,7 @@ const AS_IN_BOOK: Record<string, string> = {
   'Bakovac Kosinjski': 'Kosinjski Bakovac', 'Drenovac Banski': 'Drenovac', 'Donji Klasnić': 'Klasnić', 'Rudići': 'Rudić',
   'Slunjčica': 'Slušnica', 'Golubovac Divuški': 'Golubovac', 'Novi Grad': 'Bosanski Novi',
   'Hrvatska Kostajnica': 'Kostajnica', 'Kostajnica': 'Bosanska Kostajnica', 'Bagunica': 'Bogunica',
+  'Rudopolje Bruvanjsko': 'Rudopolje', 'Brezovac Dobroselski': 'Brezovac',
 }
 const bookName = (n: string) => AS_IN_BOOK[n] ?? n
 
@@ -1121,7 +1122,7 @@ function Timeline({ e, go }: { e: number; go: (e: number, s: number) => void }) 
 // text names ("Treća četa", "Druga četa kordunaškog bataljona", "prvi vod"), on the battalion's red. The army's
 // shorthand for them (3/II) is the map's; the text keeps the book's words
 const NUM = String.raw`(?:\d+|jedan|jednog|dva|dve|tri|četiri|pet|šest|sedam|osam|devet|deset|dvanaest|petnaest|dvadeset|trideset|pedeset|sto|\p{L}*(?:desetak|naestak|stotinak|setak))`
-const COUNT = new RegExp(String.raw`(?<!\p{L})(?:(?:oko|još|samo|više od|do|gotovo|preko|oficir i)\s+)?${NUM}\s+(?:Italijan\p{L}*|vojnik\p{L}*|četnik\p{L}*|ustaš\p{L}*|oružnik\p{L}*|domobran\p{L}*|žandar\p{L}*|milicion\p{L}*|satnij\p{L}*|Nem(?:aca|ca|ac)|nemačk\p{L}*\s+tenk\p{L}*|tenk\p{L}*|bor(?:aca|ca)|ljudi|Kordunaša|zarobljen\p{L}*|mrtvih|ranjen\p{L}*|poginul\p{L}*|Ital\.)`, 'gu')
+const COUNT = new RegExp(String.raw`(?<!\p{L})(?:(?:oko|još|samo|više od|do|gotovo|preko|oficir i)\s+)?${NUM}\s+(?:Italijan\p{L}*|Talijan\p{L}*|vojnik\p{L}*|četnik\p{L}*|ustaš\p{L}*|oružnik\p{L}*|domobran\p{L}*|žandar\p{L}*|milicion\p{L}*|satnij\p{L}*|Nem(?:aca|ca|ac)|nemačk\p{L}*\s+tenk\p{L}*|tenk\p{L}*|bor(?:aca|ca)|ljudi|Kordunaša|zarobljen\p{L}*|mrtvih|ranjen\p{L}*|poginul\p{L}*|Ital\.)`, 'gu')
 const GROUP = /(?<!\p{L})(?:\p{L}+orica|dvojica|trojica)(?!\p{L})/gu
 const COMPANY = /(?<!\p{L})(?:Prv|Drug|Treć|Četvrt)(?:a|e|oj|u)\s+čet(?:a|e|i|u|om)(?:\s+(?:Prvog|Drugog|Trećeg|Četvrtog|kordunaškog|banijskog)\s+bataljona)?|(?<!\p{L})(?:Prv|Drug|Treć|Četvrt)(?:i|og|om|u)\s+vod\p{L}*/giu
 

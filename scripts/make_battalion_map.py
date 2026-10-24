@@ -63,9 +63,12 @@ REGIONS = {
     # the Una between Dvor and Kostajnica, and Zrinska gora: the end of November 1942
     'dvor': {'west': 16.28, 'east': 16.58, 'south': 45.03, 'north': 45.25,
              'towns': {'Dvor', 'Hrvatska Kostajnica', 'Bosanska Kostajnica', 'Novi Grad'}},
-    # Gračac, Bruvno, Mazin and the Lapac valley: January and February 1943
-    'gracac': {'west': 15.70, 'east': 16.12, 'south': 44.24, 'north': 44.58,
-               'towns': {'Gračac', 'Bruvno', 'Mazin', 'Donji Lapac', 'Gornji Lapac', 'Srb', 'Udbina'}},
+    # Gračac, Bruvno, Mazin and the Lapac valley: January and February 1943 (to Jošan and Kulen-Vakuf in the north)
+    'gracac': {'west': 15.70, 'east': 16.12, 'south': 44.24, 'north': 44.62,
+               'towns': {'Gračac', 'Bruvno', 'Mazin', 'Donji Lapac', 'Gornji Lapac', 'Srb', 'Udbina'},
+               # the hamlet Vagan in its valley west of the road from Mazin to Gornji Lapac (JNA map 470-2-2,
+               # GeoNames; OSM has only Vagan Popinski)
+               'jna': [('Vagan', 15.9564, 44.4944, 'hamlet')]},
     # Udbina, Komić and the Lika railway from Medak to Lovinac: December 1942
     'lovinac': {'west': 15.45, 'east': 15.86, 'south': 44.31, 'north': 44.59,
                 'towns': {'Udbina', 'Lovinac', 'Medak', 'Sveti Rok'},

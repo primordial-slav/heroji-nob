@@ -110,6 +110,8 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
   { start: '1942-12-03', end: '1942-12-13', label: 'povratak u Liku' },
   { start: '1942-12-31', end: '1943-01-05', label: 'Mogorić, Vrebac, Pavlovac' },
   { start: '1943-01-08', end: '1943-01-11', label: 'Mogorić, Vrebac, Pavlovac' },
+  { start: '1943-01-16', end: '1943-01-19', label: 'između Gračaca i Bruvna' },
+  { start: '1943-02-01', end: '1943-02-02', label: 'Plješevica, nad Mazinom' },
 ]
 
 // places used more than once
@@ -291,6 +293,61 @@ const GR = {
   vrace: [15.8071, 44.2770] as LL,             // OSM and the JNA map: Vrace
   kijani: [15.8743, 44.3323] as LL,
   deringaj: [15.8699, 44.3466] as LL,
+}
+
+// Operation "Weiss" between Gračac, Bruvno, Mazin and Gornji Lapac, January and February 1943: OpenStreetMap's villages
+// and tops, read against the JNA map 1:25,000 (470-2-1, 470-2-2, 470-2-3, 470-2-4)
+const WS = {
+  bruvno: [15.8947, 44.4014] as LL,
+  mazin: [15.9668, 44.4528] as LL,
+  glogovo: [15.9513, 44.3137] as LL,
+  omsica: [15.9352, 44.3614] as LL,
+  plecasi: [15.9488, 44.3832] as LL,
+  gubavcevo: [15.9420, 44.3430] as LL,
+  mandici: [15.8427, 44.3492] as LL,           // JNA map: Mandići in Tomingaj, the book's Mandić-Brdo
+  cankovici: [15.8348, 44.3401] as LL,         // JNA map: Brdeljci Čankovića under Glavica Čankovića, the book's Čanković-Draga
+  radakovici: [15.8273, 44.3308] as LL,        // JNA map: Radakovići by Samardžije, west of Tomingaj
+  ljubovic: [15.8331, 44.3197] as LL,          // JNA map: Ljubović, under the hills west of the Gračac field (Agbabe); the book's Ljubovići
+  opcuv: [15.8858, 44.4091] as LL,             // OSM and the JNA map: Opčuv, 970 m; the book's 972
+  stolac: [15.8485, 44.4154] as LL,            // OSM: Stolac, 925 m (JNA map: the ridge Stolac under V. vrh, 967)
+  ljutoc: [15.8362, 44.4253] as LL,            // OSM and the JNA map: Ljutočak, 885 m; the book's Ljutoč
+  solobanica: [15.9043, 44.4395] as LL,        // OSM and the JNA map: Šolobanica, 1145 m; the book's "do 1147"
+  klapavica: [15.8587, 44.4173] as LL,         // OSM: Donja Klapavica
+  vodenaGlava: [15.8554, 44.3850] as LL,       // OSM: Vodena glava, 932 m; the book's k. 933
+  rudopolje: [15.8368, 44.3945] as LL,         // OSM: Rudopolje Bruvanjsko
+  dragaRadakovica: [15.8730, 44.3928] as LL,   // OSM: Draga Radakovića, south-west of Opčuv
+  // February: the road from Mazin over the Mazinska planina to Gornji Lapac (OSM's old road, the JNA map's 470-2-2)
+  k980: [15.9740, 44.4830] as LL,              // JNA map: 973, the pass on the road under Škorića brdo; the book's k. 980
+  skorica: [15.9804, 44.4809] as LL,           // JNA map: Škorica brdo, 1061 m; the book's 1064
+  vagan: [15.9564, 44.4944] as LL,             // JNA map and GeoNames: the hamlet Vagan, 739 m, west of the road
+  cardacina: [15.9678, 44.4901] as LL,         // JNA map: Čardačina, 982, between Vagan and the road; the book's k. 982
+  ilicaKosa: [15.9887, 44.4955] as LL,         // JNA map, OSM and GeoNames: Ilića kosa, 1207 m; the book's 1229
+  lumbardenik: [15.9939, 44.4851] as LL,       // JNA map: Lubardenik, 1159 m, east of the road
+  jasenov: [16.0065, 44.4724] as LL,           // OSM and GeoNames: Jasenov vrh, 1278 m
+  gornjiLapac: [15.9939, 44.5154] as LL,
+  gajine: [15.9959, 44.5416] as LL,
+  boricevac: [16.0272, 44.5327] as LL,
+  kulenVakuf: [16.0886, 44.5627] as LL,
+  mandinaGlava: [16.0203, 44.4986] as LL,      // OSM and GeoNames: Mandina glava(-ica), 821 m, south-east of Gornji Lapac
+  lisac: [16.0423, 44.5114] as LL,             // OSM: Lisac, 997 m
+  visocica: [16.0089, 44.5416] as LL,          // OSM: Visočica, 841 m
+  dobroselo: [16.0416, 44.4879] as LL,
+  udbina: [15.7665, 44.5317] as LL,
+  josani: [15.7486, 44.5765] as LL,
+}
+// the roads the columns took, from OpenStreetMap
+const ROAD = {
+  gracacBruvno: [[15.8530, 44.3020], [15.8587, 44.3202], [15.8628, 44.3318], [15.8662, 44.3377], [15.8673, 44.3436], [15.8643, 44.3509],
+    [15.8624, 44.3561], [15.8674, 44.3601], [15.8737, 44.3684], [15.8821, 44.3744], [15.8861, 44.3797], [15.8859, 44.3845],
+    [15.8876, 44.3910], [15.8927, 44.3952], [15.8919, 44.4012]] as LL[],
+  bruvnoMazin: [[15.8924, 44.4012], [15.8970, 44.4076], [15.9076, 44.4145], [15.9185, 44.4213], [15.9244, 44.4260], [15.9286, 44.4341],
+    [15.9318, 44.4357], [15.9471, 44.4466], [15.9550, 44.4517], [15.9662, 44.4525]] as LL[],
+  // the old road, through the pass under Škorića brdo, past Vagan and down the serpentines of Zuleševica
+  mazinLapac: [[15.9668, 44.4528], [15.9693, 44.4560], [15.9724, 44.4655], [15.9751, 44.4758], [15.9730, 44.4774], [15.9718, 44.4785],
+    [15.9721, 44.4808], [15.9710, 44.4825], [15.9728, 44.4834], [15.9719, 44.4855], [15.9711, 44.4885], [15.9697, 44.4912],
+    [15.9689, 44.4930], [15.9687, 44.4957], [15.9689, 44.4980], [15.9706, 44.4994], [15.9729, 44.5010], [15.9732, 44.5054],
+    [15.9808, 44.5097], [15.9793, 44.5107], [15.9792, 44.5120], [15.9854, 44.5108], [15.9819, 44.5146], [15.9877, 44.5143],
+    [15.9940, 44.5140], [15.9950, 44.5151]] as LL[],
 }
 
 export const EPISODES: Episode[] = [
@@ -2465,5 +2522,272 @@ export const EPISODES: Episode[] = [
       { name: 'Stoisavljević Mile', note: 'bombaš' },
     ],
     pages: [160, 164],
+  },
+  {
+    key: 'opcuv',
+    foe: 'it',
+    region: 'gracac',
+    title: 'Od Deringaja do Opčuva',
+    short: 'Opčuv',
+    dates: '20–31. januara 1943.',
+    start: '1943-01-20', end: '1943-01-31',
+    about: 'Nemačko-talijanska operacija „Weiss“ zatekne brigadu 20. januara u selima između Gračaca i Bruvna. Glavna '
+      + 'kolona divizije „Sassari“ generala Berardija, s gračačko-kninskim i hercegovačkim četnicima, treba da se od '
+      + 'Gračaca preko Bruvna, Mazina i lapačke doline probije do Une i spoji s Nemcima. Dosta boraca brigade bilo je '
+      + 'pušteno kućama; na prvi glas o ofanzivi svi se prikupe u svoje čete.',
+    view: [15.790, 44.290, 15.990, 44.460],
+    places: ['Gračac', 'Deringaj', 'Tomingaj', 'Kijani', 'Omsica', 'Glogovo', 'Gubavčevo Polje', 'Plećaši', 'Bruvno', 'Tupale',
+      'Rudopolje Bruvanjsko', 'Donja Klapavica', 'Gornja Klapavica', 'Mazin'],
+    base: [],
+    steps: [
+      {
+        date: '20. januara 1943.', when: 'ujutro rano',
+        view: [15.800, 44.290, 15.965, 44.372],
+        text: 'Izišavši iz Gračaca, okruženog bunkerima i bodljikavom žicom, neprijatelj nastupa desnim krilom prema '
+          + 'Glogovu, a levim uz Gračačko polje preko Ljubovića prema Tupalama. U Glogovo Talijani s 300 četnika upadnu '
+          + 'ujutro rano i iznenade „Božidara Adžiju“. Ispred Deringaja, kuća Radaković, Mandić-Brda i Čanković-Drage '
+          + 'borbu prime čete Prvog, Drugog i Četvrtog bataljona. Talijani su nešto uporniji jedino na cesti '
+          + 'Gračac–Deringaj, gde ih puškomitraljezac Jovo Kenjalo, koji je u izvidnici prvi uočio kolonu, s još trojicom '
+          + 'drugova zadržava odstupajući polako prema deringajskoj crkvi, dok se „Marko Orešković“ ne razvije za borbu. '
+          + 'Generalu Gloriji javljeno je da je „mjesto Glogovo u plamenu“, a da su kolone zaustavljene pet kilometara '
+          + 'severno od Gračaca.',
+        notes: [
+          'Koja je četa bila gde, knjiga ne kaže. Čete Drugog i Četvrtog bataljona nacrtane su između Mandić-Brda, '
+            + 'Čanković-Drage i kuća Radaković, a Prvi bataljon kod Deringaja, kuda je Kenjalo odstupao.',
+          'Na topografskoj karti JNA 1:25.000 Mandić-Brdo su Mandići u Tomingaju, Čanković-Draga Brdeljci Čankovića '
+            + 'pod Glavicom Čankovića, kuće Radaković zaselak Radakovići kod Samardžija, a Ljubovići Ljubović, podno brda '
+            + 'zapadno od Gračačkog polja.',
+          'Putevi kolona su nacrtani približno: knjiga daje pravce i, po talijanskom izveštaju, da su kolone stale pet '
+            + 'kilometara severno od Gračaca, koliko je do Deringaja.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.8600, 44.3040], [15.8950, 44.3030], [15.9300, 44.3070], WS.glogovo],
+            label: 'Talijani s 300 četnika', lp: 's', at: 0.45, guess: true },
+          { t: 'area', side: 'friend', at: WS.glogovo, rx: 0.4, ry: 0.25, label: 'III bat.', lp: 'n', until: 1 },
+          { t: 'fight', at: [15.9480, 44.3150] },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.8450, 44.3010], WS.ljubovic, [15.8290, 44.3330], [15.8270, 44.3415]],
+            label: 'prema Tupalama', lp: 'w', at: 0.3, guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: ROAD.gracacBruvno.slice(0, 5), label: 'cestom Gračac–Deringaj', lp: 'e', at: 0.35 },
+          { t: 'area', side: 'friend', at: [15.8700, 44.3480], rx: 0.45, ry: 0.28, label: 'I bat.', lp: 'e', until: 1 },
+          { t: 'area', side: 'own', at: [15.8395, 44.3450], rx: 0.6, ry: 0.32, rot: 20, label: 'čete II bat.', lp: 'n', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: [15.8300, 44.3335], rx: 0.4, ry: 0.25, label: 'čete IV bat.', lp: 'w', guess: true, id: 'IV', until: 1 },
+        ],
+      },
+      {
+        date: '24. januara 1943.', when: 'peti dan ofanzive',
+        view: [15.845, 44.325, 15.975, 44.415],
+        text: 'Narednih dana najteže borbe vodi Prvi bataljon, kod Deringaja i Kijana. Petog dana ofanzive štab brigade '
+          + 'izvrši novi raspored: samo „Pekiša Vuksan“ ostaje na isturenim položajima, u neposrednom dodiru s '
+          + 'neprijateljem, a „Marko Orešković“, „Božidar Adžija“ i „Matija Gubec“ odmaraju se, greju i presvlače u selima '
+          + 'van dometa talijanske artiljerije. Neprijatelj je već prodro u sela istočno od ceste Gračac–Bruvno, u Kijane '
+          + 'i Omsicu, i to iskoristi: „zaobišao lijevo krilo 2. bataljona i preko sela Plećaši ušao u Bruvno“, koje se '
+          + 'tada zvalo „Mala Moskva“.',
+        notes: [
+          'Gde je bataljon stajao, knjiga ne kaže; nacrtan je na brdima između ceste i Omsice, severno od Kijana, tako '
+            + 'da mu je levo krilo prema Omsici.',
+          'Put od Omsice preko Plećaša u Bruvno vodi preko „nevisokih brda bruvanjskog jugoistoka“, kako ih knjiga '
+            + 'opisuje; nacrtan je približno.',
+          'Dan pada Bruvna knjiga ne daje izričito: novi raspored je bio petog dana ofanzive, 24. januara, a šestog dana '
+            + 'neprijatelj je već na čukama pred Bruvnom.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: GR.kijani, rx: 0.45, ry: 0.28, id: 'kijani', until: 2 },
+          { t: 'area', side: 'enemy', at: WS.omsica, rx: 0.5, ry: 0.3, id: 'omsica', until: 2 },
+          { t: 'area', side: 'own', at: [15.8850, 44.3700], rx: 1.0, ry: 0.35, rot: -20, label: 'II bat.', lp: 'w', guess: true, id: 'II' },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [WS.omsica, [15.9450, 44.3720], WS.plecasi, [15.9278, 44.3938], [15.9100, 44.3990], WS.bruvno],
+            label: 'preko Plećaša u Bruvno', lp: 'e', at: 0.32 },
+          { t: 'area', side: 'enemy', at: WS.bruvno, rx: 0.5, ry: 0.3, label: 'Bruvno: Talijani', lp: 'e', id: 'bruvno' },
+        ],
+      },
+      {
+        date: '25. januara 1943.', when: 'u rano jutro',
+        view: [15.810, 44.368, 15.950, 44.475],
+        text: 'Komandant brigade Lazo Radaković, u groznici, naređuje da se „začepe“ svi prolazi severno od Bruvna, '
+          + 'prema Mazinu, i severozapadno, prema Klapavicama, Ondiću i Udbini: „Slučaj Bruvna se ne smije ponoviti“. U '
+          + 'rano jutro bataljoni zaposednu raspored dug oko 35 kilometara: od kote 696 zapadno od Tupala, preko '
+          + 'rudopoljskih zaseoka Savatovići i Krnete, s osloncem na Vodenoj glavi (k. 933), do klapavičkih brda Ljutoča, '
+          + 'Stoca i Šolobanice, nad cestom prema Udbini, „gdje će danima krvariti 2. i 4. bataljon“, pa levo od njih, '
+          + 'istočno od ceste Bruvno–Mazin, preko Mazinske previje i Urljaja do Kozjaka. Šestog dana ofanzive neprijatelj '
+          + 'zauzme čuke pred Bruvnom i „gologlavi“ Opčuv. Po operacijskom dnevniku tog dana borbe nema, ali na svim '
+          + 'položajima je teško od mraza.',
+        notes: [
+          'Gde je na klapavičkim brdima bio koji bataljon, knjiga ne kaže izričito. Četvrti je nacrtan u Klapavicama, gde '
+            + 'su, po knjizi, bili njegovi položaji, a Drugi severno od Opčuva, između ceste za Udbinu i Šolobanice; tu je '
+            + 'procena, a 29. januara bataljon je na Opčuvu.',
+          'Na karti JNA 1:25.000 Opčuv ima 970 m (knjiga: 972), Šolobanica 1145, Vodena glava 932 (knjiga: 933), a '
+            + 'Ljutoč je Ljutočak (885 m). Stolac je greben pod Velikim vrhom, između Klapavica i Bruvna.',
+          'Delovi rasporeda desno i levo od Drugog i Četvrtog bataljona nacrtani su bez imena bataljona: knjiga ih '
+            + 'ne daje.',
+          'Stolac je nacrtan u neprijateljskim rukama jer je Četvrti bataljon te večeri krenuo „u napad na neprijatelja '
+            + 'na brdu Stolac“ (sledeći korak).',
+        ],
+        marks: [
+          { t: 'kota', at: WS.opcuv, label: '972 Opčuv', lp: 'e' },
+          { t: 'kota', at: WS.stolac, label: 'Stolac', lp: 'w' },
+          { t: 'kota', at: WS.ljutoc, label: 'Ljutoč', lp: 'w' },
+          { t: 'kota', at: WS.solobanica, label: 'Šolobanica', lp: 'e' },
+          { t: 'kota', at: WS.vodenaGlava, label: '933 Vodena glava', lp: 'w' },
+          { t: 'area', side: 'own', at: [15.8935, 44.4270], rx: 0.9, ry: 0.35, rot: -35, label: 'II bat.', lp: 'ne', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: [15.8570, 44.4300], rx: 0.8, ry: 0.4, rot: 60, label: 'IV bat.', lp: 'ne', id: 'IV' },
+          { t: 'area', side: 'friend', at: [15.8470, 44.3880], rx: 1.1, ry: 0.35, rot: -10, label: 'desno krilo brigade', lp: 's', id: 'desno', until: 5 },
+          { t: 'area', side: 'friend', at: [15.9330, 44.4250], rx: 1.0, ry: 0.35, rot: -50, label: 'levo krilo brigade', lp: 'e', id: 'levo', until: 5 },
+          { t: 'area', side: 'enemy', at: WS.opcuv, rx: 0.55, ry: 0.32, id: 'opcuv-en', until: 5 },
+          { t: 'area', side: 'enemy', at: WS.stolac, rx: 0.45, ry: 0.25, id: 'stolac-en', until: 5 },
+        ],
+      },
+      {
+        date: '25. januara 1943.', when: 'uveče',
+        view: [15.825, 44.395, 15.915, 44.458],
+        text: 'Toga dana u Klapavicama, na položajima Četvrtog bataljona, primaju se u Partiju borci koji su se istakli. '
+          + 'Uveče Prva četa „Matije Gupca“ krene u planirani napad na neprijatelja na Stocu; ima mnogo ranjenih, a '
+          + 'poginu zamenik komesara čete Joja Arbanas i skojevac Aleksa Cvijanović, koji ga je izvlačio. Gubici su mogli '
+          + 'biti i teži, jer se Četvrti bataljon našao u neprijateljskom rasporedu sam, bez prethodno dogovorene pomoći '
+          + '„Pekiše Vuksana“. Nije to bio ni prvi ni poslednji put da se poremeti sadejstvo, „najčešće, kao i u noći 26. '
+          + 'i 27. januara, zbog slabih veza“.',
+        notes: [
+          'Dan nije siguran: knjiga priča „toga dana“ posle šestog dana ofanzive, 25. januara, a odmah zatim pominje i '
+            + 'noć 26. i 27. januara, kad je sadejstvo opet bilo poremećeno.',
+          'Odakle je četa napala Stolac, knjiga ne kaže; strelica polazi iz Klapavica.',
+        ],
+        marks: [
+          { t: 'move', side: 'friend', kind: 'attack', path: [[15.8560, 44.4255], [15.8530, 44.4210], [15.8500, 44.4170]],
+            label: '1/IV', lp: 'e', at: 0.1, guess: true },
+          { t: 'fight', at: [15.8490, 44.4160] },
+        ],
+      },
+      {
+        date: '26. januara 1943.', when: 'ujutro',
+        view: [15.815, 44.385, 15.935, 44.470],
+        text: 'Ujutro dva bataljona bersaljera pokušaju da „Pekišu Vuksana“ i „Matiju Gupca“ odbace prema snežnim '
+          + 'visovima Resnika. Tih dana svako jutro počinje talijanska artiljerija tući položaje oko Rudopolja i '
+          + 'Klapavica, a onda guste kolone nasrću na raštrkane zaseoke Obradoviće, Krajnoviće, Radakoviće; kad je vedro, '
+          + 'u akciji je i avijacija. Uveče general Gloria javlja da su delovi divizija „Sassari“ i „Re“ ponovo palili '
+          + 'sela, po njegovim rečima „partizanske centre“.',
+        notes: [
+          'Resnik je greben zapadno od Klapavica i Rudopolja (knjiga: „resničke zemunice zapadno od Klapavica“), pa su '
+            + 'strelice bersaljera nacrtane od Bruvna i Opčuva prema zapadu; odakle su tačno napadali, knjiga ne kaže.',
+          'Da su odbijeni, knjiga ne kaže izričito, ali 27. januara oba bataljona drže Stolac i Opčuv.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.9020, 44.4140], [15.8980, 44.4210], [15.8945, 44.4245]],
+            label: 'dva bataljona bersaljera', lp: 'e', at: 0.2, guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.8790, 44.4060], [15.8700, 44.4130], [15.8620, 44.4200]], guess: true },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.8920, 44.4000], [15.8460, 44.3960]], label: 'artiljerija', lp: 's', at: 0.5, guess: true },
+        ],
+      },
+      {
+        date: '27. januara 1943.', when: 'treći dan zaredom',
+        view: [15.830, 44.385, 15.930, 44.452],
+        text: 'Na brdima Opčuv i Stolac, između Bruvna i Klapavica, borba se vodi treći dan zaredom. Stolac i Opčuv drže '
+          + 'delovi „Pekiše Vuksana“ i „Matije Gupca“. Talijanski odredi, piše Gloria, u napadu na Krajnoviće i '
+          + 'Radakoviće naiđu „na jako protivdejstvo koje je dolazilo sa Stolca“. Delovi „Matije Gupca“ za to vreme iz '
+          + 'zaseda napadaju na cesti Gračac–Bruvno, iza čela talijanske kolone, a „Marko Orešković“ i „Božidar Adžija“ '
+          + 'stoje frontom prema Mazinu.',
+        notes: [
+          'Koji je bataljon držao koji vrh, knjiga 27. januara ne kaže; Drugi je nacrtan na Opčuvu, gde je bio 29. '
+            + 'januara, a Četvrti na Stocu, kraj Klapavica.',
+          'Kako su Opčuv i Stolac ponovo došli u ruke bataljona, knjiga ne kaže. Zdravko Lončar, kurir Mitraljeskog '
+            + 'bataljona, bio je, po sećanju Jove Bursaća, s bombašima u napadu na Opčuv.',
+          'Zaselaka Krajnovići i Radakovići ima više oko Bruvna; strelica je nacrtana prema Dragi Radakovića, '
+            + 'jugozapadno od Opčuva, na domaku Stoca.',
+        ],
+        marks: [
+          { t: 'area', side: 'own', at: WS.opcuv, rx: 0.55, ry: 0.32, label: 'II bat.', lp: 'ne', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: WS.stolac, rx: 0.5, ry: 0.28, label: 'IV bat.', lp: 'w', guess: true, id: 'IV' },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.8900, 44.3960], [15.8810, 44.3935], [15.8740, 44.3930]],
+            label: 'na Krajnoviće i Radakoviće', lp: 's', at: 0.3, guess: true },
+          { t: 'move', side: 'friend', kind: 'fire', path: [[15.8510, 44.4140], [15.8690, 44.3960]], guess: true },
+        ],
+      },
+      {
+        date: '29. januara 1943.', when: 'posle artiljerije',
+        view: [15.850, 44.388, 15.940, 44.442],
+        text: 'Ujutro Talijani dobiju naređenje „da se što prije zaposjedne raskrsnica Gornji Lapac, a zatim '
+          + 'Kulen-Vakuf“, i odmah krenu iz Bruvna prema Mazinu: tri bataljona s tenkovima uporno nadiru cestom, a jedan '
+          + 'potiskuje levo krilo brigade prema Klapavicama. „Oko 16 časova“, javlja Gloria, „isturena kolona stigla je do '
+          + 'Mazina“. Na levom krilu brigade najžešća borba vodi se za Opčuv; artiljerija naprosto izore vrh brda. '
+          + '„Komandant Palija pored mene, legao, osmatra, bodri nas“, seća se Pero Ljuština, delegat u Drugoj četi: '
+          + 'geler mu odvali đon, pa je „čitavu ofanzivu prevalio uglavnom bos“. Posle artiljerije navale bersaljeri, i '
+          + 'napad je odbijen. Uto stignu devojke iz Rudopolja, s kupusom i slaninom.',
+        notes: [
+          'Odakle je tukla artiljerija i odakle su bersaljeri napali Opčuv, knjiga ne kaže; strelice idu od Bruvna.',
+          'Put kolone od Bruvna do Mazina nacrtan je cestom (OpenStreetMap). Kuda je četvrti bataljon potiskivao krilo '
+            + 'brigade prema Klapavicama, knjiga ne kaže.',
+        ],
+        marks: [
+          { t: 'area', side: 'own', at: WS.opcuv, rx: 0.55, ry: 0.32, label: 'II bat.', lp: 'ne', id: 'II' },
+          { t: 'move', side: 'enemy', kind: 'attack', path: ROAD.bruvnoMazin, label: 'tri bataljona s tenkovima, prema Mazinu', lp: 'se', at: 0.17 },
+          { t: 'post', at: WS.mazin, label: 'Mazin, oko 16.00', lp: 'e' },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.8880, 44.4180], [15.8760, 44.4230], [15.8640, 44.4260]],
+            label: 'prema Klapavicama', lp: 'n', at: 0.4, guess: true },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.8960, 44.3990], [15.8875, 44.4075]], label: 'artiljerija', lp: 'sw', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'stopped', path: [[15.9010, 44.4040], [15.8950, 44.4060], [15.8895, 44.4078]], label: 'bersaljeri', lp: 'e', at: 0, guess: true },
+          { t: 'fight', at: [15.8875, 44.4082] },
+        ],
+      },
+      {
+        date: '29. januara 1943.', when: 'predveče',
+        view: [15.862, 44.394, 15.912, 44.424],
+        text: '„Predveče, ponovo, tuče artiljerija.“ Od bacačke mine pogine zamenik komesara bataljona Miloš Graovac '
+          + 'Staljin, a komandir Druge čete Đurika Potkonjak, sav izranjavan, pri svesti, daje Ljuštini neke sitnice da ih '
+          + 'preda njegovoj sestri Jeleni; uskoro umre. Talijani ponovo napadaju. Dok Ljuština manevriše vodom, kurir '
+          + 'Orelj nešto doviknuje, kad ga pogodi u glavu.',
+        notes: ['Odakle su Talijani napadali, knjiga ne kaže; strelice idu od Bruvna, kao pre podne.'],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[15.9010, 44.4050], [15.8890, 44.4085]], label: 'bacači', lp: 'ne', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[15.9000, 44.4020], [15.8940, 44.4050], [15.8898, 44.4072]], label: 'Talijani ponovo', lp: 'e', at: 0, guess: true },
+          { t: 'fight', at: [15.8870, 44.4085] },
+        ],
+      },
+      {
+        date: '24–31. januara 1943.', when: 'tih dana',
+        view: [15.850, 44.370, 16.000, 44.500],
+        text: 'U rejonu Bruvna čete „Pekiše Vuksana“ izvedu tri napada na razvučenu talijansku kolonu. Takvi napadi '
+          + 'već su postali običaj: nije bilo noći da između Bruvna i Mazinske planine na nekom mestu ne zagrme bombe. '
+          + 'To veoma iscrpljuje brigadu, ali još više remeti planove talijanske komande, koja stalno ima osećaj da joj je '
+          + 'kolona duž puta Gračac–Mazin strahovito ugrožena.',
+        notes: [
+          'Kad su bila ta tri napada i gde, knjiga ne kaže; priča ih uz borbe posle upada Talijana u Bruvno, pa su dani '
+            + 'oni od pada Bruvna do kraja januara. Strelice su samo znak da ih je bilo oko Bruvna.',
+          'Kolona je nacrtana cestom Gračac–Bruvno–Mazin (OpenStreetMap).',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'march', path: [...ROAD.gracacBruvno.slice(7), ...ROAD.bruvnoMazin.slice(1)],
+            label: 'razvučena talijanska kolona', lp: 'e', at: 0.2 },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.8700, 44.3800], [15.8780, 44.3820], [15.8840, 44.3830]], guess: true },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.9020, 44.4280], [15.9080, 44.4220], [15.9140, 44.4185]], guess: true },
+          { t: 'move', side: 'own', kind: 'attack', path: [[15.9360, 44.4540], [15.9400, 44.4480], [15.9440, 44.4440]], label: 'čete II bat.', lp: 'w', at: 0.1, guess: true },
+        ],
+      },
+    ],
+    enemy: [
+      'Glavna kolona divizije „Sassari“ generala Berardija: 2. bataljoni 151. i 152. puka, bataljon „Zara“, 26. bataljon '
+        + 'bersaljera, 3. bataljon „Bergamo“, 37. legija crnih košulja, artiljerijski puk i minobacački divizion; pravcem '
+        + 'Gračac–Lapac oko 10.000 Talijana',
+      'Oko 300 gračačko-kninskih i hercegovačkih četnika, u izvidnicama i kao vodiči',
+      'Talijanska avijacija s aerodroma Zemunik; od 29. januara tenkovi na cesti Bruvno–Mazin',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“: Deringaj, Kijani, Zbornjača kod Bruvna',
+      'Treći bataljon „Božidar Adžija“: Glogovo, zatim prema Mazinu',
+      'Četvrti bataljon „Matija Gubec“: Klapavice i Stolac, zasede na cesti Gračac–Bruvno',
+      'Peti, mitraljeski bataljon (komandant Jovo Bursać)',
+    ],
+    result: 'Za dvanaest dana, do kraja januara, šest talijanskih bataljona i artiljerijski puk, uz avione i s četnicima u '
+      + 'izvidnicama, prodru 25 kilometara severno od Gračaca, do Mazina. Ozbiljan propust bio je pred pad Bruvna, kad je '
+      + 'štab brigade „podcenio neprijateljske snage i ostavio na položajima samo jedan bataljon“. Na Opčuvu je Drugi '
+      + 'bataljon imao tri mrtva i osam ranjenih; komesar Druge čete Gojko Milekić kasnije je govorio da je to bio „u '
+      + 'čitavoj ofanzivi najcrnji dan za naš bataljon“. Za zamenika komesara bataljona postavljen je Antun Borić Tuna, a '
+      + 'za komandira Druge čete Jovo Ivančević Jelen. Brigada je u prvih dvanaest dana, po sačuvanim izveštajima, imala '
+      + '10 poginulih i 66 ranjenih; ni jedan njen borac nije pao u neprijateljske ruke.',
+    fallen: [
+      { name: 'Graovac Janjin Miloš', id: '0002002357', note: 'zamenik komesara bataljona („Staljin“), na Opčuvu; u spisku boraca poginuo 27. januara kod Bruvna' },
+      { name: 'Potkonjak Steve Đuro', id: '0002006873', note: 'komandir Druge čete („Đurika“), na Opčuvu' },
+      { name: 'Orelj', id: '0002009901', note: 'kurir, na Opčuvu' },
+      { name: 'Kovačević Milin Ante', id: '0002003686', note: 'u spisku boraca poginuo januara 1943. kod Bruvna; knjiga ga navodi među poginulima u operaciji „Weiss“' },
+      { name: 'Obradović Jove Rade', id: '0002005882', note: 'u spisku boraca poginuo januara 1943. kod Bruvna; knjiga ga navodi među poginulima u operaciji „Weiss“' },
+      { name: 'Vojnović Steve Nikola', id: '0002009279', note: 'u spisku boraca poginuo januara 1943. kod Gračaca; knjiga ga navodi među poginulima u operaciji „Weiss“ („Nikola Vojnović Stevin“)' },
+    ],
+    pages: [165, 176],
   },
 ]
