@@ -247,6 +247,7 @@ U, L = 'A-ZČĆŽŠĐ', 'a-zčćžšđ'
 
 MONTHS = ('januara|februara|marta|aprila|maja|juna|jula|avgusta|augusta|septembra|oktobra|novembra|decembra|'
           'siječnja|veljače|ožujka|travnja|svibnja|lipnja|srpnja|kolovoza|rujna|listopada|studenoga?|prosinca|'
+          'januarja|februarja|marca|junija|julija|'                         # the Slovene books' ("padel 12. marca 1944")
           'januar|februar|mart|april|maj|jun|jul|avgust|august|septembar|oktobar|novembar|decembar|jeseni|proleća|leta|zime|proljeća|ljeta')
 YEAR = r'(?:18|19)\d\d'
 DATE = (rf'(?:(?:\d{{1,2}}|00)\.\s?(?:\d{{1,2}}|[IVX]{{1,4}})\.?\s?{YEAR}'      # 17. 01. 1945 / 1.11.1944 / 16. IV 1944
@@ -278,13 +279,15 @@ _AGENT = (r'(?:Nijemci|Nije\.mci|Nemci|Njemci|Nijemac|Nemac|četnici|ustaše|ust
           r'ljotićevci|Ljotićevci|nedićevci|Nedićevci|žandari|žandarmi|SS-ovci|esesovci|okupatori|fašisti|balisti|legionari|'
           r'Čerkezi|Arnauti|zelenokadrovci|(?:njemačk|nemačk|bugarsk|talijansk|italijansk|mađarsk|ustašk|četničk|domobransk)\w*'
           r'\s+(?:vojnici|vojska|patrola|jedinice|stražari|žandari))')
-AGENT_RE = re.compile(rf'^\s*,?\s*{_AGENT}(?:\s+i\s+{_AGENT})?\b')
+AGENT_RE = re.compile(rf'^\s*,?\s*{_AGENT}(?:\s+(?:DM|Draže\s+Mihailovića))?(?:\s+i\s+{_AGENT})?\b')
 # the enemy a battle was fought against, beside its place: "u borbi protiv Nijemaca i ustaša kod Garevca", "u borbi s
 # Nijemcima na Mikuljači", "protiv albanskih balista"
 _ENEMY = (r'(?:Nijem|Njem|Nem|četni|ustaš|domobran|Talijan|Italijan|Bugar|Mađar|neprijatelj|okupator|balist|SS|esesov|Čerkez|'
           r'Švab|fašist|legionar|ljotić|Ljotić|nedić|Nedić|žandar|Arnaut|zelenokadrov|kvisling|Kozak|Vlasov|albansk|'
           r'njemačk|nemačk|ustašk|četničk|bugarsk|talijansk|italijansk|mađarsk|domobransk|neprijateljsk|fašističk)[\w-]*')
-ENEMY_RE = re.compile(rf'\b(?:protiv|sa?)\s+{_ENEMY}(?:(?:\s*,\s*|\s+i\s+|\s+)(?:{_ENEMY}))*')
+# whose men they were: "četnici DM", "protiv četnika Draže Mihailovića"
+_LEADER = r'(?:\s+(?:DM|D\.\s?M\.|Draže\s+Mihailovića|Draže|Ljotića|Nedića|Pavelića))?'
+ENEMY_RE = re.compile(rf'\b(?:protiv|sa?|od)\s+{_ENEMY}{_LEADER}(?:(?:\s*,\s*|\s+i\s+|\s+)(?:{_ENEMY}){_LEADER})*')
 # a battle, an attack, a crossing named before its place: "u bici na Sutjesci", "u bici za ranjenike na Neretvi", "u
 # borbama kod Bijeljine", "pri napadu na Kotor Varoš", "pri prelasku preko Drave", "u toku bitke na Neretvi"
 BATTLE_RE = re.compile(r'\b(?:u\s+(?:bici|bitci|bitki|borbama|jednoj\s+od\s+borbi(?:\s+brigade)?|okršaju|sukobu|zasjedi|zasedi|'
@@ -292,13 +295,27 @@ BATTLE_RE = re.compile(r'\b(?:u\s+(?:bici|bitci|bitki|borbama|jednoj\s+od\s+borb
                        r'prelaska|proboju|proboja|povlačenju|povlačenja)|na\s+položaju)\b\s*', re.I)
 # the kind of place before its name: "kod sela Ravanaca", "kod mesta Đurđevac", "na planini Ozren", "na brdu Mlađevcu";
 # a place it is near: "u području Kupresa", "u okolini Zvornika", "u kanjonu Pive", "ispred Slavonskog Broda", "preko Drave"
-_KIND_GEN = r'(?:sela|mesta|mjesta|grada|varoši|zaseoka|zaselka|planine|brda|rijeke|reke|vrha|kote|r\.)'
+_KIND_GEN = r'(?:sela|mesta|mjesta|grada|varoši|zaseoka|zaselka|planine|brda|rijeke|reke|vrha|kote|r\.|s\.)'
 NEAR_RE = re.compile(rf'\b(?:ispred|preko|iza|ispod|iznad|blizu|pored|kraj|(?:u|na)\s+(?:području|podrucju|okolini|okolici|'
                      rf'rejonu|reonu|prostoru|dolini|kanjonu))\s+(?=(?:{_KIND_GEN}\s*)?[{U}])')
 KIND_RE = re.compile(rf'\bkod\s+{_KIND_GEN}\s*(?=[{U}])')
 ON_KIND_RE = re.compile(rf'\b(na|u)\s+(?:brdu|planini|kosi|koti|vrhu|uzvišici|rijeci|reci|r\.)\s*(?=[{U}])')
 REGION_RE = re.compile(rf'\b(u|na)\s+(istočn|zapadn|centraln|srednj|južn|sjevern|severn|sjeveroistočn|severoistočn|jugoistočn|'
                        rf'jugozapadn|sjeverozapadn|severozapadn)(oj)\s+(?=[{U}])')
+# words of time and circumstance beside a place of death that the cuts before leave: a season, a month in the locative
+# ("u studenom 1944. kod Knina"), a day without its year ("Umro 14. maja u bolnici u Zagrebu"), "24. VII iste godine",
+# "sutradan", "posle rata u Splitu", the night between two days, the unit he fell in ("kod Knina u 2. dalmatinskoj
+# brigadi", "(35. divizija)"), a column of the wounded, a landing, the road he crossed ("pri proboju preko ceste kod
+# Debele Međe")
+_LOC_MONTHS = ('januaru|februaru|martu|aprilu|maju|junu|julu|avgustu|augustu|septembru|oktobru|novembru|decembru|'
+               'siječnju|veljači|ožujku|travnju|svibnju|lipnju|srpnju|kolovozu|rujnu|listopadu|studenom|studenome|prosincu')
+DEATH_NOISE_RE = re.compile(
+    rf'\b(?:u\s+(?:zimu|proljeće|proleće|jesen|ljeto|leto)|ujesen|zimi|(?:u\s+)?(?:{_LOC_MONTHS})|'
+    rf'(?:\d{{1,2}}\.\s*)?(?:[IVX]{{1,4}}\.?\s+|(?:{MONTHS})\s+)?iste\s+godine|sutradan|istog\s+dana|narednog\s+dana|'
+    rf'(?:posle|poslije|nakon)\s+(?:rata|oslobođenja)|u\s+noći\s+između\s+\d{{1,2}}\.?\s*i|'
+    rf'\d{{1,2}}\.\s*(?:[IVX]{{1,4}}\b\.?|\d{{1,2}}\.|(?:{MONTHS})\b)|'
+    rf'u\s+koloni\s+ranjenika|(?:u|pri)\s+desantu|preko\s+(?:ceste|puta|pruge|druma)|'
+    rf'u\s+\d+\.\s*(?:[\w-]+\s+){{0,2}}(?:brigad|divizij|korpus|bataljon|čet|odred)\w*)|\(\s*\d+\.\s*div\w*\s*\)', re.I)
 # what a month range leaves when its last month and the year are read as the date: "na Neretvi februar—mart 1943"
 TRAILING_MONTH_RE = re.compile(rf'(?:(?:[\s,]+|\s*[—–-]\s*)(?:{MONTHS}|juni|juli)\b)+\s*[—–-]?\s*$'
                                r'|\s+u\s+(?:januaru|februaru|martu|aprilu|maju|junu|julu|avgustu|septembru|oktobru|novembru|'
@@ -812,11 +829,20 @@ class Extractor:
             rest = text[m.end():]
         # "poginuo i sahranjen u Čazmi", "umro i sahranjen u Ruševu": the place he was buried is where he died;
         # "podlegao ranama u ...": the wounds are no place
+        # the scan's years ("19'45", "19- 1. 1945"); "Poginula je na ...", "Poginuo (nestao) 3. januara 1945"
+        rest = re.sub(r"\b19'(\d\d)\b", r'19\1', rest)
+        rest = re.sub(r'\b(\d{1,2})-\s(?=\d{1,2}\.\s*(?:18|19)\d\d)', r'\1. ', rest)
+        rest = re.sub(r'^\s*,?\s*(?:je\s+)?(?:\((?:nestao|nestala|poginuo|poginula|umro|umrla)\)\s*)?', '', rest)
         rest = re.sub(r'^\s*,?\s*i\s+(?:je\s+)?(?:sahranjen|sahranjena|pokopan|pokopana)\b|^\s*ranama\b', '', rest)
+        if re.match(rf'^\s*\.\s+[{U}]', rest):
+            rest = ''                       # "hrabro poginuo. Član KPJ postao ...": the death's sentence ends at the verb
         # the death clause runs to the end of its sentence, or to "sahranjen" / a new clause
         clause = sentences(rest)[0] if rest.strip() else ''
         clause = clause.split(';')[0]                                        # "poginuo u NOB; zvani ...": a note follows
-        clause = re.split(r'(?:[,;]|\s+i\b)?\s*(?:sahranjen|sahranjena|pokopan|pokopana|mesto sahrane|mjesto sahrane|a sahranjen|ostao na|nije sahranjen)', clause)[0]
+        # "Poginuo 20. IV. 1945. i sahranjen u Buku": nothing but the date before it, the burial place is where he fell
+        clause = re.sub(rf'^(\s*(?:{DATE})\.?,?)\s*i\s+(?:je\s+)?(?:sahranjen|sahranjena|pokopan|pokopana)\b', r'\1', clause)
+        clause = re.split(r'(?:[,;]|\s+i\b)?\s*(?:sahranjen|sahranjena|pokopan|pokopana|mesto sahrane|mjesto sahrane|a sahranjen|ostao na|nije sahranjen|'
+                          r'ostao nesahranjen|nesahranjen|prenijet|prenesen|prenet|prenešen)', clause)[0]
         # not the day a wound was received: "Umro od rane zadobijene 29. septembra 1944. god. u borbi za ..."
         dm = next((d for d in DATE_RE.finditer(clause) if not re.search(r'\bzadobijen\w*\s+$', clause[:d.start()])), None)
         if dm and not 1941 <= int(re.search(YEAR, dm.group(0)).group(0)) <= 2000:
@@ -827,7 +853,7 @@ class Extractor:
             start = dm.start()
             if dm.group(0).startswith('u ') and start and clause[start - 1].isalpha():
                 start += 2                                  # "u Šapcu marta 1945": the "u" is the end of the word before
-            after = re.sub(r'^\.?\s*god\b\.?', '', clause[dm.end():])   # "1944. god s. Bukovice", "1944. god" at a sentence's end
+            after = re.sub(r'^\.?\s*g(?:od)?\b\.?', '', clause[dm.end():])   # "1944. god s. Bukovice", "1942. g. na Motajici"
             if re.match(r'\.\s*\(', after) or (dm.group(0).endswith('godine') and after.startswith('.')):
                 after = ''     # a remark: "Oruglica 29/30. jula 1944. (raznela ga bugarska granata)", "... 1942. godine. z"
             night = re.search(r'\d{1,2}\s?/\s?$', clause[:start])         # "u noći 28/29. decembra 1943": the day it ended
@@ -841,9 +867,14 @@ class Extractor:
                 date = re.search(YEAR, date).group(0)                     # "Senja 2.9. IV 1945": the day is garbled, the year is not
             out['death_date'] = date
             clause = clause[:start] + ' ' + after
+        # "poginuo kao ranjenik u Centralnoj bolnici na Sutjesci": the words go, not the place
+        clause = re.sub(r'\bkao\s+(?:teški\s+|teško\s+)?(?:ranjenik|ranjenica|bolesnik|bolesnica|ranjen[a-z]*)\b', ' ', clause)
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
         clause = BATTLE_RE.sub(' ', clause)
         clause = ENEMY_RE.sub(' ', clause)
+        # another version after "ili" ("u Komletincima ili 23. januara kod Mohova"), the unit after "u sastavu" or "iz"
+        clause = re.sub(r',?\s*\bu\s+sastavu\b.*$|\s+iz\s+\d+\.\s.*$|\s*\(?\bili\b.*$', '', clause)
+        clause = DEATH_NOISE_RE.sub(' ', clause)
         clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u zatvoru|u ratu|u NO[BR](?:-[iu])?|u noći|noću)'
                         r'(?![\w-])\s*', '', clause)
         # a massacre is no place: "u Vranićkom pokolju", "u pokolju Vranićana"
@@ -859,7 +890,7 @@ class Extractor:
         # a hospital is where, not a place: "u Vojnoj bolnici u Šapcu", "u Divizijskoj bolnici"; not a town's ("u
         # Zagrebačkoj bolnici" names the town)
         clause = re.sub(r'\b(?:u|v)\s+(?:(?:Centraln|Divizijsk|Vojn|Korpusn|Oblasn|Brigadn|Partizansk|Armijsk)\w*\s+)?bolnici\b'
-                        r'(?:\s+(?:NOVJ|NOV(?:\s+i\s+POJ)?|VŠ|(?:[IVX]+\.?\s+)?\w+\s+(?:armije|divizije|korpusa|brigade)|'
+                        r'(?:\s+br\.\s*\d+)?(?:\s+(?:NOVJ|NOV(?:\s+i\s+POJ)?|VŠ|(?:[IVX]+\.?\s+)?\w+\s+(?:armije|divizije|korpusa|brigade)|'
                         r'[IVX]+\.\s*\w+|\w+\s+vojnog\s+područja))?\s*(?:u\s+MSB\b)?', '', clause, flags=re.I)
         # "u bolnici" went with the words of a battle above, its army's name stays: "NOVJ u Jelsi, Hvar"
         clause = re.sub(r'^\s*(?:NOVJ|NOV(?:\s+i\s+POJ)?|VŠ)\b\s*', '', clause.strip())
@@ -886,6 +917,8 @@ class Extractor:
         if mesto:
             out['death_place'] = clean_segment(mesto.group(1))
         elif (conv and len(conv) <= 70 and not re.search(r'\d', conv)
+              # no unit: "prilikom napada II krajiške brigade i Romanijskog partizanskog odreda na Brezu"
+              and not re.search(r'\b(?:brigad|odred|bataljon|divizij|korpus)\w*', conv, re.I)
               # every part a place: not "u Centralnoj , bolnici u Sandžaku", "Sombor, uisled i teških rana"
               and all(re.match(rf'^(?:{PREP}\s+)?(?:s\.\s)?[{U}]', p.strip()) for p in conv.split(','))
               and (place_re is None or place_re.fullmatch(clause))):
