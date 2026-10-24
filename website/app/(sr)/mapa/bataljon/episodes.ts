@@ -2974,4 +2974,129 @@ export const EPISODES: Episode[] = [
     ],
     pages: [177, 193],
   },
+  {
+    key: 'gornji-lapac',
+    foe: 'it',
+    region: 'gracac',
+    title: 'Oko Gornjeg Lapca',
+    short: 'Gornji Lapac',
+    dates: '14–15. februara 1943.',
+    start: '1943-02-14', end: '1943-02-15',
+    about: 'Kolona divizije „Sassari“ ušla je 13. februara u Gornji Lapac. U štabu Šeste divizije i u Glavnom štabu '
+      + 'Hrvatske očekuje se da će iz njega udariti na severozapad, na Donji Lapac, a ne na severoistok, preko Boričevca na '
+      + 'Kulen-Vakuf, gde su Nemci izbili nedelju dana ranije. Prema tome se raspoređuju i bataljoni Prve brigade.',
+    view: [15.960, 44.480, 16.105, 44.580],
+    places: ['Gornji Lapac', 'Donji Lapac', 'Gajine', 'Boričevac', 'Kulen Vakuf', 'Dobroselo'],
+    base: [],
+    steps: [
+      {
+        date: '13–14. februara 1943.', when: 'u najhladnijoj noći',
+        view: [15.965, 44.482, 16.065, 44.552],
+        text: 'U štabu sektora i brigade očekuje se da će kolona od oko 2500 vojnika ujutro 14. februara udariti na Donji Lapac. '
+          + 'Od Laze Radakovića traži se da „Marka Oreškovića“ rasporedi na jugoistočnim čukama Visočice, a „Pekišu '
+          + 'Vuksana“ na brdima jugoistočno od Gornjeg Lapca, odakle se kolone koje bi krenule na Donji Lapac najlakše '
+          + 'napadaju s bokova i iz zaleđa. Prvom i Drugom bataljonu naređeno je da zaposednu položaje Prisjeka–Podlisac i '
+          + 'Prisjeka–Mandina glava i da „napadnu neprijatelja s leđa, čim naše jedinice (dijelovi 3. brigade), koje su se '
+          + 'nalazile sa čela, prime borbu“. U najhladnijoj noći te zime, na gotovo 30 stepeni ispod nule, bataljoni na '
+          + 'vreme zaposednu položaje.',
+        notes: [
+          'Mandina glava je vrh od 821 m jugoistočno od Gornjeg Lapca (OpenStreetMap, GeoNames). Prisjeke i Podlisca nema '
+            + 'ni na jednoj karti kojom se ova karta služi, a topografske karte JNA 1:25.000 za Gornji Lapac nema na sajtu '
+            + 'odakle su preuzeti ostali listovi. Prisjeka je nacrtana kao procena između Mandine glave i Lisca, a Podlisac '
+            + 'pod Liscem.',
+          'Gde su bili delovi Treće brigade „sa čela“, knjiga ne kaže; nacrtani su na putu prema Donjem Lapcu.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.mandinaGlava, label: 'Mandina glava', lp: 's' },
+          { t: 'kota', at: WS.lisac, label: 'Lisac', lp: 'e' },
+          { t: 'spot', at: [16.0310, 44.5040], label: 'Prisjeka', lp: 'n', guess: true, until: 1 },
+          { t: 'spot', at: [16.0430, 44.5065], label: 'Podlisac', lp: 'e', guess: true, until: 1 },
+          { t: 'area', side: 'own', at: [16.0255, 44.5015], rx: 0.6, ry: 0.25, rot: -15, label: 'II bat.', lp: 'sw', guess: true, id: 'II' },
+          { t: 'area', side: 'friend', at: [16.0375, 44.5055], rx: 0.5, ry: 0.22, rot: -15, label: 'I bat.', lp: 'n', guess: true, id: 'I' },
+          { t: 'area', side: 'enemy', at: WS.gornjiLapac, rx: 0.55, ry: 0.35, label: 'oko 2500 Talijana', lp: 'w', id: 'lapac' },
+          { t: 'area', side: 'ally', at: [15.9760, 44.5340], rx: 0.5, ry: 0.25, rot: 40, label: 'delovi 3. ličke br.', lp: 'w', guess: true, id: '3lb', until: 2 },
+        ],
+      },
+      {
+        date: '14. februara 1943.', time: '5.00',
+        view: [15.975, 44.488, 16.105, 44.580],
+        text: 'U osvit, kad delimično motorizovana kolona krene iz Gornjeg Lapca, ništa se ne da uraditi: Talijani ne '
+          + 'krenu na Donji Lapac, nego na Kulen-Vakuf. U 10 sati kolona „Verdi“ u Kulen-Vakufu uspostavi vezu sa '
+          + 'SS-divizijom „Princ Eugen“.',
+        notes: ['Put kolone nacrtan je cestom preko Boričevca (OpenStreetMap).'],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: ROAD.lapacKulen, label: 'kolona „Verdi“', lp: 'se', at: 0.45 },
+          { t: 'area', side: 'enemy', at: WS.kulenVakuf, rx: 0.5, ry: 0.3, label: 'SS-divizija „Princ Eugen“, 10.00', lp: 'n', force: 'de', id: 'kv', until: 2 },
+          { t: 'area', side: 'enemy', at: WS.gornjiLapac, rx: 0.45, ry: 0.3, label: 'Talijani u Gornjem Lapcu', lp: 'w', id: 'lapac' },
+        ],
+      },
+      {
+        date: '14. februara 1943.', when: 'istog dana',
+        view: [15.965, 44.495, 16.060, 44.560],
+        text: 'Štab Prvog bataljona se opredeli za novu zasedu, uz kulenvakufsku cestu: čete se neopaženo pomere na '
+          + 'severoistok i u podne su na Gradini, iznad crkve u Boričevcu. U 13 sati plotunom zaspu talijanski kamion iz '
+          + 'Kulen-Vakufa, a u sumrak se bore s tri talijanske čete i s 2. bataljonom 151. puka, koji je stigao iz '
+          + 'Kulen-Vakufa. I „Pekiša Vuksan“ i „Matija Gubec“ su tog dana u borbama: Drugi bataljon s položaja Mandina '
+          + 'glava–Prisjeka priskoči u pomoć Petnaestoj kordunaškoj brigadi, napadajući Talijane u Gajinama, a Četvrti '
+          + 'napada Talijane kod Lumbardenika.',
+        notes: [
+          'Gajine su zaselak severno od Gornjeg Lapca (OpenStreetMap, GeoNames). Kojim je putem bataljon išao s Mandine '
+            + 'glave i odakle je napadala Petnaesta kordunaška, knjiga ne kaže; strelice su nacrtane približno.',
+          'Gradinu iznad boričevačke crkve karte ne imenuju; Prvi bataljon je nacrtan severno od ceste kod Boričevca.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: WS.gajine, rx: 0.35, ry: 0.22, id: 'gajine', until: 3 },
+          { t: 'move', side: 'own', kind: 'attack', path: [[16.0170, 44.5045], [16.0130, 44.5190], [16.0060, 44.5320], [15.9995, 44.5395]],
+            guess: true },
+          { t: 'move', side: 'ally', kind: 'attack', path: [[15.9720, 44.5600], [15.9840, 44.5510], [15.9930, 44.5440]],
+            label: '15. kordunaška br.', lp: 'w', at: 0.2, guess: true },
+          { t: 'fight', at: [15.9970, 44.5420] },
+          { t: 'area', side: 'friend', at: [16.0300, 44.5370], rx: 0.4, ry: 0.22, label: 'I bat., zaseda', lp: 'n', guess: true, id: 'I' },
+        ],
+      },
+      {
+        date: '15. februara 1943.', time: 'oko 16.00',
+        view: [15.980, 44.492, 16.060, 44.550],
+        text: 'Poslednja grupa 151. puka napusti Kulen-Vakuf oko 16 sati. Štabovi Prve ličke i Petnaeste kordunaške brigade '
+          + 'usaglase plan napada, ali talijanska kolona prođe Visočicu, gde je trebalo da je napadnu Kordunaši, pre nego '
+          + 'što je zaseda postavljena, pa je napadnuta s leđa, kad je prošla Lisac, gde je bio Prvi bataljon. Za to vreme '
+          + '„Pekiša Vuksan“, kako stoji u izveštaju Šeste divizije, „demonstrirao napad na Gornji Lapac, sprečavao '
+          + 'neprijateljsku artiljeriju u dejstvovanju, tukući je svojom vatrom, i sprečavao dolazak neprijatelja na '
+          + 'sektor 1. bataljona“.',
+        notes: [
+          'Visočica je ovde vrh od 841 m severno od ceste kod Boričevca (OpenStreetMap).',
+          'Odakle je bataljon demonstrirao napad i gde je bila talijanska artiljerija, knjiga ne kaže; nacrtano je s '
+            + 'Mandine glave prema Gornjem Lapcu.',
+        ],
+        marks: [
+          { t: 'kota', at: WS.visocica, label: 'Visočica', lp: 'n' },
+          { t: 'move', side: 'enemy', kind: 'back', path: [...ROAD.lapacKulen].reverse().slice(0, 18), label: '151. puk, natrag u Gornji Lapac', lp: 'se', at: 0.62 },
+          { t: 'area', side: 'friend', at: WS.lisac, rx: 0.4, ry: 0.25, label: 'I bat.', lp: 'e', id: 'I' },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[16.0410, 44.5140], [16.0370, 44.5210], [16.0310, 44.5300]], guess: true },
+          { t: 'area', side: 'enemy', at: [16.0000, 44.5105], rx: 0.2, ry: 0.13, label: 'artiljerija', lp: 'sw', guess: true, id: 'art' },
+          { t: 'move', side: 'own', kind: 'attack', path: [[16.0180, 44.5035], [16.0110, 44.5070], [16.0040, 44.5100]], guess: true },
+          { t: 'move', side: 'own', kind: 'fire', path: [[16.0160, 44.5060], [16.0025, 44.5108]], guess: true },
+        ],
+      },
+    ],
+    enemy: [
+      'Kolona divizije „Sassari“ u Gornjem Lapcu, oko 2500 vojnika, delimično motorizovana; kolona „Verdi“ 14. februara '
+        + 'u Kulen-Vakufu',
+      'SS-divizija „Princ Eugen“ u Kulen-Vakufu',
+      '2. bataljon 151. puka iz Kulen-Vakufa; bataljoni „Zara“ i 26. bersaljerski između Boričevca i Ostrvice',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“: Prisjeka–Podlisac, zatim zaseda na Gradini kod Boričevca, pa Lisac',
+      'Četvrti bataljon „Matija Gubec“: Lumbardenik',
+      'Petnaesta kordunaška brigada Osme divizije: Gajine, Visočica',
+      'Delovi Treće ličke brigade, na čelu prema Donjem Lapcu',
+    ],
+    result: 'Po talijanskim podacima od 15. februara, snage koje su bile prodrle do Kulen-Vakufa „vratile su se u Gornji '
+      + 'Lapac savladavši otpor partizana“. Komanda 2. talijanske armije 17. februara saznaje da su bataljoni „Zara“ i '
+      + 'Dvadeset šesti, s pojačanjima, tučeni između Boričevca i Ostrvice, uz 23 poginula i 90 ranjenih; Prvi bataljon '
+      + 'kod Boričevca nije imao gubitaka. Pisac knjige zaključuje da u štabovima nije bilo ni približnog poznavanja '
+      + 'talijanskog plana: put Gornji Lapac–Boričevac–Kulen-Vakuf zatvaran je tek kad ga je čelo kolone „Sassari“ već '
+      + 'prešlo. Gubitke Drugog bataljona u ovim borbama knjiga ne navodi.',
+    pages: [194, 198],
+  },
 ]
