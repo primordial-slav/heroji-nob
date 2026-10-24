@@ -38,7 +38,7 @@ from pathlib import Path
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, str(Path(__file__).parent))
-from extract_structured_fields import PARSER_FIELDS, ROOT, load_live, sentences  # noqa: E402
+from extract_structured_fields import ROOT, load_live, parser_set, sentences  # noqa: E402
 from name_utils import BRIGADE_CONFIGS  # noqa: E402
 
 OUT = ROOT / 'website' / 'data' / 'life-events'
@@ -324,13 +324,13 @@ def phrase_of(s: dict, e: dict) -> str:
 def life_events(s: dict, code: int) -> list[dict]:
     entries = [s] + list(s.get('other_sources') or [])
     steps: list[dict] = []
-    if code not in PARSER_FIELDS:
-        for i, e in enumerate(entries):
-            if e.get('ref_book'):
-                continue                    # a book across units (a hero's portrait): its summary is not read here
-            for step in read_entry(e.get('additional_info') or ''):
-                step['s'] = i
-                steps.append(step)
+    for i, e in enumerate(entries):
+        if e.get('ref_book') or parser_set(code, e):
+            continue                        # a book across units (a hero's portrait): its summary is not read here;
+                                            # a parser's unit's own list: its text is written from its fields
+        for step in read_entry(e.get('additional_info') or ''):
+            step['s'] = i
+            steps.append(step)
     own = s.get('additional_info') or ''
     year = re.search(r'(?:18|19)\d\d', s.get('birth_year') or '')
     if year:

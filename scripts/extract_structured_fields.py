@@ -55,6 +55,15 @@ PARSER_FIELDS = {39, 121, 150, 170, 171, 172}   # Druga proleterska; the pioneer
                                            # birth dates read as deaths); the Cankarjev bataljon (its deserters and
                                            # men who fell on the other side); the Kokrški odred (its section
                                            # headings in each entry read as places)
+# the books of those units that print a bio all the same, read as any other: the Druga proleterska's Borci Sutjeske
+# chapter and its Požega company's dead (2026-10-24: 1,234 records, and the 195 of its own list that merged a Borci
+# Sutjeske entry, had gone unread with the unit)
+READ_IN_PARSER_UNITS = {'borci-sutjeske-druga-proleterska.pdf', 'pozega-cete.pdf'}
+
+
+def parser_set(code: int, entry: dict) -> bool:
+    """the entry's fields are its parser's, never read from its text"""
+    return code in PARSER_FIELDS and (entry.get('pdf_file') or '') not in READ_IN_PARSER_UNITS
 # places of death the data held in the locative or misspelt, often enough that the known places' vote picked them
 # (2026-10-15): the place they are. fix_place puts a place of death in this form, after "u", "na", "kod" as well.
 LOCATIVE_PLACES = {'Manjači': 'Manjača', 'Peći': 'Peć', 'Jajcu': 'Jajce', 'Čačku': 'Čačak', 'Laćarku': 'Laćarak',
@@ -1024,8 +1033,9 @@ class Extractor:
         units = [found[k] for k in sorted(found, key=lambda k: order[k])]
         return ', '.join(units + parts)
 
-    def extract(self, info: str, code: int, duty_first: bool = False) -> dict:
-        if code in PARSER_FIELDS:
+    def extract(self, info: str, code: int, duty_first: bool = False, read: bool = False) -> dict:
+        """read: an entry of a parser's unit that is read all the same (READ_IN_PARSER_UNITS)"""
+        if code in PARSER_FIELDS and not read:
             return {}
         text = NICK_PREFIX.sub('', info or '').strip()
         text = re.sub(r'\s*\((?:općina [^)]*|ČSSR)\)$', '', text)          # 17. slavonska: section the soldier was listed under
@@ -1205,7 +1215,8 @@ def brigade_of(soldier: dict) -> int:
 def forget_stale(soldier: dict, old_info: str, keep=()) -> None:
     """additional_info was rewritten: drop the structured values that had been read from the old text
     (values set by hand differ from what the extractor reads, so they stay)."""
-    old = get_extractor().extract(old_info, brigade_of(soldier))
+    code = brigade_of(soldier)
+    old = get_extractor().extract(old_info, code, read=not parser_set(code, soldier))
     for f in FIELDS:
         if f not in keep and soldier.get(f) and soldier[f] == old.get(f):
             del soldier[f]
@@ -1246,7 +1257,7 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
         if PARTIZANKE in (e.get('source_url') or ''):
             info = her_own_deaths(info)
         sutjeska = (e.get('pdf_file') or '').startswith('borci-sutjeske')          # the duty at the battle comes first
-        fields = ex.extract(info, code, duty_first=sutjeska)
+        fields = ex.extract(info, code, duty_first=sutjeska, read=not parser_set(code, e))
         from_heading = fields.pop('_heading', False)
         for k, v in fields.items():
             if k == 'death_place' and PARTIZANKE in (e.get('source_url') or ''):
