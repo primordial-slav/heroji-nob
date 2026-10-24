@@ -69,6 +69,9 @@ REGIONS = {
                # the hamlet Vagan in its valley west of the road from Mazin to Gornji Lapac (JNA map 470-2-2,
                # GeoNames; OSM has only Vagan Popinski)
                'jna': [('Vagan', 15.9564, 44.4944, 'hamlet')]},
+    # Pađene, Oton and the Zrmanja's elbow north of Knin: April 1943
+    'knin': {'west': 15.94, 'east': 16.26, 'south': 43.99, 'north': 44.21,
+             'towns': {'Knin', 'Ervenik', 'Pađene', 'Oton', 'Zrmanja'}},
     # Udbina, Komić and the Lika railway from Medak to Lovinac: December 1942
     'lovinac': {'west': 15.45, 'east': 15.86, 'south': 44.31, 'north': 44.59,
                 'towns': {'Udbina', 'Lovinac', 'Medak', 'Sveti Rok'},

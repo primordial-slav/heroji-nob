@@ -23,6 +23,7 @@ const TERRAIN: Record<Region, () => Promise<Terrain>> = {
   dvor: () => import('./terrain/dvor'),
   lovinac: () => import('./terrain/lovinac'),
   gracac: () => import('./terrain/gracac'),
+  knin: () => import('./terrain/knin'),
 }
 // the ground the sheet being drawn stands on, as Sheet last set it (like W and H)
 let TR: Terrain
@@ -1023,7 +1024,7 @@ const AXIS_FROM = dayOf('1942-07-02')
 const AXIS_TO = Math.max(...EPISODES.map(ep => dayOf(ep.end)), ...BETWEEN.map(b => dayOf(b.end))) + 3
 const MONTHS_AXIS = [['1942-07-02', 'jul 1942.'], ['1942-08-01', 'avgust'], ['1942-09-01', 'septembar'],
   ['1942-10-01', 'oktobar'], ['1942-11-01', 'novembar'], ['1942-12-01', 'decembar'], ['1943-01-01', 'januar 1943.'],
-  ['1943-02-01', 'februar'], ['1943-03-01', 'mart']] as const
+  ['1943-02-01', 'februar'], ['1943-03-01', 'mart'], ['1943-04-01', 'april']] as const
 
 // The line is time, though not evenly: each episode's bar and name need their room, and the weeks between take what
 // is left in proportion to their length. Names stand above and below the line in turn (the last one ends at its bar),
@@ -1370,7 +1371,7 @@ export default function Battalion({ initial }: { initial: { epizoda?: string; ko
       <header className={styles.head}>
         <h1 className={styles.headTitle}>Drugi bataljon „Pekiša Vuksan“</h1>
         <p className={styles.headKicker}>Prva lička proleterska brigada „Marko Orešković“ · šta knjiga o brigadi piše o
-          bataljonu, borba po borba · prvi nacrt, jul 1942. – mart 1943.</p>
+          bataljonu, borba po borba · prvi nacrt, jul 1942. – april 1943.</p>
       </header>
       <Timeline e={pos.e} go={go} />
       <div className={styles.layout}>

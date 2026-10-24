@@ -18,7 +18,7 @@ export type Pos = 'n' | 'ne' | 'e' | 'se' | 's' | 'sw' | 'w' | 'nw'
 // Germans. A mark that doesn't say takes it from its label's words, else from its episode (`foe`)
 export type Force = 'it' | 'ndh' | 'cet' | 'de'
 // the sheet an episode is drawn on: scripts/make_battalion_map.py writes each region's ground to terrain/<region>.ts
-export type Region = 'kapela' | 'kosinj' | 'glina' | 'slunj' | 'dvor' | 'lovinac' | 'gracac'
+export type Region = 'kapela' | 'kosinj' | 'glina' | 'slunj' | 'dvor' | 'lovinac' | 'gracac' | 'knin'
 
 export type Mark = (
   // a unit's place: an ellipse (rx, ry in km, turned by rot degrees) round `at`
@@ -114,6 +114,7 @@ export const BETWEEN: { start: string; end: string; label: string }[] = [
   { start: '1943-02-01', end: '1943-02-02', label: 'Plješevica, nad Mazinom' },
   { start: '1943-02-23', end: '1943-02-27', label: 'prema Grahovu, do Očijeva' },
   { start: '1943-03-05', end: '1943-03-12', label: 'severozapadno od Gračaca' },
+  { start: '1943-03-23', end: '1943-04-02', label: 'dolina Zrmanje' },
 ]
 
 // places used more than once
@@ -328,6 +329,16 @@ const WS = {
   lovinacSt: [15.6638, 44.3760] as LL,         // GeoNames: the station Lovinac
   cavcici: [15.6657, 44.3726] as LL,           // JNA map: Čavčić, at the crossroads by the station
   ricice: [15.7453, 44.3367] as LL,
+  // Pađene and the Zrmanja north of Knin, April 1943 (OSM, GeoNames; no JNA sheet of this ground at hand)
+  padjene: [16.0981, 44.0878] as LL,           // OSM: Pađene, the hamlet Ilići at its middle
+  padjeneSt: [16.1234, 44.0765] as LL,         // GeoNames: the station Pađene
+  samardzije: [16.1110, 44.0740] as LL,        // OSM: Gornje and Donje Samardžije
+  smudje: [16.1186, 44.0795] as LL,            // OSM: Smuđe
+  segani: [16.1074, 44.0840] as LL,            // OSM: Šegani
+  markosi: [16.1099, 44.0794] as LL,           // OSM: Markoši, the book's Markos
+  mokroPolje: [16.0458, 44.0823] as LL,
+  oton: [16.1265, 44.1013] as LL,
+  zrmanjaSelo: [16.0625, 44.1607] as LL,
   opcuv: [15.8858, 44.4091] as LL,             // OSM and the JNA map: Opčuv, 970 m; the book's 972
   stolac: [15.8485, 44.4154] as LL,            // OSM: Stolac, 925 m (JNA map: the ridge Stolac under V. vrh, 967)
   ljutoc: [15.8362, 44.4253] as LL,            // OSM and the JNA map: Ljutočak, 885 m; the book's Ljutoč
@@ -3560,5 +3571,161 @@ export const EPISODES: Episode[] = [
       { name: 'Potkonjak Simin Stevo', id: '0002006895', note: 'komesar čete („Mačak“)' },
     ],
     pages: [213, 218],
+  },
+  {
+    key: 'padjene',
+    foe: 'cet',
+    region: 'knin',
+    title: 'Pađene',
+    short: 'Pađene',
+    dates: '3–4. aprila 1943.',
+    start: '1943-04-03', end: '1943-04-04',
+    about: 'Prva brigada izdvojena je iz divizije i poslata u severnu Dalmaciju, kao glavna snaga kninskog sektora, '
+      + 'protiv Đujićeve Dinarske divizije. Ličke i krajiške jedinice, osam krajiških i šest ličkih bataljona, treba da '
+      + 'četnike u selima između Knina, Strmice i Zrmanje opkole i unište. Prvoj ličkoj zapao je Oton i Pađene, gde je '
+      + 'štab popa Đujića, i blokada železničke stanice Pađene; Četvrta i Deseta krajiška napadaju Golubić, Radljevac i '
+      + 'Oton i obezbeđuju akciju od Knina. Procenjuje se da u Otonu i Pađenima nema više od 400 četnika, a na stanici '
+      + 'oko 200 Talijana; tek u borbi će se pokazati da je samo u Otonu više od 300 četnika, a u Pađenima do 1000.',
+    view: [15.995, 44.045, 16.165, 44.175],
+    places: ['Pađene', 'Oton', 'Mokro Polje', 'Zrmanja', 'Šegani', 'Markoši', 'Smuđe', 'Gornje Samardžije', 'Donje Samardžije', 'Ilići'],
+    base: [
+      { t: 'area', side: 'enemy', at: WS.oton, rx: 0.5, ry: 0.3, label: 'Oton: četnici', lp: 'e', id: 'oton' },
+      { t: 'post', at: WS.padjeneSt, label: 'stanica: Talijani', lp: 'e', force: 'it' },
+    ],
+    steps: [
+      {
+        date: '3–4. aprila 1943.', when: 'noću',
+        text: 'Bataljoni Prve brigade krenu u akciju iz Zrmanje i Prevjesa; čete Mitraljeskog bataljona raspoređene su u '
+          + 'Prvi, Drugi i Treći bataljon. Najutvrđenije mesto, Pađene, napadaju „Marko Orešković“ i „Pekiša Vuksan“; '
+          + 'Oton pada u deo „Božidaru Adžiji“, a „Matija Gubec“ je prema Obrovcu. „Marko Orešković“ pređe devet '
+          + 'kilometara i Zrmanju kod Kravljeg mosta, „Pekiša Vuksan“ maršrutu dužu od 15 kilometara: Zrmanju pređe kod '
+          + 'Mokrog polja i nastupa između raštrkanih pađenskih zaselaka.',
+        notes: [
+          'Put bataljona od Zrmanje do Mokrog polja i dalje do Pađena nacrtan je približno; knjiga daje samo dužinu '
+            + 'maršrute i mesto prelaska Zrmanje. Prevjesa nema na kartama kojima se ova karta služi.',
+          'Topografske karte JNA 1:25.000 za ovaj kraj nema na sajtu odakle su preuzeti ostali listovi; zaseoci su po '
+            + 'OpenStreetMap, stanica po GeoNames.',
+        ],
+        marks: [
+          { t: 'area', side: 'enemy', at: WS.padjene, rx: 0.9, ry: 0.55, label: 'Pađene: štab popa Đujića, do 1000 četnika', lp: 'w', id: 'padjene', until: 2 },
+          { t: 'move', side: 'own', kind: 'march', path: [[16.0600, 44.1560], [16.0520, 44.1350], [16.0480, 44.1100], WS.mokroPolje, [16.0650, 44.0830], [16.0850, 44.0800]],
+            label: 'II bat.', lp: 'w', at: 0.35, guess: true },
+          { t: 'spot', at: WS.mokroPolje, label: 'prelaz Zrmanje', lp: 'sw' },
+          { t: 'move', side: 'friend', kind: 'march', path: [[16.0750, 44.1450], [16.0850, 44.1200], [16.0950, 44.0950]], label: 'I bat.', lp: 'e', at: 0.3, guess: true },
+          { t: 'move', side: 'friend', kind: 'march', path: [[16.0950, 44.1400], [16.1100, 44.1250], [16.1220, 44.1080]], label: 'III bat.', lp: 'e', at: 0.7, guess: true },
+        ],
+      },
+      {
+        date: '4. aprila 1943.', time: '3.30',
+        view: [16.070, 44.065, 16.140, 44.105],
+        text: 'U 3.30 „Pekiša Vuksan“ se pojavi u središtu četničkog rasporeda, pred utvrđenim položajima Samardžije i '
+          + 'Smuđe; dve njegove čete oko 4 sata blokiraju pađensku železničku stanicu. „Marko Orešković“ u isto vreme '
+          + 'upadne u Pađene i napadne četnike u zaseoku Ilići, utvrđene na raskršću seoskih drumova u kamenim '
+          + 'bunkerima, zgradama i crkvi. U predjutro 340 boraca Prvog i Drugog bataljona u prvom napadu postižu uspehe '
+          + 'na svim pravcima.',
+        notes: [
+          'Samardžije (Gornje i Donje), Smuđe i zaselak Ilići su po OpenStreetMap; gde su tačno stajale čete, knjiga ne '
+            + 'kaže.',
+        ],
+        marks: [
+          { t: 'area', side: 'own', at: [16.1140, 44.0790], rx: 0.6, ry: 0.3, rot: -20, label: 'II bat.', lp: 'n', id: 'II' },
+          { t: 'area', side: 'own', at: [16.1215, 44.0745], rx: 0.35, ry: 0.2, label: 'dve čete II bat.', lp: 'se', id: 'II-st' },
+          { t: 'area', side: 'enemy', at: WS.samardzije, rx: 0.3, ry: 0.25, id: 'samardzije', until: 3 },
+          { t: 'area', side: 'enemy', at: WS.smudje, rx: 0.25, ry: 0.18, id: 'smudje', until: 3 },
+          { t: 'move', side: 'friend', kind: 'attack', path: [[16.0920, 44.1000], [16.0950, 44.0940], [16.0972, 44.0895]], label: 'I bat.', lp: 'w', at: 0.1, guess: true },
+          { t: 'area', side: 'enemy', at: WS.padjene, rx: 0.3, ry: 0.2, label: 'Ilići: četnici', lp: 'w', id: 'padjene', until: 2 },
+          { t: 'fight', at: [16.0975, 44.0890] },
+        ],
+      },
+      {
+        date: '4. aprila 1943.', when: 'posle svanuća',
+        view: [16.070, 44.060, 16.145, 44.105],
+        text: 'Posle svanuća četnici se srede i, uz silovitu uzastopnu paljbu talijanske artiljerije, pružaju sve '
+          + 'organizovaniji otpor; naročito odlučno brane se iz pađenske škole. Oko 6 sati četnici iz Ilića, tučeni iz '
+          + 'neposredne blizine, uzmaknu preko Šegana i Markosa prema železničkoj stanici. Drugi bataljon, raspoređen '
+          + 'bliže stanici, nađe se između četničke i talijanske vatre; u neposrednom sudaru borci se s četnicima hvataju '
+          + 'za guše. „Preko kamenjara kurir Bogdan Janjić Šmit odveo je 7 četnika, koje smo mi iz štaba zarobili“, '
+          + 'seća se komesar bataljona Slavko Glumac. Delovi Desete krajiške brigade nisu na vreme zaposeli Debelo brdo '
+          + 'između Otona i Pađena, pa zaleđe „Pekiše Vuksana“ nije očišćeno od četnika. Gine se uglavnom od artiljerije, '
+          + 'i to ne toliko od gelera koliko od rasprsnutog kamenja, koje tuče kao grad. Najteže prolazi Treća četa Đure '
+          + 'Božičkovića i Petra Radeke: već u prvom sudaru teško je ranjen komesar Radeka, kovač, koji u krvavim rukama '
+          + 'drži organ CK KPJ „Proleter“ i šapće: „Pazite da organ KPJ ne padne neprijatelju u ruke!“',
+        notes: [
+          'Odakle je tukla talijanska artiljerija, knjiga ne kaže; strelica dolazi od Knina, s jugoistoka. Debelo brdo '
+            + 'između Otona i Pađena karte ne imenuju.',
+          'Pađenska škola nije nacrtana: knjiga je ne smešta.',
+          'Odakle su četnici tukli u zaleđe bataljona, knjiga ne kaže; strelica dolazi sa severoistoka, od Otona, prema '
+            + 'kome je bilo Debelo brdo.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'back', path: [[16.0985, 44.0880], WS.segani, WS.markosi, [16.1170, 44.0770]], label: 'četnici iz Ilića', lp: 'n', at: 0.4 },
+          { t: 'move', side: 'enemy', kind: 'fire', path: [[16.1400, 44.0640], [16.1230, 44.0760]], label: 'talijanska artiljerija', lp: 'e', at: 0, guess: true },
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[16.1250, 44.0950], [16.1200, 44.0870], [16.1160, 44.0810]], label: 'četnici s leđa', lp: 'e', at: 0.2, guess: true },
+          { t: 'fight', at: [16.1150, 44.0785] },
+          { t: 'fight', at: [16.1200, 44.0755] },
+        ],
+      },
+      {
+        date: '4. aprila 1943.', when: 'kasnije',
+        view: [16.060, 44.055, 16.150, 44.110],
+        text: 'Malo kasnije pogine komandir Treće čete Đuro Božičković, jedan od najuglednijih ljudi koji su s „Božidarom '
+          + 'Adžijom“ došli u brigadu. Pogine i komandir Druge čete Nikola Bjegović, koji je tek primio četu od Jove '
+          + 'Ivančevića Jelena; zamenika komandira Iliju Ljubojevića iz Počitelja zarobe i mučenjem ubiju njegovi susedi, a '
+          + 'četnici zarobe i ubiju i ranjenu bolničarku Milicu Potkonjak iz Ornica. „Ranjenih smo tu imali tako mnogo, da '
+          + 'smo ih i ja i komandant Jovica Zorić morali izvlačiti“, kaže Slavko Glumac. Kad je školu trebalo da tuku '
+          + 'minobacači Četvrte krajiške, krntijaši se povuku; odmah zatim položaje oko škole počne tući talijanska '
+          + 'artiljerija, a Talijani „udarili u leđa našim bataljonima i time omogućili četničkim vođama da se iščupaju iz '
+          + 'naših ruku i uteknu“. „Marko Orešković“ i „Pekiša Vuksan“ se izvuku iz Pađena.',
+        notes: [
+          'Kojim su se putem bataljoni izvukli, knjiga ne kaže; strelica je nacrtana približno, prema Zrmanji.',
+        ],
+        marks: [
+          { t: 'move', side: 'enemy', kind: 'attack', path: [[16.1400, 44.0650], [16.1300, 44.0700], [16.1220, 44.0745]], label: 'Talijani', lp: 's', at: 0.1, guess: true },
+          { t: 'move', side: 'own', kind: 'back', path: [[16.1100, 44.0800], [16.0900, 44.0880], [16.0700, 44.0960]], label: 'II bat.', lp: 's', at: 0.5, guess: true },
+          { t: 'move', side: 'friend', kind: 'back', path: [[16.0960, 44.0900], [16.0900, 44.1050], [16.0850, 44.1180]], label: 'I bat.', lp: 'e', at: 0.5, guess: true },
+        ],
+      },
+    ],
+    enemy: [
+      'Đujićeva Dinarska divizija: u Pađenima njen štab i do 1000 četnika, u Otonu više od 300; utvrđeni položaji u '
+        + 'Ilićima, Samardžijama, Smuđama i školi',
+      'Talijani na stanici Pađene i u Kninu, s artiljerijom',
+    ],
+    friends: [
+      'Prvi bataljon „Marko Orešković“: Ilići, pađenska škola',
+      'Treći bataljon „Božidar Adžija“: Oton, Gradina (k. 834)',
+      'Četvrti bataljon „Matija Gubec“: prema Obrovcu, Trebačnik',
+      'Četvrta i Deseta krajiška brigada: Golubić, Radljevac, Oton, obezbeđenje od Knina',
+      'Lički partizanski odred: prema Erveniku i Žegaru',
+    ],
+    result: 'Drugi bataljon je imao 18 poginulih. U Pađenima je palo mnogo boraca, ali neuporedivo veće gubitke imali su '
+      + 'četnici: „Marko Orešković“ i „Pekiša Vuksan“ zbog jake artiljerijske vatre nisu uspeli da izvuku sve poginule '
+      + 'drugove, poneli su ih samo dvanaestoricu, ali su poveli više od 200 zarobljenih četnika. Po člancima iz '
+      + 'bataljonskih džepnih novina „Osvetnik“ i izveštaju Jovice Zorića i Slavka Glumca, „borbeni moral kod partizana“ '
+      + 'ostao je „na vrhuncu“.',
+    fallen: [
+      { name: 'Božičković Mile Đuro', id: '0002000656', note: 'komandir Treće čete' },
+      { name: 'Bjegović Nikola', id: '0002000437', note: 'komandir Druge čete („Kovač“)' },
+      { name: 'Ljubojević Genin Ilija', id: '0002004204', note: 'zamenik komandira; zarobljen i ubijen' },
+      { name: 'Potkonjak Milica', id: '0002006889', note: 'bolničarka; ranjena zarobljena i ubijena' },
+      { name: 'Pavković Ilijin Nikola', id: '0002006176' },
+      { name: 'Pavković Ilije Uroš', id: '0002006186', note: 'u spisku boraca: Prvi bataljon' },
+      { name: 'Petrović Nikole Mile', id: '0002006577' },
+      { name: 'Pjevač Nikolin Đuro', id: '0002006698' },
+      { name: 'Potkonjak Petra Mile', id: '0002006887' },
+      { name: 'Basić Mile' },
+      { name: 'Bokan Jove Petar', id: '0002000610' },
+      { name: 'Rađenović Milana Stevo', id: '0002007297' },
+      { name: 'Obradović Vuka Mile', id: '0002005870' },
+      { name: 'Obradović Rade Nikola', id: '0002005879' },
+      { name: 'Munidžaba Luka', id: '0002005473', note: 'u spisku boraca Munižaba' },
+      { name: 'Mišković Miče Branko', id: '0002005324', note: 'knjiga ga navodi i među poginulima Prvog bataljona' },
+      { name: 'Počuča Zorka', note: 'umrla od rana' },
+      { name: 'Počuča Nikole Petar', id: '0002006763', note: 'umro od rana' },
+    ],
+    wounded: [
+      { name: 'Radeka Mile Petar', id: '0002007048', note: 'komesar Treće čete; u spisku boraca Prvi bataljon' },
+    ],
+    pages: [222, 225],
   },
 ]
