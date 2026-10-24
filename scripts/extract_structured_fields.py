@@ -266,6 +266,61 @@ DEATH_KW = {
     'ubijen': 'ubijen', 'ubijena': 'ubijen', 'zaklan': 'ubijen', 'zaklana': 'ubijen',
 }
 DEATH_RE = re.compile(r'\b(' + '|'.join(k for k, v in DEATH_KW.items() if v) + r')\b', re.I)
+# a death told in the active voice, the soldier its object: "strijeljali ga Nijemci u Užicu", "uhvatili ga četnici i
+# zaklali", "koji su ga streljali kod VTZ u Čačku", "ubili su je ustaše" (not "ubio je": he did the killing)
+_ACTIVE_VERB = r'(?:streljal|strijeljal|ubil|zaklal|objesil|obesil)[a-z]*'
+ACTIVE_DEATH_RE = re.compile(rf'\b(?:(?:ga|ju|su\s+je)\s+(?:[\w-]+\s+){{0,3}}?(?P<v1>{_ACTIVE_VERB})'
+                             rf'|(?P<v2>{_ACTIVE_VERB})\s+(?:su\s+)?(?:ga|ju)\b|(?P<v3>{_ACTIVE_VERB})\s+su\s+je\b)', re.I)
+ACTIVE_KIND = {'streljal': 'streljan', 'strijeljal': 'streljan', 'ubil': 'ubijen', 'zaklal': 'ubijen', 'objesil': 'ubijen',
+               'obesil': 'ubijen'}
+# who did it, after the verb: "strijeljali ga Nijemci na Banjici", "ubili su ga bugarski vojnici kod Vlasotinca"
+_AGENT = (r'(?:Nijemci|Nije\.mci|Nemci|Njemci|Nijemac|Nemac|četnici|ustaše|ustaša|Bugari|Talijani|Italijani|Mađari|domobrani|Švabe|'
+          r'ljotićevci|Ljotićevci|nedićevci|Nedićevci|žandari|žandarmi|SS-ovci|esesovci|okupatori|fašisti|balisti|legionari|'
+          r'Čerkezi|Arnauti|zelenokadrovci|(?:njemačk|nemačk|bugarsk|talijansk|italijansk|mađarsk|ustašk|četničk|domobransk)\w*'
+          r'\s+(?:vojnici|vojska|patrola|jedinice|stražari|žandari))')
+AGENT_RE = re.compile(rf'^\s*,?\s*{_AGENT}(?:\s+i\s+{_AGENT})?\b')
+# the enemy a battle was fought against, beside its place: "u borbi protiv Nijemaca i ustaša kod Garevca", "u borbi s
+# Nijemcima na Mikuljači", "protiv albanskih balista"
+_ENEMY = (r'(?:Nijem|Njem|Nem|četni|ustaš|domobran|Talijan|Italijan|Bugar|Mađar|neprijatelj|okupator|balist|SS|esesov|Čerkez|'
+          r'Švab|fašist|legionar|ljotić|Ljotić|nedić|Nedić|žandar|Arnaut|zelenokadrov|kvisling|Kozak|Vlasov|albansk|'
+          r'njemačk|nemačk|ustašk|četničk|bugarsk|talijansk|italijansk|mađarsk|domobransk|neprijateljsk|fašističk)[\w-]*')
+ENEMY_RE = re.compile(rf'\b(?:protiv|sa?)\s+{_ENEMY}(?:(?:\s*,\s*|\s+i\s+|\s+)(?:{_ENEMY}))*')
+# a battle, an attack, a crossing named before its place: "u bici na Sutjesci", "u bici za ranjenike na Neretvi", "u
+# borbama kod Bijeljine", "pri napadu na Kotor Varoš", "pri prelasku preko Drave", "u toku bitke na Neretvi"
+BATTLE_RE = re.compile(r'\b(?:u\s+(?:bici|bitci|bitki|borbama|jednoj\s+od\s+borbi(?:\s+brigade)?|okršaju|sukobu|zasjedi|zasedi|'
+                       r'toku\s+(?:bitke|borbi|borbe))(?:\s+za\s+ranjenike)?|(?:pri|prilikom)\s+(?:napadu|napada|prelasku|'
+                       r'prelaska|proboju|proboja|povlačenju|povlačenja)|na\s+položaju)\b\s*', re.I)
+# the kind of place before its name: "kod sela Ravanaca", "kod mesta Đurđevac", "na planini Ozren", "na brdu Mlađevcu";
+# a place it is near: "u području Kupresa", "u okolini Zvornika", "u kanjonu Pive", "ispred Slavonskog Broda", "preko Drave"
+_KIND_GEN = r'(?:sela|mesta|mjesta|grada|varoši|zaseoka|zaselka|planine|brda|rijeke|reke|vrha|kote|r\.)'
+NEAR_RE = re.compile(rf'\b(?:ispred|preko|iza|ispod|iznad|blizu|pored|kraj|(?:u|na)\s+(?:području|podrucju|okolini|okolici|'
+                     rf'rejonu|reonu|prostoru|dolini|kanjonu))\s+(?=(?:{_KIND_GEN}\s*)?[{U}])')
+KIND_RE = re.compile(rf'\bkod\s+{_KIND_GEN}\s*(?=[{U}])')
+ON_KIND_RE = re.compile(rf'\b(na|u)\s+(?:brdu|planini|kosi|koti|vrhu|uzvišici|rijeci|reci|r\.)\s*(?=[{U}])')
+REGION_RE = re.compile(rf'\b(u|na)\s+(istočn|zapadn|centraln|srednj|južn|sjevern|severn|sjeveroistočn|severoistočn|jugoistočn|'
+                       rf'jugozapadn|sjeverozapadn|severozapadn)(oj)\s+(?=[{U}])')
+# what a month range leaves when its last month and the year are read as the date: "na Neretvi februar—mart 1943"
+TRAILING_MONTH_RE = re.compile(rf'(?:(?:[\s,]+|\s*[—–-]\s*)(?:{MONTHS}|juni|juli)\b)+\s*[—–-]?\s*$'
+                               r'|\s+u\s+(?:januaru|februaru|martu|aprilu|maju|junu|julu|avgustu|septembru|oktobru|novembru|'
+                               r'decembru)\b.*$')
+
+
+def place_words(clause: str) -> str:
+    """A place of death as the reader can put it in the nominative: the kind of place out of its way ("kod sela
+    Ravanaca" is "kod Ravanaca", "na planini Ozren" "na Ozren"), what it is near read with "kod" ("u području Kupresa",
+    "ispred Otoka", "preko Drave"), a region with its capital ("u istočnoj Bosni"), the nominative a book prints in
+    brackets beside the case ("na Bijeljinu (Bijeljina)", "na Vrpolje (Sanski Most)"), and a few places told by what
+    stood there"""
+    c = re.sub(r'\b(?:na|u)\s+sremskom\s+frontu\b', 'na Sremskom frontu', clause)
+    c = re.sub(r'\bu\s+š\.\s*logoru\b', 'u Šapcu', c)                  # the Mačvanski odred's Šabac camp of 1941
+    c = re.sub(r'\bkod\s+VTZ\s+u\s+Čačku\b', 'Čačak', c)               # the Vojnotehnički zavod, where Čačak's hostages were shot
+    c = re.sub(r'\bna\s+Krušiku,?\s+u\s+Valjevu\b', 'Krušik, u Valjevu', c)   # the Krušik camp in Valjevo
+    c = re.sub(r'\b(?:u|v)\s+(?:VPB|CPB|PB)\b\s*', '', c)               # a partisan hospital: "u VPB Petrova gora"
+    c = REGION_RE.sub(lambda r: f'{r.group(1)} {r.group(2).capitalize()}{r.group(3)} ', c)
+    c = KIND_RE.sub('kod ', NEAR_RE.sub('kod ', c))
+    c = ON_KIND_RE.sub(r'\1 ', c)
+    c = re.sub(rf'\s*\(([{U}][^()]*)\)', r', \1', c)
+    return clean_segment(re.sub(r'\s+', ' ', c))
 # the next soldier's entry glued into a bio: a sentence that starts with a surname in capitals (the scan may garble
 # its first letters: "iRCEGOVIĆ", "miMUNOVIĆ"); not an abbreviation such as "NOB" or "KPJ"
 GLUED_RE = re.compile(r'[.;]\s+\S{0,2}(?!(?:NOB|NOV|NOVJ|NOR|NOO|NOP|KPJ|SKOJ|SSSR|JNA|BiH|SAD|SFRJ|SUBNOR|KNOJ|OZNA|UDB|AVNOJ|'
@@ -739,20 +794,29 @@ class Extractor:
         in the nominative (a book whose places other units' data repeat in the case it prints)"""
         out = {}
         m = DEATH_RE.search(text)
+        active = ACTIVE_DEATH_RE.search(text)
         mesto = re.search(r'mesto smrti\s*:\s*([^,;.]+(?:\s\([^)]*\))?)', text, re.I)
-        if not m:
+        if active and (not m or active.start() < m.start()):
+            verb = next(v for v in active.group('v1', 'v2', 'v3') if v).lower()
+            out['death_type'] = next(k for stem, k in ACTIVE_KIND.items() if verb.startswith(stem))
+            rest = AGENT_RE.sub('', text[active.end():], count=1)
+        elif not m:
             if mesto:
                 out['death_place'] = clean_segment(mesto.group(1))
             elif '†' in text:
                 out = self.dagger(text)
             return out
-        kw = m.group(1).lower()
-        out['death_type'] = DEATH_KW[kw]
-        rest = text[m.end():]
+        else:
+            kw = m.group(1).lower()
+            out['death_type'] = DEATH_KW[kw]
+            rest = text[m.end():]
+        # "poginuo i sahranjen u Čazmi", "umro i sahranjen u Ruševu": the place he was buried is where he died;
+        # "podlegao ranama u ...": the wounds are no place
+        rest = re.sub(r'^\s*,?\s*i\s+(?:je\s+)?(?:sahranjen|sahranjena|pokopan|pokopana)\b|^\s*ranama\b', '', rest)
         # the death clause runs to the end of its sentence, or to "sahranjen" / a new clause
         clause = sentences(rest)[0] if rest.strip() else ''
         clause = clause.split(';')[0]                                        # "poginuo u NOB; zvani ...": a note follows
-        clause = re.split(r'[,;]?\s*(?:sahranjen|sahranjena|pokopan|pokopana|mesto sahrane|mjesto sahrane|a sahranjen|ostao na|nije sahranjen)', clause)[0]
+        clause = re.split(r'(?:[,;]|\s+i\b)?\s*(?:sahranjen|sahranjena|pokopan|pokopana|mesto sahrane|mjesto sahrane|a sahranjen|ostao na|nije sahranjen)', clause)[0]
         # not the day a wound was received: "Umro od rane zadobijene 29. septembra 1944. god. u borbi za ..."
         dm = next((d for d in DATE_RE.finditer(clause) if not re.search(r'\bzadobijen\w*\s+$', clause[:d.start()])), None)
         if dm and not 1941 <= int(re.search(YEAR, dm.group(0)).group(0)) <= 2000:
@@ -778,7 +842,9 @@ class Extractor:
             out['death_date'] = date
             clause = clause[:start] + ' ' + after
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
-        clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u ratu|u NO[BR](?:-[iu])?|u noći|noću)'
+        clause = BATTLE_RE.sub(' ', clause)
+        clause = ENEMY_RE.sub(' ', clause)
+        clause = re.sub(r'\b(?:u borbi|u napadu|u akciji|u zarobljeništvu|u bolnici|u logoru|u zatvoru|u ratu|u NO[BR](?:-[iu])?|u noći|noću)'
                         r'(?![\w-])\s*', '', clause)
         # a massacre is no place: "u Vranićkom pokolju", "u pokolju Vranićana"
         clause = re.sub(rf'\bu\s+(?:[{U}]\w+\s+)?pokolju(?:\s+[{U}]\w+)?', '', clause)
@@ -789,7 +855,7 @@ class Extractor:
         clause = re.sub(r'(?:,\s*|\s+)(?:i tu|gde|gdje|protiv|dok|pošto|jer|kada|kad|zajedno|sa(?=\s))\b.*$', '', clause)   # "kod Vrbovca i tu", "..., gdje je i", "(u borbi) sa SS-ovcima"
         clause = re.sub(r'\s*\((?:nema|drugih|nedostaju|ostali)[^)]*\)?', '', clause)
         clause = re.sub(rf'^[{U}]\.,\s*', '', clause.strip())                # "S., Soljani" (OCR)
-        clause = re.sub(r'^[\s,]*(?:od|usled|uslijed|zbog)\s+[^,]*?(?=,|\s(?:u|na|kod|v|pri)\s|$)', '', clause.strip())   # cause of death
+        clause = re.sub(r'^[\s,.]*(?:od|usled|uslijed|zbog)\s+[^,]*?(?=,|\s(?:u|na|kod|v|pri)\s|$)', '', clause.strip())   # cause of death
         # a hospital is where, not a place: "u Vojnoj bolnici u Šapcu", "u Divizijskoj bolnici"; not a town's ("u
         # Zagrebačkoj bolnici" names the town)
         clause = re.sub(r'\b(?:u|v)\s+(?:(?:Centraln|Divizijsk|Vojn|Korpusn|Oblasn|Brigadn|Partizansk|Armijsk)\w*\s+)?bolnici\b'
@@ -813,14 +879,20 @@ class Extractor:
         if not re.search(r'\b[A-ZČĆŽŠĐ]{3,}\b', place):                     # unless the next entry's NAME is glued on
             clause = place
         clause = clean_segment(re.sub(r'\s+', ' ', clause))
+        clause = TRAILING_MONTH_RE.sub('', clause)                          # "na Neretvi februar—mart 1943": its first month
+        # the place as the reader can convert it ("kod sela Ravanaca" is "kod Ravanaca"); where the site doesn't know
+        # it, the place is kept as printed
+        conv = place_words(clause)
         if mesto:
             out['death_place'] = clean_segment(mesto.group(1))
-        elif (clause and len(clause) <= 70 and not re.search(r'\d', clause)
+        elif (conv and len(conv) <= 70 and not re.search(r'\d', conv)
               # every part a place: not "u Centralnoj , bolnici u Sandžaku", "Sombor, uisled i teških rana"
-              and all(re.match(rf'^(?:{PREP}\s+)?(?:s\.\s)?[{U}]', p.strip()) for p in clause.split(','))
+              and all(re.match(rf'^(?:{PREP}\s+)?(?:s\.\s)?[{U}]', p.strip()) for p in conv.split(','))
               and (place_re is None or place_re.fullmatch(clause))):
-            place = self.nominative(clause)
-            if not converted_only or self.in_nominative(clause, place):
+            place = self.nominative(conv)
+            if place == conv and conv != clause and not all(self.places.get(p.strip()) for p in conv.split(',')):
+                place = clause
+            if not converted_only or self.in_nominative(conv, place):
                 out['death_place'] = place
         return out
 

@@ -2000,8 +2000,11 @@ def extract_birth_info(additional_info):
         year = match.group(1)
         return year, year
 
-    # Pattern 5: "rođen(a) YYYY" embedded in text, also "Rođen 20. II 1923", "rođen 20. septembra 1921"
-    match = re.search(r'[Rr]ođen[a]?\s+(?:je\s+)?(?:\d{1,2}\.\s*(?:[IVX]+|\d{1,2})\.?\s*|\d{1,2}\.\s*[a-zčćžšđ]+\s+)?(\d{4})', search_text)
+    # Pattern 5: "rođen(a) YYYY" embedded in text, also "Rođen 20. II 1923", "rođen 20. septembra 1921", "Rođena januara
+    # 1911", and the word as the scans spell it: "roden" (Druga lička's memoir book), "roćen" (19. birčanska, 7. krajiška),
+    # "rođe n", "-ođen" (its first letter lost), "rodjen", "rod.", "rojen"
+    match = re.search(r'(?:[Rr]o(?:đ|dj|d|ć)e\s?n[a]?|-ođen[a]?|[Rr]od\.|[Rr]ojen[a]?)\s+(?:je\s+)?'
+                      r'(?:\d{1,2}\.\s*(?:[IVX]+|\d{1,2})\.?\s*|\d{1,2}\.\s*[a-zčćžšđ]+\s+|[a-zčćžšđ]+\s+)?(\d{4})', search_text)
     if match:
         year = match.group(1)
         return year, year
