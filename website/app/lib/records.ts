@@ -87,6 +87,15 @@ const HERO = /narodn(?:i|og|im)\s*heroj(?!i)/i      // the OCR can lose the spac
 const PROPOSED = /predložen\w*\s+za\s+narodnog\s+heroja/gi
 const SPOMENICA = /spomenic/i
 
+/** The soldier's memberships of SKOJ and the party, with the year each began where the entries say: "SKOJ 1941, KPJ
+ * 1944" (the field `party`, scripts/extract_structured_fields.py read_party) is [['SKOJ', '1941'], ['KPJ', '1944']] */
+export function partyOf(soldier: Soldier): [string, string][] {
+  return (soldier.party ?? '').split(', ').filter(Boolean).map((p) => {
+    const [org, year = ''] = p.split(' ')
+    return [org, year]
+  })
+}
+
 /** The decorations any of the soldier's entries names */
 export function decorationsOf(soldier: Soldier): { heroj: boolean; spomenica: boolean } {
   const text = entriesOf(soldier).map((e) => e.additional_info ?? '').join(' ')

@@ -129,6 +129,8 @@ export const sl: Messages = {
     born: (woman: boolean) => (woman ? 'Rojena' : 'Rojen'),
     skoj: 'Član SKOJ',
     kpj: 'Član KPJ',
+    member: (woman: boolean) => (woman ? 'Članica' : 'Član'),
+    party: (items: [string, string][]) => items.map(([org, year]) => org + (year ? ` od ${year}` : '')).join(', '),
     nob: 'V NOB',
     unit: (kind: string) => ({ brigade: 'V brigadi', division: 'V diviziji', detachment: 'V odredu' } as Record<string, string>)[kind] ?? 'V enoti',
     duty: 'Dolžnost',

@@ -46,7 +46,7 @@ from name_utils import BRIGADE_CONFIGS, OSTALI_CODES  # noqa: E402
 from cleanup_text_fields import live_json_files  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'death_type', 'death_date', 'death_place']
+FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'death_type', 'death_date', 'death_place', 'party']
 # Units whose parser sets the fields itself and whose text is written from them, not printed: Druga proleterska's
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
 # its campaign's period would be a death date, "poginuo ili nestao" a death
@@ -1388,10 +1388,86 @@ def her_own_deaths(info: str) -> str:
     return ' '.join(keep)
 
 
+# Membership of SKOJ and the party (the field `party`, 2026-10-25): "član KPJ od 1941", "čl. SKOJ-a", "član MK KPJ",
+# "član Partije", "primljen u KPJ 1942", "skojevac", "sekretar partijske ćelije", and a second one joined on ("član
+# SKOJ-a od 1941, a KPJ od 1944", "SKOJ-a i KPJ", "Član SKOJ-a od 1932. KPJ od 1940."); stored "SKOJ 1941, KPJ 1944"
+_ORG = r'(?P<org>SKOJ(?:-?[aue])?|KPJ|KPH|KPS|KP(?![\w-])|[Pp]artij[eiu])(?![\w])'
+_COMMITTEE = (r'(?:(?:MK|KK|OK|PK|CK|SK|MBK|RK|biroa|mjesnog|mesnog|sreskog|kotarskog|okružnog|oblasnog|pokrajinskog|'
+              r'komiteta|ćelije|partijske|aktiva|Centralnog|Pokrajinskog|Okružnog|Oblasnog|Sreskog|Kotarskog|Mjesnog|Mesnog|'
+              r'Komiteta)\s+){0,4}')
+MEMBER_RES = [re.compile(rf'\b(?:[ČčCc]lan(?:ica)?|čl\.|[Čč]lanom)\s+{_COMMITTEE}{_ORG}'),
+               re.compile(rf'\b(?:primljen\w*|ušao|ušla|stupio|stupila|pristupi\w*)\s+u\s+{_ORG}'),
+               re.compile(rf'\bsekretar\w*\s+(?:\w+\s+){{0,3}}?(?:ćelije\s+|aktiva\s+)?{_ORG}'),
+               re.compile(r'\b(?P<skojevac>[Ss]kojev(?:ac|ka))\b'),
+               re.compile(r'\bsekretar\w*\s+partijske\s+ćelije\b(?P<cell>)')]
+# another membership joined on to the one before: ", a KPJ od 1944", " i KPJ", ". KPJ od 1940"
+MEMBER_MORE_RE = re.compile(rf'^(?:,?\s*a\s+(?:i\s+)?(?:član\w*\s+)?|\s+i\s+(?:član\w*\s+)?|\.\s+|,\s+){_ORG}')
+# the year it began, in the same clause: "od 1941", "od decembra 1943", "početkom 1945", "1941."
+MEMBER_YEAR_RE = re.compile(r'^(?:-?[aue])?\s*(?:od\s+|iz\s+)?(?:(?:početkom|krajem|sredinom|polovinom|jeseni|jesen|proljeća|'
+                            r'proleća|leta|ljeta|u)\s+)?(?:\d{1,2}\.\s*(?:\d{1,2}\.|[IVX]{1,4}\.?)?\s*)?(?:[a-zčćžšđ]+\s+)?'
+                            r'(?P<y>1[89]\d\d)\b')
+# not a member: a candidate, one expelled, a sympathizer, or a relative's membership ("brat Radisav, član KPJ")
+MEMBER_NOT_RE = re.compile(r'\b(?:kandidat\w*|predlo[žz]en\w*|nije|isključ\w*|simpatiz\w*|saradni\w*)\b', re.I)
+# (not "medicinska sestra", a nurse, nor the village Žena Glava on Vis)
+MEMBER_KIN_RE = re.compile(r'\b(?:[Bb]rat|(?<!medicinska\s)[Ss]estra|[Oo]tac|[Mm]ajka|[Mm]už|[Ss]uprug|[Ss]upruga|[Žž]ena(?!\s+Glava)|'
+                           r'[Ss]in|[Kk]ći|[Kk]ćerka|[Dd]jed|[Dd]eda|[Ss]tric|[Uu]jak)\b')
+
+
+def read_party(text: str) -> dict:
+    """{'SKOJ': '1941', 'KPJ': ''}: the memberships an entry gives, with the year each began where it says"""
+    out = {}
+
+    def org_of(m):
+        o = m.group('org') if 'org' in m.groupdict() and m.group('org') else ''
+        if m.groupdict().get('skojevac'):
+            return 'SKOJ'
+        if m.groupdict().get('cell') is not None and not o:
+            return 'KPJ'
+        return 'SKOJ' if o.upper().startswith('SKOJ') else ('KPJ' if o in ('KP', 'Partije', 'Partiji', 'Partiju', 'partije',
+                                                                           'partiji', 'partiju') else o)
+
+    def add(org, rest):
+        y = MEMBER_YEAR_RE.match(rest)
+        year = y.group('y') if y else ''
+        if year and not 1900 <= int(year) <= 1945:
+            return False                    # a membership after the war ("član KPJ od 1948") is no wartime one
+        if org not in out or (year and not out[org]):
+            out[org] = year
+        return True
+
+    for m in sorted((m for rx in MEMBER_RES for m in rx.finditer(text)), key=lambda m: m.start()):
+        sentence = re.split(rf'(?<=[\w)])\.\s(?=[{U}]|$)|;', text[max(0, m.start() - 120):m.start()])[-1]
+        if MEMBER_NOT_RE.search(re.split(r'[.;,]', sentence)[-1]) or MEMBER_KIN_RE.search(sentence):
+            continue
+        org = org_of(m)
+        if not org or not add(org, text[m.end():m.end() + 30]):
+            continue
+        # memberships joined on: ", a KPJ od 1944", " i KPJ"
+        at = m.end()
+        y = MEMBER_YEAR_RE.match(text[at:at + 30])
+        at = at + (y.end() if y else 0)
+        while True:
+            more = MEMBER_MORE_RE.match(text[at:at + 40])
+            if not more:
+                break
+            o = more.group('org')
+            o = 'SKOJ' if o.upper().startswith('SKOJ') else ('KPJ' if o in ('KP',) or o.lower().startswith('partij') else o)
+            add(o, text[at + more.end():at + more.end() + 30])
+            y = MEMBER_YEAR_RE.match(text[at + more.end():at + more.end() + 30])
+            at = at + more.end() + (y.end() if y else 0)
+    return out
+
+
+def party_value(orgs: dict) -> str:
+    """'SKOJ 1941, KPJ 1944': SKOJ first, each with the year it began where the entries say"""
+    order = sorted(orgs, key=lambda o: (o != 'SKOJ', o))
+    return ', '.join(f'{o} {orgs[o]}'.strip() for o in order)
+
+
 def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
-    got, village = {}, ''
+    got, village, orgs = {}, '', {}
     # another unit's entries: its own fields; a book across units (a hero's portrait): read by no rule here
     entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
     for e in entries:
@@ -1400,6 +1476,9 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
             continue                # the 1964 census: build_ostali_borci.py sets its fields from the entry's own
         if PARTIZANKE in (e.get('source_url') or ''):
             info = her_own_deaths(info)
+        for org, year in read_party(info).items():            # each book's memberships together
+            if org not in orgs or (year and not orgs[org]):
+                orgs[org] = year
         sutjeska = (e.get('pdf_file') or '').startswith('borci-sutjeske')          # the duty at the battle comes first
         fields = ex.extract(info, code, duty_first=sutjeska, read=not parser_set(code, e))
         from_heading = fields.pop('_heading', False)
@@ -1420,6 +1499,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
                 got.setdefault('unit_detail', head.group(1).strip())
     if village and not got.get('birth_place'):
         got['birth_place'] = village
+    if orgs:
+        got['party'] = party_value(orgs)
     if got.get('death_place'):
         got['death_place'] = fix_place(got['death_place'])
     if got.get('birth_place'):

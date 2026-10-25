@@ -4,7 +4,7 @@ import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isPoreklo, partyOf, sourceTitle, unitByName } from '@/app/lib/records'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
@@ -216,6 +216,11 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
       value: [soldier.unit_detail, soldier.rank].filter(Boolean).join(', '),
       link: comrades.unit ? { text: t.life.comrades(comrades.unit.size), open: () => openKin('comrades', 'unit') } : undefined,
     })
+  }
+  // "Član: SKOJ-a od 1942, KPJ od 1944"
+  const party = partyOf(soldier)
+  if (party.length) {
+    facts.push({ key: 'party', label: t.life.member(woman), value: t.life.party(party) })
   }
   // a death the record gives without a date or a place still shows ("Umro", a survivor who has died since)
   if (soldier.death_date || soldier.death_place || soldier.death_type) {

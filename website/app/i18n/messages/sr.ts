@@ -138,6 +138,10 @@ export const sr = {
     born: (woman: boolean): string => (woman ? 'Rođena' : 'Rođen'),
     skoj: 'Član SKOJ-a',
     kpj: 'Član KPJ',
+    /** the membership under the unit in the record: "Član: SKOJ-a od 1942, KPJ od 1944" */
+    member: (woman: boolean): string => (woman ? 'Članica' : 'Član'),
+    party: (items: [string, string][]): string =>
+      items.map(([org, year]) => (org === 'SKOJ' ? 'SKOJ-a' : org) + (year ? ` od ${year}` : '')).join(', '),
     nob: 'U NOB',
     /** came to the unit: a brigade, division, detachment (odred) or another unit */
     unit: (kind: string): string => ({ brigade: 'U brigadi', division: 'U diviziji', detachment: 'U odredu' } as Record<string, string>)[kind] ?? 'U jedinici',

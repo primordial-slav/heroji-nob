@@ -52,6 +52,7 @@ export interface Soldier {
   death_date?: string
   death_place?: string
   death_type?: string     // e.g. "poginuo", "umro"
+  party?: string          // membership of SKOJ and the party, with the year each began: "SKOJ 1941, KPJ 1944"
   // PDF source position metadata (optional - may not be available for all records)
   pdf_page?: number       // 1-indexed page number in the source PDF
   pdf_y?: number          // Y of the entry's first line, in PDF points from page top

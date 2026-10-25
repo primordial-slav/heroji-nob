@@ -137,6 +137,10 @@ export const mk: Messages = {
     born: (woman: boolean) => (woman ? 'Родена' : 'Роден'),
     skoj: 'Член на СКОЈ',
     kpj: 'Член на КПЈ',
+    member: (woman: boolean) => (woman ? 'Членка' : 'Член'),
+    party: (items: [string, string][]) =>
+      items.map(([org, year]) => (({ SKOJ: 'СКОЈ', KPJ: 'КПЈ', KPH: 'КПХ', KPS: 'КПС' } as Record<string, string>)[org] ?? org) +
+        (year ? ` од ${year}` : '')).join(', '),
     nob: 'Во НОБ',
     unit: (kind: string) => ({ brigade: 'Во бригадата', division: 'Во дивизијата', detachment: 'Во одредот' } as Record<string, string>)[kind] ?? 'Во единицата',
     duty: 'Должност',

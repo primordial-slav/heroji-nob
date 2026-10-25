@@ -132,6 +132,12 @@ export const en: Messages = {
     born: () => 'Born',
     skoj: 'Joined the Young Communists (SKOJ)',
     kpj: 'Joined the Communist Party',
+    member: () => 'Member',
+    party: (items: [string, string][]) =>
+      items.map(([org, year]) => (({
+        SKOJ: 'the Young Communists (SKOJ)', KPJ: 'the Communist Party (KPJ)',
+        KPH: 'the Communist Party of Croatia (KPH)', KPS: 'the Communist Party of Slovenia (KPS)',
+      } as Record<string, string>)[org] ?? org) + (year ? ` from ${year}` : '')).join(', '),
     nob: 'Joined the Partisans',
     unit: (kind: string) => ({ brigade: 'Joined the brigade', division: 'Joined the division', detachment: 'Joined the detachment' } as Record<string, string>)[kind] ?? 'Joined the unit',
     duty: 'Duty',
