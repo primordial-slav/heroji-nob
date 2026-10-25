@@ -338,6 +338,30 @@ def place_words(clause: str) -> str:
     c = ON_KIND_RE.sub(r'\1 ', c)
     c = re.sub(rf'\s*\(([{U}][^()]*)\)', r', \1', c)
     return clean_segment(re.sub(r'\s+', ' ', c))
+
+
+# what follows a place of death that is no place, from where the bio ran on (2026-10-25): the unit ("Sutjeska, u
+# sastavu Centralne bolnice", "Grahovo, u Desetoj crnogorskoj udarnoj brigadi", "Dubci, Omiš, u Mosorskom PO"), a
+# duty ("Suvaja, Bosanska Krupa, politički delegat voda"), "narodni heroj", a month or a year ("Knin, novembra"),
+# "sahranjen ...", "kao ...", "u činu ...", "bio ...", "u patroli"
+DEATH_TAIL_RE = re.compile(
+    r'^(?:u\s+sastavu\b|(?:u|iz)\s+(?:\S+\s+){0,4}?(?:brigad\w*|odred\w*|bataljon\w*|čet[aiu]|divizij\w*|korpus\w*|PO|NOPO|'
+    r'eskadron\w*|bolnic\w*)\b|(?:politički\s+)?delegat\b|komandir|komandant|komesar|zam[j]?enik|pomoćnik|borac\b|desetar|'
+    r'vodnik|kurir|bolničar|intendant|narodni\s+heroj|kao\s|u\s+činu|bio\s|bila\s|u\s+patroli|u\s+povratku|sahranjen|'
+    r'pokopan|ostao\s|nije\s|od\s+(?:rana|tifusa|posledica|posljedica|mine|granate|bombe|metka)|(?:' + MONTHS + r')\b|\d)', re.I)
+
+
+def tidy_death_place(value: str) -> str:
+    """A place of death without what the bio ran on with after it (DEATH_TAIL_RE): each part from the first that is no
+    place is cut, the place itself stays; a value that is nothing but such words is left as it is"""
+    parts = [p.strip() for p in value.split(',')]
+    if re.search(r'\d|brig|div\b|diviz|odred', parts[0], re.I):
+        return value                    # the census's column holding a unit ("21.brigada,3.korpus"): no place to keep
+    for i, p in enumerate(parts[1:], 1):
+        if DEATH_TAIL_RE.match(p):
+            kept = ', '.join(q for q in parts[:i] if q).strip(' ,.')
+            return kept or value
+    return value
 # the next soldier's entry glued into a bio: a sentence that starts with a surname in capitals (the scan may garble
 # its first letters: "iRCEGOVIĆ", "miMUNOVIĆ"); not an abbreviation such as "NOB" or "KPJ"
 GLUED_RE = re.compile(r'[.;]\s+\S{0,2}(?!(?:NOB|NOV|NOVJ|NOR|NOO|NOP|KPJ|SKOJ|SSSR|JNA|BiH|SAD|SFRJ|SUBNOR|KNOJ|OZNA|UDB|AVNOJ|'
@@ -1502,7 +1526,7 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     if orgs:
         got['party'] = party_value(orgs)
     if got.get('death_place'):
-        got['death_place'] = fix_place(got['death_place'])
+        got['death_place'] = tidy_death_place(fix_place(got['death_place']))
     if got.get('birth_place'):
         got['birth_place'] = clean_birthplace(got['birth_place'])
         if not got['birth_place']:

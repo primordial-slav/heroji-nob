@@ -682,6 +682,18 @@ def main():
             moved = resolved_places.apply(json_path.name, soldiers, MANUAL_FIELDS)
             if moved:
                 print(f"    Places put in the nominative: {', '.join(f'{k} {n}' for k, n in moved.items())}")
+            # a place of death without the bio's words run on after it ("Sutjeska, u sastavu Centralne bolnice"); values
+            # corrections set stay
+            tidied = 0
+            for s in soldiers:
+                v = s.get('death_place')
+                if v and 'death_place' not in MANUAL_FIELDS.get(s.get('soldier_id'), ()):
+                    new = structured.tidy_death_place(v)
+                    if new != v:
+                        s['death_place'] = new
+                        tidied += 1
+            if tidied:
+                print(f"    Places of death tidied: {tidied}")
 
         # units.ts follows the file, also when a re-parse (not a correction) changed its size
         count_updates[brigade_code] = new_count

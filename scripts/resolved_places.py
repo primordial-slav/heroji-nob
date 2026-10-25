@@ -63,17 +63,22 @@ def case_forms() -> dict:
     return {'forms': t['forms'], 'bare': set(t['bare'])}
 
 
-def case_nominative(text: str) -> str | None:
+def case_nominative(text: str, s: dict | None = None) -> str | None:
     """'na Sutjesci' -> 'Sutjeska', 'u s. Bazje, Šid' -> 'Bazje, Šid', the census's 'Pločama' -> 'Ploče' (a bare
-    form only where the table says it can only be a case); None where the table has nothing"""
+    form where the table says it can only be a case, or where the record's entry prints "u" before it: a birthplace
+    "Ripnju, Beograd" of "rođen 1923. u Ripnju - Beograd"); None where the table has nothing"""
     first, sep, rest = (text or '').partition(',')
     first = first.strip()
     m = CASE_LEAD.match(first)
     form = first[m.end():].strip()
     t = case_forms()
     new = t['forms'].get(form)
-    if new is None or not (m.group(1) or m.group(2) or form in t['bare']):
+    if new is None:
         return None
+    if not (m.group(1) or m.group(2) or form in t['bare']):
+        printed = re.compile(rf'(?<![\w])(?:u|na|v)\s+(?:s\.\s*|selu\s+)?{re.escape(form)}(?![\w])')
+        if s is None or not any(printed.search(x) for x in _texts(s)):
+            return None
     return new + sep + rest
 
 
@@ -120,7 +125,7 @@ def apply(unit_file: str, soldiers: list[dict], manual: dict | None = None) -> C
         for field in FIELDS:
             if field in kept or not s.get(field):
                 continue
-            new = nominative(unit_file, field, s) or case_nominative(s[field])
+            new = nominative(unit_file, field, s) or case_nominative(s[field], s)
             if new and new != s[field]:
                 s[field] = new
                 done[field] += 1
