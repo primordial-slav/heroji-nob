@@ -15,13 +15,38 @@ import type { Soldier } from './types'
 // list at once, without loading and reading it again.
 
 // The search list is about 40 MB, and Vercel refuses a prerendered response over 19 MB, so it comes in parts of
-// whole units, up to INDEX_PART_SOLDIERS soldiers each: about 5 MB, and 15 MB even for the wordiest books
-const INDEX_PART_SOLDIERS = 30000
-/** The units of each part of the search list, in the order of `units` */
-export const SEARCH_INDEX_PARTS: Unit[][] = units.reduce<Unit[][]>((parts, unit) => {
+// whole units, up to INDEX_PART_SOLDIERS soldiers each: about 5 MB, and 15 MB even for the wordiest books. A unit
+// larger than that (Ostali borci, the census's Srbija) is cut in slices of its rows, a part each (2026-10-25: Ostali
+// borci's one part had reached 17.2 MB); its unit page's list comes in the same slices (listParts).
+export const INDEX_PART_SOLDIERS = 30000
+/** Rows start to end of a unit's data file (end left out: to the end) */
+export interface IndexSlice {
+  unit: Unit
+  start: number
+  end?: number
+}
+/** A unit's slices: one for a unit that fits a part */
+export function unitSlices(unit: Unit): IndexSlice[] {
+  if (unit.soldierCount <= INDEX_PART_SOLDIERS) return [{ unit, start: 0 }]
+  const slices: IndexSlice[] = []
+  for (let start = 0; start < unit.soldierCount; start += INDEX_PART_SOLDIERS) {
+    const end = start + INDEX_PART_SOLDIERS
+    slices.push(end >= unit.soldierCount ? { unit, start } : { unit, start, end })
+  }
+  return slices
+}
+const sliceSize = (s: IndexSlice) => (s.end ?? s.unit.soldierCount) - s.start
+/** The slices of each part of the search list, in the order of `units`: whole units together, a large unit's slices
+ * a part each */
+export const SEARCH_INDEX_PARTS: IndexSlice[][] = units.reduce<IndexSlice[][]>((parts, unit) => {
+  const slices = unitSlices(unit)
   const last = parts[parts.length - 1]
-  if (last && last.reduce((n, u) => n + u.soldierCount, 0) + unit.soldierCount <= INDEX_PART_SOLDIERS) last.push(unit)
-  else parts.push([unit])
+  const whole = (part: IndexSlice[]) => part.every((s) => s.start === 0 && s.end === undefined)
+  if (slices.length === 1 && last && whole(last) && last.reduce((n, s) => n + sliceSize(s), 0) + unit.soldierCount <= INDEX_PART_SOLDIERS) {
+    last.push(slices[0])
+  } else {
+    slices.forEach((s) => parts.push([s]))
+  }
   return parts
 }, [])
 export const searchIndexPath = (part: number) => `/search-index/${part}`
@@ -125,7 +150,9 @@ export function eachListedOnce(lists: Soldier[][], each: (soldier: Soldier, also
 }
 
 export const recordsPath = (unitId: string, part: number) => `/records/${unitId}/${part}`
-export const listPath = (unit: Unit) => `/lists/${unit.id}`
+/** A unit page's list in its parts (the search list's slices of the unit): /lists/<unit id>/<part> */
+export const listParts = (unit: Unit) => unitSlices(unit).length
+export const listPath = (unit: Unit, part: number) => `/lists/${unit.id}/${part}`
 const pad = (n: number) => String(n).padStart(2, '0')
 /** A day of the year as the on-this-day lists are named: "10-01" */
 export const dayKey = (month: number, day: number) => `${pad(month)}-${pad(day)}`
@@ -175,7 +202,9 @@ let homeLoad: Promise<HomeLists> | null = null
 export function loadHomeLists(): Promise<HomeLists> {
   homeLoad ??= Promise.all(SEARCH_INDEX_PARTS.map((_, part) => fetchJson<SearchIndex>(searchIndexPath(part))))
     .then((parts) => {
-      const index: SearchIndex = Object.assign({}, ...parts)
+      // a large unit's slices come in parts of their own, in order: joined again
+      const index: SearchIndex = {}
+      for (const part of parts) for (const [file, rows] of Object.entries(part)) index[file] = (index[file] ?? []).concat(rows)
       const lists = units.map((unit) => keepList(unit, index[unit.dataFile] ?? []))
       homeLists = { byUnit: new Map(units.map((unit, i) => [unit.name, lists[i]])), listed: listOnce(lists) }
       return homeLists
@@ -196,8 +225,8 @@ export function loadUnitList(unit: Unit): Promise<Soldier[]> {
   if (loaded) return Promise.resolve(loaded)
   let load = unitLoads.get(unit.id)
   if (!load) {
-    load = fetchJson<IndexRow[]>(listPath(unit))
-      .then((rows) => keepList(unit, rows))
+    load = Promise.all(Array.from({ length: listParts(unit) }, (_, part) => fetchJson<IndexRow[]>(listPath(unit, part))))
+      .then((parts) => keepList(unit, parts.flat()))
       .catch((error) => {
         unitLoads.delete(unit.id)
         throw error
