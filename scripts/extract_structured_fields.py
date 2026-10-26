@@ -406,7 +406,7 @@ RANK_RE = re.compile(r'(?<![\w-])(' + '|'.join(RANK_PATTERNS) + r')(?![\w-])', r
 # A sub-unit named without a number is no place either: "Jurišna četa", "PK baterija", "Bat. pri diviziji",
 # "Zamjenik (pomoćnik) komesara bataljona"
 UNIT_WORD_RE = re.compile(r'\bčet[aeiu]\b|bataljon|\bbat\.|baterij', re.I)
-UNIT_RE = re.compile(r'(?<![\w.])(\d{1,2}\.|[IVX]{1,4}\.?)\s?(četa|čete|četi|č\.?|bataljon|bataljona|bataljonu|bat\.?|desetina|desetine|vod|voda|vodu)'
+UNIT_RE = re.compile(r'(?<![\w.])(\d{1,2}\.|[IVX]{1,4}\.?)\s?(četa|čete|četi|č\.?|bataljon|bataljona|bataljonu|batalj\.?|bat\.?|desetina|desetine|vod|voda|vodu)'
                      r'(?![\w])', re.I)
 SPECIAL_UNITS = [
     (re.compile(r'\b(\d\.\s?(?:kordunaški|makedonski|slovenački|slovenski|ličk[i]|dalmatinski|udarni|omladinski))\s+bataljon', re.I), '{} bataljon'),
@@ -420,6 +420,28 @@ SPECIAL_UNITS = [
     (re.compile(r'\b(protivtenkovsk|protivavionsk|artiljerijsk)(?:a|e|oj)\s+baterij[aei]\b', re.I), '{}a baterija'),
     (re.compile(r'\bintendantur(?:a|e|i)\b', re.I), 'intendantura'),
 ]
+
+# Divisions whose roll names each man's brigade with his battalion ("borac 4. čete 2. bataljona 19. srpske brigade",
+# "1. četa 3. bat. 14. brig.", "Tešanj, 18. brigada"): in a division a battalion means nothing without its brigade,
+# which joins the sub-unit ("4. četa, 2. bataljon, 19. srpska brigada"; the user's report of 2026-10-26: "U diviziji:
+# 1. bataljon"). The other divisions' parsers give the brigade themselves (32., 34., 8., 51.).
+BRIGADE_IN_UNIT = {19, 33}
+BRIGADE_NAMED_RE = re.compile(rf'(?<![\w.])(\d{{1,2}})\.\s*((?:[{L}-]+\s+){{0,2}}?)(?:NOU\s+)?brig(?:ad[aeiu]|\.)?(?![{L}])')
+
+
+def brigade_named(text: str) -> str:
+    """The first numbered brigade the entry names, in the nominative: "19. srpske brigade" is 19. srpska brigada"""
+    m = BRIGADE_NAMED_RE.search(text)
+    if not m:
+        return ''
+    words = []
+    for w in m.group(2).split():
+        w = re.sub(r'^erpsk', 'srpsk', w.strip('-').lower())          # the scan's "erpske", "srpsks"
+        w = re.sub(r'sks$', 'ske', w)
+        if len(w) < 2:
+            continue                                                  # a stray letter: "19. srpske b brigade"
+        words.append(re.sub(r'(sk|čk|šk|ck|n)(?:e|oj|u|a)$', r'\1a', w))
+    return ' '.join([f'{m.group(1)}.'] + words + ['brigada'])
 
 # the soldier's duty printed after where he fell, to the end (8. krajiška ends every bio so); all lowercase,
 # so a name glued on after it (5. kozaračka, 21. slavonska) keeps the clause from passing for a place
@@ -1191,7 +1213,7 @@ class Extractor:
         found = {}
         for m in UNIT_RE.finditer(t):
             num, kind = m.group(1), m.group(2).lower().rstrip('.')
-            kind = {'č': 'četa', 'čete': 'četa', 'četi': 'četa', 'bat': 'bataljon', 'bataljona': 'bataljon', 'bataljonu': 'bataljon',
+            kind = {'č': 'četa', 'čete': 'četa', 'četi': 'četa', 'bat': 'bataljon', 'batalj': 'bataljon', 'bataljona': 'bataljon', 'bataljonu': 'bataljon',
                     'desetine': 'desetina', 'voda': 'vod', 'vodu': 'vod'}.get(kind, kind)
             if kind in found or kind in seen:
                 continue
@@ -1308,6 +1330,8 @@ class Extractor:
         if rank:
             out['rank'] = rank
         unit = self.unit(text)
+        if code in BRIGADE_IN_UNIT and 'brigad' not in unit.lower():
+            unit = ', '.join(p for p in (unit, brigade_named(text)) if p)
         if unit:
             out['unit_detail'] = unit
         return {k: v for k, v in out.items() if v}
