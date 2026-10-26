@@ -6,7 +6,8 @@ Soldiers' own photographs, for the record popup and the memorial card. Only cert
   record on more than the name (unit, duty, place or date of death, birthplace), each checked by hand;
 - from the units' own books on znaci.org (UNIT_BOOKS): a photo of one person whose printed caption names a soldier
   whose name is the only one of its kind in the unit, and agrees with the record or the book's text on more than the
-  name, each checked by hand;
+  name, each checked by hand; PAGE_BOOKS the same, cut from the page where the book stores a photo as strips or prints
+  several side by side (one man of a group only where the caption says which);
 - from Wikimedia Commons (COMMONS): the lead photo of a narodni heroj's Wikipedia article (sh or sr), where the
   article agrees with our record on the birth year or birthplace, the file is public domain or under a free license
   (CC0, CC BY-SA: credited with the license and the author where known), and it shows that one person in a photograph
@@ -148,6 +149,23 @@ BOOK_TITLES = {
     '00003/783': 'Edvin Pervanje, Jože A. Hočevar, Četrta prekomorska brigada',
     '00003/499': 'Beogradski bataljon',
     '00003/493': 'Prvi crnogorski bataljon Prve proleterske NOU brigade – zbornik sjećanja',
+    '00001/148': 'Blažo Janković, Četvrta proleterska crnogorska brigada',
+    '00001/185': 'Milutin Milković, Prva kosovsko-metohijska proleterska brigada',
+    '00001/190': 'Stanko Obradović, Antun Miletić, 4. NOU brigada Slavonije (Druga brodska brigada)',
+    '00001/251': 'Osamnaesta hrvatska istočnobosanska brigada (grupa autora)',
+    '00001/252': 'Živan M. Ninković, Šesta vojvođanska udarna brigada',
+    '00001/270': 'Mensur Seferović, Trinaesta hercegovačka NOU brigada',
+    '00001/271': 'Čedo Drulović, Četvrta sandžačka NOU brigada',
+    '00001/70': 'Radovan Panić, Treća vojvođanska NOU brigada',
+    '00001/81': 'Nikola Mraović, Peta vojvođanska brigada',
+    '00002/427': 'Nikola Božić, Batinska bitka',
+    '00003/544': 'Vladimir-Dušan Matetić, 14. primorsko-goranska brigada',
+    '00003/546': 'Josip Lulik Pepo, Đuro Zatezalo, Karlovačka udarna brigada',
+    '00003/579': 'Stevo Samardžija, 14. srednjobosanska NOU brigada',
+    '00003/652': 'Kažimir Pribilović, Četvrti pomorski obalni sektor Mornarice NOVJ',
+    '00003/767': 'Lado Ambrožič-Novljan, Cankarjeva brigada',
+    '00003/775': 'Mirko Fajdiga, Bračičeva brigada',
+    '00003/814': 'Lado Ambrožič-Novljan, Dvanajsta brigada',
 }
 
 UNIT_BOOKS = [
@@ -454,6 +472,90 @@ UNIT_BOOKS = [
     ('0001013427', '00003/493.pdf', 695, 3595, None, 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Vujošević Vučića Dušan, born 1912 in Ivangradu (entry and record agree on the birth year and father and village)'),
     ('0002000623', '00001/137_5.pdf', 18, 95, None, '"Antun Borić Tona", the record\'s zvani Tona (the book\'s own roster)'),
     ('0002002166', '00001/137_10.pdf', 16, 111, None, '"Bogdan Gašeća, referent saniteta 3. bataljona"; the record: referent saniteta, 3. kordunaški bataljon'),
+    # "Narodni heroji Gradnikove brigade" (Petelin, book pp. 794-799): a portrait beside each hero's biography
+    ('0064000657', '00003/825.pdf', 794, 4183, None, 'narodni heroj of the brigade, the portrait beside the biography: DRAGO FLIS-STRELA (the record: zvani Strela)'),
+    ('0064001659', '00003/825.pdf', 795, 4188, None, 'narodni heroj of the brigade, the portrait beside the biography: IVAN LIKAR-SOČAN (the record: zvani Sočan)'),
+    ('0064001927', '00003/825.pdf', 795, 4189, None, 'narodni heroj of the brigade, the portrait beside the biography: JOŽE MIHEVC-RUDAR (the record: zvani Rudar)'),
+    ('0064002015', '00003/825.pdf', 796, 4194, None, 'narodni heroj of the brigade, the portrait beside the biography: CVETO MOČNIK-FLORJAN (the record: zvani Florjan)'),
+    ('0141000419', '00003/825.pdf', 796, 4194, None, "narodni heroj of the brigade, the portrait beside the biography: CVETO MOČNIK-FLORJAN: the Šercerjeva's Močnik Cveto zvani Florjan, who holds the XXXI. divizija's entry of the same post"),
+    ('0064010019', '00003/825.pdf', 796, 4195, None, 'narodni heroj of the brigade, the portrait beside the biography: DRAGO MASLO (the record holds the biography)'),
+    ('0064001840', '00003/825.pdf', 796, 4195, None, "narodni heroj of the brigade, the portrait beside the biography: DRAGO MASLO: the roster's Maslo Karlo zvani Drago, born 1912 at Ostrožno brdo, as the biography"),
+    ('0067000726', '00003/825.pdf', 796, 4195, None, "narodni heroj of the brigade, the portrait beside the biography: DRAGO MASLO: the Istrski odred's Maslo Karlo, its komandant from 27. 12. 1943 (zvani Drago), born 1912 at Ostrožno brdo"),
+    ('0064010022', '00003/825.pdf', 797, 4200, None, 'narodni heroj of the brigade, the portrait beside the biography: DUŠAN MUNIH-DARKO (the record holds the biography)'),
+    ('0064002438', '00003/825.pdf', 797, 4201, None, 'narodni heroj of the brigade, the portrait beside the biography: FRANC POKOVEC-POKI (the record: zvani Poki)'),
+    ('0064003449', '00003/825.pdf', 798, 4206, None, 'narodni heroj of the brigade, the portrait beside the biography: MIHAELA ŠKAPIN-DRINA (the record: zvana Drina)'),
+    ('0064002897', '00003/825.pdf', 798, 4207, None, 'narodni heroj of the brigade, the portrait beside the biography: FRANC TAVČAR-ROK (the record: zvani Rok)'),
+    ('0070001315', '00003/825.pdf', 798, 4207, None, "narodni heroj of the brigade, the portrait beside the biography: FRANC TAVČAR-ROK: the Tomšičeva's Tavčar Franc zvani Rok, born 1920, who holds the same Moste-Polje and XXXI. divizija entries"),
+    ('0064003055', '00003/825.pdf', 799, 4212, None, 'narodni heroj of the brigade, the portrait beside the biography: JANEZ UČAKAR (the record holds the biography)'),
+]
+
+PAGE_BOOKS = [
+    # As UNIT_BOOKS, where the book stores one photo as several strips or prints several side by side: the photo is cut
+    # from the page itself. Soldier, the unit's own book on znaci.org, its PDF page, the photo's box on the page (a part of
+    # a group where the caption says which man: "(desno)", "s desna", "prvi sa desna"), the caption printed with it.
+    ('0093000210', '00001/280_12.pdf', 34, (240.8, 36.6, 357.4, 197.9), 'DRAGOLJUB RADOSAVLJEVIĆ TO- PJ1ICA, rođen 1919. godine u Prokup- lju, metalski radnik. Pripadao je na- prednom…'),
+    ('0093000015', '00001/280_12.pdf', 35, (95.9, 341.8, 213.6, 504.2), 'JELISAVETA ANDREJEVIĆ ANE- TA-MILENA, rođena 1923. godine u Beogradu, radnica. U SKOJ-u od 1940. godine. Stupi…'),
+    ('0040001272', '00001/148_11.pdf', 19, (200.4, 61.3, 353.2, 230.0), 'Simo Simonović, komandir Prateće čete brigade, poginuo avgusta 1944. prilikom prelaska Ibra.'),
+    ('0106000190', '00003/537.pdf', 852, (134.3, 151.7, 291.2, 350.4), 'Milutin Vasović, komesar čete naših ranjenika u Italiji, poginuo od podmetnute bomba 1945. u jednom bioskopu u…'),
+    ('0094010004', '00003/546.pdf', 82, (303.3, 372.6, 484.7, 669.3), 'Boris Balaš, komandant Karlovačke udarne brigade od 8. 7. 1944. do 10. 4. 1945. i od 26. 4. 1945. do oslobođen…'),
+    ('0094000921', '00003/546.pdf', 276, (308.9, 156.8, 501.4, 437.2), 'lelno s cestom na udaljenju 150—200 metara, sa zadatkom da izbije što bliže s. Luka, a potom s prostorije Zavi…'),
+    ('0106000104', '00003/537.pdf', 835, (128.6, 396.0, 294.8, 610.6), 'Tomaš Miličić, komandir 3. čete 4. bataljona, poginuo 25. I 1945. kod Goražda | Komanda 1. čet1 4. paga.nopa. …'),
+    ('0058000377', '00003/558.pdf', 408, (108.0, 400.3, 280.8, 686.2), 'Ljubomir Crnkovič, operativni oficir Udarnog bataljona "Matija Gubec". Ranije Odredu bio vodnik voda i komandi…'),
+    ('0054003145', '00001/168_1.pdf', 25, (31.5, 278.7, 210.1, 550.2), 'Janko Toljagić, zam. pol. komesara čete u 2. bataljonu, poginuo 30. 8. 1944. kod Vlasenice.'),
+    ('0054002869', '00001/168_2.pdf', 43, (241.4, 122.6, 390.0, 349.4), 'Mirko Srdić, pol. komesar čete u 3. bat., poginuo maja 1945. kod Bjelovara.'),
+    ('0093000243', '00001/280_11.pdf', 4, (60.7, 207.9, 179.5, 359.8), 'P^čodije Stojanović Tatko, politički komesar od septembra 1941. do februara 1942. g. Poginuo 13. avgusta 1942.…'),
+    ('0106000124', '00003/537.pdf', 812, (219.0, 417.6, 378.8, 625.2), 'Todor Nedić, komesar 1. čete 1. bataljona, poginuo u Lekovini 12. decembra 1943. | Komesar 3. bataljona Đoko K…'),
+    ('0094000535', '00003/546.pdf', 82, (302.6, 137.9, 482.8, 341.2), 'Franjo Molek, komandant Karlovačke brigade od 5. 3. do 30. 6. 1944. Umro 2. 7. 1944. od zadobivenih rana.'),
+    ('0056001531', '00003/579.pdf', 365, (407.5, 157.7, 507.0, 390.3), 'Ljuboje Panić (prvi sa desna), komandir čete iz 1. bataljona, poginuo januara 1944, naRudanci. Dvije drugarice…'),
+    ('0055000597', '00001/274_7.pdf', 43, (181.7, 163.0, 335.9, 357.0), 'Petrović Svetislav »Piki« Milosavljević Ljuba, komandir komesar čete, zatim bataljona čete u 17. brigadi briga…'),
+    ('0054000504', '00001/168_1.pdf', 20, (225.0, 15.0, 406.0, 232.0), 'Milan Egić, nar. heroj, k-dant 1. b., pog. na Viševicama 24. 8. 1943.'),
+    ('0052000339', '00001/251_3.pdf', 3, (8.3, 49.9, 159.5, 287.9), 'Nakon okupacije zemlje Mirko je kao član Sreskog rukovod- stva Komunističke partije Jugoslavije u Bijeljini, b…'),
+    ('0098000686', '00001/271_4.pdf', 39, (148.0, 16.9, 291.8, 226.4), 'Radisav Zečević, intendant 1. bataljona 4. brigade sa devojkama iz s. Krće 1944.'),
+    ('0057000376', '00001/70_2.pdf', 10, (71.8, 89.1, 197.5, 270.2), 'smeštaja boraca, počivala je na pozadini. Narod je preio svojih NOO, organizacija NOP i vojno-pozadinskih usta…'),
+    ('0111011430', '00002/427.pdf', 185, (388.5, 609.1, 562.7, 829.4), 'Pomoćnik komesara ?.. bataljona 7. vojvođanske brigade Bora Vezilic ra njen u jurišu na kotu 169. Umro od zado…'),
+    ('0094000229', '00003/546.pdf', 141, (95.2, 150.6, 289.6, 484.9), 'dobrovoljnoj osnovi, uz davanje potvrde od strane Kotarskog NOO-a nad- ležnog za ovo područje. | Ivica Graho, …'),
+    ('0062001263', '00003/782.pdf', 833, (196.8, 100.8, 331.7, 293.0), 'Številčno stanje je od 9. do 27. oktobra 1944 padlo kar za 183 borcev. To so bili največ mrtvi in pogrešani iz…'),
+    ('0077000057', '00001/185_6.pdf', 24, (318.0, 514.4, 441.4, 670.3), '111 | Mirko Arsenijević - Glibo, politički komesar, narodni heroj'),
+    ('0100000805', '00001/270_4.pdf', 39, (250.8, 135.0, 450.6, 409.7), 'Sa defilea oslobodilaca Mostara, sredinom februara 1945. | Komandant Trinaeste brigade Milorad Kujačić u selu …'),
+    ('0055000599', '00001/274_7.pdf', 40, (139.1, 444.4, 287.8, 631.6), 'Petrović Živorad »Žika Bri- ca« sekretar sreskog komiteta za Pasjački srez u vreme formi- ranja i drugi po red…'),
+    ('0082002279', '00001/81_4.pdf', 157, (76.9, 53.3, 208.3, 211.7), 'Rođen je 16. maja 1920. u Boviću, Kordun, u zemljorad- ničkoj porodici. Posle osnovne škole i niže gimnazije, …'),
+    ('0106000231', '00003/537.pdf', 816, (127.5, 162.4, 293.7, 369.0), 'Dragutin Đurović, luškomitralje- zac u 2. četi 3. bataljona, ranjen 11. marta u selu Cerovo i podlegao ranama …'),
+    ('0058000816', '00003/558.pdf', 6, (220.5, 157.0, 363.5, 356.5), 'Joža Horvat, prvi komesar Katoličkoga partizanskog odreda'),
+    ('0063000163', '00003/814.pdf', 390, (210.0, 99.6, 340.3, 248.6), 'tijska organizacija si je zelo prizadevala pripraviti novince za sprejem v partijo, in jih seznaniti z delom i…'),
+    ('0054002688', '00001/168_2.pdf', 51, (192.4, 20.8, 340.4, 232.2), 'Marko Repajić, pm 1. bat., poginuo 3. I. 1944. na B. Luci'),
+    ('0129010052', '00001/190_6.pdf', 3, (310.4, 210.2, 439.0, 406.4), 'SI. 5 Komandant brigade Ni- kola Dolinić — Pitomi.'),
+    ('0129010160', '00001/190_6.pdf', 7, (311.4, 208.7, 438.5, 396.6), 'SI. 13 Komandant 1. bataljona, Uroš Marković.'),
+    ('0083010129', '00001/252_8.pdf', 36, (227.2, 338.0, 361.9, 528.0), 'VLADO OBRADOVIC KAMENI Komandant 3. bataljona od 1. maja do 2. juna 1944.'),
+    ('0095000485', '00003/544.pdf', 180, (75.0, 86.1, 181.5, 250.7), 'zaustavili su dalje nadiranje 2. i 4. bataljona 14. brigade. Na intervenciju Štaba 13. divizije bataljoni su i…'),
+    ('0056002144', '00003/579.pdf', 376, (488.4, 232.0, 561.0, 420.0), 'Ivanko Timkov. intendant brigade.'),
+    ('0056001715', '00003/579.pdf', 376, (378.8, 477.5, 561.1, 781.6), 'Milenko Radomirović. pomoćnik obavje- štajnog oficira brigade, poginuo od četnika 1947.'),
+    ('0056000513', '00003/579.pdf', 390, (307.0, 427.5, 461.8, 637.0), 'Dimitrije Grubač, jedan od starješina u | Nikola Garača. zamjenik k-đanta brigade u drugoj polovini 1944.'),
+    ('0063000200', '00003/814.pdf', 173, (166.1, 96.5, 294.7, 263.8), 'Franc Turner-Kostja, brigadni po- Lojze Colarič, politični komisar litični komisar brigade'),
+    ('0010100428', '00003/394.pdf', 9, (89.0, 105.0, 367.0, 509.0), '. NIKOLA KARANOVIC — KARAN komandant Brigade'),
+    ('0161000190', '00003/541.pdf', 158, (96.0, 125.0, 298.0, 409.0), 'LIKER FRANJO, komandir vo- da 1. čete 3. div. bataljona | FRANC VULINEC komandir 1. čete 3. diverzantskog ba- …'),
+    ('0161000252', '00003/541.pdf', 192, (115.3, 246.0, 305.4, 511.4), '6. Intendant bataljona Drago Brezak. 7. Oficir Ozne Branko Lazarus. 8. Rukovodilac Skoja Miro Trenski. 9. Zemu…'),
+    ('0056000793', '00003/579.pdf', 65, (93.0, 453.0, 268.0, 699.0), 'Kojo Jotić, jedan od organizatora ustanka za- padno od Doboja. U brigadi prvi politički | Stoje: Pero Kulundži…'),
+    ('0147000023', '00003/607.pdf', 85, (602.0, 622.0, 849.0, 972.0), 'Đuro Ban Mile, organizacioni sekretar Okružnog komiteta KPH Zagreb. | Fašistički razbojnici oduzeli su ženi sv…'),
+    ('0147000189', '00003/607.pdf', 117, (600.0, 546.0, 779.0, 806.0), 'Stevan Došen, prvi komandant Zagrebačkog partizanskog odreda poginuo 21. prosinca 1944. kao komandant brigade …'),
+    ('0147000559', '00003/607.pdf', 118, (313.0, 659.0, 495.0, 913.0), 'Milan Kuren Gubec, prvi komesar Zagrebač- kog partiznaskog odreda. | Zapaža se previranje među članovima HSS, …'),
+    ('0147000334', '00003/607.pdf', 121, (608.0, 613.0, 790.0, 874.0), 'Mirko Herak Gorski, prvi zamjenik komesara Zagrebačkog partizanskog odreda, poginuo u Oborovu 29. ožujka 1944.…'),
+    ('0147000183', '00003/607.pdf', 95, (622.9, 758.2, 803.8, 1023.7), 'Mijo Domiter Zima, prvi komesar Prigorske čete, poginuo u Lipovčanima — Moslavina 28. 3. 1944. | Za zamjenika …'),
+    ('0168010007', '00003/652_2.pdf', 54, (101.0, 125.0, 271.0, 357.0), 'St. 105- Major Franc Podboj, prvi koman- SI. 106 - Major Niko Srzić, drugi i posljed- dant IV POS-a nji komand…'),
+    ('0168001385', '00003/652_2.pdf', 54, (101.0, 424.0, 272.0, 655.0), 'SI. 107 - Josip Ilić Suro, prvi politički ko\xad mesar IV POS-a Si. 108 - Branimir Radelić, drugi politički komes…'),
+    ('0168002490', '00003/652_2.pdf', 55, (139.0, 431.0, 308.0, 662.0), 'Si. 111 - Benko Matulić posljednji politički komesar IV POS-a SI. 112 - Narodni heroj Vlado Bagat, po\xad moćnik …'),
+    ('0061002010', '00003/767.pdf', 785, (328.0, 241.0, 437.0, 397.0), 'Vekoslav Robič, politicai komisar brigade Stanko Mahne, komandant brigade'),
+    ('0069000263', '00003/775.pdf', 174, (422.8, 379.0, 531.0, 660.5), 'Lojze Dolničar (desno), pomoćnik političnega komisarja 4. in 2. bataljona, in kurir Ciril Gregor, 1945'),
+    ('0093000219', '00001/280_11.pdf', 6, (51.7, 353.6, 168.3, 504.5), 'Radoš Jovanović Selja, sekretar Poverenstva KPJ za Toplicu i partijski rukovodilac u Odredu jula 1942. g. | Mi…'),
+    ('0094000788', '00003/546.pdf', 84, (143.4, 166.3, 263.4, 336.2), 'STAB BRIGADE: komandant Franjo Molek/1 politički komesar Petar Erdeljac,5 pomoćnik političkog komesara Rafael …'),
+    ('0094010405', '00003/546.pdf', 193, (83.4, 149.9, 275.2, 486.4), 'uzimanja nove dužnosti, dok je privremeni vršilac dužnosti operativnog oficira brigade poručnik Viktor Furdek …'),
+    ('0094000416', '00003/546.pdf', 279, (99.5, 164.8, 281.2, 461.6), 'vodnika pontonirskog voda Josip Plesa, za političkog delegata pontonir- skog voda Ilija Vajagić i za političko…'),
+    ('0055000500', '00001/274_7.pdf', 41, (171.6, 160.6, 322.4, 355.4), 'Nestorović Ljubinko »Ozren«, Lazarević Radivoje, načelnik • drugi po redu komesar 17. bri- štaba 17. brigade o…'),
+    ('0055000669', '00001/274_7.pdf', 65, (329.4, 159.3, 478.8, 360.5), 'Nikolić Stojan Rančić Vukoje, prvi intendant 17. brigade'),
+    ('0086000453', '00003/477.pdf', 202, (277.2, 305.2, 360.8, 544.3), 'S desna Radosav Nikić, zamenik komandanta 4. bataljona | U oslobođenom Leskovcu, oktobar 1944. S leva: Vukman …'),
+    ('0161000374', '00003/541.pdf', 33, (269.8, 273.2, 475.8, 545.3), 'SVETLIČIĆ IVAN »ORSI«, rodom iz sela G. Šarampov kod Ivanić- Grada, radnik Hrvat, član KP, prvi diverzant u Mo…'),
+    ('0054001192', '00001/168_2.pdf', 40, (117.5, 83.1, 213.8, 250.8), 'Miloš Končar, k-dant 1. bat. (desno), kraj rata 1945.'),
+    ('0054003600', '00001/168_2.pdf', 47, (143.2, 127.1, 216.5, 352.5), 'Rade Čekić, k-dant 1. bat. (desno), sa Ljubanom Ševićem, iz 5. brigade i Desom Milić-Vasić.'),
+    ('0054001274', '00001/168_2.pdf', 51, (91.5, 53.2, 166.5, 234.6), 'Grupa automatičara brigade, SF — 1945. | Nikola Kovrlija (desno), zam. komesara 1. bat.'),
 ]
 
 
@@ -1157,13 +1259,106 @@ DALMATINCI = [
     ('0001010682', 213, (219.3, 138.2, 333.0, 265.3), 'the photo set in the entry "ROMAN Šime ROKO PIVĆEV" (its text runs above and below it); born 1913 on Žirje, "Pivčev", as the record'),
     ('0001013636', 276, (252.6, 146.6, 355.9, 272.3), 'the photo set in the entry "ZAGORAC Đure DUŠAN" (its text runs above and below it); born 1910 in Otišić (Otešić), as the record'),
     ('0001013947', 282, (116.1, 279.8, 228.8, 405.8), 'the photo set in the entry "ŽIVKOVIĆ Ignacija MARIN" (its text runs above and below it); born 1922 in Zečevo-Rogoznica (Rogoznica), as the record'),
+    # men split out of glued entries (2026-10-17), and entries whose name had several records: the record holds the entry
+    ('0001000622', 13, (90.3, 324.5, 202.6, 451.2), 'the photo set in the entry of Beara Marka Marko (its text runs above and below it; the record holds the entry)'),
+    ('0001000924', 27, (91.3, 493.4, 204.0, 620.9), 'the photo set in the entry of Bogunović Ivana Petar (its text runs above and below it; the record holds the entry)'),
+    ('0001000928', 28, (128.4, 402.8, 241.1, 523.0), 'the photo set in the entry of Bojanić Šimuna Nikola (its text runs above and below it; the record holds the entry)'),
+    ('0001001012', 30, (128.7, 461.3, 241.4, 575.1), 'the photo set in the entry of Borovina Petra Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001400120', 33, (91.6, 467.5, 205.7, 595.3), 'the photo set in the entry of Bratinić-Forean Nikole Margarita (its text runs above and below it; the record holds the entry)'),
+    ('0001101687', 42, (126.8, 323.6, 239.1, 442.7), 'the photo set in the entry of Čeko Ivana Vinko (its text runs above and below it; the record holds the entry)'),
+    ('0001002278', 55, (223.8, 365.0, 336.5, 481.6), 'the photo set in the entry of Dragičević Josipa Mijo (its text runs above and below it; the record holds the entry)'),
+    ('0001002904', 61, (358.2, 366.4, 457.2, 492.1), 'the photo set in the entry of Ercegović Stipe Josip (its text runs above and below it; the record holds the entry)'),
+    ('0001003034', 65, (93.7, 288.2, 206.4, 406.7), 'the photo set in the entry of Franin-Olić Ante Blaženka (its text runs above and below it; the record holds the entry)'),
+    ('0001403055', 77, (94.6, 444.8, 207.3, 570.4), 'the photo set in the entry of Gudelj-Zec Ivana Neda (its text runs above and below it; the record holds the entry)'),
+    ('0001400260', 77, (339.4, 277.7, 452.1, 403.4), 'the photo set in the entry of Gulin Marka Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001003566', 78, (255.0, 389.5, 369.9, 517.3), 'the photo set in the entry of Gulin Jose Dane (its text runs above and below it; the record holds the entry)'),
+    ('0001003614', 80, (372.3, 511.7, 486.8, 638.8), 'the photo set in the entry of Hajdarhodžić Avde Muharem (its text runs above and below it; the record holds the entry)'),
+    ('0001403066', 93, (98.8, 363.6, 210.7, 490.0), 'the photo set in the entry of Jurašin-Božović Ante Anka (its text runs above and below it; the record holds the entry)'),
+    ('0001004849', 95, (217.4, 276.0, 332.6, 404.1), 'the photo set in the entry of Jurković-Belamarić Jakova Milka (its text runs above and below it; the record holds the entry)'),
+    ('0001400355', 103, (223.8, 295.4, 336.5, 416.0), 'the photo set in the entry of Katić Mate Nikoprpić (its text runs above and below it; the record holds the entry)'),
+    ('0001005235', 108, (249.7, 187.0, 364.2, 314.0), 'the photo set in the entry of Kokić-Rak Ante Anka (its text runs above and below it; the record holds the entry)'),
+    ('0001400381', 109, (99.8, 420.2, 212.4, 545.8), 'the photo set in the entry of Kocić-Rak Ivana DRAGI-CAžMIRKA (its text runs above and below it; the record holds the entry)'),
+    ('0001005228', 109, (343.8, 445.2, 458.3, 570.8), 'the photo set in the entry of Kokić Krste Ive (its text runs above and below it; the record holds the entry)'),
+    ('0001005227', 109, (222.2, 300.9, 335.6, 428.0), 'the photo set in the entry of Kokić Jose Ive (its text runs above and below it; the record holds the entry)'),
+    ('0001005232', 110, (250.7, 283.0, 362.6, 408.6), 'the photo set in the entry of Kokić Krste Nikola (its text runs above and below it; the record holds the entry)'),
+    ('0001400417', 116, (372.1, 263.5, 485.2, 389.5), 'the photo set in the entry of Krilić Luke Ivaniko (its text runs above and below it; the record holds the entry)'),
+    ('0001005717', 124, (127.4, 357.3, 239.7, 477.9), 'the photo set in the entry of Kumbat Ivana Jure (its text runs above and below it; the record holds the entry)'),
+    ('0001006030', 133, (97.1, 473.5, 209.4, 591.2), 'the photo set in the entry of Letunica Laze Špiro (its text runs above and below it; the record holds the entry)'),
+    ('0001006244', 136, (128.3, 217.4, 242.4, 344.5), 'the photo set in the entry of Mačukat-Radin Martina Vilson (its text runs above and below it; the record holds the entry)'),
+    ('0001006243', 136, (251.0, 353.5, 364.4, 479.8), 'the photo set in the entry of Mačukat-Radin Ante Mate (its text runs above and below it; the record holds the entry)'),
+    ('0001006438', 138, (133.6, 361.0, 246.2, 486.6), 'the photo set in the entry of Marasović Ante Nediljko (its text runs above and below it; the record holds the entry)'),
+    ('0001007805', 156, (249.8, 337.2, 362.4, 462.8), 'the photo set in the entry of Miošić Šimuna Milan (its text runs above and below it; the record holds the entry)'),
+    ('0001400592', 159, (214.9, 283.9, 327.6, 409.9), 'the photo set in the entry of Mrdeža Ante Mijo Cr-Nogaća (its text runs above and below it; the record holds the entry)'),
+    ('0001403259', 183, (342.6, 304.3, 456.0, 430.6), 'the photo set in the entry of Petranović-Ristić Vasa Marija (its text runs above and below it; the record holds the entry)'),
+    ('0001403117', 185, (347.8, 427.7, 460.9, 553.7), 'the photo set in the entry of Putniković Konstantina Branko-Popivačev (its text runs above and below it; the record holds the entry)'),
+    ('0001400695', 194, (130.5, 283.4, 243.2, 404.4), 'the photo set in the entry of Plenča Paške Mile Pi-Cunov (its text runs above and below it; the record holds the entry)'),
+    ('0001403155', 201, (101.4, 257.2, 214.1, 382.2), 'the photo set in the entry of Radić Špira Nikola (its text runs above and below it; the record holds the entry)'),
+    ('0001400748', 204, (124.9, 381.8, 236.1, 506.0), 'the photo set in the entry of Rak Jose Benjanin Baj-Lo (its text runs above and below it; the record holds the entry)'),
+    ('0001010371', 204, (368.7, 469.7, 482.1, 595.3), 'the photo set in the entry of Rak-Masal Ive Janja (its text runs above and below it; the record holds the entry)'),
+    ('0001010359', 205, (227.2, 284.6, 341.3, 399.1), 'the photo set in the entry of Rak Stipe Jere (its text runs above and below it; the record holds the entry)'),
+    ('0001301499', 206, (368.8, 457.9, 482.2, 583.6), 'the photo set in the entry of Rak-Đorđević Ante Slavka (its text runs above and below it; the record holds the entry)'),
+    ('0001010372', 207, (227.7, 265.2, 330.3, 390.8), 'the photo set in the entry of Rak-Orlović Ante Tonka (its text runs above and below it; the record holds the entry)'),
+    ('0001010379', 208, (362.3, 274.8, 476.4, 402.2), 'the photo set in the entry of Rakić Ivana Dane (its text runs above and below it; the record holds the entry)'),
+    ('0001403275', 211, (217.6, 206.8, 330.2, 332.5), 'the photo set in the entry of Rizvan Stipe Marin (its text runs above and below it; the record holds the entry)'),
+    ('0001010741', 216, (372.6, 248.8, 485.3, 374.5), 'the photo set in the entry of Rupić Luke Marko (its text runs above and below it; the record holds the entry)'),
+    ('0001301605', 223, (345.8, 353.5, 453.0, 471.9), 'the photo set in the entry of Smajo-Bečić Marka Ankica (its text runs above and below it; the record holds the entry)'),
+    ('0001011416', 225, (222.6, 319.2, 335.0, 436.5), 'the photo set in the entry of Stanić-Šubašić Vinka Anka (its text runs above and below it; the record holds the entry)'),
+    ('0001011977', 229, (343.0, 221.0, 456.4, 347.0), 'the photo set in the entry of Sulje Ante Ive (its text runs above and below it; the record holds the entry)'),
+    ('0001012292', 231, (220.6, 370.8, 333.7, 491.8), 'the photo set in the entry of Šušak Marka Stevo (its text runs above and below it; the record holds the entry)'),
+    ('0001012049', 232, (367.3, 436.8, 480.7, 563.5), 'the photo set in the entry of Šarić Josipa Slavko (its text runs above and below it; the record holds the entry)'),
+    ('0001012144', 238, (258.2, 378.0, 363.6, 496.4), 'the photo set in the entry of Škaričić Roka Josip (its text runs above and below it; the record holds the entry)'),
+    ('0001012261', 247, (226.4, 319.9, 339.5, 444.8), 'the photo set in the entry of Šupe Jakova Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001012262', 247, (347.2, 468.7, 461.6, 596.5), 'the photo set in the entry of Šupe Marka Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001012263', 248, (128.3, 198.7, 242.4, 326.5), 'the photo set in the entry of Šupe Sime Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001101828', 249, (223.3, 290.9, 335.6, 416.5), 'the photo set in the entry of Šupe Ante Joso (its text runs above and below it; the record holds the entry)'),
+    ('0001012270', 249, (345.7, 428.2, 458.4, 541.6), 'the photo set in the entry of Šupe Tome Joso (its text runs above and below it; the record holds the entry)'),
+    ('0001012280', 252, (370.6, 277.7, 483.7, 400.1), 'the photo set in the entry of Šupe-Bekavac Lovre Zorka (its text runs above and below it; the record holds the entry)'),
+    ('0001012823', 260, (252.4, 282.9, 365.8, 409.3), 'the photo set in the entry of Udovičić-Birin Stipe Ilinka (its text runs above and below it; the record holds the entry)'),
+    ('0001013193', 269, (345.7, 323.5, 459.1, 449.2), 'the photo set in the entry of Vlahov Lucijana Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001013192', 270, (134.8, 235.7, 248.9, 363.5), 'the photo set in the entry of Vlahov Ante Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001400931', 272, (129.3, 314.1, 241.6, 437.6), 'the photo set in the entry of Vukšić Vice Đesanko (its text runs above and below it; the record holds the entry)'),
+    ('0001013603', 272, (250.7, 439.9, 363.4, 566.6), 'the photo set in the entry of Vukšić Mate Ante (its text runs above and below it; the record holds the entry)'),
+    ('0001403310', 277, (331.8, 463.9, 444.1, 590.3), 'the photo set in the entry of Zlodre Božidara Tonka (its text runs above and below it; the record holds the entry)'),
+    ('0001013810', 279, (217.6, 504.7, 332.0, 631.1), 'the photo set in the entry of Žegarac Šime Danilo (its text runs above and below it; the record holds the entry)'),
 ]
 
 DALMATINCI_CREDIT = 'Dalmatinci u Prvoj proleterskoj'
 
+VIROVITICA = [
+    # Velagić, Virovitica u NOB (site: virovitica-spomenica-1941.pdf = znaci 00003/653.pdf pp. 221-238): each holder of the
+    # spomenica's biography under his portrait and its caption. Record, page in the site's PDF, the photo's box, why
+    ('0048000596', 7, (231.3, 317.1, 366.4, 506.4), '"Nedeljko Mrđen", the caption of the portrait over his biography'),
+    ('0016002566', 8, (473.0, 539.8, 600.9, 714.2), '"Rudi Rajh Top", the caption of the portrait over his biography'),
+    ('0058002338', 8, (473.0, 539.8, 600.9, 714.2), '"Rudi Rajh Top", the caption of the portrait over his biography'),
+    ('0030000784', 13, (273.5, 573.3, 405.5, 783.0), '"Zdravko Uskoković Heroj", the caption of the portrait over his biography'),
+    ('0016003238', 15, (238.4, 426.3, 368.7, 617.1), '"Dragan Volner Baćuška", the caption of the portrait over his biography'),
+]
+VIROVITICA_CREDIT = 'Savo Velagić, Virovitica u narodnooslobodilačkoj borbi i socijalističkoj revoluciji'
+
+KRIZANI = [
+    # Križani v boju za svobodo (site: krizani-v-boju-za-svobodo.pdf = znaci 00003/720.pdf pp. 78-108): "Padli za svobodo",
+    # three portraits a page in one strip, each level with its biography. Record, page in the site's PDF, the portrait's box
+    ('0142000032', 1, (170.1, 508.9, 287.2, 656.2), 'the portrait level with the biography of Bizin Edvard (the record holds the entry)'),
+    ('0144000043', 2, (117.2, 205.6, 232.2, 346.5), 'the portrait level with the biography of Bogateč Drago (the record holds the entry)'),
+    ('0064000245', 3, (165.4, 195.6, 282.5, 344.4), 'the portrait level with the biography of Bogateč Miroslav (the record holds the entry)'),
+    ('0142000038', 3, (165.4, 195.6, 282.5, 344.4), 'the portrait level with the biography of Bogateč Miroslav (the record holds the entry)'),
+    ('0142000169', 4, (114.5, 197.6, 229.0, 345.8), 'the portrait level with the biography of Guštin Karel (the record holds the entry)'),
+    ('0142000194', 4, (114.5, 355.2, 229.0, 501.9), 'the portrait level with the biography of Juretič Boris (the record holds the entry)'),
+    ('0070000543', 5, (174.5, 354.1, 290.2, 503.1), 'the portrait level with the biography of Kobau Franc (the record holds the entry)'),
+    ('0004002405', 10, (143.7, 202.2, 273.8, 343.7), 'the portrait level with the biography of Sedmak Božič (the record holds the entry)'),
+    ('0142000437', 11, (208.6, 197.3, 324.3, 344.0), 'the portrait level with the biography of Sedmak Franc (the record holds the entry)'),
+    ('0142000439', 11, (208.6, 353.4, 324.3, 499.4), 'the portrait level with the biography of Sedmak Henrik (the record holds the entry)'),
+    ('0142000488', 14, (126.4, 355.6, 253.8, 502.3), 'the portrait level with the biography of Sulčič Danilo (the record holds the entry)'),
+]
+KRIZANI_CREDIT = 'Križani v boju za svobodo / S. Croce nella lotta per la libertà'
+
 SAME = [
     # one man under two records that aren't linked, each with a photo of its own (another photo, or another crop),
     # checked by hand: lists of faces (the Galerija page, the home page's margins) show him once
+    ('0035001622', '0147000189', 'Došen Stevan, the Zagrebački odred\'s first commander, who fell commanding the brigade '
+                                 '»Matija Gubec« of the 32. divizija: the same face in both books'),
+    ('0018001171', '0083010129', 'Obradović Vlado "Kameni", born 1912 in Lipa (Bihać): the 2. and the 6. vojvođanska\'s books '
+                                 'print the same photograph'),
     ('0002000203', '0003010121', 'Babić Petar "Pepa", narodni heroj from Lički Tiškovac: both hero books know one, '
                                  'born 1 November 1919 (the Druga lička book prints 1913)'),
     ('0005010943', '0005100800', 'Rakočević Radomir: Štitarica, father Jovan/Jovo; two crops of one Commons photo'),
@@ -1339,10 +1534,21 @@ def main():
         credit = BOOK_TITLES[path.rsplit('_', 1)[0].removesuffix('.pdf')]
         index[sid] = {**save(im, sid, credit), 'c': credit, 'h': f'https://znaci.org/{path}#page={page}'}
     print(f"units' books: {len(UNIT_BOOKS)} portraits")
+    for sid, path, page, box, _why in PAGE_BOOKS:
+        pg = fitz.open(F.book_pdf(path))[page - 1]
+        hits = [i for i in pg.get_image_info() if fitz.Rect(i['bbox']).intersects(fitz.Rect(box))]
+        dpi = max([DPI] + [round(72 * i['width'] / (i['bbox'][2] - i['bbox'][0])) for i in hits if i['bbox'][2] > i['bbox'][0]])
+        pix = pg.get_pixmap(clip=fitz.Rect(box), dpi=min(dpi, 600), colorspace=fitz.csGRAY)
+        im = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
+        credit = BOOK_TITLES[path.rsplit('_', 1)[0].removesuffix('.pdf')]
+        index[sid] = {**save(im, sid, credit), 'c': credit, 'h': f'https://znaci.org/{path}#page={page}'}
+    print(f"units' books, cut from the page: {len(PAGE_BOOKS)} portraits")
     # books on the site that set a photo beside or inside the entry: cut from the site's PDF at the photo's own resolution
     for pdf, credit, href, rows in (
             ('tuzla-spomen-knjiga.pdf', MEMORIAL_CREDIT, 'https://znaci.org/00001/144.pdf#page={}', [(r[0], r[2] + 7, r[2], r[3]) for r in MEMORIAL]),
-            ('dalmatinci-prva-proleterska.pdf', DALMATINCI_CREDIT, 'https://znaci.org/00001/207_4.pdf#page={}', [(r[0], r[1] + 1, r[1], r[2]) for r in DALMATINCI])):
+            ('dalmatinci-prva-proleterska.pdf', DALMATINCI_CREDIT, 'https://znaci.org/00001/207_4.pdf#page={}', [(r[0], r[1] + 1, r[1], r[2]) for r in DALMATINCI]),
+            ('virovitica-spomenica-1941.pdf', VIROVITICA_CREDIT, 'https://znaci.org/00003/653.pdf#page={}', [(r[0], r[1] + 220, r[1], r[2]) for r in VIROVITICA]),
+            ('krizani-v-boju-za-svobodo.pdf', KRIZANI_CREDIT, 'https://znaci.org/00003/720.pdf#page={}', [(r[0], r[1] + 77, r[1], r[2]) for r in KRIZANI])):
         doc = fitz.open(PUBLIC / 'pdfs' / pdf)
         n = 0
         for sid, book_page, page, box in rows:
@@ -1370,7 +1576,7 @@ def main():
     print(f'Commons: {len(COMMONS)} portraits')
     # Portraits this script doesn't make (the Proleterski bataljon Bosanske krajine's 180, cut beside each bio when
     # its unit came to the site) stay as they are: an entry whose credit is none of this script's sources
-    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT}
+    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT}
     old = json.loads(INDEX.read_text(encoding='utf-8')) if INDEX.exists() else {}
     kept = {sid: e for sid, e in old.items() if sid not in index and e['c'] not in own
             and not e['c'].startswith(('znaci.org, br.', 'Wikimedia Commons')) and 'Wikimedia Commons' not in e['c']}
