@@ -137,7 +137,6 @@ export const mk: Messages = {
     born: (woman: boolean) => (woman ? 'Родена' : 'Роден'),
     skoj: 'Член на СКОЈ',
     kpj: 'Член на КПЈ',
-    member: (woman: boolean) => (woman ? 'Членка' : 'Член'),
     party: (items: [string, string][]) =>
       items.map(([org, year]) => (({ SKOJ: 'СКОЈ', KPJ: 'КПЈ', KPH: 'КПХ', KPS: 'КПС' } as Record<string, string>)[org] ?? org) +
         (year ? ` од ${year}` : '')).join(', '),
@@ -192,17 +191,10 @@ export const mk: Messages = {
     previous: 'Претходен',
     next: 'Следен',
     fields: {
-      fathersName: 'Татково име',
-      birthYear: 'Година на раѓање',
-      birthPlace: 'Место на раѓање',
+      father: 'Татко',
       ethnicity: 'Националност',
       occupation: 'Занимање',
-      rank: 'Должност',
-      unitDetail: 'Потединица',
-      deathDate: 'Датум на смртта',
-      deathPlace: 'Место на смртта',
-      killedDate: 'Датум на загинувањето',
-      killedPlace: 'Место на загинувањето',
+      party: 'Партија',
     },
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, стр. ${page}` : ''}. Книга на борците, запис ${id}.`,

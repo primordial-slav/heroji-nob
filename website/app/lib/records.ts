@@ -2,7 +2,7 @@ import type { Soldier, SoldierSource } from './types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { sources } from '@/app/data/sources'
-import { messagesFor, type Messages } from '@/app/i18n'
+import { messagesFor } from '@/app/i18n'
 import { localePath, type Lang } from '@/app/i18n/config'
 import { sourceAuthor } from '@/app/i18n/sources'
 
@@ -47,26 +47,9 @@ export function sourceTitle(entry: SoldierSource): string {
   return sourceOf(entry)?.title ?? entry.pdf_file ?? 'znaci.org'
 }
 
-/** Label (in the page's language) and value (as the book has it) of every structured field the record has */
-export function recordDetails(soldier: Soldier, t: Messages): [string, string][] {
-  const died = soldier.death_type === 'umro'
-  const f = t.record.fields
-  const details: [string, string | undefined][] = [
-    [f.fathersName, soldier.fathers_name],
-    [f.birthYear, soldier.birth_year],
-    [f.birthPlace, soldier.birth_place],
-    [f.ethnicity, soldier.ethnicity],
-    [f.occupation, soldier.occupation],
-    [f.rank, soldier.rank],
-    [f.unitDetail, soldier.unit_detail],
-    [died ? f.deathDate : f.killedDate, soldier.death_date || (soldier.death_after_war ? t.life.afterWar : undefined)],
-    [died ? f.deathPlace : f.killedPlace, soldier.death_place],
-  ]
-  return details.filter((d): d is [string, string] => Boolean(d[1]))
-}
-
-/** "1924 – 1945" when the record has both years */
+/** "1924 – 1945" when the record has both years; a capture or a wound is no death (lib/deathDay.ts) */
 export function lifeYears(soldier: Soldier): string | null {
+  if (soldier.death_type === 'zarobljen' || soldier.death_type === 'ranjen') return null
   const born = soldier.birth_year?.match(/\d{4}/)?.[0]
   const died = soldier.death_date?.match(/\d{4}/)?.[0]
   return born && died ? `${born} – ${died}` : null

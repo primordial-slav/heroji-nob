@@ -132,11 +132,10 @@ export const en: Messages = {
     born: () => 'Born',
     skoj: 'Joined the Young Communists (SKOJ)',
     kpj: 'Joined the Communist Party',
-    member: () => 'Member',
     party: (items: [string, string][]) =>
       items.map(([org, year]) => (({
-        SKOJ: 'the Young Communists (SKOJ)', KPJ: 'the Communist Party (KPJ)',
-        KPH: 'the Communist Party of Croatia (KPH)', KPS: 'the Communist Party of Slovenia (KPS)',
+        SKOJ: 'Young Communists (SKOJ)', KPJ: 'Communist Party (KPJ)',
+        KPH: 'Communist Party of Croatia (KPH)', KPS: 'Communist Party of Slovenia (KPS)',
       } as Record<string, string>)[org] ?? org) + (year ? ` from ${year}` : '')).join(', '),
     nob: 'Joined the Partisans',
     unit: (kind: string) => ({ brigade: 'Joined the brigade', division: 'Joined the division', detachment: 'Joined the detachment' } as Record<string, string>)[kind] ?? 'Joined the unit',
@@ -184,17 +183,10 @@ export const en: Messages = {
     previous: 'Previous',
     next: 'Next',
     fields: {
-      fathersName: 'Father’s name',
-      birthYear: 'Year of birth',
-      birthPlace: 'Place of birth',
+      father: 'Father',
       ethnicity: 'Ethnicity',
       occupation: 'Occupation',
-      rank: 'Role',
-      unitDetail: 'Sub-unit',
-      deathDate: 'Date of death',
-      deathPlace: 'Place of death',
-      killedDate: 'Killed',
-      killedPlace: 'Place killed',
+      party: 'Party',
     },
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, p. ${page}` : ''}. Knjiga boraca, record ${id}.`,

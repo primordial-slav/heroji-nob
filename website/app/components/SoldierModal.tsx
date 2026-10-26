@@ -4,7 +4,8 @@ import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, isPoreklo, partyOf, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
+import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
@@ -14,10 +15,9 @@ import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import { contributionsFor } from '@/app/data/family'
 import RelationsTree, { type KinCounts, type KinPart, type KinRequest } from './RelationsTree'
-import LifeLine, { unitKind } from './LifeLine'
+import LifeLine from './LifeLine'
 import SoldierPortrait from './SoldierPortrait'
 import { portraitFor } from '@/app/data/portraits'
-import { isWoman } from '@/app/lib/standIn'
 import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES, type Lang } from '@/app/i18n/config'
 import { quoteMarks } from '@/app/i18n/format'
@@ -46,10 +46,7 @@ function shownUnitName(name: string, lang: Lang): string {
   return unit ? localUnitName(unit, lang) : quoteMarks(lang, name)
 }
 
-interface Fact {
-  key: string
-  label: string
-  value: string
+interface Fact extends RecordFact {
   link?: { text: string; open: () => void }
 }
 
@@ -192,50 +189,17 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
   const honours = honoursLine(soldier, t)
 
-  // The record in three lines: born, in the unit, the death; each links to the people it shares with others
-  const woman = isWoman(soldier)
-  const born = soldier.life_events?.find((e) => e.k === 'born')
-  const bornDay = born && /^\d{4}-\d\d-\d\d$/.test(born.d) ? born.d.split('-').map(Number) : null
-  // only the counts made for this soldier; the last one's until the folds have counted his
+  // The record's facts (lib/recordFacts.ts, the memorial card's too); the birth, the unit and the death link to the
+  // people they share with others. Only the counts made for this soldier; the last one's until the folds have counted his
   const counted = (c: KinCounts): KinCounts => (c.of === soldier.soldier_id ? c : {})
   const comrades = counted(counts.comrades)
   const neighbours = counted(counts.neighbours)
-  const facts: Fact[] = []
-  if (soldier.birth_year || soldier.birth_place) {
-    facts.push({
-      key: 'born',
-      label: t.life.born(woman),
-      value: [bornDay ? t.kin.day(bornDay[2], bornDay[1], bornDay[0]) : soldier.birth_year, soldier.birth_place].filter(Boolean).join(', '),
-      link: neighbours.place ? { text: t.life.neighbours(neighbours.place.others), open: () => openKin('neighbours', 'place') } : undefined,
-    })
+  const links: Partial<Record<FactKey, Fact['link']>> = {
+    born: neighbours.place ? { text: t.life.neighbours(neighbours.place.others), open: () => openKin('neighbours', 'place') } : undefined,
+    unit: comrades.unit ? { text: t.life.comrades(comrades.unit.size), open: () => openKin('comrades', 'unit') } : undefined,
+    death: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
   }
-  // the nationality and the trade, as the books give them (the census's "Šiptar" is Albanac: scripts/standardize_fields.py)
-  if (soldier.ethnicity) facts.push({ key: 'ethnicity', label: t.record.fields.ethnicity, value: soldier.ethnicity })
-  if (soldier.occupation) facts.push({ key: 'occupation', label: t.record.fields.occupation, value: soldier.occupation })
-  if (soldier.unit_detail || soldier.rank) {
-    facts.push({
-      key: 'unit',
-      label: t.life.unit(unitKind(unitRecord?.name ?? unit)),
-      value: [soldier.unit_detail, soldier.rank].filter(Boolean).join(', '),
-      link: comrades.unit ? { text: t.life.comrades(comrades.unit.size), open: () => openKin('comrades', 'unit') } : undefined,
-    })
-  }
-  // "Član: SKOJ-a od 1942, KPJ od 1944"
-  const party = partyOf(soldier)
-  if (party.length) {
-    facts.push({ key: 'party', label: t.life.member(woman), value: t.life.party(party) })
-  }
-  // a death the record gives without a date or a place still shows ("Umro", a survivor who has died since; "Umro:
-  // posle rata", one the Slovene rosters mark "† po osvoboditvi")
-  if (soldier.death_date || soldier.death_place || soldier.death_type) {
-    const when = soldier.death_date || (soldier.death_after_war ? t.life.afterWar : '')
-    facts.push({
-      key: 'death',
-      label: t.life.fate(soldier.death_type, woman),
-      value: [when, soldier.death_place].filter(Boolean).join(', ') || t.life.undated,
-      link: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
-    })
-  }
+  const facts: Fact[] = recordFacts(soldier, t, unitRecord?.name ?? unit).map((f) => ({ ...f, link: links[f.key] }))
 
   return (
     <div className="modal-overlay" onClick={onClose}>

@@ -8,8 +8,9 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import {
-  RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordDetails, recordPath, sourceTitle,
+  RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordPath, sourceTitle,
 } from '@/app/lib/records'
+import { recordFacts } from '@/app/lib/recordFacts'
 import { fullRecord, loadKinList } from '@/app/lib/searchIndex'
 import { portraitFor } from '@/app/data/portraits'
 import SoldierPortrait from '@/app/components/SoldierPortrait'
@@ -74,7 +75,8 @@ export default function MemorialCard() {
   const pages = entriesOf(soldier).filter(hasPage)
   const ready = settledCrops >= pages.length
   const years = lifeYears(soldier)
-  const details = recordDetails(soldier, t)
+  // the same rows as the record dialog's (lib/recordFacts.ts), without its links
+  const details = recordFacts(soldier, t, unit.name)
   const honours = honoursLine(soldier, t)
   const hasPhoto = !unit.image.includes('/pdf-thumbs/')
   const link = new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString()
@@ -113,10 +115,10 @@ export default function MemorialCard() {
 
           {details.length > 0 && (
             <dl className="memorial-details">
-              {details.map(([label, value]) => (
-                <div key={label}>
-                  <dt>{label}</dt>
-                  <dd>{value}</dd>
+              {details.map((f) => (
+                <div key={f.key}>
+                  <dt>{f.label}</dt>
+                  <dd>{f.value}</dd>
                 </div>
               ))}
             </dl>

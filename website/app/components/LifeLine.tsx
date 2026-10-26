@@ -7,15 +7,7 @@ import { useLang, useT } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
 import { unitShortName } from '@/app/i18n/units'
 import { CandleIcon } from './Icons'
-
-/** A unit as its name says it is: "brigade", "division", "detachment" (odred), or "unit" */
-export function unitKind(name?: string): string {
-  if (!name) return 'unit'
-  if (/divizij/i.test(name)) return 'division'
-  if (/odred/i.test(name)) return 'detachment'
-  if (/brigad/i.test(name)) return 'brigade'
-  return 'unit'
-}
+import { unitKind } from '@/app/lib/recordFacts'
 
 const parts = (d: string) => d.split('-').map((p) => parseInt(p, 10))
 

@@ -138,10 +138,9 @@ export const sr = {
     born: (woman: boolean): string => (woman ? 'Rođena' : 'Rođen'),
     skoj: 'Član SKOJ-a',
     kpj: 'Član KPJ',
-    /** the membership under the unit in the record: "Član: SKOJ-a od 1942, KPJ od 1944" */
-    member: (woman: boolean): string => (woman ? 'Članica' : 'Član'),
+    /** the record's row "Partija": "SKOJ od 1942, KPJ od 1944", "KPJ" */
     party: (items: [string, string][]): string =>
-      items.map(([org, year]) => (org === 'SKOJ' ? 'SKOJ-a' : org) + (year ? ` od ${year}` : '')).join(', '),
+      items.map(([org, year]) => org + (year ? ` od ${year}` : '')).join(', '),
     nob: 'U NOB',
     /** came to the unit: a brigade, division, detachment (odred) or another unit */
     unit: (kind: string): string => ({ brigade: 'U brigadi', division: 'U diviziji', detachment: 'U odredu' } as Record<string, string>)[kind] ?? 'U jedinici',
@@ -201,17 +200,11 @@ export const sr = {
     previous: 'Prethodni',
     next: 'Sledeći',
     fields: {
-      fathersName: 'Ime oca',
-      birthYear: 'Godina rođenja',
-      birthPlace: 'Mesto rođenja',
+      father: 'Otac',
       ethnicity: 'Narodnost',
       occupation: 'Zanimanje',
-      rank: 'Dužnost',
-      unitDetail: 'Podjedinica',
-      deathDate: 'Datum smrti',
-      deathPlace: 'Mesto smrti',
-      killedDate: 'Datum pogibije',
-      killedPlace: 'Mesto pogibije',
+      /** SKOJ, the party or both, with the years: "Partija: SKOJ od 1941, KPJ od 1944" */
+      party: 'Partija',
     },
     /** "Petrović Milan. Prva lička proleterska brigada, Rajko Šarenac (ur.), str. 42. Knjiga boraca, zapis 0002000042." */
     citation: (name: string, where: string, page: number | null, id: string) =>
