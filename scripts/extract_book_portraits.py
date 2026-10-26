@@ -1432,7 +1432,7 @@ KRIZANI_CREDIT = 'Križani v boju za svobodo / S. Croce nella lotta per la liber
 HEROES_1982 = [
     # Petar Kačavenda, Narodni heroji Jugoslavije (Beograd 1982, two volumes; znaci 00003/977 A-M and 978 N-Ž, PDF page =
     # the book's page + 4): the portrait the book prints in each hero's entry, an entry the record holds as its
-    # narodni-heroji-1982 reference (two records by hand, said so). The page's background layer holds only the photos;
+    # narodni-heroji-1982 reference, or paired with by hand (said so in the row). The page's background layer holds only the photos;
     # each photo was given to an entry by the text around it: the line before it and the line after it in reading order
     # (column by column) both belong to that entry, the entry's heading and its neighbours' were all found on the page
     # (surname, given name and father), the entry holds no other photo, and the photo has a portrait's shape. Checked on
@@ -1662,6 +1662,48 @@ HEROES_1982 = [
     ('0150000405', '9002001287', '978', 367, (195.8, 110.6, 277.1, 218.8), "the record holds the entry: Zabukovec Leopolda Milan (Miloš), born 1923"),
     ('0168000114', '9002000035', '977', 52, (215.0, 314.8, 297.3, 423.7), "the record holds the entry: Bagat Stipe Vlado, born 1915"),
     ('0168003554', '9002001035', '978', 193, (197.1, 145.4, 278.7, 251.0), "the record holds the entry: Savin Jakova Ante (Manistra), born 1917"),
+    # second batch: photos a light patch had split in two (the box taken whole from the page), and records the reference
+    # matcher had not paired with their hero's entry, paired by hand on what the row says (a record whose father or
+    # birth data disagree with the book's left out)
+    ('0002004229', '9002000632', '977', 481, (108.9, 121.4, 194.8, 234.9), "the record holds the entry: Macura Milana Slobodan (Bondo), born 1918"),
+    ('0001008167', '9002000799', '977', 590, (215.0, 146.6, 298.0, 257.5), "the record holds the entry: Munjas Milan, born 1923"),
+    ('0005000893', '9002000279', '977', 221, (16.6, 113.5, 101.0, 223.6), "the record holds the entry: Džuver Milana Živko, born 1919"),
+    ('0007005862', '9002001317', '978', 392, (36.7, 138.7, 107.5, 243.8), "the record holds the entry: Žunić Sime Boško, born 1920"),
+    ('0010000877', '9002000598', '977', 452, (37.9, 157.4, 96.0, 245.5), "the record holds the entry: Latinović Jove Trivo (Garonja), born 1914"),
+    ('0010002096', '9002000212', '977', 172, (27.6, 221.5, 112.5, 318.9), "the record holds the entry: Ćup Đurina Milan, born 1917"),
+    ('0015000165', '9002000813', '978', 28, (204.4, 31.7, 286.7, 116.1), "the record holds the entry: Nešić D. Đorđe, born 1924"),
+    ('0021000527', '9002000160', '977', 129, (204.7, 133.2, 289.7, 243.5), "the record holds the entry: Bukilić Živka Vladimir (Pop mićo), born 1919"),
+    ('0036010050', '9002000015', '977', 33, (204.2, 168.5, 289.3, 279.6), "the record holds the entry: Antunović Jure Ilija, born 1919"),
+    ('0039000074', '9002000112', '977', 100, (121.6, 184.8, 206.8, 280.3), "the record holds the entry: Bojović Budimira Radoš, born 1919"),
+    ('0041000679', '9002000639', '977', 485, (203.0, 31.0, 287.4, 139.4), "the record holds the entry: Maksimović Mirka Aleksa, born 1919"),
+    ('0093000121', '9002000643', '977', 488, (31.4, 319.6, 114.0, 424.0), "the record holds the entry: Mamić Stanka Miloš, born 1918"),
+    ('0011000073', '9002000038', '977', 54, (214.5, 123.8, 298.2, 238.7), "by hand: Bajić Stevana Simo (Simica), born in Resanovci (Bosansko Grahovo), father Stevan"),
+    ('0023001829', '9002001283', '978', 359, (108.0, 95.7, 184.5, 204.0), "by hand: Vuković Jove Žarko (Pucar), \"Pucar\", father Jovo, born in Zelina (the book: Zolina)"),
+    ('0036019002', '9002001233', '978', 327, (196.8, 103.4, 278.4, 211.2), "by hand: Vojvodić Rada Dimitrije (Zeko), \"Zeko\", born 9 May 1908 in Konjusi (Andrijevica)"),
+    ('0040010558', '9002000439', '977', 339, (19.4, 32.4, 103.2, 136.8), "by hand: Jovančević Milorad, born 1919 in Dolac near Berane"),
+    ('0040011298', '9002000935', '978', 122, (204.4, 153.1, 286.0, 258.9), "by hand: Popović Sekule, born in Lužac (Berane)"),
+    ('0043000557', '9002000546', '977', 414, (213.8, 162.9, 297.3, 271.9), "by hand: Kovačević Sime Boriša (Šćepan), \"Šćepan\", father Simo, born in Duvno"),
+    ('0080000421', '9002000547', '977', 415, (202.7, 163.4, 286.5, 271.4), "by hand: Kovačević Božidara Branko (Žika mornar), \"Žika mornar\", father Božidar, born 29 November in Prijevor (Budva)"),
+    ('0109000291', '9002000321', '977', 253, (20.4, 126.2, 104.6, 236.8), "by hand: Filipović Matije Mirko, born 1912 in Dubrave (Brčko)"),
+    ('0109001215', '9002001063', '978', 210, (203.0, 142.5, 284.0, 250.3), "by hand: Srnić Nikole Dragoslav (Padobranac), \"Padobranac\", born in Draginje near Šabac (the book: Dragonje)"),
+    ('0002009922', '9002001229', '978', 324, (115.9, 139.2, 197.9, 247.4), "by hand: Vladušić Đurđa Branko, father Đuro, born 1917 near Gračac (Gudura; the book: Zrmanja)"),
+    ('0001009013', '9002000873', '978', 81, (17.0, 117.4, 100.8, 224.4), "by hand: Pavlović Mirka Dragoslav (Draganče, Šilja), father Mirko, born in Belgrade"),
+    ('0001010491', '9002000998', '978', 167, (108.0, 149.3, 190.7, 255.4), "by hand: Raspopović Iva Milan, father Ivo, born in Martinići (Danilovgrad)"),
+    ('0001010509', '9002001000', '978', 168, (115.4, 138.9, 198.2, 245.7), "by hand: Rašović Radosava Milija, father Radosav, born in Fundina (Podgorica)"),
+    ('0006006869', '9002001159', '978', 273, (197.7, 160.5, 278.5, 268.3), "by hand: Šurkalo Mirjana Dinko, father Marijan, born 1920 in Šibenik"),
+    ('0120000480', '9002001159', '978', 273, (197.7, 160.5, 278.5, 268.3), "by hand: Šurkalo Mirjana Dinko, father Marijan, born 1920 in Šibenik"),
+    ('0007003172', '9002000666', '977', 503, (109.9, 149.5, 194.8, 257.9), "by hand: Marković Dragutina Drago, father Dragutin, born 1901 in Kučine (Split)"),
+    ('0007005501', '9002001225', '978', 321, (194.8, 29.3, 276.1, 135.8), "by hand: Višić Stipana Miro, father Stjepan (Stipan), born 1919 in Knin"),
+    ('0015000280', '9002001232', '978', 326, (202.7, 105.3, 283.8, 212.6), "by hand: Vlajić Živana Milosav, born 1921 in Parcani (Mladenovac)"),
+    ('0021004846', '9002001076', '978', 219, (195.8, 159.8, 276.6, 267.5), "by hand: Stanković Todora Petar (Ljuba), father Todor, born in Orašje (Leskovac)"),
+    ('0026000136', '9002000225', '977', 187, (110.4, 173.5, 194.6, 283.4), "by hand: Dejović Maksima Aleksa, father Maksim, born in Sevojno"),
+    ('0040000337', '9002000348', '977', 271, (204.9, 316.0, 288.6, 422.5), "by hand: Grbović Milosava Jevrem, father Milosav, born in Pošćenski Kraj (Žabljak)"),
+    ('0040040025', '9002000678', '977', 512, (28.1, 150.4, 113.7, 261.0), "by hand: Martinović Nika Stanislav (Stanko), father Niko, born in Bajice (Cetinje)"),
+    ('0041000476', '9002000472', '977', 364, (27.6, 29.5, 112.8, 138.5), "by hand: Kadović Pera Savo, father Pero, born 1921 in Šobajići (Danilovgrad)"),
+    ('0042000285', '9002000536', '977', 408, (121.6, 129.6, 206.6, 238.8), "by hand: Kosorić Josipa Svetozar, father Josip, born in Kusače (Han Pijesak)"),
+    ('0058002483', '9002001044', '978', 199, (108.2, 144.4, 190.3, 252.4), "by hand: Severović Jove Nikola, father Jovo, born 1911 in Belanovo Selo"),
+    ('0125000598', '9002001117', '978', 246, (25.7, 152.6, 107.5, 261.1), "by hand: Šarić Ive Ante (Rade španac), father Ivo, born 1913 in Tribić (Livno)"),
+    ('0126000153', '9002000255', '977', 205, (20.6, 123.3, 104.4, 227.5), "by hand: Dražević Jovana Dragomir, father Jovan, born 1882 in Drenova (Gornji Milanovac)"),
 ]
 HEROES_1982_CREDIT = 'Petar Kačavenda, Narodni heroji Jugoslavije (1982)'
 
@@ -1684,6 +1726,8 @@ SAME = [
     ('0163000104', '0048000364', 'Kecman Pero, father Jovo, born 1921 near Bosanski Petrovac'),
     ('0001001840', '0036002039', 'Ćetković Pero, narodni heroj, born 1907 in Mužovići (Ljubotinj), fell March 1943 near Nevesinje: '
                                  'the Prva proleterska\'s book and a Commons crop of the 1. dalmatinska\'s staff photo'),
+    ('0001013228', '0036019002', 'Vojvodić Dimitrije "Zeko", narodni heroj, born 9 May 1908 in Konjusi: the Prva proleterska\'s book '
+                                 'and the 1982 hero book print different photos'),
 ]
 
 def portrait_box(pg: fitz.Page, rects: list[fitz.Rect], x: float, y: float) -> list[float] | None:
