@@ -8,6 +8,8 @@ Soldiers' own photographs, for the record popup and the memorial card. Only cert
   whose name is the only one of its kind in the unit, and agrees with the record or the book's text on more than the
   name, each checked by hand; PAGE_BOOKS the same, cut from the page where the book stores a photo as strips or prints
   several side by side (one man of a group only where the caption says which);
+- from Kačavenda's Narodni heroji Jugoslavije (1982) on znaci.org (HEROES_1982): the portrait the book prints in the
+  hero's entry, for records that hold that entry as a reference, placed by the text around the photo on the page;
 - from Wikimedia Commons (COMMONS): the lead photo of a narodni heroj's Wikipedia article (sh or sr), where the
   article agrees with our record on the birth year or birthplace, the file is public domain or under a free license
   (CC0, CC BY-SA: credited with the license and the author where known), and it shows that one person in a photograph
@@ -248,6 +250,7 @@ UNIT_BOOKS = [
     ('0033000720', '00003/712.pdf', 243, 1400, (0.1, 0.08, 0.55, 0.36), 'narodni heroj, pomoćnik komesara bataljona 14. brigade, poginuo 1944.'),
     ('0036000184', '00001/108_21.pdf', 11, 61, (0.263, 0, 1, 0.604), 'za radnička prava, 1936. godine otišao je u Spaniju da u oružanoj borbi brani republiku od reak'),
     ('0003010121', '00001/110_6.pdf', 3, 19, (0, 0, 1, 1), 'Rođen 1. novembra 1919. godine u selu Lički Tiškovac, Donji Lapac. Ma- šinski bravar. Clan KPJ'),
+    ('0003030003', '00001/110_6.pdf', 3, 19, (0, 0, 1, 1), 'the same man as 0003010121 (2026-10-26): the brigade\'s officers list, Petar Babić "Pepa", its first commissar, born 1919 in Lički Tiškovac, narodni heroj'),
     ('0003000664', '00001/110_6.pdf', 10, 59, (0, 0, 1, 1), 'tojan Matić rođen je u siromašnoj seljačkoj porodici. Nakon završetka osnovne škole u svom rodn'),
     ('0003012981', '00001/110_6.pdf', 19, 113, (0, 0, 1, 1), 'LAZO RADAKOVIĆ'),
     ('0003013153', '00001/110_6.pdf', 21, 125, (0, 0, 1, 1), 'Rođen 10. oktobra 1914. u Širokoj Kuli Zemljoradnik. Clan KPJ od juna 1941. U NOB stupio 27. ju'),
@@ -775,6 +778,36 @@ COMMONS = [
     ('0139000166', 'Franjo_Kluz_(1).jpg', (0, 0, 1, 1), 'Public domain', '', 'Фрањо Клуз, narodni heroj: birth year 1913; birthplace Bosanska Dubica'),
     ('0170000076', 'Lojze_Kebe.jpg', (0, 0, 1, 1), 'Public domain', '', 'Лојзе Кебе, narodni heroj: birthplace Cerknica - Ljubljana'),
     ('0171010002', 'Franc_Avbelj.jpg', (0, 0, 1, 1), 'Public domain', '', 'Франц Авбељ, narodni heroj: birthplace Trnjava pri Lukovici'),
+    # third pass (2026-10-26): hero records without a portrait, the lead photo of the article on sr, sh, hr, sl or en
+    # Wikipedia (found through each wiki's category of narodni heroji and Wikidata), only files on Commons; records the
+    # 1982 hero book (HEROES_1982) covers are left to it
+    ('0002006094', 'Stanko_Parmać.jpg', (0.3, 0.0, 0.75, 0.35), 'Public domain', '', 'Stanko Parmać, narodni heroj: born 1913 in Opuzen, died 1982 in Split (sr, hr)'),
+    ('0036011514', 'Stanko_Parmać.jpg', (0.3, 0.0, 0.75, 0.35), 'Public domain', '', 'Stanko Parmać, narodni heroj: born 23 March 1913 in Opuzen'),
+    ('0046000811', 'Stanko_Parmać.jpg', (0.3, 0.0, 0.75, 0.35), 'Public domain', '', 'Stanko Parmać, narodni heroj: born 1913 in Opuzen, commander of the 19. divizija'),
+    ('0079010026', 'Stanko_Parmać.jpg', (0.3, 0.0, 0.75, 0.35), 'Public domain', '', 'Stanko Parmać, narodni heroj, commander of the 19. divizija'),
+    ('0001005136', 'Nh_kljajic_filip.jpg', (0, 0, 1, 1), 'Public domain', '', 'Filip Kljajić Fića, narodni heroj: born 1913 in Tremušnjak, fell 5 July 1943 at Zvornik (sh)'),
+    ('0113000055', 'Nh_kljajic_filip.jpg', (0, 0, 1, 1), 'Public domain', '', 'Filip Kljajić Fića, narodni heroj: born 1913 in Tremušnjak, fell 1943'),
+    ('0001006622', 'Brana_Marković.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0 rs', '', 'Brana Marković, narodni heroj: born 1913 in Živkovci, fell 21 January 1944 (sr)'),
+    ('0042000364', 'Brana_Marković.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0 rs', '', 'Brana Marković, narodni heroj: born 1913 in Živkovci, fell January 1944'),
+    ('0004001948', 'Jože_Ožbolt.jpg', (0.5, 0.05, 0.95, 0.7), 'Public domain', '', 'Jože Ožbolt, narodni heroj: born 4 January 1922 in Belica (sr, sl)'),
+    ('0026000479', 'Petar_Leković.jpg', (0, 0, 1, 1), 'Public domain', '', 'Petar Leković, narodni heroj: born 1893 in Svračkovo, fell June 1942 near Gacko (sh, sl, en)'),
+    ('0036002039', 'Pero_Ćetković_(1942).jpg', (0, 0, 1, 1), 'Public domain', '', 'Pero Ćetković, narodni heroj: born 1907 in Mužovići (Ljubotinj), fell March 1943 at Nevesinje (sr, sh)'),
+    ('0036011466', 'Mirko_Novović.jpg', (0.2, 0.15, 0.85, 0.45), 'Public domain', '', 'Mirko Novović, narodni heroj: born 18 November 1917 in Cecuni (sl; the record\'s biography the same)'),
+    ('0040000460', 'Blažo_Janković_1945.jpg', (0, 0, 1, 1), 'Public domain', '', 'Blažo Janković, narodni heroj: born 1910 (sl), commander of the 17. divizija'),
+    ('0040000967', 'Vojin_Nikolić.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0', '', 'Vojin Nikolić, narodni heroj: born 1914 (sl)'),
+    ('0041010463', 'Milica_Vučinić.png', (0, 0, 1, 1), 'Public domain', '', 'Milica Vučinić, narodni heroj: born in Cerovo, fell 20 March 1943 (sh)'),
+    ('0060010107', 'Bogdan_Oreščanin.jpg', (0.0, 0.0, 0.75, 0.9), 'CC BY-SA 3.0', '', 'Bogdan Oreščanin, narodni heroj and general-pukovnik (sl; the record the same)'),
+    ('0060010177', 'Miloš_Šumonja.jpg', (0.1, 0.0, 1.0, 0.9), 'CC BY-SA 3.0', '', 'Miloš Šumonja, narodni heroj and general-pukovnik (sr, sl, en; the record the same)'),
+    ('0079010017', 'Milan_Kuprešanin.jpg', (0.2, 0.05, 0.85, 0.7), 'CC BY-SA 3.0', '', 'Milan Kuprešanin, narodni heroj: born 1911 (sl)'),
+    ('0118000345', 'Milan_Kuprešanin.jpg', (0.2, 0.05, 0.85, 0.7), 'CC BY-SA 3.0', '', 'Milan Kuprešanin, narodni heroj: born 1911 (sl)'),
+    ('0150000244', 'Vlado_Miklavc_Henrik.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0 rs', '', 'Vlado Miklavc, narodni heroj: born 1918 in Ljubljana, fell 1944 at Drvar (sr); the 1982 hero book prints the same photo'),
+    ('0112000068', 'Uglješa_Danilović.jpg', (0, 0, 1, 1), 'Public domain', '', 'Uglješa Danilović, narodni heroj: born 1913 in Gnionica (sh)'),
+    ('0112000287', 'Ivan_Milutinović_(1942).jpg', (0, 0, 1, 1), 'Public domain', '', 'Ivan Milutinović, narodni heroj: born 1901 near Podgorica, drowned 23 October 1944 (hr, sl, en)'),
+    ('0115000078', 'Božo_Lazarević.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0', '', 'Božo Lazarević, narodni heroj: born 1909 (sl)'),
+    ('0126001042', 'Boža_Tomić.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0 rs', '', 'Božo Tomić, narodni heroj: born 1917 in Prijevor, fell 21 March 1944 (sr)'),
+    ('0141000224', 'Jože_Klanjšek_1943.jpg', (0.15, 0.0, 0.85, 0.5), 'Public domain', '', 'Jože Klanjšek Vasja, narodni heroj: born in Drtija (sr)'),
+    ('0168002576', 'Vicko_Milat.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0 rs', '', 'Vicko Milat, narodni heroj: born 1914 in Blato on Korčula (sr)'),
+    ('0171010167', 'Franc_Pasterk.jpg', (0, 0, 1, 1), 'Public domain', '', 'Franc Pasterk Lenart, narodni heroj: born 1912 in Lobnik, fell 4 April 1943 (sr, sl)'),
 ]
 
 MEMORIAL = [
@@ -1396,6 +1429,242 @@ KRIZANI = [
 ]
 KRIZANI_CREDIT = 'Križani v boju za svobodo / S. Croce nella lotta per la libertà'
 
+HEROES_1982 = [
+    # Petar Kačavenda, Narodni heroji Jugoslavije (Beograd 1982, two volumes; znaci 00003/977 A-M and 978 N-Ž, PDF page =
+    # the book's page + 4): the portrait the book prints in each hero's entry, an entry the record holds as its
+    # narodni-heroji-1982 reference (two records by hand, said so). The page's background layer holds only the photos;
+    # each photo was given to an entry by the text around it: the line before it and the line after it in reading order
+    # (column by column) both belong to that entry, the entry's heading and its neighbours' were all found on the page
+    # (surname, given name and father), the entry holds no other photo, and the photo has a portrait's shape. Checked on
+    # contact sheets (women's entries show women; a group photo and a drawing left out) and, the rule itself, against
+    # the portraits the site already had from other sources for 80 sampled heroes (the same man each time).
+    # record, the book's entry, volume, PDF page, the photo's box, why
+    ('0001001257', '9002000151', '977', 124, (214.5, 142.8, 298.7, 253.6), "the record holds the entry: Bubalo Đure Nikola, born ?"),
+    ('0001002380', '9002000264', '977', 211, (112.8, 313.1, 196.0, 422.0), "the record holds the entry: Dugalić Obrena Momčilo (Momo), born 1918"),
+    ('0001003757', '9002000386', '977', 301, (111.8, 148.5, 196.5, 258.4), "the record holds the entry: Ilić Radoja Milan (Žuća, Čiča šumadijski), born 1886"),
+    ('0001007433', '9002000738', '977', 550, (27.1, 141.6, 112.5, 250.5), "the record holds the entry: Milićević Bože Rade, born 1910"),
+    ('0001007552', '9002000741', '977', 552, (27.6, 30.5, 113.5, 133.6), "the record holds the entry: Milosavljević Miloša Danica, born 1925"),
+    ('0001007698', '9002000750', '977', 557, (203.0, 314.6, 288.4, 424.2), "the record holds the entry: Milutinović Riste Dušan, born 1920"),
+    ('0001008594', '9002000827', '978', 39, (200.2, 119.8, 281.1, 221.7), "the record holds the entry: Nježić Lazara Vid, born 1903"),
+    ('0001009378', '9002000903', '978', 100, (204.0, 175.0, 286.6, 280.8), "the record holds the entry: Petrović Joka Đuro, born 1914"),
+    ('0001009485', '9002000905', '978', 101, (198.4, 173.9, 280.5, 279.8), "the record holds the entry: Petrović Nikole Radovan, born 1916"),
+    ('0001012854', '9002001205', '978', 306, (114.9, 107.0, 197.0, 215.7), "the record holds the entry: Urošević Milorada Miodrag (Artem), born 1922"),
+    ('0001014009', '9002001313', '978', 389, (106.8, 123.1, 190.1, 229.1), "the record holds the entry: Živković Radosava Živko, born 1912"),
+    ('0001014014', '9002001312', '978', 388, (204.9, 124.1, 286.2, 230.6), "the record holds the entry: Živković-Ilić Ljubomir (Ljupče španac), born ?"),
+    ('0001300005', '9002000006', '977', 27, (203.7, 256.3, 288.1, 367.1), "the record holds the entry: Aksentijević Danila Vladimir (Vlada), born 1916"),
+    ('0002003148', '9002000440', '977', 339, (202.7, 32.2, 286.5, 136.3), "the record holds the entry: Jovanić Milana Đoko, born 1917"),
+    ('0002003854', '9002000574', '977', 434, (213.8, 156.9, 297.3, 267.1), "the record holds the entry: Krunić Jovana Uroš, born 1914"),
+    ('0002005068', '9002000740', '977', 551, (111.1, 138.0, 194.1, 246.2), "the record holds the entry: Milojević Milana Radomir (Rade), born 1918"),
+    ('0002005812', '9002000825', '978', 36, (204.6, 169.2, 286.7, 275.2), "the record holds the entry: Novković Jovana Momčilo, born 1916"),
+    ('0002007432', '9002000999', '978', 167, (197.2, 150.5, 279.0, 255.6), "the record holds the entry: Rastović Đurđa Miloš, born 1921"),
+    ('0002009484', '9002001291', '978', 370, (25.9, 31.4, 108.0, 139.2), "the record holds the entry: Zaklan Jovana Dmitar, born 1915"),
+    ('0003020653', '9002000386', '977', 301, (111.8, 148.5, 196.5, 258.4), "the record holds the entry: Ilić Radoja Milan (Žuća, Čiča šumadijski), born 1886"),
+    ('0003021458', '9002000842', '978', 50, (205.1, 141.6, 286.7, 248.1), "the record holds the entry: Opsenica Todora Stanko (Staniša), born 1907"),
+    ('0003030092', '9002001207', '978', 308, (25.4, 145.6, 107.2, 247.6), "the record holds the entry: Uzelac Jovana Mile, born 1913"),
+    ('0004000895', '9002000380', '977', 295, (20.6, 188.9, 104.6, 299.5), "the record holds the entry: Hribernik Lovre Rudolf (Svarun), born 1921"),
+    ('0005000001', '9002000513', '977', 392, (214.7, 137.5, 297.7, 248.1), "the record holds the entry: Knežević Živka Vladimir (Volođa), born 1915"),
+    ('0005000003', '9002000606', '977', 457, (204.2, 32.6, 287.4, 139.9), "the record holds the entry: Leković Miće Voja, born ?"),
+    ('0005000004', '9002000165', '977', 133, (20.4, 171.6, 104.6, 282.9), "the record holds the entry: Burdžović Nazifa Rifat (Tršo), born 1913"),
+    ('0005000083', '9002000618', '977', 465, (25.0, 194.8, 108.0, 304.5), "the record holds the entry: Lović Jevrema Jezdimir, born 1919"),
+    ('0005000427', '9002001223', '978', 320, (115.2, 31.2, 197.0, 138.9), "the record holds the entry: Vidović Stevana Žarko, born 1913"),
+    ('0005000876', '9002001314', '978', 390, (114.9, 149.2, 197.4, 256.5), "the record holds the entry: Žižić Stanka Tomaš, born 1909"),
+    ('0005011051', '9002001085', '978', 224, (115.2, 303.3, 196.7, 410.1), "the record holds the entry: Stiković Mihajla Milosav, born 1914"),
+    ('0005100113', '9002000174', '977', 145, (20.6, 32.2, 103.9, 140.8), "the record holds the entry: Cerović Radivoja Komnen, born 1916"),
+    ('0005100900', '9002001085', '978', 224, (115.2, 303.3, 196.7, 410.1), "the record holds the entry: Stiković Mihajla Milosav, born 1914"),
+    ('0005101042', '9002001256', '978', 342, (25.7, 155.0, 107.2, 262.0), "the record holds the entry: Vučković Iva Miloš, born 1914"),
+    ('0005101122', '9002000285', '977', 226, (28.6, 165.4, 114.0, 277.2), "the record holds the entry: Đorđević Milana Dragoslav (Goša), born 1919"),
+    ('0006000223', '9002000033', '977', 51, (208.0, 42.9, 285.5, 142.5), "the record holds the entry: Badel Slavka Marijan, born 1920"),
+    ('0006005497', '9002000926', '978', 116, (204.4, 31.7, 286.0, 137.5), "the record holds the entry: Popović Jovana Ilija, born 1917"),
+    ('0006007652', '9002001252', '978', 339, (107.2, 146.9, 190.0, 255.8), "the record holds the entry: Vučinić Miloša Simo, born 1916"),
+    ('0007001512', '9002000313', '977', 247, (110.4, 31.9, 195.5, 141.1), "the record holds the entry: Egić Prokopija Obrad, born 1908"),
+    ('0007002582', '9002000558', '977', 424, (27.1, 169.9, 111.8, 279.8), "the record holds the entry: Kovačević Petra Vojo, born 1912"),
+    ('0007003818', '9002000839', '978', 48, (114.4, 143.7, 197.7, 249.5), "the record holds the entry: Opačić Jandrije Stevo, born 1921"),
+    ('0007005370', '9002001202', '978', 304, (204.6, 33.1, 285.5, 140.8), "the record holds the entry: Ujević Ante Mate, born 1920"),
+    ('0010000871', '9002000597', '977', 451, (111.8, 314.1, 196.5, 422.8), "the record holds the entry: Latinović Koje Mile, born 1919"),
+    ('0010001982', '9002001235', '978', 329, (16.3, 28.6, 99.3, 135.8), "the record holds the entry: Vojvodić Stevana Nikola (Vojvoda), born 1910"),
+    ('0010002058', '9002001300', '978', 376, (203.7, 301.9, 285.0, 407.9), "the record holds the entry: Zorić Miloša Miladin (Garača), born 1920"),
+    ('0010101094', '9002001018', '978', 180, (115.2, 101.7, 198.2, 208.0), "the record holds the entry: Rokvić Goluba Mirko (Šoša), born 1922"),
+    ('0011000143', '9002000102', '977', 94, (27.6, 122.4, 113.0, 234.2), "the record holds the entry: Bodiroža Vukosava Vid (Vicuka), born 1919"),
+    ('0011001213', '9002001025', '978', 184, (203.4, 172.0, 285.2, 278.1), "the record holds the entry: Rukavina Ivana Ante, born 1922"),
+    ('0013000357', '9002000332', '977', 262, (214.2, 29.5, 297.0, 140.6), "the record holds the entry: Gavran Mile Dušan, born 1922"),
+    ('0013000671', '9002000540', '977', 410, (214.7, 134.4, 298.0, 243.1), "the record holds the entry: Košutić Dušan, born 1912"),
+    ('0013001518', '9002001211', '978', 312, (204.6, 30.7, 285.5, 137.5), "the record holds the entry: Vejinović Jovana Mirko, born 1920"),
+    ('0013010172', '9002000144', '977', 120, (214.0, 29.5, 298.5, 139.4), "the record holds the entry: Brkić Danila Rade, born 1913"),
+    ('0014001088', '9002000211', '977', 171, (203.2, 117.1, 286.7, 225.8), "the record holds the entry: Ćuk Redža Avdo, born 1920"),
+    ('0015000089', '9002000447', '977', 345, (202.7, 154.8, 287.7, 264.9), "the record holds the entry: Jovanović Milana Miroslav, born 1915"),
+    ('0015000201', '9002000931', '978', 120, (25.9, 112.5, 108.7, 218.8), "the record holds the entry: Popović Gaje Momčilo, born 1919"),
+    ('0015000249', '9002001082', '978', 223, (16.1, 129.3, 98.6, 230.3), "the record holds the entry: Stefanović Koste Ivan (Srba), born 1912"),
+    ('0021003830', '9002000900', '978', 98, (204.4, 143.5, 286.2, 250.0), "the record holds the entry: Petrović Laze Dragoljub (Rade), born 1919"),
+    ('0021003833', '9002000901', '978', 99, (105.3, 141.6, 188.3, 247.4), "the record holds the entry: Petrović Srbina Dragoslav (Gorski), born 1919"),
+    ('0023000511', '9002000393', '977', 306, (215.0, 140.6, 298.7, 251.9), "the record holds the entry: Ivanović Todora Vojo, born 1914"),
+    ('0024001395', '9002001235', '978', 329, (16.3, 28.6, 99.3, 135.8), "the record holds the entry: Vojvodić Stevana Nikola (Vojvoda), born 1910"),
+    ('0024001400', '9002001242', '978', 332, (203.9, 128.4, 284.8, 236.6), "the record holds the entry: Vrbica Laze Đorđina (Đina), born 1913"),
+    ('0026000589', '9002000728', '977', 543, (110.1, 314.3, 195.1, 423.3), "the record holds the entry: Mijalković Milan (Čiča), born 1897"),
+    ('0026000622', '9002000746', '977', 555, (110.1, 160.0, 195.8, 267.8), "the record holds the entry: Milovanović Vojimira Miodrag (Lune), born 1921"),
+    ('0026000855', '9002000975', '978', 153, (195.8, 142.0, 277.6, 247.1), "the record holds the entry: Radosavljević Radiša (Šoša), born 1919"),
+    ('0029000170', '9002000367', '977', 286, (26.6, 28.3, 113.0, 136.0), "the record holds the entry: Hamzić Huse Hamza, born 1924"),
+    ('0036001378', '9002000841', '978', 50, (24.7, 140.4, 108.0, 247.1), "the record holds the entry: Opačić Stevana Stevo, born 1923"),
+    ('0036100175', '9002000104', '977', 95, (111.6, 130.1, 196.1, 233.5), "the record holds the entry: Bogdan Marka Petar (Peko), born 1915"),
+    ('0036101007', '9002001006', '978', 172, (115.2, 176.8, 198.4, 283.6), "the record holds the entry: Reić Ante Srećko (Petica), born 1914"),
+    ('0039000238', '9002000390', '977', 304, (120.9, 152.4, 206.8, 264.4), "the record holds the entry: Ivanović Ivana Milun, born 1910"),
+    ('0039000519', '9002000746', '977', 555, (110.1, 160.0, 195.8, 267.8), "the record holds the entry: Milovanović Vojimira Miodrag (Lune), born 1921"),
+    ('0039000831', '9002001203', '978', 305, (106.0, 29.5, 188.3, 136.3), "the record holds the entry: Umjenović Stojana Milorad (Mićo), born 1920"),
+    ('0039100171', '9002000255', '977', 205, (20.6, 123.3, 104.4, 227.5), "the record holds the entry: Dražević Jovana Dragomir, born 1882"),
+    ('0039100235', '9002000343', '977', 268, (214.2, 138.9, 298.0, 243.5), "the record holds the entry: Gračanin Boška Petar (Perica), born 1923"),
+    ('0039100292', '9002000391', '977', 305, (111.3, 152.8, 195.8, 263.0), "the record holds the entry: Ivanović Nikole Petar (Perica), born 1925"),
+    ('0039100355', '9002000454', '977', 350, (26.6, 154.3, 111.3, 266.1), "the record holds the entry: Jovanović Ljubisava Sava (Sirogojno), born 1926"),
+    ('0039100547', '9002000625', '977', 469, (110.4, 132.2, 195.1, 239.0), "the record holds the entry: Luković Vladimira Milutin, born 1919"),
+    ('0039100646', '9002000741', '977', 552, (27.6, 30.5, 113.5, 133.6), "the record holds the entry: Milosavljević Miloša Danica, born 1925"),
+    ('0039100819', '9002000927', '978', 117, (15.6, 28.6, 99.6, 133.2), "the record holds the entry: Popović Rade Jevrem, born 1914"),
+    ('0039101079', '9002001203', '978', 305, (106.0, 29.5, 188.3, 136.3), "the record holds the entry: Umjenović Stojana Milorad (Mićo), born 1920"),
+    ('0039101081', '9002001206', '978', 307, (15.6, 104.6, 98.8, 213.1), "Urošević Sredoje, father Mijko (the record: Miljko), born 1917, Donja Trepča (Wikipedia: born there 1917); not matched by the reference matcher"),
+    ('0039101147', '9002001270', '978', 350, (203.4, 127.9, 284.5, 234.2), "the record holds the entry: Vukajlović Lj. Mihailo (Crni), born ?"),
+    ('0040000336', '9002000347', '977', 271, (20.6, 317.0, 105.3, 423.5), "the record holds the entry: Grbović Radovana Danilo, born ?"),
+    ('0040000525', '9002000467', '977', 358, (27.4, 145.9, 113.5, 256.7), "the record holds the entry: Jugović Petra Radisav (Bako), born 1915"),
+    ('0040000995', '9002000834', '978', 45, (106.6, 30.7, 189.4, 135.8), "the record holds the entry: Ojdanić Mihaila Dobrila, born 1921"),
+    ('0040000997', '9002000617', '977', 464, (120.9, 195.8, 206.1, 306.4), "the record holds the entry: Lopičić Jovana Lazar, born 1922"),
+    ('0040001330', '9002001088', '978', 226, (24.7, 144.7, 107.5, 253.6), "the record holds the entry: Stojanović Jovan, born 1923"),
+    ('0040001620', '9002000306', '977', 240, (120.7, 140.8, 206.6, 254.1), "the record holds the entry: Đurović Đoka Vasilije (Vako), born 1910"),
+    ('0040010288', '9002000252', '977', 203, (20.2, 175.1, 104.1, 284.6), "the record holds the entry: Dragović Radovana Vojin, born 1914"),
+    ('0040010882', '9002000677', '977', 511, (109.9, 313.8, 195.5, 423.0), "the record holds the entry: Martinović Vasa Nikola, born 1915"),
+    ('0040010885', '9002000678', '977', 512, (28.1, 150.4, 113.7, 261.0), "the record holds the entry: Martinović Nika Stanislav (Stanko), born 1916"),
+    ('0040011242', '9002000903', '978', 100, (204.0, 175.0, 286.6, 280.8), "the record holds the entry: Petrović Joka Đuro, born 1914"),
+    ('0040011593', '9002001101', '978', 233, (197.2, 105.1, 277.8, 212.2), "the record holds the entry: Strugar Andrije Dušan, born 1919"),
+    ('0040011989', '9002000306', '977', 240, (120.7, 140.8, 206.6, 254.1), "Vasilije Đurović \"Vako\", komandant brigade, fell 9 June 1943 at the Sutjeska: the same man as 0040001620, which holds the entry"),
+    ('0040040020', '9002000539', '977', 410, (27.4, 134.1, 111.8, 243.1), "the record holds the entry: Kostić Filipa Ilija, born 1911"),
+    ('0040040036', '9002000924', '978', 114, (204.2, 156.4, 286.2, 263.0), "the record holds the entry: Popivoda Gorčina Krsto, born 1910"),
+    ('0041000054', '9002000050', '977', 62, (213.8, 144.7, 297.3, 254.6), "the record holds the entry: Baletić Lazara Marko, born 1917"),
+    ('0041000129', '9002000116', '977', 102, (213.9, 313.4, 297.1, 423.4), "the record holds the entry: Boljević Milića Stevo, born ?"),
+    ('0041000151', '9002000135', '977', 114, (121.4, 312.6, 205.8, 423.3), "the record holds the entry: Božović Jovana Vukosav, born 1916"),
+    ('0041000332', '9002000356', '977', 276, (214.2, 313.4, 298.0, 424.0), "the record holds the entry: Grozdanić Luke Milutin, born 1915"),
+    ('0041000736', '9002000677', '977', 511, (109.9, 313.8, 195.5, 423.0), "the record holds the entry: Martinović Vasa Nikola, born 1915"),
+    ('0041000877', '9002000791', '977', 585, (203.2, 149.5, 287.2, 260.3), "the record holds the entry: Mugoša Vida Andrija, born 1910"),
+    ('0041000952', '9002000871', '978', 80, (24.5, 120.2, 108.0, 227.2), "the record holds the entry: Pavličić Pere Miladin, born 1920"),
+    ('0041001403', '9002001250', '978', 338, (25.7, 152.1, 107.2, 260.1), "the record holds the entry: Vučinić Vučine Luka, born 1922"),
+    ('0041001507', '9002000308', '977', 242, (27.1, 29.3, 112.5, 140.8), "the record holds the entry: Đurović Mihaila Veselin (Aga), born 1924"),
+    ('0042000111', '9002000277', '977', 220, (26.4, 113.0, 111.8, 225.1), "the record holds the entry: Džindo Ćamila Ragib, born ?"),
+    ('0042000121', '9002000310', '977', 245, (112.0, 119.7, 197.0, 227.0), "the record holds the entry: Ećimović Manojla Marko, born 1909"),
+    ('0042000166', '9002000371', '977', 289, (22.3, 188.6, 106.8, 295.8), "the record holds the entry: Herljević Franje Franjo, born 1915"),
+    ('0042000350', '9002000647', '977', 491, (19.7, 126.9, 103.6, 233.2), "the record holds the entry: Mandžić Huseina Pašaga (Murat), born 1907"),
+    ('0042000800', '9002001158', '978', 273, (16.8, 159.3, 99.3, 268.5), "the record holds the entry: Šurbat Ilije Branko (Bane), born 1920"),
+    ('0043000058', '9002000026', '977', 47, (19.0, 313.8, 103.9, 423.0), "the record holds the entry: Babić Tome Ilija, born 1911"),
+    ('0043000072', '9002000042', '977', 57, (111.8, 319.4, 196.1, 422.5), "the record holds the entry: Bajović Vladimira Miloš, born 1921"),
+    ('0043000077', '9002000052', '977', 63, (204.9, 143.5, 286.7, 252.7), "the record holds the entry: Balorda Dušana Mladen, born 1921"),
+    ('0043000133', '9002000089', '977', 85, (204.0, 188.2, 288.7, 299.3), "the record holds the entry: Bjelica Nikole Nikola (Breda), born 1919"),
+    ('0043000891', '9002000848', '978', 55, (16.8, 131.0, 99.8, 237.4), "the record holds the entry: Orman Alije Enes, born ?"),
+    ('0043000945', '9002000912', '978', 106, (114.7, 30.7, 197.7, 136.5), "the record holds the entry: Pintul Selima Ahmet, born 1923"),
+    ('0043001340', '9002000202', '977', 165, (111.3, 118.3, 189.5, 226.5), "the record holds the entry: Ćemalović Ahmeta Mujo (Ćimba), born 1919"),
+    ('0043001374', '9002000196', '977', 160, (120.7, 148.8, 205.6, 261.3), "the record holds the entry: Čolović Vidaka Savo, born 1911"),
+    ('0043001417', '9002001115', '978', 244, (203.9, 156.7, 284.0, 259.6), "the record holds the entry: Šarenac Vase Danilo, born 1913"),
+    ('0043001517', '9002001188', '978', 294, (24.9, 211.4, 107.2, 319.4), "the record holds the entry: Trbonja Jusufa Mehmed, born 1915"),
+    ('0044000376', '9002000574', '977', 434, (213.8, 156.9, 297.3, 267.1), "the record holds the entry: Krunić Jovana Uroš, born 1914"),
+    ('0044000501', '9002000740', '977', 551, (111.1, 138.0, 194.1, 246.2), "the record holds the entry: Milojević Milana Radomir (Rade), born 1918"),
+    ('0045000184', '9002000355', '977', 276, (121.2, 314.1, 206.1, 425.2), "the record holds the entry: Grmuša Petra Radovan (Rara), born 1907"),
+    ('0045000513', '9002000899', '978', 98, (24.2, 142.5, 107.7, 249.5), "the record holds the entry: Petrović Petra Adam (Gigac), born 1913"),
+    ('0045000649', '9002001107', '978', 237, (107.5, 125.7, 190.1, 233.7), "the record holds the entry: Suzić Adama Miloš, born 1908"),
+    ('0047000060', '9002000474', '977', 365, (19.9, 32.6, 103.6, 140.1), "the record holds the entry: Kalanja Jovana Petar (Pero), born 1915"),
+    ('0048000180', '9002000276', '977', 219, (111.3, 137.0, 195.5, 246.7), "the record holds the entry: Džever Đure Pavle, born 1919"),
+    ('0048010421', '9002000144', '977', 120, (214.0, 29.5, 298.5, 139.4), "the record holds the entry: Brkić Danila Rade, born 1913"),
+    ('0048013777', '9002001301', '978', 377, (196.2, 300.7, 277.8, 409.9), "the record holds the entry: Zorić Nikole Milan, born 1912"),
+    ('0049000040', '9002000118', '977', 104, (29.0, 30.0, 114.2, 135.8), "the record holds the entry: Borojević Jove Petar, born 1916"),
+    ('0049000041', '9002000121', '977', 106, (123.6, 166.3, 207.4, 279.1), "the record holds the entry: Bosić Vlade Pero, born 1921"),
+    ('0049000091', '9002000341', '977', 267, (112.8, 185.5, 196.0, 296.4), "the record holds the entry: Goranin Mavra Pavle (Ilija), born 1915"),
+    ('0049000152', '9002000535', '977', 407, (202.2, 192.7, 286.5, 299.7), "the record holds the entry: Kosorić Rada Pero, born 1919"),
+    ('0049010283', '9002000371', '977', 289, (22.3, 188.6, 106.8, 295.8), "the record holds the entry: Herljević Franje Franjo, born 1915"),
+    ('0049010284', '9002000371', '977', 289, (22.3, 188.6, 106.8, 295.8), "the record holds the entry: Herljević Franje Franjo, born 1915"),
+    ('0049011332', '9002001010', '978', 175, (108.2, 139.9, 191.2, 245.5), "the record holds the entry: Rikić Neđe Dujo, born 1919"),
+    ('0049011753', '9002001266', '978', 348, (114.4, 149.7, 196.5, 255.1), "the record holds the entry: Vujović Blaža Ratko (Čoče), born 1916"),
+    ('0049011754', '9002001266', '978', 348, (114.4, 149.7, 196.5, 255.1), "the record holds the entry: Vujović Blaža Ratko (Čoče), born 1916"),
+    ('0052000450', '9002000371', '977', 289, (22.3, 188.6, 106.8, 295.8), "the record holds the entry: Herljević Franje Franjo, born 1915"),
+    ('0054000145', '9002000059', '977', 67, (203.2, 33.8, 286.0, 141.6), "the record holds the entry: Bašić Đoke Rade, born 1919"),
+    ('0057002167', '9002000768', '977', 570, (26.9, 152.6, 112.5, 263.5), "the record holds the entry: Miščević Špire Vera, born 1925"),
+    ('0057003716', '9002001273', '978', 352, (203.4, 124.5, 285.0, 232.3), "the record holds the entry: Vukasović Nastasa Dušan (Diogen), born 1909"),
+    ('0059000185', '9002000121', '977', 106, (123.6, 166.3, 207.4, 279.1), "the record holds the entry: Bosić Vlade Pero, born 1921"),
+    ('0060010104', '9002000825', '978', 36, (204.6, 169.2, 286.7, 275.2), "the record holds the entry: Novković Jovana Momčilo, born 1916"),
+    ('0061000209', '9002000132', '977', 113, (21.1, 105.8, 104.9, 221.7), "the record holds the entry: Božović Pavla Radomir (Raco), born 1915"),
+    ('0061000310', '9002000175', '977', 145, (203.4, 33.8, 286.2, 142.0), "the record holds the entry: Cetinski Martina Andrej (Lev), born 1921"),
+    ('0061002254', '9002001064', '978', 211, (106.3, 140.4, 189.8, 249.3), "the record holds the entry: Stadler Franca Franc (Pepe), born 1915"),
+    ('0065000116', '9002000175', '977', 145, (203.4, 33.8, 286.2, 142.0), "the record holds the entry: Cetinski Martina Andrej (Lev), born 1921"),
+    ('0068000153', '9002000345', '977', 270, (27.6, 317.0, 113.7, 424.0), "the record holds the entry: Grajzer Franca Albin, born 1922"),
+    ('0069000212', '9002000175', '977', 145, (203.4, 33.8, 286.2, 142.0), "the record holds the entry: Cetinski Martina Andrej (Lev), born 1921"),
+    ('0069001655', '9002001047', '978', 201, (106.6, 167.0, 188.9, 275.5), "the record holds the entry: Simončič Franca Vinko (Gašper), born 1914"),
+    ('0070000121', '9002000132', '977', 113, (21.1, 105.8, 104.9, 221.7), "the record holds the entry: Božović Pavla Radomir (Raco), born 1915"),
+    ('0070000314', '9002000345', '977', 270, (27.6, 317.0, 113.7, 424.0), "the record holds the entry: Grajzer Franca Albin, born 1922"),
+    ('0070000606', '9002000541', '977', 411, (110.4, 134.1, 194.6, 242.3), "the record holds the entry: Kotar Antona Martin, born 1922"),
+    ('0070001205', '9002001040', '978', 197, (18.0, 162.9, 102.2, 267.3), "the record holds the entry: Semič Jožeta Stane (Daki), born 1915"),
+    ('0071000053', '9002000138', '977', 116, (123.3, 190.8, 206.8, 298.2), "the record holds the entry: Brajović Vida Petar, born 1915"),
+    ('0074000977', '9002001082', '978', 223, (16.1, 129.3, 98.6, 230.3), "the record holds the entry: Stefanović Koste Ivan (Srba), born 1912"),
+    ('0077000180', '9002000138', '977', 116, (123.3, 190.8, 206.8, 298.2), "the record holds the entry: Brajović Vida Petar, born 1915"),
+    ('0077000252', '9002000239', '977', 195, (202.2, 131.5, 286.7, 240.7), "the record holds the entry: Doda Dževdet, born 1906"),
+    ('0077000937', '9002000988', '978', 160, (204.2, 137.2, 286.2, 243.1), "the record holds the entry: Raičević Ilije Vladimir (Vlado), born 1922"),
+    ('0077001132', '9002001105', '978', 236, (117.8, 126.9, 199.4, 235.6), "the record holds the entry: Surčević Tome Slobodan (Boro), born 1919"),
+    ('0077001336', '9002000286', '977', 226, (215.2, 165.8, 298.5, 277.0), "the record holds the entry: Đorđević Stanka Dragutin (Alija), born 1920"),
+    ('0080001145', '9002001082', '978', 223, (16.1, 129.3, 98.6, 230.3), "the record holds the entry: Stefanović Koste Ivan (Srba), born 1912"),
+    ('0081001350', '9002000196', '977', 160, (120.7, 148.8, 205.6, 261.3), "the record holds the entry: Čolović Vidaka Savo, born 1911"),
+    ('0082001516', '9002000531', '977', 405, (110.4, 317.7, 195.3, 422.1), "the record holds the entry: Korica Milanka Milan (Kovač), born 1919"),
+    ('0093000066', '9002000420', '977', 326, (120.9, 30.0, 205.8, 139.4), "the record holds the entry: Javorina Milana Savka (Saša), born 1918"),
+    ('0093000080', '9002000462', '977', 355, (19.9, 31.9, 104.4, 140.8), "the record holds the entry: Jović Vojislava Ratomir (Duško), born 1915"),
+    ('0093000181', '9002000874', '978', 81, (197.4, 119.5, 280.2, 225.1), "the record holds the entry: Pavlović Dragomira Drinka, born 1919"),
+    ('0093000193', '9002000901', '978', 99, (105.3, 141.6, 188.3, 247.4), "the record holds the entry: Petrović Srbina Dragoslav (Gorski), born 1919"),
+    ('0093000276', '9002001285', '978', 360, (203.7, 157.6, 284.8, 260.6), "the record holds the entry: Vuksanović Obrena Slavoljub (Jajko), born 1922"),
+    ('0093000281', '9002001290', '978', 369, (106.3, 96.5, 188.6, 203.2), "the record holds the entry: Zakić Vukadina Miloje (Bliher), born 1912"),
+    ('0093000294', '9002000307', '977', 241, (111.4, 143.5, 195.1, 253.8), "the record holds the entry: Đurović Spasoja Vasilije (Žarki), born 1920"),
+    ('0093000299', '9002001311', '978', 388, (25.7, 123.6, 108.0, 230.3), "the record holds the entry: Žilnik Viktora Konrad (Slobodan), born 1919"),
+    ('0097000032', '9002000033', '977', 51, (208.0, 42.9, 285.5, 142.5), "the record holds the entry: Badel Slavka Marijan, born 1920"),
+    ('0100001584', '9002001188', '978', 294, (24.9, 211.4, 107.2, 319.4), "the record holds the entry: Trbonja Jusufa Mehmed, born 1915"),
+    ('0109000032', '9002000013', '977', 32, (120.5, 169.4, 206.1, 280.7), "the record holds the entry: Antolović Franje Josip (Hrvat), born 1916"),
+    ('0109000323', '9002000333', '977', 263, (111.8, 31.0, 196.7, 140.4), "the record holds the entry: Gavrić Gavre Veselin, born 1918"),
+    ('0109001078', '9002000973', '978', 152, (115.4, 143.0, 199.1, 249.8), "the record holds the entry: Radosavljević Stevana Dobrosav (Narod), born ?"),
+    ('0109001239', '9002001075', '978', 219, (16.3, 158.4, 99.1, 267.3), "the record holds the entry: Stanković Mihaila Aleksandar (Lala), born 1907"),
+    ('0110000026', '9002000006', '977', 27, (203.7, 256.3, 288.1, 367.1), "the record holds the entry: Aksentijević Danila Vladimir (Vlada), born 1916"),
+    ('0112000138', '9002000382', '977', 296, (213.5, 201.3, 298.0, 312.6), "the record holds the entry: Humo Saliha Avdo, born 1914"),
+    ('0112000164', '9002000449', '977', 347, (19.7, 149.7, 104.1, 258.9), "the record holds the entry: Jovanović Vladimira Petar, born 1911"),
+    ('0112000214', '9002000573', '977', 434, (26.4, 156.0, 110.8, 266.3), "the record holds the entry: Krstulović Marka Vicko, born 1906"),
+    ('0112000341', '9002000924', '978', 114, (204.2, 156.4, 286.2, 263.0), "the record holds the entry: Popivoda Gorčina Krsto, born 1910"),
+    ('0114000117', '9002001281', '978', 358, (115.2, 98.4, 197.2, 206.6), "the record holds the entry: Vukotić Drago Jovan, born 1907"),
+    ('0115000006', '9002000029', '977', 49, (18.2, 210.4, 102.4, 320.1), "the record holds the entry: Babić Sime Radomir, born ?"),
+    ('0115000017', '9002000111', '977', 99, (202.8, 34.6, 285.4, 142.8), "the record holds the entry: Bojović Dragiše Dušan, born 1914"),
+    ('0115000105', '9002000895', '978', 95, (105.1, 120.2, 188.3, 226.0), "the record holds the entry: Perović Savića Puniša, born 1911"),
+    ('0116000057', '9002000502', '977', 386, (26.4, 150.0, 112.0, 260.8), "the record holds the entry: Kladarin J. Đuro, born 1916"),
+    ('0117000598', '9002001224', '978', 321, (16.1, 28.3, 99.1, 135.1), "the record holds the entry: Vilotijević Ignjata Rade (Vića), born 1910"),
+    ('0118000533', '9002000825', '978', 36, (204.6, 169.2, 286.7, 275.2), "the record holds the entry: Novković Jovana Momčilo, born 1916"),
+    ('0118000895', '9002001291', '978', 370, (25.9, 31.4, 108.0, 139.2), "the record holds the entry: Zaklan Jovana Dmitar, born 1915"),
+    ('0118000985', '9002001152', '978', 269, (196.0, 31.4, 276.6, 134.6), "the record holds the entry: Štulić Vase Mirko, born 1914"),
+    ('0119001146', '9002001192', '978', 296, (114.9, 136.0, 196.5, 245.5), "the record holds the entry: Trifunović Avrama Radmila (Hitra), born 1919"),
+    ('0119001173', '9002001210', '978', 312, (115.6, 30.5, 197.9, 136.8), "the record holds the entry: Vasović Boška Čedomir (Čedo), born 1910"),
+    ('0120000128', '9002000394', '977', 307, (112.0, 141.1, 197.0, 251.2), "the record holds the entry: Ivetić Ilije Vojislav, born 1920"),
+    ('0120000300', '9002000926', '978', 116, (204.4, 31.7, 286.0, 137.5), "the record holds the entry: Popović Jovana Ilija, born 1917"),
+    ('0123000701', '9002000498', '977', 382, (213.8, 201.3, 297.3, 311.4), "the record holds the entry: Kesić Miloša Mirko (Kešo), born 1923"),
+    ('0123001014', '9002000680', '977', 513, (202.5, 147.8, 288.1, 257.9), "the record holds the entry: Marušić Ivana Ivica (Ratko), born 1912"),
+    ('0123001774', '9002001198', '978', 300, (25.7, 136.0, 107.5, 244.3), "the record holds the entry: Tubić Ostoje Mile, born 1919"),
+    ('0125000052', '9002000052', '977', 63, (204.9, 143.5, 286.7, 252.7), "the record holds the entry: Balorda Dušana Mladen, born 1921"),
+    ('0125000117', '9002000150', '977', 124, (26.6, 141.6, 112.8, 253.4), "the record holds the entry: Bruk Franje Leo, born 1910"),
+    ('0125000485', '9002000795', '977', 588, (27.4, 30.7, 113.0, 140.4), "the record holds the entry: Mujić Ibrahima Safet, born 1908"),
+    ('0125000512', '9002000848', '978', 55, (16.8, 131.0, 99.8, 237.4), "the record holds the entry: Orman Alije Enes, born ?"),
+    ('0125000545', '9002000912', '978', 106, (114.7, 30.7, 197.7, 136.5), "the record holds the entry: Pintul Selima Ahmet, born 1923"),
+    ('0125000674', '9002001188', '978', 294, (24.9, 211.4, 107.2, 319.4), "the record holds the entry: Trbonja Jusufa Mehmed, born 1915"),
+    ('0125000734', '9002001289', '978', 368, (203.7, 99.6, 284.5, 207.3), "the record holds the entry: Zahirović Salka Hasan (Laca), born 1920"),
+    ('0126000319', '9002000453', '977', 349, (111.6, 313.8, 196.5, 422.5), "the record holds the entry: Jovanović Dragutina Radovan, born 1917"),
+    ('0126000351', '9002000476', '977', 366, (214.0, 140.6, 298.2, 248.8), "the record holds the entry: Kapelan Koste Bogdan, born 1914"),
+    ('0126000707', '9002000829', '978', 42, (23.7, 114.7, 107.0, 221.2), "the record holds the entry: Obradović Jezdimira Branislav (Džambo), born 1919"),
+    ('0141000193', '9002000456', '977', 351, (111.1, 156.7, 196.0, 266.1), "the record holds the entry: Jovanović Svetomira Zdravko, born 1909"),
+    ('0141000401', '9002000766', '977', 568, (214.5, 159.6, 299.0, 268.7), "the record holds the entry: Mirtič Jožeta Jože (Zidar), born 1912"),
+    ('0141000506', '9002000922', '978', 113, (108.7, 152.1, 192.5, 258.7), "the record holds the entry: Popek Antona Alojz (Vandek), born 1920"),
+    ('0141000679', '9002001130', '978', 255, (195.5, 30.7, 275.6, 137.5), "the record holds the entry: Šilc Alojza Majda, born 1923"),
+    ('0142000508', '9002001199', '978', 300, (203.7, 136.3, 284.5, 244.3), "the record holds the entry: Turšič Ivana Ivan (Iztok), born 1922"),
+    ('0142000574', '9002001127', '978', 253, (107.0, 126.9, 189.5, 235.1), "the record holds the entry: Šibelja Antona Anton (Stjenka), born 1914"),
+    ('0147000037', '9002000065', '977', 72, (27.4, 308.3, 112.8, 424.5), "the record holds the entry: Belinić Bartola Marko, born 1911"),
+    ('0148001987', '9002000841', '978', 50, (24.7, 140.4, 108.0, 247.1), "the record holds the entry: Opačić Stevana Stevo, born 1923"),
+    ('0148002450', '9002001006', '978', 172, (115.2, 176.8, 198.4, 283.6), "the record holds the entry: Reić Ante Srećko (Petica), born 1914"),
+    ('0148010070', '9002000573', '977', 434, (26.4, 156.0, 110.8, 266.3), "the record holds the entry: Krstulović Marka Vicko, born 1906"),
+    ('0150000095', '9002000345', '977', 270, (27.6, 317.0, 113.7, 424.0), "the record holds the entry: Grajzer Franca Albin, born 1922"),
+    ('0150000253', '9002000783', '977', 580, (28.1, 315.8, 113.5, 424.2), "the record holds the entry: Moškrič Janeza Jože (Ciril), born 1902"),
+    ('0150000405', '9002001287', '978', 367, (195.8, 110.6, 277.1, 218.8), "the record holds the entry: Zabukovec Leopolda Milan (Miloš), born 1923"),
+    ('0168000114', '9002000035', '977', 52, (215.0, 314.8, 297.3, 423.7), "the record holds the entry: Bagat Stipe Vlado, born 1915"),
+    ('0168003554', '9002001035', '978', 193, (197.1, 145.4, 278.7, 251.0), "the record holds the entry: Savin Jakova Ante (Manistra), born 1917"),
+]
+HEROES_1982_CREDIT = 'Petar Kačavenda, Narodni heroji Jugoslavije (1982)'
+
 SAME = [
     # one man under two records that aren't linked, each with a photo of its own (another photo, or another crop),
     # checked by hand: lists of faces (the Galerija page, the home page's margins) show him once
@@ -1413,6 +1682,8 @@ SAME = [
     ('0001004941', '0007002272', 'Kapičić Jovo (Jovan), born 1919 in Gaeta, in both units'),
     ('0109000870', '0016002048', 'Nenezić Radojica, born 1921, Broćanac (Nikšić), in both units'),
     ('0163000104', '0048000364', 'Kecman Pero, father Jovo, born 1921 near Bosanski Petrovac'),
+    ('0001001840', '0036002039', 'Ćetković Pero, narodni heroj, born 1907 in Mužovići (Ljubotinj), fell March 1943 near Nevesinje: '
+                                 'the Prva proleterska\'s book and a Commons crop of the 1. dalmatinska\'s staff photo'),
 ]
 
 def portrait_box(pg: fitz.Page, rects: list[fitz.Rect], x: float, y: float) -> list[float] | None:
@@ -1607,6 +1878,22 @@ def main():
             index[sid] = {**save(im, sid, credit), 'c': credit, 'h': href.format(book_page)}
             n += 1
         print(f'{pdf}: {n} portraits')
+    docs = {}
+    n = 0
+    for sid, _entry, vol, page, box, _why in HEROES_1982:
+        if sid in index:                    # the unit's own book comes first
+            continue
+        if vol not in docs:
+            docs[vol] = fitz.open(F.book_pdf(f'00003/{vol}.pdf'))
+        pg = docs[vol][page - 1]
+        hits = [i for i in pg.get_image_info() if fitz.Rect(i['bbox']).intersects(fitz.Rect(box))]
+        dpi = max([DPI] + [round(72 * i['width'] / (i['bbox'][2] - i['bbox'][0])) for i in hits if i['bbox'][2] > i['bbox'][0]])
+        pix = pg.get_pixmap(clip=fitz.Rect(box), dpi=min(dpi, 600), colorspace=fitz.csGRAY)
+        im = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
+        index[sid] = {**save(im, sid, HEROES_1982_CREDIT), 'c': HEROES_1982_CREDIT,
+                      'h': f'https://znaci.org/00003/{vol}.pdf#page={page}'}
+        n += 1
+    print(f'Narodni heroji Jugoslavije (1982): {n} portraits')
     for sid, name, crop, license, artist, _why in COMMONS:
         if sid in index:                    # a photo from the unit's own book comes first
             continue
@@ -1620,7 +1907,7 @@ def main():
     print(f'Commons: {len(COMMONS)} portraits')
     # Portraits this script doesn't make (the Proleterski bataljon Bosanske krajine's 180, cut beside each bio when
     # its unit came to the site) stay as they are: an entry whose credit is none of this script's sources
-    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT}
+    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, HEROES_1982_CREDIT}
     old = json.loads(INDEX.read_text(encoding='utf-8')) if INDEX.exists() else {}
     kept = {sid: e for sid, e in old.items() if sid not in index and e['c'] not in own
             and not e['c'].startswith(('znaci.org, br.', 'Wikimedia Commons')) and 'Wikimedia Commons' not in e['c']}
