@@ -16,7 +16,10 @@ unresolved (several places of the name, or none GeoNames knows) and is left alon
     case_nominative(text)              a place stored in a case that GeoNames left unresolved (a name of several
                                        places, or of none it knows), from data-extraction/places/case_forms.json:
                                        "na Sutjesci" -> "Sutjeska", "u s. Bazje, Šid" -> "Bazje, Šid"; apply()
-                                       uses it where the resolved places have nothing
+                                       uses it where the resolved places have nothing, after the table's
+                                       births: a record's birthplace whose form is a case there and a village's
+                                       own name elsewhere ("Marini, Trogir" -> "Marina, Trogir", not the
+                                       Marini by Prijedor), soldier_id -> [the field as read, the new field]
 
 scripts/apply_corrections.py runs apply() on every unit it writes. The entries' text is never touched.
 
@@ -59,8 +62,8 @@ def case_forms() -> dict:
     try:
         t = json.loads(CASES.read_text(encoding='utf-8'))
     except FileNotFoundError:
-        return {'forms': {}, 'bare': set()}
-    return {'forms': t['forms'], 'bare': set(t['bare'])}
+        return {'forms': {}, 'bare': set(), 'births': {}, 'direct': set()}
+    return {'forms': t['forms'], 'bare': set(t['bare']), 'births': t.get('births', {}), 'direct': set(t.get('direct', []))}
 
 
 def case_nominative(text: str, s: dict | None = None) -> str | None:
@@ -75,7 +78,15 @@ def case_nominative(text: str, s: dict | None = None) -> str | None:
     new = t['forms'].get(form)
     if new is None:
         return None
-    if not (m.group(1) or m.group(2) or form in t['bare']):
+    if form in t['direct']:
+        # a form that is a village's own name somewhere ("Peći", "Brezovici"): only right after "u", never after
+        # "u selu" ("u selu Peći" is the village Peći of Bosansko Grahovo)
+        if m.group(2):
+            return None
+        printed = re.compile(rf'(?<![\w])(?:u|na|v)\s+{re.escape(form)}(?![\w])')
+        if not m.group(1) and (s is None or not any(printed.search(x) for x in _texts(s))):
+            return None
+    elif not (m.group(1) or m.group(2) or form in t['bare']):
         printed = re.compile(rf'(?<![\w])(?:u|na|v)\s+(?:s\.\s*|selu\s+)?{re.escape(form)}(?![\w])')
         if s is None or not any(printed.search(x) for x in _texts(s)):
             return None
@@ -120,12 +131,17 @@ def nominative(unit_file: str, field: str, s: dict) -> str | None:
 def apply(unit_file: str, soldiers: list[dict], manual: dict | None = None) -> Counter:
     """put each resolved village in the nominative in place; manual: soldier_id -> fields corrections set"""
     done = Counter()
+    births = case_forms()['births']
     for s in soldiers:
         kept = (manual or {}).get(s.get('soldier_id'), ())
         for field in FIELDS:
             if field in kept or not s.get(field):
                 continue
-            new = nominative(unit_file, field, s) or case_nominative(s[field], s)
+            # a birthplace whose form is a case in one record and a village's own name in another ("u Marini, Trogir"
+            # is Marina, "u selu Marini, Prijedor" Marini): the table's record, while the field is as it was read
+            own = births.get(s.get('soldier_id')) if field == 'birth_place' else None
+            new = (own[1] if own and own[0] == s[field] else None) or nominative(unit_file, field, s) \
+                or case_nominative(s[field], s)
             if new and new != s[field]:
                 s[field] = new
                 done[field] += 1
