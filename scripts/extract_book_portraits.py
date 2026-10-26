@@ -137,6 +137,8 @@ GALLERY = [
     ('0039100084', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić "levo u prvom redu", narodni heroj, died 10 August 1943 at Krivaja (caption and record)'),
     ('0039000077', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić, died 10 August 1943, Ribnica on the Krivaja (the same man as 0039100084)'),
     ('0039010003', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić of Otanj, drowned in the Krivaja 10 August 1943 (the same man as 0039100084)'),
+    ('0112000286', 12169, (0, 0, 1, 1), 'Dr Simo Milošević, member of the AVNOJ executive committee, wounded at the Sutjeska, killed by chetniks in Vrbnica (the museum card and the record)'),
+    ('0148000114', 14868, (0.68, 0.05, 0.95, 0.42), 'the staff of the IV operativna zona, Livno, September 1942, "s leva na desno": Terzić, Krstulović, Kukoč, Maks Baće (the right one); the record: operativni oficir of that staff from April 1942'),
 ]
 
 BOOK_TITLES = {

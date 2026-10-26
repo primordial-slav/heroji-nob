@@ -496,6 +496,9 @@ export const WARTIME_PORTRAITS: string[] = [
   '0006002407',
   '0095000289',
   '0035108825',
+  // znaci.org gallery, museum cards (2026-10-26)
+  '0112000286',
+  '0148000114',
   // family photos (data/family.ts)
   '0002000242',
 ]
