@@ -1,4 +1,4 @@
-import { formatNumber, plural } from '../format'
+import { dateNumbers, formatNumber, plural } from '../format'
 
 // The site's own text in Serbo-Croatian (ekavica, Latin script). VOICE.md says how it is written.
 // Text in [brackets] becomes a link or a button where the page puts one.
@@ -156,12 +156,12 @@ export const sr = {
     fate: (type: string | undefined, woman: boolean): string => {
       const words: Record<string, [string, string]> = {
         poginuo: ['Poginuo', 'Poginula'], umro: ['Umro', 'Umrla'], nestao: ['Nestao', 'Nestala'],
-        streljan: ['Streljan', 'Streljana'], ubijen: ['Ubijen', 'Ubijena'],
+        streljan: ['Streljan', 'Streljana'], ubijen: ['Ubijen', 'Ubijena'], zarobljen: ['Zarobljen', 'Zarobljena'],
       }
       return (words[type ?? ''] ?? ['Smrt', 'Smrt'])[woman ? 1 : 0]
     },
     /** a step's day or month under its year: "11. 7.", "decembar" */
-    day: (d: number, m: number) => `${d}. ${m}.`,
+    day: (d: number, m: number) => dateNumbers(d, m),
     month: (m: number) => MONTHS[m - 1],
     /** where a fact leads, with its count */
     neighbours: (x: number) => `još ${n(x)} iz tog mesta`,
@@ -170,6 +170,8 @@ export const sr = {
     sameDayShort: 'istog dana',
     /** a death the record gives without a date or a place */
     undated: 'datum nije naveden',
+    /** a survivor who has died since, with no year ("† po osvoboditvi") */
+    afterWar: 'posle rata',
   },
 
   record: {
@@ -282,7 +284,7 @@ export const sr = {
     thisRecord: 'ovaj zapis',
     more: (x: number) => `još ${n(x)}`,
     count: (x: number) => n(x),
-    day: (d: number, m: number, y: number) => `${d}. ${m}. ${y}.`,
+    day: (d: number, m: number, y: number) => dateNumbers(d, m, y),
     // Sub-units, as the books name them
     battalion: (x: number) => `${x}. bataljon`,
     company: (x: number) => `${x}. četa`,

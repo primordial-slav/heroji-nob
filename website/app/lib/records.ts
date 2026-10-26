@@ -59,7 +59,7 @@ export function recordDetails(soldier: Soldier, t: Messages): [string, string][]
     [f.occupation, soldier.occupation],
     [f.rank, soldier.rank],
     [f.unitDetail, soldier.unit_detail],
-    [died ? f.deathDate : f.killedDate, soldier.death_date],
+    [died ? f.deathDate : f.killedDate, soldier.death_date || (soldier.death_after_war ? t.life.afterWar : undefined)],
     [died ? f.deathPlace : f.killedPlace, soldier.death_place],
   ]
   return details.filter((d): d is [string, string] => Boolean(d[1]))

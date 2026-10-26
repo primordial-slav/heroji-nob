@@ -99,6 +99,10 @@ def parse_one(s: str) -> tuple[int, int, int] | None:
     m = re.search(rf'\b({ROM})\.?\s({Y})', s)
     if m:
         return int(m.group(2)), ROMAN_OF[m.group(1)], 0
+    # a month in numbers, as the fields store it (scripts/standardize_fields.py): 06.1943
+    m = re.fullmatch(rf'(\d{{1,2}})\.\s?({Y})', s)
+    if m and 1 <= int(m.group(1)) <= 12:
+        return int(m.group(2)), int(m.group(1)), 0
     m = re.search(Y, s)
     return (int(m.group(0)), 0, 0) if m else None
 
@@ -115,6 +119,12 @@ def parse_when(s: str) -> tuple[tuple, tuple | None] | None:
         a, b = parse_one(m.group(1)), parse_one(m.group(2))
         if a and b and a[:2] <= b[:2]:
             return a, b
+    # days in numbers, as the fields store them (scripts/standardize_fields.py): 03-08.06.1943, the night 29/30.10.1944
+    m = re.fullmatch(rf'(\d{{1,2}})[/-](\d{{1,2}})\.(\d{{1,2}})\.({Y})', s)
+    if m:
+        a, b, mon, y = (int(g) for g in m.groups())
+        if 1 <= mon <= 12 and 1 <= a < b <= 31:
+            return (y, mon, a), (y, mon, b)
     one = parse_one(s)
     return (one, None) if one else None
 
@@ -326,6 +336,8 @@ def phrase_of(s: dict, e: dict) -> str:
     return (entry.get('additional_info') or '')[e['at'][0]:e['at'][1]]
 
 
+NOT_DEATHS = {'zarobljen': 'captured', 'ranjen': 'wounded'}       # death_type: no death, as lib/deathDay.ts
+
 def life_events(s: dict, code: int) -> list[dict]:
     entries = [s] + list(s.get('other_sources') or [])
     steps: list[dict] = []
@@ -345,10 +357,19 @@ def life_events(s: dict, code: int) -> list[dict]:
         if born:
             step['at'] = [born[0], born[0] + len(born[1])]
         steps.append(step)
-    if s.get('death_date'):
+    # a fate that is no death (zarobljen, ranjen): its date is the capture's or the wound's, a step of that kind
+    # unless the text gives one
+    kind = NOT_DEATHS.get(s.get('death_type'), 'death')
+    if s.get('death_date') and kind != 'death' and not any(st['k'] == kind for st in steps):
+        when = parse_when(s['death_date'])
+        if when and 1941 <= when[0][0] <= 1945:
+            steps.append({'k': kind, 'd': iso(when[0]), 's': 0, '_at': 10 ** 6})
+    if s.get('death_date') and kind == 'death':
         when = parse_when(s['death_date'])
         if when and 1941 <= when[0][0] <= 2000:
             step = {'k': 'death', 'd': iso(when[0]), 's': 0, '_at': 10 ** 6}
+            if when[1]:
+                step['e'] = iso(when[1])                                 # fell between two days: "3—8. juna 1943"
             for i, e in enumerate(entries):
                 ph = death_phrase(e.get('additional_info') or '')
                 if ph:

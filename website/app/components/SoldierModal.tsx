@@ -209,6 +209,9 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
       link: neighbours.place ? { text: t.life.neighbours(neighbours.place.others), open: () => openKin('neighbours', 'place') } : undefined,
     })
   }
+  // the nationality and the trade, as the books give them (the census's "Šiptar" is Albanac: scripts/standardize_fields.py)
+  if (soldier.ethnicity) facts.push({ key: 'ethnicity', label: t.record.fields.ethnicity, value: soldier.ethnicity })
+  if (soldier.occupation) facts.push({ key: 'occupation', label: t.record.fields.occupation, value: soldier.occupation })
   if (soldier.unit_detail || soldier.rank) {
     facts.push({
       key: 'unit',
@@ -222,12 +225,14 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   if (party.length) {
     facts.push({ key: 'party', label: t.life.member(woman), value: t.life.party(party) })
   }
-  // a death the record gives without a date or a place still shows ("Umro", a survivor who has died since)
+  // a death the record gives without a date or a place still shows ("Umro", a survivor who has died since; "Umro:
+  // posle rata", one the Slovene rosters mark "† po osvoboditvi")
   if (soldier.death_date || soldier.death_place || soldier.death_type) {
+    const when = soldier.death_date || (soldier.death_after_war ? t.life.afterWar : '')
     facts.push({
       key: 'death',
       label: t.life.fate(soldier.death_type, woman),
-      value: [soldier.death_date, soldier.death_place].filter(Boolean).join(', ') || t.life.undated,
+      value: [when, soldier.death_place].filter(Boolean).join(', ') || t.life.undated,
       link: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
     })
   }

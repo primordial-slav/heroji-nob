@@ -3026,7 +3026,6 @@
     "birth_place": "Šmartno ob Savi",
     "occupation": "natakar",
     "death_type": "umro",
-    "death_date": "po vojni",
     "other_sources": [
       {
         "soldier_id": "0167010007",
@@ -3076,7 +3075,8 @@
         "unit_file": "tomsiceva-soldiers.json"
       }
     ],
-    "unit_detail": "Štab brigade"
+    "unit_detail": "Štab brigade",
+    "death_after_war": true
   },
   {
     "last_name": "Bobnar",
@@ -3840,8 +3840,8 @@
     "pdf_x_end": 302.4,
     "birth_place": "Ljubljana",
     "death_type": "umro",
-    "death_date": "po osvoboditvi",
     "death_place": "Brezovica",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0070000133",
@@ -4666,7 +4666,7 @@
     "pdf_x_end": 108.7,
     "birth_place": "Orkljevec pri Mirni Peči",
     "death_type": "umro",
-    "death_date": "po osvoboditvi",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0070000154",
@@ -9711,8 +9711,8 @@
       }
     ],
     "death_type": "umro",
-    "death_date": "po osvoboditvi",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Habjan",
@@ -14740,7 +14740,7 @@
     "pdf_x_end": 96.7,
     "birth_place": "Slape, Ljubljana",
     "death_type": "umro",
-    "death_date": "po osvoboditvi",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0070000525",
@@ -18851,7 +18851,7 @@
     "pdf_x_end": 313.9,
     "birth_place": "Otočec",
     "death_type": "umro",
-    "death_date": "po osvoboditvi",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0070000688",
@@ -21184,7 +21184,7 @@
     "pdf_x_end": 301.2,
     "birth_place": "Jelševnik, Črnomelj",
     "death_type": "umro",
-    "death_date": "po vojni",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0070010083",
@@ -40215,7 +40215,7 @@
     "unit_detail": "Štab brigade",
     "birth_place": "Dolga Njiva",
     "death_type": "poginuo",
-    "death_date": "14.7.1944",
+    "death_date": "14.07.1944",
     "death_place": "pri Težki vodi pri Novem mestu"
   },
   {

@@ -34,6 +34,13 @@ export function plural(lang: Lang, n: number, forms: { one: string; two?: string
   return forms[form] ?? forms.other
 }
 
+/** A date in numbers, as the records store it (scripts/standardize_fields.py): 14.02.1941, without the year 14.02.,
+ * in every language (the user's choice of 2026-10-26) */
+export function dateNumbers(d: number, m: number, y?: number): string {
+  const two = (x: number) => String(x).padStart(2, '0')
+  return y ? `${two(d)}.${two(m)}.${y}` : `${two(d)}.${two(m)}.`
+}
+
 /** 108150 -> "108.150", in English "108,150" (written out, so server and browser always agree) */
 export function formatNumber(lang: Lang, n: number): string {
   return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, lang === 'en' ? ',' : '.')

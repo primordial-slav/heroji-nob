@@ -1,4 +1,4 @@
-import { formatNumber, plural } from '../format'
+import { dateNumbers, formatNumber, plural } from '../format'
 import type { Messages } from './sr'
 
 // Македонски. Written for Macedonian readers, not translated word for word: the Macedonian words for the
@@ -153,17 +153,18 @@ export const mk: Messages = {
     fate: (type: string | undefined, woman: boolean) => {
       const words: Record<string, [string, string]> = {
         poginuo: ['Загинал', 'Загинала'], umro: ['Починал', 'Починала'], nestao: ['Исчезнат', 'Исчезната'],
-        streljan: ['Стрелан', 'Стрелана'], ubijen: ['Убиен', 'Убиена'],
+        streljan: ['Стрелан', 'Стрелана'], ubijen: ['Убиен', 'Убиена'], zarobljen: ['Заробен', 'Заробена'],
       }
       return (words[type ?? ''] ?? ['Смрт', 'Смрт'])[woman ? 1 : 0]
     },
-    day: (d: number, m: number) => `${d}.${m}`,
+    day: (d: number, m: number) => dateNumbers(d, m),
     month: (m: number) => MONTHS[m - 1],
     neighbours: (x: number) => `уште ${n(x)} од истото место`,
     comrades: (x: number) => borci(x),
     sameDay: (x: number) => `истиот ден уште ${n(x)}`,
     sameDayShort: 'истиот ден',
     undated: 'датумот не е наведен',
+    afterWar: 'по војната',
   },
 
   record: {
@@ -273,7 +274,7 @@ export const mk: Messages = {
     thisRecord: 'овој запис',
     more: (x: number) => `уште ${n(x)}`,
     count: (x: number) => n(x),
-    day: (d: number, m: number, y: number) => `${d}.${m}.${y}`,
+    day: (d: number, m: number, y: number) => dateNumbers(d, m, y),
     battalion: (x: number) => `${mkOrdinal(x)} баталјон`,
     company: (x: number) => `${mkOrdinal(x, true)} чета`,
     platoon: (x: number) => `${mkOrdinal(x)} вод`,

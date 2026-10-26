@@ -1,4 +1,4 @@
-import { formatNumber, plural } from '../format'
+import { dateNumbers, formatNumber, plural } from '../format'
 import type { Messages } from './sr'
 
 // English (British spelling). Written for English readers, many of them descendants abroad, not translated
@@ -148,14 +148,15 @@ export const en: Messages = {
     captured: () => 'Captured',
     exchanged: () => 'Exchanged',
     fate: (type: string | undefined) =>
-      ({ poginuo: 'Killed', umro: 'Died', nestao: 'Missing', streljan: 'Shot', ubijen: 'Killed' } as Record<string, string>)[type ?? ''] ?? 'Died',
-    day: (d: number, m: number) => `${d} ${MONTHS[m - 1].slice(0, 3)}`,
+      ({ poginuo: 'Killed in action', umro: 'Died', nestao: 'Missing', streljan: 'Shot', ubijen: 'Killed', zarobljen: 'Captured' } as Record<string, string>)[type ?? ''] ?? 'Died',
+    day: (d: number, m: number) => dateNumbers(d, m),
     month: (m: number) => MONTHS[m - 1],
     neighbours: (x: number) => `${n(x)} more from the same place`,
     comrades: (x: number) => partisans(x),
     sameDay: (x: number) => `${n(x)} more the same day`,
     sameDayShort: 'the same day',
     undated: 'date not given',
+    afterWar: 'after the war',
   },
 
   record: {
@@ -265,7 +266,7 @@ export const en: Messages = {
     thisRecord: 'this record',
     more: (x: number) => `${n(x)} more`,
     count: (x: number) => n(x),
-    day: (d: number, m: number, y: number) => `${d} ${MONTHS[m - 1]} ${y}`,
+    day: (d: number, m: number, y: number) => dateNumbers(d, m, y),
     battalion: (x: number) => `${enOrdinal(x)} Battalion`,
     company: (x: number) => `${enOrdinal(x)} Company`,
     platoon: (x: number) => `${enOrdinal(x)} Platoon`,

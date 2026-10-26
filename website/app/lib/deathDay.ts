@@ -1,6 +1,6 @@
 // Day, month and year of a death date as the books write it: "17. 10. 1944", "26. II. 1943", "16. VII 1944",
 // "25. januara 1943", "14 avgusta 1942", "7 travnja 1943", "20.4.1944", "9.11944" (= 9. 1. 1944).
-// Dates without a day ("novembra 1944", "krajem aprila 1945") give null, and so do ranges of days ("26—31. maja 1943").
+// Dates without a day ("novembra 1944", "krajem aprila 1945") give null, and so do ranges of days ("26—31. maja 1943", "26-31.05.1943").
 
 export interface DeathDay {
   day: number
@@ -28,8 +28,8 @@ const MONTH_STEMS: [string, number][] = [
   ['dec', 12], ['pros', 12],
 ]
 
-const NUMERIC = /(?<!\d)(\d{1,2})\s*\.\s*(\d{1,2})\s*\.?\s*(\d{4})/
-const ROMAN_MONTH = /(?<!\d)(\d{1,2})\s*\.?\s*(xii|xi|ix|x|viii|vii|vi|iv|v|iii|ii|i)\s*\.?\s*(\d{4})/
+const NUMERIC = /(?<![\d—–-])(\d{1,2})\s*\.\s*(\d{1,2})\s*\.?\s*(\d{4})/
+const ROMAN_MONTH = /(?<![\d—–-])(\d{1,2})\s*\.?\s*(xii|xi|ix|x|viii|vii|vi|iv|v|iii|ii|i)\s*\.?\s*(\d{4})/
 const NAMED_MONTH = /(?<![\d—–-])(\d{1,2})\s*\.?\s+([a-zčćžšđ]+)\s*\.?\s*(\d{4})/
 
 function monthFromName(word: string): number | null {

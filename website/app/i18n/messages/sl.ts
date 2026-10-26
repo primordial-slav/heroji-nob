@@ -1,4 +1,4 @@
-import { formatNumber, plural } from '../format'
+import { dateNumbers, formatNumber, plural } from '../format'
 import type { Messages } from './sr'
 
 // Slovenščina. Written for Slovene readers, not translated word for word: the Slovene words for the
@@ -143,17 +143,18 @@ export const sl: Messages = {
     fate: (type: string | undefined, woman: boolean) => {
       const words: Record<string, [string, string]> = {
         poginuo: ['Padel', 'Padla'], umro: ['Umrl', 'Umrla'], nestao: ['Pogrešan', 'Pogrešana'],
-        streljan: ['Ustreljen', 'Ustreljena'], ubijen: ['Ubit', 'Ubita'],
+        streljan: ['Ustreljen', 'Ustreljena'], ubijen: ['Ubit', 'Ubita'], zarobljen: ['Ujet', 'Ujeta'],
       }
       return (words[type ?? ''] ?? ['Smrt', 'Smrt'])[woman ? 1 : 0]
     },
-    day: (d: number, m: number) => `${d}. ${m}.`,
+    day: (d: number, m: number) => dateNumbers(d, m),
     month: (m: number) => MONTHS[m - 1],
     neighbours: (x: number) => `še ${n(x)} iz istega kraja`,
     comrades: (x: number) => borci(x),
     sameDay: (x: number) => `isti dan še ${n(x)}`,
     sameDayShort: 'isti dan',
     undated: 'datum ni naveden',
+    afterWar: 'po vojni',
   },
 
   record: {
@@ -263,7 +264,7 @@ export const sl: Messages = {
     thisRecord: 'ta zapis',
     more: (x: number) => `še ${n(x)}`,
     count: (x: number) => n(x),
-    day: (d: number, m: number, y: number) => `${d}. ${m}. ${y}`,
+    day: (d: number, m: number, y: number) => dateNumbers(d, m, y),
     battalion: (x: number) => `${x}. bataljon`,
     company: (x: number) => `${x}. četa`,
     platoon: (x: number) => `${x}. vod`,

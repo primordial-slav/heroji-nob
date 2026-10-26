@@ -1383,11 +1383,16 @@ def brigade_of(soldier: dict) -> int:
 def forget_stale(soldier: dict, old_info: str, keep=()) -> None:
     """additional_info was rewritten: drop the structured values that had been read from the old text
     (values set by hand differ from what the extractor reads, so they stay)."""
+    from standardize_fields import standard    # the fields are stored in one form (dates in numbers, ...)
     code = brigade_of(soldier)
     old = get_extractor().extract(old_info, code, read=not parser_set(code, soldier))
     for f in FIELDS:
-        if f not in keep and soldier.get(f) and soldier[f] == old.get(f):
+        if f not in keep and soldier.get(f) and soldier[f] in (old.get(f), standard(f, old.get(f))):
             del soldier[f]
+    # "po osvoboditvi" read from the old text is stored as death_after_war
+    if 'death_date' not in keep and soldier.get('death_after_war') and old.get('death_date') \
+            and standard('death_date', old['death_date']) is None:
+        del soldier['death_after_war']
 
 
 # "Partizanke Pete proleterske crnogorske brigade" (the Poreklo library): long bios that also tell how her brothers,

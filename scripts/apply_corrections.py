@@ -64,6 +64,7 @@ from name_utils import BRIGADE_CONFIGS, extract_birth_info
 from soldier_id_utils import generate_soldier_id, parse_soldier_id
 import extract_structured_fields as structured
 import resolved_places
+import standardize_fields
 import feminine_alias
 import entry_boxes
 
@@ -694,6 +695,11 @@ def main():
                         tidied += 1
             if tidied:
                 print(f"    Places of death tidied: {tidied}")
+            # the fields in one form, whatever book they came from: dates in numbers, the fate after a capture, a
+            # death after the war, the census's words (scripts/standardize_fields.py)
+            standard = standardize_fields.apply(soldiers, MANUAL_FIELDS)
+            if standard:
+                print(f"    Fields standardized: {', '.join(f'{k} {n}' for k, n in standard.items())}")
 
         # units.ts follows the file, also when a re-parse (not a correction) changed its size
         count_updates[brigade_code] = new_count
