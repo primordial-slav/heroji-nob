@@ -1445,6 +1445,15 @@ VINODOLSKA = [
 ]
 VINODOLSKA_CREDIT = 'Vinko Antić, Vinodolska Selca u borbi'
 
+LJUBLJANSKA = [
+    # Borivoj Lah, Ljubljanska brigada (the unit's own book, the site's ljubljanska-brigada.pdf): the staff of the 2.
+    # bataljon on 12 September 1943, three men kneeling in a row, "od leve" Stane Kamnikar, Milan Juričev - Jugov, Filip
+    # Avsec - Mitja. Record, page in the site's PDF, the man's box, why (2026-10-26)
+    ('0004001083', 25, (205.0, 190.0, 285.0, 300.0), 'the middle one: "njegov namestnik Milan Juričev - Jugov"; the record: zvani Jugov'),
+    ('0004000068', 25, (300.0, 195.0, 385.0, 320.0), 'the right one: "politični komisar Filip Avsec - Mitja"; the record: zvani Mitja'),
+]
+LJUBLJANSKA_CREDIT = 'Borivoj Lah, 10. slovenska NOV brigada „Ljubljanska“'
+
 HEROES_1982 = [
     # Petar Kačavenda, Narodni heroji Jugoslavije (Beograd 1982, two volumes; znaci 00003/977 A-M and 978 N-Ž, PDF page =
     # the book's page + 4): the portrait the book prints in each hero's entry, an entry the record holds as its
@@ -1958,7 +1967,8 @@ def main():
             ('dalmatinci-prva-proleterska.pdf', DALMATINCI_CREDIT, 'https://znaci.org/00001/207_4.pdf#page={}', [(r[0], r[1] + 1, r[1], r[2]) for r in DALMATINCI]),
             ('virovitica-spomenica-1941.pdf', VIROVITICA_CREDIT, 'https://znaci.org/00003/653.pdf#page={}', [(r[0], r[1] + 220, r[1], r[2]) for r in VIROVITICA]),
             ('krizani-v-boju-za-svobodo.pdf', KRIZANI_CREDIT, 'https://znaci.org/00003/720.pdf#page={}', [(r[0], r[1] + 77, r[1], r[2]) for r in KRIZANI]),
-            ('vinodolska-selca.pdf', VINODOLSKA_CREDIT, 'https://znaci.org/00003/793.pdf#page={}', [(r[0], r[1] + 709, r[1], r[2]) for r in VINODOLSKA])):
+            ('vinodolska-selca.pdf', VINODOLSKA_CREDIT, 'https://znaci.org/00003/793.pdf#page={}', [(r[0], r[1] + 709, r[1], r[2]) for r in VINODOLSKA]),
+            ('ljubljanska-brigada.pdf', LJUBLJANSKA_CREDIT, '/pdfs/ljubljanska-brigada.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in LJUBLJANSKA])):
         doc = fitz.open(PUBLIC / 'pdfs' / pdf)
         n = 0
         for sid, book_page, page, box in rows:
@@ -2002,7 +2012,7 @@ def main():
     print(f'Commons: {len(COMMONS)} portraits')
     # Portraits this script doesn't make (the Proleterski bataljon Bosanske krajine's 180, cut beside each bio when
     # its unit came to the site) stay as they are: an entry whose credit is none of this script's sources
-    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, VINODOLSKA_CREDIT, HEROES_1982_CREDIT}
+    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, VINODOLSKA_CREDIT, LJUBLJANSKA_CREDIT, HEROES_1982_CREDIT}
     old = json.loads(INDEX.read_text(encoding='utf-8')) if INDEX.exists() else {}
     kept = {sid: e for sid, e in old.items() if sid not in index and e['c'] not in own
             and not e['c'].startswith(('znaci.org, br.', 'Wikimedia Commons')) and 'Wikimedia Commons' not in e['c']}
