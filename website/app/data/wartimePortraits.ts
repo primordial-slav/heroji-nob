@@ -489,6 +489,13 @@ export const WARTIME_PORTRAITS: string[] = [
   '0119001198',
   '0119001283',
   '0125000212',
+  // the fallen of Vinodolska Selca, each under the photo the book prints (2026-10-26)
+  '0006000085',
+  '0006000097',
+  '0168000541',
+  '0006002407',
+  '0095000289',
+  '0035108825',
   // family photos (data/family.ts)
   '0002000242',
 ]
