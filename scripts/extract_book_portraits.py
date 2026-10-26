@@ -1735,8 +1735,11 @@ HEROES_1982 = [
     ('0119001283', '9002001123', '978', 250, (203.9, 145.9, 285.7, 256.2), "the record holds the entry: Šerbanović Rajka Jovan, born 1919"),
     ('0120000219', '9002000644', '977', 488, (213.8, 318.4, 296.8, 422.3), "the record holds the entry: Mamula Sime Bogdan, born 1918"),
     ('0125000212', '9002000325', '977', 255, (203.7, 32.9, 286.2, 142.0), "the record holds the entry: Frenjo Huseina Rifat, born 1923"),
+    # the same man under another record of his (not linked), paired by hand
+    ('0001201194', '9002001312', '978', 388, (204.9, 124.1, 286.2, 230.6), "by hand: the same man as 0001014014, Ljubomir \"Ljupče Španac\" Živković, born 1918 in Crveni Breg, fell 20 November 1942 at Sitnica"),
+    ('0036010519', '9002000260', '977', 208, (214.7, 31.0, 298.4, 140.4), "by hand: the same man as 0007001350, Branko Dude, son of Silvestar, born 7 August 1913 in Solin"),
 ]
-HEROES_1982_CREDIT = 'Petar Kačavenda, Narodni heroji Jugoslavije (1982)'
+HEROES_1982_CREDIT ='Petar Kačavenda, Narodni heroji Jugoslavije (1982)'
 
 SAME = [
     # one man under two records that aren't linked, each with a photo of its own (another photo, or another crop),
