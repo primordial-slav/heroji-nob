@@ -324,6 +324,9 @@ export const WARTIME_PORTRAITS: string[] = [
   '0049011090',
   '0001004862',
   '0005000754',
+  '0126000308',
+  '0123001482',
+  '0039000077',
   // family photos (data/family.ts)
   '0002000242',
 ]

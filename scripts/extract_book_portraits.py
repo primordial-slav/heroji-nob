@@ -125,6 +125,16 @@ GALLERY = [
     ('0041010044', 13916, (0.25, 0.0, 0.75, 1.0), 'Neda Božinović, head of the Politodjel of the 5. kozaračka brigade and of the 3. krajiška (caption and the record\'s bio)'),
     ('0113000147', 10189, (0.52, 0.14, 0.74, 0.36), 'Danica Rosić, načelnik saniteta of the 6. lička divizija, Srem front 1945 (caption and record); the woman between two officers'),
     ('0005000754', 10189, (0.52, 0.14, 0.74, 0.36), 'Danica Rosić, born 1921 in Pljevlja, student of medicine (the same woman as 0113000147)'),
+    ('0079000182', 10310, (0.18, 0.04, 0.62, 0.42), 'Dušan Bursać of the XIX divizija, fell for Rijeka (caption; the record: the division\'s command list, son of Perica, from Lička Kaldrma, fell for Rijeka May 1945; the same man as 0002000856)'),
+    ('0103010015', 10310, (0.18, 0.04, 0.62, 0.42), 'Dušan Bursać (the same man as 0079000182: son of Perica, from Lička Kaldrma, fell for Rijeka May 1945)'),
+    ('0126000308', 14639, (0, 0, 1, 1), 'Mićo, student of medicine, born 1920 in Katrga, Ljubićki bataljon, killed by chetniks January 1943 (caption and record)'),
+    ('0123001482', 14991, (0.34, 0.0, 0.68, 0.75), 'three nurses "s leva": Boja Marjanović, Jela Rokvić (the middle one), zamjenik političkog komesara čete u 3. bataljonu of the 1. krajiška, Mara Kecman (caption and record)'),
+    ('0113000047', 13932, (0.05, 0.0, 0.5, 0.4), 'Vaso Jovanović, načelnik štaba of the 1. proleterska divizija, later its commander (caption and record); Šćekić "desno", so he is the left one'),
+    ('0001004677', 13932, (0.05, 0.0, 0.5, 0.4), 'Vaso Jovanović, born 1915 in Podgorica, officer, commander of the division (the same man as 0113000047)'),
+    ('0001012065', 13932, (0.45, 0.0, 0.92, 0.4), 'Vlado Šćekić "desno", narodni heroj, political commissar of the 1. proleterska divizija (caption and record)'),
+    ('0039100084', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić "levo u prvom redu", narodni heroj, died 10 August 1943 at Krivaja (caption and record)'),
+    ('0039000077', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić, died 10 August 1943, Ribnica on the Krivaja (the same man as 0039100084)'),
+    ('0039010003', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić of Otanj, drowned in the Krivaja 10 August 1943 (the same man as 0039100084)'),
 ]
 
 BOOK_TITLES = {
