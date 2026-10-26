@@ -499,6 +499,11 @@ export const WARTIME_PORTRAITS: string[] = [
   // znaci.org gallery, museum cards (2026-10-26)
   '0112000286',
   '0148000114',
+  // narodni heroji who fell in the war, the Slobodna Jugoslavija hero compilation (2026-10-26)
+  '0040011842',
+  '0041000416',
+  '0044010384',
+  '0125000366',
   // family photos (data/family.ts)
   '0002000242',
 ]
