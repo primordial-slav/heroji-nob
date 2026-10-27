@@ -170,8 +170,8 @@ def main():
                         help='Actually write changes (default: dry run)')
     parser.add_argument('--backup', action='store_true',
                         help='Create .bak files before overwriting')
-    parser.add_argument('--brigade', type=int, default=None,
-                        help='Only process a specific brigade code')
+    parser.add_argument('--brigade', type=int, nargs='+', default=None,
+                        help='Only process these brigade codes')
     args = parser.parse_args()
 
     # Find project root
@@ -192,7 +192,7 @@ def main():
 
     # Process each brigade
     for code, config in sorted(BRIGADE_CONFIGS.items()):
-        if args.brigade and code != args.brigade:
+        if args.brigade and code not in args.brigade:
             continue
 
         json_file = public_dir / config['json_file']

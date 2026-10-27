@@ -567,8 +567,8 @@ def main():
     parser = argparse.ArgumentParser(description='Apply corrections to soldier JSON data')
     parser.add_argument('--apply', action='store_true',
                         help='Actually write changes (default: dry run)')
-    parser.add_argument('--brigade', type=int,
-                        help='Only this unit (default: every unit with corrections and every unit on the site)')
+    parser.add_argument('--brigade', type=int, nargs='+',
+                        help='Only these units (default: every unit with corrections and every unit on the site)')
     args = parser.parse_args()
 
     # Find project root
@@ -610,6 +610,9 @@ def main():
 
     live_codes = {code for code, cfg in BRIGADE_CONFIGS.items() if cfg['json_file'] in live_files}
     box_cache = entry_boxes.PageCache()
+    # the case forms the gazetteer keyed for the Ostali borci files, kept for when build_ostali_borci.py writes them anew
+    if args.apply and resolved_places.remember():
+        print(f"  Kept the Ostali borci files' new case forms: {resolved_places.KEPT.name}")
 
     # Track count changes for units.ts
     count_updates = {}  # brigade_code -> new_count
@@ -619,7 +622,7 @@ def main():
     results = {}         # brigade_code -> (json_path, original_text, soldiers), written after the link pass
 
     # Process each brigade with corrections, and every brigade on the site (entry boxes)
-    codes = [args.brigade] if args.brigade else sorted(set(by_brigade) | live_codes)
+    codes = args.brigade or sorted(set(by_brigade) | live_codes)
     for brigade_code in codes:
         brigade_corrections = by_brigade.get(brigade_code, [])
         config = BRIGADE_CONFIGS.get(brigade_code)

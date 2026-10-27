@@ -32,7 +32,9 @@ census gives its columns as fields (born_in, ethnicity, death_year, death_place)
 Usage:
     python data-extraction/build_ostali_borci.py            # dry run: counts and samples
     python data-extraction/build_ostali_borci.py --write    # write website/public/ostali-borci*.json
-Then: python scripts/normalize_all_json.py --brigade 122 --apply (and 131-138); python scripts/apply_corrections.py --apply.
+Then (CLAUDE.md, "Ostali borci"): python scripts/normalize_all_json.py --brigade 122 131 132 133 134 135 136 137 138
+--apply; python scripts/extract_structured_fields.py --brigade 122 --apply; python scripts/apply_corrections.py --apply
+--brigade 122 131 132 133 134 135 136 137 138; python scripts/build_relations.py --write.
 """
 from __future__ import annotations
 
@@ -47,7 +49,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
 from extract_structured_fields import NAME_LISTS, fix_place  # noqa: E402
-from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES  # noqa: E402
+from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES, clean_name_field, to_title_case  # noqa: E402
 import convert_fathers_genitive as fathers_genitive  # noqa: E402
 
 FATHER_WORD = re.compile(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+$')
@@ -484,6 +486,22 @@ def registry() -> dict[str, str]:
     return out
 
 
+def chosen_fathers() -> dict[str, tuple[str, str]]:
+    """Record ID -> (the father as printed, the nominative chosen for him) in the file a run replaces (unit 122): the
+    choice reads the site's given names and how often a form still stands unconverted in the units, which change as
+    the units' own fathers are put in the nominative (by corrections), so a run of the same entries would choose
+    otherwise ("Mila" Milo or Mile, "Save" Sava or as printed). 122's records have no corrections to hold the choice:
+    it stays while he is printed so, as his ID does. Blank a fathers_name in the file to have it chosen again."""
+    if not OUT.exists():
+        return {}
+    out = {}
+    for r in json.loads(OUT.read_text(encoding='utf-8')):
+        printed, nom = r.get('middle_name') or '', r.get('fathers_name') or ''
+        if printed and nom and nom != printed:
+            out[r['soldier_id']] = (printed, nom)
+    return out
+
+
 def source_entry(e: dict) -> dict:
     out = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info']}
     out.update({k: e[k] for k in SOURCE_FIELDS if e.get(k) not in (None, '')})
@@ -551,6 +569,7 @@ def main():
         clusters[find(e['soldier_id'])].append(e)
 
     ids = registry()
+    chosen = chosen_fathers()
     next_number = max([int(v[4:]) for v in ids.values() if int(v[4:]) >= FIRST_NEW], default=FIRST_NEW - 1) + 1
     used = set()
 
@@ -671,6 +690,10 @@ def main():
             if rec['middle_name'] and not rec['fathers_name']:
                 rec['fathers_name'] = from_genitive(rec['middle_name'], book_given[fsrc['_book']])   # "Miloša": Miloš (the normalizer's
                 #                                                           own dictionary leaves most as printed)
+            # a father printed in the genitive or as a possessive keeps the nominative the last run chose (chosen_fathers)
+            was = chosen.get(rid) if code == CODE and not nominative else None
+            if was and was[0] == to_title_case(clean_name_field(rec['middle_name'])):
+                rec['fathers_name'] = was[1]
             rec.update({k: first[k] for k in SOURCE_FIELDS if first.get(k) not in (None, '')})
             # a names-only list of the fallen (Gončin's and Tmušić's Srem, Oborovo) holds no bio for the field
             # extractor: the death from its entries' fields, the village he fell at and the day where it gives them (not

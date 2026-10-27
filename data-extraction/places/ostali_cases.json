@@ -1,0 +1,4803 @@
+{
+ "about": "The case forms of the Ostali borci files (unit 122 and the census parts) that data-extraction/places/resolved.json has keyed: the field as stored -> [GeoNames id, the field with its village in the nominative, 1 if plainly a case]. build_ostali_borci.py writes those files anew, and the gazetteer keys only what the files hold when it runs, so the forms are kept here (scripts/resolved_places.py remember(), run by apply_corrections.py).",
+ "units": {
+  "ostali-borci-bih.json": {
+   "death_place": {
+    "Beogradu": [
+     792680,
+     "Beograd",
+     1
+    ],
+    "Bijeljinu": [
+     3204186,
+     "Bijeljina",
+     1
+    ],
+    "Biška": [
+     3335770,
+     "Bišak",
+     0
+    ],
+    "Bjelovara": [
+     3203982,
+     "Bjelovar",
+     0
+    ],
+    "Brajnići": [
+     3337583,
+     "Brajnića",
+     0
+    ],
+    "Brodice": [
+     792248,
+     "Brodica",
+     0
+    ],
+    "Bunare": [
+     3248314,
+     "Bunara",
+     0
+    ],
+    "Crvene njive": [
+     791746,
+     "Crvena Njiva",
+     0
+    ],
+    "Dobovići": [
+     8988600,
+     "Dobovića",
+     0
+    ],
+    "Dogoj": [
+     3240542,
+     "Doga",
+     0
+    ],
+    "Fojnice": [
+     3200829,
+     "Fojnica",
+     0
+    ],
+    "Foči": [
+     3200837,
+     "Foča",
+     0
+    ],
+    "Glamoča": [
+     3200651,
+     "Glamoč",
+     0
+    ],
+    "Gorinje": [
+     3200312,
+     "Gorinja",
+     0
+    ],
+    "Grušči,konjic": [
+     3199504,
+     "Grušča,konjic",
+     0
+    ],
+    "Han Pijesku": [
+     3199417,
+     "Han Pijesak",
+     1
+    ],
+    "Han Ploče,kisel": [
+     3296677,
+     "Han Ploča,kisel",
+     0
+    ],
+    "Jajci": [
+     3198934,
+     "Jajca",
+     0
+    ],
+    "Jasenice-lug": [
+     3198827,
+     "Jasenica Lug",
+     0
+    ],
+    "Jošavci": [
+     3198587,
+     "Jošavka",
+     0
+    ],
+    "Klačnice": [
+     3342683,
+     "Klačnica",
+     0
+    ],
+    "Konjica": [
+     3337476,
+     "Konjic",
+     0
+    ],
+    "Kozari": [
+     3197487,
+     "Kozara",
+     0
+    ],
+    "Kozlovci": [
+     3197435,
+     "Kozlovka",
+     0
+    ],
+    "Kramu": [
+     3197382,
+     "Kram",
+     1
+    ],
+    "Krbeti": [
+     3255437,
+     "Krbeta",
+     0
+    ],
+    "Kula fazlagića": [
+     3196981,
+     "Kula fazlagić",
+     0
+    ],
+    "Kulen vakufa": [
+     3196967,
+     "Kulen vakuf",
+     0
+    ],
+    "Kunine": [
+     3243763,
+     "Kunina",
+     0
+    ],
+    "Kunovi": [
+     3196937,
+     "Kunova",
+     0
+    ],
+    "Kurilovci": [
+     830961,
+     "Kurilovca",
+     0
+    ],
+    "Lisičiće": [
+     3318476,
+     "Lisičića",
+     0
+    ],
+    "Lišnje": [
+     3196432,
+     "Lišnja",
+     0
+    ],
+    "Majevici": [
+     3195907,
+     "Majevica",
+     0
+    ],
+    "Majevići": [
+     3195907,
+     "Majevića",
+     0
+    ],
+    "Matine": [
+     3195372,
+     "Matina",
+     0
+    ],
+    "Mikleuši": [
+     3254013,
+     "Mikleuša",
+     0
+    ],
+    "Mliništi": [
+     3317257,
+     "Mliništa",
+     0
+    ],
+    "Mraci": [
+     3344790,
+     "Mraka",
+     0
+    ],
+    "Mrkonjić grada": [
+     3194724,
+     "Mrkonjić grad",
+     0
+    ],
+    "Obori": [
+     3339238,
+     "Obora",
+     0
+    ],
+    "Pakrača": [
+     3193706,
+     "Pakrač",
+     0
+    ],
+    "Rioci": [
+     3191635,
+     "Rioca",
+     0
+    ],
+    "Ripče": [
+     3301807,
+     "Ripča",
+     0
+    ],
+    "Rogatice": [
+     3191576,
+     "Rogatica",
+     0
+    ],
+    "Romaniji": [
+     3191551,
+     "Romanija",
+     0
+    ],
+    "Sasine": [
+     3191258,
+     "Sasina",
+     0
+    ],
+    "Sevnice": [
+     3190950,
+     "Sevnica",
+     0
+    ],
+    "Srebrenici": [
+     3190159,
+     "Srebrenica",
+     0
+    ],
+    "Stilji": [
+     3189879,
+     "Stilja",
+     0
+    ],
+    "Stopani": [
+     785454,
+     "Stopana",
+     0
+    ],
+    "Teslići": [
+     3189143,
+     "Teslika",
+     0
+    ],
+    "Trume": [
+     3312628,
+     "Truma",
+     0
+    ],
+    "Tržački rašteli": [
+     3188691,
+     "Tržačka Raštela",
+     0
+    ],
+    "Veri": [
+     3187856,
+     "Vera",
+     0
+    ],
+    "Vlasanice": [
+     3187523,
+     "Vlasanica",
+     0
+    ],
+    "Vlasenici": [
+     3187524,
+     "Vlasenica",
+     0
+    ],
+    "Volinje": [
+     3187422,
+     "Volinja",
+     0
+    ],
+    "Vrana Planina": [
+     3187337,
+     "Vran Planina",
+     0
+    ],
+    "Vržerali": [
+     3187110,
+     "Vržerala",
+     0
+    ],
+    "Zabjela": [
+     3236711,
+     "Zabjel",
+     0
+    ],
+    "Zavola": [
+     3290054,
+     "Zavol",
+     0
+    ],
+    "Zvijerine": [
+     3205511,
+     "Zvijerina",
+     0
+    ],
+    "Zvorniku": [
+     3186246,
+     "Zvornik",
+     1
+    ],
+    "Ćapraća": [
+     792056,
+     "Ćaprać",
+     0
+    ],
+    "Šatori": [
+     3189798,
+     "Šatora",
+     0
+    ],
+    "Šipe": [
+     838122,
+     "Šipa",
+     0
+    ],
+    "Žepča": [
+     3186567,
+     "Žepčė",
+     0
+    ],
+    "Žeravići": [
+     3285959,
+     "Žeravića",
+     0
+    ]
+   }
+  },
+  "ostali-borci-crna-gora.json": {
+   "death_place": {
+    "Babine": [
+     3204732,
+     "Babina",
+     0
+    ],
+    "Bijače": [
+     3204220,
+     "Bijača",
+     0
+    ],
+    "Dolaći": [
+     3288940,
+     "Dolaća",
+     0
+    ],
+    "Fojnice": [
+     3200829,
+     "Fojnica",
+     0
+    ],
+    "Konjica": [
+     3337476,
+     "Konjic",
+     0
+    ],
+    "Krušca": [
+     3291774,
+     "Krušac",
+     0
+    ],
+    "Lekovine": [
+     3306086,
+     "Lekovina",
+     0
+    ],
+    "Lever-tari": [
+     3196619,
+     "Lever Tara",
+     0
+    ],
+    "Lubice": [
+     3245690,
+     "Lubica",
+     0
+    ],
+    "Meteriza": [
+     3263601,
+     "Meteriz",
+     0
+    ],
+    "Pržište": [
+     3338639,
+     "Pržišta",
+     0
+    ],
+    "Ribarevine": [
+     9072731,
+     "Ribarevina",
+     0
+    ],
+    "Romanije": [
+     3191551,
+     "Romanija",
+     0
+    ],
+    "Vilića": [
+     3187753,
+     "Vilić",
+     0
+    ],
+    "Zabjela": [
+     3236711,
+     "Zabjel",
+     0
+    ]
+   }
+  },
+  "ostali-borci-hrvatska.json": {
+   "death_place": {
+    "Andigole": [
+     12500922,
+     "Andigola",
+     0
+    ],
+    "Banja luke": [
+     3204541,
+     "Banja luka",
+     0
+    ],
+    "Barilovići": [
+     792852,
+     "Barilovića",
+     0
+    ],
+    "Baške vode": [
+     3204439,
+     "Baška Voda",
+     0
+    ],
+    "Belinu": [
+     3204186,
+     "Beline",
+     1
+    ],
+    "Bestrme": [
+     3204254,
+     "Bestrma",
+     0
+    ],
+    "Bilača": [
+     3204165,
+     "Bilač",
+     0
+    ],
+    "Bile vlake": [
+     3213290,
+     "Bila Vlaka",
+     0
+    ],
+    "Biljane": [
+     8987431,
+     "Biljana",
+     0
+    ],
+    "Biočina": [
+     792605,
+     "Biočin",
+     0
+    ],
+    "Bjelini": [
+     3204001,
+     "Bjelina",
+     0
+    ],
+    "Bjeljini": [
+     3260644,
+     "Bjeljina",
+     0
+    ],
+    "Bjelovara": [
+     3203982,
+     "Bjelovar",
+     0
+    ],
+    "Bobove": [
+     3203877,
+     "Bobova",
+     0
+    ],
+    "Bolmanu": [
+     3203746,
+     "Bolman",
+     1
+    ],
+    "Bosni": [
+     3203633,
+     "Bosna",
+     0
+    ],
+    "Bosnoj": [
+     3203633,
+     "Bosna",
+     0
+    ],
+    "Bregane": [
+     3203478,
+     "Bregana",
+     0
+    ],
+    "Brseća,istra": [
+     3203218,
+     "Brseć,istra",
+     0
+    ],
+    "Bukovije": [
+     10305884,
+     "Bukovija",
+     0
+    ],
+    "Bunje": [
+     3279065,
+     "Bunja",
+     0
+    ],
+    "Bučice": [
+     3200275,
+     "Bučica",
+     0
+    ],
+    "Bučije": [
+     3216894,
+     "Bučija",
+     0
+    ],
+    "Crikvenice": [
+     3202507,
+     "Crikvenica",
+     0
+    ],
+    "Crkvenice": [
+     3202507,
+     "Crkvenica",
+     0
+    ],
+    "Crkvenici": [
+     3202507,
+     "Crkvenica",
+     0
+    ],
+    "Crne gore": [
+     3194884,
+     "Crna gora",
+     0
+    ],
+    "Crnoj gori": [
+     3194884,
+     "Crna gora",
+     1
+    ],
+    "Djevrski": [
+     3202047,
+     "Devrska",
+     0
+    ],
+    "Dobrovići": [
+     8373964,
+     "Dobrovića",
+     0
+    ],
+    "Donje Pilice": [
+     3201645,
+     "Donja Pilica",
+     0
+    ],
+    "Dresnice": [
+     791023,
+     "Dresnica",
+     0
+    ],
+    "Galinci": [
+     3272609,
+     "Galinka",
+     0
+    ],
+    "Gašnice": [
+     3200698,
+     "Gašnica",
+     0
+    ],
+    "Glinske Poljane": [
+     3200589,
+     "Glinska Poljana",
+     0
+    ],
+    "Gorinje": [
+     3200312,
+     "Gorinja",
+     0
+    ],
+    "Gornji Pastuša": [
+     12509110,
+     "Gornja Pastuša",
+     0
+    ],
+    "Gornji bačuga": [
+     3200297,
+     "Gornja Bačuga",
+     0
+    ],
+    "Gospića": [
+     3199873,
+     "Gospić",
+     0
+    ],
+    "Gvozdanski": [
+     12509614,
+     "Gvozdanska",
+     0
+    ],
+    "Jamarice": [
+     3198911,
+     "Jamarica",
+     0
+    ],
+    "Jamarici": [
+     3198911,
+     "Jamarica",
+     0
+    ],
+    "Janja lipe": [
+     3198890,
+     "Janja lipa",
+     0
+    ],
+    "Janje lipa": [
+     3198890,
+     "Janja Lipa",
+     0
+    ],
+    "Janji": [
+     3198895,
+     "Janja",
+     0
+    ],
+    "Kamenskoj": [
+     3198380,
+     "Kamenska",
+     0
+    ],
+    "Karlovca": [
+     3345300,
+     "Karlovac",
+     0
+    ],
+    "Kestenka": [
+     12510004,
+     "Kestenak",
+     0
+    ],
+    "Klane": [
+     3198111,
+     "Klana",
+     0
+    ],
+    "Klisi": [
+     789455,
+     "Kliha",
+     0
+    ],
+    "Ključaru": [
+     3198047,
+     "Ključar",
+     1
+    ],
+    "Konjevica": [
+     3197798,
+     "Konjevic",
+     0
+    ],
+    "Konjščine": [
+     11136870,
+     "Konjščina",
+     0
+    ],
+    "Končanici": [
+     3197809,
+     "Končanica",
+     0
+    ],
+    "Kopeli": [
+     3215371,
+     "Kopela",
+     0
+    ],
+    "Koranu": [
+     3206012,
+     "Koran",
+     1
+    ],
+    "Kostreši": [
+     3206976,
+     "Kostreša",
+     0
+    ],
+    "Kozari": [
+     3197487,
+     "Kozara",
+     0
+    ],
+    "Križnice": [
+     12509835,
+     "Križnica",
+     0
+    ],
+    "Krstinje": [
+     3197133,
+     "Krstinja",
+     0
+    ],
+    "Kupcine": [
+     3196927,
+     "Kupcina",
+     0
+    ],
+    "Kupčini": [
+     3196927,
+     "Kupčina",
+     0
+    ],
+    "Kusanje": [
+     3257686,
+     "Kusanja",
+     0
+    ],
+    "Lasinje": [
+     3196761,
+     "Lasinja",
+     0
+    ],
+    "Lebine": [
+     788759,
+     "Lebina",
+     0
+    ],
+    "Lepavine": [
+     3196670,
+     "Lepavina",
+     0
+    ],
+    "Livnice": [
+     3211244,
+     "Livnica",
+     0
+    ],
+    "Ličke jesenice": [
+     3196599,
+     "Lička Jesenica",
+     0
+    ],
+    "Ljubavu": [
+     788574,
+     "Ljubava",
+     1
+    ],
+    "Lončica": [
+     3270137,
+     "Lončic",
+     0
+    ],
+    "Losinja": [
+     3196194,
+     "Losinj",
+     0
+    ],
+    "Lovača": [
+     788480,
+     "Lovač",
+     0
+    ],
+    "Male remete": [
+     3195798,
+     "Mala Remeta",
+     0
+    ],
+    "Menini Planina": [
+     3195249,
+     "Menina Planina",
+     0
+    ],
+    "Mošćenici": [
+     3194858,
+     "Mošćenica",
+     0
+    ],
+    "Mrežnice": [
+     3214952,
+     "Mrežnica",
+     0
+    ],
+    "Mrzle vode": [
+     3271828,
+     "Mrzla Voda",
+     0
+    ],
+    "Mrzle vodići": [
+     3194700,
+     "Mrzle vodića",
+     0
+    ],
+    "Muca": [
+     11054614,
+     "Muc",
+     0
+    ],
+    "Našica": [
+     3194581,
+     "Našic",
+     0
+    ],
+    "Novika": [
+     3252509,
+     "Novik",
+     0
+    ],
+    "Ostrožina": [
+     3193820,
+     "Ostrožin",
+     0
+    ],
+    "Oštre": [
+     862860,
+     "Oštra",
+     0
+    ],
+    "Pakraca": [
+     3193706,
+     "Pakrac",
+     0
+    ],
+    "Paloj": [
+     10673464,
+     "Pala",
+     0
+    ],
+    "Perjasići": [
+     3193499,
+     "Perjasića",
+     0
+    ],
+    "Pisarovine": [
+     3193325,
+     "Pisarovina",
+     0
+    ],
+    "Pisarovine,zgb.": [
+     3193325,
+     "Pisarovina,zgb.",
+     0
+    ],
+    "Pitomaći": [
+     3193305,
+     "Pitomaća",
+     0
+    ],
+    "Pitomače": [
+     3193305,
+     "Pitomača",
+     0
+    ],
+    "Pleternice": [
+     3193187,
+     "Pleternica",
+     0
+    ],
+    "Ploski": [
+     3216186,
+     "Ploska",
+     0
+    ],
+    "Ploški": [
+     3216186,
+     "Ploška",
+     0
+    ],
+    "Prasice": [
+     3338325,
+     "Prasica",
+     0
+    ],
+    "Pregrade": [
+     3192545,
+     "Pregrada",
+     0
+    ],
+    "Premude": [
+     3192521,
+     "Premuda",
+     0
+    ],
+    "Prenje": [
+     3253881,
+     "Prenja",
+     0
+    ],
+    "Psunja": [
+     3192242,
+     "Psunj",
+     0
+    ],
+    "Radonji": [
+     3217390,
+     "Radonja",
+     0
+    ],
+    "Rajnici": [
+     9012842,
+     "Rajnica",
+     0
+    ],
+    "Rasinje": [
+     3191948,
+     "Rasinja",
+     0
+    ],
+    "Rogotina": [
+     3191567,
+     "Rogotin",
+     0
+    ],
+    "Rušina": [
+     833938,
+     "Rušin",
+     0
+    ],
+    "Samarice": [
+     3191320,
+     "Samarica",
+     0
+    ],
+    "Sirača": [
+     3190835,
+     "Sirač",
+     0
+    ],
+    "Skrade": [
+     3257520,
+     "Skrada",
+     0
+    ],
+    "Slunja": [
+     3190523,
+     "Slunj",
+     0
+    ],
+    "Smiljani": [
+     838081,
+     "Smiljana",
+     0
+    ],
+    "Srime": [
+     3190089,
+     "Srima",
+     0
+    ],
+    "Stative": [
+     3278410,
+     "Stativa",
+     0
+    ],
+    "Stenice": [
+     8987454,
+     "Stenica",
+     0
+    ],
+    "Stipanići": [
+     3242217,
+     "Stipanića",
+     0
+    ],
+    "Tari": [
+     3189203,
+     "Tara",
+     0
+    ],
+    "Trešnjevka": [
+     862819,
+     "Trešnjevak",
+     0
+    ],
+    "Tučenika": [
+     12509756,
+     "Tučenik",
+     0
+    ],
+    "Ugljana": [
+     3188538,
+     "Ugljan",
+     0
+    ],
+    "Učke": [
+     3188556,
+     "Učka",
+     0
+    ],
+    "Vagovine": [
+     3188420,
+     "Vagovina",
+     0
+    ],
+    "Velike Popine": [
+     3188180,
+     "Velika Popina",
+     0
+    ],
+    "Vinčice": [
+     3275362,
+     "Vinčica",
+     0
+    ],
+    "Virovitice": [
+     3187694,
+     "Virovitica",
+     0
+    ],
+    "Visuća": [
+     3187602,
+     "Visuć",
+     0
+    ],
+    "Viševići": [
+     3187675,
+     "Viševića",
+     0
+    ],
+    "Volinje": [
+     3187422,
+     "Volinja",
+     0
+    ],
+    "Voćina": [
+     3187503,
+     "Voćin",
+     0
+    ],
+    "Vočina": [
+     3187503,
+     "Vočin",
+     0
+    ],
+    "Vrebačke staze": [
+     3272594,
+     "Vrebačka Staza",
+     0
+    ],
+    "Vrkašica": [
+     3187171,
+     "Vrkašic",
+     0
+    ],
+    "Vrliku": [
+     3187169,
+     "Vrlika",
+     1
+    ],
+    "Vrlina": [
+     9114047,
+     "Vrlin",
+     0
+    ],
+    "Vrtlinski": [
+     3187130,
+     "Vrtlinska",
+     0
+    ],
+    "Vrčenice": [
+     3310522,
+     "Vrčenica",
+     0
+    ],
+    "Zdale": [
+     3186677,
+     "Zdala",
+     0
+    ],
+    "Zdrelcu": [
+     3186658,
+     "Zdrelac",
+     1
+    ],
+    "Zgališću": [
+     12509771,
+     "Zgališće",
+     1
+    ],
+    "Čaglina": [
+     3202905,
+     "Čaglin",
+     0
+    ],
+    "Čaglinu": [
+     3202905,
+     "Čaglin",
+     1
+    ],
+    "Čapljine": [
+     3202873,
+     "Čapljina",
+     0
+    ],
+    "Čazme": [
+     3202820,
+     "Čazma",
+     0
+    ],
+    "Čepina": [
+     3202743,
+     "Čepin",
+     0
+    ],
+    "Čicarije": [
+     3202629,
+     "Čicarija",
+     0
+    ],
+    "Đesiniča": [
+     3202071,
+     "Đesinič",
+     0
+    ],
+    "Šamarice": [
+     3191320,
+     "Šamarica",
+     0
+    ],
+    "Šibuljine": [
+     3216428,
+     "Šibuljina",
+     0
+    ],
+    "Šidu": [
+     3190922,
+     "Šid",
+     1
+    ],
+    "Šimljani": [
+     3190877,
+     "Šimljana",
+     0
+    ],
+    "Šimljanice": [
+     3190876,
+     "Šimljanica",
+     0
+    ],
+    "Škalići": [
+     10632097,
+     "Škalića",
+     0
+    ],
+    "Štirovača": [
+     3239919,
+     "Štirovač",
+     0
+    ],
+    "Žažine": [
+     3186694,
+     "Žažina",
+     0
+    ],
+    "Žažine,sisak": [
+     3186694,
+     "Žažina,sisak",
+     0
+    ],
+    "Žepča": [
+     3186567,
+     "Žepčė",
+     0
+    ],
+    "Žumberka": [
+     3218010,
+     "Žumberak",
+     0
+    ],
+    "Žvirinjcu": [
+     3297470,
+     "Žvirinjac",
+     1
+    ]
+   }
+  },
+  "ostali-borci-kosovo.json": {
+   "death_place": {
+    "Aga": [
+     3199162,
+     "Ag",
+     0
+    ],
+    "Alaški": [
+     833873,
+     "Alaška",
+     0
+    ],
+    "Bolmana": [
+     3203746,
+     "Bolman",
+     0
+    ],
+    "Giljine": [
+     3339186,
+     "Giljina",
+     0
+    ],
+    "Gubetina": [
+     790107,
+     "Gubetin",
+     0
+    ],
+    "Krivi viru": [
+     789029,
+     "Krivi vir",
+     1
+    ],
+    "Kuršumlije": [
+     788852,
+     "Kuršumlija",
+     0
+    ],
+    "Lebani": [
+     788762,
+     "Lebana",
+     0
+    ]
+   }
+  },
+  "ostali-borci-makedonija.json": {
+   "death_place": {
+    "Bogomile": [
+     792509,
+     "Bogomila",
+     0
+    ],
+    "Bogomili": [
+     792509,
+     "Bogomila",
+     0
+    ],
+    "Gakovice": [
+     3248758,
+     "Gakovica",
+     0
+    ],
+    "Galičica": [
+     3200744,
+     "Galičic",
+     0
+    ],
+    "Gilana": [
+     790674,
+     "Gilan",
+     0
+    ],
+    "Gostiražne": [
+     790296,
+     "Gostiražna",
+     0
+    ],
+    "Grabovčica": [
+     3277252,
+     "Grabovčic",
+     0
+    ],
+    "Ilinca": [
+     3217052,
+     "Ilinac",
+     0
+    ],
+    "Kukureča": [
+     8544235,
+     "Kukureč",
+     0
+    ],
+    "Peljice": [
+     3217882,
+     "Peljica",
+     0
+    ],
+    "Pilane": [
+     3199946,
+     "Pilana",
+     0
+    ],
+    "Radonji": [
+     3217390,
+     "Radonja",
+     0
+    ],
+    "Strumičke": [
+     785377,
+     "Strumička",
+     0
+    ],
+    "Tri": [
+     3188763,
+     "Traù",
+     0
+    ],
+    "Vrh Polje": [
+     3341905,
+     "Vrh Polja",
+     0
+    ]
+   }
+  },
+  "ostali-borci-slovenija.json": {
+   "death_place": {
+    "Ajdovca": [
+     3204856,
+     "Ajdovec",
+     0
+    ],
+    "Benečije": [
+     8988822,
+     "Benečija",
+     0
+    ],
+    "Borjane": [
+     3203712,
+     "Borjana",
+     0
+    ],
+    "Buliče": [
+     8621542,
+     "Buliča",
+     0
+    ],
+    "Bučke": [
+     3203154,
+     "Bučka",
+     0
+    ],
+    "Cerknice": [
+     3202709,
+     "Cerknica",
+     0
+    ],
+    "Davče,primorska": [
+     3202174,
+     "Davča,primorska",
+     0
+    ],
+    "Devce": [
+     791509,
+     "Devca",
+     0
+    ],
+    "Dolenjskem": [
+     3201816,
+     "Dolenjsko",
+     0
+    ],
+    "Draža": [
+     3201250,
+     "Draž",
+     0
+    ],
+    "Idriji": [
+     3199171,
+     "Idrija",
+     0
+    ],
+    "Jame Pri dvoru": [
+     3218601,
+     "Jama pri Dvoru",
+     1
+    ],
+    "Jaraka": [
+     3198868,
+     "Jarak",
+     0
+    ],
+    "Kamenski": [
+     3198380,
+     "Kamenska",
+     0
+    ],
+    "Kamnu": [
+     3198358,
+     "Kamno",
+     1
+    ],
+    "Kobaridi": [
+     3197983,
+     "Kobarida",
+     0
+    ],
+    "Kokri": [
+     3197906,
+     "Kokra",
+     0
+    ],
+    "Kolpi": [
+     3196929,
+     "Kolpa",
+     0
+    ],
+    "Komende": [
+     6956393,
+     "Komenda",
+     0
+    ],
+    "Kočarije": [
+     8988204,
+     "Kočarija",
+     0
+    ],
+    "Krape": [
+     789100,
+     "Krapa",
+     0
+    ],
+    "Krasine": [
+     3294275,
+     "Krasina",
+     0
+    ],
+    "Krope": [
+     3197162,
+     "Kropa",
+     0
+    ],
+    "Kunare": [
+     3253977,
+     "Kunara",
+     0
+    ],
+    "Lazne": [
+     8989239,
+     "Lazna",
+     0
+    ],
+    "Lepe njive": [
+     3196672,
+     "Lepa Njiva",
+     0
+    ],
+    "Litiji": [
+     3196425,
+     "Litija",
+     0
+    ],
+    "Ljubnem": [
+     3196339,
+     "Ljubno",
+     0
+    ],
+    "Loški dolini": [
+     3218745,
+     "Loška Dolina",
+     0
+    ],
+    "Menine Planine": [
+     3195249,
+     "Menina Planina",
+     0
+    ],
+    "Menini": [
+     3195249,
+     "Menina",
+     0
+    ],
+    "Metliki": [
+     3195214,
+     "Metlika",
+     0
+    ],
+    "Metulji": [
+     3264630,
+     "Metulja",
+     0
+    ],
+    "Mežice": [
+     3195202,
+     "Mežica",
+     0
+    ],
+    "Mežiće": [
+     3195202,
+     "Mežića",
+     0
+    ],
+    "Mokre": [
+     787863,
+     "Mokra",
+     0
+    ],
+    "Morače": [
+     3194882,
+     "Morača",
+     0
+    ],
+    "Mosta na soči": [
+     3194818,
+     "Most na Soči",
+     0
+    ],
+    "Občine trebnje": [
+     3188885,
+     "Občina Trebnje",
+     0
+    ],
+    "Okonini": [
+     3194163,
+     "Okonina",
+     0
+    ],
+    "Otlice": [
+     3193789,
+     "Otlica",
+     0
+    ],
+    "Oštre": [
+     862860,
+     "Oštra",
+     0
+    ],
+    "Peške": [
+     8723727,
+     "Peška",
+     0
+    ],
+    "Podlake": [
+     3218426,
+     "Podlaka",
+     0
+    ],
+    "Podruga": [
+     3280490,
+     "Podrug",
+     0
+    ],
+    "Podsrede": [
+     3192917,
+     "Podsreda",
+     0
+    ],
+    "Pokljuke": [
+     3192860,
+     "Pokljuka",
+     0
+    ],
+    "Pokljuki": [
+     3192860,
+     "Pokljuka",
+     0
+    ],
+    "Radimlje": [
+     3266840,
+     "Radimlja",
+     0
+    ],
+    "Radovljice": [
+     3192063,
+     "Radovljica",
+     0
+    ],
+    "Radovljici": [
+     3192063,
+     "Radovljica",
+     0
+    ],
+    "Rakeku": [
+     3192021,
+     "Rakek",
+     1
+    ],
+    "Ratoviče": [
+     786426,
+     "Ratoviča",
+     0
+    ],
+    "Rodice": [
+     8986870,
+     "Rodica",
+     0
+    ],
+    "Roščica": [
+     3273418,
+     "Roščic",
+     0
+    ],
+    "Sariće": [
+     3264665,
+     "Sarića",
+     0
+    ],
+    "Sirača": [
+     3190835,
+     "Sirač",
+     0
+    ],
+    "Skaručni": [
+     3190740,
+     "Skaručna",
+     0
+    ],
+    "Skradu": [
+     3190694,
+     "Skrad",
+     1
+    ],
+    "Sljaku": [
+     850720,
+     "Sljake",
+     1
+    ],
+    "Sore": [
+     3190319,
+     "Sora",
+     0
+    ],
+    "Stične": [
+     3189887,
+     "Stična",
+     0
+    ],
+    "Stični": [
+     3189887,
+     "Stična",
+     0
+    ],
+    "Strajne": [
+     8987765,
+     "Strajna",
+     0
+    ],
+    "Suhi krajini": [
+     3189563,
+     "Suha Krajina",
+     0
+    ],
+    "Temenice": [
+     3189167,
+     "Temenica",
+     0
+    ],
+    "Trebuče": [
+     3275920,
+     "Trebuča",
+     0
+    ],
+    "Trebuše": [
+     3266275,
+     "Trebuša",
+     0
+    ],
+    "Tribuše": [
+     3201851,
+     "Tribuša",
+     0
+    ],
+    "Velike Planine": [
+     8989382,
+     "Velika Planina",
+     0
+    ],
+    "Višnje gore": [
+     3187663,
+     "Višnja Gora",
+     0
+    ],
+    "Vlahovica": [
+     3187538,
+     "Vlahovic",
+     0
+    ],
+    "Volčji dragi": [
+     3187428,
+     "Volčja Draga",
+     0
+    ],
+    "Zabje-vas.": [
+     8988544,
+     "Zabja Vas",
+     0
+    ],
+    "Zelenice": [
+     3186616,
+     "Zelenica",
+     0
+    ],
+    "Čazme": [
+     3202820,
+     "Čazma",
+     0
+    ],
+    "Čokljuka": [
+     9097189,
+     "Čokljuk",
+     0
+    ],
+    "Šostanje": [
+     3190311,
+     "Šostanja",
+     0
+    ],
+    "Šoštanje": [
+     3190311,
+     "Šoštanja",
+     0
+    ],
+    "Šoštanju": [
+     3190311,
+     "Šoštanj",
+     1
+    ],
+    "Žabji vas": [
+     8988544,
+     "Žabja vas",
+     0
+    ],
+    "Železnika": [
+     783928,
+     "Železnik",
+     0
+    ],
+    "Želi": [
+     3192762,
+     "ፖልzela",
+     0
+    ],
+    "Žitine": [
+     3186436,
+     "Žitina",
+     0
+    ],
+    "Žori": [
+     9076422,
+     "Žora",
+     0
+    ],
+    "Žužemberka": [
+     3186270,
+     "Žužemberk",
+     0
+    ]
+   }
+  },
+  "ostali-borci-srbija.json": {
+   "death_place": {
+    "Babine": [
+     3204732,
+     "Babina",
+     0
+    ],
+    "Balini": [
+     855671,
+     "Balina",
+     0
+    ],
+    "Banove jaruge": [
+     3204524,
+     "Banova Jaruga",
+     0
+    ],
+    "Batalovci,srem": [
+     3287842,
+     "Batalovka,srem",
+     0
+    ],
+    "Bingule": [
+     3204132,
+     "Bingula",
+     0
+    ],
+    "Binguli": [
+     3204132,
+     "Bingula",
+     0
+    ],
+    "Bistrca": [
+     3204078,
+     "Bistrač",
+     0
+    ],
+    "Bosni": [
+     3203633,
+     "Bosna",
+     0
+    ],
+    "Branetići": [
+     833917,
+     "Branetića",
+     0
+    ],
+    "Bulatovica": [
+     3203006,
+     "Bulatovic",
+     0
+    ],
+    "Dobrljina": [
+     3201928,
+     "Dobrljin",
+     0
+    ],
+    "Donje Pilice": [
+     3201645,
+     "Donja Pilica",
+     0
+    ],
+    "Dragice": [
+     10631977,
+     "Dragica",
+     0
+    ],
+    "Dragoša": [
+     791104,
+     "Dragoš",
+     0
+    ],
+    "Drinjači": [
+     3201182,
+     "Drinjača",
+     0
+    ],
+    "Duboni": [
+     790981,
+     "Dubona",
+     0
+    ],
+    "Duge livade": [
+     851177,
+     "Duga Livada",
+     0
+    ],
+    "Fruškoj gori": [
+     3200811,
+     "Fruška gora",
+     1
+    ],
+    "Globodera": [
+     790707,
+     "Globoder",
+     0
+    ],
+    "Gole glave": [
+     3200497,
+     "Gola Glava",
+     0
+    ],
+    "Gornje dobrinje": [
+     790513,
+     "Gornja Dobrinja",
+     0
+    ],
+    "Gradašca": [
+     3266040,
+     "Gradašac",
+     0
+    ],
+    "Gračenice": [
+     3200258,
+     "Gračenica",
+     0
+    ],
+    "Grašnice": [
+     3251950,
+     "Grašnica",
+     0
+    ],
+    "Grbice": [
+     3199631,
+     "Grbica",
+     0
+    ],
+    "Gunje": [
+     3199473,
+     "Gunja",
+     0
+    ],
+    "Itebeja": [
+     785600,
+     "Itebej",
+     0
+    ],
+    "Kanale": [
+     3198354,
+     "Kanala",
+     0
+    ],
+    "Koluta": [
+     3197862,
+     "Kolut",
+     0
+    ],
+    "Lalovine": [
+     3206513,
+     "Lalovina",
+     0
+    ],
+    "Lepoglavi": [
+     3196657,
+     "Lepoglava",
+     0
+    ],
+    "Likovca": [
+     788665,
+     "Likovc",
+     0
+    ],
+    "Ljeljenče": [
+     3196404,
+     "Ljeljenča",
+     0
+    ],
+    "Ljubljani": [
+     3196359,
+     "Ljubljana",
+     0
+    ],
+    "Lopatnici": [
+     788489,
+     "Lopatnica",
+     0
+    ],
+    "Male vašice": [
+     3188350,
+     "Mala Vašica",
+     0
+    ],
+    "Margitići": [
+     792953,
+     "Margitića",
+     0
+    ],
+    "Mijače": [
+     3283323,
+     "Mijača",
+     0
+    ],
+    "Monja": [
+     3252615,
+     "Monj",
+     0
+    ],
+    "Mravinjca": [
+     3194760,
+     "Mravinjac",
+     0
+    ],
+    "Mustafiće": [
+     3252144,
+     "Mustafića",
+     0
+    ],
+    "Našica": [
+     3194581,
+     "Našic",
+     0
+    ],
+    "Nišu": [
+     787657,
+     "Niš",
+     1
+    ],
+    "Palji": [
+     787249,
+     "Palja",
+     0
+    ],
+    "Pilice": [
+     3193358,
+     "Pilica",
+     0
+    ],
+    "Pilice,bosna": [
+     3193358,
+     "Pilica,bosna",
+     0
+    ],
+    "Pleternice": [
+     3193187,
+     "Pleternica",
+     0
+    ],
+    "Radosinja": [
+     786573,
+     "Radosinj",
+     0
+    ],
+    "Raćevići": [
+     10420382,
+     "Raćevića",
+     0
+    ],
+    "Romaća": [
+     3298775,
+     "Romać",
+     0
+    ],
+    "Rotina": [
+     3263935,
+     "Rotin",
+     0
+    ],
+    "Sibinja,sl.brod": [
+     3190934,
+     "Sibinj,sl.brod",
+     0
+    ],
+    "Sida": [
+     3190922,
+     "Sid",
+     0
+    ],
+    "Skočica": [
+     3190726,
+     "Skočic",
+     0
+    ],
+    "Srbobrana": [
+     3190169,
+     "Srbobran",
+     0
+    ],
+    "Srnja": [
+     3291539,
+     "Srnj",
+     0
+    ],
+    "Stopanje": [
+     785454,
+     "Stopanja",
+     0
+    ],
+    "Tešice": [
+     785086,
+     "Tešica",
+     0
+    ],
+    "Vašice": [
+     3188350,
+     "Vašica",
+     0
+    ],
+    "Vele glave": [
+     784511,
+     "Vela Glava",
+     0
+    ],
+    "Višnice": [
+     3288219,
+     "Višnica",
+     0
+    ],
+    "Vlasica": [
+     3187517,
+     "Vlasic",
+     0
+    ],
+    "Vlaške male": [
+     3213496,
+     "Vlaška Mala",
+     0
+    ],
+    "Vražica": [
+     3187313,
+     "Vražic",
+     0
+    ],
+    "Vrh.polje": [
+     3341905,
+     "Vrh Polja",
+     0
+    ],
+    "Čalme": [
+     3202886,
+     "Čalma",
+     0
+    ],
+    "Žirove": [
+     3261784,
+     "Žirova",
+     0
+    ],
+    "Živinica": [
+     3186423,
+     "Živinicė",
+     0
+    ]
+   }
+  },
+  "ostali-borci-vojvodina.json": {
+   "death_place": {
+    "Banove jaruge": [
+     3204524,
+     "Banova Jaruga",
+     0
+    ],
+    "Binguli": [
+     3204132,
+     "Bingula",
+     0
+    ],
+    "Birča (bosna)": [
+     3317786,
+     "Birač (bosna)",
+     0
+    ],
+    "Bjeljine": [
+     3260644,
+     "Bjeljina",
+     0
+    ],
+    "Bolmana": [
+     3203746,
+     "Bolman",
+     0
+    ],
+    "Borona": [
+     8621254,
+     "Boron",
+     0
+    ],
+    "Bušetine": [
+     3202968,
+     "Bušetina",
+     0
+    ],
+    "Darde": [
+     3202186,
+     "Darda",
+     0
+    ],
+    "Delica": [
+     8220531,
+     "Delic",
+     0
+    ],
+    "Donoj": [
+     3274348,
+     "Dona",
+     0
+    ],
+    "Durmitoru": [
+     3317956,
+     "Durmitor",
+     1
+    ],
+    "Galinci": [
+     3272609,
+     "Galinka",
+     0
+    ],
+    "Gunje": [
+     3199473,
+     "Gunja",
+     0
+    ],
+    "Kvrge": [
+     3258866,
+     "Kvrga",
+     0
+    ],
+    "Ladjarka": [
+     3196827,
+     "Ladjarak",
+     0
+    ],
+    "Neuzine": [
+     787682,
+     "Neuzina",
+     0
+    ],
+    "Orlovata": [
+     787391,
+     "Orlovat",
+     0
+    ],
+    "Papinci": [
+     3273121,
+     "Papinka",
+     0
+    ],
+    "Peteranca": [
+     3193447,
+     "Peteranec",
+     0
+    ],
+    "Pitomače": [
+     3193305,
+     "Pitomača",
+     0
+    ],
+    "Polona": [
+     786906,
+     "Polon",
+     0
+    ],
+    "Radenkovići": [
+     10632087,
+     "Radenkovića",
+     0
+    ],
+    "Radimlje": [
+     3266840,
+     "Radimlja",
+     0
+    ],
+    "Rivici": [
+     3191618,
+     "Rivica",
+     0
+    ],
+    "Rume": [
+     3191429,
+     "Ruma",
+     0
+    ],
+    "Sedlarice": [
+     3191181,
+     "Sedlarica",
+     0
+    ],
+    "Stare race": [
+     3189998,
+     "Stara Rača",
+     0
+    ],
+    "Striživojni": [
+     3189718,
+     "Striživojna",
+     0
+    ],
+    "Suhomlake": [
+     3189562,
+     "Suhomlaka",
+     0
+    ],
+    "Trešnjevka": [
+     862819,
+     "Trešnjevak",
+     0
+    ],
+    "Tuzle": [
+     3188582,
+     "Tuzla",
+     0
+    ],
+    "Vašice": [
+     3188350,
+     "Vašica",
+     0
+    ],
+    "Zovnice": [
+     3265670,
+     "Zovnica",
+     0
+    ],
+    "Zvornika": [
+     3186246,
+     "Zvornik",
+     0
+    ],
+    "Čalme": [
+     3202886,
+     "Čalma",
+     0
+    ],
+    "Čente": [
+     791998,
+     "Čenta",
+     0
+    ],
+    "Šagu": [
+     3191359,
+     "Šag",
+     1
+    ]
+   }
+  },
+  "ostali-borci.json": {
+   "birth_place": {
+    "Aldincu, Knjaževac": [
+     793146,
+     "Aldinac, Knjaževac",
+     1
+    ],
+    "Aldinoj Reci": [
+     793145,
+     "Aldina Reka",
+     1
+    ],
+    "Alinom Potoku": [
+     3204833,
+     "Alin Potok",
+     1
+    ],
+    "Andraševca": [
+     3204822,
+     "Andraševec",
+     0
+    ],
+    "Arbnešu, Krajina": [
+     3204779,
+     "Arbneš, Krajina",
+     1
+    ],
+    "Ašanji (Srem)": [
+     793080,
+     "Ašanja (Srem)",
+     0
+    ],
+    "Babine": [
+     3204732,
+     "Babina",
+     0
+    ],
+    "Baderni": [
+     3204642,
+     "Baderna",
+     0
+    ],
+    "Bajmoku": [
+     3204619,
+     "Bajmok",
+     1
+    ],
+    "Balanovcu": [
+     792980,
+     "Balanovac",
+     1
+    ],
+    "Balinoviču, Tubravič, Valjevo": [
+     3204577,
+     "Balinovič, Tubravič, Valjevo",
+     1
+    ],
+    "Baljcima, Bileća, Bosna i Hercegovina": [
+     3204574,
+     "Baljci, Bileća, Bosna i Hercegovina",
+     1
+    ],
+    "Balta Berilovca": [
+     792960,
+     "Balta Berilovac",
+     0
+    ],
+    "Balugi": [
+     862707,
+     "Baluga",
+     0
+    ],
+    "Banioj Luci": [
+     3204541,
+     "Bania Luka",
+     1
+    ],
+    "Banja luci": [
+     3204541,
+     "Banja luka",
+     0
+    ],
+    "Barletima, Gospić": [
+     3204463,
+     "Barlete, Gospić",
+     1
+    ],
+    "Bartuli, Bar": [
+     3204457,
+     "Bartula, Bar",
+     0
+    ],
+    "Bačkoj Topoli": [
+     3204672,
+     "Bačka Topola",
+     1
+    ],
+    "Bedekovćini": [
+     3204387,
+     "Bedekovćina",
+     0
+    ],
+    "Bednji": [
+     3204378,
+     "Bednja",
+     0
+    ],
+    "Bednji (stariji)": [
+     3204378,
+     "Bednja (stariji)",
+     0
+    ],
+    "Belišću": [
+     3204317,
+     "Belišće",
+     1
+    ],
+    "Beraku (Vukovar)": [
+     3204285,
+     "Berak (Vukovar)",
+     1
+    ],
+    "Beršićima": [
+     792654,
+     "Beršići",
+     1
+    ],
+    "Bečkereku (Zrenjanin)": [
+     783814,
+     "Bečkerek (Zrenjanin)",
+     1
+    ],
+    "Bihovu, Dživar": [
+     3204221,
+     "Bihovo, Dživar",
+     1
+    ],
+    "Bijele Rudine, Bileća": [
+     3204204,
+     "Bijela Rudina, Bileća",
+     0
+    ],
+    "Biogradu, Površ": [
+     3267467,
+     "Biograd, Površ",
+     1
+    ],
+    "Biskupiji, Knin": [
+     3204086,
+     "Biskupija, Knin",
+     0
+    ],
+    "Bistranskom Bukovju": [
+     3203027,
+     "Bistransko Bukovje",
+     1
+    ],
+    "Bistranskom Ivancu": [
+     3199074,
+     "Bistranski Ivanec",
+     1
+    ],
+    "Blatnici (Teslić)": [
+     3203950,
+     "Blatnica (Teslić)",
+     0
+    ],
+    "Bliskovu": [
+     3203913,
+     "Bliskovo",
+     1
+    ],
+    "Bobovju, Krapina": [
+     12508750,
+     "Bobovje, Krapina",
+     1
+    ],
+    "Bogdevu, Gostivar": [
+     792516,
+     "Bogdevo, Gostivar",
+     1
+    ],
+    "Bogojević selu, Zubci": [
+     3203823,
+     "Bogojević selo, Zubci",
+     1
+    ],
+    "Bogovini": [
+     792502,
+     "Bogovina",
+     0
+    ],
+    "Borkovcu, Zlatar": [
+     3215768,
+     "Borkovec, Zlatar",
+     1
+    ],
+    "Borku, Omiš": [
+     12047498,
+     "Borak, Omiš",
+     1
+    ],
+    "Bosanskom Petrovom Selu (Gračanica)": [
+     3203643,
+     "Bosansko Petrovo Selo (Gračanica)",
+     1
+    ],
+    "Bosanskom šamcu": [
+     3203645,
+     "Bosanski Šamac",
+     1
+    ],
+    "Bravnicama": [
+     3203532,
+     "Bravnica",
+     1
+    ],
+    "Braćenima, Virpazar": [
+     3203593,
+     "Braćeni, Virpazar",
+     1
+    ],
+    "Breznoj Gori": [
+     3203364,
+     "Brezna Gora",
+     1
+    ],
+    "Bukinju, Tuzla": [
+     3203084,
+     "Bukinje, Tuzla",
+     1
+    ],
+    "Buljarici, Petravap": [
+     3203000,
+     "Buljarica, Petravap",
+     0
+    ],
+    "Burađi": [
+     3202981,
+     "Burađa",
+     0
+    ],
+    "Buču, Berane": [
+     3203167,
+     "Buče, Berane",
+     1
+    ],
+    "Caribrodu (Dimitrovgrad)": [
+     791487,
+     "Caribrod (Dimitrovgrad)",
+     1
+    ],
+    "Cerovcu, Trebinjska šuma": [
+     3202692,
+     "Cerovac, Trebinjska šuma",
+     1
+    ],
+    "Cibrijanu": [
+     3293076,
+     "Cibrijan",
+     1
+    ],
+    "Crnom Blatu, Tuzla": [
+     3260069,
+     "Crno Blato, Tuzla",
+     1
+    ],
+    "Cukliću": [
+     3202299,
+     "Cuklić",
+     1
+    ],
+    "Dajićima, Ivanjica": [
+     791648,
+     "Dajići, Ivanjica",
+     1
+    ],
+    "Davoru (Nova Gradiška)": [
+     3202172,
+     "Davor (Nova Gradiška)",
+     1
+    ],
+    "Dedinama, Kruševac": [
+     791572,
+     "Dedina, Kruševac",
+     1
+    ],
+    "Dedovcima, Sokolac, Sarajevo": [
+     3270917,
+     "Dedovci, Sokolac, Sarajevo",
+     1
+    ],
+    "Derventi": [
+     3202081,
+     "Derventa",
+     0
+    ],
+    "Diklu, Zadar": [
+     3202034,
+     "Diklo, Zadar",
+     1
+    ],
+    "Dobromanima, Trebinjska šuma": [
+     3201916,
+     "Dobromani, Trebinjska šuma",
+     1
+    ],
+    "Dobrote, Kotor": [
+     3201903,
+     "Dobrota, Kotor",
+     0
+    ],
+    "Dobrovcu (Daruvar)": [
+     3201900,
+     "Dobrovac (Daruvar)",
+     1
+    ],
+    "Dodošima (Sisak)": [
+     3201886,
+     "Dodoši (Sisak)",
+     1
+    ],
+    "Domaševu": [
+     3201735,
+     "Domaševo",
+     1
+    ],
+    "Domaševu, Ljubomir": [
+     3201735,
+     "Domaševo, Ljubomir",
+     1
+    ],
+    "Donjem Adrovcu, Aleksinac": [
+     791204,
+     "Donji Adrovac, Aleksinac",
+     1
+    ],
+    "Donjem Orahovcu, Kotor": [
+     3194069,
+     "Donji Orahovac, Kotor",
+     1
+    ],
+    "Donji Seoci, Bar": [
+     3317741,
+     "Donja Seoca, Bar",
+     0
+    ],
+    "Donjoj Pačetini": [
+     3201651,
+     "Donja Pačetina",
+     1
+    ],
+    "Dragušici, Kragujevac": [
+     862751,
+     "Dragušica, Kragujevac",
+     0
+    ],
+    "Dračevu": [
+     791131,
+     "Dračevo",
+     1
+    ],
+    "Dražinovićima": [
+     791073,
+     "Dražinovići",
+     1
+    ],
+    "Drečinovcu": [
+     791068,
+     "Drečinovac",
+     1
+    ],
+    "Driničima": [
+     3249755,
+     "Driniči",
+     1
+    ],
+    "Družetičima": [
+     791007,
+     "Družetiči",
+     1
+    ],
+    "Dubočanima, Trebinje": [
+     3201098,
+     "Dubočani, Trebinje",
+     1
+    ],
+    "Dubranecu (Velika Gorica)": [
+     3201071,
+     "Dubranec (Velika Gorica)",
+     1
+    ],
+    "Dubravici Desiničkoj": [
+     12509940,
+     "Dubravica Desinićka",
+     0
+    ],
+    "Durdevu, Novi Sad": [
+     790898,
+     "Durdevo, Novi Sad",
+     1
+    ],
+    "Dučini": [
+     790960,
+     "Dučina",
+     0
+    ],
+    "Dužima, Trebinjska šuma": [
+     3200926,
+     "Duži, Trebinjska šuma",
+     1
+    ],
+    "Erakovićima, Njeguši": [
+     3200891,
+     "Erakovići, Njeguši",
+     1
+    ],
+    "Filipovu": [
+     3204668,
+     "Filipova",
+     1
+    ],
+    "Fundini, Podgorica": [
+     3342932,
+     "Fundina, Podgorica",
+     0
+    ],
+    "Gati, Omiš": [
+     3200695,
+     "Gata, Omiš",
+     0
+    ],
+    "Glibodolu": [
+     3200602,
+     "Glibodol",
+     1
+    ],
+    "Glumču": [
+     790681,
+     "Glumač",
+     1
+    ],
+    "Gomiljanima, Trebinje": [
+     3200417,
+     "Gomiljani, Trebinje",
+     1
+    ],
+    "Goraždu": [
+     3200396,
+     "Goražde",
+     1
+    ],
+    "Gornjem Orahovcu, Ko k tor": [
+     3199953,
+     "Gornji Orahovac, Ko k tor",
+     1
+    ],
+    "Gornjem Orahovcu, Kotor": [
+     3199953,
+     "Gornji Orahovac, Kotor",
+     1
+    ],
+    "Gornji Seoci, Bar": [
+     3191014,
+     "Gornja Seoca, Bar",
+     0
+    ],
+    "Gornjoj Dobrinji": [
+     790513,
+     "Gornja Dobrinja",
+     1
+    ],
+    "Gornjoj Sokolovici": [
+     790464,
+     "Gornja Sokolovica",
+     1
+    ],
+    "Grabu, Zubci": [
+     3199842,
+     "Grab, Zubci",
+     1
+    ],
+    "Gradini (Virovitica)": [
+     3190016,
+     "Gradina (Virovitica)",
+     0
+    ],
+    "Gradička": [
+     3199733,
+     "Gradiček",
+     0
+    ],
+    "Gradištu": [
+     3199680,
+     "Gradište",
+     1
+    ],
+    "Gradištu (Vinkovci)": [
+     3199680,
+     "Gradište (Vinkovci)",
+     1
+    ],
+    "Grkavcima, Trebinjska brda": [
+     3199555,
+     "Grkavci, Trebinjska brda",
+     1
+    ],
+    "Grletincu (Krapina)": [
+     12509290,
+     "Grletinec (Krapina)",
+     1
+    ],
+    "Hajdini": [
+     3190249,
+     "Hajdina",
+     0
+    ],
+    "Han Pijesku": [
+     3199417,
+     "Han Pijesak",
+     1
+    ],
+    "Han Pogledu": [
+     3272181,
+     "Han Pogled",
+     1
+    ],
+    "Hlevnici": [
+     3199373,
+     "Hlevnica",
+     0
+    ],
+    "Hrkanovcima (Našice)": [
+     3199262,
+     "Hrkanovci (Našice)",
+     1
+    ],
+    "Hrupjelima, Trebinje": [
+     3263831,
+     "Hrupjela, Trebinje",
+     1
+    ],
+    "Hruševcu (Zagreb)": [
+     3222264,
+     "Hruševec (Zagreb)",
+     1
+    ],
+    "Hršak Bregu": [
+     12509807,
+     "Hršak Breg",
+     1
+    ],
+    "Hudeču, Tuzla": [
+     3211152,
+     "Hudeč, Tuzla",
+     1
+    ],
+    "Humu, Trebinjska šuma": [
+     3199208,
+     "Hum, Trebinjska šuma",
+     1
+    ],
+    "Igrišću, Oroslavje": [
+     3199153,
+     "Igrišće, Oroslavje",
+     1
+    ],
+    "Jajcu": [
+     3198934,
+     "Jajce",
+     1
+    ],
+    "Jaseniku, Gacko": [
+     3198824,
+     "Jasenik, Gacko",
+     1
+    ],
+    "Jasenu, Trebinje": [
+     3198840,
+     "Jasen, Trebinje",
+     1
+    ],
+    "Jelvici": [
+     3198667,
+     "Jelvica",
+     0
+    ],
+    "Jezerani, Brinje, Lika": [
+     3198632,
+     "Jezerana, Brinje, Lika",
+     0
+    ],
+    "Jezerišću, Krapina": [
+     12509306,
+     "Jezerišće, Krapina",
+     1
+    ],
+    "Junče Do, Žabljak": [
+     3303507,
+     "Junča Do, Žabljak",
+     0
+    ],
+    "Jušićima, Trebinjska šuma": [
+     3264841,
+     "Jušići, Trebinjska šuma",
+     1
+    ],
+    "Kalenićima": [
+     3198460,
+     "Kalenići",
+     1
+    ],
+    "Karivarošu, Stubica": [
+     12509521,
+     "Karivaroš, Stubica",
+     1
+    ],
+    "Kavču, Tivat": [
+     3198190,
+     "Kavač, Tivat",
+     1
+    ],
+    "Kačulicama": [
+     862641,
+     "Kačulice",
+     1
+    ],
+    "Kaštel–Kambelovcu, Split": [
+     3198216,
+     "Kaštel Kambelovac, Split",
+     1
+    ],
+    "Kirinu (Vrginmost)": [
+     3198142,
+     "Kirin (Vrginmost)",
+     1
+    ],
+    "Klanječnom, Desinić": [
+     12509957,
+     "Klanječno, Desinić",
+     0
+    ],
+    "Klanječnom, Pregrada": [
+     12509957,
+     "Klanječno, Pregrada",
+     0
+    ],
+    "Klatičevu": [
+     789476,
+     "Klatičevo",
+     1
+    ],
+    "Klenicama": [
+     12509285,
+     "Klenice",
+     1
+    ],
+    "Klenku": [
+     3198082,
+     "Klenak",
+     1
+    ],
+    "Kljenku (Makarska)": [
+     3198055,
+     "Kljenak (Makarska)",
+     1
+    ],
+    "Klobuku, Lastva": [
+     3198037,
+     "Klobuk, Lastva",
+     1
+    ],
+    "Knjaževcu": [
+     6619277,
+     "Knjaževac",
+     1
+    ],
+    "Komletincima (Vinkovci)": [
+     3197831,
+     "Komletinci (Vinkovci)",
+     1
+    ],
+    "Konjskom, Zubci": [
+     3197779,
+     "Konjsko, Zubci",
+     0
+    ],
+    "Korlatima": [
+     3197665,
+     "Korlati",
+     1
+    ],
+    "Korošu": [
+     3197230,
+     "Koroš",
+     1
+    ],
+    "Kožuhama": [
+     3197428,
+     "Kožuhe",
+     1
+    ],
+    "Kraju Gornjem": [
+     3199990,
+     "Kraj Gornji",
+     0
+    ],
+    "Kraljevem Selu": [
+     12510416,
+     "Kraljevo Selo",
+     1
+    ],
+    "Kraljevom Polju": [
+     3211673,
+     "Kraljevo Polje",
+     1
+    ],
+    "Kraljevom Selu": [
+     12510416,
+     "Kraljevo Selo",
+     1
+    ],
+    "Kraljevom selu": [
+     12510416,
+     "Kraljevo Selo",
+     1
+    ],
+    "Krapinici, Budinščina": [
+     12509577,
+     "Krapinica, Budinščina",
+     0
+    ],
+    "Krenti": [
+     789061,
+     "Krenta",
+     0
+    ],
+    "Krilu-Jesenice, Omiš": [
+     12047476,
+     "Krilo Jesenice, Omiš",
+     0
+    ],
+    "Križpolju": [
+     3197210,
+     "Križpolje",
+     1
+    ],
+    "Krnjaku (Karlovac)": [
+     3197174,
+     "Krnjak (Karlovac)",
+     1
+    ],
+    "Krnjevićima, Trebinjska šuma": [
+     3271009,
+     "Krnjevići, Trebinjska šuma",
+     1
+    ],
+    "Krtinju": [
+     3197130,
+     "Krtinje",
+     1
+    ],
+    "Krtolima": [
+     3340982,
+     "Krtoli",
+     1
+    ],
+    "Krtolima, Tivat": [
+     3340982,
+     "Krtoli, Tivat",
+     1
+    ],
+    "Krčedinu (indija)": [
+     789076,
+     "Krčedin (indija)",
+     1
+    ],
+    "Kubasima, Grbalj": [
+     3197043,
+     "Kubasi, Grbalj",
+     1
+    ],
+    "Kulinama, Aleksinac": [
+     788895,
+     "Kulina, Aleksinac",
+     1
+    ],
+    "Kulinovcima": [
+     788894,
+     "Kulinovci",
+     1
+    ],
+    "Kumanima": [
+     788890,
+     "Kumani",
+     1
+    ],
+    "Kunjama": [
+     3196939,
+     "Kunja",
+     1
+    ],
+    "Kusačama, Han-Pijesak": [
+     3196889,
+     "Kusače, Han-Pijesak",
+     1
+    ],
+    "Kućištima, Ćeklići": [
+     3197022,
+     "Kućišta, Ćeklići",
+     1
+    ],
+    "Kučima (Bolev Do), Podgorica": [
+     3197033,
+     "Kuče (Bolev Do), Podgorica",
+     1
+    ],
+    "Lazarevom Krstu, Donji Zagarač": [
+     3196734,
+     "Lazarev Krst, Donji Zagarač",
+     1
+    ],
+    "Lačarku": [
+     3196827,
+     "Lačarak",
+     1
+    ],
+    "Lenišću, Klanjec": [
+     12509617,
+     "Lenišće, Klanjec",
+     1
+    ],
+    "Lepetanima, E Tivat": [
+     3196659,
+     "Lepetani, E Tivat",
+     1
+    ],
+    "LipkovU, Kumanovo, Makedonija": [
+     788654,
+     "Lipkovo, Kumanovo, Makedonija",
+     1
+    ],
+    "Lipoviku, Rajska": [
+     3317510,
+     "Lipovik, Rajska",
+     1
+    ],
+    "Lipovlju": [
+     3196490,
+     "Lipovlje",
+     1
+    ],
+    "Lipovu (Kolašin)": [
+     3338531,
+     "Lipovo (Kolašin)",
+     1
+    ],
+    "Ličkom Lešću": [
+     3196592,
+     "Ličko Lešće",
+     1
+    ],
+    "Ljevaji": [
+     788585,
+     "Ljevaja",
+     0
+    ],
+    "Lješevićima, Grbalj": [
+     3317468,
+     "Lješevića, Grbalj",
+     1
+    ],
+    "Ljoljićima": [
+     3210496,
+     "Ljoljići",
+     1
+    ],
+    "Ljubačama, Tuzla": [
+     3275144,
+     "Ljubače, Tuzla",
+     1
+    ],
+    "Lokvi-Rogoznici": [
+     3214741,
+     "Lokva Rogoznica",
+     0
+    ],
+    "Lokvi-Rogoznici, Omiš": [
+     3214741,
+     "Lokva Rogoznica, Omiš",
+     0
+    ],
+    "Loparima": [
+     3196209,
+     "Lopare",
+     1
+    ],
+    "Loparima (Tuzla)": [
+     3196209,
+     "Lopare (Tuzla)",
+     1
+    ],
+    "Loretu": [
+     788483,
+     "Loret",
+     1
+    ],
+    "Loznju": [
+     3238778,
+     "Loznja",
+     1
+    ],
+    "Lukaču (Virovitica)": [
+     3196089,
+     "Lukač (Virovitica)",
+     1
+    ],
+    "Lunjevici": [
+     862760,
+     "Lunjevica",
+     0
+    ],
+    "Luštici, Tivat": [
+     3339045,
+     "Luštica, Tivat",
+     0
+    ],
+    "Majstorima": [
+     3195897,
+     "Majstori",
+     1
+    ],
+    "Majstorima, Njeguši": [
+     3195897,
+     "Majstori, Njeguši",
+     1
+    ],
+    "Makcu, Veliko Gradište": [
+     788347,
+     "Makce, Veliko Gradište",
+     1
+    ],
+    "Makedoniji (živio u Zaprešiću)": [
+     718075,
+     "Makedonija (živio u Zaprešiću)",
+     0
+    ],
+    "Malenzi, Donji Zagapau": [
+     3195758,
+     "Malenza, Donji Zagapau",
+     0
+    ],
+    "Malenzi, Donji Zagarač": [
+     3195758,
+     "Malenza, Donji Zagarač",
+     0
+    ],
+    "Malindubravi, Rožaje": [
+     793184,
+     "Malindubrava, Rožaje",
+     0
+    ],
+    "Maloj Gorani, Mr kojevići": [
+     3195850,
+     "Mala Gorana, Mr kojevići",
+     1
+    ],
+    "Malom Киш": [
+     863627,
+     "Malo",
+     0
+    ],
+    "Mačkovom selu, Petrinja": [
+     3195967,
+     "Mačkovo Selo, Petrinja",
+     1
+    ],
+    "Mašnici (Crna Gora)": [
+     3337604,
+     "Mašnica (Crna Gora)",
+     0
+    ],
+    "Menkama (Stari Bar)": [
+     3318482,
+     "Menke (Stari Bar)",
+     1
+    ],
+    "Mesarima, Trebinjska šuma": [
+     3195235,
+     "Mesari, Trebinjska šuma",
+     1
+    ],
+    "Međuvršju": [
+     836197,
+     "Međuvršje",
+     1
+    ],
+    "Mihajlovu (Zrenjanin)": [
+     787998,
+     "Mihajlovo (Zrenjanin)",
+     1
+    ],
+    "Milama": [
+     3195136,
+     "Mile",
+     1
+    ],
+    "Milandži, Ivanjica": [
+     793715,
+     "Milandža, Ivanjica",
+     0
+    ],
+    "Miogostu, Gornji Zagarač": [
+     3338524,
+     "Miogost, Gornji Zagarač",
+     1
+    ],
+    "Miošičima": [
+     3195063,
+     "Miošiči",
+     1
+    ],
+    "Miričini, Gračanica": [
+     3195053,
+     "Miričina, Gračanica",
+     0
+    ],
+    "Mironji": [
+     3271353,
+     "Mironja",
+     0
+    ],
+    "Mlačištu, Crna Trava": [
+     787894,
+     "Mlačište, Crna Trava",
+     1
+    ],
+    "Mlačištu, Rup/je, Vlasotince": [
+     787894,
+     "Mlačište, Rup/je, Vlasotince",
+     1
+    ],
+    "Momču, Podgorica": [
+     3194887,
+     "Momče, Podgorica",
+     1
+    ],
+    "Mosku, Trebinje": [
+     3194848,
+     "Mosko, Trebinje",
+     1
+    ],
+    "Mostaćima, Trebinje": [
+     3194832,
+     "Mostaći, Trebinje",
+     1
+    ],
+    "Mraceljima, Rijeka Crnojevića": [
+     3317511,
+     "Mracelji, Rijeka Crnojevića",
+     1
+    ],
+    "Mršeljima": [
+     787807,
+     "Mršelji",
+     1
+    ],
+    "Mujdžićima": [
+     3210489,
+     "Mujdžići",
+     1
+    ],
+    "Murskom Središču, Cakovec": [
+     3194626,
+     "Mursko Središće, Cakovec",
+     1
+    ],
+    "Nalježićima, Grbalj": [
+     3318368,
+     "Nalježići, Grbalj",
+     1
+    ],
+    "Našicama": [
+     3194581,
+     "Našice",
+     1
+    ],
+    "Necvijeću, Trebinje": [
+     3194564,
+     "Necvijeće, Trebinje",
+     1
+    ],
+    "Nevačkoj": [
+     3194513,
+     "Nevačka",
+     0
+    ],
+    "Nikšiću": [
+     3194494,
+     "Nikšić",
+     1
+    ],
+    "Njegušima, Cetinje": [
+     3194478,
+     "Njeguši, Cetinje",
+     1
+    ],
+    "Obzovici, Ljubotinj": [
+     3316945,
+     "Obzovica, Ljubotinj",
+     0
+    ],
+    "Ogradama, Zubci": [
+     3194186,
+     "Ograde, Zubci",
+     1
+    ],
+    "Olićima": [
+     3194139,
+     "Olići",
+     1
+    ],
+    "Orahovcu": [
+     787456,
+     "Orahovac",
+     1
+    ],
+    "Orahovcu, Aasgva": [
+     787456,
+     "Orahovac, Aasgva",
+     1
+    ],
+    "Orahovcu, Lastva": [
+     3205499,
+     "Orahovac, Lastva",
+     1
+    ],
+    "Orašju": [
+     3194035,
+     "Orašje",
+     1
+    ],
+    "Orašju, Zubci": [
+     3194034,
+     "Orašje, Zubci",
+     1
+    ],
+    "Orehovoj Gorici": [
+     12509515,
+     "Orehova Gorica",
+     1
+    ],
+    "Orehovoj Gorici, G. Stubica": [
+     12509515,
+     "Orehova Gorica, G. Stubica",
+     1
+    ],
+    "Orline": [
+     3193993,
+     "Orlina",
+     0
+    ],
+    "Ostri": [
+     862860,
+     "Ostra",
+     0
+    ],
+    "Oćevićima, Rijeka Crnojevića": [
+     3317014,
+     "Oćevići, Rijeka Crnojevića",
+     1
+    ],
+    "Ošljanu, Knjaževac": [
+     787361,
+     "Ošljane, Knjaževac",
+     1
+    ],
+    "Padini (Kovačica)": [
+     787271,
+     "Padina (Kovačica)",
+     0
+    ],
+    "Pakovraću": [
+     787262,
+     "Pakovraće",
+     1
+    ],
+    "Palica, Podgorica": [
+     3340463,
+     "Palic, Podgorica",
+     0
+    ],
+    "Paniku": [
+     3193655,
+     "Panik",
+     1
+    ],
+    "Paniku, Bileća": [
+     3193655,
+     "Panik, Bileća",
+     1
+    ],
+    "Parmencu": [
+     787199,
+     "Parmenac",
+     1
+    ],
+    "PavlovCU, Gospić": [
+     3187248,
+     "Pavlovac, Gospić",
+     1
+    ],
+    "Pelinkovićima, Ulcinj": [
+     3193512,
+     "Pelinkovići, Ulcinj",
+     1
+    ],
+    "Pelinovu, Grbalj": [
+     3318371,
+     "Pelinovo, Grbalj",
+     1
+    ],
+    "Perućici": [
+     3193479,
+     "Perućica",
+     0
+    ],
+    "Petrovgradu (Zrenjaninu)": [
+     783814,
+     "Petrovgrad (Zrenjaninu)",
+     1
+    ],
+    "Petrovgradu. (Zrenjanin)": [
+     783814,
+     "Petrovgrad (Zrenjanin)",
+     1
+    ],
+    "Petruši": [
+     787064,
+     "Petruša",
+     0
+    ],
+    "Pešniku": [
+     3193463,
+     "Pešnika",
+     1
+    ],
+    "Pisku, Omiš": [
+     3193328,
+     "Pisak, Omiš",
+     1
+    ],
+    "Plaščici": [
+     3274026,
+     "Plaščica",
+     0
+    ],
+    "Podborovi, Pljevlja": [
+     3304191,
+     "Podborova, Pljevlja",
+     0
+    ],
+    "Podglivlju, Trebinje": [
+     3193063,
+     "Podglivlje, Trebinje",
+     1
+    ],
+    "Podgoraču (Našice)": [
+     3193051,
+     "Podgorač (Našice)",
+     1
+    ],
+    "Podgorcu, Boljevac": [
+     786966,
+     "Podgorac, Boljevac",
+     1
+    ],
+    "Podgorici, Podgorica": [
+     3193044,
+     "Podgorica, Podgorica",
+     0
+    ],
+    "Podgorju (Đakovo)": [
+     3193039,
+     "Podgorje (Đakovo)",
+     1
+    ],
+    "Podgoru, Bar": [
+     3193062,
+     "Podgor, Bar",
+     1
+    ],
+    "Podgrađu, Omiš": [
+     3193022,
+     "Podgrađe, Omiš",
+     1
+    ],
+    "Podličku, Sveti Crefan": [
+     3318403,
+     "Podličak, Sveti Crefan",
+     1
+    ],
+    "Podobzira": [
+     3192959,
+     "Podobzir",
+     0
+    ],
+    "Podobziru": [
+     3192959,
+     "Podobzir",
+     1
+    ],
+    "Policama, Trebinje": [
+     3192835,
+     "Police, Trebinje",
+     1
+    ],
+    "Popužama": [
+     3210488,
+     "Popuže",
+     1
+    ],
+    "Popužima": [
+     3210488,
+     "Popuže",
+     1
+    ],
+    "Potrkanju": [
+     786836,
+     "Potrkanje",
+     1
+    ],
+    "Povrhpoljini, Donji Zagarač": [
+     3326957,
+     "Povrhpoljina, Donji Zagarač",
+     0
+    ],
+    "Počijevci, Danilovgrad": [
+     3317851,
+     "Počijevka, Danilovgrad",
+     0
+    ],
+    "Pođobziru": [
+     3192959,
+     "Pođobzir",
+     1
+    ],
+    "Požarnici, Tuzla": [
+     3192619,
+     "Požarnica, Tuzla",
+     0
+    ],
+    "Prekornici, Ljubotinj, Cetinje": [
+     3192537,
+     "Prekornica, Ljubotinj, Cetinje",
+     0
+    ],
+    "Premeći": [
+     862636,
+     "Premeća",
+     0
+    ],
+    "Prezidu (Čabar)": [
+     3192470,
+     "Prezid (Čabar)",
+     1
+    ],
+    "Pribeljcima": [
+     3210484,
+     "Pribeljci",
+     1
+    ],
+    "Pridvorcima, Trebinje": [
+     3263817,
+     "Pridvorci, Trebinje",
+     1
+    ],
+    "Pričevcu": [
+     786748,
+     "Pričevac",
+     1
+    ],
+    "Puračiću (Tuzla)": [
+     3192206,
+     "Puračić (Tuzla)",
+     1
+    ],
+    "Pušavi, Klanjec": [
+     12509989,
+     "Pušava, Klanjec",
+     0
+    ],
+    "Radobuđi": [
+     793711,
+     "Radobuđa",
+     0
+    ],
+    "Radojevu (Banat)": [
+     786583,
+     "Radojevo (Banat)",
+     1
+    ],
+    "Raičevićima, Njeguši": [
+     3318331,
+     "Raičevići, Njeguši",
+     1
+    ],
+    "Rapain Klancu": [
+     3218368,
+     "Rapain Klanac",
+     1
+    ],
+    "Rapajin Klancu": [
+     3218368,
+     "Rapajin Klanac",
+     1
+    ],
+    "Raptima, Trebinje": [
+     3191964,
+     "Rapti, Trebinje",
+     1
+    ],
+    "Rasovcu, Tuzla": [
+     3260090,
+     "Rasovac, Tuzla",
+     1
+    ],
+    "Ravanjskom": [
+     3191870,
+     "Ravanjsko",
+     0
+    ],
+    "Rešetarima (Nova Gradiška)": [
+     3191720,
+     "Rešetari (Nova Gradiška)",
+     1
+    ],
+    "Rinkovcu": [
+     12500790,
+     "Rinkovec",
+     1
+    ],
+    "Rinkovcu, Ivanec": [
+     12500790,
+     "Rinkovec, Ivanec",
+     1
+    ],
+    "Romča, Pljevlja": [
+     3298775,
+     "Romač, Pljevlja",
+     0
+    ],
+    "Rtarima": [
+     786221,
+     "Rtari",
+     1
+    ],
+    "Rubinićima": [
+     3191488,
+     "Rubinići",
+     1
+    ],
+    "Sedlarima, Popovo polje": [
+     3256875,
+     "Sedlari, Popovo polje",
+     1
+    ],
+    "Seljanama, Prijepolje": [
+     3191105,
+     "Seljane, Prijepolje",
+     1
+    ],
+    "Semizovcu": [
+     3191069,
+     "Semizovac",
+     1
+    ],
+    "Seoštice, Podgorica": [
+     3190995,
+     "Seoštica, Podgorica",
+     0
+    ],
+    "Sipkima, Zlatar": [
+     12508787,
+     "Sipki, Zlatar",
+     1
+    ],
+    "Sisku": [
+     3190813,
+     "Sisak",
+     1
+    ],
+    "Slivonja Jarku": [
+     12509806,
+     "Slivonja Jarek",
+     1
+    ],
+    "Sokolcu": [
+     3190385,
+     "Sokolac",
+     1
+    ],
+    "Sopotu (Krapina)": [
+     3222278,
+     "Sopot (Krapina)",
+     1
+    ],
+    "Sotinu (Vukovar)": [
+     3190307,
+     "Sotin (Vukovar)",
+     1
+    ],
+    "Srednjoj Dobrinji": [
+     785631,
+     "Srednja Dobrinja",
+     1
+    ],
+    "Stanić Polju, Dvor na Uni": [
+     3282415,
+     "Stanić Polje, Dvor na Uni",
+     1
+    ],
+    "Stanišiću (Bačka)": [
+     3190042,
+     "Stanišić (Bačka)",
+     1
+    ],
+    "Stanjincu": [
+     785576,
+     "Stanjinac",
+     1
+    ],
+    "Starom Petrovom Selu": [
+     3189930,
+     "Staro Petrovo Selo",
+     1
+    ],
+    "Stipanu, Vrginmosl": [
+     3189871,
+     "Stipan, Vrginmosl",
+     1
+    ],
+    "Strazi na Gori, Sentjur, Celje": [
+     8987636,
+     "Straza na Gori, Sentjur, Celje",
+     0
+    ],
+    "Strmnici, Džimrije": [
+     3204882,
+     "Strmnica, Džimrije",
+     0
+    ],
+    "Strujićima": [
+     3189673,
+     "Strujići",
+     1
+    ],
+    "Stupni": [
+     3189610,
+     "Stupna",
+     0
+    ],
+    "Sustašima, Bar": [
+     3189449,
+     "Sustaši, Bar",
+     1
+    ],
+    "Sušinama (Đurđenovac)": [
+     3189456,
+     "Sušine (Đurđenovac)",
+     1
+    ],
+    "Svibi, Podgorica": [
+     3338408,
+     "Sviba, Podgorica",
+     0
+    ],
+    "Svinišću": [
+     3189247,
+     "Svinišće",
+     1
+    ],
+    "Svinišću, Omiš": [
+     3189247,
+     "Svinišće, Omiš",
+     1
+    ],
+    "Svrljiškoj Topli": [
+     785160,
+     "Svrljiška Topla",
+     1
+    ],
+    "Taleži, Trebinjska šuma": [
+     3339290,
+     "Taleža, Trebinjska šuma",
+     0
+    ],
+    "Tarnovu": [
+     3188769,
+     "Tarnova",
+     1
+    ],
+    "Tasovčićima, Čapljina": [
+     3189194,
+     "Tasovčići, Čapljina",
+     1
+    ],
+    "Tatrasnici": [
+     785116,
+     "Tatrasnica",
+     0
+    ],
+    "Teočinu": [
+     785093,
+     "Teočin",
+     1
+    ],
+    "Tijesnu (Šibenik)": [
+     3189120,
+     "Tijesno (Šibenik)",
+     1
+    ],
+    "Titovom Užicu (Užice)": [
+     3188434,
+     "Titovo Užice (Užice)",
+     1
+    ],
+    "Titovom Velesu ( Veles)": [
+     785058,
+     "Titov Veles ( Veles)",
+     1
+    ],
+    "Titovom Velesu (Veles), Makedonija": [
+     785058,
+     "Titov Veles (Veles), Makedonija",
+     1
+    ],
+    "Tolišnici": [
+     785045,
+     "Tolišnica",
+     0
+    ],
+    "Tominovcu": [
+     3189004,
+     "Tominovac",
+     1
+    ],
+    "Totovom selu (Senta)": [
+     3318866,
+     "Totovo Selo (Senta)",
+     1
+    ],
+    "Trakošćanu": [
+     3188941,
+     "Trakošćan",
+     1
+    ],
+    "Trebijovima, Trebinjska brda": [
+     3188895,
+     "Trebijovi, Trebinjska brda",
+     1
+    ],
+    "Trebotina": [
+     784966,
+     "Trebotin",
+     0
+    ],
+    "Trešnjevcu": [
+     3191060,
+     "Trešnjevac",
+     1
+    ],
+    "Tribiču, Livno, Bosna i Hercegovina": [
+     3188841,
+     "Tribič, Livno, Bosna i Hercegovina",
+     1
+    ],
+    "Trnavi (Đakovo)": [
+     3188813,
+     "Trnava (Đakovo)",
+     0
+    ],
+    "Trninića Brijeg, Drvar": [
+     3260052,
+     "Trninić-Brijeg, Drvar",
+     0
+    ],
+    "Tugarima, Omiš": [
+     3188670,
+     "Tugari, Omiš",
+     1
+    ],
+    "Tukljacima": [
+     3218348,
+     "Tukljace",
+     1
+    ],
+    "Tulima, Zubci": [
+     3188656,
+     "Tuli, Zubci",
+     1
+    ],
+    "Tulima, Zubni": [
+     3188656,
+     "Tuli, Zubni",
+     1
+    ],
+    "Turmentima, Zubci": [
+     3188609,
+     "Turmenti, Zubci",
+     1
+    ],
+    "Turnišću Desiničkom": [
+     12509948,
+     "Turnišće Desinićko",
+     0
+    ],
+    "Turnišću, Konjščina": [
+     3188607,
+     "Turnišće, Konjščina",
+     1
+    ],
+    "Tuževiću": [
+     3188585,
+     "Tužević",
+     1
+    ],
+    "Ugarcima, Ljubomir": [
+     3188540,
+     "Ugarci, Ljubomir",
+     1
+    ],
+    "Ukšićima, Ljubomir": [
+     3188521,
+     "Ukšići, Ljubomir",
+     1
+    ],
+    "Urmanici, Vranje": [
+     829622,
+     "Urmanica, Vranje",
+     0
+    ],
+    "Uvjećima, Zubci": [
+     3188440,
+     "Uvjeća, Zubci",
+     1
+    ],
+    "Užicu": [
+     3188434,
+     "Užice",
+     1
+    ],
+    "Varaždinu (živio u Zaprešiću)": [
+     3188383,
+     "Varaždin (živio u Zaprešiću)",
+     1
+    ],
+    "Veleti, Danilovgrad": [
+     3338702,
+     "Veleta, Danilovgrad",
+     0
+    ],
+    "Velikoj (Slavonska Požega)": [
+     3188279,
+     "Velika (Slavonska Požega)",
+     0
+    ],
+    "Velikoj Barni (Grubišno Polje)": [
+     3188275,
+     "Velika Barna (Grubišno Polje)",
+     1
+    ],
+    "Velikoj Nedelji (Ormož)": [
+     3188200,
+     "Velika Nedelja (Ormož)",
+     1
+    ],
+    "Velikom Gradištu": [
+     784535,
+     "Veliko Gradište",
+     1
+    ],
+    "Velikom Trgovišću": [
+     3187920,
+     "Veliko Trgovišće",
+     1
+    ],
+    "Velimlju (Banjani)": [
+     3187911,
+     "Velimlje (Banjani)",
+     1
+    ],
+    "Vidrićima, Sokolac, Sarajevo": [
+     3187782,
+     "Vidrići, Sokolac, Sarajevo",
+     1
+    ],
+    "Vignjevićima, Ljubotinj": [
+     3187775,
+     "Vignjevići, Ljubotinj",
+     1
+    ],
+    "Vigoštu": [
+     784437,
+     "Vigošte",
+     1
+    ],
+    "Vigoštu, Arilje": [
+     784437,
+     "Vigošte, Arilje",
+     1
+    ],
+    "Vinipotoku": [
+     12508784,
+     "Vinipotok",
+     1
+    ],
+    "Virju (Bjelovar)": [
+     3187699,
+     "Virje (Bjelovar)",
+     1
+    ],
+    "Virovitici": [
+     3187694,
+     "Virovitica",
+     0
+    ],
+    "Vlasteljicama": [
+     784315,
+     "Vlasteljice",
+     1
+    ],
+    "Volujcu, Trebinje": [
+     3187409,
+     "Volujac, Trebinje",
+     1
+    ],
+    "Vrabačkoj": [
+     3269674,
+     "Vrabačka",
+     0
+    ],
+    "Vrankovcu": [
+     12509433,
+     "Vrankovec",
+     1
+    ],
+    "Vrtnjakovcu": [
+     3213502,
+     "Vrtnjakovec",
+     1
+    ],
+    "Vrtoč-Polju, Žabljak": [
+     3303683,
+     "Vrtoč Polje, Žabljak",
+     1
+    ],
+    "Zagradcima, Gacko": [
+     3186898,
+     "Zagradci, Gacko",
+     1
+    ],
+    "Zagradinju": [
+     3263751,
+     "Zagradinje",
+     1
+    ],
+    "Zagrađu, Gornji Milanovac": [
+     784034,
+     "Zagrađe, Gornji Milanovac",
+     1
+    ],
+    "Zagrebu (živio u Bedekovčini)": [
+     3186886,
+     "Zagreb (živio u Bedekovčini)",
+     1
+    ],
+    "Zagrebu (živio u Oroslavju)": [
+     3186886,
+     "Zagreb (živio u Oroslavju)",
+     1
+    ],
+    "Zagrebu (živjela u Desiniću)": [
+     3186886,
+     "Zagreb (živjela u Desiniću)",
+     1
+    ],
+    "Zasadu, Trebinje": [
+     3263833,
+     "Zasad, Trebinje",
+     1
+    ],
+    "Začretju (živio u Zajezdi)": [
+     3186954,
+     "Začretje (živio u Zajezdi)",
+     1
+    ],
+    "Začuli, Trebinjska šuma": [
+     3186953,
+     "Začula, Trebinjska šuma",
+     0
+    ],
+    "Zepču": [
+     3186567,
+     "Zepče",
+     1
+    ],
+    "Zgonjevu, Dživar": [
+     3186551,
+     "Zgonjevo, Dživar",
+     1
+    ],
+    "Čaklovićima, Tuzla": [
+     3202890,
+     "Čaklovići, Tuzla",
+     1
+    ],
+    "Čakovcu (živjela u Kupljenovu)": [
+     3202888,
+     "Čakovec (živjela u Kupljenovu)",
+     1
+    ],
+    "Čavorima, Njeguši": [
+     3318383,
+     "Čavori, Njeguši",
+     1
+    ],
+    "Čačku": [
+     792078,
+     "Čačak",
+     1
+    ],
+    "Čereviču, Novi Sad, Srbija": [
+     3202729,
+     "Čerevič, Novi Sad, Srbija",
+     1
+    ],
+    "Čestobrodici": [
+     791946,
+     "Čestobrodica",
+     0
+    ],
+    "Čoviću": [
+     3282084,
+     "Čović",
+     1
+    ],
+    "Čukliću": [
+     3202299,
+     "Čuklić",
+     1
+    ],
+    "Đedićima, Trebinjska šuma": [
+     3202121,
+     "Đedići, Trebinjska šuma",
+     1
+    ],
+    "Đenđinovićima, Spič": [
+     3202097,
+     "Đenđinovići, Spič",
+     1
+    ],
+    "Đulovcu": [
+     3195069,
+     "Đulovac",
+     1
+    ],
+    "Đurmanima, Spič": [
+     3200942,
+     "Đurmani, Spič",
+     1
+    ],
+    "Đurđevcu, Koprivnica": [
+     3200961,
+     "Đurđevac, Koprivnica",
+     1
+    ],
+    "Đurđeviku, Živinice": [
+     3200957,
+     "Đurđevik, Živinice",
+     1
+    ],
+    "Šaranima, Begović Kula, Trebinjska brda": [
+     3191274,
+     "Šarani, Begović Kula, Trebinjska brda",
+     1
+    ],
+    "Ševice, Kučevo": [
+     785941,
+     "Ševica, Kučevo",
+     0
+    ],
+    "Šindonu, Rijeka Crnojevića, Cetinje": [
+     3190867,
+     "Šindjon, Rijeka Crnojevića, Cetinje",
+     1
+    ],
+    "Škaričevu": [
+     3190741,
+     "Škaričevo",
+     1
+    ],
+    "Škaričevu, Krapina": [
+     3190741,
+     "Škaričevo, Krapina",
+     1
+    ],
+    "Škofjoj loki": [
+     3190717,
+     "Škofja Loka",
+     1
+    ],
+    "Špionici, Srebrenik": [
+     3255194,
+     "Špionica, Srebrenik",
+     0
+    ],
+    "Šušanju, Spič": [
+     3318488,
+     "Šušanj, Spič",
+     1
+    ],
+    "Šćenici, Ljubomir": [
+     3191205,
+     "Šćenica, Ljubomir",
+     0
+    ],
+    "Žakovu, Trebinjska šuma": [
+     3186851,
+     "Žakovo, Trebinjska šuma",
+     1
+    ],
+    "Ždrijelovićima": [
+     3186655,
+     "Ždrijelovići",
+     1
+    ],
+    "Ždrijelovićima, Avubomir": [
+     3186655,
+     "Ždrijelovići, Avubomir",
+     1
+    ],
+    "Žeincima": [
+     12217355,
+     "Žeinci",
+     1
+    ],
+    "Željevu, Zubci": [
+     3186592,
+     "Željevo, Zubci",
+     1
+    ],
+    "Žepču": [
+     3186567,
+     "Žepče",
+     1
+    ],
+    "Žlnu": [
+     783839,
+     "Žlne",
+     1
+    ],
+    "Županjolu": [
+     3186290,
+     "Županjol",
+     1
+    ],
+    "Župi, Lastva": [
+     3186297,
+     "Župa, Lastva",
+     0
+    ]
+   },
+   "death_place": {
+    "Andrijevice": [
+     3204816,
+     "Andrijevica",
+     0
+    ],
+    "Bariju": [
+     792861,
+     "Barija",
+     1
+    ],
+    "Bartuli, Stari Bar": [
+     3204457,
+     "Bartula, Stari Bar",
+     0
+    ],
+    "Belanovice": [
+     792785,
+     "Belanovica",
+     0
+    ],
+    "Borani": [
+     792893,
+     "Borana",
+     0
+    ],
+    "Branilovica": [
+     3207118,
+     "Branilovic",
+     0
+    ],
+    "Buljarici": [
+     3203000,
+     "Buljarica",
+     0
+    ],
+    "Crne Vode": [
+     3217830,
+     "Crna Voda",
+     0
+    ],
+    "Crvene Ploče": [
+     833974,
+     "Crvena Ploča",
+     0
+    ],
+    "Cukliću": [
+     3202299,
+     "Cuklić",
+     1
+    ],
+    "Cumiću, Kragujevac": [
+     791685,
+     "Cumić, Kragujevac",
+     1
+    ],
+    "Domani": [
+     3255214,
+     "Domana",
+     0
+    ],
+    "Glibodolu": [
+     3200602,
+     "Glibodol",
+     1
+    ],
+    "Glumču": [
+     790681,
+     "Glumač",
+     1
+    ],
+    "Golubovcima": [
+     3200422,
+     "Golubovci",
+     1
+    ],
+    "Gornje Šume": [
+     3215904,
+     "Gornja Šuma",
+     0
+    ],
+    "Grubišnu polje": [
+     3199515,
+     "Grubišno Polje",
+     0
+    ],
+    "Han Pijesku": [
+     3199417,
+     "Han Pijesak",
+     1
+    ],
+    "Han Pogledu, Vlasenica": [
+     3272181,
+     "Han Pogled, Vlasenica",
+     1
+    ],
+    "Hlevnici": [
+     3199373,
+     "Hlevnica",
+     0
+    ],
+    "Jelašce, Kalinovik": [
+     3198720,
+     "Jelašca, Kalinovik",
+     0
+    ],
+    "Jezerani": [
+     3198632,
+     "Jezerana",
+     0
+    ],
+    "Klikovača": [
+     3325395,
+     "Klikovač",
+     0
+    ],
+    "Konjica": [
+     3337476,
+     "Konjic",
+     0
+    ],
+    "Kozilima, Šipovo": [
+     3260736,
+     "Kozila, Šipovo",
+     1
+    ],
+    "Kraljevu": [
+     789107,
+     "Kraljevo",
+     1
+    ],
+    "Kreki": [
+     3197310,
+     "Kreka",
+     0
+    ],
+    "Križpolju": [
+     3197210,
+     "Križpolje",
+     1
+    ],
+    "Krčani": [
+     3262145,
+     "Krčana",
+     0
+    ],
+    "Kula Fazlagića": [
+     3196981,
+     "Kula Fazlagić",
+     0
+    ],
+    "Kutuši": [
+     3304042,
+     "Kutuša",
+     0
+    ],
+    "Ličkom Lešću": [
+     3196592,
+     "Ličko Lešće",
+     1
+    ],
+    "Ličkom Lešću, Otočac": [
+     3196592,
+     "Ličko Lešće, Otočac",
+     1
+    ],
+    "Ljubiša": [
+     3196362,
+     "Ljubiš",
+     0
+    ],
+    "Ljute kose": [
+     3303024,
+     "Ljuta Kosa",
+     0
+    ],
+    "Losinja": [
+     3196194,
+     "Losinj",
+     0
+    ],
+    "Maslovari": [
+     3276998,
+     "Maslovara",
+     0
+    ],
+    "Mašvine": [
+     3195391,
+     "Mašvina",
+     0
+    ],
+    "Memićima, Kalesija": [
+     3195254,
+     "Memići, Kalesija",
+     1
+    ],
+    "Meteriza": [
+     3263601,
+     "Meteriz",
+     0
+    ],
+    "Metku": [
+     3195919,
+     "Metak",
+     1
+    ],
+    "Mišća": [
+     3195031,
+     "Mišac",
+     0
+    ],
+    "Mokre": [
+     787863,
+     "Mokra",
+     0
+    ],
+    "Mokrica": [
+     3341966,
+     "Mokric",
+     0
+    ],
+    "Obzovici": [
+     3316945,
+     "Obzovica",
+     0
+    ],
+    "Pazarištu, Gospić": [
+     3271504,
+     "Pazarište, Gospić",
+     1
+    ],
+    "Peuti": [
+     3342879,
+     "Peuta",
+     0
+    ],
+    "Pešce": [
+     3193471,
+     "Pešca",
+     0
+    ],
+    "Pili": [
+     3217896,
+     "Pila",
+     0
+    ],
+    "Pirovištu, Donji Lapac": [
+     3217479,
+     "Pirovište, Donji Lapac",
+     1
+    ],
+    "Pleternice": [
+     3193187,
+     "Pleternica",
+     0
+    ],
+    "Potkozlovači": [
+     3192996,
+     "Potkozlovača",
+     0
+    ],
+    "Premeći": [
+     862636,
+     "Premeća",
+     0
+    ],
+    "Rapain Klancu": [
+     3218368,
+     "Rapain Klanac",
+     1
+    ],
+    "Sani": [
+     3191310,
+     "Sana",
+     0
+    ],
+    "Seganovcu": [
+     3191170,
+     "Seganovac",
+     1
+    ],
+    "Simin Hanu, Tuzla": [
+     3190878,
+     "Simin Han, Tuzla",
+     1
+    ],
+    "Sisku": [
+     3190813,
+     "Sisak",
+     1
+    ],
+    "Skatavice, Kotor-Varoši, Prve proleterske briga": [
+     3190738,
+     "Skatavica, Kotor-Varoši, Prve proleterske briga",
+     0
+    ],
+    "Stative": [
+     3278410,
+     "Stativa",
+     0
+    ],
+    "Stikadi, Gračac": [
+     3189882,
+     "Stikada, Gračac",
+     0
+    ],
+    "Strmnici": [
+     3204882,
+     "Strmnica",
+     0
+    ],
+    "Svinišću": [
+     3189247,
+     "Svinišće",
+     1
+    ],
+    "Teočinu": [
+     785093,
+     "Teočin",
+     1
+    ],
+    "Trubjele": [
+     3188699,
+     "Trubjela",
+     0
+    ],
+    "Tuževiću": [
+     3188585,
+     "Tužević",
+     1
+    ],
+    "Uvalici": [
+     3217994,
+     "Uvalica",
+     0
+    ],
+    "Uvalici, Plit": [
+     3217994,
+     "Uvalica, Plit",
+     0
+    ],
+    "Užicu": [
+     3188434,
+     "Užice",
+     1
+    ],
+    "Veleti": [
+     3338702,
+     "Veleta",
+     0
+    ],
+    "Visočniku": [
+     3204911,
+     "Visočnik",
+     1
+    ],
+    "Vojišnice": [
+     3187457,
+     "Vojišnica",
+     0
+    ],
+    "Vrace, Sarajevo": [
+     3267643,
+     "Vraca, Sarajevo",
+     0
+    ],
+    "Vrste": [
+     3187135,
+     "Vrsta",
+     0
+    ],
+    "Zabjela": [
+     3236711,
+     "Zabjel",
+     0
+    ],
+    "Ćuli": [
+     3202288,
+     "Ćula",
+     0
+    ],
+    "Čajniču": [
+     3202895,
+     "Čajniče",
+     1
+    ],
+    "Četnici": [
+     3211077,
+     "Četnica",
+     0
+    ],
+    "Čoviću": [
+     3282084,
+     "Čović",
+     1
+    ],
+    "Đedovači": [
+     3202115,
+     "Đjedovača",
+     0
+    ],
+    "Škalići": [
+     10632097,
+     "Škalića",
+     0
+    ],
+    "Špionici, Tuzla": [
+     3255194,
+     "Špionica, Tuzla",
+     0
+    ],
+    "Šušunje": [
+     3189445,
+     "Šušunja",
+     0
+    ],
+    "Žepča": [
+     3186567,
+     "Žepčė",
+     0
+    ],
+    "Žijevu": [
+     3186462,
+     "Žijevo",
+     1
+    ],
+    "Žumberku": [
+     3218010,
+     "Žumberak",
+     1
+    ]
+   }
+  }
+ }
+}
