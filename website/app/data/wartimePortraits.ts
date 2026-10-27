@@ -503,6 +503,19 @@ export const WARTIME_PORTRAITS: string[] = [
   '0041000416',
   '0044010384',
   '0125000366',
+  // the portrait review of 2026-10-27: narodni heroji who fell in the war (the 1982 hero book), and wartime gallery photos
+  '0001010279',
+  '0001013752',
+  '0026000865',
+  '0170000055',
+  '0171010148',
+  '0058000210',
+  '0170000011',
+  '0109001011',
+  '0112000440',
+  '0117000221',
+  '0040001367',
+  '0001013613',
   // family photos (data/family.ts)
   '0002000242',
 ]

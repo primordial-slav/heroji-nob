@@ -134,11 +134,19 @@ GALLERY = [
     ('0113000047', 13932, (0.05, 0.0, 0.5, 0.4), 'Vaso Jovanović, načelnik štaba of the 1. proleterska divizija, later its commander (caption and record); Šćekić "desno", so he is the left one'),
     ('0001004677', 13932, (0.05, 0.0, 0.5, 0.4), 'Vaso Jovanović, born 1915 in Podgorica, officer, commander of the division (the same man as 0113000047)'),
     ('0001012065', 13932, (0.45, 0.0, 0.92, 0.4), 'Vlado Šćekić "desno", narodni heroj, political commissar of the 1. proleterska divizija (caption and record)'),
-    ('0039100084', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić "levo u prvom redu", narodni heroj, died 10 August 1943 at Krivaja (caption and record)'),
-    ('0039000077', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić, died 10 August 1943, Ribnica on the Krivaja (the same man as 0039100084)'),
-    ('0039010003', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić of Otanj, drowned in the Krivaja 10 August 1943 (the same man as 0039100084)'),
+    ('0036101290', 13932, (0.45, 0.0, 0.92, 0.4), 'Vlado Šćekić "desno": the same man as 0001012065, deputy political commissar of the 1. dalmatinska from its formation (record)'),
+    ('0039000077', 12137, (0.0, 0.18, 0.5, 0.55), 'Milorad Bondžulić "levo u prvom redu", narodni heroj, died 10 August 1943 at Krivaja (caption and record)'),
     ('0112000286', 12169, (0, 0, 1, 1), 'Dr Simo Milošević, member of the AVNOJ executive committee, wounded at the Sutjeska, killed by chetniks in Vrbnica (the museum card and the record)'),
     ('0148000114', 14868, (0.68, 0.05, 0.95, 0.42), 'the staff of the IV operativna zona, Livno, September 1942, "s leva na desno": Terzić, Krstulović, Kukoč, Maks Baće (the right one); the record: operativni oficir of that staff from April 1942'),
+    ('0002009699', 12072, (0.3, 0.06, 0.58, 0.66), "Milan Žeželj, komandant 13. proleterske, 1944: the Prva lička's narodni heroj of its 1. bataljon, the same man as 0006008279 (the user's answer of 2026-10-27 on the review page)"),
+    ('0040001367', 8590, (0.05, 0.0, 0.95, 0.73), "Stana Tomašević: the museum card names her alone (an instructor of the CK SKJ later) (the user's answer of 2026-10-27 on the review page)"),
+    ('0040030207', 8590, (0.05, 0.0, 0.95, 0.73), "Stana Tomašević, of the brigade's Politodjel in 1942: the same woman as 0040001367 (the user's answer of 2026-10-27 on the review page)"),
+    ('0112000381', 5829, (0.33, 0.415, 0.6, 0.91), "Dr Ivan Ribar, the speaker at the lectern (the user's answer of 2026-10-27 on the review page)"),
+    ('0112000440', 14868, (0.06, 0.03, 0.29, 0.46), 'the staff of the IV operativna zona, Livno 1942, "s leva na desno": Terzić (the left one), Krstulović, Kukoč, Baće (the user\'s answer of 2026-10-27 on the review page)'),
+    ('0117000221', 16663, (0.065, 0.13, 0.43, 0.86), "Lidija Jovanović's identity card of 2 August 1944 (Podgorica), its photo (the user's answer of 2026-10-27 on the review page)"),
+    ('0001013613', 14798, (0.3, 0.18, 0.68, 0.9), "Marko Vuletić, komesar 1. tenkovske brigade, Šibenik, November 1944: the record a political commissar of a brigade, of Limljani (the user's answer of 2026-10-27 on the review page)"),
+    ('0001101618', 14798, (0.3, 0.18, 0.68, 0.9), "Marko Vuletić, the same man as 0001013613 (Limljani, KPJ from 1934, at the war's end political commissar of a brigade) (the user's answer of 2026-10-27 on the review page)"),
+    ('0001201067', 14798, (0.3, 0.18, 0.68, 0.9), "Marko Vuletić, the same man as 0001013613 (Limljani, KPJ from 1934) (the user's answer of 2026-10-27 on the review page)"),
 ]
 
 BOOK_TITLES = {
@@ -258,7 +266,6 @@ UNIT_BOOKS = [
     # (2026-10-26; Stjepan Filipović's photo is the one under the gallows, left out)
     ('0010202288', '00001/10.pdf', 248, 276, None, 'Kovačević Mila Đuran, born 18 April 1916 in Bukovača near Bosanski Petrovac; the record: father Mile, born 1916 in Bukovača'),
     ('0036000562', '00001/10.pdf', 148, 164, None, 'Galić Marijana Jure "Veliki", born 1912 in Bijača near Ljubuški; the record: Galić Jure, born in Bijača'),
-    ('0036019007', '00001/10.pdf', 148, 164, None, 'Galić Marijana Jure "Veliki", born 1912 in Bijača near Ljubuški; the record: the same'),
     ('0040011842', '00001/10.pdf', 517, 576, None, 'Zvicer Blagote Jovan Jovo, born 1914 in Tospude (Cuce, Nikšić); the record: father Blagota, born 1914 in Cuce'),
     ('0041000416', '00001/10.pdf', 303, 340, None, 'Lješković Mašana Nikola, born 15 June 1916 near Nikšić; the record: father Mašan, born 1916 near Nikšić, fell at the Sutjeska'),
     ('0044010384', '00001/10.pdf', 213, 242, None, 'Kljaić Mirka Milanka, born 1924 in Staro Selo (Petrinja); the record: born 1924 in Staro Selo, narodni heroj (a woman)'),
@@ -825,6 +832,10 @@ COMMONS = [
     ('0141000224', 'Jože_Klanjšek_1943.jpg', (0.15, 0.0, 0.85, 0.5), 'Public domain', '', 'Jože Klanjšek Vasja, narodni heroj: born in Drtija (sr)'),
     ('0168002576', 'Vicko_Milat.jpg', (0, 0, 1, 1), 'CC BY-SA 3.0 rs', '', 'Vicko Milat, narodni heroj: born 1914 in Blato on Korčula (sr)'),
     ('0171010167', 'Franc_Pasterk.jpg', (0, 0, 1, 1), 'Public domain', '', 'Franc Pasterk Lenart, narodni heroj: born 1912 in Lobnik, fell 4 April 1943 (sr, sl)'),
+    ('0007005882', 'Savo_Drljević.jpg', (0.3, 0.04, 0.87, 0.62), 'CC BY-SA 3.0', '', "Savo Drljević, narodni heroj: the man at the top, in the white uniform (the user's answer of 2026-10-27 on the review page)"),
+    ('0040030044', 'Savo_Drljević.jpg', (0.3, 0.04, 0.87, 0.62), 'CC BY-SA 3.0', '', "Savo Drljević, narodni heroj: the man at the top, in the white uniform (the user's answer of 2026-10-27 on the review page)"),
+    ('0114000034', 'Savo_Drljević.jpg', (0.3, 0.04, 0.87, 0.62), 'CC BY-SA 3.0', '', "Savo Drljević, narodni heroj: the man at the top, in the white uniform (the user's answer of 2026-10-27 on the review page)"),
+    ('0093000270', 'Aleksandar_Vojinović.jpg', (0, 0.02, 1, 0.7), 'Public domain', '', "Aleksandar Vojinović, narodni heroj: a small newspaper print (the user's answer of 2026-10-27 on the review page)"),
 ]
 
 MEMORIAL = [
@@ -1568,7 +1579,6 @@ HEROES_1982 = [
     ('0040010885', '9002000678', '977', 512, (28.1, 150.4, 113.7, 261.0), "the record holds the entry: Martinović Nika Stanislav (Stanko), born 1916"),
     ('0040011242', '9002000903', '978', 100, (204.0, 175.0, 286.6, 280.8), "the record holds the entry: Petrović Joka Đuro, born 1914"),
     ('0040011593', '9002001101', '978', 233, (197.2, 105.1, 277.8, 212.2), "the record holds the entry: Strugar Andrije Dušan, born 1919"),
-    ('0040011989', '9002000306', '977', 240, (120.7, 140.8, 206.6, 254.1), "Vasilije Đurović \"Vako\", komandant brigade, fell 9 June 1943 at the Sutjeska: the same man as 0040001620, which holds the entry"),
     ('0040040020', '9002000539', '977', 410, (27.4, 134.1, 111.8, 243.1), "the record holds the entry: Kostić Filipa Ilija, born 1911"),
     ('0040040036', '9002000924', '978', 114, (204.2, 156.4, 286.2, 263.0), "the record holds the entry: Popivoda Gorčina Krsto, born 1910"),
     ('0041000054', '9002000050', '977', 62, (213.8, 144.7, 297.3, 254.6), "the record holds the entry: Baletić Lazara Marko, born 1917"),
@@ -1717,7 +1727,7 @@ HEROES_1982 = [
     ('0093000121', '9002000643', '977', 488, (31.4, 319.6, 114.0, 424.0), "the record holds the entry: Mamić Stanka Miloš, born 1918"),
     ('0011000073', '9002000038', '977', 54, (214.5, 123.8, 298.2, 238.7), "by hand: Bajić Stevana Simo (Simica), born in Resanovci (Bosansko Grahovo), father Stevan"),
     ('0023001829', '9002001283', '978', 359, (108.0, 95.7, 184.5, 204.0), "by hand: Vuković Jove Žarko (Pucar), \"Pucar\", father Jovo, born in Zelina (the book: Zolina)"),
-    ('0036019002', '9002001233', '978', 327, (196.8, 103.4, 278.4, 211.2), "by hand: Vojvodić Rada Dimitrije (Zeko), \"Zeko\", born 9 May 1908 in Konjusi (Andrijevica)"),
+    ('0036101202', '9002001233', '978', 327, (196.8, 103.4, 278.4, 211.2), "by hand: Vojvodić Rada Dimitrije (Zeko), \"Zeko\", born 9 May 1908 in Konjusi (Andrijevica)"),
     ('0040010558', '9002000439', '977', 339, (19.4, 32.4, 103.2, 136.8), "by hand: Jovančević Milorad, born 1919 in Dolac near Berane"),
     ('0040011298', '9002000935', '978', 122, (204.4, 153.1, 286.0, 258.9), "by hand: Popović Sekule, born in Lužac (Berane)"),
     ('0043000557', '9002000546', '977', 414, (213.8, 162.9, 297.3, 271.9), "by hand: Kovačević Sime Boriša (Šćepan), \"Šćepan\", father Simo, born in Duvno"),
@@ -1774,8 +1784,20 @@ HEROES_1982 = [
     ('0120000219', '9002000644', '977', 488, (213.8, 318.4, 296.8, 422.3), "the record holds the entry: Mamula Sime Bogdan, born 1918"),
     ('0125000212', '9002000325', '977', 255, (203.7, 32.9, 286.2, 142.0), "the record holds the entry: Frenjo Huseina Rifat, born 1923"),
     # the same man under another record of his (not linked), paired by hand
-    ('0001201194', '9002001312', '978', 388, (204.9, 124.1, 286.2, 230.6), "by hand: the same man as 0001014014, Ljubomir \"Ljupče Španac\" Živković, born 1918 in Crveni Breg, fell 20 November 1942 at Sitnica"),
     ('0036010519', '9002000260', '977', 208, (214.7, 31.0, 298.4, 140.4), "by hand: the same man as 0007001350, Branko Dude, son of Silvestar, born 7 August 1913 in Solin"),
+    ('0001010279', '9002000982', '978', 157, (107.2, 157.2, 190.2, 263.9), "by hand, the user's answer of 2026-10-27 on the review page: Radulović Nikole Jovan (Jovo), the record born 1906 in Komani, the book 1903 in Bar"),
+    ('0001013752', '9002001299', '978', 376, (116.4, 302.6, 197.4, 409.1), "by hand, the user's answer of 2026-10-27 on the review page: Zogović Filipa Vujadin (Vujo), the record born in Pepići, the book in Murino"),
+    ('0026000865', '9002000979', '978', 155, (197.5, 151.9, 279.3, 257.0), "by hand, the user's answer of 2026-10-27 on the review page: Radovanović Vladimir, the record born 1906 in Godovik, the book 1903 in Rečice"),
+    ('0170000055', '9002000351', '977', 273, (205.1, 155.5, 288.8, 261.8), "by hand, the user's answer of 2026-10-27 on the review page: Gregorčič Ivana Jože (Gorenjc), the death on 9 September 1942 in both"),
+    ('0171010148', '9002000780', '977', 577, (203.4, 316.0, 288.1, 424.5), "by hand, the user's answer of 2026-10-27 on the review page: Molek Antona Jakob (Mohor), the death on 7 March 1945 in both"),
+    ('0043000136', '9002000090', '977', 86, (120.9, 29.3, 205.8, 140.8), "by hand, the user's answer of 2026-10-27 on the review page: Bjelogrlić Kosta, the record's father Nikola, the book's T."),
+    ('0058000210', '9002000094', '977', 89, (20.2, 32.2, 105.1, 141.3), "by hand, the user's answer of 2026-10-27 on the review page: Blažić Antun, the record's father Vinko, the book's Šime"),
+    ('0170000099', '9002000570', '977', 432, (121.9, 30.2, 206.6, 140.2), "by hand, the user's answer of 2026-10-27 on the review page: Krmelj Blaže Maks (Matija), the record a narodni heroj by name alone"),
+    ('0170000011', '9002000072', '977', 75, (202.0, 158.8, 287.2, 271.8), "by hand, the user's answer of 2026-10-27 on the review page: Bernard Jožeta Jaka, the record a narodni heroj by name alone"),
+    ('0060010141', '9002001162', '978', 278, (24.7, 30.0, 107.5, 137.5), "by hand, the user's answer of 2026-10-27 on the review page: Tarabić Mihajla Joco, the record a narodni heroj by name alone"),
+    ('0060010153', '9002001222', '978', 319, (106.1, 154.5, 188.9, 260.6), "by hand, the user's answer of 2026-10-27 on the review page: Vidović Jandre Nikola, the record a narodni heroj by name alone"),
+    ('0109001011', '9002000904', '978', 101, (108.7, 173.7, 191.9, 280.5), "by hand, the user's answer of 2026-10-27 on the review page: Petrović Đure Milorad, the record a narodni heroj by name alone"),
+    ('0016003506', '9002001128', '978', 254, (25.0, 30.5, 106.8, 138.7), 'by hand, the user\'s answer of 2026-10-27 on the review page: Šibl Armina Ivan, the record\'s "Šibl A Ivan" (Zagreb); the same man as the Kalnički odred\'s 0058003104'),
 ]
 HEROES_1982_CREDIT ='Petar Kačavenda, Narodni heroji Jugoslavije (1982)'
 
@@ -1798,7 +1820,7 @@ SAME = [
     ('0163000104', '0048000364', 'Kecman Pero, father Jovo, born 1921 near Bosanski Petrovac'),
     ('0001001840', '0036002039', 'Ćetković Pero, narodni heroj, born 1907 in Mužovići (Ljubotinj), fell March 1943 near Nevesinje: '
                                  'the Prva proleterska\'s book and a Commons crop of the 1. dalmatinska\'s staff photo'),
-    ('0001013228', '0036019002', 'Vojvodić Dimitrije "Zeko", narodni heroj, born 9 May 1908 in Konjusi: the Prva proleterska\'s book '
+    ('0001013228', '0036101202', 'Vojvodić Dimitrije "Zeko", narodni heroj, born 9 May 1908 in Konjusi: the Prva proleterska\'s book '
                                  'and the 1982 hero book print different photos'),
 ]
 

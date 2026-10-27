@@ -19140,7 +19140,59 @@
     "rank": "mitraljezac, komandir voda",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 466.9,
-    "death_place": "Rijeka"
+    "death_place": "Rijeka",
+    "other_sources": [
+      {
+        "soldier_id": "0079000182",
+        "name": "Bursać Perice Dušan",
+        "additional_info": "iz Ličke Kaldrme, u borbi za Rijeku, u svibnju 1945.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 298.8,
+        "pdf_y": 514.1,
+        "pdf_x_end": 451.8,
+        "pdf_y_end": 545.2,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0079010008",
+        "name": "Bursać Dušan",
+        "additional_info": "Pregled komandnog kadra 19. divizije od formiranja do kraja rata: komandant 6. brigade, od srpnja 1944. do listopada iste godine. Poginuo u borbama za oslobođenje Rijeke, u svibnju 1945.",
+        "pdf_file": "19-sjevernodalmatinska-kadar.pdf",
+        "pdf_page": 2,
+        "pdf_x": 114.6,
+        "pdf_y": 245.1,
+        "pdf_x_end": 174.6,
+        "pdf_y_end": 256.3,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0103010015",
+        "name": "Bursać Perice Dušan",
+        "additional_info": "Spisak komandnog kadra 6. dalmatinske udarne brigade: Štab brigade, komandanti; Štab brigade, zamenici komandanta",
+        "pdf_file": "6-dalmatinska-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 113.0,
+        "pdf_y": 230.3,
+        "pdf_x_end": 175.4,
+        "pdf_y_end": 238.8,
+        "pdf_rects": [
+          [
+            113.0,
+            230.3,
+            175.4,
+            238.8
+          ],
+          [
+            113.0,
+            230.3,
+            175.4,
+            238.8
+          ]
+        ],
+        "unit_file": "6-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002000857",
@@ -213130,20 +213182,58 @@
   {
     "soldier_id": "0002009699",
     "last_name": "Žeželj",
-    "middle_name": "",
+    "middle_name": "Aćima",
     "first_name": "Milan",
     "additional_info": "u prvom sastavu 1. bataljona, u proljeće 1942. zamjenik komandanta bataljona, narodni heroj",
-    "fathers_name": "",
-    "full_name": "Žeželj Milan",
+    "fathers_name": "Aćim",
+    "full_name": "Žeželj Aćima Milan",
     "pdf_page": 915,
     "pdf_y": 669.6,
     "pdf_x": 132.6,
     "pdf_y_end": 689.2,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_year": "",
+    "birth_year": "1917",
     "rank": "zamjenik komandanta bataljona",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 467.4
+    "pdf_x_end": 467.4,
+    "other_sources": [
+      {
+        "soldier_id": "9002001310",
+        "name": "Žeželj Aćima Milan",
+        "additional_info": "Rođen je 23. januara 1917. u Podurljaju, Donji Lapac, Hrvatska. … Narodnim herojem proglašen je 2. januara 1945. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=386",
+        "source_page": 382,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001001181",
+        "name": "Žeželj Aćima Milan",
+        "additional_info": "Rođen 23-I-1917 u selu Podurljai. Gračac. Donji Lapac. Hrvatska. Radnik. Član KPJ od novembra 1941. U NOB stupio 1941 . Danas : generalpotpuko vnik JNA. Za narodnog heroja proglašen 12-I-1945.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=918",
+        "source_page": 896,
+        "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0006008279",
+        "name": "Žeželj Aćima Milan",
+        "additional_info": "1917. Srb, Donji Lapac.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 107,
+        "pdf_x": 282.6,
+        "pdf_y": 312.1,
+        "pdf_x_end": 454.6,
+        "pdf_y_end": 320.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0120000483",
+        "name": "Žeželj Aćima Milan",
+        "additional_info": "1917, Srb, Donji Lapac.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=301",
+        "source_page": 277,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002009700",
