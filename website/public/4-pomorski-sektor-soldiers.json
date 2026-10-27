@@ -22846,11 +22846,39 @@
     "rank": "desetar",
     "occupation": "radnik-kolar",
     "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
     "other_sources": [
       {
+        "soldier_id": "0001003483",
+        "name": "Grubišić Krste Joso",
+        "additional_info": "1912, Šibenik, Hrvatska, Hrvat, radnik-kolar, član KPJ od 1943, u NOB od oktobra 1942, u brigadi od oktobra 1942, II bataljon, desetar, poginuo 00. 12. 1944, u Dalmaciji",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 272,
+        "pdf_x": 67.0,
+        "pdf_y": 58.7,
+        "pdf_x_end": 374.1,
+        "pdf_y_end": 100.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100355",
+        "name": "Grubišić Krste Joso",
+        "additional_info": "zvani Krstun; borac 2. bataljona, rođen 1912, Šibenik, radnik, Hrvat, u NOB od 1942, član KPJ od jula 1943, od zadobijenih rana umro decembra 1944. godine.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 208.3,
+        "pdf_y": 130.4,
+        "pdf_x_end": 378.3,
+        "pdf_y_end": 182.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0001403053",
-        "name": "Grubišić Krste Joso Krstun",
-        "additional_info": "rođen 1912, Šibenik, radnik-kolar iz srednje zanatske obitelji. Za NOP radi od početka 1942. a nešto kasnije bio je hapšen od Talijana pod sumnjom da sarađuje sa NOP-om. Prvih dana listopada 1942. odlazi u partizane i u Ključu stupa u 2. crnogorski bataljon 1. proleterske NOU. brigade sa kojim učestvuje u borbama: na Strmici, Sitnici, Jajcu, Kotor-Varoši, Crnom vrhu, Jošavki, Tesliću, Devetini, Prnjavoru i drugim mjestima centralne Bosne, kroz IV i V neprijateljsku ofanzivu, zatim na Bojski, Ivan-sedlu, G. Vakufu, Neretvi, Glavatičevu, Treskavici, Ustikulini, Krčinom brdu, Kapku, Ifsaru, u Kovrenu, Čelebiću-Zavajt, Zlatni bor, Tari, Pivi, Vučevu i u dolini Sutjeske, na Zelengori-Balinovcu, Miljevini, zatim preko Jahorine, na rijeci Prači, Renovici, Podromaniji, Devetinama, Han-Pijesku, Vlasenici, Drnjači, Zvorniku i Capardima preko Nemile i rijeke Bosne na Turbeti, Bugojnu, sve do Dalmacije i natrag u borbama oko Travnika, Turbeta. Član KPJ postao je sredinom srpnja 1943. Studenog te godine kao desetar odlazi u prekomandu u jedinice 26. divizije s kojom nastavlja borbe sve do prosinca 1944. kada je zbog poslijedica ranjavanja um ro.",
+        "name": "Grubišić Krste Joso",
+        "additional_info": "zvani Krstun; rođen 1912, Šibenik, radnik-kolar iz srednje zanatske obitelji. Za NOP radi od početka 1942. a nešto kasnije bio je hapšen od Talijana pod sumnjom da sarađuje sa NOP-om. Prvih dana listopada 1942. odlazi u partizane i u Ključu stupa u 2. crnogorski bataljon 1. proleterske NOU. brigade sa kojim učestvuje u borbama: na Strmici, Sitnici, Jajcu, Kotor-Varoši, Crnom vrhu, Jošavki, Tesliću, Devetini, Prnjavoru i drugim mjestima centralne Bosne, kroz IV i V neprijateljsku ofanzivu, zatim na Bojski, Ivan-sedlu, G. Vakufu, Neretvi, Glavatičevu, Treskavici, Ustikulini, Krčinom brdu, Kapku, Ifsaru, u Kovrenu, Čelebiću-Zavajt, Zlatni bor, Tari, Pivi, Vučevu i u dolini Sutjeske, na Zelengori-Balinovcu, Miljevini, zatim preko Jahorine, na rijeci Prači, Renovici, Podromaniji, Devetinama, Han-Pijesku, Vlasenici, Drnjači, Zvorniku i Capardima preko Nemile i rijeke Bosne na Turbeti, Bugojnu, sve do Dalmacije i natrag u borbama oko Travnika, Turbeta. Član KPJ postao je sredinom srpnja 1943. Studenog te godine kao desetar odlazi u prekomandu u jedinice 26. divizije s kojom nastavlja borbe sve do prosinca 1944. kada je zbog poslijedica ranjavanja um ro.",
         "pdf_file": "dalmatinci-prva-proleterska.pdf",
         "pdf_page": 75,
         "pdf_x": 350.5,
@@ -22859,7 +22887,15 @@
         "pdf_y_end": 540.4,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.1944",
+          "place": "Dalmacija"
+        }
+      ]
+    }
   },
   {
     "last_name": "Grubišić",

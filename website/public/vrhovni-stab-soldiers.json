@@ -2162,9 +2162,33 @@
     "party": "SKOJ 1940, KPJ 1942",
     "other_sources": [
       {
+        "soldier_id": "0001014073",
+        "name": "Divić Ike Ante",
+        "additional_info": "1921, Drvenik, Makarska, Hrvatska, Hrvat, zemljoradnik, član SKOJ-a od 1940, član KPJ od 1942, u NOB od maja 1942, u brigadi od avgusta 1942, IV bataljon, kurir štaba bataljona, poginuo 06. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 173,
+        "pdf_x": 44.6,
+        "pdf_y": 358.2,
+        "pdf_x_end": 352.0,
+        "pdf_y_end": 401.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001400168",
+        "name": "Divić Ivana Ante",
+        "additional_info": "rođen 1922, Drvenik, Makarska, zemljoradnik iz siromašne seljačke obitelji. Za NOP radi od kraja 1941. a 1942. godine postaje član SKOJ-a. Učestvuje u ilegalnim akcijama omladine Drvenika. Prvom polovinom 1942, stupa u Južnodalmatinsku četu, a zatim u 2. četu bataljona »Josip Jurčević« s kojom učestvuje u borbama na Biokovu. Krajem kolovoza 1942. godine kod Livna stupa u 6. beogradski bataljon 1. proleterske NOU brigade s kojom nastavlja borbe na Ključu, Grahovu, Sitnici, Jajcu, Kotor-Varošu, Ci;nom vrhu, Jošavki, Tesliću, Jelahu, zatim u IV i V neprijateljskoj ofenzivi u borbama na Bradini-Lukaču, Ivan-sedlu, Gornjem Vakufu, Ulogu, kod Kalinovika, Drini-Krčinom brdu, Kapku, Ifsaru, na prostoru Čajniče-Goražde, kod Bijelog Polja, Šekovića, Kovrena, na pravcu Čelebić-Korlat-Trojvrh, na Tari, Vučevu, Suhoj, gdje je i poginuo 4. lipnja 1943. godine u borbi s njemačkim snagama, u V neprijateljskoj ofenzivi.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 52,
+        "pdf_x": 383.2,
+        "pdf_y": 510.9,
+        "pdf_x_end": 491.6,
+        "pdf_y_end": 684.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0001403038",
-        "name": "Divić Ike Ante Adamov",
-        "additional_info": "rođen 1921, u Drveniku, Makarska, zemljoradnik, član SKOJ-a od 1940, a član KPJ od 1942. godine. U prvoj polovini 1942. stupa u Južnodalmatinsku četu, a zatim u omladinsku četu »Ante Torkar« bataljona »Josip Jurčević« iz koje je kolovoza 1942. stupio u 4. kraljevački bataljon 1. proleterske NOU brigade u kojoj je bio kurir pri bataljonu i Stab u brigade. Krajem 1942. je prekomandovan u jedinice VŠ u kojima je vršio kurirske dužnosti. Pre odlaska u NOB je bio sekretar jedne skojevske grupe. Borio se na Ključu, Sitnici, na Ivan-sedlu, G. Vakufu, Treskavici, IV i V neprijateljskoj ofenzivi u kojoj je hrabro poginuo na kurirskoj dužnosti u prvoj polovini lipnja 1943. godine.",
+        "name": "Divić Ike Ante",
+        "additional_info": "zvani Adamov; rođen 1921, u Drveniku, Makarska, zemljoradnik, član SKOJ-a od 1940, a član KPJ od 1942. godine. U prvoj polovini 1942. stupa u Južnodalmatinsku četu, a zatim u omladinsku četu »Ante Torkar« bataljona »Josip Jurčević« iz koje je kolovoza 1942. stupio u 4. kraljevački bataljon 1. proleterske NOU brigade u kojoj je bio kurir pri bataljonu i Stab u brigade. Krajem 1942. je prekomandovan u jedinice VŠ u kojima je vršio kurirske dužnosti. Pre odlaska u NOB je bio sekretar jedne skojevske grupe. Borio se na Ključu, Sitnici, na Ivan-sedlu, G. Vakufu, Treskavici, IV i V neprijateljskoj ofenzivi u kojoj je hrabro poginuo na kurirskoj dužnosti u prvoj polovini lipnja 1943. godine.",
         "pdf_file": "dalmatinci-prva-proleterska.pdf",
         "pdf_page": 52,
         "pdf_x": 259.8,
@@ -2191,6 +2215,15 @@
     "variants": {
       "born": [
         "1921"
+      ],
+      "death": [
+        {
+          "date": "06.06.1943",
+          "place": "Sutjeska"
+        },
+        {
+          "date": "04.06.1943"
+        }
       ]
     }
   },
