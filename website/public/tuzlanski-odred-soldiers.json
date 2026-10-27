@@ -203,7 +203,19 @@
         "pdf_x_left": 113.4,
         "unit_file": "17-majevicka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.1944",
+          "place": "kod Ražljeva — Brčko"
+        }
+      ]
+    }
   },
   {
     "last_name": "Alihodžić",
@@ -1054,7 +1066,15 @@
         "pdf_x_left": 130.2,
         "unit_file": "18-hrvatska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.11.1944",
+          "place": "Gračanica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bajramović",
@@ -1471,7 +1491,6 @@
     "fathers_name": "Sinan",
     "full_name": "Bašić Sinanov Osman",
     "additional_info": "vodnik. 1919. Špionica. Srebrenik. U Odredu od oktobra 1943. do aprila 1944.",
-    "birth_year": "1919",
     "pdf_page": 9,
     "pdf_y": 562.0,
     "pdf_x": 516.2,
@@ -1483,6 +1502,10 @@
     "birth_place": "Špionica",
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0059000104",
@@ -2306,7 +2329,12 @@
         "pdf_y_end": 394.7,
         "unit_file": "19-bircanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Blažević",
@@ -2371,7 +2399,13 @@
         "source_page": 1815,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Međaš"
   },
   {
     "last_name": "Bojkić",
@@ -3298,7 +3332,13 @@
         "source_page": 1818,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Puvačić"
   },
   {
     "last_name": "Delić",
@@ -3455,7 +3495,13 @@
         "source_page": 2667,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Crvene stijene"
   },
   {
     "last_name": "Delić",
@@ -3729,7 +3775,15 @@
         "pdf_x_left": 213.4,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "death_place": "Kod tuzle"
   },
   {
     "last_name": "Dragić",
@@ -3901,7 +3955,13 @@
         "source_page": 1824,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lukavac"
   },
   {
     "last_name": "Džafić",
@@ -4037,7 +4097,6 @@
     "fathers_name": "",
     "full_name": "Džanić Memiš",
     "additional_info": "komandir ćete, Srebrenik. U Odredu od 1944. poginuo 1945.",
-    "birth_year": "",
     "pdf_page": 26,
     "pdf_y": 801.3,
     "pdf_x": 235.4,
@@ -4057,7 +4116,17 @@
         "source_page": 2573,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Donji Srebrenik, Srebrenik",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Musliman",
+    "death_place": "Ozren-gračanica",
+    "birth_year": "1916"
   },
   {
     "last_name": "Džibrić",
@@ -4562,7 +4631,13 @@
         "pdf_x_left": 215.3,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lukavac"
   },
   {
     "last_name": "Faslić",
@@ -5088,7 +5163,13 @@
         "source_page": 2674,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Tuzla-bućik"
   },
   {
     "last_name": "Grbić",
@@ -6362,7 +6443,13 @@
         "source_page": 1817,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Požarnica"
   },
   {
     "last_name": "Hodžić",
@@ -6729,7 +6816,13 @@
         "pdf_x_left": 354.1,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Dubrave"
   },
   {
     "last_name": "Hrustić",
@@ -7157,7 +7250,8 @@
         "pdf_x_left": 35.0,
         "unit_file": "21-tuzlanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.09.1924"
   },
   {
     "last_name": "Ibrahimović",
@@ -8229,7 +8323,6 @@
     "fathers_name": "Jovo",
     "full_name": "Jovanović Jovin Drago",
     "additional_info": "borac. 1900. Priboj. U Odredu od oktobra 1943. Poginuo 11. 11. 1943. Vukovije.",
-    "birth_year": "",
     "pdf_page": 49,
     "pdf_y": 466.9,
     "pdf_x": 439.1,
@@ -8241,6 +8334,7 @@
     "death_type": "poginuo",
     "death_date": "11.11.1943",
     "rank": "borac",
+    "birth_year": "1902",
     "other_sources": [
       {
         "soldier_id": "9032000345",
@@ -8263,7 +8357,14 @@
         "source_page": 2676,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Romanija"
   },
   {
     "last_name": "Jovanović",
@@ -8707,7 +8808,13 @@
         "pdf_x_left": 189.3,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bakovići kod me"
   },
   {
     "last_name": "Kapidžić",
@@ -9093,7 +9200,13 @@
         "source_page": 2574,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bučkik-živinice"
   },
   {
     "last_name": "Kavgić",
@@ -9460,7 +9573,13 @@
         "source_page": 2676,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bučik"
   },
   {
     "last_name": "Kljućić",
@@ -9521,7 +9640,6 @@
     "fathers_name": "",
     "full_name": "Kolaković Zdravko",
     "additional_info": "borac, Tuzla. U Odredu od oktobra 1943. Poginuo 22. 12. 1943. Bučik.",
-    "birth_year": "",
     "pdf_page": 55,
     "pdf_y": 481.9,
     "pdf_x": 237.6,
@@ -9554,7 +9672,17 @@
         "pdf_x_left": 205.4,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_place": "Kod tuzle",
+    "birth_year": "1923"
   },
   {
     "last_name": "Koprić",
@@ -10125,7 +10253,6 @@
     "fathers_name": "Derviš",
     "full_name": "Kuduzović Dervišov Smail",
     "additional_info": "borac. 1920. Brgule, Lukavac. U Odredu od oktobra 1944. Poginuo januara 1945. Kladanj.",
-    "birth_year": "",
     "pdf_page": 58,
     "pdf_y": 569.8,
     "pdf_x": 231.1,
@@ -10137,6 +10264,7 @@
     "rank": "borac",
     "pdf_x_end": 400.6,
     "birth_place": "Brgule, Lukavac",
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9022022284",
@@ -10146,7 +10274,14 @@
         "source_page": 1817,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kladanj"
   },
   {
     "last_name": "Kuduzović",
@@ -10500,7 +10635,13 @@
         "source_page": 2677,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Gornja gračanic"
   },
   {
     "last_name": "Kurtić",
@@ -11031,7 +11172,13 @@
         "source_page": 2574,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Đurđevik-živini"
   },
   {
     "last_name": "Malkić",
@@ -11112,7 +11259,6 @@
     "fathers_name": "Ivanova",
     "full_name": "Mandić Ivanova Ivanka",
     "additional_info": "politički radnik. U Odredu od oktobra 1943. Poginula U. 11. 1943. Vukovije.",
-    "birth_year": "",
     "pdf_page": 63,
     "pdf_y": 588.7,
     "pdf_x": 443.2,
@@ -11145,7 +11291,18 @@
         "source_page": 2678,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvatica",
+    "death_place": "Vukovlje,tuzla",
+    "birth_year": "1917",
+    "birth_date": "25.12.1917"
   },
   {
     "last_name": "Mandžić",
@@ -11302,7 +11459,15 @@
         "pdf_y_end": 399.9,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Nevesinje"
   },
   {
     "last_name": "Mašić",
@@ -11890,7 +12055,6 @@
     "fathers_name": "Tursunov",
     "full_name": "Mešić Tursunov Hasan",
     "additional_info": "borac. 1923. Dobrnja, Tuzla. U Odredu od septembra 1944.",
-    "birth_year": "",
     "pdf_page": 67,
     "pdf_y": 587.3,
     "pdf_x": 435.8,
@@ -11922,7 +12086,19 @@
         "source_page": 2663,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Ozren",
+    "birth_year": "1924"
   },
   {
     "last_name": "Mešić",
@@ -12499,7 +12675,8 @@
         "pdf_x_left": 165.4,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "18.04.1918"
   },
   {
     "last_name": "Muharemagić",
@@ -13208,7 +13385,6 @@
     "fathers_name": "Mustafa",
     "full_name": "Murić Mustafin Bešlaga",
     "additional_info": "borac. 1924. Lipnica, Tuzla. U Odredu od oktobra 1943. Poginuo decembra 1944. Petrovo Selo.",
-    "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 693.1,
     "pdf_x": 233.7,
@@ -13242,7 +13418,15 @@
         "pdf_x_left": 200.4,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Petrovo selo-do",
+    "birth_year": "1925"
   },
   {
     "last_name": "Murić",
@@ -13359,7 +13543,6 @@
     "fathers_name": "",
     "full_name": "Musić Ivanka",
     "additional_info": "bolničarka, Tuzla. U Odredu od formiranja. Poginula 17. 1. 1944. Moluhe, Tuzla.",
-    "birth_year": "",
     "pdf_page": 75,
     "pdf_y": 358.7,
     "pdf_x": 248.6,
@@ -13379,7 +13562,17 @@
         "source_page": 2679,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenka",
+    "death_place": "Kod gračanice",
+    "birth_year": "1905"
   },
   {
     "last_name": "Musić",
@@ -13442,7 +13635,6 @@
     "fathers_name": "Suljo",
     "full_name": "Mustafić Suljin Redžo",
     "additional_info": "borac. 1924. Doboštica, Lukavac. U Odredu od oktobra 1944. Poginuo de cembra 1944. Majevica.",
-    "birth_year": "",
     "pdf_page": 75,
     "pdf_y": 576.1,
     "pdf_x": 435.6,
@@ -13454,6 +13646,7 @@
     "rank": "borac",
     "pdf_x_end": 606.1,
     "birth_place": "Doboštica, Lukavac",
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9022022316",
@@ -13463,7 +13656,14 @@
         "source_page": 1817,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "U bliz.g.tuzle"
   },
   {
     "last_name": "Mustačević",
@@ -13615,7 +13815,13 @@
         "pdf_x_left": 197.6,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Srebrenik"
   },
   {
     "last_name": "Nalić",
@@ -15078,7 +15284,12 @@
         "pdf_y_end": 533.7,
         "unit_file": "19-bircanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1911"
+      ]
+    }
   },
   {
     "last_name": "Ovćina",
@@ -15351,7 +15562,12 @@
         "pdf_y_end": 173.0,
         "unit_file": "18-hrvatska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -15969,7 +16185,12 @@
         "pdf_y_end": 347.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Protić",
@@ -16348,7 +16569,8 @@
         "pdf_x_left": 179.0,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "27.04.1923"
   },
   {
     "last_name": "Reljić",
@@ -16508,7 +16730,13 @@
         "source_page": 1820,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Rižovski",
@@ -16639,7 +16867,6 @@
     "fathers_name": "Mehmed",
     "full_name": "Sadiković Mehmedov Rahman",
     "additional_info": "borac. 1921. Lipnica, Tuzla. U Odredu od oktobra 1943. Poginuo decembra 1943. Gračanica. Živinice.",
-    "birth_year": "",
     "pdf_page": 91,
     "pdf_y": 677.8,
     "pdf_x": 432.9,
@@ -16673,7 +16900,15 @@
         "pdf_x_left": 184.3,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Gračanica kod t",
+    "birth_year": "1921"
   },
   {
     "last_name": "Sakić",
@@ -16798,7 +17033,13 @@
         "source_page": 2668,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Donja obodnica"
   },
   {
     "last_name": "Salamović",
@@ -16928,7 +17169,6 @@
     "birth_place": "Modrac",
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "umro",
     "death_date": "1978",
     "death_place": "Lukavac",
@@ -16976,7 +17216,13 @@
         "source_page": 1818,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ozren"
   },
   {
     "last_name": "Salihović",
@@ -17511,7 +17757,6 @@
     "fathers_name": "Ćamil",
     "full_name": "Silajdžić Ćamilov Galib",
     "additional_info": "borac. 1923. Tuzla. U Odredu od oktobra 1943. Poginuo 22. 12. 1943. Bućik.",
-    "birth_year": "",
     "pdf_page": 96,
     "pdf_y": 385.2,
     "pdf_x": 426.2,
@@ -17523,6 +17768,7 @@
     "death_type": "poginuo",
     "death_date": "22.12.1943",
     "rank": "borac",
+    "birth_year": "1924",
     "other_sources": [
       {
         "soldier_id": "9022033787",
@@ -17532,7 +17778,14 @@
         "source_page": 2668,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Tuzlanski odred"
   },
   {
     "last_name": "Simić",
@@ -19359,7 +19612,13 @@
         "source_page": 2683,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Konjuh"
   },
   {
     "last_name": "Vehabović",
@@ -19537,7 +19796,8 @@
         "pdf_x_left": 197.8,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "04.09.1896"
   },
   {
     "last_name": "Vodenik",
@@ -19642,7 +19902,8 @@
         "pdf_x_left": 194.3,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "07.11.1927"
   },
   {
     "last_name": "Vrabac",
@@ -20444,7 +20705,8 @@
         "pdf_x_left": 205.0,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "04.1899"
   },
   {
     "last_name": "Ćesarević",
@@ -20522,7 +20784,6 @@
     "fathers_name": "Osmo",
     "full_name": "Ćosić Osmin Mehmed",
     "additional_info": "borac. 1923. Babice, Lukavac. U Odredu od oktobra 1943. Poginuo novembra 1943. Međaš, Kalesija.",
-    "birth_year": "",
     "pdf_page": 18,
     "pdf_y": 688.7,
     "pdf_x": 230.4,
@@ -20534,6 +20795,7 @@
     "rank": "borac",
     "pdf_x_end": 399.2,
     "birth_place": "Babice, Lukavac",
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9022022388",
@@ -20543,7 +20805,14 @@
         "source_page": 1820,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Međaš"
   },
   {
     "last_name": "Ćosić",
@@ -20680,7 +20949,13 @@
         "source_page": 1822,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Odžak"
   },
   {
     "last_name": "Čamdžić",
@@ -21027,7 +21302,6 @@
     "fathers_name": "",
     "full_name": "Đurić Mirko",
     "additional_info": "borac, Tuzla. U Odredu od oktobra 1943. Poginuo 22. 12. 1943. Bučik.",
-    "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 799.3,
     "pdf_x": 244.8,
@@ -21047,7 +21321,17 @@
         "source_page": 2673,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Tuzla",
+    "birth_year": "1903"
   },
   {
     "last_name": "Đurđek",
@@ -21090,7 +21374,12 @@
         "pdf_y_end": 926.7,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "02.09.1928"
   },
   {
     "last_name": "Šabanović",
@@ -21371,7 +21660,6 @@
     "fathers_name": "Nikola",
     "full_name": "Šokčević Nikolin Milan",
     "additional_info": "borac. 1923. Tuzla. U Odredu od oktobra 1943. Umro od posljedica ranjavanja koncem 1944.",
-    "birth_year": "",
     "pdf_page": 102,
     "pdf_y": 590.8,
     "pdf_x": 416.8,
@@ -21383,6 +21671,7 @@
     "rank": "borac",
     "pdf_x_end": 585.6,
     "birth_place": "Tuzla",
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9022034282",
@@ -21405,7 +21694,15 @@
         "pdf_x_left": 181.6,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Glasinac-saraje",
+    "birth_date": "11.08.1923"
   },
   {
     "last_name": "Šuha",
@@ -21449,7 +21746,6 @@
     "fathers_name": "Danilo",
     "full_name": "Šuput Danilov Ljubo",
     "additional_info": "borac. 1914. Lopare. U Odredu od oktobra 1943. Poginuo 12. 12. 1943. Gračanica, Živinice.",
-    "birth_year": "",
     "pdf_page": 102,
     "pdf_y": 803.7,
     "pdf_x": 230.8,
@@ -21461,6 +21757,7 @@
     "death_type": "poginuo",
     "death_date": "12.12.1943",
     "rank": "borac",
+    "birth_year": "1914",
     "other_sources": [
       {
         "soldier_id": "9022022053",
@@ -21483,7 +21780,14 @@
         "pdf_x_left": 179.7,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Gračanica"
   },
   {
     "last_name": "Šuput",
@@ -21691,6 +21995,12 @@
         "pdf_y_end": 786.3,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Na krivaji"
   }
 ]

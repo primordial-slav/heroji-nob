@@ -272,8 +272,10 @@ def unsure_items(units, decisions) -> list[dict]:
 # ---------------------------------------------------------------- finding the pairs
 
 def units_on_site() -> dict[int, list[dict]]:
+    """The units' records as their own books give them (record_sources.own_only: not what they borrowed)"""
+    from record_sources import own_only
     units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
-    return {code: json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
+    return {code: [own_only(s) for s in json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))]
             for code, cfg in sorted(BRIGADE_CONFIGS.items())
             if f"'/{cfg['json_file']}'" in units_ts and code not in OSTALI_CODES}
 

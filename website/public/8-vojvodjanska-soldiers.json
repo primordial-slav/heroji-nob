@@ -27,6 +27,10 @@
         "source_page": 505,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -68,7 +72,6 @@
     "death_date": "09.05.1945",
     "death_place": "Nova Ves",
     "pdf_x_end": 330.4,
-    "rank": "vodnik",
     "other_sources": [
       {
         "soldier_id": "0111010008",
@@ -103,7 +106,6 @@
     "death_date": "10.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 329.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027009803",
@@ -125,6 +127,10 @@
         "pdf_y_end": 364.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -146,7 +152,6 @@
     "death_date": "06.02.1945",
     "death_place": "Obradovac",
     "pdf_x_end": 329.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010011",
@@ -208,7 +213,6 @@
     "fathers_name": "A",
     "full_name": "Anišić A Marko",
     "additional_info": "rođ. u Subotici, poginuo kod Baranjskog Petrovog Sela 12. III 1945.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 2,
     "pdf_y": 81.8,
@@ -228,7 +232,15 @@
         "source_page": 506,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Subotica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1926"
   },
   {
     "last_name": "Antić",
@@ -248,7 +260,6 @@
     "death_date": "09.05.1945",
     "death_place": "Varaždin",
     "pdf_x_end": 259.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010023",
@@ -461,7 +472,6 @@
     "death_date": "07.05.1945",
     "death_place": "Repić",
     "pdf_x_end": 348.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010029",
@@ -536,7 +546,6 @@
     "death_date": "31.03.1945",
     "death_place": "Osijek",
     "pdf_x_end": 348.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010035",
@@ -612,7 +621,15 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ],
-    "rank": "borac"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1905"
+      ]
+    }
   },
   {
     "last_name": "Babicković",
@@ -768,7 +785,6 @@
     "death_date": "21.11.1944",
     "death_place": "u Kneževim Vinogradima",
     "pdf_x_end": 347.8,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027009813",
@@ -790,6 +806,10 @@
         "pdf_y_end": 520.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -830,7 +850,6 @@
     "death_date": "26.11.1944",
     "death_place": "Baranja",
     "pdf_x_end": 348.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010051",
@@ -1181,7 +1200,12 @@
         "pdf_y_end": 115.2,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Balažević",
@@ -1343,7 +1367,15 @@
         "pdf_y_end": 392.2,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.01.1945",
+          "place": "kod Suhomlake (Bjelkovac)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bandobranski",
@@ -1427,6 +1459,10 @@
         "source_page": 41,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1573,7 +1609,6 @@
     "death_date": "07.12.1944",
     "death_place": "Darda",
     "pdf_x_end": 339.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010092",
@@ -1707,6 +1742,10 @@
         "source_page": 507,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1810,6 +1849,10 @@
         "pdf_y_end": 149.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1852,6 +1895,10 @@
         "pdf_y_end": 415.6,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1891,7 +1938,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000072",
     "pdf_x_end": 351.5,
-    "rank": "borac",
     "death_date": "08.03.1945",
     "death_place": "Bolman",
     "other_sources": [
@@ -1915,6 +1961,10 @@
         "pdf_y_end": 167.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1962,7 +2012,6 @@
     "fathers_name": "Đ",
     "full_name": "Benko Đ Đuro",
     "additional_info": "rođ. u Pivnicama, Odžaci, poginuo u Dalju 8. IV",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 273.4,
@@ -1971,7 +2020,29 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000075",
     "pdf_x_end": 351.8,
-    "death_place": "Dalj"
+    "death_place": "Dalj",
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date"
+    ],
+    "birth_place": "Pivnice, Odžaci",
+    "death_date": "08.04.1945",
+    "other_sources": [
+      {
+        "soldier_id": "0111010117",
+        "name": "Benko D Đuro",
+        "additional_info": "1926, Pivnice, Odžaci, poginuo 8. 4. 1945. kod Dalja na Dunavu.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 25,
+        "pdf_x": 80.4,
+        "pdf_y": 236.6,
+        "pdf_x_end": 357.3,
+        "pdf_y_end": 253.9,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Benćik",
@@ -2099,6 +2170,10 @@
         "source_page": 508,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2160,7 +2235,11 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ],
-    "death_place": "Dunav"
+    "death_place": "Dunav",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bilinović",
@@ -2190,6 +2269,10 @@
         "source_page": 547,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2765,6 +2848,10 @@
         "source_page": 307,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2824,7 +2911,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000114",
     "pdf_x_end": 343.2,
-    "rank": "borac",
     "death_date": "17.03.1945",
     "death_place": "Bolman",
     "other_sources": [
@@ -2848,6 +2934,10 @@
         "pdf_y_end": 184.3,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2910,7 +3000,19 @@
         "pdf_y_end": 167.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.04.1945",
+          "place": "Brezovljani"
+        }
+      ]
+    }
   },
   {
     "last_name": "Brankov",
@@ -3254,6 +3356,10 @@
         "pdf_y_end": 253.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3368,7 +3474,6 @@
     "death_date": "07.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 346.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010214",
@@ -3464,6 +3569,10 @@
         "pdf_y_end": 468.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3505,7 +3614,6 @@
     "death_date": "01.12.1944",
     "death_place": "Lug",
     "pdf_x_end": 344.6,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010217",
@@ -3861,7 +3969,6 @@
     "death_date": "19.04.1945",
     "death_place": "Dobrović",
     "pdf_x_end": 348.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010249",
@@ -3875,7 +3982,15 @@
         "pdf_y_end": 201.6,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.04.1945",
+          "place": "Dobrović"
+        }
+      ]
+    }
   },
   {
     "last_name": "Cotić",
@@ -4067,7 +4182,15 @@
         "pdf_y_end": 436.6,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.11.1944",
+          "place": "Kupusina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Crnković",
@@ -4126,7 +4249,6 @@
     "soldier_id": "0078000165",
     "pdf_x_end": 341.5,
     "death_place": "kod Rogovca",
-    "rank": "borac",
     "death_date": "28.04.1945",
     "other_sources": [
       {
@@ -4161,6 +4283,10 @@
         "pdf_y_end": 324.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4182,7 +4308,6 @@
     "death_date": "07.02.1945",
     "death_place": "Aleksandrovac",
     "pdf_x_end": 342.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0075000350",
@@ -4220,7 +4345,15 @@
         "pdf_y_end": 307.2,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.04.1945",
+          "place": "Aleksandrovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Curnić",
@@ -4322,7 +4455,18 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ],
-    "rank": "borac"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.05.1945",
+          "place": "Đurđevac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Cvijanov",
@@ -4352,7 +4496,13 @@
         "source_page": 549,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Batina"
   },
   {
     "last_name": "Cvijin",
@@ -4361,7 +4511,6 @@
     "fathers_name": "Đ",
     "full_name": "Cvijin Đ Bartol",
     "additional_info": "rođ. 1925, poginuo kod Vardarca, Bilje, 27. XI",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 117.3,
@@ -4370,7 +4519,29 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000172",
     "pdf_x_end": 348.0,
-    "death_place": "Vardarac, Bilje"
+    "death_place": "Vardarac, Bilje",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date"
+    ],
+    "birth_place": "Subotica",
+    "death_date": "17.11.1944",
+    "other_sources": [
+      {
+        "soldier_id": "0111000095",
+        "name": "Cvijin Đ Bartol",
+        "additional_info": "rođ. 1925, Subotica, pog. 17. 11. 1944, Vardarac, Belje.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 245.2,
+        "pdf_y": 775.8,
+        "pdf_x_end": 518.0,
+        "pdf_y_end": 795.0,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Damjanović",
@@ -4509,7 +4680,6 @@
     "fathers_name": "",
     "full_name": "Davidović Nova",
     "additional_info": "rođ. u Sr. Mitrovici, Divoš, poginuo kod Rohalj -baza 1944.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 273.1,
@@ -4529,7 +4699,15 @@
         "source_page": 420,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Divoš, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1920"
   },
   {
     "last_name": "Davčik",
@@ -4572,6 +4750,10 @@
         "pdf_y_end": 442.6,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4673,7 +4855,6 @@
     "death_date": "01.05.1945",
     "death_place": "Kalinovac",
     "pdf_x_end": 346.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010274",
@@ -4708,7 +4889,6 @@
     "death_date": "09.03.1945",
     "death_place": "Novi Bezdan",
     "pdf_x_end": 342.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010276",
@@ -4873,7 +5053,6 @@
     "soldier_id": "0078000192",
     "death_date": "1945",
     "pdf_x_end": 343.7,
-    "rank": "borac",
     "death_place": "Cačinci",
     "other_sources": [
       {
@@ -5032,6 +5211,10 @@
         "source_page": 5,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5147,7 +5330,6 @@
     "death_place": "Cabuna",
     "pdf_x_end": 348.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0057000711",
@@ -5296,7 +5478,12 @@
         "pdf_y_end": 209.9,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1915"
+      ]
+    }
   },
   {
     "last_name": "Evetović",
@@ -5519,7 +5706,15 @@
         "pdf_y_end": 688.1,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.11.1944",
+          "place": "Bilje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Fijala",
@@ -5561,6 +5756,10 @@
         "pdf_y_end": 261.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5604,6 +5803,10 @@
         "pdf_y_end": 709.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5794,6 +5997,10 @@
         "source_page": 610,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5919,7 +6126,6 @@
     "death_date": "16.04.1945",
     "death_place": "Kućanci",
     "pdf_x_end": 347.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010346",
@@ -5954,7 +6160,6 @@
     "death_date": "20.04.1945",
     "death_place": "Dobrović",
     "pdf_x_end": 347.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010347",
@@ -6038,7 +6243,6 @@
     "fathers_name": "",
     "full_name": "Gajić Slobodan",
     "additional_info": "rođ. 1922, ćerević, Ilok, poginuo u šaševu 20. I 1945.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 12,
     "pdf_y": 332.8,
@@ -6057,7 +6261,17 @@
         "source_page": 192,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Novi Sad",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Saševo-batočina",
+    "birth_year": "1922"
   },
   {
     "last_name": "Gala",
@@ -6256,6 +6470,10 @@
         "pdf_y_end": 164.6,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6452,6 +6670,10 @@
         "source_page": 2478,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6542,6 +6764,10 @@
         "source_page": 572,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6583,7 +6809,6 @@
     "death_date": "08.03.1945",
     "death_place": "Novi Bezdan",
     "pdf_x_end": 340.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010373",
@@ -6640,6 +6865,10 @@
         "pdf_y_end": 122.5,
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6695,6 +6924,10 @@
         "pdf_x_end": 355.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6725,6 +6958,10 @@
         "source_page": 517,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6746,7 +6983,6 @@
     "death_date": "26.11.1944",
     "death_place": "Lug",
     "pdf_x_end": 341.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027009875",
@@ -6768,6 +7004,10 @@
         "pdf_y_end": 506.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6989,7 +7229,6 @@
     "fathers_name": "",
     "full_name": "Grozdanić Miloš",
     "additional_info": "Kuzman, rođ. 1921, Doljani, poginuo na Dravi kod Osijeka 9. XII 1944.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 14,
     "pdf_y": 167.3,
@@ -7010,7 +7249,13 @@
         "source_page": 298,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Grujaković",
@@ -7210,7 +7455,6 @@
     "death_date": "13.03.1945",
     "death_place": "Novi Bezdan",
     "pdf_x_end": 353.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010412",
@@ -7224,7 +7468,15 @@
         "pdf_y_end": 224.8,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.03.1945",
+          "place": "Novi Bezdan"
+        }
+      ]
+    }
   },
   {
     "last_name": "Halašević",
@@ -7335,6 +7587,10 @@
         "pdf_y_end": 422.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7390,6 +7646,10 @@
         "pdf_y_end": 422.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7506,7 +7766,6 @@
     "death_date": "04.05.1945",
     "death_place": "u s. Peteranec (u Hlebinama)",
     "pdf_x_end": 353.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010427",
@@ -7541,7 +7800,6 @@
     "death_date": "07.03.1945",
     "death_place": "Novi Bezdan",
     "pdf_x_end": 346.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010428",
@@ -7586,6 +7844,10 @@
         "source_page": 24,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Slovak",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7627,7 +7889,6 @@
     "death_date": "23.04.1945",
     "death_place": "u s. Hadžičevo",
     "pdf_x_end": 345.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027002970",
@@ -7649,6 +7910,10 @@
         "pdf_y_end": 329.0,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7733,6 +7998,10 @@
         "pdf_y_end": 518.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7882,6 +8151,10 @@
         "pdf_y_end": 96.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8038,7 +8311,6 @@
     "death_date": "19.04.1945",
     "death_place": "Dobrović",
     "pdf_x_end": 345.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010445",
@@ -8052,7 +8324,15 @@
         "pdf_y_end": 403.4,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "21.04.1945",
+          "place": "Dobrović"
+        }
+      ]
+    }
   },
   {
     "last_name": "Idrivavić",
@@ -8193,6 +8473,10 @@
         "pdf_y_end": 278.0,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8294,7 +8578,6 @@
     "death_date": "10.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 350.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010472",
@@ -8484,7 +8767,6 @@
     "death_date": "11.1944",
     "death_place": "Batina",
     "pdf_x_end": 349.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027010099",
@@ -8506,7 +8788,19 @@
         "pdf_y_end": 435.9,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.1944",
+          "place": "Batina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ivanović",
@@ -8697,6 +8991,10 @@
         "pdf_y_end": 174.3,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8766,7 +9064,13 @@
         "source_page": 521,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Ivković",
@@ -8901,7 +9205,15 @@
         "pdf_x_end": 361.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "23.11.1944",
+          "place": "Kneževi Vinogradi"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ivković",
@@ -9094,6 +9406,10 @@
         "pdf_y_end": 416.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9209,7 +9525,6 @@
     "death_date": "08.02.1945",
     "death_place": "Suhopolje",
     "pdf_x_end": 346.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010500",
@@ -9223,7 +9538,15 @@
         "pdf_y_end": 480.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.02.1945",
+          "place": "Suhopolje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jakovetić",
@@ -9334,7 +9657,19 @@
         "pdf_x_end": 350.8,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.01.1945",
+          "place": "Čađavica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -9353,7 +9688,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000358",
     "pdf_x_end": 346.5,
-    "rank": "borac",
     "death_date": "21.11.1944",
     "death_place": "Kazuk",
     "other_sources": [
@@ -9444,7 +9778,6 @@
     "death_date": "02.05.1945",
     "death_place": "Kalinovac",
     "pdf_x_end": 346.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027002715",
@@ -9466,6 +9799,10 @@
         "pdf_y_end": 129.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9588,6 +9925,10 @@
         "pdf_y_end": 164.0,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9609,7 +9950,21 @@
     "death_place": "kod s. Mandovac",
     "rank": "pomoćnik komesara",
     "pdf_x_end": 340.1,
-    "birth_place": "Ledinci, Sr. Karlovci"
+    "birth_place": "Ledinci, Sr. Karlovci",
+    "other_sources": [
+      {
+        "soldier_id": "0111010544",
+        "name": "Jovanović Angelina",
+        "additional_info": "1925, Ledinci, Sr. Karlovci, pom. kom., p. poručnik, poginula 23. 4. 1945. kod mesta Mandovac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 31,
+        "pdf_x": 70.8,
+        "pdf_y": 164.1,
+        "pdf_x_end": 351.1,
+        "pdf_y_end": 181.5,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -9630,7 +9985,6 @@
     "death_date": "25.01.1945",
     "death_place": "Čađavica",
     "pdf_x_end": 341.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010545",
@@ -9679,7 +10033,15 @@
         "pdf_y_end": 536.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.11.1944",
+          "place": "kod Kazuka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -9709,7 +10071,6 @@
     "fathers_name": "Todor",
     "full_name": "Jović Todora Ilija",
     "additional_info": "rođ. 1923, šišatovci, nestao kod Sv. Barbare 9. V 1945.",
-    "birth_year": "",
     "death_type": "nestao",
     "pdf_page": 18,
     "pdf_y": 265.5,
@@ -9729,7 +10090,15 @@
         "source_page": 455,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Šišatovac, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1922"
   },
   {
     "last_name": "Jović",
@@ -9842,7 +10211,12 @@
         "pdf_x_end": 351.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Juhas",
@@ -9993,7 +10367,6 @@
     "death_date": "23.11.1944",
     "death_place": "Kneževi Vinogradi",
     "pdf_x_end": 340.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111000219",
@@ -10080,7 +10453,6 @@
     "death_date": "10.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 340.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027009900",
@@ -10102,6 +10474,10 @@
         "pdf_y_end": 353.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10247,6 +10623,10 @@
         "source_page": 389,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10444,7 +10824,6 @@
     "death_place": "Suhomlaka",
     "pdf_x_end": 338.7,
     "birth_place": "Fejuj, Đulbez",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010600",
@@ -10546,7 +10925,12 @@
         "pdf_y_end": 388.9,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Kiš",
@@ -10730,7 +11114,15 @@
         "pdf_y_end": 112.6,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.04.1945",
+          "place": "Dobrović"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kokić",
@@ -10906,7 +11298,6 @@
     "death_date": "07.02.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 346.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010635",
@@ -10941,7 +11332,6 @@
     "death_date": "05.05.1945",
     "death_place": "u Peteranjecu",
     "pdf_x_end": 347.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010642",
@@ -11073,6 +11463,10 @@
         "pdf_y_end": 216.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11136,6 +11530,10 @@
         "pdf_y_end": 214.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11187,6 +11585,10 @@
         "source_page": 525,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11328,6 +11730,10 @@
         "source_page": 525,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11362,7 +11768,18 @@
         "pdf_y_end": 268.1,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ],
+      "death": [
+        {
+          "date": "19.11.1944",
+          "place": "kod Kazuka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kopunović",
@@ -11413,6 +11830,10 @@
         "source_page": 525,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11603,6 +12024,10 @@
         "pdf_y_end": 547.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11634,6 +12059,10 @@
         "source_page": 140,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11907,6 +12336,10 @@
         "pdf_y_end": 334.6,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12031,6 +12464,10 @@
         "source_page": 14,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12381,6 +12818,10 @@
         "pdf_y_end": 406.3,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovak",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12436,7 +12877,15 @@
         "pdf_y_end": 441.4,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.01.1945",
+          "place": "Suhomlaka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krnjajski",
@@ -12514,6 +12963,10 @@
         "pdf_y_end": 460.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12595,7 +13048,6 @@
     "death_date": "23.11.1944",
     "death_place": "Kneževi Vinogradi",
     "pdf_x_end": 345.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027010110",
@@ -12629,6 +13081,10 @@
         "pdf_x_end": 347.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12702,6 +13158,10 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12753,6 +13213,10 @@
         "source_page": 504,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12816,6 +13280,10 @@
         "pdf_y_end": 499.0,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13035,7 +13503,13 @@
         "source_page": 527,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Labodi",
@@ -13206,7 +13680,6 @@
     "death_date": "16.11.1944",
     "death_place": "Bezdan",
     "pdf_x_end": 348.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111000279",
@@ -13459,6 +13932,10 @@
         "source_page": 528,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13502,6 +13979,10 @@
         "pdf_y_end": 95.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13659,6 +14140,10 @@
         "pdf_y_end": 112.9,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13760,7 +14245,6 @@
     "death_date": "19.04.1945",
     "death_place": "u Brezov-Ijanima",
     "pdf_x_end": 347.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027000690",
@@ -13782,6 +14266,10 @@
         "pdf_y_end": 147.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovak",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13812,7 +14300,13 @@
         "source_page": 2407,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Lončarić",
@@ -13919,7 +14413,15 @@
         "pdf_x_end": 361.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.11.1944",
+          "place": "Lug"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ludar",
@@ -14001,6 +14503,10 @@
         "pdf_y_end": 828.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14092,6 +14598,10 @@
         "source_page": 304,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14127,7 +14637,15 @@
         "pdf_y_end": 302.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.04.1945",
+          "place": "Dobrović"
+        }
+      ]
+    }
   },
   {
     "last_name": "Majdić",
@@ -14174,7 +14692,15 @@
         "pdf_y_end": 354.8,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.03.1945",
+          "place": "Baranjsko Petrovo Selo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Majstorović",
@@ -14414,7 +14940,6 @@
     "fathers_name": "",
     "full_name": "Manojlović Petar",
     "additional_info": "rođ. u Kupusini, umro od rana u Somboru 24. XI 1944.",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 26,
     "pdf_y": 198.9,
@@ -14447,7 +14972,13 @@
         "pdf_y_end": 483.6,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Maretić",
@@ -14651,6 +15182,10 @@
         "pdf_y_end": 390.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14729,6 +15264,10 @@
         "pdf_y_end": 520.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14833,6 +15372,10 @@
         "pdf_y_end": 372.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14939,6 +15482,10 @@
         "source_page": 547,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14960,7 +15507,6 @@
     "death_date": "22.03.1945",
     "death_place": "u Majskoj Međi",
     "pdf_x_end": 337.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010855",
@@ -15044,7 +15590,15 @@
         "pdf_y_end": 499.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.02.1945",
+          "place": "Suho Polje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Matušić",
@@ -15169,6 +15723,10 @@
         "pdf_y_end": 320.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15298,7 +15856,6 @@
     "death_date": "16.11.1944",
     "death_place": "Bezdan",
     "pdf_x_end": 337.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111000317",
@@ -15506,7 +16063,6 @@
     "death_date": "09.03.1945",
     "death_place": "Novi Bezdan",
     "pdf_x_end": 338.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010884",
@@ -15631,7 +16187,13 @@
         "source_page": 253,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Miklić",
@@ -15851,6 +16413,10 @@
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15974,6 +16540,10 @@
         "pdf_y_end": 164.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16237,7 +16807,6 @@
     "death_date": "08.02.1945",
     "death_place": "Cabuna",
     "pdf_x_end": 338.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010935",
@@ -16389,7 +16958,6 @@
     "death_date": "12.12.1944",
     "death_place": "Belo Brdo",
     "pdf_x_end": 339.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010943",
@@ -16403,7 +16971,12 @@
         "pdf_y_end": 302.9,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1929"
+      ]
+    }
   },
   {
     "last_name": "Mukić",
@@ -16466,6 +17039,10 @@
         "pdf_y_end": 462.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16501,7 +17078,15 @@
         "pdf_y_end": 726.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "23.11.1944",
+          "place": "kod Kazuka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Musin",
@@ -16617,7 +17202,6 @@
     "death_date": "12.12.1944",
     "death_place": "Belo Brdo",
     "pdf_x_end": 337.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010949",
@@ -16631,7 +17215,18 @@
         "pdf_y_end": 98.0,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ],
+      "death": [
+        {
+          "date": "12.11.1944",
+          "place": "Belo Brdo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nađ",
@@ -16701,6 +17296,10 @@
         "source_page": 13,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16815,7 +17414,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000641",
     "pdf_x_end": 355.0,
-    "rank": "borac",
     "death_date": "02.05.1945",
     "death_place": "Đurđevac",
     "other_sources": [
@@ -16989,7 +17587,6 @@
     "death_date": "21.01.1945",
     "death_place": "Crnci",
     "pdf_x_end": 354.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027001199",
@@ -17011,6 +17608,10 @@
         "pdf_y_end": 149.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17051,7 +17652,6 @@
     "death_date": "20.01.1945",
     "death_place": "Suhopolje",
     "pdf_x_end": 355.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027010119",
@@ -17073,6 +17673,10 @@
         "pdf_y_end": 167.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17318,7 +17922,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000662",
     "pdf_x_end": 353.7,
-    "rank": "borac",
     "death_date": "09.02.1945",
     "death_place": "Gaćište",
     "other_sources": [
@@ -17423,6 +18026,10 @@
         "source_page": 105,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17458,7 +18065,12 @@
         "pdf_y_end": 570.1,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1929"
+      ]
+    }
   },
   {
     "last_name": "Palik",
@@ -17479,7 +18091,6 @@
     "death_date": "19.04.1945",
     "death_place": "Brezovljani",
     "pdf_x_end": 339.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011014",
@@ -17534,7 +18145,6 @@
     "death_date": "25.04.1945",
     "death_place": "Bačevci",
     "pdf_x_end": 338.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011013",
@@ -17666,7 +18276,6 @@
     "death_date": "05.05.1945",
     "death_place": "kod Kuzmice",
     "pdf_x_end": 338.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011031",
@@ -17819,6 +18428,10 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17882,6 +18495,10 @@
         "pdf_y_end": 131.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17972,6 +18589,10 @@
         "source_page": 503,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18074,7 +18695,6 @@
     "soldier_id": "0078000691",
     "pdf_x_end": 351.3,
     "death_place": "N. Bezdan",
-    "rank": "borac",
     "death_date": "06.03.1945",
     "other_sources": [
       {
@@ -18109,6 +18729,10 @@
         "pdf_y_end": 380.6,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18279,6 +18903,10 @@
         "pdf_y_end": 482.9,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18470,6 +19098,10 @@
         "pdf_y_end": 761.9,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18547,6 +19179,10 @@
         "pdf_y_end": 521.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18757,6 +19393,10 @@
         "pdf_y_end": 114.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18818,7 +19458,16 @@
         "pdf_y_end": 426.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "28.09.1922",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Baranjsko Petrovo Selo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pf.Trić",
@@ -19098,7 +19747,15 @@
         "pdf_y_end": 501.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.12.1944",
+          "place": "Crnac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Piuković",
@@ -19373,6 +20030,10 @@
         "source_page": 571,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19474,6 +20135,10 @@
         "pdf_y_end": 321.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19668,6 +20333,10 @@
         "pdf_y_end": 339.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19794,7 +20463,6 @@
     "death_date": "12.12.1944",
     "death_place": "Belo Brdo",
     "pdf_x_end": 344.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011148",
@@ -19851,6 +20519,10 @@
         "pdf_y_end": 781.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19932,6 +20604,10 @@
         "pdf_y_end": 321.4,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20215,6 +20891,10 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20273,7 +20953,6 @@
     "pdf_x_end": 345.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001010404",
@@ -21000,7 +21679,6 @@
     "death_date": "10.03.1945",
     "death_place": "Bolman, Petlovac",
     "pdf_x_end": 348.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011204",
@@ -21136,6 +21814,10 @@
         "pdf_y_end": 426.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21211,7 +21893,10 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ],
-    "rank": "borac"
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Sahadin",
@@ -21506,6 +22191,10 @@
         "pdf_y_end": 398.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21653,7 +22342,15 @@
         "pdf_y_end": 480.2,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.03.1945",
+          "place": "Karašica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sekulić",
@@ -21879,7 +22576,15 @@
         "pdf_x_end": 361.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.11.1944",
+          "place": "Kazuk"
+        }
+      ]
+    }
   },
   {
     "last_name": "Skederović",
@@ -21934,7 +22639,15 @@
         "pdf_y_end": 518.4,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.03.1945",
+          "place": "Podravska Slatina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Skenderović",
@@ -21943,7 +22656,6 @@
     "fathers_name": "J",
     "full_name": "Skenderović J Albe",
     "additional_info": "rođ. u Tavankutu, borac poginuo u Kolutu 30. III 1945.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 37,
     "pdf_y": 500.4,
@@ -21977,7 +22689,13 @@
         "pdf_y_end": 94.0,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Skenderović",
@@ -22102,6 +22820,10 @@
         "source_page": 68,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22368,6 +23090,10 @@
         "pdf_y_end": 213.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22398,7 +23124,13 @@
         "source_page": 100,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Stanišić",
@@ -22542,6 +23274,10 @@
         "source_page": 550,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22833,7 +23569,15 @@
         "source_page": 542,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Bahuana"
   },
   {
     "last_name": "Stipić",
@@ -23333,7 +24077,15 @@
         "pdf_y_end": 196.3,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "21.12.1944",
+          "place": "Belo Brdo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Suvajdžić",
@@ -23495,6 +24247,10 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23636,6 +24392,10 @@
         "pdf_y_end": 493.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23688,6 +24448,10 @@
         "source_page": 550,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23719,6 +24483,10 @@
         "source_page": 543,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23740,7 +24508,6 @@
     "death_date": "27.11.1944",
     "pdf_x_end": 347.3,
     "death_place": "Vardarac",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111000527",
@@ -23943,7 +24710,18 @@
         "pdf_x_end": 349.8,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "19.11.1944",
+          "place": "Kazuk"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tokodi",
@@ -23978,7 +24756,15 @@
         "pdf_y_end": 377.7,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.04.1945",
+          "place": "Karašica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tokodi",
@@ -24346,7 +25132,15 @@
         "pdf_y_end": 419.1,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.11.1944",
+          "place": "kod Kazuka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Totić",
@@ -24399,7 +25193,15 @@
         "pdf_y_end": 440.7,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.11.1944",
+          "place": "kod Kazuka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Trajković",
@@ -24594,7 +25396,18 @@
         "pdf_x_end": 349.9,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "13.12.1944",
+          "place": "Belo Brdo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tumbaš",
@@ -24710,7 +25523,15 @@
         "pdf_y_end": 492.8,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.11.1944",
+          "place": "Lug"
+        }
+      ]
+    }
   },
   {
     "last_name": "Udički",
@@ -25078,6 +25899,10 @@
         "pdf_y_end": 139.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25285,7 +26110,13 @@
         "pdf_y_end": 460.0,
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Valpovo"
   },
   {
     "last_name": "Vidaković",
@@ -25327,6 +26158,10 @@
         "pdf_y_end": 361.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25413,6 +26248,10 @@
         "source_page": 550,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25751,7 +26590,6 @@
     "death_date": "09.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 340.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011459",
@@ -26542,6 +27380,10 @@
         "source_page": 547,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26562,7 +27404,6 @@
     "soldier_id": "0078001005",
     "death_place": "Batina",
     "pdf_x_end": 305.0,
-    "rank": "borac",
     "death_date": "12.11.1944",
     "other_sources": [
       {
@@ -26673,6 +27514,10 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26757,7 +27602,13 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Vuković",
@@ -26798,7 +27649,6 @@
     "death_date": "12.12.1944",
     "death_place": "Belo Brdo",
     "pdf_x_end": 339.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027010145",
@@ -26820,7 +27670,19 @@
         "pdf_y_end": 202.1,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "21.12.1944",
+          "place": "Belo Brdo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vučić",
@@ -26988,6 +27850,10 @@
         "pdf_y_end": 296.9,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27018,7 +27884,13 @@
         "source_page": 547,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Subotica"
   },
   {
     "last_name": "Zivanov",
@@ -27180,6 +28052,10 @@
         "source_page": 547,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27306,7 +28182,15 @@
         "pdf_y_end": 271.7,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.01.1945",
+          "place": "Čađavica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ćurčić",
@@ -27407,7 +28291,6 @@
     "death_date": "25.04.1945",
     "death_place": "Virovitica",
     "pdf_x_end": 347.8,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011533",
@@ -27440,7 +28323,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078001037",
     "pdf_x_end": 346.6,
-    "rank": "borac",
     "death_date": "08.03.1945",
     "death_place": "Bolman",
     "other_sources": [
@@ -27544,7 +28426,6 @@
     "death_date": "10.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 347.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010241",
@@ -27599,7 +28480,6 @@
     "death_date": "07.02.1945",
     "death_place": "kod Gornjeg Predrijeva",
     "pdf_x_end": 347.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111010238",
@@ -27633,7 +28513,6 @@
     "soldier_id": "0078001043",
     "death_place": "Bešenovački Prnjavor",
     "pdf_x_end": 346.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011546",
@@ -27781,7 +28660,6 @@
     "death_date": "10.03.1945",
     "death_place": "u Baranjkom Petrovom Selu",
     "pdf_x_end": 346.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0075002434",
@@ -27819,7 +28697,12 @@
         "pdf_y_end": 296.6,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1905"
+      ]
+    }
   },
   {
     "last_name": "Đekić",
@@ -27991,7 +28874,6 @@
     "death_date": "09.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 346.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011561",
@@ -28121,7 +29003,6 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078001063",
     "pdf_x_end": 340.9,
-    "rank": "borac",
     "death_date": "13.01.1945",
     "death_place": "Beremend",
     "other_sources": [
@@ -28158,7 +29039,6 @@
     "death_date": "25.04.1945",
     "death_place": "Bačevci",
     "pdf_x_end": 345.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027004669",
@@ -28180,6 +29060,10 @@
         "pdf_y_end": 521.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovak",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -28401,7 +29285,6 @@
     "fathers_name": "Pera",
     "full_name": "Šarcević Pere Lajčo",
     "additional_info": "rođ. 1926, žednik, poginuo kod N. Bezdan 7. III 1945.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 40,
     "pdf_y": 397.5,
@@ -28412,6 +29295,7 @@
     "death_date": "07.03.1945",
     "death_place": "N. Bezdan",
     "pdf_x_end": 346.6,
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9027010191",
@@ -28421,7 +29305,14 @@
         "source_page": 550,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Žednik, Subotica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Šarcević",
@@ -28543,7 +29434,6 @@
     "death_date": "24.12.1944",
     "death_place": "na Dravi kod Osijeka",
     "pdf_x_end": 346.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111011587",
@@ -28557,7 +29447,15 @@
         "pdf_y_end": 441.1,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.11.1944",
+          "place": "na Dravi kod Osijeka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šatko",
@@ -28756,6 +29654,10 @@
         "source_page": 539,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29005,6 +29907,10 @@
         "pdf_y_end": 497.5,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29026,7 +29932,6 @@
     "death_date": "23.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 343.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9027010037",
@@ -29048,7 +29953,19 @@
         "pdf_y_end": 516.5,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "31.03.1945",
+          "place": "Baranjsko Petrovo Selo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Štefković",
@@ -29083,7 +30000,12 @@
         "pdf_y_end": 95.0,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Štefković",
@@ -29300,6 +30222,10 @@
         "source_page": 2457,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {

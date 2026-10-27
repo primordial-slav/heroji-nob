@@ -479,7 +479,8 @@
         "pdf_y_end": 452.2,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_date": "05.1914"
   },
   {
     "last_name": "Bojović",
@@ -1035,8 +1036,29 @@
         "pdf_x_end": 479.2,
         "pdf_y_end": 373.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "0001200260",
+        "name": "Ivanović Save Mijajlo",
+        "additional_info": "zvani Mrka; borac, rođen 1908. u Mrkima, Titograd, SRCG, zemljoradnik. Poginuo decembra 1944. kod Andrijevice.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 12,
+        "pdf_x": 279.4,
+        "pdf_y": 547.3,
+        "pdf_x_end": 588.4,
+        "pdf_y_end": 568.5,
+        "pdf_x_left": 256.1,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.1944",
+          "place": "na Jerinjoj Glavi kod Andrijevice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ivanović",
@@ -1427,7 +1449,6 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 368.0,
-    "rank": "borac",
     "death_type": "umro",
     "death_date": "1971",
     "party": "KPJ",
@@ -2188,7 +2209,8 @@
         "source_page": 409,
         "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "birth_date": "15.04.1909"
   },
   {
     "last_name": "Lipa",
@@ -2481,6 +2503,10 @@
         "source_page": 1012,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Bos.gradiška",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -2644,7 +2670,15 @@
         "pdf_y_end": 562.8,
         "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.05.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sesartić-Hercegovac",
@@ -2916,7 +2950,12 @@
         "unit_file": "7-crnogorska-soldiers.json"
       }
     ],
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Papo",
@@ -3069,7 +3108,16 @@
         "unit_file": "5-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Kalinovnik",
+    "borrowed": [
+      "death_place"
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Perović",
@@ -3177,7 +3225,15 @@
         "pdf_x_left": 57.5,
         "unit_file": "1-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.1943",
+          "place": "Nevesinje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Primorac",
@@ -3275,7 +3331,8 @@
         "unit_file": "1-dalmatinska-soldiers.json"
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_date": "15.04.1904"
   },
   {
     "last_name": "Primorac",
@@ -3573,7 +3630,12 @@
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Rađen",
@@ -3862,7 +3924,18 @@
         "unit_file": "mosorski-odred-soldiers.json"
       }
     ],
-    "party": "KPJ 1939"
+    "party": "KPJ 1939",
+    "variants": {
+      "death": [
+        {
+          "date": "30.05.1943",
+          "place": "Sutjeska"
+        },
+        {
+          "date": "01.05.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stufar",
@@ -4265,12 +4338,11 @@
   },
   {
     "last_name": "Vujičić",
-    "middle_name": "",
+    "middle_name": "Stojana",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Vujičić Petar",
+    "fathers_name": "Stojan",
+    "full_name": "Vujičić Stojana Petar",
     "additional_info": "puškomitraljezac u prištapskim jedinicama, rođen u Vrbici, Livno, zemljoradnik, Srbin, u NOB od 1942, poginuo septembra 1943.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 78.6,
     "pdf_x": 199.6,
@@ -4292,8 +4364,34 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1776",
         "source_page": 1776,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0039101142",
+        "name": "Vujičić Stojana Petar",
+        "additional_info": "borac 2. bataljona, rođen 1910, Vrbica, Livno, radnik, Srbin, u NOB od 1941, poginuo na Sutjesci juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 70,
+        "pdf_x": 289.7,
+        "pdf_y": 347.9,
+        "pdf_x_end": 460.1,
+        "pdf_y_end": 388.8,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1910",
+    "borrowed": [
+      "birth_year",
+      "death_place"
+    ],
+    "death_place": "Sutjeska",
+    "variants": {
+      "death": [
+        {
+          "date": "06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vujošević",
@@ -4392,7 +4490,8 @@
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1926"
+    "party": "KPJ 1926",
+    "birth_date": "01.06.1906"
   },
   {
     "last_name": "Vukićević",

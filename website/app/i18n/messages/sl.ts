@@ -186,6 +186,7 @@ export const sl: Messages = {
       occupation: 'Poklic',
       party: 'Partija',
     },
+    or: 'ali',
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, str. ${page}` : ''}. Knjiga borcev, zapis ${id}.`,
   },

@@ -40,10 +40,10 @@ export function recordFacts(soldier: Soldier, t: Messages, unitName?: string): F
   }
   const f = t.record.fields
   if (FULL_NAME.test(soldier.fathers_name?.trim() ?? '')) add('father', f.father, soldier.fathers_name.trim())
-  // the day of birth where the entry gives it (the life line's first step), else the year
-  const born = soldier.life_events?.find((e) => e.k === 'born')
-  const day = born && /^\d{4}-\d\d-\d\d$/.test(born.d) ? born.d.split('-').map(Number) : null
-  add('born', t.life.born(woman), [day ? t.kin.day(day[2], day[1], day[0]) : soldier.birth_year, soldier.birth_place].filter(Boolean).join(', '))
+  // the day of birth where an entry gives it, else the year; and the years other books give ("1915 ili 1918")
+  const or = ` ${t.record.or} `
+  const born = [soldier.birth_date || soldier.birth_year, ...(soldier.variants?.born ?? [])].filter(Boolean).join(or)
+  add('born', t.life.born(woman), [born, soldier.birth_place].filter(Boolean).join(', '))
   add('ethnicity', f.ethnicity, soldier.ethnicity)
   add('occupation', f.occupation, soldier.occupation)
   add('unit', t.life.unit(unitKind(unitName)), [soldier.unit_detail, soldier.rank].filter(Boolean).join(', '))
@@ -54,7 +54,13 @@ export function recordFacts(soldier: Soldier, t: Messages, unitName?: string): F
   // posle rata", one the Slovene rosters mark "† po osvoboditvi")
   if (soldier.death_date || soldier.death_place || soldier.death_type) {
     const when = soldier.death_date || (soldier.death_after_war ? t.life.afterWar : '')
-    add('death', t.life.fate(soldier.death_type, woman), [when, soldier.death_place].filter(Boolean).join(', ') || t.life.undated)
+    const others = soldier.variants?.death ?? []
+    // another book's day after "ili": "13.04.1945 ili 07.02.1945, Aleksandrovac" where every book names that place,
+    // else each with its own, "05.03.1943, kod Gornjeg Vakufa ili 06.1943, Sutjeska" (a book that names none, its day)
+    const value = others.every((d) => d.place === soldier.death_place)
+      ? [[when, ...others.map((d) => d.date)].filter(Boolean).join(or), soldier.death_place].filter(Boolean).join(', ')
+      : [[when, soldier.death_place], ...others.map((d) => [d.date, d.place])].map((p) => p.filter(Boolean).join(', ')).join(or)
+    add('death', t.life.fate(soldier.death_type, woman), value || t.life.undated)
   }
   return facts
 }

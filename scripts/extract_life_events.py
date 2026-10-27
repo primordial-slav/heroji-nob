@@ -319,6 +319,25 @@ def born_phrase(text: str, year: str) -> tuple[int, str, tuple] | None:
     return (m.start(), text[m.start():m.end()].strip(' ,;.'), d) if d else None
 
 
+def birth_day(s: dict) -> tuple[int, int, str, tuple] | None:
+    """The day of birth, or the month, from the first of the record's entries that prints it with the record's birth
+    year: its own, another book's merged into it, the same man's record in another unit, then a book across units (the
+    hero books' "Rođen je 12. oktobra 1907."; the user's decision of 2026-10-27). (entry index, start, words, date)"""
+    year = re.search(r'(?:18|19)\d\d', s.get('birth_year') or '')
+    if not year:
+        return None
+    entries = [s] + list(s.get('other_sources') or [])
+
+    def rank(i):
+        e = entries[i]
+        return (0 if i == 0 else 3 if e.get('ref_book') else 2 if e.get('unit_file') else 1), i
+    for i in sorted(range(len(entries)), key=rank):
+        born = born_phrase(entries[i].get('additional_info') or '', year.group(0))
+        if born and born[2][1]:
+            return i, born[0], born[1], born[2]
+    return None
+
+
 def trimmed(text: str, a: int, b: int) -> list[int]:
     """[start, end] of text[a:b] without the punctuation and spaces at its ends"""
     while a < b and text[a] in ' ,;.':
@@ -351,9 +370,11 @@ def life_events(s: dict, code: int) -> list[dict]:
     own = s.get('additional_info') or ''
     year = re.search(r'(?:18|19)\d\d', s.get('birth_year') or '')
     if year:
-        born = born_phrase(own, year.group(0))
+        # the day from whichever entry prints it (birth_day), else the year as the own entry prints it
+        day = birth_day(s)
+        born = day[1:] if day else born_phrase(own, year.group(0))
         d = born[2] if born else (int(year.group(0)), 0, 0)
-        step = {'k': 'born', 'd': iso(d), 's': 0, '_at': born[0] if born else -1}
+        step = {'k': 'born', 'd': iso(d), 's': day[0] if day else 0, '_at': born[0] if born else -1}
         if born:
             step['at'] = [born[0], born[0] + len(born[1])]
         steps.append(step)

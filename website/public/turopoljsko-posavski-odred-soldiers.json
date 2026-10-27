@@ -26,7 +26,6 @@
     "fathers_name": "",
     "full_name": "Antolović Stjepan",
     "additional_info": "Čakanac; poginuo 20. VI 1944. Horvati.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 104.19500000000005,
     "pdf_x": 49.4,
@@ -38,7 +37,6 @@
     "birth_place": "Čakanac",
     "death_type": "poginuo",
     "death_date": "20.06.1944",
-    "rank": "borac",
     "death_place": "Horvati",
     "other_sources": [
       {
@@ -61,7 +59,13 @@
         "pdf_y_end": 281.8,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Arbanas",
@@ -70,7 +74,6 @@
     "fathers_name": "",
     "full_name": "Arbanas Mijo",
     "additional_info": "Lomnica Donja; poginuo 13. VII 1944. Lukinić Brdo.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 126.09500000000014,
     "pdf_x": 49.4,
@@ -104,7 +107,21 @@
         "pdf_y_end": 216.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927",
+    "variants": {
+      "death": [
+        {
+          "date": "07.05.1944",
+          "place": "Šetek"
+        }
+      ]
+    }
   },
   {
     "last_name": "Babić",
@@ -125,7 +142,6 @@
     "birth_place": "Novo Čiće",
     "death_type": "poginuo",
     "death_date": "22.08.1944",
-    "rank": "borac",
     "death_place": "D. Kupčina",
     "other_sources": [
       {
@@ -168,7 +184,6 @@
     "fathers_name": "",
     "full_name": "Bedeković Marko",
     "additional_info": "Mičevec; ubijen 25. I 1945. u Mičevcu.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 192.53500000000008,
     "pdf_x": 217.6,
@@ -190,7 +205,13 @@
         "source_page": 2384,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Benkovčić",
@@ -211,7 +232,6 @@
     "birth_place": "Vrbovo",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000070",
@@ -246,7 +266,6 @@
     "birth_place": "Ruča",
     "death_type": "poginuo",
     "death_date": "18.01.1944",
-    "rank": "borac",
     "death_place": "Oborovo",
     "other_sources": [
       {
@@ -341,7 +360,6 @@
     "birth_place": "Hotnja",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
     "death_place": "Veleševec",
     "other_sources": [
       {
@@ -384,7 +402,6 @@
     "fathers_name": "",
     "full_name": "Brcković Ivan",
     "additional_info": "Mičevec; strijeljan od ustaša.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 203.33500000000015,
     "pdf_x": 217.3,
@@ -404,7 +421,17 @@
         "source_page": 2384,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Mičevec",
+    "birth_year": "1926"
   },
   {
     "last_name": "Brcković",
@@ -413,7 +440,6 @@
     "fathers_name": "",
     "full_name": "Brcković Marko",
     "additional_info": "Mičevec; umro od tifusa u Mičevcu XI 1944..",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 214.63500000000022,
     "pdf_x": 217.3,
@@ -435,7 +461,13 @@
         "source_page": 2384,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Brebrić",
@@ -475,7 +507,6 @@
     "birth_place": "Zablatje",
     "death_type": "poginuo",
     "death_date": "25.10.1944",
-    "rank": "borac",
     "death_place": "Trebovac",
     "other_sources": [
       {
@@ -499,7 +530,6 @@
     "fathers_name": "",
     "full_name": "Bučina Ivan",
     "additional_info": "Drnek; poginuo 10. XI 1944. Mraclin.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 246.29499999999985,
     "pdf_x": 48.3,
@@ -520,7 +550,15 @@
         "source_page": 2380,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Mraclin",
+    "birth_year": "1908"
   },
   {
     "last_name": "Cerovski",
@@ -529,7 +567,6 @@
     "fathers_name": "",
     "full_name": "Cerovski Josip",
     "additional_info": "Bukovčak; poginuo 13. II 1944. Kupčina.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 257.39499999999987,
     "pdf_x": 48.5,
@@ -541,7 +578,6 @@
     "birth_place": "Bukovčak",
     "death_type": "poginuo",
     "death_date": "13.02.1944",
-    "rank": "borac",
     "death_place": "Kupčina",
     "other_sources": [
       {
@@ -564,7 +600,13 @@
         "pdf_y_end": 443.1,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Cerovski",
@@ -604,7 +646,6 @@
     "birth_place": "Lukavec",
     "death_type": "poginuo",
     "death_date": "05.05.1944",
-    "rank": "borac",
     "death_place": "Slavetić",
     "other_sources": [
       {
@@ -619,7 +660,15 @@
         "pdf_y_end": 455.3,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "05.04.1944",
+          "place": "Slavetić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Cvetko",
@@ -628,7 +677,6 @@
     "fathers_name": "",
     "full_name": "Cvetko Franjo",
     "additional_info": "Turopolje; poginuo 8. II 1945. Drnek.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 279.39499999999987,
     "pdf_x": 52.5,
@@ -640,7 +688,6 @@
     "birth_place": "Turopolje",
     "death_type": "poginuo",
     "death_date": "08.02.1945",
-    "rank": "borac",
     "death_place": "Dmek",
     "other_sources": [
       {
@@ -663,7 +710,13 @@
         "pdf_y_end": 467.8,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Detelić",
@@ -684,7 +737,6 @@
     "birth_place": "Buševec",
     "death_type": "poginuo",
     "death_date": "10.01.1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000204",
@@ -719,7 +771,6 @@
     "birth_place": "Lomnica Donja",
     "death_type": "poginuo",
     "death_date": "05.05.1944",
-    "rank": "borac",
     "death_place": "Kramarići",
     "other_sources": [
       {
@@ -762,7 +813,6 @@
     "fathers_name": "",
     "full_name": "Dolački Stjepan",
     "additional_info": "Veleševec; ubijen u Sisku 26. IV 1945.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 247.5350000000002,
     "pdf_x": 217.1,
@@ -784,7 +834,13 @@
         "source_page": 2389,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1906"
   },
   {
     "last_name": "Dorotić",
@@ -806,7 +862,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "XI . aerodrom Pleso",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000218",
@@ -842,7 +897,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "V . u Pokuplju",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000219",
@@ -865,7 +919,6 @@
     "fathers_name": "",
     "full_name": "Dulmin Zvonko",
     "additional_info": "Veleševec; poginuo 8. II 1945. Drnek.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 367.49499999999995,
     "pdf_x": 53.5,
@@ -877,7 +930,6 @@
     "birth_place": "Veleševec",
     "death_type": "poginuo",
     "death_date": "08.02.1945",
-    "rank": "borac",
     "death_place": "Dmek",
     "other_sources": [
       {
@@ -908,7 +960,13 @@
         "pdf_y_end": 566.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Fabijanković",
@@ -917,7 +975,6 @@
     "fathers_name": "",
     "full_name": "Fabijanković Ivo",
     "additional_info": "Suša; poginuo 17. XII 1944. Turopolje.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 400.195,
     "pdf_x": 53.5,
@@ -929,7 +986,6 @@
     "birth_place": "Suša",
     "death_type": "poginuo",
     "death_date": "17.12.1944",
-    "rank": "borac",
     "death_place": "Turopolje",
     "other_sources": [
       {
@@ -952,7 +1008,13 @@
         "pdf_y_end": 45.1,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1909"
   },
   {
     "last_name": "Fabijančić",
@@ -961,7 +1023,6 @@
     "fathers_name": "",
     "full_name": "Fabijančić Antun",
     "additional_info": "Kuče; poginuo 22. VIII 1943. Kupčina.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 389.395,
     "pdf_x": 53.5,
@@ -973,7 +1034,6 @@
     "birth_place": "Kuče",
     "death_type": "poginuo",
     "death_date": "22.08.1943",
-    "rank": "borac",
     "death_place": "Kupčina",
     "other_sources": [
       {
@@ -996,7 +1056,13 @@
         "pdf_y_end": 590.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Falat",
@@ -1005,7 +1071,6 @@
     "fathers_name": "",
     "full_name": "Falat Ivan",
     "additional_info": "Rakitovec; poginuo 24. X 1944. Čička Poljana.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 411.195,
     "pdf_x": 53.5,
@@ -1017,7 +1082,6 @@
     "birth_place": "Rakitovec",
     "death_type": "poginuo",
     "death_date": "24.10.1944",
-    "rank": "borac",
     "death_place": "Čička Polj.",
     "other_sources": [
       {
@@ -1040,7 +1104,13 @@
         "pdf_y_end": 57.4,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Furko",
@@ -1061,7 +1131,6 @@
     "birth_place": "Ruča",
     "death_type": "poginuo",
     "death_date": "07.05.1944",
-    "rank": "borac",
     "death_place": "Jamn. Kis.",
     "other_sources": [
       {
@@ -1097,7 +1166,6 @@
     "birth_place": "Veleševec",
     "death_type": "poginuo",
     "death_date": "08.05.1945",
-    "rank": "borac",
     "death_place": "Draganiči",
     "other_sources": [
       {
@@ -1141,7 +1209,6 @@
     "fathers_name": "",
     "full_name": "Grgar Đuro",
     "additional_info": "Ribnica; poginuo VIII 1943..",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 444.095,
     "pdf_x": 53.5,
@@ -1154,7 +1221,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "VIII",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021050172",
@@ -1176,7 +1242,13 @@
         "pdf_y_end": 94.8,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Haluga",
@@ -1204,7 +1276,6 @@
     "fathers_name": "",
     "full_name": "Hapač Ivan",
     "additional_info": "Ščitarjevo; poginuo 1943. Ruča.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 465.89500000000004,
     "pdf_x": 53.8,
@@ -1216,7 +1287,6 @@
     "birth_place": "Ščitarjevo",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac",
     "death_place": "Ruča",
     "other_sources": [
       {
@@ -1239,7 +1309,13 @@
         "pdf_y_end": 119.8,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Hapač",
@@ -1248,7 +1324,6 @@
     "fathers_name": "",
     "full_name": "Hapač Nikola",
     "additional_info": "Ščitarjevo; poginuo 29.IV 1944..",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 476.6950000000001,
     "pdf_x": 53.8,
@@ -1260,7 +1335,6 @@
     "birth_place": "Ščitarjevo",
     "death_type": "poginuo",
     "death_date": "29.04.1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021050193",
@@ -1282,7 +1356,15 @@
         "pdf_y_end": 132.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Suša",
+    "birth_year": "1926"
   },
   {
     "last_name": "Hačić",
@@ -1291,7 +1373,6 @@
     "fathers_name": "",
     "full_name": "Hačić Slavko",
     "additional_info": "Turopolje; poginuo 22. VIII 1943. Zdenčina.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 455.095,
     "pdf_x": 53.7,
@@ -1303,7 +1384,6 @@
     "birth_place": "Turopolje",
     "death_type": "poginuo",
     "death_date": "22.08.1943",
-    "rank": "borac",
     "death_place": "Zdenčina",
     "other_sources": [
       {
@@ -1326,7 +1406,13 @@
         "pdf_y_end": 107.3,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Hlopec",
@@ -1370,6 +1456,10 @@
         "pdf_y_end": 566.9,
         "unit_file": "34-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1429,7 +1519,6 @@
     "birth_place": "Luka Lijeva",
     "death_type": "poginuo",
     "death_date": "01.05.1945",
-    "rank": "borac",
     "death_place": "Vrbovo",
     "other_sources": [
       {
@@ -1465,7 +1554,6 @@
     "birth_place": "Veleševec",
     "death_type": "poginuo",
     "death_date": "19.10.1944",
-    "rank": "borac",
     "death_place": "Čička Polj.",
     "other_sources": [
       {
@@ -1525,7 +1613,6 @@
     "fathers_name": "",
     "full_name": "Janječić Juraj",
     "additional_info": "Mićevec; poginuo 10. XI 1944. Donja Lomnica.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 531.3950000000001,
     "pdf_x": 53.3,
@@ -1537,7 +1624,6 @@
     "birth_place": "Mićevec",
     "death_type": "poginuo",
     "death_date": "10.11.1944",
-    "rank": "borac",
     "death_place": "D. Lomnica",
     "other_sources": [
       {
@@ -1560,7 +1646,13 @@
         "pdf_y_end": 194.6,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Juratović",
@@ -1581,7 +1673,6 @@
     "birth_place": "Dubranec",
     "death_type": "poginuo",
     "death_date": "28.01.1945",
-    "rank": "borac",
     "death_place": "Žažina",
     "other_sources": [
       {
@@ -1617,7 +1708,6 @@
     "birth_place": "Novo Čiče",
     "death_type": "poginuo",
     "death_date": "15.10.1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000480",
@@ -1640,7 +1730,6 @@
     "fathers_name": "",
     "full_name": "Karnas Stjepan",
     "additional_info": "Lukavec; poginuo 7. XII 1943. Lukavec.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 574.8950000000001,
     "pdf_x": 54.5,
@@ -1652,7 +1741,6 @@
     "birth_place": "Lukavec",
     "death_type": "poginuo",
     "death_date": "07.12.1943",
-    "rank": "borac",
     "death_place": "Lukavec",
     "other_sources": [
       {
@@ -1675,7 +1763,13 @@
         "pdf_y_end": 244.6,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Ketin",
@@ -1705,7 +1799,6 @@
     "fathers_name": "",
     "full_name": "Klenović Ivan",
     "additional_info": "Mićevec; poginuo 17. XI 1944. Cazin.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 586.1950000000002,
     "pdf_x": 54.7,
@@ -1717,7 +1810,6 @@
     "birth_place": "Mićevec",
     "death_type": "poginuo",
     "death_date": "17.11.1944",
-    "rank": "borac",
     "death_place": "Cazin",
     "other_sources": [
       {
@@ -1740,7 +1832,13 @@
         "pdf_y_end": 257.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Koletić",
@@ -1749,7 +1847,6 @@
     "fathers_name": "",
     "full_name": "Koletić Petar",
     "additional_info": "Ruča; poginuo 7. V 1944. L. Štefanki.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 111.15499999999997,
     "pdf_x": 217.9,
@@ -1761,7 +1858,6 @@
     "birth_place": "Ruča",
     "death_type": "poginuo",
     "death_date": "07.05.1944",
-    "rank": "borac",
     "death_place": "L. Stefanki",
     "other_sources": [
       {
@@ -1784,7 +1880,13 @@
         "pdf_y_end": 269.5,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1911"
   },
   {
     "last_name": "Korenika",
@@ -1793,7 +1895,6 @@
     "fathers_name": "",
     "full_name": "Korenika Juraj",
     "additional_info": "Hrašće; poginuo IX 1943. Vukojevac.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 564.095,
     "pdf_x": 54.5,
@@ -1806,7 +1907,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "IX",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021059025",
@@ -1828,7 +1928,13 @@
         "pdf_y_end": 232.1,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1900"
   },
   {
     "last_name": "Kos",
@@ -1837,7 +1943,6 @@
     "fathers_name": "",
     "full_name": "Kos Stjepan",
     "additional_info": "Dubranec; poginuo 14. III 1944. Dubranec.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 121.95500000000004,
     "pdf_x": 217.7,
@@ -1849,7 +1954,6 @@
     "birth_place": "Dubranec",
     "death_type": "poginuo",
     "death_date": "14.03.1944",
-    "rank": "borac",
     "death_place": "Dubranec",
     "other_sources": [
       {
@@ -1872,7 +1976,13 @@
         "pdf_y_end": 282.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Kosović",
@@ -1881,7 +1991,6 @@
     "fathers_name": "",
     "full_name": "Kosović Ivan",
     "additional_info": "G. Podotočje; poginuo 5. V 1945. Generalski Stol.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 133.255,
     "pdf_x": 217.7,
@@ -1916,7 +2025,13 @@
         "pdf_y_end": 294.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Kotrman",
@@ -1925,7 +2040,6 @@
     "fathers_name": "",
     "full_name": "Kotrman Josip",
     "additional_info": "Kobilić; poginuo 17. III 1945. Martinska Ves.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 146.95500000000004,
     "pdf_x": 218.4,
@@ -1937,7 +2051,6 @@
     "birth_place": "Kobilić",
     "death_type": "poginuo",
     "death_date": "17.03.1945",
-    "rank": "borac",
     "death_place": "Martin. Ves",
     "other_sources": [
       {
@@ -1960,7 +2073,13 @@
         "pdf_y_end": 306.7,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Kovačić",
@@ -1969,7 +2088,6 @@
     "fathers_name": "",
     "full_name": "Kovačić Franjo",
     "additional_info": "Mraclin; poginuo 18. VII 1944. Pisarovina.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 157.95500000000004,
     "pdf_x": 218.4,
@@ -1981,7 +2099,6 @@
     "birth_place": "Mraclin",
     "death_type": "poginuo",
     "death_date": "18.07.1944",
-    "rank": "borac",
     "death_place": "Pisarovina",
     "other_sources": [
       {
@@ -2004,7 +2121,13 @@
         "pdf_y_end": 319.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Kovačić",
@@ -2032,7 +2155,6 @@
     "fathers_name": "",
     "full_name": "Kovačić Mijo",
     "additional_info": "Lipnica; poginuo 22. II 1944..",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 179.8549999999999,
     "pdf_x": 218.4,
@@ -2044,7 +2166,6 @@
     "birth_place": "Lipnica",
     "death_type": "poginuo",
     "death_date": "22.02.1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021059044",
@@ -2066,7 +2187,15 @@
         "pdf_y_end": 343.9,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lomnica,v.goric",
+    "birth_year": "1921"
   },
   {
     "last_name": "Kramarić",
@@ -2075,7 +2204,6 @@
     "fathers_name": "",
     "full_name": "Kramarić Josip",
     "additional_info": "Dubranec Ruča; poginuo 16. X 1943. Trebarjevo D..",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 201.95500000000004,
     "pdf_x": 218.2,
@@ -2087,7 +2215,6 @@
     "birth_place": "Dubranec Ruča",
     "death_type": "poginuo",
     "death_date": "16.10.1943",
-    "rank": "borac",
     "death_place": "D. Trebarj.",
     "other_sources": [
       {
@@ -2110,7 +2237,13 @@
         "pdf_y_end": 356.4,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Kruhan",
@@ -2140,7 +2273,6 @@
     "fathers_name": "",
     "full_name": "Kunić Stjepan",
     "additional_info": "Velika Mlaka; poginuo 15. X 1944. Dubranec.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 223.7550000000001,
     "pdf_x": 218.2,
@@ -2152,7 +2284,6 @@
     "birth_place": "Velika Mlaka",
     "death_type": "poginuo",
     "death_date": "15.10.1944",
-    "rank": "borac",
     "death_place": "Dubranec",
     "other_sources": [
       {
@@ -2175,7 +2306,13 @@
         "pdf_y_end": 381.4,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Kučić",
@@ -2184,7 +2321,6 @@
     "fathers_name": "",
     "full_name": "Kučić Juraj",
     "additional_info": "Gudci; poginuo IV 1944. Desni Štefanki.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 212.95500000000015,
     "pdf_x": 218.2,
@@ -2197,7 +2333,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "IV",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021050007",
@@ -2219,7 +2354,13 @@
         "pdf_y_end": 368.9,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Kušević",
@@ -2247,7 +2388,6 @@
     "fathers_name": "",
     "full_name": "Lacković Tomo",
     "additional_info": "Velika Mlaka; poginuo 19. IV 1944. Jamnica.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 245.85500000000008,
     "pdf_x": 218.2,
@@ -2259,7 +2399,6 @@
     "birth_place": "Velika Mlaka",
     "death_type": "poginuo",
     "death_date": "19.04.1944",
-    "rank": "borac",
     "death_place": "Jamnica",
     "other_sources": [
       {
@@ -2282,7 +2421,13 @@
         "pdf_y_end": 406.1,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1907"
   },
   {
     "last_name": "Lešić",
@@ -2303,7 +2448,6 @@
     "birth_place": "Odra",
     "death_type": "poginuo",
     "death_date": "22.08.1944",
-    "rank": "borac",
     "death_place": "Kupčina",
     "other_sources": [
       {
@@ -2327,7 +2471,6 @@
     "fathers_name": "",
     "full_name": "Lipar Dragutin",
     "additional_info": "Lomnica Donja; poginuo XI 1943. Pisarovina.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 267.6550000000001,
     "pdf_x": 218.0,
@@ -2340,7 +2483,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "XI",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021049947",
@@ -2362,7 +2504,13 @@
         "pdf_y_end": 431.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Lučić",
@@ -2383,7 +2531,6 @@
     "birth_place": "Kuče",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac",
     "death_place": "Odra",
     "other_sources": [
       {
@@ -2439,7 +2586,6 @@
     "birth_place": "Veleševec",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
     "death_place": "Draganići",
     "other_sources": [
       {
@@ -2463,7 +2609,6 @@
     "fathers_name": "",
     "full_name": "Mihordin Mijo",
     "additional_info": "Bukevje; poginuo 24. V 1945. Mraclinska šuma.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 311.55500000000006,
     "pdf_x": 218.0,
@@ -2475,7 +2620,6 @@
     "birth_place": "Bukevje",
     "death_type": "poginuo",
     "death_date": "24.05.1945",
-    "rank": "borac",
     "death_place": "Mraclin. š.",
     "other_sources": [
       {
@@ -2498,7 +2642,13 @@
         "pdf_y_end": 480.7,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Mikulčić",
@@ -2519,7 +2669,6 @@
     "birth_place": "Pleso",
     "death_type": "poginuo",
     "death_date": "10.05.1944",
-    "rank": "borac",
     "death_place": "Kravarsko",
     "other_sources": [
       {
@@ -2562,7 +2711,6 @@
     "fathers_name": "",
     "full_name": "Munić Dragutin",
     "additional_info": "Bukevje; poginuo 20. X 1944. Trebovac (D. Selo).",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 355.05500000000006,
     "pdf_x": 217.7,
@@ -2574,7 +2722,6 @@
     "birth_place": "Bukevje",
     "death_type": "poginuo",
     "death_date": "20.10.1944",
-    "rank": "borac",
     "death_place": "Trebovac",
     "other_sources": [
       {
@@ -2597,7 +2744,13 @@
         "pdf_y_end": 517.7,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Munić",
@@ -2625,7 +2778,6 @@
     "fathers_name": "",
     "full_name": "Munjić Nikola",
     "additional_info": "Vukomerić; poginuo 23. IV 1944. Hasan Breg.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 376.855,
     "pdf_x": 217.5,
@@ -2637,7 +2789,6 @@
     "birth_place": "Vukomerić",
     "death_type": "poginuo",
     "death_date": "23.04.1944",
-    "rank": "borac",
     "death_place": "Hasan-Breg",
     "other_sources": [
       {
@@ -2660,7 +2811,13 @@
         "pdf_y_end": 542.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Pajtud",
@@ -2700,7 +2857,6 @@
     "birth_place": "Ruča",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000844",
@@ -2769,8 +2925,11 @@
         "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "rank": "borac",
-    "death_place": "Dubranec"
+    "death_place": "Dubranec",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Pejak",
@@ -2779,7 +2938,6 @@
     "fathers_name": "",
     "full_name": "Pejak Ivan",
     "additional_info": "Čakanec; poginuo 7. V 1944. Lukinić Brdo.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 431.355,
     "pdf_x": 217.2,
@@ -2825,8 +2983,13 @@
         "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "rank": "borac",
-    "death_place": "Kravarsko"
+    "death_place": "Kravarsko",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Pendelin",
@@ -2867,7 +3030,6 @@
     "birth_place": "Ščitarjevo",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac",
     "death_place": "Poljana Odr.",
     "other_sources": [
       {
@@ -2922,7 +3084,6 @@
     "birth_place": "G. Podotočje",
     "death_type": "poginuo",
     "death_date": "25.03.1945",
-    "rank": "borac",
     "death_place": "D. Bačuga",
     "other_sources": [
       {
@@ -2958,7 +3119,6 @@
     "birth_place": "Čička Poljana",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
     "death_place": "Turopolj.lug",
     "other_sources": [
       {
@@ -2982,7 +3142,6 @@
     "fathers_name": "",
     "full_name": "Pršak Ivan",
     "additional_info": "Veleševec; poginuo 28. XI 1943. Turopolje.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 497.355,
     "pdf_x": 217.2,
@@ -3003,7 +3162,15 @@
         "source_page": 2389,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Turopolje",
+    "birth_year": "1906"
   },
   {
     "last_name": "Radić",
@@ -3031,7 +3198,6 @@
     "fathers_name": "",
     "full_name": "Radičević Đuro",
     "additional_info": "Čička Poljana; poginuo III 1944. Čakanec.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 519.455,
     "pdf_x": 223.4,
@@ -3044,7 +3210,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "III",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021050163",
@@ -3066,7 +3231,13 @@
         "pdf_y_end": 134.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Radović",
@@ -3124,7 +3295,6 @@
     "birth_place": "Strmec",
     "death_type": "poginuo",
     "death_date": "11.06.1944",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097001003",
@@ -3166,7 +3336,6 @@
     "fathers_name": "",
     "full_name": "Smolković Mirko",
     "additional_info": "Pokupski, Lomnica Donja; poginuo 11. V 1944. Kupčina.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 596.455,
     "pdf_x": 217.0,
@@ -3187,7 +3356,15 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kupčina",
+    "birth_year": "1922"
   },
   {
     "last_name": "Stančić",
@@ -3242,8 +3419,11 @@
         "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "rank": "borac",
-    "death_place": "Plewsivica"
+    "death_place": "Plewsivica",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Sučec",
@@ -3319,7 +3499,11 @@
       }
     ],
     "rank": "komandir odeljenja",
-    "death_place": "Blatnica"
+    "death_place": "Blatnica",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vadić",
@@ -3377,7 +3561,6 @@
     "birth_place": "Preseka",
     "death_type": "poginuo",
     "death_date": "07.02.1944",
-    "rank": "borac",
     "death_place": "Veleševec",
     "other_sources": [
       {
@@ -3413,7 +3596,6 @@
     "birth_place": "Bukevje",
     "death_type": "poginuo",
     "death_date": "07.05.1945",
-    "rank": "borac",
     "death_place": "Jamnica",
     "other_sources": [
       {
@@ -3554,7 +3736,6 @@
     "fathers_name": "",
     "full_name": "Vučin Stjepan",
     "additional_info": "Veleševec; poginuo Veleševec.",
-    "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 67.81499999999994,
     "pdf_x": 53.8,
@@ -3566,7 +3747,6 @@
     "birth_place": "Veleševec",
     "death_type": "poginuo",
     "death_place": "Veleševec",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021050245",
@@ -3588,7 +3768,15 @@
         "pdf_y_end": 370.3,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "birth_year": "1911"
   },
   {
     "last_name": "Vučić",
@@ -3597,7 +3785,6 @@
     "fathers_name": "",
     "full_name": "Vučić Ivan",
     "additional_info": "Odra; poginuo X 1943..",
-    "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 35.11500000000001,
     "pdf_x": 54.0,
@@ -3610,7 +3797,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "X",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021059066",
@@ -3632,7 +3818,13 @@
         "pdf_y_end": 333.1,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Zima",
@@ -3673,7 +3865,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "XI",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097001295",
@@ -3696,7 +3887,6 @@
     "fathers_name": "",
     "full_name": "Čubanec Ivan",
     "additional_info": "Veleševec; poginuo 28. XII 1944. Rakitovec.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 301.2949999999999,
     "pdf_x": 53.1,
@@ -3708,7 +3898,6 @@
     "birth_place": "Veleševec",
     "death_type": "poginuo",
     "death_date": "28.12.1944",
-    "rank": "borac",
     "death_place": "Rakitovec",
     "other_sources": [
       {
@@ -3731,7 +3920,13 @@
         "pdf_y_end": 492.5,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Đumlija",
@@ -3740,7 +3935,6 @@
     "fathers_name": "",
     "full_name": "Đumlija Pavao",
     "additional_info": "Petrov ina; poginuo 7. VI 1944. Kotari.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 378.29499999999996,
     "pdf_x": 52.8,
@@ -3752,7 +3946,6 @@
     "birth_place": "Petrov ina",
     "death_type": "poginuo",
     "death_date": "07.06.1944",
-    "rank": "borac",
     "death_place": "Kotari",
     "other_sources": [
       {
@@ -3775,7 +3968,13 @@
         "pdf_y_end": 578.2,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Šestak",
@@ -3796,7 +3995,6 @@
     "birth_place": "Poljana Čička",
     "death_type": "poginuo",
     "death_date": "15.04.1944",
-    "rank": "borac",
     "death_place": "Kupčina",
     "other_sources": [
       {

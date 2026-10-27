@@ -85,7 +85,6 @@
     "fathers_name": "",
     "full_name": "Adamović Branko",
     "additional_info": "rođen u Brestaču, Srbin, zemloradnik, borac, poginuo 1944. u ,istočnoj Bosni.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 1,
     "pdf_y": 435.2,
@@ -109,7 +108,13 @@
         "source_page": 264,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_place": "Bosna",
+    "borrowed": [
+      "birth_year",
+      "death_place"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Adnađević",
@@ -283,7 +288,13 @@
         "source_page": 455,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srpkinja"
   },
   {
     "last_name": "Andrić",
@@ -994,7 +1005,18 @@
         "pdf_y_end": 375.2,
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ],
+      "death": [
+        {
+          "date": "12.05.1944",
+          "place": "kod s. Peljave u istočnoj Bosni"
+        }
+      ]
+    }
   },
   {
     "last_name": "Avakumović",
@@ -1822,6 +1844,10 @@
         "source_page": 453,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -2163,6 +2189,10 @@
         "source_page": 436,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Laćarak, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -2693,6 +2723,10 @@
         "source_page": 404,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4698,7 +4732,12 @@
         "pdf_y_end": 260.3,
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Budimčić",
@@ -4821,7 +4860,13 @@
         "source_page": 417,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Čalma, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Ruma"
   },
   {
     "last_name": "Bugarski",
@@ -5083,7 +5128,12 @@
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1910"
+      ]
+    }
   },
   {
     "last_name": "Crnić",
@@ -6423,6 +6473,10 @@
         "source_page": 417,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1945",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -7141,6 +7195,10 @@
         "source_page": 450,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Drenovci",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -8287,6 +8345,10 @@
         "source_page": 351,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Olovo-bosna",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -8647,6 +8709,10 @@
         "source_page": 450,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Vojna jedinica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -8936,6 +9002,10 @@
         "source_page": 450,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -9070,7 +9140,15 @@
         "source_page": 283,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Tutnjevac"
   },
   {
     "last_name": "Grujić",
@@ -9297,7 +9375,12 @@
         "pdf_y_end": 188.1,
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Gršić",
@@ -9996,6 +10079,10 @@
         "source_page": 301,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -10498,6 +10585,10 @@
         "source_page": 301,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1945",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -11004,6 +11095,10 @@
         "source_page": 409,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -11060,6 +11155,10 @@
         "source_page": 409,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Bešenovo, Srbobran",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -11151,7 +11250,8 @@
         "pdf_y_end": 401.7,
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "11.10.1914"
   },
   {
     "last_name": "Ješić",
@@ -11184,6 +11284,10 @@
         "source_page": 301,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12143,6 +12247,10 @@
         "source_page": 66,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Neštin, Beočin",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -12176,6 +12284,10 @@
         "source_page": 66,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Neštin, Beočin",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -13415,7 +13527,15 @@
         "source_page": 267,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Iznad zvornika"
   },
   {
     "last_name": "Katić",
@@ -14231,6 +14351,10 @@
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Laćarak, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -14859,7 +14983,13 @@
         "source_page": 447,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Svinjarevci"
   },
   {
     "last_name": "Kostić",
@@ -14927,7 +15057,17 @@
         "source_page": 447,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Svinjarevci"
   },
   {
     "last_name": "Kotlić",
@@ -15803,7 +15943,13 @@
         "source_page": 451,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Krompić",
@@ -16533,7 +16679,13 @@
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Laćarak, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Bosna"
   },
   {
     "last_name": "Kuzminac",
@@ -16964,6 +17116,10 @@
         "source_page": 451,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16996,6 +17152,10 @@
         "source_page": 451,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17524,6 +17684,10 @@
         "source_page": 283,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -18393,6 +18557,10 @@
         "source_page": 284,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -18597,6 +18765,10 @@
         "source_page": 101,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -18871,6 +19043,10 @@
         "source_page": 284,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -19364,7 +19540,6 @@
     "pdf_x_end": 390.4,
     "pdf_x_left": 108.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0082001940",
@@ -19894,7 +20069,12 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Obrenovac",
-    "rank": "pomoćnik komesara bataljona"
+    "rank": "pomoćnik komesara bataljona",
+    "variants": {
+      "born": [
+        "09.08.1919"
+      ]
+    }
   },
   {
     "last_name": "Matić",
@@ -20012,6 +20192,10 @@
         "source_page": 302,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -20527,7 +20711,13 @@
         "source_page": 477,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Vrdnik, Irig",
+    "borrowed": [
+      "birth_place",
+      "death_date"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Mihajlović",
@@ -21314,7 +21504,8 @@
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "birth_date": "26.10.1919"
   },
   {
     "last_name": "Milekić",
@@ -21537,6 +21728,10 @@
         "source_page": 351,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Brezovo Polje",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -22030,6 +22225,10 @@
         "source_page": 103,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -22890,6 +23089,10 @@
         "source_page": 413,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24138,7 +24341,17 @@
         "source_page": 151,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Hetin, Nova Crnja",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Brčko"
   },
   {
     "last_name": "Nebrigić",
@@ -24448,6 +24661,10 @@
         "source_page": 608,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Petrovo selo-dr",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -25292,7 +25509,13 @@
         "source_page": 287,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Bosna"
   },
   {
     "last_name": "Nikolić",
@@ -25345,6 +25568,10 @@
         "source_page": 422,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Divoš, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -25488,6 +25715,10 @@
         "source_page": 410,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Bešenovo, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -25521,6 +25752,10 @@
         "source_page": 410,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Bešenovo, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -25569,7 +25804,15 @@
         "source_page": 319,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Stejanovci, Ruma",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Fruška gora"
   },
   {
     "last_name": "Ninković",
@@ -26119,7 +26362,12 @@
         "pdf_y_end": 176.3,
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Obradović",
@@ -26406,7 +26654,8 @@
       }
     ],
     "death_place": "kod Našica . u čišćenju terena od ostataka ustaških jedinica",
-    "party": "SKOJ 1941, KPJ 1942"
+    "party": "SKOJ 1941, KPJ 1942",
+    "birth_date": "08.05.1923"
   },
   {
     "last_name": "Omorac",
@@ -28087,6 +28336,10 @@
         "source_page": 266,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Bosna",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -28270,6 +28523,10 @@
         "source_page": 423,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Divoš, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -28510,7 +28767,13 @@
         "source_page": 448,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "S.čairi-bosna"
   },
   {
     "last_name": "Petrović",
@@ -28724,6 +28987,10 @@
         "source_page": 304,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -28733,7 +29000,6 @@
     "fathers_name": "D",
     "full_name": "Petrović D Sava",
     "additional_info": "rođen u Deču, Srbin, zemljoradnik, stupio u NOVJ 1943, boracd poginuo 1944. kod Babine Grede u Slavoniji.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 94,
     "pdf_y": 483.2,
@@ -28757,6 +29023,10 @@
         "source_page": 266,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_year": "1917",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -29348,7 +29618,15 @@
         "source_page": 566,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Sremski front"
   },
   {
     "last_name": "Popov",
@@ -30335,7 +30613,12 @@
         "pdf_y_end": 486.5,
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Purkarević",
@@ -30514,7 +30797,15 @@
         "source_page": 151,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Čađavica"
   },
   {
     "last_name": "Putnik",
@@ -30725,7 +31016,15 @@
         "source_page": 352,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Velika obarska"
   },
   {
     "last_name": "Radaković",
@@ -31500,6 +31799,10 @@
         "pdf_y_end": 345.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "birth_place": "Osijek",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -31807,6 +32110,10 @@
         "source_page": 352,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Zelengora",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -31920,7 +32227,15 @@
         "source_page": 299,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Bih"
   },
   {
     "last_name": "Radovac",
@@ -32481,6 +32796,10 @@
         "source_page": 300,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34260,6 +34579,10 @@
         "source_page": 444,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34388,7 +34711,12 @@
         "pdf_x_end": 344.2,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Sekančić",
@@ -35078,7 +35406,6 @@
     "fathers_name": "Božidar",
     "full_name": "Slamarski Božidara Petar",
     "additional_info": "rođen 191^, Uljma, Srbin, zemljoradnik, stupio u NOVJ 1944, borac, poginuo 1945. u Moslavini.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 112,
     "pdf_y": 411.7,
@@ -35093,6 +35420,7 @@
     "rank": "borac",
     "pdf_x_end": 370.0,
     "pdf_x_left": 87.6,
+    "birth_year": "1914",
     "other_sources": [
       {
         "soldier_id": "9027010425",
@@ -35102,6 +35430,11 @@
         "source_page": 565,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Uljma",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
     ]
   },
   {
@@ -35473,7 +35806,8 @@
         "source_page": 201,
         "ref_book": "narodni-heroji-1982"
       }
-    ]
+    ],
+    "birth_date": "24.04.1915"
   },
   {
     "last_name": "Sogić",
@@ -35570,7 +35904,12 @@
         "pdf_y_end": 371.6,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Sokolović",
@@ -35670,7 +36009,12 @@
         "pdf_y_end": 94.8,
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Spasojević",
@@ -35855,7 +36199,13 @@
         "source_page": 608,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Aradac, Žitište",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Na bolmanu"
   },
   {
     "last_name": "Srdanović",
@@ -35886,7 +36236,15 @@
         "source_page": 287,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Stolice-bosna"
   },
   {
     "last_name": "Srdić",
@@ -36165,6 +36523,10 @@
         "source_page": 68,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Neštin, Beočin",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -36428,6 +36790,10 @@
         "source_page": 264,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -36560,6 +36926,10 @@
         "source_page": 11,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38274,6 +38644,10 @@
         "source_page": 308,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -39374,7 +39748,13 @@
         "source_page": 300,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Bosna"
   },
   {
     "last_name": "Tomrge",
@@ -39465,6 +39845,10 @@
         "source_page": 435,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Kuzmin, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -39626,7 +40010,15 @@
         "source_page": 379,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Lešnice"
   },
   {
     "last_name": "Tumbas",
@@ -39760,6 +40152,10 @@
         "source_page": 424,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Divoš, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -40608,6 +41004,10 @@
         "source_page": 424,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Divoš, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -40976,7 +41376,13 @@
         "source_page": 439,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Laćarak, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_date"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Vladisavljević",
@@ -40998,7 +41404,23 @@
     "rank": "borac",
     "pdf_x_end": 372.8,
     "pdf_x_left": 91.6,
-    "death_place": "Istočna Bosna"
+    "death_place": "Istočna Bosna",
+    "other_sources": [
+      {
+        "soldier_id": "9027008281",
+        "name": "Vladisavljević (Marko) Božidar",
+        "additional_info": "rođen 1914, Kuzmin (Sremska Mitrovica). Srbin, poginuo 1943. u NOBu, Istočna bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=435",
+        "source_page": 435,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "birth_place": "Kuzmin, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_date"
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Vladisavljević",
@@ -41230,6 +41652,10 @@
         "source_page": 439,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Laćarak, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -41263,6 +41689,10 @@
         "source_page": 165,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Virovitica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -41603,7 +42033,15 @@
         "source_page": 284,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Gavriće brdo"
   },
   {
     "last_name": "Vojkić",
@@ -41790,7 +42228,12 @@
         "pdf_y_end": 368.7,
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Vorkapić",
@@ -41845,6 +42288,10 @@
         "source_page": 445,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41887,7 +42334,6 @@
     "death_place": "Podravina",
     "pdf_x_end": 384.6,
     "pdf_x_left": 104.9,
-    "rank": "ekonom bataljona",
     "other_sources": [
       {
         "soldier_id": "0022003230",
@@ -42042,6 +42488,10 @@
         "source_page": 352,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Srebrenica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -42512,7 +42962,8 @@
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ],
-    "party": "KPJ 1936"
+    "party": "KPJ 1936",
+    "birth_date": "20.05.1912"
   },
   {
     "last_name": "Vujčić",
@@ -43011,7 +43462,12 @@
         "pdf_y_end": 409.3,
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Vuković",
@@ -43150,7 +43606,15 @@
         "pdf_y_end": 501.7,
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.09.1943",
+          "place": "Bijeljina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vuletić",
@@ -43669,7 +44133,17 @@
         "source_page": 446,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Ležimir, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Vojvođanska brigada"
   },
   {
     "last_name": "Zelenković",
@@ -44028,7 +44502,6 @@
     "death_place": "Novi Karlovci",
     "pdf_x_end": 369.8,
     "pdf_x_left": 89.6,
-    "rank": "vodni delegat",
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
@@ -44043,7 +44516,12 @@
         "pdf_y_end": 255.8,
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Ćirić",
@@ -44076,6 +44554,10 @@
         "source_page": 408,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_place": "Bešenovo, Srbobran",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -45174,7 +45656,13 @@
         "source_page": 278,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Popinci, Pećinci",
+    "borrowed": [
+      "birth_place",
+      "death_date"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Čukić",
@@ -45480,7 +45968,6 @@
     "fathers_name": "M",
     "full_name": "Đurić M Milorad",
     "additional_info": "rođen u Deču, Srbin, zemljoradnik, stupio u NOVJ 1943, borac, poginuo 1944. kod Kiseljaka.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 36,
     "pdf_y": 307.2,
@@ -45513,6 +46000,10 @@
         "source_page": 266,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -45852,7 +46343,15 @@
         "source_page": 93,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Vranješevci"
   },
   {
     "last_name": "Đurđević",
@@ -46546,7 +47045,6 @@
     "occupation": "zemljoradnik",
     "pdf_x_end": 365.1,
     "pdf_x_left": 84.4,
-    "rank": "zamenik komesara čete",
     "other_sources": [
       {
         "soldier_id": "0022003475",
@@ -46560,7 +47058,12 @@
         "pdf_y_end": 303.2,
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Šević",
@@ -46655,7 +47158,13 @@
         "source_page": 477,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Šuljam, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_date"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Šike",
@@ -46703,7 +47212,17 @@
         "source_page": 410,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Bešenovo, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Zelengora"
   },
   {
     "last_name": "Šimunovački",
@@ -47108,6 +47627,10 @@
         "source_page": 446,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -47320,6 +47843,10 @@
         "source_page": 453,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -47931,6 +48458,10 @@
         "source_page": 468,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date"
     ]
   },
   {

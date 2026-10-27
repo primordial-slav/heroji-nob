@@ -67,6 +67,7 @@ import resolved_places
 import standardize_fields
 import feminine_alias
 import entry_boxes
+import record_sources
 
 POSITION_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y')
 
@@ -259,8 +260,12 @@ FILL_ON_MERGE = False   # the unit being processed is on the site: a merge reads
 SOURCE_FIELDS = ('pdf_file', 'pdf_page', 'pdf_x', 'pdf_y') + entry_boxes.BOX_FIELDS + ('source_url', 'source_page')
 # what the soldier's entry takes from another book's entry when its own is empty
 MERGE_FILL = ('middle_name', 'fathers_name', 'birth_year') + tuple(structured.FIELDS)
-# and from another unit's record: not its battalion or company, which belong to that unit
-LINK_FILL = tuple(k for k in MERGE_FILL if k != 'unit_detail')
+# and from another unit's record: not its battalion or company, which belong to that unit, nor its duty there (the
+# Treća proleterska's "komandant bataljona" is no duty of his in the 13. proleterska; 2026-10-27). They are borrowed
+# (scripts/record_sources.py): put back on the next run, so a link taken off takes them along
+LINK_FILL = tuple(k for k in MERGE_FILL if k not in ('unit_detail', 'rank', 'middle_name', 'fathers_name'))
+# the father is kept for good, as before: the full name holds him, and merges and links check it by name
+LINK_FATHER = ('middle_name', 'fathers_name')
 
 
 def apply_merge(soldiers, correction):
@@ -309,12 +314,14 @@ def apply_merge(soldiers, correction):
     return soldiers, True
 
 
-def apply_references(refs, units):
+def apply_references(refs, units, fills=None):
     """Books across units (the Zbornik narodnih heroja): a soldier the book portrays gets its entry in other_sources,
     with ref_book, as a merged entry from another book (the text, and the page in the Poreklo library, or for a
     znaci.org book the PDF's page and the entry's box). The entries are read by the book's parser into
     data-extraction/{poreklo,znaci}/<book>-entries.json, matched by scripts/match_references.py, and rebuilt on every
-    run. units: {code: soldiers}, changed in place. Returns how many references were applied."""
+    run. units: {code: soldiers}, changed in place. fills: a list the census's and the column books' references are
+    appended to, (record, book, entry), whose columns fill the record's empty rows after the links
+    (record_sources.fill_from). Returns how many references were applied."""
     from match_references import entries_path
     books = {}
     by_id = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
@@ -343,6 +350,8 @@ def apply_references(refs, units):
             entry['role'] = e['role']        # 'activist': a mixed list's man of the movement who was no fighter
         entry['ref_book'] = c['ref_book']
         s['other_sources'] = s.get('other_sources', []) + [entry]
+        if fills is not None:
+            fills.append((s, c['ref_book'], e))
         applied += 1
     return applied
 
@@ -350,8 +359,9 @@ def apply_references(refs, units):
 def apply_links(links, units):
     """The same soldier in two units' books: each record keeps its place in its own unit and gets the other units'
     entries in other_sources (with unit_file, the other unit's data file; that record's own merged entries come
-    along), and fields it lacks are filled from them. Linked records form groups (a soldier in three units). The
-    linked entries are rebuilt on every run. units: {code: soldiers}, changed in place.
+    along), and fields it lacks are filled from them (borrowed: put back on the next run, and never passed on from a
+    record that borrowed them itself). Linked records form groups (a soldier in three units). The linked entries are
+    rebuilt on every run. units: {code: soldiers}, changed in place.
     Returns how many links were applied."""
     by_id = {s['soldier_id']: (code, s) for code, soldiers in units.items() for s in soldiers}
     for soldiers in units.values():
@@ -400,7 +410,11 @@ def apply_links(links, units):
                 linked.append({**entry, 'unit_file': unit_file})
                 linked += [{**e, 'unit_file': unit_file} for e in o.get('other_sources', ())
                            if not e.get('unit_file') and not e.get('ref_book')]   # a book across units: its own match
+                lent = record_sources.borrowed(o)
                 for k in LINK_FILL:
+                    if not s.get(k) and o.get(k) and k not in lent:
+                        record_sources.borrow(s, k, o[k])
+                for k in LINK_FATHER:
                     if not s.get(k) and o.get(k):
                         s[k] = o[k]
             s['other_sources'] = s.get('other_sources', []) + linked
@@ -639,6 +653,9 @@ def main():
         soldiers = json.loads(original_text)
         original_count = len(soldiers)
         original_boxes = entry_boxes.box_snapshot(soldiers)
+        # the fields borrowed from other units' records and the census on the last run go back: the unit's own books
+        # are read first, the links and references give them again after (scripts/record_sources.py)
+        put_back = record_sources.put_back(soldiers, MANUAL_FIELDS)
 
         global FILL_ON_MERGE
         FILL_ON_MERGE = json_path.name in live_files
@@ -672,7 +689,7 @@ def main():
             if women:
                 print(f"    Women's nicknames: 'zvana' in {women} record(s)")
 
-        if applied_count > 0 and json_path.name in live_files:
+        if (applied_count > 0 or put_back) and json_path.name in live_files:
             filled = structured.fill(soldiers)
             if filled:
                 print(f"    Structured fields read from the bio for {filled} record(s)")
@@ -717,22 +734,41 @@ def main():
     box_cache.save()
 
     # Books across units (references), before the links, which leave them out: the units processed in this run
+    fills = []
     if refs:
-        n = apply_references(refs, {code: res[2] for code, res in results.items()})
+        n = apply_references(refs, {code: res[2] for code, res in results.items()}, fills)
         print(f"\n  References from books across units: {n} applied")
         total_applied += n
 
     # The same soldier in two units (links): every unit file is read, the processed ones from this run
+    units = {code: res[2] for code, res in results.items()}
+    for code, cfg in BRIGADE_CONFIGS.items():
+        path = public_dir / cfg['json_file']
+        if code not in units and cfg['json_file'] in live_files and path.exists():
+            units[code] = json.loads(path.read_text(encoding='utf-8'))
     if links:
-        units = {code: res[2] for code, res in results.items()}
-        for code, cfg in BRIGADE_CONFIGS.items():
-            path = public_dir / cfg['json_file']
-            if code not in units and cfg['json_file'] in live_files and path.exists():
-                units[code] = json.loads(path.read_text(encoding='utf-8'))
         n = apply_links(links, units)
         print(f"\n  Links between units: {n} applied")
         total_applied += n
         total_skipped += len(links) - n
+
+    # The census's and the column books' columns fill the rows the unit's books and the linked records leave empty
+    filled = {}
+    for s, book, e in fills:
+        for k in record_sources.fill_from(s, book, e):
+            filled[k] = filled.get(k, 0) + 1
+    if filled:
+        print(f"\n  Rows filled from the census and the column books: "
+              f"{', '.join(f'{k} {n}' for k, n in sorted(filled.items()))}")
+
+    # The day of birth from any entry, and the birth years and deaths the record's books give otherwise ("ili")
+    by_id = {s['soldier_id']: (code, s) for code, soldiers in units.items() for s in soldiers}
+    told = {}
+    for code, (json_path, _, soldiers) in results.items():
+        if json_path.name in live_files:
+            for k, n in record_sources.apply(soldiers, by_id).items():
+                told[k] = told.get(k, 0) + n
+    print(f"\n  Birth days and the books' other years and deaths: {', '.join(f'{k} {n}' for k, n in told.items())}")
 
     for brigade_code, (json_path, original_text, soldiers) in results.items():
         soldiers[:] = [fix_names(s) for s in soldiers]

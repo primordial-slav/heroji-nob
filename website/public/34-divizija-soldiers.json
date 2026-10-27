@@ -79,7 +79,15 @@
         "pdf_y_end": 542.6,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.05.1943",
+          "place": "Plešivica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Albilin",
@@ -251,6 +259,10 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -281,7 +293,6 @@
     "fathers_name": "",
     "full_name": "Antolović Stjepan",
     "additional_info": "borac, T-PO, Čakanec, Vel. Gorica, poginuo Horvati, 20.06.44",
-    "birth_year": "",
     "birth_place": "Čakanec, Vel. Gorica",
     "death_date": "20.06.1944",
     "death_type": "poginuo",
@@ -317,7 +328,13 @@
         "pdf_x_left": 40.1,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Arambašić",
@@ -345,7 +362,6 @@
     "fathers_name": "",
     "full_name": "Arbanas Mijo",
     "additional_info": "Lomnica, Vel.Gorica, poginuo Šetek, 07.05.44",
-    "birth_year": "",
     "birth_place": "Lomnica, Vel.Gorica",
     "death_date": "07.05.1944",
     "death_type": "poginuo",
@@ -379,7 +395,21 @@
         "pdf_x_left": 39.4,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927",
+    "variants": {
+      "death": [
+        {
+          "date": "13.07.1944",
+          "place": "Šetek"
+        }
+      ]
+    }
   },
   {
     "last_name": "Arbanas",
@@ -444,7 +474,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000016",
     "pdf_x_end": 375.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9021009289",
@@ -478,6 +507,10 @@
         "pdf_y_end": 392.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -609,6 +642,10 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -747,6 +784,10 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -837,7 +878,13 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "U Posavini"
   },
   {
     "last_name": "Babojelić",
@@ -846,7 +893,6 @@
     "fathers_name": "F",
     "full_name": "Babojelić F Franjo",
     "additional_info": "borac, ŽB, Jarušje, Samobor, poginuo Kotari, 1944",
-    "birth_year": "",
     "birth_place": "Jarušje, Samobor",
     "death_type": "poginuo",
     "death_place": "Kotari",
@@ -869,7 +915,13 @@
         "source_page": 1765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1905"
   },
   {
     "last_name": "Badel",
@@ -932,7 +984,16 @@
         "pdf_y_end": 642.3,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.07.1920",
+    "variants": {
+      "death": [
+        {
+          "date": "22.04.1944",
+          "place": "kod Sv. Jane"
+        }
+      ]
+    }
   },
   {
     "last_name": "Badovinac",
@@ -1231,7 +1292,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000044",
     "pdf_x_end": 350.8,
-    "rank": "puškomitraljezac",
     "other_sources": [
       {
         "soldier_id": "0094000012",
@@ -1267,7 +1327,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000045",
     "pdf_x_end": 351.0,
-    "rank": "komandir čete",
     "other_sources": [
       {
         "soldier_id": "0094000017",
@@ -1387,6 +1446,10 @@
         "pdf_y_end": 527.3,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1467,7 +1530,19 @@
         "pdf_x_end": 489.0,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.04.1944",
+          "place": "Prekrižje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bastajić",
@@ -1510,6 +1585,10 @@
         "pdf_y_end": 237.1,
         "unit_file": "13-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1554,6 +1633,10 @@
         "pdf_y_end": 481.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1626,7 +1709,6 @@
     "fathers_name": "M",
     "full_name": "Bašić M Janko",
     "additional_info": "borac, 1944",
-    "birth_year": "",
     "death_type": "poginuo",
     "rank": "borac",
     "pdf_page": 3,
@@ -1646,7 +1728,17 @@
         "source_page": 1767,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Noršić Selo, Samobor",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_place": "Katan-samobor",
+    "birth_year": "1924"
   },
   {
     "last_name": "Begović",
@@ -1755,6 +1847,10 @@
         "pdf_y_end": 440.0,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1823,6 +1919,10 @@
         "pdf_x_end": 254.6,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1879,7 +1979,19 @@
         "pdf_y_end": 479.1,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.05.1945",
+          "place": "Zorkovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Belić",
@@ -2029,6 +2141,10 @@
         "pdf_y_end": 652.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2511,6 +2627,10 @@
         "pdf_y_end": 219.7,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2638,7 +2758,11 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bezjak",
@@ -2670,6 +2794,10 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2778,6 +2906,10 @@
         "source_page": 2956,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2846,6 +2978,10 @@
         "pdf_x_end": 440.3,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3011,7 +3147,15 @@
         "pdf_y_end": 509.9,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "14.10.1944",
+          "place": "kod Sv. Klare"
+        }
+      ]
+    }
   },
   {
     "last_name": "Blažina",
@@ -3055,6 +3199,10 @@
         "pdf_y_end": 548.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3087,6 +3235,10 @@
         "source_page": 1461,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Turčin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3207,6 +3359,10 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3312,6 +3468,10 @@
         "pdf_x_end": 448.0,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3368,6 +3528,10 @@
         "pdf_y_end": 674.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3448,6 +3612,10 @@
         "source_page": 509,
         "ref_book": "zrtve-rata-1964-slo"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3598,6 +3766,10 @@
         "source_page": 2385,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3674,6 +3846,10 @@
         "source_page": 805,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3748,6 +3924,10 @@
         "source_page": 2386,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3779,7 +3959,6 @@
     "fathers_name": "F",
     "full_name": "Bratelj F Tomo",
     "additional_info": "borac, Bratelji, Samobor, 09.1942",
-    "birth_year": "",
     "birth_place": "Bratelji, Samobor",
     "death_type": "poginuo",
     "rank": "borac",
@@ -3800,7 +3979,15 @@
         "source_page": 1763,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lipovac-samobor",
+    "birth_year": "1909"
   },
   {
     "last_name": "Bratušić",
@@ -3901,6 +4088,10 @@
         "source_page": 1764,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4145,6 +4336,10 @@
         "source_page": 2599,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4270,6 +4465,10 @@
         "pdf_y_end": 384.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4333,6 +4532,10 @@
         "pdf_y_end": 423.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4424,7 +4627,6 @@
     "death_type": "poginuo",
     "death_place": "Pojatno",
     "unit_detail": "Karlovačka udarna brigada",
-    "rank": "miner",
     "pdf_page": 3,
     "pdf_y": 138.68800000000005,
     "pdf_x": 29.3,
@@ -4467,7 +4669,11 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "occupation": "borac-miner"
+    "occupation": "borac-miner",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bubaš",
@@ -4489,7 +4695,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000142",
     "pdf_x_end": 357.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9028000330",
@@ -4549,7 +4754,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000143",
     "pdf_x_end": 357.4,
-    "rank": "komandir čete",
     "other_sources": [
       {
         "soldier_id": "9028000273",
@@ -4708,6 +4912,10 @@
         "source_page": 799,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4843,6 +5051,10 @@
         "pdf_y_end": 199.3,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4896,7 +5108,6 @@
     "fathers_name": "",
     "full_name": "Bučina Ivan",
     "additional_info": "borac, T-PO, Dmek, Vel. Gorica, poginuo Mraclin, 10.11.44",
-    "birth_year": "",
     "birth_place": "Dmek, Vel. Gorica",
     "death_date": "10.11.1944",
     "death_type": "poginuo",
@@ -4919,7 +5130,13 @@
         "source_page": 2380,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1908"
   },
   {
     "last_name": "Canjar",
@@ -5027,6 +5244,10 @@
         "pdf_y_end": 239.3,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5101,7 +5322,13 @@
         "source_page": 2378,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Pritišće-karlov"
   },
   {
     "last_name": "Carin",
@@ -5132,6 +5359,10 @@
         "source_page": 1764,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5188,6 +5419,10 @@
         "pdf_x_end": 239.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5220,6 +5455,10 @@
         "source_page": 1462,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5402,7 +5641,6 @@
     "fathers_name": "",
     "full_name": "Cerovski Josip",
     "additional_info": "borac, T-PO, Bukovčak, poginuo Kupčina, 13.02.44",
-    "birth_year": "",
     "birth_place": "Bukovčak",
     "death_date": "13.02.1944",
     "death_type": "poginuo",
@@ -5438,7 +5676,13 @@
         "pdf_x_left": 36.0,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Cerovski",
@@ -5514,6 +5758,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5546,6 +5794,10 @@
         "source_page": 2952,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5646,7 +5898,15 @@
         "pdf_x_left": 35.8,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "05.05.1944",
+          "place": "Slavetić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ciglar",
@@ -5655,7 +5915,6 @@
     "fathers_name": "A",
     "full_name": "Ciglar A Janez",
     "additional_info": "borac, ŽB, Breganjsko Selo, Brežice, 1944",
-    "birth_year": "",
     "birth_place": "Breganjsko Selo, Brežice",
     "death_type": "poginuo",
     "unit_detail": "Žumberačka brigada",
@@ -5677,7 +5936,15 @@
         "source_page": 13,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Karlovac",
+    "birth_year": "1915"
   },
   {
     "last_name": "Crljenica",
@@ -5774,6 +6041,10 @@
         "source_page": 1033,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5806,6 +6077,10 @@
         "source_page": 1902,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5837,7 +6112,6 @@
     "fathers_name": "",
     "full_name": "Cvetko Franjo",
     "additional_info": "borac, T-PO, Turopolje, poginuo Dmek, 08.02.45",
-    "birth_year": "",
     "birth_place": "Turopolje",
     "death_date": "08.02.1945",
     "death_type": "poginuo",
@@ -5873,7 +6147,13 @@
         "pdf_x_left": 35.8,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Cvetković",
@@ -5926,7 +6206,13 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kod ozlja"
   },
   {
     "last_name": "Cvetković",
@@ -6020,6 +6306,10 @@
         "source_page": 1770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6339,6 +6629,10 @@
         "source_page": 2033,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6421,7 +6715,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000211",
     "pdf_x_end": 347.5,
-    "rank": "zamjenik komandira čete",
     "death_date": "11.1943",
     "other_sources": [
       {
@@ -6490,6 +6783,10 @@
         "source_page": 1901,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6838,6 +7135,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6882,6 +7183,10 @@
         "pdf_y_end": 637.2,
         "unit_file": "13-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6969,6 +7274,10 @@
         "source_page": 2387,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7050,7 +7359,11 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "rank": "komesar čete, pomoćnik komesara čete"
+    "rank": "komesar čete, pomoćnik komesara čete",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Drvodelić",
@@ -7269,7 +7582,6 @@
     "fathers_name": "",
     "full_name": "Dulmin Zvonko",
     "additional_info": "borac, T-PO, Veleševec, Vel. Gorica, poginuo Dmek, 08.02.45",
-    "birth_year": "",
     "birth_place": "Veleševec, Vel. Gorica",
     "death_date": "08.02.1945",
     "death_type": "poginuo",
@@ -7313,7 +7625,13 @@
         "pdf_x_left": 35.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Dumbović",
@@ -7434,6 +7752,10 @@
         "pdf_y_end": 428.6,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7734,7 +8056,6 @@
     "fathers_name": "",
     "full_name": "Fabijanković Ivo",
     "additional_info": "borac, T-PO, Suša, Vel. Gorica, poginuo Turopolje, 17.12.44",
-    "birth_year": "",
     "birth_place": "Suša, Vel. Gorica",
     "death_date": "17.12.1944",
     "death_type": "poginuo",
@@ -7770,7 +8091,13 @@
         "pdf_x_left": 35.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1909"
   },
   {
     "last_name": "Fabijančić",
@@ -7779,7 +8106,6 @@
     "fathers_name": "",
     "full_name": "Fabijančić Antun",
     "additional_info": "borac, T-PO, Kuče, poginuo Kupčina, 22.08.43",
-    "birth_year": "",
     "birth_place": "Kuče",
     "death_date": "22.08.1943",
     "death_type": "poginuo",
@@ -7815,7 +8141,13 @@
         "pdf_x_left": 35.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Falat",
@@ -7824,7 +8156,6 @@
     "fathers_name": "",
     "full_name": "Falat Ivan",
     "additional_info": "borac, T-PO, Rakitovec, poginuo Čička Polj., 24.10.44",
-    "birth_year": "",
     "birth_place": "Rakitovec",
     "death_date": "24.10.1944",
     "death_type": "poginuo",
@@ -7860,7 +8191,13 @@
         "pdf_x_left": 35.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Feljan",
@@ -7958,6 +8295,10 @@
         "source_page": 1933,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8135,7 +8476,12 @@
         "pdf_y_end": 209.5,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Fjodor",
@@ -8377,6 +8723,10 @@
         "pdf_y_end": 623.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8433,6 +8783,10 @@
         "pdf_y_end": 662.0,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8523,6 +8877,10 @@
         "pdf_x_end": 469.6,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8559,7 +8917,12 @@
         "pdf_y_end": 238.1,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Fudurić",
@@ -8639,6 +9002,10 @@
         "pdf_y_end": 589.7,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8730,7 +9097,19 @@
         "pdf_y_end": 676.8,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.10.1944",
+          "place": "D. Kupčina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Fukat",
@@ -8840,6 +9219,10 @@
         "pdf_y_end": 133.2,
         "unit_file": "13-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8966,6 +9349,10 @@
         "source_page": 2955,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8997,7 +9384,13 @@
         "source_page": 1462,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Dvorišće"
   },
   {
     "last_name": "Furko",
@@ -9169,6 +9562,10 @@
         "source_page": 2385,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9222,6 +9619,10 @@
         "source_page": 1770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9476,7 +9877,12 @@
         "pdf_x_end": 255.8,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1907"
+      ]
+    }
   },
   {
     "last_name": "Gojišić",
@@ -9651,6 +10057,10 @@
         "pdf_y_end": 506.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9724,7 +10134,6 @@
     "death_type": "poginuo",
     "death_place": "Rečica",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 8,
     "pdf_y": 273.788,
     "pdf_x": 18.0,
@@ -9794,7 +10203,6 @@
     "death_type": "poginuo",
     "death_place": "Bosanci",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 8,
     "pdf_y": 286.288,
     "pdf_x": 17.8,
@@ -9923,7 +10331,12 @@
         "pdf_y_end": 307.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1902"
+      ]
+    }
   },
   {
     "last_name": "Grabar",
@@ -9971,7 +10384,12 @@
         "pdf_y_end": 366.8,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1909"
+      ]
+    }
   },
   {
     "last_name": "Grahovac",
@@ -10015,6 +10433,10 @@
         "pdf_y_end": 699.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10071,6 +10493,10 @@
         "pdf_x_end": 263.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10219,6 +10645,10 @@
         "pdf_x_end": 248.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10338,6 +10768,10 @@
         "source_page": 2389,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10369,7 +10803,6 @@
     "fathers_name": "",
     "full_name": "Grgar Đuro",
     "additional_info": "borac, T-PO, Ribnica, 08.43",
-    "birth_year": "",
     "birth_place": "Ribnica",
     "death_type": "poginuo",
     "unit_detail": "Turopoljsko-posavski partizanski odred",
@@ -10405,7 +10838,13 @@
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
     ],
-    "death_place": "VIII"
+    "death_place": "VIII",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Grgetić",
@@ -10448,7 +10887,33 @@
     "pdf_y_end": 369.2,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000329",
-    "pdf_x_end": 345.7
+    "pdf_x_end": 345.7,
+    "other_sources": [
+      {
+        "soldier_id": "0094000238",
+        "name": "Grgić Jure Stjepan",
+        "additional_info": "1921, D. Oštri Vrh, Ozalj. Stupio u NOV siječnja 1944, borac Prateće čete brig. Poginuo kod Donje Kupčine 6. 9.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 283.4,
+        "pdf_y": 299.4,
+        "pdf_x_end": 450.4,
+        "pdf_y_end": 342.7,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000237",
+        "name": "Grgić J Stjepan",
+        "additional_info": "1921, D. Oštri Vrh, Ozalj. Stupio u NOV siječnja 1944, borac Prateće čete brig. Poginuo kod Donje Kupčine 6. 9.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 6,
+        "pdf_x": 93.1,
+        "pdf_y": 645.7,
+        "pdf_y_end": 687.9,
+        "pdf_x_end": 254.8,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grgos",
@@ -10480,6 +10945,10 @@
         "source_page": 1764,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10584,6 +11053,10 @@
         "pdf_x_end": 450.6,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10844,7 +11317,12 @@
         "pdf_y_end": 457.8,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Grubešić",
@@ -10853,7 +11331,6 @@
     "fathers_name": "",
     "full_name": "Grubešić Ivan",
     "additional_info": "borac, FOS, Pos. Bregi, Dugo Selo, poginuo Kraljevec, 06.03.44",
-    "birth_year": "",
     "birth_place": "Pos. Bregi, Dugo Selo",
     "death_date": "06.03.1944",
     "death_type": "poginuo",
@@ -10876,7 +11353,13 @@
         "source_page": 792,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Grubić",
@@ -11118,6 +11601,10 @@
         "source_page": 797,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11254,7 +11741,6 @@
     "fathers_name": "",
     "full_name": "Hapač Ivan",
     "additional_info": "borac, T-PO, Sćitarjevo, Vel. Gorica, poginuo Ruča, 1943",
-    "birth_year": "",
     "birth_place": "Sćitarjevo, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Ruča",
@@ -11290,7 +11776,13 @@
         "pdf_x_left": 36.0,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Hapač",
@@ -11299,7 +11791,6 @@
     "fathers_name": "",
     "full_name": "Hapač Nikola",
     "additional_info": "borac, T-PO, Sčitarjevo, Vel. Gorica, 29.04.44",
-    "birth_year": "",
     "birth_place": "Sčitarjevo, Vel. Gorica",
     "death_date": "29.04.1944",
     "death_type": "poginuo",
@@ -11334,7 +11825,15 @@
         "pdf_x_left": 36.0,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Suša",
+    "birth_year": "1926"
   },
   {
     "last_name": "Harapin",
@@ -11388,6 +11887,10 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11397,7 +11900,6 @@
     "fathers_name": "",
     "full_name": "Hačić Slavko",
     "additional_info": "borac, T-PO, Turopolje, poginuo Zdenčina, 22.08.43",
-    "birth_year": "",
     "birth_place": "Turopolje",
     "death_date": "22.08.1943",
     "death_type": "poginuo",
@@ -11433,7 +11935,13 @@
         "pdf_x_left": 35.8,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Hegedić",
@@ -11594,6 +12102,10 @@
         "source_page": 798,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11673,7 +12185,11 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "rank": "zamjenik komesara"
+    "rank": "zamjenik komesara",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Herceg",
@@ -11775,6 +12291,10 @@
         "source_page": 2251,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11818,6 +12338,10 @@
         "pdf_y_end": 261.2,
         "ref_book": "hak-15-duga-resa"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11907,6 +12431,10 @@
         "pdf_x_left": 204.3,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12231,7 +12759,13 @@
         "source_page": 809,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Pribić"
   },
   {
     "last_name": "Hranilović",
@@ -12324,6 +12858,10 @@
         "source_page": 2965,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12421,6 +12959,10 @@
         "source_page": 2382,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12453,6 +12995,10 @@
         "source_page": 807,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12607,6 +13153,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12661,6 +13211,10 @@
         "source_page": 2390,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12729,6 +13283,10 @@
         "pdf_y_end": 356.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12879,6 +13437,10 @@
         "pdf_y_end": 401.1,
         "unit_file": "16-slavonska-omladinska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13130,7 +13692,6 @@
     "death_type": "poginuo",
     "death_place": "Greda",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 10,
     "pdf_y": 284.50399999999996,
     "pdf_x": 17.1,
@@ -13209,6 +13770,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13277,6 +13842,10 @@
         "source_page": 2389,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13362,7 +13931,19 @@
         "pdf_y_end": 622.3,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.01.1945",
+          "place": "Ponikve"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ivša",
@@ -13416,6 +13997,10 @@
         "source_page": 2952,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13492,6 +14077,10 @@
         "source_page": 2952,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13620,7 +14209,16 @@
         "pdf_y_end": 284.4,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Jakac",
@@ -13788,6 +14386,10 @@
         "source_page": 1465,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13856,6 +14458,10 @@
         "source_page": 2385,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13924,7 +14530,6 @@
     "fathers_name": "",
     "full_name": "Janječić Juraj",
     "additional_info": "borac, T-PO, Mićevec, Vel. Gorica, poginuo D. Lomnica, 10.11.44",
-    "birth_year": "",
     "birth_place": "Mićevec, Vel. Gorica",
     "death_date": "10.11.1944",
     "death_type": "poginuo",
@@ -13960,7 +14565,13 @@
         "pdf_x_left": 36.3,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Janjić",
@@ -14004,7 +14615,15 @@
         "source_page": 267,
         "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.02.1943",
+          "place": "Žumberak"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janko",
@@ -14072,6 +14691,10 @@
         "source_page": 2387,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14108,7 +14731,12 @@
         "pdf_y_end": 312.5,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -14139,7 +14767,13 @@
         "source_page": 2387,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Krašić"
   },
   {
     "last_name": "Janković",
@@ -14199,7 +14833,12 @@
         "pdf_x_end": 471.3,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1915"
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -14254,7 +14893,6 @@
     "death_type": "poginuo",
     "death_place": "Sv. Jana",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 11,
     "pdf_y": 111.50400000000002,
     "pdf_x": 34.5,
@@ -14599,6 +15237,10 @@
         "source_page": 808,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14770,6 +15412,10 @@
         "source_page": 1902,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15284,7 +15930,6 @@
     "fathers_name": "S",
     "full_name": "Kapec S Mijo",
     "additional_info": "vodnik, FOS, Auguštovac, Vel. Gorica, u NOB 1944, poginuo Gener. Stol, 17.04.45",
-    "birth_year": "",
     "birth_place": "Auguštovac, Vel. Gorica",
     "death_date": "17.04.1945",
     "death_type": "poginuo",
@@ -15307,7 +15952,13 @@
         "source_page": 2378,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Karaš",
@@ -15435,6 +16086,10 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15444,7 +16099,6 @@
     "fathers_name": "",
     "full_name": "Karnas Stjepan",
     "additional_info": "borac, T-PO, Lukavec, Vel. Gorica, poginuo Lukavec, 07.12.43",
-    "birth_year": "",
     "birth_place": "Lukavec, Vel. Gorica",
     "death_date": "07.12.1943",
     "death_type": "poginuo",
@@ -15480,7 +16134,13 @@
         "pdf_x_left": 36.3,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Kasunić",
@@ -15645,6 +16305,10 @@
         "pdf_x_end": 441.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15720,6 +16384,10 @@
         "source_page": 1765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15796,6 +16464,10 @@
         "source_page": 801,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15849,7 +16521,13 @@
         "source_page": 795,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Karlovac"
   },
   {
     "last_name": "Kenig",
@@ -16080,7 +16758,18 @@
         "pdf_y_end": 373.9,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "30.10.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kirić",
@@ -16166,6 +16855,10 @@
         "pdf_y_end": 499.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16198,6 +16891,10 @@
         "source_page": 1901,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16276,6 +16973,10 @@
         "pdf_x_end": 294.7,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16312,7 +17013,12 @@
         "pdf_y_end": 537.0,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Klenović",
@@ -16321,7 +17027,6 @@
     "fathers_name": "",
     "full_name": "Klenović Ivan",
     "additional_info": "borac, T-PO, Mićevec, Vel. Gorica, poginuo Cazin, 17.11.44",
-    "birth_year": "",
     "birth_place": "Mićevec, Vel. Gorica",
     "death_date": "17.11.1944",
     "death_type": "poginuo",
@@ -16357,7 +17062,13 @@
         "pdf_x_left": 36.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Klepec",
@@ -16432,6 +17143,10 @@
         "pdf_y_end": 615.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16524,7 +17239,16 @@
         "pdf_y_end": 535.9,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Knezetić",
@@ -16752,6 +17476,10 @@
         "source_page": 1929,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16784,6 +17512,10 @@
         "source_page": 801,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16812,7 +17544,6 @@
     "fathers_name": "",
     "full_name": "Koletić Petar",
     "additional_info": "borac, T-PO, Ruča, poginuo L. Stefanki, 07.05.44",
-    "birth_year": "",
     "birth_place": "Ruča",
     "death_date": "07.05.1944",
     "death_type": "poginuo",
@@ -16848,7 +17579,13 @@
         "pdf_x_left": 205.4,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1911"
   },
   {
     "last_name": "Kolić",
@@ -16916,6 +17653,10 @@
         "pdf_x_end": 292.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17112,6 +17853,10 @@
         "source_page": 2385,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17185,6 +17930,10 @@
         "source_page": 2954,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17194,7 +17943,6 @@
     "fathers_name": "",
     "full_name": "Korenika Juraj",
     "additional_info": "borac, T-PO, Hrašće, Vel. Gorica, poginuo Vukojevac, 09.43",
-    "birth_year": "",
     "birth_place": "Hrašće, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Vukojevac",
@@ -17230,7 +17978,13 @@
         "pdf_x_left": 36.3,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1900"
   },
   {
     "last_name": "Kos",
@@ -17262,6 +18016,10 @@
         "source_page": 1766,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17271,7 +18029,6 @@
     "fathers_name": "",
     "full_name": "Kos Stjepan",
     "additional_info": "borac, T-PO, Dubranec, poginuo Dubranec, 14.03.44",
-    "birth_year": "",
     "birth_place": "Dubranec",
     "death_date": "14.03.1944",
     "death_type": "poginuo",
@@ -17307,7 +18064,13 @@
         "pdf_x_left": 205.2,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Kos",
@@ -17339,6 +18102,10 @@
         "source_page": 2380,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17386,7 +18153,6 @@
     "death_date": "03.07.1944",
     "death_type": "umro",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 12,
     "pdf_y": 520.0039999999999,
     "pdf_x": 14.2,
@@ -17482,7 +18248,6 @@
     "fathers_name": "",
     "full_name": "Kosović Ivan",
     "additional_info": "borac, T-PO, G. Podotočje, poginuo Gen. Stol, 05.05.45",
-    "birth_year": "",
     "birth_place": "G. Podotočje",
     "death_date": "05.05.1945",
     "death_type": "poginuo",
@@ -17518,7 +18283,13 @@
         "pdf_x_left": 205.2,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Kotaranin",
@@ -17571,7 +18342,6 @@
     "fathers_name": "",
     "full_name": "Kotrman Josip",
     "additional_info": "borac, T-PO, Kobilić, poginuo Martin. Ves, 17.03.45",
-    "birth_year": "",
     "birth_place": "Kobilić",
     "death_date": "17.03.1945",
     "death_type": "poginuo",
@@ -17607,7 +18377,13 @@
         "pdf_x_left": 205.9,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Kovač",
@@ -17672,7 +18448,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000557",
     "pdf_x_end": 346.5,
-    "rank": "puškomitraljezac",
     "other_sources": [
       {
         "soldier_id": "0037000519",
@@ -17743,7 +18518,12 @@
         "pdf_y_end": 343.9,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Kovačević",
@@ -17775,6 +18555,10 @@
         "source_page": 1770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17870,6 +18654,10 @@
         "source_page": 808,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17901,7 +18689,6 @@
     "fathers_name": "",
     "full_name": "Kovačić Franjo",
     "additional_info": "borac, T-PO, Mraclin, poginuo Pisarovina, 18.07.44",
-    "birth_year": "",
     "birth_place": "Mraclin",
     "death_date": "18.07.1944",
     "death_type": "poginuo",
@@ -17937,7 +18724,13 @@
         "pdf_x_left": 205.9,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Kovačić",
@@ -18010,6 +18803,10 @@
         "source_page": 2956,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18042,6 +18839,10 @@
         "source_page": 1768,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18073,7 +18874,6 @@
     "fathers_name": "",
     "full_name": "Kovačić Mijo",
     "additional_info": "borac, T-PO, Lipnica, Dubranec, 22.02.44",
-    "birth_year": "",
     "birth_place": "Lipnica, Dubranec",
     "death_date": "22.02.1944",
     "death_type": "poginuo",
@@ -18108,7 +18908,15 @@
         "pdf_x_left": 205.9,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lomnica,v.goric",
+    "birth_year": "1921"
   },
   {
     "last_name": "Kovačić",
@@ -18330,6 +19138,10 @@
         "pdf_y_end": 472.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18398,6 +19210,10 @@
         "pdf_y_end": 545.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18500,7 +19316,6 @@
     "fathers_name": "",
     "full_name": "Kramarić Josip",
     "additional_info": "borac, T-PO, Ruča, poginuo D. Trebarj., 16.10.43",
-    "birth_year": "",
     "birth_place": "Ruča",
     "death_date": "16.10.1943",
     "death_type": "poginuo",
@@ -18536,7 +19351,13 @@
         "pdf_x_left": 205.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Kramarić",
@@ -18867,6 +19688,10 @@
         "source_page": 1935,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18995,6 +19820,10 @@
         "source_page": 810,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19267,6 +20096,10 @@
         "source_page": 1910,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19319,7 +20152,6 @@
     "fathers_name": "",
     "full_name": "Kunić Stjepan",
     "additional_info": "borac, T-PO, Velika Mlaka, Vel. Gorica, poginuo Dubranec, 15.10.44",
-    "birth_year": "",
     "birth_place": "Velika Mlaka, Vel. Gorica",
     "death_date": "15.10.1944",
     "death_type": "poginuo",
@@ -19355,7 +20187,13 @@
         "pdf_x_left": 205.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Kurpis",
@@ -19431,6 +20269,10 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19520,6 +20362,10 @@
         "pdf_x_end": 467.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19529,7 +20375,6 @@
     "fathers_name": "",
     "full_name": "Kučić Juraj",
     "additional_info": "borac, T-PO, Gudci, Vel. Gorica, poginuo Desni Stefa., 04.44",
-    "birth_year": "",
     "birth_place": "Gudci, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Desni Stefa.",
@@ -19565,7 +20410,13 @@
         "pdf_x_left": 205.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Kušević",
@@ -19639,6 +20490,10 @@
         "source_page": 2380,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19722,7 +20577,15 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "unit_detail": "Karlovačka brigada"
+    "unit_detail": "Karlovačka brigada",
+    "variants": {
+      "death": [
+        {
+          "date": "01.01.1945",
+          "place": "Vukojevci"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kužetić",
@@ -19775,7 +20638,6 @@
     "fathers_name": "",
     "full_name": "Lacković Tomo",
     "additional_info": "borac, T-PO, Velika Mlaka, Vel. Gorica, poginuo Jamnica, 19.04.44",
-    "birth_year": "",
     "birth_place": "Velika Mlaka, Vel. Gorica",
     "death_date": "19.04.1944",
     "death_type": "poginuo",
@@ -19811,7 +20673,13 @@
         "pdf_x_left": 205.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1907"
   },
   {
     "last_name": "Ladika",
@@ -19891,6 +20759,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19998,7 +20870,12 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "rank": "komandir čete"
+    "rank": "komandir čete",
+    "variants": {
+      "born": [
+        "1907"
+      ]
+    }
   },
   {
     "last_name": "Latarcov",
@@ -20088,6 +20965,10 @@
         "pdf_y_end": 281.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20371,7 +21252,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000642",
     "pdf_x_end": 346.9,
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9021009458",
@@ -20417,6 +21297,10 @@
         "pdf_x_end": 260.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20540,7 +21424,6 @@
     "fathers_name": "",
     "full_name": "Lipar Dragutin",
     "additional_info": "borac, T-PO, D. Lomnica, Vel. Gorica, poginuo Pisarovina, 11.43",
-    "birth_year": "",
     "birth_place": "D. Lomnica, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Pisarovina",
@@ -20576,7 +21459,13 @@
         "pdf_x_left": 205.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Lisec",
@@ -20585,7 +21474,6 @@
     "fathers_name": "J",
     "full_name": "Lisec J Mijo",
     "additional_info": "borac, ŽB, Galgovo, Samobor, poginuo Hasan-Breg, 12.12.44",
-    "birth_year": "",
     "birth_place": "Galgovo, Samobor",
     "death_date": "12.12.1944",
     "death_type": "poginuo",
@@ -20608,7 +21496,13 @@
         "source_page": 1764,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Listar",
@@ -20652,6 +21546,10 @@
         "pdf_y_end": 192.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20727,6 +21625,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20904,7 +21806,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000659",
     "pdf_x_end": 370.2,
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9021029255",
@@ -20964,6 +21865,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21113,6 +22018,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21145,6 +22054,10 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21375,7 +22288,6 @@
     "fathers_name": "",
     "full_name": "Lukšič Franjo",
     "additional_info": "borac, ŽB, Šipački Breg, Samobor, poginuo Plešivica, 29.02.44",
-    "birth_year": "",
     "birth_place": "Šipački Breg, Samobor",
     "death_date": "29.02.1944",
     "death_type": "poginuo",
@@ -21398,7 +22310,13 @@
         "source_page": 1770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Lučan",
@@ -21535,6 +22453,10 @@
         "pdf_x_end": 298.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21626,7 +22548,6 @@
     "fathers_name": "S",
     "full_name": "Mahečić S Dragutin",
     "additional_info": "borac, KB, Petrovina, Jastrebarsko, poginuo Breznik, 04.09.44",
-    "birth_year": "",
     "birth_place": "Petrovina, Jastrebarsko",
     "death_date": "04.09.1944",
     "death_type": "poginuo",
@@ -21649,7 +22570,13 @@
         "source_page": 806,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Mahović",
@@ -21681,6 +22608,10 @@
         "source_page": 1770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21814,6 +22745,10 @@
         "source_page": 802,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21858,7 +22793,19 @@
         "pdf_y_end": 572.6,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.04.1945",
+          "place": "Glina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Malešević",
@@ -22018,7 +22965,19 @@
         "pdf_y_end": 446.6,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.12.1944",
+          "place": "Lazina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Malović",
@@ -22110,7 +23069,19 @@
         "pdf_y_end": 587.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.12.1944",
+          "place": "Lazina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Malović",
@@ -22192,6 +23163,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22268,6 +23243,10 @@
         "source_page": 1929,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22368,7 +23347,11 @@
         "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "death_place": "D. Kupčina"
+    "death_place": "D. Kupčina",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Maretić",
@@ -22424,6 +23407,10 @@
         "pdf_y_end": 611.8,
         "unit_file": "34-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22499,6 +23486,10 @@
         "source_page": 2588,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22594,6 +23585,10 @@
         "source_page": 2956,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22626,6 +23621,10 @@
         "source_page": 1933,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22658,6 +23657,10 @@
         "source_page": 1933,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22750,6 +23753,10 @@
         "source_page": 2378,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22850,6 +23857,10 @@
         "pdf_y_end": 327.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22904,6 +23915,10 @@
         "source_page": 1903,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22936,6 +23951,10 @@
         "source_page": 1903,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23104,6 +24123,10 @@
         "source_page": 2390,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23156,7 +24179,6 @@
     "fathers_name": "",
     "full_name": "Maslić Dušan",
     "additional_info": "borac, FOS, Lasinja, Vrginmost, poginuo Kraljevec, 06.03.44",
-    "birth_year": "",
     "birth_place": "Lasinja, Vrginmost",
     "death_date": "06.03.1944",
     "death_type": "poginuo",
@@ -23179,7 +24201,13 @@
         "source_page": 2684,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Mataković",
@@ -23712,7 +24740,19 @@
         "pdf_y_end": 365.4,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.11.1942",
+          "place": "kod N. Sela, Žumberak"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mejaški",
@@ -23727,7 +24767,6 @@
     "death_type": "poginuo",
     "death_place": "Odra, Sisak",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 16,
     "pdf_y": 726.604,
     "pdf_x": 200.2,
@@ -23782,6 +24821,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23836,6 +24879,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23971,6 +25018,10 @@
         "pdf_y_end": 223.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24169,7 +25220,6 @@
     "fathers_name": "",
     "full_name": "Mihordin Mijo",
     "additional_info": "borac, T-PO, Bukevje, Vel. Gorica, poginuo Mraclin. š., 24.05.45",
-    "birth_year": "",
     "birth_place": "Bukevje, Vel. Gorica",
     "death_date": "24.05.1945",
     "death_type": "poginuo",
@@ -24205,7 +25255,13 @@
         "pdf_x_left": 205.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Mihordin",
@@ -24259,6 +25315,10 @@
         "source_page": 2389,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24434,6 +25494,10 @@
         "source_page": 2384,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24550,6 +25614,10 @@
         "pdf_y_end": 274.5,
         "unit_file": "13-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24581,7 +25649,6 @@
     "fathers_name": "P",
     "full_name": "Milaković P Petar",
     "additional_info": "borac, ŽB, Osredak, Samobor, 12.43",
-    "birth_year": "",
     "birth_place": "Osredak, Samobor",
     "death_type": "poginuo",
     "unit_detail": "Žumberačka brigada",
@@ -24603,7 +25670,15 @@
         "source_page": 1768,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Radatovići",
+    "birth_year": "1923"
   },
   {
     "last_name": "Milašić",
@@ -25082,7 +26157,8 @@
         "pdf_y_end": 612.3,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.10.1919"
   },
   {
     "last_name": "Mraović-Simić",
@@ -25279,7 +26355,6 @@
     "fathers_name": "",
     "full_name": "Munić Dragutin",
     "additional_info": "borac, T-PO, Bukevje, Vel. Gorica, poginuo Trebovac, 20.10.44",
-    "birth_year": "",
     "birth_place": "Bukevje, Vel. Gorica",
     "death_date": "20.10.1944",
     "death_type": "poginuo",
@@ -25315,7 +26390,13 @@
         "pdf_x_left": 205.2,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Munić",
@@ -25344,7 +26425,6 @@
     "fathers_name": "",
     "full_name": "Munjić Nikola",
     "additional_info": "borac, T-PO, Vukomerić, Vel. Gorica, poginuo Hasan-Breg, 23.04.44",
-    "birth_year": "",
     "birth_place": "Vukomerić, Vel. Gorica",
     "death_date": "23.04.1944",
     "death_type": "poginuo",
@@ -25380,7 +26460,13 @@
         "pdf_x_left": 205.0,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Mus",
@@ -25436,6 +26522,10 @@
         "pdf_x_end": 306.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25527,7 +26617,6 @@
     "fathers_name": "J",
     "full_name": "Mužar J Mijo",
     "additional_info": "borac, ŽB, Galin, Ozalj, poginuo Rečica, Velj. 45",
-    "birth_year": "",
     "birth_place": "Galin, Ozalj",
     "death_type": "poginuo",
     "death_place": "Rečica",
@@ -25550,7 +26639,13 @@
         "source_page": 1461,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1909"
   },
   {
     "last_name": "Muže",
@@ -25607,7 +26702,15 @@
         "pdf_y_end": 548.4,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.02.1945",
+          "place": "Bogodol, Mostar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mužić",
@@ -25639,6 +26742,10 @@
         "source_page": 2387,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25834,7 +26941,13 @@
         "pdf_y_end": 382.6,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Vinica-slovenij"
   },
   {
     "last_name": "Nestić",
@@ -25994,7 +27107,21 @@
     "pdf_y_end": 346.1,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000818",
-    "pdf_x_end": 350.8
+    "pdf_x_end": 350.8,
+    "other_sources": [
+      {
+        "soldier_id": "0094000559",
+        "name": "Ninković A Mihajlo",
+        "additional_info": "19117, Donja Dubica, Gradačac. Stupio u NOV 19. 9. 1944, borac 2. bat. Poginuo kod Donje Kupčine 7. 3.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 31,
+        "pdf_x": 139.0,
+        "pdf_y": 196.9,
+        "pdf_x_end": 296.0,
+        "pdf_y_end": 239.7,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nježić",
@@ -26083,7 +27210,13 @@
         "source_page": 2389,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Draganić"
   },
   {
     "last_name": "Noršić",
@@ -26092,7 +27225,6 @@
     "fathers_name": "",
     "full_name": "Noršić Stjepan",
     "additional_info": "borac, FOS, Velika Gorica, poginuo Kraljevec, 06.09.44",
-    "birth_year": "",
     "birth_place": "Velika Gorica",
     "death_date": "06.09.1944",
     "death_type": "poginuo",
@@ -26115,7 +27247,13 @@
         "source_page": 2386,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Nosetić",
@@ -26204,6 +27342,10 @@
         "pdf_x_end": 296.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26320,6 +27462,10 @@
         "pdf_x_end": 482.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26352,6 +27498,10 @@
         "source_page": 795,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26481,6 +27631,10 @@
         "source_page": 801,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26955,6 +28109,10 @@
         "source_page": 1901,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27055,6 +28213,10 @@
         "pdf_y_end": 597.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27131,6 +28293,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27207,6 +28373,10 @@
         "pdf_x_left": 205.0,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27488,7 +28658,19 @@
         "pdf_y_end": 447.4,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.01.1945",
+          "place": "kod Grede (Sisak)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -27520,6 +28702,10 @@
         "source_page": 808,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27573,7 +28759,6 @@
     "fathers_name": "",
     "full_name": "Pejak Ivan",
     "additional_info": "borac, ZPO, Čakanec, Kravarsko, poginuo Kravarsko, 07.05.44",
-    "birth_year": "",
     "birth_place": "Čakanec, Kravarsko",
     "death_date": "07.05.1944",
     "death_type": "poginuo",
@@ -27621,7 +28806,13 @@
         "pdf_x_left": 204.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Pejak",
@@ -27630,7 +28821,6 @@
     "fathers_name": "",
     "full_name": "Pejak Ivan",
     "additional_info": "borac, T-PO, Čakanec, poginuo Lukinić Brdc), 07.05.44",
-    "birth_year": "",
     "birth_place": "Čakanec",
     "death_date": "07.05.1944",
     "death_type": "poginuo",
@@ -27678,7 +28868,13 @@
         "pdf_x_left": 204.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Pejak",
@@ -27710,6 +28906,10 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27773,6 +28973,10 @@
         "pdf_y_end": 477.5,
         "ref_book": "hak-15-duga-resa"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27976,7 +29180,12 @@
         "pdf_y_end": 456.7,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Pereško",
@@ -28259,6 +29468,10 @@
         "source_page": 2386,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -28348,7 +29561,13 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Breganjsko selo"
   },
   {
     "last_name": "Petrić",
@@ -28438,6 +29657,10 @@
         "source_page": 1918,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -28702,7 +29925,6 @@
     "birth_place": "Čečavac Slav. Požega",
     "death_type": "poginuo",
     "unit_detail": "Omladinska brigada „Joža Vlahović“",
-    "rank": "komandir čete",
     "pdf_page": 19,
     "pdf_y": 148.90399999999988,
     "pdf_x": 48.0,
@@ -28945,6 +30167,10 @@
         "pdf_x_end": 440.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29013,6 +30239,10 @@
         "pdf_x_end": 443.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29412,7 +30642,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000923",
     "pdf_x_end": 349.6,
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "0094000639",
@@ -29482,6 +30711,10 @@
         "pdf_y_end": 279.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29526,6 +30759,10 @@
         "pdf_y_end": 401.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29594,6 +30831,10 @@
         "source_page": 1464,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29789,6 +31030,10 @@
         "source_page": 808,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29973,6 +31218,10 @@
         "source_page": 1911,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30049,6 +31298,10 @@
         "source_page": 906,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30177,6 +31430,10 @@
         "pdf_y_end": 515.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30296,6 +31553,10 @@
         "source_page": 799,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30389,7 +31650,6 @@
     "fathers_name": "",
     "full_name": "Prinčić Zvonko",
     "additional_info": "borac, OBJV, Zagreb, poginuo Draganići, 19.03.44",
-    "birth_year": "",
     "birth_place": "Zagreb",
     "death_date": "19.03.1944",
     "death_type": "poginuo",
@@ -30424,7 +31684,13 @@
         "pdf_y_end": 418.2,
         "unit_file": "16-slavonska-omladinska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Prkulabić",
@@ -30584,6 +31850,10 @@
         "pdf_x_end": 486.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30698,6 +31968,10 @@
         "source_page": 2953,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30797,6 +32071,10 @@
         "source_page": 808,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30969,7 +32247,6 @@
     "fathers_name": "",
     "full_name": "Radičević Đuro",
     "additional_info": "borac, T-PO, Čićka Poljana, poginuo Čakanec, 03.44",
-    "birth_year": "",
     "birth_place": "Čićka Poljana",
     "death_type": "poginuo",
     "death_place": "Čakanec",
@@ -31005,7 +32282,13 @@
         "pdf_x_left": 204.7,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Radmanović",
@@ -31221,6 +32504,10 @@
         "pdf_y_end": 232.3,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31289,6 +32576,10 @@
         "source_page": 1929,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31420,6 +32711,10 @@
         "source_page": 804,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31452,6 +32747,10 @@
         "source_page": 804,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31570,7 +32869,15 @@
         "source_page": 1763,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Kordun"
   },
   {
     "last_name": "Ratkaj",
@@ -31614,6 +32921,10 @@
         "pdf_y_end": 311.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31896,6 +33207,10 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31948,7 +33263,6 @@
     "fathers_name": "",
     "full_name": "Rešetar Stjepan",
     "additional_info": "borac, ŽB, Samobor, poginuo Plešivica, 11.03.44",
-    "birth_year": "",
     "birth_place": "Samobor",
     "death_date": "11.03.1944",
     "death_type": "poginuo",
@@ -31971,7 +33285,13 @@
         "source_page": 1764,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Ribarić",
@@ -32051,6 +33371,10 @@
         "source_page": 1467,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -32268,7 +33592,12 @@
         "pdf_y_end": 358.8,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Ropar",
@@ -32417,6 +33746,10 @@
         "pdf_y_end": 547.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -32470,7 +33803,6 @@
     "fathers_name": "I",
     "full_name": "Rožić I Nikola",
     "additional_info": "borac, FOS, Buševec, Vel. Gorica, u NOB 1944, poginuo Novo Brdo, 21.08.44",
-    "birth_year": "",
     "birth_place": "Buševec, Vel. Gorica",
     "death_date": "21.08.1944",
     "death_type": "poginuo",
@@ -32493,7 +33825,13 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Rubinić",
@@ -32547,6 +33885,10 @@
         "source_page": 1770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -32601,6 +33943,10 @@
         "source_page": 804,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -32730,7 +34076,8 @@
         "pdf_y_end": 265.3,
         "unit_file": "kozjanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.11.1925"
   },
   {
     "last_name": "Sabolić",
@@ -32788,7 +34135,6 @@
     "death_type": "poginuo",
     "death_place": "D. Kupčina",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir voda",
     "pdf_page": 23,
     "pdf_y": 346.4039999999999,
     "pdf_x": 53.5,
@@ -33171,6 +34517,10 @@
         "pdf_y_end": 272.4,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33245,7 +34595,6 @@
     "fathers_name": "S",
     "full_name": "Seketa S Bolto",
     "additional_info": "borac, ŽB, poginuo Hasan-Breg, 24.11.44",
-    "birth_year": "",
     "death_date": "24.11.1944",
     "death_type": "poginuo",
     "death_place": "Hasan-Breg",
@@ -33267,7 +34616,15 @@
         "source_page": 1765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Jagnjić-dol, Samobor",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1924"
   },
   {
     "last_name": "Seketa",
@@ -33282,7 +34639,6 @@
     "death_type": "poginuo",
     "death_place": "Rečica",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 26,
     "pdf_y": 34.70399999999995,
     "pdf_x": 19.0,
@@ -33517,7 +34873,6 @@
     "death_type": "poginuo",
     "death_place": "Grandić B.",
     "unit_detail": "brigada „Franjo Ogulinac Seljo“",
-    "rank": "komandir voda",
     "pdf_page": 23,
     "pdf_y": 408.4039999999999,
     "pdf_x": 53.5,
@@ -33594,7 +34949,19 @@
         "pdf_y_end": 466.1,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.04.1944",
+          "place": "kod Prekrižja u Zumberku"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sibila",
@@ -33646,7 +35013,6 @@
     "fathers_name": "I",
     "full_name": "Sigur I Josip",
     "additional_info": "borac, TPO, Cerje, Sisak, poginuo Cerje, 01.03.45",
-    "birth_year": "",
     "birth_place": "Cerje, Sisak",
     "death_date": "01.03.1945",
     "death_type": "poginuo",
@@ -33669,7 +35035,13 @@
         "source_page": 1903,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Sila",
@@ -33725,6 +35097,10 @@
         "pdf_x_end": 445.6,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33934,7 +35310,6 @@
     "death_type": "poginuo",
     "death_place": "Crna Mlaka",
     "unit_detail": "brigada „Franjo Ogulinac Seljo“",
-    "rank": "komandir voda",
     "pdf_page": 23,
     "pdf_y": 458.0039999999999,
     "pdf_x": 53.3,
@@ -34001,6 +35376,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34125,6 +35504,10 @@
         "pdf_y_end": 614.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34219,6 +35602,10 @@
         "source_page": 60,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34330,6 +35717,10 @@
         "source_page": 808,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34360,7 +35751,6 @@
     "fathers_name": "",
     "full_name": "Smolković Mirko",
     "additional_info": "borac, FOS, Lomnica, Vel. Gorica, 01.04.44",
-    "birth_year": "",
     "birth_place": "Lomnica, Vel. Gorica",
     "death_date": "01.04.1944",
     "death_type": "poginuo",
@@ -34382,7 +35772,15 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kupčina",
+    "birth_year": "1922"
   },
   {
     "last_name": "Smolković",
@@ -34391,7 +35789,6 @@
     "fathers_name": "",
     "full_name": "Smolković Mirko",
     "additional_info": "borac, T-PO, D. Lomnica, Vel. Gorica, poginuo Kupčina, 02.44",
-    "birth_year": "",
     "birth_place": "D. Lomnica, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Kupčina",
@@ -34414,7 +35811,13 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Smolčić",
@@ -34446,6 +35849,10 @@
         "source_page": 1935,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34691,6 +36098,10 @@
         "pdf_y_end": 231.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34807,6 +36218,10 @@
         "source_page": 809,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35041,6 +36456,10 @@
         "pdf_x_left": 204.3,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35085,6 +36504,10 @@
         "pdf_y_end": 270.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35182,6 +36605,10 @@
         "source_page": 2382,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35213,6 +36640,10 @@
         "source_page": 2379,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35331,7 +36762,6 @@
     "fathers_name": "",
     "full_name": "Stojaković Jovan",
     "additional_info": "borac, Omarska, Prijedor. BiH, poginuo Brestovac, 08.07.44",
-    "birth_year": "",
     "birth_place": "Omarska, Prijedor. BiH",
     "death_date": "08.07.1944",
     "death_type": "poginuo",
@@ -35353,7 +36783,13 @@
         "source_page": 2074,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Stojković",
@@ -35397,6 +36833,10 @@
         "pdf_y_end": 398.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35451,6 +36891,10 @@
         "source_page": 806,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35567,7 +37011,15 @@
         "pdf_y_end": 438.2,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.11.1945",
+          "place": "Rečica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Strpetov",
@@ -35667,7 +37119,6 @@
     "death_type": "poginuo",
     "death_place": "Mavračići",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 24,
     "pdf_y": 61.10399999999993,
     "pdf_x": 19.2,
@@ -35696,6 +37147,10 @@
         "pdf_y_end": 527.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35792,6 +37247,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35824,6 +37283,10 @@
         "source_page": 2383,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35930,6 +37393,10 @@
         "pdf_x_left": 204.3,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35962,6 +37429,10 @@
         "source_page": 799,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35994,6 +37465,10 @@
         "source_page": 799,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36105,7 +37580,13 @@
         "source_page": 2988,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Hrv.zagorje"
   },
   {
     "last_name": "Tančak",
@@ -36137,6 +37618,10 @@
         "source_page": 1768,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36212,6 +37697,10 @@
         "source_page": 520,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36227,7 +37716,6 @@
     "death_type": "poginuo",
     "death_place": "Odra, Sisak",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir voda",
     "pdf_page": 27,
     "pdf_y": 248.50399999999968,
     "pdf_x": 42.7,
@@ -36272,7 +37760,12 @@
         "pdf_y_end": 607.0,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Tepšić",
@@ -36439,6 +37932,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36471,6 +37968,10 @@
         "source_page": 2388,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37251,6 +38752,10 @@
         "source_page": 2387,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37482,6 +38987,10 @@
         "source_page": 810,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37581,6 +39090,10 @@
         "pdf_x_end": 258.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37668,6 +39181,10 @@
         "source_page": 1767,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37765,7 +39282,13 @@
         "source_page": 1764,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lug"
   },
   {
     "last_name": "Vikl",
@@ -37975,6 +39498,10 @@
         "pdf_y_end": 382.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38047,7 +39574,13 @@
         "source_page": 802,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Vlašiček",
@@ -38056,7 +39589,6 @@
     "fathers_name": "P",
     "full_name": "Vlašiček P Petar",
     "additional_info": "borac, ŽB, poginuo Krašić, kolov.44",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_place": "Krašić",
     "unit_detail": "Žumberačka brigada",
@@ -38078,7 +39610,15 @@
         "source_page": 1767,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Mala Gorica Samoborska, Samobor",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1921"
   },
   {
     "last_name": "Vodir",
@@ -38128,7 +39668,6 @@
     "death_type": "poginuo",
     "death_place": "Desinec",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir čete",
     "pdf_page": 28,
     "pdf_y": 249.24400000000009,
     "pdf_x": 16.3,
@@ -38498,6 +40037,10 @@
         "source_page": 805,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38551,6 +40094,10 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38587,7 +40134,12 @@
         "pdf_y_end": 449.5,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1928"
+      ]
+    }
   },
   {
     "last_name": "Vujadinović",
@@ -38741,6 +40293,10 @@
         "source_page": 2382,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38995,6 +40551,10 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -39153,7 +40713,12 @@
         "pdf_x_end": 306.0,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vularić",
@@ -39370,7 +40935,6 @@
     "fathers_name": "",
     "full_name": "Vučin Stjepan",
     "additional_info": "borac, T-PO, Veleševec, Vel. Gorica, poginuo Veleševec",
-    "birth_year": "",
     "birth_place": "Veleševec, Vel. Gorica",
     "death_type": "poginuo",
     "death_place": "Veleševec",
@@ -39405,7 +40969,15 @@
         "pdf_x_left": 36.0,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "birth_year": "1911"
   },
   {
     "last_name": "Vučinić",
@@ -39458,7 +41030,6 @@
     "fathers_name": "",
     "full_name": "Vučić Ivan",
     "additional_info": "borac, T-PO, Odra, 10.43",
-    "birth_year": "",
     "birth_place": "Odra",
     "death_type": "poginuo",
     "unit_detail": "Turopoljsko-posavski partizanski odred",
@@ -39494,7 +41065,13 @@
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
     ],
-    "death_place": "X"
+    "death_place": "X",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Vučković",
@@ -39531,7 +41108,6 @@
     "death_type": "poginuo",
     "death_place": "Lazina",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir voda",
     "pdf_page": 29,
     "pdf_y": 372.644,
     "pdf_x": 31.7,
@@ -39572,6 +41148,10 @@
         "pdf_y_end": 199.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -39947,6 +41527,10 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40080,6 +41664,10 @@
         "source_page": 809,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40210,6 +41798,10 @@
         "source_page": 2386,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40219,7 +41811,6 @@
     "fathers_name": "",
     "full_name": "Čubanec Ivan",
     "additional_info": "borac, T-PO, Veleševec, Vel. Gorica, poginuo Rakitovec, 28.12.44",
-    "birth_year": "",
     "birth_place": "Veleševec, Vel. Gorica",
     "death_date": "28.12.1944",
     "death_type": "poginuo",
@@ -40255,7 +41846,13 @@
         "pdf_x_left": 35.8,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Čubanec",
@@ -40287,6 +41884,10 @@
         "source_page": 2388,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40343,6 +41944,10 @@
         "pdf_x_end": 249.8,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40570,6 +42175,10 @@
         "pdf_y_end": 363.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40579,7 +42188,6 @@
     "fathers_name": "",
     "full_name": "Đumlija Pavao",
     "additional_info": "borac, T-PO, Petrovina, Jastrebarsko, poginuo Kotari, 07.06.44",
-    "birth_year": "",
     "birth_place": "Petrovina, Jastrebarsko",
     "death_date": "07.06.1944",
     "death_type": "poginuo",
@@ -40615,7 +42223,13 @@
         "pdf_x_left": 35.5,
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Đumlija",
@@ -40713,6 +42327,10 @@
         "source_page": 2386,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40744,7 +42362,6 @@
     "fathers_name": "F",
     "full_name": "Šabarić F Franjo",
     "additional_info": "borac, ŽB, Samobor, poginuo Zarob-obješen",
-    "birth_year": "",
     "birth_place": "Samobor",
     "death_type": "poginuo",
     "death_place": "Zarob-obješen",
@@ -40766,7 +42383,15 @@
         "source_page": 1767,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "birth_year": "1922"
   },
   {
     "last_name": "Šaina",
@@ -40810,6 +42435,10 @@
         "pdf_y_end": 567.1,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40884,7 +42513,13 @@
         "source_page": 804,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1942"
   },
   {
     "last_name": "Šajatović",
@@ -40997,6 +42632,10 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41029,6 +42668,10 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41108,6 +42751,10 @@
         "pdf_y_end": 391.2,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41217,6 +42864,10 @@
         "pdf_y_end": 192.0,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41366,6 +43017,10 @@
         "pdf_y_end": 252.5,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41435,6 +43090,10 @@
         "source_page": 2388,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41755,6 +43414,10 @@
         ],
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -42197,6 +43860,10 @@
         "source_page": 2957,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -42596,7 +44263,11 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "unit_detail": "Karlovačka brigada"
+    "unit_detail": "Karlovačka brigada",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Štimac",
@@ -42847,6 +44518,10 @@
         "pdf_y_end": 320.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -42877,7 +44552,6 @@
     "fathers_name": "V",
     "full_name": "Švajcer V Josip",
     "additional_info": "borac, 34.d, Zaprešić, Zagreb, poginuo Hrastovac, 27.09.44",
-    "birth_year": "",
     "birth_place": "Zaprešić, Zagreb",
     "death_date": "27.09.1944",
     "death_type": "poginuo",
@@ -42900,7 +44574,13 @@
         "source_page": 173,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Švec",
@@ -42952,6 +44632,10 @@
         "source_page": 1929,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -43118,7 +44802,6 @@
     "death_type": "poginuo",
     "death_place": "D. Kupčina",
     "unit_detail": "Karlovačka brigada",
-    "rank": "komandir voda",
     "pdf_page": 29,
     "pdf_y": 508.9440000000001,
     "pdf_x": 31.5,
@@ -43163,7 +44846,15 @@
         "pdf_y_end": 475.4,
         "unit_file": "karlovacka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.12.1944",
+          "place": "D. Kupčina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Žeravica",
@@ -43216,6 +44907,10 @@
         "source_page": 801,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -43317,7 +45012,13 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Draganić"
   },
   {
     "last_name": "Žilec",
@@ -43348,7 +45049,13 @@
         "source_page": 2381,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Draganić"
   },
   {
     "last_name": "Živičnjak",
@@ -43392,6 +45099,10 @@
         "pdf_y_end": 463.9,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -43555,7 +45266,11 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
-    "rank": "komesar bataljona"
+    "rank": "komesar bataljona",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Žunić",
@@ -43738,6 +45453,10 @@
         "pdf_x_end": 306.7,
         "unit_file": "karlovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {

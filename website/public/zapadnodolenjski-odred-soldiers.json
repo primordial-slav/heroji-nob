@@ -513,6 +513,10 @@
         "pdf_x_end": 417.6,
         "unit_file": "tomsiceva-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1260,7 +1264,8 @@
         "pdf_x_end": 294.7,
         "unit_file": "tomsiceva-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "30.08.1915"
   },
   {
     "last_name": "Borštnar",
@@ -1437,7 +1442,8 @@
         "pdf_y_end": 488.7,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "27.01.1907"
   },
   {
     "last_name": "Bradač",
@@ -1480,7 +1486,12 @@
         "pdf_y_end": 167.1,
         "unit_file": "deveta-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Bradač",
@@ -1849,6 +1860,10 @@
         "source_page": 268,
         "ref_book": "zrtve-rata-1964-slo"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2023,7 +2038,8 @@
         "pdf_y_end": 154.5,
         "unit_file": "kozjanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "30.06.1920"
   },
   {
     "last_name": "Dečman",
@@ -2463,6 +2479,10 @@
         "pdf_y_end": 531.8,
         "ref_book": "iskra-in-plamen-padli"
       }
+    ],
+    "death_place": "Črnomelj",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -2492,7 +2512,13 @@
         "source_page": 361,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenka",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Trebnje"
   },
   {
     "last_name": "Dular",
@@ -2621,7 +2647,13 @@
         "source_page": 367,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Gor. kot"
   },
   {
     "last_name": "Erbežnik",
@@ -2650,7 +2682,13 @@
         "source_page": 367,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Gor. kot"
   },
   {
     "last_name": "Erpe",
@@ -3296,7 +3334,8 @@
         "pdf_y_end": 566.7,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "25.06.1922"
   },
   {
     "last_name": "Glavič",
@@ -3423,7 +3462,8 @@
         "pdf_y_end": 603.4,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "22.01.1913"
   },
   {
     "last_name": "Golob",
@@ -3498,7 +3538,8 @@
         "pdf_x_end": 192.8,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "18.03.1923"
   },
   {
     "last_name": "Golob",
@@ -3558,7 +3599,8 @@
         "pdf_y_end": 198.6,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "09.11.1925"
   },
   {
     "last_name": "Golob",
@@ -3799,7 +3841,8 @@
         "pdf_y_end": 246.1,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.11.1926"
   },
   {
     "last_name": "Gospodaric",
@@ -3808,7 +3851,6 @@
     "fathers_name": "",
     "full_name": "Gospodaric Adolf",
     "additional_info": "zvani Ferdo; Gorenja vas, -1943",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "1943",
     "birth_place": "Gorenja vas",
@@ -3828,7 +3870,15 @@
         "source_page": 544,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Na novom mestu",
+    "birth_year": "1913"
   },
   {
     "last_name": "Grabljevec",
@@ -4074,7 +4124,8 @@
         "pdf_x_end": 269.1,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "15.02.1922"
   },
   {
     "last_name": "Grašič",
@@ -4300,7 +4351,13 @@
         "source_page": 552,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Žuženberg"
   },
   {
     "last_name": "Habič",
@@ -4586,7 +4643,11 @@
         "unit_file": "deveta-soldiers.json"
       }
     ],
-    "death_place": "na Štajerskem"
+    "death_place": "na Štajerskem",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Hostnik",
@@ -4906,7 +4967,8 @@
         "pdf_x_left": 145.9,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.07.1915"
   },
   {
     "last_name": "Hrovat",
@@ -4983,7 +5045,13 @@
         "source_page": 434,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Blate rakitnica"
   },
   {
     "last_name": "Ilc",
@@ -5012,7 +5080,13 @@
         "source_page": 435,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lokvica"
   },
   {
     "last_name": "Intihar",
@@ -5375,7 +5449,8 @@
         "source_page": 584,
         "ref_book": "15-divizija-stabi"
       }
-    ]
+    ],
+    "birth_date": "24.11.1914"
   },
   {
     "last_name": "Jakopič",
@@ -5440,7 +5515,13 @@
         "pdf_x_end": 350.6,
         "unit_file": "tomsiceva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Koznice"
   },
   {
     "last_name": "Jakoš",
@@ -5512,7 +5593,13 @@
         "pdf_y_end": 427.9,
         "unit_file": "gubceva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Mirna Poč."
   },
   {
     "last_name": "Jamšek",
@@ -5627,7 +5714,11 @@
         "unit_file": "deveta-soldiers.json"
       }
     ],
-    "death_place": "Pijava Gorica"
+    "death_place": "Pijava Gorica",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Janežič",
@@ -6269,7 +6360,13 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prečna"
   },
   {
     "last_name": "Jurglič",
@@ -6452,7 +6549,11 @@
         "unit_file": "tomsiceva-soldiers.json"
       }
     ],
-    "death_place": "Ljubljana"
+    "death_place": "Ljubljana",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Kastelic",
@@ -6716,7 +6817,8 @@
         "pdf_x_end": 386.9,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.07.1924"
   },
   {
     "last_name": "Klančar",
@@ -6761,7 +6863,8 @@
         "pdf_y_end": 526.9,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.03.1923"
   },
   {
     "last_name": "Klaus",
@@ -7684,7 +7787,12 @@
         "pdf_x_end": 347.8,
         "unit_file": "tomsiceva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "29.01.1921"
   },
   {
     "last_name": "Kozole",
@@ -8607,7 +8715,16 @@
         "unit_file": "deveta-soldiers.json"
       }
     ],
-    "death_place": "Sadinja vas"
+    "death_place": "Sadinja vas",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Kukman",
@@ -8705,6 +8822,10 @@
         ],
         "unit_file": "deveta-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8810,7 +8931,13 @@
         "pdf_y_end": 164.4,
         "unit_file": "gubceva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Trška gora"
   },
   {
     "last_name": "Kušar",
@@ -9283,7 +9410,8 @@
         "pdf_y_end": 202.5,
         "unit_file": "istrski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "23.07.1903"
   },
   {
     "last_name": "Lesjak",
@@ -9376,7 +9504,13 @@
         "pdf_y_end": 113.3,
         "unit_file": "dvanajsta-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Veliko lipje"
   },
   {
     "last_name": "Logar",
@@ -9641,7 +9775,8 @@
         "pdf_x_end": 224.4,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "14.04.1913"
   },
   {
     "last_name": "Lovšin",
@@ -9691,7 +9826,8 @@
         "pdf_y_end": 547.0,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "26.04.1924"
   },
   {
     "last_name": "Lukek",
@@ -10511,7 +10647,8 @@
         "pdf_y_end": 524.2,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.11.1924"
   },
   {
     "last_name": "Medic",
@@ -10861,7 +10998,13 @@
         "pdf_y_end": 421.6,
         "unit_file": "cankarjeva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Primskovo"
   },
   {
     "last_name": "Mevželj",
@@ -11164,7 +11307,12 @@
         "pdf_y_end": 381.2,
         "unit_file": "deveta-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Mikulič",
@@ -11417,7 +11565,8 @@
       }
     ],
     "death_after_war": true,
-    "death_date": "1984"
+    "death_date": "1984",
+    "birth_date": "07.03.1918"
   },
   {
     "last_name": "Mojškerc",
@@ -11683,7 +11832,13 @@
         "source_page": 386,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Jama Pridvor"
   },
   {
     "last_name": "Muhar",
@@ -12604,7 +12759,8 @@
         "pdf_y_end": 257.4,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "20.12.1922"
   },
   {
     "last_name": "Pakiž",
@@ -13241,7 +13397,13 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ig Pri ljuljani"
   },
   {
     "last_name": "Pevec",
@@ -13405,7 +13567,8 @@
         "pdf_y_end": 399.2,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.05.1924"
   },
   {
     "last_name": "Piceli",
@@ -13726,7 +13889,13 @@
         "source_page": 544,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "G.ponikve"
   },
   {
     "last_name": "Plantan",
@@ -13828,7 +13997,13 @@
         "pdf_y_end": 480.2,
         "unit_file": "gubceva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Dobrava-n.mesto"
   },
   {
     "last_name": "Pleskovič",
@@ -14523,7 +14698,8 @@
       }
     ],
     "death_type": "umro",
-    "death_date": "1994"
+    "death_date": "1994",
+    "birth_date": "29.08.1921"
   },
   {
     "last_name": "Pucelj",
@@ -15370,7 +15546,8 @@
         ],
         "unit_file": "deveta-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "01.04.1915"
   },
   {
     "last_name": "Rodin",
@@ -15629,6 +15806,10 @@
         "pdf_y_end": 275.3,
         "unit_file": "deveta-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15971,7 +16152,13 @@
         "source_page": 552,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Novo mesto"
   },
   {
     "last_name": "Sešek",
@@ -16050,7 +16237,13 @@
         "source_page": 541,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Žuženberk"
   },
   {
     "last_name": "Simončič",
@@ -16275,6 +16468,10 @@
         "source_page": 549,
         "ref_book": "zrtve-rata-1964-slo"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16320,7 +16517,14 @@
         "source_page": 718,
         "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Straža gor.",
+    "birth_date": "26.08.1902"
   },
   {
     "last_name": "Slak",
@@ -16596,7 +16800,8 @@
         "pdf_y_end": 390.6,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.08.1918"
   },
   {
     "last_name": "Smrke",
@@ -16988,7 +17193,13 @@
         "pdf_y_end": 368.1,
         "ref_book": "iskra-in-plamen-padli"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Novo mesto"
   },
   {
     "last_name": "Strah",
@@ -17210,7 +17421,13 @@
         "source_page": 364,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Raški gozdovi"
   },
   {
     "last_name": "Strsuner",
@@ -17279,6 +17496,10 @@
         "pdf_y_end": 398.9,
         "ref_book": "iskra-in-plamen-padli"
       }
+    ],
+    "death_place": "Ribnica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -17482,7 +17703,8 @@
         "pdf_y_end": 173.4,
         "unit_file": "istrski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.10.1920"
   },
   {
     "last_name": "Tominc",
@@ -17560,7 +17782,6 @@
     "fathers_name": "",
     "full_name": "Tratnik Vinko",
     "additional_info": "Lutrško selo,",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 132.4,
@@ -17579,7 +17800,17 @@
         "source_page": 372,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1942",
+    "death_place": "Luteško selo",
+    "birth_year": "1923"
   },
   {
     "last_name": "Trlep",
@@ -18265,7 +18496,13 @@
         "pdf_y_end": 306.5,
         "unit_file": "deveta-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sels žužemberg"
   },
   {
     "last_name": "Vidic",
@@ -18408,7 +18645,8 @@
         "pdf_y_end": 244.6,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.10.1910"
   },
   {
     "last_name": "Vidmar",
@@ -18623,7 +18861,12 @@
         "pdf_y_end": 359.5,
         "unit_file": "gubceva-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Višček",
@@ -18821,6 +19064,10 @@
         "pdf_x_end": 325.4,
         "unit_file": "tomsiceva-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19100,7 +19347,13 @@
         "pdf_y_end": 310.1,
         "unit_file": "gubceva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ljubi. brigada"
   },
   {
     "last_name": "Zaman",
@@ -19129,7 +19382,13 @@
         "source_page": 544,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Brinje"
   },
   {
     "last_name": "Zaman",
@@ -19267,7 +19526,8 @@
         "pdf_y_end": 345.4,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.01.1914"
   },
   {
     "last_name": "Zavrl",
@@ -20582,7 +20842,13 @@
         "pdf_y_end": 623.8,
         "unit_file": "cankarjeva-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sv. gregor"
   },
   {
     "last_name": "ŠmEgdek",
@@ -21188,7 +21454,6 @@
     "fathers_name": "",
     "full_name": "Žagar Janez",
     "additional_info": "Osilnica, -1945",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "1945",
     "birth_place": "Osilnica",
@@ -21208,7 +21473,15 @@
         "source_page": 156,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prevalje",
+    "birth_year": "1920"
   },
   {
     "last_name": "Železnik",
@@ -21296,7 +21569,8 @@
       }
     ],
     "death_type": "umro",
-    "death_date": "1989"
+    "death_date": "1989",
+    "birth_date": "20.12.1915"
   },
   {
     "last_name": "Žigon",

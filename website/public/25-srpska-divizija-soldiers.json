@@ -19,7 +19,21 @@
     "pdf_x_end": 343.9,
     "pdf_x_left": 64.1,
     "death_place": "Divič, Zvornik",
-    "unit_detail": "4. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "4. četa, 2. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000002",
+        "name": "Adamović Danilo",
+        "additional_info": "borac 4. čete 2. bataljona, poginuo 31. januara 1945. kod sela Diviča blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 52.8,
+        "pdf_y": 229.5,
+        "pdf_x_end": 357.8,
+        "pdf_y_end": 246.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Adamović",
@@ -41,7 +55,25 @@
     "pdf_x_end": 382.6,
     "pdf_x_left": 101.6,
     "death_place": "Garevac, Modriča",
-    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada",
+    "birth_place": "Veliki Popovac, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073000005",
+        "name": "Adamović Dragutin",
+        "additional_info": "desetar u 3. četi 2. bataljona, rođen 1912. u selu Veliki Popovac kod Petrovca na Mlavi, poginuo 11. aprila 1945. kod sela Garevca blizu Modriče u borbi protiv ustaša; sahranjen na imanju Dunćerskog u Garevcu.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 53.1,
+        "pdf_y": 250.7,
+        "pdf_x_end": 358.5,
+        "pdf_y_end": 285.7,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Adamović",
@@ -155,7 +187,11 @@
       }
     ],
     "birth_place": "Zdravinje",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Aleksić",
@@ -266,7 +302,6 @@
     "fathers_name": "",
     "full_name": "Andrejić Aleksandar",
     "additional_info": "borac 3. čete 3. bataljona 19. srpske brigade, poginuo 30. januara 1945. god. kod sela Glodi blizu Zvornika u borbi protiv Nemaca; sahrau Glodima.",
-    "birth_year": "",
     "pdf_page": 94,
     "pdf_y": 189.3,
     "pdf_x": 85.7,
@@ -288,8 +323,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=664",
         "source_page": 664,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073000049",
+        "name": "Andrejić Aleksandar",
+        "additional_info": "borac 3. čete 3. bataljona, poginuo 30. januara 1945. kod sela Glodi blizu Zvornika u borbi protiv Nemaca, sahranjen u Glodima.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 52.6,
+        "pdf_y": 357.4,
+        "pdf_x_end": 358.1,
+        "pdf_y_end": 383.3,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Ševica, Kučevo",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1922"
   },
   {
     "last_name": "Andrejić",
@@ -339,7 +394,12 @@
         "pdf_y_end": 151.9,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Andrejić",
@@ -361,7 +421,21 @@
     "pdf_x_end": 378.4,
     "pdf_x_left": 98.2,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000055",
+        "name": "Andrejić Vićentije",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 8. februara 1945. kod sela Grbavac blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 52.6,
+        "pdf_y": 407.1,
+        "pdf_x_end": 358.0,
+        "pdf_y_end": 423.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Andrijević",
@@ -701,6 +775,10 @@
         "source_page": 846,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -770,7 +848,13 @@
         "source_page": 417,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Vinci, Golubac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Arsić",
@@ -826,6 +910,10 @@
         "source_page": 456,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -871,7 +959,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Avramović",
@@ -927,7 +1019,13 @@
         "source_page": 635,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Majdanpek"
   },
   {
     "last_name": "Aćimović",
@@ -1155,7 +1253,11 @@
       }
     ],
     "death_place": "Požega",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Baćerek",
@@ -1222,7 +1324,8 @@
     "pdf_x_end": 376.6,
     "pdf_x_left": 95.6,
     "death_place": "kod sela Vlaške Male (sada Posavska Mahala) blizu Modriča",
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "birth_date": "07.03.1923"
   },
   {
     "last_name": "Belanović",
@@ -1268,7 +1371,8 @@
     "pdf_x_end": 333.8,
     "pdf_x_left": 53.4,
     "death_place": "Garevac, Modriča",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "13.03.1922"
   },
   {
     "last_name": "Bešina",
@@ -1290,7 +1394,21 @@
     "pdf_x_end": 342.6,
     "pdf_x_left": 62.2,
     "death_place": "Bašići, Šekovići",
-    "unit_detail": "4. bataljon, protivoklopna četa, 19. srpska brigada"
+    "unit_detail": "4. bataljon, protivoklopna četa, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000149",
+        "name": "Bešina Milija",
+        "additional_info": "borac protivtenkovske čete 4. bataljona, rođen 1923. u selu Radnika kod Kučeva, poginuo i sahranjen u selu Bašići kod Šekovića, u borbi protiv Nemaca i četnika.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 34,
+        "pdf_x": 71.0,
+        "pdf_y": 378.6,
+        "pdf_x_end": 376.4,
+        "pdf_y_end": 404.5,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bocanović",
@@ -1440,7 +1558,11 @@
       }
     ],
     "death_place": "u rejonu Odžaka",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bogosavljević",
@@ -1462,7 +1584,21 @@
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 378.8,
     "pdf_x_left": 98.2,
-    "death_place": "blizu sela Grbavaca kod Zornika"
+    "death_place": "blizu sela Grbavaca kod Zornika",
+    "other_sources": [
+      {
+        "soldier_id": "0073000200",
+        "name": "Bogosavljević Milisav",
+        "additional_info": "borac 1. čete 3. bataljona, poginuo 9. februara 1945. blizu sela Grbavac, kod Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 80.0,
+        "pdf_y": 112.3,
+        "pdf_x_end": 385.7,
+        "pdf_y_end": 129.2,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogosavljević",
@@ -1500,7 +1636,12 @@
         "pdf_y_end": 96.7,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Borbulović",
@@ -1604,7 +1745,11 @@
       }
     ],
     "birth_place": "Busur",
-    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Božić",
@@ -1778,7 +1923,6 @@
     "fathers_name": "",
     "full_name": "Brzulović P Ljubomir",
     "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade, rođen u Prahovu, poginuo 13. marta 1945. god. u selu Srpskoj Zelinji kod Gradačca u borbi protiv četnika; sahranjen u selu Paležnici kod Gradačca.",
-    "birth_year": "",
     "pdf_page": 86,
     "pdf_y": 245.5,
     "pdf_x": 87.8,
@@ -1802,7 +1946,13 @@
         "source_page": 845,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Buganović",
@@ -1962,7 +2112,19 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.12.1944",
+          "place": "u selu Grdovićima kod Arilja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Burkić",
@@ -1995,6 +2157,10 @@
         "source_page": 454,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2052,6 +2218,10 @@
         "source_page": 845,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2181,7 +2351,8 @@
     "pdf_x_end": 340.5,
     "pdf_x_left": 61.2,
     "death_place": "kod sela Kadara blizu Modriča",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "birth_date": "21.07.1921"
   },
   {
     "last_name": "Cerović",
@@ -2276,7 +2447,12 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. četa, 3. bataljon, 18. srpska brigada",
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Colović",
@@ -2403,7 +2579,6 @@
     "fathers_name": "",
     "full_name": "Cvetković Stanoje",
     "additional_info": "borac 2. bataljona 16. srpske brigade, rođen u selu Mokranjama kod Negotina, poginuo 30. marta 1945. god. na putu selo Špionica — Srebrenik blizu Tuzle u borbi protiv Nemaca i ustaša.",
-    "birth_year": "",
     "pdf_page": 63,
     "pdf_y": 168.6,
     "pdf_x": 117.0,
@@ -2426,7 +2601,15 @@
         "source_page": 843,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Srebrnik",
+    "birth_year": "1925"
   },
   {
     "last_name": "Cvetković",
@@ -2495,7 +2678,11 @@
       }
     ],
     "death_place": "u rejonu Modriče",
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Dabić",
@@ -2579,7 +2766,6 @@
     "fathers_name": "",
     "full_name": "Danilović R Mirko",
     "additional_info": "borac 1. čete 2. bataljona 16. srpske brigade, rođen u selu Ljubiću kod Knića (ili kod Čačka — prim. red.), poginuo 5. aprila 1945. god. u selu Hajdurovićima (Špionica) kod Srebrenika blizu Tuzle u borbi protiv ustaša; sahranjei u Srpskoj Špionici u voćnjaku Joke Sovića.",
-    "birth_year": "",
     "pdf_page": 90,
     "pdf_y": 229.3,
     "pdf_x": 88.8,
@@ -2602,7 +2788,15 @@
         "source_page": 477,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Ljubić, Knić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1921"
   },
   {
     "last_name": "Darijević",
@@ -2625,7 +2819,21 @@
     "pdf_x_end": 382.0,
     "pdf_x_left": 101.0,
     "death_place": "na brdu Velikoj borči kod sela Sirče blizu Kraljeva",
-    "unit_detail": "1. četa, 1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. četa, 1. bataljon, 18. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0128000559",
+        "name": "Darijević Đorđe",
+        "additional_info": "1922, Čačak. Poginuo novembra 1944. kod Kraljeva",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 214.4,
+        "pdf_y": 308.5,
+        "pdf_x_end": 364.6,
+        "pdf_y_end": 326.3,
+        "unit_file": "18-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Davidović",
@@ -2662,7 +2870,8 @@
         "pdf_y_end": 373.1,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "09.05.1924"
   },
   {
     "last_name": "Dačić",
@@ -2874,7 +3083,6 @@
     "fathers_name": "",
     "full_name": "Dinić Marjan",
     "additional_info": "borac 3. čete 4. bataljona 16. srpske brigade, rođen u selu Marinovcu kod Zaječara, ranjen 26. januara 1945. god. kod sela Rajića blizu Vlasenice; podlegao ranama u bolnici.",
-    "birth_year": "",
     "pdf_page": 90,
     "pdf_y": 142.0,
     "pdf_x": 84.5,
@@ -2896,7 +3104,17 @@
         "source_page": 803,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Vlasenica",
+    "birth_year": "1924"
   },
   {
     "last_name": "Dinić",
@@ -3083,7 +3301,6 @@
     "fathers_name": "",
     "full_name": "Dokić D Uroš",
     "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade, rođen u selu Boljetinu kod Majdanpeka, poginuo 12. marta 1945. god. kod sela Srpske Zelinje blizu borbi protiv četnika; sahranjen u Srpskoj Zelinji kod škole.",
-    "birth_year": "",
     "pdf_page": 86,
     "pdf_y": 192.7,
     "pdf_x": 87.8,
@@ -3107,7 +3324,13 @@
         "source_page": 402,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Dolić",
@@ -3227,7 +3450,6 @@
     "fathers_name": "",
     "full_name": "Dragić Živojin",
     "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade, rođen u selu Mokranjana kod Negotina, poginuo 29. marta 1945. god. kod zaseoka Čehaja blizu Srebrenika (Tuzla) u borbi protiv Nemaca i ustaša; sahranjen u Čehajama na raskrsnici puteva.",
-    "birth_year": "",
     "pdf_page": 61,
     "pdf_y": 150.1,
     "pdf_x": 115.3,
@@ -3251,7 +3473,13 @@
         "source_page": 843,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Dragojević",
@@ -3394,7 +3622,20 @@
         "unit_file": "7-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 4. bataljon, 16. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 16. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "D.srebrnik",
+    "variants": {
+      "death": [
+        {
+          "date": "05.03.1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dulkanović",
@@ -3403,7 +3644,6 @@
     "fathers_name": "",
     "full_name": "Dulkanović P Stojan",
     "additional_info": "borac 1. čete 3. bataljona 16. srpske brigade, rođen u selu Boljetinu kod Majdanpeka, poginuo 30. marta 1945. god. kod sela Donjeg Srebrenika blizu Tuzle u borbi protiv Nemaca i ustaša; sahranjen u Donjem Srebreniku u voćnjaku Adema Tadića.",
-    "birth_year": "",
     "pdf_page": 60,
     "pdf_y": 46.4,
     "pdf_x": 79.5,
@@ -3427,7 +3667,13 @@
         "source_page": 402,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Filipović",
@@ -3517,7 +3763,25 @@
     "pdf_x_end": 347.6,
     "pdf_x_left": 66.6,
     "death_place": "Čardak, Modriča",
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "birth_place": "Kamenovo, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073000428",
+        "name": "Filipović Stojan",
+        "additional_info": "vodnik voda u 1. četi 4. bataljona, rođen 1925. u selu Kamenovo kod Petrovca na Mlavi, poginuo 10. aprila 1945. kod sela Čardak (Modriča) u borbi protiv ustaša i domobrana, sahranjen u selu Čardak na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 48,
+        "pdf_x": 77.9,
+        "pdf_y": 134.7,
+        "pdf_x_end": 383.3,
+        "pdf_y_end": 169.0,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Floranović",
@@ -3540,7 +3804,8 @@
     "pdf_x_end": 343.1,
     "pdf_x_left": 63.1,
     "death_place": "Stupnih, Zagreb",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "20.10.1927"
   },
   {
     "last_name": "Gajić",
@@ -3549,7 +3814,6 @@
     "fathers_name": "",
     "full_name": "Gajić M Borivoje",
     "additional_info": "borac 1. čete 2. bataljona 16. srpske brigade, rođen u selu Zabrdici (Brankovina) kod Valjeva, poginuo 28. marta 1945. god. kod sela Gornjih Hrgova blizu Gradačca u borbi protiv Nemaca i ustaša; sahranjen u Gornjim Hrgovima.",
-    "birth_year": "",
     "pdf_page": 60,
     "pdf_y": 244.4,
     "pdf_x": 80.2,
@@ -3573,7 +3837,13 @@
         "source_page": 1302,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Gajić",
@@ -3618,7 +3888,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Gavrilović",
@@ -3746,7 +4020,13 @@
         "source_page": 1243,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Zagreb"
   },
   {
     "last_name": "Golić",
@@ -3897,7 +4177,13 @@
         "source_page": 287,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Botoš, Perlez",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Grujić",
@@ -3992,7 +4278,21 @@
     "pdf_x_end": 341.2,
     "pdf_x_left": 60.3,
     "death_place": "na brdu Sokolovini blizu sela Đevanja kod Zvornika",
-    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000504",
+        "name": "Grujić Đorđe",
+        "additional_info": "desetar u 1. četi 2. bataljon, poginuo 29. januara 1945. na brdu Sokolovina blizu sela Bevanje kod Zvornika, u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 79.8,
+        "pdf_y": 341.5,
+        "pdf_x_end": 384.9,
+        "pdf_y_end": 358.3,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ignjatović",
@@ -4014,7 +4314,25 @@
     "pdf_x_end": 342.9,
     "pdf_x_left": 62.9,
     "death_place": "Šljivovica, Titovo Užice",
-    "unit_detail": "1. bataljon, 19. srpska brigada"
+    "unit_detail": "1. bataljon, 19. srpska brigada",
+    "birth_place": "Stamnica, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073000517",
+        "name": "Ignjatović Dragutin",
+        "additional_info": "borac 1. bataljona, rođen u selu Stamnica kod Petrovca na Mlavi, poginuo 17. decembra 1944. kod sela Šljivovice, blizu Užica u borbi protiv Nemaca, sahranjen u Šljivovici.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 81.2,
+        "pdf_y": 36.2,
+        "pdf_x_end": 386.4,
+        "pdf_y_end": 62.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ignjatović",
@@ -4059,7 +4377,8 @@
       }
     ],
     "death_place": "u rejonu Gradačca",
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "birth_date": "15.07.1920"
   },
   {
     "last_name": "Ikić",
@@ -4153,7 +4472,13 @@
         "source_page": 957,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Vošanovac, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Ilić",
@@ -4243,7 +4568,11 @@
       }
     ],
     "death_place": "kod sela Ledenica (Katoličkih) blizu Modriča U borbi",
-    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ilić",
@@ -4480,6 +4809,10 @@
         "source_page": 416,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4572,7 +4905,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ilić",
@@ -4711,7 +5048,8 @@
     "death_place": "Vrbovec, Modriča",
     "pdf_x_end": 374.7,
     "pdf_x_left": 94.4,
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "birth_date": "20.10.1914"
   },
   {
     "last_name": "Ivanović",
@@ -4765,7 +5103,6 @@
     "fathers_name": "",
     "full_name": "Ivić Miodrag",
     "additional_info": "borac 18. srpske brigade, rođen u selu Tamniču kod Negotina, poginuo 4. aprila 1945. god. kod sela Špionice blizu Tuzle u borbi protiv ustaša; sahranjen u Špionici.",
-    "birth_year": "",
     "pdf_page": 75,
     "pdf_y": 387.2,
     "pdf_x": 117.2,
@@ -4801,7 +5138,13 @@
       }
     ],
     "death_place": "u rejonu Modriče",
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Ivković",
@@ -4854,7 +5197,13 @@
         "source_page": 953,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Šetonje, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Jacić",
@@ -4944,7 +5293,11 @@
         "unit_file": "4-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 3. bataljon, 18. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jakovljević",
@@ -5013,7 +5366,13 @@
         "source_page": 1052,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Donja Bresnica, Prokuplje",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Janićijević",
@@ -5135,10 +5494,10 @@
   },
   {
     "last_name": "Janković",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Danilo",
-    "fathers_name": "",
-    "full_name": "Janković Danilo",
+    "fathers_name": "P",
+    "full_name": "Janković P Danilo",
     "additional_info": "borac-izviđač 2. bataljona 19. srpske brigade, rođen 1922. god. u selu Melnici kod Petrovca na Mlavi, umro 27. aprila 1945. god. u selu Koprivni kod Modriča od zadobijenih rana; sahranjen u Koprivni.",
     "birth_year": "1922",
     "pdf_page": 70,
@@ -5153,7 +5512,33 @@
     "pdf_x_end": 344.6,
     "pdf_x_left": 64.4,
     "rank": "izviđač",
-    "unit_detail": "2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. bataljon, 19. srpska brigada",
+    "birth_place": "Melnica, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073000662",
+        "name": "Janković P Danilo",
+        "additional_info": "rođen 1922. u Melnici, Petrovac na Mlavi, izvićač 4. bataljona 19. srpske brigade, teško ranjen 27. aprila 1945. u borbi protiv ustaša kod Vlaške Male, podlegao ranama u Koprivni 29. aprila 1945.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 87.0,
+        "pdf_y": 193.1,
+        "pdf_x_end": 392.3,
+        "pdf_y_end": 228.2,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.04.1945",
+          "place": "Koprivna, Modriča"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -5207,7 +5592,13 @@
         "source_page": 2514,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Gazivode, Sokolac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Janković",
@@ -5274,7 +5665,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Janković",
@@ -5362,7 +5757,21 @@
     "pdf_x_end": 378.2,
     "pdf_x_left": 98.7,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000684",
+        "name": "Janković Miroslav",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 9. februara 1945. kod sela Grbavac blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 81.6,
+        "pdf_y": 449.9,
+        "pdf_x_end": 386.7,
+        "pdf_y_end": 466.7,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janković",
@@ -5407,7 +5816,6 @@
     "fathers_name": "V",
     "full_name": "Janković V Radomir",
     "additional_info": "borac 1. čete 3. bataljona 19. srpske brigade, poginuo 9. februara 1945. god. blpzu sela Grbavaca kod Zvornika u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 35,
     "pdf_y": 158.8,
     "pdf_x": 119.6,
@@ -5442,7 +5850,15 @@
       }
     ],
     "death_place": "Grbavac, Zvornik",
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "birth_place": "Vrčin, Grocka",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1920"
   },
   {
     "last_name": "Janković",
@@ -5577,7 +5993,18 @@
         "pdf_y_end": 243.9,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ],
+      "death": [
+        {
+          "date": "01.1945",
+          "place": "kod Mlađevca blizu Zvornika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jazan",
@@ -5643,7 +6070,19 @@
       }
     ],
     "death_place": "Čardak, Modriča",
-    "unit_detail": "19. srpska brigada"
+    "unit_detail": "19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.04.1945",
+          "place": "Čardak, Modriča"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jeftić",
@@ -5736,7 +6175,12 @@
         "pdf_y_end": 127.3,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1928"
+      ]
+    }
   },
   {
     "last_name": "Jeličić",
@@ -5828,7 +6272,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jenić",
@@ -5865,7 +6313,12 @@
         "pdf_y_end": 250.2,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Jenić",
@@ -5979,7 +6432,16 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Jeremić",
@@ -6010,7 +6472,15 @@
         "source_page": 96,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Gračanica"
   },
   {
     "last_name": "Jevremović",
@@ -6127,7 +6597,18 @@
         "pdf_y_end": 357.5,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "24.04.1945",
+          "place": "Koprivna, Modriča"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jevtić",
@@ -6216,7 +6697,21 @@
     "pdf_x_end": 375.7,
     "pdf_x_left": 94.4,
     "death_place": "Bašići, Šekovići, Vlasenica",
-    "unit_detail": "4. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "4. četa, 4. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000802",
+        "name": "Jevtić Miladin",
+        "additional_info": "borac 2. čete 4. bataljona, podlegao ranama 9. januara 1945. u selu Bašići kod Šekovića (Vlasenica), sahranjen u Bašićima.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 87.0,
+        "pdf_y": 399.5,
+        "pdf_x_end": 392.7,
+        "pdf_y_end": 416.3,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jevtić",
@@ -6261,7 +6756,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jevtić",
@@ -6294,6 +6793,10 @@
         "source_page": 797,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6455,7 +6958,13 @@
         "source_page": 1273,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Milorci, Ub",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Jovanović",
@@ -6536,7 +7045,21 @@
     "pdf_x_end": 378.2,
     "pdf_x_left": 98.2,
     "death_place": "kod sela Grbavaca blizu Zornika",
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000854",
+        "name": "Jovanović Danilo",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 8. februara 1945. kod sela Grbavac blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 49.2,
+        "pdf_y": 328.1,
+        "pdf_x_end": 354.0,
+        "pdf_y_end": 344.7,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -6603,7 +7126,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -6648,7 +7175,21 @@
     "pdf_x_end": 369.4,
     "pdf_x_left": 89.2,
     "death_place": "Barice, Vlasenica",
-    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000890",
+        "name": "Jovanović Milan",
+        "additional_info": "borac 3. čete 3. bataljona, poginuo 21. januara 1945. kod zaseoka Barica blizu Vlasenice u borbi protiv Nemaca, sahranjen u selu Kojčevina kod Vlasenice.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 49.5,
+        "pdf_y": 413.3,
+        "pdf_x_end": 354.7,
+        "pdf_y_end": 439.3,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -6685,7 +7226,8 @@
         "pdf_y_end": 403.4,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.09.1919"
   },
   {
     "last_name": "Jovanović",
@@ -6813,7 +7355,19 @@
         "unit_file": "4-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon, 16. srpska brigada"
+    "unit_detail": "3. bataljon, 16. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "26.07.1944",
+          "place": "na Veljoj Glavi"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -6904,7 +7458,6 @@
     "fathers_name": "",
     "full_name": "Jović Aleksandar",
     "additional_info": "desetar u Minerskom vodu 2. bataljona 16. srpske brigade, rođen u selu Podvrškoj kod Kladova, poginuo 15. januara 1945. god. na Ploči kod Vlasenice u borbi protiv Nemaca; sahranjen na Javorovoj poljani kod Ploče (Vlasenica).",
-    "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 395.9,
     "pdf_x": 119.1,
@@ -6928,7 +7481,13 @@
         "source_page": 471,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Jović",
@@ -6950,7 +7509,8 @@
     "pdf_x_end": 374.6,
     "pdf_x_left": 93.9,
     "death_place": "Vučkovci, Gradačac",
-    "unit_detail": "2. četa, 4. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 18. srpska brigada",
+    "birth_date": "21.05.1921"
   },
   {
     "last_name": "Jović",
@@ -7009,7 +7569,21 @@
     "pdf_x_end": 341.1,
     "pdf_x_left": 60.3,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073000959",
+        "name": "Jović Dragutin",
+        "additional_info": "borac 1. čete 3. bataljona, poginuo 8. februara 1945. blizu sela Grbavac kod Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 49.2,
+        "pdf_y": 465.2,
+        "pdf_x_end": 354.5,
+        "pdf_y_end": 482.0,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jović",
@@ -7054,7 +7628,17 @@
       }
     ],
     "death_place": "u rejonu Modri",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "10.04.1923",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Jović",
@@ -7127,7 +7711,13 @@
         "source_page": 948,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Lopušnik, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Jović",
@@ -7207,7 +7797,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jović",
@@ -7216,7 +7810,6 @@
     "fathers_name": "",
     "full_name": "Jović Radiša",
     "additional_info": "borac 3. čete 1. bataljona 19. srpske brigade, poginuo 21. januara 1945. god. na Orlovači kod Vlasenice u borbi protiv Nemaca; sahranjen u selu Kojčevini kod Vlasenice.",
-    "birth_year": "",
     "pdf_page": 40,
     "pdf_y": 134.1,
     "pdf_x": 81.7,
@@ -7251,7 +7844,15 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 1. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 1. bataljon, 19. srpska brigada",
+    "birth_place": "Bikinje, Golubac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1924"
   },
   {
     "last_name": "Jović",
@@ -7282,7 +7883,6 @@
     "fathers_name": "",
     "full_name": "Jović P Vojislav",
     "additional_info": "borac 1. čete 2. bataljona 16. srpske brigade, rođen u selu Golubinjama kod Majdanpeka, poginuo 5. aprila 1945. god u selu Hajdurovićima (Špionica) kod Srebrenika blizu Tuzle u borbi protiv Nemaca; sahranjen u Špionici.",
-    "birth_year": "",
     "pdf_page": 90,
     "pdf_y": 400.5,
     "pdf_x": 89.0,
@@ -7306,7 +7906,13 @@
         "source_page": 403,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Jović",
@@ -7362,7 +7968,13 @@
         "source_page": 665,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Velika Bresnica, Kučevo",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Kadić",
@@ -7487,7 +8099,6 @@
     "fathers_name": "",
     "full_name": "Karabašević Jovan",
     "additional_info": "borac 2. čete 4. bataljona 16. srpske brigade, rođen u selu Zlotu kod Bora, poginuo 17. februara 1945. god. kod sela Tršića blizu Zvornika u borbi protiv Nemaca; sahranjen u Tršiću.",
-    "birth_year": "",
     "pdf_page": 85,
     "pdf_y": 143.8,
     "pdf_x": 111.8,
@@ -7511,7 +8122,13 @@
         "source_page": 331,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Karanović",
@@ -7639,7 +8256,12 @@
         "pdf_y_end": 213.8,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Kišić",
@@ -7909,7 +8531,6 @@
     "fathers_name": "",
     "full_name": "Kostić Dragutin",
     "additional_info": "borac 2. čete 3. bataljona 19. srpske brigade, poginuo 21. januara 1945. god. kod zaseoka Barica blizu Vlasenice u borbi protiv Nemaca; sahranjen u selu Kojčevini kod Vlasenice.",
-    "birth_year": "",
     "pdf_page": 39,
     "pdf_y": 413.5,
     "pdf_x": 110.8,
@@ -7931,8 +8552,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=954",
         "source_page": 954,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001058",
+        "name": "Kostić Dragutin",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 21. januara 1945. kod zaseoka Barica blizu Vlasenice u borbi protiv Nemaca, sahranjen u Kojčevini kod Vlasenice.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 83.1,
+        "pdf_y": 149.8,
+        "pdf_x_end": 388.8,
+        "pdf_y_end": 175.7,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Stamnica, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1924"
   },
   {
     "last_name": "Kostić",
@@ -8062,7 +8703,12 @@
         "source_page": 1328,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "08.09.1920"
   },
   {
     "last_name": "Kozarević",
@@ -8163,7 +8809,6 @@
     "fathers_name": "",
     "full_name": "Krajić Maksim",
     "additional_info": "borac 1. bataljona 19. srpske brigade, rođen u selu Kobilju kod Petrovca na Mlavi, poginuo 17. decembra 1944. god. kod Miloševca na Tari blizu Bajine Bašte u borbi protiv Nemaca; sahranjen na groblju u selu Rosuljama kod Bajine Bašte.",
-    "birth_year": "",
     "pdf_page": 20,
     "pdf_y": 170.3,
     "pdf_x": 84.5,
@@ -8199,7 +8844,13 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 19. srpska brigada"
+    "unit_detail": "1. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Krasulović",
@@ -8482,7 +9133,6 @@
     "fathers_name": "",
     "full_name": "Krčmar N Jevto",
     "additional_info": "borac 2. bataljona 16. srpsks brigade, star 20 god., rođen u selu Otkovcima kod Glamoča (nije se moglo bliže odrediti o kome se mestu radi — prim. red.), poginuo 10. oktobra 1944. god. na Bukovoj glavi (trig. 650) severno od sela Rudne Glave blizu Donjeg Milanovca u borbi protiv Nemaca; sahranjen na Bukovoj glavi.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 318.7,
     "pdf_x": 82.6,
@@ -8504,7 +9154,17 @@
         "source_page": 167,
         "ref_book": "zrtve-rata-1964-mak"
       }
-    ]
+    ],
+    "birth_place": "Rosoman, Kavadarci",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Kučevo",
+    "birth_year": "1925"
   },
   {
     "last_name": "Kržanović",
@@ -8541,7 +9201,12 @@
         "pdf_y_end": 313.6,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1910"
+      ]
+    }
   },
   {
     "last_name": "Kucmanović",
@@ -8729,7 +9394,15 @@
         "source_page": 958,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Ždrelo, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Kod vlasenice"
   },
   {
     "last_name": "Kurkanović",
@@ -8822,6 +9495,10 @@
         "source_page": 1053,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8904,7 +9581,19 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 19. srpska brigada"
+    "unit_detail": "4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.01.1945",
+          "place": "u selu Đevanju kod Zvornika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lazarević",
@@ -9069,7 +9758,11 @@
       }
     ],
     "birth_place": "Veliko Laole",
-    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Lekić",
@@ -9115,7 +9808,16 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Lekić",
@@ -9124,7 +9826,6 @@
     "fathers_name": "",
     "full_name": "Lekić Milan",
     "additional_info": "borac 2. čete 3. bataljona 19. srpske brigade, poginuo 8. februara 1945. blizu sela Grbavaca kod Zvornika u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 35,
     "pdf_y": 193.9,
     "pdf_x": 119.8,
@@ -9146,8 +9847,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1409",
         "source_page": 1409,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001166",
+        "name": "Lekić Milan",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 8. februara 1945. blizu sela Grbavac kod Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 82.8,
+        "pdf_y": 323.5,
+        "pdf_x_end": 388.5,
+        "pdf_y_end": 340.4,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Vražogrnac, Zaječar",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1921"
   },
   {
     "last_name": "Lekjgb",
@@ -9261,7 +9982,15 @@
         "source_page": 958,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Ždrelo, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Gradačac"
   },
   {
     "last_name": "Lukić",
@@ -9298,7 +10027,8 @@
         "pdf_y_end": 84.2,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "15.02.1910"
   },
   {
     "last_name": "Lukić",
@@ -9345,7 +10075,6 @@
     "fathers_name": "",
     "full_name": "Lukić A Petar",
     "additional_info": "borac 3. čete 3. bataljona 16. srpske brigade, poginuo 11. januara 1945. god. na brdu Kiku kod sela Šekovića blizu Vlasenice u borbi protiv Nemaca; sahranjen u selu Stuparima kod Vlasenice.",
-    "birth_year": "",
     "pdf_page": 22,
     "pdf_y": 51.1,
     "pdf_x": 80.0,
@@ -9368,7 +10097,15 @@
         "source_page": 321,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Mali Izvor, Boljevac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1923"
   },
   {
     "last_name": "Lukić",
@@ -9458,7 +10195,8 @@
     "pdf_x_end": 333.5,
     "pdf_x_left": 53.2,
     "death_place": "Garevac, Modriča",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "14.08.1922"
   },
   {
     "last_name": "Mandić",
@@ -9480,7 +10218,8 @@
     "rank": "vodnik",
     "pdf_x_end": 344.2,
     "pdf_x_left": 63.4,
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "birth_date": "10.02.1920"
   },
   {
     "last_name": "Mandžukić",
@@ -9561,7 +10300,17 @@
       }
     ],
     "death_place": "kod Odža",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "25.01.1919",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Mantikić",
@@ -9583,7 +10332,21 @@
     "pdf_x_end": 380.1,
     "pdf_x_left": 100.4,
     "death_place": "Selište, Šekovići, Vlasenica",
-    "unit_detail": "4. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "4. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073001222",
+        "name": "Mantikić Danilo",
+        "additional_info": "borac 4. čete 3. bataljona, poginuo 23. januara 1945. kod sela Selište blizu Šekovića (Vlasenica) u borbi protiv Nemaca, sahranjen u Stanišićima kod Vlasenice.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 83.3,
+        "pdf_y": 396.3,
+        "pdf_x_end": 389.1,
+        "pdf_y_end": 422.2,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marinković",
@@ -9592,7 +10355,6 @@
     "fathers_name": "",
     "full_name": "Marinković B Andrija",
     "additional_info": "borac 16. srpske brigade, rođen u selu Zborištu kod Dervente (moguće: selo Zbornište kod Bosanskog Broda — prim. red.), poginuo 8. maja 1945. god. kod Zagreba u borbi protiv Nemaca i ustaša.",
-    "birth_year": "",
     "pdf_page": 72,
     "pdf_y": 192.1,
     "pdf_x": 79.8,
@@ -9615,7 +10377,15 @@
         "source_page": 840,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Zborište, Bosanski Brod",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1925"
   },
   {
     "last_name": "Marinković",
@@ -9822,7 +10592,15 @@
         "source_page": 957,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Vošanovac, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Vlasenica"
   },
   {
     "last_name": "Marjanović",
@@ -9888,7 +10666,6 @@
     "fathers_name": "",
     "full_name": "Marjanović Svetomir",
     "additional_info": "borac 1. čete 1 bataljona 19. srpske brigade, poginuo 3. februara 1945. god. kod sela Đevanja blizu Zvornika u borbi protiv Nemaca; sahranjen kod Đevanja.",
-    "birth_year": "",
     "pdf_page": 34,
     "pdf_y": 182.5,
     "pdf_x": 81.9,
@@ -9911,7 +10688,15 @@
         "source_page": 663,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Ravnište, Kučevo",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1921"
   },
   {
     "last_name": "Marjanović",
@@ -9920,7 +10705,6 @@
     "fathers_name": "",
     "full_name": "Marjanović Svetozar",
     "additional_info": "desetar u 3. četi 3. bataljona 19. srpske brigade, poginuo 18. januara 1945. god. na Bojištu kod sela Tugova blizu Vlasenice u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 37,
     "pdf_y": 142.7,
     "pdf_x": 107.4,
@@ -9955,7 +10739,15 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada",
+    "birth_place": "Manastirica, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1922"
   },
   {
     "last_name": "Marjanović",
@@ -10036,7 +10828,33 @@
     "pdf_x_end": 341.4,
     "pdf_x_left": 61.4,
     "death_place": "kod sela Bijele zaselak Branovac blizu Gradačca",
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "birth_place": "Vošanovac, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001304",
+        "name": "Marković Branislav",
+        "additional_info": "borac 2. čete 4. bataljona, rođen 1924. u selu Vošanovac kod Petrovca na Mlavi, poginuo 29. marta 1945. kod sela Bijela zaselak Branovac (Gradačac) u borbi protiv Nemaca i ustaša.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 40,
+        "pdf_x": 80.4,
+        "pdf_y": 428.9,
+        "pdf_x_end": 385.6,
+        "pdf_y_end": 454.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.03.1945",
+          "place": "kod sela Bijele zaselak Branovac blizu Gradačca"
+        }
+      ]
+    }
   },
   {
     "last_name": "Marković",
@@ -10058,7 +10876,25 @@
     "pdf_x_end": 343.7,
     "pdf_x_left": 62.2,
     "death_place": "Ledenice, Katoličkih, Modriča",
-    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada",
+    "birth_place": "Starčevo, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001313",
+        "name": "Marković Jovan",
+        "additional_info": "borac 3. čete 2. bataljona, rođen 1926. u selu Starčevo kod Petrovca na Mlavi, poginuo 17. marta 1945. kod sela Katoličke Ledenice blizu Modriča u borbi protiv ustaša, domobrana i četnika, sahranjen u Katoličkim Ledenicama na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 60.0,
+        "pdf_y": 382.1,
+        "pdf_x_end": 365.3,
+        "pdf_y_end": 416.5,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marković",
@@ -10104,7 +10940,16 @@
       }
     ],
     "death_place": "Vlasenica",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Marković",
@@ -10150,7 +10995,16 @@
     ],
     "occupation": "zemljoradnik",
     "death_place": "Lisi, Lučani, Požega",
-    "unit_detail": "4. bataljon, 16. srpska brigada"
+    "unit_detail": "4. bataljon, 16. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Marković",
@@ -10210,7 +11064,8 @@
         "pdf_y_end": 512.1,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.02.1914"
   },
   {
     "last_name": "Martinović",
@@ -10283,7 +11138,8 @@
         "pdf_y_end": 414.1,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "08.03.1912"
   },
   {
     "last_name": "Marčić",
@@ -10361,6 +11217,10 @@
         "source_page": 402,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10407,7 +11267,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Matejić",
@@ -10528,7 +11392,8 @@
         "pdf_y_end": 179.5,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "26.08.1920"
   },
   {
     "last_name": "Matuljević",
@@ -10640,7 +11505,11 @@
       }
     ],
     "birth_place": "Klakar",
-    "unit_detail": "16. srpska brigada"
+    "unit_detail": "16. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Micić",
@@ -10944,7 +11813,8 @@
         "pdf_y_end": 213.5,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.07.1927"
   },
   {
     "last_name": "Milanović",
@@ -11004,7 +11874,12 @@
         "pdf_y_end": 121.6,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Milanović",
@@ -11252,7 +12127,11 @@
       }
     ],
     "death_place": "Donji Svilaj, Modriča",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Milenković",
@@ -11340,7 +12219,13 @@
         "source_page": 320,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lađevci"
   },
   {
     "last_name": "Milenković",
@@ -11363,7 +12248,21 @@
     "pdf_x_end": 387.9,
     "pdf_x_left": 107.3,
     "death_place": "kod sela Glodi blizu Zvornika",
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073001501",
+        "name": "Milenković Stojan",
+        "additional_info": "vodnik voda u 1. četi 3. bataljona, rođen 1914. u selu Mala Reka kod Kruševca, poginuo 2. februara 1945. kod sela Glodi blizu Zvornika u borbi protiv Nemaca, sahranjen u Glodima.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 48.6,
+        "pdf_y": 460.9,
+        "pdf_x_end": 353.8,
+        "pdf_y_end": 486.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milenković",
@@ -11407,7 +12306,25 @@
     "pdf_x_end": 342.9,
     "pdf_x_left": 62.4,
     "death_place": "Zelinja, Gradačac",
-    "unit_detail": "2. četa, 1. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 1. bataljon, 19. srpska brigada",
+    "birth_place": "Veliki Popovac, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001505",
+        "name": "Milenković Živojin",
+        "additional_info": "borac 2. čete 1. bataljona, rođen 1920. u selu Veliki Popovac kod Petrovca na Mlavi, poginuo 20. marta 1945. kod sela Zelinja blizu Gradačca u borbi protiv četnika.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 50.0,
+        "pdf_y": 437.9,
+        "pdf_x_end": 355.3,
+        "pdf_y_end": 463.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milenković",
@@ -11440,6 +12357,10 @@
         "source_page": 324,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11522,7 +12443,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Milenkoviđ",
@@ -11662,7 +12587,8 @@
     "death_date": "19.03.1945",
     "pdf_x_end": 345.2,
     "pdf_x_left": 64.5,
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "birth_date": "24.07.1923"
   },
   {
     "last_name": "Milivojević",
@@ -11694,7 +12620,14 @@
         "source_page": 947,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Knežica, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_date": "21.09.1925"
   },
   {
     "last_name": "Milić",
@@ -11739,7 +12672,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Milić",
@@ -11793,8 +12730,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=983",
         "source_page": 983,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001556",
+        "name": "Milić Života",
+        "additional_info": "desetar u 2. četi 4. bataljona, rođen 1921. u selu Busur kod Petrovca na Mlavi, poginuo 11. aprila 1945. godine kod sela Garevac blizu Modriče, u borbi protiv ustaša, sahranjen u rodnom mestu.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 53.6,
+        "pdf_y": 220.3,
+        "pdf_x_end": 358.7,
+        "pdf_y_end": 246.3,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Busur, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Miljković",
@@ -11863,7 +12818,16 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Miljković",
@@ -11917,7 +12881,11 @@
       }
     ],
     "death_place": "Bosna",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Miljković",
@@ -12076,7 +13044,12 @@
         "source_page": 413,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "14.02.1926"
   },
   {
     "last_name": "Miloradović",
@@ -12152,14 +13125,20 @@
         "source_page": 944,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Bistrica, Paraćin",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Milosavljević",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Milosavljević Milan",
+    "fathers_name": "S",
+    "full_name": "Milosavljević S Milan",
     "additional_info": "borac disciplinske čete 19. srpske brigade, poginuo 9. aprila 1945. god. kod sela Čardaka blizu Modriča u borbi protiv ustaša i domobrana; sahranjen u selu Čardaku na groblju.",
     "birth_year": "",
     "pdf_page": 68,
@@ -12174,7 +13153,25 @@
     "pdf_x_end": 346.0,
     "pdf_x_left": 65.9,
     "death_place": "Čardak, Modriča",
-    "unit_detail": "19. srpska brigada"
+    "unit_detail": "19. srpska brigada",
+    "birth_place": "Vošanovac",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001616",
+        "name": "Milosavljević S Milan",
+        "additional_info": "iz Vošanovca, borac 2. bataljona 19. brigade, poginuo 9. aprila 1945. godine, kod mesta Čardak.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 79.0,
+        "pdf_y": 408.3,
+        "pdf_x_end": 384.7,
+        "pdf_y_end": 425.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milosavljević",
@@ -12243,6 +13240,10 @@
         "source_page": 324,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12300,7 +13301,8 @@
     "rank": "borac",
     "pdf_x_end": 369.3,
     "pdf_x_left": 88.7,
-    "unit_detail": "3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. bataljon, 19. srpska brigada",
+    "birth_date": "22.09.1919"
   },
   {
     "last_name": "Milovanović",
@@ -12482,7 +13484,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Milošević",
@@ -12539,7 +13545,13 @@
         "source_page": 133,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Milošević",
@@ -12561,7 +13573,25 @@
     "pdf_x_end": 342.4,
     "pdf_x_left": 62.0,
     "death_place": "Čardak, Modriča",
-    "unit_detail": "2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. bataljon, 19. srpska brigada",
+    "birth_place": "Stamnica, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001695",
+        "name": "Milošević Mile",
+        "additional_info": "borac - izviđač 2. bataljona, rođen 1923. u selu Stamnica kod Petrovca na Mlavi, poginuo 9. aprila 1945. kod sela Čardak blizu Modriče u borbi protiv ustaša, sahranjen u Čardaku.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 53.8,
+        "pdf_y": 36.3,
+        "pdf_x_end": 358.6,
+        "pdf_y_end": 62.3,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milošević",
@@ -12570,7 +13600,6 @@
     "fathers_name": "",
     "full_name": "Milošević Milić",
     "additional_info": "borac 1. čete 1. bataljona 19. srpske brigade, poginuo 3. februara 1945. god. kod sela Đevanja blizu Zvornika u borbi protiv Nemaca; sahranjen kod Đevanja.",
-    "birth_year": "",
     "pdf_page": 34,
     "pdf_y": 138.8,
     "pdf_x": 81.9,
@@ -12593,7 +13622,15 @@
         "source_page": 663,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Ravnište, Kučevo",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1921"
   },
   {
     "last_name": "Milošević",
@@ -12851,6 +13888,10 @@
         "source_page": 1055,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12991,7 +14032,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Mišić",
@@ -13293,6 +14338,10 @@
         "source_page": 666,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13457,7 +14506,6 @@
     "fathers_name": "",
     "full_name": "Nedeljković Danilo",
     "additional_info": "zamenik političkog komesara 2. čete 2. bataljona 16. srpske brigade, rođen u selu Potočiću kod Prokuplja, ranjen 26. jula 1944. god. blizu sela Lajčića kod Kosovske Kamenice u borbi protiv albanskih kvislinga; istog dana podlegao ranama.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 400.7,
     "pdf_x": 89.0,
@@ -13479,7 +14527,17 @@
         "source_page": 1061,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Velja trava-leb",
+    "birth_year": "1923"
   },
   {
     "last_name": "Nedeljković",
@@ -13605,7 +14663,8 @@
     "pdf_x_end": 380.6,
     "pdf_x_left": 100.6,
     "death_place": "Gornji Svilaj, Modriča",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "08.03.1920"
   },
   {
     "last_name": "Negojević",
@@ -13628,7 +14687,8 @@
     "pdf_x_end": 373.9,
     "pdf_x_left": 93.9,
     "death_place": "Turić, Gradačac",
-    "unit_detail": "3. četa, 4. bataljon, 18. srpska brigada"
+    "unit_detail": "3. četa, 4. bataljon, 18. srpska brigada",
+    "birth_date": "06.05.1925"
   },
   {
     "last_name": "Negrović",
@@ -13756,7 +14816,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Nikojšć",
@@ -13822,7 +14886,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -13919,7 +14987,8 @@
         "pdf_y_end": 100.2,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "20.01.1920"
   },
   {
     "last_name": "Nikolić",
@@ -14094,6 +15163,10 @@
         "source_page": 1321,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14149,7 +15222,6 @@
     "fathers_name": "",
     "full_name": "Nikolić S Petar",
     "additional_info": "borac 1. čete 1. bataljona 16. srpske brigade, rođen u selu Lukama (verovatno kod Bora), poginuo 19. januara 1945. god. kod sela Zukića (Živinice) blizu Tuzle.",
-    "birth_year": "",
     "pdf_page": 73,
     "pdf_y": 278.9,
     "pdf_x": 120.9,
@@ -14173,7 +15245,13 @@
         "source_page": 329,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Nikolić",
@@ -14251,7 +15329,16 @@
       }
     ],
     "death_place": "Bosna",
-    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -14290,7 +15377,15 @@
         "source_page": 217,
         "ref_book": "knjazevac-pomenik"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "S.čoloteč zvorn"
   },
   {
     "last_name": "Nikolić",
@@ -14312,7 +15407,25 @@
     "pdf_x_end": 378.8,
     "pdf_x_left": 97.4,
     "death_place": "Čačak",
-    "unit_detail": "2. četa, 1. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 1. bataljon, 19. srpska brigada",
+    "birth_place": "Vošanovac, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001920",
+        "name": "Nikolić Vidoje",
+        "additional_info": "borac 1. čete 1. bataljona, rođen 1924. u selu Vošanovac kod Petrovca na Mlavi, ranjen 8. februara 1945. (verovatno u blizini sela Grabovca kod Zvornika) u borbi protiv Nemaca, podlegao ranama 28. marta 1945. u bolnici u Čačku.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 80.4,
+        "pdf_y": 289.9,
+        "pdf_x_end": 385.8,
+        "pdf_y_end": 324.3,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -14344,7 +15457,14 @@
         "source_page": 1406,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Nikoličevo, Zaječar",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_date": "01.09.1920"
   },
   {
     "last_name": "Nikolić",
@@ -14377,6 +15497,10 @@
         "source_page": 1115,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14414,7 +15538,8 @@
         "pdf_y_end": 497.5,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "23.04.1922"
   },
   {
     "last_name": "Nikolić",
@@ -14828,7 +15953,12 @@
         "pdf_y_end": 170.8,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1899"
+      ]
+    }
   },
   {
     "last_name": "Pahanov",
@@ -15042,7 +16172,8 @@
         "pdf_y_end": 237.3,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "05.03.1909"
   },
   {
     "last_name": "Papić",
@@ -15193,7 +16324,16 @@
       }
     ],
     "death_place": "Požega",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1911"
+      ]
+    }
   },
   {
     "last_name": "Paunović",
@@ -15202,7 +16342,6 @@
     "fathers_name": "A",
     "full_name": "Paunović A Božidar",
     "additional_info": "borac 2. čete 3. bataljona 19. srpske brigade, poginuo 9. februara 1945. god. na Vjenčacu kod sela Grbavaca blizu Zvornika u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 36,
     "pdf_y": 186.6,
     "pdf_x": 91.5,
@@ -15238,7 +16377,13 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Paunović",
@@ -15260,7 +16405,8 @@
     "pdf_x_end": 380.2,
     "pdf_x_left": 99.2,
     "death_place": "kod sela Kadara blizu Modriča",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "birth_date": "20.09.1923"
   },
   {
     "last_name": "Paunović",
@@ -15283,7 +16429,8 @@
     "pdf_x_end": 375.5,
     "pdf_x_left": 95.6,
     "death_place": "Kladari, Modriča",
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "birth_date": "10.03.1922"
   },
   {
     "last_name": "Paunović",
@@ -15328,7 +16475,11 @@
       }
     ],
     "death_place": "u rejonu Gradač",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Paunović",
@@ -15462,7 +16613,25 @@
     "pdf_x_end": 380.3,
     "pdf_x_left": 99.2,
     "death_place": "kod sela Bijeli zaselak Branovac blizu Gradačca",
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "birth_place": "Dubočka, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073002099",
+        "name": "Paunović Petar",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1919. u selu Dubočka kod Petrovca na Mlavi, poginuo 28. marta 1945. kod sela Bijeli zaselak Branovac (Gradačac) u borbi protiv Nemaca i ustaša.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 59.2,
+        "pdf_y": 455.0,
+        "pdf_x_end": 364.2,
+        "pdf_y_end": 480.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Paunović",
@@ -15742,8 +16911,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=21",
         "source_page": 21,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002129",
+        "name": "Pavić Miodrag",
+        "additional_info": "borac 2. bataljona, rođen 1912. u selu Trnjani kod Požarevca, teško ranjen 7. decembra 1944. u borbi kod Arilja, podlegao ranama u bolnici u Čačku.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 54.3,
+        "pdf_y": 482.0,
+        "pdf_x_end": 359.5,
+        "pdf_y_end": 507.9,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Trnjani, Požarevac",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_date": "1944"
   },
   {
     "last_name": "Pavlović",
@@ -15870,7 +17059,6 @@
     "fathers_name": "",
     "full_name": "Pavlović Ljubodrag",
     "additional_info": "desetar u 2. četi 2. bataljona 16. srpske brigade, rođen u selu Gornjoj Sokolovici kod Knjaževca, umro 6. aprila 1945. god. u selu Donjem Srebreniku kod Tuzle od zadobijeni rana; sahranjen u Donjem Srebreniku.",
-    "birth_year": "",
     "pdf_page": 58,
     "pdf_y": 478.0,
     "pdf_x": 84.0,
@@ -15902,7 +17090,13 @@
         "source_page": 119,
         "ref_book": "knjazevac-pomenik"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Pavlović",
@@ -15991,7 +17185,25 @@
     "pdf_x_end": 347.2,
     "pdf_x_left": 66.2,
     "death_place": "na brdu Panikama kod sela Gornjih Hrgova blizu Gradačca",
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "birth_place": "Melnica, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073002165",
+        "name": "Pavlović Pavle",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1908. u selu Melnica kod Petrovca na Mlavi, poginuo 5. aprila 1945. na brdu Panike kod sela Gornji Hrgovi (Gradačac) u borbi protiv Nemaca i ustaša, sahranjen na Panikama.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 59.4,
+        "pdf_y": 321.1,
+        "pdf_x_end": 364.1,
+        "pdf_y_end": 356.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -16036,7 +17248,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -16082,7 +17298,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -16104,7 +17324,21 @@
     "pdf_x_end": 379.3,
     "pdf_x_left": 98.2,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073002183",
+        "name": "Pavlović Vlada",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 9 februara 1945. kod sela Grbavac blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 29,
+        "pdf_x": 60.8,
+        "pdf_y": 297.0,
+        "pdf_x_end": 367.0,
+        "pdf_y_end": 313.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pašić",
@@ -16113,7 +17347,6 @@
     "fathers_name": "",
     "full_name": "Pašić Dimitrije",
     "additional_info": "borac 1. čete 4. bataljona 16. srpske brigade, rođen u selu Jasikovu kod Majdanpeka, poginuo 11. februara 1945. god. kod sela Tršića blizu Zvornika u borbi protiv Nemaca; sahranjen u Tršiću.",
-    "birth_year": "",
     "pdf_page": 84,
     "pdf_y": 462.6,
     "pdf_x": 89.8,
@@ -16137,7 +17370,13 @@
         "source_page": 1116,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Paška",
@@ -16482,7 +17721,12 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "20.04.1926"
   },
   {
     "last_name": "Petrović",
@@ -16568,7 +17812,12 @@
         "pdf_y_end": 374.8,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -16617,7 +17866,12 @@
         "pdf_y_end": 172.9,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1908"
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -16741,7 +17995,33 @@
     "pdf_x_end": 341.4,
     "pdf_x_left": 61.4,
     "death_place": "kod sela Bijele zaselak Branovac blizu Gradačca",
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "birth_place": "Busur, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073002320",
+        "name": "Petrović Radosav",
+        "additional_info": "borac 2. čete 4. bataljona, rođen 1922. u selu Busur kod Petrovca na Mlavi, poginuo 25. marta 1945. kod sela Bijela zaselak Branovac (Gradačac) u borbi protiv Nemaca i ustaša, sahranjen u Branovcu.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 78.8,
+        "pdf_y": 427.0,
+        "pdf_x_end": 384.1,
+        "pdf_y_end": 462.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.03.1945",
+          "place": "kod sela Bijele zaselak Branovac blizu Gradačca"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -16843,7 +18123,21 @@
     "pdf_x_end": 369.9,
     "pdf_x_left": 89.7,
     "death_place": "Barice, Vlasenica",
-    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073002328",
+        "name": "Petrović Svetomir",
+        "additional_info": "borac 3. čete 3. bataljona, poginuo 21. januara 1945. kod zaseoka Barice blizu Vlasenice, u borbi protiv Nemaca, sahranjen u Kojčevini kod Vlasenice.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 83.5,
+        "pdf_y": 405.2,
+        "pdf_x_end": 389.1,
+        "pdf_y_end": 430.6,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petrović",
@@ -16865,7 +18159,21 @@
     "pdf_x_end": 367.6,
     "pdf_x_left": 87.0,
     "death_place": "Šekovići, Vlasenica",
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073002330",
+        "name": "Petrović Svetozar",
+        "additional_info": "vodnik voda u 2. četi 4. bataljona, poginuo 23. januara 1945. kod sela Šekovići (Vlasenica) u borbi protiv Nemaca, sahranjen u selu Dubnica kod Vlasenica.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 78.5,
+        "pdf_y": 340.8,
+        "pdf_x_end": 383.9,
+        "pdf_y_end": 367.7,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petrović",
@@ -16887,7 +18195,25 @@
     "pdf_x_end": 345.9,
     "pdf_x_left": 66.2,
     "death_place": "na brdu Panikama kod sela Gornjih Hrgova blizu Gradačca",
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "birth_place": "Busur, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073002334",
+        "name": "Petrović Veselin",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1908. u selu Busur kod Petrovca na Mlavi, poginuo 5. aprila 1945. na brdu Panike kod sela Gornjih Hrgovi (Gradačac) u borbi protiv Nemaca i ustaša, sahranjen na Panikama;",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 78.5,
+        "pdf_y": 213.4,
+        "pdf_x_end": 384.0,
+        "pdf_y_end": 249.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petrović",
@@ -17004,7 +18330,8 @@
         "pdf_y_end": 414.2,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.03.1922"
   },
   {
     "last_name": "Pivarević",
@@ -17081,6 +18408,10 @@
         "source_page": 1290,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17150,7 +18481,6 @@
     "fathers_name": "",
     "full_name": "Popadić Ivan",
     "additional_info": "borac 1. čete 4. bataljona 16. srpske brigade, rođen u selu Sikolama kod Negotina, poginuo 30. marta 1945. god. kod zaseoka Mustafića (Donji Srebrenik) blizu Tuzle u borbi protiv Nemaca i ustaša; sahranjen u Mustafiću.",
-    "birth_year": "",
     "pdf_page": 61,
     "pdf_y": 446.7,
     "pdf_x": 121.0,
@@ -17174,7 +18504,13 @@
         "source_page": 1115,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Popović",
@@ -17255,7 +18591,6 @@
     "fathers_name": "Vlada",
     "full_name": "Popović Vlada Milutin",
     "additional_info": "borac 2. čete 3. bataljona 18. srpske brigade, rođen u selu Subjelu kod Kosjerića, umro 12. maja 1945. god. od TBC u bolnici.",
-    "birth_year": "",
     "pdf_page": 73,
     "pdf_y": 49.7,
     "pdf_x": 120.4,
@@ -17278,7 +18613,15 @@
         "source_page": 506,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Šabac",
+    "birth_year": "1921"
   },
   {
     "last_name": "Popović",
@@ -17420,7 +18763,15 @@
         "pdf_y_end": 105.9,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.02.1945",
+          "place": "Sokolina, Zvornik"
+        }
+      ]
+    }
   },
   {
     "last_name": "Prlić",
@@ -17465,7 +18816,6 @@
     "fathers_name": "",
     "full_name": "Prstić Đorđe",
     "additional_info": "borac 1. bataljona 16. erpske brigade, rođen u selu Miloševu kod Negotina, poginuo 27. marta 1945. god. kod sela Hrgova blizu Gradačca u borbi protiv Nemaca i ustaša.",
-    "birth_year": "",
     "pdf_page": 61,
     "pdf_y": 45.2,
     "pdf_x": 118.6,
@@ -17489,7 +18839,13 @@
         "source_page": 843,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Pršujković",
@@ -17521,7 +18877,6 @@
     "fathers_name": "",
     "full_name": "Pufović Marin",
     "additional_info": "borac 3. čete 4. bataljona 16. srpske brigade, rođen u selu Gradskovu kod Zaječara, poginuo 2. februara 1945. god. kod sela Kula Grada blizu Zvornika u borbi protiv Nemaca; sahranjen u Kula Gradu.",
-    "birth_year": "",
     "pdf_page": 89,
     "pdf_y": 402.7,
     "pdf_x": 130.8,
@@ -17545,7 +18900,13 @@
         "source_page": 1403,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1909"
   },
   {
     "last_name": "Punđelović",
@@ -17609,7 +18970,15 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Arilje"
   },
   {
     "last_name": "Radenkovšu",
@@ -17698,7 +19067,11 @@
       }
     ],
     "death_place": "u rejonu Drinjače",
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Radić",
@@ -17774,7 +19147,6 @@
     "fathers_name": "",
     "full_name": "Radojković Kristivoje",
     "additional_info": "desetar (moguće politički komesar — prim. red.) 2. čete 3. bataljona 19. srpske brigade, rođen u selu Donjem Matejevcu kod Niša, poginuo 17. januara 1945. god., kod sela Gradine blizu Vlasenici u borbi protiv Nemaca; sahranjen kraj puta Zvornik — selo Zaklopača.",
-    "birth_year": "",
     "pdf_page": 36,
     "pdf_y": 309.7,
     "pdf_x": 91.5,
@@ -17798,7 +19170,13 @@
         "source_page": 855,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Radojković",
@@ -17843,7 +19221,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 19. srpska brigada"
+    "unit_detail": "4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Radojković",
@@ -17889,7 +19271,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Radosavljević",
@@ -18075,7 +19461,12 @@
       }
     ],
     "death_place": "u rejonu Gradačca",
-    "unit_detail": "2. četa, 4. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "11.10.1920"
   },
   {
     "last_name": "Radovanović",
@@ -18132,7 +19523,19 @@
     ],
     "rank": "izviđač",
     "death_place": "Majevica",
-    "unit_detail": "1. bataljon, 19. srpska brigada"
+    "unit_detail": "1. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.02.1945",
+          "place": "Majevica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Radovanović",
@@ -18390,7 +19793,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rakić",
@@ -18436,7 +19843,11 @@
       }
     ],
     "birth_place": "Burovac",
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rakić",
@@ -18445,7 +19856,6 @@
     "fathers_name": "",
     "full_name": "Rakić Stojan",
     "additional_info": "borac 3. čete 1. bataljona 16. srpske brigade, rođen u Kruševcu, poginuo 4. decembra 1944. god. kod sela Krstaca blizu Požege u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 15,
     "pdf_y": 235.9,
     "pdf_x": 120.9,
@@ -18469,7 +19879,13 @@
         "source_page": 654,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Ranđelović",
@@ -18515,7 +19931,8 @@
     "pdf_x_end": 342.7,
     "pdf_x_left": 62.1,
     "death_place": "kod sela Kadara blizu Modriča",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "birth_date": "23.07.1923"
   },
   {
     "last_name": "Rašić",
@@ -18570,6 +19987,10 @@
         "source_page": 23,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18602,7 +20023,13 @@
         "source_page": 841,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Mali zvornik"
   },
   {
     "last_name": "Ražić",
@@ -18692,8 +20119,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=949",
         "source_page": 949,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002567",
+        "name": "Redić Vlajko",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1905. u selu Melnica kod Petrovca na Mlavi, poginuo 10. aprila 1945. kod sela Čardak (Modriča) u borbi protiv ustaša i domobrana, sahranjen u Čardaku na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 45,
+        "pdf_x": 54.9,
+        "pdf_y": 305.2,
+        "pdf_x_end": 361.8,
+        "pdf_y_end": 331.1,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Melnica, Petrovac na Mlavi",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Ristić",
@@ -18776,7 +20221,11 @@
       }
     ],
     "death_place": "Đevanje, Zvornik",
-    "unit_detail": "3. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rnić",
@@ -18998,7 +20447,13 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 1. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 1. bataljon, 19. srpska brigada",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Tuzla"
   },
   {
     "last_name": "Sandulović",
@@ -19007,7 +20462,6 @@
     "fathers_name": "",
     "full_name": "Sandulović Dimitrije",
     "additional_info": "borac 2. bataljona 16. srpske brigade, rođen u selu Velikoj Vrbici kod Kladova, poginuo 30. marta 1945. godine kod sela Babunovića (Srebrenik) blizu Tuzle u borbi protiv Nemaca i ustaša, sahranjen u Babunovićima u njivi Finka Fendića.",
-    "birth_year": "",
     "pdf_page": 63,
     "pdf_y": 362.7,
     "pdf_x": 120.8,
@@ -19031,7 +20485,13 @@
         "source_page": 472,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Savić",
@@ -19098,7 +20558,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Savić",
@@ -19143,7 +20607,11 @@
       }
     ],
     "death_place": "kod sela Garevca blizu Modriča i zelenog kadra",
-    "unit_detail": "1. bataljon, 19. srpska brigada"
+    "unit_detail": "1. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Saviđ",
@@ -19211,7 +20679,11 @@
       }
     ],
     "death_place": "Kraljevo",
-    "unit_detail": "1. četa, 1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. četa, 1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Serijević",
@@ -19293,7 +20765,8 @@
     "unit_detail": "3. bataljon",
     "pdf_x_end": 334.8,
     "pdf_x_left": 53.9,
-    "death_place": "Garevac, Modriča"
+    "death_place": "Garevac, Modriča",
+    "birth_date": "14.11.1922"
   },
   {
     "last_name": "Simić",
@@ -19326,7 +20799,12 @@
         "source_page": 1192,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "15.04.1913"
   },
   {
     "last_name": "Simić",
@@ -19408,7 +20886,6 @@
     "fathers_name": "",
     "full_name": "Simić Đorđe",
     "additional_info": "borac 16. srpske brigade, rođen u selu Sikolama kod Negotina, ranjen 9. februara 1945. god. kod sela Tršića blizu Zvornika u borbi protiv Nemaca, umro u bolnici u Banji Koviljači; sahranjen u Banji Koviljači.",
-    "birth_year": "",
     "pdf_page": 84,
     "pdf_y": 269.4,
     "pdf_x": 89.6,
@@ -19431,7 +20908,15 @@
         "source_page": 1115,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "birth_year": "1925"
   },
   {
     "last_name": "Simonović",
@@ -19495,7 +20980,6 @@
     "fathers_name": "",
     "full_name": "Simonović Ljubomir",
     "additional_info": "borac 3. bataljona 18. srpske brigade, rođen u selu Velikoj Plani kod Prokuplja, poginuo 18. avgusta 1944. god. kod sela Niševca blizu Svrljiga u borbi protiv Bugara.",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 326.0,
     "pdf_x": 113.8,
@@ -19519,7 +21003,13 @@
         "source_page": 1068,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Simonović",
@@ -19625,7 +21115,19 @@
       }
     ],
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.04.1945",
+          "place": "na Hajdučkom brdu kod Srebrenika blizu Tuzle"
+        }
+      ]
+    }
   },
   {
     "last_name": "Simonović",
@@ -19724,7 +21226,13 @@
         "source_page": 563,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Resnik, Kragujevac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Slavković",
@@ -19792,7 +21300,25 @@
     "pdf_x_end": 346.1,
     "pdf_x_left": 66.5,
     "death_place": "kod sela Srpske Špionice blizu Tuzle",
-    "unit_detail": "19. srpska brigada"
+    "unit_detail": "19. srpska brigada",
+    "birth_place": "Ranovac",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073002666",
+        "name": "Soldatović Aleksa",
+        "additional_info": "borac voda za vezu tehničke čete 19. brigade, rođen 1928. u selu Ranovac, kod Petrovca, poginuo 6. aprila 1945. kod sela Srpske Špionice blizu Tuzle u borbi protiv Nemaca i ustaša, sahranjen u Srpskoj Špionici na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 51.9,
+        "pdf_y": 286.9,
+        "pdf_x_end": 357.2,
+        "pdf_y_end": 321.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Soldatović",
@@ -19952,7 +21478,6 @@
     "fathers_name": "",
     "full_name": "Spasojević Dobrivoje",
     "additional_info": "borac 16. srpske brigade, rođen u selu Braljini (verovatno kod Ćićevca — prim. red.), poginuo 17. jula 1944. god. na planini Lepencu kod Blaca u borbi protiv četnika.",
-    "birth_year": "",
     "pdf_page": 83,
     "pdf_y": 195.0,
     "pdf_x": 119.3,
@@ -19976,7 +21501,13 @@
         "source_page": 377,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Spasojević",
@@ -20008,7 +21539,6 @@
     "fathers_name": "",
     "full_name": "Kraničanin Krsta",
     "additional_info": "borac 2. čete 2. bataljona 19. srpske brigade, star 21. god., rođen u Majdanpeku, poginuo 7. oktobra 1944. god. u selu Rudnoj glavi kod Donjeg Milanovca u borbi protiv Nemaca: sahranjen u Rudnoj Glavi.",
-    "birth_year": "1923",
     "pdf_file": "25-srpska-divizija.pdf",
     "pdf_page": 9,
     "pdf_y": 49.3,
@@ -20022,6 +21552,10 @@
     "pdf_y_end": 83.8,
     "pdf_x_left": 97.7,
     "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0073001083",
@@ -20080,7 +21614,12 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "15.02.1923"
   },
   {
     "last_name": "Srdulović",
@@ -20112,7 +21651,6 @@
     "fathers_name": "",
     "full_name": "Srejić Dragoljub",
     "additional_info": "borac 4. bataljona 19. srpske brigade, rođen u selu Boževcu kod Požarevca, umro 20. novembra 1944. god. u Požarevcu; sahranjen u selu Boževcu.",
-    "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 148.8,
     "pdf_x": 81.9,
@@ -20148,7 +21686,21 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 19. srpska brigada"
+    "unit_detail": "4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925",
+    "variants": {
+      "death": [
+        {
+          "date": "29.11.1944",
+          "place": "Požarevac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sretković",
@@ -20281,7 +21833,12 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "19.12.1925"
   },
   {
     "last_name": "Stamenković",
@@ -20331,7 +21888,13 @@
         "pdf_y_end": 507.8,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "20.05.1923",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Stanisavljević",
@@ -20364,6 +21927,10 @@
         "source_page": 13,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20445,7 +22012,8 @@
     "rank": "borac",
     "pdf_x_end": 345.1,
     "pdf_x_left": 65.1,
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "05.01.1922"
   },
   {
     "last_name": "Stanišić",
@@ -20488,7 +22056,21 @@
     "pdf_x_end": 378.3,
     "pdf_x_left": 98.2,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073002715",
+        "name": "Stanković Dragomir",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 9. februara 1945. kod sela Grbavca blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 78.3,
+        "pdf_y": 347.8,
+        "pdf_x_end": 384.0,
+        "pdf_y_end": 364.6,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanković",
@@ -20576,7 +22158,11 @@
       }
     ],
     "birth_place": "Desine",
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stanković",
@@ -20733,6 +22319,10 @@
         "source_page": 847,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20815,7 +22405,19 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "3. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.05.1945",
+          "place": "kod Ratkovog potoka (nije moglo da se utvrdi"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanojević",
@@ -20938,6 +22540,10 @@
         "source_page": 847,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20983,7 +22589,17 @@
       }
     ],
     "death_place": "u rejonu Odžaka",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "11.02.1922",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Stanojlović",
@@ -21016,7 +22632,12 @@
         "source_page": 330,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "10.03.1912"
   },
   {
     "last_name": "Stančević",
@@ -21092,8 +22713,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1325",
         "source_page": 1325,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0128004008",
+        "name": "Stefanović Dimitrije",
+        "additional_info": "1926. Češljeva Bara. Poginuo januara 1945. u rejonu Drinjače",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 99,
+        "pdf_x": 233.4,
+        "pdf_y": 394.3,
+        "pdf_x_end": 383.3,
+        "pdf_y_end": 419.6,
+        "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Češljeva Bara",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Stefanović",
@@ -21126,6 +22765,10 @@
         "source_page": 1403,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21224,7 +22867,15 @@
         "source_page": 958,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Zabrđe, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Gračanica"
   },
   {
     "last_name": "Stepanović",
@@ -21392,7 +23043,13 @@
         "source_page": 757,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Pomijača, Loznica",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Stevanoviđ",
@@ -21556,7 +23213,8 @@
     "rank": "borac",
     "pdf_x_end": 374.4,
     "pdf_x_left": 93.2,
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "birth_date": "05.06.1919"
   },
   {
     "last_name": "Stević",
@@ -21625,7 +23283,16 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Stojadinović",
@@ -21671,7 +23338,11 @@
       }
     ],
     "death_place": "u rejonu Drinjače",
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stojadinović",
@@ -21730,7 +23401,15 @@
         "pdf_y_end": 232.9,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.04.1945",
+          "place": "Gradačac (istočna Bosna)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojaković",
@@ -21866,7 +23545,14 @@
         "source_page": 1193,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Jošanički Prnjavor, Svetozarevo",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_date": "14.11.1920"
   },
   {
     "last_name": "Stojanović",
@@ -21961,7 +23647,11 @@
     ],
     "birth_place": "Mesurovo",
     "death_place": "Đevanje, Zvornik",
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -21993,7 +23683,14 @@
         "source_page": 86,
         "ref_book": "zrtve-rata-1964-kos"
       }
-    ]
+    ],
+    "birth_place": "Priština",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_date": "01.01.1923"
   },
   {
     "last_name": "Stojanović",
@@ -22002,7 +23699,6 @@
     "fathers_name": "",
     "full_name": "Stojanović Trifun",
     "additional_info": "borac 1. čete 3. bataljona 19. srpske brigade, poginuo 23. januara 1945. god. kod sela Selišta blizu Šekovića (Vlasenice) u borbi protiv Nemaca; sahranjen kod Selišta.",
-    "birth_year": "",
     "pdf_page": 40,
     "pdf_y": 399.5,
     "pdf_x": 81.2,
@@ -22024,8 +23720,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1448",
         "source_page": 1448,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002910",
+        "name": "Stojanović Trifun",
+        "additional_info": "borac 1. čete 3. bataljona, poginuo 23. januara 1945. kod sela Selište blizu Šekovića (Vlasenica) u borbi protiv Nemaca, sahranjen kod Selišta.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 61.9,
+        "pdf_y": 145.0,
+        "pdf_x_end": 366.9,
+        "pdf_y_end": 171.9,
+        "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Pejkovac, Žitoradja",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1917"
   },
   {
     "last_name": "Stojanović",
@@ -22070,7 +23786,11 @@
       }
     ],
     "death_place": "Požega",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -22092,7 +23812,8 @@
     "pdf_x_end": 333.6,
     "pdf_x_left": 53.7,
     "death_place": "Garevac, Modriča",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "15.03.1919"
   },
   {
     "last_name": "Stojičević",
@@ -22184,7 +23905,6 @@
     "fathers_name": "Krsto",
     "full_name": "Stojković Krste Dragoljub",
     "additional_info": "borac 1. bataljona 16. srpske brigade, rođen u Majdanpeku, poginuo 31. marta 1945. god. (moguće 29. marta — prim. red.) kod zaseoka Mustafića (Donji Srebrenik) blizu Tuzle u borbi protiv Nemaca i ustaša; sahranjen u zaseoku Čehajama kod Srebrenika (Tuzla) u bašti Osmana Smajlovića.",
-    "birth_year": "",
     "pdf_page": 62,
     "pdf_y": 109.9,
     "pdf_x": 79.7,
@@ -22207,7 +23927,15 @@
         "source_page": 777,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Srebrenik",
+    "birth_year": "1926"
   },
   {
     "last_name": "Stojković",
@@ -22254,7 +23982,6 @@
     "fathers_name": "",
     "full_name": "Stojković Milenko",
     "additional_info": "borac 3. čete 3. bataljona 16. srpske brigade, rođen u selu Vrbovcu kod Boljevca, poginuo 13. marta 1945. god. na brdu Jeliku kod sela Srpske Zelinje blizu Gradačca u borbi protiv četnika; sahranjen na Jeliku.",
-    "birth_year": "",
     "pdf_page": 87,
     "pdf_y": 49.4,
     "pdf_x": 111.9,
@@ -22278,7 +24005,13 @@
         "source_page": 324,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Stojković",
@@ -22458,7 +24191,12 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "25.08.1918"
   },
   {
     "last_name": "Surdanović",
@@ -22491,6 +24229,10 @@
         "source_page": 330,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22682,7 +24424,12 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "19.08.1910"
   },
   {
     "last_name": "Tintor",
@@ -22761,7 +24508,16 @@
       }
     ],
     "death_place": "Požega",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Todosijević",
@@ -22876,6 +24632,10 @@
         "source_page": 788,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23010,7 +24770,6 @@
     "fathers_name": "",
     "full_name": "Trailović Svetozar",
     "additional_info": "borac 2. čete 4. bataljona 19. srpske brigade, poginuo 21. januara 1945. god. na Gradini kod Vlasenice u borbi protiv Nemaca; sahranjen u selu Stanišićima kod Vlasenice.",
-    "birth_year": "",
     "pdf_page": 40,
     "pdf_y": 353.4,
     "pdf_x": 81.2,
@@ -23033,7 +24792,15 @@
         "source_page": 949,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Manastirica, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1921"
   },
   {
     "last_name": "Trailović",
@@ -23042,7 +24809,6 @@
     "fathers_name": "",
     "full_name": "Trailović D Đorđe",
     "additional_info": "borac 16. srpske brigade, rođen u selu Urovici kod Negotina, poginuo 8. maja 1945. god. u Zagrebu u borbi protiv ustaša i Nemaca; sahranjen u Zagrebu na groblju,",
-    "birth_year": "",
     "pdf_page": 71,
     "pdf_y": 331.4,
     "pdf_x": 115.7,
@@ -23066,7 +24832,13 @@
         "source_page": 458,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Trajilović",
@@ -23088,7 +24860,33 @@
     "rank": "borac",
     "pdf_x_end": 344.5,
     "pdf_x_left": 64.2,
-    "unit_detail": "2. četa, 1. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 1. bataljon, 18. srpska brigada",
+    "birth_place": "Kamenovo",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073003076",
+        "name": "Trajilović Đ Dragoljub",
+        "additional_info": "iz Kamenova, borac 19. brigade, podlegao ranama 28. aprila 1945. godine, kod mesta Koprivna.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 61,
+        "pdf_x": 52.8,
+        "pdf_y": 55.8,
+        "pdf_x_end": 359.3,
+        "pdf_y_end": 72.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.04.1945",
+          "place": "Koprivna, Modriča"
+        }
+      ]
+    }
   },
   {
     "last_name": "Trajilović",
@@ -23170,7 +24968,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 2. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Trajković",
@@ -23207,7 +25009,8 @@
         "pdf_y_end": 458.4,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "16.10.1917"
   },
   {
     "last_name": "Trajković",
@@ -23252,7 +25055,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Trancić",
@@ -23274,7 +25081,21 @@
     "pdf_x_end": 342.9,
     "pdf_x_left": 62.7,
     "death_place": "Čardak, Modriča",
-    "unit_detail": "19. srpska brigada"
+    "unit_detail": "19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073003124",
+        "name": "Trancić Branko",
+        "additional_info": "ili Trandić; borac disciplinske čete, poginuo 10. aprila 1945. kod sela Čardak blizu Modriče u borbi protiv ustaša, sahranjen u Čardaku.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 52.2,
+        "pdf_y": 481.5,
+        "pdf_x_end": 357.1,
+        "pdf_y_end": 507.4,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Trautić",
@@ -23355,7 +25176,13 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon, 19. srpska brigada"
+    "unit_detail": "3. bataljon, 19. srpska brigada",
+    "birth_place": "Palača, Osijek",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srpkinja"
   },
   {
     "last_name": "Trešnjić",
@@ -23518,7 +25345,6 @@
     "fathers_name": "",
     "full_name": "Vasiljević Selimir",
     "additional_info": "borac 18. srpske brigade, rođen u Velikom Selu kod Požarevca, poginuo 25. aprila 1945. god. kod sela Gornjeg Svilaja blizu Modriča u borbi protiv ustaša.",
-    "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 52.3,
     "pdf_x": 81.4,
@@ -23542,7 +25368,13 @@
         "source_page": 790,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Vaćanin",
@@ -23622,7 +25454,8 @@
     "death_place": "u selu Garevcu kod Modriča",
     "pdf_x_end": 383.9,
     "pdf_x_left": 103.8,
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_date": "14.01.1922"
   },
   {
     "last_name": "Velić",
@@ -23667,7 +25500,21 @@
     "rank": "borac",
     "pdf_x_end": 379.2,
     "pdf_x_left": 98.0,
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073003191",
+        "name": "Velić Vitomir",
+        "additional_info": "ili Vejlić; borac 2. čete 3. bataljona, poginuo 9. februara 1945. blizu sela Grbavac kod Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 80.2,
+        "pdf_y": 288.3,
+        "pdf_x_end": 385.3,
+        "pdf_y_end": 305.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Velišić",
@@ -23713,7 +25560,8 @@
     "rank": "borac",
     "pdf_x_end": 378.3,
     "pdf_x_left": 98.1,
-    "unit_detail": "2. četa, 3. bataljon, 16. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 16. srpska brigada",
+    "birth_date": "14.08.1921"
   },
   {
     "last_name": "Veljković",
@@ -23758,7 +25606,11 @@
       }
     ],
     "death_place": "na brdu Panikama kod sela Gornjih Hrgova blizu Gradačca",
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vesović",
@@ -23767,7 +25619,6 @@
     "fathers_name": "",
     "full_name": "Vesović Miodrag",
     "additional_info": "borac 2. bataljona 16. srpske brigade, rođen u selu Lenovcu kod Guberevca blizu Kraljeva (nije moglo da se utvrdi postojanje sela Lenovca kod Guberevca; moguće selo Leskovac kod Guberevca ili selo Lenovac kod Zaječara — prim. red.), poginuo 30. marta 1945. god. na putu selo Špionica—Srebrenik blizu Tuzle u borbi protiv Nemaca i ustaša.",
-    "birth_year": "",
     "pdf_page": 63,
     "pdf_y": 98.7,
     "pdf_x": 121.3,
@@ -23789,7 +25640,17 @@
         "source_page": 477,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Leskovac, Knić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Srebrnik",
+    "birth_year": "1923"
   },
   {
     "last_name": "Vidić",
@@ -23812,7 +25673,8 @@
     "pdf_x_end": 384.6,
     "pdf_x_left": 104.3,
     "death_place": "kod sela Vlaške Male (sada Posavska Mahala) blizu Modriča",
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "birth_date": "12.12.1926"
   },
   {
     "last_name": "Vilotić",
@@ -23871,7 +25733,21 @@
     "pdf_x_end": 379.1,
     "pdf_x_left": 98.5,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073003228",
+        "name": "Vlajković Ivan",
+        "additional_info": "borac 2. čete 3. bataljona, poginuo 9. februara 1945. na Vjenčacu kod sela Grbavac blizu Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 80.2,
+        "pdf_y": 309.4,
+        "pdf_x_end": 385.9,
+        "pdf_y_end": 326.2,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vojinović",
@@ -23880,7 +25756,6 @@
     "fathers_name": "",
     "full_name": "Vojinović Svetozar",
     "additional_info": "borac 1. čete 4. bataljona 16. srpske brigade, rođen u selu Samarinovcu kod Negotina, poginuo 6. februara 1945. god. kod sela Tršića blizu Zvornika u borbi protiv Nemaca; sahranjen u Tršiću.",
-    "birth_year": "",
     "pdf_page": 85,
     "pdf_y": 56.2,
     "pdf_x": 111.5,
@@ -23904,7 +25779,13 @@
         "source_page": 847,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Vujinović",
@@ -23926,7 +25807,25 @@
     "pdf_x_end": 382.0,
     "pdf_x_left": 101.0,
     "death_place": "na brdu Velikoj borči kod sela Sirče blizu Kraljeva",
-    "unit_detail": "1. četa, 1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. četa, 1. bataljon, 18. srpska brigada",
+    "birth_place": "Mrazovac (Bosanska Krupa)",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0128004622",
+        "name": "Vujinović Nikola",
+        "additional_info": "1922, Mrazovac (Bosanska Krupa). Poginuo novembra 1944. kod Kraljeva",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 212.8,
+        "pdf_y": 98.9,
+        "pdf_x_end": 363.0,
+        "pdf_y_end": 127.1,
+        "unit_file": "18-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vujnović",
@@ -24022,7 +25921,21 @@
     "pdf_x_end": 339.9,
     "pdf_x_left": 60.3,
     "death_place": "Grbavci, Zvornik",
-    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 3. bataljon, 19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073003265",
+        "name": "Vukašinović Živan",
+        "additional_info": "borac 1. čete 3. bataljona, poginuo 9. februara 1945. blizu sela Grbavac kod Zvornika u borbi protiv Nemaca.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 80.2,
+        "pdf_y": 351.9,
+        "pdf_x_end": 386.2,
+        "pdf_y_end": 368.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vukić",
@@ -24054,7 +25967,6 @@
     "fathers_name": "Đorđe",
     "full_name": "Vukić Đorđev Vladimir",
     "additional_info": "(moguća je greška: vidi red. br. 750 — prim. red.), borac Prateće čete 2. bataljona 19. srpske brigade, star 20 godina, rođen u selu Donjem Matejevcu kod Niša, poginuo 15. septembra 1944. god. kod Donjeg Milanovca u borbi protiv Nemaca i ruskih belogardejaca; sahranjen u selu Klokočevcu kod Donjeg Milanovca.",
-    "birth_year": "1924",
     "pdf_page": 6,
     "pdf_y": 478.0,
     "pdf_x": 89.6,
@@ -24090,7 +26002,13 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. bataljon, prateća četa, 19. srpska brigada"
+    "unit_detail": "2. bataljon, prateća četa, 19. srpska brigada",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vulić",
@@ -24195,6 +26113,10 @@
         "source_page": 81,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24290,7 +26212,15 @@
         "pdf_y_end": 445.8,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.01.1945",
+          "place": "na Miljakoviću kod Zvornika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vučković",
@@ -24322,7 +26252,13 @@
         "source_page": 803,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Marinovac, Minićevo",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Zarić",
@@ -24367,7 +26303,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Zdravković",
@@ -24399,7 +26339,6 @@
     "fathers_name": "",
     "full_name": "Zec Miladin",
     "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade, rođen u selu Zborištu (verovatno kod Velike Kladuše ili Bosanskog Broda — prim. red.): ragven 11. januara 1945. god. na brdu Kiku kod sela Šekovića blizu Vlasenice u borbi protiv Nemaca, istog dana podlegao ranama u bolnici; sahranjen u selu Stuparima kod Vlasenice.",
-    "birth_year": "",
     "pdf_page": 21,
     "pdf_y": 387.0,
     "pdf_x": 117.4,
@@ -24432,7 +26371,19 @@
         "pdf_y_end": 842.0,
         "ref_book": "cazinska-krajina-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Zborište, Velika Kladuša",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_date": "1945",
+    "death_place": "Vlasenica",
+    "birth_year": "1927"
   },
   {
     "last_name": "Zec",
@@ -24441,7 +26392,6 @@
     "fathers_name": "",
     "full_name": "Zec Mirko",
     "additional_info": "major, komandant 16. srpske brigade, . rođen u Bosanskoj Kostajnici, poginuo 31. marta 1945. god. kod sela Srebrenika blizu Tuzle u borbi protiv Nemaca i ustaša; sahranjen u Tuzli.",
-    "birth_year": "",
     "pdf_page": 29,
     "pdf_y": 346.7,
     "pdf_x": 129.4,
@@ -24455,7 +26405,23 @@
     "pdf_x_end": 388.5,
     "pdf_x_left": 107.5,
     "death_place": "Srebrenik, Tuzla",
-    "unit_detail": "16. srpska brigada"
+    "unit_detail": "16. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "9022008555",
+        "name": "Zec (Milan) Mirko",
+        "additional_info": "rođen 1916, Gornje Vodičevo (Bosanski Novi). Srbin, poginuo 1945. u NOBu, Tuzla",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=888",
+        "source_page": 888,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1916"
   },
   {
     "last_name": "Zečević",
@@ -24500,7 +26466,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "2. bataljon, 18. srpska brigada"
+    "unit_detail": "2. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Zlatković",
@@ -24532,7 +26502,6 @@
     "fathers_name": "",
     "full_name": "Zlatković V Tihomir",
     "additional_info": "borac 1. bataljona 16. srpske brigade, poginuo 21. marta 1945. god. na brdu Vranjevcu iznad sela Dobrovaca kod Gračanice blizu Tuzle u borbi protiv Nemaca i ustaša; sahranjen u Donjim Doborovcima u dvorištu Emila Velenkića.",
-    "birth_year": "",
     "pdf_page": 91,
     "pdf_y": 290.1,
     "pdf_x": 117.8,
@@ -24555,7 +26524,15 @@
         "source_page": 1237,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Titovo Užice",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1912"
   },
   {
     "last_name": "Zorić",
@@ -24588,7 +26565,13 @@
         "source_page": 1325,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Češljeva Bara, Veliko Gradište",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Ćosić",
@@ -24620,7 +26603,6 @@
     "fathers_name": "",
     "full_name": "Čelojević Jeftimije",
     "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade, rođen u Prahovu, ranjen 5. aprila 1945. u selu Špionici kod Srebrenika blizu Tuzle u borbi protiv ustaša; podlegao ranama u bolnici.",
-    "birth_year": "",
     "pdf_page": 89,
     "pdf_y": 356.3,
     "pdf_x": 130.3,
@@ -24642,7 +26624,17 @@
         "source_page": 845,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Modrič",
+    "birth_year": "1921"
   },
   {
     "last_name": "Čisković",
@@ -24896,7 +26888,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "18. srpska brigada"
+    "unit_detail": "18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Đorđević",
@@ -24929,6 +26925,10 @@
         "source_page": 855,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24974,7 +26974,11 @@
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 4. bataljon, 19. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Đorđević",
@@ -25006,7 +27010,13 @@
         "source_page": 321,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Mali Izvor, Boljevac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Đorđević",
@@ -25224,6 +27234,10 @@
         "source_page": 859,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25253,7 +27267,6 @@
     "fathers_name": "",
     "full_name": "Đorđević Đorđe",
     "additional_info": "borac 1. čete 3. bataljona 16. srpske brigade, rođen u selu Radujevcu kod Negotina, poginuo 22. januara 1945. god. kod Vlasenice u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 85,
     "pdf_y": 293.8,
     "pdf_x": 112.0,
@@ -25277,7 +27290,13 @@
         "source_page": 846,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Đorđević",
@@ -25344,7 +27363,6 @@
     "fathers_name": "",
     "full_name": "Đorđević Živojin",
     "additional_info": "borac 1. čete 2. bataljona 19. srpske brigade, rođen !923. god. u selu Velici (nije moglo tačno da se utvrdi o kome se selu radi — prim. red.) kod Golupca, poginuo 17. marta 1945. god. kod sela Ledenica (Katoličkih) blizu Modriča u borbi protiv ustaša, domobrana i četnika; sahranjen u selu Ledenicama (Katoličkim) na groblju.",
-    "birth_year": "",
     "pdf_page": 55,
     "pdf_y": 110.1,
     "pdf_x": 113.8,
@@ -25357,7 +27375,27 @@
     "pdf_x_end": 372.4,
     "pdf_x_left": 92.6,
     "death_place": "Ledenice, Katoličkih, Modriča",
-    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada"
+    "unit_detail": "1. četa, 2. bataljon, 19. srpska brigada",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Velica, Golubac",
+    "other_sources": [
+      {
+        "soldier_id": "0073003403",
+        "name": "Đorđević Živojin",
+        "additional_info": "borac 1. čete 2. bataljona, rođen 1923. u selu Velici kod Golupca, poginuo 17. marta 1945. kod sela Katiličkih Ledenica blizu Modriče u borbi protiv ustaša, sahranjen u selu Katiločke Ledenice na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 54.9,
+        "pdf_y": 119.7,
+        "pdf_x_end": 360.3,
+        "pdf_y_end": 154.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Đorđeviđ",
@@ -25668,7 +27706,11 @@
       }
     ],
     "birth_place": "Donja Bresnica",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Šonić",
@@ -25841,7 +27883,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "4. bataljon, 18. srpska brigada"
+    "unit_detail": "4. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Živanović",
@@ -25850,7 +27896,6 @@
     "fathers_name": "",
     "full_name": "Živanović Slavko",
     "additional_info": "borac 2. čete 3. bataljona 19. srpske brigade, poginuo 21. januara 1945. god. u zaseoku Baricama kod Vlasenice u borbi protiv Nemaca.",
-    "birth_year": "",
     "pdf_page": 39,
     "pdf_y": 255.8,
     "pdf_x": 109.6,
@@ -25872,7 +27917,17 @@
         "source_page": 787,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Kula, Malo Crniće",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Vlasenica",
+    "birth_year": "1925"
   },
   {
     "last_name": "Živanović",
@@ -25881,7 +27936,6 @@
     "fathers_name": "",
     "full_name": "Živanović K Svetozar",
     "additional_info": "borac 1. čete 1. bataljona 16. srpske brigade, rođen u selu Lukama (Salaš) kod Zaječara, poginuo 15. januara 1945. god. na Ploči kod Vlasenice u borbi protiv Nemaca; sahranjen na Javorovoj poljani kod Ploče (Vlasenica).",
-    "birth_year": "",
     "pdf_page": 26,
     "pdf_y": 102.9,
     "pdf_x": 79.8,
@@ -25905,7 +27959,13 @@
         "source_page": 329,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Živatić",
@@ -25983,7 +28043,12 @@
         "source_page": 657,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "07.05.1913"
   },
   {
     "last_name": "Živković",
@@ -26065,7 +28130,12 @@
       }
     ],
     "death_place": "u rejonu Gradačca",
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "08.01.1922"
   },
   {
     "last_name": "Živković",
@@ -26157,7 +28227,14 @@
         "source_page": 954,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Šetonje, Petrovac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_date": "14.01.1912"
   },
   {
     "last_name": "Živković",
@@ -26261,7 +28338,8 @@
     "pdf_x_end": 375.3,
     "pdf_x_left": 94.0,
     "death_place": "Vrbovec, Modriča",
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "birth_date": "15.08.1914"
   },
   {
     "last_name": "Živković",
@@ -26341,7 +28419,8 @@
     "rank": "borac",
     "pdf_x_end": 374.4,
     "pdf_x_left": 94.2,
-    "unit_detail": "1. bataljon, 18. srpska brigada"
+    "unit_detail": "1. bataljon, 18. srpska brigada",
+    "birth_date": "03.01.1905"
   },
   {
     "last_name": "Životić",
@@ -26363,7 +28442,21 @@
     "pdf_x_end": 345.8,
     "pdf_x_left": 65.4,
     "death_place": "Čardak, Modriča",
-    "unit_detail": "19. srpska brigada"
+    "unit_detail": "19. srpska brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0073003516",
+        "name": "Životić Dragoljub",
+        "additional_info": "borac disciplinske čete, poginuo 9. aprila 1945. kod sela Čardak, blizu Modriče u borbi protiv ustaša i domobrana; sahranjen u selu Čardak, na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 1,
+        "pdf_x": 70.7,
+        "pdf_y": 420.6,
+        "pdf_x_end": 376.5,
+        "pdf_y_end": 446.5,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Životić",
@@ -26409,7 +28502,11 @@
         "unit_file": "18-srpska-soldiers.json"
       }
     ],
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Životić",

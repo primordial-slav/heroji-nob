@@ -348,7 +348,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "death_place": "Sutjeska",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Aleksić",
@@ -809,7 +813,12 @@
         "pdf_y_end": 303.0
       }
     ],
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Arsenić",
@@ -1468,7 +1477,12 @@
         "pdf_x_end": 458.2,
         "pdf_y_end": 446.0
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Bajić",
@@ -1611,7 +1625,12 @@
         "pdf_y_end": 676.9
       }
     ],
-    "party": "SKOJ 1943, KPJ 1944"
+    "party": "SKOJ 1943, KPJ 1944",
+    "variants": {
+      "born": [
+        "1929"
+      ]
+    }
   },
   {
     "last_name": "Bajić",
@@ -3464,7 +3483,13 @@
         "source_page": 2466,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Zelengora"
   },
   {
     "last_name": "Budimir",
@@ -3762,7 +3787,12 @@
         "pdf_y_end": 514.0
       }
     ],
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Bškić",
@@ -3891,7 +3921,12 @@
       }
     ],
     "rank": "politički komesar bataljona",
-    "party": "SKOJ, KPJ 1942"
+    "party": "SKOJ, KPJ 1942",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Crepulja",
@@ -4036,7 +4071,12 @@
         "pdf_x_end": 461.5,
         "pdf_y_end": 426.8
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Cumbo",
@@ -4761,7 +4801,15 @@
         "pdf_y_end": 561.8
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "death": [
+        {
+          "date": "09.07.1943",
+          "place": "Istočna Bosna, Živinice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Davidović",
@@ -5212,7 +5260,15 @@
         "pdf_x_end": 475.0,
         "pdf_y_end": 618.8
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dozet",
@@ -5848,7 +5904,15 @@
         "pdf_y_end": 462.2,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Jahorina, kod sela Orahovice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Drvar",
@@ -6404,7 +6468,12 @@
         "pdf_x_end": 459.5,
         "pdf_y_end": 213.5
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Gajanović",
@@ -6880,7 +6949,12 @@
         "pdf_y_end": 173.6
       }
     ],
-    "party": "SKOJ 1943, KPJ 1943"
+    "party": "SKOJ 1943, KPJ 1943",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Galić",
@@ -7425,7 +7499,15 @@
       }
     ],
     "unit_detail": "3. četa, 3. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "03.06.1943",
+          "place": "Sutjeska, Tjentište"
+        }
+      ]
+    }
   },
   {
     "last_name": "Gašić",
@@ -8598,7 +8680,21 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "death_place": "Bugojno",
+    "borrowed": [
+      "death_place"
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "03.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Hero-Ademaj",
@@ -8657,7 +8753,12 @@
       }
     ],
     "unit_detail": "1. četa, 1. bataljon",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Jagodić",
@@ -9200,7 +9301,12 @@
         "pdf_y_end": 255.2
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Indžić",
@@ -9499,7 +9605,15 @@
         "pdf_y_end": 676.6
       }
     ],
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "variants": {
+      "death": [
+        {
+          "date": "10.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jakešević-Brkić",
@@ -9569,7 +9683,15 @@
         "pdf_x_end": 285.4,
         "pdf_y_end": 620.6
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Miljevina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jakšić",
@@ -9995,7 +10117,20 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon"
+    "unit_detail": "3. četa, 1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0048011177",
+        "name": "Jandrić Petar",
+        "additional_info": "roćen 1919. Močioci, Šipovo. Srbin, zemljoradnik. U NOB-i od 1942. Borac 3. čete 1. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 78,
+        "pdf_x": 298.0,
+        "pdf_y": 367.7,
+        "pdf_x_end": 465.8,
+        "pdf_y_end": 415.5
+      }
+    ]
   },
   {
     "last_name": "Jandrić",
@@ -11775,7 +11910,21 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "death_place": "u Srbiji na planini Bukovi, kod Kosjerića",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0039000326",
+        "name": "Kalabić Pere Đurađ",
+        "additional_info": "poginuo 2. maja 1944, Bukovi (Kosjerić — Valjevo); Zapadna Srbija (23. decembar 1943 — 30. maj 1944)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 415.8,
+        "pdf_y": 805.7,
+        "pdf_x_end": 489.1,
+        "pdf_y_end": 815.9,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kalajdžija",
@@ -11999,7 +12148,14 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "death": [
+        {
+          "date": "1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kapelan-Dragojević",
@@ -12094,7 +12250,15 @@
     "death_type": "umro",
     "death_date": "09.06.1943",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon"
+    "unit_detail": "3. četa, 4. bataljon",
+    "variants": {
+      "death": [
+        {
+          "date": "10.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0048001117",
@@ -12864,7 +13028,8 @@
     "occupation": "podoficir",
     "unit_detail": "1. četa, 3. bataljon",
     "death_place": "Devetak, Istočna Bosna",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_date": "02.08.1921"
   },
   {
     "last_name": "Kecman-Mirković",
@@ -13800,7 +13965,12 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Travnik",
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Kovačević",
@@ -14094,7 +14264,15 @@
         "pdf_y_end": 594.1
       }
     ],
-    "death_place": "na Javorku, Mratinje"
+    "death_place": "na Javorku, Mratinje",
+    "variants": {
+      "death": [
+        {
+          "date": "02.06.1943",
+          "place": "na Javorku, Mratinje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kovačevič",
@@ -14324,7 +14502,12 @@
         "pdf_y_end": 377.6,
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1915"
+      ]
+    }
   },
   {
     "last_name": "Kraguei",
@@ -14393,6 +14576,10 @@
         "source_page": 1659,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Sutjeska",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -14889,7 +15076,12 @@
         "pdf_y_end": 674.0
       }
     ],
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "variants": {
+      "born": [
+        "1930"
+      ]
+    }
   },
   {
     "last_name": "Krčmar",
@@ -15139,7 +15331,15 @@
         "pdf_y_end": 675.1
       }
     ],
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "variants": {
+      "death": [
+        {
+          "date": "09.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kuvačić-Alibegović",
@@ -15231,7 +15431,12 @@
         "pdf_y_end": 578.5
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Kuzmanović",
@@ -15240,7 +15445,6 @@
     "fathers_name": "Ilija",
     "full_name": "Kuzmanović Ilije Mladen",
     "additional_info": "borac 3. čete 3. bataljona, rođen u Ribniku, Ključ, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Tjentišta 9. juna 1943.",
-    "birth_year": "",
     "pdf_page": 26,
     "pdf_y": 249.0,
     "pdf_x": 203.2,
@@ -15265,6 +15469,10 @@
         "source_page": 1642,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -15458,7 +15666,12 @@
         "pdf_y_end": 546.9,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Kvrgić",
@@ -15724,7 +15937,12 @@
         "pdf_y_end": 425.0,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Laketić",
@@ -16924,7 +17142,12 @@
         "pdf_y_end": 437.4
       }
     ],
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Lužija",
@@ -17135,7 +17358,15 @@
         "source_page": 531,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Maksimović",
@@ -17727,7 +17958,12 @@
         "pdf_y_end": 533.9
       }
     ],
-    "party": "SKOJ 1941, KPJ 1942"
+    "party": "SKOJ 1941, KPJ 1942",
+    "variants": {
+      "born": [
+        "1929"
+      ]
+    }
   },
   {
     "last_name": "Marić",
@@ -18977,7 +19213,12 @@
         "pdf_y_end": 677.6
       }
     ],
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Mastilović",
@@ -19785,7 +20026,15 @@
         "pdf_y_end": 367.5
       }
     ],
-    "unit_detail": "1. četa, 4. bataljon"
+    "unit_detail": "1. četa, 4. bataljon",
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Miljevina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milić",
@@ -21082,7 +21331,12 @@
     ],
     "unit_detail": "3. četa, 1. bataljon",
     "death_date": "14.06.1943",
-    "death_place": "Miljevina"
+    "death_place": "Miljevina",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Muždeka",
@@ -21119,7 +21373,15 @@
         "pdf_y_end": 459.7
       }
     ],
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "variants": {
+      "death": [
+        {
+          "date": "08.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Muždeka",
@@ -21550,7 +21812,8 @@
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "birth_date": "11.12.1914"
   },
   {
     "last_name": "Nikolić",
@@ -21749,7 +22012,15 @@
         "pdf_x_end": 288.5,
         "pdf_y_end": 605.2
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nišić",
@@ -22254,7 +22525,18 @@
         "pdf_y_end": 294.4
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "12.06.1943",
+          "place": "Zelengora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Okulić",
@@ -22357,7 +22639,15 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "death": [
+        {
+          "date": "10.06.1943",
+          "place": "Košur, Tjentište"
+        }
+      ]
+    }
   },
   {
     "last_name": "Olić",
@@ -22458,7 +22748,25 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon"
+    "unit_detail": "3. četa, 4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0048012412",
+        "name": "Olić Vaso",
+        "additional_info": "roćen 1921. Olići, Šipovo. Srbin, zemljoradnik. U NOB-i od 1942. Borac 3. čete 4. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 147,
+        "pdf_x": 314.1,
+        "pdf_y": 555.4,
+        "pdf_x_end": 481.0,
+        "pdf_y_end": 591.7
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Olić",
@@ -22575,7 +22883,12 @@
         "ref_book": "sanski-most-borci"
       }
     ],
-    "party": "SKOJ 1943, KPJ 1944"
+    "party": "SKOJ 1943, KPJ 1944",
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Oljača",
@@ -22957,7 +23270,12 @@
         "pdf_x_end": 269.2,
         "pdf_y_end": 649.8
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Papić",
@@ -23407,7 +23725,15 @@
         "pdf_x_end": 274.1,
         "pdf_y_end": 216.8
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.06.1943",
+          "place": "Zelengora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Peno",
@@ -23795,7 +24121,15 @@
         "pdf_y_end": 378.6
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "01.06.1944",
+          "place": "Rakova Noga, Kreševo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -24149,7 +24483,12 @@
         "pdf_y_end": 556.7
       }
     ],
-    "party": "SKOJ 1943, KPJ 1944"
+    "party": "SKOJ 1943, KPJ 1944",
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Plavšić",
@@ -26499,7 +26838,12 @@
         "pdf_x_end": 267.5,
         "pdf_y_end": 184.7
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Radojicić",
@@ -26723,7 +27067,12 @@
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
-    "unit_detail": "2. četa, 1. bataljon"
+    "unit_detail": "2. četa, 1. bataljon",
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Radulović",
@@ -26783,7 +27132,12 @@
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1940"
+    "party": "KPJ 1940",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Raičević",
@@ -27479,7 +27833,12 @@
       }
     ],
     "death_place": "Beograd",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Rodić-Gligorić",
@@ -27577,7 +27936,15 @@
         "pdf_x_end": 457.5,
         "pdf_y_end": 322.8
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.01.1944",
+          "place": "na Dusinama, kod Fojnice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Rončević",
@@ -28269,7 +28636,15 @@
       }
     ],
     "death_place": "Rataj, Zelengora",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "02.06.1943",
+          "place": "Rataj, Zelengora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Savičić",
@@ -28712,7 +29087,12 @@
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Savić",
@@ -29482,7 +29862,15 @@
         "pdf_x_end": 273.5,
         "pdf_y_end": 647.6
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sladojević",
@@ -29828,7 +30216,12 @@
         "pdf_y_end": 344.4
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Stanić",
@@ -30074,7 +30467,12 @@
         "pdf_x_end": 289.6,
         "pdf_y_end": 235.0
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Stojaković",
@@ -30167,7 +30565,18 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_date": "10.06.1943"
+    "death_date": "10.06.1943",
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "03.1943",
+          "place": "Šator"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -30371,7 +30780,15 @@
       }
     ],
     "rank": "zamenik komandanta",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "death": [
+        {
+          "date": "12.06.1943",
+          "place": "u Jeleču na Zelengori"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stupar",
@@ -30615,7 +31032,8 @@
         "pdf_y_end": 632.2,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.08.1920"
   },
   {
     "last_name": "Talić",
@@ -30789,7 +31207,12 @@
         "pdf_y_end": 469.7,
         "unit_file": "12-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Tepić",
@@ -31220,7 +31643,20 @@
     "occupation": "zemljoradnik",
     "rank": "politički delegat voda",
     "unit_detail": "1. četa, 1. bataljon",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0048013373",
+        "name": "Todorović Kosta",
+        "additional_info": "roćen 1921. Baraći, Mrkonjić Grad. Srbin, zemljoradnik. U NOB-i od 1942. Član KPJ od 1937. Borac 1. čete 1. bataljona. Učesnik bitke na Neretvi i Sutjesci. U ratu delegat voda.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 197,
+        "pdf_x": 119.2,
+        "pdf_y": 447.0,
+        "pdf_x_end": 286.3,
+        "pdf_y_end": 504.6
+      }
+    ]
   },
   {
     "last_name": "Todorović",
@@ -32741,7 +33177,15 @@
         "pdf_y_end": 264.9
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "16.06.1943",
+          "place": "kod Sokoca u Istočnoj Bosni"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vasić",
@@ -33163,7 +33607,15 @@
         "pdf_y_end": 617.4
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "death": [
+        {
+          "date": "09.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vještica",
@@ -33478,7 +33930,12 @@
         "pdf_y_end": 586.4
       }
     ],
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Volaš",
@@ -33738,7 +34195,11 @@
       }
     ],
     "rank": "komandir čete",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "death_place": "Sutjeska",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Vračar",
@@ -34557,7 +35018,12 @@
         "pdf_y_end": 576.8
       }
     ],
-    "party": "SKOJ, KPJ 1945"
+    "party": "SKOJ, KPJ 1945",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Vuković",
@@ -34859,7 +35325,15 @@
         "pdf_y_end": 597.2,
         "unit_file": "6-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vulin",
@@ -35132,7 +35606,14 @@
         "pdf_y_end": 493.5
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "death": [
+        {
+          "date": "04.06.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vučković",
@@ -35417,7 +35898,15 @@
         "pdf_y_end": 415.8
       }
     ],
-    "death_place": "na Stolovima kod sela Jeleča, Miljevina"
+    "death_place": "na Stolovima kod sela Jeleča, Miljevina",
+    "variants": {
+      "death": [
+        {
+          "date": "12.06.1943",
+          "place": "na Stolovima kod sela Jeleča, Miljevina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Zečević",
@@ -35733,7 +36222,18 @@
       }
     ],
     "rank": "puškomitraljezac, komandant bataljona",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "09.1943",
+          "place": "na Karaulskoj Gori, kod Travnika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Zorić-Martić",
@@ -38190,7 +38690,12 @@
         "pdf_y_end": 430.4
       }
     ],
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Šarac",
@@ -39028,7 +39533,12 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Šubašić",
@@ -39066,7 +39576,18 @@
         "pdf_y_end": 263.9
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1923"
+      ],
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Bukovača, Fojnica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šumar",
@@ -40023,6 +40544,10 @@
         "source_page": 1093,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Semitovca",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -43373,7 +43898,15 @@
         "pdf_y_end": 353.6,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.04.1945",
+          "place": "Zenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Banjac",
@@ -43852,7 +44385,12 @@
         "pdf_y_end": 559.3,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1914"
+      ]
+    }
   },
   {
     "last_name": "Banjac",
@@ -43900,7 +44438,12 @@
         "pdf_y_end": 559.3,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Banova",
@@ -45354,7 +45897,6 @@
     "fathers_name": "Mustafa",
     "full_name": "Bečar Mustafe Hamdo",
     "additional_info": "roćen 1920. Uvorići, Visoko. Musliman, zemljoradnik. U NOB-i od 7. aprila 1945. Borac 2. čete 4. bataljona. POGINUO 3. maja 1945. kod Karlovca.",
-    "birth_year": "",
     "pdf_page": 19,
     "pdf_y": 490.8,
     "pdf_x": 120.9,
@@ -45370,6 +45912,7 @@
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 288.3,
     "birth_place": "Uvorići, Visoko",
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9022035803",
@@ -45379,6 +45922,9 @@
         "source_page": 2814,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -45809,7 +46355,15 @@
         "pdf_y_end": 412.4,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.09.1944",
+          "place": "Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bilak",
@@ -45904,7 +46458,15 @@
         "source_page": 1316,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Prozor"
   },
   {
     "last_name": "Bilić",
@@ -47026,7 +47588,15 @@
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Sarajevo"
   },
   {
     "last_name": "Bosnić",
@@ -47121,7 +47691,15 @@
         "source_page": 1708,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1942",
+    "death_place": "Kupres"
   },
   {
     "last_name": "Boškić",
@@ -47652,7 +48230,8 @@
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_date": "19.11.1913"
   },
   {
     "last_name": "Brkljač",
@@ -48048,6 +48627,10 @@
         "source_page": 1555,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Kiseljak",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -49184,7 +49767,33 @@
     "unit_detail": "3. četa, 2. bataljon",
     "pdf_x_end": 272.7,
     "birth_place": "Ribnik, Ključ",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0124000158",
+        "name": "Dakić J Drago",
+        "additional_info": "iz Ribnika, Ključ, borac.",
+        "pdf_file": "13-krajiska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 164.7,
+        "pdf_y": 501.7,
+        "pdf_x_end": 335.3,
+        "pdf_y_end": 510.2,
+        "unit_file": "13-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0124000159",
+        "name": "Dakić Drago",
+        "additional_info": "iz Ribnika, Ključ, primljen u Partiju 23. 6. 1943. godine, komesar čete, ranjavan dva puta.",
+        "pdf_file": "13-krajiska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 106.8,
+        "pdf_y": 298.7,
+        "pdf_y_end": 316.9,
+        "pdf_x_end": 387.9,
+        "unit_file": "13-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dakić",
@@ -49355,7 +49964,15 @@
         "pdf_y_end": 547.2,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.02.1945",
+          "place": "Zenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dakić",
@@ -49682,7 +50299,15 @@
         "source_page": 1570,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1942",
+    "death_place": "Jajce"
   },
   {
     "last_name": "Dakić",
@@ -49993,7 +50618,15 @@
         "source_page": 1108,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Travnik"
   },
   {
     "last_name": "Davidović",
@@ -50198,7 +50831,12 @@
         "pdf_y_end": 111.5,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1905"
+      ]
+    }
   },
   {
     "last_name": "Dekanović",
@@ -50297,7 +50935,15 @@
         "source_page": 1660,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Lisina"
   },
   {
     "last_name": "Delić",
@@ -55896,7 +56542,12 @@
         "pdf_y_end": 644.5,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Grahovac",
@@ -56905,6 +57556,10 @@
         "source_page": 985,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Bugojno",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -59391,7 +60046,6 @@
     "fathers_name": "Lazo",
     "full_name": "Ilić Laze Simo",
     "additional_info": "roćen 1917. Pribeljci, Šipovo. Srbin, zemljoradnik. U NOB-i od 1943. Komandir 2. čete 1. bataljona. POGINUO 20. 10. 1944. u Travniku.",
-    "birth_year": "",
     "pdf_page": 75,
     "pdf_y": 651.1,
     "pdf_x": 120.9,
@@ -59407,6 +60061,7 @@
     "pdf_x_end": 288.4,
     "birth_place": "Pribeljci, Šipovo",
     "rank": "komandir čete",
+    "birth_year": "1917",
     "other_sources": [
       {
         "soldier_id": "9022030886",
@@ -59416,6 +60071,9 @@
         "source_page": 2493,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -60147,7 +60805,8 @@
         "pdf_y_end": 571.1,
         "unit_file": "22-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.05.1922"
   },
   {
     "last_name": "Ivić",
@@ -60194,7 +60853,15 @@
     ],
     "rank": "politički komesar bataljona",
     "death_place": "Potkraj, Mrkonjići",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "12.08.1944",
+          "place": "Potkraj, Mrkonjići"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ivić",
@@ -60453,7 +61120,15 @@
         "pdf_y_end": 477.5,
         "ref_book": "sanski-most-borci"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Travnik"
   },
   {
     "last_name": "Jagodić",
@@ -60765,7 +61440,6 @@
     "fathers_name": "Salko",
     "full_name": "Jamaković Salke Hasan",
     "additional_info": "roćen 1922. u Zagorici. Musliman, zemljoradnik. U NOB-i od septembra 1944. Borac 3. čete 3. bataljona. POGINUO 10. 4. 1945. u Moščanici kod Zenice.",
-    "birth_year": "",
     "pdf_page": 77,
     "pdf_y": 302.0,
     "pdf_x": 309.5,
@@ -60781,6 +61455,7 @@
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 477.3,
     "birth_place": "Zagorica",
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9022035845",
@@ -60790,6 +61465,9 @@
         "source_page": 2819,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -60940,7 +61618,6 @@
     "fathers_name": "Krstan",
     "full_name": "Jandrić Krstana Ilija",
     "additional_info": "rođen u Močiocima, Šipovo. Srbin, zemljoradnik. U NOB-i od 1941. Borac 2. čete 1. bataljona. POGINUO decembra 1942. kod Jajca.",
-    "birth_year": "",
     "pdf_page": 78,
     "pdf_y": 137.8,
     "pdf_x": 105.3,
@@ -60956,6 +61633,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon",
     "pdf_x_end": 272.7,
+    "birth_year": "1894",
     "other_sources": [
       {
         "soldier_id": "9022030808",
@@ -60965,6 +61643,9 @@
         "source_page": 2489,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -61220,27 +61901,6 @@
   },
   {
     "last_name": "Jandrić",
-    "middle_name": "",
-    "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Jandrić Petar",
-    "additional_info": "roćen 1919. Močioci, Šipovo. Srbin, zemljoradnik. U NOB-i od 1942. Borac 3. čete 1. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
-    "birth_year": "1919",
-    "pdf_page": 78,
-    "pdf_y": 367.7,
-    "pdf_x": 298.0,
-    "pdf_y_end": 415.5,
-    "pdf_file": "7-krajiska-spisak.pdf",
-    "soldier_id": "0048011177",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon",
-    "pdf_x_end": 465.8,
-    "birth_place": "Močioci, Šipovo"
-  },
-  {
-    "last_name": "Jandrić",
     "middle_name": "Petra",
     "first_name": "Savko",
     "fathers_name": "Petar",
@@ -61378,6 +62038,10 @@
         "source_page": 1634,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "D.previje",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -61496,7 +62160,6 @@
     "fathers_name": "Svetko",
     "full_name": "Janković Svetka Milovan",
     "additional_info": "roćen 1913. Turbe, Travnik. Srbin, zemljoradnik. U NOB-i od 1943. Borac 2. čete 3. bataljona. POGINUO 8. 4. 1944. na hidrocentrali Vesela kod Bugojna.",
-    "birth_year": "",
     "pdf_page": 79,
     "pdf_y": 497.8,
     "pdf_x": 312.2,
@@ -61511,6 +62174,7 @@
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 479.9,
     "birth_place": "Turbe, Travnik",
+    "birth_year": "1911",
     "other_sources": [
       {
         "soldier_id": "9022032929",
@@ -61520,6 +62184,11 @@
         "source_page": 2627,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Bugojno",
+    "borrowed": [
+      "birth_year",
+      "death_place"
     ]
   },
   {
@@ -63434,6 +64103,10 @@
         "source_page": 1633,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Ključ",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -63818,6 +64491,10 @@
         "source_page": 2810,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Mešćanica-zenic",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -64576,7 +65253,12 @@
         "pdf_y_end": 181.8,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1905"
+      ]
+    }
   },
   {
     "last_name": "Kapelan",
@@ -65373,7 +66055,8 @@
         "unit_file": "13-krajiska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_date": "07.04.1914"
   },
   {
     "last_name": "Kasum",
@@ -65538,7 +66221,6 @@
     "fathers_name": "Gajo",
     "full_name": "Kaurin Gaje Ilija",
     "additional_info": "pobeH 1922. Kozica, Sanski Most. Srbin, zemljoradnik. U NOB-i od 1942. Borac 3. čete 3. bataljona. POGINUO 9. juna 1943. na Sutjesci.",
-    "birth_year": "",
     "pdf_page": 92,
     "pdf_y": 451.2,
     "pdf_x": 94.5,
@@ -65553,6 +66235,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 261.9,
+    "birth_year": "1924",
     "other_sources": [
       {
         "soldier_id": "9022028112",
@@ -65574,6 +66257,11 @@
         "pdf_y_end": 528.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Kozica, Sanski Most",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
     ]
   },
   {
@@ -66041,7 +66729,6 @@
     "fathers_name": "Drago",
     "full_name": "Kecman Drage Mane",
     "additional_info": "roćen 1921. Drinić, Bos. Petrovac. Srbin, radnik. U NOB-i od 1941. Član SKOJ-a od 1939. a KI1J od 1942. Borac 2. čete 2. bataljona. U ratu komesar Art. brigade 39. divizije.",
-    "birth_year": "1921",
     "pdf_page": 96,
     "pdf_y": 422.9,
     "pdf_x": 104.3,
@@ -66055,6 +66742,10 @@
     "pdf_x_end": 271.8,
     "birth_place": "Drinić",
     "party": "SKOJ 1939",
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0163000102",
@@ -66195,7 +66886,25 @@
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 272.1,
-    "birth_place": "Drinić, Bosanski Petrovac"
+    "birth_place": "Drinić, Bosanski Petrovac",
+    "party": "SKOJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0112000176",
+        "name": "Kecman Nikole Pane",
+        "additional_info": "borac 3. čete Pratećeg bataljona VŠ, rođen 1924, Drinić, Bosanski Petrovac, šumski radnik, Srbin, u NOB od 1941. godine, član SKOJ-a.",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 11,
+        "pdf_x": 198.0,
+        "pdf_y": 386.1,
+        "pdf_x_end": 368.4,
+        "pdf_y_end": 437.5,
+        "unit_file": "vrhovni-stab-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kecman",
@@ -67092,7 +67801,12 @@
       }
     ],
     "death_place": "Sarajevo",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Knežević",
@@ -68030,7 +68744,15 @@
         "pdf_y_end": 524.6,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.02.1945",
+          "place": "Zenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kodžo",
@@ -68133,7 +68855,15 @@
         "pdf_y_end": 111.8,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kojić",
@@ -68301,7 +69031,12 @@
         "pdf_y_end": 106.2,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Kokotec",
@@ -68449,6 +69184,10 @@
         "source_page": 2157,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "death_place": "Tješnjak crna g",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -68677,7 +69416,15 @@
         "source_page": 1636,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Kondić",
@@ -68845,7 +69592,6 @@
     "fathers_name": "Đurađ",
     "full_name": "Kondić Đurđa Miloš",
     "additional_info": "roćen 1921. Podovi, Sanski Most. Srbin, zemljoradnik. U NOB-i od 1941. Borac 3. čete 3. bataljona. POGINUO 23. 1. 1943. u Podovima, Ključ.",
-    "birth_year": "",
     "pdf_page": 106,
     "pdf_y": 605.6,
     "pdf_x": 103.6,
@@ -68861,6 +69607,7 @@
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 271.0,
     "birth_place": "Podovi, Sanski Most",
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9022029168",
@@ -68882,6 +69629,9 @@
         "pdf_y_end": 520.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -71613,7 +72363,15 @@
         "source_page": 1583,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Zenica"
   },
   {
     "last_name": "Krndija",
@@ -72212,7 +72970,15 @@
         "source_page": 2812,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Kakanj"
   },
   {
     "last_name": "Kurt",
@@ -72563,7 +73329,6 @@
     "fathers_name": "Ilija",
     "full_name": "Kuzmanović Ilije Mlađen",
     "additional_info": "rođen u Ribniku, Ključ. Srbin, zemljoradnik. Borac 3. čete 3. bataljona. POGINUO 9. 6. 1943. na Sutjesci.",
-    "birth_year": "",
     "pdf_page": 112,
     "pdf_y": 236.8,
     "pdf_x": 109.2,
@@ -72588,6 +73353,10 @@
         "source_page": 1642,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -72739,7 +73508,6 @@
     "fathers_name": "Špiro",
     "full_name": "Kvrgić Špire Mile",
     "additional_info": "rođen u Podobziru, Šipovo. Srbin, zemljoradnik. U NOB-i od 1941. Borac 1. čete 1. bataljona.",
-    "birth_year": "1922",
     "pdf_page": 94,
     "pdf_y": 279.4,
     "pdf_x": 297.1,
@@ -72773,7 +73541,17 @@
         "pdf_y_end": 554.9,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Jajce"
   },
   {
     "last_name": "Kvrgić",
@@ -75065,7 +75843,6 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "pdf_x_end": 270.9,
-    "rank": "komandir voda",
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Sutjeska",
@@ -75082,7 +75859,12 @@
         "pdf_y_end": 580.0,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Magrdžija",
@@ -75425,7 +76207,6 @@
     "fathers_name": "",
     "full_name": "Malenica Marijan",
     "additional_info": "rođen u Stojčevićima, Kiseljak. Hrvat, zemljoradnik. U NOB-i od 1944. Borac 2. bataljona. POGINUO 20. 1. 1945. u Velikom Mošnjaru kod Travnika.",
-    "birth_year": "",
     "pdf_page": 121,
     "pdf_y": 177.7,
     "pdf_x": 306.2,
@@ -75450,6 +76231,10 @@
         "source_page": 1688,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "birth_year": "1928",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -76764,7 +77549,15 @@
         "source_page": 1299,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Užički Par.odred"
   },
   {
     "last_name": "Marković",
@@ -79096,7 +79889,12 @@
         "pdf_x_left": 66.9,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Miličević",
@@ -80545,7 +81343,15 @@
         "source_page": 2477,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1942",
+    "death_place": "Vrpolje s.most"
   },
   {
     "last_name": "Mitrić",
@@ -82582,7 +83388,12 @@
         "pdf_x_left": 63.0,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Nikolaš",
@@ -83734,27 +84545,6 @@
     ]
   },
   {
-    "last_name": "Olić",
-    "middle_name": "",
-    "first_name": "Vaso",
-    "fathers_name": "",
-    "full_name": "Olić Vaso",
-    "additional_info": "roćen 1921. Olići, Šipovo. Srbin, zemljoradnik. U NOB-i od 1942. Borac 3. čete 4. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
-    "birth_year": "1921",
-    "pdf_page": 147,
-    "pdf_y": 555.4,
-    "pdf_x": 314.1,
-    "pdf_y_end": 591.7,
-    "pdf_file": "7-krajiska-spisak.pdf",
-    "soldier_id": "0048012412",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 481.0,
-    "birth_place": "Olići, Šipovo"
-  },
-  {
     "last_name": "Oljača",
     "middle_name": "Gojka",
     "first_name": "Jovan",
@@ -83931,7 +84721,15 @@
         "pdf_y_end": 582.1,
         "ref_book": "sanski-most-borci"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1942",
+    "death_place": "Sanski most"
   },
   {
     "last_name": "Oljača",
@@ -84124,7 +84922,15 @@
         "pdf_y_end": 407.1,
         "unit_file": "4-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "22.12.1944",
+          "place": "na putu za Beograd"
+        }
+      ]
+    }
   },
   {
     "last_name": "Omerbegović",
@@ -84989,7 +85795,6 @@
     "fathers_name": "Relja",
     "full_name": "Panić-Ožegović Relje Stoja",
     "additional_info": "roćena 1921. Pištaline, Cazin. Srpkinja, domaćica. U NOB-i od 1941. Član SKOJ-a od avgusta 1941, a KPJ od decembra 1942. Bolničarka brigadnog saniteta. Učesnik bitke na Neretvi i Sutjesci.",
-    "birth_year": "",
     "pdf_page": 151,
     "pdf_y": 583.0,
     "pdf_x": 118.8,
@@ -85001,7 +85806,25 @@
     "rank": "bolničarka",
     "pdf_x_end": 286.2,
     "birth_place": "Pištaline, Cazin",
-    "party": "SKOJ 1941, KPJ 1942"
+    "party": "SKOJ 1941, KPJ 1942",
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0117000428",
+        "name": "Panić-Ožegović Relje Stoja",
+        "additional_info": "bolničarka, rođena 1921, Pištaline, Cazin, domaćica, Srpkinja, u NOB od 1941, član SKOJ-a od 1941, član KPJ od 1942, krajem rata bolničarka u artiljerijskom divizionu 10. divizije.",
+        "pdf_file": "borci-sutjeske-centralna-bolnica.pdf",
+        "pdf_page": 27,
+        "pdf_x": 51.2,
+        "pdf_y": 455.6,
+        "pdf_x_end": 223.4,
+        "pdf_y_end": 519.6,
+        "unit_file": "centralna-bolnica-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pantelić",
@@ -86038,6 +86861,10 @@
         "pdf_x_left": 32.9,
         "ref_book": "jajce-1942-poginuli"
       }
+    ],
+    "death_place": "D. vakuf",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -88908,6 +89735,10 @@
         "source_page": 1566,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Okolina busovač",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -90165,7 +90996,15 @@
         "source_page": 2814,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Kod buzovojče"
   },
   {
     "last_name": "Purnjaga",
@@ -91448,7 +92287,15 @@
         "source_page": 2469,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Fojnica"
   },
   {
     "last_name": "Rakita",
@@ -92107,7 +92954,15 @@
         "source_page": 2466,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "umro",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Babin dol"
   },
   {
     "last_name": "Ćato",
@@ -93736,7 +94591,8 @@
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1940"
+    "party": "KPJ 1940",
+    "birth_date": "31.03.1917"
   },
   {
     "last_name": "Ćulum",
@@ -94016,7 +94872,15 @@
         "source_page": 1905,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1941",
+    "death_place": "M.grad"
   },
   {
     "last_name": "Ćurić",
@@ -95905,7 +96769,18 @@
         "pdf_y_end": 88.8,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Savičić-Popović",
@@ -97860,7 +98735,15 @@
         "pdf_y_end": 400.4,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Soleša-Novaković",
@@ -100851,28 +101734,6 @@
     "rank": "bolničar",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 478.8
-  },
-  {
-    "last_name": "Todorović",
-    "middle_name": "",
-    "first_name": "Kosta",
-    "fathers_name": "",
-    "full_name": "Todorović Kosta",
-    "additional_info": "roćen 1921. Baraći, Mrkonjić Grad. Srbin, zemljoradnik. U NOB-i od 1942. Član KPJ od 1937. Borac 1. čete 1. bataljona. Učesnik bitke na Neretvi i Sutjesci. U ratu delegat voda.",
-    "birth_year": "1921",
-    "pdf_page": 197,
-    "pdf_y": 447.0,
-    "pdf_x": 119.2,
-    "pdf_y_end": 504.6,
-    "pdf_file": "7-krajiska-spisak.pdf",
-    "soldier_id": "0048013373",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "delegat voda",
-    "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 286.3,
-    "birth_place": "Baraći, Mrkonjić Grad",
-    "party": "KPJ 1937"
   },
   {
     "last_name": "Todorović",
@@ -104881,7 +105742,15 @@
         "pdf_y_end": 425.4,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.02.1945",
+          "place": "Zenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vračar",
@@ -105155,7 +106024,12 @@
         "pdf_y_end": 606.4,
         "unit_file": "13-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1914"
+      ]
+    }
   },
   {
     "last_name": "Vračar",
@@ -106965,7 +107839,12 @@
         "pdf_y_end": 170.2,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Vužić",
@@ -107281,7 +108160,6 @@
     "fathers_name": "Dušan",
     "full_name": "Zeljković Dušana Spasoje",
     "additional_info": "rođen u Sokolovu, Ključ. Srbin, zemljoradnik. U NOB-i od 1942. Član SKOJ-a. Borac 3. čete 3. bataljona. POGINUO 10. 6. 1943. na Zelengori.",
-    "birth_year": "",
     "pdf_page": 69,
     "pdf_y": 299.1,
     "pdf_x": 308.6,
@@ -107319,6 +108197,10 @@
         "pdf_y_end": 693.7,
         "ref_book": "cazinska-krajina-pali-borci"
       }
+    ],
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -107715,7 +108597,8 @@
         "source_page": 373,
         "ref_book": "narodni-heroji-1982"
       }
-    ]
+    ],
+    "birth_date": "06.03.1912"
   },
   {
     "last_name": "Zorić",
@@ -109212,7 +110095,6 @@
     "fathers_name": "Risto",
     "full_name": "Đukić Riste Gojko",
     "additional_info": "roćen 1927. Brdo, Šipovo. Srbin, zemljoradnik. U NOB-i od 1942. Borac 2. čete 1. bataljona. POGINUO oktobra 1944. kod Fojnice.",
-    "birth_year": "",
     "pdf_page": 65,
     "pdf_y": 188.7,
     "pdf_x": 120.6,
@@ -109228,6 +110110,7 @@
     "unit_detail": "2. četa, 1. bataljon",
     "pdf_x_end": 287.8,
     "birth_place": "Brdo, Šipovo",
+    "birth_year": "1927",
     "other_sources": [
       {
         "soldier_id": "9022030579",
@@ -109237,6 +110120,9 @@
         "source_page": 2469,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -110311,7 +111197,18 @@
         "pdf_y_end": 503.4,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đuza",
@@ -110350,7 +111247,15 @@
         "pdf_y_end": 557.7,
         "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šabanović",

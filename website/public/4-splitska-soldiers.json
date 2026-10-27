@@ -203,8 +203,7 @@
       }
     ],
     "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "rank": "borac"
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Ančić",
@@ -277,6 +276,10 @@
         "source_page": 2186,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -349,6 +352,10 @@
         "source_page": 1850,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -444,7 +451,13 @@
         "source_page": 943,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Smokvica, Korčula",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Banić",
@@ -483,7 +496,12 @@
         "pdf_x_left": 223.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "12.12.1924"
+      ]
+    }
   },
   {
     "last_name": "Banovac",
@@ -600,7 +618,6 @@
     "fathers_name": "Jozo",
     "full_name": "Barišić Joze Ante",
     "additional_info": ". .Solin, Split, 3. č., 2. bat., borac, poginuo 31. 5. 1944, Peulje, Grahovo",
-    "birth_year": "",
     "soldier_id": "0008000025",
     "pdf_page": 5,
     "pdf_y": 96.3,
@@ -614,6 +631,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 2. bataljon",
     "pdf_x_end": 362.7,
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9021045474",
@@ -623,6 +641,11 @@
         "source_page": 2201,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -654,7 +677,6 @@
     "fathers_name": "Jozo",
     "full_name": "Barišić Joze Milan",
     "additional_info": "..., K. Sućurac, Split, ..., borac, poginuo ..., Kamešnica, Livno",
-    "birth_year": "",
     "soldier_id": "0008000027",
     "pdf_page": 5,
     "pdf_y": 130.8,
@@ -666,6 +688,7 @@
     "death_place": "Kamešnica, Livno",
     "rank": "borac",
     "pdf_x_end": 362.9,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021045476",
@@ -675,7 +698,14 @@
         "source_page": 2201,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Barisković",
@@ -684,7 +714,6 @@
     "fathers_name": "Ivan",
     "full_name": "Barisković Ivana Davor",
     "additional_info": "..., Split, 1. č., 1. bat., borac, poginuo 28. 8. 1944, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000028",
     "pdf_page": 5,
     "pdf_y": 148.1,
@@ -698,6 +727,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 362.6,
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9021045481",
@@ -707,6 +737,11 @@
         "source_page": 2201,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -815,6 +850,10 @@
         "pdf_y_end": 469.2,
         "ref_book": "imotska-krajina-pali-borci"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -888,6 +927,10 @@
         "source_page": 1091,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -941,7 +984,6 @@
     "fathers_name": "Marin",
     "full_name": "Bedalov Marina Stipe",
     "additional_info": "..., K. Stari, Split, 4. bat., borac, poginuo 16. 6. 1944, Peulje",
-    "birth_year": "",
     "soldier_id": "0008000038",
     "pdf_page": 5,
     "pdf_y": 320.4,
@@ -955,6 +997,7 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 363.2,
+    "birth_year": "1928",
     "other_sources": [
       {
         "soldier_id": "9021044965",
@@ -964,6 +1007,11 @@
         "source_page": 2189,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -1145,7 +1193,6 @@
     "fathers_name": "Marin",
     "full_name": "Bezić Marina Josip",
     "additional_info": "..., Grohote, Split, 3. bat., borac, poginuo 28. 8. 1944, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000047",
     "pdf_page": 5,
     "pdf_y": 479.1,
@@ -1159,6 +1206,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 364.2,
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9021044798",
@@ -1168,6 +1216,11 @@
         "source_page": 2185,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -1383,6 +1436,10 @@
         "source_page": 2190,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1418,7 +1475,14 @@
         "pdf_x_end": 333.3,
         "pdf_y_end": 518.5
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "05.02.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Boban",
@@ -1427,7 +1491,6 @@
     "fathers_name": "Ante",
     "full_name": "Boban Ante Ivan",
     "additional_info": "..., Solin, Split, ..., borac, poginuo 9. mj. 1943, Kučine, Split",
-    "birth_year": "",
     "soldier_id": "0008000058",
     "pdf_page": 6,
     "pdf_y": 158.4,
@@ -1439,6 +1502,7 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 378.0,
+    "birth_year": "1898",
     "other_sources": [
       {
         "soldier_id": "9021045564",
@@ -1448,7 +1512,14 @@
         "source_page": 2203,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kod splita"
   },
   {
     "last_name": "Boban",
@@ -1457,7 +1528,6 @@
     "fathers_name": "Mate",
     "full_name": "Boban Mate Kajo",
     "additional_info": "..., Solin, Split, ..., borac, poginuo 1943, ...",
-    "birth_year": "",
     "soldier_id": "0008000059",
     "pdf_page": 6,
     "pdf_y": 175.7,
@@ -1490,7 +1560,15 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kod vrlike",
+    "birth_year": "1905"
   },
   {
     "last_name": "Bodić",
@@ -1869,6 +1947,10 @@
         "source_page": 2204,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1899,7 +1981,6 @@
     "fathers_name": "Marjan",
     "full_name": "Brstilo Marjana Duje",
     "additional_info": "..., ..., 1. č., 1. bat., borac, poginuo 29. 8. 1944, Grab, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000078",
     "pdf_page": 6,
     "pdf_y": 481.9,
@@ -1912,6 +1993,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 379.3,
+    "birth_year": "1919",
     "other_sources": [
       {
         "soldier_id": "9021026837",
@@ -1921,7 +2003,14 @@
         "source_page": 1327,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Omiš",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Bruin",
@@ -1975,6 +2064,10 @@
         "source_page": 2205,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2046,6 +2139,10 @@
         "source_page": 2205,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2162,6 +2259,10 @@
         "source_page": 2699,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2408,7 +2509,13 @@
         "source_page": 522,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Gornji Viduševac, Glina",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Cvijović",
@@ -2459,7 +2566,6 @@
     "fathers_name": "Luka",
     "full_name": "Cvitić Luke Mate",
     "additional_info": "..., . .., 2. č., 2. bat, borac, poginuo 29. 1. 1945, Čapljina",
-    "birth_year": "",
     "soldier_id": "0008000102",
     "pdf_page": 7,
     "pdf_y": 390.0,
@@ -2472,6 +2578,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 364.4,
+    "birth_year": "1913",
     "other_sources": [
       {
         "soldier_id": "9021023726",
@@ -2481,7 +2588,14 @@
         "source_page": 1093,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Dubravica, Metković",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Čerina",
@@ -2510,7 +2624,6 @@
     "fathers_name": "",
     "full_name": "Čorić Mirko",
     "additional_info": "zvani Kiko; ..., Lovreć, Imotski, 3. bat., borac, poginuo 15. 2. 1945, Drežnica, Mostar",
-    "birth_year": "",
     "soldier_id": "0008000104",
     "pdf_page": 7,
     "pdf_y": 424.6,
@@ -2524,6 +2637,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 364.9,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021016043",
@@ -2533,6 +2647,11 @@
         "source_page": 774,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -2565,6 +2684,10 @@
         "source_page": 595,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2617,7 +2740,6 @@
     "fathers_name": "Spira",
     "full_name": "Dadić Spira Marin",
     "additional_info": "zvani Laco; ..., Klis, Split borac, poginuo 10. mj. 1943, Mosor, Split",
-    "birth_year": "1925",
     "soldier_id": "0008000108",
     "pdf_page": 7,
     "pdf_y": 499.5,
@@ -2655,7 +2777,11 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_place": "Mosor",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Dadić",
@@ -2664,7 +2790,6 @@
     "fathers_name": "",
     "full_name": "Dadić Mijo",
     "additional_info": "zvani Mišeta; ..., Klis, Split, ..., borac, poginuo 9. mj. 1943, Kučine, Split",
-    "birth_year": "",
     "soldier_id": "0008000109",
     "pdf_page": 7,
     "pdf_y": 519.2,
@@ -2676,6 +2801,7 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 364.5,
+    "birth_year": "1895",
     "other_sources": [
       {
         "soldier_id": "9021045048",
@@ -2685,7 +2811,14 @@
         "source_page": 2190,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Knin"
   },
   {
     "last_name": "Dadić",
@@ -2750,7 +2883,12 @@
         "pdf_y_end": 451.0,
         "ref_book": "imotska-krajina-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "06.09.1900"
   },
   {
     "last_name": "Damjanov",
@@ -2883,7 +3021,6 @@
     "fathers_name": "Božo",
     "full_name": "Drnas Bože Jozo",
     "additional_info": "ili Frane; .. ., Mravince, Split, ..., borac, poginuo 9. mj. 1943, Žrnovnica, Split",
-    "birth_year": "",
     "soldier_id": "0008000118",
     "pdf_page": 8,
     "pdf_y": 164.9,
@@ -2895,6 +3032,7 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 379.9,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021045822",
@@ -2904,7 +3042,14 @@
         "source_page": 2209,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Žrnovnice"
   },
   {
     "last_name": "Dujmović",
@@ -2957,7 +3102,6 @@
     "fathers_name": "",
     "full_name": "Duplančić Branko",
     "additional_info": "Split, ..., komesar čete, poginuo 28. 8. 1944, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000121",
     "pdf_page": 8,
     "pdf_y": 216.5,
@@ -2970,6 +3114,7 @@
     "death_place": "Gračac",
     "rank": "komesar čete",
     "pdf_x_end": 379.9,
+    "birth_year": "1918",
     "other_sources": [
       {
         "soldier_id": "9021045852",
@@ -2979,6 +3124,11 @@
         "source_page": 2209,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -3327,7 +3477,6 @@
     "fathers_name": "Barise",
     "full_name": "Gace Barise Ivan",
     "additional_info": "..., Zagvozd, Imotski, borac, ..., poginuo 30. 4. 1945, Paz, Pazin",
-    "birth_year": "",
     "soldier_id": "0008000136",
     "pdf_page": 8,
     "pdf_y": 479.1,
@@ -3340,6 +3489,7 @@
     "death_place": "Paz, Pazin",
     "rank": "borac",
     "pdf_x_end": 380.0,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021016162",
@@ -3361,6 +3511,11 @@
         "pdf_y_end": 470.2,
         "ref_book": "imotska-krajina-pali-borci"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -3370,7 +3525,6 @@
     "fathers_name": "Ivan",
     "full_name": "Gače Ivana Nikola",
     "additional_info": "..., Zagvozd, Imotski, ..., borac, poginuo 1945, Istra",
-    "birth_year": "",
     "soldier_id": "0008000137",
     "pdf_page": 8,
     "pdf_y": 498.5,
@@ -3383,6 +3537,7 @@
     "death_place": "Istra",
     "rank": "borac",
     "pdf_x_end": 379.5,
+    "birth_year": "1913",
     "other_sources": [
       {
         "soldier_id": "9021016163",
@@ -3404,6 +3559,11 @@
         "pdf_y_end": 607.0,
         "ref_book": "imotska-krajina-pali-borci"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -3435,7 +3595,6 @@
     "fathers_name": "",
     "full_name": "Ganza Pavao",
     "additional_info": "K. Sućurac, Split, 3. bat., borac, poginuo 4. 12. 1943, Aržano, Imotski",
-    "birth_year": "",
     "soldier_id": "0008000139",
     "pdf_page": 8,
     "pdf_y": 536.9,
@@ -3458,7 +3617,13 @@
         "source_page": 2211,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Gašpar",
@@ -3702,7 +3867,6 @@
     "fathers_name": "",
     "full_name": "Gović Mirko",
     "additional_info": "zvani Gobica; Krapanj, Šibenik, 3. č., 1. bat., borac, poginuo 19. 1. 1944, Koričina, Glamoč",
-    "birth_year": "",
     "soldier_id": "0008000150",
     "pdf_page": 9,
     "pdf_y": 199.0,
@@ -3716,6 +3880,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 364.4,
+    "birth_year": "1924",
     "other_sources": [
       {
         "soldier_id": "9021036719",
@@ -3725,6 +3890,11 @@
         "source_page": 1798,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -3821,7 +3991,6 @@
     "fathers_name": "",
     "full_name": "Grgin Boško",
     "additional_info": "..., K. Novi, Split, 4. bat., borac, poginuo 4. 12. 1943, Tijarica, Sinj",
-    "birth_year": "",
     "soldier_id": "0008000155",
     "pdf_page": 9,
     "pdf_y": 284.9,
@@ -3844,7 +4013,13 @@
         "source_page": 2187,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Grmonja",
@@ -3916,7 +4091,6 @@
     "fathers_name": "Špiro",
     "full_name": "Grubišić Špira Dinko",
     "additional_info": "Solin, Split, ..., borac, poginuo 9. mj. 1943, Mravince, Split",
-    "birth_year": "1912",
     "soldier_id": "0008000159",
     "pdf_page": 9,
     "pdf_y": 354.0,
@@ -3931,6 +4105,10 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "death_place": "Mosor",
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148000839",
@@ -3945,7 +4123,8 @@
         "pdf_x_left": 266.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.08.1912"
   },
   {
     "last_name": "Gudelj",
@@ -4148,6 +4327,10 @@
         "source_page": 1819,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4408,6 +4591,10 @@
         "source_page": 2350,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4480,7 +4667,6 @@
     "fathers_name": "Jure",
     "full_name": "Jankov Jure Marin",
     "additional_info": "..., Solin, Split, borac, poginuo 1. mj. 1944, Preodac",
-    "birth_year": "",
     "soldier_id": "0008000184",
     "pdf_page": 10,
     "pdf_y": 259.0,
@@ -4492,6 +4678,7 @@
     "death_date": "1944",
     "rank": "borac",
     "pdf_x_end": 379.3,
+    "birth_year": "1902",
     "other_sources": [
       {
         "soldier_id": "9021046012",
@@ -4501,7 +4688,14 @@
         "source_page": 2214,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "U bosni"
   },
   {
     "last_name": "Jelaš",
@@ -4680,7 +4874,8 @@
         "pdf_x_left": 252.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "28.09.1906"
   },
   {
     "last_name": "Jerkunica",
@@ -4733,7 +4928,6 @@
     "fathers_name": "",
     "full_name": "Jovanović Nevenka",
     "additional_info": "..., Šibenik, 2. č., 3. bat., vodni delegat, poginula 4. 12. 1943, Tijarica, Sinj",
-    "birth_year": "",
     "soldier_id": "0008000194",
     "pdf_page": 10,
     "pdf_y": 431.8,
@@ -4747,6 +4941,7 @@
     "rank": "vodni delegat",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 379.3,
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9021037632",
@@ -4756,6 +4951,11 @@
         "source_page": 1820,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -4879,6 +5079,10 @@
         "source_page": 2187,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4995,6 +5199,10 @@
         "source_page": 1215,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5053,7 +5261,8 @@
         "pdf_x_left": 260.0,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.02.1921"
   },
   {
     "last_name": "Kapetanović",
@@ -5289,7 +5498,6 @@
     "fathers_name": "Mate",
     "full_name": "Katič Mate Ante",
     "additional_info": "zvani Tosin; ..., Solin, Split, ..., borac, poginuo 19. 9. 1943'",
-    "birth_year": "",
     "soldier_id": "0008000215",
     "pdf_page": 11,
     "pdf_y": 289.6,
@@ -5301,6 +5509,7 @@
     "death_date": "19.09.1943",
     "rank": "borac",
     "pdf_x_end": 369.5,
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9021046135",
@@ -5310,7 +5519,14 @@
         "source_page": 2216,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kod imotskog"
   },
   {
     "last_name": "Katič",
@@ -5339,7 +5555,6 @@
     "fathers_name": "",
     "full_name": "Katič Ivka",
     "additional_info": "..., Solin, Split, ..., borac, poginula 17. 12. 1943. (umrla od zadobijenih rana kod Livna)",
-    "birth_year": "",
     "soldier_id": "0008000217",
     "pdf_page": 11,
     "pdf_y": 324.2,
@@ -5360,7 +5575,15 @@
         "source_page": 2216,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Mić",
+    "birth_year": "1923"
   },
   {
     "last_name": "Katič",
@@ -5369,7 +5592,6 @@
     "fathers_name": "Marin",
     "full_name": "Katič Marina Ivo",
     "additional_info": "..., Solin, Split, 2. bat., borac, poginuo 17. 12. 1943, Livno",
-    "birth_year": "",
     "soldier_id": "0008000218",
     "pdf_page": 11,
     "pdf_y": 341.5,
@@ -5383,6 +5605,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 370.2,
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9021046133",
@@ -5392,6 +5615,11 @@
         "source_page": 2216,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -5500,6 +5728,10 @@
         "pdf_y_end": 722.2,
         "ref_book": "imotska-krajina-pali-borci"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5621,7 +5853,6 @@
     "fathers_name": "Lovre",
     "full_name": "Klišmanić Lovre Ante",
     "additional_info": "zvani Kupusina; .., K. Štafilić, Split, 2. bat, borac, poginuo 24. 4. 1944, Čaići, Livno",
-    "birth_year": "",
     "soldier_id": "0008000228",
     "pdf_page": 11,
     "pdf_y": 505.6,
@@ -5633,6 +5864,7 @@
     "death_place": "Čaići, Livno",
     "rank": "borac",
     "unit_detail": "2. bataljon",
+    "birth_year": "1926",
     "pdf_x_end": 370.2,
     "pdf_y_end": 523.3,
     "other_sources": [
@@ -5644,6 +5876,11 @@
         "source_page": 2188,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -5653,7 +5890,6 @@
     "fathers_name": "Petar",
     "full_name": "Klišmanić Petra Branko",
     "additional_info": "..„ K. Štafilić, Split, .., borac, poginuo 12. 9. 1943, Solin, Split",
-    "birth_year": "",
     "soldier_id": "0008000229",
     "pdf_page": 11,
     "pdf_y": 522.9,
@@ -5665,6 +5901,7 @@
     "death_place": "Solin, Split",
     "rank": "borac",
     "pdf_x_end": 370.3,
+    "birth_year": "1921",
     "other_sources": [
       {
         "soldier_id": "9021044936",
@@ -5674,7 +5911,14 @@
         "source_page": 2188,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Kaštel Štafilić, Split",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Klišmanić",
@@ -5918,7 +6162,12 @@
         "pdf_x_left": 250.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Kovačevič",
@@ -6050,7 +6299,6 @@
     "fathers_name": "",
     "full_name": "Križanac Zvonko",
     "additional_info": ".. ., Split, .. ., borac, poginuo 9. mj. 1943, kod Klisa",
-    "birth_year": "",
     "soldier_id": "0008000245",
     "pdf_page": 12,
     "pdf_y": 272.6,
@@ -6072,7 +6320,13 @@
         "source_page": 2218,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1905"
   },
   {
     "last_name": "Krolo",
@@ -6107,7 +6361,14 @@
         "pdf_x_end": 377.9,
         "pdf_y_end": 258.7
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.10.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krstičević",
@@ -6139,6 +6400,10 @@
         "source_page": 1103,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6208,7 +6473,8 @@
     ],
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "party": "SKOJ 1944"
+    "party": "SKOJ 1944",
+    "birth_date": "06.09.1923"
   },
   {
     "last_name": "Kuculo",
@@ -6428,7 +6694,13 @@
         "source_page": 1809,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Prvić Luka, Šibenik",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Lakota",
@@ -6480,6 +6752,10 @@
         "source_page": 2219,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6661,7 +6937,8 @@
         "pdf_x_left": 230.4,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.09.1926"
   },
   {
     "last_name": "Listes",
@@ -6670,7 +6947,6 @@
     "fathers_name": "Mate",
     "full_name": "Listes Mate Špiro",
     "additional_info": ". . , Klis, Split, .., borac, poginuo 9. mj. 1943, Kučine, Split",
-    "birth_year": "1898",
     "soldier_id": "0008000269",
     "pdf_page": 13,
     "pdf_y": 178.6,
@@ -6685,6 +6961,10 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_place": "Zrnovnica",
+    "birth_year": "1898",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148001484",
@@ -6699,7 +6979,8 @@
         "pdf_x_left": 230.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.10.1898"
   },
   {
     "last_name": "Lončar",
@@ -6729,7 +7010,6 @@
     "fathers_name": "Ante",
     "full_name": "Lovrić Ante Ante",
     "additional_info": ".., . . , 1. č, 1. bat, borac, poginuo 30. 8. 1944, Raduša, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000271",
     "pdf_page": 13,
     "pdf_y": 213.1,
@@ -6742,6 +7022,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 371.8,
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9021046304",
@@ -6751,7 +7032,14 @@
         "source_page": 2220,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Split",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Lozo",
@@ -6802,7 +7090,6 @@
     "fathers_name": "",
     "full_name": "Lučić Marko",
     "additional_info": ".. , Turjaci, Sinj, 4. č, 1. bat, borac, poginuo 28. 5. 1944, Grahovo",
-    "birth_year": "",
     "soldier_id": "0008000274",
     "pdf_page": 13,
     "pdf_y": 265.0,
@@ -6825,7 +7112,13 @@
         "source_page": 1881,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Lukačić",
@@ -6897,7 +7190,8 @@
     "death_date": "15.02.1945",
     "death_place": "Vrdi, Drežnice, Mostar",
     "rank": "borac",
-    "unit_detail": "3. četa, 3. bataljon"
+    "unit_detail": "3. četa, 3. bataljon",
+    "birth_date": "11.10.1914"
   },
   {
     "soldier_id": "0008003096",
@@ -7048,7 +7342,6 @@
     "fathers_name": "",
     "full_name": "Malenica Lovre",
     "additional_info": ". . , Donji Biranj, Perković, 1. bat, borac, poginuo 9. mj. 1943",
-    "birth_year": "",
     "soldier_id": "0008000282",
     "pdf_page": 13,
     "pdf_y": 411.8,
@@ -7061,6 +7354,7 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 371.2,
+    "birth_year": "1906",
     "other_sources": [
       {
         "soldier_id": "9021036184",
@@ -7070,7 +7364,14 @@
         "source_page": 1787,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ljubitovci"
   },
   {
     "last_name": "Maleš",
@@ -7210,7 +7511,12 @@
         "pdf_y_end": 465.5,
         "ref_book": "imotska-krajina-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "17.04.1910"
   },
   {
     "last_name": "Marinović",
@@ -7349,6 +7655,10 @@
         "source_page": 2222,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7423,6 +7733,10 @@
         "source_page": 1326,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7530,7 +7844,6 @@
     "fathers_name": "Jure",
     "full_name": "Matijaš Jure Filip",
     "additional_info": "..., Vrsine, Trogir, borac, umro od zadobijenih rana u Italiji",
-    "birth_year": "",
     "soldier_id": "0008000301",
     "pdf_page": 14,
     "pdf_y": 247.8,
@@ -7542,6 +7855,7 @@
     "death_place": "Italija",
     "rank": "borac",
     "pdf_x_end": 374.6,
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9021049561",
@@ -7551,7 +7865,14 @@
         "source_page": 2351,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Matkovič",
@@ -7581,7 +7902,6 @@
     "fathers_name": "Marin",
     "full_name": "Matkovič Marina Vjekoslav",
     "additional_info": "zvani Mile; . .Kučine, Split, komesar čete, strijeljan 9. mj. 1943. na splitskom groblju",
-    "birth_year": "",
     "soldier_id": "0008000303",
     "pdf_page": 14,
     "pdf_y": 282.8,
@@ -7589,6 +7909,7 @@
     "pdf_y_end": 300.2,
     "pdf_file": "4-splitska-brigada.pdf",
     "pdf_x_end": 374.9,
+    "birth_year": "1920",
     "birth_place": "Kučine, Split",
     "death_type": "streljan",
     "death_date": "1943",
@@ -7602,7 +7923,14 @@
         "source_page": 2223,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Split"
   },
   {
     "last_name": "Matošić",
@@ -7646,7 +7974,6 @@
     "fathers_name": "Andrija",
     "full_name": "Matošić Andrije Ljubo",
     "additional_info": "Split, 4. bat., borac, poginuo 30. 9. 1943, Mosor, Split",
-    "birth_year": "1917",
     "soldier_id": "0008000305",
     "pdf_page": 14,
     "pdf_y": 317.6,
@@ -7662,6 +7989,10 @@
     "pdf_x_end": 375.6,
     "ethnicity": "Hrvat",
     "occupation": "brijač",
+    "birth_year": "1917",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148001744",
@@ -7685,7 +8016,6 @@
     "fathers_name": "Ivan",
     "full_name": "Matulović Ivana Marin",
     "additional_info": "..., Klis, Split, borac, poginuo 9. mj. 1943, Mosor, Split",
-    "birth_year": "",
     "soldier_id": "0008000306",
     "pdf_page": 14,
     "pdf_y": 334.9,
@@ -7697,6 +8027,7 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 375.3,
+    "birth_year": "1911",
     "other_sources": [
       {
         "soldier_id": "9021045075",
@@ -7706,7 +8037,14 @@
         "source_page": 2191,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Split"
   },
   {
     "last_name": "Medić",
@@ -7800,7 +8138,6 @@
     "fathers_name": "Stipe",
     "full_name": "Mihaljević Stipe Rade",
     "additional_info": ". .., K. Gomilica, Split, . .., borac, poginuo 4. 12. 1943, Tijarica, Sinj",
-    "birth_year": "",
     "soldier_id": "0008000311",
     "pdf_page": 14,
     "pdf_y": 421.3,
@@ -7813,6 +8150,7 @@
     "death_place": "Tijarica, Sinj",
     "rank": "borac",
     "pdf_x_end": 375.4,
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9021046431",
@@ -7822,6 +8160,11 @@
         "source_page": 2223,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -7831,7 +8174,6 @@
     "fathers_name": "Mate",
     "full_name": "Mihanović Mate Ivan",
     "additional_info": ". . ., Sitno Donje, Split, .. ., borac, poginuo 2. 2. 1945, Široki Brijeg",
-    "birth_year": "1901",
     "soldier_id": "0008000312",
     "pdf_page": 14,
     "pdf_y": 439.6,
@@ -7846,6 +8188,10 @@
     "pdf_x_end": 375.6,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1901",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148001781",
@@ -7860,7 +8206,15 @@
         "pdf_x_left": 253.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.02.1945",
+          "place": "Široki Brijeg"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mijač",
@@ -7926,7 +8280,6 @@
     "fathers_name": "Špiro",
     "full_name": "Mikelić Špira Vinka",
     "additional_info": "..., Vranjic, Split, ..., borac, 9. mj. 1943, zarobljena i strijeljana na groblju Split",
-    "birth_year": "",
     "soldier_id": "0008000315",
     "pdf_page": 14,
     "pdf_y": 496.7,
@@ -7937,6 +8290,7 @@
     "death_type": "streljan",
     "rank": "borac",
     "pdf_x_end": 377.1,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021046460",
@@ -7946,7 +8300,16 @@
         "source_page": 2224,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Kamen.split"
   },
   {
     "last_name": "Milanović",
@@ -7955,7 +8318,6 @@
     "fathers_name": "Ante",
     "full_name": "Milanović Ante Anka",
     "additional_info": "..., Solin, Split, 1. č., 1. bat., borac, poginula 23. 7. 1944, Kijevo, Sinj",
-    "birth_year": "",
     "soldier_id": "0008000316",
     "pdf_page": 14,
     "pdf_y": 516.1,
@@ -7969,6 +8331,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 375.9,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021046467",
@@ -7978,6 +8341,11 @@
         "source_page": 2224,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -8085,7 +8453,6 @@
     "fathers_name": "",
     "full_name": "Miletić Paško",
     "additional_info": ".., Split, .., borac, poginuo 2. 10. 1943, Lovreć",
-    "birth_year": "",
     "soldier_id": "0008000321",
     "pdf_page": 15,
     "pdf_y": 94.6,
@@ -8107,7 +8474,13 @@
         "source_page": 2224,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1904"
   },
   {
     "last_name": "Milič",
@@ -8277,7 +8650,6 @@
     "fathers_name": "",
     "full_name": "Miše Marin",
     "additional_info": ".., Okrug, Trogir, .., borac, poginuo 9. mj. 1943, Kućine, Split",
-    "birth_year": "",
     "soldier_id": "0008000329",
     "pdf_page": 15,
     "pdf_y": 224.2,
@@ -8298,7 +8670,15 @@
         "source_page": 2338,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Livno",
+    "birth_year": "1922"
   },
   {
     "last_name": "Mišić",
@@ -8368,7 +8748,6 @@
     "fathers_name": "Josip",
     "full_name": "Mlikota Josipa Ante",
     "additional_info": ". . , Zagvozd, Imotski, .., borac, poginuo 14. 2. 1945, Drežnica, Mostar",
-    "birth_year": "",
     "soldier_id": "0008000333",
     "pdf_page": 15,
     "pdf_y": 293.3,
@@ -8381,6 +8760,7 @@
     "death_place": "Drežnica, Mostar",
     "rank": "borac",
     "pdf_x_end": 373.5,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021016165",
@@ -8402,6 +8782,11 @@
         "pdf_y_end": 871.2,
         "ref_book": "imotska-krajina-pali-borci"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -8574,7 +8959,6 @@
     "fathers_name": "",
     "full_name": "Muslin Marko",
     "additional_info": ".. , Ogorje, Split. 4. bat, borac, poginuo 25. 7. 1944, Polača",
-    "birth_year": "",
     "soldier_id": "0008000341",
     "pdf_page": 15,
     "pdf_y": 431.5,
@@ -8608,7 +8992,13 @@
         "source_page": 2178,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Mustapić",
@@ -8772,7 +9162,12 @@
         "pdf_x_left": 224.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "04.10.1906"
+      ]
+    }
   },
   {
     "last_name": "Neškovčin",
@@ -8823,7 +9218,6 @@
     "fathers_name": "",
     "full_name": "Ninčević Petar",
     "additional_info": "zvani Perica; . . ., Split, 1. č., 1. bat., borac, poginuo 23. 7. 1944, Kijevo",
-    "birth_year": "",
     "soldier_id": "0008000349",
     "pdf_page": 16,
     "pdf_y": 64.1,
@@ -8837,6 +9231,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 368.8,
+    "birth_year": "1917",
     "other_sources": [
       {
         "soldier_id": "9021046524",
@@ -8846,6 +9241,11 @@
         "source_page": 2226,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -8898,7 +9298,6 @@
     "fathers_name": "",
     "full_name": "Novaković Zdenko",
     "additional_info": ". .., Split, 1. bat., borac, poginuo 23. 8. 1944, Kijevo",
-    "birth_year": "",
     "soldier_id": "0008000352",
     "pdf_page": 16,
     "pdf_y": 115.7,
@@ -8912,6 +9311,7 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 369.3,
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9021046540",
@@ -8921,6 +9321,11 @@
         "source_page": 2226,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -8951,7 +9356,6 @@
     "fathers_name": "Ivan",
     "full_name": "Orosnjak Ivana Blaž",
     "additional_info": "..., K. Sućurac, Split, 2. bat., borac, poginuo 18. 11. 1943, selo Jaram, Imotski",
-    "birth_year": "",
     "soldier_id": "0008000354",
     "pdf_page": 16,
     "pdf_y": 150.0,
@@ -8965,6 +9369,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 368.9,
+    "birth_year": "1919",
     "other_sources": [
       {
         "soldier_id": "9021046552",
@@ -8974,6 +9379,11 @@
         "source_page": 2226,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -9152,7 +9562,6 @@
     "fathers_name": "Petar",
     "full_name": "Parać Petra Boris",
     "additional_info": "..., Solin, Split, 2. č., 4. bat., komesar čete, poginuo 6. mj. 1944, Gnjat, Grahovo",
-    "birth_year": "",
     "soldier_id": "0008000364",
     "pdf_page": 16,
     "pdf_y": 305.5,
@@ -9165,6 +9574,7 @@
     "rank": "komesar čete",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 369.0,
+    "birth_year": "1919",
     "other_sources": [
       {
         "soldier_id": "9021046580",
@@ -9174,6 +9584,11 @@
         "source_page": 2227,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -9236,7 +9651,14 @@
         "pdf_y_end": 725.5,
         "ref_book": "imotska-krajina-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Slivno, Imotski",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_date": "01.04.1911"
   },
   {
     "last_name": "Pavelin",
@@ -9333,7 +9755,6 @@
     "fathers_name": "Mate",
     "full_name": "Pavlak Mate Ivan",
     "additional_info": ". .., .. ., .. ., borac, poginuo 28. 1. 1945, Čapljina",
-    "birth_year": "",
     "soldier_id": "0008000371",
     "pdf_page": 16,
     "pdf_y": 418.3,
@@ -9345,6 +9766,7 @@
     "death_place": "Čapljina",
     "rank": "borac",
     "pdf_x_end": 368.9,
+    "birth_year": "1911",
     "other_sources": [
       {
         "soldier_id": "9021055311",
@@ -9354,7 +9776,14 @@
         "source_page": 2702,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Orah, Vrgorac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Penga",
@@ -9539,7 +9968,6 @@
     "fathers_name": "Filip",
     "full_name": "Perković Filipa Ante",
     "additional_info": ". . , Aržano, Imotski, 2. č, 4. bat, borac, poginuo 28. 1. 1945, Čitluk",
-    "birth_year": "",
     "soldier_id": "0008000379",
     "pdf_page": 17,
     "pdf_y": 49.6,
@@ -9553,6 +9981,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 375.8,
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9021015813",
@@ -9574,7 +10003,13 @@
         "pdf_y_end": 744.8,
         "ref_book": "imotska-krajina-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_date": "17.12.1922"
   },
   {
     "last_name": "Perković",
@@ -9612,7 +10047,12 @@
         "pdf_x_left": 247.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Perković",
@@ -9621,7 +10061,6 @@
     "fathers_name": "Andrija",
     "full_name": "Perković Andrije Mladen",
     "additional_info": ". . , Klis, Split, . . , borac, 27. 9. 1943, strijeljan na splitskom groblju",
-    "birth_year": "1927",
     "soldier_id": "0008000381",
     "pdf_page": 17,
     "pdf_y": 87.3,
@@ -9636,6 +10075,10 @@
     "occupation": "mehaničar",
     "death_date": "27.09.1943",
     "death_place": "kod Novog groblja u Splitu",
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002196",
@@ -9659,7 +10102,6 @@
     "fathers_name": "Vice",
     "full_name": "Peros Vice Ante",
     "additional_info": "Mravince, Split, . . , borac, poginuo 30. 9. 1943, Mosor, Split",
-    "birth_year": "",
     "soldier_id": "0008000382",
     "pdf_page": 17,
     "pdf_y": 104.1,
@@ -9672,6 +10114,7 @@
     "death_place": "Mosor, Split",
     "rank": "borac",
     "pdf_x_end": 376.4,
+    "birth_year": "1916",
     "other_sources": [
       {
         "soldier_id": "9021046657",
@@ -9681,6 +10124,11 @@
         "source_page": 2229,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -10294,7 +10742,14 @@
         "pdf_x_end": 370.6,
         "pdf_y_end": 407.8
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "11.05.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Radić",
@@ -10324,7 +10779,6 @@
     "fathers_name": "Andrija",
     "full_name": "Radić Andrije Stipe",
     "additional_info": ". . ., Klis, Split, 1. bat., borac, poginuo 28. 1. 1945, Čapljina",
-    "birth_year": "",
     "soldier_id": "0008000411",
     "pdf_page": 18,
     "pdf_y": 98.1,
@@ -10338,6 +10792,7 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 377.8,
+    "birth_year": "1919",
     "other_sources": [
       {
         "soldier_id": "9021045097",
@@ -10347,6 +10802,11 @@
         "source_page": 2191,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -10356,7 +10816,6 @@
     "fathers_name": "",
     "full_name": "Radošević Jozo",
     "additional_info": ". . ., Dugopolje, Split, . . ., borac, poginuo 16. 1. 1945, selo Uzarići, Široki Brijeg",
-    "birth_year": "",
     "soldier_id": "0008000412",
     "pdf_page": 18,
     "pdf_y": 115.4,
@@ -10369,6 +10828,7 @@
     "death_place": "Uzarići, Široki Brijeg",
     "rank": "borac",
     "pdf_x_end": 377.4,
+    "birth_year": "1907",
     "other_sources": [
       {
         "soldier_id": "9021044673",
@@ -10378,6 +10838,11 @@
         "source_page": 2182,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -10387,7 +10852,6 @@
     "fathers_name": "",
     "full_name": "Radošević Mirko",
     "additional_info": ". . ., Dugopolje, Split, .. ., borac, poginuo 1945, Istra",
-    "birth_year": "",
     "soldier_id": "0008000413",
     "pdf_page": 18,
     "pdf_y": 132.4,
@@ -10400,6 +10864,7 @@
     "death_place": "Istra",
     "rank": "borac",
     "pdf_x_end": 377.7,
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9021044672",
@@ -10409,6 +10874,11 @@
         "source_page": 2182,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -10444,7 +10914,8 @@
         "pdf_y_end": 871.1,
         "ref_book": "imotska-krajina-pali-borci"
       }
-    ]
+    ],
+    "birth_date": "22.06.1906"
   },
   {
     "last_name": "Reić",
@@ -10475,7 +10946,6 @@
     "fathers_name": "",
     "full_name": "Reić Vojko",
     "additional_info": ".. ., Split, 2. bat., borac, poginuo 10. 4. 1944, Pleševica. Knin:",
-    "birth_year": "",
     "soldier_id": "0008000416",
     "pdf_page": 18,
     "pdf_y": 184.3,
@@ -10498,7 +10968,13 @@
         "source_page": 2232,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Reić",
@@ -10625,7 +11101,6 @@
     "fathers_name": "Mijo",
     "full_name": "Rokov Mije Marin",
     "additional_info": "zvani Mario; .. ., K. Gomilica, Split, ..., poginuo 4. 11. 1943, Kobilić, Posušje",
-    "birth_year": "",
     "soldier_id": "0008000421",
     "pdf_page": 18,
     "pdf_y": 279.3,
@@ -10633,6 +11108,7 @@
     "pdf_y_end": 296.7,
     "pdf_file": "4-splitska-brigada.pdf",
     "pdf_x_end": 377.6,
+    "birth_year": "1915",
     "birth_place": "K. Gomilica, Split",
     "death_type": "poginuo",
     "death_date": "04.11.1943",
@@ -10646,6 +11122,11 @@
         "source_page": 2232,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -10721,6 +11202,10 @@
         "source_page": 2343,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10774,7 +11259,6 @@
     "fathers_name": "",
     "full_name": "Ruscić Ivan",
     "additional_info": ". . ., Turjaci, Sinj, . .., borac, poginuo 28. 8. 1944, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000427",
     "pdf_page": 18,
     "pdf_y": 383.5,
@@ -10796,7 +11280,13 @@
         "source_page": 1847,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Sama",
@@ -10996,6 +11486,10 @@
         "source_page": 2179,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11017,7 +11511,8 @@
     "death_date": "1944",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 363.2
+    "pdf_x_end": 363.2,
+    "birth_date": "20.04.1920"
   },
   {
     "last_name": "Sirković",
@@ -11157,7 +11652,6 @@
     "fathers_name": "Grgo",
     "full_name": "Sokol Grge Ante",
     "additional_info": ".., K. Sućurac, Split, 2. bat, borac, poginuo .. , . ..",
-    "birth_year": "",
     "soldier_id": "0008000444",
     "pdf_page": 19,
     "pdf_y": 169.6,
@@ -11169,6 +11663,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 362.8,
+    "birth_year": "1914",
     "other_sources": [
       {
         "soldier_id": "9021046922",
@@ -11178,7 +11673,16 @@
         "source_page": 2235,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Oko knina"
   },
   {
     "last_name": "Solić",
@@ -11292,7 +11796,6 @@
     "fathers_name": "Petar",
     "full_name": "Stančić Petra Ante",
     "additional_info": ".. , K. Lukšić, Split, 1. bat, borac, poginuo 23. 7. 1944, Kijevo",
-    "birth_year": "",
     "soldier_id": "0008000450",
     "pdf_page": 19,
     "pdf_y": 280.0,
@@ -11306,6 +11809,7 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 362.6,
+    "birth_year": "1929",
     "other_sources": [
       {
         "soldier_id": "9021044877",
@@ -11315,6 +11819,11 @@
         "source_page": 2187,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -11408,7 +11917,19 @@
         "source_page": 356,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Mirlović Zagora, Drniš",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Bakar"
   },
   {
     "last_name": "Suša",
@@ -11565,7 +12086,6 @@
     "fathers_name": "Jure",
     "full_name": "Simić Jure Ante",
     "additional_info": ".. , K. Štafilić, Split, 3. č, 1. bat, vodnik, poginuo 6. mj. 1944, Prolog, Livno",
-    "birth_year": "",
     "soldier_id": "0008000462",
     "pdf_page": 19,
     "pdf_y": 486.7,
@@ -11578,6 +12098,7 @@
     "rank": "vodnik",
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 362.1,
+    "birth_year": "1917",
     "other_sources": [
       {
         "soldier_id": "9021044952",
@@ -11587,7 +12108,14 @@
         "source_page": 2188,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prolog"
   },
   {
     "last_name": "Šore",
@@ -12095,7 +12623,8 @@
         "pdf_y_end": 337.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.02.1922"
   },
   {
     "last_name": "Turković",
@@ -12315,7 +12844,12 @@
         "pdf_x_left": 218.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Uvodić",
@@ -12324,7 +12858,6 @@
     "fathers_name": "Martin",
     "full_name": "Uvodić Martina Marija",
     "additional_info": "..., Klis-Kosa, Split, 3. č., 1. bat., borac, poginulo 9. 5. 1944, Caići, Livno",
-    "birth_year": "1925",
     "soldier_id": "0008000494",
     "pdf_page": 20,
     "pdf_y": 522.8,
@@ -12363,7 +12896,11 @@
     "death_type": "poginuo",
     "death_date": "09.05.1944",
     "death_place": "Odžaci, Livno",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Uvodić",
@@ -12391,7 +12928,6 @@
     "fathers_name": "Mate",
     "full_name": "Uvodić Mate Mijo",
     "additional_info": ". . , Klis-Kosa, Split, 4. bat., desetar, poginuo 25. 7. 1944, Oštra Glavica, Knin",
-    "birth_year": "1907",
     "soldier_id": "0008000496",
     "pdf_page": 21,
     "pdf_y": 45.2,
@@ -12429,7 +12965,11 @@
       }
     ],
     "ethnicity": "Hrvat",
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "birth_year": "1907",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Vegar",
@@ -12458,7 +12998,6 @@
     "fathers_name": "Jakov",
     "full_name": "Vicetin Jakova Ivan",
     "additional_info": ". . , K. Sućurac, Split, . . , borac, 1944, smrznuo se na Dinari, Uništa, Grahovo",
-    "birth_year": "",
     "soldier_id": "0008000498",
     "pdf_page": 21,
     "pdf_y": 79.7,
@@ -12468,6 +13007,7 @@
     "birth_place": "K. Sućurac, Split",
     "rank": "borac",
     "pdf_x_end": 366.6,
+    "birth_year": "1910",
     "other_sources": [
       {
         "soldier_id": "9021047052",
@@ -12477,7 +13017,18 @@
         "source_page": 2238,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Kijevo kod vrli"
   },
   {
     "last_name": "Viculin",
@@ -12613,7 +13164,6 @@
     "fathers_name": "Mijo",
     "full_name": "Vućičić Mije Jozo",
     "additional_info": ".. , Solin, Split, 2. č, 2. bat, borac, poginuo 2. mj. 1944, Crni Lug, Grahovo",
-    "birth_year": "",
     "soldier_id": "0008000505",
     "pdf_page": 21,
     "pdf_y": 200.9,
@@ -12626,6 +13176,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 366.1,
+    "birth_year": "1901",
     "other_sources": [
       {
         "soldier_id": "9021047093",
@@ -12635,7 +13186,14 @@
         "source_page": 2239,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Livansko Polje"
   },
   {
     "last_name": "Vuk",
@@ -12751,7 +13309,6 @@
     "fathers_name": "Mate",
     "full_name": "Vuleta Mate Nikola",
     "additional_info": ".. , Solin, Split, .. , borac, poginuo 1944, kod Visa",
-    "birth_year": "1921",
     "soldier_id": "0008000511",
     "pdf_page": 21,
     "pdf_y": 305.3,
@@ -12793,7 +13350,13 @@
         "pdf_x_left": 23.5,
         "unit_file": "1-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Vuličić",
@@ -12885,7 +13448,6 @@
     "fathers_name": "",
     "full_name": "Zekan Ivan",
     "additional_info": ".. , Postinje, Split, .. , pomoćnik obavještajnog oficira, poginuo 9. 5. 1944, Ćaići, Livno",
-    "birth_year": "",
     "soldier_id": "0008000516",
     "pdf_page": 21,
     "pdf_y": 401.6,
@@ -12897,6 +13459,7 @@
     "death_date": "09.05.1944",
     "death_place": "Ćaići, Livno",
     "pdf_x_end": 366.4,
+    "birth_year": "1924",
     "other_sources": [
       {
         "soldier_id": "9021044525",
@@ -12906,6 +13469,11 @@
         "source_page": 2178,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -13006,7 +13574,8 @@
         "pdf_y_end": 468.0,
         "ref_book": "imotska-krajina-pali-borci"
       }
-    ]
+    ],
+    "birth_date": "15.03.1923"
   },
   {
     "last_name": "Zguba",
@@ -13081,7 +13650,6 @@
     "fathers_name": "Barise",
     "full_name": "Žizić Barise Stipe",
     "additional_info": ". . ., Solin, Split, . . ., borac, poginuo 28. 8. 1944, Gračac",
-    "birth_year": "",
     "soldier_id": "0008000524",
     "pdf_page": 22,
     "pdf_y": 43.5,
@@ -13094,6 +13662,7 @@
     "death_place": "Gračac",
     "rank": "borac",
     "pdf_x_end": 379.7,
+    "birth_year": "1913",
     "other_sources": [
       {
         "soldier_id": "9021047141",
@@ -13103,6 +13672,11 @@
         "source_page": 2240,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -13153,7 +13727,6 @@
     "fathers_name": "",
     "full_name": "Županov Vicko",
     "additional_info": ". . ., K. Sućurac, Split, 3. bat., borac, poginuo 18. 11. 1943, Tanđarić, Imotski",
-    "birth_year": "",
     "soldier_id": "0008000527",
     "pdf_page": 22,
     "pdf_y": 109.7,
@@ -13176,7 +13749,13 @@
         "source_page": 2241,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1908"
   },
   {
     "last_name": "Županović",
@@ -13185,7 +13764,6 @@
     "fathers_name": "Blaž",
     "full_name": "Županović Blaža Jakov",
     "additional_info": ". .., Podorljak, Šibenik, 2. bat., borac, poginuo 9. 5. 1944, Odžaci, Livno",
-    "birth_year": "",
     "soldier_id": "0008000528",
     "pdf_page": 22,
     "pdf_y": 128.7,
@@ -13199,6 +13777,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 380.2,
+    "birth_year": "1909",
     "other_sources": [
       {
         "soldier_id": "9021037373",
@@ -13208,6 +13787,11 @@
         "source_page": 1814,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -13539,7 +14123,8 @@
         "pdf_x_left": 218.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "19.02.1924"
   },
   {
     "last_name": "Alujević",
@@ -13645,7 +14230,8 @@
         "pdf_x_left": 218.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.04.1910"
   },
   {
     "last_name": "Alujević",
@@ -13879,7 +14465,12 @@
         "pdf_x_left": 256.0,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "17.09.1909"
+      ]
+    }
   },
   {
     "last_name": "Anić",
@@ -14115,7 +14706,8 @@
         "pdf_x_left": 255.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.05.1921"
   },
   {
     "last_name": "Armanda",
@@ -14380,7 +14972,8 @@
         "pdf_y_end": 625.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.08.1927"
   },
   {
     "last_name": "Bacelić",
@@ -14844,7 +15437,8 @@
         "pdf_y_end": 578.8,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.12.1919"
   },
   {
     "last_name": "Ban",
@@ -16117,7 +16711,6 @@
     "fathers_name": "Jure",
     "full_name": "Bašić Jure Marin",
     "additional_info": "..., Dubrava, Tugare, . .. , borac",
-    "birth_year": "1912",
     "soldier_id": "0008000674",
     "pdf_page": 26,
     "pdf_y": 367.0,
@@ -16131,6 +16724,10 @@
     "death_type": "umro",
     "death_date": "1984",
     "occupation": "zemljoradnik",
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148000257",
@@ -16145,7 +16742,8 @@
         "pdf_x_left": 251.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "26.07.1912"
   },
   {
     "last_name": "Bašić",
@@ -18538,7 +19136,6 @@
     "fathers_name": "Petar",
     "full_name": "Bogunović Petra Andrija",
     "additional_info": ". . ., Baćina, Ploče, 4. bat., komandant bataljona",
-    "birth_year": "1917",
     "soldier_id": "0008000806",
     "pdf_page": 29,
     "pdf_y": 254.9,
@@ -18552,6 +19149,10 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "SKOJ 1939, KPJ 1941",
+    "birth_year": "1917",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001000916",
@@ -19252,7 +19853,6 @@
     "fathers_name": "Nikola",
     "full_name": "Bošković Nikole Miljenko",
     "additional_info": ". .. , Zrnovnica, Split, . . . , borac",
-    "birth_year": "1907",
     "soldier_id": "0008000840",
     "pdf_page": 30,
     "pdf_y": 125.3,
@@ -19264,6 +19864,10 @@
     "pdf_x_end": 374.0,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1907",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148010016",
@@ -19278,7 +19882,8 @@
         "pdf_x_left": 256.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "26.08.1907"
   },
   {
     "last_name": "Bošnjak",
@@ -19414,7 +20019,17 @@
         "source_page": 2186,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Klisa"
   },
   {
     "last_name": "Botušić",
@@ -19533,7 +20148,6 @@
     ],
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Široki Brijeg, Mostar",
@@ -19846,7 +20460,6 @@
     "fathers_name": "Grgo",
     "full_name": "Braović Grge Šimun",
     "additional_info": ". . ., Dolac Donji, Split, . . . , borac",
-    "birth_year": "1911",
     "soldier_id": "0008000871",
     "pdf_page": 30,
     "pdf_y": 463.4,
@@ -19858,6 +20471,10 @@
     "pdf_x_end": 348.0,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148000431",
@@ -19872,7 +20489,8 @@
         "pdf_x_left": 266.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.09.1911"
   },
   {
     "last_name": "Braškin",
@@ -20660,7 +21278,6 @@
     "birth_place": "Klis, Split",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 379.1,
-    "rank": "borac",
     "death_type": "umro",
     "death_date": "1941",
     "death_place": "Nosilac je Partizanske spomenice",
@@ -23088,7 +23705,6 @@
     "fathers_name": "",
     "full_name": "Čulič Karmelo",
     "additional_info": ". .. , Split, 2. bat, borac, nestao 23. 7. 1944, Sivo brdo, Polača",
-    "birth_year": "",
     "soldier_id": "0008001042",
     "pdf_page": 34,
     "pdf_y": 297.8,
@@ -23111,7 +23727,13 @@
         "source_page": 2207,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Čulić",
@@ -24732,7 +25354,6 @@
     "fathers_name": "Ivan",
     "full_name": "Dorić Ivana Ante",
     "additional_info": "zvani Sokol; . . , Split, .. , borac",
-    "birth_year": "",
     "soldier_id": "0008001129",
     "pdf_page": 36,
     "pdf_y": 273.6,
@@ -24742,6 +25363,7 @@
     "birth_place": "Split",
     "rank": "borac",
     "pdf_x_end": 295.1,
+    "birth_year": "1906",
     "other_sources": [
       {
         "soldier_id": "9021045811",
@@ -24751,7 +25373,18 @@
         "source_page": 2208,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1944",
+    "death_place": "Malta"
   },
   {
     "last_name": "Doždor",
@@ -24854,7 +25487,8 @@
         "pdf_y_end": 525.6,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "08.08.1930"
   },
   {
     "last_name": "Dragojevič",
@@ -26157,7 +26791,8 @@
         "pdf_x_left": 245.3,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "26.02.1908"
   },
   {
     "soldier_id": "0008003099",
@@ -26610,7 +27245,8 @@
         "pdf_x_left": 231.5,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.09.1921"
   },
   {
     "last_name": "Eterović",
@@ -27556,7 +28192,15 @@
         "pdf_y_end": 497.9,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "22.02.1913",
+    "variants": {
+      "death": [
+        {
+          "date": "1981"
+        }
+      ]
+    }
   },
   {
     "last_name": "Gace",
@@ -30864,7 +31508,8 @@
         "pdf_y_end": 236.4,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "11.06.1923"
   },
   {
     "last_name": "Jakasović",
@@ -31064,7 +31709,12 @@
         "pdf_x_left": 244.4,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1900"
+      ]
+    }
   },
   {
     "last_name": "Jaman",
@@ -31118,7 +31768,8 @@
         "pdf_y_end": 645.4,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "13.01.1925"
   },
   {
     "last_name": "Janošek",
@@ -32247,7 +32898,6 @@
     "fathers_name": "Marin",
     "full_name": "Jurćev Marina Ante",
     "additional_info": ".., K. Novi, Split, 3. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008001518",
     "pdf_page": 45,
     "pdf_y": 154.4,
@@ -32258,6 +32908,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 347.7,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021044896",
@@ -32267,7 +32918,18 @@
         "source_page": 2187,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Strumica"
   },
   {
     "last_name": "Jurčević",
@@ -32421,7 +33083,17 @@
         "source_page": 1325,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Drežnica"
   },
   {
     "last_name": "Jurić",
@@ -32777,7 +33449,12 @@
         "source_page": 267,
         "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Jurišić",
@@ -32894,7 +33571,8 @@
         "pdf_y_end": 858.4,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.04.1915"
   },
   {
     "last_name": "Jurković",
@@ -33485,7 +34163,6 @@
     "fathers_name": "",
     "full_name": "Kasandrić Petar",
     "additional_info": ".., Split, . . , borac, zarobljen 10. mj. 1943. kod Lovreća",
-    "birth_year": "",
     "soldier_id": "0008001583",
     "pdf_page": 46,
     "pdf_y": 317.2,
@@ -33504,7 +34181,19 @@
         "source_page": 2216,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "9.splitska brigada",
+    "birth_year": "1923"
   },
   {
     "last_name": "Kasum",
@@ -33602,7 +34291,6 @@
     "fathers_name": "Ante",
     "full_name": "Katavič Ante Ivan",
     "additional_info": ".., Orah, Vrgorac, .., borac",
-    "birth_year": "1909",
     "soldier_id": "0008001589",
     "pdf_page": 46,
     "pdf_y": 377.4,
@@ -33612,8 +34300,12 @@
     "pdf_x_end": 310.7,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1909",
     "birth_place": "Orah",
     "rank": "borac",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0007002316",
@@ -33627,7 +34319,8 @@
         "pdf_y_end": 278.8,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.03.1909"
   },
   {
     "soldier_id": "0008003114",
@@ -33712,7 +34405,6 @@
     "fathers_name": "Ante",
     "full_name": "Katić Ante Frane",
     "additional_info": ".. , Solin, Split, 2. bat, borac, zarobljen 24. 4. 1944, ćaići",
-    "birth_year": "",
     "soldier_id": "0008001593",
     "pdf_page": 46,
     "pdf_y": 438.1,
@@ -33723,6 +34415,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 371.2,
+    "birth_year": "1912",
     "other_sources": [
       {
         "soldier_id": "9021046126",
@@ -33732,7 +34425,18 @@
         "source_page": 2216,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "ubijen",
+    "death_date": "1943",
+    "death_place": "Zagreb"
   },
   {
     "last_name": "Katić",
@@ -33963,7 +34667,17 @@
         "source_page": 2189,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1945",
+    "death_place": "Split"
   },
   {
     "last_name": "Katunarić",
@@ -35026,7 +35740,6 @@
     "fathers_name": "Ivan",
     "full_name": "Kolić Ivana Andrija",
     "additional_info": "zvani Labrica; .., Klis, Split, ... borac",
-    "birth_year": "1905",
     "soldier_id": "0008001663",
     "pdf_page": 48,
     "pdf_y": 253.0,
@@ -35037,6 +35750,10 @@
     "rank": "borac",
     "pdf_x_end": 372.7,
     "occupation": "radnik",
+    "birth_year": "1905",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0053001367",
@@ -35549,7 +36266,6 @@
     "birth_place": "Cetina, Omiš",
     "pdf_x_end": 375.4,
     "ethnicity": "Hrvat",
-    "rank": "borac",
     "occupation": "zemljoradnik",
     "other_sources": [
       {
@@ -35565,7 +36281,8 @@
         "pdf_x_left": 248.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "13.04.1925"
   },
   {
     "last_name": "Kovačić",
@@ -36219,7 +36936,8 @@
         "pdf_x_left": 220.7,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "11.02.1928"
   },
   {
     "last_name": "Kukulj",
@@ -36599,7 +37317,8 @@
         "pdf_y_end": 732.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "14.08.1923"
   },
   {
     "last_name": "Kurtović",
@@ -36705,7 +37424,8 @@
         "pdf_x_left": 259.7,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "20.03.1909"
   },
   {
     "last_name": "Kuvačić",
@@ -36805,7 +37525,8 @@
         "pdf_y_end": 804.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "18.03.1920"
   },
   {
     "last_name": "Kuzmanić",
@@ -37899,7 +38620,12 @@
         "pdf_x_left": 230.4,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "14.12.1926"
+      ]
+    }
   },
   {
     "last_name": "Listes",
@@ -38863,7 +39589,6 @@
     "fathers_name": "Mate",
     "full_name": "Macanović Mate Mirko",
     "additional_info": "Dugopolje, Sinj, 2. bat, borac",
-    "birth_year": "1904",
     "soldier_id": "0008001854",
     "pdf_page": 52,
     "pdf_y": 307.9,
@@ -38878,6 +39603,10 @@
     "death_type": "umro",
     "death_date": "1984",
     "occupation": "zemljoradnik",
+    "birth_year": "1904",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148001564",
@@ -38892,7 +39621,8 @@
         "pdf_x_left": 253.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.03.1904"
   },
   {
     "last_name": "Macanović",
@@ -38919,7 +39649,6 @@
     "fathers_name": "Luka",
     "full_name": "Madir Luke Ante",
     "additional_info": ".., Sitno Donje, Split, prateća četa, borac",
-    "birth_year": "",
     "soldier_id": "0008001856",
     "pdf_page": 52,
     "pdf_y": 325.2,
@@ -38929,7 +39658,26 @@
     "birth_place": "Sitno Donje, Split",
     "rank": "borac",
     "pdf_x_end": 364.6,
-    "unit_detail": "prateća četa"
+    "unit_detail": "prateća četa",
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0148001565",
+        "name": "Madir Luke Ante",
+        "additional_info": "borac Mosorskog PO. Roden 1909. Sitno Donje, Split. U Mosorski PO stupio 28. listopada 1944, a zatim upućen u 4. dalmatinsKu (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 103,
+        "pdf_x": 269.9,
+        "pdf_y": 385.8,
+        "pdf_x_end": 609.5,
+        "pdf_y_end": 411.0,
+        "pdf_x_left": 253.1,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Madunić",
@@ -40144,9 +40892,9 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Zagrović, Knin",
     "rank": "borac",
-    "death_type": "",
-    "death_date": "",
-    "death_place": "",
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Trst italija",
     "pdf_x_end": 361.9,
     "other_sources": [
       {
@@ -40157,6 +40905,13 @@
         "source_page": 912,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
     ]
   },
   {
@@ -40495,7 +41250,6 @@
     "fathers_name": "",
     "full_name": "Matijaš Jure",
     "additional_info": ".. , Vrsine, Trogir, .. , komandir čete",
-    "birth_year": "",
     "soldier_id": "0008001942",
     "pdf_page": 54,
     "pdf_y": 315.4,
@@ -40503,6 +41257,7 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Vrsine, Trogir",
     "rank": "komandir čete",
+    "birth_year": "1921",
     "pdf_x_end": 313.6,
     "pdf_y_end": 324.4,
     "other_sources": [
@@ -40514,7 +41269,18 @@
         "source_page": 2350,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Vrsine"
   },
   {
     "last_name": "Matijaš",
@@ -40624,7 +41390,8 @@
         "pdf_x_left": 221.3,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.01.1919"
   },
   {
     "last_name": "Matković",
@@ -41576,7 +42343,8 @@
         "pdf_x_left": 256.4,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "01.07.1915"
   },
   {
     "last_name": "Mijić",
@@ -41638,7 +42406,6 @@
     "fathers_name": "Jure",
     "full_name": "Mikas Jure Andrija",
     "additional_info": ".., Srijani Donji, Omiš, .., borac",
-    "birth_year": "1911",
     "soldier_id": "0008002002",
     "pdf_page": 55,
     "pdf_y": 448.5,
@@ -41650,6 +42417,10 @@
     "pdf_x_end": 350.8,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148001814",
@@ -41664,7 +42435,8 @@
         "pdf_x_left": 256.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.10.1911"
   },
   {
     "last_name": "Mikelić",
@@ -41782,7 +42554,8 @@
         "pdf_y_end": 304.4,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.07.1928"
   },
   {
     "last_name": "Mikolajcen",
@@ -42089,7 +42862,6 @@
     "fathers_name": "Ante",
     "full_name": "Milas Ante Ivan",
     "additional_info": ".., Zmijavci, Imotski, .., borac",
-    "birth_year": "1923",
     "soldier_id": "0008002024",
     "pdf_page": 56,
     "pdf_y": 197.6,
@@ -42101,6 +42873,10 @@
     "pdf_x_end": 322.1,
     "occupation": "zemljoradnik",
     "party": "SKOJ 1943",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0053001928",
@@ -42114,7 +42890,8 @@
         "pdf_y_end": 675.9,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "29.06.1923"
   },
   {
     "last_name": "Milas",
@@ -42659,7 +43436,8 @@
         "pdf_y_end": 865.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "29.09.1920"
   },
   {
     "last_name": "Milković-Benzon",
@@ -42807,7 +43585,8 @@
         "pdf_x_left": 222.5,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.03.1922"
   },
   {
     "last_name": "Mimica",
@@ -42903,7 +43682,8 @@
         "pdf_x_left": 259.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "28.03.1912"
   },
   {
     "last_name": "Mindoljević",
@@ -43971,7 +44751,15 @@
         ],
         "unit_file": "12-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.11.1944",
+          "place": "Strmica, Knin"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mustapić",
@@ -44102,7 +44890,8 @@
         "pdf_y_end": 698.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.08.1912"
   },
   {
     "last_name": "Mustapić",
@@ -46089,7 +46878,6 @@
     "fathers_name": "Marin",
     "full_name": "Peračić Marina Ljubo",
     "additional_info": ". . , Split, . . , borac",
-    "birth_year": "1923",
     "soldier_id": "0008002235",
     "pdf_page": 60,
     "pdf_y": 529.6,
@@ -46099,6 +46887,10 @@
     "birth_place": "Split",
     "rank": "borac",
     "pdf_x_end": 295.0,
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002101",
@@ -46113,7 +46905,8 @@
         "pdf_x_left": 232.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "26.07.1923"
   },
   {
     "last_name": "Perak",
@@ -46495,7 +47288,8 @@
         "pdf_y_end": 527.7,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "19.01.1921"
   },
   {
     "last_name": "Perišić",
@@ -47488,7 +48282,8 @@
         "pdf_x_left": 257.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "23.10.1925"
   },
   {
     "last_name": "Pezelj",
@@ -47535,7 +48330,12 @@
         "pdf_y_end": 425.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "11.11.1922"
+      ]
+    }
   },
   {
     "last_name": "Pezo",
@@ -47876,7 +48676,17 @@
         "source_page": 777,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Čitluk-mostar"
   },
   {
     "soldier_id": "0008003120",
@@ -47982,7 +48792,15 @@
         "pdf_y_end": 198.8,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.06.1943",
+          "place": "na Gornjim Barama, Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Plestina",
@@ -48713,7 +49531,8 @@
         "pdf_y_end": 753.3,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.01.1924"
   },
   {
     "last_name": "Prizmić",
@@ -49125,7 +49944,8 @@
         "pdf_y_end": 763.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.04.1926"
   },
   {
     "last_name": "Radelić",
@@ -49397,7 +50217,6 @@
     "fathers_name": "Mate",
     "full_name": "Radić Mate Lovre",
     "additional_info": ".., Donji Dolac, Split, .., borac",
-    "birth_year": "1907",
     "soldier_id": "0008002400",
     "pdf_page": 64,
     "pdf_y": 424.7,
@@ -49407,8 +50226,12 @@
     "rank": "borac",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1907",
     "pdf_x_end": 335.5,
     "pdf_y_end": 433.7,
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002399",
@@ -50969,7 +51792,8 @@
         "pdf_y_end": 814.5,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.10.1906"
   },
   {
     "last_name": "Rogošić",
@@ -50997,7 +51821,6 @@
     "fathers_name": "Jozo",
     "full_name": "Rogošić Joze Luka",
     "additional_info": ". . , Dugopolje, Split, . . , borac",
-    "birth_year": "1931",
     "soldier_id": "0008002484",
     "pdf_page": 66,
     "pdf_y": 303.8,
@@ -51009,6 +51832,10 @@
     "pdf_x_end": 314.2,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1931",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002484",
@@ -51044,7 +51871,6 @@
     "pdf_x_end": 342.1,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148002488",
@@ -51257,7 +52083,12 @@
         "pdf_x_left": 230.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1914"
+      ]
+    }
   },
   {
     "last_name": "Roguljić-Katić",
@@ -51358,7 +52189,6 @@
     "fathers_name": "Luka",
     "full_name": "Roguljić Luke Žarko",
     "additional_info": "Donji Dolac, Split, borac",
-    "birth_year": "1922",
     "soldier_id": "0008002501",
     "pdf_page": 66,
     "pdf_y": 484.8,
@@ -51370,6 +52200,10 @@
     "pdf_x_end": 346.9,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002520",
@@ -51396,7 +52230,8 @@
         "pdf_y_end": 543.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "13.05.1922"
   },
   {
     "last_name": "Roje",
@@ -52208,7 +53043,12 @@
         "pdf_y_end": 117.0,
         "unit_file": "3-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1911"
+      ]
+    }
   },
   {
     "last_name": "Sate",
@@ -52478,7 +53318,8 @@
         "pdf_y_end": 846.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.09.1920"
   },
   {
     "last_name": "Sičić",
@@ -52487,7 +53328,6 @@
     "fathers_name": "Mate",
     "full_name": "Sičić Mate Jozo",
     "additional_info": "Ostrvica, Omiš, borac",
-    "birth_year": "1905",
     "soldier_id": "0008002558",
     "pdf_page": 68,
     "pdf_y": 170.4,
@@ -52500,6 +53340,10 @@
     "ethnicity": "Hrvat",
     "death_type": "umro",
     "occupation": "zemljoradnik",
+    "birth_year": "1905",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002620",
@@ -52514,7 +53358,8 @@
         "pdf_x_left": 238.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "16.03.1905"
   },
   {
     "last_name": "Sikulin",
@@ -53469,7 +54314,8 @@
         "pdf_x_left": 230.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.09.1925"
   },
   {
     "last_name": "Srdelić",
@@ -54414,7 +55260,8 @@
         "pdf_x_left": 253.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "05.12.1912"
   },
   {
     "last_name": "Šamija",
@@ -54665,7 +55512,17 @@
         "source_page": 1825,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Zagreb"
   },
   {
     "last_name": "Šarić",
@@ -54773,7 +55630,8 @@
         "pdf_y_end": 313.7,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "16.11.1921"
   },
   {
     "last_name": "Šego",
@@ -55611,7 +56469,6 @@
     "fathers_name": "Ivan",
     "full_name": "Šolić Ivana Luka",
     "additional_info": ".. , Sutiina, Muć, 1. bat, vodnik, nestao 20. 1. 1944",
-    "birth_year": "1920",
     "soldier_id": "0008002722",
     "pdf_page": 71,
     "pdf_y": 463.5,
@@ -55627,6 +56484,10 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "SKOJ 1942, KPJ 1944",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001012198",
@@ -56741,7 +57602,8 @@
         "pdf_y_end": 578.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.03.1929"
   },
   {
     "last_name": "Tezulat",
@@ -56811,7 +57673,8 @@
         "pdf_x_left": 219.3,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.10.1925"
   },
   {
     "last_name": "Tijardović",
@@ -57125,7 +57988,17 @@
         "source_page": 2770,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Pašman, Biograd",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1943"
   },
   {
     "last_name": "Tomičić",
@@ -58255,7 +59128,6 @@
     "fathers_name": "Nikola",
     "full_name": "Ujević Nikole Ivan",
     "additional_info": "zvani Brkina; . ., Krivodol, Imotski, . . , borac",
-    "birth_year": "1920",
     "soldier_id": "0008002861",
     "pdf_page": 75,
     "pdf_y": 51.7,
@@ -58268,6 +59140,10 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1940, KPJ 1943",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001012829",
@@ -58700,7 +59576,12 @@
         "pdf_y_end": 474.6,
         "unit_file": "3-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Uvodič",
@@ -58737,7 +59618,12 @@
         "pdf_x_left": 230.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Uvodič-Jaman",
@@ -58786,7 +59672,6 @@
     "fathers_name": "",
     "full_name": "Uvodič Petar",
     "additional_info": "zvani Kindin; .. , Klis-Kosa, Split, 4. bat, borac, nestao 4. 10. 1943, Zagvozd",
-    "birth_year": "",
     "soldier_id": "0008002884",
     "pdf_page": 75,
     "pdf_y": 340.6,
@@ -58794,6 +59679,7 @@
     "pdf_y_end": 358.3,
     "pdf_file": "4-splitska-brigada.pdf",
     "pdf_x_end": 374.9,
+    "birth_year": "1893",
     "birth_place": "Klis-Kosa, Split",
     "death_type": "nestao",
     "death_date": "04.10.1943",
@@ -58809,6 +59695,11 @@
         "source_page": 2192,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -58902,7 +59793,8 @@
         "pdf_x_left": 219.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.01.1926"
   },
   {
     "last_name": "Vajić",
@@ -60044,7 +60936,17 @@
         "source_page": 2177,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Brštanovo"
   },
   {
     "last_name": "Vržina",
@@ -60480,7 +61382,6 @@
     "fathers_name": "Jozo",
     "full_name": "Vujčič Joze Mate",
     "additional_info": "zvani Laskič; .., Orah, Vrgorac, .., borac",
-    "birth_year": "1925",
     "soldier_id": "0008002969",
     "pdf_page": 77,
     "pdf_y": 362.7,
@@ -60493,6 +61394,10 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1941, KPJ",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001013383",
@@ -60565,7 +61470,6 @@
     "fathers_name": "Jozo",
     "full_name": "Vujcič Joze Mate",
     "additional_info": ". . , Orah, Vrgorac, . . , borac",
-    "birth_year": "1925",
     "soldier_id": "0008002970",
     "pdf_page": 77,
     "pdf_y": 371.6,
@@ -60578,6 +61482,10 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1941, KPJ",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001013383",
@@ -60696,7 +61604,8 @@
         "pdf_x_left": 223.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "09.01.1911"
   },
   {
     "last_name": "Vujević",
@@ -61241,7 +62150,8 @@
         "pdf_y_end": 384.4,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "05.10.1924"
   },
   {
     "last_name": "Vuletić",
@@ -62594,7 +63504,6 @@
     "fathers_name": "Jakov",
     "full_name": "Listes Jakova Mijo",
     "additional_info": "zvani Jakelja; . . ., Klis, Split, vodnik, 3. bataljon, ranjen 14. 9. 1944, Košir vrh, Gračac",
-    "birth_year": "1908",
     "soldier_id": "0008003072",
     "pdf_page": 80,
     "pdf_y": 45.3,
@@ -62605,9 +63514,13 @@
     "ethnicity": "Hrvat",
     "death_type": "umro",
     "occupation": "zemljoradnik",
+    "birth_year": "1908",
     "birth_place": "Klis, Split",
     "rank": "vodnik",
     "unit_detail": "3. bataljon",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148001481",
@@ -62622,7 +63535,8 @@
         "pdf_x_left": 230.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "11.02.1908"
   },
   {
     "last_name": "Mastelić",
@@ -62703,7 +63617,6 @@
     "fathers_name": "Marko",
     "full_name": "Stipica Marka Marin",
     "additional_info": ". . ., Zrnovnica, 1. bat., borac",
-    "birth_year": "1924",
     "soldier_id": "0008003077",
     "pdf_page": 80,
     "pdf_y": 115.4,
@@ -62716,6 +63629,10 @@
     "pdf_x_end": 329.6,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0148002715",

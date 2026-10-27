@@ -188,6 +188,7 @@ export const en: Messages = {
       occupation: 'Occupation',
       party: 'Party',
     },
+    or: 'or',
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, p. ${page}` : ''}. Knjiga boraca, record ${id}.`,
   },

@@ -451,7 +451,8 @@ def main():
     if args.across:
         return main_across(args)
     cfg = BRIGADE_CONFIGS[args.brigade]
-    soldiers = json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
+    from record_sources import own_only            # not what the records borrowed (scripts/record_sources.py)
+    soldiers = [own_only(s) for s in json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))]
     found = matches(soldiers, list_rank(args.brigade))
     grades = defaultdict(int)
     for p in found:
@@ -488,7 +489,8 @@ def main_across(args):
     units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
     # not Ostali borci (122, 131-138): its records come and go as their men find their units, so a link to one would
     # dangle
-    units = {code: json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))
+    from record_sources import own_only            # not what the records borrowed (scripts/record_sources.py)
+    units = {code: [own_only(s) for s in json.loads((ROOT / 'website' / 'public' / cfg['json_file']).read_text(encoding='utf-8'))]
              for code, cfg in sorted(BRIGADE_CONFIGS.items()) if f"'/{cfg['json_file']}'" in units_ts and code not in OSTALI_CODES}
     found = across_units(units)
     grades = defaultdict(int)

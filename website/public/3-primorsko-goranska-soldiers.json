@@ -40,7 +40,6 @@
     "fathers_name": "Filip",
     "full_name": "Abramović Filipa Ivan",
     "additional_info": "borac, rođen u Crnom Lugu - Delnice, poginuo 1. juna 1944. godine na Ljubovu",
-    "birth_year": "1920",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 190.5,
@@ -74,7 +73,13 @@
         "pdf_y_end": 286.6,
         "unit_file": "14-primorsko-goranska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Abramović",
@@ -253,7 +258,6 @@
     "fathers_name": "",
     "full_name": "Aralica Ilija",
     "additional_info": "komesar čete, rođen u Škarama kod Otočca, poginuo 8. novembra 1944. godine na Lo vincu",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 413.5,
@@ -294,7 +298,13 @@
     "death_date": "08.11.1944",
     "death_place": "na Lo vincu",
     "rank": "komesar čete",
-    "pdf_x_end": 213.0
+    "pdf_x_end": 213.0,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Arbanić",
@@ -364,7 +374,6 @@
     "fathers_name": "",
     "full_name": "Badurina Vladimir",
     "additional_info": "desetar, roden na Pagu, poginuo 15. decembra 1944. godine kod Donjeg Lapca",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 141.6,
@@ -386,7 +395,13 @@
         "source_page": 1704,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Bakljajić",
@@ -505,7 +520,6 @@
     "fathers_name": "Franjo",
     "full_name": "Barbalić Franje Marijan",
     "additional_info": "roden u Baškoj na Krku, poginuo 7. oktobra 1943. godine na frontu kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 353.3,
@@ -516,6 +530,7 @@
     "soldier_id": "0099000023",
     "death_date": "07.10.1943",
     "pdf_x_end": 386.0,
+    "birth_year": "1921",
     "other_sources": [
       {
         "soldier_id": "9021021604",
@@ -525,7 +540,14 @@
         "source_page": 1032,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Hreljin"
   },
   {
     "last_name": "Barbarić",
@@ -866,7 +888,6 @@
     "fathers_name": "Anton",
     "full_name": "Bezjak Antona Josip",
     "additional_info": "desetar, rođen u Kastavu - Rijeka, poginuo 12. februara 1945. godine kod Čatrnje - Rakovica",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 240.5,
@@ -879,6 +900,7 @@
     "death_place": "Čatrnja, Rakovica",
     "rank": "desetar",
     "pdf_x_end": 209.7,
+    "birth_year": "1912",
     "other_sources": [
       {
         "soldier_id": "9021034123",
@@ -888,6 +910,11 @@
         "source_page": 1717,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -1118,7 +1145,6 @@
     "fathers_name": "Ivan",
     "full_name": "Blažić Ivana Ivan",
     "additional_info": "delegat voda, rođen u Drenovi kod Rijeke, poginuo 12. februara 1945. godine kod Čatrnje - Rakovica",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 502.8,
@@ -1151,7 +1177,13 @@
     "death_date": "12.02.1945",
     "death_place": "Čatrnja, Rakovica",
     "rank": "delegat voda",
-    "pdf_x_end": 209.2
+    "pdf_x_end": 209.2,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Blečić",
@@ -1290,7 +1322,6 @@
     "fathers_name": "Ivan",
     "full_name": "Bonifačić Ivana Ivan",
     "additional_info": "borac, rođen u Puntu na Krku, poginuo 7. oktobra 1943. godine na frontu kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 54.2,
@@ -1311,7 +1342,15 @@
         "source_page": 1036,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Rijeka",
+    "birth_year": "1921"
   },
   {
     "last_name": "Bonifačić",
@@ -1643,7 +1682,6 @@
     "fathers_name": "Petar",
     "full_name": "Brumjak Petra Milan",
     "additional_info": "borac, roden u Mošćeničkoj Dragi, poginuo 25. novembra 1944. godine kod Bruvna",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 200.1,
@@ -1665,7 +1703,13 @@
         "source_page": 1343,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Brusić",
@@ -1841,7 +1885,6 @@
     "fathers_name": "Ivan",
     "full_name": "Car Ivana Ivan",
     "additional_info": "delegat voda, rođen u Crikvenici, poginuo 17. marta 1945. godine na Koreničkoj Kapeli",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 82.8,
@@ -1863,7 +1906,13 @@
         "source_page": 148,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Cerić",
@@ -2067,7 +2116,6 @@
     "fathers_name": "Frane",
     "full_name": "Debelić Frana Josip",
     "additional_info": "borac, rođen u Barbatu - Rab, poginuo oktobra 1943. godine na frontu kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 210.7,
@@ -2079,6 +2127,7 @@
     "death_date": "10.1943",
     "rank": "borac",
     "pdf_x_end": 213.5,
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9021033493",
@@ -2088,7 +2137,14 @@
         "source_page": 1703,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sušak-rijeka"
   },
   {
     "last_name": "Deković",
@@ -2118,7 +2174,6 @@
     "fathers_name": "Josip",
     "full_name": "Delač Josipa Franjo",
     "additional_info": "borac, rođen u Slemenu - Delnice, umro od iznemoglosti 18. maja 1944. godine u Srednjoj Gori - Lika",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 11,
     "pdf_y": 287.7,
@@ -2140,7 +2195,13 @@
         "source_page": 231,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Delač",
@@ -2290,7 +2351,6 @@
     "fathers_name": "Petar",
     "full_name": "Derenčinović Petra Ivan",
     "additional_info": "borac, rođen u Jurandvoru na Krku, poginuo decembra 1943. godine kod Vrbovskog",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 526.3,
@@ -2312,7 +2372,13 @@
         "source_page": 1034,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Derenčinović",
@@ -2482,7 +2548,6 @@
     "fathers_name": "",
     "full_name": "Đekić Jovo",
     "additional_info": "borac, rođen na Otriću kod Gračaca, poginuo 18. marta 1945. godine u Uvalici kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 12,
     "pdf_y": 352.8,
@@ -2504,7 +2569,13 @@
         "source_page": 687,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Dobran",
@@ -2513,7 +2584,6 @@
     "fathers_name": "Lovreoca",
     "full_name": "Dobran Lovreoca Đulio",
     "additional_info": "borac, rođen u Lišanju kod Pule, poginuo 8. juna 1944. godine kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 266.4,
@@ -2535,7 +2605,13 @@
         "source_page": 1700,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Dobrić",
@@ -2797,7 +2873,6 @@
     "fathers_name": "Frane",
     "full_name": "Dorić Frane Mate",
     "additional_info": "borac, rođen u Bribiru - Crikvenica, poginuo oktobra 1943. godine kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 496.3,
@@ -2819,7 +2894,13 @@
         "source_page": 144,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Dorčić",
@@ -2849,7 +2930,6 @@
     "fathers_name": "Vinko",
     "full_name": "Dorčić Vinka Zlatan",
     "additional_info": "borac, rođen u Baškoj na Krku, poginuo početkom 1944. godine u Lici D RAČIĆ Ivana Ivan, borac, rođen u Bogovićima na Krku, poginuo 7. oktobra 1943. godine na frontu kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 12,
     "pdf_y": 27.6,
@@ -2861,6 +2941,7 @@
     "death_date": "početkom 1944",
     "rank": "borac",
     "pdf_x_end": 220.4,
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9021021606",
@@ -2870,7 +2951,14 @@
         "source_page": 1032,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Perušac"
   },
   {
     "last_name": "Dragaš",
@@ -3181,7 +3269,6 @@
     "fathers_name": "Vinko",
     "full_name": "Dujmović Vinka Stanko",
     "additional_info": "borac, rođen u Jurandvoru na Krku, poginuo marta 1944. godine kod Otočca",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 12,
     "pdf_y": 312.0,
@@ -3194,6 +3281,7 @@
     "death_place": "Otočac",
     "rank": "borac",
     "pdf_x_end": 221.0,
+    "birth_year": "1921",
     "other_sources": [
       {
         "soldier_id": "9021021686",
@@ -3203,6 +3291,11 @@
         "source_page": 1034,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -3760,7 +3853,6 @@
     "fathers_name": "",
     "full_name": "Fućak Milan",
     "additional_info": "zvani Ata; zamjenik komandanta brigade, rođen u Pašcu kraj Rijeke, teško ranjen 5. oktobra 1943. godine kod Kukuljanova i istog dana podlegao ranama",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 12,
     "pdf_y": 464.1,
@@ -3803,7 +3895,17 @@
     ],
     "rank": "zamjenik komandanta brigade",
     "pdf_x_end": 394.0,
-    "unit_detail": "Štab brigade"
+    "unit_detail": "Štab brigade",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Rukuljani,rijek",
+    "birth_year": "1912"
   },
   {
     "last_name": "Fušek",
@@ -4308,7 +4410,6 @@
     "fathers_name": "Albert",
     "full_name": "Grbac Alberta Celestin",
     "additional_info": "politički komesar čete, rođen u Kastvu kraj Rijeke, poginuo 4. juna 1944. godine kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 13,
     "pdf_y": 481.2,
@@ -4341,7 +4442,13 @@
     "death_date": "04.06.1944",
     "death_place": "Korenica",
     "rank": "politički komesar čete",
-    "pdf_x_end": 213.8
+    "pdf_x_end": 213.8,
+    "birth_year": "1925",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Grbac",
@@ -4597,7 +4704,6 @@
     "fathers_name": "Matija",
     "full_name": "Halić Matije Mate",
     "additional_info": "borac, rođen u Bribiru - Crikvenica, poginuo 15. septembra 1943. godine u Sušaku",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 13,
     "pdf_y": 303.1,
@@ -4619,7 +4725,13 @@
         "source_page": 149,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Haramija",
@@ -4824,7 +4936,6 @@
     "fathers_name": "",
     "full_name": "Hrvatin Feručo",
     "additional_info": "borac, rođen u Presiki kod Pazina, poginuo 21. oktobra 1944. godine na Janjči kod Ramljana",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 13,
     "pdf_y": 431.5,
@@ -4846,7 +4957,13 @@
         "source_page": 1063,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Hrvatin",
@@ -4912,7 +5029,6 @@
     "fathers_name": "",
     "full_name": "Ivančić Nikola",
     "additional_info": "komandir voda, rođen u Crikvenici, poginuo 3. aprila 1944. godine kod Babinog Potoka - Vrhovine",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 13,
     "pdf_y": 523.9,
@@ -4934,7 +5050,13 @@
         "source_page": 145,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Ivančić",
@@ -4982,7 +5104,6 @@
     "fathers_name": "Mile",
     "full_name": "Ivezić Mile Jerko",
     "additional_info": "delegat voda, roden u Štikadi kod Gračaca, poginuo 26. decembra 1944. godine u Boriku kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 14,
     "pdf_y": 66.9,
@@ -5035,7 +5156,13 @@
     "death_date": "26.12.1944",
     "death_place": "Borik, Korenica",
     "rank": "delegat voda",
-    "pdf_x_end": 219.5
+    "pdf_x_end": 219.5,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Ivošević",
@@ -5234,7 +5361,6 @@
     "fathers_name": "S",
     "full_name": "Ivošević S Rade",
     "additional_info": "borac, rođen u Drežnici, poginuo 18. maja 1944. godine u Srednjoj Gori",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 14,
     "pdf_y": 354.5,
@@ -5256,7 +5382,13 @@
         "source_page": 1272,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Ivošević",
@@ -5445,7 +5577,6 @@
     "fathers_name": "Josip",
     "full_name": "Jadreško Josipa Ivan",
     "additional_info": "borac, rođen u Jadreškima kod Pule, umro marta 1944. godine u OVB u Lici",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 14,
     "pdf_y": 393.3,
@@ -5467,7 +5598,13 @@
         "source_page": 1696,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Jakovac",
@@ -5596,7 +5733,6 @@
     "fathers_name": "",
     "full_name": "Jardas Miroslav",
     "additional_info": "borac, rođen u Brezi kod Matulja, umro 10. marta 1944. godine u OVB u Lici",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 14,
     "pdf_y": 68.1,
@@ -5618,7 +5754,13 @@
         "source_page": 1706,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Jarčinović",
@@ -6240,7 +6382,6 @@
     "fathers_name": "Ernest",
     "full_name": "Katnić Ernesta Ernest",
     "additional_info": "borac, rođen kod Crikvenice, poginuo 18. decembra 1944. godine kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 126.1,
@@ -6253,6 +6394,7 @@
     "death_place": "Korenica",
     "rank": "borac",
     "pdf_x_end": 216.2,
+    "birth_year": "1916",
     "other_sources": [
       {
         "soldier_id": "9021003575",
@@ -6262,6 +6404,11 @@
         "source_page": 145,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -6544,7 +6691,6 @@
     "fathers_name": "",
     "full_name": "Kmet Ivan",
     "additional_info": "borac, rođen u Žminju - Istra, poginuo 2. avgusta 1944. godine na Ljubovu",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 379.5,
@@ -6566,7 +6712,13 @@
         "source_page": 1762,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Knežević",
@@ -7047,7 +7199,6 @@
     "fathers_name": "Mane",
     "full_name": "Kosanović Mane Rade",
     "additional_info": "delegat voda, roden u Gomirju, poginuo 22. aprila 1944. godine u Babinom Potoku",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 175.7,
@@ -7069,7 +7220,13 @@
         "source_page": 2570,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Kosovac",
@@ -7196,7 +7353,6 @@
     "fathers_name": "Petar",
     "full_name": "Kovač Petra Alojz",
     "additional_info": "komandir voda, rođen u Mandlima kod Čabra, poginuo 13. februara 1945. godine kod Rakovice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 214.6,
@@ -7218,7 +7374,13 @@
         "source_page": 104,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Kovačević",
@@ -7449,7 +7611,6 @@
     "fathers_name": "Josip",
     "full_name": "Kraljić Josipa Anton",
     "additional_info": "desetar, roden u Dubašnici na Krku, poginuo 10. jula 1944. godine kod Široke Kule - Ljubovo",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 481.8,
@@ -7471,7 +7632,13 @@
         "source_page": 1032,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Kranjc",
@@ -7850,7 +8017,6 @@
     "fathers_name": "Mate",
     "full_name": "Krstinić Mate Ivan",
     "additional_info": "borac, rođen u Staroj Baski na Krku, poginuo decembra 1944. godine u Lici",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 16,
     "pdf_y": 531.9,
@@ -7872,7 +8038,13 @@
         "source_page": 1038,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Krvavac",
@@ -7902,7 +8074,6 @@
     "fathers_name": "Anton",
     "full_name": "Kucar Antona Franjo",
     "additional_info": "borac, rođen u Baškoj na Krku, poginuo maja 1944. godine kod Čanka - Ramljani",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 16,
     "pdf_y": 72.3,
@@ -7915,6 +8086,7 @@
     "death_place": "Čanak, Ramljani",
     "rank": "borac",
     "pdf_x_end": 394.9,
+    "birth_year": "1923",
     "other_sources": [
       {
         "soldier_id": "9021021612",
@@ -7924,6 +8096,11 @@
         "source_page": 1032,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -7982,7 +8159,6 @@
     "fathers_name": "Miho",
     "full_name": "Kutić Mihe Josip",
     "additional_info": "borac, rođen u Gajanu kod Vodnjana - Istra, poginuo 7. maja 1944. godine kod Perušića",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 16,
     "pdf_y": 111.3,
@@ -7995,6 +8171,7 @@
     "death_place": "Perušić",
     "rank": "borac",
     "pdf_x_end": 394.8,
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9021033040",
@@ -8004,6 +8181,11 @@
         "source_page": 1689,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -8095,7 +8277,6 @@
     "fathers_name": "Dane",
     "full_name": "Labus Dane Ljubomir",
     "additional_info": "komandant bataljona, rođen u Velikoj Popini, poginuo 5. marta 1945. godine na Koreničkoj Kapeli",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 16,
     "pdf_y": 158.5,
@@ -8117,7 +8298,13 @@
         "source_page": 713,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Ladić",
@@ -8633,7 +8820,6 @@
     "fathers_name": "A",
     "full_name": "Lukežič A Drago",
     "additional_info": "borac, rođen u Jelenju kod Rijeke, poginuo 9. maja 1944. godine kod Trnovca - Korenica",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 116.4,
@@ -8655,7 +8841,13 @@
         "source_page": 1752,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1906"
   },
   {
     "last_name": "Lukežič",
@@ -8664,7 +8856,6 @@
     "fathers_name": "Ivan",
     "full_name": "Lukežič Ivana Ivan",
     "additional_info": "borac, rođen u Jelenju kod Rijeke, poginuo 18. marta 1945. godine u Ćujić Krčevini kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 159.6,
@@ -8686,7 +8877,13 @@
         "source_page": 1716,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Lukežič",
@@ -8798,7 +8995,6 @@
     "fathers_name": "",
     "full_name": "Lučić Mile",
     "additional_info": "borac, rođen u Dušikravi kod Jablanca, poginuo 1. aprila 1944. godine kod Rudopolja - Vrhovine",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 65.0,
@@ -8820,7 +9016,13 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Lušina",
@@ -9040,7 +9242,6 @@
     "fathers_name": "",
     "full_name": "Mamula Sava",
     "additional_info": "zvani Saco; komandir minobacačke čete, rođen u Jasenku, kod Ogulina, poginuo 23. novembra 1944. godine kod Bruvna",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 474.5,
@@ -9073,7 +9274,13 @@
     "death_date": "23.11.1944",
     "death_place": "Bruvno",
     "unit_detail": "prateća četa",
-    "pdf_x_end": 206.5
+    "pdf_x_end": 206.5,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Mamula",
@@ -9672,7 +9879,6 @@
     "fathers_name": "Petar",
     "full_name": "Maričić Petra Anton",
     "additional_info": "borac, roden u Baškoj na Krku, poginuo oktobra 1943. godine kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 291.1,
@@ -9694,7 +9900,13 @@
         "source_page": 1038,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Maričić",
@@ -9721,7 +9933,6 @@
     "fathers_name": "Anton",
     "full_name": "Maričić Antona Karmela",
     "additional_info": "bolničarka, rođena u Baškoj na Krku, poginula aprila 1944. godine kod Babinog Potoka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 240.0,
@@ -9734,6 +9945,7 @@
     "death_place": "kod Babinog Potoka",
     "rank": "bolničarka",
     "pdf_x_end": 378.9,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021021880",
@@ -9743,6 +9955,11 @@
         "source_page": 1038,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -9809,7 +10026,6 @@
     "fathers_name": "Rudolf",
     "full_name": "Marušić Rudolf Tomo",
     "additional_info": "delegat voda, rođen u Barcima - Crikvenica, poginuo 26. decembra 1944. godine u Vrelu kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 424.1,
@@ -9842,7 +10058,13 @@
     "death_date": "26.12.1944",
     "death_place": "Vrelo, Korenica",
     "rank": "delegat voda",
-    "pdf_x_end": 379.2
+    "pdf_x_end": 379.2,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Marušić",
@@ -10637,7 +10859,6 @@
     "fathers_name": "Klement",
     "full_name": "Mičetić Klementa Zdravko",
     "additional_info": "delegat voda, rođen u Kukuljanovu, poginuo 5. marta 1945. godine na Koreničkoj Kapeli",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 18,
     "pdf_y": 116.9,
@@ -10670,7 +10891,13 @@
     "death_date": "05.03.1945",
     "death_place": "Korenička Kapela",
     "rank": "delegat voda",
-    "pdf_x_end": 385.0
+    "pdf_x_end": 385.0,
+    "birth_year": "1925",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Miškulić",
@@ -10757,7 +10984,6 @@
     "fathers_name": "A",
     "full_name": "Modrušan A Ivan",
     "additional_info": "borac, rođen u Babićima kod Rovinja, poginuo 18. maja 1944. godine u Srednjoj Gori - Lika",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 18,
     "pdf_y": 474.7,
@@ -10779,7 +11005,13 @@
         "source_page": 1757,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1905"
   },
   {
     "last_name": "Mohorič",
@@ -10963,7 +11195,6 @@
     "fathers_name": "Petar",
     "full_name": "Mržljak Petra Josip",
     "additional_info": "borac, rođen u Novom Vinodolskom, poginuo 27. februara 1944. godine kod Otočca",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 19,
     "pdf_y": 212.6,
@@ -10985,7 +11216,13 @@
         "source_page": 151,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Mujagić",
@@ -11277,7 +11514,6 @@
     "fathers_name": "Valentin",
     "full_name": "Orbanić Valentina Josip",
     "additional_info": "borac, rođen u Orbonićima kod Rovinja, poginuo 22. aprila 1944. godine u Babinom potoku",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 19,
     "pdf_y": 162.9,
@@ -11290,6 +11526,7 @@
     "death_place": "u Babinom potoku",
     "rank": "borac",
     "pdf_x_end": 381.4,
+    "birth_year": "1911",
     "other_sources": [
       {
         "soldier_id": "9021035479",
@@ -11299,6 +11536,11 @@
         "source_page": 1762,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -11752,7 +11994,6 @@
     "fathers_name": "A",
     "full_name": "Palčić A Josip",
     "additional_info": "borac, rođen u Gerovu - Gorski kotar, poginuo u jesen 1943. godine kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 19,
     "pdf_y": 483.1,
@@ -11773,7 +12014,15 @@
         "source_page": 97,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Škrljevo",
+    "birth_year": "1920"
   },
   {
     "last_name": "Papež",
@@ -11818,7 +12067,6 @@
     "fathers_name": "Rade",
     "full_name": "Paskaš Rade Dušan",
     "additional_info": "komandir voda, rođen u Kuniću - Plaški, jjoginuo 1. maja 1944. godine na Čudinom klancu kod Gornjeg Babinog Potoka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 19,
     "pdf_y": 523.7,
@@ -11861,7 +12109,17 @@
       }
     ],
     "rank": "komandir voda",
-    "pdf_x_end": 381.7
+    "pdf_x_end": 381.7,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Babin Potok",
+    "birth_year": "1924"
   },
   {
     "last_name": "Pavletić",
@@ -11931,7 +12189,6 @@
     "fathers_name": "Dane",
     "full_name": "Pavlica Dane Dmitar",
     "additional_info": "zamjenik komandanta bataljona, rođen u Počitelju, poginuo 13. februara, 1945. godine kod Rakovice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 20,
     "pdf_y": 175.0,
@@ -11977,7 +12234,13 @@
     "rank": "zamjenik komandanta bataljona",
     "pdf_x_end": 210.3,
     "unit_detail": "Treći bataljon",
-    "death_place": "Rakovica"
+    "death_place": "Rakovica",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Pavlić",
@@ -12267,7 +12530,6 @@
     "fathers_name": "M",
     "full_name": "Peruško M Ivan",
     "additional_info": "zvani Klinac; borac, rođen u Perušcima - Pula, poginuo 14. septembra 1944. godine na Čardaku kod Ramljana",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 20,
     "pdf_y": 489.4,
@@ -12289,7 +12551,13 @@
         "source_page": 1694,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Peruško",
@@ -12418,7 +12686,6 @@
     "fathers_name": "Stjepan",
     "full_name": "Piškulić Stjepana Andrija",
     "additional_info": "delegat voda, rođen u Novom Vinodolskom, poginuo 4. juna 1944. godine na Korenici",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 20,
     "pdf_y": 214.6,
@@ -12431,6 +12698,7 @@
     "death_place": "Korenica",
     "rank": "delegat voda",
     "pdf_x_end": 382.6,
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9021003835",
@@ -12448,6 +12716,11 @@
         "source_page": 151,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -12520,7 +12793,12 @@
     "death_date": "18.03.1945",
     "death_place": "Uvalica, Korenica",
     "rank": "komesar čete",
-    "pdf_x_end": 382.6
+    "pdf_x_end": 382.6,
+    "variants": {
+      "born": [
+        "1914"
+      ]
+    }
   },
   {
     "last_name": "Plećaš",
@@ -13161,7 +13439,6 @@
     "fathers_name": "Roko",
     "full_name": "Radetić Roke Željko",
     "additional_info": "borac, rođen u Novom Vinodolskom, poginuo 29. aprila 1944. godine kod Babinog Potoka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 21,
     "pdf_y": 24.9,
@@ -13174,6 +13451,7 @@
     "death_place": "kod Babinog Potoka",
     "rank": "borac",
     "pdf_x_end": 379.6,
+    "birth_year": "1921",
     "other_sources": [
       {
         "soldier_id": "9021003840",
@@ -13183,6 +13461,11 @@
         "source_page": 151,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -13192,7 +13475,6 @@
     "fathers_name": "Ć",
     "full_name": "Radojčić Ć Rade",
     "additional_info": "komandir voda, ranjen u Drežnici, poginuo 2. oktobra 1943. godine na sušačkom sektoru",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 21,
     "pdf_y": 126.9,
@@ -13235,7 +13517,17 @@
     ],
     "death_date": "02.10.1943",
     "rank": "komandir voda",
-    "pdf_x_end": 379.7
+    "pdf_x_end": 379.7,
+    "birth_place": "Radojčići, Ogulin",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "13.divizija",
+    "birth_year": "1921"
   },
   {
     "last_name": "Radojčić",
@@ -13455,7 +13747,6 @@
     "fathers_name": "Petar",
     "full_name": "Rajačić Petra Dragan",
     "additional_info": "borac, rođen u Žapanjolu kod Brinja, poginuo 22. decembra 1944. godine kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 21,
     "pdf_y": 320.9,
@@ -13467,7 +13758,23 @@
     "death_date": "22.12.1944",
     "death_place": "Korenica",
     "rank": "borac",
-    "pdf_x_end": 380.9
+    "pdf_x_end": 380.9,
+    "other_sources": [
+      {
+        "soldier_id": "9021029040",
+        "name": "Rajačić (Petar) Dragan",
+        "additional_info": "rođen 1924, Županjdol (Otočac). Srbin, poginuo 1944. u NOBu, Korenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1459",
+        "source_page": 1459,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Rajačić",
@@ -13504,7 +13811,17 @@
     "soldier_id": "0099000598",
     "birth_place": "Županjdol, Brinje",
     "rank": "borac",
-    "pdf_x_end": 381.2
+    "pdf_x_end": 381.2,
+    "other_sources": [
+      {
+        "soldier_id": "9064011394",
+        "name": "Rajačić Marka Mile",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Dobrica, Žuta Lokva: Rajačić Marka Mile, rođen 1907. u lupanjdolu, stupio u NOB 1941. godine, nosilac „Partizanske spomenice 1941\", odbornik NOO. Rajačić Marka Виго, rođen 1914. u Županjdolu, stupio u NOB 1941. godine, nosilac „Partizanske spomenice 1941”, kapetan I kl. u NOV.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=500",
+        "source_page": 496,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "last_name": "Rajačić",
@@ -13817,7 +14134,6 @@
     "fathers_name": "Juraj",
     "full_name": "Rački Juraja Valentin",
     "additional_info": "borac, rođen u Staroj Sušici - Gorski kotar, poginuo 4. juna 1944. godine na Korenici",
-    "birth_year": "1927",
     "death_type": "poginuo",
     "pdf_page": 21,
     "pdf_y": 537.3,
@@ -13830,6 +14146,10 @@
     "death_place": "Korenica",
     "rank": "borac",
     "pdf_x_end": 208.8,
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0095000470",
@@ -14100,7 +14420,6 @@
     "fathers_name": "Ivan",
     "full_name": "Rubinić Ivana Franjo",
     "additional_info": "borac, rođen u Mošćanici kod Opatije, poginuo 26. decembra 1944. godine u Boriku kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 22,
     "pdf_y": 253.2,
@@ -14122,7 +14441,13 @@
         "source_page": 1340,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Rudetić",
@@ -14189,7 +14514,6 @@
     "fathers_name": "Anton",
     "full_name": "Ružić Antona Anton",
     "additional_info": "borac, rođen u Vinkuranu kod Pule, umro u OVB u Lici 24. marta 1944. godine",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 22,
     "pdf_y": 396.0,
@@ -14202,6 +14526,7 @@
     "death_place": "u OVB u Lici",
     "rank": "borac",
     "pdf_x_end": 214.0,
+    "birth_year": "1915",
     "other_sources": [
       {
         "soldier_id": "9021033319",
@@ -14211,6 +14536,11 @@
         "source_page": 1697,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -14627,7 +14957,6 @@
     "fathers_name": "Anton",
     "full_name": "Sokolić Antona Zdravko",
     "additional_info": "borac, rođen u Novom Vinodolskom, poginuo 6. maja 1944. godine na Ljubovu",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 22,
     "pdf_y": 212.4,
@@ -14640,6 +14969,7 @@
     "death_place": "Ljubovo",
     "rank": "borac",
     "pdf_x_end": 386.0,
+    "birth_year": "1921",
     "other_sources": [
       {
         "soldier_id": "9021003842",
@@ -14649,6 +14979,11 @@
         "source_page": 151,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -15125,7 +15460,19 @@
     "unit_detail": "Četvrti bataljon",
     "birth_place": "Vojvoduša, Brinje",
     "death_date": "14.03.1944",
-    "death_place": "Glavaci, Otočac"
+    "death_place": "Glavaci, Otočac",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "kod Škara u Lici"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stokuća",
@@ -15756,7 +16103,6 @@
     "fathers_name": "Blaž",
     "full_name": "Tomičić Blaža Josip",
     "additional_info": "borac, rođen u Riči ci kod Lovinca, poginuo 12. februara 1945. godine na Čatrnji kod Rakovice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 429.9,
@@ -15769,6 +16115,7 @@
     "death_place": "Čatrnja, Rakovica",
     "rank": "borac",
     "pdf_x_end": 212.6,
+    "birth_year": "1919",
     "other_sources": [
       {
         "soldier_id": "9021014870",
@@ -15778,6 +16125,11 @@
         "source_page": 704,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -15787,7 +16139,6 @@
     "fathers_name": "Blaž",
     "full_name": "Tomičić Blaža Mate",
     "additional_info": "borac, rođen u Ričici kod Lovinca, poginuo 18. marta 1945. godine na Koreničkoj Kapeli",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 478.3,
@@ -15800,6 +16151,7 @@
     "death_place": "Korenička Kapela",
     "rank": "borac",
     "pdf_x_end": 213.3,
+    "birth_year": "1912",
     "other_sources": [
       {
         "soldier_id": "9010000615",
@@ -15821,6 +16173,11 @@
         "source_page": 704,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -15923,7 +16280,6 @@
     "fathers_name": "Petar",
     "full_name": "Trbović Petra Dušan",
     "additional_info": "komesar čete, rođen u Krakaru - Drežnica, poginuo 21. januara 1944. godine na koti 572 kod Žute Lokve - Brinje",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 113.1,
@@ -15967,7 +16323,15 @@
     "birth_place": "Krakar, Drežnica",
     "death_date": "21.01.1944",
     "rank": "komesar čete",
-    "pdf_x_end": 384.1
+    "pdf_x_end": 384.1,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Žuta lokva",
+    "birth_year": "1921"
   },
   {
     "last_name": "Trbović",
@@ -16209,7 +16573,6 @@
     "fathers_name": "Josip",
     "full_name": "Turk Josipa Josip",
     "additional_info": "borac, rođen u Delnicama, poginuo 22. februara 1944. godine",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 341.5,
@@ -16230,7 +16593,13 @@
         "source_page": 230,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Urban",
@@ -16310,7 +16679,6 @@
     "fathers_name": "",
     "full_name": "Učkar Josip",
     "additional_info": "borac, rođen u Hreljićima kod Pule, poginuo 19. maja 1944. godine u Srednoj Gori - Lika",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 382.3,
@@ -16332,7 +16700,13 @@
         "source_page": 1690,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Vacić",
@@ -16400,7 +16774,6 @@
     "fathers_name": "A",
     "full_name": "Valenčič A Franjo",
     "additional_info": "borac, rođen u Liscu kod Matulja, poginuo 15. septembra 1943. godine na Sušaku 7.S7",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 535.7,
@@ -16421,7 +16794,15 @@
         "source_page": 1716,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sv.katarina rij",
+    "birth_year": "1916"
   },
   {
     "last_name": "Valenčič",
@@ -16511,7 +16892,6 @@
     "fathers_name": "Ivan",
     "full_name": "Veljačić Ivana Ivan",
     "additional_info": "borac, rođen u Bribiru - Crikvenica, poginuo 2. oktobra 1944. godine u Trnovcu kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 160.8,
@@ -16533,7 +16913,13 @@
         "source_page": 154,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Verbanac",
@@ -16723,7 +17109,6 @@
     "fathers_name": "",
     "full_name": "Vičič Viktor",
     "additional_info": "delegat voda, rođen u Pašcu kod Rijeke, poginuo 1. aprila 1944. godine u Rudopolju kod Vrhovine yiDAK Mate Milio, borac, rođen u Čambarelićima - Istra, poginuo 7. maja 1944. godine kod Perušića",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 262.5,
@@ -16744,7 +17129,15 @@
         "source_page": 1745,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "13 Primorsko goransk",
+    "birth_year": "1918"
   },
   {
     "last_name": "Višković",
@@ -16816,7 +17209,6 @@
     "fathers_name": "Ivan",
     "full_name": "Vojić Ivana Dino",
     "additional_info": "borac, rođen u Nedejšćini kod Labina, poginuo 31. marta 1944. godine na Atlinom vrhu kod Škara - Otočac",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 26.6,
@@ -16838,7 +17230,13 @@
         "source_page": 1055,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Volarić",
@@ -16847,7 +17245,6 @@
     "fathers_name": "Mate",
     "full_name": "Volarić Mate Mate",
     "additional_info": "borac, rođen u Risici - Istra, poginuo oktobra 1943. godine kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 77.0,
@@ -16869,7 +17266,13 @@
         "source_page": 1037,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Volković",
@@ -17046,7 +17449,6 @@
     "fathers_name": "Marko",
     "full_name": "Vrkljan Marka Petar",
     "additional_info": "borac, rođen u Cerju kod Lovinca - Lika, poginuo 4. marta 1945. godine na Rudanovcu kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 116.9,
@@ -17068,7 +17470,13 @@
         "source_page": 696,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Vujić",
@@ -17301,7 +17709,6 @@
     "fathers_name": "",
     "full_name": "Vuković Marko",
     "additional_info": "komandir voda, rođen u Lipicama kod Brinja, poginuo 2. oktobra 1944. godine u Trnovcu kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 395.3,
@@ -17323,7 +17730,13 @@
         "source_page": 1438,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Vuksan",
@@ -17332,7 +17745,6 @@
     "fathers_name": "",
     "full_name": "Vuksan Nikola",
     "additional_info": "komesar čete, rođen u Počitelju - Lika, poginuo 26. decembra 1944. godine u Boriku kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 25,
     "pdf_y": 446.1,
@@ -17393,7 +17805,13 @@
     "death_date": "26.12.1944",
     "death_place": "Borik, Korenica",
     "rank": "komesar čete",
-    "pdf_x_end": 392.5
+    "pdf_x_end": 392.5,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Vuraško",
@@ -17864,7 +18282,6 @@
     "fathers_name": "Z",
     "full_name": "Černjul Z Ivan",
     "additional_info": "borac, rođen u Katurama kod Labina, poginuo 1. maja 1944. godine kod Gornjeg Babinog Potoka - Lika",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 306.7,
@@ -17886,7 +18303,13 @@
         "source_page": 1069,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1907"
   },
   {
     "last_name": "Čiković",
@@ -17912,7 +18335,6 @@
     "fathers_name": "",
     "full_name": "Čiković Franjo",
     "additional_info": "komandir minobacačkog voda, rođen u Čikovićima - Kastav, poginuo 2. oktobra 1944. godine u Trnovcu kod Korenice",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 490.3,
@@ -17933,7 +18355,13 @@
         "source_page": 1709,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Čiča",
@@ -17995,7 +18423,6 @@
     "fathers_name": "Stjepan",
     "full_name": "Čop Stjepana Božo",
     "additional_info": "borac, rođen u Malom Lugu kod Delnica, poginuo oktobra 1943. godine kod Sušaka",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 540.5,
@@ -18008,6 +18435,7 @@
     "death_place": "Sušak",
     "rank": "borac",
     "pdf_x_end": 390.4,
+    "birth_year": "1914",
     "other_sources": [
       {
         "soldier_id": "9021002870",
@@ -18017,6 +18445,11 @@
         "source_page": 104,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -18377,7 +18810,6 @@
     "fathers_name": "Ivan",
     "full_name": "Škopac Ivana Ivan",
     "additional_info": "borac, rođen u Rependi kod Labina, poginuo 22. aprila 1944. godine.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 23,
     "pdf_y": 199.2,
@@ -18398,7 +18830,15 @@
         "source_page": 1054,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Fužine,g.kotar",
+    "birth_year": "1924"
   },
   {
     "last_name": "Šobot",
@@ -18921,7 +19361,6 @@
     "fathers_name": "",
     "full_name": "Žic Mihovil",
     "additional_info": "zvani Mićelo; borac, rođen u Puntu na Krku, poginuo u proljeće 1944. godine kod Ramljana",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 26,
     "pdf_y": 166.7,
@@ -18932,7 +19371,25 @@
     "birth_place": "Punat na Krku",
     "death_date": "proljeće 1944",
     "rank": "borac",
-    "pdf_x_end": 389.9
+    "pdf_x_end": 389.9,
+    "other_sources": [
+      {
+        "soldier_id": "9021021843",
+        "name": "Žic (Nikola) Mihovil",
+        "additional_info": "rođen 1913, Punat (Krk). Hrvat, poginuo 1944. u NOBu, Studenci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1037",
+        "source_page": 1037,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Studenci",
+    "birth_year": "1913"
   },
   {
     "last_name": "Žic",

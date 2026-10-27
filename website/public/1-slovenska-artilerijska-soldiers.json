@@ -87,7 +87,6 @@
     "fathers_name": "",
     "full_name": "Amon Ervin",
     "additional_info": "roj. v Ljubljani, padel avgusta 1944, Podhosta",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "08.1944",
     "death_place": "Podhosta",
@@ -119,7 +118,15 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "unit_detail": "1. divizion"
+    "unit_detail": "1. divizion",
+    "birth_place": "Ljubljana Del, Ljubljana-Center",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "birth_year": "1914"
   },
   {
     "last_name": "Antič",
@@ -225,7 +232,6 @@
     "fathers_name": "",
     "full_name": "Arko Adolf",
     "additional_info": "roj. Sodražica, padel decembra 1944, Ljubljana",
-    "birth_year": "",
     "birth_place": "Sodražica",
     "death_type": "poginuo",
     "death_date": "12.1944",
@@ -246,7 +252,13 @@
         "source_page": 439,
         "ref_book": "zrtve-rata-1964-slo"
       }
-    ]
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Avgustinčič",
@@ -824,6 +836,10 @@
         "source_page": 52,
         "ref_book": "zrtve-rata-1964-slo"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1003,7 +1019,8 @@
         "ref_book": "zbornik-heroja-1957"
       }
     ],
-    "unit_detail": "Artilerija XV. divizije"
+    "unit_detail": "Artilerija XV. divizije",
+    "birth_date": "19.06.1915"
   },
   {
     "last_name": "Bratkovič",
@@ -1254,7 +1271,8 @@
         "pdf_y_end": 87.7,
         "unit_file": "artilerija-9-korpusa-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "25.01.1920"
   },
   {
     "last_name": "Cesar",
@@ -1982,7 +2000,12 @@
         "pdf_y_end": 449.3,
         "unit_file": "cankarjeva-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Fajdiga",
@@ -9636,7 +9659,8 @@
         "unit_file": "istrski-odred-soldiers.json"
       }
     ],
-    "unit_detail": "1. divizion"
+    "unit_detail": "1. divizion",
+    "birth_date": "30.11.1922"
   },
   {
     "last_name": "Puterle",
@@ -10593,7 +10617,8 @@
         "pdf_y_end": 291.7,
         "unit_file": "zascitna-enota-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "19.09.1921"
   },
   {
     "last_name": "Slak",

@@ -101,7 +101,8 @@
         "pdf_y_end": 461.3,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.05.1926"
   },
   {
     "last_name": "Adžić",
@@ -439,6 +440,10 @@
         "pdf_y_end": 242.6,
         "ref_book": "derventa-pali-borci"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -515,7 +520,6 @@
     "fathers_name": "",
     "full_name": "Aleksić Aleksa",
     "additional_info": "Srđevići, Srbac, borac 4. bat. poginuo 29. jula 1944. god. Solila, na pl. Borje, Teslić.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 445.1,
     "pdf_x": 135.1,
@@ -538,7 +542,13 @@
         "source_page": 2551,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Aleksić",
@@ -620,6 +630,10 @@
         "source_page": 43,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -794,7 +808,13 @@
         "source_page": 1829,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Banja luka"
   },
   {
     "last_name": "Alispahič",
@@ -1067,7 +1087,8 @@
         "pdf_y_end": 541.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "05.07.1904"
   },
   {
     "last_name": "Arnautović",
@@ -1111,6 +1132,10 @@
         "pdf_y_end": 501.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1222,6 +1247,10 @@
         "pdf_y_end": 276.9,
         "ref_book": "derventa-pali-borci"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2139,7 +2168,15 @@
         "pdf_y_end": 448.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.05.1945",
+          "place": "Vlaška Mala, Odžak"
+        }
+      ]
+    }
   },
   {
     "last_name": "Barnjak",
@@ -2548,7 +2585,13 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Topola b luka"
   },
   {
     "last_name": "Begović",
@@ -2744,8 +2787,19 @@
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
-    "rank": "borac",
-    "death_place": "Vijačani, Prnjavor"
+    "death_place": "Vijačani, Prnjavor",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "05.08.1944",
+          "place": "Vijačani, Prnjavor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Berak",
@@ -2794,6 +2848,10 @@
         "source_page": 2504,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2891,6 +2949,10 @@
         "pdf_y_end": 216.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2995,7 +3057,15 @@
         "pdf_y_end": 495.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.07.1944",
+          "place": "Trepča, Tešanj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bešić",
@@ -3101,7 +3171,8 @@
         "pdf_y_end": 374.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.09.1925"
   },
   {
     "last_name": "Bijelio",
@@ -3274,7 +3345,12 @@
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Bijelič",
@@ -3746,7 +3822,6 @@
     "birth_place": "Osječani, Doboj",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "zamjenik komandanta bataljona",
     "other_sources": [
       {
         "soldier_id": "0059000160",
@@ -4082,7 +4157,13 @@
         "source_page": 1256,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bišnja-derventa"
   },
   {
     "last_name": "Bogdanović",
@@ -4163,7 +4244,15 @@
         "pdf_y_end": 700.8,
         "unit_file": "14-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.09.1944",
+          "place": "Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bogosavac",
@@ -4181,7 +4270,6 @@
     "soldier_id": "0056000201",
     "pdf_x_end": 485.5,
     "birth_place": "G. Lepenica, Prnjavor",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "19.09.1944",
     "death_place": "Banja Luka",
@@ -4210,7 +4298,15 @@
         "pdf_y_end": 355.5,
         "unit_file": "14-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.09.1944",
+          "place": "Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bogosavac",
@@ -4431,7 +4527,13 @@
         "source_page": 2106,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prnjavor"
   },
   {
     "last_name": "Bojić",
@@ -4585,6 +4687,10 @@
         "source_page": 2118,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5046,6 +5152,10 @@
         "source_page": 2108,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5099,7 +5209,8 @@
         "pdf_y_end": 178.3,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.04.1926"
   },
   {
     "last_name": "Božić",
@@ -5162,7 +5273,13 @@
         "source_page": 2119,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Šereg ilova"
   },
   {
     "last_name": "Bradarić",
@@ -5299,7 +5416,8 @@
         "pdf_y_end": 544.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.10.1925"
   },
   {
     "last_name": "Brelak",
@@ -5399,7 +5517,12 @@
         "pdf_y_end": 334.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "08.02.1924"
   },
   {
     "last_name": "Brka",
@@ -5598,7 +5721,15 @@
         "source_page": 1237,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Krnjin"
   },
   {
     "last_name": "Brković",
@@ -5847,6 +5978,10 @@
         "source_page": 2105,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5915,7 +6050,12 @@
         "pdf_y_end": 578.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Budić",
@@ -6147,7 +6287,15 @@
         "pdf_y_end": 258.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "22.01.1944",
+          "place": "Prnjavor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bundalo",
@@ -6310,7 +6458,8 @@
         "pdf_y_end": 416.0,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.07.1928"
   },
   {
     "last_name": "Buzađija",
@@ -7346,7 +7495,17 @@
         "source_page": 2551,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Glogovac"
   },
   {
     "last_name": "Daničić",
@@ -7479,7 +7638,22 @@
         "pdf_y_end": 473.7,
         "unit_file": "12-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ],
+      "death": [
+        {
+          "date": "05.01.1944",
+          "place": "Šaranci, Prnjavor"
+        },
+        {
+          "date": "08.01.1944",
+          "place": "Kotor-Varoš"
+        }
+      ]
+    }
   },
   {
     "last_name": "Daradan",
@@ -7868,6 +8042,10 @@
         "pdf_y_end": 416.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8115,7 +8293,6 @@
     "fathers_name": "M",
     "full_name": "Derajić M Simeun",
     "additional_info": "rođen u Gornjoj Ilovi, Prnjavor, umro od posljedica ranjavanja 27. marta 1945. god. u Tesliću.",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 629.9,
     "pdf_x": 138.5,
@@ -8136,7 +8313,13 @@
         "source_page": 2110,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Derajić",
@@ -8353,7 +8536,12 @@
       }
     ],
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Dević",
@@ -8407,7 +8595,6 @@
     "birth_place": "Strpci, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "trgovački pomoćnik",
-    "rank": "politički komesar bataljona",
     "other_sources": [
       {
         "soldier_id": "0001002074",
@@ -8421,7 +8608,12 @@
         "pdf_y_end": 553.0,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Dijomant",
@@ -8679,6 +8871,10 @@
         "source_page": 2109,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9262,7 +9458,6 @@
     "fathers_name": "",
     "full_name": "Dujso Kerim",
     "additional_info": "Banja Luka, umro od zadobijenih rana 5. maja 1945, Vlaška Mala, Odžak.",
-    "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 353.2,
     "pdf_x": 97.1,
@@ -9283,7 +9478,13 @@
         "source_page": 5,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1903"
   },
   {
     "last_name": "Dukić",
@@ -9327,6 +9528,10 @@
         "pdf_y_end": 579.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10528,7 +10733,13 @@
         "source_page": 2105,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Donja mravica"
   },
   {
     "last_name": "Gajić",
@@ -10834,7 +11045,12 @@
         "pdf_y_end": 436.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1909"
+      ]
+    }
   },
   {
     "last_name": "Gatarić",
@@ -11281,7 +11497,13 @@
         "pdf_y_end": 200.8,
         "ref_book": "derventa-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lijevče Polje"
   },
   {
     "last_name": "Gojković",
@@ -11708,7 +11930,6 @@
     "fathers_name": "",
     "full_name": "Grubać Dujko",
     "additional_info": "rođen u Imljanima, Kotor Varoš, borac 1. bat. poginuo^ 1. avgusta 1944. god. Ukrinjica, Teslić.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 456.2,
     "pdf_x": 87.0,
@@ -11743,7 +11964,13 @@
         "pdf_y_end": 399.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1907"
   },
   {
     "last_name": "Grubać",
@@ -11775,6 +12002,10 @@
         "source_page": 1681,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11784,7 +12015,6 @@
     "fathers_name": "",
     "full_name": "Grubać Stevo",
     "additional_info": "rođen u Imljanima, Kotor-Varoš, vodnik, 1. bat. poginuo 1. avgusta 1944. god. Ukrinjica, Teslić.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 505.2,
     "pdf_x": 88.0,
@@ -11807,7 +12037,13 @@
         "source_page": 1681,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Grubišić",
@@ -11851,7 +12087,17 @@
         "source_page": 1723,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Prnjavor"
   },
   {
     "last_name": "Grujić",
@@ -13108,6 +13354,10 @@
         "source_page": 1831,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13787,6 +14037,10 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15282,7 +15536,6 @@
     "fathers_name": "G",
     "full_name": "Ivanović G Svetozar",
     "additional_info": "rođen u Srđevićima, Srbac, borac, poginuo 25. decembra 1944. god. Ljubatovci, Novi šeher.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 307.6,
     "pdf_x": 88.2,
@@ -15304,7 +15557,13 @@
         "source_page": 2551,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Ivković",
@@ -15377,6 +15636,10 @@
         "pdf_y_end": 512.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15893,7 +16156,15 @@
         "pdf_y_end": 404.8,
         "unit_file": "5-kozaracka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.02.1944",
+          "place": "Kotor-Varoš"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jenjić",
@@ -16079,7 +16350,6 @@
     "fathers_name": "",
     "full_name": "Jokanović Božo",
     "additional_info": "rođen u Korićanima, Travnik, zam. komandira čete u 1. bataljonu, poginuo 28. juna 1944. god. Derventa.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 563.9,
     "pdf_x": 87.7,
@@ -16109,7 +16379,13 @@
         "source_page": 2613,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Jokanović",
@@ -16152,7 +16428,6 @@
     "fathers_name": "",
     "full_name": "Jokanović Luka",
     "additional_info": "rođen u Korićanima, Travnik, komandir čete 1. bat. poginuo 28. juna 1944. god. u Derventi.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 586.4,
     "pdf_x": 87.9,
@@ -16175,7 +16450,13 @@
         "source_page": 2613,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Jokanović",
@@ -16220,7 +16501,6 @@
     "fathers_name": "S",
     "full_name": "Jokanović S Vladimir",
     "additional_info": "rođen u Korićanima, Travnik, vodnik u 1. bat. poginuo 19. novembra 1943. god. Crni Vrh, Kadinjani, Banja Luka.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 622.2,
     "pdf_x": 87.9,
@@ -16255,7 +16535,13 @@
         "pdf_y_end": 319.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Josipović",
@@ -16304,6 +16590,10 @@
         "source_page": 1681,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16712,6 +17002,10 @@
         "pdf_y_end": 573.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17219,7 +17513,6 @@
     "birth_place": "Strpci, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001004855",
@@ -17366,7 +17659,13 @@
         "source_page": 2603,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Teslić"
   },
   {
     "last_name": "Kadušić",
@@ -17548,7 +17847,17 @@
         "source_page": 2119,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "14 srednjebosanskabr"
   },
   {
     "last_name": "Kalaba",
@@ -17592,7 +17901,19 @@
         "pdf_y_end": 569.3,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.07.1944",
+          "place": "Miljanovci"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kalabić",
@@ -18248,7 +18569,15 @@
         "pdf_y_end": 567.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.02.1945",
+          "place": "Putnikovo Brdo, Doboj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Karić",
@@ -18505,7 +18834,12 @@
         "pdf_y_end": 164.8,
         "unit_file": "12-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Keleman",
@@ -18651,6 +18985,10 @@
         "pdf_y_end": 207.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18889,7 +19227,19 @@
         "pdf_y_end": 125.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.10.1944",
+          "place": "Velika Sočanica, Derventa"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kitić",
@@ -19088,7 +19438,13 @@
         "source_page": 2115,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Pečeneg Ilova, Prnjavor",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Knežević",
@@ -19608,7 +19964,15 @@
         "pdf_y_end": 404.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.05.1945",
+          "place": "Karaula, Žepče"
+        }
+      ]
+    }
   },
   {
     "last_name": "Komadina",
@@ -20108,6 +20472,10 @@
         "source_page": 2109,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20189,7 +20557,13 @@
         "source_page": 2107,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Doboj"
   },
   {
     "last_name": "Kovaćević",
@@ -20517,7 +20891,6 @@
     "birth_place": "Strpci, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001005463",
@@ -21377,7 +21750,15 @@
         "pdf_y_end": 411.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.01.1945",
+          "place": "Teslić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kulhaj",
@@ -21700,6 +22081,10 @@
         "source_page": 1826,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22151,7 +22536,6 @@
     "fathers_name": "L",
     "full_name": "Lazić L Ilija",
     "additional_info": "Imljani (opština Skender Vakuf)",
-    "birth_year": "",
     "pdf_page": 54,
     "pdf_y": 347.4,
     "pdf_x": 129.1,
@@ -22169,7 +22553,19 @@
         "source_page": 1682,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Maglaj",
+    "birth_year": "1925"
   },
   {
     "last_name": "Lazić",
@@ -22490,7 +22886,18 @@
         "pdf_y_end": 91.4,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ],
+      "death": [
+        {
+          "date": "08.10.1943",
+          "place": "Lijevče Polje, Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lepir",
@@ -22964,7 +23371,17 @@
         "source_page": 1729,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1945",
+    "death_place": "Maglajani"
   },
   {
     "last_name": "Lukić",
@@ -23087,7 +23504,22 @@
         "pdf_y_end": 329.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ],
+      "death": [
+        {
+          "date": "07.08.1944",
+          "place": "Klupe, Pribinić, Teslić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lučić",
@@ -23151,6 +23583,10 @@
         "pdf_y_end": 287.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23256,7 +23692,6 @@
     "birth_place": "D. Lepenica, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "05.1945",
     "death_place": "Odžaci",
@@ -23285,7 +23720,18 @@
         "pdf_y_end": 575.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "06.04.1945",
+          "place": "Janjaci, Zenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Macković",
@@ -23344,6 +23790,10 @@
         "pdf_y_end": 290.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23672,7 +24122,6 @@
     "fathers_name": "S",
     "full_name": "Makarić S Trivo",
     "additional_info": "Imljani, Skender Vakuf, poginuo 1944. godine.",
-    "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 472.2,
     "pdf_x": 94.7,
@@ -23692,7 +24141,15 @@
         "source_page": 1682,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Vlatkovci",
+    "birth_year": "1915"
   },
   {
     "last_name": "Maksić",
@@ -24269,6 +24726,10 @@
         "pdf_y_end": 243.5,
         "ref_book": "derventa-pali-borci"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24356,7 +24817,15 @@
         "pdf_y_end": 331.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "Strupine, Maglaj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Marić",
@@ -24737,7 +25206,19 @@
         "pdf_y_end": 502.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.10.1944",
+          "place": "Osinja, Derventa"
+        }
+      ]
+    }
   },
   {
     "last_name": "Marić",
@@ -25005,7 +25486,6 @@
     "birth_place": "Korovi, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001006724",
@@ -25917,7 +26397,12 @@
         "pdf_y_end": 217.5,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1928"
+      ]
+    }
   },
   {
     "last_name": "Meskić",
@@ -26586,7 +27071,6 @@
     "birth_place": "Orašje, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "23.03.1943",
     "death_place": "kod Kalino vika",
@@ -26603,7 +27087,12 @@
         "pdf_y_end": 206.1,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Mikić",
@@ -26682,7 +27171,6 @@
     "fathers_name": "",
     "full_name": "Miladinović Ignjatija",
     "additional_info": "rođen u Lišnji, Prnjavor, borac 3. č. 1. bat. umro od zadobijenih rana 24. septembra 1944. god. Topola, Laktaši.",
-    "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 308.4,
     "pdf_x": 94.1,
@@ -26704,7 +27192,15 @@
         "source_page": 2114,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Topola-b.luka",
+    "birth_year": "1924"
   },
   {
     "last_name": "Miladinović",
@@ -26871,7 +27367,17 @@
         "source_page": 2544,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Kotor varoš"
   },
   {
     "last_name": "Milano",
@@ -27093,6 +27599,10 @@
         "source_page": 2109,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27368,6 +27878,10 @@
         "source_page": 1685,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27647,7 +28161,18 @@
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1926"
+      ],
+      "death": [
+        {
+          "date": "07.1944",
+          "place": "Viševica, Kotor Varoš"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milojević",
@@ -28102,7 +28627,6 @@
     "fathers_name": "V",
     "full_name": "Mišić V Jovo",
     "additional_info": "Golo Brdo, poginuo 1944. god. na Kotor-Varošu.",
-    "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 235.6,
     "pdf_x": 135.3,
@@ -28123,7 +28647,13 @@
         "source_page": 2504,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Mišić",
@@ -29075,7 +29605,13 @@
         "source_page": 1829,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Banja luka"
   },
   {
     "last_name": "Mulasmajić",
@@ -29679,7 +30215,13 @@
         "pdf_y_end": 127.8,
         "ref_book": "derventa-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Crni vrh"
   },
   {
     "last_name": "Nedinić",
@@ -29889,7 +30431,6 @@
     "fathers_name": "",
     "full_name": "Nikodinović Dragutin",
     "additional_info": "rođen u Imljanima, Kotor-Varoš, int. 1. bat. poginuo 2. januara 1944. god. Banja Luka.",
-    "birth_year": "",
     "pdf_page": 18,
     "pdf_y": 275.9,
     "pdf_x": 94.6,
@@ -29902,7 +30443,6 @@
     "death_date": "02.01.1944",
     "death_place": "Banja Luka",
     "unit_detail": "1. bataljon",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9022020162",
@@ -29924,7 +30464,13 @@
         "pdf_y_end": 383.4,
         "unit_file": "5-kozaracka-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Nikodinović",
@@ -30030,7 +30576,6 @@
     "birth_place": "Osječani, Doboj",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
     "party": "SKOJ 1943",
     "other_sources": [
       {
@@ -30057,7 +30602,12 @@
         "pdf_y_end": 270.8,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -30606,6 +31156,10 @@
         "source_page": 2112,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30626,7 +31180,6 @@
     "birth_place": "Kremna, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001008587",
@@ -30713,7 +31266,17 @@
         "source_page": 2551,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Crna gora"
   },
   {
     "last_name": "Obad",
@@ -31278,7 +31841,6 @@
     "fathers_name": "",
     "full_name": "Ostojić Stojko",
     "additional_info": "rođen u Ilovi, Prnjavor, borac 2. bat. umro 4. decembra 1944. god. u bolnici Teslić.",
-    "birth_year": "",
     "pdf_page": 18,
     "pdf_y": 600.6,
     "pdf_x": 94.2,
@@ -31301,7 +31863,13 @@
         "source_page": 2110,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Ostrvica",
@@ -31412,6 +31980,10 @@
         "pdf_y_end": 392.0,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31676,7 +32248,15 @@
         "pdf_y_end": 582.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.05.1945",
+          "place": "Punt"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pantić",
@@ -32293,7 +32873,12 @@
         "pdf_y_end": 272.9,
         "unit_file": "18-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Perić",
@@ -32558,6 +33143,10 @@
         "pdf_y_end": 418.5,
         "ref_book": "derventa-pali-borci"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -32600,7 +33189,6 @@
     "birth_place": "Osječani, Doboj",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "intendant bataljona",
     "other_sources": [
       {
         "soldier_id": "0059001339",
@@ -32614,7 +33202,12 @@
         "pdf_y_end": 520.5,
         "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -32657,7 +33250,6 @@
     "fathers_name": "",
     "full_name": "Petrović Milan",
     "additional_info": "MILANĆE, iz Bos. Petrovca (opština Žepce)",
-    "birth_year": "",
     "pdf_page": 63,
     "pdf_y": 162.2,
     "pdf_x": 285.5,
@@ -32675,7 +33267,19 @@
         "source_page": 715,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1943",
+    "death_place": "Petrovac",
+    "birth_year": "1901"
   },
   {
     "last_name": "Petrović",
@@ -32835,7 +33439,19 @@
         "pdf_y_end": 506.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.06.1944",
+          "place": "Vrhovi, Derventa"
+        }
+      ]
+    }
   },
   {
     "last_name": "Peulić",
@@ -32887,6 +33503,10 @@
         "source_page": 2107,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33661,6 +34281,10 @@
         "pdf_y_end": 432.5,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33805,7 +34429,6 @@
     "birth_place": "Vijačani, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001009786",
@@ -34201,7 +34824,15 @@
         "pdf_y_end": 458.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.09.1944",
+          "place": "kod Vila Vrhovski kod Doboj a"
+        }
+      ]
+    }
   },
   {
     "last_name": "Prelić",
@@ -34369,6 +35000,10 @@
         "source_page": 2109,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34406,7 +35041,6 @@
     "birth_place": "Vijačani, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001009887",
@@ -34420,7 +35054,12 @@
         "pdf_y_end": 439.4,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Preradović",
@@ -34440,7 +35079,6 @@
     "birth_place": "Vijačani, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001009888",
@@ -34741,7 +35379,22 @@
         "pdf_y_end": 555.2,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "15.12.1944",
+          "place": "Miljanovci, Doboj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Prosan",
@@ -35145,6 +35798,10 @@
         "pdf_y_end": 297.0,
         "ref_book": "derventa-pali-borci"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35202,7 +35859,15 @@
         "pdf_y_end": 131.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.05.1945",
+          "place": "Putnikovo Brdo, Doboj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Radetić",
@@ -35228,8 +35893,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1726",
         "source_page": 1726,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0033000550",
+        "name": "Radetić Petra Uroš",
+        "additional_info": "rođen 1921, Laktaši B. Luka, Art. diViz. 53. divizije, poginuo, 10. V 1945, Vlaška Mala, sahranjen: SI. Brod",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 49,
+        "pdf_x": 11.8,
+        "pdf_y": 181.7,
+        "pdf_x_end": 636.1,
+        "pdf_y_end": 207.6,
+        "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_date": "10.05.1945",
+    "death_place": "Vlaška Mala",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Radinković",
@@ -35594,7 +36281,12 @@
         "pdf_y_end": 285.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Radovanović",
@@ -35876,6 +36568,10 @@
         "pdf_y_end": 123.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36757,6 +37453,10 @@
         "source_page": 2112,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36930,7 +37630,15 @@
         "pdf_y_end": 360.3,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.01.1945",
+          "place": "Uzlomac, Kotor-Varoš"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sahbaz",
@@ -37275,7 +37983,13 @@
         "source_page": 2598,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Šeher"
   },
   {
     "last_name": "Salćić",
@@ -37500,6 +38214,10 @@
         "pdf_y_end": 236.0,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37561,7 +38279,17 @@
         "source_page": 2544,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Tromeđa"
   },
   {
     "last_name": "Sančanin",
@@ -37639,7 +38367,11 @@
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
     ],
-    "rank": "kurir"
+    "rank": "kurir",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Sančanin",
@@ -37928,6 +38660,10 @@
         "source_page": 2108,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38235,6 +38971,10 @@
         "source_page": 1736,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38283,6 +39023,10 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Muslimanka",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38441,7 +39185,6 @@
     "birth_place": "Strpci, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "komandir čete",
     "death_type": "",
     "death_date": "",
     "death_place": "",
@@ -38471,7 +39214,12 @@
         "pdf_y_end": 509.9,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Sejmenović",
@@ -38702,7 +39450,12 @@
         "pdf_y_end": 453.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Seljaković",
@@ -39044,7 +39797,15 @@
         "pdf_y_end": 128.7,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.09.1944",
+          "place": "Doboj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Silađi",
@@ -39076,6 +39837,10 @@
         "source_page": 1051,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -39205,6 +39970,10 @@
         "pdf_y_end": 283.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -39337,7 +40106,18 @@
         "pdf_y_end": 572.0,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ],
+      "death": [
+        {
+          "date": "06.05.1945",
+          "place": "kod Javorani, K. Varoš"
+        }
+      ]
+    }
   },
   {
     "last_name": "Simić",
@@ -39504,6 +40284,10 @@
         "pdf_y_end": 291.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -39994,6 +40778,10 @@
         "pdf_y_end": 276.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40318,7 +41106,15 @@
         "pdf_y_end": 209.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "05.05.1945",
+          "place": "Vlaška Mala, Odžak"
+        }
+      ]
+    }
   },
   {
     "last_name": "Smajić",
@@ -40668,6 +41464,10 @@
         "source_page": 2118,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40914,7 +41714,13 @@
         "pdf_y_end": 193.8,
         "ref_book": "derventa-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "14.brigada"
   },
   {
     "last_name": "Sprecak",
@@ -41009,6 +41815,10 @@
         "pdf_y_end": 529.5,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41091,7 +41901,11 @@
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
     ],
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stanivuković",
@@ -41220,6 +42034,10 @@
         "pdf_y_end": 205.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41947,7 +42765,15 @@
         "pdf_y_end": 116.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.01.1944",
+          "place": "Bubanj, Lišnja, Prnjavor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -42041,7 +42867,17 @@
         "source_page": 2544,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Nova ves"
   },
   {
     "last_name": "Stojić",
@@ -42190,7 +43026,13 @@
         "source_page": 2107,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Donji štrpci"
   },
   {
     "last_name": "Stojković",
@@ -42282,7 +43124,6 @@
     "birth_place": "D. Lepenica, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "05.1945",
     "death_place": "Odžak kod Bos. Samca",
@@ -43301,7 +44142,15 @@
         "pdf_y_end": 243.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.02.1944",
+          "place": "Visoka Glava, Reljevac, Prnjavor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tadić",
@@ -44286,7 +45135,15 @@
         "pdf_y_end": 364.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.01.1943",
+          "place": "Trapisti, Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Todorič",
@@ -45194,7 +46051,17 @@
         "source_page": 1683,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Prijedor"
   },
   {
     "last_name": "Topolovac",
@@ -45288,6 +46155,10 @@
         "pdf_x_left": 32.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -45814,7 +46685,15 @@
         "pdf_y_end": 279.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.10.1944",
+          "place": "Crnča, Derventa"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tukič",
@@ -46049,7 +46928,6 @@
     "fathers_name": "",
     "full_name": "Tutnjević Dušan",
     "additional_info": "rođen u Cvrtkovci, Doboj, borac 1. č. 3. bat. umro od zadobijenih rana 2. februara 1944. god. Drenova, Prnjavor.",
-    "birth_year": "",
     "pdf_page": 27,
     "pdf_y": 179.4,
     "pdf_x": 134.7,
@@ -46083,7 +46961,13 @@
         "pdf_y_end": 571.0,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Tutnjević",
@@ -46200,6 +47084,10 @@
         "source_page": 2544,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -46371,6 +47259,10 @@
         "pdf_y_end": 494.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -46578,6 +47470,10 @@
         "pdf_x_left": 25.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -46835,6 +47731,10 @@
         "pdf_y_end": 128.1,
         "ref_book": "derventa-pali-borci"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -46888,7 +47788,15 @@
         "pdf_y_end": 502.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.07.1944",
+          "place": "kod Ukrinjica, Teslić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vidić",
@@ -46975,7 +47883,6 @@
     "pdf_x_end": 507.9,
     "birth_place": "Ritešić, Doboj",
     "occupation": "zemljoradnik",
-    "rank": "vezista",
     "other_sources": [
       {
         "soldier_id": "0052001541",
@@ -47245,6 +48152,10 @@
         "source_page": 2109,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -47298,7 +48209,15 @@
         "pdf_y_end": 128.7,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.05.1945",
+          "place": "Vlaška Mala, Odžak"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vindis",
@@ -47352,7 +48271,6 @@
     "birth_place": "Ilova, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "party": "SKOJ 1943",
     "other_sources": [
       {
@@ -47511,7 +48429,15 @@
         "pdf_y_end": 122.0,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1945",
+          "place": "Karaula, Zepče"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vojvodić",
@@ -47745,7 +48671,17 @@
         "source_page": 2117,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Maglaj"
   },
   {
     "last_name": "Vrhovac",
@@ -47797,6 +48733,10 @@
         "source_page": 2115,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -47829,6 +48769,10 @@
         "source_page": 2107,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -48412,7 +49356,15 @@
         "pdf_y_end": 297.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.01.1944",
+          "place": "Prnjavor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vukelić",
@@ -48703,7 +49655,18 @@
         "pdf_y_end": 404.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ],
+      "death": [
+        {
+          "date": "01.01.1944",
+          "place": "Trapisti, Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vuković",
@@ -48747,6 +49710,10 @@
         "pdf_y_end": 492.1,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -48881,6 +49848,10 @@
         "pdf_x_left": 28.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -49009,7 +49980,6 @@
     "fathers_name": "D",
     "full_name": "Vučić D Milorad",
     "additional_info": "Bokani (opština Skender Vakuf)",
-    "birth_year": "",
     "pdf_page": 54,
     "pdf_y": 687.4,
     "pdf_x": 320.1,
@@ -49027,7 +49997,19 @@
         "source_page": 2503,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Banja luka",
+    "birth_year": "1927"
   },
   {
     "last_name": "Vučko",
@@ -49185,6 +50167,10 @@
         "source_page": 2110,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -49722,7 +50708,12 @@
         "pdf_y_end": 306.1,
         "unit_file": "12-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1910"
+      ]
+    }
   },
   {
     "last_name": "Ćatić",
@@ -49805,6 +50796,10 @@
         "source_page": 1720,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -49918,7 +50913,13 @@
         "source_page": 1718,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Doboj"
   },
   {
     "last_name": "Ćetojević",
@@ -50284,7 +51285,6 @@
     "birth_place": "Brestovo, Doboj",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "desetar",
     "other_sources": [
       {
         "soldier_id": "0001001715",
@@ -51376,7 +52376,15 @@
         "pdf_y_end": 333.4,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.01.1944",
+          "place": "Trapisti, Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đurić",
@@ -51407,7 +52415,13 @@
         "source_page": 2108,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Đurić",
@@ -51656,7 +52670,6 @@
     "fathers_name": "K",
     "full_name": "Đurđević K Milorad",
     "additional_info": "rođen u Ilovi, Prnjavor, poginuo 31. oktobra 1943. god. u Lijevče Polju, Bos. Gradiška.",
-    "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 601.8,
     "pdf_x": 96.4,
@@ -51677,7 +52690,13 @@
         "source_page": 2115,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Đurđević",
@@ -51867,7 +52886,15 @@
         "pdf_y_end": 278.9,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.04.1944",
+          "place": "Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šarić",
@@ -51938,7 +52965,6 @@
     "birth_place": "Kremna, Prnjavor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0001012034",
@@ -52003,7 +53029,6 @@
     "fathers_name": "",
     "full_name": "Šarčević Uglješa",
     "additional_info": "rođen u Kremni, Prnjavor, borac 3. bat. poginuo 18. avgusta 1944. god. Klupe, Teslić.",
-    "birth_year": "",
     "pdf_page": 24,
     "pdf_y": 573.8,
     "pdf_x": 100.6,
@@ -52026,7 +53051,13 @@
         "source_page": 2112,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Šedek",
@@ -52062,7 +53093,15 @@
         "pdf_y_end": 361.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.12.1944",
+          "place": "Sivša, Doboj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šehić",
@@ -52115,7 +53154,12 @@
         "pdf_y_end": 369.6,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Šeremet",
@@ -52335,7 +53379,6 @@
     "fathers_name": "M",
     "full_name": "Škobalj M Dragan",
     "additional_info": "rođen u Vakufu, Bos. Gradiška, poginuo novembra 1944. god.",
-    "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 177.5,
     "pdf_x": 136.4,
@@ -52363,7 +53406,15 @@
         "source_page": 379,
         "ref_book": "rat-i-djeca-kozare"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sarajevo",
+    "birth_year": "1929"
   },
   {
     "last_name": "Škorić",
@@ -52586,6 +53637,10 @@
         "source_page": 2110,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -52722,6 +53777,10 @@
         "source_page": 1249,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -52860,6 +53919,10 @@
         "source_page": 2109,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -53017,7 +54080,15 @@
         "pdf_y_end": 148.8,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "31.07.1943",
+          "place": "Klašnica, Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Živković",
@@ -53078,6 +54149,18 @@
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
     ],
-    "death_place": "Ljubatovići Zepče"
+    "death_place": "Ljubatovići Zepče",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.12.1944",
+          "place": "Ljubatovići Zepče"
+        }
+      ]
+    }
   }
 ]

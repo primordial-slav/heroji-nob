@@ -2517,7 +2517,11 @@
     "death_date": "27.07.1944",
     "death_place": "Oruglica",
     "rank": "borac",
-    "pdf_x_end": 148.6
+    "pdf_x_end": 148.6,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ignjatović",
@@ -6436,6 +6440,10 @@
         "source_page": 795,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7565,6 +7573,10 @@
         "source_page": 791,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9044,7 +9056,11 @@
     "death_place": "Goleš, Lece",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 303.3
+    "pdf_x_end": 303.3,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Popović",
@@ -9474,7 +9490,13 @@
     "death_date": "22.06.1944",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 106.2
+    "pdf_x_end": 106.2,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "P.šilovo-goleš"
   },
   {
     "last_name": "Radulović",
@@ -10224,7 +10246,18 @@
         "pdf_y_end": 459.8,
         "unit_file": "17-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ],
+      "death": [
+        {
+          "date": "11.1944",
+          "place": "Mramor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Simonović",
@@ -11332,7 +11365,11 @@
     "death_date": "28.07.1944",
     "death_place": "Oruglica",
     "rank": "borac",
-    "pdf_x_end": 318.2
+    "pdf_x_end": 318.2,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stanojević",
@@ -11635,7 +11672,15 @@
     "death_date": "27.07.1944",
     "death_place": "Lipovačko Groblje",
     "rank": "borac",
-    "pdf_x_end": 316.9
+    "pdf_x_end": 316.9,
+    "variants": {
+      "death": [
+        {
+          "date": "26.07.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stevanović",
@@ -15409,6 +15454,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=60",
         "source_page": 60,
         "ref_book": "zrtve-rata-1964-kos"
+      },
+      {
+        "soldier_id": "0021006114",
+        "name": "Đukanović Radeta Krsto",
+        "additional_info": "Tulare, Medveđa, zemljoradnik. Poginuo u 24. diviziji 1944. kod Lebana.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 95,
+        "pdf_x": 51.0,
+        "pdf_y": 291.0,
+        "pdf_x_end": 354.5,
+        "pdf_y_end": 312.1,
+        "unit_file": "4-srpska-soldiers.json"
       }
     ],
     "birth_place": "Propaštica, Medveđa",
@@ -15416,7 +15473,13 @@
     "death_date": "19.08.1944",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 265.3,
-    "death_place": "Lebane"
+    "death_place": "Lebane",
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Đukanović",
@@ -15558,7 +15621,6 @@
     "fathers_name": "",
     "full_name": "Đurović Radosav",
     "additional_info": "politički komesar 3. čete 4. bataljona, poginuo 18/19. avgusta 1944, Lebane.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 14,
     "pdf_y": 227.0,
@@ -15580,7 +15642,15 @@
         "source_page": 168,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1911"
   },
   {
     "last_name": "Đurović-Milić",

@@ -46,7 +46,15 @@
         "source_page": 862,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Niš",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Blatnica kod ma"
   },
   {
     "last_name": "Aleksić",
@@ -304,7 +312,12 @@
         "pdf_x_left": 7.9,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Balaban",
@@ -449,7 +462,15 @@
         "pdf_y_end": 599.1,
         "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.07.1943",
+          "place": "Kreševo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Banjac",
@@ -481,6 +502,10 @@
         "source_page": 1662,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Šašinci-srem",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -910,7 +935,15 @@
       }
     ],
     "death_place": "Banjaluka",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "20.09.1944",
+          "place": "Banjaluka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bosnić",
@@ -953,7 +986,15 @@
         "unit_file": "7-krajiska-soldiers.json"
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Sarajevo"
   },
   {
     "last_name": "Bosnić",
@@ -1018,7 +1059,6 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "11.1980",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0010100132",
@@ -1912,7 +1952,12 @@
     ],
     "ethnicity": "Srbin",
     "death_place": "Sutjeska",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Grbić",
@@ -1993,7 +2038,15 @@
     ],
     "birth_place": "Pokoj, Bihać, BiH",
     "death_place": "Sutjeska",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "05.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Grubiša",
@@ -2181,7 +2234,18 @@
         "pdf_y_end": 489.7,
         "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1914"
+      ],
+      "death": [
+        {
+          "date": "25.01.1943",
+          "place": "Peć (Ključ)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Inđić",
@@ -2321,7 +2385,13 @@
         "source_page": 903,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_date": "1942",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Jošava"
   },
   {
     "last_name": "Jajčanin",
@@ -2681,6 +2751,10 @@
         "source_page": 972,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Lapac",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -2787,7 +2861,18 @@
       }
     ],
     "death_place": "Istočna Bosna",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "06.1943",
+          "place": "Ustiprača"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kecman",
@@ -2862,7 +2947,8 @@
     ],
     "birth_place": "Bukovača, Bosanski Petrovac",
     "death_place": "Devetak, Istočna Bosna",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_date": "02.08.1921"
   },
   {
     "last_name": "Kecman",
@@ -3019,7 +3105,12 @@
         "pdf_y_end": 500.9,
         "unit_file": "6-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Kljajić",
@@ -3117,7 +3208,12 @@
       }
     ],
     "death_place": "Sarajevo",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Kojić",
@@ -3155,7 +3251,12 @@
         "pdf_y_end": 615.3,
         "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Komad",
@@ -3187,7 +3288,13 @@
         "source_page": 1159,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Višići, Čapljina",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Klepci čapljina"
   },
   {
     "last_name": "Korać",
@@ -3314,7 +3421,12 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Travnik",
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Kovačević",
@@ -3426,7 +3538,18 @@
         "pdf_x_end": 786.0,
         "unit_file": "8-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1908"
+      ],
+      "death": [
+        {
+          "date": "13.11.1943",
+          "place": "Gudovac, Bosanska Krupa"
+        }
+      ]
+    }
   },
   {
     "last_name": "Košijer",
@@ -3509,7 +3632,12 @@
     "birth_place": "Šipovljani, Drvar",
     "occupation": "radnik",
     "death_place": "Rogatica",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1915"
+      ]
+    }
   },
   {
     "last_name": "Košpić",
@@ -3817,7 +3945,12 @@
         "pdf_y_end": 549.2,
         "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Landup",
@@ -3839,7 +3972,6 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "04.1942",
-    "rank": "borac",
     "death_place": "u Teslićima kod Kotor-Varoši",
     "other_sources": [
       {
@@ -4047,7 +4179,6 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "28.08.1942",
-    "rank": "borac",
     "death_place": "u selu Đulovac, kod Daruvara, Slavonija",
     "other_sources": [
       {
@@ -4181,6 +4312,10 @@
         "source_page": 2027,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4426,7 +4561,15 @@
         "source_page": 735,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Istočna bosna"
   },
   {
     "last_name": "Marčeta",
@@ -4464,7 +4607,15 @@
         "pdf_y_end": 317.6,
         "unit_file": "4-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.1945",
+          "place": "Zagreb"
+        }
+      ]
+    }
   },
   {
     "last_name": "Medić",
@@ -4567,7 +4718,8 @@
         "source_page": 494,
         "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "birth_date": "17.12.1917"
   },
   {
     "last_name": "Mikanović",
@@ -4612,7 +4764,12 @@
       }
     ],
     "death_date": "29.03.1943",
-    "death_place": "Kotor Varoš"
+    "death_place": "Kotor Varoš",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Milanković",
@@ -5177,7 +5334,18 @@
       }
     ],
     "death_place": "Bihać",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1917"
+      ],
+      "death": [
+        {
+          "date": "11.1942",
+          "place": "Bihać"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pecar",
@@ -5849,9 +6017,19 @@
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
-    "rank": "desetar",
     "death_place": "Ključ",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1916"
+      ],
+      "death": [
+        {
+          "date": "27.07.1942",
+          "place": "Ključ"
+        }
+      ]
+    }
   },
   {
     "last_name": "Rodić",
@@ -5909,7 +6087,12 @@
     "ethnicity": "Srbin",
     "rank": "politički komesar čete",
     "death_place": "Beograd",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Runić",
@@ -6166,7 +6349,12 @@
         "pdf_x_left": 71.6,
         "unit_file": "11-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Sobot",
@@ -6224,7 +6412,12 @@
         "source_url": "https://znaci.org/00001/31_263.htm",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Sobot",
@@ -6294,7 +6487,12 @@
         "source_url": "https://znaci.org/00001/31_263.htm",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Solomun",
@@ -6877,7 +7075,12 @@
       }
     ],
     "death_place": "Bugojno",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Torbica",
@@ -6990,7 +7193,22 @@
         "source_url": "https://znaci.org/00001/31_263.htm",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ],
+      "death": [
+        {
+          "date": "08.12.1943",
+          "place": "Šujica"
+        },
+        {
+          "date": "1944",
+          "place": "Borova glava"
+        }
+      ]
+    }
   },
   {
     "last_name": "Trikić",
@@ -7045,7 +7263,12 @@
         "source_url": "https://znaci.org/00001/31_263.htm",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Trkulja",
@@ -7262,7 +7485,12 @@
         "pdf_y_end": 398.8,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Vašalić",
@@ -7811,7 +8039,12 @@
         "pdf_x_end": 403.4,
         "unit_file": "8-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Zorić",
@@ -7861,7 +8094,18 @@
         "pdf_y_end": 679.1,
         "unit_file": "7-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "06.10.1943",
+          "place": "na Karaulskoj Gori, kod Travnika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Zrnić",
@@ -7987,7 +8231,8 @@
         "source_page": 129,
         "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "birth_date": "15.09.1917"
   },
   {
     "last_name": "Čubrilo",

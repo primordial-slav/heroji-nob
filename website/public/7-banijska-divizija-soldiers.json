@@ -155,6 +155,10 @@
         "source_page": 1595,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "death_place": "Crna gora",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -187,6 +191,10 @@
         "source_page": 548,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "death_place": "Crna gora",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -625,6 +633,10 @@
         "source_page": 977,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "death_place": "Kod sandžaka",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -704,7 +716,8 @@
         "pdf_y_end": 333.3,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "16.08.1923"
   },
   {
     "last_name": "Drekić",
@@ -930,7 +943,12 @@
         "pdf_y_end": 512.1,
         "unit_file": "8-banijska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Gruborović",
@@ -1168,7 +1186,8 @@
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "birth_date": "02.12.1913"
   },
   {
     "last_name": "Jakšić",
@@ -1514,7 +1533,8 @@
         "source_page": 372,
         "ref_book": "banijski-odredi-kadar"
       }
-    ]
+    ],
+    "birth_date": "21.08.1916"
   },
   {
     "last_name": "Kljajić",
@@ -1777,6 +1797,10 @@
         "source_page": 475,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "death_place": "Nov",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -2354,7 +2378,15 @@
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "death": [
+        {
+          "date": "03.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mećava-Carić",
@@ -2503,7 +2535,12 @@
         "pdf_x_left": 170.9,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_place": "Tešanj",
+    "borrowed": [
+      "birth_place"
+    ],
+    "birth_date": "19.07.1921"
   },
   {
     "last_name": "Nevajda",
@@ -2847,7 +2884,13 @@
         "source_page": 453,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Glamoč"
   },
   {
     "last_name": "Radišić",
@@ -4185,7 +4228,8 @@
         "pdf_y_end": 316.6,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.07.1917"
   },
   {
     "last_name": "Šimunlija",
@@ -4222,7 +4266,12 @@
         "pdf_y_end": 534.8,
         "unit_file": "7-banijska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Španović",
@@ -4256,7 +4305,15 @@
         "source_page": 239,
         "unit_file": "16-banijska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šteković",

@@ -196,6 +196,7 @@ export const mk: Messages = {
       occupation: 'Занимање',
       party: 'Партија',
     },
+    or: 'или',
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, стр. ${page}` : ''}. Книга на борците, запис ${id}.`,
   },

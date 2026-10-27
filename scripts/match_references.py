@@ -215,12 +215,14 @@ def main():
     if args.book in HERO_BOOKS:
         for r in refs:
             r['hero'] = True                               # every entry of these books is a narodni heroj
+    from record_sources import own_only
     index = defaultdict(list)
     for code, (_, soldiers) in structured.load_live().items():
         if code in OSTALI_CODES:                           # Ostali borci: made of the entries no unit's record took
             continue
         for s in soldiers:
-            index[(fold(s.get('last_name')), fold(s.get('first_name')))].append(s)
+            # not what the record borrowed from another unit or the census (scripts/record_sources.py)
+            index[(fold(s.get('last_name')), fold(s.get('first_name')))].append(own_only(s))
     found, grades, every = [], Counter(), {}
     for ref in refs:
         names = {fold(ref['first_name'])} | ({fold(ref['nick'])} if ref.get('nick') else set())

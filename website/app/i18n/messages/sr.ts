@@ -206,6 +206,8 @@ export const sr = {
       /** SKOJ, the party or both, with the years: "Partija: SKOJ od 1941, KPJ od 1944" */
       party: 'Partija',
     },
+    /** between what two books give otherwise: "Rođen: 1915 ili 1918", "Poginuo: 05.03.1943, kod Gornjeg Vakufa ili 06.1943, Sutjeska" */
+    or: 'ili',
     /** "Petrović Milan. Prva lička proleterska brigada, Rajko Šarenac (ur.), str. 42. Knjiga boraca, zapis 0002000042." */
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, str. ${page}` : ''}. Knjiga boraca, zapis ${id}.`,

@@ -374,7 +374,6 @@
     "soldier_id": "0168000022",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "zamenik komandira čete",
     "party": "KPJ 1943",
     "other_sources": [
       {
@@ -568,7 +567,16 @@
     ],
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_date": "06.11.1911",
+    "variants": {
+      "death": [
+        {
+          "date": "05.1944",
+          "place": "Vis"
+        }
+      ]
+    }
   },
   {
     "last_name": "Andrijić",
@@ -668,7 +676,12 @@
         "source_page": 1703,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "18.09.1919"
   },
   {
     "last_name": "Anibalović",
@@ -1370,7 +1383,6 @@
     "soldier_id": "0168000076",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Sutjeska",
@@ -1420,7 +1432,13 @@
         "pdf_y_end": 125.7,
         "unit_file": "3-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919",
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Anđelić",
@@ -1439,7 +1457,6 @@
     "pdf_x_end": 400.4,
     "soldier_id": "0168000077",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0053000059",
@@ -1634,6 +1651,10 @@
         "source_page": 74,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1789,7 +1810,8 @@
     "pdf_y_end": 399.3,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 408.1,
-    "soldier_id": "0168000096"
+    "soldier_id": "0168000096",
+    "birth_date": "27.09.1912"
   },
   {
     "last_name": "Avćanin",
@@ -2131,7 +2153,12 @@
         "ref_book": "zbornik-heroja-1957"
       }
     ],
-    "unit_detail": "Štab IV POS-a"
+    "unit_detail": "Štab IV POS-a",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "22.10.1915"
   },
   {
     "last_name": "Bajanović",
@@ -3763,7 +3790,8 @@
     "pdf_x_end": 408.5,
     "soldier_id": "0168000212",
     "rank": "borac",
-    "unit_detail": "1. četa"
+    "unit_detail": "1. četa",
+    "birth_date": "12.12.1919"
   },
   {
     "last_name": "Batinić",
@@ -4675,7 +4703,6 @@
     "fathers_name": "Ivan",
     "full_name": "Belić Ivana Jure",
     "additional_info": "Jelsa, o. Hvar",
-    "birth_year": "",
     "birth_place": "Jelsa, Hvar",
     "pdf_page": 5,
     "pdf_y": 330.6,
@@ -4693,7 +4720,19 @@
         "source_page": 761,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Pelegrin,hvar",
+    "birth_year": "1925"
   },
   {
     "last_name": "Belić",
@@ -4730,7 +4769,6 @@
     "soldier_id": "0168000269",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0053000222",
@@ -5492,7 +5530,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 365.9,
     "soldier_id": "0168000313",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0053000257",
@@ -5506,7 +5543,8 @@
         "pdf_y_end": 331.6,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "28.02.1919"
   },
   {
     "last_name": "Bibić",
@@ -5670,7 +5708,12 @@
         "source_page": 759,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "24.11.1914"
   },
   {
     "last_name": "Bilić",
@@ -6386,7 +6429,8 @@
     "pdf_y_end": 568.5,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 406.9,
-    "soldier_id": "0168000365"
+    "soldier_id": "0168000365",
+    "birth_date": "16.12.1921"
   },
   {
     "last_name": "Blašković",
@@ -6406,7 +6450,6 @@
     "soldier_id": "0168000366",
     "ethnicity": "Hrvat",
     "occupation": "elektromehaničar",
-    "rank": "komandir čete",
     "party": "KPJ 1942",
     "other_sources": [
       {
@@ -6433,7 +6476,8 @@
         "pdf_y_end": 316.4,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "09.12.1914"
   },
   {
     "last_name": "Blašković",
@@ -6826,7 +6870,8 @@
         "source_page": 518,
         "ref_book": "vis-zrtve-nob"
       }
-    ]
+    ],
+    "birth_date": "20.07.1903"
   },
   {
     "last_name": "Bogetić",
@@ -6894,7 +6939,8 @@
     "pdf_y_end": 117.5,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 369.1,
-    "soldier_id": "0168000392"
+    "soldier_id": "0168000392",
+    "birth_date": "15.11.1906"
   },
   {
     "last_name": "Bojanić",
@@ -7079,7 +7125,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 403.6,
     "soldier_id": "0168000403",
-    "rank": "ekonom",
     "other_sources": [
       {
         "soldier_id": "0148000355",
@@ -7094,7 +7139,8 @@
         "pdf_x_left": 219.5,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "30.06.1908"
   },
   {
     "last_name": "Bonaćić",
@@ -7280,7 +7326,8 @@
     "pdf_y_end": 157.8,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 367.5,
-    "soldier_id": "0168000414"
+    "soldier_id": "0168000414",
+    "birth_date": "01.11.1920"
   },
   {
     "last_name": "Bondulić",
@@ -7622,6 +7669,10 @@
         "source_page": 518,
         "ref_book": "vis-zrtve-nob"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7926,7 +7977,6 @@
     "pdf_x_end": 176.8,
     "soldier_id": "0168000451",
     "occupation": "ribar",
-    "rank": "borac",
     "party": "SKOJ 1943",
     "other_sources": [
       {
@@ -7941,7 +7991,8 @@
         "pdf_y_end": 314.2,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "15.03.1925"
   },
   {
     "last_name": "Botica",
@@ -8299,7 +8350,6 @@
     "soldier_id": "0168000472",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -10706,7 +10756,8 @@
     "pdf_y_end": 338.8,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 365.3,
-    "soldier_id": "0168000616"
+    "soldier_id": "0168000616",
+    "birth_date": "17.12.1920"
   },
   {
     "last_name": "Butković",
@@ -11332,7 +11383,6 @@
     "soldier_id": "0168000652",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148000541",
@@ -11749,7 +11799,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 365.0,
     "soldier_id": "0168000676",
-    "rank": "borac",
     "occupation": "ribar",
     "other_sources": [
       {
@@ -11764,7 +11813,8 @@
         "pdf_y_end": 308.7,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.11.1921"
   },
   {
     "last_name": "Cetinić",
@@ -11974,7 +12024,6 @@
     "fathers_name": "Stjepan",
     "full_name": "Crnčić Stjepana Josip",
     "additional_info": "Županje, Dobrinj, o. Krk; mornar NB-11 »Crvena zvijezda« Kvarnerski pomorski sastav, poginuo 1. 4. 1945. kada je brod naišao na minu jugoistočno od o. Suska.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "01.04.1945",
     "birth_place": "Županje, Dobrinj, Krk",
@@ -11985,6 +12034,7 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 366.0,
     "soldier_id": "0168000689",
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9021021933",
@@ -11994,7 +12044,14 @@
         "source_page": 1039,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "M.lošinj"
   },
   {
     "last_name": "Cubretovic",
@@ -12024,7 +12081,12 @@
         "source_page": 761,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "04.02.1914"
   },
   {
     "last_name": "Cuculić",
@@ -12328,7 +12390,6 @@
     "pdf_x_end": 210.8,
     "soldier_id": "0168000708",
     "occupation": "ribar",
-    "rank": "politički komesar",
     "party": "KPJ 1932",
     "other_sources": [
       {
@@ -12355,7 +12416,8 @@
         "pdf_y_end": 557.5,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.01.1912"
   },
   {
     "last_name": "Cvitan",
@@ -12835,7 +12897,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 136.6,
     "soldier_id": "0168000737",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0008001073",
@@ -12927,7 +12988,12 @@
         "source_page": 765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "09.06.1910"
   },
   {
     "last_name": "Damjanić",
@@ -13793,7 +13859,12 @@
         "source_page": 81,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "06.06.1923"
   },
   {
     "last_name": "Derenćin",
@@ -14027,7 +14098,6 @@
     "soldier_id": "0168000805",
     "ethnicity": "Hrvat",
     "occupation": "ribar",
-    "rank": "borac",
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
@@ -14153,7 +14223,8 @@
         "pdf_y_end": 173.0,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.04.1913"
   },
   {
     "last_name": "Divić",
@@ -14688,7 +14759,6 @@
     "soldier_id": "0168000842",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "zamenik političkog komesara",
     "party": "KPJ 1942",
     "other_sources": [
       {
@@ -15125,7 +15195,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 215.1,
     "soldier_id": "0168000867",
-    "rank": "vodni delegat",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1942, KPJ 1945",
     "other_sources": [
@@ -15141,7 +15210,8 @@
         "pdf_y_end": 686.0,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.02.1922"
   },
   {
     "last_name": "Dragojević",
@@ -15212,11 +15282,11 @@
     ],
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "zamenik političkog komesara čete",
     "death_type": "poginuo",
     "death_date": "06.06.1943",
     "death_place": "na Gornjim Barama, Sutjeska",
-    "party": "SKOJ 1939, KPJ 1942"
+    "party": "SKOJ 1939, KPJ 1942",
+    "birth_date": "11.04.1920"
   },
   {
     "last_name": "Dragojević",
@@ -15555,7 +15625,6 @@
     "pdf_x_end": 361.4,
     "soldier_id": "0168000889",
     "occupation": "brijač",
-    "rank": "borac",
     "party": "SKOJ 1941",
     "other_sources": [
       {
@@ -15570,7 +15639,8 @@
         "pdf_y_end": 466.2,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "19.03.1922"
   },
   {
     "last_name": "Drviš",
@@ -15624,7 +15694,6 @@
     "soldier_id": "0168000892",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "politički komesar čete",
     "party": "KPJ 1937",
     "other_sources": [
       {
@@ -16573,7 +16642,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 392.1,
     "soldier_id": "0168000946",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "04.1945",
     "death_place": "Klana",
@@ -16611,7 +16679,12 @@
         "pdf_y_end": 528.6,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "17.06.1909"
+      ]
+    }
   },
   {
     "last_name": "Dučić",
@@ -16663,7 +16736,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 388.5,
     "soldier_id": "0168000949",
-    "rank": "borac",
     "occupation": "zemljoradnik",
     "other_sources": [
       {
@@ -16678,7 +16750,8 @@
         "pdf_y_end": 564.1,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.01.1924"
   },
   {
     "last_name": "Dučić",
@@ -16749,7 +16822,6 @@
     "soldier_id": "0168000953",
     "ethnicity": "Hrvat",
     "occupation": "službenik",
-    "rank": "desetar",
     "party": "KPJ 1942",
     "other_sources": [
       {
@@ -16777,7 +16849,8 @@
         "pdf_y_end": 780.9,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.09.1925"
   },
   {
     "last_name": "Dvornik",
@@ -16880,7 +16953,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 138.4,
     "soldier_id": "0168000959",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148000701",
@@ -16895,7 +16967,8 @@
         "pdf_x_left": 250.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.05.1908"
   },
   {
     "last_name": "Elezović",
@@ -17098,7 +17171,6 @@
     "soldier_id": "0168000971",
     "ethnicity": "Hrvat",
     "occupation": "mornar",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148000716",
@@ -17150,7 +17222,6 @@
     "soldier_id": "0168000973",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Sutjeska",
@@ -17541,7 +17612,8 @@
     "pdf_y_end": 69.3,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 406.6,
-    "soldier_id": "0168000995"
+    "soldier_id": "0168000995",
+    "birth_date": "29.06.1920"
   },
   {
     "last_name": "Fabris",
@@ -17924,7 +17996,6 @@
     "pdf_x_end": 205.1,
     "soldier_id": "0168001018",
     "occupation": "radnik",
-    "rank": "omladinski rukovodilac",
     "party": "SKOJ 1943, KPJ 1943",
     "other_sources": [
       {
@@ -17951,7 +18022,8 @@
         "pdf_y_end": 620.5,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "28.08.1924"
   },
   {
     "last_name": "Ferenca",
@@ -18274,7 +18346,8 @@
     "pdf_x_end": 406.6,
     "soldier_id": "0168001037",
     "rank": "borac",
-    "unit_detail": "1. četa"
+    "unit_detail": "1. četa",
+    "birth_date": "30.09.1924"
   },
   {
     "last_name": "Fistanić",
@@ -18663,7 +18736,6 @@
     "pdf_x_end": 400.2,
     "soldier_id": "0168001060",
     "occupation": "zemljoradnik",
-    "rank": "vodni delegat",
     "party": "SKOJ 1943, KPJ 1945",
     "other_sources": [
       {
@@ -18840,7 +18912,8 @@
         "pdf_y_end": 421.0,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "23.09.1914"
   },
   {
     "last_name": "Franov",
@@ -19041,7 +19114,8 @@
     "pdf_y_end": 169.8,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 406.4,
-    "soldier_id": "0168001080"
+    "soldier_id": "0168001080",
+    "birth_date": "15.02.1925"
   },
   {
     "last_name": "Franulović",
@@ -19532,7 +19606,8 @@
     "pdf_y_end": 230.3,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 406.4,
-    "soldier_id": "0168001109"
+    "soldier_id": "0168001109",
+    "birth_date": "29.11.1913"
   },
   {
     "last_name": "Galinović",
@@ -23203,7 +23278,6 @@
     "soldier_id": "0168001327",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148000860",
@@ -23270,7 +23344,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 360.1,
     "soldier_id": "0168001330",
-    "rank": "borac",
     "party": "SKOJ 1942, KPJ",
     "other_sources": [
       {
@@ -24000,7 +24073,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 210.5,
     "soldier_id": "0168001373",
-    "rank": "borac",
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
@@ -24015,7 +24087,8 @@
         "pdf_y_end": 325.5,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "23.08.1921"
   },
   {
     "last_name": "Humar",
@@ -24514,7 +24587,8 @@
     "pdf_y_end": 420.4,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 405.4,
-    "soldier_id": "0168001402"
+    "soldier_id": "0168001402",
+    "birth_date": "01.04.1919"
   },
   {
     "last_name": "Ivanković",
@@ -24925,7 +24999,12 @@
         "source_page": 1071,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "03.03.1923"
   },
   {
     "last_name": "Ivelja",
@@ -24954,7 +25033,14 @@
         "source_page": 1071,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Cres",
+    "birth_date": "04.03.1922"
   },
   {
     "last_name": "Ivin",
@@ -26439,7 +26525,6 @@
     "pdf_x_end": 362.4,
     "soldier_id": "0168001516",
     "ethnicity": "Hrvat",
-    "rank": "borac",
     "death_type": "umro",
     "death_date": "1978",
     "party": "KPJ",
@@ -26606,7 +26691,8 @@
     "pdf_y_end": 567.6,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 405.2,
-    "soldier_id": "0168001525"
+    "soldier_id": "0168001525",
+    "birth_date": "09.09.1916"
   },
   {
     "last_name": "Jerkunica",
@@ -26626,7 +26712,6 @@
     "soldier_id": "0168001526",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148000972",
@@ -26834,7 +26919,6 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
     "party": "SKOJ 1939, KPJ"
   },
   {
@@ -28438,7 +28522,6 @@
     "soldier_id": "0168001632",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148001106",
@@ -28585,7 +28668,14 @@
         "source_page": 763,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ist,zadar",
+    "birth_date": "13.08.1913"
   },
   {
     "last_name": "Kalinić",
@@ -29148,6 +29238,10 @@
         "source_page": 72,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29445,7 +29539,6 @@
     "pdf_x_end": 374.7,
     "soldier_id": "0168001689",
     "ethnicity": "Hrvat",
-    "rank": "komandir čete",
     "party": "KPJ",
     "other_sources": [
       {
@@ -29473,7 +29566,8 @@
         "pdf_y_end": 698.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.07.1922"
   },
   {
     "last_name": "Kaurista",
@@ -30106,7 +30200,6 @@
     "pdf_x_end": 199.3,
     "soldier_id": "0168001727",
     "ethnicity": "Hrvat",
-    "rank": "borac",
     "occupation": "tvornički radnik",
     "party": "KPJ",
     "other_sources": [
@@ -30123,7 +30216,8 @@
         "pdf_x_left": 224.5,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.02.1908"
   },
   {
     "last_name": "Klarić",
@@ -30501,6 +30595,10 @@
         "source_page": 1083,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30890,11 +30988,14 @@
       }
     ],
     "occupation": "mornar",
-    "rank": "desetar",
     "death_type": "poginuo",
     "death_date": "16.10.1944",
     "death_place": "kod Česmine, poluotok Pelješac",
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Koludrović",
@@ -32609,7 +32710,6 @@
     "soldier_id": "0168001872",
     "ethnicity": "Hrvat",
     "occupation": "student",
-    "rank": "borac",
     "party": "KPJ 1943",
     "other_sources": [
       {
@@ -32625,7 +32725,8 @@
         "pdf_x_left": 222.3,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.07.1914"
   },
   {
     "last_name": "Kovačić",
@@ -32661,7 +32762,6 @@
     "pdf_x_end": 173.6,
     "soldier_id": "0168001874",
     "ethnicity": "Hrvat",
-    "rank": "politički komesar",
     "party": "KPJ",
     "other_sources": [
       {
@@ -32688,7 +32788,8 @@
         "pdf_y_end": 446.6,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "08.08.1919"
   },
   {
     "last_name": "Kozera",
@@ -35548,7 +35649,6 @@
     "pdf_x_end": 205.4,
     "soldier_id": "0168002047",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
@@ -35563,7 +35663,8 @@
         "pdf_y_end": 519.2,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.08.1921"
   },
   {
     "last_name": "Lavolpicela",
@@ -37001,7 +37102,14 @@
         "source_page": 2765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lošinj",
+    "birth_date": "19.09.1920"
   },
   {
     "last_name": "Longin",
@@ -38072,7 +38180,12 @@
         "pdf_y_end": 419.1,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "15.03.1914"
+      ]
+    }
   },
   {
     "last_name": "Lučić",
@@ -39068,7 +39181,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 196.9,
     "soldier_id": "0168002255",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148001609",
@@ -39083,7 +39195,8 @@
         "pdf_x_left": 224.8,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "25.04.1910"
   },
   {
     "last_name": "Maraspin",
@@ -39200,7 +39313,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 407.4,
     "soldier_id": "0168002262",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0053001676",
@@ -39214,7 +39326,8 @@
         "pdf_y_end": 512.8,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "31.07.1920"
   },
   {
     "last_name": "Mardešić",
@@ -39746,7 +39859,6 @@
     "fathers_name": "Andrija",
     "full_name": "Marinković Andrije Andrija",
     "additional_info": "Komiža, o. Vis",
-    "birth_year": "",
     "birth_place": "Komiža, Vis",
     "pdf_page": 29,
     "pdf_y": 261.2,
@@ -39777,7 +39889,19 @@
         "source_page": 518,
         "ref_book": "vis-zrtve-nob"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Partizanski odred",
+    "birth_year": "1924"
   },
   {
     "last_name": "Marinković",
@@ -39820,7 +39944,6 @@
     "fathers_name": "Vicko",
     "full_name": "Marinković Vicka Ante",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 29,
     "pdf_y": 311.1,
     "pdf_x": 32.9,
@@ -39828,6 +39951,7 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 147.3,
     "soldier_id": "0168002297",
+    "birth_year": "1911",
     "other_sources": [
       {
         "soldier_id": "9071000231",
@@ -39850,7 +39974,20 @@
         "source_page": 2485,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Komiža, Virovitica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_type": "umro",
+    "death_date": "1945",
+    "death_place": "Zagreb"
   },
   {
     "last_name": "Marinković",
@@ -41549,7 +41686,6 @@
     "soldier_id": "0168002399",
     "ethnicity": "Hrvat",
     "occupation": "mornar",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148001680",
@@ -41731,7 +41867,6 @@
     "soldier_id": "0168002409",
     "ethnicity": "Hrvat",
     "occupation": "mornar",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148001710",
@@ -42979,7 +43114,6 @@
     "fathers_name": "",
     "full_name": "Matošić Dušan",
     "additional_info": "Split",
-    "birth_year": "",
     "birth_place": "Split",
     "pdf_page": 31,
     "pdf_y": 230.2,
@@ -42997,7 +43131,19 @@
         "source_page": 2223,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Split",
+    "birth_year": "1919"
   },
   {
     "last_name": "Matošić",
@@ -44880,7 +45026,8 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 368.2,
     "soldier_id": "0168002594",
-    "occupation": "mornar"
+    "occupation": "mornar",
+    "birth_date": "17.03.1897"
   },
   {
     "last_name": "Milin",
@@ -46901,7 +47048,6 @@
     "soldier_id": "0168002715",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148001915",
@@ -46916,7 +47062,8 @@
         "pdf_x_left": 266.0,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "13.07.1910"
   },
   {
     "last_name": "Mrduljaš",
@@ -47538,7 +47685,6 @@
     "pdf_x_end": 204.8,
     "soldier_id": "0168002752",
     "ethnicity": "Hrvat",
-    "rank": "borac",
     "occupation": "mašinista",
     "party": "KPJ 1941",
     "other_sources": [
@@ -47555,7 +47701,8 @@
         "pdf_x_left": 257.1,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "29.05.1911"
   },
   {
     "last_name": "Načinović",
@@ -47889,7 +48036,6 @@
     "soldier_id": "0168002772",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "08.06.1943",
     "death_place": "u kanjonu Pive, kod Čokove Luke",
@@ -48846,7 +48992,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 176.8,
     "soldier_id": "0168002828",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148001988",
@@ -50267,7 +50412,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 206.2,
     "soldier_id": "0168002912",
-    "rank": "vodni delegat",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1943, KPJ 1944",
     "other_sources": [
@@ -50283,7 +50427,8 @@
         "pdf_y_end": 649.0,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "25.11.1915"
   },
   {
     "last_name": "Parunov",
@@ -50518,7 +50663,8 @@
     "pdf_y_end": 472.7,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 368.2,
-    "soldier_id": "0168002926"
+    "soldier_id": "0168002926",
+    "birth_date": "11.02.1925"
   },
   {
     "last_name": "Pavićin",
@@ -51306,7 +51452,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 399.6,
     "soldier_id": "0168002973",
-    "rank": "borac",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1943, KPJ 1945",
     "other_sources": [
@@ -51322,7 +51467,8 @@
         "pdf_y_end": 554.9,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.07.1921"
   },
   {
     "last_name": "Pecotić",
@@ -51820,7 +51966,8 @@
     "pdf_y_end": 536.1,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 368.0,
-    "soldier_id": "0168003003"
+    "soldier_id": "0168003003",
+    "birth_date": "24.04.1925"
   },
   {
     "last_name": "Perdec",
@@ -52284,7 +52431,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 366.3,
     "soldier_id": "0168003031",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148002177",
@@ -52299,7 +52445,8 @@
         "pdf_x_left": 223.7,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.09.1920"
   },
   {
     "last_name": "Perko",
@@ -52368,7 +52515,6 @@
     "soldier_id": "0168003035",
     "ethnicity": "Hrvat",
     "occupation": "mesar",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148002199",
@@ -53539,7 +53685,8 @@
     "pdf_y_end": 567.5,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 367.0,
-    "soldier_id": "0168003104"
+    "soldier_id": "0168003104",
+    "birth_date": "30.03.1922"
   },
   {
     "last_name": "Picinić",
@@ -53558,7 +53705,8 @@
     "pdf_y_end": 60.2,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 407.8,
-    "soldier_id": "0168003105"
+    "soldier_id": "0168003105",
+    "birth_date": "26.03.1920"
   },
   {
     "last_name": "Picinić",
@@ -53577,7 +53725,8 @@
     "pdf_y_end": 90.4,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 407.8,
-    "soldier_id": "0168003106"
+    "soldier_id": "0168003106",
+    "birth_date": "26.03.1922"
   },
   {
     "last_name": "Pijetlović",
@@ -54215,7 +54364,6 @@
     "soldier_id": "0168003144",
     "ethnicity": "Hrvat",
     "occupation": "ribar",
-    "rank": "borac",
     "party": "KPJ 1943",
     "other_sources": [
       {
@@ -54243,7 +54391,8 @@
         "pdf_x_left": 223.7,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "30.12.1920"
   },
   {
     "last_name": "Podbojf",
@@ -54279,7 +54428,8 @@
     "pdf_y_end": 170.8,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 408.8,
-    "soldier_id": "0168003146"
+    "soldier_id": "0168003146",
+    "birth_date": "24.09.1918"
   },
   {
     "last_name": "Poduje",
@@ -55372,7 +55522,6 @@
     "birth_year": "1912",
     "death_type": "umro",
     "death_date": "06.03.1944",
-    "death_place": "",
     "birth_place": "Split",
     "pdf_page": 60,
     "pdf_y": 171.2,
@@ -55390,7 +55539,14 @@
         "source_page": 2230,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Izmedju visa",
+    "birth_date": "02.10.1912"
   },
   {
     "last_name": "Pržen",
@@ -55586,7 +55742,8 @@
         "pdf_x_left": 223.3,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.04.1917"
   },
   {
     "last_name": "Purin",
@@ -55943,7 +56100,8 @@
     "soldier_id": "0168003244",
     "death_date": "08.03.1945",
     "death_place": "Split",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_date": "20.08.1908"
   },
   {
     "last_name": "Radić",
@@ -56116,7 +56274,6 @@
     "soldier_id": "0168003254",
     "ethnicity": "Hrvat",
     "occupation": "ribar",
-    "rank": "borac",
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
@@ -57082,7 +57239,14 @@
         "source_page": 1797,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Pula",
+    "birth_date": "28.03.1924"
   },
   {
     "last_name": "Radović",
@@ -57297,7 +57461,8 @@
     "pdf_y_end": 340.7,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 407.6,
-    "soldier_id": "0168003323"
+    "soldier_id": "0168003323",
+    "birth_date": "17.01.1910"
   },
   {
     "last_name": "Radovćić-Smolić",
@@ -58811,7 +58976,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 326.7,
     "soldier_id": "0168003412",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0008002468",
@@ -59740,7 +59904,6 @@
     "soldier_id": "0168003467",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "zamjenik komesara čete",
     "party": "KPJ",
     "other_sources": [
       {
@@ -60236,7 +60399,8 @@
     "pdf_x_end": 408.5,
     "soldier_id": "0168003494",
     "rank": "borac",
-    "unit_detail": "1. četa"
+    "unit_detail": "1. četa",
+    "birth_date": "24.02.1924"
   },
   {
     "last_name": "Rupnik",
@@ -60770,7 +60934,8 @@
         "pdf_y_end": 337.1
       }
     ],
-    "unit_detail": "Štab IV POS-a"
+    "unit_detail": "Štab IV POS-a",
+    "birth_date": "26.01.1909"
   },
   {
     "last_name": "Sale",
@@ -60779,7 +60944,6 @@
     "fathers_name": "Marin",
     "full_name": "Sale Marina Andrija",
     "additional_info": "Žrnovo, o. Korčula",
-    "birth_year": "",
     "birth_place": "Žrnovo, Korčula",
     "pdf_page": 46,
     "pdf_y": 114.1,
@@ -60788,6 +60952,7 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 218.7,
     "soldier_id": "0168003526",
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9021020177",
@@ -60797,7 +60962,18 @@
         "source_page": 949,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Kalinovik"
   },
   {
     "last_name": "Samac",
@@ -61859,7 +62035,8 @@
     "pdf_y_end": 464.8,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 407.6,
-    "soldier_id": "0168003589"
+    "soldier_id": "0168003589",
+    "birth_date": "28.09.1919"
   },
   {
     "last_name": "Silić",
@@ -62495,7 +62672,6 @@
     "pdf_x_end": 179.6,
     "soldier_id": "0168003627",
     "occupation": "kovač",
-    "rank": "intendant",
     "party": "KPJ 1943",
     "other_sources": [
       {
@@ -62510,7 +62686,8 @@
         "pdf_y_end": 448.5,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.08.1913"
   },
   {
     "last_name": "Sizgoreo",
@@ -63609,7 +63786,8 @@
     "pdf_y_end": 528.2,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 407.6,
-    "soldier_id": "0168003693"
+    "soldier_id": "0168003693",
+    "birth_date": "15.09.1920"
   },
   {
     "last_name": "Srebrnik",
@@ -64168,7 +64346,6 @@
     "soldier_id": "0168003727",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
     "party": "KPJ 1940",
     "other_sources": [
       {
@@ -64892,7 +65069,8 @@
     "pdf_y_end": 570.0,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 408.8,
-    "soldier_id": "0168003768"
+    "soldier_id": "0168003768",
+    "birth_date": "15.08.1920"
   },
   {
     "last_name": "Sudić",
@@ -64946,7 +65124,6 @@
     "soldier_id": "0168003771",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "borac",
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Sutjeska",
@@ -64977,7 +65154,18 @@
         "pdf_x_left": 226.2,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ],
+      "death": [
+        {
+          "date": "1944",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sukno",
@@ -65469,7 +65657,8 @@
     "pdf_y_end": 69.8,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 371.8,
-    "soldier_id": "0168003800"
+    "soldier_id": "0168003800",
+    "birth_date": "01.12.1914"
   },
   {
     "last_name": "Suzan",
@@ -65895,7 +66084,12 @@
         "source_page": 1799,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "04.03.1923"
   },
   {
     "last_name": "Tanfara",
@@ -66481,7 +66675,6 @@
     "occupation": "radnik",
     "death_type": "umro",
     "death_date": "1946",
-    "rank": "komandant bataljona",
     "party": "KPJ",
     "other_sources": [
       {
@@ -66702,7 +66895,6 @@
     "soldier_id": "0168003872",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
-    "rank": "zamenik komandira",
     "party": "KPJ 1940",
     "other_sources": [
       {
@@ -66907,7 +67099,6 @@
     "soldier_id": "0168003883",
     "ethnicity": "Hrvat",
     "occupation": "mornar",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0148002807",
@@ -68781,7 +68972,14 @@
         "source_page": 32,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "J5ri kota",
+    "birth_date": "08.10.1920"
   },
   {
     "last_name": "Ujević",
@@ -70451,7 +70649,6 @@
     "fathers_name": "Ante",
     "full_name": "Vidan Ante Marin",
     "additional_info": "Stomorska, o. Šolta",
-    "birth_year": "",
     "birth_place": "Stomorska, Šolta",
     "pdf_page": 51,
     "pdf_y": 211.9,
@@ -70469,7 +70666,19 @@
         "source_page": 2241,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Šibenik",
+    "birth_year": "1914"
   },
   {
     "last_name": "Vidan",
@@ -71998,7 +72207,12 @@
         "source_page": 2784,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "24.08.1911"
   },
   {
     "last_name": "Vlasanović",
@@ -72394,7 +72608,6 @@
     "fathers_name": "Ante",
     "full_name": "Vodanović Ante Nikola",
     "additional_info": "zvani Donji; Vrbanj, o. Hvar",
-    "birth_year": "",
     "birth_place": "Vrbanj, Hvar",
     "pdf_page": 52,
     "pdf_y": 88.4,
@@ -72412,7 +72625,19 @@
         "source_page": 765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Široki brijeg",
+    "birth_year": "1924"
   },
   {
     "last_name": "Vodanović",
@@ -72421,7 +72646,6 @@
     "fathers_name": "Ante",
     "full_name": "Vodanović Ante Nikola",
     "additional_info": "zvani Gornji; Vrbanj, o. Hvar",
-    "birth_year": "",
     "birth_place": "Vrbanj, Hvar",
     "pdf_page": 52,
     "pdf_y": 108.5,
@@ -72439,7 +72663,19 @@
         "source_page": 765,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Široki brijeg",
+    "birth_year": "1924"
   },
   {
     "last_name": "Vodanović",
@@ -73506,7 +73742,6 @@
     "pdf_x_end": 366.8,
     "soldier_id": "0168004268",
     "occupation": "trg",
-    "rank": "borac",
     "party": "SKOJ 1943, KPJ",
     "other_sources": [
       {
@@ -73521,7 +73756,8 @@
         "pdf_y_end": 507.4,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "18.08.1920"
   },
   {
     "last_name": "Vukan",
@@ -74857,7 +75093,14 @@
         "source_page": 761,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Dugi otok",
+    "birth_date": "08.02.1910"
   },
   {
     "last_name": "Vušković",
@@ -76459,7 +76702,6 @@
     "pdf_x_end": 406.4,
     "soldier_id": "0168004443",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0053003160",
@@ -77041,7 +77283,6 @@
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 381.6,
     "soldier_id": "0168004477",
-    "rank": "politički komesar, obavještajni oficir",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1941, KPJ 1943",
     "other_sources": [
@@ -77069,7 +77310,8 @@
         "pdf_y_end": 662.6,
         "unit_file": "11-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "09.09.1924"
   },
   {
     "last_name": "Čović",
@@ -77945,7 +78187,8 @@
     "pdf_y_end": 109.9,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 371.6,
-    "soldier_id": "0168004530"
+    "soldier_id": "0168004530",
+    "birth_date": "01.07.1923"
   },
   {
     "last_name": "Šeput",
@@ -78340,7 +78583,12 @@
         "source_page": 1081,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "12.07.1917"
   },
   {
     "last_name": "Šimić",
@@ -80452,7 +80700,8 @@
     "pdf_y_end": 441.6,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 369.9,
-    "soldier_id": "0168004680"
+    "soldier_id": "0168004680",
+    "birth_date": "17.06.1917"
   },
   {
     "last_name": "Žuljević",
@@ -80677,7 +80926,6 @@
     "fathers_name": "Marko",
     "full_name": "Žuvela Marka Marko",
     "additional_info": "Vela Luka, o. Korčula",
-    "birth_year": "",
     "birth_place": "Vela Luka, Korčula",
     "pdf_page": 55,
     "pdf_y": 347.8,
@@ -80695,7 +80943,19 @@
         "source_page": 948,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Biokovi",
+    "birth_year": "1925"
   },
   {
     "last_name": "Žuvela",
@@ -80720,7 +80980,6 @@
     "fathers_name": "Petar",
     "full_name": "Žuvela Petra Petar",
     "additional_info": "Blato, o. Korčula",
-    "birth_year": "",
     "birth_place": "Blato, Korčula",
     "pdf_page": 55,
     "pdf_y": 377.8,
@@ -80738,7 +80997,19 @@
         "source_page": 939,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Blato",
+    "birth_year": "1922"
   },
   {
     "last_name": "Žuvela",

@@ -191,7 +191,15 @@
         "pdf_y_end": 362.7,
         "unit_file": "6-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.1944",
+          "place": "na Breševu, Sanski Most"
+        }
+      ]
+    }
   },
   {
     "last_name": "Agbaba",
@@ -446,7 +454,13 @@
         "source_page": 1289,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Srbija"
   },
   {
     "last_name": "Aleksić",
@@ -997,6 +1011,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1164",
         "source_page": 1164,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013001172",
+        "name": "Antonijević Radomir",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Radomir Antonijević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 352.0,
+        "pdf_y": 574.9,
+        "pdf_x_end": 449.5,
+        "pdf_y_end": 584.6,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -1644,6 +1670,10 @@
         "source_page": 1252,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2017,7 +2047,15 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "death_place": "Prozor"
+    "death_place": "Prozor",
+    "variants": {
+      "death": [
+        {
+          "date": "22.08.1943",
+          "place": "Prozor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bajić",
@@ -2047,7 +2085,13 @@
         "source_page": 1289,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Bajić",
@@ -2591,6 +2635,18 @@
         "pdf_x_end": 346.8,
         "pdf_y_end": 812.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001176",
+        "name": "Balać Savo",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Savo Balać.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 321.0,
+        "pdf_y": 585.5,
+        "pdf_x_end": 373.5,
+        "pdf_y_end": 595.2,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -2628,6 +2684,18 @@
         "pdf_x_end": 428.1,
         "pdf_y_end": 812.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001175",
+        "name": "Banaji Lajoš",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Lajoš Banaji.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 253.1,
+        "pdf_y": 585.5,
+        "pdf_x_end": 314.3,
+        "pdf_y_end": 595.2,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -2859,6 +2927,18 @@
         "pdf_x_end": 378.6,
         "pdf_y_end": 822.6,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001181",
+        "name": "Barić Ištvan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Ištvan Barić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 297.1,
+        "pdf_y": 596.0,
+        "pdf_x_end": 357.0,
+        "pdf_y_end": 605.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -3038,6 +3118,10 @@
         "source_page": 1772,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3208,7 +3292,15 @@
       }
     ],
     "ethnicity": "Hrvat",
-    "death_place": "Otok (Vinkovci)"
+    "death_place": "Otok (Vinkovci)",
+    "variants": {
+      "death": [
+        {
+          "date": "23.12.1944",
+          "place": "Otok (Vinkovci)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bauk",
@@ -3358,7 +3450,13 @@
         "source_page": 1284,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Podgorica"
   },
   {
     "last_name": "Bašić",
@@ -3544,6 +3642,18 @@
         "pdf_x_end": 556.4,
         "pdf_y_end": 831.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001174",
+        "name": "Belovaj Ferenc",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Ferenc Belovaj.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 176.3,
+        "pdf_y": 585.5,
+        "pdf_x_end": 247.0,
+        "pdf_y_end": 595.2,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -3691,6 +3801,18 @@
         "pdf_x_end": 275.9,
         "pdf_y_end": 841.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001179",
+        "name": "Beraš Janoš",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Janoš Beraš.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 150.9,
+        "pdf_y": 596.0,
+        "pdf_x_end": 209.5,
+        "pdf_y_end": 605.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -4025,6 +4147,18 @@
         "pdf_x_end": 353.9,
         "pdf_y_end": 841.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001177",
+        "name": "Bičkej Lazar",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Lazar Bičkej.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 379.4,
+        "pdf_y": 585.5,
+        "pdf_x_end": 439.8,
+        "pdf_y_end": 595.2,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -4154,6 +4288,10 @@
         "source_page": 893,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4230,7 +4368,12 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "death_place": "kod Posavskih Podgajaca (Županja)"
+    "death_place": "kod Posavskih Podgajaca (Županja)",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Blagojević",
@@ -4300,6 +4443,10 @@
         "source_page": 122,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Slavonija",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -4350,7 +4497,8 @@
         "pdf_y_end": 850.7,
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_date": "01.10.1923"
   },
   {
     "last_name": "Bodiroža",
@@ -4637,7 +4785,6 @@
     "fathers_name": "Dragoljub",
     "full_name": "Bojović Dragoljuba Branislav",
     "additional_info": "borac 1. bataljona, rođen u G. Trepči, Čačak, poginuo kod sela Komletinaca, Županja.",
-    "birth_year": "",
     "pdf_page": 11,
     "pdf_y": 110.9,
     "pdf_x": 102.8,
@@ -4659,7 +4806,15 @@
         "source_page": 830,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "birth_year": "1921"
   },
   {
     "last_name": "Bokan",
@@ -4930,7 +5085,15 @@
         "source_page": 1277,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Busovača"
   },
   {
     "last_name": "Bosnić",
@@ -5262,7 +5425,16 @@
     "birth_place": "Rečice, Požega",
     "ethnicity": "Srbin",
     "occupation": "trgovački radnik",
-    "death_place": "kod Posavskih Podgajaca (Županja)"
+    "death_place": "kod Posavskih Podgajaca (Županja)",
+    "birth_date": "28.10.1919",
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1945",
+          "place": "kod Posavskih Podgajaca (Županja)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Branković",
@@ -5317,6 +5489,10 @@
         "source_page": 1121,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5435,6 +5611,10 @@
         "source_page": 822,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Brezovo Polje",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -5514,7 +5694,13 @@
         "source_page": 1309,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sandžak"
   },
   {
     "last_name": "Bročeta",
@@ -5730,7 +5916,36 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 350.6,
-    "death_place": "Brezovo Polje, Brčko"
+    "death_place": "Brezovo Polje, Brčko",
+    "other_sources": [
+      {
+        "soldier_id": "9013001178",
+        "name": "Budaji Janoš",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Janoš Budaji.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 446.0,
+        "pdf_y": 585.5,
+        "pdf_x_end": 469.6,
+        "pdf_y_end": 605.7,
+        "pdf_x_left": 111.2,
+        "pdf_rects": [
+          [
+            446.0,
+            585.5,
+            469.6,
+            595.2
+          ],
+          [
+            111.2,
+            596.0,
+            142.8,
+            605.7
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Budak",
@@ -5964,6 +6179,10 @@
         "source_page": 672,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7254,6 +7473,10 @@
         "source_page": 1323,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "S.most",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -7758,6 +7981,10 @@
         "source_page": 1455,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Zelengora",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -7837,7 +8064,12 @@
         "pdf_y_end": 395.3,
         "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Drag",
@@ -8121,6 +8353,10 @@
         "source_page": 1161,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8431,7 +8667,8 @@
     "death_date": "25.12.1944",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 345.0
+    "pdf_x_end": 345.0,
+    "birth_date": "19.12.1924"
   },
   {
     "last_name": "Erceg",
@@ -8645,6 +8882,10 @@
         "source_page": 159,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9080,7 +9321,6 @@
     "death_date": "04.1943",
     "death_place": "na Korićni, Glamoč",
     "pdf_x_end": 344.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9022011658",
@@ -10033,6 +10273,18 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001194",
+        "name": "Gligorijević Svetomir",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Svetomir Gligorijević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 343.9,
+        "pdf_y": 627.7,
+        "pdf_x_end": 443.2,
+        "pdf_y_end": 637.4,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -10241,6 +10493,10 @@
         "source_page": 1268,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10346,7 +10602,12 @@
         "pdf_x_left": 29.2,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Grahović",
@@ -10547,6 +10808,10 @@
         "source_page": 1273,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10730,6 +10995,33 @@
         "pdf_x_end": 554.4,
         "pdf_y_end": 646.2,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001191",
+        "name": "Gujaš Mihalj",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Mihalj Gujaš.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 456.6,
+        "pdf_y": 617.2,
+        "pdf_x_end": 470.9,
+        "pdf_y_end": 637.4,
+        "pdf_x_left": 111.6,
+        "pdf_rects": [
+          [
+            456.6,
+            617.2,
+            470.9,
+            626.9
+          ],
+          [
+            111.6,
+            627.7,
+            162.2,
+            637.4
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -11002,7 +11294,12 @@
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Habijanac",
@@ -11259,6 +11556,10 @@
         "source_page": 324,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Šid",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -11330,6 +11631,18 @@
         "pdf_x_end": 551.2,
         "pdf_y_end": 675.0,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001285",
+        "name": "Horvat Pavle",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Pavle Horvat.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 114.2,
+        "pdf_y": 321.0,
+        "pdf_x_end": 176.7,
+        "pdf_y_end": 330.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -11359,8 +11672,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=685",
         "source_page": 685,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014004910",
+        "name": "Ignjatović Đorđe",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 178. Ignjatović Đorđe.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 36,
+        "pdf_x": 255.2,
+        "pdf_y": 675.3,
+        "pdf_x_end": 334.5,
+        "pdf_y_end": 684.8,
+        "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Srem okol. šida"
   },
   {
     "last_name": "Ilić",
@@ -11428,8 +11763,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1159",
         "source_page": 1159,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014004912",
+        "name": "Ilić Desimir",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 180. Ilić Desimir.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 36,
+        "pdf_x": 471.3,
+        "pdf_y": 675.3,
+        "pdf_x_end": 537.3,
+        "pdf_y_end": 684.8,
+        "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Berkasovo srem"
   },
   {
     "last_name": "Ilić",
@@ -11472,7 +11827,13 @@
         "source_page": 431,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Ručići, Gornji Milanovac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Ilić",
@@ -11517,7 +11878,12 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "death_place": "kod Velikih Zdenaca (Grubišno Polje)"
+    "death_place": "kod Velikih Zdenaca (Grubišno Polje)",
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Ilić",
@@ -11590,7 +11956,15 @@
         "pdf_y_end": 255.6,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.12.1944",
+          "place": "Fruška gora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ilić",
@@ -11682,7 +12056,13 @@
         "pdf_y_end": 694.4,
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_place": "Niš",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Ilić",
@@ -12123,6 +12503,10 @@
         "source_page": 816,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12709,6 +13093,18 @@
         "pdf_x_end": 392.7,
         "pdf_y_end": 704.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001205",
+        "name": "Išić Miodrag",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Miodrag Išić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 313.8,
+        "pdf_y": 659.4,
+        "pdf_x_end": 374.3,
+        "pdf_y_end": 669.1,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -13686,6 +14082,33 @@
         "pdf_x_end": 476.7,
         "pdf_y_end": 742.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001211",
+        "name": "Jeftić Dragoslav",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Dragoslav Jeftić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 405.4,
+        "pdf_y": 670.0,
+        "pdf_x_end": 470.6,
+        "pdf_y_end": 690.2,
+        "pdf_x_left": 111.4,
+        "pdf_rects": [
+          [
+            405.4,
+            670.0,
+            470.6,
+            679.7
+          ],
+          [
+            111.4,
+            680.5,
+            124.3,
+            690.2
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -14219,7 +14642,15 @@
         "pdf_y_end": 452.1,
         "unit_file": "22-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.12.1944",
+          "place": "Sremski front"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jocić",
@@ -14416,6 +14847,10 @@
         "source_page": 778,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Bjelovar",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -14747,6 +15182,10 @@
         "source_page": 1156,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Selo nemci",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -15162,8 +15601,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=410",
         "source_page": 410,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014004962",
+        "name": "Jovanović Velimir",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 230. Jovanović Velimir.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 36,
+        "pdf_x": 252.0,
+        "pdf_y": 819.6,
+        "pdf_x_end": 337.4,
+        "pdf_y_end": 829.1,
+        "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_place": "Ovsinjinac, Gadžin Han",
+    "borrowed": [
+      "birth_place",
+      "death_date"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Jovanović",
@@ -15326,6 +15783,10 @@
         "pdf_y_end": 679.7,
         "ref_book": "u-rovovima-srema-poginuli"
       }
+    ],
+    "death_place": "Brozovo Polje",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -15473,6 +15934,10 @@
         "source_page": 1776,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Beograd",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -16066,6 +16531,10 @@
         "source_page": 1163,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Srem.front",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -16462,6 +16931,10 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Brčko",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -17511,6 +17984,10 @@
         "source_page": 1305,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17854,6 +18331,18 @@
         "pdf_x_end": 542.1,
         "pdf_y_end": 377.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001212",
+        "name": "Končar Jovo",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Jovo Končar.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 131.2,
+        "pdf_y": 680.5,
+        "pdf_x_end": 191.5,
+        "pdf_y_end": 690.2,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -17961,6 +18450,10 @@
         "source_page": 1469,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Sremski front",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -18181,6 +18674,10 @@
         "source_page": 24,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18409,6 +18906,10 @@
         "source_page": 1705,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18951,6 +19452,10 @@
         "source_page": 1296,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19058,7 +19563,17 @@
         "source_page": 1290,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Šator"
   },
   {
     "soldier_id": "0011001665",
@@ -20411,7 +20926,17 @@
         "source_page": 139,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Vranjevci"
   },
   {
     "last_name": "Latinović",
@@ -21589,6 +22114,33 @@
         "pdf_x_end": 499.5,
         "pdf_y_end": 493.6,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001224",
+        "name": "Maksimović Dragan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Dragan Maksimović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 440.6,
+        "pdf_y": 162.6,
+        "pdf_x_end": 471.3,
+        "pdf_y_end": 182.9,
+        "pdf_x_left": 112.6,
+        "pdf_rects": [
+          [
+            440.6,
+            162.6,
+            471.3,
+            172.3
+          ],
+          [
+            112.6,
+            173.2,
+            167.6,
+            182.9
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -22027,6 +22579,18 @@
         "pdf_x_end": 307.2,
         "pdf_y_end": 513.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001225",
+        "name": "Mandić Slavoljub",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Slavoljub Mandić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 174.5,
+        "pdf_y": 173.2,
+        "pdf_x_end": 257.7,
+        "pdf_y_end": 182.9,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -22262,6 +22826,10 @@
         "source_page": 1280,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22412,7 +22980,12 @@
         "pdf_y_end": 275.4,
         "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Marić",
@@ -22578,6 +23151,10 @@
         "source_page": 1309,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "U bliz.vinkovac",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -23020,7 +23597,13 @@
         "source_page": 1323,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kod otoka"
   },
   {
     "last_name": "Marković",
@@ -23116,6 +23699,10 @@
         "source_page": 1309,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "S.otok vinkovci",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -23360,8 +23947,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1162",
         "source_page": 1162,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014005054",
+        "name": "Marković Živko",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 322. Marković Živko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 37,
+        "pdf_x": 223.7,
+        "pdf_y": 561.2,
+        "pdf_x_end": 300.9,
+        "pdf_y_end": 570.7,
+        "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
+    ],
+    "birth_date": "08.02.1925"
   },
   {
     "last_name": "Marković",
@@ -23447,7 +24051,12 @@
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
-    "death_place": "kod Posavskih Podgajaca (Županja)"
+    "death_place": "kod Posavskih Podgajaca (Županja)",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Martinović",
@@ -23638,7 +24247,12 @@
       }
     ],
     "ethnicity": "Srbin",
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Marčeta",
@@ -23695,7 +24309,15 @@
         "pdf_y_end": 644.8,
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "05.1945",
+          "place": "Zagreb"
+        }
+      ]
+    }
   },
   {
     "last_name": "Marčeta",
@@ -23890,7 +24512,18 @@
         "pdf_x_left": 10.2,
         "unit_file": "21-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "03.01.1945",
+          "place": "Komletinci"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0011001655",
@@ -24235,6 +24868,10 @@
         "source_page": 1290,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24708,6 +25345,10 @@
         "source_page": 338,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "death_place": "Kreshelovac",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -24752,6 +25393,10 @@
         "pdf_y_end": 735.9,
         "ref_book": "cazinska-krajina-pali-borci"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24863,6 +25508,10 @@
         "source_page": 614,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Opatovci,srem",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -25240,7 +25889,6 @@
     "fathers_name": "N",
     "full_name": "Milinković N Milomir",
     "additional_info": "borac 1. čete 2. bataljona, rođen u Dučini, Sopot, umro 6. I 1945. u Beogradu.",
-    "birth_year": "",
     "pdf_page": 56,
     "pdf_y": 334.3,
     "pdf_x": 63.6,
@@ -25290,7 +25938,13 @@
         "source_page": 1156,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Milivojević",
@@ -25444,6 +26098,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=5",
         "source_page": 5,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013001219",
+        "name": "Miljković Dušan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Dušan Miljković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 310.3,
+        "pdf_y": 691.1,
+        "pdf_x_end": 388.9,
+        "pdf_y_end": 700.8,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -25476,6 +26142,10 @@
         "source_page": 1272,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25786,6 +26456,18 @@
         "pdf_x_end": 504.4,
         "pdf_y_end": 657.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001220",
+        "name": "Milosavljević Stevan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Stevan Milosavljević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 397.5,
+        "pdf_y": 691.1,
+        "pdf_x_end": 470.3,
+        "pdf_y_end": 700.8,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -25898,6 +26580,18 @@
         "pdf_x_end": 558.8,
         "pdf_y_end": 686.6,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001223",
+        "name": "Milovanović Aleksandar",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Aleksandar Milovanović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 318.5,
+        "pdf_y": 162.6,
+        "pdf_x_end": 431.9,
+        "pdf_y_end": 172.3,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -26441,6 +27135,10 @@
         "source_page": 1252,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Podgojci-šuma",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -27072,6 +27770,10 @@
         "pdf_y_end": 182.9,
         "ref_book": "u-rovovima-srema-poginuli"
       }
+    ],
+    "death_place": "Brzo Polje brčk",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -27335,7 +28037,13 @@
         "source_page": 727,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Drina"
   },
   {
     "last_name": "Naumović",
@@ -27994,6 +28702,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1050",
         "source_page": 1050,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013001234",
+        "name": "Nikolić Bogdan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Bogdan Nikolić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 231.4,
+        "pdf_y": 194.3,
+        "pdf_x_end": 304.9,
+        "pdf_y_end": 204.0,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -28648,6 +29368,10 @@
         "source_page": 1444,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Vukovar",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -29240,7 +29964,15 @@
         "pdf_y_end": 365.6,
         "unit_file": "7-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.1944",
+          "place": "na putu za Beograd"
+        }
+      ]
+    }
   },
   {
     "last_name": "Osmanović",
@@ -29324,7 +30056,18 @@
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1925"
+      ],
+      "death": [
+        {
+          "date": "08.01.1945",
+          "place": "kod Beletovaca, Srem"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ostojić",
@@ -29674,6 +30417,10 @@
         "pdf_y_end": 256.8,
         "ref_book": "u-rovovima-srema-poginuli"
       }
+    ],
+    "death_place": "Brezovo Polje",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -29761,7 +30508,15 @@
         "source_page": 294,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Sotin"
   },
   {
     "last_name": "Pajović",
@@ -29941,6 +30696,10 @@
         "source_page": 1252,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Zagreb",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -30125,6 +30884,10 @@
         "source_page": 1297,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30199,6 +30962,10 @@
         "source_page": 1273,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30539,6 +31306,10 @@
         "pdf_y_end": 246.2,
         "ref_book": "u-rovovima-srema-poginuli"
       }
+    ],
+    "death_place": "Brezovo Polje",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -30690,6 +31461,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=34",
         "source_page": 34,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013001245",
+        "name": "Pavlović Miloš",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Miloš Pavlović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 401.9,
+        "pdf_y": 215.4,
+        "pdf_x_end": 472.2,
+        "pdf_y_end": 225.1,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -30743,6 +31526,18 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001249",
+        "name": "Pavlović Petar",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Petar Pavlović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 372.7,
+        "pdf_y": 226.0,
+        "pdf_x_end": 440.7,
+        "pdf_y_end": 235.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -30890,7 +31685,15 @@
         "pdf_y_end": 259.9,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.04.1945",
+          "place": "Ivan Zelina, Zagreb"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -30958,6 +31761,33 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=496",
         "source_page": 496,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013001254",
+        "name": "Pavlović Života",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Života Pavlović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 445.2,
+        "pdf_y": 236.5,
+        "pdf_x_end": 471.9,
+        "pdf_y_end": 256.8,
+        "pdf_x_left": 113.8,
+        "pdf_rects": [
+          [
+            445.2,
+            236.5,
+            471.9,
+            246.2
+          ],
+          [
+            113.8,
+            247.1,
+            152.4,
+            256.8
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -31368,7 +32198,6 @@
     "fathers_name": "",
     "full_name": "Petronijević Dragoje",
     "additional_info": "borac mitraljeske čete 1. bataljona, ranjen 7. IV 1945. kod Brčkog, umro u Bijeljini.",
-    "birth_year": "",
     "pdf_page": 68,
     "pdf_y": 151.0,
     "pdf_x": 62.1,
@@ -31388,8 +32217,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=34",
         "source_page": 34,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014005173",
+        "name": "Petronijević Dragoje",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 441. Petronijević Dragoje.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 38,
+        "pdf_x": 247.7,
+        "pdf_y": 389.1,
+        "pdf_x_end": 345.4,
+        "pdf_y_end": 398.6,
+        "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_place": "Partizani, Arandjelovac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_date": "1945",
+    "birth_year": "1920"
   },
   {
     "last_name": "Petrov",
@@ -32276,6 +33127,10 @@
         "source_page": 1211,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Slavonija",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -32622,6 +33477,18 @@
         "pdf_x_end": 491.7,
         "pdf_y_end": 389.0,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001244",
+        "name": "Pešut Stojan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Stojan Pešut, vodnik.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 293.1,
+        "pdf_y": 215.4,
+        "pdf_x_end": 394.2,
+        "pdf_y_end": 225.1,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -33051,7 +33918,21 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 379.9,
-    "death_place": "Brezovo Polje, Brčko"
+    "death_place": "Brezovo Polje, Brčko",
+    "other_sources": [
+      {
+        "soldier_id": "9013001241",
+        "name": "Popadatović Krsta",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Krsta Popadatović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 386.5,
+        "pdf_y": 204.8,
+        "pdf_x_end": 472.6,
+        "pdf_y_end": 214.5,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Popović",
@@ -33747,6 +34628,33 @@
         "pdf_x_end": 582.6,
         "pdf_y_end": 485.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001250",
+        "name": "Prokić Jovan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Jovan Prokić, delegat voda.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 447.5,
+        "pdf_y": 226.0,
+        "pdf_x_end": 471.8,
+        "pdf_y_end": 246.2,
+        "pdf_x_left": 113.8,
+        "pdf_rects": [
+          [
+            447.5,
+            226.0,
+            471.8,
+            235.7
+          ],
+          [
+            113.8,
+            236.5,
+            212.5,
+            246.2
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -33993,6 +34901,18 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001248",
+        "name": "Puljarić Mirko",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Mirko Puljarić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 295.4,
+        "pdf_y": 226.0,
+        "pdf_x_end": 365.3,
+        "pdf_y_end": 235.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -34024,8 +34944,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=836",
         "source_page": 836,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014005210",
+        "name": "Pupavica Živorad",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 478. Pupavica Živorad.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 38,
+        "pdf_x": 285.4,
+        "pdf_y": 495.4,
+        "pdf_x_end": 369.1,
+        "pdf_y_end": 504.9,
+        "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Na sremskom fro"
   },
   {
     "last_name": "Purić",
@@ -34103,6 +35043,18 @@
         "pdf_x_end": 473.3,
         "pdf_y_end": 504.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001239",
+        "name": "Putniković Ivan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Ivan Putniković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 232.6,
+        "pdf_y": 204.8,
+        "pdf_x_end": 305.5,
+        "pdf_y_end": 214.5,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -34137,6 +35089,10 @@
         "source_page": 444,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Hercegovac",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -34932,6 +35888,33 @@
         "pdf_x_end": 331.3,
         "pdf_y_end": 533.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001259",
+        "name": "Radišević Nikola",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Nikola Radišević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 459.9,
+        "pdf_y": 247.1,
+        "pdf_x_end": 472.8,
+        "pdf_y_end": 267.3,
+        "pdf_x_left": 113.5,
+        "pdf_rects": [
+          [
+            459.9,
+            247.1,
+            472.8,
+            256.8
+          ],
+          [
+            113.5,
+            257.6,
+            183.4,
+            267.3
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -35183,6 +36166,10 @@
         "source_page": 652,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "death_place": "Kupres",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -35222,6 +36209,10 @@
         "source_page": 651,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "death_place": "Bos.grahovo",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -36217,6 +37208,10 @@
         "source_page": 1293,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Bosut-srem",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -36977,7 +37972,12 @@
         "pdf_x_end": 366.5,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Rađenović",
@@ -37026,7 +38026,12 @@
         "pdf_x_left": 66.9,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Rađenović",
@@ -37063,6 +38068,18 @@
         "pdf_x_end": 582.9,
         "pdf_y_end": 582.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001257",
+        "name": "Rađenović Pajo",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Pajo Rađenović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 301.5,
+        "pdf_y": 247.1,
+        "pdf_x_end": 375.3,
+        "pdf_y_end": 256.8,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -37109,7 +38126,16 @@
       }
     ],
     "occupation": "radnik",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Manin vrh",
+    "borrowed": [
+      "death_place"
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Rašković",
@@ -37456,7 +38482,6 @@
     "fathers_name": "Vojislav",
     "full_name": "Ristić Vojislava Stojimir",
     "additional_info": "borac 2. bataljona, poginuo 17. I 1945. kod sela Mikluševaca, Vukovar.",
-    "birth_year": "",
     "pdf_page": 79,
     "pdf_y": 312.6,
     "pdf_x": 108.8,
@@ -37478,7 +38503,15 @@
         "source_page": 5,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Strmenica, Aleksandrovac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1927"
   },
   {
     "last_name": "Ristić",
@@ -37578,7 +38611,17 @@
         "source_page": 1302,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Breza"
   },
   {
     "last_name": "Rodić",
@@ -37633,6 +38676,10 @@
         "source_page": 1276,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -37787,6 +38834,10 @@
         "source_page": 1304,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Romići-ključ",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -37957,6 +39008,10 @@
         "source_page": 1302,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38003,7 +39058,12 @@
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Rodić",
@@ -38033,7 +39093,13 @@
         "source_page": 1302,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Titovo užice"
   },
   {
     "last_name": "Rodić",
@@ -38247,7 +39313,12 @@
         "pdf_y_end": 429.9,
         "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Rosić",
@@ -39369,6 +40440,10 @@
         "source_page": 6,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "birth_place": "Velika Vrbnica, Aleksandrovac",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -40099,7 +41174,6 @@
     "fathers_name": "",
     "full_name": "Slapar Oskar",
     "additional_info": "borac 2. čete 2. bataljona, umro 10. IV 1945. u Bijeljini.",
-    "birth_year": "",
     "pdf_page": 84,
     "pdf_y": 290.0,
     "pdf_x": 58.5,
@@ -40133,7 +41207,15 @@
         "source_page": 236,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "birth_year": "1927"
   },
   {
     "last_name": "Slavković",
@@ -40455,6 +41537,10 @@
         "source_page": 1323,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -40514,6 +41600,10 @@
         "source_page": 2086,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -40930,6 +42020,10 @@
         "source_page": 33,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41077,6 +42171,10 @@
         "source_page": 1323,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Kod otoka",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -41794,6 +42892,10 @@
         "source_page": 1295,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Srem",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -41907,6 +43009,18 @@
         "pdf_x_end": 398.5,
         "pdf_y_end": 794.8,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001268",
+        "name": "Stefanović Petar",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Petar Stefanović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 172.9,
+        "pdf_y": 278.8,
+        "pdf_x_end": 251.9,
+        "pdf_y_end": 288.5,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -42062,6 +43176,18 @@
         "pdf_x_end": 394.2,
         "pdf_y_end": 804.4,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001270",
+        "name": "Stefanović Stojan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Stojan Stefanović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 344.8,
+        "pdf_y": 278.8,
+        "pdf_x_end": 430.0,
+        "pdf_y_end": 288.5,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -42235,6 +43361,10 @@
         "source_page": 379,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -42557,7 +43687,12 @@
         "pdf_y_end": 432.6,
         "unit_file": "22-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1911"
+      ]
+    }
   },
   {
     "last_name": "Stojko",
@@ -42667,7 +43802,6 @@
     "fathers_name": "",
     "full_name": "Stokić Zdravko",
     "additional_info": "rođ. Stakib; borac 2. čete 2. bagaljona, umro 9. IV 1945. u Bijeljini.",
-    "birth_year": "",
     "pdf_page": 89,
     "pdf_y": 90.8,
     "pdf_x": 103.5,
@@ -42689,7 +43823,15 @@
         "source_page": 778,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Lugavčina, Mala Krsna",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1926"
   },
   {
     "last_name": "Stokuka",
@@ -43269,6 +44411,10 @@
         "source_page": 1465,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Prijani,glamoč",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -43600,7 +44746,21 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 343.6,
-    "death_place": "Brezovo Polje, Brčko"
+    "death_place": "Brezovo Polje, Brčko",
+    "other_sources": [
+      {
+        "soldier_id": "9013001277",
+        "name": "Timotijević Radisav",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Radisav Timotijević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 248.5,
+        "pdf_y": 299.9,
+        "pdf_x_end": 341.6,
+        "pdf_y_end": 309.6,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Tintor",
@@ -44001,6 +45161,18 @@
         "pdf_x_end": 433.3,
         "pdf_y_end": 408.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001278",
+        "name": "Tomić Đuro",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Đuro Tomić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 348.0,
+        "pdf_y": 299.9,
+        "pdf_x_end": 405.4,
+        "pdf_y_end": 309.6,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -44361,6 +45533,18 @@
         "pdf_x_end": 552.5,
         "pdf_y_end": 418.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001276",
+        "name": "Trifunović Branislav",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Branislav Trifunović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 145.3,
+        "pdf_y": 299.9,
+        "pdf_x_end": 241.8,
+        "pdf_y_end": 309.6,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -44418,6 +45602,10 @@
         "source_page": 1295,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -44766,6 +45954,10 @@
         "source_page": 966,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -44961,6 +46153,10 @@
         "pdf_y_end": 428.3,
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "death_place": "Opatovac srem",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -45212,6 +46408,10 @@
         "source_page": 1287,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_date": "1945",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -45340,6 +46540,18 @@
         "pdf_x_end": 496.4,
         "pdf_y_end": 437.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001187",
+        "name": "Vajs Ištvan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Ištvan Vajs.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 151.6,
+        "pdf_y": 617.2,
+        "pdf_x_end": 206.4,
+        "pdf_y_end": 626.9,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -45510,7 +46722,13 @@
         "pdf_y_end": 457.4,
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_place": "Slatina, Sopot",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Brezopolje"
   },
   {
     "last_name": "Vasiljević",
@@ -45733,7 +46951,23 @@
         "pdf_x_end": 342.3,
         "pdf_y_end": 447.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001185",
+        "name": "Vasić Ljubomir",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Ljubomir Vasić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 324.1,
+        "pdf_y": 606.6,
+        "pdf_x_end": 398.4,
+        "pdf_y_end": 616.3,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
+    ],
+    "birth_place": "Sovljak, Ub",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -45826,6 +47060,10 @@
         "source_page": 1264,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "birth_place": "Fonjge, Donji Vakuf",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -45868,7 +47106,6 @@
     "fathers_name": "Vukašin",
     "full_name": "Vasović Vukašina Ivan",
     "additional_info": "borac 1. čete 4. bataljona, Beograd, Srbin, ćak, u NOB od 23. X 1944, poginuo 17.1 1945. kod sela Sotina, Vukovar.",
-    "birth_year": "",
     "pdf_page": 98,
     "pdf_y": 317.2,
     "pdf_x": 70.9,
@@ -45904,7 +47141,13 @@
         "pdf_y_end": 467.0,
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Vatorović",
@@ -46204,6 +47447,10 @@
         "source_page": 1420,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "birth_place": "Šodolovci, Osijek",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -46337,6 +47584,10 @@
         ],
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "death_place": "Kod otoka",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -47506,6 +48757,10 @@
         "source_page": 989,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -48268,6 +49523,10 @@
         "source_page": 10,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -48361,6 +49620,10 @@
         "source_page": 1295,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Sutjeska",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -48472,7 +49735,13 @@
         "source_page": 2815,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Uvac -priboj"
   },
   {
     "last_name": "Čama",
@@ -48508,6 +49777,18 @@
         "pdf_x_end": 334.7,
         "pdf_y_end": 405.0,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001289",
+        "name": "Čama Andraš",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Andraš Čama.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 407.9,
+        "pdf_y": 321.0,
+        "pdf_x_end": 472.8,
+        "pdf_y_end": 330.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -48881,6 +50162,10 @@
         "source_page": 817,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -49075,7 +50360,6 @@
     "fathers_name": "",
     "full_name": "Čolić Dragiša",
     "additional_info": "borac 3. čete 1. bataljona, poginuo 22. XII 1944. kod sela Otoka, Županja.",
-    "birth_year": "",
     "pdf_page": 15,
     "pdf_y": 477.6,
     "pdf_x": 107.4,
@@ -49117,7 +50401,15 @@
         "source_page": 115,
         "ref_book": "seoske-hronike"
       }
-    ]
+    ],
+    "birth_place": "Brezovica, Trstenik",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1926"
   },
   {
     "last_name": "Čolić",
@@ -49386,7 +50678,23 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=148",
         "source_page": 148,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "9013001287",
+        "name": "Čupić Stojan",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Stojan Čupić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 251.5,
+        "pdf_y": 321.0,
+        "pdf_x_end": 314.5,
+        "pdf_y_end": 330.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -49580,7 +50888,21 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 391.1,
-    "death_place": "Brezovo Polje, Brčko"
+    "death_place": "Brezovo Polje, Brčko",
+    "other_sources": [
+      {
+        "soldier_id": "9013001197",
+        "name": "Đorđević Dragomir",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Dragomir Đorđević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 348.1,
+        "pdf_y": 638.3,
+        "pdf_x_end": 437.3,
+        "pdf_y_end": 648.0,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Đorđević",
@@ -49797,6 +51119,10 @@
         "source_page": 1161,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Bjelovar",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -49956,6 +51282,10 @@
         "source_page": 1257,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "birth_place": "Mačkovac, Trstenik",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -50304,6 +51634,10 @@
         "source_page": 680,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "death_place": "Staretina",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -50938,7 +52272,12 @@
     ],
     "death_type": "poginuo",
     "death_date": "06.1943",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Špirin",
@@ -51014,6 +52353,10 @@
         "source_page": 1459,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Hercegovac-gračanica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -51145,6 +52488,10 @@
         "source_page": 711,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -51267,6 +52614,18 @@
         "pdf_x_end": 554.8,
         "pdf_y_end": 861.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001291",
+        "name": "Šujica Nikola",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Nikola Šujica.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 184.7,
+        "pdf_y": 331.6,
+        "pdf_x_end": 250.0,
+        "pdf_y_end": 341.3,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -51535,6 +52894,10 @@
         "pdf_y_end": 360.7,
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "death_place": "Nemci,šid",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -51612,7 +52975,13 @@
         "pdf_y_end": 553.9,
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "birth_place": "Nova Gradina, Virovitica",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Žigić",
@@ -51696,6 +53065,10 @@
         "pdf_y_end": 563.5,
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "death_place": "Vinkovci",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -51839,6 +53212,10 @@
         "pdf_y_end": 573.1,
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "death_place": "S.nemci vinkovc",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -52000,6 +53377,10 @@
         "pdf_y_end": 582.7,
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "birth_place": "Stonjik, Arandjelovac",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -52037,6 +53418,18 @@
         "pdf_x_end": 414.6,
         "pdf_y_end": 582.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013001201",
+        "name": "Živković Nenad",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Nenad Živković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 334.8,
+        "pdf_y": 648.8,
+        "pdf_x_end": 409.6,
+        "pdf_y_end": 658.5,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -52414,7 +53807,15 @@
         "source_page": 1158,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Slavonski brod"
   },
   {
     "last_name": "Žojić",

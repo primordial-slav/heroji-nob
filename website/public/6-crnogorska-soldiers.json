@@ -87,6 +87,10 @@
         "pdf_y_end": 523.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -169,7 +173,6 @@
     "fathers_name": "Stefan",
     "full_name": "Babović Stefana Miloš",
     "additional_info": "rođen u Petnjiku kod Berana, zemljoradnik, borac 2. čete 4. bataljona, poginuo 23. marta 1944. na Kurilu — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 254.6,
     "pdf_x": 67.1,
@@ -184,6 +187,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 399.4,
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9035001381",
@@ -197,6 +201,9 @@
         "pdf_y_end": 188.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -254,7 +261,6 @@
     "fathers_name": "Mićo",
     "full_name": "Bajović Mića Miloš",
     "additional_info": "rođen u Dubrovsku — Šavnik, borac 2. čete 3. bataljona, poginuo 1. februara 1944. na Grahovu.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 289.4,
     "pdf_x": 67.1,
@@ -268,6 +274,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 400.1,
+    "birth_year": "1927",
     "other_sources": [
       {
         "soldier_id": "9023005892",
@@ -277,6 +284,11 @@
         "source_page": 206,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -322,7 +334,6 @@
     "fathers_name": "",
     "full_name": "Batrićević Andrija",
     "additional_info": "borac 1. čete 1. bataljona, poginuo 24. januara 1945. kod Goražda.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 337.9,
     "pdf_x": 66.9,
@@ -356,7 +367,15 @@
         "pdf_y_end": 517.5,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Rudine, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1924"
   },
   {
     "last_name": "Batrićević",
@@ -410,7 +429,13 @@
         "pdf_y_end": 358.8,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Nikšić"
   },
   {
     "last_name": "Batrićević",
@@ -465,7 +490,6 @@
     "fathers_name": "",
     "full_name": "Bezmarević Jovan",
     "additional_info": "borac 1. čete 4. bataljona, poginuo 23. novembra 1944. na položaju iznad Frutka — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 469.7,
     "pdf_x": 67.4,
@@ -511,7 +535,15 @@
         "pdf_y_end": 283.0,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Kuta, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1908"
   },
   {
     "last_name": "Bigović",
@@ -673,6 +705,10 @@
         "pdf_y_end": 723.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1032,7 +1068,18 @@
         "pdf_y_end": 548.3,
         "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "01.1944",
+          "place": "na Ržištima — Danilovgrad"
+        }
+      ]
+    }
   },
   {
     "last_name": "Cicmil",
@@ -1126,7 +1173,13 @@
         "pdf_x_left": 174.7,
         "ref_book": "lovcenski-odred-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Daničić",
@@ -1304,6 +1357,10 @@
         "pdf_y_end": 297.6,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1313,7 +1370,6 @@
     "fathers_name": "",
     "full_name": "Dragićević Mitar",
     "additional_info": "đak, borac 1. čete 4 .bataljona, poginuo 21. novembra 1944. kod Danilovgrada.",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 189.8,
     "pdf_x": 136.9,
@@ -1340,7 +1396,13 @@
         "pdf_y_end": 332.2,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Cerovo",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Dragićević",
@@ -1419,7 +1481,15 @@
         "source_page": 697,
         "ref_book": "kolasin"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Danilovgrad"
   },
   {
     "last_name": "Drakić",
@@ -1481,7 +1551,15 @@
         "source_page": 698,
         "ref_book": "kolasin"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Nikšić"
   },
   {
     "last_name": "Drljević",
@@ -1515,7 +1593,15 @@
         "pdf_y_end": 485.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Danilovgrad"
   },
   {
     "last_name": "Dubljević",
@@ -1548,6 +1634,10 @@
         "source_page": 186,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1606,6 +1696,10 @@
         "pdf_x_left": 33.1,
         "ref_book": "lovcenski-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1799,6 +1893,10 @@
         "source_page": 91,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1832,6 +1930,10 @@
         "source_page": 216,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1877,6 +1979,10 @@
         "pdf_y_end": 335.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1959,6 +2065,10 @@
         "pdf_y_end": 660.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2070,6 +2180,10 @@
         "pdf_y_end": 502.2,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2079,7 +2193,6 @@
     "fathers_name": "Savo",
     "full_name": "Jovanović Sava Veljko",
     "additional_info": "rođe-n 1914. u Župi — Nikšić, zamjenik komandira 1. čete 4. bataljona, smrtno ranjen 16. novembra 1944. na položaju iznad Donjeg Frutka — Danilovgrad, umro isto veče pri evakuaciji u Brigadno previjalište.",
-    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 370.1,
     "pdf_x": 133.4,
@@ -2090,6 +2203,7 @@
     "rank": "zamjenik komandira",
     "unit_detail": "1. četa, 4. bataljon",
     "pdf_x_end": 465.1,
+    "birth_year": "1918",
     "other_sources": [
       {
         "soldier_id": "9080000309",
@@ -2111,7 +2225,18 @@
         "source_page": 113,
         "ref_book": "zrtve-rata-1964-crg"
       }
-    ]
+    ],
+    "birth_place": "Carine",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Danilovgrad",
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Jovović",
@@ -2120,7 +2245,6 @@
     "fathers_name": "",
     "full_name": "Jovović Novak",
     "additional_info": "borac 2. čete 1. bataljona, poginuo 17. novembra 1944. na Koravcu — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 415.7,
     "pdf_x": 134.1,
@@ -2146,7 +2270,13 @@
         "pdf_y_end": 544.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Golija, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Jošanović",
@@ -2198,7 +2328,6 @@
     "fathers_name": "Vuko",
     "full_name": "Kaluđerović Vuka Nikola",
     "additional_info": "iz Ćeklića, borac 1. čete 3. bataljona, poginuo 16. novembra 1944. na položaju iznad Donjeg Frutka — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 499.3,
     "pdf_x": 134.6,
@@ -2211,6 +2340,7 @@
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 465.3,
     "death_place": "iznad Donjeg Frutka, Danilovgrad",
+    "birth_year": "1912",
     "other_sources": [
       {
         "soldier_id": "9035016747",
@@ -2237,6 +2367,11 @@
         "pdf_x_left": 41.0,
         "ref_book": "lovcenski-odred-pali-borci"
       }
+    ],
+    "birth_place": "Ćeklići, Šavnik",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
     ]
   },
   {
@@ -2415,7 +2550,6 @@
     "fathers_name": "Kojo",
     "full_name": "Knežević Koja Nedjeljko",
     "additional_info": "rođen u selu Dragovoljići — Nikšić, borac 1. čete 2. bataljona, smrtno ranjen 1. januara 1944. na Gradini — Gornje Polje i ubrzo podlegao ranama.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 148.2,
     "pdf_x": 122.4,
@@ -2427,6 +2561,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 454.5,
+    "birth_year": "1924",
     "other_sources": [
       {
         "soldier_id": "9035007740",
@@ -2440,7 +2575,14 @@
         "pdf_y_end": 305.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Brezovik"
   },
   {
     "last_name": "Kosić",
@@ -2449,7 +2591,6 @@
     "fathers_name": "",
     "full_name": "Kosić Radojka",
     "additional_info": "borac 1. čete 1. bataljona, poginula 17. novembra 1944. u Cetinju.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 207.0,
     "pdf_x": 122.9,
@@ -2495,7 +2636,15 @@
         "pdf_y_end": 115.5,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Rubeži, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorka",
+    "birth_year": "1927"
   },
   {
     "last_name": "Kosović",
@@ -2529,7 +2678,13 @@
         "pdf_y_end": 453.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Banjani"
   },
   {
     "last_name": "Kostić",
@@ -2644,6 +2799,10 @@
         "source_page": 115,
         "ref_book": "revolucionarno-grahovo"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3040,7 +3199,6 @@
     "fathers_name": "",
     "full_name": "Luburić Vlado",
     "additional_info": "borac 4. bataljona, poginuo 1. oktobra 1944. na Orjoj Luci — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 616.7,
     "pdf_x": 124.4,
@@ -3086,7 +3244,15 @@
         "pdf_y_end": 250.4,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Riđani, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Lučić",
@@ -3130,6 +3296,10 @@
         "pdf_y_end": 516.8,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3186,6 +3356,10 @@
         "pdf_y_end": 60.8,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3254,6 +3428,10 @@
         "pdf_y_end": 694.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3529,7 +3707,19 @@
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "death": [
+        {
+          "date": "05.1944",
+          "place": "u Gornjem Zagaraču — Danilovgrad"
+        },
+        {
+          "date": "08.1944",
+          "place": "u Gornjem Zagaraču — Danilovgrad"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mašić",
@@ -3562,6 +3752,10 @@
         "source_page": 207,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3571,7 +3765,6 @@
     "fathers_name": "",
     "full_name": "Mijušković Dušan",
     "additional_info": "borac 1. čete 1. bataljona, poginuo 19. decembra 1944. kod Kolašina.",
-    "birth_year": "",
     "pdf_page": 9,
     "pdf_y": 521.7,
     "pdf_x": 133.6,
@@ -3597,7 +3790,13 @@
         "pdf_y_end": 212.7,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Vojimir",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Mijušković",
@@ -3686,6 +3885,10 @@
         "pdf_y_end": 328.3,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3776,7 +3979,13 @@
         "pdf_y_end": 409.1,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Unač, Plužine",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Milović",
@@ -3806,7 +4015,6 @@
     "fathers_name": "Jovan",
     "full_name": "Milović Jovana Filip",
     "additional_info": "iz Banjana — Nikšić, borac 1. čete 2. bataljona, poginuo 16. novembra 1944. na Vukovoj Gomili — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 266.7,
     "pdf_x": 127.8,
@@ -3852,7 +4060,15 @@
         "pdf_y_end": 460.1,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Dubočke, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1919"
   },
   {
     "last_name": "Milović",
@@ -3905,6 +4121,10 @@
         "source_page": 126,
         "ref_book": "revolucionarno-grahovo"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3970,7 +4190,6 @@
     "fathers_name": "",
     "full_name": "Milošević Đuro",
     "additional_info": "iz Dobrote — Kotor, borac 2. čete 4. bataljona, poginuo 1. februara 1944. na Grahovu.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 290.9,
     "pdf_x": 127.3,
@@ -3996,7 +4215,13 @@
         "pdf_y_end": 316.9,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Dobrota, Kotor",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Minić",
@@ -4005,7 +4230,6 @@
     "fathers_name": "Mijajlo",
     "full_name": "Minić Mijajla Jovan",
     "additional_info": "rođen u Danilovgradu, borac 2. čete 1. bataljona, poginuo januara 1945. na Mišjaku kod Goražda.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 314.4,
     "pdf_x": 127.6,
@@ -4019,6 +4243,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon",
     "pdf_x_end": 459.2,
+    "birth_year": "1927",
     "other_sources": [
       {
         "soldier_id": "9035004170",
@@ -4032,6 +4257,9 @@
         "pdf_y_end": 192.8,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -4085,7 +4313,6 @@
     "fathers_name": "Đuro",
     "full_name": "Mirković Đura Blažo",
     "additional_info": "iz Ćeklića, borac 1. čete 3. bataljona, poginuo 16. novembra 1944. na položaju iznad Donjeg Frutka — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 396.3,
     "pdf_x": 127.3,
@@ -4098,6 +4325,7 @@
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 458.7,
     "death_place": "iznad Donjeg Frutka, Danilovgrad",
+    "birth_year": "1911",
     "other_sources": [
       {
         "soldier_id": "9023001379",
@@ -4120,7 +4348,14 @@
         "pdf_x_left": 43.0,
         "ref_book": "lovcenski-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Prentin Do, Cetinje",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Mitrić",
@@ -4214,6 +4449,10 @@
         "pdf_y_end": 509.2,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4291,6 +4530,10 @@
         "pdf_y_end": 282.5,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4331,7 +4574,17 @@
         "pdf_y_end": 273.9,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Goražde"
   },
   {
     "last_name": "Mugoša",
@@ -4408,7 +4661,6 @@
     "fathers_name": "Nikola",
     "full_name": "Mušić Nikole Nikola",
     "additional_info": "rođen na Korčuli, borac 2. čete 3. bataljona, poginuo 19. decembra 1944. kod Kolašina.",
-    "birth_year": "",
     "pdf_page": 11,
     "pdf_y": 151.7,
     "pdf_x": 132.7,
@@ -4430,7 +4682,15 @@
         "source_page": 941,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Lumbarda, Korčula",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1927"
   },
   {
     "last_name": "Nedić",
@@ -4519,7 +4779,13 @@
         "pdf_y_end": 202.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Stijena, Titograd",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Nikolić",
@@ -4551,7 +4817,13 @@
         "pdf_y_end": 376.1,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Podgorica"
   },
   {
     "last_name": "Nikčević",
@@ -4596,6 +4868,10 @@
         "pdf_y_end": 488.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4641,6 +4917,10 @@
         "pdf_y_end": 634.7,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4709,6 +4989,10 @@
         "pdf_y_end": 160.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4754,6 +5038,10 @@
         "pdf_y_end": 275.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4832,7 +5120,6 @@
     "fathers_name": "Maksim",
     "full_name": "Pavićević Maksima Blagoje",
     "additional_info": "rođen u Dolu Pješivačkom, poginuo u selu Muževići — Banjani 1944.",
-    "birth_year": "",
     "pdf_page": 11,
     "pdf_y": 495.9,
     "pdf_x": 133.6,
@@ -4844,6 +5131,7 @@
     "death_date": "1944",
     "death_place": "u selu Muževići — Banjani",
     "pdf_x_end": 465.2,
+    "birth_year": "1928",
     "other_sources": [
       {
         "soldier_id": "9023001608",
@@ -4877,6 +5165,11 @@
         "pdf_y_end": 384.0,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -4886,7 +5179,6 @@
     "fathers_name": "Veliša",
     "full_name": "Pavićević Veliše Marko",
     "additional_info": "iz Broćanca — Nikšić. vodnik u 1. četi 3. bataljona, poginuo 11. marta 1944. na Bogetićima — Nikšić.",
-    "birth_year": "",
     "pdf_page": 11,
     "pdf_y": 520.1,
     "pdf_x": 133.6,
@@ -4899,6 +5191,7 @@
     "rank": "vodnik",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 464.9,
+    "birth_year": "1914",
     "other_sources": [
       {
         "soldier_id": "9035008368",
@@ -4912,6 +5205,11 @@
         "pdf_y_end": 342.3,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "birth_place": "Broćanac, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
     ]
   },
   {
@@ -4943,7 +5241,15 @@
         "source_page": 58,
         "ref_book": "zrtve-rata-1964-crg"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Orja luka"
   },
   {
     "last_name": "Pavlović",
@@ -5044,6 +5350,10 @@
         "pdf_y_end": 719.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5171,7 +5481,6 @@
     "fathers_name": "",
     "full_name": "Perišić Milun",
     "additional_info": "borac 4. bataljona, poginuo 12. decembra 1944. kod Mojkovca.",
-    "birth_year": "",
     "pdf_page": 12,
     "pdf_y": 292.5,
     "pdf_x": 129.9,
@@ -5209,7 +5518,13 @@
         "pdf_y_end": 409.5,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Župa, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Perović",
@@ -5303,7 +5618,12 @@
       }
     ],
     "ethnicity": "Crnogorac",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Perović",
@@ -5445,6 +5765,10 @@
         "pdf_y_end": 700.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "birth_place": "Lubnice, Berane",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -5501,6 +5825,10 @@
         "source_page": 211,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5643,6 +5971,10 @@
         "source_page": 38,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5672,7 +6004,6 @@
     "fathers_name": "Risto",
     "full_name": "Popović Rista Petar",
     "additional_info": "borac 1. čete 4. bataljona, poginuo 21. novembra 1944. na Frutku — Danilovgrad.",
-    "birth_year": "",
     "pdf_page": 13,
     "pdf_y": 211.4,
     "pdf_x": 132.3,
@@ -5685,6 +6016,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
     "pdf_x_end": 463.3,
+    "birth_year": "1905",
     "other_sources": [
       {
         "soldier_id": "9023004431",
@@ -5718,7 +6050,14 @@
         "pdf_y_end": 28.1,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Petrovići, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Popović",
@@ -5774,6 +6113,10 @@
         "pdf_y_end": 392.0,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5807,6 +6150,10 @@
         "source_page": 245,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5899,6 +6246,10 @@
         "source_page": 116,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5980,6 +6331,10 @@
         "source_page": 221,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6033,6 +6388,10 @@
         "source_page": 128,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6091,6 +6450,10 @@
         "pdf_x_left": 31.7,
         "ref_book": "lovcenski-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6221,7 +6584,13 @@
         "pdf_y_end": 195.5,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Čevo"
   },
   {
     "last_name": "Roganović",
@@ -6230,7 +6599,6 @@
     "fathers_name": "",
     "full_name": "Roganović Spasoje",
     "additional_info": "borac 2. čete 1. bataljona, poginuo 21. januara 1945. kod Goražda.",
-    "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 186.1,
     "pdf_x": 141.4,
@@ -6256,7 +6624,13 @@
         "pdf_y_end": 233.8,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Breštice",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Rović",
@@ -6307,7 +6681,18 @@
       }
     ],
     "ethnicity": "Crnogorac",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1923"
+      ],
+      "death": [
+        {
+          "date": "06.05.1944",
+          "place": "Danilovgrad"
+        }
+      ]
+    }
   },
   {
     "last_name": "Salaković",
@@ -6365,6 +6750,10 @@
         "pdf_x_left": 171.6,
         "ref_book": "lovcenski-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6475,6 +6864,10 @@
         "pdf_y_end": 140.9,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6604,7 +6997,22 @@
         "pdf_y_end": 215.8,
         "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ],
+      "death": [
+        {
+          "date": "01.1944",
+          "place": "Čevo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Strugar",
@@ -6680,7 +7088,14 @@
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "variants": {
+      "death": [
+        {
+          "date": "08.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tepavčević",
@@ -6748,7 +7163,6 @@
     "fathers_name": "",
     "full_name": "Todorović Mitar",
     "additional_info": "vodnik u 1. četi 1. bataljona, poginuo 7. novembra 1944. u Cetinju.",
-    "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 583.5,
     "pdf_x": 142.9,
@@ -6782,7 +7196,15 @@
         "pdf_y_end": 137.1,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Orah, Nikšić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1924"
   },
   {
     "last_name": "Tomić",
@@ -6841,7 +7263,12 @@
     ],
     "ethnicity": "Crnogorac",
     "occupation": "zemljoradnik",
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Tošković",
@@ -6894,6 +7321,10 @@
         "source_page": 719,
         "ref_book": "kolasin"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6998,7 +7429,15 @@
         "pdf_y_end": 377.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Napulj italija"
   },
   {
     "last_name": "Vasović",
@@ -7041,7 +7480,13 @@
         "pdf_y_end": 402.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Milano italija"
   },
   {
     "last_name": "Vujadinović",
@@ -7151,6 +7596,10 @@
         "source_page": 693,
         "ref_book": "kolasin"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7457,6 +7906,10 @@
         "pdf_y_end": 300.0,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7502,6 +7955,10 @@
         "pdf_y_end": 422.3,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7554,7 +8011,6 @@
     "fathers_name": "Milan",
     "full_name": "Vulanović Milana Đorđije",
     "additional_info": "rođen u Zagorku — Danilovgrad, borac 3. čete 2. bataljona, poginuo 14. novembra 1EM. godine na Ksravcu — Zagarač.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 153.3,
     "pdf_x": 128.2,
@@ -7599,7 +8055,17 @@
         "pdf_y_end": 249.4,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Zagarač",
+    "birth_year": "1890",
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Vuletić",
@@ -7793,7 +8259,6 @@
     "fathers_name": "Radovan",
     "full_name": "Ćalić Radovana Mirko",
     "additional_info": "iz Lukova — Nikšić, borac 2. bataljona, poginuo 16. novembra 1944. u selu Plana — Donji Zagarač.",
-    "birth_year": "",
     "pdf_page": 15,
     "pdf_y": 339.2,
     "pdf_x": 132.4,
@@ -7819,7 +8284,13 @@
         "pdf_y_end": 311.6,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Dragovoljić",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Ćetković",
@@ -7854,6 +8325,10 @@
         "pdf_y_end": 321.2,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "death_place": "Kunak",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -7985,7 +8460,6 @@
     "fathers_name": "",
     "full_name": "Đikanović Radoje",
     "additional_info": "borac 3. čete 1. bataljona, puškomitraljezac, poginuo 24. januara 1945. kod Goražda.",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 458.1,
     "pdf_x": 136.4,
@@ -8011,7 +8485,13 @@
         "pdf_y_end": 270.8,
         "ref_book": "niksicki-odred-pali-borci"
       }
-    ]
+    ],
+    "birth_place": "Gradačka Poljana",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Đoković",
@@ -8055,6 +8535,10 @@
         "pdf_y_end": 152.9,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8143,6 +8627,10 @@
         "pdf_y_end": 304.8,
         "ref_book": "niksicki-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8187,6 +8675,10 @@
         "pdf_y_end": 675.2,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8341,6 +8833,10 @@
         "pdf_x_left": 42.5,
         "ref_book": "lovcenski-odred-pali-borci"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8395,6 +8891,10 @@
         "source_page": 3,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8515,7 +9015,6 @@
     "fathers_name": "",
     "full_name": "Šaletić Petko",
     "additional_info": "borac 1. čete 1. bataljona, poginuo 17. januara 1945. kod Goražda.",
-    "birth_year": "",
     "pdf_page": 15,
     "pdf_y": 582.1,
     "pdf_x": 132.9,
@@ -8541,7 +9040,13 @@
         "pdf_y_end": 234.1,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Počijevci, Danilovgrad",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1905"
   },
   {
     "last_name": "Škerović",
@@ -8630,7 +9135,15 @@
         "source_page": 208,
         "ref_book": "zrtve-rata-1964-crg"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Nikšić"
   },
   {
     "last_name": "Šušović-Radetić",
@@ -8697,6 +9210,10 @@
         "source_page": 95,
         "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8739,7 +9256,17 @@
         "pdf_y_end": 264.3,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Goražde"
   },
   {
     "last_name": "Žižić",

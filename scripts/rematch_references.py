@@ -151,11 +151,13 @@ def against(entry: dict, rec: dict) -> list[str]:
 
 def load_units() -> tuple[dict, dict]:
     """The units' records (not Ostali borci's) by folded name, and by id."""
+    from record_sources import own_only
     index, recs = defaultdict(list), {}
     for code, (_, soldiers) in M.structured.load_live().items():
         if code in OSTALI_CODES:
             continue
         for s in soldiers:
+            s = own_only(s)                       # not what the record borrowed (scripts/record_sources.py)
             index[(M.fold(s.get('last_name')), M.fold(s.get('first_name')))].append(s)
             recs[s['soldier_id']] = s
     return index, recs

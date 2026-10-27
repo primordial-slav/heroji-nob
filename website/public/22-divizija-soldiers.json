@@ -195,7 +195,6 @@
     "pdf_x_end": 289.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_place": "Sofija, Bugarska",
     "other_sources": [
       {
@@ -499,7 +498,6 @@
     "fathers_name": "D",
     "full_name": "Antić D Aleksandar",
     "additional_info": "Panevlje, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Panevlje",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -521,7 +519,13 @@
         "source_page": 1378,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Antić",
@@ -545,7 +549,6 @@
     "pdf_x_end": 361.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000007",
@@ -568,7 +571,6 @@
     "fathers_name": "M",
     "full_name": "Antić M Bora",
     "additional_info": "Preslap, 18. VI 1944, Grdelica",
-    "birth_year": "",
     "birth_place": "Preslap",
     "death_date": "18.06.1944",
     "death_type": "poginuo",
@@ -590,7 +592,13 @@
         "source_page": 387,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Antić",
@@ -662,6 +670,10 @@
         "pdf_y_end": 147.8,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -671,7 +683,6 @@
     "fathers_name": "",
     "full_name": "Antić Rade",
     "additional_info": "Buštranje, 1944",
-    "birth_year": "",
     "birth_place": "Buštranje",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -692,7 +703,15 @@
         "source_page": 1366,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sveta gora",
+    "birth_year": "1912"
   },
   {
     "last_name": "Antić",
@@ -959,7 +978,6 @@
     "fathers_name": "",
     "full_name": "Anđelković Rade",
     "additional_info": "Srednji Del, 1944",
-    "birth_year": "",
     "birth_place": "Srednji Del",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -980,7 +998,15 @@
         "source_page": 1371,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Vlasotince",
+    "birth_year": "1916"
   },
   {
     "last_name": "Anđelković",
@@ -1025,7 +1051,6 @@
     "pdf_x_end": 368.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000016",
@@ -1111,7 +1136,6 @@
     "fathers_name": "M",
     "full_name": "Anđelković M Stojadin",
     "additional_info": "Bab. Poljana, 27. IV 1944, Lisac planina",
-    "birth_year": "",
     "birth_place": "Bab. Poljana",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -1133,7 +1157,13 @@
         "source_page": 1375,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Anđelković",
@@ -1227,7 +1257,6 @@
     "pdf_x_end": 356.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000033",
@@ -1324,7 +1353,6 @@
     "soldier_id": "0096000045",
     "pdf_x_end": 354.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000009",
@@ -1350,7 +1378,15 @@
         "pdf_y_end": 260.6,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.1944",
+          "place": "Oštro Koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Anđelković",
@@ -1373,7 +1409,6 @@
     "soldier_id": "0096000046",
     "pdf_x_end": 339.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000009",
@@ -1423,7 +1458,6 @@
     "pdf_x_end": 370.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja",
     "other_sources": [
       {
         "soldier_id": "9013002474",
@@ -1488,7 +1522,6 @@
     "pdf_x_end": 295.6,
     "ethnicity": "Srbin",
     "occupation": "trgovački pomoćnik",
-    "rank": "politički komesar",
     "other_sources": [
       {
         "soldier_id": "9025037885",
@@ -1510,7 +1543,16 @@
         "pdf_y_end": 488.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "01.08.1922",
+    "variants": {
+      "death": [
+        {
+          "date": "02.09.1944",
+          "place": "Džep"
+        }
+      ]
+    }
   },
   {
     "last_name": "Anđelković",
@@ -1553,7 +1595,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000050",
     "pdf_x_end": 341.2,
-    "rank": "intendant",
     "other_sources": [
       {
         "soldier_id": "0090000011",
@@ -1683,7 +1724,6 @@
     "soldier_id": "0096000053",
     "pdf_x_end": 370.9,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002475",
@@ -1717,6 +1757,10 @@
         "pdf_y_end": 295.7,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1929,7 +1973,6 @@
     "pdf_x_end": 338.9,
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "politički delegat voda",
     "other_sources": [
       {
         "soldier_id": "0088000022",
@@ -1966,7 +2009,6 @@
     "soldier_id": "0096000062",
     "pdf_x_end": 327.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0031000020",
@@ -2073,7 +2115,6 @@
     "fathers_name": "R",
     "full_name": "Bogatinović R Andon",
     "additional_info": "Radovnica, 12. IV 1944, Kriva Feja",
-    "birth_year": "",
     "birth_place": "Radovnica",
     "death_date": "12.04.1944",
     "death_type": "poginuo",
@@ -2095,7 +2136,13 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Bogatinović",
@@ -2203,7 +2250,6 @@
     "soldier_id": "0096000068",
     "pdf_x_end": 340.4,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000024",
@@ -2240,7 +2286,6 @@
     "soldier_id": "0096000069",
     "pdf_x_end": 375.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025008248",
@@ -2262,6 +2307,10 @@
         "pdf_y_end": 190.8,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2305,6 +2354,10 @@
         "pdf_y_end": 489.3,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2383,7 +2436,19 @@
         "pdf_y_end": 514.0,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "11.09.1944",
+          "place": "Čestelin (Vranje)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bogdanović",
@@ -2434,7 +2499,6 @@
     "fathers_name": "Petruna",
     "full_name": "Bogdanović Petruna Todor",
     "additional_info": "G. Stajovac, 12. V 1944, Tumba (Vlasotince)",
-    "birth_year": "",
     "birth_place": "G. Stajovac",
     "death_date": "12.05.1944",
     "death_type": "poginuo",
@@ -2449,7 +2513,6 @@
     "pdf_x_end": 368.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033129",
@@ -2471,7 +2534,19 @@
         "pdf_y_end": 656.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.05.1944",
+          "place": "Tumba (Vlasotince)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bogdanović",
@@ -2494,7 +2569,6 @@
     "soldier_id": "0096000076",
     "pdf_x_end": 336.9,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000027",
@@ -2551,6 +2625,10 @@
         "pdf_y_end": 234.8,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2574,7 +2652,6 @@
     "soldier_id": "0096000078",
     "pdf_x_end": 327.2,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000029",
@@ -2611,7 +2688,6 @@
     "soldier_id": "0096000079",
     "pdf_x_end": 356.6,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002476",
@@ -2660,7 +2736,6 @@
     "soldier_id": "0096000080",
     "pdf_x_end": 357.1,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000031",
@@ -2725,7 +2800,6 @@
     "fathers_name": "T",
     "full_name": "Branković T Stojadin",
     "additional_info": "Palojice, 10. IX 1944, Ostatovica",
-    "birth_year": "",
     "birth_place": "Palojice",
     "death_date": "10.09.1944",
     "death_type": "poginuo",
@@ -2747,7 +2821,13 @@
         "source_page": 439,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Branković",
@@ -2792,7 +2872,6 @@
     "pdf_x_end": 341.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000029",
@@ -2806,7 +2885,8 @@
         "pdf_y_end": 348.8,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.04.1920"
   },
   {
     "last_name": "Cakić",
@@ -2829,7 +2909,6 @@
     "soldier_id": "0096000086",
     "pdf_x_end": 364.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000034",
@@ -2887,7 +2966,6 @@
     "fathers_name": "",
     "full_name": "Cekić Mladen",
     "additional_info": "Bab. Poljana, 13. IV 1944, Kriva Feja",
-    "birth_year": "",
     "birth_place": "Bab. Poljana",
     "death_date": "13.04.1944",
     "death_type": "poginuo",
@@ -2909,7 +2987,13 @@
         "source_page": 1375,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Cekić",
@@ -2939,7 +3023,6 @@
     "fathers_name": "",
     "full_name": "Cekić Stojadin",
     "additional_info": "Bab. Poljana, 27. IV 1944, Lisac planina",
-    "birth_year": "",
     "birth_place": "Bab. Poljana",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -2961,7 +3044,13 @@
         "source_page": 1375,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Cekić",
@@ -3027,7 +3116,6 @@
     "pdf_x_end": 327.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000031",
@@ -3063,7 +3151,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000094",
     "pdf_x_end": 336.8,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -3087,7 +3174,6 @@
     "fathers_name": "S",
     "full_name": "Cvetanović S Milojko",
     "additional_info": "D. Stajovac, 18. XI 1944, Lab (Kosovo)",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "18.11.1944",
     "death_type": "poginuo",
@@ -3109,7 +3195,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Cvetanović",
@@ -3118,7 +3210,6 @@
     "fathers_name": "S",
     "full_name": "Cvetanović S Mladen",
     "additional_info": "D. Stajovac, 8. VIII 1944, Motina",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "08.08.1944",
     "death_type": "poginuo",
@@ -3140,7 +3231,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Cvetanović",
@@ -3149,7 +3246,6 @@
     "fathers_name": "A",
     "full_name": "Cvetanović A Stanko",
     "additional_info": "G. Kupinovica, 12. IV 1945, Spačva (Srem)",
-    "birth_year": "",
     "birth_place": "G. Kupinovica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -3183,7 +3279,13 @@
         "source_page": 699,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Cvetanović",
@@ -3206,7 +3308,6 @@
     "soldier_id": "0096000098",
     "pdf_x_end": 336.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000039",
@@ -3229,7 +3330,6 @@
     "fathers_name": "",
     "full_name": "Cvetković Dušan",
     "additional_info": "Kriva Feja, 22. V 1944, Osogovo planina",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "22.05.1944",
     "death_type": "poginuo",
@@ -3263,7 +3363,13 @@
         "pdf_y_end": 465.3,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1916"
   },
   {
     "last_name": "Cvetković",
@@ -3272,7 +3378,6 @@
     "fathers_name": "",
     "full_name": "Cvetković Jovan",
     "additional_info": "Kriva Feja, 22. V 1944, Osogovo planina",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "22.05.1944",
     "death_type": "poginuo",
@@ -3306,7 +3411,13 @@
         "pdf_y_end": 490.3,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1909"
   },
   {
     "last_name": "Cvetković",
@@ -3329,7 +3440,6 @@
     "soldier_id": "0096000101",
     "pdf_x_end": 339.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000040",
@@ -3378,7 +3488,15 @@
         "pdf_y_end": 97.2,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Cvetković",
@@ -3422,7 +3540,6 @@
     "soldier_id": "0096000104",
     "pdf_x_end": 342.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000041",
@@ -3459,7 +3576,6 @@
     "soldier_id": "0096000105",
     "pdf_x_end": 330.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000042",
@@ -3497,7 +3613,6 @@
     "pdf_x_end": 304.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025024924",
@@ -3564,7 +3679,6 @@
     "pdf_x_end": 344.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir čete",
     "other_sources": [
       {
         "soldier_id": "0088000037",
@@ -3578,7 +3692,15 @@
         "pdf_y_end": 285.1,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "26.05.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Cvetković",
@@ -3587,7 +3709,6 @@
     "fathers_name": "M",
     "full_name": "Cvetković M Svetolik",
     "additional_info": "Trnjane, 18. XI 1944, Oštro koplje",
-    "birth_year": "",
     "birth_place": "Trnjane",
     "death_date": "18.11.1944",
     "death_type": "poginuo",
@@ -3602,7 +3723,6 @@
     "pdf_x_end": 357.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025025120",
@@ -3624,6 +3744,10 @@
         "pdf_y_end": 663.2,
         "unit_file": "10-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -3710,7 +3834,6 @@
     "pdf_x_end": 327.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000040",
@@ -3746,7 +3869,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000112",
     "pdf_x_end": 364.5,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -3893,7 +4015,6 @@
     "soldier_id": "0096000117",
     "pdf_x_end": 366.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002575",
@@ -3964,7 +4085,6 @@
     "pdf_x_end": 330.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000043",
@@ -3990,7 +4110,18 @@
         "pdf_y_end": 301.6,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ],
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "G. Erić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dambević",
@@ -4056,7 +4187,6 @@
     "pdf_x_end": 312.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000045",
@@ -4070,7 +4200,15 @@
         "pdf_y_end": 294.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "Amajić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Damjanović",
@@ -4094,7 +4232,6 @@
     "pdf_x_end": 320.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025010509",
@@ -4116,7 +4253,16 @@
         "pdf_y_end": 348.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.01.1922",
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "Budišić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dejanović",
@@ -4140,7 +4286,6 @@
     "pdf_x_end": 347.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002430",
@@ -4230,7 +4375,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000127",
     "pdf_x_end": 335.6,
-    "rank": "obaveštajni oficir",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -4254,7 +4398,6 @@
     "fathers_name": "",
     "full_name": "Dimitrijević Božidar",
     "additional_info": "Duga Luka, 1944",
-    "birth_year": "",
     "birth_place": "Duga Luka",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -4268,7 +4411,6 @@
     "pdf_x_end": 278.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037910",
@@ -4290,7 +4432,13 @@
         "pdf_y_end": 295.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Kopaonik",
+    "borrowed": [
+      "birth_year",
+      "death_place"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Dimitrijević",
@@ -4299,7 +4447,6 @@
     "fathers_name": "",
     "full_name": "Dimitrijević Dobrivoje",
     "additional_info": "Kijevac (Surdulica), 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Kijevac (Surdulica)",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -4333,7 +4480,13 @@
         "source_page": 1185,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Dimitrijević",
@@ -4433,7 +4586,6 @@
     "pdf_x_end": 344.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025008281",
@@ -4499,7 +4651,6 @@
     "soldier_id": "0096000135",
     "pdf_x_end": 326.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000052",
@@ -4536,7 +4687,6 @@
     "pdf_x_end": 278.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000054",
@@ -4559,7 +4709,6 @@
     "fathers_name": "",
     "full_name": "Dimitrijević Vitomir",
     "additional_info": "Zagužane, 13. X 1944, Seličevica planina",
-    "birth_year": "",
     "birth_place": "Zagužane",
     "death_date": "13.10.1944",
     "death_type": "poginuo",
@@ -4581,7 +4730,13 @@
         "source_page": 1190,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Dimitrov",
@@ -4602,7 +4757,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000138",
     "pdf_x_end": 324.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000053",
@@ -4616,7 +4770,15 @@
         "pdf_y_end": 76.3,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.10.1944",
+          "place": "Lipovica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dimić",
@@ -4686,7 +4848,15 @@
         "pdf_y_end": 489.3,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.09.1944",
+          "place": "Belo Polje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dimić",
@@ -4730,7 +4900,6 @@
     "fathers_name": "",
     "full_name": "Dimić Čedomir",
     "additional_info": "Crna Trava, 26.VIII 1944, Predejane",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "26.08.1944",
     "death_type": "poginuo",
@@ -4752,7 +4921,13 @@
         "source_page": 381,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Dimić",
@@ -4775,7 +4950,6 @@
     "soldier_id": "0096000143",
     "pdf_x_end": 323.6,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000055",
@@ -4789,7 +4963,15 @@
         "pdf_y_end": 167.3,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.06.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dimčić",
@@ -4832,7 +5014,6 @@
     "soldier_id": "0096000145",
     "pdf_x_end": 351.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_place": "Lipovac, Sremski front",
     "other_sources": [
       {
@@ -4869,7 +5050,6 @@
     "soldier_id": "0096000146",
     "pdf_x_end": 362.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002488",
@@ -4934,7 +5114,6 @@
     "pdf_x_end": 330.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000058",
@@ -4972,7 +5151,6 @@
     "pdf_x_end": 321.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000059",
@@ -5063,7 +5241,15 @@
         "pdf_y_end": 145.4,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.05.1944",
+          "place": "Plačkovica planina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dodić",
@@ -5121,7 +5307,6 @@
     "soldier_id": "0096000153",
     "pdf_x_end": 334.0,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000059",
@@ -5158,7 +5343,6 @@
     "soldier_id": "0096000154",
     "pdf_x_end": 327.6,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000060",
@@ -5272,7 +5456,6 @@
     "fathers_name": "S",
     "full_name": "Filipović S Čedomir",
     "additional_info": "Bujkovac, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Bujkovac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -5306,7 +5489,13 @@
         "source_page": 1375,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Gligorijević",
@@ -5342,7 +5531,15 @@
         "pdf_y_end": 247.9,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "17.12.1944",
+          "place": "Sjenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Gligorov",
@@ -5505,7 +5702,6 @@
     "fathers_name": "S",
     "full_name": "Golubović S Milorad",
     "additional_info": "Preslap, 10. IX 1944, Gadžin Han",
-    "birth_year": "",
     "birth_place": "Preslap",
     "death_date": "10.09.1944",
     "death_type": "poginuo",
@@ -5527,7 +5723,13 @@
         "source_page": 387,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Golubović",
@@ -5571,7 +5773,6 @@
     "soldier_id": "0096000166",
     "pdf_x_end": 319.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000065",
@@ -5636,7 +5837,6 @@
     "fathers_name": "",
     "full_name": "Grozdanović Lazar",
     "additional_info": "Sopotnica, 22. XII 1944, Bjelo Polje (Lim)",
-    "birth_year": "",
     "birth_place": "Sopotnica",
     "death_date": "22.12.1944",
     "death_type": "poginuo",
@@ -5666,7 +5866,13 @@
         "source_page": 411,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Grozdanović",
@@ -5689,7 +5895,6 @@
     "soldier_id": "0096000170",
     "pdf_x_end": 352.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002484",
@@ -5724,7 +5929,6 @@
     "fathers_name": "",
     "full_name": "Grujić Petar",
     "additional_info": "Rđavica, 28. V 1944, Belasica planina",
-    "birth_year": "",
     "birth_place": "Rđavica",
     "death_date": "28.05.1944",
     "death_type": "poginuo",
@@ -5746,7 +5950,13 @@
         "source_page": 1188,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1907"
   },
   {
     "last_name": "Grujić",
@@ -5789,7 +5999,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000173",
     "pdf_x_end": 323.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025011598",
@@ -5811,6 +6020,10 @@
         "pdf_y_end": 463.9,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5947,7 +6160,6 @@
     "soldier_id": "0096000178",
     "pdf_x_end": 363.5,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025011599",
@@ -5969,6 +6181,10 @@
         "pdf_y_end": 72.9,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5993,7 +6209,6 @@
     "pdf_x_end": 355.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025030994",
@@ -6015,7 +6230,8 @@
         "pdf_y_end": 641.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "06.09.1923"
   },
   {
     "last_name": "Ilić",
@@ -6024,7 +6240,6 @@
     "fathers_name": "J",
     "full_name": "Ilić J Dobrivoje",
     "additional_info": "Navalin, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Navalin",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -6058,7 +6273,13 @@
         "source_page": 715,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Ilić",
@@ -6081,7 +6302,6 @@
     "soldier_id": "0096000181",
     "pdf_x_end": 338.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000074",
@@ -6118,7 +6338,6 @@
     "soldier_id": "0096000182",
     "pdf_x_end": 354.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000075",
@@ -6141,7 +6360,6 @@
     "fathers_name": "B",
     "full_name": "Ilić B Jovan",
     "additional_info": "Grajevce, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Grajevce",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -6175,7 +6393,13 @@
         "source_page": 699,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Ilić",
@@ -6268,7 +6492,6 @@
     "fathers_name": "J",
     "full_name": "Ilić J Nenad",
     "additional_info": "Grdelica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Grdelica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -6302,7 +6525,13 @@
         "source_page": 435,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Ilić",
@@ -6311,7 +6540,6 @@
     "fathers_name": "M",
     "full_name": "Ilić M Novica",
     "additional_info": "Razgojno, 12. IV 1945, Spačva (Srem)",
-    "birth_year": "",
     "birth_place": "Razgojno",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -6345,7 +6573,13 @@
         "source_page": 336,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Ilić",
@@ -6375,7 +6609,6 @@
     "fathers_name": "",
     "full_name": "Ilić Stanoje",
     "additional_info": "Kriva Feja, 22. V 1944, Osogovo planina",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "22.05.1944",
     "death_type": "poginuo",
@@ -6397,7 +6630,13 @@
         "source_page": 1377,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Ilić",
@@ -6440,7 +6679,19 @@
         "pdf_y_end": 472.5,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.08.1944",
+          "place": "Gorunovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ilić",
@@ -6449,7 +6700,6 @@
     "fathers_name": "",
     "full_name": "Ilić Svetozar",
     "additional_info": "Kumarevo (Vranje), 29. IX 1944, Vlasotince",
-    "birth_year": "",
     "birth_place": "Kumarevo (Vranje)",
     "death_date": "29.09.1944",
     "death_type": "poginuo",
@@ -6471,7 +6721,13 @@
         "source_page": 1378,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1896"
   },
   {
     "last_name": "Ilić",
@@ -6541,6 +6797,10 @@
         "pdf_y_end": 497.5,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6564,7 +6824,6 @@
     "soldier_id": "0096000195",
     "pdf_x_end": 356.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002504",
@@ -6655,7 +6914,6 @@
     "soldier_id": "0096000198",
     "pdf_x_end": 356.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002505",
@@ -6740,7 +6998,6 @@
     "pdf_x_end": 355.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9025037214",
@@ -6762,7 +7019,15 @@
         "pdf_y_end": 307.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro Koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ismailović",
@@ -6827,7 +7092,6 @@
     "fathers_name": "V",
     "full_name": "Ivanović V Božidar",
     "additional_info": "Strelac, 12. IV 1945, Lipovac (Srem)",
-    "birth_year": "",
     "birth_place": "Strelac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -6876,7 +7140,13 @@
         "source_page": 56,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Ivanović",
@@ -6955,6 +7225,10 @@
         "pdf_y_end": 456.7,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6964,7 +7238,6 @@
     "fathers_name": "",
     "full_name": "Ivanović Dušan",
     "additional_info": "Izumno, 3. VIII 1944, Klinovac",
-    "birth_year": "",
     "birth_place": "Izumno",
     "death_date": "03.08.1944",
     "death_type": "poginuo",
@@ -6986,7 +7259,13 @@
         "source_page": 1376,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1906"
   },
   {
     "last_name": "Ivanović",
@@ -7016,7 +7295,6 @@
     "fathers_name": "V",
     "full_name": "Ivanović V Sava",
     "additional_info": "Strelac, 12. IV 1945, Lipovac (Srem)",
-    "birth_year": "",
     "birth_place": "Strelac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -7050,7 +7328,13 @@
         "source_page": 56,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Ivanović",
@@ -7073,7 +7357,6 @@
     "soldier_id": "0096000209",
     "pdf_x_end": 320.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000084",
@@ -7111,7 +7394,6 @@
     "pdf_x_end": 360.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000077",
@@ -7168,7 +7450,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000212",
     "pdf_x_end": 356.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002503",
@@ -7202,6 +7483,10 @@
         "pdf_y_end": 260.6,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7225,7 +7510,6 @@
     "soldier_id": "0096000213",
     "pdf_x_end": 332.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000087",
@@ -7263,7 +7547,6 @@
     "pdf_x_end": 318.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000079",
@@ -7289,7 +7572,12 @@
         "pdf_y_end": 316.5,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Ivković",
@@ -7355,7 +7643,6 @@
     "pdf_x_end": 332.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000080",
@@ -7427,7 +7714,6 @@
     "soldier_id": "0096000219",
     "pdf_x_end": 356.4,
     "occupation": "tekstilni radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002509",
@@ -7461,6 +7747,10 @@
         "pdf_y_end": 271.9,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7506,7 +7796,6 @@
     "pdf_x_end": 316.5,
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000082",
@@ -7584,7 +7873,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000224",
     "pdf_x_end": 322.8,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025009562",
@@ -7618,7 +7906,19 @@
         "pdf_y_end": 233.4,
         "unit_file": "7-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.09.1944",
+          "place": "Karačevo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -7627,7 +7927,6 @@
     "fathers_name": "",
     "full_name": "Janković Mile",
     "additional_info": "Prvonek, 28. VI 1944, Ogošte",
-    "birth_year": "",
     "birth_place": "Prvonek",
     "death_date": "28.06.1944",
     "death_type": "poginuo",
@@ -7649,7 +7948,13 @@
         "source_page": 1379,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Janković",
@@ -7717,8 +8022,7 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "pekar",
-    "rank": "borac"
+    "occupation": "pekar"
   },
   {
     "last_name": "Janković",
@@ -7851,7 +8155,19 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "komandir čete"
+    "birth_date": "30.10.1924",
+    "variants": {
+      "death": [
+        {
+          "date": "04.09.1944",
+          "place": "Jastrebac"
+        },
+        {
+          "date": "07.10.1944",
+          "place": "Jastrebac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -7921,7 +8237,7 @@
     "ethnicity": "Srbin",
     "occupation": "radnik",
     "death_place": "Jastrebac",
-    "rank": "komandir čete"
+    "birth_date": "30.10.1924"
   },
   {
     "last_name": "Jasenović",
@@ -7987,7 +8303,6 @@
     "pdf_x_end": 367.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000088",
@@ -8101,7 +8416,6 @@
     "soldier_id": "0096000237",
     "pdf_x_end": 364.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000096",
@@ -8163,7 +8477,6 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "rank": "borac",
     "occupation": "graćevinski radnik"
   },
   {
@@ -8187,7 +8500,6 @@
     "soldier_id": "0096000239",
     "pdf_x_end": 356.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002511",
@@ -8313,6 +8625,10 @@
         "pdf_y_end": 495.1,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8463,7 +8779,6 @@
     "pdf_x_end": 337.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037221",
@@ -8515,7 +8830,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000248",
     "pdf_x_end": 332.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000101",
@@ -8538,7 +8852,6 @@
     "fathers_name": "S",
     "full_name": "Jovanović S Radojko",
     "additional_info": "Prolesje, 12. IV .1945, Bosut",
-    "birth_year": "",
     "birth_place": "Prolesje",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -8592,7 +8905,13 @@
         "pdf_y_end": 390.3,
         "ref_book": "sremski-front-poginuli"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Jovanović",
@@ -8650,7 +8969,6 @@
     "soldier_id": "0096000251",
     "pdf_x_end": 320.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000102",
@@ -8789,7 +9107,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000255",
     "pdf_x_end": 333.1,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -8849,7 +9166,6 @@
     "pdf_x_end": 318.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000096",
@@ -8863,7 +9179,15 @@
         "pdf_y_end": 271.1,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "Sakar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -8885,7 +9209,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000258",
     "pdf_x_end": 333.1,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -9000,7 +9323,6 @@
     "soldier_id": "0096000262",
     "pdf_x_end": 364.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000106",
@@ -9049,7 +9371,15 @@
         "pdf_y_end": 347.0,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "30.11.1944",
+          "place": "Novi Pazar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -9119,7 +9449,15 @@
         "pdf_y_end": 371.5,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.04.1944",
+          "place": "Gramada"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -9128,7 +9466,6 @@
     "fathers_name": "S",
     "full_name": "Jovanović S Vojislav",
     "additional_info": "Crna Trava, 4. X 1944, Lipovica (Vlasotinci)",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "04.10.1944",
     "death_type": "poginuo",
@@ -9150,7 +9487,13 @@
         "source_page": 67,
         "ref_book": "zrtve-rata-1964-kos"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Jovanović",
@@ -9173,7 +9516,6 @@
     "soldier_id": "0096000267",
     "pdf_x_end": 341.8,
     "occupation": "ciglarski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000108",
@@ -9265,7 +9607,19 @@
         "pdf_y_end": 123.2,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "11.04.1944",
+          "place": "Bistrica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jović",
@@ -9289,7 +9643,6 @@
     "pdf_x_end": 354.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025036558",
@@ -9323,7 +9676,19 @@
         "pdf_y_end": 461.2,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro koplje"
+        },
+        {
+          "date": "06.10.1944",
+          "place": "Crna Bara, Vlasotince"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jović",
@@ -9388,7 +9753,6 @@
     "fathers_name": "",
     "full_name": "Jović Vera",
     "additional_info": "Vladičin Han, 12. V 1944, Stari Glog",
-    "birth_year": "",
     "birth_place": "Vladičin Han",
     "death_date": "12.05.1944",
     "death_type": "poginuo",
@@ -9422,7 +9786,13 @@
         "pdf_y_end": 378.8,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Jović",
@@ -9445,7 +9815,6 @@
     "soldier_id": "0096000274",
     "pdf_x_end": 360.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002512",
@@ -9515,7 +9884,6 @@
     "soldier_id": "0096000276",
     "pdf_x_end": 324.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000113",
@@ -9538,7 +9906,6 @@
     "fathers_name": "V",
     "full_name": "Kamenović V Vukašin",
     "additional_info": "V. Lukanja, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "V. Lukanja",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -9572,7 +9939,13 @@
         "source_page": 961,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Kantarević",
@@ -9595,7 +9968,6 @@
     "soldier_id": "0096000278",
     "pdf_x_end": 360.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002514",
@@ -9693,7 +10065,6 @@
     "fathers_name": "M",
     "full_name": "Karanfilović M Vlada",
     "additional_info": "Trebešinje, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Trebešinje",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -9742,7 +10113,13 @@
         "source_page": 1367,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Kitanović",
@@ -9846,7 +10223,6 @@
     "pdf_x_end": 352.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000107",
@@ -9860,7 +10236,8 @@
         "pdf_y_end": 380.3,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "03.03.1920"
   },
   {
     "last_name": "Kocić",
@@ -9869,7 +10246,6 @@
     "fathers_name": "I",
     "full_name": "Kocić I Aleksandar",
     "additional_info": "Guberevac, 27. VI 1944, Svirce (Medveđa)",
-    "birth_year": "",
     "birth_place": "Guberevac",
     "death_date": "27.06.1944",
     "death_type": "poginuo",
@@ -9891,7 +10267,13 @@
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Kocić",
@@ -9914,7 +10296,6 @@
     "soldier_id": "0096000287",
     "pdf_x_end": 326.1,
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
     "other_sources": [
       {
         "soldier_id": "0090000116",
@@ -9952,7 +10333,6 @@
     "pdf_x_end": 322.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037236",
@@ -9974,7 +10354,15 @@
         "pdf_y_end": 555.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "23.03.1945",
+          "place": "Gradina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kocić",
@@ -10018,7 +10406,18 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "rank": "borac"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1945",
+          "place": "kod Lipovca na Sremskom frontu"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kocić",
@@ -10118,7 +10517,6 @@
     "soldier_id": "0096000293",
     "pdf_x_end": 311.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025011602",
@@ -10140,6 +10538,10 @@
         "pdf_y_end": 346.3,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10170,7 +10572,6 @@
     "fathers_name": "T",
     "full_name": "Kocić T Svetozar",
     "additional_info": "Navalin, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Navalin",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -10204,7 +10605,13 @@
         "source_page": 715,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Kocić",
@@ -10262,7 +10669,6 @@
     "soldier_id": "0096000297",
     "pdf_x_end": 314.8,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000122",
@@ -10360,8 +10766,7 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "građevinski radnik",
-    "rank": "borac"
+    "occupation": "građevinski radnik"
   },
   {
     "last_name": "Kostadinović",
@@ -10404,6 +10809,10 @@
         "pdf_y_end": 236.2,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10413,7 +10822,6 @@
     "fathers_name": "D",
     "full_name": "Kostadinović D Stojan",
     "additional_info": "Brod, 4. X 1944, Lipovica (Vlasotinci)",
-    "birth_year": "",
     "birth_place": "Brod",
     "death_date": "04.10.1944",
     "death_type": "poginuo",
@@ -10435,7 +10843,13 @@
         "source_page": 380,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Kostić",
@@ -10459,7 +10873,6 @@
     "pdf_x_end": 308.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037287",
@@ -10481,7 +10894,8 @@
         "pdf_y_end": 487.3,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "04.03.1921"
   },
   {
     "last_name": "Kostić",
@@ -10504,7 +10918,6 @@
     "soldier_id": "0096000303",
     "pdf_x_end": 359.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000127",
@@ -10542,7 +10955,6 @@
     "pdf_x_end": 352.2,
     "ethnicity": "Srbin",
     "occupation": "pekarski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000111",
@@ -10556,7 +10968,8 @@
         "pdf_y_end": 551.6,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.10.1919"
   },
   {
     "last_name": "Kostić",
@@ -10621,7 +11034,6 @@
     "soldier_id": "0096000307",
     "pdf_x_end": 358.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000128",
@@ -10659,7 +11071,6 @@
     "pdf_x_end": 347.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000112",
@@ -10738,7 +11149,6 @@
     "soldier_id": "0096000311",
     "pdf_x_end": 359.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002517",
@@ -10772,6 +11182,10 @@
         "pdf_y_end": 357.6,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10886,7 +11300,6 @@
     "soldier_id": "0096000315",
     "pdf_x_end": 324.3,
     "occupation": "zemljoradnik",
-    "rank": "desetar",
     "other_sources": [
       {
         "soldier_id": "0090000131",
@@ -10900,7 +11313,15 @@
         "pdf_y_end": 447.6,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.02.1945",
+          "place": "Sjenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kostić",
@@ -10958,7 +11379,6 @@
     "pdf_x_end": 331.1,
     "birth_place": "Prisjan, Pirot",
     "occupation": "učenik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025025031",
@@ -10980,6 +11400,10 @@
         "pdf_y_end": 170.4,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11028,8 +11452,7 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac"
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Kostić",
@@ -11053,7 +11476,6 @@
     "pdf_x_end": 347.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000114",
@@ -11067,7 +11489,8 @@
         "pdf_y_end": 349.1,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "05.01.1924"
   },
   {
     "last_name": "Kostić",
@@ -11091,7 +11514,6 @@
     "pdf_x_end": 320.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000115",
@@ -11105,7 +11527,8 @@
         "pdf_y_end": 414.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.11.1922"
   },
   {
     "last_name": "Kostić",
@@ -11129,7 +11552,6 @@
     "pdf_x_end": 347.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025008255",
@@ -11151,7 +11573,15 @@
         "pdf_y_end": 490.3,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kostić",
@@ -11236,7 +11666,6 @@
     "pdf_x_end": 313.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000117",
@@ -11295,7 +11724,6 @@
     "pdf_x_end": 348.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025008326",
@@ -11317,7 +11745,15 @@
         "pdf_y_end": 273.1,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krstić",
@@ -11341,7 +11777,6 @@
     "pdf_x_end": 329.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000120",
@@ -11355,7 +11790,15 @@
         "pdf_y_end": 337.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.08.1944",
+          "place": "Cer"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krstić",
@@ -11378,7 +11821,6 @@
     "soldier_id": "0096000329",
     "pdf_x_end": 367.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000137",
@@ -11401,7 +11843,6 @@
     "fathers_name": "S",
     "full_name": "Krstić S Jovan",
     "additional_info": "Goločevac, 8. IX 1944, Belo Polje",
-    "birth_year": "",
     "birth_place": "Goločevac",
     "death_date": "08.09.1944",
     "death_type": "poginuo",
@@ -11443,7 +11884,13 @@
         "pdf_y_end": 111.5,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1908"
   },
   {
     "last_name": "Krstić",
@@ -11466,7 +11913,6 @@
     "soldier_id": "0096000331",
     "pdf_x_end": 331.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000139",
@@ -11551,7 +11997,6 @@
     "fathers_name": "S",
     "full_name": "Krstić S Mladen",
     "additional_info": "Jelašnica, 17. XI 1944, Lab (Kosovo)",
-    "birth_year": "",
     "birth_place": "Jelašnica",
     "death_date": "17.11.1944",
     "death_type": "poginuo",
@@ -11585,7 +12030,13 @@
         "pdf_y_end": 136.3,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Krstić",
@@ -11643,7 +12094,6 @@
     "soldier_id": "0096000335",
     "pdf_x_end": 326.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002522",
@@ -11720,7 +12170,6 @@
     "fathers_name": "Đ",
     "full_name": "Krstić Đ Tihomir",
     "additional_info": "Krupac, 17. XI 1944, Lab (Kosovo)",
-    "birth_year": "",
     "birth_place": "Krupac",
     "death_date": "17.11.1944",
     "death_type": "poginuo",
@@ -11742,7 +12191,13 @@
         "source_page": 961,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Krstić",
@@ -11751,7 +12206,6 @@
     "fathers_name": "S",
     "full_name": "Krstić S Vladimir",
     "additional_info": "Leskovac, 13. XI 1944, Novi Pazar",
-    "birth_year": "",
     "birth_place": "Leskovac",
     "death_date": "13.11.1944",
     "death_type": "poginuo",
@@ -11785,7 +12239,21 @@
         "pdf_y_end": 517.5,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912",
+    "variants": {
+      "death": [
+        {
+          "date": "13.12.1944",
+          "place": "Novi Pazar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krstić",
@@ -11815,7 +12283,6 @@
     "fathers_name": "M",
     "full_name": "Krstić M Vukašin",
     "additional_info": "Crkovnica",
-    "birth_year": "",
     "birth_place": "Crkovnica",
     "death_type": "poginuo",
     "unit_detail": "12. srpska brigada",
@@ -11835,7 +12302,17 @@
         "source_page": 334,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "K,mitrovica",
+    "birth_year": "1927"
   },
   {
     "last_name": "Kukar",
@@ -11921,7 +12398,6 @@
     "pdf_x_end": 364.9,
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
-    "rank": "referent saniteta",
     "other_sources": [
       {
         "soldier_id": "9025031019",
@@ -11943,7 +12419,8 @@
         "pdf_y_end": 445.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "01.06.1922"
   },
   {
     "last_name": "Lefik",
@@ -11985,7 +12462,6 @@
     "soldier_id": "0096000347",
     "pdf_x_end": 324.6,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0085000389",
@@ -12011,7 +12487,15 @@
         "pdf_y_end": 531.5,
         "unit_file": "7-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.05.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lepojević",
@@ -12056,7 +12540,6 @@
     "pdf_x_end": 348.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000125",
@@ -12115,7 +12598,6 @@
     "pdf_x_end": 327.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja",
     "other_sources": [
       {
         "soldier_id": "0088000126",
@@ -12152,7 +12634,6 @@
     "soldier_id": "0096000352",
     "pdf_x_end": 314.0,
     "ethnicity": "Srbin",
-    "rank": "komandir odeljenja",
     "occupation": "radnik",
     "other_sources": [
       {
@@ -12274,7 +12755,6 @@
     "soldier_id": "0096000357",
     "pdf_x_end": 361.7,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000150",
@@ -12311,7 +12791,6 @@
     "soldier_id": "0096000358",
     "pdf_x_end": 325.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000151",
@@ -12389,7 +12868,6 @@
     "soldier_id": "0096000361",
     "pdf_x_end": 354.8,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002523",
@@ -12494,7 +12972,6 @@
     "soldier_id": "0096000364",
     "pdf_x_end": 314.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000153",
@@ -12517,7 +12994,6 @@
     "fathers_name": "N",
     "full_name": "Maksić N Sava",
     "additional_info": "Stajovac, 12. IV 1945, Bosut (umro u Beogradu)",
-    "birth_year": "",
     "birth_place": "Stajovac",
     "death_date": "12.04.1945",
     "death_type": "umro",
@@ -12559,7 +13035,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Malinović",
@@ -12568,7 +13050,6 @@
     "fathers_name": "Z",
     "full_name": "Malinović Z Stojil",
     "additional_info": "Surlica, 12. V 1944, Plana planina",
-    "birth_year": "",
     "birth_place": "Surlica",
     "death_date": "12.05.1944",
     "death_type": "poginuo",
@@ -12590,7 +13071,13 @@
         "source_page": 1251,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Manasijević",
@@ -12738,7 +13225,6 @@
     "soldier_id": "0096000371",
     "pdf_x_end": 328.3,
     "occupation": "zemljoradnik",
-    "rank": "politički komesar",
     "other_sources": [
       {
         "soldier_id": "0090000154",
@@ -12761,7 +13247,6 @@
     "fathers_name": "",
     "full_name": "Mančić Dušan",
     "additional_info": "Pakleštica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Pakleštica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -12783,7 +13268,13 @@
         "source_page": 962,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Marinković",
@@ -12828,7 +13319,6 @@
     "pdf_x_end": 348.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000133",
@@ -12866,7 +13356,6 @@
     "pdf_x_end": 313.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000134",
@@ -12945,7 +13434,6 @@
     "soldier_id": "0096000378",
     "pdf_x_end": 355.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002524",
@@ -12994,6 +13482,10 @@
         "pdf_y_end": 203.7,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13189,7 +13681,6 @@
     "soldier_id": "0096000386",
     "pdf_x_end": 361.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000158",
@@ -13310,7 +13801,6 @@
     "fathers_name": "",
     "full_name": "Mihajlović Branko",
     "additional_info": "Vranjska Banja, 27. IV 1944, Lisac planina",
-    "birth_year": "",
     "birth_place": "Vranjska Banja",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -13332,7 +13822,13 @@
         "source_page": 1381,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Mihajlović",
@@ -13376,7 +13872,6 @@
     "soldier_id": "0096000393",
     "pdf_x_end": 349.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000160",
@@ -13399,7 +13894,6 @@
     "fathers_name": "",
     "full_name": "Mihajlović Milić",
     "additional_info": "Slivnica, 3. VIII 1944, Klinovac",
-    "birth_year": "",
     "birth_place": "Slivnica",
     "death_date": "03.08.1944",
     "death_type": "poginuo",
@@ -13433,7 +13927,13 @@
         "pdf_y_end": 420.7,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Mihajlović",
@@ -13442,7 +13942,6 @@
     "fathers_name": "D",
     "full_name": "Mihajlović D Milorad",
     "additional_info": "Grdanica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Grdanica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -13491,7 +13990,13 @@
         "source_page": 335,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Mihajlović",
@@ -13576,7 +14081,15 @@
         "pdf_y_end": 505.2,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.04.1944",
+          "place": "Strezimirovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mihajlović",
@@ -13726,7 +14239,6 @@
     "pdf_x_end": 314.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025010516",
@@ -13748,7 +14260,16 @@
         "pdf_y_end": 335.6,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.04.1923",
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1945",
+          "place": "Sakar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milenković",
@@ -13821,7 +14342,6 @@
     "soldier_id": "0096000404",
     "pdf_x_end": 355.5,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002525",
@@ -13856,7 +14376,6 @@
     "fathers_name": "N",
     "full_name": "Milenković N Dušan",
     "additional_info": "Slivnica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Slivnica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -13890,7 +14409,13 @@
         "source_page": 1380,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1911"
   },
   {
     "last_name": "Milenković",
@@ -13934,7 +14459,6 @@
     "fathers_name": "",
     "full_name": "Milenković Mihajlo",
     "additional_info": "Dikava, 4. IX 1944, Jastrebac",
-    "birth_year": "",
     "birth_place": "Dikava",
     "death_date": "04.09.1944",
     "death_type": "poginuo",
@@ -13956,7 +14480,13 @@
         "source_page": 1184,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Milenković",
@@ -14078,7 +14608,6 @@
     "soldier_id": "0096000412",
     "pdf_x_end": 325.8,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000166",
@@ -14092,7 +14621,15 @@
         "pdf_y_end": 401.5,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "26.06.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Miljković",
@@ -14151,7 +14688,6 @@
     "pdf_x_end": 354.7,
     "ethnicity": "Srbin",
     "occupation": "ciglarski radnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "0088000151",
@@ -14165,7 +14701,8 @@
         "pdf_y_end": 291.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "20.10.1908"
   },
   {
     "last_name": "Miljković",
@@ -14220,6 +14757,10 @@
         "pdf_y_end": 112.8,
         "unit_file": "22-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14275,6 +14816,10 @@
         "pdf_y_end": 283.1,
         "unit_file": "22-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14425,7 +14970,6 @@
     "fathers_name": "",
     "full_name": "Milosavljević Čedomir",
     "additional_info": "Ravna Reka, 7. IX 1944, Aleksinac",
-    "birth_year": "",
     "birth_place": "Ravna Reka",
     "death_date": "07.09.1944",
     "death_type": "poginuo",
@@ -14459,7 +15003,13 @@
         "pdf_y_end": 497.8,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Milovanović",
@@ -14482,7 +15032,6 @@
     "soldier_id": "0096000422",
     "pdf_x_end": 358.8,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025009584",
@@ -14528,7 +15077,19 @@
         "pdf_y_end": 121.9,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "30.07.1944",
+          "place": "na Javorskim padinama kod Krivog Vira"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milovanović",
@@ -14608,7 +15169,14 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "rank": "komandir čete"
+    "variants": {
+      "death": [
+        {
+          "date": "27.06.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milovanović",
@@ -14632,7 +15200,6 @@
     "pdf_x_end": 327.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025011570",
@@ -14654,7 +15221,8 @@
         "pdf_y_end": 292.3,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "27.11.1908"
   },
   {
     "last_name": "Milovanović",
@@ -14689,7 +15257,15 @@
         "pdf_y_end": 398.9,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "11.03.1944",
+          "place": "Bistrica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milovanović",
@@ -14712,7 +15288,6 @@
     "soldier_id": "0096000427",
     "pdf_x_end": 326.3,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000174",
@@ -14735,7 +15310,6 @@
     "fathers_name": "",
     "full_name": "Milošević Arsa",
     "additional_info": "Kriva Feja, 22. V 1944, Osogovo planina",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "22.05.1944",
     "death_type": "poginuo",
@@ -14769,7 +15343,21 @@
         "pdf_y_end": 512.0,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923",
+    "variants": {
+      "death": [
+        {
+          "date": "22.04.1944",
+          "place": "Osogovo planina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milošević",
@@ -14798,7 +15386,6 @@
     "fathers_name": "J",
     "full_name": "Milošević J Dušan",
     "additional_info": "Šajince, 18. II 1945, Zvornik",
-    "birth_year": "",
     "birth_place": "Šajince",
     "death_date": "18.02.1945",
     "death_type": "poginuo",
@@ -14820,7 +15407,13 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Milošević",
@@ -14850,7 +15443,6 @@
     "fathers_name": "S",
     "full_name": "Milošević S Micko",
     "additional_info": "Crkovnica",
-    "birth_year": "",
     "birth_place": "Crkovnica",
     "death_type": "poginuo",
     "unit_detail": "12. srpska brigada",
@@ -14870,7 +15462,17 @@
         "source_page": 334,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Bosuta",
+    "birth_year": "1922"
   },
   {
     "last_name": "Milošević",
@@ -14916,7 +15518,15 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "birth_date": "20.09.1919",
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "Budišić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milošević",
@@ -14965,7 +15575,6 @@
     "fathers_name": "J",
     "full_name": "Milošević J Petar",
     "additional_info": "Radoševac, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Radoševac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -14999,7 +15608,13 @@
         "source_page": 54,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Milošević",
@@ -15008,7 +15623,6 @@
     "fathers_name": "",
     "full_name": "Milošević Vlajko",
     "additional_info": "Kriva Feja, 27. IV 1944, Lisac planina",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -15030,7 +15644,13 @@
         "source_page": 1377,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Miltenović",
@@ -15095,7 +15715,6 @@
     "fathers_name": "M",
     "full_name": "Milčić M Dušan",
     "additional_info": "Crna Trava, 28. VI 1944, Ogošte (Kosovo)",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "28.06.1944",
     "death_type": "poginuo",
@@ -15117,7 +15736,13 @@
         "source_page": 382,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1916"
   },
   {
     "last_name": "Milčić",
@@ -15141,7 +15766,6 @@
     "pdf_x_end": 353.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000159",
@@ -15155,7 +15779,8 @@
         "pdf_y_end": 660.2,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "12.03.1923"
   },
   {
     "last_name": "Milčić",
@@ -15200,7 +15825,6 @@
     "pdf_x_end": 352.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja",
     "other_sources": [
       {
         "soldier_id": "0088000160",
@@ -15258,7 +15882,6 @@
     "fathers_name": "J",
     "full_name": "Mitić J Dušan",
     "additional_info": "D. Stajovac, 18. XI 1944, Lab (Kosovo)",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "18.11.1944",
     "death_type": "poginuo",
@@ -15292,7 +15915,21 @@
         "pdf_y_end": 361.7,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921",
+    "variants": {
+      "death": [
+        {
+          "date": "18.07.1944",
+          "place": "Biljača"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mitić",
@@ -15301,7 +15938,6 @@
     "fathers_name": "J",
     "full_name": "Mitić J Dušan",
     "additional_info": "D. Stajovac, 16. XI 1944, Oštro koplje",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "16.11.1944",
     "death_type": "poginuo",
@@ -15323,7 +15959,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Mitić",
@@ -15423,7 +16065,6 @@
     "soldier_id": "0096000450",
     "pdf_x_end": 361.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002526",
@@ -15458,7 +16099,6 @@
     "fathers_name": "S",
     "full_name": "Mitić S Momir",
     "additional_info": "Jakovljevo, 12. IV 1945, Lipovac (Srem)",
-    "birth_year": "",
     "birth_place": "Jakovljevo",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -15492,7 +16132,13 @@
         "source_page": 1356,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Mitić",
@@ -15593,7 +16239,6 @@
     "fathers_name": "",
     "full_name": "Mitić Radivoje",
     "additional_info": "Buštranje, 14. I 1945, Raška",
-    "birth_year": "",
     "birth_place": "Buštranje",
     "death_date": "14.01.1945",
     "death_type": "poginuo",
@@ -15615,7 +16260,13 @@
         "source_page": 1366,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Mitić",
@@ -15751,7 +16402,6 @@
     "pdf_x_end": 308.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000166",
@@ -15765,7 +16415,16 @@
         "pdf_y_end": 596.0,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "02.08.1908",
+    "variants": {
+      "death": [
+        {
+          "date": "02.09.1944",
+          "place": "Džep"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mitić",
@@ -15809,7 +16468,6 @@
     "pdf_x_end": 289.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000170",
@@ -15902,7 +16560,6 @@
     "soldier_id": "0096000465",
     "pdf_x_end": 359.9,
     "occupation": "stolarski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000185",
@@ -15975,7 +16632,6 @@
     "pdf_x_end": 355.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002445",
@@ -16025,7 +16681,12 @@
         "pdf_y_end": 156.8,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Mitrović",
@@ -16047,7 +16708,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000468",
     "pdf_x_end": 361.6,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002529",
@@ -16107,7 +16767,12 @@
       }
     ],
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Mitrović",
@@ -16116,7 +16781,6 @@
     "fathers_name": "",
     "full_name": "Mitrović Dobrosav",
     "additional_info": "Preševo, 27. IV 1944, Lisac planina",
-    "birth_year": "",
     "birth_place": "Preševo",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -16138,7 +16802,13 @@
         "source_page": 995,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Mitrović",
@@ -16180,7 +16850,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000471",
     "pdf_x_end": 361.8,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -16239,7 +16908,6 @@
     "soldier_id": "0096000473",
     "pdf_x_end": 337.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037223",
@@ -16261,6 +16929,10 @@
         "pdf_y_end": 84.7,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16291,7 +16963,6 @@
     "fathers_name": "D",
     "full_name": "Mitrović D Živojin",
     "additional_info": "Radinjci, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Radinjci",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -16325,7 +16996,13 @@
         "source_page": 54,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Mičić",
@@ -16405,7 +17082,6 @@
     "pdf_x_end": 316.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000175",
@@ -16441,7 +17117,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000479",
     "pdf_x_end": 360.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000190",
@@ -16478,7 +17153,6 @@
     "pdf_x_end": 287.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_place": "Lipovac, Sremski front",
     "other_sources": [
       {
@@ -16541,7 +17215,6 @@
     "pdf_x_end": 327.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002533",
@@ -16615,7 +17288,6 @@
     "pdf_x_end": 354.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000177",
@@ -16638,7 +17310,6 @@
     "fathers_name": "",
     "full_name": "Mišić Živko",
     "additional_info": "Prevalac, 27. IV 1944, Lisac planin",
-    "birth_year": "",
     "birth_place": "Prevalac",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -16660,7 +17331,13 @@
         "source_page": 1379,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Mladenović",
@@ -16710,7 +17387,7 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "birth_date": "06.04.1921"
   },
   {
     "last_name": "Mladenović",
@@ -16733,7 +17410,6 @@
     "soldier_id": "0096000485",
     "pdf_x_end": 327.6,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002534",
@@ -16802,7 +17478,6 @@
     "soldier_id": "0096000487",
     "pdf_x_end": 324.4,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000194",
@@ -16915,7 +17590,7 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja"
+    "birth_date": "06.08.1926"
   },
   {
     "last_name": "Mladenović",
@@ -16980,7 +17655,6 @@
     "fathers_name": "",
     "full_name": "Mladenović Karlo",
     "additional_info": "Jelovica, 4. III 1945, Balatinac",
-    "birth_year": "",
     "birth_place": "Jelovica",
     "death_date": "04.03.1945",
     "death_type": "poginuo",
@@ -17002,7 +17676,13 @@
         "source_page": 960,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Mladenović",
@@ -17046,7 +17726,6 @@
     "soldier_id": "0096000495",
     "pdf_x_end": 349.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000196",
@@ -17060,7 +17739,15 @@
         "pdf_y_end": 66.4,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.09.1944",
+          "place": "Modra Stena"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mladenović",
@@ -17210,7 +17897,6 @@
     "pdf_x_end": 315.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000187",
@@ -17331,7 +18017,6 @@
     "pdf_x_end": 315.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025008330",
@@ -17353,7 +18038,8 @@
         "pdf_y_end": 618.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "15.08.1926"
   },
   {
     "last_name": "Mladenović",
@@ -17418,6 +18104,10 @@
         "pdf_y_end": 315.3,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17441,7 +18131,6 @@
     "soldier_id": "0096000508",
     "pdf_x_end": 364.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000202",
@@ -17478,7 +18167,6 @@
     "soldier_id": "0096000509",
     "pdf_x_end": 368.9,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000203",
@@ -17515,7 +18203,6 @@
     "soldier_id": "0096000510",
     "pdf_x_end": 327.8,
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
     "other_sources": [
       {
         "soldier_id": "9013002535",
@@ -17564,6 +18251,10 @@
         "pdf_y_end": 462.4,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17700,7 +18391,6 @@
     "soldier_id": "0096000515",
     "pdf_x_end": 354.0,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000211",
@@ -17737,7 +18427,6 @@
     "soldier_id": "0096000516",
     "pdf_x_end": 333.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0085000611",
@@ -17775,7 +18464,18 @@
         "pdf_y_end": 126.0,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1902"
+      ],
+      "death": [
+        {
+          "date": "27.05.1944",
+          "place": "Gornja Jablanica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Momčilović",
@@ -17798,7 +18498,6 @@
     "soldier_id": "0096000517",
     "pdf_x_end": 326.1,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000213",
@@ -17836,7 +18535,6 @@
     "pdf_x_end": 335.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "desetar",
     "other_sources": [
       {
         "soldier_id": "9025037302",
@@ -17870,7 +18568,15 @@
         "pdf_y_end": 212.4,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.08.1944",
+          "place": "Vlasotince"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mustafović",
@@ -17915,7 +18621,6 @@
     "pdf_x_end": 353.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000194",
@@ -17941,7 +18646,15 @@
         "pdf_y_end": 472.4,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nacić",
@@ -17965,7 +18678,6 @@
     "pdf_x_end": 349.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000194",
@@ -17991,7 +18703,15 @@
         "pdf_y_end": 279.3,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.11.1944",
+          "place": "Lab (Kosovo)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Najdanović",
@@ -18000,7 +18720,6 @@
     "fathers_name": "",
     "full_name": "Najdanović Boško",
     "additional_info": "Crna Trava, 18. VI 1944, Grdelica",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "18.06.1944",
     "death_type": "poginuo",
@@ -18022,7 +18741,13 @@
         "source_page": 382,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Najdanović",
@@ -18031,7 +18756,6 @@
     "fathers_name": "V",
     "full_name": "Najdanović V Božidar",
     "additional_info": "zvani Gane; Crna Trava, 26.VIII 1944, Predejane",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "26.08.1944",
     "death_type": "poginuo",
@@ -18053,7 +18777,13 @@
         "source_page": 383,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Nastasović",
@@ -18077,7 +18807,6 @@
     "pdf_x_end": 353.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000195",
@@ -18100,7 +18829,6 @@
     "fathers_name": "S",
     "full_name": "Načić S Bogdan",
     "additional_info": "Novo Selo, 12. IV 1945, Lipovac (Srem)",
-    "birth_year": "",
     "birth_place": "Novo Selo",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -18134,7 +18862,13 @@
         "source_page": 438,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Nedeljković",
@@ -18185,7 +18919,6 @@
     "fathers_name": "Đ",
     "full_name": "Nedeljković Đ Velimir",
     "additional_info": "Bogojevac, 2. II 1945, (umro od rana u Šapcu)",
-    "birth_year": "",
     "birth_place": "Bogojevac",
     "death_date": "02.02.1945",
     "death_type": "umro",
@@ -18207,7 +18940,13 @@
         "source_page": 697,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Nedeljković",
@@ -18353,7 +19092,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000533",
     "pdf_x_end": 356.1,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002538",
@@ -18402,7 +19140,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000534",
     "pdf_x_end": 320.2,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -18452,7 +19189,15 @@
         "pdf_y_end": 287.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.02.1945",
+          "place": "Amulić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -18482,7 +19227,6 @@
     "fathers_name": "",
     "full_name": "Nikolić Mihajlo",
     "additional_info": "Kriva Feja, 27. IV 1944, Lisac",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "27.04.1944",
     "death_type": "poginuo",
@@ -18504,7 +19248,13 @@
         "source_page": 1377,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Nikolić",
@@ -18548,7 +19298,6 @@
     "pdf_x_end": 352.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "0088000200",
@@ -18562,7 +19311,8 @@
         "pdf_y_end": 419.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "15.09.1914"
   },
   {
     "last_name": "Nikolić",
@@ -18586,7 +19336,6 @@
     "pdf_x_end": 352.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002451",
@@ -18612,7 +19361,8 @@
         "pdf_y_end": 553.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "15.06.1920"
   },
   {
     "last_name": "Nikolić",
@@ -18692,7 +19442,6 @@
     "pdf_x_end": 348.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033140",
@@ -18750,7 +19499,6 @@
     "pdf_x_end": 334.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000204",
@@ -18821,7 +19569,6 @@
     "pdf_x_end": 307.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025017449",
@@ -18843,7 +19590,8 @@
         "pdf_y_end": 287.0,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "17.04.1926"
   },
   {
     "last_name": "Nikolić",
@@ -18867,7 +19615,6 @@
     "pdf_x_end": 345.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002452",
@@ -18916,7 +19663,6 @@
     "soldier_id": "0096000548",
     "pdf_x_end": 326.5,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000229",
@@ -18965,7 +19711,15 @@
         "pdf_y_end": 316.4,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.08.1944",
+          "place": "Otulja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -18974,7 +19728,6 @@
     "fathers_name": "A",
     "full_name": "Nikolić A Vasko",
     "additional_info": "D. Stajovac, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -19008,7 +19761,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1917"
   },
   {
     "last_name": "Nikolić",
@@ -19030,7 +19789,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000551",
     "pdf_x_end": 320.1,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -19089,7 +19847,6 @@
     "fathers_name": "M",
     "full_name": "Nikolić M Čedomir",
     "additional_info": "Jarsenovo, 30. XI 1944, Novi Pazar",
-    "birth_year": "",
     "birth_place": "Jarsenovo",
     "death_date": "30.11.1944",
     "death_type": "poginuo",
@@ -19111,7 +19868,13 @@
         "source_page": 700,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Ninčić",
@@ -19120,7 +19883,6 @@
     "fathers_name": "B",
     "full_name": "Ninčić B Blagoje",
     "additional_info": "Koprištica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Koprištica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -19154,7 +19916,13 @@
         "source_page": 961,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Novković",
@@ -19184,7 +19952,6 @@
     "fathers_name": "S",
     "full_name": "Novković S Nasko",
     "additional_info": "Radovnica, 12. V 1944, Tumba (Vlasotince)",
-    "birth_year": "",
     "birth_place": "Radovnica",
     "death_date": "12.05.1944",
     "death_type": "poginuo",
@@ -19199,7 +19966,6 @@
     "pdf_x_end": 358.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033258",
@@ -19221,6 +19987,10 @@
         "pdf_y_end": 525.8,
         "unit_file": "10-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -19230,7 +20000,6 @@
     "fathers_name": "S",
     "full_name": "Novković S Vasa",
     "additional_info": "Radovnica, 12. V 1944, Tumba (Vlasotince)",
-    "birth_year": "",
     "birth_place": "Radovnica",
     "death_date": "12.05.1944",
     "death_type": "poginuo",
@@ -19252,7 +20021,13 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Pajić",
@@ -19261,7 +20036,6 @@
     "fathers_name": "Đ",
     "full_name": "Pajić Đ Mile",
     "additional_info": "Surdulica, 6. X 1944, Crna Bara",
-    "birth_year": "",
     "birth_place": "Surdulica",
     "death_date": "06.10.1944",
     "death_type": "poginuo",
@@ -19283,7 +20057,13 @@
         "source_page": 1189,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Panić",
@@ -19341,7 +20121,6 @@
     "pdf_x_end": 345.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000210",
@@ -19378,7 +20157,6 @@
     "soldier_id": "0096000561",
     "pdf_x_end": 356.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002540",
@@ -19449,8 +20227,7 @@
       }
     ],
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac"
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Pančić",
@@ -19474,7 +20251,6 @@
     "pdf_x_end": 345.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9013002456",
@@ -19609,7 +20385,6 @@
     "pdf_x_end": 345.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja",
     "other_sources": [
       {
         "soldier_id": "9013002453",
@@ -19802,8 +20577,7 @@
       }
     ],
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja"
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Pavlović",
@@ -19825,7 +20599,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000569",
     "pdf_x_end": 338.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025009667",
@@ -19848,7 +20621,11 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "graćevinski radnik"
+    "occupation": "graćevinski radnik",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -19857,7 +20634,6 @@
     "fathers_name": "",
     "full_name": "Pavlović Dragomir",
     "additional_info": "Klisurica, 18. VI 1944, Gromada",
-    "birth_year": "",
     "birth_place": "Klisurica",
     "death_date": "18.06.1944",
     "death_type": "poginuo",
@@ -19879,7 +20655,13 @@
         "source_page": 1376,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Pavlović",
@@ -19903,7 +20685,6 @@
     "pdf_x_end": 341.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000215",
@@ -19982,7 +20763,6 @@
     "soldier_id": "0096000574",
     "pdf_x_end": 356.2,
     "occupation": "potkivač",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002541",
@@ -20030,7 +20810,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000575",
     "pdf_x_end": 356.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002542",
@@ -20056,7 +20835,15 @@
         "pdf_y_end": 238.5,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.02.1945",
+          "place": "Lipovac (Srem)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petković",
@@ -20100,7 +20887,6 @@
     "fathers_name": "",
     "full_name": "Petković Dobrosav",
     "additional_info": "Slivnica, 1944",
-    "birth_year": "",
     "birth_place": "Slivnica",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -20121,7 +20907,15 @@
         "source_page": 1380,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Preko albanije",
+    "birth_year": "1923"
   },
   {
     "last_name": "Petković",
@@ -20166,7 +20960,6 @@
     "pdf_x_end": 321.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033187",
@@ -20266,7 +21059,19 @@
         "pdf_y_end": 171.5,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.08.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petković",
@@ -20288,7 +21093,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000582",
     "pdf_x_end": 329.4,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000242",
@@ -20366,6 +21170,10 @@
         "pdf_y_end": 121.5,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20375,7 +21183,6 @@
     "fathers_name": "A",
     "full_name": "Petrov A Petar",
     "additional_info": "Petrališ, 4. III 1945, Balatinac",
-    "birth_year": "",
     "birth_place": "Petrališ",
     "death_date": "04.03.1945",
     "death_type": "poginuo",
@@ -20405,7 +21212,13 @@
         "source_page": 398,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Petrović",
@@ -20448,6 +21261,10 @@
         "pdf_y_end": 221.1,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20471,7 +21288,6 @@
     "soldier_id": "0096000587",
     "pdf_x_end": 320.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000243",
@@ -20508,7 +21324,6 @@
     "soldier_id": "0096000588",
     "pdf_x_end": 325.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000244",
@@ -20531,7 +21346,6 @@
     "fathers_name": "N",
     "full_name": "Petrović N Jordan",
     "additional_info": "Dojkinci, 4. III 1945, Balatinac",
-    "birth_year": "",
     "birth_place": "Dojkinci",
     "death_date": "04.03.1945",
     "death_type": "poginuo",
@@ -20553,7 +21367,13 @@
         "source_page": 959,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Petrović",
@@ -20576,7 +21396,6 @@
     "soldier_id": "0096000590",
     "pdf_x_end": 339.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025001863",
@@ -20598,6 +21417,10 @@
         "pdf_y_end": 106.8,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20621,7 +21444,6 @@
     "soldier_id": "0096000591",
     "pdf_x_end": 339.4,
     "occupation": "domađica",
-    "rank": "bolničarka",
     "other_sources": [
       {
         "soldier_id": "0090000249",
@@ -20693,7 +21515,6 @@
     "soldier_id": "0096000593",
     "pdf_x_end": 364.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002544",
@@ -20727,6 +21548,10 @@
         "pdf_y_end": 426.4,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -20750,7 +21575,6 @@
     "soldier_id": "0096000594",
     "pdf_x_end": 327.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000252",
@@ -20764,7 +21588,15 @@
         "pdf_y_end": 311.5,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.06.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -20787,7 +21619,6 @@
     "soldier_id": "0096000595",
     "pdf_x_end": 351.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000253",
@@ -20866,7 +21697,6 @@
     "fathers_name": "T",
     "full_name": "Petrović T Vladimir",
     "additional_info": "G. Trnica, 14. V 1944, Suva planina",
-    "birth_year": "",
     "birth_place": "G. Trnica",
     "death_date": "14.05.1944",
     "death_type": "poginuo",
@@ -20881,7 +21711,6 @@
     "pdf_x_end": 341.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033188",
@@ -20903,7 +21732,19 @@
         "pdf_y_end": 664.5,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1913",
+    "borrowed": [
+      "birth_year"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.05.1944",
+          "place": "Suva planina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -20925,7 +21766,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000599",
     "pdf_x_end": 326.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000254",
@@ -20963,7 +21803,6 @@
     "pdf_x_end": 325.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000223",
@@ -21000,7 +21839,6 @@
     "soldier_id": "0096000601",
     "pdf_x_end": 356.6,
     "occupation": "učenik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002543",
@@ -21086,7 +21924,6 @@
     "birth_place": "Trgovište",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0096000603",
@@ -21123,7 +21960,19 @@
         "pdf_y_end": 307.1,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.08.1944",
+          "place": "Vlajnja planina"
+        },
+        {
+          "date": "09.1944",
+          "place": "Malošište"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pešić",
@@ -21223,7 +22072,6 @@
     "soldier_id": "0096000608",
     "pdf_x_end": 362.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000258",
@@ -21246,7 +22094,6 @@
     "fathers_name": "V",
     "full_name": "Popov V Todor",
     "additional_info": "Smilovci, 4. III 1945, Balatinac",
-    "birth_year": "",
     "birth_place": "Smilovci",
     "death_date": "04.03.1945",
     "death_type": "poginuo",
@@ -21268,7 +22115,13 @@
         "source_page": 399,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Popović",
@@ -21303,7 +22156,15 @@
         "pdf_y_end": 99.6,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.04.1944",
+          "place": "Strezimirovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Popović",
@@ -21312,7 +22173,6 @@
     "fathers_name": "",
     "full_name": "Popović Stojan",
     "additional_info": "Buštranje, 1944",
-    "birth_year": "",
     "birth_place": "Buštranje",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -21326,7 +22186,6 @@
     "pdf_x_end": 277.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037610",
@@ -21348,7 +22207,13 @@
         "pdf_y_end": 406.3,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Belo Polje",
+    "borrowed": [
+      "birth_year",
+      "death_place"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Popović",
@@ -21517,7 +22382,6 @@
     "pdf_x_end": 358.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000233",
@@ -21576,7 +22440,6 @@
     "pdf_x_end": 357.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000234",
@@ -21634,7 +22497,6 @@
     "fathers_name": "B",
     "full_name": "Rajković B Miodrag",
     "additional_info": "Rutovac, 22. XII 1944, Trepča",
-    "birth_year": "",
     "birth_place": "Rutovac",
     "death_date": "22.12.1944",
     "death_type": "poginuo",
@@ -21656,7 +22518,13 @@
         "source_page": 19,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Rakić",
@@ -21680,7 +22548,6 @@
     "pdf_x_end": 344.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000237",
@@ -21694,7 +22561,8 @@
         "pdf_y_end": 570.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "05.01.1924"
   },
   {
     "last_name": "Rakić",
@@ -21778,7 +22646,6 @@
     "fathers_name": "J",
     "full_name": "Ristić J Dušan",
     "additional_info": "4. III 1945, Balatinac",
-    "birth_year": "",
     "death_date": "04.03.1945",
     "death_type": "poginuo",
     "death_place": "Balatinac",
@@ -21799,7 +22666,15 @@
         "source_page": 1374,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Vranje",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1924"
   },
   {
     "last_name": "Ristić",
@@ -21858,7 +22733,6 @@
     "pdf_x_end": 306.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000239",
@@ -21964,7 +22838,10 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ristić",
@@ -21973,7 +22850,6 @@
     "fathers_name": "A",
     "full_name": "Ristić A Ratko",
     "additional_info": "Manjak, 9. II 1945, Sakar",
-    "birth_year": "",
     "birth_place": "Manjak",
     "death_date": "09.02.1945",
     "death_type": "poginuo",
@@ -21995,7 +22871,13 @@
         "source_page": 1336,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Ristić",
@@ -22004,7 +22886,6 @@
     "fathers_name": "Z",
     "full_name": "Ristić Z Stanko",
     "additional_info": "Crveni Grad, 8. IX 1944, Mačkatica",
-    "birth_year": "",
     "birth_place": "Crveni Grad",
     "death_date": "08.09.1944",
     "death_type": "poginuo",
@@ -22019,7 +22900,6 @@
     "pdf_x_end": 327.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033100",
@@ -22049,6 +22929,10 @@
         "pdf_y_end": 415.1,
         "unit_file": "10-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -22153,8 +23037,7 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac"
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Savić",
@@ -22198,7 +23081,6 @@
     "fathers_name": "K",
     "full_name": "Savić K Vladimir",
     "additional_info": "Bogojevci, 9. II 1945, D. Trešnjevica",
-    "birth_year": "",
     "birth_place": "Bogojevci",
     "death_date": "09.02.1945",
     "death_type": "poginuo",
@@ -22220,7 +23102,13 @@
         "source_page": 697,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Savić",
@@ -22243,7 +23131,6 @@
     "soldier_id": "0096000638",
     "pdf_x_end": 343.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000246",
@@ -22280,7 +23167,6 @@
     "soldier_id": "0096000639",
     "pdf_x_end": 362.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000275",
@@ -22317,7 +23203,6 @@
     "soldier_id": "0096000640",
     "pdf_x_end": 327.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000276",
@@ -22353,7 +23238,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000641",
     "pdf_x_end": 363.5,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002547",
@@ -22417,7 +23301,6 @@
     "pdf_x_end": 344.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir odeljenja",
     "death_place": "Cer",
     "other_sources": [
       {
@@ -22475,7 +23358,15 @@
         "pdf_y_end": 140.4,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.01.1945",
+          "place": "Zvornik"
+        }
+      ]
+    }
   },
   {
     "last_name": "Slavković",
@@ -22498,7 +23389,6 @@
     "soldier_id": "0096000644",
     "pdf_x_end": 363.8,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000279",
@@ -22606,6 +23496,10 @@
         "pdf_y_end": 239.7,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22663,7 +23557,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000648",
     "pdf_x_end": 367.0,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000280",
@@ -22701,7 +23594,6 @@
     "pdf_x_end": 331.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025001931",
@@ -22747,7 +23639,6 @@
     "pdf_x_end": 323.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000339",
@@ -22785,7 +23676,19 @@
         "pdf_y_end": 145.0,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.02.1944",
+          "place": "Klinovac"
+        },
+        {
+          "date": "03.08.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Spasić",
@@ -22809,7 +23712,6 @@
     "pdf_x_end": 337.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000339",
@@ -22847,7 +23749,19 @@
         "pdf_y_end": 442.3,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.02.1944",
+          "place": "Klinovac"
+        },
+        {
+          "date": "21.07.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Spasić",
@@ -22877,7 +23791,6 @@
     "fathers_name": "C",
     "full_name": "Spasić C Cvetan",
     "additional_info": "Radovnica, 15. VII 1944, Gorunavac",
-    "birth_year": "",
     "birth_place": "Radovnica",
     "death_date": "15.07.1944",
     "death_type": "poginuo",
@@ -22899,7 +23812,13 @@
         "source_page": 1250,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Spasić",
@@ -22908,7 +23827,6 @@
     "fathers_name": "M",
     "full_name": "Spasić M Dimča",
     "additional_info": "Bab. Poljana, 14. X 1944, Čestelin",
-    "birth_year": "",
     "birth_place": "Bab. Poljana",
     "death_date": "14.10.1944",
     "death_type": "poginuo",
@@ -22942,7 +23860,21 @@
         "pdf_y_end": 288.9,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914",
+    "variants": {
+      "death": [
+        {
+          "date": "14.09.1944",
+          "place": "Čestelin"
+        }
+      ]
+    }
   },
   {
     "last_name": "Spasić",
@@ -23001,7 +23933,6 @@
     "pdf_x_end": 367.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000252",
@@ -23027,7 +23958,19 @@
         "pdf_y_end": 295.9,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "G. Erić (Drina)"
+        },
+        {
+          "date": "09.02.1945",
+          "place": "G. Erić (Drina)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Spasić",
@@ -23050,7 +23993,6 @@
     "pdf_x_end": 292.9,
     "ethnicity": "Srbin",
     "occupation": "seoski nadničar",
-    "rank": "komandir voda",
     "death_place": "Manojlovac, Leskovac",
     "other_sources": [
       {
@@ -23073,7 +24015,8 @@
         "pdf_y_end": 657.5,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.06.1920"
   },
   {
     "last_name": "Spasić",
@@ -23151,6 +24094,10 @@
         "pdf_y_end": 460.5,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23306,7 +24253,6 @@
     "pdf_x_end": 337.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000255",
@@ -23344,7 +24290,6 @@
     "pdf_x_end": 337.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000350",
@@ -23442,7 +24387,6 @@
     "fathers_name": "B",
     "full_name": "Stamenković B Aleksandar",
     "additional_info": "Crvena Reka, 3. VIII 1944, Klinovac",
-    "birth_year": "",
     "birth_place": "Crvena Reka",
     "death_date": "03.08.1944",
     "death_type": "poginuo",
@@ -23476,7 +24420,13 @@
         "pdf_y_end": 190.1,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Stamenković",
@@ -23498,7 +24448,6 @@
     "soldier_id": "0096000671",
     "pdf_x_end": 327.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_date": "03.1945",
     "other_sources": [
       {
@@ -23591,7 +24540,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000674",
     "pdf_x_end": 363.8,
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9013002549",
@@ -23625,6 +24573,10 @@
         "pdf_y_end": 443.2,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23647,7 +24599,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000675",
     "pdf_x_end": 321.8,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000260",
@@ -23661,7 +24612,8 @@
         "pdf_y_end": 591.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "11.08.1923"
   },
   {
     "last_name": "Stamenković",
@@ -23684,7 +24636,6 @@
     "soldier_id": "0096000676",
     "pdf_x_end": 362.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000285",
@@ -23707,7 +24658,6 @@
     "fathers_name": "",
     "full_name": "Stamenković Milutin",
     "additional_info": "Slivnica, 13. V 1944, Strezimirovac",
-    "birth_year": "",
     "birth_place": "Slivnica",
     "death_date": "13.05.1944",
     "death_type": "poginuo",
@@ -23729,7 +24679,13 @@
         "source_page": 1380,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Stamenković",
@@ -23738,7 +24694,6 @@
     "fathers_name": "",
     "full_name": "Stamenković Mladen",
     "additional_info": "Prvonek, 17. V 1944, Surlica",
-    "birth_year": "",
     "birth_place": "Prvonek",
     "death_date": "17.05.1944",
     "death_type": "poginuo",
@@ -23760,7 +24715,13 @@
         "source_page": 1379,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Stamenković",
@@ -23889,7 +24850,6 @@
     "soldier_id": "0096000682",
     "pdf_x_end": 363.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002551",
@@ -23924,7 +24884,6 @@
     "fathers_name": "",
     "full_name": "Stamenković Vera",
     "additional_info": "Izumno, 13. V 1944, Strezimirovac",
-    "birth_year": "",
     "birth_place": "Izumno",
     "death_date": "13.05.1944",
     "death_type": "poginuo",
@@ -23958,7 +24917,13 @@
         "pdf_y_end": 215.1,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Stamenković",
@@ -24129,7 +25094,6 @@
     "soldier_id": "0096000689",
     "pdf_x_end": 351.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000294",
@@ -24201,7 +25165,6 @@
     "pdf_x_end": 292.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "pomoćnik političkog komesara",
     "other_sources": [
       {
         "soldier_id": "9025037833",
@@ -24223,7 +25186,12 @@
         "pdf_y_end": 400.7,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "death_place": "Oštro koplje",
+    "borrowed": [
+      "death_place"
+    ],
+    "birth_date": "10.05.1924"
   },
   {
     "last_name": "Stanković",
@@ -24316,7 +25284,6 @@
     "soldier_id": "0096000694",
     "pdf_x_end": 353.6,
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
     "other_sources": [
       {
         "soldier_id": "9013002558",
@@ -24365,7 +25332,6 @@
     "soldier_id": "0096000695",
     "pdf_x_end": 327.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037233",
@@ -24387,7 +25353,19 @@
         "pdf_y_end": 179.2,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.11.1944",
+          "place": "Sjenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -24438,7 +25416,6 @@
     "fathers_name": "",
     "full_name": "Stanković Milentije",
     "additional_info": "Kriva Feja, 12. IV 1944, Kriva Feja",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "12.04.1944",
     "death_type": "poginuo",
@@ -24472,7 +25449,13 @@
         "pdf_y_end": 122.0,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Stanković",
@@ -24495,7 +25478,6 @@
     "soldier_id": "0096000699",
     "pdf_x_end": 363.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002555",
@@ -24529,6 +25511,10 @@
         "pdf_y_end": 232.8,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24564,7 +25550,15 @@
         "pdf_y_end": 196.7,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.09.1944",
+          "place": "Vlasotince"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -24594,7 +25588,6 @@
     "fathers_name": "A",
     "full_name": "Stanković A Milovan",
     "additional_info": "Kamik, 22. XII 1944, Bijelo Polje",
-    "birth_year": "",
     "birth_place": "Kamik",
     "death_date": "22.12.1944",
     "death_type": "poginuo",
@@ -24609,7 +25602,6 @@
     "pdf_x_end": 354.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025024885",
@@ -24631,6 +25623,10 @@
         "pdf_y_end": 661.6,
         "unit_file": "10-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -24654,7 +25650,6 @@
     "soldier_id": "0096000703",
     "pdf_x_end": 363.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002556",
@@ -24718,7 +25713,6 @@
     "soldier_id": "0096000704",
     "pdf_x_end": 363.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000300",
@@ -24756,7 +25750,6 @@
     "pdf_x_end": 341.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000270",
@@ -24779,7 +25772,6 @@
     "fathers_name": "P",
     "full_name": "Stanković P Radisav",
     "additional_info": "Modra Stena, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Modra Stena",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -24813,7 +25805,13 @@
         "source_page": 53,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Stanković",
@@ -24872,7 +25870,6 @@
     "pdf_x_end": 373.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000271",
@@ -24886,7 +25883,15 @@
         "pdf_y_end": 407.2,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.09.1944",
+          "place": "Lipovica (Vlasotince)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -25021,7 +26026,6 @@
     "soldier_id": "0096000713",
     "pdf_x_end": 368.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025017543",
@@ -25043,6 +26047,10 @@
         "pdf_y_end": 422.8,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -25088,7 +26096,6 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_place": "Stara Brezovica, Vranje"
   },
   {
@@ -25224,7 +26231,6 @@
     "soldier_id": "0096000717",
     "pdf_x_end": 326.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000377",
@@ -25262,7 +26268,15 @@
         "pdf_y_end": 187.8,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.02.1945",
+          "place": "Zvornik"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -25285,7 +26299,6 @@
     "soldier_id": "0096000718",
     "pdf_x_end": 352.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000377",
@@ -25323,7 +26336,15 @@
         "pdf_y_end": 385.1,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.02.1945",
+          "place": "D. Trešnjevica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanojević",
@@ -25347,7 +26368,6 @@
     "pdf_x_end": 346.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000274",
@@ -25370,7 +26390,6 @@
     "fathers_name": "Đ",
     "full_name": "Stanojević Đ Velin",
     "additional_info": "D. Stajovac, VIII 1944, Motina",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "08.1944",
     "death_type": "poginuo",
@@ -25392,7 +26411,13 @@
         "source_page": 1249,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Stanojević",
@@ -25640,7 +26665,6 @@
     "pdf_x_end": 335.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000277",
@@ -25663,7 +26687,6 @@
     "fathers_name": "D",
     "full_name": "Stavrić D Borisav",
     "additional_info": "Rasnica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Rasnica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -25697,7 +26720,13 @@
         "source_page": 967,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Stavrović",
@@ -25721,7 +26750,6 @@
     "pdf_x_end": 358.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000278",
@@ -25735,7 +26763,15 @@
         "pdf_y_end": 401.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Oštro koplje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stefanović",
@@ -25794,7 +26830,6 @@
     "pdf_x_end": 352.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000280",
@@ -25893,7 +26928,6 @@
     "soldier_id": "0096000735",
     "pdf_x_end": 314.2,
     "occupation": "radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000311",
@@ -25916,7 +26950,6 @@
     "fathers_name": "S",
     "full_name": "Stefanović S Kosta",
     "additional_info": "Široka Planina, 12. V 1944, Tumba (Vlasotince)",
-    "birth_year": "",
     "birth_place": "Široka Planina",
     "death_type": "poginuo",
     "death_place": "Tumba (Vlasotince)",
@@ -25930,7 +26963,6 @@
     "pdf_x_end": 373.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_date": "12.05.1944",
     "other_sources": [
       {
@@ -25953,6 +26985,10 @@
         "pdf_y_end": 430.2,
         "unit_file": "10-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -26067,7 +27103,6 @@
     "fathers_name": "V",
     "full_name": "Stefanović V Petar",
     "additional_info": "D. Stajovac, 3. VIII 1944, Klinovac",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "03.08.1944",
     "death_type": "poginuo",
@@ -26082,7 +27117,6 @@
     "pdf_x_end": 337.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025033204",
@@ -26104,6 +27138,10 @@
         "pdf_y_end": 485.9,
         "unit_file": "10-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -26184,7 +27222,6 @@
     "pdf_x_end": 358.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "0088000284",
@@ -26198,7 +27235,8 @@
         "pdf_y_end": 552.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "08.08.1916"
   },
   {
     "last_name": "Stefanović",
@@ -26254,7 +27292,15 @@
         "pdf_y_end": 288.4,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.04.1944",
+          "place": "Ogošte"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stevanović",
@@ -26278,7 +27324,6 @@
     "pdf_x_end": 359.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000286",
@@ -26292,7 +27337,15 @@
         "pdf_y_end": 641.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.02.1945",
+          "place": "Vlaške Njive"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stevanović",
@@ -26357,7 +27410,6 @@
     "fathers_name": "K",
     "full_name": "Stevanović K Vlajko",
     "additional_info": "Slivnica, 28. VI 1944, zarobljen, umro u Nemačkoj",
-    "birth_year": "",
     "birth_place": "Slivnica",
     "death_date": "28.06.1944",
     "death_type": "umro",
@@ -26391,7 +27443,21 @@
         "pdf_y_end": 165.1,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913",
+    "variants": {
+      "death": [
+        {
+          "date": "28.04.1944",
+          "place": "Nemačka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -26435,7 +27501,6 @@
     "soldier_id": "0096000751",
     "pdf_x_end": 354.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037212",
@@ -26484,6 +27549,10 @@
         "pdf_y_end": 300.2,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26531,8 +27600,7 @@
         "pdf_y_end": 334.8,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ],
-    "rank": "borac"
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -26567,7 +27635,15 @@
         "pdf_y_end": 126.7,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.10.1944",
+          "place": "Jastrebac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -26590,7 +27666,6 @@
     "soldier_id": "0096000754",
     "pdf_x_end": 305.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025011608",
@@ -26612,6 +27687,10 @@
         "pdf_y_end": 379.9,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26661,7 +27740,6 @@
     "fathers_name": "J",
     "full_name": "Stojanović J Dimitrije",
     "additional_info": "Vranje, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Vranje",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -26684,7 +27762,13 @@
         "source_page": 1374,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Stojanović",
@@ -26714,7 +27798,6 @@
     "fathers_name": "V",
     "full_name": "Stojanović V Dobrosav",
     "additional_info": "G. Barbeš, 8. II 1945, Budišić",
-    "birth_year": "",
     "birth_place": "G. Barbeš",
     "death_date": "08.02.1945",
     "death_type": "poginuo",
@@ -26736,7 +27819,13 @@
         "source_page": 407,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Stojanović",
@@ -26921,7 +28010,6 @@
     "soldier_id": "0096000765",
     "pdf_x_end": 355.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000327",
@@ -27020,6 +28108,10 @@
         "pdf_y_end": 372.7,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27043,7 +28135,6 @@
     "soldier_id": "0096000769",
     "pdf_x_end": 318.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0031000297",
@@ -27139,7 +28230,15 @@
         "pdf_y_end": 421.6,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.09.1944",
+          "place": "Belo Polje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -27218,7 +28317,6 @@
     "soldier_id": "0096000774",
     "pdf_x_end": 356.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000331",
@@ -27255,7 +28353,6 @@
     "soldier_id": "0096000775",
     "pdf_x_end": 356.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002566",
@@ -27354,7 +28451,6 @@
     "soldier_id": "0096000777",
     "pdf_x_end": 320.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000334",
@@ -27377,7 +28473,6 @@
     "fathers_name": "P",
     "full_name": "Stojanović P Slavko",
     "additional_info": "Dekutince, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Dekutince",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -27426,7 +28521,13 @@
         "source_page": 1333,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Stojanović",
@@ -27543,7 +28644,6 @@
     "soldier_id": "0096000781",
     "pdf_x_end": 352.5,
     "pdf_x_left": 26.6,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025009497",
@@ -27566,7 +28666,11 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "graćevinski radnik"
+    "occupation": "graćevinski radnik",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -27589,7 +28693,6 @@
     "soldier_id": "0096000782",
     "pdf_x_end": 340.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000338",
@@ -27626,7 +28729,6 @@
     "soldier_id": "0096000783",
     "pdf_x_end": 355.3,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002569",
@@ -27710,7 +28812,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000785",
     "pdf_x_end": 356.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002567",
@@ -27788,7 +28889,6 @@
     "fathers_name": "",
     "full_name": "Stojanović Svetislav",
     "additional_info": "Babičko, 8. II 1945, Sakar",
-    "birth_year": "",
     "birth_place": "Babičko",
     "death_date": "08.02.1945",
     "death_type": "poginuo",
@@ -27810,7 +28910,13 @@
         "source_page": 333,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Stojanović",
@@ -27853,7 +28959,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000790",
     "pdf_x_end": 356.2,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002568",
@@ -27993,7 +29098,6 @@
     "soldier_id": "0096000794",
     "pdf_x_end": 354.6,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002561",
@@ -28054,7 +29158,15 @@
         "pdf_y_end": 187.9,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "21.01.1945",
+          "place": "Zvornik"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -28077,7 +29189,6 @@
     "soldier_id": "0096000796",
     "pdf_x_end": 342.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000352",
@@ -28115,7 +29226,6 @@
     "pdf_x_end": 332.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000295",
@@ -28151,7 +29261,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000798",
     "pdf_x_end": 330.9,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000353",
@@ -28208,7 +29317,6 @@
     "soldier_id": "0096000800",
     "pdf_x_end": 355.1,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002562",
@@ -28292,7 +29400,6 @@
     "soldier_id": "0096000802",
     "pdf_x_end": 367.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000356",
@@ -28349,7 +29456,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000804",
     "pdf_x_end": 337.7,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9088000046",
@@ -28562,7 +29668,6 @@
     "pdf_x_end": 337.2,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000300",
@@ -28576,7 +29681,8 @@
         "pdf_y_end": 368.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "24.02.1922"
   },
   {
     "last_name": "Stojković",
@@ -28599,7 +29705,6 @@
     "soldier_id": "0096000812",
     "pdf_x_end": 331.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000361",
@@ -28648,7 +29753,15 @@
         "pdf_y_end": 210.7,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.08.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojković",
@@ -28704,7 +29817,15 @@
         "pdf_y_end": 456.2,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.04.1944",
+          "place": "Gorunovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojković",
@@ -28798,7 +29919,6 @@
     "pdf_x_end": 325.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "0088000302",
@@ -28836,7 +29956,6 @@
     "pdf_x_end": 341.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002462",
@@ -28870,7 +29989,8 @@
         "pdf_y_end": 604.5,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.01.1923"
   },
   {
     "last_name": "Stojković",
@@ -28917,7 +30037,15 @@
         "pdf_y_end": 435.0,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "14.04.1944",
+          "place": "Kriva Feja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojković",
@@ -28964,7 +30092,15 @@
         "pdf_y_end": 241.1,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "14.04.1944",
+          "place": "Kriva Feja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojković",
@@ -29007,7 +30143,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000823",
     "pdf_x_end": 340.3,
-    "rank": "borac",
     "occupation": "graćevinski radnik",
     "other_sources": [
       {
@@ -29067,7 +30202,6 @@
     "pdf_x_end": 354.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000306",
@@ -29161,7 +30295,6 @@
     "pdf_x_end": 318.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000307",
@@ -29254,7 +30387,6 @@
     "soldier_id": "0096000831",
     "pdf_x_end": 346.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000364",
@@ -29291,7 +30423,6 @@
     "soldier_id": "0096000832",
     "pdf_x_end": 331.0,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000365",
@@ -29328,7 +30459,6 @@
     "soldier_id": "0096000833",
     "pdf_x_end": 365.2,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000366",
@@ -29469,7 +30599,15 @@
         "pdf_y_end": 392.8,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.08.1944",
+          "place": "Gorunovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stošić",
@@ -29528,7 +30666,6 @@
     "pdf_x_end": 350.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000309",
@@ -29585,6 +30722,10 @@
         "pdf_y_end": 441.5,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29594,7 +30735,6 @@
     "fathers_name": "",
     "full_name": "Stošić Dragica",
     "additional_info": "(Božica); Stubal, 24. V 1944, Plačkovica",
-    "birth_year": "",
     "birth_place": "Stubal",
     "death_date": "24.05.1944",
     "death_type": "poginuo",
@@ -29617,7 +30757,13 @@
         "source_page": 1339,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Stošić",
@@ -29724,7 +30870,6 @@
     "fathers_name": "N",
     "full_name": "Stošić N Vasa",
     "additional_info": "D. Stajovac, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -29758,7 +30903,13 @@
         "source_page": 1249,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Stošić",
@@ -29915,7 +31066,6 @@
     "pdf_x_end": 323.4,
     "ethnicity": "Srbin",
     "occupation": "student tehnike",
-    "rank": "politički komesar",
     "other_sources": [
       {
         "soldier_id": "9025037999",
@@ -29937,7 +31087,16 @@
         "pdf_y_end": 636.9,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "21.03.1923",
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Aleksinac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tasić",
@@ -30037,7 +31196,6 @@
     "fathers_name": "",
     "full_name": "Tasić Božin",
     "additional_info": "Kriva Feja, 1944",
-    "birth_year": "",
     "birth_place": "Kriva Feja",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -30058,7 +31216,15 @@
         "source_page": 1378,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bučje",
+    "birth_year": "1902"
   },
   {
     "last_name": "Tasić",
@@ -30067,7 +31233,6 @@
     "fathers_name": "",
     "full_name": "Tasić Branko",
     "additional_info": "Vranjska Banja, 1945, Zagreb",
-    "birth_year": "",
     "birth_place": "Vranjska Banja",
     "death_date": "1945",
     "death_type": "poginuo",
@@ -30089,7 +31254,13 @@
         "source_page": 1381,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Tasić",
@@ -30112,7 +31283,6 @@
     "soldier_id": "0096000858",
     "pdf_x_end": 355.5,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000370",
@@ -30126,7 +31296,15 @@
         "pdf_y_end": 348.0,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.12.1944",
+          "place": "Duga Poljana"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tasić",
@@ -30149,7 +31327,6 @@
     "pdf_x_end": 274.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_place": "Manojlovac, Leskovac",
     "other_sources": [
       {
@@ -30276,7 +31453,6 @@
     "soldier_id": "0096000863",
     "pdf_x_end": 366.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002573",
@@ -30325,6 +31501,10 @@
         "pdf_y_end": 470.8,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30349,7 +31529,6 @@
     "pdf_x_end": 303.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025017507",
@@ -30371,7 +31550,8 @@
         "pdf_y_end": 582.6,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "19.01.1921"
   },
   {
     "last_name": "Tasić",
@@ -30507,7 +31687,6 @@
     "pdf_x_end": 324.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000320",
@@ -30556,7 +31735,6 @@
     "pdf_x_end": 274.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "death_place": "Klinovac",
     "other_sources": [
       {
@@ -30613,7 +31791,6 @@
     "fathers_name": "",
     "full_name": "Todorov Milko",
     "additional_info": "G. Nevlja, 18. II 1945, Zvornik",
-    "birth_year": "",
     "birth_place": "G. Nevlja",
     "death_date": "18.02.1945",
     "death_type": "poginuo",
@@ -30635,7 +31812,13 @@
         "source_page": 398,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Todorović",
@@ -30659,7 +31842,6 @@
     "pdf_x_end": 341.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025010520",
@@ -30690,7 +31872,6 @@
     "fathers_name": "J",
     "full_name": "Todorović J Jordan",
     "additional_info": "Dojkinci, 12. IV 1945, Spačva (Srem)",
-    "birth_year": "",
     "birth_place": "Dojkinci",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -30724,7 +31905,13 @@
         "source_page": 959,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Todorović",
@@ -30789,7 +31976,6 @@
     "soldier_id": "0096000877",
     "pdf_x_end": 366.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002574",
@@ -30823,6 +32009,10 @@
         "pdf_y_end": 89.2,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30881,7 +32071,6 @@
     "soldier_id": "0096000879",
     "pdf_x_end": 330.8,
     "occupation": "zemljoradnik",
-    "rank": "zamenik komandanta bataljona",
     "other_sources": [
       {
         "soldier_id": "0090000374",
@@ -31003,7 +32192,6 @@
     "pdf_x_end": 302.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000325",
@@ -31061,7 +32249,6 @@
     "soldier_id": "0096000886",
     "pdf_x_end": 320.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000377",
@@ -31075,7 +32262,15 @@
         "pdf_y_end": 260.1,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.10.1944",
+          "place": "Dejan"
+        }
+      ]
+    }
   },
   {
     "last_name": "Trajković",
@@ -31119,7 +32314,6 @@
     "fathers_name": "",
     "full_name": "Trajković Bora",
     "additional_info": "Prvonek, 1944",
-    "birth_year": "",
     "birth_place": "Prvonek",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -31140,7 +32334,15 @@
         "source_page": 1379,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Manojlovac",
+    "birth_year": "1924"
   },
   {
     "last_name": "Trajković",
@@ -31149,7 +32351,6 @@
     "fathers_name": "V",
     "full_name": "Trajković V Branko",
     "additional_info": "Vladičin Han, 6. X 1944, Crna Bara",
-    "birth_year": "",
     "birth_place": "Vladičin Han",
     "death_date": "06.10.1944",
     "death_type": "poginuo",
@@ -31171,7 +32372,13 @@
         "source_page": 1340,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Makedonac",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Trajković",
@@ -31180,7 +32387,6 @@
     "fathers_name": "V",
     "full_name": "Trajković V Dušan",
     "additional_info": "D. Stajovac, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -31222,7 +32428,13 @@
         "source_page": 1249,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Trajković",
@@ -31267,7 +32479,6 @@
     "pdf_x_end": 338.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000329",
@@ -31281,7 +32492,8 @@
         "pdf_y_end": 392.5,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "25.09.1922"
   },
   {
     "last_name": "Trifković",
@@ -31354,7 +32566,6 @@
     "soldier_id": "0096000894",
     "pdf_x_end": 356.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002477",
@@ -31401,7 +32612,12 @@
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin"
+    "ethnicity": "Srbin",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Vasić",
@@ -31452,7 +32668,6 @@
     "fathers_name": "",
     "full_name": "Vasković Mihajlo",
     "additional_info": "G. Trnica, 14. IX 1944, Čestelin (Vranje)",
-    "birth_year": "",
     "birth_place": "G. Trnica",
     "death_date": "14.09.1944",
     "death_type": "poginuo",
@@ -31474,7 +32689,13 @@
         "source_page": 1249,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Velinović",
@@ -31509,7 +32730,15 @@
         "pdf_y_end": 129.6,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Lab"
+        }
+      ]
+    }
   },
   {
     "last_name": "Veličković",
@@ -31531,7 +32760,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000899",
     "pdf_x_end": 353.8,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002479",
@@ -31565,6 +32793,10 @@
         "pdf_y_end": 101.8,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31637,7 +32869,6 @@
     "fathers_name": "",
     "full_name": "Veličković Kruna",
     "additional_info": "Stajkovac, 10. IX 1944, Zavidinci",
-    "birth_year": "",
     "birth_place": "Stajkovac",
     "death_date": "10.09.1944",
     "death_type": "poginuo",
@@ -31659,7 +32890,13 @@
         "source_page": 1188,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1914"
   },
   {
     "last_name": "Veličković",
@@ -31668,7 +32905,6 @@
     "fathers_name": "D",
     "full_name": "Veličković D Radomir",
     "additional_info": "Vus, 10. VII 1944, Lipovica (zarobljen i streljan u Vlasotincu)",
-    "birth_year": "",
     "birth_place": "Vus",
     "death_date": "10.07.1944",
     "death_type": "streljan",
@@ -31690,7 +32926,13 @@
         "source_page": 387,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1925"
   },
   {
     "last_name": "Veličković",
@@ -31699,7 +32941,6 @@
     "fathers_name": "",
     "full_name": "Veličković Uroš",
     "additional_info": "Kumarevo, 10. IX 1944, Zavidinci",
-    "birth_year": "",
     "birth_place": "Kumarevo",
     "death_date": "10.09.1944",
     "death_type": "poginuo",
@@ -31721,7 +32962,13 @@
         "source_page": 1378,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Veličković",
@@ -31778,7 +33025,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000905",
     "pdf_x_end": 319.8,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002478",
@@ -31898,7 +33144,6 @@
     "fathers_name": "",
     "full_name": "Veljković Novko",
     "additional_info": "Lipovac, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Lipovac",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -31920,7 +33165,13 @@
         "source_page": 1378,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "last_name": "Veljković",
@@ -31944,7 +33195,6 @@
     "pdf_x_end": 330.1,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000338",
@@ -31967,7 +33217,6 @@
     "fathers_name": "",
     "full_name": "Veljković Stanojko",
     "additional_info": "D. Stajovac, 2. VII 1944, Lukarci",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "02.07.1944",
     "death_type": "poginuo",
@@ -31989,7 +33238,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1911"
   },
   {
     "last_name": "Veljković",
@@ -32068,7 +33323,6 @@
     "pdf_x_end": 287.6,
     "ethnicity": "Srbin",
     "occupation": "potkivački radnik",
-    "rank": "komandir čete",
     "other_sources": [
       {
         "soldier_id": "0088000340",
@@ -32082,7 +33336,8 @@
         "pdf_y_end": 285.1,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "10.03.1922"
   },
   {
     "last_name": "Veljković",
@@ -32139,7 +33394,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000917",
     "pdf_x_end": 352.6,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002482",
@@ -32174,7 +33428,11 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "occupation": "graćevinski radnik"
+    "occupation": "graćevinski radnik",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vidanović",
@@ -32253,7 +33511,6 @@
     "soldier_id": "0096000920",
     "pdf_x_end": 360.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000391",
@@ -32290,7 +33547,6 @@
     "soldier_id": "0096000921",
     "pdf_x_end": 353.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002483",
@@ -32388,7 +33644,6 @@
     "fathers_name": "Đ",
     "full_name": "Zdravković Đ Blagoje",
     "additional_info": "Guberevac, 28. VI 1944, Ogošte",
-    "birth_year": "",
     "birth_place": "Guberevac",
     "death_date": "28.06.1944",
     "death_type": "poginuo",
@@ -32410,7 +33665,13 @@
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Zdravković",
@@ -32433,7 +33694,6 @@
     "soldier_id": "0096000926",
     "pdf_x_end": 327.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000398",
@@ -32470,7 +33730,6 @@
     "soldier_id": "0096000927",
     "pdf_x_end": 358.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000397",
@@ -32493,7 +33752,6 @@
     "fathers_name": "S",
     "full_name": "Zdravković S Gvozden",
     "additional_info": "12. IV 1945, Spačva (Srem)",
-    "birth_year": "",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
     "death_place": "Spačva (Srem)",
@@ -32541,7 +33799,15 @@
         "source_page": 907,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Novi Pazar",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1926"
   },
   {
     "last_name": "Zdravković",
@@ -32640,7 +33906,6 @@
     "soldier_id": "0096000932",
     "pdf_x_end": 340.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000399",
@@ -32654,7 +33919,15 @@
         "pdf_y_end": 134.2,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.09.1944",
+          "place": "Konopnica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Zlatanović",
@@ -32677,7 +33950,6 @@
     "soldier_id": "0096000933",
     "pdf_x_end": 364.0,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002499",
@@ -32734,7 +34006,6 @@
     "soldier_id": "0096000934",
     "pdf_x_end": 341.6,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000402",
@@ -32771,7 +34042,6 @@
     "soldier_id": "0096000935",
     "pdf_x_end": 334.3,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000403",
@@ -32808,7 +34078,6 @@
     "soldier_id": "0096000936",
     "pdf_x_end": 326.3,
     "occupation": "građevinski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000404",
@@ -32922,7 +34191,6 @@
     "fathers_name": "D",
     "full_name": "Zlatković D Jovan",
     "additional_info": "Koprištipa, IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Koprištipa",
     "death_date": "04.1945",
     "death_type": "poginuo",
@@ -32956,7 +34224,13 @@
         "source_page": 961,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Zlatković",
@@ -32980,7 +34254,6 @@
     "pdf_x_end": 355.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000350",
@@ -33018,7 +34291,6 @@
     "pdf_x_end": 359.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0087000526",
@@ -33044,7 +34316,15 @@
         "pdf_y_end": 286.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.05.1944",
+          "place": "Strezimirovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ćirić",
@@ -33068,7 +34348,6 @@
     "pdf_x_end": 362.0,
     "ethnicity": "Srbin",
     "occupation": "kožarski radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000353",
@@ -33112,7 +34391,6 @@
     "fathers_name": "",
     "full_name": "Đelić Novak",
     "additional_info": "Krupac, 10. IX 1944, Ostatovica",
-    "birth_year": "",
     "birth_place": "Krupac",
     "death_date": "10.09.1944",
     "death_type": "poginuo",
@@ -33134,7 +34412,13 @@
         "source_page": 961,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1922"
   },
   {
     "last_name": "Đikić",
@@ -33143,7 +34427,6 @@
     "fathers_name": "V",
     "full_name": "Đikić V Ljubomir",
     "additional_info": "Crna Trava, 27. VI 1944, Oruglica",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "27.06.1944",
     "death_type": "poginuo",
@@ -33165,7 +34448,13 @@
         "source_page": 381,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Đikić",
@@ -33259,7 +34548,6 @@
     "fathers_name": "S",
     "full_name": "Đikić S Milić",
     "additional_info": "Preslap, 26.VIII 1944, Predejane",
-    "birth_year": "",
     "birth_place": "Preslap",
     "death_date": "26.08.1944",
     "death_type": "poginuo",
@@ -33281,7 +34569,13 @@
         "source_page": 387,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Đikić",
@@ -33409,7 +34703,6 @@
     "soldier_id": "0096000953",
     "pdf_x_end": 341.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037260",
@@ -33431,7 +34724,19 @@
         "pdf_y_end": 310.1,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.09.1944",
+          "place": "Gadžin Han"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đokić",
@@ -33454,7 +34759,6 @@
     "soldier_id": "0096000954",
     "pdf_x_end": 364.4,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000408",
@@ -33527,7 +34831,6 @@
     "pdf_x_end": 347.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002434",
@@ -33626,8 +34929,7 @@
       }
     ],
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac"
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Đorđevi",
@@ -33657,7 +34959,6 @@
     "fathers_name": "M",
     "full_name": "Đorđević M Bojko",
     "additional_info": "D. Stajovac, 17. V 1944, Surlica",
-    "birth_year": "",
     "birth_place": "D. Stajovac",
     "death_date": "17.05.1944",
     "death_type": "poginuo",
@@ -33679,7 +34980,13 @@
         "source_page": 1248,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Đorđević",
@@ -33864,7 +35171,6 @@
     "pdf_x_end": 346.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002432",
@@ -33890,7 +35196,8 @@
         "pdf_y_end": 505.2,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "01.01.1922"
   },
   {
     "last_name": "Đorđević",
@@ -33934,7 +35241,6 @@
     "fathers_name": "R",
     "full_name": "Đorđević R Danilo",
     "additional_info": "Rasnica, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Rasnica",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -33983,7 +35289,13 @@
         "source_page": 967,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1921"
   },
   {
     "last_name": "Đorđević",
@@ -33992,7 +35304,6 @@
     "fathers_name": "C",
     "full_name": "Đorđević C Dragomir",
     "additional_info": "Bobište, 12. IV 1945, Lipovac",
-    "birth_year": "",
     "birth_place": "Bobište",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -34014,7 +35325,13 @@
         "source_page": 697,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1918"
   },
   {
     "last_name": "Đorđević",
@@ -34037,7 +35354,6 @@
     "soldier_id": "0096000969",
     "pdf_x_end": 368.7,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000416",
@@ -34074,7 +35390,6 @@
     "pdf_x_end": 278.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000359",
@@ -34174,7 +35489,6 @@
     "fathers_name": "",
     "full_name": "Đorđević Milutin",
     "additional_info": "Izumno, 1944",
-    "birth_year": "",
     "birth_place": "Izumno",
     "death_date": "1944",
     "death_type": "poginuo",
@@ -34195,7 +35509,15 @@
         "source_page": 1376,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bosilgrad",
+    "birth_year": "1913"
   },
   {
     "last_name": "Đorđević",
@@ -34276,7 +35598,6 @@
     "pdf_x_end": 343.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "0088000360",
@@ -34290,7 +35611,8 @@
         "pdf_y_end": 411.8,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "07.06.1915"
   },
   {
     "last_name": "Đorđević",
@@ -34334,7 +35656,6 @@
     "fathers_name": "",
     "full_name": "Đorđević Slavko",
     "additional_info": "Bab. Poljana, 10. IX 1944, Ostatovica",
-    "birth_year": "",
     "birth_place": "Bab. Poljana",
     "death_date": "10.09.1944",
     "death_type": "poginuo",
@@ -34356,7 +35677,13 @@
         "source_page": 1375,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Đorđević",
@@ -34379,7 +35706,6 @@
     "soldier_id": "0096000980",
     "pdf_x_end": 327.9,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037311",
@@ -34401,6 +35727,10 @@
         "pdf_y_end": 61.9,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34410,7 +35740,6 @@
     "fathers_name": "N",
     "full_name": "Đorđević N Srećko",
     "additional_info": "D. Krnjino, 9. II 1945, D. Trešnjivica",
-    "birth_year": "",
     "birth_place": "D. Krnjino",
     "death_date": "09.02.1945",
     "death_type": "poginuo",
@@ -34432,7 +35761,13 @@
         "source_page": 50,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Đorđević",
@@ -34441,7 +35776,6 @@
     "fathers_name": "",
     "full_name": "Đorđević Stanko",
     "additional_info": "Zagužanje, 29. IX 1944, Vlasotince",
-    "birth_year": "",
     "birth_place": "Zagužanje",
     "death_date": "29.09.1944",
     "death_type": "poginuo",
@@ -34463,7 +35797,13 @@
         "source_page": 1190,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Đorđević",
@@ -34498,7 +35838,15 @@
         "pdf_y_end": 322.6,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.05.1944",
+          "place": "Kriva Feja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đorđević",
@@ -34507,7 +35855,6 @@
     "fathers_name": "",
     "full_name": "Đorđević Stojadin",
     "additional_info": "Bujkovac, 24. V 1944, Plačkovica planina",
-    "birth_year": "",
     "birth_place": "Bujkovac",
     "death_date": "24.05.1944",
     "death_type": "poginuo",
@@ -34541,7 +35888,13 @@
         "pdf_y_end": 345.1,
         "unit_file": "8-srpska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Đorđević",
@@ -34564,7 +35917,6 @@
     "soldier_id": "0096000985",
     "pdf_x_end": 362.0,
     "occupation": "tekstilni radnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0090000420",
@@ -34602,7 +35954,6 @@
     "pdf_x_end": 346.6,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002433",
@@ -34672,7 +36023,6 @@
     "fathers_name": "A",
     "full_name": "Đorđević A Vitomir",
     "additional_info": "M. Suvodol, 17. II 1945, Sakar",
-    "birth_year": "",
     "birth_place": "M. Suvodol",
     "death_date": "17.02.1945",
     "death_type": "poginuo",
@@ -34694,7 +36044,13 @@
         "source_page": 970,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Đorđević",
@@ -34802,7 +36158,6 @@
     "pdf_x_end": 316.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0088000372",
@@ -34816,7 +36171,15 @@
         "pdf_y_end": 546.4,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.03.1945",
+          "place": "Gradina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Živković",
@@ -34873,7 +36236,6 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000995",
     "pdf_x_end": 321.3,
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002467",
@@ -34922,7 +36284,6 @@
     "soldier_id": "0096000996",
     "pdf_x_end": 363.8,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002497",
@@ -35007,7 +36368,6 @@
     "pdf_x_end": 320.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025010523",
@@ -35029,7 +36389,8 @@
         "pdf_y_end": 599.5,
         "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "01.01.1927"
   },
   {
     "last_name": "Živković",
@@ -35143,7 +36504,6 @@
     "soldier_id": "0096001002",
     "pdf_x_end": 363.8,
     "occupation": "zemljoradnik",
-    "rank": "desetar",
     "other_sources": [
       {
         "soldier_id": "9013002498",
@@ -35177,6 +36537,10 @@
         "pdf_y_end": 227.3,
         "unit_file": "12-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35186,7 +36550,6 @@
     "fathers_name": "",
     "full_name": "Živković Stevan",
     "additional_info": "G. Orah, 9. X 1944, Lipovica (Vlasotinci)",
-    "birth_year": "",
     "birth_place": "G. Orah",
     "death_date": "09.10.1944",
     "death_type": "poginuo",
@@ -35208,7 +36571,13 @@
         "source_page": 1355,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1929"
   },
   {
     "last_name": "Živković",
@@ -35281,7 +36650,6 @@
     "soldier_id": "0096001005",
     "pdf_x_end": 364.0,
     "occupation": "zemljoradnik",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013002496",

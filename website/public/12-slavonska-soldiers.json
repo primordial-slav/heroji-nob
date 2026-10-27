@@ -266,7 +266,12 @@
         "pdf_y_end": 114.7,
         "unit_file": "17-slavonska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Dokić",
@@ -616,7 +621,13 @@
         "source_page": 1112,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Budimci, Našice",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvatica"
   },
   {
     "last_name": "Mandić",
@@ -682,6 +693,10 @@
         "source_page": 1627,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -791,7 +806,13 @@
         "source_page": 205,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Bosna"
   },
   {
     "last_name": "Ogrizović",
@@ -910,7 +931,15 @@
         "pdf_x_left": 245.0,
         "ref_book": "zene-vi-korpus-poginule"
       }
-    ]
+    ],
+    "birth_place": "Slavonski Brod",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvatica",
+    "death_place": "Pleternica"
   },
   {
     "last_name": "Pavlović",
@@ -1238,6 +1267,10 @@
         "source_page": 1114,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1498,7 +1531,13 @@
         "source_page": 1675,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lepoglava"
   },
   {
     "last_name": "Zakonja",

@@ -395,7 +395,6 @@
     "fathers_name": "Šćepan",
     "full_name": "Andrić Šćepana Ilija",
     "additional_info": "",
-    "birth_year": "1907",
     "pdf_page": 15,
     "pdf_y": 139.4,
     "pdf_x": 189.6,
@@ -432,7 +431,11 @@
     "unit_detail": "1. bataljon",
     "birth_place": "Borci, Konjic",
     "occupation": "zemljoradnik",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "birth_year": "1907",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Andrić",
@@ -737,7 +740,13 @@
         "source_page": 2636,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ravno"
   },
   {
     "last_name": "Anđelić",
@@ -906,6 +915,10 @@
         "source_page": 972,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1006,7 +1019,6 @@
     "fathers_name": "",
     "full_name": "Artuković Gojko",
     "additional_info": "Klobuk kod Ljubuškog, krajem marta 1945, Ivan--planina",
-    "birth_year": "",
     "birth_place": "Klobuk kod Ljubuškog",
     "death_date": "krajem marta 1945",
     "death_place": "Ivan--planina",
@@ -1027,7 +1039,13 @@
         "source_page": 1785,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Azinović",
@@ -1429,7 +1447,15 @@
         "source_page": 2577,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Crkvice-crna gora"
   },
   {
     "last_name": "Balavac",
@@ -1656,7 +1682,8 @@
     "soldier_id": "0100000083",
     "birth_place": "Jasen",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 248.6
+    "pdf_x_end": 248.6,
+    "birth_date": "06.12.1944"
   },
   {
     "last_name": "Basarić",
@@ -2163,7 +2190,13 @@
         "source_page": 1852,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Mostar",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Musliman"
   },
   {
     "last_name": "Behram",
@@ -2804,6 +2837,10 @@
         "source_page": 1852,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -2867,6 +2904,10 @@
         "source_page": 2596,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3206,6 +3247,10 @@
         "source_page": 2587,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3401,6 +3446,10 @@
         "source_page": 1155,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3575,7 +3624,6 @@
     "fathers_name": "Mijo",
     "full_name": "Borovac Mije Milan",
     "additional_info": "Trebižat, Čapljina, 1. 3. 1945, Ostrožac, 3. bat.",
-    "birth_year": "",
     "birth_place": "Trebižat, Čapljina",
     "death_date": "01.03.1945",
     "death_place": "Ostrožac",
@@ -3588,6 +3636,7 @@
     "soldier_id": "0100000186",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 359.8,
+    "birth_year": "1927",
     "other_sources": [
       {
         "soldier_id": "9022013059",
@@ -3597,6 +3646,11 @@
         "source_page": 1159,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -3754,7 +3808,15 @@
         "source_page": 2585,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Gubavica-mostar"
   },
   {
     "last_name": "Boškailo",
@@ -3881,6 +3943,10 @@
         "source_page": 1143,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4035,7 +4101,10 @@
         "unit_file": "14-hercegovacka-soldiers.json"
       }
     ],
-    "rank": "referent saniteta"
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bošković",
@@ -4336,7 +4405,6 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 360.9,
     "occupation": "mesar",
-    "rank": "borac",
     "party": "SKOJ 1941",
     "other_sources": [
       {
@@ -4852,6 +4920,10 @@
         "source_page": 2641,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4954,6 +5026,10 @@
         "source_page": 2641,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5543,7 +5619,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "unit_detail": "Štab brigade"
+    "unit_detail": "Štab brigade",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Damjanović",
@@ -5670,6 +5750,10 @@
         "source_page": 1564,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5885,6 +5969,10 @@
         "source_page": 1855,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6028,6 +6116,10 @@
         "source_page": 1927,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6049,7 +6141,8 @@
     "soldier_id": "0100000311",
     "birth_place": "Ivan-planina",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 262.5
+    "pdf_x_end": 262.5,
+    "birth_date": "28.03.1945"
   },
   {
     "last_name": "Dizdar",
@@ -6343,7 +6436,15 @@
     "rank": "politički komesar",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "party": "SKOJ 1940, KPJ 1941"
+    "party": "SKOJ 1940, KPJ 1941",
+    "variants": {
+      "death": [
+        {
+          "date": "16.08.1944",
+          "place": "na Medenoj Glavi"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dobranić",
@@ -6543,6 +6644,10 @@
         "source_page": 2907,
         "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -6587,7 +6692,15 @@
         "source_page": 1149,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Stepan-gacko"
   },
   {
     "last_name": "Dragović",
@@ -6838,6 +6951,10 @@
         "source_page": 2631,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7116,6 +7233,10 @@
         "source_page": 2588,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7861,6 +7982,10 @@
         "source_page": 1856,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Muslimanka",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8236,6 +8361,10 @@
         "source_page": 1788,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8572,6 +8701,10 @@
         "source_page": 1847,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8842,6 +8975,10 @@
         "source_page": 2588,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8889,6 +9026,10 @@
         "source_page": 2588,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -8983,6 +9124,10 @@
         "source_page": 1788,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -9008,7 +9153,6 @@
     "fathers_name": "Mustafa",
     "full_name": "Gozo Mustafe Osman",
     "additional_info": "",
-    "birth_year": "1909",
     "pdf_page": 18,
     "pdf_y": 175.6,
     "pdf_x": 197.3,
@@ -9044,7 +9188,11 @@
     "rank": "intendant",
     "unit_detail": "1. bataljon",
     "birth_place": "Mostar",
-    "occupation": "stolar"
+    "occupation": "stolar",
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Grabovac",
@@ -9069,7 +9217,6 @@
     "fathers_name": "Sulejman",
     "full_name": "Grabovac Sulejmana Mustafa",
     "additional_info": "",
-    "birth_year": "1915",
     "pdf_page": 18,
     "pdf_y": 244.5,
     "pdf_x": 197.8,
@@ -9119,7 +9266,11 @@
     "birth_place": "Mostar",
     "ethnicity": "Musliman",
     "occupation": "bravar",
-    "party": "KPJ 1938"
+    "party": "KPJ 1938",
+    "birth_year": "1915",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Grabušić",
@@ -9863,6 +10014,10 @@
         "source_page": 1159,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -10178,6 +10333,10 @@
         "source_page": 2588,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11076,7 +11235,15 @@
         "source_page": 2597,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Podorašac-konjic"
   },
   {
     "last_name": "Idriz",
@@ -11316,6 +11483,10 @@
         "source_page": 1609,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11700,6 +11871,10 @@
         "source_page": 1858,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -11853,6 +12028,10 @@
         "source_page": 1859,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12219,6 +12398,10 @@
         "source_page": 1850,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -12998,6 +13181,10 @@
         "source_page": 1140,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13093,6 +13280,10 @@
         "source_page": 1860,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13461,7 +13652,15 @@
         "source_page": 1562,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Ivan sedlo"
   },
   {
     "last_name": "Kevrić",
@@ -13540,6 +13739,10 @@
         "source_page": 1562,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13571,6 +13774,10 @@
         "source_page": 1562,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13650,6 +13857,10 @@
         "source_page": 1562,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -13945,6 +14156,10 @@
         "source_page": 1142,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14024,6 +14239,10 @@
         "source_page": 1140,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -14323,7 +14542,15 @@
         "source_page": 2579,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Bakro. nevesinj"
   },
   {
     "last_name": "Kojović",
@@ -14821,7 +15048,6 @@
     "fathers_name": "Smajo",
     "full_name": "Korać Smaje Tahir",
     "additional_info": "",
-    "birth_year": "1914",
     "pdf_page": 22,
     "pdf_y": 30.6,
     "pdf_x": 9.3,
@@ -14872,7 +15098,11 @@
     "unit_detail": "1. bataljon",
     "birth_place": "Bivolje Brdo, Čapljina",
     "occupation": "zemljoradnik",
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "birth_year": "1914",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Kordić",
@@ -14881,7 +15111,6 @@
     "fathers_name": "Ante",
     "full_name": "Kordić Ante Ante",
     "additional_info": "sa otoka Raba, 19. 12. 1944, Kamena, 3. bat.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 6,
     "pdf_y": 463.4,
@@ -14900,7 +15129,19 @@
         "source_page": 367,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "birth_place": "Dubrovnik",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_date": "1944",
+    "death_place": "Kamene-vranjevi",
+    "birth_year": "1922"
   },
   {
     "last_name": "Kordić",
@@ -15222,7 +15463,8 @@
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100000786",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 340.7
+    "pdf_x_end": 340.7,
+    "birth_date": "06.03.1945"
   },
   {
     "last_name": "Krehić",
@@ -15267,7 +15509,6 @@
     "fathers_name": "Hasan",
     "full_name": "Kreso Hasana Alija",
     "additional_info": "",
-    "birth_year": "1920",
     "pdf_page": 22,
     "pdf_y": 353.2,
     "pdf_x": 11.0,
@@ -15317,7 +15558,11 @@
     "birth_place": "Mostar",
     "ethnicity": "Musliman",
     "occupation": "radnik",
-    "party": "SKOJ 1939, KPJ 1943"
+    "party": "SKOJ 1939, KPJ 1943",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Kreso",
@@ -15342,7 +15587,6 @@
     "fathers_name": "Salih",
     "full_name": "Kreso Saliha Muhamed",
     "additional_info": "",
-    "birth_year": "1926",
     "pdf_page": 22,
     "pdf_y": 363.3,
     "pdf_x": 11.0,
@@ -15393,7 +15637,11 @@
     "unit_detail": "1. bataljon",
     "birth_place": "Mostar",
     "occupation": "đak",
-    "party": "SKOJ 1941"
+    "party": "SKOJ 1941",
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Kreso",
@@ -15988,6 +16236,10 @@
         "source_page": 2584,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16035,6 +16287,10 @@
         "source_page": 2584,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16889,7 +17145,15 @@
         "unit_file": "mostarski-bataljon-soldiers.json"
       }
     ],
-    "party": "SKOJ 1941"
+    "party": "SKOJ 1941",
+    "variants": {
+      "death": [
+        {
+          "date": "06.1944",
+          "place": "Vlahovići"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lizde",
@@ -17247,7 +17511,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Mace",
@@ -17775,6 +18043,10 @@
         "source_page": 152,
         "ref_book": "zrtve-rata-1964-voj"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -17836,7 +18108,15 @@
         "source_page": 2585,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Ivan sedlo"
   },
   {
     "last_name": "Martinović",
@@ -17984,6 +18264,10 @@
         "source_page": 1846,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18274,6 +18558,10 @@
         "source_page": 1874,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18470,6 +18758,10 @@
         "source_page": 1788,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18829,6 +19121,10 @@
         "source_page": 1560,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18936,7 +19232,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Mihić",
@@ -19344,7 +19644,13 @@
         "source_page": 2655,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Gacko"
   },
   {
     "last_name": "Milinković",
@@ -19375,6 +19681,10 @@
         "source_page": 1419,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19984,7 +20294,6 @@
     "fathers_name": "Nikola",
     "full_name": "Milošević Nikole Vaso",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 24,
     "pdf_y": 385.3,
     "pdf_x": 32.8,
@@ -20009,7 +20318,21 @@
         "source_page": 223,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Donja Meka Gruda, Bileća",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Trebinje",
+    "birth_year": "1927"
   },
   {
     "last_name": "Milošević",
@@ -20261,7 +20584,6 @@
     "fathers_name": "Hasan",
     "full_name": "Mišić Hasana Šefika",
     "additional_info": "",
-    "birth_year": "1925",
     "pdf_page": 24,
     "pdf_y": 11.2,
     "pdf_x": 204.4,
@@ -20298,7 +20620,11 @@
     "unit_detail": "1. bataljon",
     "birth_place": "Mostar",
     "occupation": "radnica",
-    "party": "SKOJ 1941"
+    "party": "SKOJ 1941",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Mišković",
@@ -20960,7 +21286,6 @@
     "fathers_name": "Mujo",
     "full_name": "Mušinović Muje Hamid",
     "additional_info": "",
-    "birth_year": "1917",
     "pdf_page": 24,
     "pdf_y": 375.3,
     "pdf_x": 206.6,
@@ -20997,7 +21322,11 @@
     "birth_place": "Ribari, Konjic",
     "occupation": "zemljoradnik",
     "rank": "zamjenik komandira čete",
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "birth_year": "1917",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Nadžiomerović",
@@ -21383,7 +21712,6 @@
     "fathers_name": "Redžo",
     "full_name": "Nuhić Redže Džanko",
     "additional_info": "",
-    "birth_year": "1919",
     "pdf_page": 25,
     "pdf_y": 94.2,
     "pdf_x": 10.1,
@@ -21420,7 +21748,11 @@
     "birth_place": "Idbar, Konjic",
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Nuhić",
@@ -21461,7 +21793,6 @@
     "fathers_name": "Hilmija",
     "full_name": "Numić Hilmije Fadil",
     "additional_info": "",
-    "birth_year": "1924",
     "pdf_page": 25,
     "pdf_y": 84.4,
     "pdf_x": 10.1,
@@ -21499,7 +21830,11 @@
     "birth_place": "Kotor Varoš",
     "ethnicity": "Musliman",
     "occupation": "đak",
-    "party": "SKOJ 1940, KPJ 1943"
+    "party": "SKOJ 1940, KPJ 1943",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Nurković",
@@ -21688,7 +22023,15 @@
         "source_page": 2581,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Slovenija"
   },
   {
     "last_name": "Obradović",
@@ -21751,6 +22094,10 @@
         "source_page": 2581,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22185,6 +22532,10 @@
         "source_page": 1881,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22392,6 +22743,10 @@
         "source_page": 1848,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22991,6 +23346,10 @@
         "source_page": 2594,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23361,6 +23720,10 @@
         "source_page": 2594,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23604,6 +23967,10 @@
         "source_page": 2589,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -23740,7 +24107,6 @@
     "fathers_name": "",
     "full_name": "Pervan Bešir",
     "additional_info": "poginuo 24. 10. 1944, kod Metkovića, 1. bat.",
-    "birth_year": "",
     "death_date": "poginuo 24. 10. 1944",
     "death_place": "kod Metkovića",
     "death_type": "poginuo",
@@ -23761,7 +24127,15 @@
         "source_page": 224,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Fatnica, Bileća",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Musliman",
+    "birth_year": "1925"
   },
   {
     "last_name": "Pervan",
@@ -24746,7 +25120,6 @@
     "fathers_name": "Mujo",
     "full_name": "Prohić Muje Sulejman",
     "additional_info": "",
-    "birth_year": "1919",
     "pdf_page": 26,
     "pdf_y": 231.5,
     "pdf_x": 184.3,
@@ -24783,7 +25156,11 @@
     "unit_detail": "2. četa, 1. bataljon",
     "birth_place": "Konjic",
     "occupation": "brijač",
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Prohić",
@@ -24945,6 +25322,10 @@
         "source_page": 2597,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26069,7 +26450,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "rank": "pomoćnik političkog komesara"
+    "rank": "pomoćnik političkog komesara",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rašić",
@@ -26435,6 +26820,10 @@
         "source_page": 1144,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26765,7 +27154,8 @@
     "birth_place": "Pijavičino, Dubrovnik",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "party": "SKOJ 1935, KPJ 1937"
+    "party": "SKOJ 1935, KPJ 1937",
+    "birth_date": "24.06.1917"
   },
   {
     "last_name": "Ružić",
@@ -26834,7 +27224,6 @@
     "soldier_id": "0100001403",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 348.4,
-    "rank": "desetar",
     "other_sources": [
       {
         "soldier_id": "9003000589",
@@ -27245,6 +27634,10 @@
         "source_page": 2587,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -27414,7 +27807,6 @@
     "fathers_name": "Drago",
     "full_name": "Samardžić Drage Špiro",
     "additional_info": "",
-    "birth_year": "1920",
     "pdf_page": 27,
     "pdf_y": 379.9,
     "pdf_x": 189.3,
@@ -27455,7 +27847,11 @@
     "death_type": "umro",
     "death_date": "1982",
     "death_place": "Sarajevo",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Sarajlić",
@@ -27855,6 +28251,10 @@
         "source_page": 2595,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29008,6 +29408,10 @@
         "source_page": 699,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29103,6 +29507,10 @@
         "source_page": 1847,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29272,7 +29680,6 @@
     "fathers_name": "Hilmija",
     "full_name": "Sunagić Hilmije Faik",
     "additional_info": "",
-    "birth_year": "1919",
     "pdf_page": 28,
     "pdf_y": 158.1,
     "pdf_x": 197.2,
@@ -29309,7 +29716,11 @@
     "unit_detail": "1. četa, 1. bataljon",
     "birth_place": "Konjic",
     "occupation": "bravar",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Suoka",
@@ -29752,6 +30163,10 @@
         "source_page": 1560,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29783,6 +30198,10 @@
         "source_page": 1878,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -29899,6 +30318,10 @@
         "source_page": 1156,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30061,6 +30484,10 @@
         "source_page": 1874,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30177,6 +30604,10 @@
         "source_page": 1215,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30231,6 +30662,10 @@
         "source_page": 2644,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30336,7 +30771,6 @@
     "fathers_name": "Jusuf",
     "full_name": "Trbonja Jusufa Mehmed",
     "additional_info": "",
-    "birth_year": "1915",
     "pdf_page": 29,
     "pdf_y": 86.9,
     "pdf_x": 14.9,
@@ -30402,7 +30836,12 @@
     "ethnicity": "Musliman",
     "occupation": "radnik",
     "rank": "komandir voda",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "birth_year": "1915",
+    "borrowed": [
+      "birth_year"
+    ],
+    "birth_date": "10.11.1915"
   },
   {
     "last_name": "Trbonja",
@@ -30544,6 +30983,10 @@
         "source_page": 1878,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30623,6 +31066,10 @@
         "source_page": 1875,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30947,6 +31394,10 @@
         "source_page": 1143,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -31419,7 +31870,6 @@
     "fathers_name": "Mujo",
     "full_name": "Veledar Muje Alija",
     "additional_info": "",
-    "birth_year": "1921",
     "pdf_page": 17,
     "pdf_y": 125.7,
     "pdf_x": 187.6,
@@ -31469,7 +31919,11 @@
     "birth_place": "Počitelj, Čapljina",
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Veledar",
@@ -32248,7 +32702,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "rank": "pomoćnik političkog komesara"
+    "rank": "pomoćnik političkog komesara",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vukanović",
@@ -33708,6 +34166,10 @@
         "source_page": 2648,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33786,6 +34248,10 @@
         "source_page": 2634,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33970,7 +34436,6 @@
     "fathers_name": "Meho",
     "full_name": "Ćesir Mehe Salko",
     "additional_info": "",
-    "birth_year": "1924",
     "pdf_page": 29,
     "pdf_y": 66.5,
     "pdf_x": 187.9,
@@ -34007,7 +34472,11 @@
     "unit_detail": "1. četa, 1. bataljon",
     "birth_place": "Razići, Konjic",
     "occupation": "zemljoradnik",
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Ćevro",
@@ -34280,6 +34749,10 @@
         "source_page": 1874,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34371,6 +34844,10 @@
         "source_page": 1563,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34402,6 +34879,10 @@
         "source_page": 1563,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34497,6 +34978,10 @@
         "source_page": 2657,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34575,7 +35060,6 @@
     "fathers_name": "Omer",
     "full_name": "Čemić Omera Salko",
     "additional_info": "Lug, Jablanica, 6. 3. 1945, Dragalj, Ivan-planina, 1. bat.",
-    "birth_year": "",
     "birth_place": "Lug, Jablanica",
     "death_date": "06.03.1945",
     "death_place": "Dragalj",
@@ -34588,6 +35072,7 @@
     "soldier_id": "0100001806",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 367.1,
+    "birth_year": "1916",
     "other_sources": [
       {
         "soldier_id": "9022018268",
@@ -34597,6 +35082,11 @@
         "source_page": 1563,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -35382,7 +35872,6 @@
     "soldier_id": "0100001849",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 357.0,
-    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9022012851",
@@ -35404,6 +35893,10 @@
         "pdf_y_end": 49.8,
         "unit_file": "12-hercegovacka-soldiers.json"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35732,6 +36225,10 @@
         "source_page": 2588,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -36735,7 +37232,12 @@
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
     "death_place": "Trusina, Stolac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Šarić",
@@ -37987,6 +38489,10 @@
         "source_page": 2585,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38033,6 +38539,10 @@
         "source_page": 1562,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38096,6 +38606,10 @@
         "source_page": 2584,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -38443,6 +38957,10 @@
         "source_page": 1880,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {

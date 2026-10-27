@@ -43,7 +43,8 @@
     "death_place": "na Bačkovcu - Šekoviđi",
     "rank": "komandir voda",
     "pdf_x_end": 374.6,
-    "pdf_x_left": 38.7
+    "pdf_x_left": 38.7,
+    "birth_date": "29.09.1917"
   },
   {
     "last_name": "Adolf-Andrun",
@@ -262,6 +263,10 @@
         "source_page": 1393,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "birth_place": "Četereže, Vučje",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -474,7 +479,6 @@
     "fathers_name": "Osman",
     "full_name": "Aličić Osmana Mahmut",
     "additional_info": "roćen 1921. godine, u Tuzli, Musliman, radnik, u Brigadu stupio 1944. godine, borac, poginuo 1944. godine na Crvenim stijeiama - Romanija.",
-    "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 365.8,
     "pdf_x": 284.1,
@@ -489,6 +493,7 @@
     "rank": "borac",
     "pdf_x_end": 439.9,
     "birth_place": "Tuzla",
+    "birth_year": "1918",
     "other_sources": [
       {
         "soldier_id": "9022033864",
@@ -511,6 +516,9 @@
         "pdf_x_left": 192.9,
         "ref_book": "tuzla-spomen-knjiga"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -923,7 +931,15 @@
         "source_page": 487,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Šabac"
   },
   {
     "last_name": "Arsić",
@@ -1144,7 +1160,8 @@
     "birth_place": "Glibovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 193.8
+    "pdf_x_end": 193.8,
+    "birth_date": "18.06.1926"
   },
   {
     "last_name": "Avramović",
@@ -1415,7 +1432,15 @@
         "pdf_y_end": 585.5,
         "unit_file": "53-srednjobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.03.1945",
+          "place": "u Majkocu"
+        }
+      ]
+    }
   },
   {
     "last_name": "Babić",
@@ -1911,7 +1936,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 259.5
+    "pdf_x_end": 259.5,
+    "birth_date": "01.06.1925"
   },
   {
     "last_name": "Batinić",
@@ -1971,7 +1997,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 259.2
+    "pdf_x_end": 259.2,
+    "birth_date": "12.01.1920"
   },
   {
     "last_name": "Batinić",
@@ -2958,7 +2985,12 @@
         "pdf_y_end": 827.4,
         "unit_file": "tuzlanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Blagojević",
@@ -3622,7 +3654,8 @@
     "death_place": "Vlasenica",
     "rank": "zamjenik komesara čete",
     "pdf_x_end": 438.3,
-    "occupation": "radnica"
+    "occupation": "radnica",
+    "birth_date": "05.04.1925"
   },
   {
     "last_name": "Bošković",
@@ -3712,7 +3745,12 @@
         "pdf_y_end": 581.8,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Bošnjak",
@@ -5001,6 +5039,10 @@
         "source_page": 2843,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5095,6 +5137,10 @@
         "source_page": 2843,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5467,6 +5513,10 @@
         "source_page": 1605,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -5962,6 +6012,10 @@
         "source_page": 2856,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Tuzla",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -6993,7 +7047,12 @@
         "pdf_y_end": 364.3,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Džinkić",
@@ -7444,7 +7503,21 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "kurir",
-    "birth_place": "Gučevo, Rogatica"
+    "birth_place": "Gučevo, Rogatica",
+    "other_sources": [
+      {
+        "soldier_id": "0042000134",
+        "name": "Frganja Ostoje Miladin",
+        "additional_info": "borac 2. čete 2. bataljona, rođen 1925, Gučevo, Rogatica, zemljoradnik, Srbin, u NOB od marta 1942. godine.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 9.4,
+        "pdf_y": 292.5,
+        "pdf_x_end": 176.3,
+        "pdf_y_end": 334.1,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gagić",
@@ -8356,7 +8429,8 @@
         "pdf_x_left": 216.4,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "14.12.1919"
   },
   {
     "soldier_id": "0023001984",
@@ -9821,7 +9895,6 @@
     "fathers_name": "Jusuf",
     "full_name": "Hujdurović Jusufa Adem",
     "additional_info": "roćen 1927. godine u Bijeljini, Musliman, zemljoradnik, u Brigadu stupio oktobra 1943. godine, borac, poginuo jula 1944. godine kod Sokoca.",
-    "birth_year": "",
     "pdf_page": 111,
     "pdf_y": 629.7,
     "pdf_x": 102.8,
@@ -9836,6 +9909,7 @@
     "rank": "borac",
     "pdf_x_end": 257.6,
     "birth_place": "Bijeljina",
+    "birth_year": "1926",
     "other_sources": [
       {
         "soldier_id": "9022002247",
@@ -9845,6 +9919,9 @@
         "source_page": 171,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -10899,7 +10976,12 @@
         "pdf_y_end": 549.5,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Ilić",
@@ -11363,7 +11445,8 @@
     ],
     "death_date": "1980",
     "death_place": "Tuzla",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_date": "13.11.1914"
   },
   {
     "last_name": "Ivanović",
@@ -13225,7 +13308,6 @@
     "fathers_name": "Mateja",
     "full_name": "Jovanović Mateje Nenad",
     "additional_info": "roćen 1924. godine u Velikoj Plani, SRS, Srbin, zemljoradnik, u NOB i Brigadu stupio 1. 12. 1944. godine, borac, poginuo 9. 03. 1945. godine na Sokocu.",
-    "birth_year": "1924",
     "pdf_page": 40,
     "pdf_y": 533.3,
     "pdf_x": 113.3,
@@ -13262,6 +13344,10 @@
         "pdf_x_left": 99.3,
         "unit_file": "18-hrvatska-soldiers.json"
       }
+    ],
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -13666,7 +13752,6 @@
     "fathers_name": "Vasilije",
     "full_name": "Jovičić Vasilija Drago",
     "additional_info": "roćen 1921. godine u Selištima - Šekovići, Srbin, zemljoradnik, u NOB stupio avgusta 1941. godine, a u Brigadu 1943. godine, borac, poginuo 1943. godine u Papraći.",
-    "birth_year": "",
     "pdf_page": 41,
     "pdf_y": 596.5,
     "pdf_x": 109.1,
@@ -13681,6 +13766,7 @@
     "rank": "borac",
     "pdf_x_end": 263.9,
     "birth_place": "Selište, Šekovići",
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9022030472",
@@ -13690,6 +13776,9 @@
         "source_page": 2462,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -13930,7 +14019,8 @@
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_date": "01.01.1919"
   },
   {
     "last_name": "Jovičić",
@@ -16247,7 +16337,6 @@
     "fathers_name": "Nikola",
     "full_name": "Korunović Nikole Milorad",
     "additional_info": "rođen Srbin, zemljoradnik, poginuo 15. 01. 1945. godine na Han Pijesku.",
-    "birth_year": "",
     "pdf_page": 48,
     "pdf_y": 463.1,
     "pdf_x": 294.7,
@@ -16268,7 +16357,15 @@
         "source_page": 1315,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Markovac, Velika Drenova",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1915"
   },
   {
     "last_name": "Kosanić",
@@ -16716,7 +16813,6 @@
     "fathers_name": "Jako",
     "full_name": "Kovačević Jake Vojislav",
     "additional_info": "roćen 1923. godine u Dolima - Kladanj, Srbin, zemljoradnik, u Brigadu stupio 13. 10. 1943. godine, borac, poginuo oktobra 1944. godine na Ilinčici - Tuzla.",
-    "birth_year": "",
     "pdf_page": 47,
     "pdf_y": 538.7,
     "pdf_x": 105.2,
@@ -16731,6 +16827,7 @@
     "rank": "borac",
     "pdf_x_end": 260.6,
     "birth_place": "Doli, Kladanj",
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9022018982",
@@ -16740,6 +16837,9 @@
         "source_page": 1621,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -17249,7 +17349,12 @@
         "pdf_y_end": 343.3,
         "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Kukuruzović",
@@ -17659,7 +17764,15 @@
         "source_page": 1121,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Loret-tabanovac"
   },
   {
     "last_name": "Lazarević",
@@ -17872,6 +17985,10 @@
         "source_page": 2824,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Vlasenica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -17901,7 +18018,6 @@
     "fathers_name": "Vasilije",
     "full_name": "Lazić Vasilija Svetozar",
     "additional_info": "roćen 1925. godine u Krvavici - Bratunac, Srbin, ćak, u Brigadu stupio oktobra 1943. godine, poginuo aprila 1944. godine, na Oblom Brdu - Trnovo.",
-    "birth_year": "",
     "pdf_page": 52,
     "pdf_y": 241.7,
     "pdf_x": 114.7,
@@ -17915,6 +18031,7 @@
     "death_place": "na Oblom Brdu - Trnovo",
     "pdf_x_end": 270.1,
     "birth_place": "Krvavica, Bratunac",
+    "birth_year": "1925",
     "other_sources": [
       {
         "soldier_id": "9022029789",
@@ -17924,6 +18041,9 @@
         "source_page": 2370,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -18522,7 +18642,12 @@
         "pdf_y_end": 524.0,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Mahmutović",
@@ -19242,6 +19367,10 @@
         "source_page": 1553,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Rogatica",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -20462,7 +20591,21 @@
     "birth_place": "Brda, Srebrenik",
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0059000938",
+        "name": "Mašić Huseina Alija",
+        "additional_info": "1916, Rapatnica - Brda, Musliman, zemljoradnik, u odredu od oktobra 1944, borac.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 84,
+        "pdf_x": 95.6,
+        "pdf_y": 442.5,
+        "pdf_x_end": 376.2,
+        "pdf_y_end": 458.6,
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0023009004",
@@ -20805,7 +20948,6 @@
     "fathers_name": "Meho",
     "full_name": "Mehmedović Mehe Mujo",
     "additional_info": "roćen 1923. godine, u D. Raincima - Kalesija, Musliman, zemljoradnik, u brigadu stupio decembra 1944. godine, borac, poginuo marta 1945. godine na Crvenim Stjenama - Romanija.",
-    "birth_year": "",
     "pdf_page": 60,
     "pdf_y": 405.5,
     "pdf_x": 279.6,
@@ -20820,6 +20962,7 @@
     "rank": "borac",
     "pdf_x_end": 435.2,
     "birth_place": "D. Rainci, Kalesija",
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9022018726",
@@ -20829,6 +20972,9 @@
         "source_page": 1603,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -22274,7 +22420,15 @@
         "source_page": 1393,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Četereže, Žabari",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_date": "1945"
   },
   {
     "last_name": "Miletić",
@@ -22471,6 +22625,10 @@
         "source_page": 2456,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Šekovići",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -22954,7 +23112,12 @@
         "pdf_y_end": 283.6,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Milovanović",
@@ -23904,7 +24067,15 @@
         "source_page": 2838,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1942",
+    "death_place": "Kalesija"
   },
   {
     "last_name": "Mrkajić",
@@ -24399,7 +24570,6 @@
     "fathers_name": "Osmo",
     "full_name": "Muminović Osme Jusuf",
     "additional_info": "roćen 1921. godine u D. Raincima - Kalesija, Musliman, zemljoradnik, u Brigadu stupio oktobra 1944. godine, borac, poginuo marta 1945. godine na Crvenim Stjenama - Romanija.",
-    "birth_year": "",
     "pdf_page": 69,
     "pdf_y": 204.1,
     "pdf_x": 292.0,
@@ -24414,6 +24584,7 @@
     "rank": "borac",
     "pdf_x_end": 447.9,
     "birth_place": "D. Rainci, Kalesija",
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9022018727",
@@ -24423,6 +24594,9 @@
         "source_page": 1603,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -25572,7 +25746,12 @@
         "pdf_y_end": 496.8,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Ninić",
@@ -25630,7 +25809,12 @@
         "pdf_y_end": 552.0,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Ninić",
@@ -26661,7 +26845,12 @@
         "pdf_y_end": 841.8,
         "unit_file": "tuzlanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1910"
+      ]
+    }
   },
   {
     "last_name": "Pacali",
@@ -27224,7 +27413,12 @@
         "pdf_y_end": 379.5,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Pantić",
@@ -27526,7 +27720,6 @@
     "fathers_name": "Krsto",
     "full_name": "Pavlović Krste Miloš",
     "additional_info": "roćen 1922. godine u Vukšićima - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1941. godine, a u Brigadu 1943. godine, borac, nosilac »Spomenice«.",
-    "birth_year": "",
     "pdf_page": 76,
     "pdf_y": 335.0,
     "pdf_x": 116.7,
@@ -27537,7 +27730,27 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 271.8,
-    "birth_place": "Vukšići, Vlasenica"
+    "birth_place": "Vukšići, Vlasenica",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year",
+      "party"
+    ],
+    "party": "SKOJ 1942, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0042000488",
+        "name": "Pavlović Krste Miloš",
+        "additional_info": "puškomitraljezac 3. čete 2. bataljona, rođen 1922, Vukšići, Vlasenica, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a od 1942, član KPJ od septembra 1943, krajem rata komandir čete.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 193.9,
+        "pdf_y": 404.5,
+        "pdf_x_end": 365.0,
+        "pdf_y_end": 467.7,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -27791,7 +28004,12 @@
         "pdf_x_left": 135.4,
         "unit_file": "18-hrvatska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Pelemiš",
@@ -28267,7 +28485,12 @@
         "pdf_y_end": 502.1,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Perišić",
@@ -28412,7 +28635,12 @@
         "pdf_y_end": 166.6,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Perišić",
@@ -28473,7 +28701,15 @@
         "pdf_y_end": 231.4,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.04.1945",
+          "place": "Zavidovići"
+        }
+      ]
+    }
   },
   {
     "last_name": "Perišić",
@@ -29923,7 +30159,6 @@
     "fathers_name": "Maksim",
     "full_name": "Popović Maksima Veljko",
     "additional_info": "roćen 1928. godine u Osmacima - Kalesija, Srbin, zemljoradnik, u NOB stupio avgusta 1943. godine, a u Brigadu oktobra 1943. godine, delegat, poginuo marta 1945. godine na Crvenim Stjenama kod Sokoca.",
-    "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 326.7,
     "pdf_x": 292.0,
@@ -29937,6 +30172,7 @@
     "death_place": "na Crvenim Stjenama kod Sokoca",
     "pdf_x_end": 447.2,
     "birth_place": "Osmaci, Kalesija",
+    "birth_year": "1928",
     "other_sources": [
       {
         "soldier_id": "9022018714",
@@ -29946,6 +30182,9 @@
         "source_page": 1602,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -29955,7 +30194,6 @@
     "fathers_name": "Niko",
     "full_name": "Popović Nike Vujadin",
     "additional_info": "roćen 1926. godine u Strmici - Šekovići, Srbin, zemljoradnik, u Brigadu stupio oktobra 1943. godine, borac, umro 1944. godine u Tuzli.",
-    "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 407.1,
     "pdf_x": 291.8,
@@ -29970,6 +30208,7 @@
     "rank": "borac",
     "pdf_x_end": 447.0,
     "birth_place": "Strmica, Šekovići",
+    "birth_year": "1927",
     "other_sources": [
       {
         "soldier_id": "9022030483",
@@ -29979,6 +30218,9 @@
         "source_page": 2462,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -30288,6 +30530,10 @@
         "source_page": 1394,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "birth_place": "Porodin, Žabari",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -33791,7 +34037,12 @@
         "pdf_y_end": 173.4,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Slijepčević",
@@ -34388,7 +34639,6 @@
     "fathers_name": "David",
     "full_name": "Stanišić Davida Luka",
     "additional_info": "roćen 1920. godine u Kojčevini - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1942. godine, a u Brigadu 13. 10. 1943. godine, borac, poginuo 1944. godine, u D. Zalukoviku.",
-    "birth_year": "",
     "pdf_page": 96,
     "pdf_y": 460.8,
     "pdf_x": 113.4,
@@ -34403,6 +34653,7 @@
     "rank": "borac",
     "pdf_x_end": 269.1,
     "birth_place": "Kojčevina, Vlasenica",
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9022036059",
@@ -34412,6 +34663,9 @@
         "source_page": 2838,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -34421,7 +34675,6 @@
     "fathers_name": "Mijat",
     "full_name": "Stanišić Mijata Luka",
     "additional_info": "roćen 1924. godine u Bakićima - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1941. godine, a u Brigadu 13. 10. 1943. godine, komandir čete, poginuo 1944. godine u D. Zalukoviku.",
-    "birth_year": "",
     "pdf_page": 96,
     "pdf_y": 538.8,
     "pdf_x": 113.4,
@@ -34436,6 +34689,7 @@
     "rank": "komandir čete",
     "pdf_x_end": 269.1,
     "birth_place": "Bakići, Vlasenica",
+    "birth_year": "1922",
     "other_sources": [
       {
         "soldier_id": "9022035969",
@@ -34445,6 +34699,9 @@
         "source_page": 2825,
         "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -34571,7 +34828,6 @@
     "fathers_name": "Obren",
     "full_name": "Stanišić Obrena Pero",
     "additional_info": "orćen 1919. godine u Nećeljištima - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1941. godine, a u Brigadu 13. 10. 1943. godine, borac, poginuo 1943. godine.",
-    "birth_year": "",
     "pdf_page": 96,
     "pdf_y": 450.2,
     "pdf_x": 293.2,
@@ -34584,6 +34840,7 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 448.9,
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9022036121",
@@ -34593,7 +34850,14 @@
         "source_page": 2844,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Neđeljišta, Vlasenica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place"
+    ],
+    "death_place": "Šekovići"
   },
   {
     "last_name": "Stanišić",
@@ -37008,6 +37272,10 @@
         "source_page": 1145,
         "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "death_place": "Zavidovići-bosn",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -37086,7 +37354,12 @@
         "pdf_y_end": 490.8,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Todorović",
@@ -37155,7 +37428,8 @@
         "pdf_x_left": 185.8,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "11.01.1923"
   },
   {
     "last_name": "Todorović-Jakimov",
@@ -37892,7 +38166,12 @@
         "pdf_y_end": 218.5,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Trišić",
@@ -38370,7 +38649,12 @@
         "pdf_y_end": 338.3,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Vasiljević",
@@ -38494,7 +38778,12 @@
         "pdf_y_end": 420.4,
         "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vasiljević",
@@ -38540,7 +38829,12 @@
         "pdf_y_end": 420.4,
         "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vasiljević",
@@ -38581,7 +38875,6 @@
     "occupation": "domaćica",
     "death_type": "poginuo",
     "pdf_x_end": 268.8,
-    "rank": "bolničarka",
     "death_date": "1944",
     "death_place": "kod Mihajlovića, Šekovići",
     "party": "SKOJ",
@@ -38598,7 +38891,12 @@
         "pdf_y_end": 557.4,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vasiljević",
@@ -39223,7 +39521,8 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "komandir voda",
-    "pdf_x_end": 441.6
+    "pdf_x_end": 441.6,
+    "birth_date": "01.01.1924"
   },
   {
     "last_name": "Vidović",
@@ -39317,7 +39616,13 @@
         "source_page": 2826,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kruščica"
   },
   {
     "last_name": "Vidović",
@@ -39659,7 +39964,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 449.8
+    "pdf_x_end": 449.8,
+    "birth_date": "28.03.1927"
   },
   {
     "last_name": "Vlačić",
@@ -39954,7 +40260,15 @@
         "pdf_y_end": 380.4,
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "10.07.1944",
+          "place": "Han Pijesak"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vucelja-Josipović",
@@ -40174,7 +40488,8 @@
         "source_page": 2683,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_date": "12.08.1891"
   },
   {
     "last_name": "Vukotić",
@@ -40290,7 +40605,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "komandant bataljona, potpukovnik",
-    "pdf_x_end": 272.1
+    "pdf_x_end": 272.1,
+    "birth_date": "06.05.1918"
   },
   {
     "last_name": "Vuković",
@@ -41477,7 +41793,13 @@
         "source_page": 1393,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Četereže, Vučje",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Čeklić",
@@ -42193,7 +42515,6 @@
     "fathers_name": "Mijat",
     "full_name": "Đuričić Mijat Sredoje",
     "additional_info": "roćen 1922. godine u Dubnici - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1941. godine, a u Brigadu 1943. godine, zamjenik komesara bataljona, nosilac »Partizanske spomenice 1941«, pukovnik u penziji.",
-    "birth_year": "",
     "pdf_page": 29,
     "pdf_y": 284.8,
     "pdf_x": 291.4,
@@ -42204,7 +42525,27 @@
     "occupation": "zemljoradnik",
     "rank": "zamjenik komesara bataljona, pukovnik",
     "pdf_x_end": 446.5,
-    "birth_place": "Dubnica, Vlasenica"
+    "birth_place": "Dubnica, Vlasenica",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year",
+      "party"
+    ],
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0042000777",
+        "name": "Đuričić Mijata Sredoje",
+        "additional_info": "borac 2. čete 3. bataljona, rođen 1922, Dubnica, Vlasenica, zemljoradnik, Srbin, u NOB od 1941, član KPJ od aprila 1943, krajem rata komandant bataljona.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 11.8,
+        "pdf_y": 306.5,
+        "pdf_x_end": 182.8,
+        "pdf_y_end": 358.9,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Đuričić",
@@ -42537,7 +42878,8 @@
         "pdf_x_left": 189.7,
         "ref_book": "tuzla-spomen-knjiga"
       }
-    ]
+    ],
+    "birth_date": "07.01.1931"
   },
   {
     "last_name": "Šahbegović",
@@ -43058,7 +43400,15 @@
         "pdf_y_end": 509.5,
         "unit_file": "2-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "početkom decembra 1943",
+          "place": "na Ćrvenim _ . Stijenama kod Sarajeva"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šišić",
