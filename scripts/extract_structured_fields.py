@@ -36,6 +36,7 @@ import random
 import re
 import sys
 from collections import Counter
+from functools import lru_cache
 from itertools import product
 from pathlib import Path
 
@@ -46,6 +47,19 @@ from name_utils import BRIGADE_CONFIGS, OSTALI_CODES  # noqa: E402
 from cleanup_text_fields import live_json_files  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+@lru_cache(maxsize=1)
+def case_table() -> dict:
+    """data-extraction/places/case_forms.json, the forms read against their entries: 'forms' (a case -> its
+    nominative) and 'kept' (read and left as printed), which the vote's new endings give way to"""
+    try:
+        t = json.loads((ROOT / 'data-extraction' / 'places' / 'case_forms.json').read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        return {'forms': {}, 'kept': set()}
+    return {'forms': t.get('forms', {}), 'kept': set(t.get('kept', []))}
+
+
 FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'death_type', 'death_date', 'death_place', 'party']
 # Units whose parser sets the fields itself and whose text is written from them, not printed: Druga proleterska's
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
@@ -1111,11 +1125,28 @@ class Extractor:
         ('pcu', 'bac'), ('pca', 'bac'), ('ocu', 'olac'), ('oca', 'olac'),          # "u Šapcu" = Šabac, "u Stocu" = Stolac
     ]
 
-    def _variants(self, word: str) -> list[str]:
+    # Endings the rules above lack (2026-10-27): a neuter in -e after a soft consonant ("u Užicu" Užice, "u Jajcu"
+    # Jajce, "na Tjentištu" Tjentište, "u Goraždu" Goražde), a dropped a ("u Čačku" Čačak, "u Ripnju" Ripanj, "kod
+    # Kaknja" Kakanj, "u Grblju" Grbalj, "u Metku" Medak) and Varoš ("kod Nove Varoši"). Not -ći to -ć: "Peći" is a
+    # village's own name too (near Ključ, Bosansko Grahovo), and so are the plurals "Vranići", "Drinići".
+    # The vote counts the genitives the records stored ("kod Užica", "kod Kaknja"), so without them "u Užicu" was Užica
+    # (87 against Užice's 580). A reading they give replaces one of the rules above only where the vote counts it twice
+    # as often ("u Križu" stays Križ, Križe 48 to 38)
+    _STRONG_RULES = [
+        ('cu', 'ce'), ('ću', 'će'), ('ču', 'če'), ('đu', 'đe'), ('šu', 'še'), ('štu', 'šte'), ('šću', 'šće'), ('ždu', 'žde'),
+        ('ku', 'ak'), ('tku', 'dak'), ('tka', 'dak'), ('nju', 'anj'), ('nja', 'anj'), ('lju', 'alj'), ('lja', 'alj'), ('oši', 'oš'),
+    ]
+    # Used only where no other rule finds a place, for a place the vote counts five times: a neuter in -e after
+    # another consonant ("u Velikom Laolu" Veliko Laole; "u Dunavu" stays Dunav, "u Mostu" Most) and a neuter plural
+    # ("u Pljevljima" Pljevlja, "u Koritima" Korita; "u Karlovcima" stays Karlovci, the vote's Karlovca being
+    # Karlovac's genitive, and "u Mravićima" Mravići)
+    _WEAK_RULES = [('u', 'e'), ('ima', 'a')]
+
+    def _variants(self, word: str, rules=None) -> list[str]:
         """The word and its nominatives by the rules, in the rules' order: _known keeps the first of two forms the
         corpus knows equally often ("u Jezdini": Jezdina before Jezdine), where a set's order changed from run to run"""
         out = {word: None}
-        for suf, rep in self._WORD_RULES:
+        for suf, rep in rules or self._WORD_RULES:
             if word.endswith(suf) and len(word) - len(suf) >= 2:
                 out.setdefault(word[:-len(suf)] + rep, None)
         return list(out)
@@ -1129,8 +1160,29 @@ class Extractor:
         n0 = self.places.get(phrase, 0)
         if n0 and not locative:
             return phrase                                                 # already a known nominative
+        old = self._vote(phrase, words, n0, locative, self._WORD_RULES)
+        ends = tuple(s for s, _ in self._STRONG_RULES + self._WEAK_RULES)
+        if not any(w.endswith(ends) for w in words):
+            return old
+        table = case_table()
+        if phrase in table['kept']:
+            return old                                                    # read against its entries and left as printed
+        plain = old is None or old == phrase
+        new = self._vote(phrase, words, n0, locative, self._WORD_RULES + self._STRONG_RULES)
+        if new != old and not (new and self.places.get(new, 0) >= 3
+                               and (plain or self.places.get(new, 0) >= 2 * self.places.get(old, 0))):
+            new = old
+        if new is None or new == phrase:
+            weak = self._vote(phrase, words, n0, locative, self._WORD_RULES + self._STRONG_RULES + self._WEAK_RULES)
+            if weak and weak != phrase and self.places.get(weak, 0) >= 5:
+                new = weak
+        if new != old and table['forms'].get(phrase, new) != new:
+            return old                                                    # the table reads it otherwise: "u Brocu" Brodac
+        return new
+
+    def _vote(self, phrase: str, words: list, n0: int, locative: bool, rules) -> str | None:
         best = None
-        for combo in product(*(self._variants(w) for w in words)):
+        for combo in product(*(self._variants(w, rules) for w in words)):
             cand = ' '.join(combo)
             n = self.places.get(cand, 0)
             if cand != phrase and n and (best is None or n > best[0]):

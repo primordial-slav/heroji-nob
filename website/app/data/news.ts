@@ -17,37 +17,37 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-21',
     text: {
-      sr: 'Ime oca je sada u nominativu i kod oko 7.900 boraca kod kojih je ostalo onako kako je štampano u knjizi, najviše iz Mosorskog odreda, IV pomorskog obalnog sektora, 1. krajiške, Čačanskog odreda, 15. majevičke i 1. bokeljske: „Miloša“ je Miloš, „Jove“ Jovo. Gde popis iz 1964. daje oca istog čoveka, uzeto je njegovo ime. Po imenu oca sada ih nalazi i pretraga.',
-      sl: 'Ime očeta je zdaj v imenovalniku tudi pri okoli 7.900 borcih, pri katerih je ostalo tako, kot je natisnjeno v knjigi, največ iz Mosorskega odreda, IV. pomorskega obalnega sektorja, 1. krajiške, Čačanskega odreda, 15. majeviške in 1. bokeljske: »Miloša« je Miloš, »Jove« Jovo. Kjer popis iz leta 1964 daje očeta istega človeka, je vzeto njegovo ime. Po imenu očeta jih zdaj najde tudi iskanje.',
-      mk: 'Името на таткото сега е во основна форма и кај околу 7.900 борци кај кои остана онака како што е отпечатено во книгата, најмногу од Мосорскиот одред, IV поморски крајбрежен сектор, 1-ва краишка, Чачанскиот одред, 15-та мајевичка и 1-ва бокељска: „Miloša“ е Miloš, „Jove“ Jovo. Каде што пописот од 1964 година го дава таткото на истиот човек, земено е неговото име. Според името на таткото сега ги наоѓа и пребарувањето.',
-      en: 'The father’s name is now in its base form for some 7,900 more fighters, where it had stayed as the book prints it, most of them of the Mosor detachment, the IV naval coastal sector, the 1st Krajina, the Čačak detachment, the 15th Majevica and the 1st Boka: “Miloša” is Miloš, “Jove” Jovo. Where the 1964 census gives the same man’s father, his name was taken. Search now finds them by the father’s name too.',
+      sr: 'Očevo ime sada stoji u osnovnom obliku i kod još oko 7.900 boraca: „Miloša“ je Miloš.',
+      sl: 'Očetovo ime je zdaj v osnovni obliki še pri okoli 7.900 borcih: »Miloša« je Miloš.',
+      mk: 'Името на таткото сега е во основна форма и кај уште околу 7.900 борци: „Miloša“ е Miloš.',
+      en: 'The father’s name is now in its plain form for about 7,900 more fighters: “Miloša” (Miloš’s) is Miloš.',
     },
   },
   {
     date: '2026-10-21',
     text: {
-      sr: 'Mesta rođenja i pogibije prepoznata su po bazi geografskih imena GeoNames: oko 8.400 mesta koja su bila u padežu sada stoje u nominativu („Užicu“ je Užice), a u stablu „Saborci i zemljaci“ borci iz istog sela su zajedno kako god ga knjige pisale, dok dva sela istog imena više nisu jedno. Tako je sa svojim zemljacima povezano još oko 15.000 boraca.',
-      sl: 'Kraji rojstva in smrti so prepoznani po zbirki zemljepisnih imen GeoNames: okoli 8.400 krajev, ki so bili v sklonu, je zdaj v imenovalniku (»Užicu« je Užice), v drevesu »Soborci in rojaki« pa so borci iz iste vasi skupaj, kakor koli jo pišejo knjige, dve vasi z istim imenom pa nista več ena. Tako je s svojimi rojaki povezanih še okoli 15.000 borcev.',
-      mk: 'Местата на раѓање и загинување се препознаени според базата на географски имиња GeoNames: околу 8.400 места што беа во падеж сега стојат во основна форма („Užicu“ е Užice), а во стеблото „Соборци и земјаци“ борците од исто село се заедно, како и да го пишуваат книгите, додека две села со исто име веќе не се едно. Така со своите земјаци се поврзани уште околу 15.000 борци.',
-      en: 'Places of birth and death are now identified with the GeoNames geographical database: some 8,400 places printed in a grammatical case are given in their base form (“Užicu” is Užice), and the “Comrades and neighbours” tree keeps the fighters of one village together however the books spell it, while two villages of one name are no longer one. Some 15,000 more fighters are now linked with their neighbours.',
+      sr: 'Mesta rođenja i pogibije: „Užicu“ je sada Užice, a u „Saborci i zemljaci“ borci iz istog sela su zajedno i kad knjige različito pišu selo.',
+      sl: 'Kraji rojstva in smrti: »Užicu« je zdaj Užice, v »Soborci in rojaki« pa so borci iz iste vasi skupaj, tudi ko knjige vas pišejo različno.',
+      mk: 'Места на раѓање и загинување: „Užicu“ сега е Užice, а во „Соборци и земјаци“ борците од исто село се заедно и кога книгите различно го пишуваат селото.',
+      en: 'Places of birth and death: “Užicu” is now Užice, and in “Comrades and neighbours” fighters from one village stay together however the books spell it.',
     },
   },
   {
     date: '2026-10-21',
     text: {
-      sr: 'Ispravljeno je oko 8.000 mesta rođenja u koja je ušlo nešto drugo: dužnost, jedinica ili republika („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); poginuli iz Beograda u popisu iz 1964. sada su rođeni u Beogradu, a ne u njegovim opštinama.',
-      sl: 'Popravljenih je okoli 8.000 krajev rojstva, v katere je zašlo kaj drugega: dolžnost, enota ali republika („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); padli iz Beograda v popisu iz leta 1964 so zdaj rojeni v Beogradu, ne v njegovih občinah.',
-      mk: 'Поправени се околу 8.000 места на раѓање во кои влегло нешто друго: должност, единица или република („Borac brigade“, „Krasica, Bakar, SR Hrvatska“); загинатите од Белград во пописот од 1964 година сега се родени во Белград, а не во неговите општини.',
-      en: 'About 8,000 birthplaces that held something else, a duty, a unit or a republic (“Borac brigade”, “Krasica, Bakar, SR Hrvatska”), have been put right; the 1964 census’s fallen from Belgrade are now born in Belgrade, not in its municipalities.',
+      sr: 'Ispravljeno je oko 8.000 mesta rođenja u kojima je pisalo nešto drugo, na primer dužnost ili jedinica.',
+      sl: 'Popravljenih je okoli 8.000 krajev rojstva, kjer je pisalo kaj drugega, na primer dolžnost ali enota.',
+      mk: 'Поправени се околу 8.000 места на раѓање каде што пишувало нешто друго, на пример должност или единица.',
+      en: 'About 8,000 birthplaces that held something else, such as a duty or a unit, have been corrected.',
     },
   },
   {
     date: '2026-10-21',
     text: {
-      sr: 'Sedam knjiga o selima i krajevima iz Digitalne biblioteke Porekla: Han Pijesak, Skakavac kod Petrovca, Žitorađe, Brod kod Crne Trave, Grahovo kod Nikšića, Kolašin i Božiće, oko 1.450 boraca i aktivista; 288 zapisa iz njih dodato je zapisima koji već postoje.',
-      sl: 'Sedem knjig o vaseh in krajih iz digitalne knjižnice Poreklo: Han Pijesak, Skakavac pri Petrovcu, Žitorađe, Brod pri Crni Travi, Grahovo pri Nikšiću, Kolašin in Božiće, okoli 1.450 borcev in aktivistov; 288 zapisov iz njih je dodanih zapisom, ki že obstajajo.',
-      mk: 'Седум книги за селата и краиштата од дигиталната библиотека на Порекло: Хан Пијесак, Скакавац кај Петровац, Житорађе, Брод кај Црна Трава, Грахово кај Никшиќ, Колашин и Божиќе, околу 1.450 борци и активисти; 288 записи од нив се додадени на записите што веќе постојат.',
-      en: 'Seven books on villages and districts from the Poreklo digital library: Han Pijesak, Skakavac near Petrovac, Žitorađe, Brod near Crna Trava, Grahovo near Nikšić, Kolašin and Božiće, some 1,450 fighters and activists; 288 of their entries have been added to records already on the site.',
+      sr: 'Borci iz sedam knjiga o selima: Han Pijesak, Skakavac, Žitorađe, Brod kod Crne Trave, Grahovo kod Nikšića, Kolašin i Božiće.',
+      sl: 'Borci iz sedmih knjig o vaseh: Han Pijesak, Skakavac, Žitorađe, Brod pri Crni Travi, Grahovo pri Nikšiću, Kolašin in Božiće.',
+      mk: 'Борците од седум книги за селата: Хан Пијесак, Скакавац, Житорађе, Брод кај Црна Трава, Грахово кај Никшиќ, Колашин и Божиќе.',
+      en: 'Fighters from seven books on villages: Han Pijesak, Skakavac, Žitorađe, Brod near Crna Trava, Grahovo near Nikšić, Kolašin and Božiće.',
     },
   },
   {
@@ -68,10 +68,10 @@ export const NEWS: NewsItem[] = [
       en: 'Lists that were only images',
     },
     text: {
-      sr: 'Četiri spiska sa znaci.org koji su bili samo skenirane slike sada su pročitani: ceo spisak 1. bokeljske brigade po jedinicama (oko 3.100 boraca), pali borci Nikšićkog i Lovćenskog odreda i borci opštine Teslić. Oko 640 zapisa iz njih dodato je zapisima koji već postoje, a oko 2.200 drugih je među Ostalim borcima.',
-      sl: 'Štirje seznami z znaci.org, ki so bili le skenirane slike, so zdaj prebrani: celoten seznam 1. bokeljske brigade po enotah (okoli 3.100 borcev), padli borci Nikšićkega in Lovćenskega odreda ter borci občine Teslić. Okoli 640 zapisov iz njih je dodanih zapisom, ki že obstajajo, okoli 2.200 drugih je med Drugimi borci.',
-      mk: 'Четири списоци од znaci.org што беа само скенирани слики сега се прочитани: целиот список на 1-ва бокељска бригада по единици (околу 3.100 борци), паднатите борци на Никшиќкиот и Ловќенскиот одред и борците од општината Теслиќ. Околу 640 записи од нив се приклучени кон записите што веќе постојат, а околу 2.200 други се меѓу Другите борци.',
-      en: 'Four lists on znaci.org that were only scanned images have now been read: the 1st Boka Brigade’s whole roll by unit (some 3,100 fighters), the fallen of the Nikšić and Lovćen detachments, and the fighters of the Teslić municipality. About 640 of their entries have been added to records already on the site; some 2,200 others are among the Other fighters.',
+      sr: 'Četiri spiska bila su samo skenirane slike, bez teksta. Sada su pročitani: ceo spisak 1. bokeljske brigade, pali borci Nikšićkog i Lovćenskog odreda i borci iz opštine Teslić.',
+      sl: 'Štirje seznami so bili le skenirane slike brez besedila. Zdaj so prebrani: celoten seznam 1. bokeljske brigade, padli borci Nikšićkega in Lovćenskega odreda ter borci iz občine Teslić.',
+      mk: 'Четири списоци беа само скенирани слики, без текст. Сега се прочитани: целиот список на 1-ва бокељска бригада, загинатите борци на Никшиќкиот и Ловќенскиот одред и борците од општината Теслиќ.',
+      en: 'Four lists were only scanned images, with no text. They have now been read: the 1st Boka Brigade’s whole roll, the fallen of the Nikšić and Lovćen detachments, and the fighters from the Teslić municipality.',
     },
   },
   {
@@ -110,10 +110,10 @@ export const NEWS: NewsItem[] = [
       en: 'One fighter, one record',
     },
     text: {
-      sr: 'Kad isti borac stoji u više knjiga jedne jedinice, to je sada jedan zapis, sa svim knjigama na jednom mestu. Spojeno je oko 1.700 takvih zapisa, a zapisi istog borca u dve jedinice povezani su.',
-      sl: 'Če isti borec stoji v več knjigah ene enote, je zdaj to en zapis, z vsemi knjigami na enem mestu. Združenih je okoli 1.700 takih zapisov, zapisi istega borca v dveh enotah pa so povezani.',
-      mk: 'Кога ист борец стои во повеќе книги на една единица, тоа сега е еден запис, со сите книги на едно место. Споени се околу 1.700 такви записи, а записите на ист борец во две единици се поврзани.',
-      en: 'When one fighter appears in several books of a unit, he is now one record, with every book in one place. About 1,700 such records have been joined, and a fighter’s records in two units are linked.',
+      sr: 'Borac koga jedinica ima u dve ili tri knjige sada ima jedan zapis, a u njemu sve te knjige. Ako je bio u dve jedinice, zapisi su povezani.',
+      sl: 'Borec, ki ga enota navaja v dveh ali treh knjigah, ima zdaj en zapis z vsemi temi knjigami. Če je bil v dveh enotah, sta zapisa povezana.',
+      mk: 'Борец што единицата го има во две или три книги сега има еден запис, со сите тие книги. Ако бил во две единици, записите се поврзани.',
+      en: 'A fighter whose unit lists him in two or three books now has one record, with all those books in it. If he served in two units, the records are linked.',
     },
   },
   {
@@ -125,10 +125,10 @@ export const NEWS: NewsItem[] = [
       en: 'The units’ officers',
     },
     text: {
-      sr: 'Spiskovi komandanata, komesara i drugih starešina dvadesetak jedinica, sa vremenom kad su bili na dužnosti, iz knjiga tih jedinica. Većina je pridružena zapisima koji već postoje.',
-      sl: 'Seznami komandantov, komisarjev in drugih starešin dvajsetih enot, s časom, ko so bili na dolžnosti, iz knjig teh enot. Večina je pridružena zapisom, ki že obstajajo.',
-      mk: 'Списоци на команданти, комесари и други старешини на дваесетина единици, со времето кога биле на должност, од книгите на тие единици. Повеќето се приклучени кон записите што веќе постојат.',
-      en: 'Lists of the commanders, commissars and other officers of some twenty units, with the time each held his post, from the units’ own books. Most have been added to records already on the site.',
+      sr: 'Komandanti, komesari i druge starešine dvadesetak jedinica, iz knjiga tih jedinica, sa datumima kad su bili na dužnosti.',
+      sl: 'Komandanti, komisarji in druge starešine dvajsetih enot, iz knjig teh enot, z datumi, ko so bili na dolžnosti.',
+      mk: 'Командантите, комесарите и другите старешини на дваесетина единици, од книгите на тие единици, со датумите кога биле на должност.',
+      en: 'The commanders, commissars and other officers of some twenty units, from the units’ own books, with the dates they held each post.',
     },
   },
   {

@@ -60,7 +60,6 @@ export const sl: Messages = {
     news: {
       title: 'Kaj je novega',
       date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}`,
-      more: 'Pokaži starejše',
     },
     otherUnits: 'Druge enote',
     noUnit: 'Brez enote',
@@ -175,8 +174,8 @@ export const sl: Messages = {
     loadingPage: `Nalaganje strani${dots}`,
     source: 'Vir',
     noScan: 'Za ta seznam ni skenirane knjige: objavljen je kot besedilo na [znaci.org].',
-    noScanPoreklo: (title: string, page: number | null) =>
-      `${title}${page != null ? `, stran ${page}` : ''}. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo lahko odprejo le njeni člani.`,
+    noScanMuseum: (title: string) => `${title}. Popis je objavljen kot PDF na spletni strani [Muzeja žrtev genocida].`,
+    noScanBook: (title: string, page: number | null) => `${title}${page != null ? `, stran ${page}` : ''}.`,
     steps: 'Sosednji zapisi na seznamu',
     previous: 'Prejšnji',
     next: 'Naslednji',
@@ -296,6 +295,7 @@ export const sl: Messages = {
     preparing: `Pripravljanje izreza iz knjige${dots}`,
     entry: 'Zapis v knjigi',
     webText: 'besedilo, objavljeno na znaci.org',
+    museumText: 'popis na spletni strani Muzeja žrtev genocida',
   },
 
   unit: {
@@ -345,9 +345,9 @@ export const sl: Messages = {
     intro:
       'Podatki o borcih so zbrani iz monografij brigad in seznamov borcev, ki jih je izdal Vojnozgodovinski inštitut v Beogradu. Tu si lahko izvirne dokumente PDF ogledate in jih prenesete.',
     openPdf: 'Odpri PDF',
+    fullDescription: 'Cel opis',
     download: 'Prenesi',
     openList: 'Odpri seznam',
-    inPoreklo: 'V digitalni knjižnici Poreklo, le za njene člane',
     medalsTitle: 'Slike odlikovanj',
     hero:
       'Red narodnega heroja: fotografija [Pinki, Wikimedia Commons], licenca [CC BY-SA 4.0]. Izrez in risba reda na tej strani sta narejena iz te fotografije in objavljena pod isto licenco.',

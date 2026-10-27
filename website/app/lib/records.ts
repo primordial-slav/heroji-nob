@@ -36,6 +36,9 @@ export const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file !=
 /** A book in the Poreklo digital library (biblioteka.poreklo.rs): scanned there, open to its members only */
 export const isPoreklo = (url?: string) => !!url?.startsWith('https://biblioteka.poreklo.rs/')
 
+/** The 1964 census of the war's dead, a PDF per republic on the Museum of Genocide Victims' site */
+export const isMuseum = (url?: string) => !!url?.startsWith('https://www.muzejgenocida.rs/')
+
 /** The book (or web page) an entry was printed in, as the Sources page lists it */
 export function sourceOf(entry: SoldierSource) {
   return entry.pdf_file
