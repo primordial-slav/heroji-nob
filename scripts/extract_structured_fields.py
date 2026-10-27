@@ -549,6 +549,8 @@ FOLD = str.maketrans('čćđšž', 'ccdsz')
 SHORT_TAILS = {'sin', 'hči'}
 # a duty in a unit, printed where a trade could stand: "četna bolničarka"
 UNIT_DUTY_RE = re.compile(r'^(?:četn|vodn|bataljonsk|brigadn|divizijsk|korpusn)\w*\s')
+# a part in the war, printed where a trade could stand: "Smederevo, učesnik u NOB od 1943" (2026-10-27)
+PARTICIPANT_RE = re.compile(r'^(?:učesni(?:k|ca)|pripadni(?:k|ca))\b', re.I)
 
 
 def plausible_occupations(occ: Counter) -> Counter:
@@ -565,6 +567,8 @@ def plausible_occupations(occ: Counter) -> Counter:
         if len(tokens) > 1 and len(tokens[-1]) <= 3 and tokens[-1] not in SHORT_TAILS:
             return False
         if UNIT_DUTY_RE.match(w) and RANK_RE.search(w):
+            return False
+        if PARTICIPANT_RE.match(w):
             return False
         # the start of a far more common trade, cut there ("zemlj", "radni"); not a word of its own ("stolar")
         return not (len(tokens) == 1 and any(o.startswith(w) and len(o) > len(w) and n >= 20 * occ[w]
