@@ -21,6 +21,13 @@ unresolved (several places of the name, or none GeoNames knows) and is left alon
                                        own name elsewhere ("Marini, Trogir" -> "Marina, Trogir", not the
                                        Marini by Prijedor), soldier_id -> [the field as read, the new field]
 
+    remember()                         the case forms of the Ostali borci files (122, 131-138) kept in
+                                       data-extraction/places/ostali_cases.json: the gazetteer keys a field as it
+                                       finds it, so once apply() has put "Podgrađu, Omiš" in the nominative its next
+                                       run keys "Podgrađe, Omiš" alone, and build_ostali_borci.py, which writes those
+                                       files anew, reads "u Podgrađu" again. _value() falls back to the kept forms
+                                       there, resolved.json's own decision first; apply_corrections.py runs it first
+
 scripts/apply_corrections.py runs apply() on every unit it writes. The entries' text is never touched.
 
 Usage:
@@ -40,6 +47,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RESOLVED = ROOT / 'data-extraction' / 'places' / 'resolved.json'
 CASES = ROOT / 'data-extraction' / 'places' / 'case_forms.json'
+KEPT = ROOT / 'data-extraction' / 'places' / 'ostali_cases.json'
+REBUILT = 'ostali-borci'                # the files build_ostali_borci.py writes anew: ostali-borci.json, ostali-borci-*.json
 FIELDS = ('birth_place', 'death_place')
 PREP = r'(?:u|iz|kod|na|pri|v|od|do|blizu|ispod|iznad|pod|nad|prema|kraj|oko)'
 # what a place in a case is stored after: a preposition the nominative drops, then the village's own word
@@ -93,8 +102,44 @@ def case_nominative(text: str, s: dict | None = None) -> str | None:
     return new + sep + rest
 
 
+@lru_cache(maxsize=1)
+def kept() -> dict:
+    try:
+        return json.loads(KEPT.read_text(encoding='utf-8'))['units']
+    except FileNotFoundError:
+        return {}
+
+
+def remember() -> int:
+    """add resolved.json's case forms of the rebuilt files (a field -> [id, the nominative, plain]) to the kept ones;
+    returns how many were new"""
+    units, added = json.loads(json.dumps(kept())), 0
+    for unit, fields in load()['units'].items():
+        if not unit.startswith(REBUILT):
+            continue
+        for field, m in fields.items():
+            for text, v in m.items():
+                if isinstance(v, list) and units.setdefault(unit, {}).setdefault(field, {}).get(text) != v:
+                    units[unit][field][text] = v
+                    added += 1
+    if added:
+        doc = {'about': 'The case forms of the Ostali borci files (unit 122 and the census parts) that '
+                        'data-extraction/places/resolved.json has keyed: the field as stored -> [GeoNames id, the field '
+                        'with its village in the nominative, 1 if plainly a case]. build_ostali_borci.py writes those '
+                        'files anew, and the gazetteer keys only what the files hold when it runs, so the forms are '
+                        'kept here (scripts/resolved_places.py remember(), run by apply_corrections.py).',
+               'units': {u: {f: dict(sorted(m.items())) for f, m in sorted(fs.items())} for u, fs in sorted(units.items())}}
+        KEPT.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding='utf-8')
+        kept.cache_clear()
+    return added
+
+
 def _value(unit_file: str, field: str, text: str):
-    return load()['units'].get(unit_file, {}).get(field, {}).get((text or '').strip())
+    text = (text or '').strip()
+    v = load()['units'].get(unit_file, {}).get(field, {}).get(text)
+    if v is None and unit_file.startswith(REBUILT):
+        v = kept().get(unit_file, {}).get(field, {}).get(text)
+    return v
 
 
 def place_id(unit_file: str, field: str, text: str) -> int | None:

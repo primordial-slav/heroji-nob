@@ -68,7 +68,9 @@ def parser_set(code: int, entry: dict) -> bool:
 # (2026-10-15): the place they are. fix_place puts a place of death in this form, after "u", "na", "kod" as well.
 LOCATIVE_PLACES = {'Manjači': 'Manjača', 'Peći': 'Peć', 'Jajcu': 'Jajce', 'Čačku': 'Čačak', 'Laćarku': 'Laćarak',
                    'Somborn': 'Sombor', 'Somboru': 'Sombor', 'Zadr': 'Zadar', 'Zadru': 'Zadar', 'Sabac': 'Šabac',
-                   'Šapcu': 'Šabac', 'Sapcu': 'Šabac', 'Stoca': 'Stolac', 'Sremeka Mitrovica': 'Sremska Mitrovica'}
+                   'Šapcu': 'Šabac', 'Sapcu': 'Šabac', 'Stoca': 'Stolac', 'Sremeka Mitrovica': 'Sremska Mitrovica',
+                   'Žumberk': 'Žumberak', 'Žumberku': 'Žumberak',     # (the vote's "na Žumberku" -> Žumberk)
+                   'Ibra': 'Ibar', 'Ibru': 'Ibar'}
 
 
 def fix_place(value: str) -> str:
@@ -309,8 +311,8 @@ REGION_RE = re.compile(rf'\b(u|na)\s+(istočn|zapadn|centraln|srednj|južn|sjeve
 # Debele Međe")
 _LOC_MONTHS = ('januaru|februaru|martu|aprilu|maju|junu|julu|avgustu|augustu|septembru|oktobru|novembru|decembru|'
                'siječnju|veljači|ožujku|travnju|svibnju|lipnju|srpnju|kolovozu|rujnu|listopadu|studenom|studenome|prosincu')
-DEATH_NOISE_RE = re.compile(
-    rf'\b(?:u\s+(?:zimu|proljeće|proleće|jesen|ljeto|leto)|ujesen|zimi|(?:u\s+)?(?:{_LOC_MONTHS})|'
+DEATH_NOISE_RE = re.compile(          # (a season or a month as a whole word: not "u Jesenju", "u Majuru", "Zimić")
+    rf'\b(?:(?:u\s+(?:zimu|proljeće|proleće|jesen|ljeto|leto)|ujesen|zimi|(?:u\s+)?(?:{_LOC_MONTHS}))(?!\w)|'
     rf'(?:\d{{1,2}}\.\s*)?(?:[IVX]{{1,4}}\.?\s+|(?:{MONTHS})\s+)?iste\s+godine|sutradan|istog\s+dana|narednog\s+dana|'
     rf'(?:posle|poslije|nakon)\s+(?:rata|oslobođenja)|u\s+noći\s+između\s+\d{{1,2}}\.?\s*i|'
     rf'\d{{1,2}}\.\s*(?:[IVX]{{1,4}}\b\.?|\d{{1,2}}\.|(?:{MONTHS})\b)|'
@@ -716,6 +718,11 @@ class Extractor:
         t = re.sub(rf'(?<=[{L}])\s+:\s+(?=[{U}])', ' ', t)                  # the scan's speck: "Pljevlja, Crna : Gora"
         # a function printed before "rođen" (Treća proleterska, 5. kozaračka): "desetar 3. desetine, rođen 1920, ..."
         m = re.search(r'\b[Rr]ođen[a]?\b', t)
+        if m and not re.search(r'\b[Rr]ođen[a]?\b', text) and m.start() and self.heading(t):
+            # a list's heading before the name where the scan spelt "roden": the heading's reading below (it takes
+            # "roden" too), which gives its village where the birth names none ("Borci poginuli u NOR-u, Ališići:
+            # ALIŠIĆ Salke IBRAHIM, roden, 1914"), as before the scans' spellings were read as "rođen" above
+            m = None
         head = t[:m.start()] if m else ''
         heading = None
         if m:
@@ -849,14 +856,16 @@ class Extractor:
         if code in NO_OCCUPATION:
             out.pop('occupation', None)
         elif 'occupation' not in out:
-            # the trade stands after the birth: from the year on where the bio opens with a unit and a date ("borac 3. č.
-            # 3. bat., r. 18. 12. 1919, Ljubitovica, Trogir, zemljoradnik", the 11. dalmatinska)
+            # the trade stands after the birth: in the bio's first words, else from the year on where the bio opens with
+            # a unit and a date ("borac 3. č. 3. bat., r. 18. 12. 1919, Ljubitovica, Trogir, zemljoradnik", the 11.
+            # dalmatinska); the first words first, since that first bare year may be a later date's ("Dvorjanci, općina
+            # Duga Resa: 1927, seljak, Hrvat. Stupio u NOV 15. 9. 1944", the Karlovac lists; Sanski Most's "rođen 1923,
+            # zemljoradnik, ..., stupio u NOB 29. 5. 1943")
             born_at = next((i for i, w in enumerate(words[:12]) if re.fullmatch(YEAR, w)), 0)
-            for w in words[born_at:born_at + 8]:
-                trade = self.trade_of(w)
-                if trade:
-                    out['occupation'] = trade
-                    break
+            trade = next((t for start in dict.fromkeys((0, born_at)) for w in words[start:start + 8]
+                          for t in [self.trade_of(w)] if t), None)
+            if trade:
+                out['occupation'] = trade
         if head:
             out['_head'] = head
         return out
@@ -946,6 +955,16 @@ class Extractor:
         # "poginuo kao ranjenik u Centralnoj bolnici na Sutjesci": the words go, not the place
         clause = re.sub(r'\bkao\s+(?:teški\s+|teško\s+)?(?:ranjenik|ranjenica|bolesnik|bolesnica|ranjen[a-z]*)\b', ' ', clause)
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
+        # a cause naming the enemy before the place: "od talijanskog bombardiranja u Pazarištu", "od neprijateljskih
+        # snaga kod Stoca" (ENEMY_RE below would take "od talijanskog" alone and leave "bombardiranja u Pazarištu")
+        clause = re.sub(rf'^[\s,.]*od\s+{_ENEMY}(?:\s+[^,]*?)??(?=,|\s+(?:u|na|kod|v|pri)\s|$)', '', clause)
+        # the unit he fell in, named after the place by an ordinal word or set off by a comma: "kod Mojkovca, u Petoj
+        # crnogorskoj proleterskoj brigadi", "u IV Crnogorskoj brigadi", "na Sutormanu u Prvoj crnogorskoj brigadi
+        # narodne odbrane", "u Brajićima, u Lovćenskom NOP odredu", "na Ibru, u Četvrtoj crnogorskoj "proleterskoj brigadi"
+        _unit = r'(?:[Bb]ri[gG]ad|[Dd]ivizij|[Kk]orpus|[Bb]ataljon|[Oo]dred)\w*\b.*$'
+        clause = re.sub(r',?\s*\b[uU]\.?\s+(?:[IVX]{1,4}\.?|(?:[Pp]rv|[Dd]rug|[Tt]reć|[Čč]etvrt|[Pp]et|[Šš]est|[Ss]edm|[Oo]sm|'
+                        r'[Dd]evet|[Dd]eset|\w+naest)\w*)\s+(?:[\w-]+\s+){0,3}' + _unit, '', clause)
+        clause = re.sub(r',\s*[uU]\.?\s+(?:\S+\s+){1,4}' + _unit, '', clause)   # (not "..., u Bataljonu od marta 1943")
         clause = BATTLE_RE.sub(' ', clause)
         clause = ENEMY_RE.sub(' ', clause)
         # another version after "ili" ("u Komletincima ili 23. januara kod Mohova"), the unit after "u sastavu" or "iz"
