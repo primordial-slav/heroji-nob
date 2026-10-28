@@ -3159,5 +3159,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/ljesnjani.jpg',
     brigadeName: '',
     description: 'Spiskovi uz poglavlje o Lješanskoj nahiji kod Podgorice u NOR-u: poginuli u NOR-u (str. 184–199), sa rođenjem, mestom i danom pogibije, narodni heroji (str. 201) i nosioci Partizanske spomenice 1941. (str. 202–203). Spiskovi poginulih u Aprilskom ratu, žrtava fašističkog terora i četnika iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'milesevski',
+    title: 'Mileševski kraj 1912–1945.',
+    author: 'Milorad T. Divac',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00007006',
+    thumbnail: '/images/pdf-thumbs/milesevski.jpg',
+    brigadeName: '',
+    description: 'Prilog „Učesnici narodnooslobodilačkog pokreta iz Mileševskog sreza poginuli u toku Drugog svetskog rata” (str. 153–197), po tadašnjim opštinama, sa rođenjem, stupanjem u jedinicu i pogibijom. Uneti su borci i, označeni kao aktivisti, ljudi pokreta koje spisak broji. Spiskovi žrtava fašističkog terora i stradalih na drugoj strani iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   }
 ]

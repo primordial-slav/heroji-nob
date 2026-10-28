@@ -183,8 +183,9 @@ def main():
                                                 else f', {place.group(2).strip()}')
         info = f"{' '.join(x for x in (last, fath, first) if x)}{' — ' + kl.title(nick) if nick else ''}, {year + ', ' if year else ''}{body}"
         role = vb.role(info)
-        if role == 'out':                      # the list titles them all fallen fighters ("u NOB-u od 1941")
-            role = None
+        if role == 'out':                      # the list titles them all fallen fighters: the insurgents of 23 August
+            role = 'activist' if re.search(r'\brad\w* za NOP', info) else None     # 1941 ("kao ustanik"); not
+                                                                                    # Turkić Hamza's work for the NOP
         d = vb.death(info)
         rec = {
             'soldier_id': f'{PREFIX}{no:06d}', 'name': ' '.join(x for x in (last, fath, first) if x),
