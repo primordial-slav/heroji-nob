@@ -54,10 +54,12 @@ const FOCUS: Record<string, number> = {
   'turopoljsko-posavski-odred': 46,
   '5-srpska-brigada': 60,
   '9-srpska-brigada': 44,
+  'ostali-borci': 22,              // (Borci drugih jedinica, and its census parts below)
 }
 
 // The object-position for a unit's photo in a wide crop; undefined keeps the stylesheet's default
 export function photoPosition(unitId: string): string | undefined {
-  const y = FOCUS[unitId]
+  // the census's parts of Borci drugih jedinica show its photo
+  const y = FOCUS[unitId] ?? (unitId.startsWith('ostali-borci-') ? FOCUS['ostali-borci'] : undefined)
   return y == null ? undefined : `50% ${y}%`
 }
