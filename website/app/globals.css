@@ -11,6 +11,7 @@
   --red: #9a2226;
   --red-deep: #7b1a1d;
   --red-ink: #8e1f20;
+  --section-rule: var(--red);
   --on-red: #ffffff;
   --on-red-muted: #f3d9d6;
   --mark: #fff0a8;
@@ -53,6 +54,8 @@
   --red: #7a1c1f;
   --red-deep: #5f1517;
   --red-ink: #eb8a80;
+  /* the section rules and their oak sprig: a soft white in the dark, not the ink's full white */
+  --section-rule: #cbc5bc;
   --on-red: #ffffff;
   --on-red-muted: #efc9c5;
   --mark: rgba(255, 214, 64, 0.28);
@@ -2972,9 +2975,9 @@ button.kin-row:not(:disabled):hover .kin-label {
   gap: var(--space-8);
 }
 
-/* The year sits on a thin red rule, right-aligned, an oak sprig in the rule's middle (public/ornament/hrast.svg,
-   from scripts/make_rule_sprig.py: a mask in the rule's red); the units of that year follow. The rule's middle is
-   where the 2 px border's was. */
+/* The year sits on a thin rule, right-aligned, an oak sprig in the rule's middle (public/ornament/hrast.svg, from
+   scripts/make_rule_sprig.py: a mask in --section-rule, red in the light theme, a soft white in the dark); the units
+   of that year follow. The rule's middle is where the 2 px border's was. */
 .unit-year-head {
   position: relative;
   display: flex;
@@ -2992,7 +2995,7 @@ button.kin-row:not(:disabled):hover .kin-label {
   right: 0;
   bottom: -4px;
   height: 14px;
-  background-color: var(--red);
+  background-color: var(--section-rule);
   -webkit-mask: url('/ornament/hrast.svg') 50% 0 / 44px 14px no-repeat, linear-gradient(#000 0 0) 0 8.375px / 100% 1.25px no-repeat;
   mask: url('/ornament/hrast.svg') 50% 0 / 44px 14px no-repeat, linear-gradient(#000 0 0) 0 8.375px / 100% 1.25px no-repeat;
   pointer-events: none;
