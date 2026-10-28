@@ -15,6 +15,15 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-10-28',
+    text: {
+      sr: 'Uneto je šesnaest novih knjiga, uglavnom o selima i opštinama: oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 boraca koji su već bili na sajtu sada ima još jednu knjigu koja piše o njima, a ostali su novi, među Ostalim borcima.',
+      sl: 'Vnesenih je šestnajst novih knjig, večinoma o vaseh in občinah: okoli 4.200 borcev, aktivistov in nosilcev Partizanske spomenice 1941. Okoli 600 borcev, ki so že bili na strani, ima zdaj še eno knjigo, ki piše o njih, ostali so novi, med Drugimi borci.',
+      mk: 'Внесени се шеснаесет нови книги, главно за селата и општините: околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 борци што веќе беа на сајтот сега имаат уште една книга што пишува за нив, а останатите се нови, меѓу Другите борци.',
+      en: 'Sixteen new books are in, most of them on villages and municipalities: some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 fighters already on the site now have one more book that writes about them; the rest are new, among the Other fighters.',
+    },
+  },
+  {
     date: '2026-10-21',
     text: {
       sr: 'Kod još oko 7.900 boraca ime oca više nije u padežu: umesto „Miloša“ sada piše Miloš.',

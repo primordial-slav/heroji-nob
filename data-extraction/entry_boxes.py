@@ -159,6 +159,9 @@ TWO_COLUMN = {
     'bitka-kod-oborova-poginuli.pdf',       # Bitka kod Oborova: the names in two columns
     'moste-polje-spomenica-1941.pdf',       # Moste-Polje: the spomenica holders, each entry hanging
     'vis-spomenica-1941.pdf',               # Vis: the spomenica holders, a name a line
+    'moslavina-spomenica-1941.pdf',         # Moslavački odred: the spomenica holders, a name a line
+    '2-korpus-stabovi.pdf',                 # 2. udarni korpus: its staffs, a name a line
+    'sencur-padli-borci.pdf',               # Šenčur II: the dead with a bio each, the Kokrška četa's roster
     'jevreji-jugoslavije-ucesnici-nor.pdf', # Romano, Jevreji Jugoslavije: the participants, each entry hanging
     '13-proleterska-spisak.pdf',
     '7-krajiska-spisak.pdf',
@@ -468,6 +471,9 @@ ONE_LINE_ENTRIES = {
     '13-hercegovacka.pdf': range(15, 33),              # 13. hercegovačka: the roster of names
     'hak-20-gospic-perusic.pdf': range(61, 77),  # Gospić i Perušić: the spomenica holders, a line each
     'vis-spomenica-1941.pdf': range(1, 2),       # Vis: the spomenica holders, a name a line
+    'moslavina-spomenica-1941.pdf': range(1, 5), # Moslavački odred: the spomenica holders, a name a line
+    '2-korpus-stabovi.pdf': range(1, 4),         # 2. udarni korpus: its staffs, a name a line
+    'klanjscek-komandni-sastav.pdf': range(1, 9),  # Klanjšček: the Slovene army's higher command, a post a line
 }
 
 

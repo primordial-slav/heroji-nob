@@ -42,7 +42,9 @@ FACTS = {'birth year', 'birthplace', 'death year', 'death place'}
 HAND = {'vis-spomenica-1941', 'vis-zrtve-nob', 'moste-polje-spomenica-1941', 'xxxi-divizija-stabi', '15-brigada-stabi',
         '15-divizija-stabi', 'jb-odred-stabi', 'banijski-odredi-kadar', 'letalci-prekomorci-kader', 'susak-rijeka-spomenica', 'korosko-zdravstvo',
         'dolomiti-v-nob-3', 'artileristi-prekomorci', 'virovitica-spomenica-1941', 'sanitetska-sluzba-lekari',
-        'krizani-v-boju-za-svobodo', 'vinodolska-selca', 'zene-vi-korpus-poginule', 'pali-za-lepsa-svitanja'}
+        'krizani-v-boju-za-svobodo', 'vinodolska-selca', 'zene-vi-korpus-poginule', 'pali-za-lepsa-svitanja',
+        'moslavina-spomenica-1941', 'kremna', 'komani', 'binovce', 'gornja-jablanica', '2-korpus-stabovi',
+        'klanjscek-komandni-sastav'}
 STOP = {'kod', 'blizu', 'selu', 'selo', 'grad', 'gradu', 'kraj', 'pod', 'iznad', 'okolini', 'okolina', 'reke', 'reka',
         'planini', 'planina'}
 

@@ -251,7 +251,7 @@ def tidy_birthplace(value: str) -> str:
 # krajiška udarna brigada, Đeletovci: Dušan Ačić, vodnik." gives no birthplace; the duty after a name is read, and
 # build_ostali_borci.py sets the death from the entry's own fields
 NAME_LISTS = {'u-rovovima-srema-poginuli.pdf', 'sremski-front-poginuli.pdf', 'bitka-kod-oborova-poginuli.pdf',
-              'vis-spomenica-1941.pdf', 'vis-zrtve-nob.pdf'}
+              'vis-spomenica-1941.pdf', 'vis-zrtve-nob.pdf', 'moslavina-spomenica-1941.pdf'}
 # a unit's roster by its sub-units, a duty and a name a line ("Komanda pozadine: sekretar intendanta"): the heading is
 # the sub-unit and the duty the rank; nothing else is read (the heading is no birthplace)
 ROSTERS = {'1-bokeljska-spisak.pdf'}

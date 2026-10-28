@@ -72,10 +72,12 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
                '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
                '9010000363': 'Dmitar', '9038001274': 'Đorđe'}
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
-NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica'}      # (Ostrvica's census names the head, the father)
+NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica',      # (Ostrvica's census names the head, the father)
+                      'lezimir'}                            # (Ležimir's list: "Babić (Radovan) Petar")
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
 POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
-                      'revolucionarno-grahovo', 'bozice'}       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")
+                      'revolucionarno-grahovo', 'bozice',       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")
+                      'popovo-polje'}                           # (Popovo polje's "Akšam Ilija, Burin")
 # books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
 # out of this set adds its unmatched men to Ostali borci (the Spomenica crnogorskim antifašistima was here until the
 # user decided, on 2026-10-14, that every man it names counts as a partisan)
@@ -88,7 +90,8 @@ COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-bo
                 'ludbreg-poginuli', 'xxxi-divizija-stabi', '15-brigada-stabi',   # (those two: the officers who fell)
                 'licko-petrovo-selo',                  # (Ličko Petrovo Selo's table of the fallen)
                 'niksicki-odred-pali-borci',   # the Nikšić region's fallen: a table of birthplace and year, death place and year
-                'brod-crna-trava'}             # Brod's table of the fallen: mahala, day and place of death, unit
+                'brod-crna-trava',             # Brod's table of the fallen: mahala, day and place of death, unit
+                'knezica'}                     # Knežica's fallen: "1926–1942. Kozara" (its survivors get no death)
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
