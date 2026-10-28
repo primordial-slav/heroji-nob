@@ -6,9 +6,9 @@
         NOV od 1942, borac brigade 8. divizije, poginuo 1942. u Sisku;". Dušan Livada's list, as the plaque in Primišlje
         counts them: fighters, party and SKOJ members, the people's committees and the AFŽ, so only fighters go in
         (`_village_books.role`) and the movement's other people are activists;
-    "Nosioci Partizanske spomenice 1941. godine kolonizirani iz Slunja" (scan pp. 338-342), the holders who settled in
+    "Nosioci Partizanske spomenice 1941. godine kolonizirani iz Slunja" (scan pp. 338-347), the holders who settled in
         Čonoplja and Kljajićevo, after Kozin's Zbornik of the Sombor SUBNOR (1971), a bio each under the numbered name.
-        Only its first 49 are read: the pages after 342 were not fetched before the library signed out.
+        (Its pages after 342 were fetched on 2026-10-28, the morning after the rest.)
 
 The OCR reads Đ as D ("Dure", "Durđa") or in Cyrillic look-alikes ("Виго" Đuro), J as "]", u as "и" or "11", and
 loses the Zb of Zbjeg ("ijeg"): the names are read back from the site's spellings (`_karlovac_lists.spelled`).
@@ -40,7 +40,7 @@ PREFIX = '9105'
 OFFSET = 0                                          # the scan's page is the book's
 TITLE = 'Kordunski rekvijem'
 FALLEN = ('Pali borci općine Primišlje 1941—1945.', range(177, 192))
-SPOMENICA = ('Nosioci Partizanske spomenice 1941. godine kolonizirani iz Slunja', range(338, 343))
+SPOMENICA = ('Nosioci Partizanske spomenice 1941. godine kolonizirani iz Slunja', range(338, 348))
 COLUMNS = (0, 1550, 2660)
 # the villages' headings as the OCR has them, and the place each is (the census's općina)
 VILLAGES = {'Gornje Primišlje': ('Gornje Primišlje', 'Slunj'), 'Tržič Primišljanski': ('Tržić Primišljanski', 'Slunj'),
@@ -66,7 +66,8 @@ def text_of(t: str) -> str:
 
 
 # names past the rules, read from the list's order and the brothers beside them
-READ = {'Rafaan': 'Rafajla', 'Soflja': 'Sofija', 'Saša': 'Šaša', 'llije': 'Ilije', 'Durana': 'Đurana', 'Dura': 'Đura'}
+READ = {'Rafaan': 'Rafajla', 'Soflja': 'Sofija', 'Saša': 'Šaša', 'llije': 'Ilije', 'Durana': 'Đurana', 'Dura': 'Đura',
+        'anatija': 'Ignatija'}
 
 
 def given(w: str) -> str:
@@ -131,8 +132,8 @@ def spomenica(book: dict) -> list[dict]:
                 if t.startswith('(1'):
                     cur = None                                         # the footnote under the title
                 continue
-            m = re.match(r'^(\d{1,2})\.\s+(\S.*)$', t)
-            if m and not re.search(r'\d{4}', m.group(2)):
+            m = re.match(r'^(\d{1,3})\.\s+(\S.*)$', t)
+            if m and not re.search(r'\d{4}', m.group(2)) and (not entries or int(m.group(1)) == entries[-1]['no'] + 1):
                 cur = {'no': int(m.group(1)), 'page': page, 'head': m.group(2), 'lines': []}
                 entries.append(cur)
             elif cur:
@@ -182,7 +183,7 @@ def main():
     for e in spomenica(book):
         last, fath, first = name_of(text_of(e['head']))
         bio = text_of(' '.join(e['lines']))
-        born = re.search(r'(\d{1,2})\.\s?(\d{1,2})\.\s?(1[89]\d\d)\.?\s*(?:godine\s+)?u\s+(?:selu\s+)?([^.]+?)\.', bio)
+        born = re.search(r'(?:(\d{1,2})\.\s?(\d{1,2})\.\s?)?(1[89]\d\d)\.?\s*(?:godine\s+)?u\s+(?:selu\s+)?([^.]+?)\.', bio)
         rec = {'soldier_id': f'{PREFIX}{1000 + e["no"]:06d}', 'name': ' '.join(x for x in (last, fath, first) if x),
                'last_name': last, 'also': [], 'first_name': first, 'nick': '', 'fathers_name': fath,
                'birth_year': born.group(3) if born else '', 'born_in': '', 'death_year': '', 'survived': True,

@@ -77,7 +77,9 @@ NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica',      # (Ostrvica's cens
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
 POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
                       'revolucionarno-grahovo', 'bozice',       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")
-                      'popovo-polje'}                           # (Popovo polje's "Akšam Ilija, Burin")
+                      'popovo-polje',                           # (Popovo polje's "Akšam Ilija, Burin")
+                      'grahovo-podjele',                        # (Grahovo's rear workers, "Bulajić Simov Mirko")
+                      'ljesnjani'}                              # (Lješnjani's "Blagojević Tomov Andrija")
 # books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
 # out of this set adds its unmatched men to Ostali borci (the Spomenica crnogorskim antifašistima was here until the
 # user decided, on 2026-10-14, that every man it names counts as a partisan)
