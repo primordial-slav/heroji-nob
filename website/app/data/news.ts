@@ -17,6 +17,15 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-28',
     text: {
+      sr: 'Dodali smo još sedam knjiga o krajevima i selima, među njima o Doboju i Mileševskom kraju, sa oko 1.700 boraca i nosilaca Partizanske spomenice 1941. Oko 190 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Borcima drugih jedinica.',
+      sl: 'Dodali smo še sedem knjig o krajih in vaseh, med njimi o Doboju in Mileševskem kraju, v katerih je okoli 1.700 borcev in nosilcev Partizanske spomenice 1941. Okoli 190 jih je že bilo na strani, zato imajo zdaj v zapisu še eno knjigo. Ostali so novi in jih najdete med Borci drugih enot.',
+      mk: 'Додадовме уште седум книги за краевите и селата, меѓу нив за Добој и Милешевскиот крај, во кои има околу 1.700 борци и носители на Партизанската споменица 1941. Околу 190 од нив веќе беа на сајтот, па сега во нивниот запис има уште една книга. Останатите се нови и ќе ги најдете меѓу Борците од други единици.',
+      en: 'We have added seven more books on regions and villages, among them books on Doboj and the Mileševa region, with some 1,700 fighters and holders of the 1941 Partisan Commemorative Medal. About 190 of them were already on the site, so their records now show one more book. The rest are new; you will find them under Fighters of other units.',
+    },
+  },
+  {
+    date: '2026-10-28',
+    text: {
       sr: 'Dodali smo šesnaest knjiga, uglavnom o selima i opštinama, sa oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Borcima drugih jedinica.',
       sl: 'Dodali smo šestnajst knjig, večinoma o vaseh in občinah, v katerih je okoli 4.200 borcev, aktivistov in nosilcev Partizanske spomenice 1941. Okoli 600 jih je že bilo na strani, zato imajo zdaj v zapisu še eno knjigo. Ostali so novi in jih najdete med Borci drugih enot.',
       mk: 'Додадовме шеснаесет книги, главно за селата и општините, во кои има околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 од нив веќе беа на сајтот, па сега во нивниот запис има уште една книга. Останатите се нови и ќе ги најдете меѓу Борците од други единици.',

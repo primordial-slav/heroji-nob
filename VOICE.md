@@ -93,7 +93,7 @@ Models: the Slovene, Macedonian and English rows come from how real sites announ
 | mk | Додадовме… / Додадени се… | сега во неговиот запис има… | базата континуирано се збогатува | од денеска се достапни… |
 | en | We have added… | their records now show… | some 870 more names | now available on… |
 
-The Izvori page's sentence for a book across units follows the same rule: "Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima." (`i18n/sources.ts` has it in the other languages; a new book uses it as it stands.)
+The Izvori page's sentence for a book across units follows the same rule: "Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica." (`i18n/sources.ts` has it in the other languages; a new book uses it as it stands.)
 
 ## Other languages
 
