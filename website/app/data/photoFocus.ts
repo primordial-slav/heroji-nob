@@ -41,6 +41,7 @@ const FOCUS: Record<string, number> = {
   '16-slavonska-omladinska-brigada': 30,
   '8-crnogorska-brigada': 58,
   'druga-proleterska-brigada': 66,
+  '15-majevicka-brigada': 13,
   '3-primorsko-goranska': 63,
   'centralna-bolnica': 55,
   'posavsko-trebavski-odred': 34,
