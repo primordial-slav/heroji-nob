@@ -17,37 +17,37 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-28',
     text: {
-      sr: 'Dodali smo šesnaest novih knjiga, uglavnom o selima i opštinama, sa oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Ostalim borcima.',
-      sl: 'Dodali smo šestnajst novih knjig, večinoma o vaseh in občinah, z okoli 4.200 borci, aktivisti in nosilci Partizanske spomenice 1941. Okoli 600 jih je že bilo na strani, zato je zdaj v njihovem zapisu še ena knjiga. Drugi so novi in so med Drugimi borci.',
-      mk: 'Додадовме шеснаесет нови книги, главно за селата и општините, со околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 од нив веќе беа на сајтот, па сега во нивниот запис стои уште една книга. Другите се нови и се наоѓаат меѓу Другите борци.',
-      en: 'We have added sixteen new books, most of them on villages and municipalities, with some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 of them were already on the site, so their records now show one more book. The rest are new and are listed under Other fighters.',
+      sr: 'Dodali smo šesnaest knjiga, uglavnom o selima i opštinama, sa oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Ostalim borcima.',
+      sl: 'Dodali smo šestnajst knjig, večinoma o vaseh in občinah, v katerih je okoli 4.200 borcev, aktivistov in nosilcev Partizanske spomenice 1941. Okoli 600 jih je že bilo na strani, zato imajo zdaj v zapisu še eno knjigo. Drugi so novi in jih najdete med Drugimi borci.',
+      mk: 'Додадовме шеснаесет книги, главно за селата и општините, во кои има околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 од нив веќе беа на сајтот, па сега во нивниот запис има уште една книга. Другите се нови и ќе ги најдете меѓу Другите борци.',
+      en: 'We have added sixteen books, most of them on villages and municipalities, with some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 of them were already on the site, so their records now show one more book. The rest are new; you will find them under Other fighters.',
     },
   },
   {
     date: '2026-10-21',
     text: {
       sr: 'Kod još oko 7.900 boraca ime oca više nije u padežu: umesto „Miloša“ sada piše Miloš.',
-      sl: 'Pri še okoli 7.900 borcih očetovo ime ni več v sklonu: namesto »Miloša« zdaj piše Miloš.',
+      sl: 'Pri še okoli 7.900 borcih smo očetovo ime iz rodilnika postavili v imenovalnik: namesto »Miloša« zdaj piše Miloš.',
       mk: 'Кај уште околу 7.900 борци името на таткото веќе не е во падеж: наместо „Miloša“ сега пишува Miloš.',
-      en: 'For about 7,900 more fighters the father’s name is no longer in a grammatical case: instead of “Miloša” (Miloš’s) it now says Miloš.',
+      en: 'For about 7,900 more fighters, the father’s name is no longer in the possessive form the books use: “Miloša” (Miloš’s) now reads Miloš.',
     },
   },
   {
     date: '2026-10-21',
     text: {
-      sr: 'Mesta rođenja i pogibije više nisu u padežu: umesto „Užicu“ sada piše Užice. U „Saborci i zemljaci“ borci iz istog sela sada su zajedno, i kad knjige različito pišu ime sela.',
-      sl: 'Kraji rojstva in smrti niso več v sklonu: namesto »Užicu« zdaj piše Užice. V »Soborci in rojaki« so borci iz iste vasi zdaj skupaj, tudi ko knjige ime vasi pišejo različno.',
-      mk: 'Местата на раѓање и загинување веќе не се во падеж: наместо „Užicu“ сега пишува Užice. Во „Соборци и земјаци“ борците од исто село сега се заедно, и кога книгите различно го пишуваат името на селото.',
-      en: 'Places of birth and death are no longer in a grammatical case: “Užicu” now reads Užice. In “Comrades and neighbours” fighters from one village are now together, even where the books spell the village differently.',
+      sr: 'Mesta rođenja i pogibije više nisu u padežu: umesto „Užicu“ sada piše Užice. Borci iz istog sela sada su zajedno u delu „Saborci i zemljaci“, i kad knjige različito pišu ime sela.',
+      sl: 'Kraji rojstva in smrti niso več v sklonu: namesto »Užicu« zdaj piše Užice. Borci iz iste vasi so zdaj skupaj v razdelku »Soborci in rojaki«, tudi če knjige ime vasi pišejo različno.',
+      mk: 'Местата на раѓање и загинување веќе не се во падеж: наместо „Užicu“ сега пишува Užice. Борците од исто село сега се заедно во делот „Соборци и земјаци“, дури и кога книгите различно го пишуваат името на селото.',
+      en: 'Places of birth and death now appear in their dictionary form: “Užicu” (in Užice) now reads Užice. Fighters from the same village are now together under “Comrades and neighbours”, even where the books spell the village differently.',
     },
   },
   {
     date: '2026-10-21',
     text: {
       sr: 'Kod oko 8.000 boraca u mestu rođenja pisalo je nešto drugo, na primer dužnost ili jedinica. To je sada ispravljeno.',
-      sl: 'Pri okoli 8.000 borcih je v kraju rojstva pisalo kaj drugega, na primer dolžnost ali enota. To je zdaj popravljeno.',
-      mk: 'Кај околу 8.000 борци во местото на раѓање пишуваше нешто друго, на пример должност или единица. Тоа сега е поправено.',
-      en: 'For about 8,000 fighters the place of birth held something else, such as a duty or a unit. That is now corrected.',
+      sl: 'Pri okoli 8.000 borcih je bilo v kraju rojstva zapisano kaj drugega, na primer dolžnost ali enota. Zdaj smo to popravili.',
+      mk: 'Кај околу 8.000 борци наместо местото на раѓање стоеше нешто друго, на пример должност или единица. Сега тоа е поправено.',
+      en: 'For about 8,000 fighters the place of birth held something else, such as a duty or a unit. We have fixed that.',
     },
   },
   {
@@ -119,9 +119,9 @@ export const NEWS: NewsItem[] = [
       en: 'One fighter, one record',
     },
     text: {
-      sr: 'Ako se isti borac pominje u više knjiga iste jedinice, sada ima jedan zapis, a u njemu su sve te knjige. Ako je bio u dve jedinice, njegovi zapisi su povezani.',
-      sl: 'Če se isti borec omenja v več knjigah iste enote, ima zdaj en zapis, v njem pa so vse te knjige. Če je bil v dveh enotah, sta njegova zapisa povezana.',
-      mk: 'Ако истиот борец се спомнува во повеќе книги на иста единица, сега има еден запис, а во него се сите тие книги. Ако бил во две единици, неговите записи се поврзани.',
+      sr: 'Ako se isti borac pominje u više knjiga iste jedinice, sada ima samo jedan zapis, u kome su sve te knjige. Ako je bio u dve jedinice, njegovi zapisi su povezani.',
+      sl: 'Če isti borec nastopa v več knjigah iste enote, ima zdaj en sam zapis, v katerem so zbrane vse te knjige. Če je bil v dveh enotah, sta njegova zapisa povezana.',
+      mk: 'Ако истиот борец се спомнува во повеќе книги на една единица, сега има само еден запис, во кој се собрани сите тие книги. Ако бил во две единици, неговите записи се поврзани.',
       en: 'If the same fighter appears in several books of one unit, he now has a single record with all those books in it. If he served in two units, his records are linked.',
     },
   },
@@ -145,7 +145,7 @@ export const NEWS: NewsItem[] = [
     text: {
       sr: 'Prva proleterska brigada dobila je dopunski spisak i spisak bataljona „Garibaldi“ iz četvrte knjige, a 3. krajiška brigada spisak svojih boraca iz novembra 1942.',
       sl: 'Prva proletarska brigada je dobila dopolnilni seznam in seznam bataljona »Garibaldi« iz četrte knjige, 3. krajiška brigada pa seznam svojih borcev iz novembra 1942.',
-      mk: 'Прва пролетерска бригада го доби дополнителниот список и списокот на баталјонот „Гарибалди“ од четвртата книга, а 3. краишка бригада списокот на своите борци од ноември 1942.',
+      mk: 'Прва пролетерска бригада го доби дополнителниот список и списокот на баталјонот „Гарибалди“ од четвртата книга, а 3-та краишка бригада списокот на своите борци од ноември 1942.',
       en: 'The 1st Proletarian Brigade now has its supplementary list and the list of the Garibaldi battalion from the fourth book, and the 3rd Krajina Brigade its list of fighters of November 1942.',
     },
   },
@@ -176,10 +176,10 @@ export const NEWS: NewsItem[] = [
       en: 'Thirty new units',
     },
     text: {
-      sr: 'Među njima 18. srpska brigada, prekomorske brigade, eskadrile NOVJ, Kokrški odred i Cankarjev bataljon iz Dražgoša. Uz njih oko 900 novih fotografija boraca.',
-      sl: 'Med njimi 18. srbska brigada, prekomorske brigade, eskadrilji NOVJ, Kokrški odred in Cankarjev bataljon iz Dražgoš. Z njimi okoli 900 novih fotografij borcev.',
-      mk: 'Меѓу нив 18. српска бригада, прекуморските бригади, ескадрилите на НОВЈ, Кокршкиот одред и Канкаревиот баталјон од Дражгоше. Со нив и околу 900 нови фотографии на борци.',
-      en: 'Among them the 18th Serbian Brigade, the overseas brigades, the NOVJ squadrons, the Kokra Detachment and the Cankar Battalion of Dražgoše. With them about 900 new photographs of fighters.',
+      sr: 'Među njima su 18. srpska brigada, prekomorske brigade, eskadrile NOVJ, Kokrški odred i Cankarjev bataljon iz Dražgoša. Uz njih je stiglo i oko 900 novih fotografija boraca.',
+      sl: 'Med njimi so 18. srbska brigada, prekomorske brigade, eskadrilji NOVJ, Kokrški odred in Cankarjev bataljon iz Dražgoš. Dodali smo tudi okoli 900 novih fotografij borcev.',
+      mk: 'Меѓу нив се 18-та српска бригада, прекуморските бригади, ескадрилите на НОВЈ, Кокршкиот одред и Канкаревиот баталјон од Дражгоше. Додадовме и околу 900 нови фотографии на борци.',
+      en: 'Among them are the 18th Serbian Brigade, the overseas brigades, the NOVJ squadrons, the Kokra Detachment and the Cankar Battalion of Dražgoše. We have also added about 900 new photographs of fighters.',
     },
   },
 ]
