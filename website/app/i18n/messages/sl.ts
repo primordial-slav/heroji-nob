@@ -109,8 +109,7 @@ export const sl: Messages = {
   },
 
   onThisDay: {
-    title: 'Na današnji dan',
-    note: (day: number, month: number) => `Borci, ki so ${day}. ${MONTHS_GENITIVE[month - 1]} med vojno padli, umrli ali izginili`,
+    title: (day: number, month: number) => `Padli, umrli ali pogrešani dne ${day}. ${MONTHS_GENITIVE[month - 1]}`,
     loading: 'Nalaganje',
     deathTitle: 'Leto in kraj smrti',
     missingTitle: 'Leto in kraj izginotja',

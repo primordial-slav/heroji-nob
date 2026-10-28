@@ -117,8 +117,7 @@ export const mk: Messages = {
   },
 
   onThisDay: {
-    title: 'На денешен ден',
-    note: (day: number, month: number) => `Борци што загинале, починале или исчезнале на ${day} ${MONTHS[month - 1]}, во годините на војната`,
+    title: (day: number, month: number) => `Загинати, починати или исчезнати на ${day} ${MONTHS[month - 1]}`,
     loading: 'Се вчитува',
     deathTitle: 'Година и место на смртта',
     missingTitle: 'Година и место на исчезнувањето',

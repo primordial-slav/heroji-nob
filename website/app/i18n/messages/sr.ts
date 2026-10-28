@@ -115,8 +115,7 @@ export const sr = {
   },
 
   onThisDay: {
-    title: 'Na današnji dan',
-    note: (day: number, month: number) => `Borci koji su ${day}. ${MONTHS_GENITIVE[month - 1]} poginuli, umrli ili nestali u ratu`,
+    title: (day: number, month: number) => `Poginuli, umrli ili nestali dana ${day}. ${MONTHS_GENITIVE[month - 1]}`,
     loading: 'Učitavanje',
     deathTitle: 'Godina i mesto smrti',
     missingTitle: 'Godina i mesto nestanka',

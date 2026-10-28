@@ -112,8 +112,7 @@ export const en: Messages = {
   },
 
   onThisDay: {
-    title: 'On this day',
-    note: (day: number, month: number) => `Partisans who were killed, died or went missing on ${day} ${MONTHS[month - 1]} during the war`,
+    title: (day: number, month: number) => `Killed, died or missing on ${day} ${MONTHS[month - 1]}`,
     loading: 'Loading',
     deathTitle: 'Year and place of death',
     missingTitle: 'Year and place last seen',

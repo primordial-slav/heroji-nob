@@ -126,8 +126,7 @@ export default function OnThisDay({ onSelect }: OnThisDayProps) {
   return (
     <section className="on-this-day" aria-labelledby="on-this-day-title">
       <div className="section-head">
-        <h2 id="on-this-day-title">{t.onThisDay.title}</h2>
-        <p className="section-note">{t.onThisDay.note(today.day, today.month)}</p>
+        <h2 id="on-this-day-title">{t.onThisDay.title(today.day, today.month)}</h2>
       </div>
 
       {!loaded ? (
