@@ -173,6 +173,17 @@ def nominative(unit_file: str, field: str, s: dict) -> str | None:
     return new
 
 
+def same_reading(read: str, field: str) -> bool:
+    """the field as the table's record read it, or the same word put in another case since (the known places' vote
+    reads "u Jarku" as Jarak since 2026-10-28, the table's "Jarku, Hrašćina Trgovišće" is Jarek): the same text after
+    the first word, and the first word the same but for its last three letters"""
+    if read == field:
+        return True
+    (a, rest_a), (b, rest_b) = (re.match(r'([^\s,]*)(.*)', x).groups() for x in (read, field))
+    stem = min(len(a), len(b)) - 3
+    return rest_a == rest_b and stem >= 2 and a[:stem] == b[:stem]
+
+
 def apply(unit_file: str, soldiers: list[dict], manual: dict | None = None) -> Counter:
     """put each resolved village in the nominative in place; manual: soldier_id -> fields corrections set"""
     done = Counter()
@@ -185,7 +196,7 @@ def apply(unit_file: str, soldiers: list[dict], manual: dict | None = None) -> C
             # a birthplace whose form is a case in one record and a village's own name in another ("u Marini, Trogir"
             # is Marina, "u selu Marini, Prijedor" Marini): the table's record, while the field is as it was read
             own = births.get(s.get('soldier_id')) if field == 'birth_place' else None
-            new = (own[1] if own and own[0] == s[field] else None) or nominative(unit_file, field, s) \
+            new = (own[1] if own and same_reading(own[0], s[field]) else None) or nominative(unit_file, field, s) \
                 or case_nominative(s[field], s)
             if new and new != s[field]:
                 s[field] = new
