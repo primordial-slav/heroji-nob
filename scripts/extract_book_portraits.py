@@ -594,6 +594,7 @@ UNIT_BOOKS = [
     ('0060001507', '00003/681_1.pdf', 49, 339, None, '"Đoko Munjas", the heading of his biography; the record holds the book’s entry: Gojak, 1926, komesar čete 1. bataljona 8. divizije'),
     ('0060001919', '00003/681_1.pdf', 69, 424, None, '"Milan Rebić Pajin", the heading of his biography; the record holds the book’s entry: Vucelići, 1921'),
     ('0070001425', '00003/815.pdf', 339, 1895, (0.28, 0.08, 0.72, 0.42), '"Martin Vraničar", the caption under him; the record holds the book’s entry: komandant 3. bataljona 15. brigade, padel'),
+    ('0036019006', '00001/108_21.pdf', 17, 101, None, 'narodni heroj of the brigade, the portrait inside his biography ("ĐAPIĆ Nikole ĐURO BUKETA, rođen je 10. septembra 1920. u selu Biteliću", its text running on above and below the photo); the record holds the biography'),
 ]
 
 PAGE_BOOKS = [
