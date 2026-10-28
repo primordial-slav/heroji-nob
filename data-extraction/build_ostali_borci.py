@@ -97,6 +97,14 @@ COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-bo
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
 # lists its dead once, and two of its entries of one name and village are as often two cousins)
 PRINTS_TWICE = {'spomenica-crnogorskim-antifasistima'}
+
+
+def infant(e: dict) -> bool:
+    """A child the Spomenica names who was born in the war's last years: killed in the massacres of 1943 at a year or
+    two, no fighter (the user's decision of 2026-10-28: the older children stay, since children fought); another
+    book that names the same child still makes his record"""
+    year = str(e.get('birth_year') or '')
+    return e.get('_book') == 'spomenica-crnogorskim-antifasistima' and year.isdigit() and 1942 <= int(year) <= 1945
 # entries checked by hand to be one man, where an OCR slip in the father hides it from same_man, or where the Spomenica
 # prints him in two chapters with two villages
 ONE_MAN = [
@@ -538,7 +546,7 @@ def main():
             # a man the book names by one name is still its man (Romano's "Ašer (prezime nepoznato)", Oborovo's "Ivica
             # ...", Gončin's "Janković"; the user's decision of 2026-10-14); one it could not name ("Nepoznati borac"),
             # or a number its parser keeps with no one, is no one a search can find
-            if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed'):
+            if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed') and not infant(e):
                 entries.append(e)
     # each book's own given names, to read its genitive fathers by its region's names (from_genitive)
     book_given: dict[str, Counter] = defaultdict(Counter)
