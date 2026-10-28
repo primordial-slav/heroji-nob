@@ -3168,5 +3168,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/milesevski.jpg',
     brigadeName: '',
     description: 'Prilog „Učesnici narodnooslobodilačkog pokreta iz Mileševskog sreza poginuli u toku Drugog svetskog rata” (str. 153–197), po tadašnjim opštinama, sa rođenjem, stupanjem u jedinicu i pogibijom. Uneti su borci i, označeni kao aktivisti, ljudi pokreta koje spisak broji. Spiskovi žrtava fašističkog terora i stradalih na drugoj strani iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'porodicna-arhiva',
+    title: 'Porodična arhiva',
+    author: '',
+    pdfPath: 'porodica:',
+    thumbnail: '/images/pdf-thumbs/porodicna-arhiva.jpg',
+    brigadeName: '',
+    description: 'Borci kojih nema ni u jednom spisku na sajtu, a za koje su porodice poslale podatke iz svojih dokumenata: vojne knjižice, rešenja, fotografije. Podatke prenosimo kako stoje u dokumentu. Nalaze se među Borcima drugih jedinica.'
   }
 ]

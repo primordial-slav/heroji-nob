@@ -73,7 +73,8 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
                '9010000363': 'Dmitar', '9038001274': 'Đorđe'}
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica',      # (Ostrvica's census names the head, the father)
-                      'lezimir'}                            # (Ležimir's list: "Babić (Radovan) Petar")
+                      'lezimir',                            # (Ležimir's list: "Babić (Radovan) Petar")
+                      'porodicna-arhiva'}                   # (a family's papers: the father as they name him)
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
 POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
                       'revolucionarno-grahovo', 'bozice',       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")

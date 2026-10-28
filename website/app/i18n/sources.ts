@@ -673,6 +673,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Seznami k poglavju o Lješanski nahiji pri Podgorici v NOB: padli v NOB (str. 184–199), z rojstvom, krajem in dnem smrti, narodni heroji (str. 201) in nosilci Partizanske spomenice 1941 (str. 202–203). Seznamov padlih v aprilski vojni, žrtev fašističnega terorja in četnikov iz iste knjige nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'milesevski':
       'Priloga »Udeleženci narodnoosvobodilnega gibanja iz okraja Mileševo, padli med drugo svetovno vojno« (str. 153–197), po takratnih občinah, z rojstvom, vstopom v enoto in smrtjo. Vneseni so borci in, označeni kot aktivisti, ljudje gibanja, ki jih seznam šteje. Seznamov žrtev fašističnega terorja in mrtvih na drugi strani iz iste knjige nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+    'porodicna-arhiva':
+      'Borci, ki jih ni na nobenem seznamu na strani in o katerih so družine poslale podatke iz svojih dokumentov: vojaških knjižic, odločb, fotografij. Podatke navajamo, kot so zapisani v dokumentu. Najdete jih med Borci drugih enot.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -1335,6 +1337,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Списоците кон поглавјето за Љешанската нахија кај Подгорица во НОБ: загинатите во НОБ (стр. 184–199), со раѓањето, местото и денот на загинувањето, народните херои (стр. 201) и носителите на Партизанската споменица 1941 (стр. 202–203). Списоците на загинатите во Априлската војна, на жртвите на фашистичкиот терор и на четниците од истата книга не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'milesevski':
       'Прилогот „Учесници во народноослободителното движење од Милешевската околија загинати во текот на Втората светска војна“ (стр. 153–197), по тогашните општини, со раѓањето, стапувањето во единицата и загинувањето. Внесени се борците и, означени како активисти, луѓето од движењето што ги брои списокот. Списоците на жртвите на фашистичкиот терор и на загинатите на другата страна од истата книга не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+    'porodicna-arhiva':
+      'Борци што ги нема во ниту еден список на сајтот, а за кои семејствата испратија податоци од своите документи: воени книшки, решенија, фотографии. Податоците ги пренесуваме онака како што стојат во документот. Ќе ги најдете меѓу Борците од други единици.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -1996,6 +2000,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The lists after the chapter on the Lješanska nahija near Podgorica in the war: those who fell in the war of liberation (pp. 184–199), with birth and the place and day of death, the national heroes (p. 201) and the holders of the 1941 Partisan Commemorative Medal (pp. 202–203). The same book’s lists of those killed in the April war, of the victims of fascist terror and of the Chetniks were not entered. The book is not tied to one unit. Wherever we are sure that someone in it is already on the site, we have added what the book says about them to their record. The rest are listed under Fighters of other units.',
     'milesevski':
       'The appendix of the participants of the liberation movement from the Mileševo district who died in the Second World War (pp. 153–197), by the municipalities of the time, with birth, joining a unit and death. Fighters were entered and, marked as activists, the movement’s people the list counts. The same book’s lists of the victims of fascist terror and of the dead on the other side were not entered. The book is not tied to one unit. Wherever we are sure that someone in it is already on the site, we have added what the book says about them to their record. The rest are listed under Fighters of other units.',
+    'porodicna-arhiva':
+      'Fighters who are in no list on the site, whose families have sent us details from their own papers: military booklets, decisions, photographs. We give the details as the papers state them. You will find them under Fighters of other units.',
   },
 }
 

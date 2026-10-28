@@ -42,7 +42,8 @@ ROOT = Path(__file__).resolve().parent.parent
 CORRECTIONS = ROOT / 'corrections.json'
 # the books' entries: the Poreklo library's (no scan on the site) and znaci.org's (the PDF on the site)
 ENTRY_DIRS = (ROOT / 'data-extraction' / 'poreklo', ROOT / 'data-extraction' / 'znaci',
-              ROOT / 'data-extraction' / 'zrtve-rata')      # the 1964 census of the war's dead, a volume a republic
+              ROOT / 'data-extraction' / 'zrtve-rata',      # the 1964 census of the war's dead, a volume a republic
+              ROOT / 'data-extraction' / 'porodica')        # what families sent from their papers (no book prints them)
 
 
 def entries_path(book: str) -> Path:

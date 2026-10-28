@@ -4,7 +4,7 @@ import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, isMuseum, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isFamily, isMuseum, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
 import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
@@ -102,12 +102,12 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     pageRef.current?.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
   }
   // An entry's line: the other unit, the book, its page, the name as printed there. A list published as a web
-  // page links to it; a book whose scan is not on the site is only named.
+  // page links to it; a book whose scan is not on the site, or a family's archive, is only named.
   const entryLabel = (e: SoldierSource) => (
     <>
       {/* the other unit's name, unless the book's title already starts with it */}
       {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
-      {e.source_url && !e.pdf_file && !isPoreklo(e.source_url)
+      {e.source_url && !e.pdf_file && !isPoreklo(e.source_url) && !isFamily(e.source_url)
         ? <a href={e.source_url} target="_blank" rel="noopener noreferrer">{bookTitle(e, lang)}</a>
         : bookTitle(e, lang)}
       {(e.pdf_page ?? e.source_page) != null && `, ${t.record.page((e.pdf_page ?? e.source_page)!)}`}
@@ -345,8 +345,8 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
             {!page && soldier.source_url && (
               <p className="modal-source-note">
-                {/* a book whose scan is not on the site is named with its page, not linked */}
-                {isPoreklo(soldier.source_url)
+                {/* a book whose scan is not on the site is named with its page, not linked; so is a family's archive */}
+                {isPoreklo(soldier.source_url) || isFamily(soldier.source_url)
                   ? t.record.noScanBook(bookTitle(soldier, lang), soldier.source_page ?? null)
                   : <RichText text={isMuseum(soldier.source_url) ? t.record.noScanMuseum(bookTitle(soldier, lang)) : t.record.noScan}
                       render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>} />}

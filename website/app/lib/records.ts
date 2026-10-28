@@ -37,6 +37,10 @@ export const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file !=
 /** A book in the Poreklo digital library (biblioteka.poreklo.rs): scanned there, open to its members only */
 export const isPoreklo = (url?: string) => !!url?.startsWith('https://biblioteka.poreklo.rs/')
 
+/** What a soldier's family sent from its papers (a military booklet, a decision, a photograph), for a man no book prints:
+ * the source "Porodična arhiva", named and never linked */
+export const isFamily = (url?: string) => !!url?.startsWith('porodica:')
+
 /** The 1964 census of the war's dead, a PDF per republic on the Museum of Genocide Victims' site */
 export const isMuseum = (url?: string) => !!url?.startsWith('https://www.muzejgenocida.rs/')
 

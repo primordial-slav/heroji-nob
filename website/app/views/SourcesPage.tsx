@@ -1,5 +1,5 @@
 import { sources } from '@/app/data/sources'
-import { isPoreklo } from '@/app/lib/records'
+import { isFamily, isPoreklo } from '@/app/lib/records'
 import { ChevronRightIcon, DocumentIcon, DownloadIcon } from '@/app/components/Icons'
 import RichText from '@/app/i18n/RichText'
 import { messagesFor } from '@/app/i18n'
@@ -51,7 +51,7 @@ export default function SourcesPage({ lang }: { lang: Lang }) {
                     <DownloadIcon size={16} />
                   </a>
                 </div>
-              ) : !isPoreklo(source.pdfPath) && (
+              ) : !isPoreklo(source.pdfPath) && !isFamily(source.pdfPath) && (
                 // a list published only as a web page (no scan); a book whose scan is not on the site is only named
                 <div className="source-actions">
                   <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
