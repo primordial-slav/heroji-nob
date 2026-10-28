@@ -26,28 +26,28 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-21',
     text: {
-      sr: 'Kod još oko 7.900 boraca ime oca više nije u padežu: umesto „Miloša“ sada piše Miloš.',
-      sl: 'Pri še okoli 7.900 borcih smo očetovo ime iz rodilnika postavili v imenovalnik: namesto »Miloša« zdaj piše Miloš.',
-      mk: 'Кај уште околу 7.900 борци името на таткото веќе не е во падеж: наместо „Miloša“ сега пишува Miloš.',
-      en: 'For about 7,900 more fighters, the father’s name is no longer in the possessive form the books use: “Miloša” (Miloš’s) now reads Miloš.',
+      sr: 'Kod još oko 7.900 boraca uz ime oca sada piše Miloš, a ne „Miloša“ kako ga knjiga navodi.',
+      sl: 'Pri še okoli 7.900 borcih zdaj kot očetovo ime piše Miloš, ne »Miloša«, kot ga navaja knjiga.',
+      mk: 'Кај уште околу 7.900 борци како име на таткото сега пишува Miloš, а не „Miloša“ како што го наведува книгата.',
+      en: 'For about 7,900 more fighters, the father’s name now reads Miloš, not “Miloša” as the book gives it.',
     },
   },
   {
     date: '2026-10-21',
     text: {
-      sr: 'Mesta rođenja i pogibije više nisu u padežu: umesto „Užicu“ sada piše Užice. Borci iz istog sela sada su zajedno u delu „Saborci i zemljaci“, i kad knjige različito pišu ime sela.',
-      sl: 'Kraji rojstva in smrti niso več v sklonu: namesto »Užicu« zdaj piše Užice. Borci iz iste vasi so zdaj skupaj v razdelku »Soborci in rojaki«, tudi če knjige ime vasi pišejo različno.',
-      mk: 'Местата на раѓање и загинување веќе не се во падеж: наместо „Užicu“ сега пишува Užice. Борците од исто село сега се заедно во делот „Соборци и земјаци“, дури и кога книгите различно го пишуваат името на селото.',
-      en: 'Places of birth and death now appear in their dictionary form: “Užicu” (in Užice) now reads Užice. Fighters from the same village are now together under “Comrades and neighbours”, even where the books spell the village differently.',
+      sr: 'Borci rođeni u istom selu sada su zajedno u delu „Saborci i zemljaci“, i kad knjige različito pišu ime sela.',
+      sl: 'Borci, rojeni v isti vasi, so zdaj skupaj v razdelku »Soborci in rojaki«, tudi če knjige ime vasi pišejo različno.',
+      mk: 'Борците родени во исто село сега се заедно во делот „Соборци и земјаци“, дури и кога книгите различно го пишуваат името на селото.',
+      en: 'Fighters born in the same village are now together under “Comrades and neighbours”, even where the books spell the village differently.',
     },
   },
   {
     date: '2026-10-21',
     text: {
-      sr: 'Kod oko 8.000 boraca u mestu rođenja pisalo je nešto drugo, na primer dužnost ili jedinica. To je sada ispravljeno.',
-      sl: 'Pri okoli 8.000 borcih je bilo v kraju rojstva zapisano kaj drugega, na primer dolžnost ali enota. Zdaj smo to popravili.',
-      mk: 'Кај околу 8.000 борци наместо местото на раѓање стоеше нешто друго, на пример должност или единица. Сега тоа е поправено.',
-      en: 'For about 8,000 fighters the place of birth held something else, such as a duty or a unit. We have fixed that.',
+      sr: 'Kod oko 8.000 boraca kao mesto rođenja stajala je dužnost ili jedinica. Ispravili smo to.',
+      sl: 'Pri okoli 8.000 borcih je bila kot kraj rojstva zapisana dolžnost ali enota. To smo popravili.',
+      mk: 'Кај околу 8.000 борци наместо местото на раѓање стоеше должност или единица. Тоа го поправивме.',
+      en: 'For about 8,000 fighters, a duty or a unit stood where the place of birth should be. We have fixed that.',
     },
   },
   {
@@ -77,10 +77,10 @@ export const NEWS: NewsItem[] = [
       en: 'Lists that were only images',
     },
     text: {
-      sr: 'Četiri spiska imali smo samo kao skenirane slike, bez teksta. Sada smo ih pročitali: ceo spisak 1. bokeljske brigade, pale borce Nikšićkog i Lovćenskog odreda i borce iz opštine Teslić.',
-      sl: 'Štiri sezname smo imeli le kot skenirane slike, brez besedila. Zdaj smo jih prebrali: celoten seznam 1. bokeljske brigade, padle borce Nikšićkega in Lovćenskega odreda ter borce iz občine Teslić.',
-      mk: 'Четири списоци ги имавме само како скенирани слики, без текст. Сега ги прочитавме: целиот список на 1-ва бокељска бригада, загинатите борци на Никшиќкиот и Ловќенскиот одред и борците од општината Теслиќ.',
-      en: 'We had four lists only as scanned images, with no text. Now we have read them: the 1st Boka Brigade’s whole roll, the fallen of the Nikšić and Lovćen detachments, and the fighters from the Teslić municipality.',
+      sr: 'Četiri spiska postojala su samo kao skenirane slike, pa ih pretraga nije nalazila. Sada se mogu pretraživati: ceo spisak 1. bokeljske brigade, pali borci Nikšićkog i Lovćenskog odreda i borci iz opštine Teslić.',
+      sl: 'Štirje seznami so obstajali le kot skenirane slike, zato jih iskanje ni našlo. Zdaj je po njih mogoče iskati: celoten seznam 1. bokeljske brigade, padli borci Nikšićkega in Lovćenskega odreda ter borci iz občine Teslić.',
+      mk: 'Четири списоци постоеја само како скенирани слики, па пребарувањето не ги наоѓаше. Сега може да се пребарува и низ нив: целиот список на 1-ва бокељска бригада, загинатите борци на Никшиќкиот и Ловќенскиот одред и борците од општината Теслиќ.',
+      en: 'Four lists existed only as scanned images, so search could not find them. Now they can be searched: the 1st Boka Brigade’s whole roll, the fallen of the Nikšić and Lovćen detachments, and the fighters from the Teslić municipality.',
     },
   },
   {
