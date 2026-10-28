@@ -1693,6 +1693,23 @@ PRVA_LICKA = [
 ]
 PRVA_LICKA_CREDIT = 'Prva lička proleterska brigada „Marko Orešković“'
 
+BK = [
+    # the Proleterski bataljon Bosanske krajine's book on the site (proleterski-bataljon-bk.pdf): the portraits beside an entry that
+    # weren't cut when the unit came to the site (most of them the third entry of a page), the photo whose height holds the entry's
+    # first line and whose side holds its text (2026-10-28). Record, page in the site's PDF, the photo's box, the heading beside it.
+    # Its credit is the one the first 180 carry; it stays out of `own`, so those are kept as they are
+    ('0163000038', 16, (289.0, 478.2, 409.2, 647.6), 'BUBONJA (Save) MILAN'),
+    ('0163000070', 30, (280.2, 479.9, 404.7, 645.5), 'GLUŠICA (Stevana) MILAN'),
+    ('0163000132', 46, (283.3, 477.2, 405.0, 647.1), 'KUKIĆ (Pane) RADE'),
+    ('0163000125', 51, (155.2, 478.4, 282.9, 644.3), 'KOŠPIĆ (Paje) OBRAD'),
+    ('0163000141', 55, (161.1, 475.0, 281.3, 639.4), 'LUKAČ (Vida) GOJKO'),
+    ('0163000214', 85, (158.1, 481.0, 281.9, 644.9), 'SAHIĆ (Šerifa) IBRO'),
+    ('0163000247', 94, (281.4, 473.8, 402.6, 640.2), 'TRIKIĆ (Pere) MILAN'),
+    ('0163000269', 100, (294.2, 486.8, 416.2, 648.3), 'VUKOVIĆ (Petra) BRANKO'),
+    ('0163000045', 106, (285.3, 198.4, 402.4, 363.5), 'BUŠATLIJA SABAHUDIN BUDO'),
+]
+BK_CREDIT = 'Proleterski bataljon Bosanske krajine (Beograd, 1982)'
+
 HEROES_1982 = [
     # Petar Kačavenda, Narodni heroji Jugoslavije (Beograd 1982, two volumes; znaci 00003/977 A-M and 978 N-Ž, PDF page =
     # the book's page + 4): the portrait the book prints in each hero's entry, an entry the record holds as its
@@ -2441,7 +2458,8 @@ def main():
             ('vinodolska-selca.pdf', VINODOLSKA_CREDIT, 'https://znaci.org/00003/793.pdf#page={}', [(r[0], r[1] + 709, r[1], r[2]) for r in VINODOLSKA]),
             ('ljubljanska-brigada.pdf', LJUBLJANSKA_CREDIT, '/pdfs/ljubljanska-brigada.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in LJUBLJANSKA]),
             ('imotska-krajina-pali-borci.pdf', IMOTSKA_CREDIT, '/pdfs/imotska-krajina-pali-borci.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in IMOTSKA]),
-            ('prva-licka-proleterska.pdf', PRVA_LICKA_CREDIT, '/pdfs/prva-licka-proleterska.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in PRVA_LICKA])):
+            ('prva-licka-proleterska.pdf', PRVA_LICKA_CREDIT, '/pdfs/prva-licka-proleterska.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in PRVA_LICKA]),
+            ('proleterski-bataljon-bk.pdf', BK_CREDIT, '/pdfs/proleterski-bataljon-bk.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in BK])):
         doc = fitz.open(PUBLIC / 'pdfs' / pdf)
         n = 0
         for sid, book_page, page, box in rows:

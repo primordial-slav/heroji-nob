@@ -673,6 +673,10 @@ export const WARTIME_PORTRAITS: string[] = [
   '0001009019',
   '0001001975',
   '0001003384',
+  // 2026-10-28: the Proleterski bataljon Bosanske krajine, fallen
+  '0163000070',
+  '0163000141',
+  '0163000247',
   // family photos (data/family.ts)
   '0002000242',
 ]
