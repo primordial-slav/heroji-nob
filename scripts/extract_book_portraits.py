@@ -237,6 +237,7 @@ BOOK_TITLES = {
     '00003/678': 'Partizanska Drežnica',
     '00003/681': 'Općina Gornje Dubrave',
     '00003/823': 'Stanko Petelin, Enaintrideseta divizija',
+    '00003/815': 'Mile Pavlin, Petnajsta brigada',
 }
 
 UNIT_BOOKS = [
@@ -579,6 +580,20 @@ UNIT_BOOKS = [
     ('0046000869', '00003/585.pdf', 118, 641, None, 'Vjera Poljak; the book beside it: rođena 1924. u Solinu, borac i četna bolničarka; the record: 1924, Solin, borac'),
     ('0146000073', '00003/585.pdf', 267, 1421, None, 'Ilonka Rajdl; the book beside it: rođena u Slav. Brodu, borac XII. brigade, poginula pri osvajanju bunkera u Garešnici; the record: Slavonski Brod, the 12. brigade, fell at Garešnica'),
     ('0146000046', '00003/585.pdf', 265, 1409, None, 'Ana Milaković-Panjković; the book beside it: komesar Komande mjesta Čačinci; the record: rođena u Pušini (by Čačinci), borac, bolničarka i referent saniteta'),
+    # 2026-10-28: books across units whose own entry the record holds as its reference: the portrait at the head of the man's
+    # biography or over his name in the same book
+    ('0097000281', '00003/616_2.pdf', 32, 259, None, '"Janko Franje Furdek", the portrait under the heading of his biography: rođen 1909. u Mihalić Selu; the record holds the book’s entry: Mihalić Selo, 1909'),
+    ('0094000206', '00003/616_2.pdf', 32, 259, None, '"Janko Franje Furdek", the portrait under the heading of his biography: rođen 1909. u Mihalić Selu; the record holds the book’s entry: Mihalić Selo, 1909'),
+    ('0097000492', '00003/616_2.pdf', 58, 369, None, '"Komandant bataljona Josip Kasunić", rođen 1919. u Carevom Selu, općina Duga Resa; the record holds the book’s entry: 1919, komandant II. bataljona Karlovačke brigade'),
+    ('0094000337', '00003/616_2.pdf', 58, 369, None, '"Komandant bataljona Josip Kasunić", rođen 1919. u Carevom Selu, općina Duga Resa; the record holds the book’s entry: 1919, komandant II. bataljona Karlovačke brigade'),
+    ('0003001257', '00003/489.pdf', 418, 1769, None, '"Komandant bataljona Milan Šever", sin Jove, rođen 1920. u Buniću, živio u Jošanu; the record holds the book’s entry: Jošan, 1920, komandant bataljona 6. divizije'),
+    ('0003001487', '00003/489.pdf', 439, 1861, None, '"Milan Vukadinović Milić", rođen 1921. u Gradini, sin Stevana; the record holds the book’s entry: Gradina, komandant 3. bataljona 2. brigade 6. divizije'),
+    ('0060000914', '00003/487.pdf', 655, 2797, None, '"Dušan Kosanović Mudrak", rođen 2. juna 1918. u Latinu; the record holds the book’s entry: Latin, 1918, načelnik štaba 1. brigade 8. divizije'),
+    ('0044010574', '00003/644_1.pdf', 121, 746, None, '"Mile Martinović, predsjednik Okružnog NOO-a za Kordun", the heading of his biography; the record holds the book’s entry: učitelj, komesar 1. brigade 8. divizije, predsjednik Okružnog NOO za Kordun'),
+    ('0060001224', '00003/644_1.pdf', 121, 746, None, '"Mile Martinović, predsjednik Okružnog NOO-a za Kordun", the heading of his biography; the record holds the book’s entry: učitelj, komesar 1. brigade 8. divizije, predsjednik Okružnog NOO za Kordun'),
+    ('0060001507', '00003/681_1.pdf', 49, 339, None, '"Đoko Munjas", the heading of his biography; the record holds the book’s entry: Gojak, 1926, komesar čete 1. bataljona 8. divizije'),
+    ('0060001919', '00003/681_1.pdf', 69, 424, None, '"Milan Rebić Pajin", the heading of his biography; the record holds the book’s entry: Vucelići, 1921'),
+    ('0070001425', '00003/815.pdf', 339, 1895, (0.28, 0.08, 0.72, 0.42), '"Martin Vraničar", the caption under him; the record holds the book’s entry: komandant 3. bataljona 15. brigade, padel'),
 ]
 
 PAGE_BOOKS = [
