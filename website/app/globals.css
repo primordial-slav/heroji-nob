@@ -2566,6 +2566,22 @@ body:has(.band-photo[data-ready]) header.masthead {
   margin-top: calc(-1 * var(--space-6) - 3.5rem);
 }
 
+/* The soldier's embroidered frame (lib/vez.ts) on the card's white mount, its threads in the light theme's inks
+   whatever the page's theme, since the card is always paper; the card prints its colours (print-color-adjust) */
+.memorial-card .memorial-portrait.vez {
+  overflow: visible;
+  --vez-inset: calc(-10.096% - 4px) calc(-13.462% - 4px);
+  --red-ink: #8e1f20;
+  --vez-blue: #1f2d5a;
+  --vez-gold: #8c6a22;
+  --vez-green: #2f5d3f;
+  box-shadow: 0 0 0 20px #ffffff, 0 0 0 21px var(--rule);
+}
+
+.memorial-head.has-portrait:has(.memorial-portrait.vez) {
+  column-gap: calc(var(--space-5) + 1.25rem);
+}
+
 @media (max-width: 640px) {
   .know-soldier {
     padding: var(--space-4);

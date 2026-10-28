@@ -3,8 +3,8 @@
 
 A soldier's frame comes from a set: the set of the part of the land he was born in (Lika, Banat, Herzegovina,
 Sandžak...), each from that part's own needlework and its peoples' together, none named; or the set of the
-nationality his record prints (Jews, Slovaks, Czechs, Rusyns, Ukrainians, Russians, Italians, Germans and Austrians,
-Hungarians); or, where neither is known, the neutral set. scripts/build_vez.py gives each soldier his set; the site
+nationality his record prints (Jews, Albanians, Slovaks, Czechs, Rusyns, Ukrainians, Russians, Turks, Roma, Italians,
+Germans and Austrians, Hungarians); or, where neither is known, the neutral set. scripts/build_vez.py gives each soldier his set; the site
 picks the frame within it by his name, so he wears the same one wherever he is shown.
 
 The motifs are South Slavic needlework's and the neighbours': Zmijanje's blue embroidery (UNESCO 2014), the stećci
@@ -518,6 +518,52 @@ def e_sparse_rhombs(f, e, ink):
 def e_matyo_row(f, e, ink):
     for s in e.every(13.0)[0]:
         matyo_rose(f, *e.P(s), 2.2, ink)
+
+
+def out_angle(e):
+    """the angle that turns a motif's 'up' outward from the edge"""
+    return math.degrees(math.atan2(e.n[1], e.n[0])) + 90
+
+
+def e_oya(f, e, ink):
+    """Oya, the needle lace of a Turkish kerchief's edge: scallops, a small flower on each"""
+    e_line(f, e, ink)
+    ss, p = e.every(6.4)
+    for i, s in enumerate(ss):
+        f.path([e.P(s - p / 2 + p / 2 * (1 - math.cos(math.pi * j / 12)), 1.8 * math.sin(math.pi * j / 12)) for j in range(13)], 0.45, ink)
+        if i % 2:
+            tulip(f, *e.P(s, 2.6), out_angle(e), ink, 0.42)
+        else:
+            flower4(f, *e.P(s, 2.9), 0.8, ink)
+
+
+def e_garden(f, e, ink):
+    """The Ottoman garden of tulips and carnations, in turn along the edge"""
+    for i, s in enumerate(e.every(9.0)[0]):
+        if i % 2:
+            carnation(f, *e.P(s, 0.6), out_angle(e), 0.42, ink)
+        else:
+            tulip(f, *e.P(s, 0.8), out_angle(e), ink, 0.55)
+
+
+def e_basket(f, e, ink):
+    """Basket weave: three strands along the edge, then three across, in turn"""
+    ss, p = e.every(3.2)
+    for i, s in enumerate(ss):
+        h = p / 2 - 0.3
+        if i % 2:
+            for d in (-1.0, 0.0, 1.0):
+                f.line(*e.P(s - h, d), *e.P(s + h, d), 0.35, ink)
+        else:
+            for ds in (-0.9, 0.0, 0.9):
+                f.line(*e.P(s + ds, -1.3), *e.P(s + ds, 1.3), 0.35, ink)
+
+
+def e_plait(f, e, ink):
+    """A plait of two strands crossing"""
+    per = e.L / max(2, round(e.L / 5.2))
+    for ph in (0.0, math.pi):
+        curve(f, e, lambda s, ph=ph: 1.3 * math.sin(2 * math.pi * s / per + ph), ink, 0.5)
 
 
 EDGES = {k[2:]: v for k, v in globals().items() if k.startswith('e_')}
@@ -1150,6 +1196,14 @@ SETS = [
     ('madjari', [
         ('Matyó', {'c': ('matyo', 'red'), 'tb': ('matyo_row', 'blue'), 's': ('wave', 'blue')}),
         ('Kékfestés', {'c': ('eyelet', 'blue'), 'tb': [('dots', 'blue'), ('line_out', 'blue')], 's': ('line', 'blue')}),
+    ]),
+    ('turci', [
+        ('Oja', {'c': ('tulip', 'red'), 'tb': ('oya', 'red'), 's': ('oya', 'red')}),
+        ('Lale i karanfili', {'c': ('carnation', 'red'), 'tb': ('garden', 'red'), 's': ('leafy', 'gold')}),
+    ]),
+    ('romi', [
+        ('Pletena korpa', {'c': ('rhomb2', 'red'), 'tb': ('basket', 'ink'), 's': ('basket', 'ink')}),
+        ('Pletenica', {'c': ('knot', 'red'), 'tb': ('plait', 'red'), 's': ('plait', 'red')}),
     ]),
 ]
 CAPPED = ['italijani', 'nemci', 'madjari']

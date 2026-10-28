@@ -102,7 +102,7 @@ export default function MemorialCard() {
         )}
         <div className="memorial-body">
           <div className="memorial-head has-portrait">
-            <SoldierPortrait soldier={soldier} unitId={unit.id} portrait={portrait} className="memorial-portrait" />
+            <SoldierPortrait soldier={soldier} unitId={unit.id} portrait={portrait} className="memorial-portrait" framed />
             <div>
               <p className="memorial-unit">{unitName(unit, lang)}</p>
               <h1 className="memorial-name"><SoldierName soldier={soldier} /></h1>

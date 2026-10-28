@@ -1,7 +1,7 @@
 """
 Each soldier's set of embroidered frames (scripts/make_vez_frames.py): the set of the nationality his record prints
 where it is one of the minorities' or the foreigners' (Jews, Albanians, Slovaks, Czechs, Rusyns, Ukrainians, Russians,
-Italians, Germans and Austrians, Hungarians), else the set of the part of the land he was born in, else none (the
+Turks, Roma, Italians, Germans and Austrians, Hungarians), else the set of the part of the land he was born in, else none (the
 site then uses the neutral set). The site picks the frame within the set by his name. The part is ours alone: no
 record carries it and the site shows nothing of it; the files hold set numbers only.
 
@@ -49,6 +49,7 @@ WARTIME = ROOT / 'website' / 'app' / 'data' / 'wartimePortraits.ts'
 NATIONALITY = [
     (r'^(jevrej|zidov)', 'jevreji'), (r'^(albanac|albanka|siptar)', 'albanci'), (r'^slovak', 'slovaci'),
     (r'^ceh', 'cesi'), (r'^rusin', 'rusini'), (r'^ukrajin', 'ukrajinci'), (r'^rus(kinja)?$', 'rusi'),
+    (r'^(turcin|turkinja)', 'turci'), (r'^(rom|romkinja|ciganin|ciganka)$', 'romi'),
     (r'^(talijan|italijan)', 'italijani'), (r'^(nijem|njem|nemac|nemica|austrijan)', 'nemci'), (r'^(madjar|madar)', 'madjari'),
 ]
 
