@@ -3168,5 +3168,14 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/milesevski.jpg',
     brigadeName: '',
     description: 'Prilog „Učesnici narodnooslobodilačkog pokreta iz Mileševskog sreza poginuli u toku Drugog svetskog rata” (str. 153–197), po tadašnjim opštinama, sa rođenjem, stupanjem u jedinicu i pogibijom. Uneti su borci i, označeni kao aktivisti, ljudi pokreta koje spisak broji. Spiskovi žrtava fašističkog terora i stradalih na drugoj strani iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'uzicka-gimnazija',
+    title: 'Užička gimnazija 1839–1989',
+    author: 'Stevan Ignjić, Milutin Pašić, Vojislav Lazović, Dragutin Korać',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615',
+    thumbnail: '/images/pdf-thumbs/uzicka-gimnazija.jpg',
+    brigadeName: '',
+    description: 'Spisak „Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine” (str. 297–317): profesori i drugi radnici Gimnazije i njeni učenici i bivši učenici, sa kratkom biografijom. Spisak broji i one koje su okupator i njegovi pomagači streljali ili koji su umrli u logorima; uneti su i oni koji nisu bili borci, označeni kao aktivisti ili učesnici. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   }
 ]
