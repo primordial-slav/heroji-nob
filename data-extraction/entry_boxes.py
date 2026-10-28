@@ -160,6 +160,7 @@ TWO_COLUMN = {
     'moste-polje-spomenica-1941.pdf',       # Moste-Polje: the spomenica holders, each entry hanging
     'vis-spomenica-1941.pdf',               # Vis: the spomenica holders, a name a line
     'moslavina-spomenica-1941.pdf',         # Moslavački odred: the spomenica holders, a name a line
+    '2-korpus-stabovi.pdf',                 # 2. udarni korpus: its staffs, a name a line
     'jevreji-jugoslavije-ucesnici-nor.pdf', # Romano, Jevreji Jugoslavije: the participants, each entry hanging
     '13-proleterska-spisak.pdf',
     '7-krajiska-spisak.pdf',
@@ -470,6 +471,7 @@ ONE_LINE_ENTRIES = {
     'hak-20-gospic-perusic.pdf': range(61, 77),  # Gospić i Perušić: the spomenica holders, a line each
     'vis-spomenica-1941.pdf': range(1, 2),       # Vis: the spomenica holders, a name a line
     'moslavina-spomenica-1941.pdf': range(1, 5), # Moslavački odred: the spomenica holders, a name a line
+    '2-korpus-stabovi.pdf': range(1, 4),         # 2. udarni korpus: its staffs, a name a line
 }
 
 
