@@ -1014488,14 +1014488,6 @@
     "reason": "Same soldier in borci-sutjeske-16-banijska.pdf and https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=219; same father, birthplace, death place, death year"
   },
   {
-    "id": 110350,
-    "action": "merge",
-    "soldier_id": "0047000548",
-    "merge_id": "0047010533",
-    "merge_name": "Čanak Đure Ilija",
-    "reason": "Same soldier in borci-sutjeske-16-banijska.pdf and https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=218; same father, birthplace, death year"
-  },
-  {
     "id": 110351,
     "action": "merge",
     "soldier_id": "0047000555",
@@ -1845202,6 +1845194,754 @@
       "last_name": "Forjan"
     },
     "reason": "The re-typeset page prints 'FoprjAN VINKO' between FORIJAN JOSIP and FOSIĆ IVAN: Forjan, a Zagorje surname (the morning list, 2026-10-28)"
+  },
+  {
+    "id": 141085,
+    "action": "edit",
+    "soldier_id": "0003012577",
+    "fields": {
+      "last_name": "Orelj"
+    },
+    "reason": "Garbled surname 'Orel!' (scan: OREL! SAVE DANE, Doljani, Donji Lapac); Orelj is the Lika surname (28 on the site)"
+  },
+  {
+    "id": 141086,
+    "action": "edit",
+    "soldier_id": "0070000282",
+    "fields": {
+      "last_name": "Gerželj"
+    },
+    "reason": "Garbled surname 'Geržel.i' (Tomšičeva list: Geržel.i France * 1923 Velika Stara vas); Gerželj"
+  },
+  {
+    "id": 290001,
+    "action": "edit",
+    "soldier_id": "0163000002",
+    "fields": {
+      "additional_info": "rođen 1917. g. u Banja Luci. U NOB stupio 1941. g. u Drvarsku proletersku četu stupio marta 1942. g. Clan KPJ. Poginuo aprila mjeseca 1942. kod Blatnice i Čečave. Đak."
+    },
+    "reason": "Alagić Paše Adil: the next entry (Ališić Smaje Smajo) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290002,
+    "action": "add",
+    "soldier_id": "0163000002",
+    "new_id": "0163009002",
+    "record": {
+      "last_name": "Ališić",
+      "middle_name": "Smaje",
+      "fathers_name": "Smajo",
+      "first_name": "Smajo",
+      "additional_info": "rođen 1921. g. Prijedor, Musliman, grafički radnik. U NOB stupio 1941. U Kozaračku proletersku četu stupio 9. 2. 1942. g. član KPJ. Poginuo 5. marta 1942. na Lipovcu.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 6,
+      "pdf_x": 139.1,
+      "pdf_y": 401.8
+    },
+    "reason": "Ališić Smaje Smajo: glued into the entry of Alagić Paše Adil, the heading \"ALlSlC (Smaje) SMAJO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290003,
+    "action": "edit",
+    "soldier_id": "0163000028",
+    "fields": {
+      "additional_info": "rođen 1912. g. Jelićka, Prijedor, Srbin, zemljoradnik, a NOB-u od 1941. g. U Kozaračku proletersku četu stupio je 9. 2. 1942. g. Poginuo februara 1943. g. na Grmeču kao komandir voda, u borbi sa Nijemcima."
+    },
+    "reason": "Bogdanović Stanka Simo: the next entry (Brkić Sime Čedo) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290004,
+    "action": "add",
+    "soldier_id": "0163000028",
+    "new_id": "0163009003",
+    "record": {
+      "last_name": "Brkić",
+      "middle_name": "Sime",
+      "fathers_name": "Simo",
+      "first_name": "Čedo",
+      "additional_info": "rođen 1919. g. Jalašnovci, Sanski Most, Srbin, zemljoradnik, u NOB-u od 1941. g. u Grmečku proletersku četu stupio 27. 2. 1942. g. Desetar, komandir voda i komandir Grmečke proleterske čete. Kandidat za člana KPJ. Poginuo je 16. septembra 1942. g. na Radlovcu u Slavoniji.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 15,
+      "pdf_x": 307.4,
+      "pdf_y": 551.8
+    },
+    "reason": "Brkić Sime Čedo: glued into the entry of Bogdanović Stanka Simo, the heading \"BRKIÖ (Sime) ČEDO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290005,
+    "action": "edit",
+    "soldier_id": "0163000045",
+    "fields": {
+      "additional_info": "zvani Budo; rođen 1918. g. Bugojno, Musliman, student, u NOB-u od 1941. g. U Grmečku proletersku četu stupio maja meseca 1942. g. borac, član KPJ. Komesar bataljona u brigadi. Nosilac partizanske Spomenice 1941, g."
+    },
+    "reason": "Bušatlija Sabahudin: the next entry (Fejzić Safet) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290006,
+    "action": "add",
+    "soldier_id": "0163000045",
+    "new_id": "0163009004",
+    "record": {
+      "last_name": "Fejzić",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Safet",
+      "additional_info": "rođen 1923. g. B. Luka, Musliman, radnik. U NOB-u od 1941. g. U Kozaračku proletersku četu stupio maja 1942. g. borac, komesar čete, ppukovnik JNA u penziji, nosilac Spomenice 1941. g.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 106,
+      "pdf_x": 131.2,
+      "pdf_y": 580.9
+    },
+    "reason": "Fejzić Safet: glued into the entry of Bušatlija Sabahudin, the heading \"FEJZIĆ SAFET\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290007,
+    "action": "edit",
+    "soldier_id": "0163000060",
+    "fields": {
+      "additional_info": "rođen 1918. g. Bošnjaci, Sanski Most, Srbin, zemljoradnik, u NOB-u 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Načelnik štaba u diviziji. Nosilac partizanske Spomenice 1941. g. General- -major u penziji."
+    },
+    "reason": "Dosenović Jovan Mićo: the next entry (Dragić Ilije Ljubiša) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290008,
+    "action": "add",
+    "soldier_id": "0163000060",
+    "new_id": "0163009005",
+    "record": {
+      "last_name": "Dragić",
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Ljubiša",
+      "additional_info": "rođen 1918. g. Lastva, Bosanski Petrovac, Srbin, zemljoradnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Poginuo novembra 1943. g. na Rogatici, kao komesar čete u 1. krajiškoj brigadi.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 27,
+      "pdf_x": 297.0,
+      "pdf_y": 391.2
+    },
+    "reason": "Dragić Ilije Ljubiša: glued into the entry of Dosenović Jovan Mićo, the heading \"DRAGIĆ, (Ilije) LJUBIŠA\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290009,
+    "action": "add",
+    "soldier_id": "0163000060",
+    "new_id": "0163009006",
+    "record": {
+      "last_name": "Dragaš",
+      "middle_name": "Jove",
+      "fathers_name": "Jovo",
+      "first_name": "Đuro",
+      "additional_info": "rođen 1915. g. Klekovci, Bosanska Dubica, Srbin, zemljoradnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio je 9. 2. 1942. g. Borac, član KPJ. Komandir čete u brigadi. Nosilac partizanske Spomenice 1941. g. Umro 1946» g. od ratnih posledica.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 27,
+      "pdf_x": 295.3,
+      "pdf_y": 563.3
+    },
+    "reason": "Dragaš Jove Đuro: glued into the entry of Dosenović Jovan Mićo (inside Dragić Ljubiša's part), the heading \"DRAGA3 (Jove) ĐURO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290010,
+    "action": "edit",
+    "soldier_id": "0163000068",
+    "fields": {
+      "additional_info": "rođen 1922. g. Babići, Prijedor, Srbin, šumarski radnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g. borac. Poginuo juna 1942. g. na Kozari u ofanzivi."
+    },
+    "reason": "Gajić Đure Košta: the next entry (Grgić Mile Mirko) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290011,
+    "action": "add",
+    "soldier_id": "0163000068",
+    "new_id": "0163009007",
+    "record": {
+      "last_name": "Grgić",
+      "middle_name": "Mile",
+      "fathers_name": "Mile",
+      "first_name": "Mirko",
+      "additional_info": "rođen 1918. g. Jablanica, Bosanska Gradiška, Srbin, zemljoradnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio je 9. 2. 1942. g. Nosilac partizanske Spomenice 1941. g.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 32,
+      "pdf_x": 142.0,
+      "pdf_y": 586.3
+    },
+    "reason": "Grgić Mile Mirko: glued into the entry of Gajić Đure Košta, the heading \"GRGlC (Mile) MIRKO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290012,
+    "action": "edit",
+    "soldier_id": "0163000078",
+    "fields": {
+      "additional_info": "rođen 1924. g. Kotor Varoš, Musliman, radnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio je marta 1942. g. Član KPJ. Streljan 10. juna 1942. g. od strane četnika, u selu Rakovcu."
+    },
+    "reason": "Hadžisehmović Edhema Salih: the next entry (Hodžić Adema Husein) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290013,
+    "action": "add",
+    "soldier_id": "0163000078",
+    "new_id": "0163009008",
+    "record": {
+      "last_name": "Hodžić",
+      "middle_name": "Adema",
+      "fathers_name": "Adem",
+      "first_name": "Husein",
+      "additional_info": "zvani Huso; rođen 1914. g. Tešanj, Musliman, student, u NOB-u od 1941. g. U Proleterski bataljon došao je aprila mjeseca 1942. g. za zamjenika komesara bataljona. Član KPJ od 1939. g. Poginuo novembrs mjeseca 1942. g. na Kozari kao komandant proleterskog bataljona. Proglašen za Narodnog heroja.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 34,
+      "pdf_x": 135.1,
+      "pdf_y": 269.4
+    },
+    "reason": "Hodžić Adema Husein: glued into the entry of Hadžisehmović Edhema Salih, the heading \"HODZlC (Adema) HUSEIN HUSO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290014,
+    "action": "edit",
+    "soldier_id": "0163000087",
+    "fields": {
+      "additional_info": "rođen 1918. g. Petrinja, Bosanska Kostajnica, Srbin, radnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g. Clan KPJ, poginuo je aprila mjeseca 1942. u Cečavi u borbi sa četnicima."
+    },
+    "reason": "Jajčanin Miće Marko: the next entry (Jakovljević Ostoja) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290015,
+    "action": "add",
+    "soldier_id": "0163000087",
+    "new_id": "0163009009",
+    "record": {
+      "last_name": "Jakovljević",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Ostoja",
+      "additional_info": "rođen 1919. g. Ravnice, Bosanski Novi, Srbin, zemljoradnik. U Kozaračku proletersku četu stupio 9. 2. 1942. g., poginuo aprila mjeseca 1942. g. u Cečavi u borbi sa četnicima.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 38,
+      "pdf_x": 131.4,
+      "pdf_y": 391.9
+    },
+    "reason": "Jakovljević Ostoja: glued into the entry of Jajčanin Miće Marko, the heading \"JAKOVLJEVlC OSTOJA\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290016,
+    "action": "edit",
+    "soldier_id": "0163000152",
+    "fields": {
+      "additional_info": "rođen 1920. g. u Mileševcima, Laktaši, Srbin, zemljoradnik. U NOB-u od 1941. g. U Drvarsku proletersku četu stupio marta meseca 1942. g. borac, poginuo septembra meseca 1942. g. u Slavoniji."
+    },
+    "reason": "Marić Ostoje Savo: the next entry (Majstorović Milutin) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290017,
+    "action": "add",
+    "soldier_id": "0163000152",
+    "new_id": "0163009010",
+    "record": {
+      "last_name": "Majstorović",
+      "middle_name": "",
+      "fathers_name": "",
+      "first_name": "Milutin",
+      "additional_info": "rođen 1918. g. Gornja Jurkovica, Gradiška, Srbin, zemljoradnik, u NOB-u od 1941. U Kozaračku proletersku četu stupio je 9. 2. 1942. g. Nosilac partizanske Spomenice 1941. g.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 60,
+      "pdf_x": 272.6,
+      "pdf_y": 577.7
+    },
+    "reason": "Majstorović Milutin: glued into the entry of Marić Ostoje Savo, the heading \"MAJSTOROVIĆ, MILUTIN\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290018,
+    "action": "edit",
+    "soldier_id": "0163000193",
+    "fields": {
+      "additional_info": "rođen 1920. g. Ivanjska, Banja Luka, Srbin, đak, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g. Nosilac partizanske Spomenice 1941. g."
+    },
+    "reason": "Popović Milorad: the next entry (Pašić Ilije Savomir) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290019,
+    "action": "add",
+    "soldier_id": "0163000193",
+    "new_id": "0163009011",
+    "record": {
+      "last_name": "Pašić",
+      "middle_name": "Ilije",
+      "fathers_name": "Ilija",
+      "first_name": "Savomir",
+      "additional_info": "rođen 1915. g. Ravnice, Bosanski Novi, Srbin, radnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g., Kandidat za KPJ. Komandir čete u brigadi, Ratni vojni invalid V grupe. Nosilac partizanske Spomenice 1941. g.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 69,
+      "pdf_x": 306.0,
+      "pdf_y": 560.5
+    },
+    "reason": "Pašić Ilije Savomir: glued into the entry of Popović Milorad, the heading \"PASlC (Ilije) SAVOMIR\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290020,
+    "action": "edit",
+    "soldier_id": "0163000203",
+    "fields": {
+      "additional_info": "rođen 1918. g. Smoljana, Petrovac, Srbin, šumarski radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Poginuo 1943. g. u istočnoj Bosni, kao zamjenik komandira čete u IV krajiškoj brigadi."
+    },
+    "reason": "Raković Stevana Dušan: the next entry (Raković Đure Tomo) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290021,
+    "action": "add",
+    "soldier_id": "0163000203",
+    "new_id": "0163009012",
+    "record": {
+      "last_name": "Raković",
+      "middle_name": "Đure",
+      "fathers_name": "Đuro",
+      "first_name": "Tomo",
+      "additional_info": "rođen 1918. g. Otiš, Palanka, Sanski Most, Srbin, šumarski radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. Kandidat za člana KPJ. Komandant bataljona u VI krajiškoj brigadi— kapetan. Ratni vojni invalid VI grupe. Nosilac partizanske Spomenice 1941. g. Pukovnik u penziji.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 71,
+      "pdf_x": 300.1,
+      "pdf_y": 539.0
+    },
+    "reason": "Raković Đure Tomo: glued into the entry of Raković Stevana Dušan, the heading \"RAKOVIC, (Đure) TOMO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290022,
+    "action": "edit",
+    "soldier_id": "0163000230",
+    "fields": {
+      "additional_info": "rođen 1920. g. Prijedor, Srbin, student, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g. Postavljen za komesara Buletićke čete. Ubijen aprila 1942. g. (zaklan) od vojnika svoje čete kada je izvršen puč u toj četi. Bio je član KPJ."
+    },
+    "reason": "Stefanović Petra Radmilo: the next entry (Sopić Obrada Košta) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290023,
+    "action": "add",
+    "soldier_id": "0163000230",
+    "new_id": "0163009013",
+    "record": {
+      "last_name": "Sopić",
+      "middle_name": "Obrada",
+      "fathers_name": "Obrad",
+      "first_name": "Košta",
+      "additional_info": "rođen 1921. g. Trninića Breg, Drvar, Srbin, radnik, u NOB-u od 1941. g. U Drvarsku proletersku četu stupio 28. 2. 1942. g. Član KPJ. Poginuo juna 1942. g. kod Sipraga u borbi sa četnicima.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 82,
+      "pdf_x": 135.8,
+      "pdf_y": 579.4
+    },
+    "reason": "Sopić Obrada Košta: glued into the entry of Stefanović Petra Radmilo, the heading \"SOPIC, (Obrada) KOŠTA\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290024,
+    "action": "edit",
+    "soldier_id": "0163000237",
+    "fields": {
+      "additional_info": "rođen 1917. g. Sipovljani, Drvar, Srbin, radnik, u NOB-u od 1941. g. U Drvarsku proletersku četu stupio 28. 2. 1942. g. Desetar, član KPJ. Poginuo avgusta 1944. g. kod Kruševca kao komandant bataljona u X krajiškoj brigadi, ,u borbi sa četnicima"
+    },
+    "reason": "Tadić Jovana Branko: the next entry (Tadić Milana Marko) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290025,
+    "action": "add",
+    "soldier_id": "0163000237",
+    "new_id": "0163009014",
+    "record": {
+      "last_name": "Tadić",
+      "middle_name": "Milana",
+      "fathers_name": "Milan",
+      "first_name": "Marko",
+      "additional_info": "zvani Markica; rođen 1920. g. Prkosi, Bosanski Petrovac, Srbin, šumarski radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Obavještajni oficir u brigadi, poručnik. Nosilac partizanske Spomenice 1941. g. Potpukovnik. Umro 196 ... g.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 90,
+      "pdf_x": 133.8,
+      "pdf_y": 558.0
+    },
+    "reason": "Tadić Milana Marko: glued into the entry of Tadić Jovana Branko, the heading \"TADIĆ (Milana) MARKO MARKICA\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290026,
+    "action": "edit",
+    "soldier_id": "0163000257",
+    "fields": {
+      "additional_info": "rođen 1913. g. Kijevci, Bosanska Gradiška, Srbin, zemljoradnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio 9. 2. 1942. g."
+    },
+    "reason": "Vidacković Stevana Todor: the next entry (Vukojević Nikole Nikica) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290027,
+    "action": "add",
+    "soldier_id": "0163000257",
+    "new_id": "0163009015",
+    "record": {
+      "last_name": "Vukojević",
+      "middle_name": "Nikole",
+      "fathers_name": "Nikola",
+      "first_name": "Nikica",
+      "additional_info": "zvani Niko; rođen 1923. g. Slatina, Sanski Most, Srbin, radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Clan KPJ. Poginuo aprila 1945. g. na Sremskom frontu kao komesar bataljona u Prvoj proleterskoj brigadi.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 98,
+      "pdf_x": 134.7,
+      "pdf_y": 551.9
+    },
+    "reason": "Vukojević Nikole Nikica: glued into the entry of Vidacković Stevana Todor, the heading \"VUKOJEVlC (Nikole) NIKICA NIKO\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290028,
+    "action": "edit",
+    "soldier_id": "0163000259",
+    "fields": {
+      "additional_info": "rođen 1921. g. Banja Luka, Hrvat, đak, u NOB-u od 1941. g. U Drvarsku proletersku četu stupio marta mjeseca 1942. g. Clan SKOJ-a. Strijeljan juna mjeseca 1942. g. u Lišnji od strane četnika."
+    },
+    "reason": "Vitjuk Maksima Vlado: the next entry (Vukojević Bojice Milan) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290029,
+    "action": "add",
+    "soldier_id": "0163000259",
+    "new_id": "0163009016",
+    "record": {
+      "last_name": "Vukojević",
+      "middle_name": "Bojice",
+      "fathers_name": "Bojica",
+      "first_name": "Milan",
+      "additional_info": "rođen 19X5. g. Majkić Japra, Bosanska Krupa, Srbin, radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Desetar, kandidat za člana KPJ. Ubijen na Vrbasu juna 1942. g. od strane četnika pri pokušaju prijelaska preko Vrbasa. Ranije vođen da je pognuo na Cemernici (zaklali ga četnici).",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 98,
+      "pdf_x": 134.0,
+      "pdf_y": 263.7
+    },
+    "reason": "Vukojević Bojice Milan: glued into the entry of Vitjuk Maksima Vlado, the heading \"VUKOJEVlC (Bojice) MILAN\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290030,
+    "action": "edit",
+    "soldier_id": "0163000260",
+    "fields": {
+      "additional_info": "rođen 1921. g. Slovenac. U Grmečku proletersku četu stupio 25. marta 1942. g. Do sada vođen kao da se utopio u Savi 14. juna 1942. g. U stvari preplivao Savu, zarobljen od ustaša i ubijen u Gradiškoj."
+    },
+    "reason": "Volf Filip: the next entry (Vrančić Svetka Rade) was glued into its text, its heading missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 290031,
+    "action": "add",
+    "soldier_id": "0163000260",
+    "new_id": "0163009017",
+    "record": {
+      "last_name": "Vrančić",
+      "middle_name": "Svetka",
+      "fathers_name": "Svetko",
+      "first_name": "Rade",
+      "additional_info": "rođen 1923. g. Milosavci, Laktaši, Srbin, zemljoradnik, u NOB-u od 1941. g. U Kozaračku proletersku četu stupio u martu 1942. g. Poginuo na Zelengori juna 1943. g.",
+      "pdf_file": "proleterski-bataljon-bk.pdf",
+      "pdf_page": 102,
+      "pdf_x": 138.5,
+      "pdf_y": 590.4
+    },
+    "reason": "Vrančić Svetka Rade: glued into the entry of Volf Filip, the heading \"VRANClC (Svetka) RADE\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 280061,
+    "action": "add",
+    "soldier_id": "0047010531",
+    "new_id": "0047010533",
+    "record": {
+      "last_name": "Čanak",
+      "middle_name": "Đure",
+      "fathers_name": "Đuro",
+      "first_name": "Ilija",
+      "additional_info": "mlađi; borac, rođen 1920. godine, Ćore, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 1924. godine, poginuo u bici za ranjenike u dolini rijeke Neretve marta 1943. godine.",
+      "birth_year": "1920",
+      "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=218",
+      "source_page": 206
+    },
+    "reason": "Čanak Đure Ilija \"mlađi\" (the younger), born 1920, fell at the Neretva in March 1943, is not the Ilija born 1902 of Ćore who fell at Miljevina on 14 June 1943 (0047000548): merge 110350 taken off and his own record back under his id (the user's decision, 2026-10-28)"
+  },
+  {
+    "id": 290032,
+    "action": "edit",
+    "soldier_id": "0163009002",
+    "fields": {
+      "pdf_x_end": 266.8,
+      "pdf_y_end": 461.6
+    },
+    "reason": "Ališić Smaje Smajo: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290033,
+    "action": "edit",
+    "soldier_id": "0163009003",
+    "fields": {
+      "pdf_x_end": 434.4,
+      "pdf_y_end": 646.2
+    },
+    "reason": "Brkić Sime Čedo: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290034,
+    "action": "edit",
+    "soldier_id": "0163009004",
+    "fields": {
+      "pdf_x_end": 259.1,
+      "pdf_y_end": 640.7
+    },
+    "reason": "Fejzić Safet: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290035,
+    "action": "edit",
+    "soldier_id": "0163009006",
+    "fields": {
+      "pdf_x_end": 424.2,
+      "pdf_y_end": 649.0
+    },
+    "reason": "Dragaš Jove Đuro: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290036,
+    "action": "edit",
+    "soldier_id": "0163009007",
+    "fields": {
+      "pdf_x_end": 269.5,
+      "pdf_y_end": 646.2
+    },
+    "reason": "Grgić Mile Mirko: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290037,
+    "action": "edit",
+    "soldier_id": "0163009008",
+    "fields": {
+      "pdf_x_end": 262.3,
+      "pdf_y_end": 372.4
+    },
+    "reason": "Hodžić Adema Husein: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290038,
+    "action": "edit",
+    "soldier_id": "0163009009",
+    "fields": {
+      "pdf_x_end": 258.8,
+      "pdf_y_end": 451.8
+    },
+    "reason": "Jakovljević Ostoja: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290039,
+    "action": "edit",
+    "soldier_id": "0163009010",
+    "fields": {
+      "pdf_x_end": 399.8,
+      "pdf_y_end": 646.2
+    },
+    "reason": "Majstorović Milutin: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290040,
+    "action": "edit",
+    "soldier_id": "0163009011",
+    "fields": {
+      "pdf_x_end": 433.2,
+      "pdf_y_end": 646.5
+    },
+    "reason": "Pašić Ilije Savomir: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290041,
+    "action": "edit",
+    "soldier_id": "0163009012",
+    "fields": {
+      "pdf_x_end": 427.3,
+      "pdf_y_end": 642.1
+    },
+    "reason": "Raković Đure Tomo: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290042,
+    "action": "edit",
+    "soldier_id": "0163009013",
+    "fields": {
+      "pdf_x_end": 263.0,
+      "pdf_y_end": 646.2
+    },
+    "reason": "Sopić Obrada Košta: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290043,
+    "action": "edit",
+    "soldier_id": "0163009014",
+    "fields": {
+      "pdf_x_end": 262.4,
+      "pdf_y_end": 643.8
+    },
+    "reason": "Tadić Milana Marko: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290044,
+    "action": "edit",
+    "soldier_id": "0163009015",
+    "fields": {
+      "pdf_x_end": 262.7,
+      "pdf_y_end": 639.1
+    },
+    "reason": "Vukojević Nikole Nikica: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290045,
+    "action": "edit",
+    "soldier_id": "0163009016",
+    "fields": {
+      "pdf_x_end": 261.9,
+      "pdf_y_end": 367.2
+    },
+    "reason": "Vukojević Bojice Milan: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290046,
+    "action": "edit",
+    "soldier_id": "0163009017",
+    "fields": {
+      "pdf_x_end": 265.4,
+      "pdf_y_end": 650.3
+    },
+    "reason": "Vrančić Svetka Rade: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290047,
+    "action": "edit",
+    "soldier_id": "0163000002",
+    "fields": {
+      "pdf_x_end": 266.3,
+      "pdf_y_end": 375.0
+    },
+    "reason": "Alagić Paše Adil: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290048,
+    "action": "edit",
+    "soldier_id": "0163000028",
+    "fields": {
+      "pdf_x_end": 433.9,
+      "pdf_y_end": 465.4
+    },
+    "reason": "Bogdanović Stanka Simo: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290049,
+    "action": "edit",
+    "soldier_id": "0163000045",
+    "fields": {
+      "pdf_x_end": 257.9,
+      "pdf_y_end": 363.8
+    },
+    "reason": "Bušatlija Sabahudin: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290050,
+    "action": "edit",
+    "soldier_id": "0163000060",
+    "fields": {
+      "pdf_x_end": 425.2,
+      "pdf_y_end": 375.4
+    },
+    "reason": "Dosenović Jovan Mićo: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290051,
+    "action": "edit",
+    "soldier_id": "0163000068",
+    "fields": {
+      "pdf_x_end": 269.4,
+      "pdf_y_end": 460.2
+    },
+    "reason": "Gajić Đure Košta: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290052,
+    "action": "edit",
+    "soldier_id": "0163000087",
+    "fields": {
+      "pdf_x_end": 257.8,
+      "pdf_y_end": 362.5
+    },
+    "reason": "Jajčanin Miće Marko: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290053,
+    "action": "edit",
+    "soldier_id": "0163000152",
+    "fields": {
+      "pdf_x_end": 400.3,
+      "pdf_y_end": 568.6
+    },
+    "reason": "Marić Ostoje Savo: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290054,
+    "action": "edit",
+    "soldier_id": "0163000193",
+    "fields": {
+      "pdf_x_end": 433.2,
+      "pdf_y_end": 455.9
+    },
+    "reason": "Popović Milorad: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290055,
+    "action": "edit",
+    "soldier_id": "0163000203",
+    "fields": {
+      "pdf_x_end": 428.0,
+      "pdf_y_end": 469.0
+    },
+    "reason": "Raković Stevana Dušan: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290056,
+    "action": "edit",
+    "soldier_id": "0163000230",
+    "fields": {
+      "pdf_x_end": 263.7,
+      "pdf_y_end": 475.8
+    },
+    "reason": "Stefanović Petra Radmilo: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290057,
+    "action": "edit",
+    "soldier_id": "0163000237",
+    "fields": {
+      "pdf_x_end": 261.8,
+      "pdf_y_end": 368.5
+    },
+    "reason": "Tadić Jovana Branko: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290058,
+    "action": "edit",
+    "soldier_id": "0163000257",
+    "fields": {
+      "pdf_x_end": 262.4,
+      "pdf_y_end": 449.5
+    },
+    "reason": "Vidacković Stevana Todor: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290059,
+    "action": "edit",
+    "soldier_id": "0163000260",
+    "fields": {
+      "pdf_x_end": 264.5,
+      "pdf_y_end": 467.9
+    },
+    "reason": "Volf Filip: the box cut at the next entry's heading, the man glued into its text split out (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
+  },
+  {
+    "id": 290060,
+    "action": "edit",
+    "soldier_id": "0163009005",
+    "fields": {
+      "pdf_x_end": 425.0,
+      "pdf_y_end": 477.0
+    },
+    "reason": "Dragić Ilije Ljubiša: its box on the page, from the heading to the entry's last line (this book's boxes are its parser's, entry_boxes.INLINE_ENTRIES), 2026-10-28"
   },
   {
     "id": 285606,

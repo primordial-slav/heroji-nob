@@ -677,6 +677,17 @@ export const WARTIME_PORTRAITS: string[] = [
   '0163000070',
   '0163000141',
   '0163000247',
+  // 2026-10-28: the same book's men split out of the entry above them, and photos never cut, fallen
+  '0163009003',
+  '0163009008',
+  '0163009013',
+  '0163009015',
+  '0163009016',
+  '0163009017',
+  '0163000237',
+  '0163000058',
+  '0163000050',
+  '0163000218',
   // family photos (data/family.ts)
   '0002000242',
 ]

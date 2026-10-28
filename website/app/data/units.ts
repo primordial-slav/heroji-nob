@@ -486,7 +486,7 @@ export const units: Unit[] = [
     nameEn: '16th Banija Brigade',
     description: 'Formirana 26. decembra 1942. u Klasniću. Borci brigade u bici na Sutjesci, maja i juna 1943, i borci i starešine poginuli do kraja juna 1943.',
     image: '/images/16-banijska-brigada.jpg',
-    soldierCount: 937,
+    soldierCount: 938,
     dataFile: '/16-banijska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-16-banijska.pdf']
   },
@@ -1436,7 +1436,7 @@ export const units: Unit[] = [
     nameEn: 'Proletarian Battalion of the Bosnian Krajina',
     description: 'Formiran 25. marta 1942. u Čelincu, od Kozaračke i Grmečke proleterske čete i Drvarskog proleterskog voda. Biografije boraca, uz fotografiju svakog.',
     image: '/images/proleterski-bataljon-bk.jpg',
-    soldierCount: 296,
+    soldierCount: 312,
     dataFile: '/proleterski-bataljon-bk-soldiers.json',
     pdfFiles: ['/pdfs/proleterski-bataljon-bk.pdf']
   },
