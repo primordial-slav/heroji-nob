@@ -1707,6 +1707,29 @@ BK = [
     ('0163000247', 94, (281.4, 473.8, 402.6, 640.2), 'TRIKIĆ (Pere) MILAN'),
     ('0163000269', 100, (294.2, 486.8, 416.2, 648.3), 'VUKOVIĆ (Petra) BRANKO'),
     ('0163000045', 106, (285.3, 198.4, 402.4, 363.5), 'BUŠATLIJA SABAHUDIN BUDO'),
+    # 2026-10-28, a second look at every photo (a tall strip split at its white rows): the men whose entries the parser had glued
+    # into the one before (split out that day, 0163009002-0163009017), whose photos had gone to that man (the middle entry, where
+    # the book prints none), Tadić Branko's own photo for his namesake's, and seven entries whose photo was never cut
+    ('0163009003', 15, (164.8, 478.4, 286.2, 644.2), 'BRKIĆ (Sime) ČEDO, glued into the entry before it until 2026-10-28'),
+    ('0163009004', 106, (289.6, 503.0, 404.3, 637.1), 'FEJZIĆ SAFET, glued into the entry before it until 2026-10-28'),
+    ('0163009006', 27, (157.6, 478.0, 274.4, 644.5), 'DRAGAŠ (Jove) ĐURO, glued into the entry before it until 2026-10-28'),
+    ('0163009007', 32, (293.0, 477.0, 413.2, 644.7), 'GRGIĆ (Mile) MIRKO, glued into the entry before it until 2026-10-28'),
+    ('0163009008', 34, (286.1, 201.5, 406.3, 371.4), 'HODŽIĆ (Adema) HUSEIN HUSO, glued into the entry before it until 2026-10-28'),
+    ('0163009011', 69, (165.4, 482.0, 282.0, 646.7), 'PAŠIĆ (Ilije) SAVOMIR, glued into the entry before it until 2026-10-28'),
+    ('0163009012', 71, (158.3, 477.4, 281.2, 639.9), 'RAKOVIĆ (Đure) TOMO, glued into the entry before it until 2026-10-28'),
+    ('0163009013', 82, (285.8, 478.7, 407.3, 645.9), 'SOPIĆ (Obrada) KOŠTA, glued into the entry before it until 2026-10-28'),
+    ('0163009014', 90, (278.8, 475.8, 405.3, 641.1), 'TADIĆ (Milana) MARKO MARKICA, glued into the entry before it until 2026-10-28'),
+    ('0163009015', 98, (288.3, 473.7, 403.5, 634.1), 'VUKOJEVIĆ (Nikole) NIKICA NIKO, glued into the entry before it until 2026-10-28'),
+    ('0163009016', 98, (288.3, 197.8, 403.5, 361.2), 'VUKOJEVIĆ (Bojice) MILAN, glued into the entry before it until 2026-10-28'),
+    ('0163009017', 102, (285.8, 481.1, 405.8, 647.6), 'VRANČIĆ (Svetka) RADE, glued into the entry before it until 2026-10-28'),
+    ('0163000237', 90, (279.8, 200.7, 405.0, 368.0), 'TADIĆ (Jovana) BRANKO'),
+    ('0163000058', 26, (285.7, 207.6, 397.6, 364.3), 'DIZDAR (Karanfila) PAŠO'),
+    ('0163000262', 103, (166.3, 201.0, 280.0, 361.4), 'VRANIĆ (Ante) MIRKO'),
+    ('0163000050', 23, (163.4, 479.7, 288.2, 640.2), 'DAMJANOVIĆ (Pere) BRANISLAV'),
+    ('0163000060', 27, (157.6, 206.5, 274.4, 374.2), 'DOSENOVIĆ (Jovan) MIĆO'),
+    ('0163000218', 80, (280.5, 478.2, 407.7, 644.9), 'SIMIĆ (Petra) ILIJA'),
+    ('0163000268', 99, (342.5, 478.7, 454.8, 637.2), 'VUKOBRAT (Obrada) VESELKO'),
+    ('0163000276', 105, (163.6, 473.3, 282.7, 641.0), 'ZRNIĆ (Ignjatija) SLAVKO'),
 ]
 BK_CREDIT = 'Proleterski bataljon Bosanske krajine (Beograd, 1982)'
 

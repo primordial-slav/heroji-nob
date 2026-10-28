@@ -1436,7 +1436,7 @@ export const units: Unit[] = [
     nameEn: 'Proletarian Battalion of the Bosnian Krajina',
     description: 'Formiran 25. marta 1942. u Čelincu, od Kozaračke i Grmečke proleterske čete i Drvarskog proleterskog voda. Biografije boraca, uz fotografiju svakog.',
     image: '/images/proleterski-bataljon-bk.jpg',
-    soldierCount: 296,
+    soldierCount: 312,
     dataFile: '/proleterski-bataljon-bk-soldiers.json',
     pdfFiles: ['/pdfs/proleterski-bataljon-bk.pdf']
   },
