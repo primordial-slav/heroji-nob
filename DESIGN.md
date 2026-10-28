@@ -159,6 +159,7 @@ One centred column (max 72rem) with a 24px side gutter (16px on phones). Content
 - **Results:** one row per person, 1px rule between rows: name, a bio line (up to 2 lines), unit name in muted small text. Pagination below.
 - **Unit page:** full-width photograph (about 11–21rem tall), then back link, unit name and description, then the unit search and its results.
 - **Record popup:** 52rem wide for every record, with a life line or without; unit photo strip, name, unit, three fact lines, the life line beside the page on a computer, the entry and the scanned page (under "Reference"), then Saborci and Zemljaci folded at the end.
+- **Footer:** on every page, quiet and small under a 1px rule: the site's name on the left (no description: the band and the page say what the site is), "Kontakt" with the site's address (the forms' `NEXT_PUBLIC_REPORT_EMAIL`) and a line saying a record's corrections can be sent from the record itself on the right. It names no source or library: those are on Izvori alone, which the menu links. One column on phones; hidden when the memorial card is printed. No navigation, logos or counts.
 - **Spacing:** a 4px-based scale (4, 8, 12, 16, 24, 32, 40, 56px); more space above a group than inside it.
 - **Breakpoint:** 640px. Below it the nav drops to its own row, cards stack, the popup fills the screen.
 
