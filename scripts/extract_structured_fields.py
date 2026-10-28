@@ -296,6 +296,46 @@ _AGENT = (r'(?:Nijemci|Nije\.mci|Nemci|Njemci|Nijemac|Nemac|četnici|ustaše|ust
           r'Čerkezi|Arnauti|zelenokadrovci|(?:njemačk|nemačk|bugarsk|talijansk|italijansk|mađarsk|ustašk|četničk|domobransk)\w*'
           r'\s+(?:vojnici|vojska|patrola|jedinice|stražari|žandari))')
 AGENT_RE = re.compile(rf'^\s*,?\s*{_AGENT}(?:\s+(?:DM|Draže\s+Mihailovića))?(?:\s+i\s+{_AGENT})?\b')
+# A day of the war printed right before the death verb, nothing between but a comma, a full stop or "godine": "1. 4.
+# 1943. nestao sa položaja", "4. 4. 1945, Umro u Glavnoj voj. bolnici", "27. X. 1944 umrla"; read only where no date
+# follows the verb (2026-10-28, from the 05 session's list). Never one that belongs to another event in its stretch
+# of text, back to the comma, semicolon or date before it ("ranjen 6. 3. 1944, umro", "uhvaćen 27. 12. 1941, streljan",
+# "u NOB od 9. 9. 1943. Poginuo", "rođen 4. 4. 1925, poginuo"), the end of a range ("2.07—12.10.1944. Umro"), or a
+# death after the war ("20.10.1944, umro posle rata")
+PRE_DATE_RE = re.compile(rf'(?<![\d.—–-])(\d{{1,2}}\.\s?(?:\d{{1,2}}|[IVX]{{1,4}})\.?\s?194[1-5]|\d{{1,2}}\.?\s?(?:{MONTHS})\s194[1-5])'
+                         r'\.?\s*,?\s*(?:god(?:ine|\.)\s*)?$')
+# another event the date may belong to, in its stretch back to the comma, semicolon or date before it
+OTHER_EVENT_RE = re.compile(r'\b(?:(?:ranjen|ranjav|uhvać|uhvat|uhapš|uhaps|osuđ|osudi|zarobl|zarobi|internir|odveden|odvel|'
+                            r'deportov|demobil|upućen|prebačen|rođen|roden|stupi|doša|došl|preša|prešl|ujet|aretir|zaprt|'
+                            r'obole|razbole)\w*|rođ\.|rod\.|od|do|'
+                            r'u\s+NO[BV]\w*)(?![\w])', re.I)
+# a wound, an arrest or a capture anywhere in the sentence: "Ranjen kod Suvog Dola, kod Blaca, 16. juna 1944", unless
+# the date starts a clause of its own ("Interniran novembra 1943. ... i 19. januara 1944. streljan", "prenesen u
+# bolnicu u Valjevu, gde je 25. novembra 1944. podlegao ranama")
+WOUND_OR_ARREST_RE = re.compile(r'\b(?:ranjen|ranjav|uhvać|uhvat|uhapš|uhaps|zarobl|zarobi|internir|osuđ|osudi|odveden|odvel|'
+                                r'ujet|aretir|zaprt|obole|razbole)\w*',
+                                re.I)
+CLAUSE_OPENER_RE = re.compile(r'(?:\b(?:i|in|a|te|pa)|\b(?:gde|gdje|kada|kad|koji|koja)(?:\s+je)?|\bje\s+bil[ao]?)\s*$', re.I)
+
+
+def before_verb_date(before: str, after: str) -> str | None:
+    """before: the text up to the death verb; after: the text after it"""
+    m = PRE_DATE_RE.search(before)
+    if not m or re.match(r'\s*\(?(?:posle|poslije|nakon|po)\s+(?:rata|oslobođenja|osvoboditvi|vojni)', after, re.I):
+        return None
+    lead = before[:m.start()]
+    if re.search(r'\bizmeđu\b', lead[-45:]):
+        return None                                     # "između 11. XII 1944. i 8. I 1945. umro": a span, not a day
+    if CLAUSE_OPENER_RE.search(lead):
+        return m.group(1).strip()                       # "ujet in 17. decembra 1944 ustreljen": a clause of its own
+    dates = max((d.end() for d in DATE_RE.finditer(lead)), default=-1)
+    cut = max(lead.rfind(','), lead.rfind(';'), dates)
+    if OTHER_EVENT_RE.search(lead[cut + 1:]):
+        return None
+    sentence = max(lead.rfind(';') + 1, max((s.end() for s in re.finditer(rf'\.\s+(?=[{U}])', lead)), default=0))
+    if WOUND_OR_ARREST_RE.search(lead[sentence:]):
+        return None
+    return m.group(1).strip()
 # the enemy a battle was fought against, beside its place: "u borbi protiv Nijemaca i ustaša kod Garevca", "u borbi s
 # Nijemcima na Mikuljači", "protiv albanskih balista"
 _ENEMY = (r'(?:Nijem|Njem|Nem|četni|ustaš|domobran|Talijan|Italijan|Bugar|Mađar|neprijatelj|okupator|balist|SS|esesov|Čerkez|'
@@ -915,6 +955,7 @@ class Extractor:
         out = {}
         m = DEATH_RE.search(text)
         active = ACTIVE_DEATH_RE.search(text)
+        verb_at = None
         mesto = re.search(r'mesto smrti\s*:\s*([^,;.]+(?:\s\([^)]*\))?)', text, re.I)
         if active and (not m or active.start() < m.start()):
             verb = next(v for v in active.group('v1', 'v2', 'v3') if v).lower()
@@ -930,6 +971,7 @@ class Extractor:
             kw = m.group(1).lower()
             out['death_type'] = DEATH_KW[kw]
             rest = text[m.end():]
+            verb_at = m
         # "poginuo i sahranjen u Čazmi", "umro i sahranjen u Ruševu": the place he was buried is where he died;
         # "podlegao ranama u ...": the wounds are no place
         # the scan's years ("19'45", "19- 1. 1945"); "Poginula je na ...", "Poginuo (nestao) 3. januara 1945"
@@ -970,6 +1012,10 @@ class Extractor:
                 date = re.search(YEAR, date).group(0)                     # "Senja 2.9. IV 1945": the day is garbled, the year is not
             out['death_date'] = date
             clause = clause[:start] + ' ' + after
+        elif verb_at is not None:
+            pre = before_verb_date(text[:verb_at.start()], text[verb_at.end():])
+            if pre:
+                out['death_date'] = pre
         # "poginuo kao ranjenik u Centralnoj bolnici na Sutjesci": the words go, not the place
         clause = re.sub(r'\bkao\s+(?:teški\s+|teško\s+)?(?:ranjenik|ranjenica|bolesnik|bolesnica|ranjen[a-z]*)\b', ' ', clause)
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
