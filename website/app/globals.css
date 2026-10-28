@@ -2972,15 +2972,30 @@ button.kin-row:not(:disabled):hover .kin-label {
   gap: var(--space-8);
 }
 
-/* The year sits on a red rule, right-aligned; the units of that year follow */
+/* The year sits on a thin red rule, right-aligned, an oak sprig in the rule's middle (public/ornament/hrast.svg,
+   from scripts/make_rule_sprig.py: a mask in the rule's red); the units of that year follow. The rule's middle is
+   where the 2 px border's was. */
 .unit-year-head {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   margin-bottom: var(--space-5);
-  padding-bottom: var(--space-2);
-  border-bottom: 2px solid var(--red);
+  padding-bottom: calc(var(--space-2) + 2px);
   font-weight: 400;
+}
+
+.unit-year-head::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 14px;
+  background-color: var(--red);
+  -webkit-mask: url('/ornament/hrast.svg') 50% 0 / 44px 14px no-repeat, linear-gradient(#000 0 0) 0 8.375px / 100% 1.25px no-repeat;
+  mask: url('/ornament/hrast.svg') 50% 0 / 44px 14px no-repeat, linear-gradient(#000 0 0) 0 8.375px / 100% 1.25px no-repeat;
+  pointer-events: none;
 }
 
 .unit-year-number {
