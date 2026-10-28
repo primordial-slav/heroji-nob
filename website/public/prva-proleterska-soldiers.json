@@ -33540,7 +33540,14 @@
         ]
       }
     ],
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "death": [
+        {
+          "date": "26.05.1944"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001000991",
@@ -39503,6 +39510,12 @@
     "variants": {
       "born": [
         "1922"
+      ],
+      "death": [
+        {
+          "date": "09.04.1943",
+          "place": "na Krčinu brdu jurišajući na Talijane"
+        }
       ]
     }
   },
@@ -57073,7 +57086,14 @@
         "pdf_y_end": 517.3
       }
     ],
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "variants": {
+      "death": [
+        {
+          "date": "05.07.1943"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001001689",
@@ -69939,6 +69959,11 @@
     "variants": {
       "born": [
         "1922"
+      ],
+      "death": [
+        {
+          "date": "15.11.1944"
+        }
       ]
     }
   },
@@ -110010,8 +110035,7 @@
     "variants": {
       "death": [
         {
-          "date": "14.06.1943",
-          "place": "Šekovići, Vlasenica"
+          "date": "14.06.1943"
         }
       ]
     }
@@ -227506,7 +227530,7 @@
       },
       {
         "soldier_id": "0007003197",
-        "name": "Martinac Jure Mijo",
+        "name": "Martinac Mijo",
         "additional_info": "Vrgorac. Hrvat, službenik. Predratni član KPJ. U NOV od 1942. Poginuo 18. 3. 1943. kao zamjenik kom. bataljona kod Kalinovika.",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 108,
@@ -325165,6 +325189,11 @@
     "variants": {
       "born": [
         "1922"
+      ],
+      "death": [
+        {
+          "date": "28.05.1944"
+        }
       ]
     }
   },
@@ -358779,7 +358808,8 @@
       }
     ],
     "death_type": "poginuo",
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "death_date": "16.05.1943"
   },
   {
     "soldier_id": "0001010739",
@@ -409124,6 +409154,11 @@
     "variants": {
       "born": [
         "1909"
+      ],
+      "death": [
+        {
+          "date": "01.08.1943"
+        }
       ]
     }
   },
@@ -427737,7 +427772,14 @@
         "pdf_y_end": 334.2,
         "unit_file": "3-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001012844",
@@ -434025,7 +434067,7 @@
       },
       {
         "soldier_id": "0007005445",
-        "name": "Veronika Ivana Božidar",
+        "name": "Veronika Božidar",
         "additional_info": "23. 12. 1923. Vodice, Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 182,
@@ -506266,7 +506308,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "bombaš",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_date": "20.11.1942"
   },
   {
     "last_name": "Baković",
@@ -507488,7 +507531,8 @@
     "death_type": "poginuo",
     "rank": "puškomitraljezac",
     "unit_detail": "4. kraljevački bataljon",
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "death_date": "13.06.1943"
   },
   {
     "last_name": "Gulin",
@@ -510542,7 +510586,8 @@
     "death_type": "poginuo",
     "rank": "borac",
     "unit_detail": "prištapske jedinice",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "death_date": "05.07.1943"
   },
   {
     "last_name": "Roglić",
@@ -510888,7 +510933,8 @@
     "birth_place": "Kula, Atlagića, Benkovac",
     "death_type": "poginuo",
     "occupation": "zemljoradnik",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_date": "12.01.1945"
   },
   {
     "last_name": "",
@@ -511463,7 +511509,8 @@
     "soldier_id": "0001400912",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_date": "14.06.1943"
   },
   {
     "soldier_id": "0001403306",

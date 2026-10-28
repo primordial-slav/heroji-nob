@@ -1712,7 +1712,11 @@ def main():
         filled, samples, touched = Counter(), [], 0
         for s in d:
             got = read_all(ex, s, code)
-            new = {k: v for k, v in got.items() if not s.get(k)}
+            # Ostali borci: a death the builder took from the census's or a column book's table (from_columns) yields
+            # to the man's own biography ("Strijeljana od četnika 1942." is streljan; "poginuo 9. juna 1943." the day)
+            cols = set(s.get('from_columns') or ())
+            new = {k: v for k, v in got.items() if not s.get(k) or (k in cols and v != s[k] and (
+                k != 'death_date' or len(re.findall(r'\d+|[a-zčćžšđ]{3,}', v)) >= len(re.findall(r'\d+|[a-zčćžšđ]{3,}', s[k]))))}
             if new:
                 touched += 1
                 filled.update(new.keys())
