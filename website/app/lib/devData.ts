@@ -8,6 +8,14 @@ import path from 'path'
 // process of its own, so the dev server never holds every unit's data. A change while it runs runs it once more.
 
 const QUIET_MS = 4000
+// package.json's "prepare-data", run with this server's own node, which needs no npm on the path (the main
+// checkout's server is started by autostart.vbs with node.exe alone)
+const BUNDLE = path.join('.next', 'cache', 'prepare-data.cjs')
+const STEPS = [
+  [path.join('node_modules', 'esbuild', 'bin', 'esbuild'), 'scripts/prepare-data.ts', '--bundle', '--platform=node',
+    '--format=cjs', `--outfile=${BUNDLE}`, '--log-level=warning'],
+  ['--max-old-space-size=6144', BUNDLE],
+]
 
 export function watchData() {
   const shared = globalThis as unknown as { dataWatch?: boolean }
@@ -25,15 +33,20 @@ export function watchData() {
       return
     }
     running = true
-    const child = spawn('npm run --silent prepare-data', { cwd: root, shell: true, stdio: 'inherit' })
-    child.on('exit', (code) => {
+    const step = (k: number) => {
+      const child = spawn(process.execPath, STEPS[k], { cwd: root, stdio: 'inherit' })
+      child.on('error', (error) => done(error.message))
+      child.on('exit', (code) => (code ? done(`code ${code}`) : k + 1 < STEPS.length ? step(k + 1) : done()))
+    }
+    const done = (failed?: string) => {
       running = false
-      if (code) console.error(`prepare-data stopped with code ${code}`)
+      if (failed) console.error(`prepare-data stopped: ${failed}`)
       if (again) {
         again = false
         run()
       }
-    })
+    }
+    step(0)
   }
   const soon = () => {
     clearTimeout(timer)
