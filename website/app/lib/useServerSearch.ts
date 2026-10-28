@@ -42,7 +42,7 @@ interface ServerSearchOptions {
   perPage: number
   /** A unit's id: only its soldiers are searched, and with no words typed, all of them are listed */
   unit?: string
-  /** False: nothing is asked for (the page searches its own lists instead) */
+  /** False: nothing is asked for (the page shows what it has already) */
   enabled?: boolean
 }
 
@@ -51,7 +51,7 @@ interface ServerSearch {
   result: SearchResultPage | null
   /** The results shown are not yet those of what is typed now */
   pending: boolean
-  /** The server did not answer, twice */
+  /** The server did not answer the search typed, twice */
   failed: boolean
 }
 
@@ -67,7 +67,7 @@ export function useServerSearch({ query, filters, page, perPage, unit, enabled =
   // Nothing is asked for while the search is still being typed
   const asked = settled === search ? wanted : null
   const [found, setFound] = useState<{ key: string; result: SearchResultPage } | null>(null)
-  const [failed, setFailed] = useState(false)
+  const [failed, setFailed] = useState<string | null>(null)
 
   useEffect(() => {
     if (!enabled || asked === null) return
@@ -77,7 +77,7 @@ export function useServerSearch({ query, filters, page, perPage, unit, enabled =
       .catch(() => {
         if (controller.signal.aborted) return
         if (retry) setTimeout(() => !controller.signal.aborted && ask(false), RETRY_MS)
-        else setFailed(true)
+        else setFailed(asked)
       })
     ask(true)
     return () => controller.abort()
@@ -86,6 +86,6 @@ export function useServerSearch({ query, filters, page, perPage, unit, enabled =
   return {
     result: wanted === null ? null : found?.result ?? null,
     pending: wanted !== null && found?.key !== wanted,
-    failed,
+    failed: wanted !== null && failed === wanted,
   }
 }

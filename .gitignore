@@ -76,8 +76,13 @@ yarn-error.log*
 # Next.js
 .next/
 out/
-# The server search's data, built before each build (website/scripts/prepare-search.ts)
+# What website/scripts/prepare-data.ts writes from the data files, before each build and under next dev: the server
+# search's data, the files the pages load, what the pages read while they are built
 website/search-data/
+website/search-data-new/
+website/search-data-old/
+website/public/data/
+website/generated/
 *.next-env.d.ts
 
 # TypeScript's incremental build cache

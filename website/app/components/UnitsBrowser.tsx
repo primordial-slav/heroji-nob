@@ -7,8 +7,7 @@ import { UNIT_KINDS, UNIT_LANDS, unitKind, unitLands, type UnitKind, type UnitLa
 import UnitsByYear, { isNoUnit } from '@/app/components/UnitsByYear'
 import { SearchIcon } from '@/app/components/Icons'
 import { normalizeForSearch } from '@/app/lib/diacritics'
-import { unitName } from '@/app/i18n/units'
-import { useLang, useT } from '@/app/i18n/LangContext'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 
 const yearOf = (unit: Unit) => formation[unit.id]?.date.slice(0, 4)
 // The years the units were formed in, oldest first
@@ -31,6 +30,7 @@ const PARAMS: Record<keyof Choice, string> = { year: 'godina', kind: 'vrsta', la
 export default function UnitsBrowser() {
   const t = useT().unitsPage
   const lang = useLang()
+  const unitText = useUnitText()
   const [choice, setChoice] = useState<Choice>({ year: '', kind: '', land: '' })
   const [query, setQuery] = useState('')
 
@@ -60,7 +60,7 @@ export default function UnitsBrowser() {
   // every word of the query in the name as the page shows it or as the books give it, without diacritics
   const words = fold(query).split(/\s+/).filter(Boolean)
   const named = (unit: Unit) => {
-    const text = fold(`${unitName(unit, lang)} ${unit.name}`)
+    const text = fold(`${unitText.name(unit)} ${unit.name}`)
     return words.every((w) => text.includes(w))
   }
   // a unit passes the choice, leaving one of its parts out (for that row's counts)

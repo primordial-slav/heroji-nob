@@ -1,18 +1,20 @@
-import type { ReactNode } from 'react'
+import type { ComponentType, ReactNode } from 'react'
 import HomeLink from './HomeLink'
 import Navigation from './Navigation'
 import ThemeToggle from './ThemeToggle'
 import LanguageMenu from './LanguageMenu'
 import SiteFooter from './SiteFooter'
 import { ThemeProvider } from '../lib/ThemeContext'
-import { LangProvider } from '../i18n/LangContext'
 import type { Lang } from '../i18n/config'
 import { messagesFor } from '../i18n'
 
-// The header, the page under it and the footer, in the page's language
-export default function SiteFrame({ lang, children }: { lang: Lang; children: ReactNode }) {
+export type LanguageProvider = ComponentType<{ lang: Lang; children: ReactNode }>
+
+// The header, the page under it and the footer, in the page's language. Language is the provider of the page's text
+// its root layout gives (i18n/LangContext.tsx), so that a page loads only the languages it may be in.
+export default function SiteFrame({ lang, Language, children }: { lang: Lang; Language: LanguageProvider; children: ReactNode }) {
   return (
-    <LangProvider lang={lang}>
+    <Language lang={lang}>
       <ThemeProvider>
         <header className="masthead">
           <div className="container masthead-bar">
@@ -27,6 +29,6 @@ export default function SiteFrame({ lang, children }: { lang: Lang; children: Re
         </main>
         <SiteFooter lang={lang} />
       </ThemeProvider>
-    </LangProvider>
+    </Language>
   )
 }

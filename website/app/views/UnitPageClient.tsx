@@ -1,22 +1,20 @@
 'use client'
 
-import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { Unit } from '@/app/data/units'
-import { useFuseSearch } from '@/app/lib/useFuseSearch'
 import { useServerSearch } from '@/app/lib/useServerSearch'
-import { PAGE_SIZES, fullRecord, loadKinList, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
+import { PAGE_SIZES, fullRecord, loadKin } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
-import SoldierModal from '@/app/components/SoldierModal'
+import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
 import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
-import { RECORD_PARAM, findRecord } from '@/app/lib/records'
+import { RECORD_PARAM } from '@/app/lib/records'
 import { photoPosition } from '@/app/data/photoFocus'
 import { unitImageProps } from '@/app/lib/unitImage'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
-import { NO_FILTERS, applyFilters, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
-import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
-import { unitDescription, unitName } from '@/app/i18n/units'
+import { NO_FILTERS, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
+import { useLang, useLocalePath, useT, useUnitText } from '@/app/i18n/LangContext'
 import RichText from '@/app/i18n/RichText'
 
 interface UnitPageClientProps {
@@ -32,7 +30,9 @@ const NO_SOLDIERS: Soldier[] = []
 const HERO_SIZES = '104vw'
 
 export default function UnitPageClient({ unit, firstPage, total }: UnitPageClientProps) {
+  usePreloadSoldierModal()
   const lang = useLang()
+  const unitText = useUnitText()
   const t = useT()
   const to = useLocalePath()
   const [searchTerm, setSearchTerm] = useState('')
@@ -55,42 +55,8 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   // The whole list's first page is in the page itself
   const onFirstPage = !searchTerm.trim() && !filtersSet && page === 1 && perPage === PAGE_SIZES[0]
 
-  // The server searches the unit's soldiers and sends a page of them (useServerSearch); if it doesn't answer, the
-  // page loads the unit's list and searches it itself, as it did before
-  const [local, setLocal] = useState(false)
-  const server = useServerSearch({ query: searchTerm, filters, page, perPage, unit: unit.id, enabled: !local && !onFirstPage })
-  useEffect(() => { if (server.failed) setLocal(true) }, [server.failed])
-
-  // The unit's list in its short search form (lib/searchIndex.ts), loaded only to search here when the server doesn't
-  // answer; for a link to one record and for the dialog's previous and next and its comrades tree, the kin list does
-  // (loadKinList), loaded when one is asked for
-  const [list, setList] = useState<Soldier[] | null>(() => loadedUnitList(unit) ?? null)
-  const [kin, setKin] = useState<Soldier[] | null>(null)
-  const known = local ? list : list ?? kin
-  const [loadFailed, setLoadFailed] = useState(false)
-  const [linked, setLinked] = useState(false)
-  useEffect(() => {
-    if (!local || list) return
-    let current = true
-    loadUnitList(unit)
-      .then((loaded) => current && setList(loaded))
-      .catch(() => current && setLoadFailed(true))
-    return () => { current = false }
-  }, [unit, local, list])
-  const wantKin = linked || selectedSoldier !== null
-  useEffect(() => {
-    if (local || known || !wantKin) return
-    let current = true
-    loadKinList(unit).then((loaded) => current && setKin(loaded)).catch(() => {})
-    return () => { current = false }
-  }, [unit, local, known, wantKin])
-
-  const localSearch = useFuseSearch(local ? list ?? NO_SOLDIERS : NO_SOLDIERS, { showAllOnEmpty: true, wholeWords: filters.wholeWords, term: searchTerm })
-  const shownFilters = useDeferredValue(filters)
-  const localListed = useMemo(
-    () => (local ? applyFilters(localSearch.results, shownFilters, false) : NO_SOLDIERS),
-    [local, localSearch.results, shownFilters]
-  )
+  // The server searches the unit's soldiers and sends a page of them (useServerSearch)
+  const server = useServerSearch({ query: searchTerm, filters, page, perPage, unit: unit.id, enabled: !onFirstPage })
 
   // The search and its filters are in the address (next to an open record's ?borac=), so a search can be sent as a link
   const [addressRead, setAddressRead] = useState(false)
@@ -100,7 +66,6 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
     if (fromAddress.query) setSearchTerm(fromAddress.query)
     setFilters({ ...fromAddress.filters, unit: '' })
     if (filterCount(fromAddress.filters, false) > 0) setShowFilters(true)
-    if (params.get(RECORD_PARAM)) setLinked(true)
     setAddressRead(true)
   }, [])
   useEffect(() => {
@@ -110,24 +75,33 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
     if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url)
   }, [addressRead, searchTerm, filters])
 
-  // A link to one record (?borac=<id>) opens it once the list has loaded, unless the visitor has opened one by then
+  // A link to one record (?borac=<id>) opens it once the server has found it, unless the visitor has opened one by then
   const linkHandled = useRef(false)
 
   // The list has only what search shows; the dialog gets the soldier's full record
   const openSoldier = async (soldier: Soldier) => {
     linkHandled.current = true
     opening.current = soldier
-    const record = await fullRecord(soldier).catch(() => soldier)
+    const record = await fullRecord({ ...soldier, unit: soldier.unit ?? unit.name }).catch(() => soldier)
     if (opening.current === soldier) setSelectedSoldier(record)
   }
 
   useEffect(() => {
-    if (linkHandled.current || !known?.length) return
-    linkHandled.current = true
     const id = new URLSearchParams(window.location.search).get(RECORD_PARAM)
-    const record = id ? findRecord(known, id) : undefined
-    if (record) openSoldier(record)
-  }, [known])
+    if (!id) {
+      linkHandled.current = true
+      return
+    }
+    loadKin(unit, id)
+      .then((kin) => {
+        if (linkHandled.current) return
+        linkHandled.current = true
+        if (kin) openSoldier(kin.self)
+      })
+      .catch(() => { linkHandled.current = true })
+    // the address is read once, when the page opens
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [unit])
 
   // The address bar follows the open record, so copying it gives that record's link
   useEffect(() => {
@@ -138,28 +112,24 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
     window.history.replaceState(window.history.state, '', url)
   }, [selectedSoldier])
 
-  // What the list says, whoever searched
+  // What the list says
   const found = server.result
   const searching = searchTerm.trim().length > 0
-  const count = local ? localListed.length : found?.count ?? 0
-  const unfiltered = local ? localSearch.results.length : found?.unfiltered ?? 0
-  const loading = local && !list && !loadFailed
-  // The page's own first page shows until the list or the server's first answer is in, unless the address asks for
-  // a search
-  const early = onFirstPage && !(local && list)
-  const waiting = local
-    ? loading || (!loadFailed && localSearch.pending && localListed.length === 0)
-    : server.pending && count === 0
+  const count = found?.count ?? 0
+  const unfiltered = found?.unfiltered ?? 0
+  // The page's own first page shows unless the address asks for a search
+  const early = onFirstPage
+  const waiting = server.pending && count === 0 && !server.failed
 
   return (
     <div>
       <section className="container unit-hero">
         <Link href={to('/')} className="back-link"><ArrowLeftIcon size={16} /> {t.unit.allUnits}</Link>
         <div className="unit-hero-body">
-          <img {...unitImageProps(unit.image, HERO_SIZES)} alt={unitName(unit, lang)} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
+          <img {...unitImageProps(unit.image, HERO_SIZES)} alt={unitText.name(unit)} className="unit-hero-photo" style={{ objectPosition: photoPosition(unit.id) }} />
           <div>
-            <h1>{unitName(unit, lang)}</h1>
-            <p className="unit-hero-desc">{unitDescription(unit, lang)}</p>
+            <h1>{unitText.name(unit)}</h1>
+            <p className="unit-hero-desc">{unitText.description(unit)}</p>
           </div>
         </div>
       </section>
@@ -193,21 +163,17 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
         <div id="results">
           {/* A search after an empty result shows the loading rows until its results are in */}
           {early ? (
-            local
-              ? <SoldierResults results={firstPage} total={total} onSelect={openSoldier} scrollTargetId="results" />
-              : (
-                <SoldierResults
-                  results={firstPage}
-                  paged={{ count: total, firstNear: -1, page: 1, perPage, onPage }}
-                  onSelect={openSoldier}
-                  scrollTargetId="results"
-                />
-              )
+            <SoldierResults
+              results={firstPage}
+              paged={{ count: total, firstNear: -1, page: 1, perPage, onPage }}
+              onSelect={openSoldier}
+              scrollTargetId="results"
+            />
           ) : waiting ? (
-            <ul className="loading-rows" aria-label={loading ? t.unit.loading : t.results.searching}>
+            <ul className="loading-rows" aria-label={t.results.searching}>
               {Array.from({ length: 8 }, (_, i) => <li key={i} />)}
             </ul>
-          ) : local && loadFailed ? (
+          ) : server.failed ? (
             <div className="empty">
               <h2>{t.unit.loadFailedTitle}</h2>
               <p>{t.unit.loadFailedText}</p>
@@ -231,14 +197,6 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
                 <RichText text={t.unit.noneText} render={(part) => <Link href={to('/')}>{part}</Link>} />
               </p>
             </div>
-          ) : local ? (
-            <SoldierResults
-              results={localListed}
-              near={localSearch.near}
-              onSelect={openSoldier}
-              scrollTargetId="results"
-              actions={(searching || filtersSet) && <ShareSearch />}
-            />
           ) : (
             <SoldierResults
               results={found?.soldiers ?? NO_SOLDIERS}
@@ -262,7 +220,6 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
           unitName={unit.name}
-          unitSoldiers={known ?? undefined}
           onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />

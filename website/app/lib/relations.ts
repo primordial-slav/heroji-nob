@@ -1,5 +1,6 @@
 import type { Soldier } from './types'
 import { parseDeathDay } from './deathDay'
+import { placesChunkPath, placesOfPath } from './dataFiles'
 
 // ── Sub-units ────────────────────────────────────────────────
 // unit_detail is printed "2. četa, 1. bataljon", "VI bataljon", "1. vod, 2. četa, 3. bataljon", "prištapske jedinice",
@@ -66,22 +67,6 @@ export function subunitPath(detail?: string): Level[] {
 
 const STAFF: Level = { key: 's:prištapske jedinice', label: 'prištapske jedinice', kind: 'staff' }
 const NO_BATTALION: Level = { key: 'x', label: 'bataljon nije naveden', kind: 'none' }
-
-// Sub-unit paths and days of death of a unit's list, worked out once per list
-const indexes = new WeakMap<Soldier[], { paths: Map<Soldier, Level[]>; days: Map<Soldier, string | null> }>()
-
-export function unitIndex(list: Soldier[]) {
-  let index = indexes.get(list)
-  if (!index) {
-    index = { paths: new Map(), days: new Map() }
-    for (const s of list) {
-      index.paths.set(s, subunitPath(s.unit_detail))
-      index.days.set(s, deathDay(s))
-    }
-    indexes.set(list, index)
-  }
-  return index
-}
 
 // ── Day of death ─────────────────────────────────────────────
 
@@ -155,15 +140,15 @@ interface PlaceShard {
 
 /** The place a soldier was born in, with everyone else born there, or null if the index doesn't place him */
 export async function placeOf(id: string): Promise<Place | null> {
-  const shard = await placeFile<PlaceShard>(`/places/of/${placeShard(id)}`)
+  const shard = await placeFile<PlaceShard>(placesOfPath(placeShard(id)))
   const at = shard.w[id]
   if (!at) return null
-  const [village, municipality, rows] = (await placeFile<PlaceRow[]>(`/places/chunk/${at[0]}`))[at[1]]
+  const [village, municipality, rows] = (await placeFile<PlaceRow[]>(placesChunkPath(at[0])))[at[1]]
   return { village, municipality, members: rows.map(([id, name, file, years]) => ({ id, name, file, years })) }
 }
 
 /** A soldier's set of embroidered frames, or null for the neutral set (a shard with no one of his is no file) */
 export async function vezSetOf(id: string): Promise<number | null> {
-  const shard = await placeFile<PlaceShard>(`/places/of/${placeShard(id)}`).catch(() => null)
+  const shard = await placeFile<PlaceShard>(placesOfPath(placeShard(id))).catch(() => null)
   return shard?.v[id] ?? null
 }

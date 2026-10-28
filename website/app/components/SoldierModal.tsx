@@ -4,8 +4,10 @@ import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, isFamily, isMuseum, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isFamily, isMuseum, isPoreklo, unitByName } from '@/app/lib/records'
+import { sourceTitle } from '@/app/lib/recordSources'
 import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
+import { loadKin, type Kin } from '@/app/lib/searchIndex'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
@@ -18,11 +20,10 @@ import RelationsTree, { type KinCounts, type KinPart, type KinRequest } from './
 import LifeLine from './LifeLine'
 import SoldierPortrait from './SoldierPortrait'
 import { portraitFor } from '@/app/data/portraits'
-import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
+import { useLang, useLocalePath, useT, useUnitText, type UnitNames } from '@/app/i18n/LangContext'
 import { LANG_NAMES, type Lang } from '@/app/i18n/config'
 import { quoteMarks } from '@/app/i18n/format'
-import { titlePart } from '@/app/i18n/sources'
-import { unitName as localUnitName } from '@/app/i18n/units'
+import { titlePart } from '@/app/i18n/sourceNames'
 import RichText from '@/app/i18n/RichText'
 import { unitImageProps } from '@/app/lib/unitImage'
 
@@ -41,9 +42,9 @@ function bookTitle(entry: SoldierSource, lang: Lang): string {
 }
 
 /** A unit's name (as the records give it, in Serbo-Croatian) in the page's language */
-function shownUnitName(name: string, lang: Lang): string {
+function shownUnitName(name: string, lang: Lang, unitText: UnitNames): string {
   const unit = unitByName(name)
-  return unit ? localUnitName(unit, lang) : quoteMarks(lang, name)
+  return unit ? unitText.name(unit) : quoteMarks(lang, name)
 }
 
 interface Fact extends RecordFact {
@@ -53,14 +54,14 @@ interface Fact extends RecordFact {
 interface SoldierModalProps {
   soldier: Soldier
   unitName?: string
-  // The soldier's unit list, for the comrades tree; a name there opens in this dialog through onOpen
-  unitSoldiers?: Soldier[]
+  // Opens another record in this dialog: the one before or after this one in the unit's list, a name in the trees
   onOpen?: (soldier: Soldier) => void
   onClose: () => void
 }
 
-export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, onClose }: SoldierModalProps) {
+export default function SoldierModal({ soldier, unitName, onOpen, onClose }: SoldierModalProps) {
   const lang = useLang()
+  const unitText = useUnitText()
   const t = useT()
   const to = useLocalePath()
   // The soldier's own entry, then the same soldier's entries in the unit's other books
@@ -106,7 +107,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
   const entryLabel = (e: SoldierSource) => (
     <>
       {/* the other unit's name, unless the book's title already starts with it */}
-      {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang)}: </>}
+      {e.unit_file && unitOf(e) && !sourceTitle(e).startsWith(unitOf(e)!.split(' „')[0]) && <>{shownUnitName(unitOf(e)!, lang, unitText)}: </>}
       {e.source_url && !e.pdf_file && !isPoreklo(e.source_url) && !isFamily(e.source_url)
         ? <a href={e.source_url} target="_blank" rel="noopener noreferrer">{bookTitle(e, lang)}</a>
         : bookTitle(e, lang)}
@@ -131,10 +132,17 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     // the counts are not cleared here: on a first opening the folds may have counted him before this runs
   }, [soldier.soldier_id])
 
-  // The entries before and after this one in the unit's list, which is in the order of the books
-  const at = unitSoldiers ? unitSoldiers.findIndex((s) => s.soldier_id === soldier.soldier_id) : -1
-  const previous = onOpen && at > 0 ? unitSoldiers![at - 1] : undefined
-  const next = onOpen && at >= 0 ? unitSoldiers![at + 1] : undefined
+  // The record's kin in its unit, which the server finds for it (loadKin): the entries before and after this one in
+  // the unit's list, which is in the order of the books, and the comrades tree's groups
+  const [kin, setKin] = useState<Kin | null>(null)
+  useEffect(() => {
+    if (!unitRecord) return
+    let live = true
+    loadKin(unitRecord, soldier.soldier_id).then((found) => live && setKin(found)).catch(() => {})
+    return () => { live = false }
+  }, [unitRecord, soldier.soldier_id])
+  const previous = onOpen ? kin?.previous : undefined
+  const next = onOpen ? kin?.next : undefined
   const stepRef = useRef({ previous, next, onOpen })
   stepRef.current = { previous, next, onOpen }
 
@@ -226,7 +234,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
           <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" framed />
           <div>
             <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
-            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => shownUnitName(u, lang)).join(' · ')}</p>}
+            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => shownUnitName(u, lang, unitText)).join(' · ')}</p>}
             {honours && <p className="modal-honours">{honours}</p>}
             {portrait && (
               <p className="modal-portrait-credit">
@@ -357,9 +365,9 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
         {unitRecord && (
           <div className="record-folds">
-            <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen}
+            <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} kin={kin} onOpen={onOpen}
               request={kinRequest} onCounts={onCounts} />
-            <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} unitSoldiers={unitSoldiers} onOpen={onOpen}
+            <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} kin={kin} onOpen={onOpen}
               request={kinRequest} onCounts={onCounts} />
           </div>
         )}

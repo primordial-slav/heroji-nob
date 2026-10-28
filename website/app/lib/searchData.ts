@@ -5,17 +5,18 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { normalizeForSearch } from './diacritics'
 import { createSoldierIndex, mergeHits, searchFields, searchSoldiers, type SearchHits, type SoldierIndex } from './soldierSearch'
-import { eachListedOnce, encodeRow } from './searchIndex'
+import { decodeRow, eachListedOnce, encodeKinRow, encodeRow, type IndexRow } from './searchIndex'
+import { deathDay, subunitPath } from './relations'
 import { FATES, birthYear, entryWords, narrows, placeNeedle, type SearchFilters } from './searchFilters'
 import type { Soldier } from './types'
 
 // Server only: the search that app/api/search/route.ts answers, over every unit's soldiers at once, so a page asks
-// for one page of results instead of loading every soldier (searchIndex.ts). The same search as in the browser
-// (soldierSearch.ts) and the same filters (searchFilters.ts), over the same rows (encodeRow).
+// for one page of results instead of loading every soldier. The search (soldierSearch.ts) and the filters
+// (searchFilters.ts) over the rows the lists show (encodeRow), and a record's kin in his unit (kinPage).
 //
-// scripts/prepare-search.ts builds it while the site is built and writes it to search-data/, which the route's
-// function carries (next.config.js) and reads once per instance; under `next dev` the route builds it from the
-// data files instead, again when one changes.
+// scripts/prepare-data.ts builds it from the data files and writes it to search-data/, before the site is built and
+// under `next dev` whenever a data file changes; the route's function carries it (next.config.js) and reads it once
+// per instance.
 
 export interface SearchData {
   index: SoldierIndex
@@ -320,4 +321,108 @@ function runSearch(data: SearchData, typed: string, filters: SearchFilters, unit
     listed = listed.filter(keep)
   }
   return { listed: Int32Array.from(listed), nearFrom, unfiltered }
+}
+
+// ── One record's kin ─────────────────────────────────────────
+// The record dialog's previous and next and its comrades tree, and a link to one record (?borac=), are answered
+// here for the one soldier asked for, so a page doesn't load the unit's whole list for them
+
+/** A soldier's row as a day's list gives it (PlacedRow): his unit's id, his place in its data file, the row */
+function placed(data: SearchData, i: number, row: string): string {
+  return `{"unit":${JSON.stringify(units[data.unitAt[i]].id)},"position":${data.position[i]},"row":${row}}`
+}
+
+const rowOf = (data: SearchData, i: number) => data.rows.toString('utf8', data.rowAt[i], data.rowAt[i + 1])
+
+// The kin list's row (encodeKinRow): without the entries' text
+function kinRow(data: SearchData, i: number): string {
+  const unit = units[data.unitAt[i]]
+  return JSON.stringify(encodeKinRow(decodeRow(JSON.parse(rowOf(data, i)) as IndexRow, unit.name)))
+}
+
+interface UnitKin {
+  /** Each soldier's sub-unit path, as its levels' keys ("b1", "c2"), by his place in the unit */
+  paths: string[][]
+  /** His day of death ("1943-06-13"), where the record gives one in the war */
+  days: (string | null)[]
+  /** His place in the unit by his id, or by an id one of his merged or linked entries had, so old links keep working */
+  byId: Map<string, number>
+}
+
+// The units last asked about
+const KEPT_UNITS = 12
+const unitKins = new WeakMap<SearchData, Map<number, UnitKin>>()
+
+function unitKin(data: SearchData, unit: number): UnitKin {
+  let kept = unitKins.get(data)
+  if (!kept) unitKins.set(data, (kept = new Map()))
+  const known = kept.get(unit)
+  if (known) {
+    kept.delete(unit)
+    kept.set(unit, known)
+    return known
+  }
+  const start = data.unitStart[unit]
+  const soldiers = Array.from({ length: data.unitStart[unit + 1] - start }, (_, k) =>
+    decodeRow(JSON.parse(rowOf(data, start + k)) as IndexRow, units[unit].name))
+  const byId = new Map<string, number>()
+  soldiers.forEach((s, k) => byId.set(s.soldier_id, k))
+  soldiers.forEach((s, k) => s.other_sources?.forEach((o) => o.soldier_id && !byId.has(o.soldier_id) && byId.set(o.soldier_id, k)))
+  const kin: UnitKin = {
+    paths: soldiers.map((s) => subunitPath(s.unit_detail).map((level) => level.key)),
+    days: soldiers.map((s) => deathDay(s)),
+    byId,
+  }
+  kept.set(unit, kin)
+  if (kept.size > KEPT_UNITS) kept.delete(kept.keys().next().value!)
+  return kin
+}
+
+/**
+ * A record's kin in his unit, as JSON, or null if the unit has no soldier of that id: the unit's id (`unit`), the
+ * record (`self`), the ones before and after it in the unit's list (`previous`, `next`, null at its ends), and the
+ * soldiers of each level of his sub-unit (`levels`) and those who fell the same day (`sameDay`), as places in `rows`.
+ * Each soldier is [his place in the unit's data file, his row (encodeKinRow)].
+ */
+export function kinPage(data: SearchData, unit: number, id: string): string | null {
+  const kin = unitKin(data, unit)
+  const k = kin.byId.get(id)
+  if (k === undefined) return null
+  const start = data.unitStart[unit]
+  const size = data.unitStart[unit + 1] - start
+  const row = (j: number) => `[${data.position[start + j]},${kinRow(data, start + j)}]`
+  const path = kin.paths[k]
+  const levels = path.map((_, depth) => {
+    const members: number[] = []
+    kin.paths.forEach((p, j) => {
+      if (p.length > depth && p.slice(0, depth + 1).every((key, d) => key === path[d])) members.push(j)
+    })
+    return members
+  })
+  const day = kin.days[k]
+  const sameDay: number[] = []
+  if (day) kin.days.forEach((d, j) => d === day && sameDay.push(j))
+  // each soldier's row once, however many groups he is in
+  const shown = new Map<number, number>()
+  const at = (j: number) => {
+    let n = shown.get(j)
+    if (n === undefined) shown.set(j, (n = shown.size))
+    return n
+  }
+  const levelsAt = levels.map((members) => members.map(at))
+  const sameDayAt = sameDay.length > 1 ? sameDay.map(at) : []
+  const rows = Array.from(shown.keys(), row)
+  return `{"unit":${JSON.stringify(units[unit].id)},"self":${row(k)},"previous":${k > 0 ? row(k - 1) : 'null'},"next":${k + 1 < size ? row(k + 1) : 'null'},` +
+    `"rows":[${rows.join(',')}],"levels":${JSON.stringify(levelsAt)},"sameDay":${JSON.stringify(sameDayAt)}}`
+}
+
+/** The rows of these soldiers of a unit (found as kinPage finds one), as JSON: `rows`, PlacedRow, in the order asked */
+export function rowsPage(data: SearchData, unit: number, ids: string[]): string {
+  const kin = unitKin(data, unit)
+  const start = data.unitStart[unit]
+  const rows = ids.flatMap((id) => {
+    const k = kin.byId.get(id)
+    return k === undefined ? [] : [placed(data, start + k, rowOf(data, start + k))]
+  })
+  return `{"rows":[${rows.join(',')}]}`
 }

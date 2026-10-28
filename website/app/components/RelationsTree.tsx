@@ -6,12 +6,12 @@ import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
+import type { Kin } from '@/app/lib/searchIndex'
 import {
-  dayParts, deathDay, lifeSpan, placeOf, subunitPath, unitIndex, type Level, type Place, type PlaceMember,
+  dayParts, deathDay, lifeSpan, placeOf, subunitPath, type Level, type Place, type PlaceMember,
 } from '@/app/lib/relations'
-import { useLang, useT } from '@/app/i18n/LangContext'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
-import { unitShortName } from '@/app/i18n/units'
 import { ChevronDownIcon } from './Icons'
 
 const SHOWN = 8
@@ -64,7 +64,8 @@ export interface KinRequest {
 interface Props {
   soldier: Soldier
   unit: Unit
-  unitSoldiers?: Soldier[]
+  /** The record's kin in its unit (loadKin): his sub-unit's soldiers and those who fell the same day */
+  kin?: Kin | null
   onOpen?: (soldier: Soldier) => void
   part: KinPart                                 // its comrades in the unit, or the people of its village
   request?: KinRequest | null
@@ -73,8 +74,9 @@ interface Props {
 
 // Where the soldier stood in the unit and who fell with him (comrades), or who came from his village (neighbours):
 // a fold at the end of the record that says what is in it, with a small tree per question inside
-export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, part, request, onCounts }: Props) {
+export default function RelationsTree({ soldier, unit, kin, onOpen, part, request, onCounts }: Props) {
   const lang = useLang()
+  const unitText = useUnitText()
   const messages = useT()
   const t = messages.kin
   const [place, setPlace] = useState<Place | null>(null)
@@ -98,28 +100,20 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
   const villageIds = useMemo(() => new Set(neighbours.map((m) => m.id)), [neighbours])
   const collator = useMemo(() => new Intl.Collator('sr-Latn'), [])
 
-  const { path, levels, sameDay, day } = useMemo(() => {
-    const path = subunitPath(soldier.unit_detail)
-    const day = deathDay(soldier)
-    if (!unitSoldiers) return { path, levels: [] as Soldier[][], sameDay: [] as Soldier[], day }
-    const index = unitIndex(unitSoldiers)
-    const levels = path.map((_, depth) => unitSoldiers.filter((s) => {
-      const p = index.paths.get(s)!
-      return p.length > depth && p.slice(0, depth + 1).every((l, i) => l.key === path[i].key)
-    }))
-    const sameDay = day ? unitSoldiers.filter((s) => index.days.get(s) === day) : []
-    return { path, levels, sameDay, day }
-  }, [soldier, unitSoldiers])
+  const path = useMemo(() => subunitPath(soldier.unit_detail), [soldier])
+  const day = useMemo(() => deathDay(soldier), [soldier])
+  // the server's groups (loadKin), for the path the record itself gives
+  const levels = useMemo(() => (kin && kin.levels.length === path.length ? kin.levels : []), [kin, path])
+  const sameDay = kin?.sameDay ?? []
 
   const myDay = day
   const toLeaves = (list: Soldier[]): Leaf[] => {
-    const index = unitSoldiers ? unitIndex(unitSoldiers) : null
     return list
       .filter((s) => s.soldier_id !== soldier.soldier_id)
       .map((s) => {
         const tags: string[] = []
         if (villageIds.has(s.soldier_id)) tags.push(t.samePlaceTag)
-        if (myDay && index?.days.get(s) === myDay) tags.push(t.sameDayTag)
+        if (myDay && deathDay(s) === myDay) tags.push(t.sameDayTag)
         return { id: s.soldier_id, name: s.full_name, years: lifeSpan(s), soldier: s, tags }
       })
       .sort((a, b) => b.tags.length - a.tags.length || collator.compare(a.name, b.name))
@@ -150,22 +144,24 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
       .sort(([a, x], [b, y]) => Number(b === own) - Number(a === own) || y.length - x.length)
       .map(([file, members]) => {
         const memberUnit = units.find((u) => u.dataFile === `/${file}`)
-        const local = file === own && unitSoldiers ? new Map(unitSoldiers.map((s) => [s.soldier_id, s])) : null
-        const deepest = levels[levels.length - 1]
+        // the soldier's own unit: each opens in this dialog, his record found by his id (fullRecord)
+        const local = file === own
+        const deepest = new Set(levels[levels.length - 1]?.map((s) => s.soldier_id))
         return {
           key: `p:${file}`,
-          label: memberUnit ? unitShortName(memberUnit, lang) : file,
+          label: memberUnit ? unitText.shortName(memberUnit) : file,
           size: members.length,
           leaves: members
             .filter((m) => m.id !== soldier.soldier_id)
             .map((m) => ({
-              id: m.id, name: m.name, years: m.years, soldier: local?.get(m.id), unit: memberUnit,
-              tags: deepest && local?.get(m.id) && deepest.includes(local.get(m.id)!) ? [levelLabel(path[path.length - 1], t)] : [],
+              id: m.id, name: m.name, years: m.years, unit: memberUnit,
+              soldier: local ? standIn(m, unit) : undefined,
+              tags: local && deepest.has(m.id) ? [levelLabel(path[path.length - 1], t)] : [],
             }))
             .sort((a, b) => b.tags.length - a.tags.length || collator.compare(a.name, b.name)),
         }
       })
-  }, [place, neighbours, unit, unitSoldiers, soldier.soldier_id, collator, path, levels, lang, t])
+  }, [place, neighbours, unit, soldier.soldier_id, collator, path, levels, unitText, t])
 
   const showUnitTree = part === 'comrades' && (unitGroups.length > 0 || dayGroup !== null)
   const showPlaceTree = part === 'neighbours' && place !== null && placeGroups.length > 0
@@ -261,7 +257,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
 
   // What the fold holds, before it is opened: "4. bataljon, 1.516 · istog dana 2", "Užička Požega, 5"
   const summary = part === 'comrades'
-    ? [deepest ? `${deepest.label}, ${t.count(deepest.size)}` : unitShortName(unit, lang),
+    ? [deepest ? `${deepest.label}, ${t.count(deepest.size)}` : unitText.shortName(unit),
       dayGroup ? `${messages.life.sameDayShort} ${t.count(dayGroup.size)}` : null].filter(Boolean).join(' · ')
     : place ? `${placeName(place)}, ${t.count(neighbours.length)}` : ''
 
@@ -282,7 +278,7 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
           <li className="kin-node kin-root is-path">
             <span className="kin-row">
               <span className="kin-kicker">{t.unit}</span>
-              <span className="kin-label">{unitShortName(unit, lang)}</span>
+              <span className="kin-label">{unitText.shortName(unit)}</span>
             </span>
             {unitGroups.length > 0 || dayGroup ? (
               <ul>
@@ -312,6 +308,14 @@ export default function RelationsTree({ soldier, unit, unitSoldiers, onOpen, par
       )}
     </section>
   )
+}
+
+// A neighbour of the soldier's own unit as the places index gives him, his id, name and unit, until his record loads
+function standIn(member: PlaceMember, unit: Unit): Soldier {
+  return {
+    soldier_id: member.id, full_name: member.name, unit: unit.name,
+    last_name: '', middle_name: '', first_name: '', additional_info: '', fathers_name: '', birth_year: '',
+  }
 }
 
 function placeName(place: Place): string {

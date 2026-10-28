@@ -4,7 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
-import { cardPath, citation, recordPath } from '@/app/lib/records'
+import { cardPath, recordPath } from '@/app/lib/records'
+import { citation } from '@/app/lib/recordSources'
 import { CopyIcon, PrintIcon, QuoteIcon, ShareIcon } from './Icons'
 import { copyText as copy, shareLink } from '@/app/lib/share'
 import { useLang, useT } from '@/app/i18n/LangContext'
@@ -22,7 +23,7 @@ export default function RecordActions({ soldier, unit }: { soldier: Soldier; uni
   if (!unit) return null
 
   const link = typeof window === 'undefined' ? '' : new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString()
-  const quote = `${citation(soldier, lang)} ${link}`
+  const quote = `${citation(soldier, lang, t)} ${link}`
 
   const share = async () => {
     const result = await shareLink(link, `${soldier.full_name} · ${t.site.name}`)

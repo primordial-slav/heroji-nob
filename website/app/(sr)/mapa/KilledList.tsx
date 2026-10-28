@@ -3,11 +3,10 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { units, type Unit } from '@/app/data/units'
-import { unitByName } from '@/app/lib/records'
-import { fullRecord, loadUnitList, loadedUnitList } from '@/app/lib/searchIndex'
+import { fullRecord, loadRows } from '@/app/lib/searchIndex'
 import { deathDay } from '@/app/lib/relations'
 import SoldierResults from '@/app/components/SoldierResults'
-import SoldierModal from '@/app/components/SoldierModal'
+import SoldierModal from '@/app/components/LazySoldierModal'
 import styles from './mapa.module.css'
 import { YEARS, day, monthName, yearOf } from './geometry'
 import { UNIT_ROUTES, type UnitRoute } from './units'
@@ -53,11 +52,9 @@ export default function KilledList() {
       if (!unit) return { status: 'missing' }
       const byMonth = spot === null ? killed.KILLED_BY_MONTH : killed.KILLED_AT[spot]
       const ids = Object.entries(byMonth).filter(([m]) => inPeriod(m)).flatMap(([, list]) => list)
-      const list = await loadUnitList(unit)
-      const byId = new Map(list.map(s => [s.soldier_id, s]))
       const collator = new Intl.Collator('sr-Latn')
       // in the order they fell, a day's dead by name; those the record gives only a month for after the days
-      const members = ids.map(id => byId.get(id)).filter((s): s is Soldier => Boolean(s))
+      const members = (await loadRows(unit, ids))
         .map(s => ({ s, d: deathDay(s) ?? '9' }))
         .sort((a, b) => a.d.localeCompare(b.d) || collator.compare(a.s.full_name, b.s.full_name))
         .map(x => x.s)
@@ -99,7 +96,6 @@ export default function KilledList() {
   }
 
   const { route, unit, title, period, members } = state
-  const selectedUnit = selected ? unitByName(selected.unit) : undefined
   return (
     <>
       <header className={styles.listHead}>
@@ -119,7 +115,6 @@ export default function KilledList() {
           key={selected.soldier_id}
           soldier={selected}
           unitName={selected.unit ?? unit.name}
-          unitSoldiers={selectedUnit ? loadedUnitList(selectedUnit) : undefined}
           onOpen={openSoldier}
           onClose={() => setSelected(null)}
         />

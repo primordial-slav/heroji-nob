@@ -1,10 +1,7 @@
 import type { Soldier, SoldierSource } from './types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
-import { sources } from '@/app/data/sources'
-import { messagesFor } from '@/app/i18n'
 import { localePath, type Lang } from '@/app/i18n/config'
-import { sourceAuthor } from '@/app/i18n/sources'
 import { isWoman } from './standIn'
 
 // A record's own address: /units/<unit>?borac=<soldier id>, in a language /en/units/<unit>?borac=<soldier id>
@@ -20,11 +17,6 @@ export function recordPath(unit: Unit, soldierId: string, lang: Lang): string {
 
 export function cardPath(unit: Unit, soldierId: string, lang: Lang): string {
   return localePath(lang, `/kartica?jedinica=${encodeURIComponent(unit.id)}&${RECORD_PARAM}=${encodeURIComponent(soldierId)}`)
-}
-
-// An id can also be one a merged-away entry had (data merges keep it in other_sources), so old links keep working
-export function findRecord(list: Soldier[], id: string): Soldier | undefined {
-  return list.find((s) => s.soldier_id === id) ?? list.find((s) => s.other_sources?.some((o) => o.soldier_id === id))
 }
 
 // The soldier's own entry, then the same soldier's entries in the unit's other books
@@ -44,32 +36,12 @@ export const isFamily = (url?: string) => !!url?.startsWith('porodica:')
 /** The 1964 census of the war's dead, a PDF per republic on the Museum of Genocide Victims' site */
 export const isMuseum = (url?: string) => !!url?.startsWith('https://www.muzejgenocida.rs/')
 
-/** The book (or web page) an entry was printed in, as the Sources page lists it */
-export function sourceOf(entry: SoldierSource) {
-  return entry.pdf_file
-    ? sources.find((s) => s.pdfPath === `/pdfs/${entry.pdf_file}`)
-    : sources.find((s) => entry.source_url?.startsWith(s.pdfPath))
-}
-
-export function sourceTitle(entry: SoldierSource): string {
-  return sourceOf(entry)?.title ?? entry.pdf_file ?? 'znaci.org'
-}
-
 /** "1924 – 1945" when the record has both years; a capture or a wound is no death (lib/deathDay.ts) */
 export function lifeYears(soldier: Soldier): string | null {
   if (soldier.death_type === 'zarobljen' || soldier.death_type === 'ranjen') return null
   const born = soldier.birth_year?.match(/\d{4}/)?.[0]
   const died = soldier.death_date?.match(/\d{4}/)?.[0]
   return born && died ? `${born} – ${died}` : null
-}
-
-/** A line to quote the record by: the name, where it is printed (the book's title as printed), and the record's id */
-export function citation(soldier: Soldier, lang: Lang): string {
-  const source = sourceOf(soldier)
-  const where = source
-    ? [source.title, sourceAuthor(source, lang)].filter(Boolean).join(', ')
-    : sourceTitle(soldier)
-  return messagesFor(lang).record.citation(soldier.full_name, where, soldier.pdf_page ?? soldier.source_page ?? null, soldier.soldier_id)
 }
 
 // "narodni heroj", "proglašen za narodnog heroja", "Nosilac Ordena narodnog heroja"; not "predložen za narodnog heroja",

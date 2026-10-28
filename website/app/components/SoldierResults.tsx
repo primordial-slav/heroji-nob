@@ -1,12 +1,11 @@
 'use client'
 
-import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { Fragment, useEffect, useState, type ReactNode } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { SoldierMedals } from './Medal'
-import { useLang, useT } from '@/app/i18n/LangContext'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import { formatNumber } from '@/app/i18n/format'
-import { unitName } from '@/app/i18n/units'
 import { unitByName } from '@/app/lib/records'
 import { PAGE_SIZES } from '@/app/lib/searchIndex'
 
@@ -29,22 +28,16 @@ interface SoldierResultsProps {
   /** Shown beside the count, e.g. sharing the search */
   actions?: ReactNode
   /**
-   * The whole list's length while only its first page is in (a unit page before its list has loaded): counted
-   * and paged as the whole list, and the other pages wait for the rest
-   */
-  total?: number
-  /** Results that are only similar to the search (useFuseSearch), listed after the others under "Slični zapisi" */
-  near?: ReadonlySet<Soldier>
-  /**
    * A list the server pages (useServerSearch): `results` is only the page shown, and this says where it is in the
    * whole list; a change of page or of page size goes to `onPage`
    */
   paged?: { count: number; firstNear: number; page: number; perPage: number; onPage: (page: number, perPage: number) => void }
 }
 
-export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, total, near, paged }: SoldierResultsProps) {
+export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, paged }: SoldierResultsProps) {
   const t = useT()
   const lang = useLang()
+  const unitText = useUnitText()
   const [ownPage, setOwnPage] = useState(1)
   const [ownPerPage, setOwnPerPage] = useState(PAGE_SIZES[0])
 
@@ -52,11 +45,9 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
 
   const page = paged?.page ?? ownPage
   const perPage = paged?.perPage ?? ownPerPage
-  const count = paged?.count ?? total ?? results.length
+  const count = paged?.count ?? results.length
   // Where the similar results start, -1 if there are none
-  const ownFirstNear = useMemo(() => (near?.size ? results.findIndex((soldier) => near.has(soldier)) : -1), [results, near])
-  const firstNear = paged ? paged.firstNear : ownFirstNear
-  const partial = !paged && count > results.length
+  const firstNear = paged ? paged.firstNear : -1
   const totalPages = Math.max(1, Math.ceil(count / perPage))
   const start = (page - 1) * perPage
   const shown = paged ? results : results.slice(start, start + perPage)
@@ -90,7 +81,6 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
               <select
                 id="per-page"
                 value={perPage}
-                disabled={partial}
                 onChange={(e) => {
                   const n = Number(e.target.value)
                   if (paged) paged.onPage(1, n)
@@ -123,7 +113,7 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
                   <span className="result-unit">
                     {[soldier.unit, ...(soldier.also_units ?? [])].map((name) => {
                       const unit = unitByName(name)
-                      return unit ? unitName(unit, lang) : name
+                      return unit ? unitText.name(unit) : name
                     }).join(' · ')}
                   </span>
                 )}
@@ -148,14 +138,13 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
                 key={p}
                 className={p === page ? 'page-button active' : 'page-button'}
                 onClick={() => goTo(p)}
-                disabled={partial && p !== page}
                 aria-current={p === page ? 'page' : undefined}
               >
                 {p}
               </button>
             )
           )}
-          <button className="page-button" onClick={() => goTo(page + 1)} disabled={page === totalPages || partial}>
+          <button className="page-button" onClick={() => goTo(page + 1)} disabled={page === totalPages}>
             {t.results.next} <ChevronRightIcon />
           </button>
         </nav>

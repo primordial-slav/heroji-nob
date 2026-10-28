@@ -1,18 +1,13 @@
 import type { Lang } from './config'
 import type { Unit } from '@/app/data/units'
-import { quoteMarks } from './format'
-import { toCyrillic } from './cyrillic'
+import { unitDescriptionIn, unitNameIn, unitShortNameIn, type UnitText } from './unitNames'
 
 // Each unit's name and card text in Slovene, Macedonian and English; the Serbo-Croatian ones are in
 // data/units.ts. Names follow each language's own usage (liška, sandžaška, kozaraška; 13-та, Втора; 1st
 // Lika), honorary names in straight quotes (each language's quotation marks are put in by unitName).
 // Card texts follow VOICE.md's formula: when and where the unit was formed, then who is on its list.
-// Every unit added to data/units.ts needs an entry here.
-
-interface UnitText {
-  name: string
-  description: string
-}
+// Every unit added to data/units.ts needs an entry here. The server reads them through the functions below; in the
+// browser only the pages in these languages load them (i18n/AnyLanguage.tsx, components' useUnitText()).
 
 const sl: Record<string, UnitText> = {
   'prva-licka-brigada': {
@@ -2283,29 +2278,24 @@ const en: Record<string, UnitText> = {
   },
 }
 
-const TEXT: Partial<Record<Lang, Record<string, UnitText>>> = { sl, mk, en }
-
-// Serbo-Croatian in Cyrillic is the Latin text of data/units.ts, letter for letter
-function inScript(lang: Lang, text: string): string {
-  return lang === 'sr-cyrl' ? toCyrillic(text) : text
-}
+export const UNIT_TEXTS: Partial<Record<Lang, Record<string, UnitText>>> = { sl, mk, en }
 
 /** The unit's name in the language, with its quotation marks: Prva liška proletarska brigada »Marko Orešković« */
 export function unitName(unit: Unit, lang: Lang): string {
-  return inScript(lang, quoteMarks(lang, TEXT[lang]?.[unit.id]?.name ?? unit.name))
+  return unitNameIn(unit, lang, UNIT_TEXTS[lang])
 }
 
 /** The unit's name without its honorary name: "Prva liška proletarska brigada" */
 export function unitShortName(unit: Unit, lang: Lang): string {
-  return inScript(lang, (TEXT[lang]?.[unit.id]?.name ?? unit.name).split(/\s+["„]/)[0])
+  return unitShortNameIn(unit, lang, UNIT_TEXTS[lang])
 }
 
 export function unitDescription(unit: Unit, lang: Lang): string {
-  return inScript(lang, TEXT[lang]?.[unit.id]?.description ?? unit.description)
+  return unitDescriptionIn(unit, lang, UNIT_TEXTS[lang])
 }
 
 /** Unit ids that lack a text in some language, for a check at build time */
 export function missingUnitTexts(ids: string[]): string[] {
-  return (Object.entries(TEXT) as [Lang, Record<string, UnitText>][]).flatMap(([lang, texts]) =>
+  return (Object.entries(UNIT_TEXTS) as [Lang, Record<string, UnitText>][]).flatMap(([lang, texts]) =>
     ids.filter((id) => !texts[id]).map((id) => `${lang}:${id}`))
 }

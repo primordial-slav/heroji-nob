@@ -7,8 +7,10 @@ import { messagesFor } from '@/app/i18n'
 import { pageMetadata } from '@/app/i18n/metadata'
 import { unitDescription, unitName } from '@/app/i18n/units'
 import { localePath, type Lang } from '@/app/i18n/config'
-import { FIRST_PAGE } from '@/app/lib/searchIndex'
+import { FIRST_PAGE, recordsPath } from '@/app/lib/searchIndex'
+import { generatedFile, generatedPages } from '@/app/lib/generated'
 import { readUnitFile } from '@/app/lib/unitFiles'
+import type { Soldier } from '@/app/lib/types'
 
 // A unit's page, /units/<id>, in every language. Only the units below exist: any other id is a 404
 // (each route sets dynamicParams = false), not a page rendered (and stored) on request.
@@ -37,7 +39,14 @@ export default function UnitPage({ lang, id }: { lang: Lang; id: string }) {
     )
   }
 
-  // The first page of the list is in the page itself, so it shows before the list has loaded
+  // The first page of the list is in the page itself, so it shows before the list has loaded: from the unit's first
+  // slice of records (scripts/prepare-data.ts), or its data file where that has not been written
+  const first = generatedFile<Soldier[]>(recordsPath(unit.id, 0))
+  const total = generatedPages()?.counts[unit.id]
+  if (first && total !== undefined) {
+    const firstPage = first.slice(0, FIRST_PAGE).map(({ life_events: _, ...record }) => record)
+    return <UnitPageClient unit={unit} firstPage={firstPage} total={total} />
+  }
   const soldiers = readUnitFile(unit.dataFile)
   return <UnitPageClient unit={unit} firstPage={soldiers.slice(0, FIRST_PAGE)} total={soldiers.length} />
 }

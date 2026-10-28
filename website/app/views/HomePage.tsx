@@ -1,16 +1,11 @@
 'use client'
 
-import { useState, useEffect, useRef, useMemo, useDeferredValue } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { units } from '@/app/data/units'
-import { useFuseSearch } from '@/app/lib/useFuseSearch'
 import { useServerSearch } from '@/app/lib/useServerSearch'
-import {
-  PAGE_SIZES, fullRecord, loadHomeLists, loadKinList, loadPortraitPeople, loadedHomeLists, loadedPortraitPeople,
-  type HomeLists,
-} from '@/app/lib/searchIndex'
-import { unitByName } from '@/app/lib/records'
+import { PAGE_SIZES, fullRecord, loadPortraitPeople, loadedPortraitPeople } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
-import SoldierModal from '@/app/components/SoldierModal'
+import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
 import { SearchIcon } from '@/app/components/Icons'
 import { totalNames } from '@/app/lib/totals'
@@ -19,15 +14,17 @@ import OnThisDay from '@/app/components/OnThisDay'
 import HomeDoors from '@/app/components/HomeDoors'
 import HomeNews from '@/app/components/HomeNews'
 import PortraitRails from '@/app/components/PortraitRails'
+import type { HomePictures } from '@/app/lib/homePictures'
 import { HOME_RESET } from '@/app/components/HomeLink'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
-import { NO_FILTERS, applyFilters, filterCount, narrows, readSearch, writeSearch } from '@/app/lib/searchFilters'
+import { NO_FILTERS, filterCount, narrows, readSearch, writeSearch } from '@/app/lib/searchFilters'
 import { useT } from '@/app/i18n/LangContext'
 import RichText from '@/app/i18n/RichText'
 
 const NO_SOLDIERS: Soldier[] = []
 
-export default function HomePage() {
+export default function HomePage({ pictures }: { pictures: HomePictures }) {
+  usePreloadSoldierModal()
   const t = useT()
   const [searchTerm, setSearchTerm] = useState('')
   const [filters, setFilters] = useState(NO_FILTERS)
@@ -42,26 +39,8 @@ export default function HomePage() {
   const [perPage, setPerPage] = useState(PAGE_SIZES[0])
   const page = paging.search === searchKey ? paging.page : 1
 
-  // The server searches every unit's soldiers and sends one page of them (useServerSearch). If it doesn't answer, the
-  // page loads every unit's list and searches them itself, as it did before
-  const [local, setLocal] = useState(false)
-  const server = useServerSearch({ query: searchTerm, filters, page, perPage, enabled: !local })
-  useEffect(() => { if (server.failed) setLocal(true) }, [server.failed])
-
-  // The lists the page searches itself; already there when the visitor comes back to the page
-  const [lists, setLists] = useState<HomeLists | null>(loadedHomeLists)
-  const allSoldiers = lists?.listed ?? NO_SOLDIERS
-  const [loadFailed, setLoadFailed] = useState(false)
-  const loading = local && !lists && !loadFailed
-  const localSearch = useFuseSearch(allSoldiers, { showAllOnEmpty: false, wholeWords: filters.wholeWords, term: searchTerm })
-  useEffect(() => {
-    if (!local) return
-    let current = true
-    loadHomeLists()
-      .then((loaded) => current && setLists(loaded))
-      .catch(() => current && setLoadFailed(true))
-    return () => { current = false }
-  }, [local])
+  // The server searches every unit's soldiers and sends one page of them (useServerSearch)
+  const server = useServerSearch({ query: searchTerm, filters, page, perPage })
 
   // The search and its filters are in the address, so a search can be sent as a link: read once, then kept up to date
   const [addressRead, setAddressRead] = useState(false)
@@ -96,11 +75,10 @@ export default function HomePage() {
   // The soldiers of the portraits in the margins, as the lists give them
   const [portraitPeople, setPortraitPeople] = useState<Soldier[]>(() => loadedPortraitPeople() ?? NO_SOLDIERS)
   useEffect(() => {
-    if (local) return
     let current = true
     loadPortraitPeople().then((people) => current && setPortraitPeople(people)).catch(() => {})
     return () => { current = false }
-  }, [local])
+  }, [])
 
   // The search list has only what search shows; the dialog gets the soldier's full record
   const openSoldier = async (soldier: Soldier) => {
@@ -109,40 +87,16 @@ export default function HomePage() {
     if (opening.current === soldier) setSelectedSoldier(record)
   }
 
-  // The open soldier's unit, for the dialog's previous and next and its comrades tree: loaded when he is opened, as
-  // the kin list (loadKinList)
-  const dialogUnit = selectedSoldier?.unit
-  const [dialogList, setDialogList] = useState<{ unit: string; list: Soldier[] } | null>(null)
-  useEffect(() => {
-    const unit = unitByName(dialogUnit)
-    if (local || !unit) return
-    let current = true
-    loadKinList(unit).then((list) => current && setDialogList({ unit: unit.name, list })).catch(() => {})
-    return () => { current = false }
-  }, [dialogUnit, local])
-  const unitSoldiers = local
-    ? lists?.byUnit.get(dialogUnit ?? '')
-    : dialogList && dialogList.unit === dialogUnit ? dialogList.list : undefined
-
   const hasQuery = searchTerm.trim().length > 0
   // Filters narrow the search; a place, year, unit or fate alone also lists everyone who matches it
-  const shownFilters = useDeferredValue(filters)
   const filtering = narrows(filters)
   const filtersSet = filterCount(filters) > 0
-  const localListed = useMemo(
-    () => (!local ? NO_SOLDIERS
-      : hasQuery ? applyFilters(localSearch.results, shownFilters)
-      : narrows(shownFilters) ? applyFilters(allSoldiers, shownFilters) : NO_SOLDIERS),
-    [local, hasQuery, localSearch.results, allSoldiers, shownFilters]
-  )
 
-  // What the results say, whoever searched
+  // What the results say
   const found = server.result
-  const count = local ? localListed.length : found?.count ?? 0
-  const unfiltered = local ? localSearch.results.length : found?.unfiltered ?? 0
-  const waiting = local
-    ? loading || (!loadFailed && localSearch.pending && localListed.length === 0)
-    : server.pending && count === 0
+  const count = found?.count ?? 0
+  const unfiltered = found?.unfiltered ?? 0
+  const waiting = server.pending && count === 0 && !server.failed
 
   return (
     <div>
@@ -182,12 +136,12 @@ export default function HomePage() {
           // A first search, or one after an empty result, shows the loading rows until its results are in
           waiting ? (
             <>
-              <p className="results-count">{loading ? t.home.loading : t.results.searching}</p>
+              <p className="results-count">{t.results.searching}</p>
               <ul className="loading-rows" aria-hidden="true">
                 {Array.from({ length: 6 }, (_, i) => <li key={i} />)}
               </ul>
             </>
-          ) : local && loadFailed ? (
+          ) : server.failed ? (
             <div className="empty">
               <h2>{t.home.loadFailedTitle}</h2>
               <p>{t.home.loadFailedText}</p>
@@ -209,15 +163,6 @@ export default function HomePage() {
               <h2>{t.home.noneTitle(searchTerm)}</h2>
               <p>{t.home.noneText}</p>
             </div>
-          ) : local ? (
-            <SoldierResults
-              results={localListed}
-              near={localSearch.near}
-              showUnit
-              onSelect={openSoldier}
-              scrollTargetId="results"
-              actions={<ShareSearch />}
-            />
           ) : (
             <SoldierResults
               results={found?.soldiers ?? NO_SOLDIERS}
@@ -240,19 +185,18 @@ export default function HomePage() {
         ) : (
           <>
             <OnThisDay onSelect={openSoldier} />
-            <HomeDoors />
+            <HomeDoors pictures={pictures} />
             <HomeNews />
           </>
         )}
       </div>
-      <PortraitRails soldiers={local ? allSoldiers : portraitPeople} onOpen={openSoldier} />
+      <PortraitRails pictures={pictures} soldiers={portraitPeople} onOpen={openSoldier} />
       </div>
 
       {selectedSoldier && (
         <SoldierModal
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
-          unitSoldiers={unitSoldiers}
           onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />

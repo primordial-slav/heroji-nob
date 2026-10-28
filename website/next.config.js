@@ -25,13 +25,13 @@ const nextConfig = {
   serverExternalPackages: [],
   // Two root layouts ((sr) and (intl)/[lang]): an unknown address gets the site's own 404, app/global-not-found.tsx
   experimental: { globalNotFound: true },
-  // The unit files (public/*.json, data/life-events/) are read only while the site is built, since every page
-  // and route is prerendered. Their path is a variable, so the tracer would otherwise pack all of public/ (the
-  // PDFs too) into each server function, past Vercel's 250 MB limit
+  // The unit files (public/*.json, data/life-events/) and what scripts/prepare-data.ts writes from them (public/data/,
+  // generated/) are read only while the site is built, since every page is prerendered. Their path is a variable, so
+  // the tracer would otherwise pack all of public/ (the PDFs too) into each server function, past Vercel's 250 MB limit
   outputFileTracingExcludes: {
-    '*': ['public/**/*', 'data/life-events/**/*'],
+    '*': ['public/**/*', 'data/life-events/**/*', 'generated/**/*'],
   },
-  // The search route reads the search data built before the build (scripts/prepare-search.ts), not the data files
+  // The search route reads the search data written before the build (scripts/prepare-data.ts), not the data files
   outputFileTracingIncludes: {
     '/api/search': ['./search-data/**/*'],
   },

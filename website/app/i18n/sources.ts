@@ -5,7 +5,9 @@ import { toCyrillic } from './cyrillic'
 // The Izvori page in Slovene, Macedonian and English. A book's title stays as the book prints it (it is a
 // citation); what the site says about the book is translated: its description, the part of the title the
 // site added after " — " (it names the list in the record's book switch), and author lines that are not
-// names ("Grupa autora", "(ur.)"). Every source added to data/sources.ts needs a description here.
+// names ("Grupa autora", "(ur.)"). Every source added to data/sources.ts needs a description here. The title's
+// part and the authors are in i18n/sourceNames.ts, which the record dialog uses: the browser never loads this file,
+// which only the Izvori page, rendered on the server, reads.
 // In Cyrillic Serbo-Croatian (sr-cyrl) the description and the site's part of the title are the Latin ones in
 // Cyrillic; the title and the author stay as the book prints them.
 
@@ -2011,175 +2013,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
   },
 }
 
-// The part of a title the site added after " — ", as the record's book switch shows it
-const PART: Partial<Record<Lang, Texts>> = {
-  sl: {
-    'tom 1': '1. zvezek',
-    'tom 2': '2. zvezek',
-    'tom 3': '3. zvezek',
-    'spisak poginulih': 'seznam padlih',
-    'spisak preživjelih': 'seznam preživelih',
-    'spisak preživjelih (ratna sjećanja)': 'seznam preživelih (vojni spomini)',
-    'spisak poginulih (zbornik sjećanja)': 'seznam padlih (zbornik spominov)',
-    'spisak poginulih i umrlih (zbornik sjećanja, knj. 3)': 'seznam padlih in umrlih (zbornik spominov, 3. knjiga)',
-    'spisak boraca i starešina na dan formiranja (zbornik sjećanja)': 'seznam na dan ustanovitve (zbornik spominov)',
-    'poginuli': 'padli',
-    'preživjeli': 'preživeli',
-    'zbornik sjećanja': 'zbornik spominov',
-    'spisak poginulih boraca': 'seznam padlih',
-    'spisak poginulih i umrlih': 'seznam padlih in umrlih',
-    'sastav u oktobru 1943.': 'sestava oktobra 1943',
-    'spiskovi poginulih i ranjenih': 'seznama padlih in ranjenih',
-    'spisak poginulih, zarobljenih i nestalih': 'seznam padlih, ujetih in pogrešanih',
-    'spisak poginulih, umrlih i nestalih': 'seznam padlih, umrlih in pogrešanih',
-    'spisak boraca': 'seznam borcev',
-    'spiskovi boraca i starešina': 'seznami borcev in poveljnikov',
-    'spisak poginulih i preživjelih': 'seznam padlih in preživelih',
-    'preživjeli i poginuli (zbornik, knj. 2)': 'preživeli in padli (zbornik, 2. knjiga)',
-    'popis boraca': 'seznam borcev',
-    'borci divizije po jedinicama': 'borci divizije po enotah',
-    'jedinični spisak brigade': 'seznam brigade po enotah',
-    'spisak boraca (zbornik sjećanja, knj. 3)': 'seznam borcev (zbornik spominov, 3. knjiga)',
-    'spiskovi poginulih i rukovodilaca': 'seznama padlih in vodstva',
-    'ilustrovana monografija (1942—1992)': 'ilustrirana monografija (1942–1992)',
-    'borci brigade na Sutjesci': 'borci brigade na Sutjeski',
-    'borci brigade na dan njenog osnivanja (stroj u Rudom)': 'borci brigade na dan ustanovitve (zbor v Rudem)',
-    'dopuna spiska boraca': 'dopolnitev seznama borcev',
-    'komandiri i komesari četa, narodni heroji, poginuli': 'komandirji in komisarji čet, narodni heroji, padli',
-    'spisak poginulih i nestalih': 'seznam padlih in pogrešanih',
-    'spisak žena boraca': 'seznam bork',
-    'žene borci I. dalmatinske proleterske brigade': 'borke I. dalmatinske proletarske brigade',
-    'žene borci XI. dalmatinske brigade': 'borke XI. dalmatinske brigade',
-    'žene borci Osječke brigade': 'borke Osiješke brigade',
-    'spiskovi boraca koji su stupili u bataljon 1942–1945': 'seznami borcev, ki so vstopili v bataljon 1942–1945',
-    'spisak boraca u Rudom 21. XII 1941.': 'seznam borcev v Rudem 21. 12. 1941',
-    'spisak komandnog kadra': 'seznam poveljniškega kadra',
-    'pregled komandnog kadra i narodni heroji': 'pregled poveljniškega kadra in narodni heroji',
-    'pregled komandnog kadra': 'pregled poveljniškega kadra',
-    'poveljniški kader': 'poveljniški kader',
-    'starešine štabova': 'starešine štabov',
-    'pregled rukovodećeg kadra': 'pregled vodilnega kadra',
-  },
-  mk: {
-    'tom 1': 'том 1',
-    'tom 2': 'том 2',
-    'tom 3': 'том 3',
-    'spisak poginulih': 'список на загинатите',
-    'spisak preživjelih': 'список на преживеаните',
-    'spisak preživjelih (ratna sjećanja)': 'список на преживеаните (воени сеќавања)',
-    'spisak poginulih (zbornik sjećanja)': 'список на загинатите (зборник спомени)',
-    'spisak poginulih i umrlih (zbornik sjećanja, knj. 3)': 'список на загинатите и починатите (зборник спомени, кн. 3)',
-    'spisak boraca i starešina na dan formiranja (zbornik sjećanja)': 'список на денот на формирањето (зборник спомени)',
-    'poginuli': 'загинати',
-    'preživjeli': 'преживеани',
-    'zbornik sjećanja': 'зборник спомени',
-    'spisak poginulih boraca': 'список на загинатите',
-    'spisak poginulih i umrlih': 'список на загинатите и починатите',
-    'sastav u oktobru 1943.': 'составот во октомври 1943',
-    'spiskovi poginulih i ranjenih': 'списоци на загинатите и ранетите',
-    'spisak poginulih, zarobljenih i nestalih': 'список на загинатите, заробените и исчезнатите',
-    'spisak poginulih, umrlih i nestalih': 'список на загинатите, починатите и исчезнатите',
-    'spisak boraca': 'список на борците',
-    'spiskovi boraca i starešina': 'списоци на борците и старешините',
-    'spisak poginulih i preživjelih': 'список на загинатите и преживеаните',
-    'preživjeli i poginuli (zbornik, knj. 2)': 'преживеани и загинати (зборник, кн. 2)',
-    'popis boraca': 'список на борците',
-    'borci divizije po jedinicama': 'борци на дивизијата по единици',
-    'jedinični spisak brigade': 'список на бригадата по единици',
-    'spisak boraca (zbornik sjećanja, knj. 3)': 'список на борците (зборник спомени, кн. 3)',
-    'spiskovi poginulih i rukovodilaca': 'списоци на загинатите и на раководството',
-    'ilustrovana monografija (1942—1992)': 'илустрирана монографија (1942–1992)',
-    'borci brigade na Sutjesci': 'борците на бригадата на Сутјеска',
-    'borci brigade na dan njenog osnivanja (stroj u Rudom)': 'борците на бригадата на денот на формирањето (строј во Рудо)',
-    'dopuna spiska boraca': 'дополнување на списокот на борците',
-    'komandiri i komesari četa, narodni heroji, poginuli': 'командири и комесари на чети, народни херои, загинати',
-    'spisak poginulih i nestalih': 'список на загинатите и исчезнатите',
-    'spisak žena boraca': 'список на жените борци',
-    'žene borci I. dalmatinske proleterske brigade': 'жените борци на I далматинска пролетерска бригада',
-    'žene borci XI. dalmatinske brigade': 'жените борци на XI далматинска бригада',
-    'žene borci Osječke brigade': 'жените борци на Осиечката бригада',
-    'spiskovi boraca koji su stupili u bataljon 1942–1945': 'списоци на борците што стапиле во баталјонот 1942–1945',
-    'spisak boraca u Rudom 21. XII 1941.': 'список на борците во Рудо, 21. XII 1941',
-    'spisak komandnog kadra': 'список на командниот кадар',
-    'pregled komandnog kadra i narodni heroji': 'преглед на командниот кадар и народните херои',
-    'pregled komandnog kadra': 'преглед на командниот кадар',
-    'poveljniški kader': 'командниот кадар',
-    'starešine štabova': 'старешините на штабовите',
-    'pregled rukovodećeg kadra': 'преглед на раководниот кадар',
-  },
-  en: {
-    'tom 1': 'volume 1',
-    'tom 2': 'volume 2',
-    'tom 3': 'volume 3',
-    'spisak poginulih': 'the fallen',
-    'spisak preživjelih': 'the survivors',
-    'spisak preživjelih (ratna sjećanja)': 'the survivors (war memoirs)',
-    'spisak poginulih (zbornik sjećanja)': 'the fallen (memoirs)',
-    'spisak poginulih i umrlih (zbornik sjećanja, knj. 3)': 'the fallen and the dead (memoirs, vol. 3)',
-    'spisak boraca i starešina na dan formiranja (zbornik sjećanja)': 'roll on the day of formation (memoirs)',
-    'poginuli': 'the fallen',
-    'preživjeli': 'the survivors',
-    'zbornik sjećanja': 'memoirs',
-    'spisak poginulih boraca': 'the fallen',
-    'spisak poginulih i umrlih': 'the fallen and the dead',
-    'sastav u oktobru 1943.': 'roll of October 1943',
-    'spiskovi poginulih i ranjenih': 'the killed and the wounded',
-    'spisak poginulih, zarobljenih i nestalih': 'the killed, captured and missing',
-    'spisak poginulih, umrlih i nestalih': 'the killed, dead and missing',
-    'spisak boraca': 'roll',
-    'spiskovi boraca i starešina': 'Partisans and officers',
-    'spisak poginulih i preživjelih': 'the fallen and the survivors',
-    'preživjeli i poginuli (zbornik, knj. 2)': 'survivors and the fallen (memoirs, vol. 2)',
-    'popis boraca': 'roll',
-    'borci divizije po jedinicama': 'the division’s Partisans, by unit',
-    'jedinični spisak brigade': 'the brigade’s roll, by unit',
-    'spisak boraca (zbornik sjećanja, knj. 3)': 'roll (memoirs, vol. 3)',
-    'spiskovi poginulih i rukovodilaca': 'the fallen and the leaders',
-    'ilustrovana monografija (1942—1992)': 'illustrated history (1942–1992)',
-    'borci brigade na Sutjesci': 'the brigade at the Sutjeska',
-    'borci brigade na dan njenog osnivanja (stroj u Rudom)': 'the brigade on the day it was formed (the line-up at Rudo)',
-    'dopuna spiska boraca': 'addendum to the roll',
-    'komandiri i komesari četa, narodni heroji, poginuli': 'company commanders and commissars, People’s Heroes, the fallen',
-    'spisak poginulih i nestalih': 'the killed and missing',
-    'spisak žena boraca': 'the women fighters',
-    'žene borci I. dalmatinske proleterske brigade': 'the women fighters of the 1st Dalmatian Proletarian Brigade',
-    'žene borci XI. dalmatinske brigade': 'the women fighters of the 11th Dalmatian Brigade',
-    'žene borci Osječke brigade': 'the women fighters of the Osijek Brigade',
-    'spiskovi boraca koji su stupili u bataljon 1942–1945': 'the fighters who joined the battalion, 1942–1945',
-    'spisak boraca u Rudom 21. XII 1941.': 'the company at Rudo, 21 December 1941',
-    'spisak komandnog kadra': 'the command roll',
-    'pregled komandnog kadra i narodni heroji': 'the commanders and the People’s Heroes',
-    'pregled komandnog kadra': 'the commanders',
-    'poveljniški kader': 'the commanders',
-    'starešine štabova': 'the officers of the staffs',
-    'pregled rukovodećeg kadra': 'the leaders',
-  },
-}
-
-// Author lines that are not a person's name
-const AUTHOR: Partial<Record<Lang, [RegExp, string][]>> = {
-  sl: [[/^Grupa autora$/, 'Skupina avtorjev'], [/^Zbornik sjećanja$/, 'Zbornik spominov'], [/^Zbornik$/, 'Zbornik'],
-    [/^Vojnoistorijski institut$/, 'Vojnozgodovinski inštitut'], [/ i dr\./, ' idr.']],
-  mk: [[/^Grupa autora$/, 'Група автори'], [/^Zbornik sjećanja$/, 'Зборник спомени'], [/^Zbornik$/, 'Зборник'],
-    [/^Vojnoistorijski institut$/, 'Воено-историски институт'], [/ i dr\./, ' и др.'], [/\(ur\.\)/, '(ур.)']],
-  en: [[/^Grupa autora$/, 'Various authors'], [/^Zbornik sjećanja$/, 'Memoir collection'], [/^Zbornik$/, 'Collection'],
-    [/^Vojnoistorijski institut$/, 'Military History Institute'], [/ i dr\./, ' et al.'], [/\(ur\.\)/, '(ed.)']],
-}
-
 export function sourceDescription(source: PdfSource, lang: Lang): string | undefined {
   if (lang === 'sr-cyrl') return source.description && toCyrillic(source.description)
   return DESCRIPTION[lang]?.[source.id] ?? source.description
-}
-
-export function sourceAuthor(source: PdfSource, lang: Lang): string {
-  return (AUTHOR[lang] ?? []).reduce((text, [from, to]) => text.replace(from, to), source.author)
-}
-
-/** The list a title names after " — ", in the language: "Brodska brigada — spisak poginulih boraca" -> "the fallen" */
-export function titlePart(title: string, lang: Lang): string {
-  const part = title.includes(' — ') ? title.split(' — ').pop()! : title
-  if (lang === 'sr-cyrl') return title.includes(' — ') ? toCyrillic(part) : part
-  return PART[lang]?.[part] ?? part
 }
 
 export function missingSourceTexts(ids: string[]): string[] {

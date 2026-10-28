@@ -5,8 +5,7 @@ import { units } from '@/app/data/units'
 import { formation, formationKey } from '@/app/data/formation'
 import { FATES, NO_FILTERS, RANGES, filterCount, type SearchFilters as Filters } from '@/app/lib/searchFilters'
 import { shareLink } from '@/app/lib/share'
-import { useLang, useT } from '@/app/i18n/LangContext'
-import { unitName } from '@/app/i18n/units'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import { FilterIcon, ShareIcon } from './Icons'
 
 // The units in the order the home page lists them: by formation date, undated last
@@ -41,6 +40,7 @@ interface SearchFiltersProps {
 export default function SearchFilters({ id, filters, onChange, withUnit = false }: SearchFiltersProps) {
   const t = useT().filters
   const lang = useLang()
+  const unitText = useUnitText()
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch })
 
   return (
@@ -86,7 +86,7 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
           <label htmlFor={`${id}-unit`}>{t.unit}</label>
           <select id={`${id}-unit`} value={filters.unit} onChange={(e) => set({ unit: e.target.value })}>
             <option value="">{t.allUnits}</option>
-            {UNIT_OPTIONS.map((u) => <option key={u.id} value={u.id}>{unitName(u, lang)}</option>)}
+            {UNIT_OPTIONS.map((u) => <option key={u.id} value={u.id}>{unitText.name(u)}</option>)}
           </select>
         </div>
       )}

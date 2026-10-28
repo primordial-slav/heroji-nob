@@ -3,14 +3,15 @@
 import { useEffect, useRef, useState } from 'react'
 import { units } from '@/app/data/units'
 import type { Soldier } from '@/app/lib/types'
-import SoldierModal from '@/app/components/SoldierModal'
+import { recordsPath } from '@/app/lib/searchIndex'
+import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import { useT } from '@/app/i18n/LangContext'
 
 export interface GalleryItem {
   id: string
   name: string
   unit: string     // the unit's id
-  part: number     // the slice of the unit's records that holds him (/records/<unit>/<part>)
+  part: number     // the slice of the unit's records that holds him (recordsPath)
   file: string     // in /portreti/
 }
 
@@ -25,6 +26,7 @@ function shuffled<T>(items: T[]): T[] {
 }
 
 export default function GalleryClient({ items }: { items: GalleryItem[] }) {
+  usePreloadSoldierModal()
   const t = useT().gallery
   // shuffled in the browser only: the page is built once, and the server's order would show for a moment
   const [order, setOrder] = useState<GalleryItem[] | null>(null)
@@ -37,7 +39,7 @@ export default function GalleryClient({ items }: { items: GalleryItem[] }) {
     opening.current = item.id
     const unit = units.find((u) => u.id === item.unit)
     try {
-      const response = await fetch(`/records/${item.unit}/${item.part}`)
+      const response = await fetch(recordsPath(item.unit, item.part))
       const records: Soldier[] = response.ok ? await response.json() : []
       const record = records.find((r) => r.soldier_id === item.id)
       if (record && opening.current === item.id) setSelected({ ...record, unit: unit?.name })

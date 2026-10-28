@@ -5,9 +5,8 @@ import type { Soldier } from '@/app/lib/types'
 import { ageAtDeath, wartimeDeath, type DeathDay } from '@/app/lib/deathDay'
 import { loadOnThisDay, loadedOnThisDay } from '@/app/lib/searchIndex'
 import { unitByName } from '@/app/lib/records'
-import { useLang, useT } from '@/app/i18n/LangContext'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
-import { unitName } from '@/app/i18n/units'
 import { SoldierName } from './SoldierResults'
 import { SoldierMedals } from './Medal'
 import { CandleIcon } from './Icons'
@@ -67,10 +66,11 @@ interface OnThisDayProps {
 }
 
 // "Na današnji dan": soldiers who fell, died or went missing on today's date during the war. The day's list is a
-// small file of its own (app/on-this-day/[day]/route.ts), so it shows without waiting for the search lists.
+// small file of its own (lib/dataFiles.ts), so it shows without waiting for anything else.
 export default function OnThisDay({ onSelect }: OnThisDayProps) {
   const t = useT()
   const lang = useLang()
+  const unitText = useUnitText()
   // Today in the visitor's own calendar, known only in the browser
   const [today, setToday] = useState<{ day: number; month: number; key: string } | null>(null)
   const [soldiers, setSoldiers] = useState<Soldier[] | null>(null)
@@ -120,7 +120,7 @@ export default function OnThisDay({ onSelect }: OnThisDayProps) {
   const shown = showAll ? everyone : featured
   const shownUnit = (name: string) => {
     const unit = unitByName(name)
-    return unit ? unitName(unit, lang) : name
+    return unit ? unitText.name(unit) : name
   }
 
   return (

@@ -4,8 +4,7 @@ import { useLayoutEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { Unit } from '@/app/data/units'
 import { unitHref } from '@/app/data/unitPages'
-import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
-import { unitName } from '@/app/i18n/units'
+import { useLang, useLocalePath, useT, useUnitText } from '@/app/i18n/LangContext'
 import { unitImageProps } from '@/app/lib/unitImage'
 
 // Soldiers of the 2. krajiška brigade walking away through snow: the figures sit on the right,
@@ -19,6 +18,7 @@ const BAND_SIZES = '(max-width: 480px) 480px, 100vw'
 export default function BandPhoto({ units }: { units: Unit[] }) {
   const t = useT()
   const lang = useLang()
+  const unitText = useUnitText()
   const to = useLocalePath()
   const ref = useRef<HTMLDivElement>(null)
   const [ready, setReady] = useState(false)
@@ -47,7 +47,7 @@ export default function BandPhoto({ units }: { units: Unit[] }) {
         <img {...unitImageProps(unit.image, BAND_SIZES)} alt="" />
       </div>
       <p className="band-credit">
-        {t.home.bandCredit} <Link href={to(unitHref(unit.id, lang))}>{unitName(unit, lang)}</Link>
+        {t.home.bandCredit} <Link href={to(unitHref(unit.id, lang))}>{unitText.name(unit)}</Link>
       </p>
     </>
   )

@@ -4,7 +4,8 @@ import { ChevronRightIcon, DocumentIcon, DownloadIcon } from '@/app/components/I
 import RichText from '@/app/i18n/RichText'
 import { messagesFor } from '@/app/i18n'
 import { pageMetadata } from '@/app/i18n/metadata'
-import { sourceAuthor, sourceDescription } from '@/app/i18n/sources'
+import { sourceDescription } from '@/app/i18n/sources'
+import { sourceAuthor } from '@/app/i18n/sourceNames'
 import type { Lang } from '@/app/i18n/config'
 
 export function sourcesMetadata(lang: Lang) {

@@ -1,38 +1,18 @@
-import { units } from '@/app/data/units'
-import index from '@/app/data/portrait-index.json'
-import { RECORDS_PER_PART } from '@/app/lib/searchIndex'
-import { readUnitFile } from '@/app/lib/unitFiles'
+import { generatedPages } from '@/app/lib/generated'
 import { messagesFor } from '@/app/i18n'
 import { pageMetadata } from '@/app/i18n/metadata'
 import type { Lang } from '@/app/i18n/config'
-import GalleryClient, { type GalleryItem } from './GalleryClient'
+import GalleryClient from './GalleryClient'
 
 export function galleryMetadata(lang: Lang) {
   const t = messagesFor(lang).gallery
   return pageMetadata(lang, '/galerija', { title: t.title, description: t.description })
 }
 
-const PORTRAITS = index as Record<string, { f: string; same?: string }>
-
-// Built from the unit files (at build time, fresh on each request under next dev), so each portrait knows which
-// slice of its unit's records (/records/<unit>/<part>) holds the soldier's full record. A man with a portrait under
-// several records (one in each unit or book that prints him) is shown once, by the record `same` names.
-function galleryItems(): GalleryItem[] {
-  const items: GalleryItem[] = []
-  for (const unit of units) {
-    readUnitFile(unit.dataFile).forEach((s, i) => {
-      const portrait = PORTRAITS[s.soldier_id]
-      if (portrait && !portrait.same) {
-        items.push({ id: s.soldier_id, name: s.full_name, unit: unit.id, part: Math.floor(i / RECORDS_PER_PART), file: portrait.f })
-      }
-    })
-  }
-  return items
-}
-
-// The Galerija page, /galerija, in every language
+// The Galerija page, /galerija, in every language. Its portraits, each knowing which slice of its unit's records holds
+// the soldier's full record, are worked out from the unit files by scripts/prepare-data.ts (lib/generated.ts).
 export default function GalleryPage({ lang }: { lang: Lang }) {
-  const items = galleryItems()
+  const items = generatedPages()?.gallery ?? []
   return (
     <div className="container page-content">
       <h1 className="page-title">{messagesFor(lang).gallery.title}</h1>

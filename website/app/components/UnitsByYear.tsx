@@ -6,8 +6,7 @@ import { unitHref } from '@/app/data/unitPages'
 import { formation, formationKey } from '@/app/data/formation'
 import type { Lang } from '@/app/i18n/config'
 import { formatNumber } from '@/app/i18n/format'
-import { useLang, useLocalePath, useT } from '@/app/i18n/LangContext'
-import { unitDescription, unitName } from '@/app/i18n/units'
+import { useLang, useLocalePath, useT, useUnitText, type UnitNames } from '@/app/i18n/LangContext'
 import { formationName, formationYears } from '@/app/i18n/formations'
 import { SITE_DIVISIONS, UNIT_FORMATIONS } from '@/app/data/unitFormations'
 import { unitImageProps } from '@/app/lib/unitImage'
@@ -32,8 +31,8 @@ const NO_UNIT = 'ostali-borci'
 export const isNoUnit = (u: Unit) => u.id === NO_UNIT || u.id.startsWith(`${NO_UNIT}-`)
 
 /** A census part's region, its name after " – " in the page's language: "Borci drugih jedinica – Slovenija" -> "Slovenija" */
-function regionOf(unit: Unit, lang: Lang): string {
-  const name = unitName(unit, lang)
+function regionOf(unit: Unit, unitText: UnitNames): string {
+  const name = unitText.name(unit)
   const cut = name.indexOf(' – ')
   return cut < 0 ? name : name.slice(cut + 3)
 }
@@ -62,6 +61,7 @@ function groupByYear(all: Unit[]): YearGroup[] {
 export default function UnitsByYear({ units }: { units: Unit[] }) {
   const t = useT()
   const lang = useLang()
+  const unitText = useUnitText()
   const to = useLocalePath()
   return (
     <div className="unit-years">
@@ -84,9 +84,9 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
                   </div>
                   <div className="unit-card-body">
                     <h4 className="unit-name">
-                      <Link href={to(unitHref(unit.id, lang))} className="unit-card-link">{unitName(unit, lang)}</Link>
+                      <Link href={to(unitHref(unit.id, lang))} className="unit-card-link">{unitText.name(unit)}</Link>
                     </h4>
-                    <p className="unit-desc">{unitDescription(unit, lang)}</p>
+                    <p className="unit-desc">{unitText.description(unit)}</p>
                     {parents && (
                       <p className="unit-parents">
                         {t.unitsPage.partOf}:{' '}
@@ -119,8 +119,8 @@ export default function UnitsByYear({ units }: { units: Unit[] }) {
                   <ul className="census-parts">
                     {census.map((unit) => (
                       <li key={unit.id}>
-                        <Link href={to(`/units/${unit.id}`)} aria-label={`${regionOf(unit, lang)}, ${t.borci(unit.soldierCount)}`}>
-                          <span className="census-part-name">{regionOf(unit, lang)}</span>
+                        <Link href={to(`/units/${unit.id}`)} aria-label={`${regionOf(unit, unitText)}, ${t.borci(unit.soldierCount)}`}>
+                          <span className="census-part-name">{regionOf(unit, unitText)}</span>
                           <span className="census-part-count">{formatNumber(lang, unit.soldierCount)}</span>
                         </Link>
                       </li>

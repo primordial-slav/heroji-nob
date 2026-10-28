@@ -8,17 +8,17 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import {
-  RECORD_PARAM, citation, entriesOf, findRecord, hasPage, isFamily, isMuseum, isPoreklo, lifeYears, recordPath, sourceTitle,
+  RECORD_PARAM, entriesOf, hasPage, isFamily, isMuseum, isPoreklo, lifeYears, recordPath,
 } from '@/app/lib/records'
+import { citation, sourceTitle } from '@/app/lib/recordSources'
 import { recordFacts } from '@/app/lib/recordFacts'
-import { fullRecord, loadKinList } from '@/app/lib/searchIndex'
+import { fullRecord, loadKin } from '@/app/lib/searchIndex'
 import { portraitFor } from '@/app/data/portraits'
 import SoldierPortrait from '@/app/components/SoldierPortrait'
 import { SoldierName } from '@/app/components/SoldierResults'
 import { SoldierMedals, honoursLine } from '@/app/components/Medal'
 import { ArrowLeftIcon, PrintIcon } from '@/app/components/Icons'
-import { useLang, useT } from '@/app/i18n/LangContext'
-import { unitName } from '@/app/i18n/units'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 
 // PDF.js only runs in the browser
 const EntryCrop = dynamic(() => import('@/app/components/EntryCrop'), { ssr: false })
@@ -32,6 +32,7 @@ type State =
 // A printable card for one soldier: /kartica?jedinica=<unit>&borac=<soldier id> (/en/kartica?… in English)
 export default function MemorialCard() {
   const lang = useLang()
+  const unitText = useUnitText()
   const t = useT()
   const [state, setState] = useState<State>({ status: 'loading' })
   const [settledCrops, setSettledCrops] = useState(0)
@@ -45,12 +46,9 @@ export default function MemorialCard() {
       setState({ status: 'missing' })
       return
     }
-    // The unit's kin list says where the record is; only that slice of full records loads
-    loadKinList(unit)
-      .then((list) => {
-        const found = findRecord(list, id)
-        return found ? fullRecord(found) : undefined
-      })
+    // The server says where the record is (loadKin); only that slice of full records loads
+    loadKin(unit, id)
+      .then((kin) => (kin ? fullRecord(kin.self) : undefined))
       .then((soldier) => setState(soldier ? { status: 'ready', unit, soldier } : { status: 'missing' }))
       .catch(() => setState({ status: 'failed' }))
   }, [])
@@ -104,7 +102,7 @@ export default function MemorialCard() {
           <div className="memorial-head has-portrait">
             <SoldierPortrait soldier={soldier} unitId={unit.id} portrait={portrait} className="memorial-portrait" framed />
             <div>
-              <p className="memorial-unit">{unitName(unit, lang)}</p>
+              <p className="memorial-unit">{unitText.name(unit)}</p>
               <h1 className="memorial-name"><SoldierName soldier={soldier} /></h1>
               {years && <p className="memorial-years">{years}</p>}
               {honours && <p className="memorial-honours">{honours}</p>}
@@ -145,7 +143,7 @@ export default function MemorialCard() {
           </section>
 
           <footer className="memorial-footer">
-            <p>{citation(soldier, lang)}</p>
+            <p>{citation(soldier, lang, t)}</p>
             <p className="memorial-link">{link}</p>
           </footer>
         </div>

@@ -3,11 +3,9 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { units } from '@/app/data/units'
-import { sources } from '@/app/data/sources'
-import index from '@/app/data/portrait-index.json'
-import { WARTIME_PORTRAITS } from '@/app/data/wartimePortraits'
 import { isNoUnit } from '@/app/components/UnitsByYear'
-import { photoOf } from '@/app/components/PortraitRails'
+import { photoOf } from '@/app/lib/railPhotos'
+import type { HomePictures } from '@/app/lib/homePictures'
 import { unitImageProps } from '@/app/lib/unitImage'
 import { useLocalePath, useT } from '@/app/i18n/LangContext'
 
@@ -17,9 +15,6 @@ import { useLocalePath, useT } from '@/app/i18n/LangContext'
 
 const UNITS = units.filter((u) => !isNoUnit(u))
 const UNIT_PHOTOS = UNITS.filter((u) => !u.image.includes('pdf-thumbs'))
-const FACES = WARTIME_PORTRAITS.filter((id) => photoOf(id))
-const PHOTO_COUNT = Object.values(index as Record<string, { same?: string }>).filter((p) => !p.same).length
-const BOOKS = sources.filter((s) => s.thumbnail)
 
 // A door's picture is a quarter of a card's (.unit-grid: one column on phones, at most 352px from 1152px)
 const PIC_SIZES = '(max-width: 640px) 25vw, 180px'
@@ -35,13 +30,14 @@ function pick<T>(list: T[], n: number, shuffled: boolean): T[] {
   return copy.slice(0, n)
 }
 
-export default function HomeDoors() {
+export default function HomeDoors({ pictures }: { pictures: HomePictures }) {
   const t = useT().home.doors
   const to = useLocalePath()
+  const { faces, portraits, books } = pictures
   const [choice, setChoice] = useState(() => ({
-    units: pick(UNIT_PHOTOS, 4, false), faces: pick(FACES, 6, false), books: pick(BOOKS, 3, false),
+    units: pick(UNIT_PHOTOS, 4, false), faces: pick(faces, 6, false), books: pick(books, 3, false),
   }))
-  useEffect(() => setChoice({ units: pick(UNIT_PHOTOS, 4, true), faces: pick(FACES, 6, true), books: pick(BOOKS, 3, true) }), [])
+  useEffect(() => setChoice({ units: pick(UNIT_PHOTOS, 4, true), faces: pick(faces, 6, true), books: pick(books, 3, true) }), [faces, books])
 
   return (
     <section className="doors" aria-labelledby="doors-title">
@@ -65,14 +61,14 @@ export default function HomeDoors() {
           <Link href={to('/galerija')} className="unit-card door">
             <div className="unit-card-photo door-pics door-faces" aria-hidden="true">
               {choice.faces.map((id) => {
-                const face = photoOf(id)!
+                const face = photoOf(id, portraits)!
                 return <img key={id} loading="lazy" src={face.src} alt="" style={{ objectPosition: `50% ${face.focus}%` }} />
               })}
             </div>
             <div className="unit-card-body">
               <h3 className="unit-name">{t.photos}</h3>
               <p className="unit-desc">{t.photosText}</p>
-              <p className="unit-count">{t.photosCount(PHOTO_COUNT)}</p>
+              <p className="unit-count">{t.photosCount(pictures.photoCount)}</p>
             </div>
           </Link>
         </li>
@@ -84,7 +80,7 @@ export default function HomeDoors() {
             <div className="unit-card-body">
               <h3 className="unit-name">{t.books}</h3>
               <p className="unit-desc">{t.booksText}</p>
-              <p className="unit-count">{t.booksCount(sources.length)}</p>
+              <p className="unit-count">{t.booksCount(pictures.bookCount)}</p>
             </div>
           </Link>
         </li>

@@ -3,9 +3,8 @@
 import type { LifeEvent, Soldier, SoldierSource } from '@/app/lib/types'
 import { units } from '@/app/data/units'
 import { isWoman } from '@/app/lib/standIn'
-import { useLang, useT } from '@/app/i18n/LangContext'
+import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import type { Messages } from '@/app/i18n'
-import { unitShortName } from '@/app/i18n/units'
 import { CandleIcon } from './Icons'
 import { unitKind } from '@/app/lib/recordFacts'
 
@@ -34,6 +33,7 @@ interface Props {
 // "Životni put": the dated steps of a soldier's life, down a line, each one pointing at the entry it was read from
 export default function LifeLine({ soldier, entries, unitName, pageOf, onShow }: Props) {
   const lang = useLang()
+  const unitText = useUnitText()
   const messages = useT()
   const t = messages.life
   const steps = soldier.life_events ?? []
@@ -55,7 +55,7 @@ export default function LifeLine({ soldier, entries, unitName, pageOf, onShow }:
         // from another unit's book: that unit
         const file = entries[e.s ?? 0]?.unit_file
         const other = file ? units.find((u) => u.dataFile === `/${file}`) : undefined
-        return other ? [t.unit(unitKind(other.name)), unitShortName(other, lang)] : [t.unit(unitKind(unitName)), e.x]
+        return other ? [t.unit(unitKind(other.name)), unitText.shortName(other)] : [t.unit(unitKind(unitName)), e.x]
       }
       case 'wounded': return [t.wounded(woman), e.x]
       case 'captured': return [t.captured(woman), e.x]

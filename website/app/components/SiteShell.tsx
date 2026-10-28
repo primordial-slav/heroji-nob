@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { Golos_Text, PT_Serif } from 'next/font/google'
 import '../globals.css'
-import SiteFrame from './SiteFrame'
+import SiteFrame, { type LanguageProvider } from './SiteFrame'
 import { HTML_LANG, type Lang } from '../i18n/config'
 
 // Self-hosted at build time; both faces cover Serbo-Croatian, Slovene and Macedonian, Latin and Cyrillic
@@ -46,10 +46,10 @@ export function SiteDocument({ lang, children }: { lang: Lang; children: ReactNo
 }
 
 // The page around every route, in its language: the two root layouts ((sr) and (intl)/[lang]) render it
-export default function SiteShell({ lang, children }: { lang: Lang; children: ReactNode }) {
+export default function SiteShell({ lang, Language, children }: { lang: Lang; Language: LanguageProvider; children: ReactNode }) {
   return (
     <SiteDocument lang={lang}>
-      <SiteFrame lang={lang}>{children}</SiteFrame>
+      <SiteFrame lang={lang} Language={Language}>{children}</SiteFrame>
     </SiteDocument>
   )
 }

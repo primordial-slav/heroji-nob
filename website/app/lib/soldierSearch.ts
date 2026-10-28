@@ -1,8 +1,7 @@
 import { normalizeForSearch } from './diacritics'
 import type { Soldier } from './types'
 
-// The search itself, without React. useFuseSearch runs it off the page's thread, in search.worker.ts, each worker
-// on a slice of the soldiers, and merges the slices' hits (mergeHits).
+// The search itself, which the server runs over every soldier (lib/searchData.ts, mergeHits).
 //
 // Each word typed is looked up on its own among the words of each soldier: his surname, given name, nickname,
 // father (as printed, "Krste", and in the nominative, "Krsto"), the names other books print for him, his birth
@@ -34,7 +33,7 @@ import type { Soldier } from './types'
 // A unit's soldiers match when every word typed is in the unit's name ("13. proleterska", "Kozaračka"), not in the
 // name of the person it is named after: "Marko" does not list all of Prva lička brigada „Marko Orešković“.
 
-/** What search reads of a soldier: a worker is sent only this */
+/** What search reads of a soldier */
 export interface SearchFields {
   last_name: string
   middle_name: string
@@ -199,7 +198,7 @@ function closeness(d: number): number {
   return TWO_TYPOS
 }
 
-// The order results are listed in when they match alike, as numbers a worker can compute for its slice alone:
+// The order results are listed in when they match alike, as numbers that can be computed for a slice alone:
 // Serbo-Croatian alphabetical order of the surname, then of the given name and father, ten letters each
 const ALPHABET = ' abcčćdđefghijklmnopqrsštuvwxyzž'
 const LETTER = new Map([...ALPHABET].map((ch, i) => [ch, i]))

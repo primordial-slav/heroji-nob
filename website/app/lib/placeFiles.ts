@@ -2,11 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import { PLACE_CHUNK_BYTES, placeShard, type PlaceRow } from './relations'
 
-// Server only: the places index (public/relations/places.json, written by scripts/build_relations.py) cut into the
-// small files the record dialog loads (app/places/): a soldier's id leads to a shard that says which chunk his place
-// is in and where, and the chunk holds the place with its people. So opening a record loads two small files instead
-// of every place. The shard also gives each soldier's set of embroidered frames (data/vez-sets.json, written by
-// scripts/build_vez.py; lib/vez.ts), a number and no more. Read once per change of either file.
+// The places index (public/relations/places.json, written by scripts/build_relations.py) cut into the small files
+// the record dialog loads (lib/dataFiles.ts; scripts/prepare-data.ts writes them): a soldier's id leads to a shard
+// that says which chunk his place is in and where, and the chunk holds the place with its people. So opening a record
+// loads two small files instead of every place. The shard also gives each soldier's set of embroidered frames
+// (data/vez-sets.json, written by scripts/build_vez.py; lib/vez.ts), a number and no more.
 
 interface PlaceSplit {
   /** The places, about PLACE_CHUNK_BYTES of them a chunk, a large place alone */
@@ -17,13 +17,12 @@ interface PlaceSplit {
   vez: Map<string, Record<string, number>>
 }
 
-let cached: { mtime: number; split: PlaceSplit } | null = null
+export const PLACES_FILE = path.join('public', 'relations', 'places.json')
+export const VEZ_FILE = path.join('data', 'vez-sets.json')
 
 export function placeSplit(): PlaceSplit {
-  const file = path.join(process.cwd(), 'public', 'relations', 'places.json')
-  const vezFile = path.join(process.cwd(), 'data', 'vez-sets.json')
-  const mtime = fs.statSync(file).mtimeMs + fs.statSync(vezFile).mtimeMs
-  if (cached && cached.mtime === mtime) return cached.split
+  const file = path.join(process.cwd(), PLACES_FILE)
+  const vezFile = path.join(process.cwd(), VEZ_FILE)
   const doc: { files: string[]; places: [string, string, [string, string, number, string][]][] } =
     JSON.parse(fs.readFileSync(file, 'utf8'))
   const chunks: PlaceRow[][] = []
@@ -53,6 +52,5 @@ export function placeSplit(): PlaceSplit {
     if (!ids) vez.set(shard, (ids = {}))
     ids[id] = set
   }
-  cached = { mtime, split: { chunks, where, vez } }
-  return cached.split
+  return { chunks, where, vez }
 }

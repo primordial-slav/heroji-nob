@@ -6,6 +6,7 @@ import { ArrowLeftIcon } from './Icons'
 import SiteFrame from './SiteFrame'
 import { DEFAULT_LANG, HTML_LANG, localePath, splitPath, type Lang } from '@/app/i18n/config'
 import { messagesFor } from '@/app/i18n'
+import AnyLanguage from '@/app/i18n/AnyLanguage'
 
 // An address the site doesn't have. The page is built once for every language, so it reads the language from the
 // address in the browser: /en/xyz answers in English, /units/xyz in Serbo-Croatian.
@@ -20,7 +21,7 @@ export default function NotFoundPage() {
   }, [])
   const t = messagesFor(lang)
   return (
-    <SiteFrame lang={lang}>
+    <SiteFrame lang={lang} Language={AnyLanguage}>
       <div className="container page-content">
         <h1 className="page-title">{t.notFound.title}</h1>
         <p>{t.notFound.text}</p>

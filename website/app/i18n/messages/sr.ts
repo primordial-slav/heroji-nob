@@ -42,7 +42,6 @@ export const sr = {
     fieldLabel: 'Prezime, ime ili mesto',
     /** "110.430 imena": under the search field */
     total: (x: number) => `${n(x)} ${plural('sr', x, { one: 'ime', other: 'imena' })}`,
-    loading: 'Učitavanje spiskova…',
     loadFailedTitle: 'Spiskovi se nisu učitali',
     loadFailedText: 'Proverite internet vezu i osvežite stranu.',
     noneTitle: (q: string) => `Nema boraca za „${q}“`,
@@ -331,7 +330,6 @@ export const sr = {
     allUnits: 'Sve jedinice',
     search: 'Pretraga u ovoj jedinici',
     placeholder: 'Prezime, ime ili mesto',
-    loading: 'Učitavanje spiska',
     loadFailedTitle: 'Spisak se nije učitao',
     loadFailedText: 'Proverite internet vezu i osvežite stranu.',
     noneTitle: (q: string) => `Nema boraca za „${q}“ u ovoj jedinici`,
