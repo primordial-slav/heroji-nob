@@ -1,0 +1,797 @@
+{
+ "about": "The embroidered frames' sets in the order website/app/data/vez.json numbers them (scripts/make_vez_frames.py); scripts/build_vez.py gives each soldier one.",
+ "sets": [
+  [
+   "neutralni",
+   [
+    [
+     "neutralni-1",
+     "Kolo, zvezde, zubi"
+    ],
+    [
+     "neutralni-2",
+     "Krstići oko romba"
+    ],
+    [
+     "neutralni-3",
+     "Zvezde i zubi"
+    ],
+    [
+     "neutralni-4",
+     "Crveno i plavo"
+    ],
+    [
+     "neutralni-5",
+     "Ivica peškira"
+    ],
+    [
+     "neutralni-6",
+     "Ritam"
+    ],
+    [
+     "neutralni-7",
+     "Bod napred"
+    ],
+    [
+     "neutralni-8",
+     "Krstići u uglovima"
+    ],
+    [
+     "neutralni-9",
+     "Vučji zubi"
+    ]
+   ]
+  ],
+  [
+   "si-gorenjska",
+   [
+    [
+     "si-gorenjska-1",
+     "Nageljčki"
+    ],
+    [
+     "si-gorenjska-2",
+     "Nagelj na vrhu"
+    ],
+    [
+     "si-gorenjska-3",
+     "Nageljčki v križcih"
+    ]
+   ]
+  ],
+  [
+   "si-primorska",
+   [
+    [
+     "si-primorska-1",
+     "Idrijska čipka i nagelj"
+    ],
+    [
+     "si-primorska-2",
+     "Idrijski trak"
+    ],
+    [
+     "si-primorska-3",
+     "Čipka, crveno"
+    ]
+   ]
+  ],
+  [
+   "si-dolenjska",
+   [
+    [
+     "si-dolenjska-1",
+     "Belokranjski vez"
+    ],
+    [
+     "si-dolenjska-2",
+     "Križci i trouglovi"
+    ],
+    [
+     "si-dolenjska-3",
+     "Krugovi i krstovi"
+    ]
+   ]
+  ],
+  [
+   "si-stajerska",
+   [
+    [
+     "si-stajerska-1",
+     "Venac nageljčića"
+    ],
+    [
+     "si-stajerska-2",
+     "Crveno i plavo"
+    ],
+    [
+     "si-stajerska-3",
+     "Strelice"
+    ]
+   ]
+  ],
+  [
+   "hr-lika",
+   [
+    [
+     "hr-lika-1",
+     "Lička kapa"
+    ],
+    [
+     "hr-lika-2",
+     "Lička pregača"
+    ],
+    [
+     "hr-lika-3",
+     "Čarape"
+    ],
+    [
+     "hr-lika-4",
+     "Crveno i crno"
+    ]
+   ]
+  ],
+  [
+   "hr-kordun",
+   [
+    [
+     "hr-kordun-1",
+     "Romb i krst"
+    ],
+    [
+     "hr-kordun-2",
+     "Strelice"
+    ],
+    [
+     "hr-kordun-3",
+     "Zubi"
+    ]
+   ]
+  ],
+  [
+   "hr-banija",
+   [
+    [
+     "hr-banija-1",
+     "Stepenice"
+    ],
+    [
+     "hr-banija-2",
+     "Trouglovi"
+    ],
+    [
+     "hr-banija-3",
+     "Rese"
+    ]
+   ]
+  ],
+  [
+   "hr-zagora",
+   [
+    [
+     "hr-zagora-1",
+     "Vrlika"
+    ],
+    [
+     "hr-zagora-2",
+     "Zvezde i zlato"
+    ],
+    [
+     "hr-zagora-3",
+     "Pregača s resama"
+    ]
+   ]
+  ],
+  [
+   "hr-dalmacija",
+   [
+    [
+     "hr-dalmacija-1",
+     "Paška čipka"
+    ],
+    [
+     "hr-dalmacija-2",
+     "Paška mreža"
+    ],
+    [
+     "hr-dalmacija-3",
+     "Bela čipka"
+    ]
+   ]
+  ],
+  [
+   "hr-dubrovnik",
+   [
+    [
+     "hr-dubrovnik-1",
+     "Konavoski vez"
+    ],
+    [
+     "hr-dubrovnik-2",
+     "Konavle, zeleno"
+    ],
+    [
+     "hr-dubrovnik-3",
+     "Konavle, zlato"
+    ]
+   ]
+  ],
+  [
+   "hr-slavonija",
+   [
+    [
+     "hr-slavonija-1",
+     "Zlatovez"
+    ],
+    [
+     "hr-slavonija-2",
+     "Zlatni cvetovi"
+    ],
+    [
+     "hr-slavonija-3",
+     "Zlatni uvojci"
+    ]
+   ]
+  ],
+  [
+   "hr-zagorje",
+   [
+    [
+     "hr-zagorje-1",
+     "Zlato na crvenom"
+    ],
+    [
+     "hr-zagorje-2",
+     "Cvetne marame"
+    ],
+    [
+     "hr-zagorje-3",
+     "Grančice"
+    ]
+   ]
+  ],
+  [
+   "hr-posavina",
+   [
+    [
+     "hr-posavina-1",
+     "Cvetovi na plavom"
+    ],
+    [
+     "hr-posavina-2",
+     "Plavi cvetovi"
+    ],
+    [
+     "hr-posavina-3",
+     "Ruže i talas"
+    ]
+   ]
+  ],
+  [
+   "hr-istra",
+   [
+    [
+     "hr-istra-1",
+     "Mreža"
+    ],
+    [
+     "hr-istra-2",
+     "Festoni"
+    ],
+    [
+     "hr-istra-3",
+     "Bela mreža"
+    ]
+   ]
+  ],
+  [
+   "ba-krajina",
+   [
+    [
+     "ba-krajina-1",
+     "Zmijanjski vez"
+    ],
+    [
+     "ba-krajina-2",
+     "Zmijanjske zvezde"
+    ],
+    [
+     "stecak-loza",
+     "Stećak: loza i rozeta"
+    ],
+    [
+     "ba-krajina-4",
+     "Zmijanje: krstići"
+    ]
+   ]
+  ],
+  [
+   "ba-cazin",
+   [
+    [
+     "havlija",
+     "Havlija: lale i karanfili"
+    ],
+    [
+     "stecak-spirala",
+     "Stećak: spirala i arkade"
+    ],
+    [
+     "ba-cazin-3",
+     "Lale"
+    ]
+   ]
+  ],
+  [
+   "ba-hercegovina",
+   [
+    [
+     "ba-hercegovina-1",
+     "Hercegovačka marama"
+    ],
+    [
+     "stecak-loza",
+     "Stećak: loza i rozeta"
+    ],
+    [
+     "stecak-spirala",
+     "Stećak: spirala i arkade"
+    ],
+    [
+     "ba-hercegovina-4",
+     "Marama, plavo"
+    ]
+   ]
+  ],
+  [
+   "ba-srednja",
+   [
+    [
+     "havlija",
+     "Havlija: lale i karanfili"
+    ],
+    [
+     "havlija-zlato",
+     "Havlija: zlatni karanfili"
+    ],
+    [
+     "stecak-plavo",
+     "Stećak: spirala, plavo"
+    ],
+    [
+     "ba-srednja-4",
+     "Lale u nizu"
+    ]
+   ]
+  ],
+  [
+   "ba-tuzla",
+   [
+    [
+     "havlija",
+     "Havlija: lale i karanfili"
+    ],
+    [
+     "stecak-spirala",
+     "Stećak: spirala i arkade"
+    ],
+    [
+     "ba-tuzla-3",
+     "Posavska čipka"
+    ],
+    [
+     "ba-tuzla-4",
+     "Cvetovi"
+    ]
+   ]
+  ],
+  [
+   "ba-istok",
+   [
+    [
+     "stecak-loza",
+     "Stećak: loza i rozeta"
+    ],
+    [
+     "havlija-zlato",
+     "Havlija: zlatni karanfili"
+    ],
+    [
+     "stecak-plavo",
+     "Stećak: spirala, plavo"
+    ],
+    [
+     "ba-istok-4",
+     "Stećak: arkade"
+    ]
+   ]
+  ],
+  [
+   "me-stara",
+   [
+    [
+     "me-stara-1",
+     "Zlatovez: petlje"
+    ],
+    [
+     "me-stara-2",
+     "Gajtan i zlato"
+    ],
+    [
+     "me-stara-3",
+     "Dolama"
+    ],
+    [
+     "me-stara-4",
+     "Zlatni uvojci"
+    ]
+   ]
+  ],
+  [
+   "me-brda",
+   [
+    [
+     "me-brda-1",
+     "Stećak: traka i uže"
+    ],
+    [
+     "me-brda-2",
+     "Crveni gajtan"
+    ],
+    [
+     "me-brda-3",
+     "Stećak, tamno"
+    ],
+    [
+     "me-brda-4",
+     "Zlato na crvenom"
+    ]
+   ]
+  ],
+  [
+   "me-boka",
+   [
+    [
+     "me-boka-1",
+     "Dobrotska čipka"
+    ],
+    [
+     "me-boka-2",
+     "Zlato na svili"
+    ],
+    [
+     "me-boka-3",
+     "Bokeška mreža"
+    ]
+   ]
+  ],
+  [
+   "sandzak",
+   [
+    [
+     "sandzak-1",
+     "Sjeničko-pešterski ćilim"
+    ],
+    [
+     "sandzak-2",
+     "Ćilim: lale"
+    ],
+    [
+     "havlija",
+     "Havlija: lale i karanfili"
+    ],
+    [
+     "sandzak-4",
+     "Plave lale"
+    ]
+   ]
+  ],
+  [
+   "albanci",
+   [
+    [
+     "xhubleta",
+     "Xhubleta"
+    ],
+    [
+     "albanci-2",
+     "Pruge i rombovi"
+    ],
+    [
+     "kosovski",
+     "Kosovski vez, crveno i zlato"
+    ]
+   ]
+  ],
+  [
+   "rs-sumadija",
+   [
+    [
+     "rs-sumadija-1",
+     "Grančice"
+    ],
+    [
+     "rs-sumadija-2",
+     "Kolo: prstenovi"
+    ],
+    [
+     "rs-sumadija-3",
+     "Kolo, romb"
+    ],
+    [
+     "rs-sumadija-4",
+     "Cvetni vez"
+    ]
+   ]
+  ],
+  [
+   "rs-zapad",
+   [
+    [
+     "rs-zapad-1",
+     "Zlatibor"
+    ],
+    [
+     "rs-zapad-2",
+     "Kuke"
+    ],
+    [
+     "rs-zapad-3",
+     "Kolo: prstenovi"
+    ]
+   ]
+  ],
+  [
+   "rs-istok",
+   [
+    [
+     "rs-istok-1",
+     "Timok (čarape)"
+    ],
+    [
+     "rs-istok-2",
+     "Pletivo"
+    ],
+    [
+     "rs-istok-3",
+     "Romb i krst"
+    ]
+   ]
+  ],
+  [
+   "rs-jug",
+   [
+    [
+     "rs-jug-1",
+     "Pirotski ćilim: kornjače"
+    ],
+    [
+     "rs-jug-2",
+     "Pirotski ćilim: kuke"
+    ],
+    [
+     "rs-jug-3",
+     "Kornjače u sredini"
+    ],
+    [
+     "rs-jug-4",
+     "Plave stepenice"
+    ]
+   ]
+  ],
+  [
+   "rs-kosovo",
+   [
+    [
+     "kosovski",
+     "Kosovski vez, crveno i zlato"
+    ],
+    [
+     "rs-kosovo-2",
+     "Romb i zlato"
+    ],
+    [
+     "xhubleta",
+     "Xhubleta"
+    ]
+   ]
+  ],
+  [
+   "vo-srem",
+   [
+    [
+     "vo-srem-1",
+     "Tkane pregače"
+    ],
+    [
+     "vo-srem-2",
+     "Šling"
+    ],
+    [
+     "vo-srem-3",
+     "Belo i zlato"
+    ],
+    [
+     "vo-srem-4",
+     "Romb i krst"
+    ]
+   ]
+  ],
+  [
+   "vo-banat",
+   [
+    [
+     "vo-banat-1",
+     "Cvetni vez"
+    ],
+    [
+     "vo-banat-2",
+     "Šling: cvetovi"
+    ],
+    [
+     "vo-banat-3",
+     "Ruže i lišće"
+    ],
+    [
+     "vo-banat-4",
+     "Cvetovi na zelenom"
+    ]
+   ]
+  ],
+  [
+   "vo-backa",
+   [
+    [
+     "vo-backa-1",
+     "Šling: festoni"
+    ],
+    [
+     "vo-backa-2",
+     "Šling zlatom"
+    ],
+    [
+     "vo-backa-3",
+     "Šling: cvetovi"
+    ],
+    [
+     "vo-backa-4",
+     "Plavi cvetovi"
+    ]
+   ]
+  ],
+  [
+   "mk",
+   [
+    [
+     "mk-1",
+     "Krstovi i kolca"
+    ],
+    [
+     "mk-2",
+     "Sindžir i potište"
+    ],
+    [
+     "mk-3",
+     "Ptice"
+    ]
+   ]
+  ],
+  [
+   "jevreji",
+   [
+    [
+     "jevreji-1",
+     "Šipak (nar)"
+    ],
+    [
+     "jevreji-2",
+     "Šipak, zlato"
+    ]
+   ]
+  ],
+  [
+   "slovaci",
+   [
+    [
+     "slovaci-1",
+     "Čičmany"
+    ],
+    [
+     "slovaci-2",
+     "Slovački cvetni vez"
+    ]
+   ]
+  ],
+  [
+   "cesi",
+   [
+    [
+     "cesi-1",
+     "Modrotisk"
+    ],
+    [
+     "cesi-2",
+     "Moravski cvetovi"
+    ]
+   ]
+  ],
+  [
+   "rusini",
+   [
+    [
+     "rusini-1",
+     "Rusinski vez"
+    ],
+    [
+     "rusini-2",
+     "Ruže i strelice"
+    ]
+   ]
+  ],
+  [
+   "ukrajinci",
+   [
+    [
+     "ukrajinci-1",
+     "Vyshyvanka"
+    ],
+    [
+     "ukrajinci-2",
+     "Crveno i crno"
+    ]
+   ]
+  ],
+  [
+   "rusi",
+   [
+    [
+     "rusi-1",
+     "Ptice"
+    ],
+    [
+     "rusi-2",
+     "Ptice u nizu"
+    ]
+   ]
+  ],
+  [
+   "italijani",
+   [
+    [
+     "italijani-1",
+     "Punto Assisi"
+    ],
+    [
+     "italijani-2",
+     "Punto Assisi, plavo"
+    ]
+   ]
+  ],
+  [
+   "nemci",
+   [
+    [
+     "nemci-1",
+     "Blaudruck"
+    ],
+    [
+     "nemci-2",
+     "Kreuzstich"
+    ]
+   ]
+  ],
+  [
+   "madjari",
+   [
+    [
+     "madjari-1",
+     "Matyó"
+    ],
+    [
+     "madjari-2",
+     "Kékfestés"
+    ]
+   ]
+  ]
+ ]
+}

@@ -4,7 +4,9 @@ import { useEffect, useMemo, useState } from 'react'
 import index from '@/app/data/portrait-index.json'
 import { WARTIME_PORTRAITS } from '@/app/data/wartimePortraits'
 import { familyContributions } from '@/app/data/family'
+import railVez from '@/app/data/railVez.json'
 import type { Soldier } from '@/app/lib/types'
+import { CAPPED_SETS, frameFor, vezProps } from '@/app/lib/vez'
 import { useT } from '@/app/i18n/LangContext'
 
 // Wartime portraits drifting slowly up the empty margins beside the home page column, on screens wide enough to
@@ -37,7 +39,12 @@ interface Face {
   src: string
   focus: number
   soldier?: Soldier
+  /** His embroidered frame (lib/vez.ts), the one his record shows */
+  frame: number
 }
+
+// Each face's set of frames, where it has one (scripts/build_vez.py)
+const RAIL_VEZ = railVez as Record<string, number>
 
 // A new order on every visit
 function shuffled<T>(items: T[]): T[] {
@@ -49,14 +56,10 @@ function shuffled<T>(items: T[]): T[] {
   return out
 }
 
-// Each print wears one of six thin embroidered frames (public/vez/, scripts/make_vez_frames.py), in turn down a
-// column, so no two neighbours match
-const FRAMES = 6
-
-function RailFace({ face, frame, onOpen }: { face: Face; frame: number; onOpen: (soldier: Soldier) => void }) {
+function RailFace({ face, onOpen }: { face: Face; onOpen: (soldier: Soldier) => void }) {
   const { soldier } = face
   const img = (
-    <span className="rail-print" data-okvir={frame}>
+    <span className="rail-print vez" {...vezProps(face.frame)}>
       <img src={face.src} alt="" loading="lazy" style={{ objectPosition: `50% ${face.focus}%` }} />
     </span>
   )
@@ -94,19 +97,24 @@ export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) 
 
   // Every face once: one picture once, and one person once, whether the index says so (`same`) or the lists do
   // (two ids of a soldier linked across units lead to the same record). The faces wait for the lists, so the
-  // last rule holds from the start and each comes with its name.
+  // last rule holds from the start and each comes with its name. Of the Italians, Germans and Hungarians, one face
+  // at most.
   const faces = useMemo<Face[]>(() => {
     if (!order || soldiers.length === 0) return []
     const seen = new Set<string>()
     const people = new Set<Soldier>()
     const out: Face[] = []
+    let capped = 0
     for (const id of order) {
       const keys = [pictureOf(id), `person/${INDEX[id]?.same ?? id}`]
       const soldier = byId.get(id)
       if (keys.some((k) => seen.has(k)) || (soldier && people.has(soldier))) continue
+      const set = RAIL_VEZ[id] ?? null
+      if (set !== null && CAPPED_SETS.has(set) && capped++ > 0) continue
       keys.forEach((k) => seen.add(k))
       if (soldier) people.add(soldier)
-      out.push({ id, ...photoOf(id)!, soldier })
+      const frame = frameFor(set, soldier ? `${soldier.last_name} ${soldier.first_name}` : id)
+      out.push({ id, ...photoOf(id)!, soldier, frame })
     }
     return out
   }, [order, byId, soldiers.length])
@@ -120,12 +128,12 @@ export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) 
           <div className="rail-window">
             <div className="rail-track">
               <div className="rail-set">
-                {side.map((f, j) => <RailFace key={f.id} face={f} frame={((j + i * 3) % FRAMES) + 1} onOpen={onOpen} />)}
+                {side.map((f) => <RailFace key={f.id} face={f} onOpen={onOpen} />)}
               </div>
               {/* The same faces again, so the drift loops without a seam: out of reach of the keyboard and
                   screen readers, which have the first set */}
               <div className="rail-set" inert>
-                {side.map((f, j) => <RailFace key={f.id} face={f} frame={((j + i * 3) % FRAMES) + 1} onOpen={onOpen} />)}
+                {side.map((f) => <RailFace key={f.id} face={f} onOpen={onOpen} />)}
               </div>
             </div>
           </div>

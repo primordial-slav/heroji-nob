@@ -223,7 +223,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
         )}
         <SoldierMedals soldier={soldier} look="foto" className="modal-medals" />
         <div className="modal-head">
-          <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" />
+          <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" framed />
           <div>
             <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
             {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => shownUnitName(u, lang)).join(' · ')}</p>}

@@ -147,11 +147,23 @@ function placeFile<T>(path: string): Promise<T> {
   return file as Promise<T>
 }
 
+/** A shard of ids: where each soldier's place is (w), and his set of embroidered frames (v, lib/vez.ts) */
+interface PlaceShard {
+  w: Record<string, [number, number]>
+  v: Record<string, number>
+}
+
 /** The place a soldier was born in, with everyone else born there, or null if the index doesn't place him */
 export async function placeOf(id: string): Promise<Place | null> {
-  const shard = await placeFile<Record<string, [number, number]>>(`/places/of/${placeShard(id)}`)
-  const at = shard[id]
+  const shard = await placeFile<PlaceShard>(`/places/of/${placeShard(id)}`)
+  const at = shard.w[id]
   if (!at) return null
   const [village, municipality, rows] = (await placeFile<PlaceRow[]>(`/places/chunk/${at[0]}`))[at[1]]
   return { village, municipality, members: rows.map(([id, name, file, years]) => ({ id, name, file, years })) }
+}
+
+/** A soldier's set of embroidered frames, or null for the neutral set (a shard with no one of his is no file) */
+export async function vezSetOf(id: string): Promise<number | null> {
+  const shard = await placeFile<PlaceShard>(`/places/of/${placeShard(id)}`).catch(() => null)
+  return shard?.v[id] ?? null
 }
