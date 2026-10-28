@@ -5,6 +5,7 @@ import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { SoldierMedals } from './Medal'
 import { useLang, useT } from '@/app/i18n/LangContext'
+import { formatNumber } from '@/app/i18n/format'
 import { unitName } from '@/app/i18n/units'
 import { unitByName } from '@/app/lib/records'
 import { PAGE_SIZES } from '@/app/lib/searchIndex'
@@ -108,7 +109,9 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
           <Fragment key={soldier.soldier_id}>
           {start + k === firstNear && (
             <li className="result-similar">
-              <span className="result-similar-title">{t.results.similarTitle}</span>
+              <span className="result-similar-title">
+                {t.results.similarTitle} <span className="result-similar-count">· {formatNumber(lang, count - firstNear)}</span>
+              </span>
               <span className="result-similar-note">{t.results.similarNote}</span>
             </li>
           )}
