@@ -675,6 +675,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Priloga »Udeleženci narodnoosvobodilnega gibanja iz okraja Mileševo, padli med drugo svetovno vojno« (str. 153–197), po takratnih občinah, z rojstvom, vstopom v enoto in smrtjo. Vneseni so borci in, označeni kot aktivisti, ljudje gibanja, ki jih seznam šteje. Seznamov žrtev fašističnega terorja in mrtvih na drugi strani iz iste knjige nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'porodicna-arhiva':
       'Borci, ki jih ni na nobenem seznamu na strani in o katerih so družine poslale podatke iz svojih dokumentov: vojaških knjižic, odločb, fotografij. Podatke navajamo, kot so zapisani v dokumentu. Najdete jih med Borci drugih enot.',
+    'uzicka-gimnazija':
+      'Seznam »Dijaki, profesorji in nekdanji dijaki užiške gimnazije, padli v narodnoosvobodilnem boju 1941–1945« (str. 297–317): profesorji in drugi delavci gimnazije ter njeni dijaki in nekdanji dijaki, s kratkim življenjepisom. Seznam šteje tudi tiste, ki jih je okupator s pomagači ustrelil ali so umrli v taboriščih; vneseni so tudi tisti, ki niso bili borci, označeni kot aktivisti ali udeleženci. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
   },
   mk: {
     'prva-licka-proleterska': 'Монографија, библиотека „Ratna prošlost naroda i narodnosti Jugoslavije“, кн. 322',
@@ -1339,6 +1341,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Прилогот „Учесници во народноослободителното движење од Милешевската околија загинати во текот на Втората светска војна“ (стр. 153–197), по тогашните општини, со раѓањето, стапувањето во единицата и загинувањето. Внесени се борците и, означени како активисти, луѓето од движењето што ги брои списокот. Списоците на жртвите на фашистичкиот терор и на загинатите на другата страна од истата книга не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'porodicna-arhiva':
       'Борци што ги нема во ниту еден список на сајтот, а за кои семејствата испратија податоци од своите документи: воени книшки, решенија, фотографии. Податоците ги пренесуваме онака како што стојат во документот. Ќе ги најдете меѓу Борците од други единици.',
+    'uzicka-gimnazija':
+      'Списокот „Ученици, професори и поранешни ученици на ужичката гимназија загинати во народноослободителната борба од 1941 до 1945 година“ (стр. 297–317): професорите и другите вработени во гимназијата и нејзините ученици и поранешни ученици, со кратка биографија. Списокот ги брои и оние што окупаторот и неговите помагачи ги стрелале или што починале во логорите; внесени се и оние што не биле борци, означени како активисти или учесници. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
   },
   en: {
     'prva-licka-proleterska': 'Brigade history, in the series Ratna prošlost naroda i narodnosti Jugoslavije, vol. 322',
@@ -2002,6 +2006,8 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'The appendix of the participants of the liberation movement from the Mileševo district who died in the Second World War (pp. 153–197), by the municipalities of the time, with birth, joining a unit and death. Fighters were entered and, marked as activists, the movement’s people the list counts. The same book’s lists of the victims of fascist terror and of the dead on the other side were not entered. The book is not tied to one unit. Wherever we are sure that someone in it is already on the site, we have added what the book says about them to their record. The rest are listed under Fighters of other units.',
     'porodicna-arhiva':
       'Fighters who are in no list on the site, whose families have sent us details from their own papers: military booklets, decisions, photographs. We give the details as the papers state them. You will find them under Fighters of other units.',
+    'uzicka-gimnazija':
+      'The list of the pupils, teachers and former pupils of the Užice gymnasium who died in the war of liberation, 1941–1945 (pp. 297–317): the teachers and other staff and the pupils and former pupils, each with a short biography. The list also counts those the occupier and its helpers shot or who died in the camps; those who were not fighters were entered too, marked as activists or participants. The book is not tied to one unit. Wherever we are sure that someone in it is already on the site, we have added what the book says about them to their record. The rest are listed under Fighters of other units.',
   },
 }
 
