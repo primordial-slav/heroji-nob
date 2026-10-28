@@ -79,3 +79,6 @@ out/
 # The server search's data, built before each build (website/scripts/prepare-search.ts)
 website/search-data/
 *.next-env.d.ts
+
+# TypeScript's incremental build cache
+*.tsbuildinfo
