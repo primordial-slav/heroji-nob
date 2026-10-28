@@ -1014488,14 +1014488,6 @@
     "reason": "Same soldier in borci-sutjeske-16-banijska.pdf and https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=219; same father, birthplace, death place, death year"
   },
   {
-    "id": 110350,
-    "action": "merge",
-    "soldier_id": "0047000548",
-    "merge_id": "0047010533",
-    "merge_name": "Čanak Đure Ilija",
-    "reason": "Same soldier in borci-sutjeske-16-banijska.pdf and https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=218; same father, birthplace, death year"
-  },
-  {
     "id": 110351,
     "action": "merge",
     "soldier_id": "0047000555",
@@ -1845643,5 +1845635,22 @@
       "pdf_y": 590.4
     },
     "reason": "Vrančić Svetka Rade: glued into the entry of Volf Filip, the heading \"VRANClC (Svetka) RADE\" missed by the parser; read from the record and the page, 2026-10-28"
+  },
+  {
+    "id": 280061,
+    "action": "add",
+    "soldier_id": "0047010531",
+    "new_id": "0047010533",
+    "record": {
+      "last_name": "Čanak",
+      "middle_name": "Đure",
+      "fathers_name": "Đuro",
+      "first_name": "Ilija",
+      "additional_info": "mlađi; borac, rođen 1920. godine, Ćore, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 1924. godine, poginuo u bici za ranjenike u dolini rijeke Neretve marta 1943. godine.",
+      "birth_year": "1920",
+      "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=218",
+      "source_page": 206
+    },
+    "reason": "Čanak Đure Ilija \"mlađi\" (the younger), born 1920, fell at the Neretva in March 1943, is not the Ilija born 1902 of Ćore who fell at Miljevina on 14 June 1943 (0047000548): merge 110350 taken off and his own record back under his id (the user's decision, 2026-10-28)"
   }
 ]
