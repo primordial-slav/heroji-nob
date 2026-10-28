@@ -5455,8 +5455,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=289",
         "source_page": 289,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0009000161",
+        "name": "Cvetinov Dragutina Radoslav",
+        "additional_info": "1925, Orlovat, zemljoradnik, poginuo i sahranjen u Rumi",
+        "pdf_file": "prva-vojvodjanska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 206.4,
+        "pdf_y": 332.5,
+        "pdf_x_end": 348.0,
+        "pdf_y_end": 360.1,
+        "unit_file": "prva-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Cvetinović-Pekić",
@@ -27159,7 +27180,21 @@
     "birth_place": "St. Petrovo Selo",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "zamenik komesara brigade"
+    "rank": "zamenik komesara brigade",
+    "other_sources": [
+      {
+        "soldier_id": "0057002432",
+        "name": "Ostojić Uroš",
+        "additional_info": "zvani Betin; rođen 1915. Staro Petrovo Selo, Slavonija, borac, zamenik političkog komesara brigade.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 131,
+        "pdf_x": 47.7,
+        "pdf_y": 501.4,
+        "pdf_x_end": 329.0,
+        "pdf_y_end": 519.6,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ostojić",

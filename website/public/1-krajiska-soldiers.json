@@ -10696,8 +10696,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=998",
         "source_page": 998,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0163009005",
+        "name": "Dragić Ilije Ljubiša",
+        "additional_info": "rođen 1918. g. Lastva, Bosanski Petrovac, Srbin, zemljoradnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Poginuo novembra 1943. g. na Rogatici, kao komesar čete u 1. krajiškoj brigadi.",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 27,
+        "pdf_x": 297.0,
+        "pdf_y": 391.2,
+        "pdf_x_end": 425.0,
+        "pdf_y_end": 477.0,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "11.1943",
+          "place": "Rogatica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dragić",
@@ -17706,7 +17726,21 @@
     "death_type": "poginuo",
     "death_date": "02.11.1942",
     "rank": "desetar",
-    "death_place": "Bihać"
+    "death_place": "Bihać",
+    "other_sources": [
+      {
+        "soldier_id": "0024000396",
+        "name": "Jakovljević Rade Srđan",
+        "additional_info": "rođen 1918, u Maričkoi, Prijedor, Srbin, zemljoradnik, u NOB od početka 1942, u brigadi od 2. 08. 1942, 2. četa, 3. bataljon, borac, poginuo početkom novembra 1942, prilikom napada na Bihać (Bihać);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 10.5,
+        "pdf_y": 108.4,
+        "pdf_x_end": 360.2,
+        "pdf_y_end": 131.8,
+        "unit_file": "2-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jakulin",
@@ -44779,8 +44813,31 @@
         "pdf_x_end": 226.5,
         "pdf_y_end": 204.1,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0011000976",
+        "name": "Pavlović Stevana Aleksandar",
+        "additional_info": "borac 2. čete 2. bataljona, rođen 1927, Niš, Srbin, poginuo 29. XII 1944. kod sela Otoka, Županja.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 66,
+        "pdf_x": 57.4,
+        "pdf_y": 187.4,
+        "pdf_x_end": 340.2,
+        "pdf_y_end": 213.7,
+        "unit_file": "4-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ],
+      "death": [
+        {
+          "date": "29.12.1944",
+          "place": "Otok (Vinkovci)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -45104,6 +45161,18 @@
         "pdf_x_end": 340.7,
         "pdf_y_end": 395.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0011000982",
+        "name": "Pavlović Miodraga Svetozar",
+        "additional_info": "borac, rođen 1925, Kolari, Smederevo, Srbin, zemljoradnik, u NOB od 13. X 1944, nestao 17. I 1945. kod sela Opatovca, Vukovar.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 66,
+        "pdf_x": 57.2,
+        "pdf_y": 354.7,
+        "pdf_x_end": 339.6,
+        "pdf_y_end": 381.5,
+        "unit_file": "4-krajiska-soldiers.json"
       }
     ]
   },
@@ -69336,8 +69405,28 @@
         "pdf_x_end": 559.9,
         "pdf_y_end": 597.7,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0011001553",
+        "name": "Đorđević Bogoljuba Bisenija",
+        "additional_info": "borac, rođena 1925, Pečkarica, Osijek, poginula 28. III 1945. kod sela Erdevika, Ilok.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 106.6,
+        "pdf_y": 58.6,
+        "pdf_x_end": 390.5,
+        "pdf_y_end": 76.7,
+        "unit_file": "4-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.03.1945",
+          "place": "u Erdeviku (Šid)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đorđević",

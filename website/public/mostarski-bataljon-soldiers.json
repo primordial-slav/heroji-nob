@@ -13516,7 +13516,33 @@
     "birth_place": "Bivolje Brdo, Čapljina",
     "rank": "borac",
     "pdf_x_end": 294.7,
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "death_date": "14.01.1983",
+    "death_place": "Mostar",
+    "other_sources": [
+      {
+        "soldier_id": "0115000089",
+        "name": "Mrgan B Salko",
+        "additional_info": "borac divizijske artiljerije, rođen 1906, Bivolje Brdo, Čapljina, zemljoradnik, Musliman, u NOB od 1941, član KPJ. Umro 14. januara 1983. u Mostaru.",
+        "pdf_file": "borci-sutjeske-3-udarna-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 44.4,
+        "pdf_y": 190.4,
+        "pdf_x_end": 213.5,
+        "pdf_y_end": 242.8,
+        "unit_file": "3-udarna-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mrkonjić",
@@ -14688,7 +14714,29 @@
     "death_type": "poginuo",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 469.5
+    "pdf_x_end": 469.5,
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "ethnicity",
+      "party"
+    ],
+    "death_date": "08.06.1943",
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0112000314",
+        "name": "Osmić Omera Salko",
+        "additional_info": "borac 2. čete Pratećeg bataljona VŠ, rođen 1925, Proslap, Prozor, radnik, Musliman, u NOB od 1942, član KPJ od 1942, poginuo na Sutjesci kod Tjentišta 8. juna 1943. godine. 56 Viktor Kučan",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 20,
+        "pdf_x": 230.0,
+        "pdf_y": 514.7,
+        "pdf_x_end": 400.2,
+        "pdf_y_end": 577.9,
+        "unit_file": "vrhovni-stab-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pajić",

@@ -1916,7 +1916,30 @@
     "death_type": "poginuo",
     "rank": "borac",
     "pdf_x_end": 407.1,
-    "birth_place": "Plane, Tuzla"
+    "birth_place": "Plane, Tuzla",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "rudarski radnik",
+    "death_place": "Majevica",
+    "other_sources": [
+      {
+        "soldier_id": "0052000140",
+        "name": "Bećirović Salke Halil",
+        "additional_info": "rođen 1922. godine u selu Plane, Tuzla, SR-BiH, Musliman, rudarski radnik, u Brigadu stupio oktobra 1943. godine, a u decembru 1943. godine poginuo na Majevici.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 127.2,
+        "pdf_y": 128.9,
+        "pdf_x_end": 451.8,
+        "pdf_y_end": 158.5,
+        "pdf_x_left": 96.9,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bećirović",
@@ -6236,7 +6259,35 @@
     "soldier_id": "0025000320",
     "rank": "borac",
     "pdf_x_end": 405.9,
-    "birth_place": "Tuzla"
+    "birth_place": "Tuzla",
+    "ethnicity": "Jugosloven",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "učenik",
+    "party": "SKOJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0052000452",
+        "name": "Herljević Franje Nikola",
+        "additional_info": "zvani Špico; rođen 1929. godine u Tuzli, SRBiH, Jugosloven, učenik. U Brigadu stupio 14. 3. 1944. godine, kurir Štaba Brigade, član SKOJ-a od juna 1944. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 125.6,
+        "pdf_y": 417.2,
+        "pdf_x_end": 449.4,
+        "pdf_y_end": 446.9,
+        "pdf_x_left": 95.6,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1929"
+      ]
+    }
   },
   {
     "last_name": "Hidanović",

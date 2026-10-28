@@ -23615,8 +23615,51 @@
         "pdf_x_end": 463.7,
         "pdf_y_end": 218.9,
         "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "0010000917",
+        "name": "Lukić Stole Dušan",
+        "additional_info": "rođen 1924, Dabar, Sanski Most, zemljoradnik, Srbin, u NOB od 1942, borac, poginuo juna 1943. na Sutjesci",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 59,
+        "pdf_x": 200.6,
+        "pdf_y": 35.1,
+        "pdf_x_end": 361.6,
+        "pdf_y_end": 73.0,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010100689",
+        "name": "Lukić Stole Dušan",
+        "additional_info": "borac, rođen 1924, Dabar, Sanski Most, zemljoradnik, Srbin, u NOB od 1942, poginuo u bici na Sutjesci juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 5.8,
+        "pdf_y": 158.7,
+        "pdf_x_end": 176.7,
+        "pdf_y_end": 200.3,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010202590",
+        "name": "Lukić Stole Dušan",
+        "additional_info": "rođ. 1924, Dabar, Sanski Most, zemljoradnik, Srbin, borac, poginuo juna 1943. na Sutjesci.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 221,
+        "pdf_x": 51.6,
+        "pdf_y": 255.3,
+        "pdf_x_end": 316.4,
+        "pdf_y_end": 272.9,
+        "pdf_x_left": 35.6,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Lukić",
@@ -29258,12 +29301,34 @@
         "pdf_x_end": 490.4,
         "pdf_y_end": 187.1,
         "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "0010001087",
+        "name": "Milinković L Jovo",
+        "additional_info": "rođen u selu Dabar, Sanski Most, zemljoradnik, Srbin, u NOB od 1941, u Brigadi od avgusta 1943, borac, poginuo 1. 1. 1944. u Banjoj Luci",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 69,
+        "pdf_x": 29.6,
+        "pdf_y": 6.5,
+        "pdf_x_end": 190.3,
+        "pdf_y_end": 54.0,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "variants": {
+      "death": [
+        {
+          "date": "01.01.1944",
+          "place": "Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milinković",
@@ -49365,10 +49430,10 @@
   },
   {
     "last_name": "Vukojević",
-    "middle_name": "",
+    "middle_name": "Bojice",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Vukojević Milan",
+    "fathers_name": "Bojica",
+    "full_name": "Vukojević Bojice Milan",
     "additional_info": "borac, rođen u Majkić-Japri, Sanski Most. Poginuo 1942. godine na Vrbasu.",
     "birth_year": "",
     "pdf_page": 62,
@@ -49382,7 +49447,27 @@
     "death_date": "1942",
     "death_place": "Vrbas",
     "rank": "borac",
-    "pdf_x_end": 351.9
+    "pdf_x_end": 351.9,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0163009016",
+        "name": "Vukojević Bojice Milan",
+        "additional_info": "rođen 19X5. g. Majkić Japra, Bosanska Krupa, Srbin, radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Desetar, kandidat za člana KPJ. Ubijen na Vrbasu juna 1942. g. od strane četnika pri pokušaju prijelaska preko Vrbasa. Ranije vođen da je pognuo na Cemernici (zaklali ga četnici).",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 98,
+        "pdf_x": 134.0,
+        "pdf_y": 263.7,
+        "pdf_x_end": 261.9,
+        "pdf_y_end": 367.2,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vukojević",
@@ -49488,6 +49573,18 @@
         "pdf_x_end": 368.8,
         "pdf_y_end": 245.2,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0163009015",
+        "name": "Vukojević Nikole Nikica",
+        "additional_info": "zvani Niko; rođen 1923. g. Slatina, Sanski Most, Srbin, radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Clan KPJ. Poginuo aprila 1945. g. na Sremskom frontu kao komesar bataljona u Prvoj proleterskoj brigadi.",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 98,
+        "pdf_x": 134.7,
+        "pdf_y": 551.9,
+        "pdf_x_end": 262.7,
+        "pdf_y_end": 639.1,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ]
   },

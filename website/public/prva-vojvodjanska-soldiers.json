@@ -3425,9 +3425,9 @@
   {
     "last_name": "Cvetinov",
     "first_name": "Radoslav",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Cvetinov Radoslav",
+    "middle_name": "Dragutina",
+    "fathers_name": "Dragutin",
+    "full_name": "Cvetinov Dragutina Radoslav",
     "additional_info": "1925, Orlovat, zemljoradnik, poginuo i sahranjen u Rumi",
     "birth_year": "1925",
     "soldier_id": "0009000161",
@@ -3440,7 +3440,33 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "pdf_x_end": 348.0,
-    "death_place": "Ruma"
+    "death_place": "Ruma",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "other_sources": [
+      {
+        "soldier_id": "0018000243",
+        "name": "Cvetinov Dragutina Radoslav",
+        "additional_info": "rođen 1923, Orlovat — Zrenjanin, Srbin, zemljoradnik stupio u NOVJ 1944, borac, poginuo 1944. kod Rume.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 129,
+        "pdf_x": 131.6,
+        "pdf_y": 295.1,
+        "pdf_x_end": 392.1,
+        "pdf_y_end": 320.1,
+        "pdf_x_left": 110.2,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Cvetković",

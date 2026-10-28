@@ -3206,27 +3206,6 @@
     ]
   },
   {
-    "soldier_id": "0036019101",
-    "last_name": "Balić",
-    "middle_name": "",
-    "first_name": "Sime",
-    "fathers_name": "",
-    "full_name": "Balić Sime",
-    "additional_info": "borac II bat., poginuo kod Širokog Brijega februara 1945. godin",
-    "birth_year": "",
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "pdf_page": 43,
-    "pdf_x": 84.56,
-    "pdf_y": 416.16,
-    "death_type": "poginuo",
-    "death_date": "02.1945",
-    "death_place": "kod Širokog Brijega . godin",
-    "rank": "borac",
-    "unit_detail": "II bataljon",
-    "pdf_x_end": 416.2,
-    "pdf_y_end": 424.7
-  },
-  {
     "last_name": "Balić",
     "middle_name": "",
     "first_name": "Šime",
@@ -3240,7 +3219,20 @@
     "death_date": "02.1945",
     "death_place": "Široki Brijeg",
     "rank": "borac",
-    "unit_detail": "IV bataljon"
+    "unit_detail": "IV bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036019101",
+        "name": "Balić Sime",
+        "additional_info": "borac II bat., poginuo kod Širokog Brijega februara 1945. godin",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 43,
+        "pdf_x": 84.56,
+        "pdf_y": 416.16,
+        "pdf_x_end": 416.2,
+        "pdf_y_end": 424.7
+      }
+    ]
   },
   {
     "last_name": "Baljkas",
@@ -17382,9 +17374,35 @@
         "pdf_y_end": 230.1,
         "pdf_x_end": 387.2,
         "pdf_x_left": 28.7
+      },
+      {
+        "soldier_id": "0148010033",
+        "name": "Despotović Štipana Ćiro",
+        "additional_info": "rođen 1917. u Krušvaru, Sinj, kobasičarski radnik, Hrvat, član KPJ. Aktivni je učesnik NOP od početka ustanka do odlaska u NOVJ. Poginuo u prosincu 1942. na Čusini pri napadu na Jajce u 1. dalmatinskoj brigadi.",
+        "pdf_file": "mosorski-odred-2.pdf",
+        "pdf_page": 18,
+        "pdf_x": 248.6,
+        "pdf_y": 709.6,
+        "pdf_x_end": 589.0,
+        "pdf_y_end": 743.1,
+        "pdf_x_left": 231.2,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
     ],
-    "birth_place": "Krušvar, Sinj"
+    "birth_place": "Krušvar, Sinj",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "kobasičarski radnik",
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Destandjan",
@@ -38710,26 +38728,6 @@
     "death_place": "Katurina"
   },
   {
-    "soldier_id": "0036019102",
-    "last_name": "Krecak",
-    "middle_name": "U",
-    "first_name": "Štipan",
-    "fathers_name": "U",
-    "full_name": "Krecak U Štipan",
-    "additional_info": "rođen 1908. u Drnišu, poginuo u G. Vakufu 1943. god",
-    "birth_year": "1908",
-    "pdf_file": "1-dalmatinska-monografija.pdf",
-    "pdf_page": 73,
-    "pdf_x": 79.72,
-    "pdf_y": 349.37,
-    "birth_place": "Drniš",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "G. Vakuf",
-    "pdf_x_end": 413.1,
-    "pdf_y_end": 357.4
-  },
-  {
     "last_name": "Krečak",
     "middle_name": "U",
     "first_name": "Štipan",
@@ -38742,7 +38740,20 @@
     "birth_place": "Drniš",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "G. Vakuf"
+    "death_place": "G. Vakuf",
+    "other_sources": [
+      {
+        "soldier_id": "0036019102",
+        "name": "Krecak U Štipan",
+        "additional_info": "rođen 1908. u Drnišu, poginuo u G. Vakufu 1943. god",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 73,
+        "pdf_x": 79.72,
+        "pdf_y": 349.37,
+        "pdf_x_end": 413.1,
+        "pdf_y_end": 357.4
+      }
+    ]
   },
   {
     "last_name": "Krilić",
@@ -74703,12 +74714,37 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2236",
         "source_page": 2236,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148002719",
+        "name": "Stipinovič Ante Milan",
+        "additional_info": "borac I mosorskog PO. Rođen 1919, Stobreč, Split, zemljoradnik, Hrvat, član KPJ. U I mosorski PO došao 7. ravnja 1942. i rasformiranjem Odreda vraćen na teren. U drugoj polovini 1942. ponovo stupio u Leteći mosorski vod, a zatim u 2. dalmatinsku brigadu. Poginuo krajem prosinca 1944 kod Širokog brijega, Mostar u 2. dalmatinskoj brigadi.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 173,
+        "pdf_x": 273.7,
+        "pdf_y": 666.3,
+        "pdf_x_end": 614.5,
+        "pdf_y_end": 709.1,
+        "pdf_x_left": 256.9,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "krajem prosinca 1944",
+          "place": "Široki Brijeg"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stipić",

@@ -6519,10 +6519,10 @@
   },
   {
     "last_name": "Bunjevčev",
-    "middle_name": "",
+    "middle_name": "Trive",
     "first_name": "Momir",
-    "fathers_name": "",
-    "full_name": "Bunjevčev Momir",
+    "fathers_name": "Trivo",
+    "full_name": "Bunjevčev Trive Momir",
     "additional_info": "iz Stapara, 1926, poginuo kod Batine.",
     "birth_year": "1926",
     "death_type": "poginuo",
@@ -6543,14 +6543,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=402",
         "source_page": 402,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0111000080",
+        "name": "Bunjevčev Trive Momir",
+        "additional_info": "rođ. 1926, Stapar, nestao 10. 11. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 24,
+        "pdf_x": 294.1,
+        "pdf_y": 564.3,
+        "pdf_x_end": 570.4,
+        "pdf_y_end": 583.1,
+        "unit_file": "51-divizija-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_date": "10.11.1944",
     "borrowed": [
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1944"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Bunjevčev",
@@ -48626,7 +48638,25 @@
     "pdf_x_end": 376.2,
     "soldier_id": "0075002360",
     "birth_place": "Idvor",
-    "death_place": "kod Rečenca"
+    "death_place": "kod Rečenca",
+    "death_date": "07.02.1945",
+    "borrowed": [
+      "death_date"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0111011501",
+        "name": "Zakić Žika",
+        "additional_info": "1922, Idvor, poginuo 7. 2. 1945. kod Rečenca.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 65,
+        "pdf_x": 73.4,
+        "pdf_y": 82.7,
+        "pdf_x_end": 353.3,
+        "pdf_y_end": 91.2,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zarić",

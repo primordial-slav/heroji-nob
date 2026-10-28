@@ -3409,6 +3409,17 @@
     "death_date": "1944",
     "other_sources": [
       {
+        "soldier_id": "0058010007",
+        "name": "Belošević Rudolf",
+        "additional_info": "Rukovodioci Kalničkoga partizanskog odreda: ekonom Zagorske udarne čete, od 10. 5. 1943 do 27. 7. 1943.",
+        "pdf_file": "kalnicki-odred-kadar.pdf",
+        "pdf_page": 21,
+        "pdf_x": 243.5,
+        "pdf_y": 204.9,
+        "pdf_x_end": 355.5,
+        "pdf_y_end": 216.4
+      },
+      {
         "soldier_id": "9021021157",
         "name": "Belošević (Dragutin) Rudolf",
         "additional_info": "rođen 1925, Đurmanec (Krapina). Hrvat, poginuo 1944. u NOBu, Bilogora-jahupo",
@@ -3441,6 +3452,7 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
+    "unit_detail": "Zagorska udarna četa",
     "death_place": "Bilogora-jahupo",
     "borrowed": [
       "death_place"
@@ -4538,8 +4550,38 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=79",
         "source_page": 57,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0035100805",
+        "name": "Biskup Marije Petar",
+        "additional_info": "zvani Veno; r. 1918, s. Klokočevac, Bjelovar, Hrvat, radnik, čl. KPJ, NOV 1941, poginuo 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 2,
+        "pdf_x": 121.1,
+        "pdf_y": 376.0,
+        "pdf_x_end": 273.4,
+        "pdf_y_end": 401.7,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035200040",
+        "name": "Biškup Petar",
+        "additional_info": "zvani Veno; Komandni sastav 32. divizije i njenih brigada: komandant 32. divizije.",
+        "pdf_file": "32-divizija-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 480.5,
+        "pdf_y": 373.1,
+        "pdf_x_end": 560.1,
+        "pdf_y_end": 382.6,
+        "unit_file": "32-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik"
   },
   {
     "last_name": "Biškup",
@@ -18474,7 +18516,27 @@
     "soldier_id": "0058000745",
     "pdf_x_end": 458.4,
     "birth_place": "Gornja Rijeka, Križevci",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "učenik",
+    "other_sources": [
+      {
+        "soldier_id": "0035103360",
+        "name": "Hasanec Ljudevita Stjepan",
+        "additional_info": "zvani Pišta; r. 1927, s. Gornja Rijeka, Križevci, Hrvat, učenik, čl. SKOJ-a, NOV 1943.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 103,
+        "pdf_x": 304.4,
+        "pdf_y": 351.0,
+        "pdf_x_end": 455.7,
+        "pdf_y_end": 376.7,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hasić",
@@ -25639,7 +25701,27 @@
     "soldier_id": "0058001047",
     "pdf_x_end": 458.6,
     "birth_place": "Karlovac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "učenik",
+    "other_sources": [
+      {
+        "soldier_id": "0035104405",
+        "name": "Jovetić Radivoja Ljubomir",
+        "additional_info": "zvani Braco; r. 1924, Karlovac, Srbin, učenik, čl. KPJ, NOV 1943, ranjen 1943.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 41,
+        "pdf_x": 122.7,
+        "pdf_y": 328.3,
+        "pdf_x_end": 273.8,
+        "pdf_y_end": 354.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jug",
@@ -34179,7 +34261,29 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001385",
     "pdf_x_end": 281.6,
-    "birth_place": "Reka, Koprivnica"
+    "birth_place": "Reka, Koprivnica",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "učenik",
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0035105605",
+        "name": "Kranjac Nikole Stevan",
+        "additional_info": "r. 1924, s. Mučna Reka, Koprivnica, Srbin, učenik, čl. SKOJ-a, NOV 1943, ranjen 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 48,
+        "pdf_x": 116.6,
+        "pdf_y": 285.1,
+        "pdf_x_end": 266.8,
+        "pdf_y_end": 310.5,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kranjec",
@@ -40861,10 +40965,40 @@
         "pdf_y": 248.8,
         "pdf_x_end": 367.0,
         "pdf_y_end": 260.3
+      },
+      {
+        "soldier_id": "0035106769",
+        "name": "Manojlović Milana Miloš",
+        "additional_info": "zvani Mima; r. 1917, s. Srpska Kapela, Vrbovec, Srbin, podoficir b.j.v., čl. KPJ, NOV 1941.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 3,
+        "pdf_x": 119.3,
+        "pdf_y": 637.8,
+        "pdf_x_end": 271.4,
+        "pdf_y_end": 663.6,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035106770",
+        "name": "Manojlović Milana Miloš Mima",
+        "additional_info": "r. 1917, s. Srpska Kapela, Vrbovec, Srbin, podoficir, čl. KPJ, NOV 1941.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 54,
+        "pdf_x": 116.2,
+        "pdf_y": 617.9,
+        "pdf_y_end": 643.6,
+        "pdf_x_end": 267.8,
+        "unit_file": "32-divizija-soldiers.json"
       }
     ],
     "unit_detail": "oružane grupe",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "čl"
   },
   {
     "last_name": "Manojlović",
@@ -48469,7 +48603,27 @@
     "death_type": "poginuo",
     "death_date": "proleće 1944",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "čl",
+    "other_sources": [
+      {
+        "soldier_id": "0035107902",
+        "name": "Novak Josipa Stjepan",
+        "additional_info": "zvani Pišta; r. 1926, Varaždin, Hrvat. čl. SKOJ-a, NOV 1943. poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 229,
+        "pdf_x": 129.2,
+        "pdf_y": 216.1,
+        "pdf_x_end": 281.1,
+        "pdf_y_end": 242.3,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Novak",
@@ -62805,10 +62959,10 @@
   },
   {
     "last_name": "Smeh",
-    "middle_name": "",
+    "middle_name": "Josipa",
     "first_name": "Vjekoslav",
-    "fathers_name": "",
-    "full_name": "Smeh Vjekoslav",
+    "fathers_name": "Josip",
+    "full_name": "Smeh Josipa Vjekoslav",
     "additional_info": "zvani Alibaba; r.1921; Podjales, Vrbovec; član KP; u KPO od rujna 1943.",
     "birth_year": "1921",
     "pdf_page": 71,
@@ -62819,7 +62973,27 @@
     "soldier_id": "0058002523",
     "pdf_x_end": 458.6,
     "birth_place": "Podjales, Vrbovec",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "student",
+    "other_sources": [
+      {
+        "soldier_id": "0035110242",
+        "name": "Smeh Josipa Vjekoslav",
+        "additional_info": "zvani Alibaba; r. 1921, s. Podja Les, Vrbovec, Hrvat, student, čl. KPJ, NOV 1943, ranjen 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 72,
+        "pdf_x": 287.4,
+        "pdf_y": 564.1,
+        "pdf_x_end": 439.1,
+        "pdf_y_end": 589.8,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Smiljanić",
@@ -78648,10 +78822,40 @@
         "pdf_y": 316.0,
         "pdf_x_end": 324.3,
         "pdf_y_end": 327.5
+      },
+      {
+        "soldier_id": "0035113060",
+        "name": "Špiranec Josipa Josip",
+        "additional_info": "zvani Pintar; r. 1917, s. Bedekovčina, Zabok, Hrvat, radnik, čl. KPJ, NOV 1942, ranjen",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 132,
+        "pdf_x": 297.2,
+        "pdf_y": 629.2,
+        "pdf_x_end": 448.9,
+        "pdf_y_end": 654.9,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035113988",
+        "name": "Špiranec Josipa Josip",
+        "additional_info": "zvani Pintar; r. 1917, s. Bedekovčina, Zabok, Hrvat, radnik, čl. KPJ, NOV 1942.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 4,
+        "pdf_x": 122.3,
+        "pdf_y": 246.7,
+        "pdf_x_end": 274.1,
+        "pdf_y_end": 272.4,
+        "unit_file": "32-divizija-soldiers.json"
       }
     ],
     "unit_detail": "2. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik"
   },
   {
     "last_name": "Špičko",
@@ -79209,7 +79413,27 @@
     "soldier_id": "0058003188",
     "pdf_x_end": 457.7,
     "birth_place": "Zagreb",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0035113162",
+        "name": "Štih Antuna Franjo",
+        "additional_info": "zvani Seneka; r. 1925, Zagreb, Hrvat, radnik, čl, KPJ, NOV 1942, ranjen 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 165,
+        "pdf_x": 298.9,
+        "pdf_y": 507.9,
+        "pdf_x_end": 450.2,
+        "pdf_y_end": 533.6,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0058009001",
@@ -81262,24 +81486,6 @@
     "pdf_x_end": 347.3,
     "soldier_id": "0058010003",
     "rank": "obavještajni oficir"
-  },
-  {
-    "last_name": "Belošević",
-    "middle_name": "",
-    "first_name": "Rudolf",
-    "fathers_name": "",
-    "full_name": "Belošević Rudolf",
-    "additional_info": "Rukovodioci Kalničkoga partizanskog odreda: ekonom Zagorske udarne čete, od 10. 5. 1943 do 27. 7. 1943.",
-    "birth_year": "",
-    "pdf_page": 21,
-    "pdf_y": 204.9,
-    "pdf_x": 243.5,
-    "pdf_y_end": 216.4,
-    "pdf_file": "kalnicki-odred-kadar.pdf",
-    "unit_detail": "Zagorska udarna četa",
-    "pdf_x_end": 355.5,
-    "soldier_id": "0058010007",
-    "rank": "ekonom"
   },
   {
     "last_name": "Bertovčak",

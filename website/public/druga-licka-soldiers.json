@@ -12054,7 +12054,22 @@
     "death_type": "umro",
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
-    "pdf_x_end": 477.2
+    "pdf_x_end": 477.2,
+    "other_sources": [
+      {
+        "soldier_id": "0003020387",
+        "name": "Dinić S Predrag",
+        "additional_info": "borac I. ćete 3. bataljona. Ranjen umro i sahranjen u s. Ruševu - Srem 19. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 213.9,
+        "pdf_y": 435.0,
+        "pdf_x_end": 375.2,
+        "pdf_y_end": 462.7
+      }
+    ],
+    "death_date": "19.04.1945",
+    "death_place": "Ruševo, Srem"
   },
   {
     "soldier_id": "0003000272",
@@ -22116,8 +22131,18 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 475.8,
     "death_place": "Sremski front",
-    "birth_year": "1920",
     "other_sources": [
+      {
+        "soldier_id": "0003020771",
+        "name": "Jovanović Novaka Momir",
+        "additional_info": "rođen u s. Dokmir - Ub. U NOB-1944. Borac 1. balaljona. Poginuo na Sremskom frontu 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 45,
+        "pdf_x": 28.4,
+        "pdf_y": 280.9,
+        "pdf_x_end": 189.5,
+        "pdf_y_end": 319.6
+      },
       {
         "soldier_id": "9025033800",
         "name": "Jovanović (Novak) Momir",
@@ -22127,6 +22152,7 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "birth_year": "1920",
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
@@ -39490,9 +39516,34 @@
         "pdf_y": 115.8,
         "pdf_x_end": 367.8,
         "pdf_y_end": 154.5
+      },
+      {
+        "soldier_id": "0011000944",
+        "name": "Ovuka Obrada Ilija",
+        "additional_info": "st. vodnik, komandir voda u 1. bataljonu, rođen 1925, Kestenjevci, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 10. I 1942, član KPJ, poginuo 20. IV 1945. na Vranovačkom polju, Sl. Brod.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 64,
+        "pdf_x": 66.8,
+        "pdf_y": 167.7,
+        "pdf_x_end": 350.1,
+        "pdf_y_end": 202.4,
+        "unit_file": "4-krajiska-soldiers.json"
       }
     ],
-    "death_place": "SI. Brod"
+    "death_place": "SI. Brod",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "soldier_id": "0003000858",
@@ -43896,7 +43947,28 @@
     "death_place": "Kulen Vakuf",
     "death_type": "poginuo",
     "death_date": "krajem 1941",
-    "pdf_x_end": 477.7
+    "pdf_x_end": 477.7,
+    "other_sources": [
+      {
+        "soldier_id": "0003021636",
+        "name": "Popović Dušan",
+        "additional_info": "rođen u D. Lapcu. U NOB-1942. Borac 2. čete 1. bataljona. Poginuo kod Kulen Vakufa krajem 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 86,
+        "pdf_x": 45.4,
+        "pdf_y": 57.7,
+        "pdf_x_end": 205.9,
+        "pdf_y_end": 96.4
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "krajem 1944",
+          "place": "Kulen Vakuf"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0003000954",
@@ -48305,6 +48377,17 @@
         "pdf_y": 518.3,
         "pdf_x_end": 389.1,
         "pdf_y_end": 556.3
+      },
+      {
+        "soldier_id": "0003021799",
+        "name": "Radovanović Miodrag",
+        "additional_info": "U NOB-1944. Borac 2. čete 2. bataljona. Poginuo i sahranjen u Adaševcima 22. 01. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 93,
+        "pdf_x": 33.9,
+        "pdf_y": 64.5,
+        "pdf_x_end": 195.4,
+        "pdf_y_end": 103.2
       }
     ]
   },
@@ -161978,7 +162061,25 @@
     "death_date": "25.06.1945",
     "death_place": "Smiljan",
     "rank": "borac",
-    "pdf_x_end": 213.4
+    "pdf_x_end": 213.4,
+    "other_sources": [
+      {
+        "soldier_id": "0118000003",
+        "name": "Agbaba Marko",
+        "additional_info": "iz Gračaca, poginuo 25. VI 1943. godine u Smiljanu.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=366",
+        "source_page": 361,
+        "unit_file": "3-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.06.1943",
+          "place": "Smiljan"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ajduković",
@@ -167726,27 +167827,6 @@
     "death_place": "u Pašijanskom Gaju",
     "rank": "borac",
     "pdf_x_end": 374.3
-  },
-  {
-    "last_name": "Dinić",
-    "middle_name": "S",
-    "first_name": "Predrag",
-    "fathers_name": "S",
-    "full_name": "Dinić S Predrag",
-    "additional_info": "borac I. ćete 3. bataljona. Ranjen umro i sahranjen u s. Ruševu - Srem 19. 04. 1945. godine.",
-    "birth_year": "",
-    "pdf_page": 23,
-    "pdf_y": 435.0,
-    "pdf_x": 213.9,
-    "pdf_y_end": 462.7,
-    "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
-    "soldier_id": "0003020387",
-    "death_type": "umro",
-    "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 375.2,
-    "death_date": "19.04.1945",
-    "death_place": "Ruševo, Srem"
   },
   {
     "last_name": "Dinić",
@@ -174552,42 +174632,6 @@
         "pdf_y_end": 381.6,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ]
-  },
-  {
-    "last_name": "Jovanović",
-    "middle_name": "Novaka",
-    "first_name": "Momir",
-    "fathers_name": "Novak",
-    "full_name": "Jovanović Novaka Momir",
-    "additional_info": "rođen u s. Dokmir - Ub. U NOB-1944. Borac 1. balaljona. Poginuo na Sremskom frontu 1945. godine.",
-    "pdf_page": 45,
-    "pdf_y": 280.9,
-    "pdf_x": 28.4,
-    "pdf_y_end": 319.6,
-    "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
-    "soldier_id": "0003020771",
-    "birth_place": "Dokmir",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Sremski front",
-    "rank": "borac",
-    "pdf_x_end": 189.5,
-    "birth_year": "1920",
-    "other_sources": [
-      {
-        "soldier_id": "9025033800",
-        "name": "Jovanović (Novak) Momir",
-        "additional_info": "rođen 1920, Dokmir (Ub). Srbin, poginuo 1945. u NOBu, Sremski front",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1268",
-        "source_page": 1268,
-        "ref_book": "zrtve-rata-1964-srb"
-      }
-    ],
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "birth_year",
-      "ethnicity"
     ]
   },
   {
@@ -184385,7 +184429,7 @@
     "fathers_name": "Jefto",
     "full_name": "Nikolić Jefte Veselin",
     "additional_info": "borac brigade. Poginuo i sahranjen kod Vrbanje 07. 04. 1945. godine.",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 72,
     "pdf_y": 220.6,
     "pdf_x": 44.7,
@@ -184396,7 +184440,46 @@
     "rank": "borac",
     "pdf_x_end": 205.2,
     "death_date": "07.04.1945",
-    "death_place": "Vrbanja"
+    "death_place": "Vrbanja",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Godljevo, Kosjerić",
+    "other_sources": [
+      {
+        "soldier_id": "0002005738",
+        "name": "Nikolić Jefte Veselin",
+        "additional_info": "1925, Godljevo, Kosjerić, poginuo 9. 4. 1945. u Vrbanji",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 768,
+        "pdf_x": 131.3,
+        "pdf_y": 345.0,
+        "pdf_x_end": 466.2,
+        "pdf_y_end": 354.5,
+        "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003021375",
+        "name": "Nikolić Jevte Veselin",
+        "additional_info": "rođen 1925. u Gorljevu - Kosjerić. U NOB-1944. Borac 2. čete 1. bataljona. Poginuo kod Vrbanje (Srem) 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 72,
+        "pdf_x": 44.7,
+        "pdf_y": 261.2,
+        "pdf_x_end": 205.4,
+        "pdf_y_end": 310.0,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.04.1945",
+          "place": "Vrbanja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -184439,6 +184522,18 @@
         "pdf_x_end": 466.2,
         "pdf_y_end": 354.5,
         "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003021374",
+        "name": "Nikolić Jefte Veselin",
+        "additional_info": "borac brigade. Poginuo i sahranjen kod Vrbanje 07. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 72,
+        "pdf_x": 44.7,
+        "pdf_y": 220.6,
+        "pdf_x_end": 205.2,
+        "pdf_y_end": 249.3,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -188631,28 +188726,6 @@
   },
   {
     "last_name": "Popović",
-    "middle_name": "",
-    "first_name": "Dušan",
-    "fathers_name": "",
-    "full_name": "Popović Dušan",
-    "additional_info": "rođen u D. Lapcu. U NOB-1942. Borac 2. čete 1. bataljona. Poginuo kod Kulen Vakufa krajem 1944. godine.",
-    "birth_year": "",
-    "pdf_page": 86,
-    "pdf_y": 57.7,
-    "pdf_x": 45.4,
-    "pdf_y_end": 96.4,
-    "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
-    "soldier_id": "0003021636",
-    "birth_place": "D. Lapac",
-    "death_type": "poginuo",
-    "death_date": "krajem 1944",
-    "death_place": "Kulen Vakuf",
-    "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon",
-    "pdf_x_end": 205.9
-  },
-  {
-    "last_name": "Popović",
     "middle_name": "Jove",
     "first_name": "Gojko",
     "fathers_name": "Jovo",
@@ -191116,27 +191189,6 @@
     "borrowed": [
       "ethnicity"
     ]
-  },
-  {
-    "last_name": "Radovanović",
-    "middle_name": "",
-    "first_name": "Miodrag",
-    "fathers_name": "",
-    "full_name": "Radovanović Miodrag",
-    "additional_info": "U NOB-1944. Borac 2. čete 2. bataljona. Poginuo i sahranjen u Adaševcima 22. 01. 1945. godine.",
-    "birth_year": "",
-    "pdf_page": 93,
-    "pdf_y": 64.5,
-    "pdf_x": 33.9,
-    "pdf_y_end": 103.2,
-    "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
-    "soldier_id": "0003021799",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 195.4,
-    "death_date": "22.01.1945",
-    "death_place": "Adaševci"
   },
   {
     "last_name": "Radovanović",
@@ -201237,7 +201289,26 @@
     "death_place": "Bogunica, Medak",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 383.5
+    "pdf_x_end": 383.5,
+    "other_sources": [
+      {
+        "soldier_id": "0002009391",
+        "name": "Vukmirović Ike Stevo",
+        "additional_info": "1925, Gornji Babin Potok, poginuo kod Metka decembra 1942",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 904,
+        "pdf_x": 139.5,
+        "pdf_y": 301.6,
+        "pdf_x_end": 473.9,
+        "pdf_y_end": 321.1,
+        "unit_file": "soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Vukmirović",

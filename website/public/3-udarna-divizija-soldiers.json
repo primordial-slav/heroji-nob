@@ -2535,10 +2535,10 @@
   },
   {
     "last_name": "Mrgan",
-    "middle_name": "",
+    "middle_name": "B",
     "first_name": "Salko",
-    "fathers_name": "",
-    "full_name": "Mrgan Salko",
+    "fathers_name": "B",
+    "full_name": "Mrgan B Salko",
     "additional_info": "borac divizijske artiljerije, rođen 1906, Bivolje Brdo, Čapljina, zemljoradnik, Musliman, u NOB od 1941, član KPJ. Umro 14. januara 1983. u Mostaru.",
     "birth_year": "1906",
     "pdf_page": 7,
@@ -2555,7 +2555,21 @@
     "death_place": "Mostar",
     "rank": "borac",
     "pdf_x_end": 213.5,
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0125000477",
+        "name": "Mrgan B Salko",
+        "additional_info": "zvani Cadra; rođen 1906, Bivolje Brdo, Čapljina, zemljoradnik član KPJ od 1941, u Bataljonu od juna 1942, borac.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 23,
+        "pdf_x": 128.7,
+        "pdf_y": 365.6,
+        "pdf_x_end": 294.7,
+        "pdf_y_end": 425.5,
+        "unit_file": "mostarski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mugoša",
@@ -3469,7 +3483,22 @@
     "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "rank": "bolničarka",
-    "pdf_x_end": 186.2
+    "pdf_x_end": 186.2,
+    "party": "KPJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0041010333",
+        "name": "Radonjić Milana Dragica",
+        "additional_info": "zvana Draga; Rođena jula 1919. godine u selu Fnutak, opština Danilovgrad. Završila pet razreda Ženske zanatske škole u Peći; domaćica; Crnogorka. Potiče iz porodice koja se 1932. doselila iz Crne Gore u Metohiju i tu ostala do 1938, kada se vratila u svoje selo. Rod uticajem starijeg brata i sredine u kojoj je učila i živjela, a to je omladina Peći, rano se opredjeljuje za napredni omladinski pokret. Godine 1940. primljena je u SKOJ. U trinaestojrulskom ustanku zajedno sa braćom Mihailom i Milom i sestrom Jelkom postaje borac Gerilskog odreda, a kasnije Terenske partizanske čete i partizanskog Bataljona „Bijeli Pavle” Zetskog NOP odreda. Prilikom povlačenja partizanskih snaga sa teritorije Crne Gore il'formiranja 5. proleterske crnogorske brigade postaje borac 3. čete 4. bataljona. U brigadi ostaje sve do okršaja na Sutjeski, 13. juna 1943, kada se sa grupom boraca probija u Crnu Goru i nastavlja borbu. Poslije kapitulacije Italije borac je Pratećeg bataljona Glavnog štaba NOV i PO za Ст– nu Goru. Kada je bataljon ušao u sastav 8. crnogorske udarne brigade, raspoređena je na dužnost referenta saniteta bataljona, a kasnije je upravnik bolnice iste brigade. Sa svojom brigadom prošla je cijeli borbeni put od Crne Gore preko Srbije, Srema i dalje učestvovala u oslobođenju Beograda; tri mjeseca se borila u rovovima na Sremskom frontu, i učestvovala u završnim operacijama. Od aprila do novembra 1945. bila je politički komesar infektivne bolnice 1. armije. Demobilisana je na svoj zahtjev, jer su joj ·bolesni roditelji ·ostali sami. U ratu je bila hrabar i postojan borac. Poslije demobilizacije radila je kao službenik u NOO Danilovgrad. Jedno vrijeme je radila u Predsjedništvu vlade NR Crne Gore, ali se zbog roditelja opet vraća u Danilovgrad, .gdje radi u preduzeću „Borac\" deset godina, a «kasnije u OK Nikšić sve do penzionisanja. Član KPJ je od januara 1944. godine. Irma čin kapetana. Nosilac je „Partizanske spomenice 19413”. Odlikovana je Ordenom za hrabrost, Ordenom zasluga za narod sa srebrnom zvijezdom, Ordenom bratstva i jedinstva sa srebrnim vijencem.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=212",
+        "source_page": 208,
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ],
+    "birth_date": "07.1919"
   },
   {
     "last_name": "Radonjić",

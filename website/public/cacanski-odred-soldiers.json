@@ -1246,9 +1246,32 @@
         "pdf_x_end": 233.9,
         "pdf_y_end": 361.0,
         "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100018",
+        "name": "Arsenijević Borislava Milan",
+        "additional_info": "zvani Veco; borac prištapskih jedinica brigade, rođen 1899, Valjevo, profesor, Srbin, u NOB od 1941, član KPJ, teško ranjen 7. jula u selu Omazići, kod Tuzle, i umro avgusta 1943. u šumi, kod sela Zeljava, u podnožju planine Konjuh.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 288.6,
+        "pdf_y": 259.3,
+        "pdf_x_end": 458.8,
+        "pdf_y_end": 333.3,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "profesor",
+    "variants": {
+      "born": [
+        "1899"
+      ]
+    }
   },
   {
     "last_name": "Avramović",
@@ -1678,12 +1701,41 @@
         "pdf_y_end": 275.9,
         "pdf_x_left": 49.7,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039000045",
+        "name": "Belić Velimira Nestor",
+        "additional_info": "poginuo 22. jula 1943, Omerove vode (na Ozrenu, istočna Bosna); Istočna Bosna (24. jun — 31. avgust 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 524.2,
+        "pdf_y": 828.4,
+        "pdf_x_end": 592.2,
+        "pdf_y_end": 838.1,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0112000027",
+        "name": "Belić Velimira Nestor",
+        "additional_info": "kurir u sanitetskom odseku VŠ, rođen 1919, Oštra, Čačak, zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo u Omerovim Vodama na Ozrenu u Istočnoj Bosni 22. jula 1943. godine.",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 2,
+        "pdf_x": 42.8,
+        "pdf_y": 480.8,
+        "pdf_x_end": 212.7,
+        "pdf_y_end": 542.8,
+        "unit_file": "vrhovni-stab-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Belić",
@@ -6225,8 +6277,29 @@
         "pdf_y_end": 230.5,
         "pdf_x_left": 37.5,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039100171",
+        "name": "Dražević Jovana Dragomir",
+        "additional_info": "borac 3. čete 2. bataljona, rođen 1882, Drenova, Gornji Milanovac, krojački radnik, Srbin, u NOB od 1941, član KPJ od 1919, delegat na Vukovarskom kongresu 1920; u partizane pošao sa tri sina: Mišo i Duško poginuli su u Srbiji 1941, a Branko kod Foče aprila 1943; poginuo u Omerovim Vodama, na planini Ozren, u Istočnoj Bosni 22. jula 1943. Odlikovan Ordenom narodnog^ heroja.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 285.4,
+        "pdf_y": 362.6,
+        "pdf_x_end": 456.1,
+        "pdf_y_end": 490.6,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "14.11.1882"
+      ]
+    }
   },
   {
     "last_name": "Dražević",
@@ -7427,12 +7500,43 @@
         "pdf_y_end": 502.2,
         "pdf_x_left": 11.5,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039000184",
+        "name": "Gavrić Milovana Milun",
+        "additional_info": "zvani Abisinac; poginuo 4. decembra 1943, Sokolica (više Prijepolja); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 530.7,
+        "pdf_y": 444.4,
+        "pdf_x_end": 661.6,
+        "pdf_y_end": 454.1,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100216",
+        "name": "Gavrić Milovana Milun",
+        "additional_info": "zvani Abisinac; borac 1. čete 2. bataljona, rođen 1924, Prislonica, Cačak, zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo kao komandir voda na Sokolići kod Prijepolja 4. decembra 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 312.4,
+        "pdf_y": 533.2,
+        "pdf_x_end": 481.9,
+        "pdf_y_end": 607.2,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
+      "death_place",
       "ethnicity"
-    ]
+    ],
+    "death_place": "Sokolica",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Gačanović",
@@ -11293,8 +11397,31 @@
         "pdf_y_end": 197.6,
         "pdf_x_left": 60.7,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039100339",
+        "name": "Jevtović Ivana Petar",
+        "additional_info": "borac u brigadnoj intendanturi, rođen 1888, Brusnica, Gornji Milanovac, bankarski službenik, Srbin, u NOB od 1941, član KPJ, poginuo u Istočnoj Bosni, kod Omerovih Voda, na planini Ozren, 22. jula 1943.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 316.2,
+        "pdf_y": 507.8,
+        "pdf_x_end": 486.5,
+        "pdf_y_end": 571.0,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "22.07.1943",
+    "variants": {
+      "born": [
+        "1888"
+      ]
+    }
   },
   {
     "last_name": "Jevtović",
@@ -13560,12 +13687,38 @@
         "pdf_y_end": 333.0,
         "pdf_x_left": 12.5,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039000307",
+        "name": "Jovašević V Ostoja",
+        "additional_info": "poginuo 8. juna 1943, Vrbnica (selo blizu r. Sutjeske); Sutjeska (15. maj — 19. jun 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 1,
+        "pdf_x": 515.3,
+        "pdf_y": 406.6,
+        "pdf_x_end": 617.5,
+        "pdf_y_end": 415.8,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100363",
+        "name": "Jovašević Vojina Ostoja",
+        "additional_info": "kurir Štaba 2. bataljona, rođen 1923, Preljina, Cačak. radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Zelengori, kod sela Vrbica, 8. juna 1943.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 133.0,
+        "pdf_y": 539.2,
+        "pdf_x_end": 302.0,
+        "pdf_y_end": 591.6,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik"
   },
   {
     "last_name": "Jovašević",
@@ -15774,8 +15927,26 @@
           ]
         ],
         "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100453",
+        "name": "Kostić Ljubiša",
+        "additional_info": "zvani Krivi; komandir voda u 2. četi 2. bataljona, rođen u • Obrenovcu, železničar, Srbin, u NOB od 1941, član KPJ, poginuo u Istočnoj Bosni, kod Omerovih Voda, na planini Ozren, 22. jula 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 99.9,
+        "pdf_y": 616.8,
+        "pdf_x_end": 271.0,
+        "pdf_y_end": 637.0,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ"
   },
   {
     "last_name": "Kostić",
@@ -18973,8 +19144,58 @@
         "pdf_y_end": 88.6,
         "pdf_x_left": 18.9,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039000424",
+        "name": "Lukić Dragutina Milivoje",
+        "additional_info": "poginuo 4. decembra 1943, Prijepolje (nepoznato mesto pogibije); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 464.7,
+        "pdf_y": 771.5,
+        "pdf_x_end": 514.9,
+        "pdf_y_end": 792.2,
+        "pdf_x_left": 337.0,
+        "pdf_rects": [
+          [
+            464.7,
+            771.5,
+            514.9,
+            781.2
+          ],
+          [
+            337.0,
+            782.5,
+            367.2,
+            792.2
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100544",
+        "name": "Lukić Dragutina Milivoje",
+        "additional_info": "borac 3. čete 2. bataljona, rođen 1908, Gornja Vrbava, Gornji Milanovac, radnik, Srbin, u NOB od 1941, član KPJ, poginuo u Prijepolju 4. decembra 1943.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 128.1,
+        "pdf_y": 419.4,
+        "pdf_x_end": 296.9,
+        "pdf_y_end": 472.7,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prijepolje",
+    "variants": {
+      "born": [
+        "1908"
+      ]
+    }
   },
   {
     "last_name": "Lukić",
@@ -41604,8 +41825,29 @@
         "pdf_y_end": 385.5,
         "pdf_x_left": 6.7,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0039101041",
+        "name": "Todorović Dragojla Isailo",
+        "additional_info": "desetar u 3. čete 2. bataljona, rođen 1911, Svračkovci, Gornji Milanovac, zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo kod Prijepolja 4. decembra 1943. kao politički komesar čete.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 314.1,
+        "pdf_y": 426.1,
+        "pdf_x_end": 484.6,
+        "pdf_y_end": 489.3,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1911"
+      ]
+    }
   },
   {
     "last_name": "Todorović",
@@ -45341,8 +45583,54 @@
         "pdf_y_end": 598.1,
         "pdf_x_left": 10.1,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0001013463",
+        "name": "Vukadinović Andrije Milenko",
+        "additional_info": "1922, Bresnica, Čačak, Srbija, Srbin, trgovački pomoćnik, član KPJ od 1942, u NOB od 194L u brigadi od decembra 1941, III bataljon, oficir obezbedenja u VŠ, poginuo 00. 11. 1943, kod Jajca",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 354,
+        "pdf_x": 52.6,
+        "pdf_y": 474.0,
+        "pdf_x_end": 360.1,
+        "pdf_y_end": 514.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001201038",
+        "name": "Vukadinović Milenko",
+        "additional_info": "zvani Petokolonac; borac, rođen 1922. u Bresnici, Čačak, SRS, trgovački pomoćnik. Poginuo novembra 1943. kod Jajca.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 27,
+        "pdf_x": 267.8,
+        "pdf_y": 654.2,
+        "pdf_x_end": 576.5,
+        "pdf_y_end": 674.7,
+        "pdf_x_left": 243.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0112000482",
+        "name": "Vukadinović Andrije Milenko",
+        "additional_info": "borac 3. cete Pratećeg bataljona VŠ, rođen 1922, Bresnica, Čačak, trgovački pomoćnik, Srbin, u NOB od 1941, član KPJ od aprila 1942, poginuo u Jajcu novembra 1943. godine.",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 32,
+        "pdf_x": 41.0,
+        "pdf_y": 472.0,
+        "pdf_x_end": 209.7,
+        "pdf_y_end": 535.2,
+        "unit_file": "vrhovni-stab-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vukadinović",

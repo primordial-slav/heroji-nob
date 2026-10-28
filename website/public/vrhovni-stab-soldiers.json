@@ -698,10 +698,10 @@
   },
   {
     "last_name": "Belić",
-    "middle_name": "",
+    "middle_name": "Velimira",
     "first_name": "Nestor",
-    "fathers_name": "",
-    "full_name": "Belić Nestor",
+    "fathers_name": "Velimir",
+    "full_name": "Belić Velimira Nestor",
     "additional_info": "kurir u sanitetskom odseku VŠ, rođen 1919, Oštra, Čačak, zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo u Omerovim Vodama na Ozrenu u Istočnoj Bosni 22. jula 1943. godine.",
     "birth_year": "1919",
     "pdf_page": 2,
@@ -722,7 +722,7 @@
     "other_sources": [
       {
         "soldier_id": "0039000045",
-        "name": "Belić Nestor",
+        "name": "Belić Velimira Nestor",
         "additional_info": "poginuo 22. jula 1943, Omerove vode (na Ozrenu, istočna Bosna); Istočna Bosna (24. jun — 31. avgust 1943)",
         "pdf_file": "druga-proleterska.pdf",
         "pdf_page": 2,
@@ -731,8 +731,26 @@
         "pdf_x_end": 592.2,
         "pdf_y_end": 838.1,
         "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0126000040",
+        "name": "Belić Velimira Nestor",
+        "additional_info": "zemljoradnik, rođen 1914. u Ostri; član KPJ; borac Ljubićkog bataljona i Čačanekog bataljona Druge proleterske brigade; poginuo u borbi protiv neprijatelja u Omerovim vodama na planini Ozren u Bosni 22. jula 1943.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 24,
+        "pdf_x": 53.2,
+        "pdf_y": 350.5,
+        "pdf_x_end": 386.6,
+        "pdf_y_end": 385.0,
+        "pdf_x_left": 27.4,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1914"
+      ]
+    }
   },
   {
     "last_name": "Belovuković",
@@ -8606,7 +8624,21 @@
     "rank": "borac",
     "unit_detail": "2. četa",
     "pdf_x_end": 400.2,
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0125000518",
+        "name": "Osmić O Salko",
+        "additional_info": "rođen 1925, Proslap, Prozor, zemljoradnik, u Bataljonu od februara 1943, borac, poginuo na Sutjesci.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 44,
+        "pdf_x": 303.0,
+        "pdf_y": 455.3,
+        "pdf_x_end": 469.5,
+        "pdf_y_end": 514.2,
+        "unit_file": "mostarski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pajić",
@@ -13351,10 +13383,10 @@
   },
   {
     "last_name": "Vukadinović",
-    "middle_name": "",
+    "middle_name": "Andrije",
     "first_name": "Milenko",
-    "fathers_name": "",
-    "full_name": "Vukadinović Milenko",
+    "fathers_name": "Andrija",
+    "full_name": "Vukadinović Andrije Milenko",
     "additional_info": "borac 3. cete Pratećeg bataljona VŠ, rođen 1922, Bresnica, Čačak, trgovački pomoćnik, Srbin, u NOB od 1941, član KPJ od aprila 1942, poginuo u Jajcu novembra 1943. godine.",
     "birth_year": "1922",
     "pdf_page": 32,
@@ -13375,7 +13407,7 @@
     "other_sources": [
       {
         "soldier_id": "0001013463",
-        "name": "Vukadinović Milenko",
+        "name": "Vukadinović Andrije Milenko",
         "additional_info": "1922, Bresnica, Čačak, Srbija, Srbin, trgovački pomoćnik, član KPJ od 1942, u NOB od 194L u brigadi od decembra 1941, III bataljon, oficir obezbedenja u VŠ, poginuo 00. 11. 1943, kod Jajca",
         "pdf_file": "prva-proleterska-3.pdf",
         "pdf_page": 354,
@@ -13397,8 +13429,26 @@
         "pdf_y_end": 674.7,
         "pdf_x_left": 243.8,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0126001127",
+        "name": "Vukadinović Andrije Milenko",
+        "additional_info": "trgovački pomoćnik, rođen 1920. u Bresnici; član KPJ; borac Ljubićkog bataljona i Kragujevačkog bataljona Prve proleterske brigade; poginuo u Jajcu novembra 1943.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 12,
+        "pdf_x": 48.2,
+        "pdf_y": 311.2,
+        "pdf_x_end": 382.7,
+        "pdf_y_end": 337.5,
+        "pdf_x_left": 22.8,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Vukić",

@@ -685,7 +685,33 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056000034",
     "pdf_x_end": 301.3,
-    "birth_place": "Tešanj"
+    "birth_place": "Tešanj",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "đak",
+    "other_sources": [
+      {
+        "soldier_id": "0052000031",
+        "name": "Alićehajić Abdulaha Muhidin",
+        "additional_info": "dr. rođen 1931. godine u Tešnju, SRBiH, Musliman, đak, u Brigadu stupio 15. 7. 1944. godine, borac 2. čete 2. bataljona.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 126.5,
+        "pdf_y": 167.8,
+        "pdf_x_end": 451.8,
+        "pdf_y_end": 197.8,
+        "pdf_x_left": 96.8,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1931"
+      ]
+    }
   },
   {
     "last_name": "Alihodzić",
@@ -3759,7 +3785,27 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056000177",
     "pdf_x_end": 304.1,
-    "birth_place": "D. Ilova, Prnjavor"
+    "birth_place": "D. Ilova, Prnjavor",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0001000821",
+        "name": "Blagojević Jove Trivo",
+        "additional_info": "1920, Ilova, Prnjavor, BiH, Srbin, zemljoradnik, u NOB od januara 1943, u brigadi od januara 1943, prištapske jedinice, borac",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 71,
+        "pdf_x": 44.4,
+        "pdf_y": 133.6,
+        "pdf_x_end": 351.6,
+        "pdf_y_end": 163.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Blagojević",
@@ -11716,7 +11762,33 @@
     "death_type": "poginuo",
     "death_date": "01.09.1944",
     "death_place": "Jelah, Tešanj",
-    "rank": "borac"
+    "rank": "borac",
+    "occupation": "miner",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0033000157",
+        "name": "Grabovac Ivan",
+        "additional_info": "rođen Vinkovci, miner, vod 14. brigade, poginuo, 30. IX 1944, Jelah—Tešanjka, na pruzi, sahranjen: Između Jelaha i Tešanjke",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 10.5,
+        "pdf_y": 225.5,
+        "pdf_x_end": 676.4,
+        "pdf_y_end": 253.9,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "30.09.1944",
+          "place": "Jelah, Tešanj"
+        }
+      ]
+    }
   },
   {
     "last_name": "Grabovac",
@@ -16683,7 +16755,22 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056000790",
     "pdf_x_end": 260.6,
-    "birth_place": "Cečava, Teslic"
+    "birth_place": "Cečava, Teslic",
+    "other_sources": [
+      {
+        "soldier_id": "9082000370",
+        "name": "Jotanović Luke Ranko",
+        "additional_info": "Spisak boraca narodnooslobodilačkog rata opštine Teslić: r. 1911, Čečava, Teslić, Srbin, zemlioradnik u NOVJ od maja 1943",
+        "pdf_file": "teslic-u-nob-borci.pdf",
+        "pdf_page": 14,
+        "pdf_x": 66.7,
+        "pdf_y": 470.1,
+        "pdf_x_end": 423.4,
+        "pdf_y_end": 494.2,
+        "pdf_x_left": 66.7,
+        "ref_book": "teslic-u-nob-borci"
+      }
+    ]
   },
   {
     "last_name": "Jotanović",
@@ -20479,7 +20566,21 @@
     "death_date": "29.10.1944",
     "death_place": "Vel. Sočanica, Derventa",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0033000302",
+        "name": "Kovačević Hirseina Adem",
+        "additional_info": "rođen 1920, Kovačevići Siprage, 1. bataljon 14. brigade, poginuo, 29. X 1944, Velika Sočanica, sahranjen: Velika Sočanica",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 29,
+        "pdf_x": 18.2,
+        "pdf_y": 141.1,
+        "pdf_x_end": 643.4,
+        "pdf_y_end": 166.6,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kovaćević",
@@ -22634,6 +22735,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1682",
         "source_page": 1682,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "9092000203",
+        "name": "Lazić Ilija",
+        "additional_info": "Spisak poginulih, umrlih ili nestalih učesnika NOR-a 1941-1945, Imljani: Lazić Ilija, rođen 1920. godine u Imljanima. U NOVJ od juna 1943. godine kao borac Banjalučkog NOP odreda, a zatim Četrnaeste srednjobosanske udarne brigade. Poginuo u jesen 1944. godine u Tešnju.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=348",
+        "source_page": 348,
+        "ref_book": "kotor-varos"
       }
     ],
     "ethnicity": "Srbin",
@@ -28206,7 +28315,21 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "birth_place": "Trstenci, Derventa",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9041000141",
+        "name": "Milovanović Jovan",
+        "additional_info": "Pali borci narodnooslobodilačkog rata sa područja opštine Derventa: Milovanović Jovan rod. 1912. u Trstencima borac 14. srednjo bosanske brigade poginuo u Odžacima.",
+        "pdf_file": "derventa-pali-borci.pdf",
+        "pdf_page": 6,
+        "pdf_x": 9.8,
+        "pdf_y": 193.0,
+        "pdf_x_end": 265.7,
+        "pdf_y_end": 209.4,
+        "ref_book": "derventa-pali-borci"
+      }
+    ]
   },
   {
     "last_name": "Milojević",
@@ -30460,7 +30583,17 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056001439",
     "pdf_x_end": 271.3,
-    "birth_place": "Ukrnjica, Doboj"
+    "birth_place": "Ukrnjica, Doboj",
+    "other_sources": [
+      {
+        "soldier_id": "9111000530",
+        "name": "Nedić Vasilija Rajko",
+        "additional_info": "Poginuli borci narodnooslobodilačkog rata, Raškovci: Nedić Vasilija Rajko, 1922, Ukrinica, Teslić, Srbin, zemljoradnik, u NOB-u od novemra 1943. u Komandi mjesta Kulaši, kao borac 14. srednjobosanske NOU brigade ranjen marta 1945. u Glogovcu, Prnjavor, umro u bolnici Teslić.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=415",
+        "source_page": 411,
+        "ref_book": "doboj3"
+      }
+    ]
   },
   {
     "last_name": "Nedić",
@@ -33985,7 +34118,41 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056001609",
     "pdf_x_end": 457.6,
-    "birth_place": "Prnjavor"
+    "birth_place": "Prnjavor",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "radnik",
+    "party": "KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0001009628",
+        "name": "Planinčić Mitra Luka",
+        "additional_info": "1910, Prnjavor, BiH, Srbin, radnik, u NOB od januara 1943, u brigadi od januara 1943, II bataljon, borac",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 67,
+        "pdf_x": 45.8,
+        "pdf_y": 236.6,
+        "pdf_x_end": 353.3,
+        "pdf_y_end": 257.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001101130",
+        "name": "Planinčić Mitra Luka",
+        "additional_info": "zvani Šuca; kurir Prateće čete brigade, rođen 1910, Vjeternik, Rogatica, obućar, Srbin, u NÒB od januara 1943, član KPJ od 1944.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 73,
+        "pdf_x": 47.7,
+        "pdf_y": 345.5,
+        "pdf_x_end": 216.9,
+        "pdf_y_end": 387.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Planincić",
@@ -34866,8 +35033,22 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=390",
         "source_page": 386,
         "ref_book": "doboj3"
+      },
+      {
+        "soldier_id": "9022014226",
+        "name": "Porobić (Alija) Besim",
+        "additional_info": "rođen 1924, Komarica (Doboj). Musliman, poginuo 1944. u NOBu, Prnjavor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1246",
+        "source_page": 1246,
+        "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prnjavor"
   },
   {
     "last_name": "Porobić",
@@ -40040,7 +40221,27 @@
     "pdf_file": "14-srednjobosanska.pdf",
     "soldier_id": "0056001892",
     "pdf_x_end": 497.7,
-    "birth_place": "Strpci, Prnjavor"
+    "birth_place": "Strpci, Prnjavor",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0001011052",
+        "name": "Simeunčević Rajka Nemanja",
+        "additional_info": "1925, Štrpci, Prnjavor, BiH, Srbin, zemljoradnik, u NOB od januara 1943, u brigadi od januara 1943, borac",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 174,
+        "pdf_x": 64.6,
+        "pdf_y": 431.1,
+        "pdf_x_end": 371.7,
+        "pdf_y_end": 462.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Simeuncević",
@@ -46225,6 +46426,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1683",
         "source_page": 1683,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "9092000051",
+        "name": "Topolić Stojanka",
+        "additional_info": "Spisak poginulih, umrlih ili nestalih učesnika NOR-a 1941-1945, Kotor-Varoš: Topolić Stojanka, rođena 1924. godine u Zabrđu kod Kotor-Varoša. Aktivno i organizovano radila. za NOP od prvih dana ustanka. Borac od 1943. godine u Banjalučkom NOP odredu, a zatim u Četrnaestoj srednjobosanskoj udarnoj brigadi. Umrla u oktobru 1943. godine u Vučjaku kod Prnjavora.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=336",
+        "source_page": 336,
+        "ref_book": "kotor-varos"
       }
     ],
     "ethnicity": "Srpkinja",

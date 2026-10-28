@@ -2775,7 +2775,33 @@
     "pdf_y_end": 583.1,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000080",
-    "pdf_x_end": 570.4
+    "pdf_x_end": 570.4,
+    "other_sources": [
+      {
+        "soldier_id": "9027007666",
+        "name": "Bunjevčev (Trivo) Momir",
+        "additional_info": "rođen 1926, Stapar (Sombor). Srbin, poginuo 1944. u NOBu, Batina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=402",
+        "source_page": 402,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0075000295",
+        "name": "Bunjevčev Trive Momir",
+        "additional_info": "iz Stapara, 1926, poginuo kod Batine.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 114.6,
+        "pdf_y": 433.0,
+        "pdf_x_end": 370.2,
+        "pdf_y_end": 441.5,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Burgijašev",
@@ -2825,6 +2851,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=510",
         "source_page": 510,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0078000143",
+        "name": "Burnać Paje Pajo",
+        "additional_info": "rođ. 1928, Subotica, borac, poginuo kod Kazuka 22. XI 1944.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 51.5,
+        "pdf_y": 108.2,
+        "pdf_x_end": 343.9,
+        "pdf_y_end": 127.3,
+        "unit_file": "8-vojvodjanska-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -5841,12 +5879,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=106",
         "source_page": 106,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0078000317",
+        "name": "Ilkić Jovana Živan",
+        "additional_info": "rođ. 1923, Vrdnik, Irig, poginuo kod Bezdana 16. XI",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 59.2,
+        "pdf_y": 115.4,
+        "pdf_x_end": 350.2,
+        "pdf_y_end": 134.8,
+        "unit_file": "8-vojvodjanska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Imrić",
@@ -39850,7 +39905,26 @@
     "death_date": "10.03.1945",
     "rank": "borac",
     "pdf_x_end": 357.6,
-    "death_place": "Bar. Petrovo Selo"
+    "death_place": "Bar. Petrovo Selo",
+    "other_sources": [
+      {
+        "soldier_id": "0078000425",
+        "name": "Kopilović Marko",
+        "additional_info": "rođ. 1923, Subotica, poginuo u Baranjskom Petrovom Selu 10. III 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 55.4,
+        "pdf_y": 464.0,
+        "pdf_x_end": 346.2,
+        "pdf_y_end": 483.3,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Kopilović",
@@ -64119,7 +64193,21 @@
     "death_type": "poginuo",
     "death_date": "07.02.1945",
     "death_place": "kod Rečenca",
-    "pdf_x_end": 353.3
+    "pdf_x_end": 353.3,
+    "other_sources": [
+      {
+        "soldier_id": "0075002360",
+        "name": "Zakić Žika",
+        "additional_info": "iz Idvora, 1922, poginuo kod Rečenca.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 167.4,
+        "pdf_y": 581.2,
+        "pdf_x_end": 376.2,
+        "pdf_y_end": 589.7,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zarić",

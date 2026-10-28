@@ -11480,7 +11480,33 @@
     "death_type": "poginuo",
     "death_date": "03.1944",
     "rank": "borac",
-    "death_place": "Grahovo, Nikšić"
+    "death_place": "Grahovo, Nikšić",
+    "party": "SKOJ 1942",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0007001670",
+        "name": "Giljević Milka",
+        "additional_info": "1926. Baćina, Ploče. Član SKOJ-a od 1942. U NOV od 1942. u 3. dalm. brigadi. U 2. dalm. od 9. 6. 1943. Poginula ožujka 1943. kod Crnogorskog Grahova.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 57,
+        "pdf_x": 143.6,
+        "pdf_y": 314.4,
+        "pdf_x_end": 468.1,
+        "pdf_y_end": 338.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.1943",
+          "place": "Grahovo, Nikšić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Gizdić",
@@ -17076,6 +17102,18 @@
         "pdf_y": 411.8,
         "pdf_x_end": 357.2,
         "pdf_y_end": 454.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001400340",
+        "name": "Kandžija Petra Mijo",
+        "additional_info": "rođen Bistrivica, Trogir,1 zemljoradnik, iz siromašne napredne seljačke porodice. Za NOP radi i istog pomaže od početka 1942. U ljeto 1942. stupio je u Trogirsko-Marinski odred i C ri formiranju 3. dalmatinske rigade, postao njegov borac njenog 1. bataljona kao član SKOJ-a. Mijo se sa svojim bataljonom bori oko Knina i Vrlike, u IV neprijateljskoj ofanzivi oko Imotskog, Posušja, Širokog Brijega, Plas-grebena, dolini Neretve i Nevesinjske kotline. Učestvuje u spašavnju i prenosu ranjenika bespućem Prenja do Boračkog jezrea. Obolio je od Tifusa, odkojega se uspio izvući, i početkom lipnja 1943. C riključio se 3. kragujevačkom atafjonu 1. proleterske NOU braigade s kojim je nastavio borbu u proboju obruča na Miljevini zatim u istočnoj Bosni: na Renovici, Vlasenici, Zvorniku, Capardama, Vranduku, centralnoj Bosni, Turbetu, Dalmaciji, Duvnu, Vlašiću, oko Komara i Jajca, Član KPJ postao je početkom srpnja 1943. Poginuo je 9. prosinca 1943. godine kod Travnika vodeći borbu s Nijemcima i ustašama.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 99,
+        "pdf_x": 346.4,
+        "pdf_y": 407.1,
+        "pdf_x_end": 458.1,
+        "pdf_y_end": 685.3,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
@@ -24025,7 +24063,23 @@
     "death_date": "14.09.1943",
     "rank": "borac",
     "party": "KPJ 1941",
+    "death_place": "Gornji Vakuf",
+    "borrowed": [
+      "death_place"
+    ],
     "other_sources": [
+      {
+        "soldier_id": "0001006928",
+        "name": "Matošić Jere Pavao",
+        "additional_info": "zvani Pave; 1914, Split, Hrvatska, Hrvat, mesarski radnik, član KPJ od 1941, u NOB od novembra 1942, u brigadi od juna 1943, I bataljon, borac, poginuo 14. 09. 1943, Gornji Vakuf",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 222,
+        "pdf_x": 63.0,
+        "pdf_y": 474.2,
+        "pdf_x_end": 370.5,
+        "pdf_y_end": 515.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
       {
         "soldier_id": "0001403093",
         "name": "Matošić Jere Pavo",
@@ -31957,7 +32011,33 @@
     "death_type": "poginuo",
     "death_date": "13.06.1943",
     "death_place": "Donji Budanj, Miljevina",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "party": "SKOJ 1940",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001009714",
+        "name": "Poparić Stipe Ljiljana",
+        "additional_info": "1925, Tijesno, Murter, Šibenik, Hrvatska, Hrvatica, učenica, član SKOJ-a od 1940, u NOB od oktobra 1942, u brigadi od juna 1943, borac, poginula 15. 06. 1943, Donji Budanj, Foča",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 73,
+        "pdf_x": 44.9,
+        "pdf_y": 328.1,
+        "pdf_x_end": 352.0,
+        "pdf_y_end": 368.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.06.1943",
+          "place": "Donji Budanj, Miljevina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Poplašen",
@@ -40122,6 +40202,10 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "party": "SKOJ 1940, KPJ 1943",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_type"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001012829",
@@ -40133,6 +40217,18 @@
         "pdf_y": 470.2,
         "pdf_x_end": 366.9,
         "pdf_y_end": 501.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001400879",
+        "name": "Ujević Nikole Ivan",
+        "additional_info": "zvani Čujkušin; rođen 1920, Krivodol, Imotski, zemljoradnik. Član SKOJ-a postao 1940. godine, a član KPJ 1943. Aktivan u pripremnom razdoblju ustanka. U drugoj polovini 1942. stupio je u bataljon »Vid Mihaljević« s kojim je ušao u sastav 4. dalmatinske brigade i učestvovao u borbi oko Vrgorca, Širokog Brijega, Tihaljine, Klobuka, Careva dola, Zelenkovca, Cvrsnice, u dolini Neretve i Nevesinja. Krajem travnja 1943. postao je borac 3. dalmatinske brigade. Bori se oko Uloga, Kalinovika, Broda, Zavajita, na Čehotini, Gracu, Popovu dolu, Čelebiću, Tari, Mratinju i Vučevu. Početkom lipnja 1943. postao borac 2. crnogorskog bataljona 1. proleterske NOU brigade. Sudjeluje u borbama u proboju obruča, u istočnoj Bosni, na r. Prači, Renovici, Vlasenici, Drinjači, Zvorniku, Capardima, Nemiloj, u srednjoj Bosni, Turbetu, Dalmaciji. Rujna 1943. godine prekomandiran u Dalmaciju. Nastavio je borbe u sastavu 4. Splitske brigade kao vezista u Bosni, Dalmaciji, Lici i Istri. Kraj rata ga je zatekao u činu starijeg vodnika. U toku rata je ranjavan, a prebolio je i tifus. Godine 1945. poginuo je nesretnim slučajem.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 260,
+        "pdf_x": 382.7,
+        "pdf_y": 260.4,
+        "pdf_x_end": 492.8,
+        "pdf_y_end": 687.2,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -41413,8 +41509,52 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2345",
         "source_page": 2345,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0001013136",
+        "name": "Vidović Sibe Josip",
+        "additional_info": "1913, Sevid, Trogir, Hrvatska, Hrvat, zemljoradnik, u NOB od 1942, u brigadi od juna 1943, VI bataljon, borac, poginuo 13. 06. 1943, Miljevina, Foča",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 330,
+        "pdf_x": 53.6,
+        "pdf_y": 96.2,
+        "pdf_x_end": 360.9,
+        "pdf_y_end": 126.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001301861",
+        "name": "Vidović Sibe Josip",
+        "additional_info": "Zemljoradnik, rođen 1913, Sevid, Trogir. U NOB od 1943. Poginuo 14. juna 1943. u borbi na Sutjesci, Miljevina, Foča.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 29,
+        "pdf_x": 48.2,
+        "pdf_y": 727.3,
+        "pdf_y_end": 774.3,
+        "pdf_x_end": 201.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001400898",
+        "name": "Vidović Sibe Josip",
+        "additional_info": "rođen 1913, Sevid, Trogir, zemljoradnik iz siromašne seljačke obitelji. Za NOP radi od početka 1942, a zatim stupa u Trogirsko-marinski partizanski odred iz kojeg ulazi u sastav 3. dalmatinske brigade. S njom učestvuje u borbama kod Knina, Vrlike, Imotskog, Posušja, Plas-grebena, Širokog Brijega, dolinom Neretve. Učestvuje u prenošenju ranjenika preko Prenja, zatim u borbama kod Nevesinja, na Čehotini, Ljubišnji, kod Čelebića, na Tari, Pivi, Durmitoru, Mratinju i Vučevu. Početkom lipnja 1943. dolazi u sastav 6. beogradskog bataljona 1. proleterske NOU brigade i nastavlja borbu preko Zelengore, Balinovaca i Rataja. Poginuo je 13. lipnja 1943. godine ispred Miljevine.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 266,
+        "pdf_x": 136.9,
+        "pdf_y": 143.3,
+        "pdf_x_end": 244.6,
+        "pdf_y_end": 333.0,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "14.06.1943",
+          "place": "Miljevina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vidović",
@@ -42270,7 +42410,27 @@
     "death_place": "Sutjeska",
     "rank": "bolničarka",
     "unit_detail": "3. bataljon",
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0148002974",
+        "name": "Vladović Martina Rosa",
+        "additional_info": "borac I udarnog mosorskog bataljona. Rođena 1924, Ercegovci, Sinj, domaćica, Hrvatica. U Mosorski bataljon došla u listopadu 1942. Poginula u lipnju 1943. u bici na Sutjesci.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 196,
+        "pdf_x": 245.4,
+        "pdf_y": 566.8,
+        "pdf_x_end": 586.2,
+        "pdf_y_end": 592.1,
+        "pdf_x_left": 228.6,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Vlajić",
@@ -42585,7 +42745,7 @@
     "fathers_name": "",
     "full_name": "Vrdoljak Ivan",
     "additional_info": "borac, rođen u Pribudama, Split, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a od 1942, poginuo kod Miljevine 14. juna 1943. u sastavu 1. proleterske brigade.",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 69,
     "pdf_y": 128.9,
     "pdf_x": 226.6,
@@ -42601,6 +42761,9 @@
     "rank": "borac",
     "death_place": "Sarajevo, Kalinovik",
     "party": "SKOJ 1942",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
       {
         "soldier_id": "0001013281",
@@ -42612,6 +42775,32 @@
         "pdf_y": 57.0,
         "pdf_x_end": 356.5,
         "pdf_y_end": 86.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001400912",
+        "name": "Vrdoljak Ivan",
+        "additional_info": "rođen.. Pribude, Split, zemljoradnik. Potiče iz siromašne seljačke obitelji. Za NOP radi od sredine 1942. godine, kada postaje član SKOJ-a, a krajem iste godine odlazi u partizane i stupa u 3. dalmatinsku brigadu s kojom učestvuje u borbama oko Knina, Vrlike, Dinare, Livanjskog i Duvanjskog polje; zatim kroz IV i V neprijateljsku ofanzivu, u teškim borbama preko Imotskog, Posušja, Širokog Brijega, dolinom Neretve, Jablanice, Prenja, Hercegovine-Nevesinja, Uloga, Kalinovika, Drine, Sandžaka, Čehotine, Ljubišnje, Čelebića, Tare, Pive, Mratinja, Vučeva, Sutjeske, Zelengore. Početkom lipnja 1943. dolazi u 4. kraljevački bataljon 1. proleterske NOU brigade i nastavlja borbe, ali za kratko vrijeme, jer je već 14. lipnja 1943. godine poginuo na komunikaciji Foča - Kalinovik, ispred Miljevne.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 267,
+        "pdf_x": 224.8,
+        "pdf_y": 501.6,
+        "pdf_x_end": 332.8,
+        "pdf_y_end": 683.3,
+        "pdf_rects": [
+          [
+            216.9,
+            500.6,
+            332.8,
+            683.3
+          ],
+          [
+            339.3,
+            142.5,
+            455.5,
+            190.9
+          ]
+        ],
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],

@@ -16510,7 +16510,35 @@
     "pdf_y_end": 249.2,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Luka, Zadar",
-    "pdf_x_end": 280.6
+    "pdf_x_end": 280.6,
+    "other_sources": [
+      {
+        "soldier_id": "9021056731",
+        "name": "Bubica (Ante) Mladen",
+        "additional_info": "rođen 1922, Luka (Zadar). Hrvat, poginuo 1942. u NOBu, Žuberg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2767",
+        "source_page": 2767,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0120000057",
+        "name": "Bubica Ante Mladen",
+        "additional_info": "1922. Luka, Zadar. Poginuo 22. 11. 1942. u Novom Selu, sahranjen u Gravcu.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=288",
+        "source_page": 264,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_date": "22.11.1942",
+    "death_place": "Novo Selo",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Bubić",
@@ -154826,7 +154854,33 @@
     "birth_place": "Donja Purgarija, Jastrebarsko",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "kod sela Goli Vrh u Žumberku"
+    "death_place": "kod sela Goli Vrh u Žumberku",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0097001200",
+        "name": "Valečić Mijo",
+        "additional_info": "borac, ŽB, 1919. Purgarija, Jastrebarsko, poginuo Goli Vrh, 1943",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 16.1,
+        "pdf_y": 348.4440000000001,
+        "pdf_x_end": 343.7,
+        "pdf_y_end": 357.4,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "kod sela Goli Vrh u Žumberku"
+        }
+      ]
+    }
   },
   {
     "last_name": "Valenćić",

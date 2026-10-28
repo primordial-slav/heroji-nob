@@ -35932,7 +35932,21 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001101",
     "pdf_x_end": 346.6,
-    "death_date": "05.1944"
+    "death_date": "05.1944",
+    "other_sources": [
+      {
+        "soldier_id": "0037000819",
+        "name": "Solar Mitar",
+        "additional_info": "rođen 1944. u Pčelicu, Virovitica, poginuo svibnja 1944. godine. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
+        "pdf_file": "16-slavonska-omladinska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 158.4,
+        "pdf_y": 640.6,
+        "pdf_x_end": 438.7,
+        "pdf_y_end": 657.5,
+        "unit_file": "16-slavonska-omladinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sorsxx",
@@ -38915,10 +38929,10 @@
   },
   {
     "last_name": "Valečić",
-    "middle_name": "",
+    "middle_name": "Donja Purgarija",
     "first_name": "Mijo",
-    "fathers_name": "",
-    "full_name": "Valečić Mijo",
+    "fathers_name": "Donja Purgarija",
+    "full_name": "Valečić Donja Purgarija Mijo",
     "additional_info": "borac, ŽB, 1919. Purgarija, Jastrebarsko, poginuo Goli Vrh, 1943",
     "birth_year": "1919",
     "birth_place": "Purgarija, Jastrebarsko",
@@ -38933,7 +38947,29 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097001200",
     "pdf_x_end": 343.7,
-    "death_date": "1943"
+    "death_date": "1943",
+    "other_sources": [
+      {
+        "soldier_id": "0006007156",
+        "name": "Valečić Donja Purgarija Mijo",
+        "additional_info": "Donja Purgarija, Jastrebarsko. Poginuo 1944. kod sela Goli Vrh u Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 99,
+        "pdf_x": 134.0,
+        "pdf_y": 438.2,
+        "pdf_x_end": 305.9,
+        "pdf_y_end": 462.3,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Goli Vrh"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vapčević",

@@ -3703,7 +3703,21 @@
     "death_date": "22.11.1944",
     "death_place": "kod Kazuka",
     "rank": "borac",
-    "pdf_x_end": 343.9
+    "pdf_x_end": 343.9,
+    "other_sources": [
+      {
+        "soldier_id": "0111000082",
+        "name": "Burnać Paje Pajo",
+        "additional_info": "rođ. 1928, Subotica, borac, pog. 22. 11. 1944, Kazuk.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 23,
+        "pdf_x": 250.9,
+        "pdf_y": 454.1,
+        "pdf_x_end": 528.1,
+        "pdf_y_end": 472.2,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Buzina",
@@ -8501,10 +8515,10 @@
   },
   {
     "last_name": "Ilkić",
-    "middle_name": "",
+    "middle_name": "Jovana",
     "first_name": "Živan",
-    "fathers_name": "",
-    "full_name": "Ilkić Živan",
+    "fathers_name": "Jovan",
+    "full_name": "Ilkić Jovana Živan",
     "additional_info": "rođ. 1923, Vrdnik, Irig, poginuo kod Bezdana 16. XI",
     "birth_year": "1923",
     "birth_place": "Vrdnik, Irig",
@@ -8516,7 +8530,30 @@
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000317",
     "pdf_x_end": 350.2,
-    "death_place": "Bezdan"
+    "death_place": "Bezdan",
+    "death_date": "16.11.1944",
+    "borrowed": [
+      "death_date"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0111000175",
+        "name": "Ilkić Jovana Živan",
+        "additional_info": "rođ. 1919, Vrdnik, zam. komandira, pog. 16. 11. 1944, Bezdan.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 295.4,
+        "pdf_y": 422.1,
+        "pdf_x_end": 571.5,
+        "pdf_y_end": 440.6,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Imrek",
@@ -11584,12 +11621,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=525",
         "source_page": 525,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0111010653",
+        "name": "Kopilović Marko",
+        "additional_info": "1925, Subotica, borac, poginuo 10. 3. 1945. kod mesta Bar. Petrovo Selo.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 32,
+        "pdf_x": 77.3,
+        "pdf_y": 233.7,
+        "pdf_x_end": 357.6,
+        "pdf_y_end": 250.8,
+        "unit_file": "51-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Kopilović",

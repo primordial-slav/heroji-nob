@@ -30807,10 +30807,10 @@
   {
     "soldier_id": "0057004121",
     "last_name": "Korica",
-    "middle_name": "",
+    "middle_name": "Milana",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Korica Milan",
+    "fathers_name": "Milan",
+    "full_name": "Korica Milana Milan",
     "additional_info": "zvani Kovač; rođen 1919. Laćarak, Sremska Mitrovica, komandant bataljona, ranjen 16. 12. 1943. Sokol, Gračanica, istočna Bosna, narodni heroj.",
     "birth_year": "1919",
     "pdf_file": "3-vojvodjanska.pdf",
@@ -30820,7 +30820,42 @@
     "pdf_x_end": 341.1,
     "pdf_y_end": 520.3,
     "birth_place": "Laćarak, Sremska Mitrovica",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "other_sources": [
+      {
+        "soldier_id": "9002000531",
+        "name": "Korica Milanka Milan (Kovač)",
+        "additional_info": "Rođen je 22. decembra 1919. u selu Lačarku, Sremska Mitrovica, Vojvodina. … Narodnim herojem proglašen je 27. novembra 1953. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=405",
+        "source_page": 401,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000483",
+        "name": "Korica Milinka Milan (Kovač)",
+        "additional_info": "Rođen 22-XII-1919 u selu Laćarku: Sremska Mitrovica, Vojvodina. Srbija. Kovački radnik. Član KPJ od 2-II-1943. U NOB stupio juna 1942. Danas: potpukovnik JNA. Za narodnog heroja pr0glašen 27-XI-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=387",
+        "source_page": 365,
+        "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0082001516",
+        "name": "Korica Milana Milan",
+        "additional_info": "1919, Laćarak, Sremska Mitrovica, radnik, zamenik komandanta Brigade.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 63,
+        "pdf_x": 71.3,
+        "pdf_y": 405.8,
+        "pdf_x_end": 351.5,
+        "pdf_y_end": 424.4,
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ],
+    "occupation": "radnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "birth_date": "22.12.1919"
   },
   {
     "soldier_id": "0057004120",
@@ -39865,7 +39900,44 @@
     "pdf_x_end": 359.9,
     "birth_place": "Irig",
     "occupation": "zemljoradnik",
-    "rank": "komandant brigade"
+    "rank": "komandant brigade",
+    "other_sources": [
+      {
+        "soldier_id": "9002000695",
+        "name": "Matić Pavla Petar",
+        "additional_info": "Rođen je 7. jula 1920. godine, u lrigu, kod Rume, Vojvodina. … Narodnim herojem proglašen je 20. decembra 1951. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=523",
+        "source_page": 519,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000624",
+        "name": "Matić Pavla Petar",
+        "additional_info": "Rođen 7-VII-1920 u Irigu. Srem. Srbija. Zemljorađnik. Član KPJ od jula 1940. U NOB stupio 1941. Danas: generalmajor JNA. Za narodnog heroja proglašen 20-XII-1951.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=496",
+        "source_page": 474,
+        "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "9027001810",
+        "name": "Matić (Boško) Petar",
+        "additional_info": "rođen 1919, Irig. Srbin, poginuo 1943. u NOBu, Grabovo sr.mitr",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=95",
+        "source_page": 95,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Grabovo sr.mitr",
+    "birth_date": "07.07.1920"
   },
   {
     "last_name": "Matić",
@@ -50970,7 +51042,28 @@
     "soldier_id": "0057002432",
     "pdf_x_end": 329.0,
     "birth_place": "Staro Petrovo Selo, Slavonija",
-    "rank": "zamenik političkog komesara brigade"
+    "rank": "zamenik političkog komesara brigade",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0018001201",
+        "name": "Ostojić Uroš",
+        "additional_info": "zvani Đetić; rođen 1915, St. Petrovo Selo, Srbin, radnik, stupio u NOVJ 1941j? zamenik komesara brigade i divizije.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 89,
+        "pdf_x": 133.3,
+        "pdf_y": 320.6,
+        "pdf_x_end": 392.1,
+        "pdf_y_end": 346.1,
+        "pdf_x_left": 110.8,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ostrogovac",
@@ -64116,7 +64209,21 @@
     "death_type": "poginuo",
     "death_date": "19.08.1943",
     "death_place": "Grgurevci",
-    "rank": "politički komesar čete"
+    "rank": "politički komesar čete",
+    "other_sources": [
+      {
+        "soldier_id": "9027008122",
+        "name": "Sanadrović (Miloš) Boško",
+        "additional_info": "rođen 1904, Grgurevci (Sremska Mitrovica). Srbin, poginuo 1943. u NOBu, Grgurevci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=429",
+        "source_page": 429,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Sandl",
@@ -69601,7 +69708,27 @@
     "pdf_x_end": 352.0,
     "birth_place": "Buđanovci, Ruma",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9027006001",
+        "name": "Stojčević (Stanko) Slavko",
+        "additional_info": "rođen 1921, Buđanovci (Ruma). Srbin, poginuo 1945. u NOBu, Laćin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=297",
+        "source_page": 297,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Laćin"
   },
   {
     "last_name": "Stojčinov",

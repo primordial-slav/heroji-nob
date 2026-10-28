@@ -131924,6 +131924,18 @@
         "ref_book": "sremski-front-poginuli"
       },
       {
+        "soldier_id": "0003021374",
+        "name": "Nikolić Jefte Veselin",
+        "additional_info": "borac brigade. Poginuo i sahranjen kod Vrbanje 07. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 72,
+        "pdf_x": 44.7,
+        "pdf_y": 220.6,
+        "pdf_x_end": 205.2,
+        "pdf_y_end": 249.3,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
         "soldier_id": "0003021375",
         "name": "Nikolić Jevte Veselin",
         "additional_info": "rođen 1925. u Gorljevu - Kosjerić. U NOB-1944. Borac 2. čete 1. bataljona. Poginuo kod Vrbanje (Srem) 1945. godine.",
@@ -131935,7 +131947,15 @@
         "pdf_y_end": 310.0,
         "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.04.1945",
+          "place": "Vrbanja"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002005739",
@@ -176579,6 +176599,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000260&pg_seq=664",
         "source_page": 662,
         "ref_book": "ostrvica"
+      },
+      {
+        "soldier_id": "0118000748",
+        "name": "Savatović Nikola",
+        "additional_info": "iz Ostrvica, L. Osik, GOSpić, poginuo 18. II 1943. u Gornjem Lapcu.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=404",
+        "source_page": 399,
+        "unit_file": "3-licka-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -206506,7 +206534,7 @@
     "other_sources": [
       {
         "soldier_id": "0006008332",
-        "name": "Ulanec Rudolfa Marijan",
+        "name": "Ulanec Marijan",
         "additional_info": "1925. Stenjevac, Zagreb. Nestao 26. VI1944. u selu Kosanovići u Bosni.",
         "pdf_file": "13-proleterska-spisak.pdf",
         "pdf_page": 98,
@@ -215550,8 +215578,25 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=433",
         "source_page": 429,
         "ref_book": "otocac-brinje"
+      },
+      {
+        "soldier_id": "0003022489",
+        "name": "Vukmirović Ike Stevo",
+        "additional_info": "rođen 1923. u G. Babinom Potoku - Otoćac. U NOB-1941. Borac 3. ćete 4. bataljona. Poginuo na Bogunici kod Medka 27. 12. 1942. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 128,
+        "pdf_x": 222.2,
+        "pdf_y": 11.9,
+        "pdf_x_end": 383.5,
+        "pdf_y_end": 60.7,
+        "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "soldier_id": "0002009392",

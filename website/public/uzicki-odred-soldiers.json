@@ -874,7 +874,49 @@
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 468.9,
     "occupation": "pitomac vojne akademije",
-    "birth_date": "03.08.1921"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Vikoč",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0039000020",
+        "name": "Antonijević S Ilija",
+        "additional_info": "poginuo 22. maja 1943, Vikoč; Sutjeska (15. maj — 19. jun 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 1,
+        "pdf_x": 130.4,
+        "pdf_y": 678.5,
+        "pdf_x_end": 230.3,
+        "pdf_y_end": 687.7,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100012",
+        "name": "Antonijević Sekule Ilija",
+        "additional_info": "borac 2. čete 4. bataljona, rođen 1921, Ponikovica, Užice, pitomac Vojne akademije, Srbin, u NOB od 194l\", član KPJ, od zadobijenih rana umro u selu Vikoč, kod Čelebića, 22. maja 1943. godine. •",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 105.2,
+        "pdf_y": 620.3,
+        "pdf_x_end": 275.5,
+        "pdf_y_end": 684.7,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "birth_date": "03.08.1921",
+    "variants": {
+      "death": [
+        {
+          "date": "22.05.1943",
+          "place": "Vikoč"
+        }
+      ]
+    }
   },
   {
     "last_name": "Antonijević",
@@ -1209,6 +1251,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1226",
         "source_page": 1226,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0039000934",
+        "name": "Đajić Miodrag",
+        "additional_info": "poginuo 3. novembra 1943, Ursule (Sjenica); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 219.4,
+        "pdf_y": 797.7,
+        "pdf_x_end": 292.9,
+        "pdf_y_end": 807.4,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039101349",
+        "name": "Đajić Miodrag",
+        "additional_info": "zvani Mijo; komandir 1. cete 4. bataljona, rođen 1920, Užice, krojački radnik, Srbin, u NOB od 1941, elan KPJ, poginuo na Ursulama, kod Sjenice, 15. novembra 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 133.4,
+        "pdf_y": 605.7,
+        "pdf_x_end": 302.9,
+        "pdf_y_end": 659.1,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -1216,8 +1282,19 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "U bosni",
-    "birth_date": "07.06.1922"
+    "death_place": "Ursule",
+    "birth_date": "07.06.1922",
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "15.11.1943",
+          "place": "Ursule"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đajić",
@@ -6874,6 +6951,18 @@
         "pdf_x_end": 358.7,
         "pdf_y_end": 256.6,
         "unit_file": "4-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0021000968",
+        "name": "Glišić Jovana Radenko",
+        "additional_info": "rođen 1923, Rača, Bajina Bašta, zemljoradnik. U Brigadi od novembra 1944. Ranjen 23. aprila 1945, ispred Donjeg Rajića. Umro sutradan u bolnici, u Slavonskom Brodu.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 49.3,
+        "pdf_y": 92.6,
+        "pdf_x_end": 352.1,
+        "pdf_y_end": 124.7,
+        "unit_file": "4-srpska-soldiers.json"
       }
     ],
     "death_place": "Slavonski Brod",
@@ -7552,6 +7641,28 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 460.2,
     "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "učitelj",
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0039100227",
+        "name": "Glišić Miloš",
+        "additional_info": "politički komesar 2. čete 1. bataljona, roclen 1918, Arilje, učitelj, Srbin, u NOB od 1941, član KPJ, poginuo na Sutjesci juna 1943. kao teški ranjenik u Centralnoj bolnici.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 108.1,
+        "pdf_y": 443.9,
+        "pdf_x_end": 278.1,
+        "pdf_y_end": 498.2,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
     "birth_date": "28.12.1920"
   },
   {
@@ -8893,6 +9004,12 @@
     "death_date": "krajem maja 1943",
     "rank": "borac",
     "unit_detail": "3. četa, 4. bataljon",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "0039000239",
@@ -8905,8 +9022,25 @@
         "pdf_x_end": 265.5,
         "pdf_y_end": 755.9,
         "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100291",
+        "name": "Ivanović Miladina Milutin",
+        "additional_info": "zvani Dule; borac 3. čete 4. bataljona, rođen 1905, Buar, Užice, radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Vučevu krajem maja 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 132.8,
+        "pdf_y": 563.3,
+        "pdf_x_end": 301.5,
+        "pdf_y_end": 615.7,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1905"
+      ]
+    }
   },
   {
     "last_name": "Ivanović",
@@ -33098,6 +33232,18 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "0039100952",
+        "name": "Smiljanić Tome Desimir",
+        "additional_info": "borac 1. čete 1. bataljona, rođen 1918, Rasna, Užička Požega, podoficir Jugoslovenske vojske, Srbin, u NOB od 1941, član KPJ, poginuo u Novom Selu, kod Bijeljine, decembra 1944. kao komandir čete u 6. istočnobosanskoj brigadi.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 57,
+        "pdf_x": 315.3,
+        "pdf_y": 560.0,
+        "pdf_x_end": 485.7,
+        "pdf_y_end": 635.4,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0039010044",
         "name": "Smiljanić Tome Desimir",
         "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Rasna: Smiljanić Desimir, poginuo 1944. godine u Badovincima kod Šapca",
@@ -33126,11 +33272,20 @@
       }
     ],
     "unit_detail": "1. požeška četa",
-    "death_place": "Badovinci, Šabac",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "death_place"
+      "death_place",
+      "ethnicity",
+      "party"
     ],
-    "birth_date": "07.01.1912"
+    "death_place": "Novo Selo, Bijeljina",
+    "party": "KPJ",
+    "birth_date": "07.01.1912",
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Smiljanić",
@@ -34103,6 +34258,18 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "0039000751",
+        "name": "Stamatović Dobrivoja Milojko",
+        "additional_info": "poginuo 20. jula 1943, Gradišnik, Jelova Gorica (više Ozren-manastira); Istočna Bosna (24. jun — 31. avgust 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 565.2,
+        "pdf_y": 795.1,
+        "pdf_x_end": 665.0,
+        "pdf_y_end": 804.8,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0039100965",
         "name": "Stamatović Dobrivoja Milojko",
         "additional_info": "borac 1. čete 1. bataljona, rođen 1920, Prijanovići, Užička Požega, đak, Srbin, u NOB od 1941, član KPJ, poginuo na planini Ozren, u Istočnoj Bosni, 20. jula 1943.",
@@ -34112,6 +34279,33 @@
         "pdf_y": 501.1,
         "pdf_x_end": 458.9,
         "pdf_y_end": 554.5,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039010047",
+        "name": "Stamatović Milojko",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Prijanovići: Stamatović Milojko, poginuo 20. jula 1943. godine u Gradišniku na planini Ozrenu",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 26,
+        "pdf_x": 133.7,
+        "pdf_y": 509.9,
+        "pdf_x_end": 439.2,
+        "pdf_y_end": 529.4,
+        "pdf_x_left": 107.1,
+        "pdf_rects": [
+          [
+            133.7,
+            509.9,
+            439.2,
+            518.9
+          ],
+          [
+            107.1,
+            520.4,
+            243.4,
+            529.4
+          ]
+        ],
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -34123,7 +34317,7 @@
       "party"
     ],
     "occupation": "đak",
-    "death_place": "Ozren, Istočna Bosna",
+    "death_place": "Gradišnik, Jelova Gorica",
     "party": "KPJ",
     "birth_date": "12.09.1920"
   },
@@ -35502,6 +35696,18 @@
         "pdf_y": 240.7,
         "pdf_x_end": 454.1,
         "pdf_y_end": 293.1,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039010050",
+        "name": "Stojčić Momčilo",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Donja Dobrinja: Stojčić Momčilo, poginuo 26. jula 1943. kod Tuzle",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 25,
+        "pdf_x": 186.7,
+        "pdf_y": 679.0,
+        "pdf_x_end": 408.7,
+        "pdf_y_end": 688.0,
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -36889,15 +37095,52 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=319",
         "source_page": 316,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "0039000805",
+        "name": "Todorović Vojin",
+        "additional_info": "poginuo 22. jula 1943, Omerove vode (na Ozrenu, istočna Bosna); Istočna Bosna (24. jun — 31. avgust 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 571.8,
+        "pdf_y": 871.6,
+        "pdf_x_end": 652.8,
+        "pdf_y_end": 881.3,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039101045",
+        "name": "Todorović Vojin",
+        "additional_info": "politički komesar 1. čete 5. bataljona, rođen 1921, Stupčevići, Arilje, student prava, Srbin, u NOB od 1941, član KPJ, poginuo u Omerovim Vodama, na planini Ozrenu, u Istočnoj Bosni, 22. jula 1943. kao politički komesar brigadne intendanture.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 66,
+        "pdf_x": 103.4,
+        "pdf_y": 160.0,
+        "pdf_x_end": 274.5,
+        "pdf_y_end": 232.5,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "party"
     ],
-    "death_place": "Omazić-bosna",
-    "birth_date": "20.06.1917"
+    "death_place": "Omerove vode",
+    "party": "KPJ",
+    "birth_date": "20.06.1917",
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "22.07.1943",
+          "place": "Omerove vode"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tomanović",
@@ -38370,7 +38613,40 @@
     "death_type": "poginuo",
     "death_date": "04.11.1943",
     "rank": "zamjenik političkog komesara",
-    "unit_detail": "2. četa, 1. bataljon"
+    "unit_detail": "2. četa, 1. bataljon",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Prijepolje",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0039101086",
+        "name": "Vasiljević Bogoljub",
+        "additional_info": "zvani Bubina; desetar u 2. četi 1. bataljona, rođen 1918, Arilje, radnik, Srbin, u NOB od 1941, član KPJ, poginuo kod Prijepolja 4. decembra 1943. kao zamenik političkog komesara čete",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 68,
+        "pdf_x": 106.0,
+        "pdf_y": 372.4,
+        "pdf_x_end": 275.9,
+        "pdf_y_end": 434.4,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ],
+      "death": [
+        {
+          "date": "04.12.1943",
+          "place": "Prijepolje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vasiljević",
@@ -38558,7 +38834,76 @@
     "pdf_x_end": 479.7,
     "death_type": "streljan",
     "death_date": "23.07.1943",
-    "death_place": "na Tumarskom brdu, kod Ozrena, u istočnoj Bosni"
+    "death_place": "na Tumarskom brdu, kod Ozrena, u istočnoj Bosni",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ 1940",
+    "other_sources": [
+      {
+        "soldier_id": "0001012929",
+        "name": "Vasić Radomira Radenko",
+        "additional_info": "1912, Ovčinja, Bajina Bašta, Srbija, Srbin, radnik, član KPJ od 1940, u NOB od 1941, u brigadi od decembra 1941, V bataljon, vodnik, poginuo 19. 07. 1943, s. Tumare na Ozrenu",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 314,
+        "pdf_x": 63.5,
+        "pdf_y": 304.9,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 346.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200990",
+        "name": "Vasić Radenko",
+        "additional_info": "borac, rođen 1912. u Občini, Bajina Bašta, SRS, opančar, član KPJ od 1940. Poginuo 19. decembra 1943. u Tumarima, Ozren.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 49,
+        "pdf_x": 250.5,
+        "pdf_y": 450.1,
+        "pdf_x_end": 559.5,
+        "pdf_y_end": 481.7,
+        "pdf_x_left": 226.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039000838",
+        "name": "Vasić Radomira Radenko",
+        "additional_info": "poginuo 19. jula 1943, Tumare (na Ozrenu, istočna Bosna); Istočna Bosna (24. jun — 31. avgust 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 524.4,
+        "pdf_y": 749.9,
+        "pdf_x_end": 593.1,
+        "pdf_y_end": 759.6,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039101091",
+        "name": "Vasić Radomira Radenko",
+        "additional_info": "borac 3. čete 4. bataljona, rođen 1912, Ovčinja, Bajina Bašta, radnik, Srbin, u NOB od 1941, član KPJ, poginuo u Istočnoj Bosni, na planini Ozren, u Tumarima, 19. jula 1943, komandir voda.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 68,
+        "pdf_x": 105.5,
+        "pdf_y": 308.6,
+        "pdf_x_end": 276.2,
+        "pdf_y_end": 370.6,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.07.1943",
+          "place": "na Tumarskom brdu, kod Ozrena, u istočnoj Bosni"
+        },
+        {
+          "date": "19.12.1943",
+          "place": "na Tumarskom brdu, kod Ozrena, u istočnoj Bosni"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vasić",
@@ -39088,14 +39433,39 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1218",
         "source_page": 1218,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0039101098",
+        "name": "Vesnić Radisav",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1921, Gorjani, Užice, trgovački pomoćnik, Srbin, u NOB od 1941, član KPJ, poginuo kod Andrijevice 19. jula 1944. kao komandir čete.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 68,
+        "pdf_x": 289.6,
+        "pdf_y": 340.0,
+        "pdf_x_end": 459.7,
+        "pdf_y_end": 391.5,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "party"
     ],
-    "death_place": "Andrijevica"
+    "death_place": "Andrijevica",
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "19.07.1944",
+          "place": "Andrijevica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vesnić",

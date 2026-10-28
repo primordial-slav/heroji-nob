@@ -14946,7 +14946,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00008716&pg_seq=794",
         "source_page": 791,
         "ref_book": "bijelo-polje"
+      },
+      {
+        "soldier_id": "9023003617",
+        "name": "Vlahović (Jakša) Milica",
+        "additional_info": "rođena 1924, Mojkovac. Crnogorka, poginula 1944. u NOBu, Ljute - Pljevlj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=108",
+        "source_page": 108,
+        "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -15868,8 +15880,34 @@
         "pdf_y_end": 208.7,
         "pdf_x_left": 66.0,
         "ref_book": "prilog-u-krvi-pali-borci"
+      },
+      {
+        "soldier_id": "0005011216",
+        "name": "Zečević Vidoja Radisav",
+        "additional_info": "borac, 1923, Popov Do, Pljevlja, zemljoradnik, član KPJ. Borac 3. brigade od aprila 1943. Kao intendant bataljona u 5. sandžačkoj NOU brigadi, poginuo od njemačke avijacije, 17. oktobra 1944. kod Sevojna, Užice.",
+        "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
+        "pdf_page": 84,
+        "pdf_x": 73.9,
+        "pdf_y": 349.2,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 382.7,
+        "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation",
+      "party"
+    ],
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "17.10.1944",
+          "place": "Užice, prilikom bombardovanja savezničkih aviona"
+        }
+      ]
+    }
   },
   {
     "last_name": "Zindović",

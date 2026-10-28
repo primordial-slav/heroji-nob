@@ -16641,9 +16641,27 @@
         "pdf_y": 79.4,
         "pdf_x_end": 214.5,
         "pdf_y_end": 131.8
+      },
+      {
+        "soldier_id": "0148000398",
+        "name": "Božić Mije Marko",
+        "additional_info": "borac I udarnog mosorskog bataljona. Rođen 10. 10. 1920. u Pisku, Omiš, zemljoradnik, Hrvat, član SKOJ-a 1942. Stupio u Leteću mosorsku četu na jesen 1942, a zatim u I udarni mosorski bataljon sa kojim je 12. studenog ušao u sastav 3. dalmatinske brigade. Poginuo početkom lipnja 1943. u bici na Sutjesci kao puškomitraljezac u 2. dalmatinskoj brigadi.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 24,
+        "pdf_x": 241.5,
+        "pdf_y": 475.9,
+        "pdf_x_end": 582.2,
+        "pdf_y_end": 518.4,
+        "pdf_x_left": 224.7,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
     ],
-    "rank": "puškomitraljezac"
+    "rank": "puškomitraljezac",
+    "party": "SKOJ 1942",
+    "borrowed": [
+      "party"
+    ],
+    "birth_date": "10.10.1920"
   },
   {
     "last_name": "Božić",
@@ -27903,6 +27921,18 @@
         "pdf_x_end": 353.0,
         "pdf_y_end": 173.8,
         "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020907",
+        "name": "Čelebić Sava Milovan",
+        "additional_info": "zvani Kičica; Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Štab Bataljona: zamjeiik k-nta bagaljona, Orasi, Cetinje 1904., kod Nevesinja",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 21,
+        "pdf_x": 141.2,
+        "pdf_y": 324.6,
+        "pdf_x_end": 519.7,
+        "pdf_y_end": 344.7,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ],
     "unit_detail": "1. bataljon",
@@ -35046,7 +35076,21 @@
     "pdf_y_end": 148.8,
     "pdf_file": "2-dalmatinska-proleterska.pdf",
     "rank": "intendant brigade",
-    "pdf_x_end": 412.8
+    "pdf_x_end": 412.8,
+    "other_sources": [
+      {
+        "soldier_id": "0007010082",
+        "name": "Dragović Dušan",
+        "additional_info": "Pregled štabova i komandi 2. dalmatinske brigade: intendant brigade, od juna do decembra 1943.",
+        "pdf_file": "2-dalmatinska-stabovi.pdf",
+        "pdf_page": 3,
+        "pdf_x": 33.0,
+        "pdf_y": 55.2,
+        "pdf_x_end": 237.1,
+        "pdf_y_end": 65.2
+      }
+    ],
+    "unit_detail": "Štab brigade"
   },
   {
     "last_name": "Dragović",
@@ -44744,7 +44788,35 @@
     "death_date": "03.1943",
     "death_place": "Crnogorsko Grahovo",
     "pdf_x_end": 468.1,
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "domaćica",
+    "other_sources": [
+      {
+        "soldier_id": "0046000314",
+        "name": "Giljević Milka",
+        "additional_info": "borac, rođena 1926, Baćina, Ploče, domaćica, Hrvatica, u NOB od 1942, poginula kod Grahova, Nikšić, marta 1944. u sastavu 2. dalmatinske brigade.",
+        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 5.1,
+        "pdf_y": 53.6,
+        "pdf_x_end": 176.2,
+        "pdf_y_end": 106.0,
+        "unit_file": "3-dalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.1944",
+          "place": "Crnogorsko Grahovo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Gingliani",
@@ -48121,7 +48193,26 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "pdf_x_end": 459.2,
-    "birth_date": "18.01.1918"
+    "other_sources": [
+      {
+        "soldier_id": "0039100243",
+        "name": "Grljušić Joze Ivan",
+        "additional_info": "borac 3. čete 1. bataljona, rođen 1916, Zavojane, Vrgorac, zemljoradnik, Hrvat, u NOB od februara 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 134.0,
+        "pdf_y": 315.6,
+        "pdf_x_end": 302.5,
+        "pdf_y_end": 357.2,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "birth_date": "18.01.1918",
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Grljušić",
@@ -76565,6 +76656,18 @@
         "pdf_y": 449.1,
         "pdf_x_end": 213.7,
         "pdf_y_end": 490.7
+      },
+      {
+        "soldier_id": "0001400495",
+        "name": "Lončar Ilije Božo",
+        "additional_info": "zvani Jastreb; rođen 1912, Siverić, Drniš, rudarski radnik u ibarskim rudnicima. Učesnik štrajkova i demonstracija. Bio proganjan i protjeran iz ibarskih rudnika zbog naprednih ideja i masovnog učešća u štrajku 1937. godine. Jedan od organizatora ustanka. Prvom polovinom 1941. godine ulazi u Kraljevački odred iz kojeg je stupio u 4. kraljevački bataljon u Rudom, i sa njim nastavio borbu. Član KPJ postao je u svibnju 1942. U toku rata je ranjavan teže 4 puta i danas je RVI. Kraj rata ga je zatekao na dužnosti rukovaoca tehnike i opreme u 2. armiji u činu potporučnika. Božo je bio'poznat kao vješt starješina i nosio je nadimak »Jastreb«. Nosilac je »Partizanske spomenice 1941«. Poslije rata ostao u JNA iz koje je penzioniran u činu kapetana I klase.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 133,
+        "pdf_x": 349.8,
+        "pdf_y": 552.9,
+        "pdf_x_end": 457.3,
+        "pdf_y_end": 687.2,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "rank": "borac",
@@ -168996,24 +169099,6 @@
     "pdf_x_end": 293.3,
     "soldier_id": "0007010080",
     "rank": "politički komesar"
-  },
-  {
-    "last_name": "Dragović",
-    "middle_name": "",
-    "first_name": "Dušan",
-    "fathers_name": "",
-    "full_name": "Dragović Dušan",
-    "additional_info": "Pregled štabova i komandi 2. dalmatinske brigade: intendant brigade, od juna do decembra 1943.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 55.2,
-    "pdf_x": 33.0,
-    "pdf_y_end": 65.2,
-    "pdf_file": "2-dalmatinska-stabovi.pdf",
-    "unit_detail": "Štab brigade",
-    "pdf_x_end": 237.1,
-    "soldier_id": "0007010082",
-    "rank": "intendant brigade"
   },
   {
     "last_name": "Erceg",

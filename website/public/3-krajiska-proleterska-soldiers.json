@@ -43311,6 +43311,18 @@
         "pdf_x_end": 463.7,
         "pdf_y_end": 218.9,
         "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "0013000762",
+        "name": "Lukić Stole Dušan",
+        "additional_info": "borac, rođen 1924. godine u Dabru, Sanski Most. Poginuo 1943. godine u Sandžaku.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 71.3,
+        "pdf_y": 117.7,
+        "pdf_x_end": 404.4,
+        "pdf_y_end": 135.6,
+        "unit_file": "6-krajiska-soldiers.json"
       }
     ]
   },
@@ -51373,7 +51385,7 @@
     "fathers_name": "L",
     "full_name": "Milinković L Jovo",
     "additional_info": "rođen u selu Dabar, Sanski Most, zemljoradnik, Srbin, u NOB od 1941, u Brigadi od avgusta 1943, borac, poginuo 1. 1. 1944. u Banjoj Luci",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 69,
     "pdf_y": 6.5,
     "pdf_x": 29.6,
@@ -51387,7 +51399,32 @@
     "death_date": "01.01.1944",
     "death_place": "Banja Luka",
     "rank": "borac",
-    "pdf_x_end": 190.3
+    "pdf_x_end": 190.3,
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0013000949",
+        "name": "Milinković Lake Jovo",
+        "additional_info": "politički komesar čete, rođen 1921. godine u Dabru, Sanski Most. Poginuo 1943. godine kod Banje Luke.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 15.6,
+        "pdf_y": 443.6,
+        "pdf_x_end": 350.1,
+        "pdf_y_end": 461.5,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "Banja Luka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milinković",
@@ -60241,7 +60278,21 @@
     "death_date": "06.04.1945",
     "death_place": "kod Novak-Bapske",
     "rank": "borac",
-    "pdf_x_end": 362.2
+    "pdf_x_end": 362.2,
+    "other_sources": [
+      {
+        "soldier_id": "9014001428",
+        "name": "Pavić Slobodan",
+        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 438. Pavić Slobodan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 11,
+        "pdf_x": 490.7,
+        "pdf_y": 845.2,
+        "pdf_x_end": 563.9,
+        "pdf_y_end": 854.7,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Pagni",
@@ -68460,7 +68511,33 @@
     "death_date": "12.04.1945",
     "death_place": "kod Novak-Bapske",
     "rank": "borac",
-    "pdf_x_end": 355.7
+    "pdf_x_end": 355.7,
+    "other_sources": [
+      {
+        "soldier_id": "0010203980",
+        "name": "Predović Zlatko",
+        "additional_info": "Babina Greda, Vinkovci, Hrvat, poginuo 12. 4. 1945. Novak Babska.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 326,
+        "pdf_x": 81.2,
+        "pdf_y": 459.3,
+        "pdf_x_end": 345.5,
+        "pdf_y_end": 476.7,
+        "pdf_x_left": 64.7
+      },
+      {
+        "soldier_id": "9014001479",
+        "name": "Predović Zlatko",
+        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 489. Predović Zlatko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 12,
+        "pdf_x": 290.7,
+        "pdf_y": 481.6,
+        "pdf_x_end": 365.1,
+        "pdf_y_end": 491.1,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Predojević",
@@ -77399,7 +77476,21 @@
     "death_place": "Subotka, Okučani",
     "rank": "delegat voda",
     "pdf_x_end": 182.9,
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0010204535",
+        "name": "Savić Radovan",
+        "additional_info": "rod. 1923, Beograd, Srbija, trgovački pomoćnik, Srbin, u NOB i brigadi od 22. 10. 1944, delegat voda, poginuo aprila 1945. u Sloveniji.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 373,
+        "pdf_x": 53.0,
+        "pdf_y": 187.6,
+        "pdf_x_end": 318.2,
+        "pdf_y_end": 214.8,
+        "pdf_x_left": 36.7
+      }
+    ]
   },
   {
     "last_name": "Sabljić",
@@ -93685,6 +93776,31 @@
         "pdf_x_end": 317.0,
         "pdf_y_end": 131.5,
         "pdf_x_left": 34.4
+      },
+      {
+        "soldier_id": "9014001660",
+        "name": "Vodnik Stevo",
+        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 670. Vodnik Stevo.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 13,
+        "pdf_x": 478.8,
+        "pdf_y": 466.3,
+        "pdf_x_end": 540.3,
+        "pdf_y_end": 475.8,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9083000189",
+        "name": "Vodnik Franje Stevo",
+        "additional_info": "Spisak poginulih i umrlih boraca narodnooslobodilačkog rata opštine Teslić: r. 1907, Šnjegotina, Teslić, Hrvat, zemljoradnik, borac 3. krajiške brigade od 9. 9. 1943, poginuo aprila 1945, kod Sida — Srem",
+        "pdf_file": "teslic-u-nob-borci.pdf",
+        "pdf_page": 46,
+        "pdf_x": 67.2,
+        "pdf_y": 371.5,
+        "pdf_x_end": 424.1,
+        "pdf_y_end": 404.9,
+        "pdf_x_left": 67.2,
+        "ref_book": "teslic-u-nob-poginuli"
       }
     ],
     "party": "KPJ",
@@ -94100,6 +94216,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1002",
         "source_page": 1002,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0024001395",
+        "name": "Vojvodić Stevana Nikola",
+        "additional_info": "rođen u Oroškom Brdu, Bosanski Petrovac, Srbin, zemljoradnik, u NOB od 1941, u brigadi od 2. 08. 1942, borac, poginuo na Pločama (Han Pijesak);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 62,
+        "pdf_x": 3.6,
+        "pdf_y": 179.7,
+        "pdf_x_end": 361.0,
+        "pdf_y_end": 195.1,
+        "unit_file": "2-krajiska-soldiers.json"
       }
     ],
     "unit_detail": "2. bataljon",
@@ -113687,6 +113815,12 @@
         "pdf_x_end": 316.6,
         "pdf_y_end": 541.4,
         "pdf_x_left": 33.6
+      },
+      {
+        "soldier_id": "0010300198",
+        "name": "Drobac Laze Božo",
+        "additional_info": "1. četa 2. bataljona: zamenik politkomesara, rođen 1913, Rajinovac, Bos. Petrovac, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
       }
     ],
     "death_type": "umro",
@@ -201556,41 +201690,6 @@
     ]
   },
   {
-    "last_name": "Predović",
-    "middle_name": "",
-    "first_name": "Zlatko",
-    "fathers_name": "",
-    "full_name": "Predović Zlatko",
-    "additional_info": "Babina Greda, Vinkovci, Hrvat, poginuo 12. 4. 1945. Novak Babska.",
-    "birth_year": "",
-    "pdf_page": 326,
-    "pdf_y": 459.3,
-    "pdf_x": 81.2,
-    "pdf_y_end": 476.7,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010203980",
-    "birth_place": "Babina Greda, Vinkovci",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "12.04.1945",
-    "pdf_x_end": 345.5,
-    "pdf_x_left": 64.7,
-    "other_sources": [
-      {
-        "soldier_id": "9014001479",
-        "name": "Predović Zlatko",
-        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 489. Predović Zlatko.",
-        "pdf_file": "sremski-front-poginuli.pdf",
-        "pdf_page": 12,
-        "pdf_x": 290.7,
-        "pdf_y": 481.6,
-        "pdf_x_end": 365.1,
-        "pdf_y_end": 491.1,
-        "ref_book": "sremski-front-poginuli"
-      }
-    ]
-  },
-  {
     "last_name": "Prendović",
     "middle_name": "",
     "first_name": "Petar",
@@ -209014,30 +209113,6 @@
     "rank": "delegat voda",
     "pdf_x_end": 318.3,
     "pdf_x_left": 36.5
-  },
-  {
-    "last_name": "Savić",
-    "middle_name": "",
-    "first_name": "Radovan",
-    "fathers_name": "",
-    "full_name": "Savić Radovan",
-    "additional_info": "rod. 1923, Beograd, Srbija, trgovački pomoćnik, Srbin, u NOB i brigadi od 22. 10. 1944, delegat voda, poginuo aprila 1945. u Sloveniji.",
-    "birth_year": "1923",
-    "pdf_page": 373,
-    "pdf_y": 187.6,
-    "pdf_x": 53.0,
-    "pdf_y_end": 214.8,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010204535",
-    "birth_place": "Beograd, Srbija",
-    "ethnicity": "Srbin",
-    "occupation": "trgovački pomoćnik",
-    "death_type": "poginuo",
-    "death_date": "04.1945",
-    "death_place": "Slovenija",
-    "rank": "delegat voda",
-    "pdf_x_end": 318.2,
-    "pdf_x_left": 36.7
   },
   {
     "last_name": "Savić",
@@ -232174,22 +232249,6 @@
     "death_type": "umro",
     "death_date": "1949",
     "rank": "borac"
-  },
-  {
-    "last_name": "Drobac",
-    "middle_name": "Laze",
-    "first_name": "Božo",
-    "fathers_name": "Lazo",
-    "full_name": "Drobac Laze Božo",
-    "additional_info": "1. četa 2. bataljona: zamenik politkomesara, rođen 1913, Rajinovac, Bos. Petrovac, Srbin, zemljoradnik.",
-    "birth_year": "1913",
-    "unit_detail": "1. četa, 2. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300198",
-    "birth_place": "Rajinovac, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "zamenik političkog komesara"
   },
   {
     "last_name": "Dukić",

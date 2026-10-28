@@ -21068,6 +21068,18 @@
         "ref_book": "zrtve-rata-1964-srb"
       },
       {
+        "soldier_id": "0021000968",
+        "name": "Glišić Jovana Radenko",
+        "additional_info": "rođen 1923, Rača, Bajina Bašta, zemljoradnik. U Brigadi od novembra 1944. Ranjen 23. aprila 1945, ispred Donjeg Rajića. Umro sutradan u bolnici, u Slavonskom Brodu.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 49.3,
+        "pdf_y": 92.6,
+        "pdf_x_end": 352.1,
+        "pdf_y_end": 124.7,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0026000198",
         "name": "Glišić Jovana Radenko",
         "additional_info": "borac 1. račanske čete, zemljoradnik, rođen 1923. u Rači, kod Bajine Bašte, poginuo kao borac JA u borbi protiv nijemaca u Bakovu, u Slavoniji, maja 1945.",
@@ -21119,14 +21131,45 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=64",
         "source_page": 64,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0021000967",
+        "name": "Glišić Jovana Radenko",
+        "additional_info": "rođen 1923, Rača, Bajša Bašta. zemljoradnik. U Brigadi od novembra 1944. Vodnik u 1. četi 2. bataljona. Ranjen 20. aprila 1945. u Grišuću. Umro 24. aprila 1945. u Slavonskom Brodu.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 62,
+        "pdf_x": 54.2,
+        "pdf_y": 224.0,
+        "pdf_x_end": 358.7,
+        "pdf_y_end": 256.6,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0026000198",
+        "name": "Glišić Jovana Radenko",
+        "additional_info": "borac 1. račanske čete, zemljoradnik, rođen 1923. u Rači, kod Bajine Bašte, poginuo kao borac JA u borbi protiv nijemaca u Bakovu, u Slavoniji, maja 1945.",
+        "pdf_file": "uzicki-odred.pdf",
+        "pdf_page": 14,
+        "pdf_x": 121.4,
+        "pdf_y": 166.9,
+        "pdf_x_end": 477.1,
+        "pdf_y_end": 194.5,
+        "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_date": "24.04.1945",
     "borrowed": [
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1945"
+    "ethnicity": "Srbin",
+    "variants": {
+      "death": [
+        {
+          "date": "05.1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Glišić",
@@ -69083,6 +69126,18 @@
         "ref_book": "zrtve-rata-1964-srb"
       },
       {
+        "soldier_id": "0001007965",
+        "name": "Mitrović Živka Dušan",
+        "additional_info": "1924, Mala Ivanča, Sopot, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, V bataljon, borac, poginuo 00. 05. 1945, u Zagrebu",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 299,
+        "pdf_x": 43.3,
+        "pdf_y": 371.8,
+        "pdf_x_end": 350.7,
+        "pdf_y_end": 403.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0074000621",
         "name": "Mitrović Živojina Dušan",
         "additional_info": "rođen 1924. godine, Mala Ivanča, Sopot. Marta meseca 1945. godine prekomandovan u IV srpsku brigadu. Ranjen 12. maja 1945. godine u Kozju, Slovenija. Umro 14. maja u bolnici u Zagrebu.",
@@ -69101,7 +69156,7 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1945"
+    "death_date": "05.1945"
   },
   {
     "last_name": "Mitrović",

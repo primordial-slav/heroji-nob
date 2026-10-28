@@ -47,10 +47,10 @@
   },
   {
     "last_name": "Agbaba",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Marko",
-    "fathers_name": "",
-    "full_name": "Agbaba Marko",
+    "fathers_name": "S",
+    "full_name": "Agbaba S Marko",
     "additional_info": "iz Gračaca, poginuo 25. VI 1943. godine u Smiljanu.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=366",
@@ -59,7 +59,29 @@
     "birth_place": "Gračac",
     "death_type": "poginuo",
     "death_date": "25.06.1943",
-    "death_place": "Smiljan"
+    "death_place": "Smiljan",
+    "other_sources": [
+      {
+        "soldier_id": "0003020008",
+        "name": "Agbaba S Marko",
+        "additional_info": "rođen u Gračacu. Borac brigade. Poginuo u Smiljanu 25. 06. 1945.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 2,
+        "pdf_x": 51.6,
+        "pdf_y": 289.6,
+        "pdf_x_end": 213.4,
+        "pdf_y_end": 318.3,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.06.1945",
+          "place": "Smiljan"
+        }
+      ]
+    }
   },
   {
     "last_name": "Aleksić",
@@ -6728,7 +6750,17 @@
     "soldier_id": "0118000241",
     "birth_place": "Sokolovac, Rogatica",
     "death_type": "poginuo",
-    "death_place": "Sokolovac"
+    "death_place": "Sokolovac",
+    "other_sources": [
+      {
+        "soldier_id": "9093000180",
+        "name": "Janković Zarija Bogdan",
+        "additional_info": "Spisak poginulih boraca u II svetskom ratu 1941-1945.: 180. Janković Zarija Bogdan (1925.) iz Krnija Sokolac. Stupio u NOV 1944. Poginuo 1944. kao borac 29. Srpske divizije na Sremskom frontu u borbi protiv Nemaca.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002506&pg_seq=539",
+        "source_page": 541,
+        "ref_book": "sokolac"
+      }
+    ]
   },
   {
     "last_name": "Janković",
@@ -21601,10 +21633,10 @@
   },
   {
     "last_name": "Savatović",
-    "middle_name": "",
+    "middle_name": "Stevin",
     "first_name": "Nikola",
-    "fathers_name": "",
-    "full_name": "Savatović Nikola",
+    "fathers_name": "Stevo",
+    "full_name": "Savatović Stevin Nikola",
     "additional_info": "iz Ostrvica, L. Osik, GOSpić, poginuo 18. II 1943. u Gornjem Lapcu.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=404",
@@ -21622,6 +21654,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000260&pg_seq=664",
         "source_page": 662,
         "ref_book": "ostrvica"
+      },
+      {
+        "soldier_id": "0002007644",
+        "name": "Savatović Stevin Nikola",
+        "additional_info": "iz Ostrovice, Gospić, u prvom sastavu »Jurišne čete«, poginuo februara 1943. na Zuleševici",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 839,
+        "pdf_x": 126.4,
+        "pdf_y": 190.6,
+        "pdf_x_end": 461.0,
+        "pdf_y_end": 210.0,
+        "unit_file": "soldiers.json"
       }
     ]
   },

@@ -1798,7 +1798,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=391",
         "source_page": 387,
         "ref_book": "doboj3"
+      },
+      {
+        "soldier_id": "9022014230",
+        "name": "Banjanin (Boško) Nada",
+        "additional_info": "rođena 1925, Kostajnica (Doboj). Srpkinja, umrla 1944. u NOBu, Trnovo.bjeljina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1246",
+        "source_page": 1246,
+        "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Trnovo.bjeljina",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -11442,6 +11454,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2063",
         "source_page": 2063,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0123000512",
+        "name": "Jakovljević Jovanke Srđan",
+        "additional_info": "rođen 1918. u Marićkoj, Prijedor, Srbin, zemljoradnik, u NOB od 19. 1. 1942, u brigadi od 21. 5. 1942, desetar, poginuo 2. 11. 1942. pri napadu na Bihać, gdje je i sahranjen",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 96.0,
+        "pdf_y": 478.8,
+        "pdf_x_end": 455.0,
+        "pdf_y_end": 503.6,
+        "unit_file": "1-krajiska-soldiers.json"
       }
     ]
   },
@@ -40888,14 +40912,61 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1002",
         "source_page": 1002,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0010001982",
+        "name": "Vojvodić Stevana Nikola",
+        "additional_info": "rođen 1910. Oraško Brdo, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, u Brigadi od 22. 8. 1942. član KPJ, zamenik komandanta bataljona, poginuo 19. 7. 1943. na Orahovici kod Prače,",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 120,
+        "pdf_x": 33.4,
+        "pdf_y": 198.7,
+        "pdf_x_end": 194.1,
+        "pdf_y_end": 264.5,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010101337",
+        "name": "Vojvodić Stevana Nikola",
+        "additional_info": "zvani Vojvoda; zamenik komandanta 2. bataljona, rođen 1910, Oraško Brdo, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1941 poginuo na položaju Krnja Jela, južno od ž. st. Prača, 19. jula 1943. Odlikovan Ordenom narodnog heroja.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 83,
+        "pdf_x": 44.9,
+        "pdf_y": 526.9,
+        "pdf_x_end": 215.2,
+        "pdf_y_end": 579.3,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010205477",
+        "name": "Vojvodić Stevana Nikola",
+        "additional_info": "rod. 1910, Oraško Brdo, Bos. Petrovac, radnik, Srbin, u NOB od 1941, brigadi od 22. 8. 1942, zamenik komandanta bataljona, poginuo 1943. na Orahovici kod Prače.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 453,
+        "pdf_x": 49.7,
+        "pdf_y": 102.4,
+        "pdf_x_end": 315.4,
+        "pdf_y_end": 139.9,
+        "pdf_x_left": 33.1,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010301137",
+        "name": "Vojvodić Stevan Nikola",
+        "additional_info": "Štab 2. bataljona: zamenik komandanta, rođen 1910, Oraško Brdo, Bihać, Srbin, radnik, u NOB od 1941, član KPJ od 1942, poginuo 1943. na Orahovici kod Prače.",
+        "source_url": "https://znaci.org/00001/31_263.htm",
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
-    "death_date": "1943",
+    "birth_year": "1910",
     "borrowed": [
       "birth_year",
-      "death_date"
+      "death_date",
+      "party"
     ],
-    "birth_year": "1911"
+    "death_date": "19.07.1943",
+    "party": "KPJ 1941",
+    "birth_date": "16.12.1910"
   },
   {
     "last_name": "Vokić",

@@ -30317,7 +30317,64 @@
     "rank": "vodnik, komandir voda",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 350.1,
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9009000506",
+        "name": "Ovuka Obrada Ilija",
+        "additional_info": "Kestenovac, općina Donji Lapac: 1924, seljak, Srbin. Stupio u NOB 1941. Poginuo kao komandir čete 1. bat. 2. brig. 6. div. kod Slavonskog Broda 19. 4. 1945.",
+        "pdf_file": "hak-14-donji-lapac.pdf",
+        "pdf_page": 23,
+        "pdf_x": 451.0,
+        "pdf_y": 635.9,
+        "pdf_x_end": 624.0,
+        "pdf_y_end": 669.1,
+        "ref_book": "hak-14-donji-lapac"
+      },
+      {
+        "soldier_id": "9021007221",
+        "name": "Ovuka (Obrad) Ilija",
+        "additional_info": "rođen 1924, Kestenovac (Donji Lapac). Srbin, poginuo 1945. u NOBu, Slavonski brod",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=316",
+        "source_page": 316,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0003000857",
+        "name": "Ovuka Obrada Ilija",
+        "additional_info": "rođen 1926. u s. Kestenovac. Borac 1. bataljona. Poginuo 1945. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 32,
+        "pdf_x": 126.7,
+        "pdf_y": 368.7,
+        "pdf_x_end": 485.9,
+        "pdf_y_end": 386.4,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003021475",
+        "name": "Ovuka Obrada Ilija",
+        "additional_info": "rođen 1926. u s. Kestenovac. U NOB-1942. Borac 1. bataljona. Poginuo kod SI. Broda 19. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 77,
+        "pdf_x": 205.8,
+        "pdf_y": 115.8,
+        "pdf_x_end": 367.8,
+        "pdf_y_end": 154.5,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ],
+      "death": [
+        {
+          "date": "19.04.1945",
+          "place": "na Vranovačkom polju, Sl. Brod"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ožegović",
@@ -31416,8 +31473,35 @@
         "pdf_x_end": 452.4,
         "pdf_y_end": 359.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0123001281",
+        "name": "Pavlović Stevana Aleksandar",
+        "additional_info": "zvani Aca; rođen 1924. u Nišu, Srbin, obućarski radnik, u brigadi od 3. 8. 1944, l.četa, 1. bataljon, vodnik voda, poginuo 28. 12. 1944. kod Otoka (Vinkovci), sahranjen u Nijemcima",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 72,
+        "pdf_x": 89.5,
+        "pdf_y": 423.8,
+        "pdf_x_end": 448.3,
+        "pdf_y_end": 449.6,
+        "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "obućarski radnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "28.12.1944",
+          "place": "Otok, Županja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -31639,6 +31723,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=497",
         "source_page": 497,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0123001288",
+        "name": "Pavlović Milorada Svetozar",
+        "additional_info": "rođen 1925. u Kolarima, Smederevo, Srbin, zemljoradnik, u brigadi od 13.10.1944, l.četa, 1. bataljon, borac, nestao u borbi 17.1. 1945. kod Opatovca (Vukovar)",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 72,
+        "pdf_x": 90.0,
+        "pdf_y": 624.5,
+        "pdf_x_end": 449.3,
+        "pdf_y_end": 652.1,
+        "unit_file": "1-krajiska-soldiers.json"
       }
     ]
   },
@@ -37547,13 +37643,13 @@
       {
         "soldier_id": "0163000203",
         "name": "Raković Stevana Dušan",
-        "additional_info": "rođen 1918. g. Smoljana, Petrovac, Srbin, šumarski radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Poginuo 1943. g. u istočnoj Bosni, kao zamjenik komandira čete u IV krajiškoj brigadi. RAKOVIC, (Đure) TOMO, rođen 1918. g. Otiš, Palanka, Sanski Most, Srbin, šumarski radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. Kandidat za člana KPJ. Komandant bataljona u VI krajiškoj brigadi— kapetan. Ratni vojni invalid VI grupe. Nosilac partizanske Spomenice 1941. g. Pukovnik u penziji.",
+        "additional_info": "rođen 1918. g. Smoljana, Petrovac, Srbin, šumarski radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Poginuo 1943. g. u istočnoj Bosni, kao zamjenik komandira čete u IV krajiškoj brigadi.",
         "pdf_file": "proleterski-bataljon-bk.pdf",
         "pdf_page": 71,
         "pdf_x": 300.6,
         "pdf_y": 380.5,
-        "pdf_x_end": 430.2,
-        "pdf_y_end": 642.1,
+        "pdf_x_end": 428.0,
+        "pdf_y_end": 469.0,
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -50795,8 +50891,34 @@
         "pdf_x_end": 461.2,
         "pdf_y_end": 511.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0123001997",
+        "name": "Đorđević Dobrivoja Bisenija",
+        "additional_info": "rođena 1925. u Pečkanici, Kraljevo, Srpkinja, domaćica, u brigadi od avgusta 1944, bolničarka, poginula 21. 3. 1945. u Erdeviku (Šid), sahranjena na seoskom groblju",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 95.2,
+        "pdf_y": 328.1,
+        "pdf_x_end": 454.7,
+        "pdf_y_end": 352.9,
+        "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "domaćica",
+    "variants": {
+      "death": [
+        {
+          "date": "21.03.1945",
+          "place": "Erdevik, Ilok"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đorđević",

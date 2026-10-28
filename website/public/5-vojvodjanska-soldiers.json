@@ -33839,6 +33839,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=387",
         "source_page": 365,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0057004121",
+        "name": "Korica Milana Milan",
+        "additional_info": "zvani Kovač; rođen 1919. Laćarak, Sremska Mitrovica, komandant bataljona, ranjen 16. 12. 1943. Sokol, Gračanica, istočna Bosna, narodni heroj.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 107,
+        "pdf_x": 59.3,
+        "pdf_y": 492.1,
+        "pdf_x_end": 341.1,
+        "pdf_y_end": 520.3,
+        "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ],
     "birth_date": "22.12.1919"
@@ -92268,7 +92280,7 @@
     "fathers_name": "Sima",
     "full_name": "Živanov Sime Đorđe",
     "additional_info": "1941, Crepaja, Kovačica, zemljoradnik, desetar, poginuo 6. III 1945. kod Starog Bolmana.",
-    "birth_year": "",
+    "birth_year": "1914",
     "death_type": "poginuo",
     "pdf_page": 154,
     "pdf_y": 86.1,
@@ -92281,7 +92293,22 @@
     "death_date": "06.03.1945",
     "death_place": "kod Starog Bolmana",
     "rank": "desetar",
-    "pdf_x_end": 388.1
+    "pdf_x_end": 388.1,
+    "other_sources": [
+      {
+        "soldier_id": "9027002516",
+        "name": "Živanov (Sima) Đorđe",
+        "additional_info": "rođen 1914, Crepaja (Kovačica). Srbin, poginuo 1945. u NOBu, Kod bolmana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=129",
+        "source_page": 129,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Živanović",
