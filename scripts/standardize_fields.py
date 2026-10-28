@@ -170,14 +170,51 @@ def albanian(s: dict) -> dict | None:
     return {'ethnicity': new} if new else None
 
 
+# ── unit_numbers: a sub-unit's number in figures ────────────────────────────
+# The books number their companies and battalions in Roman numerals or in figures; the site writes figures ("I
+# bataljon" is 1. bataljon, "XV. divizije" 15. divizije), the scan's small letters too ("iV bataljon", "Vi bataljon",
+# "i. četa"). A small "i" or "v" without its dot is a word ("i", "and"; the Slovene "v"), never read as a number here:
+# check_fields.py lists such a value, which the reader no longer gives (2026-10-28)
+UNIT_WORDS = r'(?i:čet[aeiu]|vod[au]?|bataljon\w*|desetin\w*|brigad\w*|divizij\w*|divizion\w*|baterij\w*|korpus\w*|eskadril\w*|odred\w*)'
+UNIT_ROMAN_RE = re.compile(r'(?<![\w.])(?:([IVX]{1,6}|[IVX][IVXivx]{1,5}|[ivx]{1,4}[IVX][IVXivx]{0,3})\.?|([ivx]{1,4})\.)'
+                           r'\s?(?=' + UNIT_WORDS + r'\b)')
+
+
+def roman_value(text: str) -> int | None:
+    """a Roman numeral's value, None where it is not written as one ("IIII", "VX")"""
+    values = {'I': 1, 'V': 5, 'X': 10}
+    total, prev = 0, 0
+    for ch in reversed(text):
+        v = values[ch]
+        total = total - v if v < prev else total + v
+        prev = max(prev, v)
+    tens, units = divmod(total, 10)
+    written = 'X' * tens + ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'][units]
+    return total if 0 < total < 40 and written == text else None
+
+
+def unit_number_form(value: str) -> str:
+    def figures(m: re.Match) -> str:
+        n = roman_value((m.group(1) or m.group(2)).upper())
+        return f'{n}. ' if n else m.group(0)
+    return UNIT_ROMAN_RE.sub(figures, value)
+
+
+def unit_numbers(s: dict) -> dict | None:
+    value = s.get('unit_detail')
+    new = unit_number_form(value) if value else value
+    return {'unit_detail': new} if new != value else None
+
+
 RULES = [
     ('captured', captured),
     ('after_war', after_war),
     ('death_date', death_date),
     ('albanian', albanian),
+    ('unit_numbers', unit_numbers),
 ]
 # the rules that change only a field's form: they apply to a field corrections set too
-FORM_ONLY = {'after_war', 'death_date', 'albanian'}
+FORM_ONLY = {'after_war', 'death_date', 'albanian', 'unit_numbers'}
 
 
 def standard(field: str, value):
@@ -186,6 +223,8 @@ def standard(field: str, value):
         return None if AFTER_WAR.fullmatch(value.strip()) else date_form(value)
     if field == 'ethnicity' and value:
         return ETHNICITY.get(value, value)
+    if field == 'unit_detail' and value:
+        return unit_number_form(value)
     return value
 
 

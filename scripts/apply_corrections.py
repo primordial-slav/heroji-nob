@@ -792,6 +792,18 @@ def main():
         except Exception as e:                                           # noqa: BLE001
             print(f"\n  WARNING: life events not written ({e.__class__.__name__}: {e})")
 
+    # The fields checked against their entries (scripts/check_fields.py: a word read as a sub-unit's number, "i četa"):
+    # nothing is changed, the problems are listed in data-extraction/.cache/field_checks.json
+    try:
+        import check_fields
+        checked = {path.name: soldiers for code, (path, _, soldiers) in results.items() if path.name in live_files}
+        found = check_fields.run(checked)
+        if args.apply:
+            check_fields.write_report(found, checked)
+        print(f"\n  Field checks: {check_fields.describe(found)}")
+    except Exception as e:                                               # noqa: BLE001
+        print(f"\n  WARNING: field checks not run ({e.__class__.__name__}: {e})")
+
     # The site tells women from men by the same names (website/app/data/name-genders.json)
     if args.apply and feminine_alias.write_site(names, project_root):
         print(f"\n  Written: {feminine_alias.SITE_FILE}")

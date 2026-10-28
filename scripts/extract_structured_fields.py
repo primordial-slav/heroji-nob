@@ -462,7 +462,13 @@ RANK_RE = re.compile(r'(?<![\w-])(' + '|'.join(RANK_PATTERNS) + r')(?![\w-])', r
 # A sub-unit named without a number is no place either: "Jurišna četa", "PK baterija", "Bat. pri diviziji",
 # "Zamjenik (pomoćnik) komesara bataljona"
 UNIT_WORD_RE = re.compile(r'\bčet[aeiu]\b|bataljon|\bbat\.|baterij', re.I)
-UNIT_RE = re.compile(r'(?<![\w.])(\d{1,2}\.|[IVX]{1,4}\.?)\s?(četa|čete|četi|č\.?|bataljon|bataljona|bataljonu|batalj\.?|bat\.?|desetina|desetine|vod|voda|vodu)'
+# A sub-unit's number: in figures, or a Roman numeral in capitals ("I četa", "IV bat."), in mixed case where the scan
+# set a letter small ("iV bataljon", "Vi bataljon": VI) only before a space or a dot, and in small letters only with
+# its dot ("i. čete"). Never the word "i" ("komesar čete i bataljona", "komandir voda i čete"), the Slovene "v" ("v
+# četi", "v vodu za zvezo") or a place's letters run into the abbreviation č. ("Ljubljana-Vič", "Ivič"): 2026-10-28,
+# after Miočinović Stevo's "i četa"
+ROMAN_UNIT_NO = r'(?-i:[IVX]{1,4}(?=\.?\s|\.|bataljon|čet|vod|desetin)\.?|[IVX][IVXivx]{1,3}(?=\.?\s)\.?|[ivx]{1,3}[IVX][IVXivx]{0,2}(?=\.?\s)\.?|[ivx]{1,4}\.)'
+UNIT_RE = re.compile(r'(?<![\w.])(\d{1,2}\.|' + ROMAN_UNIT_NO + r')\s?(četa|čete|četi|č\.?|bataljon|bataljona|bataljonu|batalj\.?|bat\.?|desetina|desetine|vod|voda|vodu)'
                      r'(?![\w])', re.I)
 SPECIAL_UNITS = [
     (re.compile(r'\b(\d\.\s?(?:kordunaški|makedonski|slovenački|slovenski|ličk[i]|dalmatinski|udarni|omladinski))\s+bataljon', re.I), '{} bataljon'),
@@ -1338,7 +1344,7 @@ class Extractor:
                     'desetine': 'desetina', 'voda': 'vod', 'vodu': 'vod'}.get(kind, kind)
             if kind in found or kind in seen:
                 continue
-            if re.fullmatch(r'[IVX]{1,4}', num) and kind != 'bataljon':
+            if re.fullmatch(r'[IVX]{1,4}', num.upper()) and kind != 'bataljon':
                 continue
             found[kind] = f'{num} {kind}' if not num.endswith('.') or kind != 'bataljon' or True else f'{num} {kind}'
         units = [found[k] for k in sorted(found, key=lambda k: order[k])]
