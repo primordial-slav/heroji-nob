@@ -656,6 +656,10 @@ export const WARTIME_PORTRAITS: string[] = [
   '0094000206',
   '0094000337',
   '0036019006',
+  // 2026-10-28: Kalnički odred, fallen 1942-1944
+  '0058001062',
+  '0058001533',
+  '0058001205',
   // family photos (data/family.ts)
   '0002000242',
 ]

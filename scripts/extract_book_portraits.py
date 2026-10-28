@@ -595,6 +595,15 @@ UNIT_BOOKS = [
     ('0060001919', '00003/681_1.pdf', 69, 424, None, '"Milan Rebić Pajin", the heading of his biography; the record holds the book’s entry: Vucelići, 1921'),
     ('0070001425', '00003/815.pdf', 339, 1895, (0.28, 0.08, 0.72, 0.42), '"Martin Vraničar", the caption under him; the record holds the book’s entry: komandant 3. bataljona 15. brigade, padel'),
     ('0036019006', '00001/108_21.pdf', 17, 101, None, 'narodni heroj of the brigade, the portrait inside his biography ("ĐAPIĆ Nikole ĐURO BUKETA, rođen je 10. septembra 1920. u selu Biteliću", its text running on above and below the photo); the record holds the biography'),
+    # 2026-10-28: portraits standing under or beside the heading of a man's biography or post in the unit's own book
+    ('0083010061', '00001/252_8.pdf', 35, 169, None, '"MILAN JEŠIĆ IBRA, zamenik komandanta brigade od 17. januara do 3. jula 1944." under the portrait; the record: zvani Ibra, zamenik komandanta brigade'),
+    ('0083010169', '00001/252_8.pdf', 36, 177, None, '"LAZAR SAVATIĆ METALAC" under the portrait; the record: zvani Metalac, of the brigade staff'),
+    ('0161000318', '00003/541.pdf', 34, 161, None, '"IVAN SVETLIČIĆ—ORSI, prvi politički komesar DG, kasnije K-R DC, zamjenik i K-t 2. DB 2. diver. odreda" beside the portrait; the record: zvani Orsi'),
+    ('0161000385', '00003/541.pdf', 196, 949, None, '"MIRKO ŠIMUNJAK, sekretar SKOJ-a 2. diverzantskog bataljona" under the portrait; the roster’s only Mirko Šimunjak'),
+    ('0058002510', '00003/558.pdf', 397, 1649, (0.52, 0, 1, 1), '"JOSIP SKUPNJAK VLADO, u KPO od 1943, zamjenik komesara čete i rukovodilac SKOJ-a bataljona" under the right one of two portraits; the record: zvani Vlado, u KPO od 1943, zamjenik komesara čete, sekretar SKOJ-a bataljona'),
+    ('0058001205', '00003/558.pdf', 397, 1651, (0, 0, 0.478, 1), '"KLIČKOVIĆ MILENKO MILKAN, u KPO od 1942, komandir voda i komandir čete" under the left one of two portraits; the record: zvani Milkan, u KPO od studenog 1942, vodnik voda i komandir čete'),
+    ('0058001533', '00003/558.pdf', 279, 1159, None, '"Božo Leiner" under the left portrait, the table above naming the odred’s first commanders; the record: ožujka 1942. dolazi na Kalnik, komandir KPČ'),
+    ('0058001062', '00003/558.pdf', 279, 1161, None, '"Vilko Jurec" under the right portrait, the table above naming the odred’s first commissars; the record: komesar KPO od ožujka 1942'),
 ]
 
 PAGE_BOOKS = [
