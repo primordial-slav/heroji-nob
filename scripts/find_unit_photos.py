@@ -619,6 +619,10 @@ UNITS = {
         caption=r"višk\w*\s+dobrovolja\w*\s+bataljon", photo=None,
         note="Nothing in the gallery names the battalion, nor does its book (Huljić, Vis 1941-1945): the photos of the "
              "3. (viški) bataljon of the XII brigade show another unit. The card shows its roll's page."),
+    "ostali-borci": dict(
+        name="Borci drugih jedinica", tags=[], caption=None, photo=4045,
+        note="Not a unit: the fighters of the units the site has no book of. A group of partisans none of the site's "
+             "units claims (the user's wish, 2026-10-28); its census parts show the same photo."),
     "eskadrile-novj": dict(
         name="1. i 2. eskadrila NOVJ", tags=[],
         caption=r"(?:prv\w*|drug\w*|1\.|2\.)\s+eskadril\w*\s+novj|35[12]\.?\s*(?:\(yugoslav\)\s*)?(?:squadron|skvadron)", photo=None,
