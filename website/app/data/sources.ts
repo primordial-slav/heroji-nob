@@ -3095,7 +3095,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071',
     thumbnail: '/images/pdf-thumbs/kordunski-rekvijem.jpg',
     brigadeName: '',
-    description: 'Spisak poginulih boraca bivše opštine Primišlje 1941–1945. koji je sastavio general Dušan Livada (str. 176–191), po selima, sa kratkom biografijom; članovi Partije i SKOJ-a, odbornici i članice AFŽ-a koje spisak broji uneti su kao aktivisti. Uneto je i prvih 49 nosilaca Partizanske spomenice 1941. koji su iz Slunja preseljeni u Vojvodinu (str. 338–342). Spiskovi žrtava terora i umrlih od tifusa nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+    description: 'Spisak poginulih boraca bivše opštine Primišlje 1941–1945. koji je sastavio general Dušan Livada (str. 176–191), po selima, sa kratkom biografijom; članovi Partije i SKOJ-a, odbornici i članice AFŽ-a koje spisak broji uneti su kao aktivisti. Uneto je i 102 nosioca Partizanske spomenice 1941. koji su iz Slunja preseljeni u Vojvodinu (str. 338–347). Spiskovi žrtava terora i umrlih od tifusa nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   },
   {
     id: 'sencur-padli-borci',
@@ -3114,5 +3114,32 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/klanjscek-komandni-sastav.jpg',
     brigadeName: '',
     description: 'Prilog 1, „Spisak komandnog sastava viših jedinica NOV i PO Slovenije” (str. 393–400): komandanti, politički komesari, njihovi zamenici i načelnici štabova Glavnog štaba, pokrajinskih štabova, grupa odreda, operativnih zona, korpusa i divizija, sa danima na dužnosti i mestom pogibije. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'rogatica',
+    title: 'Rogatica',
+    author: 'Jusuf Žiga i drugi',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00001755',
+    thumbnail: '/images/pdf-thumbs/rogatica.jpg',
+    brigadeName: '',
+    description: 'Monografija Rogatice (Sarajevo 2009): „Istaknuti prvoborci Narodnooslobodilačkog rata” (str. 235–254), 48 boraca iz rogatičkog kraja, svaki sa biografijom. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'grahovo-podjele',
+    title: 'Grahovo u vrijeme rata 1941–1945: grahovske podjele',
+    author: 'Mlađen Jovanov Vučetić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009010',
+    thumbnail: '/images/pdf-thumbs/grahovo-podjele.jpg',
+    brigadeName: '',
+    description: 'Prilozi knjige o Grahovu kod Nikšića: partizanski pozadinski radnici ubijeni i streljani od odlaska partizana u Bosnu 1942. do njihovog povratka 1943. (str. 237–238) i Grahovljani nosioci Partizanske spomenice 1941. (str. 252–255). Spisak četnika poginulih u ratu iz iste knjige nije unet. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'sutorina',
+    title: 'Sutorina - hronika područja i naselja sa rodoslovljem',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589',
+    thumbnail: '/images/pdf-thumbs/sutorina.jpg',
+    brigadeName: '',
+    description: 'Prilozi hronike Sutorine kod Herceg Novog: Sutorinska partizanska četa, njena komanda i četiri voda po selima, sa godinom rođenja i dužnošću (str. 405–409), pali borci NOR-a 1941–1945. (str. 410–414) i Sutorani nosioci Partizanske spomenice 1941, sa biografijom (str. 416–418). Spiskovi žrtava terora, poginulih u ratu 1991–1995. i dobrovoljaca ranijih ratova iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima.'
   }
 ]

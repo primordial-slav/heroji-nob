@@ -38,6 +38,9 @@ CARDS = {
     'gornja-jablanica': (['ГОРЊА', 'ЈАБЛАНИЦА', 'кроз историју'], [], ''),
     'knezica': (['КНЕЖИЦА', 'У КНЕШПОЉУ'], ['Миливој Родић'], 'Лакташи'),
     'kordunski-rekvijem': (['KORDUNSKI', 'REKVIJEM'], ['Svetozar Livada', 'i drugi'], 'Euroknjiga'),
+    'rogatica': (['ROGATICA'], ['Jusuf Žiga i drugi'], 'Sarajevo\n2009.'),
+    'sutorina': (['СУТОРИНА', 'хроника подручја и насеља', 'са родословљем'], [], ''),
+    'grahovo-podjele': (['GRAHOVO', 'U VRIJEME RATA', '1941–1945', 'grahovske podjele'], ['Mlađen Jovanov Vučetić'], 'Beograd\n2020.'),
 }
 
 
