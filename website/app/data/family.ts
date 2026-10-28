@@ -17,6 +17,13 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive',
     date: '2026-10',
   },
+  {
+    soldierId: '0122959019', // Bajić Stevan Todor "Soko", Beška (Porodična arhiva)
+    photo: '0122959019-1.jpg',
+    photoCaption: 'Fotografija iz vojne knjižice',
+    from: 'iz porodične arhive',
+    date: '2026-10',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
