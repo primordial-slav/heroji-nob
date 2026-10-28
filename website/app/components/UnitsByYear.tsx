@@ -26,12 +26,12 @@ interface YearGroup {
   census?: Unit[] // with them, the 1964 census's parts: listed by region beside the card, not as cards of their own
 }
 
-// Not units: Ostali borci (the books across units) and its parts for the 1964 census, one a republic or province;
+// Not units: Borci drugih jedinica (the books across units) and its parts for the 1964 census, one a republic or province;
 // they stand last, under a heading of their own
 const NO_UNIT = 'ostali-borci'
 export const isNoUnit = (u: Unit) => u.id === NO_UNIT || u.id.startsWith(`${NO_UNIT}-`)
 
-/** A census part's region, its name after " – " in the page's language: "Ostali borci – Slovenija" -> "Slovenija" */
+/** A census part's region, its name after " – " in the page's language: "Borci drugih jedinica – Slovenija" -> "Slovenija" */
 function regionOf(unit: Unit, lang: Lang): string {
   const name = unitName(unit, lang)
   const cut = name.indexOf(' – ')

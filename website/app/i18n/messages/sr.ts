@@ -63,7 +63,7 @@ export const sr = {
     },
     otherUnits: 'Ostale jedinice',
     noUnit: 'Bez jedinice',
-    /** Under "Bez jedinice", beside the Ostali borci card: the 1964 census's parts, a region and its count each */
+    /** Under "Bez jedinice", beside the Borci drugih jedinica card: the 1964 census's parts, a region and its count each */
     census: 'Popis žrtava rata 1964',
     censusLead: 'Poginuli i umrli borci čija jedinica još nije na sajtu, po republikama i pokrajinama.',
     /** The wartime portraits in the home page's margins */

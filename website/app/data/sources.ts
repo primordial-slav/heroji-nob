@@ -1672,7 +1672,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/mosorski-odred-2.pdf',
     thumbnail: '/images/pdf-thumbs/mosorski-odred-2.jpg',
     brigadeName: 'Mosorski partizanski odred',
-    description: 'Drugi deo popisa iz iste knjige (str. 573–648): borci komandi mesta, partijsko-politički i terenski radnici s područja Mosora. U spisku odreda su borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske, i pripadnici radnih bataljona. Terenski i politički radnici, odbornici i članice AFŽ uneti su kao aktivisti, svako uz zapis borca koji je na sajtu ako je to on, ostali među Ostalim borcima.'
+    description: 'Drugi deo popisa iz iste knjige (str. 573–648): borci komandi mesta, partijsko-politički i terenski radnici s područja Mosora. U spisku odreda su borci, oni za koje zapis kaže da su bili borci, navodi vojnu dužnost ili jedinicu vojske, i pripadnici radnih bataljona. Terenski i politički radnici, odbornici i članice AFŽ uneti su kao aktivisti, svako uz zapis borca koji je na sajtu ako je to on, ostali među Borcima drugih jedinica.'
   },
   {
     id: 'mosorski-odred-kader',
@@ -2321,7 +2321,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/moste-polje-spomenica-1941.pdf',
     thumbnail: '/images/pdf-thumbs/moste-polje-spomenica-1941.jpg',
     brigadeName: '',
-    description: 'Nosioci Partizanske spomenice 1941 sa područja današnje opštine Moste-Polje u Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, godina rođenja i zanimanje, a za one koji su umrli posle rata i godina smrti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Nosioci Partizanske spomenice 1941 sa područja današnje opštine Moste-Polje u Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, godina rođenja i zanimanje, a za one koji su umrli posle rata i godina smrti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'vis-spomenica-1941',
@@ -2330,7 +2330,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/vis-spomenica-1941.pdf',
     thumbnail: '/images/pdf-thumbs/vis-spomenica-1941.jpg',
     brigadeName: '',
-    description: 'Nosioci Partizanske spomenice 1941 sa viškog otočja (str. 521), samo imena, i rečenica knjige o narodnom heroju Andriji Božaniću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Nosioci Partizanske spomenice 1941 sa viškog otočja (str. 521), samo imena, i rečenica knjige o narodnom heroju Andriji Božaniću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'prilog-u-krvi-pali-borci',
@@ -2339,7 +2339,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/prilog-u-krvi-pali-borci.pdf',
     thumbnail: '/images/pdf-thumbs/prilog-u-krvi-pali-borci.jpg',
     brigadeName: '',
-    description: 'Pali borci NOR-a pljevaljskog sreza od aprila 1941. do 15. maja 1945 (str. 141–216), sa biografijom svakog. Knjiga među pale borce ubraja i partijske i političke radnike, odbornike i saradnike NOP-a: i oni su uneti, označeni kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Pali borci NOR-a pljevaljskog sreza od aprila 1941. do 15. maja 1945 (str. 141–216), sa biografijom svakog. Knjiga među pale borce ubraja i partijske i političke radnike, odbornike i saradnike NOP-a: i oni su uneti, označeni kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'jevreji-jugoslavije-ucesnici-nor',
@@ -2348,7 +2348,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/jevreji-jugoslavije-ucesnici-nor.pdf',
     thumbnail: '/images/pdf-thumbs/jevreji-jugoslavije-ucesnici-nor.jpg',
     brigadeName: '',
-    description: 'Spisak jevrejskih učesnika u narodnooslobodilačkom ratu, sa biografijom svakog (str. 307 i dalje). Spisak broji sve koji su bili u NOP-u: uneti su svi, a politički i pozadinski radnici i oni koje su uhvatili na putu u partizane označeni su kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Spisak jevrejskih učesnika u narodnooslobodilačkom ratu, sa biografijom svakog (str. 307 i dalje). Spisak broji sve koji su bili u NOP-u: uneti su svi, a politički i pozadinski radnici i oni koje su uhvatili na putu u partizane označeni su kao aktivisti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'hrvatsko-zagorje-1981',
@@ -2510,7 +2510,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/virovitica-spomenica-1941.pdf',
     thumbnail: '/images/pdf-thumbs/virovitica-spomenica-1941.jpg',
     brigadeName: '',
-    description: 'Nosioci Partizanske spomenice 1941 iz opštine Virovitica, četrnaest biografija uz fotografije (str. 221–239). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Nosioci Partizanske spomenice 1941 iz opštine Virovitica, četrnaest biografija uz fotografije (str. 221–239). Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'vis-zrtve-nob',
@@ -2519,7 +2519,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/vis-zrtve-nob.pdf',
     thumbnail: '/images/pdf-thumbs/vis-zrtve-nob.jpg',
     brigadeName: '',
-    description: 'Žrtve tokom NOB-a sa spomen-ploča viškog otočja (str. 516–520): poginuli u borbama i umrli od rana i bolesti iz Visa, Komiže, Biševa, Oključne i sela pod Humom, samo ime i ime oca. Taoci koje su Italijani streljali 1943. i umrli u ustaškim zatvorima nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Žrtve tokom NOB-a sa spomen-ploča viškog otočja (str. 516–520): poginuli u borbama i umrli od rana i bolesti iz Visa, Komiže, Biševa, Oključne i sela pod Humom, samo ime i ime oca. Taoci koje su Italijani streljali 1943. i umrli u ustaškim zatvorima nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca sa ostrva koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'xxxi-divizija-stabi',
@@ -2528,7 +2528,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/xxxi-divizija-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/xxxi-divizija-stabi.jpg',
     brigadeName: '',
-    description: 'Štabovi XXXI. divizije i njenih brigada, Gradnikove, Prešernove i Vojkove (str. 557–562): komandanti, komesari, njihovi zamenici i načelnici štaba, svaki s danima kad je bio na dužnosti, i ko je od njih poginuo. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Štabovi XXXI. divizije i njenih brigada, Gradnikove, Prešernove i Vojkove (str. 557–562): komandanti, komesari, njihovi zamenici i načelnici štaba, svaki s danima kad je bio na dužnosti, i ko je od njih poginuo. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: '15-brigada-stabi',
@@ -2537,7 +2537,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/15-brigada-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/15-brigada-stabi.jpg',
     brigadeName: '',
-    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba 15. slovenačke brigade i komandanti i komesari njenih bataljona (str. 447–450), svaki s danima kad je bio na dužnosti i, gde je dužnost tako završio, da je ranjen, oboleo ili poginuo. Brigada nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba 15. slovenačke brigade i komandanti i komesari njenih bataljona (str. 447–450), svaki s danima kad je bio na dužnosti i, gde je dužnost tako završio, da je ranjen, oboleo ili poginuo. Brigada nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: '15-divizija-stabi',
@@ -2546,7 +2546,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/15-divizija-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/15-divizija-stabi.jpg',
     brigadeName: '',
-    description: 'Komandni sastav 15. divizije NOV i PO Slovenije (str. 583–584): komandanti, politički komesari, njihovi zamenici i pomoćnici i načelnici štaba, svaki s danima kad je bio na dužnosti. Divizija nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Komandni sastav 15. divizije NOV i PO Slovenije (str. 583–584): komandanti, politički komesari, njihovi zamenici i pomoćnici i načelnici štaba, svaki s danima kad je bio na dužnosti. Divizija nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'jb-odred-stabi',
@@ -2555,7 +2555,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/jb-odred-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/jb-odred-stabi.jpg',
     brigadeName: '',
-    description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'banijski-odredi-kadar',
@@ -2564,7 +2564,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/banijski-odredi-kadar.pdf',
     thumbnail: '/images/pdf-thumbs/banijski-odredi-kadar.jpg',
     brigadeName: '',
-    description: 'Starešine banijskih partizanskih odreda 1941–1945 (str. 372–378): malih odreda i seoskih grupa boraca 1941, Banijskog partizanskog odreda i njegovih bataljona, udarnih bataljona, partizanskih četa i dva odreda Banije 1944, po dužnostima. Odredi nisu na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Starešine banijskih partizanskih odreda 1941–1945 (str. 372–378): malih odreda i seoskih grupa boraca 1941, Banijskog partizanskog odreda i njegovih bataljona, udarnih bataljona, partizanskih četa i dva odreda Banije 1944, po dužnostima. Odredi nisu na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'letalci-prekomorci-kader',
@@ -2573,7 +2573,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/letalci-prekomorci-kader.pdf',
     thumbnail: '/images/pdf-thumbs/letalci-prekomorci-kader.jpg',
     brigadeName: '',
-    description: 'Rukovodeći kadar 1. i 2. lovačke eskadrile NOVJ, vazduhoplovnog odreda NOVJ u Alžiru i 1. vazduhoplovnog puka (str. 322–325): čin i dužnost svakog, s danima kad je bio na njoj. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Rukovodeći kadar 1. i 2. lovačke eskadrile NOVJ, vazduhoplovnog odreda NOVJ u Alžiru i 1. vazduhoplovnog puka (str. 322–325): čin i dužnost svakog, s danima kad je bio na njoj. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'niksicki-odred-pali-borci',
@@ -2582,7 +2582,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/niksicki-odred-pali-borci.pdf',
     thumbnail: '/images/pdf-thumbs/niksicki-odred-pali-borci.jpg',
     brigadeName: '',
-    description: 'Imena palih boraca sa područja bivšeg nikšićkog sreza i opštine Herceg-Novi (str. 393–420): mesto i godina rođenja, mesto i godina pogibije; i narodni heroji Nikšića i Herceg-Novog, sa biografijom svakog (str. 423–427). Skoro svi su prošli kroz Nikšićki odred, a pali su u brigadama, u odredu i na drugim dužnostima. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Imena palih boraca sa područja bivšeg nikšićkog sreza i opštine Herceg-Novi (str. 393–420): mesto i godina rođenja, mesto i godina pogibije; i narodni heroji Nikšića i Herceg-Novog, sa biografijom svakog (str. 423–427). Skoro svi su prošli kroz Nikšićki odred, a pali su u brigadama, u odredu i na drugim dužnostima. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'teslic-u-nob-borci',
@@ -2591,7 +2591,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/teslic-u-nob-borci.pdf',
     thumbnail: '/images/pdf-thumbs/teslic-u-nob-borci.jpg',
     brigadeName: '',
-    description: 'Spisak boraca narodnooslobodilačkog rata opštine Teslić (str. 234–267) i spisak poginulih i umrlih boraca (str. 269–279), sa biografijom svakog. Spiskovi uz borce broje i odbornike i saradnike NOP-a: uneti su samo oni za koje zapis kaže da su bili borci ili u NOVJ, ili navodi vojnu dužnost ili jedinicu vojske. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Spisak boraca narodnooslobodilačkog rata opštine Teslić (str. 234–267) i spisak poginulih i umrlih boraca (str. 269–279), sa biografijom svakog. Spiskovi uz borce broje i odbornike i saradnike NOP-a: uneti su samo oni za koje zapis kaže da su bili borci ili u NOVJ, ili navodi vojnu dužnost ili jedinicu vojske. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'lovcenski-odred-pali-borci',
@@ -2600,7 +2600,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/lovcenski-odred-pali-borci.pdf',
     thumbnail: '/images/pdf-thumbs/lovcenski-odred-pali-borci.jpg',
     brigadeName: '',
-    description: 'Poginuli, streljani i umrli borci NOR-a 1941–1945. sa teritorije Lovćenskog NOP odreda, po srezovima (cetinjski, barski, kotorski) i selima, sa biografijom svakog (str. 611–713). Autor u pale borce broji sve iz pokreta koji su izgubili život, i aktiviste, a žrtve terora ne; uneti su svi. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima.'
+    description: 'Poginuli, streljani i umrli borci NOR-a 1941–1945. sa teritorije Lovćenskog NOP odreda, po srezovima (cetinjski, barski, kotorski) i selima, sa biografijom svakog (str. 611–713). Autor u pale borce broji sve iz pokreta koji su izgubili život, i aktiviste, a žrtve terora ne; uneti su svi. Stranice na znaci.org nemaju tekst, samo slike: imena su pročitana sa slika. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'krusevac-1944-poginuli',
@@ -2906,7 +2906,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-slo.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Slovenije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Slovenije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-hrv',
@@ -2915,7 +2915,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-hrv.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Hrvatske, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Hrvatske, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-bih',
@@ -2924,7 +2924,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-bih.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Bosne i Hercegovine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Bosne i Hercegovine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-crg',
@@ -2933,7 +2933,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-crg.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Crne Gore, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Crne Gore, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-mak',
@@ -2942,7 +2942,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Mak.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-mak.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Makedonije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Makedonije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-srb',
@@ -2951,7 +2951,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-srb.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja uže Srbije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja uže Srbije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-kos',
@@ -2960,7 +2960,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-kos.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Kosova i Metohije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Kosova i Metohije, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'zrtve-rata-1964-voj',
@@ -2969,7 +2969,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf',
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-voj.jpg',
     brigadeName: '',
-    description: 'Popis žrtava rata iz 1964, sa područja Vojvodine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+    description: 'Popis žrtava rata iz 1964, sa područja Vojvodine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica. Popis je objavio Muzej žrtava genocida.'
   },
   {
     id: 'kotor-varos',
@@ -3077,7 +3077,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/moslavina-spomenica-1941.pdf',
     thumbnail: '/images/pdf-thumbs/moslavina-spomenica-1941.jpg',
     brigadeName: '',
-    description: 'Pregled nosilaca Partizanske spomenice 1941. s područja Moslavine (str. 629–632), samo imena i nadimci: rođeni u Moslavini ili su tu duže živeli, među njima i rukovodioci KP, SKOJ-a, AFŽ-a i NOO-a. Odred nije na sajtu; ostali su među Ostalim borcima.'
+    description: 'Pregled nosilaca Partizanske spomenice 1941. s područja Moslavine (str. 629–632), samo imena i nadimci: rođeni u Moslavini ili su tu duže živeli, među njima i rukovodioci KP, SKOJ-a, AFŽ-a i NOO-a. Odred nije na sajtu; ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'knezica',

@@ -17,10 +17,10 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-28',
     text: {
-      sr: 'Dodali smo šesnaest novih knjiga, uglavnom o selima i opštinama, sa oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Ostalim borcima.',
-      sl: 'Dodali smo šestnajst novih knjig, večinoma o vaseh in občinah, z okoli 4.200 borci, aktivisti in nosilci Partizanske spomenice 1941. Okoli 600 jih je že bilo na strani, zato je zdaj v njihovem zapisu še ena knjiga. Drugi so novi in so med Drugimi borci.',
-      mk: 'Додадовме шеснаесет нови книги, главно за селата и општините, со околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 од нив веќе беа на сајтот, па сега во нивниот запис стои уште една книга. Другите се нови и се наоѓаат меѓу Другите борци.',
-      en: 'We have added sixteen new books, most of them on villages and municipalities, with some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 of them were already on the site, so their records now show one more book. The rest are new and are listed under Other fighters.',
+      sr: 'Dodali smo šesnaest novih knjiga, uglavnom o selima i opštinama, sa oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Borcima drugih jedinica.',
+      sl: 'Dodali smo šestnajst novih knjig, večinoma o vaseh in občinah, z okoli 4.200 borci, aktivisti in nosilci Partizanske spomenice 1941. Okoli 600 jih je že bilo na strani, zato je zdaj v njihovem zapisu še ena knjiga. Drugi so novi in so med Borci drugih enot.',
+      mk: 'Додадовме шеснаесет нови книги, главно за селата и општините, со околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 од нив веќе беа на сајтот, па сега во нивниот запис стои уште една книга. Другите се нови и се наоѓаат меѓу Борците од други единици.',
+      en: 'We have added sixteen new books, most of them on villages and municipalities, with some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 of them were already on the site, so their records now show one more book. The rest are new and are listed under Fighters of other units.',
     },
   },
   {
