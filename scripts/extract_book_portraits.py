@@ -236,6 +236,7 @@ BOOK_TITLES = {
     '00003/644': 'Kotar Vojnić u narodnooslobodilačkoj borbi i socijalističkoj revoluciji',
     '00003/678': 'Partizanska Drežnica',
     '00003/681': 'Općina Gornje Dubrave',
+    '00003/823': 'Stanko Petelin, Enaintrideseta divizija',
 }
 
 UNIT_BOOKS = [
@@ -718,6 +719,14 @@ PAGE_BOOKS = [
     ('0003000152', '00003/489.pdf', 513, (132.0, 224.4, 273.6, 426.0), 'the portrait under the heading of her biography: "Kata Bubalo", student, komesar; the record: 1918, Ličko Petrovo Selo, komesar of the 2. ženska četa'),
     ('0003000425', '00003/489.pdf', 250, (100.8, 253.2, 241.2, 456.0), 'the portrait under the heading of his biography: "Petar Hinić Pejica"; the record: zvani Pejica'),
     ('0005000050', '00001/109_3.pdf', 47, (72.0, 24.0, 211.2, 230.4), 'the caption under the left one of two portraits (Prilog u krvi, Pljevlja): "Ristan Pavlović"; the record (the only one of the name): učitelj u Pljevljima'),
+    # 2026-10-28: Petelin, Enaintrideseta divizija (00003/823), the staffs photographed in a row, the caption naming them
+    # left to right with their posts; the record agrees on the post or the nickname
+    ('0064001020', '00003/823.pdf', 160, (113.0, 132.0, 157.0, 192.0), 'Štab Prešernove brigade, z leve proti desni: komandant Karel Leskovec, njegov namestnik Rado Jakin (the second from the left), ...; the record: in the XXXI. divizija’s staffs'),
+    ('0142000324', '00003/823.pdf', 160, (185.0, 139.0, 229.0, 199.0), 'Štab Prešernove brigade, z leve proti desni: ..., načelnik štaba Karel Nardin-Jakec (the third from the left); the record: zvani Jakec, namestnik komandanta brigade'),
+    ('0064003328', '00003/823.pdf', 17, (53.0, 113.0, 91.0, 164.0), 'Štab Gradnikove brigade, stoje z leve na desno: politični komisar brigade Jože Čerin-Peter (the first standing), ...; the record: zvani Peter, politični komisar Gradnikove brigade'),
+    ('0064003484', '00003/823.pdf', 17, (157.0, 125.0, 197.0, 178.0), 'Štab Gradnikove brigade, stoje z leve na desno: ..., komandant brigade Danilo Šorovič (the third standing); the record: komandant Gradnikove brigade 1943'),
+    ('0061002235', '00003/823.pdf', 17, (157.0, 125.0, 197.0, 178.0), 'Štab Gradnikove brigade, stoje z leve na desno: ..., komandant brigade Danilo Šorovič (the third standing); the record: komandant of the III. SNOUB »Ivana Gradnika« 1943'),
+    ('0062002429', '00003/823.pdf', 17, (157.0, 125.0, 197.0, 178.0), 'Štab Gradnikove brigade, stoje z leve na desno: ..., komandant brigade Danilo Šorovič (the third standing); the record: komandant of the III. SNOUB »Ivana Gradnika« 1943'),
 ]
 
 
