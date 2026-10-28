@@ -49,9 +49,17 @@ function shuffled<T>(items: T[]): T[] {
   return out
 }
 
-function RailFace({ face, onOpen }: { face: Face; onOpen: (soldier: Soldier) => void }) {
+// Each print wears one of six thin embroidered frames (public/vez/, scripts/make_vez_frames.py), in turn down a
+// column, so no two neighbours match
+const FRAMES = 6
+
+function RailFace({ face, frame, onOpen }: { face: Face; frame: number; onOpen: (soldier: Soldier) => void }) {
   const { soldier } = face
-  const img = <img src={face.src} alt="" loading="lazy" style={{ objectPosition: `50% ${face.focus}%` }} />
+  const img = (
+    <span className="rail-print" data-okvir={frame}>
+      <img src={face.src} alt="" loading="lazy" style={{ objectPosition: `50% ${face.focus}%` }} />
+    </span>
+  )
   // A face whose record the lists don't have shows without a name or a link
   if (!soldier) return <span className="rail-face">{img}</span>
   return (
@@ -112,12 +120,12 @@ export default function PortraitRails({ soldiers, onOpen }: PortraitRailsProps) 
           <div className="rail-window">
             <div className="rail-track">
               <div className="rail-set">
-                {side.map((f) => <RailFace key={f.id} face={f} onOpen={onOpen} />)}
+                {side.map((f, j) => <RailFace key={f.id} face={f} frame={((j + i * 3) % FRAMES) + 1} onOpen={onOpen} />)}
               </div>
               {/* The same faces again, so the drift loops without a seam: out of reach of the keyboard and
                   screen readers, which have the first set */}
               <div className="rail-set" inert>
-                {side.map((f) => <RailFace key={f.id} face={f} onOpen={onOpen} />)}
+                {side.map((f, j) => <RailFace key={f.id} face={f} frame={((j + i * 3) % FRAMES) + 1} onOpen={onOpen} />)}
               </div>
             </div>
           </div>
