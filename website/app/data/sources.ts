@@ -2970,5 +2970,149 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/zrtve-rata-1964-voj.jpg',
     brigadeName: '',
     description: 'Popis žrtava rata iz 1964, sa područja Vojvodine, po opštinama i selima: uneti su samo borci NOB-a koji su poginuli ili umrli u ratu, ne i žrtve terora. Popis ne pripada jednoj jedinici: zapis iz njega dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Ostalim borcima. Popis je objavio Muzej žrtava genocida.'
+  },
+  {
+    id: 'kotor-varos',
+    title: 'Opština Kotor-Varoš i Skender-Vakuf u NOB-u 1941–1945',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720',
+    thumbnail: '/images/pdf-thumbs/kotor-varos.jpg',
+    brigadeName: '',
+    description: 'Spiskovi poginulih, umrlih i nestalih učesnika NOR-a opština Kotor-Varoš i Skender-Vakuf po mesnim organizacijama SUBNOR-a (str. 333–354), sa rođenjem, jedinicom i smrću, i nosioci Partizanske spomenice 1941. obe opštine (str. 357). Uneti su i učesnici koji nisu bili borci, označeni kao aktivisti ili učesnici. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'sokolac',
+    title: 'Sokolac putevima Romanije i istorije',
+    author: 'Jovo Ilije Krsmanović',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002506',
+    thumbnail: '/images/pdf-thumbs/sokolac.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih boraca Sokolca u Drugom svetskom ratu 1941–1945. (str. 524–571), 503 kratke biografije: rođenje, stupanje u NOV, jedinica i pogibija. Spisak poginulih četnika iz iste knjige nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'popovo-polje',
+    title: 'Popovo polje u Narodnooslobodilačkoj borbi',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002554',
+    thumbnail: '/images/pdf-thumbs/popovo-polje.jpg',
+    brigadeName: '',
+    description: 'Prilog „Borci iz Popova polja pali u NOR-u” (str. 419–430): rođenje, dužnost, mesto i dan pogibije. Spisak žrtava fašističkog terora iz iste knjige nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'bijelo-polje',
+    title: 'Bijelo Polje',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00008716',
+    thumbnail: '/images/pdf-thumbs/bijelo-polje.jpg',
+    brigadeName: '',
+    description: 'Prilozi monografije: nosioci Partizanske spomenice 1941. (str. 733–753) i poginuli borci NOR-a bjelopoljskog sreza (str. 778–886), sa rođenjem, jedinicama i smrću. Spisak boraca koji su bili u stroju Treće sandžačke brigade na dan formiranja (str. 754–774) još nije unet, jer su imena u skenu teško čitljiva; nisu uneti ni poginuli u Aprilskom ratu i žrtve terora. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'lezimir',
+    title: 'Godišnjak za istraživanje genocida, sv. 12/1 (2020)',
+    author: 'Stevo Dapčević',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00005912',
+    thumbnail: '/images/pdf-thumbs/lezimir.jpg',
+    brigadeName: '',
+    description: 'Članak „Žrtve sela Ležimira 1941–1945.” (str. 95–120): svi stradali iz Ležimira u Sremu. Uneti su samo borci, oni za koje spisak kaže da su pali u NOB-u; žrtve terora i oni koje su ubili partizani nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'prva-niska-gimnazija',
+    title: 'Prva niška gimnazija 1878–1969.',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008460',
+    thumbnail: '/images/pdf-thumbs/prva-niska-gimnazija.jpg',
+    brigadeName: '',
+    description: 'Pregled gimnazijalaca raznih generacija poginulih u NOB-u i žrtava fašističkog terora (str. 221–232): poginuli kao borci partizanskih odreda i NOVJ, i od ubijenih i streljanih oni koji su bili u pokretu. Učenici stradali u internaciji i u bombardovanju nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'binovce',
+    title: '60 godina škole Binovce i Kalabovce',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00007234',
+    thumbnail: '/images/pdf-thumbs/binovce.jpg',
+    brigadeName: '',
+    description: 'Učesnici NOR-a iz Binovca i Kalabovca kod Surdulice (str. 24–25), samo imena, uneti kao učesnici, i pet poginulih boraca (str. 26). Interniranci, žrtve terora i civilne žrtve nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'kremna',
+    title: 'Hronika sela Kremna',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000547',
+    thumbnail: '/images/pdf-thumbs/kremna.jpg',
+    brigadeName: '',
+    description: 'Poginuli borci partizani iz Kremne kod Prnjavora i sa spomen-ploče u Podvučjaku (str. 134–147), samo imena, nosioci Partizanske spomenice 1941. i komandanti partizanskih jedinica sa prnjavorskog područja (str. 171–172). Spiskovi četnika i žrtava iz iste knjige nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'komani',
+    title: 'Pleme Komani (Bandići – Bezdanovići i Radulovići) kroz vjekove',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=324db83c-42bd-429c-80fc-afea5cb62257/00000001/00000001/00003508',
+    thumbnail: '/images/pdf-thumbs/komani.jpg',
+    brigadeName: '',
+    description: 'Bandići poginuli u NOB, sa spomen-ploče u Zagaraču (str. 223–224), i redovi spiskova bratstava o istim borcima. Streljani i žrtve sa iste ploče i poginuli u ranijim ratovima nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'gornja-jablanica',
+    title: 'Gornja Jablanica kroz istoriju',
+    author: '',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00002500',
+    thumbnail: '/images/pdf-thumbs/gornja-jablanica.jpg',
+    brigadeName: '',
+    description: 'Narodni heroji i drugi poginuli prvoborci NOR-a iz Gornje Jablanice, po selima (str. 663–669), i nosioci Partizanske spomenice 1941. (str. 669–673), samo imena. Nosioci Albanske spomenice i Karađorđeve zvezde nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: '2-korpus-stabovi',
+    title: 'Drugi udarni korpus',
+    author: 'Radovan Vukanović',
+    pdfPath: '/pdfs/2-korpus-stabovi.pdf',
+    thumbnail: '/images/pdf-thumbs/2-korpus-stabovi.jpg',
+    brigadeName: '',
+    description: 'Spisak komandnog sastava štabova divizija i štaba 2. udarnog korpusa (str. 463–465): komandanti, politički komesari, zamenici i načelnici štabova korpusa, 2. proleterske, 3. udarne, 29. i 37. udarne divizije, Primorske operativne grupe, italijanske divizije »Garibaldi« i artiljerijske brigade korpusa, sa mesecima na dužnosti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'moslavina-spomenica-1941',
+    title: 'Moslavački partizanski odred',
+    author: 'Vukašin Karanović',
+    pdfPath: '/pdfs/moslavina-spomenica-1941.pdf',
+    thumbnail: '/images/pdf-thumbs/moslavina-spomenica-1941.jpg',
+    brigadeName: '',
+    description: 'Pregled nosilaca Partizanske spomenice 1941. s područja Moslavine (str. 629–632), samo imena i nadimci: rođeni u Moslavini ili su tu duže živeli, među njima i rukovodioci KP, SKOJ-a, AFŽ-a i NOO-a. Odred nije na sajtu; ostali su među Ostalim borcima.'
+  },
+  {
+    id: 'knezica',
+    title: 'Knežica u Knešpolju',
+    author: 'Milivoj Rodić',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00002790',
+    thumbnail: '/images/pdf-thumbs/knezica.jpg',
+    brigadeName: '',
+    description: 'Prilozi knjige o knežičkim selima pod Kozarom: poginuli borci NOR-a, po selima (str. 451–463), sa godinom rođenja i pogibije i mestom smrti, nosioci Partizanske spomenice 1941. (str. 501–502) i preživeli borci NOR-a mesnog područja Knežica (str. 503–508), samo imena. Spisak žrtava fašističkog terora iz iste knjige nije unet. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'kordunski-rekvijem',
+    title: 'Kordunski rekvijem',
+    author: 'Svetozar Livada i drugi',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071',
+    thumbnail: '/images/pdf-thumbs/kordunski-rekvijem.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih boraca bivše opštine Primišlje 1941–1945. koji je sastavio general Dušan Livada (str. 176–191), po selima, sa kratkom biografijom; članovi Partije i SKOJ-a, odbornici i članice AFŽ-a koje spisak broji uneti su kao aktivisti. Uneto je i prvih 49 nosilaca Partizanske spomenice 1941. koji su iz Slunja preseljeni u Vojvodinu (str. 338–342). Spiskovi žrtava terora i umrlih od tifusa nisu uneti. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'sencur-padli-borci',
+    title: 'Šenčursko območje med nemško okupacijo in narodnoosvobodilnim bojem II',
+    author: 'Franc Benedik (ur.)',
+    pdfPath: '/pdfs/sencur-padli-borci.pdf',
+    thumbnail: '/images/pdf-thumbs/sencur-padli-borci.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih boraca, aktivista i drugih žrtava fašističkog nasilja sa područja opštine Šenčur kod Kranja, po selima, sa biografijom (str. 359–368), i spisak boraca Kokrške čete, decembar 1941 – proleće 1942, sa poslednjim prebivalištem i danom dolaska u četu (str. 381–384). Uneti su borci i, označeni kao aktivisti, ljudi OF-a i Partije; taoci, iseljeni i drugi ubijeni bez udela u pokretu nisu. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
+  },
+  {
+    id: 'klanjscek-komandni-sastav',
+    title: 'Narodnooslobodilački rat u Sloveniji 1941–1945.',
+    author: 'Zdravko Klanjšček',
+    pdfPath: '/pdfs/klanjscek-komandni-sastav.pdf',
+    thumbnail: '/images/pdf-thumbs/klanjscek-komandni-sastav.jpg',
+    brigadeName: '',
+    description: 'Prilog 1, „Spisak komandnog sastava viših jedinica NOV i PO Slovenije” (str. 393–400): komandanti, politički komesari, njihovi zamenici i načelnici štabova Glavnog štaba, pokrajinskih štabova, grupa odreda, operativnih zona, korpusa i divizija, sa danima na dužnosti i mestom pogibije. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on.'
   }
 ]
