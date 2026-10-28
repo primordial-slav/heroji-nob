@@ -22,6 +22,11 @@ export const sr = {
   nav: { label: 'Glavna navigacija', home: 'Početna', units: 'Jedinice', gallery: 'Galerija', sources: 'Izvori' },
   theme: { label: 'Tema', light: 'Svetla tema', dark: 'Tamna tema', system: 'Sistemska tema' },
   language: { label: 'Jezik' },
+  /** The foot of every page: where to write (the sources are named on Izvori alone) */
+  footer: {
+    contact: 'Kontakt',
+    records: 'Grešku u zapisu ili nešto što znate o borcu možete poslati i iz samog zapisa.',
+  },
   notFound: {
     title: 'Ova strana ne postoji',
     text: 'Adresa je možda stara ili pogrešno upisana. Borca potražite po imenu na početnoj strani.',
@@ -60,11 +65,10 @@ export const sr = {
     news: {
       title: 'Šta je novo',
       date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}.`,
-      more: 'Prikaži starije',
     },
     otherUnits: 'Ostale jedinice',
     noUnit: 'Bez jedinice',
-    /** Under "Bez jedinice", beside the Ostali borci card: the 1964 census's parts, a region and its count each */
+    /** Under "Bez jedinice", beside the Borci drugih jedinica card: the 1964 census's parts, a region and its count each */
     census: 'Popis žrtava rata 1964',
     censusLead: 'Poginuli i umrli borci čija jedinica još nije na sajtu, po republikama i pokrajinama.',
     /** The wartime portraits in the home page's margins */
@@ -193,9 +197,10 @@ export const sr = {
     loadingPage: 'Učitavanje strane…',
     source: 'Izvor',
     noScan: 'Za ovaj spisak nema skenirane knjige: objavljen je kao tekst na [znaci.org].',
-    /** A book scanned in the Poreklo library, which only its members can open */
-    noScanPoreklo: (title: string, page: number | null) =>
-      `${title}${page != null ? `, strana ${page}` : ''}. Knjiga je skenirana u Digitalnoj biblioteci Porekla, koju otvaraju samo njeni članovi.`,
+    /** The 1964 census, whose volumes are PDFs on the Museum of Genocide Victims' site: the volume's title */
+    noScanMuseum: (title: string) => `${title}. Popis je objavljen kao PDF na sajtu [Muzeja žrtava genocida].`,
+    /** A book whose scan is not on the site: its title and page */
+    noScanBook: (title: string, page: number | null) => `${title}${page != null ? `, strana ${page}` : ''}.`,
     steps: 'Susedni zapisi u spisku',
     previous: 'Prethodni',
     next: 'Sledeći',
@@ -319,6 +324,7 @@ export const sr = {
     preparing: 'Priprema se isečak iz knjige…',
     entry: 'Zapis u knjizi',
     webText: 'tekst objavljen na znaci.org',
+    museumText: 'popis na sajtu Muzeja žrtava genocida',
   },
 
   unit: {
@@ -370,10 +376,10 @@ export const sr = {
     intro:
       'Podaci o borcima prikupljeni su iz monografija brigada i spiskova boraca objavljenih u izdanjima Vojnoistorijskog instituta. Ovde možete pregledati i preuzeti originalne PDF dokumente.',
     openPdf: 'Otvori PDF',
+    /** opens the rest of a book's description on its card */
+    fullDescription: 'Ceo opis',
     download: 'Preuzmi',
     openList: 'Otvori spisak',
-    /** A book scanned in the Poreklo library: named, not linked, since only its members can open it */
-    inPoreklo: 'U Digitalnoj biblioteci Porekla, samo za njene članove',
     medalsTitle: 'Slike odlikovanja',
     hero:
       'Orden narodnog heroja: fotografija [Pinki, Wikimedia Commons], licenca [CC BY-SA 4.0]. Isečak i crtež ordena na ovom sajtu napravljeni su od te fotografije i objavljeni pod istom licencom.',

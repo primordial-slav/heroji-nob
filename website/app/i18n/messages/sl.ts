@@ -26,6 +26,10 @@ export const sl: Messages = {
   nav: { label: 'Glavna navigacija', home: 'Domov', units: 'Enote', gallery: 'Galerija', sources: 'Viri' },
   theme: { label: 'Videz', light: 'Svetla tema', dark: 'Temna tema', system: 'Kot v sistemu' },
   language: { label: 'Jezik' },
+  footer: {
+    contact: 'Kontakt',
+    records: 'Napako v zapisu ali kaj, kar veste o borcu, lahko pošljete tudi iz samega zapisa.',
+  },
   notFound: {
     title: 'Te strani ni',
     text: 'Naslov je morda star ali napačno vpisan. Borca poiščite po imenu na začetni strani.',
@@ -60,7 +64,6 @@ export const sl: Messages = {
     news: {
       title: 'Kaj je novega',
       date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}`,
-      more: 'Pokaži starejše',
     },
     otherUnits: 'Druge enote',
     noUnit: 'Brez enote',
@@ -103,7 +106,7 @@ export const sl: Messages = {
     similar: (x: number, more: boolean) =>
       `${more ? 'še ' : ''}${n(x)} ${plural('sl', x, { one: 'podoben zapis', two: 'podobna zapisa', few: 'podobni zapisi', other: 'podobnih zapisov' })}`,
     similarTitle: 'Podobni zapisi',
-    similarNote: 'Ime ali kraj, zapisan nekoliko drugače, ali brez katere od iskanih besed.',
+    similarNote: 'Ime ali kraj je zapisan nekoliko drugače ali pa manjka katera od iskanih besed.',
   },
 
   onThisDay: {
@@ -175,8 +178,8 @@ export const sl: Messages = {
     loadingPage: `Nalaganje strani${dots}`,
     source: 'Vir',
     noScan: 'Za ta seznam ni skenirane knjige: objavljen je kot besedilo na [znaci.org].',
-    noScanPoreklo: (title: string, page: number | null) =>
-      `${title}${page != null ? `, stran ${page}` : ''}. Knjiga je skenirana v digitalni knjižnici Poreklo, ki jo lahko odprejo le njeni člani.`,
+    noScanMuseum: (title: string) => `${title}. Popis je objavljen kot PDF na spletni strani [Muzeja žrtev genocida].`,
+    noScanBook: (title: string, page: number | null) => `${title}${page != null ? `, stran ${page}` : ''}.`,
     steps: 'Sosednji zapisi na seznamu',
     previous: 'Prejšnji',
     next: 'Naslednji',
@@ -296,6 +299,7 @@ export const sl: Messages = {
     preparing: `Pripravljanje izreza iz knjige${dots}`,
     entry: 'Zapis v knjigi',
     webText: 'besedilo, objavljeno na znaci.org',
+    museumText: 'popis na spletni strani Muzeja žrtev genocida',
   },
 
   unit: {
@@ -320,8 +324,8 @@ export const sl: Messages = {
     allYears: 'Vsa',
     find: 'Ime enote',
     partOf: 'V sestavi',
-    none: (q: string) => `Nobena enota ne ustreza iskanju „${q}“`,
-    noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer „lička“ ali „13.“.',
+    none: (q: string) => `Nobena enota ne ustreza iskanju »${q}«`,
+    noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer »liška« ali »13.«.',
     kinds: 'Vrsta enote',
     kind: { brigada: 'Brigade', divizija: 'Divizije', odred: 'Odredi', ostalo: 'Druge' },
     lands: 'Republika',
@@ -343,11 +347,11 @@ export const sl: Messages = {
     metaDescription: 'Knjige, iz katerih so seznami borcev, s skenom vsake knjige.',
     title: 'Izvirni dokumenti',
     intro:
-      'Podatki o borcih so zbrani iz monografij brigad in seznamov borcev, ki jih je izdal Vojnozgodovinski inštitut v Beogradu. Tu si lahko izvirne dokumente PDF ogledate in jih prenesete.',
+      'Podatki o borcih so zbrani iz monografij brigad in seznamov borcev, ki jih je izdal Vojnozgodovinski inštitut v Beogradu. Tu si lahko ogledate in prenesete izvirne dokumente PDF.',
     openPdf: 'Odpri PDF',
+    fullDescription: 'Cel opis',
     download: 'Prenesi',
     openList: 'Odpri seznam',
-    inPoreklo: 'V digitalni knjižnici Poreklo, le za njene člane',
     medalsTitle: 'Slike odlikovanj',
     hero:
       'Red narodnega heroja: fotografija [Pinki, Wikimedia Commons], licenca [CC BY-SA 4.0]. Izrez in risba reda na tej strani sta narejena iz te fotografije in objavljena pod isto licenco.',
@@ -356,7 +360,7 @@ export const sl: Messages = {
       'Partizanska spomenica 1941: slika iz registra državnih simbolov Svetovne organizacije za intelektualno lastnino (WIPO), [javna domena].',
     placesTitle: 'Kraji',
     places:
-      'Kraji rojstva in smrti so prepoznani po zbirki zemljepisnih imen [GeoNames], licenca [CC BY 4.0]. Po njej so v drevesu »Soborci in rojaki« skupaj borci iz iste vasi, kakor koli jo pišejo knjige, kraj, ki je v knjigi v sklonu (»u Užicu«), pa je tu v imenovalniku.',
+      'Kraje rojstva in smrti smo prepoznali s pomočjo zbirke zemljepisnih imen [GeoNames], licenca [CC BY 4.0]. Zato so v drevesu »Soborci in rojaki« borci iz iste vasi skupaj, tudi če knjige vas pišejo različno, kraj, ki ga knjiga navaja v sklonu (»u Užicu«), pa je tu zapisan v imenovalniku.',
     placesLicense: 'https://creativecommons.org/licenses/by/4.0/deed.sl',
   },
 

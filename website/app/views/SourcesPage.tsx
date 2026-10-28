@@ -1,6 +1,6 @@
 import { sources } from '@/app/data/sources'
 import { isPoreklo } from '@/app/lib/records'
-import { DocumentIcon, DownloadIcon } from '@/app/components/Icons'
+import { ChevronRightIcon, DocumentIcon, DownloadIcon } from '@/app/components/Icons'
 import RichText from '@/app/i18n/RichText'
 import { messagesFor } from '@/app/i18n'
 import { pageMetadata } from '@/app/i18n/metadata'
@@ -28,34 +28,37 @@ export default function SourcesPage({ lang }: { lang: Lang }) {
       <ul className="sources-list">
         {sources.map((source) => {
           const description = sourceDescription(source, lang)
+          // about four lines of the card's column: a longer one shows its first lines and opens under "Ceo opis"
+          const long = (description?.length ?? 0) > 150
           return (
-            <li className="source-row" id={source.id} key={source.id}>
+            <li className="source-card" id={source.id} key={source.id}>
               <img src={source.thumbnail} alt="" className="source-thumb" loading="lazy" />
-              <div>
-                <h2 className="source-title">{source.title}</h2>
-                <p className="source-author">{sourceAuthor(source, lang)}</p>
-                {description && <p className="source-desc">{description}</p>}
+              <h2 className="source-title">{source.title}</h2>
+              <p className="source-author">{sourceAuthor(source, lang)}</p>
+              {description && <p className={long ? 'source-desc source-desc-long' : 'source-desc'}>{description}</p>}
+              {long && (
+                // the rest of the description (a record's link to its book, /izvori#<id>, shows it whole)
+                <details className="source-more">
+                  <summary><ChevronRightIcon size={14} /> {t.fullDescription}</summary>
+                </details>
+              )}
+              {source.pdfPath.endsWith('.pdf') ? (
                 <div className="source-actions">
-                  {source.pdfPath.endsWith('.pdf') ? (
-                    <>
-                      <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                        <DocumentIcon size={16} /> {t.openPdf}
-                      </a>
-                      <a href={source.pdfPath} download className="btn btn-secondary">
-                        <DownloadIcon size={16} /> {t.download}
-                      </a>
-                    </>
-                  ) : isPoreklo(source.pdfPath) ? (
-                    // a book scanned in the Poreklo library: named, not linked, since only its members can open it
-                    <p className="source-library">{t.inPoreklo}</p>
-                  ) : (
-                    // a list published only as a web page (no scan)
-                    <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                      <DocumentIcon size={16} /> {t.openList}
-                    </a>
-                  )}
+                  <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <DocumentIcon size={16} /> {t.openPdf}
+                  </a>
+                  <a href={source.pdfPath} download className="btn btn-secondary btn-icon" aria-label={t.download} title={t.download}>
+                    <DownloadIcon size={16} />
+                  </a>
                 </div>
-              </div>
+              ) : !isPoreklo(source.pdfPath) && (
+                // a list published only as a web page (no scan); a book whose scan is not on the site is only named
+                <div className="source-actions">
+                  <a href={source.pdfPath} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <DocumentIcon size={16} /> {t.openList}
+                  </a>
+                </div>
+              )}
             </li>
           )
         })}

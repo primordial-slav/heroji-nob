@@ -4,7 +4,7 @@ import { NEWS, newsText } from '@/app/data/news'
 import { useLang, useT } from '@/app/i18n/LangContext'
 
 // "Šta je novo" on the home page, after the doors: the last three big changes, each with a title and a sentence or
-// two, then a few small ones a line each. "Prikaži starije" does nothing yet: older news has no page of its own.
+// two, then a few small ones a line each. Older news has no page of its own yet.
 
 const BIG = NEWS.filter((item) => item.title).slice(0, 3)
 const SMALL = NEWS.filter((item) => !item.title).slice(0, 4)
@@ -37,7 +37,6 @@ export default function HomeNews() {
           </li>
         ))}
       </ul>
-      <button type="button" className="btn btn-secondary news-more">{t.more}</button>
     </section>
   )
 }

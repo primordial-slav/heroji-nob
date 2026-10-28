@@ -27,7 +27,7 @@ const PARAMS: Record<keyof Choice, string> = { year: 'godina', kind: 'vrsta', la
 
 // The Jedinice page's list: every unit under the year it was formed, narrowed to a year, a kind (brigades, divisions,
 // odredi, the rest), the republic it came from (data/unitKinds.ts) or by words of its name. Each row's counts are
-// those the other choices leave. Ostali borci, no unit, stays out once a kind or a republic is chosen.
+// those the other choices leave. Borci drugih jedinica, no unit, stays out once a kind or a republic is chosen.
 export default function UnitsBrowser() {
   const t = useT().unitsPage
   const lang = useLang()

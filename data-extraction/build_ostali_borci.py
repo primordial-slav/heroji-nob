@@ -98,6 +98,14 @@ COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-bo
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
 # lists its dead once, and two of its entries of one name and village are as often two cousins)
 PRINTS_TWICE = {'spomenica-crnogorskim-antifasistima'}
+
+
+def infant(e: dict) -> bool:
+    """A child the Spomenica names who was born in the war's last years: killed in the massacres of 1943 at a year or
+    two, no fighter (the user's decision of 2026-10-28: the older children stay, since children fought); another
+    book that names the same child still makes his record"""
+    year = str(e.get('birth_year') or '')
+    return e.get('_book') == 'spomenica-crnogorskim-antifasistima' and year.isdigit() and 1942 <= int(year) <= 1945
 # entries checked by hand to be one man, where an OCR slip in the father hides it from same_man, or where the Spomenica
 # prints him in two chapters with two villages
 ONE_MAN = [
@@ -539,7 +547,7 @@ def main():
             # a man the book names by one name is still its man (Romano's "Ašer (prezime nepoznato)", Oborovo's "Ivica
             # ...", Gončin's "Janković"; the user's decision of 2026-10-14); one it could not name ("Nepoznati borac"),
             # or a number its parser keeps with no one, is no one a search can find
-            if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed'):
+            if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed') and not infant(e):
                 entries.append(e)
     # each book's own given names, to read its genitive fathers by its region's names (from_genitive)
     book_given: dict[str, Counter] = defaultdict(Counter)
@@ -713,13 +721,25 @@ def main():
                 if day:
                     y, mo, d = day.split('-')
                     rec['death_date'] = f'{int(d)}. {int(mo)}. {y}.'
+            # the census's and the column books' fields, where a list gave none; their death is marked (from_columns), so
+            # the field reader may put the man's own biography first: "Strijeljana od četnika 1942." is streljan, not
+            # the Spomenica's "poginuo", and "poginuo 9. juna 1943." the day, not its year (2026-10-28)
+            filled = []
             if census:
                 for k, v in census_fields(census[0]).items():
-                    rec.setdefault(k, v)                     # the census's columns, where a list gave no death
+                    if k not in rec:
+                        rec[k] = v                           # the census's columns, where a list gave no death
+                        filled.append(k)
             columns = [m for m in g if m['_book'] in COLUMN_BOOKS]
             if columns:
                 for k, v in column_fields(columns[0]).items():
-                    rec.setdefault(k, v)                     # the Spomenica's columns
+                    if k not in rec:
+                        rec[k] = v                           # the Spomenica's columns
+                        filled.append(k)
+            death_cols = [k for k in ('death_type', 'death_date') if k in filled]
+            if death_cols and any(m['_book'] not in COLUMN_BOOKS and not m['_book'].startswith('zrtve-rata-1964')
+                                  for m in g):
+                rec['from_columns'] = death_cols
             if rest:
                 rec['other_sources'] = [source_entry(m) for m in rest]
             # a man of the movement whom a mixed list names and no book calls a fighter (the user's decision of

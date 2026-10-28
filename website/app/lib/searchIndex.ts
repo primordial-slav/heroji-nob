@@ -16,7 +16,7 @@ import type { Soldier } from './types'
 
 // The search list is about 40 MB, and Vercel refuses a prerendered response over 19 MB, so it comes in parts of
 // whole units, up to INDEX_PART_SOLDIERS soldiers each: about 5 MB, and 15 MB even for the wordiest books. A unit
-// larger than that (Ostali borci, the census's Srbija) is cut in slices of its rows, a part each (2026-10-25: Ostali
+// larger than that (Borci drugih jedinica, the census's Srbija) is cut in slices of its rows, a part each (2026-10-25: Ostali
 // borci's one part had reached 17.2 MB); its unit page's list comes in the same slices (listParts).
 export const INDEX_PART_SOLDIERS = 30000
 /** Rows start to end of a unit's data file (end left out: to the end) */

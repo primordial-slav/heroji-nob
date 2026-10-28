@@ -27095,7 +27095,7 @@
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "04.1943",
-    "death_place": "na Kapku, Ćajniče",
+    "death_place": "Kapak, Ćajniče",
     "rank": "borac",
     "unit_detail": "III bataljon",
     "pdf_x_end": 365.1,
@@ -33558,7 +33558,14 @@
         ]
       }
     ],
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "death": [
+        {
+          "date": "26.05.1944"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001000991",
@@ -39542,6 +39549,12 @@
     "variants": {
       "born": [
         "1922"
+      ],
+      "death": [
+        {
+          "date": "09.04.1943",
+          "place": "na Krčinu brdu jurišajući na Talijane"
+        }
       ]
     }
   },
@@ -53461,7 +53474,7 @@
     "occupation": "berberin",
     "death_type": "poginuo",
     "death_date": "10.04.1943",
-    "death_place": "na Kapku, Foča",
+    "death_place": "Kapak, Foča",
     "rank": "borac",
     "unit_detail": "III bataljon",
     "pdf_x_end": 372.4,
@@ -57120,7 +57133,14 @@
         "pdf_y_end": 517.3
       }
     ],
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "variants": {
+      "death": [
+        {
+          "date": "05.07.1943"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001001689",
@@ -62746,7 +62766,7 @@
       "death": [
         {
           "date": "07.1943",
-          "place": "Kladnje"
+          "place": "Kladanj"
         }
       ]
     }
@@ -67169,7 +67189,7 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "01.05.1943",
-    "death_place": "na Javorku, Nikšić",
+    "death_place": "Javorak, Nikšić",
     "rank": "politički delegat",
     "unit_detail": "V bataljon",
     "pdf_x_end": 350.6,
@@ -69465,7 +69485,7 @@
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "10.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "III bataljon"
   },
@@ -69986,6 +70006,11 @@
     "variants": {
       "born": [
         "1922"
+      ],
+      "death": [
+        {
+          "date": "15.11.1944"
+        }
       ]
     }
   },
@@ -81802,7 +81827,7 @@
     "occupation": "metalski radnik",
     "death_type": "poginuo",
     "death_date": "04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "III bataljon",
     "pdf_x_end": 370.5,
@@ -94647,7 +94672,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Foča",
+    "death_place": "Kapak, Foča",
     "rank": "borac",
     "unit_detail": "IV bataljon",
     "pdf_x_end": 353.7,
@@ -110073,8 +110098,7 @@
     "variants": {
       "death": [
         {
-          "date": "14.06.1943",
-          "place": "Šekovići, Vlasenica"
+          "date": "14.06.1943"
         }
       ]
     }
@@ -117375,7 +117399,7 @@
     "fathers_name": "Marin",
     "full_name": "Gruić-Matković Marina Dragica",
     "additional_info": "rođena Kučine, Split, domaćica, Za NOP počela je raditi od 1941. Zatvorena 1942. zbog pomaganja i saradnje sa NOP-om. U Mosorski odred stupila je 1942. iz kojeg je ušla u sastav 4. dalmatinske brigade. Nastavila ie borbe kroz IV ofanzivu sve do Neretve gdje je postala bolničarka 1. proleterske NOU brigade i nastavila borbe: na Tičevu, Treskavici, Prijepolju i Bijelom Polju, da bi potom prekomandirana u Bolnice 1. proleterske divizije i kroz V neprijateljsku ofanzivu se brinula o ranjenicima i bolesnicima. Po proboju iz V neprijateljske ofanzive Bosnu Dragica odlazi ranjenicima i bolesnicima, odlazi u Semberiju, u Sehoviće, i bila je raspoređena u vojvođanske jedinice. Po dolasku u 2. vojvođansku brigadu postala je referent saniteta, a kraj rata je zatekao kao referenta saniteta 16. vojvođanske divizije. U toku rata je postala član KPJ.",
-    "birth_year": "1941",
+    "birth_year": "1913",
     "pdf_file": "dalmatinci-prva-proleterska.pdf",
     "pdf_page": 76,
     "pdf_x": 378.3,
@@ -117401,12 +117425,7 @@
         "pdf_x_left": 223.0,
         "unit_file": "mosorski-odred-soldiers.json"
       }
-    ],
-    "variants": {
-      "born": [
-        "1913"
-      ]
-    }
+    ]
   },
   {
     "soldier_id": "0001003489",
@@ -121059,7 +121078,7 @@
     "occupation": "službenik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "zamenik komandira čete",
     "unit_detail": "IV bataljon",
     "pdf_x_end": 359.9
@@ -123922,7 +123941,7 @@
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Foča",
+    "death_place": "Kapak, Foča",
     "rank": "komandir čete",
     "unit_detail": "II bataljon",
     "pdf_x_end": 350.7,
@@ -180855,7 +180874,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "I bataljon",
     "pdf_x_end": 350.1
@@ -193682,7 +193701,7 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "III bataljon",
     "pdf_x_end": 354.6,
@@ -202887,7 +202906,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "IV bataljon",
     "pdf_x_end": 355.3
@@ -210802,7 +210821,7 @@
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "16.05.1943",
-    "death_place": "u Mazoču, Foča",
+    "death_place": "Mazoče, Foča",
     "rank": "politički komesar čete",
     "unit_detail": "V bataljon",
     "pdf_x_end": 355.0,
@@ -210878,11 +210897,11 @@
         },
         {
           "date": "20.05.1943",
-          "place": "u Mazoču, Foča"
+          "place": "Mazoče, Foča"
         },
         {
           "date": "21.05.1943",
-          "place": "u Mazoču, Foča"
+          "place": "Mazoče, Foča"
         }
       ]
     }
@@ -211593,7 +211612,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "10.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "III bataljon",
     "pdf_x_end": 372.3
@@ -226941,7 +226960,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "13.06.1943",
-    "death_place": "na Budnju, Foča",
+    "death_place": "Budanj, Foča",
     "rank": "borac",
     "pdf_x_end": 355.0,
     "unit_detail": "1. bataljon",
@@ -227608,7 +227627,7 @@
       },
       {
         "soldier_id": "0007003197",
-        "name": "Martinac Jure Mijo",
+        "name": "Martinac Mijo",
         "additional_info": "Vrgorac. Hrvat, službenik. Predratni član KPJ. U NOV od 1942. Poginuo 18. 3. 1943. kao zamjenik kom. bataljona kod Kalinovika.",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 108,
@@ -322707,7 +322726,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "05.1944",
-    "death_place": "kod Vagnja, Jajce",
+    "death_place": "Vaganj, Jajce",
     "rank": "borac",
     "pdf_x_end": 351.6
   },
@@ -325320,6 +325339,11 @@
     "variants": {
       "born": [
         "1922"
+      ],
+      "death": [
+        {
+          "date": "28.05.1944"
+        }
       ]
     }
   },
@@ -333793,7 +333817,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku kod Foče",
+    "death_place": "Kapak, Foča",
     "rank": "desetar",
     "unit_detail": "II bataljon",
     "pdf_x_end": 370.1,
@@ -358952,7 +358976,8 @@
       }
     ],
     "death_type": "poginuo",
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "death_date": "16.05.1943"
   },
   {
     "soldier_id": "0001010739",
@@ -373472,7 +373497,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Čajniče",
+    "death_place": "Kapak, Čajniče",
     "rank": "borac",
     "unit_detail": "IV bataljon",
     "pdf_x_end": 349.9,
@@ -391380,7 +391405,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Foča",
+    "death_place": "Kapak, Foča",
     "rank": "borac",
     "unit_detail": "II bataljon",
     "pdf_x_end": 364.0,
@@ -408466,7 +408491,7 @@
       "death": [
         {
           "date": "05.1944",
-          "place": "Kotor-Varoši"
+          "place": "Kotor-Varoš"
         }
       ]
     }
@@ -409313,6 +409338,11 @@
     "variants": {
       "born": [
         "1909"
+      ],
+      "death": [
+        {
+          "date": "01.08.1943"
+        }
       ]
     }
   },
@@ -425586,7 +425616,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "23.07.1942",
-    "death_place": "u Poriču kod Bugojna",
+    "death_place": "Poriče, Bugojno",
     "rank": "borac",
     "unit_detail": "V bataljon",
     "pdf_x_end": 352.2,
@@ -427926,7 +427956,14 @@
         "pdf_y_end": 334.2,
         "unit_file": "3-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "13.06.1943"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001012844",
@@ -434214,7 +434251,7 @@
       },
       {
         "soldier_id": "0007005445",
-        "name": "Veronika Ivana Božidar",
+        "name": "Veronika Božidar",
         "additional_info": "23. 12. 1923. Vodice, Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 182,
@@ -471015,7 +471052,7 @@
       "death": [
         {
           "date": "04.1943",
-          "place": "na Kapku, Foča"
+          "place": "Kapak, Foča"
         }
       ]
     }
@@ -472583,7 +472620,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "14.06.1943",
-    "death_place": "kod Donjeg Budnja, u Miljevini",
+    "death_place": "Donji Budanj, Miljevina",
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 375.1,
@@ -473098,7 +473135,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "12.06.1943",
-    "death_place": "na Budnju, Miljevina",
+    "death_place": "Budanj, Miljevina",
     "rank": "borac",
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 395.8,
@@ -476076,7 +476113,7 @@
     "occupation": "ribar",
     "death_type": "poginuo",
     "death_date": "14.06.1943",
-    "death_place": "na Donjem Budnju, Miljevina",
+    "death_place": "Donji Budanj, Miljevina",
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 187.6,
@@ -476601,7 +476638,7 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "29.05.1944",
-    "death_place": "Mliništa, Mrkonjić Grad",
+    "death_place": "Mlinište, Mrkonjić Grad",
     "rank": "komandir čete",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 190.1,
@@ -480923,7 +480960,7 @@
     "birth_place": "Kragujevac",
     "occupation": "brijački radnik",
     "death_date": "10.04.1943",
-    "death_place": "na Kapku, Foča",
+    "death_place": "Kapak, Foča",
     "rank": "borac",
     "pdf_x_end": 583.3,
     "pdf_x_left": 250.4
@@ -484953,7 +484990,7 @@
     "birth_place": "Kaona, Čačak",
     "occupation": "student medicine",
     "death_date": "krajem juna 1943",
-    "death_place": "Nove Varoši",
+    "death_place": "Nova Varoš",
     "pdf_x_end": 599.2,
     "pdf_x_left": 266.1,
     "other_sources": [
@@ -485364,7 +485401,7 @@
     "pdf_y_end": 829.4,
     "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
     "soldier_id": "0001200759",
-    "birth_place": "Podbrđu, Kraljevo",
+    "birth_place": "Podbrđe, Kraljevo",
     "occupation": "stolar",
     "rank": "borac",
     "pdf_x_end": 574.9,
@@ -488064,7 +488101,7 @@
     "birth_place": "Divostin, Kragujevac",
     "occupation": "učenik gimnazije",
     "death_date": "09.04.1943",
-    "death_place": "na Kapku, Foča",
+    "death_place": "Kapak, Foča",
     "rank": "borac",
     "pdf_x_end": 594.0,
     "pdf_x_left": 260.4
@@ -489782,9 +489819,9 @@
     "pdf_x_end": 189.5
   },
   {
-    "last_name": "Bruno",
+    "last_name": "",
     "middle_name": "",
-    "first_name": "",
+    "first_name": "Bruno",
     "fathers_name": "",
     "full_name": "Bruno",
     "additional_info": "Italijan U NOB od marta 1943, u vreme borbi na Neretvi.",
@@ -495701,9 +495738,9 @@
     "party": "KPJ 1943"
   },
   {
-    "last_name": "Luiđi",
+    "last_name": "",
     "middle_name": "",
-    "first_name": "",
+    "first_name": "Luiđi",
     "fathers_name": "",
     "full_name": "Luiđi",
     "additional_info": "Italijan u NOB od marta 1943, u vreme borbi na Neretvi. Poginuo avgusta 1944. na pl. Šargan, Titovo Užice.",
@@ -496990,7 +497027,7 @@
     "pdf_file": "beogradski-bataljon.pdf",
     "soldier_id": "0001300985",
     "death_type": "poginuo",
-    "death_place": "Mliništa, Mrkonjić Grad",
+    "death_place": "Mlinište, Mrkonjić Grad",
     "rank": "puškomitraljezac",
     "pdf_x_end": 382.0
   },
@@ -498243,9 +498280,9 @@
     "pdf_x_end": 542.1
   },
   {
-    "last_name": "Mladenko",
+    "last_name": "",
     "middle_name": "",
-    "first_name": "",
+    "first_name": "Mladenko",
     "fathers_name": "",
     "full_name": "Mladenko",
     "additional_info": "rodom iz Bosne. Poginuo 21. januara 1942. Pjenovac, Han Pijesak.",
@@ -506467,7 +506504,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "bombaš",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_date": "20.11.1942"
   },
   {
     "last_name": "Baković",
@@ -507689,7 +507727,8 @@
     "death_type": "poginuo",
     "rank": "puškomitraljezac",
     "unit_detail": "4. kraljevački bataljon",
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "death_date": "13.06.1943"
   },
   {
     "last_name": "Gulin",
@@ -510743,7 +510782,8 @@
     "death_type": "poginuo",
     "rank": "borac",
     "unit_detail": "prištapske jedinice",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "death_date": "05.07.1943"
   },
   {
     "last_name": "Roglić",
@@ -511089,7 +511129,8 @@
     "birth_place": "Kula, Atlagića, Benkovac",
     "death_type": "poginuo",
     "occupation": "zemljoradnik",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_date": "12.01.1945"
   },
   {
     "last_name": "",
@@ -511664,7 +511705,8 @@
     "soldier_id": "0001400912",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_date": "14.06.1943"
   },
   {
     "soldier_id": "0001403306",
@@ -521199,7 +521241,7 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "04.12.1942",
-    "death_place": "Kotor-Varoši",
+    "death_place": "Kotor-Varoš",
     "pdf_x_end": 456.4,
     "party": "KPJ"
   },

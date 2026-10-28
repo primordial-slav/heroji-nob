@@ -617,7 +617,7 @@ const sl: Record<string, UnitText> = {
   '1-proleterski-bataljon-hrvatske': {
     name: '1. proletarski bataljon Hrvaške',
     description:
-      'Ustanovljen 7. maja 1942 v Korenici. Borci bataljona, do njegovega vstopa v 13. proletarsko brigado „Rade Končar“.',
+      'Ustanovljen 7. maja 1942 v Korenici. Borci bataljona, do njegovega vstopa v 13. proletarsko brigado »Rade Končar«.',
   },
   'pionirska-ceta-divoselo': {
     name: 'Prva oborožena pionirska partizanska četa',
@@ -705,7 +705,7 @@ const sl: Record<string, UnitText> = {
     description: 'Ustanovljena 14. januarja 1944 v Veliki Plani pri Prokuplju kot 3. južnomoravska brigada. Padli in umrli borci in starešine brigade.',
   },
   'cacanski-odred': {
-    name: 'Čačanski partizanski odred „Dr. Dragiša Mišović“',
+    name: 'Čačanski partizanski odred "Dr. Dragiša Mišović"',
     description: 'Ustanovljen 6. julija 1941 v Kulinovcih pri Čačku. Padli borci odreda, po pokrajinah in vaseh.',
   },
   'mostarski-bataljon': {
@@ -721,47 +721,47 @@ const sl: Record<string, UnitText> = {
     description: 'Ustanovljena 21. maja 1942 v Lamoviti pri Prijedoru. Padli, umrli in pogrešani borci brigade.',
   },
   'ostali-borci': {
-    name: 'Drugi borci',
+    name: 'Borci drugih enot',
     description:
       'Borci iz spominskih knjig, vaških kronik in zbornikov narodnih herojev, katerih enote še ni na strani.',
   },
   'ostali-borci-slovenija': {
-    name: 'Drugi borci – Slovenija',
+    name: 'Borci drugih enot – Slovenija',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Slovenije, katerih enote še ni na strani.',
   },
   'ostali-borci-hrvatska': {
-    name: 'Drugi borci – Hrvaška',
+    name: 'Borci drugih enot – Hrvaška',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Hrvaške, katerih enote še ni na strani.',
   },
   'ostali-borci-bih': {
-    name: 'Drugi borci – Bosna in Hercegovina',
+    name: 'Borci drugih enot – Bosna in Hercegovina',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Bosne in Hercegovine, katerih enote še ni na strani.',
   },
   'ostali-borci-crna-gora': {
-    name: 'Drugi borci – Črna gora',
+    name: 'Borci drugih enot – Črna gora',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Črne gore, katerih enote še ni na strani.',
   },
   'ostali-borci-makedonija': {
-    name: 'Drugi borci – Makedonija',
+    name: 'Borci drugih enot – Makedonija',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Makedonije, katerih enote še ni na strani.',
   },
   'ostali-borci-srbija': {
-    name: 'Drugi borci – Srbija',
+    name: 'Borci drugih enot – Srbija',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja ožje Srbije, katerih enote še ni na strani.',
   },
   'ostali-borci-kosovo': {
-    name: 'Drugi borci – Kosovo in Metohija',
+    name: 'Borci drugih enot – Kosovo in Metohija',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Kosova in Metohije, katerih enote še ni na strani.',
   },
   'ostali-borci-vojvodina': {
-    name: 'Drugi borci – Vojvodina',
+    name: 'Borci drugih enot – Vojvodina',
     description:
       'Padli in umrli borci iz popisa žrtev vojne iz leta 1964 z območja Vojvodine, katerih enote še ni na strani.',
   },
@@ -964,7 +964,7 @@ const mk: Record<string, UnitText> = {
   '8-banijska-brigada': {
     name: '8-ма банијска бригада',
     description:
-      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, загинатите и умрените борци на бригадата и командниот состав.',
+      'Формирана на 7 септември 1942 во Обљај кај Глина. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, загинатите и починатите борци на бригадата и командниот состав.',
   },
   '3-dalmatinska-brigada': {
     name: '3-та далматинска бригада',
@@ -974,7 +974,7 @@ const mk: Record<string, UnitText> = {
   '9-dalmatinska-divizija': {
     name: '9-та далматинска дивизија',
     description:
-      'Формирана на 11 февруари 1943 од 3., 4. и 5. далматинска бригада, расформирана во април истата година. Загинатите и исчезнатите борци на дивизијата од февруари до април 1943.',
+      'Формирана на 11 февруари 1943 од 3-та, 4-та и 5-та далматинска бригада, расформирана во април истата година. Загинатите и исчезнатите борци на дивизијата од февруари до април 1943.',
   },
   '16-banijska-brigada': {
     name: '16-та банијска бригада',
@@ -1097,12 +1097,12 @@ const mk: Record<string, UnitText> = {
       'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на единиците од кои настана и борци на бригадата до крајот на војната.',
   },
   '1-slovenska-artilerijska-brigada': {
-    name: '1. словенечка артилериска бригада',
+    name: '1-ва словенечка артилериска бригада',
     description:
       'Формирана на 6 мај 1944 во Лашче кај Двор. Старешините и артилерците на бригадата и загинатите.',
   },
   'artilerija-9-korpusa': {
-    name: 'Артилерија на 9. корпус',
+    name: 'Артилерија на 9-ти корпус',
     description:
       'Формирана на 14 јуни 1944 во Горњи Локовец. Борците на артилеријата и загинатите.',
   },
@@ -1169,7 +1169,7 @@ const mk: Record<string, UnitText> = {
   '7-srpska-brigada': {
     name: '7-ма српска бригада',
     description:
-      'Формирана на 4 февруари 1944 во Јабуковик кај Црна Трава, како 5-та јужноморавска. Борците во мај 1944 и загинатите, умрените и исчезнатите.',
+      'Формирана на 4 февруари 1944 во Јабуковик кај Црна Трава, како 5-та јужноморавска. Борците во мај 1944 и загинатите, починатите и исчезнатите.',
   },
   '15-srpska-brigada': {
     name: '15-та српска бригада',
@@ -1184,22 +1184,22 @@ const mk: Record<string, UnitText> = {
   '10-srpska-brigada': {
     name: '10-та српска бригада',
     description:
-      'Формирана на 8 мај 1944 во Јабуковик кај Црна Трава. Загинатите, умрените и исчезнатите борци и раководители на бригадата.',
+      'Формирана на 8 мај 1944 во Јабуковик кај Црна Трава. Загинатите, починатите и исчезнатите борци и раководители на бригадата.',
   },
   '23-srpska-brigada': {
     name: '23-та српска бригада',
     description:
-      'Формирана на 2 септември 1944 во Шуман Топла кај Књажевац. Загинатите и умрените борци и раководители на бригадата.',
+      'Формирана на 2 септември 1944 во Шуман Топла кај Књажевац. Загинатите и починатите борци и раководители на бригадата.',
   },
   '12-srpska-brigada': {
     name: '12-та српска бригада',
     description:
-      'Формирана на 22 мај 1944 на Острозуб, јужно од Бистрица. Загинатите и умрените борци и раководители на бригадата.',
+      'Формирана на 22 мај 1944 на Острозуб, јужно од Бистрица. Загинатите и починатите борци и раководители на бригадата.',
   },
   '20-srpska-brigada': {
     name: '20-та српска бригада',
     description:
-      'Формирана на 19 август 1944 над селото Бучје кај Књажевац. Загинатите и умрените борци и раководители на бригадата.',
+      'Формирана на 19 август 1944 над селото Бучје кај Књажевац. Загинатите и починатите борци и раководители на бригадата.',
   },
   '1-konjicka-brigada': {
     name: '1-ва коњаничка бригада',
@@ -1209,7 +1209,7 @@ const mk: Record<string, UnitText> = {
   'toplicki-odred': {
     name: 'Топлички партизански одред',
     description:
-      'Формиран на 3 август 1941 во Ајдановац кај Прокупље. Борците на денот на формирањето, загинатите и умрените, народните херои на одредот.',
+      'Формиран на 3 август 1941 во Ајдановац кај Прокупље. Борците на денот на формирањето, загинатите и починатите, народните херои на одредот.',
   },
   'karlovacka-brigada': {
     name: 'Карловачка ударна бригада',
@@ -1224,7 +1224,7 @@ const mk: Record<string, UnitText> = {
   '22-divizija': {
     name: '22-ра дивизија',
     description:
-      'Формирана во мај 1944 на десниот брег на Јужна Морава. Загинатите борци на 8., 10. и 12. српска бригада.',
+      'Формирана во мај 1944 на десниот брег на Јужна Морава. Загинатите борци на 8-ма, 10-та и 12-та српска бригада.',
   },
   '34-divizija': {
     name: '34-та дивизија',
@@ -1249,32 +1249,32 @@ const mk: Record<string, UnitText> = {
   '12-hercegovacka-brigada': {
     name: '12-та херцеговска бригада',
     description:
-      'Формирана на 16 ноември 1943 во Херцеговина, од групите баталјони на 10. херцеговска. Загинатите борци и старешини на бригадата.',
+      'Формирана на 16 ноември 1943 во Херцеговина, од групите баталјони на 10-та херцеговска. Загинатите борци и старешини на бригадата.',
   },
   '1-bokeljska-brigada': {
     name: '1-ва бокељска бригада',
     description:
-      'Формирана на 5 октомври 1944 во Коњско кај Требиње. Сите борци и старешини на бригадата по единици, и загинатите, умрените и исчезнатите.',
+      'Формирана на 5 октомври 1944 во Коњско кај Требиње. Сите борци и старешини на бригадата по единици, и загинатите, починатите и исчезнатите.',
   },
   '6-dalmatinska-brigada': {
     name: '6-та далматинска бригада',
     description:
-      'Формирана на 8 октомври 1943 во Ервеник, како 2. бригада на 19. дивизија. Штабовите на бригадата и баталјоните и загинатите борци на бригадата.',
+      'Формирана на 8 октомври 1943 во Ервеник, како 2-ра бригада на 19-та дивизија. Штабовите на бригадата и баталјоните и загинатите борци на бригадата.',
   },
   'osjecka-brigada': {
     name: 'Осиечка ударна бригада',
     description:
-      'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и умрените борци на бригадата и преживеаните, по општини, и нејзините старешини.',
+      'Формирана на 1 март 1944 кај Слободна Власт близу Ѓаково. Загинатите и починатите борци на бригадата и преживеаните, по општини, и нејзините старешини.',
   },
   '4-brigada-slavonije': {
     name: '4-та бригада на Славонија',
     description:
-      'Формирана на 28 септември 1944 во Подравска Слатина, како 4. бригада на 12. дивизија, наречена Втора бродска. Загинатите и ранетите борци на бригадата и нејзините раководители.',
+      'Формирана на 28 септември 1944 во Подравска Слатина, како 4-та бригада на 12-та дивизија, наречена Втора бродска. Загинатите и ранетите борци на бригадата и нејзините раководители.',
   },
   '12-slavonska-brigada': {
     name: '12-та пролетерска славонска бригада',
     description:
-      'Формирана на 11 октомври 1942 во Будиќи кај Пакрац, како 1. славонска бригада, пролетерска од 26 октомври 1944. Жените борци на бригадата, загинати, починати и преживеани.',
+      'Формирана на 11 октомври 1942 во Будиќи кај Пакрац, како 1-ва славонска бригада, пролетерска од 26 октомври 1944. Жените борци на бригадата, загинати, починати и преживеани.',
   },
   'zagrebacki-odred': {
     name: 'Загрепски партизански одред',
@@ -1304,7 +1304,7 @@ const mk: Record<string, UnitText> = {
   '6-crnogorska-brigada': {
     name: '6-та црногорска бригада',
     description:
-      'Формирана на 14 ноември 1943 во Дријенак кај Колашин. Загинатите и умрените борци и старешини на бригадата.',
+      'Формирана на 14 ноември 1943 во Дријенак кај Колашин. Загинатите и починатите борци и старешини на бригадата.',
   },
   '11-krajiska-brigada': {
     name: '11-та краишка (козарачка) бригада',
@@ -1314,7 +1314,7 @@ const mk: Record<string, UnitText> = {
   '3-banijska-brigada': {
     name: '3-та банијска бригада',
     description:
-      'Формирана на 1 мај 1943 во Комоговина како 4. банијска бригада; од септември 1943 3. бригада на 7. банијска дивизија. Раководителите и борците на бригадата.',
+      'Формирана на 1 мај 1943 во Комоговина како 4-та банијска бригада; од септември 1943 3-та бригада на 7-ма банијска дивизија. Раководителите и борците на бригадата.',
   },
   'macvanski-odred': {
     name: 'Мачвански (Подрински) партизански одред',
@@ -1329,7 +1329,7 @@ const mk: Record<string, UnitText> = {
   '51-divizija': {
     name: '51-ва војводинска дивизија',
     description:
-      'Формирана на 31 октомври 1944 во Нови Сад, од 7., 8. и 12. војводинска бригада. Борците на дивизијата загинати од формирањето до крајот на војната, мај 1945, и исчезнати во Батинската битка.',
+      'Формирана на 31 октомври 1944 во Нови Сад, од 7-ма, 8-ма и 12-та војводинска бригада. Борците на дивизијата загинати од формирањето до крајот на војната, мај 1945, и исчезнати во Батинската битка.',
   },
   'vrhovni-stab': {
     name: 'Врховен штаб на НОВ и ПОЈ',
@@ -1362,9 +1362,9 @@ const mk: Record<string, UnitText> = {
       'Формирана во ноември 1941 во западна Србија. Персоналот на болницата и ранетите чија единица не можела да се утврди, во битката на Сутјеска, мај и јуни 1943.',
   },
   '3-licka-brigada': {
-    name: '3. личка пролетерска бригада',
+    name: '3-та личка пролетерска бригада',
     description:
-      'Формирана на 9 септември 1942 во Могориќ кај Госпиќ како 9. хрватска бригада. Загинатите, умрените и исчезнатите борци на бригадата и нејзините народни херои.',
+      'Формирана на 9 септември 1942 во Могориќ кај Госпиќ како 9-та хрватска бригада. Загинатите, починатите и исчезнатите борци на бригадата и нејзините народни херои.',
   },
   'pozarevacki-odred': {
     name: 'Пожаревачки партизански одред',
@@ -1372,9 +1372,9 @@ const mk: Record<string, UnitText> = {
       'Формиран во август 1941 во Пожаревачкиот округ. Сите борци на одредот од 1941 до октомври 1944, кога влезе во НОВЈ.',
   },
   '1-proleterski-bataljon-hrvatske': {
-    name: '1. пролетерски баталјон на Хрватска',
+    name: '1-ви пролетерски баталјон на Хрватска',
     description:
-      'Формиран на 7 мај 1942 во Кореница. Борците на баталјонот, до неговото влегување во 13. пролетерска бригада „Раде Кончар“.',
+      'Формиран на 7 мај 1942 во Кореница. Борците на баталјонот, до неговото влегување во 13-та пролетерска бригада „Раде Кончар“.',
   },
   'pionirska-ceta-divoselo': {
     name: 'Прва вооружена пионерска партизанска чета',
@@ -1383,7 +1383,7 @@ const mk: Record<string, UnitText> = {
   },
   '4-pomorski-sektor': {
     name: 'IV поморски крајбрежен сектор',
-    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и умрените и каде паднале, и штабот на секторот.',
+    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и починатите и каде паднале, и штабот на секторот.',
   },
   'viski-bataljon': {
     name: 'Вишки доброволен баталјон',
@@ -1407,7 +1407,7 @@ const mk: Record<string, UnitText> = {
   },
   '4-prekomorska-brigada': {
     name: '4-та прекуморска бригада',
-    description: 'Формирана на 7 септември 1944 во Италија, при базата на НОВЈ во Бари: товарење и превоз на сојузничката помош. Загинатите и умрените и командниот кадар.',
+    description: 'Формирана на 7 септември 1944 во Италија, при базата на НОВЈ во Бари: товарење и превоз на сојузничката помош. Загинатите и починатите и командниот кадар.',
   },
   '9-srpska-brigada': {
     name: '9-та српска бригада',
@@ -1443,7 +1443,7 @@ const mk: Record<string, UnitText> = {
   },
   'kosovelova-brigada': {
     name: 'Косовелова бригада',
-    description: 'Формирана на 23 септември 1943 на Крас. Загинатите, исчезнатите и умрените од рани и командниот кадар на бригадата и баталјоните.',
+    description: 'Формирана на 23 септември 1943 на Крас. Загинатите, исчезнатите и починатите од рани и командниот кадар на бригадата и баталјоните.',
   },
   'eskadrile-novj': {
     name: '1-ва и 2-ра ескадрила НОВЈ',
@@ -1459,7 +1459,7 @@ const mk: Record<string, UnitText> = {
   },
   '5-srpska-brigada': {
     name: '5-та српска бригада',
-    description: 'Формирана на 14 јануари 1944 во Велика Плана кај Прокупље како 3-та јужноморавска бригада. Загинатите и умрените борци и раководители на бригадата.',
+    description: 'Формирана на 14 јануари 1944 во Велика Плана кај Прокупље како 3-та јужноморавска бригада. Загинатите и починатите борци и раководители на бригадата.',
   },
   'cacanski-odred': {
     name: 'Чачански партизански одред „Д-р Драгиша Мишовиќ“',
@@ -1475,52 +1475,52 @@ const mk: Record<string, UnitText> = {
   },
   '1-krajiska-brigada': {
     name: '1-ва краишка пролетерска ударна бригада',
-    description: 'Формирана на 21 мај 1942 во Ламовита кај Приједор. Загинатите, умрените и исчезнатите борци на бригадата.',
+    description: 'Формирана на 21 мај 1942 во Ламовита кај Приједор. Загинатите, починатите и исчезнатите борци на бригадата.',
   },
   'ostali-borci': {
-    name: 'Други борци',
+    name: 'Борци од други единици',
     description:
       'Борци од споменици, хроники на селата и зборници на народни херои чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-slovenija': {
-    name: 'Други борци – Словенија',
+    name: 'Борци од други единици – Словенија',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Словенија, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Словенија, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-hrvatska': {
-    name: 'Други борци – Хрватска',
+    name: 'Борци од други единици – Хрватска',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Хрватска, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Хрватска, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-bih': {
-    name: 'Други борци – Босна и Херцеговина',
+    name: 'Борци од други единици – Босна и Херцеговина',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Босна и Херцеговина, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Босна и Херцеговина, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-crna-gora': {
-    name: 'Други борци – Црна Гора',
+    name: 'Борци од други единици – Црна Гора',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Црна Гора, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Црна Гора, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-makedonija': {
-    name: 'Други борци – Македонија',
+    name: 'Борци од други единици – Македонија',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Македонија, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Македонија, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-srbija': {
-    name: 'Други борци – Србија',
+    name: 'Борци од други единици – Србија',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Србија без покраините, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Србија без покраините, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-kosovo': {
-    name: 'Други борци – Косово и Метохија',
+    name: 'Борци од други единици – Косово и Метохија',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Косово и Метохија, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Косово и Метохија, чија единица сè уште не е на сајтот.',
   },
   'ostali-borci-vojvodina': {
-    name: 'Други борци – Војводина',
+    name: 'Борци од други единици – Војводина',
     description:
-      'Загинати и умрени борци од пописот на жртвите на војната од 1964, од подрачјето на Војводина, чија единица сè уште не е на сајтот.',
+      'Загинати и починати борци од пописот на жртвите на војната од 1964, од подрачјето на Војводина, чија единица сè уште не е на сајтот.',
   },
 }
 
@@ -2237,47 +2237,47 @@ const en: Record<string, UnitText> = {
     description: 'Formed on 21 May 1942 at Lamovita near Prijedor. The brigade’s fallen, dead and missing fighters.',
   },
   'ostali-borci': {
-    name: 'Other fighters',
+    name: 'Fighters of other units',
     description:
       'Fighters from memorial books, village histories and the collections of People’s Heroes whose unit is not on the site yet.',
   },
   'ostali-borci-slovenija': {
-    name: 'Other fighters – Slovenia',
+    name: 'Fighters of other units – Slovenia',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Slovenia, whose unit is not on the site yet.',
   },
   'ostali-borci-hrvatska': {
-    name: 'Other fighters – Croatia',
+    name: 'Fighters of other units – Croatia',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Croatia, whose unit is not on the site yet.',
   },
   'ostali-borci-bih': {
-    name: 'Other fighters – Bosnia and Herzegovina',
+    name: 'Fighters of other units – Bosnia and Herzegovina',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Bosnia and Herzegovina, whose unit is not on the site yet.',
   },
   'ostali-borci-crna-gora': {
-    name: 'Other fighters – Montenegro',
+    name: 'Fighters of other units – Montenegro',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Montenegro, whose unit is not on the site yet.',
   },
   'ostali-borci-makedonija': {
-    name: 'Other fighters – Macedonia',
+    name: 'Fighters of other units – Macedonia',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Macedonia, whose unit is not on the site yet.',
   },
   'ostali-borci-srbija': {
-    name: 'Other fighters – Serbia',
+    name: 'Fighters of other units – Serbia',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Serbia without its provinces, whose unit is not on the site yet.',
   },
   'ostali-borci-kosovo': {
-    name: 'Other fighters – Kosovo and Metohija',
+    name: 'Fighters of other units – Kosovo and Metohija',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Kosovo and Metohija, whose unit is not on the site yet.',
   },
   'ostali-borci-vojvodina': {
-    name: 'Other fighters – Vojvodina',
+    name: 'Fighters of other units – Vojvodina',
     description:
       'Fighters killed or dead in the war, from the 1964 census of war victims in Vojvodina, whose unit is not on the site yet.',
   },

@@ -80,11 +80,12 @@ def process_brigade(json_path, brigade_code, config):
         # Normalize
         result = normalize_soldier(soldier, brigade_code)
 
-        # Extract birth info if not already present
+        # Extract birth info if not already present, a year a man could be born in: the Lovćenski odred's OCR reads
+        # "рођен 1915" as 1515 or 1977 (2026-10-28), and the year then comes from another of his entries below
         additional_info = result.get('additional_info', '')
         if additional_info and not result.get('birth_year'):
             dob, birth_year = extract_birth_info(additional_info)
-            if birth_year:
+            if birth_year and 1860 <= int(birth_year) <= 1935:
                 result['birth_year'] = birth_year
                 stats['birth_year_extracted'] += 1
         # else from another book's entry merged into the record (a book across units' is not read), a year a man

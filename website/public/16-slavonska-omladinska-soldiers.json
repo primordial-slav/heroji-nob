@@ -266,7 +266,7 @@
     "birth_place": "Sladulji",
     "death_type": "poginuo",
     "death_date": "25.02.1945",
-    "death_place": "kod Brodske Varoši",
+    "death_place": "Brodska Varoš",
     "rank": "borac"
   },
   {
@@ -1149,7 +1149,7 @@
     "fathers_name": "",
     "full_name": "Bernard Juraj",
     "additional_info": "rođen 1944. u Tornju, poginuo 5. studenog 1944.",
-    "birth_year": "1944",
+    "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 398.7,
     "pdf_x": 130.9,
@@ -1838,7 +1838,7 @@
     "birth_place": "Bistrica, Podravska Slatina",
     "death_type": "poginuo",
     "death_date": "25.02.1945",
-    "death_place": "u Brodskoj Varoši"
+    "death_place": "Brodska Varoš"
   },
   {
     "last_name": "Boškić",
@@ -4456,6 +4456,7 @@
     "birth_place": "Zagreb",
     "death_type": "umro",
     "rank": "pomoćnik komesara čete",
+    "death_date": "28.09.1944",
     "other_sources": [
       {
         "soldier_id": "9021004017",
@@ -4468,11 +4469,9 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
     "death_place": "Kod Pakraca"
   },
   {
@@ -7098,7 +7097,8 @@
     "pdf_x_end": 410.3,
     "birth_place": "Kutina",
     "death_type": "umro",
-    "death_place": "Zagreb"
+    "death_place": "Zagreb",
+    "death_date": "12.08.1945"
   },
   {
     "last_name": "Hajdinović",
@@ -9592,7 +9592,7 @@
     "birth_place": "Feričanci, Našice",
     "death_type": "poginuo",
     "death_date": "30.06.1943",
-    "death_place": "kod Levanjske Varoši"
+    "death_place": "Levanjska Varoš"
   },
   {
     "last_name": "Kadić",
@@ -15534,7 +15534,7 @@
     "fathers_name": "",
     "full_name": "Pejić Tomo",
     "additional_info": "rođen 1944. u Virovitici, poginuo 28. prosinca 1944.",
-    "birth_year": "1944",
+    "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 596.2,
     "pdf_x": 136.1,
@@ -16005,7 +16005,7 @@
     "pdf_x_end": 437.5,
     "death_type": "umro",
     "death_date": "15.07.1944",
-    "birth_place": "Selišta, Kutina"
+    "birth_place": "Selište, Kutina"
   },
   {
     "last_name": "Poer",
@@ -18343,7 +18343,7 @@
     "fathers_name": "",
     "full_name": "Solar Mitar",
     "additional_info": "rođen 1944. u Pčelicu, Virovitica, poginuo svibnja 1944. godine. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
-    "birth_year": "1944",
+    "birth_year": "",
     "pdf_page": 36,
     "pdf_y": 640.6,
     "pdf_x": 158.4,
@@ -21055,7 +21055,7 @@
     "fathers_name": "",
     "full_name": "Čulić Dane",
     "additional_info": "rođen 1944. u Subockoj, Pakrac, poginuo 23. veljače 1945. kod Boraka.",
-    "birth_year": "1944",
+    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 331.7,
     "pdf_x": 130.6,
@@ -21066,7 +21066,7 @@
     "birth_place": "Subocka, Pakrac",
     "death_type": "poginuo",
     "death_date": "23.02.1945",
-    "death_place": "Borci"
+    "death_place": "Borak"
   },
   {
     "last_name": "Čulić",
@@ -21706,14 +21706,11 @@
         "unit_file": "18-slavonska-soldiers.json"
       }
     ],
+    "death_date": "08.12.1944",
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
-      "death_place",
       "ethnicity"
-    ],
-    "death_date": "1943",
-    "death_place": "Pakrac"
+    ]
   },
   {
     "last_name": "Škorić",
@@ -22844,9 +22841,9 @@
     "pdf_x_end": 357.6
   },
   {
-    "last_name": "Iso",
+    "last_name": "",
     "middle_name": "",
-    "first_name": "",
+    "first_name": "Iso",
     "fathers_name": "",
     "full_name": "Iso",
     "additional_info": "Komandir čete; u knjizi: »ISO ... komandir 2. č. 1. bat.«.",
@@ -23247,11 +23244,11 @@
     "pdf_x_end": 383.2
   },
   {
-    "last_name": "KUPREgANIN",
+    "last_name": "Kuprešanin",
     "middle_name": "",
     "first_name": "Slavko",
     "fathers_name": "",
-    "full_name": "KUPREgANIN Slavko",
+    "full_name": "Kuprešanin Slavko",
     "additional_info": "Komandir čete.",
     "birth_year": "",
     "rank": "komandir čete",

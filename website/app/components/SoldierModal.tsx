@@ -4,7 +4,7 @@ import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isMuseum, isPoreklo, sourceTitle, unitByName } from '@/app/lib/records'
 import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
@@ -102,7 +102,7 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
     pageRef.current?.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
   }
   // An entry's line: the other unit, the book, its page, the name as printed there. A list published as a web
-  // page links to it; a book in the Poreklo library is only named, since only its members can open it.
+  // page links to it; a book whose scan is not on the site is only named.
   const entryLabel = (e: SoldierSource) => (
     <>
       {/* the other unit's name, unless the book's title already starts with it */}
@@ -345,10 +345,10 @@ export default function SoldierModal({ soldier, unitName, unitSoldiers, onOpen, 
 
             {!page && soldier.source_url && (
               <p className="modal-source-note">
-                {/* a book in the Poreklo library is named with its page, not linked: only its members can open it */}
+                {/* a book whose scan is not on the site is named with its page, not linked */}
                 {isPoreklo(soldier.source_url)
-                  ? t.record.noScanPoreklo(bookTitle(soldier, lang),soldier.source_page ?? null)
-                  : <RichText text={t.record.noScan}
+                  ? t.record.noScanBook(bookTitle(soldier, lang), soldier.source_page ?? null)
+                  : <RichText text={isMuseum(soldier.source_url) ? t.record.noScanMuseum(bookTitle(soldier, lang)) : t.record.noScan}
                       render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>} />}
               </p>
             )}

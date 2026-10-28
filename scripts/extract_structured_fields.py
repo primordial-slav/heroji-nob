@@ -36,6 +36,7 @@ import random
 import re
 import sys
 from collections import Counter
+from functools import lru_cache
 from itertools import product
 from pathlib import Path
 
@@ -46,6 +47,19 @@ from name_utils import BRIGADE_CONFIGS, OSTALI_CODES  # noqa: E402
 from cleanup_text_fields import live_json_files  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+@lru_cache(maxsize=1)
+def case_table() -> dict:
+    """data-extraction/places/case_forms.json, the forms read against their entries: 'forms' (a case -> its
+    nominative) and 'kept' (read and left as printed), which the vote's new endings give way to"""
+    try:
+        t = json.loads((ROOT / 'data-extraction' / 'places' / 'case_forms.json').read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        return {'forms': {}, 'kept': set()}
+    return {'forms': t.get('forms', {}), 'kept': set(t.get('kept', []))}
+
+
 FIELDS = ['birth_place', 'ethnicity', 'occupation', 'rank', 'unit_detail', 'death_type', 'death_date', 'death_place', 'party']
 # Units whose parser sets the fields itself and whose text is written from them, not printed: Druga proleterska's
 # list gives only names under a place and date ("poginuo 1. juna 1943, Tjentište (Sutjeska); ..."), and read again
@@ -282,6 +296,46 @@ _AGENT = (r'(?:Nijemci|Nije\.mci|Nemci|Njemci|Nijemac|Nemac|četnici|ustaše|ust
           r'Čerkezi|Arnauti|zelenokadrovci|(?:njemačk|nemačk|bugarsk|talijansk|italijansk|mađarsk|ustašk|četničk|domobransk)\w*'
           r'\s+(?:vojnici|vojska|patrola|jedinice|stražari|žandari))')
 AGENT_RE = re.compile(rf'^\s*,?\s*{_AGENT}(?:\s+(?:DM|Draže\s+Mihailovića))?(?:\s+i\s+{_AGENT})?\b')
+# A day of the war printed right before the death verb, nothing between but a comma, a full stop or "godine": "1. 4.
+# 1943. nestao sa položaja", "4. 4. 1945, Umro u Glavnoj voj. bolnici", "27. X. 1944 umrla"; read only where no date
+# follows the verb (2026-10-28, from the 05 session's list). Never one that belongs to another event in its stretch
+# of text, back to the comma, semicolon or date before it ("ranjen 6. 3. 1944, umro", "uhvaćen 27. 12. 1941, streljan",
+# "u NOB od 9. 9. 1943. Poginuo", "rođen 4. 4. 1925, poginuo"), the end of a range ("2.07—12.10.1944. Umro"), or a
+# death after the war ("20.10.1944, umro posle rata")
+PRE_DATE_RE = re.compile(rf'(?<![\d.—–-])(\d{{1,2}}\.\s?(?:\d{{1,2}}|[IVX]{{1,4}})\.?\s?194[1-5]|\d{{1,2}}\.?\s?(?:{MONTHS})\s194[1-5])'
+                         r'\.?\s*,?\s*(?:god(?:ine|\.)\s*)?$')
+# another event the date may belong to, in its stretch back to the comma, semicolon or date before it
+OTHER_EVENT_RE = re.compile(r'\b(?:(?:ranjen|ranjav|uhvać|uhvat|uhapš|uhaps|osuđ|osudi|zarobl|zarobi|internir|odveden|odvel|'
+                            r'deportov|demobil|upućen|prebačen|rođen|roden|stupi|doša|došl|preša|prešl|ujet|aretir|zaprt|'
+                            r'obole|razbole)\w*|rođ\.|rod\.|od|do|'
+                            r'u\s+NO[BV]\w*)(?![\w])', re.I)
+# a wound, an arrest or a capture anywhere in the sentence: "Ranjen kod Suvog Dola, kod Blaca, 16. juna 1944", unless
+# the date starts a clause of its own ("Interniran novembra 1943. ... i 19. januara 1944. streljan", "prenesen u
+# bolnicu u Valjevu, gde je 25. novembra 1944. podlegao ranama")
+WOUND_OR_ARREST_RE = re.compile(r'\b(?:ranjen|ranjav|uhvać|uhvat|uhapš|uhaps|zarobl|zarobi|internir|osuđ|osudi|odveden|odvel|'
+                                r'ujet|aretir|zaprt|obole|razbole)\w*',
+                                re.I)
+CLAUSE_OPENER_RE = re.compile(r'(?:\b(?:i|in|a|te|pa)|\b(?:gde|gdje|kada|kad|koji|koja)(?:\s+je)?|\bje\s+bil[ao]?)\s*$', re.I)
+
+
+def before_verb_date(before: str, after: str) -> str | None:
+    """before: the text up to the death verb; after: the text after it"""
+    m = PRE_DATE_RE.search(before)
+    if not m or re.match(r'\s*\(?(?:posle|poslije|nakon|po)\s+(?:rata|oslobođenja|osvoboditvi|vojni)', after, re.I):
+        return None
+    lead = before[:m.start()]
+    if re.search(r'\bizmeđu\b', lead[-45:]):
+        return None                                     # "između 11. XII 1944. i 8. I 1945. umro": a span, not a day
+    if CLAUSE_OPENER_RE.search(lead):
+        return m.group(1).strip()                       # "ujet in 17. decembra 1944 ustreljen": a clause of its own
+    dates = max((d.end() for d in DATE_RE.finditer(lead)), default=-1)
+    cut = max(lead.rfind(','), lead.rfind(';'), dates)
+    if OTHER_EVENT_RE.search(lead[cut + 1:]):
+        return None
+    sentence = max(lead.rfind(';') + 1, max((s.end() for s in re.finditer(rf'\.\s+(?=[{U}])', lead)), default=0))
+    if WOUND_OR_ARREST_RE.search(lead[sentence:]):
+        return None
+    return m.group(1).strip()
 # the enemy a battle was fought against, beside its place: "u borbi protiv Nijemaca i ustaša kod Garevca", "u borbi s
 # Nijemcima na Mikuljači", "protiv albanskih balista"
 _ENEMY = (r'(?:Nijem|Njem|Nem|četni|ustaš|domobran|Talijan|Italijan|Bugar|Mađar|neprijatelj|okupator|balist|SS|esesov|Čerkez|'
@@ -901,6 +955,7 @@ class Extractor:
         out = {}
         m = DEATH_RE.search(text)
         active = ACTIVE_DEATH_RE.search(text)
+        verb_at = None
         mesto = re.search(r'mesto smrti\s*:\s*([^,;.]+(?:\s\([^)]*\))?)', text, re.I)
         if active and (not m or active.start() < m.start()):
             verb = next(v for v in active.group('v1', 'v2', 'v3') if v).lower()
@@ -916,6 +971,7 @@ class Extractor:
             kw = m.group(1).lower()
             out['death_type'] = DEATH_KW[kw]
             rest = text[m.end():]
+            verb_at = m
         # "poginuo i sahranjen u Čazmi", "umro i sahranjen u Ruševu": the place he was buried is where he died;
         # "podlegao ranama u ...": the wounds are no place
         # the scan's years ("19'45", "19- 1. 1945"); "Poginula je na ...", "Poginuo (nestao) 3. januara 1945"
@@ -956,6 +1012,10 @@ class Extractor:
                 date = re.search(YEAR, date).group(0)                     # "Senja 2.9. IV 1945": the day is garbled, the year is not
             out['death_date'] = date
             clause = clause[:start] + ' ' + after
+        elif verb_at is not None:
+            pre = before_verb_date(text[:verb_at.start()], text[verb_at.end():])
+            if pre:
+                out['death_date'] = pre
         # "poginuo kao ranjenik u Centralnoj bolnici na Sutjesci": the words go, not the place
         clause = re.sub(r'\bkao\s+(?:teški\s+|teško\s+)?(?:ranjenik|ranjenica|bolesnik|bolesnica|ranjen[a-z]*)\b', ' ', clause)
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
@@ -1111,11 +1171,28 @@ class Extractor:
         ('pcu', 'bac'), ('pca', 'bac'), ('ocu', 'olac'), ('oca', 'olac'),          # "u Šapcu" = Šabac, "u Stocu" = Stolac
     ]
 
-    def _variants(self, word: str) -> list[str]:
+    # Endings the rules above lack (2026-10-27): a neuter in -e after a soft consonant ("u Užicu" Užice, "u Jajcu"
+    # Jajce, "na Tjentištu" Tjentište, "u Goraždu" Goražde), a dropped a ("u Čačku" Čačak, "u Ripnju" Ripanj, "kod
+    # Kaknja" Kakanj, "u Grblju" Grbalj, "u Metku" Medak) and Varoš ("kod Nove Varoši"). Not -ći to -ć: "Peći" is a
+    # village's own name too (near Ključ, Bosansko Grahovo), and so are the plurals "Vranići", "Drinići".
+    # The vote counts the genitives the records stored ("kod Užica", "kod Kaknja"), so without them "u Užicu" was Užica
+    # (87 against Užice's 580). A reading they give replaces one of the rules above only where the vote counts it twice
+    # as often ("u Križu" stays Križ, Križe 48 to 38)
+    _STRONG_RULES = [
+        ('cu', 'ce'), ('ću', 'će'), ('ču', 'če'), ('đu', 'đe'), ('šu', 'še'), ('štu', 'šte'), ('šću', 'šće'), ('ždu', 'žde'),
+        ('ku', 'ak'), ('tku', 'dak'), ('tka', 'dak'), ('nju', 'anj'), ('nja', 'anj'), ('lju', 'alj'), ('lja', 'alj'), ('oši', 'oš'),
+    ]
+    # Used only where no other rule finds a place, for a place the vote counts five times: a neuter in -e after
+    # another consonant ("u Velikom Laolu" Veliko Laole; "u Dunavu" stays Dunav, "u Mostu" Most) and a neuter plural
+    # ("u Pljevljima" Pljevlja, "u Koritima" Korita; "u Karlovcima" stays Karlovci, the vote's Karlovca being
+    # Karlovac's genitive, and "u Mravićima" Mravići)
+    _WEAK_RULES = [('u', 'e'), ('ima', 'a')]
+
+    def _variants(self, word: str, rules=None) -> list[str]:
         """The word and its nominatives by the rules, in the rules' order: _known keeps the first of two forms the
         corpus knows equally often ("u Jezdini": Jezdina before Jezdine), where a set's order changed from run to run"""
         out = {word: None}
-        for suf, rep in self._WORD_RULES:
+        for suf, rep in rules or self._WORD_RULES:
             if word.endswith(suf) and len(word) - len(suf) >= 2:
                 out.setdefault(word[:-len(suf)] + rep, None)
         return list(out)
@@ -1129,8 +1206,29 @@ class Extractor:
         n0 = self.places.get(phrase, 0)
         if n0 and not locative:
             return phrase                                                 # already a known nominative
+        old = self._vote(phrase, words, n0, locative, self._WORD_RULES)
+        ends = tuple(s for s, _ in self._STRONG_RULES + self._WEAK_RULES)
+        if not any(w.endswith(ends) for w in words):
+            return old
+        table = case_table()
+        if phrase in table['kept']:
+            return old                                                    # read against its entries and left as printed
+        plain = old is None or old == phrase
+        new = self._vote(phrase, words, n0, locative, self._WORD_RULES + self._STRONG_RULES)
+        if new != old and not (new and self.places.get(new, 0) >= 3
+                               and (plain or self.places.get(new, 0) >= 2 * self.places.get(old, 0))):
+            new = old
+        if new is None or new == phrase:
+            weak = self._vote(phrase, words, n0, locative, self._WORD_RULES + self._STRONG_RULES + self._WEAK_RULES)
+            if weak and weak != phrase and self.places.get(weak, 0) >= 5:
+                new = weak
+        if new != old and table['forms'].get(phrase, new) != new:
+            return old                                                    # the table reads it otherwise: "u Brocu" Brodac
+        return new
+
+    def _vote(self, phrase: str, words: list, n0: int, locative: bool, rules) -> str | None:
         best = None
-        for combo in product(*(self._variants(w) for w in words)):
+        for combo in product(*(self._variants(w, rules) for w in words)):
             cand = ' '.join(combo)
             n = self.places.get(cand, 0)
             if cand != phrase and n and (best is None or n > best[0]):
@@ -1614,7 +1712,11 @@ def main():
         filled, samples, touched = Counter(), [], 0
         for s in d:
             got = read_all(ex, s, code)
-            new = {k: v for k, v in got.items() if not s.get(k)}
+            # Ostali borci: a death the builder took from the census's or a column book's table (from_columns) yields
+            # to the man's own biography ("Strijeljana od četnika 1942." is streljan; "poginuo 9. juna 1943." the day)
+            cols = set(s.get('from_columns') or ())
+            new = {k: v for k, v in got.items() if not s.get(k) or (k in cols and v != s[k] and (
+                k != 'death_date' or len(re.findall(r'\d+|[a-zčćžšđ]{3,}', v)) >= len(re.findall(r'\d+|[a-zčćžšđ]{3,}', s[k]))))}
             if new:
                 touched += 1
                 filled.update(new.keys())

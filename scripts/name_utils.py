@@ -1962,21 +1962,28 @@ def extract_birth_info(additional_info):
     # Skip a leading alias clause: "zvani Maćo; 1923, ...", "ili Atanas; 3. 5. 1926, ...", "(Nikola); ..."
     info = re.sub(r'^(?:zvan[ai]?\b|ili\b|rođ\.|u jednom dokumentu|\()[^;]{0,60};\s*', '', info)
 
-    # Only look before death keywords
-    death_keywords = ['poginuo', 'poginula', 'padel', 'padla',
-                      'nestao', 'nestala', 'umro', 'umrla', 'umrl',
-                      'streljan', 'streljena']
-    first_death_pos = len(info)
-    for keyword in death_keywords:
-        pos = info.lower().find(keyword)
-        if pos != -1 and pos < first_death_pos:
-            first_death_pos = pos
+    # Only look before death keywords, as whole words: a list's title is no death ("Poginuli, strijeljani i umrli
+    # borci NOR-a ...: rođen 8. oktobra 1921": "umrl" stood inside "umrli", 2026-10-28)
+    m = re.search(r'\b(?:poginuo|poginula|padel|padla|nestao|nestala|umro|umrla|umrl|streljan|streljana|streljena)\b',
+                  info, re.I)
+    first_death_pos = m.start() if m else len(info)
 
     search_text = info[:first_death_pos]
+
+    def death_date_first(match):
+        """A year of the war printed first with the death verb right after it, nothing between but a comma, a full
+        stop or "godine" ("20.10.1944, poginuo", "1944, poginuo"): the date of death, no birth (2026-10-28, the 05
+        session's list); "1922, poginuo 1943" keeps its birth year"""
+        year = re.search(r'\d{4}', match.group(1)).group(0)
+        rest = search_text[match.end(1):]
+        return (first_death_pos < len(info) and 1941 <= int(year) <= 1945
+                and re.fullmatch(r'[\s.,;:-]*(?:god(?:ine|\.)?[\s.,]*)?', rest) is not None)
 
     # Pattern 1: Full date DD. MM. YYYY
     match = re.match(r'^(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})', search_text)
     if match:
+        if death_date_first(match):
+            return '', ''
         date_str = match.group(1)
         year_match = re.search(r'\d{4}', date_str)
         year = year_match.group(0) if year_match else ''
@@ -1991,6 +1998,8 @@ def extract_birth_info(additional_info):
     # Pattern 3: Year with comma YYYY, Location (most common)
     match = re.match(r'^(\d{4}),', search_text)
     if match:
+        if death_date_first(match):
+            return '', ''
         year = match.group(1)
         return year, year
 

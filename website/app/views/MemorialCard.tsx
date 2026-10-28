@@ -8,7 +8,7 @@ import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import {
-  RECORD_PARAM, citation, entriesOf, findRecord, hasPage, lifeYears, recordPath, sourceTitle,
+  RECORD_PARAM, citation, entriesOf, findRecord, hasPage, isMuseum, isPoreklo, lifeYears, recordPath, sourceTitle,
 } from '@/app/lib/records'
 import { recordFacts } from '@/app/lib/recordFacts'
 import { fullRecord, loadKinList } from '@/app/lib/searchIndex'
@@ -135,7 +135,11 @@ export default function MemorialCard() {
             {pages.length === 0 && (
               <figure>
                 <blockquote className="memorial-text">{soldier.additional_info}</blockquote>
-                <figcaption>{sourceTitle(soldier)}, {t.card.webText}</figcaption>
+                {/* where the text stands: a web page of znaci.org, a book's page whose scan is not on the site, the
+                    census's PDF on the Museum of Genocide Victims' site */}
+                <figcaption>{isPoreklo(soldier.source_url)
+                  ? [sourceTitle(soldier), soldier.source_page != null && t.record.page(soldier.source_page)].filter(Boolean).join(', ')
+                  : `${sourceTitle(soldier)}, ${isMuseum(soldier.source_url) ? t.card.museumText : t.card.webText}`}</figcaption>
               </figure>
             )}
           </section>

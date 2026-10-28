@@ -15,6 +15,7 @@ export interface SoldierSource {
   source_url?: string
   source_page?: number    // the book's page, for a source without a scan on the site (the Poreklo library's books)
   unit_file?: string      // set when the entry is another unit's: that unit's data file (the soldier served in both)
+  ref_book?: string       // set when the entry is a book across units' (a hero book, a regional list): its id
 }
 
 // A dated step of a soldier's life, read from his entries (scripts/extract_life_events.py): born, joined SKOJ or the

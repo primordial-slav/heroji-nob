@@ -28,6 +28,10 @@ export const en: Messages = {
   nav: { label: 'Main navigation', home: 'Home', units: 'Units', gallery: 'Gallery', sources: 'Sources' },
   theme: { label: 'Theme', light: 'Light theme', dark: 'Dark theme', system: 'Same as system' },
   language: { label: 'Language' },
+  footer: {
+    contact: 'Contact',
+    records: 'You can also send a mistake in a record, or something you know about a fighter, from the record itself.',
+  },
   notFound: {
     title: 'This page doesn’t exist',
     text: 'The address may be old or mistyped. Look for a Partisan by name on the home page.',
@@ -63,7 +67,6 @@ export const en: Messages = {
       date: (d: number, m: number, y: number) =>
         `${d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
           'November', 'December'][m - 1]} ${y}`,
-      more: 'Show older',
     },
     otherUnits: 'Other units',
     noUnit: 'Without a unit',
@@ -177,8 +180,8 @@ export const en: Messages = {
     loadingPage: 'Loading the page…',
     source: 'Source',
     noScan: 'There is no scanned book for this roll: it was published as text on [znaci.org].',
-    noScanPoreklo: (title: string, page: number | null) =>
-      `${title}${page != null ? `, page ${page}` : ''}. The book is scanned in the Poreklo digital library, which only its members can open.`,
+    noScanMuseum: (title: string) => `${title}. The census is published as a PDF on the website of the [Museum of Genocide Victims].`,
+    noScanBook: (title: string, page: number | null) => `${title}${page != null ? `, page ${page}` : ''}.`,
     steps: 'Neighbouring records on the roll',
     previous: 'Previous',
     next: 'Next',
@@ -298,6 +301,7 @@ export const en: Messages = {
     preparing: 'Preparing the entry from the book…',
     entry: 'The entry in the book',
     webText: 'text published on znaci.org',
+    museumText: 'the census on the Museum of Genocide Victims website',
   },
 
   unit: {
@@ -346,9 +350,9 @@ export const en: Messages = {
     intro:
       'The details of each Partisan come from brigade histories and from rolls published by the Military History Institute in Belgrade. You can read and download the original PDFs here.',
     openPdf: 'Open PDF',
+    fullDescription: 'Full description',
     download: 'Download',
     openList: 'Open the roll',
-    inPoreklo: 'In the Poreklo digital library, for its members only',
     medalsTitle: 'Images of the decorations',
     hero:
       'Order of the People’s Hero: photograph by [Pinki, Wikimedia Commons], licence [CC BY-SA 4.0]. The cut-out and the drawing of the order on this site were made from that photograph and are published under the same licence.',
