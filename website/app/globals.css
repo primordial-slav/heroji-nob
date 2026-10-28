@@ -3733,53 +3733,77 @@ span.rail-face {
   color: var(--ink);
 }
 
-/* Each print in a thin embroidered frame, one of six in turn (public/vez/okvir-<n>.svg, from
-   scripts/make_vez_frames.py): the file is a mask over the red ink, so the thread follows the theme. Frame 4 has a
-   second thread in Zmijanje's deep blue. The frame reaches 14 px past a 104 x 138.7 px print, as a share of it, so
-   it scales with the print. */
+/* The embroidered frames (lib/vez.ts, public/vez/<n>.svg from scripts/make_vez_frames.py): each thread of a frame
+   is a mask over its ink, so the colours follow the theme; a frame has one thread or two. It reaches 14 px past a
+   104 x 138.7 px print, as a share of it, so it scales with the print. */
 :root {
   --vez-blue: #1f2d5a;
+  --vez-gold: #8c6a22;
+  --vez-green: #2f5d3f;
 }
 
 [data-theme="dark"] {
   --vez-blue: #97a8dc;
+  --vez-gold: #dcc07a;
+  --vez-green: #8fc29d;
 }
 
-.rail-print {
+.vez {
   position: relative;
-  display: block;
 }
 
-.rail-print::before,
-.rail-print[data-okvir="4"]::after {
+.vez::before,
+.vez[data-vez-two]::after {
   content: "";
   position: absolute;
-  inset: -10.096% -13.462%;
-  background-color: var(--red-ink);
-  -webkit-mask: var(--okvir) 0 0 / 100% 100% no-repeat;
-  mask: var(--okvir) 0 0 / 100% 100% no-repeat;
+  inset: var(--vez-inset, -10.096% -13.462%);
+  background-color: var(--vez-ink);
+  -webkit-mask: var(--vez) 0 0 / 100% 100% no-repeat;
+  mask: var(--vez) 0 0 / 100% 100% no-repeat;
   opacity: 0.8;
   pointer-events: none;
   transition: opacity 0.2s ease-out;
 }
 
-.rail-print[data-okvir="1"] { --okvir: url("/vez/okvir-1.svg"); }
-.rail-print[data-okvir="2"] { --okvir: url("/vez/okvir-2.svg"); }
-.rail-print[data-okvir="3"] { --okvir: url("/vez/okvir-3.svg"); }
-.rail-print[data-okvir="4"] { --okvir: url("/vez/okvir-4.svg"); }
-.rail-print[data-okvir="5"] { --okvir: url("/vez/okvir-5.svg"); }
-.rail-print[data-okvir="6"] { --okvir: url("/vez/okvir-6.svg"); }
-
-.rail-print[data-okvir="4"]::after {
-  --okvir: url("/vez/okvir-4-plavo.svg");
-  background-color: var(--vez-blue);
+.vez[data-vez-two]::after {
+  background-color: var(--vez-ink-2);
+  -webkit-mask-image: var(--vez-2);
+  mask-image: var(--vez-2);
 }
 
-.rail-face:hover .rail-print::before,
-.rail-face:hover .rail-print::after,
-.rail-face:focus-visible .rail-print::before,
-.rail-face:focus-visible .rail-print::after {
+.rail-print {
+  display: block;
+}
+
+.rail-face:hover .vez::before,
+.rail-face:hover .vez::after,
+.rail-face:focus-visible .vez::before,
+.rail-face:focus-visible .vez::after {
   opacity: 1;
+}
+
+/* In the record the framed print sits on a paper mount, so the thread shows where the print hangs over the unit's
+   photograph; the frame goes round the print's own paper edge (its 3 px border and the rule round it) */
+.modal-portrait.vez {
+  overflow: visible;
+  --vez-inset: calc(-10.096% - 4px) calc(-13.462% - 4px);
+  box-shadow: 0 0 0 15px var(--ground), 0 0 0 16px var(--rule-strong);
+}
+
+.modal-head:has(.modal-portrait.vez) {
+  column-gap: calc(var(--space-4) + 1rem);
+}
+
+@media (max-width: 640px) {
+  .modal-head:has(.modal-portrait.vez) {
+    grid-template-columns: 4.25rem minmax(0, 1fr);
+    column-gap: calc(var(--space-3) + 0.75rem);
+  }
+
+  .modal-portrait.vez {
+    margin-left: 0.5rem;
+    box-shadow: 0 0 0 12px var(--ground), 0 0 0 13px var(--rule-strong);
+  }
 }
 
 /* ========== The record: three facts, the life line beside the book's page, the folds at the end ========== */
