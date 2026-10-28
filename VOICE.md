@@ -69,6 +69,32 @@ Say what happened and what to do next, without blame and without apology:
 
 An empty result suggests the next search ("Pokušajte samo prezime…"), and explains a habit of the books when it is the likely cause ("očevo ime u genitivu, na primer „Milorada“ umesto „Milorad“").
 
+## Šta je novo
+
+The home page's news (`website/app/data/news.ts`) tells a reader what changed on the site, in four languages (the Cyrillic is made from the Latin). Each item says **what we did, then what it means for the reader**, in a sentence or two, the way a person tells a friend, not the way a log records a change:
+
+> Njih 710 već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga.
+
+not "710 pridruženo zapisima koji već postoje". Rules:
+
+- First person plural for what we did: "Dodali smo…", "Pročitali smo ih ponovo…". A plain past or "sada" for the result: "Sada je vraćen", "sada su zajedno".
+- Every sentence has a verb. No telegraph ("Prva proleterska brigada: dopunski spisak…"), no noun chains ("Mesta rođenja bez reči koje su im se pridružile…").
+- Say why when the reader would ask: "Spiskovi iz 1983. ne kažu ko je bio borac, a ko je pomagao pokretu, pa su ti ljudi označeni kao učesnici."
+- The site's words, not ours: no "zapis pridružen", "referenca", "unos", "ažurirano"; the reader knows a fighter, a book and his record ("u njegovom zapisu").
+- One number that matters, rounded ("oko 7.900"); not every count the work produced.
+- The same facts in all four languages, each written in its own way (see below), not translated sentence by sentence.
+
+Models: the Slovene, Macedonian and English rows come from how real sites announce new content (RTV Slovenija on the Fran dictionary portal, 2023; Nezavisen vesnik on MANU's portal of the Macedonian language, 2025; the CWGC on its casualty database); the Serbo-Croatian row is ours.
+
+| | We added | It now has / contains | Grew by, enriched | Available from |
+|---|---|---|---|---|
+| sr | Dodali smo… | sada u njegovom zapisu stoji… | bogatiji je za… | dostupno je od… |
+| sl | Dodali smo… / Na stran smo dodali… | zdaj je v njegovem zapisu… | je bogatejši za skoraj 500… | vse spremembe so dostopne od… |
+| mk | Додадовме… / Додадени се… | сега во неговиот запис има… | базата континуирано се збогатува | од денеска се достапни… |
+| en | We have added… | their records now show… | some 870 more names | now available on… |
+
+The Izvori page's sentence for a book across units follows the same rule: "Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima." (`i18n/sources.ts` has it in the other languages; a new book uses it as it stands.)
+
 ## Other languages
 
 Each language is written for its own readers, not translated from Serbo-Croatian word for word: the text a Slovene, Macedonian or English writer would put on such a page, in that language's words for the war, its grammar and typography. Same rules as above: plain, short, calm, polite to the visitor, no pathos, no exclamation marks. Where a sentence only makes sense in Serbo-Croatian, it is rewritten, not carried over.
@@ -89,7 +115,8 @@ Search examples on the home page suit each audience (Slovene names and places fo
 - Vikanje: "Poskusite samo s priimkom", "Preverite internetno povezavo".
 - The Slovene words for the partisan war: borec, borci; padli, umrli, pogrešani; soborci, rojaki; enota, seznam, zapis, knjiga.
 - The dual: 2 borca, 2 leti; 3 borci, 5 borcev; 101 borec (by the last two digits).
-- Quotes »…«; dates without a full stop after the year: "8. julija 1942"; thousands with a dot: 108.150.
+- Quotes »…« everywhere, in running text and book titles too (a unit name's quotes are put in by `quoteMarks`, so it keeps straight ones); never „…“. Dates without a full stop after the year: "8. julija 1942"; thousands with a dot: 108.150.
+- Soldiers who fell are "padli" ("padel v boju"); "poginiti" is any violent death, accidents included, so the site doesn't use it for them.
 - Three dots apart from a whole word: "Nalaganje …".
 - Unit names as Slovene says them: Prva liška proletarska brigada »Marko Orešković«, 5. krajiška (kozaraška) udarna brigada.
 
@@ -98,7 +125,10 @@ Search examples on the home page suit each audience (Slovene names and places fo
 - Cyrillic, with the polite plural: "Обидете се само со презимето", "Проверете ја интернет-врската".
 - The definite article and the doubled object where Macedonian has them ("проверете ја врската", "го видите списокот").
 - Words: борец, борци; загинати, починати, исчезнати; соборци, земјаци; единица, список, запис, книга.
-- Ordinals as Macedonian writes them: 13-та бригада, 1-ви баталјон, 2-ра чета. Dates without a full stop: "8 јули 1942". Quotes „…“; thousands with a dot.
+- Ordinals as Macedonian writes them, everywhere, unit names and running text alike: 13-та бригада, 1-ви баталјон, 2-ра чета, 7-ма, 8-ма, 9-ти корпус, "од 3-та, 4-та и 5-та далматинска бригада" (never the Serbian "3. бригада"; `mkOrdinal` in `messages/mk.ts`). Dates without a full stop: "8 јули 1942". Quotes „…“; thousands with a dot.
+- "Починати" for those who died, as the filters say; "умрени" is the civil registry's word.
+- The medal with its article, as Macedonian writes it: "Носител на Партизанската споменица 1941", "носителите на Партизанската споменица".
+- An imperative before its object ("Побарајте го борецот…"), not the object first ("Борецот побарајте го…").
 - Names from the books stay in the Latin the books print; the site does not transliterate them.
 
 ### English

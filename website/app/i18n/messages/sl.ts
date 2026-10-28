@@ -102,7 +102,7 @@ export const sl: Messages = {
     similar: (x: number, more: boolean) =>
       `${more ? 'še ' : ''}${n(x)} ${plural('sl', x, { one: 'podoben zapis', two: 'podobna zapisa', few: 'podobni zapisi', other: 'podobnih zapisov' })}`,
     similarTitle: 'Podobni zapisi',
-    similarNote: 'Ime ali kraj, zapisan nekoliko drugače, ali brez katere od iskanih besed.',
+    similarNote: 'Ime ali kraj je zapisan nekoliko drugače ali pa manjka katera od iskanih besed.',
   },
 
   onThisDay: {
@@ -320,8 +320,8 @@ export const sl: Messages = {
     allYears: 'Vsa',
     find: 'Ime enote',
     partOf: 'V sestavi',
-    none: (q: string) => `Nobena enota ne ustreza iskanju „${q}“`,
-    noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer „lička“ ali „13.“.',
+    none: (q: string) => `Nobena enota ne ustreza iskanju »${q}«`,
+    noneText: 'Poskusite z delom imena: številko, krajem ali imenom, na primer »liška« ali »13.«.',
     kinds: 'Vrsta enote',
     kind: { brigada: 'Brigade', divizija: 'Divizije', odred: 'Odredi', ostalo: 'Druge' },
     lands: 'Republika',
@@ -343,7 +343,7 @@ export const sl: Messages = {
     metaDescription: 'Knjige, iz katerih so seznami borcev, s skenom vsake knjige.',
     title: 'Izvirni dokumenti',
     intro:
-      'Podatki o borcih so zbrani iz monografij brigad in seznamov borcev, ki jih je izdal Vojnozgodovinski inštitut v Beogradu. Tu si lahko izvirne dokumente PDF ogledate in jih prenesete.',
+      'Podatki o borcih so zbrani iz monografij brigad in seznamov borcev, ki jih je izdal Vojnozgodovinski inštitut v Beogradu. Tu si lahko ogledate in prenesete izvirne dokumente PDF.',
     openPdf: 'Odpri PDF',
     fullDescription: 'Cel opis',
     download: 'Prenesi',
@@ -356,7 +356,7 @@ export const sl: Messages = {
       'Partizanska spomenica 1941: slika iz registra državnih simbolov Svetovne organizacije za intelektualno lastnino (WIPO), [javna domena].',
     placesTitle: 'Kraji',
     places:
-      'Kraji rojstva in smrti so prepoznani po zbirki zemljepisnih imen [GeoNames], licenca [CC BY 4.0]. Po njej so v drevesu »Soborci in rojaki« skupaj borci iz iste vasi, kakor koli jo pišejo knjige, kraj, ki je v knjigi v sklonu (»u Užicu«), pa je tu v imenovalniku.',
+      'Kraje rojstva in smrti smo prepoznali s pomočjo zbirke zemljepisnih imen [GeoNames], licenca [CC BY 4.0]. Zato so v drevesu »Soborci in rojaki« borci iz iste vasi skupaj, tudi če knjige vas pišejo različno, kraj, ki ga knjiga navaja v sklonu (»u Užicu«), pa je tu zapisan v imenovalniku.',
     placesLicense: 'https://creativecommons.org/licenses/by/4.0/deed.sl',
   },
 
