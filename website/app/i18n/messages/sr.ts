@@ -22,6 +22,11 @@ export const sr = {
   nav: { label: 'Glavna navigacija', home: 'Početna', units: 'Jedinice', gallery: 'Galerija', sources: 'Izvori' },
   theme: { label: 'Tema', light: 'Svetla tema', dark: 'Tamna tema', system: 'Sistemska tema' },
   language: { label: 'Jezik' },
+  /** The foot of every page: where to write (the sources are named on Izvori alone) */
+  footer: {
+    contact: 'Kontakt',
+    records: 'Grešku u zapisu ili nešto što znate o borcu možete poslati i iz samog zapisa.',
+  },
   notFound: {
     title: 'Ova strana ne postoji',
     text: 'Adresa je možda stara ili pogrešno upisana. Borca potražite po imenu na početnoj strani.',

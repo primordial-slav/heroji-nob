@@ -28,6 +28,10 @@ export const en: Messages = {
   nav: { label: 'Main navigation', home: 'Home', units: 'Units', gallery: 'Gallery', sources: 'Sources' },
   theme: { label: 'Theme', light: 'Light theme', dark: 'Dark theme', system: 'Same as system' },
   language: { label: 'Language' },
+  footer: {
+    contact: 'Contact',
+    records: 'You can also send a mistake in a record, or something you know about a fighter, from the record itself.',
+  },
   notFound: {
     title: 'This page doesn’t exist',
     text: 'The address may be old or mistyped. Look for a Partisan by name on the home page.',

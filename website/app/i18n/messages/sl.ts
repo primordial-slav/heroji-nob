@@ -26,6 +26,10 @@ export const sl: Messages = {
   nav: { label: 'Glavna navigacija', home: 'Domov', units: 'Enote', gallery: 'Galerija', sources: 'Viri' },
   theme: { label: 'Videz', light: 'Svetla tema', dark: 'Temna tema', system: 'Kot v sistemu' },
   language: { label: 'Jezik' },
+  footer: {
+    contact: 'Kontakt',
+    records: 'Napako v zapisu ali kaj, kar veste o borcu, lahko pošljete tudi iz samega zapisa.',
+  },
   notFound: {
     title: 'Te strani ni',
     text: 'Naslov je morda star ali napačno vpisan. Borca poiščite po imenu na začetni strani.',
