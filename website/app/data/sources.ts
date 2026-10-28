@@ -2312,7 +2312,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/spomenica-crnogorskim-antifasistima.pdf',
     thumbnail: '/images/pdf-thumbs/spomenica-crnogorskim-antifasistima.jpg',
     brigadeName: '',
-    description: 'Spisak crnogorskih antifašista poginulih i umrlih 1941–1945, po opštinama, u tabeli: ime, ime oca, godina i mesto rođenja, godina smrti i mesto pogibije. Svi koje knjiga navodi vode se kao partizani: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, a ostali su među ostalim borcima.'
+    description: 'Spisak crnogorskih antifašista poginulih i umrlih 1941–1945, po opštinama, u tabeli: ime, ime oca, godina i mesto rođenja, godina smrti i mesto pogibije. Svi koje knjiga navodi vode se kao partizani. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'moste-polje-spomenica-1941',
@@ -2537,7 +2537,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/15-brigada-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/15-brigada-stabi.jpg',
     brigadeName: '',
-    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba 15. slovenačke brigade i komandanti i komesari njenih bataljona (str. 447–450), svaki s danima kad je bio na dužnosti i, gde je dužnost tako završio, da je ranjen, oboleo ili poginuo. Brigada nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
+    description: 'Komandanti, politički komesari, njihovi zamenici i načelnici štaba 15. slovenačke brigade i komandanti i komesari njenih bataljona (str. 447–450), svaki s danima kad je bio na dužnosti i, gde je dužnost tako završio, da je ranjen, oboleo ili poginuo. Brigada nije na sajtu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: '15-divizija-stabi',
@@ -2546,7 +2546,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/15-divizija-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/15-divizija-stabi.jpg',
     brigadeName: '',
-    description: 'Komandni sastav 15. divizije NOV i PO Slovenije (str. 583–584): komandanti, politički komesari, njihovi zamenici i pomoćnici i načelnici štaba, svaki s danima kad je bio na dužnosti. Divizija nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
+    description: 'Komandni sastav 15. divizije NOV i PO Slovenije (str. 583–584): komandanti, politički komesari, njihovi zamenici i pomoćnici i načelnici štaba, svaki s danima kad je bio na dužnosti. Divizija nije na sajtu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'jb-odred-stabi',
@@ -2555,7 +2555,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/jb-odred-stabi.pdf',
     thumbnail: '/images/pdf-thumbs/jb-odred-stabi.jpg',
     brigadeName: '',
-    description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
+    description: 'Štabovi Jeseničko-bohinjskog odreda, njegova tri bataljona i školskog logora, avgust 1944 – maj 1945 (str. 354–356): komandanti, politički komesari, njihovi pomoćnici i zamenici i načelnik štaba, svaki s danima kad je bio na dužnosti. Odred nije na sajtu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'banijski-odredi-kadar',
@@ -2564,7 +2564,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/banijski-odredi-kadar.pdf',
     thumbnail: '/images/pdf-thumbs/banijski-odredi-kadar.jpg',
     brigadeName: '',
-    description: 'Starešine banijskih partizanskih odreda 1941–1945 (str. 372–378): malih odreda i seoskih grupa boraca 1941, Banijskog partizanskog odreda i njegovih bataljona, udarnih bataljona, partizanskih četa i dva odreda Banije 1944, po dužnostima. Odredi nisu na sajtu: zapis iz knjige dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on; ostali su među Borcima drugih jedinica.'
+    description: 'Starešine banijskih partizanskih odreda 1941–1945 (str. 372–378): malih odreda i seoskih grupa boraca 1941, Banijskog partizanskog odreda i njegovih bataljona, udarnih bataljona, partizanskih četa i dva odreda Banije 1944, po dužnostima. Odredi nisu na sajtu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'letalci-prekomorci-kader',
@@ -2618,7 +2618,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/u-rovovima-srema-poginuli.pdf',
     thumbnail: '/images/pdf-thumbs/u-rovovima-srema-poginuli.jpg',
     brigadeName: '',
-    description: 'Spisak boraca poginulih na Sremskom frontu (str. 230–267), po brigadama i po mestu gde su pali, samo imena, ponekad s dužnošću. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, po imenu, brigadi i mestu pogibije.'
+    description: 'Spisak boraca poginulih na Sremskom frontu (str. 230–267), po brigadama i po mestu gde su pali, samo imena, ponekad s dužnošću. Knjiga nije vezana za jednu jedinicu. Gde po imenu, brigadi i mestu pogibije sigurno znamo da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu.'
   },
   {
     id: 'sremski-front-poginuli',
@@ -2627,7 +2627,7 @@ export const sources: PdfSource[] = [
     pdfPath: '/pdfs/sremski-front-poginuli.pdf',
     thumbnail: '/images/pdf-thumbs/sremski-front-poginuli.jpg',
     brigadeName: '',
-    description: 'Spiskovi boraca poginulih na Sremskom frontu od oktobra 1944. do aprila 1945, po divizijama i brigadama, svaki posle kratke istorije jedinice: samo imena, ponekad s očevim inicijalom. Knjiga ne pripada jednoj jedinici: zapis iz nje dodat je zapisu svakog borca koji je na sajtu i za koga se pouzdano zna da je to on, po imenu, brigadi i vremenu pogibije. Spiskovi palih crvenoarmejaca s kraja knjige nisu uneti.'
+    description: 'Spiskovi boraca poginulih na Sremskom frontu od oktobra 1944. do aprila 1945, po divizijama i brigadama, svaki posle kratke istorije jedinice: samo imena, ponekad s očevim inicijalom. Knjiga nije vezana za jednu jedinicu. Gde po imenu, brigadi i vremenu pogibije sigurno znamo da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Spiskovi palih crvenoarmejaca s kraja knjige nisu uneti.'
   },
   {
     id: '1-krajiska',
