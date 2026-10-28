@@ -1619,6 +1619,14 @@ IMOTSKA = [
 ]
 IMOTSKA_CREDIT = 'Nedjeljko Kujundžić (ur.), Imotska krajina u NOB-u 1941–1945.'
 
+PRVA_LICKA = [
+    # the brigade's monograph on the site (prva-licka-proleterska.pdf), its photo plates: a man of a group where the caption says
+    # which and the record agrees on more than the name (2026-10-28; the other plates' captions give a name alone, or the print
+    # is too dark). Record, page in the site's PDF, the man's box, why
+    ('0002003756', 200, (343.0, 515.0, 398.0, 588.0), '"Rade Krajnović Krajina (kleči) s Pajicom Pavkovićem i Ninom Prijićem": the one kneeling; the record: zvani Krajina'),
+]
+PRVA_LICKA_CREDIT = 'Prva lička proleterska brigada „Marko Orešković“'
+
 HEROES_1982 = [
     # Petar Kačavenda, Narodni heroji Jugoslavije (Beograd 1982, two volumes; znaci 00003/977 A-M and 978 N-Ž, PDF page =
     # the book's page + 4): the portrait the book prints in each hero's entry, an entry the record holds as its
@@ -2366,7 +2374,8 @@ def main():
             ('krizani-v-boju-za-svobodo.pdf', KRIZANI_CREDIT, 'https://znaci.org/00003/720.pdf#page={}', [(r[0], r[1] + 77, r[1], r[2]) for r in KRIZANI]),
             ('vinodolska-selca.pdf', VINODOLSKA_CREDIT, 'https://znaci.org/00003/793.pdf#page={}', [(r[0], r[1] + 709, r[1], r[2]) for r in VINODOLSKA]),
             ('ljubljanska-brigada.pdf', LJUBLJANSKA_CREDIT, '/pdfs/ljubljanska-brigada.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in LJUBLJANSKA]),
-            ('imotska-krajina-pali-borci.pdf', IMOTSKA_CREDIT, '/pdfs/imotska-krajina-pali-borci.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in IMOTSKA])):
+            ('imotska-krajina-pali-borci.pdf', IMOTSKA_CREDIT, '/pdfs/imotska-krajina-pali-borci.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in IMOTSKA]),
+            ('prva-licka-proleterska.pdf', PRVA_LICKA_CREDIT, '/pdfs/prva-licka-proleterska.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in PRVA_LICKA])):
         doc = fitz.open(PUBLIC / 'pdfs' / pdf)
         n = 0
         for sid, book_page, page, box in rows:
@@ -2410,7 +2419,7 @@ def main():
     print(f'Commons: {len(COMMONS)} portraits')
     # Portraits this script doesn't make (the Proleterski bataljon Bosanske krajine's 180, cut beside each bio when
     # its unit came to the site) stay as they are: an entry whose credit is none of this script's sources
-    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, VINODOLSKA_CREDIT, LJUBLJANSKA_CREDIT, IMOTSKA_CREDIT, HEROES_1982_CREDIT}
+    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, VINODOLSKA_CREDIT, LJUBLJANSKA_CREDIT, IMOTSKA_CREDIT, PRVA_LICKA_CREDIT, HEROES_1982_CREDIT}
     old = json.loads(INDEX.read_text(encoding='utf-8')) if INDEX.exists() else {}
     kept = {sid: e for sid, e in old.items() if sid not in index and e['c'] not in own
             and not e['c'].startswith(('znaci.org, br.', 'Wikimedia Commons')) and 'Wikimedia Commons' not in e['c']}
