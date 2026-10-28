@@ -3122,7 +3122,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00001755',
     thumbnail: '/images/pdf-thumbs/rogatica.jpg',
     brigadeName: '',
-    description: 'Monografija Rogatice (Sarajevo 2009): „Istaknuti prvoborci Narodnooslobodilačkog rata” (str. 235–254), 48 boraca iz rogatičkog kraja, svaki sa biografijom. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima.'
+    description: 'Monografija Rogatice (Sarajevo 2009): „Istaknuti prvoborci Narodnooslobodilačkog rata” (str. 235–254), 48 boraca iz rogatičkog kraja, svaki sa biografijom. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'grahovo-podjele',
@@ -3131,7 +3131,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009010',
     thumbnail: '/images/pdf-thumbs/grahovo-podjele.jpg',
     brigadeName: '',
-    description: 'Prilozi knjige o Grahovu kod Nikšića: partizanski pozadinski radnici ubijeni i streljani od odlaska partizana u Bosnu 1942. do njihovog povratka 1943. (str. 237–238) i Grahovljani nosioci Partizanske spomenice 1941. (str. 252–255). Spisak četnika poginulih u ratu iz iste knjige nije unet. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima.'
+    description: 'Prilozi knjige o Grahovu kod Nikšića: partizanski pozadinski radnici ubijeni i streljani od odlaska partizana u Bosnu 1942. do njihovog povratka 1943. (str. 237–238) i Grahovljani nosioci Partizanske spomenice 1941. (str. 252–255). Spisak četnika poginulih u ratu iz iste knjige nije unet. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'sutorina',
@@ -3140,6 +3140,6 @@ export const sources: PdfSource[] = [
     pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589',
     thumbnail: '/images/pdf-thumbs/sutorina.jpg',
     brigadeName: '',
-    description: 'Prilozi hronike Sutorine kod Herceg Novog: Sutorinska partizanska četa, njena komanda i četiri voda po selima, sa godinom rođenja i dužnošću (str. 405–409), pali borci NOR-a 1941–1945. (str. 410–414) i Sutorani nosioci Partizanske spomenice 1941, sa biografijom (str. 416–418). Spiskovi žrtava terora, poginulih u ratu 1991–1995. i dobrovoljaca ranijih ratova iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Ostalim borcima.'
+    description: 'Prilozi hronike Sutorine kod Herceg Novog: Sutorinska partizanska četa, njena komanda i četiri voda po selima, sa godinom rođenja i dužnošću (str. 405–409), pali borci NOR-a 1941–1945. (str. 410–414) i Sutorani nosioci Partizanske spomenice 1941, sa biografijom (str. 416–418). Spiskovi žrtava terora, poginulih u ratu 1991–1995. i dobrovoljaca ranijih ratova iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   }
 ]
