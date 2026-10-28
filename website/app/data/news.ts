@@ -17,10 +17,10 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-28',
     text: {
-      sr: 'Uneto je šesnaest novih knjiga, uglavnom o selima i opštinama: oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 boraca koji su već bili na sajtu sada ima još jednu knjigu koja piše o njima, a ostali su novi, među Ostalim borcima.',
-      sl: 'Vnesenih je šestnajst novih knjig, večinoma o vaseh in občinah: okoli 4.200 borcev, aktivistov in nosilcev Partizanske spomenice 1941. Okoli 600 borcev, ki so že bili na strani, ima zdaj še eno knjigo, ki piše o njih, ostali so novi, med Drugimi borci.',
-      mk: 'Внесени се шеснаесет нови книги, главно за селата и општините: околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 борци што веќе беа на сајтот сега имаат уште една книга што пишува за нив, а останатите се нови, меѓу Другите борци.',
-      en: 'Sixteen new books are in, most of them on villages and municipalities: some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 fighters already on the site now have one more book that writes about them; the rest are new, among the Other fighters.',
+      sr: 'Dodali smo šesnaest novih knjiga, uglavnom o selima i opštinama, sa oko 4.200 boraca, aktivista i nosilaca Partizanske spomenice 1941. Oko 600 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Ostalim borcima.',
+      sl: 'Dodali smo šestnajst novih knjig, večinoma o vaseh in občinah, z okoli 4.200 borci, aktivisti in nosilci Partizanske spomenice 1941. Okoli 600 jih je že bilo na strani, zato je zdaj v njihovem zapisu še ena knjiga. Drugi so novi in so med Drugimi borci.',
+      mk: 'Додадовме шеснаесет нови книги, главно за селата и општините, со околу 4.200 борци, активисти и носители на Партизанската споменица 1941. Околу 600 од нив веќе беа на сајтот, па сега во нивниот запис стои уште една книга. Другите се нови и се наоѓаат меѓу Другите борци.',
+      en: 'We have added sixteen new books, most of them on villages and municipalities, with some 4,200 fighters, activists and holders of the 1941 Partisan Commemorative Medal. About 600 of them were already on the site, so their records now show one more book. The rest are new and are listed under Other fighters.',
     },
   },
   {
@@ -62,10 +62,10 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-20',
     text: {
-      sr: 'Stari Majdan: uneti su pali borci ostalih sela i spiskovi boraca i učesnika rata iz 1983. godine i nosilaca Partizanske spomenice 1941, oko 1.200 imena; borci i učesnici iz spiskova označeni su kao učesnici. Iz tri druga spiska uneti su i aktivisti NOP-a koji su stradali van vojske, njih 82.',
-      sl: 'Stari Majdan: vneseni so padli borci ostalih vasi ter seznami borcev in udeležencev vojne iz leta 1983 in nosilcev Partizanske spomenice 1941, okoli 1.200 imen; borci in udeleženci s seznamov so označeni kot udeleženci. Iz treh drugih seznamov so vneseni tudi aktivisti NOG, ki so umrli zunaj vojske, 82 jih je.',
-      mk: 'Стари Мајдан: внесени се загинатите борци од другите села и списоците на борците и учесниците во војната од 1983 година и на носителите на Партизанската споменица 1941, околу 1.200 имиња; борците и учесниците од списоците се означени како учесници. Од три други списоци внесени се и активистите на НОД што загинале надвор од војската, 82.',
-      en: 'Stari Majdan: the fallen of its other villages are in, with the 1983 lists of the war’s fighters and participants and of the holders of the 1941 Partisan Commemorative Medal, some 1,200 names; those of the lists are marked as participants. Three other lists now include the movement’s activists who died outside the army, 82 of them.',
+      sr: 'Stari Majdan: dodali smo pale borce iz ostalih sela, nosioce Partizanske spomenice 1941 i spiskove boraca i učesnika rata iz 1983. godine, ukupno oko 1.200 imena. Spiskovi iz 1983. ne kažu ko je bio borac, a ko je pomagao pokretu, pa su ti ljudi označeni kao učesnici. Iz tri druga spiska dodali smo i 82 aktivista NOP-a koji su izgubili život van vojske.',
+      sl: 'Stari Majdan: dodali smo padle borce iz drugih vasi, nosilce Partizanske spomenice 1941 ter sezname borcev in udeležencev vojne iz leta 1983, skupaj okoli 1.200 imen. Seznami iz leta 1983 ne povedo, kdo je bil borec in kdo je pomagal gibanju, zato so ti ljudje označeni kot udeleženci. Iz treh drugih seznamov smo dodali še 82 aktivistov NOG, ki so izgubili življenje zunaj vojske.',
+      mk: 'Стари Мајдан: ги додадовме загинатите борци од другите села, носителите на Партизанската споменица 1941 и списоците на борците и учесниците во војната од 1983 година, вкупно околу 1.200 имиња. Списоците од 1983 година не кажуваат кој бил борец, а кој му помагал на движењето, па овие луѓе се означени како учесници. Од три други списоци ги додадовме и 82 активисти на НОД што го загубиле животот надвор од војската.',
+      en: 'Stari Majdan: we have added the fallen of its other villages, the holders of the 1941 Partisan Commemorative Medal and the 1983 lists of the war’s fighters and participants, some 1,200 names in all. The 1983 lists don’t say who fought and who helped the movement, so those people are marked as participants. From three other lists we have also added 82 of the movement’s activists who lost their lives outside the army.',
     },
   },
   {
@@ -86,28 +86,28 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-10-19',
     text: {
-      sr: 'Iz jedanaest spiskova koji zajedno navode borce i ostale učesnike pokreta uneti su i aktivisti NOP-a, oko 7.200 članova KPJ i SKOJ-a, odbornika i terenskih radnika, označeni kao aktivisti.',
-      sl: 'Iz enajstih seznamov, ki skupaj navajajo borce in druge udeležence gibanja, so vneseni tudi aktivisti NOG, okoli 7.200 članov KPJ in SKOJ, odbornikov in terenskih delavcev, označeni kot aktivisti.',
-      mk: 'Од единаесет списоци што заедно ги наведуваат борците и другите учесници во движењето внесени се и активистите на НОД, околу 7.200 членови на КПЈ и СКОЈ, одборници и теренски работници, означени како активисти.',
-      en: 'From eleven lists that name fighters together with others in the movement, its activists are now in too, some 7,200 party and youth league members, committee members and field workers, marked as activists.',
+      sr: 'Neki spiskovi uz borce navode i ljude koji su pomagali pokretu van vojske. Iz jedanaest takvih spiskova dodali smo i njih, oko 7.200 članova KPJ i SKOJ-a, odbornika i terenskih radnika. Na sajtu su označeni kao aktivisti.',
+      sl: 'Nekateri seznami poleg borcev navajajo tudi ljudi, ki so gibanju pomagali zunaj vojske. Iz enajstih takih seznamov smo dodali tudi njih, okoli 7.200 članov KPJ in SKOJ, odbornikov in terenskih delavcev. Na strani so označeni kot aktivisti.',
+      mk: 'Некои списоци покрај борците ги наведуваат и луѓето што му помагале на движењето надвор од војската. Од единаесет такви списоци ги додадовме и нив, околу 7.200 членови на КПЈ и СКОЈ, одборници и теренски работници. На сајтот се означени како активисти.',
+      en: 'Some lists name, besides the fighters, the people who helped the movement outside the army. From eleven such lists we have added them too, some 7,200 party and youth league members, committee members and field workers. On the site they are marked as activists.',
     },
   },
   {
     date: '2026-10-19',
     text: {
-      sr: 'Osam knjiga o selima Like, Otočca i Brinja, Bosanskog Grahova i Starog Majdana: oko 5.800 palih i preživelih boraca i aktivista, 710 pridruženo zapisima koji već postoje.',
-      sl: 'Osem knjig o vaseh Like, Otočca in Brinja, Bosanskega Grahova in Starega Majdana: okoli 5.800 padlih in preživelih borcev ter aktivistov, 710 pridruženih zapisom, ki že obstajajo.',
-      mk: 'Осум книги за селата во Лика, Оточац и Бриње, Босанско Грахово и Стари Мајдан: околу 5.800 загинати и преживеани борци и активисти, 710 приклучени кон записите што веќе постојат.',
-      en: 'Eight books on the villages of Lika, Otočac and Brinje, Bosansko Grahovo and Stari Majdan: some 5,800 fallen and surviving fighters and activists, 710 of them added to records already on the site.',
+      sr: 'Dodali smo borce i aktiviste iz osam knjiga o selima Like, Otočca i Brinja, Bosanskog Grahova i Starog Majdana, oko 5.800 palih i preživelih. Njih 710 već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga.',
+      sl: 'Dodali smo borce in aktiviste iz osmih knjig o vaseh Like, Otočca in Brinja, Bosanskega Grahova in Starega Majdana, okoli 5.800 padlih in preživelih. 710 jih je že bilo na strani, zato je zdaj v njihovem zapisu še ena knjiga.',
+      mk: 'Додадовме борци и активисти од осум книги за селата во Лика, Оточац и Бриње, Босанско Грахово и Стари Мајдан, околу 5.800 загинати и преживеани. 710 од нив веќе беа на сајтот, па сега во нивниот запис стои уште една книга.',
+      en: 'We have added the fighters and activists from eight books on the villages of Lika, Otočac and Brinje, Bosansko Grahovo and Stari Majdan, some 5,800 fallen and surviving. 710 of them were already on the site, so their records now show one more book.',
     },
   },
   {
     date: '2026-10-17',
     text: {
-      sr: 'Druga lička brigada: 15 zapisa dobilo je nazad drugi red iz knjige, koji je izostao pri čitanju.',
-      sl: 'Druga liška brigada: 15 zapisov je dobilo nazaj drugo vrstico iz knjige, ki se je pri branju izgubila.',
-      mk: 'Втора личка бригада: на 15 записи им е вратен вториот ред од книгата, кој беше испуштен при читањето.',
-      en: '2nd Lika Brigade: 15 entries have their second line from the book back, lost when the book was read.',
+      sr: 'Druga lička brigada: u 15 zapisa nedostajao je drugi red iz knjige. Sada je vraćen.',
+      sl: 'Druga liška brigada: v 15 zapisih je manjkala druga vrstica iz knjige. Zdaj je vrnjena.',
+      mk: 'Втора личка бригада: во 15 записи недостасуваше вториот ред од книгата. Сега е вратен.',
+      en: '2nd Lika Brigade: 15 entries were missing their second line from the book. It is back now.',
     },
   },
   {
@@ -134,37 +134,37 @@ export const NEWS: NewsItem[] = [
       en: 'The units’ officers',
     },
     text: {
-      sr: 'Dodali smo komandante, komesare i druge starešine dvadesetak jedinica, iz knjiga tih jedinica, sa datumima kada su bili na dužnosti.',
-      sl: 'Dodali smo komandante, komisarje in druge starešine dvajsetih enot, iz knjig teh enot, z datumi, ko so bili na dolžnosti.',
-      mk: 'Додадовме команданти, комесари и други старешини на дваесетина единици, од книгите на тие единици, со датумите кога биле на должност.',
-      en: 'We have added the commanders, commissars and other officers of some twenty units, from the units’ own books, with the dates they held each post.',
+      sr: 'Iz knjiga dvadesetak jedinica dodali smo njihove komandante, komesare i druge starešine, sa datumima kada su bili na dužnosti.',
+      sl: 'Iz knjig kakih dvajsetih enot smo dodali njihove komandante, komisarje in druge starešine, z datumi, ko so bili na dolžnosti.',
+      mk: 'Од книгите на дваесетина единици ги додадовме нивните команданти, комесари и други старешини, со датумите кога биле на должност.',
+      en: 'From the books of some twenty units we have added their commanders, commissars and other officers, with the dates they held each post.',
     },
   },
   {
     date: '2026-10-16',
     text: {
-      sr: 'Prva proleterska brigada: dopunski spisak i bataljon „Garibaldi“ iz četvrte knjige. 3. krajiška brigada: spisak boraca iz novembra 1942.',
-      sl: 'Prva proletarska brigada: dopolnilni seznam in bataljon »Garibaldi« iz četrte knjige. 3. krajiška brigada: seznam borcev iz novembra 1942.',
-      mk: 'Прва пролетерска бригада: дополнителниот список и баталјонот „Гарибалди“ од четвртата книга. 3. краишка бригада: список на борците од ноември 1942.',
-      en: '1st Proletarian Brigade: the supplementary list and the Garibaldi battalion from the fourth book. 3rd Krajina Brigade: its list of fighters of November 1942.',
+      sr: 'Prva proleterska brigada dobila je dopunski spisak i spisak bataljona „Garibaldi“ iz četvrte knjige, a 3. krajiška brigada spisak svojih boraca iz novembra 1942.',
+      sl: 'Prva proletarska brigada je dobila dopolnilni seznam in seznam bataljona »Garibaldi« iz četrte knjige, 3. krajiška brigada pa seznam svojih borcev iz novembra 1942.',
+      mk: 'Прва пролетерска бригада го доби дополнителниот список и списокот на баталјонот „Гарибалди“ од четвртата книга, а 3. краишка бригада списокот на своите борци од ноември 1942.',
+      en: 'The 1st Proletarian Brigade now has its supplementary list and the list of the Garibaldi battalion from the fourth book, and the 3rd Krajina Brigade its list of fighters of November 1942.',
     },
   },
   {
     date: '2026-10-16',
     text: {
-      sr: 'Oko 300 imena koja je skeniranje iseklo ili spojilo pročitano je ponovo sa strana knjiga.',
-      sl: 'Okoli 300 imen, ki jih je skeniranje razsekalo ali zlepilo, je prebranih znova s strani knjig.',
-      mk: 'Околу 300 имиња што скенирањето ги исекло или споило се прочитани повторно од страниците на книгите.',
-      en: 'About 300 names the scanning had cut up or run together were read again from the books’ pages.',
+      sr: 'Oko 300 imena se pri čitanju skenova raspalo na delove ili spojilo sa susednim rečima. Ponovo smo ih pročitali sa strana knjiga.',
+      sl: 'Okoli 300 imen je pri branju skenov razpadlo na dele ali se zlepilo s sosednjimi besedami. Znova smo jih prebrali s strani knjig.',
+      mk: 'Околу 300 имиња при читањето на скеновите се распаднаа на делови или се споија со соседните зборови. Повторно ги прочитавме од страниците на книгите.',
+      en: 'About 300 names had fallen apart or run into the words next to them when the scans were read. We have read them again from the books’ pages.',
     },
   },
   {
     date: '2026-10-15',
     text: {
-      sr: 'Mesta rođenja i pogibije bez reči koje su im se pridružile pri čitanju, u oko 1.200 zapisa.',
-      sl: 'Kraji rojstva in smrti brez besed, ki so se jim pridružile pri branju, v okoli 1.200 zapisih.',
-      mk: 'Местата на раѓање и загинување без зборовите што им се придружиле при читањето, во околу 1.200 записи.',
-      en: 'Places of birth and death cleared of words that had stuck to them in reading, in about 1,200 records.',
+      sr: 'U oko 1.200 zapisa uz mesto rođenja ili pogibije pri čitanju su ostale reči koje tu ne spadaju. Sada su uklonjene.',
+      sl: 'V okoli 1.200 zapisih so ob kraju rojstva ali smrti pri branju ostale besede, ki tja ne spadajo. Zdaj so odstranjene.',
+      mk: 'Во околу 1.200 записи покрај местото на раѓање или загинување при читањето останале зборови што не спаѓаат таму. Сега се отстранети.',
+      en: 'In about 1,200 records, words that don’t belong there had stuck to the place of birth or death in reading. They are gone now.',
     },
   },
   {
