@@ -3141,5 +3141,23 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/sutorina.jpg',
     brigadeName: '',
     description: 'Prilozi hronike Sutorine kod Herceg Novog: Sutorinska partizanska četa, njena komanda i četiri voda po selima, sa godinom rođenja i dužnošću (str. 405–409), pali borci NOR-a 1941–1945. (str. 410–414) i Sutorani nosioci Partizanske spomenice 1941, sa biografijom (str. 416–418). Spiskovi žrtava terora, poginulih u ratu 1991–1995. i dobrovoljaca ranijih ratova iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'doboj3',
+    title: 'Od ustanka do pobjede: zbornik sjećanja učesnika NOR-a i socijalističke revolucije na dobojskoj opštini, knjiga III',
+    author: 'Rizah Biser (ur.)',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946',
+    thumbnail: '/images/pdf-thumbs/doboj3.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih boraca narodnooslobodilačkog rata dobojske opštine po selima (str. 366–422), sa rođenjem, stupanjem u NOB, jedinicom i pogibijom. Uneti su borci i, označeni kao aktivisti, aktivni saradnici NOP-a, odbornici i ilegalci koje spisak broji. Spisak žrtava fašističkog terora iz iste knjige nije unet. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'ljesnjani',
+    title: 'Lješnjani u borbi za slobodu',
+    author: 'Mitar Đurišić, Miomir Radunović, Miloš T. Uskoković',
+    pdfPath: 'https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=324db83c-42bd-429c-80fc-afea5cb62257/00000001/00000001/00002814',
+    thumbnail: '/images/pdf-thumbs/ljesnjani.jpg',
+    brigadeName: '',
+    description: 'Spiskovi uz poglavlje o Lješanskoj nahiji kod Podgorice u NOR-u: poginuli u NOR-u (str. 184–199), sa rođenjem, mestom i danom pogibije, narodni heroji (str. 201) i nosioci Partizanske spomenice 1941. (str. 202–203). Spiskovi poginulih u Aprilskom ratu, žrtava fašističkog terora i četnika iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   }
 ]

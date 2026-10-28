@@ -41,6 +41,8 @@ CARDS = {
     'rogatica': (['ROGATICA'], ['Jusuf Žiga i drugi'], 'Sarajevo\n2009.'),
     'sutorina': (['СУТОРИНА', 'хроника подручја и насеља', 'са родословљем'], [], ''),
     'grahovo-podjele': (['GRAHOVO', 'U VRIJEME RATA', '1941–1945', 'grahovske podjele'], ['Mlađen Jovanov Vučetić'], 'Beograd\n2020.'),
+    'doboj3': (['OD USTANKA', 'DO POBJEDE', 'zbornik sjećanja', 'knjiga III'], ['Rizah Biser (ur.)'], 'Doboj\n1986.'),
+    'ljesnjani': (['ЉЕШЊАНИ', 'У БОРБИ', 'ЗА СЛОБОДУ'], ['Митар Ђуришић', 'Миомир Радуновић', 'Милош Т. Ускоковић'], ''),
 }
 
 
