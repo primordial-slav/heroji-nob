@@ -576,7 +576,7 @@ export const units: Unit[] = [
     nameEn: '14th Central Bosnian Brigade',
     description: 'Formirana 17. oktobra 1943. na Ceru kod Prnjavora. Poginuli, umrli i nestali borci, i borci koji su preživeli rat.',
     image: '/images/14-srednjobosanska-brigada.jpg',
-    soldierCount: 2567,
+    soldierCount: 2565,
     dataFile: '/14-srednjobosanska-soldiers.json',
     pdfFiles: ['/pdfs/14-srednjobosanska.pdf']
   },
