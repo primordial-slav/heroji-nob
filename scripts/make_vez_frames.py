@@ -15,10 +15,12 @@ motif for the corners, one for each edge, one over the middle of the top (and th
 CSS px round a 104 x 138.7 print and reach OFF px past it, and each of a frame's threads (at most two) is its own
 SVG, a mask the site fills with that thread's ink, so the colours follow the light and dark themes.
 
-Writes website/public/vez/<n>.svg (and <n>-2.svg for a second thread), website/app/data/vez.json (each frame's inks,
-the sets as frame numbers, which set is neutral, which three the home page shows one face of at most) and
-data-extraction/places/vez_sets.json (the sets by name, for scripts/build_vez.py). After changing the sets' order or
-number, run scripts/build_vez.py --write again.
+Writes website/app/data/vez.json (each frame's inks, the sets as frame numbers, which set is neutral, which three the
+home page shows one face of at most) and data-extraction/places/vez_sets.json (the sets by name, for
+scripts/build_vez.py), then has scripts/make_vez_stitch.py write the frames themselves, website/public/vez/<n>.svg (and
+<n>-2.svg for a second thread): since 2026-10-28 they are counted-thread satin work composed from the same parts, not
+the line drawings this script makes, which --sheet still shows. After changing the sets' order or number, run
+scripts/build_vez.py --write again.
 
 Run: python scripts/make_vez_frames.py [--sheet page.html]
 """
@@ -1237,17 +1239,10 @@ def main():
     args = ap.parse_args()
     frames, sets = frames_and_sets()
     keys = list(frames)
-    os.makedirs(OUT, exist_ok=True)
-    for old in os.listdir(OUT):
-        if old.endswith('.svg'):
-            os.remove(os.path.join(OUT, old))
     inks, drawn = [], {}
-    for n, key in enumerate(keys):
+    for key in keys:
         f = compose(dict(frames[key][1]))
-        layers = [k for k in THREADS if f.threads[k]]
-        for i, ink in enumerate(layers):
-            open(os.path.join(OUT, f'{n}{"-2" if i else ""}.svg'), 'w', encoding='utf-8', newline='\n').write(f.svg(ink))
-        inks.append(layers)
+        inks.append([k for k in THREADS if f.threads[k]])
         drawn[key] = f
     index = {k: n for n, k in enumerate(keys)}
     names = [name for name, _ in sets]
@@ -1277,7 +1272,9 @@ def main():
             'figure{margin:0;text-align:center;width:150px}.f{position:relative;width:145px;height:183px}'
             '.f svg{position:absolute;inset:0;width:100%;height:100%}.p{position:absolute;left:15.4px;top:15.4px;'
             'width:114.2px;height:152.3px;background:#d2ccc2}figcaption{line-height:1.15;min-height:2.3em}</style>' + rows)
-    print(f'{len(keys)} frames in {len(sets)} sets written to {os.path.normpath(OUT)}')
+    print(f'{len(keys)} frames in {len(sets)} sets')
+    import make_vez_stitch                         # the frames themselves, stitched
+    make_vez_stitch.write(OUT)
 
 
 if __name__ == '__main__':
