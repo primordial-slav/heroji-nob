@@ -571,6 +571,14 @@ UNIT_BOOKS = [
     ('0064002897', '00003/825.pdf', 798, 4207, None, 'narodni heroj of the brigade, the portrait beside the biography: FRANC TAVČAR-ROK (the record: zvani Rok)'),
     ('0070001315', '00003/825.pdf', 798, 4207, None, "narodni heroj of the brigade, the portrait beside the biography: FRANC TAVČAR-ROK: the Tomšičeva's Tavčar Franc zvani Rok, born 1920, who holds the same Moste-Polje and XXXI. divizija entries"),
     ('0064003055', '00003/825.pdf', 799, 4212, None, 'narodni heroj of the brigade, the portrait beside the biography: JANEZ UČAKAR (the record holds the biography)'),
+    # 2026-10-28: Žene Hrvatske u NOB (00003/585), a woman's portrait with her name under it, the book's own entry for her on the
+    # same page agreeing with the record
+    ('0036001919', '00003/585.pdf', 111, 601, None, 'Vinka Videka; the book beside it: rođena u Splitu, stariji vodnik u IV. bataljonu I. dalmatinske, poginula u posljednjim borbama; the record: Split, IV bataljon, fell near Bihać in March 1945'),
+    ('0007002385', '00003/585.pdf', 115, 625, None, 'Marija Klarić; the book beside it: rođena u Kaštel Štafiliću, bolničarka II. bataljona II. dalmatinske, poginula 11. XI. 1944.; the record: the same village, bolničarka u 2. bataljonu, fell 7. 11. 1944'),
+    ('0007004191', '00003/585.pdf', 118, 641, None, 'Vjera Poljak; the book beside it: rođena 1924. u Solinu, četna bolničarka, zamjenik politkomesara u II. dalmatinskoj; the record: 10. 11. 1924, Solin, the 2. dalmatinska'),
+    ('0046000869', '00003/585.pdf', 118, 641, None, 'Vjera Poljak; the book beside it: rođena 1924. u Solinu, borac i četna bolničarka; the record: 1924, Solin, borac'),
+    ('0146000073', '00003/585.pdf', 267, 1421, None, 'Ilonka Rajdl; the book beside it: rođena u Slav. Brodu, borac XII. brigade, poginula pri osvajanju bunkera u Garešnici; the record: Slavonski Brod, the 12. brigade, fell at Garešnica'),
+    ('0146000046', '00003/585.pdf', 265, 1409, None, 'Ana Milaković-Panjković; the book beside it: komesar Komande mjesta Čačinci; the record: rođena u Pušini (by Čačinci), borac, bolničarka i referent saniteta'),
 ]
 
 PAGE_BOOKS = [
