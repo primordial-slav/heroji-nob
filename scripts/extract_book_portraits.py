@@ -1570,6 +1570,55 @@ LJUBLJANSKA = [
 ]
 LJUBLJANSKA_CREDIT = 'Borivoj Lah, 10. slovenska NOV brigada „Ljubljanska“'
 
+IMOTSKA = [
+    # Imotska krajina u NOB-u (site: imotska-krajina-pali-borci.pdf): "Poginuli borci", each fallen fighter's portrait set
+    # right above his entry's heading; the records that hold that entry as their reference (2026-10-28; faded prints, a
+    # blank one and a profile too dark to show a face left out). Record, page in the site's PDF, the portrait's box, why
+    ('0007100552', 16, (439.9, 543.3, 612.7, 787.6), 'the portrait right above the heading of Luka »Ludža« Kadijević, Mihailov (the record holds the entry)'),
+    ('0007005152', 20, (240.2, 338.5, 396.9, 584.5), 'the portrait right above the heading of Milan Tadić, Nikole (the record holds the entry)'),
+    ('0007005375', 20, (440.9, 338.1, 598.4, 585.0), 'the portrait right above the heading of Gligo Ukraden, Petra (the record holds the entry)'),
+    ('0007005600', 21, (239.6, 347.7, 387.2, 576.2), 'the portrait right above the heading of Milan Vučkovič, Jove (the record holds the entry)'),
+    ('0008000196', 24, (264.3, 404.2, 420.1, 645.2), 'the portrait right above the heading of Ante Jonjić (the record holds the entry)'),
+    ('0036000858', 27, (243.6, 329.6, 401.8, 570.4), 'the portrait right above the heading of Ivan »Moletin« Karin, Ivana (the record holds the entry)'),
+    ('0043000498', 27, (243.6, 329.6, 401.8, 570.4), 'the portrait right above the heading of Ivan »Moletin« Karin, Ivana (the record holds the entry)'),
+    ('0043000723', 28, (241.8, 344.9, 392.8, 580.1), 'the portrait right above the heading of Ante »Motor« Matković, Pavlov (the record holds the entry)'),
+    ('0007005875', 29, (429.4, 520.2, 587.3, 762.9), 'the portrait right above the heading of Ivan Žužul, Šimin (the record holds the entry)'),
+    ('0007101619', 30, (433.5, 339.6, 590.4, 581.0), 'the portrait right above the heading of Petar Žužul, Gabrin (the record holds the entry)'),
+    ('0007100263', 33, (235.5, 333.4, 397.0, 586.8), 'the portrait right above the heading of Milan Duka, Antin (the record holds the entry)'),
+    ('0007001971', 34, (445.7, 401.8, 599.3, 638.4), 'the portrait right above the heading of Vaso Ivanišević, Nikolin (the record holds the entry)'),
+    ('0007001969', 34, (243.9, 338.0, 402.3, 576.5), 'the portrait right above the heading of Milan Ivanišević, Petrov (the record holds the entry)'),
+    ('0007002458', 35, (438.0, 420.7, 592.1, 659.1), 'the portrait right above the heading of Simo »Rajo« Knežević, Mihajla (the record holds the entry)'),
+    ('0043000616', 36, (240.2, 335.4, 397.6, 586.2), 'the portrait right above the heading of Živko Kuzman, Antin (the record holds the entry)'),
+    ('0001005749', 36, (240.2, 335.4, 397.6, 586.2), 'the portrait right above the heading of Živko Kuzman, Antin (the record holds the entry)'),
+    ('0043000637', 37, (445.6, 551.8, 601.1, 792.8), 'the portrait right above the heading of Zvonimir Lončar, Markov (the record holds the entry)'),
+    ('0007004604', 41, (242.1, 331.2, 398.8, 572.7), 'the portrait right above the heading of Petar Ružić, Nikole (the record holds the entry)'),
+    ('0007005546', 44, (242.8, 337.8, 400.7, 576.2), 'the portrait right above the heading of Marija Vlajćić, Sime (the record holds the entry)'),
+    ('0007005547', 44, (444.4, 554.5, 603.3, 794.8), 'the portrait right above the heading of Milan Vlajčić, Nikole (the record holds the entry)'),
+    ('0145000174', 48, (433.4, 409.1, 591.8, 654.6), 'the portrait right above the heading of Spiro »Špica« Knežević, Ilijin (the record holds the entry)'),
+    ('0046000778', 49, (221.9, 333.6, 379.9, 578.7), 'the portrait right above the heading of Gojko Odović, Jovin (the record holds the entry)'),
+    ('0007004128', 50, (421.3, 456.7, 581.1, 703.0), 'the portrait right above the heading of Jovo Pijanović, Markov (the record holds the entry)'),
+    ('0043000873', 54, (443.9, 338.2, 602.5, 581.3), 'the portrait right above the heading of Milan Odović, Markov (the record holds the entry)'),
+    ('0145000280', 54, (240.9, 474.0, 397.6, 713.3), 'the portrait right above the heading of Luka Odović, Boškov (the record holds the entry)'),
+    ('0036101141', 58, (236.0, 329.2, 394.9, 570.9), 'the portrait right above the heading of Andrija Ujević, Ivanov (the record holds the entry)'),
+    ('0117000582', 59, (233.7, 322.5, 398.1, 581.5), 'the portrait right above the heading of Ivan »Ivanić« Ujević, Matin (the record holds the entry)'),
+    ('0050000304', 63, (236.9, 332.3, 391.4, 580.7), 'the portrait right above the heading of Jozo Topić, Marijanov (the record holds the entry)'),
+    ('0046000848', 68, (438.2, 534.3, 598.8, 786.3), 'the portrait right above the heading of Ivan Pezo, Marka (the record holds the entry)'),
+    ('0053002280', 69, (229.2, 516.6, 389.0, 758.3), 'the portrait right above the heading of Stipe Pezo, Ivana (the record holds the entry)'),
+    ('0007002905', 85, (261.2, 341.8, 418.1, 577.0), 'the portrait right above the heading of Mate Lozo, Petrov (the record holds the entry)'),
+    ('0007000256', 86, (233.0, 395.2, 390.4, 640.7), 'the portrait right above the heading of Frane »Krego« Barbić, Ivana (the record holds the entry)'),
+    ('0007004196', 92, (236.4, 333.0, 394.1, 576.4), 'the portrait right above the heading of Milica Popadić, Petrova (the record holds the entry)'),
+    ('0114000088', 92, (236.4, 333.0, 394.1, 576.4), 'the portrait right above the heading of Milica Popadić, Petrova (the record holds the entry)'),
+    ('0145000325', 93, (421.7, 527.1, 578.6, 767.1), 'the portrait right above the heading of Milan Radović, Nikolin (the record holds the entry)'),
+    ('0043001088', 96, (449.5, 333.1, 606.5, 576.4), 'the portrait right above the heading of Marko »Crni« Sekulović, Ilije (the record holds the entry)'),
+    ('0046000994', 97, (247.5, 334.6, 405.7, 569.5), 'the portrait right above the heading of Mile Sekulović, Nikolin (the record holds the entry)'),
+    ('0046000077', 106, (226.5, 396.0, 386.1, 642.4), 'the portrait right above the heading of Ivan »ćokić« Babić, Blažov (the record holds the entry)'),
+    ('0001000360', 106, (226.5, 396.0, 386.1, 642.4), 'the portrait right above the heading of Ivan »ćokić« Babić, Blažov (the record holds the entry)'),
+    ('0043000479', 112, (256.5, 340.4, 410.8, 575.6), 'the portrait right above the heading of Petar Jurčević, Jakova (the record holds the entry)'),
+    ('0046000737', 126, (240.8, 559.4, 400.6, 780.7), 'the portrait right above the heading of Josip Mrkonjič, Josipov (the record holds the entry)'),
+    ('0007004145', 127, (255.7, 332.5, 413.8, 576.9), 'the portrait right above the heading of Ivan »Iće« Piplica, Ivanov (the record holds the entry)'),
+]
+IMOTSKA_CREDIT = 'Nedjeljko Kujundžić (ur.), Imotska krajina u NOB-u 1941–1945.'
+
 HEROES_1982 = [
     # Petar Kačavenda, Narodni heroji Jugoslavije (Beograd 1982, two volumes; znaci 00003/977 A-M and 978 N-Ž, PDF page =
     # the book's page + 4): the portrait the book prints in each hero's entry, an entry the record holds as its
@@ -2316,7 +2365,8 @@ def main():
             ('virovitica-spomenica-1941.pdf', VIROVITICA_CREDIT, 'https://znaci.org/00003/653.pdf#page={}', [(r[0], r[1] + 220, r[1], r[2]) for r in VIROVITICA]),
             ('krizani-v-boju-za-svobodo.pdf', KRIZANI_CREDIT, 'https://znaci.org/00003/720.pdf#page={}', [(r[0], r[1] + 77, r[1], r[2]) for r in KRIZANI]),
             ('vinodolska-selca.pdf', VINODOLSKA_CREDIT, 'https://znaci.org/00003/793.pdf#page={}', [(r[0], r[1] + 709, r[1], r[2]) for r in VINODOLSKA]),
-            ('ljubljanska-brigada.pdf', LJUBLJANSKA_CREDIT, '/pdfs/ljubljanska-brigada.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in LJUBLJANSKA])):
+            ('ljubljanska-brigada.pdf', LJUBLJANSKA_CREDIT, '/pdfs/ljubljanska-brigada.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in LJUBLJANSKA]),
+            ('imotska-krajina-pali-borci.pdf', IMOTSKA_CREDIT, '/pdfs/imotska-krajina-pali-borci.pdf#page={}', [(r[0], r[1], r[1], r[2]) for r in IMOTSKA])):
         doc = fitz.open(PUBLIC / 'pdfs' / pdf)
         n = 0
         for sid, book_page, page, box in rows:
@@ -2360,7 +2410,7 @@ def main():
     print(f'Commons: {len(COMMONS)} portraits')
     # Portraits this script doesn't make (the Proleterski bataljon Bosanske krajine's 180, cut beside each bio when
     # its unit came to the site) stay as they are: an entry whose credit is none of this script's sources
-    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, VINODOLSKA_CREDIT, LJUBLJANSKA_CREDIT, HEROES_1982_CREDIT}
+    own = {credit for *_, credit in BOOKS} | set(BOOK_TITLES.values()) | {MEMORIAL_CREDIT, DALMATINCI_CREDIT, VIROVITICA_CREDIT, KRIZANI_CREDIT, VINODOLSKA_CREDIT, LJUBLJANSKA_CREDIT, IMOTSKA_CREDIT, HEROES_1982_CREDIT}
     old = json.loads(INDEX.read_text(encoding='utf-8')) if INDEX.exists() else {}
     kept = {sid: e for sid, e in old.items() if sid not in index and e['c'] not in own
             and not e['c'].startswith(('znaci.org, br.', 'Wikimedia Commons')) and 'Wikimedia Commons' not in e['c']}
