@@ -46,15 +46,15 @@ LIST = ('Učesnici narodnooslobodilačkog pokreta iz Mileševskog sreza poginuli
 MUNICIPALITY = 'Prijepolje'
 CU, CL = 'А-ЯЂЈЉЊЋЏ', 'а-яђјљњћџ'
 W = rf'[{CU}][{CL}]+'
-START = re.compile(rf'^(?:(\d{{1,3}})\s*[.,]?\s*|[.,_]+\s*)?({W}(?:\s*-\s*{W})?)\s+({W}|[{CU}]\.)\s+({W})(?:\s*[-·]?\s*({W}))?\s*[,.]\s*(.*)$')
+START = re.compile(rf'^(?:(\d{{1,3}})\s*[.,]?\s*|[.,_]+\s*)?({W}(?:\s*-\s*{W})?)\s+({W}|[{CU}]\.)\s+({W})(?:\s*[-—·]?\s*({W}))?\s*[,.]\s*(.*)$')
 # a numbered entry that names no father ("46. Перишић Јагош, земљорадник")
 START_NO_FATHER = re.compile(rf'^(\d{{1,3}})\s*[.,]?\s*({W})\s+({W})\s*,\s*(.*)$')
 # a numbered entry run on after the one before it ("... у борби против Немаца. 11. Кукуљац Ћазима Ариф, ...")
 RUN_ON = re.compile(rf'(?<=[.)])\s+(?=\d{{1,3}}\s*[.,]\s*[{CU}])')
 # an entry glued on after a full stop behind a heading the OCR garbled ("... Немаца. 1(). Јусовић Саита Вехбија, земљорадник")
-GLUED = re.compile(rf'(?<=[.)])\s+(?=(?:\S{{0,4}}\s+)?(?:\d+\s*[.,:]?\s*)?[^\s,]+\s+[^\s,]+\s+[^\s,]+\s*,\s*'
+GLUED = re.compile(rf'(?<=[.)])\s+(?=(?:\S{{0,4}}\s+)?(?:\d+\s*[.,:]?\s*)?[^\s,]+\s+[^\s,]+\s+[^\s,]+(?:\s*[—·]\s*[^\s,]+)?\s*,\s*'
                    rf'(?:земљо|радник|домаћ|учен|рођен|студент|службеник|трговац))')
-LENIENT = re.compile(r'^(?:\S{0,4}\s+)?(?:\d+\s*[.,:]?\s*)?([^\s,]+)\s+([^\s,]+)\s+([^\s,]+?)\s*,\s*(.*)$')
+LENIENT = re.compile(r'^(?:\S{0,4}\s+)?(?:\d+\s*[.,:]?\s*)?([^\s,]+)\s+([^\s,]+)\s+([^\s,]+?)(?:\s*[—·]\s*([^\s,]+))?\s*,\s*(.*)$')
 SUMMARY = re.compile(r'^Из\s.*(?:општин|погинуло|борби)|(?:Гинули|Погинули|Изгинули) су у борби|ступил[иo]\s+(?:је\s+)?у\s+борбу|'
                      r'погинул[оa]\s+(?:је\s+)?(?:укупно\s+)?\d|^Свега|бораца, и то')
 HEADING = re.compile(rf'^[{CU}ЋЂ\' ]{{4,}}$')
@@ -90,6 +90,7 @@ def clean(t: str) -> str:
     t = re.sub(rf'\b"?[Бб](?=ур[{CL}]|орђ)', 'Ђ', t)                     # "Бурашићима", "'ћорђија" for Ђ
     t = re.sub(rf'(?:["\'‘’]\s*)?(?<![{CL}{CU}])ћ[{CL}]+', lambda m: soft_c(m.group(0).lstrip('"\'‘’ ')), t)
     t = re.sub(r'^(\d{1,3}\s*[.,]?\s*)ћ', r'\1Ћ', t).replace('ћурђи је', 'Ђурђије')   # a name the site lacks; "Ђурђије"
+    t = t.replace('Владимир · ВаЈпер', 'Владимир — Валтер')        # the narodni heroj Vladimir Perić Valter
     return re.sub(r'\s+', ' ', t).strip()
 
 
@@ -150,8 +151,8 @@ def main():
             _, sur, given, rest = START_NO_FATHER.match(e['lines'][0]).groups()
             fath, second = '', None
         else:
-            sur, fath, given, rest = LENIENT.match(e['lines'][0]).groups()
-            sur, fath, given, second = re.sub(r'[^\w-]', '', sur), re.sub(r'[^\w.]', '', fath), re.sub(r'\W', '', given), None
+            sur, fath, given, second, rest = LENIENT.match(e['lines'][0]).groups()
+            sur, fath, given = re.sub(r'[^\w-]', '', sur), re.sub(r'[^\w.]', '', fath), re.sub(r'\W', '', given)
         last = '-'.join(V.name_word(x) for x in re.split(r'\s*-\s*', sur))
         first = V.given_word(given) if given else ''
         nick = V.given_word(second) if second else ''
