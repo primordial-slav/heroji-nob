@@ -121,6 +121,10 @@ GALLERY = [
     ('0113000085', 14307, (0, 0, 1, 1), 'Dr Julka Mešterović, chief of the medical service of the 1. proleterska divizija from 1942 (caption; the record: referent saniteta divizije)'),
     ('0001014137', 14307, (0, 0, 1, 1), 'Dr Julka Mešterović, born 1906 in Srpski Itebej, doctor (the same woman as 0113000085)'),
     ('0036100310', 11122, (0, 0, 1, 1), 'komesar 39. divizije, 1944 (caption; the record: fell as deputy political commissar of the 39. divizija, 1945)'),
+    ('0001002344', 11122, (0, 0, 1, 1), 'Svetozar Drecun, komesar 39. divizije, 1944 (caption; the record: father Đuro, born 1923 in Ljubotinj, '
+                                        'fell near Vitez in April 1945 as assistant political commissar of the division); the 1. crnogorski '
+                                        'bataljon\'s roster of 1941 (00003/493, p. 684) prints the same photo beside his entry: father Đuro, '
+                                        'born 1923 in Ljubotinj, gymnasium pupil, SKOJ 1941'),
     ('0002000856', 10310, (0.18, 0.04, 0.62, 0.42), 'operativni oficir of the XIX divizija, fell near Rijeka (caption; the record: fell near Rijeka 1945, 19. divizija; the unit\'s other Dušan Bursaćs did not)'),
     ('0049011090', 15930, (0.3, 0.02, 0.7, 0.3), 'Dr Roza Papo, referent saniteta of the 17. divizija, 1943 (caption; the record: doctor, referent saniteta divizije)'),
     ('0001004862', 14234, (0.2, 0.05, 0.85, 0.6), 'Rosa Kačar, of the prištapske jedinice of the 1. proleterska, Srem front 1945 (caption and record; the only Rosa Kačar on the site)'),
@@ -480,7 +484,6 @@ UNIT_BOOKS = [
     ('0001001897', '00003/493.pdf', 684, 3309, (0, 0.023, 1.0, 0.992), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Dabanović Labuda Špiro, born 1899 in Seocima (entry and record agree on the birth year and father and village)'),
     ('0001001962', '00003/493.pdf', 684, 3311, (0, 0.117, 1, 0.877), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Dapčević Andrije Ivo, born 1916 in SAD (entry and record agree on the birth year and father or village)'),
     ('0001002696', '00003/493.pdf', 684, 3315, (0, 0.348, 0.999, 0.649), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Đukanović Krsta Nikola, born 1919 in Građanima (entry and record agree on the birth year and father and village)'),
-    ('0001002696', '00003/493.pdf', 684, 3315, (0, 0.348, 0.999, 0.649), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Đukanović Krsta Nikola, born 1919 in Građanima (entry and record agree on the birth year and father or village)'),
     ('0001005349', '00003/493.pdf', 684, 3317, (0.0, 0.022, 1, 0.315), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Kostić Draga Đoko, born 1912 in Rvašima (entry and record agree on the birth year and father and village)'),
     ('0001005967', '00003/493.pdf', 684, 3317, (0.0, 0.368, 1, 0.664), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Lekić Joka Blažo, born 1914 in Seocima (entry and record agree on the birth year and father and village)'),
     ('0001005982', '00003/493.pdf', 684, 3317, (0.0, 0.704, 1, 1.0), 'roster of 21 December 1941 at Rudo, a portrait beside each entry: Lekić Joka Risto, born 1897 in Seocima (entry and record agree on the birth year and father and village)'),
