@@ -112,7 +112,6 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
               <span className="result-similar-title">
                 {t.results.similarTitle} <span className="result-similar-count">· {formatNumber(lang, count - firstNear)}</span>
               </span>
-              <span className="result-similar-note">{t.results.similarNote}</span>
             </li>
           )}
           <li className="result">

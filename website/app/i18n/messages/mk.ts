@@ -114,7 +114,6 @@ export const mk: Messages = {
     similar: (x: number, more: boolean) =>
       `${more ? 'уште ' : ''}${n(x)} ${plural('mk', x, { one: 'сличен запис', other: 'слични записи' })}`,
     similarTitle: 'Слични записи',
-    similarNote: 'Името или местото е напишано малку поинаку или недостасува некој од бараните зборови.',
   },
 
   onThisDay: {

@@ -112,7 +112,6 @@ export const sr = {
       `${more ? 'još ' : ''}${n(x)} ${plural('sr', x, { one: 'sličan zapis', few: 'slična zapisa', other: 'sličnih zapisa' })}`,
     /** Over the similar records in the list: spelled differently, or without one of the words */
     similarTitle: 'Slični zapisi',
-    similarNote: 'Ime ili mesto napisano malo drugačije, ili bez neke od traženih reči.',
   },
 
   onThisDay: {

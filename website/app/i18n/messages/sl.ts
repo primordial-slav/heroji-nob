@@ -106,7 +106,6 @@ export const sl: Messages = {
     similar: (x: number, more: boolean) =>
       `${more ? 'še ' : ''}${n(x)} ${plural('sl', x, { one: 'podoben zapis', two: 'podobna zapisa', few: 'podobni zapisi', other: 'podobnih zapisov' })}`,
     similarTitle: 'Podobni zapisi',
-    similarNote: 'Ime ali kraj je zapisan nekoliko drugače ali pa manjka katera od iskanih besed.',
   },
 
   onThisDay: {
