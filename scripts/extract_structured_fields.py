@@ -1035,6 +1035,10 @@ class Extractor:
         clause = re.sub(r',?\s*\b[uU]\.?\s+(?:[IVX]{1,4}\.?|(?:[Pp]rv|[Dd]rug|[Tt]reć|[Čč]etvrt|[Pp]et|[Šš]est|[Ss]edm|[Oo]sm|'
                         r'[Dd]evet|[Dd]eset|\w+naest)\w*)\s+(?:[\w-]+\s+){0,3}' + _unit, '', clause)
         clause = re.sub(r',\s*[uU]\.?\s+(?:\S+\s+){1,4}' + _unit, '', clause)   # (not "..., u Bataljonu od marta 1943")
+        # a cause naming the enemy after the place: "u Dobroti kod Kotora od njemačke zasjede" (ENEMY_RE below would
+        # take "od njemačke" alone and leave "zasjede" as the place's tail)
+        clause = re.sub(rf'\s+od\s+{_ENEMY}{_LEADER}\s+(?:zasjed|zased|napad|bombardiran|metk|granat|min|avion|patrol)\w*[.,]?\s*$',
+                        '', clause)
         clause = BATTLE_RE.sub(' ', clause)
         clause = ENEMY_RE.sub(' ', clause)
         # another version after "ili" ("u Komletincima ili 23. januara kod Mohova"), the unit after "u sastavu" or "iz"
