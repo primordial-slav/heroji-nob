@@ -226,6 +226,8 @@ export const sr = {
       const did = `${e.sure ? `${verb} je` : `najverovatnije je ${verb}`} u Igmanskom maršu 27–28. januara 1942.`
       return where ? `Kao ${woman ? 'pripadnica' : 'pripadnik'} ${where}, ${did}` : `${woman ? 'Učestvovala' : 'Učestvovao'} je u Igmanskom maršu 27–28. januara 1942.`
     },
+    /** The battle of the Sutjeska (lib/warEvents.ts): everyone Borci Sutjeske lists */
+    sutjeska: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u bici na Sutjesci, maja i juna 1943.`,
     /** "Petrović Milan. Prva lička proleterska brigada, Rajko Šarenac (ur.), str. 42. Knjiga boraca, zapis 0002000042." */
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, str. ${page}` : ''}. Knjiga boraca, zapis ${id}.`,

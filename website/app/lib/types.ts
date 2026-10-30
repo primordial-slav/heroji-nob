@@ -83,7 +83,7 @@ export interface Soldier {
   // the records route)
   life_events?: LifeEvent[]
   // What his unit did that he was part of (website/data/events/, merged in by scripts/prepare-data.ts): the Igman
-  // march of 27-28 January 1942 (scripts/make_igman_list.py)
+  // march of 27-28 January 1942 and the battle of the Sutjeska (scripts/make_war_events.py)
   events?: WarEvent[]
 }
 
@@ -94,7 +94,9 @@ export interface Soldier {
  * staff or sanitet, the Posavska četa of the 6. bataljon; neither where only an entry of his names the event.
  */
 export interface WarEvent {
-  e: 'igman'
+  /** igman: the Prva proleterska's column on Igman, 27-28 January 1942; sutjeska: the battle, May-June 1943 (every
+   *  man Kučan's Borci Sutjeske lists, always sure, no company) */
+  e: 'igman' | 'sutjeska'
   sure: boolean
   b?: number
   c?: number

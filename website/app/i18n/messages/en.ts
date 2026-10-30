@@ -201,6 +201,8 @@ export const en: Messages = {
       const did = `${woman ? 'she' : 'he'} ${e.sure ? 'took' : 'most likely took'} part in the Igman March of 27–28 January 1942.`
       return where ? `As a member of ${where}, ${did}` : `${woman ? 'She' : 'He'} took part in the Igman March of 27–28 January 1942.`
     },
+    /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
+    sutjeska: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the Battle of the Sutjeska, May–June 1943.`,
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, p. ${page}` : ''}. Knjiga boraca, record ${id}.`,
   },

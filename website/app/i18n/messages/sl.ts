@@ -198,6 +198,8 @@ export const sl: Messages = {
       const did = `je ${e.sure ? '' : 'najverjetneje '}${woman ? 'sodelovala' : 'sodeloval'} v igmanskem maršu 27.–28. januarja 1942.`
       return where ? `Kot ${woman ? 'pripadnica' : 'pripadnik'} ${where} ${did}` : `${woman ? 'Sodelovala' : 'Sodeloval'} je v igmanskem maršu 27.–28. januarja 1942.`
     },
+    /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
+    sutjeska: (woman: boolean) => `${woman ? 'Sodelovala' : 'Sodeloval'} je v bitki na Sutjeski maja in junija 1943.`,
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, str. ${page}` : ''}. Knjiga borcev, zapis ${id}.`,
   },

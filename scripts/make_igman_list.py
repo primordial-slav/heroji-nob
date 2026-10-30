@@ -13,6 +13,7 @@ site's records by the entry's place on the page); men who fell before the march 
 January) are left out. A man who came to the brigade after Rudo is listed only where an entry of his names Igman.
 
     python scripts/make_igman_list.py           # writes website/app/(sr)/mapa/igman/igman.json
+    python scripts/make_war_events.py           # each man's line in his record (with the Sutjeska's)
 """
 from __future__ import annotations
 
@@ -31,8 +32,6 @@ DATA = ROOT / 'website' / 'public' / 'prva-proleterska-soldiers.json'
 RUDO_PDF = 'prva-proleterska-stroj-u-rudom.pdf'
 SCRATCH = ROOT / 'data-extraction' / '.cache' / 'igman' / 'rudo.json'
 OUT = ROOT / 'website' / 'app' / '(sr)' / 'mapa' / 'igman' / 'igman.json'
-# each man's line in the record dialog (lib/warEvents.ts), merged into his record by scripts/prepare-data.ts
-EVENTS = ROOT / 'website' / 'data' / 'events' / 'prva-proleterska-soldiers.json'
 SECTION_EVENT = {'štab brigade': 'stab', 'brigadni sanitet': 'sanitet', 'sanitetsko odjeljenje': 'odeljenje',
                  'hirurška ekipa': 'hirurska', 'posavska četa, 6. bataljon': 'posavska'}
 
@@ -149,9 +148,9 @@ def texts(s: dict) -> list[str]:
     return [s.get('additional_info') or ''] + [o.get('additional_info') or '' for o in s.get('other_sources') or []]
 
 
-def main():
+def build(soldiers: list[dict]) -> tuple[dict, dict, dict, dict, Counter]:
+    """the column's men by group, their marks, what became of each, each man's event (WarEvent), and who was left out"""
     sections = rudo_sections()
-    soldiers = json.loads(DATA.read_text(encoding='utf-8'))
     groups = {k: [] for k, _ in GROUPS}
     marks: dict[str, list[str]] = {}
     fates: dict[str, str] = {}
@@ -190,16 +189,19 @@ def main():
         if m:
             marks[s['soldier_id']] = m
         fates[s['soldier_id']] = fate(s)
-        events[s['soldier_id']] = [event_of(section, named)]
+        events[s['soldier_id']] = event_of(section, named)
+    return groups, marks, fates, events, left_out
+
+
+def main():
+    """the page's list; the records' lines are written by scripts/make_war_events.py, which calls build()"""
+    groups, marks, fates, events, left_out = build(json.loads(DATA.read_text(encoding='utf-8')))
     total = sum(len(v) for v in groups.values())
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({'groups': [{'key': k, 'title': t, 'ids': groups[k]} for k, t in GROUPS if groups[k]],
                                'marks': marks, 'fates': fates}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print('later: ' + ', '.join(f'{k} {n}' for k, n in Counter(fates.values()).items()))
-    EVENTS.parent.mkdir(parents=True, exist_ok=True)
-    EVENTS.write_text(json.dumps(events, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
-    print(f"wrote {EVENTS.relative_to(ROOT)}: {sum(e[0]['sure'] for e in events.values())} sure, "
-          f"{sum(not e[0]['sure'] for e in events.values())} most likely")
+    print(f"events: {sum(e['sure'] for e in events.values())} sure, {sum(not e['sure'] for e in events.values())} most likely")
     print(f'{total} men: ' + ', '.join(f'{t} {len(groups[k])}' for k, t in GROUPS))
     print(f"marked: named Igman or frostbite {sum('igman' in v for v in marks.values())}, "
           f"died in Foča Feb-Mar 1942 {sum('foca' in v for v in marks.values())}; left out: {dict(left_out)}")
