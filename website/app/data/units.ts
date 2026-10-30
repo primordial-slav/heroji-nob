@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941.',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 17087,
+    soldierCount: 17086,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf', '/pdfs/borci-sutjeske-prva-proleterska.pdf', '/pdfs/prva-proleterska-stroj-u-rudom.pdf', '/pdfs/beogradski-bataljon.pdf', '/pdfs/dalmatinci-prva-proleterska.pdf', '/pdfs/crnogorski-bataljon.pdf', '/pdfs/rudarska-ceta.pdf', '/pdfs/prva-proleterska-dopunski.pdf', '/pdfs/prva-proleterska-garibaldi.pdf']
   },
