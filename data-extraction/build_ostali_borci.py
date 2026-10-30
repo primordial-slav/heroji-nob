@@ -102,6 +102,13 @@ COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-bo
 PRINTS_TWICE = {'spomenica-crnogorskim-antifasistima'}
 
 
+# entries of men the deserters' rule takes off the site (the user's of 2026-10-14: one who went over to the enemy or
+# was shot as a deserter or traitor), whose unit record was deleted: no record of their own here either
+LEFT_OUT = {
+    '9019000982',   # Vukas Pere Đuro of Močila, "Strijeljan kao dezerter kod Močila 11. 4. 1945." (0060002337, 2026-10-30)
+}
+
+
 def infant(e: dict) -> bool:
     """A child the Spomenica names who was born in the war's last years: killed in the massacres of 1943 at a year or
     two, no fighter (the user's decision of 2026-10-28: the older children stay, since children fought); another
@@ -549,7 +556,8 @@ def main():
             # a man the book names by one name is still its man (Romano's "Ašer (prezime nepoznato)", Oborovo's "Ivica
             # ...", Gončin's "Janković"; the user's decision of 2026-10-14); one it could not name ("Nepoznati borac"),
             # or a number its parser keeps with no one, is no one a search can find
-            if (e.get('last_name') or e.get('first_name')) and not e.get('unnamed') and not infant(e):
+            if ((e.get('last_name') or e.get('first_name')) and not e.get('unnamed') and not infant(e)
+                    and e['soldier_id'] not in LEFT_OUT):
                 entries.append(e)
     # each book's own given names, to read its genitive fathers by its region's names (from_genitive)
     book_given: dict[str, Counter] = defaultdict(Counter)

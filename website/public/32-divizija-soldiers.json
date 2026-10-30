@@ -31688,7 +31688,7 @@
     "occupation": "poljopriv",
     "unit_detail": "I udarna zagorska brigada",
     "death_date": "1945",
-    "death_place": "u Vel. Pisanici u sastavu Zagorske brigade",
+    "death_place": "u Vel. Pisanici",
     "birth_year": "1912",
     "borrowed": [
       "birth_year"
@@ -55720,7 +55720,7 @@
     "unit_detail": "Udarna brigada Braća Radić",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "u Kloštru Podravskom u sastavu brigade »Braće Radića",
+    "death_place": "u Kloštru Podravskom",
     "party": "KPJ"
   },
   {
@@ -155485,10 +155485,6 @@
         "source_page": 2369,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ],
-    "death_place": "Nepoznata divizija",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -182099,10 +182095,8 @@
     ],
     "death_date": "1943",
     "borrowed": [
-      "death_date",
-      "death_place"
-    ],
-    "death_place": "Brigada b.radić"
+      "death_date"
+    ]
   },
   {
     "last_name": "Hvarg",
@@ -182780,27 +182774,6 @@
     "occupation": "službenica",
     "pdf_x_end": 444.8,
     "pdf_y_end": 303.9,
-    "party": "KPJ"
-  },
-  {
-    "soldier_id": "0035113682",
-    "last_name": "Ivanc",
-    "middle_name": "Emila",
-    "first_name": "Emil",
-    "fathers_name": "Emil",
-    "full_name": "Ivanc Emila Emil",
-    "additional_info": "r. 1923, Zagreb, Slovenac, radnik, čl. KPJ, NOV 1941.",
-    "birth_year": "1923",
-    "unit_detail": "Udarna brigada Braća Radić",
-    "pdf_file": "32-divizija-borci.pdf",
-    "pdf_page": 38,
-    "pdf_y": 259.4,
-    "pdf_x": 293.4,
-    "birth_place": "Zagreb",
-    "ethnicity": "Slovenac",
-    "occupation": "radnik",
-    "pdf_x_end": 445.1,
-    "pdf_y_end": 275.8,
     "party": "KPJ"
   },
   {
@@ -183941,6 +183914,17 @@
         "pdf_y": 441.9,
         "pdf_y_end": 458.2,
         "pdf_x_end": 445.0
+      },
+      {
+        "soldier_id": "0035113682",
+        "name": "Ivanc Emila Emil",
+        "additional_info": "r. 1923, Zagreb, Slovenac, radnik, čl. KPJ, NOV 1941.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 38,
+        "pdf_x": 293.4,
+        "pdf_y": 259.4,
+        "pdf_x_end": 445.1,
+        "pdf_y_end": 275.8
       }
     ],
     "ethnicity": "Slovenac",
@@ -216730,27 +216714,20 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 449.9,
-    "birth_place": "Hrastina, Zaprešić"
-  },
-  {
-    "last_name": "Kolarić",
-    "middle_name": "Stjepana",
-    "first_name": "Josip",
-    "fathers_name": "Stjepan",
-    "full_name": "Kolarić Stjepana Josip",
-    "additional_info": "r. 1920, s. Hrastina, Zaprešić, Hrvat, radnik, NOV 1943.",
-    "birth_year": "1920",
-    "unit_detail": "I udarna zagorska brigada",
-    "pdf_page": 191,
-    "pdf_y": 679.3,
-    "pdf_x": 288.2,
-    "pdf_y_end": 695.7,
-    "pdf_file": "32-divizija-borci.pdf",
-    "soldier_id": "0035105080",
-    "ethnicity": "Hrvat",
-    "occupation": "radnik",
-    "pdf_x_end": 437.5,
-    "birth_place": "Hrastina, Zaprešić"
+    "birth_place": "Hrastina, Zaprešić",
+    "other_sources": [
+      {
+        "soldier_id": "0035105080",
+        "name": "Kolarić Stjepana Josip",
+        "additional_info": "r. 1920, s. Hrastina, Zaprešić, Hrvat, radnik, NOV 1943.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 191,
+        "pdf_x": 288.2,
+        "pdf_y": 679.3,
+        "pdf_x_end": 437.5,
+        "pdf_y_end": 695.7
+      }
+    ]
   },
   {
     "last_name": "Kolarić",
@@ -222591,10 +222568,8 @@
     ],
     "birth_place": "Gornja Konjšćina, Zlatar-Bistrica",
     "borrowed": [
-      "birth_place",
-      "death_place"
+      "birth_place"
     ],
-    "death_place": "Zagorska brig",
     "birth_date": "10.04.1924"
   },
   {
@@ -298220,11 +298195,9 @@
     "death_type": "poginuo",
     "borrowed": [
       "death_date",
-      "death_place",
       "death_type"
     ],
-    "death_date": "1945",
-    "death_place": "Kalnički odred"
+    "death_date": "1945"
   },
   {
     "last_name": "Obadić",
@@ -301828,10 +301801,6 @@
         "source_page": 2365,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ],
-    "death_place": "Moslovačka brigada",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -313511,7 +313480,7 @@
         "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ],
-    "death_place": "u Zrinskoj u sastavu Zagorske brigade",
+    "death_place": "u Zrinskoj",
     "birth_year": "1927",
     "borrowed": [
       "birth_year"
@@ -316829,7 +316798,20 @@
     "ethnicity": "Hrvat",
     "occupation": "student",
     "pdf_x_end": 271.6,
-    "pdf_y_end": 170.3
+    "pdf_y_end": 170.3,
+    "other_sources": [
+      {
+        "soldier_id": "0035108605",
+        "name": "Petrinović Ivana Božidar",
+        "additional_info": "r. 1917, Sremska Mitrovica, Hrvat, student, NOV 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 3,
+        "pdf_x": 297.4,
+        "pdf_y": 360.9,
+        "pdf_x_end": 449.4,
+        "pdf_y_end": 377.5
+      }
+    ]
   },
   {
     "last_name": "Petrina",
@@ -316939,26 +316921,6 @@
     ],
     "ethnicity": "Hrvat",
     "pdf_x_end": 186.0
-  },
-  {
-    "last_name": "Petrinović",
-    "middle_name": "Ivana",
-    "first_name": "Božidar",
-    "fathers_name": "Ivan",
-    "full_name": "Petrinović Ivana Božidar",
-    "additional_info": "r. 1917, Sremska Mitrovica, Hrvat, student, NOV 1944.",
-    "birth_year": "1917",
-    "unit_detail": "Štab divizije",
-    "pdf_page": 3,
-    "pdf_y": 360.9,
-    "pdf_x": 297.4,
-    "pdf_y_end": 377.5,
-    "pdf_file": "32-divizija-borci.pdf",
-    "soldier_id": "0035108605",
-    "ethnicity": "Hrvat",
-    "occupation": "student",
-    "pdf_x_end": 449.4,
-    "birth_place": "Sremska Mitrovica"
   },
   {
     "last_name": "Petrić",
@@ -363488,27 +363450,6 @@
     "party": "KPJ"
   },
   {
-    "soldier_id": "0035113991",
-    "last_name": "Tuđman",
-    "middle_name": "Stjepana",
-    "first_name": "Franjo",
-    "fathers_name": "Stjepan",
-    "full_name": "Tuđman Stjepana Franjo",
-    "additional_info": "r. 1922, s. Veliko Trgovišće, Zabok, Hrvat, student, čl. KPJ, NOV 1942.",
-    "birth_year": "1922",
-    "unit_detail": "Štab divizije",
-    "pdf_file": "32-divizija-borci.pdf",
-    "pdf_page": 4,
-    "pdf_y": 332.8,
-    "pdf_x": 121.3,
-    "birth_place": "Veliko Trgovišće, Zabok",
-    "ethnicity": "Hrvat",
-    "occupation": "student",
-    "pdf_x_end": 273.5,
-    "pdf_y_end": 358.6,
-    "party": "KPJ"
-  },
-  {
     "soldier_id": "0035113990",
     "last_name": "Tomljenović",
     "middle_name": "",
@@ -376112,7 +376053,7 @@
         "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ],
-    "death_place": "u Šandrovcu kod Bjelovara u sastavu Zagorske brigade",
+    "death_place": "u Šandrovcu kod Bjelovara",
     "birth_place": "Bosna, Zaprešić",
     "borrowed": [
       "birth_place",
@@ -387303,7 +387244,7 @@
         "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ],
-    "death_place": "u Svibovcu kod Varaždinskih Toplica u brigadi »Matija Gubec",
+    "death_place": "u Svibovcu kod Varaždinskih Toplica",
     "party": "SKOJ"
   },
   {
@@ -390356,6 +390297,17 @@
         "pdf_y": 662.5,
         "pdf_x_end": 538.0,
         "pdf_y_end": 672.0
+      },
+      {
+        "soldier_id": "0035113991",
+        "name": "Tuđman Stjepana Franjo",
+        "additional_info": "r. 1922, s. Veliko Trgovišće, Zabok, Hrvat, student, čl. KPJ, NOV 1942.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 4,
+        "pdf_x": 121.3,
+        "pdf_y": 332.8,
+        "pdf_x_end": 273.5,
+        "pdf_y_end": 358.6
       }
     ],
     "ethnicity": "Hrvat",
@@ -400707,10 +400659,6 @@
         "source_page": 2993,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ],
-    "death_place": "Brigada zagorskaj",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -415003,11 +414951,7 @@
     "death_date": "1945",
     "pdf_x_end": 439.7,
     "birth_place": "Prekno, Varaždin",
-    "party": "SKOJ",
-    "death_place": "Brigada braća radić",
-    "borrowed": [
-      "death_place"
-    ]
+    "party": "SKOJ"
   },
   {
     "last_name": "Završinski",
@@ -453530,27 +453474,6 @@
     "pdf_y_end": 266.0
   },
   {
-    "soldier_id": "0035114198",
-    "last_name": "Živković",
-    "middle_name": "Kuzmana",
-    "first_name": "Damjan",
-    "fathers_name": "Kuzman",
-    "full_name": "Živković Kuzmana Damjan",
-    "additional_info": "r. 1919, s. Široko Polje, Đakovo, Hrvat, službenik, čl. KPJ, NOV 1943, ranjen 1944.",
-    "birth_year": "1919",
-    "unit_detail": "Udarna brigada Braća Radić",
-    "pdf_file": "32-divizija-borci.pdf",
-    "pdf_page": 88,
-    "pdf_y": 212.4,
-    "pdf_x": 115.0,
-    "birth_place": "Široko Polje, Đakovo",
-    "ethnicity": "Hrvat",
-    "occupation": "službenik",
-    "pdf_x_end": 266.5,
-    "pdf_y_end": 237.9,
-    "party": "KPJ"
-  },
-  {
     "soldier_id": "0035114197",
     "last_name": "Živković",
     "middle_name": "Rade",
@@ -453958,6 +453881,17 @@
         "pdf_y": 134.0,
         "pdf_x_end": 269.9,
         "pdf_y_end": 143.5
+      },
+      {
+        "soldier_id": "0035114198",
+        "name": "Živković Kuzmana Damjan",
+        "additional_info": "r. 1919, s. Široko Polje, Đakovo, Hrvat, službenik, čl. KPJ, NOV 1943, ranjen 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 88,
+        "pdf_x": 115.0,
+        "pdf_y": 212.4,
+        "pdf_x_end": 266.5,
+        "pdf_y_end": 237.9
       }
     ],
     "ethnicity": "Hrvat",

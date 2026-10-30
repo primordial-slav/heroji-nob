@@ -407,17 +407,56 @@ DEATH_TAIL_RE = re.compile(
     r'pokopan|ostao\s|nije\s|od\s+(?:rana|tifusa|posledica|posljedica|mine|granate|bombe|metka)|(?:' + MONTHS + r')\b|\d)', re.I)
 
 
+# a duty or the unit he fell in, wherever it stands after the place, not only after a comma (2026-10-30, from
+# check_fields.py's list): "u Sremu komandir voda", "na Visu na dužnosti političkog komesara", "u Kloštru Podravskom u
+# sastavu brigade »Braće Radića", "Blato na Cetini, Omiš u Mosorskom bataljonu", "Goražde, obaveštajni oficir
+# bataljona", "Pljevalja, referent saniteta bataljona", "na Banjici . bio komandir čete"; a bracket of such words
+# ("kod Cetingrada (narodni heroj)", "G. Daruvar (kao borac KNOJ-A)", "u Bizovcu (nakon odlaska iz brigade)"); and the
+# unit before the place ("u Kosovskom bataljonu kod Bisiljgrada", "V brigadnom previjalištu u Ježevici")
+_DUTY = (r'(?:politički|polit\.|pol\.)\s+(?:komesar|delegat)\w*|obaveštajni\s+oficir|referent\s+saniteta|'
+         r'(?:omladinski\s+)?rukovodilac|komandir\s+(?:voda|čete|bataljona)|zam[j]?enik\s+(?:političkog\s+)?\w+|'
+         r'narodni\s+heroj')
+# the words between "u" and the unit: no comma and no other preposition ("u Sandžaku, posle napuštanja bataljona" and
+# "u Laćarku u brigadnom previjalištu" name a place first)
+_UNIT_WORD = r'(?:(?!(?:u|v|kod|na|pri|iz)\s)(?:[IVX]+\.|\d+\.|[^\s,.;()]+)\s+)'
+_UNIT_PHRASE = r'(?:u|v)\s+' + _UNIT_WORD + r'{0,3}?(?:brigad\w*|bataljon\w*|previjališt\w*|previja\.lišl\w*)'
+TAIL_ANYWHERE_RE = re.compile(
+    r'\s*[,.;—–]?\s*(?:\b(?:na\s+dužnosti|u\s+svojstvu|u\s+sastavu|kao\s+(?:borac|ranjenik|komandir|komesar|politički|'
+    r'član))\b|\b' + _UNIT_PHRASE + r'\b|\b(?:' + _DUTY + r')\b|\b(?:bio|bila|zbog)\s).*$', re.I)
+UNIT_FIRST_RE = re.compile(r'^(?:' + _UNIT_PHRASE + r'|I?kao\s+' + _UNIT_WORD + r'{0,4}?(?:bataljona|čete|brigade|voda))\b'
+                           r'(?:\s*\([^)]*\))?[\s,.]*(?=(?:u|v|kod|na)\s)', re.I)
+DUTY_BRACKET_RE = re.compile(r'\s*\((?=[^)]*(?:heroj|komesar|komandir|borac|brigad|bataljon|odlaska|\bbi[ol]a?\b))[^)]*\)?')
+# what is no place at all: the unit alone ("u Petrovačkom bataljonu", "(N dalmatinska brigada)", "V borbama brigade"),
+# the bio's sentence ("Bio je vojni instruktor u četi", "Po oslobađanju postaje komandir čete", "; po poročilu ...")
+NO_PLACE_RE = re.compile(r'^(?:' + _UNIT_PHRASE + r'|[(]?\S+\s+(?:dalmatinska|crnogorska|krajiška)\s+brigad\w*\)?|'
+                         r'V\s+borbama\b.*|Bio\b.*|Po\s+oslobađanju\b.*|;.*)$', re.I)
+
+
 def tidy_death_place(value: str) -> str:
-    """A place of death without what the bio ran on with after it (DEATH_TAIL_RE): each part from the first that is no
-    place is cut, the place itself stays; a value that is nothing but such words is left as it is"""
+    """A place of death without what the bio ran on with after it (DEATH_TAIL_RE, TAIL_ANYWHERE_RE): each part from the
+    first that is no place is cut, the place itself stays; a value that is nothing but a unit or a sentence of the bio
+    is no place at all (''); one that is nothing but the other words is left as it is"""
     parts = [p.strip() for p in value.split(',')]
-    if re.search(r'\d|brig|div\b|diviz|odred', parts[0], re.I):
+    if re.search(r'\d|brig|div\b|diviz|odred', parts[0], re.I) and not re.match(r'(?:u|v|\()\s*\S', parts[0], re.I):
         return value                    # the census's column holding a unit ("21.brigada,3.korpus"): no place to keep
     for i, p in enumerate(parts[1:], 1):
         if DEATH_TAIL_RE.match(p):
-            kept = ', '.join(q for q in parts[:i] if q).strip(' ,.')
-            return kept or value
-    return value
+            value = ', '.join(q for q in parts[:i] if q).strip(' ,.') or value
+            break
+    v = value
+    bracket = DUTY_BRACKET_RE.sub('', v)
+    if bracket != v:
+        v = bracket.rstrip(' ,')
+    v = UNIT_FIRST_RE.sub('', v)
+    if NO_PLACE_RE.match(v.strip()):
+        return ''
+    m = TAIL_ANYWHERE_RE.search(v)
+    if m and m.start() >= 3:
+        cut = re.sub(r'(?:\s+\.\s*\S{0,2})+$', '', v[:m.start()])          # "na Banjici . g. Bio komesar čete"
+        cut = re.sub(r'[,\s]+(?:u|v|na|kod)$', '', cut).strip(' ,.;—–(')   # "Bioča, Podgorica, u, omladinski ..."
+        if len(cut) >= 3:
+            v = cut
+    return v or value
 # the next soldier's entry glued into a bio: a sentence that starts with a surname in capitals (the scan may garble
 # its first letters: "iRCEGOVIĆ", "miMUNOVIĆ"); not an abbreviation such as "NOB" or "KPJ"
 GLUED_RE = re.compile(r'[.;]\s+\S{0,2}(?!(?:NOB|NOV|NOVJ|NOR|NOO|NOP|KPJ|SKOJ|SSSR|JNA|BiH|SAD|SFRJ|SUBNOR|KNOJ|OZNA|UDB|AVNOJ|'

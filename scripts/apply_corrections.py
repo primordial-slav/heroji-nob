@@ -711,7 +711,10 @@ def main():
                 if v and 'death_place' not in MANUAL_FIELDS.get(s.get('soldier_id'), ()):
                     new = structured.tidy_death_place(v)
                     if new != v:
-                        s['death_place'] = new
+                        if new:
+                            s['death_place'] = new
+                        else:                   # a unit or the bio's sentence, no place ("u Petrovačkom bataljonu")
+                            s.pop('death_place')
                         tidied += 1
             if tidied:
                 print(f"    Places of death tidied: {tidied}")

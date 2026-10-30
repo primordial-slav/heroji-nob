@@ -7987,13 +7987,11 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "death_date",
-      "death_place",
       "death_type",
       "ethnicity"
     ],
     "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "5 vojvođanska brigad"
+    "death_date": "1944"
   },
   {
     "last_name": "Bogunović",
@@ -35054,26 +35052,20 @@
     "soldier_id": "0082001572",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 377.5
-  },
-  {
-    "last_name": "Kovačević",
-    "middle_name": "Rajka",
-    "first_name": "Petar",
-    "fathers_name": "Rajko",
-    "full_name": "Kovačević Rajka Petar",
-    "additional_info": "1921, Karlovčić, Zemun, zemljoradnik, borac.",
-    "birth_year": "1921",
-    "pdf_page": 66,
-    "pdf_y": 381.0,
-    "pdf_x": 97.2,
-    "pdf_y_end": 399.7,
-    "pdf_file": "5-vojvodjanska.pdf",
-    "birth_place": "Karlovčić, Zemun",
-    "soldier_id": "0082001573",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 377.2
+    "pdf_x_end": 377.5,
+    "other_sources": [
+      {
+        "soldier_id": "0082001573",
+        "name": "Kovačević Rajka Petar",
+        "additional_info": "1921, Karlovčić, Zemun, zemljoradnik, borac.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 66,
+        "pdf_x": 97.2,
+        "pdf_y": 381.0,
+        "pdf_x_end": 377.2,
+        "pdf_y_end": 399.7
+      }
+    ]
   },
   {
     "last_name": "Kovačević",
@@ -44550,26 +44542,20 @@
     "soldier_id": "0082002004",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 332.3
-  },
-  {
-    "last_name": "Melik",
-    "middle_name": "",
-    "first_name": "Jan",
-    "fathers_name": "",
-    "full_name": "Melik Jan",
-    "additional_info": "1922, Bački Petrovac, Novi Sad, radnik, borac.",
-    "birth_year": "1922",
-    "pdf_page": 81,
-    "pdf_y": 374.3,
-    "pdf_x": 68.5,
-    "pdf_y_end": 384.3,
-    "pdf_file": "5-vojvodjanska.pdf",
-    "birth_place": "Bački Petrovac, Novi Sad",
-    "soldier_id": "0082002005",
-    "occupation": "radnik",
-    "rank": "borac",
-    "pdf_x_end": 336.1
+    "pdf_x_end": 332.3,
+    "other_sources": [
+      {
+        "soldier_id": "0082002005",
+        "name": "Melik Jan",
+        "additional_info": "1922, Bački Petrovac, Novi Sad, radnik, borac.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 81,
+        "pdf_x": 68.5,
+        "pdf_y": 374.3,
+        "pdf_x_end": 336.1,
+        "pdf_y_end": 384.3
+      }
+    ]
   },
   {
     "last_name": "Mesarović",
@@ -88690,10 +88676,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "5.srpska udarna brig"
+    ]
   },
   {
     "last_name": "Đukić",

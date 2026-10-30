@@ -27,6 +27,7 @@ from standardize_fields import date_form, standard
 CENSUS_BOOK = 'zrtve-rata-1964-'
 NOT_DEATHS = {'zarobljen', 'ranjen'}            # a fate that is no death (lib/deathDay.ts)
 DEATH_FIELDS = ('death_type', 'death_date', 'death_place')
+UNIT_NO_PLACE = re.compile(r'brig|\bdiv\b|\bdiv\.|diviz|odred|bataljon|korpus|pogrešan', re.I)
 
 
 def put_back(soldiers: list[dict], manual: dict) -> int:
@@ -82,6 +83,10 @@ def fill_from(s: dict, book: str, e: dict) -> list[str]:
         return []
     import find_source_duplicates as fsd
     vals = reference_fields(book, e)
+    # the census's column of the place of death often holds his unit, no place ("Cankarjeva brigada", "1 brigada 1
+    # divizija", "11.brigada 26.div.", "Pogrešan od 9.1944"): nothing to lend (2026-10-30, check_fields.py's list)
+    if UNIT_NO_PLACE.search(vals.get('death_place') or ''):
+        vals.pop('death_place')
     year = re.search(r'1[89]\d\d', s.get('death_date') or '')
     other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
     if (fsd.fate(s) == 'lived' or s.get('death_after_war') or s.get('death_type') in NOT_DEATHS
