@@ -142,7 +142,7 @@ export const mk: Messages = {
       items.map(([org, year]) => (({ SKOJ: 'СКОЈ', KPJ: 'КПЈ', KPH: 'КПХ', KPS: 'КПС' } as Record<string, string>)[org] ?? org) +
         (year ? ` од ${year}` : '')).join(', '),
     nob: 'Во НОБ',
-    unit: (kind: string) => ({ brigade: 'Во бригадата', division: 'Во дивизијата', detachment: 'Во одредот' } as Record<string, string>)[kind] ?? 'Во единицата',
+    unit: (kind: string) => ({ brigade: 'Во бригадата', division: 'Во дивизијата', detachment: 'Во одредот', battalion: 'Во баталјонот', company: 'Во четата' } as Record<string, string>)[kind] ?? 'Во единицата',
     duty: 'Должност',
     moved: 'Преместен',
     ill: 'Заболел',
@@ -196,6 +196,7 @@ export const mk: Messages = {
     next: 'Следен',
     fields: {
       father: 'Татко',
+      mother: 'Мајка',
       ethnicity: 'Националност',
       occupation: 'Занимање',
       party: 'Партија',

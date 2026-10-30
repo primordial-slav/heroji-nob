@@ -7,7 +7,7 @@ import { isWoman } from './standIn'
 // same rows in the same order, the dialog adding its links beside the ones it links (the place, the comrades, the
 // same day). A row is left out where the record gives nothing for it.
 
-export type FactKey = 'father' | 'born' | 'ethnicity' | 'occupation' | 'unit' | 'party' | 'death'
+export type FactKey = 'father' | 'mother' | 'born' | 'ethnicity' | 'occupation' | 'unit' | 'party' | 'death'
 
 export interface Fact {
   key: FactKey
@@ -15,12 +15,14 @@ export interface Fact {
   value: string
 }
 
-/** A unit as its name says it is: "brigade", "division", "detachment" (odred), or "unit" */
+/** A unit as its name says it is: "brigade", "division", "detachment" (odred), "battalion", "company", or "unit" */
 export function unitKind(name?: string): string {
   if (!name) return 'unit'
   if (/divizij/i.test(name)) return 'division'
   if (/odred/i.test(name)) return 'detachment'
   if (/brigad/i.test(name)) return 'brigade'
+  if (/bataljon/i.test(name)) return 'battalion'
+  if (/(?<!\p{L})četa(?!\p{L})/iu.test(name)) return 'company'
   return 'unit'
 }
 
@@ -29,8 +31,8 @@ export function unitKind(name?: string): string {
 const FULL_NAME = /^\p{Lu}\p{Ll}{2,}(?:-\p{Lu}\p{Ll}+)?$/u
 
 /**
- * Otac, Rođen, Narodnost, Zanimanje, U brigadi, Partija and the fate, in the page's language; the values as the
- * books give them (scripts/standardize_fields.py gives the dates one form)
+ * Otac (or Majka), Rođen, Narodnost, Zanimanje, U brigadi, Partija and the fate, in the page's language; the values as
+ * the books give them (scripts/standardize_fields.py gives the dates one form)
  */
 export function recordFacts(soldier: Soldier, t: Messages, unitName?: string): Fact[] {
   const woman = isWoman(soldier)
@@ -40,13 +42,18 @@ export function recordFacts(soldier: Soldier, t: Messages, unitName?: string): F
   }
   const f = t.record.fields
   if (FULL_NAME.test(soldier.fathers_name?.trim() ?? '')) add('father', f.father, soldier.fathers_name.trim())
+  // the mother, where the book names her for an unknown father (the census's "Ajduk (Ruža) Joze"; standardize_fields.py)
+  if (FULL_NAME.test(soldier.mothers_name?.trim() ?? '')) add('mother', f.mother, soldier.mothers_name!.trim())
   // the day of birth where an entry gives it, else the year; and the years other books give ("1915 ili 1918")
   const or = ` ${t.record.or} `
   const born = [soldier.birth_date || soldier.birth_year, ...(soldier.variants?.born ?? [])].filter(Boolean).join(or)
   add('born', t.life.born(woman), [born, soldier.birth_place].filter(Boolean).join(', '))
-  add('ethnicity', f.ethnicity, soldier.ethnicity)
+  // the census's "ostalo" (another nationality) says nothing on its own
+  add('ethnicity', f.ethnicity, soldier.ethnicity === 'ostalo' ? '' : soldier.ethnicity)
   add('occupation', f.occupation, soldier.occupation)
-  add('unit', t.life.unit(unitKind(unitName)), [soldier.unit_detail, soldier.rank].filter(Boolean).join(', '))
+  // the sub-unit, then the duty after a dot: "1. četa, 2. bataljon · komandir voda, komandir čete" (the user's choice of
+  // 2026-10-30: a comma between them hid where the unit ends)
+  add('unit', t.life.unit(unitKind(unitName)), [soldier.unit_detail, soldier.rank].filter(Boolean).join(' · '))
   // "Partija: SKOJ od 1941, KPJ od 1944"
   const party = partyOf(soldier)
   if (party.length) add('party', f.party, t.life.party(party))

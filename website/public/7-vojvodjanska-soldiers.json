@@ -7209,6 +7209,14 @@
     "death_place": "Bolman",
     "other_sources": [
       {
+        "soldier_id": "9021060020",
+        "name": "Bošnjak (Živko) Pavo",
+        "additional_info": "rođen 1919, Šumarina (Beli Manastir). Hrvat, poginuo 1945. u NOBu, Bolman",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=7",
+        "source_page": 7,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0111010180",
         "name": "Bošnjak Pavo",
         "additional_info": "1919, Sumarina, Darda, borac, poginuo 7. 3. 1945. u s. Bolman.",
@@ -7220,6 +7228,10 @@
         "pdf_y_end": 391.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -16078,7 +16090,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "7 vojvođanska br."
+    "death_place": "7 vojvođanska br"
   },
   {
     "last_name": "Gložanski",
@@ -21730,10 +21742,10 @@
     "pdf_y_end": 379.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001075",
-    "ethnicity": "Grk",
     "rank": "bolničarka",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 364.5
+    "pdf_x_end": 364.5,
+    "birth_place": "Grk"
   },
   {
     "last_name": "Janković",
@@ -30388,7 +30400,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Suhorutove slavonija"
+    "death_place": "Suhorutove, Slavonija"
   },
   {
     "last_name": "Krasov",
@@ -38535,9 +38547,9 @@
     "pdf_y_end": 412.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001861",
-    "ethnicity": "Grk",
     "rank": "vodnik",
-    "pdf_x_end": 304.1
+    "pdf_x_end": 304.1,
+    "birth_place": "Grk"
   },
   {
     "last_name": "Mijatović",
@@ -39541,7 +39553,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Bolman-virovit."
+    "death_place": "Bolman-virovit"
   },
   {
     "last_name": "Miličić",
@@ -48204,9 +48216,9 @@
     "pdf_y_end": 213.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002324",
-    "ethnicity": "Grk",
     "rank": "komandir čete",
-    "pdf_x_end": 360.3
+    "pdf_x_end": 360.3,
+    "birth_place": "Grk"
   },
   {
     "last_name": "Petaković",
@@ -68352,6 +68364,14 @@
         "ref_book": "teslic-u-nob-poginuli"
       },
       {
+        "soldier_id": "9025005550",
+        "name": "Vučić (Stevo) Branko",
+        "additional_info": "rođen 1912, Beograd-Stari Grad (Beograd Stari Grad). Srbin, poginuo 1944. u NOBu, 7.vojv.brigada",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=224",
+        "source_page": 224,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0111000592",
         "name": "Vučić Branko",
         "additional_info": "rođ. 1912, Cesava (Teslić), komesar čete, pog. 15. 11. 1944, Batina.",
@@ -68375,6 +68395,10 @@
         "pdf_x_end": 368.9,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {

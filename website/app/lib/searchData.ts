@@ -391,7 +391,10 @@ export function kinPage(data: SearchData, unit: number, id: string): string | nu
   const start = data.unitStart[unit]
   const size = data.unitStart[unit + 1] - start
   const row = (j: number) => `[${data.position[start + j]},${kinRow(data, start + j)}]`
-  const path = kin.paths[k]
+  // Borci drugih jedinica and the census's parts gather men of every unit: a sub-unit is a group of comrades there only
+  // under the brigade or odred it names (relations.ts, HIGHER), and the same day is no one's comrade (2026-10-30)
+  const ostali = units[unit].id.startsWith('ostali-borci')
+  const path = ostali && !kin.paths[k][0]?.startsWith('g:') ? [] : kin.paths[k]
   const levels = path.map((_, depth) => {
     const members: number[] = []
     kin.paths.forEach((p, j) => {
@@ -399,7 +402,7 @@ export function kinPage(data: SearchData, unit: number, id: string): string | nu
     })
     return members
   })
-  const day = kin.days[k]
+  const day = ostali ? null : kin.days[k]
   const sameDay: number[] = []
   if (day) kin.days.forEach((d, j) => d === day && sameDay.push(j))
   // each soldier's row once, however many groups he is in

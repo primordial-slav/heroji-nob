@@ -23,8 +23,31 @@ function number(raw: string): string | null {
   return ROMAN[n] ? String(ROMAN[n]) : null
 }
 
+// A unit above the battalions, in a division's records or Borci drugih jedinica's: "3. bataljon, 18. srpska brigada",
+// "brigada »Braća Radić«", "Turopoljsko-posavski partizanski odred", "422. vazduhoplovni puk". It heads the path, so
+// a division's 3. bataljon is its brigade's, not every brigade's (2026-10-30: the 25. srpska divizija's "3. bataljon,
+// 18. srpska brigada" counted 263 comrades, the 18.'s alone 88). Its key leaves out what the books print otherwise:
+// quotes, "udarna", a Roman numeral ("I udarna zagorska brigada", "brigada »Braća Radić«", "Udarna brigada Braća Radić")
+const HIGHER = /(?<!\p{L})(?:brigada|odred|puk)(?!\p{L})/iu
+const STAFF_PART = /^(?:štab|prištap|komanda|politodjel|politodel)/iu
+
+const ORDINAL: Record<string, number> = { prva: 1, druga: 2, treća: 3, četvrta: 4, peta: 5, šesta: 6, sedma: 7, osma: 8 }
+
+function higherKey(part: string): string {
+  const key = part.toLowerCase()
+    .replace(/[»«„“”"']/g, '')
+    .replace(/(?<!\p{L})(?:udarna|partizanski|nop|narodnooslobodilački)(?!\p{L})/gu, '')
+    .replace(/^([ivx]+)\.?(?=\s)/, (m, r: string) => (ROMAN[r] ? `${ROMAN[r]}.` : m))
+    .replace(/^(prva|druga|treća|četvrta|peta|šesta|sedma|osma)(?=\s)/u, (m, w: string) => `${ORDINAL[w]}.`)
+    .replace(/\s+/g, ' ').trim()
+  // a named brigade or an odred is one with its number or without: "16. omladinska brigada »Joža Vlahović«",
+  // "2. Karlovački NOP odred" and "Karlovački partizanski odred"
+  return /(?:brigada \p{L}|odred$)/u.test(key) ? key.replace(/^\d+\.\s/, '') : key
+}
+
 export function subunitPath(detail?: string): Level[] {
   if (!detail) return []
+  let higher: Level | null = null
   let battalion: Level | null = null
   let company: Level | null = null
   let platoon: Level | null = null
@@ -34,7 +57,9 @@ export function subunitPath(detail?: string): Level[] {
   for (const raw of detail.split(/,\s*/)) {
     const part = raw.trim()
     let m: RegExpMatchArray | null
-    if ((m = part.match(/^([0-9]+\.?|[IVXivx]{1,4}\.?)\s+(?:([a-zčćžšđ]+)\s+)?(?:bataljon|bat\.)$/i)) && number(m[1])) {
+    if (!higher && HIGHER.test(part) && !STAFF_PART.test(part)) {
+      higher = { key: `g:${higherKey(part)}`, label: part }
+    } else if ((m = part.match(/^([0-9]+\.?|[IVXivx]{1,4}\.?)\s+(?:([a-zčćžšđ]+)\s+)?(?:bataljon|bat\.)$/i)) && number(m[1])) {
       const n = number(m[1])!
       battalion = m[2]
         ? { key: `b${n}:${m[2].toLowerCase()}`, label: `${n}. ${m[2].toLowerCase()} bataljon` }
@@ -59,10 +84,11 @@ export function subunitPath(detail?: string): Level[] {
     }
   }
   const lower = [company, platoon, squad].filter((l): l is Level => l !== null)
-  if (battalion) return [battalion, ...lower]
+  const top = higher ? [higher] : []
+  if (battalion) return [...top, battalion, ...lower]
   // the companies at brigade staff (signals, scouts, quartermasters) go under one node, as the books group them
-  if (group) return group.key === STAFF.key ? [STAFF, ...lower] : [STAFF, group, ...lower]
-  return lower.length ? [NO_BATTALION, ...lower] : []
+  if (group) return group.key === STAFF.key ? [...top, STAFF, ...lower] : [...top, STAFF, group, ...lower]
+  return lower.length ? [...top, NO_BATTALION, ...lower] : top
 }
 
 const STAFF: Level = { key: 's:prištapske jedinice', label: 'prištapske jedinice', kind: 'staff' }

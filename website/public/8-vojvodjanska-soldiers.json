@@ -1558,6 +1558,14 @@
         "ref_book": "derventa-pali-borci"
       },
       {
+        "soldier_id": "9022013879",
+        "name": "Barišić (Niko) Ivan",
+        "additional_info": "rođen 1926, Gornja Bišnja (Derventa). Hrvat, poginuo 1945. u NOBu, Pjetlovac baran",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1224",
+        "source_page": 1224,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0111010083",
         "name": "Barišić M Ivan",
         "additional_info": "1925, Derventa, poginuo 13. 3. 1945. kod Bolmana.",
@@ -1569,6 +1577,10 @@
         "pdf_y_end": 331.7,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -1663,7 +1675,6 @@
     "last_name": "Basti",
     "middle_name": "Roze",
     "first_name": "Lajčo",
-    "fathers_name": "Roza",
     "full_name": "Basti Roze Lajčo",
     "additional_info": "rođ. 1925, Subotica, borac, poginuo kod Batine",
     "birth_year": "1925",
@@ -1677,7 +1688,8 @@
     "soldier_id": "0078000063",
     "death_place": "Batina",
     "rank": "borac",
-    "pdf_x_end": 338.0
+    "pdf_x_end": 338.0,
+    "mothers_name": "Roza"
   },
   {
     "last_name": "Bazjak",
@@ -19474,7 +19486,7 @@
     "rank": "borac",
     "pdf_x_end": 346.2,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001207",
@@ -23037,7 +23049,7 @@
     "fathers_name": "",
     "full_name": "Spasojević Marko",
     "additional_info": "rođ. u Lezimiru, Sr. Mitrovica, poginuo kod Bukovca krajem 1944.",
-    "birth_year": "",
+    "birth_year": "1924",
     "death_type": "poginuo",
     "pdf_page": 38,
     "pdf_y": 304.8,
@@ -23056,8 +23068,23 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00005912&pg_seq=119",
         "source_page": 118,
         "ref_book": "lezimir"
+      },
+      {
+        "soldier_id": "9027008478",
+        "name": "Spasojević (Sava) Marko",
+        "additional_info": "rođen 1924, Ležimir (Sremska Mitrovica). Srbin, poginuo 1944. u NOBu, Ležimir",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=444",
+        "source_page": 444,
+        "ref_book": "zrtve-rata-1964-voj"
       }
-    ]
+    ],
+    "birth_place": "Ležimir, Sremska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Spevak",
@@ -24074,6 +24101,14 @@
         "ref_book": "cazinska-krajina-pali-borci"
       },
       {
+        "soldier_id": "9022002002",
+        "name": "Sudčević (Manojlo) Žarko",
+        "additional_info": "rođen 1908, Velika Gata (Bihać). Srbin, poginuo 1945. u NOBu, Petrovac-drava",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=158",
+        "source_page": 158,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0111011331",
         "name": "Sudcević Žarko",
         "additional_info": "1908, Cazin, borac, poginuo 10. 3. 1945. kod Bar. Petrovog Sela.",
@@ -24085,6 +24120,10 @@
         "pdf_y_end": 358.8,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26872,7 +26911,6 @@
     "last_name": "Vujić",
     "middle_name": "Kate",
     "first_name": "Franja",
-    "fathers_name": "Kata",
     "full_name": "Vujić Kate Franja",
     "additional_info": "rođ. 1923, Subotica, borac, poginuo kod Suhomlake 21. I 1945.",
     "birth_year": "1923",
@@ -26888,6 +26926,8 @@
     "death_place": "Suhomlaka",
     "rank": "borac",
     "pdf_x_end": 348.0,
+    "mothers_name": "Kata",
+    "fathers_name": "Kale",
     "other_sources": [
       {
         "soldier_id": "0111011475",
@@ -27219,7 +27259,6 @@
     "last_name": "Vukmanov",
     "middle_name": "Ane",
     "first_name": "Paja",
-    "fathers_name": "Ana",
     "full_name": "Vukmanov Ane Paja",
     "additional_info": "rođ. 1918, Subotica, borac, poginuo u Lugu 28. III 1945.",
     "birth_year": "1918",
@@ -27234,7 +27273,8 @@
     "death_date": "28.03.1945",
     "death_place": "Lug",
     "rank": "borac",
-    "pdf_x_end": 348.3
+    "pdf_x_end": 348.3,
+    "mothers_name": "Ana"
   },
   {
     "last_name": "Vukobradić",

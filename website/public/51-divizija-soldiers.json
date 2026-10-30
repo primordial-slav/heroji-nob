@@ -3660,7 +3660,6 @@
     "last_name": "Dimitrijević",
     "middle_name": "Marije",
     "first_name": "Nenad",
-    "fathers_name": "Marija",
     "full_name": "Dimitrijević Marije Nenad",
     "additional_info": "rođ. 1915, Stapar, pog. 12. 11. 1944, Batina.",
     "birth_year": "1915",
@@ -3675,6 +3674,7 @@
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000107",
     "pdf_x_end": 526.4,
+    "mothers_name": "Marija",
     "other_sources": [
       {
         "soldier_id": "0075000406",
@@ -7201,7 +7201,6 @@
     "last_name": "Jovanović",
     "middle_name": "Draginje",
     "first_name": "Stevan",
-    "fathers_name": "Draginja",
     "full_name": "Jovanović Draginje Stevan",
     "additional_info": "rođ. 1925, Ban. Novo Selo, borac, pog. 8. 11. 1944, Batina.",
     "birth_year": "1925",
@@ -7216,7 +7215,8 @@
     "pdf_y_end": 485.2,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000209",
-    "pdf_x_end": 524.1
+    "pdf_x_end": 524.1,
+    "mothers_name": "Draginja"
   },
   {
     "last_name": "Jovanović",
@@ -14251,7 +14251,6 @@
     "last_name": "Plavšić",
     "middle_name": "Roze",
     "first_name": "Joca",
-    "fathers_name": "Roza",
     "full_name": "Plavšić Roze Joca",
     "additional_info": "rođ. 1926, Subotica, borac, pog. 26. 11. 1944. kod Luga.",
     "birth_year": "1926",
@@ -14267,6 +14266,8 @@
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000419",
     "pdf_x_end": 570.6,
+    "mothers_name": "Roza",
+    "fathers_name": "Rože",
     "other_sources": [
       {
         "soldier_id": "0078000730",
@@ -18767,6 +18768,14 @@
         "ref_book": "cazinska-krajina-pali-borci"
       },
       {
+        "soldier_id": "9027010241",
+        "name": "Veselica (Mane) Branko",
+        "additional_info": "rođen 1921, Sirig (Temerin). Srbin, poginuo 1944. u NOBu, Batina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=553",
+        "source_page": 553,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
         "soldier_id": "0075002263",
         "name": "Veselica Branko",
         "additional_info": "iz Bihaća, 1922, poginuo kod Batine.",
@@ -18780,6 +18789,10 @@
       }
     ],
     "unit_detail": "12. vojvođanska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "variants": {
       "death": [
         {
@@ -20035,6 +20048,14 @@
         "ref_book": "teslic-u-nob-poginuli"
       },
       {
+        "soldier_id": "9025005550",
+        "name": "Vučić (Stevo) Branko",
+        "additional_info": "rođen 1912, Beograd-Stari Grad (Beograd Stari Grad). Srbin, poginuo 1944. u NOBu, 7.vojv.brigada",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=224",
+        "source_page": 224,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0022003296",
         "name": "Vučić Branko",
         "additional_info": "1912, Teslić, komesar 3. čete, pog. 15.11.1944, Batina. Pohvaljen za borbu kod Bekteža 29.08.1944.",
@@ -20047,7 +20068,11 @@
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ],
-    "unit_detail": "7. vojvođanska brigada"
+    "unit_detail": "7. vojvođanska brigada",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vučković",
@@ -23962,6 +23987,14 @@
         "ref_book": "derventa-pali-borci"
       },
       {
+        "soldier_id": "9022013879",
+        "name": "Barišić (Niko) Ivan",
+        "additional_info": "rođen 1926, Gornja Bišnja (Derventa). Hrvat, poginuo 1945. u NOBu, Pjetlovac baran",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1224",
+        "source_page": 1224,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0078000059",
         "name": "Barišić M Ivan",
         "additional_info": "rođ. 1925, Derventa, poginuo kod Bolmana 13. III",
@@ -23973,6 +24006,10 @@
         "pdf_y_end": 401.2,
         "unit_file": "8-vojvodjanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26497,6 +26534,14 @@
     "pdf_x_end": 349.4,
     "other_sources": [
       {
+        "soldier_id": "9021060020",
+        "name": "Bošnjak (Živko) Pavo",
+        "additional_info": "rođen 1919, Šumarina (Beli Manastir). Hrvat, poginuo 1945. u NOBu, Bolman",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=7",
+        "source_page": 7,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0022000351",
         "name": "Bošnjak Pavo",
         "additional_info": "1919, Šumarina, borac, pog. 7.03.1945, Bolman.",
@@ -26508,6 +26553,10 @@
         "pdf_y_end": 360.6,
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33844,7 +33893,21 @@
     "death_type": "poginuo",
     "death_date": "11.12.1944",
     "death_place": "Belišće",
-    "pdf_x_end": 357.9
+    "pdf_x_end": 357.9,
+    "other_sources": [
+      {
+        "soldier_id": "9021060064",
+        "name": "Horvat (Mijo) Ivan",
+        "additional_info": "rođen 1914, Podravske Sesvete (Djurdjevac). Hrvat, ubijen 1944. u NOBu, Bistrica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=277",
+        "source_page": 277,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Horvat",
@@ -38671,6 +38734,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=155",
         "source_page": 155,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "9035003241",
+        "name": "Klać Ilijina Milica",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Budva: godina rođenja 1922; mjesto rođenja Brajići; godina smrti 1945; mjesto pogibije Banat",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 83,
+        "pdf_x": 62.3,
+        "pdf_y": 208.1,
+        "pdf_x_end": 444.7,
+        "pdf_y_end": 217.6,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
     "ethnicity": "Crnogorka",
@@ -52370,7 +52445,6 @@
     "last_name": "Petrović",
     "middle_name": "Julke",
     "first_name": "Josip",
-    "fathers_name": "Julka",
     "full_name": "Petrović Julke Josip",
     "additional_info": "1925, Crepaja, Kovačica, borac, poginuo 25. 4. 1945. u s. Dugo Selo.",
     "birth_year": "1925",
@@ -52386,7 +52460,8 @@
     "death_date": "25.04.1945",
     "death_place": "Dugo Selo",
     "rank": "borac",
-    "pdf_x_end": 363.8
+    "pdf_x_end": 363.8,
+    "mothers_name": "Julka"
   },
   {
     "last_name": "Petrović",
@@ -52841,7 +52916,7 @@
     "rank": "borac",
     "pdf_x_end": 363.4,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "death_place": "Baranjsko Petrovo Selo",
     "other_sources": [
@@ -59679,6 +59754,14 @@
         "ref_book": "cazinska-krajina-pali-borci"
       },
       {
+        "soldier_id": "9022002002",
+        "name": "Sudčević (Manojlo) Žarko",
+        "additional_info": "rođen 1908, Velika Gata (Bihać). Srbin, poginuo 1945. u NOBu, Petrovac-drava",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=158",
+        "source_page": 158,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0078000882",
         "name": "Sudćević Žarko",
         "additional_info": "rođ. 1908, Cazin, borac, poginuo kod Baranjskog Petrovog Sela, 10. III 1945.",
@@ -59690,6 +59773,10 @@
         "pdf_y_end": 154.3,
         "unit_file": "8-vojvodjanska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {

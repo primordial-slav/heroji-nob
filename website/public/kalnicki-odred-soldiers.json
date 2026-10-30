@@ -348,10 +348,18 @@
     "pdf_x_end": 289.9,
     "birth_place": "Vojsak, Pregrada",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
+      {
+        "soldier_id": "9021060258",
+        "name": "Antolić (Florjan) Petar",
+        "additional_info": "rođen 1921, Vojsak (Krapina). Hrvat, poginuo 1944. u NOBu, Sambolići",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1019",
+        "source_page": 1019,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0035100085",
         "name": "Antolić Florijana Petar",
@@ -364,6 +372,10 @@
         "pdf_y_end": 488.7,
         "unit_file": "32-divizija-soldiers.json"
       }
+    ],
+    "death_place": "Sambolići",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -383,7 +395,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Vojsak, Pregrada",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100086",
@@ -576,7 +588,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -662,7 +674,7 @@
     "pdf_x_end": 466.7,
     "birth_place": "Sesvete, Zagreb",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -848,8 +860,11 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "party": "SKOJ",
+    "occupation": "domaćica",
+    "borrowed": [
+      "occupation"
+    ],
     "other_sources": [
       {
         "soldier_id": "0035100210",
@@ -952,7 +967,7 @@
     "death_type": "poginuo",
     "rank": "borac",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "death_date": "1943",
     "other_sources": [
       {
@@ -1169,7 +1184,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Drenovec, Novi Marof",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100258",
@@ -1868,7 +1883,7 @@
     "death_type": "poginuo",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100390",
@@ -1901,7 +1916,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Ravnice, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -2385,7 +2400,7 @@
     "pdf_x_end": 466.8,
     "birth_place": "Lipnica, Vrbovec",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100429",
@@ -2418,7 +2433,7 @@
     "pdf_x_end": 466.8,
     "birth_place": "Risvica, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100437",
@@ -2650,7 +2665,7 @@
     "pdf_x_end": 280.9,
     "birth_place": "Žabnjak, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -2915,7 +2930,6 @@
     "last_name": "Begović",
     "middle_name": "Marice",
     "first_name": "Antun",
-    "fathers_name": "Marica",
     "full_name": "Begović Marice Antun",
     "additional_info": "r.1921; Bjelovar; član SKOJ-a i KP; u KPO od listopada 1942.",
     "birth_year": "1921",
@@ -2927,7 +2941,8 @@
     "soldier_id": "0058000124",
     "pdf_x_end": 281.1,
     "birth_place": "Bjelovar",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "mothers_name": "Marica"
   },
   {
     "last_name": "Begović",
@@ -3352,7 +3367,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100624",
@@ -3404,7 +3419,7 @@
     "death_type": "poginuo",
     "rank": "vodnik",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -3523,7 +3538,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100641",
@@ -3596,7 +3611,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100649",
@@ -3787,7 +3802,7 @@
     "birth_place": "Struga, Ludbreg",
     "rank": "desetar",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "party": "KPJ",
@@ -4022,7 +4037,7 @@
     "pdf_x_end": 467.2,
     "birth_place": "Kladnik, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -4056,7 +4071,7 @@
     "pdf_x_end": 467.3,
     "birth_place": "Goričan, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -4317,7 +4332,7 @@
     "pdf_x_end": 468.0,
     "birth_place": "Ravnice, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -4517,7 +4532,6 @@
     "last_name": "Biškup",
     "middle_name": "Marije",
     "first_name": "Petar",
-    "fathers_name": "Marija",
     "full_name": "Biškup Marije Petar",
     "additional_info": "zvani Veno; r.1918; Podgorci, Bjelovar; član KP; pripadnik Prvog ZgbPO od 1941; 1942. djelovao na uspostavljanju veze i okupljanju bilogorskih i kalnickih partizana u KPO; poginuo 23. travnja 1945. kao komandant 32. divizije; posmrtno odlikovan Ordenom narodnog heroja.",
     "birth_year": "1918",
@@ -4575,12 +4589,14 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
+    "mothers_name": "Marija",
     "ethnicity": "Hrvat",
     "borrowed": [
       "ethnicity",
       "occupation"
     ],
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "fathers_name": "Marij"
   },
   {
     "last_name": "Biškup",
@@ -4599,7 +4615,7 @@
     "pdf_x_end": 280.8,
     "birth_place": "Boije, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100821",
@@ -4636,7 +4652,7 @@
     "death_place": "Varaždin Breg",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100826",
@@ -4672,7 +4688,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021018019",
@@ -4857,7 +4873,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Mihovljan, Zlatar- Bistrica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035100876",
@@ -5050,6 +5066,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=88",
         "source_page": 84,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000081",
+        "name": "Blažić Šime Antun",
+        "additional_info": "Rođen 28-VII-1916 u Globočcu, Ludbreg. Varaždin. Hrvatska. Zemljoraa'nik. Član KPJ od 2-II-1942. U NOB stupio 1941. Ubio se da ne bi živ pao u ruke neprijatelju septembra 1943 kod sela Maruševeca. Za narodnog heroja proglašen 5-VII-195 I .",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=87",
+        "source_page": 65,
+        "ref_book": "zbornik-heroja-1957"
       }
     ],
     "birth_date": "28.05.1916"
@@ -5967,7 +5991,7 @@
     "pdf_x_end": 467.9,
     "birth_place": "Kalnik, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101079",
@@ -6244,7 +6268,7 @@
     "pdf_x_end": 281.1,
     "birth_place": "Jelovec, Zlatar- Bistrica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "party": "KPJ",
     "other_sources": [
@@ -6299,7 +6323,7 @@
     "death_date": "06.04.1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021053174",
@@ -6375,7 +6399,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Kloštar Vojakovački, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -6746,7 +6770,6 @@
     "last_name": "Bregović",
     "middle_name": "Marije",
     "first_name": "Franjo",
-    "fathers_name": "Marija",
     "full_name": "Bregović Marije Franjo",
     "additional_info": "r. 1920; Slanje, Ludbreg; član KP ; u KPO od",
     "birth_year": "1920",
@@ -6761,6 +6784,8 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "KPJ",
+    "mothers_name": "Marija",
+    "fathers_name": "Marij",
     "other_sources": [
       {
         "soldier_id": "0035101229",
@@ -6780,7 +6805,6 @@
     "last_name": "Bregović",
     "middle_name": "Marije",
     "first_name": "Ivan",
-    "fathers_name": "Marija",
     "full_name": "Bregović Marije Ivan",
     "additional_info": "r. 1913; Slanje, Ludbreg ; član KP ; u KPO od srpnja 1943.",
     "birth_year": "1913",
@@ -6795,6 +6819,8 @@
     "ethnicity": "Hrvat",
     "occupation": "obrtnik",
     "party": "KPJ",
+    "mothers_name": "Marija",
+    "fathers_name": "Marij",
     "other_sources": [
       {
         "soldier_id": "0035101232",
@@ -6832,7 +6858,6 @@
     "last_name": "Bregović",
     "middle_name": "Eve",
     "first_name": "Vinko",
-    "fathers_name": "Eva",
     "full_name": "Bregović Eve Vinko",
     "additional_info": "r. 1906; Madaraševec, Ludbreg ; u KPO od travnja",
     "birth_year": "1906",
@@ -6843,7 +6868,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000288",
     "pdf_x_end": 458.5,
-    "birth_place": "Madaraševec, Ludbreg"
+    "birth_place": "Madaraševec, Ludbreg",
+    "mothers_name": "Eva"
   },
   {
     "last_name": "Breka",
@@ -6936,7 +6962,7 @@
     "death_date": "1944",
     "death_place": "Podravina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101258",
@@ -7071,7 +7097,7 @@
     "pdf_x_end": 289.7,
     "birth_place": "Ribnjak, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -7261,7 +7287,6 @@
     "death_place": "u Velikoj Čresnjevici",
     "rank": "komesar bataljona",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -7380,7 +7405,7 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021021326",
@@ -7445,7 +7470,7 @@
     "pdf_x_end": 290.2,
     "birth_place": "Kladnik, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -7647,7 +7672,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101371",
@@ -7698,7 +7723,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Šelovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035113564",
@@ -8155,7 +8180,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000202",
@@ -8425,7 +8450,7 @@
     "pdf_x_end": 457.5,
     "birth_place": "Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101608",
@@ -9038,7 +9063,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Mokrice, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1945",
     "other_sources": [
@@ -9388,6 +9413,22 @@
         "ref_book": "pali-za-lepsa-svitanja"
       },
       {
+        "soldier_id": "9002000228",
+        "name": "Demonja Ilije Nikola",
+        "additional_info": "Rođen je 6. decembra 1919. u selu Vlaho vic, Gliria, Hrvatska. … Narodnim herojem proglašen je 19. juna 1945. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=189",
+        "source_page": 185,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9021012914",
+        "name": "Demonja (Ilija) Nikola",
+        "additional_info": "rođen 1919, Vlahović (Glina). Srbin, poginuo 1944. u NOBu, Sl.požega",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=555",
+        "source_page": 555,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0016000501",
         "name": "Demonja J Nikola",
         "additional_info": "rođen 1919, Vlahović, Glina — poginuo 6. 9. 1944, SI. Požega",
@@ -9400,7 +9441,12 @@
         "unit_file": "17-slavonska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "06.12.1919"
   },
   {
     "last_name": "Detal-Koren",
@@ -9437,7 +9483,7 @@
     "pdf_x_end": 289.6,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -9663,7 +9709,7 @@
       "ethnicity"
     ],
     "death_date": "1943",
-    "death_place": "Sivač-slavonija"
+    "death_place": "Sivač, Slavonija"
   },
   {
     "last_name": "Dević",
@@ -9733,7 +9779,7 @@
     "pdf_x_end": 289.2,
     "birth_place": "Krušljevac, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101900",
@@ -9879,7 +9925,7 @@
     "pdf_x_end": 466.5,
     "birth_place": "Podlužan, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101928",
@@ -10054,7 +10100,7 @@
     "pdf_x_end": 467.2,
     "birth_place": "Karlovec Ludbreški, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035101960",
@@ -10246,7 +10292,6 @@
     "death_date": "1944",
     "rank": "desetar, komandant bataljona, komandant brigade",
     "ethnicity": "Srbin",
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "0058010025",
@@ -10305,7 +10350,11 @@
       }
     ],
     "unit_detail": "1. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "poljoprivrednik",
+    "borrowed": [
+      "occupation"
+    ]
   },
   {
     "last_name": "Dožajić",
@@ -10393,7 +10442,7 @@
     "death_date": "17.10.1943",
     "rank": "borac",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035102037",
@@ -10874,7 +10923,6 @@
     "birth_place": "Sračinec, Varaždin",
     "death_type": "poginuo",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "death_date": "1945",
     "party": "SKOJ",
     "other_sources": [
@@ -10939,7 +10987,7 @@
     "pdf_x_end": 458.8,
     "birth_place": "Sračinec, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -11030,7 +11078,7 @@
     "death_place": "Subotica Podravska, Koprivnica",
     "rank": "komandir čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000304",
@@ -11080,7 +11128,7 @@
     "death_place": "u Lojnici, Vrbovec",
     "rank": "obavještajni oficir",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000303",
@@ -11391,7 +11439,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Kloštar Vojakovački, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -11461,7 +11509,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Kloštar Vojakovački, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -11671,7 +11719,7 @@
     "birth_place": "Veliki Poganac, Koprivnica",
     "rank": "vodnik",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -12330,7 +12378,6 @@
     "last_name": "Ferenčak",
     "middle_name": "Kate",
     "first_name": "Stanko",
-    "fathers_name": "Kata",
     "full_name": "Ferenčak Kate Stanko",
     "additional_info": "r.1929; Kraljev Vrh, Donja Stubica; član SKOJ-a; u KPO od 1943.",
     "birth_year": "1929",
@@ -12343,8 +12390,9 @@
     "pdf_x_end": 458.9,
     "birth_place": "Kraljev Vrh, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
+    "mothers_name": "Kata",
     "other_sources": [
       {
         "soldier_id": "0035102295",
@@ -12731,7 +12779,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Severin, Bjelovar",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -12853,7 +12901,7 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9055000022",
@@ -13371,7 +13419,7 @@
     "pdf_x_end": 466.6,
     "birth_place": "Globočec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -13422,7 +13470,7 @@
     "birth_place": "Ljubešćica, Novi Marof",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -13473,7 +13521,7 @@
     "pdf_x_end": 466.9,
     "birth_place": "Komarnica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035102526",
@@ -13639,7 +13687,7 @@
     "pdf_x_end": 466.8,
     "birth_place": "Kotoriba, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -13844,7 +13892,7 @@
     "pdf_x_end": 279.9,
     "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -13898,7 +13946,7 @@
     "pdf_x_end": 280.8,
     "birth_place": "Bolfan, Ludbreg",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035102626",
@@ -14029,7 +14077,7 @@
     "pdf_x_end": 281.0,
     "birth_place": "Lučelnica, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035102654",
@@ -14242,7 +14290,6 @@
     "pdf_x_end": 281.6,
     "birth_place": "Tomina",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -14296,7 +14343,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -14349,7 +14396,7 @@
     "pdf_x_end": 281.8,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "birth_year": "1926",
     "borrowed": [
@@ -14416,7 +14463,7 @@
     "pdf_x_end": 457.8,
     "birth_place": "Vinogradi Ludbreški, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -14474,7 +14521,7 @@
     "pdf_x_end": 457.8,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -14641,7 +14688,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Prosenik, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035102771",
@@ -14777,7 +14824,7 @@
     "birth_place": "Krapina Selo, Zlatar- Bistrica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -14812,7 +14859,7 @@
     "birth_place": "Konjščina, Zlatar- Bistrica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -15195,7 +15242,7 @@
     "death_type": "ubijen",
     "death_date": "1944",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021019596",
@@ -15522,7 +15569,7 @@
     "pdf_x_end": 467.3,
     "birth_place": "Slanje, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -15801,7 +15848,7 @@
     "pdf_x_end": 281.4,
     "birth_place": "Marija na Muri, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035102866",
@@ -15903,7 +15950,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Vojsak, Pregrada",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -16053,10 +16100,9 @@
     "birth_place": "Gornji Kneginec, Varaždin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Hrvatsko zagorje",
+    "death_place": "Hrvatsko Zagorje",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "9021049872",
@@ -16376,7 +16422,7 @@
     "pdf_x_end": 458.6,
     "birth_place": "Mokrice, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -16451,7 +16497,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "other_sources": [
       {
         "soldier_id": "0035102990",
@@ -16551,7 +16597,6 @@
     "last_name": "Gregurić",
     "middle_name": "Marije",
     "first_name": "Franjo",
-    "fathers_name": "Marija",
     "full_name": "Gregurić Marije Franjo",
     "additional_info": "r. 1920; Slanje, Ludbreg, član KP; u KPO od",
     "birth_year": "1920",
@@ -16563,7 +16608,8 @@
     "soldier_id": "0058000673",
     "pdf_x_end": 458.7,
     "birth_place": "Slanje, Ludbreg",
-    "party": "KPJ"
+    "party": "KPJ",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Gretić",
@@ -16634,7 +16680,7 @@
     "birth_place": "Putkovec, Krapina",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -16803,7 +16849,7 @@
     "pdf_x_end": 289.4,
     "birth_place": "Torčec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103068",
@@ -16926,7 +16972,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Sokolovac, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -17015,7 +17061,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Sokolovac, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -17973,7 +18019,7 @@
     "pdf_x_end": 281.2,
     "birth_place": "Goljak, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103279",
@@ -18139,7 +18185,7 @@
     "birth_place": "Poljanec, Ludbreg",
     "death_type": "poginuo",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "birth_year": "1922",
     "borrowed": [
@@ -18215,7 +18261,7 @@
     "pdf_x_end": 458.2,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103326",
@@ -18745,7 +18791,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Markušev Breg, Zlatar-Bistrica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -18985,7 +19031,7 @@
     "pdf_x_end": 289.6,
     "birth_place": "Gornje Jesenje, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -19051,7 +19097,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Pristava, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103429",
@@ -19273,7 +19319,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Strmec, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103473",
@@ -19768,7 +19814,7 @@
     "pdf_x_end": 282.0,
     "birth_place": "Turčišće, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103569",
@@ -20041,7 +20087,6 @@
     "last_name": "Horvat",
     "middle_name": "Eve",
     "first_name": "Izidor",
-    "fathers_name": "Eva",
     "full_name": "Horvat Eve Izidor",
     "additional_info": "r. 1918; Hrženi ca, Ludbreg.",
     "birth_year": "1918",
@@ -20055,6 +20100,7 @@
     "birth_place": "Hrženi ca, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
+    "mothers_name": "Eva",
     "other_sources": [
       {
         "soldier_id": "0035103594",
@@ -20586,7 +20632,7 @@
     "pdf_x_end": 289.4,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103631",
@@ -20736,7 +20782,7 @@
     "birth_place": "Kotoriba, Čakovec",
     "rank": "obavještajni oficir odreda",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -21078,7 +21124,7 @@
     "pdf_x_end": 467.4,
     "birth_place": "Radakovo, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103670",
@@ -21133,7 +21179,7 @@
     "pdf_x_end": 466.6,
     "birth_place": "Sesvete Ludbreške, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103677",
@@ -21422,7 +21468,7 @@
     "death_date": "1944",
     "unit_detail": "1. bataljon",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "death_place": "Ludbreg",
     "party": "SKOJ",
     "other_sources": [
@@ -21618,7 +21664,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Selnik, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -21734,7 +21780,7 @@
     "birth_place": "Slanje, Ludbreg",
     "death_type": "poginuo",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "party": "SKOJ",
     "other_sources": [
@@ -22508,7 +22554,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Donja Poljana, Novi Marof",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -22595,7 +22641,7 @@
     "death_type": "poginuo",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021019537",
@@ -22727,7 +22773,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Donji Mihaljevec, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -22972,7 +23018,6 @@
     "death_date": "proljeće 1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "death_place": "Umka",
     "party": "SKOJ",
     "other_sources": [
@@ -23130,7 +23175,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Hrastovsko, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035103978",
@@ -23184,7 +23229,7 @@
     "death_place": "Kalnik",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021059777",
@@ -23258,7 +23303,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Veliki Bukovec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -23354,7 +23399,7 @@
     "pdf_x_end": 281.1,
     "birth_place": "Razdrto, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -23557,7 +23602,7 @@
     "pdf_x_end": 281.2,
     "birth_place": "Donji Pustakovec, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -23695,7 +23740,7 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9055000025",
@@ -23942,7 +23987,7 @@
     "pdf_x_end": 458.6,
     "birth_place": "Mala Rasinjica, Koprivnica",
     "ethnicity": "Srpkinja",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "other_sources": [
       {
         "soldier_id": "0035104096",
@@ -24090,7 +24135,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Rasinja, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -24124,7 +24169,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Dubovica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104143",
@@ -24277,7 +24322,7 @@
     "death_date": "11.02.1943",
     "death_place": "Veliki Botinovac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021056219",
@@ -24671,7 +24716,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Orehovica, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -25160,7 +25205,7 @@
     "death_place": "Jalžabet, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021049764",
@@ -25344,7 +25389,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Vratno Otok, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104318",
@@ -25394,7 +25439,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Lipnica, Vrbovec",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104349",
@@ -25873,7 +25918,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Mala Gora, Pregrada",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -25924,7 +25969,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Mala Erpenja, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104446",
@@ -25974,7 +26019,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Globočec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -26024,7 +26069,6 @@
     "last_name": "Jurdana",
     "middle_name": "Darinke",
     "first_name": "Bogdan",
-    "fathers_name": "Darinka",
     "full_name": "Jurdana Darinke Bogdan",
     "additional_info": "r. 1920; Zagreb; član KP; u KPO od srpnja",
     "birth_year": "1920",
@@ -26039,6 +26083,8 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "KPJ",
+    "mothers_name": "Darinka",
+    "fathers_name": "Darinko",
     "other_sources": [
       {
         "soldier_id": "0010201857",
@@ -26139,10 +26185,22 @@
         "pdf_y_end": 204.8,
         "role": "activist",
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021049825",
+        "name": "Jurec (Silvestr) Vilko",
+        "additional_info": "rođen 1911, Varadžin. Hrvat, poginuo 1942. u NOBu, Varaždin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2372",
+        "source_page": 2372,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
     "unit_detail": "Kalnički odred (1942)",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jurec",
@@ -26281,7 +26339,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021056202",
@@ -26488,7 +26546,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104483",
@@ -26538,7 +26596,7 @@
     "pdf_x_end": 289.4,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -26840,7 +26898,7 @@
     "pdf_x_end": 466.9,
     "birth_place": "Mala Erpenja, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104552",
@@ -26993,7 +27051,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Turčišće, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104581",
@@ -27797,7 +27855,7 @@
     "death_place": "Lužani",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021021200",
@@ -27868,7 +27926,7 @@
     "birth_place": "Gornje Jesenje, Krapina",
     "rank": "obavještajni oficir bataljona",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0058010066",
@@ -27963,7 +28021,7 @@
     "birth_place": "Gornje Jesenje, Krapina",
     "death_type": "poginuo",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -28057,7 +28115,7 @@
     "pdf_x_end": 290.9,
     "birth_place": "Dropkovec, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -28091,7 +28149,7 @@
     "pdf_x_end": 290.9,
     "birth_place": "Dropkovec, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -28387,7 +28445,7 @@
     "pdf_x_end": 467.5,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104776",
@@ -28602,7 +28660,7 @@
     "death_place": "Koprivnica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021059766",
@@ -29027,7 +29085,7 @@
     "pdf_x_end": 281.2,
     "birth_place": "Vrhovac, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -29128,7 +29186,7 @@
     "pdf_x_end": 457.4,
     "birth_place": "Sveti Đurđ, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "birth_year": "1903",
     "borrowed": [
       "birth_year"
@@ -29386,7 +29444,7 @@
     "pdf_x_end": 458.6,
     "birth_place": "Macelj Donji, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -29630,7 +29688,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Turčišće, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104913",
@@ -30178,7 +30236,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Zbelava, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -30349,7 +30407,7 @@
     "death_type": "ubijen",
     "death_date": "1945",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000717",
@@ -30663,7 +30721,7 @@
     "pdf_x_end": 281.3,
     "birth_place": "Mrzlo Polje, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -30860,7 +30918,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Veliki Bukovec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105047",
@@ -30898,7 +30956,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Cerje Tužno, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105065",
@@ -31574,7 +31632,7 @@
     "death_place": "Kalnik",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000733",
@@ -31733,7 +31791,7 @@
     "death_date": "01.11.1944",
     "death_place": "Kalnik",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -31819,7 +31877,7 @@
     "pdf_x_end": 466.8,
     "birth_place": "Jalžabet, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -31909,7 +31967,6 @@
     "pdf_x_end": 466.9,
     "birth_place": "Varaždin",
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -32261,7 +32318,7 @@
     "birth_place": "Kostadinovac, Križevci",
     "rank": "borac",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105310",
@@ -32330,7 +32387,7 @@
     "birth_place": "Kraljev Vrh, Donja Stubica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105319",
@@ -32723,7 +32780,7 @@
     "pdf_x_end": 458.3,
     "birth_place": "Ključ, Novi Marof",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -32842,7 +32899,6 @@
     "death_date": "27.05.1944",
     "death_place": "Veliki Poganac, Koprivnica",
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -32900,7 +32956,7 @@
     "death_type": "poginuo",
     "rank": "desetar",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "party": "SKOJ",
     "other_sources": [
@@ -33439,7 +33495,7 @@
     "pdf_x_end": 467.6,
     "birth_place": "Lipnica, Vrbovec",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105487",
@@ -33535,7 +33591,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Sepetnik, Mađarska",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105504",
@@ -33784,7 +33840,7 @@
     "pdf_x_end": 467.3,
     "birth_place": "Pogančec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105535",
@@ -33829,7 +33885,7 @@
     "pdf_x_end": 467.4,
     "birth_place": "Pogančec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105539",
@@ -34367,7 +34423,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -34453,7 +34509,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Hodošan, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -34646,7 +34702,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Hodošan, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105636",
@@ -34773,7 +34829,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021023003",
@@ -34989,7 +35045,7 @@
       }
     ],
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ"
   },
   {
@@ -35170,7 +35226,6 @@
     "death_place": "Grubišno Polje, Bilogora",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -35222,7 +35277,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105768",
@@ -35255,7 +35310,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -35324,7 +35379,7 @@
     "pdf_x_end": 289.5,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -35446,7 +35501,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Hrastovsko, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105779",
@@ -35491,7 +35546,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Jalžabet, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105781",
@@ -35542,7 +35597,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Lukovčak, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035105786",
@@ -35575,7 +35630,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Jakovlje, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -35682,7 +35737,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000846",
@@ -35766,7 +35821,6 @@
     "death_place": "Šemovec",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "9055000032",
@@ -35953,7 +36007,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Gardinovec, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -36217,7 +36271,7 @@
     "death_place": "Krapina",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1943",
     "other_sources": [
       {
@@ -36699,7 +36753,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Rovno, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106031",
@@ -37244,7 +37298,7 @@
     "pdf_x_end": 290.7,
     "birth_place": "Brežani, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106123",
@@ -37311,7 +37365,7 @@
     "pdf_x_end": 290.7,
     "birth_place": "Hudovo, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -37450,7 +37504,6 @@
     "last_name": "Kvaternik",
     "middle_name": "Marije",
     "first_name": "Josip",
-    "fathers_name": "Marija",
     "full_name": "Kvaternik Marije Josip",
     "additional_info": "r. 1914; Rijeka; u KPO od 1944.",
     "birth_year": "1914",
@@ -37464,6 +37517,8 @@
     "birth_place": "Rijeka",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
+    "mothers_name": "Marija",
+    "fathers_name": "Marij",
     "other_sources": [
       {
         "soldier_id": "0035106158",
@@ -38257,8 +38312,11 @@
     "birth_place": "Turčišće, Čakovec",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ, KPJ",
+    "occupation": "radnik",
+    "borrowed": [
+      "occupation"
+    ],
     "other_sources": [
       {
         "soldier_id": "0035106290",
@@ -38474,7 +38532,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Mala Erpenja, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106317",
@@ -38509,7 +38567,7 @@
     "death_type": "ubijen",
     "rank": "borac",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "death_date": "1944",
     "other_sources": [
       {
@@ -38523,6 +38581,14 @@
         "pdf_x_end": 385.9,
         "pdf_y_end": 191.6,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021058281",
+        "name": "Leskovar (Mijo) Marija",
+        "additional_info": "rođena 1924, Zagreb Dio (Zagreb-Centar). Hrvatica, poginula 1943. u NOBu, Bolnica-kalnik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2841",
+        "source_page": 2841,
+        "ref_book": "zrtve-rata-1964-hrv"
       },
       {
         "soldier_id": "0035106320",
@@ -38610,7 +38676,6 @@
     "death_date": "05.07.1944",
     "death_place": "Kalnik",
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "9036000903",
@@ -38720,7 +38785,7 @@
     "pdf_x_end": 289.4,
     "birth_place": "Imbriovec Jalžabetski, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -38819,7 +38884,6 @@
     "death_place": "Kalnik",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -38986,7 +39050,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Kamenica, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106359",
@@ -39338,7 +39402,6 @@
     "last_name": "Ljubej",
     "middle_name": "Rozalije",
     "first_name": "Ćiril",
-    "fathers_name": "Rozalija",
     "full_name": "Ljubej Rozalije Ćiril",
     "additional_info": "r. 1919; Krapinske Toplice, Zabok; u KPO od srpnja 1943.",
     "birth_year": "1919",
@@ -39349,7 +39412,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001582",
     "pdf_x_end": 281.2,
-    "birth_place": "Krapinske Toplice, Zabok"
+    "birth_place": "Krapinske Toplice, Zabok",
+    "mothers_name": "Rozalija"
   },
   {
     "last_name": "Ljubić",
@@ -39422,7 +39486,7 @@
     "death_place": "Koprivnica",
     "rank": "komandir čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021059772",
@@ -39891,7 +39955,7 @@
     "pdf_x_end": 281.3,
     "birth_place": "Lukavec, Ivanec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -39959,7 +40023,7 @@
     "pdf_x_end": 281.3,
     "birth_place": "Kalnik, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -40390,7 +40454,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Martijanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -40532,7 +40596,7 @@
     "death_place": "Kalnik",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021021204",
@@ -40769,7 +40833,6 @@
     "birth_place": "Brezova Gora, Tušilović, Karlovac",
     "rank": "vodnik, komandir čete, komandant bataljona",
     "ethnicity": "Srbin",
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "0058010103",
@@ -40846,7 +40909,11 @@
       }
     ],
     "unit_detail": "štab odreda",
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "poljoprivrednik",
+    "borrowed": [
+      "occupation"
+    ]
   },
   {
     "last_name": "Mandić",
@@ -40899,7 +40966,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Velike Sesvete, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106766",
@@ -40994,7 +41061,7 @@
       "ethnicity",
       "occupation"
     ],
-    "occupation": "čl"
+    "occupation": "podoficir"
   },
   {
     "last_name": "Manojlović",
@@ -41047,7 +41114,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Velike Sesvete, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -41188,7 +41255,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Zabrđe, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106814",
@@ -41462,7 +41529,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Grdak, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035106887",
@@ -41617,7 +41684,7 @@
     "death_date": "22.01.1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021022972",
@@ -42427,7 +42494,7 @@
     "death_type": "poginuo",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -42635,7 +42702,7 @@
     "pdf_x_end": 281.2,
     "birth_place": "Dugnjevec, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -42707,7 +42774,6 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "9021049765",
@@ -43008,7 +43074,6 @@
     "rank": "vodnik",
     "unit_detail": "4. bataljon",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -43058,10 +43123,12 @@
       }
     ],
     "party": "SKOJ, KPJ",
-    "death_place": "V.trešnjevica",
+    "occupation": "učenik u privredi",
     "borrowed": [
-      "death_place"
-    ]
+      "death_place",
+      "occupation"
+    ],
+    "death_place": "V.trešnjevica"
   },
   {
     "last_name": "Mencinger",
@@ -43925,7 +43992,7 @@
     "pdf_x_end": 458.6,
     "birth_place": "Veliki Bukovec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -44062,7 +44129,7 @@
     "pdf_x_end": 459.6,
     "birth_place": "Donji Kraljevec, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107326",
@@ -44222,7 +44289,7 @@
     "death_place": "Srpska Kapela",
     "rank": "komandir čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001051",
@@ -44552,7 +44619,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Jelovec, Zlatar-Bistrica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107407",
@@ -44671,7 +44738,6 @@
     "death_date": "početkom 1945",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -44906,7 +44972,7 @@
     "pdf_x_end": 291.2,
     "birth_place": "Hruševac, Zaprešić",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107458",
@@ -45188,7 +45254,7 @@
     "pdf_x_end": 467.6,
     "birth_place": "Sokolovac, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107486",
@@ -45766,7 +45832,7 @@
     "pdf_x_end": 458.3,
     "birth_place": "Žabnik, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107579",
@@ -45895,7 +45961,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Dugnjevec, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -46180,7 +46246,7 @@
     "rank": "borac",
     "birth_place": "Kapela, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021022945",
@@ -46480,7 +46546,7 @@
     "death_place": "u Varaždinskim Toplicama",
     "rank": "vodnik",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0058010121",
@@ -46676,7 +46742,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Velike Sesvete",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -46915,7 +46981,7 @@
     "death_place": "Koprivnica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -47080,7 +47146,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Brezovica, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107746",
@@ -47131,7 +47197,7 @@
     "birth_place": "Vinkovec, Vrbovec",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107752",
@@ -47431,7 +47497,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107783",
@@ -47722,7 +47788,6 @@
     "last_name": "Nežmahen",
     "middle_name": "Terezije",
     "first_name": "Stjepan",
-    "fathers_name": "Terezija",
     "full_name": "Nežmahen Terezije Stjepan",
     "additional_info": "r. 1894; Doliće, Krapina; član KP; u KPO od srpnja 1943.",
     "birth_year": "1894",
@@ -47734,7 +47799,8 @@
     "soldier_id": "0058001913",
     "pdf_x_end": 457.8,
     "birth_place": "Doliće, Krapina",
-    "party": "KPJ"
+    "party": "KPJ",
+    "mothers_name": "Terezija"
   },
   {
     "last_name": "Nikolaus",
@@ -48563,7 +48629,7 @@
     "pdf_x_end": 290.6,
     "birth_place": "Novi Marof",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035107901",
@@ -48601,10 +48667,8 @@
     "party": "SKOJ",
     "ethnicity": "Hrvat",
     "borrowed": [
-      "ethnicity",
-      "occupation"
+      "ethnicity"
     ],
-    "occupation": "čl",
     "other_sources": [
       {
         "soldier_id": "0035107902",
@@ -48776,7 +48840,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Igrišče, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -49183,7 +49247,6 @@
       }
     ],
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "party": "SKOJ",
     "variants": {
       "death": [
@@ -49284,7 +49347,7 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021021362",
@@ -49369,7 +49432,7 @@
     "birth_place": "Donja Rijeka, Križevci",
     "rank": "zamjenik komesara čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -49415,7 +49478,7 @@
     "pdf_x_end": 282.2,
     "birth_place": "Donja Rijeka, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -49536,7 +49599,7 @@
     "pdf_x_end": 458.9,
     "birth_place": "Slanje, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -49745,7 +49808,6 @@
     "last_name": "Ostović",
     "middle_name": "Marije",
     "first_name": "Mato",
-    "fathers_name": "Marija",
     "full_name": "Ostović Marije Mato",
     "additional_info": "zvani Majstor; r. 1915; Ličko Lešće, Otočac; član KP; u KPO od listopada 1942; komandir voda pratećih oruđa; komandir Mitraljeske čete; komandant bataljona i komandant Odreda.",
     "birth_year": "1915",
@@ -49772,7 +49834,8 @@
         "pdf_y_end": 469.0
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Ostrgnaj",
@@ -49860,7 +49923,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Jalšje, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108098",
@@ -49905,7 +49968,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Petrovsko, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -49939,7 +50002,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Goričanovec, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -50068,7 +50131,7 @@
     "death_date": "1944",
     "death_place": "Ždala, Đurđevac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021023056",
@@ -50210,7 +50273,7 @@
     "birth_place": "Krapinica, Zlatar-Bistrica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -50225,6 +50288,14 @@
         "pdf_x_end": 370.1,
         "pdf_y_end": 412.8,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021059795",
+        "name": "Ožeg (Tomo) Dragutin",
+        "additional_info": "rođen 1926, Krapinica (Zlatar-Bistrica). Hrvat, poginuo 1945. u NOBu, Varaž.toplice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=3001",
+        "source_page": 3001,
+        "ref_book": "zrtve-rata-1964-hrv"
       },
       {
         "soldier_id": "0035108131",
@@ -50274,7 +50345,7 @@
     "pdf_x_end": 289.7,
     "birth_place": "Sudovec, Novi Marof",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "birth_year": "1919",
     "borrowed": [
       "birth_year"
@@ -50537,7 +50608,7 @@
     "birth_place": "Javornik, Dvor na Uni",
     "rank": "borac",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -50706,7 +50777,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Valentinovo, Pregrada",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -50881,8 +50952,11 @@
     "death_date": "1945",
     "death_place": "Lepoglava",
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "party": "SKOJ",
+    "occupation": "radnica",
+    "borrowed": [
+      "occupation"
+    ],
     "other_sources": [
       {
         "soldier_id": "0035108283",
@@ -51015,7 +51089,7 @@
     "pdf_x_end": 280.9,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108322",
@@ -51069,7 +51143,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021053372",
@@ -51115,7 +51189,7 @@
     "birth_place": "Gornji Tkalec, Vrbovec",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108329",
@@ -51200,7 +51274,7 @@
     "pdf_x_end": 280.9,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108335",
@@ -51488,7 +51562,7 @@
     "death_date": "proljeće 1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021059864",
@@ -51545,7 +51619,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Mrzlo Polje, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108377",
@@ -51826,10 +51900,9 @@
     "birth_place": "Gornji Kneginec, Varaždin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Hrvatsko zagorje",
+    "death_place": "Hrvatsko Zagorje",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -51866,7 +51939,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021059739",
@@ -52169,7 +52242,6 @@
     "last_name": "Peren",
     "middle_name": "Marije",
     "first_name": "Zlatko",
-    "fathers_name": "Marija",
     "full_name": "Peren Marije Zlatko",
     "additional_info": "r. 1921; Zagreb; u KPO od listopadal944.",
     "birth_year": "1921",
@@ -52180,7 +52252,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002096",
     "pdf_x_end": 289.5,
-    "birth_place": "Zagreb"
+    "birth_place": "Zagreb",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Perharić",
@@ -52322,7 +52395,7 @@
     "pdf_x_end": 289.6,
     "birth_place": "Drnje, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108543",
@@ -52384,7 +52457,6 @@
     "pdf_x_end": 466.3,
     "birth_place": "Kućan Donji, Varaždin",
     "ethnicity": "Hrvatica",
-    "occupation": "čl",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -52779,7 +52851,7 @@
     "pdf_x_end": 281.3,
     "birth_place": "Dubovica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1945",
     "party": "KPJ",
@@ -52884,7 +52956,7 @@
     "pdf_x_end": 280.2,
     "birth_place": "Bolfan, Ludbreg",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108610",
@@ -53003,7 +53075,7 @@
     "pdf_x_end": 467.3,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -53278,7 +53350,7 @@
     "pdf_x_end": 281.2,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035114240",
@@ -53363,7 +53435,7 @@
     "pdf_x_end": 281.8,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035113937",
@@ -53493,7 +53565,7 @@
     "pdf_x_end": 458.1,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "birth_year": "1913",
     "borrowed": [
@@ -53530,7 +53602,7 @@
     "pdf_x_end": 457.6,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "birth_year": "1914",
     "borrowed": [
@@ -53752,7 +53824,7 @@
     "birth_place": "Mala Erpenja, Zabok",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -53790,7 +53862,7 @@
     "death_place": "Koprivnica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001210",
@@ -53852,7 +53924,7 @@
     "pdf_x_end": 459.0,
     "birth_place": "Hrastovsko, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108709",
@@ -54123,7 +54195,7 @@
     "pdf_x_end": 289.3,
     "birth_place": "Globočec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -54334,7 +54406,7 @@
     "death_place": "Velika Mučna",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021056190",
@@ -54519,7 +54591,7 @@
       }
     ],
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "party": "SKOJ",
@@ -54769,7 +54841,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Dragoslavec, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108878",
@@ -55262,7 +55334,6 @@
     "last_name": "Pongrac",
     "middle_name": "Marije",
     "first_name": "Marija",
-    "fathers_name": "Marija",
     "full_name": "Pongrac Marije Marija",
     "additional_info": "r. 1915; Čakovec; članica KP; u KPO od prosinca 1943.",
     "birth_year": "1915",
@@ -55274,7 +55345,8 @@
     "soldier_id": "0058002215",
     "pdf_x_end": 281.8,
     "birth_place": "Čakovec",
-    "party": "KPJ"
+    "party": "KPJ",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Pongrac",
@@ -55852,7 +55924,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "other_sources": [
       {
@@ -55898,7 +55970,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Imbriovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -56043,7 +56115,6 @@
     "last_name": "Potočki",
     "middle_name": "Marije",
     "first_name": "Ivan",
-    "fathers_name": "Marija",
     "full_name": "Potočki Marije Ivan",
     "additional_info": "r. 1914; Radoboj, Krapina; u KPO od 1943.",
     "birth_year": "1914",
@@ -56054,7 +56125,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002250",
     "pdf_x_end": 289.5,
-    "birth_place": "Radoboj, Krapina"
+    "birth_place": "Radoboj, Krapina",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Potočnik",
@@ -56094,7 +56166,6 @@
     "last_name": "Potočnik",
     "middle_name": "Ane",
     "first_name": "Ivan",
-    "fathers_name": "Ana",
     "full_name": "Potočnik Ane Ivan",
     "additional_info": "r.1918; Vinogradi Ludbreški, Ludbreg; u KPO od",
     "birth_year": "1918",
@@ -56108,6 +56179,8 @@
     "birth_place": "Vinogradi Ludbreški, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
+    "mothers_name": "Ana",
+    "fathers_name": "An",
     "other_sources": [
       {
         "soldier_id": "0035109028",
@@ -56643,7 +56716,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Razdrto, Klanjec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -56723,7 +56796,7 @@
     "pdf_x_end": 281.1,
     "birth_place": "Sesveta Ludbreških, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109114",
@@ -56944,7 +57017,7 @@
     "death_place": "Koprivnica",
     "rank": "komandir čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021053374",
@@ -56997,7 +57070,7 @@
     "pdf_x_end": 281.3,
     "birth_place": "Gradec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -57298,7 +57371,7 @@
     "pdf_x_end": 458.1,
     "birth_place": "Donja Rijeka, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -57402,7 +57475,7 @@
     "pdf_x_end": 458.5,
     "birth_place": "Struga, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109256",
@@ -57455,7 +57528,6 @@
     "last_name": "Punčec",
     "middle_name": "Marije",
     "first_name": "Andrija",
-    "fathers_name": "Marija",
     "full_name": "Punčec Marije Andrija",
     "additional_info": "r. 1919; Vinica Breg; Varaždin; u KPO od prosinca 1943.",
     "birth_year": "1919",
@@ -57466,7 +57538,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002303",
     "pdf_x_end": 458.4,
-    "birth_place": "Vinica Breg, Varaždin"
+    "birth_place": "Vinica Breg, Varaždin",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Puštek",
@@ -57553,7 +57626,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Zamladinec, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109337",
@@ -57716,7 +57789,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Gornje Sredice, Bjelovar",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -58230,7 +58303,7 @@
     "last_name": "Rajh",
     "middle_name": "Artura",
     "first_name": "Rudi",
-    "fathers_name": "Artura",
+    "fathers_name": "Artur",
     "full_name": "Rajh Artura Rudi",
     "additional_info": "r. 1927; Virovitica; član SKOJ-a i KP; u KPO od listopada 1942; referent saniteta 2. bataljona.",
     "birth_year": "1927",
@@ -58537,7 +58610,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Škarnik, Varaždinske Toplice, Novi Marof",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -58633,7 +58706,7 @@
     "pdf_x_end": 281.4,
     "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "other_sources": [
       {
@@ -59073,7 +59146,7 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9055000045",
@@ -59176,7 +59249,7 @@
     "death_place": "Mihovljan",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109598",
@@ -59445,7 +59518,7 @@
     "pdf_x_end": 289.7,
     "birth_place": "Jezerišće, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109631",
@@ -59479,7 +59552,7 @@
     "birth_place": "Jezerišće, Krapina",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "other_sources": [
@@ -59603,7 +59676,7 @@
     "pdf_x_end": 289.5,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109642",
@@ -59671,7 +59744,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -60267,7 +60340,7 @@
     "pdf_x_end": 466.9,
     "birth_place": "Vinogradi Ludbreški, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -60603,7 +60676,7 @@
     "death_type": "ubijen",
     "rank": "komesar čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -60869,7 +60942,7 @@
     "pdf_x_end": 458.7,
     "birth_place": "Jagnjedovac, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035109876",
@@ -61712,7 +61785,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Grginac, Bjelovar",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -61823,7 +61896,7 @@
     "pdf_x_end": 289.7,
     "birth_place": "Prelog, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -61978,7 +62051,7 @@
     "birth_place": "Bolfan, Ludbreg",
     "death_type": "poginuo",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1943",
     "other_sources": [
       {
@@ -62101,7 +62174,7 @@
     "death_date": "1944",
     "death_place": "Breznički Hum, Novi Marof",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021022928",
@@ -62282,7 +62355,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Mala Erpenja, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -62355,7 +62428,6 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "rank": "borac",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -62406,7 +62478,7 @@
     "pdf_x_end": 279.6,
     "birth_place": "Lipnica, Vrbovec",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035110135",
@@ -62494,7 +62566,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Veliki Potočec, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035110158",
@@ -62820,11 +62892,18 @@
     "birth_place": "Varaždin",
     "death_type": "umro",
     "rank": "bolničarka",
-    "ethnicity": "Hrvat",
-    "occupation": "čl",
+    "ethnicity": "Hrvatica",
     "death_date": "1943",
     "party": "SKOJ",
     "other_sources": [
+      {
+        "soldier_id": "9021060559",
+        "name": "Slukan (Josip) Božena",
+        "additional_info": "rođena 1925, Varadžin. Hrvatica, poginula 1943. u NOBu, Duga rjeka-kaln",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2376",
+        "source_page": 2376,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0035110237",
         "name": "Slukan Josipa Božena",
@@ -62837,6 +62916,10 @@
         "pdf_y_end": 279.0,
         "unit_file": "32-divizija-soldiers.json"
       }
+    ],
+    "death_place": "Duga rjeka-kaln",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -63313,7 +63396,7 @@
     "pdf_x_end": 289.4,
     "birth_place": "Đurđevac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -63433,7 +63516,6 @@
     "pdf_x_end": 289.6,
     "birth_place": "Hudovo, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "KPJ",
     "other_sources": [
       {
@@ -63471,7 +63553,7 @@
     "death_place": "Orlovac, Bjelovar",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -63968,9 +64050,12 @@
     "death_date": "1943",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "death_place": "kod sela Trebićina, Foča",
     "party": "SKOJ",
+    "occupation": "radnik",
+    "borrowed": [
+      "occupation"
+    ],
     "other_sources": [
       {
         "soldier_id": "0035110424",
@@ -64221,7 +64306,7 @@
     "death_place": "Bilogore",
     "rank": "borac",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -64279,7 +64364,7 @@
       "occupation"
     ],
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035110458",
@@ -64902,7 +64987,7 @@
     "death_date": "1943",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021006337",
@@ -64924,6 +65009,18 @@
         "pdf_y_end": 645.2,
         "source_page": 85,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9036001401",
+        "name": "Strugar (Andrije) Milan",
+        "additional_info": "rođen 21. 10. 1921. u Kraljevom Vrhu, poginuo 3. 10. 1943. kod Varaždina kao borac brigade »Braća Radić«.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 63,
+        "pdf_x": 25.5,
+        "pdf_y": 428.1,
+        "pdf_x_end": 380.4,
+        "pdf_y_end": 445.9,
+        "ref_book": "hrvatsko-zagorje-1981"
       },
       {
         "soldier_id": "0035110566",
@@ -64954,7 +65051,8 @@
     "death_place": "Šenovac",
     "borrowed": [
       "death_place"
-    ]
+    ],
+    "birth_date": "21.10.1921"
   },
   {
     "last_name": "Sukanec-Dvorski",
@@ -65275,7 +65373,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Ribnjačka, Bjelovar",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -65310,7 +65408,7 @@
     "birth_place": "Pjevalovac, Derventa, BiH",
     "rank": "komandir čete",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0058010168",
@@ -65356,7 +65454,7 @@
     "pdf_x_end": 466.1,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -65671,7 +65769,7 @@
     "pdf_x_end": 467.6,
     "birth_place": "Zbelava, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -65763,7 +65861,7 @@
     "pdf_x_end": 281.6,
     "birth_place": "Zbelava, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -65862,7 +65960,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Ljubešćica, Novi Marof",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -65883,7 +65981,6 @@
     "last_name": "Tisaj",
     "middle_name": "Terezije",
     "first_name": "Franjo",
-    "fathers_name": "Terezija",
     "full_name": "Tisaj Terezije Franjo",
     "additional_info": "r. 1924; iz Međimurja; u KPO od 1944.",
     "birth_year": "1924",
@@ -65893,7 +65990,8 @@
     "pdf_y_end": 377.6,
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002633",
-    "pdf_x_end": 281.3
+    "pdf_x_end": 281.3,
+    "mothers_name": "Terezija"
   },
   {
     "last_name": "Tišler",
@@ -66065,7 +66163,7 @@
     "rank": "vodnik, zamjenik komandanta",
     "unit_detail": "1. bataljon",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "party": "KPJ",
@@ -66222,7 +66320,7 @@
     "pdf_x_end": 281.3,
     "birth_place": "Hudovo, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035114054",
@@ -66640,7 +66738,7 @@
     "death_type": "poginuo",
     "unit_detail": "1. bataljon",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -66836,7 +66934,7 @@
     "pdf_x_end": 290.5,
     "birth_place": "Gornji Dubovec, Križevci",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -66902,7 +67000,7 @@
     "pdf_x_end": 290.9,
     "birth_place": "Imbrijovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035110985",
@@ -66922,7 +67020,6 @@
     "last_name": "Triplat",
     "middle_name": "Marije",
     "first_name": "Štefica",
-    "fathers_name": "Marija",
     "full_name": "Triplat Marije Štefica",
     "additional_info": "r. 1924; Veliki Bukovec, Ludbreg; u KPO od 1943; poginula 1944; gdje, nije utvrđeno.",
     "birth_year": "1924",
@@ -66935,7 +67032,8 @@
     "pdf_x_end": 290.9,
     "birth_place": "Veliki Bukovec, Ludbreg",
     "death_type": "poginuo",
-    "death_date": "1944"
+    "death_date": "1944",
+    "mothers_name": "Marija"
   },
   {
     "last_name": "Trkulja",
@@ -67427,7 +67525,7 @@
     "pdf_x_end": 290.4,
     "birth_place": "Veliki Bukovec, Zlatar- Bistrica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "party": "SKOJ",
     "other_sources": [
@@ -67494,7 +67592,7 @@
     "death_type": "poginuo",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1945",
     "other_sources": [
       {
@@ -67596,7 +67694,7 @@
     "pdf_x_end": 280.4,
     "birth_place": "Sesvete Ludbreške, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -67630,7 +67728,7 @@
     "pdf_x_end": 278.9,
     "birth_place": "Sesvete Ludbreške, Ludbreg",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "other_sources": [
       {
         "soldier_id": "0035111106",
@@ -67730,7 +67828,7 @@
     "pdf_x_end": 281.0,
     "birth_place": "Krkač, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -67814,7 +67912,7 @@
     "death_date": "1945",
     "rank": "komandir čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021022963",
@@ -68037,7 +68135,7 @@
     "pdf_x_end": 457.5,
     "birth_place": "Brusnik, Pakrac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -68375,7 +68473,6 @@
     "birth_place": "Varaždin",
     "death_type": "poginuo",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "death_date": "1943",
     "death_place": "Kalnik",
     "party": "SKOJ",
@@ -68482,7 +68579,6 @@
     "death_place": "Kalnik",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -68702,7 +68798,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001591",
@@ -68715,6 +68811,14 @@
         "pdf_x_end": 368.3,
         "pdf_y_end": 84.0,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021021307",
+        "name": "Varjačić (Mijo) Milan",
+        "additional_info": "rođen 1926, Podbrezovica (Krapina). Hrvat, poginuo 1943. u NOBu, Kod bjelovara",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1015",
+        "source_page": 1015,
+        "ref_book": "zrtve-rata-1964-hrv"
       },
       {
         "soldier_id": "0035111345",
@@ -68747,7 +68851,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111349",
@@ -69044,7 +69148,7 @@
     "pdf_x_end": 458.2,
     "birth_place": "Sesvete Ludbreške, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "birth_year": "1902",
     "borrowed": [
       "birth_year"
@@ -69127,7 +69231,7 @@
     "death_place": "Ljubelj Kalnički, Novi Marof",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111377",
@@ -69316,7 +69420,6 @@
     "death_place": "Moslavina",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -69480,7 +69583,7 @@
     "death_type": "poginuo",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_date": "1944",
     "other_sources": [
       {
@@ -69550,7 +69653,7 @@
     "death_date": "1944",
     "rank": "komesar čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001610",
@@ -69677,7 +69780,7 @@
     "pdf_x_end": 281.2,
     "birth_place": "Lug Poznanovečki, Zabok",
     "ethnicity": "Hrvatica",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednica",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -69746,7 +69849,7 @@
     "pdf_x_end": 282.0,
     "birth_place": "Hrastovsko, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -70077,7 +70180,7 @@
     "pdf_x_end": 458.4,
     "birth_place": "Kućan Gornji, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111518",
@@ -70160,7 +70263,7 @@
     "death_date": "1943",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001625",
@@ -70175,6 +70278,14 @@
         "ref_book": "hrvatsko-zagorje-1981"
       },
       {
+        "soldier_id": "9021059271",
+        "name": "Vincek (Ivan) Dragutin",
+        "additional_info": "rođen 1922, Zagreb Dio (Zagreb-Trešnjevka). Hrvat, poginuo 1943. u NOBu, Kalnik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2977",
+        "source_page": 2977,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0035111545",
         "name": "Vincek Ivana Dragutin",
         "additional_info": "r. 1922, s. M. Polje, Zabok, Hrvat, poljopriv., čl. SKOJ-a, NOV 1942, poginuo 1943.",
@@ -70187,7 +70298,11 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_place": "Kalnik",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Vincelj",
@@ -70323,7 +70438,7 @@
     "death_place": "Veliko Trgovišće",
     "rank": "vodnik",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036001633",
@@ -70384,7 +70499,7 @@
     "pdf_x_end": 289.8,
     "birth_place": "Veliko Trgovišće, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -70487,7 +70602,7 @@
     "pdf_x_end": 289.7,
     "birth_place": "Lipnica, Vrbovec",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111592",
@@ -70591,7 +70706,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Osijek Vojakovački, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111595",
@@ -70969,7 +71084,7 @@
     "death_place": "Šemovec, Varaždin",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021022942",
@@ -71438,7 +71553,6 @@
     "pdf_x_end": 282.2,
     "birth_place": "Mali Bukovec, Zlatar-Bistrica",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "death_type": "poginuo",
     "death_date": "1945",
     "other_sources": [
@@ -71453,6 +71567,14 @@
         "pdf_x_end": 374.9,
         "pdf_y_end": 381.6,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021058916",
+        "name": "Vragović (Antun) Franjo",
+        "additional_info": "rođen 1916, Zagreb Dio (Zagreb-Medveščak). Hrvat, poginuo 1945. u NOBu, Zagreb",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2946",
+        "source_page": 2946,
+        "ref_book": "zrtve-rata-1964-hrv"
       },
       {
         "soldier_id": "0035111728",
@@ -71491,7 +71613,13 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "radnik",
+    "borrowed": [
+      "death_place",
+      "occupation"
+    ],
+    "death_place": "Zagreb"
   },
   {
     "last_name": "Vragović",
@@ -71684,7 +71812,7 @@
     "death_place": "Veliki Zdenci, Grubišno Polje",
     "rank": "delegat voda",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -71737,7 +71865,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111764",
@@ -71907,7 +72035,7 @@
     "death_place": "Koprivnica",
     "unit_detail": "prateća četa",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111806",
@@ -71940,7 +72068,7 @@
     "pdf_x_end": 459.3,
     "birth_place": "Slanje, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111807",
@@ -72226,7 +72354,7 @@
     "death_date": "1944",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -72466,7 +72594,7 @@
     "pdf_x_end": 466.8,
     "birth_place": "Vujići, Križevci",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111854",
@@ -72738,7 +72866,7 @@
       "party"
     ],
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -72908,7 +73036,7 @@
     "death_type": "poginuo",
     "death_date": "1947",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -73235,7 +73363,7 @@
     "pdf_x_end": 281.8,
     "birth_place": "Oberavo, Dugo Selo",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -73344,7 +73472,6 @@
     "last_name": "Vučić",
     "middle_name": "Ane",
     "first_name": "Mladen",
-    "fathers_name": "Ana",
     "full_name": "Vučić Ane Mladen",
     "additional_info": "r. 1920; Osijek Vojakovački, Križevci; poginuo 1943. kao borac KPO; pobliže kada i gdje, nije utvrđeno.",
     "birth_year": "1920",
@@ -73358,7 +73485,8 @@
     "birth_place": "Osijek Vojakovački, Križevci",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac"
+    "rank": "borac",
+    "mothers_name": "Ana"
   },
   {
     "last_name": "Vučković",
@@ -73440,7 +73568,7 @@
     "pdf_x_end": 289.6,
     "birth_place": "Belanovo Selo, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111980",
@@ -73736,7 +73864,7 @@
     "pdf_x_end": 458.9,
     "birth_place": "Orovac, Bjelovar",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -74025,7 +74153,7 @@
     "pdf_x_end": 290.2,
     "birth_place": "Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035112121",
@@ -74063,7 +74191,7 @@
       "occupation"
     ],
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035112122",
@@ -74096,7 +74224,7 @@
     "pdf_x_end": 290.3,
     "birth_place": "Sveti Đurđ, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -74130,7 +74258,7 @@
     "pdf_x_end": 290.3,
     "birth_place": "Sesvete Ludbreške, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -74329,7 +74457,7 @@
     "pdf_x_end": 291.1,
     "birth_place": "Marija na Muri, Čakovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035112160",
@@ -74396,7 +74524,7 @@
     "pdf_x_end": 290.6,
     "birth_place": "Stupaije, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1943",
     "other_sources": [
@@ -74569,7 +74697,7 @@
     "pdf_x_end": 467.7,
     "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035112217",
@@ -74826,7 +74954,7 @@
     "pdf_x_end": 290.3,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ, KPJ",
     "other_sources": [
       {
@@ -74859,7 +74987,7 @@
     "pdf_x_end": 290.1,
     "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "birth_year": "1920",
     "borrowed": [
       "birth_year"
@@ -75080,7 +75208,7 @@
     "pdf_x_end": 289.7,
     "birth_place": "Mičijevac, Križevci",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035112286",
@@ -75311,7 +75439,7 @@
     "death_place": "Koprivnica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9036000238",
@@ -75370,7 +75498,7 @@
     "pdf_x_end": 466.9,
     "birth_place": "Mokrice, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -75416,7 +75544,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Mokrice, Donja Stubica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -75735,7 +75863,7 @@
     "birth_place": "Krapina Selo, Zlatar-Bistrica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "other_sources": [
       {
@@ -76894,7 +77022,7 @@
     "pdf_x_end": 466.9,
     "birth_place": "Ključ, Novi Marof",
     "ethnicity": "Jugoslaven",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -77013,7 +77141,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -77100,7 +77228,6 @@
     "last_name": "Šekrst",
     "middle_name": "Kate",
     "first_name": "Valent",
-    "fathers_name": "Kata",
     "full_name": "Šekrst Kate Valent",
     "additional_info": "r.1925; Vinkovec, Vrbovec; u KPO od 1943.",
     "birth_year": "1925",
@@ -77113,7 +77240,8 @@
     "pdf_x_end": 280.4,
     "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
+    "mothers_name": "Kata",
     "other_sources": [
       {
         "soldier_id": "0035112686",
@@ -77304,7 +77432,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Svedruža, Krapina",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -77518,7 +77646,7 @@
     "pdf_x_end": 458.0,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -77552,7 +77680,7 @@
     "pdf_x_end": 457.9,
     "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -77778,7 +77906,6 @@
     "last_name": "Škarec",
     "middle_name": "Eve",
     "first_name": "Stjepan",
-    "fathers_name": "Eva",
     "full_name": "Škarec Eve Stjepan",
     "additional_info": "r.1913; Pirakovec, Vrbovec; u KPO od kolovoza",
     "birth_year": "1913",
@@ -77789,7 +77916,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058003121",
     "pdf_x_end": 458.6,
-    "birth_place": "Pirakovec, Vrbovec"
+    "birth_place": "Pirakovec, Vrbovec",
+    "mothers_name": "Eva"
   },
   {
     "last_name": "Šket",
@@ -77895,7 +78023,7 @@
     "pdf_x_end": 289.9,
     "birth_place": "Prkos, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -77983,7 +78111,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Preseka, Vrbovec",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035110170",
@@ -78120,7 +78248,6 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "ethnicity": "Hrvat",
-    "occupation": "čl",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -78171,7 +78298,7 @@
     "birth_place": "Globočec, Ludbreg",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1945",
     "party": "SKOJ",
@@ -78352,7 +78479,7 @@
     "death_place": "Koprivnica",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "9021053074",
@@ -78410,7 +78537,7 @@
     "pdf_x_end": 467.1,
     "birth_place": "Sračinec, Varaždin",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035112959",
@@ -78527,7 +78654,7 @@
     "pdf_x_end": 467.0,
     "birth_place": "Mala Erpenja, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -78563,7 +78690,7 @@
     "death_type": "poginuo",
     "death_date": "1946",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035113023",
@@ -78736,7 +78863,6 @@
     "last_name": "Špiljak",
     "middle_name": "Julke",
     "first_name": "Terezija",
-    "fathers_name": "Julka",
     "full_name": "Špiljak Julke Terezija",
     "additional_info": "r. 1920; Klenovec, Pregrada; poginula 1944. kao borac KPO.",
     "birth_year": "1920",
@@ -78751,6 +78877,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "borac",
+    "mothers_name": "Julka",
     "other_sources": [
       {
         "soldier_id": "9036001494",
@@ -78899,7 +79026,7 @@
     "birth_place": "Đelekovec, Koprivnica",
     "rank": "vodnik",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -79009,7 +79136,6 @@
     "last_name": "Štagar",
     "middle_name": "Eve",
     "first_name": "Ivanka",
-    "fathers_name": "Eva",
     "full_name": "Štagar Eve Ivanka",
     "additional_info": "r. 1906; Karlovec Ludbreški, Ludbreg.",
     "birth_year": "1906",
@@ -79020,7 +79146,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058003172",
     "pdf_x_end": 280.9,
-    "birth_place": "Karlovec Ludbreški, Ludbreg"
+    "birth_place": "Karlovec Ludbreški, Ludbreg",
+    "mothers_name": "Eva"
   },
   {
     "last_name": "Štagarilua",
@@ -79155,7 +79282,7 @@
     "pdf_x_end": 281.8,
     "birth_place": "Družilovec, Zabok",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035114187",
@@ -80153,7 +80280,7 @@
     "pdf_x_end": 290.0,
     "birth_place": "Sičice, Nova Gradiška",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -80541,7 +80668,7 @@
     "pdf_x_end": 468.0,
     "birth_place": "Rijeka Koprivnička, Koprivnica",
     "ethnicity": "Srbin",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -81101,7 +81228,7 @@
     "pdf_x_end": 459.0,
     "birth_place": "Kutnjak, Koprivnica",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -81215,7 +81342,7 @@
     "birth_place": "Lenišće, Klanjec",
     "rank": "zamjenik komesara čete",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -81301,7 +81428,7 @@
     "birth_place": "Vujići Vojakovački, Križevci",
     "rank": "borac",
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035114204",

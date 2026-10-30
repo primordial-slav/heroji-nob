@@ -65,6 +65,14 @@ const MAIDEN = /(?:^|;)\s*(?:(?:por|ud)\. [A-ZČĆŽŠĐ]|roj\. [A-ZČĆŽŠĐ][
 const ASIDE = /(^|; )(?:majka|otac|zvan[ai]|ili) [^;]*;/g
 const MEN_A = new Set(genders.menA)          // men's names that end in -a
 const WOMEN = new Set(genders.women)         // women's names that don't
+// a nationality in its feminine form, with a name that may be a woman's, makes a woman whatever the bios' other
+// words count (scripts/feminine_alias.py, FEMININE_NATIONALITY)
+const FEMININE_NATIONALITY = new Set([
+  'Srpkinja', 'Hrvatica', 'Crnogorka', 'Slovenka', 'Muslimanka', 'Makedonka', 'Jevrejka', 'Židovka', 'Mađarica',
+  'Slovakinja', 'Čehinja', 'Poljakinja', 'Ruskinja', 'Rusinka', 'Ukrajinka', 'Italijanka', 'Talijanka', 'Turkinja',
+  'Rumunka', 'Romkinja', 'Albanka', 'Nemica', 'Njemica', 'Bugarka', 'Grkinja', 'Austrijanka', 'Jugoslovenka',
+  'Jugoslavenka',
+])
 
 function count(text: string, re: RegExp): number {
   return (text.match(re) ?? []).length
@@ -73,14 +81,15 @@ function count(text: string, re: RegExp): number {
 export function isWoman(soldier: Soldier): boolean {
   if (genders.womenIds.includes(soldier.soldier_id)) return true
   if (genders.menIds.includes(soldier.soldier_id)) return false
+  const name = soldier.first_name ?? ''
+  const namedWoman = !MEN_A.has(name) && (WOMEN.has(name) || name.endsWith('a'))
+  if (FEMININE_NATIONALITY.has(soldier.ethnicity ?? '') && namedWoman) return true
   const text = [soldier.additional_info, ...(soldier.other_sources ?? []).map((o) => o.additional_info)]
     .join(' ').replace(ASIDE, ' ')
   const f = count(text, FEM) + count(text, MAIDEN)
   const m = count(text, MASC)
   if (f !== m) return f > m
-  const name = soldier.first_name ?? ''
-  if (MEN_A.has(name)) return false
-  return WOMEN.has(name) || name.endsWith('a')
+  return namedWoman
 }
 
 function isSerb(soldier: Soldier): boolean | undefined {

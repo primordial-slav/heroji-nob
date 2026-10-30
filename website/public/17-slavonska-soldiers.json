@@ -9311,6 +9311,22 @@
         "ref_book": "pali-za-lepsa-svitanja"
       },
       {
+        "soldier_id": "9002000228",
+        "name": "Demonja Ilije Nikola",
+        "additional_info": "Rođen je 6. decembra 1919. u selu Vlaho vic, Gliria, Hrvatska. … Narodnim herojem proglašen je 19. juna 1945. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=189",
+        "source_page": 185,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9021012914",
+        "name": "Demonja (Ilija) Nikola",
+        "additional_info": "rođen 1919, Vlahović (Glina). Srbin, poginuo 1944. u NOBu, Sl.požega",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=555",
+        "source_page": 555,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0058000398",
         "name": "Demonja J Nikola",
         "additional_info": "r. 1919; Vlahovići, Glina ; član KP ; komandir BPČ; u KPO od listopada 1942; komandant 1. bataljona i zamjenik komandanta Odreda; poginuo 6. rujna 1944. u Požegi kao komandant 12. slavonske divizije; posmrtno odlikovan Ordenom narodnog heroja.",
@@ -9335,7 +9351,12 @@
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "birth_date": "06.12.1919"
   },
   {
     "last_name": "Derentovljević",
@@ -9422,7 +9443,7 @@
       "ethnicity"
     ],
     "death_date": "1944",
-    "death_place": "Čađavica-bosna"
+    "death_place": "Čađavica, Bosna"
   },
   {
     "last_name": "Desančić",
@@ -13027,7 +13048,7 @@
     "birth_place": "Ferdinandovac",
     "pdf_x_end": 302.6,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "birth_year": "1924",
     "borrowed": [
       "birth_year"
@@ -17307,7 +17328,7 @@
     "birth_place": "Ferdinandovac",
     "pdf_x_end": 296.9,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -19006,7 +19027,7 @@
     "birth_place": "Đurđevac",
     "pdf_x_end": 317.2,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "birth_year": "1924",
     "borrowed": [
       "birth_year"
@@ -19444,7 +19465,7 @@
     "birth_place": "Kalinovac",
     "pdf_x_end": 323.6,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035104270",
@@ -21286,7 +21307,19 @@
         "pdf_y_end": 300.0,
         "source_page": 84,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9021004708",
+        "name": "Jovanović (Pavle) Mile",
+        "additional_info": "rođen 1924, Miljanovac (Daruvar). Srbin, poginuo 1944. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=200",
+        "source_page": 200,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -21788,7 +21821,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=428",
         "source_page": 424,
         "ref_book": "otocac-brinje"
+      },
+      {
+        "soldier_id": "9021058170",
+        "name": "Jović (Mićan) Stevo",
+        "additional_info": "rođen 1910, Zagreb Dio (Zagreb-Centar). Srbin, poginuo od ustaša 1944. u NOBu, Jasenovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2828",
+        "source_page": 2828,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24312,7 +24357,6 @@
     "last_name": "Kopač",
     "middle_name": "Anđa",
     "first_name": "Sitna",
-    "fathers_name": "Anđa",
     "full_name": "Kopač Anđa Sitna",
     "additional_info": "1920, Ostrovo (Beograd) (općina Vinkovci)",
     "birth_year": "1920",
@@ -24323,7 +24367,8 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001287",
     "birth_place": "Ostrovo (Beograd)",
-    "pdf_x_end": 347.1
+    "pdf_x_end": 347.1,
+    "mothers_name": "Anđa"
   },
   {
     "last_name": "Kopriva",
@@ -25022,7 +25067,19 @@
         "pdf_y_end": 248.8,
         "source_page": 288,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9021051403",
+        "name": "Kovačević (Nikola) Lazo",
+        "additional_info": "rođen 1923, Virovitica. Srbin, poginuo 1943. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2479",
+        "source_page": 2479,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -30782,7 +30839,7 @@
       "ethnicity"
     ],
     "death_date": "1944",
-    "death_place": "Bjeljina-bosna"
+    "death_place": "Bjeljina, Bosna"
   },
   {
     "last_name": "Mandić",
@@ -30870,7 +30927,19 @@
         "pdf_y_end": 409.6,
         "source_page": 288,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9025039960",
+        "name": "Manojlović (Stevan) Savo",
+        "additional_info": "rođen 1920, Beograd-Stari Grad (Beograd Stari Grad). Srbin, poginuo 1944. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=195",
+        "source_page": 195,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41938,7 +42007,7 @@
     "birth_place": "Đurđevac",
     "pdf_x_end": 167.1,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108290",
@@ -42813,7 +42882,7 @@
     "birth_place": "Kozarevac",
     "pdf_x_end": 197.4,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035108446",
@@ -44728,7 +44797,7 @@
     "birth_place": "Ferdinandovac",
     "pdf_x_end": 142.7,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "KPJ",
     "other_sources": [
       {
@@ -46400,7 +46469,19 @@
         "pdf_y_end": 493.4,
         "source_page": 288,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9021015313",
+        "name": "Preradović (Luka) Rade",
+        "additional_info": "rođen 1927, Turčević Polje (Grubišno Polje). Srbin, poginuo 1944. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=743",
+        "source_page": 743,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -48354,7 +48435,23 @@
     "birth_place": "Duhovi",
     "death_type": "poginuo",
     "death_date": "05.04.1944",
-    "pdf_x_end": 347.4
+    "pdf_x_end": 347.4,
+    "other_sources": [
+      {
+        "soldier_id": "9021060052",
+        "name": "Radosavljević (Vaso) Savo",
+        "additional_info": "rođen 1924, Duhovi (Daruvar). Srbin, poginuo 1944. u NOBu, Garešnica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=188",
+        "source_page": 188,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Garešnica"
   },
   {
     "last_name": "Radosavljević",
@@ -48716,7 +48813,19 @@
         "pdf_y_end": 548.1,
         "source_page": 288,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9021015423",
+        "name": "Radulović (Tomo) Pero",
+        "additional_info": "rođen 1924, Zrinska (Grubišno Polje). Srbin, poginuo 1944. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=759",
+        "source_page": 759,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -52788,6 +52897,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2731",
         "source_page": 2731,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9040001749",
+        "name": "Smiljanić Vlado Đuro",
+        "additional_info": "Spisak palih boraca u Cazinskoj krajini, Osredak, opština Cazin: Smiljanić Vlado Đuro, 1912–1944",
+        "pdf_file": "cazinska-krajina-pali-borci.pdf",
+        "pdf_page": 21,
+        "pdf_x": 212.9,
+        "pdf_y": 740.0,
+        "pdf_x_end": 330.7,
+        "pdf_y_end": 748.0,
+        "ref_book": "cazinska-krajina-pali-borci"
       }
     ],
     "ethnicity": "Srbin",
@@ -52826,12 +52947,22 @@
         "pdf_y_end": 633.3,
         "source_page": 288,
         "ref_book": "ludbreg-poginuli"
+      },
+      {
+        "soldier_id": "9021001321",
+        "name": "Smiljanić (Mile) Boško",
+        "additional_info": "rođen 1926, Bedenik (Bjelovar). Srbin, poginuo 1943. u NOBu, Ludbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=35",
+        "source_page": 35,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
     "death_place": "Ludbreg",
     "borrowed": [
-      "death_place"
-    ]
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Smoković",
@@ -55560,7 +55691,6 @@
     "fathers_name": "D",
     "full_name": "Subotić D Luka",
     "additional_info": "rođen ... G. Miholjac — poginuo januara 1943, Caglin (općina Podravska Slatina)",
-    "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 153.2,
     "pdf_x": 61.2,
@@ -55571,7 +55701,23 @@
     "death_type": "poginuo",
     "death_date": "01.1943",
     "death_place": "Caglin",
-    "pdf_x_end": 194.3
+    "pdf_x_end": 194.3,
+    "other_sources": [
+      {
+        "soldier_id": "9021060379",
+        "name": "Subotić (Danilo) Luka",
+        "additional_info": "rođen 1919, Gornji Miholjac (Podravska Slatina). Srbin, poginuo 1943. u NOBu, Čaglin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1639",
+        "source_page": 1639,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Subotič",
@@ -58671,7 +58817,7 @@
     "birth_place": "Ferdinandovac",
     "pdf_x_end": 320.2,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -61348,7 +61494,7 @@
     "birth_place": "Đurđevac",
     "pdf_x_end": 311.4,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111651",
@@ -62187,7 +62333,7 @@
     "birth_place": "Đurđevac",
     "pdf_x_end": 310.4,
     "ethnicity": "Hrvat",
-    "occupation": "poljopriv",
+    "occupation": "poljoprivrednik",
     "other_sources": [
       {
         "soldier_id": "0035111782",

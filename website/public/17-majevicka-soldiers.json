@@ -775,6 +775,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1815",
         "source_page": 1815,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "9042002620",
+        "name": "Babić Milan",
+        "additional_info": "Nosioci Partizanske spomenice 1941. godine, Kozica: BABIĆ Todora MILAN, rođen 1922. godine, radnik, samouk, zamjenik komandanta bataljona u 13. birčanskoj NOU brigadi, kapetan",
+        "pdf_file": "sanski-most-borci.pdf",
+        "pdf_page": 124,
+        "pdf_x": 138.7,
+        "pdf_y": 503.6,
+        "pdf_x_end": 495.7,
+        "pdf_y_end": 523.2,
+        "ref_book": "sanski-most-borci"
       }
     ],
     "ethnicity": "Srbin",
@@ -1777,7 +1789,21 @@
     "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "16.04.1944",
-    "death_place": "Majevica"
+    "death_place": "Majevica",
+    "other_sources": [
+      {
+        "soldier_id": "9022037206",
+        "name": "Bokan (Đuro) Milan",
+        "additional_info": "rođen 1925, Bijeljina. Srbin, poginuo 1944. u NOBu, Šekovići",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=169",
+        "source_page": 169,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bokavić",
@@ -8851,6 +8877,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=173",
         "source_page": 173,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "9002000624",
+        "name": "Lukić Riste Veljko (Kurjak)",
+        "additional_info": "Rođen je 24. maja 1917. godine u Donjoj Bukovici kod Bijeljine, Bosna i Hercegovina.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=468",
+        "source_page": 464,
+        "ref_book": "narodni-heroji-1982"
       }
     ],
     "ethnicity": "Srbin",
@@ -9245,7 +9279,7 @@
     "death_type": "poginuo",
     "death_date": "09.1945",
     "rank": "politički komesar bataljona",
-    "death_place": "na Romaniji"
+    "death_place": "Romanija"
   },
   {
     "last_name": "Marcelo",
@@ -14301,7 +14335,23 @@
     "occupation": "stolar",
     "death_type": "poginuo",
     "death_date": "05.1944",
-    "rank": "komandir čete"
+    "rank": "komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "9022037215",
+        "name": "Petrović (Tošo) Ljubomir",
+        "additional_info": "rođen 1922, Bijeljina. Srbin, poginuo 1944. u NOBu, Busije kod tuzl",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=176",
+        "source_page": 176,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Busije kod tuzl"
   },
   {
     "soldier_id": "0029000899",
@@ -15326,7 +15376,7 @@
     "last_name": "Radojćić",
     "middle_name": "Mihaila",
     "first_name": "Mitar",
-    "fathers_name": "Mihaila",
+    "fathers_name": "Mihailo",
     "full_name": "Radojćić Mihaila Mitar",
     "additional_info": "rođen 1910. godine u Boljaniću — Gračanica. U NOB od 1941. godine. Poginuo oktobra 1943. godine kod Sokolca u borbi sa ustašama.",
     "birth_year": "1910",
@@ -20348,7 +20398,7 @@
     "fathers_name": "",
     "full_name": "Vidić Nikola",
     "additional_info": "Poginuo 15. marta 1945. godine na Pohovcu kod Sokolca u borbi sa Nijemcima. Ostali podaci nepoznati.",
-    "birth_year": "",
+    "birth_year": "1926",
     "pdf_page": 58,
     "pdf_y": 411.4,
     "pdf_x": 156.2,
@@ -20373,8 +20423,23 @@
         "pdf_y_end": 372.8,
         "pdf_x_left": 67.7,
         "ref_book": "teslic-u-nob-poginuli"
+      },
+      {
+        "soldier_id": "9022032720",
+        "name": "Vidić (Ante) Nikola",
+        "additional_info": "rođen 1926, Teslić. Hrvat, poginuo 1944. u NOBu, Crne stijene-ro",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2609",
+        "source_page": 2609,
+        "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "birth_place": "Teslić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Vidić",

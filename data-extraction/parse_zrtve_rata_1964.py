@@ -58,11 +58,13 @@ HOW = sorted(['u NOBu', 'u NORu', 'u direktnom teroru', 'prilikom borbi ili bomb
               'kao zarobljeni pripadnik VKJ', 'kao zarobljenik prip. NOV i POJ', 'pri deportaciji',
               'u masovnom pokolju', 'na prinudnom radu', 'u izbeglištvu', 'od posledica'], key=len, reverse=True)
 ENTRY = re.compile(r'^(?P<last>.+?) \((?P<father>[^()]*)\) (?P<first>[^,]+?),+ (?P<born>rođen[ao]?) (?P<by>\d{4})\. '
-                   r'(?P<rest>.*) \((?P<rid>[0-9A-Za-z]{10})\)$')
+                   r'(?P<rest>.*) \((?P<rid>[0-9A-Za-z]{10}|M\d{7})\)$')
 # the fate's verb as printed: poginuo, umro, ubijen, nestao, streljan, zaklan, obešen, spaljen, in any gender
 FATE = re.compile(r'^(?P<nat>[^,]*?), (?P<verb>[^\W\d_]+)'
                   r'(?: od (?P<who>[^\d,]+?))? (?P<dy>\d{4})\.? ?(?P<tail>.*)$')
-END = re.compile(r'\([0-9A-Za-z]{10}\)\s*$')      # the census number ends an entry ("5033s00105" too)
+# the census number ends an entry ("5033s00105" too; the Croatian volume's "M0007763", whose entries were read glued to
+# the next one's until 2026-10-30: "Danon (Nn) Moise" in the place of death of the fighter before him)
+END = re.compile(r'\((?:[0-9A-Za-z]{10}|M\d{7})\)\s*$')
 
 
 def birthplace(village: str, opstina: str) -> str:
@@ -131,11 +133,11 @@ def read_volume(key: str) -> tuple[list[dict], Counter]:
                 buf = ''
     doc.close()
     out = []
-    for i, e in enumerate(entries, 1):
+    for e in entries:
         born_in = birthplace(e['village'], e['opstina'])
         father = '' if e['father'].lower() in ('nn', 'n.n.', 'n', '') else e['father']
         out.append({
-            'soldier_id': f'{prefix}{i:06d}',
+            'soldier_id': '',
             'name': f"{e['last']} ({e['father']}) {e['first']}",
             'last_name': e['last'], 'first_name': e['first'], 'nick': '', 'fathers_name': father,
             'birth_year': '' if e['by'] == '9999' else e['by'],
@@ -149,7 +151,31 @@ def read_volume(key: str) -> tuple[list[dict], Counter]:
             'source_url': f"{URL.format(file)}#page={e['page']}",
             'source_page': e['page'],
         })
-    return out, fates
+    return numbered(out, prefix, OUT / f'zrtve-rata-1964-{key}-entries.json'), fates
+
+
+def numbered(entries: list[dict], prefix: str, path: Path) -> list[dict]:
+    """IDs <prefix><6 digits> in the volume's order, the entries the last run wrote keeping theirs (references and
+    Ostali borci's records hold them): an entry read since (one that had been glued to another) gets the next free
+    number after the last"""
+    if not path.exists():
+        for i, e in enumerate(entries, 1):
+            e['soldier_id'] = f'{prefix}{i:06d}'
+        return entries
+    old = json.loads(path.read_text(encoding='utf-8'))
+    key = lambda e: (e['last_name'], e['first_name'], e['fathers_name'], e['birth_year'], e['born_in'])
+    j, fresh = 0, []
+    for e in entries:
+        if j < len(old) and key(old[j]) == key(e):
+            e['soldier_id'] = old[j]['soldier_id']
+            j += 1
+        else:
+            fresh.append(e)
+    assert j == len(old), f'{path.name}: entry {old[j]["soldier_id"]} not read again'
+    last = max((int(o['soldier_id'][4:]) for o in old), default=0)
+    for n, e in enumerate(fresh, last + 1):
+        e['soldier_id'] = f'{prefix}{n:06d}'
+    return entries
 
 
 def parse(raw: str, fates: Counter) -> dict | None:

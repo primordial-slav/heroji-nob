@@ -139,7 +139,7 @@ export const en: Messages = {
         KPH: 'Communist Party of Croatia (KPH)', KPS: 'Communist Party of Slovenia (KPS)',
       } as Record<string, string>)[org] ?? org) + (year ? ` from ${year}` : '')).join(', '),
     nob: 'Joined the Partisans',
-    unit: (kind: string) => ({ brigade: 'Joined the brigade', division: 'Joined the division', detachment: 'Joined the detachment' } as Record<string, string>)[kind] ?? 'Joined the unit',
+    unit: (kind: string) => ({ brigade: 'Joined the brigade', division: 'Joined the division', detachment: 'Joined the detachment', battalion: 'Joined the battalion', company: 'Joined the company' } as Record<string, string>)[kind] ?? 'Joined the unit',
     duty: 'Duty',
     moved: 'Transferred',
     ill: 'Fell ill',
@@ -188,6 +188,7 @@ export const en: Messages = {
     next: 'Next',
     fields: {
       father: 'Father',
+      mother: 'Mother',
       ethnicity: 'Ethnicity',
       occupation: 'Occupation',
       party: 'Party',

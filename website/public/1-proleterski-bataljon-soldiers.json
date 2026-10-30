@@ -87,6 +87,14 @@
         "ref_book": "vinodolska-selca"
       },
       {
+        "soldier_id": "9021003883",
+        "name": "Antić (Andrija) Andrija",
+        "additional_info": "rođen 1914, Selce (Crikvenica). Hrvat, poginuo 1942. u NOBu, Žumlenak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=152",
+        "source_page": 152,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0006000085",
         "name": "Antić Andrije Andrija",
         "additional_info": "1914. Selce, Crikvenica. Poginuo 2.1 1943. u Krašiću na Žumberku. Sahranjen u skupnu grobnicu u Sošica.",
@@ -98,6 +106,10 @@
         "pdf_y_end": 343.8,
         "unit_file": "13-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ],
     "variants": {
       "death": [
@@ -1371,6 +1383,14 @@
     "birth_place": "Karlovac",
     "other_sources": [
       {
+        "soldier_id": "9021060214",
+        "name": "Brakuš (Savo) Đuro",
+        "additional_info": "rođen 1922, Karlovac. Srbin, poginuo 1943. u NOBu, Žumbrek",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=835",
+        "source_page": 835,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0006000687",
         "name": "Brakus Đuro",
         "additional_info": "1923. Karlovac.",
@@ -1382,7 +1402,17 @@
         "pdf_y_end": 140.3,
         "unit_file": "13-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Žumbrek"
   },
   {
     "last_name": "Braniča",
@@ -3450,6 +3480,26 @@
     "death_place": "Klenovica, Crikvenica",
     "other_sources": [
       {
+        "soldier_id": "9021060311",
+        "name": "Ivković (Rade) Milan",
+        "additional_info": "rođen 1923, Ponikve (Ogulin). Srbin, poginuo 1943. u NOBu, Vinodol",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1301",
+        "source_page": 1301,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9030000111",
+        "name": "Ivković Rade Milan",
+        "additional_info": "Ponikve Centar, općina Gornje Dubrave: Centar, obućar, Srbin. Stupio u NOB aprila 1942, borac Dubravskog odreda. Poginuo kao borac Dubravske čete u Novom Vinodolu marta 1943.",
+        "pdf_file": "hak-16-gornje-dubrave.pdf",
+        "pdf_page": 10,
+        "pdf_x": 182.9,
+        "pdf_y": 462.5,
+        "pdf_x_end": 343.6,
+        "pdf_y_end": 506.6,
+        "ref_book": "hak-16-gornje-dubrave"
+      },
+      {
         "soldier_id": "0060000692",
         "name": "Ivković Rade Milan",
         "additional_info": "1923, Ponikve, Ogulin, stupio u NOV decembra 1941. u odred »Dubrave«, borac 2. brig. 8. div, ranjen zarobljen od Talijana 21. 8. 1943. kod Košara i ubijen u Klenovici kod Crikvenice",
@@ -3461,7 +3511,13 @@
         "pdf_y_end": 667.3,
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Ivković",
@@ -5102,6 +5158,14 @@
         "ref_book": "otocac-brinje"
       },
       {
+        "soldier_id": "9027010176",
+        "name": "Lončar (Branko) Boško",
+        "additional_info": "rođen 1925, Žednik (Subotica). Srbin, poginuo 1944. u NOBu, Kapeli",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=549",
+        "source_page": 549,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
         "soldier_id": "0006003452",
         "name": "Lonćar Branka Bosko",
         "additional_info": "12924. Škalić, Otočac. Poginuo 7. IV 1944. na Velikoj Kapeli.",
@@ -5125,6 +5189,10 @@
         "pdf_y_end": 273.0,
         "unit_file": "14-primorsko-goranska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "variants": {
       "born": [
@@ -7403,6 +7471,14 @@
         "pdf_x_end": 261.9,
         "pdf_y_end": 482.7,
         "ref_book": "hak-18-slunj-veljun"
+      },
+      {
+        "soldier_id": "9105000072",
+        "name": "Pjevac Mane Dušan",
+        "additional_info": "Pali borci općine Primišlje 1941—1945., Gornje Primišlje: 72. Pjevac Mane Dušan, rođen 1922, u NOV od 1941, borac Omladinskog bataljona «Joža Vlahović», poginuo 1942. u Žumberku.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071&pg_seq=180",
+        "source_page": 180,
+        "ref_book": "kordunski-rekvijem"
       }
     ]
   },
@@ -7968,6 +8044,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1274",
         "source_page": 1274,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9029000125",
+        "name": "Radulovič Milina Ilija",
+        "additional_info": "Palice, općina Drežnica: 1922, seljak, Srbin. Stupio u NOB 1941, borac logora Radlović, od 1942. u 1. prolet. bat. Hrvatske. Poginuo kao komandant bat. 6. div. na Sremskom frontu aprila 1945.",
+        "pdf_file": "hak-12-dreznica.pdf",
+        "pdf_page": 6,
+        "pdf_x": 201.8,
+        "pdf_y": 536.7,
+        "pdf_x_end": 370.5,
+        "pdf_y_end": 587.2,
+        "ref_book": "hak-12-dreznica"
       }
     ],
     "ethnicity": "Srbin",
@@ -8245,6 +8333,14 @@
     "death_place": "kod Krmačina u Žumberku",
     "other_sources": [
       {
+        "soldier_id": "9021060435",
+        "name": "Reljac (Tomo) Rudolf",
+        "additional_info": "rođen 1911, Rijeka. Hrvat, poginuo 1943. u NOBu, Sandžak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1739",
+        "source_page": 1739,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0006005927",
         "name": "Reljac Tome Rudolf",
         "additional_info": "1911. Podhum, Rijeka. Poginuo 9. V 1943. u selu Krmačine na Žumberku.",
@@ -8256,6 +8352,10 @@
         "pdf_y_end": 320.1,
         "unit_file": "13-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {

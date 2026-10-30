@@ -1473,7 +1473,7 @@
         ]
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ 1939"
   },
   {
@@ -2239,7 +2239,7 @@
         "ref_book": "banijski-odredi-kadar"
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ 1939",
     "birth_date": "21.05.1912"
   },
@@ -2531,7 +2531,7 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ 1938"
   },
   {
@@ -3275,6 +3275,14 @@
         "pdf_x_end": 479.6,
         "pdf_y_end": 426.8,
         "ref_book": "hak-18-slunj-veljun"
+      },
+      {
+        "soldier_id": "9021043051",
+        "name": "Brković (Dušana) Dragan",
+        "additional_info": "rođen 1923, Cetin-grad (Slunj). Srbin, poginuo 1942. u NOBu, Lumberak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2073",
+        "source_page": 2073,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ]
   },
@@ -3933,7 +3941,7 @@
         ]
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ"
   },
   {
@@ -4979,7 +4987,6 @@
     "last_name": "Despot",
     "middle_name": "Kate",
     "first_name": "Đuro",
-    "fathers_name": "Kata",
     "full_name": "Despot Kate Đuro",
     "additional_info": "komandir čete u 1. bataljonu, rođen 1912, Vlahović, Glina, zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo na Sutjesci juna 1943. godine.",
     "birth_year": "1912",
@@ -5011,7 +5018,8 @@
         "pdf_x_end": 447.5
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "mothers_name": "Kata"
   },
   {
     "last_name": "Dević",
@@ -5088,6 +5096,14 @@
         "pdf_x_end": 271.9,
         "pdf_y_end": 647.2,
         "ref_book": "hak-18-slunj-veljun"
+      },
+      {
+        "soldier_id": "9105000131",
+        "name": "Dević Rade Danica",
+        "additional_info": "Pali borci općine Primišlje 1941—1945., Donje Primišlje: 10. Dević Rade Danica, rođena 1925, u NOV od 1942, borac 8. bosanske brigade, poginula u Crnoj Gori 1943.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071&pg_seq=183",
+        "source_page": 183,
+        "ref_book": "kordunski-rekvijem"
       }
     ],
     "party": "SKOJ",
@@ -6962,7 +6978,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "06.1943",
-    "death_place": "na Sutjesci",
+    "death_place": "Sutjeska",
     "rank": "borac",
     "other_sources": [
       {
@@ -6981,7 +6997,7 @@
       "death": [
         {
           "date": "05.1943",
-          "place": "na Sutjesci"
+          "place": "Sutjeska"
         }
       ]
     }
@@ -9732,7 +9748,7 @@
     "death_place": "Tuzla",
     "rank": "politički komesar",
     "unit_detail": "1. četa, 2. bataljon",
-    "occupation": "ing",
+    "occupation": "inženjer šumarstva",
     "party": "KPJ 1942",
     "other_sources": [
       {
@@ -10413,7 +10429,6 @@
     "last_name": "Krnjaić",
     "middle_name": "Milice",
     "first_name": "Josip",
-    "fathers_name": "Milica",
     "full_name": "Krnjaić Milice Josip",
     "additional_info": "2. bataborac ljona, rođen 1920, Gornji Žirovac, Dvor, zemljoradnik, Srbin, u NOB od 1942, poginuo na Zelengori juna 1943.",
     "birth_year": "1920",
@@ -10443,7 +10458,8 @@
         "pdf_y_end": 575.3
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "mothers_name": "Milica"
   },
   {
     "last_name": "Krnjaić",
@@ -14515,7 +14531,7 @@
         "pdf_y_end": 496.4
       }
     ],
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "party": "KPJ"
   },
   {
@@ -16498,12 +16514,22 @@
         "pdf_x_end": 330.7,
         "pdf_y_end": 465.4,
         "ref_book": "cazinska-krajina-pali-borci"
+      },
+      {
+        "soldier_id": "9022001380",
+        "name": "Orelj (Rade) Mika",
+        "additional_info": "rođena 1923, Golubić (Bihać). Srpkinja, poginula 1943. u NOBu, Livno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=98",
+        "source_page": 98,
+        "ref_book": "zrtve-rata-1964-bih"
       }
     ],
     "birth_year": "1923",
     "borrowed": [
-      "birth_year"
-    ]
+      "birth_year",
+      "death_place"
+    ],
+    "death_place": "Livno"
   },
   {
     "last_name": "Orković",
@@ -17955,7 +17981,7 @@
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "party": "KPJ"
   },
   {
@@ -21112,7 +21138,6 @@
     "fathers_name": "Tomo",
     "full_name": "Samardžija Tome Miloš",
     "additional_info": "borac, rođen u Bijelim Vodama, Glina, zemljoradnik, Srbin, u NOB od 1942. Umro posle rata u Beogradu.",
-    "birth_year": "",
     "pdf_page": 31,
     "pdf_y": 516.6,
     "pdf_x": 39.6,
@@ -21125,7 +21150,21 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "borac",
-    "death_place": "Beograd"
+    "death_place": "Beograd",
+    "other_sources": [
+      {
+        "soldier_id": "9021060091",
+        "name": "Samardžija (Tomo) Miloš",
+        "additional_info": "rođen 1912, Bijele Vode (Glina). Srbin, umro 1943. u NOBu, Beograd",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=477",
+        "source_page": 477,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Samardžija",
@@ -22678,7 +22717,7 @@
         "pdf_y_end": 398.0
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ"
   },
   {
@@ -22808,7 +22847,7 @@
     "death_date": "07.06.1943",
     "rank": "politički delegat voda",
     "unit_detail": "1. bataljon",
-    "occupation": "dak",
+    "occupation": "đak",
     "death_place": "Piva",
     "party": "KPJ"
   },
@@ -24891,7 +24930,6 @@
     "last_name": "Vnuz",
     "middle_name": "Ružice",
     "first_name": "Milan",
-    "fathers_name": "Ružica",
     "full_name": "Vnuz Ružice Milan",
     "additional_info": "borac 1. bataljona, rođen 1917, Brubanj, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo u kanjonu Tare početkom juna 1943. godine.",
     "birth_year": "1917",
@@ -24909,7 +24947,8 @@
     "death_date": "početkom juna 1943",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "death_place": "Tara"
+    "death_place": "Tara",
+    "mothers_name": "Ružica"
   },
   {
     "last_name": "Vnuz",
@@ -27207,7 +27246,7 @@
         "ref_book": "banijski-odredi-kadar"
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ 1938"
   },
   {
@@ -27531,7 +27570,6 @@
     "last_name": "Ša",
     "middle_name": "Ljubice",
     "first_name": "Lazo",
-    "fathers_name": "Ljubica",
     "full_name": "Ša Ljubice Lazo",
     "additional_info": "borac 3. bataljona, rođen 1912, Brubanj, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Podgraba, na komunikaciji Sarajevo-Višegrad, 18. juna 1943.",
     "birth_year": "1912",
@@ -27549,7 +27587,8 @@
     "death_date": "18.06.1943",
     "death_place": "kod Podgraba, na komunikaciji Sarajevo-Višegrad",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "mothers_name": "Ljubica"
   },
   {
     "last_name": "Ša",
@@ -31759,6 +31798,14 @@
         "pdf_x_end": 381.8,
         "pdf_y_end": 371.4,
         "ref_book": "cazinska-krajina-pali-borci"
+      },
+      {
+        "soldier_id": "9022035040",
+        "name": "Drašković (Mile) Đuro",
+        "additional_info": "rođen 1908, Glinica (Velika Kladuša). Srbin, poginuo 1943. u NOBu, Glinica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2724",
+        "source_page": 2724,
+        "ref_book": "zrtve-rata-1964-bih"
       }
     ]
   },
@@ -31778,7 +31825,7 @@
     "pdf_file": "8-banijska-poginuli.pdf",
     "soldier_id": "0045010187",
     "ethnicity": "Srbin",
-    "occupation": "zeljoradnik",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "05.1943",
     "rank": "borac",
@@ -32933,6 +32980,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=416",
         "source_page": 416,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9005000811",
+        "name": "Ivković Adama Ilija",
+        "additional_info": "rođen 1914. u Šamaračkim Brđanima, borac VII banijske divizije, poginuo 1943. godine u Bihaću.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000397&pg_seq=317",
+        "source_page": 313,
+        "ref_book": "seoske-hronike"
       }
     ]
   },
@@ -33360,7 +33415,6 @@
     "last_name": "Januz",
     "middle_name": "Ružice",
     "first_name": "Milan",
-    "fathers_name": "Ružica",
     "full_name": "Januz Ružice Milan",
     "additional_info": "1917, Brubno, kotar Glina, zemljoradnik, Srbin. Borac od 1942. godine, poginuo juna 1943. u bici na Sutjesci.",
     "birth_year": "1917",
@@ -33377,7 +33431,8 @@
     "death_date": "06.1943",
     "rank": "borac",
     "pdf_x_end": 454.7,
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "mothers_name": "Ružica"
   },
   {
     "last_name": "Januz",
@@ -33528,7 +33583,7 @@
         "pdf_y_end": 355.3
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "death_place": "kod sela Donji Budanj na Jahorini",
     "party": "KPJ"
   },
@@ -35349,7 +35404,7 @@
     "pdf_file": "8-banijska-poginuli.pdf",
     "soldier_id": "0045010371",
     "ethnicity": "Srbin",
-    "occupation": "zemjoradnik",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "05.12.1942",
     "death_place": "kod Kostajničkog Majura, Kostajnica",
@@ -38349,7 +38404,7 @@
     "pdf_file": "8-banijska-poginuli.pdf",
     "soldier_id": "0045010549",
     "ethnicity": "Srbin",
-    "occupation": "zemjoradnik",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "02.1943",
     "death_place": "na Raduši u bici za ranjenike na Neretvi",
@@ -39622,6 +39677,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=513",
         "source_page": 513,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9005000940",
+        "name": "Petrović Adama Dmitar",
+        "additional_info": "rođen 1922. u Brezovu Polju, Glina, borac VII banijske divizije, poginuo 1943. godine u Grmeču.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000397&pg_seq=325",
+        "source_page": 321,
+        "ref_book": "seoske-hronike"
       }
     ]
   },
@@ -41976,7 +42039,7 @@
     "soldier_id": "0045010788",
     "birth_place": "Banjàni",
     "ethnicity": "Srbin",
-    "occupation": "zeljoradnik",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "02.1943",
     "death_place": "na Raduši u bici za ranjenike na Neretvi",
@@ -42244,7 +42307,7 @@
     "pdf_file": "8-banijska-poginuli.pdf",
     "soldier_id": "0045010808",
     "ethnicity": "Srbin",
-    "occupation": "dak",
+    "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "02.1943",
     "death_place": "na Radaši kod sela Paloč u bici za ranjenike na Neretvi",
@@ -45655,7 +45718,7 @@
         "pdf_y_end": 419.4
       }
     ],
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "party": "KPJ"
   },
   {
@@ -47632,7 +47695,7 @@
     "pdf_x": 444.8,
     "pdf_y_end": 355.3,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.5,
     "pdf_rects": [
       [
@@ -47664,7 +47727,7 @@
     "pdf_x": 290.4,
     "pdf_y_end": 355.3,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 353.0,
     "pdf_rects": [
       [
@@ -47728,7 +47791,7 @@
     "pdf_x": 229.3,
     "pdf_y_end": 440.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 285.4,
     "soldier_id": "0045020012",
     "rank": "sekretar SKOJ-a brigade",
@@ -47747,7 +47810,7 @@
     "pdf_x": 164.9,
     "pdf_y_end": 290.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 238.7,
     "soldier_id": "0045020015",
     "rank": "komesar brigade"
@@ -47783,7 +47846,7 @@
     "pdf_x": 302.0,
     "pdf_y_end": 430.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 357.0,
     "soldier_id": "0045020018",
     "rank": "referent saniteta brigade"
@@ -47801,7 +47864,7 @@
     "pdf_x": 199.3,
     "pdf_y_end": 528.3,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "pdf_x_end": 295.7,
     "soldier_id": "0045020019"
   },
@@ -47887,7 +47950,7 @@
     "pdf_x": 243.1,
     "pdf_y_end": 333.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 320.5,
     "pdf_rects": [
       [
@@ -47956,7 +48019,7 @@
     "pdf_x": 306.6,
     "pdf_y_end": 258.8,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 390.4,
     "pdf_rects": [
       [
@@ -48068,7 +48131,7 @@
     "pdf_x": 440.3,
     "pdf_y_end": 398.0,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.6,
     "pdf_rects": [
       [
@@ -48132,7 +48195,7 @@
     "pdf_x": 364.2,
     "pdf_y_end": 440.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 430.0,
     "soldier_id": "0045020035",
     "rank": "sekretar SKOJ-a brigade",
@@ -48187,7 +48250,7 @@
     "pdf_x": 292.2,
     "pdf_y_end": 440.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 357.7,
     "soldier_id": "0045020039",
     "rank": "sekretar SKOJ-a brigade",
@@ -48206,7 +48269,7 @@
     "pdf_x": 135.0,
     "pdf_y_end": 507.0,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "pdf_x_end": 216.8,
     "pdf_rects": [
       [
@@ -48237,7 +48300,7 @@
     "pdf_x": 353.1,
     "pdf_y_end": 419.4,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 420.4,
     "soldier_id": "0045020041",
     "rank": "intendant brigade"
@@ -48255,7 +48318,7 @@
     "pdf_x": 376.0,
     "pdf_y_end": 398.0,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 433.8,
     "soldier_id": "0045020042",
     "rank": "obavještajni oficir brigade",
@@ -48288,7 +48351,7 @@
     "pdf_x": 404.8,
     "pdf_y_end": 333.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.3,
     "soldier_id": "0045020044",
     "rank": "zamjenik komesara brigade",
@@ -48321,7 +48384,7 @@
     "pdf_x": 378.3,
     "pdf_y_end": 376.6,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.3,
     "soldier_id": "0045020046"
   },
@@ -48412,7 +48475,7 @@
     "pdf_x": 135.0,
     "pdf_y_end": 344.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 240.3,
     "soldier_id": "0045020052",
     "rank": "zamjenik komesara brigade"
@@ -48430,7 +48493,7 @@
     "pdf_x": 244.3,
     "pdf_y_end": 290.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 316.4,
     "soldier_id": "0045020053",
     "rank": "komesar brigade"
@@ -48484,7 +48547,7 @@
     "pdf_x": 313.7,
     "pdf_y_end": 312.3,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 380.9,
     "soldier_id": "0045020057",
     "rank": "zamjenik komandanta brigade"
@@ -48502,7 +48565,7 @@
     "pdf_x": 440.4,
     "pdf_y_end": 301.8,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.5,
     "pdf_rects": [
       [
@@ -48534,7 +48597,7 @@
     "pdf_x": 396.2,
     "pdf_y_end": 258.8,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.7,
     "pdf_rects": [
       [
@@ -48584,7 +48647,7 @@
     "pdf_x": 198.4,
     "pdf_y_end": 280.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 254.2,
     "soldier_id": "0045020060",
     "rank": "komesar brigade"
@@ -48620,7 +48683,7 @@
     "pdf_x": 400.8,
     "pdf_y_end": 517.8,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "pdf_x_end": 466.4,
     "soldier_id": "0045020066"
   },
@@ -48637,7 +48700,7 @@
     "pdf_x": 246.3,
     "pdf_y_end": 344.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 313.9,
     "soldier_id": "0045020067",
     "rank": "zamjenik komesara brigade"
@@ -48655,7 +48718,7 @@
     "pdf_x": 291.4,
     "pdf_y_end": 419.4,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 346.5,
     "soldier_id": "0045020069",
     "rank": "intendant brigade"
@@ -48673,7 +48736,7 @@
     "pdf_x": 256.6,
     "pdf_y_end": 301.8,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 325.6,
     "soldier_id": "0045020070",
     "rank": "zamjenik komandanta brigade"
@@ -48691,7 +48754,7 @@
     "pdf_x": 363.7,
     "pdf_y_end": 430.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 414.8,
     "soldier_id": "0045020072",
     "rank": "referent saniteta brigade"
@@ -48795,7 +48858,7 @@
     "pdf_x": 436.6,
     "pdf_y_end": 440.7,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 466.4,
     "pdf_rects": [
       [
@@ -48828,7 +48891,7 @@
     "pdf_x": 319.4,
     "pdf_y_end": 344.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 433.5,
     "soldier_id": "0045020079",
     "rank": "zamjenik komesara brigade"
@@ -48972,7 +49035,7 @@
     "pdf_x": 271.9,
     "pdf_y_end": 451.3,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 339.9,
     "soldier_id": "0045020088",
     "rank": "sekretar SKOJ-a brigade",
@@ -49059,7 +49122,7 @@
     "pdf_x": 207.5,
     "pdf_y_end": 451.3,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 266.2,
     "soldier_id": "0045020099",
     "rank": "sekretar SKOJ-a brigade",
@@ -49096,7 +49159,7 @@
     "pdf_x": 397.0,
     "pdf_y_end": 496.4,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "pdf_x_end": 466.5,
     "soldier_id": "0045020101"
   },
@@ -49113,7 +49176,7 @@
     "pdf_x": 260.9,
     "pdf_y_end": 280.2,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 363.7,
     "soldier_id": "0045020102",
     "rank": "komesar brigade"
@@ -49181,7 +49244,7 @@
     "pdf_x": 135.0,
     "pdf_y_end": 269.4,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Štab brigade",
+    "unit_detail": "štab brigade",
     "pdf_x_end": 189.5,
     "pdf_rects": [
       [
@@ -49249,7 +49312,7 @@
     "pdf_x": 206.8,
     "pdf_y_end": 496.4,
     "pdf_file": "8-banijska-kadar.pdf",
-    "unit_detail": "Politodjel brigade",
+    "unit_detail": "politodjel brigade",
     "pdf_x_end": 292.5,
     "soldier_id": "0045020110"
   },

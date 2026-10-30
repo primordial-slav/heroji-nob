@@ -874,15 +874,15 @@
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 468.9,
     "occupation": "pitomac vojne akademije",
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "death_place",
-      "ethnicity",
-      "party"
-    ],
-    "death_place": "Vikoč",
-    "party": "KPJ",
     "other_sources": [
+      {
+        "soldier_id": "9025032433",
+        "name": "Antonijević (Sekula) Ilija",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1945. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1225",
+        "source_page": 1225,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
       {
         "soldier_id": "0039000020",
         "name": "Antonijević S Ilija",
@@ -908,6 +908,14 @@
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Vikoč",
+    "party": "KPJ",
     "birth_date": "03.08.1921",
     "variants": {
       "death": [
@@ -1808,7 +1816,19 @@
         "source_page": 301,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032444",
+        "name": "Bjeličić (Miloje) Miodrag",
+        "additional_info": "rođen 1922, Titovo Užice. Srbin, ubijen 1941. kao zarobljenik prip. NOV i POJ, Valjevo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1225",
+        "source_page": 1225,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "13.04.1922"
   },
@@ -3059,7 +3079,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Jabuka,pljevlja"
+    "death_place": "Jabuka, Pljevlja"
   },
   {
     "last_name": "Đuković",
@@ -3493,6 +3513,15 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=235",
         "source_page": 231,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9114001061",
+        "name": "Đurić N. Želimir",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 61. Đurić N. Želimir, narodni heroj.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=307",
+        "source_page": 304,
+        "role": "participant",
+        "ref_book": "uzicka-gimnazija"
       }
     ],
     "birth_date": "21.04.1919"
@@ -3592,7 +3621,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=308",
         "source_page": 305,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032526",
+        "name": "Đurović (Vladimir) Olga",
+        "additional_info": "rođena 1919, Titovo Užice. Srpkinja, poginula od ustaša 1941. u NOBu, Gradina kod jasenovca",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1227",
+        "source_page": 1227,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -3636,7 +3677,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=300",
         "source_page": 297,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032524",
+        "name": "Đurović (Milo) Veliša",
+        "additional_info": "rođen 1907, Titovo Užice. Srbin, poginuo 1942. u NOBu, Bajina bašta",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1227",
+        "source_page": 1227,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -4281,7 +4334,6 @@
     "last_name": "Dabić",
     "middle_name": "Mileve",
     "first_name": "Radojica",
-    "fathers_name": "Mileva",
     "full_name": "Dabić Mileve Radojica",
     "additional_info": "borac 2. zlatiborske čete, zemljoradnik, rođen 1922. u Alinom Potoku, kod Čajetine, poginuo u borbi protiv Nijemaca kod Ljubovije 26. novembra 1941.",
     "birth_year": "1922",
@@ -4298,7 +4350,8 @@
     "rank": "borac",
     "pdf_x_end": 467.4,
     "unit_detail": "2. zlatiborska četa",
-    "death_place": "Ljubovija"
+    "death_place": "Ljubovija",
+    "mothers_name": "Mileva"
   },
   {
     "last_name": "Dakić",
@@ -5683,6 +5736,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=987",
         "source_page": 987,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9017000653",
+        "name": "Dragićević Veselina Vladimir",
+        "additional_info": "rođen u Otnju, 1917. godine, zemljoradnik, borac 1. požeške čete, poginuo u borbi protiv Nemaca kod Požege, 29. novembra 1941.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 67,
+        "pdf_x": 58.1,
+        "pdf_y": 415.2,
+        "pdf_x_end": 361.9,
+        "pdf_y_end": 445.5,
+        "pdf_x_left": 31.5,
+        "ref_book": "pozega-pali"
       }
     ],
     "unit_detail": "1. požeška četa",
@@ -5927,8 +5993,22 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=306",
         "source_page": 303,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025001662",
+        "name": "Drinčić (Dragomir) Miloje",
+        "additional_info": "rođen 1918, Visoka (Arilje). Srbin, poginuo 1941. u NOBu, T. užice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=44",
+        "source_page": 44,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1941",
     "birth_date": "21.10.1918"
   },
   {
@@ -6341,8 +6421,22 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=307",
         "source_page": 304,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9021060125",
+        "name": "Dudić (Alija) Mujo",
+        "additional_info": "rođen 1920, Gospić. Srbin, poginuo 1943. u NOBu, Krstač-konjic",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=585",
+        "source_page": 585,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Krstač-konjic",
     "birth_date": "07.04.1920"
   },
   {
@@ -6436,7 +6530,19 @@
         "source_page": 304,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032515",
+        "name": "Dujić (Pera) Đorđe",
+        "additional_info": "rođen 1922, Titovo Užice. ostalo, poginuo 1942. u NOBu, Kupres",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1227",
+        "source_page": 1227,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7432,7 +7538,7 @@
     "fathers_name": "S",
     "full_name": "Gezović S Miomir",
     "additional_info": "zvani Mijo; borac 2. užnčke čete, član KPJ, student medicine, zarobili ga četnici i ubili ljotićevci u zatvoru u Bajinoj Bašti januara 1942.",
-    "birth_year": "",
+    "birth_year": "1918",
     "pdf_page": 13,
     "pdf_y": 522.3,
     "pdf_x": 104.3,
@@ -7456,8 +7562,23 @@
         "source_page": 302,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025004282",
+        "name": "Gezović (Šime) Miomir",
+        "additional_info": "rođen 1918, Beograd-Palilula i Karabu (Beograd Palilula). Srbin, poginuo 1942. u NOBu, Jelova gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=130",
+        "source_page": 130,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Beograd",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Tešić",
@@ -7759,6 +7880,15 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1227",
         "source_page": 1227,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9114001033",
+        "name": "Gmizović J. Prvoslav",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 33. Gmizović J. Prvoslav, sudija, rođen je 17. aprila 1910. godine u Užicu. Ubili su ga četnici u Mionici kod Kosjerića 8. novembra 1941. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=305",
+        "source_page": 302,
+        "role": "participant",
+        "ref_book": "uzicka-gimnazija"
       }
     ],
     "ethnicity": "Srbin",
@@ -8110,6 +8240,14 @@
         "ref_book": "cacanski-kraj-pali"
       },
       {
+        "soldier_id": "9025008865",
+        "name": "Gudurić (Petar) Slavoljub",
+        "additional_info": "rođen 1921, Atenica (Čačak). Srbin, poginuo 1943. u NOBu, Majevička brigada",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=355",
+        "source_page": 355,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0001003556",
         "name": "Gudurić Petra Slavoljub",
         "additional_info": "1921, Atenica, Čačak, Srbija, Srbin, radnik, u NOB od avgusta 1941, u brigadi od decembra 1941, V bataljon, borac, poginuo 01. 05. 1942, Kozara, Čajniče",
@@ -8198,7 +8336,7 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000236",
     "birth_place": "Užice",
-    "occupation": "student",
+    "occupation": "studentkinja",
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "bolničarka",
@@ -8508,6 +8646,14 @@
         "source_page": 306,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032555",
+        "name": "Ilić (Radoslav) Milan",
+        "additional_info": "rođen 1922, Titovo Užice. Srbin, poginuo 1942. u NOBu, Got",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1228",
+        "source_page": 1228,
+        "ref_book": "zrtve-rata-1964-srb"
       },
       {
         "soldier_id": "0001003758",
@@ -8928,6 +9074,14 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "9025025650",
+        "name": "Ivanović (Dimitrije) Borivoje",
+        "additional_info": "rođen 1923, Požega. Srbin, poginuo 1943. u NOBu, Selo Prusac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=988",
+        "source_page": 988,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0039010010",
         "name": "Ivanović Dimitrija Borivoje",
         "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Požega: Ivanović Borivoje, poginuo 19. jula 1942. godine u Urijama kod Bugojna",
@@ -8957,8 +9111,10 @@
     ],
     "death_place": "Urije, Bugojno",
     "borrowed": [
-      "death_place"
+      "death_place",
+      "ethnicity"
     ],
+    "ethnicity": "Srbin",
     "birth_date": "27.01.1923"
   },
   {
@@ -9117,7 +9273,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1942",
-    "death_place": "U sandžaku",
+    "death_place": "U Sandžaku",
     "birth_date": "25.02.1913"
   },
   {
@@ -9337,7 +9493,7 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000272",
     "birth_place": "Bajina Bašta",
-    "occupation": "student prava",
+    "occupation": "studentkinja prava",
     "rank": "borac",
     "pdf_x_end": 485.9,
     "death_type": "streljan",
@@ -11540,7 +11696,6 @@
     "last_name": "Jovanović",
     "middle_name": "Julke",
     "first_name": "Ljubinko",
-    "fathers_name": "Julka",
     "full_name": "Jovanović Julke Ljubinko",
     "additional_info": "borac 1. račanske čete, pekarski radnik, rođen 1916. u Pilici, kod Bajine Bašte, uhvatili ga Nijemci i otjerali u koncentracioni logor na Banjicu, gdje su ga strijeljali 22. jula 1942.",
     "birth_year": "1916",
@@ -11556,7 +11711,8 @@
     "pdf_x_end": 455.5,
     "unit_detail": "1. račanska četa",
     "death_type": "streljan",
-    "death_date": "22.07.1942"
+    "death_date": "22.07.1942",
+    "mothers_name": "Julka"
   },
   {
     "last_name": "Jovanović",
@@ -11874,10 +12030,22 @@
         "pdf_y_end": 472.2,
         "pdf_x_left": 50.9,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025032583",
+        "name": "Jovanović (Nedeljko) Momčilo",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1941. u NOBu, Ražana-kosjerić",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1228",
+        "source_page": 1228,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
     "death_place": "Ražana, Kosjerić",
     "party": "SKOJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "20.02.1921"
   },
   {
@@ -12464,8 +12632,35 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=310",
         "source_page": 307,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9006000153",
+        "name": "Jungović Aleksandar",
+        "additional_info": "1923, Titovo Užice, đak, kandidat za člana KPJ, poginuo na Kupresu, 11. avgusta 1942.",
+        "pdf_file": "ofanziva-1942-poginuli.pdf",
+        "pdf_page": 7,
+        "pdf_x": 74.8,
+        "pdf_y": 145.2,
+        "pdf_x_end": 354.7,
+        "pdf_y_end": 162.6,
+        "pdf_x_left": 49.8,
+        "ref_book": "ofanziva-1942-poginuli"
+      },
+      {
+        "soldier_id": "9025032592",
+        "name": "Jungović (Todor) Aleksandar",
+        "additional_info": "rođen 1923, Titovo Užice. Srbin, poginuo 1942. u NOBu, Kupres",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1229",
+        "source_page": 1229,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kupres",
     "birth_date": "10.09.1923"
   },
   {
@@ -13275,6 +13470,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=988",
         "source_page": 988,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9035015521",
+        "name": "Knežević Perov Nikola",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Herceg Novi: godina rođenja 1908; mjesto rođenja Ulcinj; godina smrti 1941; mjesto pogibije Požega",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 382,
+        "pdf_x": 106.8,
+        "pdf_y": 590.1,
+        "pdf_x_end": 497.3,
+        "pdf_y_end": 600.0,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
     "ethnicity": "Crnogorac",
@@ -13908,11 +14115,23 @@
         "pdf_y_end": 108.3,
         "pdf_x_left": 68.9,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025003298",
+        "name": "Korać (Aleksandar) Sreten",
+        "additional_info": "rođen 1922, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, ubijen 1941. kao zarobljenik prip. NOV i POJ, Valjevo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=98",
+        "source_page": 98,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
     "death_type": "streljan",
     "death_date": "27.11.1941",
     "death_place": "Krušik, Valjevo",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "23.05.1922"
   },
   {
@@ -14256,7 +14475,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=310",
         "source_page": 307,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032604",
+        "name": "Kovačević (Andrija) Gojko",
+        "additional_info": "rođen 1926, Titovo Užice. Srbin, poginuo 1943. u NOBu, 2 Proleter.brig",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1229",
+        "source_page": 1229,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "07.04.1926"
   },
@@ -14329,7 +14560,19 @@
         "source_page": 307,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025034519",
+        "name": "Kovačević (Jovan) Miladin",
+        "additional_info": "rođen 1910, Bačevci (Ušće). Srbin, ubijen 1943. kao zarobljenik prip. NOV i POJ, Krasjak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1284",
+        "source_page": 1284,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "10.04.1910"
   },
@@ -15436,8 +15679,26 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=421",
         "source_page": 399,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "9025012080",
+        "name": "Kušić (Radovan) Milinko",
+        "additional_info": "rođen 1912, Sveštica (Ivanjica). Srbin, poginuo 1943. u NOBu, Majkića jap.-bo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=453",
+        "source_page": 453,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Majkića jap.-bo",
     "birth_date": "03.1912"
   },
   {
@@ -17534,7 +17795,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=311",
         "source_page": 308,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032622",
+        "name": "Mandić (Luka) Milovan",
+        "additional_info": "rođen 1923, Titovo Užice. Srbin, poginuo 1941. u NOBu, Bajna bašta",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "03.02.1923"
   },
@@ -17717,6 +17990,14 @@
         "pdf_y_end": 573.3,
         "pdf_x_left": 41.3,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9114000003",
+        "name": "Marinković S. Venijamin",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Profesori i drugi radnici Gimnazije poginuli u NOB: 3. Marinković S. Venijamin, profesor, rođen je u Vnonici kod Ivanjice 7. jula 1909. godine. Gimnaziju je učio u Ivanjnci i Čačku. Kao odličan učenik završavao je i po dva razreda godišnje. Studirao je nemački jezik i jugoslovensku književnost u Beogradu i spadao u red najnaprednijih studenata. Na fakultetu je postao član KPJ i član Univerzitetskog komiteta KPJ. Zbog komunističke delatnosti nije bio primljen u školu za rezervne oficire niti je mogao dobiti posao u državnoj gimnaziji. Zaposlio se kao suplent u Samoupravnoj gimnaziji u Smederevskoj Palanci. Radio je u Rumi i Senju, a Od 1938. godine je bio profesor užičke Gimnazije. Kal je došao u Užice, Marinković je posedovao široku kulturu i bogato revolucionarno iskustvo. Osim nemačkog, govorio je francuski, engleski i ruski, a služio se i ostalim slovenskim jezicima. Skroman, nenametljiv i taktičan osvajao je simpatije „ kolega i učenika. Među užičkim gimnazijalcima i naprednim profesorima našao je pogodno te za politički rad. Upoznavao je učenike sa francuskom revolucijom i Pariskom komunom, govorio o Hajneu, Geteu i filozofiji Kanta, Hegela i Marksa. Koristio je razne oblike okupljanja učenika i držao skojevske sastanke. Snabdevao ih je naprednom lektirom i marksističkom literaturom. U tome mu je pomagala prof. Blaga Gošović i donosila zabranjenu literaturu iz Beograda. U Užicu je Venijamin Marinković postao član Okružnog povereništva KPJ, a zatim član Okružnog komiteta KPJ za okrug užički. Učestvovao je u organizovanju demonstracija i pripremanju oružanog ustanka 1941. godine. Bio je politički komesar Moravičke partizanske čete. Poginuo je 29. novembra 1941. godine u Požezi kao komandant mesta.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=301",
+        "source_page": 298,
+        "ref_book": "uzicka-gimnazija"
       }
     ]
   },
@@ -17750,7 +18031,19 @@
         "source_page": 309,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032625",
+        "name": "Marinković (Savko) Đorđe",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, ubijen 1942. kao zarobljenik prip. NOV i POJ, Karosjok norveška",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "18.06.1921"
   },
@@ -18860,6 +19153,14 @@
         "ref_book": "sanski-most-borci"
       },
       {
+        "soldier_id": "9025032624",
+        "name": "Marčetić (Trivo) Nikola",
+        "additional_info": "rođen 1912, Titovo Užice. Srbin, poginuo 1943. u NOBu, Travnik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0001006455",
         "name": "Marčetić Trive Nikola",
         "additional_info": "1912, Slatina, Sanski Most, BiH, Srbin, radnik - trg. pomoćnik, član KPJ, u NOB od 1941, u brigadi od decembra 1941, V bataljon, politički komesar čete, poginuo 18. 08. 1944",
@@ -18888,6 +19189,10 @@
     "ethnicity": "Srbin",
     "occupation": "trgovački pomoćnik",
     "party": "KPJ",
+    "death_place": "Travnik",
+    "borrowed": [
+      "death_place"
+    ],
     "variants": {
       "death": [
         {
@@ -18991,6 +19296,14 @@
         "ref_book": "zrtve-rata-1964-srb"
       },
       {
+        "soldier_id": "9114001129",
+        "name": "Maslać M. Milojko",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 129. Maslać M. Milojko, je rođen 12. februara 1923. godine u Papratištu kod Požege. Gimnaziju je učio u Užicu. Poginuo je u borbi kod Čajniča u Bosni 2. maja 1942. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=312",
+        "source_page": 309,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
         "soldier_id": "0039010023",
         "name": "Maslać Miluna Milojko",
         "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Jelen Do: Maslać Milojko, poginuo 1. maja 1942. godine kod Čajniča",
@@ -19049,6 +19362,27 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=312",
         "source_page": 309,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9006000157",
+        "name": "Masal Boško",
+        "additional_info": "1922, Titovo Užice, đak, kandidat za člana KPJ, poginuo na Kupresu, avgusta 1942.",
+        "pdf_file": "ofanziva-1942-poginuli.pdf",
+        "pdf_page": 7,
+        "pdf_x": 74.8,
+        "pdf_y": 205.5,
+        "pdf_x_end": 355.2,
+        "pdf_y_end": 222.9,
+        "pdf_x_left": 49.8,
+        "ref_book": "ofanziva-1942-poginuli"
+      },
+      {
+        "soldier_id": "9025032636",
+        "name": "Masal (Sava) Boško",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1942. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
       },
       {
         "soldier_id": "0001006824",
@@ -19317,7 +19651,7 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000559",
     "birth_place": "Loznica",
-    "occupation": "student medicine",
+    "occupation": "studentkinja medicine",
     "death_type": "poginuo",
     "death_date": "01.1942",
     "death_place": "Sjenica",
@@ -19332,7 +19666,19 @@
         "source_page": 309,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032641",
+        "name": "Matić (Vukadin) Vera",
+        "additional_info": "rođena 1921, Titovo Užice. Srpkinja, poginula 1941. u NOBu, Sjenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1231",
+        "source_page": 1231,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "17.11.1921"
   },
@@ -19973,6 +20319,14 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "9025025572",
+        "name": "Mićić (Veljko) Boško",
+        "additional_info": "rođen 1909, Godovik (Požega). Srbin, poginuo 1942. u NOBu, Varoš Prozor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=984",
+        "source_page": 984,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0039010027",
         "name": "Mićić Veljka Boško",
         "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Godovik: Mićić Boško, poginuo 12. februara 1943. godine u Ravnima kod Mostara",
@@ -20001,8 +20355,10 @@
     ],
     "death_place": "Ravni, Mostar",
     "borrowed": [
-      "death_place"
+      "death_place",
+      "ethnicity"
     ],
+    "ethnicity": "Srbin",
     "birth_date": "28.03.1909",
     "variants": {
       "death": [
@@ -20129,6 +20485,14 @@
         "pdf_y_end": 478.1,
         "pdf_x_left": 48.7,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025025594",
+        "name": "Mićić (Ljubomir) Živko",
+        "additional_info": "rođen 1925, Gorobilje (Požega). Srbin, poginuo 1944. u NOBu, Selo gripska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=985",
+        "source_page": 985,
+        "ref_book": "zrtve-rata-1964-srb"
       },
       {
         "soldier_id": "0039000549",
@@ -20377,7 +20741,19 @@
         "pdf_y_end": 341.4,
         "pdf_x_left": 18.2,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025011993",
+        "name": "Mićić (Božidar) Velimir",
+        "additional_info": "rođen 1909, Ivanjica. Srbin, poginuo 1941. u NOBu, Kadinjača",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=449",
+        "source_page": 449,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "30.01.1909"
   },
@@ -21915,6 +22291,14 @@
         "pdf_y_end": 322.2,
         "pdf_x_left": 56.4,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025003451",
+        "name": "Milutinović (Milan) Milomir",
+        "additional_info": "rođen 1920, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1943. u NOBu, Zelengora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=103",
+        "source_page": 103,
+        "ref_book": "zrtve-rata-1964-srb"
       },
       {
         "soldier_id": "0039000534",
@@ -23455,6 +23839,14 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "9025025698",
+        "name": "Mićović (Obrad) Momir",
+        "additional_info": "rođen 1920, Rečice (Požega). Srbin, poginuo 1943. u NOBu, Gornji vakuf",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=990",
+        "source_page": 990,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0001007040",
         "name": "Mićović Obrada Momir",
         "additional_info": "1920, Rečice, Požega, Srbija, Srbin, zemljoradnik, član SKOJ-a od 1941, u NOB od 1941, u brigadi od decembra 1941, V bataljon, borac, kurir, poginuo 09. 01. 1942, Podromanija, Sokolac",
@@ -23926,7 +24318,19 @@
         "source_page": 310,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025001668",
+        "name": "Nedeljković (Nikola) Momčilo",
+        "additional_info": "rođen 1921, Vrane (Arilje). Srbin, poginuo 1942. u NOBu, Kod sjenice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=45",
+        "source_page": 45,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -24642,8 +25046,22 @@
         "source_page": 311,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032678",
+        "name": "Nikolić (Desimir) Lenka",
+        "additional_info": "rođena 1924, Titovo Užice. Srpkinja, poginula 1942. u NOBu, Aljinovići",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1232",
+        "source_page": 1232,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Aljinovići",
     "birth_date": "19.07.1924"
   },
   {
@@ -27039,6 +27457,14 @@
         "ref_book": "cacanski-kraj-pali"
       },
       {
+        "soldier_id": "9114001167",
+        "name": "Pavlović B. Dragan",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 167. Pavlović B. Dragan, student, rođen je 1919. godine u Užicu. Poginuo je u borbi protiv četnika na Gabu u Hercegovini 11. juna 1942. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=315",
+        "source_page": 312,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
         "soldier_id": "0126000751",
         "name": "Pavlović Borisava Dragan",
         "additional_info": "zvani Ćapalo; student veterine, rođen 1919. u Užicu; član KPJ; politički komesar Treće čete Trnavekog bataljona; zatim politički komesar Treće užičke čete u Drugoj proleterskoj brigadi; poginuo u borbi protiv četnika na Gatu u Hercegovini 11. juna 1942.",
@@ -27989,6 +28415,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1233",
         "source_page": 1233,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9114001175",
+        "name": "Petrović R. Dobrilo",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 175. Petrović R. Dobrilo, student, rođen je 28. decembra 1914. godine u Užicu. Teško je ranjen u borbi protiv četnika na Gatu i umro u Izgori u dolini Sutjeske 12. jula 1942. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=315",
+        "source_page": 312,
+        "ref_book": "uzicka-gimnazija"
       }
     ],
     "ethnicity": "Srbin",
@@ -28147,7 +28581,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=315",
         "source_page": 312,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025003538",
+        "name": "Petrović (Čedo) Ljubiša",
+        "additional_info": "rođen 1919, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1941. u NOBu, Vučjak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=106",
+        "source_page": 106,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -28521,7 +28967,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=315",
         "source_page": 312,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032715",
+        "name": "Petrović (Radomir) Slavko",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1941. u NOBu, Glumač-požega",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1233",
+        "source_page": 1233,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -28923,7 +29381,7 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000814",
     "birth_place": "Arilje",
-    "occupation": "student",
+    "occupation": "studentkinja",
     "death_type": "poginuo",
     "death_date": "11.06.1942",
     "rank": "borac",
@@ -30297,7 +30755,19 @@
         "pdf_y_end": 576.6,
         "pdf_x_left": 55.2,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025039635",
+        "name": "Radovanović (Petar) Budimir",
+        "additional_info": "rođen 1906, Zemun. Srbin, ubijen 1942. u NOBu, Užička četa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1439",
+        "source_page": 1439,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "26.05.1906"
   },
@@ -30363,6 +30833,14 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "9025003587",
+        "name": "Radovanović (Toma) Miroslav",
+        "additional_info": "rođen 1922, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1942. u NOBu, Kupres",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=108",
+        "source_page": 108,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0039010040",
         "name": "Radovanović Tome Miroslav",
         "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Gugalj: Radovanović Miroslav Šofer, poginuo 12. avgusta 1942. godine kod Kupresa",
@@ -30392,8 +30870,10 @@
     ],
     "death_place": "Kupres",
     "borrowed": [
-      "death_place"
-    ]
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Radovanović",
@@ -30513,7 +30993,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Bijeljina-bosna"
+    "death_place": "Bijeljina, Bosna"
   },
   {
     "last_name": "Radovanović",
@@ -30655,6 +31135,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=155",
         "source_page": 151,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000886",
+        "name": "Radovanović Vladimir",
+        "additional_info": "Rođen 1903 u Rečicama, Titovo Užice (Užice), Srbija. Zemljoradnik. Član KPJ od maja 1942. U NOB stupio 1941. Poт/шo 3-III-1943 kod Prozora. Za narodnost heroja prOglašen 13-III-1945. SELO Rečice kod Užičke Požege dalo je dva narodna heroja: prvog heroja naroda Jugoslavije Petra Lekovića i Vladimira Radovanovića. U mladosti Vladimir je izučio stolarski zanat, kojim se bavio uz zemljoradničke poslove. Pre rata je bio simpatizer Komunističke partije; učestvovao je u nekim akcijama koje je organizovala partiska organizacija u tom kraju — u antiratnim demonstracijama, na zborovima i izborima. Ujesen 1941 godine stupio je u Požešku četu Užičkog partizanskog odreda. Nekoliko dana kasnije postao je desetar, zatim vodnik. Već u prvim borbama istakao se kao bombaš i puškornitraljezac. Sa bombama je jurišao na nemačke i ustaške bunkere u borbama za Kupres, Jajce, Mrkonjić-Grad,",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=687",
+        "source_page": 665,
+        "ref_book": "zbornik-heroja-1957"
       },
       {
         "soldier_id": "0039010041",
@@ -31065,7 +31553,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Kupres-bosna"
+    "death_place": "Kupres, Bosna"
   },
   {
     "last_name": "Rajković",
@@ -31712,6 +32200,7 @@
       }
     ],
     "death_place": "Glumač, Požega",
+    "occupation": "učenik tehničke škole",
     "birth_date": "16.10.1921"
   },
   {
@@ -33512,7 +34001,19 @@
         "source_page": 314,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032345",
+        "name": "Smiljanić (Milan) Manojle",
+        "additional_info": "rođen 1918, Ravni (Titovo Užice). Srbin, poginuo 1945. u NOBu, T.užice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1222",
+        "source_page": 1222,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -33627,7 +34128,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=317",
         "source_page": 314,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025003653",
+        "name": "Smiljanić (Dragomir) Momčilo",
+        "additional_info": "rođen 1916, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1942. u NOBu, G.milanovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=110",
+        "source_page": 110,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -35156,6 +35669,14 @@
         "ref_book": "pozega-pali"
       },
       {
+        "soldier_id": "9025025743",
+        "name": "Stefanović (Stevan) Nedeljko",
+        "additional_info": "rođen 1922, Visibaba (Požega). Srbin, poginuo 1944. u NOBu, G.vakuf-bih",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=992",
+        "source_page": 992,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0039000762",
         "name": "Stefanović Stevana Nedeljko",
         "additional_info": "zvani Neđa; poginuo 3—8. juna 1943, Košur; Sutjeska (15. maj — 19. jun 1943)",
@@ -35387,6 +35908,7 @@
     "death_type": "streljan",
     "death_date": "28.12.1941",
     "death_place": "Krčagovo, Užice",
+    "occupation": "voskar",
     "birth_date": "20.09.1906"
   },
   {
@@ -35446,7 +35968,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Gat bosna",
+    "death_place": "Gat, Bosna",
     "birth_date": "02.09.1923"
   },
   {
@@ -36487,6 +37009,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=375",
         "source_page": 375,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9114001226",
+        "name": "Terzić S. Slavoljub",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 226. Terzić S. Slavoljub, učenik, rođen je 10. januara 1919. godine u Njubišu na Zlatiboru. Poginuo je u borbi protiv Nemaca kod ljubovije 26. povembra 1941. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=319",
+        "source_page": 316,
+        "ref_book": "uzicka-gimnazija"
       }
     ],
     "ethnicity": "Srbin",
@@ -37056,7 +37586,7 @@
       "ethnicity"
     ],
     "death_date": "1943",
-    "death_place": "Omazić-bosna"
+    "death_place": "Omazić, Bosna"
   },
   {
     "last_name": "Todorović",
@@ -38225,7 +38755,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=319",
         "source_page": 316,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025009336",
+        "name": "Tucović (Trifun) Dušan",
+        "additional_info": "rođen 1925, Gostilje (Čačak). Srbin, poginuo 1942. u NOBu, Na neretvi",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=375",
+        "source_page": 375,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "16.04.1925"
   },
@@ -38753,7 +39295,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Foča bosna"
+    "death_place": "Foča, Bosna"
   },
   {
     "last_name": "Vasiljević",
@@ -39902,7 +40444,19 @@
         "source_page": 302,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032788",
+        "name": "Višić (Budimir) Dušan",
+        "additional_info": "rođen 1919, Titovo Užice. Srbin, poginuo 1941. u NOBu, Bela zemlja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1236",
+        "source_page": 1236,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -41353,9 +41907,21 @@
         "pdf_y_end": 576.0,
         "pdf_x_left": 60.0,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025032795",
+        "name": "Vučićević (Dobrivoje) Mileta",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1941. u NOBu, Radojina-k.brod",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1236",
+        "source_page": 1236,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
-    "death_place": "Kokin Brod, Nova Varoš"
+    "death_place": "Kokin Brod, Nova Varoš",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vučićević",
@@ -41819,8 +42385,22 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=308",
         "source_page": 305,
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032811",
+        "name": "Zečević (Ljubomir) Jelenko",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1942. u NOBu, Tetiva-romanija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1237",
+        "source_page": 1237,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Tetiva, Romanija",
     "birth_date": "06.02.1921"
   },
   {
@@ -42557,7 +43137,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Vrbnica-bosna",
+    "death_place": "Vrbnica, Bosna",
     "birth_date": "27.09.1923"
   },
   {
@@ -43548,7 +44128,7 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001229",
     "birth_place": "Glumač",
-    "occupation": "student medicine",
+    "occupation": "studentkinja medicine",
     "death_type": "poginuo",
     "death_date": "08.1943",
     "rank": "referent saniteta",
@@ -43784,7 +44364,19 @@
         "pdf_y_end": 197.1,
         "pdf_x_left": 21.4,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025032499",
+        "name": "Đoković (Ivan) Dragoslav",
+        "additional_info": "rođen 1920, Titovo Užice. Srbin, poginuo 1941. u NOBu, Kod t.užica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1226",
+        "source_page": 1226,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -44095,7 +44687,7 @@
     "soldier_id": "0026001248",
     "pdf_x_end": 496.8,
     "birth_place": "Kragujevac",
-    "occupation": "student agronomije",
+    "occupation": "studentkinja agronomije",
     "death_type": "poginuo",
     "death_date": "23.04.1944",
     "rank": "borac",
@@ -45203,6 +45795,14 @@
         "ref_book": "uzicka-gimnazija"
       },
       {
+        "soldier_id": "9025023121",
+        "name": "Žunić (Miloš) Radojko",
+        "additional_info": "rođen 1918, Mislođin (Obrenovac). Srbin, poginuo 1941. u NOBu, Užice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=921",
+        "source_page": 921,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0110002529",
         "name": "Žunić Miloša Radojko",
         "additional_info": "rođen 1917, Gorobilje, Požega, zemljoradnik.",
@@ -45219,6 +45819,10 @@
     "death_type": "streljan",
     "death_date": "23.10.1941",
     "death_place": "Gorobilje",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "17.07.1918",
     "variants": {
       "born": [
@@ -48198,6 +48802,19 @@
         "pdf_y_end": 184.8,
         "pdf_x_left": 43.7,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9016000766",
+        "name": "Lazarević Milana Dragan",
+        "additional_info": "zemljoradnik, rođen 1917. u Prilrtcu; borac Pete udarne divizije NOVJ; poginuo u borbi protiv Nemaca na sremskom fR°ntU 17- januara 1945.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 50,
+        "pdf_x": 113.7,
+        "pdf_y": 82.6,
+        "pdf_x_end": 439.6,
+        "pdf_y_end": 114.3,
+        "pdf_x_left": 82.3,
+        "ref_book": "cacanski-kraj-pali"
       }
     ]
   },
@@ -49317,7 +49934,7 @@
     "fathers_name": "Srećko",
     "full_name": "Marković Mirko",
     "additional_info": "Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941., Svračkovo: Marković (Srećko) Mirko",
-    "birth_year": "",
+    "birth_year": "1918",
     "birth_place": "Svračkovo",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -49340,8 +49957,27 @@
         "pdf_y_end": 523.8,
         "pdf_x_left": 47.3,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025014795",
+        "name": "Marković (Srećko) Mirko",
+        "additional_info": "rođen 1918, Kruševica (Kraljevo). Srbin, ubijen 1941. kao zarobljenik prip. NOV i POJ, Čačak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=613",
+        "source_page": 613,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "ubijen",
+    "death_date": "1941",
+    "death_place": "Čačak"
   },
   {
     "last_name": "Marković",
@@ -53896,7 +54532,7 @@
     "fathers_name": "Gvozden",
     "full_name": "Đenić Tadija",
     "additional_info": "Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941., Tvrdići: Đenić (Gvozden) Tadija",
-    "birth_year": "",
+    "birth_year": "1903",
     "birth_place": "Tvrdići",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -53919,8 +54555,28 @@
         "pdf_y_end": 487.1,
         "pdf_x_left": 19.7,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9025032485",
+        "name": "Đenić (Gvozden) Tadija",
+        "additional_info": "rođen 1903, Titovo Užice. Srbin, poginuo 1941. u NOBu, Užice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1226",
+        "source_page": 1226,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1941",
+    "death_place": "Užice",
+    "birth_date": "25.04.1903"
   },
   {
     "last_name": "Đokić",
@@ -54003,6 +54659,20 @@
         "pdf_y_end": 218.9,
         "pdf_x_left": 54.2,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9016000737",
+        "name": "Đoković Velimira Vidoje",
+        "additional_info": "zemljorapnik, rođen 1908. u Pilatovićima; saradnik NOP-a; streljali ga Nemci u Pilatovićima 5. decembra 1944.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 48,
+        "pdf_x": 84.5,
+        "pdf_y": 157.4,
+        "pdf_x_end": 410.5,
+        "pdf_y_end": 188.7,
+        "pdf_x_left": 53.3,
+        "role": "activist",
+        "ref_book": "cacanski-kraj-pali"
       }
     ]
   },
@@ -54043,6 +54713,15 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1226",
         "source_page": 1226,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9114001057",
+        "name": "Đolović R. Živko",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 57. Đolović R. Živko, učenik, rođen je 8. decembra 1921. godine u Požegi. Zarobili su ga četnici i predali Nemcima koji su ga streljali na Krušiku u Valjevu 27. novembra 1941. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=307",
+        "source_page": 304,
+        "role": "participant",
+        "ref_book": "uzicka-gimnazija"
       }
     ],
     "ethnicity": "Srbin",

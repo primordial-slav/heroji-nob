@@ -544,6 +544,46 @@ def brigade_named(text: str) -> str:
         words.append(re.sub(r'(sk|čk|šk|ck|n)(?:e|oj|u|a)$', r'\1a', w))
     return ' '.join([f'{m.group(1)}.'] + words + ['brigada'])
 
+# Borci drugih jedinica (122) gathers men of every unit: "1. bataljon" says nothing there without the brigade or
+# odred the entry names ("Borac 1. bataljona 4. sandžačke narodnooslobodilačke udarne (NOU) brigade", "u 2. četi
+# Kozaračkog odreda"); with neither, no sub-unit (2026-10-30: the comrades link counted every 1. bataljon in it)
+OSTALI = 122
+HIGHER_UNIT = re.compile(r'brigad|odred|divizij|korpus|\bpuk\b|eskadril', re.I)
+BRIGADE_LOOSE_RE = re.compile(rf'(?<![\w.])(\d{{1,2}}\.|(?-i:[IVX]{{1,5}})\.?)\s*'
+                              rf'((?:(?!(?i:bataljon|bat\.|čet|vod|desetin|odred))[{U}{L}.-]+\s+|\(NOU\)\s+){{0,4}}?)'
+                              rf'brig(?:ad[aeiu]|\.)?(?![{L}])')
+ODRED_NAMED_RE = re.compile(rf'\b([A-ZČĆŽŠĐ][{L}]+?(?:sk|čk|ck|šk|n))(?:og|om|i|a)\s+(?:NOP\s+|NOP-a\s+|partizansk\w*\s+|'
+                            rf'narodnooslobodila\w*\s+)?odred(?:a|u|om)?(?![{L}])')
+
+
+def brigade_named_loose(text: str) -> str:
+    """The first numbered brigade the entry names, the filler words left out: "4. sandžačke narodnooslobodilačke udarne
+    (NOU) brigade" is 4. sandžačka brigada, "5. prolet. crnogorskoj brigadi" 5. proleterska crnogorska brigada"""
+    from standardize_fields import roman_value
+    m = BRIGADE_LOOSE_RE.search(text)
+    if not m:
+        return ''
+    number = m.group(1).rstrip('.')
+    if not number.isdigit():
+        number = str(roman_value(number) or '')
+        if not number:
+            return ''
+    words = []
+    for w in m.group(2).split():
+        w = w.strip('-').lower()
+        if re.match(r'\(?nou\)?$|narodnooslobodila|udarn|no$', w) or len(w) < 2:
+            continue
+        w = 'proleterska' if w.startswith('prolet') else re.sub(r'(sk|čk|šk|ck|n)(?:e|oj|u|a)$', r'\1a', w.strip('.'))
+        words.append(w)
+    return ' '.join([f'{number}.'] + words + ['brigada'])
+
+
+def odred_named(text: str) -> str:
+    """The odred the entry names, in the nominative: "Kozaračkog odreda" is Kozarački odred"""
+    m = ODRED_NAMED_RE.search(text)
+    return f'{m.group(1)}i odred' if m else ''
+
+
 # the soldier's duty printed after where he fell, to the end (8. krajiška ends every bio so); all lowercase,
 # so a name glued on after it (5. kozaračka, 21. slavonska) keeps the clause from passing for a place
 DUTY_AFTER_PLACE = re.compile(
@@ -1502,6 +1542,9 @@ class Extractor:
         unit = self.unit(text)
         if code in BRIGADE_IN_UNIT and 'brigad' not in unit.lower():
             unit = ', '.join(p for p in (unit, brigade_named(text)) if p)
+        if code == OSTALI and unit and not HIGHER_UNIT.search(unit):
+            higher = brigade_named_loose(text) or odred_named(text)
+            unit = f'{unit}, {higher}' if higher else ''
         if unit:
             out['unit_detail'] = unit
         return {k: v for k, v in out.items() if v}

@@ -132,7 +132,7 @@ export const sl: Messages = {
     kpj: 'Član KPJ',
     party: (items: [string, string][]) => items.map(([org, year]) => org + (year ? ` od ${year}` : '')).join(', '),
     nob: 'V NOB',
-    unit: (kind: string) => ({ brigade: 'V brigadi', division: 'V diviziji', detachment: 'V odredu' } as Record<string, string>)[kind] ?? 'V enoti',
+    unit: (kind: string) => ({ brigade: 'V brigadi', division: 'V diviziji', detachment: 'V odredu', battalion: 'V bataljonu', company: 'V četi' } as Record<string, string>)[kind] ?? 'V enoti',
     duty: 'Dolžnost',
     moved: 'Premeščen',
     ill: 'Zbolel',
@@ -186,6 +186,7 @@ export const sl: Messages = {
     next: 'Naslednji',
     fields: {
       father: 'Oče',
+      mother: 'Mati',
       ethnicity: 'Narodnost',
       occupation: 'Poklic',
       party: 'Partija',

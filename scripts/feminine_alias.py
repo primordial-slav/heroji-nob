@@ -32,8 +32,10 @@ MALE_A = {'Nikola', 'Luka', 'Ilija', 'Andrija', 'Sava', 'Jovica', 'Mića', 'Pera
 # Slovene men's names in -a, never women's, whatever other units' bios suggest
 MALE_ALWAYS = {'Jaka', 'Miha', 'Mitja'}
 WOMEN = {'0007001569',      # Filipi-Vedrina Dolores: her bio's forms are even, her name ends in -s
-         '0004000242'}      # Boštjančič Mija - Olga (Ljubljanska): Mija is a Slovene woman's name, a man's in the
+         '0004000242',      # Boštjančič Mija - Olga (Ljubljanska): Mija is a Slovene woman's name, a man's in the
                             # units from Serbia and Vojvodina, whose bios teach it as one
+         '0048014036'}      # Štrbac Pantelije Lelija (7. krajiška): "rođena ... Srpkinja, domaćica"; the bios teach
+                            # Lelija as a man's name
 MEN = {'0009001168'}         # Stotjanović "Nilkola" (OCR for Nikola)
 
 ALIAS = re.compile(r'(^|; )zvani(?= )')
@@ -63,9 +65,23 @@ def name_genders(soldiers) -> tuple[set, set]:
             {n for n in m if m[n] >= 2 and m[n] >= 4 * f[n]})
 
 
+# A nationality in its feminine form in the record's own field, with a given name that may be a woman's: a woman, whatever
+# the bios' other words count ("Rođena ... Crnogorka" whose bio tells of her father; 2026-10-30). Not the masculine
+# form: books print "Hrvat" for a woman (the Mosor odred)
+FEMININE_NATIONALITY = {
+    'Srpkinja', 'Hrvatica', 'Crnogorka', 'Slovenka', 'Muslimanka', 'Makedonka', 'Jevrejka', 'Židovka', 'Mađarica',
+    'Slovakinja', 'Čehinja', 'Poljakinja', 'Ruskinja', 'Rusinka', 'Ukrajinka', 'Italijanka', 'Talijanka', 'Turkinja',
+    'Rumunka', 'Romkinja', 'Albanka', 'Nemica', 'Njemica', 'Bugarka', 'Grkinja', 'Austrijanka', 'Jugoslovenka',
+    'Jugoslavenka'}
+
+
 def is_woman(s: dict, women: set, men: set) -> bool:
     if s['soldier_id'] in WOMEN or s['soldier_id'] in MEN:
         return s['soldier_id'] in WOMEN
+    name = s.get('first_name') or ''
+    if s.get('ethnicity') in FEMININE_NATIONALITY and name not in men and name not in MALE_A and name not in MALE_ALWAYS \
+            and (name in women or name.endswith('a')):
+        return True
     fs, ms = _marks(s)
     if fs != ms:
         return fs > ms
@@ -78,6 +94,29 @@ def is_woman(s: dict, women: set, men: set) -> bool:
 
 
 SITE_FILE = 'website/app/data/name-genders.json'
+
+
+def site_genders(root) -> dict:
+    """The site's name lists (SITE_FILE), for site_is_woman"""
+    import json
+    from pathlib import Path
+    g = json.loads((Path(root) / SITE_FILE).read_text(encoding='utf-8'))
+    return {'menA': set(g['menA']), 'women': set(g['women']), 'womenIds': set(g['womenIds']), 'menIds': set(g['menIds'])}
+
+
+def site_is_woman(s: dict, g: dict) -> bool:
+    """The site's isWoman (website/app/lib/standIn.ts), letter for letter: what the card says, "Rođena" or "Rođen"
+    (standardize_fields.py gives the nationality the same form)"""
+    if s['soldier_id'] in g['womenIds'] or s['soldier_id'] in g['menIds']:
+        return s['soldier_id'] in g['womenIds']
+    name = s.get('first_name') or ''
+    named_woman = name not in g['menA'] and (name in g['women'] or name.endswith('a'))
+    if s.get('ethnicity') in FEMININE_NATIONALITY and named_woman:
+        return True
+    fs, ms = _marks(s)
+    if fs != ms:
+        return fs > ms
+    return named_woman
 
 
 def write_site(names: tuple[set, set], root) -> bool:

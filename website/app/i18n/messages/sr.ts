@@ -145,7 +145,7 @@ export const sr = {
       items.map(([org, year]) => org + (year ? ` od ${year}` : '')).join(', '),
     nob: 'U NOB',
     /** came to the unit: a brigade, division, detachment (odred) or another unit */
-    unit: (kind: string): string => ({ brigade: 'U brigadi', division: 'U diviziji', detachment: 'U odredu' } as Record<string, string>)[kind] ?? 'U jedinici',
+    unit: (kind: string): string => ({ brigade: 'U brigadi', division: 'U diviziji', detachment: 'U odredu', battalion: 'U bataljonu', company: 'U četi' } as Record<string, string>)[kind] ?? 'U jedinici',
     duty: 'Dužnost',
     moved: 'Prekomandovan',
     ill: 'Oboleo',
@@ -207,6 +207,8 @@ export const sr = {
     next: 'Sledeći',
     fields: {
       father: 'Otac',
+      /** the parent a book names where the father is unknown (the census's "Ajduk (Ruža) Joze") */
+      mother: 'Majka',
       ethnicity: 'Narodnost',
       occupation: 'Zanimanje',
       /** SKOJ, the party or both, with the years: "Partija: SKOJ od 1941, KPJ od 1944" */

@@ -1295,6 +1295,7 @@
     "death_date": "19.12.1941",
     "death_place": "Gornji Milanovac",
     "party": "KPJ",
+    "occupation": "inženjer agronomije",
     "other_sources": [
       {
         "soldier_id": "9016002850",
@@ -2903,6 +2904,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=830",
         "source_page": 830,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9016001335",
+        "name": "Bojović Milana Milija",
+        "additional_info": "zemljoradnik, rođen 1920. u Donjoj Trepči; član SKOJ-a; borac Ljubićkog bataljona; streljali ga Nemci i domaći izdaJnici na Orlovaku u Donjoj Trepči 1. decembra 1941.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 86,
+        "pdf_x": 96.5,
+        "pdf_y": 379.6,
+        "pdf_x_end": 423.2,
+        "pdf_y_end": 421.5,
+        "pdf_x_left": 65.1,
+        "ref_book": "cacanski-kraj-pali"
       }
     ],
     "ethnicity": "Srbin",
@@ -6908,7 +6922,7 @@
     "pdf_x_end": 400.4,
     "pdf_x_left": 40.2,
     "birth_place": "Prijevor",
-    "occupation": "učitelj",
+    "occupation": "učiteljica",
     "rank": "borac",
     "party": "KPJ",
     "other_sources": [
@@ -10684,7 +10698,7 @@
     "pdf_x_end": 390.5,
     "pdf_x_left": 31.5,
     "birth_place": "Atenica",
-    "occupation": "student medicine",
+    "occupation": "studentkinja medicine",
     "death_type": "streljan",
     "death_date": "07.06.1943",
     "party": "KPJ",
@@ -11607,7 +11621,7 @@
     "pdf_x_end": 390.9,
     "pdf_x_left": 31.5,
     "birth_place": "Lipnica",
-    "occupation": "student prava",
+    "occupation": "studentkinja prava",
     "death_type": "streljan",
     "death_date": "07.06.1943",
     "party": "KPJ",
@@ -15322,7 +15336,7 @@
     "pdf_x_end": 386.2,
     "pdf_x_left": 27.1,
     "birth_place": "Guberevci",
-    "occupation": "krojač",
+    "occupation": "krojačica",
     "death_type": "streljan",
     "death_date": "07.06.1943",
     "death_place": "u Banjičkom logoru",
@@ -17080,6 +17094,7 @@
     "death_date": "04.1943",
     "rank": "intendant",
     "party": "KPJ",
+    "occupation": "inženjer agronomije",
     "other_sources": [
       {
         "soldier_id": "9025009248",
@@ -18121,7 +18136,7 @@
     "pdf_x_end": 394.5,
     "pdf_x_left": 35.6,
     "birth_place": "Guča",
-    "occupation": "činovnik",
+    "occupation": "činovnica",
     "death_type": "umro",
     "death_date": "1948",
     "death_place": "Zagreb",
@@ -20290,7 +20305,19 @@
         "pdf_y_end": 230.7,
         "pdf_x_left": 55.7,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025040053",
+        "name": "Mandić (Vitomir) Dobrosav",
+        "additional_info": "rođen 1925, Kraljevo. Srbin, umro 1944. kao zarobljenik prip. NOV i POJ, Beograd",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=586",
+        "source_page": 586,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22470,7 +22497,19 @@
         "pdf_y_end": 266.0,
         "pdf_x_left": 20.9,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025040058",
+        "name": "Matijević (Matija) Svetolik",
+        "additional_info": "rođen 1923, Kraljevo. Srbin, poginuo 1943. u NOBu, Omerove bare",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=588",
+        "source_page": 588,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -22617,7 +22656,7 @@
     "pdf_x_end": 391.0,
     "pdf_x_left": 32.0,
     "birth_place": "Čačak",
-    "occupation": "student prava",
+    "occupation": "studentkinja prava",
     "death_type": "poginuo",
     "death_date": "02.1944",
     "death_place": "na Ibru kod sela Rudno",
@@ -26602,8 +26641,26 @@
         "pdf_y_end": 197.8,
         "pdf_x_left": 59.8,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025009097",
+        "name": "Mitrović (Mihailo) Ratko",
+        "additional_info": "rođen 1913, Loznica (Čačak). Srbin, poginuo 1944. u NOBu, Kraljevo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=365",
+        "source_page": 365,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Kraljevo",
     "birth_date": "27.05.1913"
   },
   {
@@ -30400,7 +30457,7 @@
     "pdf_x_end": 388.1,
     "pdf_x_left": 29.2,
     "birth_place": "Brezova",
-    "occupation": "student",
+    "occupation": "studentkinja",
     "death_type": "umro",
     "death_date": "1947",
     "party": "KPJ",
@@ -30811,6 +30868,14 @@
         "ref_book": "cacanski-kraj-pali"
       },
       {
+        "soldier_id": "9114001167",
+        "name": "Pavlović B. Dragan",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 167. Pavlović B. Dragan, student, rođen je 1919. godine u Užicu. Poginuo je u borbi protiv četnika na Gabu u Hercegovini 11. juna 1942. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=315",
+        "source_page": 312,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
         "soldier_id": "0026000763",
         "name": "Pavlović B Dragan",
         "additional_info": "zvani Eapalo; član KPJ, jedan od organizatora oružanog ustanka u užičkom kraju, student, rođen 1919. u Užicu, poginuo kao politički komesar 3. čete 4. bataljona 2. proleterske brigade u borbi protiv četnika na Gatu, kod Gacka, u Hercegovini, 11. juna 1942.",
@@ -30871,6 +30936,14 @@
         "pdf_y_end": 240.3,
         "pdf_x_left": 10.6,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025040007",
+        "name": "Pavlović (Pavle) Dragoman",
+        "additional_info": "rođen 1919, Kragujevac. Srbin, poginuo 1943. u NOBu, Šehović",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=544",
+        "source_page": 544,
+        "ref_book": "zrtve-rata-1964-srb"
       },
       {
         "soldier_id": "0039000617",
@@ -31738,6 +31811,7 @@
     "death_date": "14.05.1943",
     "rank": "borac",
     "party": "SKOJ",
+    "occupation": "učenik tehničke škole",
     "other_sources": [
       {
         "soldier_id": "9016001229",
@@ -32867,7 +32941,19 @@
         "pdf_y_end": 121.2,
         "pdf_x_left": 11.7,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025003554",
+        "name": "Petrović (Živko) Milorad",
+        "additional_info": "rođen 1919, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1941. u NOBu, Takovska četa čač.od",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=106",
+        "source_page": 106,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -34241,6 +34327,7 @@
     "death_date": "05.03.1943",
     "rank": "zamenik komandanta",
     "party": "KPJ",
+    "occupation": "inženjer šumarstva",
     "other_sources": [
       {
         "soldier_id": "9025021096",
@@ -36109,7 +36196,7 @@
     "pdf_x_end": 401.2,
     "pdf_x_left": 42.4,
     "birth_place": "Čačak",
-    "occupation": "student prava",
+    "occupation": "studentkinja prava",
     "death_type": "streljan",
     "death_date": "14.05.1943",
     "party": "KPJ",
@@ -38911,6 +38998,7 @@
     "death_date": "03.07.1943",
     "rank": "intendant",
     "party": "KPJ",
+    "occupation": "inženjer agronomije",
     "other_sources": [
       {
         "soldier_id": "9016000964",
@@ -39724,7 +39812,7 @@
     "pdf_x_left": 43.8,
     "birth_place": "Guča, Dragačevo",
     "ethnicity": "Srbin",
-    "occupation": "ćak",
+    "occupation": "đak",
     "rank": "vodni delegat",
     "death_type": "poginuo",
     "death_date": "24.01.1945",
@@ -43818,8 +43906,8 @@
     "death_type": "streljan",
     "death_date": "25.05.1943",
     "death_place": "Mali Požarevac",
-    "occupation": "politički radnik",
-    "party": "KPJ"
+    "party": "KPJ",
+    "rank": "politički radnik"
   },
   {
     "last_name": "Vasiljević",
@@ -45163,6 +45251,20 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000094&pg_seq=229",
         "source_page": 234,
         "ref_book": "seoske-hronike"
+      },
+      {
+        "soldier_id": "9016001280",
+        "name": "Vojinović Miloja Milijan",
+        "additional_info": "ona; poginuo kao ilegalac u borbi protiv žandarma i četnika u Mrčajevcima 3. jula 1942.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 82,
+        "pdf_x": 73.9,
+        "pdf_y": 364.2,
+        "pdf_x_end": 399.8,
+        "pdf_y_end": 405.4,
+        "pdf_x_left": 41.8,
+        "role": "activist",
+        "ref_book": "cacanski-kraj-pali"
       }
     ]
   },
@@ -45293,7 +45395,7 @@
     "pdf_x_end": 391.9,
     "pdf_x_left": 32.9,
     "birth_place": "Kruševac",
-    "occupation": "student prava",
+    "occupation": "studentkinja prava",
     "death_type": "umro",
     "death_date": "26.07.1945",
     "death_place": "Čačak",
@@ -46233,7 +46335,7 @@
     "pdf_x_end": 382.8,
     "pdf_x_left": 23.3,
     "birth_place": "Ježevica",
-    "occupation": "učitelj",
+    "occupation": "učiteljica",
     "death_type": "poginuo",
     "death_date": "21.01.1944",
     "death_place": "Prislonica",
@@ -47846,7 +47948,7 @@
     "pdf_x_end": 400.4,
     "pdf_x_left": 40.9,
     "birth_place": "Šidvorici",
-    "occupation": "krojač",
+    "occupation": "krojačica",
     "rank": "borac",
     "death_type": "streljan",
     "death_date": "03.08.1942",
@@ -47896,7 +47998,7 @@
     "pdf_x_end": 399.9,
     "pdf_x_left": 40.6,
     "birth_place": "Pridvorica",
-    "occupation": "student prava",
+    "occupation": "studentkinja prava",
     "death_type": "umro",
     "death_date": "12.1947",
     "death_place": "Kraljevo",
@@ -49793,7 +49895,6 @@
     "last_name": "Đurović",
     "middle_name": "Milice",
     "first_name": "Božidar",
-    "fathers_name": "Milica",
     "full_name": "Đurović Milice Božidar",
     "additional_info": "zemljoradnik, rođen 1920. u Goračićima; borac Dragačevskog bataljona; uhvatili ga četnici i ubili u Dubcu (Repušnjak) 31. decembra 1942.",
     "birth_year": "1920",
@@ -49810,7 +49911,8 @@
     "rank": "borac",
     "death_type": "ubijen",
     "death_date": "31.12.1942",
-    "death_place": "Dubac, Repušnjak"
+    "death_place": "Dubac, Repušnjak",
+    "mothers_name": "Milica"
   },
   {
     "last_name": "Đurović",

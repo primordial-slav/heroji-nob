@@ -68,6 +68,8 @@ def reference_fields(book: str, e: dict) -> dict:
     """A census or column book's entry as the record's fields (as build_ostali_borci.py gives Ostali borci's)"""
     import build_ostali_borci as ob
     out = ob.census_fields(e) if book.startswith(CENSUS_BOOK) else ob.column_fields(e)
+    # the unit the census's column names (a division, a brigade) is Ostali borci's sub-unit, never a unit's record's
+    out.pop('unit_detail', None)
     if re.fullmatch(r'1[89]\d\d', str(e.get('birth_year') or '')):
         out['birth_year'] = str(e['birth_year'])
     if out.get('ethnicity'):
@@ -87,6 +89,13 @@ def fill_from(s: dict, book: str, e: dict) -> list[str]:
     # divizija", "11.brigada 26.div.", "Pogrešan od 9.1944"): nothing to lend (2026-10-30, check_fields.py's list)
     if UNIT_NO_PLACE.search(vals.get('death_place') or ''):
         vals.pop('death_place')
+    elif vals.get('death_place'):
+        # written as the site writes the census's places ("Otok-srem" Otok, Srem; standardize_fields.py runs before this)
+        from standardize_fields import place_form
+        vals['death_place'] = place_form(vals['death_place']) or ''
+    if vals.get('birth_place'):
+        from standardize_fields import birth_place_form            # "Maribor (del), Maribor-Center"
+        vals['birth_place'] = birth_place_form(vals['birth_place'])
     year = re.search(r'1[89]\d\d', s.get('death_date') or '')
     other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
     if (fsd.fate(s) == 'lived' or s.get('death_after_war') or s.get('death_type') in NOT_DEATHS

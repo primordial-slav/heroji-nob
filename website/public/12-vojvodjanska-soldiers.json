@@ -8818,7 +8818,6 @@
     "last_name": "Dimitrijević",
     "middle_name": "Marije",
     "first_name": "Nenad",
-    "fathers_name": "Marija",
     "full_name": "Dimitrijević Marije Nenad",
     "additional_info": "iz Stapara, 1915, poginuo kod Batine.",
     "birth_year": "1915",
@@ -8833,6 +8832,7 @@
     "birth_place": "Stapar",
     "death_place": "Batina",
     "death_date": "12.11.1944",
+    "mothers_name": "Marija",
     "other_sources": [
       {
         "soldier_id": "0111000107",
@@ -46721,6 +46721,14 @@
         "ref_book": "cazinska-krajina-pali-borci"
       },
       {
+        "soldier_id": "9027010241",
+        "name": "Veselica (Mane) Branko",
+        "additional_info": "rođen 1921, Sirig (Temerin). Srbin, poginuo 1944. u NOBu, Batina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=553",
+        "source_page": 553,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
         "soldier_id": "0111000554",
         "name": "Veselica Branko",
         "additional_info": "rođ. 1922, Bugar, Bihać, vodnik, pog. 13. 11. 1944, Batina.",
@@ -46744,6 +46752,10 @@
         "pdf_x_end": 367.1,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "variants": {
       "death": [

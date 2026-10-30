@@ -6273,7 +6273,6 @@
     "last_name": "Dotlić",
     "middle_name": "Julke",
     "first_name": "Božo",
-    "fathers_name": "Julka",
     "full_name": "Dotlić Julke Božo",
     "additional_info": "rođen 20. 12. 1912. u Bjelovaru, poginuo 1945.",
     "birth_year": "1912",
@@ -6287,6 +6286,7 @@
     "soldier_id": "0104000325",
     "death_date": "1945",
     "pdf_x_end": 398.9,
+    "mothers_name": "Julka",
     "birth_date": "20.12.1912"
   },
   {
@@ -12989,6 +12989,24 @@
     "soldier_id": "0104000676",
     "death_date": "1944",
     "pdf_x_end": 394.9,
+    "other_sources": [
+      {
+        "soldier_id": "9021060572",
+        "name": "Kolesarić (Antun) Franjo",
+        "additional_info": "rođen 1923, Virovitica. Hrvat, poginuo 1944. u NOBu, Našice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2479",
+        "source_page": 2479,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Virovitica",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_place": "Našice",
     "birth_date": "01.08.1923"
   },
   {
@@ -16817,8 +16835,34 @@
         "pdf_x_end": 494.5,
         "pdf_y_end": 385.5,
         "ref_book": "jevreji-jugoslavije-ucesnici-nor"
+      },
+      {
+        "soldier_id": "9054000145",
+        "name": "Majer S. Hilda",
+        "additional_info": "Popis poginulih drugarica-boraca i rukovodioca u jedinicama VI. korpusa NOVJ (23. XII 1944): Borac Osječke Brigade Majer S. Hilda, 1924, Sijekovac B. Brod Der venta, 17. VII. između Čosinaca i Graharja",
+        "pdf_file": "zene-vi-korpus-poginule.pdf",
+        "pdf_page": 9,
+        "pdf_x": 205.0,
+        "pdf_y": 710.3,
+        "pdf_x_end": 572.5,
+        "pdf_y_end": 734.6,
+        "ref_book": "zene-vi-korpus-poginule"
+      },
+      {
+        "soldier_id": "9022008043",
+        "name": "Majer (Samuel) Hilda",
+        "additional_info": "rođena 1924, Sijekovac (Bosanski Brod). ostalo, poginula 1944. u NOBu, Požeška kotlina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=833",
+        "source_page": 833,
+        "ref_book": "zrtve-rata-1964-bih"
       }
-    ]
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Požeška kotlina"
   },
   {
     "last_name": "Majkić",
@@ -19925,7 +19969,6 @@
     "last_name": "Milovuković",
     "middle_name": "Mande",
     "first_name": "Paca",
-    "fathers_name": "Manda",
     "full_name": "Milovuković Mande Paca",
     "additional_info": "rođena u s. Trpinja (umrla poslije",
     "birth_year": "",
@@ -19937,7 +19980,8 @@
     "birth_place": "Trpinja, Vukovar",
     "soldier_id": "0104001037",
     "death_type": "umro",
-    "pdf_x_end": 393.8
+    "pdf_x_end": 393.8,
+    "mothers_name": "Manda"
   },
   {
     "last_name": "Milošević",
@@ -23559,7 +23603,6 @@
     "last_name": "Plibor",
     "middle_name": "Klare",
     "first_name": "Antun",
-    "fathers_name": "Klara",
     "full_name": "Plibor Klare Antun",
     "additional_info": "rođen 7. 3. 1925, u s. Bukovica, poginuo",
     "birth_year": "1925",
@@ -23572,6 +23615,7 @@
     "birth_place": "Bukovica, Podravska Slatina",
     "soldier_id": "0104001233",
     "pdf_x_end": 444.0,
+    "mothers_name": "Klara",
     "birth_date": "07.03.1925"
   },
   {
@@ -23711,7 +23755,6 @@
     "last_name": "Pokrivka",
     "middle_name": "Kate",
     "first_name": "Alojz",
-    "fathers_name": "Kata",
     "full_name": "Pokrivka Kate Alojz",
     "additional_info": "rođen 1927. u s. Ostrošinci.",
     "birth_year": "1927",
@@ -23722,7 +23765,8 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Ostrošinci, Našice",
     "soldier_id": "0104001241",
-    "pdf_x_end": 347.1
+    "pdf_x_end": 347.1,
+    "mothers_name": "Kata"
   },
   {
     "last_name": "Polimac",
@@ -23826,7 +23870,27 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Turanovac, Virovitica",
     "soldier_id": "0104001247",
-    "pdf_x_end": 332.3
+    "pdf_x_end": 332.3,
+    "other_sources": [
+      {
+        "soldier_id": "9021060575",
+        "name": "Ponedeljak (Marko) Luka",
+        "additional_info": "rođen 1921, Virovitica. Hrvat, poginuo 1943. u NOBu, Pakrac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2481",
+        "source_page": 2481,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Pakrac"
   },
   {
     "last_name": "Ponimorjat",
@@ -24791,7 +24855,6 @@
     "last_name": "Radešić",
     "middle_name": "Mande",
     "first_name": "Aleksa",
-    "fathers_name": "Manda",
     "full_name": "Radešić Mande Aleksa",
     "additional_info": "rođen 1921. u s. D. Pištana (umro poslije rata).",
     "birth_year": "1921",
@@ -24803,7 +24866,8 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "D. Pištana, Orahovica",
     "soldier_id": "0104001298",
-    "pdf_x_end": 394.9
+    "pdf_x_end": 394.9,
+    "mothers_name": "Manda"
   },
   {
     "last_name": "Radin",
@@ -33156,7 +33220,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Nepo.",
+    "death_place": "Nepo",
     "birth_year": "1902"
   },
   {

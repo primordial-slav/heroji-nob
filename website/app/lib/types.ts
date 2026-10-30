@@ -43,6 +43,8 @@ export interface Soldier {
   first_name: string
   additional_info: string
   fathers_name: string
+  // the mother, where the book names her for an unknown father ("Ajduk (Ruža) Joze"; scripts/standardize_fields.py)
+  mothers_name?: string
   full_name: string
   birth_year: string
   unit?: string

@@ -56,6 +56,7 @@ FATHER_WORD = re.compile(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+$')
 
 CODE = 122
 IDS = ROOT / 'data-extraction' / 'ostali_borci_ids.json'
+ON_SITE = ROOT / 'data-extraction' / '.cache' / 'ostali_on_site.json'     # the entries left out for their man's record
 FIRST_NEW = 900001
 OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json, which the parsers' corpora read
 CENSUS = 'zrtve-rata-1964'                                  # the census's volumes: zrtve-rata-1964-<vol>
@@ -165,6 +166,24 @@ TWO_MEN = [
 TWO_MEN_PAIRS = {frozenset(p[:2]) for p in TWO_MEN}
 
 
+NO_FATHER = re.compile(r'^(?:nema|nepoznat[aoi]?|nn\.?|n\.\s?n\.?)$', re.I)
+# the census's column of the place of death often names his unit, no place ("7 banijska divizija", "18 brigada",
+# "Prešernova brigada", "Kozjanski odred"): the record's sub-unit, its number written "7. " (2026-10-30), shown on the
+# card as "U jedinici"; "Pogrešan od 9.1944" (missing) is neither
+UNIT_IN_COLUMN = re.compile(r'brig|\bdiv\b|\bdiv\.|diviz|odred|bataljon|korpus', re.I)
+MISSING_COLUMN = re.compile(r'^pogrešan\b', re.I)
+
+
+def place_or_unit(place: str) -> dict:
+    """The column of the place of death as the record's death_place, or its unit as unit_detail"""
+    if MISSING_COLUMN.match(place):
+        return {}
+    if UNIT_IN_COLUMN.search(place):
+        unit = re.sub(r'(\d+)\s*\.?\s*(?=[^\W\d_])', r'\1. ', place.strip())     # "7 banijska", "13.divizija"
+        return {'unit_detail': re.sub(r'\s*,\s*', ', ', unit)}
+    return {'death_place': death_column(place)}
+
+
 def column_fields(e: dict) -> dict:
     # a list of officers names who fell and who lived (the XXXI. divizija's staffs): no death for one who lived
     if e.get('survived') and not e.get('death_date'):
@@ -172,7 +191,7 @@ def column_fields(e: dict) -> dict:
     day = re.fullmatch(r'(\d{4})-(\d\d)-(\d\d)', e.get('death_date') or '')     # the Ludbreg lists give the battle's day
     out = {'birth_place': e.get('born_in') or '', 'death_type': e.get('death_type') or 'poginuo',
            'death_date': f'{int(day[3])}. {int(day[2])}. {day[1]}.' if day else e.get('death_year') or '',
-           'death_place': death_column(e.get('death_place') or '')}
+           **place_or_unit(e.get('death_place') or '')}
     return {k: v for k, v in out.items() if v}
 SOURCE_FIELDS = ('source_url', 'source_page', 'pdf_file', 'pdf_page', 'pdf_x', 'pdf_y', 'pdf_x_end', 'pdf_y_end',
                  'pdf_x_left', 'pdf_rects')
@@ -197,7 +216,7 @@ def census_fields(e: dict) -> dict:
     kind = ({'poginu': 'poginuo', 'umr': 'umro', 'nesta': 'nestao', 'obešen': 'ubijen'}.get(m.group(1), m.group(1))
             if m else 'poginuo')                       # the site's types: poginuo, umro, nestao, streljan, ubijen
     out = {'birth_place': e.get('born_in') or '', 'ethnicity': e.get('ethnicity') or '', 'death_type': kind,
-           'death_date': e.get('death_year') or '', 'death_place': death_column(e.get('death_place') or '')}
+           'death_date': e.get('death_year') or '', **place_or_unit(e.get('death_place') or '')}
     return {k: v for k, v in out.items() if v}
 
 
@@ -553,6 +572,9 @@ def main():
             if e['soldier_id'] in GIVEN_FIXES:
                 e['first_name'] = GIVEN_FIXES[e['soldier_id']]
                 e['name'] = f"{e['last_name']} {e['first_name']}"
+            # the census's "Ćurković (Nema) Jure", "Feljan (Nepoznat) Franjo": no father, no word in his name
+            if NO_FATHER.match(e.get('fathers_name') or ''):
+                e['fathers_name'] = ''
             # a man the book names by one name is still its man (Romano's "Ašer (prezime nepoznato)", Oborovo's "Ivica
             # ...", Gončin's "Janković"; the user's decision of 2026-10-14); one it could not name ("Nepoznati borac"),
             # or a number its parser keeps with no one, is no one a search can find
@@ -670,7 +692,8 @@ def main():
             groups = [members]
         for g in groups:
             if any(m['soldier_id'] in taken for m in g):
-                on_site += [m for m in g if m['soldier_id'] not in taken]
+                with_ = [x['soldier_id'] for x in g if x['soldier_id'] in taken]
+                on_site += [dict(m, _with=with_) for m in g if m['soldier_id'] not in taken]
                 continue
             g.sort(key=lambda m: (not m.get('pdf_file'), -len(m['additional_info']), m['soldier_id']))
             first, rest = g[0], g[1:]
@@ -737,13 +760,14 @@ def main():
             filled = []
             if census:
                 for k, v in census_fields(census[0]).items():
-                    if k not in rec:
+                    # his unit from the census's column only where no book's biography tells it (the field reader's)
+                    if k not in rec and not (k == 'unit_detail' and len(census) < len(g)):
                         rec[k] = v                           # the census's columns, where a list gave no death
                         filled.append(k)
             columns = [m for m in g if m['_book'] in COLUMN_BOOKS]
             if columns:
                 for k, v in column_fields(columns[0]).items():
-                    if k not in rec:
+                    if k not in rec and not (k == 'unit_detail' and len(columns) + len(census) < len(g)):
                         rec[k] = v                           # the Spomenica's columns
                         filled.append(k)
             death_cols = [k for k in ('death_type', 'death_date') if k in filled]
@@ -782,6 +806,12 @@ def main():
             print('Written', path)
         IDS.write_text(json.dumps(dict(sorted(ids.items())), ensure_ascii=False, indent=0), encoding='utf-8')
         print('Written', IDS)
+        # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the
+        # records that hold its man (2026-10-31: they had shown nowhere)
+        ON_SITE.parent.mkdir(parents=True, exist_ok=True)
+        ON_SITE.write_text(json.dumps([{'entry': m['soldier_id'], 'book': f"{CENSUS}-{m['_vol']}" if m['_vol'] else m['_book'],
+                                        'name': m['name'], 'with': m['_with']} for m in on_site],
+                                      ensure_ascii=False, indent=0), encoding='utf-8')
     else:
         import random
         random.seed(1)
