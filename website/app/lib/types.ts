@@ -24,6 +24,8 @@ export interface SoldierSource {
 export type LifeEventKind =
   | 'born' | 'skoj' | 'kpj' | 'nob' | 'unit' | 'duty' | 'moved' | 'wounded' | 'ill' | 'captured' | 'exchanged' | 'left'
   | 'death'
+  // the war's events his unit was part of (WarEvent, scripts/make_war_events.py): Igman, the Sutjeska
+  | 'igman' | 'sutjeska'
 
 export interface LifeEvent {
   k: LifeEventKind

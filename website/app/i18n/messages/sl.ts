@@ -140,6 +140,9 @@ export const sl: Messages = {
     wounded: (woman: boolean) => (woman ? 'Ranjena' : 'Ranjen'),
     captured: (woman: boolean) => (woman ? 'Ujeta' : 'Ujet'),
     exchanged: (woman: boolean) => (woman ? 'Zamenjana' : 'Zamenjan'),
+    /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
+    igman: 'Igmanski marš',
+    sutjeska: 'Bitka na Sutjeski',
     fate: (type: string | undefined, woman: boolean) => {
       const words: Record<string, [string, string]> = {
         poginuo: ['Padel', 'Padla'], umro: ['Umrl', 'Umrla'], nestao: ['Pogrešan', 'Pogrešana'],

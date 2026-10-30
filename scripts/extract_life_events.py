@@ -236,8 +236,40 @@ GATE = {
              'zastav', 'general', 'pukov', 'major', 'kapetan', 'poručn'),
 }
 
-ORDER = ['born', 'skoj', 'kpj', 'nob', 'unit', 'duty', 'moved', 'wounded', 'ill', 'captured', 'exchanged', 'left', 'death']
-ONCE = {'born', 'skoj', 'kpj', 'nob', 'unit', 'death'}          # one step of these per soldier
+ORDER = ['born', 'skoj', 'kpj', 'nob', 'unit', 'duty', 'moved', 'igman', 'sutjeska', 'wounded', 'ill', 'captured',
+         'exchanged', 'left', 'death']
+ONCE = {'born', 'skoj', 'kpj', 'nob', 'unit', 'death', 'igman', 'sutjeska'}     # one step of these per soldier
+
+# The war's events his unit was part of (scripts/make_war_events.py, website/data/events/): a step of the line each
+# (the user's wish of 2026-10-30), dated as the record's line under the facts says it, and pointing at the entry it
+# comes from: the Rudo line-up's (or the one that names the march) for Igman, Borci Sutjeske's for the Sutjeska
+WAR_EVENTS = ROOT / 'website' / 'data' / 'events'
+WAR_DATES = {'igman': ('1942-01-27', '1942-01-28'), 'sutjeska': ('1943-05', '1943-06')}
+WAR_BOOK = {'igman': re.compile(r'^prva-proleterska-stroj-u-rudom\.pdf$'), 'sutjeska': re.compile(r'^borci-sutjeske-')}
+WAR_NAMED = {'igman': re.compile(r'Igmansk\w*\s+marš|Igmanac|Igmanc\w*', re.I), 'sutjeska': re.compile(r'$^')}
+_war_cache: dict[int, dict] = {}
+
+
+def war_events(code: int) -> dict[str, list[dict]]:
+    """the unit's events by soldier_id, as make_war_events.py last wrote them ({} for a unit with none)"""
+    if code not in _war_cache:
+        path = WAR_EVENTS / BRIGADE_CONFIGS[code]['json_file']
+        _war_cache[code] = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
+    return _war_cache[code]
+
+
+def war_steps(s: dict, code: int, entries: list[dict]) -> list[dict]:
+    out = []
+    for ev in war_events(code).get(s['soldier_id'], []):
+        kind = ev['e']
+        if kind not in WAR_DATES:
+            continue
+        at = next((i for i, e in enumerate(entries) if WAR_BOOK[kind].search(e.get('pdf_file') or '')), None)
+        if at is None:
+            at = next((i for i, e in enumerate(entries) if WAR_NAMED[kind].search(e.get('additional_info') or '')), 0)
+        d, end = WAR_DATES[kind]
+        out.append({'k': kind, 'd': d, 'e': end, 's': at, '_at': 0})
+    return out
 DEATH_WORD = re.compile(r'\b(?:poginu\w*|pog\.(?=\s)|pognu\w*|padel\w*|padl\w*|umr\w*|preminu\w*|podlega\w*|podlegl\w*|nesta[ol]\w*|'
                         r'stri?jeljan\w*|streljan\w*|ustreljen\w*|ubijen\w*|ubit\w*|zaklan\w*|utopi\w*|smrtno\s+ponesreči\w*)', re.I)
 # A date that belongs to something that is no step of a life
@@ -397,6 +429,7 @@ def life_events(s: dict, code: int) -> list[dict]:
                     step['at'], step['s'], step['_at'] = [ph[0], ph[0] + len(ph[1])], i, ph[0]
                     break
             steps.append(step)
+    steps += war_steps(s, code, entries)
     # one of each kind that happens once: the soldier's own entry wins over another book's
     kept, seen = [], set()
     for st in sorted(steps, key=lambda st: (st['s'], st.get('_at', 0))):
@@ -408,7 +441,9 @@ def life_events(s: dict, code: int) -> list[dict]:
 
     def when_key(st):
         y, *rest = (int(p) for p in st['d'].split('-'))
-        return (y, rest[0] if rest else 0, rest[1] if len(rest) > 1 else 0, ORDER.index(st['k']), st.get('_at', 0))
+        # a death given by its year alone comes after that year's other steps ("1943": after the Sutjeska of June)
+        month = rest[0] if rest else (13 if st['k'] == 'death' else 0)
+        return (y, month, rest[1] if len(rest) > 1 else 0, ORDER.index(st['k']), st.get('_at', 0))
     out = []
     for st in sorted(kept, key=when_key):
         st = {k: v for k, v in st.items() if not k.startswith('_')}

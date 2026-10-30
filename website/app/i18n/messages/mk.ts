@@ -150,6 +150,9 @@ export const mk: Messages = {
     wounded: (woman: boolean) => (woman ? 'Ранета' : 'Ранет'),
     captured: (woman: boolean) => (woman ? 'Заробена' : 'Заробен'),
     exchanged: (woman: boolean) => (woman ? 'Разменета' : 'Разменет'),
+    /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
+    igman: 'Игмански марш',
+    sutjeska: 'Битка на Сутјеска',
     fate: (type: string | undefined, woman: boolean) => {
       const words: Record<string, [string, string]> = {
         poginuo: ['Загинал', 'Загинала'], umro: ['Починал', 'Починала'], nestao: ['Исчезнат', 'Исчезната'],

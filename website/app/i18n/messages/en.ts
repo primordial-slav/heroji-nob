@@ -147,6 +147,9 @@ export const en: Messages = {
     wounded: () => 'Wounded',
     captured: () => 'Captured',
     exchanged: () => 'Exchanged',
+    /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
+    igman: 'Igman March',
+    sutjeska: 'Battle of the Sutjeska',
     fate: (type: string | undefined) =>
       ({ poginuo: 'Killed in action', umro: 'Died', nestao: 'Missing', streljan: 'Shot', ubijen: 'Killed', zarobljen: 'Captured' } as Record<string, string>)[type ?? ''] ?? 'Died',
     day: (d: number, m: number) => dateNumbers(d, m),
