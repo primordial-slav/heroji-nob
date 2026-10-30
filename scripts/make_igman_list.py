@@ -31,6 +31,31 @@ DATA = ROOT / 'website' / 'public' / 'prva-proleterska-soldiers.json'
 RUDO_PDF = 'prva-proleterska-stroj-u-rudom.pdf'
 SCRATCH = ROOT / 'data-extraction' / '.cache' / 'igman' / 'rudo.json'
 OUT = ROOT / 'website' / 'app' / '(sr)' / 'mapa' / 'igman' / 'igman.json'
+# each man's line in the record dialog (lib/warEvents.ts), merged into his record by scripts/prepare-data.ts
+EVENTS = ROOT / 'website' / 'data' / 'events' / 'prva-proleterska-soldiers.json'
+SECTION_EVENT = {'štab brigade': 'stab', 'brigadni sanitet': 'sanitet', 'sanitetsko odjeljenje': 'odeljenje',
+                 'hirurška ekipa': 'hirurska', 'posavska četa, 6. bataljon': 'posavska'}
+
+
+def event_of(section: str | None, named: bool) -> dict:
+    """the record's Igman event (website/app/lib/types.ts, WarEvent): where he stood, and whether that is sure (his
+    company certainly in the column, or an entry of his names the march: the user's decision of 2026-10-30); the
+    Posavska četa, which the book doesn't name in the column, is 'most likely'"""
+    e: dict = {'e': 'igman', 'sure': True}
+    if section in SECTION_EVENT:
+        e['s'] = SECTION_EVENT[section]
+        e['sure'] = section not in PROBABLE or named
+    elif section:
+        m = re.fullmatch(r'(\d)\. četa, (\d)\. bataljon', section)
+        if m:
+            e['c'], e['b'] = int(m.group(1)), int(m.group(2))
+        else:
+            b = re.search(r'(\d)\. bataljon$', section)
+            if b and section.startswith('štab bataljona'):
+                e['s'], e['b'] = 'bstab', int(b.group(1))
+            elif b and section.startswith('bataljonski sanitet'):
+                e['s'], e['b'] = 'bsanitet', int(b.group(1))
+    return e
 
 # the column of 27 January 1942, by the line-up's sections; (battalion, company) or the brigade's own sections
 BRIGADE_SECTIONS = {'štab brigade', 'brigadni sanitet', 'sanitetsko odjeljenje', 'hirurška ekipa'}
@@ -130,6 +155,7 @@ def main():
     groups = {k: [] for k, _ in GROUPS}
     marks: dict[str, list[str]] = {}
     fates: dict[str, str] = {}
+    events: dict[str, list[dict]] = {}
     left_out = Counter()
     for s in soldiers:
         entries = [s] + list(s.get('other_sources') or [])
@@ -164,11 +190,16 @@ def main():
         if m:
             marks[s['soldier_id']] = m
         fates[s['soldier_id']] = fate(s)
+        events[s['soldier_id']] = [event_of(section, named)]
     total = sum(len(v) for v in groups.values())
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({'groups': [{'key': k, 'title': t, 'ids': groups[k]} for k, t in GROUPS if groups[k]],
                                'marks': marks, 'fates': fates}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print('later: ' + ', '.join(f'{k} {n}' for k, n in Counter(fates.values()).items()))
+    EVENTS.parent.mkdir(parents=True, exist_ok=True)
+    EVENTS.write_text(json.dumps(events, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f"wrote {EVENTS.relative_to(ROOT)}: {sum(e[0]['sure'] for e in events.values())} sure, "
+          f"{sum(not e[0]['sure'] for e in events.values())} most likely")
     print(f'{total} men: ' + ', '.join(f'{t} {len(groups[k])}' for k, t in GROUPS))
     print(f"marked: named Igman or frostbite {sum('igman' in v for v in marks.values())}, "
           f"died in Foča Feb-Mar 1942 {sum('foca' in v for v in marks.values())}; left out: {dict(left_out)}")

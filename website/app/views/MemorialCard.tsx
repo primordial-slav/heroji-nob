@@ -12,6 +12,7 @@ import {
 } from '@/app/lib/records'
 import { citation, sourceTitle } from '@/app/lib/recordSources'
 import { recordFacts } from '@/app/lib/recordFacts'
+import { eventLines } from '@/app/lib/warEvents'
 import { fullRecord, loadKin } from '@/app/lib/searchIndex'
 import { portraitFor } from '@/app/data/portraits'
 import SoldierPortrait from '@/app/components/SoldierPortrait'
@@ -75,6 +76,7 @@ export default function MemorialCard() {
   const years = lifeYears(soldier)
   // the same rows as the record dialog's (lib/recordFacts.ts), without its links
   const details = recordFacts(soldier, t, unit.name)
+  const events = eventLines(soldier, t)
   const honours = honoursLine(soldier, t)
   const hasPhoto = !unit.image.includes('/pdf-thumbs/')
   const link = new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString()
@@ -121,6 +123,7 @@ export default function MemorialCard() {
               ))}
             </dl>
           )}
+          {events.map((line) => <p key={line} className="memorial-event">{line}</p>)}
 
           <section className="memorial-entries">
             <h2>{t.card.entry}</h2>

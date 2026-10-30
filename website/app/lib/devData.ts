@@ -64,5 +64,6 @@ export function watchData() {
   watch(path.join(root, 'public', 'relations'), (name) => name === 'places.json')
   watch(path.join(root, 'data'), (name) => name === 'vez-sets.json')
   watch(path.join(root, 'data', 'life-events'), (name) => name.endsWith('.json'))
+  watch(path.join(root, 'data', 'events'), (name) => name.endsWith('.json'))
   run()
 }

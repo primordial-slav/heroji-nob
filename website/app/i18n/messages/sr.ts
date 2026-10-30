@@ -1,4 +1,5 @@
 import { dateNumbers, formatNumber, plural } from '../format'
+import type { WarEvent } from '../../lib/types'
 
 // The site's own text in Serbo-Croatian (ekavica, Latin script). VOICE.md says how it is written.
 // Text in [brackets] becomes a link or a button where the page puts one.
@@ -210,6 +211,21 @@ export const sr = {
     },
     /** between what two books give otherwise: "Rođen: 1915 ili 1918", "Poginuo: 05.03.1943, kod Gornjeg Vakufa ili 06.1943, Sutjeska" */
     or: 'ili',
+    /**
+     * The Igman march (lib/warEvents.ts): "Kao pripadnik 2. čete 1. bataljona, učestvovao je u Igmanskom maršu
+     * 27–28. januara 1942."; "najverovatnije" where his company is not certainly in the column (the Posavska četa)
+     */
+    igman: (e: WarEvent, woman: boolean) => {
+      const where = e.c && e.b ? `${e.c}. čete ${e.b}. bataljona`
+        : e.s === 'bstab' ? `štaba ${e.b}. bataljona` : e.s === 'bsanitet' ? `saniteta ${e.b}. bataljona`
+        : e.s === 'posavska' ? 'Posavske čete 6. bataljona' : e.s === 'stab' ? 'štaba brigade'
+        : e.s === 'sanitet' ? 'saniteta brigade' : e.s === 'odeljenje' ? 'sanitetskog odeljenja brigade'
+        : e.s === 'hirurska' ? 'hirurške ekipe brigade' : ''
+      // the clitic second: "učestvovao je", "najverovatnije je učestvovao"
+      const verb = woman ? 'učestvovala' : 'učestvovao'
+      const did = `${e.sure ? `${verb} je` : `najverovatnije je ${verb}`} u Igmanskom maršu 27–28. januara 1942.`
+      return where ? `Kao ${woman ? 'pripadnica' : 'pripadnik'} ${where}, ${did}` : `${woman ? 'Učestvovala' : 'Učestvovao'} je u Igmanskom maršu 27–28. januara 1942.`
+    },
     /** "Petrović Milan. Prva lička proleterska brigada, Rajko Šarenac (ur.), str. 42. Knjiga boraca, zapis 0002000042." */
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, str. ${page}` : ''}. Knjiga boraca, zapis ${id}.`,

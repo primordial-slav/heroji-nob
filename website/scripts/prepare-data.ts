@@ -13,7 +13,7 @@ import { PLACES_FILE, VEZ_FILE, placeSplit } from '@/app/lib/placeFiles'
 import { PLACE_CHUNK_BYTES } from '@/app/lib/relations'
 import { buildSearchData, writeSearchData } from '@/app/lib/searchData'
 import { dayKey, eachListedOnce, encodeKinRow, encodeRow, listOnce, type PlacedRow } from '@/app/lib/searchIndex'
-import type { LifeEvent, Soldier } from '@/app/lib/types'
+import type { LifeEvent, Soldier, WarEvent } from '@/app/lib/types'
 import type { GalleryItem } from '@/app/views/GalleryClient'
 
 // Writes, from the unit files, what the site's pages load as data (lib/dataFiles.ts) to public/data/, the search the
@@ -110,6 +110,8 @@ function fileHash(manifest: Manifest, seen: Manifest['files'], relative: string)
 
 const unitFile = (unit: Unit) => path.join('public', unit.dataFile)
 const eventsFile = (unit: Unit) => path.join('data', 'life-events', unit.dataFile)
+// the war's events his unit was part of (scripts/make_igman_list.py), for the units that have them
+const warEventsFile = (unit: Unit) => path.join('data', 'events', unit.dataFile)
 const partsOf = (count: number) => Math.ceil(count / RECORDS_PER_PART)
 
 function readUnit(unit: Unit): Soldier[] {
@@ -121,11 +123,16 @@ function readUnit(unit: Unit): Soldier[] {
 function writeRecords(unit: Unit, soldiers: Soldier[]) {
   const file = path.join(root, eventsFile(unit))
   const events: Record<string, LifeEvent[]> = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {}
+  const warFile = path.join(root, warEventsFile(unit))
+  const war: Record<string, WarEvent[]> = fs.existsSync(warFile) ? JSON.parse(fs.readFileSync(warFile, 'utf8')) : {}
   const parts = partsOf(soldiers.length)
   for (let part = 0; part < parts; part++) {
     const records = soldiers.slice(part * RECORDS_PER_PART, (part + 1) * RECORDS_PER_PART)
-    writeJson(publicFile(recordsPath(unit.id, part)),
-      records.map((r) => (events[r.soldier_id] ? { ...r, life_events: events[r.soldier_id] } : r)))
+    writeJson(publicFile(recordsPath(unit.id, part)), records.map((r) => ({
+      ...r,
+      ...(events[r.soldier_id] ? { life_events: events[r.soldier_id] } : {}),
+      ...(war[r.soldier_id] ? { events: war[r.soldier_id] } : {}),
+    })))
   }
   // a list grown shorter leaves no parts behind
   const dir = path.dirname(publicFile(recordsPath(unit.id, 0)))
@@ -241,7 +248,10 @@ async function main() {
   try {
     const manifest = readManifest()
     const seen: Manifest['files'] = {}
-    const unitHash = (unit: Unit) => sha1(fileHash(manifest, seen, unitFile(unit)), ':', fileHash(manifest, seen, eventsFile(unit)))
+    const unitHash = (unit: Unit) => {
+      const war = fileHash(manifest, seen, warEventsFile(unit))
+      return sha1(fileHash(manifest, seen, unitFile(unit)), ':', fileHash(manifest, seen, eventsFile(unit)), ...(war ? [':', war] : []))
+    }
     const hashes = new Map(units.map((unit) => [unit.id, unitHash(unit)]))
     const recordsKey = (unit: Unit) => `${hashes.get(unit.id)}:${RECORDS_FORM}`
     // this script's own code (its bundle), with the libraries and data modules it carries, writes the globals

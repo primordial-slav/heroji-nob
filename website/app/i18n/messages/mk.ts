@@ -1,4 +1,5 @@
 import { dateNumbers, formatNumber, plural } from '../format'
+import type { WarEvent } from '../../lib/types'
 import type { Messages } from './sr'
 
 // Македонски. Written for Macedonian readers, not translated word for word: the Macedonian words for the
@@ -197,6 +198,16 @@ export const mk: Messages = {
       party: 'Партија',
     },
     or: 'или',
+    /** The Igman march: "Како припадник на 2. чета од 1. баталјон, учествувал во Игманскиот марш на 27–28 јануари 1942." */
+    igman: (e: WarEvent, woman: boolean) => {
+      const where = e.c && e.b ? `${e.c}. чета од ${e.b}. баталјон`
+        : e.s === 'bstab' ? `штабот на ${e.b}. баталјон` : e.s === 'bsanitet' ? `санитетот на ${e.b}. баталјон`
+        : e.s === 'posavska' ? 'Посавската чета од 6. баталјон' : e.s === 'stab' ? 'штабот на бригадата'
+        : e.s === 'sanitet' ? 'санитетот на бригадата' : e.s === 'odeljenje' ? 'санитетското одделение на бригадата'
+        : e.s === 'hirurska' ? 'хируршката екипа на бригадата' : ''
+      const did = `${e.sure ? '' : 'најверојатно '}${woman ? 'учествувала' : 'учествувал'} во Игманскиот марш на 27–28 јануари 1942.`
+      return where ? `Како ${woman ? 'припадничка' : 'припадник'} на ${where}, ${did}` : `${woman ? 'Учествувала' : 'Учествувал'} во Игманскиот марш на 27–28 јануари 1942.`
+    },
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, стр. ${page}` : ''}. Книга на борците, запис ${id}.`,
   },

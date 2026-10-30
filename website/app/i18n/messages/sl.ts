@@ -1,4 +1,5 @@
 import { dateNumbers, formatNumber, plural } from '../format'
+import type { WarEvent } from '../../lib/types'
 import type { Messages } from './sr'
 
 // Slovenščina. Written for Slovene readers, not translated word for word: the Slovene words for the
@@ -187,6 +188,16 @@ export const sl: Messages = {
       party: 'Partija',
     },
     or: 'ali',
+    /** The Igman march: "Kot pripadnik 2. čete 1. bataljona je sodeloval v igmanskem maršu 27.–28. januarja 1942." */
+    igman: (e: WarEvent, woman: boolean) => {
+      const where = e.c && e.b ? `${e.c}. čete ${e.b}. bataljona`
+        : e.s === 'bstab' ? `štaba ${e.b}. bataljona` : e.s === 'bsanitet' ? `sanitetne službe ${e.b}. bataljona`
+        : e.s === 'posavska' ? 'Posavske čete 6. bataljona' : e.s === 'stab' ? 'štaba brigade'
+        : e.s === 'sanitet' ? 'sanitetne službe brigade' : e.s === 'odeljenje' ? 'sanitetnega oddelka brigade'
+        : e.s === 'hirurska' ? 'kirurške ekipe brigade' : ''
+      const did = `je ${e.sure ? '' : 'najverjetneje '}${woman ? 'sodelovala' : 'sodeloval'} v igmanskem maršu 27.–28. januarja 1942.`
+      return where ? `Kot ${woman ? 'pripadnica' : 'pripadnik'} ${where} ${did}` : `${woman ? 'Sodelovala' : 'Sodeloval'} je v igmanskem maršu 27.–28. januarja 1942.`
+    },
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, str. ${page}` : ''}. Knjiga borcev, zapis ${id}.`,
   },

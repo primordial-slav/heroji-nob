@@ -1,4 +1,5 @@
 import { dateNumbers, formatNumber, plural } from '../format'
+import type { WarEvent } from '../../lib/types'
 import type { Messages } from './sr'
 
 // English (British spelling). Written for English readers, many of them descendants abroad, not translated
@@ -189,6 +190,17 @@ export const en: Messages = {
       party: 'Party',
     },
     or: 'or',
+    /** The Igman march: "As a member of the 2nd Company of the 1st Battalion, he took part in the Igman March of 27–28 January 1942." */
+    igman: (e: WarEvent, woman: boolean) => {
+      const th = (k?: number) => (k === 1 ? '1st' : k === 2 ? '2nd' : k === 3 ? '3rd' : `${k}th`)
+      const where = e.c && e.b ? `the ${th(e.c)} Company of the ${th(e.b)} Battalion`
+        : e.s === 'bstab' ? `the staff of the ${th(e.b)} Battalion` : e.s === 'bsanitet' ? `the medical service of the ${th(e.b)} Battalion`
+        : e.s === 'posavska' ? 'the Posavina Company of the 6th Battalion' : e.s === 'stab' ? 'the brigade staff'
+        : e.s === 'sanitet' ? "the brigade's medical service" : e.s === 'odeljenje' ? "the brigade's medical section"
+        : e.s === 'hirurska' ? "the brigade's surgical team" : ''
+      const did = `${woman ? 'she' : 'he'} ${e.sure ? 'took' : 'most likely took'} part in the Igman March of 27–28 January 1942.`
+      return where ? `As a member of ${where}, ${did}` : `${woman ? 'She' : 'He'} took part in the Igman March of 27–28 January 1942.`
+    },
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, p. ${page}` : ''}. Knjiga boraca, record ${id}.`,
   },

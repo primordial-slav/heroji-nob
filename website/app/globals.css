@@ -3868,6 +3868,19 @@ span.rail-face {
   overflow-wrap: anywhere;
 }
 
+/* What his unit did that he was part of, under the facts: "Kao pripadnik 2. čete 1. bataljona, učestvovao je u
+   Igmanskom maršu 27–28. januara 1942." */
+.record-event {
+  margin: var(--space-3) 0 0;
+  max-width: 62ch;
+  line-height: 1.5;
+}
+
+.memorial-event {
+  margin: var(--space-4) 0 0;
+  line-height: 1.5;
+}
+
 .record-fact-link {
   display: inline-flex;
   align-items: center;
@@ -4036,7 +4049,7 @@ span.rail-face {
     align-items: start;
   }
 
-  .modal-content.has-line .record-facts { grid-area: facts; }
+  .modal-content.has-line .record-facts-area { grid-area: facts; }
   .modal-content.has-line .record-page { grid-area: page; }
 
   .modal-content.has-line .record-line {

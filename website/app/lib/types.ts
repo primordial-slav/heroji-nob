@@ -82,4 +82,21 @@ export interface Soldier {
   // The dated steps of his life, in order, where there are three or more (website/data/life-events/, merged in by
   // the records route)
   life_events?: LifeEvent[]
+  // What his unit did that he was part of (website/data/events/, merged in by scripts/prepare-data.ts): the Igman
+  // march of 27-28 January 1942 (scripts/make_igman_list.py)
+  events?: WarEvent[]
+}
+
+/**
+ * An event of the war a soldier was part of. `sure`: his company was certainly there, or an entry of his names it;
+ * else he most likely was (the Prva proleterska's Posavska četa on Igman). Where he stood: a company and battalion
+ * (`c`, `b`), or a section (`s`): the brigade's staff, sanitet, sanitetsko odeljenje, surgical team, a battalion's
+ * staff or sanitet, the Posavska četa of the 6. bataljon; neither where only an entry of his names the event.
+ */
+export interface WarEvent {
+  e: 'igman'
+  sure: boolean
+  b?: number
+  c?: number
+  s?: 'stab' | 'sanitet' | 'odeljenje' | 'hirurska' | 'bstab' | 'bsanitet' | 'posavska'
 }

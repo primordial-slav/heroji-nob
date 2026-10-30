@@ -7,6 +7,7 @@ import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
 import { entriesOf, hasPage, isFamily, isMuseum, isPoreklo, unitByName } from '@/app/lib/records'
 import { sourceTitle } from '@/app/lib/recordSources'
 import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
+import { eventLines } from '@/app/lib/warEvents'
 import { loadKin, type Kin } from '@/app/lib/searchIndex'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
@@ -208,6 +209,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
     death: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
   }
   const facts: Fact[] = recordFacts(soldier, t, unitRecord?.name ?? unit).map((f) => ({ ...f, link: links[f.key] }))
+  const events = eventLines(soldier, t)
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -248,22 +250,28 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
         <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
 
         <div className="record-body">
-          {facts.length > 0 && (
-            <dl className="record-facts">
-              {facts.map((f) => (
-                <div key={f.key} style={{ display: 'contents' }}>
-                  <dt>{f.label}</dt>
-                  <dd>
-                    <span>{f.value}</span>
-                    {f.link && (
-                      <button type="button" className="record-fact-link" onClick={f.link.open}>
-                        {f.link.text}<ChevronRightIcon size={14} />
-                      </button>
-                    )}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+          {(facts.length > 0 || events.length > 0) && (
+            <div className="record-facts-area">
+              {facts.length > 0 && (
+                <dl className="record-facts">
+                  {facts.map((f) => (
+                    <div key={f.key} style={{ display: 'contents' }}>
+                      <dt>{f.label}</dt>
+                      <dd>
+                        <span>{f.value}</span>
+                        {f.link && (
+                          <button type="button" className="record-fact-link" onClick={f.link.open}>
+                            {f.link.text}<ChevronRightIcon size={14} />
+                          </button>
+                        )}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+              {/* what his unit did that he was part of: the Igman march (lib/warEvents.ts) */}
+              {events.map((line) => <p key={line} className="record-event">{line}</p>)}
+            </div>
           )}
 
           {hasLine && (
