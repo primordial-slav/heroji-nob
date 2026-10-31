@@ -12,6 +12,8 @@
   --red-deep: #7b1a1d;
   --red-ink: #8e1f20;
   --section-rule: var(--red);
+  /* the record dialog's embroidered cloth: a muted brick red, like old red thread on linen */
+  --cloth-ink: #a8524b;
   --on-red: #ffffff;
   --on-red-muted: #f3d9d6;
   --mark: #fff0a8;
@@ -56,6 +58,7 @@
   --red-ink: #eb8a80;
   /* the section rules and their oak sprig: a soft white in the dark, not the ink's full white */
   --section-rule: #cbc5bc;
+  --cloth-ink: #cbc5bc;
   --on-red: #ffffff;
   --on-red-muted: #efc9c5;
   --mark: rgba(255, 214, 64, 0.28);
@@ -952,19 +955,45 @@ body:has(.band-photo[data-ready]) header.masthead {
 
 .modal-content:has(.record-photo) {
   border-top: 0;
+  /* the embroidered cloth under the unit photo (public/ornament/platno.svg): its height */
+  --cloth: 32px;
 }
 
+/* The unit photo, and under it an embroidered cloth where the red rule was: a stitched oak vine, its leaves
+   leaning forward up and down in turn, two leaves in turn, acorns, now and then a bud or a tendril (on trial,
+   2026-10-28). The cloth is a mask in --cloth-ink: a muted brick red, the section rules' soft white in the dark. */
 .record-photo {
+  position: relative;
   margin: calc(-1 * var(--space-5)) calc(-1 * var(--space-6)) var(--space-5);
-  height: 6.5rem;
+  height: calc(6.5rem - 3px + var(--cloth));
   overflow: hidden;
   background: var(--surface-sunk);
-  border-bottom: 3px solid var(--red);
+}
+
+.record-photo::before,
+.record-photo::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--cloth);
+}
+
+.record-photo::before {
+  background: var(--ground);
+}
+
+.record-photo::after {
+  background-color: var(--cloth-ink);
+  -webkit-mask: url('/ornament/platno.svg') 0 0 / auto 100% repeat-x;
+  mask: url('/ornament/platno.svg') 0 0 / auto 100% repeat-x;
 }
 
 .record-photo img {
   width: 100%;
-  height: 100%;
+  height: calc(100% - var(--cloth));
   object-fit: cover;
   object-position: 50% 45%;
   filter: var(--photo-filter);
@@ -1625,7 +1654,7 @@ body:has(.band-photo[data-ready]) header.masthead {
 
   .record-photo {
     margin: calc(-1 * var(--space-5)) calc(-1 * var(--space-4)) var(--space-4);
-    height: 5.5rem;
+    height: calc(5.5rem - 3px + var(--cloth));
   }
 
   .unit-hero-body {
@@ -1777,7 +1806,7 @@ body:has(.band-photo[data-ready]) header.masthead {
 }
 
 .modal-content:has(.record-photo) .modal-medals {
-  top: 6.5rem;
+  top: calc(6.5rem - 3px + var(--cloth));
   right: var(--space-6);
 }
 
@@ -1828,7 +1857,7 @@ body:has(.band-photo[data-ready]) header.masthead {
 }
 
 .modal-content:has(.record-photo) .modal-portrait {
-  margin-top: calc(-1 * var(--space-5) - 2.75rem);
+  margin-top: calc(-1 * var(--space-5) - 2.75rem - var(--cloth) + 3px);
 }
 
 :is(.modal-portrait, .memorial-portrait) :is(.portrait-open, img, .standin) {
@@ -2068,7 +2097,7 @@ body:has(.band-photo[data-ready]) header.masthead {
 
 @media (max-width: 640px) {
   .modal-content:has(.record-photo) .modal-medals {
-    top: 5.5rem;
+    top: calc(5.5rem - 3px + var(--cloth));
     right: var(--space-4);
   }
 
@@ -2610,7 +2639,7 @@ body:has(.band-photo[data-ready]) header.masthead {
   }
 
   .modal-content:has(.record-photo) .modal-portrait {
-    margin-top: calc(-1 * var(--space-5) - 2rem);
+    margin-top: calc(-1 * var(--space-5) - 2rem - var(--cloth) + 3px);
   }
 }
 
