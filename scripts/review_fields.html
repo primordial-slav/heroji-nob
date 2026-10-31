@@ -86,6 +86,9 @@ const LABELS = {
   'names/short_given': 'Given name of one or two letters', 'names/odd_char': 'Scan characters in a name',
   'names/inner_capital': 'A capital inside a name', 'glued/glued_entry': 'Another man glued into the entry',
   'deserter/deserter': 'Deserter or traitor words (the rule of 14 Oct)', 'duplicates/same_entry_twice': 'The same entry twice in a unit',
+  'name_slips/one_letter': 'Name: one letter off', 'name_slips/swap': 'Name: two letters swapped',
+  'name_slips/caron': 'Name: a lost caron', 'name_slips/ocr': 'Name: a scan misreading', 'name_slips/ic': 'Name: -ič for -ić',
+  'name_slips/split': 'Name: cut in two', 'name_slips/accent': 'Name: a stray accent',
 };
 const FIELD_LABELS = { last_name: 'Surname', middle_name: 'Father as printed', fathers_name: 'Father (nominative)',
   first_name: 'Given name', birth_year: 'Birth year', birth_place: 'Birthplace', death_type: 'Fate', death_date: 'Death date',
@@ -145,10 +148,13 @@ function editor(r) {
   if (r.field !== 'record' && !show.includes(r.field)) show.push(r.field);
   for (const k of ['birth_year', 'death_type', 'death_date', 'death_place']) if (r.check === 'life_dates' && !show.includes(k)) show.push(k);
   const val = k => k === 'additional_info' ? r.text : (f[k] ?? '');
+  // a name slip comes with the spelling proposed, filled in: Enter takes it, K keeps the name as printed
+  const proposed = r.check === 'name_slips' ? (/→ (.+?) \(/.exec(r.note) || [])[1] : null;
   return show.map(k => {
     const v = esc(val(k));
+    const p = proposed && k === r.field ? esc(proposed) : null;
     const input = k === 'additional_info' ? `<textarea data-k="${k}" data-v="${v}">${v}</textarea>`
-      : `<input data-k="${k}" data-v="${v}" value="${v}">`;
+      : `<input data-k="${k}" data-v="${v}" value="${p ?? v}"${p ? ' class="changed"' : ''}>`;
     return `<label>${esc(FIELD_LABELS[k] || k)}${input}</label>`;
   }).join('') + (r.check === 'glued' ? '<div class="src">To split, cut the text here and say who the glued man is in the note; it is done by hand.</div>' : '');
 }

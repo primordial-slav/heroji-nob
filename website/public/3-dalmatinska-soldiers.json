@@ -6486,7 +6486,8 @@
     "occupation": "pekar",
     "death_type": "umro",
     "rank": "kurir",
-    "death_place": "Livno"
+    "death_place": "Livno",
+    "death_after_war": true
   },
   {
     "last_name": "Brković",
@@ -10879,6 +10880,18 @@
         "pdf_x_end": 455.6,
         "pdf_y_end": 522.7,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001509001",
+        "name": "Franić Jure Ivan",
+        "additional_info": "vodi se u evidenciji bolnice 1. divizije, kao bolesnik.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 77,
+        "pdf_x": 143.1,
+        "pdf_y": 420.7,
+        "pdf_x_end": 501.2,
+        "pdf_y_end": 428.7,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "variants": {
@@ -14466,7 +14479,8 @@
     "death_type": "umro",
     "rank": "intendant",
     "unit_detail": "3. bataljon",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "death_after_war": true
   },
   {
     "last_name": "Jelavić",
@@ -21132,7 +21146,7 @@
       {
         "soldier_id": "0007002875",
         "name": "Lokas Mate Šime",
-        "additional_info": "1925. Rasline, Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od 1942. U NOV od listopada 1942. u 2. dalm. brigadi. Poginuo 8.6.1943. na Barama, Sut-",
+        "additional_info": "1925. Rasline, Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od 1942. U NOV od listopada 1942. u 2. dalm. brigadi. Poginuo 8.6.1943. na Barama, Sut[jeska]",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 97,
         "pdf_x": 141.2,
@@ -25639,7 +25653,7 @@
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
     "death_type": "poginuo",
-    "death_place": "u Miljevini)",
+    "death_place": "u Miljevini",
     "rank": "borac"
   },
   {
@@ -25969,6 +25983,7 @@
     "rank": "desetar",
     "unit_detail": "2. bataljon",
     "party": "KPJ 1943",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0007003556",
@@ -28051,10 +28066,10 @@
   },
   {
     "last_name": "Novaković",
-    "middle_name": "Ivana Mil",
-    "first_name": "An",
-    "fathers_name": "Ivana Mil",
-    "full_name": "Novaković Ivana Mil An",
+    "middle_name": "Ivana",
+    "first_name": "Milan",
+    "fathers_name": "Ivan",
+    "full_name": "Novaković Ivana Milan",
     "additional_info": "zamenik komandira čete u 4. bataljonu, rođen 1920, Tugare, Omiš, radnik, Jugosloven, u NOB od 1941, član KPJ od decembra 1942, krajem rata obave - štajni oficir 9. dalmatinske brigade.",
     "birth_year": "1920",
     "pdf_page": 44,
@@ -29388,7 +29403,8 @@
     "occupation": "radnik",
     "death_type": "umro",
     "rank": "komandir voda",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Panjkota",
@@ -30166,7 +30182,8 @@
     "pdf_x_end": 207.1,
     "birth_place": "Split",
     "ethnicity": "Hrvatica",
-    "party": "SKOJ 1938, KPJ 1945"
+    "party": "SKOJ 1938, KPJ 1945",
+    "occupation": "studentkinja medicine"
   },
   {
     "last_name": "Pereža",
@@ -47477,7 +47494,7 @@
     "first_name": "Mate",
     "fathers_name": "Ivan",
     "full_name": "Šolić Ivana Mate",
-    "additional_info": "borac 1. bataljona, rođen 1911, Sutina, Split, radnik, Hrvat, u NOB od 1942, član KpJ septembra 1943, krajem rata koma,,, dir čete u 1. proleterskoj brigadi-",
+    "additional_info": "borac 1. bataljona, rođen 1911, Sutina, Split, radnik, Hrvat, u NOB od 1942, član KpJ septembra 1943, krajem rata koma,,, dir čete u 1. proleterskoj brigadi",
     "birth_year": "1911",
     "pdf_page": 61,
     "pdf_y": 556.8,
@@ -47486,12 +47503,12 @@
     "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
     "soldier_id": "0046001289",
     "pdf_x_end": 215.2,
+    "party": "KPJ 1943",
     "birth_place": "Sutina, Split",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "party": "KPJ 1943",
     "other_sources": [
       {
         "soldier_id": "0001012199",
@@ -47798,7 +47815,8 @@
     "rank": "desetar",
     "pdf_x_end": 395.2,
     "pdf_y_end": 533.3,
-    "party": "KPJ 1936"
+    "party": "KPJ 1936",
+    "death_after_war": true
   },
   {
     "soldier_id": "0046001336",

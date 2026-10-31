@@ -209,7 +209,15 @@ DESERTER = re.compile(r'\b(?:dezertir\w*|dezerter\w*|(?:prebeg|prebjeg|preš|pob
                       + _THEM + r'|(?:postao|postala)\s+(?:agent|četnik|ustaš|domobran|špijun|doušnik)\w*|agent\w*\s+'
                       r'Gestap\w*|(?:streljan|strijeljan)\w*\s+(?:kao\s+(?:dezerter|izdajnik|špijun|petokolonaš|neprijatelj)|'
                       r'zbog\s+(?:dezert|izdaj|samovolj|napuštanj|kukavič|pljačk|silovanj|slabosti|špijun|kolebanj))\w*|'
-                      r'kao\s+izdajnik\w*|izdao\s+(?:je\s+)?(?:drugove|jedinic|partizan|bazu|logor|sklonište|partijsk))', re.I)
+                      r'kao\s+izdajnik\w*|izdao\s+(?:je\s+)?(?:drugove|jedinic|partizan|bazu|logor|sklonište|partijsk)|'
+                      # (2026-10-31, the Mačvanski and Posavski odred's men of 1941) "stupio u četnike", "otišao u
+                      # četnike", "bio u četnicima", "postao nedićevac", "poginuo kao četnik", "predao se četnicima";
+                      # the partisans' own liquidation of one ("likvidiran kao provokator"). The review reads each:
+                      # one forcibly mobilized who fled to us, or one who came back to fight, stays
+                      r'(?:stupio|stupila|otišao|otišla|pristupio|pristupila)\s+(?:je\s+)?u\s+(?:četnik|nedićev|ljotićev|ustaš|SDK)\w*|'
+                      r'bio\s+(?:je\s+)?(?:i\s+)?u\s+četnicima|postao\s+(?:je\s+)?(?:nedićevac|ljotićevac|četnik)|'
+                      r'poginuo\s+kao\s+(?:četnik|ustaša|nedićevac)|predao\s+se\s+četnicima|'
+                      r'likvidiran\w*\s+(?:je\s+)?(?:kao|od\s+(?:strane\s+)?(?:partizan|\w+\s+partizansk))\w*)', re.I)
 
 
 def deserter(s: dict) -> list[tuple[str, str, str]]:
@@ -223,6 +231,30 @@ def deserter(s: dict) -> list[tuple[str, str, str]]:
     return []
 
 
+# the names that look garbled: a known slip of a name common in the same region ("Stregar" for Strugar, a lost caron,
+# l for I), which the names tool (quality/names/dictionary.py, local) lists in data-extraction/.cache/name_slips.json;
+# a rare name is never wrong for being rare, so a person reads each against the page (2026-10-31)
+NAME_SLIPS = ROOT / 'data-extraction' / '.cache' / 'name_slips.json'
+SLIP_KIND = {'one letter': 'one_letter', 'ič -> ić': 'ic', 'restore': 'caron'}
+_slips: dict | None = None
+
+
+def name_slips(s: dict) -> list[tuple[str, str, str]]:
+    global _slips
+    if _slips is None:
+        _slips = {}
+        if NAME_SLIPS.exists():
+            for r in json.loads(NAME_SLIPS.read_text(encoding='utf-8')):
+                _slips.setdefault(r['id'], []).append(r)
+    out = []
+    for r in _slips.get(s['soldier_id'], []):
+        if s.get(r['field']) == r['printed'] and not s['soldier_id'].startswith(NOT_UNITS):
+            other = f"; another book prints {', '.join(r['other_books'][:2])}" if r.get('other_books') else ''
+            out.append((r['field'], SLIP_KIND.get(r['kind'], r['kind'].replace(' ', '_')),
+                        f"\"{r['printed']}\" → {r['proposed']} ({r['region_count']} in the region{other})"))
+    return out
+
+
 CHECKS = [
     ('unit_numbers', unit_numbers),
     ('life_dates', life_dates),
@@ -230,6 +262,7 @@ CHECKS = [
     ('names', names),
     ('glued', glued),
     ('deserter', deserter),
+    ('name_slips', name_slips),
 ]
 
 

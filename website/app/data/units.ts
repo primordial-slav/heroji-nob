@@ -16,7 +16,7 @@ export const units: Unit[] = [
     nameEn: '1st Lika Proletarian Brigade "Marko Orešković"',
     description: 'Formirana 8. jula 1942. kod vrela Mrežnice.',
     image: '/images/prva-licka-brigada.jpg',
-    soldierCount: 9858,
+    soldierCount: 9857,
     dataFile: '/soldiers.json',
     pdfFiles: ['/pdfs/prva-licka-proleterska.pdf']
   },
@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941.',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 17086,
+    soldierCount: 17098,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf', '/pdfs/borci-sutjeske-prva-proleterska.pdf', '/pdfs/prva-proleterska-stroj-u-rudom.pdf', '/pdfs/beogradski-bataljon.pdf', '/pdfs/dalmatinci-prva-proleterska.pdf', '/pdfs/crnogorski-bataljon.pdf', '/pdfs/rudarska-ceta.pdf', '/pdfs/prva-proleterska-dopunski.pdf', '/pdfs/prva-proleterska-garibaldi.pdf']
   },
@@ -46,7 +46,7 @@ export const units: Unit[] = [
     nameEn: '2nd Lika Proletarian Brigade',
     description: 'Formirana 18. avgusta 1942. u Laudonovom gaju. Poginuli, umrli i nestali borci, oni koji su preživeli rat, i starešine štaba brigade i bataljona.',
     image: '/images/druga_licka.jpg',
-    soldierCount: 7502,
+    soldierCount: 7501,
     dataFile: '/druga-licka-soldiers.json',
     pdfFiles: ['/pdfs/druga-licka-spisak.pdf', '/pdfs/druga-licka-sjecanja-prezivjeli.pdf', '/pdfs/druga-licka-sjecanja-poginuli.pdf', '/pdfs/druga-licka-staresine.pdf']
   },
@@ -56,7 +56,7 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. Spisak je sa dana kad je brigada formirana.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 2626,
+    soldierCount: 2624,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf', '/pdfs/treca-proleterska-formiranje.pdf', '/pdfs/borci-sutjeske-treca-proleterska.pdf']
   },
@@ -136,7 +136,7 @@ export const units: Unit[] = [
     nameEn: '6th Krajina Assault Brigade',
     description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine, starešine brigade 1942–1943. i borci koji su preživeli rat.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 4046,
+    soldierCount: 4045,
     dataFile: '/6-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/6-krajiska.pdf', '/pdfs/6-krajiska-prezivjeli.pdf', '/pdfs/6-krajiska-kadar.pdf']
   },
@@ -156,7 +156,7 @@ export const units: Unit[] = [
     nameEn: '3rd Krajina Proletarian Assault Brigade',
     description: 'Formirana 22. avgusta 1942. u Kamenici kod Drvara. Borci brigade od formiranja do kraja rata.',
     image: '/images/treca-krajiska-brigada.jpg',
-    soldierCount: 7397,
+    soldierCount: 7398,
     dataFile: '/3-krajiska-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/3-krajiska-proleterska.pdf', '/pdfs/borci-sutjeske-3-krajiska.pdf', '/pdfs/3-krajiska-spisak-boraca.pdf']
   },
@@ -206,7 +206,7 @@ export const units: Unit[] = [
     nameEn: '4th Banija Brigade',
     description: 'Formirana 30. juna 1943. u Obijaju na Baniji. Brigada 7. divizije. Starešine štabova i borci brigade.',
     image: '/images/4-banijska-brigada.jpg',
-    soldierCount: 2160,
+    soldierCount: 2156,
     dataFile: '/4-banijska-soldiers.json',
     pdfFiles: ['/pdfs/4-banijska.pdf', '/pdfs/4-banijska-starjesine.pdf']
   },
@@ -216,7 +216,7 @@ export const units: Unit[] = [
     nameEn: '4th Serbian Assault Brigade',
     description: 'Formirana 20. novembra 1943. u Bucima kod Kruševca. Borci brigade, među njima i stranci i borci čije ime nije utvrđeno.',
     image: '/images/4-srpska-brigada.jpg',
-    soldierCount: 6329,
+    soldierCount: 6331,
     dataFile: '/4-srpska-soldiers.json',
     pdfFiles: ['/pdfs/4-srpska.pdf']
   },
@@ -226,7 +226,7 @@ export const units: Unit[] = [
     nameEn: '7th Vojvodina Assault Brigade',
     description: 'Formirana 2. jula 1944. na salašu Mušickog kod Batrovaca. Preživeli, poginuli i borci umrli posle rata, i borci 4. (ruskog) bataljona.',
     image: '/images/7-vojvodjanska-brigada.jpg',
-    soldierCount: 3578,
+    soldierCount: 3574,
     dataFile: '/7-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/7-vojvodjanska.pdf']
   },
@@ -356,7 +356,7 @@ export const units: Unit[] = [
     nameEn: '32nd Zagorje Division',
     description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda, i borci štaba i brigada divizije, s podacima o svakom, i komandni sastav.',
     image: '/images/32-zagorska-divizija.jpg',
-    soldierCount: 18157,
+    soldierCount: 18156,
     dataFile: '/32-divizija-soldiers.json',
     pdfFiles: ['/pdfs/32-divizija.pdf', '/pdfs/32-divizija-borci.pdf', '/pdfs/32-divizija-kadar.pdf']
   },
@@ -556,7 +556,7 @@ export const units: Unit[] = [
     nameEn: '12th Krajina Brigade',
     description: 'Formirana 19. februara 1943. u Driniću. Poginuli i preživeli borci i starešine.',
     image: '/images/12-krajiska-brigada.jpg',
-    soldierCount: 3854,
+    soldierCount: 3852,
     dataFile: '/12-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/12-krajiska-poginuli.pdf', '/pdfs/12-krajiska-prezivjeli.pdf']
   },
@@ -636,7 +636,7 @@ export const units: Unit[] = [
     nameEn: 'Gubec Brigade',
     description: 'Formirana 4. septembra 1942. kod Trebelnog iznad Mokronoga. Štabovi brigade i bataljona, poginuli i preživeli borci.',
     image: '/images/gubceva-brigada.jpg',
-    soldierCount: 3003,
+    soldierCount: 3004,
     dataFile: '/gubceva-soldiers.json',
     pdfFiles: ['/pdfs/gubceva.pdf', '/pdfs/gubceva-kader.pdf']
   },
@@ -656,7 +656,7 @@ export const units: Unit[] = [
     nameEn: 'Gradnik Brigade',
     description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade, njen štab i narodni heroji.',
     image: '/images/gradnikova-brigada.jpg',
-    soldierCount: 3661,
+    soldierCount: 3646,
     dataFile: '/gradnikova-soldiers.json',
     pdfFiles: ['/pdfs/gradnikova.pdf', '/pdfs/gradnikova-kader.pdf']
   },
@@ -716,7 +716,7 @@ export const units: Unit[] = [
     nameEn: 'Tomšič Brigade',
     description: 'Formirana 16. jula 1942. na Cesti na Kočevskom. Borci jedinica iz kojih je nastala i borci brigade do kraja rata.',
     image: '/images/tomsiceva-brigada.jpg',
-    soldierCount: 6005,
+    soldierCount: 6004,
     dataFile: '/tomsiceva-soldiers.json',
     pdfFiles: ['/pdfs/tomsiceva-2.pdf', '/pdfs/tomsiceva-3.pdf', '/pdfs/tomsiceva-4.pdf', '/pdfs/tomsiceva-1.pdf']
   },
@@ -786,7 +786,7 @@ export const units: Unit[] = [
     nameEn: '1st Kosovo-Metohija Brigade',
     description: 'Formirana 24. juna 1944. u selu Zbaždi u zapadnoj Makedoniji. Borci brigade, poginuli i ranjeni.',
     image: '/images/1-kosovsko-metohijska-brigada.jpg',
-    soldierCount: 1072,
+    soldierCount: 1070,
     dataFile: '/1-kosovsko-metohijska-soldiers.json',
     pdfFiles: ['/pdfs/1-kosovsko-metohijska.pdf']
   },
@@ -1036,7 +1036,7 @@ export const units: Unit[] = [
     nameEn: '1st Boka Brigade',
     description: 'Formirana 5. oktobra 1944. u Konjskom kod Trebinja. Svi borci i starešine brigade po jedinicama, i poginuli, umrli i nestali.',
     image: '/images/1-bokeljska-brigada.jpg',
-    soldierCount: 3276,
+    soldierCount: 3263,
     dataFile: '/1-bokeljska-soldiers.json',
     pdfFiles: ['/pdfs/1-bokeljska.pdf', '/pdfs/1-bokeljska-spisak.pdf']
   },
@@ -1096,7 +1096,7 @@ export const units: Unit[] = [
     nameEn: 'Mosor Partisan Detachment',
     description: 'Formiran 21. februara 1942. na Mosoru, ponovo 11. oktobra 1943, rasformiran 10. novembra 1944. Svi borci odreda 1942–1944, s kratkim životopisima, i rukovodeći kadar odreda.',
     image: '/images/mosorski-odred.jpg',
-    soldierCount: 3656,
+    soldierCount: 3655,
     dataFile: '/mosorski-odred-soldiers.json',
     pdfFiles: ['/pdfs/mosorski-odred.pdf', '/pdfs/mosorski-odred-2.pdf', '/pdfs/mosorski-odred-kader.pdf']
   },
@@ -1166,7 +1166,7 @@ export const units: Unit[] = [
     nameEn: 'Mačva (Podrinje) Partisan Detachment',
     description: 'Formiran 16. jula 1941. na Bubanji kod Glušaca u Mačvi; od avgusta Podrinski NOP odred. Borci odreda od jula 1941. do marta 1942, po mestima iz kojih su došli.',
     image: '/images/macvanski-odred.jpg',
-    soldierCount: 1607,
+    soldierCount: 1597,
     dataFile: '/macvanski-odred-soldiers.json',
     pdfFiles: []
   },
@@ -1176,7 +1176,7 @@ export const units: Unit[] = [
     nameEn: 'Posavina Partisan Detachment',
     description: 'Formiran 31. jula 1941. odlukom Glavnog štaba za Srbiju, od dve posavske čete i Tamnavske čete. Borci odreda 1941, po bataljonima.',
     image: '/images/posavski-odred.jpg',
-    soldierCount: 2507,
+    soldierCount: 2486,
     dataFile: '/posavski-odred-soldiers.json',
     pdfFiles: ['/pdfs/posavski-odred.pdf']
   },
@@ -1266,7 +1266,7 @@ export const units: Unit[] = [
     nameEn: 'Požarevac Partisan Detachment',
     description: 'Formiran u avgustu 1941. u Požarevačkom okrugu. Svi borci odreda od 1941. do oktobra 1944, kad je ušao u NOVJ.',
     image: '/images/pozarevacki-odred.jpg',
-    soldierCount: 1337,
+    soldierCount: 1336,
     dataFile: '/pozarevacki-odred-soldiers.json',
     pdfFiles: []
   },
@@ -1476,7 +1476,7 @@ export const units: Unit[] = [
     nameEn: 'Ninth (Kočevje) Brigade',
     description: 'Formirana 14. septembra 1943. od bataljona Zapadnodolenjskog odreda, u sastavu 18. divizije. Štabovi brigade i bataljona; borci brigade: godina i mesto rođenja, a poginuli i gde su pali.',
     image: '/images/pdf-thumbs/deveta.jpg',
-    soldierCount: 2362,
+    soldierCount: 2338,
     dataFile: '/deveta-soldiers.json',
     pdfFiles: ['/pdfs/deveta.pdf', '/pdfs/deveta-kader.pdf']
   },
@@ -1486,7 +1486,7 @@ export const units: Unit[] = [
     nameEn: '4th Naval Coastal Sector',
     description: 'Formiran 30. oktobra 1943. u Hvaru, sektor Mornarice NOVJ za srednju Dalmaciju i ostrva. Svi borci sektora i odakle je ko, a poginuli i umrli i gde su pali, i štab sektora.',
     image: '/images/4-pomorski-sektor.jpg',
-    soldierCount: 4707,
+    soldierCount: 4703,
     dataFile: '/4-pomorski-sektor-soldiers.json',
     pdfFiles: ['/pdfs/4-pomorski-sektor.pdf', '/pdfs/4-pomorski-sektor-stab.pdf']
   },
@@ -1496,7 +1496,7 @@ export const units: Unit[] = [
     nameEn: 'Novi Sad Partisan Detachment',
     description: 'Formiran 1941, a ponovo 28. avgusta 1944. na Palenkaševom salašu kod Bačkog Petrovca. Pripadnici odreda 1941. i 1944. godine.',
     image: '/images/pdf-thumbs/novosadski-odred.jpg',
-    soldierCount: 124,
+    soldierCount: 122,
     dataFile: '/novosadski-odred-soldiers.json',
     pdfFiles: ['/pdfs/novosadski-odred.pdf']
   },
@@ -1570,7 +1570,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Bosnia and Herzegovina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Bosne i Hercegovine, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 30060,
+    soldierCount: 30061,
     dataFile: '/ostali-borci-bih.json',
     pdfFiles: []
   },

@@ -78,7 +78,8 @@
     "death_type": "umro",
     "rank": "borac",
     "unit_detail": "intendantura",
-    "death_place": "Prevršac"
+    "death_place": "Prevršac",
+    "death_after_war": true
   },
   {
     "last_name": "Ajksan",
@@ -323,7 +324,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "desetar",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Arbutina",
@@ -772,7 +774,8 @@
     "occupation": "student",
     "death_type": "umro",
     "rank": "načelnik štaba brigade",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_after_war": true
   },
   {
     "last_name": "Bakić",
@@ -2553,7 +2556,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Bjelanović",
@@ -8405,7 +8409,8 @@
     "occupation": "domaćica",
     "death_type": "umro",
     "rank": "politički delegat voda",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Idra",
@@ -8450,7 +8455,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Ijača",
@@ -10254,7 +10260,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Kekuš-Srbuanin",
@@ -10973,7 +10980,8 @@
     "death_type": "umro",
     "rank": "politički komesar",
     "unit_detail": "1. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_after_war": true
   },
   {
     "last_name": "Kovačević",
@@ -11228,7 +11236,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Krivokuća",
@@ -11251,6 +11260,7 @@
     "death_type": "umro",
     "rank": "bolničarka",
     "party": "KPJ 1944",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0049010538",
@@ -12121,7 +12131,8 @@
     "death_type": "umro",
     "rank": "obaveštajni oficir",
     "unit_detail": "2. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_after_war": true
   },
   {
     "last_name": "Lazić",
@@ -14734,7 +14745,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "komandir voda",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Meandžija",
@@ -15389,10 +15401,10 @@
   {
     "last_name": "Miljević",
     "middle_name": "Sime",
-    "first_name": "Ij",
+    "first_name": "Ljubica",
     "fathers_name": "Simo",
-    "full_name": "Miljević Sime Ij",
-    "additional_info": "zvana Ubiga; borac, rođena 1921, Luščani, Petrinja, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a, poginula u kanjonu Pive, kod Čokove Luke, 7. juna 1943.",
+    "full_name": "Miljević Sime Ljubica",
+    "additional_info": "borac, rođena 1921, Luščani, Petrinja, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a, poginula u kanjonu Pive, kod Čokove Luke, 7. juna 1943.",
     "birth_year": "1921",
     "pdf_page": 25,
     "pdf_y": 122.5,
@@ -15401,14 +15413,14 @@
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000491",
     "pdf_x_end": 389.0,
+    "party": "SKOJ",
     "birth_place": "Luščani, Petrinja",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
     "death_type": "poginuo",
     "death_date": "07.06.1943",
-    "rank": "borac",
     "death_place": "u kanjonu Pive, kod Čokove Luke",
-    "party": "SKOJ"
+    "rank": "borac"
   },
   {
     "last_name": "Miljević",
@@ -16819,7 +16831,8 @@
     "death_type": "umro",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "death_place": "Vojvodina"
+    "death_place": "Vojvodina",
+    "death_after_war": true
   },
   {
     "last_name": "Nežević",
@@ -17772,10 +17785,10 @@
   {
     "last_name": "Paripović",
     "middle_name": "Sime",
-    "first_name": "Pe",
+    "first_name": "Petar",
     "fathers_name": "Simo",
-    "full_name": "Paripović Sime Pe",
-    "additional_info": "zvani Par; borac, rođen 1903, Mali Gradac, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo u Miljevini 14. juna 1943. godine.",
+    "full_name": "Paripović Sime Petar",
+    "additional_info": "borac, rođen 1903, Mali Gradac, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo u Miljevini 14. juna 1943. godine.",
     "birth_year": "1903",
     "pdf_page": 29,
     "pdf_y": 37.0,
@@ -20381,7 +20394,7 @@
       "death": [
         {
           "date": "04.1943",
-          "place": "u Hercegovini poslije"
+          "place": "u Hercegovini"
         }
       ]
     }
@@ -21750,7 +21763,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "komandir voda",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_after_war": true
   },
   {
     "last_name": "Stojić",
@@ -25007,6 +25021,7 @@
     "death_type": "umro",
     "rank": "borac",
     "party": "KPJ",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0040020878",
@@ -36099,11 +36114,11 @@
     "pdf_x_end": 341.1
   },
   {
-    "last_name": "Levihis",
-    "middle_name": "",
-    "first_name": "Ak",
+    "last_name": "Levi",
+    "middle_name": "H.",
+    "first_name": "Isak",
     "fathers_name": "",
-    "full_name": "Levihis Ak",
+    "full_name": "Levi H. Isak",
     "additional_info": "star 23 godine, Sarajevo, Jevrejin, radnik — bravar, u NOVJ od 1943, borac. Poginuo 1945. kod Bihaća.",
     "birth_year": "",
     "pdf_page": 32,

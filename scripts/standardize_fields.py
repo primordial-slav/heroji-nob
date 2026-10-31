@@ -105,9 +105,18 @@ def captured(s: dict) -> dict | None:
 AFTER_WAR = re.compile(r'(?:po\s+osvoboditvi|po\s+vojni|posle\s+rata|poslije\s+rata|nakon\s+rata|po\s+vojnoj)\.?', re.I)
 
 
+# the death's own sentence says so where no date is given: "Umro u Zagrebu posle rata", "poginuo na Golniku posle
+# oslobođenja" (2026-10-31: the place of death keeps the place alone, tidy_death_place)
+AFTER_WAR_DEATH = re.compile(r'\b(?:umro|umrla|poginuo|poginula|stradao|stradala)\b[^.;]{0,60}?\b(?:neposredno\s+)?'
+                             r'(?:posle|poslije|nakon)\s+(?:rata|oslobođenja|oslobođenju)\b', re.I)
+
+
 def after_war(s: dict) -> dict | None:
     if AFTER_WAR.fullmatch((s.get('death_date') or '').strip()):
         return {'death_date': None, 'death_after_war': True}
+    if not s.get('death_date') and not s.get('death_after_war') and s.get('death_type') \
+            and any(AFTER_WAR_DEATH.search(t) for t in texts_of(s)):
+        return {'death_after_war': True}
     return None
 
 

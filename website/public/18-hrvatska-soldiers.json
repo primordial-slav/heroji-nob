@@ -1848,7 +1848,7 @@
     "fathers_name": "Pašan",
     "full_name": "Avdić Pašana Ibrahim",
     "additional_info": "rođen 1943. godine u Bijeljini, SRBiH, Musliman, radnik mehaničar-limar, stupio u Brigadu 1. 11. 1944. godine u 1. četu 3. bataljona kao borac, ratni vojni invalid.",
-    "birth_year": "1943",
+    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 477.1,
     "pdf_x": 127.2,
@@ -19540,7 +19540,8 @@
     "occupation": "domaćica",
     "death_type": "umro",
     "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon"
+    "unit_detail": "1. četa, 2. bataljon",
+    "death_after_war": true
   },
   {
     "last_name": "Kovačević",
@@ -30201,12 +30202,7 @@
         "pdf_y_end": 85.3,
         "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
-    ],
-    "variants": {
-      "born": [
-        "1933"
-      ]
-    }
+    ]
   },
   {
     "last_name": "Novalić",
@@ -43338,9 +43334,10 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "death_type": "umro",
-    "death_place": "u Husinu poslije oslobođenja",
+    "death_place": "u Husinu",
     "rank": "borac",
-    "unit_detail": "3. bataljon, intendantura"
+    "unit_detail": "3. bataljon, intendantura",
+    "death_after_war": true
   },
   {
     "last_name": "Tomić",
@@ -49310,12 +49307,12 @@
     "unit_detail": "1. četa, 1. bataljon"
   },
   {
-    "last_name": "Šalj",
-    "middle_name": "",
-    "first_name": "Av",
-    "fathers_name": "",
-    "full_name": "Šalj Av",
-    "additional_info": "esela ĆERIM. roden 1920. god. u selu G. Stanofce, Vučitrn, SAP Kosovo. Albanac, zemljoradnik, u NOB-u stupio 21. 11. 1944. godine, a u Brigadu 15. 3. 1945. godine u 3. četu, 2. bataljona, borac, mitraljezac. Poginuo 16. aprila 1945. godine na Crvenim stijenama, Romanija.",
+    "last_name": "Šalja",
+    "middle_name": "Vesela",
+    "first_name": "Ćerim",
+    "fathers_name": "Vesel",
+    "full_name": "Šalja Vesela Ćerim",
+    "additional_info": "roden 1920. god. u selu G. Stanofce, Vučitrn, SAP Kosovo. Albanac, zemljoradnik, u NOB-u stupio 21. 11. 1944. godine, a u Brigadu 15. 3. 1945. godine u 3. četu, 2. bataljona, borac, mitraljezac. Poginuo 16. aprila 1945. godine na Crvenim stijenama, Romanija.",
     "birth_year": "1920",
     "pdf_page": 99,
     "pdf_y": 135.4,
@@ -49325,14 +49322,14 @@
     "soldier_id": "0052001688",
     "pdf_x_end": 453.5,
     "pdf_x_left": 99.5,
+    "birth_place": "G. Stanofce, Vučitrn",
     "ethnicity": "Albanac",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "16.04.1945",
     "death_place": "na Crvenim stijenama, Romanija",
     "rank": "mitraljezac",
-    "unit_detail": "2. bataljon",
-    "birth_place": "G. Stanofce, Vučitrn"
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Šapić",

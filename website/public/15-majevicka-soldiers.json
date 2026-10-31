@@ -2269,7 +2269,8 @@
         "pdf_y_end": 323.1,
         "pdf_x_end": 365.6
       }
-    ]
+    ],
+    "death_after_war": true
   },
   {
     "last_name": "Drapić",
@@ -2527,7 +2528,7 @@
     ],
     "death_type": "streljan",
     "death_date": "1944",
-    "death_place": "kod Vinkovaca Odlikovan Ordenom narodnog heroja",
+    "death_place": "kod Vinkovaca",
     "party": "KPJ 1933",
     "birth_date": "04.05.1912"
   },
@@ -3149,7 +3150,8 @@
     "occupation": "radnik",
     "death_type": "umro",
     "rank": "zamenik komandira čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_after_war": true
   },
   {
     "last_name": "Ilić",
@@ -5244,7 +5246,8 @@
     "death_type": "umro",
     "death_date": "23.11.1994",
     "death_place": "Sarajevo",
-    "party": "SKOJ 1940, KPJ 1941"
+    "party": "SKOJ 1940, KPJ 1941",
+    "occupation": "studentkinja medicine"
   },
   {
     "last_name": "Kraus",
@@ -9722,7 +9725,8 @@
         "unit_file": "macvanski-odred-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_after_war": true
   },
   {
     "last_name": "Petrović",
@@ -12319,7 +12323,8 @@
         "pdf_y_end": 107.2,
         "pdf_x_end": 387.4
       }
-    ]
+    ],
+    "death_after_war": true
   },
   {
     "last_name": "Spasojević",
@@ -14398,6 +14403,7 @@
     "rank": "puškomitraljezac",
     "unit_detail": "3. četa, 2. bataljon",
     "death_place": "Lukićevo",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0023001714",
@@ -14483,12 +14489,12 @@
     "party": "KPJ"
   },
   {
-    "last_name": "Vasi",
+    "last_name": "Vasiljević",
     "middle_name": "",
-    "first_name": "Ue",
+    "first_name": "Jovan",
     "fathers_name": "",
-    "full_name": "Vasi Ue",
-    "additional_info": "zvani Vić Jovan; borac, rođen u Crkvinama, Bosanski Samac, zemljoradnik, Srbin, u NOB od 1942. godine, umro od tifusa u Centralnoj bolnici u toku bitke na Sutjesci.",
+    "full_name": "Vasiljević Jovan",
+    "additional_info": "borac, rođen u Crkvinama, Bosanski Samac, zemljoradnik, Srbin, u NOB od 1942. godine, umro od tifusa u Centralnoj bolnici u toku bitke na Sutjesci.",
     "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 252.7,
@@ -14498,10 +14504,10 @@
     "soldier_id": "0049000448",
     "pdf_x_end": 408.1,
     "birth_place": "Crkvina, Bosanski Samac",
+    "death_place": "u Centralnoj bolnici u toku bitke na Sutjesci",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "death_place": "u Centralnoj bolnici u toku bitke na Sutjesci",
     "rank": "borac"
   },
   {
@@ -15020,7 +15026,8 @@
     "ethnicity": "Srbin",
     "occupation": "radnik",
     "death_type": "umro",
-    "rank": "borac"
+    "rank": "borac",
+    "death_after_war": true
   },
   {
     "last_name": "Vojnović",
@@ -27271,6 +27278,7 @@
     "rank": "bolničarka",
     "death_type": "umro",
     "party": "KPJ 1944",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0044000365",
@@ -34538,7 +34546,8 @@
     "death_type": "umro",
     "rank": "borac",
     "pdf_x_end": 397.1,
-    "death_place": "Samarevac"
+    "death_place": "Samarevac",
+    "death_after_war": true
   },
   {
     "last_name": "Milutinović",
@@ -34602,6 +34611,7 @@
     "rank": "borac",
     "pdf_x_end": 393.9,
     "death_type": "umro",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0110001338",
@@ -35892,7 +35902,8 @@
     "death_type": "umro",
     "rank": "borac",
     "pdf_x_end": 396.9,
-    "death_place": "Pelagićevo"
+    "death_place": "Pelagićevo",
+    "death_after_war": true
   },
   {
     "last_name": "Mrkonjić",
@@ -46784,11 +46795,11 @@
     "pdf_x_end": 394.8
   },
   {
-    "last_name": "Sr",
+    "last_name": "Rolović",
     "middle_name": "Crna",
-    "first_name": "Gora",
+    "first_name": "Vladimir",
     "fathers_name": "Crna",
-    "full_name": "Sr Crna Gora",
+    "full_name": "Rolović Crna Vladimir",
     "additional_info": "student prava, član KPJ od početka 1936. Smrtno ranjen 7. aprila 1971. od grupe ustaša terorista kao ambasador SFRJ u Švedskoj, a osam dana kasnije podlegao ranama. Za narodnog heroja proglašen 9. aprila 1971.",
     "birth_year": "",
     "pdf_page": 1,
@@ -46800,8 +46811,8 @@
     "occupation": "student prava",
     "death_type": "umro",
     "pdf_x_end": 401.7,
-    "death_date": "09.04.1971",
-    "death_place": "Za narodnog heroja proglašen",
+    "death_date": "15.04.1971",
+    "death_place": "Štokholm",
     "party": "KPJ 1936"
   },
   {
@@ -47870,7 +47881,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 395.1
+    "pdf_x_end": 395.1,
+    "death_after_war": true
   },
   {
     "last_name": "Stefanović",
@@ -47935,7 +47947,8 @@
     "death_type": "umro",
     "rank": "komesar čete",
     "pdf_x_end": 398.6,
-    "death_place": "Lopare"
+    "death_place": "Lopare",
+    "death_after_war": true
   },
   {
     "last_name": "Stefanović",
@@ -55498,9 +55511,9 @@
   {
     "last_name": "Šehović",
     "middle_name": "Ibrahima",
-    "first_name": "\"šačir",
+    "first_name": "Šačir",
     "fathers_name": "Ibrahim",
-    "full_name": "Šehović Ibrahima \"šačir",
+    "full_name": "Šehović Ibrahima Šačir",
     "additional_info": "1925, Mrkonjić-Grad, SRBiH, Musliman, đak, u NOB od 1942, u brigadi od 1943, omladinski rukovodilac bataljona. Poginuo 3. 8.1944. godine.",
     "birth_year": "1925",
     "pdf_page": 62,

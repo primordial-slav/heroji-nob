@@ -124,10 +124,39 @@ SPLITS = {
     'toplicki-odred-soldiers.json': {'0093000075': [('RATOMIR VUKAŠINOVIĆ JANIĆIJE', 'Vukašinović', '', '', 'Ratomir', 'Janićije')]},
     'treca-proleterska-soldiers.json': {'0005010459': [('KOSOVIK GAVRO', 'Kosović', '', '', 'Gavro', '')]},
 }
+# the second batch (2026-10-31): the field checks' glued headings (scripts/check_fields.py, glued), read from the
+# records and the pages; python scripts/split_glued_entries.py --batch=2026-10-31 --range=LO-HI [--write]
+SPLITS_2026_10_31 = {
+    'prva-proleterska-soldiers.json': {
+        '0001400149': [('ĆEKO STANKO', 'Ćeko', '', '', 'Stanko', '')],
+        '0001401054': [('ŠUBIĆ TONKO', 'Šubić', '', '', 'Tonko', '')],
+        '0001500429': [('FRANIĆ JURE IVAN', 'Franić', 'Jure', 'Jure', 'Ivan', '')],
+        '0001500469': [('GOCIĆ SVETOZARA ŽIVORAD', 'Gocić', 'Svetozara', 'Svetozar', 'Živorad', '')],
+        '0001500845': [('KOČAŠEVIĆ RADOSAV', 'Kočašević', '', '', 'Radosav', '')],
+        '0001500931': [('KOVAČEVIĆ ĆETNA „ĆANA"', 'Kovačević', '', '', 'Ćetna', 'Ćana')],
+        '0001501583': [('PERVAN KLADNIČANIN Omera ŠEFIKA', 'Pervan-Kladničanin', 'Omera', 'Omer', 'Šefika', '')],
+        '0001501645': [('OBRADOVIĆ MIRKO', 'Obradović', '', '', 'Mirko', '')],
+        '0001501648': [('OMEROVIĆ SULEJMAN—CAR', 'Omerović', '', '', 'Sulejman', 'Car')],
+        '0001502480': [('VRČIĆ PAŠE FRANJO', 'Vrčić', 'Paše', '', 'Franjo', '')],
+        '0001502498': [('VUJOŠEVIĆ RADOMIR LJAKA', 'Vujošević', '', '', 'Radomir', 'Ljaka')],
+        '0001502705': [('BAJA JOŽE', 'Baja', '', '', 'Jože', '')],
+        '0001600013': [('JUŠKOVIĆ NOVAK', 'Jušković', '', '', 'Novak', ''),
+                       ('KALEMBER BOZO', 'Kalember', '', '', 'Božo', ''),
+                       ('KORAC MILOŠ', 'Korać', '', '', 'Miloš', ''),
+                       ('KRSTONOŠIC ALEKSANDRA NANICA', 'Krstonošić', 'Aleksandra', 'Aleksandar', 'Nanica', '')],
+    },
+    '3-krajiska-proleterska-soldiers.json': {
+        '0010202606': [('LUKIČIĆ (Stojana STEVAN', 'Lukičić', 'Stojana', 'Stojan', 'Stevan', '')],
+    },
+    '4-srpska-soldiers.json': {
+        '0021001902': [('(KRA)GUJEVIĆ (IS)IDOR', 'Kragujević', '', '', 'Isidor', '')],
+        '0021003397': [('(NI)KOLIĆ RADOMIR', 'Nikolić', '', '', 'Radomir', '')],
+    },
+}
 # what a heading's own words leave in the man's text: the name's rest up to the bio
 NAME_TAIL = re.compile(r'^\s*(?:\((?:VESIN|Rajšić)\)\s*)?(?:MILKA\s*)?')
 # page furniture glued in between: a list's title, an entry's number, a speck
-JUNK = [r'\s*AESTE DALMATINSKE BRIGADE LI BORCI$', r'\s*PREŽIVJELI BO \(na dan 15\.$', r'\s*[:•«]\s*\d{1,3}\.$',
+JUNK = [r'\s*AESTE DALMATINSKE BRIGADE LI BORCI$', r'\s*PREŽIVJELI BO \(na dan 15\.$', r'\s*[:•«■]\s*\d{1,3}\.$',
         r'\s*-i\.$', r'\s*I$', r'\s*N E M C I :$']
 
 
@@ -192,7 +221,9 @@ def main():
     nid = max([c['id'] for c in corr if lo <= c['id'] <= hi] + [lo - 1]) + 1
     taken = {c.get('new_id') for c in corr if c['action'] == 'add'}
     new = []
-    for unit_file, hosts in SPLITS.items():
+    second = '--batch=2026-10-31' in sys.argv
+    reason = R.replace('2026-10-17', '2026-10-31') if second else R
+    for unit_file, hosts in (SPLITS_2026_10_31 if second else SPLITS).items():
         recs = json.load(open(ROOT / 'website' / 'public' / unit_file, encoding='utf-8'))
         code = recs[0]['soldier_id'][:4]
         used = {s['soldier_id'] for s in recs} | {o.get('soldier_id') for s in recs for o in s.get('other_sources', ())} | taken
@@ -210,13 +241,13 @@ def main():
                 assert i > 0, (hid, heading)
                 pos.append(i)
             new.append({'action': 'edit', 'soldier_id': hid, 'fields': {'additional_info': cleaned(info[:pos[0]])},
-                        'reason': f"{host.get('full_name') or host.get('name')}: the next entries were glued into its text; {R}"})
+                        'reason': f"{host.get('full_name') or host.get('name')}: the next entries were glued into its text; {reason}"})
             after = (host['pdf_page'], host['pdf_x'], host['pdf_y'], 'host')
             # the glued men take ids in the host's list's block, from 9001 (0053000195 -> 0053009001-)
             block = int(hid[4:]) // 10000 * 10000
             for k, (heading, last, fgen, fnom, given, nick) in enumerate(men):
                 body = info[pos[k] + len(heading):(pos[k + 1] if k + 1 < len(men) else len(info))]
-                body = cleaned(NAME_TAIL.sub('', body).lstrip(' ,'))
+                body = cleaned(NAME_TAIL.sub('', body).lstrip(' ,.' if second else ' ,'))
                 if heading == 'STIMEC FRANJO':
                     body = re.sub(r'^Matije,\s*', '', body)
                 if nick:
@@ -232,7 +263,7 @@ def main():
                 used.add(new_id)
                 new.append({'action': 'add', 'soldier_id': keeper['soldier_id'], 'new_id': new_id, 'record': rec,
                             'reason': f"{last} {fgen + ' ' if fgen else ''}{given}: glued into the entry of "
-                                      f"{host.get('full_name') or host.get('name')}; {R}"})
+                                      f"{host.get('full_name') or host.get('name')}; {reason}"})
                 print(new_id, last, fgen, given, nick, f"p{order[0]} x{x} y{y}", '|', body[:70])
     for i, c in enumerate(new):
         c['id'] = nid + i

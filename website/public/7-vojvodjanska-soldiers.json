@@ -1070,7 +1070,8 @@
     "birth_place": "Bečej",
     "death_type": "umro",
     "rank": "mlađi vodnik",
-    "pdf_x_end": 365.2
+    "pdf_x_end": 365.2,
+    "death_after_war": true
   },
   {
     "last_name": "Aradski",
@@ -3030,7 +3031,8 @@
     "birth_place": "Gospođinci",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 363.7
+    "pdf_x_end": 363.7,
+    "death_after_war": true
   },
   {
     "last_name": "Banjac",
@@ -5887,25 +5889,20 @@
     "soldier_id": "0022000288",
     "birth_place": "Padina",
     "rank": "borac",
-    "pdf_x_end": 299.1
-  },
-  {
-    "last_name": "Boboš",
-    "middle_name": "",
-    "first_name": "Paljo",
-    "fathers_name": "",
-    "full_name": "Boboš Paljo",
-    "additional_info": "1923, Padina, decembra 1944, borac.",
-    "birth_year": "1923",
-    "pdf_page": 13,
-    "pdf_y": 203.0,
-    "pdf_x": 65.3,
-    "pdf_y_end": 213.0,
-    "pdf_file": "7-vojvodjanska.pdf",
-    "soldier_id": "0022000289",
-    "birth_place": "Padina",
-    "rank": "borac",
-    "pdf_x_end": 299.2
+    "pdf_x_end": 299.1,
+    "other_sources": [
+      {
+        "soldier_id": "0022000289",
+        "name": "Boboš Paljo",
+        "additional_info": "1923, Padina, decembra 1944, borac.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 65.3,
+        "pdf_y": 203.0,
+        "pdf_x_end": 299.2,
+        "pdf_y_end": 213.0
+      }
+    ]
   },
   {
     "last_name": "Bobček",
@@ -7814,7 +7811,8 @@
     "birth_place": "St. Sivac",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 352.2
+    "pdf_x_end": 352.2,
+    "death_after_war": true
   },
   {
     "last_name": "Brankov",
@@ -7971,7 +7969,8 @@
     "birth_place": "Bačko Petrovo Selo",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 353.0
+    "pdf_x_end": 353.0,
+    "death_after_war": true
   },
   {
     "last_name": "Brančić",
@@ -8423,7 +8422,7 @@
     "soldier_id": "0022000411",
     "birth_place": "Stepanovo, St. Bečej",
     "death_type": "umro",
-    "death_place": "u Somboru posle ranjavanja na Batini",
+    "death_place": "u Somboru",
     "rank": "komandir čete",
     "pdf_x_end": 366.0
   },
@@ -8828,7 +8827,8 @@
     "birth_place": "Gospođinci",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 351.4
+    "pdf_x_end": 351.4,
+    "death_after_war": true
   },
   {
     "last_name": "Bukin",
@@ -10026,7 +10026,8 @@
     "birth_place": "Sombor",
     "death_type": "umro",
     "rank": "komesar čete",
-    "pdf_x_end": 373.8
+    "pdf_x_end": 373.8,
+    "death_after_war": true
   },
   {
     "last_name": "Cindrin",
@@ -10977,7 +10978,8 @@
     "soldier_id": "0022000544",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 345.9
+    "pdf_x_end": 345.9,
+    "death_after_war": true
   },
   {
     "last_name": "Dejić",
@@ -14650,7 +14652,8 @@
     "birth_place": "Sot, Šid",
     "death_type": "umro",
     "rank": "komesar čete",
-    "pdf_x_end": 359.0
+    "pdf_x_end": 359.0,
+    "death_after_war": true
   },
   {
     "last_name": "Gabert",
@@ -18754,25 +18757,20 @@
     "soldier_id": "0022000932",
     "birth_place": "Kovačica",
     "rank": "borac",
-    "pdf_x_end": 293.7
-  },
-  {
-    "last_name": "Holik",
-    "middle_name": "",
-    "first_name": "Pavel",
-    "fathers_name": "",
-    "full_name": "Holik Pavel",
-    "additional_info": "1915, Kovačica, 6.12.1944, borac.",
-    "birth_year": "1915",
-    "pdf_page": 140,
-    "pdf_y": 56.2,
-    "pdf_x": 86.3,
-    "pdf_y_end": 66.2,
-    "pdf_file": "7-vojvodjanska.pdf",
-    "soldier_id": "0022000933",
-    "birth_place": "Kovačica",
-    "rank": "borac",
-    "pdf_x_end": 313.5
+    "pdf_x_end": 293.7,
+    "other_sources": [
+      {
+        "soldier_id": "0022000933",
+        "name": "Holik Pavel",
+        "additional_info": "1915, Kovačica, 6.12.1944, borac.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 140,
+        "pdf_x": 86.3,
+        "pdf_y": 56.2,
+        "pdf_x_end": 313.5,
+        "pdf_y_end": 66.2
+      }
+    ]
   },
   {
     "last_name": "Hophovac",
@@ -27069,55 +27067,7 @@
         "pdf_x": 63.6,
         "pdf_y": 52.9,
         "pdf_x_end": 346.5,
-        "pdf_y_end": 72.3,
-        "unit_file": "7-vojvodjanska-soldiers.json"
-      },
-      {
-        "soldier_id": "0111000234",
-        "name": "Kobači Mihajla Josip",
-        "additional_info": "rođ. 1926, Beočin, borac, pog. novembra 1944, Batina.",
-        "pdf_file": "51-divizija.pdf",
-        "pdf_page": 10,
-        "pdf_x": 295.4,
-        "pdf_y": 464.6,
-        "pdf_x_end": 571.8,
-        "pdf_y_end": 483.2,
-        "unit_file": "51-divizija-soldiers.json"
-      }
-    ]
-  },
-  {
-    "last_name": "Kobači",
-    "middle_name": "M",
-    "first_name": "Josip",
-    "fathers_name": "M",
-    "full_name": "Kobači M Josip",
-    "additional_info": "1926, Beočin, borac, pog. novembra 1944, Batina.",
-    "birth_year": "1926",
-    "pdf_page": 61,
-    "pdf_y": 52.9,
-    "pdf_x": 63.6,
-    "pdf_y_end": 72.3,
-    "pdf_file": "7-vojvodjanska.pdf",
-    "soldier_id": "0022001320",
-    "birth_place": "Beočin",
-    "rank": "borac",
-    "pdf_x_end": 346.5,
-    "death_type": "poginuo",
-    "death_date": "11.1944",
-    "death_place": "Batina",
-    "other_sources": [
-      {
-        "soldier_id": "0022001319",
-        "name": "Kobači M Josip",
-        "additional_info": "1926, Beočin, borac, pog. novembra 1944, Batina.",
-        "pdf_file": "7-vojvodjanska.pdf",
-        "pdf_page": 60,
-        "pdf_x": 87.1,
-        "pdf_y": 472.0,
-        "pdf_x_end": 369.8,
-        "pdf_y_end": 490.6,
-        "unit_file": "7-vojvodjanska-soldiers.json"
+        "pdf_y_end": 72.3
       },
       {
         "soldier_id": "0111000234",
@@ -29198,7 +29148,8 @@
     "soldier_id": "0022001417",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 345.8
+    "pdf_x_end": 345.8,
+    "death_after_war": true
   },
   {
     "last_name": "Kovačević",
@@ -32231,25 +32182,20 @@
     "soldier_id": "0022001559",
     "birth_place": "Beodra",
     "rank": "borac",
-    "pdf_x_end": 227.5
-  },
-  {
-    "last_name": "Labad",
-    "middle_name": "",
-    "first_name": "Josip",
-    "fathers_name": "",
-    "full_name": "Labad Josip",
-    "additional_info": "1912, Beodra, borac.",
-    "birth_year": "1912",
-    "pdf_page": 71,
-    "pdf_y": 92.2,
-    "pdf_x": 67.1,
-    "pdf_y_end": 102.2,
-    "pdf_file": "7-vojvodjanska.pdf",
-    "soldier_id": "0022001560",
-    "birth_place": "Beodra",
-    "rank": "borac",
-    "pdf_x_end": 228.6
+    "pdf_x_end": 227.5,
+    "other_sources": [
+      {
+        "soldier_id": "0022001560",
+        "name": "Labad Josip",
+        "additional_info": "1912, Beodra, borac.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 71,
+        "pdf_x": 67.1,
+        "pdf_y": 92.2,
+        "pdf_x_end": 228.6,
+        "pdf_y_end": 102.2
+      }
+    ]
   },
   {
     "last_name": "Labakov",
@@ -39003,7 +38949,8 @@
     "soldier_id": "0022001885",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 347.3
+    "pdf_x_end": 347.3,
+    "death_after_war": true
   },
   {
     "last_name": "Milanov",
@@ -39929,7 +39876,8 @@
     "birth_place": "Sremska Rača",
     "death_type": "umro",
     "rank": "komandant bataljona",
-    "pdf_x_end": 349.7
+    "pdf_x_end": 349.7,
+    "death_after_war": true
   },
   {
     "last_name": "Milošev",
@@ -40435,7 +40383,8 @@
     "birth_place": "Gospoćinci",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 356.3
+    "pdf_x_end": 356.3,
+    "death_after_war": true
   },
   {
     "last_name": "Mirkov",
@@ -44182,7 +44131,8 @@
     "birth_place": "Gospođinci",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 355.7
+    "pdf_x_end": 355.7,
+    "death_after_war": true
   },
   {
     "last_name": "Nulum",
@@ -45029,7 +44979,8 @@
     "soldier_id": "0022002174",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 369.6
+    "pdf_x_end": 369.6,
+    "death_after_war": true
   },
   {
     "last_name": "Ostojić",
@@ -46712,7 +46663,8 @@
     "birth_place": "St. Sivac",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 368.7
+    "pdf_x_end": 368.7,
+    "death_after_war": true
   },
   {
     "last_name": "Pavkov",
@@ -47756,7 +47708,8 @@
     "birth_place": "St. Sivac",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 354.3
+    "pdf_x_end": 354.3,
+    "death_after_war": true
   },
   {
     "last_name": "Pejić",
@@ -48802,6 +48755,7 @@
     "pdf_x_end": 351.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0018001276",
@@ -49843,7 +49797,8 @@
     "birth_place": "Gospođinci",
     "death_type": "umro",
     "rank": "komandir voda",
-    "pdf_x_end": 358.7
+    "pdf_x_end": 358.7,
+    "death_after_war": true
   },
   {
     "last_name": "Popadić",
@@ -49952,7 +49907,8 @@
     "birth_place": "Žabalj",
     "death_type": "umro",
     "rank": "vodnik",
-    "pdf_x_end": 358.1
+    "pdf_x_end": 358.1,
+    "death_after_war": true
   },
   {
     "last_name": "Popov",
@@ -51073,7 +51029,8 @@
     "birth_place": "Novi Sad",
     "death_type": "umro",
     "rank": "vodnik",
-    "pdf_x_end": 371.1
+    "pdf_x_end": 371.1,
+    "death_after_war": true
   },
   {
     "last_name": "Prokić",
@@ -55286,7 +55243,8 @@
     "birth_place": "Gospođinci",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 353.0
+    "pdf_x_end": 353.0,
+    "death_after_war": true
   },
   {
     "last_name": "Sabo",
@@ -56142,7 +56100,8 @@
     "soldier_id": "0022002710",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 342.3
+    "pdf_x_end": 342.3,
+    "death_after_war": true
   },
   {
     "last_name": "Savić",
@@ -56349,7 +56308,8 @@
     "birth_place": "Čurug",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 359.4
+    "pdf_x_end": 359.4,
+    "death_after_war": true
   },
   {
     "last_name": "Seblačec",
@@ -56687,7 +56647,8 @@
     "birth_place": "Gospođinci",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 360.8
+    "pdf_x_end": 360.8,
+    "death_after_war": true
   },
   {
     "last_name": "Seman",
@@ -60797,7 +60758,8 @@
     "soldier_id": "0022002930",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 357.3
+    "pdf_x_end": 357.3,
+    "death_after_war": true
   },
   {
     "last_name": "Subotić",
@@ -60890,7 +60852,8 @@
     "birth_place": "Stari Bečej",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 357.4
+    "pdf_x_end": 357.4,
+    "death_after_war": true
   },
   {
     "last_name": "Sudan",
@@ -64893,7 +64856,8 @@
     "soldier_id": "0022003134",
     "birth_place": "Kovačica",
     "death_type": "umro",
-    "pdf_x_end": 349.6
+    "pdf_x_end": 349.6,
+    "death_after_war": true
   },
   {
     "last_name": "Varga",
@@ -65245,6 +65209,7 @@
     "rank": "pomoćnik komesara čete",
     "pdf_x_end": 351.2,
     "death_place": "Adolfovac",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "9027000823",
@@ -65257,10 +65222,8 @@
     ],
     "ethnicity": "Srpkinja",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1945"
+    ]
   },
   {
     "last_name": "Velimirov",
@@ -65575,7 +65538,8 @@
     "birth_place": "St. Sivac",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 353.4
+    "pdf_x_end": 353.4,
+    "death_after_war": true
   },
   {
     "last_name": "Veselčin",
@@ -67635,7 +67599,8 @@
     "soldier_id": "0022003263",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 366.1
+    "pdf_x_end": 366.1,
+    "death_after_war": true
   },
   {
     "last_name": "Vujkov",
@@ -70813,7 +70778,8 @@
     "soldier_id": "0022003419",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 376.5
+    "pdf_x_end": 376.5,
+    "death_after_war": true
   },
   {
     "last_name": "Čiplin",

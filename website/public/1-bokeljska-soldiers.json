@@ -3688,7 +3688,6 @@
     "fathers_name": "F",
     "full_name": "Lučić F Jovo",
     "additional_info": "1. bataljon, rođen u selu Lučići — Herceg-Novi, poginuo u Drenici 10. 9. 1945. godine.",
-    "birth_year": "1925",
     "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 283.0,
@@ -3755,6 +3754,7 @@
       }
     ],
     "rank": "borac",
+    "birth_year": "1925",
     "borrowed": [
       "birth_year",
       "ethnicity"
@@ -5947,7 +5947,6 @@
     "fathers_name": "O",
     "full_name": "Pejanović O Staniša",
     "additional_info": "2. bataljon, rođen u Vlaškoj — Topola, poginuo u Vijencima 8. 1. 1945. godine.",
-    "birth_year": "1904",
     "death_type": "poginuo",
     "pdf_page": 5,
     "pdf_y": 501.6,
@@ -5994,7 +5993,8 @@
     "borrowed": [
       "birth_year",
       "ethnicity"
-    ]
+    ],
+    "birth_year": "1904"
   },
   {
     "last_name": "Perović",
@@ -6741,7 +6741,6 @@
     "fathers_name": "D",
     "full_name": "Radović D Jovo",
     "additional_info": "1. bataljon, rođen u Kruševicama — Herceg-Novi, poginuo kod Kotora 30. 10. 1944. godine.",
-    "birth_year": "1925",
     "death_type": "poginuo",
     "pdf_page": 6,
     "pdf_y": 174.6,
@@ -6800,6 +6799,7 @@
       }
     ],
     "rank": "vodnik",
+    "birth_year": "1925",
     "borrowed": [
       "birth_year",
       "ethnicity"
@@ -8937,7 +8937,6 @@
     "fathers_name": "N",
     "full_name": "Čeprnjić N Gojko",
     "additional_info": "1. bataljon, rođen u Sutorini — Hercg-Novi, poginuo u Drenici 10. 9. 1945. godine.",
-    "birth_year": "1924",
     "death_type": "poginuo",
     "pdf_page": 7,
     "pdf_y": 210.5,
@@ -8984,6 +8983,7 @@
       }
     ],
     "rank": "komandir čete",
+    "birth_year": "1924",
     "borrowed": [
       "birth_year"
     ]
@@ -20403,25 +20403,20 @@
     "pdf_x_end": 437.8,
     "soldier_id": "0102010614",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Gopčević",
-    "middle_name": "K",
-    "first_name": "Drago",
-    "fathers_name": "K",
-    "full_name": "Gopčević K Drago",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 588.0,
-    "pdf_x": 295.9,
-    "pdf_y_end": 597.6,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 434.4,
-    "soldier_id": "0102010615",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102010615",
+        "name": "Gopčević K Drago",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 588.0,
+        "pdf_x_end": 434.4,
+        "pdf_y_end": 597.6
+      }
+    ]
   },
   {
     "last_name": "Goravica",
@@ -30445,25 +30440,20 @@
     "pdf_x_end": 431.8,
     "soldier_id": "0102011202",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Lepetić",
-    "middle_name": "L",
-    "first_name": "Todor",
-    "fathers_name": "L",
-    "full_name": "Lepetić L Todor",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 536.8,
-    "pdf_x": 296.2,
-    "pdf_y_end": 546.0,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 428.2,
-    "soldier_id": "0102011203",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102011203",
+        "name": "Lepetić L Todor",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 296.2,
+        "pdf_y": 536.8,
+        "pdf_x_end": 428.2,
+        "pdf_y_end": 546.0
+      }
+    ]
   },
   {
     "last_name": "Lepetić",
@@ -31325,25 +31315,20 @@
     "pdf_x_end": 424.6,
     "soldier_id": "0102011251",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Lučev",
-    "middle_name": "A",
-    "first_name": "Ivan",
-    "fathers_name": "A",
-    "full_name": "Lučev A Ivan",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 542.8,
-    "pdf_x": 295.9,
-    "pdf_y_end": 552.3,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 420.8,
-    "soldier_id": "0102011252",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102011252",
+        "name": "Lučev A Ivan",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 542.8,
+        "pdf_x_end": 420.8,
+        "pdf_y_end": 552.3
+      }
+    ]
   },
   {
     "last_name": "Lučev",
@@ -33208,25 +33193,20 @@
     "pdf_x_end": 263.6,
     "soldier_id": "0102011364",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Marković",
-    "middle_name": "M",
-    "first_name": "Kosto",
-    "fathers_name": "M",
-    "full_name": "Marković M Kosto",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 632.8,
-    "pdf_x": 295.9,
-    "pdf_y_end": 642.3,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 435.2,
-    "soldier_id": "0102011365",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102011365",
+        "name": "Marković M Kosto",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 632.8,
+        "pdf_x_end": 435.2,
+        "pdf_y_end": 642.3
+      }
+    ]
   },
   {
     "last_name": "Marković",
@@ -35784,25 +35764,20 @@
     "pdf_x_end": 442.1,
     "soldier_id": "0102011523",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Miljević",
-    "middle_name": "I",
-    "first_name": "Zvonimir",
-    "fathers_name": "I",
-    "full_name": "Miljević I Zvonimir",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 556.0,
-    "pdf_x": 296.2,
-    "pdf_y_end": 565.2,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 440.7,
-    "soldier_id": "0102011524",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102011524",
+        "name": "Miljević I Zvonimir",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 296.2,
+        "pdf_y": 556.0,
+        "pdf_x_end": 440.7,
+        "pdf_y_end": 565.2
+      }
+    ]
   },
   {
     "last_name": "Milosavić",
@@ -41142,25 +41117,20 @@
     "pdf_x_end": 450.3,
     "soldier_id": "0102011835",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Pavlović",
-    "middle_name": "M",
-    "first_name": "Vaso",
-    "fathers_name": "M",
-    "full_name": "Pavlović M Vaso",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 620.4,
-    "pdf_x": 295.9,
-    "pdf_y_end": 629.3,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 429.9,
-    "soldier_id": "0102011836",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102011836",
+        "name": "Pavlović M Vaso",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 620.4,
+        "pdf_x_end": 429.9,
+        "pdf_y_end": 629.3
+      }
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -41860,25 +41830,20 @@
     "pdf_x_end": 245.8,
     "soldier_id": "0102011877",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Perović",
-    "middle_name": "B",
-    "first_name": "Mihailo",
-    "fathers_name": "B",
-    "full_name": "Perović B Mihailo",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 19,
-    "pdf_y": 552.2,
-    "pdf_x": 316.3,
-    "pdf_y_end": 562.4,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 454.8,
-    "soldier_id": "0102011878",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102011878",
+        "name": "Perović B Mihailo",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 19,
+        "pdf_x": 316.3,
+        "pdf_y": 552.2,
+        "pdf_x_end": 454.8,
+        "pdf_y_end": 562.4
+      }
+    ]
   },
   {
     "last_name": "Perović",
@@ -54475,25 +54440,20 @@
     "pdf_x_end": 431.6,
     "soldier_id": "0102012603",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Terzović",
-    "middle_name": "T",
-    "first_name": "Pero",
-    "fathers_name": "T",
-    "full_name": "Terzović T Pero",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 658.8,
-    "pdf_x": 295.7,
-    "pdf_y_end": 668.2,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 427.2,
-    "soldier_id": "0102012604",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102012604",
+        "name": "Terzović T Pero",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.7,
+        "pdf_y": 658.8,
+        "pdf_x_end": 427.2,
+        "pdf_y_end": 668.2
+      }
+    ]
   },
   {
     "last_name": "Tikvica",
@@ -58985,25 +58945,20 @@
     "pdf_x_end": 432.8,
     "soldier_id": "0102012860",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Vuković",
-    "middle_name": "J",
-    "first_name": "Mitar",
-    "fathers_name": "J",
-    "full_name": "Vuković J Mitar",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 575.0,
-    "pdf_x": 295.9,
-    "pdf_y_end": 584.4,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 428.9,
-    "soldier_id": "0102012861",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102012861",
+        "name": "Vuković J Mitar",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 575.0,
+        "pdf_x_end": 428.9,
+        "pdf_y_end": 584.4
+      }
+    ]
   },
   {
     "last_name": "Vuković",
@@ -60011,25 +59966,20 @@
     "pdf_x_end": 435.9,
     "soldier_id": "0102012920",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Vučković",
-    "middle_name": "J",
-    "first_name": "Špiro",
-    "fathers_name": "J",
-    "full_name": "Vučković J Špiro",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 548.8,
-    "pdf_x": 295.9,
-    "pdf_y_end": 558.8,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 431.8,
-    "soldier_id": "0102012921",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102012921",
+        "name": "Vučković J Špiro",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 548.8,
+        "pdf_x_end": 431.8,
+        "pdf_y_end": 558.8
+      }
+    ]
   },
   {
     "last_name": "Vučurović",
@@ -60882,25 +60832,20 @@
     "pdf_x_end": 456.3,
     "soldier_id": "0102012972",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Zloković",
-    "middle_name": "D",
-    "first_name": "Božidar",
-    "fathers_name": "D",
-    "full_name": "Zloković D Božidar",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 19,
-    "pdf_y": 545.7,
-    "pdf_x": 316.3,
-    "pdf_y_end": 555.6,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 458.4,
-    "soldier_id": "0102012973",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102012973",
+        "name": "Zloković D Božidar",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 19,
+        "pdf_x": 316.3,
+        "pdf_y": 545.7,
+        "pdf_x_end": 458.4,
+        "pdf_y_end": 555.6
+      }
+    ]
   },
   {
     "last_name": "Zloković",
@@ -64450,25 +64395,20 @@
     "pdf_x_end": 427.2,
     "soldier_id": "0102013178",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Šerović",
-    "middle_name": "S",
-    "first_name": "Milo",
-    "fathers_name": "S",
-    "full_name": "Šerović S Milo",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 665.0,
-    "pdf_x": 295.9,
-    "pdf_y_end": 674.7,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 423.6,
-    "soldier_id": "0102013179",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102013179",
+        "name": "Šerović S Milo",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.9,
+        "pdf_y": 665.0,
+        "pdf_x_end": 423.6,
+        "pdf_y_end": 674.7
+      }
+    ]
   },
   {
     "last_name": "Šerović",
@@ -65384,25 +65324,20 @@
     "pdf_x_end": 430.4,
     "soldier_id": "0102013234",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
-  },
-  {
-    "last_name": "Želalić",
-    "middle_name": "J",
-    "first_name": "Mirko",
-    "fathers_name": "J",
-    "full_name": "Želalić J Mirko",
-    "additional_info": "4. bataljon: borac",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 671.2,
-    "pdf_x": 295.7,
-    "pdf_y_end": 681.4,
-    "pdf_file": "1-bokeljska-spisak.pdf",
-    "pdf_x_end": 426.0,
-    "soldier_id": "0102013235",
-    "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0102013235",
+        "name": "Želalić J Mirko",
+        "additional_info": "4. bataljon: borac",
+        "pdf_file": "1-bokeljska-spisak.pdf",
+        "pdf_page": 20,
+        "pdf_x": 295.7,
+        "pdf_y": 671.2,
+        "pdf_x_end": 426.0,
+        "pdf_y_end": 681.4
+      }
+    ]
   },
   {
     "last_name": "Želalić",

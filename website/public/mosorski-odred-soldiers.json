@@ -14027,7 +14027,8 @@
     "ethnicity": "Hrvatica",
     "death_type": "umro",
     "unit_detail": "1. bataljon, prateća četa",
-    "rank": "kurir"
+    "rank": "kurir",
+    "occupation": "trgovkinja"
   },
   {
     "last_name": "Buljević",
@@ -55792,7 +55793,7 @@
     "pdf_x_left": 258.0,
     "birth_place": "Zrnovnica, Split",
     "death_type": "umro",
-    "death_place": "Zeleni Brijeg nakon povratka iz Njemačkog logora",
+    "death_place": "Zeleni Brijeg",
     "rank": "borac",
     "unit_detail": "1. bataljon"
   },
@@ -63182,7 +63183,7 @@
     "occupation": "stolar",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "kod Ljubljane na povratku iz logora",
+    "death_place": "kod Ljubljane",
     "rank": "borac",
     "party": "KPJ"
   },
@@ -63478,6 +63479,7 @@
     "birth_place": "Sarajevo",
     "ethnicity": "Jevrejka",
     "rank": "referent saniteta bataljona",
+    "occupation": "trgovkinja",
     "birth_date": "18.02.1903"
   },
   {
@@ -69606,6 +69608,7 @@
     "rank": "komandir čete",
     "death_type": "umro",
     "party": "SKOJ",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0001009717",
@@ -69986,22 +69989,6 @@
     "birth_date": "12.04.1911"
   },
   {
-    "last_name": "Pos",
-    "middle_name": "",
-    "first_name": "Ranjen",
-    "fathers_name": "",
-    "full_name": "Pos Ranjen",
-    "additional_info": "1943. u borbi kod Prosike, Dicmo.",
-    "birth_year": "1943",
-    "pdf_page": 191,
-    "pdf_y": 420.4,
-    "pdf_x": 252.7,
-    "pdf_y_end": 428.4,
-    "pdf_file": "mosorski-odred.pdf",
-    "soldier_id": "0148002328",
-    "pdf_x_end": 446.0
-  },
-  {
     "last_name": "Posavec",
     "middle_name": "Jakova",
     "first_name": "Ante",
@@ -70286,7 +70273,7 @@
     "occupation": "mehaničar",
     "death_type": "poginuo",
     "death_date": "22.05.1942",
-    "death_place": "u Šibenku {suđen i strijeljan od talijanskog vojnog suda)",
+    "death_place": "u Šibenku {suđen i strijeljan od talijanskog vojnog suda",
     "rank": "borac",
     "party": "KPJ",
     "other_sources": [
@@ -75006,7 +74993,7 @@
     "fathers_name": "Mijo",
     "full_name": "Rogulj Mije Jozo",
     "additional_info": "borac Mosorskog PO. Rođen u Dicmu, Sinj, zemljoradnik, Hrvat, U Mosorski PO stupio listopada 1944, a zatim prekomandiran u 4. dalmatinsku (splitsku) brigadu.",
-    "birth_year": "1944",
+    "birth_year": "",
     "pdf_page": 161,
     "pdf_y": 608.0,
     "pdf_x": 274.2,
@@ -81899,7 +81886,7 @@
     "fathers_name": "Duje",
     "full_name": "Svilan-Peović Duje Dinka",
     "additional_info": "zamjenik referenta saniteta bataljona u Mosorskom PO. Rođena 12. 8. 1920, Žedno, Trogir, domaćica, Hrvatica, član SKOJ-a. U Mosorski PO stupila u listopadu 1943. i u prosincu upućena u sastav 9. dalmatinske divizije. Rođena u travnju 1944. u borbi kod Gračaca.",
-    "birth_year": "1944",
+    "birth_year": "1920",
     "pdf_page": 174,
     "pdf_y": 570.9,
     "pdf_x": 242.6,
@@ -81924,7 +81911,8 @@
         "pdf_y_end": 461.2
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_date": "12.08.1920"
   },
   {
     "last_name": "Svirac",
@@ -83589,10 +83577,10 @@
   {
     "last_name": "Tomaš",
     "middle_name": "Ivana",
-    "first_name": "Branim]r-Branko",
+    "first_name": "Branimir",
     "fathers_name": "Ivan",
-    "full_name": "Tomaš Ivana Branim]r-Branko",
-    "additional_info": "intendant Mosorskog bataljona (Ljubićev). Rođen 2. 10. 1920, Krilo-Jesenice, Omiš, radnik, Hrvat, član KPJ od 1941. U Mosorski bataljon došao U. veljače 1943. u čijem se sastavu nalazio do ožujka kada je postavljen na dužnost intendanta Cetinskog PO. Umro.",
+    "full_name": "Tomaš Ivana Branimir",
+    "additional_info": "zvani Branko; intendant Mosorskog bataljona (Ljubićev). Rođen 2. 10. 1920, Krilo-Jesenice, Omiš, radnik, Hrvat, član KPJ od 1941. U Mosorski bataljon došao U. veljače 1943. u čijem se sastavu nalazio do ožujka kada je postavljen na dužnost intendanta Cetinskog PO. Umro.",
     "birth_year": "1920",
     "pdf_page": 185,
     "pdf_y": 698.5,
@@ -83602,11 +83590,6 @@
     "soldier_id": "0148002797",
     "pdf_x_end": 615.5,
     "pdf_x_left": 257.7,
-    "birth_place": "Krilo-Jesenice, Omiš",
-    "ethnicity": "Hrvat",
-    "occupation": "radnik",
-    "death_type": "umro",
-    "rank": "intendant",
     "other_sources": [
       {
         "soldier_id": "0148020367",
@@ -83621,6 +83604,11 @@
       }
     ],
     "party": "KPJ 1941",
+    "birth_place": "Krilo-Jesenice, Omiš",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "death_type": "umro",
+    "rank": "intendant",
     "birth_date": "02.10.1920"
   },
   {
@@ -86136,7 +86124,7 @@
     "pdf_page": 191,
     "pdf_y": 385.9,
     "pdf_x": 269.8,
-    "pdf_y_end": 419.8,
+    "pdf_y_end": 428.4,
     "pdf_file": "mosorski-odred.pdf",
     "soldier_id": "0148002889",
     "pdf_x_end": 611.0,
@@ -87621,7 +87609,7 @@
     "fathers_name": "",
     "full_name": "Viličić Vardar",
     "additional_info": "borac Letećeg mosorskog voda. Rođen u Omišu TJ Mosorski vod stupio početkom rujna 1942. i krajem istog mjeseca upućen u Stab 4. operativne zone.",
-    "birth_year": "1942",
+    "birth_year": "",
     "pdf_page": 194,
     "pdf_y": 648.1,
     "pdf_x": 242.4,
@@ -100232,7 +100220,7 @@
     "occupation": "tvornički radnik",
     "death_type": "umro",
     "death_date": "20.04.1942",
-    "death_place": "kod Gata na povratku za Omiš nakon privremenog raspusta I mosorskog PO",
+    "death_place": "kod Gata",
     "rank": "borac",
     "party": "KPJ"
   },
@@ -102462,7 +102450,7 @@
     "occupation": "radnik",
     "death_type": "streljan",
     "death_date": "30.08.1942",
-    "death_place": "u Šibeniku nakon osude talijanskog fašističkog suda",
+    "death_place": "u Šibeniku",
     "rank": "borac",
     "pdf_x_end": 602.8,
     "pdf_x_left": 244.4,

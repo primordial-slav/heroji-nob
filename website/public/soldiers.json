@@ -2835,6 +2835,7 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Gračanica",
     "pdf_x_end": 464.0,
+    "occupation": "činovnica",
     "birth_date": "30.03.1907"
   },
   {
@@ -47836,11 +47837,11 @@
   {
     "soldier_id": "0002002037",
     "last_name": "Đurković",
-    "middle_name": "Dragoj",
-    "first_name": "lo",
+    "middle_name": "",
+    "first_name": "Dragojlo",
     "additional_info": "1923, 2. četa, 3. bataljon",
-    "fathers_name": "Dragoj",
-    "full_name": "Đurković Dragoj lo",
+    "fathers_name": "",
+    "full_name": "Đurković Dragojlo",
     "birth_year": "1923",
     "pdf_page": 632,
     "pdf_y": 174.9,
@@ -185669,7 +185670,7 @@
     "fathers_name": "",
     "full_name": "Stanić Petar",
     "additional_info": "1943, prvi informativni oficir brigade",
-    "birth_year": "1943",
+    "birth_year": "",
     "pdf_file": "prva-licka-proleterska.pdf",
     "pdf_page": 851,
     "pdf_y": 578.5,
@@ -201183,6 +201184,7 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Beograd",
     "pdf_x_end": 460.7,
+    "occupation": "studentkinja",
     "birth_date": "16.05.1914"
   },
   {
@@ -204059,6 +204061,7 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Beograd",
     "pdf_x_end": 460.6,
+    "occupation": "činovnica",
     "birth_date": "27.02.1927"
   },
   {
@@ -218594,25 +218597,20 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Ripanj, Beograd",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 361.0
-  },
-  {
-    "soldier_id": "0002009432",
-    "last_name": "Vuković",
-    "middle_name": "",
-    "first_name": "Slobodan",
-    "additional_info": "1926, Ripanj, Beograd, 1. bataljon",
-    "fathers_name": "",
-    "full_name": "Vuković Slobodan",
-    "birth_year": "1926",
-    "pdf_page": 905,
-    "pdf_y": 574.6,
-    "pdf_x": 120.5,
-    "pdf_y_end": 584.1,
-    "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Ripanj, Beograd",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 361.0
+    "pdf_x_end": 361.0,
+    "other_sources": [
+      {
+        "soldier_id": "0002009432",
+        "name": "Vuković Slobodan",
+        "additional_info": "1926, Ripanj, Beograd, 1. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 905,
+        "pdf_x": 120.5,
+        "pdf_y": 574.6,
+        "pdf_x_end": 361.0,
+        "pdf_y_end": 584.1
+      }
+    ]
   },
   {
     "soldier_id": "0002009433",
@@ -221671,7 +221669,8 @@
     "birth_place": "Zavlaka",
     "birth_year": "",
     "pdf_x_end": 401.6,
-    "death_place": "Apatin"
+    "death_place": "Apatin",
+    "death_after_war": true
   },
   {
     "soldier_id": "0002009565",
@@ -222773,6 +222772,7 @@
     "death_type": "umro",
     "birth_year": "",
     "death_place": "Apatin",
+    "death_after_war": true,
     "pdf_x_end": 473.5,
     "pdf_y_end": 422.6
   },

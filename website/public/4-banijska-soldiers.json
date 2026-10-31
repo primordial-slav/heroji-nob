@@ -2090,7 +2090,8 @@
     "soldier_id": "0020000104",
     "birth_place": "Velikoj Solni (Glina)",
     "death_type": "umro",
-    "pdf_x_end": 370.1
+    "pdf_x_end": 370.1,
+    "death_after_war": true
   },
   {
     "last_name": "Barić",
@@ -2565,7 +2566,8 @@
     "soldier_id": "0020000126",
     "birth_place": "Begovići (Petrinja)",
     "death_type": "umro",
-    "pdf_x_end": 379.3
+    "pdf_x_end": 379.3,
+    "death_after_war": true
   },
   {
     "last_name": "Bejić",
@@ -4007,7 +4009,8 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000193",
     "death_type": "umro",
-    "pdf_x_end": 206.4
+    "pdf_x_end": 206.4,
+    "death_after_war": true
   },
   {
     "last_name": "Borković",
@@ -12337,7 +12340,8 @@
     "birth_place": "Rujevac (Dvor na Uni)",
     "death_type": "umro",
     "pdf_x_end": 379.7,
-    "death_place": "Rujevac"
+    "death_place": "Rujevac",
+    "death_after_war": true
   },
   {
     "last_name": "Janjanin",
@@ -12356,7 +12360,8 @@
     "birth_place": "Rujevac (Dvor na Uni)",
     "death_type": "umro",
     "pdf_x_end": 368.5,
-    "death_place": "Rujevac"
+    "death_place": "Rujevac",
+    "death_after_war": true
   },
   {
     "last_name": "Janjanin",
@@ -15902,7 +15907,8 @@
     "soldier_id": "0020000805",
     "birth_place": "Donjem Selištu (Glina)",
     "death_type": "umro",
-    "pdf_x_end": 382.1
+    "pdf_x_end": 382.1,
+    "death_after_war": true
   },
   {
     "last_name": "Klokov",
@@ -16723,6 +16729,7 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "umro",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0047000219",
@@ -16804,24 +16811,20 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000852",
     "birth_place": "Bulatovci (Zvornik)",
-    "pdf_x_end": 311.4
-  },
-  {
-    "last_name": "Krajnović",
-    "middle_name": "",
-    "first_name": "Suljo",
-    "fathers_name": "",
-    "full_name": "Krajnović Suljo",
-    "additional_info": "rođen 1926. u Bulatovcima (Zvornik).",
-    "birth_year": "1926",
-    "pdf_page": 24,
-    "pdf_y": 99.7,
-    "pdf_x": 67.8,
-    "pdf_y_end": 107.7,
-    "pdf_file": "4-banijska.pdf",
-    "soldier_id": "0020000853",
-    "birth_place": "Bulatovci (Zvornik)",
-    "pdf_x_end": 322.4
+    "pdf_x_end": 311.4,
+    "other_sources": [
+      {
+        "soldier_id": "0020000853",
+        "name": "Krajnović Suljo",
+        "additional_info": "rođen 1926. u Bulatovcima (Zvornik).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 67.8,
+        "pdf_y": 99.7,
+        "pdf_x_end": 322.4,
+        "pdf_y_end": 107.7
+      }
+    ]
   },
   {
     "last_name": "Kraljić",
@@ -17217,24 +17220,20 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000873",
     "birth_place": "Ivanjska (Otoka)",
-    "pdf_x_end": 309.3
-  },
-  {
-    "last_name": "Krneta",
-    "middle_name": "Mile",
-    "first_name": "Milovan",
-    "fathers_name": "Mile",
-    "full_name": "Krneta Mile Milovan",
-    "additional_info": "rođen 1922. u Ivanjskoj (Otoka).",
-    "birth_year": "1922",
-    "pdf_page": 24,
-    "pdf_y": 234.4,
-    "pdf_x": 68.1,
-    "pdf_y_end": 242.4,
-    "pdf_file": "4-banijska.pdf",
-    "soldier_id": "0020000874",
-    "birth_place": "Ivanjska (Otoka)",
-    "pdf_x_end": 319.6
+    "pdf_x_end": 309.3,
+    "other_sources": [
+      {
+        "soldier_id": "0020000874",
+        "name": "Krneta Mile Milovan",
+        "additional_info": "rođen 1922. u Ivanjskoj (Otoka).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 68.1,
+        "pdf_y": 234.4,
+        "pdf_x_end": 319.6,
+        "pdf_y_end": 242.4
+      }
+    ]
   },
   {
     "last_name": "Krneta",
@@ -17251,24 +17250,20 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000875",
     "birth_place": "Ivanjska (Otoka)",
-    "pdf_x_end": 293.5
-  },
-  {
-    "last_name": "Krneta",
-    "middle_name": "Mile",
-    "first_name": "Mirko",
-    "fathers_name": "Mile",
-    "full_name": "Krneta Mile Mirko",
-    "additional_info": "rođen 1924. u Ivanjskoj (Otoka).",
-    "birth_year": "1924",
-    "pdf_page": 24,
-    "pdf_y": 243.0,
-    "pdf_x": 68.3,
-    "pdf_y_end": 251.0,
-    "pdf_file": "4-banijska.pdf",
-    "soldier_id": "0020000876",
-    "birth_place": "Ivanjska (Otoka)",
-    "pdf_x_end": 310.0
+    "pdf_x_end": 293.5,
+    "other_sources": [
+      {
+        "soldier_id": "0020000876",
+        "name": "Krneta Mile Mirko",
+        "additional_info": "rođen 1924. u Ivanjskoj (Otoka).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 68.3,
+        "pdf_y": 243.0,
+        "pdf_x_end": 310.0,
+        "pdf_y_end": 251.0
+      }
+    ]
   },
   {
     "last_name": "Krnetić",
@@ -17285,24 +17280,20 @@
     "pdf_file": "4-banijska.pdf",
     "soldier_id": "0020000877",
     "birth_place": "Banjani (Otoka)",
-    "pdf_x_end": 316.3
-  },
-  {
-    "last_name": "Krnetić",
-    "middle_name": "Vase",
-    "first_name": "Stojan",
-    "fathers_name": "Vaso",
-    "full_name": "Krnetić Vase Stojan",
-    "additional_info": "rođen 1925. u Banjanima (Otoka).",
-    "birth_year": "1925",
-    "pdf_page": 24,
-    "pdf_y": 217.1,
-    "pdf_x": 68.1,
-    "pdf_y_end": 225.1,
-    "pdf_file": "4-banijska.pdf",
-    "soldier_id": "0020000878",
-    "birth_place": "Banjani (Otoka)",
-    "pdf_x_end": 323.2
+    "pdf_x_end": 316.3,
+    "other_sources": [
+      {
+        "soldier_id": "0020000878",
+        "name": "Krnetić Vase Stojan",
+        "additional_info": "rođen 1925. u Banjanima (Otoka).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 68.1,
+        "pdf_y": 217.1,
+        "pdf_x_end": 323.2,
+        "pdf_y_end": 225.1
+      }
+    ]
   },
   {
     "last_name": "Krnetić",
@@ -17367,7 +17358,8 @@
         "pdf_x_end": 374.0,
         "pdf_y_end": 268.3
       }
-    ]
+    ],
+    "death_after_war": true
   },
   {
     "last_name": "Krnjaja",
@@ -17879,7 +17871,8 @@
     "soldier_id": "0020000909",
     "birth_place": "Panjani (Kostajnica)",
     "death_type": "umro",
-    "pdf_x_end": 340.2
+    "pdf_x_end": 340.2,
+    "death_after_war": true
   },
   {
     "last_name": "Kukić",
@@ -21120,6 +21113,7 @@
     "occupation": "zemljoradnik",
     "death_place": "Rujevac",
     "party": "SKOJ",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0045000372",
@@ -25823,7 +25817,6 @@
     "fathers_name": "",
     "full_name": "Peškir Stevo",
     "additional_info": "rođen u Moštanici (Petrinja), poginuo 1945. u Pokoju (Bihać).",
-    "birth_year": "1903",
     "pdf_page": 33,
     "pdf_y": 454.3,
     "pdf_x": 59.6,
@@ -25857,7 +25850,8 @@
     "borrowed": [
       "birth_year",
       "ethnicity"
-    ]
+    ],
+    "birth_year": "1903"
   },
   {
     "last_name": "Pešut",
@@ -26021,7 +26015,8 @@
     "soldier_id": "0020001332",
     "birth_place": "Dumače",
     "death_type": "umro",
-    "pdf_x_end": 292.9
+    "pdf_x_end": 292.9,
+    "death_after_war": true
   },
   {
     "last_name": "Pleša",
@@ -28151,7 +28146,8 @@
     "soldier_id": "0020001446",
     "birth_place": "Ilovčak",
     "death_type": "umro",
-    "pdf_x_end": 314.4
+    "pdf_x_end": 314.4,
+    "death_after_war": true
   },
   {
     "last_name": "Radošević",
@@ -31097,7 +31093,8 @@
     "soldier_id": "0020001592",
     "birth_place": "Nebojan",
     "death_type": "umro",
-    "pdf_x_end": 307.2
+    "pdf_x_end": 307.2,
+    "death_after_war": true
   },
   {
     "last_name": "Srdić",
@@ -31633,7 +31630,8 @@
     "soldier_id": "0020001620",
     "birth_place": "Glavici (Otoka)",
     "death_type": "umro",
-    "pdf_x_end": 380.2
+    "pdf_x_end": 380.2,
+    "death_after_war": true
   },
   {
     "last_name": "Stojisavljević",
@@ -31900,7 +31898,8 @@
     "soldier_id": "0020001632",
     "birth_place": "Veljun",
     "death_type": "umro",
-    "pdf_x_end": 290.9
+    "pdf_x_end": 290.9,
+    "death_after_war": true
   },
   {
     "last_name": "Stojković",
@@ -33030,7 +33029,8 @@
     "soldier_id": "0020001691",
     "birth_place": "Dumače",
     "death_type": "umro",
-    "pdf_x_end": 314.5
+    "pdf_x_end": 314.5,
+    "death_after_war": true
   },
   {
     "last_name": "Tarabić",
@@ -38203,7 +38203,8 @@
     "soldier_id": "0020001950",
     "birth_place": "Ljeskovac (Dvor na Uni)",
     "death_type": "umro",
-    "pdf_x_end": 380.9
+    "pdf_x_end": 380.9,
+    "death_after_war": true
   },
   {
     "last_name": "Zuber",
@@ -38258,7 +38259,8 @@
     "soldier_id": "0020001953",
     "birth_place": "Ljeskovac (Dvor na Uni)",
     "death_type": "umro",
-    "pdf_x_end": 380.8
+    "pdf_x_end": 380.8,
+    "death_after_war": true
   },
   {
     "last_name": "Zuber",
@@ -38276,7 +38278,8 @@
     "soldier_id": "0020001954",
     "birth_place": "Ljeskovac (Dvor na Uni)",
     "death_type": "umro",
-    "pdf_x_end": 381.3
+    "pdf_x_end": 381.3,
+    "death_after_war": true
   },
   {
     "last_name": "Zuber",
@@ -40079,9 +40082,9 @@
   {
     "last_name": "Šerbula",
     "middle_name": "",
-    "first_name": "BpZO",
+    "first_name": "Božo",
     "fathers_name": "",
-    "full_name": "Šerbula BpZO",
+    "full_name": "Šerbula Božo",
     "additional_info": "rođen 1924. u Kosni (Dvor na Uni), umro 1970.",
     "birth_year": "1924",
     "pdf_page": 42,

@@ -4119,7 +4119,8 @@
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
     "pdf_x_end": 394.9,
-    "pdf_x_left": 113.5
+    "pdf_x_left": 113.5,
+    "death_after_war": true
   },
   {
     "last_name": "Bošnjački",
@@ -7563,7 +7564,8 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 388.1,
-    "pdf_x_left": 107.5
+    "pdf_x_left": 107.5,
+    "death_after_war": true
   },
   {
     "last_name": "Erdeljan",
@@ -16108,11 +16110,11 @@
   },
   {
     "last_name": "Krstić",
-    "middle_name": "",
-    "first_name": "Ji",
+    "middle_name": "L.",
+    "first_name": "Đorđe",
     "fathers_name": "",
-    "full_name": "Krstić Ji",
-    "additional_info": "ĐORĐE, rođen 1923, Divoš, Srbin, stupio u NOVJ 1943 (nema drugih podataka).",
+    "full_name": "Krstić L. Đorđe",
+    "additional_info": "rođen 1923, Divoš, Srbin, stupio u NOVJ 1943 (nema drugih podataka).",
     "birth_year": "1923",
     "pdf_page": 60,
     "pdf_y": 95.2,
@@ -18430,7 +18432,8 @@
     "occupation": "domaćica",
     "rank": "bolničarka",
     "pdf_x_end": 390.7,
-    "pdf_x_left": 109.7
+    "pdf_x_left": 109.7,
+    "death_after_war": true
   },
   {
     "last_name": "Maljković",
@@ -19097,9 +19100,10 @@
     "birth_place": "Višnjićevo, Šid",
     "ethnicity": "Srbin",
     "death_type": "umro",
-    "death_place": "u Vi šnjićevu posle rata",
+    "death_place": "u Vi šnjićevu",
     "pdf_x_end": 364.9,
-    "pdf_x_left": 83.4
+    "pdf_x_left": 83.4,
+    "death_after_war": true
   },
   {
     "last_name": "Marić",
@@ -19996,7 +20000,8 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 362.4,
-    "pdf_x_left": 81.6
+    "pdf_x_left": 81.6,
+    "death_after_war": true
   },
   {
     "last_name": "Matijević",
@@ -23025,6 +23030,7 @@
     "pdf_x_end": 374.0,
     "pdf_x_left": 92.9,
     "death_place": "Bosut",
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "9027007902",
@@ -23422,7 +23428,8 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 379.0,
-    "pdf_x_left": 97.9
+    "pdf_x_left": 97.9,
+    "death_after_war": true
   },
   {
     "last_name": "Mitrović",
@@ -26693,11 +26700,28 @@
         "pdf_x_end": 207.5,
         "pdf_y_end": 580.5,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001509007",
+        "name": "Omerović Sulejman",
+        "additional_info": "zvani Car; rođen 1921, Maglaj, Tuzla, SRBiH, učenik šerijetske gimnazije, član SKOJ-a, u NOB od 1941, poginuo 1945. kod Našica, potpukovnik JA, narodni heroj.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 7,
+        "pdf_x": 141.6,
+        "pdf_y": 585.7,
+        "pdf_x_end": 498.0,
+        "pdf_y_end": 610.9,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "death_place": "kod Našica . u čišćenju terena od ostataka ustaških jedinica",
     "party": "SKOJ 1941, KPJ 1942",
-    "birth_date": "08.05.1923"
+    "birth_date": "08.05.1923",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Omorac",
@@ -28938,6 +28962,7 @@
     "rank": "komesar bataljona",
     "pdf_x_end": 371.5,
     "pdf_x_left": 90.1,
+    "death_after_war": true,
     "other_sources": [
       {
         "soldier_id": "0022002354",
@@ -31138,7 +31163,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "pdf_x_end": 370.6,
-    "pdf_x_left": 89.2
+    "pdf_x_left": 89.2,
+    "death_after_war": true
   },
   {
     "last_name": "Radin",
@@ -41856,7 +41882,8 @@
     "death_type": "umro",
     "rank": "borac",
     "pdf_x_end": 371.7,
-    "pdf_x_left": 91.5
+    "pdf_x_left": 91.5,
+    "death_after_war": true
   },
   {
     "last_name": "Vojin",
@@ -42543,7 +42570,8 @@
     "occupation": "domaćica",
     "rank": "borac",
     "pdf_x_end": 369.5,
-    "pdf_x_left": 87.7
+    "pdf_x_left": 87.7,
+    "death_after_war": true
   },
   {
     "last_name": "Vračar",
@@ -43685,7 +43713,7 @@
       {
         "soldier_id": "0057003741",
         "name": "Vuković S Todor",
-        "additional_info": "rođen 1907. Irig, zemljoradnkk, borac, poginuo 24. 9. 1943. u Bijeljini-",
+        "additional_info": "rođen 1907. Irig, zemljoradnkk, borac, poginuo 24. 9. 1943. u Bijeljini",
         "pdf_file": "3-vojvodjanska.pdf",
         "pdf_page": 41,
         "pdf_x": 53.0,
@@ -44939,7 +44967,8 @@
     "birth_place": "Klenak",
     "rank": "borac",
     "pdf_x_end": 365.7,
-    "pdf_x_left": 85.6
+    "pdf_x_left": 85.6,
+    "death_after_war": true
   },
   {
     "last_name": "Čarubrić",
@@ -46193,7 +46222,8 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 360.8,
-    "pdf_x_left": 80.6
+    "pdf_x_left": 80.6,
+    "death_after_war": true
   },
   {
     "last_name": "Đurišić",
@@ -46894,7 +46924,8 @@
     "occupation": "domaćica",
     "rank": "borac",
     "pdf_x_end": 384.7,
-    "pdf_x_left": 103.6
+    "pdf_x_left": 103.6,
+    "death_after_war": true
   },
   {
     "last_name": "Šaran",
@@ -47532,10 +47563,10 @@
   {
     "last_name": "Šulaja",
     "middle_name": "",
-    "first_name": "Ur",
+    "first_name": "Uroš",
     "fathers_name": "",
-    "full_name": "Šulaja Ur",
-    "additional_info": "01C, rođen 1911, Srbin, zemljoradnik, stupio u NOVJ 1944, vodnik.",
+    "full_name": "Šulaja Uroš",
+    "additional_info": "rođen 1911, Srbin, zemljoradnik, stupio u NOVJ 1944, vodnik.",
     "birth_year": "1911",
     "pdf_page": 135,
     "pdf_y": 253.0,
@@ -47543,11 +47574,11 @@
     "pdf_y_end": 269.8,
     "pdf_file": "2-vojvodjanska.pdf",
     "soldier_id": "0018002082",
+    "pdf_x_end": 393.4,
+    "pdf_x_left": 112.0,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "vodnik",
-    "pdf_x_end": 393.4,
-    "pdf_x_left": 112.0
+    "rank": "vodnik"
   },
   {
     "last_name": "Šuljaj",
