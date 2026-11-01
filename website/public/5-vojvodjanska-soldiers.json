@@ -3369,7 +3369,21 @@
     "pdf_file": "5-vojvodjanska.pdf",
     "birth_place": "Laćarak, Sremska Mitrovica",
     "soldier_id": "0082000138",
-    "pdf_x_end": 351.3
+    "pdf_x_end": 351.3,
+    "other_sources": [
+      {
+        "soldier_id": "0018000060",
+        "name": "Badanjac Draginja",
+        "additional_info": "Laćarak (psma drugih podataka).",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 137.9,
+        "pdf_y": 246.5,
+        "pdf_x_end": 397.8,
+        "pdf_y_end": 254.0,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bajac",
@@ -5260,7 +5274,25 @@
     "birth_place": "Brestač, Ruma",
     "soldier_id": "0082000229",
     "rank": "borac",
-    "pdf_x_end": 349.1
+    "pdf_x_end": 349.1,
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0076000057",
+        "name": "Belić Svetozara Branko",
+        "additional_info": "zemljoradnik, rođen u Brestaču (Srem), u NOB od 1943, borac",
+        "pdf_file": "4-vojvodjanska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 82.2,
+        "pdf_y": 81.6,
+        "pdf_x_end": 361.2,
+        "pdf_y_end": 96.4,
+        "unit_file": "4-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Belić",
@@ -9462,7 +9494,26 @@
     "soldier_id": "0082000418",
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
-    "pdf_x_end": 376.6
+    "pdf_x_end": 376.6,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0018000197",
+        "name": "Brebanović Žika",
+        "additional_info": "rođen u Obrežu, Srbin, zemljoradnik, stupio u NOVJ 1942, borac.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 111.6,
+        "pdf_y": 92.3,
+        "pdf_x_end": 371.3,
+        "pdf_y_end": 108.8,
+        "pdf_x_left": 90.8,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brijak",
@@ -14545,6 +14596,18 @@
         "pdf_x_end": 401.8,
         "pdf_y_end": 571.1,
         "unit_file": "12-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0111010298",
+        "name": "Dragišić Stevan",
+        "additional_info": "Jankovac, poginuo 1945. na Bolmanu.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 48,
+        "pdf_x": 86.8,
+        "pdf_y": 456.6,
+        "pdf_x_end": 366.8,
+        "pdf_y_end": 465.1,
+        "unit_file": "51-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -18033,7 +18096,21 @@
     "death_date": "03.1945",
     "death_place": "kod Starog Bolmana",
     "rank": "borac",
-    "pdf_x_end": 384.6
+    "pdf_x_end": 384.6,
+    "other_sources": [
+      {
+        "soldier_id": "0075000557",
+        "name": "Glavinić Vase Sava",
+        "additional_info": "iz Omoljice.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 168.5,
+        "pdf_y": 223.7,
+        "pdf_x_end": 289.8,
+        "pdf_y_end": 232.2,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gleda",
@@ -20893,7 +20970,21 @@
     "birth_place": "Suho Polje, Virovitica",
     "soldier_id": "0082000943",
     "occupation": "mesar",
-    "pdf_x_end": 382.9
+    "pdf_x_end": 382.9,
+    "other_sources": [
+      {
+        "soldier_id": "9014011134",
+        "name": "Horvat Mirko",
+        "additional_info": "Poginuli borci Pete vojvođanske narodnooslobodilačke udarne brigade: 51. Horvat Mirko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 93,
+        "pdf_x": 225.7,
+        "pdf_y": 685.5,
+        "pdf_x_end": 287.3,
+        "pdf_y_end": 695.0,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Horvat",
@@ -23592,7 +23683,26 @@
     "death_date": "14.09.1944",
     "death_place": "Debelo brdo",
     "rank": "desetar",
-    "pdf_x_end": 346.4
+    "pdf_x_end": 346.4,
+    "other_sources": [
+      {
+        "soldier_id": "0057001148",
+        "name": "Janković J Andrija",
+        "additional_info": "rođen 1917. Neradin, Irig, zemljoradnik, borac, poginuo 1944. u istočnoj Bosni.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 78.8,
+        "pdf_y": 105.6,
+        "pdf_x_end": 359.8,
+        "pdf_y_end": 123.5,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -24540,7 +24650,21 @@
     "soldier_id": "0082001107",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 374.7
+    "pdf_x_end": 374.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014011143",
+        "name": "Jasika Mile",
+        "additional_info": "Poginuli borci Pete vojvođanske narodnooslobodilačke udarne brigade: 60. Jasika Mile.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 93,
+        "pdf_x": 359.0,
+        "pdf_y": 705.0,
+        "pdf_x_end": 415.1,
+        "pdf_y_end": 714.5,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Jašić",
@@ -25632,12 +25756,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1349",
         "source_page": 1349,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0110000639",
+        "name": "Jokić Stojadin",
+        "additional_info": "rođen 1920, Vlasanica, Vladimirci, zemljoradnik. Borac 4. bataljona do decembra 1941. Ponovo stupio u NOVJ oktobra 1944. Poginuo decembra 1944. na sremskom frontu.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 126,
+        "pdf_x": 95.3,
+        "pdf_y": 236.5,
+        "pdf_x_end": 376.7,
+        "pdf_y_end": 262.7,
+        "unit_file": "posavski-odred-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Jokić",
@@ -30649,7 +30790,30 @@
     "occupation": "radnik",
     "death_date": "11.08.1944",
     "rank": "borac",
-    "pdf_x_end": 380.5
+    "pdf_x_end": 380.5,
+    "death_place": "Romanija",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0057001396",
+        "name": "Karanov Nenad",
+        "additional_info": "rođen 1917. Bačknci, Šid, borac, poginuo 1944. na Romaniji.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 72.3,
+        "pdf_y": 295.5,
+        "pdf_x_end": 352.2,
+        "pdf_y_end": 313.4,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Karapandža",
@@ -36635,10 +36799,10 @@
   },
   {
     "last_name": "Krstić",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Miodrag",
-    "fathers_name": "",
-    "full_name": "Krstić Miodrag",
+    "fathers_name": "A",
+    "full_name": "Krstić A Miodrag",
     "additional_info": "1926, Vrdnik, Irig, đak, kurir, nestao 18. V 1944. u borbi na Jelici.",
     "birth_year": "1926",
     "death_type": "nestao",
@@ -36662,12 +36826,32 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=107",
         "source_page": 107,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0057001647",
+        "name": "Krstić A Miodrag",
+        "additional_info": "rođen 1926. Vrdnik, Irig, borac, poginuo 16. 4. 1944. kod Teočaka, istočna Bosna.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 50.2,
+        "pdf_y": 117.6,
+        "pdf_x_end": 330.9,
+        "pdf_y_end": 135.6,
+        "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.04.1944",
+          "place": "Teočak, istočna Bosna"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krstić",
@@ -53313,7 +53497,21 @@
     "soldier_id": "0082002391",
     "occupation": "zemljoradnik",
     "rank": "zamenik komandira čete",
-    "pdf_x_end": 351.9
+    "pdf_x_end": 351.9,
+    "other_sources": [
+      {
+        "soldier_id": "9014011214",
+        "name": "Nikolić Rajko",
+        "additional_info": "Poginuli borci Pete vojvođanske narodnooslobodilačke udarne brigade: 131. Nikolić Rajko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 94,
+        "pdf_x": 406.9,
+        "pdf_y": 380.0,
+        "pdf_x_end": 472.5,
+        "pdf_y_end": 389.5,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -53621,7 +53819,21 @@
     "soldier_id": "0082002404",
     "occupation": "zemljoradnik",
     "rank": "zamenik komandira čete",
-    "pdf_x_end": 376.0
+    "pdf_x_end": 376.0,
+    "other_sources": [
+      {
+        "soldier_id": "0009000911",
+        "name": "Ninković Todor Milanko",
+        "additional_info": "1916, Progar, zemljoradnik, komandir voda",
+        "pdf_file": "prva-vojvodjanska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 209.3,
+        "pdf_y": 211.7,
+        "pdf_x_end": 352.5,
+        "pdf_y_end": 239.2,
+        "unit_file": "prva-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ninković",
@@ -58736,7 +58948,26 @@
     "death_date": "1944",
     "rank": "komandir čete",
     "pdf_x_end": 358.5,
-    "death_place": "Istočna Bosna"
+    "death_place": "Istočna Bosna",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0018001251",
+        "name": "Petković Jovan",
+        "additional_info": "rođen u Deču, Srbin, zemljoradnik, stupio u NOVJ 1943, borac, poginuo 1944. kod Jablanice.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 93,
+        "pdf_x": 132.2,
+        "pdf_y": 154.1,
+        "pdf_x_end": 392.0,
+        "pdf_y_end": 170.5,
+        "pdf_x_left": 111.0,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petković",
@@ -61562,7 +61793,6 @@
     "fathers_name": "",
     "full_name": "Popov Branko",
     "additional_info": "borac, poginuo 4. VIII 1944. kod s. Kokošinac u istočnoj Bosni.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 109,
     "pdf_y": 310.0,
@@ -61573,7 +61803,25 @@
     "death_date": "04.08.1944",
     "death_place": "kod s. Kokošinac u istočnoj Bosni",
     "rank": "borac",
-    "pdf_x_end": 352.6
+    "pdf_x_end": 352.6,
+    "other_sources": [
+      {
+        "soldier_id": "9027006054",
+        "name": "Popov (Milutin) Branko",
+        "additional_info": "rođen 1922, Dobrinci (Ruma). Srbin, poginuo 1944. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=299",
+        "source_page": 299,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "birth_place": "Dobrinci, Ruma",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1922"
   },
   {
     "last_name": "Popov",
@@ -71668,10 +71916,10 @@
   },
   {
     "last_name": "Sokolović",
-    "middle_name": "",
+    "middle_name": "Dušana",
     "first_name": "Lazar",
-    "fathers_name": "",
-    "full_name": "Sokolović Lazar",
+    "fathers_name": "Dušan",
+    "full_name": "Sokolović Dušana Lazar",
     "additional_info": "1914, Kariovčić, Zemun, zemljoradnik, borac, poginuo 1944. u istočnoj Bosni.",
     "birth_year": "1914",
     "death_type": "poginuo",
@@ -71695,12 +71943,43 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=270",
         "source_page": 270,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0018001584",
+        "name": "Sokolović Dušana Lazar",
+        "additional_info": "rođen 1911. Karlovčić, Srbin, zezšBoradnik, stupio u NOVJ 1942, borac, poginuo 1944. u Srbiji.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 114,
+        "pdf_x": 106.0,
+        "pdf_y": 120.6,
+        "pdf_x_end": 366.5,
+        "pdf_y_end": 146.1,
+        "pdf_x_left": 84.4,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0042000598",
+        "name": "Sokolović Dušana Lazar",
+        "additional_info": "borac 2. bataljona, rođen 1912, Karlovčić, Pećinci, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Loznice 1944.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 7.4,
+        "pdf_y": 330.0,
+        "pdf_x_end": 177.8,
+        "pdf_y_end": 371.6,
+        "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1911",
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Sokolović",
@@ -75866,7 +76145,6 @@
     "fathers_name": "",
     "full_name": "Stojčev Jovan",
     "additional_info": "Platičevo, umro posle rata.",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 132,
     "pdf_y": 191.1,
@@ -75876,7 +76154,25 @@
     "birth_place": "Platičevo",
     "soldier_id": "0082003431",
     "pdf_x_end": 309.8,
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0076000995",
+        "name": "Stojčev Jovan",
+        "additional_info": "rođen 1911. u Platičevu (Srem), u NOB od 1943, ekonom čete",
+        "pdf_file": "4-vojvodjanska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 85.3,
+        "pdf_y": 389.6,
+        "pdf_x_end": 365.9,
+        "pdf_y_end": 404.7,
+        "unit_file": "4-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojčević",
@@ -79831,7 +80127,27 @@
     "soldier_id": "0082003622",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 352.4
+    "pdf_x_end": 352.4,
+    "other_sources": [
+      {
+        "soldier_id": "9025039234",
+        "name": "Uzelac (Milorad) Radovan",
+        "additional_info": "rođen 1924, Batanjica (Zemun). Srbin, poginuo 1944. u NOBu, Beograd u bolni",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1417",
+        "source_page": 1417,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Beograd u bolni"
   },
   {
     "last_name": "Uzelac",
@@ -81841,7 +82157,26 @@
     "occupation": "zemljoradnik",
     "death_date": "1944",
     "pdf_x_end": 383.6,
-    "death_place": "Istočna Bosna"
+    "death_place": "Istočna Bosna",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0018001832",
+        "name": "Vlahović Žika",
+        "additional_info": "rođen u Deču, Srbin, zemljoradnik, stupio! u NOVJ 1943, borac, poginuo 1944. kod Kiseljaka.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 112.1,
+        "pdf_y": 335.3,
+        "pdf_x_end": 371.4,
+        "pdf_y_end": 351.7,
+        "pdf_x_left": 91.8,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vlaj",
@@ -85323,10 +85658,10 @@
   },
   {
     "last_name": "Zeković",
-    "middle_name": "",
+    "middle_name": "Save",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Zeković Milan",
+    "fathers_name": "Sava",
+    "full_name": "Zeković Save Milan",
     "additional_info": "1924, Vojka, St. Pazova, zemljoradnik, borac.",
     "birth_year": "1924",
     "pdf_page": 152,
@@ -85343,7 +85678,7 @@
     "other_sources": [
       {
         "soldier_id": "0076001130",
-        "name": "Zeković Milan",
+        "name": "Zeković Save Milan",
         "additional_info": "zemljoradnik, rođen 1924. u Vojki (Srem), u NOB od 1943, član SKOJ-a, borac",
         "pdf_file": "4-vojvodjanska.pdf",
         "pdf_page": 30,
@@ -85352,6 +85687,18 @@
         "pdf_x_end": 330.1,
         "pdf_y_end": 317.0,
         "unit_file": "4-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0168004379",
+        "name": "Zeković Save Milan",
+        "additional_info": "Vojka",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 54,
+        "pdf_x": 241.9,
+        "pdf_y": 99.9,
+        "pdf_x_end": 367.3,
+        "pdf_y_end": 109.4,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
       }
     ]
   },
@@ -85389,7 +85736,27 @@
     "soldier_id": "0082003872",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 387.3
+    "pdf_x_end": 387.3,
+    "other_sources": [
+      {
+        "soldier_id": "9025039243",
+        "name": "Zelenović (Mile) Aleksandar",
+        "additional_info": "rođen 1922, Batanjica (Zemun). Srbin, poginuo 1944. u NOBu, Osijek",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1417",
+        "source_page": 1417,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Osijek"
   },
   {
     "last_name": "Zemljanac",
@@ -87457,7 +87824,21 @@
     "birth_place": "Sibač, Ruma",
     "soldier_id": "0082003967",
     "rank": "pomoćnik komesara čete",
-    "pdf_x_end": 334.5
+    "pdf_x_end": 334.5,
+    "other_sources": [
+      {
+        "soldier_id": "0076000129",
+        "name": "Cikić Lazara Ilija",
+        "additional_info": "rođen u Sibaču (Srem), u NOB od 1943, borac",
+        "pdf_file": "4-vojvodjanska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 70.7,
+        "pdf_y": 484.3,
+        "pdf_x_end": 350.3,
+        "pdf_y_end": 490.5,
+        "unit_file": "4-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čobanović",

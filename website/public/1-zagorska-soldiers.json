@@ -1451,10 +1451,10 @@
   },
   {
     "last_name": "Cerovec",
-    "middle_name": "",
+    "middle_name": "Tome",
     "first_name": "Franjo",
-    "fathers_name": "",
-    "full_name": "Cerovec Franjo",
+    "fathers_name": "Tomo",
+    "full_name": "Cerovec Tome Franjo",
     "additional_info": "1922, Hrtovec, Sv. Ivan Zelina, poginuo 28. 12. 1944, Sedlarica",
     "birth_year": "1922",
     "birth_place": "Hrtovec, Sv. Ivan Zelina",
@@ -1476,12 +1476,53 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2995",
         "source_page": 2995,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9036000201",
+        "name": "Cerovec (Tome) Franjo",
+        "additional_info": "rođen 23. 12. 1922. u Jertovcu, poginuo 28. 12. 1944. u Sedlarici kao delegat voda.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 9,
+        "pdf_x": 36.0,
+        "pdf_y": 519.8,
+        "pdf_x_end": 391.8,
+        "pdf_y_end": 537.4,
+        "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "0035101569",
+        "name": "Cerovec Tome Franjo",
+        "additional_info": "r. 1922, s. Jertovec, Zlatar Bistrica, Hrvat, poljopriv., čl. KPJ, NOV 1944, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 176,
+        "pdf_x": 292.4,
+        "pdf_y": 499.4,
+        "pdf_x_end": 443.9,
+        "pdf_y_end": 525.2,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035001266",
+        "name": "Cerovec Franjo",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 6,
+        "pdf_x": 192.3,
+        "pdf_y": 559.3,
+        "pdf_x_end": 272.3,
+        "pdf_y_end": 568.8,
+        "unit_file": "32-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "poljoprivrednik",
+    "party": "KPJ",
+    "birth_date": "23.12.1922"
   },
   {
     "last_name": "Cerovec",
@@ -2761,7 +2802,44 @@
     "pdf_y_end": 340.2,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000064",
-    "pdf_x_end": 267.6
+    "pdf_x_end": 267.6,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "poljoprivrednik",
+    "other_sources": [
+      {
+        "soldier_id": "0035103002",
+        "name": "Gregurić Vjekoslav",
+        "additional_info": "r. 1926, s. Velinci, Klanjec, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 183,
+        "pdf_x": 120.4,
+        "pdf_y": 350.2,
+        "pdf_x_end": 272.2,
+        "pdf_y_end": 376.4,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035002385",
+        "name": "Gregurić Vjekoslav",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 13,
+        "pdf_x": 192.2,
+        "pdf_y": 228.3,
+        "pdf_x_end": 291.2,
+        "pdf_y_end": 237.8,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Grgac",
@@ -4292,10 +4370,10 @@
   },
   {
     "last_name": "Klobučić",
-    "middle_name": "",
+    "middle_name": "Andrije",
     "first_name": "Vladimir",
-    "fathers_name": "",
-    "full_name": "Klobučić Vladimir",
+    "fathers_name": "Andrija",
+    "full_name": "Klobučić Andrije Vladimir",
     "additional_info": "1911, M. Hrpenja, Pregrada, poginuo 18. 2. 1945, Šuplja Lipa",
     "birth_year": "1911",
     "birth_place": "M. Hrpenja, Pregrada",
@@ -4308,7 +4386,39 @@
     "pdf_y_end": 157.8,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000109",
-    "pdf_x_end": 266.7
+    "pdf_x_end": 266.7,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0035104941",
+        "name": "Klobučić Andrije Vladimir",
+        "additional_info": "r. 1911, s. Mala Erpenja, Pregrada, Hrvat, čl. KPJ, NOV 1944, poginuo 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 191,
+        "pdf_x": 110.1,
+        "pdf_y": 449.9,
+        "pdf_x_end": 261.6,
+        "pdf_y_end": 475.6,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035003720",
+        "name": "Klobučić Vladimir",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 20,
+        "pdf_x": 75.3,
+        "pdf_y": 374.5,
+        "pdf_x_end": 166.6,
+        "pdf_y_end": 384.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kobali",
@@ -5270,10 +5380,10 @@
   },
   {
     "last_name": "Krapinec",
-    "middle_name": "",
+    "middle_name": "Marka",
     "first_name": "Zvonko",
-    "fathers_name": "",
-    "full_name": "Krapinec Zvonko",
+    "fathers_name": "Marko",
+    "full_name": "Krapinec Marka Zvonko",
     "additional_info": "1924, V. Trgovište, poginuo 24. 9. 1944, Mrzlo polje",
     "birth_year": "1924",
     "birth_place": "V. Trgovište",
@@ -5299,8 +5409,43 @@
         "pdf_x_end": 381.9,
         "pdf_y_end": 292.1,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "0035105660",
+        "name": "Krapinec Marka Zvonko",
+        "additional_info": "r. 1926, s. Veliko Trgovišće, Zabok, Hrvat, učenik, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 194,
+        "pdf_x": 289.8,
+        "pdf_y": 626.0,
+        "pdf_x_end": 441.3,
+        "pdf_y_end": 651.8,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035004268",
+        "name": "Krapinec Zvonko",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 22,
+        "pdf_x": 71.1,
+        "pdf_y": 198.5,
+        "pdf_x_end": 160.6,
+        "pdf_y_end": 208.0,
+        "unit_file": "32-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "učenik",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Krizmanić",
@@ -6278,7 +6423,37 @@
     "pdf_y_end": 166.6,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000165",
-    "pdf_x_end": 261.4
+    "pdf_x_end": 261.4,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035107320",
+        "name": "Mikac Josip",
+        "additional_info": "r. 1919, s. Cirkovljani, Prelog, Čakovec, Hrvat, NOV 1944, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 201,
+        "pdf_x": 118.8,
+        "pdf_y": 252.8,
+        "pdf_x_end": 270.3,
+        "pdf_y_end": 278.1,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035005523",
+        "name": "Mikac Josip",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 26,
+        "pdf_x": 202.1,
+        "pdf_y": 599.8,
+        "pdf_x_end": 266.1,
+        "pdf_y_end": 609.3,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mikulić",
@@ -6404,7 +6579,38 @@
     "pdf_y_end": 82.4,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000169",
-    "pdf_x_end": 258.5
+    "pdf_x_end": 258.5,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035107727",
+        "name": "Mustač Karlo",
+        "additional_info": "r. 1914, s. Cirkovljani, Prelog, Hrvat, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 202,
+        "pdf_x": 290.0,
+        "pdf_y": 175.8,
+        "pdf_x_end": 441.4,
+        "pdf_y_end": 192.4,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035005835",
+        "name": "Mustač Karlo",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 27,
+        "pdf_x": 343.4,
+        "pdf_y": 146.5,
+        "pdf_x_end": 411.1,
+        "pdf_y_end": 156.0,
+        "pdf_x_left": 339.6,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Novak",
@@ -6573,6 +6779,18 @@
         "pdf_x_end": 259.0,
         "pdf_y_end": 122.7,
         "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0147000734",
+        "name": "Orač Ivan",
+        "additional_info": "Blaguša, Sesvete, poginuo u napadu na Orešje Donje 2/3. 5. 1944.",
+        "pdf_file": "zagrebacki-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 298.8,
+        "pdf_y": 1033.4369999999994,
+        "pdf_x_end": 531.8,
+        "pdf_y_end": 1054.6,
+        "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ]
   },
@@ -6594,7 +6812,34 @@
     "pdf_y_end": 422.0,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000175",
-    "pdf_x_end": 264.2
+    "pdf_x_end": 264.2,
+    "other_sources": [
+      {
+        "soldier_id": "9036001138",
+        "name": "Orešić Fabijan",
+        "additional_info": "rođen 2. 3. 1919. u Dobrim Zdencima, poginuo 12. 3. 1945. u Šimljanici kao komandant bataljona.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 51,
+        "pdf_x": 28.3,
+        "pdf_y": 522.2,
+        "pdf_x_end": 384.2,
+        "pdf_y_end": 540.0,
+        "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "0147000735",
+        "name": "Orešić Fabijan",
+        "additional_info": "zvani Haba; Dobri Zdenci, Donja Stubica, poginuo 1945. u Podravini kod Bereka kao komandant bata­ ljona u Zagorskoj brigadi",
+        "pdf_file": "zagrebacki-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 298.8,
+        "pdf_y": 1056.6369999999995,
+        "pdf_x_end": 538.8,
+        "pdf_y_end": 1089.7,
+        "unit_file": "zagrebacki-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "02.03.1919"
   },
   {
     "last_name": "Oset",
@@ -6708,7 +6953,25 @@
     "pdf_y_end": 381.0,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000178",
-    "pdf_x_end": 261.1
+    "pdf_x_end": 261.1,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035108089",
+        "name": "Ovčar Ferdinand",
+        "additional_info": "r. 1917, s. Macelj Đurmanec, Krapina, Hrvat, NOV 1944, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 204,
+        "pdf_x": 111.0,
+        "pdf_y": 348.4,
+        "pdf_x_end": 262.0,
+        "pdf_y_end": 373.9,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Panpunckin",
@@ -6947,7 +7210,37 @@
     "pdf_y_end": 139.8,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000184",
-    "pdf_x_end": 255.7
+    "pdf_x_end": 255.7,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035108589",
+        "name": "Petras Petar",
+        "additional_info": "r. 1924, s. Breznički Hum, Novi Marof, Hrvat, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 206,
+        "pdf_x": 116.5,
+        "pdf_y": 295.6,
+        "pdf_x_end": 268.0,
+        "pdf_y_end": 323.0,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035006455",
+        "name": "Petras Petar",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 29,
+        "pdf_x": 471.3,
+        "pdf_y": 134.0,
+        "pdf_x_end": 537.3,
+        "pdf_y_end": 143.5,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pinković",
@@ -6967,7 +7260,37 @@
     "pdf_y_end": 279.9,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000185",
-    "pdf_x_end": 262.9
+    "pdf_x_end": 262.9,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035108712",
+        "name": "Pinković Stjepan",
+        "additional_info": "r. 1925, s. Perjuškovac, Zelina, Hrvat, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 206,
+        "pdf_x": 114.6,
+        "pdf_y": 615.2,
+        "pdf_x_end": 265.9,
+        "pdf_y_end": 631.6,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035006519",
+        "name": "Pinković Stjepan",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 29,
+        "pdf_x": 472.5,
+        "pdf_y": 625.3,
+        "pdf_x_end": 561.6,
+        "pdf_y_end": 634.8,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pizig",
@@ -7685,7 +8008,37 @@
     "pdf_y_end": 349.3,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000205",
-    "pdf_x_end": 263.4
+    "pdf_x_end": 263.4,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035110709",
+        "name": "Tasič Ivan",
+        "additional_info": "r. 1927, s. Donji Grdevac, Hrvat, NOV 1944, poginuo 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 217,
+        "pdf_x": 118.6,
+        "pdf_y": 595.3,
+        "pdf_x_end": 270.6,
+        "pdf_y_end": 612.4,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035007490",
+        "name": "Tasić Ivan",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 36,
+        "pdf_x": 479.0,
+        "pdf_y": 730.4,
+        "pdf_x_end": 535.3,
+        "pdf_y_end": 739.9,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tisaj",
@@ -7705,7 +8058,37 @@
     "pdf_y_end": 328.6,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000206",
-    "pdf_x_end": 266.6
+    "pdf_x_end": 266.6,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035110779",
+        "name": "Tisaj Mijo",
+        "additional_info": "r. 1919, s. Cirkovljan, Prelog Čakovec, Hrvat, NOV 1944, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 217,
+        "pdf_x": 297.9,
+        "pdf_y": 222.1,
+        "pdf_x_end": 450.0,
+        "pdf_y_end": 248.6,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035007543",
+        "name": "Tisaj Mijo",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 37,
+        "pdf_x": 41.5,
+        "pdf_y": 527.6,
+        "pdf_x_end": 97.1,
+        "pdf_y_end": 537.1,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Toni",
@@ -8275,10 +8658,10 @@
   },
   {
     "last_name": "Vincelj",
-    "middle_name": "",
+    "middle_name": "Josipa",
     "first_name": "Stanko",
-    "fathers_name": "",
-    "full_name": "Vincelj Stanko",
+    "fathers_name": "Josip",
+    "full_name": "Vincelj Josipa Stanko",
     "additional_info": "1912, Raninsko, Đurmanec, poginuo 15. 3. 1945, Kostanjevac",
     "birth_year": "1912",
     "birth_place": "Raninsko, Đurmanec",
@@ -8291,7 +8674,25 @@
     "pdf_y_end": 300.8,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000220",
-    "pdf_x_end": 272.6
+    "pdf_x_end": 272.6,
+    "party": "KPJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0058002808",
+        "name": "Vincelj Josipa Stanko",
+        "additional_info": "r. 1912; Rovinsko, Đurmanec, Krapina; član KP; u KPO od 1943; poginuo 15. ožujka 1945. kod Šimljanice, Moslavina, kao komandir čete u ZUBr.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 83,
+        "pdf_x": 304.0,
+        "pdf_y": 553.9,
+        "pdf_x_end": 459.3,
+        "pdf_y_end": 602.3,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vlahovček",
@@ -8311,7 +8712,25 @@
     "pdf_y_end": 389.6,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000221",
-    "pdf_x_end": 263.4
+    "pdf_x_end": 263.4,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035111655",
+        "name": "Vlahovček Ljudevit",
+        "additional_info": "r. 1911, s. Bregovljan, Dugo Selo, Hrvat, NOV 1944, ranjen 1944, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 220,
+        "pdf_x": 292.7,
+        "pdf_y": 193.0,
+        "pdf_x_end": 444.3,
+        "pdf_y_end": 219.5,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vuger",
@@ -9204,6 +9623,38 @@
     "pdf_y_end": 260.2,
     "pdf_file": "1-zagorska.pdf",
     "soldier_id": "0105000246",
-    "pdf_x_end": 266.2
+    "pdf_x_end": 266.2,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "poljoprivrednik",
+    "other_sources": [
+      {
+        "soldier_id": "0035112192",
+        "name": "Zujanić Stjepan",
+        "additional_info": "s. Zagorska Sela, Klanjec, Hrvat, poljopriv., poginuo",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 223,
+        "pdf_x": 117.9,
+        "pdf_y": 196.7,
+        "pdf_x_end": 269.6,
+        "pdf_y_end": 214.2,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035009981",
+        "name": "Žujanić Stjepan",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 41,
+        "pdf_x": 341.1,
+        "pdf_y": 144.3,
+        "pdf_x_end": 420.0,
+        "pdf_y_end": 153.8,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   }
 ]

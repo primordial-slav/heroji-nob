@@ -3763,7 +3763,6 @@
     "fathers_name": "Petar",
     "full_name": "Milović Petar Desanka",
     "additional_info": "bolničarka ili borac u stroju žena brigade",
-    "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 187.786,
     "pdf_x": 89.0,
@@ -3771,7 +3770,31 @@
     "pdf_file": "9-srpska.pdf",
     "soldier_id": "0165000223",
     "pdf_x_end": 226.6,
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "other_sources": [
+      {
+        "soldier_id": "9025007975",
+        "name": "Milović (Petar) Desanka",
+        "additional_info": "rođena 1928, Bor (Boljevac). Srpkinja, poginula 1945. u NOBu, Gračanica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=325",
+        "source_page": 325,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Bor, Boljevac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "Srpkinja",
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Gračanica",
+    "birth_year": "1928"
   },
   {
     "last_name": "Milošević",
@@ -4112,12 +4135,11 @@
   },
   {
     "last_name": "Nenadić",
-    "middle_name": "",
+    "middle_name": "Rada",
     "first_name": "Draginja",
     "fathers_name": "Rade",
-    "full_name": "Nenadić Draginja",
+    "full_name": "Nenadić Rada Draginja",
     "additional_info": "sanitetski referent (Štab prvog bataljona); 1.9.44.- 15. 5.45. 44. -15. 5. 45.; bolničarka ili borac u stroju žena brigade",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 484.754,
     "pdf_x": 125.3,
@@ -4126,7 +4148,33 @@
     "soldier_id": "0165000244",
     "pdf_x_end": 385.2,
     "pdf_x_left": 39.7,
-    "rank": "sanitetski referent, bolničarka"
+    "rank": "sanitetski referent, bolničarka",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Grkovci, Bosansko Grahovo",
+    "ethnicity": "Srpkinja",
+    "occupation": "domaćica",
+    "party": "SKOJ, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0040000939",
+        "name": "Nenadić Rada Draginja",
+        "additional_info": "bolničarka 3. čete 5. bataljona, rođena 1924, Grkovci, Bosansko Grahovo, domaćica, Srpkinja, u NOB od 1941, član SKOJ-a od'1942, član KPJ od 1943, krajem rata referent saniteta 9. srpske brigade.",
+        "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+        "pdf_page": 61,
+        "pdf_x": 127.7,
+        "pdf_y": 484.5,
+        "pdf_x_end": 296.8,
+        "pdf_y_end": 557.1,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nešić",
@@ -6098,12 +6146,11 @@
   },
   {
     "last_name": "Subotić",
-    "middle_name": "",
+    "middle_name": "Đorđa",
     "first_name": "Milka",
     "fathers_name": "Đorđe",
-    "full_name": "Subotić Milka",
+    "full_name": "Subotić Đorđa Milka",
     "additional_info": "referent saniteta (Štab 9. brigade); 1.9. 44.-2.12. 44.; bolničarka ili borac u stroju žena brigade",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 329.35400000000004,
     "pdf_x": 126.8,
@@ -6112,7 +6159,75 @@
     "soldier_id": "0165000361",
     "pdf_x_end": 385.8,
     "pdf_x_left": 41.7,
-    "rank": "referent saniteta, bolničarka"
+    "rank": "referent saniteta, bolničarka",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Njegovuđa, Žabljak",
+    "ethnicity": "Crnogorka",
+    "occupation": "domaćica",
+    "death_type": "poginuo",
+    "death_date": "05.1944",
+    "death_place": "u Seči Reci (Srbija)",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0040001344",
+        "name": "Subotić Đorđa Milka",
+        "additional_info": "bolničarka u 5. bataljonu, rođena 1920, Njegovuđa, Žabljak, domaćica, Crnogorka, u NOB od 1941, član KPJ, poginula kod sela Seča Reka, Kosjerić, maja 1944, referent saniteta bataljona.",
+        "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+        "pdf_page": 83,
+        "pdf_x": 314.8,
+        "pdf_y": 340.2,
+        "pdf_x_end": 485.2,
+        "pdf_y_end": 403.4,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040011602",
+        "name": "Subotić Đ Milka",
+        "additional_info": "rođena 1920. u Žabljaku, radnica, sanitetski referent bataljona, poginula maja 1944. u Seči Reci (Srbija).",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 81,
+        "pdf_x": 49.3,
+        "pdf_y": 339.8,
+        "pdf_x_end": 355.4,
+        "pdf_y_end": 365.1,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040030204",
+        "name": "Subotić D Milka",
+        "additional_info": "Rukovodioci 4. proleterske crnogorske brigade, 5. bataljon: rođena 1920. Njegovođi (Žabljak), radnica, član KPJ, poginula maja 1944. u zapadnoj Srbiji; referent od juna 1943. do maja 1944.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 125,
+        "pdf_x": 54.0,
+        "pdf_y": 120.1,
+        "pdf_x_end": 359.5,
+        "pdf_y_end": 145.4,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020774",
+        "name": "Subotić Đ. Milka",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Njegovuđa, Šaranci, 1920, radnica, Poginula 1944. u Srbiji",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 75,
+        "pdf_x": 164.7,
+        "pdf_y": 455.1,
+        "pdf_x_end": 456.2,
+        "pdf_y_end": 471.8,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sudar",

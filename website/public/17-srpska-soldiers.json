@@ -537,12 +537,11 @@
   },
   {
     "last_name": "Babović",
-    "middle_name": "",
+    "middle_name": "Milisava",
     "first_name": "Radivoje",
-    "fathers_name": "",
-    "full_name": "Babović Radivoje",
+    "fathers_name": "Milisav",
+    "full_name": "Babović Milisava Radivoje",
     "additional_info": "poginuo 15. VII 1944. god. u Ljusa - Kuršumlija.",
-    "birth_year": "",
     "pdf_page": 54,
     "pdf_y": 187.8,
     "pdf_x": 84.4,
@@ -566,8 +565,41 @@
         "pdf_y_end": 559.4,
         "pdf_x_left": 11.5,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025021183",
+        "name": "Babović (Milisav) Radivoje",
+        "additional_info": "rođen 1922, Vapa (Mrčajevci). Srbin, poginuo od četnika 1944. u NOBu, Ljuše-kuršumlij",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=839",
+        "source_page": 839,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0126000033",
+        "name": "Babović Milisava Radivoje",
+        "additional_info": "zemljoradnik, rođen 1922. u Vapi; član KPJ; borac Trnavskog bataljona; poginuo u borbi protlv Nemaca i četnika kod Kuršumlije 15. jula 1944.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 56,
+        "pdf_x": 56.5,
+        "pdf_y": 501.7,
+        "pdf_x_end": 389.7,
+        "pdf_y_end": 528.0,
+        "pdf_x_left": 30.4,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Vapa",
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Badnjar",
@@ -1393,7 +1425,21 @@
     "soldier_id": "0055000071",
     "pdf_x_end": 364.1,
     "birth_place": "Vlasovo, Prokuplje",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0021000478",
+        "name": "Bradić Radiša",
+        "additional_info": "Vlasovo, Prokuplje. U Brigadi od decembra 1943. godine 1. četa 2. bataljon.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 55.7,
+        "pdf_y": 299.8,
+        "pdf_x_end": 359.8,
+        "pdf_y_end": 321.5,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brajković",
@@ -8113,7 +8159,7 @@
     "first_name": "Čedomir",
     "fathers_name": "Gorča",
     "full_name": "Miljković Gorče Čedomir",
-    "additional_info": "rođen 10. VIII 1905. u Pertatu, Lebane, Srbija, zemljoradnik, borac 17. brigade od 15. VIII",
+    "additional_info": "rođen 10. VIII 1905. u Pertatu, Lebane, Srbija, zemljoradnik, borac 17. brigade od 15. VIII 1944.",
     "birth_year": "1905",
     "pdf_page": 29,
     "pdf_y": 260.1,
@@ -9205,12 +9251,11 @@
   },
   {
     "last_name": "Mitrović",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Stojan",
-    "fathers_name": "",
-    "full_name": "Mitrović Stojan",
+    "fathers_name": "J",
+    "full_name": "Mitrović J Stojan",
     "additional_info": "rođen u Milanovu, Leskovac, poginuo oktobra 1944. god. na Kosovu.",
-    "birth_year": "",
     "pdf_page": 55,
     "pdf_y": 401.6,
     "pdf_x": 60.0,
@@ -9221,7 +9266,37 @@
     "birth_place": "Milanovo, Leskovac",
     "death_type": "poginuo",
     "death_date": "10.1944",
-    "death_place": "Kosovo"
+    "death_place": "Kosovo",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0086000428",
+        "name": "Mitrović J Stojan",
+        "additional_info": "",
+        "pdf_file": "15-srpska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 21.0,
+        "pdf_y": 498.7,
+        "pdf_x_end": 95.7,
+        "pdf_y_end": 507.2,
+        "unit_file": "15-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0086000429",
+        "name": "Mitrović Janje Stojan",
+        "additional_info": "rođen 1922, Milanovo, Leskovac, borac, poginuo oktobra 1944, Leskovac.",
+        "pdf_file": "15-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 23.3,
+        "pdf_y": 284.9,
+        "pdf_y_end": 304.4,
+        "pdf_x_end": 332.1,
+        "unit_file": "15-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mitrović",
@@ -16915,7 +16990,6 @@
     "fathers_name": "",
     "full_name": "Vukić Milić",
     "additional_info": "rođen u Šišmanovcu, Prokuplje, stupio u 17. brigadu prilikom njenog formiranja.",
-    "birth_year": "",
     "pdf_page": 52,
     "pdf_y": 104.1,
     "pdf_x": 92.3,
@@ -16923,7 +16997,29 @@
     "pdf_file": "17-srpska.pdf",
     "soldier_id": "0055000876",
     "pdf_x_end": 399.8,
-    "birth_place": "Šišmanovac, Prokuplje"
+    "birth_place": "Šišmanovac, Prokuplje",
+    "other_sources": [
+      {
+        "soldier_id": "9025027151",
+        "name": "Vukić (Milana) Milić",
+        "additional_info": "rođen 1927, Šišmanovac (Prokuplje). Srbin, poginuo 1944. u NOBu, Trstenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1066",
+        "source_page": 1066,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Trstenica",
+    "birth_year": "1927"
   },
   {
     "last_name": "Vukić",

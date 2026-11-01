@@ -1056,7 +1056,6 @@
     "fathers_name": "",
     "full_name": "Arsić Vaso",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 19,
     "pdf_y": 339.8,
     "pdf_x": 197.4,
@@ -1074,12 +1073,28 @@
         "pdf_y": 77.5,
         "pdf_y_end": 97.6,
         "pdf_x_end": 182.9
+      },
+      {
+        "soldier_id": "9026000600",
+        "name": "Arsić (Miloš) Vaso",
+        "additional_info": "rođen 1908, Suvi Lukavac (Istok). Srbin, poginuo 1945. u NOBu, Drenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=26",
+        "source_page": 26,
+        "ref_book": "zrtve-rata-1964-kos"
       }
     ],
     "death_type": "poginuo",
     "death_date": "31.01.1945",
     "death_place": "Lauša",
-    "pdf_x_end": 250.1
+    "pdf_x_end": 250.1,
+    "birth_place": "Suvi Lukavac, Istok",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1908"
   },
   {
     "last_name": "Arsovski",
@@ -3784,7 +3799,6 @@
     "fathers_name": "",
     "full_name": "Dašić Desanka",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 20,
     "pdf_y": 273.0,
     "pdf_x": 228.3,
@@ -3802,12 +3816,30 @@
         "pdf_y": 180.7,
         "pdf_y_end": 201.0,
         "pdf_x_end": 209.7
+      },
+      {
+        "soldier_id": "9035001538",
+        "name": "Dašić J. Desanka",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina rođenja 1926; mjesto rođenja Šekular; godina smrti 1945; mjesto pogibije Drenica",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 40,
+        "pdf_x": 73.7,
+        "pdf_y": 510.2,
+        "pdf_x_end": 469.3,
+        "pdf_y_end": 520.7,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
     "death_type": "poginuo",
     "death_date": "25.01.1945",
     "death_place": "Trstenik",
-    "pdf_x_end": 297.3
+    "pdf_x_end": 297.3,
+    "birth_place": "Šekular, Berane",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1926"
   },
   {
     "last_name": "Debeljković",
@@ -3816,7 +3848,6 @@
     "fathers_name": "",
     "full_name": "Debeljković Dušan",
     "additional_info": "rođen u Uroševcu. Srbin, radnik. U NOB-i od",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 55.5,
     "pdf_x": 27.4,
@@ -3826,7 +3857,27 @@
     "birth_place": "Uroševac",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "pdf_x_end": 187.0
+    "pdf_x_end": 187.0,
+    "other_sources": [
+      {
+        "soldier_id": "9026002360",
+        "name": "Debeljković (Stojan) Dušan",
+        "additional_info": "rođen 1917, Uroševac. Srbin, poginuo 1943. u NOBu, Debar",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=106",
+        "source_page": 106,
+        "ref_book": "zrtve-rata-1964-kos"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Debar",
+    "birth_year": "1917"
   },
   {
     "last_name": "Debelković",
@@ -5316,7 +5367,25 @@
     "birth_place": "Peć",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "pdf_x_end": 206.1
+    "pdf_x_end": 206.1,
+    "other_sources": [
+      {
+        "soldier_id": "9026001475",
+        "name": "Gašić (Sava) Božidar",
+        "additional_info": "rođen 1919, Peć. Srbin, poginuo 1943. u NOBu, Germani albanija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=66",
+        "source_page": 66,
+        "ref_book": "zrtve-rata-1964-kos"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Germani albanija"
   },
   {
     "last_name": "Georgijevski",
@@ -7500,7 +7569,6 @@
     "fathers_name": "",
     "full_name": "Josifovski Jordan",
     "additional_info": "Slansko",
-    "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 129.4,
     "pdf_x": 24.0,
@@ -7508,7 +7576,29 @@
     "pdf_file": "1-kosovsko-metohijska.pdf",
     "soldier_id": "0077000443",
     "birth_place": "Slansko",
-    "pdf_x_end": 153.1
+    "pdf_x_end": 153.1,
+    "other_sources": [
+      {
+        "soldier_id": "9024000452",
+        "name": "Josifovski (Siljan) Jordan",
+        "additional_info": "rođen 1925, Slansko (Brod). Makedonac, poginuo 1945. u NOBu, Beli drim",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Mak.pdf#page=60",
+        "source_page": 60,
+        "ref_book": "zrtve-rata-1964-mak"
+      }
+    ],
+    "ethnicity": "Makedonac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Beli drim",
+    "birth_year": "1925"
   },
   {
     "last_name": "Josifovski",
@@ -7572,7 +7662,6 @@
     "fathers_name": "",
     "full_name": "Jovanović Desanka",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 21,
     "pdf_y": 521.6,
     "pdf_x": 26.5,
@@ -7590,12 +7679,28 @@
         "pdf_y": 79.0,
         "pdf_y_end": 100.0,
         "pdf_x_end": 184.7
+      },
+      {
+        "soldier_id": "9026001484",
+        "name": "Jovanović (Radovan) Desanka",
+        "additional_info": "rođena 1926, Peć. Crnogorka, poginula 1945. u NOBu, Drenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=67",
+        "source_page": 67,
+        "ref_book": "zrtve-rata-1964-kos"
       }
     ],
     "death_type": "poginuo",
     "death_date": "26.01.1945",
     "death_place": "Poluže",
-    "pdf_x_end": 110.5
+    "pdf_x_end": 110.5,
+    "birth_place": "Peć",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorka",
+    "birth_year": "1926"
   },
   {
     "last_name": "Jovanović",
@@ -11659,7 +11764,6 @@
     "fathers_name": "",
     "full_name": "Miloševski Vojo",
     "additional_info": "Tudence",
-    "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 63.6,
     "pdf_x": 197.3,
@@ -11667,7 +11771,29 @@
     "pdf_file": "1-kosovsko-metohijska.pdf",
     "soldier_id": "0077000688",
     "birth_place": "Tudence",
-    "pdf_x_end": 356.8
+    "pdf_x_end": 356.8,
+    "other_sources": [
+      {
+        "soldier_id": "9024004456",
+        "name": "Miloševski (Krsto) Vojo",
+        "additional_info": "rođen 1910, Tudence (Tetovo). Makedonac, poginuo 1945. u NOBu, Kos.mitrovica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Mak.pdf#page=259",
+        "source_page": 259,
+        "ref_book": "zrtve-rata-1964-mak"
+      }
+    ],
+    "ethnicity": "Makedonac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Kos.mitrovica",
+    "birth_year": "1910"
   },
   {
     "last_name": "Miloševski",
@@ -16166,7 +16292,6 @@
     "fathers_name": "",
     "full_name": "Reković Junuz",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 23,
     "pdf_y": 524.4,
     "pdf_x": 30.4,
@@ -16184,12 +16309,28 @@
         "pdf_y": 446.2,
         "pdf_y_end": 466.5,
         "pdf_x_end": 182.0
+      },
+      {
+        "soldier_id": "9023004856",
+        "name": "Reković (Dino) Junuz",
+        "additional_info": "rođen 1920, Prnjavor (Plav). Crnogorac, poginuo 1945. u NOBu, Drenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=143",
+        "source_page": 143,
+        "ref_book": "zrtve-rata-1964-crg"
       }
     ],
     "death_type": "poginuo",
     "death_date": "07.02.1945",
     "death_place": "Poljance",
-    "pdf_x_end": 93.5
+    "pdf_x_end": 93.5,
+    "birth_place": "Prnjavor, Plav",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1920"
   },
   {
     "last_name": "Rendirevski",
@@ -17086,7 +17227,6 @@
     "fathers_name": "",
     "full_name": "Simonović Ljubomir",
     "additional_info": "poginuo 25. I. 1945., Kolo",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 29,
     "pdf_y": 286.1,
@@ -17096,7 +17236,25 @@
     "soldier_id": "0077001016",
     "death_date": "25.01.1945",
     "death_place": "Kolo",
-    "pdf_x_end": 354.9
+    "pdf_x_end": 354.9,
+    "other_sources": [
+      {
+        "soldier_id": "9026001392",
+        "name": "Simonović (Tomo) Ljubomir",
+        "additional_info": "rođen 1920, Goradževac (Peć). Srbin, poginuo 1945. u NOBu, Vučitrn",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=62",
+        "source_page": 62,
+        "ref_book": "zrtve-rata-1964-kos"
+      }
+    ],
+    "birth_place": "Goradževac, Peć",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1920"
   },
   {
     "last_name": "Simonovski",
@@ -20325,7 +20483,6 @@
     "fathers_name": "",
     "full_name": "Vasović Milijana",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 20,
     "pdf_y": 329.0,
     "pdf_x": 55.5,
@@ -20343,12 +20500,40 @@
         "pdf_y": 34.6,
         "pdf_y_end": 54.9,
         "pdf_x_end": 355.4
+      },
+      {
+        "soldier_id": "9035000060",
+        "name": "Vasović Dragova Milijana",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Andrijevica: godina rođenja 1927; mjesto rođenja Trepča; godina smrti 1945; mjesto pogibije Drenica",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 3,
+        "pdf_x": 100.6,
+        "pdf_y": 355.4,
+        "pdf_x_end": 496.6,
+        "pdf_y_end": 364.9,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9026000572",
+        "name": "Vasović (Drago) Milijana",
+        "additional_info": "rođena 1927, Malo Dubovo (Istok). Crnogorka, poginula 1945. u NOBu, Kraljica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Kos.pdf#page=24",
+        "source_page": 24,
+        "ref_book": "zrtve-rata-1964-kos"
       }
     ],
     "death_type": "poginuo",
     "death_date": "27.01.1945",
     "death_place": "Poluže",
-    "pdf_x_end": 137.9
+    "pdf_x_end": 137.9,
+    "birth_place": "Trepča, Andrijevica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927",
+    "ethnicity": "Crnogorka"
   },
   {
     "last_name": "Vazmi",
@@ -20621,7 +20806,6 @@
     "fathers_name": "",
     "full_name": "Velkovski Janče",
     "additional_info": "Siričino",
-    "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 437.2,
     "pdf_x": 50.1,
@@ -20629,7 +20813,29 @@
     "pdf_file": "1-kosovsko-metohijska.pdf",
     "soldier_id": "0077001223",
     "birth_place": "Siričino",
-    "pdf_x_end": 175.1
+    "pdf_x_end": 175.1,
+    "other_sources": [
+      {
+        "soldier_id": "9024004374",
+        "name": "Velkovski (Risto) Janče",
+        "additional_info": "rođen 1916, Siričino (Tetovo). Makedonac, poginuo 1944. u NOBu, Peć",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Mak.pdf#page=257",
+        "source_page": 257,
+        "ref_book": "zrtve-rata-1964-mak"
+      }
+    ],
+    "ethnicity": "Makedonac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Peć",
+    "birth_year": "1916"
   },
   {
     "last_name": "Velkovski",

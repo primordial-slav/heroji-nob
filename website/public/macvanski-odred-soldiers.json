@@ -1203,10 +1203,10 @@
   },
   {
     "last_name": "Batanović",
-    "middle_name": "",
+    "middle_name": "Marka",
     "first_name": "Milovan",
-    "fathers_name": "",
-    "full_name": "Batanović Milovan",
+    "fathers_name": "Marko",
+    "full_name": "Batanović Marka Milovan",
     "additional_info": "Šabac (Pocerski srez): r. 1912, Ribari, zanatska škola, metalski radnik; porodica: brat i 3 sestre; stupio 9. 8. 1941, četa G. Maletića, M. Samardžića, P. Savića, politički delegat voda, Devina i Hrvatova; član KPJ; u grupi boraca i rukovodilaca Valjev1skot i Podrinskog odreda prešao u Bosnu 6. 3. 1942. u druge j edinice NOV.",
     "birth_year": "1912",
     "occupation": "metalski radnik",
@@ -1214,7 +1214,25 @@
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000076",
     "rank": "politički delegat voda",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0112000024",
+        "name": "Batanović Marka Milovan",
+        "additional_info": "zvani Batan; politički komesar 3. čete Pratećegbataljona VŠ, rođen 1912, Riv bari, Šabac, radnik, Srbin, u NOB od 1941. godine, član KPJ.",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 2,
+        "pdf_x": 43.5,
+        "pdf_y": 375.0,
+        "pdf_x_end": 212.5,
+        "pdf_y_end": 426.4,
+        "unit_file": "vrhovni-stab-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Batimo",
@@ -7174,7 +7192,26 @@
     "death_type": "poginuo",
     "death_date": "11.06.1942",
     "death_place": "na Gatu (Gacko, Hercegovina)",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0026000322",
+        "name": "Jokić Tanasije",
+        "additional_info": "zvani Ponajlak; borac, zemljoradnik, rođen 1905. u okolini Bogatića, kod Šapca, poginuo kao borac 3. čete 4. bataljona 2. proleterske brigade u borbi protiv četnika na Gatu, kod Gacka, u Hercegovini, 11. juna 1942.",
+        "pdf_file": "uzicki-odred.pdf",
+        "pdf_page": 31,
+        "pdf_x": 107.4,
+        "pdf_y": 240.8,
+        "pdf_x_end": 462.8,
+        "pdf_y_end": 268.4,
+        "unit_file": "uzicki-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1905"
+      ]
+    }
   },
   {
     "last_name": "Jokić",
@@ -8609,10 +8646,10 @@
   },
   {
     "last_name": "Koraksić",
-    "middle_name": "",
+    "middle_name": "Budimira",
     "first_name": "Stojan",
-    "fathers_name": "",
-    "full_name": "Koraksić Stojan",
+    "fathers_name": "Budimir",
+    "full_name": "Koraksić Budimira Stojan",
     "additional_info": "Joševa (Jadranski srez): r. 1906, Čačak; učitelj, siromašan; rez. oficir BJV; stupio 9. 9. 1941., Loznička četa, vodnik; član KPJ; posle povlačenja Odreda iz Mačve otišao u Čačanoki PO; ubili ga četnici 5. 11. 1941. u Brajićima kod Ravne gore.",
     "birth_year": "1906",
     "birth_place": "Čačak",
@@ -8622,7 +8659,26 @@
     "death_type": "ubijen",
     "death_date": "05.11.1941",
     "death_place": "Brajići, Ravna gora",
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "učitelj",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0126000381",
+        "name": "Koraksić Budimira Stojan",
+        "additional_info": "učitelj, rođen 1906. u Gornjoj Gorevnici; rezervni oficir BJV; član KPJ; vodnik Lozničke čete Mačvanskog NOP odreda, a zatim komandir partizanske straže kod bolnice u Gornjoj Gorevnici; zarobili ga četnici i oterali u Brajiće, gde je streljan 5. novembra 1941.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 13,
+        "pdf_x": 63.1,
+        "pdf_y": 473.8,
+        "pdf_x_end": 396.4,
+        "pdf_y_end": 516.9,
+        "pdf_x_left": 37.3,
+        "unit_file": "cacanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kordić",
@@ -12121,7 +12177,30 @@
     "soldier_id": "0109000790",
     "death_type": "poginuo",
     "death_date": "11.06.1942",
-    "death_place": "Gata, Gacko"
+    "death_place": "Gata, Gacko",
+    "birth_place": "Noćaj",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0026000591",
+        "name": "Mijatović Živorad",
+        "additional_info": "borac, radnik, rođen 1923. u Noćaju, kod Šapca, a živio u Užicu, poginuo kao borac 3. čete 4. bataljona 2. proleterske brigade u borbi protiv četnika na Gatu kod Gacka, u Hercegovini, 11. juna 1942.",
+        "pdf_file": "uzicki-odred.pdf",
+        "pdf_page": 45,
+        "pdf_x": 108.8,
+        "pdf_y": 157.7,
+        "pdf_x_end": 464.2,
+        "pdf_y_end": 185.3,
+        "unit_file": "uzicki-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Mijojlić",
@@ -15352,9 +15431,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=144",
         "source_page": 144,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0076000787",
+        "name": "Petrović Boško",
+        "additional_info": "stolar, rođen 1911, Tavna — Bosna, desetar, poginuo 20. X 1944. u s. Grabovac",
+        "pdf_file": "4-vojvodjanska.pdf",
+        "pdf_page": 47,
+        "pdf_x": 77.9,
+        "pdf_y": 84.9,
+        "pdf_x_end": 358.1,
+        "pdf_y_end": 100.0,
+        "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ],
-    "birth_place": "Mačvanska Mitrovica, Kula",
+    "birth_place": "Tavna, Bosna",
     "borrowed": [
       "birth_place",
       "ethnicity"
@@ -21968,15 +22059,40 @@
   },
   {
     "last_name": "Vitasović",
-    "middle_name": "",
+    "middle_name": "Ivana",
     "first_name": "Živan",
-    "fathers_name": "",
-    "full_name": "Vitasović Živan",
+    "fathers_name": "Ivan",
+    "full_name": "Vitasović Ivana Živan",
     "additional_info": "Zasavica (Mačvanski srez): zvani Kiriz; r. 1903, Laćarak, izbeglica; osnovna škola, zemljoradnik, 5 ha; porodica: žena i dete; stupio avgusta 1941...",
     "birth_year": "1903",
     "birth_place": "Laćarak",
     "source_url": "https://znaci.org/00001/48_102.htm",
-    "soldier_id": "0109001424"
+    "soldier_id": "0109001424",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0039101107",
+        "name": "Vitasović Ivana Živan",
+        "additional_info": "zvani Kiriz Lala; borac 4. bataljona, rođen 1901, Lać'arak, Sremska Mitrovica, zemljoradnik, Srbin, u NOB od 1941.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 69,
+        "pdf_x": 133.3,
+        "pdf_y": 278.8,
+        "pdf_x_end": 301.9,
+        "pdf_y_end": 319.6,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1901"
+      ]
+    }
   },
   {
     "last_name": "Vitomirović",
@@ -24396,12 +24512,31 @@
     "fathers_name": "",
     "full_name": "Đurković Vitomir",
     "additional_info": "Loznica (Jadranski srez): izbeglica iz Bačkog Petrovog Sela; stupio avgusta 1941, Lešnička četa; poginuo 3. 9. 1941. u borbi na Bitvi.",
-    "birth_year": "",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109001583",
     "death_type": "poginuo",
     "death_date": "03.09.1941",
-    "death_place": "Bitve"
+    "death_place": "Bitve",
+    "other_sources": [
+      {
+        "soldier_id": "9035016487",
+        "name": "Đurković Vojov Vitomir",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Šavnik: godina rođenja 1923; mjesto rođenja Šabac; godina smrti 1941; mjesto pogibije Mačva",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 408,
+        "pdf_x": 71.3,
+        "pdf_y": 380.3,
+        "pdf_x_end": 457.3,
+        "pdf_y_end": 389.8,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      }
+    ],
+    "birth_place": "Šabac, Šavnik",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Šapić",

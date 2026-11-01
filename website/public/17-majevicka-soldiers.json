@@ -3085,7 +3085,40 @@
     "birth_place": "Dragaljevac, Bijeljina",
     "death_type": "poginuo",
     "death_date": "07.1944",
-    "death_place": "Bratunac"
+    "death_place": "Bratunac",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "zemljoradnik",
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0049000071",
+        "name": "Dragićević Miće Boško",
+        "additional_info": "borac 1. bataljona, rođen 1922, Gornji Drageljevac, Bijeljina, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a, poginuo kod Srebrenice 10. juna 1944. godine, komandir voda.",
+        "pdf_file": "borci-sutjeske-15-majevicka.pdf",
+        "pdf_page": 5,
+        "pdf_x": 223.7,
+        "pdf_y": 211.8,
+        "pdf_x_end": 394.1,
+        "pdf_y_end": 275.6,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ],
+      "death": [
+        {
+          "date": "10.06.1944",
+          "place": "Srebrenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Drolc",
@@ -4990,7 +5023,6 @@
     "fathers_name": "",
     "full_name": "Ilić Todor",
     "additional_info": "Poginuo 27. januara 1945. godine kod Drinjače u borbi sa Nijemcima. Ostali podaci nepoznati.",
-    "birth_year": "",
     "pdf_page": 18,
     "pdf_y": 415.4,
     "pdf_x": 148.2,
@@ -5001,7 +5033,25 @@
     "pdf_x_left": 129.2,
     "death_type": "poginuo",
     "death_date": "27.01.1945",
-    "death_place": "Drinjača"
+    "death_place": "Drinjača",
+    "other_sources": [
+      {
+        "soldier_id": "9025038529",
+        "name": "Ilić (Petar) Todor",
+        "additional_info": "rođen 1919, Viteževo (Žabari). Srbin, poginuo od ustaša 1945. u NOBu, Drinjača bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1396",
+        "source_page": 1396,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Viteževo, Žabari",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1919"
   },
   {
     "last_name": "Ilić",
@@ -7189,7 +7239,6 @@
     "fathers_name": "",
     "full_name": "Koštić Ćamil",
     "additional_info": "U brigadu došao oktobra 1944. godine. Poginuo marta 1945. godine na Pohovcu — Sokolac u borbi sa Nijemcima. Ostali podaci nepoznati.",
-    "birth_year": "",
     "pdf_page": 23,
     "pdf_y": 460.0,
     "pdf_x": 119.2,
@@ -7200,7 +7249,37 @@
     "pdf_x_left": 100.2,
     "death_type": "poginuo",
     "death_date": "03.1945",
-    "death_place": "na Pohovcu — Sokolac"
+    "death_place": "na Pohovcu — Sokolac",
+    "other_sources": [
+      {
+        "soldier_id": "9022035002",
+        "name": "Koštić (Mustafa) Ćamil",
+        "additional_info": "rođen 1917, Elezovići (Velika Kladuša). Musliman, poginuo 1945. u NOBu, Sadolac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2721",
+        "source_page": 2721,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "9040002220",
+        "name": "Koštić Mustafa Ćamil",
+        "additional_info": "Spisak palih boraca u Cazinskoj krajini, Elezovići, opština Velika Kladuša: Koštić Mustafa Ćamil, 1907–1945",
+        "pdf_file": "cazinska-krajina-pali-borci.pdf",
+        "pdf_page": 27,
+        "pdf_x": 222.8,
+        "pdf_y": 684.0,
+        "pdf_x_end": 348.9,
+        "pdf_y_end": 693.0,
+        "ref_book": "cazinska-krajina-pali-borci"
+      }
+    ],
+    "birth_place": "Elezovići, Velika Kladuša",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Musliman",
+    "birth_year": "1917"
   },
   {
     "last_name": "Krajinović",
@@ -8184,6 +8263,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=173",
         "source_page": 173,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0032000094",
+        "name": "Lazić Lazo Gordana",
+        "additional_info": "borac, u Brigadi od osnivanja, poginula 13. 10. 1944, Ćelić - Lopare.",
+        "pdf_file": "21-tuzlanska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 57.4,
+        "pdf_y": 200.3,
+        "pdf_x_end": 384.2,
+        "pdf_y_end": 220.3,
+        "pdf_x_left": 27.4,
+        "unit_file": "21-tuzlanska-soldiers.json"
       }
     ],
     "ethnicity": "Srpkinja",
@@ -12713,7 +12805,6 @@
     "fathers_name": "Zdravko",
     "full_name": "Nikolić Zdravko Niko",
     "additional_info": "Poginuo 9. maja 1945. godine, kod Trebačaja — Foča u borbi sa četničkom grupacijom Draže Mihailovića. Ostali podaci nepoznati.",
-    "birth_year": "",
     "pdf_page": 37,
     "pdf_y": 568.1,
     "pdf_x": 128.4,
@@ -12724,7 +12815,44 @@
     "pdf_x_left": 109.2,
     "death_type": "poginuo",
     "death_date": "09.05.1945",
-    "death_place": "kod Trebačaja — Foča"
+    "death_place": "kod Trebačaja — Foča",
+    "birth_year": "1913",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Kruševo, Prilep",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0010001218",
+        "name": "Nikolić Zdravko Niko",
+        "additional_info": "rođen 1913, Kruševo, Prilep, zemljoradnik, Srbin, borac, poginuo 9. 5. Ì945. s. Šestine kod Zagreba, gdje je i sahranjen",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 75,
+        "pdf_x": 204.8,
+        "pdf_y": 270.7,
+        "pdf_x_end": 365.4,
+        "pdf_y_end": 307.7,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010203428",
+        "name": "Nikolić Niko",
+        "additional_info": "rođ. 1913, Kruševo, Prilep, borac, poginuo 9. 5. 1945. Šestine — Zagreb.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 287,
+        "pdf_x": 46.7,
+        "pdf_y": 359.4,
+        "pdf_x_end": 311.4,
+        "pdf_y_end": 377.5,
+        "pdf_x_left": 29.9,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -17089,7 +17217,25 @@
     "pdf_x_end": 452.7,
     "pdf_x_left": 121.1,
     "birth_place": "Bogutovu Selu Ugljevik",
-    "death_type": "streljan"
+    "death_type": "streljan",
+    "other_sources": [
+      {
+        "soldier_id": "9022034390",
+        "name": "Simeunović (Pero) Lazar",
+        "additional_info": "rođen 1924, Bogutovo Selo (Ugljevik). Srbin, poginuo 1942. u NOBu, Bogutovo selo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2686",
+        "source_page": 2686,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1942",
+    "death_place": "Bogutovo selo"
   },
   {
     "last_name": "Simikić",
@@ -18613,7 +18759,6 @@
     "fathers_name": "",
     "full_name": "Stević Marko",
     "additional_info": "rođen u Glavičicama — Bijeljina. U NOB od 1943. godine. Poginuo novembra 1943. godine na Romaniji u borbi sa ustašama. Ostali podaci nepoznati.",
-    "birth_year": "",
     "pdf_page": 52,
     "pdf_y": 493.2,
     "pdf_x": 149.6,
@@ -18625,7 +18770,29 @@
     "birth_place": "Glavičice, Bijeljina",
     "death_type": "poginuo",
     "death_date": "11.1943",
-    "death_place": "Romanija"
+    "death_place": "Romanija",
+    "birth_year": "1915",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "trgovački pomoćnik",
+    "other_sources": [
+      {
+        "soldier_id": "0024001255",
+        "name": "Stević Marko",
+        "additional_info": "rođen 1915, živeo u Živinicama, Srbin, trgovački pomoćnik, u NOB od oktobra 1943, u brigadi od 10. 10. 1943, borac, poginuo krajem 1943. u Smrtićima (Sokolac);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 53,
+        "pdf_x": 36.5,
+        "pdf_y": 540.2,
+        "pdf_x_end": 394.5,
+        "pdf_y_end": 555.4,
+        "unit_file": "2-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stević",
@@ -19851,7 +20018,32 @@
     "birth_place": "Glavičice, Bijeljina",
     "death_type": "poginuo",
     "death_date": "12.1943",
-    "death_place": "Han-Pijesak"
+    "death_place": "Han-Pijesak",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0049011664",
+        "name": "Tripunović Doje Branko",
+        "additional_info": "1925, Glavičice, Bijeljina, SRBiH, Srbin, zemljoradnik, u brigadi od 1943, borac. Poginuo u jesen 1943. na Romaniji.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 65,
+        "pdf_x": 51.7,
+        "pdf_y": 381.9,
+        "pdf_x_end": 408.7,
+        "pdf_y_end": 399.3,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Trninić",
@@ -22463,7 +22655,32 @@
     "birth_place": "Janja, Bijeljina",
     "death_type": "poginuo",
     "death_date": "01.1944",
-    "death_place": "Šekovići"
+    "death_place": "Šekovići",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "đak",
+    "other_sources": [
+      {
+        "soldier_id": "0049011942",
+        "name": "Žulj Antona Momčilo",
+        "additional_info": "1923, Janja, Bijeljina, SRBiH, Hrvat, đak, u brigadi od avgusta 1943, borac. Poginuo 1944. kod Sokoca.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 71,
+        "pdf_x": 45.6,
+        "pdf_y": 243.9,
+        "pdf_x_end": 402.2,
+        "pdf_y_end": 260.9,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Žunić",

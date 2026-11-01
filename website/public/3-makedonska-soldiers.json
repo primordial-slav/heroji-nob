@@ -2136,7 +2136,21 @@
     "soldier_id": "0051000099",
     "pdf_x_end": 349.8,
     "death_type": "poginuo",
-    "death_place": "Poljane"
+    "death_place": "Poljane",
+    "other_sources": [
+      {
+        "soldier_id": "9014011493",
+        "name": "Maneski Dragan",
+        "additional_info": "Treća makedonska narodnooslobodilačka udarna brigada, poginuli borci: 43. Maneski Dragan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 98,
+        "pdf_x": 436.6,
+        "pdf_y": 360.9,
+        "pdf_x_end": 509.8,
+        "pdf_y_end": 370.4,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Manevski",
@@ -2721,7 +2735,6 @@
     "fathers_name": "",
     "full_name": "Nedeljković Mirko",
     "additional_info": "poginuo kod s. Gaja 24-1U-1945. god.",
-    "birth_year": "",
     "death_date": "24.04.1945",
     "pdf_page": 11,
     "pdf_y": 311.3,
@@ -2732,7 +2745,25 @@
     "pdf_x_end": 333.3,
     "pdf_x_left": 54.0,
     "death_type": "poginuo",
-    "death_place": "Gaj"
+    "death_place": "Gaj",
+    "other_sources": [
+      {
+        "soldier_id": "9025024813",
+        "name": "Nedeljković (Milutin) Mirko",
+        "additional_info": "rođen 1920, Bazovik (Pirot). Srbin, umro 1945. u NOBu, Pljevlja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=958",
+        "source_page": 958,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Bazovik, Pirot",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1920"
   },
   {
     "last_name": "Nedeljković",

@@ -3441,7 +3441,7 @@
     "first_name": "Rezak",
     "fathers_name": "",
     "full_name": "Barsilamović Rezak",
-    "additional_info": "1925, Ključ, borac 3. bataljona, 10.10.",
+    "additional_info": "1925, Ključ, borac 3. bataljona, 10.10. 1944.",
     "birth_year": "1925",
     "pdf_page": 8,
     "pdf_y": 329.6,
@@ -3449,10 +3449,10 @@
     "pdf_y_end": 348.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000171",
+    "pdf_x_end": 362.6,
     "birth_place": "Ključ",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 362.6
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Bartko",
@@ -3876,7 +3876,7 @@
     "first_name": "Alija",
     "fathers_name": "",
     "full_name": "Bašić Alija",
-    "additional_info": "1924, G. Kamengrad, mitraljezac, septembra",
+    "additional_info": "1924, G. Kamengrad, mitraljezac, septembra 1944.",
     "birth_year": "1924",
     "pdf_page": 9,
     "pdf_y": 255.4,
@@ -3884,9 +3884,9 @@
     "pdf_y_end": 274.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000193",
+    "pdf_x_end": 353.5,
     "birth_place": "G. Kamengrad",
-    "rank": "mitraljezac",
-    "pdf_x_end": 353.5
+    "rank": "mitraljezac"
   },
   {
     "last_name": "Bašić",
@@ -4613,7 +4613,26 @@
     "death_date": "18.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 360.4
+    "pdf_x_end": 360.4,
+    "other_sources": [
+      {
+        "soldier_id": "0111010118",
+        "name": "Benčina Petra Franjo",
+        "additional_info": "1902, Hum, Podr. Slatina, borac, poginuo 17.—18. 4. 1945. u s. Kućanci.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 2,
+        "pdf_x": 85.2,
+        "pdf_y": 296.3,
+        "pdf_x_end": 361.6,
+        "pdf_y_end": 313.4,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1902"
+      ]
+    }
   },
   {
     "last_name": "Benčić",
@@ -5208,7 +5227,29 @@
     "birth_place": "Mali Taraš",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 367.9
+    "pdf_x_end": 367.9,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "27.04.1945",
+    "death_place": "u St. Gracu",
+    "other_sources": [
+      {
+        "soldier_id": "0111010129",
+        "name": "Bibo Tome Jano",
+        "additional_info": "1920, Mali Taroš, Petrovgrad, borac, poginuo 27. 4. 1945. u St. Gracu.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 2,
+        "pdf_x": 85.2,
+        "pdf_y": 313.6,
+        "pdf_x_end": 361.1,
+        "pdf_y_end": 330.7,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bikicki",
@@ -6338,7 +6379,21 @@
     "soldier_id": "0022000312",
     "birth_place": "Gospođinci",
     "rank": "borac",
-    "pdf_x_end": 364.7
+    "pdf_x_end": 364.7,
+    "other_sources": [
+      {
+        "soldier_id": "0111000051",
+        "name": "Bojac Miloš",
+        "additional_info": "Gospođinci, sahr. 24. 11. 1944. u Somborn.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 243.5,
+        "pdf_y": 462.3,
+        "pdf_x_end": 515.9,
+        "pdf_y_end": 470.3,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bojanović-Vidović",
@@ -6912,7 +6967,7 @@
     "first_name": "Jevrem",
     "fathers_name": "",
     "full_name": "Boškov Jevrem",
-    "additional_info": "1924, Novi Sad, 23.10.1944, pog. februara",
+    "additional_info": "1924, Novi Sad, 23.10.1944, pog. februara 1945.",
     "birth_year": "1924",
     "pdf_page": 16,
     "pdf_y": 113.4,
@@ -6920,8 +6975,8 @@
     "pdf_y_end": 132.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000340",
-    "birth_place": "Novi Sad",
-    "pdf_x_end": 370.2
+    "pdf_x_end": 370.2,
+    "birth_place": "Novi Sad"
   },
   {
     "last_name": "Boškov",
@@ -6958,7 +7013,21 @@
     "birth_place": "Žabalj",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 370.9
+    "pdf_x_end": 370.9,
+    "other_sources": [
+      {
+        "soldier_id": "0111000064",
+        "name": "Boškov Stevan",
+        "additional_info": "Žabalj, sahr. 26. 11. 1944. u Somboru.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 244.0,
+        "pdf_y": 559.0,
+        "pdf_x_end": 516.2,
+        "pdf_y_end": 567.0,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Boškov",
@@ -7652,7 +7721,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Bragin",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona od 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona od 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 474.6,
@@ -7660,9 +7729,9 @@
     "pdf_y_end": 493.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000372",
+    "pdf_x_end": 371.2,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 371.2,
     "unit_detail": "4. bataljon"
   },
   {
@@ -7726,7 +7795,7 @@
     "first_name": "Mirko",
     "fathers_name": "",
     "full_name": "Bralić Mirko",
-    "additional_info": "Čakovec, borac 2. bataljona od septembra",
+    "additional_info": "Čakovec, borac 2. bataljona od septembra 1944.",
     "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 154.2,
@@ -7734,10 +7803,10 @@
     "pdf_y_end": 173.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000376",
+    "pdf_x_end": 351.2,
     "birth_place": "Čakovec",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 351.2
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Brankov",
@@ -7978,7 +8047,7 @@
     "first_name": "Nenad",
     "fathers_name": "",
     "full_name": "Brančić Nenad",
-    "additional_info": "Bačko Petrovo Selo, borac, oktobra",
+    "additional_info": "Bačko Petrovo Selo, borac, oktobra 1944.",
     "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 386.4,
@@ -7986,9 +8055,9 @@
     "pdf_y_end": 404.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000387",
+    "pdf_x_end": 353.0,
     "birth_place": "Bačko Petrovo Selo",
-    "rank": "borac",
-    "pdf_x_end": 353.0
+    "rank": "borac"
   },
   {
     "last_name": "Bražnjik",
@@ -8518,7 +8587,21 @@
     "death_date": "11.1944",
     "death_place": "Batina",
     "rank": "borac",
-    "pdf_x_end": 352.9
+    "pdf_x_end": 352.9,
+    "other_sources": [
+      {
+        "soldier_id": "0111000074",
+        "name": "Budimski Nikola",
+        "additional_info": "rođ. 1924, Đurđevo, borac, pog. novembra 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 3,
+        "pdf_x": 244.2,
+        "pdf_y": 634.4,
+        "pdf_x_end": 517.0,
+        "pdf_y_end": 653.0,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Buga",
@@ -8544,7 +8627,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Bugajev",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona od 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona od 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 18,
     "pdf_y": 333.3,
@@ -8552,9 +8635,9 @@
     "pdf_y_end": 352.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000418",
+    "pdf_x_end": 366.9,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 366.9,
     "unit_detail": "4. bataljon"
   },
   {
@@ -10340,7 +10423,7 @@
     "first_name": "Mladen",
     "fathers_name": "",
     "full_name": "Dabić Mladen",
-    "additional_info": "1926, Kula, borac, nestao u Belišću 11.12.",
+    "additional_info": "1926, Kula, borac, nestao u Belišću 11.12. 1944.",
     "birth_year": "1926",
     "pdf_page": 34,
     "pdf_y": 271.3,
@@ -10348,11 +10431,12 @@
     "pdf_y_end": 290.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000515",
+    "pdf_x_end": 359.9,
     "birth_place": "Kula",
     "death_type": "nestao",
-    "rank": "borac",
-    "pdf_x_end": 359.9,
-    "death_place": "Belišće"
+    "death_date": "11.12.1944",
+    "death_place": "Belišće",
+    "rank": "borac"
   },
   {
     "last_name": "Dabić",
@@ -10503,7 +10587,7 @@
     "first_name": "",
     "fathers_name": "M",
     "full_name": "Danilov M",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 35,
     "pdf_y": 80.7,
@@ -10511,9 +10595,9 @@
     "pdf_y_end": 99.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000523",
+    "pdf_x_end": 344.3,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 344.3,
     "unit_detail": "4. bataljon"
   },
   {
@@ -11177,7 +11261,21 @@
     "death_type": "poginuo",
     "death_date": "18.04.1945",
     "death_place": "Bjelkovci",
-    "pdf_x_end": 345.6
+    "pdf_x_end": 345.6,
+    "other_sources": [
+      {
+        "soldier_id": "0111010279",
+        "name": "Dević Stevan",
+        "additional_info": "1919, Đurđevo, Zabalj, vodni oficir, poginuo 18. 4. 1945. u Bjelkovcu.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 5,
+        "pdf_x": 66.2,
+        "pdf_y": 349.9,
+        "pdf_x_end": 347.0,
+        "pdf_y_end": 367.8,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Devrnja",
@@ -12077,7 +12175,7 @@
     "first_name": "Mika",
     "fathers_name": "",
     "full_name": "Dolovac Mika",
-    "additional_info": "1921, Čurug, borac, rat. voj. invalid, 20.10.",
+    "additional_info": "1921, Čurug, borac, rat. voj. invalid, 20.10. 1944.",
     "birth_year": "1921",
     "pdf_page": 37,
     "pdf_y": 477.3,
@@ -12085,9 +12183,9 @@
     "pdf_y_end": 495.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000598",
+    "pdf_x_end": 355.3,
     "birth_place": "Čurug",
-    "rank": "borac",
-    "pdf_x_end": 355.3
+    "rank": "borac"
   },
   {
     "last_name": "Dolovac",
@@ -12858,7 +12956,7 @@
     "first_name": "Jovan",
     "fathers_name": "",
     "full_name": "Dražin Jovan",
-    "additional_info": "1916, Kać, vodnik, nestao na Dunavu, 13.11.",
+    "additional_info": "1916, Kać, vodnik, nestao na Dunavu, 13.11. 1944.",
     "birth_year": "1916",
     "pdf_page": 39,
     "pdf_y": 54.9,
@@ -12866,11 +12964,12 @@
     "pdf_y_end": 73.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000636",
+    "pdf_x_end": 345.7,
     "birth_place": "Kać",
     "death_type": "nestao",
-    "rank": "vodnik",
-    "pdf_x_end": 345.7,
-    "death_place": "Dunav"
+    "death_date": "13.11.1944",
+    "death_place": "Dunav",
+    "rank": "vodnik"
   },
   {
     "last_name": "Dreljin",
@@ -13410,7 +13509,7 @@
     "first_name": "",
     "fathers_name": "V",
     "full_name": "Džugalijev V",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 146,
     "pdf_y": 54.6,
@@ -13418,9 +13517,9 @@
     "pdf_y_end": 73.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000665",
+    "pdf_x_end": 357.9,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 357.9,
     "unit_detail": "4. bataljon"
   },
   {
@@ -13448,7 +13547,7 @@
     "first_name": "Murat",
     "fathers_name": "",
     "full_name": "Džundugujev Murat",
-    "additional_info": "1917, G. Čerkez, SSSR, borac, 2.07—10.10.",
+    "additional_info": "1917, G. Čerkez, SSSR, borac, 2.07—10.10. 1944.",
     "birth_year": "1917",
     "pdf_page": 145,
     "pdf_y": 393.3,
@@ -13456,9 +13555,9 @@
     "pdf_y_end": 411.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000667",
+    "pdf_x_end": 360.9,
     "birth_place": "G. Čerkez, SSSR",
-    "rank": "borac",
-    "pdf_x_end": 360.9
+    "rank": "borac"
   },
   {
     "last_name": "Džunin",
@@ -14202,7 +14301,7 @@
     "first_name": "Pjotr",
     "fathers_name": "",
     "full_name": "Fenj Pjotr",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 137,
     "pdf_y": 141.7,
@@ -14210,9 +14309,9 @@
     "pdf_y_end": 161.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000705",
+    "pdf_x_end": 347.8,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 347.8,
     "unit_detail": "4. bataljon"
   },
   {
@@ -15326,7 +15425,7 @@
     "first_name": "Andrej",
     "fathers_name": "",
     "full_name": "Garagulja Andrej",
-    "additional_info": "1924, Kremenčug, SSSR, borac, 2.07—10.10.",
+    "additional_info": "1924, Kremenčug, SSSR, borac, 2.07—10.10. 1944.",
     "birth_year": "1924",
     "pdf_page": 29,
     "pdf_y": 320.6,
@@ -15334,9 +15433,9 @@
     "pdf_y_end": 339.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000760",
+    "pdf_x_end": 341.5,
     "birth_place": "Kremenčug, SSSR",
-    "rank": "borac",
-    "pdf_x_end": 341.5
+    "rank": "borac"
   },
   {
     "last_name": "Garaj",
@@ -15615,7 +15714,7 @@
     "first_name": "Miodrag",
     "fathers_name": "",
     "full_name": "Gavrilović Miodrag",
-    "additional_info": "1913, Čurug, komandir čete, 24.10.",
+    "additional_info": "1913, Čurug, komandir čete, 24.10. 1944.",
     "birth_year": "1913",
     "pdf_page": 28,
     "pdf_y": 114.9,
@@ -15623,9 +15722,9 @@
     "pdf_y_end": 134.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000776",
+    "pdf_x_end": 361.7,
     "birth_place": "Čurug",
-    "rank": "komandir čete",
-    "pdf_x_end": 361.7
+    "rank": "komandir čete"
   },
   {
     "last_name": "Gavrić",
@@ -16317,7 +16416,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Golovačev",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 31,
     "pdf_y": 270.8,
@@ -16325,9 +16424,9 @@
     "pdf_y_end": 289.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000814",
+    "pdf_x_end": 353.2,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 353.2,
     "unit_detail": "4. bataljon"
   },
   {
@@ -17830,7 +17929,7 @@
     "first_name": "Đoka",
     "fathers_name": "",
     "full_name": "Hadnabev Đoka",
-    "additional_info": "1926, Bačko Petrovo Selo, borac, oktobra",
+    "additional_info": "1926, Bačko Petrovo Selo, borac, oktobra 1944.",
     "birth_year": "1926",
     "pdf_page": 138,
     "pdf_y": 212.7,
@@ -17838,9 +17937,9 @@
     "pdf_y_end": 231.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000889",
+    "pdf_x_end": 358.6,
     "birth_place": "Bačko Petrovo Selo",
-    "rank": "borac",
-    "pdf_x_end": 358.6
+    "rank": "borac"
   },
   {
     "last_name": "Hadžiković",
@@ -19244,7 +19343,7 @@
     "first_name": "",
     "fathers_name": "V",
     "full_name": "Hripunov V",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 140,
     "pdf_y": 441.0,
@@ -19252,9 +19351,9 @@
     "pdf_y_end": 459.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000954",
+    "pdf_x_end": 371.0,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 371.0,
     "unit_detail": "4. bataljon"
   },
   {
@@ -20916,7 +21015,6 @@
     "fathers_name": "",
     "full_name": "Ivošev Sofija",
     "additional_info": "Futog, borac 7. VUB, oktobra 1944. nestala u borbi.",
-    "birth_year": "",
     "pdf_page": 47,
     "pdf_y": 473.1,
     "pdf_x": 70.9,
@@ -20926,7 +21024,25 @@
     "birth_place": "Futog",
     "death_type": "nestao",
     "rank": "borac",
-    "pdf_x_end": 353.0
+    "pdf_x_end": 353.0,
+    "other_sources": [
+      {
+        "soldier_id": "9027003668",
+        "name": "Ivošev (Rajko) Sofija",
+        "additional_info": "rođena 1928, Futog (Novi Sad). Srpkinja, poginula 1945. u NOBu, 3.vojvođ.brig.",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=172",
+        "source_page": 172,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "birth_year": "1928"
   },
   {
     "last_name": "Izotov",
@@ -21037,7 +21153,29 @@
     "birth_place": "Vojlovica",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 351.9
+    "pdf_x_end": 351.9,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "13.04.1945",
+    "death_place": "Josipovac",
+    "other_sources": [
+      {
+        "soldier_id": "0111010497",
+        "name": "Jahoda Ivan",
+        "additional_info": "Vojlovica, Pančevo, borac, poginuo 13. 4. 1945. kod Josipovca.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 8,
+        "pdf_x": 78.3,
+        "pdf_y": 498.9,
+        "pdf_x_end": 358.9,
+        "pdf_y_end": 516.1,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jajnin",
@@ -21091,7 +21229,29 @@
     "soldier_id": "0022001042",
     "birth_place": "Kula",
     "rank": "borac",
-    "pdf_x_end": 315.1
+    "pdf_x_end": 315.1,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "20.01.1945",
+    "death_place": "Bazje",
+    "other_sources": [
+      {
+        "soldier_id": "0111010498",
+        "name": "Jakić Nova",
+        "additional_info": "Kula, borac, poginuo 20. 1. 1945. u s. Bazje.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 9,
+        "pdf_x": 76.4,
+        "pdf_y": 214.6,
+        "pdf_x_end": 356.6,
+        "pdf_y_end": 223.3,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jakopec",
@@ -21399,7 +21559,34 @@
     "birth_place": "Velika Kikinda",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 363.9
+    "pdf_x_end": 363.9,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "21.04.1945",
+    "death_place": "Gor. Miholjac",
+    "other_sources": [
+      {
+        "soldier_id": "0111010506",
+        "name": "Jan Sava",
+        "additional_info": "1926, Vel. Kikinda, borac, poginuo 21. 4. 1945. u s. Gor. Miholjac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 8,
+        "pdf_x": 78.3,
+        "pdf_y": 441.6,
+        "pdf_x_end": 358.7,
+        "pdf_y_end": 459.0,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Jandrić",
@@ -22974,7 +23161,39 @@
     "birth_place": "Branjevo",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 349.8
+    "pdf_x_end": 349.8,
+    "other_sources": [
+      {
+        "soldier_id": "9027003436",
+        "name": "Jocković (Obrad) Lazar",
+        "additional_info": "rođen 1925, Novi Bečej. Srbin, poginuo 1945. u NOBu, Novi bečej",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=160",
+        "source_page": 160,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0111010534",
+        "name": "Jocković Lazar",
+        "additional_info": "1925. Vranjevo, Novi Bečej, borac, poginuo 17—19. 4. 1945. u Kućancima.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 8,
+        "pdf_x": 78.3,
+        "pdf_y": 386.6,
+        "pdf_x_end": 358.2,
+        "pdf_y_end": 403.8,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_date": "19.04.1945",
+    "ethnicity": "Srbin",
+    "death_place": "Novi bečej"
   },
   {
     "last_name": "Jojkin",
@@ -25634,7 +25853,29 @@
     "soldier_id": "0022001248",
     "birth_place": "Vranjevo",
     "rank": "bombaš",
-    "pdf_x_end": 352.3
+    "pdf_x_end": 352.3,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "07.03.1945",
+    "death_place": "Bolman",
+    "other_sources": [
+      {
+        "soldier_id": "0111010590",
+        "name": "Karapalija Milan",
+        "additional_info": "1924, Branjevo, N. Bečej, bombaš, poginuo 7. 3. 1945. u s. Bolman.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 11,
+        "pdf_x": 66.2,
+        "pdf_y": 164.5,
+        "pdf_x_end": 346.4,
+        "pdf_y_end": 181.8,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Karelj",
@@ -25831,7 +26072,7 @@
     "first_name": "Paja",
     "fathers_name": "",
     "full_name": "Katanović Paja",
-    "additional_info": "puškomitraljezac 3. bataljona, oktobra",
+    "additional_info": "puškomitraljezac 3. bataljona, oktobra 1944.",
     "birth_year": "",
     "pdf_page": 58,
     "pdf_y": 187.7,
@@ -25839,9 +26080,9 @@
     "pdf_y_end": 206.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001258",
+    "pdf_x_end": 370.3,
     "rank": "puškomitraljezac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 370.3
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Katić",
@@ -26280,7 +26521,7 @@
     "first_name": "Jovan",
     "fathers_name": "",
     "full_name": "Kiselički Jovan",
-    "additional_info": "1926, Bačko Gradište, borac, oktobra",
+    "additional_info": "1926, Bačko Gradište, borac, oktobra 1944.",
     "birth_year": "1926",
     "pdf_page": 59,
     "pdf_y": 191.9,
@@ -26288,9 +26529,9 @@
     "pdf_y_end": 211.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001281",
+    "pdf_x_end": 358.5,
     "birth_place": "Bačko Gradište",
-    "rank": "borac",
-    "pdf_x_end": 358.5
+    "rank": "borac"
   },
   {
     "last_name": "Kiselički",
@@ -27685,7 +27926,7 @@
     "first_name": "Marica",
     "fathers_name": "",
     "full_name": "Kolarski-Čubranin Marica",
-    "additional_info": "Futog, borac, oktobra",
+    "additional_info": "Futog, borac, oktobra 1944.",
     "birth_year": "",
     "pdf_page": 64,
     "pdf_y": 199.7,
@@ -27693,9 +27934,9 @@
     "pdf_y_end": 223.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001346",
+    "pdf_x_end": 364.2,
     "birth_place": "Futog",
-    "rank": "borac",
-    "pdf_x_end": 364.2
+    "rank": "borac"
   },
   {
     "last_name": "Kolbas",
@@ -28064,7 +28305,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Kondratov",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 65,
     "pdf_y": 121.8,
@@ -28072,9 +28313,9 @@
     "pdf_y_end": 140.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001366",
+    "pdf_x_end": 351.2,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 351.2,
     "unit_detail": "4. bataljon"
   },
   {
@@ -28094,7 +28335,29 @@
     "birth_place": "Prhovo",
     "rank": "pomoćnik komesara",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 351.1
+    "pdf_x_end": 351.1,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "12.04.1945",
+    "death_place": "Josipovac",
+    "other_sources": [
+      {
+        "soldier_id": "0111010649",
+        "name": "Konjević Sreta",
+        "additional_info": "1908, Prahovo, Ruma, pom. komesara 2. bataljona, poginuo 12. 4. 1945. u s. Josipovac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 10,
+        "pdf_x": 65.3,
+        "pdf_y": 336.5,
+        "pdf_x_end": 346.1,
+        "pdf_y_end": 353.6,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Konjović",
@@ -28183,7 +28446,30 @@
     "soldier_id": "0022001372",
     "birth_place": "Čerević",
     "rank": "borac",
-    "pdf_x_end": 351.2
+    "pdf_x_end": 351.2,
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0057004115",
+        "name": "Koplin Svetozar",
+        "additional_info": "rođen 1925. Čerević, Beočin, zemljoradnik, borac, ranjen 26. 3. 1944. Zovik — Rahić, istočna Bosna.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 107,
+        "pdf_x": 57.3,
+        "pdf_y": 370.8,
+        "pdf_x_end": 338.4,
+        "pdf_y_end": 388.8,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Kopčok",
@@ -29611,7 +29897,29 @@
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001436",
     "birth_place": "Manćelos",
-    "pdf_x_end": 369.5
+    "pdf_x_end": 369.5,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "12.12.1944",
+    "death_place": "Drava",
+    "other_sources": [
+      {
+        "soldier_id": "0111010697",
+        "name": "Koviljac Bora",
+        "additional_info": "1925, Mandelos, Sr. Mitrovica, delegat, poginuo 12. 12. 1944. na Dravi.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 11,
+        "pdf_x": 67.7,
+        "pdf_y": 445.0,
+        "pdf_x_end": 348.0,
+        "pdf_y_end": 463.3,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kovinčić",
@@ -31413,7 +31721,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Kukušin",
-    "additional_info": "SSSR, borac, 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac, 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 69,
     "pdf_y": 421.1,
@@ -31421,9 +31729,9 @@
     "pdf_y_end": 440.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001523",
+    "pdf_x_end": 345.0,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 345.0,
     "unit_detail": "4. bataljon"
   },
   {
@@ -31765,7 +32073,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Kurjagin",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2. 07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2. 07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 70,
     "pdf_y": 232.8,
@@ -31773,9 +32081,9 @@
     "pdf_y_end": 251.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001539",
+    "pdf_x_end": 359.8,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 359.8,
     "unit_detail": "4. bataljon"
   },
   {
@@ -31857,7 +32165,7 @@
     "first_name": "Lazar",
     "fathers_name": "",
     "full_name": "Kuručev Lazar",
-    "additional_info": "1925, Omoljica, oktobra 1944, borac, 27.10.",
+    "additional_info": "1925, Omoljica, oktobra 1944, borac, 27.10. 1944.",
     "birth_year": "1925",
     "pdf_page": 70,
     "pdf_y": 324.0,
@@ -31865,9 +32173,9 @@
     "pdf_y_end": 342.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001544",
+    "pdf_x_end": 359.9,
     "birth_place": "Omoljica",
-    "rank": "borac",
-    "pdf_x_end": 359.9
+    "rank": "borac"
   },
   {
     "last_name": "Kuručev",
@@ -32820,6 +33128,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=4",
         "source_page": 4,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0111010767",
+        "name": "Lazić Matija",
+        "additional_info": "1925, Draž, Batina, borac, poginuo 8. 3. 1945. kod Bolmana.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 12,
+        "pdf_x": 70.9,
+        "pdf_y": 285.6,
+        "pdf_x_end": 352.2,
+        "pdf_y_end": 303.0,
+        "unit_file": "51-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -33438,7 +33758,29 @@
     "birth_place": "Kać",
     "rank": "desetar",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 354.1
+    "pdf_x_end": 354.1,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "07.03.1945",
+    "death_place": "Bolman",
+    "other_sources": [
+      {
+        "soldier_id": "0111010780",
+        "name": "Letić Ivana Todor",
+        "additional_info": "1925, Kać, Novi Sad, desetar, poginuo 7. 3. 1945. u s. Bolman.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 12,
+        "pdf_x": 70.4,
+        "pdf_y": 372.0,
+        "pdf_x_end": 351.9,
+        "pdf_y_end": 389.4,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Letić",
@@ -33642,7 +33984,7 @@
     "first_name": "Miša",
     "fathers_name": "",
     "full_name": "Lipoš Miša",
-    "additional_info": "vodnik Automatičarske čete, oktobra",
+    "additional_info": "vodnik Automatičarske čete, oktobra 1944.",
     "birth_year": "",
     "pdf_page": 73,
     "pdf_y": 414.3,
@@ -33650,8 +33992,8 @@
     "pdf_y_end": 433.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001630",
-    "rank": "vodnik",
-    "pdf_x_end": 353.3
+    "pdf_x_end": 353.3,
+    "rank": "vodnik"
   },
   {
     "last_name": "Lipuš",
@@ -33943,7 +34285,7 @@
     "first_name": "",
     "fathers_name": "",
     "full_name": "Lješvalav",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 75,
     "pdf_y": 290.8,
@@ -33951,9 +34293,9 @@
     "pdf_y_end": 309.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001643",
+    "pdf_x_end": 356.5,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 356.5,
     "unit_detail": "4. bataljon"
   },
   {
@@ -38913,7 +39255,21 @@
     "death_date": "14.11.1944",
     "death_place": "Dunav",
     "rank": "borac",
-    "pdf_x_end": 346.8
+    "pdf_x_end": 346.8,
+    "other_sources": [
+      {
+        "soldier_id": "0111000323",
+        "name": "Milanov Gavra",
+        "additional_info": "rođ. 1928, Srbobran, nestao 14. 11. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 27,
+        "pdf_x": 249.1,
+        "pdf_y": 656.1,
+        "pdf_x_end": 526.0,
+        "pdf_y_end": 674.9,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milanov",
@@ -39718,7 +40074,21 @@
     "death_date": "08.03.1945",
     "death_place": "Beli Manastir",
     "rank": "borac",
-    "pdf_x_end": 348.7
+    "pdf_x_end": 348.7,
+    "other_sources": [
+      {
+        "soldier_id": "0111010910",
+        "name": "Milovanov Sava",
+        "additional_info": "1925, Uglješa, Darda, borac, poginuo 8. 3. 1945. kod Bolmana.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 13,
+        "pdf_x": 70.8,
+        "pdf_y": 164.5,
+        "pdf_x_end": 351.6,
+        "pdf_y_end": 181.7,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milovanov",
@@ -40246,7 +40616,6 @@
     "fathers_name": "",
     "full_name": "Mirilov Branko",
     "additional_info": "Bačko Gradište, pog. februara 1945. na virovitičkom mostobranu.",
-    "birth_year": "",
     "pdf_page": 86,
     "pdf_y": 288.2,
     "pdf_x": 73.1,
@@ -40254,7 +40623,27 @@
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001947",
     "birth_place": "Bačko Gradište",
-    "pdf_x_end": 354.6
+    "pdf_x_end": 354.6,
+    "other_sources": [
+      {
+        "soldier_id": "9027000754",
+        "name": "Mirilov (Jovo) Branko",
+        "additional_info": "rođen 1927, Bačko Gradište (Bajmok). Srbin, poginuo 1944. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=44",
+        "source_page": 44,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "birth_year": "1927"
   },
   {
     "last_name": "Mirić",
@@ -40511,7 +40900,7 @@
     "first_name": "Slavko",
     "fathers_name": "",
     "full_name": "Mirković Slavko",
-    "additional_info": "Neradin, borac izviđač, septembar",
+    "additional_info": "Neradin, borac izviđač, septembar 1944.",
     "birth_year": "",
     "pdf_page": 87,
     "pdf_y": 51.6,
@@ -40519,9 +40908,9 @@
     "pdf_y_end": 70.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001958",
+    "pdf_x_end": 345.0,
     "birth_place": "Neradin",
-    "rank": "izviđač",
-    "pdf_x_end": 345.0
+    "rank": "izviđač"
   },
   {
     "last_name": "Mirković",
@@ -42267,7 +42656,7 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Nedeljković Nikola",
-    "additional_info": "Futog, pog. na Batini novembra",
+    "additional_info": "Futog, pog. na Batini novembra 1944.",
     "birth_year": "",
     "pdf_page": 91,
     "pdf_y": 229.5,
@@ -42275,8 +42664,8 @@
     "pdf_y_end": 248.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002043",
-    "birth_place": "Futog",
-    "pdf_x_end": 352.6
+    "pdf_x_end": 352.6,
+    "birth_place": "Futog"
   },
   {
     "last_name": "Nedeljković",
@@ -42763,7 +43152,7 @@
     "first_name": "Boško",
     "fathers_name": "",
     "full_name": "Nesarov Boško",
-    "additional_info": "1918, Čurug, ratni invalid, borac, 24.10.",
+    "additional_info": "1918, Čurug, ratni invalid, borac, 24.10. 1944.",
     "birth_year": "1918",
     "pdf_page": 134,
     "pdf_y": 351.6,
@@ -42771,9 +43160,9 @@
     "pdf_y_end": 370.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002065",
+    "pdf_x_end": 360.2,
     "birth_place": "Čurug",
-    "rank": "borac",
-    "pdf_x_end": 360.2
+    "rank": "borac"
   },
   {
     "last_name": "Nesarov",
@@ -43138,7 +43527,7 @@
     "first_name": "Borivoj",
     "fathers_name": "",
     "full_name": "Nikolić Borivoj",
-    "additional_info": "1911, Subotica, borac 4. bataljona, 24.10.",
+    "additional_info": "1911, Subotica, borac 4. bataljona, 24.10. 1944.",
     "birth_year": "1911",
     "pdf_page": 92,
     "pdf_y": 286.8,
@@ -43146,10 +43535,10 @@
     "pdf_y_end": 305.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002083",
+    "pdf_x_end": 360.8,
     "birth_place": "Subotica",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 360.8
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Nikolić",
@@ -45895,7 +46284,6 @@
     "fathers_name": "",
     "full_name": "Pančić Jovan",
     "additional_info": "Stari Sivac, borac, pog. 20.11.1944, Batina.",
-    "birth_year": "",
     "pdf_page": 99,
     "pdf_y": 117.5,
     "pdf_x": 67.0,
@@ -45904,7 +46292,31 @@
     "soldier_id": "0022002215",
     "birth_place": "Stari Sivac",
     "rank": "borac",
-    "pdf_x_end": 349.2
+    "pdf_x_end": 349.2,
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "poginuo",
+    "death_date": "20.11.1944",
+    "death_place": "Batina",
+    "other_sources": [
+      {
+        "soldier_id": "0111000377",
+        "name": "Pančić Jovan",
+        "additional_info": "rođ. 1912, Sivac (Sombor), borac, pog. 20. 11. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 298.8,
+        "pdf_y": 688.9,
+        "pdf_x_end": 575.7,
+        "pdf_y_end": 707.7,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pančić",
@@ -46002,7 +46414,7 @@
     "first_name": "Đuro",
     "fathers_name": "",
     "full_name": "Pap Đuro",
-    "additional_info": "1925, Burćevo, nestao pri forsiranju Drave, 12.12.",
+    "additional_info": "1925, Burćevo, nestao pri forsiranju Drave, 12.12. 1944.",
     "birth_year": "1925",
     "pdf_page": 99,
     "pdf_y": 194.2,
@@ -46010,9 +46422,10 @@
     "pdf_y_end": 213.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002221",
+    "pdf_x_end": 349.8,
     "birth_place": "Burćevo",
     "death_type": "nestao",
-    "pdf_x_end": 349.8
+    "death_date": "12.12.1944"
   },
   {
     "last_name": "Papa",
@@ -48036,7 +48449,7 @@
     "first_name": "Todor",
     "fathers_name": "",
     "full_name": "Perić Todor",
-    "additional_info": "1923, Žabalj, borac, neetao kod Batine 17.11.",
+    "additional_info": "1923, Žabalj, borac, neetao kod Batine 17.11. 1944.",
     "birth_year": "1923",
     "pdf_page": 102,
     "pdf_y": 154.8,
@@ -48044,12 +48457,12 @@
     "pdf_y_end": 173.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002318",
-    "birth_place": "Žabalj",
-    "rank": "borac",
     "pdf_x_end": 360.9,
     "death_type": "nestao",
     "death_date": "17.11.1944",
     "death_place": "Batina",
+    "birth_place": "Žabalj",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0111000408",
@@ -48380,7 +48793,7 @@
     "first_name": "",
     "fathers_name": "J",
     "full_name": "Petrov J",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 102,
     "pdf_y": 424.5,
@@ -48388,9 +48801,9 @@
     "pdf_y_end": 443.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002335",
+    "pdf_x_end": 362.7,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 362.7,
     "unit_detail": "4. bataljon"
   },
   {
@@ -48435,7 +48848,7 @@
     "first_name": "Steva",
     "fathers_name": "",
     "full_name": "Petrov Steva",
-    "additional_info": "1923, Jarmina, borac 2. bataljona, septembar",
+    "additional_info": "1923, Jarmina, borac 2. bataljona, septembar 1944.",
     "birth_year": "1923",
     "pdf_page": 102,
     "pdf_y": 477.2,
@@ -48443,10 +48856,10 @@
     "pdf_y_end": 496.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002338",
+    "pdf_x_end": 362.1,
     "birth_place": "Jarmina",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 362.1
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Petrov",
@@ -50460,7 +50873,7 @@
     "first_name": "Jeg",
     "fathers_name": "",
     "full_name": "Poskov Jeg",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 107,
     "pdf_y": 150.5,
@@ -50468,9 +50881,9 @@
     "pdf_y_end": 174.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002437",
+    "pdf_x_end": 349.8,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 349.8,
     "unit_detail": "4. bataljon"
   },
   {
@@ -50888,7 +51301,7 @@
     "first_name": "Aleksandar",
     "fathers_name": "",
     "full_name": "Prkoslovački Aleksandar",
-    "additional_info": "St. Bečej, borac, oktobar",
+    "additional_info": "St. Bečej, borac, oktobar 1944.",
     "birth_year": "",
     "pdf_page": 107,
     "pdf_y": 444.4,
@@ -50896,9 +51309,9 @@
     "pdf_y_end": 463.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002457",
+    "pdf_x_end": 349.4,
     "birth_place": "St. Bečej",
-    "rank": "borac",
-    "pdf_x_end": 349.4
+    "rank": "borac"
   },
   {
     "last_name": "Prodanov",
@@ -52014,7 +52427,7 @@
     "first_name": "Bogdan",
     "fathers_name": "",
     "full_name": "Radišić Bogdan",
-    "additional_info": "1927, Turija, borac 2/2. bataljona, 20.10.",
+    "additional_info": "1927, Turija, borac 2/2. bataljona, 20.10. 1944.",
     "birth_year": "1927",
     "pdf_page": 110,
     "pdf_y": 56.2,
@@ -52022,10 +52435,10 @@
     "pdf_y_end": 74.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002511",
+    "pdf_x_end": 371.2,
     "birth_place": "Turija",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 371.2
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Radišić",
@@ -52656,7 +53069,6 @@
     "fathers_name": "",
     "full_name": "Radovanov Milenko",
     "additional_info": "Čurug, borac, poginuo u 7. brigadi.",
-    "birth_year": "",
     "pdf_page": 110,
     "pdf_y": 312.1,
     "pdf_x": 87.8,
@@ -52666,7 +53078,27 @@
     "birth_place": "Čurug",
     "death_type": "poginuo",
     "rank": "borac",
-    "pdf_x_end": 370.6
+    "pdf_x_end": 370.6,
+    "other_sources": [
+      {
+        "soldier_id": "9027010681",
+        "name": "Radovanov (Živko) Milenko",
+        "additional_info": "rođen 1919, Čurug (Žabalj). Srbin, poginuo 1944. u NOBu, Batina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=585",
+        "source_page": 585,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Batina",
+    "birth_year": "1919"
   },
   {
     "last_name": "Radovanov",
@@ -53818,7 +54250,7 @@
     "first_name": "Živko",
     "fathers_name": "",
     "full_name": "Ratkov Živko",
-    "additional_info": "1920, Čurug, komandir voda, izviđač, 24.10.",
+    "additional_info": "1920, Čurug, komandir voda, izviđač, 24.10. 1944.",
     "birth_year": "1920",
     "pdf_page": 113,
     "pdf_y": 305.9,
@@ -53826,9 +54258,9 @@
     "pdf_y_end": 324.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002597",
+    "pdf_x_end": 348.2,
     "birth_place": "Čurug",
-    "rank": "komandir voda, izviđač",
-    "pdf_x_end": 348.2
+    "rank": "komandir voda, izviđač"
   },
   {
     "last_name": "Ratković",
@@ -54506,7 +54938,30 @@
     "soldier_id": "0022002632",
     "birth_place": "Čurug",
     "rank": "borac",
-    "pdf_x_end": 342.0
+    "pdf_x_end": 342.0,
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0057003037",
+        "name": "Romčev Stevan",
+        "additional_info": "rođen 1919. Čurug, Žabalj, zemljoradnik, borac, ranjen 12. 4. 1945. Valpovo, Podravina.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 147,
+        "pdf_x": 49.3,
+        "pdf_y": 118.5,
+        "pdf_x_end": 330.8,
+        "pdf_y_end": 136.8,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Rotonjin",
@@ -54655,7 +55110,21 @@
     "death_date": "02.03.1945",
     "death_place": "Senta",
     "rank": "borac",
-    "pdf_x_end": 342.4
+    "pdf_x_end": 342.4,
+    "other_sources": [
+      {
+        "soldier_id": "0111011199",
+        "name": "Rubi Jano",
+        "additional_info": "1922, Belo Blato, Petrovgrad, borac, poginuo marta 1945. u Baranji.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 17,
+        "pdf_x": 63.2,
+        "pdf_y": 401.0,
+        "pdf_x_end": 344.3,
+        "pdf_y_end": 418.1,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rudinski",
@@ -54985,7 +55454,21 @@
     "death_date": "28.04.1945",
     "death_place": "Klenik",
     "rank": "borac",
-    "pdf_x_end": 353.1
+    "pdf_x_end": 353.1,
+    "other_sources": [
+      {
+        "soldier_id": "0111011210",
+        "name": "Sablja Denje Ive",
+        "additional_info": "1927, Henda, Alibunar, borac, poginuo 28. 4. 1945. u s. Kenik.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 18,
+        "pdf_x": 88.3,
+        "pdf_y": 487.2,
+        "pdf_x_end": 369.1,
+        "pdf_y_end": 504.3,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sabljak",
@@ -55508,7 +55991,39 @@
     "soldier_id": "0022002681",
     "birth_place": "Burđevo",
     "rank": "borac",
-    "pdf_x_end": 342.7
+    "pdf_x_end": 342.7,
+    "other_sources": [
+      {
+        "soldier_id": "9027010717",
+        "name": "Salamun (Đura) Nikola",
+        "additional_info": "rođen 1926, Đurđevo (Žabalj). ostalo, poginuo 1944. u NOBu, Zmajevac-batina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=591",
+        "source_page": 591,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0111000478",
+        "name": "Salamun Nikola",
+        "additional_info": "rođ. 1926, Đurđevo, borac, pog. 26. U. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 298.4,
+        "pdf_y": 541.5,
+        "pdf_x_end": 574.8,
+        "pdf_y_end": 560.3,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "ostalo",
+    "death_date": "1944",
+    "death_place": "Zmajevac-batina"
   },
   {
     "last_name": "Salazin",
@@ -55605,7 +56120,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Samodaj Josip",
-    "additional_info": "1909, SSSR, borac 4. bataljona, 2.07—10.10.",
+    "additional_info": "1909, SSSR, borac 4. bataljona, 2.07—10.10. 1944.",
     "birth_year": "1909",
     "pdf_page": 118,
     "pdf_y": 51.2,
@@ -55613,10 +56128,10 @@
     "pdf_y_end": 70.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002687",
+    "pdf_x_end": 358.3,
     "birth_place": "SSSR",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 358.3
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Samoljenko",
@@ -56838,7 +57353,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Serih Ivan",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 120,
     "pdf_y": 295.3,
@@ -56846,9 +57361,9 @@
     "pdf_y_end": 314.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002742",
+    "pdf_x_end": 362.6,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 362.6,
     "unit_detail": "4. bataljon"
   },
   {
@@ -56948,7 +57463,7 @@
     "first_name": "Jova",
     "fathers_name": "",
     "full_name": "Silabi Jova",
-    "additional_info": "1921, Ruski Krstur, borac 4. bataljona, 24.10.",
+    "additional_info": "1921, Ruski Krstur, borac 4. bataljona, 24.10. 1944.",
     "birth_year": "1921",
     "pdf_page": 120,
     "pdf_y": 459.6,
@@ -56956,10 +57471,10 @@
     "pdf_y_end": 478.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002748",
+    "pdf_x_end": 363.8,
     "birth_place": "Ruski Krstur",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 363.8
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Siladžija",
@@ -57041,7 +57556,7 @@
     "first_name": "Aleksandar",
     "fathers_name": "Kosta",
     "full_name": "Simić Koste Aleksandar",
-    "additional_info": "1911, Vilanj, Baranja, oktobra",
+    "additional_info": "1911, Vilanj, Baranja, oktobra 1944.",
     "birth_year": "1911",
     "pdf_page": 121,
     "pdf_y": 89.5,
@@ -57049,8 +57564,8 @@
     "pdf_y_end": 109.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002753",
-    "birth_place": "Vilanj, Baranja",
-    "pdf_x_end": 347.4
+    "pdf_x_end": 347.4,
+    "birth_place": "Vilanj, Baranja"
   },
   {
     "last_name": "Simić",
@@ -57341,7 +57856,7 @@
     "first_name": "Pjotr",
     "fathers_name": "",
     "full_name": "Sivin Pjotr",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 120,
     "pdf_y": 374.3,
@@ -57349,9 +57864,9 @@
     "pdf_y_end": 393.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002768",
+    "pdf_x_end": 363.4,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 363.4,
     "unit_detail": "4. bataljon"
   },
   {
@@ -58159,7 +58674,7 @@
     "first_name": "Dušan",
     "fathers_name": "Todor",
     "full_name": "Srenkov Todora Dušan",
-    "additional_info": "1914, Novi Sad — Čenej, oktobra",
+    "additional_info": "1914, Novi Sad — Čenej, oktobra 1944.",
     "birth_year": "1914",
     "pdf_page": 123,
     "pdf_y": 117.7,
@@ -58167,8 +58682,8 @@
     "pdf_y_end": 136.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002807",
-    "birth_place": "Novi Sad, Čenej",
-    "pdf_x_end": 346.6
+    "pdf_x_end": 346.6,
+    "birth_place": "Novi Sad, Čenej"
   },
   {
     "last_name": "Srenkov",
@@ -58622,7 +59137,29 @@
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002828",
     "birth_place": "Novi Sad",
-    "pdf_x_end": 360.9
+    "pdf_x_end": 360.9,
+    "death_type": "nestao",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "18.11.1944",
+    "death_place": "Batina",
+    "other_sources": [
+      {
+        "soldier_id": "0111000497",
+        "name": "Stankov Todor",
+        "additional_info": "Novi Sad, borac, nestao 18. 11. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 29,
+        "pdf_x": 247.0,
+        "pdf_y": 666.0,
+        "pdf_x_end": 524.2,
+        "pdf_y_end": 684.8,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanković",
@@ -59524,7 +60061,7 @@
     "first_name": "Slobodan",
     "fathers_name": "Stanoje",
     "full_name": "Stoja Stanoja Slobodan",
-    "additional_info": "1926, Bačko Dobro Polje, oktobra",
+    "additional_info": "1926, Bačko Dobro Polje, oktobra 1944.",
     "birth_year": "1926",
     "pdf_page": 126,
     "pdf_y": 72.2,
@@ -59532,8 +60069,8 @@
     "pdf_y_end": 91.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002872",
-    "birth_place": "Bačko Dobro Polje",
-    "pdf_x_end": 368.1
+    "pdf_x_end": 368.1,
+    "birth_place": "Bačko Dobro Polje"
   },
   {
     "last_name": "Stojakov",
@@ -60460,7 +60997,7 @@
     "first_name": "Bogdan",
     "fathers_name": "",
     "full_name": "Studen Bogdan",
-    "additional_info": "politički komesar brigade od juna",
+    "additional_info": "politički komesar brigade od juna 1945.",
     "birth_year": "",
     "pdf_page": 127,
     "pdf_y": 400.1,
@@ -60468,8 +61005,8 @@
     "pdf_y_end": 418.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002916",
-    "rank": "politički komesar brigade",
-    "pdf_x_end": 348.2
+    "pdf_x_end": 348.2,
+    "rank": "politički komesar brigade"
   },
   {
     "last_name": "Stupar",
@@ -60731,7 +61268,7 @@
     "first_name": "Radivoj",
     "fathers_name": "Vojin",
     "full_name": "Subotić Vojina Radivoj",
-    "additional_info": "1927, Bačko Gradište, oktobar",
+    "additional_info": "1927, Bačko Gradište, oktobar 1944.",
     "birth_year": "1927",
     "pdf_page": 128,
     "pdf_y": 153.7,
@@ -60739,8 +61276,8 @@
     "pdf_y_end": 173.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002929",
-    "birth_place": "Bačko Gradište",
-    "pdf_x_end": 357.3
+    "pdf_x_end": 357.3,
+    "birth_place": "Bačko Gradište"
   },
   {
     "last_name": "Subotić",
@@ -60898,7 +61435,7 @@
     "first_name": "Jer",
     "fathers_name": "",
     "full_name": "Sudarev Jer",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 128,
     "pdf_y": 376.5,
@@ -60906,9 +61443,9 @@
     "pdf_y_end": 395.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002937",
+    "pdf_x_end": 357.9,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 357.9,
     "unit_detail": "4. bataljon"
   },
   {
@@ -61979,7 +62516,7 @@
     "first_name": "Dušan",
     "fathers_name": "",
     "full_name": "Tarabić Dušan",
-    "additional_info": "1925, Vranjevo, borac 4. bataljona, 20.10.",
+    "additional_info": "1925, Vranjevo, borac 4. bataljona, 20.10. 1944.",
     "birth_year": "1925",
     "pdf_page": 130,
     "pdf_y": 54.1,
@@ -61987,10 +62524,10 @@
     "pdf_y_end": 75.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002988",
+    "pdf_x_end": 369.6,
     "birth_place": "Vranjevo",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 369.6
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Tarnak",
@@ -62942,7 +63479,7 @@
     "first_name": "Nikolaj",
     "fathers_name": "",
     "full_name": "Tomaš Nikolaj",
-    "additional_info": "1913, Bestanovec, borac 4. bataljona, 10.12.",
+    "additional_info": "1913, Bestanovec, borac 4. bataljona, 10.12. 1944.",
     "birth_year": "1913",
     "pdf_page": 131,
     "pdf_y": 471.6,
@@ -62950,10 +63487,10 @@
     "pdf_y_end": 490.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003038",
+    "pdf_x_end": 357.1,
     "birth_place": "Bestanovec",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 357.1
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Tomaš",
@@ -63287,7 +63824,7 @@
     "first_name": "Cvetko",
     "fathers_name": "",
     "full_name": "Topalov Cvetko",
-    "additional_info": "1925, Bačka Palanka, delegat voda, 23.10.",
+    "additional_info": "1925, Bačka Palanka, delegat voda, 23.10. 1944.",
     "birth_year": "1925",
     "pdf_page": 132,
     "pdf_y": 424.3,
@@ -63295,9 +63832,9 @@
     "pdf_y_end": 443.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003056",
+    "pdf_x_end": 356.0,
     "birth_place": "Bačka Palanka",
-    "rank": "delegat voda",
-    "pdf_x_end": 356.0
+    "rank": "delegat voda"
   },
   {
     "last_name": "Topalov",
@@ -63351,7 +63888,27 @@
     "soldier_id": "0022003059",
     "birth_place": "Sombor",
     "rank": "delegat voda",
-    "pdf_x_end": 331.0
+    "pdf_x_end": 331.0,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_place",
+      "death_type"
+    ],
+    "death_place": "Batina",
+    "other_sources": [
+      {
+        "soldier_id": "0075002191",
+        "name": "Topalov Stevan",
+        "additional_info": "iz Sombora, poginuo kod Batine.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 113.2,
+        "pdf_y": 540.3,
+        "pdf_x_end": 329.1,
+        "pdf_y_end": 548.8,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Topalov",
@@ -68230,11 +68787,15 @@
     "pdf_x_end": 316.3,
     "death_type": "nestao",
     "occupation": "zemljoradnik",
+    "death_date": "16.06.1943",
+    "borrowed": [
+      "death_date"
+    ],
     "other_sources": [
       {
         "soldier_id": "0057003753",
         "name": "Vurdelja A Vojin",
-        "additional_info": "rođen 1911. Adaševci, Šid, nestao 16. 6.",
+        "additional_info": "rođen 1911. Adaševci, Šid, nestao 16. 6. 1943.",
         "pdf_file": "3-vojvodjanska.pdf",
         "pdf_page": 64,
         "pdf_x": 80.6,
@@ -68878,7 +69439,51 @@
     "soldier_id": "0022003322",
     "birth_place": "Šid",
     "rank": "bolničarka",
-    "pdf_x_end": 348.9
+    "pdf_x_end": 348.9,
+    "other_sources": [
+      {
+        "soldier_id": "9027007327",
+        "name": "Zdravković (Ilija) Milena",
+        "additional_info": "rođena 1928, Šid. Srpkinja, poginula 1944. u NOBu, Batina skela",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=380",
+        "source_page": 380,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0111000596",
+        "name": "Zdravković Milena",
+        "additional_info": "rođ. 1928, Šid, bolničarka, pog. 18. 11. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 22,
+        "pdf_x": 292.2,
+        "pdf_y": 806.6,
+        "pdf_x_end": 569.3,
+        "pdf_y_end": 825.4,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111011505",
+        "name": "Zdravković Milena",
+        "additional_info": "1928, Sid, bolničarka, poginula 18. 11. 1944. u s. Batina.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 23,
+        "pdf_x": 65.5,
+        "pdf_y": 97.6,
+        "pdf_y_end": 114.7,
+        "pdf_x_end": 346.6,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_date": "18.11.1944",
+    "death_place": "Batina",
+    "ethnicity": "Srpkinja"
   },
   {
     "last_name": "Zdunin",
@@ -69356,7 +69961,29 @@
     "soldier_id": "0022003345",
     "birth_place": "Kovačica",
     "rank": "borac",
-    "pdf_x_end": 354.0
+    "pdf_x_end": 354.0,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "07.03.1945",
+    "death_place": "Bolman",
+    "other_sources": [
+      {
+        "soldier_id": "0111011516",
+        "name": "Zloh Paljo",
+        "additional_info": "1923, Koviačica, borac, poginuo 7. 3. 1945. u s. Bolman.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 23,
+        "pdf_x": 65.5,
+        "pdf_y": 80.3,
+        "pdf_x_end": 346.3,
+        "pdf_y_end": 97.5,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zorić",
@@ -69840,7 +70467,7 @@
     "first_name": "Danilo",
     "fathers_name": "",
     "full_name": "Ćurčin Danilo",
-    "additional_info": "1924, Čurug, borac, ratni invalid, 24.10.",
+    "additional_info": "1924, Čurug, borac, ratni invalid, 24.10. 1944.",
     "birth_year": "1924",
     "pdf_page": 135,
     "pdf_y": 297.3,
@@ -69848,9 +70475,9 @@
     "pdf_y_end": 316.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003371",
+    "pdf_x_end": 348.4,
     "birth_place": "Čurug",
-    "rank": "borac",
-    "pdf_x_end": 348.4
+    "rank": "borac"
   },
   {
     "last_name": "Ćurčin",
@@ -70120,7 +70747,41 @@
     "soldier_id": "0022003386",
     "birth_place": "Burđevo",
     "rank": "borac",
-    "pdf_x_end": 357.5
+    "pdf_x_end": 357.5,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "24.11.1944",
+    "death_place": "Kneževi Vinogradi",
+    "other_sources": [
+      {
+        "soldier_id": "0111000605",
+        "name": "Čapko Joakim",
+        "additional_info": "rođ. 1925, Đurđevo, borac, pog. 24. 11. 1944, Kneževi Vinogradi.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 300.8,
+        "pdf_y": 397.2,
+        "pdf_x_end": 574.1,
+        "pdf_y_end": 415.8,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111011531",
+        "name": "Čapko Jakim",
+        "additional_info": "1925, Đurđevo, Zabalj, borac, poginuo 24. 11. 1944. u s. Kneževi Vinogradi.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 5,
+        "pdf_x": 71.0,
+        "pdf_y": 199.2,
+        "pdf_y_end": 216.6,
+        "pdf_x_end": 348.0,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čarni",
@@ -71150,7 +71811,7 @@
     "first_name": "Uroš",
     "fathers_name": "",
     "full_name": "Čopković Uroš",
-    "additional_info": "1920, Banatsko Miloševo, vodnik, 26.10.",
+    "additional_info": "1920, Banatsko Miloševo, vodnik, 26.10. 1944.",
     "birth_year": "1920",
     "pdf_page": 145,
     "pdf_y": 185.3,
@@ -71158,9 +71819,9 @@
     "pdf_y_end": 204.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003436",
+    "pdf_x_end": 359.5,
     "birth_place": "Banatsko Miloševo",
-    "rank": "vodnik",
-    "pdf_x_end": 359.5
+    "rank": "vodnik"
   },
   {
     "last_name": "Čordarev",
@@ -71168,7 +71829,7 @@
     "first_name": "Milorad",
     "fathers_name": "Todor",
     "full_name": "Čordarev Todora Milorad",
-    "additional_info": "1927, Novi Sad, borac, oktobra",
+    "additional_info": "1927, Novi Sad, borac, oktobra 1944.",
     "birth_year": "1927",
     "pdf_page": 145,
     "pdf_y": 208.6,
@@ -71176,9 +71837,9 @@
     "pdf_y_end": 228.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003437",
+    "pdf_x_end": 358.6,
     "birth_place": "Novi Sad",
-    "rank": "borac",
-    "pdf_x_end": 358.6
+    "rank": "borac"
   },
   {
     "last_name": "Čović",
@@ -71196,7 +71857,21 @@
     "soldier_id": "0022003438",
     "birth_place": "Jazački Prnjavor",
     "rank": "borac",
-    "pdf_x_end": 299.0
+    "pdf_x_end": 299.0,
+    "other_sources": [
+      {
+        "soldier_id": "0111000612",
+        "name": "Čović Svetozar",
+        "additional_info": "Jazački Prnjavor, sahr. 4. 1. 1945. u Somboru.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 299.6,
+        "pdf_y": 582.5,
+        "pdf_x_end": 573.0,
+        "pdf_y_end": 601.5,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Črjpek",
@@ -72052,7 +72727,7 @@
     "first_name": "",
     "fathers_name": "N",
     "full_name": "Ševčenko N",
-    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10.",
+    "additional_info": "SSSR, borac 4. (ruskog) bataljona, 2.07—12.10. 1944.",
     "birth_year": "",
     "pdf_page": 146,
     "pdf_y": 307.9,
@@ -72060,9 +72735,9 @@
     "pdf_y_end": 326.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003476",
+    "pdf_x_end": 358.8,
     "birth_place": "SSSR",
     "rank": "borac",
-    "pdf_x_end": 358.8,
     "unit_detail": "4. bataljon"
   },
   {
@@ -72180,7 +72855,7 @@
     "first_name": "Isa",
     "fathers_name": "",
     "full_name": "Šijački Isa",
-    "additional_info": "1902, Burćevo, borac, nestao kod Belišća 11.12.",
+    "additional_info": "1902, Burćevo, borac, nestao kod Belišća 11.12. 1944.",
     "birth_year": "1902",
     "pdf_page": 147,
     "pdf_y": 73.0,
@@ -72188,11 +72863,12 @@
     "pdf_y_end": 91.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003483",
+    "pdf_x_end": 350.7,
     "birth_place": "Burćevo",
     "death_type": "nestao",
-    "rank": "borac",
-    "pdf_x_end": 350.7,
-    "death_place": "Belišće"
+    "death_date": "11.12.1944",
+    "death_place": "Belišće",
+    "rank": "borac"
   },
   {
     "last_name": "Šijački",
@@ -73821,7 +74497,7 @@
     "first_name": "Branislav",
     "fathers_name": "",
     "full_name": "Živkov-Popov Branislav",
-    "additional_info": "Bečej, borac, oktobra",
+    "additional_info": "Bečej, borac, oktobra 1944.",
     "birth_year": "",
     "pdf_page": 44,
     "pdf_y": 68.2,
@@ -73829,9 +74505,9 @@
     "pdf_y_end": 87.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003563",
+    "pdf_x_end": 365.7,
     "birth_place": "Bečej",
-    "rank": "borac",
-    "pdf_x_end": 365.7
+    "rank": "borac"
   },
   {
     "last_name": "Živković",
@@ -74064,7 +74740,29 @@
     "birth_place": "Ljupkova",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 365.8
+    "pdf_x_end": 365.8,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "13.04.1945",
+    "death_place": "Josipovac",
+    "other_sources": [
+      {
+        "soldier_id": "0111011644",
+        "name": "Žurž Đorđe",
+        "additional_info": "1921, Ljubkova, Karoš, borac, poginuo 13. 4. 1945. u Josipovcu.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 23,
+        "pdf_x": 65.7,
+        "pdf_y": 184.0,
+        "pdf_x_end": 346.5,
+        "pdf_y_end": 201.1,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Žutić",

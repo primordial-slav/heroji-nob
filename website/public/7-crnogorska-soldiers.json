@@ -1836,7 +1836,20 @@
     "death_date": "1944",
     "death_place": "Oktobra, Goražde",
     "pdf_x_end": 341.6,
-    "pdf_x_left": 69.0
+    "pdf_x_left": 69.0,
+    "other_sources": [
+      {
+        "soldier_id": "0028010049",
+        "name": "Bulatović Tokov Ilija",
+        "additional_info": "rođ. 1910. u Spužu, Danilovgrad, poginuo oktobra 1944. u Goraždu.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 257.1,
+        "pdf_y": 643.7,
+        "pdf_x_end": 613.7,
+        "pdf_y_end": 666.7
+      }
+    ]
   },
   {
     "last_name": "Bulić",
@@ -1854,7 +1867,29 @@
     "soldier_id": "0028000048",
     "birth_place": "Šekular, Ivangrad",
     "pdf_x_end": 212.9,
-    "pdf_x_left": 68.9
+    "pdf_x_left": 68.9,
+    "other_sources": [
+      {
+        "soldier_id": "9035001467",
+        "name": "Bulić M. Milić",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: mjesto rođenja Šekular; godina smrti 1945; mjesto pogibije Vinkovci",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 38,
+        "pdf_x": 80.1,
+        "pdf_y": 705.2,
+        "pdf_x_end": 480.6,
+        "pdf_y_end": 715.4,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Vinkovci"
   },
   {
     "last_name": "Cemović",
@@ -3959,6 +3994,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=95",
         "source_page": 95,
         "ref_book": "zrtve-rata-1964-crg"
+      },
+      {
+        "soldier_id": "9090000537",
+        "name": "Janketić Miraša Stanka",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: JANKETIĆ Miraša STANKA-VITA, rođena 1927., Štitarica, Polja, doma—· ćica. U NOP od 1943. Poginula 1945. kod Karlovca, bolničarka u 7. crnogorskoj omladinskoj brigadi »Vudo Tomović «. Član SKOJ od 1943.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=346",
+        "source_page": 701,
+        "ref_book": "kolasin"
       }
     ],
     "death_place": "u Bezjakovom Brdu, Karlovac",
@@ -5752,12 +5795,31 @@
         "pdf_x_end": 260.6,
         "pdf_y_end": 367.0,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "0040010661",
+        "name": "Komatina Milete Rajko",
+        "additional_info": "rođen 1920. u Mašnici (Andrijevica), đak, poginuo januara 1944. u borbama između Murina i Brodareva (dolina Lima).",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 69,
+        "pdf_x": 49.2,
+        "pdf_y": 273.4,
+        "pdf_x_end": 350.9,
+        "pdf_y_end": 298.6,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ],
-    "ethnicity": "Crnogorac",
+    "occupation": "đak",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Crnogorac",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Komnenović",
@@ -6373,7 +6435,7 @@
     "fathers_name": "",
     "full_name": "Krgović Nenad",
     "additional_info": "Polja Kolašinska, Mojkovac, 3. četa 4. bataljona, poginuo 5. XII 1944, na Previjanskom brdu",
-    "birth_year": "",
+    "birth_year": "1907",
     "pdf_page": 17,
     "pdf_y": 498.2,
     "pdf_x": 90.3,
@@ -6398,7 +6460,30 @@
         "pdf_y": 448.8,
         "pdf_x_end": 614.4,
         "pdf_y_end": 480.1
+      },
+      {
+        "soldier_id": "9090000551",
+        "name": "Krgović Ilinke Nenad",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: KRGOVIĆ Ilinke NENAD, rođen 1907., Polja, zemljoradnik. U NOP od 1944. Poginuo 1944. kod Bijelog Polja, borac 7. crnogorske omladinske brigade »Budo Tomovićs.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=349",
+        "source_page": 704,
+        "ref_book": "kolasin"
+      },
+      {
+        "soldier_id": "9035005546",
+        "name": "Krgović Iliikin Nenad",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Kolašin: godina rođenja 1907; mjesto rođenja Polja; godina smrti 1944; mjesto pogibije Bijelo Polje",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 140,
+        "pdf_x": 91.2,
+        "pdf_y": 322.0,
+        "pdf_x_end": 505.9,
+        "pdf_y_end": 331.5,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
+    ],
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -9029,6 +9114,26 @@
         "pdf_y": 589.0,
         "pdf_y_end": 609.7,
         "pdf_x_end": 576.2
+      },
+      {
+        "soldier_id": "9090000574",
+        "name": "Mitrić Raduna Vojin",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: MITRIĆ Raduna VOJIN, rođen 1916., SreteŠka Gora, Rovca, zemljoradnik. U NOP Od 1941. Poginuo 1944. na Pešteru, komandir voda u 7. omladinskoj crnogorskoj brigadi »Budo Tomovićk. Član KPJ od 1944.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=355",
+        "source_page": 710,
+        "ref_book": "kolasin"
+      },
+      {
+        "soldier_id": "9035005661",
+        "name": "Mitrić Radunov Vojin",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Kolašin: godina rođenja 1916; mjesto rođenja Rovca; godina smrti 1944; mjesto pogibije Pešter",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 142,
+        "pdf_x": 99.6,
+        "pdf_y": 674.6,
+        "pdf_x_end": 492.2,
+        "pdf_y_end": 685.3,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ]
   },
@@ -13329,7 +13434,6 @@
     "fathers_name": "",
     "full_name": "Spalević Radivoje",
     "additional_info": "poginuo 1945, u Bosni",
-    "birth_year": "",
     "pdf_page": 31,
     "pdf_y": 472.2,
     "pdf_x": 90.1,
@@ -13352,8 +13456,26 @@
         "pdf_y": 462.3,
         "pdf_x_end": 476.1,
         "pdf_y_end": 472.9
+      },
+      {
+        "soldier_id": "9035002032",
+        "name": "Spalević Ratkov Radivoje",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina rođenja 1912; mjesto rođenja Šekular; godina smrti 1945; mjesto pogibije Bosanski Novi",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 51,
+        "pdf_x": 99.1,
+        "pdf_y": 676.5,
+        "pdf_x_end": 523.8,
+        "pdf_y_end": 687.0,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ]
+    ],
+    "birth_place": "Šekular, Berane",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Stamatović",
@@ -15552,7 +15674,39 @@
         "pdf_y": 415.8,
         "pdf_y_end": 437.3,
         "pdf_x_end": 576.4
+      },
+      {
+        "soldier_id": "9090000533",
+        "name": "Zindović Marka Rade",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: ZINDOVIĆ Marka RADE, rođen 1926., Štitarica, Polja, zemljoradnik. U NOP od 1943. Poginuo 1944. kod Berana, borac 7. omladinske crnogorske brigade »Budo Tomovićc. Član SKOJ od 1943.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=346",
+        "source_page": 701,
+        "ref_book": "kolasin"
+      },
+      {
+        "soldier_id": "9035006643",
+        "name": "Zindović Markov Rade",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Mojkovac: godina rođenja 1926; mjesto rođenja Štitarica; godina smrti 1944; mjesto pogibije Berane",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 168,
+        "pdf_x": 102.8,
+        "pdf_y": 570.5,
+        "pdf_x_end": 491.6,
+        "pdf_y_end": 580.4,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023003709",
+        "name": "Zindović (Marko) Rade",
+        "additional_info": "rođen 1925, Štitarica (Mojkovac). Crnogorac, poginuo 1944. u NOBu, Berane",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=110",
+        "source_page": 110,
+        "ref_book": "zrtve-rata-1964-crg"
       }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -18027,25 +18181,6 @@
     "ethnicity": "Crnogorac"
   },
   {
-    "last_name": "Bulatović",
-    "middle_name": "Tokov",
-    "first_name": "Ilija",
-    "fathers_name": "Tokov",
-    "full_name": "Bulatović Tokov Ilija",
-    "additional_info": "rođ. 1910. u Spužu, Danilovgrad, poginuo oktobra 1944. u Goraždu.",
-    "birth_year": "1910",
-    "pdf_page": 3,
-    "pdf_y": 643.7,
-    "pdf_x": 257.1,
-    "pdf_y_end": 666.7,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010049",
-    "death_type": "poginuo",
-    "death_date": "10.1944",
-    "death_place": "Goražde",
-    "pdf_x_end": 613.7
-  },
-  {
     "last_name": "Bulić",
     "middle_name": "",
     "first_name": "Milić",
@@ -20230,7 +20365,7 @@
     "fathers_name": "",
     "full_name": "Radonjić Olga",
     "additional_info": "rodom iz Kuča, Titograd, 3. četa 4. bataljona, poginula 21. avgusta 1944. na Javorju, Kolašin.",
-    "birth_year": "",
+    "birth_year": "1927",
     "pdf_page": 18,
     "pdf_y": 671.3,
     "pdf_x": 219.8,
@@ -20241,7 +20376,26 @@
     "death_type": "poginuo",
     "death_date": "21.08.1944",
     "death_place": "Javorje, Kolašin",
-    "unit_detail": "3. četa, 4. bataljon"
+    "unit_detail": "3. četa, 4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9035014755",
+        "name": "Radonjić Zarijina Olga",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1927; mjesto rođenja Vidjelu Kuči; godina smrti 1944; mjesto pogibije Javor",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 359,
+        "pdf_x": 108.0,
+        "pdf_y": 498.4,
+        "pdf_x_end": 489.9,
+        "pdf_y_end": 508.1,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      }
+    ],
+    "birth_place": "Vidjelu Kuči, Podgorica",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ]
   },
   {
     "last_name": "Radović",
@@ -20839,7 +20993,7 @@
       {
         "soldier_id": "9090000082",
         "name": "Vlahović Mira Božidar",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Mira BOŽIDAR, rođen 1925., Peć, đak. U NOP od 1943. Poginuo 1944, na Obrovu, Bijelo Polje, borac 8. crnogorske brigade. Član SKOJ od 1943. VLAHOVI'đ Milinka BRANKO, rođen 1929, P0dgorica, apsolvent prava. U NOP od 1941. Poginuo 1942. u Lubnicama, zamenik komesara Gornjomoračko–rovačkog bataljona. Član KPJ od 1938.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Mira BOŽIDAR, rođen 1925., Peć, đak. U NOP od 1943. Poginuo 1944, na Obrovu, Bijelo Polje, borac 8. crnogorske brigade. Član SKOJ od 1943.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=336",
         "source_page": 691,
         "ref_book": "kolasin"
@@ -21125,7 +21279,6 @@
     "fathers_name": "",
     "full_name": "Ćorović Danilo",
     "additional_info": "rodom iz Žabljaka, 3. četa 4. bataljona, poginuo 20. jula 1944. na Semolju, Sinjajevina.",
-    "birth_year": "",
     "pdf_page": 21,
     "pdf_y": 710.3,
     "pdf_x": 251.5,
@@ -21136,7 +21289,37 @@
     "death_date": "20.07.1944",
     "death_place": "na Semolju, Sinjajevina",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 608.4
+    "pdf_x_end": 608.4,
+    "other_sources": [
+      {
+        "soldier_id": "9035002062",
+        "name": "Ćorović Bogdanov Danilo",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina rođenja 1924; mjesto rođenja Štitari; godina smrti 1944; mjesto pogibije Krnovo",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 52,
+        "pdf_x": 71.7,
+        "pdf_y": 522.0,
+        "pdf_x_end": 463.5,
+        "pdf_y_end": 531.5,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023002671",
+        "name": "Ćorović (Bogdan) Danilo",
+        "additional_info": "rođen 1924, Štitari (Ivangrad). Crnogorac, poginuo 1944. u NOBu, Javorje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=84",
+        "source_page": 84,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ],
+    "birth_place": "Štitari, Berane",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924",
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Ćulafić",

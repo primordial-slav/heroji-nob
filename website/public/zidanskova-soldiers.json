@@ -2644,9 +2644,66 @@
         "pdf_y": 599.5,
         "pdf_x_end": 361.7,
         "pdf_y_end": 608.0
+      },
+      {
+        "soldier_id": "0069000218",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922, Sela, Šentjernej, Novo mesto, kmet",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 29,
+        "pdf_x": 282.9,
+        "pdf_y": 773.2,
+        "pdf_x_end": 416.4,
+        "pdf_y_end": 801.8,
+        "unit_file": "braciceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070000170",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922 Sela pri Šentjerneju",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 4,
+        "pdf_x": 131.2,
+        "pdf_y": 420.2,
+        "pdf_x_end": 278.9,
+        "pdf_y_end": 426.7,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100545",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922 Sela pri Šentjerneju",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 6,
+        "pdf_x": 133.8,
+        "pdf_y": 520.8,
+        "pdf_y_end": 527.8,
+        "pdf_x_end": 310.8,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100546",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922 Sela pri Šentjerneju",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 54,
+        "pdf_x": 130.3,
+        "pdf_y": 627.4,
+        "pdf_y_end": 635.4,
+        "pdf_x_end": 320.8,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
-    "unit_detail": "štab brigade"
+    "unit_detail": "štab brigade",
+    "occupation": "kmet",
+    "borrowed": [
+      "occupation"
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Cvikl",
@@ -3876,7 +3933,21 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000186",
     "pdf_x_end": 518.3,
-    "birth_place": "Ribnica na Pohorju"
+    "birth_place": "Ribnica na Pohorju",
+    "other_sources": [
+      {
+        "soldier_id": "0070100861",
+        "name": "Garb Milan",
+        "additional_info": "Lovrenc na Pohorju",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 59,
+        "pdf_x": 133.1,
+        "pdf_y": 300.5,
+        "pdf_x_end": 258.5,
+        "pdf_y_end": 308.4,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Garletta",
@@ -5036,7 +5107,25 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000246",
     "pdf_x_end": 531.4,
-    "birth_place": "Količevo, Domžale"
+    "birth_place": "Količevo, Domžale",
+    "occupation": "delavec",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0069000472",
+        "name": "Hafner Valentin",
+        "additional_info": "zvani Bojan; * 1918, Dob, Domžale, delavec",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 36,
+        "pdf_x": 268.9,
+        "pdf_y": 351.0,
+        "pdf_x_end": 397.8,
+        "pdf_y_end": 380.9,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hajtnik",
@@ -8008,6 +8097,18 @@
         "pdf_y": 818.8,
         "pdf_x_end": 354.1,
         "pdf_y_end": 827.3
+      },
+      {
+        "soldier_id": "0068000267",
+        "name": "Kokalj Stane",
+        "additional_info": "zvani Janez; 1923, Ljubljana",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.5,
+        "pdf_y": 489.3,
+        "pdf_x_end": 120.2,
+        "pdf_y_end": 504.0,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       }
     ],
     "unit_detail": "štab brigade"
@@ -9222,7 +9323,44 @@
     "pdf_y_end": 574.5,
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000445",
-    "pdf_x_end": 411.9
+    "pdf_x_end": 411.9,
+    "other_sources": [
+      {
+        "soldier_id": "9020013989",
+        "name": "Krajger (Jožef) Mirko",
+        "additional_info": "rođen 1923, Brda (Slovenj Gradec). Slovenac, poginuo 1945. u NOBu, Sv marijeta austrija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=492",
+        "source_page": 492,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0069000862",
+        "name": "Krajger Mirko",
+        "additional_info": "zvani Luka; * 1923, Celovec; Brda, Slovenj Gradec, poljski delavec; † 12.5. 1945, Šmarjeta pri Borovljah na Koroškem",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 10,
+        "pdf_x": 260.9,
+        "pdf_y": 516.2,
+        "pdf_x_end": 489.1,
+        "pdf_y_end": 545.5,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
+    "birth_place": "Celovec",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "poljski delavec",
+    "death_place": "Šmarjeta pri Borovljah na Koroškem",
+    "ethnicity": "Slovenac",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Kramar",
@@ -12783,9 +12921,25 @@
         "pdf_y": 534.9,
         "pdf_x_end": 350.4,
         "pdf_y_end": 543.4
+      },
+      {
+        "soldier_id": "0070103059",
+        "name": "Pacek Alojz",
+        "additional_info": "zvani Platin; * 1924 Vel. Mraševo † po osvoboditvi",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 83,
+        "pdf_x": 133.1,
+        "pdf_y": 463.5,
+        "pdf_x_end": 347.2,
+        "pdf_y_end": 471.4,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
-    "unit_detail": "štab brigade"
+    "unit_detail": "štab brigade",
+    "death_type": "umro",
+    "borrowed": [
+      "death_type"
+    ]
   },
   {
     "last_name": "Pahtev",
@@ -13347,6 +13501,18 @@
     "birth_place": "Dečno selo, Brežice",
     "occupation": "brivec",
     "other_sources": [
+      {
+        "soldier_id": "0064002317",
+        "name": "Petan Miha",
+        "additional_info": "zvani Brico; 1922, Bečno selo",
+        "pdf_file": "gradnikova.pdf",
+        "pdf_page": 29,
+        "pdf_x": 239.3,
+        "pdf_y": 357.9,
+        "pdf_x_end": 305.0,
+        "pdf_y_end": 371.6,
+        "unit_file": "gradnikova-soldiers.json"
+      },
       {
         "soldier_id": "0069001346",
         "name": "Petan Miha",
@@ -18448,7 +18614,27 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000936",
     "pdf_x_end": 506.6,
-    "birth_place": "Zagorje"
+    "birth_place": "Zagorje",
+    "other_sources": [
+      {
+        "soldier_id": "9020016910",
+        "name": "Ule (Franc) Ivan",
+        "additional_info": "rođen 1925, Zagorje ob Savi (Zagorje Ob Savi). Slovenac, poginuo 1944. u NOBu, Dolenjsko",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=593",
+        "source_page": 593,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Dolenjsko"
   },
   {
     "last_name": "Umek",
@@ -19677,9 +19863,25 @@
         "pdf_y_end": 351.1,
         "pdf_x_left": 314.1,
         "unit_file": "ljubljanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0093000270",
+        "name": "Vojinović Aleksandar",
+        "additional_info": "zvani Vojin; rođen 1922. godine u selu Mirnici, Kuršumlija. Svršeni đak srednje poljoprivredne škole. Član SKOJ-a i član KPJ od 1941. godine. Jedan od organizatora ustanka u Toplici i izvršilac akcije na Hotel »Park« (ondašnji nemački Oficirski dom) u Nišu. U Odredu od 1941. godine. Bio je borac i rukovodilac. Iz rata je izašao kao major. Više godina proveo je na službi u JNA. Iz vojske je izašao u činu general-potpukovnika. Dugo je bio u diplomatskoj službi (ambasador). Književnik, napisao je više knjiga i član je Saveta Republike Srbije. Za narodnog heroja Jugoslavije proglašen je 9. oktobra 1953. godine.",
+        "pdf_file": "toplicki-odred.pdf",
+        "pdf_page": 32,
+        "pdf_x": 55.4,
+        "pdf_y": 128.8,
+        "pdf_x_end": 361.6,
+        "pdf_y_end": 314.9,
+        "unit_file": "toplicki-odred-soldiers.json"
       }
     ],
-    "unit_detail": "štab brigade"
+    "unit_detail": "štab brigade",
+    "party": "SKOJ, KPJ 1941",
+    "borrowed": [
+      "party"
+    ]
   },
   {
     "last_name": "Vojinović",
@@ -20921,7 +21123,25 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065001060",
     "pdf_x_end": 448.3,
-    "birth_place": "Libanja, Ptuj"
+    "birth_place": "Libanja, Ptuj",
+    "occupation": "železničar",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0069002187",
+        "name": "Žličar Franc",
+        "additional_info": "zvani Branko; * 1925, Ormož; Šalek, Velenje, železničar",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 70,
+        "pdf_x": 273.1,
+        "pdf_y": 699.8,
+        "pdf_x_end": 392.6,
+        "pdf_y_end": 729.6,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zloker",

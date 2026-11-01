@@ -6,7 +6,6 @@
     "fathers_name": "",
     "full_name": "Antolić Simo",
     "additional_info": "Velševec; umro Suva Perna.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 170.73500000000013,
     "pdf_x": 218.3,
@@ -17,7 +16,25 @@
     "pdf_x_left": 210.0,
     "birth_place": "Velševec",
     "death_type": "umro",
-    "death_place": "Suva Perna"
+    "death_place": "Suva Perna",
+    "other_sources": [
+      {
+        "soldier_id": "9021050218",
+        "name": "Antolić (Stjepan) Simo",
+        "additional_info": "rođen 1905, Veleševec (Velika Gorica). Hrvat, poginuo 1945. u NOBu, Suva Perna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2388",
+        "source_page": 2388,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "birth_year": "1905"
   },
   {
     "last_name": "Antolović",
@@ -339,7 +356,21 @@
     "pdf_x_end": 390.4,
     "pdf_x_left": 39.6,
     "birth_place": "Bukevje",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097000084",
+        "name": "Bešen Ivan",
+        "additional_info": "borac, T-PO, Bukevje, Vel. Gorica",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 30,
+        "pdf_x": 17.8,
+        "pdf_y": 359.46400000000006,
+        "pdf_x_end": 233.8,
+        "pdf_y_end": 368.7,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogović",
@@ -486,7 +517,21 @@
     "pdf_x_end": 390.4,
     "pdf_x_left": 35.8,
     "birth_place": "Markuševec",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097000125",
+        "name": "Brebrić Mijo",
+        "additional_info": "borac, T-PO, Markuševec",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 30,
+        "pdf_x": 17.8,
+        "pdf_y": 396.6640000000001,
+        "pdf_x_end": 209.6,
+        "pdf_y_end": 405.9,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brkanić",
@@ -759,7 +804,6 @@
     "fathers_name": "",
     "full_name": "Deverić Mijo",
     "additional_info": "Lomnica Donja; poginuo 5. V 1944. Kramarići.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 323.3949999999999,
     "pdf_x": 53.3,
@@ -772,7 +816,23 @@
     "death_type": "poginuo",
     "death_date": "05.05.1944",
     "death_place": "Kramarići",
+    "birth_year": "1928",
+    "borrowed": [
+      "birth_year"
+    ],
     "other_sources": [
+      {
+        "soldier_id": "0006001172",
+        "name": "Deverić Mijo",
+        "additional_info": "1928. Donja Lomnica, Velika Gorica.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 19,
+        "pdf_x": 317.4,
+        "pdf_y": 425.7,
+        "pdf_x_end": 488.9,
+        "pdf_y_end": 442.0,
+        "unit_file": "13-proleterska-soldiers.json"
+      },
       {
         "soldier_id": "0097000206",
         "name": "Deverić Mijo",
@@ -804,7 +864,21 @@
     "pdf_x_end": 390.8,
     "pdf_x_left": 35.3,
     "birth_place": "Veleševec",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097000210",
+        "name": "Dimina Stjepan",
+        "additional_info": "borac, T-PO, Veleševec, Vel. Gorica",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 30,
+        "pdf_x": 17.8,
+        "pdf_y": 520.264,
+        "pdf_x_end": 238.9,
+        "pdf_y_end": 529.5,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dolački",
@@ -2702,7 +2776,25 @@
     "pdf_x_end": 562.8,
     "death_type": "poginuo",
     "death_date": "22.08.1943",
-    "rank": "komandant odreda"
+    "rank": "komandant odreda",
+    "death_place": "Kupčina",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0097000792",
+        "name": "Mraović-Simić Milan",
+        "additional_info": "k-dant T-P, odreda, poginuo Kupčina, 22.08.43",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 48.9,
+        "pdf_y": 496.4039999999999,
+        "pdf_x_end": 376.4,
+        "pdf_y_end": 505.4,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Munić",
@@ -2769,7 +2861,21 @@
     "pdf_x_end": 561.5,
     "pdf_x_left": 214.5,
     "birth_place": "Bukevje",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097000800",
+        "name": "Munić Đuro",
+        "additional_info": "borac, T-PO, Bukevje, Vel. Gorica",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 48.9,
+        "pdf_y": 520.9039999999999,
+        "pdf_x_end": 265.0,
+        "pdf_y_end": 529.9,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Munjić",
@@ -3063,7 +3169,21 @@
     "pdf_x_end": 561.0,
     "pdf_x_left": 204.7,
     "birth_place": "Sop",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097000894",
+        "name": "Petričević Rudolf",
+        "additional_info": "borac, T-PO, Sop",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.3,
+        "pdf_y": 75.22399999999993,
+        "pdf_x_end": 192.6,
+        "pdf_y_end": 84.2,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Petrnac",
@@ -3264,7 +3384,6 @@
     "fathers_name": "",
     "full_name": "Rekić Dragutin",
     "additional_info": "Strmec Bukevski; poginuo.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 552.0550000000001,
     "pdf_x": 217.0,
@@ -3274,7 +3393,39 @@
     "pdf_x_end": 560.8,
     "pdf_x_left": 204.5,
     "birth_place": "Strmec Bukevski",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "9021050210",
+        "name": "Rekić (Nn) Dragutin",
+        "additional_info": "rođen 1902, Strmec Bukevski (Velika Gorica). Musliman, poginuo 1944. u NOBu, Katare",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2388",
+        "source_page": 2388,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0097001002",
+        "name": "Rekić Dragutin",
+        "additional_info": "borac, T-PO, Strmec Bukevski, Vel. Gorica",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.3,
+        "pdf_y": 150.12399999999997,
+        "pdf_x_end": 261.9,
+        "pdf_y_end": 159.1,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Katare",
+    "birth_year": "1902"
   },
   {
     "last_name": "Rekić",
@@ -3327,7 +3478,25 @@
     "pdf_x_end": 369.2,
     "pdf_x_left": 204.5,
     "birth_place": "Gladovec",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "death_date": "11.05.1944",
+    "borrowed": [
+      "death_date"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0097001006",
+        "name": "Rendulić M",
+        "additional_info": "borac, T-PO, Gladovec Pokupski, 11.05.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.3,
+        "pdf_y": 175.12399999999997,
+        "pdf_x_end": 349.9,
+        "pdf_y_end": 184.1,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Smolković",
@@ -3507,12 +3676,11 @@
   },
   {
     "last_name": "Vadić",
-    "middle_name": "",
+    "middle_name": "Đ",
     "first_name": "Janko",
-    "fathers_name": "",
-    "full_name": "Vadić Janko",
+    "fathers_name": "Đ",
+    "full_name": "Vadić Đ Janko",
     "additional_info": "Lukavec; nestao iz zatvora u Savskoj cesti.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 345.6350000000002,
     "pdf_x": 216.3,
@@ -3522,7 +3690,29 @@
     "pdf_x_end": 504.8,
     "pdf_x_left": 203.8,
     "birth_place": "Lukavec",
-    "death_type": "nestao"
+    "death_type": "nestao",
+    "birth_year": "1916",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place"
+    ],
+    "death_date": "22.06.1944",
+    "death_place": "Plešivica",
+    "other_sources": [
+      {
+        "soldier_id": "0097001198",
+        "name": "Vadić Đ Janko",
+        "additional_info": "k-dir v., FOS, 1916. Lukavec, Vel. Gorica, u NOB 1943, poginuo Plešivica, 22.06.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 16.5,
+        "pdf_y": 87.0440000000001,
+        "pdf_x_end": 344.1,
+        "pdf_y_end": 96.0,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Večerin",
@@ -3563,6 +3753,18 @@
     "death_date": "07.02.1944",
     "death_place": "Veleševec",
     "other_sources": [
+      {
+        "soldier_id": "9015000123",
+        "name": "Vranek Mato — Capajev",
+        "additional_info": "Pali u bici kod Oborova 29. III 1944: 123. Vranek Mato — »Capajev«",
+        "pdf_file": "bitka-kod-oborova-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 238.7,
+        "pdf_y": 149.2,
+        "pdf_x_end": 325.2,
+        "pdf_y_end": 169.0,
+        "ref_book": "bitka-kod-oborova-poginuli"
+      },
       {
         "soldier_id": "0097001226",
         "name": "Vranek Mato",
@@ -3649,7 +3851,21 @@
     "pdf_x_end": 390.9,
     "pdf_x_left": 36.0,
     "birth_place": "Čret",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097001234",
+        "name": "Vrban Filip",
+        "additional_info": "borac, T-PO, Čret",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.1,
+        "pdf_y": 299.4239999999999,
+        "pdf_x_end": 192.7,
+        "pdf_y_end": 308.4,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vrban",
@@ -3658,7 +3874,6 @@
     "fathers_name": "",
     "full_name": "Vrban Josip",
     "additional_info": "Čret'; umro u zarobljeništvu Barloti Italija 21. XII 1943..",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 378.0350000000002,
     "pdf_x": 216.0,
@@ -3670,7 +3885,23 @@
     "birth_place": "Čret",
     "death_type": "umro",
     "death_date": "21.12.1943",
-    "death_place": "Barloti Italija"
+    "death_place": "Barloti Italija",
+    "other_sources": [
+      {
+        "soldier_id": "9021049941",
+        "name": "Vrban (Đuro) Josip",
+        "additional_info": "rođen 1923, Čret Posavski (Varadžin). Hrvat, poginuo od Italijana 1943. kao zarobljenik prip. NOV i POJ, Italijanski logor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2379",
+        "source_page": 2379,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Vrban",
@@ -3708,7 +3939,21 @@
     "pdf_x_end": 391.1,
     "pdf_x_left": 36.5,
     "birth_place": "Veleševec",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0097001263",
+        "name": "Vučin Imbro",
+        "additional_info": "borac, T-PO, Veleševec, Vel. Gorica",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 32,
+        "pdf_x": 22.1,
+        "pdf_y": 336.4239999999999,
+        "pdf_x_end": 243.4,
+        "pdf_y_end": 345.6,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vučin",

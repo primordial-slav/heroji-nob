@@ -3024,9 +3024,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1597",
         "source_page": 1597,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0044010157",
+        "name": "Dević V Jovan",
+        "additional_info": "rođen 1920, Luščani — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 13,
+        "pdf_x": 53.9,
+        "pdf_y": 271.0,
+        "pdf_x_end": 335.4,
+        "pdf_y_end": 297.1,
+        "unit_file": "7-banijska-soldiers.json"
       }
     ],
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Dmitrović",
@@ -7407,7 +7424,6 @@
     "fathers_name": "",
     "full_name": "Macakanja Milka",
     "additional_info": "borac 2. bataljona, rođena u Šašavi, Glina, domaćica, Srpkinja, u NOB od januara 1943, nestala na Zelengori juna 1943.",
-    "birth_year": "",
     "pdf_page": 15,
     "pdf_y": 347.9,
     "pdf_x": 39.3,
@@ -7422,7 +7438,21 @@
     "death_date": "06.1943",
     "death_place": "Zelengora",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9021012595",
+        "name": "Macakanja (Petar) Milka",
+        "additional_info": "rođena 1901, Šaševa (Glina). Srpkinja, umrla 1943. u NOBu, Šaševa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=543",
+        "source_page": 543,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_year": "1901",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Madžarac",
@@ -9903,7 +9933,21 @@
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 172.8,
     "pdf_y_end": 268.5,
-    "party": "SKOJ 1942, KPJ 1944"
+    "party": "SKOJ 1942, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0020000401",
+        "name": "Dragosavljević Milana Vaso",
+        "additional_info": "rođen u Sočanici (Dvor na Uni).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 77.5,
+        "pdf_y": 170.1,
+        "pdf_x_end": 330.7,
+        "pdf_y_end": 178.1,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pal",
@@ -10122,7 +10166,21 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "1. četa, 1. bataljon"
+    "unit_detail": "1. četa, 1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0002006131",
+        "name": "Paunović Mirka Simo",
+        "additional_info": "Petrinja, 4. banijski bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 783,
+        "pdf_x": 124.5,
+        "pdf_y": 301.6,
+        "pdf_x_end": 356.9,
+        "pdf_y_end": 311.1,
+        "unit_file": "soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavelić-Jurak",
@@ -10687,8 +10745,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1582",
         "source_page": 1582,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0020001349",
+        "name": "Polimac Mile Stanko",
+        "additional_info": "rođen 1924. u Grabovcu (Petrinja), poginuo 1943. u Vrgin Mostu.",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 34,
+        "pdf_x": 74.2,
+        "pdf_y": 339.5,
+        "pdf_x_end": 381.4,
+        "pdf_y_end": 356.2,
+        "unit_file": "4-banijska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Polimac",
@@ -15843,8 +15918,25 @@
         "additional_info": "borac 1. bataljona, rođen 1924. godine, Ljeskovac, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od januara 1943. godine, poginuo u bici na Sutjesci maj—juni 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=257",
         "source_page": 245
+      },
+      {
+        "soldier_id": "0044010968",
+        "name": "Vukšić Vasilja Milan",
+        "additional_info": "rođen 1926, Ljeskovac — Dvor, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 56.7,
+        "pdf_y": 176.5,
+        "pdf_x_end": 338.7,
+        "pdf_y_end": 202.8,
+        "unit_file": "7-banijska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Vučetić",
@@ -18044,7 +18136,21 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "prištapske jedinice"
+    "unit_detail": "prištapske jedinice",
+    "other_sources": [
+      {
+        "soldier_id": "0020002096",
+        "name": "Štula Đure Milan",
+        "additional_info": "rođen u Bojni (Glina).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 51.3,
+        "pdf_y": 255.7,
+        "pdf_x_end": 221.2,
+        "pdf_y_end": 263.7,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šušnjar",
@@ -24321,7 +24427,38 @@
     "death_date": "05.1943",
     "death_place": "Sivolje, Kalinovik",
     "rank": "borac",
-    "unit_detail": "četa za vezu"
+    "unit_detail": "četa za vezu",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0045000670",
+        "name": "Tesla Marka Božo",
+        "additional_info": "borac, rođen 1906, Gage, Dvor, zemljoradnik, Srbin, u NOB od decembra 1942, poginuo na Zelengori juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 218.2,
+        "pdf_y": 351.0,
+        "pdf_x_end": 388.3,
+        "pdf_y_end": 392.6,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1906"
+      ],
+      "death": [
+        {
+          "date": "06.1943",
+          "place": "Zelengora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tesla",
@@ -26019,6 +26156,20 @@
     "death_type": "umro",
     "death_date": "20.03.1943",
     "death_place": "Hercegovina, Ulog",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0020002144",
+        "name": "Živković Nikole Vaso",
+        "additional_info": "rođen u Kotaranima (Dvor na Uni).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 50.5,
+        "pdf_y": 168.2,
+        "pdf_x_end": 279.4,
+        "pdf_y_end": 176.2,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   }
 ]

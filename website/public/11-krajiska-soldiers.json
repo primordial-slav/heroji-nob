@@ -6227,11 +6227,9 @@
     "first_name": "Rašid",
     "fathers_name": "D",
     "full_name": "Kovačević D Rašid",
-    "additional_info": "rod. 1914. u s. Vranjska, Musliman, zemlj. Stupio u NOV oktobra 1944. Poginuo kao borac januara",
+    "additional_info": "rod. 1914. u s. Vranjska, Musliman, zemlj. Stupio u NOV oktobra 1944. Poginuo kao borac januara 1945.",
     "birth_year": "1914",
     "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "borac",
     "pdf_page": 23,
     "pdf_y": 364.6,
     "pdf_x": 90.6,
@@ -6239,9 +6237,12 @@
     "pdf_file": "11-krajiska-poginuli.pdf",
     "birth_place": "Vranjska, Busovača",
     "soldier_id": "0107000258",
-    "ethnicity": "Musliman",
     "pdf_x_end": 349.9,
-    "pdf_x_left": 68.7
+    "pdf_x_left": 68.7,
+    "ethnicity": "Musliman",
+    "death_type": "poginuo",
+    "death_date": "01.1945",
+    "rank": "borac"
   },
   {
     "last_name": "Kovrlija",
@@ -7618,7 +7619,26 @@
     "soldier_id": "0107000312",
     "ethnicity": "Srbin",
     "pdf_x_end": 352.5,
-    "pdf_x_left": 72.0
+    "pdf_x_left": 72.0,
+    "other_sources": [
+      {
+        "soldier_id": "0054001520",
+        "name": "Malešević A Miloš",
+        "additional_info": "borac, rođen 1927. u s. Grabovci, Bosanska Gradiška, poginuo 25. 5. 1944. kod Kotor-Varoša",
+        "pdf_file": "12-krajiska-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 75.6,
+        "pdf_y": 372.8,
+        "pdf_x_end": 355.4,
+        "pdf_y_end": 391.9,
+        "unit_file": "12-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Malinić",
@@ -12533,7 +12553,21 @@
     "soldier_id": "0107000510",
     "ethnicity": "Srbin",
     "pdf_x_end": 353.6,
-    "pdf_x_left": 72.6
+    "pdf_x_left": 72.6,
+    "other_sources": [
+      {
+        "soldier_id": "0097001131",
+        "name": "Stojaković O Jovan",
+        "additional_info": "borac, Omarska, Prijedor. BiH, poginuo Brestovac, 08.07.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 25,
+        "pdf_x": 39.9,
+        "pdf_y": 234.84400000000005,
+        "pdf_x_end": 367.3,
+        "pdf_y_end": 243.8,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojaković",
@@ -13783,7 +13817,21 @@
     "soldier_id": "0107000558",
     "ethnicity": "Srbin",
     "pdf_x_end": 355.2,
-    "pdf_x_left": 74.7
+    "pdf_x_left": 74.7,
+    "other_sources": [
+      {
+        "soldier_id": "0012000863",
+        "name": "Trtica P Stevo",
+        "additional_info": "intendant 5. brigade, rodom iz okoline Prijedora, poginuo januara 1944, u centralnoj Bosni na dužnosti intendanta brigade",
+        "pdf_file": "5-kozaracka.pdf",
+        "pdf_page": 44,
+        "pdf_x": 81.0,
+        "pdf_y": 396.2,
+        "pdf_x_end": 363.6,
+        "pdf_y_end": 422.5,
+        "unit_file": "5-kozaracka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Trubarac",

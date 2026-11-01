@@ -3264,6 +3264,18 @@
         "pdf_y": 249.4,
         "pdf_x_end": 99.6,
         "pdf_y_end": 257.4
+      },
+      {
+        "soldier_id": "0141000053",
+        "name": "Centa Franc",
+        "additional_info": "Skrilje nad Igom",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 1,
+        "pdf_x": 183.1,
+        "pdf_y": 359.7,
+        "pdf_x_end": 300.8,
+        "pdf_y_end": 367.2,
+        "unit_file": "sercerjeva-soldiers.json"
       }
     ],
     "unit_detail": "štab odreda",
@@ -9529,6 +9541,18 @@
         "pdf_y": 298.9,
         "pdf_x_end": 135.9,
         "pdf_y_end": 306.9
+      },
+      {
+        "soldier_id": "0141000231",
+        "name": "Klemenčič Leon",
+        "additional_info": "Dobrunje pri Ljubljani",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 3,
+        "pdf_x": 181.7,
+        "pdf_y": 361.4,
+        "pdf_x_end": 299.0,
+        "pdf_y_end": 377.8,
+        "unit_file": "sercerjeva-soldiers.json"
       }
     ],
     "unit_detail": "štab odreda",
@@ -12143,6 +12167,20 @@
     "soldier_id": "0067000615",
     "pdf_x_end": 327.9,
     "birth_place": "Gerovo, Čabar",
+    "other_sources": [
+      {
+        "soldier_id": "0167001011",
+        "name": "Kvaternik Zdravko",
+        "additional_info": "1920, Cerovo",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 10,
+        "pdf_x": 42.5,
+        "pdf_y": 168.7,
+        "pdf_x_end": 104.7,
+        "pdf_y_end": 181.0,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ],
     "birth_date": "21.11.1920"
   },
   {
@@ -12362,7 +12400,6 @@
     "fathers_name": "",
     "full_name": "Lazar Miroslav",
     "additional_info": "Praproče — Koper",
-    "birth_year": "",
     "pdf_page": 12,
     "pdf_y": 134.5,
     "pdf_x": 35.7,
@@ -12370,7 +12407,29 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067000627",
     "pdf_x_end": 142.9,
-    "birth_place": "Praproče, Koper"
+    "birth_place": "Praproče, Koper",
+    "other_sources": [
+      {
+        "soldier_id": "9020004735",
+        "name": "Lazar (Jože) Miroslav",
+        "additional_info": "rođen 1919, Praproče (Koper). Slovenac, poginuo 1943. u NOBu, Brkine",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=169",
+        "source_page": 169,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Brkine",
+    "birth_year": "1919"
   },
   {
     "last_name": "Lazar",
@@ -15014,7 +15073,6 @@
     "fathers_name": "",
     "full_name": "Mežnar Ludvik",
     "additional_info": "Domžale",
-    "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 112.1,
     "pdf_x": 22.8,
@@ -15022,7 +15080,25 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067000751",
     "pdf_x_end": 119.4,
-    "birth_place": "Domžale"
+    "birth_place": "Domžale",
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0063000894",
+        "name": "Mežnar Ludvik",
+        "additional_info": "zvani Avgust; 1921, Domžale",
+        "pdf_file": "dvanajsta.pdf",
+        "pdf_page": 24,
+        "pdf_x": 27.6,
+        "pdf_y": 143.2,
+        "pdf_x_end": 165.8,
+        "pdf_y_end": 150.2,
+        "unit_file": "dvanajsta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mihalič",
@@ -15524,9 +15600,25 @@
         "pdf_y": 362.5,
         "pdf_x_end": 90.8,
         "pdf_y_end": 370.5
+      },
+      {
+        "soldier_id": "0070000876",
+        "name": "Mlakar Tone",
+        "additional_info": "* Klenovik Škocjan † po osvoboditvi",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 18,
+        "pdf_x": 139.6,
+        "pdf_y": 198.4,
+        "pdf_x_end": 320.0,
+        "pdf_y_end": 206.4,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
     "unit_detail": "2. bataljon",
+    "death_type": "umro",
+    "borrowed": [
+      "death_type"
+    ],
     "birth_date": "01.01.1918"
   },
   {
@@ -15802,6 +15894,26 @@
     "soldier_id": "0067000789",
     "pdf_x_end": 303.9,
     "birth_place": "Poljane",
+    "other_sources": [
+      {
+        "soldier_id": "9020013247",
+        "name": "Mršnik (Anton) Jože",
+        "additional_info": "rođen 1913, Poljane pri Podgradu (Sežana). Slovenac, poginuo 1944. u NOBu, Il.bistrica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=469",
+        "source_page": 469,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Il.bistrica",
     "birth_date": "27.03.1914"
   },
   {
@@ -16689,6 +16801,20 @@
     "soldier_id": "0067000837",
     "pdf_x_end": 171.3,
     "birth_place": "Gerovo",
+    "other_sources": [
+      {
+        "soldier_id": "0167001438",
+        "name": "Pavlič Leon",
+        "additional_info": "1923, Cerovo, Čabar",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 13,
+        "pdf_x": 134.7,
+        "pdf_y": 488.6,
+        "pdf_x_end": 177.8,
+        "pdf_y_end": 501.0,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ],
     "birth_date": "20.06.1923"
   },
   {
@@ -17072,6 +17198,20 @@
     "soldier_id": "0067000857",
     "pdf_x_end": 314.8,
     "birth_place": "Vel. Ligojna",
+    "other_sources": [
+      {
+        "soldier_id": "0141000477",
+        "name": "Petkovšek Jože",
+        "additional_info": "zvani Branko; Vel. Ligojna",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 6,
+        "pdf_x": 165.1,
+        "pdf_y": 147.8,
+        "pdf_x_end": 275.9,
+        "pdf_y_end": 164.2,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ],
     "birth_date": "24.10.1921"
   },
   {
@@ -19976,6 +20116,20 @@
     "soldier_id": "0067001000",
     "pdf_x_end": 139.6,
     "birth_place": "Juršiče, Pivka",
+    "other_sources": [
+      {
+        "soldier_id": "0004002404",
+        "name": "Sedmak Alojz",
+        "additional_info": "1924, Jurišče, Knežak, Ilirska Bistrica",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 434,
+        "pdf_x": 325.4,
+        "pdf_y": 273.0,
+        "pdf_x_end": 438.3,
+        "pdf_y_end": 289.3,
+        "unit_file": "ljubljanska-soldiers.json"
+      }
+    ],
     "birth_date": "13.09.1924"
   },
   {
@@ -20865,6 +21019,18 @@
         "pdf_y": 447.6,
         "pdf_x_end": 73.1,
         "pdf_y_end": 455.6
+      },
+      {
+        "soldier_id": "0167001806",
+        "name": "Sosič Rado",
+        "additional_info": "1921, Občine",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 16,
+        "pdf_x": 239.0,
+        "pdf_y": 239.6,
+        "pdf_x_end": 279.8,
+        "pdf_y_end": 251.6,
+        "unit_file": "deveta-soldiers.json"
       }
     ],
     "unit_detail": "4. bataljon 9. in 18. brigade, 1. četa",
@@ -21100,6 +21266,20 @@
     "soldier_id": "0067001060",
     "pdf_x_end": 162.6,
     "birth_place": "Žuricazi, Novokračina",
+    "other_sources": [
+      {
+        "soldier_id": "0061002308",
+        "name": "Stipančič Gino",
+        "additional_info": "1919, Žiričazzi",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 27,
+        "pdf_x": 317.8,
+        "pdf_y": 304.6,
+        "pdf_x_end": 428.0,
+        "pdf_y_end": 312.6,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ],
     "birth_date": "24.04.1919"
   },
   {
@@ -21556,6 +21736,18 @@
         "pdf_x_end": 121.4,
         "pdf_y_end": 123.6,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0141000588",
+        "name": "Tomažič Maks",
+        "additional_info": "zvani Milan; Ljubljana",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 8,
+        "pdf_x": 21.4,
+        "pdf_y": 322.3,
+        "pdf_x_end": 143.9,
+        "pdf_y_end": 329.8,
+        "unit_file": "sercerjeva-soldiers.json"
       }
     ],
     "birth_date": "02.10.1920"
@@ -21970,6 +22162,26 @@
     "soldier_id": "0067001101",
     "pdf_x_end": 143.4,
     "birth_place": "Dolenje, II. Bistrica",
+    "other_sources": [
+      {
+        "soldier_id": "9020003336",
+        "name": "Urbančič (Anton) Miroslav",
+        "additional_info": "rođen 1916, Dolenje pri Jelšanah (Idrija). Slovenac, poginuo 1944. u NOBu, Il.bistrica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=119",
+        "source_page": 119,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Il.bistrica",
     "birth_date": "01.08.1916"
   },
   {
@@ -22970,6 +23182,26 @@
     "soldier_id": "0067001152",
     "pdf_x_end": 272.7,
     "birth_place": "Osp, Koper",
+    "other_sources": [
+      {
+        "soldier_id": "9020004695",
+        "name": "Vodopivec (Anton) Aleksander",
+        "additional_info": "rođen 1912, Osp (Koper). Slovenac, poginuo 1945. u NOBu, Ljubljana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=168",
+        "source_page": 168,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Ljubljana",
     "birth_date": "15.02.1911"
   },
   {

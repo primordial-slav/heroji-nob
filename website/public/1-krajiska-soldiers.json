@@ -3064,6 +3064,18 @@
         "ref_book": "zrtve-rata-1964-bih"
       },
       {
+        "soldier_id": "9013000502",
+        "name": "Barudžija Mirko",
+        "additional_info": "Prva krajiška udarna brigada, Rajevo Selo: Mirko Barudžija.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 5,
+        "pdf_x": 385.1,
+        "pdf_y": 378.4,
+        "pdf_x_end": 464.6,
+        "pdf_y_end": 388.1,
+        "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
         "soldier_id": "0011000098",
         "name": "Barudžija Stanka Mirko",
         "additional_info": "borac, rođen 1928, Novoselci, Bos. Dubica, poginuo 11. IV 1945. kod sela Rajeva Sela, Županja.",
@@ -10297,6 +10309,30 @@
         "pdf_x_end": 292.8,
         "pdf_y_end": 388.1,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0070000209",
+        "name": "Dolščak Antona Albin",
+        "additional_info": "zvani Albin; * 1910 Podturjak † 1945 Opatovec",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 5,
+        "pdf_x": 132.1,
+        "pdf_y": 497.1,
+        "pdf_x_end": 296.9,
+        "pdf_y_end": 503.6,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070200040",
+        "name": "Dolščak Albin",
+        "additional_info": "* 1910 Turjak † 1945 Opatovac",
+        "pdf_file": "tomsiceva-1.pdf",
+        "pdf_page": 5,
+        "pdf_x": 172.8,
+        "pdf_y": 591.2,
+        "pdf_y_end": 599.2,
+        "pdf_x_end": 350.6,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ]
   },
@@ -15496,7 +15532,26 @@
     "death_type": "poginuo",
     "death_date": "11.12.1942",
     "rank": "vodnik",
-    "death_place": "Sanski Most"
+    "death_place": "Sanski Most",
+    "other_sources": [
+      {
+        "soldier_id": "0024000324",
+        "name": "Grujić Novaka Ratko",
+        "additional_info": "rođen 1907, u Babićima, Prijedor, Srbin, zemljoradnik, u NOB od 1941, u brigadi od 2. 08. 1942, 3. četa, 3. bataljon, desetar, poginuo decembra 1942. u Rasavcima (Prijedor);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 35.6,
+        "pdf_y": 502.8,
+        "pdf_x_end": 394.3,
+        "pdf_y_end": 526.1,
+        "unit_file": "2-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1907"
+      ]
+    }
   },
   {
     "last_name": "Grujić",
@@ -22986,7 +23041,21 @@
     "death_date": "04.1943",
     "death_place": "u Korićanima (Travnik)",
     "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon"
+    "unit_detail": "3. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0033000276",
+        "name": "Kačavenda Ostoje Đuro",
+        "additional_info": "rođen Ruiška B. Novi, p.poručnik politkomes. 19. brigada, poginuo",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 12.2,
+        "pdf_y": 181.1,
+        "pdf_x_end": 768.3,
+        "pdf_y_end": 213.3,
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kecman",
@@ -28212,8 +28281,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2877",
         "source_page": 2877,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0024000584",
+        "name": "Krivaja Gavre Boško",
+        "additional_info": "rođen 1921, u Krivaji, Prijedor, Srbin, zemljoradnik, u NOB od početka 1942, u brigadi od 2. 08. 1942, borac, poginuo početkom februara 1943. u Grmeču;",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 32.4,
+        "pdf_y": 205.6,
+        "pdf_x_end": 389.4,
+        "pdf_y_end": 220.8,
+        "unit_file": "2-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Krivaja",
@@ -33393,6 +33479,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=53",
         "source_page": 53,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "9013000505",
+        "name": "Manojlović Dušan",
+        "additional_info": "Prva krajiška udarna brigada, Rajevo Selo: Dušan Manojlović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 5,
+        "pdf_x": 310.8,
+        "pdf_y": 389.0,
+        "pdf_x_end": 395.9,
+        "pdf_y_end": 398.7,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -33537,6 +33635,14 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9027005900",
+        "name": "Manojlović (Mihailo) Petar",
+        "additional_info": "rođen 1924, Stari Lec (Plandište). Srbin, poginuo 1945. u NOBu, Ralevo s.slavon",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=294",
+        "source_page": 294,
+        "ref_book": "zrtve-rata-1964-voj"
       }
     ]
   },
@@ -37616,8 +37722,25 @@
         "pdf_x_end": 399.2,
         "pdf_y_end": 674.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0011000801",
+        "name": "Milenković Milenka Momčilo",
+        "additional_info": "desegar, rođen 1921, Sirča, Kraljevo, Srbin, zemljoradnik, u NOB od 28. VIII 1944, nestao 17. I 1945. kod sela Sotina, Vukovar.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 55,
+        "pdf_x": 101.2,
+        "pdf_y": 342.6,
+        "pdf_x_end": 384.7,
+        "pdf_y_end": 369.4,
+        "unit_file": "4-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Milenković",
@@ -38146,6 +38269,18 @@
         "pdf_x_end": 338.8,
         "pdf_y_end": 703.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013000507",
+        "name": "Milivojević Milorad",
+        "additional_info": "Prva krajiška udarna brigada, Rajevo Selo: Milorad Milivojević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 5,
+        "pdf_x": 125.2,
+        "pdf_y": 399.5,
+        "pdf_x_end": 217.8,
+        "pdf_y_end": 409.2,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -42718,6 +42853,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1143",
         "source_page": 1143,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013000268",
+        "name": "Nikolić Nikola",
+        "additional_info": "Prva krajiška udarna brigada, Otok: Nikola Nikolić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 211.5,
+        "pdf_y": 690.9,
+        "pdf_x_end": 282.5,
+        "pdf_y_end": 700.9,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -50378,7 +50525,31 @@
     "death_type": "poginuo",
     "death_date": "30.03.1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon"
+    "unit_detail": "2. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0163000201",
+        "name": "Rajlić Stevana Milan",
+        "additional_info": "rođen 1916. g. Podkalinje, Bosanska Krupa, Srbin, zemljoradnik, u NOB-u 1S41. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Kandidat za člana KPJ. Poginuo septembra kao komandant voda, 1943. g. kod Novog u borbi sa ustašama i Nijemeima.",
+        "pdf_file": "proleterski-bataljon-bk.pdf",
+        "pdf_page": 76,
+        "pdf_x": 133.4,
+        "pdf_y": 385.6,
+        "pdf_x_end": 262.9,
+        "pdf_y_end": 474.1,
+        "unit_file": "proleterski-bataljon-bk-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ],
+      "death": [
+        {
+          "date": "1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Rajlić",
@@ -68404,7 +68575,26 @@
     "death_type": "poginuo",
     "death_date": "05.01.1944",
     "death_place": "kod Komorana (Pale)",
-    "rank": "desetar"
+    "rank": "desetar",
+    "other_sources": [
+      {
+        "soldier_id": "0001001676",
+        "name": "Čečarić Radov Savo",
+        "additional_info": "1919, G. Vardište, Višegrad, BiH, Srbin, zemljoradnik, u NOB od 1941, u brigadi od decembra 1941, VI bataljon, borac, poginuo 05. 01. 1944, Bare, Goražde",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 135,
+        "pdf_x": 49.7,
+        "pdf_y": 243.5,
+        "pdf_x_end": 355.8,
+        "pdf_y_end": 275.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Ćirković",
@@ -72600,7 +72790,26 @@
     "death_type": "poginuo",
     "death_date": "15.12.1943",
     "death_place": "kod Osova (Rogatica)",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0010002227",
+        "name": "Špegar Vasilija Mladen",
+        "additional_info": "(MOMČI-LO), rođen 1920. Kolunić, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, u Brigadi od 1942. borac, poginuo 1943. u Crnoj Gori",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 111,
+        "pdf_x": 26.5,
+        "pdf_y": 259.9,
+        "pdf_x_end": 186.8,
+        "pdf_y_end": 308.4,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Špegar",

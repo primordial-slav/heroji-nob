@@ -680,7 +680,26 @@
     "death_date": "06.1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 210.6
+    "pdf_x_end": 210.6,
+    "other_sources": [
+      {
+        "soldier_id": "0044010199",
+        "name": "Drakulić Milana Mladen",
+        "additional_info": "rođen 1918, Kostajnica, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 15,
+        "pdf_x": 58.3,
+        "pdf_y": 504.2,
+        "pdf_x_end": 340.4,
+        "pdf_y_end": 530.3,
+        "unit_file": "7-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "soldier_id": "0116000174",
@@ -2560,7 +2579,6 @@
     "fathers_name": "",
     "full_name": "Nevajda Milan",
     "additional_info": "zvani Mican; načelnik službe veze divizije, rođen u Vlahoviću, Glina, radnik, Srbin, u NOB od 1941, član KPJ.",
-    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 89.4,
     "pdf_x": 42.4,
@@ -2571,7 +2589,37 @@
     "ethnicity": "Srbin",
     "occupation": "radnik",
     "pdf_x_end": 211.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_year": "1917",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0020001194",
+        "name": "Nevajda Milan",
+        "additional_info": "rođen 1917. u Vlahoviću (Glina).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 54.7,
+        "pdf_y": 208.9,
+        "pdf_x_end": 278.8,
+        "pdf_y_end": 216.9,
+        "unit_file": "4-banijska-soldiers.json"
+      },
+      {
+        "soldier_id": "0020010048",
+        "name": "Nevajda Milan",
+        "additional_info": "Starješine štabova 4. banijske brigade: Štab 1. bataljona, komandanti.",
+        "pdf_file": "4-banijska-starjesine.pdf",
+        "pdf_page": 2,
+        "pdf_x": 247.6,
+        "pdf_y": 220.3,
+        "pdf_x_end": 278.4,
+        "pdf_y_end": 228.5,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nikolić-Tatić",
@@ -3922,7 +3970,30 @@
     "death_date": "07.06.1943",
     "rank": "borac",
     "pdf_x_end": 370.6,
-    "death_place": "na Sutjesci . u kanjonu Pive kod Cikove luke"
+    "death_place": "na Sutjesci . u kanjonu Pive kod Cikove luke",
+    "party": "SKOJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0045010987",
+        "name": "Čučković Pere Ana",
+        "additional_info": "zvana Ličan; 1923, Gornje Selište, kotar Glina, domaćica, Srpkinja. Borac od 1942. godine, član SKOJ-a, poginula 24. U. 1943. u napadu na Glinu.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 312.1,
+        "pdf_y": 199.4,
+        "pdf_x_end": 471.3,
+        "pdf_y_end": 250.6,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Čučković",

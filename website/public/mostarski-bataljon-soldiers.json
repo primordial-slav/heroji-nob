@@ -151,7 +151,6 @@
     "fathers_name": "",
     "full_name": "Ajduk Ante",
     "additional_info": "iz Vrgorca, u Bataljonu od novembra 1942, borac, poginuo na Porimu marta 1943.",
-    "birth_year": "",
     "unit_detail": "Mostarski bataljon (juni 1942 — juni 1943)",
     "pdf_page": 35,
     "pdf_y": 435.0,
@@ -163,7 +162,25 @@
     "death_date": "03.1943",
     "death_place": "na Porimu",
     "rank": "borac",
-    "pdf_x_end": 296.8
+    "pdf_x_end": 296.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021055499",
+        "name": "Ajduk (Dujo) Ante",
+        "additional_info": "rođen 1922, Zavojane (Vrgorac). Hrvat, poginuo 1943. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2706",
+        "source_page": 2706,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Zavojane, Vrgorac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1922"
   },
   {
     "last_name": "Alagić",
@@ -2998,7 +3015,27 @@
     "death_place": "Sutjeska",
     "rank": "omladinski rukovodilac bataljona",
     "pdf_x_end": 292.8,
-    "party": "SKOJ 1938"
+    "party": "SKOJ 1938",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "13.06.1943",
+    "other_sources": [
+      {
+        "soldier_id": "0043000175",
+        "name": "Brkić M Hamdija",
+        "additional_info": "zvani Amo; politički komesar prateće čete brigade, rođen 1921, Mostar, student, Musliman, u NOB od 1941, član KPJ od 1940, poginuo u selu Rataj, Miljevina, 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 9,
+        "pdf_x": 314.6,
+        "pdf_y": 162.3,
+        "pdf_x_end": 484.6,
+        "pdf_y_end": 214.7,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brkić",
@@ -3103,7 +3140,25 @@
     "birth_place": "Mostar",
     "occupation": "advokatski pripravnik",
     "pdf_x_end": 294.1,
-    "party": "KPJ 1939"
+    "party": "KPJ 1939",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0043000178",
+        "name": "Brkić M Smajo",
+        "additional_info": "borac 4. bataljona, rođen u Mostaru, radnik, Musliman, u NOB od 1941. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 9,
+        "pdf_x": 313.4,
+        "pdf_y": 302.7,
+        "pdf_x_end": 484.1,
+        "pdf_y_end": 333.5,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bruk",
@@ -3556,7 +3611,30 @@
     "occupation": "kamenorezac",
     "rank": "borac",
     "pdf_x_end": 496.0,
-    "party": "SKOJ 1941"
+    "party": "SKOJ 1941",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0043001342",
+        "name": "Ćemić Bećira Omer",
+        "additional_info": "zvani Stari; kurir štaba 3. bataljona, rođen 1919, Lug, Jablanica, radnik, Musliman, u NOB od januara 1943, zarobljen na Sutjesci juna 1943. i do kraja rata se nalazio u nemačkom koncentracionom logoru.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 14,
+        "pdf_x": 100.0,
+        "pdf_y": 617.2,
+        "pdf_x_end": 270.9,
+        "pdf_y_end": 680.4,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Cerkić",
@@ -3657,7 +3735,32 @@
     "death_type": "umro",
     "death_date": "krajem 1943",
     "rank": "borac",
-    "pdf_x_end": 304.4
+    "pdf_x_end": 304.4,
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0043001362",
+        "name": "Čilić Rame Huso",
+        "additional_info": "borac, rođen 1923, Đevor, Jablanica, radnik, Musliman, u NOB od februara 1943, poginuo na Sutjesci juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 11,
+        "pdf_x": 310.2,
+        "pdf_y": 185.9,
+        "pdf_x_end": 480.2,
+        "pdf_y_end": 227.5,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Cilić",
@@ -4288,6 +4391,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1762",
         "source_page": 1762,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0043000229",
+        "name": "Dizdar Jusufa Mahmut",
+        "additional_info": "zvani Sultan; borac 3. čete 3. bataljona, rođen 1922, Livno, radnik, Musliman, u NOB od 1942, poginuo na Zelengori 10. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 15,
+        "pdf_x": 313.5,
+        "pdf_y": 207.7,
+        "pdf_x_end": 483.7,
+        "pdf_y_end": 261.1,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "ethnicity": "Musliman",
@@ -4295,7 +4410,7 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1943"
+    "death_date": "10.06.1943"
   },
   {
     "last_name": "Dizdar",
@@ -5789,6 +5904,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1159",
         "source_page": 1159,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0043001493",
+        "name": "Garbo Redže Mujo",
+        "additional_info": "borac, rođen 1919, Višići, Čapljina, zemljoradnik, Musliman, u NOB od 1942, poginuo na Pivi krajem maja 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 20,
+        "pdf_x": 97.1,
+        "pdf_y": 451.8,
+        "pdf_x_end": 261.6,
+        "pdf_y_end": 493.4,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "ethnicity": "Musliman",
@@ -5796,7 +5923,7 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1943"
+    "death_date": "krajem maja 1943"
   },
   {
     "last_name": "Gardovski",
@@ -6444,7 +6571,27 @@
     "death_place": "Sutjeska",
     "rank": "omladinski rukovodilac čete",
     "pdf_x_end": 480.0,
-    "party": "SKOJ 1938"
+    "party": "SKOJ 1938",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "13.06.1943",
+    "other_sources": [
+      {
+        "soldier_id": "0043000336",
+        "name": "Grebo Derviša Osman",
+        "additional_info": "zvani Osa; politički delegat voda u 3. bataljonu, rođen 1921, Mostar, đak, Musliman, u NOB od 1941, član KPJ od 1941, poginuo kod Miljevine 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 22,
+        "pdf_x": 275.2,
+        "pdf_y": 184.8,
+        "pdf_x_end": 445.8,
+        "pdf_y_end": 238.1,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grčić",
@@ -6894,6 +7041,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1673",
         "source_page": 1673,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0043000364",
+        "name": "Hadžizukić Asasa Irfan",
+        "additional_info": "borac 3. čete 3. bataljona, rođen 1925, Konjic, radnik, Musliman, u NOB od 1942, poginuo na Krekovima kod Tjentišta 13. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 24,
+        "pdf_x": 96.4,
+        "pdf_y": 233.4,
+        "pdf_x_end": 267.2,
+        "pdf_y_end": 285.8,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "ethnicity": "Musliman",
@@ -6901,7 +7060,7 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1943"
+    "death_date": "13.06.1943"
   },
   {
     "last_name": "Hadzović",
@@ -8699,7 +8858,27 @@
     "death_type": "poginuo",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 295.5
+    "pdf_x_end": 295.5,
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "13.06.1943",
+    "other_sources": [
+      {
+        "soldier_id": "0043000481",
+        "name": "Jusufbegović Mustafe Salih",
+        "additional_info": "borac 3. bataljona, rođen 1906, Kopčići, Prozor, zemljoradnik, Musliman, u NOB od jula 1942, poginuo na Krekovima kod Tjentišta 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 29,
+        "pdf_x": 126.6,
+        "pdf_y": 362.5,
+        "pdf_x_end": 297.2,
+        "pdf_y_end": 414.9,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jusufović",
@@ -10537,7 +10716,25 @@
     "occupation": "električar",
     "rank": "kurir",
     "pdf_x_end": 468.8,
-    "party": "SKOJ 1938"
+    "party": "SKOJ 1938",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0043000583",
+        "name": "Krajina A Petar",
+        "additional_info": "borac 3. bataljona, rođen u Mostaru, radnik u železničkoj radionici, Srbin, u NOB od 1941. godine, član KPJ.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 34,
+        "pdf_x": 95.8,
+        "pdf_y": 502.4,
+        "pdf_x_end": 265.2,
+        "pdf_y_end": 544.7,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Krajina",
@@ -10894,7 +11091,27 @@
     "death_place": "Sutjeska",
     "rank": "borac",
     "pdf_x_end": 288.3,
-    "party": "KPJ 1940"
+    "party": "KPJ 1940",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "13.06.1943",
+    "other_sources": [
+      {
+        "soldier_id": "0043000594",
+        "name": "Krpo Osmana Meho",
+        "additional_info": "politički komesar čete u 3. bataljonu, rođen 1916, Rečica, Čapljina, zemljoradnik, Musliman, u NOB od 1941, član KPJ od 1941, poginuo na Krekovima kod Tjentišta 13. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 35,
+        "pdf_x": 127.8,
+        "pdf_y": 317.0,
+        "pdf_x_end": 297.9,
+        "pdf_y_end": 380.2,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Krtolica",
@@ -11054,7 +11271,7 @@
       {
         "soldier_id": "0081000551",
         "name": "Kujundžić Đ Maksim",
-        "additional_info": "rođen 1923. u Čelebićima (Konjic). Komandant 1. bataljona. Poginuo na Vilenjaku kod Nevesinja, 13. novembra",
+        "additional_info": "rođen 1923. u Čelebićima (Konjic). Komandant 1. bataljona. Poginuo na Vilenjaku kod Nevesinja, 13. novembra 1944.",
         "pdf_file": "14-hercegovacka.pdf",
         "pdf_page": 39,
         "pdf_x": 35.5,
@@ -12157,7 +12374,32 @@
     "birth_place": "Sovići, Jablanica",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 467.9
+    "pdf_x_end": 467.9,
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "SKOJ 1943, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0043000651",
+        "name": "Lulić Muje Bećir",
+        "additional_info": "borac 3. čete 3. bataljona, rođen 1924, Sovići, Jablanica, zemljoradnik, Musliman, u NOB od maja 1942, član SKOJ-a od 1943, član KPJ od 1944. godine, krajem rata komandir voda.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 37,
+        "pdf_x": 316.5,
+        "pdf_y": 216.7,
+        "pdf_x_end": 486.4,
+        "pdf_y_end": 279.9,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Magazin",
@@ -12285,7 +12527,30 @@
     "occupation": "podoficir",
     "rank": "zamjenik komesara čete",
     "pdf_x_end": 480.7,
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0043000695",
+        "name": "Markotić F Mate",
+        "additional_info": "borac 3. bataljona, rođen 1920, Grab, Ljubuški, zemljoradnik, Hrvat, u NOB od 1941, član KPJ, krajem rata zamenik političkog komesara 11. hercegovačke brigade.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 40,
+        "pdf_x": 94.6,
+        "pdf_y": 179.0,
+        "pdf_x_end": 265.7,
+        "pdf_y_end": 231.4,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Markulin",
@@ -16987,6 +17252,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1787",
         "source_page": 1787,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0043001055",
+        "name": "Sadiković Alije Omer",
+        "additional_info": "komandir voda u 3. bataljonu, rođen 1917, Ljubuški, radnik, Musliman, u NOB od 1941, član KPJ, poginuo na Krekovima kod Tjentišta 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 59,
+        "pdf_x": 129.6,
+        "pdf_y": 604.2,
+        "pdf_x_end": 299.4,
+        "pdf_y_end": 657.6,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "ethnicity": "Musliman",
@@ -16994,7 +17271,7 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1943"
+    "death_date": "13.06.1943"
   },
   {
     "last_name": "Sain",
@@ -19939,6 +20216,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1564",
         "source_page": 1564,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0043001220",
+        "name": "Velić Smaje Salko",
+        "additional_info": "borac 3. čete 3. bataljona, rođen 1926, Slatina, Jablanica, zemljoradnik, Musliman, u NOB od lebruara 1943, poginuo na Vučevu 11. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 71,
+        "pdf_x": 314.1,
+        "pdf_y": 320.6,
+        "pdf_x_end": 484.2,
+        "pdf_y_end": 373.0,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "ethnicity": "Musliman",
@@ -19946,7 +20235,12 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1943"
+    "death_date": "11.06.1943",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Vidojević",
@@ -21109,7 +21403,34 @@
     "death_type": "poginuo",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 290.8
+    "pdf_x_end": 290.8,
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "ethnicity",
+      "party"
+    ],
+    "death_date": "13.06.1943",
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0043001324",
+        "name": "Zekotić Ibrahima Asim",
+        "additional_info": "borac 3. bataljona, rođen 1916, Voljevač, Gornji Vakuf, zemljoradnik, Musliman, u NOB od januara 1943, član SKOJ-a, poginuo kod Tjentišta 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 76,
+        "pdf_x": 283.6,
+        "pdf_y": 267.2,
+        "pdf_x_end": 454.5,
+        "pdf_y_end": 319.6,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Zekotić",
@@ -22137,7 +22458,29 @@
     "occupation": "đak",
     "rank": "borac",
     "pdf_x_end": 483.3,
-    "party": "SKOJ 1940"
+    "party": "SKOJ 1940",
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "death_date",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1987",
+    "other_sources": [
+      {
+        "soldier_id": "0043001368",
+        "name": "Čišić Sulejmana Sulejman",
+        "additional_info": "zvani Brato; omladinski rukovodilac čete u 3. bataljonu, rođen 1923, đak učiteljske škole, Musliman, u NOB od 1941, predratni član SKOJ-a, član KPJ od 1943. Umro 1987. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 11,
+        "pdf_x": 309.3,
+        "pdf_y": 401.9,
+        "pdf_x_end": 479.4,
+        "pdf_y_end": 465.1,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ćišić",

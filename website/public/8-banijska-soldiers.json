@@ -1328,7 +1328,21 @@
     "death_type": "poginuo",
     "death_date": "20.12.1944",
     "rank": "bolničarka, referent saniteta bataljona",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0007000386",
+        "name": "Bekić Đure Evica",
+        "additional_info": "1924. Glina. Hrvatica, domaćica. U NOV od 1941. u 8. banijskoj brigadi. Poginula 20. 12. 1944. nesretnim slučajem u Dubrovniku.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 142.2,
+        "pdf_y": 616.9,
+        "pdf_x_end": 464.9,
+        "pdf_y_end": 632.4,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Benak-Arbutina",
@@ -1901,7 +1915,21 @@
     "occupation": "radnik",
     "rank": "komandir voda",
     "unit_detail": "3. četa, 1. bataljon",
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0020000144",
+        "name": "Biškupović Nikole Milan",
+        "additional_info": "rođen u Bestrmi",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 55.7,
+        "pdf_y": 223.7,
+        "pdf_x_end": 225.1,
+        "pdf_y_end": 231.7,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Biškupović",
@@ -3678,10 +3706,27 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1619",
         "source_page": 1619,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0044010131",
+        "name": "Bunčić Jovana Adam",
+        "additional_info": "rođen 1924, V. šušnjar — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 62.5,
+        "pdf_y": 473.8,
+        "pdf_x_end": 343.5,
+        "pdf_y_end": 499.8,
+        "unit_file": "7-banijska-soldiers.json"
       }
     ],
     "death_place": "Tara",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Bunčić",
@@ -8610,8 +8655,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1581",
         "source_page": 1581,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0020000671",
+        "name": "Jekić Stanka Petar",
+        "additional_info": "rođen 1913. u Grabovcu (Petrinja), poginuo 1943. u Cazinskoj Krajini.",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 60.5,
+        "pdf_y": 335.0,
+        "pdf_x_end": 366.7,
+        "pdf_y_end": 351.7,
+        "unit_file": "4-banijska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Jekić",
@@ -18891,7 +18953,21 @@
     "occupation": "radnik",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "party": "SKOJ 1942, KPJ 1944"
+    "party": "SKOJ 1942, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0020001405",
+        "name": "Prpić Mije Tomo",
+        "additional_info": "rođen u Praćnom (Sisak).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 72.7,
+        "pdf_y": 69.4,
+        "pdf_x_end": 246.0,
+        "pdf_y_end": 77.4,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Purar",
@@ -22696,12 +22772,11 @@
   },
   {
     "last_name": "Sužnjević",
-    "middle_name": "",
+    "middle_name": "Petra",
     "first_name": "Mirko",
-    "fathers_name": "",
-    "full_name": "Sužnjević Mirko",
+    "fathers_name": "Petar",
+    "full_name": "Sužnjević Petra Mirko",
     "additional_info": "obaveštajni oficir brigade, rođen u Donjem Selištu, Glina, radnik, Srbin, u NOB od 1941. godine, član KPJ.",
-    "birth_year": "",
     "pdf_page": 33,
     "pdf_y": 323.0,
     "pdf_x": 223.5,
@@ -22724,10 +22799,26 @@
         "pdf_y": 389.0,
         "pdf_x_end": 369.8,
         "pdf_y_end": 398.0
+      },
+      {
+        "soldier_id": "0020001662",
+        "name": "Suznjević Petra Mirko",
+        "additional_info": "rođen 1923. u Donjem Selištu (Glina).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 51.3,
+        "pdf_y": 336.0,
+        "pdf_x_end": 332.8,
+        "pdf_y_end": 344.0,
+        "unit_file": "4-banijska-soldiers.json"
       }
     ],
     "unit_detail": "štab brigade",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Sužnjević",
@@ -23213,7 +23304,28 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Zelengora",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0047010443",
+        "name": "Tesla Marka Božo",
+        "additional_info": "borac čete za vezu brigade, rođen 1913. godine, Gage, Dvor na Uni, zemljoradnik Srbin, u NOVJ od 8. septembra 1942. godine, umro od tifusa u selu Sivolje kod Kalinovika maja 1943. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=252",
+        "source_page": 240,
+        "unit_file": "16-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ],
+      "death": [
+        {
+          "date": "05.1943",
+          "place": "Sivolje, Kalinovik"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tintor",
@@ -25382,8 +25494,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1957",
         "source_page": 1957,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0001013262",
+        "name": "Vranešević Toše Đuro",
+        "additional_info": "1922, Čakalo, Sisak, Hrvatska, Srbin, zemljoradnik, u NOB od 1944, u brigadi od 1944, III bataljon, borac, poginuo 1945, Vukševac",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 339,
+        "pdf_x": 47.6,
+        "pdf_y": 343.7,
+        "pdf_x_end": 354.8,
+        "pdf_y_end": 375.3,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vračar",
@@ -26054,7 +26183,21 @@
     "death_type": "umro",
     "death_place": "Karlovca",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0020001929",
+        "name": "Zlonoga Laze Jovan",
+        "additional_info": "rođen u Majskim Poljanama {Glina).",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 49,
+        "pdf_x": 52.4,
+        "pdf_y": 513.6,
+        "pdf_x_end": 292.2,
+        "pdf_y_end": 521.6,
+        "unit_file": "4-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zlonoga-Miljević",
@@ -44451,7 +44594,26 @@
     "death_date": "02.1943",
     "death_place": "na Raduši u bici za ranjenike na Neretvi",
     "rank": "borac",
-    "pdf_x_end": 467.5
+    "pdf_x_end": 467.5,
+    "other_sources": [
+      {
+        "soldier_id": "0044010972",
+        "name": "Vulić Petra Rade",
+        "additional_info": "rođen 1920, Šakanlije — Dvor, Srbin, zemljoradnik, u NOVJ od 1942. (2. bataljon). Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 57.0,
+        "pdf_y": 260.8,
+        "pdf_x_end": 338.6,
+        "pdf_y_end": 287.1,
+        "unit_file": "7-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Vučetić",
@@ -45996,10 +46158,10 @@
   },
   {
     "last_name": "Čučković",
-    "middle_name": "",
+    "middle_name": "Pere",
     "first_name": "Ana",
-    "fathers_name": "",
-    "full_name": "Čučković Ana",
+    "fathers_name": "Pero",
+    "full_name": "Čučković Pere Ana",
     "additional_info": "zvana Ličan; 1923, Gornje Selište, kotar Glina, domaćica, Srpkinja. Borac od 1942. godine, član SKOJ-a, poginula 24. U. 1943. u napadu na Glinu.",
     "birth_year": "1923",
     "birth_place": "Gornje Selište, Glina",
@@ -46015,7 +46177,30 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 471.3,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_place": "na Sutjesci . u kanjonu Pive kod Cikove luke",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0116000148",
+        "name": "Čučković Pere Ana",
+        "additional_info": "borac pri Štabu divizije, rođena 1925, Gornje Selište, Glina, domaćica, Srpkinja, u NOB od januara 1943, poginula u bici na Sutjesci 7. juna 1943. u kanjonu Pive kod Ci)kove luke.",
+        "pdf_file": "borci-sutjeske-7-banijska-divizija.pdf",
+        "pdf_page": 2,
+        "pdf_x": 200.2,
+        "pdf_y": 170.7,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 233.9,
+        "unit_file": "7-banijska-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Čučković",
@@ -46824,7 +47009,26 @@
     "death_place": "na Raduši u bici za ranjenike na Neretvi",
     "rank": "borac",
     "pdf_x_end": 282.3,
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0044011049",
+        "name": "Šikanja Stevana Aleksa",
+        "additional_info": "rođen 1924, Brezovo Polje — Glina, Srbin, zemljoradnik, u NOVJ od 1941, član KPJ (2. bataljon). Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 59,
+        "pdf_x": 49.0,
+        "pdf_y": 431.3,
+        "pdf_x_end": 330.5,
+        "pdf_y_end": 457.4,
+        "unit_file": "7-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Šimunlija",

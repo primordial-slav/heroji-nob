@@ -3817,7 +3817,6 @@
     "fathers_name": "Mate",
     "full_name": "Gurdulić Matin Ivan",
     "additional_info": "borac 2. č, iz Vrisnika Hvar, pog. 10. 5. kod Grohota",
-    "birth_year": "",
     "death_date": "10.05.1944",
     "pdf_file": "12-dalmatinska.pdf",
     "pdf_page": 36,
@@ -3845,7 +3844,33 @@
     "death_type": "poginuo",
     "death_place": "Grohote",
     "rank": "borac",
-    "unit_detail": "2. četa"
+    "unit_detail": "2. četa",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0036000675",
+        "name": "Gurdulić M Ivan",
+        "additional_info": "rođen 1920. godine u Vrsniku — Hvar, borac III bat, poginuo u 0. Šolta, maja 1944. godine.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010734",
+        "name": "Gurdulić M Ivan",
+        "additional_info": "rođen 1920 godine u Vrsniku — Hvar. borac III bat., poginuo u O. Šolta, maja 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 64,
+        "pdf_x": 46.2,
+        "pdf_y": 471.33,
+        "pdf_y_end": 488.0,
+        "pdf_x_end": 383.6,
+        "pdf_x_left": 25.4,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gurdulić",
@@ -8616,10 +8641,10 @@
   },
   {
     "last_name": "Milatić",
-    "middle_name": "",
+    "middle_name": "Ante",
     "first_name": "Josip",
-    "fathers_name": "",
-    "full_name": "Milatić Josip",
+    "fathers_name": "Ante",
+    "full_name": "Milatić Ante Josip",
     "additional_info": "borac 2. č, 2. bat, iz Svirča, Hvar, pog. 2. 6. na koti 710",
     "death_date": "02.06.1944",
     "pdf_file": "12-dalmatinska.pdf",
@@ -8656,6 +8681,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=764",
         "source_page": 764,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0168002579",
+        "name": "Milatić Ante Josip",
+        "additional_info": "Svirče, o. Hvar",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 32,
+        "pdf_x": 44.6,
+        "pdf_y": 339.8,
+        "pdf_x_end": 199.5,
+        "pdf_y_end": 349.3,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -9910,7 +9947,6 @@
     "fathers_name": "",
     "full_name": "Perković Ivan",
     "additional_info": "borac 1. č, 3. bat, iz Primoštena, pog. 4. 4. kod Ličkog Osika",
-    "birth_year": "",
     "death_date": "04.04.1945",
     "pdf_file": "12-dalmatinska.pdf",
     "pdf_page": 44,
@@ -9938,7 +9974,23 @@
     "death_type": "poginuo",
     "death_place": "Lički Osik",
     "rank": "borac",
-    "unit_detail": "1. četa, 3. bataljon"
+    "unit_detail": "1. četa, 3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9021037119",
+        "name": "Perković (Marko) Ivan",
+        "additional_info": "rođen 1923, Primošten Burnji (Šibenik). Hrvat, poginuo 1945. u NOBu, Lički osijek",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1808",
+        "source_page": 1808,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1923"
   },
   {
     "last_name": "Perković",
@@ -10756,6 +10808,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2182",
         "source_page": 2182,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0008000412",
+        "name": "Radošević Petra Jozo",
+        "additional_info": ". . ., Dugopolje, Split, . . ., borac, poginuo 16. 1. 1945, selo Uzarići, Široki Brijeg",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 18,
+        "pdf_x": 46.8,
+        "pdf_y": 115.4,
+        "pdf_x_end": 377.4,
+        "pdf_y_end": 132.8,
+        "unit_file": "4-splitska-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -10763,7 +10827,15 @@
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1907"
+    "birth_year": "1907",
+    "variants": {
+      "death": [
+        {
+          "date": "16.01.1945",
+          "place": "Uzarići, Široki Brijeg"
+        }
+      ]
+    }
   },
   {
     "last_name": "Raić",
@@ -13157,7 +13229,6 @@
     "fathers_name": "Stjepan",
     "full_name": "Vladislavić Stjepanov Mate",
     "additional_info": "borac 3. č, iz Mirca, Brač",
-    "birth_year": "",
     "pdf_file": "12-dalmatinska.pdf",
     "pdf_page": 36,
     "pdf_x": 407.7,
@@ -13182,7 +13253,29 @@
     "soldier_id": "0050000319",
     "birth_place": "Mirca, Brač",
     "rank": "borac",
-    "unit_detail": "3. četa"
+    "unit_detail": "3. četa",
+    "other_sources": [
+      {
+        "soldier_id": "9021001974",
+        "name": "Vladislavić (Stjepan) Mate",
+        "additional_info": "rođen 1920, Mirce (Brač). Hrvat, poginuo 1944. u NOBu, Grohote",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=74",
+        "source_page": 74,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Grohote",
+    "birth_year": "1920"
   },
   {
     "last_name": "Vodanović",
@@ -13936,7 +14029,6 @@
     "fathers_name": "",
     "full_name": "Zlatar Petar",
     "additional_info": "borac, prateći vod 1. bat, iz Povija, pog. 3. 6. na Braču",
-    "birth_year": "",
     "death_date": "03.06.1944",
     "pdf_file": "12-dalmatinska.pdf",
     "pdf_page": 37,
@@ -13964,7 +14056,23 @@
     "death_type": "poginuo",
     "death_place": "Brač",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9021002083",
+        "name": "Zlatar (Andro) Petar",
+        "additional_info": "rođen 1920, Povlja (Brač). Hrvat, poginuo 1944. u NOBu, Merežišće",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=77",
+        "source_page": 77,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Zorotović",

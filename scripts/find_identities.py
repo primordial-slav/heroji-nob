@@ -192,15 +192,33 @@ def where(s: dict) -> dict | None:
             'title': TITLES_PDF.get(s['pdf_file'], s['pdf_file'])}
 
 
+def unit_rows(s: dict) -> tuple[str, str]:
+    """A man's unit in one form on both sides of the page: the unit by the site's name, and apart from it what's inside
+    it. A record is of its unit, with its sub-unit in unit_detail; an entry of a book across units gives the site's units
+    it names (`units`), or as printed its brigade, in the genitive where a list's heading has it ("Prve proleterske
+    brigade"), and a battalion after a comma ("4. proleterska brigada, 2. bataljon")."""
+    code = int(s['soldier_id'][:4])
+    if code in BRIGADE_CONFIGS:
+        return BRIGADE_CONFIGS[code]['name'], s.get('unit_detail') or ''
+    printed, _, inside = (s.get('unit') or '').partition(', ')
+    named = [BRIGADE_CONFIGS[c]['name'] for c in s.get('units') or () if c in BRIGADE_CONFIGS]
+    if named:
+        return ' / '.join(named), inside
+    words = printed.replace('narodnooslobodilačke ', '').replace('narodnooslobodilačka ', '').split()
+    last = next((i for i, w in enumerate(words) if w == 'brigade'), -1)
+    return ' '.join([re.sub(r'e(\)?)$', r'a\1', w) for w in words[:last + 1]] + words[last + 1:]), inside
+
+
 def facts(s: dict) -> dict:
     when = s.get('death_date') or s.get('death_year') or ''
     iso = re.fullmatch(r'(\d{4})-(\d\d)-(\d\d)', when)
     if iso:                                                         # the books' entries: 1944-12-26 as 26. 12. 1944
         when = f'{int(iso.group(3))}. {int(iso.group(2))}. {iso.group(1)}'
+    unit, inside = unit_rows(s)
     out = {'father': s.get('fathers_name') or s.get('middle_name') or '', 'born': s.get('birth_year') or '',
            'birthplace': s.get('birth_place') or s.get('born_in') or '',
            'death': ' '.join(x for x in (s.get('death_type') or '', when) if x),
-           'death place': s.get('death_place') or '', 'rank': s.get('rank') or '', 'in unit': s.get('unit_detail') or s.get('unit') or ''}
+           'death place': s.get('death_place') or '', 'rank': s.get('rank') or '', 'unit': unit, 'in unit': inside}
     return {k: v for k, v in out.items() if v}
 
 
@@ -338,10 +356,12 @@ def merge_groups(sure: list[dict], rank: dict, refs_of: dict, portraits: set):
                          key=lambda i: order(by_id[i]))
         recs = [by_id[i] for i in members]
         trouble = ''
+        one_man = {frozenset((p['keep']['soldier_id'], p['merge']['soldier_id'])) for p in pairs if p.get('same_man')}
         lists = [merged_lists(s) for s in recs]
         if any(lists[i] & lists[j] for i in range(len(recs)) for j in range(i + 1, len(recs))):
             trouble = 'one of them holds an entry of the other’s list already'
-        elif any(F.evidence(recs[i], recs[j])[1] for i in range(len(recs)) for j in range(i + 1, len(recs))):
+        elif any(F.evidence(recs[i], recs[j])[1] and frozenset((members[i], members[j])) not in one_man
+                 for i in range(len(recs)) for j in range(i + 1, len(recs))):
             trouble = 'three or more records, and two of them disagree'
         elif any(set(refs_of[x]) & set(refs_of[y]) and any(refs_of[x][b] != refs_of[y].get(b, refs_of[x][b]) for b in refs_of[x])
                  for i, x in enumerate(members) for y in members[i + 1:]):
@@ -373,6 +393,11 @@ def find_pairs(units, corr, decisions, log=print):
         review.append({'key': k, 'kind': kind, 'a': a_side, 'b': b_side, 'grade': grade, 'agree': list(agree),
                        'clash': list(clash), 'note': note or '', 'score': score(agree, clash)})
 
+    index = defaultdict(list)
+    for s in recs.values():
+        index[(M.fold(s.get('last_name')), M.fold(s.get('first_name')))].append(s)
+    R.count_bearers(index)
+
     # merges, unit by unit
     merges = Counter()
     refs_of = defaultdict(dict)                         # record -> {book: entry}: the references it holds
@@ -389,7 +414,9 @@ def find_pairs(units, corr, decisions, log=print):
             k = key('merge', a, b)
             if k in answered:
                 continue
-            if p['grade'] == 'sure':
+            if p.get('note') != 'several candidates':
+                p['same_man'] = R.same_man(p['keep'], p['merge'])
+            if p['grade'] == 'sure' or p.get('same_man'):
                 sure.append(p)
             elif p['grade'] == 'name' and is_staff(p['keep']) != is_staff(p['merge']):
                 if same_sub_unit(p['keep'], p['merge'], division):
@@ -423,7 +450,7 @@ def find_pairs(units, corr, decisions, log=print):
         k = key('link', a, b)
         if k in answered or (a in linked and linked.get(a) == linked.get(b)):
             continue
-        if p['grade'] == 'sure':
+        if p['grade'] == 'sure' or (p.get('note') != 'several candidates' and R.same_man(p['keep'], p['merge'])):
             auto.append(('link', a, b, '', f"Same soldier in {F.unit_name(p['keep']['_unit'])} and "
                                            f"{F.unit_name(p['merge']['_unit'])}", p['agree'], p['merge'].get('full_name')))
             links['auto'] += 1
@@ -434,9 +461,6 @@ def find_pairs(units, corr, decisions, log=print):
     log(f'links: {dict(links)}')
 
     # references, book by book
-    index = defaultdict(list)
-    for s in recs.values():
-        index[(M.fold(s.get('last_name')), M.fold(s.get('first_name')))].append(s)
     ref_blocked = {(d.get('book'), d['a'], d['b']) for k, d in answered.items() if d['kind'] == 'reference'}
     CACHE.mkdir(parents=True, exist_ok=True)
     new, _, rev = R.rematch(index, recs, corr, CACHE, blocked=ref_blocked, log=lambda *_: None)

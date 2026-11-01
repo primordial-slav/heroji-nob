@@ -193,6 +193,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=899",
         "source_page": 899,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0079000035",
+        "name": "Babić P Obrad",
+        "additional_info": "iz Mokrog Polja, u borbi na Ilicima, 5. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 111.2,
+        "pdf_y": 427.2,
+        "pdf_x_end": 262.8,
+        "pdf_y_end": 448.2,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -275,7 +287,29 @@
     "death_place": "Prevjes",
     "birth_place": "Zadar",
     "soldier_id": "0103000011",
-    "pdf_x_end": 353.3
+    "pdf_x_end": 353.3,
+    "other_sources": [
+      {
+        "soldier_id": "0079000045",
+        "name": "Bailo Ivan",
+        "additional_info": "iz Zadra, u borbi na Vijencu, 1. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 290.7,
+        "pdf_y": 452.4,
+        "pdf_x_end": 442.4,
+        "pdf_y_end": 472.9,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.12.1944",
+          "place": "Vijenac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Baić",
@@ -587,7 +621,21 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Prevjes",
     "soldier_id": "0103000025",
-    "pdf_x_end": 189.4
+    "pdf_x_end": 189.4,
+    "other_sources": [
+      {
+        "soldier_id": "0079000091",
+        "name": "Beljak K Filip",
+        "additional_info": "iz Pešnika (ne zna se mjesto pogibije), 4. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 101.4,
+        "pdf_y": 187.2,
+        "pdf_x_end": 252.0,
+        "pdf_y_end": 207.7,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Berzat",
@@ -645,7 +693,32 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Pađene",
     "soldier_id": "0103000028",
-    "pdf_x_end": 189.8
+    "pdf_x_end": 189.8,
+    "birth_place": "Čista",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000113",
+        "name": "Bilus Nikola",
+        "additional_info": "iz Čiste, u borbi na Padenima, 3. XII 1943.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 279.7,
+        "pdf_y": 296.8,
+        "pdf_x_end": 431.3,
+        "pdf_y_end": 317.9,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.12.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bjedov",
@@ -664,7 +737,33 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Benkovac",
     "soldier_id": "0103000029",
-    "pdf_x_end": 189.8
+    "pdf_x_end": 189.8,
+    "birth_place": "Zemunik",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000118",
+        "name": "Bjedov Đ Mile",
+        "additional_info": "iz Zemunika, u borbi u Bukovici, 6. IX 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 279.4,
+        "pdf_y": 466.3,
+        "pdf_x_end": 430.9,
+        "pdf_y_end": 486.8,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.09.1944",
+          "place": "Bukovica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bjedov",
@@ -839,7 +938,21 @@
     "death_place": "Prevjes",
     "birth_place": "Novigrad",
     "soldier_id": "0103000038",
-    "pdf_x_end": 343.7
+    "pdf_x_end": 343.7,
+    "other_sources": [
+      {
+        "soldier_id": "0079000127",
+        "name": "Boljat Ilija",
+        "additional_info": "iz Novigrada (nepoznato mjesto pogibije), 26. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 121.4,
+        "pdf_y": 200.8,
+        "pdf_x_end": 272.8,
+        "pdf_y_end": 233.8,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Borašić",
@@ -1031,7 +1144,32 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Padani",
     "soldier_id": "0103000048",
-    "pdf_x_end": 198.8
+    "pdf_x_end": 198.8,
+    "birth_place": "Žegar",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000172",
+        "name": "Bundalo Savo",
+        "additional_info": "iz Žegara, u borbi, na Pađenima, 3. XII 1943.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 300.0,
+        "pdf_y": 158.4,
+        "pdf_x_end": 453.2,
+        "pdf_y_end": 179.2,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.12.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bundalov",
@@ -1088,7 +1226,25 @@
     "pdf_file": "6-dalmatinska.pdf",
     "birth_place": "Zemunik",
     "soldier_id": "0103000051",
-    "pdf_x_end": 198.8
+    "pdf_x_end": 198.8,
+    "death_date": "30.11.1944",
+    "borrowed": [
+      "death_date"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000175",
+        "name": "Burcul Jakov",
+        "additional_info": "iz Zemunika, a borbi na Prevjesu, 30. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 299.6,
+        "pdf_y": 236.4,
+        "pdf_x_end": 452.2,
+        "pdf_y_end": 257.0,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Buterin",
@@ -1326,7 +1482,21 @@
     "death_place": "Radučić",
     "birth_place": "Benkovac",
     "soldier_id": "0103000060",
-    "pdf_x_end": 353.3
+    "pdf_x_end": 353.3,
+    "other_sources": [
+      {
+        "soldier_id": "0079001282",
+        "name": "Ćoša Ivan",
+        "additional_info": "iz Benkovca, u borbi kod Markoševih stanova, 18. XI",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 308.9,
+        "pdf_y": 260.0,
+        "pdf_x_end": 460.6,
+        "pdf_y_end": 293.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Cuprić",
@@ -1639,7 +1809,6 @@
     "fathers_name": "",
     "full_name": "Drlić Križan",
     "additional_info": "iz Rodopolja. poginuo u borbi za Prevjes 3. XII 1944. god.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "03.12.1944",
     "pdf_page": 4,
@@ -1649,7 +1818,37 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Prevjes",
     "soldier_id": "0103000073",
-    "pdf_x_end": 186.9
+    "pdf_x_end": 186.9,
+    "other_sources": [
+      {
+        "soldier_id": "9021000777",
+        "name": "Drlić (Ivan) Križan",
+        "additional_info": "rođen 1905, Radošinovci (Benkovac). Hrvat, poginuo 1944. u NOBu, Preves",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=22",
+        "source_page": 22,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0079000252",
+        "name": "Drlić Križan",
+        "additional_info": "iz Stankovaca, u borbi kod Prevjesa, 3. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 277.6,
+        "pdf_y": 470.3,
+        "pdf_x_end": 430.1,
+        "pdf_y_end": 491.1,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "birth_place": "Stankovci",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1905"
   },
   {
     "last_name": "Drća",
@@ -1693,7 +1892,7 @@
       {
         "soldier_id": "0079000259",
         "name": "Dubravica Miljenko",
-        "additional_info": "iz Stankovaca, u borbi kod Ilice, 29. XI",
+        "additional_info": "iz Stankovaca, u borbi kod Ilice, 29. XI 1944.",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 13,
         "pdf_x": 116.8,
@@ -2048,7 +2247,6 @@
     "fathers_name": "",
     "full_name": "Gladović Stojan",
     "additional_info": "iz Lozovića, poginuo u borbi kod Mokrog Polja 14. XI 1944. god.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "14.11.1944",
     "pdf_page": 4,
@@ -2058,7 +2256,25 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Mokro Polje",
     "soldier_id": "0103000090",
-    "pdf_x_end": 341.9
+    "pdf_x_end": 341.9,
+    "other_sources": [
+      {
+        "soldier_id": "9021038643",
+        "name": "Gladović (Božo) Stojan",
+        "additional_info": "rođen 1920, Žažvić (Šibenik). Srbin, poginuo 1944. u NOBu, Knin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1841",
+        "source_page": 1841,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Žažvić, Šibenik",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1920"
   },
   {
     "last_name": "Gladović",
@@ -2284,7 +2500,25 @@
     "soldier_id": "0103000100",
     "pdf_x_end": 201.5,
     "death_date": "03.12.1944",
-    "death_place": "Knin"
+    "death_place": "Knin",
+    "birth_place": "Benkovac",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000322",
+        "name": "Grgas Zivko",
+        "additional_info": "iz Benkovca, u borbi na Oćestovu, 3. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 126.3,
+        "pdf_y": 578.0,
+        "pdf_x_end": 278.2,
+        "pdf_y_end": 598.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grgos",
@@ -3059,7 +3293,25 @@
     "birth_place": "Benkovac",
     "soldier_id": "0103000134",
     "pdf_x_end": 185.4,
-    "death_date": "1944"
+    "death_date": "1944",
+    "death_place": "Oćestovo",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000443",
+        "name": "Karlović Stanko",
+        "additional_info": "iz Benkovca, u borbi na Oćestovu, 31. X 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 133.0,
+        "pdf_y": 465.2,
+        "pdf_x_end": 284.7,
+        "pdf_y_end": 496.8,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kašević",
@@ -3256,7 +3508,21 @@
     "birth_place": "Novigrad",
     "soldier_id": "0103000142",
     "pdf_x_end": 339.2,
-    "death_date": "29.11.1944"
+    "death_date": "29.11.1944",
+    "other_sources": [
+      {
+        "soldier_id": "0079000476",
+        "name": "Kokić Mirko",
+        "additional_info": "iz Novigrada, u borbi kod Ilića stanova, 29. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 109.9,
+        "pdf_y": 405.5,
+        "pdf_x_end": 261.1,
+        "pdf_y_end": 438.3,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kolapać",
@@ -3508,7 +3774,7 @@
       {
         "soldier_id": "0079000534",
         "name": "Krička Stanko",
-        "additional_info": "iz Skradina, u borbi na Mokrom Polju, 20. XI",
+        "additional_info": "iz Skradina, u borbi na Mokrom Polju, 20. XI 1944.",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 21,
         "pdf_x": 310.9,
@@ -3743,7 +4009,21 @@
     "death_place": "Višici",
     "birth_place": "Zegar",
     "soldier_id": "0103000163",
-    "pdf_x_end": 199.8
+    "pdf_x_end": 199.8,
+    "other_sources": [
+      {
+        "soldier_id": "0079000549",
+        "name": "Kumozec L Mile",
+        "additional_info": "iz Žegara, u borbj kod Ilica stanova, 7. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 302.5,
+        "pdf_y": 195.5,
+        "pdf_x_end": 453.9,
+        "pdf_y_end": 227.8,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kupilovicj",
@@ -4086,7 +4366,21 @@
     "death_place": "Stankovci",
     "birth_place": "Karin",
     "soldier_id": "0103000179",
-    "pdf_x_end": 354.3
+    "pdf_x_end": 354.3,
+    "other_sources": [
+      {
+        "soldier_id": "0079000583",
+        "name": "Ležaja Srećko",
+        "additional_info": "iz Karina, u borbi na Ilica stanovima, 4. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 140.6,
+        "pdf_y": 599.4,
+        "pdf_x_end": 293.2,
+        "pdf_y_end": 630.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lisica",
@@ -4113,9 +4407,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2760",
         "source_page": 2760,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0079000586",
+        "name": "Lisica Mate",
+        "additional_info": "iz Nina, u borbi na Pađenima, 3. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 319.9,
+        "pdf_y": 181.3,
+        "pdf_x_end": 472.0,
+        "pdf_y_end": 201.6,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
       }
     ],
-    "birth_place": "Donje Petrčane, Zadar",
+    "birth_place": "Nin",
     "borrowed": [
       "birth_place",
       "birth_year",
@@ -4531,7 +4837,25 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Otrić",
     "soldier_id": "0103000195",
-    "pdf_x_end": 185.5
+    "pdf_x_end": 185.5,
+    "birth_place": "Unešić",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000670",
+        "name": "Mates Luka",
+        "additional_info": "iz Unešića, u borbi na Viojli, 8. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 110.1,
+        "pdf_y": 350.8,
+        "pdf_x_end": 262.5,
+        "pdf_y_end": 371.1,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Matijević",
@@ -4558,9 +4882,21 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=888",
         "source_page": 888,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0079000677",
+        "name": "Matijević Obrad",
+        "additional_info": "iz Ervenika, u borbi na Perisici. 24. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 290.6,
+        "pdf_y": 224.3,
+        "pdf_x_end": 442.5,
+        "pdf_y_end": 245.3,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
       }
     ],
-    "birth_place": "Gornji ervenik, Knin",
+    "birth_place": "Ervenik",
     "borrowed": [
       "birth_place",
       "birth_year",
@@ -4650,7 +4986,6 @@
     "fathers_name": "",
     "full_name": "Medica Đuro",
     "additional_info": "iz Koiečera, poginuo u borbi kod Vrhovina 5. IV 1945. god.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "05.04.1945",
     "pdf_page": 8,
@@ -4660,7 +4995,25 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Vrhovine",
     "soldier_id": "0103000200",
-    "pdf_x_end": 339.0
+    "pdf_x_end": 339.0,
+    "other_sources": [
+      {
+        "soldier_id": "9021008703",
+        "name": "Međica (Vlaho) Đuro",
+        "additional_info": "rođen 1910, Ljubač (Dubrovnik). Hrvat, poginuo 1945. u NOBu, Vučjak.š.vrhovi",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=374",
+        "source_page": 374,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Ljubač, Dubrovnik",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1910"
   },
   {
     "last_name": "Medić",
@@ -5060,7 +5413,21 @@
     "death_place": "Očestovo",
     "birth_place": "Skradin",
     "soldier_id": "0103000215",
-    "pdf_x_end": 201.6
+    "pdf_x_end": 201.6,
+    "other_sources": [
+      {
+        "soldier_id": "0079000789",
+        "name": "Nadoveza Jovan",
+        "additional_info": "iz Skradina, u borbi na Padenima, 13. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 29,
+        "pdf_x": 134.9,
+        "pdf_y": 511.0,
+        "pdf_x_end": 286.7,
+        "pdf_y_end": 542.1,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nekić",
@@ -5146,10 +5513,10 @@
   },
   {
     "last_name": "Njegić",
-    "middle_name": "",
+    "middle_name": "Lj",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Njegić Petar",
+    "fathers_name": "Lj",
+    "full_name": "Njegić Lj Petar",
     "additional_info": "iz Drniša, poginuo u borbi kod Prevjesa Ž9. XI 1944. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -5162,7 +5529,21 @@
     "soldier_id": "0103000219",
     "pdf_x_end": 202.1,
     "death_date": "29.11.1944",
-    "death_place": "Prevjes"
+    "death_place": "Prevjes",
+    "other_sources": [
+      {
+        "soldier_id": "0079000799",
+        "name": "Njegić Lj Petar",
+        "additional_info": "iz Drniša, u borbi na Ilića-stanovima, 29. XI ? (vjerojatno 1944.)",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 122.4,
+        "pdf_y": 317.8,
+        "pdf_x_end": 274.5,
+        "pdf_y_end": 349.4,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Njegovan",
@@ -5422,7 +5803,29 @@
     "death_place": "Prevjes",
     "birth_place": "Benkovac",
     "soldier_id": "0103000231",
-    "pdf_x_end": 356.0
+    "pdf_x_end": 356.0,
+    "other_sources": [
+      {
+        "soldier_id": "0079000848",
+        "name": "Pavić Zvonko",
+        "additional_info": "iz Benkovca, u borbi na Vijencu, 1. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 316.0,
+        "pdf_y": 596.2,
+        "pdf_x_end": 467.6,
+        "pdf_y_end": 616.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.12.1944",
+          "place": "Vijenac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavle",
@@ -5584,7 +5987,6 @@
     "fathers_name": "",
     "full_name": "Perkov Martin",
     "additional_info": "iz Primoštena. poginuo u borbi za Prevjes 2. XII 1944. god.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "02.12.1944",
     "pdf_page": 9,
@@ -5595,7 +5997,35 @@
     "death_place": "Prevjes",
     "birth_place": "Primošten",
     "soldier_id": "0103000239",
-    "pdf_x_end": 356.6
+    "pdf_x_end": 356.6,
+    "other_sources": [
+      {
+        "soldier_id": "9021037117",
+        "name": "Perkov (Jure) Martin",
+        "additional_info": "rođen 1907, Primošten Burnji (Šibenik). Hrvat, poginuo 1944. u NOBu, Kod knina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1808",
+        "source_page": 1808,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0079000871",
+        "name": "Perkov Martin",
+        "additional_info": "iz Primoštena, u borbi na Vijencu, 2. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 288.4,
+        "pdf_y": 425.5,
+        "pdf_x_end": 440.7,
+        "pdf_y_end": 446.0,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1907"
   },
   {
     "last_name": "Perković",
@@ -5772,7 +6202,7 @@
       {
         "soldier_id": "0079000900",
         "name": "Popov I Ante",
-        "additional_info": "iz Vodica, u borbi kod Mokrog Polja, 23. XI",
+        "additional_info": "iz Vodica, u borbi kod Mokrog Polja, 23. XI 1944.",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 33,
         "pdf_x": 140.6,
@@ -5830,7 +6260,6 @@
     "fathers_name": "",
     "full_name": "Pupovac Miljko",
     "additional_info": "iz Raljana, poginuo u borbi kod Mokrog Polja 29. XI 1944. god.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 342.9,
     "pdf_x": 64.4,
@@ -5840,7 +6269,25 @@
     "pdf_x_end": 191.0,
     "death_type": "poginuo",
     "death_date": "29.11.1944",
-    "death_place": "Mokro Polje"
+    "death_place": "Mokro Polje",
+    "other_sources": [
+      {
+        "soldier_id": "9021000459",
+        "name": "Pupovac (Dmitar) Miljko",
+        "additional_info": "rođen 1911, Gornje Biljane (Benkovac). Srbin, poginuo 1944. u NOBu, Knin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=15",
+        "source_page": 15,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Gornje Biljane, Benkovac",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1911"
   },
   {
     "soldier_id": "0103009003",
@@ -5880,10 +6327,10 @@
   },
   {
     "last_name": "Radetić",
-    "middle_name": "",
+    "middle_name": "Ivana",
     "first_name": "Košta",
-    "fathers_name": "",
-    "full_name": "Radetić Košta",
+    "fathers_name": "Ivan",
+    "full_name": "Radetić Ivana Košta",
     "additional_info": "iz Zadra, poginuo u borbi kod Otočca 6. IV 1945. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -5896,7 +6343,21 @@
     "death_place": "Otočac",
     "birth_place": "Zadar",
     "soldier_id": "0103000252",
-    "pdf_x_end": 191.9
+    "pdf_x_end": 191.9,
+    "other_sources": [
+      {
+        "soldier_id": "0079000933",
+        "name": "Radetić Ivana Košta",
+        "additional_info": "iz Zadra, u borbi na Brlogu, 6. IV 1945.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 34,
+        "pdf_x": 104.5,
+        "pdf_y": 532.9,
+        "pdf_x_end": 255.9,
+        "pdf_y_end": 564.7,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radić",
@@ -6462,7 +6923,25 @@
     "birth_place": "Pag",
     "soldier_id": "0103000275",
     "pdf_x_end": 199.8,
-    "death_date": "02.12.1944"
+    "death_date": "02.12.1944",
+    "death_place": "Vijenac",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000986",
+        "name": "Runora Marko",
+        "additional_info": "iz Paga, u borbi na Vijencu, 2. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 129.0,
+        "pdf_y": 239.3,
+        "pdf_x_end": 280.9,
+        "pdf_y_end": 259.8,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rupovac",
@@ -6565,7 +7044,7 @@
       {
         "soldier_id": "0079000996",
         "name": "Samardžić Mate Nikola",
-        "additional_info": "iz Splita, u borbi na Mostaru, 13. II",
+        "additional_info": "iz Splita, u borbi na Mostaru, 13. II 1945.",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 36,
         "pdf_x": 129.0,
@@ -6778,7 +7257,28 @@
     "death_place": "Oton",
     "birth_place": "Nin",
     "soldier_id": "0103000288",
-    "pdf_x_end": 340.9
+    "pdf_x_end": 340.9,
+    "other_sources": [
+      {
+        "soldier_id": "0079001343",
+        "name": "Šarić Jole",
+        "additional_info": "iz Nina, u borbi kod Ilića-stanova, 28. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 137.4,
+        "pdf_y": 580.5,
+        "pdf_x_end": 289.4,
+        "pdf_y_end": 601.0,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "28.11.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Sarić",
@@ -7109,10 +7609,10 @@
   },
   {
     "last_name": "Skočić",
-    "middle_name": "",
+    "middle_name": "Đure",
     "first_name": "Frane",
-    "fathers_name": "",
-    "full_name": "Skočić Frane",
+    "fathers_name": "Đuro",
+    "full_name": "Skočić Đure Frane",
     "additional_info": "iz Skradina, poginuo u borbi kod Sušaka 19. IV 1945. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -7125,7 +7625,21 @@
     "death_place": "Sušak",
     "birth_place": "Skradin",
     "soldier_id": "0103000301",
-    "pdf_x_end": 354.2
+    "pdf_x_end": 354.2,
+    "other_sources": [
+      {
+        "soldier_id": "0079001034",
+        "name": "Skočić Đure Frane",
+        "additional_info": "iz Skradina, u borbi na koti 315, 19. IV 1945.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 37,
+        "pdf_x": 321.0,
+        "pdf_y": 184.6,
+        "pdf_x_end": 472.9,
+        "pdf_y_end": 217.6,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Smisković",
@@ -7318,7 +7832,21 @@
     "death_place": "Prevjes",
     "birth_place": "Biograd",
     "soldier_id": "0103000310",
-    "pdf_x_end": 354.7
+    "pdf_x_end": 354.7,
+    "other_sources": [
+      {
+        "soldier_id": "0079001070",
+        "name": "Stevanja Šime",
+        "additional_info": "iz Biograda, u borbi na Vijencu, 1. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 284.8,
+        "pdf_y": 254.6,
+        "pdf_x_end": 436.8,
+        "pdf_y_end": 275.3,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stilinović",
@@ -7393,14 +7921,28 @@
     "death_place": "Prevjes",
     "birth_place": "Hvar",
     "soldier_id": "0103000313",
-    "pdf_x_end": 186.4
+    "pdf_x_end": 186.4,
+    "other_sources": [
+      {
+        "soldier_id": "0079001075",
+        "name": "Stipičić Vinko",
+        "additional_info": "iz Hvara, u borbi na Vijencu, 1. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 283.9,
+        "pdf_y": 462.2,
+        "pdf_x_end": 435.8,
+        "pdf_y_end": 482.7,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojičić",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Ljubo",
-    "fathers_name": "",
-    "full_name": "Stojičić Ljubo",
+    "fathers_name": "S",
+    "full_name": "Stojičić S Ljubo",
     "additional_info": "iz Crkvenice, poginuo u borbi kod Sušaka 26. IV 1945. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -7413,7 +7955,21 @@
     "death_place": "Sušak",
     "birth_place": "Crkvenica",
     "soldier_id": "0103000314",
-    "pdf_x_end": 186.1
+    "pdf_x_end": 186.1,
+    "other_sources": [
+      {
+        "soldier_id": "0079001086",
+        "name": "Stojićić S Ljubo",
+        "additional_info": "iz Crikvenice, u borbi na koti 611, 26. IV 1945.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 136.2,
+        "pdf_y": 233.9,
+        "pdf_x_end": 289.0,
+        "pdf_y_end": 266.0,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stošić",
@@ -7987,7 +8543,6 @@
     "fathers_name": "",
     "full_name": "Uzelac Todor",
     "additional_info": "iz Benkovca, poginuo u borbi kod Poličnika 19. IX 1944. god.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "19.09.1944",
     "pdf_page": 13,
@@ -8001,6 +8556,14 @@
     "pdf_x_end": 352.1,
     "other_sources": [
       {
+        "soldier_id": "9021000512",
+        "name": "Uzelac (Dušan) Todor",
+        "additional_info": "rođen 1911, Islam Grčki (Benkovac). Srbin, poginuo 1944. u NOBu, Pališnik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=16",
+        "source_page": 16,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0079001156",
         "name": "Uzelac Todor",
         "additional_info": "iz Benkovca, u borbi na Polešniku, 18. IX 1944.",
@@ -8013,6 +8576,12 @@
         "unit_file": "19-sjevernodalmatinska-soldiers.json"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1911",
     "variants": {
       "death": [
         {
@@ -8119,7 +8688,7 @@
       {
         "soldier_id": "0079001280",
         "name": "Ćacić Drago",
-        "additional_info": "iz Stankovaca, u borbi na Mokrom Polju, 26. XI",
+        "additional_info": "iz Stankovaca, u borbi na Mokrom Polju, 26. XI 1944.",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 9,
         "pdf_x": 130.1,
@@ -8300,10 +8869,10 @@
   },
   {
     "last_name": "Škara",
-    "middle_name": "",
+    "middle_name": "Šime",
     "first_name": "Jozo",
-    "fathers_name": "",
-    "full_name": "Škara Jozo",
+    "fathers_name": "Šime",
+    "full_name": "Škara Šime Jozo",
     "additional_info": "Iz Zemunika, poginuo u borbi kod Padena 6. XI 1944. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -8315,7 +8884,25 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Padene",
     "soldier_id": "0103000351",
-    "pdf_x_end": 340.6
+    "pdf_x_end": 340.6,
+    "birth_place": "Zemunik",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079001361",
+        "name": "Škara Šime Jozo",
+        "additional_info": "iz Zemunika, u borbi na Padenima, 6. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 40,
+        "pdf_x": 108.8,
+        "pdf_y": 511.4,
+        "pdf_x_end": 261.7,
+        "pdf_y_end": 532.0,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Škopelja",
@@ -8387,7 +8974,7 @@
       {
         "soldier_id": "0079001371",
         "name": "Škorić Ante Frane",
-        "additional_info": "iz Skradina, u borbi na Reoini, 23. IV",
+        "additional_info": "iz Skradina, u borbi na Reoini, 23. IV 1945.",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 40,
         "pdf_x": 288.8,
@@ -8590,10 +9177,10 @@
   },
   {
     "last_name": "Štivić",
-    "middle_name": "",
+    "middle_name": "Stjepana",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Štivić Ivan",
+    "fathers_name": "Stjepan",
+    "full_name": "Štivić Stjepana Ivan",
     "additional_info": "iz Požege, poginuo u borbi kod Sušaka 5. IV 1945. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -8606,7 +9193,21 @@
     "death_place": "Sušak",
     "birth_place": "Požega",
     "soldier_id": "0103000362",
-    "pdf_x_end": 198.4
+    "pdf_x_end": 198.4,
+    "other_sources": [
+      {
+        "soldier_id": "0079001078",
+        "name": "Stivić Stjepana Ivan",
+        "additional_info": "iz Požege, u borbi na koti Vučjaku, 5. IV 1945.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 283.9,
+        "pdf_y": 486.2,
+        "pdf_x_end": 435.9,
+        "pdf_y_end": 517.3,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šukara",

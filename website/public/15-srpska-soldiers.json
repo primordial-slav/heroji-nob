@@ -4466,12 +4466,28 @@
         "pdf_y": 275.0,
         "pdf_y_end": 294.5,
         "pdf_x_end": 374.2
+      },
+      {
+        "soldier_id": "0021002009",
+        "name": "Lakičević N Nikodin",
+        "additional_info": "Tulare. Medveđa. Ranjen u južnoj Srbiji. Umro od posledica.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 172,
+        "pdf_x": 55.6,
+        "pdf_y": 129.3,
+        "pdf_x_end": 360.2,
+        "pdf_y_end": 150.8,
+        "unit_file": "4-srpska-soldiers.json"
       }
     ],
     "birth_place": "Tulare, Medveđa",
     "rank": "komandir čete",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 265.1
+    "pdf_x_end": 265.1,
+    "death_type": "umro",
+    "borrowed": [
+      "death_type"
+    ]
   },
   {
     "last_name": "Lasić",
@@ -7056,6 +7072,18 @@
         "pdf_y": 284.9,
         "pdf_y_end": 304.4,
         "pdf_x_end": 332.1
+      },
+      {
+        "soldier_id": "0055000473",
+        "name": "Mitrović J Stojan",
+        "additional_info": "rođen u Milanovu, Leskovac, poginuo oktobra 1944. god. na Kosovu.",
+        "pdf_file": "17-srpska.pdf",
+        "pdf_page": 55,
+        "pdf_x": 60.0,
+        "pdf_y": 401.6,
+        "pdf_x_end": 366.6,
+        "pdf_y_end": 421.9,
+        "unit_file": "17-srpska-soldiers.json"
       }
     ],
     "birth_place": "Milanovo, Leskovac",
@@ -8426,6 +8454,14 @@
         "pdf_y": 442.7,
         "pdf_y_end": 462.3,
         "pdf_x_end": 373.5
+      },
+      {
+        "soldier_id": "9101000375",
+        "name": "Perović Mirko",
+        "additional_info": "Nosioci Partizanske spomenice 1941. godine, Mala Brajina: Perović Mirko",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00002500&pg_seq=672",
+        "source_page": 672,
+        "ref_book": "gornja-jablanica"
       }
     ],
     "birth_place": "M. Brajina, Medveđa",
@@ -15539,7 +15575,7 @@
       {
         "soldier_id": "0086000942",
         "name": "Đukić Bogić",
-        "additional_info": "rođen u selu Vitomirica, Peć, borac, ranjen avgusta",
+        "additional_info": "rođen u selu Vitomirica, Peć, borac, ranjen avgusta 1944.",
         "pdf_file": "15-srpska.pdf",
         "pdf_page": 18,
         "pdf_x": 65.7,

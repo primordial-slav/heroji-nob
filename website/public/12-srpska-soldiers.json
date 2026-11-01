@@ -45,6 +45,18 @@
         "pdf_x_end": 343.6,
         "pdf_y_end": 731.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0096000016",
+        "name": "Andrejević M Ratko",
+        "additional_info": "Ramni Del, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 22,
+        "pdf_x": 67.4,
+        "pdf_y": 210.387,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 217.4,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -283,8 +295,31 @@
         "pdf_x_end": 434.9,
         "pdf_y_end": 741.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0088000017",
+        "name": "Anđelković Vojina Stojan",
+        "additional_info": "rođen 1921. u selu Crnatovo, Vlasotince, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 9. 9. 1944, borac voda protivtenkovskih pušaka 2. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači GSremski FRONT1. Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "pdf_file": "10-srpska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 109.9,
+        "pdf_y": 264.2,
+        "pdf_x_end": 415.7,
+        "pdf_y_end": 326.7,
+        "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Crnatovo, Vlasotince",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Anđelković",
@@ -757,17 +792,19 @@
     "first_name": "Sotir",
     "fathers_name": "M",
     "full_name": "Bikić M Sotir",
-    "additional_info": "1921, Grdelica. Poginuo 12. aprila",
+    "additional_info": "1921, Grdelica. Poginuo 12. aprila 1945. godine kod Lipovca, Sremski front.",
     "birth_year": "1921",
-    "birth_place": "Grdelica",
-    "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 204.8,
     "pdf_x": 25.2,
     "pdf_y_end": 225.9,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000020",
-    "pdf_x_end": 282.7
+    "pdf_x_end": 282.7,
+    "birth_place": "Grdelica",
+    "death_type": "poginuo",
+    "death_date": "12.04.1945",
+    "death_place": "Lipovac, Sremski front"
   },
   {
     "last_name": "Blagojević",
@@ -820,10 +857,10 @@
   },
   {
     "last_name": "Blagojević",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Ćira",
-    "fathers_name": "",
-    "full_name": "Blagojević Ćira",
+    "fathers_name": "S",
+    "full_name": "Blagojević S Ćira",
     "additional_info": "1920, Crna Trava, pečalbarski radnik. U NOVJ od marta 1944. Poginuo 28. juna 1944. kod mesta Ogošte, na tzv. Kosovskoj demarkacionoj linijk.",
     "birth_year": "1920",
     "birth_place": "Crna Trava",
@@ -840,8 +877,32 @@
     "occupation": "pečalbarski radnik",
     "other_sources": [
       {
+        "soldier_id": "0085000057",
+        "name": "Blagojević S Ćira",
+        "additional_info": "(1922, Crna Trava, vlasotinački), borac od 1944. godine, poginuo 27. 5. 1944. godine u Gornjoj Oruglici (Jablanica)-u borbi protiv čegnika.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 44.6,
+        "pdf_y": 476.9,
+        "pdf_x_end": 320.5,
+        "pdf_y_end": 502.7,
+        "unit_file": "7-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0085000056",
+        "name": "Blagojević S Ćira",
+        "additional_info": "iz Crna Trava",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 91.5,
+        "pdf_y": 244.3,
+        "pdf_x_end": 179.6,
+        "pdf_y_end": 252.3,
+        "unit_file": "7-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0096000063",
-        "name": "Blagojević Ćira",
+        "name": "Blagojević S Ćira",
         "additional_info": "Crna Trava, 28. VI 1944, Ogošte (Kosovo)",
         "pdf_file": "22-divizija.pdf",
         "pdf_page": 22,
@@ -851,7 +912,18 @@
         "pdf_y_end": 415.4,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ],
+      "death": [
+        {
+          "date": "27.05.1944",
+          "place": "u Gornjoj Oruglici (Jablanica)-protiv čegnika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Blagojević",
@@ -1013,21 +1085,21 @@
     "first_name": "Vojislav",
     "fathers_name": "T",
     "full_name": "Bogdanović T Vojislav",
-    "additional_info": "Crna Trava, građevinski radnik. U NOVJ od marta 1944, borac. Poginuo 18. juna",
+    "additional_info": "Crna Trava, građevinski radnik. U NOVJ od marta 1944, borac. Poginuo 18. juna 1944. kod Grdelice, Leskovac.",
     "birth_year": "",
-    "birth_place": "Crna Trava",
-    "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 84.1,
     "pdf_x": 43.4,
     "pdf_y_end": 115.5,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000027",
-    "occupation": "građevinski radnik",
-    "rank": "borac",
     "pdf_x_end": 348.7,
     "death_date": "18.06.1944",
     "death_place": "Grdelica",
+    "birth_place": "Crna Trava",
+    "occupation": "građevinski radnik",
+    "death_type": "poginuo",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0096000076",
@@ -1920,6 +1992,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1358",
         "source_page": 1358,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0096000131",
+        "name": "Dimitrijević Vlajka Radomir",
+        "additional_info": "Svođe, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 23,
+        "pdf_x": 52.4,
+        "pdf_y": 445.10699999999997,
+        "pdf_x_end": 353.5,
+        "pdf_y_end": 452.1,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -3047,6 +3131,18 @@
         "pdf_x_end": 300.7,
         "pdf_y_end": 346.3,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0096000204",
+        "name": "Ivanović Z Božidar",
+        "additional_info": "Svođe, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 25,
+        "pdf_x": 56.0,
+        "pdf_y": 140.507,
+        "pdf_x_end": 355.8,
+        "pdf_y_end": 147.5,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -4204,18 +4300,14 @@
     "first_name": "Čedomir",
     "fathers_name": "Lj",
     "full_name": "Jović Lj Čedomir",
-    "additional_info": "1920, Gornji Orah, Vlasotince, zemljoradnik, povremeno bio ciglarski radnik. U NOVJ od septembra 1944. godine, borac. Poginuo 12. aprila",
+    "additional_info": "1920, Gornji Orah, Vlasotince, zemljoradnik, povremeno bio ciglarski radnik. U NOVJ od septembra 1944. godine, borac. Poginuo 12. aprila 1945. godine kod Lipovca, Sremski front.",
     "birth_year": "1920",
-    "birth_place": "Gornji Orah, Vlasotince",
-    "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 162.5,
     "pdf_x": 34.1,
     "pdf_y_end": 204.9,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000111",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "pdf_x_end": 340.8,
     "death_date": "12.04.1945",
     "death_place": "Lipovac (Srem)",
@@ -4256,7 +4348,11 @@
         "pdf_y_end": 178.2,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Gornji Orah, Vlasotince",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "rank": "borac"
   },
   {
     "last_name": "Jović",
@@ -4278,7 +4374,21 @@
     "death_date": "16.12.1944",
     "death_place": "Sjenica",
     "rank": "borac",
-    "pdf_x_end": 340.3
+    "pdf_x_end": 340.3,
+    "other_sources": [
+      {
+        "soldier_id": "0096000275",
+        "name": "Jović M Živan",
+        "additional_info": "Orašje, 6. :XII 1944, Duga Poljana",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 26,
+        "pdf_x": 59.8,
+        "pdf_y": 160.627,
+        "pdf_x_end": 347.8,
+        "pdf_y_end": 167.6,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jović",
@@ -4611,7 +4721,29 @@
     "death_place": "Lipovac, Sremski front",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 322.1
+    "pdf_x_end": 322.1,
+    "other_sources": [
+      {
+        "soldier_id": "0089000138",
+        "name": "Kocić Borđa Stanimir",
+        "additional_info": "1922, Vlasotince, zemljoradnik. U NOVJ od oktobra 1944, borac. Poginuo 22. marta 1945. kod Kakmuža, Gračanica. Sahranjen na mestu pogibije.",
+        "pdf_file": "23-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 75.4,
+        "pdf_y": 234.7,
+        "pdf_x_end": 381.0,
+        "pdf_y_end": 261.9,
+        "unit_file": "23-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "22.03.1945",
+          "place": "Kakmuži, Gračanica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kocić",
@@ -5555,19 +5687,35 @@
     "first_name": "Bosiljka",
     "fathers_name": "",
     "full_name": "Lazarević Bosiljka",
-    "additional_info": "1920, Vlasotince, domaćica. U NOVJ od oktobra 1944, borac. Poginula 16. decembra",
+    "additional_info": "1920, Vlasotince, domaćica. U NOVJ od oktobra 1944, borac. Poginula 16. decembra 1944. godine kod Sjenice.",
     "birth_year": "1920",
-    "birth_place": "Vlasotince",
-    "death_type": "poginuo",
     "pdf_page": 20,
     "pdf_y": 320.9,
     "pdf_x": 37.2,
     "pdf_y_end": 352.0,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000144",
+    "pdf_x_end": 344.1,
+    "birth_place": "Vlasotince",
     "occupation": "domaćica",
+    "death_type": "poginuo",
+    "death_date": "16.12.1944",
+    "death_place": "Sjenica",
     "rank": "borac",
-    "pdf_x_end": 344.1
+    "other_sources": [
+      {
+        "soldier_id": "0096000343",
+        "name": "Lazarević Bosiljka",
+        "additional_info": "Vlasotince, 16. XII 1944, Sjenica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 26,
+        "pdf_x": 60.3,
+        "pdf_y": 508.86699999999996,
+        "pdf_x_end": 324.6,
+        "pdf_y_end": 537.5,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lazarević",
@@ -5625,7 +5773,60 @@
     "rank": "borac",
     "pdf_x_end": 343.7,
     "death_place": "kod sela Orutlica, Jablanica, Leskovac",
-    "occupation": "građevinski radnik"
+    "occupation": "građevinski radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0085000389",
+        "name": "Lepojević J Adam",
+        "additional_info": "(1913, s. Dobro Polje - Crna Trava), građevinski radnik, borac od, 1. 5. 1944. u Trećem bataljonu, poginuo 27. 5. 1944. godine na Oruglici - G. Jablanica, u u borbi protivu četnika.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 29.8,
+        "pdf_y": 375.1,
+        "pdf_x_end": 310.1,
+        "pdf_y_end": 436.7,
+        "unit_file": "7-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0085000388",
+        "name": "Lepojević I Adam",
+        "additional_info": "iz Dobro Polje",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 55.3,
+        "pdf_y": 523.5,
+        "pdf_x_end": 138.2,
+        "pdf_y_end": 531.5,
+        "unit_file": "7-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000347",
+        "name": "Lepojević I Adam",
+        "additional_info": "D. Polje, 27. VI 1944, Oruglica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 27,
+        "pdf_x": 54.1,
+        "pdf_y": 116.707,
+        "pdf_x_end": 324.6,
+        "pdf_y_end": 123.7,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ],
+      "death": [
+        {
+          "date": "27.05.1944",
+          "place": "kod sela Orutlica, Jablanica, Leskovac"
+        },
+        {
+          "date": "27.06.1944",
+          "place": "Oruglica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lepojević",
@@ -5633,19 +5834,21 @@
     "first_name": "Radivoje",
     "fathers_name": "Danilo",
     "full_name": "Lepojević Danila Radivoje",
-    "additional_info": "1921, Vlasotince, trgovac. U NOVJ od septembra 1944, borac. Poginuo 9. februara",
+    "additional_info": "1921, Vlasotince, trgovac. U NOVJ od septembra 1944, borac. Poginuo 9. februara 1945. godine kod Trešnjevice. Zvornik.",
     "birth_year": "1921",
-    "birth_place": "Vlasotince",
-    "death_type": "poginuo",
     "pdf_page": 21,
     "pdf_y": 165.4,
     "pdf_x": 55.9,
     "pdf_y_end": 197.0,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000147",
+    "pdf_x_end": 339.8,
+    "birth_place": "Vlasotince",
     "occupation": "trgovac",
-    "rank": "borac",
-    "pdf_x_end": 339.8
+    "death_type": "poginuo",
+    "death_date": "09.02.1945",
+    "death_place": "Trešnjevica",
+    "rank": "borac"
   },
   {
     "last_name": "Lepojević",
@@ -6035,6 +6238,18 @@
         "pdf_x_end": 574.7,
         "pdf_y_end": 874.3,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0087000200",
+        "name": "Marković Stojadina Borivoje",
+        "additional_info": "iz sela Lepek, Vladičin Han; poginuo 12.04.1945, Batrovci na reci Bosutu.",
+        "pdf_file": "8-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 37.6,
+        "pdf_y": 281.1,
+        "pdf_x_end": 342.4,
+        "pdf_y_end": 301.1,
+        "unit_file": "8-srpska-soldiers.json"
       },
       {
         "soldier_id": "0096000378",
@@ -6721,7 +6936,21 @@
     "death_date": "12.04.1944",
     "death_place": "Lipovac, Sremski front",
     "rank": "borac",
-    "pdf_x_end": 340.3
+    "pdf_x_end": 340.3,
+    "other_sources": [
+      {
+        "soldier_id": "9014012734",
+        "name": "Milošević Ratko",
+        "additional_info": "Poginuli borci Dvanaeste srpske narodnooslobodilačke udarne brigade: 68. Milošević Ratko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 87,
+        "pdf_x": 450.3,
+        "pdf_y": 375.2,
+        "pdf_x_end": 530.2,
+        "pdf_y_end": 384.7,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Milošević",
@@ -6816,7 +7045,21 @@
     "death_place": "Oruglica, Jablanica",
     "rank": "borac",
     "pdf_x_end": 345.9,
-    "occupation": "građevinski radnik"
+    "occupation": "građevinski radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0096000440",
+        "name": "Milčić M Dušan",
+        "additional_info": "Crna Trava, 28. VI 1944, Ogošte (Kosovo)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 27,
+        "pdf_x": 56.0,
+        "pdf_y": 497.587,
+        "pdf_x_end": 357.8,
+        "pdf_y_end": 504.6,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milčić",
@@ -7684,6 +7927,18 @@
         "pdf_x_end": 390.8,
         "pdf_y_end": 404.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0096000499",
+        "name": "Mladenović S Momir",
+        "additional_info": "Svođe, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 61.2,
+        "pdf_y": 364.86699999999996,
+        "pdf_x_end": 362.1,
+        "pdf_y_end": 372.1,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ]
   },
@@ -7714,20 +7969,22 @@
     "first_name": "Radisav-Ratko",
     "fathers_name": "Nikola",
     "full_name": "Mladenović Nikole Radisav-Ratko",
-    "additional_info": "1914, Boljare, Vlasotince, ciglarski radnik. U NOVJ od 9. septembra 1944, bio borac 3. bataljona. Poginuo 9. februara",
+    "additional_info": "1914, Boljare, Vlasotince, ciglarski radnik. U NOVJ od 9. septembra 1944, bio borac 3. bataljona. Poginuo 9. februara 1945. godine kod sela Trešnjevice, Zvornik.",
     "birth_year": "1914",
-    "birth_place": "Boljare, Vlasotince",
-    "death_type": "poginuo",
     "pdf_page": 26,
     "pdf_y": 197.8,
     "pdf_x": 42.0,
     "pdf_y_end": 240.2,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000199",
+    "pdf_x_end": 348.9,
+    "birth_place": "Boljare, Vlasotince",
     "occupation": "ciglarski radnik",
+    "death_type": "poginuo",
+    "death_date": "09.02.1945",
+    "death_place": "Trešnjevica, Zvornik",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 348.9
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Mladenović",
@@ -8757,21 +9014,21 @@
     "first_name": "Trenča",
     "fathers_name": "V",
     "full_name": "Nikolić V Trenča",
-    "additional_info": "1923, Crna Trava, građevinski radnik. U NOVJ od marta 1944, borac. Poginuo 26. juna",
+    "additional_info": "1923, Crna Trava, građevinski radnik. U NOVJ od marta 1944, borac. Poginuo 26. juna 1944. godine kod Oruglice, Jablanica.",
     "birth_year": "1923",
-    "birth_place": "Crna Trava",
-    "death_type": "poginuo",
     "pdf_page": 29,
     "pdf_y": 134.0,
     "pdf_x": 37.4,
     "pdf_y_end": 165.8,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000229",
-    "occupation": "građevinski radnik",
-    "rank": "borac",
     "pdf_x_end": 343.7,
     "death_date": "26.06.1944",
     "death_place": "Oruglica",
+    "birth_place": "Crna Trava",
+    "occupation": "građevinski radnik",
+    "death_type": "poginuo",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0096000548",
@@ -8871,19 +9128,20 @@
     "first_name": "Božidar",
     "fathers_name": "Vladimir",
     "full_name": "Novaković Vladimira Božidar",
-    "additional_info": "1923, Ravni Del, Surdulica, zemljoradnik. U NOVJ od maja 1944, borac. Nestao za vreme borbi kod Lipovice, Vlasotince oktobra",
+    "additional_info": "1923, Ravni Del, Surdulica, zemljoradnik. U NOVJ od maja 1944, borac. Nestao za vreme borbi kod Lipovice, Vlasotince oktobra 1944. godine.",
     "birth_year": "1923",
-    "birth_place": "Ravni Del, Surdulica",
-    "death_type": "nestao",
     "pdf_page": 29,
     "pdf_y": 313.2,
     "pdf_x": 37.5,
     "pdf_y_end": 356.6,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000233",
+    "pdf_x_end": 344.4,
+    "birth_place": "Ravni Del, Surdulica",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 344.4
+    "death_type": "nestao",
+    "death_date": "10.1944",
+    "rank": "borac"
   },
   {
     "last_name": "Panić",
@@ -9038,6 +9296,18 @@
         "pdf_x_end": 421.5,
         "pdf_y_end": 600.7,
         "unit_file": "10-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000566",
+        "name": "Pavlović Čedomira Božidar",
+        "additional_info": "Suvojnica, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 65.0,
+        "pdf_y": 465.74699999999996,
+        "pdf_x_end": 318.7,
+        "pdf_y_end": 473.5,
+        "unit_file": "22-divizija-soldiers.json"
       },
       {
         "soldier_id": "0096000567",
@@ -9774,20 +10044,20 @@
     "first_name": "Vojislav",
     "fathers_name": "R",
     "full_name": "Petrović R Vojislav",
-    "additional_info": "1923, Crna Trava, zeml>oradnik. U NOVJ od maja 1944. godine, borac. Poginuo 28. juna",
+    "additional_info": "1923, Crna Trava, zeml>oradnik. U NOVJ od maja 1944. godine, borac. Poginuo 28. juna 1944. godine kod sela Orutlice, Jablanica.",
     "birth_year": "1923",
-    "birth_place": "Crna Trava",
-    "death_type": "poginuo",
     "pdf_page": 30,
     "pdf_y": 450.5,
     "pdf_x": 44.4,
     "pdf_y_end": 482.1,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000254",
-    "rank": "borac",
     "pdf_x_end": 350.7,
     "death_date": "22.06.1944",
     "death_place": "Oruglica",
+    "birth_place": "Crna Trava",
+    "death_type": "poginuo",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0096000599",
@@ -9975,22 +10245,50 @@
     "first_name": "Vlajko",
     "fathers_name": "R",
     "full_name": "Pešić R Vlajko",
-    "additional_info": "1923, Vlasotince, zemljoradnik. u NOVJ od oktobra 1944, borac. Poginuo 9. februara",
+    "additional_info": "1923, Vlasotince, zemljoradnik. u NOVJ od oktobra 1944, borac. Poginuo 9. februara 1945. godine kod Trešnjevice, Zvornik.",
     "birth_year": "1923",
-    "birth_place": "Vlasotince",
-    "death_type": "poginuo",
     "pdf_page": 32,
     "pdf_y": 30.5,
     "pdf_x": 45.3,
     "pdf_y_end": 62.4,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000258",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "pdf_x_end": 351.6,
     "death_date": "09.02.1945",
     "death_place": "D. Trešnjevica",
+    "birth_place": "Vlasotince",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "rank": "borac",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "other_sources": [
+      {
+        "soldier_id": "0088000227",
+        "name": "Pešić Ranđela Vlajko",
+        "additional_info": "rođen 1921. u selu Crnatovo, Vlasotince, Srbin, zemljoradnik, u NOB od druge polovine avgusta 1944, u Brigadi od 28. 8. 1944, borac 3. čete 2. bataljona, poginuo 9. 2. 1945. prilikom napada na uzvišenje Vlaške njive, Mali Zvornik. Sahranjen u podnožju Vlaških njiva, Mali Zvornik.",
+        "pdf_file": "10-srpska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 114.5,
+        "pdf_y": 310.3,
+        "pdf_x_end": 420.9,
+        "pdf_y_end": 361.6,
+        "unit_file": "10-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000607",
+        "name": "Pešić Ranđela Vlajko",
+        "additional_info": "Crnatovo, 8. II 1945, D. Trešnjevica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 50.9,
+        "pdf_y": 317.94700000000006,
+        "pdf_x_end": 350.1,
+        "pdf_y_end": 324.9,
+        "unit_file": "22-divizija-soldiers.json"
+      },
       {
         "soldier_id": "0096000608",
         "name": "Pešić R Vlajko",
@@ -10003,7 +10301,18 @@
         "pdf_y_end": 145.3,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "D. Trešnjevica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Radojković",
@@ -12337,6 +12646,42 @@
         "ref_book": "u-rovovima-srema-poginuli"
       },
       {
+        "soldier_id": "0087000410",
+        "name": "Stojanović Dragutina Aleksandar",
+        "additional_info": "rođen 1922. godine, Batulovac, Vlasotince; poginuo 12.04.1945, Batrovci na reci Bosutu.",
+        "pdf_file": "8-srpska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 58.2,
+        "pdf_y": 449.8,
+        "pdf_x_end": 364.1,
+        "pdf_y_end": 470.1,
+        "unit_file": "8-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0090000319",
+        "name": "Stojanović B Aleksandar",
+        "additional_info": "1921, Graovo, Leskovac. U NOVJ od oktobra 1944, borac. Poginuo 12. aprila 1945. godine kod Lipovca, Sremski front.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 41.5,
+        "pdf_y": 303.2,
+        "pdf_x_end": 348.0,
+        "pdf_y_end": 334.8,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000750",
+        "name": "Stojanović Dragutina Aleksandar",
+        "additional_info": "Batulovce, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 55.8,
+        "pdf_y": 238.90700000000004,
+        "pdf_x_end": 310.3,
+        "pdf_y_end": 245.9,
+        "unit_file": "22-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0096000751",
         "name": "Stojanović D Aleksandar",
         "additional_info": "Batulovce, 12. IV 1945, Lipovac (Srem)",
@@ -12347,12 +12692,29 @@
         "pdf_x_end": 354.3,
         "pdf_y_end": 241.8,
         "unit_file": "22-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000752",
+        "name": "Stojanović Đ Aleksandar",
+        "additional_info": "Graovo, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 54.4,
+        "pdf_y": 245.34700000000004,
+        "pdf_x_end": 354.6,
+        "pdf_y_end": 263.4,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -12374,7 +12736,59 @@
     "death_place": "Lipovac, Sremski front",
     "rank": "borac",
     "pdf_x_end": 348.0,
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
     "other_sources": [
+      {
+        "soldier_id": "0087000410",
+        "name": "Stojanović Dragutina Aleksandar",
+        "additional_info": "rođen 1922. godine, Batulovac, Vlasotince; poginuo 12.04.1945, Batrovci na reci Bosutu.",
+        "pdf_file": "8-srpska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 58.2,
+        "pdf_y": 449.8,
+        "pdf_x_end": 364.1,
+        "pdf_y_end": 470.1,
+        "unit_file": "8-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0090000318",
+        "name": "Stojanović Dragutina Aleksandar",
+        "additional_info": "1922, Batulovce, Vlasotince, zemljoradnik. U NOVJ od oktobra 1944, borac. Poginuo 12. aprila 1945. godine kod Lipovca, Sremski front.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 42.2,
+        "pdf_y": 257.8,
+        "pdf_x_end": 348.2,
+        "pdf_y_end": 300.2,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000750",
+        "name": "Stojanović Dragutina Aleksandar",
+        "additional_info": "Batulovce, 12. IV 1945, Bosut",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 55.8,
+        "pdf_y": 238.90700000000004,
+        "pdf_x_end": 310.3,
+        "pdf_y_end": 245.9,
+        "unit_file": "22-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000751",
+        "name": "Stojanović D Aleksandar",
+        "additional_info": "Batulovce, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 54.9,
+        "pdf_y": 223.747,
+        "pdf_x_end": 354.3,
+        "pdf_y_end": 241.8,
+        "unit_file": "22-divizija-soldiers.json"
+      },
       {
         "soldier_id": "0096000752",
         "name": "Stojanović Đ Aleksandar",
@@ -12387,7 +12801,12 @@
         "pdf_y_end": 263.4,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Stojanović",
@@ -12868,19 +13287,21 @@
     "first_name": "Petar",
     "fathers_name": "V",
     "full_name": "Stojanović V Petar",
-    "additional_info": "1924, Vlasotince. U NOVJ od oktobra 1944, bio borac 3. bataljona. Poginuo 12. aprila",
+    "additional_info": "1924, Vlasotince. U NOVJ od oktobra 1944, bio borac 3. bataljona. Poginuo 12. aprila 1945. godine kod Lipovca na Sremskom frontu.",
     "birth_year": "1924",
-    "birth_place": "Vlasotince",
-    "death_type": "poginuo",
     "pdf_page": 40,
     "pdf_y": 107.6,
     "pdf_x": 37.7,
     "pdf_y_end": 139.2,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000330",
+    "pdf_x_end": 343.7,
+    "birth_place": "Vlasotince",
+    "death_type": "poginuo",
+    "death_date": "12.04.1945",
+    "death_place": "kod Lipovca na Sremskom frontu",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 343.7,
     "other_sources": [
       {
         "soldier_id": "9013002565",
@@ -12901,16 +13322,24 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1360",
         "source_page": 1360,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0096000770",
+        "name": "Stojanović V Petar",
+        "additional_info": "Crnatovo, 12. IV 1945, Lipovac (Srem)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 31,
+        "pdf_x": 55.6,
+        "pdf_y": 385.267,
+        "pdf_x_end": 355.8,
+        "pdf_y_end": 392.3,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
-      "death_place",
       "ethnicity"
-    ],
-    "death_date": "1945",
-    "death_place": "Lipovec"
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -14186,21 +14615,21 @@
     "first_name": "Ljubomir",
     "fathers_name": "J",
     "full_name": "Stojčić J Ljubomir",
-    "additional_info": "1921, Crna Trava, građevinski radnik. U NOVJ od maja 1944, borac. Poginuo 14. avgusta",
+    "additional_info": "1921, Crna Trava, građevinski radnik. U NOVJ od maja 1944, borac. Poginuo 14. avgusta 1944. godine kod Nesvrte, Kriva Feja.",
     "birth_year": "1921",
-    "birth_place": "Crna Trava",
-    "death_type": "poginuo",
     "pdf_page": 43,
     "pdf_y": 96.0,
     "pdf_x": 34.1,
     "pdf_y_end": 127.6,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000365",
-    "occupation": "građevinski radnik",
-    "rank": "borac",
     "pdf_x_end": 340.8,
     "death_date": "14.08.1944",
     "death_place": "Nesvrta",
+    "birth_place": "Crna Trava",
+    "occupation": "građevinski radnik",
+    "death_type": "poginuo",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0096000832",
@@ -15844,7 +16273,21 @@
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000406",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 331.7
+    "pdf_x_end": 331.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014010666",
+        "name": "Đokić Dobrosav",
+        "additional_info": "Poginuli borci Dvanaeste srpske narodnooslobodilačke udarne brigade: 24. Đokić Dobrosav.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 86,
+        "pdf_x": 518.5,
+        "pdf_y": 779.6,
+        "pdf_x_end": 591.2,
+        "pdf_y_end": 789.1,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Đokić",
@@ -16271,21 +16714,21 @@
     "first_name": "Stojan",
     "fathers_name": "V",
     "full_name": "Đorđević V Stojan",
-    "additional_info": "1920, Grdelica, tekstilni radnik. U NOVJ od oktobra 1944, borac. Poginuo 9. februara",
+    "additional_info": "1920, Grdelica, tekstilni radnik. U NOVJ od oktobra 1944, borac. Poginuo 9. februara 1945. godine kod Trešnjevice, Zvornik.",
     "birth_year": "1920",
-    "birth_place": "Grdelica",
-    "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 443.9,
     "pdf_x": 32.1,
     "pdf_y_end": 475.2,
     "pdf_file": "12-srpska.pdf",
     "soldier_id": "0090000420",
-    "occupation": "tekstilni radnik",
-    "rank": "borac",
     "pdf_x_end": 338.4,
     "death_date": "09.02.1945",
     "death_place": "D. Trešnjevica",
+    "birth_place": "Grdelica",
+    "occupation": "tekstilni radnik",
+    "death_type": "poginuo",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0096000985",

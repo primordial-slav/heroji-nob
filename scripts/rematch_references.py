@@ -33,18 +33,19 @@ import re
 import subprocess
 import sys
 from collections import Counter, defaultdict
+from itertools import combinations
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
+import find_source_duplicates as F  # noqa: E402
 import match_references as M  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
 from name_utils import OSTALI_CODES  # noqa: E402
 
 FACTS = {'birth year', 'birthplace', 'death year', 'death place'}
-SAME_MAN = {'father', 'birth year', 'birthplace', 'death year'}
-HAND = {'vis-spomenica-1941', 'vis-zrtve-nob', 'moste-polje-spomenica-1941', 'xxxi-divizija-stabi', '15-brigada-stabi',
+HAND ={'vis-spomenica-1941', 'vis-zrtve-nob', 'moste-polje-spomenica-1941', 'xxxi-divizija-stabi', '15-brigada-stabi',
         '15-divizija-stabi', 'jb-odred-stabi', 'banijski-odredi-kadar', 'letalci-prekomorci-kader', 'susak-rijeka-spomenica', 'korosko-zdravstvo',
         'dolomiti-v-nob-3', 'artileristi-prekomorci', 'virovitica-spomenica-1941', 'sanitetska-sluzba-lekari',
         'krizani-v-boju-za-svobodo', 'vinodolska-selca', 'zene-vi-korpus-poginule', 'pali-za-lepsa-svitanja',
@@ -76,12 +77,18 @@ QUARTER = re.compile(r'(?:central|istocn|zapad|sjever|sever|juzn|srednj|dalmatin
 SPELLED = 0.7           # two names this alike are one place told in another case or spelling ("Ozlju", "Ozalj")
 NEAR_KM = 60            # two places of death this near are one death told two ways
 NEAR_SEVERAL_KM = 30    # ... where a name is several places, the nearest of them this near
-try:                    # the local places tool and its GeoNames cache (not in git): without them, the names alone
+VILLAGE_SPELLED = 0.8   # a birthplace's village told otherwise, a stricter measure ("Zapužani", "Zapužane")
+TWO_VILLAGES_KM = 40    # one name this far apart, each with its municipality, is two villages
+FRONT_BOOKS = {'sremski-front-poginuli', 'u-rovovima-srema-poginuli'}
+# a roster of a unit formed that month: a man who fell before it is another man of the name
+ROSTER_FROM = {'1-bokeljska-spisak.pdf': '1944-10'}
+try:                # the local places tool and its GeoNames cache (not in git): without them, the names alone
     sys.path.insert(0, str(ROOT / 'quality' / 'places'))
     import gazetteer as G  # noqa: E402
 except ImportError:
     G = None
 _GEO = {}
+BEARERS = Counter()
 
 
 def match(book: str, index: dict) -> list[dict]:
@@ -196,7 +203,7 @@ def words(place: str) -> set[str]:
     return {w[:5] for w in names(place)}
 
 
-def spelled_alike(a: str, b: str) -> bool:
+def spelled_alike(a: str, b: str, at: float = SPELLED) -> bool:
     """One place in another case or spelling: "Ozlju" and "Ozalj", "Ličkoj Jasenici" and "Lička Jesenica", "Crnom
     Vrhu" and "Crni vrh", "Drutlićima" and "Druglići", the scan's "u JTivnu" for Livno."""
     from difflib import SequenceMatcher
@@ -204,7 +211,7 @@ def spelled_alike(a: str, b: str) -> bool:
     def forms(p):
         first = re.sub(r'^(?:u|na|kod|pri|v|blizu|iznad|s|sela|selu|selo)\s+', '', folded(p.split(',')[0]).strip())
         return [w for w in names(p) if len(w) >= 5] + ([first] if len(first) >= 6 else [])
-    return any(SequenceMatcher(None, x, y).ratio() >= SPELLED for x in forms(a) for y in forms(b))
+    return any(SequenceMatcher(None, x, y).ratio() >= at for x in forms(a) for y in forms(b))
 
 
 def points(place: str) -> list[tuple]:
@@ -285,16 +292,192 @@ def against(entry: dict, rec: dict) -> list[str]:
     return out
 
 
-def same_man_elsewhere(flags: list[str], pair: dict, entry: dict, rec: dict) -> bool:
-    """The father, birth year, birthplace and year of death all agree and only the place of death differs: the same man
-    (the user's decision of 2026-11-01, after answering such pairs "same"). Not where the books give another month, or
-    another year, which the matcher lets pass a year off ("01.1943" against the census's 1942)."""
-    if not SAME_MAN <= set(pair.get('agree', ())) or not all(f.startswith('place') for f in flags):
+def same_village(a: str, b: str) -> bool | None:
+    """Whether two birthplaces name one village: the printed village's own name (not the municipality after it: "Drinić,
+    Bosanski Petrovac" is not "Bravski Vaganac, Bos. Petrovac"), in any spelling or case. Velika is not Mala, and two
+    villages of one name far apart are two ("Kamenica, Drvar", "Kamenica, Cazin"). None where one gives none, or gives
+    the town alone and the other a village of its municipality ("Omiš", "Borak, Omiš")."""
+    a, b = a or '', b or ''
+    va, vb = a.split(',')[0], b.split(',')[0]
+    if not folded(va).strip() or not folded(vb).strip():
+        return None
+    if not (words(va) & words(vb) or folded(va).strip() == folded(vb).strip() or spelled_alike(va, vb, VILLAGE_SPELLED)):
+        if (',' in a) != (',' in b):
+            town, other = (b, a) if ',' in a else (a, b)
+            if words(town) & words(other.split(',', 1)[1]):
+                return None
         return False
-    death = M.DEATH.search(entry.get('additional_info') or '') if 'death_year' not in entry else None
-    ey = death.group(1) if death else str(entry.get('death_year') or '') or (when(entry.get('death_date')) or '')[:4]
-    ry = (when(rec.get('death_date')) or '')[:4]
-    return not (ey and ry and ey != ry)
+    qa, qb = F.village(a)[0], F.village(b)[0]
+    if qa and qb and qa != qb:
+        return False
+    if ',' in a and ',' in b:
+        pa, pb = points(a), points(b)
+        d = min((G.km({'lat': x[0], 'lon': x[1]}, {'lat': y[0], 'lon': y[1]}) for x in pa for y in pb), default=None)
+        return not (d is not None and d > TWO_VILLAGES_KM)
+    return True
+
+
+def nickname(x: dict) -> str:
+    m = re.match(r'\s*zvan[ia] ([^;]{3,30});', x.get('additional_info') or '')
+    return M.fold(x.get('nick') or (m.group(1) if m else ''))
+
+
+def fathers(a: dict, b: dict) -> str | None:
+    """'full' (the same name, in any case or a letter misread), 'initial', 'clash', or None where one gives no father."""
+    fa = {M.fold(a.get('fathers_name')), M.fold(a.get('middle_name'))} - {''}
+    fb = {M.fold(b.get('fathers_name')), M.fold(b.get('middle_name'))} - {''}
+    if not fa or not fb:
+        return None
+    if any(len(x) <= 2 for x in fa | fb):
+        return 'initial' if any(M.initial_of(x, y) for x in fa for y in fb) else 'clash'
+    if fa & fb or any(M.same_father(x, y) or (min(len(x), len(y)) >= 4 and F.one_letter_apart(x, y))    # not Svetozar, Svetolik
+                      for x in fa for y in fb):
+        return 'full'
+    return 'clash'
+
+
+def fell_when(x: dict) -> tuple[str, str]:
+    """The death's date as far as it is known, and its year (an entry's field, or its words)."""
+    d = when(x.get('death_date')) or ''
+    if d:
+        return d, d[:4]
+    y = str(x.get('death_year') or '')[:4]
+    if not y:
+        death = M.DEATH.search(x.get('additional_info') or '')
+        y = death.group(1) if death else ''
+    return '', y
+
+
+def fate_of(x: dict) -> str:
+    if x.get('survived') or re.search(r'\bDanas\b', x.get('additional_info') or ''):
+        return 'lived'
+    # F.fate reads the verbs in small letters; the lists print "Poginuo" as well
+    return F.fate(x) or ('fell' if fell_when(x)[1] or re.search(r'\b(?:po\w?gin|umr|strelj|strijelj|nesta)', x.get('additional_info') or '', re.I) else '')
+
+
+def count_bearers(index: dict) -> None:
+    """How many men on the site and in the books bear each name (a name's records, and every book's entries)."""
+    if BEARERS:
+        return
+    BEARERS.update({name: len(rs) for name, rs in index.items()})
+    for d in M.ENTRY_DIRS:
+        for p in d.glob('*-entries.json'):
+            for e in json.loads(p.read_text(encoding='utf-8')):
+                BEARERS[(M.fold(e.get('last_name')), M.fold(e.get('first_name')))] += 1
+
+
+def bearers(x: dict) -> int:
+    return BEARERS[(M.fold(x.get('last_name')), M.fold(x.get('first_name')))]
+
+
+def facts(a: dict, b: dict) -> dict:
+    """What two entries of one name give alike and otherwise, for same_man()."""
+    ya, yb = (re.search(r'1[89]\d\d', x.get('birth_year') or '') for x in (a, b))
+    da, ydeath_a = fell_when(a)
+    db, ydeath_b = fell_when(b)
+    pa, pb = a.get('death_place') or '', b.get('death_place') or ''
+    na, nb = nickname(a), nickname(b)
+    fa, fb = fate_of(a), fate_of(b)
+    months = abs((int(da[:4]) - int(db[:4])) * 12 + int(da[5:7]) - int(db[5:7])) if len(da) >= 7 and len(db) >= 7 else None
+    return {'father': fathers(a, b),
+            'born': abs(int(ya.group(0)) - int(yb.group(0))) if ya and yb else None,
+            'village': same_village(a.get('birth_place') or a.get('born_in') or '', b.get('birth_place') or b.get('born_in') or ''),
+            'dead': abs(int(ydeath_a) - int(ydeath_b)) if ydeath_a and ydeath_b else None,
+            'months': months,
+            # the day and month a year off is the same day misprinted ("12. 4. 1945", "12. 4. 1944")
+            'day': len(da) == 10 and len(db) == 10 and da[5:] == db[5:] and abs(int(da[:4]) - int(db[:4])) <= 1,
+            'place': (bool(words(pa) & words(pb)) or bool(near(pa, pb)) or spelled_alike(pa, pb)) if pa and pb else None,
+            'nick': bool(na and nb and na[:5] == nb[:5]),
+            # the unit an entry of a book names is the other's (the entry's "units", the record's id)
+            'unit': any(int(y.get('soldier_id', '0')[:4]) in (x.get('units') or ()) for x, y in ((a, b), (b, a))),
+            'lived': bool(fa and fb and fa != fb)}
+
+
+def same_man(a: dict, b: dict) -> str | None:
+    """Two entries of one name that no one needs to read: what makes them one man, or None. Measured on every answer
+    given (identity_decisions.json, 2026-11-01, after the user found the queue "way too obvious"; the counts are answers
+    same/different/unsure). Another father, another fate or a death two years off part them, and a birth year off by
+    more than three unless the father, the village and the death agree; the rest stay for a person."""
+    for x, y in ((a, b), (b, a)):
+        since = ROSTER_FROM.get(x.get('pdf_file'))
+        if since:
+            d, yr = fell_when(y)
+            if yr and (yr < since[:4] or (len(d) >= 7 and d[:7] < since)):
+                return None
+    f = facts(a, b)
+    if f['father'] == 'clash' or f['lived'] or (f['dead'] or 0) > 1:
+        return None
+    full, father, born, village, dead, place = f['father'] == 'full', f['father'], f['born'], f['village'], f['dead'], f['place']
+    close = born is not None and born <= 1
+    # on a day many fell (12 April 1945 on the Srem front) a name and the day aren't enough: two villages need the father
+    # or the birth year, and without a village the place of death tells nothing unless the name is rare
+    if f['day'] and (full or close or (village is not False and (father or born == 2 or village or bearers(a) <= 5))):
+        return 'the same day of death'
+    if (f['months'] or 0) > 1:
+        return None
+    if full and village and dead == 0 and place:                 # 67/0/1: a birth year the scan misread
+        return 'the father, the village and the death'
+    if (born or 0) > 3:
+        return None
+    if f['nick'] and (full or close or village):
+        return 'what he was called'
+    if (born or 0) > 2:
+        return None
+    if village and close and dead == 0:
+        return 'the village, the birth year and the year of death'
+    if full and village and (born or 0) <= 1 and place is not False and (dead != 1 or born is not None):
+        return 'the father and the village'
+    if close and dead == 0 and place and (village is not False or full):   # 40/0/3; two villages need the father
+        return 'the birth year and the death'
+    if full and close and not dead and place is not False and village is None:
+        return 'the father and the birth year'
+    if village and dead == 0 and place:
+        return 'the village and the death'
+    if f['unit'] and (father or close or village) and not dead:  # the book names his brigade
+        return 'the unit he fought in'
+    n = bearers(a)
+    if village and dead == 0 and n <= 9:                         # 101/0/14: the place of death told otherwise or not at all
+        return 'a rare name, the village and the year of death'
+    if not dead and place is not False:
+        if village and n <= 3:                                   # 49/1/5
+            return 'a rare name and the village'
+        if full and village is None and n <= 2:                  # 50/0/4
+            return 'a rare name and the father'
+        if dead == 0 and place and n <= 5 and village is not False:   # 22/0/2
+            return 'a rare name and the death'
+    return None
+
+
+def thin(f: dict, carrying: int) -> bool:
+    """A pair with so little to go on that no one can tell (the answers on such pairs, 2026-11-01): the father's initial
+    alone, of 3 men or more of the name (14 same, 80 different, 46 unsure), or the father alone or nothing at all, of 16
+    or more (32 same, 42 different, 15 unsure). Never offered."""
+    if (f['born'] is not None and f['born'] <= 1) or f['village'] or f['dead'] == 0 or f['place'] or f['nick']:
+        return False
+    return carrying >= (3 if f['father'] == 'initial' else 16)
+
+
+def front_pairs(entries, index: dict) -> list[tuple]:
+    """The Srem front's lists name each man's brigade: the name and the brigade are enough where the brigade's records
+    hold one man of the name and its list one entry of it (the user's decision of 2026-11-01), unless his record says
+    otherwise: another father, a man who lived, a death in another year."""
+    def name_of(x):
+        return M.fold(x.get('last_name')), M.fold(x.get('first_name'))
+    in_list = Counter((name_of(e), unit) for e in entries for unit in e.get('units') or ())
+    out = []
+    for e in entries:
+        name = name_of(e)
+        if not all(name):
+            continue
+        for unit in e.get('units') or ():
+            ones = [s for s in index.get(name, ()) if int(s['soldier_id'][:4]) == unit]
+            if in_list[(name, unit)] != 1 or len(ones) != 1:
+                continue
+            f = facts(e, ones[0])
+            year = fell_when(ones[0])[1]
+            if f['father'] != 'clash' and not f['lived'] and not (year and e.get('death_years') and year not in e['death_years']):
+                out.append((ones[0]['soldier_id'], e['soldier_id'], 'the name and the brigade, the only one of the name in each'))
+    return out
 
 
 def rivals(rec: str, ref: str, found: list[dict], held: set, recs: dict) -> str:
@@ -342,12 +525,29 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
             holders[(c['ref_book'], c['ref_id'])].add(c['soldier_id'])
     man = linked_men(corr)
     new, left, review = [], [], []
+    count_bearers(index)
     for book in books:
         found = [f for f in match(book, index) if (book, f['record'], f['ref']) not in blocked]
         by_pair = {(f['record'], f['ref']): f for f in found}
         entries = {e['soldier_id']: e for e in json.loads(M.entries_path(book).read_text(encoding='utf-8'))}
         took, why_not, seen, mine, chosen = 0, Counter(), set(), [], set()
-        for rec, ref, why in choose(book, found, out, man):
+        # the pairs no one needs to read (same_man), where the entry fits one man and the record one entry so
+        strong = {(f['record'], f['ref']): same_man(entries[f['ref']], recs[f['record']]) for f in found}
+        strong = {k: why for k, why in strong.items() if why}
+        men, held_by = defaultdict(set), defaultdict(set)
+        for rec, ref in strong:
+            men[ref].add(man.get(rec, rec))
+            held_by[rec].add(ref)
+        one_man = {ref for ref, ms in men.items() if len(ms) > 1 and all(
+            same_man(recs[x], recs[y]) for x, y in combinations([r for r, e in strong if e == ref], 2) if x[:4] != y[:4])}
+        strong = {(rec, ref): why for (rec, ref), why in strong.items()
+                  if (len(men[ref]) == 1 or ref in one_man) and len(held_by[rec]) == 1}
+        picks = choose(book, found, out, man)
+        have_pick = {(rec, ref) for rec, ref, _ in picks}
+        picks += [(rec, ref, why) for (rec, ref), why in strong.items() if (rec, ref) not in have_pick]
+        if book in FRONT_BOOKS:
+            picks += [p for p in front_pairs(entries.values(), index) if p[:2] not in have_pick and p[:2] not in strong]
+        for rec, ref, why in picks:
             chosen.add((rec, ref))
             if (rec, ref) in have[book] or (book, rec, ref) in blocked:
                 continue
@@ -358,8 +558,8 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
                 why_not['record holds an entry of the book'] += 1
                 continue
             flags = against(entries[ref], recs[rec])
-            if flags and same_man_elsewhere(flags, by_pair.get((rec, ref), {}), entries[ref], recs[rec]):
-                flags, why = [], (f'{why}; ' if why else '') + 'the place of death told otherwise'
+            if flags and (rec, ref) in strong:
+                flags, why = [], (f'{why}; ' if why and why != strong[(rec, ref)] else '') + strong[(rec, ref)] + ', the place of death told otherwise'
             if flags:
                 why_not['another death'] += 1
                 left.append({'book': book, 'record': rec, 'ref': ref, 'against': flags})
@@ -377,7 +577,8 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
         twice = {k for k, n in per_unit.items() if n > 1}
         if twice:
             for p in mine:
-                if (p['ref'], p['record'][:4]) in twice:
+                # on the Srem lists the entry gives a name and an initial: no one can tell which of two men he is
+                if (p['ref'], p['record'][:4]) in twice and book not in FRONT_BOOKS:
                     review.append({'grade': '', 'agree': p['agree'], **by_pair.get((p['record'], p['ref']), {}),
                                    'record': p['record'], 'ref': p['ref'], 'book': book, 'clash': [],
                                    'note': 'two records of one unit fit the entry'})
@@ -392,7 +593,8 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
         for f in found:
             rec, ref = f['record'], f['ref']
             if f['grade'] != 'likely' or (rec, ref) in chosen or (rec, ref) in have[book] \
-                    or rec[:4] in ref_units[(book, ref)] or rec_books[(book, rec)]:
+                    or rec[:4] in ref_units[(book, ref)] or rec_books[(book, rec)] \
+                    or thin(facts(entries[ref], recs[rec]), bearers(recs[rec])):
                 continue
             strong = set(f['agree']) & {'father', 'birthplace', 'death place', 'death day'}
             alone = len(by_ref[ref]) == 1 and by_rec[rec] == 1

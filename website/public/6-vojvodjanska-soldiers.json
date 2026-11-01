@@ -684,7 +684,21 @@
     "pdf_file": "6-vojvodjanska.pdf",
     "birth_place": "Erdevik, Sid",
     "soldier_id": "0083000031",
-    "pdf_x_end": 319.1
+    "pdf_x_end": 319.1,
+    "other_sources": [
+      {
+        "soldier_id": "9013004322",
+        "name": "Brzak Krsta",
+        "additional_info": "Šesta vojvođanska brigada, Pri Prelazu Save: Krsta Brzak.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 30,
+        "pdf_x": 259.0,
+        "pdf_y": 247.2,
+        "pdf_x_end": 316.5,
+        "pdf_y_end": 256.9,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Brzak",
@@ -1209,6 +1223,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=418",
         "source_page": 418,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "9013004323",
+        "name": "Dučić Nikola",
+        "additional_info": "Šesta vojvođanska brigada, Pri Prelazu Save: Nikola Dučić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 30,
+        "pdf_x": 323.2,
+        "pdf_y": 247.2,
+        "pdf_x_end": 385.0,
+        "pdf_y_end": 256.9,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ],
     "ethnicity": "Srbin",
@@ -3283,6 +3309,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=427",
         "source_page": 427,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "9013004324",
+        "name": "Lazić Dušan",
+        "additional_info": "Šesta vojvođanska brigada, Pri Prelazu Save: Dušan Lazić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 30,
+        "pdf_x": 391.5,
+        "pdf_y": 247.2,
+        "pdf_x_end": 449.4,
+        "pdf_y_end": 256.9,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ],
     "ethnicity": "Srbin",
@@ -5673,7 +5711,29 @@
     "birth_place": "Sašinci, Sremska Mitrovica",
     "soldier_id": "0083000238",
     "pdf_x_end": 319.1,
-    "death_date": "18.10.1944"
+    "death_date": "18.10.1944",
+    "other_sources": [
+      {
+        "soldier_id": "0078000763",
+        "name": "Radosavljević Žika",
+        "additional_info": "rođ. u s. šašinci, Sramska Mitrovica, poginuo kod Bukovca septembra 1944.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 53.0,
+        "pdf_y": 141.3,
+        "pdf_x_end": 345.7,
+        "pdf_y_end": 160.4,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.1944",
+          "place": "Bukovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Radovanovič",
@@ -5895,14 +5955,33 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=487",
         "source_page": 487,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0009001042",
+        "name": "Rastović Lazar",
+        "additional_info": "1921, Belegiš '(Stara Pazova), zemljoradnik, vodnik, mesto smrti: Čađavica",
+        "pdf_file": "prva-vojvodjanska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 53.2,
+        "pdf_y": 173.3,
+        "pdf_x_end": 195.3,
+        "pdf_y_end": 200.8,
+        "unit_file": "prva-vojvodjanska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "borrowed": [
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
-    "death_place": "Belegiš"
+    "death_place": "Čađavica",
+    "ethnicity": "Srbin",
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Rašković",

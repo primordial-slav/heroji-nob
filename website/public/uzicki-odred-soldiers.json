@@ -349,7 +349,7 @@
     "first_name": "Miloš",
     "fathers_name": "V",
     "full_name": "Aleksić V Miloš",
-    "additional_info": "borac 1. užičke čete »Radoje Marić«, član KPJ, student prava, rođen 19. aprila 1921. u Užicu, ranjen u borbi protiv Nijemaca na Drežničkoj Gradini 18. avgusta 1941, umro od zadobijenih rana u Sevojnu 14. septembra",
+    "additional_info": "borac 1. užičke čete »Radoje Marić«, član KPJ, student prava, rođen 19. aprila 1921. u Užicu, ranjen u borbi protiv Nijemaca na Drežničkoj Gradini 18. avgusta 1941, umro od zadobijenih rana u Sevojnu 14. septembra 1941.",
     "birth_year": "1921",
     "pdf_page": 2,
     "pdf_y": 371.9,
@@ -357,14 +357,15 @@
     "pdf_y_end": 410.6,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000009",
+    "pdf_x_end": 468.5,
+    "party": "KPJ",
     "birth_place": "Užice",
     "occupation": "student prava",
     "death_type": "umro",
-    "rank": "borac",
-    "pdf_x_end": 468.5,
-    "unit_detail": "1. užička četa",
+    "death_date": "14.09.1941",
     "death_place": "Sevojno",
-    "party": "KPJ",
+    "rank": "borac",
+    "unit_detail": "1. užička četa",
     "other_sources": [
       {
         "soldier_id": "9025032429",
@@ -385,10 +386,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1941"
+    ]
   },
   {
     "last_name": "Aleksić",
@@ -418,7 +417,7 @@
     "first_name": "Tadija",
     "fathers_name": "J",
     "full_name": "Aleksić J Tadija",
-    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 1900. u Severovu, kod Arilja, strijeljali ga četnici u Bjeluši, kod Arilja, 13. novembra",
+    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 1900. u Severovu, kod Arilja, strijeljali ga četnici u Bjeluši, kod Arilja, 13. novembra 1943.",
     "birth_year": "1900",
     "pdf_page": 2,
     "pdf_y": 445.6,
@@ -426,12 +425,13 @@
     "pdf_y_end": 473.2,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000011",
+    "pdf_x_end": 468.6,
     "birth_place": "Severovo",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 468.6,
     "death_type": "streljan",
-    "death_place": "Bjeluša, Arilje"
+    "death_date": "13.11.1943",
+    "death_place": "Bjeluša, Arilje",
+    "rank": "borac"
   },
   {
     "last_name": "Aleksić",
@@ -1524,7 +1524,7 @@
     "first_name": "Miloš",
     "fathers_name": "Milovan",
     "full_name": "Đelkapić Milovana Miloš",
-    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1920. u Brezovi, kod Ivanjice, poginuo kao politički komesar 3. čete 1. bataljona 2. proleterske brigade u borbi protiv četnika u Maćama, kod Ivanjice, marta",
+    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1920. u Brezovi, kod Ivanjice, poginuo kao politički komesar 3. čete 1. bataljona 2. proleterske brigade u borbi protiv četnika u Maćama, kod Ivanjice, marta 1944.",
     "birth_year": "1920",
     "pdf_page": 18,
     "pdf_y": 631.3,
@@ -1532,16 +1532,16 @@
     "pdf_y_end": 670.0,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000044",
-    "birth_place": "Brezova",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
     "rank": "politički komesar",
-    "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 492.9,
     "ethnicity": "Srbin",
     "death_date": "03.1944",
     "death_place": "Brezova, Ivanjica",
     "party": "KPJ",
+    "birth_place": "Brezova",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "unit_detail": "3. četa, 1. bataljon",
     "other_sources": [
       {
         "soldier_id": "0039000937",
@@ -2031,6 +2031,33 @@
         "pdf_y": 345.4,
         "pdf_x_end": 272.6,
         "pdf_y_end": 354.4
+      },
+      {
+        "soldier_id": "0039010002",
+        "name": "Bojić Miljka Slavko",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Bakionica: Bojić Slavko, poginuo 8. juna 1943. godine na Milin Klada ma",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 25,
+        "pdf_x": 170.8,
+        "pdf_y": 353.1,
+        "pdf_x_end": 472.8,
+        "pdf_y_end": 372.9,
+        "pdf_x_left": 143.5,
+        "pdf_rects": [
+          [
+            170.8,
+            353.1,
+            472.8,
+            362.1
+          ],
+          [
+            143.5,
+            363.9,
+            157.4,
+            372.9
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
       },
       {
         "soldier_id": "0112000037",
@@ -3072,14 +3099,45 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2467",
         "source_page": 2467,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0039000094",
+        "name": "Buha Rada Boško",
+        "additional_info": "poginuo 27. septembra 1943, Jabuka (Pljevlja — Prijepolje); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 143.8,
+        "pdf_y": 651.7,
+        "pdf_x_end": 199.1,
+        "pdf_y_end": 661.4,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100106",
+        "name": "Buha Rada Boško",
+        "additional_info": "voda bombaškog odeljenja u 1. četi 4. bataljona, rođen 1926, Nova Gradina, Virovitica, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a, poginuo na Jabuci, kod Pljevalja, 27. septembra 1943. Odlikovan Ordenom narodnog heroja.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 138.6,
+        "pdf_y": 288.9,
+        "pdf_x_end": 306.9,
+        "pdf_y_end": 362.9,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "party"
     ],
-    "death_place": "Jabuka, Pljevlja"
+    "death_place": "Jabuka",
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Đuković",
@@ -3265,7 +3323,7 @@
     "first_name": "Boriša",
     "fathers_name": "M",
     "full_name": "Đurić M Boriša",
-    "additional_info": "borac Radničkog bataljona, krojački radnik, rođen 19. januara 1921. U Užicu, poginuo u borbi protiv Nijemaca na Kadinjači 29. novembra",
+    "additional_info": "borac Radničkog bataljona, krojački radnik, rođen 19. januara 1921. U Užicu, poginuo u borbi protiv Nijemaca na Kadinjači 29. novembra 1941.",
     "birth_year": "1921",
     "pdf_page": 21,
     "pdf_y": 441.6,
@@ -3273,12 +3331,13 @@
     "pdf_y_end": 469.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000094",
+    "pdf_x_end": 462.2,
     "birth_place": "U Užicu",
     "occupation": "krojački radnik",
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 462.2,
+    "death_date": "29.11.1941",
     "death_place": "Kadinjača",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025032518",
@@ -3291,10 +3350,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
     ],
-    "death_date": "1941",
     "birth_date": "19.01.1921"
   },
   {
@@ -4207,7 +4264,7 @@
     "first_name": "Svetislav",
     "fathers_name": "M",
     "full_name": "Cvetanović M Svetislav",
-    "additional_info": "borac Crnogorske čete, zemljoradnik, rođen 1922. u Vardi, kod Kosjerića, uhvatili ga četnici, umro od posljedica mučenja marta",
+    "additional_info": "borac Crnogorske čete, zemljoradnik, rođen 1922. u Vardi, kod Kosjerića, uhvatili ga četnici, umro od posljedica mučenja marta 1942.",
     "birth_year": "1922",
     "pdf_page": 77,
     "pdf_y": 417.5,
@@ -4215,11 +4272,12 @@
     "pdf_y_end": 445.1,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000119",
+    "pdf_x_end": 467.6,
     "birth_place": "Varda",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "rank": "borac",
-    "pdf_x_end": 467.6
+    "death_date": "03.1942",
+    "rank": "borac"
   },
   {
     "last_name": "Cvetić",
@@ -4315,7 +4373,7 @@
     "first_name": "Cveta",
     "fathers_name": "V",
     "full_name": "Dabić V Cveta",
-    "additional_info": "borac, član KPJ i član Okružnog komiteta KPJ za okrug užički, tekstilna radnica, rođena 16. aprila 1911. u Krivoj Reci, na Zlatiboru, zarobljena i otjerana u koncentracioni logor na Banjicu, gdje je ubijena 7. juna",
+    "additional_info": "borac, član KPJ i član Okružnog komiteta KPJ za okrug užički, tekstilna radnica, rođena 16. aprila 1911. u Krivoj Reci, na Zlatiboru, zarobljena i otjerana u koncentracioni logor na Banjicu, gdje je ubijena 7. juna 1943.",
     "birth_year": "1911",
     "pdf_page": 15,
     "pdf_y": 190.2,
@@ -4323,12 +4381,13 @@
     "pdf_y_end": 228.2,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000124",
+    "pdf_x_end": 467.2,
+    "party": "KPJ",
     "birth_place": "Kriva Reka",
     "occupation": "tekstilna radnica",
     "death_type": "ubijen",
-    "rank": "borac",
-    "pdf_x_end": 467.2,
-    "party": "KPJ"
+    "death_date": "07.06.1943",
+    "rank": "borac"
   },
   {
     "last_name": "Dabić",
@@ -4664,8 +4723,33 @@
         "pdf_y_end": 535.9,
         "pdf_x_left": 49.6,
         "ref_book": "ofanziva-1942-poginuli"
+      },
+      {
+        "soldier_id": "0001001950",
+        "name": "Daničić Borivoja Milovan",
+        "additional_info": "1919, Stapari, Titovo Užice, Srbija, Srbin, trgovački pomoćnik, član KPJ od 1942, u NOB od septembra 1941, u brigadi od decembra 1941, V bataljon, desetar, poginuo 23. 07. 1942, u Piriću, Bugojno",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 157,
+        "pdf_x": 43.0,
+        "pdf_y": 124.0,
+        "pdf_x_end": 350.0,
+        "pdf_y_end": 167.3,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "u Piriću, Bugojno",
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Danjijer",
@@ -5280,7 +5364,7 @@
     "first_name": "Obren",
     "fathers_name": "Jevrem",
     "full_name": "Dimitrijević Jevrema Obren",
-    "additional_info": "pripadnik partizanske straže, rođen 1889. u Gorobilju, kod Požege, uhvatili ga četnici i strijeljali v Požegi 13. decembra",
+    "additional_info": "pripadnik partizanske straže, rođen 1889. u Gorobilju, kod Požege, uhvatili ga četnici i strijeljali v Požegi 13. decembra 1941.",
     "birth_year": "1889",
     "pdf_page": 16,
     "pdf_y": 548.7,
@@ -5288,9 +5372,10 @@
     "pdf_y_end": 576.1,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000153",
-    "birth_place": "Gorobilje",
     "pdf_x_end": 477.0,
+    "birth_place": "Gorobilje",
     "death_type": "streljan",
+    "death_date": "13.12.1941",
     "death_place": "Požega"
   },
   {
@@ -5972,8 +6057,63 @@
         "pdf_y_end": 87.5,
         "pdf_x_left": 32.1,
         "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025032508",
+        "name": "Drinčić (Čedomir) Milan",
+        "additional_info": "rođen 1925, Titovo Užice. Srbin, poginuo 1944. u NOBu, Draglica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1227",
+        "source_page": 1227,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0039000156",
+        "name": "Drinčić Č Milan",
+        "additional_info": "poginuo 21. januara 1944, Bela Glava (G. Jablanica na Zlatiboru); Zapadna Srbija (23. decembar 1943 — 30. maj 1944)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 436.9,
+        "pdf_y": 246.2,
+        "pdf_x_end": 500.7,
+        "pdf_y_end": 267.2,
+        "pdf_x_left": 323.1,
+        "pdf_rects": [
+          [
+            436.9,
+            246.2,
+            500.7,
+            256.4
+          ],
+          [
+            323.1,
+            257.0,
+            340.7,
+            267.2
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100172",
+        "name": "Drinčić Milan",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1925, Užice, radnik, Srbin, u NOB oc! 1941, član SKOJ-a, poginuo na Beloj Glavi, na Zlatiboru, 21. januara 1944. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 285.6,
+        "pdf_y": 561.0,
+        "pdf_x_end": 456.0,
+        "pdf_y_end": 613.4,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Bela Glava",
+    "party": "SKOJ",
     "birth_date": "25.02.1925"
   },
   {
@@ -5982,7 +6122,7 @@
     "first_name": "Miloje",
     "fathers_name": "D",
     "full_name": "Drinčić D Miloje",
-    "additional_info": "vodnik voda, član KPJ, učitelj, rođen 21. oktobra 1918. u Užicu, poginuo u borbi protiv Nijemaca u Staparima, kod Užica, 13. decembra",
+    "additional_info": "vodnik voda, član KPJ, učitelj, rođen 21. oktobra 1918. u Užicu, poginuo u borbi protiv Nijemaca u Staparima, kod Užica, 13. decembra 1941.",
     "birth_year": "1918",
     "pdf_page": 17,
     "pdf_y": 539.6,
@@ -5990,13 +6130,14 @@
     "pdf_y_end": 567.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000171",
+    "pdf_x_end": 468.7,
+    "party": "KPJ",
     "birth_place": "Užice",
     "occupation": "učitelj",
     "death_type": "poginuo",
-    "rank": "vodnik",
-    "pdf_x_end": 468.7,
+    "death_date": "13.12.1941",
     "death_place": "Stapari, Užice",
-    "party": "KPJ",
+    "rank": "vodnik",
     "other_sources": [
       {
         "soldier_id": "9114001046",
@@ -6017,10 +6158,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
     ],
-    "death_date": "1941",
     "birth_date": "21.10.1918"
   },
   {
@@ -7361,8 +7500,26 @@
         "pdf_x_end": 277.9,
         "pdf_y_end": 226.6,
         "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0126000182",
+        "name": "Gavrilović Vučka Srećko",
+        "additional_info": "zemljoradnik, rođen 1909. u Brezovi kod Ivanjice, živeo u Čačku; član KPJ; borac Čačanskog NOP odreda i Druge proleterske brigade; poginuo u borbi na Sutjesci juna 1943.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 69,
+        "pdf_x": 59.0,
+        "pdf_y": 300.0,
+        "pdf_x_end": 392.9,
+        "pdf_y_end": 326.2,
+        "pdf_x_left": 33.9,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1909"
+      ]
+    }
   },
   {
     "last_name": "Gavrović",
@@ -7506,7 +7663,7 @@
     "first_name": "Osman",
     "fathers_name": "B",
     "full_name": "Gegić B Osman",
-    "additional_info": "borac, bravarski radnik, rođen 1901. u Međeđi, u Bosni, a živio u Užicu, zarobili ga Nijemci i strijeljali u Krčagovu, kod Užica, decembra",
+    "additional_info": "borac, bravarski radnik, rođen 1901. u Međeđi, u Bosni, a živio u Užicu, zarobili ga Nijemci i strijeljali u Krčagovu, kod Užica, decembra 1941.",
     "birth_year": "1901",
     "pdf_page": 13,
     "pdf_y": 448.2,
@@ -7514,12 +7671,13 @@
     "pdf_y_end": 475.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000212",
+    "pdf_x_end": 459.8,
     "birth_place": "Međeđa",
     "occupation": "bravarski radnik",
-    "rank": "borac",
-    "pdf_x_end": 459.8,
     "death_type": "streljan",
-    "death_place": "Krčagovo, Užice"
+    "death_date": "12.1941",
+    "death_place": "Krčagovo, Užice",
+    "rank": "borac"
   },
   {
     "last_name": "Gezović",
@@ -7661,7 +7819,7 @@
     "first_name": "Milivoje",
     "fathers_name": "Miodrag",
     "full_name": "Glišić Miodraga Milivoje",
-    "additional_info": "borac Požeške čete, svršeni učenik gimnazije, rođen 1920. u Požegi, zarobili ga četnici i strijeljali u Požegi 21. decembra",
+    "additional_info": "borac Požeške čete, svršeni učenik gimnazije, rođen 1920. u Požegi, zarobili ga četnici i strijeljali u Požegi 21. decembra 1941.",
     "birth_year": "1920",
     "pdf_page": 13,
     "pdf_y": 606.3,
@@ -7669,8 +7827,6 @@
     "pdf_y_end": 634.0,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000218",
-    "birth_place": "Požega",
-    "rank": "borac",
     "pdf_x_end": 459.9,
     "other_sources": [
       {
@@ -7749,8 +7905,11 @@
       }
     ],
     "unit_detail": "1. požeška četa",
+    "birth_place": "Požega",
     "death_type": "streljan",
+    "death_date": "21.12.1941",
     "death_place": "Požega",
+    "rank": "borac",
     "birth_date": "30.06.1920"
   },
   {
@@ -8331,7 +8490,17 @@
     "death_type": "poginuo",
     "death_date": "24.09.1944",
     "death_place": "u Maslovarima kod Bosanskog Petrovca",
-    "pdf_x_end": 477.7
+    "pdf_x_end": 477.7,
+    "other_sources": [
+      {
+        "soldier_id": "9114000007",
+        "name": "Gutman Frida",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Profesori i drugi radnici Gimnazije poginuli u NOB: 7. Gutman dr Frida, lekar, rođena je 24. februara 1893. godine u Podhajcu. Radila je kao honorarni nastavnik u Učiteljskoj školi u Užicu od 1929. do 1932. godine. Od–1932. do 1934. godine predavala je higijenu u užičkoj Gimnaziji. Okupacijske vlasti su joj 1941. godine, kao Jevrejki, zabranile obavljanje lekarske prakse, ali je ona ilegalno odlazila iz grada i lečila ranjene partizane. Posle oslobođenja Užica 1941. godine radila je u partizanskoj bolnici. Zajedno sa kćerima Vitom i Oliverom učestvovala je u NOB od 1941. godine i bila upravnik partizanskih bolnica. U septembru 1942. godine je učestvovala na Prvom kongresu partizanskih lekara u Bosanskom Petrovcu. Bila je šef Centralne partizanske bolnice br. 1. Poginula je kod Bosanskog Petrovca 24. septembra 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=303",
+        "source_page": 300,
+        "ref_book": "uzicka-gimnazija"
+      }
+    ]
   },
   {
     "last_name": "Gutman",
@@ -9406,7 +9575,7 @@
     "first_name": "Milenko",
     "fathers_name": "S",
     "full_name": "Jakovljević S Milenko",
-    "additional_info": "zamjenik komandira čete u Ariljskom bataljonu, zemljoradnik, rođen 16. februara 1922. u Vigoštu, kod Arilja, zarobljen i doveden u užički zatvor, strijeljali ga Nijemci u Krčagovu, kod Užica, 28. decembra",
+    "additional_info": "zamjenik komandira čete u Ariljskom bataljonu, zemljoradnik, rođen 16. februara 1922. u Vigoštu, kod Arilja, zarobljen i doveden u užički zatvor, strijeljali ga Nijemci u Krčagovu, kod Užica, 28. decembra 1941.",
     "birth_year": "1922",
     "pdf_page": 25,
     "pdf_y": 463.8,
@@ -9414,12 +9583,13 @@
     "pdf_y_end": 502.5,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000268",
+    "pdf_x_end": 472.2,
     "birth_place": "Vigošte",
     "occupation": "zemljoradnik",
-    "rank": "zamjenik komandira čete",
-    "pdf_x_end": 472.2,
     "death_type": "streljan",
-    "death_place": "Krčagovo, Užice"
+    "death_date": "28.12.1941",
+    "death_place": "Krčagovo, Užice",
+    "rank": "zamjenik komandira čete"
   },
   {
     "last_name": "Jakovljević",
@@ -11152,7 +11322,25 @@
     "death_type": "poginuo",
     "death_date": "11.06.1942",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon"
+    "unit_detail": "3. četa, 4. bataljon",
+    "death_place": "na Gatu (Gacko, Hercegovina)",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0109000456",
+        "name": "Jokić Tanasije",
+        "additional_info": "Bogatić (Mačvanski srez): zvani Ponajlak; r. 1907, osnovna škola, zemljoradnik, siromašan; porodica: majka, žena, 2 sina i kćerka; stupio avgusta 1941, Mikina četa; prešao u Bosnu; poginuo 11. 6. 1942. na Gatu (Gacko, Hercegovina), kao borac 2. proleterske brigade.",
+        "source_url": "https://znaci.org/00001/48_102.htm",
+        "unit_file": "macvanski-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1907"
+      ]
+    }
   },
   {
     "last_name": "Jokić",
@@ -12066,7 +12254,7 @@
     "first_name": "Novak",
     "fathers_name": "V",
     "full_name": "Jovanović V Novak",
-    "additional_info": "borac, trgovački pomoćnik, rođen 1919. u Lelićima (Karan), kod Užica, poginuo kao borac 1. čete 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Krnjinu (Manjača), u Bosanskoj krajini, 7. septembra",
+    "additional_info": "borac, trgovački pomoćnik, rođen 1919. u Lelićima (Karan), kod Užica, poginuo kao borac 1. čete 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Krnjinu (Manjača), u Bosanskoj krajini, 7. septembra 1942.",
     "birth_year": "1919",
     "pdf_page": 29,
     "pdf_y": 607.7,
@@ -12074,15 +12262,15 @@
     "pdf_y_end": 645.7,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000355",
+    "pdf_x_end": 455.0,
+    "ethnicity": "Srbin",
+    "death_date": "07.09.1942",
+    "death_place": "Manjača",
     "birth_place": "Lelići (Karan)",
     "occupation": "trgovački pomoćnik",
     "death_type": "poginuo",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 455.0,
-    "ethnicity": "Srbin",
-    "death_date": "07.09.1942",
-    "death_place": "Manjača",
     "other_sources": [
       {
         "soldier_id": "0001004614",
@@ -12339,7 +12527,7 @@
     "first_name": "Stanoje",
     "fathers_name": "N",
     "full_name": "Jovanović N Stanoje",
-    "additional_info": "rođ. Bopobhr; Stanko Cane, borac, berberski radnik, rođen 1901. u Ponikovici kod Užica, a živio u Užicu, nestao kao borac 1. čete 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Sutjesci juna",
+    "additional_info": "rođ. Bopobhr; Stanko Cane, borac, berberski radnik, rođen 1901. u Ponikovici kod Užica, a živio u Užicu, nestao kao borac 1. čete 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Sutjesci juna 1943.",
     "birth_year": "1901",
     "pdf_page": 30,
     "pdf_y": 452.0,
@@ -12347,12 +12535,13 @@
     "pdf_y_end": 489.9,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000364",
+    "pdf_x_end": 480.0,
     "birth_place": "Ponikovica, Užice",
+    "occupation": "berberski radnik",
     "death_type": "nestao",
+    "death_date": "06.1943",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 480.0,
-    "occupation": "berberski radnik",
     "other_sources": [
       {
         "soldier_id": "9025032834",
@@ -12365,12 +12554,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
-      "death_place",
       "ethnicity"
-    ],
-    "death_date": "1941",
-    "death_place": "Nestao u 5ofanz"
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -12577,7 +12762,7 @@
     "first_name": "Miloje",
     "fathers_name": "Lazar",
     "full_name": "Jugović Lazara Miloje",
-    "additional_info": "borac 1. račanske čete, član SKOJ-a, učenik učiteljske škole, rođen 12. maja 1921. u Besarovini, kod Bajine Bašte, zarobljen i otjeran u koncentracioni logor, strijeljali ga Nijemci u logoru na Banjici 7. avgusta",
+    "additional_info": "borac 1. račanske čete, član SKOJ-a, učenik učiteljske škole, rođen 12. maja 1921. u Besarovini, kod Bajine Bašte, zarobljen i otjeran u koncentracioni logor, strijeljali ga Nijemci u logoru na Banjici 7. avgusta 1942.",
     "birth_year": "1921",
     "pdf_page": 32,
     "pdf_y": 159.2,
@@ -12585,14 +12770,15 @@
     "pdf_y_end": 196.4,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000372",
+    "pdf_x_end": 479.8,
+    "party": "SKOJ",
     "birth_place": "Besarovina",
     "occupation": "učenik učiteljske škole",
-    "rank": "borac",
-    "pdf_x_end": 479.8,
-    "unit_detail": "1. račanska četa",
     "death_type": "streljan",
+    "death_date": "07.08.1942",
     "death_place": "Banjica",
-    "party": "SKOJ"
+    "rank": "borac",
+    "unit_detail": "1. račanska četa"
   },
   {
     "last_name": "Jugović",
@@ -12814,18 +13000,19 @@
     "first_name": "Dragojle",
     "fathers_name": "A",
     "full_name": "Kaljević A Dragojle",
-    "additional_info": "borac Aroljskog bataljona, zemljoradnik-grnčar, rođen u Grivskoj, kod Arilja, uhvatili ga četnici i strijeljali u Grivskoj 24. decembra",
+    "additional_info": "borac Aroljskog bataljona, zemljoradnik-grnčar, rođen u Grivskoj, kod Arilja, uhvatili ga četnici i strijeljali u Grivskoj 24. decembra 1941.",
     "pdf_page": 32,
     "pdf_y": 429.2,
     "pdf_x": 123.7,
     "pdf_y_end": 457.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000379",
-    "birth_place": "Grivska",
-    "rank": "borac",
     "pdf_x_end": 480.3,
+    "birth_place": "Grivska",
     "death_type": "streljan",
+    "death_date": "24.12.1941",
     "death_place": "Grivska",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025001568",
@@ -12839,10 +13026,8 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
-      "death_date",
       "ethnicity"
     ],
-    "death_date": "1941",
     "birth_year": "1909"
   },
   {
@@ -13385,7 +13570,29 @@
     "death_date": "13.06.1943",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 462.1
+    "pdf_x_end": 462.1,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Miljevina",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0039100424",
+        "name": "Kisa Lazara Savo",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1922, Lužnica, Trebinje, đak, Srbin, u NOB od 1941, član KPJ, poginuo u Miljevini 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 283.5,
+        "pdf_y": 179.7,
+        "pdf_x_end": 454.0,
+        "pdf_y_end": 221.3,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kljutić",
@@ -14348,7 +14555,7 @@
     "first_name": "Mileva",
     "fathers_name": "",
     "full_name": "Kosovac Mileva",
-    "additional_info": "borac Crnogorske čete, učiteljica, član KPJ, rođena 1913. u Šapcu, zarobili je četnici i zaklali u Skakavcima, kod Kosjerića, 2. novembra",
+    "additional_info": "borac Crnogorske čete, učiteljica, član KPJ, rođena 1913. u Šapcu, zarobili je četnici i zaklali u Skakavcima, kod Kosjerića, 2. novembra 1941.",
     "birth_year": "1913",
     "pdf_page": 35,
     "pdf_y": 574.6,
@@ -14356,11 +14563,11 @@
     "pdf_y_end": 602.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000421",
+    "pdf_x_end": 460.4,
+    "party": "KPJ",
     "birth_place": "Šabac",
     "occupation": "učiteljica",
-    "rank": "borac",
-    "pdf_x_end": 460.4,
-    "party": "KPJ"
+    "rank": "borac"
   },
   {
     "last_name": "Kostić",
@@ -14435,7 +14642,7 @@
     "first_name": "Miloš",
     "fathers_name": "S",
     "full_name": "Kostić S Miloš",
-    "additional_info": "borac, član SKOJ-a, obućarski radnik, rođen 1921. u Trnavi, kod Kosjerića, a živio u Užicu, zarobili ga četnici u borbi u Karanu i predali ga Nijemcima; strijeljali ga Nijemci na Krušiku, u Valjevu, 27. novembra",
+    "additional_info": "borac, član SKOJ-a, obućarski radnik, rođen 1921. u Trnavi, kod Kosjerića, a živio u Užicu, zarobili ga četnici u borbi u Karanu i predali ga Nijemcima; strijeljali ga Nijemci na Krušiku, u Valjevu, 27. novembra 1941.",
     "birth_year": "1921",
     "pdf_page": 36,
     "pdf_y": 134.5,
@@ -14443,13 +14650,14 @@
     "pdf_y_end": 172.4,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000424",
+    "pdf_x_end": 483.3,
+    "party": "SKOJ",
     "birth_place": "Trnava",
     "occupation": "obućarski radnik",
-    "rank": "borac",
-    "pdf_x_end": 483.3,
     "death_type": "streljan",
+    "death_date": "27.11.1941",
     "death_place": "Krušik, Valjevo",
-    "party": "SKOJ"
+    "rank": "borac"
   },
   {
     "last_name": "Kovačević",
@@ -14623,7 +14831,79 @@
     "rank": "zamjenik političkog komesara",
     "unit_detail": "1. četa, 4. bataljon",
     "pdf_x_end": 484.0,
-    "birth_date": "01.09.1923"
+    "other_sources": [
+      {
+        "soldier_id": "9114001102",
+        "name": "Kovačević I. Milan",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 102. Kovačević I. Milan, učenik, rođen je 1. novembra 1923. godine u Bajinoj Bašti. Poginuo je u borbi protiv četnika na Mravinjcima kod Kosjerića 1. maja 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=310",
+        "source_page": 307,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "0001005428",
+        "name": "Kovačević Ivana Milan",
+        "additional_info": "1923, Bajina Bašta, Srbija, Srbin, učenik, član SKOJ-a od 1941, član KPJ od 1942, u NOB od 1941, u brigadi od decembra 1941, V bataljon, zamenik političkog komesara čete, poginuo 01. 05. 1944, Mravinjaci",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 110,
+        "pdf_x": 65.7,
+        "pdf_y": 218.9,
+        "pdf_x_end": 372.7,
+        "pdf_y_end": 261.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200412",
+        "name": "Kovačević Milan",
+        "additional_info": "borac, rođen 1924. u Bajinoj Bašti, SRS, učenik gimnazije, član SKOJ-a od 1941. Poginuo 1. maja 1944. na Mravinjcima, na dužnosti zamjenika političkog komesara čete.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 47,
+        "pdf_x": 268.0,
+        "pdf_y": 809.9,
+        "pdf_x_end": 576.3,
+        "pdf_y_end": 841.0,
+        "pdf_x_left": 243.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039000373",
+        "name": "Kovačević Ivana Milan",
+        "additional_info": "poginuo 1. i 2. maja 1944, Mravinci (Valjevo); Zapadna Srbija (23. decembar 1943 — 30. maj 1944)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 341.8,
+        "pdf_y": 771.8,
+        "pdf_x_end": 426.0,
+        "pdf_y_end": 782.0,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100464",
+        "name": "Kovačević Ivana Milan",
+        "additional_info": "borac 4. bataljona, rođen 1923, Bajina Bašta, dak, Srbin, u NOB od 1941, član KPJ od 1942, poginuo na Mravinjcima, kod Valjeva, 1. maja 1944. kao zamenik političkog komesara čete.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 283.7,
+        "pdf_y": 661.6,
+        "pdf_x_end": 454.0,
+        "pdf_y_end": 703.2,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Mravinjaci",
+    "party": "SKOJ 1941, KPJ 1942",
+    "birth_date": "01.09.1923",
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Kovačević",
@@ -14707,6 +14987,33 @@
         "pdf_y": 394.5,
         "pdf_x_end": 293.1,
         "pdf_y_end": 403.5
+      },
+      {
+        "soldier_id": "0039010017",
+        "name": "Kovačević Čedomira Radosav",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Srednja Dobrinja: Kovačević Radosav, umro sredinom jula 1942. godine na Zelengori od rana na Živnju",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 27,
+        "pdf_x": 173.8,
+        "pdf_y": 333.5,
+        "pdf_x_end": 479.6,
+        "pdf_y_end": 353.1,
+        "pdf_x_left": 146.9,
+        "pdf_rects": [
+          [
+            173.8,
+            333.5,
+            479.6,
+            342.5
+          ],
+          [
+            146.9,
+            344.1,
+            267.7,
+            353.1
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "birth_date": "10.03.1919"
@@ -15102,7 +15409,7 @@
     "first_name": "Dragan",
     "fathers_name": "Milovan",
     "full_name": "Krejović Milovana Dragan",
-    "additional_info": "borac Zlatiborske čete, učenik gimnazije, rođen 24. jula 1921. u Arenovi, na Zlatiboru, teško ranjen u borbi protiv četnika u Karanu, kod Užica, i umro od zadobijenih rana u bolnici u Užicu 6. novembra",
+    "additional_info": "borac Zlatiborske čete, učenik gimnazije, rođen 24. jula 1921. u Arenovi, na Zlatiboru, teško ranjen u borbi protiv četnika u Karanu, kod Užica, i umro od zadobijenih rana u bolnici u Užicu 6. novembra 1941.",
     "birth_year": "1921",
     "pdf_page": 36,
     "pdf_y": 270.3,
@@ -15114,8 +15421,9 @@
     "birth_place": "Arenovi",
     "occupation": "učenik gimnazije",
     "death_type": "umro",
-    "rank": "borac",
+    "death_date": "06.11.1941",
     "death_place": "Užice",
+    "rank": "borac",
     "birth_date": "24.07.1921"
   },
   {
@@ -15770,7 +16078,7 @@
     "first_name": "Matije",
     "fathers_name": "Milan",
     "full_name": "Lapčević Milana Matije",
-    "additional_info": "borac Požeške čete, radnik, rođen 1913. u Godoviku, kod Požege, poginuo kao zamjenik političkog komesara čete u 1. bataljonu 2. proleterske brigade u borbi protiv ustaša u Pazariću, kod Sarajeva, 4. jula",
+    "additional_info": "borac Požeške čete, radnik, rođen 1913. u Godoviku, kod Požege, poginuo kao zamjenik političkog komesara čete u 1. bataljonu 2. proleterske brigade u borbi protiv ustaša u Pazariću, kod Sarajeva, 4. jula 1942.",
     "birth_year": "1913",
     "pdf_page": 38,
     "pdf_y": 352.4,
@@ -15778,11 +16086,6 @@
     "pdf_y_end": 390.4,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000463",
-    "birth_place": "Godovik",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "rank": "zamjenik političkog komesara čete",
-    "unit_detail": "1. bataljon",
     "pdf_x_end": 480.4,
     "other_sources": [
       {
@@ -15808,7 +16111,44 @@
         "pdf_y_end": 199.5,
         "pdf_x_left": 21.1,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "0039010019",
+        "name": "Lapčević Milana Matije",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Godovik: Lapčević Matije, poginuo 4. jula 1942. godine kod Pazarića",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 25,
+        "pdf_x": 169.4,
+        "pdf_y": 455.8,
+        "pdf_x_end": 474.9,
+        "pdf_y_end": 475.4,
+        "pdf_x_left": 143.0,
+        "pdf_rects": [
+          [
+            169.4,
+            455.8,
+            474.9,
+            464.8
+          ],
+          [
+            143.0,
+            466.4,
+            156.0,
+            475.4
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
       }
+    ],
+    "birth_place": "Godovik",
+    "occupation": "radnik",
+    "death_type": "poginuo",
+    "death_date": "04.07.1942",
+    "rank": "zamjenik političkog komesara čete",
+    "unit_detail": "1. bataljon",
+    "death_place": "Pazarić",
+    "borrowed": [
+      "death_place"
     ],
     "birth_date": "11.11.1913"
   },
@@ -16465,7 +16805,7 @@
     "first_name": "Nikola",
     "fathers_name": "Mićo",
     "full_name": "Leković Mića Nikola",
-    "additional_info": "borac 1. požeške čete, stolarski radnik, rođen 1902. u Svračkovu, kod Požege, uhvatili ga četnici i strijeljali u Požegi 9. januara",
+    "additional_info": "borac 1. požeške čete, stolarski radnik, rođen 1902. u Svračkovu, kod Požege, uhvatili ga četnici i strijeljali u Požegi 9. januara 1942.",
     "birth_year": "1902",
     "pdf_page": 38,
     "pdf_y": 639.9,
@@ -16473,11 +16813,7 @@
     "pdf_y_end": 668.1,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000478",
-    "birth_place": "Svračkovo",
-    "occupation": "stolarski radnik",
-    "rank": "borac",
     "pdf_x_end": 481.4,
-    "unit_detail": "1. požeška četa",
     "other_sources": [
       {
         "soldier_id": "0026010185",
@@ -16512,14 +16848,17 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "birth_place": "Svračkovo",
+    "occupation": "stolarski radnik",
     "death_type": "streljan",
+    "death_date": "09.01.1942",
     "death_place": "Požega",
+    "rank": "borac",
+    "unit_detail": "1. požeška četa",
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
     ],
-    "death_date": "1942",
     "birth_date": "12.06.1902"
   },
   {
@@ -18687,7 +19026,7 @@
     "first_name": "Momčilo",
     "fathers_name": "Dragoljub",
     "full_name": "Marković Dragoljuba Momčilo",
-    "additional_info": "komandir voda u 1. požeškoj četi, student prava, rođen 1921. u Svračkovu, kod Požege, poginuo kao načelnik štaba 4. srpske brigade 21. divizije u borbi protiv Nijemaca na sremskom frontu januara",
+    "additional_info": "komandir voda u 1. požeškoj četi, student prava, rođen 1921. u Svračkovu, kod Požege, poginuo kao načelnik štaba 4. srpske brigade 21. divizije u borbi protiv Nijemaca na sremskom frontu januara 1945",
     "birth_year": "1921",
     "pdf_page": 42,
     "pdf_y": 443.8,
@@ -18695,12 +19034,7 @@
     "pdf_y_end": 481.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000536",
-    "birth_place": "Svračkovo",
-    "occupation": "student prava",
-    "death_type": "poginuo",
-    "rank": "komandir voda, načelnik štaba",
     "pdf_x_end": 487.6,
-    "unit_detail": "1. požeška četa",
     "other_sources": [
       {
         "soldier_id": "0026010243",
@@ -18758,12 +19092,16 @@
       }
     ],
     "death_place": "Sremska Mitrovica",
+    "birth_place": "Svračkovo",
+    "occupation": "student prava",
+    "death_type": "poginuo",
+    "death_date": "01.1945",
+    "rank": "komandir voda, načelnik štaba",
+    "unit_detail": "1. požeška četa",
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1944"
+    ]
   },
   {
     "last_name": "Marković",
@@ -18771,7 +19109,7 @@
     "first_name": "Nedeljko",
     "fathers_name": "B",
     "full_name": "Marković B Nedeljko",
-    "additional_info": "zvani Neđo; borac, ugostiteljski radnik, rođen 1911. u Ponikovici, kod Užica, a n^ivio u Užicu, poginuo kao komandir voda u 1. četi 4. bataljona 2. proleterske brigade u borbi protiv ustaša kod Bugojna 23. juna",
+    "additional_info": "zvani Neđo; borac, ugostiteljski radnik, rođen 1911. u Ponikovici, kod Užica, a n^ivio u Užicu, poginuo kao komandir voda u 1. četi 4. bataljona 2. proleterske brigade u borbi protiv ustaša kod Bugojna 23. juna 1942.",
     "birth_year": "1911",
     "pdf_page": 42,
     "pdf_y": 485.1,
@@ -19131,7 +19469,7 @@
     "first_name": "Živorad",
     "fathers_name": "M",
     "full_name": "Marković M Živorad",
-    "additional_info": "zvani Žiko Buzo; borac Radničkog bataljona, rođen 5. februara 1914. u Užicu, poginuo u borbi protiv Nijemaca na Kadinjači 29. novembra",
+    "additional_info": "zvani Žiko Buzo; borac Radničkog bataljona, rođen 5. februara 1914. u Užicu, poginuo u borbi protiv Nijemaca na Kadinjači 29. novembra 1941.",
     "birth_year": "1914",
     "pdf_page": 42,
     "pdf_y": 227.1,
@@ -19142,8 +19480,9 @@
     "pdf_x_end": 487.8,
     "birth_place": "Užice",
     "death_type": "poginuo",
-    "rank": "borac",
+    "death_date": "29.11.1941",
     "death_place": "Kadinjača",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025032630",
@@ -19156,10 +19495,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
     ],
-    "death_date": "1941",
     "birth_date": "05.02.1914"
   },
   {
@@ -19948,7 +20285,7 @@
     "first_name": "Milojka",
     "fathers_name": "D",
     "full_name": "Matović-Međedović D Milojka",
-    "additional_info": "zvana Mica; borac-bolničarka Požeške čete, član KPJ, puškarska radnica, rođena 27. septembra 1923. u Užicu, a živjela u Godoviku, kod Požege, zarobljena; strijeljali je Nijemci u Požegi 10. januara",
+    "additional_info": "zvana Mica; borac-bolničarka Požeške čete, član KPJ, puškarska radnica, rođena 27. septembra 1923. u Užicu, a živjela u Godoviku, kod Požege, zarobljena; strijeljali je Nijemci u Požegi 10. januara 1942.",
     "birth_year": "1923",
     "pdf_page": 44,
     "pdf_y": 165.9,
@@ -20828,7 +21165,7 @@
     "first_name": "Joviša",
     "fathers_name": "R",
     "full_name": "Mihailović R Joviša",
-    "additional_info": "borac Ariljske čete, član KPJ, pekarski radnik, rođen 15. januara 1917.U Arilju, poginuo kao komandir voda u 2. četi 1. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Zelengori, kod Kalinovika, juna",
+    "additional_info": "borac Ariljske čete, član KPJ, pekarski radnik, rođen 15. januara 1917.U Arilju, poginuo kao komandir voda u 2. četi 1. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Zelengori, kod Kalinovika, juna 1943.",
     "birth_year": "1917",
     "pdf_page": 50,
     "pdf_y": 290.7,
@@ -20836,13 +21173,14 @@
     "pdf_y_end": 329.4,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000583",
+    "pdf_x_end": 482.0,
+    "party": "KPJ",
     "birth_place": "U Arilju",
     "occupation": "pekarski radnik",
     "death_type": "poginuo",
+    "death_date": "06.1943",
     "rank": "komandir voda",
     "unit_detail": "2. četa, 1. bataljon",
-    "pdf_x_end": 482.0,
-    "party": "KPJ",
     "birth_date": "15.01.1917"
   },
   {
@@ -20873,7 +21211,7 @@
     "first_name": "Milan",
     "fathers_name": "Petar",
     "full_name": "Mihailović Petra Milan",
-    "additional_info": "zvani Mišo; borac Moravičke čete, član KPJ, obućarski radnik, rođen 1921. u Ivanjici, poginuo kao komandir voda u 3. četi 1. bataljona 2. proleterske brigade u borbi protiv četnika u Ravnom, kod Mostara, februara",
+    "additional_info": "zvani Mišo; borac Moravičke čete, član KPJ, obućarski radnik, rođen 1921. u Ivanjici, poginuo kao komandir voda u 3. četi 1. bataljona 2. proleterske brigade u borbi protiv četnika u Ravnom, kod Mostara, februara 1943.",
     "birth_year": "1921",
     "pdf_page": 50,
     "pdf_y": 332.9,
@@ -20882,12 +21220,13 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000585",
     "pdf_x_end": 481.9,
+    "party": "KPJ",
     "birth_place": "Ivanjica",
     "occupation": "obućarski radnik",
     "death_type": "poginuo",
+    "death_date": "02.1943",
     "rank": "komandir voda",
-    "unit_detail": "3. četa, 1. bataljon",
-    "party": "KPJ"
+    "unit_detail": "3. četa, 1. bataljon"
   },
   {
     "last_name": "Mihailović",
@@ -21051,7 +21390,25 @@
     "death_date": "11.06.1942",
     "rank": "borac",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 464.2
+    "pdf_x_end": 464.2,
+    "death_place": "Gata, Gacko",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0109000790",
+        "name": "Mijatović Živorad",
+        "additional_info": "Noćajski Salaš (Mačvanski srez): zvani Pura; r. 1921, osnovna škola, mašinbravar; stupio 28. 8. 1941, radionica oružja, zatim fabrika oružja u Užicu, pa 2. proleterska brigada; poginuo u borbi na Gatu kod Gackog 11. 6. 1942.",
+        "source_url": "https://znaci.org/00001/48_102.htm",
+        "unit_file": "macvanski-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Mijušković",
@@ -21695,7 +22052,7 @@
     "first_name": "Dušan",
     "fathers_name": "N",
     "full_name": "Milosavljević-Čeliković N Dušan",
-    "additional_info": "zvani Duško; borac, obućarski radnik, rođen 1908. u Bioski, kod Užica, a živio u Užicu, poginuo kao borac 1. čete 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Sutjesci 11. juna",
+    "additional_info": "zvani Duško; borac, obućarski radnik, rođen 1908. u Bioski, kod Užica, a živio u Užicu, poginuo kao borac 1. čete 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca na Sutjesci 11. juna 1943.",
     "birth_year": "1908",
     "pdf_page": 47,
     "pdf_y": 164.6,
@@ -21707,6 +22064,7 @@
     "birth_place": "Bioska",
     "occupation": "obućarski radnik",
     "death_type": "poginuo",
+    "death_date": "11.06.1943",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon"
   },
@@ -23414,7 +23772,7 @@
     "first_name": "Desimir",
     "fathers_name": "B",
     "full_name": "Mitrović B Desimir",
-    "additional_info": "borac, zemljoradnik, rođen 1921. u Ponikovici, kod Užica, poginuo u borbi protiv Nijemaca u Staparima, kod Užica, 13. decembra",
+    "additional_info": "borac, zemljoradnik, rođen 1921. u Ponikovici, kod Užica, poginuo u borbi protiv Nijemaca u Staparima, kod Užica, 13. decembra 1941.",
     "birth_year": "1921",
     "pdf_page": 48,
     "pdf_y": 638.8,
@@ -23422,12 +23780,13 @@
     "pdf_y_end": 666.5,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000656",
+    "pdf_x_end": 485.6,
     "birth_place": "Ponikovica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 485.6,
-    "death_place": "Stapari, Užice"
+    "death_date": "13.12.1941",
+    "death_place": "Stapari, Užice",
+    "rank": "borac"
   },
   {
     "last_name": "Mitrović",
@@ -24115,7 +24474,27 @@
     "rank": "borac",
     "death_type": "streljan",
     "death_date": "11.1943",
-    "occupation": "kazandžijski radnik"
+    "occupation": "kazandžijski radnik",
+    "birth_place": "Užice",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0039100686",
+        "name": "Mladenović Miodrag",
+        "additional_info": "zvani Makso; borac 4. bataljona, rođen 1922, Užice, radnik, Srbin, u NOB od 1941, teško ranjen 18. oktobra 1943. godine kod Nove Varoši, Nemci su ga ranjenog zarobili i streljali.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 315.1,
+        "pdf_y": 475.5,
+        "pdf_x_end": 484.5,
+        "pdf_y_end": 538.7,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mladenović",
@@ -24503,7 +24882,7 @@
     "first_name": "Slobodanka",
     "fathers_name": "Dragomir",
     "full_name": "Nedeljković Dragomira Slobodanka",
-    "additional_info": "zvana Dana; borac - bolničarka, učenica učiteljske škole, rođena 1922. u Godoviku, kod Požege, umrla od tifusa kao referent saniteta 1. bataljona 2. proleterske brigade u bolnici u Mojkovcu 30. maja",
+    "additional_info": "zvana Dana; borac - bolničarka, učenica učiteljske škole, rođena 1922. u Godoviku, kod Požege, umrla od tifusa kao referent saniteta 1. bataljona 2. proleterske brigade u bolnici u Mojkovcu 30. maja 1944.",
     "birth_year": "1922",
     "pdf_page": 51,
     "pdf_y": 429.7,
@@ -24560,12 +24939,44 @@
         "source_page": 310,
         "role": "participant",
         "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "0039010029",
+        "name": "Nedeljković Slobodanka",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Godovik: Nedeljković Slobodanka, umrla u Poljima Kolašiiskim 30. maja 1944. posle duže bolesti",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 25,
+        "pdf_x": 206.1,
+        "pdf_y": 498.3,
+        "pdf_x_end": 473.9,
+        "pdf_y_end": 517.9,
+        "pdf_x_left": 143.0,
+        "pdf_rects": [
+          [
+            206.1,
+            498.3,
+            473.9,
+            507.3
+          ],
+          [
+            143.0,
+            508.9,
+            355.1,
+            517.9
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "birth_place": "Godovik",
     "death_type": "umro",
+    "death_date": "30.05.1944",
     "rank": "bolničarka, referent saniteta",
     "unit_detail": "1. bataljon",
+    "death_place": "u Poljima Kolašiiskim",
+    "borrowed": [
+      "death_place"
+    ],
     "birth_date": "27.04.1922"
   },
   {
@@ -25638,7 +26049,7 @@
     "first_name": "Toma",
     "fathers_name": "N",
     "full_name": "Nikolić N Toma",
-    "additional_info": "borac opančarski radnik, rođen 1909. u Ponikovici, kod Užica, zarobili ga četnici kao borca 1. čete 4. bataljona 2. proleterske brigade u Milićima, kod Vlasenice, i strijeljali na Drini, kod Bratunca, 15. marta",
+    "additional_info": "borac opančarski radnik, rođen 1909. u Ponikovici, kod Užica, zarobili ga četnici kao borca 1. čete 4. bataljona 2. proleterske brigade u Milićima, kod Vlasenice, i strijeljali na Drini, kod Bratunca, 15. marta 1942.",
     "birth_year": "1909",
     "pdf_page": 53,
     "pdf_y": 365.9,
@@ -25646,10 +26057,10 @@
     "pdf_y_end": 403.9,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000712",
+    "pdf_x_end": 464.2,
     "birth_place": "Ponikovica",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 464.2,
     "other_sources": [
       {
         "soldier_id": "9025032322",
@@ -26071,7 +26482,7 @@
     "first_name": "Jovan",
     "fathers_name": "A",
     "full_name": "Novitović A Jovan",
-    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 1922. u Dobračama, kod Arilja, uhvatili ga četnici i strijeljali u Požegi 10. januara",
+    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 1922. u Dobračama, kod Arilja, uhvatili ga četnici i strijeljali u Požegi 10. januara 1942.",
     "birth_year": "1922",
     "pdf_page": 53,
     "pdf_y": 607.4,
@@ -26079,12 +26490,13 @@
     "pdf_y_end": 635.0,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000724",
+    "pdf_x_end": 463.6,
     "birth_place": "Dobrače",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 463.6,
     "death_type": "streljan",
+    "death_date": "10.01.1942",
     "death_place": "Požega",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9017000875",
@@ -26151,7 +26563,7 @@
     "first_name": "Mladen",
     "fathers_name": "Božidar",
     "full_name": "Obradović Božidara Mladen",
-    "additional_info": "borac 2. račanske čete, zemljoradnik, rođen 1920. u Strmovu, kod Bajine Bašte, poginuo kao komandir čete 6. bataljona Užičkog NOP odreda u borbi protiv Nijemaca na Metaljki, kod Bajine bašte, decembra",
+    "additional_info": "borac 2. račanske čete, zemljoradnik, rođen 1920. u Strmovu, kod Bajine Bašte, poginuo kao komandir čete 6. bataljona Užičkog NOP odreda u borbi protiv Nijemaca na Metaljki, kod Bajine bašte, decembra 1944.",
     "birth_year": "1920",
     "pdf_page": 54,
     "pdf_y": 199.4,
@@ -26159,12 +26571,13 @@
     "pdf_y_end": 237.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000727",
+    "unit_detail": "6. bataljon",
+    "pdf_x_end": 485.5,
     "birth_place": "Strmovo",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "rank": "komandir čete",
-    "unit_detail": "6. bataljon",
-    "pdf_x_end": 485.5
+    "death_date": "12.1944",
+    "rank": "komandir čete"
   },
   {
     "last_name": "Obradović",
@@ -26779,7 +27192,7 @@
     "first_name": "Ljubomir",
     "fathers_name": "Ivan",
     "full_name": "Panić Ivana Ljubomir",
-    "additional_info": "borac Požeške čete, poštanski radnik, rođen 1910. u Sinjevcu, kod Užica, zarobili ga Nijemci i strijeljali u Požegi 29. novembra",
+    "additional_info": "borac Požeške čete, poštanski radnik, rođen 1910. u Sinjevcu, kod Užica, zarobili ga Nijemci i strijeljali u Požegi 29. novembra 1941.",
     "birth_year": "1910",
     "pdf_page": 55,
     "pdf_y": 581.6,
@@ -26787,12 +27200,13 @@
     "pdf_y_end": 609.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000739",
-    "birth_place": "Sinjevac",
-    "rank": "borac",
     "pdf_x_end": 461.3,
-    "death_type": "streljan",
-    "death_place": "Požega",
+    "birth_place": "Sinjevac",
     "occupation": "poštanski radnik",
+    "death_type": "streljan",
+    "death_date": "29.11.1941",
+    "death_place": "Požega",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9017000884",
@@ -27123,7 +27537,7 @@
     "first_name": "Vitomir",
     "fathers_name": "R",
     "full_name": "Pantović R Vitomir",
-    "additional_info": "zvani Vito Fuma; komandir užičke čete »Radoje Marić«, član KPJ, član Okružnog komiteta KPJ za okrug užički, jedan od organizatora oružanog ustanka u užičkom kraju, bravarski radnik, rođen 21. oktobra 1913. u Užicu, poginuo u borbi protiv žandara u Ponikovici, kod Užica, 12. avgusta",
+    "additional_info": "zvani Vito Fuma; komandir užičke čete »Radoje Marić«, član KPJ, član Okružnog komiteta KPJ za okrug užički, jedan od organizatora oružanog ustanka u užičkom kraju, bravarski radnik, rođen 21. oktobra 1913. u Užicu, poginuo u borbi protiv žandara u Ponikovici, kod Užica, 12. avgusta 1941.",
     "birth_year": "1913",
     "pdf_page": 56,
     "pdf_y": 278.3,
@@ -27132,11 +27546,12 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000751",
     "pdf_x_end": 483.2,
+    "party": "KPJ",
     "birth_place": "Užice",
     "occupation": "bravarski radnik",
     "death_type": "poginuo",
+    "death_date": "12.08.1941",
     "death_place": "Ponikovica, Užice",
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "9025032697",
@@ -27149,10 +27564,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1941"
+    ]
   },
   {
     "last_name": "Pantović",
@@ -27219,7 +27632,7 @@
     "first_name": "Milomir",
     "fathers_name": "S",
     "full_name": "Parezanović S Milomir",
-    "additional_info": "zvani Mile; borac, vozač - šofer, rođen 1916. u Banjici, kod Čačka, poginuo u borbi protiv četnika u Karanu, kod Užica, 2. novembra",
+    "additional_info": "zvani Mile; borac, vozač - šofer, rođen 1916. u Banjici, kod Čačka, poginuo u borbi protiv četnika u Karanu, kod Užica, 2. novembra 1941.",
     "birth_year": "1916",
     "pdf_page": 56,
     "pdf_y": 537.7,
@@ -27230,8 +27643,9 @@
     "pdf_x_end": 482.9,
     "birth_place": "Banjica",
     "death_type": "poginuo",
-    "rank": "borac",
-    "death_place": "Karan, Užice"
+    "death_date": "02.11.1941",
+    "death_place": "Karan, Užice",
+    "rank": "borac"
   },
   {
     "last_name": "Paunović",
@@ -27751,7 +28165,7 @@
     "first_name": "Stanko",
     "fathers_name": "Gliša",
     "full_name": "Pavlović Gliša Stanko",
-    "additional_info": "borac 2. požeške čete, zemljoradnik, rođen 1907. u Gorobilju, kod Požege, zarobljen, strijeljali ga Nijemci u Požegi 13. decembra",
+    "additional_info": "borac 2. požeške čete, zemljoradnik, rođen 1907. u Gorobilju, kod Požege, zarobljen, strijeljali ga Nijemci u Požegi 13. decembra 1941.",
     "birth_year": "1907",
     "pdf_page": 55,
     "pdf_y": 406.2,
@@ -27759,11 +28173,7 @@
     "pdf_y_end": 433.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000769",
-    "birth_place": "Gorobilje",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "pdf_x_end": 460.4,
-    "unit_detail": "2. požeška četa",
     "other_sources": [
       {
         "soldier_id": "0026010365",
@@ -27805,8 +28215,13 @@
         "ref_book": "pozega-pali"
       }
     ],
+    "birth_place": "Gorobilje",
+    "occupation": "zemljoradnik",
     "death_type": "streljan",
+    "death_date": "13.12.1941",
     "death_place": "Požega",
+    "rank": "borac",
+    "unit_detail": "2. požeška četa",
     "birth_date": "23.03.1907"
   },
   {
@@ -28229,7 +28644,7 @@
     "first_name": "Dobrila",
     "fathers_name": "V",
     "full_name": "Petronijević V Dobrila",
-    "additional_info": "komandir dobrovoljnih bolničarki partizanske bolnice, član KPJ, učiteljica-student prava, rođena 15. februara 1921. u Užicu, zarobljena u borbi protiv Nijemaca kod Višegrada i dotjerana u zatvor u Užice, gdje je mučena i zlostavljana; otrovala se u zatvoru u Užicu 12. decembra",
+    "additional_info": "komandir dobrovoljnih bolničarki partizanske bolnice, član KPJ, učiteljica-student prava, rođena 15. februara 1921. u Užicu, zarobljena u borbi protiv Nijemaca kod Višegrada i dotjerana u zatvor u Užice, gdje je mučena i zlostavljana; otrovala se u zatvoru u Užicu 12. decembra 1941.",
     "birth_year": "1921",
     "pdf_page": 58,
     "pdf_y": 555.5,
@@ -28237,9 +28652,9 @@
     "pdf_y_end": 603.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000782",
-    "birth_place": "Užice",
     "pdf_x_end": 484.4,
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Užice"
   },
   {
     "last_name": "Petronijević",
@@ -28363,7 +28778,7 @@
     "first_name": "Boleslav",
     "fathers_name": "",
     "full_name": "Petrović Boleslav",
-    "additional_info": "borac Slovenačke čete »Ivan Cankar«, učitel. iz Maribora, nestao u borbi protiv Nijemaca na Beloj Zemlji, kod Užica, 29. novembra",
+    "additional_info": "borac Slovenačke čete »Ivan Cankar«, učitel. iz Maribora, nestao u borbi protiv Nijemaca na Beloj Zemlji, kod Užica, 29. novembra 1941.",
     "birth_year": "",
     "pdf_page": 58,
     "pdf_y": 481.8,
@@ -28371,10 +28786,11 @@
     "pdf_y_end": 509.5,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000785",
-    "death_type": "nestao",
-    "rank": "borac",
     "pdf_x_end": 483.5,
-    "death_place": "Bela Zemlja, Užice"
+    "death_type": "nestao",
+    "death_date": "29.11.1941",
+    "death_place": "Bela Zemlja, Užice",
+    "rank": "borac"
   },
   {
     "last_name": "Petrović",
@@ -29134,7 +29550,7 @@
     "first_name": "Bogdan",
     "fathers_name": "Milivoje",
     "full_name": "Pešić Milivoja Bogdan",
-    "additional_info": "borac Račanskog bataljona, član KPJ, učitelj, rođen 1906. u Beranama (sada Ivangrad), u Crnoj Gori, a živio u Okletcu, kod Bajine Bašte, zarobljen kod Aranđelovca; strijeljali ga Nijemci u Kragujevcu marta",
+    "additional_info": "borac Račanskog bataljona, član KPJ, učitelj, rođen 1906. u Beranama (sada Ivangrad), u Crnoj Gori, a živio u Okletcu, kod Bajine Bašte, zarobljen kod Aranđelovca; strijeljali ga Nijemci u Kragujevcu marta 1942.",
     "birth_year": "1906",
     "pdf_page": 59,
     "pdf_y": 132.1,
@@ -29142,13 +29558,14 @@
     "pdf_y_end": 170.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000804",
+    "pdf_x_end": 464.3,
+    "party": "KPJ",
     "birth_place": "Berane (sada Ivangrad)",
     "occupation": "učitelj",
-    "rank": "borac",
-    "pdf_x_end": 464.3,
     "death_type": "streljan",
+    "death_date": "03.1942",
     "death_place": "Kragujevac",
-    "party": "KPJ"
+    "rank": "borac"
   },
   {
     "last_name": "Pilčević",
@@ -29517,7 +29934,7 @@
     "first_name": "Luka",
     "fathers_name": "Mladen",
     "full_name": "Popović Mladena Luka",
-    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1919. u Sveštici, kod Ivanjice, poginuo kao borac-puškomitraljezac 3. čete 1. batalJOna 2. proleterske brigade u borbi protiv ustaša u Kruščici, kod Bugojna, jula",
+    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1919. u Sveštici, kod Ivanjice, poginuo kao borac-puškomitraljezac 3. čete 1. batalJOna 2. proleterske brigade u borbi protiv ustaša u Kruščici, kod Bugojna, jula 1942.",
     "birth_year": "1919",
     "pdf_page": 59,
     "pdf_y": 592.4,
@@ -29525,12 +29942,13 @@
     "pdf_y_end": 630.6,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000817",
+    "rank": "borac",
+    "pdf_x_end": 464.9,
     "birth_place": "Sveštica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "rank": "borac",
+    "death_date": "07.1942",
     "unit_detail": "3. četa, 1. bataljon",
-    "pdf_x_end": 464.9,
     "other_sources": [
       {
         "soldier_id": "9006000058",
@@ -29556,11 +29974,9 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1942",
     "death_place": "Krušica-bigojno"
   },
   {
@@ -29665,7 +30081,89 @@
     "death_date": "04.12.1943",
     "rank": "stariji vodnik",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 486.6
+    "pdf_x_end": 486.6,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prijepolje",
+    "other_sources": [
+      {
+        "soldier_id": "0039000662",
+        "name": "Popović Lj Milovan",
+        "additional_info": "poginuo 4. decembra 1943, Prijepolje (nepoznato mesto pogibije); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 453.5,
+        "pdf_y": 960.1,
+        "pdf_x_end": 514.8,
+        "pdf_y_end": 980.9,
+        "pdf_x_left": 337.0,
+        "pdf_rects": [
+          [
+            453.5,
+            960.1,
+            514.8,
+            969.8
+          ],
+          [
+            337.0,
+            971.2,
+            364.5,
+            980.9
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039100823",
+        "name": "Popović Milovan",
+        "additional_info": "borac 1. čete 1. bataljona, rođen 1916, Zlakusi, Užice, zemljoradnik, Srbin, u NOB od 1941, poginuo kod Prijepolja 4. decembra 1943.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 126.5,
+        "pdf_y": 270.4,
+        "pdf_x_end": 295.8,
+        "pdf_y_end": 312.0,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039010038",
+        "name": "Popović Milovan",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, borci sa drugih teritorija: Popović Milovan, iz Zlakuse, poginuo 14. decembra 1943. godine kod Prijepolja",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 27,
+        "pdf_x": 201.9,
+        "pdf_y": 569.9,
+        "pdf_x_end": 480.0,
+        "pdf_y_end": 589.5,
+        "pdf_x_left": 147.6,
+        "pdf_rects": [
+          [
+            201.9,
+            569.9,
+            480.0,
+            578.9
+          ],
+          [
+            147.6,
+            580.5,
+            288.3,
+            589.5
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "14.12.1943",
+          "place": "Prijepolje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Popović",
@@ -30155,6 +30653,20 @@
     "rank": "borac",
     "pdf_x_end": 462.1,
     "death_place": "Draglica, Zlatibor",
+    "other_sources": [
+      {
+        "soldier_id": "9025032282",
+        "name": "Puzović (Nn) Milivoje",
+        "additional_info": "rođen (godina nepoznata), Kačer (Titovo Užice). Srbin, ubijen 1941. u NOBu, Dragmira",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1219",
+        "source_page": 1219,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "08.05.1898"
   },
   {
@@ -30436,7 +30948,7 @@
     "first_name": "Dragojle",
     "fathers_name": "M",
     "full_name": "Radojević M Dragojle",
-    "additional_info": "borac Ariljskog bataljona, radnik, rođen 1908. u Severovu, kod Arilja, uhvatili ga četnici i strijeljali u Grivskoj, kod Arilja, 9. jula",
+    "additional_info": "borac Ariljskog bataljona, radnik, rođen 1908. u Severovu, kod Arilja, uhvatili ga četnici i strijeljali u Grivskoj, kod Arilja, 9. jula 1944.",
     "birth_year": "1908",
     "pdf_page": 61,
     "pdf_y": 500.1,
@@ -30444,12 +30956,13 @@
     "pdf_y_end": 527.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000847",
+    "pdf_x_end": 462.1,
     "birth_place": "Severovo",
     "occupation": "radnik",
-    "rank": "borac",
-    "pdf_x_end": 462.1,
     "death_type": "streljan",
-    "death_place": "Grivska, Arilje"
+    "death_date": "09.07.1944",
+    "death_place": "Grivska, Arilje",
+    "rank": "borac"
   },
   {
     "last_name": "Radojević",
@@ -30712,7 +31225,25 @@
     "death_date": "08.1944",
     "death_place": "Prokuplje",
     "pdf_x_end": 471.2,
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0039100869",
+        "name": "Radosavljević Mile",
+        "additional_info": "zvani Abaz; borac 4. bataljona, rođen u Čačku, radnik, Srbin, u NOB od 1941, član KPJ, poginuo kod Kuršumlijske Banje avgusta 1944. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 53,
+        "pdf_x": 130.7,
+        "pdf_y": 630.6,
+        "pdf_x_end": 300.4,
+        "pdf_y_end": 683.0,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Radosavljević",
@@ -31433,7 +31964,7 @@
     "first_name": "Obren",
     "fathers_name": "Milivoje",
     "full_name": "Radović Milivoja Obren",
-    "additional_info": "borac 1. požeške čete, zemljoradnik, rođen 1914. u Rečicama, kod Požege, poginuo u borbi protiv četnika kod Požege 3. novembra",
+    "additional_info": "borac 1. požeške čete, zemljoradnik, rođen 1914. u Rečicama, kod Požege, poginuo u borbi protiv četnika kod Požege 3. novembra 1941.",
     "birth_year": "1914",
     "pdf_page": 62,
     "pdf_y": 577.4,
@@ -31441,12 +31972,7 @@
     "pdf_y_end": 605.1,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000872",
-    "birth_place": "Rečice",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "borac",
     "pdf_x_end": 482.5,
-    "unit_detail": "1. požeška četa",
     "other_sources": [
       {
         "soldier_id": "0026010393",
@@ -31499,7 +32025,13 @@
         "ref_book": "pozega-pali"
       }
     ],
+    "birth_place": "Rečice",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "03.11.1941",
     "death_place": "Požega",
+    "rank": "borac",
+    "unit_detail": "1. požeška četa",
     "birth_date": "01.10.1914"
   },
   {
@@ -32002,7 +32534,7 @@
     "first_name": "Pavle",
     "fathers_name": "Svetislav",
     "full_name": "Ratković Svetislava Pavle",
-    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1925. u Deretinu, kod Ivanjice, poginuo kao kurir štaba 2. proleterske brigade u borbi protiv Nijemaca u Racinama, na Manjači, kod Mrkonjić-Grada, 3. oktobra",
+    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1925. u Deretinu, kod Ivanjice, poginuo kao kurir štaba 2. proleterske brigade u borbi protiv Nijemaca u Racinama, na Manjači, kod Mrkonjić-Grada, 3. oktobra 1942.",
     "birth_year": "1925",
     "pdf_page": 64,
     "pdf_y": 225.3,
@@ -32010,11 +32542,12 @@
     "pdf_y_end": 263.3,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000888",
+    "pdf_x_end": 491.4,
     "birth_place": "Deretin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "rank": "kurir",
-    "pdf_x_end": 491.4
+    "death_date": "03.10.1942",
+    "rank": "kurir"
   },
   {
     "last_name": "Rađenović",
@@ -32377,7 +32910,7 @@
     "first_name": "Vladimir",
     "fathers_name": "Toma",
     "full_name": "Ristović Tome Vladimir",
-    "additional_info": "borac Požeške čete, zemljoradnik, rođen 1923. u Godoviku, kod Požege, poginuo u borbi protiv Nijemaca kod Požege, 29. novembra",
+    "additional_info": "borac Požeške čete, zemljoradnik, rođen 1923. u Godoviku, kod Požege, poginuo u borbi protiv Nijemaca kod Požege, 29. novembra 1941,",
     "birth_year": "1923",
     "pdf_page": 64,
     "pdf_y": 438.2,
@@ -32385,10 +32918,6 @@
     "pdf_y_end": 465.9,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000901",
-    "birth_place": "Godovik",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "borac",
     "pdf_x_end": 490.9,
     "other_sources": [
       {
@@ -32417,7 +32946,12 @@
       }
     ],
     "unit_detail": "1. požeška četa",
+    "birth_place": "Godovik",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "29.11.1941",
     "death_place": "Požega",
+    "rank": "borac",
     "birth_date": "20.05.1923"
   },
   {
@@ -32651,7 +33185,7 @@
     "first_name": "Dragomir",
     "fathers_name": "Jovića",
     "full_name": "Sarić Jovića Dragomir",
-    "additional_info": "borac Požeške čete, zemljoradnik, rođen 1906. u Gorobilju, kod Požege, zarobili ga Nnjemci i strijeljali na Zlatiboru, decembra",
+    "additional_info": "borac Požeške čete, zemljoradnik, rođen 1906. u Gorobilju, kod Požege, zarobili ga Nnjemci i strijeljali na Zlatiboru, decembra 1941.",
     "birth_year": "1906",
     "pdf_page": 66,
     "pdf_y": 198.9,
@@ -32659,9 +33193,6 @@
     "pdf_y_end": 226.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000908",
-    "birth_place": "Gorobilje",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "pdf_x_end": 489.2,
     "other_sources": [
       {
@@ -32690,8 +33221,12 @@
       }
     ],
     "unit_detail": "1. požeška četa",
+    "birth_place": "Gorobilje",
+    "occupation": "zemljoradnik",
     "death_type": "streljan",
+    "death_date": "12.1941",
     "death_place": "Zlatibor",
+    "rank": "borac",
     "birth_date": "02.09.1906"
   },
   {
@@ -32849,6 +33384,32 @@
     "death_place": "Kruščica, Arilje",
     "other_sources": [
       {
+        "soldier_id": "0026010411",
+        "name": "Savić Dragoljub",
+        "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Milićevo Selo: Savić (Jovan) Dragoljub",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 2,
+        "pdf_x": 333.1,
+        "pdf_y": 442.4,
+        "pdf_x_end": 438.5,
+        "pdf_y_end": 462.4,
+        "pdf_x_left": 106.3,
+        "pdf_rects": [
+          [
+            333.1,
+            442.4,
+            438.5,
+            451.4
+          ],
+          [
+            106.3,
+            453.4,
+            125.8,
+            462.4
+          ]
+        ]
+      },
+      {
         "soldier_id": "9017000634",
         "name": "Savić Jovana Dragoljub — Ljubo",
         "additional_info": "rođen u Milićevom Selu, 15. maja 1894. godine, borac 1. požeške partizanske čete, uhvatili ga četnici i streljali u Kruščici, 21. decembra 1941.",
@@ -32949,7 +33510,7 @@
     "first_name": "Boško",
     "fathers_name": "V",
     "full_name": "Savović V Boško",
-    "additional_info": "borac Ariljske čete, zemljoradnik, rođen 15. decembra 1913. u Radobuđi, kod Arilja, poginuo kao borac protiv žandara u Arilju 22. avgusta",
+    "additional_info": "borac Ariljske čete, zemljoradnik, rođen 15. decembra 1913. u Radobuđi, kod Arilja, poginuo kao borac protiv žandara u Arilju 22. avgusta 1941.",
     "birth_year": "1913",
     "pdf_page": 65,
     "pdf_y": 495.2,
@@ -32957,11 +33518,12 @@
     "pdf_y_end": 522.9,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000916",
+    "pdf_x_end": 466.6,
     "birth_place": "Radobuđa",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_date": "22.08.1941",
     "rank": "borac",
-    "pdf_x_end": 466.6,
     "birth_date": "15.12.1913"
   },
   {
@@ -35996,7 +36558,29 @@
     "death_type": "poginuo",
     "death_date": "21.10.1943",
     "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon"
+    "unit_detail": "2. četa, 4. bataljon",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Ustibar, Priboj",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0039100993",
+        "name": "Stojanović D Milan",
+        "additional_info": "zvani Likota; borac 2. čete 4. bataljona, rođen 1924, Užice, radnik, Srbin, u NOB od 1941, član KPJ, poginuo u Ustibaru, kod Priboja, 21. oktobra 1943. kao komandir voda.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 100.1,
+        "pdf_y": 436.0,
+        "pdf_x_end": 270.8,
+        "pdf_y_end": 488.4,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -36747,7 +37331,7 @@
     "first_name": "Mile",
     "fathers_name": "",
     "full_name": "Gavrilović Mile",
-    "additional_info": "borac Požeške čete, radnik, rođen 1914. u Virovu, kod Arilja, a živio u Čačku, poginuo kao borac 1. čete 1. bataljona 2. proleterske brigade u borbi protiv ustaša na Velikim Vratima, kod Kupresa, 11. avgusta",
+    "additional_info": "borac Požeške čete, radnik, rođen 1914. u Virovu, kod Arilja, a živio u Čačku, poginuo kao borac 1. čete 1. bataljona 2. proleterske brigade u borbi protiv ustaša na Velikim Vratima, kod Kupresa, 11. avgusta 1942.",
     "birth_year": "1914",
     "pdf_page": 12,
     "pdf_y": 591.8,
@@ -36755,12 +37339,13 @@
     "pdf_y_end": 631.2,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001021",
+    "pdf_x_end": 484.7,
     "birth_place": "Virovo",
     "occupation": "radnik",
     "death_type": "poginuo",
+    "death_date": "11.08.1942",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 484.7,
     "other_sources": [
       {
         "soldier_id": "9006000047",
@@ -36774,7 +37359,44 @@
         "pdf_y_end": 259.7,
         "pdf_x_left": 51.1,
         "ref_book": "ofanziva-1942-poginuli"
+      },
+      {
+        "soldier_id": "0039010009",
+        "name": "Gavrilović Mile",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, borci sa drugih teritorija: Gavrilović Mile, iz Virova kod Arilja, poginuo na Malim vratima kod Kupresa 11. avgusta 1942. godine",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 27,
+        "pdf_x": 286.8,
+        "pdf_y": 506.1,
+        "pdf_x_end": 480.1,
+        "pdf_y_end": 536.4,
+        "pdf_x_left": 146.7,
+        "pdf_rects": [
+          [
+            286.8,
+            506.1,
+            479.8,
+            515.1
+          ],
+          [
+            146.7,
+            516.6,
+            480.1,
+            525.6
+          ],
+          [
+            146.9,
+            527.4,
+            170.3,
+            536.4
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
       }
+    ],
+    "death_place": "na Malim vratima kod Kupresa",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -37316,14 +37938,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=41",
         "source_page": 41,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0039101032",
+        "name": "Tešović I Periša",
+        "additional_info": "borac 2. čete 1. bataljona, rođen 1924, Radoševo, Arilje, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a, poginuo kod Prijepolja 4. decembra 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 130.3,
+        "pdf_y": 655.0,
+        "pdf_x_end": 300.4,
+        "pdf_y_end": 707.4,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "party"
     ],
-    "death_place": "Bosna"
+    "death_place": "Prijepolje",
+    "party": "SKOJ"
   },
   {
     "last_name": "Tešović",
@@ -37620,7 +38256,7 @@
     "first_name": "Todor",
     "fathers_name": "M",
     "full_name": "Todorović M Todor",
-    "additional_info": "zvani Mešti; borac Ariljskog bataljona, radnik, rođen 1912. u Stupčevićima, kod Arilja, poginuo kao borac intendanture 2. proleterske brigade u borbi protiv Nijemaca u O.uazićima, na Ozrenu, u istočnoj Bosni, 7. jula",
+    "additional_info": "zvani Mešti; borac Ariljskog bataljona, radnik, rođen 1912. u Stupčevićima, kod Arilja, poginuo kao borac intendanture 2. proleterske brigade u borbi protiv Nijemaca u O.uazićima, na Ozrenu, u istočnoj Bosni, 7. jula 1943.",
     "birth_year": "1912",
     "pdf_page": 73,
     "pdf_y": 487.3,
@@ -37629,11 +38265,6 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001045",
     "pdf_x_end": 472.6,
-    "birth_place": "Stupčevići",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "unit_detail": "intendantura",
     "other_sources": [
       {
         "soldier_id": "9025001631",
@@ -37642,16 +38273,64 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=43",
         "source_page": 43,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0039000804",
+        "name": "Todorović M Todor",
+        "additional_info": "zvani Mepggi; poginuo 7. jula 1943, Omazići (zaselak Beširovići, blizu Živinica); Istočna Bosna (24. jun — 31. avgust 1943)",
+        "pdf_file": "druga-proleterska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 616.8,
+        "pdf_y": 615.8,
+        "pdf_x_end": 701.4,
+        "pdf_y_end": 636.0,
+        "pdf_x_left": 524.2,
+        "pdf_rects": [
+          [
+            616.8,
+            615.8,
+            701.4,
+            625.5
+          ],
+          [
+            524.2,
+            626.3,
+            558.6,
+            636.0
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0039101044",
+        "name": "Todorović Todor",
+        "additional_info": "zvani Mesu.; borac u intendanturi brigade, rođen 1917, Stupčevići, Arilje, radnik, Srbin, u NOB od 1941, poginuo u Omazićima, kod luzle, 7. jula 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 313.4,
+        "pdf_y": 657.0,
+        "pdf_x_end": 484.3,
+        "pdf_y_end": 709.4,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
+    "birth_place": "Stupčevići",
+    "occupation": "radnik",
+    "death_type": "poginuo",
+    "death_date": "07.07.1943",
+    "rank": "borac",
+    "unit_detail": "intendantura",
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1943",
-    "death_place": "Omazić, Bosna"
+    "death_place": "Omazići",
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Todorović",
@@ -39261,7 +39940,7 @@
     "first_name": "Dragoljub",
     "fathers_name": "G",
     "full_name": "Vasiljević G Dragoljub",
-    "additional_info": "zvani Patak; borac, Ariljskog bataljona, ugostiteljski radnik, rođen 1925. u Arilju, poginuo kao borac 2. čete 1. bataljona 2. proleterske brigade u borbi protiv Talijana i četnika u Kruščici, kod Foče, 10. aprila",
+    "additional_info": "zvani Patak; borac, Ariljskog bataljona, ugostiteljski radnik, rođen 1925. u Arilju, poginuo kao borac 2. čete 1. bataljona 2. proleterske brigade u borbi protiv Talijana i četnika u Kruščici, kod Foče, 10. aprila 1943.",
     "birth_year": "1925",
     "pdf_page": 7,
     "pdf_y": 541.5,
@@ -39273,6 +39952,7 @@
     "birth_place": "Arilje",
     "occupation": "ugostiteljski radnik",
     "death_type": "poginuo",
+    "death_date": "10.04.1943",
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon"
   },
@@ -39864,7 +40544,7 @@
     "first_name": "Trifun",
     "fathers_name": "Gvozden",
     "full_name": "Đenić Gvozdena Trifun",
-    "additional_info": "komandir voda u Železničkoj četi Radničkog bataljona, graver, rođen 25. aprila 1903. u Tvrdićima, kod Požege, ranjen u borbi protiv četnika u Karanu i od zadobijenih rana umro u bolnici u Užicu 4. novembra",
+    "additional_info": "komandir voda u Železničkoj četi Radničkog bataljona, graver, rođen 25. aprila 1903. u Tvrdićima, kod Požege, ranjen u borbi protiv četnika u Karanu i od zadobijenih rana umro u bolnici u Užicu 4. novembra 1941.",
     "birth_year": "1903",
     "pdf_page": 19,
     "pdf_y": 162.9,
@@ -39872,11 +40552,12 @@
     "pdf_y_end": 200.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001109",
+    "pdf_x_end": 462.1,
     "birth_place": "Tvrdići",
     "death_type": "umro",
-    "rank": "komandir voda",
-    "pdf_x_end": 462.1,
-    "death_place": "Užice"
+    "death_date": "04.11.1941",
+    "death_place": "Užice",
+    "rank": "komandir voda"
   },
   {
     "last_name": "Đerić",
@@ -40218,7 +40899,7 @@
     "first_name": "Miladin",
     "fathers_name": "",
     "full_name": "Vidaković Miladin",
-    "additional_info": "borac Moravičke čete, član SKOJ-a, radnik, rođen 1922. u okolini Višegrada, poginuo u borbi protiv balista kod Sjenice, 22. decembra",
+    "additional_info": "borac Moravičke čete, član SKOJ-a, radnik, rođen 1922. u okolini Višegrada, poginuo u borbi protiv balista kod Sjenice, 22. decembra 1941.",
     "birth_year": "1922",
     "pdf_page": 9,
     "pdf_y": 301.3,
@@ -40226,12 +40907,13 @@
     "pdf_y_end": 329.0,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001118",
+    "pdf_x_end": 471.4,
+    "party": "SKOJ",
     "occupation": "radnik",
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 471.4,
+    "death_date": "22.12.1941",
     "death_place": "Sjenica",
-    "party": "SKOJ"
+    "rank": "borac"
   },
   {
     "last_name": "Vidić-Drndarević",
@@ -42970,7 +43652,7 @@
     "first_name": "Ljubinko",
     "fathers_name": "M",
     "full_name": "Ćirković M Ljubinko",
-    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 5. februara 1905. u Pogledi, kod Arilja, poginuo u borbi protiv četnika 18. oktobra",
+    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 5. februara 1905. u Pogledi, kod Arilja, poginuo u borbi protiv četnika 18. oktobra 1941.",
     "birth_year": "1905",
     "pdf_page": 76,
     "pdf_y": 259.0,
@@ -42978,11 +43660,12 @@
     "pdf_y_end": 286.7,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001193",
+    "pdf_x_end": 481.6,
     "birth_place": "Pogledi",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_date": "18.10.1941",
     "rank": "borac",
-    "pdf_x_end": 481.6,
     "other_sources": [
       {
         "soldier_id": "9025001603",
@@ -42995,11 +43678,9 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1941",
     "death_place": "Vigošte",
     "birth_date": "05.02.1905"
   },
@@ -43409,7 +44090,7 @@
     "first_name": "Dragan",
     "fathers_name": "B",
     "full_name": "Čolić B Dragan",
-    "additional_info": "borac, željezničar, rođen 1905. u Potpeću, kod Užica, ranjen u borbi, zarobili ga Nijemci i kao ranjenika ubili na Palisadu 30. novembra",
+    "additional_info": "borac, željezničar, rođen 1905. u Potpeću, kod Užica, ranjen u borbi, zarobili ga Nijemci i kao ranjenika ubili na Palisadu 30. novembra 1941.",
     "birth_year": "1905",
     "pdf_page": 78,
     "pdf_y": 387.3,
@@ -43418,9 +44099,9 @@
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001206",
     "birth_place": "Potpeće",
+    "pdf_x_end": 486.1,
     "occupation": "željezničar",
     "rank": "borac",
-    "pdf_x_end": 486.1,
     "other_sources": [
       {
         "soldier_id": "9025032331",
@@ -44357,7 +45038,7 @@
     "first_name": "Zorko",
     "fathers_name": "R",
     "full_name": "Đokić R Zorko",
-    "additional_info": "borac 2. crnogorske čete, zemljoradnik, rođen 1920. u Pološnici, kod Kosjerića, poginuo u borbi protiv Nijemaca na Zlatiboru 30. novembra",
+    "additional_info": "borac 2. crnogorske čete, zemljoradnik, rođen 1920. u Pološnici, kod Kosjerića, poginuo u borbi protiv Nijemaca na Zlatiboru 30. novembra 1941.",
     "birth_year": "1920",
     "pdf_page": 19,
     "pdf_y": 399.5,
@@ -44365,13 +45046,14 @@
     "pdf_y_end": 427.1,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001233",
+    "pdf_x_end": 461.4,
     "birth_place": "Pološnica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_date": "30.11.1941",
+    "death_place": "Zlatibor",
     "rank": "borac",
-    "pdf_x_end": 461.4,
-    "unit_detail": "2. crnogorska četa",
-    "death_place": "Zlatibor"
+    "unit_detail": "2. crnogorska četa"
   },
   {
     "last_name": "Đokić",
@@ -45243,7 +45925,7 @@
     "first_name": "Mihailo",
     "fathers_name": "V",
     "full_name": "Ševković V Mihailo",
-    "additional_info": "borac Radničkog bataljona, kelner, rođen 1921. u Mačkatu, kod Čajetine, poginuo u borbi protiv Nijemaca na Kadinjači, 29. novembra",
+    "additional_info": "borac Radničkog bataljona, kelner, rođen 1921. u Mačkatu, kod Čajetine, poginuo u borbi protiv Nijemaca na Kadinjači, 29. novembra 1941.",
     "birth_year": "1921",
     "pdf_page": 79,
     "pdf_y": 579.5,
@@ -45251,12 +45933,13 @@
     "pdf_y_end": 607.1,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001263",
+    "pdf_x_end": 461.4,
     "birth_place": "Mačkat",
     "occupation": "kelner",
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 461.4,
-    "death_place": "Kadinjača"
+    "death_date": "29.11.1941",
+    "death_place": "Kadinjača",
+    "rank": "borac"
   },
   {
     "last_name": "Šiljković",
@@ -46589,7 +47272,6 @@
     "fathers_name": "Stojan",
     "full_name": "Diković Miloje",
     "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Rupeljevo: Diković (Stojan) Miloje",
-    "birth_year": "",
     "birth_place": "Rupeljevo",
     "unit_detail": "1. požeška četa",
     "pdf_file": "pozega-cete.pdf",
@@ -46613,7 +47295,44 @@
         566.2
       ]
     ],
-    "soldier_id": "0026010043"
+    "soldier_id": "0026010043",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "učenik",
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0001002089",
+        "name": "Diković Miloje",
+        "additional_info": "1920, Rupeljevo, Užička Požega, Srbija, Srbin, učenik, član KPJ od 1942, u NOB od 1941, u brigadi od decembra 1941, V bataljon, borac",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 168,
+        "pdf_x": 61.2,
+        "pdf_y": 64.0,
+        "pdf_x_end": 368.6,
+        "pdf_y_end": 93.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200162",
+        "name": "Diković Miloje",
+        "additional_info": "borac, rođen 1920. u Rupeljevu, Požega, SRS, učenik gimnazije.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 42,
+        "pdf_x": 276.3,
+        "pdf_y": 305.5,
+        "pdf_x_end": 584.8,
+        "pdf_y_end": 326.3,
+        "pdf_x_left": 251.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dimitrijević",
@@ -46807,7 +47526,55 @@
     "pdf_y": 284.1,
     "pdf_x_end": 308.9,
     "pdf_y_end": 293.1,
-    "soldier_id": "0026010055"
+    "soldier_id": "0026010055",
+    "other_sources": [
+      {
+        "soldier_id": "9006000046",
+        "name": "Drndarević Milomir",
+        "additional_info": "1922, Rupeljevo, kod Požege, radnik, član Skoja, poginuo kod Pazarića, 3. jula 1942.",
+        "pdf_file": "ofanziva-1942-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 76.0,
+        "pdf_y": 225.2,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 242.6,
+        "pdf_x_left": 51.1,
+        "ref_book": "ofanziva-1942-poginuli"
+      },
+      {
+        "soldier_id": "0039010006",
+        "name": "Drndarević Milomir",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Rupeljevo: Drndarević — Vidić Milomir, poginuo 6. jula 1942. godine na Okretaljci, padine Bjelašnice",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 27,
+        "pdf_x": 173.6,
+        "pdf_y": 237.3,
+        "pdf_x_end": 479.8,
+        "pdf_y_end": 257.1,
+        "pdf_x_left": 147.2,
+        "pdf_rects": [
+          [
+            173.6,
+            237.3,
+            479.8,
+            246.3
+          ],
+          [
+            147.2,
+            248.1,
+            317.6,
+            257.1
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_type"
+    ],
+    "death_date": "06.07.1942"
   },
   {
     "last_name": "Drndarević",
@@ -47682,7 +48449,23 @@
     "pdf_y": 460.6,
     "pdf_x_end": 217.8,
     "pdf_y_end": 469.6,
-    "soldier_id": "0026010111"
+    "soldier_id": "0026010111",
+    "other_sources": [
+      {
+        "soldier_id": "9017000152",
+        "name": "Ješić Stevana Milutin",
+        "additional_info": "rođen u Godoviku, 29. marta 1897. godine, opštinski delovođa, član mesnog NOO-a u Godoviku, uhvatili ga četnici i oterali u Kruščicu, gde su ga streljali, 21. decembra 1941.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 21,
+        "pdf_x": 51.9,
+        "pdf_y": 425.2,
+        "pdf_x_end": 356.8,
+        "pdf_y_end": 465.8,
+        "pdf_x_left": 25.7,
+        "role": "activist",
+        "ref_book": "pozega-pali"
+      }
+    ]
   },
   {
     "last_name": "Jokić",
@@ -47720,12 +48503,10 @@
   {
     "last_name": "Joković",
     "first_name": "Dragomir",
-    "middle_name": "",
+    "middle_name": "Jovana",
     "fathers_name": "Jovan",
-    "full_name": "Joković Dragomir",
+    "full_name": "Joković Jovana Dragomir",
     "additional_info": "Spisak boraca 2. požeške čete od 22. septembra 1941. do 1. marta 1942. godine, borci sa drugih teritorija: Joković (Jovan) Dragomir",
-    "birth_year": "",
-    "birth_place": "",
     "unit_detail": "2. požeška četa",
     "pdf_file": "pozega-cete.pdf",
     "pdf_page": 7,
@@ -47733,7 +48514,32 @@
     "pdf_y": 678.9,
     "pdf_x_end": 401.4,
     "pdf_y_end": 687.9,
-    "soldier_id": "0026010115"
+    "soldier_id": "0026010115",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Krstac",
+    "occupation": "zemljoradnik",
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0126000290",
+        "name": "Joković Jovana Dragomir",
+        "additional_info": "zemljoradnik, rođen 1923. u Krstacu; član SKOJ-a; borac Dragačevskog bataljona; zarobili ga četnici i predali Nemcima; oteran u Banjički logor, pa u Norvešku, gde je stradao 19. aprila 1943.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 9,
+        "pdf_x": 74.9,
+        "pdf_y": 172.0,
+        "pdf_x_end": 409.5,
+        "pdf_y_end": 198.0,
+        "pdf_x_left": 49.6,
+        "unit_file": "cacanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Joković",
@@ -48726,7 +49532,6 @@
     "fathers_name": "",
     "full_name": "Laković Stanka",
     "additional_info": "Spisak boraca 2. požeške čete od 22. septembra 1941. do 1. marta 1942. godine, borci sa drugih teritorija: Laković Stanka iz Titovog Užica",
-    "birth_year": "",
     "birth_place": "Titovog Užica",
     "unit_detail": "2. požeška četa",
     "pdf_file": "pozega-cete.pdf",
@@ -48750,7 +49555,31 @@
         581.6
       ]
     ],
-    "soldier_id": "0026010171"
+    "soldier_id": "0026010171",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Srpkinja",
+    "occupation": "radnica",
+    "party": "SKOJ 1941, KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0039100516",
+        "name": "Laković Stanka",
+        "additional_info": "bolničarka 2. čete 4. bataljona, rođena 1919, Užice, radnica, Srpkinja, u NOB od 1941, član SKOJ-a od 1941, član KPJ od 1942, krajem rata politički komesar medici nsko-sanitetskog bataljona.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 131.2,
+        "pdf_y": 638.7,
+        "pdf_x_end": 300.1,
+        "pdf_y_end": 703.1,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lapčević",
@@ -49183,7 +50012,6 @@
     "fathers_name": "Budimir",
     "full_name": "Maksimović Pantelija",
     "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Gugalj: Maksimović (Budimir) Pantelija",
-    "birth_year": "",
     "birth_place": "Gugalj",
     "unit_detail": "1. požeška četa",
     "pdf_file": "pozega-cete.pdf",
@@ -49192,7 +50020,42 @@
     "pdf_y": 247.7,
     "pdf_x_end": 286.5,
     "pdf_y_end": 256.7,
-    "soldier_id": "0026010196"
+    "soldier_id": "0026010196",
+    "other_sources": [
+      {
+        "soldier_id": "9025025606",
+        "name": "Maksimović (Budimir) Pantelija",
+        "additional_info": "rođen 1925, Gugalj (Požega). Srbin, poginuo 1943. u NOBu, Gojna gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=986",
+        "source_page": 986,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9017000332",
+        "name": "Maksimović Budimira Pantelija",
+        "additional_info": "rođen u Guglju, 23. aprila 1921. godine, zemljoradnik, borac Požeške čete, četnici ga streljali u Gojnoj Gori, 2. juna 1943. godine.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 38,
+        "pdf_x": 98.4,
+        "pdf_y": 289.9,
+        "pdf_x_end": 402.4,
+        "pdf_y_end": 320.5,
+        "pdf_x_left": 71.8,
+        "ref_book": "pozega-pali"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Gojna gora",
+    "birth_year": "1925"
   },
   {
     "last_name": "Maksimović",
@@ -49734,11 +50597,10 @@
   {
     "last_name": "Markićević",
     "first_name": "Sredoje",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Markićević Sredoje",
+    "middle_name": "Jovića",
+    "fathers_name": "Jovića",
+    "full_name": "Markićević Jovića Sredoje",
     "additional_info": "Pilatovačka četa 1941. na dan formiranja, Pilatovići: Markićević Sredoje",
-    "birth_year": "",
     "birth_place": "Pilatovići",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -49747,7 +50609,32 @@
     "pdf_y": 535.2,
     "pdf_x_end": 333.7,
     "pdf_y_end": 544.2,
-    "soldier_id": "0026010229"
+    "soldier_id": "0026010229",
+    "birth_year": "1910",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_type",
+      "party"
+    ],
+    "death_type": "streljan",
+    "death_date": "09.05.1942",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0126000531",
+        "name": "Markićević Jovića Sredoje",
+        "additional_info": "kapetan BJV; rođen 1910. u Pilatovićima; član KPJ; načelnik Štaba Čačanskog NOP odreda; uhvatili ga četnici i predali Nemcima; oteran u logor na Banjici, gde je streljan 9. maja 1942.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 10,
+        "pdf_x": 65.2,
+        "pdf_y": 113.3,
+        "pdf_x_end": 398.6,
+        "pdf_y_end": 147.9,
+        "pdf_x_left": 39.6,
+        "unit_file": "cacanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Markićević",
@@ -49774,7 +50661,6 @@
     "fathers_name": "Jović",
     "full_name": "Markićević Velimir",
     "additional_info": "Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941., Pilatovići: Markićević (Jović) Velimir",
-    "birth_year": "",
     "birth_place": "Pilatovići",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -49783,7 +50669,54 @@
     "pdf_y": 539.2,
     "pdf_x_end": 307.4,
     "pdf_y_end": 548.2,
-    "soldier_id": "0026010231"
+    "soldier_id": "0026010231",
+    "other_sources": [
+      {
+        "soldier_id": "9017000721",
+        "name": "Markićević Jovića Velimir",
+        "additional_info": "rođen u Pilatovićima, 12. februara 1914. godine, službenik, živeo u Majdanpeku, član KPJ, jedan od organizatora ustanka u tome kraju, komandir partizanske čete Svrljiškog NOP odreda, zarobljen i oteran u logor na Banjici, gde je streljan, 9. maja 1942.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 74,
+        "pdf_x": 78.9,
+        "pdf_y": 63.6,
+        "pdf_x_end": 382.9,
+        "pdf_y_end": 115.8,
+        "pdf_x_left": 51.8,
+        "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "9016000743",
+        "name": "Markićević Velimir",
+        "additional_info": "činovnik. rođen 1914. u Pilatovićima, živeo u Majdanpeku; član KPJ; borac Svrljiškog NOP odreda; uhvaćen i oteran u Banjički logor, gde je streljan 9. maja 1942.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 48,
+        "pdf_x": 84.0,
+        "pdf_y": 358.7,
+        "pdf_x_end": 409.7,
+        "pdf_y_end": 401.6,
+        "pdf_x_left": 52.3,
+        "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "0119000503",
+        "name": "Markičević Velimir",
+        "additional_info": "zvani Maks; administrator rudarske zadruge u Majdanpeku, rođen 1914. u Pilatoviću, Užička Požega. U odredu od 20. avgusta 1941. do 19. decembra 1941. kada je zarobljen i predat okupatorskim vlastima. Pobegao iz zatvora 6. januara 1942. ali je uhvaćen i streljan na Jajincima marta 1942. Bio komandir čete i komadant bataljon 1941. rez. poručnik. Narodni heroj.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=282",
+        "source_page": 270,
+        "unit_file": "pozarevacki-odred-soldiers.json"
+      }
+    ],
+    "birth_year": "1914",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "streljan",
+    "death_date": "03.1942",
+    "death_place": "Jajinci",
+    "birth_date": "12.02.1914"
   },
   {
     "last_name": "Marković",
@@ -50360,6 +51293,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=986",
         "source_page": 986,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9016000581",
+        "name": "Mijailović Milića Vojimir",
+        "additional_info": "zemljoradnik, rođen 1923- u Lopašu; borac Dragačevskog bataljona; uhvatili ga četnici i pretukli; umro od zadobijenih povreda u Lopašu 2. decembra 1942,",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 38,
+        "pdf_x": 86.7,
+        "pdf_y": 551.9,
+        "pdf_x_end": 412.6,
+        "pdf_y_end": 582.8,
+        "pdf_x_left": 54.5,
+        "ref_book": "cacanski-kraj-pali"
       }
     ],
     "ethnicity": "Srbin",
@@ -51032,11 +51978,10 @@
   {
     "last_name": "Mićić",
     "first_name": "Rade",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Mićić Rade",
+    "middle_name": "Veljka",
+    "fathers_name": "Veljko",
+    "full_name": "Mićić Veljka Rade",
     "additional_info": "Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941., Godovik: Mićić Rade",
-    "birth_year": "",
     "birth_place": "Godovik",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -51045,7 +51990,31 @@
     "pdf_y": 471.4,
     "pdf_x_end": 294.3,
     "pdf_y_end": 480.4,
-    "soldier_id": "0026010304"
+    "soldier_id": "0026010304",
+    "birth_year": "1906",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0039100610",
+        "name": "Micić Veljka Rade",
+        "additional_info": "intendant 1. bataljona, rođen 1906, Godovik, Užička Požega, zemljoradnik, Srbin, u NOB od 1941, član KPJ.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 131.6,
+        "pdf_y": 569.2,
+        "pdf_x_end": 300.8,
+        "pdf_y_end": 610.8,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mićić",
@@ -51119,11 +52088,10 @@
   {
     "last_name": "Mićić",
     "first_name": "Vidan",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Mićić Vidan",
+    "middle_name": "Gvozdena",
+    "fathers_name": "Gvozden",
+    "full_name": "Mićić Gvozdena Vidan",
     "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Godovik: Mićić Vidan",
-    "birth_year": "",
     "birth_place": "Godovik",
     "unit_detail": "1. požeška četa",
     "pdf_file": "pozega-cete.pdf",
@@ -51159,8 +52127,48 @@
             491.0
           ]
         ]
+      },
+      {
+        "soldier_id": "0039100683",
+        "name": "Mičić Gvozdena Vidan",
+        "additional_info": "zvani Čiča; ekonom 1. čete 1. bataljona, rođen 1909, Godovik, Užička Požega, radnik, Srbin, u NOB od 1941, član KPJ od juna 1941. godine, krajem rata oficir OZN-e u 31. diviziji.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 131.4,
+        "pdf_y": 613.1,
+        "pdf_x_end": 301.1,
+        "pdf_y_end": 679.7,
+        "unit_file": "druga-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0080000729",
+        "name": "Mićić Gvozdena Vidan",
+        "additional_info": "majka Gvozdenija; zvani Čiča; intendant brigade, rođen 22. 3. 1910. u Godoviku, Užička Požega, radnik, Srbin, član KPJ sd 12. 6. 1941, nosilac Partizanske spomenice od 1941, u požeškoj četi Užičkog NOP odreda od 28. 7. 1941, u 2. proleterskoj brigadi od formiranja, juna 1944. probio se u Šumadiju, stupio u brigadu i ostao u njoj do 12. 1. 1945, potom u 31. srpskoj brigadi. Živi u Užičkoj Požezi.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 59,
+        "pdf_x": 56.4,
+        "pdf_y": 352.3,
+        "pdf_x_end": 392.0,
+        "pdf_y_end": 402.3,
+        "pdf_x_left": 34.5,
+        "unit_file": "21-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "party": "KPJ 1941",
+    "variants": {
+      "born": [
+        "22.03.1910"
+      ]
+    }
   },
   {
     "last_name": "Mićić",
@@ -51341,7 +52349,23 @@
     "pdf_y": 191.6,
     "pdf_x_end": 268.2,
     "pdf_y_end": 200.6,
-    "soldier_id": "0026010325"
+    "soldier_id": "0026010325",
+    "other_sources": [
+      {
+        "soldier_id": "9017001027",
+        "name": "Nikitović Radomira Mileva",
+        "additional_info": "rođena u Rečicama, 3. decembra 1916. godine, domaćica, član SKOJ-a, radnik NOP-a, uhvatili je četnici i na zverski način zaklali na Blagaji, pa bacili u bezdan, 13. marta 1943.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 109,
+        "pdf_x": 52.1,
+        "pdf_y": 127.9,
+        "pdf_x_end": 356.2,
+        "pdf_y_end": 169.5,
+        "pdf_x_left": 25.0,
+        "role": "activist",
+        "ref_book": "pozega-pali"
+      }
+    ]
   },
   {
     "last_name": "Nikitović",
@@ -51350,7 +52374,6 @@
     "fathers_name": "Radomir",
     "full_name": "Nikitović Milivoje",
     "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Rečice: Nikitović (Radomir) Milivoje",
-    "birth_year": "",
     "birth_place": "Rečice",
     "unit_detail": "1. požeška četa",
     "pdf_file": "pozega-cete.pdf",
@@ -51371,8 +52394,30 @@
         "pdf_y": 670.7,
         "pdf_x_end": 404.4,
         "pdf_y_end": 679.7
+      },
+      {
+        "soldier_id": "0039100697",
+        "name": "Nikitović Milivoje",
+        "additional_info": "zvani Eurtula; politički komesar 1. čete 1. bataljona, rođen 1922, Rečice, Užička Požega, đak, Srbin, u NOB od 1941, član KPJ.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 100.8,
+        "pdf_y": 559.2,
+        "pdf_x_end": 270.5,
+        "pdf_y_end": 600.8,
+        "unit_file": "druga-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "đak",
+    "party": "KPJ"
   },
   {
     "last_name": "Nikitović",
@@ -51517,7 +52562,6 @@
     "fathers_name": "Ranko",
     "full_name": "Nikolić Vladimir",
     "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Požega: Nikolić (Ranko) Vladimir",
-    "birth_year": "",
     "birth_place": "Požega",
     "unit_detail": "1. požeška četa",
     "pdf_file": "pozega-cete.pdf",
@@ -51526,7 +52570,29 @@
     "pdf_y": 580.4,
     "pdf_x_end": 279.1,
     "pdf_y_end": 589.4,
-    "soldier_id": "0026010340"
+    "soldier_id": "0026010340",
+    "other_sources": [
+      {
+        "soldier_id": "9025025656",
+        "name": "Nikolić (Ranko) Vladimir",
+        "additional_info": "rođen 1908, Požega. Srbin, poginuo 1943. u NOBu, Nošur",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=989",
+        "source_page": 989,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Nošur",
+    "birth_year": "1908"
   },
   {
     "last_name": "Novaković",
@@ -52129,6 +53195,20 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=990",
         "source_page": 990,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9017000969",
+        "name": "Radojević Svetozara Dragoljub",
+        "additional_info": "rođen u Prilipcu, 30. oktobra 1900. godine, zemljoradnik, član mesnog NOO-a u Prilipcu, četnici ga na zverski način ubili u Prilipcu, 7. novembra 1942.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 102,
+        "pdf_x": 71.7,
+        "pdf_y": 294.4,
+        "pdf_x_end": 375.9,
+        "pdf_y_end": 335.6,
+        "pdf_x_left": 44.7,
+        "role": "activist",
+        "ref_book": "pozega-pali"
       }
     ],
     "ethnicity": "Srbin",
@@ -52603,39 +53683,6 @@
   },
   {
     "last_name": "Savić",
-    "first_name": "Dragoljub",
-    "middle_name": "",
-    "fathers_name": "Jovan",
-    "full_name": "Savić Dragoljub",
-    "additional_info": "Spisak boraca 1. požeške čete od 28. jula 1941. do 1. marta 1942. godine, Milićevo Selo: Savić (Jovan) Dragoljub",
-    "birth_year": "",
-    "birth_place": "Milićevo Selo",
-    "unit_detail": "1. požeška četa",
-    "pdf_file": "pozega-cete.pdf",
-    "pdf_page": 2,
-    "pdf_x": 333.1,
-    "pdf_y": 442.4,
-    "pdf_x_end": 438.5,
-    "pdf_y_end": 462.4,
-    "pdf_x_left": 106.3,
-    "pdf_rects": [
-      [
-        333.1,
-        442.4,
-        438.5,
-        451.4
-      ],
-      [
-        106.3,
-        453.4,
-        125.8,
-        462.4
-      ]
-    ],
-    "soldier_id": "0026010411"
-  },
-  {
-    "last_name": "Savić",
     "first_name": "Miloš",
     "middle_name": "",
     "fathers_name": "Pantelija",
@@ -52724,7 +53771,44 @@
         602.9
       ]
     ],
-    "soldier_id": "0026010414"
+    "soldier_id": "0026010414",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "04.12.1943",
+    "death_place": "Prijepolje",
+    "other_sources": [
+      {
+        "soldier_id": "0039010043",
+        "name": "Savičić Desimir",
+        "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, borci sa drugih teritorija: Savičić — Marinković Desimir Era, iz Alinog Potoka, poginuo 4. decembra 1943. godine kod Prijepolja",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 27,
+        "pdf_x": 194.2,
+        "pdf_y": 612.1,
+        "pdf_x_end": 479.8,
+        "pdf_y_end": 631.7,
+        "pdf_x_left": 146.9,
+        "pdf_rects": [
+          [
+            194.2,
+            612.1,
+            479.8,
+            621.1
+          ],
+          [
+            146.9,
+            622.7,
+            419.3,
+            631.7
+          ]
+        ],
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sedlić",
@@ -52856,6 +53940,20 @@
             210.9
           ]
         ]
+      },
+      {
+        "soldier_id": "9017000911",
+        "name": "Sinđelić Vidosava Miodrag",
+        "additional_info": "rođen u Požegi, 3. novembra 1923. godine, saradnik NOP-a, četnici ga streljali u Donjoj Dobrinji, 21. januara 1944.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 97,
+        "pdf_x": 52.3,
+        "pdf_y": 61.2,
+        "pdf_x_end": 357.1,
+        "pdf_y_end": 91.8,
+        "pdf_x_left": 25.7,
+        "role": "activist",
+        "ref_book": "pozega-pali"
       }
     ]
   },
@@ -53059,11 +54157,10 @@
   {
     "last_name": "Sovrović",
     "first_name": "Radomir",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Sovrović Radomir",
+    "middle_name": "Dobrosava",
+    "fathers_name": "Dobrosav",
+    "full_name": "Sovrović Dobrosava Radomir",
     "additional_info": "Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941., Zdravčići: Sovrović Radomir",
-    "birth_year": "",
     "birth_place": "Zdravčići",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -53072,7 +54169,29 @@
     "pdf_y": 246.4,
     "pdf_x_end": 375.3,
     "pdf_y_end": 255.4,
-    "soldier_id": "0026010440"
+    "soldier_id": "0026010440",
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0039100958",
+        "name": "Sovrović Dobrosava Radomir",
+        "additional_info": "borac 4. bataljona, rođen 1912, Zdravčići, Užička Požega, zemljoradnik, Srbin, u NOB od 1941. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 104.8,
+        "pdf_y": 682.8,
+        "pdf_x_end": 274.9,
+        "pdf_y_end": 702.8,
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Spasojević",
@@ -53123,7 +54242,23 @@
     "pdf_y": 299.4,
     "pdf_x_end": 293.8,
     "pdf_y_end": 308.4,
-    "soldier_id": "0026010445"
+    "soldier_id": "0026010445",
+    "other_sources": [
+      {
+        "soldier_id": "9017000950",
+        "name": "Stamatović Dobrivoja Dragoslav",
+        "additional_info": "rođen u Prijanovićima, 15. oktobra 1923. godine, zemljoradnik, saradnik NOP-a, uhvatili ga četnici, oterali u Rečice, gde su ga streljali, 6. septembra 1944.",
+        "pdf_file": "pozega-pali.pdf",
+        "pdf_page": 100,
+        "pdf_x": 79.2,
+        "pdf_y": 378.6,
+        "pdf_x_end": 383.8,
+        "pdf_y_end": 420.0,
+        "pdf_x_left": 52.3,
+        "role": "activist",
+        "ref_book": "pozega-pali"
+      }
+    ]
   },
   {
     "last_name": "Stamatović",

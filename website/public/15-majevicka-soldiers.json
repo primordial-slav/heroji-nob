@@ -2212,8 +2212,32 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=190",
         "source_page": 190,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0029000127",
+        "name": "Dragičević Mico Boško",
+        "additional_info": "rođen 1924. godine u Dragaljevcu — Bijeljina. U NOB od 1941. godine. Poginuo jula 1944. godine kod Bratunca u borbi sa ustašama.",
+        "pdf_file": "17-majevicka.pdf",
+        "pdf_page": 10,
+        "pdf_x": 152.1,
+        "pdf_y": 667.3,
+        "pdf_x_end": 464.5,
+        "pdf_y_end": 697.4,
+        "pdf_x_left": 132.7,
+        "unit_file": "17-majevicka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ],
+      "death": [
+        {
+          "date": "07.1944",
+          "place": "Bratunac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dragojević",
@@ -26080,7 +26104,7 @@
       {
         "soldier_id": "0059000700",
         "name": "Kaurinović Cvijetina Mihajlo",
-        "additional_info": "1925, Bukvik, Srbin, zemljoradnik, u NOB od 1941, u odredu od 20. 9. 1943, borac, član SKOJ-a, umro 10. 8.",
+        "additional_info": "1925, Bukvik, Srbin, zemljoradnik, u NOB od 1941, u odredu od 20. 9. 1943, borac, član SKOJ-a, umro 10. 8. 1947.",
         "pdf_file": "posavsko-trebavski-odred.pdf",
         "pdf_page": 21,
         "pdf_x": 62.2,
@@ -26539,8 +26563,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=444",
         "source_page": 444,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0024000544",
+        "name": "Kolarević S Dobrosav",
+        "additional_info": "rođen 1921, u Ritopeku, Grocka, Srbin, zemljoradnik, u NOB od decembra 1944, u brigadi od 25. 12. 1944, poginuo 1945. u istočnoj Bosni;",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 38.1,
+        "pdf_y": 406.4,
+        "pdf_x_end": 396.1,
+        "pdf_y_end": 421.8,
+        "unit_file": "2-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Kolarević",
@@ -26908,11 +26949,15 @@
     "rank": "obavještajni oficir",
     "pdf_x_end": 394.9,
     "death_type": "umro",
+    "death_date": "24.03.1944",
+    "borrowed": [
+      "death_date"
+    ],
     "other_sources": [
       {
         "soldier_id": "0060000968",
         "name": "Kovačević Marka Petar",
-        "additional_info": "1920, Latin, stupio u NOV 20. 6. 1942. borac 3. brig. 8. div, umro od tifusa 24. 3.",
+        "additional_info": "1920, Latin, stupio u NOV 20. 6. 1942. borac 3. brig. 8. div, umro od tifusa 24. 3. 1944.",
         "pdf_file": "8-kordunaska-divizija.pdf",
         "pdf_page": 42,
         "pdf_x": 287.1,
@@ -31569,7 +31614,21 @@
     "ethnicity": "Jugosloven",
     "occupation": "rudar",
     "rank": "intendant odreda",
-    "pdf_x_end": 393.9
+    "pdf_x_end": 393.9,
+    "other_sources": [
+      {
+        "soldier_id": "0025000621",
+        "name": "Mešković Redžin Ibrahim",
+        "additional_info": "zvani Brajko; politički komesar prateće čete Odreda. Tuzla.",
+        "pdf_file": "tuzlanski-odred.pdf",
+        "pdf_page": 68,
+        "pdf_x": 233.2,
+        "pdf_y": 357.3,
+        "pdf_x_end": 402.7,
+        "pdf_y_end": 387.9,
+        "unit_file": "tuzlanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Miajlovič",
@@ -34546,12 +34605,11 @@
   },
   {
     "last_name": "Milutinović",
-    "middle_name": "",
+    "middle_name": "Stanka",
     "first_name": "Niko",
-    "fathers_name": "",
-    "full_name": "Milutinović Niko",
+    "fathers_name": "Stanko",
+    "full_name": "Milutinović Stanka Niko",
     "additional_info": "Samarevac, Gradačac, SRBiH, Srbin, zemljoradnik, u NOB od 28.6.1943, u brigadi od 12.7.1943, borac. Umro poslije rata u Samarevcu.",
-    "birth_year": "",
     "pdf_page": 37,
     "pdf_y": 341.6,
     "pdf_x": 39.8,
@@ -34565,7 +34623,25 @@
     "rank": "borac",
     "pdf_x_end": 397.1,
     "death_place": "Samarevac",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_year": "1913",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0059001041",
+        "name": "Milutinović Stanka Niko",
+        "additional_info": "1913, Samarevac, Srbin, zemljoradnik, u NOB od avgusta 1943, u odredu od oktobra 1943, borac.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 63,
+        "pdf_x": 62.9,
+        "pdf_y": 179.9,
+        "pdf_x_end": 343.3,
+        "pdf_y_end": 196.0,
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milutinović",
@@ -42450,7 +42526,21 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "vodnik",
-    "pdf_x_end": 400.1
+    "pdf_x_end": 400.1,
+    "other_sources": [
+      {
+        "soldier_id": "9014008868",
+        "name": "Prokić Dragoslav",
+        "additional_info": "Poginuli borci Petnaeste majevičke narodnooslobodilačke udarne brigade: 40. Prokić Dragoslav.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 300.8,
+        "pdf_y": 437.0,
+        "pdf_x_end": 382.6,
+        "pdf_y_end": 446.5,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Prosicanović",
@@ -43312,7 +43402,36 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "vodnik",
-    "pdf_x_end": 364.9
+    "pdf_x_end": 364.9,
+    "other_sources": [
+      {
+        "soldier_id": "9014008873",
+        "name": "Radovanović Milentije",
+        "additional_info": "Poginuli borci Petnaeste majevičke narodnooslobodilačke udarne brigade: 45. Radovanović Milentije.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 553.4,
+        "pdf_y": 446.3,
+        "pdf_x_end": 594.1,
+        "pdf_y_end": 465.7,
+        "pdf_x_left": 236.0,
+        "pdf_rects": [
+          [
+            553.4,
+            446.3,
+            594.1,
+            455.8
+          ],
+          [
+            236.0,
+            456.2,
+            302.5,
+            465.7
+          ]
+        ],
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Radovanović",
@@ -47053,7 +47172,21 @@
     "birth_place": "Kragujevac",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "pdf_x_end": 368.6
+    "pdf_x_end": 368.6,
+    "other_sources": [
+      {
+        "soldier_id": "9014008877",
+        "name": "Srećković Bogoljub",
+        "additional_info": "Poginuli borci Petnaeste majevičke narodnooslobodilačke udarne brigade: 49. Srećković Bogoljub.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 278.4,
+        "pdf_y": 465.8,
+        "pdf_x_end": 365.8,
+        "pdf_y_end": 475.3,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Srećković",
@@ -50184,7 +50317,21 @@
     "soldier_id": "0049011644",
     "birth_place": "Priboj, Lopare",
     "rank": "komandir čete",
-    "pdf_x_end": 408.1
+    "pdf_x_end": 408.1,
+    "other_sources": [
+      {
+        "soldier_id": "9014008882",
+        "name": "Tomić Boško",
+        "additional_info": "Poginuli borci Petnaeste majevičke narodnooslobodilačke udarne brigade: 54. Tomić Boško.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 466.4,
+        "pdf_y": 475.6,
+        "pdf_x_end": 526.9,
+        "pdf_y_end": 485.1,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Tomić",
@@ -50633,7 +50780,31 @@
     "death_type": "poginuo",
     "death_date": "jesen 1943",
     "rank": "borac",
-    "pdf_x_end": 408.7
+    "pdf_x_end": 408.7,
+    "death_place": "Han-Pijesak",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0029000794",
+        "name": "Tripunović Đojo Branko",
+        "additional_info": "zvani Nebula; rođen 1924. godine u Glavičicama — Bijeljina. U NOB od 1943. godine. Poginuo decembra 1943. godine kod Han-Pijeska u borbi sa Nijemcima.",
+        "pdf_file": "17-majevicka.pdf",
+        "pdf_page": 56,
+        "pdf_x": 147.0,
+        "pdf_y": 438.5,
+        "pdf_x_end": 459.8,
+        "pdf_y_end": 469.1,
+        "pdf_x_left": 128.0,
+        "unit_file": "17-majevicka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Tripunović",
@@ -56718,6 +56889,26 @@
     "death_date": "1944",
     "death_place": "Sokolac",
     "rank": "borac",
-    "pdf_x_end": 402.2
+    "pdf_x_end": 402.2,
+    "other_sources": [
+      {
+        "soldier_id": "0029000897",
+        "name": "Žulj Anton Momčilo",
+        "additional_info": "rođen 1925. godine u Janji — Bijeljina. U NOB od 1943. godine. Poginuo januara 1944. godine u Šekovićima u borbi sa ustašama.",
+        "pdf_file": "17-majevicka.pdf",
+        "pdf_page": 60,
+        "pdf_x": 154.4,
+        "pdf_y": 630.7,
+        "pdf_x_end": 466.8,
+        "pdf_y_end": 660.8,
+        "pdf_x_left": 135.0,
+        "unit_file": "17-majevicka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   }
 ]

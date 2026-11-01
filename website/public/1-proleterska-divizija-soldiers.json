@@ -130,7 +130,34 @@
     "ethnicity": "Srbin",
     "occupation": "maturant gimnazije",
     "pdf_x_end": 396.6,
-    "party": "SKOJ 1941, KPJ 1942"
+    "party": "SKOJ 1941, KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0001000680",
+        "name": "Belojević Đorđije Milan",
+        "additional_info": "zvani Mačak; 1923, Titograd, Crna Gora, . Crnogorac, učenik, član SKOJ-a od 1942, član KPJ od 1942, u NOB od jula 1941, u brigadi od decembra 1941, IV bataljon, oficir",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 60,
+        "pdf_x": 64.1,
+        "pdf_y": 254.3,
+        "pdf_x_end": 377.2,
+        "pdf_y_end": 296.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200058",
+        "name": "Belojević Milan",
+        "additional_info": "zvani Mačak; borac, rođen 1923. u Titogradu, SRCG, maturant gimnazije, član SKOJ-a od 1940.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 34,
+        "pdf_x": 277.1,
+        "pdf_y": 590.7,
+        "pdf_x_end": 586.1,
+        "pdf_y_end": 611.5,
+        "pdf_x_left": 253.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bojović",
@@ -1765,7 +1792,29 @@
     "rank": "borac",
     "pdf_x_end": 217.0,
     "pdf_y_end": 371.2,
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0001004871",
+        "name": "Kadijević Mije Mirko",
+        "additional_info": "1911, Kremna, Metković, Hrvatska, Srbin, zemljoradnik, član SKOJ-a od 1942, član KPJ od 1943, u NOB od 1942, u brigadi od avgusta 1942, I bataljon, borac, poginuo 08. 06. 1943, na Sutjesci",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 67,
+        "pdf_x": 46.5,
+        "pdf_y": 245.1,
+        "pdf_x_end": 354.0,
+        "pdf_y_end": 285.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.06.1943",
+          "place": "Sutjeska"
+        }
+      ]
+    }
   },
   {
     "last_name": "Karanović",
@@ -5130,7 +5179,26 @@
     "death_date": "02.02.1944",
     "death_place": "Semberija",
     "pdf_x_end": 397.8,
-    "party": "KPJ 1940"
+    "party": "KPJ 1940",
+    "other_sources": [
+      {
+        "soldier_id": "0001010912",
+        "name": "Savić Velimira Vladimir",
+        "additional_info": "1915, Tuzla, BiH, Srbin, metalski radnik, član KPJ od 1940, u NOB od 1941, u brigadi od decembra 1941, III bataljon, zamenik komandira čete, poginuo 02. 02. 1944, s. Abadžić, Jablanica",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 164,
+        "pdf_x": 65.0,
+        "pdf_y": 277.2,
+        "pdf_x_end": 372.2,
+        "pdf_y_end": 319.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1915"
+      ]
+    }
   },
   {
     "last_name": "Savčić",
@@ -5369,7 +5437,21 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 194.8
+    "pdf_x_end": 194.8,
+    "other_sources": [
+      {
+        "soldier_id": "0001011183",
+        "name": "Sladojević Ilije Dimitrije",
+        "additional_info": "Srbin, u NOB od 1944, u brigadi od 1944, IV bataljon, borac",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 184,
+        "pdf_x": 63.3,
+        "pdf_y": 167.0,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 187.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanić",
@@ -5901,7 +5983,38 @@
     "death_date": "10.05.1993",
     "pdf_x_end": 212.4,
     "pdf_y_end": 491.3,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0005020909",
+        "name": "Vilotijević Mrdaka Radoš",
+        "additional_info": "dr, lekar, rođen 1912, Duži, Šavnik",
+        "pdf_file": "treca-proleterska-brigada.pdf",
+        "pdf_page": 379,
+        "pdf_x": 69.9,
+        "pdf_y": 331.9,
+        "pdf_x_end": 199.3,
+        "pdf_y_end": 348.8,
+        "unit_file": "treca-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0005020730",
+        "name": "Vilotijević Radoš",
+        "additional_info": "dr; lekar, rođen 1912, Duži, Šavnik.",
+        "pdf_file": "treca-proleterska-formiranje.pdf",
+        "pdf_page": 5,
+        "pdf_x": 52.5,
+        "pdf_y": 454.7,
+        "pdf_x_end": 210.1,
+        "pdf_y_end": 472.1,
+        "unit_file": "treca-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Vranesević",
@@ -5956,8 +6069,37 @@
         "pdf_x_end": 355.1,
         "pdf_y_end": 450.2,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0005000270",
+        "name": "Vranić Vukajla Ratomir",
+        "additional_info": "borac, rođen 1919, Stranjani, Prijepolje, zemljoradnik.",
+        "pdf_file": "treca-proleterska-brigada.pdf",
+        "pdf_page": 397,
+        "pdf_x": 71.2,
+        "pdf_y": 169.8,
+        "pdf_x_end": 299.1,
+        "pdf_y_end": 194.1,
+        "unit_file": "treca-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0005020749",
+        "name": "Vranić Ratomir",
+        "additional_info": "borac, rođen 1919, Stranjani, Prijepolje, zemljoradnik.",
+        "pdf_file": "treca-proleterska-formiranje.pdf",
+        "pdf_page": 22,
+        "pdf_x": 87.5,
+        "pdf_y": 412.7,
+        "pdf_y_end": 435.9,
+        "pdf_x_end": 333.0,
+        "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Vujisić-Lučić",

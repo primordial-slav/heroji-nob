@@ -556,9 +556,8 @@
     "first_name": "Gašpar",
     "fathers_name": "",
     "full_name": "Andrasek Gašpar",
-    "additional_info": "rođen 1. 6. 1923. u Slovačkoj, umro 7. 4.",
+    "additional_info": "rođen 1. 6. 1923. u Slovačkoj, umro 7. 4. 1944.",
     "birth_year": "1923",
-    "death_type": "umro",
     "pdf_page": 8,
     "pdf_y": 572.8,
     "pdf_x": 170.0,
@@ -567,6 +566,8 @@
     "birth_place": "Slovačka, Razna Mjesta",
     "soldier_id": "0104000031",
     "pdf_x_end": 450.2,
+    "death_type": "umro",
+    "death_date": "07.04.1944",
     "birth_date": "01.06.1923"
   },
   {
@@ -3723,7 +3724,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Bršadin, Vukovar",
     "soldier_id": "0104000191",
-    "pdf_x_end": 397.0
+    "pdf_x_end": 397.0,
+    "other_sources": [
+      {
+        "soldier_id": "0017000139",
+        "name": "Brkić Milivoja Mitar",
+        "additional_info": "s. Bršadin, Vukovar",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 170.9,
+        "pdf_y": 544.1,
+        "pdf_x_end": 313.0,
+        "pdf_y_end": 553.1,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brkić",
@@ -4173,7 +4188,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Gačište, Virovitica",
     "soldier_id": "0104000216",
-    "pdf_x_end": 277.3
+    "pdf_x_end": 277.3,
+    "other_sources": [
+      {
+        "soldier_id": "0017000162",
+        "name": "Cabunac Dušan",
+        "additional_info": "s. Gaćište, Virovitica",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 172.8,
+        "pdf_y": 203.1,
+        "pdf_x_end": 333.0,
+        "pdf_y_end": 212.1,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Cacilović",
@@ -9695,7 +9724,6 @@
     "fathers_name": "Antun",
     "full_name": "Humek Antuna Ivan",
     "additional_info": "zvani Rođen 24. 1. 1923; u s. Gestica, Varaždin, poginuo 1944.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 583.2,
@@ -9705,7 +9733,30 @@
     "soldier_id": "0104000502",
     "birth_place": "Gestica, Varaždin",
     "death_date": "1944",
-    "pdf_x_end": 398.7
+    "pdf_x_end": 398.7,
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "party"
+    ],
+    "ethnicity": "Hrvat",
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0035113666",
+        "name": "Humek Antuna Ivan",
+        "additional_info": "r. 1923., s. Cestica, Varaždin, Hrvat, čl. SKOJ-a, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 38,
+        "pdf_x": 114.8,
+        "pdf_y": 205.9,
+        "pdf_x_end": 266.2,
+        "pdf_y_end": 231.6,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ],
+    "birth_date": "24.01.1923"
   },
   {
     "last_name": "Huni",
@@ -9826,7 +9877,26 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Budimci, Našice",
     "soldier_id": "0104000509",
-    "pdf_x_end": 345.9
+    "pdf_x_end": 345.9,
+    "other_sources": [
+      {
+        "soldier_id": "0104010016",
+        "name": "Ilić Nada",
+        "additional_info": "2. bataljon; rođena 17. X. 1924. Budimci; u partizanima od 22. VIII. 1943.",
+        "pdf_file": "osjecka-zene.pdf",
+        "pdf_page": 3,
+        "pdf_x": 268.4,
+        "pdf_y": 525.5414999999999,
+        "pdf_x_end": 627.7,
+        "pdf_y_end": 532.5
+      }
+    ],
+    "unit_detail": "2. bataljon",
+    "variants": {
+      "born": [
+        "17.10.1924"
+      ]
+    }
   },
   {
     "last_name": "Iličić",
@@ -13532,9 +13602,8 @@
     "first_name": "Jozo",
     "fathers_name": "Stjepan",
     "full_name": "Kovač Stjepana Jozo",
-    "additional_info": "rođen 1911. u s. Ostrošinci, umro 17. 11.",
+    "additional_info": "rođen 1911. u s. Ostrošinci, umro 17. 11. 1944.",
     "birth_year": "1911",
-    "death_type": "umro",
     "pdf_page": 2,
     "pdf_y": 575.9,
     "pdf_x": 174.4,
@@ -13543,6 +13612,8 @@
     "birth_place": "Ostrošinci, Grubišno Polje",
     "soldier_id": "0104000697",
     "pdf_x_end": 455.5,
+    "death_type": "umro",
+    "death_date": "17.11.1944",
     "other_sources": [
       {
         "soldier_id": "9021024483",
@@ -13555,11 +13626,9 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
     "death_place": "Đakovo"
   },
   {
@@ -18399,7 +18468,27 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Lužan, Varaždin",
     "soldier_id": "0104000950",
-    "pdf_x_end": 396.8
+    "pdf_x_end": 396.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021049774",
+        "name": "Matičak (Andrija) Stjepan",
+        "additional_info": "rođen 1921, Lužan Biškupečki (Varadžin). Srbin, poginuo 1944. u NOBu, Grubišno Polje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2368",
+        "source_page": 2368,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Grubišno Polje"
   },
   {
     "last_name": "Matijaš",
@@ -19539,9 +19628,8 @@
     "first_name": "Rudolf",
     "fathers_name": "Andrija",
     "full_name": "Milas Andrije Rudolf",
-    "additional_info": "rođen 1919. u s. Oprisavci, umro 17. 10.",
+    "additional_info": "rođen 1919. u s. Oprisavci, umro 17. 10. 1944.",
     "birth_year": "1919",
-    "death_type": "umro",
     "pdf_page": 6,
     "pdf_y": 228.9,
     "pdf_x": 173.4,
@@ -19549,7 +19637,9 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Oprisavci, Slavonski Brod",
     "soldier_id": "0104001011",
-    "pdf_x_end": 454.3
+    "pdf_x_end": 454.3,
+    "death_type": "umro",
+    "death_date": "17.10.1944"
   },
   {
     "last_name": "Miletić",
@@ -20968,9 +21058,8 @@
     "first_name": "Grgur",
     "fathers_name": "Stjepan",
     "full_name": "Musić Stjepana Grgur",
-    "additional_info": "rođen 1920. u s. Vlatkovac, umro 6. 11.",
+    "additional_info": "rođen 1920. u s. Vlatkovac, umro 6. 11. 1944.",
     "birth_year": "1920",
-    "death_type": "umro",
     "pdf_page": 2,
     "pdf_y": 621.5,
     "pdf_x": 174.4,
@@ -20991,7 +21080,9 @@
         "pdf_x_end": 187.2,
         "pdf_y_end": 622.4
       }
-    ]
+    ],
+    "death_type": "umro",
+    "death_date": "06.11.1944"
   },
   {
     "last_name": "Muslić",
@@ -21851,12 +21942,11 @@
   },
   {
     "last_name": "Ormanec",
-    "middle_name": "",
+    "middle_name": "Franje",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Ormanec Ivan",
+    "fathers_name": "Franjo",
+    "full_name": "Ormanec Franje Ivan",
     "additional_info": "rođen u s. N. Virje.",
-    "birth_year": "",
     "pdf_page": 19,
     "pdf_y": 621.0,
     "pdf_x": 109.4,
@@ -21864,7 +21954,43 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "N. Virje, Đurđevac",
     "soldier_id": "0104001133",
-    "pdf_x_end": 274.2
+    "pdf_x_end": 274.2,
+    "birth_year": "1929",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "učenik",
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0035108040",
+        "name": "Ormanec Franje Ivan",
+        "additional_info": "r. 1929, s. Novo Virje, Đurđevac, Hrvat, učenik, čl. SKOJ-a, NOV 1943, ranjen 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 120,
+        "pdf_x": 288.8,
+        "pdf_y": 554.1,
+        "pdf_x_end": 440.5,
+        "pdf_y_end": 580.3,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035006063",
+        "name": "Ormanec Ivan",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 210.3,
+        "pdf_y": 374.5,
+        "pdf_x_end": 280.2,
+        "pdf_y_end": 384.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Orozović",
@@ -28750,7 +28876,6 @@
     "fathers_name": "",
     "full_name": "Stojčević Milutin",
     "additional_info": "rođen u s. Kapelna, D. Miholjac, poginuo",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 573.3,
@@ -28759,7 +28884,27 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Kapelna, D. Miholjac",
     "soldier_id": "0104001496",
-    "pdf_x_end": 396.8
+    "pdf_x_end": 396.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021007711",
+        "name": "Stojčević (Jovan) Milutin",
+        "additional_info": "rođen 1926, Kapelna (Donji Miholjac). Srbin, poginuo 1944. u NOBu, Hercegovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=339",
+        "source_page": 339,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Hercegovac",
+    "birth_year": "1926"
   },
   {
     "last_name": "Stojčević",
@@ -29204,7 +29349,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Tenje, Osijek",
     "soldier_id": "0104001520",
-    "pdf_x_end": 364.0
+    "pdf_x_end": 364.0,
+    "other_sources": [
+      {
+        "soldier_id": "0017001198",
+        "name": "Tanacković Dušan",
+        "additional_info": "Tenje, Osijek",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 179.4,
+        "pdf_y": 365.6,
+        "pdf_x_end": 323.0,
+        "pdf_y_end": 374.6,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tanacković",
@@ -29562,7 +29721,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Rajno Polje, Orahovica",
     "soldier_id": "0104001538",
-    "pdf_x_end": 357.1
+    "pdf_x_end": 357.1,
+    "other_sources": [
+      {
+        "soldier_id": "0017001207",
+        "name": "Tihomirović Jove Andrija",
+        "additional_info": "Rajno Polje, S. Orahovica",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 179.0,
+        "pdf_y": 339.6,
+        "pdf_x_end": 383.4,
+        "pdf_y_end": 348.6,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Timar",
@@ -30912,10 +31085,10 @@
   },
   {
     "last_name": "Veličan",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Veličan Milan",
+    "fathers_name": "J",
+    "full_name": "Veličan J Milan",
     "additional_info": "rođen u s. Pitomača.",
     "birth_year": "",
     "pdf_page": 20,
@@ -30925,7 +31098,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Pitomača, Đurđevac",
     "soldier_id": "0104001610",
-    "pdf_x_end": 347.1
+    "pdf_x_end": 347.1,
+    "other_sources": [
+      {
+        "soldier_id": "0016003157",
+        "name": "Veličan J Milan",
+        "additional_info": "Pitomača (općina Đurđevac)",
+        "pdf_file": "17-slavonska-prezivjeli.pdf",
+        "pdf_page": 12,
+        "pdf_x": 210.9,
+        "pdf_y": 330.0,
+        "pdf_x_end": 340.6,
+        "pdf_y_end": 338.5,
+        "unit_file": "17-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vengert",
@@ -32010,7 +32197,6 @@
     "fathers_name": "",
     "full_name": "Vranješević Milovan",
     "additional_info": "rođen u s. Cepinski Martinci, poginuo",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 233.9,
@@ -32019,7 +32205,27 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Cepinski Martinci, Osijek",
     "soldier_id": "0104001668",
-    "pdf_x_end": 443.8
+    "pdf_x_end": 443.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021027979",
+        "name": "Vranješević (Sreto) Milovan",
+        "additional_info": "rođen 1923, Martinci Čepinski (Osijek). Srbin, poginuo 1945. u NOBu, Krndija voćin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1375",
+        "source_page": 1375,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Krndija voćin",
+    "birth_year": "1923"
   },
   {
     "last_name": "Vranješević",
@@ -34385,7 +34591,25 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Cepin, Osijek",
     "soldier_id": "0104001794",
-    "pdf_x_end": 396.2
+    "pdf_x_end": 396.2,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0030000898",
+        "name": "Đokić Nikole Strahinja",
+        "additional_info": "borac, Srbin, rođen u s. Cepini (Osijek), iz brigade otišao u proljeće 1944. godine, živi u Cepinu.",
+        "pdf_file": "25-brodska-sastav.pdf",
+        "pdf_page": 3,
+        "pdf_x": 47.7,
+        "pdf_y": 267.6,
+        "pdf_x_end": 328.2,
+        "pdf_y_end": 284.2,
+        "unit_file": "25-brodska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Đokić",
@@ -34853,7 +35077,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Gaboš, Vinkovci",
     "soldier_id": "0104001820",
-    "pdf_x_end": 275.4
+    "pdf_x_end": 275.4,
+    "other_sources": [
+      {
+        "soldier_id": "0017001504",
+        "name": "Šaulić Svetozar",
+        "additional_info": "Gaboš, Vinkovci",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 213.6,
+        "pdf_y": 186.2,
+        "pdf_x_end": 357.0,
+        "pdf_y_end": 195.1,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šavf",
@@ -35022,7 +35260,21 @@
     "pdf_file": "osjecka.pdf",
     "birth_place": "Miljevci, Podravska Slatina",
     "soldier_id": "0104001829",
-    "pdf_x_end": 375.5
+    "pdf_x_end": 375.5,
+    "other_sources": [
+      {
+        "soldier_id": "0017001509",
+        "name": "Šerčić Miloša Miladin",
+        "additional_info": "Miljevac (sada u Voćinu)",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 213.9,
+        "pdf_y": 298.8,
+        "pdf_x_end": 387.9,
+        "pdf_y_end": 307.6,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šerčić",
@@ -36239,25 +36491,6 @@
     "unit_detail": "4. bataljon",
     "pdf_x_end": 587.8,
     "birth_date": "02.03.1922"
-  },
-  {
-    "last_name": "Ilić",
-    "middle_name": "",
-    "first_name": "Nada",
-    "fathers_name": "",
-    "full_name": "Ilić Nada",
-    "additional_info": "2. bataljon; rođena 17. X. 1924. Budimci; u partizanima od 22. VIII. 1943.",
-    "birth_year": "1924",
-    "pdf_page": 3,
-    "pdf_y": 525.5414999999999,
-    "pdf_x": 268.4,
-    "pdf_y_end": 532.5,
-    "pdf_file": "osjecka-zene.pdf",
-    "soldier_id": "0104010016",
-    "birth_place": "Budimci",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 627.7,
-    "birth_date": "17.10.1924"
   },
   {
     "last_name": "Kadić",

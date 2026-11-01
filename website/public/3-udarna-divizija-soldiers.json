@@ -2185,7 +2185,6 @@
     "fathers_name": "",
     "full_name": "Latinski Milan",
     "additional_info": "borac u divizijskoj artiljeriji, rođen u Beogradu, godina nije utvrđena, krojač, Srbin.",
-    "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 52.5,
     "pdf_x": 203.0,
@@ -2196,7 +2195,27 @@
     "ethnicity": "Srbin",
     "occupation": "krojač",
     "rank": "borac",
-    "pdf_x_end": 373.6
+    "pdf_x_end": 373.6,
+    "other_sources": [
+      {
+        "soldier_id": "9025003342",
+        "name": "Latinski (Stevan) Milan",
+        "additional_info": "rođen 1913, Beograd-Čukarica i Rakovi (Beograd Čukarica). Hrvat, poginuo 1943. u NOBu, Konjic",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=99",
+        "source_page": 99,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Konjic",
+    "birth_year": "1913"
   },
   {
     "last_name": "Lazarević",
@@ -2358,10 +2377,10 @@
   },
   {
     "last_name": "Marčeta",
-    "middle_name": "",
+    "middle_name": "Jove",
     "first_name": "Mićo",
-    "fathers_name": "",
-    "full_name": "Marčeta Mićo",
+    "fathers_name": "Jovo",
+    "full_name": "Marčeta Jove Mićo",
     "additional_info": "komandir voda u divizijskoj artiljeriji, rođen 1920, Potkalinje, Bosanska Krupa, zemljoradnik, Srbin, u NOB od 1942, član SKOJ-a, poginuo 10. juna 1943. na Vučevu.",
     "birth_year": "1920",
     "pdf_page": 6,
@@ -2378,7 +2397,38 @@
     "death_place": "Vučevo",
     "rank": "komandir voda",
     "pdf_x_end": 373.7,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0013000883",
+        "name": "Marčeta Jove Mićo",
+        "additional_info": "borac, rođen 1920. godine u Potkalinju, Bosanska Krupa. Poginuo početkom juna 1943. godine kod Glamoča.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 77.1,
+        "pdf_y": 386.0,
+        "pdf_x_end": 410.1,
+        "pdf_y_end": 404.2,
+        "unit_file": "6-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0024000749",
+        "name": "Marčeta Jove Mićo",
+        "additional_info": "rođen 1922, u Potkalinju, Bosanska Krupa, Srbin, zemljoradnik, u NOB od 1942, u brigadi od 1942, poginuo 1943.;",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 33.1,
+        "pdf_y": 540.5,
+        "pdf_x_end": 391.4,
+        "pdf_y_end": 556.1,
+        "unit_file": "2-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Masnić",
@@ -3687,7 +3737,7 @@
       {
         "soldier_id": "9090000350",
         "name": "Rakočević Jova Miraš",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: RAKOČEVIĆ Jova MIRAŠ, rođen 1915., Moračko Trebaljevo. zemljoradnik. U NOP od 1941. Poginuo 1943. na Sutjesci, politički komesar bolnice 3. divizije. Član KPJ od 1941. ~RAKOČEVI'N Vida NENAD, rođen 1914., Štitarica, Polja, zemljoradnik. U NOP od 1941. Poginuo 1943. na Sutjesci, u 4. proleterskoj crnogorskoj brigadi, bio komandant bataljona »Aleksa–Bećo 'Bilask. Član KPJ od 1938. NARODNI HEROJ .",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: RAKOČEVIĆ Jova MIRAŠ, rođen 1915., Moračko Trebaljevo. zemljoradnik. U NOP od 1941. Poginuo 1943. na Sutjesci, politički komesar bolnice 3. divizije. Član KPJ od 1941.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=360",
         "source_page": 715,
         "ref_book": "kolasin"
@@ -4421,7 +4471,17 @@
     "ethnicity": "Crnogorac",
     "occupation": "radnik",
     "rank": "zamenik političkog komesara",
-    "pdf_x_end": 186.2
+    "pdf_x_end": 186.2,
+    "other_sources": [
+      {
+        "soldier_id": "9109001024",
+        "name": "Vujačić Vidaka Vukašin",
+        "additional_info": "Grahovljani nosioci Partizanske spomenice 1941. godine: Vujačić Vidaka Vukašin — Šujo",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009010&pg_seq=254",
+        "source_page": 253,
+        "ref_book": "grahovo-podjele"
+      }
+    ]
   },
   {
     "last_name": "Vujičić",

@@ -935,6 +935,33 @@
         "pdf_x_end": 507.6,
         "pdf_y_end": 661.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004716",
+        "name": "Arsenijević Živko",
+        "additional_info": "Osma crnogorska udarna brigada, Cakovci: Živko Arsenijević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 32,
+        "pdf_x": 445.3,
+        "pdf_y": 564.6,
+        "pdf_x_end": 469.2,
+        "pdf_y_end": 585.1,
+        "pdf_x_left": 110.4,
+        "pdf_rects": [
+          [
+            445.3,
+            564.6,
+            469.2,
+            574.3
+          ],
+          [
+            110.4,
+            575.4,
+            162.1,
+            585.1
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -1604,7 +1631,7 @@
       {
         "soldier_id": "9090000014",
         "name": "Baltić Milosava Miladin",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: BALTIĆ Milosava MILADIN, rođen 1925., Štitarica, Polja, zemljoradnik. U NOP od 1943. Poginuo 1944. kod Vardišta, Višegrad, borac 8. crnogorske brigade. Član SKOJ od 1943. BALTI'đ Radosava MILOVAN, rođen 1915., Štitarica, Polja, zemljoradnik. U NOP od 1941. Strijeljan 1943. od Italijana na Cetinju, bio borac bataljona »Aleksa–Bećo 'Bilasa. Član KPJ od 1939.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: BALTIĆ Milosava MILADIN, rođen 1925., Štitarica, Polja, zemljoradnik. U NOP od 1943. Poginuo 1944. kod Vardišta, Višegrad, borac 8. crnogorske brigade. Član SKOJ od 1943.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=329",
         "source_page": 684,
         "ref_book": "kolasin"
@@ -2278,7 +2305,6 @@
     "fathers_name": "Borisav",
     "full_name": "Bogdanović Borisava Nenad",
     "additional_info": "rođen u Mečjem Dolu, zemljoradnik, u brigadi od decembra 1944, poginuo 17/18. januara 1945. kod Čakovaca.",
-    "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 524.5,
     "pdf_x": 138.5,
@@ -2291,6 +2317,7 @@
     "death_date": "18.01.1945",
     "pdf_x_end": 494.4,
     "death_place": "Čakovci",
+    "birth_year": "1920",
     "other_sources": [
       {
         "soldier_id": "9014002277",
@@ -2330,7 +2357,20 @@
           ]
         ],
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "9025032031",
+        "name": "Bogdanović (Borislav) Nenad",
+        "additional_info": "rođen 1920, Mečji Do (Svrljig). Srbin, poginuo od Nemaca 1945. u NOBu, Selo nemci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1213",
+        "source_page": 1213,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
     ]
   },
   {
@@ -2567,7 +2607,33 @@
     "soldier_id": "0038000065",
     "birth_place": "Gostilj",
     "rank": "zastavnik",
-    "pdf_x_end": 454.7
+    "pdf_x_end": 454.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014002282",
+        "name": "Brajušković Danica",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 42. Brajušković Danica.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 17,
+        "pdf_x": 450.6,
+        "pdf_y": 719.1,
+        "pdf_x_end": 543.0,
+        "pdf_y_end": 728.6,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004567",
+        "name": "Brajušković Danica",
+        "additional_info": "Osma crnogorska udarna brigada, Matora Šuma Kod Erdeviica: Danica Brajušković, referent saniteta.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 31,
+        "pdf_x": 104.8,
+        "pdf_y": 603.3,
+        "pdf_x_end": 283.6,
+        "pdf_y_end": 613.0,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Branković",
@@ -2896,7 +2962,7 @@
       {
         "soldier_id": "9090000050",
         "name": "Bulatović Mašana Matija",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: BULATOVIĆ Mašana MATIJA-MEMO, rođen 1914, Rovačko Trebaljevo, zemljoradnik. U NOP od 1941. Poginuo 1945. u Sremu, komandir čete automatičara u 8. crnogorskoj brigadi. Član KPJ . BULATOVIT; Mita MAŠO, rođen 1900., Smailagića Polje, zemljoradnik. U NOP od 1941. Poginuo u Barama Kraljevim 1942, borac Lipovsko-kolašinoko-rečinskog bataljona.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: BULATOVIĆ Mašana MATIJA-MEMO, rođen 1914, Rovačko Trebaljevo, zemljoradnik. U NOP od 1941. Poginuo 1945. u Sremu, komandir čete automatičara u 8. crnogorskoj brigadi. Član KPJ .",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=333",
         "source_page": 688,
         "ref_book": "kolasin"
@@ -2951,7 +3017,7 @@
       {
         "soldier_id": "9090000047",
         "name": "Bulatović Radomira Vujoš",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: BULATOVIĆ Radomira VUJOŠ, rođen 1926., Lipovo, đak. U NOP od 1943. Poginuo 1944. u Sremu, politički delegat voda u 8. crnogorskoj brigadi. Član KPJ od 1944. VULATOVIT: Milije VUČI'B, rođen 1895., Rečine, zemljoradnik. U NOP od 1941. Poginuo u Barama Kraljskim 1942, borac Lipovsko–kolašinsko–rečinskog bataljona. BULATOVI'N Luke DRAGOJ E, rođen 1930., Rovačko Trebaljevo, đak. U NOP od 1943. Poginuo 1945. kod duge Rese, kurir bataljona u 9. crnogorskoj brigadi. Član SKOJ od 1944. BULATOVI'B Milosava dMITAR—––ŠOLE. rođen 1922, Lipovo, zemljoradnik. U NOP od 1941. Poginuo 1942. u Barama Kraljekim, borac Lipovsko–kolašinsko–rečinskog bataljona. BULATOVI'B Nikole ZARIJ a, rođen 1915., Rovačko Trebaljevo, zemljoradnik. U NOP od 1941. Poginuo 1945. kal Novak Banske, komandir čete u 2. proleterskoj srpskoj brigadi. Član KPJ.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: BULATOVIĆ Radomira VUJOŠ, rođen 1926., Lipovo, đak. U NOP od 1943. Poginuo 1944. u Sremu, politički delegat voda u 8. crnogorskoj brigadi. Član KPJ od 1944.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=332",
         "source_page": 687,
         "ref_book": "kolasin"
@@ -3202,7 +3268,33 @@
     "occupation": "radnik",
     "rank": "politički komesar",
     "pdf_x_end": 450.8,
-    "pdf_x_left": 89.1
+    "pdf_x_left": 89.1,
+    "other_sources": [
+      {
+        "soldier_id": "9014002298",
+        "name": "Cvejić Vojislav",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 58. Cvejić Vojislav.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 17,
+        "pdf_x": 235.0,
+        "pdf_y": 767.1,
+        "pdf_x_end": 307.8,
+        "pdf_y_end": 776.6,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004815",
+        "name": "Cvejić Vojislav",
+        "additional_info": "Osma crnogorska udarna brigada, Đurići: Vojislav Cvejić, politički komesar čete.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 102.5,
+        "pdf_y": 319.2,
+        "pdf_x_end": 288.5,
+        "pdf_y_end": 328.9,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Cvetić",
@@ -4574,7 +4666,21 @@
     "birth_place": "Konatice",
     "death_type": "poginuo",
     "death_date": "1944",
-    "pdf_x_end": 479.3
+    "pdf_x_end": 479.3,
+    "other_sources": [
+      {
+        "soldier_id": "9013004571",
+        "name": "Gavrilović Đorđije",
+        "additional_info": "Osma crnogorska udarna brigada, Matora Šuma Kod Erdeviica: Đorđije Gavrilović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 31,
+        "pdf_x": 272.8,
+        "pdf_y": 613.9,
+        "pdf_x_end": 361.7,
+        "pdf_y_end": 623.6,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Gigin",
@@ -6117,7 +6223,21 @@
     "death_type": "poginuo",
     "death_date": "20.05.1945",
     "death_place": "Šid",
-    "pdf_x_end": 453.7
+    "pdf_x_end": 453.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014002398",
+        "name": "Ivanović Milojko",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 158. Ivanović Milojko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 349.3,
+        "pdf_y": 518.9,
+        "pdf_x_end": 432.7,
+        "pdf_y_end": 528.4,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Ivanović",
@@ -7021,6 +7141,18 @@
     "ethnicity": "Srbin",
     "other_sources": [
       {
+        "soldier_id": "9014002419",
+        "name": "Jovanović Dimitrije",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 179. Jovanović Dimitrije.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 422.9,
+        "pdf_y": 577.2,
+        "pdf_x_end": 517.7,
+        "pdf_y_end": 586.7,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
         "soldier_id": "0010201738",
         "name": "Jovanović Atanasa Dimitrije",
         "additional_info": "rođ. 1923, Novo Selo, Niš, zemljoradnik, Srbin, u NOB i brigadi od 18. 11. 1944, borac.",
@@ -7377,6 +7509,18 @@
         "pdf_x_end": 515.0,
         "pdf_y_end": 579.2,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9014002427",
+        "name": "Jovanović Milutin",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 187. Jovanović Milutin.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 304.9,
+        "pdf_y": 606.0,
+        "pdf_x_end": 393.0,
+        "pdf_y_end": 615.5,
+        "ref_book": "sremski-front-poginuli"
       }
     ]
   },
@@ -7985,7 +8129,36 @@
     "pdf_x_end": 365.6,
     "pdf_x_left": 58.1,
     "death_place": "Zagreb",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "9014002439",
+        "name": "Katić Dragoljub",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 199. Katić Dragoljub.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 550.2,
+        "pdf_y": 635.0,
+        "pdf_x_end": 607.3,
+        "pdf_y_end": 654.1,
+        "pdf_x_left": 248.7,
+        "pdf_rects": [
+          [
+            550.2,
+            635.0,
+            607.3,
+            644.5
+          ],
+          [
+            248.7,
+            644.6,
+            267.6,
+            654.1
+          ]
+        ],
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Kačarević",
@@ -8023,7 +8196,21 @@
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000200",
     "occupation": "radnik",
-    "pdf_x_end": 493.2
+    "pdf_x_end": 493.2,
+    "other_sources": [
+      {
+        "soldier_id": "9014002440",
+        "name": "Kerkez Đuro",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 200. Kerkez Đuro.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 295.3,
+        "pdf_y": 644.6,
+        "pdf_x_end": 352.4,
+        "pdf_y_end": 654.1,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Kilibarda",
@@ -8307,8 +8494,61 @@
         "pdf_x_end": 414.7,
         "pdf_y_end": 671.5,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0040000591",
+        "name": "Knežević Sekule Dimitrije",
+        "additional_info": "borac 5. bataljona, rođen 1920, Rudanci, Žabljak, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1942, poginuo na Sremskom frontu januara 1945, komandir čete.",
+        "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+        "pdf_page": 42,
+        "pdf_x": 102.1,
+        "pdf_y": 518.8,
+        "pdf_x_end": 273.0,
+        "pdf_y_end": 582.0,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040010647",
+        "name": "Knežević Sekulin Dimitrije",
+        "additional_info": "rođen 1920. u Šarancima (Žabljak), zemljoradnik, komandir čete, poginuo u zimu 1945. na sremskom frontu.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 101,
+        "pdf_x": 40.7,
+        "pdf_y": 184.0,
+        "pdf_x_end": 342.4,
+        "pdf_y_end": 209.0,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020335",
+        "name": "Knežević Sekulov Dimitrije",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: boran, Rudanci, Šaranci, 1920, zemljoradnik član, KPJ, Poginuo 1945. na srem. front",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 69,
+        "pdf_x": 175.4,
+        "pdf_y": 465.2,
+        "pdf_x_end": 499.8,
+        "pdf_y_end": 482.3,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ 1942",
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "01.1945",
+          "place": "Sremski front"
+        }
+      ]
+    }
   },
   {
     "last_name": "Knežević",
@@ -10339,7 +10579,6 @@
     "fathers_name": "",
     "full_name": "Lekić Vučko",
     "additional_info": "iz Kralja, u brigadi od februara 1944, poginuo 27. aprila 1944. na Borića brdu.",
-    "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 293.7,
     "pdf_x": 126.6,
@@ -10349,7 +10588,25 @@
     "death_type": "poginuo",
     "death_date": "27.04.1944",
     "death_place": "na Borića brdu",
-    "pdf_x_end": 484.7
+    "pdf_x_end": 484.7,
+    "other_sources": [
+      {
+        "soldier_id": "9023002648",
+        "name": "Lekić (Niko) Vučko",
+        "additional_info": "rođen 1928, Radmužovići (Ivangrad). Crnogorac, poginuo 1944. u NOBu, Podgorica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=84",
+        "source_page": 84,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ],
+    "birth_place": "Radmužovići, Ivangrad",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac",
+    "birth_year": "1928"
   },
   {
     "last_name": "Leontijević",
@@ -11315,7 +11572,21 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_place": "Čakovci",
-    "pdf_x_end": 458.7
+    "pdf_x_end": 458.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014002511",
+        "name": "Marinković Dragoslav",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 271. Marinković Dragoslav.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 303.5,
+        "pdf_y": 846.5,
+        "pdf_x_end": 404.9,
+        "pdf_y_end": 856.0,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Marinković",
@@ -11582,7 +11853,27 @@
     "death_type": "poginuo",
     "death_date": "04.1945",
     "death_place": "Bakovo",
-    "pdf_x_end": 459.4
+    "pdf_x_end": 459.4,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0010001001",
+        "name": "Marjanović Živorada Jordan",
+        "additional_info": "rođen u Zukvama, Koceljeva, zemljoradnik, Srbin, vodnik, poginuo 25. 4. 1945. u s. Gornji Kovačevac kod Okučana, gdje je i sahranjen",
+        "pdf_file": "3-krajiska-proleterska.pdf",
+        "pdf_page": 64,
+        "pdf_x": 32.8,
+        "pdf_y": 136.9,
+        "pdf_x_end": 193.6,
+        "pdf_y_end": 185.4,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marjanović",
@@ -14935,7 +15226,21 @@
     "death_type": "umro",
     "death_place": "na Matoroj šumi",
     "rank": "vodnik",
-    "pdf_x_end": 484.2
+    "pdf_x_end": 484.2,
+    "other_sources": [
+      {
+        "soldier_id": "9014002590",
+        "name": "Milutinović Fima — Femija",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 350. Milutinović Fima—Femija.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 259.7,
+        "pdf_y": 575.9,
+        "pdf_x_end": 387.3,
+        "pdf_y_end": 585.4,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Milutinović",
@@ -15042,7 +15347,21 @@
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000367",
     "birth_place": "Bajevac",
-    "pdf_x_end": 483.5
+    "pdf_x_end": 483.5,
+    "other_sources": [
+      {
+        "soldier_id": "9014002595",
+        "name": "Mirković Joviša",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 355. Mirković Joviša.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 491.4,
+        "pdf_y": 585.5,
+        "pdf_x_end": 572.2,
+        "pdf_y_end": 595.0,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Mirković",
@@ -15444,7 +15763,21 @@
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000377",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 371.3
+    "pdf_x_end": 371.3,
+    "other_sources": [
+      {
+        "soldier_id": "9014002606",
+        "name": "Mitrović Ilija",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 366. Mitrović Ilija.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 427.8,
+        "pdf_y": 624.1,
+        "pdf_x_end": 501.3,
+        "pdf_y_end": 633.6,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Mitrović",
@@ -15929,7 +16262,21 @@
     "death_type": "poginuo",
     "death_date": "04.12.1944",
     "death_place": "na Matoroj šumi",
-    "pdf_x_end": 459.8
+    "pdf_x_end": 459.8,
+    "other_sources": [
+      {
+        "soldier_id": "9013004587",
+        "name": "Nedeljković Milisav",
+        "additional_info": "Osma crnogorska udarna brigada, Matora Šuma Kod Erdeviica: Milisav Nedeljković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 31,
+        "pdf_x": 105.0,
+        "pdf_y": 666.7,
+        "pdf_x_end": 197.0,
+        "pdf_y_end": 676.4,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Nedeljković",
@@ -16081,7 +16428,21 @@
     "soldier_id": "0038000392",
     "birth_place": "Stepanje",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 484.8
+    "pdf_x_end": 484.8,
+    "other_sources": [
+      {
+        "soldier_id": "9014002617",
+        "name": "Nešić Jovan",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 377. Nešić Jovan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 269.7,
+        "pdf_y": 662.8,
+        "pdf_x_end": 328.5,
+        "pdf_y_end": 672.3,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Nešković",
@@ -16553,7 +16914,33 @@
     "soldier_id": "0038000405",
     "birth_place": "Beograd",
     "occupation": "učenik",
-    "pdf_x_end": 488.8
+    "pdf_x_end": 488.8,
+    "other_sources": [
+      {
+        "soldier_id": "9014002635",
+        "name": "Nikolić Predrag",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 395. Nikolić Predrag.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 400.8,
+        "pdf_y": 710.8,
+        "pdf_x_end": 478.9,
+        "pdf_y_end": 720.3,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004778",
+        "name": "Nikolić Predrag",
+        "additional_info": "Osma crnogorska udarna brigada, Cakovci: Predrag Nikolić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 384.2,
+        "pdf_y": 184.1,
+        "pdf_x_end": 460.1,
+        "pdf_y_end": 193.8,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Nikolić",
@@ -17104,8 +17491,47 @@
         "pdf_x_end": 572.2,
         "pdf_y_end": 758.9,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9035001847",
+        "name": "Novaković Jovanov Milisav",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina rođenja 1927; mjesto rođenja Donja Ržanica; godina smrti 1945; mjesto pogibije Srem",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 47,
+        "pdf_x": 97.7,
+        "pdf_y": 572.8,
+        "pdf_x_end": 480.1,
+        "pdf_y_end": 582.6,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "0040011115",
+        "name": "Novaković Jovanov Milisav",
+        "additional_info": "rođen 1927. u Donjoj Ržanici (Ivangrad), zemljoradnik, borac, poginuo januara 1945. u Sremu.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 107,
+        "pdf_x": 49.1,
+        "pdf_y": 183.2,
+        "pdf_x_end": 354.6,
+        "pdf_y_end": 199.8,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ],
+      "death": [
+        {
+          "date": "01.1945",
+          "place": "Srem"
+        }
+      ]
+    }
   },
   {
     "last_name": "Novelin",
@@ -18982,6 +19408,18 @@
         "ref_book": "sremski-front-poginuli"
       },
       {
+        "soldier_id": "9013004866",
+        "name": "Petrović Spasoje",
+        "additional_info": "Osma crnogorska udarna brigada, Đurići: Spasoje Petrović, vodnik.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 299.6,
+        "pdf_y": 456.5,
+        "pdf_x_end": 416.5,
+        "pdf_y_end": 466.2,
+        "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
         "soldier_id": "0001009496",
         "name": "Petrović Ilije Spasoje",
         "additional_info": "1924, Draškova Kutina, Niš, Srbija, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944, IV bataljon, borac",
@@ -20333,7 +20771,21 @@
     "birth_place": "Tulari",
     "occupation": "zemljoradnik",
     "rank": "desetar",
-    "pdf_x_end": 488.0
+    "pdf_x_end": 488.0,
+    "other_sources": [
+      {
+        "soldier_id": "9014002719",
+        "name": "Radivojević Vladislav",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 479. Radivojević Vladislav.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 491.3,
+        "pdf_y": 440.3,
+        "pdf_x_end": 591.7,
+        "pdf_y_end": 449.8,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Radivojević",
@@ -23785,7 +24237,21 @@
     "death_type": "poginuo",
     "death_date": "12.04.1944",
     "death_place": "kod Gornjih Sela",
-    "pdf_x_end": 455.7
+    "pdf_x_end": 455.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014002797",
+        "name": "Stojković Radoje",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 557. Stojković Radoje.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 468.6,
+        "pdf_y": 681.0,
+        "pdf_x_end": 543.6,
+        "pdf_y_end": 690.5,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Strunjaš",
@@ -24812,7 +25278,48 @@
     "birth_place": "Gornji Milanovac",
     "occupation": "službenik",
     "rank": "potporučnik, pomoćnik političkog komesara čete",
-    "pdf_x_end": 497.5
+    "pdf_x_end": 497.5,
+    "other_sources": [
+      {
+        "soldier_id": "9014002830",
+        "name": "Tomić Ljubiša",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 590. Tomić Ljubiša.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 275.3,
+        "pdf_y": 777.5,
+        "pdf_x_end": 344.0,
+        "pdf_y_end": 787.0,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004889",
+        "name": "Tomić Ljubiša",
+        "additional_info": "Osma crnogorska udarna brigada, Đurići: Ljubiša Tomić, zamenik političkog komesara čete.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 374.3,
+        "pdf_y": 519.9,
+        "pdf_x_end": 462.0,
+        "pdf_y_end": 540.1,
+        "pdf_x_left": 103.2,
+        "pdf_rects": [
+          [
+            374.3,
+            519.9,
+            462.0,
+            529.6
+          ],
+          [
+            103.2,
+            530.4,
+            253.5,
+            540.1
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Tomić",
@@ -25194,7 +25701,36 @@
     "soldier_id": "0038000617",
     "birth_place": "Babe",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 453.6
+    "pdf_x_end": 453.6,
+    "other_sources": [
+      {
+        "soldier_id": "9014002840",
+        "name": "Vasić Milovan",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 600. Vasić Milovan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 577.5,
+        "pdf_y": 796.5,
+        "pdf_x_end": 591.2,
+        "pdf_y_end": 815.6,
+        "pdf_x_left": 232.2,
+        "pdf_rects": [
+          [
+            577.5,
+            796.5,
+            591.2,
+            806.0
+          ],
+          [
+            232.2,
+            806.1,
+            290.9,
+            815.6
+          ]
+        ],
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Vasić",
@@ -25824,7 +26360,7 @@
       {
         "soldier_id": "9090000082",
         "name": "Vlahović Mira Božidar",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Mira BOŽIDAR, rođen 1925., Peć, đak. U NOP od 1943. Poginuo 1944, na Obrovu, Bijelo Polje, borac 8. crnogorske brigade. Član SKOJ od 1943. VLAHOVI'đ Milinka BRANKO, rođen 1929, P0dgorica, apsolvent prava. U NOP od 1941. Poginuo 1942. u Lubnicama, zamenik komesara Gornjomoračko–rovačkog bataljona. Član KPJ od 1938.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Mira BOŽIDAR, rođen 1925., Peć, đak. U NOP od 1943. Poginuo 1944, na Obrovu, Bijelo Polje, borac 8. crnogorske brigade. Član SKOJ od 1943.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=336",
         "source_page": 691,
         "ref_book": "kolasin"
@@ -25936,6 +26472,14 @@
         "pdf_x_end": 435.6,
         "pdf_y_end": 254.8,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9090000478",
+        "name": "Vlahović Veka Svetomir",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Veka SVETOMIR, rođen 1925., Babljak, đak. U NOP od 1943. Poginuo 1945. u Sremu, komandir voda u 8. crnogorskoj brigadi. Član SKOJ od 1944. Dannya ·u NOR–u Revija · ·. “. .. I . .. · .. \" ·. 63",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=337",
+        "source_page": 692,
+        "ref_book": "kolasin"
       }
     ],
     "ethnicity": "Crnogorac",
@@ -25963,7 +26507,7 @@
       {
         "soldier_id": "9090000091",
         "name": "Vlahović Mira Zorka",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Mira ZORKA, rođena 1922, Peć, domaćica. U NOP od 1943. Poginula 1944. kod Krajinovića. Bijelo Polje, bolničarka u 8. crnogorskoj brigadi. Član SKOJ od 1943. VLAHOVI'đ Puniše J ANKO, rođen 1917., Babljak, maturant. U NOP od 1944. Strijeljan od četnika 1942. na Brezi, borac Lipovsko—kolašinsko–rečinskog bataljona. Član KPJ od 1941.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: VLAHOVIĆ Mira ZORKA, rođena 1922, Peć, domaćica. U NOP od 1943. Poginula 1944. kod Krajinovića. Bijelo Polje, bolničarka u 8. crnogorskoj brigadi. Član SKOJ od 1943.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=336",
         "source_page": 691,
         "ref_book": "kolasin"
@@ -26637,7 +27181,7 @@
       {
         "soldier_id": "9090000117",
         "name": "Vuković Zarije Milovan",
-        "additional_info": "Poginuli u NOR-u i Revoluciji: VUKOVIĆ Zarije MILOVAN, rođen 1922, Velje Duboko, Rovca. zemljoradnik. U NOP od 1943. Poginuo 1944. kod Mojkovca, borac 5. proleterske crnogorske brigade. Član KPJ od 1944. VUKOVI'đ Radoša MILORAD, rođen 1920., Selišta, student. U NOP od 1941. Poginuo 1942. u Barama Kraljskim, borac Lipovsko–kolašinsko-rečinsnog bataljona. Član SKOJ od 1941.",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: VUKOVIĆ Zarije MILOVAN, rođen 1922, Velje Duboko, Rovca. zemljoradnik. U NOP od 1943. Poginuo 1944. kod Mojkovca, borac 5. proleterske crnogorske brigade. Član KPJ od 1944.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=339",
         "source_page": 694,
         "ref_book": "kolasin"
@@ -26815,7 +27359,30 @@
     "death_date": "21.11.1944",
     "death_place": "kod Ru.me",
     "rank": "politički komesar čete",
-    "pdf_x_end": 453.3
+    "pdf_x_end": 453.3,
+    "other_sources": [
+      {
+        "soldier_id": "0092000511",
+        "name": "Vukčević Labuda Veselin",
+        "additional_info": "rođen 21. I 1917. godine, s. Batun, srez Podgorica, pomoćnik komesara prvog diviziona, poginuo 19. XI 1944. godine, selo Golubinci, sahranjen u Rumi.",
+        "pdf_file": "1-konjicka.pdf",
+        "pdf_page": 1,
+        "pdf_x": 69.2,
+        "pdf_y": 317.4,
+        "pdf_x_end": 373.4,
+        "pdf_y_end": 346.6,
+        "unit_file": "1-konjicka-soldiers.json"
+      }
+    ],
+    "birth_date": "21.01.1917",
+    "variants": {
+      "death": [
+        {
+          "date": "19.11.1944",
+          "place": "kod Ru.me"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vukčević",
@@ -27243,7 +27810,21 @@
     "death_type": "poginuo",
     "death_date": "08.04.1945",
     "death_place": "Burići",
-    "pdf_x_end": 453.9
+    "pdf_x_end": 453.9,
+    "other_sources": [
+      {
+        "soldier_id": "9013004894",
+        "name": "Zorojević Nikola",
+        "additional_info": "Osma crnogorska udarna brigada, Đurići: Nikola Zorojević.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 350.2,
+        "pdf_y": 541.0,
+        "pdf_x_end": 430.6,
+        "pdf_y_end": 550.7,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Ćatović",
@@ -27305,7 +27886,21 @@
     "death_type": "poginuo",
     "death_date": "10.04.1945",
     "death_place": "Burići",
-    "pdf_x_end": 451.5
+    "pdf_x_end": 451.5,
+    "other_sources": [
+      {
+        "soldier_id": "9013004816",
+        "name": "Čirić Vojislav",
+        "additional_info": "Osma crnogorska udarna brigada, Đurići: Vojislav Čirić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 295.8,
+        "pdf_y": 319.2,
+        "pdf_x_end": 362.1,
+        "pdf_y_end": 328.9,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Ćorić",
@@ -28578,7 +29173,33 @@
     "soldier_id": "0038000705",
     "birth_place": "Peć",
     "occupation": "službenik",
-    "pdf_x_end": 491.1
+    "pdf_x_end": 491.1,
+    "other_sources": [
+      {
+        "soldier_id": "9014002344",
+        "name": "Đurović Božo",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 104. Đurović Božo.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 248.5,
+        "pdf_y": 373.9,
+        "pdf_x_end": 313.4,
+        "pdf_y_end": 383.4,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004730",
+        "name": "Đurović Božo",
+        "additional_info": "Osma crnogorska udarna brigada, Cakovci: Božo Đurović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 32,
+        "pdf_x": 253.0,
+        "pdf_y": 607.8,
+        "pdf_x_end": 318.0,
+        "pdf_y_end": 617.5,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Đurović",
@@ -29024,7 +29645,21 @@
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000716",
     "birth_place": "Beograd",
-    "pdf_x_end": 452.7
+    "pdf_x_end": 452.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014002811",
+        "name": "Šinić Ernest",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 571. Šinić Ernest.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 394.2,
+        "pdf_y": 719.4,
+        "pdf_x_end": 461.3,
+        "pdf_y_end": 728.9,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Šljivančanin",
@@ -29183,6 +29818,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=92",
         "source_page": 92,
         "ref_book": "zrtve-rata-1964-crg"
+      },
+      {
+        "soldier_id": "9090000637",
+        "name": "Šćepanović Novice Labud",
+        "additional_info": "Poginuli u NOR-u i Revoluciji: ŠĆEPANOVIĆ Novice LABUD, rođen 1926., Kolašin, đak. U NOP od 1943. Poginuo 1944. u Beogradu, desetar u 8. crnogorskoj brigadi. Član SKOJ od 1943.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=367",
+        "source_page": 722,
+        "ref_book": "kolasin"
       }
     ],
     "ethnicity": "Crnogorac",

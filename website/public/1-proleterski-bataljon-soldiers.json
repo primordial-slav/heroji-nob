@@ -2023,7 +2023,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=288",
     "source_page": 264,
     "soldier_id": "0120000070",
-    "birth_place": "Crkveni Breg"
+    "birth_place": "Crkveni Breg",
+    "other_sources": [
+      {
+        "soldier_id": "0006000886",
+        "name": "Cikota Boris",
+        "additional_info": "Crkveni Bok, Sisak.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 15,
+        "pdf_x": 308.4,
+        "pdf_y": 288.2,
+        "pdf_x_end": 443.5,
+        "pdf_y_end": 296.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Crnić",
@@ -3333,7 +3347,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=290",
     "source_page": 266,
     "soldier_id": "0120000124",
-    "birth_place": "Grižane, Crikvenica"
+    "birth_place": "Grižane, Crikvenica",
+    "other_sources": [
+      {
+        "soldier_id": "0006002080",
+        "name": "Hreljac Rudolf",
+        "additional_info": "Grižane, Crikvenica.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 31,
+        "pdf_x": 310.1,
+        "pdf_y": 380.1,
+        "pdf_x_end": 460.0,
+        "pdf_y_end": 388.6,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hreljac",
@@ -5500,7 +5528,21 @@
     "birth_place": "Broćanac, Slunj",
     "death_type": "poginuo",
     "death_date": "15.11.1942",
-    "death_place": "Sv. Jana"
+    "death_place": "Sv. Jana",
+    "other_sources": [
+      {
+        "soldier_id": "0006003604",
+        "name": "Majgotić Dušan",
+        "additional_info": "1920. Bračanac, Slunj. Poginuo 15. XI 1942. u Svetoj Jani na Žumberku.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 50,
+        "pdf_x": 300.7,
+        "pdf_y": 238.3,
+        "pdf_x_end": 472.6,
+        "pdf_y_end": 254.7,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Majstorović",
@@ -6263,11 +6305,32 @@
     "fathers_name": "",
     "full_name": "Mijat Paško",
     "additional_info": "Srima, Šibenik.",
-    "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=294",
     "source_page": 270,
     "soldier_id": "0120000244",
-    "birth_place": "Srima, Šibenik"
+    "birth_place": "Srima, Šibenik",
+    "other_sources": [
+      {
+        "soldier_id": "9021038097",
+        "name": "Mijat (Pero) Paško",
+        "additional_info": "rođen 1922, Srima (Šibenik). Hrvat, poginuo 1942. u NOBu, Sela kod j.polj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1830",
+        "source_page": 1830,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Sela kod j.polj",
+    "birth_year": "1922"
   },
   {
     "last_name": "Mikelić",
@@ -7226,15 +7289,15 @@
         "unit_file": "13-proleterska-soldiers.json"
       },
       {
-        "soldier_id": "0007101038",
+        "soldier_id": "0007003982",
         "name": "Pendžer Spire Ivo",
-        "additional_info": "zamenik političkog komesara 3. čete 3. bataljona, rođen 1912, Mandalina, Šibenik, radnik, Hrvat, u NOB od 1941, član KPJ od septembra 1941. godine.",
-        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
-        "pdf_page": 60,
-        "pdf_x": 6.0,
-        "pdf_y": 168.1,
-        "pdf_x_end": 176.7,
-        "pdf_y_end": 219.6,
+        "additional_info": "22. 8. 1912. Mandalina, Šibenik. Hrvat, radnik. Član KPJ od 20. 9.1941. U NOV od veljače 1942. u bat. »Ognjen Prica«. U 2. dalm. brigadi od 3.10. 1942. Komandir čete. Nosilac »Partizanske spomenice 1941«.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 134,
+        "pdf_x": 113.6,
+        "pdf_y": 351.5,
+        "pdf_x_end": 438.7,
+        "pdf_y_end": 375.3,
         "unit_file": "2-dalmatinska-soldiers.json"
       },
       {
@@ -7248,8 +7311,21 @@
         "pdf_x_end": 290.3,
         "pdf_y_end": 255.2,
         "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007101038",
+        "name": "Pendžer Spire Ivo",
+        "additional_info": "zamenik političkog komesara 3. čete 3. bataljona, rođen 1912, Mandalina, Šibenik, radnik, Hrvat, u NOB od 1941, član KPJ od septembra 1941. godine.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 6.0,
+        "pdf_y": 168.1,
+        "pdf_x_end": 176.7,
+        "pdf_y_end": 219.6,
+        "unit_file": "2-dalmatinska-soldiers.json"
       }
-    ]
+    ],
+    "birth_date": "22.08.1912"
   },
   {
     "last_name": "Pericin",
@@ -8056,6 +8132,18 @@
         "pdf_x_end": 370.5,
         "pdf_y_end": 587.2,
         "ref_book": "hak-12-dreznica"
+      },
+      {
+        "soldier_id": "0006005790",
+        "name": "Radulović Milana Ilija",
+        "additional_info": "1923. Partiz. Drežnica, Ogulin. Poginuo 5. IV 1945. kod Bapske i tu sahranjen.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 80,
+        "pdf_x": 103.2,
+        "pdf_y": 112.9,
+        "pdf_x_end": 274.3,
+        "pdf_y_end": 137.5,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -11492,7 +11580,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=289",
     "source_page": 265,
     "soldier_id": "0120000451",
-    "birth_place": "Kozjan, T. Korenica"
+    "birth_place": "Kozjan, T. Korenica",
+    "other_sources": [
+      {
+        "soldier_id": "0006000999",
+        "name": "Čović Stanko",
+        "additional_info": "Kozjak, Titova Korenica.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 17,
+        "pdf_x": 314.1,
+        "pdf_y": 158.8,
+        "pdf_x_end": 469.4,
+        "pdf_y_end": 167.3,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čubrilo",

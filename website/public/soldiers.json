@@ -1812,8 +1812,24 @@
         "pdf_x_end": 576.0,
         "pdf_y_end": 874.8,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0118000018",
+        "name": "Andrić Dragićev Boško",
+        "additional_info": "iz Draginje, Vladimirci, poginuo 15. X 1944. godine na Čukarici.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=366",
+        "source_page": 361,
+        "unit_file": "3-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.10.1944",
+          "place": "Čukarica"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002000081",
@@ -3173,6 +3189,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1446",
         "source_page": 1446,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0099000013",
+        "name": "Aralica Milana Ilija",
+        "additional_info": "komesar čete, rođen u Škarama kod Otočca, poginuo 8. novembra 1944. godine na Lo vincu",
+        "pdf_file": "3-primorsko-goranska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 53.3,
+        "pdf_y": 413.5,
+        "pdf_x_end": 213.0,
+        "pdf_y_end": 444.2,
+        "unit_file": "3-primorsko-goranska-soldiers.json"
+      },
+      {
+        "soldier_id": "0099000012",
+        "name": "Aralica Ilija",
+        "additional_info": "politički komesar čete",
+        "pdf_file": "3-primorsko-goranska.pdf",
+        "pdf_page": 1,
+        "pdf_x": 47.2,
+        "pdf_y": 222.8,
+        "pdf_y_end": 242.9,
+        "pdf_x_end": 206.0,
+        "unit_file": "3-primorsko-goranska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -6110,11 +6150,11 @@
   {
     "soldier_id": "0002000270",
     "last_name": "Banović",
-    "middle_name": "",
+    "middle_name": "Đorđa",
     "first_name": "Ljubisav",
     "additional_info": "22. 10. 1926, Banjani, Ub, zemljoradnik, u NOB od oktobra 1944",
-    "fathers_name": "",
-    "full_name": "Banović Ljubisav",
+    "fathers_name": "Đorđe",
+    "full_name": "Banović Đorđa Ljubisav",
     "birth_year": "1926",
     "pdf_page": 566,
     "pdf_y": 572.5,
@@ -6124,7 +6164,42 @@
     "birth_place": "Banjani, Ub",
     "occupation": "zemljoradnik",
     "pdf_x_end": 464.0,
-    "birth_date": "22.10.1926"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001000502",
+        "name": "Banović Đorđa Ljubisav",
+        "additional_info": "1928, Banjani, Ub, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, VI bataljon, borac",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 46,
+        "pdf_x": 67.4,
+        "pdf_y": 355.8,
+        "pdf_x_end": 374.4,
+        "pdf_y_end": 386.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001300078",
+        "name": "Banović Đorđa Ljubisav",
+        "additional_info": "Zemljoradnik, rođen 1928, Banjani, Ub. U NOB od 4. oktobra 1944. Danas zemljoradnik.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 35,
+        "pdf_x": 357.8,
+        "pdf_y": 143.2,
+        "pdf_y_end": 177.9,
+        "pdf_x_end": 510.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "birth_date": "22.10.1926",
+    "variants": {
+      "born": [
+        "1928"
+      ]
+    }
   },
   {
     "soldier_id": "0002000271",
@@ -10710,6 +10785,20 @@
     "birth_place": "Veliko Selo, Beograd",
     "occupation": "zemljoradnik",
     "pdf_x_end": 461.8,
+    "other_sources": [
+      {
+        "soldier_id": "0074000101",
+        "name": "Blagojević Đ Krsta",
+        "additional_info": "rođen u Velikom Selu, Palilula, Beograd, borac. U Brigadi od 01. 12. 1944. godine.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 127.7,
+        "pdf_y": 522.2,
+        "pdf_x_end": 421.3,
+        "pdf_y_end": 540.3,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ],
     "birth_date": "25.09.1923"
   },
   {
@@ -11037,18 +11126,42 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=316",
         "source_page": 316,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0003000075",
+        "name": "Blanuša Đure Mile",
+        "additional_info": "rođen 1922. godine u s. Kruži. Borac 1. čete 1. bataljona. Ranjen kod Gospića 1943. Umro u Zagrebu 1945. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 4,
+        "pdf_x": 119.2,
+        "pdf_y": 176.3,
+        "pdf_x_end": 477.5,
+        "pdf_y_end": 193.7,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003020164",
+        "name": "Blanuša Đure Mile",
+        "additional_info": "rođen 1922. u selu Kruži - D. Lapac. Borac 1. čete 1. bataljona. Ranjen kod Gospića 1943. Umro u Zagrebu 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 206.0,
+        "pdf_y": 73.3,
+        "pdf_x_end": 367.6,
+        "pdf_y_end": 112.0,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_type": "umro",
     "borrowed": [
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Zagreb",
+    "ethnicity": "Srbin",
     "birth_date": "17.10.1922"
   },
   {
@@ -12391,8 +12504,24 @@
         "pdf_x_end": 384.4,
         "pdf_y_end": 80.8,
         "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0118000063",
+        "name": "Bogdanović Mile Dušan",
+        "additional_info": "iz Crne Vlasti, Vrhovine, Otočac, poginuo 7. IX 1943. godine kod Široke Kule, sahranjen u Barleti.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=368",
+        "source_page": 363,
+        "unit_file": "3-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.09.1943",
+          "place": "Široka Kula"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002000522",
@@ -13268,7 +13397,25 @@
     "death_place": "Zuleševica",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 461.9,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "seljak",
     "other_sources": [
+      {
+        "soldier_id": "0002000557",
+        "name": "Bogunović Petra Rade",
+        "additional_info": "1920, Brotnja, Srb, seljak, Srbin, u NOB od januara 1943, 1. bataljon, umro od tifusa u Brotnji 19. 3. 1943",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 577,
+        "pdf_x": 127.5,
+        "pdf_y": 484.5,
+        "pdf_x_end": 461.8,
+        "pdf_y_end": 504.1,
+        "unit_file": "soldiers.json"
+      },
       {
         "soldier_id": "0003000099",
         "name": "Bogunović Petra Rade",
@@ -13293,7 +13440,15 @@
         "pdf_y_end": 449.7,
         "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "19.03.1943",
+          "place": "Brotnja"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002000557",
@@ -13337,8 +13492,52 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=291",
         "source_page": 291,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0002000556",
+        "name": "Bogunović Petra Rade",
+        "additional_info": "1920, Kaldrma, 2. bataljon, poginuo februara 1943. na Zuleševici, sahranjen u Suvaji",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 577,
+        "pdf_x": 127.3,
+        "pdf_y": 460.2,
+        "pdf_x_end": 461.9,
+        "pdf_y_end": 480.1,
+        "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003000099",
+        "name": "Bogunović Petra Rade",
+        "additional_info": "rođen 1920. u s. Zalužje. Borac 3. čete 1. bataljona. Poginuo na Zuleševici 1943. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 4,
+        "pdf_x": 120.4,
+        "pdf_y": 606.8,
+        "pdf_x_end": 479.2,
+        "pdf_y_end": 624.2,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003020193",
+        "name": "Bogunović Petra Rade",
+        "additional_info": "rođen 1920. u s. Zalužje. Borac 3. ćete 1. bataljona. Poginuo na Zuleševici 1943. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 224.4,
+        "pdf_y": 409.5,
+        "pdf_x_end": 385.3,
+        "pdf_y_end": 449.7,
+        "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "02.1943",
+          "place": "Zuleševica"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002000558",
@@ -17117,7 +17316,17 @@
     "death_place": "Sveti Rok",
     "unit_detail": "3. bataljon",
     "birth_place": "Ličko Lešće, Otočac",
-    "pdf_x_end": 465.7
+    "pdf_x_end": 465.7,
+    "other_sources": [
+      {
+        "soldier_id": "9064000333",
+        "name": "Brajković Miće Tomica",
+        "additional_info": "Pali borci, Ličko Lesce: Brajković Miće Tomica, rođen 1924. u L. Lešću, poginuo 1943. u borbi sa ustašama kod Lovnica.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=423",
+        "source_page": 419,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002000720",
@@ -20339,6 +20548,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=315",
         "source_page": 315,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9009000996",
+        "name": "Bursać Trifuna Mane",
+        "additional_info": "Lička Kaldrma — Zavlaka, općina Srb: 1924, seljak, Srbin. Stupio u NOB 27. 7. 1941, borac bat. »Marko Orešković«. Poginuo u Kosinju kod Perušića juna 1942.",
+        "pdf_file": "hak-14-donji-lapac.pdf",
+        "pdf_page": 46,
+        "pdf_x": 413.5,
+        "pdf_y": 784.1,
+        "pdf_x_end": 582.5,
+        "pdf_y_end": 825.9,
+        "ref_book": "hak-14-donji-lapac"
       }
     ],
     "ethnicity": "Srbin",
@@ -21839,7 +22060,21 @@
     "pdf_y_end": 284.7,
     "pdf_file": "prva-licka-proleterska.pdf",
     "unit_detail": "4. četa, 2. bataljon",
-    "pdf_x_end": 363.9
+    "pdf_x_end": 363.9,
+    "other_sources": [
+      {
+        "soldier_id": "9014006331",
+        "name": "Cekić Dragoljub",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 47. Cekić Dragoljub.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 399.7,
+        "pdf_y": 439.7,
+        "pdf_x_end": 473.6,
+        "pdf_y_end": 449.2,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0002000937",
@@ -24847,7 +25082,29 @@
     "pdf_y_end": 381.2,
     "pdf_file": "prva-licka-proleterska.pdf",
     "pdf_x_end": 447.1,
-    "birth_place": "Široka Kula"
+    "birth_place": "Široka Kula",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1945",
+    "death_place": "Rijeka",
+    "other_sources": [
+      {
+        "soldier_id": "0079001299",
+        "name": "Čanak Manin Milan Mico",
+        "additional_info": "iz Široke Kule kod Gospića, u borbi za Rijeku, 1945.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 110.2,
+        "pdf_y": 185.7,
+        "pdf_x_end": 261.7,
+        "pdf_y_end": 206.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002001066",
@@ -25969,7 +26226,21 @@
     "pdf_x": 133.3,
     "pdf_y_end": 378.8,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "pdf_x_end": 393.0
+    "pdf_x_end": 393.0,
+    "other_sources": [
+      {
+        "soldier_id": "9014006336",
+        "name": "Čiča Petar",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 52. Čiča Petar.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 488.3,
+        "pdf_y": 449.6,
+        "pdf_x_end": 537.6,
+        "pdf_y_end": 459.1,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0002001118",
@@ -26132,6 +26403,20 @@
     "rank": "desetar",
     "pdf_x_end": 468.7,
     "death_place": "Sremski front",
+    "other_sources": [
+      {
+        "soldier_id": "9013003399",
+        "name": "Colić Asan",
+        "additional_info": "Prva lička proleterska brigada, Batrovci: Asan Colić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 333.6,
+        "pdf_y": 352.8,
+        "pdf_x_end": 384.8,
+        "pdf_y_end": 362.5,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "12.05.1922"
   },
   {
@@ -26578,8 +26863,37 @@
         "pdf_x_end": 247.5,
         "pdf_y_end": 430.3,
         "ref_book": "hak-20-gospic-perusic"
+      },
+      {
+        "soldier_id": "0003000228",
+        "name": "Čović Mile Rade",
+        "additional_info": "rođen 1922. u Široka Kula - Gospić. Borac 2. bataljona. Poginuo na Drvaru 25. 05. 1944. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 9,
+        "pdf_x": 122.6,
+        "pdf_y": 450.1,
+        "pdf_x_end": 481.7,
+        "pdf_y_end": 467.5,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003022583",
+        "name": "Ćović Mile Rade",
+        "additional_info": "rođen 1920. u Široka Kula - Gospić. U NOB-1941. Borac 2. bataljona. Poginuo na Drvaru 25. 05. 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 46.4,
+        "pdf_y": 466.4,
+        "pdf_x_end": 207.7,
+        "pdf_y_end": 506.6,
+        "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "soldier_id": "0002001144",
@@ -27353,7 +27667,17 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Dabar, Otočac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 440.4
+    "pdf_x_end": 440.4,
+    "other_sources": [
+      {
+        "soldier_id": "9064011759",
+        "name": "Čuturilo Mane Bogdan",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Dabar: Čuturilo Mane Bogdan, rođen 1925. u Dabru, stupio u NOB 1942. godine, major.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=507",
+        "source_page": 503,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002001177",
@@ -34181,7 +34505,23 @@
     "death_date": "09.04.1944",
     "death_place": "Međeđak, Srb",
     "unit_detail": "2. četa, 3. bataljon",
-    "pdf_x_end": 457.7
+    "pdf_x_end": 457.7,
+    "other_sources": [
+      {
+        "soldier_id": "9021035697",
+        "name": "Devčić (Ilija) Tomo",
+        "additional_info": "rođen 1924, Krasno Polje (Senj). Hrvat, poginuo 1944. u NOBu, Na tromeđi bosne i l",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1772",
+        "source_page": 1772,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "soldier_id": "0002001463",
@@ -34976,6 +35316,20 @@
     "birth_place": "Beograd",
     "occupation": "đak",
     "pdf_x_end": 452.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014006352",
+        "name": "Dimić Radomir",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 68. Dimić Radomir.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 219.2,
+        "pdf_y": 498.0,
+        "pdf_x_end": 290.3,
+        "pdf_y_end": 507.5,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ],
     "birth_date": "28.05.1922"
   },
   {
@@ -36137,12 +36491,41 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1450",
         "source_page": 1450,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0003000263",
+        "name": "Divjak Duje Miloš",
+        "additional_info": "rođen 1909. u s. Srednji Turjanski - Otočcac. Borac. Poginuo u Crnoj Gori 1944. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 10,
+        "pdf_x": 123.3,
+        "pdf_y": 623.4,
+        "pdf_x_end": 482.5,
+        "pdf_y_end": 640.8,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003020395",
+        "name": "Divjak Mićka Miloš",
+        "additional_info": "rođen 1909. u s. Srdnji Turjanski - Otočac. U NOB-1942. Poginuo u Crnoj Gori 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 53.5,
+        "pdf_y": 472.5,
+        "pdf_x_end": 214.6,
+        "pdf_y_end": 511.2,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1909"
+      ]
+    }
   },
   {
     "soldier_id": "0002001539",
@@ -38196,7 +38579,21 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Ruišta",
-    "pdf_x_end": 453.3
+    "pdf_x_end": 453.3,
+    "other_sources": [
+      {
+        "soldier_id": "9010000786",
+        "name": "Dragišič Jandrije Milenko — Milan",
+        "additional_info": "općina Zrmanja: 1922, sluga, Srbin. Ustanik, od poč. 1942. borac bat. »Marko Orešković«. Poginuo u Ruištima sredinom 1942.",
+        "pdf_file": "hak-13-gracac.pdf",
+        "pdf_page": 40,
+        "pdf_x": 295.1,
+        "pdf_y": 370.0,
+        "pdf_x_end": 455.5,
+        "pdf_y_end": 404.4,
+        "ref_book": "hak-13-gracac"
+      }
+    ]
   },
   {
     "soldier_id": "0002001623",
@@ -43375,11 +43772,24 @@
         "pdf_x_end": 371.4,
         "pdf_y_end": 118.6,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0085001210",
+        "name": "Đorđević R Dragoslav",
+        "additional_info": "(1923, s. Majur -Svetozarevo), boracod 27.10.1944. u 1 /2. bataljonu, poginuo 5.4.1945. na Bandriširi rejon Gračanice.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 36.2,
+        "pdf_y": 473.8,
+        "pdf_x_end": 316.0,
+        "pdf_y_end": 500.1,
+        "unit_file": "7-srpska-soldiers.json"
       }
     ],
     "variants": {
       "born": [
-        "1924"
+        "1924",
+        "1923"
       ]
     }
   },
@@ -50207,6 +50617,18 @@
         "pdf_x_end": 223.6,
         "pdf_y_end": 136.1,
         "ref_book": "hak-20-gospic-perusic"
+      },
+      {
+        "soldier_id": "9014006398",
+        "name": "Francetić Mirko",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 114. Francetić Mirko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 282.6,
+        "pdf_y": 623.3,
+        "pdf_x_end": 359.8,
+        "pdf_y_end": 632.8,
+        "ref_book": "sremski-front-poginuli"
       }
     ],
     "ethnicity": "Hrvat",
@@ -54785,7 +55207,36 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Celje",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 459.9
+    "pdf_x_end": 459.9,
+    "other_sources": [
+      {
+        "soldier_id": "9014006410",
+        "name": "Goršek Josip",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 126. Goršek Josip.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 547.4,
+        "pdf_y": 652.1,
+        "pdf_x_end": 578.5,
+        "pdf_y_end": 671.2,
+        "pdf_x_left": 219.4,
+        "pdf_rects": [
+          [
+            547.4,
+            652.1,
+            578.5,
+            661.6
+          ],
+          [
+            219.4,
+            661.7,
+            244.7,
+            671.2
+          ]
+        ],
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0002002342",
@@ -61248,7 +61699,21 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Savković, Ljubovija",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 391.8
+    "pdf_x_end": 391.8,
+    "other_sources": [
+      {
+        "soldier_id": "0003010983",
+        "name": "Ilić Bogosava Milosav",
+        "additional_info": "rođen 1922. u Salkoviću - Valjevo. U NOB-1944. borac 3. ćete 2. bataljona. Živi u Valjevu.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 51,
+        "pdf_x": 209.0,
+        "pdf_y": 435.0,
+        "pdf_x_end": 370.1,
+        "pdf_y_end": 472.3,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002002607",
@@ -63114,7 +63579,17 @@
     "rank": "vodnik",
     "unit_detail": "1. bataljon",
     "birth_place": "Rudopolje, Otočac",
-    "pdf_x_end": 404.1
+    "pdf_x_end": 404.1,
+    "other_sources": [
+      {
+        "soldier_id": "9064011976",
+        "name": "Ivanišević Rade Mane",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Rudopolje: Ivanišević Rade Mane, rođen 1902. godine и Rudopolju, stupio u NOB 1943, borac.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=512",
+        "source_page": 508,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002002684",
@@ -65366,6 +65841,33 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=680",
         "source_page": 680,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9014006438",
+        "name": "Jakšić Milan",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 153. Jakšić Milan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 562.8,
+        "pdf_y": 729.2,
+        "pdf_x_end": 578.5,
+        "pdf_y_end": 748.3,
+        "pdf_x_left": 220.2,
+        "pdf_rects": [
+          [
+            562.8,
+            729.2,
+            578.5,
+            738.7
+          ],
+          [
+            220.2,
+            738.8,
+            272.6,
+            748.3
+          ]
+        ],
+        "ref_book": "sremski-front-poginuli"
       }
     ],
     "ethnicity": "Srbin",
@@ -68256,6 +68758,20 @@
     "unit_detail": "4. bataljon",
     "birth_year": "1923",
     "pdf_x_end": 456.7,
+    "other_sources": [
+      {
+        "soldier_id": "9013003331",
+        "name": "Jeftić Radomir",
+        "additional_info": "Prva lička proleterska brigada, Ilinci: Radomir Jeftić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 208.5,
+        "pdf_y": 657.5,
+        "pdf_x_end": 280.1,
+        "pdf_y_end": 667.2,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "28.06.1923"
   },
   {
@@ -69116,11 +69632,11 @@
   {
     "soldier_id": "0002002964",
     "last_name": "Jeličić",
-    "middle_name": "",
+    "middle_name": "Gliše",
     "first_name": "Rade",
     "additional_info": "1921, Doljani, 1. bataljon, poginuo i sahranjen 1944. u Doljanima",
-    "fathers_name": "",
-    "full_name": "Jeličić Rade",
+    "fathers_name": "Glišo",
+    "full_name": "Jeličić Gliše Rade",
     "birth_year": "1921",
     "pdf_page": 665,
     "pdf_y": 645.0,
@@ -69132,7 +69648,33 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 464.4,
     "death_date": "1944",
-    "death_place": "Doljani"
+    "death_place": "Doljani",
+    "other_sources": [
+      {
+        "soldier_id": "9022010766",
+        "name": "Jeličić (Gliša) Rade",
+        "additional_info": "rođen 1921, Smoljana (Bosanski Petrovac). Srbin, poginuo 1944. u NOBu, Prijedor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1012",
+        "source_page": 1012,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0013000487",
+        "name": "Jelićić Gliše Rade",
+        "additional_info": "borac, rođen 1921. godine u selu Smoljani, Bosanski Petrovac. Poginuo aprila 1944. godine na položaju Jànj kod Jajca.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 17.3,
+        "pdf_y": 413.0,
+        "pdf_x_end": 351.9,
+        "pdf_y_end": 430.9,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "soldier_id": "0002002965",
@@ -71449,7 +71991,21 @@
     "birth_place": "Makovište, Kosjerić",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 455.0
+    "pdf_x_end": 455.0,
+    "other_sources": [
+      {
+        "soldier_id": "9014006461",
+        "name": "Jevtić Milorad",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 176. Jevtić Milorad.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 449.8,
+        "pdf_y": 796.8,
+        "pdf_x_end": 521.9,
+        "pdf_y_end": 806.3,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0002003074",
@@ -75088,6 +75644,20 @@
     "birth_place": "Ripanj, Vračar",
     "occupation": "zemljoradnik",
     "pdf_x_end": 471.1,
+    "other_sources": [
+      {
+        "soldier_id": "0006002556",
+        "name": "Jovanović Aleksandra Ljubomir",
+        "additional_info": "1927. Ri panj, Beograd.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 37,
+        "pdf_x": 313.3,
+        "pdf_y": 342.8,
+        "pdf_x_end": 483.0,
+        "pdf_y_end": 359.1,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ],
     "birth_date": "06.01.1927"
   },
   {
@@ -81468,11 +82038,11 @@
   {
     "soldier_id": "0002003506",
     "last_name": "Kličković",
-    "middle_name": "",
+    "middle_name": "Pavla",
     "first_name": "Mile",
     "additional_info": "1910, Štipan, pekar, u NOB od 23. 7. 1941, 3. kordunaški bataljon, obavještajni oficir, poginuo 29. 9. 1943. kod Vukmanića (8. divizija)",
-    "fathers_name": "",
-    "full_name": "Kličković Mile",
+    "fathers_name": "Pavle",
+    "full_name": "Kličković Pavla Mile",
     "birth_year": "1910",
     "pdf_page": 685,
     "pdf_y": 621.4,
@@ -81486,7 +82056,29 @@
     "rank": "obavještajni oficir",
     "unit_detail": "3. kordunaški bataljon",
     "pdf_x_end": 454.6,
-    "death_place": "Vukmanić"
+    "death_place": "Vukmanić",
+    "other_sources": [
+      {
+        "soldier_id": "0060000856",
+        "name": "Kličković Pavla Mile",
+        "additional_info": "1910, pekar, Štipan, stupio u NOV 23. 7. 1941. u odred »Štipan«, komesar čete 2. brig, 8. div, poginuo 29. 9. 1942. kod Vukmanića",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 38,
+        "pdf_x": 126.3,
+        "pdf_y": 386.1,
+        "pdf_x_end": 284.0,
+        "pdf_y_end": 429.1,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.09.1942",
+          "place": "Vukmanić"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002003507",
@@ -83416,7 +84008,27 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "death_type": "umro",
     "birth_place": "Lešće",
-    "pdf_x_end": 321.8
+    "pdf_x_end": 321.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021028561",
+        "name": "Kolak (Jure) Dane",
+        "additional_info": "rođen 1924, Lešće (Otočac). Hrvat, poginuo 1943. u NOBu, Žute lokve",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1436",
+        "source_page": 1436,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Žute lokve",
+    "birth_year": "1924"
   },
   {
     "soldier_id": "0002003586",
@@ -86454,8 +87066,24 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025013900",
+        "name": "Kovačević (Mlađen) Velisav",
+        "additional_info": "rođen 1925, Kosjerić (selo) (Kosjerić). Srbin, poginuo 1945. u NOBu, Šid",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=503",
+        "source_page": 503,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Kosjerić (selo), Kosjerić",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1925"
   },
   {
     "soldier_id": "0002003719",
@@ -95007,8 +95635,29 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "unit_detail": "3. četa, 3. bataljon",
     "birth_place": "Petrčane, Zadar",
-    "birth_year": "",
-    "pdf_x_end": 460.4
+    "pdf_x_end": 460.4,
+    "birth_year": "1927",
+    "other_sources": [
+      {
+        "soldier_id": "9021056427",
+        "name": "Lisica (Mate) Ante",
+        "additional_info": "rođen 1927, Donje Petrčane (Zadar). Hrvat, poginuo 1943. u NOBu, Lika",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2760",
+        "source_page": 2760,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Lika"
   },
   {
     "soldier_id": "0002004084",
@@ -95801,6 +96450,18 @@
         "pdf_x_end": 354.1,
         "pdf_y_end": 480.8,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013003391",
+        "name": "Lučić Milomir",
+        "additional_info": "Prva lička proleterska brigada, Nijemci: Milomir Lučić.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 189.0,
+        "pdf_y": 320.9,
+        "pdf_x_end": 255.3,
+        "pdf_y_end": 330.6,
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -96509,8 +97170,53 @@
         "pdf_x_end": 599.9,
         "pdf_y_end": 480.8,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013003511",
+        "name": "Lukić Milojko",
+        "additional_info": "Prva lička proleterska brigada, Vrbanja: Milojko Lukić, vodnik.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 414.5,
+        "pdf_y": 668.6,
+        "pdf_x_end": 469.0,
+        "pdf_y_end": 689.1,
+        "pdf_x_left": 110.0,
+        "pdf_rects": [
+          [
+            414.5,
+            668.6,
+            469.0,
+            678.3
+          ],
+          [
+            110.0,
+            679.4,
+            162.8,
+            689.1
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "9025020326",
+        "name": "Lukić (Dragoljub) Milojko",
+        "additional_info": "rođen 1922, Veliko Marište (Mionica). Srbin, poginuo 1945. u NOBu, Vrbanja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=812",
+        "source_page": 812,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "birth_place": "Veliko Marište, Mionica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_date": "1945",
+    "birth_year": "1922"
   },
   {
     "soldier_id": "0002004143",
@@ -96678,6 +97384,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=678",
         "source_page": 678,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9010000835",
+        "name": "Lukić Save Nikola",
+        "additional_info": "općina Zrmanja: 1919, seljak, Srbin. Stupio u NOV 1943.. Poginuo kao komandir voda 1. bat. 1. brig. 6. div. na Zuleševici kod Mazina februara 1943.",
+        "pdf_file": "hak-13-gracac.pdf",
+        "pdf_page": 43,
+        "pdf_x": 327.4,
+        "pdf_y": 576.2,
+        "pdf_x_end": 488.1,
+        "pdf_y_end": 619.2,
+        "ref_book": "hak-13-gracac"
       }
     ],
     "birth_place": "Cerovac, Gračac",
@@ -98912,6 +99630,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1443",
         "source_page": 1443,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9064000975",
+        "name": "Majetić P. Nikola",
+        "additional_info": "Pali borci, Prozor: Majetić P. Nikola",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=437",
+        "source_page": 433,
+        "ref_book": "otocac-brinje"
       }
     ],
     "ethnicity": "Hrvat",
@@ -101569,18 +102295,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2506",
         "source_page": 2506,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0060001175",
+        "name": "Mandić Pavla Miloš",
+        "additional_info": "1904, Kartalija Selo, stupio u NOV 12. 1. 1942, borac 3. brig. 8. div, opaljen barutom po očima 20. 2. 1943, uhvaćen i ubijen od Nijemaca u Boričevcu kod Lapca",
+        "pdf_file": "8-kordunaska-divizija.pdf",
+        "pdf_page": 51,
+        "pdf_x": 309.3,
+        "pdf_y": 230.8,
+        "pdf_x_end": 470.4,
+        "pdf_y_end": 272.9,
+        "unit_file": "8-kordunaska-divizija-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_type": "ubijen",
     "borrowed": [
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Lapac"
+    "death_place": "Boričevac, Lapac",
+    "ethnicity": "Srbin",
+    "death_date": "1943"
   },
   {
     "soldier_id": "0002004354",
@@ -106245,9 +106983,26 @@
     "pdf_x": 137.4,
     "pdf_y_end": 380.9,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_year": "",
     "birth_place": "Kramlje, Niš",
-    "pdf_x_end": 471.5
+    "pdf_x_end": 471.5,
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0003011871",
+        "name": "Marković Dragutina Radisav",
+        "additional_info": "rođen 1924. u Kraljevu - Niš. U NOB-1944. Borac brigade.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 87,
+        "pdf_x": 203.2,
+        "pdf_y": 451.8,
+        "pdf_x_end": 363.9,
+        "pdf_y_end": 480.4,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002004560",
@@ -106623,8 +107378,42 @@
         "pdf_x_end": 493.0,
         "pdf_y_end": 558.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025035220",
+        "name": "Marković (Nikodin) Stevan",
+        "additional_info": "rođen 1921, Vujinovača (Valjevo). Srbin, poginuo od Nemaca 1944. u NOBu, Selo nemci,srem",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1301",
+        "source_page": 1301,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0001006738",
+        "name": "Marković Nikodina Stevan",
+        "additional_info": "1920, Vujinovača, Valjevo, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, III bataljon, borac, poginuo 05. 12. 1944, u Šidu",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 209,
+        "pdf_x": 48.4,
+        "pdf_y": 58.6,
+        "pdf_x_end": 355.7,
+        "pdf_y_end": 88.7,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "variants": {
+      "death": [
+        {
+          "date": "05.12.1944",
+          "place": "Šid"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002004573",
@@ -110848,7 +111637,21 @@
     "pdf_y_end": 441.1,
     "pdf_file": "prva-licka-proleterska.pdf",
     "occupation": "učenik",
-    "pdf_x_end": 466.1
+    "pdf_x_end": 466.1,
+    "other_sources": [
+      {
+        "soldier_id": "0074000523",
+        "name": "Mihailović Dragoljuba-Draže Gordana",
+        "additional_info": "u Brigadi od 12. 09. 1944. godine.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 48,
+        "pdf_x": 128.7,
+        "pdf_y": 212.6,
+        "pdf_x_end": 362.8,
+        "pdf_y_end": 231.1,
+        "unit_file": "22-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002004762",
@@ -110997,6 +111800,20 @@
     "birth_place": "Mali Borak, Lajkovac",
     "occupation": "zemljoradnik",
     "pdf_x_end": 466.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014006562",
+        "name": "Mihailović Svetolik",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 277. Mihailović Svetolik.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 48,
+        "pdf_x": 393.1,
+        "pdf_y": 577.4,
+        "pdf_x_end": 492.8,
+        "pdf_y_end": 586.9,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ],
     "birth_date": "01.05.1926"
   },
   {
@@ -113947,6 +114764,20 @@
     "death_date": "20.04.1945",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 457.6,
+    "other_sources": [
+      {
+        "soldier_id": "9013003303",
+        "name": "Milenković Tihomir",
+        "additional_info": "Prva lička proleterska brigada, Šid: Tihomir Milenković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 367.1,
+        "pdf_y": 556.7,
+        "pdf_x_end": 461.1,
+        "pdf_y_end": 566.4,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "25.03.1926"
   },
   {
@@ -119598,12 +120429,44 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=307",
         "source_page": 307,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9014006598",
+        "name": "Milošević Đuro",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 313. Milošević Đuro.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 48,
+        "pdf_x": 241.4,
+        "pdf_y": 702.6,
+        "pdf_x_end": 316.4,
+        "pdf_y_end": 712.1,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0003021276",
+        "name": "Milošević Đure Đuro",
+        "additional_info": "rođen 1925. u D. Lapcu. Borac 1. bataljona. Poginuo na Glamoču 21. 01. 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 67,
+        "pdf_x": 36.4,
+        "pdf_y": 364.9,
+        "pdf_x_end": 197.2,
+        "pdf_y_end": 402.2,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "21.01.1944",
+          "place": "Glamoč"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002005138",
@@ -120562,16 +121425,28 @@
         "pdf_x_end": 428.9,
         "pdf_y_end": 576.9,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0074000577",
+        "name": "Milovanović Ž Jordan",
+        "additional_info": "u Brigadi od 12. 09. 1944. godine. Poginuo 21. 01. 1945, Ilinci, Šid, Sremski front.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 158.6,
+        "pdf_y": 603.9,
+        "pdf_x_end": 453.5,
+        "pdf_y_end": 622.0,
+        "unit_file": "22-srpska-soldiers.json"
       }
     ],
-    "birth_place": "Valjevo",
+    "death_place": "Ilinci, Šid, Sremski front",
     "borrowed": [
       "birth_place",
       "death_place",
       "ethnicity"
     ],
+    "birth_place": "Valjevo",
     "ethnicity": "Srbin",
-    "death_place": "Šid",
     "birth_date": "11.04.1924"
   },
   {
@@ -121047,7 +121922,7 @@
       {
         "soldier_id": "0110001299",
         "name": "Milovanović Mijaila Stojan",
-        "additional_info": "rođen 1923, Skobalj, Lajkovac, zemljoradnik. Borac 3. bataljona do 10. 11. 1941. Ponovo stupio u NOVJ 1. 10.",
+        "additional_info": "rođen 1923, Skobalj, Lajkovac, zemljoradnik. Borac 3. bataljona do 10. 11. 1941. Ponovo stupio u NOVJ 1. 10. 1944.",
         "pdf_file": "posavski-odred.pdf",
         "pdf_page": 142,
         "pdf_x": 94.9,
@@ -123997,7 +124872,21 @@
     "death_date": "početkom aprila 1944",
     "death_place": "D. Lapac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 459.1
+    "pdf_x_end": 459.1,
+    "other_sources": [
+      {
+        "soldier_id": "0144000255",
+        "name": "Mišinič Jure",
+        "additional_info": "r. ? (Cres), p. 1944 (Bosna)",
+        "pdf_file": "1-2-prekomorska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 151.5,
+        "pdf_y": 582.9,
+        "pdf_x_end": 296.5,
+        "pdf_y_end": 589.9,
+        "unit_file": "1-2-prekomorska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002005324",
@@ -126616,7 +127505,25 @@
     "death_date": "12.04.1945",
     "death_place": "kod Strošinaca",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 469.2
+    "pdf_x_end": 469.2,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001008113",
+        "name": "Mraković Jovan",
+        "additional_info": "Hrvatska, Srbin, u NOB od 1944, u brigadi od 1944, I bataljon, borac, poginuo 12. 04. 1945, Strašinci",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 311,
+        "pdf_x": 44.8,
+        "pdf_y": 63.4,
+        "pdf_x_end": 352.2,
+        "pdf_y_end": 83.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002005442",
@@ -129809,6 +130716,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=434",
         "source_page": 430,
         "ref_book": "otocac-brinje"
+      },
+      {
+        "soldier_id": "0003021354",
+        "name": "Nenadić Tošin Rade",
+        "additional_info": "rođen u Rudopolju - Otočac. U NOB-1942. Vodni delegat u brigadi. Poginuo na Zemunskom mostu 21. 10. 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 71,
+        "pdf_x": 209.0,
+        "pdf_y": 268.4,
+        "pdf_x_end": 370.4,
+        "pdf_y_end": 307.1,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ]
   },
@@ -130299,7 +131218,32 @@
     "death_date": "16.04.1945",
     "death_place": "Đakovo",
     "pdf_x_end": 460.4,
-    "birth_date": "10.04.1921"
+    "birth_place": "Gornja Vrežina, Niš, Srbija",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0001008318",
+        "name": "Nešić Milorada Cvetko",
+        "additional_info": "1926, Gornja Vrežina, Niš, Srbija, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944, II bataljon, borac, poginuo 16. 04. 1945, Pleternica, SI. Požega",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 326,
+        "pdf_x": 58.0,
+        "pdf_y": 59.3,
+        "pdf_x_end": 366.3,
+        "pdf_y_end": 99.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "birth_date": "10.04.1921",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "soldier_id": "0002005606",
@@ -133883,7 +134827,17 @@
     "unit_detail": "3. bataljon",
     "birth_place": "Sinac",
     "pdf_x_end": 280.1,
-    "pdf_y_end": 240.2
+    "pdf_y_end": 240.2,
+    "other_sources": [
+      {
+        "soldier_id": "9064012596",
+        "name": "Nikšić Mile Stjepan",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Sinac: Nikšić Mile Stjepan, rođen 1924, stupio \".l NOB 1942, ol'icir u NOV.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=524",
+        "source_page": 520,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002005762",
@@ -134676,6 +135630,20 @@
     "rank": "vodnik",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 462.5,
+    "other_sources": [
+      {
+        "soldier_id": "0003021396",
+        "name": "Novaković Branislava Tihomir",
+        "additional_info": "komandir voda u 1. bataljonu. Ranjen umro i sahranjen u Semeljci 16. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 73,
+        "pdf_x": 35.6,
+        "pdf_y": 279.0,
+        "pdf_x_end": 196.2,
+        "pdf_y_end": 317.7,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
     "birth_date": "03.01.1925"
   },
   {
@@ -136042,6 +137010,24 @@
     "birth_place": "Tuzla",
     "occupation": "tekstilni radnik",
     "pdf_x_end": 471.2,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001008600",
+        "name": "Obradović Boška Goluban",
+        "additional_info": "Srbin, borac",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 346,
+        "pdf_x": 61.7,
+        "pdf_y": 392.9,
+        "pdf_x_end": 283.3,
+        "pdf_y_end": 402.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
     "birth_date": "02.09.1924"
   },
   {
@@ -138274,7 +139260,17 @@
     "rank": "desetar",
     "unit_detail": "4. bataljon",
     "birth_place": "Lešće, Otočac",
-    "pdf_x_end": 459.8
+    "pdf_x_end": 459.8,
+    "other_sources": [
+      {
+        "soldier_id": "9064011175",
+        "name": "Orešković Mika",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Ličko Lešce: Orešković Mika, rođen u L. Lešću, stupio u NOB 1944, borac u NOV.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=495",
+        "source_page": 491,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002005941",
@@ -142803,7 +143799,29 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Petrinja",
     "pdf_x_end": 356.9,
-    "unit_detail": "4. banijski bataljon"
+    "unit_detail": "4. banijski bataljon",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0047000323",
+        "name": "Paunović Mirka Simo",
+        "additional_info": "borac 1. čete 1. bataljona, rođen 1923, Jošavica, Petrinja, zemljoradnik, Srbin, u NOB od januara 1942. godine.",
+        "pdf_file": "borci-sutjeske-16-banijska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 226.9,
+        "pdf_y": 173.0,
+        "pdf_x_end": 396.9,
+        "pdf_y_end": 214.6,
+        "unit_file": "16-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002006132",
@@ -146839,11 +147857,11 @@
   {
     "soldier_id": "0002006299",
     "last_name": "Peinović",
-    "middle_name": "",
+    "middle_name": "Miloša",
     "first_name": "Mladen",
     "additional_info": "iz Tuka, T. Korenica, vodnik",
-    "fathers_name": "",
-    "full_name": "Peinović Mladen",
+    "fathers_name": "Miloš",
+    "full_name": "Peinović Miloša Mladen",
     "pdf_page": 789,
     "pdf_y": 537.9,
     "pdf_x": 122.2,
@@ -146851,7 +147869,31 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "rank": "vodnik",
     "birth_place": "Tuk, T. Korenica",
-    "pdf_x_end": 335.2
+    "pdf_x_end": 335.2,
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Bosna",
+    "other_sources": [
+      {
+        "soldier_id": "0003021539",
+        "name": "Peinović Miloša Mladen",
+        "additional_info": "rođen 1926. u s. Tuk - T. Korenica. U NOB-1941. Komandir ćete u 2. bataljonu. Poginuo u Bosni 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 80,
+        "pdf_x": 231.8,
+        "pdf_y": 154.2,
+        "pdf_x_end": 392.6,
+        "pdf_y_end": 192.9,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002006300",
@@ -154669,6 +155711,20 @@
     "birth_place": "Dvorska, Krupanj",
     "occupation": "zemljoradnik",
     "pdf_x_end": 461.9,
+    "other_sources": [
+      {
+        "soldier_id": "9014006710",
+        "name": "Petrović Staniša",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 425. Petrović Staniša.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 453.3,
+        "pdf_y": 508.1,
+        "pdf_x_end": 536.4,
+        "pdf_y_end": 517.6,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ],
     "birth_date": "03.04.1926"
   },
   {
@@ -155587,6 +156643,18 @@
         "pdf_x_end": 580.5,
         "pdf_y_end": 373.3,
         "ref_book": "hak-14-donji-lapac"
+      },
+      {
+        "soldier_id": "9014006713",
+        "name": "Pilja Dušan",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 428. Pilja Dušan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 408.3,
+        "pdf_y": 517.7,
+        "pdf_x_end": 466.8,
+        "pdf_y_end": 527.2,
+        "ref_book": "sremski-front-poginuli"
       }
     ]
   },
@@ -157953,12 +159021,6 @@
     "pdf_y_end": 299.4,
     "pdf_file": "prva-licka-proleterska.pdf",
     "pdf_x_end": 458.5,
-    "birth_place": "Raduč, Gospić",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "početkom augusta 1944",
-    "death_place": "između Vareša i Visokog",
-    "unit_detail": "2. bataljon",
     "other_sources": [
       {
         "soldier_id": "9005000946",
@@ -157975,8 +159037,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=645",
         "source_page": 645,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0118000635",
+        "name": "Pokrajac M Ilija",
+        "additional_info": "iz Raduča, Medak, Gospić, poginuo 25. VIII 1944. u Četojevici. Sahranjen u CetOjevici.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=398",
+        "source_page": 393,
+        "unit_file": "3-licka-soldiers.json"
       }
     ],
+    "birth_place": "Raduč, Gospić",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "početkom augusta 1944",
+    "death_place": "između Vareša i Visokog",
+    "unit_detail": "2. bataljon",
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
@@ -159188,6 +160264,32 @@
     "occupation": "zemljoradnik",
     "rank": "desetar",
     "pdf_x_end": 463.4,
+    "other_sources": [
+      {
+        "soldier_id": "9014006719",
+        "name": "Popović Mihajlo",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 434. Popović Mihajlo.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 293.3,
+        "pdf_y": 537.2,
+        "pdf_x_end": 372.7,
+        "pdf_y_end": 546.7,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013003438",
+        "name": "Popović Mihajlo",
+        "additional_info": "Prva lička proleterska brigada, Batrovci: Mihajlo Popović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 236.4,
+        "pdf_y": 458.4,
+        "pdf_x_end": 313.6,
+        "pdf_y_end": 468.1,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "15.08.1925"
   },
   {
@@ -162293,7 +163395,21 @@
     "death_date": "28.04.1943",
     "death_place": "Brušani",
     "rank": "mitraljezac",
-    "pdf_x_end": 461.5
+    "pdf_x_end": 461.5,
+    "other_sources": [
+      {
+        "soldier_id": "9009000912",
+        "name": "Prijić Marka Mićo",
+        "additional_info": "Gornji Srb, općina Srb: 1926, seljak, Srbin. Stupio u NOB jula 1942, Poginuo kao komandir odjeljenja 1. bat. 1. brig. 6. div. u Brušanima kod Gospića aprila 1943.",
+        "pdf_file": "hak-14-donji-lapac.pdf",
+        "pdf_page": 43,
+        "pdf_x": 265.4,
+        "pdf_y": 659.5,
+        "pdf_x_end": 438.1,
+        "pdf_y_end": 702.0,
+        "ref_book": "hak-14-donji-lapac"
+      }
+    ]
   },
   {
     "soldier_id": "0002006948",
@@ -162317,7 +163433,38 @@
     "death_place": "Kosinj",
     "rank": "delegat voda",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 460.8
+    "pdf_x_end": 460.8,
+    "other_sources": [
+      {
+        "soldier_id": "0003000978",
+        "name": "Prijić Miče Mićo",
+        "additional_info": "rođen 1920. u G. Srb. Borac 1. čete 2. bataljona. Poginuo na Vratniku 1943. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 36,
+        "pdf_x": 126.7,
+        "pdf_y": 501.9,
+        "pdf_x_end": 484.9,
+        "pdf_y_end": 519.3,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003021698",
+        "name": "Prijić Mile Mićo",
+        "additional_info": "rođen 1920. u G. Srb. Borac I. čete 2. bataljona. Poginuo na Vratniku 1943. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 89,
+        "pdf_x": 37.0,
+        "pdf_y": 167.9,
+        "pdf_x_end": 198.0,
+        "pdf_y_end": 197.5,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "soldier_id": "0002006949",
@@ -165311,11 +166458,11 @@
   {
     "soldier_id": "0002007081",
     "last_name": "Radivojević",
-    "middle_name": "",
+    "middle_name": "Svetozara",
     "first_name": "Milorad",
     "additional_info": "iz Vreoca, u NOB od 20. 9. 1944, 3. bataljon, poginuo 18. 10. 1944. kod Vreoca",
-    "fathers_name": "",
-    "full_name": "Radivojević Milorad",
+    "fathers_name": "Svetozar",
+    "full_name": "Radivojević Svetozara Milorad",
     "pdf_page": 818,
     "pdf_y": 457.8,
     "pdf_x": 135.3,
@@ -165335,14 +166482,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=689",
         "source_page": 689,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0006005675",
+        "name": "Radivojević Svetozara Milorad",
+        "additional_info": "1924. Vreoci, Lazarevac. Poginuo 1944. u selu Junkovac, kod Lazarevca.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 78,
+        "pdf_x": 109.4,
+        "pdf_y": 505.7,
+        "pdf_x_end": 280.8,
+        "pdf_y_end": 530.1,
+        "unit_file": "13-proleterska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1924",
     "borrowed": [
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1924"
+    "ethnicity": "Srbin"
   },
   {
     "soldier_id": "0002007082",
@@ -166368,6 +167527,14 @@
         "ref_book": "sremski-front-poginuli"
       },
       {
+        "soldier_id": "9025033797",
+        "name": "Radojčić (Obren) Slobodan",
+        "additional_info": "rođen 1922, Čučuge (Ub). Srbin, poginuo 1944. u NOBu, Radinci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1268",
+        "source_page": 1268,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0003001022",
         "name": "Radojćić Obrena Slobodan",
         "additional_info": "rođen 1923. u s. Čučuga-Ub. Borac 3. bataljona. Poginuo na Radincima-Srem 26. 10. 1944. godine",
@@ -166396,10 +167563,12 @@
     "borrowed": [
       "birth_place",
       "birth_year",
-      "death_date"
+      "death_date",
+      "ethnicity"
     ],
     "birth_place": "Čučuga",
-    "death_date": "26.10.1944"
+    "death_date": "26.10.1944",
+    "ethnicity": "Srbin"
   },
   {
     "soldier_id": "0002007125",
@@ -167166,16 +168335,50 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=464",
         "source_page": 464,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0001010190",
+        "name": "Radosavljević T Vojislav",
+        "additional_info": "Srbija, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944, I bataljon, poginuo 12. 04. 1945, Strašinci, Vukovar",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 110,
+        "pdf_x": 62.8,
+        "pdf_y": 58.8,
+        "pdf_x_end": 370.3,
+        "pdf_y_end": 89.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001501935",
+        "name": "Radosavljević T Vojislav",
+        "additional_info": "umro od raia 12. aprila 1944. u Strašincima.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 81,
+        "pdf_x": 63.4,
+        "pdf_y": 581.3,
+        "pdf_y_end": 589.3,
+        "pdf_x_end": 423.1,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
-    "birth_place": "Oglađenovac, Kamenica",
+    "birth_place": "Srbija",
     "borrowed": [
       "birth_place",
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
     "ethnicity": "Srbin",
-    "birth_year": "1922"
+    "occupation": "zemljoradnik",
+    "birth_year": "1922",
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1944",
+          "place": "Strašinci"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002007159",
@@ -172063,6 +173266,20 @@
     "birth_place": "Drenovci, Kosjerić",
     "occupation": "zemljoradnik",
     "pdf_x_end": 457.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014006742",
+        "name": "Ralić Milan",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 457. Ralić Milan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 238.1,
+        "pdf_y": 604.6,
+        "pdf_x_end": 298.4,
+        "pdf_y_end": 614.1,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ],
     "birth_date": "21.05.1925"
   },
   {
@@ -173724,7 +174941,39 @@
     "death_date": "17.08.1944",
     "death_place": "Zelengora",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 466.9
+    "pdf_x_end": 466.9,
+    "other_sources": [
+      {
+        "soldier_id": "0003001090",
+        "name": "Rašeta Ilije Dane",
+        "additional_info": "rođen 1914. u s. Gaine-D. Lapac. Borac 3. čete 4. bataljona. Poginuo u Bosni-1944. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 40,
+        "pdf_x": 120.6,
+        "pdf_y": 411.3,
+        "pdf_x_end": 478.7,
+        "pdf_y_end": 428.6,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003021913",
+        "name": "Rašeta Ilije Dane",
+        "additional_info": "rođen 1912. u s. Gaine - D. Lapac. U NOB-1942. Borac 3. čete 4. bataljona. Poginuo u Bosni 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 98,
+        "pdf_x": 51.2,
+        "pdf_y": 464.0,
+        "pdf_x_end": 212.2,
+        "pdf_y_end": 504.2,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1914",
+        "1912"
+      ]
+    }
   },
   {
     "soldier_id": "0002007437",
@@ -174182,7 +175431,21 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "rank": "delegat voda",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 462.7
+    "pdf_x_end": 462.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014006747",
+        "name": "Rašula David",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 462. Rašula David.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 343.7,
+        "pdf_y": 614.2,
+        "pdf_x_end": 406.8,
+        "pdf_y_end": 623.7,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0002007459",
@@ -176019,7 +177282,52 @@
     "death_type": "poginuo",
     "death_date": "06.04.1945",
     "death_place": "Batrovci",
-    "pdf_x_end": 462.9
+    "pdf_x_end": 462.9,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0001010633",
+        "name": "Ristivojević Bogoljuba Petar",
+        "additional_info": "1926, Bobova, Valjevo, Srbija, Srbin, zemljoradnik, u NOB od septembra 1944, u brigadi od septembra 1944, borac, poginuo 06. 04.1945, Šarengrad, Vukovar",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 143,
+        "pdf_x": 47.0,
+        "pdf_y": 446.2,
+        "pdf_x_end": 354.3,
+        "pdf_y_end": 477.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0002007540",
+        "name": "Ristivojević Bogoljubov Petar",
+        "additional_info": "25. 3. 1926, Suvopolje, Valjevo, zemljoradnik, u NOB od 3. 11. 1944",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 835,
+        "pdf_x": 128.0,
+        "pdf_y": 348.8,
+        "pdf_x_end": 462.9,
+        "pdf_y_end": 368.6,
+        "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003021964",
+        "name": "Ristivojević Bogoljuba Petar",
+        "additional_info": "rođen 1926. u Stava - Valjevo. U NOB-1944. Borac 2. čete 2. bataljona. Poginuo u Sremskoj Mitrovici 06. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 100,
+        "pdf_x": 223.4,
+        "pdf_y": 416.3,
+        "pdf_x_end": 384.3,
+        "pdf_y_end": 463.2,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "birth_date": "25.03.1926"
   },
   {
     "soldier_id": "0002007540",
@@ -176062,6 +177370,18 @@
         "pdf_x_end": 354.3,
         "pdf_y_end": 477.3,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0002007539",
+        "name": "Ristivojević Bogoljuba Petar",
+        "additional_info": "1926, Valjevo, poginuo 6. 4. 1945. kod Batrovaca",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 835,
+        "pdf_x": 128.0,
+        "pdf_y": 324.8,
+        "pdf_x_end": 462.9,
+        "pdf_y_end": 344.6,
+        "unit_file": "soldiers.json"
       },
       {
         "soldier_id": "0003021964",
@@ -177088,7 +178408,17 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Ličko Lešće",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 413.4
+    "pdf_x_end": 413.4,
+    "other_sources": [
+      {
+        "soldier_id": "9064011140",
+        "name": "Rubčić Dane Franjo",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Ličko Lešce: Rubčić Dane Franjo, rođen 1924. u L. Lešću, stupio u NOB 1942, komandir čete, umro 1968.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=494",
+        "source_page": 490,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002007588",
@@ -177159,7 +178489,17 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Lešće",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 401.5
+    "pdf_x_end": 401.5,
+    "other_sources": [
+      {
+        "soldier_id": "9064000328",
+        "name": "Rubčić Dane Joso",
+        "additional_info": "Pali borci, Ličko Lesce: Rubčić Dane Joso, rođen 1926. u L. Lešću, poginuo 1944. u borbi sa ustašama u Čoviću.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=422",
+        "source_page": 418,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002007592",
@@ -185186,6 +186526,32 @@
     "pdf_x_end": 473.2,
     "death_date": "06.05.1945",
     "death_place": "Vrbovec",
+    "other_sources": [
+      {
+        "soldier_id": "9014006776",
+        "name": "Stamenković Ilija",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 491. Stamenković Ilija.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 461.1,
+        "pdf_y": 692.7,
+        "pdf_x_end": 547.6,
+        "pdf_y_end": 702.2,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013003527",
+        "name": "Stamenković Ilija",
+        "additional_info": "Prva lička proleterska brigada, Vrbanja: Ilija Stamenković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 25,
+        "pdf_x": 183.9,
+        "pdf_y": 179.9,
+        "pdf_x_end": 267.7,
+        "pdf_y_end": 189.6,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "29.07.1922"
   },
   {
@@ -188506,6 +189872,32 @@
     "birth_place": "Karanovac Varvarin",
     "occupation": "opančar",
     "pdf_x_end": 469.1,
+    "other_sources": [
+      {
+        "soldier_id": "9014006785",
+        "name": "Stefanović Borivoje",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 500. Stefanović Borivoje.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 366.3,
+        "pdf_y": 721.5,
+        "pdf_x_end": 461.0,
+        "pdf_y_end": 731.0,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013003312",
+        "name": "Stefanović Borivoje",
+        "additional_info": "Prva lička proleterska brigada, Šid: Borivoje Stefanović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 251.1,
+        "pdf_y": 588.4,
+        "pdf_x_end": 343.7,
+        "pdf_y_end": 598.1,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "15.08.1916"
   },
   {
@@ -189838,7 +191230,36 @@
         "pdf_x_end": 453.8,
         "pdf_y_end": 740.6,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0001011668",
+        "name": "Stepanović Jovanov Zdravko",
+        "additional_info": "Srbin, u NOB od 1944, u brigadi od 1944, VI bataljon, borac, poginuo 07. 04. 1945, Adaševci, Šid",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 220,
+        "pdf_x": 56.9,
+        "pdf_y": 188.6,
+        "pdf_x_end": 364.1,
+        "pdf_y_end": 209.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001301696",
+        "name": "Stepanović Zdrako",
+        "additional_info": "Umro od zadobijenih rana 7. 4. 1945, Adaševci, Šid. Uveden u registar 1. Armije AVII, RPK — 81.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 59,
+        "pdf_x": 411.1,
+        "pdf_y": 625.1,
+        "pdf_x_end": 561.1,
+        "pdf_y_end": 659.9,
+        "pdf_x_left": 407.1,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -190715,7 +192136,21 @@
     "death_date": "04.05.1945",
     "death_place": "Čazma",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 460.7
+    "pdf_x_end": 460.7,
+    "other_sources": [
+      {
+        "soldier_id": "9014006792",
+        "name": "Stodić Slavko",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 507. Stodić Slavko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 451.7,
+        "pdf_y": 740.7,
+        "pdf_x_end": 520.0,
+        "pdf_y_end": 750.2,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0002008220",
@@ -191607,6 +193042,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1350",
         "source_page": 1350,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014006797",
+        "name": "Stojanović Božidar",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 512. Stojanović Božidar.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 49,
+        "pdf_x": 350.8,
+        "pdf_y": 759.9,
+        "pdf_x_end": 442.2,
+        "pdf_y_end": 769.4,
+        "ref_book": "sremski-front-poginuli"
       }
     ],
     "ethnicity": "Srbin",
@@ -194454,7 +195901,17 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 467.7,
     "death_date": "1942",
-    "death_place": "Brezovac"
+    "death_place": "Brezovac",
+    "other_sources": [
+      {
+        "soldier_id": "0118000806",
+        "name": "Surla Đure Branko",
+        "additional_info": "iz Dobašnica, umro u bolnici, 28. IX 1942.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=408",
+        "source_page": 403,
+        "unit_file": "3-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002008396",
@@ -194984,6 +196441,18 @@
         "pdf_x_end": 193.6,
         "pdf_y_end": 457.1,
         "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003001239",
+        "name": "Svilar Milin Slavko",
+        "additional_info": "rođen u s. Turjanski - T. Korenica. Komandir 2. čete, 3. bataljona. Poginuo kod Ilinaca - Srem 1944. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 45,
+        "pdf_x": 122.6,
+        "pdf_y": 541.5,
+        "pdf_x_end": 482.0,
+        "pdf_y_end": 558.9,
+        "unit_file": "druga-licka-soldiers.json"
       }
     ]
   },
@@ -195124,10 +196593,31 @@
     "pdf_x": 134.2,
     "pdf_y_end": 576.2,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_year": "",
     "birth_place": "Petrinja",
     "pdf_x_end": 364.8,
-    "unit_detail": "4. banijski bataljon"
+    "unit_detail": "4. banijski bataljon",
+    "birth_year": "1923",
+    "other_sources": [
+      {
+        "soldier_id": "9021031299",
+        "name": "Svrabić (Gligo) Dragan",
+        "additional_info": "rođen 1923, Jošavica (Petrinja). Srbin, poginuo 1943. u NOBu, Veljun",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1591",
+        "source_page": 1591,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Veljun"
   },
   {
     "soldier_id": "0002008421",
@@ -196635,7 +198125,21 @@
     "pdf_y_end": 277.2,
     "pdf_file": "prva-licka-proleterska.pdf",
     "birth_place": "Debelo Brdo, T. Korenica",
-    "pdf_x_end": 471.5
+    "pdf_x_end": 471.5,
+    "other_sources": [
+      {
+        "soldier_id": "0003014460",
+        "name": "Šijan Mile Nikola",
+        "additional_info": "rođen 1923. u Debelom Brdu - T. Korenica. U NOB-1941. Komandir ćete u 4. bataljonu. Poručnik - živi u Kolutu.",
+        "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
+        "pdf_page": 162,
+        "pdf_x": 46.7,
+        "pdf_y": 322.4,
+        "pdf_x_end": 208.0,
+        "pdf_y_end": 361.1,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ]
   },
   {
     "soldier_id": "0002008484",
@@ -196793,7 +198297,18 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "unit_detail": "3. bataljon",
     "birth_place": "Sinac",
-    "pdf_x_end": 387.0
+    "pdf_x_end": 387.0,
+    "other_sources": [
+      {
+        "soldier_id": "9064012591",
+        "name": "Šiljković Dane Danko",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Sinac: Šiljković Dane Danko, rođen 1922, stupio u NOB 1941.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=524",
+        "source_page": 520,
+        "role": "activist",
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002008491",
@@ -205927,7 +207442,17 @@
     "pdf_file": "prva-licka-proleterska.pdf",
     "unit_detail": "3. bataljon",
     "birth_place": "Sinac",
-    "pdf_x_end": 392.6
+    "pdf_x_end": 392.6,
+    "other_sources": [
+      {
+        "soldier_id": "9064012610",
+        "name": "Tonković Frane Stjepan",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Sinac: Tonković Frane Stjepan, rođen 1916, stupio u NOB 1942, st. vodnik u NOV.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=525",
+        "source_page": 521,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002008870",
@@ -211514,7 +213039,23 @@
     "rank": "desetar",
     "unit_detail": "3. bataljon",
     "birth_place": "Grabovac, Slunj",
-    "pdf_x_end": 470.2
+    "pdf_x_end": 470.2,
+    "other_sources": [
+      {
+        "soldier_id": "9021043614",
+        "name": "Vein (Đuro) Bogdan",
+        "additional_info": "rođen 1927, Grabovac Drežnički (Slunj). Srbin, poginuo 1943. u NOBu, Rudopolje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2109",
+        "source_page": 2109,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1927"
   },
   {
     "soldier_id": "0002009128",
@@ -213036,7 +214577,17 @@
     "pdf_x": 130.3,
     "pdf_y_end": 161.5,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "pdf_x_end": 221.3
+    "pdf_x_end": 221.3,
+    "other_sources": [
+      {
+        "soldier_id": "9064012644",
+        "name": "Vidak Nikole Mićan",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Dugi Do: Vidak Nikole Mićan, rođen 1907. u D. Dolu, stupio u NOB 1942, vodnik u NOV.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=525",
+        "source_page": 521,
+        "ref_book": "otocac-brinje"
+      }
+    ]
   },
   {
     "soldier_id": "0002009195",
@@ -218949,6 +220500,32 @@
     "birth_place": "Dragosinjci, Kraljevo",
     "occupation": "zemljoradnik",
     "pdf_x_end": 461.8,
+    "other_sources": [
+      {
+        "soldier_id": "9014006877",
+        "name": "Vuksanović Dragiša",
+        "additional_info": "Poginuli borci Prve ličke proleterske narodnooslobodilačke udarne brigade »Marko Orešković«: 592. Vuksanović Dragiša.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 50,
+        "pdf_x": 342.3,
+        "pdf_y": 469.1,
+        "pdf_x_end": 436.5,
+        "pdf_y_end": 478.6,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013003499",
+        "name": "Vuksanović Dragiša",
+        "additional_info": "Prva lička proleterska brigada, Lipovac: Dragiša Vuksanović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 243.8,
+        "pdf_y": 633.1,
+        "pdf_x_end": 337.7,
+        "pdf_y_end": 642.8,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
     "birth_date": "15.08.1925"
   },
   {
@@ -223316,6 +224893,30 @@
     "birth_place": "Bačevci, Valjevo",
     "occupation": "zemljoradnik",
     "pdf_x_end": 467.8,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "13.09.1944",
+    "death_place": "Mionica",
+    "other_sources": [
+      {
+        "soldier_id": "0001013802",
+        "name": "Žarković Velimira Žarko",
+        "additional_info": "Bačevci, Valjevo, Srbija, Srbin, zemljoradnik, u NOB od septembra 1944, u brigadi od septembra 1944, borac, poginuo 13. 09. 1944, kod Mionice",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 380,
+        "pdf_x": 61.4,
+        "pdf_y": 98.6,
+        "pdf_x_end": 368.5,
+        "pdf_y_end": 131.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
     "birth_date": "17.12.1924"
   },
   {

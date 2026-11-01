@@ -1881,7 +1881,53 @@
     "pdf_y_end": 586.1,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000091",
-    "pdf_x_end": 459.1
+    "pdf_x_end": 459.1,
+    "other_sources": [
+      {
+        "soldier_id": "0070000081",
+        "name": "Bitenc Boris",
+        "additional_info": "zvani Bojan; * 1918 Ljubljana † 1943 Kočevje",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 2,
+        "pdf_x": 137.6,
+        "pdf_y": 607.1,
+        "pdf_x_end": 291.6,
+        "pdf_y_end": 613.6,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070200020",
+        "name": "Bitenc Boris",
+        "additional_info": "zvani Bojan; * 1918 Ljubljana † 1944 Lehen pri Ribnici na Pohorju",
+        "pdf_file": "tomsiceva-1.pdf",
+        "pdf_page": 5,
+        "pdf_x": 173.5,
+        "pdf_y": 452.4,
+        "pdf_y_end": 469.0,
+        "pdf_x_end": 419.5,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100254",
+        "name": "Bitenc Boris",
+        "additional_info": "zvani Bojan; * 1918 Ljubljana † 1944 Štajerska (2.UB.)",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 4,
+        "pdf_x": 110.7,
+        "pdf_y": 399.8,
+        "pdf_x_end": 409.3,
+        "pdf_y_end": 409.2,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "Kočevje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bizjak",
@@ -2652,7 +2698,57 @@
     "pdf_y_end": 445.8,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000129",
-    "pdf_x_end": 544.8
+    "pdf_x_end": 544.8,
+    "other_sources": [
+      {
+        "soldier_id": "0063000117",
+        "name": "Božič Ivan",
+        "additional_info": "1923, Ljubljana",
+        "pdf_file": "dvanajsta.pdf",
+        "pdf_page": 7,
+        "pdf_x": 51.6,
+        "pdf_y": 334.0,
+        "pdf_x_end": 149.1,
+        "pdf_y_end": 341.0,
+        "unit_file": "dvanajsta-soldiers.json"
+      },
+      {
+        "soldier_id": "0070000119",
+        "name": "Božič Ivan",
+        "additional_info": "zvani Jovo; * 1923 Ljubljana",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 3,
+        "pdf_x": 138.2,
+        "pdf_y": 457.5,
+        "pdf_x_end": 260.5,
+        "pdf_y_end": 465.5,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100331",
+        "name": "Božić Ivan",
+        "additional_info": "zvani Jovo; * 1923 Ljubljana",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 5,
+        "pdf_x": 135.5,
+        "pdf_y": 226.6,
+        "pdf_y_end": 233.6,
+        "pdf_x_end": 255.7,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100333",
+        "name": "Božič Ivan",
+        "additional_info": "zvani Jovo; * 1923 Ljubljana",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 52,
+        "pdf_x": 146.3,
+        "pdf_y": 326.5,
+        "pdf_y_end": 334.4,
+        "pdf_x_end": 275.6,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Božič",
@@ -3680,7 +3776,21 @@
     "pdf_y_end": 575.0,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000180",
-    "pdf_x_end": 520.2
+    "pdf_x_end": 520.2,
+    "other_sources": [
+      {
+        "soldier_id": "0070100447",
+        "name": "Butara Miha",
+        "additional_info": "zvani Aleks; * 1922 Cerklje ob Krki (2.UB.)",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 5,
+        "pdf_x": 133.6,
+        "pdf_y": 594.8,
+        "pdf_x_end": 311.0,
+        "pdf_y_end": 601.8,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bučar",
@@ -3890,7 +4000,6 @@
     "fathers_name": "",
     "full_name": "Celin Andrej",
     "additional_info": "* Kuteževo 37, Ilirska Bistrica; † po vojni",
-    "birth_year": "",
     "birth_place": "Kuteževo, Ilirska Bistrica",
     "pdf_page": 28,
     "pdf_y": 759.5,
@@ -3900,7 +4009,25 @@
     "soldier_id": "0069000191",
     "pdf_x_end": 521.2,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_year": "1903",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0070100468",
+        "name": "Celin Andrej",
+        "additional_info": "* 1903 Kuteževo",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 6,
+        "pdf_x": 134.1,
+        "pdf_y": 225.7,
+        "pdf_x_end": 248.7,
+        "pdf_y_end": 233.7,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Celin",
@@ -3960,7 +4087,6 @@
     "fathers_name": "",
     "full_name": "Celin Ivan",
     "additional_info": "* Kuteževo 41, Ilirska Bistrica",
-    "birth_year": "",
     "birth_place": "Kuteževo, Ilirska Bistrica",
     "pdf_page": 29,
     "pdf_y": 388.7,
@@ -3968,7 +4094,25 @@
     "pdf_y_end": 407.3,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000195",
-    "pdf_x_end": 387.7
+    "pdf_x_end": 387.7,
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0167000230",
+        "name": "Celin Ivan",
+        "additional_info": "1921, Kuteževo pri Ilirski Bistrici",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 3,
+        "pdf_x": 41.9,
+        "pdf_y": 237.1,
+        "pdf_x_end": 116.1,
+        "pdf_y_end": 249.4,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Cenc",
@@ -4571,7 +4715,74 @@
     "pdf_y_end": 801.8,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000218",
-    "pdf_x_end": 416.4
+    "pdf_x_end": 416.4,
+    "other_sources": [
+      {
+        "soldier_id": "0065000125",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; 1923, Sela, Novo mesto",
+        "pdf_file": "zidanskova.pdf",
+        "pdf_page": 3,
+        "pdf_x": 275.5,
+        "pdf_y": 599.4,
+        "pdf_x_end": 381.8,
+        "pdf_y_end": 615.8,
+        "unit_file": "zidanskova-soldiers.json"
+      },
+      {
+        "soldier_id": "0065010006",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; Poveljniški kader Zidanškove brigade: komandanti, od 27. 4. 1945 do 29. 5. 1945.",
+        "pdf_file": "zidanskova-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 277.6,
+        "pdf_y": 599.5,
+        "pdf_x_end": 361.7,
+        "pdf_y_end": 608.0,
+        "unit_file": "zidanskova-soldiers.json"
+      },
+      {
+        "soldier_id": "0070000170",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922 Sela pri Šentjerneju",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 4,
+        "pdf_x": 131.2,
+        "pdf_y": 420.2,
+        "pdf_x_end": 278.9,
+        "pdf_y_end": 426.7,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100545",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922 Sela pri Šentjerneju",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 6,
+        "pdf_x": 133.8,
+        "pdf_y": 520.8,
+        "pdf_y_end": 527.8,
+        "pdf_x_end": 310.8,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070100546",
+        "name": "Cvelbar Viktor",
+        "additional_info": "zvani Stane; * 1922 Sela pri Šentjerneju",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 54,
+        "pdf_x": 130.3,
+        "pdf_y": 627.4,
+        "pdf_y_end": 635.4,
+        "pdf_x_end": 320.8,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Cvetko",
@@ -4824,6 +5035,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=122",
         "source_page": 122,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0070100584",
+        "name": "Delost Anton",
+        "additional_info": "* 1920 Koritnice 14 † 1944 Ravne pri Šoštanju",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 7,
+        "pdf_x": 131.9,
+        "pdf_y": 604.4,
+        "pdf_x_end": 351.8,
+        "pdf_y_end": 611.4,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
     "ethnicity": "Slovenac",
@@ -8374,7 +8597,21 @@
     "pdf_y_end": 725.0,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000403",
-    "pdf_x_end": 377.9
+    "pdf_x_end": 377.9,
+    "other_sources": [
+      {
+        "soldier_id": "0141000118",
+        "name": "Gorkič Dušan",
+        "additional_info": "Ljubljana",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 2,
+        "pdf_x": 171.8,
+        "pdf_y": 95.3,
+        "pdf_x_end": 267.4,
+        "pdf_y_end": 102.8,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gornik",
@@ -9065,7 +9302,21 @@
     "pdf_y_end": 588.9,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000436",
-    "pdf_x_end": 398.1
+    "pdf_x_end": 398.1,
+    "other_sources": [
+      {
+        "soldier_id": "0070101044",
+        "name": "Grgič Silvo",
+        "additional_info": "zvani Šimen; * 1925 Ljubljana",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 61,
+        "pdf_x": 135.7,
+        "pdf_y": 332.9,
+        "pdf_x_end": 273.6,
+        "pdf_y_end": 340.9,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grgič",
@@ -9315,7 +9566,26 @@
     "pdf_y_end": 369.9,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000449",
-    "pdf_x_end": 530.4
+    "pdf_x_end": 530.4,
+    "occupation": "mlinar",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0164000806",
+        "name": "Grmšek Martin",
+        "additional_info": "rojen 15.10.1913, Veliki Dol; v NOV in POS od VII. 1944; mlinar; Bil je v 3. četi 2. bataljona odreda, od oktobra 1944 pa v 13. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 86,
+        "pdf_x": 74.4,
+        "pdf_y": 111.4,
+        "pdf_x_end": 501.3,
+        "pdf_y_end": 131.4,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "15.10.1913"
   },
   {
     "last_name": "Grobelnik",
@@ -9772,7 +10042,21 @@
     "pdf_y_end": 380.9,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000472",
-    "pdf_x_end": 397.8
+    "pdf_x_end": 397.8,
+    "other_sources": [
+      {
+        "soldier_id": "0065000246",
+        "name": "Hafner Valentin",
+        "additional_info": "zvani Bojan; 1918, Količevo, Domžale",
+        "pdf_file": "zidanskova.pdf",
+        "pdf_page": 5,
+        "pdf_x": 415.4,
+        "pdf_y": 577.0,
+        "pdf_x_end": 531.4,
+        "pdf_y_end": 595.4,
+        "unit_file": "zidanskova-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Haler",
@@ -10665,7 +10949,7 @@
     "first_name": "Vladimir",
     "fathers_name": "",
     "full_name": "Hozner Vladimir",
-    "additional_info": "* 1919, Vrbje, Žalec; Polule, Celje, komercialist; umri zaradi, izčrpanosti in davice nad Motnikom 4. 3.",
+    "additional_info": "* 1919, Vrbje, Žalec; Polule, Celje, komercialist; umri zaradi, izčrpanosti in davice nad Motnikom 4. 3. 1945",
     "birth_year": "1919",
     "birth_place": "Vrbje, Žalec",
     "death_type": "poginuo",
@@ -11256,7 +11540,21 @@
     "pdf_y_end": 504.4,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000543",
-    "pdf_x_end": 531.1
+    "pdf_x_end": 531.1,
+    "other_sources": [
+      {
+        "soldier_id": "0070000385",
+        "name": "Ilovica Albert",
+        "additional_info": "zvani Lazar; * 1910 Kastav † 1944 Lindek",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 8,
+        "pdf_x": 131.9,
+        "pdf_y": 635.9,
+        "pdf_x_end": 281.6,
+        "pdf_y_end": 642.4,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Imenšek",
@@ -13199,7 +13497,6 @@
     "fathers_name": "",
     "full_name": "Jezeršek Janez",
     "additional_info": "zvani Sokol; * Ljubljana, študent",
-    "birth_year": "",
     "occupation": "študent",
     "birth_place": "Ljubljana",
     "pdf_page": 39,
@@ -13222,7 +13519,23 @@
         "pdf_y_end": 462.5,
         "source_page": 396,
         "ref_book": "klanjscek-komandni-sastav"
+      },
+      {
+        "soldier_id": "0070101503",
+        "name": "Jezeršek Janez",
+        "additional_info": "zvani Sokol; * 1920 Ljubljana-Galjevica",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 16,
+        "pdf_x": 137.7,
+        "pdf_y": 306.8,
+        "pdf_x_end": 328.1,
+        "pdf_y_end": 314.8,
+        "unit_file": "tomsiceva-soldiers.json"
       }
+    ],
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -13519,7 +13832,22 @@
     "soldier_id": "0069000653",
     "pdf_x_end": 536.6,
     "death_type": "umro",
-    "death_date": "1993"
+    "death_date": "1993",
+    "other_sources": [
+      {
+        "soldier_id": "0164001061",
+        "name": "Jurkas Vinko",
+        "additional_info": "rojen 17.1.1928, Sela; v NOV in POS od VI. 1944; delavec; Bil je v transportu novincev na Dolenjsko 8. novembra 1944",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 111,
+        "pdf_x": 75.1,
+        "pdf_y": 131.8,
+        "pdf_x_end": 490.6,
+        "pdf_y_end": 151.6,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "17.01.1928"
   },
   {
     "last_name": "Juskijević",
@@ -13545,7 +13873,6 @@
     "fathers_name": "",
     "full_name": "Juvan Alojz",
     "additional_info": "iz Savinjske doline; † 27. 4. 1944 v goreči šoli v Šoštanju",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "27.04.1944",
     "death_place": "goreči šoli v Šoštanju",
@@ -13555,7 +13882,25 @@
     "pdf_y_end": 495.8,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000655",
-    "pdf_x_end": 489.6
+    "pdf_x_end": 489.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020016658",
+        "name": "Juvan (Jože) Alojz",
+        "additional_info": "rođen 1916, Jablana (Zagorje Ob Savi). Slovenac, poginuo 1944. u NOBu, Šaštanj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=586",
+        "source_page": 586,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "birth_place": "Jablana, Zagorje Ob Savi",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "birth_year": "1916"
   },
   {
     "last_name": "Juvan",
@@ -14580,7 +14925,21 @@
     "soldier_id": "0069000707",
     "pdf_x_end": 540.8,
     "death_type": "umro",
-    "death_date": "1991"
+    "death_date": "1991",
+    "other_sources": [
+      {
+        "soldier_id": "0061000955",
+        "name": "Kink Stane",
+        "additional_info": "zvani Stašo; 1920, Store",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 12,
+        "pdf_x": 188.4,
+        "pdf_y": 223.3,
+        "pdf_x_end": 299.9,
+        "pdf_y_end": 231.3,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kink",
@@ -17870,12 +18229,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=492",
         "source_page": 492,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0065000445",
+        "name": "Krajger Mirko",
+        "additional_info": "zvani Luka; Celovec, 1924—1945",
+        "pdf_file": "zidanskova.pdf",
+        "pdf_page": 9,
+        "pdf_x": 296.8,
+        "pdf_y": 557.9,
+        "pdf_x_end": 411.9,
+        "pdf_y_end": 574.5,
+        "unit_file": "zidanskova-soldiers.json"
       }
     ],
     "ethnicity": "Slovenac",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Krajnc",
@@ -18956,7 +19332,6 @@
     "fathers_name": "",
     "full_name": "Krpač Hubert",
     "additional_info": "† 3. 6. 1944, Završe, Mislinja",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "03.06.1944",
     "death_place": "Završe, Mislinja",
@@ -18966,7 +19341,25 @@
     "pdf_y_end": 813.4,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000916",
-    "pdf_x_end": 424.4
+    "pdf_x_end": 424.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020016208",
+        "name": "Krpač (Hubert) Hubert",
+        "additional_info": "rođen 1922, Skorno pri Šoštanju (Velenje). Slovenac, poginuo 1944. u NOBu, Pohorje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=563",
+        "source_page": 563,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "birth_place": "Skorno pri Šoštanju, Velenje",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "birth_year": "1922"
   },
   {
     "last_name": "Kruder",
@@ -19667,7 +20060,25 @@
     "pdf_y_end": 567.6,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000951",
-    "pdf_x_end": 504.9
+    "pdf_x_end": 504.9,
+    "other_sources": [
+      {
+        "soldier_id": "9020012546",
+        "name": "Lah (Janez) Martin",
+        "additional_info": "rođen 1925, Dobje pri Lesičnem (Šentjur Pri Celju). Slovenac, poginuo 1944. u NOBu, Oluška gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=443",
+        "source_page": 443,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Oluška gora"
   },
   {
     "last_name": "Lahovnik",
@@ -21092,7 +21503,6 @@
     "fathers_name": "",
     "full_name": "Ličan Franc",
     "additional_info": "Podgraje, Ilirska Bistrica",
-    "birth_year": "",
     "pdf_page": 46,
     "pdf_y": 468.6,
     "pdf_x": 418.2,
@@ -21100,7 +21510,25 @@
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001023",
     "pdf_x_end": 526.8,
-    "birth_place": "Podgraje, Ilirska Bistrica"
+    "birth_place": "Podgraje, Ilirska Bistrica",
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0070102369",
+        "name": "Ličan Franc",
+        "additional_info": "* 1927 Podgraje",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 23,
+        "pdf_x": 133.8,
+        "pdf_y": 281.4,
+        "pdf_x_end": 244.9,
+        "pdf_y_end": 289.4,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ljepojević",
@@ -21841,7 +22269,28 @@
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001058",
     "pdf_x_end": 477.7,
-    "occupation": "šofer"
+    "occupation": "šofer",
+    "other_sources": [
+      {
+        "soldier_id": "0061001370",
+        "name": "Majcen Peter",
+        "additional_info": "zvani Vojko; Ljubljana 1910—1945",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 40,
+        "pdf_x": 179.6,
+        "pdf_y": 230.9,
+        "pdf_x_end": 292.3,
+        "pdf_y_end": 247.7,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Majcen",
@@ -23158,7 +23607,6 @@
     "fathers_name": "",
     "full_name": "Medvešek Viktor",
     "additional_info": "* Jurklošter; Trbovlje, ključavničar",
-    "birth_year": "",
     "birth_place": "Jurklošter",
     "pdf_page": 49,
     "pdf_y": 552.4,
@@ -23167,7 +23615,26 @@
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001118",
     "pdf_x_end": 403.2,
-    "occupation": "ključavničar"
+    "occupation": "ključavničar",
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0164001773",
+        "name": "Medvešek Viktor",
+        "additional_info": "rojen 4.4.1927, Jurklošter; v NOV in POS od VII. 1944; ključavničar; Od konca septembra 1944 je bil v 13. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 180,
+        "pdf_x": 69.8,
+        "pdf_y": 210.7,
+        "pdf_x_end": 495.0,
+        "pdf_y_end": 230.6,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "04.04.1927"
   },
   {
     "last_name": "Medvešček",
@@ -26981,17 +27448,17 @@
     "first_name": "Marko",
     "fathers_name": "",
     "full_name": "Pajčin Marko",
-    "additional_info": "† 1944; po poročilu štaba brigade z dne 3.9.",
+    "additional_info": "† 1944; po poročilu štaba brigade z dne 3.9. 1944",
     "birth_year": "",
-    "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 14,
     "pdf_y": 767.2,
     "pdf_x": 254.6,
     "pdf_y_end": 785.3,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001303",
-    "pdf_x_end": 468.2
+    "pdf_x_end": 468.2,
+    "death_type": "poginuo",
+    "death_date": "1944"
   },
   {
     "last_name": "Palc",
@@ -27858,6 +28325,18 @@
     "soldier_id": "0069001346",
     "pdf_x_end": 372.8,
     "other_sources": [
+      {
+        "soldier_id": "0064002317",
+        "name": "Petan Miha",
+        "additional_info": "zvani Brico; 1922, Bečno selo",
+        "pdf_file": "gradnikova.pdf",
+        "pdf_page": 29,
+        "pdf_x": 239.3,
+        "pdf_y": 357.9,
+        "pdf_x_end": 305.0,
+        "pdf_y_end": 371.6,
+        "unit_file": "gradnikova-soldiers.json"
+      },
       {
         "soldier_id": "0065000663",
         "name": "Petan Miha",
@@ -30528,7 +31007,6 @@
     "fathers_name": "",
     "full_name": "Požun Franc",
     "additional_info": "* Dobrava, Senovo; † po vojni",
-    "birth_year": "",
     "birth_place": "Dobrava, Senovo",
     "pdf_page": 56,
     "pdf_y": 485.2,
@@ -30538,7 +31016,28 @@
     "soldier_id": "0069001480",
     "pdf_x_end": 527.3,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_year": "1906",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "rudar",
+    "other_sources": [
+      {
+        "soldier_id": "0164002291",
+        "name": "Požun Franc",
+        "additional_info": "rojen 1. 3. 1906, Dobrava; v NOV in POS od IX. 1944; rudar; Bil je v transportu novincev prek Savinje 17. novembra 1944",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 231,
+        "pdf_x": 74.1,
+        "pdf_y": 81.3,
+        "pdf_x_end": 496.4,
+        "pdf_y_end": 100.9,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "01.03.1906"
   },
   {
     "last_name": "Požun",
@@ -31000,6 +31499,18 @@
         "pdf_x_end": 216.9,
         "pdf_y_end": 453.5,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0061001921",
+        "name": "Prošek Leopold",
+        "additional_info": "zvani Bajdukov; 1920, Ljubljana",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 22,
+        "pdf_x": 328.5,
+        "pdf_y": 550.0,
+        "pdf_x_end": 446.6,
+        "pdf_y_end": 566.6,
+        "unit_file": "cankarjeva-soldiers.json"
       }
     ]
   },
@@ -32225,6 +32736,18 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=173",
         "source_page": 169,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0068000578",
+        "name": "Remih Dušan",
+        "additional_info": "zvani Duško; Šalka vas, 1922-1944",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 9,
+        "pdf_x": 243.6,
+        "pdf_y": 167.7,
+        "pdf_x_end": 332.4,
+        "pdf_y_end": 181.9,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       },
       {
         "soldier_id": "0070001142",
@@ -35227,7 +35750,6 @@
     "fathers_name": "",
     "full_name": "Sotošek Ivan",
     "additional_info": "* Mali Kamen, Senovo; † po vojni",
-    "birth_year": "",
     "birth_place": "Mali Kamen, Senovo",
     "pdf_page": 61,
     "pdf_y": 515.9,
@@ -35237,7 +35759,28 @@
     "soldier_id": "0069001700",
     "pdf_x_end": 392.8,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "rudar",
+    "other_sources": [
+      {
+        "soldier_id": "0164002666",
+        "name": "Sotošek Ivan",
+        "additional_info": "rojen 3.7.1911, Mali Kamen; v NOV in POS od VII. 1944; rudar; Bil je v 3. četi 2. bataljona",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 267,
+        "pdf_x": 72.0,
+        "pdf_y": 130.3,
+        "pdf_x_end": 468.3,
+        "pdf_y_end": 149.6,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "03.07.1911"
   },
   {
     "last_name": "Sovh",
@@ -36604,7 +37147,21 @@
     "pdf_y_end": 649.4,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001771",
-    "pdf_x_end": 420.2
+    "pdf_x_end": 420.2,
+    "other_sources": [
+      {
+        "soldier_id": "0141000590",
+        "name": "Tomšič Franc",
+        "additional_info": "zvani Tonko; Ponikve",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 8,
+        "pdf_x": 22.1,
+        "pdf_y": 339.6,
+        "pdf_x_end": 138.9,
+        "pdf_y_end": 347.1,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tonaski",
@@ -37525,7 +38082,6 @@
     "fathers_name": "",
     "full_name": "Ulaga Anton",
     "additional_info": "* Svetina, Štore, delavec; † 1987",
-    "birth_year": "",
     "occupation": "delavec",
     "birth_place": "Svetina, Štore",
     "pdf_page": 66,
@@ -37536,7 +38092,26 @@
     "soldier_id": "0069001816",
     "pdf_x_end": 377.8,
     "death_type": "umro",
-    "death_date": "1987"
+    "death_date": "1987",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0164002853",
+        "name": "Ulaga Anton",
+        "additional_info": "rojen 16.1.1919, Svetina; BiI je godbenik. Od konca septembra 1944 je bil v 14. diviziji",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 301,
+        "pdf_x": 70.6,
+        "pdf_y": 147.2,
+        "pdf_x_end": 509.6,
+        "pdf_y_end": 166.8,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "16.01.1919"
   },
   {
     "last_name": "Ulaga",
@@ -38844,7 +39419,6 @@
     "fathers_name": "",
     "full_name": "Virant Dušan",
     "additional_info": "* Blanca, Sevnica",
-    "birth_year": "",
     "birth_place": "Blanca, Sevnica",
     "pdf_page": 67,
     "pdf_y": 443.0,
@@ -38853,7 +39427,28 @@
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001879",
     "pdf_x_end": 548.8,
-    "pdf_x_left": 446.6
+    "pdf_x_left": 446.6,
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "delavec",
+    "other_sources": [
+      {
+        "soldier_id": "0164002959",
+        "name": "Virant Dušan",
+        "additional_info": "rojen 20. 6. 1926, Blanca; v NOV in POS od IX.1944; delavec; Bil je v transportu novincev prek Savinje 8. novembra 1944",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 311,
+        "pdf_x": 70.3,
+        "pdf_y": 245.8,
+        "pdf_x_end": 494.1,
+        "pdf_y_end": 264.9,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "20.06.1926"
   },
   {
     "last_name": "Viser",
@@ -40128,9 +40723,8 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Zajiček Franc",
-    "additional_info": "* 1925, Ljubljana, dijak; ranjen na Prihovi pri Slovenski Bistrici 18.4. 1945, t nad Jurgovim na Pohorju 19.4.",
+    "additional_info": "* 1925, Ljubljana, dijak; ranjen na Prihovi pri Slovenski Bistrici 18.4. 1945, t nad Jurgovim na Pohorju 19.4. 1945",
     "birth_year": "1925",
-    "occupation": "dijak",
     "birth_place": "Ljubljana",
     "death_type": "poginuo",
     "pdf_page": 22,
@@ -40142,6 +40736,7 @@
     "pdf_x_end": 478.3,
     "death_date": "1945",
     "death_place": "Prihova",
+    "occupation": "dijak",
     "other_sources": [
       {
         "soldier_id": "0070001443",
@@ -40878,7 +41473,21 @@
     "soldier_id": "0069001978",
     "pdf_x_end": 562.3,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "other_sources": [
+      {
+        "soldier_id": "0141000663",
+        "name": "Zorc Nande",
+        "additional_info": "zvani Riko; Brezje",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 8,
+        "pdf_x": 168.9,
+        "pdf_y": 468.0,
+        "pdf_x_end": 264.2,
+        "pdf_y_end": 475.5,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zorko",
@@ -41664,7 +42273,6 @@
     "fathers_name": "",
     "full_name": "Čepin Karel",
     "additional_info": "* Reštanj, Senovo; † po vojni",
-    "birth_year": "",
     "birth_place": "Reštanj, Senovo",
     "pdf_page": 29,
     "pdf_y": 531.0,
@@ -41674,7 +42282,28 @@
     "soldier_id": "0069002015",
     "pdf_x_end": 536.0,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "rudar",
+    "other_sources": [
+      {
+        "soldier_id": "0164003194",
+        "name": "Čepin Karel",
+        "additional_info": "rojen 28.2.1925, Reštanj; v NOV in POS od VIII. 1944; rudar; Od oktobra 1944 je bil v 13. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 47,
+        "pdf_x": 72.2,
+        "pdf_y": 290.0,
+        "pdf_x_end": 505.2,
+        "pdf_y_end": 309.3,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "28.02.1925"
   },
   {
     "last_name": "Čepin",
@@ -42208,7 +42837,22 @@
     "pdf_y_end": 431.0,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069002041",
-    "pdf_x_end": 385.5
+    "pdf_x_end": 385.5,
+    "other_sources": [
+      {
+        "soldier_id": "0164003245",
+        "name": "Šantej Avgust",
+        "additional_info": "rojen 8. 8. 1926, Polana; v NOV in POS od IX. 1944; kmet; Teden dni je bil v 1. četi 2. bataljona odreda, nato v 13. brigadi",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 276,
+        "pdf_x": 69.8,
+        "pdf_y": 187.9,
+        "pdf_x_end": 507.3,
+        "pdf_y_end": 207.9,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "08.08.1926"
   },
   {
     "last_name": "Šantej",
@@ -43198,7 +43842,21 @@
     "pdf_y_end": 400.8,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069002086",
-    "pdf_x_end": 388.6
+    "pdf_x_end": 388.6,
+    "other_sources": [
+      {
+        "soldier_id": "0141000695",
+        "name": "Šlamberger Vili",
+        "additional_info": "zvani Brkič; Ljubljana",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 7,
+        "pdf_x": 209.0,
+        "pdf_y": 440.1,
+        "pdf_x_end": 296.6,
+        "pdf_y_end": 456.3,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šlunder",
@@ -44145,7 +44803,22 @@
     "pdf_y_end": 466.2,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069002133",
-    "pdf_x_end": 491.1
+    "pdf_x_end": 491.1,
+    "other_sources": [
+      {
+        "soldier_id": "0164003358",
+        "name": "Šterban Karel",
+        "additional_info": "rojen 25. 5. 1929, Rajhenburg; v NOV in POS od IX. 1944; trgovski vajenec; Bil je mitraljezec v jurišnem bataljonu 13. brigade, padel je 16. decembra 1944 na Planini",
+        "pdf_file": "kozjanski-odred.pdf",
+        "pdf_page": 287,
+        "pdf_x": 71.3,
+        "pdf_y": 189.6,
+        "pdf_x_end": 517.4,
+        "pdf_y_end": 218.8,
+        "unit_file": "kozjanski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "25.05.1929"
   },
   {
     "last_name": "Štern",
@@ -45229,7 +45902,21 @@
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069002187",
     "pdf_x_end": 392.6,
-    "occupation": "železničar"
+    "occupation": "železničar",
+    "other_sources": [
+      {
+        "soldier_id": "0065001060",
+        "name": "Zličar Franc",
+        "additional_info": "zvani Branko; 1925, Libanja, Ptuj",
+        "pdf_file": "zidanskova.pdf",
+        "pdf_page": 21,
+        "pdf_x": 272.6,
+        "pdf_y": 380.7,
+        "pdf_x_end": 448.3,
+        "pdf_y_end": 388.2,
+        "unit_file": "zidanskova-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Žnidar",
@@ -45270,9 +45957,8 @@
     "first_name": "Anton",
     "fathers_name": "",
     "full_name": "Žnidaršič Anton",
-    "additional_info": "* 1922, Podlož, Cerknica, kmečki sin; ranjen 16. 12. 1944 na Planini pri Sevnici, umri na Voluški gori 2.4.",
+    "additional_info": "* 1922, Podlož, Cerknica, kmečki sin; ranjen 16. 12. 1944 na Planini pri Sevnici, umri na Voluški gori 2.4. 1945",
     "birth_year": "1922",
-    "occupation": "kmečki sin",
     "birth_place": "Podlož, Cerknica",
     "death_type": "poginuo",
     "pdf_page": 23,
@@ -45281,7 +45967,8 @@
     "pdf_y_end": 717.2,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069002189",
-    "pdf_x_end": 531.7
+    "pdf_x_end": 531.7,
+    "occupation": "kmečki sin"
   },
   {
     "last_name": "Žnidaršič",

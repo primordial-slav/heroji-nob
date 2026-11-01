@@ -1488,7 +1488,26 @@
     "ethnicity": "Musliman",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 375.9
+    "pdf_x_end": 375.9,
+    "party": "KPJ 1943",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0052000074",
+        "name": "Avdić Hasana Nurija",
+        "additional_info": "rođen 1918. godine u Gradačcu, SRBiH, Musliman, zemljoradnik, stupio u NOB-u 1. 5. 1943. godine, a u Brigadu kao borac 2. čete 2. bataljona od aprila 1944. godine. Član KPJ od 1943. godine. Invalid.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 126.9,
+        "pdf_y": 607.2,
+        "pdf_x_end": 451.6,
+        "pdf_y_end": 636.5,
+        "pdf_x_left": 97.4,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Avdić",
@@ -3619,7 +3638,27 @@
     "death_date": "12.1944",
     "death_place": "Celić",
     "rank": "borac",
-    "pdf_x_end": 376.6
+    "pdf_x_end": 376.6,
+    "other_sources": [
+      {
+        "soldier_id": "0052000145",
+        "name": "Bilajac Osmana Ismet",
+        "additional_info": "rođen 1920. godine u Gradačcu, SRBiH, Musliman, zemljoradnik. Stupio u Brigadu 8. 9. 1944. godine, u Gradačcu, SRBiH. Poginuo 8. 12. 1944. godine kod Rahića, Brčko.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 155.9,
+        "pdf_y": 472.1,
+        "pdf_x_end": 480.5,
+        "pdf_y_end": 501.7,
+        "pdf_x_left": 125.9,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Bilajac",
@@ -17050,7 +17089,7 @@
     "first_name": "Mihajlo",
     "fathers_name": "Cvijetin",
     "full_name": "Kaurinović Cvijetina Mihajlo",
-    "additional_info": "1925, Bukvik, Srbin, zemljoradnik, u NOB od 1941, u odredu od 20. 9. 1943, borac, član SKOJ-a, umro 10. 8.",
+    "additional_info": "1925, Bukvik, Srbin, zemljoradnik, u NOB od 1941, u odredu od 20. 9. 1943, borac, član SKOJ-a, umro 10. 8. 1947.",
     "birth_year": "1925",
     "pdf_page": 21,
     "pdf_y": 286.6,
@@ -17058,15 +17097,15 @@
     "pdf_y_end": 310.9,
     "pdf_file": "posavsko-trebavski-odred.pdf",
     "soldier_id": "0059000700",
+    "pdf_x_end": 342.9,
+    "death_date": "1945",
+    "death_place": "Bukvik",
+    "party": "SKOJ",
     "birth_place": "Bukvik",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 342.9,
-    "death_date": "1945",
-    "death_place": "Bukvik",
-    "party": "SKOJ",
     "other_sources": [
       {
         "soldier_id": "0049010473",
@@ -23116,7 +23155,26 @@
     "death_date": "04.1944",
     "death_place": "Kozarevina, Foča",
     "rank": "borac",
-    "pdf_x_end": 339.5
+    "pdf_x_end": 339.5,
+    "other_sources": [
+      {
+        "soldier_id": "0024000783",
+        "name": "Mehić Mujage Safet",
+        "additional_info": "rođen 1924, rodom od Gradačca, Musliman, u NOB od 1943, u brigadi od 1943, 3. bataljon, poginuo 9. 04. 1944. kod Igrišta (Trnovo);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 34,
+        "pdf_x": 8.3,
+        "pdf_y": 219.1,
+        "pdf_x_end": 363.2,
+        "pdf_y_end": 234.3,
+        "unit_file": "2-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Mehić",
@@ -25159,7 +25217,27 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 343.3
+    "pdf_x_end": 343.3,
+    "death_type": "umro",
+    "borrowed": [
+      "death_place",
+      "death_type"
+    ],
+    "death_place": "Samarevac",
+    "other_sources": [
+      {
+        "soldier_id": "0049010885",
+        "name": "Milutinović Stanka Niko",
+        "additional_info": "Samarevac, Gradačac, SRBiH, Srbin, zemljoradnik, u NOB od 28.6.1943, u brigadi od 12.7.1943, borac. Umro poslije rata u Samarevcu.",
+        "pdf_file": "15-majevicka-spisak.pdf",
+        "pdf_page": 37,
+        "pdf_x": 39.8,
+        "pdf_y": 341.6,
+        "pdf_x_end": 397.1,
+        "pdf_y_end": 358.5,
+        "unit_file": "15-majevicka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Minić",
@@ -25845,7 +25923,7 @@
     "first_name": "Đoko",
     "fathers_name": "Krsto",
     "full_name": "Mitrović Krste Đoko",
-    "additional_info": "1919, Bukvik, Srbin, zemljoradnik, u NOB od 15. 4. 1943, u odredu od 15. 10. 1943, komandir čete, član KPJ, poginuo 25. 12.",
+    "additional_info": "1919, Bukvik, Srbin, zemljoradnik, u NOB od 15. 4. 1943, u odredu od 15. 10. 1943, komandir čete, član KPJ, poginuo 25. 12. 1944.",
     "birth_year": "1919",
     "pdf_page": 23,
     "pdf_y": 129.0,
@@ -25853,11 +25931,6 @@
     "pdf_y_end": 153.3,
     "pdf_file": "posavsko-trebavski-odred.pdf",
     "soldier_id": "0059001070",
-    "birth_place": "Bukvik",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "rank": "komandir čete",
     "pdf_x_end": 338.9,
     "death_date": "1944",
     "death_place": "Caparde",
@@ -25896,7 +25969,12 @@
         "unit_file": "18-hrvatska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Bukvik",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "rank": "komandir čete"
   },
   {
     "last_name": "Mićić",
@@ -30751,7 +30829,26 @@
     "death_type": "umro",
     "death_date": "1947",
     "rank": "borac",
-    "pdf_x_end": 380.8
+    "pdf_x_end": 380.8,
+    "death_place": "Miloševac",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0052001096",
+        "name": "Patković Jove Mile",
+        "additional_info": "rođen 1927. godine u Miloševcu, Modriča, SRBiH, Srbin, zemljoradnik. U NOB-u stupio septembra 1943. godine, a u Brigadu juna 1944. godine, borac 4. bataljona. Umro 1947. godine u Miloševcu.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 77,
+        "pdf_x": 129.6,
+        "pdf_y": 360.1,
+        "pdf_x_end": 454.2,
+        "pdf_y_end": 389.7,
+        "pdf_x_left": 99.6,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Patković",
@@ -31444,10 +31541,10 @@
   },
   {
     "last_name": "Pejkanović",
-    "middle_name": "",
+    "middle_name": "Laze",
     "first_name": "Savo",
-    "fathers_name": "",
-    "full_name": "Pejkanović Savo",
+    "fathers_name": "Lazo",
+    "full_name": "Pejkanović Laze Savo",
     "additional_info": "1907, Rašljani - Bukvik, Srbin, zemljoradnik, u odredu od 10. 12. 1944, borac.",
     "birth_year": "1907",
     "pdf_page": 24,
@@ -31460,7 +31557,33 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 381.8
+    "pdf_x_end": 381.8,
+    "death_type": "umro",
+    "borrowed": [
+      "death_date",
+      "death_type"
+    ],
+    "death_date": "1983",
+    "other_sources": [
+      {
+        "soldier_id": "0052001144",
+        "name": "Pejkanović Laze Savo",
+        "additional_info": "rođen 1909. godine u Rašljanima, Brčko, SR-BiH, Srbin, zemljoradnik. U NOB-u stupio 10. 7. 1944. godine, kuhar u Pratećoj četi Brigade. Umro 1983. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 80,
+        "pdf_x": 165.6,
+        "pdf_y": 274.8,
+        "pdf_x_end": 490.1,
+        "pdf_y_end": 304.4,
+        "pdf_x_left": 135.4,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1909"
+      ]
+    }
   },
   {
     "last_name": "Pejkić",
@@ -35679,7 +35802,7 @@
     "first_name": "Pero",
     "fathers_name": "Rade",
     "full_name": "Savić Rade Pero",
-    "additional_info": "1926, Gajevi, Srbin, zemljoradnik, u odredu od 10. 4.",
+    "additional_info": "1926, Gajevi, Srbin, zemljoradnik, u odredu od 10. 4. 1945.",
     "birth_year": "1926",
     "pdf_page": 13,
     "pdf_y": 484.0,
@@ -35687,10 +35810,10 @@
     "pdf_y_end": 498.9,
     "pdf_file": "posavsko-trebavski-odred.pdf",
     "soldier_id": "0059001467",
+    "pdf_x_end": 338.2,
     "birth_place": "Gajevi",
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "pdf_x_end": 338.2
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Savić",
@@ -38579,8 +38702,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1032",
         "source_page": 1032,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0052001374",
+        "name": "Stanković Ilije Cvijetin",
+        "additional_info": "rođen 1924. godine u G. Slatini, B. Šamac, SRBiH, Srbin, zemljoradnik. U NOB-u stupio avgusta 1943. godine, a u Brigadu 5. 6. 1944. godine, borac. Poginuo na Monju, avgusta 1944. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 94,
+        "pdf_x": 149.6,
+        "pdf_y": 572.2,
+        "pdf_x_end": 474.4,
+        "pdf_y_end": 601.3,
+        "pdf_x_left": 119.8,
+        "unit_file": "18-hrvatska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Stanković",

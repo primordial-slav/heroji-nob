@@ -2604,17 +2604,31 @@
   },
   {
     "last_name": "Dokijanović",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Radovan",
-    "fathers_name": "",
-    "full_name": "Dokijanović Radovan",
+    "fathers_name": "M",
+    "full_name": "Dokijanović M Radovan",
     "additional_info": "zvani Bata; zemljoradnik, iz Neresnice, rođen 1923. u Neresnici. U odredu od septembra do decembra 1941. Ponovo u odredu od septembra 1944. godine.",
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=262",
     "source_page": 250,
     "soldier_id": "0119000166",
     "birth_place": "Neresnica",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0073000369",
+        "name": "Dokijanović M Radovan",
+        "additional_info": "rođen u Neresnici, Kučevo, stupio u NOVJ oktobra 1944, borac 2. bataljona 19. srpske brigade.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 82,
+        "pdf_x": 54.7,
+        "pdf_y": 465.5,
+        "pdf_x_end": 360.2,
+        "pdf_y_end": 482.6,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dokijanović",
@@ -7986,7 +8000,7 @@
     "last_name": "Markičević",
     "middle_name": "",
     "first_name": "Velimir",
-    "fathers_name": "",
+    "fathers_name": "Jović",
     "full_name": "Markičević Velimir",
     "additional_info": "zvani Maks; administrator rudarske zadruge u Majdanpeku, rođen 1914. u Pilatoviću, Užička Požega. U odredu od 20. avgusta 1941. do 19. decembra 1941. kada je zarobljen i predat okupatorskim vlastima. Pobegao iz zatvora 6. januara 1942. ali je uhvaćen i streljan na Jajincima marta 1942. Bio komandir čete i komadant bataljon 1941. rez. poručnik. Narodni heroj.",
     "birth_year": "1914",
@@ -8024,6 +8038,18 @@
         "pdf_y_end": 115.8,
         "pdf_x_left": 51.8,
         "ref_book": "pozega-pali"
+      },
+      {
+        "soldier_id": "0026010231",
+        "name": "Markićević Velimir",
+        "additional_info": "Spisak učesnika NOR-a u jedinicama izvan požeških četa 1941., Pilatovići: Markićević (Jović) Velimir",
+        "pdf_file": "pozega-cete.pdf",
+        "pdf_page": 13,
+        "pdf_x": 173.9,
+        "pdf_y": 539.2,
+        "pdf_x_end": 307.4,
+        "pdf_y_end": 548.2,
+        "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
     "birth_date": "12.02.1914"
@@ -11928,10 +11954,10 @@
   },
   {
     "last_name": "Obradović",
-    "middle_name": "",
+    "middle_name": "Đure",
     "first_name": "Stevan",
-    "fathers_name": "",
-    "full_name": "Obradović Stevan",
+    "fathers_name": "Đuro",
+    "full_name": "Obradović Đure Stevan",
     "additional_info": "zvani Čelik; krojački radnik, iz Požarevca, rođen 1921. U odredu od septembra 1941. Streljan na Banjici 1943. godine.",
     "birth_year": "1921",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=294",
@@ -11940,7 +11966,32 @@
     "occupation": "krojački radnik",
     "death_type": "streljan",
     "death_date": "1943",
-    "death_place": "Banjica"
+    "death_place": "Banjica",
+    "birth_place": "G. Bačuga, Petrinja",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "other_sources": [
+      {
+        "soldier_id": "0044010691",
+        "name": "Obradović Đure Stevan",
+        "additional_info": "rođen 1920, G. Bačuga — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 59.4,
+        "pdf_y": 307.5,
+        "pdf_x_end": 340.9,
+        "pdf_y_end": 333.6,
+        "unit_file": "7-banijska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Obradović",
@@ -11969,7 +12020,26 @@
     "source_page": 282,
     "soldier_id": "0119000743",
     "birth_place": "Veliko Gradište",
-    "occupation": "konobar"
+    "occupation": "konobar",
+    "other_sources": [
+      {
+        "soldier_id": "0128002950",
+        "name": "Obretković Aleksandar",
+        "additional_info": "1922, Veliko Gradište",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 75,
+        "pdf_x": 237.6,
+        "pdf_y": 438.7,
+        "pdf_x_end": 387.4,
+        "pdf_y_end": 455.8,
+        "unit_file": "18-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Obretković",
@@ -12493,17 +12563,43 @@
   },
   {
     "last_name": "Peković",
-    "middle_name": "",
+    "middle_name": "Milosava",
     "first_name": "Periša",
-    "fathers_name": "",
-    "full_name": "Peković Periša",
+    "fathers_name": "Milosav",
+    "full_name": "Peković Milosava Periša",
     "additional_info": "trg. pomoćnik. iz Požarevca, rođen 1922. u Krnjoj Jeli, Šavnik. U odredu od septembra 1941. zarobljen marta 1942. kod Mišljenovca Bio je polit. komesar čete 1941 – 1942. godine.",
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=296",
     "source_page": 284,
     "soldier_id": "0119000778",
     "birth_place": "Krnja Jela, Šavnik",
-    "rank": "politički komesar čete"
+    "rank": "politički komesar čete",
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "trgovački pomoćnik",
+    "other_sources": [
+      {
+        "soldier_id": "0080000884",
+        "name": "Peković Milosava Periša",
+        "additional_info": "majka Vukosava; politički komesar čete, rođen 1920. u Krnjoj Jeli, Kolašin, trgovački pomoćnik, Crnogorac, radio u Beogradu i Požarevcu, u Požarevačkom NOP odredu bio 1941, u brigadi od početka 1944. do 25. 9. 1944, potom politički radnik. Živi u Beogradu.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 54.2,
+        "pdf_y": 120.6,
+        "pdf_x_end": 389.2,
+        "pdf_y_end": 154.5,
+        "pdf_x_left": 32.6,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "last_name": "Perić",

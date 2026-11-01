@@ -2165,7 +2165,6 @@
     "fathers_name": "M",
     "full_name": "Jovanović M Milorad",
     "additional_info": "1. bataljon, rođen u slu Kostrač — Kuršumlija, poginuo u Drenici 10. 9. 1945. godine.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 3,
     "pdf_y": 308.6,
@@ -2188,9 +2187,37 @@
         "pdf_y": 305.0,
         "pdf_x_end": 475.7,
         "pdf_y_end": 315.2
+      },
+      {
+        "soldier_id": "0126000312",
+        "name": "Jovanović Milovana Milorad",
+        "additional_info": "zemljoradnik, rođen 1920. u Rakovi; borac Ljubićkog bataljona; oterali ga četnici na Jelovu goru, gde je poginuo 10. septembra 1944.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 32,
+        "pdf_x": 60.3,
+        "pdf_y": 476.0,
+        "pdf_x_end": 394.2,
+        "pdf_y_end": 502.0,
+        "pdf_x_left": 35.0,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "occupation"
+    ],
+    "birth_place": "Rakova",
+    "occupation": "zemljoradnik",
+    "variants": {
+      "death": [
+        {
+          "date": "10.09.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -12597,7 +12624,17 @@
     "pdf_x_end": 250.8,
     "soldier_id": "0102010165",
     "rank": "desetar",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000010",
+        "name": "Beko Lazara Vuko",
+        "additional_info": "Sutorinska partizanska četa, Prvi vod (Rustovo i središnji dio Prijevora): Beko Lazara Vuko, 1914, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=452",
+        "source_page": 406,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Bektešević",
@@ -16015,7 +16052,6 @@
     "fathers_name": "Mladen",
     "full_name": "Crvak Mladena Mirko",
     "additional_info": "1. bataljon: politkomesar bataljona",
-    "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 346.5,
     "pdf_x": 120.2,
@@ -16024,7 +16060,34 @@
     "pdf_x_end": 266.0,
     "soldier_id": "0102010366",
     "unit_detail": "1. bataljon",
-    "rank": "politički komesar bataljona"
+    "rank": "politički komesar bataljona",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Šibenik",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "party": "SKOJ 1940, KPJ 1941",
+    "other_sources": [
+      {
+        "soldier_id": "0007000936",
+        "name": "Crvak Mladena Mirko",
+        "additional_info": "23. 3. 1923. Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od studenog 1940, a KPJ od studenog 1941. U NOV od početka 1942. u Sjevernodalmatinskom PO. U 2. dalm. od 3. 10. 1942. Polit, komesar čete. Prosinca 1944. upućen u 1. bokeljsku brigadu. Nosilac »Partizanske spomenice 1941«.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 128.2,
+        "pdf_y": 503.7,
+        "pdf_x_end": 449.5,
+        "pdf_y_end": 536.2,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_date": "23.03.1923"
   },
   {
     "last_name": "Cuca",
@@ -17178,7 +17241,6 @@
     "fathers_name": "Mićo",
     "full_name": "Dangubić Mića Mirko",
     "additional_info": "3. bataljon: borac",
-    "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 643.9,
     "pdf_x": 107.8,
@@ -17187,7 +17249,33 @@
     "pdf_x_end": 254.4,
     "soldier_id": "0102010432",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_year": "1913",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Bunovići, Kotor",
+    "ethnicity": "Crnogorac",
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0041000211",
+        "name": "Dangubić Miće Mirko",
+        "additional_info": "borac 2. čete 2. bataljona, rođen 1913, Bunovići, Kotor, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ.",
+        "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 10.8,
+        "pdf_y": 376.1,
+        "pdf_x_end": 181.7,
+        "pdf_y_end": 417.7,
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Danilović",
@@ -26316,7 +26404,17 @@
     "pdf_x_end": 265.7,
     "soldier_id": "0102010957",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000059",
+        "name": "Konjević Milana Andrija",
+        "additional_info": "Sutorinska partizanska četa, Drugi vod (Radanovići, Malta i Konjevići): Konjević Milana Andrija, 1918, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=453",
+        "source_page": 407,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Konjević",
@@ -31521,7 +31619,17 @@
     "pdf_x_end": 450.3,
     "soldier_id": "0102011265",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000123",
+        "name": "Lučić Ilije Peko",
+        "additional_info": "Sutorinska partizanska četa, Četvrti vod (Lučićko–Rajevićki): Lučić Ilije Peko, 1914, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=455",
+        "source_page": 409,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Lučić",
@@ -31683,7 +31791,17 @@
     "pdf_x_end": 258.3,
     "soldier_id": "0102011276",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000004",
+        "name": "Malavrazić Pera Marko",
+        "additional_info": "Sutorinska partizanska četa, Prvi vod (Rustovo i središnji dio Prijevora): Malavrazić Pera Marko, 1905, komandir voda",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=452",
+        "source_page": 406,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Malavrazić",
@@ -33890,7 +34008,17 @@
     "pdf_x_end": 450.5,
     "soldier_id": "0102011406",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000091",
+        "name": "Matijašević Pera Božo",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Matijašević Pera Božo, 1920, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Matijašević",
@@ -33975,7 +34103,17 @@
     "pdf_x_end": 462.0,
     "soldier_id": "0102011411",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000085",
+        "name": "Matijašević Aćima Milorad",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Matijašević Aćima Milorad, 1924, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Matijašević",
@@ -36657,7 +36795,17 @@
     "pdf_x_end": 465.9,
     "soldier_id": "0102011578",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000094",
+        "name": "Mračević Pera Janko",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Mračević Pera Janko, 1911, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Mračević",
@@ -36729,7 +36877,17 @@
     "pdf_x_end": 263.1,
     "soldier_id": "0102011582",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000097",
+        "name": "Mračević Sava Milivoje — Milo",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Mračević Sava Milivoje - Milo, 1922, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Mračević",
@@ -36819,7 +36977,17 @@
     "pdf_x_end": 258.5,
     "soldier_id": "0102011587",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000107",
+        "name": "Mračević Pera Radovan — Rade",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Mračević Pera Radovan - Rade, 1906, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Mračević",
@@ -36855,7 +37023,17 @@
     "pdf_x_end": 445.0,
     "soldier_id": "0102011589",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000093",
+        "name": "Mračević Vuka Vaso",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Mračević Vuka Vaso, 1911, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Mračević",
@@ -36927,7 +37105,17 @@
     "pdf_x_end": 467.1,
     "soldier_id": "0102011593",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000103",
+        "name": "Mračević Lazara Živko",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Mračević Lazara Živko, 1924, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Mračvić",
@@ -45144,7 +45332,17 @@
     "pdf_x_end": 459.4,
     "soldier_id": "0102012069",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000054",
+        "name": "Radanović Jovana Krsto",
+        "additional_info": "Sutorinska partizanska četa, Drugi vod (Radanovići, Malta i Konjevići): Radanović Jovana Krsto, 1913, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=453",
+        "source_page": 407,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Radanović",
@@ -47254,7 +47452,17 @@
     "pdf_x_end": 480.3,
     "soldier_id": "0102012196",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000140",
+        "name": "Rajević Neđeljka Danilo",
+        "additional_info": "Sutorinska partizanska četa, Četvrti vod (Lučićko–Rajevićki): Rajević Neđeljka Danilo, 1921, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=455",
+        "source_page": 409,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Rajević",
@@ -47272,7 +47480,17 @@
     "pdf_x_end": 462.8,
     "soldier_id": "0102012197",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000136",
+        "name": "Rajević Ilija Jovo — Jovan",
+        "additional_info": "Sutorinska partizanska četa, Četvrti vod (Lučićko–Rajevićki): Rajević Ilija Jovo - Jovan, 1899, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=455",
+        "source_page": 409,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Rajević",
@@ -50607,7 +50825,6 @@
     "fathers_name": "Mario",
     "full_name": "Saraćino Maria Salvatore",
     "additional_info": "2. bataljon: borac",
-    "birth_year": "",
     "pdf_page": 9,
     "pdf_y": 309.8,
     "pdf_x": 320.2,
@@ -50616,7 +50833,32 @@
     "pdf_x_end": 475.7,
     "soldier_id": "0102012385",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Meliti di Ragusa",
+    "ethnicity": "Talijan",
+    "occupation": "kamenorezac",
+    "other_sources": [
+      {
+        "soldier_id": "0007004649",
+        "name": "Saracino Mario Salvatore",
+        "additional_info": "28. 6. 1922. Meliti di Ragusa. Italija, Talijan, kamenorezac. U NOV od 15. 5. 1944. u 2. dalm. brigadi.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 156,
+        "pdf_x": 125.5,
+        "pdf_y": 394.9,
+        "pdf_x_end": 451.7,
+        "pdf_y_end": 410.7,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_date": "28.06.1922"
   },
   {
     "last_name": "Sarbojić",
@@ -51694,7 +51936,17 @@
     "pdf_x_end": 253.2,
     "soldier_id": "0102012448",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000062",
+        "name": "Škobalj Mijo Miloš",
+        "additional_info": "Sutorinska partizanska četa, Drugi vod (Radanovići, Malta i Konjevići): Škobalj Mijo Miloš, 1904, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=453",
+        "source_page": 407,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Skrelj",
@@ -52143,7 +52395,17 @@
     "pdf_x_end": 246.3,
     "soldier_id": "0102012473",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000111",
+        "name": "Srdan Luka Ilija",
+        "additional_info": "Sutorinska partizanska četa, Treći vod (Šćepoševićki): Srdan Luka Ilija, 1913, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=454",
+        "source_page": 408,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Srdan",
@@ -57170,7 +57432,17 @@
     "pdf_x_end": 458.0,
     "soldier_id": "0102012756",
     "rank": "borac",
-    "unit_detail": "Bolnički vod"
+    "unit_detail": "Bolnički vod",
+    "other_sources": [
+      {
+        "soldier_id": "9110000020",
+        "name": "Vlaović Gaja Dušan",
+        "additional_info": "Sutorinska partizanska četa, Prvi vod (Rustovo i središnji dio Prijevora): Vlaović Gaja Dušan, 1913, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=452",
+        "source_page": 406,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Vlaović",
@@ -64677,7 +64949,17 @@
     "pdf_x_end": 256.6,
     "soldier_id": "0102013196",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000066",
+        "name": "Škobalj Nikole Aćim",
+        "additional_info": "Sutorinska partizanska četa, Drugi vod (Radanovići, Malta i Konjevići): Škobalj Nikole Aćim, 1906, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=453",
+        "source_page": 407,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Škobalj",
@@ -64749,7 +65031,17 @@
     "pdf_x_end": 443.1,
     "soldier_id": "0102013200",
     "rank": "borac",
-    "unit_detail": "prateći vod"
+    "unit_detail": "prateći vod",
+    "other_sources": [
+      {
+        "soldier_id": "9110000064",
+        "name": "Škobalj Andrije Marko",
+        "additional_info": "Sutorinska partizanska četa, Drugi vod (Radanovići, Malta i Konjevići): Škobalj Andrije Marko, 1908, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=453",
+        "source_page": 407,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Škobalj",
@@ -64785,7 +65077,17 @@
     "pdf_x_end": 445.0,
     "soldier_id": "0102013202",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9110000037",
+        "name": "Škobalj Luke Rade",
+        "additional_info": "Sutorinska partizanska četa, Prvi vod (Rustovo i središnji dio Prijevora): Škobalj Luke Rade, 1907, borac",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00000589&pg_seq=452",
+        "source_page": 406,
+        "ref_book": "sutorina"
+      }
+    ]
   },
   {
     "last_name": "Škobalj",
@@ -64956,7 +65258,6 @@
     "fathers_name": "Lazo",
     "full_name": "Šoljaga Laza Stevo",
     "additional_info": "Štab brigade: oficir OZNE brigade",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 394.5,
     "pdf_x": 401.5,
@@ -64964,7 +65265,29 @@
     "pdf_file": "1-bokeljska-spisak.pdf",
     "pdf_x_end": 484.1,
     "soldier_id": "0102013212",
-    "unit_detail": "štab brigade"
+    "unit_detail": "štab brigade",
+    "birth_year": "1906",
+    "borrowed": [
+      "birth_year",
+      "occupation",
+      "party"
+    ],
+    "occupation": "radnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0040020969",
+        "name": "Šoljaga Laza Stevo",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: borac, Buljarica, Paštrovići, 1906, radnik, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 19,
+        "pdf_x": 166.9,
+        "pdf_y": 266.1,
+        "pdf_x_end": 467.6,
+        "pdf_y_end": 283.0,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šparović",

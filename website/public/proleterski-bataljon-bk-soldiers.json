@@ -3111,6 +3111,13 @@
         "pdf_y_end": 340.8,
         "pdf_x_left": 52.2,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010300393",
+        "name": "Kecman Ilije Obrad",
+        "additional_info": "3. četa 4. bataljona: borac, rođen 1921, Drinić, Bos. Petrovac, Srbin, radnik, u NOB od 1942, član KPJ od 1943, poginuo 1943. na Ustiprači.",
+        "source_url": "https://znaci.org/00001/31_263.htm",
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
     "death_place": "Istočna Bosna",
@@ -3768,6 +3775,19 @@
     "death_place": "Gudovac, Bosanska Krupa",
     "other_sources": [
       {
+        "soldier_id": "0013000648",
+        "name": "Kovaćević Riste Đuro",
+        "additional_info": "rođen 1908. godine u Malom Radiću, Bosanska Krupa. Poginuo 13. novembra 1944. godine u Čarakovu, Gudavac.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 65,
+        "pdf_x": 91.5,
+        "pdf_y": 400.2,
+        "pdf_x_end": 406.8,
+        "pdf_y_end": 418.3,
+        "pdf_x_left": 73.7,
+        "unit_file": "6-krajiska-soldiers.json"
+      },
+      {
         "soldier_id": "0014000476",
         "name": "Kovačević R Đuro",
         "additional_info": "rođen 1908, s. M. Radić, Bosanska Krupa, poginuo 13. novembra 1943, s. Gudovac, Bosanska Krupa, zamenik komandira čete.",
@@ -3797,6 +3817,10 @@
         "1908"
       ],
       "death": [
+        {
+          "date": "13.11.1944",
+          "place": "Čarakovo, Gudavac"
+        },
         {
           "date": "13.11.1943",
           "place": "Gudovac, Bosanska Krupa"
@@ -5352,7 +5376,17 @@
     "death_type": "umro",
     "death_date": "1975",
     "death_place": "Indija",
-    "rank": "komandir čete"
+    "rank": "komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "9063020069",
+        "name": "Munjiza Lazara Dragoljub",
+        "additional_info": "Umrli borci i učesnici rata od završetka NOR-a do početka 1983. godine, Husimovci: MUNJIZA Lazara Dragoljub. Nosioci Partizanske spomenice 1941. godine, Husimovci: MUNJIZA Lazara Dragoljub",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00002581&pg_seq=248",
+        "source_page": 248,
+        "ref_book": "staromajdansko"
+      }
+    ]
   },
   {
     "last_name": "Munjiza",
@@ -5549,7 +5583,21 @@
     "death_type": "umro",
     "death_date": "1962",
     "death_place": "Sarajevo",
-    "rank": "komesar čete"
+    "rank": "komesar čete",
+    "other_sources": [
+      {
+        "soldier_id": "0124000692",
+        "name": "Ožegović Koje Stole",
+        "additional_info": "iz Bravskog, Bosanski Petrovac, desetar.",
+        "pdf_file": "13-krajiska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 105.3,
+        "pdf_y": 225.6,
+        "pdf_x_end": 360.4,
+        "pdf_y_end": 234.1,
+        "unit_file": "13-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pašić",
@@ -6025,7 +6073,31 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "komandant voda"
+    "rank": "komandant voda",
+    "other_sources": [
+      {
+        "soldier_id": "0123001432",
+        "name": "Rajlić Stevana Milan",
+        "additional_info": "rođen 1917. u Potkalinju, Bosanska Krupa, Srbin, zemljoradnik, u NOB od 27. 7. 1941, u brigadi od 21. 5. 1942, 2. četa, 2. bataljon, borac, poginuo 30. 3. 1944. kod željezničke stanice Biljanovac (Raška), gdje je i sahranjen",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 80,
+        "pdf_x": 87.3,
+        "pdf_y": 221.8,
+        "pdf_x_end": 446.4,
+        "pdf_y_end": 247.8,
+        "unit_file": "1-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ],
+      "death": [
+        {
+          "date": "30.03.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Rakaz",
@@ -6114,7 +6186,21 @@
     "occupation": "šumarski radnik",
     "rank": "komandant bataljona, kapetan, pukovnik",
     "pdf_x_end": 427.3,
-    "pdf_y_end": 642.1
+    "pdf_y_end": 642.1,
+    "other_sources": [
+      {
+        "soldier_id": "0013011232",
+        "name": "Raković Đure Tomo",
+        "additional_info": "",
+        "pdf_file": "6-krajiska-prezivjeli.pdf",
+        "pdf_page": 12,
+        "pdf_x": 104.9,
+        "pdf_y": 409.8,
+        "pdf_x_end": 190.5,
+        "pdf_y_end": 419.5,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Reljić",
@@ -8076,7 +8162,6 @@
     "fathers_name": "Bojica",
     "full_name": "Vukojević Bojice Milan",
     "additional_info": "rođen 19X5. g. Majkić Japra, Bosanska Krupa, Srbin, radnik, u NOB-u od 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Desetar, kandidat za člana KPJ. Ubijen na Vrbasu juna 1942. g. od strane četnika pri pokušaju prijelaska preko Vrbasa. Ranije vođen da je pognuo na Cemernici (zaklali ga četnici).",
-    "birth_year": "1919",
     "pdf_file": "proleterski-bataljon-bk.pdf",
     "pdf_page": 98,
     "pdf_x": 134.0,
@@ -8127,7 +8212,8 @@
     "borrowed": [
       "birth_place",
       "birth_year"
-    ]
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Volf",

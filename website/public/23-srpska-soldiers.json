@@ -1756,7 +1756,6 @@
     "fathers_name": "",
     "full_name": "Grujičić Dušan",
     "additional_info": "poginuo decembra 1944, kod mesta Gradac, Zvornik. Sahranjen na mestu pogibije.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 6,
     "pdf_y": 340.6,
@@ -1766,7 +1765,25 @@
     "soldier_id": "0089000071",
     "death_date": "12.1944",
     "pdf_x_end": 357.7,
-    "death_place": "Gradac, Zvornik"
+    "death_place": "Gradac, Zvornik",
+    "other_sources": [
+      {
+        "soldier_id": "9025018278",
+        "name": "Grujičić (Svetozar) Dušan",
+        "additional_info": "rođen 1923, Brnjac (Loznica). Srbin, poginuo 1944. u NOBu, Loznica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=730",
+        "source_page": 730,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Brnjac, Loznica",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1923"
   },
   {
     "last_name": "Gvojin",
@@ -2977,10 +2994,10 @@
   },
   {
     "last_name": "Jovanović",
-    "middle_name": "",
+    "middle_name": "Stanka",
     "first_name": "Dragoljub",
-    "fathers_name": "",
-    "full_name": "Jovanović Dragoljub",
+    "fathers_name": "Stanko",
+    "full_name": "Jovanović Stanka Dragoljub",
     "additional_info": "1920, Zlot, Boljevac, zemljoradnik. U NOVJ od oktobra 1944, borac u 1. bataljonu. Poginuo 12. aprila 1945. kod Trbuka, Doboj. Sahranjen na mestu pogibije.",
     "birth_year": "1920",
     "birth_place": "Zlot, Boljevac",
@@ -2996,7 +3013,26 @@
     "death_place": "Trbuk, Doboj",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 380.9
+    "pdf_x_end": 380.9,
+    "other_sources": [
+      {
+        "soldier_id": "0087000134",
+        "name": "Jovanović Stanka Dragoljub",
+        "additional_info": "rođen 1921. godine, Vučedolce, Surdulica; poginuo 12.04.1945, Batrovci na reci Bosutu.",
+        "pdf_file": "8-srpska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 40.6,
+        "pdf_y": 449.4,
+        "pdf_x_end": 344.4,
+        "pdf_y_end": 469.7,
+        "unit_file": "8-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -3678,7 +3714,29 @@
     "death_date": "22.03.1945",
     "death_place": "Kakmuži, Gračanica",
     "rank": "borac",
-    "pdf_x_end": 381.0
+    "pdf_x_end": 381.0,
+    "other_sources": [
+      {
+        "soldier_id": "0090000120",
+        "name": "Kocić Borđa Stanimir",
+        "additional_info": "1922, Aleksine, Vlasotince, ciglarski radnik. U NOVJ od 8. septembra 1944, bio borac 4. bataljona. Poginuo 12. aprila 1945. godine kod Lipovca, Sremski front. Po kazivanjima njegovih seljana kao mesto pogibije pominje se planina Rogozna, Novi Pazar, što je verovatnije.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 15.8,
+        "pdf_y": 348.8,
+        "pdf_x_end": 322.1,
+        "pdf_y_end": 413.5,
+        "unit_file": "12-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1945",
+          "place": "Lipovac, Sremski front"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kocić",
@@ -3760,7 +3818,26 @@
     "death_date": "08.01.1945",
     "rank": "borac",
     "unit_detail": "3. četa, 1. bataljon",
-    "pdf_x_end": 380.9
+    "pdf_x_end": 380.9,
+    "death_place": "Sahranjen na groblju u Zvorniku",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0091000157",
+        "name": "Kosovac Radoslav",
+        "additional_info": "borac 3. čete 1. bataljona. Ranjen u borbi na Drini, prenesen u Medikosanitetski bataljon i 8. januara 1945. godine podlegao ranama. Sahranjen na groblju u Zvorniku.",
+        "pdf_file": "20-srpska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 47.1,
+        "pdf_y": 156.2,
+        "pdf_x_end": 311.8,
+        "pdf_y_end": 191.6,
+        "pdf_x_left": 29.8,
+        "unit_file": "20-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kostić",
@@ -5273,10 +5350,10 @@
   },
   {
     "last_name": "Milenković",
-    "middle_name": "",
+    "middle_name": "Ilije",
     "first_name": "Živojin",
-    "fathers_name": "",
-    "full_name": "Milenković Živojin",
+    "fathers_name": "Ilija",
+    "full_name": "Milenković Ilije Živojin",
     "additional_info": "1920, Sibnica, Jagodina (Svetozarevo), zemljoradnik. U NOVJ od 10. novembra 1944, borac u 4. bataljonu. Poginuo 13. aprila 1945. kod sela Ševarlije, Doboj. Sahranjen na Kamilu.",
     "birth_year": "1920",
     "birth_place": "Sibnica",
@@ -5292,7 +5369,61 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 365.1,
-    "death_place": "Ševarlije, Doboj"
+    "death_place": "Ševarlije, Doboj",
+    "other_sources": [
+      {
+        "soldier_id": "0019000382",
+        "name": "Milenković Ilije Živojin",
+        "additional_info": "borac 2. čete 1. bataljona 19. srpske brigade, rođen 1920. god. u selu Velikom Popovcu kod Petrovca na Mlavi, poginuo 20. marta 1945. god. kod sela Zelinja blizu Gradačca u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 54,
+        "pdf_x": 83.6,
+        "pdf_y": 195.7,
+        "pdf_x_end": 342.9,
+        "pdf_y_end": 230.2,
+        "pdf_x_left": 62.4,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0073001505",
+        "name": "Milenković Ilije Živojin",
+        "additional_info": "borac 2. čete 1. bataljona, rođen 1920. u selu Veliki Popovac kod Petrovca na Mlavi, poginuo 20. marta 1945. kod sela Zelinja blizu Gradačca u borbi protiv četnika.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 50.0,
+        "pdf_y": 437.9,
+        "pdf_x_end": 355.3,
+        "pdf_y_end": 463.8,
+        "unit_file": "19-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0087000227",
+        "name": "Milenković Ilije Živojin",
+        "additional_info": "rođen 1919. godine, Klisurica, Vranje; poginuo 12.04.1945, Batrovci na reci Bosutu.",
+        "pdf_file": "8-srpska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 51.0,
+        "pdf_y": 232.7,
+        "pdf_x_end": 357.1,
+        "pdf_y_end": 252.8,
+        "unit_file": "8-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "20.03.1945",
+          "place": "Zelinja, Gradačac"
+        },
+        {
+          "date": "12.04.1945",
+          "place": "Batrovci"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milenović",
@@ -6944,7 +7075,25 @@
     "soldier_id": "0089000257",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 392.5
+    "pdf_x_end": 392.5,
+    "other_sources": [
+      {
+        "soldier_id": "9025009931",
+        "name": "Nikodijević (Dimitrije) Milosav",
+        "additional_info": "rođen 1923, Supska (Ćuprija). Srbin, poginuo 1945. u NOBu, Kakušmaj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=392",
+        "source_page": 392,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Kakušmaj"
   },
   {
     "last_name": "Nikodijević",
@@ -7942,10 +8091,10 @@
   },
   {
     "last_name": "Petrović",
-    "middle_name": "",
+    "middle_name": "Jovana",
     "first_name": "Aleksandar",
-    "fathers_name": "",
-    "full_name": "Petrović Aleksandar",
+    "fathers_name": "Jovan",
+    "full_name": "Petrović Jovana Aleksandar",
     "additional_info": "1923, Isakovo, Euprija, zemljoradnik. U NOVJ od novembra 1944, borac u 1. bataljonu. Poginuo 26. januara 1945. kod sela Turije, Gračanica. Sahranjen u istom selu, pored druma.",
     "birth_year": "1923",
     "birth_place": "Isakovo, Euprija",
@@ -7961,7 +8110,29 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 363.9,
-    "death_place": "Turija, Gračanica"
+    "death_place": "Turija, Gračanica",
+    "other_sources": [
+      {
+        "soldier_id": "0027000638",
+        "name": "Petrović Jovana Aleksandar",
+        "additional_info": "(1923, Kladušnica, srez ključki, Negotin). U NOVJ od 27. X 1944, poginuo 6. I 1945. kod Gračanice kao borac 2/3. bataljona.",
+        "pdf_file": "14-srpska.pdf",
+        "pdf_page": 59,
+        "pdf_x": 65.0,
+        "pdf_y": 459.6,
+        "pdf_x_end": 346.8,
+        "pdf_y_end": 486.2,
+        "unit_file": "14-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.01.1945",
+          "place": "Turija, Gračanica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -8250,7 +8421,33 @@
     "rank": "poručnik",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 384.2,
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0011001055",
+        "name": "Popović Duje Mile",
+        "additional_info": "komandant bataljona, rođen 1915, Mrđe, Drvar, Srbin, u NOB od 1941, član KPJ, poginuo 1945. na Drini.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 71,
+        "pdf_x": 96.7,
+        "pdf_y": 225.7,
+        "pdf_x_end": 379.9,
+        "pdf_y_end": 252.5,
+        "unit_file": "4-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Drina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Popović",
@@ -11519,7 +11716,27 @@
     "death_date": "09.02.1945",
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 354.8
+    "pdf_x_end": 354.8,
+    "other_sources": [
+      {
+        "soldier_id": "0091000555",
+        "name": "Vojnić Petar",
+        "additional_info": "1922, Mali Izvor, Boljevac, zemljoradnik. U NOVJ od oktobra 1944, borac 2. čete 2. bataljona. Teško ranjen u kičmeni stub u borbi protiv Nemaca i ustaša kod Miričine. Prenesen u Medikosanitetski bataljon i tu podlegao ranama 9. februara 1945. godine. Sahranjen na pravoslavnom groblju u Tuzli.",
+        "pdf_file": "20-srpska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 55.9,
+        "pdf_y": 256.7,
+        "pdf_x_end": 320.4,
+        "pdf_y_end": 309.2,
+        "pdf_x_left": 38.1,
+        "unit_file": "20-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Vujačić",

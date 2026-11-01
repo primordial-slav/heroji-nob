@@ -4474,14 +4474,37 @@
     "fathers_name": "Miha",
     "full_name": "Brkić Mihe Tripo",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 289.9,
     "pdf_x": 15.6,
     "pdf_y_end": 297.9,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100000227",
-    "pdf_x_end": 103.7
+    "pdf_x_end": 103.7,
+    "birth_year": "1906",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Dola, Stolac",
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0043000179",
+        "name": "Brkić Mihe Tripo",
+        "additional_info": "borac 4. bataljona, rođen 1906, Dola, Stolac, radnik, Srbin, u NOB od 1942. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 9,
+        "pdf_x": 313.4,
+        "pdf_y": 335.1,
+        "pdf_x_end": 483.5,
+        "pdf_y_end": 365.9,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brkić",
@@ -6467,7 +6490,6 @@
     "fathers_name": "Vidoje",
     "full_name": "Dobranić Vidoja Spaso",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 19,
     "pdf_y": 231.0,
     "pdf_x": 16.4,
@@ -6486,10 +6508,34 @@
         "pdf_y": 386.3,
         "pdf_x_end": 157.0,
         "pdf_y_end": 394.8
+      },
+      {
+        "soldier_id": "0043000234",
+        "name": "Dobranić Vidoja Spaso",
+        "additional_info": "komandir voda u 1. četi 6. bataljona, rođen 1913, Dabar, Stolac, zemljoradnik, Srbin, u NOB od 1941, član KPJ.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 15,
+        "pdf_x": 312.5,
+        "pdf_y": 483.7,
+        "pdf_x_end": 483.2,
+        "pdf_y_end": 526.0,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "unit_detail": "3. bataljon",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "birth_year": "1913",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Dabar, Stolac",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "party": "KPJ"
   },
   {
     "last_name": "Dobranić",
@@ -6599,14 +6645,37 @@
     "fathers_name": "Ilija",
     "full_name": "Domazet Ilije Janko",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 19,
     "pdf_y": 339.3,
     "pdf_x": 17.1,
     "pdf_y_end": 347.3,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100000335",
-    "pdf_x_end": 117.5
+    "pdf_x_end": 117.5,
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Predolje, Stolac",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0043000241",
+        "name": "Domazet Ilije Janko",
+        "additional_info": "desetar u 2. četi 6. bataljona, rođen 1912, Predolje, Stolac, zemljoradnik, Srbin, u NOB od 1942. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 16,
+        "pdf_x": 91.5,
+        "pdf_y": 308.1,
+        "pdf_x_end": 262.4,
+        "pdf_y_end": 349.7,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dono",
@@ -6686,9 +6755,8 @@
     "first_name": "Radovan",
     "fathers_name": "Maksim",
     "full_name": "Dragićević Maksima Radovan",
-    "additional_info": "1921, Prebilovci, Čapljina, aprila",
+    "additional_info": "1921, Prebilovci, Čapljina, aprila 1945.",
     "birth_year": "1921",
-    "birth_place": "Prebilovci, Čapljina",
     "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 282.5,
@@ -6697,6 +6765,7 @@
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100000339",
     "pdf_x_end": 356.5,
+    "birth_place": "Prebilovci, Čapljina",
     "other_sources": [
       {
         "soldier_id": "9022013007",
@@ -9474,7 +9543,6 @@
     "fathers_name": "Gojko",
     "full_name": "Grk Gojka Milan",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 18,
     "pdf_y": 303.5,
     "pdf_x": 198.5,
@@ -9493,10 +9561,32 @@
         "pdf_y": 36.7,
         "pdf_x_end": 113.8,
         "pdf_y_end": 45.2
+      },
+      {
+        "soldier_id": "0043000342",
+        "name": "Grk Gojka Milan",
+        "additional_info": "desetar u 1. bataljonu, rođen 1925, Dabarsko Polje, Štolac, zemljoradnik, Srbin.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 22,
+        "pdf_x": 275.6,
+        "pdf_y": 496.0,
+        "pdf_x_end": 445.5,
+        "pdf_y_end": 527.3,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
     ],
     "rank": "zamjenik političkog komesara, pomoćnik političkog komesara",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Dabarsko Polje, Štolac",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Grk",
@@ -11352,7 +11442,32 @@
     "pdf_y_end": 328.1,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100000577",
-    "pdf_x_end": 366.6
+    "pdf_x_end": 366.6,
+    "other_sources": [
+      {
+        "soldier_id": "0101000068",
+        "name": "Ilić D Anđelko",
+        "additional_info": "rođen 1923. god. u Gornjim Davidovićima. Borac. Poginuo 5. februara 1945. god. kod Čitluka.",
+        "pdf_file": "12-hercegovacka.pdf",
+        "pdf_page": 1,
+        "pdf_x": 24.7,
+        "pdf_y": 349.0,
+        "pdf_x_end": 354.9,
+        "pdf_y_end": 369.5,
+        "unit_file": "12-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ],
+      "death": [
+        {
+          "date": "05.02.1945",
+          "place": "Čitluk"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ilić",
@@ -24171,10 +24286,10 @@
   },
   {
     "last_name": "Pervan",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Bešir",
-    "fathers_name": "",
-    "full_name": "Pervan Bešir",
+    "fathers_name": "M",
+    "full_name": "Pervan M Bešir",
     "additional_info": "poginuo 24. 10. 1944, kod Metkovića, 1. bat.",
     "death_date": "poginuo 24. 10. 1944",
     "death_place": "kod Metkovića",
@@ -24195,16 +24310,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=224",
         "source_page": 224,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0101000156",
+        "name": "Pervan M Bešir",
+        "additional_info": "rođen 1925. god. u Fatnici. Borac. Poginuo 17. novembra 1944. god. kod Hutova.",
+        "pdf_file": "12-hercegovacka.pdf",
+        "pdf_page": 2,
+        "pdf_x": 37.5,
+        "pdf_y": 331.1,
+        "pdf_x_end": 368.2,
+        "pdf_y_end": 351.6,
+        "unit_file": "12-hercegovacka-soldiers.json"
       }
     ],
-    "birth_place": "Fatnica, Bileća",
+    "birth_year": "1925",
     "borrowed": [
       "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Musliman",
-    "birth_year": "1925"
+    "birth_place": "Fatnica, Bileća",
+    "ethnicity": "Musliman"
   },
   {
     "last_name": "Pervan",
@@ -27836,14 +27963,37 @@
     "fathers_name": "Sima",
     "full_name": "Samardžić Sime Slavko",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 27,
     "pdf_y": 360.0,
     "pdf_x": 189.0,
     "pdf_y_end": 368.0,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100001428",
-    "pdf_x_end": 306.7
+    "pdf_x_end": 306.7,
+    "other_sources": [
+      {
+        "soldier_id": "9022018389",
+        "name": "Samardžić (Simo) Slavko",
+        "additional_info": "rođen 1924, Dubrave (Jajce). Srbin, poginuo 1943. u NOBu, Sović",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1572",
+        "source_page": 1572,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "birth_place": "Dubrave, Jajce",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Sović",
+    "birth_year": "1924"
   },
   {
     "last_name": "Samardžić",
@@ -29288,14 +29438,39 @@
     "fathers_name": "Jovo",
     "full_name": "Soldo Jove Lazar",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 28,
     "pdf_y": 382.9,
     "pdf_x": 24.9,
     "pdf_y_end": 390.9,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100001504",
-    "pdf_x_end": 112.6
+    "pdf_x_end": 112.6,
+    "birth_year": "1905",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Suzina, Stolac",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "party": "KPJ 1941",
+    "other_sources": [
+      {
+        "soldier_id": "0043001114",
+        "name": "Soldo Jove Lazar",
+        "additional_info": "borac 1. čete 6. bataljona, rođen 1905, Suzina, Stolac, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1941. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 62,
+        "pdf_x": 100.8,
+        "pdf_y": 343.8,
+        "pdf_x_end": 271.5,
+        "pdf_y_end": 385.4,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Soldo",
@@ -32330,14 +32505,39 @@
     "fathers_name": "Halil",
     "full_name": "Vilogorac Halila Ragib",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 245.9,
     "pdf_x": 188.6,
     "pdf_y_end": 253.9,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100001660",
-    "pdf_x_end": 307.0
+    "pdf_x_end": 307.0,
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Vlahovići, Ljubinje",
+    "ethnicity": "Jugosloven",
+    "occupation": "zemljoradnik",
+    "party": "KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0043001235",
+        "name": "Vilogorac Halila Ragib",
+        "additional_info": "zvani Avdo; borac 1. čete 3. bataljona, rođen 1920, Vlahovići, Ljubinje, zemljoradnik, Jugosloven, u NOB od maja 1942, član KPJ od januara 1944. godine, krajem rata komandir čete.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 72,
+        "pdf_x": 91.1,
+        "pdf_y": 282.8,
+        "pdf_x_end": 261.7,
+        "pdf_y_end": 346.0,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Viđen",
@@ -32716,14 +32916,43 @@
     "fathers_name": "Huso",
     "full_name": "Vuk Huse Ibro",
     "additional_info": "",
-    "birth_year": "",
     "pdf_page": 17,
     "pdf_y": 295.1,
     "pdf_x": 188.8,
     "pdf_y_end": 303.1,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100001681",
-    "pdf_x_end": 263.1
+    "pdf_x_end": 263.1,
+    "birth_year": "1910",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Hodan, Stolac",
+    "ethnicity": "Musliman",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "death_place": "Mostar",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0043001273",
+        "name": "Vuk Huse Ibro",
+        "additional_info": "zamenik političkog komesara čete u 3. bataljonu, rođen 1910, Hodan, Stolac, zemljoradnik, Musliman, u NOB od 1941, član KPJ. Umro posle rata u Mostaru.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 74,
+        "pdf_x": 98.8,
+        "pdf_y": 426.7,
+        "pdf_x_end": 269.2,
+        "pdf_y_end": 479.1,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vukajlović",

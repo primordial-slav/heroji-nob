@@ -3187,7 +3187,37 @@
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 379.6,
     "party": "SKOJ, KPJ 1943",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "učenik",
     "other_sources": [
+      {
+        "soldier_id": "0001002417",
+        "name": "Duplančić Petra Milorad",
+        "additional_info": "1923, Split, Hrvatska, Hrvat, učenik, član SKOJ-a od 1942, član KPJ od 1943, u NOB od 1942, u brigadi od oktobra 1942, IV bataljon, desetar, poginuo 28. 07. 1944, Gradačac, BiH",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 193,
+        "pdf_x": 47.8,
+        "pdf_y": 112.9,
+        "pdf_x_end": 355.0,
+        "pdf_y_end": 155.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100283",
+        "name": "Duplančić Petra Milorad",
+        "additional_info": "borac 4. bataljona, rođen 1925, Split, đak, Hrvat, u NOB od 1942, član SKOJ-a od 1942, član KPJ od 1943, poginuo u Lici, kod Gračaca, 28. jula 1944.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 226.3,
+        "pdf_y": 385.0,
+        "pdf_x_end": 396.4,
+        "pdf_y_end": 437.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
       {
         "soldier_id": "0001403046",
         "name": "Duplančić Petra Milorad",
@@ -3200,7 +3230,18 @@
         "pdf_y_end": 684.8,
         "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ],
+      "death": [
+        {
+          "date": "28.07.1944",
+          "place": "Gradačac, BiH"
+        }
+      ]
+    }
   },
   {
     "last_name": "Duša",
@@ -5826,7 +5867,6 @@
     "fathers_name": "",
     "full_name": "Kliškič Bepica",
     "additional_info": "..., Split, ..., borac, ... poginuo .., ...",
-    "birth_year": "",
     "soldier_id": "0008000226",
     "pdf_page": 11,
     "pdf_y": 479.7,
@@ -5836,7 +5876,25 @@
     "birth_place": "Split",
     "death_type": "poginuo",
     "rank": "borac",
-    "pdf_x_end": 305.2
+    "pdf_x_end": 305.2,
+    "birth_year": "1924",
+    "other_sources": [
+      {
+        "soldier_id": "9021046155",
+        "name": "Kliškić (Jozo) Bepica",
+        "additional_info": "rođen 1924, Split. Hrvat, poginuo 1943. u NOBu, 9.dalmatinska diviz.",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2217",
+        "source_page": 2217,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Klišmanić",
@@ -7140,7 +7198,6 @@
     "fathers_name": "",
     "full_name": "Lukačić Luka",
     "additional_info": "Našice, .., borac, poginuo 16. 11. 1944, Duvno",
-    "birth_year": "",
     "soldier_id": "0008000275",
     "pdf_page": 13,
     "pdf_y": 282.2,
@@ -7152,7 +7209,23 @@
     "death_date": "16.11.1944",
     "death_place": "Duvno",
     "rank": "borac",
-    "pdf_x_end": 371.6
+    "pdf_x_end": 371.6,
+    "other_sources": [
+      {
+        "soldier_id": "9021024441",
+        "name": "Lukačić (Mate) Luka",
+        "additional_info": "rođen 1915, Martin (Našice). Hrvat, poginuo 1944. u NOBu, Livno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1125",
+        "source_page": 1125,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1915"
   },
   {
     "last_name": "Lulič",
@@ -8471,9 +8544,9 @@
   {
     "last_name": "Miletić",
     "first_name": "Paško",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Miletić Paško",
+    "middle_name": "Mate",
+    "fathers_name": "Mate",
+    "full_name": "Miletić Mate Paško",
     "additional_info": ".., Split, .., borac, poginuo 2. 10. 1943, Lovreć",
     "soldier_id": "0008000321",
     "pdf_page": 15,
@@ -8495,14 +8568,39 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2224",
         "source_page": 2224,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0148001838",
+        "name": "Miletić Mate Paško",
+        "additional_info": "zvani Glumac; desetar u Mosorskom PO. Rođen 1900. u Splitu, zemljoradnik, Hrvat, član KPJ. U NOB od 18. lipnja 1942. U Mosorski PO došao rujna 1943. Poginuo 8. studenog 1943. u borbi na Dupcima, Omiš, kao desetar u 1. bataljonu Mosorskog PO.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 120,
+        "pdf_x": 236.7,
+        "pdf_y": 669.1,
+        "pdf_x_end": 578.0,
+        "pdf_y_end": 702.0,
+        "pdf_x_left": 220.2,
+        "unit_file": "mosorski-odred-soldiers.json"
       }
     ],
-    "ethnicity": "Hrvat",
+    "birth_year": "1900",
     "borrowed": [
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation",
+      "party"
     ],
-    "birth_year": "1904"
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
+    "variants": {
+      "death": [
+        {
+          "date": "08.11.1943",
+          "place": "Dupci, Omiš"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milič",
@@ -9751,11 +9849,10 @@
   {
     "last_name": "Pavković",
     "first_name": "Jozo",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Pavković Jozo",
+    "middle_name": "Ante",
+    "fathers_name": "Ante",
+    "full_name": "Pavković Ante Jozo",
     "additional_info": ".. ., Seget Gornji, Trogir, 2. bat., borac, poginuo 9. 5. 1945 Trst'",
-    "birth_year": "",
     "soldier_id": "0008000370",
     "pdf_page": 16,
     "pdf_y": 400.8,
@@ -9768,7 +9865,29 @@
     "death_place": "Trst",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 369.2
+    "pdf_x_end": 369.2,
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0005100667",
+        "name": "Pavković Ante Jozo",
+        "additional_info": "borac 5. bataljona, rođen 1921, Gornji Seget, Trogir, zemljoradnik, Hrvat, u NOB od oktobra 1942. godine.",
+        "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 220.6,
+        "pdf_y": 398.0,
+        "pdf_x_end": 390.8,
+        "pdf_y_end": 439.6,
+        "unit_file": "treca-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pavlak",
@@ -10349,7 +10468,6 @@
     "fathers_name": "Mate",
     "full_name": "Pletikosić Mate Ante",
     "additional_info": ". . , Solin, Split, 4. bat, borac, poginuo 16. 11. 1943, Studenci, Imotski",
-    "birth_year": "",
     "soldier_id": "0008000391",
     "pdf_page": 17,
     "pdf_y": 256.5,
@@ -10362,7 +10480,33 @@
     "death_place": "Studenci, Imotski",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 376.6
+    "pdf_x_end": 376.6,
+    "birth_year": "1905",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0036001530",
+        "name": "Pletikosić Mate Ante",
+        "additional_info": "rođen 1905. godine u Solinu — Split, borac IV bat, pogi nuo u Studencu, oktobra 1943. godine.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036011636",
+        "name": "Pletikosić Ante",
+        "additional_info": "rođen 1905. godine u Solinu — Split, borac II bat., pogi nuo u Studencu, oktobra 1943. godine",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 91,
+        "pdf_x": 81.3,
+        "pdf_y": 381.67499999999995,
+        "pdf_y_end": 399.1,
+        "pdf_x_end": 414.4,
+        "pdf_x_left": 59.2,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Podrug",
@@ -10834,9 +10978,9 @@
   {
     "last_name": "Radošević",
     "first_name": "Jozo",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Radošević Jozo",
+    "middle_name": "Petra",
+    "fathers_name": "Petar",
+    "full_name": "Radošević Petra Jozo",
     "additional_info": ". . ., Dugopolje, Split, . . ., borac, poginuo 16. 1. 1945, selo Uzarići, Široki Brijeg",
     "soldier_id": "0008000412",
     "pdf_page": 18,
@@ -10850,7 +10994,6 @@
     "death_place": "Uzarići, Široki Brijeg",
     "rank": "borac",
     "pdf_x_end": 377.4,
-    "birth_year": "1907",
     "other_sources": [
       {
         "soldier_id": "9021044673",
@@ -10859,13 +11002,49 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2182",
         "source_page": 2182,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0050000260",
+        "name": "Radošević Petra Jozo",
+        "additional_info": "borac 2. č, iz Dugopolja, pog. 6. 2. kod Knežpolja",
+        "pdf_file": "12-dalmatinska.pdf",
+        "pdf_page": 42,
+        "pdf_x": 196.4,
+        "pdf_y": 335.8,
+        "pdf_x_end": 455.5,
+        "pdf_y_end": 358.1,
+        "pdf_x_left": 123.9,
+        "pdf_rects": [
+          [
+            196.4,
+            335.8,
+            455.5,
+            345.3
+          ],
+          [
+            123.9,
+            348.6,
+            215.6,
+            358.1
+          ]
+        ],
+        "unit_file": "12-dalmatinska-soldiers.json"
       }
     ],
+    "birth_year": "1907",
     "ethnicity": "Hrvat",
     "borrowed": [
       "birth_year",
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.02.1945",
+          "place": "kod Knežpolja"
+        }
+      ]
+    }
   },
   {
     "last_name": "Radošević",
@@ -12157,7 +12336,21 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "komandir čete",
-    "pdf_x_end": 361.9
+    "pdf_x_end": 361.9,
+    "other_sources": [
+      {
+        "soldier_id": "0168004601",
+        "name": "Šore Ante",
+        "additional_info": "Split",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 47,
+        "pdf_x": 6.0,
+        "pdf_y": 257.6,
+        "pdf_x_end": 82.0,
+        "pdf_y_end": 267.1,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Strbović",
@@ -17039,11 +17232,10 @@
   {
     "last_name": "Batistić",
     "first_name": "Nikola",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Batistić Nikola",
+    "middle_name": "Nikole",
+    "fathers_name": "Nikola",
+    "full_name": "Batistić Nikole Nikola",
     "additional_info": "..., Zrnovo, Korčula, 3. bait, borac",
-    "birth_year": "",
     "soldier_id": "0008000690",
     "pdf_page": 26,
     "pdf_y": 517.2,
@@ -17052,7 +17244,30 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Zrnovo, Korčula",
     "rank": "borac",
-    "pdf_x_end": 324.4
+    "pdf_x_end": 324.4,
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year",
+      "occupation",
+      "party"
+    ],
+    "occupation": "zemljoradnik",
+    "party": "SKOJ 1943, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0053000177",
+        "name": "Batistić Nikole Nikola",
+        "additional_info": "vodnik voda, r. 3. 5. 1920, Zrnovo, Korčula, zemljoradnik, u NOB od jula 1943, član SKOJa od jula 1943, član KPJ od septembra 1943. NOP-u pristupio juna 1942.",
+        "pdf_file": "11-dalmatinska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 286.2,
+        "pdf_y": 369.2,
+        "pdf_x_end": 458.9,
+        "pdf_y_end": 412.2,
+        "unit_file": "11-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_date": "03.05.1920"
   },
   {
     "last_name": "Batur",
@@ -18421,11 +18636,10 @@
   {
     "last_name": "Bioćič",
     "first_name": "Marin",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Bioćič Marin",
+    "middle_name": "F",
+    "fathers_name": "F",
+    "full_name": "Bioćič F Marin",
     "additional_info": "..., K. Sućurac, 2. bat, borac, ranjen 11. 11. 1943:",
-    "birth_year": "",
     "soldier_id": "0008000763",
     "pdf_page": 28,
     "pdf_y": 314.8,
@@ -18435,7 +18649,49 @@
     "birth_place": "K. Sućurac",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 375.4
+    "pdf_x_end": 375.4,
+    "other_sources": [
+      {
+        "soldier_id": "9021045547",
+        "name": "Biočić (Frano) Marin",
+        "additional_info": "rođen 1916, Split. Hrvat, poginuo 1943. u NOBu, Studenci bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2202",
+        "source_page": 2202,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0036000195",
+        "name": "Biočić F Marin",
+        "additional_info": "rođen 1916. godine u K. Sućurac — Split, bolničar III bat, poginuo kod Bihaća marta 1945. godine.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010218",
+        "name": "Biočić F Marin",
+        "additional_info": "rođen 1916. godine u K. Sućurac — Split, bolničar III bat., poginuo kod Bihaća marta 1945. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 47,
+        "pdf_x": 79.7,
+        "pdf_y": 194.2025,
+        "pdf_y_end": 211.1,
+        "pdf_x_end": 416.8,
+        "pdf_x_left": 57.9,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_year": "1916",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "03.1945",
+    "death_place": "Bihaća",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Biočič",
@@ -20815,11 +21071,10 @@
   {
     "last_name": "Britvić",
     "first_name": "Josip",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Britvić Josip",
+    "middle_name": "Ante",
+    "fathers_name": "Ante",
+    "full_name": "Britvić Ante Josip",
     "additional_info": "zvani Bepo; ..., K. Kambelovac, Split, .... borac",
-    "birth_year": "",
     "soldier_id": "0008000887",
     "pdf_page": 31,
     "pdf_y": 151.0,
@@ -20828,7 +21083,44 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "K. Kambelovac, Split",
     "rank": "borac",
-    "pdf_x_end": 356.5
+    "pdf_x_end": 356.5,
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "party": "SKOJ 1943, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0007000701",
+        "name": "Britvić Ante Josip",
+        "additional_info": "21. 10. 1926. Kaštel Kambelovac, Split. Hrvat, naučnik-mehaničar. U NOV od 3.9.1942. u Kaštelanskom PO. 4. operat. zoni i 5. dalm. brigadi. U 2. dalm. od travnja 1943. zamjenik komandira čete.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 142.9,
+        "pdf_y": 160.7,
+        "pdf_x_end": 464.0,
+        "pdf_y_end": 184.5,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007100153",
+        "name": "Britvić Ante Josip",
+        "additional_info": "zvani Bepo; puškomitraljezac 3. čete 2. bataljona, rođen 1926, Kaštel Kambelovac, Split, radnik, Hrvat, u NOB od septembra 1942, član SKOJ-a od 1943, član KPJ od aprila 1944. godine, krajem rata zamenik komandira čete.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 228.4,
+        "pdf_y": 37.4,
+        "pdf_x_end": 398.1,
+        "pdf_y_end": 109.9,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_date": "21.10.1926"
   },
   {
     "last_name": "Britvić",
@@ -21447,11 +21739,10 @@
   {
     "last_name": "Bućan",
     "first_name": "Leon",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Bućan Leon",
+    "middle_name": "Ivana",
+    "fathers_name": "Ivan",
+    "full_name": "Bućan Ivana Leon",
     "additional_info": ".. . , Mravince, Split, ..., borac",
-    "birth_year": "",
     "soldier_id": "0008000920",
     "pdf_page": 31,
     "pdf_y": 496.1,
@@ -21460,7 +21751,31 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Mravince, Split",
     "rank": "borac",
-    "pdf_x_end": 283.0
+    "pdf_x_end": 283.0,
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0148000516",
+        "name": "Bućan Ivana Leon",
+        "additional_info": "desetar u 2. vodu 2. čete 2. bataljona Mosorskog PO. Rođen 13. 7. 1927, Mravince, Split, zemljoradnik, Hrvat. U Mosorski PO stupio 1. rujna 1943. i u 1944. prekomandiran u 8. dalmatinsku brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 29,
+        "pdf_x": 275.3,
+        "pdf_y": 381.3,
+        "pdf_x_end": 615.7,
+        "pdf_y_end": 406.4,
+        "pdf_x_left": 258.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "13.07.1927"
   },
   {
     "last_name": "Bućan",
@@ -21713,7 +22028,6 @@
     "fathers_name": "",
     "full_name": "Bulović Jovo",
     "additional_info": ".. , Bitelić, Sinj . . , borac",
-    "birth_year": "",
     "soldier_id": "0008000934",
     "pdf_page": 32,
     "pdf_y": 122.9,
@@ -21722,7 +22036,29 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Bitelić, Sinj",
     "rank": "borac",
-    "pdf_x_end": 260.8
+    "pdf_x_end": 260.8,
+    "birth_year": "1917",
+    "other_sources": [
+      {
+        "soldier_id": "9021039099",
+        "name": "Bulović (Božo) Jovo",
+        "additional_info": "rođen 1917, Gornji Bitelić (Sinj). Srbin, ubijen 1944. u NOBu, Knin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1852",
+        "source_page": 1852,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "ubijen",
+    "death_date": "1944",
+    "death_place": "Knin"
   },
   {
     "last_name": "Bulj",
@@ -22309,7 +22645,28 @@
     "pdf_y_end": 449.2,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
-    "pdf_x_end": 260.4
+    "pdf_x_end": 260.4,
+    "death_type": "umro",
+    "borrowed": [
+      "death_date",
+      "death_type"
+    ],
+    "death_date": "1985",
+    "other_sources": [
+      {
+        "soldier_id": "0148000509",
+        "name": "Buzov Joze Ilija",
+        "additional_info": "borac 1. čete 1. bataljona Mosorskog PO. U Mosorski PO došao rujna 1943. Prekomandiran 11. studenog 1943. u 4. dalmatinsku (splitsku) brigadu. Umro 1985.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 32,
+        "pdf_x": 239.6,
+        "pdf_y": 379.0,
+        "pdf_x_end": 579.2,
+        "pdf_y_end": 404.3,
+        "pdf_x_left": 222.6,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Caktaš",
@@ -22572,11 +22929,10 @@
   {
     "last_name": "Cokarić",
     "first_name": "Ante",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Cokarić Ante",
+    "middle_name": "Sime",
+    "fathers_name": "Sima",
+    "full_name": "Cokarić Sime Ante",
     "additional_info": ". . . , Stobreč, Zrnovnica, . . . , borac",
-    "birth_year": "",
     "soldier_id": "0008000981",
     "pdf_page": 33,
     "pdf_y": 68.7,
@@ -22585,7 +22941,31 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Stobreč, Zrnovnica",
     "rank": "borac",
-    "pdf_x_end": 303.5
+    "pdf_x_end": 303.5,
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0148000552",
+        "name": "Cokarić Sime Ante",
+        "additional_info": "borac 3. čete 1. bataljona Mosorskog PO. Rođen 8. 9. 1924. u Stobreću, Split, zemljoradnik, Hrvat. U Mosorski PO stupio 6. listopada 1944, a zatim upućen u 4. dalmatinsku (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 33,
+        "pdf_x": 265.1,
+        "pdf_y": 689.6,
+        "pdf_x_end": 575.6,
+        "pdf_y_end": 714.6,
+        "pdf_x_left": 248.5,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "08.09.1924"
   },
   {
     "last_name": "Como",
@@ -24453,7 +24833,6 @@
     "fathers_name": "Jure",
     "full_name": "Damić Jure Ante",
     "additional_info": "...... ., . . ., borac",
-    "birth_year": "",
     "soldier_id": "0008001079",
     "pdf_page": 35,
     "pdf_y": 201.6,
@@ -24461,7 +24840,33 @@
     "pdf_y_end": 210.6,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
-    "pdf_x_end": 260.4
+    "pdf_x_end": 260.4,
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Opuzen, Metković",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0036100267",
+        "name": "Damić Jure Ante",
+        "additional_info": "zamenik političkog komesara 3. čete 4. bataljona, rođen 1923, Opuzen, Metković, radnik, Hrvat, u NOB od 1941, član KPJ.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 226.9,
+        "pdf_y": 35.8,
+        "pdf_x_end": 396.1,
+        "pdf_y_end": 76.6,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Damjanić",
@@ -25165,11 +25570,10 @@
   {
     "last_name": "Dodoja",
     "first_name": "Petar",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Dodoja Petar",
+    "middle_name": "Mate",
+    "fathers_name": "Mate",
+    "full_name": "Dodoja Mate Petar",
     "additional_info": "Dugopolje, Split, 4. bat, nestao 20. 10. 1943",
-    "birth_year": "",
     "soldier_id": "0008001118",
     "pdf_page": 36,
     "pdf_y": 141.3,
@@ -25180,7 +25584,27 @@
     "death_type": "nestao",
     "death_date": "20.10.1943",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 349.5
+    "pdf_x_end": 349.5,
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0148000622",
+        "name": "Dodoja Mate Petar",
+        "additional_info": "borac-puškomitraljezac u 3. bataljonu Mosorskog PO. Rođen 16. 5. 1924, Dugopolje, Split. U Mosorski PO došao iz Mosorske leteće čete 17. travnja 1943. Prekomandiran ožujka 1944. u Štab 8. korpusa.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 44,
+        "pdf_x": 239.5,
+        "pdf_y": 702.2,
+        "pdf_x_end": 579.7,
+        "pdf_y_end": 727.2,
+        "pdf_x_left": 223.1,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "16.05.1924"
   },
   {
     "last_name": "Dodig",
@@ -26404,7 +26828,21 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Split",
     "rank": "borac",
-    "pdf_x_end": 242.2
+    "pdf_x_end": 242.2,
+    "other_sources": [
+      {
+        "soldier_id": "0168000957",
+        "name": "Dvornik Duje",
+        "additional_info": "Split",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 13,
+        "pdf_x": 13.7,
+        "pdf_y": 547.7,
+        "pdf_x_end": 107.2,
+        "pdf_y_end": 557.2,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dvornik",
@@ -27166,11 +27604,10 @@
   {
     "last_name": "Ereš",
     "first_name": "Mirko",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Ereš Mirko",
+    "middle_name": "Ante",
+    "fathers_name": "Ante",
+    "full_name": "Ereš Ante Mirko",
     "additional_info": ". . , selo Vid, Metković, 3. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008001222",
     "pdf_page": 38,
     "pdf_y": 360.7,
@@ -27180,7 +27617,27 @@
     "birth_place": "Vid, Metković",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 301.6
+    "pdf_x_end": 301.6,
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0053000757",
+        "name": "Ereš Ante Mirko",
+        "additional_info": "borac 2. c. 4. bat., r. 1911, Vid, Metković, zemljoradnik, u NOB od 13. 9. 1944.",
+        "pdf_file": "11-dalmatinska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 313.9,
+        "pdf_y": 654.3,
+        "pdf_x_end": 486.4,
+        "pdf_y_end": 680.5,
+        "unit_file": "11-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Erljevec",
@@ -29477,7 +29934,21 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Primošten",
     "rank": "borac",
-    "pdf_x_end": 265.2
+    "pdf_x_end": 265.2,
+    "other_sources": [
+      {
+        "soldier_id": "0168001230",
+        "name": "Gracin Petar",
+        "additional_info": "Primošten",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 16,
+        "pdf_x": 234.0,
+        "pdf_y": 230.0,
+        "pdf_x_end": 349.0,
+        "pdf_y_end": 239.5,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Granić",
@@ -33505,7 +33976,42 @@
     "pdf_y_end": 440.3,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
-    "pdf_x_end": 307.2
+    "pdf_x_end": 307.2,
+    "birth_place": "Sitno Donje, Split",
+    "borrowed": [
+      "birth_place",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvatica",
+    "occupation": "domaćica",
+    "other_sources": [
+      {
+        "soldier_id": "0148001062",
+        "name": "Jurišić Mate Klementina",
+        "additional_info": "bolničarka u 3. bataljonu Mosorskog PO. Rođena u Sitnu Donjem, Split, domaćica, Hrvatica. U Mosorski PO stupila 1943, a zatim prekomandirana u 4. dalmatinsku (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 72,
+        "pdf_x": 239.5,
+        "pdf_y": 809.8,
+        "pdf_x_end": 579.9,
+        "pdf_y_end": 834.9,
+        "pdf_x_left": 222.8,
+        "unit_file": "mosorski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0148020116",
+        "name": "Jurišić Klementina",
+        "additional_info": "Pregled rukovodećeg kadra Mosorskog PO 1942—1944.: četne bolničarke.",
+        "pdf_file": "mosorski-odred-kader.pdf",
+        "pdf_page": 6,
+        "pdf_x": 347.6,
+        "pdf_y": 431.9,
+        "pdf_x_end": 430.1,
+        "pdf_y_end": 439.9,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jurišić",
@@ -33549,7 +34055,6 @@
     "fathers_name": "Diega",
     "full_name": "Jurjević Diega Tonći",
     "additional_info": ". . , . . , .. , borac",
-    "birth_year": "",
     "soldier_id": "0008001548",
     "pdf_page": 45,
     "pdf_y": 457.2,
@@ -33557,7 +34062,28 @@
     "pdf_y_end": 466.2,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
-    "pdf_x_end": 283.1
+    "pdf_x_end": 283.1,
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Split",
+    "other_sources": [
+      {
+        "soldier_id": "0148001076",
+        "name": "Jurjević Diega Tonći",
+        "additional_info": "borac Mosorskog PO. Rođen 1927. u Splitu. Iz Mosorskog PO prekomandiran u 4. dalmatinsku (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 73,
+        "pdf_x": 277.0,
+        "pdf_y": 670.0,
+        "pdf_x_end": 615.0,
+        "pdf_y_end": 686.4,
+        "pdf_x_left": 260.2,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jurko",
@@ -36556,11 +37082,10 @@
   {
     "last_name": "Kristić",
     "first_name": "Jozo",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Kristić Jozo",
+    "middle_name": "Matin",
+    "fathers_name": "Mate",
+    "full_name": "Kristić Matin Jozo",
     "additional_info": ".., Podbablje, Imotski, 1. č, 3. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008001702",
     "pdf_page": 49,
     "pdf_y": 189.4,
@@ -36570,7 +37095,30 @@
     "birth_place": "Podbablje, Imotski",
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
-    "pdf_x_end": 338.0
+    "pdf_x_end": 338.0,
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0007002618",
+        "name": "Kristić Matin Jozo",
+        "additional_info": "25. 12. 1921. Podbalje, Imotski. Hrvat, zemljoradnik. U NOV od 5. 6. 1944. u 2. dalm. brigadi.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 88,
+        "pdf_x": 133.2,
+        "pdf_y": 633.4,
+        "pdf_x_end": 458.8,
+        "pdf_y_end": 649.3,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_date": "25.12.1921"
   },
   {
     "last_name": "Kriška",
@@ -36594,11 +37142,10 @@
   {
     "last_name": "Križan",
     "first_name": "Štipan",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Križan Štipan",
+    "middle_name": "Bože",
+    "fathers_name": "Bože",
+    "full_name": "Križan Bože Štipan",
     "additional_info": "Dugopolje, Split, borac",
-    "birth_year": "",
     "soldier_id": "0008001704",
     "pdf_page": 49,
     "pdf_y": 215.4,
@@ -36607,7 +37154,35 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Dugopolje, Split",
     "rank": "borac",
-    "pdf_x_end": 303.9
+    "pdf_x_end": 303.9,
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "death_date": "1974",
+    "other_sources": [
+      {
+        "soldier_id": "0148001353",
+        "name": "Križan Bože Štipan",
+        "additional_info": "borac 1. čete 2. bataljona Mosorskog PO. Rođen 7. 7 1911, Dugopolje, Split, zemljoradnik, Hrvat. U Mosorski PO stupio 15. rujna 1944 i u listopadu upućen u 4. dalmatinsku (splitsku) brigadu. Umro 1974.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 90,
+        "pdf_x": 235.4,
+        "pdf_y": 361.9,
+        "pdf_x_end": 573.4,
+        "pdf_y_end": 386.4,
+        "pdf_x_left": 218.4,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "07.07.1911"
   },
   {
     "last_name": "Križevič",
@@ -39599,11 +40174,10 @@
   {
     "last_name": "Macanović",
     "first_name": "Dušan",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Macanović Dušan",
+    "middle_name": "Jure",
+    "fathers_name": "Jure",
+    "full_name": "Macanović Jure Dušan",
     "additional_info": "Dugopolje, Sinj, borac",
-    "birth_year": "",
     "soldier_id": "0008001853",
     "pdf_page": 52,
     "pdf_y": 299.3,
@@ -39612,7 +40186,45 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Dugopolje, Sinj",
     "rank": "borac",
-    "pdf_x_end": 312.2
+    "pdf_x_end": 312.2,
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "0148001561",
+        "name": "Macanović Jure Dušan",
+        "additional_info": "vodnik l.voda 1. čete 2. bataljona Mosorskog PO. Rođen 8. 11. 1912, Dugopolje, Split, zemljoradnik, Hrvat. U Mosorski PO došao 9. rujna 1943. i 1944. prekomandiran u 4. dalmatinsku (splitsku) brigadu. Umro.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 102,
+        "pdf_x": 238.3,
+        "pdf_y": 815.2,
+        "pdf_x_end": 578.2,
+        "pdf_y_end": 840.3,
+        "pdf_x_left": 221.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0148020186",
+        "name": "Macanović Dušan",
+        "additional_info": "Pregled rukovodećeg kadra Mosorskog PO 1942—1944.: komandiri vodova (vodnici).",
+        "pdf_file": "mosorski-odred-kader.pdf",
+        "pdf_page": 5,
+        "pdf_x": 262.8,
+        "pdf_y": 439.3,
+        "pdf_x_end": 336.3,
+        "pdf_y_end": 447.3,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "08.11.1912"
   },
   {
     "last_name": "Macanović",
@@ -40380,7 +40992,32 @@
     "pdf_y_end": 295.1,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
-    "pdf_x_end": 288.4
+    "pdf_x_end": 288.4,
+    "birth_place": "Preko, Zadar",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_type": "nestao",
+    "death_date": "19.02.1944",
+    "death_place": "Podi, Sinj",
+    "other_sources": [
+      {
+        "soldier_id": "0148001614",
+        "name": "Marelić Ivana Anđelo",
+        "additional_info": "borac 2. čete 1. bataljona Mosorskog PO. Rođen u Preku, Zadar. U Mosorski PO došao krajem 1943. Nestao 19. veljače 1944. kod Poda, Sinj.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 106,
+        "pdf_x": 241.0,
+        "pdf_y": 789.3,
+        "pdf_x_end": 581.5,
+        "pdf_y_end": 813.6,
+        "pdf_x_left": 223.9,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marendić",
@@ -41278,9 +41915,9 @@
   {
     "last_name": "Matijaš",
     "first_name": "Jure",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Matijaš Jure",
+    "middle_name": "Jakova",
+    "fathers_name": "Jakov",
+    "full_name": "Matijaš Jakova Jure",
     "additional_info": ".. , Vrsine, Trogir, .. , komandir čete",
     "soldier_id": "0008001942",
     "pdf_page": 54,
@@ -41289,9 +41926,6 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Vrsine, Trogir",
     "rank": "komandir čete",
-    "birth_year": "1921",
-    "pdf_x_end": 313.6,
-    "pdf_y_end": 324.4,
     "other_sources": [
       {
         "soldier_id": "9021049557",
@@ -41300,16 +41934,35 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2350",
         "source_page": 2350,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0046000655",
+        "name": "Matijaš Jakova Jure",
+        "additional_info": "borac, rođen 1905, Vrsine, Trogir, zemljoradnik, Hrvat, u NOB od 1941, član KPJ.",
+        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 3.1,
+        "pdf_y": 158.0,
+        "pdf_x_end": 168.8,
+        "pdf_y_end": 188.8,
+        "unit_file": "3-dalmatinska-soldiers.json"
       }
     ],
-    "ethnicity": "Hrvat",
+    "birth_year": "1905",
+    "pdf_x_end": 313.6,
+    "pdf_y_end": 324.4,
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place",
       "death_type",
-      "ethnicity"
+      "ethnicity",
+      "occupation",
+      "party"
     ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "party": "KPJ",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Vrsine"
@@ -42060,7 +42713,6 @@
     "fathers_name": "Jozo",
     "full_name": "Mekinić Joze Mirko",
     "additional_info": ".., .., .., borac",
-    "birth_year": "",
     "soldier_id": "0008001983",
     "pdf_page": 55,
     "pdf_y": 258.4,
@@ -42068,7 +42720,34 @@
     "pdf_y_end": 267.4,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
-    "pdf_x_end": 283.6
+    "pdf_x_end": 283.6,
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Tugare, Omiš",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "0148001758",
+        "name": "Mekinić Joze Mirko",
+        "additional_info": "borac Mosorskog PO. Rođen 1926, Tugare, Omiš, zemljoradnik, Hrvat. U Mosorski PO stupio u listopadu 1943. i u listopadu 1944. upućen u 4. dalmatinsku (splitsku) brigadu. Umro.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 115,
+        "pdf_x": 270.8,
+        "pdf_y": 666.8,
+        "pdf_x_end": 611.9,
+        "pdf_y_end": 691.1,
+        "pdf_x_left": 254.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Melada",
@@ -42630,11 +43309,10 @@
   {
     "last_name": "Mikulandra",
     "first_name": "Vlado",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Mikulandra Vlado",
+    "middle_name": "Ive",
+    "fathers_name": "Ivo",
+    "full_name": "Mikulandra Ive Vlado",
     "additional_info": ".., Bilice, Šibenik, 1. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008002010",
     "pdf_page": 55,
     "pdf_y": 536.4,
@@ -42644,7 +43322,69 @@
     "birth_place": "Bilice, Šibenik",
     "unit_detail": "1. bataljon",
     "rank": "borac",
-    "pdf_x_end": 340.6
+    "pdf_x_end": 340.6,
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "08.10.1943",
+    "death_place": "na Šestarovcu, Andrijevica",
+    "other_sources": [
+      {
+        "soldier_id": "0007003409",
+        "name": "Mikulandra Ive Vlado",
+        "additional_info": "1924. Bilice, Šibenik. Hrvat, zemljoradnik. U NOV od 9. 10. 1942. Poginuo 8. 10. 1943. na Šestarovcu, Andrijevica.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 116,
+        "pdf_x": 122.5,
+        "pdf_y": 181.3,
+        "pdf_x_end": 446.7,
+        "pdf_y_end": 197.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007100866",
+        "name": "Mikulandra Ive Vlade",
+        "additional_info": "borac 4. bataljona, rođen 1924, Bilice, Šibenik, zemljoradnik, Hrvat, u NOB od oktobra 1942, poginuo na Šestanovcu kod Andrijevice 8. oktobra 1943. godine.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 49,
+        "pdf_x": 224.0,
+        "pdf_y": 350.4,
+        "pdf_x_end": 391.4,
+        "pdf_y_end": 402.8,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040010971",
+        "name": "Mikulandra Ive Vlado",
+        "additional_info": "rođen 1920. u Bilicama, zemljoradnik, borac, poginuo aprila 1943. u borbama vođenim od Gacka do Šavnika.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 22,
+        "pdf_x": 62.6,
+        "pdf_y": 240.3,
+        "pdf_x_end": 368.3,
+        "pdf_y_end": 265.1,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "04.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Milak",
@@ -43779,7 +44519,6 @@
     "fathers_name": "Marjan",
     "full_name": "Mirković Marjana Veljko",
     "additional_info": ".., ..,1. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008002068",
     "pdf_page": 57,
     "pdf_y": 190.1,
@@ -43788,7 +44527,29 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 332.4
+    "pdf_x_end": 332.4,
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Veli Rat, Zadar",
+    "other_sources": [
+      {
+        "soldier_id": "0148001895",
+        "name": "Mirković Marijana Veljko",
+        "additional_info": "borac 4. bataljona Mosorskog PO. Rođen 4. 9. 1921, Veli Rat, Zadar. U Mosorski PO stupio 9. rujna 1943. i u listopadu prekomandiran u 11. dalmatinsku brigadu. Ranjen krajem 1943. kod Vrgorca i upućen na liječenje na Vis a zatim na Maltu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 124,
+        "pdf_x": 241.6,
+        "pdf_y": 643.1,
+        "pdf_x_end": 582.3,
+        "pdf_y_end": 676.8,
+        "pdf_x_left": 225.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "04.09.1921"
   },
   {
     "last_name": "Miše",
@@ -45460,11 +46221,10 @@
   {
     "last_name": "Ninčević",
     "first_name": "Mate",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Ninčević Mate",
+    "middle_name": "Stipe",
+    "fathers_name": "Stipe",
+    "full_name": "Ninčević Stipe Mate",
     "additional_info": "Solin, Split, . . , borac",
-    "birth_year": "",
     "soldier_id": "0008002156",
     "pdf_page": 59,
     "pdf_y": 178.2,
@@ -45473,7 +46233,69 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Solin, Split",
     "rank": "borac",
-    "pdf_x_end": 269.3
+    "pdf_x_end": 269.3,
+    "other_sources": [
+      {
+        "soldier_id": "9021046530",
+        "name": "Ninčević (Stipe) Mate",
+        "additional_info": "rođen 1923, Split. Hrvat, poginuo 1944. u NOBu, Kod sanaje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2226",
+        "source_page": 2226,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0001008517",
+        "name": "Ninčević Stipe Mate",
+        "additional_info": "1923, Solin, Hrvatska, Hrvat, radnik, član SKOJ-a od 1940, član KPJ od 1943, u NOB od septembra 1942, u brigadi od septembra 1942, III bataljon, borac, poginuo 22. 08. 1944, Priboj na Limu",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 340,
+        "pdf_x": 57.2,
+        "pdf_y": 163.7,
+        "pdf_x_end": 365.1,
+        "pdf_y_end": 206.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001101017",
+        "name": "Ninčević Stipe Mate",
+        "additional_info": "borac 3. bataljona, rođen 1923, Solin, Split, radnik, Hrvat, u NOB od 1941, član SKOJ-a od 1940, član KPJ od 1943, poginuo na Limu, kod Priboja, 22. avgusta 1944.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 66,
+        "pdf_x": 23.2,
+        "pdf_y": 440.2,
+        "pdf_x_end": 193.5,
+        "pdf_y_end": 492.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001403101",
+        "name": "Ninčević Stipe Mate",
+        "additional_info": "rođen 1923, Solin, Split, radnik. Mlad se priključio napredno radničkom pokretu bazena Solin i već 1940. postao je član SKOJ-a. Početkom 1942. godine stupa u Mosečko-Svilajski odred iz kojeg je rujna 1942. u Tičevu postao borac 3. kragujevačkog bataljona 1. proleterske NOU brigade i sa istim nastavio borbu Ključa, Bosanskog Grahova, Sitnice, Jajca, u centrlanoj Bosni oko Kotor-Varoši, Čalinca, Teslića, u IV neprijateljskoj ofenzivi oko Lukača, Uloga, Konjica, Treskavice, Drine, Kapka i Ifsara, Sandžaka, u V neprijateljskoj ofenzivi oko Čelebića, Korlata, Travnika, Vučeva, Suhe, Zelengore, Balivnovca, Miljevine i istočnoj Bosni, Turbetu, Dalmaciji, Duvnu, Šuici, Jajce, Mrkonjić-Gradu, Mliništa, Vranića, Bitovnja. Poginuo 22. 8. 1944. između Lima i Uvea.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 164,
+        "pdf_x": 385.8,
+        "pdf_y": 294.9,
+        "pdf_x_end": 494.5,
+        "pdf_y_end": 643.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "death_type": "poginuo",
+    "death_date": "22.08.1944",
+    "death_place": "Priboj na Limu",
+    "party": "SKOJ 1940, KPJ 1943"
   },
   {
     "last_name": "Ninčević",
@@ -47343,11 +48165,10 @@
   {
     "last_name": "Perišić",
     "first_name": "Vicko",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Perišić Vicko",
+    "middle_name": "Grge",
+    "fathers_name": "Grgo",
+    "full_name": "Perišić Grge Vicko",
     "additional_info": ". . , Dugopolje, . . , borac",
-    "birth_year": "",
     "soldier_id": "0008002255",
     "pdf_page": 61,
     "pdf_y": 277.9,
@@ -47356,7 +48177,31 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Dugopolje",
     "rank": "borac",
-    "pdf_x_end": 265.5
+    "pdf_x_end": 265.5,
+    "birth_year": "1910",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0148002180",
+        "name": "Perišić Grge Vicko",
+        "additional_info": "borac 2. čete 2. bataljona Mosorskog PO. Rođen 18. 2. 1910, Dugopolje, Split, zemljoradnik, Hrvat. U Mosorski PO stupio 14. veljače 1944. i u listopadu prekomandiran u 4. dalmatinsku (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 142,
+        "pdf_x": 240.4,
+        "pdf_y": 556.4,
+        "pdf_x_end": 555.2,
+        "pdf_y_end": 581.5,
+        "pdf_x_left": 223.4,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "18.02.1910"
   },
   {
     "last_name": "Perišić",
@@ -48508,7 +49353,6 @@
     "fathers_name": "Ladislav",
     "full_name": "Pivčević Ladislava Drago",
     "additional_info": ".., ..,1. č, 1. bat, vodnik",
-    "birth_year": "",
     "soldier_id": "0008002315",
     "pdf_page": 62,
     "pdf_y": 458.7,
@@ -48517,7 +49361,35 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "vodnik",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 367.4
+    "pdf_x_end": 367.4,
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Tugari, Omiš",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "party": "SKOJ 1943, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0148002258",
+        "name": "Pivčević Ladislava Drago",
+        "additional_info": "borac Mosorskog bataljona. Rođen 13. 10. 1924. u Tugarima, Omiš, zemljoradnik, Hrvat, član SKOJ-a početkom 1943. član KPJ od studenog 1943. Do odlaska u NOV aktivno i organizovano radio na terenu Tugara. Stupio 1. veljače 1943. u Leteću mosorsku četu a zatim i u Mosorski bataljon (Ljubićev) u kojem se nalazio do ožujka 1943. kada je upućen u Svilajsko-moseći PO. Ponovo došao lipnja 1943. u Mosorski bataljon (Dänin) i rujnu 1943. ušao u sastav 4. dalmatinske (splitske) brigade.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 146,
+        "pdf_x": 242.9,
+        "pdf_y": 683.0,
+        "pdf_x_end": 584.8,
+        "pdf_y_end": 743.1,
+        "pdf_x_left": 226.1,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "13.10.1924"
   },
   {
     "last_name": "Plančić",
@@ -50795,7 +51667,41 @@
     "birth_place": "K. Novi, Split",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 350.2
+    "pdf_x_end": 350.2,
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0148002446",
+        "name": "Rađa Stjepana Roko",
+        "additional_info": "vodnik 1. voda 3. čete 2. bataljona Mosorskog PO. Itođen 23. 9. 1918, Ogorje Donje, Split, zemljoradnik, Hrvat. U Mosorski PO došao 9. rujna 1943. i u listopadu 1944. prekomandiran u 4. dalmatinsku (splitsku) brigadu. Ranjen u studenom 1943. u borbi na Mosoru i kod Peulja.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 156,
+        "pdf_x": 241.0,
+        "pdf_y": 831.8,
+        "pdf_x_end": 581.3,
+        "pdf_y_end": 865.0,
+        "pdf_x_left": 224.2,
+        "unit_file": "mosorski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0148020307",
+        "name": "Rađa Roko",
+        "additional_info": "Pregled rukovodećeg kadra Mosorskog PO 1942—1944.: komandiri vodova (vodnici).",
+        "pdf_file": "mosorski-odred-kader.pdf",
+        "pdf_page": 5,
+        "pdf_x": 375.3,
+        "pdf_y": 471.2,
+        "pdf_x_end": 420.9,
+        "pdf_y_end": 479.2,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "23.09.1918"
   },
   {
     "last_name": "Raganelli",
@@ -51381,9 +52287,9 @@
   {
     "last_name": "Reić",
     "first_name": "Ante",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Reić Ante",
+    "middle_name": "P",
+    "fathers_name": "P",
+    "full_name": "Reić P Ante",
     "additional_info": ". . , Split, . . , borac",
     "birth_year": "",
     "soldier_id": "0008002461",
@@ -51394,7 +52300,21 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Split",
     "rank": "borac",
-    "pdf_x_end": 222.8
+    "pdf_x_end": 222.8,
+    "other_sources": [
+      {
+        "soldier_id": "0168003402",
+        "name": "Reić P Ante",
+        "additional_info": "Split",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 41,
+        "pdf_x": 195.1,
+        "pdf_y": 250.9,
+        "pdf_x_end": 279.2,
+        "pdf_y_end": 260.4,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Reić-Alfirević",
@@ -53823,14 +54743,53 @@
     "fathers_name": "Božo",
     "full_name": "Smajić Bože Pavao",
     "additional_info": "minobacačka četa, komesar",
-    "birth_year": "",
     "soldier_id": "0008002582",
     "pdf_page": 68,
     "pdf_y": 412.3,
     "pdf_x": 31.2,
     "pdf_y_end": 421.3,
     "pdf_file": "4-splitska-brigada.pdf",
-    "pdf_x_end": 341.1
+    "pdf_x_end": 341.1,
+    "birth_year": "1914",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Dolac Donji, Omiš",
+    "ethnicity": "Hrvat",
+    "occupation": "kovač",
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0148002639",
+        "name": "Smajić Bože Pavao",
+        "additional_info": "zamjenik politkomesara 2. čete 2. bataljona Mosorskog PO. Rođen 8. 1. 1914, Dolac Donji, Omiš, kovač, Hrvat, član KPJ od 1943. Do stupanja u NOV aktivno i organizirano radio za NOP. U Mosorski PO stupio 1. travnja 1944. i 23. listopada prekomandiran u 4. dalmatinsku (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 168,
+        "pdf_x": 239.7,
+        "pdf_y": 796.0,
+        "pdf_x_end": 580.3,
+        "pdf_y_end": 829.6,
+        "pdf_x_left": 222.9,
+        "unit_file": "mosorski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0148020344",
+        "name": "Smajić Pavao",
+        "additional_info": "Pregled rukovodećeg kadra Mosorskog PO 1942—1944.: zamjenici politkomesara četa.",
+        "pdf_file": "mosorski-odred-kader.pdf",
+        "pdf_page": 4,
+        "pdf_x": 459.6,
+        "pdf_y": 685.5,
+        "pdf_x_end": 510.2,
+        "pdf_y_end": 693.5,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "08.01.1914"
   },
   {
     "last_name": "Smajo",
@@ -53839,7 +54798,6 @@
     "fathers_name": "Šimun",
     "full_name": "Smajo Šimuna Marin",
     "additional_info": ". . , . . , 1. č, 4. bat, ranjen 10. 1. 1945. i 14. 2. 1945. Čitluk, Drežnica",
-    "birth_year": "",
     "soldier_id": "0008002583",
     "pdf_page": 68,
     "pdf_y": 421.0,
@@ -53847,7 +54805,32 @@
     "pdf_y_end": 438.6,
     "pdf_file": "4-splitska-brigada.pdf",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 362.5
+    "pdf_x_end": 362.5,
+    "birth_year": "1921",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Kotlenice, Split",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0148002646",
+        "name": "Smajo Šimuna Marin",
+        "additional_info": "kurir 2. bataljona Mosorskog PO. Rođen 1921, Kotlenice, Split, zemljoradnik, Hrvat. U NOB od 15. srpnja 1943. U Mosorski PO došao 31. svibnja 1944. i u njegovom sastavu bio do listopada kada je prekomandiran u 4. dalmatinsku (splitsku) brigadu. Ranjen početkom 1945. u borbi kod Čitluka i kod Drežnice.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 169,
+        "pdf_x": 273.8,
+        "pdf_y": 432.4,
+        "pdf_x_end": 615.0,
+        "pdf_y_end": 475.4,
+        "pdf_x_left": 257.2,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Smodlaka",
@@ -55237,7 +56220,22 @@
     "birth_place": "Koprivno, Klis",
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 330.3
+    "pdf_x_end": 330.3,
+    "other_sources": [
+      {
+        "soldier_id": "9078001259",
+        "name": "Šamadan Mate Dušan",
+        "additional_info": "Mosorski partizanski odred, II dio: komande mjesta, partijsko-politički i terenski radnici Mosora: rođen 1925. u Koprivnu, Split. Terenski radnik-kurir.",
+        "pdf_file": "mosorski-odred-2.pdf",
+        "pdf_page": 63,
+        "pdf_x": 279.9,
+        "pdf_y": 626.8,
+        "pdf_x_end": 606.2,
+        "pdf_y_end": 634.8,
+        "role": "activist",
+        "ref_book": "mosorski-odred-2-aktivisti"
+      }
+    ]
   },
   {
     "last_name": "Šamadan",
@@ -55757,11 +56755,10 @@
   {
     "last_name": "Šegvić",
     "first_name": "Vinko",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Šegvić Vinko",
+    "middle_name": "Andrije",
+    "fathers_name": "Andrija",
+    "full_name": "Šegvić Andrije Vinko",
     "additional_info": ". ., Split, . . , borac",
-    "birth_year": "",
     "soldier_id": "0008002682",
     "pdf_page": 70,
     "pdf_y": 495.0,
@@ -55770,7 +56767,35 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Split",
     "rank": "borac",
-    "pdf_x_end": 226.4
+    "pdf_x_end": 226.4,
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "trgovački pomoćnik",
+    "death_type": "umro",
+    "death_date": "1982",
+    "other_sources": [
+      {
+        "soldier_id": "0148003357",
+        "name": "Šegvić Andrije Vinko",
+        "additional_info": "borac Mosorskog PO. Rođen 13. 1. 1909. u Splitu, trgovački pomoćnik, Hrvat. U Mosorski PO stupio 7. rujna 1943. i u njegovom sastavu se nalazio do 10. siječnja 1944. kada je prekomandiran' u 4. dalmatinsku (splitsku) brigadu. Umro 1982.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 177,
+        "pdf_x": 274.4,
+        "pdf_y": 349.7,
+        "pdf_x_end": 615.7,
+        "pdf_y_end": 384.1,
+        "pdf_x_left": 257.8,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "13.01.1909"
   },
   {
     "last_name": "Šerić",
@@ -56684,7 +57709,6 @@
     "fathers_name": "Mihovil",
     "full_name": "Štetić Mihovila Tonka",
     "additional_info": ". . , .. , 2. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008002730",
     "pdf_page": 71,
     "pdf_y": 544.2,
@@ -56693,7 +57717,29 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 303.9
+    "pdf_x_end": 303.9,
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Split",
+    "other_sources": [
+      {
+        "soldier_id": "0148003416",
+        "name": "Štetić Mihovila Tonka",
+        "additional_info": "borac Mosorskog PO. Rođena 18. 12. 1923, Split. U Mosorski PO stupila 10. rujna 1943, a zatim ušla u sastav 4. dalmatinske (splitske) brigade.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 181,
+        "pdf_x": 273.4,
+        "pdf_y": 579.5,
+        "pdf_x_end": 614.8,
+        "pdf_y_end": 604.9,
+        "pdf_x_left": 256.9,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "18.12.1923"
   },
   {
     "last_name": "Štrbac",
@@ -60211,7 +61257,29 @@
     "birth_place": "K. Lukšić, Split",
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 352.8
+    "pdf_x_end": 352.8,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Bosna",
+    "other_sources": [
+      {
+        "soldier_id": "0144000396",
+        "name": "Viculin Ivana Ivo",
+        "additional_info": "r. ? (Kaštel Lukšič), p. 1944 (Bosna)",
+        "pdf_file": "1-2-prekomorska.pdf",
+        "pdf_page": 8,
+        "pdf_x": 151.2,
+        "pdf_y": 582.2,
+        "pdf_x_end": 322.2,
+        "pdf_y_end": 589.2,
+        "unit_file": "1-2-prekomorska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Viculin",
@@ -63127,11 +64195,10 @@
   {
     "last_name": "Živković",
     "first_name": "Lovre",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Živković Lovre",
+    "middle_name": "Nikole",
+    "fathers_name": "Nikola",
+    "full_name": "Živković Nikole Lovre",
     "additional_info": ". . , Zečevo, Rogoznica, 1. bat, borac",
-    "birth_year": "",
     "soldier_id": "0008003049",
     "pdf_page": 79,
     "pdf_y": 305.1,
@@ -63141,7 +64208,28 @@
     "birth_place": "Zečevo, Rogoznica",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 328.2
+    "pdf_x_end": 328.2,
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "pomorac",
+    "other_sources": [
+      {
+        "soldier_id": "0053003425",
+        "name": "Živković Nikole Lovre",
+        "additional_info": "borac 2. č. 4. bat., r. 11. 7. 1912, Zečevo, Šibenik, pomorac, u NOB od 18.9. 1943, NOP-u pristupio februara 1942.",
+        "pdf_file": "11-dalmatinska.pdf",
+        "pdf_page": 121,
+        "pdf_x": 97.1,
+        "pdf_y": 145.2,
+        "pdf_x_end": 269.8,
+        "pdf_y_end": 179.6,
+        "unit_file": "11-dalmatinska-soldiers.json"
+      }
+    ],
+    "birth_date": "11.07.1912"
   },
   {
     "last_name": "Živković",
@@ -63492,11 +64580,10 @@
   {
     "last_name": "Bonačić",
     "first_name": "Ante",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Bonačić Ante",
+    "middle_name": "Marina",
+    "fathers_name": "Marin",
+    "full_name": "Bonačić Marina Ante",
     "additional_info": "zvani Leste; Split, . . , borac",
-    "birth_year": "",
     "soldier_id": "0008003069",
     "pdf_page": 79,
     "pdf_y": 520.4,
@@ -63505,7 +64592,61 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Split",
     "rank": "borac",
-    "pdf_x_end": 277.3
+    "pdf_x_end": 277.3,
+    "birth_year": "1918",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "pekarski radnik",
+    "death_type": "umro",
+    "death_date": "1947",
+    "death_place": "Split",
+    "party": "SKOJ 1941, KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0001000975",
+        "name": "Bonačić Marina Ante",
+        "additional_info": "zvani Marinčić; 1918, Split, Hrvatska, Hrvat, pekarski radnik, član SKOJ-a od 1941, član KPJ od 1942, u NOB od avgusta 1942, u brigadi od septembra 1942, IV bataljon, vodnik",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 83,
+        "pdf_x": 60.7,
+        "pdf_y": 133.8,
+        "pdf_x_end": 355.0,
+        "pdf_y_end": 176.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100138",
+        "name": "Bonačić Marina Ante",
+        "additional_info": "zvani Marinčić; kurir Štaba 4. bataljona, rođen 1918, Split, radnik, Llrvat^ u NOB od 1941, član KPJ od 1942, krajem rata komandir voda kurira u Štabu 1. proleterske divizije.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 232.6,
+        "pdf_y": 383.3,
+        "pdf_x_end": 401.9,
+        "pdf_y_end": 447.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001403167",
+        "name": "Bonačić Marina Ante",
+        "additional_info": "zvani Marinčić; rođen 1918, Split, radnik, član SKOJ-a od 1941, a član KPJ od 1942. Izučio je pekarski zanat. Bio je član jedne udarne grupe u Splitu. Vršeći akcije protiv talijanskog okupatora gdje je ispoljio svoju veliku hrabrost. 1941. godine hapsi ga okupator, ali uspjeva pobjeći pucajući na gonitelje. Kada je mislio da im je izbjegao, biva hapšen i strašno mučen. Za vrijeme šetnje u splitskom zatvoru »Roko«, iskorištava nesmotrenost čuvara i uspjeva da pobjegne. Nakon bjega kolovoza 1942. stupa u Mosećko-svilajski odred kao član KPJ. U rujnu 1942. na Tičevu postaje borac 4. kraljevačkog bataljona 1. proleterske NOU brigade. Nastavlja borbe kao borac-kurir kroz zapadnu i centralnu Bosnu. U IV i V ofanzivu ispoljio je visoki moral. 1943. godine postao je kurir u štabu 1. proleterske brigade, a krajem 1943. komandir voda kurira 1. proleterske divizije. Kraj rata je dočekao na toj dužnosti u činu potporučnika. Umro je 1947. u Splitu.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 29,
+        "pdf_x": 223.4,
+        "pdf_y": 147.1,
+        "pdf_x_end": 331.0,
+        "pdf_y_end": 529.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Drecun",
@@ -63654,7 +64795,38 @@
     "pdf_file": "4-splitska-brigada.pdf",
     "birth_place": "Podgora, Makarska",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 367.2
+    "pdf_x_end": 367.2,
+    "other_sources": [
+      {
+        "soldier_id": "0094000674",
+        "name": "Radojković J Zvonko",
+        "additional_info": "1921, Podgora, Makarska. Stupio u NOV 22. 12. 1942, delegat voda 4. bat.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 15,
+        "pdf_x": 320.4,
+        "pdf_y": 355.6,
+        "pdf_x_end": 481.2,
+        "pdf_y_end": 381.4,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010302",
+        "name": "Radojković Zvonko",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: politički delegat voda 4. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 262.2,
+        "pdf_y": 437.4,
+        "pdf_x_end": 345.4,
+        "pdf_y_end": 445.9,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Stipica",

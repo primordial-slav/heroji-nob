@@ -2841,7 +2841,7 @@
       {
         "soldier_id": "0094000021",
         "name": "Basarac M Mijo",
-        "additional_info": "1925, Planina Kunićka, Netretić. Stupio u NOV 10. 6. 1943, desetar 1. bat. Poginuo kod Prekrižja (Zumberak) 4. 6.",
+        "additional_info": "1925, Planina Kunićka, Netretić. Stupio u NOV 10. 6. 1943, desetar 1. bat. Poginuo kod Prekrižja (Zumberak) 4. 6. 1944.",
         "pdf_file": "karlovacka.pdf",
         "pdf_page": 1,
         "pdf_x": 330.8,
@@ -20806,7 +20806,6 @@
     "fathers_name": "",
     "full_name": "Gorsebasa Ivan",
     "additional_info": "komandir čete Karlovačke brig. 8. div, poginuo 12. 3. 1944. kod Bosiljeva",
-    "birth_year": "",
     "unit_detail": "Karlovačka brigada",
     "pdf_page": 26,
     "pdf_y": 435.3,
@@ -20818,7 +20817,77 @@
     "death_date": "12.03.1944",
     "death_place": "kod Bosiljeva",
     "rank": "komandir čete",
-    "pdf_x_end": 444.6
+    "pdf_x_end": 444.6,
+    "birth_year": "1915",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Bubnjarci, Ribnik",
+    "other_sources": [
+      {
+        "soldier_id": "0094000226",
+        "name": "Goršebaša Ivan",
+        "additional_info": "1915, Bubnjarci, Ribnik. Stupio u NOV proljeća 1943, komandir 2. čete 2. bat. Poginuo kod Bosanaca 12. 3, 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 98.2,
+        "pdf_y": 587.9,
+        "pdf_x_end": 265.1,
+        "pdf_y_end": 622.3,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000225",
+        "name": "Goršebaša Ivan",
+        "additional_info": "1915, Bubnjarci, Ribnik. Stupio u NOV proljeća 1943, komandir 2. čete 2. bat. Poginuo kod Bosanaca 12. 3. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 6,
+        "pdf_x": 94.0,
+        "pdf_y": 385.1,
+        "pdf_y_end": 428.4,
+        "pdf_x_end": 255.6,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010104",
+        "name": "Goršebaša Ivan",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: komandir čete 2. bataljona.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 436.4,
+        "pdf_y": 411.0,
+        "pdf_x_end": 453.6,
+        "pdf_y_end": 419.5,
+        "pdf_rects": [
+          [
+            436.4,
+            411.0,
+            453.6,
+            419.5
+          ],
+          [
+            97.2,
+            419.7,
+            139.0,
+            428.2
+          ]
+        ],
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000311",
+        "name": "Goršebaša Ivan",
+        "additional_info": "k-dir čete, KB, 1915. Bubnjarci, Ribnik, u NOB 1943, poginuo Bosanci, 12.03.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 17.8,
+        "pdf_y": 286.288,
+        "pdf_x_end": 345.8,
+        "pdf_y_end": 294.8,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grahovac",
@@ -20884,7 +20953,7 @@
     "first_name": "Nikola",
     "fathers_name": "Milan",
     "full_name": "Grahovac Milana Nikola",
-    "additional_info": "1908, Jan ja Gora, Plaški, stupio u NOV 1942, borac 3. brig. 8. div, ranjen 26. 2. 1945. kod Plaškog i podlegao ranama 7. 3.",
+    "additional_info": "1908, Jan ja Gora, Plaški, stupio u NOV 1942, borac 3. brig. 8. div, ranjen 26. 2. 1945. kod Plaškog i podlegao ranama 7. 3. 1945.",
     "birth_year": "1908",
     "unit_detail": "3. brigada",
     "pdf_page": 26,
@@ -20893,10 +20962,11 @@
     "pdf_y_end": 621.9,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060000566",
+    "pdf_x_end": 452.8,
     "birth_place": "Jan ja Gora, Plaški",
     "death_type": "umro",
+    "death_date": "07.03.1945",
     "rank": "borac",
-    "pdf_x_end": 452.8,
     "other_sources": [
       {
         "soldier_id": "9021025934",
@@ -20921,11 +20991,9 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
     "death_place": "Plaški"
   },
   {
@@ -31858,7 +31926,33 @@
     "death_date": "29.09.1942",
     "death_place": "Vukmanić",
     "rank": "komesar čete",
-    "pdf_x_end": 284.0
+    "pdf_x_end": 284.0,
+    "birth_place": "Štipan",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0002003506",
+        "name": "Kličković Pavla Mile",
+        "additional_info": "1910, Štipan, pekar, u NOB od 23. 7. 1941, 3. kordunaški bataljon, obavještajni oficir, poginuo 29. 9. 1943. kod Vukmanića (8. divizija)",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 685,
+        "pdf_x": 119.3,
+        "pdf_y": 621.4,
+        "pdf_x_end": 454.6,
+        "pdf_y_end": 641.0,
+        "unit_file": "soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "29.09.1943",
+          "place": "Vukmanić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kličković",
@@ -36128,7 +36222,7 @@
     "first_name": "Petar",
     "fathers_name": "Marko",
     "full_name": "Kovačević Marka Petar",
-    "additional_info": "1920, Latin, stupio u NOV 20. 6. 1942. borac 3. brig. 8. div, umro od tifusa 24. 3.",
+    "additional_info": "1920, Latin, stupio u NOV 20. 6. 1942. borac 3. brig. 8. div, umro od tifusa 24. 3. 1944.",
     "birth_year": "1920",
     "unit_detail": "3. brigada",
     "pdf_page": 42,
@@ -36137,9 +36231,6 @@
     "pdf_y_end": 533.6,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060000968",
-    "birth_place": "Latin",
-    "death_type": "umro",
-    "rank": "borac",
     "pdf_x_end": 439.9,
     "other_sources": [
       {
@@ -36169,6 +36260,10 @@
     ],
     "ethnicity": "Crnogorac",
     "occupation": "radnik",
+    "birth_place": "Latin",
+    "death_type": "umro",
+    "death_date": "24.03.1944",
+    "rank": "borac",
     "variants": {
       "born": [
         "1919"
@@ -43420,8 +43515,52 @@
         "pdf_x_end": 202.4,
         "pdf_y_end": 370.4,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0094000469",
+        "name": "Malović Ivana Mato",
+        "additional_info": "1927, Mihalić Selo, Barilović. Stupio u NOV 10. 11. 1S4.3, borac brig. Poginuo kod Perjasice 8. 4. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 29,
+        "pdf_x": 321.5,
+        "pdf_y": 624.6,
+        "pdf_x_end": 472.5,
+        "pdf_y_end": 658.3,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000468",
+        "name": "Malović I Mato",
+        "additional_info": "1927, Mihalić Selo, Barilović. Stupio u NOV 10. 11. 1943, borac brig. Poginuo kod Perjasice 8. 4. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 11,
+        "pdf_x": 138.7,
+        "pdf_y": 393.3,
+        "pdf_y_end": 427.7,
+        "pdf_x_end": 306.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000689",
+        "name": "Malović I Mato",
+        "additional_info": "borac, KB, 1927. Mihalić Selo, Barilović, u NOB 1943, poginuo Perjasica, 08.04.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 16,
+        "pdf_x": 199.7,
+        "pdf_y": 565.604,
+        "pdf_x_end": 529.3,
+        "pdf_y_end": 574.6,
+        "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.04.1945",
+          "place": "Perjasica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Malčić",
@@ -43841,6 +43980,18 @@
         "pdf_x_end": 370.2,
         "pdf_y_end": 441.1,
         "ref_book": "hak-19-vojnic"
+      },
+      {
+        "soldier_id": "0002004353",
+        "name": "Mandić Pavla Miloš",
+        "additional_info": "1904, Krtalija Selo, Vojnić, 3. kordunaški bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 717,
+        "pdf_x": 125.2,
+        "pdf_y": 367.1,
+        "pdf_x_end": 440.1,
+        "pdf_y_end": 376.6,
+        "unit_file": "soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -49541,6 +49692,14 @@
         "ref_book": "hak-19-vojnic"
       },
       {
+        "soldier_id": "9021052048",
+        "name": "Milašinović (Janko) Petar",
+        "additional_info": "rođen 1918, Jurga (Vonjić). Srbin, poginuo 1943. u NOBu, Ploški",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2505",
+        "source_page": 2505,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0006004215",
         "name": "Milašinović Janka Petar",
         "additional_info": "1919. Jurga, Vojnić. Poginuo 1943. kod Plaškog.",
@@ -49560,6 +49719,10 @@
         "source_page": 270,
         "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "variants": {
       "born": [
@@ -61766,6 +61929,30 @@
         "pdf_x_end": 372.3,
         "pdf_y_end": 477.5,
         "ref_book": "hak-15-duga-resa"
+      },
+      {
+        "soldier_id": "0094000598",
+        "name": "Pekić Nikole Mijo",
+        "additional_info": "1911, Rasopajnik, Netretić. Stupio u NOV 1. 6i. 1943, borac brig. Zarobljen 12. 4. 1944. kod Ribnika i ubijen u logoru.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 31,
+        "pdf_x": 323.8,
+        "pdf_y": 158.0,
+        "pdf_x_end": 492.2,
+        "pdf_y_end": 192.1,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000597",
+        "name": "Pekić N Mijo",
+        "additional_info": "1911, Rosopajnik, Netretić. Stupio u NOV 1. 6. 1943, borac brig. Zarobljen kod Ribnika 12. 4. 1944. i ubijen u logoru.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 14,
+        "pdf_x": 93.0,
+        "pdf_y": 379.1,
+        "pdf_y_end": 413.5,
+        "pdf_x_end": 254.7,
+        "unit_file": "karlovacka-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -67559,14 +67746,58 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=846",
         "source_page": 846,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000669",
+        "name": "Pudina Mate Mato",
+        "additional_info": "1918, Velika Jelsa, Karlovac. Stupio u NOV 1943, borac brig. Poginuo kod Lešća 4. 4. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 32,
+        "pdf_x": 93.2,
+        "pdf_y": 593.9,
+        "pdf_x_end": 260.6,
+        "pdf_y_end": 619.7,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000668",
+        "name": "Pudina Mato",
+        "additional_info": "1918, V. Jelsa, Karlovac. Stupio u NOV 1943, borac brig. Poginuo kod Lešća 4. 4. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 15,
+        "pdf_x": 320.4,
+        "pdf_y": 216.1,
+        "pdf_y_end": 241.9,
+        "pdf_x_end": 486.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097000962",
+        "name": "Pudina Mate Mato",
+        "additional_info": "borac, KB, 1918. Vel. Jelsa, Karlovac, u NOB 1943, poginuo Lešće, 04.04.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 21,
+        "pdf_x": 31.5,
+        "pdf_y": 50.08400000000006,
+        "pdf_x_end": 359.9,
+        "pdf_y_end": 59.3,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "birth_place": "Karlovac",
+    "birth_place": "Velika Jelsa, Karlovac",
     "borrowed": [
       "birth_place",
       "ethnicity"
     ],
-    "ethnicity": "Hrvat"
+    "ethnicity": "Hrvat",
+    "variants": {
+      "death": [
+        {
+          "date": "04.04.1944",
+          "place": "Lešće"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pudrlja",
@@ -70002,12 +70233,35 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1337",
         "source_page": 1337,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0014000838",
+        "name": "Rajak Mile Milan",
+        "additional_info": "rođen 1921, s. Gata, Cazin, poginuo maja 1945, Karlovac.",
+        "pdf_file": "8-krajiska.pdf",
+        "pdf_page": 46,
+        "pdf_x": 100.9,
+        "pdf_y": 127.3,
+        "pdf_x_end": 381.4,
+        "pdf_y_end": 135.3,
+        "unit_file": "8-krajiska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "05.1945",
+          "place": "Karlovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Rajak",
@@ -75081,7 +75335,7 @@
       {
         "soldier_id": "0094000724",
         "name": "Sestrić I Mijo",
-        "additional_info": "1919, Rosopajnik, Netretić. Stupio u NOV 11. 9. 1943, komandir voda 1. bat. Poginuo kod s. Grandić Brega na Zumberku 2. 6.",
+        "additional_info": "1919, Rosopajnik, Netretić. Stupio u NOV 11. 9. 1943, komandir voda 1. bat. Poginuo kod s. Grandić Brega na Zumberku 2. 6. 1944.",
         "pdf_file": "karlovacka.pdf",
         "pdf_page": 16,
         "pdf_x": 279.3,
@@ -76703,7 +76957,21 @@
     "death_type": "poginuo",
     "death_date": "04.04.1943",
     "death_place": "Brlog",
-    "pdf_x_end": 267.6
+    "pdf_x_end": 267.6,
+    "other_sources": [
+      {
+        "soldier_id": "0097001115",
+        "name": "Stanojević Sime Petar",
+        "additional_info": "borac, KB, Ceremušnica, Vrginmost, poginuo Reljići, trav. 43",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 24,
+        "pdf_x": 19.2,
+        "pdf_y": 185.60399999999998,
+        "pdf_x_end": 346.5,
+        "pdf_y_end": 194.6,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanojević",
@@ -97882,7 +98150,45 @@
     "death_date": "07.11.1942",
     "death_place": "kod Joševice u Baniji",
     "rank": "borac",
-    "pdf_x_end": 267.9
+    "pdf_x_end": 267.9,
+    "other_sources": [
+      {
+        "soldier_id": "0003001474",
+        "name": "Žigić Proke Petar",
+        "additional_info": "rođen 1926. u s. Tuk - T. Korenica. Borac 2. bataljona. Poginuo u Drvaru na Uni 27. 11. 1942. godne",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 54,
+        "pdf_x": 127.1,
+        "pdf_y": 325.4,
+        "pdf_x_end": 486.1,
+        "pdf_y_end": 342.8,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
+        "soldier_id": "0003022788",
+        "name": "Žigić Proke Petar",
+        "additional_info": "rođen 1926. u s. Tuk - T. Korenica. U NOB-1941. Borac 2. bataljona. Poginuo u Dvoru na Uni 29. 11. 1942. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 132,
+        "pdf_x": 222.8,
+        "pdf_y": 306.1,
+        "pdf_x_end": 384.1,
+        "pdf_y_end": 344.9,
+        "unit_file": "druga-licka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "27.11.1942",
+          "place": "u Drvaru na Uni . godne"
+        },
+        {
+          "date": "29.11.1942",
+          "place": "Dvor na Uni"
+        }
+      ]
+    }
   },
   {
     "last_name": "Žigić",
@@ -101354,7 +101660,6 @@
     "fathers_name": "",
     "full_name": "Rkman Pero",
     "additional_info": "Pregled komandnog kadra Osme udarne divizije: Druga udarna brigada, Drugi bataljon »Pero Rkman«, komandanti bataljona, od 16. 9. 1942. do 16. 12. 1942. Poginuo kod Topuskog 16. 12. 1942.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 528.9,
     "pdf_x": 144.2,
@@ -101365,7 +101670,25 @@
     "soldier_id": "0060010130",
     "death_type": "poginuo",
     "death_date": "16.12.1942",
-    "death_place": "Topusko"
+    "death_place": "Topusko",
+    "other_sources": [
+      {
+        "soldier_id": "9021054478",
+        "name": "Rkman (Rade) Pero",
+        "additional_info": "rođen 1912, Pecka (Vrginmost). Srbin, poginuo 1942. u NOBu, Gređani",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2648",
+        "source_page": 2648,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Pecka, Vrginmost",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1912"
   },
   {
     "last_name": "Rudman",

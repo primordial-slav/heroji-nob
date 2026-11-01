@@ -7023,12 +7023,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1997",
         "source_page": 1997,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0034000126",
+        "name": "Bunčić S Jovo",
+        "additional_info": "zamjenik komandira čete, rođen u Mrkopolju, Slavonska Požega, Srbin, zemljoradnik, član KPJ, poginuo 19. 12. 1943, Kurilovac, Zagreb.",
+        "pdf_file": "21-slavonska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 33.0,
+        "pdf_y": 409.4,
+        "pdf_x_end": 315.4,
+        "pdf_y_end": 435.2,
+        "unit_file": "21-slavonska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "zemljoradnik",
+    "party": "KPJ"
   },
   {
     "last_name": "Buncić",
@@ -7331,7 +7347,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016000391",
     "birth_place": "Dolci",
-    "pdf_x_end": 339.4
+    "pdf_x_end": 339.4,
+    "other_sources": [
+      {
+        "soldier_id": "0017001464",
+        "name": "Čaćinović F Vinko",
+        "additional_info": "s. Dolci, SI. Orahovica",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 174.0,
+        "pdf_y": 445.3,
+        "pdf_x_end": 344.2,
+        "pdf_y_end": 454.3,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čačić",
@@ -8185,7 +8215,17 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016000437",
     "birth_place": "D. Jutrugoša",
-    "pdf_x_end": 328.6
+    "pdf_x_end": 328.6,
+    "other_sources": [
+      {
+        "soldier_id": "9104002136",
+        "name": "Crnogorac Gojka Dragoja",
+        "additional_info": "Preživjeli borci NOR-a mjesnog područja Knežica, Donja Jutrogošta: Crnogorac (Gojka) Dragoja",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00002790&pg_seq=506",
+        "source_page": 504,
+        "ref_book": "knezica"
+      }
+    ]
   },
   {
     "last_name": "Crnogorac",
@@ -14184,7 +14224,26 @@
     "soldier_id": "0016000754",
     "birth_place": "Zablaće",
     "death_type": "poginuo",
-    "pdf_x_end": 200.4
+    "pdf_x_end": 200.4,
+    "other_sources": [
+      {
+        "soldier_id": "0030000215",
+        "name": "Gasić D Živko",
+        "additional_info": "rođen 1924, Zablaće, 1. četa 4. bataljon, poginuo",
+        "pdf_file": "25-brodska-poginuli.pdf",
+        "pdf_page": 8,
+        "pdf_x": 75.1,
+        "pdf_y": 179.6,
+        "pdf_x_end": 355.5,
+        "pdf_y_end": 196.5,
+        "unit_file": "25-brodska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Gašparević",
@@ -15082,7 +15141,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016000798",
     "birth_place": "Prnjavor",
-    "pdf_x_end": 325.0
+    "pdf_x_end": 325.0,
+    "other_sources": [
+      {
+        "soldier_id": "0058000610",
+        "name": "Gojković P Joso",
+        "additional_info": "iz Prnjavora, Koprivnica; u KPO od 1943.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 20,
+        "pdf_x": 135.8,
+        "pdf_y": 347.0,
+        "pdf_x_end": 290.2,
+        "pdf_y_end": 366.1,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gojković",
@@ -22894,7 +22967,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001201",
     "birth_place": "Markušica",
-    "pdf_x_end": 356.5
+    "pdf_x_end": 356.5,
+    "other_sources": [
+      {
+        "soldier_id": "0017000460",
+        "name": "Kazazović L Nikola",
+        "additional_info": "s. Markušica, Vinkovci",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 196.2,
+        "pdf_y": 531.1,
+        "pdf_x_end": 373.5,
+        "pdf_y_end": 540.1,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kaćarević",
@@ -23876,7 +23963,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001256",
     "birth_place": "G. Miholjac",
-    "pdf_x_end": 335.1
+    "pdf_x_end": 335.1,
+    "other_sources": [
+      {
+        "soldier_id": "0017000495",
+        "name": "Kolarić M Nikola",
+        "additional_info": "G. Miholjac, Podr. Slatina",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 157.0,
+        "pdf_y": 241.9,
+        "pdf_x_end": 338.4,
+        "pdf_y_end": 250.9,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kolarić",
@@ -25306,7 +25407,6 @@
     "fathers_name": "Đ",
     "full_name": "Kovačev Đ Andrija",
     "additional_info": "Kalinovac (općina Đurđevac)",
-    "birth_year": "",
     "pdf_page": 12,
     "pdf_y": 84.7,
     "pdf_x": 63.8,
@@ -25314,7 +25414,29 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001329",
     "birth_place": "Kalinovac",
-    "pdf_x_end": 171.3
+    "pdf_x_end": 171.3,
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik",
+    "other_sources": [
+      {
+        "soldier_id": "0035105402",
+        "name": "Kovačev Đ Andrija",
+        "additional_info": "r. 1912, s. Kalinovac, Đurđevac, Hrvat, poljopriv., NOV 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 152,
+        "pdf_x": 116.4,
+        "pdf_y": 306.4,
+        "pdf_x_end": 267.6,
+        "pdf_y_end": 322.8,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kovačev",
@@ -30539,7 +30661,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001607",
     "birth_place": "G. Daruvar",
-    "pdf_x_end": 165.4
+    "pdf_x_end": 165.4,
+    "other_sources": [
+      {
+        "soldier_id": "0017000643",
+        "name": "Maksić M Pajo",
+        "additional_info": "Daruvar",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 156.5,
+        "pdf_y": 474.0,
+        "pdf_x_end": 329.8,
+        "pdf_y_end": 483.0,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Malbaša",
@@ -32177,7 +32313,36 @@
     "death_type": "poginuo",
     "death_date": "27.01.1945",
     "death_place": "Bijeljina",
-    "pdf_x_end": 351.4
+    "pdf_x_end": 351.4,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0034000532",
+        "name": "Marković L Radivoj",
+        "additional_info": "borac 3. čete 4. bataljona, rođen 1922. u Gornjoj Badanji, Loznica, Srbin, član Skoja, poginuo 29. 1. 1945, Janja, Bijeljina.",
+        "pdf_file": "21-slavonska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 78.0,
+        "pdf_y": 99.2,
+        "pdf_x_end": 358.7,
+        "pdf_y_end": 125.0,
+        "unit_file": "21-slavonska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ],
+      "death": [
+        {
+          "date": "29.01.1945",
+          "place": "Bijeljina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Marković",
@@ -32826,7 +32991,30 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Voćin",
-    "pdf_x_end": 351.3
+    "pdf_x_end": 351.3,
+    "party": "SKOJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0058001691",
+        "name": "Martić Miloš",
+        "additional_info": "r. 1922- Buzet, Glina; član SKOJ-a; borac BPC; u KPO od listopada 1942; poginuo 10. siječnja 1943. u Popovcu (kraj Vočina), kao komandir čete u 2. bataljonu 17. slavonske brigade.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 49,
+        "pdf_x": 126.6,
+        "pdf_y": 629.0,
+        "pdf_x_end": 281.5,
+        "pdf_y_end": 687.2,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Marčetić",
@@ -32939,7 +33127,6 @@
     "fathers_name": "M",
     "full_name": "Matica M Andrija",
     "additional_info": "Kalinovac (općina Đurđevac)",
-    "birth_year": "",
     "pdf_page": 12,
     "pdf_y": 228.9,
     "pdf_x": 63.9,
@@ -32947,7 +33134,41 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016001735",
     "birth_place": "Kalinovac",
-    "pdf_x_end": 163.7
+    "pdf_x_end": 163.7,
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik",
+    "other_sources": [
+      {
+        "soldier_id": "0035107052",
+        "name": "Matica M Andrija",
+        "additional_info": "r. 1926, s. Kalinovac, Đurđevac, Hrvat, poljopriv., NOV 1944, ranjen",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 156,
+        "pdf_x": 104.8,
+        "pdf_y": 208.9,
+        "pdf_x_end": 256.2,
+        "pdf_y_end": 234.6,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035005297",
+        "name": "Matica Andrija",
+        "additional_info": "",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 25,
+        "pdf_x": 344.6,
+        "pdf_y": 782.2,
+        "pdf_x_end": 418.9,
+        "pdf_y_end": 791.7,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Matica",
@@ -39100,7 +39321,7 @@
       {
         "soldier_id": "0058001911",
         "name": "Nevajda Mirko",
-        "additional_info": "r.1920; Vlahovići, Glina; borac BPČ; u KPO od listopada",
+        "additional_info": "r.1920; Vlahovići, Glina; borac BPČ; u KPO od listopada 1942.",
         "pdf_file": "kalnicki-odred.pdf",
         "pdf_page": 55,
         "pdf_x": 303.5,
@@ -39211,7 +39432,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016002056",
     "birth_place": "Dolci",
-    "pdf_x_end": 329.9
+    "pdf_x_end": 329.9,
+    "other_sources": [
+      {
+        "soldier_id": "0017000815",
+        "name": "Nesladek V Ivan",
+        "additional_info": "s. Dolci, SI. Orahovica",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 200.4,
+        "pdf_y": 308.8,
+        "pdf_x_end": 362.2,
+        "pdf_y_end": 317.8,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Nešić",
@@ -40559,7 +40794,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016002127",
     "birth_place": "Čađavac",
-    "pdf_x_end": 174.9
+    "pdf_x_end": 174.9,
+    "other_sources": [
+      {
+        "soldier_id": "0058001979",
+        "name": "Oblučar N Joco",
+        "additional_info": "iz Čađavca, Bjelovar; u KPO od jeseni 1942.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 57,
+        "pdf_x": 127.4,
+        "pdf_y": 307.2,
+        "pdf_x_end": 282.0,
+        "pdf_y_end": 326.3,
+        "unit_file": "kalnicki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Obradovič",
@@ -50611,7 +50860,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016002647",
     "birth_place": "Branešci, Pakrac",
-    "pdf_x_end": 306.5
+    "pdf_x_end": 306.5,
+    "other_sources": [
+      {
+        "soldier_id": "0017001065",
+        "name": "Romanić Lazo",
+        "additional_info": "Branešci, Pakrac",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 47,
+        "pdf_x": 175.0,
+        "pdf_y": 170.6,
+        "pdf_x_end": 312.1,
+        "pdf_y_end": 179.6,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Romanić",
@@ -56747,7 +57010,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016002967",
     "birth_place": "Kućanci",
-    "pdf_x_end": 201.2
+    "pdf_x_end": 201.2,
+    "other_sources": [
+      {
+        "soldier_id": "0017001199",
+        "name": "Tankosić J Dušan",
+        "additional_info": "Kućanci, D. Miholjac",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 180.2,
+        "pdf_y": 417.4,
+        "pdf_x_end": 344.4,
+        "pdf_y_end": 426.4,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tarbuk",
@@ -59312,7 +59589,25 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016003101",
     "birth_place": "Voćin",
-    "pdf_x_end": 336.1
+    "pdf_x_end": 336.1,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0030000784",
+        "name": "Uskoković L Zdravko",
+        "additional_info": "zamjenik komandanta bataljona, Srbin, rođen u Voćinu, u ratu bio načelnik Štaba brigade, živi u Voćinu (Podravska Slatina).",
+        "pdf_file": "25-brodska-sastav.pdf",
+        "pdf_page": 13,
+        "pdf_x": 46.5,
+        "pdf_y": 306.9,
+        "pdf_x_end": 327.8,
+        "pdf_y_end": 331.7,
+        "unit_file": "25-brodska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Utješinović",
@@ -60460,7 +60755,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016003157",
     "birth_place": "Pitomača",
-    "pdf_x_end": 340.6
+    "pdf_x_end": 340.6,
+    "other_sources": [
+      {
+        "soldier_id": "0104001610",
+        "name": "Veličan J Milan",
+        "additional_info": "rođen u s. Pitomača.",
+        "pdf_file": "osjecka.pdf",
+        "pdf_page": 20,
+        "pdf_x": 177.6,
+        "pdf_y": 261.8,
+        "pdf_x_end": 347.1,
+        "pdf_y_end": 270.3,
+        "unit_file": "osjecka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Veltruski",
@@ -60645,12 +60954,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1046",
         "source_page": 1046,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0034000969",
+        "name": "Veselinović M Dragutin",
+        "additional_info": "borac, rođen 1926. u Prnjavoru, Šabac, Srbin, zemljoradnik, poginuo 30. 4. 1945, Doboj.",
+        "pdf_file": "21-slavonska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 77.1,
+        "pdf_y": 373.3,
+        "pdf_x_end": 357.8,
+        "pdf_y_end": 390.7,
+        "unit_file": "21-slavonska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Veselinović",
@@ -66745,7 +67073,21 @@
     "pdf_file": "17-slavonska-prezivjeli.pdf",
     "soldier_id": "0016003485",
     "birth_place": "Medinci",
-    "pdf_x_end": 170.8
+    "pdf_x_end": 170.8,
+    "other_sources": [
+      {
+        "soldier_id": "0017001503",
+        "name": "Šaulić J Rade",
+        "additional_info": "Medinci, Podr. Slatina, ' -",
+        "pdf_file": "18-slavonska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 214.1,
+        "pdf_y": 307.4,
+        "pdf_x_end": 455.3,
+        "pdf_y_end": 316.3,
+        "unit_file": "18-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šavić",

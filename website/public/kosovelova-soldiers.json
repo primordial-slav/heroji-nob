@@ -5225,7 +5225,19 @@
         "pdf_y_end": 360.9,
         "source_page": 369,
         "ref_book": "sencur-padli-borci"
+      },
+      {
+        "soldier_id": "9020005159",
+        "name": "Kokalj (Janez) Franc",
+        "additional_info": "rođen 1908, Prebačevo (Kranj). Slovenac, poginuo 1945. u NOBu, Čepovak-gorica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=182",
+        "source_page": 182,
+        "ref_book": "zrtve-rata-1964-slo"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "16.02.1908"
   },
@@ -5313,7 +5325,6 @@
     "fathers_name": "",
     "full_name": "Kosovel Stanko",
     "additional_info": "rojen (?), Zagrajec, umrl v partizanski bolnišnici Pavla",
-    "birth_year": "",
     "birth_place": "Zagrajec",
     "death_type": "umro",
     "pdf_page": 8,
@@ -5322,7 +5333,27 @@
     "pdf_y_end": 325.1,
     "pdf_file": "kosovelova.pdf",
     "soldier_id": "0142000230",
-    "pdf_x_end": 272.8
+    "pdf_x_end": 272.8,
+    "other_sources": [
+      {
+        "soldier_id": "9020013488",
+        "name": "Kosovel (Franc) Stanko",
+        "additional_info": "rođen 1913, Zagrajec (Sežana). Slovenac, poginuo 1945. u NOBu, Gorenjsko",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=477",
+        "source_page": 477,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Gorenjsko",
+    "birth_year": "1913"
   },
   {
     "last_name": "Kosovel",
@@ -6194,7 +6225,26 @@
     "pdf_file": "kosovelova.pdf",
     "soldier_id": "0142000266",
     "pdf_x_end": 299.4,
-    "birth_date": "22.09.1923"
+    "other_sources": [
+      {
+        "soldier_id": "0064001687",
+        "name": "Ličen Stanko",
+        "additional_info": "1925, Preserje",
+        "pdf_file": "gradnikova.pdf",
+        "pdf_page": 24,
+        "pdf_x": 253.2,
+        "pdf_y": 262.4,
+        "pdf_x_end": 306.1,
+        "pdf_y_end": 275.6,
+        "unit_file": "gradnikova-soldiers.json"
+      }
+    ],
+    "birth_date": "22.09.1923",
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Londera",
@@ -7896,6 +7946,24 @@
     "pdf_file": "kosovelova.pdf",
     "soldier_id": "0142000335",
     "pdf_x_end": 421.8,
+    "other_sources": [
+      {
+        "soldier_id": "9020009365",
+        "name": "Okretič (Franc) Štefan",
+        "additional_info": "rođen 1902, Kostanjevica na Krasu (Nova Gorica). Slovenac, poginuo 1944. u NOBu, Trnovski grozd",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=340",
+        "source_page": 340,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Trnovski grozd",
     "birth_date": "26.12.1902"
   },
   {
@@ -9249,7 +9317,6 @@
     "fathers_name": "",
     "full_name": "Prodanovič Jaša",
     "additional_info": "rojen (?), Beograd, padel 26. oktobra 1943, Oševljek",
-    "birth_year": "",
     "birth_place": "Beograd",
     "death_type": "poginuo",
     "death_date": "26.10.1943",
@@ -9282,10 +9349,24 @@
         "pdf_y": 428.5,
         "pdf_y_end": 436.5,
         "pdf_x_end": 413.6
+      },
+      {
+        "soldier_id": "9025005306",
+        "name": "Prodanović (Zoran) Jaša",
+        "additional_info": "rođen 1913, Beograd-Stari Grad (Beograd Stari Grad). Srbin, poginuo 1943. u NOBu, Kod trsta jugoslavij",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=209",
+        "source_page": 209,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 281.2
+    "pdf_x_end": 281.2,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1913"
   },
   {
     "last_name": "Prole",
@@ -9942,6 +10023,20 @@
     "pdf_file": "kosovelova.pdf",
     "soldier_id": "0142000429",
     "pdf_x_end": 279.3,
+    "other_sources": [
+      {
+        "soldier_id": "0062002226",
+        "name": "Sabec Franc",
+        "additional_info": "Kal — Pivka, 1924—1945",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 47,
+        "pdf_x": 190.1,
+        "pdf_y": 331.8,
+        "pdf_x_end": 295.4,
+        "pdf_y_end": 349.0,
+        "unit_file": "gubceva-soldiers.json"
+      }
+    ],
     "birth_date": "16.07.1924"
   },
   {
@@ -11282,7 +11377,6 @@
     "fathers_name": "",
     "full_name": "Svara Andrej",
     "additional_info": "rojen (?), padel 20. septembra 1943, Gabrovica",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "20.09.1943",
     "death_place": "Gabrovica",
@@ -11292,7 +11386,25 @@
     "pdf_y_end": 267.2,
     "pdf_file": "kosovelova.pdf",
     "soldier_id": "0142000491",
-    "pdf_x_end": 287.4
+    "pdf_x_end": 287.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020004612",
+        "name": "Švara (Jožef) Andrej",
+        "additional_info": "rođen 1908, Koper. Slovenac, poginuo 1943. u NOBu, Sežana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=166",
+        "source_page": 166,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "birth_place": "Koper",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "birth_year": "1908"
   },
   {
     "last_name": "Svara",

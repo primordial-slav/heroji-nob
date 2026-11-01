@@ -179,6 +179,18 @@
         "pdf_x_end": 194.0,
         "pdf_y_end": 219.7,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0068000015",
+        "name": "Anžur Anton",
+        "additional_info": "zvani Bernard; Podmolnik, †",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 1,
+        "pdf_x": 31.4,
+        "pdf_y": 275.5,
+        "pdf_x_end": 118.8,
+        "pdf_y_end": 289.9,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       }
     ],
     "birth_date": "18.11.1913"
@@ -263,10 +275,10 @@
   },
   {
     "last_name": "Arčon",
-    "middle_name": "",
+    "middle_name": "Franca",
     "first_name": "Franc",
-    "fathers_name": "",
-    "full_name": "Arčon Franc",
+    "fathers_name": "Franc",
+    "full_name": "Arčon Franca Franc",
     "additional_info": "zvani Taras; 21.12.1925, Renče pri Gorici; 24",
     "birth_year": "1925",
     "birth_place": "Renče pri Gorici",
@@ -278,6 +290,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000013",
     "pdf_x_end": 267.6,
+    "other_sources": [
+      {
+        "soldier_id": "0168000091",
+        "name": "Arcon Franca Franc",
+        "additional_info": "Gorica",
+        "pdf_file": "4-pomorski-sektor.pdf",
+        "pdf_page": 3,
+        "pdf_x": 12.9,
+        "pdf_y": 370.9,
+        "pdf_x_end": 143.2,
+        "pdf_y_end": 380.4,
+        "unit_file": "4-pomorski-sektor-soldiers.json"
+      }
+    ],
     "birth_date": "21.12.1925"
   },
   {
@@ -544,6 +570,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000025",
     "pdf_x_end": 272.2,
+    "other_sources": [
+      {
+        "soldier_id": "0062000139",
+        "name": "Berus Avgust",
+        "additional_info": "zvani Branko; 1925, Kuzarjev kal",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 3,
+        "pdf_x": 44.1,
+        "pdf_y": 87.7,
+        "pdf_x_end": 155.4,
+        "pdf_y_end": 105.1,
+        "unit_file": "gubceva-soldiers.json"
+      }
+    ],
     "birth_date": "25.08.1925"
   },
   {
@@ -863,6 +903,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000038",
     "pdf_x_end": 263.5,
+    "other_sources": [
+      {
+        "soldier_id": "0063000120",
+        "name": "Božič Matija",
+        "additional_info": "zvani Branko; 1923, Ljubljana",
+        "pdf_file": "dvanajsta.pdf",
+        "pdf_page": 7,
+        "pdf_x": 51.6,
+        "pdf_y": 353.5,
+        "pdf_x_end": 185.6,
+        "pdf_y_end": 360.5,
+        "unit_file": "dvanajsta-soldiers.json"
+      }
+    ],
     "birth_date": "05.01.1923"
   },
   {
@@ -2617,6 +2671,18 @@
         "pdf_y": 360.5,
         "pdf_y_end": 369.0,
         "pdf_x_end": 390.5
+      },
+      {
+        "soldier_id": "0170000059",
+        "name": "Hren Valentin",
+        "additional_info": "Zadoblje; preživeli cankarjevci, nosilci spomenice 1941",
+        "pdf_file": "cankarjev-bataljon.pdf",
+        "pdf_page": 8,
+        "pdf_x": 35.0,
+        "pdf_y": 250.9,
+        "pdf_x_end": 146.5,
+        "pdf_y_end": 260.3,
+        "unit_file": "cankarjev-bataljon-soldiers.json"
       }
     ],
     "pdf_x_end": 451.1,
@@ -2684,6 +2750,18 @@
         "pdf_x_end": 329.3,
         "pdf_y_end": 135.9,
         "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0070000374",
+        "name": "Hrovat Ivan",
+        "additional_info": "zvani Žan; * 1915 Krka † po osvoboditvi",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 8,
+        "pdf_x": 132.1,
+        "pdf_y": 542.1,
+        "pdf_x_end": 267.9,
+        "pdf_y_end": 548.6,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
     "pdf_x_end": 450.9,
@@ -3311,15 +3389,27 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=233",
         "source_page": 233,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0070010054",
+        "name": "Jurca Mirko",
+        "additional_info": "zvani Mičo; * 1922 Podgora † 1945 Bosiljevo",
+        "pdf_file": "tomsiceva-3.pdf",
+        "pdf_page": 2,
+        "pdf_x": 257.4,
+        "pdf_y": 526.3,
+        "pdf_x_end": 442.1,
+        "pdf_y_end": 533.8,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
-    "birth_place": "Polje-slape, Ljubljana",
+    "birth_year": "1922",
     "borrowed": [
       "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1922",
+    "birth_place": "Podgora",
     "ethnicity": "Slovenac"
   },
   {
@@ -3423,6 +3513,18 @@
         "pdf_x_end": 411.4,
         "pdf_y_end": 231.3,
         "unit_file": "ljubljanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0141000213",
+        "name": "Kastrin Ljubo",
+        "additional_info": "Ljubljana",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 3,
+        "pdf_x": 181.2,
+        "pdf_y": 154.1,
+        "pdf_x_end": 277.3,
+        "pdf_y_end": 161.6,
+        "unit_file": "sercerjeva-soldiers.json"
       }
     ],
     "pdf_x_end": 276.7,
@@ -3985,7 +4087,26 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000165",
     "pdf_x_end": 421.7,
-    "birth_date": "06.06.1922"
+    "other_sources": [
+      {
+        "soldier_id": "0068000276",
+        "name": "Končan Anton",
+        "additional_info": "zvani Lipe; 1923, Ljubljana † 1980",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 139.9,
+        "pdf_y": 178.5,
+        "pdf_x_end": 223.4,
+        "pdf_y_end": 192.9,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ],
+    "birth_date": "06.06.1922",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Kopač",
@@ -4028,6 +4149,18 @@
         "pdf_x_end": 403.4,
         "pdf_y_end": 105.5,
         "ref_book": "moste-polje-spomenica-1941"
+      },
+      {
+        "soldier_id": "0070000586",
+        "name": "Kopač Jože",
+        "additional_info": "zvani Tomo; * 1920 Ljubljana † po osvoboditvi",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 12,
+        "pdf_x": 133.3,
+        "pdf_y": 550.7,
+        "pdf_x_end": 286.4,
+        "pdf_y_end": 557.2,
+        "unit_file": "tomsiceva-soldiers.json"
       }
     ],
     "pdf_x_end": 441.7,
@@ -4090,6 +4223,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000170",
     "pdf_x_end": 438.3,
+    "other_sources": [
+      {
+        "soldier_id": "0061001088",
+        "name": "Kos Ciril",
+        "additional_info": "zvani Metod; 1925, Ljubljana",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 13,
+        "pdf_x": 298.6,
+        "pdf_y": 219.8,
+        "pdf_x_end": 382.0,
+        "pdf_y_end": 235.6,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ],
     "birth_date": "01.07.1925"
   },
   {
@@ -4163,6 +4310,32 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000173",
     "pdf_x_end": 429.8,
+    "other_sources": [
+      {
+        "soldier_id": "0070000610",
+        "name": "Kovač Anton",
+        "additional_info": "zvani Tonček; * 1916 Golo † po osvoboditvi",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 13,
+        "pdf_x": 137.5,
+        "pdf_y": 312.4,
+        "pdf_x_end": 319.2,
+        "pdf_y_end": 320.4,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070101952",
+        "name": "Kovač Anton",
+        "additional_info": "zvani Tonček; * 1916 Golo † po osvoboditvi",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 20,
+        "pdf_x": 139.2,
+        "pdf_y": 405.2,
+        "pdf_y_end": 413.2,
+        "pdf_x_end": 331.8,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
     "birth_date": "11.02.1916"
   },
   {
@@ -4671,6 +4844,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000197",
     "pdf_x_end": 264.1,
+    "other_sources": [
+      {
+        "soldier_id": "0141000308",
+        "name": "Kržišnik Franc",
+        "additional_info": "zvani Ris; Unec pri Rakeku",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 4,
+        "pdf_x": 178.8,
+        "pdf_y": 229.1,
+        "pdf_x_end": 290.7,
+        "pdf_y_end": 245.3,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ],
     "birth_date": "04.10.1924"
   },
   {
@@ -6603,6 +6790,18 @@
         "pdf_x_end": 235.8
       },
       {
+        "soldier_id": "0062001760",
+        "name": "Obersnel Avgust",
+        "additional_info": "zvani Zdenko; 1915",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 22,
+        "pdf_x": 14.4,
+        "pdf_y": 205.8,
+        "pdf_x_end": 135.2,
+        "pdf_y_end": 214.3,
+        "unit_file": "gubceva-soldiers.json"
+      },
+      {
         "soldier_id": "0070000937",
         "name": "Obersnel Avgust",
         "additional_info": "* 1915 Lokev",
@@ -6656,6 +6855,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000280",
     "pdf_x_end": 282.2,
+    "other_sources": [
+      {
+        "soldier_id": "0068000462",
+        "name": "Oblak Franc",
+        "additional_info": "zvani Drejče; Vevče, †",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 5,
+        "pdf_x": 30.0,
+        "pdf_y": 51.1,
+        "pdf_x_end": 121.1,
+        "pdf_y_end": 57.6,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ],
     "birth_date": "01.08.1909"
   },
   {
@@ -8563,6 +8776,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000362",
     "pdf_x_end": 283.9,
+    "other_sources": [
+      {
+        "soldier_id": "0141000567",
+        "name": "Stamejčič Marjan",
+        "additional_info": "zvani Aco; Ljubljana",
+        "pdf_file": "sercerjeva.pdf",
+        "pdf_page": 7,
+        "pdf_x": 210.7,
+        "pdf_y": 139.4,
+        "pdf_x_end": 298.1,
+        "pdf_y_end": 155.3,
+        "unit_file": "sercerjeva-soldiers.json"
+      }
+    ],
     "birth_date": "10.10.1924"
   },
   {
@@ -9418,6 +9645,20 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000399",
     "pdf_x_end": 446.8,
+    "other_sources": [
+      {
+        "soldier_id": "0061002571",
+        "name": "Vrečar Jože",
+        "additional_info": "zvani Viktor; 1919, Sela pii Rudniku",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 30,
+        "pdf_x": 175.5,
+        "pdf_y": 437.2,
+        "pdf_x_end": 288.0,
+        "pdf_y_end": 453.6,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ],
     "birth_date": "07.10.1919"
   },
   {
@@ -9719,6 +9960,49 @@
     "pdf_file": "zascitna-enota-vpv.pdf",
     "soldier_id": "0150000412",
     "pdf_x_end": 289.1,
+    "other_sources": [
+      {
+        "soldier_id": "9056000109",
+        "name": "Založnik Alojz",
+        "additional_info": "Dolomiti v NOB: Nosilci spominskega znaka 1941 (Partizanske spomenice 1941): Založnik Alojz, 10. 6. 1902, Notranje Gorice.",
+        "pdf_file": "dolomiti-v-nob-3.pdf",
+        "pdf_page": 4,
+        "pdf_x": 56.6,
+        "pdf_y": 322.5,
+        "pdf_x_end": 256.9,
+        "pdf_y_end": 331.8,
+        "source_page": 670,
+        "ref_book": "dolomiti-v-nob-3"
+      },
+      {
+        "soldier_id": "0070001453",
+        "name": "Založnik Alojz",
+        "additional_info": "zvani Nikola; * 1902 Notranje Gorice † po osvoboditvi",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 30,
+        "pdf_x": 132.0,
+        "pdf_y": 526.2,
+        "pdf_x_end": 316.6,
+        "pdf_y_end": 532.7,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070200276",
+        "name": "Založnik Alojz",
+        "additional_info": "zvani Nikola; * 1902 Notranje gorice † 1973 Brezovica pri Ljubljani",
+        "pdf_file": "tomsiceva-1.pdf",
+        "pdf_page": 9,
+        "pdf_x": 163.9,
+        "pdf_y": 466.7,
+        "pdf_y_end": 483.8,
+        "pdf_x_end": 418.6,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
+    "death_place": "Brezovica pri Ljubljani",
+    "borrowed": [
+      "death_place"
+    ],
     "birth_date": "10.06.1902"
   },
   {
@@ -9762,6 +10046,18 @@
         "pdf_x_end": 260.4,
         "pdf_y_end": 540.9,
         "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0167002100",
+        "name": "Zavodnik Franc",
+        "additional_info": "zvani Jon; Trebnja Gorica, Krka",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 20,
+        "pdf_x": 136.3,
+        "pdf_y": 270.9,
+        "pdf_x_end": 195.4,
+        "pdf_y_end": 283.0,
+        "unit_file": "deveta-soldiers.json"
       }
     ],
     "birth_date": "04.01.1914"
@@ -10171,7 +10467,6 @@
     "fathers_name": "",
     "full_name": "Černe Karel",
     "additional_info": "zvani Žan; 9.10.1984, Dobrunje; 24; † 1989",
-    "birth_year": "",
     "birth_place": "Dobrunje",
     "unit_detail": "baza 24",
     "death_type": "umro",
@@ -10193,9 +10488,37 @@
         "pdf_y": 503.3,
         "pdf_y_end": 511.8,
         "pdf_x_end": 198.7
+      },
+      {
+        "soldier_id": "0070001499",
+        "name": "Černe Karel",
+        "additional_info": "zvani Žan; * 1904 Dobrunje",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 4,
+        "pdf_x": 130.5,
+        "pdf_y": 555.1,
+        "pdf_x_end": 255.3,
+        "pdf_y_end": 563.1,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0167002160",
+        "name": "Černe Karel",
+        "additional_info": "1904, Dobrunje pri Ljubljani",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 3,
+        "pdf_x": 143.8,
+        "pdf_y": 411.6,
+        "pdf_x_end": 206.9,
+        "pdf_y_end": 423.9,
+        "unit_file": "deveta-soldiers.json"
       }
     ],
-    "pdf_x_end": 420.4
+    "pdf_x_end": 420.4,
+    "birth_year": "1904",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Černologar",

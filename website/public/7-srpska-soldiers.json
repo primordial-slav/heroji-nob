@@ -1148,11 +1148,50 @@
         "pdf_y": 244.3,
         "pdf_x_end": 179.6,
         "pdf_y_end": 252.3
+      },
+      {
+        "soldier_id": "0090000022",
+        "name": "Blagojević S Ćira",
+        "additional_info": "1920, Crna Trava, pečalbarski radnik. U NOVJ od marta 1944. Poginuo 28. juna 1944. kod mesta Ogošte, na tzv. Kosovskoj demarkacionoj linijk.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 44.2,
+        "pdf_y": 51.7,
+        "pdf_x_end": 349.1,
+        "pdf_y_end": 83.5,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0096000063",
+        "name": "Blagojević S Ćira",
+        "additional_info": "Crna Trava, 28. VI 1944, Ogošte (Kosovo)",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 22,
+        "pdf_x": 67.6,
+        "pdf_y": 408.147,
+        "pdf_x_end": 371.0,
+        "pdf_y_end": 415.4,
+        "unit_file": "22-divizija-soldiers.json"
       }
     ],
     "death_date": "27.05.1944",
     "death_place": "u Gornjoj Oruglici (Jablanica)-protiv čegnika",
-    "rank": "borac"
+    "rank": "borac",
+    "occupation": "pečalbarski radnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "28.06.1944",
+          "place": "Ogošte (Kosovo)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Blidarević",
@@ -2254,7 +2293,6 @@
     "fathers_name": "",
     "full_name": "Cvetanović Dobrivoje",
     "additional_info": "zvani Ćira; iz Gare, Zaplanje",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 145.1,
     "pdf_x": 84.4,
@@ -2262,7 +2300,29 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Gare, Zaplanje",
     "pdf_x_end": 213.4,
-    "soldier_id": "0085000108"
+    "soldier_id": "0085000108",
+    "other_sources": [
+      {
+        "soldier_id": "9025010459",
+        "name": "Cvetanović (Stojanče) Dobrivoje",
+        "additional_info": "rođen 1915, Gare (Gadžin Han). Srbin, umro 1945. u NOBu, Niš",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=406",
+        "source_page": 406,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1945",
+    "death_place": "Niš",
+    "birth_year": "1915"
   },
   {
     "last_name": "Cvetanović",
@@ -8053,6 +8113,18 @@
         "pdf_y_end": 531.5
       },
       {
+        "soldier_id": "0090000146",
+        "name": "Lepojević Jovana Adam",
+        "additional_info": "1915, Dobro Polje, Crna Trava, graćevinski radnik. U NOVJ od februara 1944, borac. Poginuo 23. juna 1944. godine kod sela Orutlica, Jablanica, Leskovac.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 36.7,
+        "pdf_y": 385.2,
+        "pdf_x_end": 343.7,
+        "pdf_y_end": 427.2,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0096000347",
         "name": "Lepojević I Adam",
         "additional_info": "D. Polje, 27. VI 1944, Oruglica",
@@ -8070,7 +8142,14 @@
     "death_place": "na Oruglici - G. Jablanica, u protivu četnika",
     "rank": "borac",
     "variants": {
+      "born": [
+        "1915"
+      ],
       "death": [
+        {
+          "date": "23.06.1944",
+          "place": "na Oruglici - G. Jablanica, u protivu četnika"
+        },
         {
           "date": "27.06.1944",
           "place": "na Oruglici - G. Jablanica, u protivu četnika"
@@ -10085,7 +10164,25 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Lovce, Svetozarevo",
     "pdf_x_end": 304.9,
-    "soldier_id": "0085000484"
+    "soldier_id": "0085000484",
+    "other_sources": [
+      {
+        "soldier_id": "9025031253",
+        "name": "Milanović (Živojin) Vukadin",
+        "additional_info": "rođen 1918, Lovci (Svetozarevo). Srbin, poginuo 1945. u NOBu, Babunović",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1194",
+        "source_page": 1194,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Babunović"
   },
   {
     "last_name": "Milenković",
@@ -14480,12 +14577,11 @@
   },
   {
     "last_name": "Pejčić",
-    "middle_name": "",
+    "middle_name": "Stanka",
     "first_name": "Milisav",
-    "fathers_name": "",
-    "full_name": "Pejčić Milisav",
+    "fathers_name": "Stanko",
+    "full_name": "Pejčić Stanka Milisav",
     "additional_info": "iz Rakov Dol",
-    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 183.5,
     "pdf_x": 172.2,
@@ -14493,7 +14589,27 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Rakov Dol",
     "pdf_x_end": 249.1,
-    "soldier_id": "0085000697"
+    "soldier_id": "0085000697",
+    "birth_year": "1926",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "tesar",
+    "other_sources": [
+      {
+        "soldier_id": "0021003734",
+        "name": "Pejčić Stanka Milisav",
+        "additional_info": "rođen 1926. Rakov Dol, Babušnica, tesar. U Brigadi od formiranja, 1. četa 3. bataljon. Septembra 1944. prekomandovan u artiljeriju.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 282,
+        "pdf_x": 56.0,
+        "pdf_y": 291.3,
+        "pdf_x_end": 361.1,
+        "pdf_y_end": 324.3,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pejčić",
@@ -14536,7 +14652,6 @@
     "fathers_name": "",
     "full_name": "Pejčić Stanja",
     "additional_info": "iz Rakov Dol",
-    "birth_year": "",
     "pdf_page": 7,
     "pdf_y": 274.0,
     "pdf_x": 19.8,
@@ -14544,7 +14659,29 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Rakov Dol",
     "pdf_x_end": 86.8,
-    "soldier_id": "0085000700"
+    "soldier_id": "0085000700",
+    "other_sources": [
+      {
+        "soldier_id": "9025002008",
+        "name": "Pejčić (Tihomir) Stanja",
+        "additional_info": "rođen 1926, Rakov Dol (Babušnica). Srbin, poginuo 1945. u NOBu, Goražde",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=54",
+        "source_page": 54,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Goražde",
+    "birth_year": "1926"
   },
   {
     "last_name": "Perić",
@@ -16393,9 +16530,8 @@
     "first_name": "Nikola",
     "fathers_name": "M",
     "full_name": "Radovanović M Nikola",
-    "additional_info": "(1911. Kostajnica) poginuo 4.4.",
+    "additional_info": "(1911. Kostajnica) poginuo 4.4. 1945.",
     "birth_year": "1911",
-    "death_type": "poginuo",
     "pdf_page": 36,
     "pdf_y": 60.7,
     "pdf_x": 82.0,
@@ -16404,6 +16540,8 @@
     "birth_place": "Kostajnica",
     "pdf_x_end": 361.3,
     "soldier_id": "0085000793",
+    "death_type": "poginuo",
+    "death_date": "04.04.1945",
     "other_sources": [
       {
         "soldier_id": "9022014248",
@@ -16416,11 +16554,9 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
     "death_place": "Kuliba brod"
   },
   {
@@ -19878,9 +20014,8 @@
     "first_name": "Dragomir",
     "fathers_name": "B",
     "full_name": "Stoičević B Dragomir",
-    "additional_info": "(1915. s. Kušiljevo) poginuo 3. 3.",
+    "additional_info": "(1915. s. Kušiljevo) poginuo 3. 3. 1945.",
     "birth_year": "1915",
-    "death_type": "poginuo",
     "pdf_page": 40,
     "pdf_y": 254.6,
     "pdf_x": 81.1,
@@ -19888,7 +20023,9 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Kušiljevo",
     "pdf_x_end": 361.0,
-    "soldier_id": "0085000970"
+    "soldier_id": "0085000970",
+    "death_type": "poginuo",
+    "death_date": "03.03.1945"
   },
   {
     "last_name": "Stoičić",
@@ -22537,9 +22674,8 @@
     "first_name": "Branislav",
     "fathers_name": "C",
     "full_name": "Vidanović C Branislav",
-    "additional_info": "(1924. Bratunac) poginuo 23. 3.",
+    "additional_info": "(1924. Bratunac) poginuo 23. 3. 1945.",
     "birth_year": "1924",
-    "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 192.2,
     "pdf_x": 30.8,
@@ -22547,7 +22683,9 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Bratunac",
     "pdf_x_end": 306.4,
-    "soldier_id": "0085001106"
+    "soldier_id": "0085001106",
+    "death_type": "poginuo",
+    "death_date": "23.03.1945"
   },
   {
     "last_name": "Vidanović",
@@ -24533,7 +24671,45 @@
     "soldier_id": "0085001210",
     "death_date": "05.04.1945",
     "death_place": "na Bandriširi rejon Gračanice",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0001002591",
+        "name": "Đorđević Radivoja Dragoslav",
+        "additional_info": "1924, Niš, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, VI bataljon, borac",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 206,
+        "pdf_x": 64.3,
+        "pdf_y": 86.5,
+        "pdf_x_end": 371.4,
+        "pdf_y_end": 118.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0002001838",
+        "name": "Đorđević Radisava Dragoslav",
+        "additional_info": "1925, Slovac, Valjevo, krojač, u NOB od 9. 10. 1944, 1. bataljon, desetar, poginuo 5. 4. 1945. kod Batrovaca",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 625,
+        "pdf_x": 133.0,
+        "pdf_y": 152.2,
+        "pdf_x_end": 469.0,
+        "pdf_y_end": 171.3,
+        "unit_file": "soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924",
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Đorđević",
@@ -25100,7 +25276,6 @@
     "fathers_name": "",
     "full_name": "Đukić Vladimir",
     "additional_info": "iz Štaba brigade, poginuo 16. 4. 1945. na Ciganištu u borbi protiv ustaša i Nemacaširi rejon Doboja.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 19,
     "pdf_y": 112.9,
@@ -25110,7 +25285,25 @@
     "pdf_x_end": 316.0,
     "soldier_id": "0085001236",
     "death_date": "16.04.1945",
-    "death_place": "na Ciganištu"
+    "death_place": "na Ciganištu",
+    "other_sources": [
+      {
+        "soldier_id": "9025027857",
+        "name": "Dukić (Dušan) Vladimir",
+        "additional_info": "rođen 1925, Varoš (Ražanj). Srbin, poginuo 1945. u NOBu, Slavonski brod",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1084",
+        "source_page": 1084,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Varoš, Ražanj",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1925"
   },
   {
     "last_name": "Đurić",

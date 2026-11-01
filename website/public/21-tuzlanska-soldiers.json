@@ -2467,12 +2467,11 @@
   },
   {
     "last_name": "Lazić",
-    "middle_name": "",
+    "middle_name": "Lazo",
     "first_name": "Gordana",
-    "fathers_name": "",
-    "full_name": "Lazić Gordana",
+    "fathers_name": "Lazo",
+    "full_name": "Lazić Lazo Gordana",
     "additional_info": "borac, u Brigadi od osnivanja, poginula 13. 10. 1944, Ćelić - Lopare.",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 200.3,
     "pdf_x": 57.4,
@@ -2484,7 +2483,40 @@
     "death_place": "Ćelić, Lopare",
     "rank": "borac",
     "pdf_x_end": 384.2,
-    "pdf_x_left": 27.4
+    "pdf_x_left": 27.4,
+    "other_sources": [
+      {
+        "soldier_id": "9022002293",
+        "name": "Lazić (Lazar) Gordana",
+        "additional_info": "rođena 1922, Bijeljina. Srpkinja, poginula 1944. u NOBu, Šehovići",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=173",
+        "source_page": 173,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0029000326",
+        "name": "Lazić Lazo Gordana",
+        "additional_info": "rođena 1923. godine u Bijeljini, đak. U NOB od 1943. godine. Poginula oktobra 1944. godine kod Jablanice — Lopare u borbi sa četnicima i SS-ovcima.",
+        "pdf_file": "17-majevicka.pdf",
+        "pdf_page": 26,
+        "pdf_x": 146.0,
+        "pdf_y": 313.6,
+        "pdf_x_end": 459.0,
+        "pdf_y_end": 344.7,
+        "pdf_x_left": 126.8,
+        "unit_file": "17-majevicka-soldiers.json"
+      }
+    ],
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Bijeljina",
+    "occupation": "đak",
+    "ethnicity": "Srpkinja"
   },
   {
     "last_name": "Lazić",
@@ -5286,7 +5318,7 @@
     "first_name": "Dragica",
     "fathers_name": "Nikola",
     "full_name": "Vasić Nikolina Dragica",
-    "additional_info": "bolničarka, 1927, Požarnica - Tuzla, u NOB od 1943, u Brigadi od osnivanja, ubijena od četnika u Požarnici, oktobra",
+    "additional_info": "bolničarka, 1927, Požarnica - Tuzla, u NOB od 1943, u Brigadi od osnivanja, ubijena od četnika u Požarnici, oktobra 1944.",
     "birth_year": "1927",
     "pdf_page": 9,
     "pdf_y": 259.8,
@@ -5294,12 +5326,13 @@
     "pdf_y_end": 290.5,
     "pdf_file": "21-tuzlanska.pdf",
     "soldier_id": "0032000194",
-    "death_type": "ubijen",
-    "death_place": "Požarnica",
-    "rank": "bolničarka",
     "pdf_x_end": 389.9,
     "pdf_x_left": 33.3,
-    "birth_place": "Požarnica, Tuzla"
+    "birth_place": "Požarnica, Tuzla",
+    "death_type": "ubijen",
+    "death_date": "10.1944",
+    "death_place": "Požarnica",
+    "rank": "bolničarka"
   },
   {
     "last_name": "Veljašević",

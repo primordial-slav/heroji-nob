@@ -2502,6 +2502,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=549",
         "source_page": 549,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0019000019",
+        "name": "Anđelić Lazar",
+        "additional_info": "borac 3. čete 4. bataljona 18. srpske brigade, rođen 1926. god. u Bačkoj, poginuo 22. novembra 1944. god. kod sela Lađevca blizu Kraljeva u borbi protiv Nemaca.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 12,
+        "pdf_x": 82.2,
+        "pdf_y": 290.5,
+        "pdf_x_end": 340.5,
+        "pdf_y_end": 324.9,
+        "pdf_x_left": 60.3,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -2796,6 +2809,19 @@
     "death_place": "Vlasenica",
     "other_sources": [
       {
+        "soldier_id": "0019000024",
+        "name": "Aranđelović D Čedomir",
+        "additional_info": "borac 1. čete 3. bataljona 18. srpske brigade, rođen 1926. god. u Kladovu, poginuo 7. januara 1945. god. u selu Pirkovcima kod Lopara (istočna Bosna) u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 25,
+        "pdf_x": 117.4,
+        "pdf_y": 130.5,
+        "pdf_x_end": 376.1,
+        "pdf_y_end": 164.9,
+        "pdf_x_left": 96.1,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0073000092",
         "name": "Aranđelović D Čedomir",
         "additional_info": "iz Kladurova, borac 3. bataljona, 19. brigade, poginuo 21. januara 1945. godine, na Baricama, kod Vlasenice.",
@@ -2807,7 +2833,12 @@
         "pdf_y_end": 444.0,
         "unit_file": "19-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Arsić",
@@ -3505,10 +3536,10 @@
   },
   {
     "last_name": "Avramović",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Miloje",
-    "fathers_name": "",
-    "full_name": "Avramović Miloje",
+    "fathers_name": "M",
+    "full_name": "Avramović M Miloje",
     "additional_info": "1923, Turija. Poginuo januara 1945. u rejonu Drinjače",
     "birth_year": "1923",
     "pdf_page": 3,
@@ -3533,7 +3564,7 @@
       },
       {
         "soldier_id": "0019000030",
-        "name": "Avramović Miloje",
+        "name": "Avramović M Miloje",
         "additional_info": "borac 4. bataljona 18. srpske brigade, rođen 1923. god. u selu Turiji kod Kučeva, poginuo 27. januara 1945. god. kod Mijatovića blizu sela Drinjače (Zvornik) u borbi protiv Nemaca.",
         "pdf_file": "25-srpska-divizija.pdf",
         "pdf_page": 42,
@@ -3543,6 +3574,18 @@
         "pdf_y_end": 238.8,
         "pdf_x_left": 61.5,
         "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0073000111",
+        "name": "Avramović M Miloje",
+        "additional_info": "iz Turije, borac 1. bataljona, 19. brigade, poginuo 21. januara 1945. godine, kod Vlasenice, Orlovača.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 82.3,
+        "pdf_y": 125.0,
+        "pdf_x_end": 387.9,
+        "pdf_y_end": 141.8,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -6817,7 +6860,22 @@
     "birth_place": "Burovac",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Odžaka"
+    "death_place": "u rejonu Odžaka",
+    "other_sources": [
+      {
+        "soldier_id": "0019000050",
+        "name": "Bogićević Radomir",
+        "additional_info": "borac 18. srpske brigade, rođen 1905. god. u selu Burovcu kod Petrovca na Mlavi, poginuo 23. aprila 1945. god. kod sela Gornjeg Svilaja blizu Modriča u borbi protiv ustaša; sahranjen u Gornjem Svilaju.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 81,
+        "pdf_x": 114.8,
+        "pdf_y": 450.0,
+        "pdf_x_end": 373.9,
+        "pdf_y_end": 493.1,
+        "pdf_x_left": 93.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogin",
@@ -10582,10 +10640,10 @@
   },
   {
     "last_name": "Damjanović",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Stojadin",
-    "fathers_name": "",
-    "full_name": "Damjanović Stojadin",
+    "fathers_name": "P",
+    "full_name": "Damjanović P Stojadin",
     "additional_info": "1921, Manastirica",
     "birth_year": "1921",
     "pdf_page": 18,
@@ -10604,18 +10662,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=948",
         "source_page": 948,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073000296",
+        "name": "Damjanović P Stojadin",
+        "additional_info": "iz Manastirice, borac 1. bataljona, 19. brigade, poginuo 26. aprila 1945. godine, u mestu Vlaška Mala, Odžak.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 50.8,
+        "pdf_y": 116.0,
+        "pdf_x_end": 356.6,
+        "pdf_y_end": 132.6,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_type": "poginuo",
     "borrowed": [
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Zvornik"
+    "death_date": "26.04.1945",
+    "death_place": "Vlaška Mala, Odžak",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Damnjanović",
@@ -14471,7 +14541,30 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128000749",
     "pdf_x_end": 398.1,
-    "birth_place": "Kisiljevo"
+    "birth_place": "Kisiljevo",
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0021000864",
+        "name": "Gajić Vlastimir",
+        "additional_info": "rođen 1924. Kušiljevo. Veliko Gradište. zemljoradnik.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 52.7,
+        "pdf_y": 193.6,
+        "pdf_x_end": 354.4,
+        "pdf_y_end": 203.1,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Gajić",
@@ -16099,7 +16192,22 @@
     "birth_place": "Novo Selo (Gostivar)",
     "death_type": "poginuo",
     "death_date": "11.1944",
-    "death_place": "Kraljevo"
+    "death_place": "Kraljevo",
+    "other_sources": [
+      {
+        "soldier_id": "0019000133",
+        "name": "Grujić Jovan",
+        "additional_info": "borac 3. čete 4. bataljona 18. srpske brigade, rođen 1920. god. u Novom Selu (nije se moglo bliže utvrditi o kome se Novom Selu radi — prim. red.), poginuo 22. novembra 1944. god. kod sela Cvetke blizu Kraljeva u borbi protiv Nemaca.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 14,
+        "pdf_x": 83.5,
+        "pdf_y": 263.7,
+        "pdf_x_end": 342.3,
+        "pdf_y_end": 306.7,
+        "pdf_x_left": 61.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grujić",
@@ -18420,10 +18528,10 @@
   },
   {
     "last_name": "Ilić",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Velibor",
-    "fathers_name": "",
-    "full_name": "Ilić Velibor",
+    "fathers_name": "V",
+    "full_name": "Ilić V Velibor",
     "additional_info": "1914, Busur",
     "birth_year": "1914",
     "pdf_page": 31,
@@ -18433,7 +18541,26 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128000958",
     "pdf_x_end": 197.1,
-    "birth_place": "Busur"
+    "birth_place": "Busur",
+    "other_sources": [
+      {
+        "soldier_id": "0073000584",
+        "name": "Ilić V Velibor",
+        "additional_info": "rođen 1916. u Busuru, Petrovac na Mlavi, u NOVJ od oktobra 1944, borac 4. čete 4. bataljona 19. srpske brigade.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 98,
+        "pdf_x": 50.3,
+        "pdf_y": 433.9,
+        "pdf_x_end": 355.5,
+        "pdf_y_end": 451.1,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Ilić",
@@ -18577,10 +18704,10 @@
   },
   {
     "last_name": "Ilić",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Vojislav",
     "fathers_name": "",
-    "full_name": "Ilić Vojislav",
+    "full_name": "Ilić S Vojislav",
     "additional_info": "1914, Bakus. Poginuo aprida 1945. u rejonu Odžaka",
     "birth_year": "1914",
     "pdf_page": 31,
@@ -18592,7 +18719,27 @@
     "pdf_x_end": 389.2,
     "birth_place": "Bakus",
     "death_type": "poginuo",
-    "death_date": "1945"
+    "death_date": "1945",
+    "death_place": "Vrbovec, Modriča",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0019000159",
+        "name": "Ilić S Vojislav",
+        "additional_info": "četni starešina u 1. bataljonu 18. srpske brigade, rođen 20. oktobra 1914. god. u selu Đakusu kod Žitorađe, poginuo 23. aprila 1945. god. u selu Vrbovcu kod Modriča u borbi protiv ustaša; sahranjen u Vrbovcu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 81,
+        "pdf_x": 115.8,
+        "pdf_y": 86.1,
+        "pdf_x_end": 374.7,
+        "pdf_y_end": 129.2,
+        "pdf_x_left": 94.4,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "birth_date": "20.10.1914"
   },
   {
     "last_name": "Ilić",
@@ -19957,6 +20104,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=953",
         "source_page": 953,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000164",
+        "name": "Jablanović Borivoje",
+        "additional_info": "borac 18. srpske brigade, rođen 1912. god. u selu Šetonjama kod Petrovca na Mlavi, poginuo 19. marta 1945. god. kod sela Brđana blizu Gradačca u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 52,
+        "pdf_x": 83.5,
+        "pdf_y": 135.1,
+        "pdf_x_end": 342.8,
+        "pdf_y_end": 169.5,
+        "pdf_x_left": 62.6,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -20148,6 +20308,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=664",
         "source_page": 664,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073000642",
+        "name": "Jakobović Aleksandar",
+        "additional_info": "rođen 1922. u Ševici kod Kučeva, borac 19. srpske brigade, poginuo 1945. u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 53.6,
+        "pdf_y": 400.9,
+        "pdf_x_end": 358.5,
+        "pdf_y_end": 417.9,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -20321,6 +20493,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=869",
         "source_page": 869,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000167",
+        "name": "Jakovljević Vlastimir",
+        "additional_info": "borac 1. čete 3. bataljona 18. srpske brigade, rođen 1926. god. u selu Aleksandrovu kod Prokuplja, poginuo 7. januara 1945. god. u selu Pirkovcima kod Lopara (istočna Bosna) u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 25,
+        "pdf_x": 117.2,
+        "pdf_y": 86.5,
+        "pdf_x_end": 375.9,
+        "pdf_y_end": 121.0,
+        "pdf_x_left": 95.8,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0021001282",
+        "name": "Jakovljević Vlastimir",
+        "additional_info": "Aleksandrovo, Merošina. U Brigadi od avgusta 1944. do septembra 1944. Poginuo u 18. srpskoj brigadi januara 1945. kod Vlasenice.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 122,
+        "pdf_x": 52.6,
+        "pdf_y": 140.4,
+        "pdf_x_end": 358.5,
+        "pdf_y_end": 172.4,
+        "unit_file": "4-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -21303,6 +21500,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1325",
         "source_page": 1325,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000176",
+        "name": "Janković Dušan",
+        "additional_info": "politički delegat voda u protivkolskoj četi 4. bataljona 18. srpske brigade, rođen 23. avgusta 1922. god. u selu Češljevoj bari kod Velikog Gradišta, poginuo 12. marta 1945. god. kod sela Turića blizu Gradačca u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 53,
+        "pdf_x": 114.8,
+        "pdf_y": 371.4,
+        "pdf_x_end": 373.8,
+        "pdf_y_end": 414.4,
+        "pdf_x_left": 93.2,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -22105,12 +22315,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=660",
         "source_page": 660,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073000705",
+        "name": "Janković Vladimir",
+        "additional_info": "rođen 1923. u Neresnici kod Kučeva, borac 19. srpske brigade, poginuo 1945. u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 51,
+        "pdf_x": 53.6,
+        "pdf_y": 422.2,
+        "pdf_x_end": 358.7,
+        "pdf_y_end": 439.0,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -28784,12 +29011,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=956",
         "source_page": 956,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000235",
+        "name": "Jović S Božidar",
+        "additional_info": "borac 2. čete 4. bataljona 18. srpske brigade, rođen 21. maja 1921. god. u selu Velikom Popovcu kod Petrovca na Mlavi, poginuo 19. marta 1945. god. kod sela Vučkovaca blizu Gradačca u borbi protiv četnika; sahranjen u selu Vučkovcima.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 53,
+        "pdf_x": 115.3,
+        "pdf_y": 178.7,
+        "pdf_x_end": 374.6,
+        "pdf_y_end": 221.7,
+        "pdf_x_left": 93.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "birth_date": "21.05.1921"
   },
   {
     "last_name": "Jović",
@@ -28887,6 +29128,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=656",
         "source_page": 656,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073000993",
+        "name": "Jović Stojimir",
+        "additional_info": "rođen 1920. godine, u Ceremošnji kod Kučeva, borac 19. brigade, poginuo u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 52,
+        "pdf_x": 76.2,
+        "pdf_y": 385.7,
+        "pdf_x_end": 381.1,
+        "pdf_y_end": 401.8,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -29460,6 +29713,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=665",
         "source_page": 665,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000248",
+        "name": "Jovičić Života",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 1925. god. u selu Velikoj Bresnici kod Velikog Gradišta, nestao 5. decembra 1944. god. kod sela Krstaca blizu Požege u borbi protiv Nemaca.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 17,
+        "pdf_x": 117.7,
+        "pdf_y": 274.9,
+        "pdf_x_end": 376.3,
+        "pdf_y_end": 309.3,
+        "pdf_x_left": 96.1,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -29990,10 +30256,10 @@
   },
   {
     "last_name": "Karanović",
-    "middle_name": "",
+    "middle_name": "K",
     "first_name": "Sulejman",
     "fathers_name": "",
-    "full_name": "Karanović Sulejman",
+    "full_name": "Karanović K Sulejman",
     "additional_info": "1913, Bakovica. Poginuo aprila 1945. u rejonu Modriče",
     "birth_year": "1913",
     "pdf_page": 43,
@@ -30006,7 +30272,30 @@
     "birth_place": "Bakovica",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Modriče"
+    "death_place": "u rejonu Modriče",
+    "other_sources": [
+      {
+        "soldier_id": "0019000255",
+        "name": "Karanović K Sulejman",
+        "additional_info": "desetar u 18. srpskoj brigadi, rođen 1913. god. u selu Đakovcu kod Prištine (nije moglo tačno da se utvrdi o kome se selu radi — prim. red.), poginuo 14. marta 1945. god. kod sela Čardaka blizu Modriča u borbi protiv ustaša i domobrana.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 52,
+        "pdf_x": 84.4,
+        "pdf_y": 311.0,
+        "pdf_x_end": 344.0,
+        "pdf_y_end": 354.1,
+        "pdf_x_left": 62.8,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "14.03.1945",
+          "place": "u rejonu Modriče"
+        }
+      ]
+    }
   },
   {
     "last_name": "Karuzović",
@@ -31164,12 +31453,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=660",
         "source_page": 660,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001069",
+        "name": "Kostić M Svetomir",
+        "additional_info": "rođen 1924. u Neresnici kod Kučeva, borac 19. srpske brigade, poginuo 1945. u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 52,
+        "pdf_x": 76.4,
+        "pdf_y": 446.7,
+        "pdf_x_end": 381.4,
+        "pdf_y_end": 463.0,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Kostić",
@@ -32566,6 +32872,18 @@
         "pdf_y_end": 413.6,
         "pdf_x_left": 62.2,
         "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0073001109",
+        "name": "Kržanović Pavle",
+        "additional_info": "rođen 1910. u Ševici kod Kučeva, borac 19. srpske brigade, poginuo 1945. u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 52,
+        "pdf_x": 76.2,
+        "pdf_y": 467.1,
+        "pdf_x_end": 381.4,
+        "pdf_y_end": 483.4,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "variants": {
@@ -34825,14 +35143,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=660",
         "source_page": 660,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001177",
+        "name": "Lukijanović Dušan",
+        "additional_info": "rođen 1921. godine, u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 53,
+        "pdf_x": 53.6,
+        "pdf_y": 187.7,
+        "pdf_x_end": 359.3,
+        "pdf_y_end": 204.6,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1921",
     "borrowed": [
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1920"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Lukijanović",
@@ -35168,7 +35498,22 @@
     "birth_place": "Mišljenovac",
     "death_type": "poginuo",
     "death_date": "11.1944",
-    "death_place": "Kraljevo"
+    "death_place": "Kraljevo",
+    "other_sources": [
+      {
+        "soldier_id": "0019000316",
+        "name": "Lukić Života",
+        "additional_info": "borac 2. čete 4. bataljona 18. srpske brigade, rođen 1923. god. u selu Miljenovcu (verovatno Miljeviću — prim. red.) kod Golupca (ili Požarevca — prim. red.), poginuo 22. novembra 1944. god. kod sela Cvetke blizu Kraljeva u borbi protiv Nemaca; sahranjen u rodnom mestu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 122.1,
+        "pdf_y": 441.0,
+        "pdf_x_end": 380.9,
+        "pdf_y_end": 492.7,
+        "pdf_x_left": 100.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lukić",
@@ -35222,7 +35567,26 @@
     "birth_place": "Neresnica",
     "death_type": "poginuo",
     "death_date": "03.1945",
-    "death_place": "Gradačac"
+    "death_place": "Gradačac",
+    "other_sources": [
+      {
+        "soldier_id": "0073001186",
+        "name": "Lupšić Bogdan",
+        "additional_info": "rođen 1910. godine, u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 53,
+        "pdf_x": 53.3,
+        "pdf_y": 121.0,
+        "pdf_x_end": 358.7,
+        "pdf_y_end": 137.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1910"
+      ]
+    }
   },
   {
     "last_name": "Lupšić",
@@ -35251,12 +35615,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=660",
         "source_page": 660,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001189",
+        "name": "Lupšić Janko",
+        "additional_info": "rođen 1910. godine u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 53,
+        "pdf_x": 53.6,
+        "pdf_y": 143.3,
+        "pdf_x_end": 358.9,
+        "pdf_y_end": 160.2,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1910"
+      ]
+    }
   },
   {
     "last_name": "Lupšić",
@@ -37015,7 +37396,22 @@
     "birth_place": "Mišljenovac",
     "death_type": "poginuo",
     "death_date": "11.1944",
-    "death_place": "Kraljevo"
+    "death_place": "Kraljevo",
+    "other_sources": [
+      {
+        "soldier_id": "0019000327",
+        "name": "Marinković Živoljub",
+        "additional_info": "borac 2. čete 4. bataljona 18. srpske brigade, rođen 1923. god. u selu Miljenovcu (verovatno Miljeviću — prim. red.) kod Golupca (ili Požarevca — prim. red.), poginuo 22. novembra 1944. god. kod sela Cvetke blizu Kraljeva u borbi protiv Nemaca.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 11,
+        "pdf_x": 122.1,
+        "pdf_y": 385.8,
+        "pdf_x_end": 380.9,
+        "pdf_y_end": 428.9,
+        "pdf_x_left": 100.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marinović",
@@ -37322,7 +37718,22 @@
     "birth_place": "Cerovica",
     "death_type": "poginuo",
     "death_date": "11.1944",
-    "death_place": "Kraljevo"
+    "death_place": "Kraljevo",
+    "other_sources": [
+      {
+        "soldier_id": "0019000330",
+        "name": "Marjanović Branislav",
+        "additional_info": "borac 1. čete 3. bataljona 18. srpske brigade, rođen 1920. god. u selu Cerovici kod Kučeva (ili Sokobanje — prim. red.), poginuo 16. novembra 1944. god. kod sela Guberevca blizu Kraljeva u borbi protiv Nemaca; sahranjen na groblju u Guberevcu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 10,
+        "pdf_x": 77.8,
+        "pdf_y": 397.6,
+        "pdf_x_end": 336.6,
+        "pdf_y_end": 441.6,
+        "pdf_x_left": 56.4,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marjanović",
@@ -39701,6 +40112,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=664",
         "source_page": 664,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073001370",
+        "name": "Martinović Dušan",
+        "additional_info": "rođen 1925. u Ševici kod Kučeva, borac 19. srpske brigade, poginuo 1945. u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 54,
+        "pdf_x": 79.2,
+        "pdf_y": 163.3,
+        "pdf_x_end": 384.5,
+        "pdf_y_end": 179.9,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -41711,10 +42134,10 @@
   },
   {
     "last_name": "Mijajlović",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Milutin",
-    "fathers_name": "",
-    "full_name": "Mijajlović Milutin",
+    "fathers_name": "P",
+    "full_name": "Mijajlović P Milutin",
     "additional_info": "1912, Radenka",
     "birth_year": "1912",
     "pdf_page": 56,
@@ -41724,7 +42147,21 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128002130",
     "pdf_x_end": 203.0,
-    "birth_place": "Radenka"
+    "birth_place": "Radenka",
+    "other_sources": [
+      {
+        "soldier_id": "0073001412",
+        "name": "Mijajlović P Milutin",
+        "additional_info": "rođen u Radenki, Kučevo, u NOVJ od oktobra 1944, delegat voda u 19. srpskoj brigadi.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 129,
+        "pdf_x": 75.8,
+        "pdf_y": 455.7,
+        "pdf_x_end": 381.4,
+        "pdf_y_end": 473.0,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mijajlović",
@@ -41878,7 +42315,22 @@
     "birth_place": "Bistrica",
     "death_type": "poginuo",
     "death_date": "12.1944",
-    "death_place": "Požega"
+    "death_place": "Požega",
+    "other_sources": [
+      {
+        "soldier_id": "0019000363",
+        "name": "Mijatović Dragutin",
+        "additional_info": "borac bojne komore 3. bataljona 18. srpske brigade, rođen 1912. god. u selu Bistrici kod Petrovca na Mlavi, poginuo 5. decembra 1944. god. kod sela Krstaca blizu Požege u borbi protiv Nemaca; sahranjen u selu Negrišorima kod Guče.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 19,
+        "pdf_x": 118.5,
+        "pdf_y": 80.3,
+        "pdf_x_end": 376.9,
+        "pdf_y_end": 123.4,
+        "pdf_x_left": 96.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mijucić",
@@ -42037,7 +42489,22 @@
     "birth_place": "Bresničić",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Odžaka"
+    "death_place": "u rejonu Odžaka",
+    "other_sources": [
+      {
+        "soldier_id": "0019000364",
+        "name": "Mikić Ljubomir",
+        "additional_info": "borac 2. bataljona 18. srpske brigade, rođen 1917. god. u selu Bresščiću (verovatno Brasničiću kod Prokuplja — prim. red.) poginuo 25. aprila 1945. god. kod sela Novog Grada blizu Bosanskog Šamca u borbi protiv ustaša; sahranjen u Odžaku kod crkve.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 77,
+        "pdf_x": 125.4,
+        "pdf_y": 104.7,
+        "pdf_x_end": 384.4,
+        "pdf_y_end": 147.7,
+        "pdf_x_left": 103.8,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mikić",
@@ -44378,6 +44845,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=947",
         "source_page": 947,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000388",
+        "name": "Miletić Miodrag",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 1924. god. u selu Knežici kod Petrovca na Mlavi, poginuo 5. decembra 1944. god. kod sela Krstaca blizu Požege u borbi protiv Nemaca; sahranjen u selu Krstacu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 81.1,
+        "pdf_y": 191.1,
+        "pdf_x_end": 339.0,
+        "pdf_y_end": 225.5,
+        "pdf_x_left": 59.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -45430,10 +45910,10 @@
   },
   {
     "last_name": "Miljković",
-    "middle_name": "",
+    "middle_name": "Sime",
     "first_name": "Borislav",
-    "fathers_name": "",
-    "full_name": "Miljković Borislav",
+    "fathers_name": "Sima",
+    "full_name": "Miljković Sime Borislav",
     "additional_info": "1921, Novdin",
     "birth_year": "1921",
     "pdf_page": 65,
@@ -45443,7 +45923,25 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128002321",
     "pdf_x_end": 390.4,
-    "birth_place": "Novdin"
+    "birth_place": "Novdin",
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0021002748",
+        "name": "Miljković Sime Borislav",
+        "additional_info": "rođen 1921, Čovdin. Petrovac, zemljoradnik. U Bršadi od marta 1945. (iz prekomande), u 2. četi 1. bataljona. Ranjen 26. aprila 1945. kod Donjeg Rajića.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 226,
+        "pdf_x": 59.6,
+        "pdf_y": 478.4,
+        "pdf_x_end": 363.4,
+        "pdf_y_end": 510.9,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Miljković",
@@ -51943,7 +52441,27 @@
     "birth_place": "Vuković",
     "death_type": "poginuo",
     "death_date": "12.1944",
-    "death_place": "Požega"
+    "death_place": "Požega",
+    "other_sources": [
+      {
+        "soldier_id": "0019000444",
+        "name": "Mladenović Vojislav",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 1925. god. u selu Vukovićima kod Golupca, poginuo 5. decembra 1944. god kod sela Krstaca blizu Požege u borbi protiv Nemaca; sahranjen u selu Krstacu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 81.6,
+        "pdf_y": 477.2,
+        "pdf_x_end": 339.6,
+        "pdf_y_end": 494.6,
+        "pdf_x_left": 59.7,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Mladenović",
@@ -54348,7 +54866,26 @@
     "birth_place": "Neresnica",
     "death_type": "poginuo",
     "death_date": "01.1945",
-    "death_place": "Vlasenica"
+    "death_place": "Vlasenica",
+    "other_sources": [
+      {
+        "soldier_id": "0073001866",
+        "name": "Nikolić Brana",
+        "additional_info": "rođen 1923. godine, u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 55,
+        "pdf_x": 48.8,
+        "pdf_y": 306.9,
+        "pdf_x_end": 354.2,
+        "pdf_y_end": 323.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -55979,7 +56516,42 @@
     "birth_place": "Gornji Matejevac",
     "death_type": "poginuo",
     "death_date": "10.1944",
-    "death_place": "na Deli-Jovanu"
+    "death_place": "na Deli-Jovanu",
+    "other_sources": [
+      {
+        "soldier_id": "0019000472",
+        "name": "Nikolić Petar",
+        "additional_info": "borac 2. bataljona 19. srpske brigade, star 38 godina, rođen u selu Matejevcu kod Niša, poginuo 17. septembra 1944. god. u selu Jabukovcu kod Negotina u borbi protiv Nemaca; sahranjen na Karađorđevoj glavici.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 111.5,
+        "pdf_y": 205.1,
+        "pdf_x_end": 370.0,
+        "pdf_y_end": 240.2,
+        "pdf_x_left": 89.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0073001905",
+        "name": "Nikolić Petar",
+        "additional_info": "borac 2. bataljona, rođen u selu Matvejevac kod Niša 1906, poginuo 17. septembra 1944. u selu Jabukovac kod Negotina u borbi protiv Nemaca, sahranjen na Karaćorđevoj glavici.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 54.0,
+        "pdf_y": 312.6,
+        "pdf_x_end": 359.2,
+        "pdf_y_end": 338.5,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "17.09.1944",
+          "place": "Jabukovac, Negotin"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -56067,7 +56639,58 @@
     "birth_place": "Neresnica",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Modriče"
+    "death_place": "u rejonu Modriče",
+    "other_sources": [
+      {
+        "soldier_id": "0019000476",
+        "name": "Nikolić Svetislav",
+        "additional_info": "borac 3. čete 2. bataljona 19. srpske brigade, rođen 1920. god. u selu Neresnici kod Kučeva, poginuo 17. marta 1945. god. kod sela Ledenica (Katoličkih) blizu Modriča u borbi protiv ustaša, domobrana i četnika; sahranjen u selu Ledenicama (Katoličkim) na groblju.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 54,
+        "pdf_x": 83.8,
+        "pdf_y": 375.7,
+        "pdf_x_end": 342.6,
+        "pdf_y_end": 427.4,
+        "pdf_x_left": 62.2,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0073001915",
+        "name": "Nikolić Svetislav",
+        "additional_info": "borac 3. čete 2. bataljona, rođen 1920. u Neresnici kod Kučeva, poginuo 17. marta 1945. kod sela Katoličke Ledenice blizu Modriče u borbi protiv ustaša, domobrana i četnika. Sahranjen u Katoličkim ledenicama na groblju.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 54.3,
+        "pdf_y": 393.7,
+        "pdf_x_end": 359.6,
+        "pdf_y_end": 428.8,
+        "unit_file": "19-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0073001916",
+        "name": "Nikolić Svetislav",
+        "additional_info": "rođen 1921. godine, u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 55,
+        "pdf_x": 48.8,
+        "pdf_y": 434.6,
+        "pdf_x_end": 355.0,
+        "pdf_y_end": 451.7,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920",
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "17.03.1945",
+          "place": "Bosna"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -56215,12 +56838,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1406",
         "source_page": 1406,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000479",
+        "name": "Nikolić Vitomir",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 1. septembra 1920. god. u okolini Požarevca, poginuo 10. aprila 1945. god. kod sela Garevca blizu Modriča u borbi protiv ustaša; sahranjen u Garevcu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 76,
+        "pdf_x": 74.6,
+        "pdf_y": 411.7,
+        "pdf_x_end": 333.4,
+        "pdf_y_end": 446.1,
+        "pdf_x_left": 53.0,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "01.09.1920"
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -56538,12 +57179,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=10",
         "source_page": 10,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000482",
+        "name": "Nikolić Živomir",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 1922. god., poginuo 26. avgusta 1944. god. kod Boljevca u borbi protiv četnika; sahranjen u Boljevcu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 85.8,
+        "pdf_y": 376.7,
+        "pdf_x_end": 344.4,
+        "pdf_y_end": 402.5,
+        "pdf_x_left": 64.2,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -57926,7 +58585,26 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128002950",
     "pdf_x_end": 387.4,
-    "birth_place": "Veliko Gradište"
+    "birth_place": "Veliko Gradište",
+    "occupation": "konobar",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0119000743",
+        "name": "Obretković Aleksandar",
+        "additional_info": "zvani Sokolovac; konobar, iz Velikog Gradišta, rođen 1924. u Velikom Gradištu. U odredu od 20. septembra do novembra 1941. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=294",
+        "source_page": 282,
+        "unit_file": "pozarevacki-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "last_name": "Obretković",
@@ -59901,6 +60579,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=661",
         "source_page": 661,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002037",
+        "name": "Paskarević Nikola",
+        "additional_info": "rođen 1925. godine, u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 56,
+        "pdf_x": 81.8,
+        "pdf_y": 317.5,
+        "pdf_x_end": 387.7,
+        "pdf_y_end": 334.3,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -66878,12 +67568,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=661",
         "source_page": 661,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002391",
+        "name": "Priulović Mita",
+        "additional_info": "rođen 1922. godine, u Neresnici, kod Kučeva, borac 19. brigade, poginuo u Bosni, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 78.8,
+        "pdf_y": 75.2,
+        "pdf_x_end": 383.7,
+        "pdf_y_end": 92.3,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Priulović",
@@ -69333,6 +70040,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=947",
         "source_page": 947,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002473",
+        "name": "Radosavljević Vojin",
+        "additional_info": "iz Kamenova, borac 19. brigade, poginuo 20. januara 1945. godine, kod Zvornika.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 78.8,
+        "pdf_y": 185.9,
+        "pdf_x_end": 384.3,
+        "pdf_y_end": 202.7,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -72009,6 +72728,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=947",
         "source_page": 947,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073002554",
+        "name": "Ranković Života",
+        "additional_info": "iz Kamenova, borac 19. brigade, poginuo kod Vlasenice, 1945. godine.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 79.0,
+        "pdf_y": 441.9,
+        "pdf_x_end": 384.3,
+        "pdf_y_end": 458.8,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -72156,7 +72887,7 @@
       {
         "soldier_id": "0073002555",
         "name": "Rančić A Anđelko",
-        "additional_info": "rođen 1925. u Kučevu, u NOVJ od oktobra 1944, kurir u 19. srpskoj brigadi, član SKOJ od novembra 1944, a KPJ od decembra",
+        "additional_info": "rođen 1925. u Kučevu, u NOVJ od oktobra 1944, kurir u 19. srpskoj brigadi, član SKOJ od novembra 1944, a KPJ od decembra 1944.",
         "pdf_file": "19-srpska.pdf",
         "pdf_page": 175,
         "pdf_x": 73.5,
@@ -74446,7 +75177,27 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128003802",
     "pdf_x_end": 382.4,
-    "birth_place": "Veliki Nzvor"
+    "birth_place": "Veliki Nzvor",
+    "other_sources": [
+      {
+        "soldier_id": "9025038963",
+        "name": "Serjević (Jonča) Jovan",
+        "additional_info": "rođen 1922, Veliki Izvor (Zaječar). Srbin, umro 1945. u NOBu, Veliki izvor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1408",
+        "source_page": 1408,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "1945",
+    "death_place": "Veliki izvor"
   },
   {
     "last_name": "Seronjać",
@@ -75059,7 +75810,23 @@
     "birth_place": "Sjerač (Rogatica)",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Modriče"
+    "death_place": "u rejonu Modriče",
+    "other_sources": [
+      {
+        "soldier_id": "0019000639",
+        "name": "Simić Cvetko",
+        "additional_info": "borac 3. bataljona 18. srpske brinade, rođen 14. novembra 1922. godine, poginuo 10. aprila 1945. god. kod sela Garevca blizu Modriča u borbi protiv ustaša; sahranjen u Garevcu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 76,
+        "pdf_x": 75.0,
+        "pdf_y": 122.7,
+        "pdf_x_end": 334.8,
+        "pdf_y_end": 157.2,
+        "pdf_x_left": 53.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "birth_date": "14.11.1922"
   },
   {
     "last_name": "Simić",
@@ -75175,12 +75942,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1192",
         "source_page": 1192,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000640",
+        "name": "Simić Natalija",
+        "additional_info": "bolničarka u 3. bataljonu 18. erpske brigade, rođena 15. aprila 1913. god. u selu Dragocvetu kod Svetozareva, poginula kraj Save (verovatno 23. aprila 1945. god. kod sela Gornjeg Svilaja blizu Modriča u borbi protiv ustaša — prim. red.).",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 80,
+        "pdf_x": 86.4,
+        "pdf_y": 452.1,
+        "pdf_x_end": 346.1,
+        "pdf_y_end": 495.1,
+        "pdf_x_left": 65.1,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srpkinja",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "birth_date": "15.04.1913"
   },
   {
     "last_name": "Simić",
@@ -75617,7 +76398,36 @@
     "pdf_x_end": 361.0,
     "death_type": "poginuo",
     "death_date": "02.1945",
-    "death_place": "Zvornik"
+    "death_place": "Zvornik",
+    "other_sources": [
+      {
+        "soldier_id": "9025014515",
+        "name": "Slavković (Života) Milosav",
+        "additional_info": "rođen 1926, Resnik (Kragujevac). Srbin, poginuo 1945. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=563",
+        "source_page": 563,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000652",
+        "name": "Slavković Milosav",
+        "additional_info": "borac 2. čete 2. bataljona 18. srpske brigade, rođen 1926. god. u okolini Kragujevca, poginuo 17. februara 1945. god. na brdu Kosturu kod sela Skočića blizu Zvornika u borbi protiv Nemaca; sahranjen na Kosturu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 74,
+        "pdf_x": 83.5,
+        "pdf_y": 158.4,
+        "pdf_x_end": 341.7,
+        "pdf_y_end": 201.5,
+        "pdf_x_left": 61.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "birth_place": "Resnik, Kragujevac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Slavković",
@@ -75846,7 +76656,37 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128003866",
     "pdf_x_end": 362.0,
-    "birth_place": "Neresnica"
+    "birth_place": "Neresnica",
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "occupation"
+    ],
+    "death_type": "poginuo",
+    "death_date": "24.01.1945",
+    "death_place": "kod Mijatovića blizu sela Drinjače (Zvornik)",
+    "other_sources": [
+      {
+        "soldier_id": "0019000656",
+        "name": "Soldatović Ljubomir",
+        "additional_info": "borac 4. bataljona 18. srpske brigade, zemljoradnik, rođen 1909. god. u selu Neresnici kod Kučeva, poginuo 24. januara 1945. god. kod Mijatovića blizu sela Drinjače (Zvornik) u borbi protiv Nemaca.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 43,
+        "pdf_x": 127.3,
+        "pdf_y": 88.5,
+        "pdf_x_end": 386.4,
+        "pdf_y_end": 122.9,
+        "pdf_x_left": 106.2,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1909"
+      ]
+    }
   },
   {
     "last_name": "Sorejević",
@@ -76921,10 +77761,10 @@
   },
   {
     "last_name": "Milojković",
-    "middle_name": "",
+    "middle_name": "B",
     "first_name": "Vlastimir",
     "fathers_name": "",
-    "full_name": "Milojković Vlastimir",
+    "full_name": "Milojković B Vlastimir",
     "additional_info": "1925, Braničevo. Poginuo aprila 1945. u rejonu Odžaka",
     "birth_year": "1925",
     "pdf_page": 61,
@@ -76936,8 +77776,6 @@
     "death_type": "poginuo",
     "death_date": "04.1945",
     "death_place": "u rejonu Odžaka",
-    "pdf_x_end": 391.6,
-    "pdf_y_end": 205.1,
     "other_sources": [
       {
         "soldier_id": "9025010822",
@@ -76946,12 +77784,32 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=413",
         "source_page": 413,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000403",
+        "name": "Milojković B Vlastimir",
+        "additional_info": "borac 1. bataljona 18. srpske brigade, rođen 14. februara 1926. god. u selu Braničevu kod Golupca, poginuo 23. aprila 1945. god. u selu Vrbovcu kod Modriča u borbi protiv ustaša.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 81,
+        "pdf_x": 115.3,
+        "pdf_y": 273.1,
+        "pdf_x_end": 374.1,
+        "pdf_y_end": 308.2,
+        "pdf_x_left": 93.7,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
+    "pdf_x_end": 391.6,
+    "pdf_y_end": 205.1,
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "14.02.1926"
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -78463,7 +79321,22 @@
     "birth_place": "Tabanovac",
     "death_type": "poginuo",
     "death_date": "12.1944",
-    "death_place": "Požega"
+    "death_place": "Požega",
+    "other_sources": [
+      {
+        "soldier_id": "0019000695",
+        "name": "Stančević Stojan",
+        "additional_info": "ili Staičević; borac 3. bataljona 18. srpske brigade, rođen 1909. god. u selu Tabanovcu kod Petrovca na Mlavi, poginuo 5. decembra 1944. god. kod sela Krstaca blizu Požege u borbi protiv Nemaca; sahranjen u selu Krstacu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 81.1,
+        "pdf_y": 234.8,
+        "pdf_x_end": 339.4,
+        "pdf_y_end": 277.9,
+        "pdf_x_left": 59.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stančuaovnn",
@@ -78843,10 +79716,10 @@
   },
   {
     "last_name": "Stefanović",
-    "middle_name": "",
+    "middle_name": "I",
     "first_name": "Petko",
-    "fathers_name": "",
-    "full_name": "Stefanović Petko",
+    "fathers_name": "I",
+    "full_name": "Stefanović I Petko",
     "additional_info": "1924, Bukovska. Ranjen januara 1945. kod Vlasenice",
     "birth_year": "1924",
     "pdf_page": 100,
@@ -78856,7 +79729,26 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128004021",
     "pdf_x_end": 200.2,
-    "birth_place": "Bukovska"
+    "birth_place": "Bukovska",
+    "other_sources": [
+      {
+        "soldier_id": "0073002789",
+        "name": "Stefanović I Petko",
+        "additional_info": "rođen 1922. u Bukovskoj, Kučevo, u NOVJ od oktobra 1944, borac 19. srpske brigade.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 186,
+        "pdf_x": 54.9,
+        "pdf_y": 329.7,
+        "pdf_x_end": 359.3,
+        "pdf_y_end": 347.0,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Stefanović",
@@ -79078,7 +79970,25 @@
     "soldier_id": "0128004034",
     "pdf_x_end": 382.5,
     "birth_place": "Veliko Aaole",
-    "death_type": "umro"
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "9025024732",
+        "name": "Stepanović (Milorad) Svetomir",
+        "additional_info": "rođen 1927, Veliko Laole (Petrovac). Srbin, umro 1945. u NOBu, Šabac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=957",
+        "source_page": 957,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Šabac"
   },
   {
     "last_name": "Stepanović",
@@ -79434,12 +80344,35 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1069",
         "source_page": 1069,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000706",
+        "name": "Stevanović Miroljub",
+        "additional_info": "borac 18. srpske brigads, rođen 1923. god. u selu Zdravinju kod Kruševca, poginuo 23. jula 1944. god. (ili 23. avgusta — prim. red.) kod Boljevca (ili kod sela Melova — Leskovac — prim. red.) u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 114.8,
+        "pdf_y": 50.7,
+        "pdf_x_end": 374.7,
+        "pdf_y_end": 92.8,
+        "pdf_x_left": 93.7,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ],
+      "death": [
+        {
+          "date": "23.07.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stevanović",
@@ -80487,7 +81420,23 @@
     "birth_place": "Crljenac",
     "death_type": "poginuo",
     "death_date": "03.1945",
-    "death_place": "u rejonu Gradačca"
+    "death_place": "u rejonu Gradačca",
+    "other_sources": [
+      {
+        "soldier_id": "0019000714",
+        "name": "Stević Vlajko",
+        "additional_info": "borac protivkolske čete 4. bataljona 18. srpske brigade, rođen 5. juna 1919. god. u selu Crljencu kod Petrovca na Mlavi, poginuo 14. marta 1945. god. u selu Mionici kod Gradačca u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 53,
+        "pdf_x": 114.8,
+        "pdf_y": 422.0,
+        "pdf_x_end": 374.4,
+        "pdf_y_end": 456.4,
+        "pdf_x_left": 93.2,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "birth_date": "05.06.1919"
   },
   {
     "last_name": "Stević",
@@ -81962,7 +82911,23 @@
     "birth_place": "Šetonje",
     "death_type": "poginuo",
     "death_date": "05.1945",
-    "death_place": "Zagreb"
+    "death_place": "Zagreb",
+    "other_sources": [
+      {
+        "soldier_id": "0019000724",
+        "name": "Stojanović Ivan",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 14. novembra 1920. god. u selu Šetonjama kod Petrovca na Mlavi, poginuo 9. maja 1945. god. kod sela Stupniha blizu Zagreba u borbi protiv ustaša; sahranjen u selu Stupnihu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 74,
+        "pdf_x": 84.2,
+        "pdf_y": 316.3,
+        "pdf_x_end": 342.8,
+        "pdf_y_end": 359.4,
+        "pdf_x_left": 62.9,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "birth_date": "14.11.1920"
   },
   {
     "last_name": "Stojanović",
@@ -82875,7 +83840,23 @@
     "birth_place": "Bistrica",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Modriče"
+    "death_place": "u rejonu Modriče",
+    "other_sources": [
+      {
+        "soldier_id": "0019000730",
+        "name": "Stojanović Čedomir",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 15. marta 1919. god. u selu Bietrici kod Petrovca na Mlavi, poginuo 10. aprila 1945. god. kod sela Garevca blizu Modriča u borbi protiv ustaša; sahranjen u Garevcu.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 76,
+        "pdf_x": 74.8,
+        "pdf_y": 166.2,
+        "pdf_x_end": 333.6,
+        "pdf_y_end": 209.2,
+        "pdf_x_left": 53.7,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ],
+    "birth_date": "15.03.1919"
   },
   {
     "last_name": "Stojanović",
@@ -83067,10 +84048,10 @@
   },
   {
     "last_name": "Stojimirović",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Stevan",
-    "fathers_name": "",
-    "full_name": "Stojimirović Stevan",
+    "fathers_name": "S",
+    "full_name": "Stojimirović S Stevan",
     "additional_info": "1923, Kamenovo",
     "birth_year": "1923",
     "pdf_page": 103,
@@ -83080,7 +84061,26 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128004240",
     "pdf_x_end": 230.4,
-    "birth_place": "Kamenovo"
+    "birth_place": "Kamenovo",
+    "other_sources": [
+      {
+        "soldier_id": "0073002919",
+        "name": "Stojimirović S Stevan",
+        "additional_info": "rođen 1925. u Kamenovu, Petrovac na Mlavi, u NOVJ od oktobra 1944, borac 2. čete 3. bataljona 19. srpske brigade.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 189,
+        "pdf_x": 77.5,
+        "pdf_y": 99.7,
+        "pdf_x_end": 382.3,
+        "pdf_y_end": 116.5,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Stojić",
@@ -83278,10 +84278,10 @@
   },
   {
     "last_name": "Stojičević",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Radomir",
-    "fathers_name": "",
-    "full_name": "Stojičević Radomir",
+    "fathers_name": "M",
+    "full_name": "Stojičević M Radomir",
     "additional_info": "1924, Oreškovica. Ranjen januara 1945. u rejonu Drinjače",
     "birth_year": "1924",
     "pdf_page": 103,
@@ -83291,7 +84291,25 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128004251",
     "pdf_x_end": 231.6,
-    "birth_place": "Oreškovica"
+    "birth_place": "Oreškovica",
+    "death_type": "umro",
+    "borrowed": [
+      "death_type"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073002930",
+        "name": "Stojićević M Radomir",
+        "additional_info": "rođen 1924. u Oreovici, Žabari, u NOVJ od oktobra 1944, borac protivtenkovske čete 3. bataljona 19. srpske brigade, umro",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 189,
+        "pdf_x": 77.5,
+        "pdf_y": 314.7,
+        "pdf_x_end": 382.3,
+        "pdf_y_end": 340.2,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stojičević",
@@ -85456,7 +86474,22 @@
     "birth_place": "Končić",
     "death_type": "poginuo",
     "death_date": "10.1944",
-    "death_place": "na Deli-Jovanu"
+    "death_place": "na Deli-Jovanu",
+    "other_sources": [
+      {
+        "soldier_id": "0019000882",
+        "name": "Tanasković Svetomir",
+        "additional_info": "borac 1. bataljona 18. srpske brigade, rođen 1922. god. u selu Kaičiću (nije se moglo utvrditi gde se to mesto nalazi; moguće selo Lajčić kod Kosovske Kamenice — prim. red.) poginuo 3. oktobra 1944. god. kod sela Klokočevca blizu Donjeg Milanovca u borbi protiv Nemaca; sahranjen u Majdanpeku.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 98.9,
+        "pdf_y": 49.4,
+        "pdf_x_end": 341.5,
+        "pdf_y_end": 101.1,
+        "pdf_x_left": 60.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tanasković",
@@ -87018,10 +88051,10 @@
   },
   {
     "last_name": "Tomić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Čedomir",
-    "fathers_name": "",
-    "full_name": "Tomić Čedomir",
+    "fathers_name": "M",
+    "full_name": "Tomić M Čedomir",
     "additional_info": "1922, Turija. Poginuo decembra 1944. kod Užica",
     "birth_year": "1922",
     "pdf_page": 106,
@@ -87043,12 +88076,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=665",
         "source_page": 665,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0073003047",
+        "name": "Tomić M Čedomir",
+        "additional_info": "borad 19. srpske brigade, rođen 1923. u Turiji kod Kučeva, poginuo 19. decembra 1944. kod Arilja.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 79.4,
+        "pdf_y": 449.7,
+        "pdf_x_end": 385.2,
+        "pdf_y_end": 466.8,
+        "unit_file": "19-srpska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Topić",
@@ -88699,14 +89749,27 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=790",
         "source_page": 790,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000776",
+        "name": "Vasiljević Selimir",
+        "additional_info": "borac 18. srpske brigade, rođen u Velikom Selu kod Požarevca, poginuo 25. aprila 1945. god. kod sela Gornjeg Svilaja blizu Modriča u borbi protiv ustaša.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 82,
+        "pdf_x": 81.4,
+        "pdf_y": 52.3,
+        "pdf_x_end": 340.0,
+        "pdf_y_end": 86.7,
+        "pdf_x_left": 60.1,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_place": "Gornji Svilaj, Modriča",
     "borrowed": [
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Gornja svilaja"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vasiljević",
@@ -89718,7 +90781,21 @@
     "birth_place": "Neresnica",
     "death_type": "poginuo",
     "death_date": "01.1945",
-    "death_place": "u rejonu Arinjače"
+    "death_place": "u rejonu Arinjače",
+    "other_sources": [
+      {
+        "soldier_id": "0073003203",
+        "name": "Vicanović Vujica",
+        "additional_info": "rođen 1922. u Neresnici kod Kučeva, borac 19. srpske brigade, poginuo 1945. u Bosni.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 49,
+        "pdf_x": 53.4,
+        "pdf_y": 317.1,
+        "pdf_x_end": 358.1,
+        "pdf_y_end": 333.9,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vidaković",
@@ -96875,12 +97952,26 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=954",
         "source_page": 954,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0019000863",
+        "name": "Živković Obrad",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 14. januara 1912. god. u selu Šetonjama kod Petrovca na Mlavi, poginuo 23. aprila 1945. god. kod sela Gornjeg Svilaja blizu Modriča u borbi protiv ustaša.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 80,
+        "pdf_x": 86.4,
+        "pdf_y": 183.5,
+        "pdf_x_end": 345.1,
+        "pdf_y_end": 217.9,
+        "pdf_x_left": 65.1,
+        "unit_file": "25-srpska-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "birth_date": "14.01.1912"
   },
   {
     "last_name": "Živković",
@@ -98233,10 +99324,10 @@
   },
   {
     "last_name": "Životić",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Milosav",
-    "fathers_name": "",
-    "full_name": "Životić Milosav",
+    "fathers_name": "V",
+    "full_name": "Životić V Milosav",
     "additional_info": "1923, Tabanovac. Poginuo februara 1945. kod Zvornika",
     "birth_year": "1923",
     "pdf_page": 28,
@@ -98249,7 +99340,29 @@
     "birth_place": "Tabanovac",
     "death_type": "poginuo",
     "death_date": "02.1945",
-    "death_place": "Zvornik"
+    "death_place": "Zvornik",
+    "other_sources": [
+      {
+        "soldier_id": "0073003525",
+        "name": "Životić V Milosav",
+        "additional_info": "iz Tabanovca, borac 2. bataljona, 19. britade, poginuo 21. januara 1945. godine, na Orlovači, kod Vlasenice.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 54.9,
+        "pdf_y": 306.9,
+        "pdf_x_end": 360.6,
+        "pdf_y_end": 323.8,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "21.01.1945",
+          "place": "Orlovača, Vlasenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Životić",

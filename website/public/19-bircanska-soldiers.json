@@ -17382,9 +17382,10 @@
       {
         "soldier_id": "9090020051",
         "name": "Kujović Vukašina Vukosava",
-        "additional_info": "Nosioci Partizanske spomenice 1941: KUJOVIĆ Vukašina VUKOSAVA, rođena 1921., Đakovići, domaćica. Rukovodilac SKOJ 19. istočno–bosanske brigade i član okružnog komiteta SKOJ Tuzla. Član KPJ od 1942. MAŠKOVIT: Novica vvljko, rođen 1926., Plana, đak. Politički komesar čete u 4. proleterskoj crnogorskoj brigadi. Član KPJ od 1943. MAJPKOVI'đ Sekule MARIJAN, rođen 1911., Osredci, Donja Morača, zemljoradnik. Komandant artiljerijskog nastavnog centra u Kragujevcu. Član KPJ od 1941. MARI'đ Ilije JOVO, rođen 1918., Podbišće, Polja, zemljoradnik. Član sreskog \"komiteta KPJ Kolašin. Član KPJ od 1941. Umro 1978.",
+        "additional_info": "Nosioci Partizanske spomenice 1941: KUJOVIĆ Vukašina VUKOSAVA, rođena 1921., Bakovići, domaćica. Rukovodilac SKOJ 19. istočno–bosanske brigade i član okružnog komiteta SKOJ Tuzla. Član KPJ od 1942.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=381",
         "source_page": 736,
+        "role": "activist",
         "ref_book": "kolasin"
       },
       {
@@ -30367,7 +30368,6 @@
     "fathers_name": "Krsto",
     "full_name": "Prodanović Krste Drago",
     "additional_info": "roćen 1927. godine u Bakićima - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1942. godine, a u Brigadu oktobra 1943. godine, borac, umro.",
-    "birth_year": "",
     "pdf_page": 84,
     "pdf_y": 403.3,
     "pdf_x": 290.4,
@@ -30379,7 +30379,25 @@
     "death_type": "umro",
     "rank": "borac",
     "pdf_x_end": 445.7,
-    "birth_place": "Bakići, Vlasenica"
+    "birth_place": "Bakići, Vlasenica",
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0042000536",
+        "name": "Prodanović Krste Drago",
+        "additional_info": "borac 1. bataljona, rođen 1927, Rakići, Vlasenica, đak, Srbin, u NOB od 1942.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 46.0,
+        "pdf_y": 167.4,
+        "pdf_x_end": 215.6,
+        "pdf_y_end": 198.2,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Prodanović",
@@ -33384,7 +33402,25 @@
     "death_date": "1944",
     "death_place": "Romanija",
     "rank": "komandir voda",
-    "pdf_x_end": 449.1
+    "pdf_x_end": 449.1,
+    "party": "SKOJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0042000577",
+        "name": "Savkić Zarija Stanko",
+        "additional_info": "borac, rođen 1924, Dubnica, Vlasenica, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a, poginuo na Crvenim Stijenama, Sokolac novembra 1944, komandir voda.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 43.5,
+        "pdf_y": 548.8,
+        "pdf_x_end": 213.4,
+        "pdf_y_end": 579.6,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sejranić",
@@ -36208,10 +36244,10 @@
   },
   {
     "last_name": "Suljagić",
-    "middle_name": "",
+    "middle_name": "Mujin",
     "first_name": "Ahmo",
-    "fathers_name": "",
-    "full_name": "Suljagić Ahmo",
+    "fathers_name": "Mujo",
+    "full_name": "Suljagić Mujin Ahmo",
     "additional_info": "rođen 1919. godine u Tuzli, Musliman, radnik, u Brigadu stupio 17. 09. 1944. godine, borac.",
     "birth_year": "1919",
     "pdf_page": 100,
@@ -36224,7 +36260,21 @@
     "ethnicity": "Musliman",
     "occupation": "radnik",
     "rank": "borac",
-    "pdf_x_end": 269.9
+    "pdf_x_end": 269.9,
+    "other_sources": [
+      {
+        "soldier_id": "0025000936",
+        "name": "Suljagić Mujin Ahmo",
+        "additional_info": "borac. 1919. Tuzla. U Odredu od oktobra 1943.",
+        "pdf_file": "tuzlanski-odred.pdf",
+        "pdf_page": 99,
+        "pdf_x": 255.4,
+        "pdf_y": 597.4,
+        "pdf_x_end": 424.7,
+        "pdf_y_end": 628.0,
+        "unit_file": "tuzlanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Sul.agić",
@@ -40713,7 +40763,21 @@
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "rank": "vodnik",
-    "pdf_x_end": 272.3
+    "pdf_x_end": 272.3,
+    "other_sources": [
+      {
+        "soldier_id": "0025001021",
+        "name": "Vuković Osmanov Avdo",
+        "additional_info": "borac, 1921. Tuzla. U Odredu od oktobra 1943. do 10. f2. 1943.",
+        "pdf_file": "tuzlanski-odred.pdf",
+        "pdf_page": 109,
+        "pdf_x": 336.5,
+        "pdf_y": 781.5,
+        "pdf_x_end": 423.8,
+        "pdf_y_end": 842.8,
+        "unit_file": "tuzlanski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vuković",
@@ -43786,8 +43850,37 @@
         "pdf_x_end": 271.6,
         "pdf_y_end": 544.1,
         "ref_book": "jevreji-jugoslavije-ucesnici-nor"
+      },
+      {
+        "soldier_id": "0005000741",
+        "name": "Šternić Marsela Maksim",
+        "additional_info": "zvani Maki; bolničar, rođen 1919, Beograd, student medicine.",
+        "pdf_file": "treca-proleterska-brigada.pdf",
+        "pdf_page": 436,
+        "pdf_x": 82.6,
+        "pdf_y": 107.7,
+        "pdf_x_end": 286.6,
+        "pdf_y_end": 130.4,
+        "unit_file": "treca-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0005020869",
+        "name": "Šternić Maksim",
+        "additional_info": "zvani Maki; bolničar, rođen 1919, Beograd, student medicine.",
+        "pdf_file": "treca-proleterska-formiranje.pdf",
+        "pdf_page": 59,
+        "pdf_x": 59.8,
+        "pdf_y": 201.7,
+        "pdf_y_end": 219.1,
+        "pdf_x_end": 277.1,
+        "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Šulejić",
