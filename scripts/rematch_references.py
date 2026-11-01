@@ -43,6 +43,7 @@ from extract_life_events import iso, parse_when  # noqa: E402
 from name_utils import OSTALI_CODES  # noqa: E402
 
 FACTS = {'birth year', 'birthplace', 'death year', 'death place'}
+SAME_MAN = {'father', 'birth year', 'birthplace', 'death year'}
 HAND = {'vis-spomenica-1941', 'vis-zrtve-nob', 'moste-polje-spomenica-1941', 'xxxi-divizija-stabi', '15-brigada-stabi',
         '15-divizija-stabi', 'jb-odred-stabi', 'banijski-odredi-kadar', 'letalci-prekomorci-kader', 'susak-rijeka-spomenica', 'korosko-zdravstvo',
         'dolomiti-v-nob-3', 'artileristi-prekomorci', 'virovitica-spomenica-1941', 'sanitetska-sluzba-lekari',
@@ -284,6 +285,18 @@ def against(entry: dict, rec: dict) -> list[str]:
     return out
 
 
+def same_man_elsewhere(flags: list[str], pair: dict, entry: dict, rec: dict) -> bool:
+    """The father, birth year, birthplace and year of death all agree and only the place of death differs: the same man
+    (the user's decision of 2026-11-01, after answering such pairs "same"). Not where the books give another month, or
+    another year, which the matcher lets pass a year off ("01.1943" against the census's 1942)."""
+    if not SAME_MAN <= set(pair.get('agree', ())) or not all(f.startswith('place') for f in flags):
+        return False
+    death = M.DEATH.search(entry.get('additional_info') or '') if 'death_year' not in entry else None
+    ey = death.group(1) if death else str(entry.get('death_year') or '') or (when(entry.get('death_date')) or '')[:4]
+    ry = (when(rec.get('death_date')) or '')[:4]
+    return not (ey and ry and ey != ry)
+
+
 def rivals(rec: str, ref: str, found: list[dict], held: set, recs: dict) -> str:
     """For the review page: the other records the entry fits, and those that hold it already ("also fits Alempijević
     Selimira Dragan, Užički NOP odred, sure"): the same man in a unit whose record isn't linked to this one, as often
@@ -345,6 +358,8 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
                 why_not['record holds an entry of the book'] += 1
                 continue
             flags = against(entries[ref], recs[rec])
+            if flags and same_man_elsewhere(flags, by_pair.get((rec, ref), {}), entries[ref], recs[rec]):
+                flags, why = [], (f'{why}; ' if why else '') + 'the place of death told otherwise'
             if flags:
                 why_not['another death'] += 1
                 left.append({'book': book, 'record': rec, 'ref': ref, 'against': flags})

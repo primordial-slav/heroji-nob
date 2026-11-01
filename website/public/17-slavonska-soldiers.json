@@ -7048,7 +7048,29 @@
     "birth_place": "Mrkoplje",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Smoljanovci"
+    "death_place": "Smoljanovci",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "radnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0034000127",
+        "name": "Bunčić St. Marko",
+        "additional_info": "komesar 1. čete 2. bataljona, rođen 1927. u Mrkopolju, Slavonska Požega, Srbin, radnik, član KPJ, poginuo 9. 7. 1943, Smoljanovci, izvor Cvetkovac, Slavonska Požega, sahranjen u Kruševu.",
+        "pdf_file": "21-slavonska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 33.3,
+        "pdf_y": 434.6,
+        "pdf_x_end": 315.1,
+        "pdf_y_end": 468.8,
+        "unit_file": "21-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bunjevac",
@@ -8697,7 +8719,21 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Brezovo Polje",
-    "pdf_x_end": 203.2
+    "pdf_x_end": 203.2,
+    "other_sources": [
+      {
+        "soldier_id": "9025018341",
+        "name": "Đaković (Ljubomir) Aleksandar",
+        "additional_info": "rođen 1926, Filipovići (Loznica). Srbin, poginuo 1945. u NOBu, U banatu",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=738",
+        "source_page": 738,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Đaković",
@@ -17715,7 +17751,21 @@
     "death_type": "poginuo",
     "death_date": "01.1945",
     "death_place": "D. Trnovo",
-    "pdf_x_end": 203.3
+    "pdf_x_end": 203.3,
+    "other_sources": [
+      {
+        "soldier_id": "9025018295",
+        "name": "Ignjatović (Ljubomir) Tihomir",
+        "additional_info": "rođen 1925, Cikote (Loznica). Srbin, poginuo 1945. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=732",
+        "source_page": 732,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ignjatović",
@@ -19872,7 +19922,19 @@
         "pdf_x_end": 591.2,
         "pdf_y_end": 883.6,
         "ref_book": "zene-vi-korpus-poginule"
+      },
+      {
+        "soldier_id": "9021055886",
+        "name": "Jelić (Ljubomir) Angelina",
+        "additional_info": "rođena 1926, Negoslavci (Vukovar). Srpkinja, poginula 1944. u NOBu, Bela stena",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2730",
+        "source_page": 2730,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -19910,7 +19972,21 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Voćin",
-    "pdf_x_end": 205.7
+    "pdf_x_end": 205.7,
+    "other_sources": [
+      {
+        "soldier_id": "9021055887",
+        "name": "Jelić (Ljubomir) Živka",
+        "additional_info": "rođena 1923, Negoslavci (Vukovar). Srpkinja, poginula 1944. u NOBu, Grubišino Polje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2730",
+        "source_page": 2730,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jendrić",
@@ -45083,7 +45159,23 @@
     "death_type": "poginuo",
     "death_date": "20.09.1944",
     "pdf_x_end": 199.8,
-    "birth_place": "Sirač"
+    "birth_place": "Sirač",
+    "other_sources": [
+      {
+        "soldier_id": "9021004824",
+        "name": "Polak (Josip) Karlo",
+        "additional_info": "rođen 1921, Sirač (Daruvar). ostalo, poginuo 1944. u NOBu, Maglaj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=209",
+        "source_page": 209,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Maglaj"
   },
   {
     "last_name": "Polak",

@@ -1791,11 +1791,15 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     return got
 
 
+BLANKED: dict[str, set] = {}    # soldier_id -> fields a review answer left empty on purpose (apply_corrections.py)
+
+
 def fill(soldiers: list[dict]) -> int:
     """Fill empty structured fields in place; returns how many records gained a field."""
     ex, n = get_extractor(), 0
     for s in soldiers:
-        new = {k: v for k, v in read_all(ex, s, brigade_of(s)).items() if not s.get(k)}
+        new = {k: v for k, v in read_all(ex, s, brigade_of(s)).items()
+               if not s.get(k) and k not in BLANKED.get(s.get('soldier_id'), ())}
         if new:
             s.update(new)
             n += 1

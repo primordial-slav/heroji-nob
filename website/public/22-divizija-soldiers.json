@@ -29824,6 +29824,14 @@
     "pdf_x_end": 320.3,
     "other_sources": [
       {
+        "soldier_id": "9025025036",
+        "name": "Stojanović (Ljubomir) Čedomir",
+        "additional_info": "rođen (godina nepoznata), Prisjan (Pirot). Srbin, poginuo 1945. u NOBu, Banja koviljača",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=967",
+        "source_page": 967,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0087000434",
         "name": "Stojanović Lj Čedomir",
         "additional_info": "iz sela Prisjan, Pirot; poginuo 21.01.1945. na Drini između Zvornika i Ljubovije.",
@@ -29835,6 +29843,10 @@
         "pdf_y_end": 187.9,
         "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "variants": {
       "death": [
@@ -34425,14 +34437,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=437",
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0090000396",
+        "name": "Zdravković Borđa Blagoje",
+        "additional_info": "1923, Guberevac, Leskovac, zemljoradnik. U NOVJ od januara 1944, borac 2. bataJvona. Poginuo 28. juna 1944, kod mesta Ogošte, na tzv. Kosovskoj demarkacionoj liniji, Jablanica, Leskovac.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 42.3,
+        "pdf_y": 360.1,
+        "pdf_x_end": 348.9,
+        "pdf_y_end": 402.5,
+        "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1923",
     "borrowed": [
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
-    "birth_year": "1912"
+    "occupation": "zemljoradnik",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Zdravković",

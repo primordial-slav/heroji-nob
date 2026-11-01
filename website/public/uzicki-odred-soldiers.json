@@ -5779,15 +5779,19 @@
     "unit_detail": "4. bataljon",
     "pdf_x_end": 468.7,
     "occupation": "štamparski radnik",
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "death_place",
-      "ethnicity",
-      "party"
-    ],
-    "death_place": "Crna Gora, Berane",
-    "party": "SKOJ",
     "other_sources": [
+      {
+        "soldier_id": "9035001568",
+        "name": "Dragić Branko",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina smrti 1944; mjesto pogibije Berane",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 41,
+        "pdf_x": 97.0,
+        "pdf_y": 324.9,
+        "pdf_x_end": 485.9,
+        "pdf_y_end": 334.9,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
       {
         "soldier_id": "0039100169",
         "name": "Dragić B Branko",
@@ -5801,6 +5805,14 @@
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Crna Gora, Berane",
+    "party": "SKOJ",
     "birth_date": "05.03.1926",
     "variants": {
       "death": [
@@ -12268,6 +12280,20 @@
     "death_date": "13.12.1941",
     "death_place": "Užice",
     "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9025032584",
+        "name": "Jovanović (Nn) Simo",
+        "additional_info": "rođen 1898, Titovo Užice. Srbin, streljan 1941. u NOBu, Krčagovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1228",
+        "source_page": 1228,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "15.12.1897"
   },
   {
@@ -18703,6 +18729,22 @@
         ]
       },
       {
+        "soldier_id": "9114001126",
+        "name": "Marković D. Momčilo",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 126. Marković D. Momčilo, svršeni učenik gimnazije, rođen je 21. aprila 1921. godine u Svračkovu kod Požege. Poginuo je u borbi protiv Nemaca u Sremu januara 1945. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=312",
+        "source_page": 309,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032629",
+        "name": "Marković (Dragoljub) Momčilo",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1944. u NOBu, Srem-martinci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0021002351",
         "name": "Marković Dragoljuba Momčilo",
         "additional_info": "rođen 1921, Svračkovo, Požega. Učesnik NOB-a od 1941. Do stupanja u Brigadu bio komandant bataljona u Šestoj ozrenskoj brigadi. U Brigadi od maja 1944. na dužnosti komandanta Četvrtog bataljona, a od juna 1944. bio načelnž štaba Brigade. Ranjen 3. decembra 1944. kod sela Martinci. Umro sutradan u Divizijskoj bolnici, Sremska Mitrovica.",
@@ -18715,7 +18757,13 @@
         "unit_file": "4-srpska-soldiers.json"
       }
     ],
-    "death_place": "Sremska Mitrovica"
+    "death_place": "Sremska Mitrovica",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Marković",
@@ -18780,7 +18828,6 @@
     "fathers_name": "M",
     "full_name": "Marković M Obrad",
     "additional_info": "borac, član KPJ, član Mjesnog komiteta KPJ u Užicu, zarobljen u povlačenju iz Užica; strijeljali ga Nijemci u Krčagovu, kod Užica, 16. decembra 1941.",
-    "birth_year": "",
     "pdf_page": 42,
     "pdf_y": 526.4,
     "pdf_x": 131.2,
@@ -18792,7 +18839,25 @@
     "death_type": "streljan",
     "death_date": "16.12.1941",
     "death_place": "Krčagovo, Užice",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9025032632",
+        "name": "Marković (Milan) Obrad",
+        "additional_info": "rođen 1918, Titovo Užice. Srbin, poginuo 1941. u NOBu, T.užice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Titovo Užice",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "birth_year": "1918"
   },
   {
     "last_name": "Marković",

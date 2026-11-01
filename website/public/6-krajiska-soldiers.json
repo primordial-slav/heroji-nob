@@ -3525,6 +3525,14 @@
     "pdf_x_left": 13.9,
     "other_sources": [
       {
+        "soldier_id": "9022007384",
+        "name": "Biljetina (Sima) Milan",
+        "additional_info": "rođen 1921, Mali Radić (Bosanska Krupa). Srbin, poginuo 1943. u NOBu, Bučuca-banija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=747",
+        "source_page": 747,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0014000084",
         "name": "Biljetina S Milan",
         "additional_info": "rođen 1922, s. M. Radić, Bosanska Krupa, poginuo 1943. s. Bučica, Karlovac, vodnik voda.",
@@ -3548,6 +3556,10 @@
         "pdf_x_end": 404.8,
         "unit_file": "8-krajiska-soldiers.json"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ],
     "variants": {
       "born": [
@@ -45445,6 +45457,14 @@
         "ref_book": "cazinska-krajina-pali-borci"
       },
       {
+        "soldier_id": "9022007513",
+        "name": "Todić (Pera) Srđan",
+        "additional_info": "rođen 1925, Perna (Bosanska Krupa). Srbin, poginuo 1943. u NOBu, Perna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=764",
+        "source_page": 764,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
         "soldier_id": "0024001317",
         "name": "Todić Pere Srđan",
         "additional_info": "rođen u Pištalinama, Bosanska Krupa, Srbin, zemljoradnik, u NOB od 19^ u brigadi od 1942, poginuo krajem januara 1943. u Benakovcu (Bosanska Krupa); 2. čet^ £ bataljon, borac;",
@@ -49930,7 +49950,7 @@
     "fathers_name": "Bojica",
     "full_name": "Vukojević Bojice Milan",
     "additional_info": "borac, rođen u Majkić-Japri, Sanski Most. Poginuo 1942. godine na Vrbasu.",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 62,
     "pdf_y": 335.2,
     "pdf_x": 17.5,
@@ -49943,13 +49963,27 @@
     "death_place": "Vrbas",
     "rank": "borac",
     "pdf_x_end": 351.9,
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "ethnicity",
-      "occupation"
-    ],
-    "occupation": "radnik",
     "other_sources": [
+      {
+        "soldier_id": "9042003890",
+        "name": "Vukojević Milan",
+        "additional_info": "Borci poginuli u NOB, Donja Majkić Japra: VUKOJEVIĆ Boje MILAN, rođen 1914, zemljoradnik, 4 raz. osnovne škole, stupio u NOB 1941, poginuo 1942. godine na Motajici",
+        "pdf_file": "sanski-most-borci.pdf",
+        "pdf_page": 180,
+        "pdf_x": 142.0,
+        "pdf_y": 325.6,
+        "pdf_x_end": 468.1,
+        "pdf_y_end": 345.4,
+        "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "9022028958",
+        "name": "Vukojević (Boje) Milan",
+        "additional_info": "rođen 1919, Majkić Japra Donja (Sanski Most). Srbin, poginuo 1942. u NOBu, Banja luka",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2256",
+        "source_page": 2256,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
       {
         "soldier_id": "0163009016",
         "name": "Vukojević Bojice Milan",
@@ -49962,7 +49996,14 @@
         "pdf_y_end": 367.2,
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik"
   },
   {
     "last_name": "Vukojević",
@@ -53174,7 +53215,29 @@
     "death_date": "krajem 1944",
     "rank": "borac",
     "pdf_x_end": 340.3,
-    "death_place": "Travnik"
+    "death_place": "Travnik",
+    "other_sources": [
+      {
+        "soldier_id": "9042001209",
+        "name": "Ćusić Ibrahim",
+        "additional_info": "Borci poginuli u NOB, Dževar: ĆUSIĆ Mehe IBRAHIM, rođen 1924, zemljoradnik, 4 raz. osnovne škole, stupio u NOB 1944, poginuo 1944. godine kod Zemuna, borac",
+        "pdf_file": "sanski-most-borci.pdf",
+        "pdf_page": 57,
+        "pdf_x": 89.6,
+        "pdf_y": 248.9,
+        "pdf_x_end": 447.9,
+        "pdf_y_end": 268.7,
+        "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "9063000029",
+        "name": "Ćusić Ibrahim",
+        "additional_info": "Borci poginuli u NOR-u, Dževar: ĆUSIĆ Mehe IBRAHIM, borac rođen 1924. godine, stupio u NOB 1944. godine, poginuo kod Zemuna oktobra 1944. godine",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00002581&pg_seq=187",
+        "source_page": 187,
+        "ref_book": "staromajdansko"
+      }
+    ]
   },
   {
     "last_name": "Ćusić",

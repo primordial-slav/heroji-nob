@@ -2519,6 +2519,14 @@
     "pdf_x_end": 374.9,
     "other_sources": [
       {
+        "soldier_id": "9021050039",
+        "name": "Berković (Josip) Franjo",
+        "additional_info": "rođen 1918, Kuče (Velika Gorica). Hrvat, poginuo 1944. u NOBu, Oko svete jane",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2382",
+        "source_page": 2382,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
         "soldier_id": "0037000054",
         "name": "Berkovič Franjo",
         "additional_info": "rođen 1919, sekretar skojevske grupe, poginuo 13. siječnja 1944.",
@@ -2542,7 +2550,13 @@
         "pdf_y_end": 438.8,
         "unit_file": "16-slavonska-omladinska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Oko svete jane"
   },
   {
     "last_name": "Bernardić",

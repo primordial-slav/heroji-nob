@@ -10453,6 +10453,18 @@
     "party": "SKOJ 1944",
     "other_sources": [
       {
+        "soldier_id": "0021002038",
+        "name": "Lazarević Milosava Živorad",
+        "additional_info": "rođen 1926, Lipe, Smederevo, zemljoradnik. U Brigadi od 13. januara 1945; iz 2. šumadijske brigade.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 169,
+        "pdf_x": 57.8,
+        "pdf_y": 323.2,
+        "pdf_x_end": 361.0,
+        "pdf_y_end": 344.2,
+        "unit_file": "4-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0080000465",
         "name": "Lazarević Milosava Živorad",
         "additional_info": "zvani Pikula; borac, rođen 12. 12. 1926. u Lipama, Smederevo, zemljoradnik, Srbin, član SKOJ-a od 25. 4. 1944, u Kosmajskom NOP odredu od 16. 4. 1944, u 1. četi 1. bataljona brigade od 25. 4. do septembra 1944, potom premešten iz brigade. Živi u Lipama.",
@@ -19817,7 +19829,6 @@
     "fathers_name": "Lj",
     "full_name": "Pešić Lj Živorad",
     "additional_info": "rođen u Jaseniću, Valjevo. Poginuo 23. 01. 1945. godine, Ilinci, Šid, Sremski front. U Brigadi od 12. 09. 1944. godine.",
-    "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 601.3,
     "pdf_x": 158.2,
@@ -19828,7 +19839,23 @@
     "death_type": "poginuo",
     "death_date": "23.01.1945",
     "death_place": "Ilinci, Šid, Sremski front",
-    "pdf_x_end": 400.6
+    "pdf_x_end": 400.6,
+    "other_sources": [
+      {
+        "soldier_id": "9025034622",
+        "name": "Pešić (Ljubomir) Živorad",
+        "additional_info": "rođen 1912, Donja Grabovica (Valjevo). Srbin, poginuo 1945. u NOBu, Šid",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1287",
+        "source_page": 1287,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1912"
   },
   {
     "last_name": "Pešić",
@@ -24842,8 +24869,35 @@
           ]
         ],
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "9025011133",
+        "name": "Stojanović (Ljubisav) Milorad",
+        "additional_info": "rođen 1923, Dragolj (Gornji Milanovac). Srbin, poginuo 1944. u NOBu, Šid",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=421",
+        "source_page": 421,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9016002718",
+        "name": "Stojanović Milorad",
+        "additional_info": "zemljoradnik, rođen 1923. u Dragolju; borac Desete krajiške brigade NOVJ; poginuo u borbi protiv neprijatelja na sremskom frontu decembra 1944.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 182,
+        "pdf_x": 47.1,
+        "pdf_y": 296.7,
+        "pdf_x_end": 372.8,
+        "pdf_y_end": 327.5,
+        "pdf_x_left": 14.2,
+        "ref_book": "cacanski-kraj-pali"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Stojanović",
@@ -26485,7 +26539,23 @@
     "death_type": "poginuo",
     "death_place": "Sremski front",
     "pdf_x_end": 412.6,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "9025009019",
+        "name": "Tomić (Obren) Desanka",
+        "additional_info": "rođena 1924, Čačak. Srpkinja, poginula 1944. u NOBu, Vinkovci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=361",
+        "source_page": 361,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Tomić",

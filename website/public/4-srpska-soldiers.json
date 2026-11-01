@@ -45967,7 +45967,41 @@
     "soldier_id": "0021002038",
     "pdf_x_end": 361.0,
     "birth_place": "Lipe, Smederevo",
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "SKOJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0074000434",
+        "name": "Lazarević Milosava Živorad",
+        "additional_info": "rođen 12. 12. 1926: godine, Lipe, Smederevo. U Brigadu stupio 12. 09. 1944. godine, vodnik.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 157.7,
+        "pdf_y": 292.5,
+        "pdf_x_end": 399.4,
+        "pdf_y_end": 311.1,
+        "unit_file": "22-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0080000465",
+        "name": "Lazarević Milosava Živorad",
+        "additional_info": "zvani Pikula; borac, rođen 12. 12. 1926. u Lipama, Smederevo, zemljoradnik, Srbin, član SKOJ-a od 25. 4. 1944, u Kosmajskom NOP odredu od 16. 4. 1944, u 1. četi 1. bataljona brigade od 25. 4. do septembra 1944, potom premešten iz brigade. Živi u Lipama.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 39.8,
+        "pdf_y": 329.6,
+        "pdf_x_end": 375.1,
+        "pdf_y_end": 362.8,
+        "pdf_x_left": 18.7,
+        "unit_file": "21-srpska-soldiers.json"
+      }
+    ],
+    "birth_date": "12.12.1926"
   },
   {
     "last_name": "Lazarević",
@@ -53004,6 +53038,22 @@
         "ref_book": "sremski-front-poginuli"
       },
       {
+        "soldier_id": "9114001126",
+        "name": "Marković D. Momčilo",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 126. Marković D. Momčilo, svršeni učenik gimnazije, rođen je 21. aprila 1921. godine u Svračkovu kod Požege. Poginuo je u borbi protiv Nemaca u Sremu januara 1945. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=312",
+        "source_page": 309,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
+        "soldier_id": "9025032629",
+        "name": "Marković (Dragoljub) Momčilo",
+        "additional_info": "rođen 1921, Titovo Užice. Srbin, poginuo 1944. u NOBu, Srem-martinci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1230",
+        "source_page": 1230,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0026000536",
         "name": "Marković Dragoljuba Momčilo",
         "additional_info": "komandir voda u 1. požeškoj četi, student prava, rođen 1921. u Svračkovu, kod Požege, poginuo kao načelnik štaba 4. srpske brigade 21. divizije u borbi protiv Nijemaca na sremskom frontu januara",
@@ -53043,7 +53093,13 @@
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
-    "death_place": "Sremska Mitrovica"
+    "death_place": "Sremska Mitrovica",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Marković",
@@ -128171,7 +128227,21 @@
     "occupation": "zemljoradnik",
     "death_type": "nestao",
     "death_date": "1945",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9014008960",
+        "name": "Vesić Simeun",
+        "additional_info": "Poginuli borci Četvrte srpske narodnooslobodilačke udarne brigade: 70. Vesić Simeun.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 69,
+        "pdf_x": 313.6,
+        "pdf_y": 487.0,
+        "pdf_x_end": 377.1,
+        "pdf_y_end": 496.5,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Vesić",
@@ -137599,6 +137669,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=522",
         "source_page": 522,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9014009022",
+        "name": "Đorđević Slobodan",
+        "additional_info": "Poginuli borci Četvrte srpske narodnooslobodilačke udarne brigade: 132. Đorđević Slobodan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 69,
+        "pdf_x": 368.7,
+        "pdf_y": 660.3,
+        "pdf_x_end": 456.3,
+        "pdf_y_end": 669.8,
+        "ref_book": "sremski-front-poginuli"
       }
     ],
     "ethnicity": "Srbin",

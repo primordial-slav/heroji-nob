@@ -11122,7 +11122,6 @@
     "fathers_name": "",
     "full_name": "Manojlović Dane",
     "additional_info": "iz Omsica, Bruvno, Gračac, poginuo u Ogruzu, Livno.",
-    "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=388",
     "source_page": 383,
     "soldier_id": "0118000388",
@@ -11141,8 +11140,24 @@
         "pdf_x_end": 494.3,
         "pdf_y_end": 354.0,
         "ref_book": "hak-13-gracac"
+      },
+      {
+        "soldier_id": "9021014781",
+        "name": "Manojlović (Rade) Dane",
+        "additional_info": "rođen 1924, Omsica (Gračac). Srbin, poginuo 1943. u NOBu, Glamoč",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=701",
+        "source_page": 701,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "birth_year": "1924"
   },
   {
     "last_name": "Maoduš",
@@ -25674,7 +25689,6 @@
     "fathers_name": "",
     "full_name": "Ugarak Đuro",
     "additional_info": "iz Vrepca, Medak, Gospić poginuo 10. X 1944. u Meljaku. Sahranjen u Šiljakovcima.",
-    "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=411",
     "source_page": 406,
     "soldier_id": "0118000847",
@@ -25710,8 +25724,22 @@
         "pdf_x_end": 389.6,
         "pdf_y_end": 555.1,
         "ref_book": "hak-20-gospic-perusic"
+      },
+      {
+        "soldier_id": "9025003739",
+        "name": "Ugarak (Jovan) Đuro",
+        "additional_info": "rođen 1919, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1944. u NOBu, Beograd",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=113",
+        "source_page": 113,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1919"
   },
   {
     "last_name": "Uzelac",

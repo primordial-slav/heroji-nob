@@ -3718,6 +3718,14 @@
     "pdf_x_end": 343.9,
     "other_sources": [
       {
+        "soldier_id": "9027009842",
+        "name": "Burnać (Pajo) Pajo",
+        "additional_info": "rođen 1928, Subotica. Hrvat, poginuo 1944. u NOBu, Batina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=510",
+        "source_page": 510,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
         "soldier_id": "0111000082",
         "name": "Burnać Paje Pajo",
         "additional_info": "rođ. 1928, Subotica, borac, pog. 22. 11. 1944, Kazuk.",
@@ -3729,6 +3737,10 @@
         "pdf_y_end": 472.2,
         "unit_file": "51-divizija-soldiers.json"
       }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -26832,7 +26844,6 @@
     "fathers_name": "Paja",
     "full_name": "Volarević Paje Stevan",
     "additional_info": "rođ. 1909, Neštin, Ilok, poginuo kod Bačevca 25. IV 1945.",
-    "birth_year": "",
     "pdf_page": 46,
     "pdf_y": 156.0,
     "pdf_x": 55.2,
@@ -26842,7 +26853,27 @@
     "pdf_x_end": 346.6,
     "death_type": "poginuo",
     "death_date": "25.04.1945",
-    "death_place": "Bačevci"
+    "death_place": "Bačevci",
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Neštin, Ilok",
+    "other_sources": [
+      {
+        "soldier_id": "0111011460",
+        "name": "Volarević Paje Stevan",
+        "additional_info": "1909, Neštin, Ilok, poginuo 25. 4. 1945. ispred Bačevca.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 42,
+        "pdf_x": 84.6,
+        "pdf_y": 224.6,
+        "pdf_x_end": 365.7,
+        "pdf_y_end": 241.7,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vonjat",

@@ -358,7 +358,6 @@
     "fathers_name": "",
     "full_name": "Antolčić Josip",
     "additional_info": "rođen u Ravnoj Gori kod Vrbovskog, poginuo 1944. kod Sunje",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 265.4,
     "pdf_x": 79.0,
@@ -369,7 +368,23 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Sunja",
-    "pdf_x_end": 386.0
+    "pdf_x_end": 386.0,
+    "other_sources": [
+      {
+        "soldier_id": "9021005323",
+        "name": "Antolčić (Stanko) Josip",
+        "additional_info": "rođen 1924, Ravna Gora (Delnice). Hrvat, poginuo 1944. u NOBu, Dvor na uni",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=231",
+        "source_page": 231,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1924"
   },
   {
     "last_name": "Anusić",

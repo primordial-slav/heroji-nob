@@ -604,6 +604,10 @@ def main():
     for c in corrections:
         set_fields = set(c.get('fields', {})) | set(c.get('record', {}))
         MANUAL_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields & set(structured.FIELDS))
+        if 290061 <= c['id'] <= 293060:     # a field the review page's answer leaves empty stays so (scripts/review_fields.py)
+            for k, v in c.get('fields', {}).items():
+                blanked = structured.BLANKED.setdefault(c['soldier_id'], set())
+                (blanked.add if k in structured.FIELDS and v == '' else blanked.discard)(k)
         if c['action'] == 'edit':
             EDITED_FIELDS.setdefault(c['soldier_id'], set()).update(c['fields'])
         elif c['action'] == 'merge':

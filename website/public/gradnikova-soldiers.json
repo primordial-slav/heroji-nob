@@ -60378,10 +60378,10 @@
   },
   {
     "last_name": "Zobenica",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Mihajlo",
-    "fathers_name": "",
-    "full_name": "Zobenica Mihajlo",
+    "fathers_name": "J",
+    "full_name": "Zobenica J Mihajlo",
     "additional_info": "1919, Veliki Radiči, BiH",
     "birth_year": "1919",
     "death_type": "poginuo",
@@ -60392,7 +60392,39 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003280",
     "pdf_x_end": 306.0,
-    "birth_place": "Veliki Radiči, BiH"
+    "birth_place": "Veliki Radiči, BiH",
+    "death_date": "1944",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Slovenija",
+    "other_sources": [
+      {
+        "soldier_id": "0014001040",
+        "name": "Zobenica J Mihajlo",
+        "additional_info": "rođen 1919, u s. V. Radić, Bosanska Krupa, poginuo 1944. u Sloveniji. Iz 8. brigade otišao kao zamjenik komandira čete, a poginuo kao komandant bataljona.",
+        "pdf_file": "8-krajiska.pdf",
+        "pdf_page": 57,
+        "pdf_x": 73.0,
+        "pdf_y": 116.4,
+        "pdf_x_end": 353.2,
+        "pdf_y_end": 142.2,
+        "unit_file": "8-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0014010978",
+        "name": "Zobenica J Mihajlo",
+        "additional_info": "rođen 1919. u s. V. Radić, Bosanska Krupa, poginuo 1944. u Sloveniji. Iz 8. brigade otišao kao zamjenik komandira čete, a poginuo kao komandant bataijona.",
+        "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 505.8,
+        "pdf_y": 393.7,
+        "pdf_y_end": 428.1,
+        "pdf_x_end": 787.2,
+        "unit_file": "8-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zoran",
@@ -64230,10 +64262,10 @@
   },
   {
     "last_name": "Šorovič",
-    "middle_name": "",
+    "middle_name": "Đurov",
     "first_name": "Danilo",
-    "fathers_name": "",
-    "full_name": "Šorovič Danilo",
+    "fathers_name": "Đuro",
+    "full_name": "Šorovič Đurov Danilo",
     "additional_info": "1915, Limljani, Bar, Črna gora",
     "birth_year": "1915",
     "pdf_page": 34,
@@ -64267,10 +64299,40 @@
         "pdf_y_end": 246.3,
         "source_page": 558,
         "ref_book": "xxxi-divizija-stabi"
+      },
+      {
+        "soldier_id": "0040030269",
+        "name": "Šorović Đurov Danilo",
+        "additional_info": "Rukovodioci 4. proleterske crnogorske brigade, 1. bataljon: rođen 1915. u Limljanima (Crmnica), učitelj, član KPJ; komandant od oktobra do decembra 1942.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 113,
+        "pdf_x": 48.9,
+        "pdf_y": 188.0,
+        "pdf_x_end": 354.2,
+        "pdf_y_end": 204.7,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020970",
+        "name": "Šorović Đura Danilo",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: komandir čete, Limljani, Crmnica, 1915, učitelj, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 7,
+        "pdf_x": 180.6,
+        "pdf_y": 373.6,
+        "pdf_x_end": 496.3,
+        "pdf_y_end": 382.6,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ],
     "unit_detail": "štab brigade",
-    "birth_place": "Limljani, Bar, Črna gora"
+    "birth_place": "Limljani, Bar, Črna gora",
+    "occupation": "učitelj",
+    "borrowed": [
+      "occupation",
+      "party"
+    ],
+    "party": "KPJ"
   },
   {
     "last_name": "Šošnja",

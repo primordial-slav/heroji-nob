@@ -11729,7 +11729,6 @@
     "fathers_name": "Franjo",
     "full_name": "Orlić Franje Petar",
     "additional_info": "komandir voda, rođen u Puntu na Krku, poginuo 16. marta 1945. godine na Koreničkoj Kapeli",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 19,
     "pdf_y": 25.9,
@@ -11748,13 +11747,27 @@
         "pdf_y": 116.1,
         "pdf_y_end": 126.3,
         "pdf_x_end": 360.8
+      },
+      {
+        "soldier_id": "9021021824",
+        "name": "Orlić (Frana) Petar",
+        "additional_info": "rođen 1925, Punat (Krk). Hrvat, poginuo 1945. u NOBu, Plješivica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1037",
+        "source_page": 1037,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
     "birth_place": "Punat na Krku",
     "death_date": "16.03.1945",
     "death_place": "Korenička Kapela",
     "rank": "komandir voda",
-    "pdf_x_end": 381.2
+    "pdf_x_end": 381.2,
+    "birth_year": "1925",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Orlić",

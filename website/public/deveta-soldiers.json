@@ -499,7 +499,45 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000025",
     "pdf_x_end": 97.0,
-    "birth_place": "Drečji Vrh, Trebelno"
+    "birth_place": "Drečji Vrh, Trebelno",
+    "other_sources": [
+      {
+        "soldier_id": "0062000015",
+        "name": "Anderlič Franc",
+        "additional_info": "1923, Drečji vrh — Trebelno",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 1,
+        "pdf_x": 41.7,
+        "pdf_y": 366.4,
+        "pdf_x_end": 168.4,
+        "pdf_y_end": 383.8,
+        "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0068000010",
+        "name": "Anderlič Franc",
+        "additional_info": "1923, Drečji vrh",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 1,
+        "pdf_x": 31.2,
+        "pdf_y": 251.7,
+        "pdf_x_end": 121.2,
+        "pdf_y_end": 266.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0070000010",
+        "name": "Anderlič Franc",
+        "additional_info": "* 1923 Drečji vrh",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 1,
+        "pdf_x": 136.7,
+        "pdf_y": 402.7,
+        "pdf_x_end": 235.0,
+        "pdf_y_end": 409.2,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Andlovič",
@@ -8134,7 +8172,27 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000425",
     "pdf_x_end": 102.0,
-    "birth_place": "Trebnja Gorica"
+    "birth_place": "Trebnja Gorica",
+    "other_sources": [
+      {
+        "soldier_id": "9020002555",
+        "name": "Godec (Janez) Alojz",
+        "additional_info": "rođen 1911, Trebnja Gorica (Grosuplje). Slovenac, poginuo 1941. u NOBu, Rog",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=97",
+        "source_page": 97,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1941",
+    "death_place": "Rog"
   },
   {
     "last_name": "Godnjavec",
@@ -12974,7 +13032,21 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000682",
     "pdf_x_end": 85.7,
-    "birth_place": "Dolga Raka, Krško"
+    "birth_place": "Dolga Raka, Krško",
+    "other_sources": [
+      {
+        "soldier_id": "0068000234",
+        "name": "Jordan Jožica",
+        "additional_info": "zvana Tatjana; 1924, Dolga Raka",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 33.8,
+        "pdf_y": 138.4,
+        "pdf_x_end": 127.1,
+        "pdf_y_end": 153.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jordan",
@@ -23061,7 +23133,21 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001186",
     "pdf_x_end": 199.3,
-    "birth_place": "Ravni Dol, Krka"
+    "birth_place": "Ravni Dol, Krka",
+    "other_sources": [
+      {
+        "soldier_id": "0070200155",
+        "name": "Mencin Jože",
+        "additional_info": "zvani Fedor; * 1918 Ravni dol-Krka, ujet",
+        "pdf_file": "tomsiceva-1.pdf",
+        "pdf_page": 7,
+        "pdf_x": 161.9,
+        "pdf_y": 450.1,
+        "pdf_x_end": 345.3,
+        "pdf_y_end": 458.1,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mercina",
