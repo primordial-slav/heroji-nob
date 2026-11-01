@@ -51,6 +51,22 @@ HEAD = re.compile(rf"^({WORD}(?:\s*[—–-]\s*{WORD})?)\.?\s+([{UC}][{LC}]+)\s+
                   rf"({WORD}(?:\s*[—–-]\s*{WORD})?|[{UC}][{LC}]+)(?:\s*,\s*удата\s+({WORD}))?\s*,\s*(.*)$")
 
 
+# A heading the strict pattern misses: the OCR sets the font's Ћ as "'ћ", "'Б", "IT;" or "ТЈ.", splits a given name
+# ("ВОЈ Е", "Ј УЛКА") or sets it small; any line of three words before ", рођен" whose first has the shape of a
+# surname in capitals is one (the lines of a bio never carry a birth).
+LOOSE = re.compile(r"^(\S+)\s+(\S+)\s+(.+?)(?:\s*,\s*удата\s+(\S+))?\s*,\s*(рођен[а]?\b.*)$")
+
+
+def head(t: str):
+    m = HEAD.match(t)
+    if m and re.match(rf"[{UC}A-Z]", t):
+        return m.groups()
+    m = LOOSE.match(t)
+    if m and len(m.group(1)) >= 3 and sum(c.isupper() for c in m.group(1)) >= len(m.group(1)) * 0.5             and len(m.group(3).split()) <= 4 and not t.startswith(('У НОП', 'Члан')):
+        return m.groups()
+    return None
+
+
 def running_head(t: str) -> bool:
     return bool(re.search(r'Револуциј|споменице 1941|Жртве фашизма|фашизма u|HOP-', t)) and len(t.split()) <= 10 \
         and not re.search(r'рођен', t)
@@ -66,9 +82,9 @@ def read(book: dict, pages, start: str) -> list[dict]:
                 continue
             if running_head(t) or re.fullmatch(r'[\s\d.,_—–-]{1,12}', t) or t.startswith(('"\' дужности', '—')):
                 continue
-            m = HEAD.match(t)
-            if m and re.match(rf"[{UC}A-Z]", t):
-                cur = {'page': page, 'head': m.groups()[:4], 'parts': [m.group(5)]}
+            m = head(t)
+            if m:
+                cur = {'page': page, 'head': m[:4], 'parts': [m[4]]}
                 raw.append(cur)
             elif cur:
                 cur['parts'].append(t)
@@ -78,12 +94,15 @@ def read(book: dict, pages, start: str) -> list[dict]:
 # names as read -> as the book prints them, from the family's other entries and the village (Б and В, Ђ, Ћ and Н, Љ
 # set as "jb", Л as "Ji", in Latin look-alikes); a few the scan garbled past reading stay as read ("Mmi-Ikb",
 # "Jipjbebmh", "Jaelhmmb")
-LAST_FIX = {'Vulatović': 'Bulatović', 'Annjelić': 'Anđelić', 'Anvelić': 'Anđelić', 'Lakinević': 'Lakićević',
+LAST_FIX = {'Bulatovir': 'Bulatović', 'Mitrir': 'Mitrić', 'Mapei/fb': 'Marković', 'Vulatović': 'Bulatović', 'Annjelić': 'Anđelić', 'Anvelić': 'Anđelić', 'Lakinević': 'Lakićević',
             'Šnepanović': 'Šćepanović', 'Šbepanovitb': 'Šćepanović', 'Vaošić': 'Baošić', 'Vebirović': 'Bećirović',
             'Vraunović': 'Braunović', 'Bularović': 'Bulatović', 'Vidakovivd': 'Vidaković', 'Drjbević': 'Drljević',
             'Cejipib': 'Selić', 'Vošković': 'Bošković', 'Rrujić': 'Grujić', 'Jahkobmb': 'Janković', 'Jiakethb': 'Laketić',
-            'Jiarmhebhh': 'Lakićević', 'Radovik': 'Radović'}
-FIRST_FIX = {'Matije': 'Matija', 'Mjiabeh': 'Mlađen', 'Blazko': 'Blažo', 'Vejbko': 'Veljko', 'Njorbije': 'Đorđije',
+            'Jiarmhebhh': 'Lakićević', 'Bjiaxobwb': 'Vlahović', 'Voričit': 'Boričić', 'Šbepanovit': 'Šćepanović', 'Radovik': 'Radović'}
+FIRST_FIX = {'Hobi/ima': 'Novica', 'Voj in': 'Vojin', 'Paj ko': 'Pajko', 'Stanoj ka': 'Stanojka', 'Miloj ka': 'Milojka',
+             'Matt/ija': 'Matija', 'Dr milutin': 'Milutin', 'Dr ruža': 'Ruža', 'Malina) vasilije': 'Vasilije',
+             'Malina) mij aj jio': 'Mijailo', 'Grozdana udata mileus': 'Grozdana', 'Buka udata nikolib': 'Buka',
+             'Milica4mila': 'Milica', 'Boci/ijbka': 'Bosiljka', 'Matije': 'Matija', 'Mjiabeh': 'Mlađen', 'Blazko': 'Blažo', 'Vejbko': 'Veljko', 'Njorbije': 'Đorđije',
              'Vogdan': 'Bogdan', 'Vojkidar': 'Božidar', 'Borvije': 'Đorđije', 'Kovijbka': 'Koviljka', 'Mmjira': 'Mira',
              'Ojiia': 'Olga', 'Dragšca': 'Dragiša', 'Pegar': 'Petar', 'Mihailojbago': 'Mihailo'}
 
@@ -91,6 +110,42 @@ FIRST_FIX = {'Matije': 'Matija', 'Mjiabeh': 'Mlađen', 'Blazko': 'Blažo', 'Vejb
 def name(w: str) -> str:
     w = SURNAMES.get(w, w)
     return '-'.join(V.name_word(re.sub(r"['’`]", '', x)) for x in re.split(r'\s*[—–-]\s*', w))
+
+
+def join_split(given: str) -> str:
+    """A given name the OCR split ("ВОЈ Е", "Ј УЛКА", "МИЛИЈ A") is joined; a dash keeps two names apart."""
+    parts = [p for p in given.split()]
+    out = []
+    for p in parts:
+        if out and len(p) == 1 and p.isalpha() and not out[-1].endswith(('-', '–', '—')):
+            out[-1] += p
+        elif out and len(out[-1]) == 1 and out[-1].isalpha() and len(p) >= 2 and p[0].isalpha():
+            out[-1] += p
+        else:
+            out.append(p)
+    return ' '.join(out)
+
+
+def keep_ids(entries):
+    """Entries the first reading had keep their IDs (references point at them); the headings it missed, now read,
+    are numbered after the last of their list."""
+    old = json.loads(OUT.read_text(encoding='utf-8')) if OUT.exists() else []
+    taken, last = {}, {}
+    for o in old:
+        taken.setdefault((o['list'], o['source_page'], o['last_name'][:3], o['first_name'][:3]), []).append(o['soldier_id'])
+        base = max(b for b in (0, 10000, 20000) if int(o['soldier_id'][4:]) > b or b == 0)
+        last[o['list']] = max(last.get(o['list'], 0), int(o['soldier_id'][4:]))
+    used, fresh = set(), 0
+    for e in entries:
+        ids = [i for i in taken.get((e['list'], e['source_page'], e['last_name'][:3], e['first_name'][:3]), []) if i not in used]
+        if ids:
+            e['soldier_id'] = ids[0]
+        else:
+            last[e['list']] += 1
+            e['soldier_id'] = f"{PREFIX}{last[e['list']]:06d}"
+            fresh += 1
+        used.add(e['soldier_id'])
+    print(fresh, 'new entries;', len([o for o in old if o['soldier_id'] not in used]), 'old ones not found again')
 
 
 def main():
@@ -101,6 +156,10 @@ def main():
         n = 0
         for r in read(book, pages, start):
             sur, fath, given, married = r['head']
+            # a given name the OCR split ("ВОЈ Е", "Ј УЛКА", "МИЛИЈ A") is joined, a dash keeps two names apart
+            if len(fath) == 1 and ' ' in given:         # a father's name the OCR split ("Ј акше")
+                fath, given = (fath + given.split(' ', 1)[0]), given.split(' ', 1)[1]
+            given = join_split(given)
             info = V.read_cyr(' '.join(r['parts']))
             role = V.role(info)
             if base == 10000 and role == 'out':
@@ -108,6 +167,7 @@ def main():
                 continue
             last, also = name(sur), [name(married)] if married else []
             last = '-'.join(LAST_FIX.get(x, x) for x in last.split('-'))
+            last = '-'.join(re.sub(r'(?<=[oe]v)it[\dj]?$|i?/i[tb]$|(?<=[a-zšč])it$', 'ić', x) for x in last.split('-'))
             first, *more = [V.given_word(re.sub(r"['’`]", '', x)) for x in re.split(r'\s*[—–-]\s*', given)]
             first = FIRST_FIX.get(first, first)
             nick = more[0] if more else ''
@@ -133,6 +193,7 @@ def main():
                 e['role'] = role
             entries.append(e)
             counts[f'{title}: {role or "fighter"}'] += 1
+    keep_ids(entries)
     OUT.write_text(json.dumps(entries, ensure_ascii=False, indent=1), encoding='utf-8')
     print(len(entries), 'entries ->', OUT.name, dict(counts))
 
