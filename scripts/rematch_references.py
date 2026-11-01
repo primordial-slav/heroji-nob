@@ -13,6 +13,10 @@ Each book's pairs are chosen by the rule it was first matched with:
 Never an entry that a record of the same unit already holds, nor a record that already holds an entry of the book;
 and never a pair whose record dies elsewhere (the entry's place of death and the record's share no name) or in
 another month than the entry says: the matcher doesn't weigh these, and the first matchings dropped such pairs by hand.
+A place of death told otherwise is no other death where both give the same day, or where the two places lie near
+each other (GeoNames, through the local places tool: "Šćepan Polje" and "Zlatni Bor, Foča", "Čusto Brdo" and "Novi
+Šeher"; 2026-11-01, after the user found the review queue's top pairs of that kind all one man). One man linked across
+units is one pairing, not rivals: an entry that fits his records in two units goes to each.
 scripts/find_identities.py runs the same (rematch()) with the other kinds of pair, and puts the pairs left out here
 on its review queue.
 
@@ -47,6 +51,36 @@ HAND = {'vis-spomenica-1941', 'vis-zrtve-nob', 'moste-polje-spomenica-1941', 'xx
         'klanjscek-komandni-sastav'}
 STOP = {'kod', 'blizu', 'selu', 'selo', 'grad', 'gradu', 'kraj', 'pod', 'iznad', 'okolini', 'okolina', 'reke', 'reka',
         'planini', 'planina'}
+# the words a place's name shares with other places' ("Gornji Lapac" is not Gornji Vakuf, "Bosanski Novi" not
+# Bosanski Petrovac)
+SHARED = re.compile(r'(?:gornj|donj|velik|mal|nov|star|sredn|bosansk|slavonsk|lick|sremsk|hrvatsk|srpsk|svet|crn|'
+                    r'bel|bijel|zelen|sirok|dug)\w{0,3}|polj[aeiu]|brd[aeou]|varos\w?|most[au]?|brod[au]?|luk[aeiu]|'
+                    r'gor[aeiu]|vod[aeiu]|dolin[aeiu]|glav[aeiu]|potok[au]?|kamen[au]?|vrh[au]?|jezer[aoui]?')
+# a republic or a region named for the place ("u Bosni", "Dalmacija", "Sremski front"): the GeoNames countries it
+# is, or the box (south, north, west, east) it lies in, roughly
+REGIONS = [(r'bosn\w{0,3}', {'BA'}), (r'crn\w{1,2} gor\w{1,2}', {'ME'}), (r'slovenij\w{0,2}', {'SI'}),
+           (r'hrvatsk\w{0,3}', {'HR'}), (r'srbij\w{0,2}', {'RS'}), (r'makedonij\w{0,2}', {'MK'}),
+           (r'kosov\w{0,2}|metohij\w{0,2}', {'XK'}),
+           (r'(?:srem|srijem|sremsk)\w{0,4}(?: front\w{0,2})?', (44.65, 45.30, 18.7, 20.45)),
+           (r'dalmacij\w{0,2}', (42.4, 44.5, 15.0, 18.6)), (r'lik[aeiu]|lici', (44.2, 45.1, 14.9, 16.0)),
+           (r'kordun\w{0,2}', (44.9, 45.5, 15.3, 16.0)), (r'banij\w{0,2}', (45.0, 45.5, 15.8, 16.6)),
+           (r'slavonij\w{0,2}', (45.0, 45.95, 16.8, 19.45)), (r'hercegovin\w{0,2}', (42.55, 43.85, 17.2, 18.9)),
+           (r'krajin\w{0,2}', (44.3, 45.3, 15.7, 17.6)), (r'sandzak\w{0,2}', (42.8, 43.6, 19.2, 20.6)),
+           (r'banat\w{0,2}', (44.7, 46.2, 20.2, 21.6)), (r'backa|backoj|backu|backe', (45.2, 46.2, 18.8, 20.4)),
+           (r'vojvodin\w{0,2}', (44.6, 46.2, 18.8, 21.6)), (r'istr\w{0,2}', (44.75, 45.6, 13.45, 14.35)),
+           (r'sumadij\w{0,2}', (43.8, 44.6, 20.2, 21.2)), (r'macv\w{0,2}', (44.5, 45.0, 19.2, 19.9)),
+           (r'romanij\w{0,2}', (43.7, 44.1, 18.5, 19.0)), (r'bok[aeiu]', (42.35, 42.55, 18.45, 18.8))]
+REGIONS = [(re.compile(rf'\b(?:{rx})\b'), where) for rx, where in REGIONS]
+QUARTER = re.compile(r'(?:central|istocn|zapad|sjever|sever|juzn|srednj|dalmatinsk|bosansk|hrvatsk|kotorsk|posavin)\w*')
+SPELLED = 0.7           # two names this alike are one place told in another case or spelling ("Ozlju", "Ozalj")
+NEAR_KM = 60            # two places of death this near are one death told two ways
+NEAR_SEVERAL_KM = 30    # ... where a name is several places, the nearest of them this near
+try:                    # the local places tool and its GeoNames cache (not in git): without them, the names alone
+    sys.path.insert(0, str(ROOT / 'quality' / 'places'))
+    import gazetteer as G  # noqa: E402
+except ImportError:
+    G = None
+_GEO = {}
 
 
 def match(book: str, index: dict) -> list[dict]:
@@ -92,10 +126,27 @@ def match(book: str, index: dict) -> list[dict]:
     return [f for f in found if f['grade']]
 
 
-def two_facts_unique(found: list[dict], need: str | None = None) -> list[tuple]:
+def linked_men(corr: list[dict]) -> dict[str, str]:
+    """record -> the first record of the man it is linked to across units (itself where it has no link)"""
+    up = {}
+
+    def find(x):
+        while up.get(x, x) != x:
+            x = up[x]
+        return x
+    for c in corr:
+        if c['action'] == 'link':
+            a, b = find(c['soldier_id']), find(c['link_id'])
+            if a != b:
+                up[max(a, b)] = min(a, b)
+    return {x: find(x) for x in list(up)}
+
+
+def two_facts_unique(found: list[dict], need: str | None = None, man=None) -> list[tuple]:
+    man = man or {}
     by_ref, by_rec = defaultdict(set), defaultdict(set)
     for m in found:
-        by_ref[m['ref']].add(m['record'])
+        by_ref[m['ref']].add(man.get(m['record'], m['record']))
         by_rec[m['record']].add(m['ref'])
     sure_refs = {m['ref'] for m in found if m['grade'] == 'sure'}
     out = []
@@ -114,7 +165,7 @@ def script_pairs(cmd: list[str], path: Path) -> list[tuple]:
     return [tuple((ln.split(maxsplit=2) + [''])[:3]) for ln in path.read_text(encoding='utf-8').splitlines() if ln.strip()]
 
 
-def choose(book: str, found: list[dict], out: Path) -> list[tuple]:
+def choose(book: str, found: list[dict], out: Path, man=None) -> list[tuple]:
     if book in HAND or book in M.HERO_BOOKS:
         return [(m['record'], m['ref'], '') for m in found if m['grade'] == 'sure']
     if book.startswith('hak-') or book == 'sjenicak':
@@ -126,29 +177,127 @@ def choose(book: str, found: list[dict], out: Path) -> list[tuple]:
         return script_pairs([sys.executable, 'scripts/select_front_references.py', book, str(out / f'{book}.pairs')],
                             out / f'{book}.pairs')
     if book == 'u-rovovima-srema-poginuli':
-        return two_facts_unique(found, need='death place')
-    return two_facts_unique(found)
+        return two_facts_unique(found, need='death place', man=man)
+    return two_facts_unique(found, man=man)
+
+
+def folded(place: str) -> str:
+    """M.fold, with a hyphen or a stop between words kept as a space ("Kotor-Varoši", "Bučuca-banija")."""
+    return M.fold(re.sub(r'[-–—/.,;:()]+', ' ', place or ''))
+
+
+def names(place: str) -> list[str]:
+    """A place's words that name it (not "kod", not "Gornji"), of four letters or more."""
+    return [w for w in re.findall(r'[a-z]{4,}', folded(place)) if w not in STOP and not SHARED.fullmatch(w)]
 
 
 def words(place: str) -> set[str]:
-    return {w[:5] for w in re.findall(r'[a-z]{4,}', M.fold(place or '')) if w not in STOP}
+    return {w[:5] for w in names(place)}
+
+
+def spelled_alike(a: str, b: str) -> bool:
+    """One place in another case or spelling: "Ozlju" and "Ozalj", "Ličkoj Jasenici" and "Lička Jesenica", "Crnom
+    Vrhu" and "Crni vrh", "Drutlićima" and "Druglići", the scan's "u JTivnu" for Livno."""
+    from difflib import SequenceMatcher
+
+    def forms(p):
+        first = re.sub(r'^(?:u|na|kod|pri|v|blizu|iznad|s|sela|selu|selo)\s+', '', folded(p.split(',')[0]).strip())
+        return [w for w in names(p) if len(w) >= 5] + ([first] if len(first) >= 6 else [])
+    return any(SequenceMatcher(None, x, y).ratio() >= SPELLED for x in forms(a) for y in forms(b))
+
+
+def points(place: str) -> list[tuple]:
+    """The GeoNames places a printed place of death can be, (lat, lon, country): the places tool's reading, else its
+    nominatives (the books' "Novom Šeheru", "Spreči"), else its municipality's ("na Savinu Laktu, Prijepolje"). A
+    region names no point ("Bosni", "Sremu")."""
+    if G is None or not place:
+        return []
+    if place not in _GEO:
+        if 'index' not in _GEO:
+            _GEO['index'] = G.load_geonames()[0]
+        found = ()
+        muni = place.split(',', 1)[1].strip() if ',' in place else ''
+        for text in (place, 'u ' + place) + ((muni,) if muni else ()):
+            r = G.resolve(_GEO['index'], text, True)
+            if 'lat' in r and r.get('kind') not in ('L', 'A'):
+                found = ((r['lat'], r['lon'], r['cc']),)
+            elif r.get('_hits'):
+                found = tuple((e['lat'], e['lon'], e['cc']) for e in r['_hits'] if e['cls'] not in ('L', 'A'))
+            if found:
+                break
+        _GEO[place] = found
+    return list(_GEO[place])
+
+
+def in_region(place: str, other: list[tuple]) -> bool:
+    """A republic or a region printed for one place, and a place of the other's in it ("u Bosni" and "Paklen, Konjic",
+    "Dalmacija" and Knin, "Sremski front" and Tovarnik)."""
+    f = re.sub(r'\b(?:u|na|v|iz|po|kod)\b', ' ', folded(place))
+    for rx, where in REGIONS:
+        rest = rx.sub(' ', f)
+        if rest == f or any(not QUARTER.fullmatch(w) and w not in STOP for w in re.findall(r'[a-z]{3,}', rest)):
+            continue
+        if isinstance(where, set):
+            return any(x[2] in where for x in other)
+        s, n, w, e = where
+        return any(s <= x[0] <= n and w <= x[1] <= e for x in other)
+    return False
+
+
+def near(a: str, b: str) -> bool | None:
+    """Whether two places of death lie near each other (or one is a region the other lies in); None where GeoNames
+    can't tell: one of them is nowhere, or a name of several places none of which is near."""
+    pa, pb = points(a), points(b)
+    if in_region(a, pb) or in_region(b, pa):
+        return True
+    if not pa or not pb:
+        return None
+    d = min(G.km({'lat': x[0], 'lon': x[1]}, {'lat': y[0], 'lon': y[1]}) for x in pa for y in pb)
+    if len(pa) == len(pb) == 1:
+        return d <= NEAR_KM
+    return True if d <= NEAR_SEVERAL_KM else None
+
+
+def when(date: str | None) -> str | None:
+    """A death date as YYYY, YYYY-MM or YYYY-MM-DD: the entries store it so, the records as printed ("01.03.1945")."""
+    if not date:
+        return None
+    if re.fullmatch(r'\d{4}(?:-\d\d){0,2}', date.strip()):
+        return date.strip()
+    found = parse_when(date)
+    return iso(found[0]) if found else None
 
 
 def against(entry: dict, rec: dict) -> list[str]:
     """What in the record says another death than the entry's: the place (none of its names in the record's place
-    or bio) or the month."""
+    or bio, nor near it, nor, where GeoNames can't tell, spelled alike; unless both give the same day) or the month."""
     out = []
+    ed, rd = when(entry.get('death_date')), when(rec.get('death_date'))
     ep, rp = entry.get('death_place') or '', rec.get('death_place') or ''
-    if ep and rp and not (words(ep) & words(rp)) and not (words(ep) & words(rec.get('additional_info'))):
-        out.append(f'place {ep!r} / {rp!r}')
-    try:
-        ed = iso(parse_when(entry['death_date'])) if entry.get('death_date') else None
-        rd = iso(parse_when(rec['death_date'])) if rec.get('death_date') else None
-    except Exception:                                                       # noqa: BLE001
-        ed = rd = None
+    if ep and rp and not (words(ep) & words(rp)) and not (words(ep) & words(rec.get('additional_info'))) \
+            and not (ed and len(ed) == 10 and ed == rd):
+        close = near(ep, rp)
+        if not (close or (close is None and spelled_alike(ep, rp))):
+            out.append(f'place {ep!r} / {rp!r}')
     if ed and rd and len(ed) >= 7 and len(rd) >= 7 and ed[:7] != rd[:7]:
         out.append(f'date {ed} / {rd}')
     return out
+
+
+def rivals(rec: str, ref: str, found: list[dict], held: set, recs: dict) -> str:
+    """For the review page: the other records the entry fits, and those that hold it already ("also fits Alempijević
+    Selimira Dragan, Užički NOP odred, sure"): the same man in a unit whose record isn't linked to this one, as often
+    as not."""
+    from name_utils import BRIGADE_CONFIGS
+    seen, out = {rec}, []
+    for i, how in [(i, 'holds the entry') for i in sorted(held)] + \
+                  [(f['record'], f['grade']) for f in found if f['ref'] == ref]:
+        if i in seen or i not in recs:
+            continue
+        seen.add(i)
+        unit = BRIGADE_CONFIGS.get(int(i[:4]), {}).get('name', i[:4])
+        out.append(f"{recs[i].get('full_name')}, {unit}, {how}")
+    return f"; also fits {'; '.join(out[:3])}" + (f' and {len(out) - 3} more' if len(out) > 3 else '') if out else ''
 
 
 def load_units() -> tuple[dict, dict]:
@@ -171,19 +320,21 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
     the rule leaves where two things agree, or the father or village alone and no other pairing). blocked:
     (book, record, entry) triples answered 'different' (identity_decisions.json), never taken nor offered."""
     books = sorted(p.name[:-len('-entries.json')] for d in M.ENTRY_DIRS for p in d.glob('*-entries.json'))
-    have, ref_units, rec_books = defaultdict(set), defaultdict(set), defaultdict(set)
+    have, ref_units, rec_books, holders = defaultdict(set), defaultdict(set), defaultdict(set), defaultdict(set)
     for c in corr:
         if c['action'] == 'reference':
             have[c['ref_book']].add((c['soldier_id'], c['ref_id']))
             ref_units[(c['ref_book'], c['ref_id'])].add(c['soldier_id'][:4])
             rec_books[(c['ref_book'], c['soldier_id'])].add(c['ref_id'])
+            holders[(c['ref_book'], c['ref_id'])].add(c['soldier_id'])
+    man = linked_men(corr)
     new, left, review = [], [], []
     for book in books:
         found = [f for f in match(book, index) if (book, f['record'], f['ref']) not in blocked]
         by_pair = {(f['record'], f['ref']): f for f in found}
         entries = {e['soldier_id']: e for e in json.loads(M.entries_path(book).read_text(encoding='utf-8'))}
         took, why_not, seen, mine, chosen = 0, Counter(), set(), [], set()
-        for rec, ref, why in choose(book, found, out):
+        for rec, ref, why in choose(book, found, out, man):
             chosen.add((rec, ref))
             if (rec, ref) in have[book] or (book, rec, ref) in blocked:
                 continue
@@ -220,16 +371,19 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
             took -= sum(per_unit[k] for k in twice)
         new += mine
         # a likely pair the book's rule leaves
-        by_ref, by_rec = Counter(f['ref'] for f in found), Counter(f['record'] for f in found)
+        by_ref, by_rec = defaultdict(set), Counter(f['record'] for f in found)
+        for f in found:
+            by_ref[f['ref']].add(f['record'])          # records, not men: one fact for a man in two units is still one
         for f in found:
             rec, ref = f['record'], f['ref']
             if f['grade'] != 'likely' or (rec, ref) in chosen or (rec, ref) in have[book] \
                     or rec[:4] in ref_units[(book, ref)] or rec_books[(book, rec)]:
                 continue
             strong = set(f['agree']) & {'father', 'birthplace', 'death place', 'death day'}
-            alone = by_ref[ref] == 1 and by_rec[rec] == 1
+            alone = len(by_ref[ref]) == 1 and by_rec[rec] == 1
             if len(set(f['agree']) - {'hero on the site'}) >= 2 or (strong and alone):
-                review.append({**f, 'book': book, 'clash': [], 'note': 'likely' + ('' if alone else ', other pairings too')})
+                review.append({**f, 'book': book, 'clash': [], 'note': 'likely' + ('' if alone else ', other pairings too')
+                               + rivals(rec, ref, found, holders[(book, ref)], recs)})
         log(f'{book:40} new {took:4}  {dict(why_not)}')
     return new, left, review
 
