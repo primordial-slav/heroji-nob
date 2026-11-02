@@ -651,7 +651,6 @@
     "fathers_name": "Radivoje",
     "full_name": "Anđelković Radivoja Čedomir",
     "additional_info": "rođen u selu Grdelica, Leskovac, Srbin, zemljoradnik, u NOB od prve polovine avgusta 1944, u Brigadi od 28. 8. 1944, komandir odeljenja u mitraljeskoj četi 1. bataljona, ranjen 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narača (Sremski front), umro 12. 4. 1945. od posledica ranjavanja. Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 4,
     "pdf_y": 386.4,
@@ -723,6 +722,18 @@
         "ref_book": "sremski-front-poginuli"
       },
       {
+        "soldier_id": "0090000010",
+        "name": "Anđelković Radivoja Čedomir",
+        "additional_info": "1925, Dedina Bara, Grdelica, Vlasotince, zemljoradnik. U NOVJ od oktobra 1944, borac. Poginuo 12. aprila 1945. kod sela Lipovca, Sremski front.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 35.3,
+        "pdf_y": 90.6,
+        "pdf_x_end": 341.7,
+        "pdf_y_end": 133.9,
+        "unit_file": "12-srpska-soldiers.json"
+      },
+      {
         "soldier_id": "0096000047",
         "name": "Anđelković R Čedomir",
         "additional_info": "Grdelica, 12. IV 1945, Lipovac (Srem)",
@@ -734,6 +745,10 @@
         "pdf_y_end": 335.9,
         "unit_file": "22-divizija-soldiers.json"
       }
+    ],
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -853,11 +868,11 @@
     ]
   },
   {
-    "last_name": "Beljković",
+    "last_name": "Veljković",
     "middle_name": "Josifa",
     "first_name": "Antonije",
     "fathers_name": "Josif",
-    "full_name": "Beljković Josifa Antonije",
+    "full_name": "Veljković Josifa Antonije",
     "additional_info": "rođen 1925. u selu Jabukovik, Crna Trava, Srbin, zidarski radnik, u NOB od prve polovine septembra 1944, u Brigadi od 23. 10. 1944, borac 3. čete 3. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "1925",
     "death_type": "poginuo",
@@ -1133,23 +1148,24 @@
     "first_name": "Petar",
     "fathers_name": "Milutin",
     "full_name": "Cvetanović Milutina Petar",
-    "additional_info": "rođen 10. 10. 1923. u selu Gornja Kupinovica, Leskovac, Srbin, zemljoradnik, u NOB od prve polovine oktobra 1944, u Brigadi od 10. 10. 1944, komandir voda u 3. četi 4. bataljona, ranjen 8. 2. 1945. prilikom napada na selo Donju Trešnjicu, Mali Zvornik, umro 1. 8. 1945. od posledica zadobijenih rana u Vojnoj bolnici u Nišu. Sahranjen na groblju u Nišu. <$ &CVETANOVIĆ Alekse STANKO, rođen 8. 5. 1923. u selu Gornja s \"Kupinovica, Leskovac, Srbin, zemljoradnik, u NOB od prve polovine oktobra 1944, u Brigadi od 10. 10. 1944, borac 3. čete 2. bataljona, poginuo 12._4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+    "additional_info": "rođen 10. 10. 1923. u selu Gornja Kupinovica, Leskovac, Srbin, zemljoradnik, u NOB od prve polovine oktobra 1944, u Brigadi od 10. 10. 1944, komandir voda u 3. četi 4. bataljona, ranjen 8. 2. 1945. prilikom napada na selo Donju Trešnjicu, Mali Zvornik, umro 1. 8. 1945. od posledica zadobijenih rana u Vojnoj bolnici u Nišu. Sahranjen na groblju u Nišu. <$ &CVETANOVIĆ Alekse STANKO, rođen 8. 5. 1923. u selu Gornja s \"Kupinovica, Leskovac, Srbin, zemljoradnik, u NOB od prve polovine oktobra 1944, u Brigadi od 10. 10. 1944, borac 3. čete 2. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "1923",
-    "death_type": "umro",
     "pdf_page": 52,
     "pdf_y": 436.3,
     "pdf_x": 109.0,
-    "pdf_y_end": 508.2,
+    "pdf_y_end": 573.2,
     "pdf_file": "10-srpska.pdf",
-    "birth_place": "Gornja Kupinovica, Leskovac",
     "soldier_id": "0088000032",
+    "pdf_x_end": 425.6,
+    "birth_place": "Gornja Kupinovica, Leskovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "umro",
     "death_date": "01.08.1945",
+    "death_place": "Niš",
     "rank": "komandir voda",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 415.4,
-    "death_place": "Niš",
+    "pdf_x_left": 91.0,
     "birth_date": "10.10.1923"
   },
   {
@@ -2670,7 +2686,7 @@
     "pdf_page": 16,
     "pdf_y": 245.6,
     "pdf_x": 109.3,
-    "pdf_y_end": 307.4,
+    "pdf_y_end": 375.1,
     "pdf_file": "10-srpska.pdf",
     "birth_place": "Borin Dol, Vlasotince",
     "soldier_id": "0088000076",
@@ -2703,6 +2719,7 @@
         "unit_file": "22-divizija-soldiers.json"
       }
     ],
+    "pdf_x_left": 98.8,
     "variants": {
       "death": [
         {
@@ -2811,7 +2828,7 @@
       {
         "soldier_id": "0090000088",
         "name": "Ivković Vitomira Čedomir",
-        "additional_info": "1923, Brezovica, Lopušnja, Vlasotince, zemljoradnik. U NOVJ od maja 1944, borac. Poginuo 8. februara 1945. godine kod Trešnjevice, Zvornik. Po kazivanjima njegovih seljana bio je borac",
+        "additional_info": "1923, Brezovica, Lopušnja, Vlasotince, zemljoradnik. U NOVJ od maja 1944, borac. Poginuo 8. februara 1945. godine kod Trešnjevice, Zvornik. Po kazivanjima njegovih seljana bio je borac 10. brigade 22. divizije.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 13,
         "pdf_x": 40.6,
@@ -3983,7 +4000,7 @@
     "pdf_page": 20,
     "pdf_y": 490.3,
     "pdf_x": 116.7,
-    "pdf_y_end": 551.6,
+    "pdf_y_end": 617.4,
     "pdf_file": "10-srpska.pdf",
     "birth_place": "Petrovac, Pirot",
     "soldier_id": "0088000111",
@@ -3994,6 +4011,7 @@
     "unit_detail": "3. bataljon, protivtenkovska četa",
     "pdf_x_end": 422.7,
     "death_place": "Oštro koplje",
+    "pdf_x_left": 114.3,
     "other_sources": [
       {
         "soldier_id": "0096000304",
@@ -4682,21 +4700,21 @@
     "first_name": "Mihailo",
     "fathers_name": "Viden",
     "full_name": "Manić Videna Mihailo",
-    "additional_info": "rođen 15. 2. 1918. u selu Dojkinci, Pirot, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 7. 9. 1944, borac 1. čete 3. bataljona, poginuo _12. 4. 1945, u 7 časova ujutro, prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci. S MANIĆ Vukadina STANKO, ' rođen 15. 3. 1922. u selu Dobri Do, Pirot, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 9. 9. 1944, borac čete automatičara Brigade, ranjen 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači, Šid (Sremski front), umro 19. 6. 1945. od posledica ranjavanja u Vojnoj bolnici u Beogradu. Sahranjen na Vojnom groblju u Beogradu.",
+    "additional_info": "rođen 15. 2. 1918. u selu Dojkinci, Pirot, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 7. 9. 1944, borac 1. čete 3. bataljona, poginuo 12. 4. 1945, u 7 časova ujutro, prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci. S MANIĆ Vukadina STANKO, ' rođen 15. 3. 1922. u selu Dobri Do, Pirot, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 9. 9. 1944, borac čete automatičara Brigade, ranjen 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači, Šid (Sremski front), umro 19. 6. 1945. od posledica ranjavanja u Vojnoj bolnici u Beogradu. Sahranjen na Vojnom groblju u Beogradu.",
     "birth_year": "1918",
-    "death_type": "poginuo",
     "pdf_page": 23,
     "pdf_y": 428.8,
     "pdf_x": 154.6,
-    "pdf_y_end": 490.1,
+    "pdf_y_end": 567.1,
     "pdf_file": "10-srpska.pdf",
-    "birth_place": "Dojkinci, Pirot",
     "soldier_id": "0088000130",
+    "pdf_x_end": 460.7,
+    "birth_place": "Dojkinci, Pirot",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
     "death_date": "12.04.1945",
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
-    "pdf_x_end": 460.7,
     "birth_date": "15.02.1918"
   },
   {
@@ -4728,20 +4746,20 @@
     "first_name": "Radomir",
     "fathers_name": "Ranđel",
     "full_name": "Mančić Ranđela Radomir",
-    "additional_info": "rođen 1925. u selu Kamik, Pirot, Srbin, zemljoradnik, u NOB od 1. 8. 1944, u Brigadi od 1. 9. 1944, poginuo 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski _^ont). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+    "additional_info": "rođen 1925. u selu Kamik, Pirot, Srbin, zemljoradnik, u NOB od 1. 8. 1944, u Brigadi od 1. 9. 1944, poginuo 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski ^ont). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "1925",
-    "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 232.6,
     "pdf_x": 109.1,
     "pdf_y_end": 284.1,
     "pdf_file": "10-srpska.pdf",
-    "birth_place": "Kamik, Pirot",
     "soldier_id": "0088000132",
+    "pdf_x_end": 415.4,
+    "birth_place": "Kamik, Pirot",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "death_date": "1945",
-    "pdf_x_end": 415.4
+    "death_type": "poginuo",
+    "death_date": "1945"
   },
   {
     "last_name": "Marinković",
@@ -4871,21 +4889,21 @@
     "first_name": "Aleksandar",
     "fathers_name": "Vasilije",
     "full_name": "Marković Vasilija Aleksandar",
-    "additional_info": "rođen u selu Jelovica, Pirot, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 23. 10. 1944, borac čete automatičara Brigade, poginuo _12^._L_1945. prilikom forsiranja reke Spačve u šumi Narači (Sremshi front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+    "additional_info": "rođen u selu Jelovica, Pirot, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 23. 10. 1944, borac čete automatičara Brigade, poginuo 12^. L 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremshi front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "",
-    "death_type": "poginuo",
     "pdf_page": 24,
     "pdf_y": 477.7,
     "pdf_x": 110.1,
     "pdf_y_end": 538.8,
     "pdf_file": "10-srpska.pdf",
-    "birth_place": "Jelovica, Pirot",
     "soldier_id": "0088000136",
+    "pdf_x_end": 416.4,
+    "birth_place": "Jelovica, Pirot",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
     "death_date": "1945",
-    "rank": "borac",
-    "pdf_x_end": 416.4
+    "rank": "borac"
   },
   {
     "last_name": "Marković",
@@ -6833,7 +6851,7 @@
     "pdf_page": 32,
     "pdf_y": 288.0,
     "pdf_x": 113.4,
-    "pdf_y_end": 338.8,
+    "pdf_y_end": 394.9,
     "pdf_file": "10-srpska.pdf",
     "birth_place": "Tibužde, Vranje",
     "soldier_id": "0088000190",
@@ -6842,7 +6860,7 @@
     "death_date": "13.05.1944",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 419.2,
+    "pdf_x_end": 427.0,
     "birth_date": "01.09.1921"
   },
   {
@@ -6919,7 +6937,7 @@
       {
         "soldier_id": "0090000210",
         "name": "Momčilović Aleksandra Svetomir",
-        "additional_info": "1912, Dobro Polje, Crna Trava, građevinski radnik. U NOVJ od januara ce, Jablanica.",
+        "additional_info": "1912, Dobro Polje, Crna Trava, građevinski radnik. U NOVJ od januara 1944, borac. Poginuo 18. juna 1944. godine kod Oruglica- ce, Jablanica.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 27,
         "pdf_x": 34.3,
@@ -6963,7 +6981,7 @@
       {
         "soldier_id": "0090000214",
         "name": "Momčilović Vučka Živojin",
-        "additional_info": "1914, Javorje, Kozilo, Vlasotince, zemljoradnik. U NOVJ od 1. maja 1944, bio desetar u 2. četi 1. bataljona. Poginuo 29. septembra nili u rodnom selu.",
+        "additional_info": "1914, Javorje, Kozilo, Vlasotince, zemljoradnik. U NOVJ od 1. maja 1944, bio desetar u 2. četi 1. bataljona. Poginuo 29. septembra 1944. godine u Vlasotincu. Roditelji ga odveli i sahrane- nili u rodnom selu.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 27,
         "pdf_x": 34.5,
@@ -7252,6 +7270,18 @@
         "ref_book": "sremski-front-poginuli"
       },
       {
+        "soldier_id": "9013002450",
+        "name": "Nikolić V. Mirko",
+        "additional_info": "Deseta srpska udarna brigada, Spačva: Mirko V. NikoMć.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 17,
+        "pdf_x": 126.0,
+        "pdf_y": 667.1,
+        "pdf_x_end": 207.3,
+        "pdf_y_end": 676.8,
+        "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
         "soldier_id": "0096000539",
         "name": "Nikolić V Mirko",
         "additional_info": "D. Lakošnica, 12. IV 1945, Spačva (Srem)",
@@ -7493,7 +7523,7 @@
     "pdf_page": 34,
     "pdf_y": 290.3,
     "pdf_x": 114.3,
-    "pdf_y_end": 309.6,
+    "pdf_y_end": 352.8,
     "pdf_file": "10-srpska.pdf",
     "birth_place": "Kamik, Pirot",
     "soldier_id": "0088000206",
@@ -7502,7 +7532,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 420.4,
+    "pdf_x_end": 420.6,
     "death_place": "Spačva (Srem)",
     "other_sources": [
       {
@@ -7556,7 +7586,8 @@
         "pdf_y_end": 130.8,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "pdf_x_left": 98.5
   },
   {
     "last_name": "Novaković",
@@ -12420,22 +12451,22 @@
     "first_name": "Miladin",
     "fathers_name": "Tasa",
     "full_name": "Videnović Tase Miladin",
-    "additional_info": "rođen 6. 4. 1921. u selu Berduj, Babušnica, Srbin, zemljoradnik, u NOB od prve polovine avgusta 1944, u Brigadi od 23. 10. 1944, borac 2. čete 1. bataljona. poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šump Narači (Sremski_ sjuzont). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+    "additional_info": "rođen 6. 4. 1921. u selu Berduj, Babušnica, Srbin, zemljoradnik, u NOB od prve polovine avgusta 1944, u Brigadi od 23. 10. 1944, borac 2. čete 1. bataljona. poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šump Narači (Sremski sjuzont). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "1921",
-    "death_type": "poginuo",
     "pdf_page": 7,
     "pdf_y": 288.3,
     "pdf_x": 156.9,
     "pdf_y_end": 349.6,
     "pdf_file": "10-srpska.pdf",
-    "birth_place": "Berduj, Babušnica",
     "soldier_id": "0088000341",
+    "pdf_x_end": 463.2,
+    "birth_place": "Berduj, Babušnica",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
     "death_date": "12.04.1945",
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon",
-    "pdf_x_end": 463.2,
     "birth_date": "06.04.1921"
   },
   {
@@ -12609,21 +12640,21 @@
     "first_name": "Spire",
     "fathers_name": "",
     "full_name": "Zdravković Spire",
-    "additional_info": "zvani GVOZDENj rođen 14. 1. 1926. u Novom Pazaru; Srbin, radnik, u NOB od 25. 11. 1944, u Brigadi od 2. 12. 1944, politički delegat voda u 1. četi 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u_ šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+    "additional_info": "zvani GVOZDENj rođen 14. 1. 1926. u Novom Pazaru; Srbin, radnik, u NOB od 25. 11. 1944, u Brigadi od 2. 12. 1944, politički delegat voda u 1. četi 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "1926",
-    "death_type": "poginuo",
     "pdf_page": 13,
     "pdf_y": 342.9,
     "pdf_x": 159.2,
     "pdf_y_end": 404.5,
     "pdf_file": "10-srpska.pdf",
     "soldier_id": "0088000348",
+    "pdf_x_end": 465.6,
     "ethnicity": "Srbin",
     "occupation": "radnik",
+    "death_type": "poginuo",
     "death_date": "12.04.1945",
     "rank": "politički delegat voda",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 465.6,
     "birth_date": "14.01.1926"
   },
   {
@@ -13460,22 +13491,22 @@
     "first_name": "Milutin",
     "fathers_name": "",
     "full_name": "Đorđeviđ Milutin",
-    "additional_info": "rođen u selu Izumno, Vranje, Srbin, zemljoradnik, u NOB od prve polovine aprila 1944, u Brigadi od 10. 5. 1944, borac, poginuo 1944. Drugih podataka nema. TjOEĐEVIĆ-MI^AILO, rođen u selu Brlog, Pirot, Srbin, zemljoradnik, u NOB od prve polovine avgusta 1944, u Brigadi od 23. 10. 1944, borac 2. čete 2. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+    "additional_info": "rođen u selu Izumno, Vranje, Srbin, zemljoradnik, u NOB od prve polovine aprila 1944, u Brigadi od 10. 5. 1944, borac, poginuo 1944. Drugih podataka nema. TjOEĐEVIĆ-MIAILO, rođen u selu Brlog, Pirot, Srbin, zemljoradnik, u NOB od prve polovine avgusta 1944, u Brigadi od 23. 10. 1944, borac 2. čete 2. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
     "birth_year": "",
-    "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 266.0,
     "pdf_x": 157.6,
-    "pdf_y_end": 295.6,
+    "pdf_y_end": 348.4,
     "pdf_file": "10-srpska.pdf",
-    "birth_place": "Izumno, Vranje",
     "soldier_id": "0088000369",
+    "pdf_x_end": 463.4,
+    "birth_place": "Izumno, Vranje",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
     "death_date": "1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 463.1
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Đošić",

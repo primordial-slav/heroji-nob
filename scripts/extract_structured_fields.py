@@ -372,8 +372,9 @@ DEATH_NOISE_RE = re.compile(          # (a season or a month as a whole word: no
     rf'\d{{1,2}}\.\s*(?:[IVX]{{1,4}}\b\.?|\d{{1,2}}\.|(?:{MONTHS})\b)|'
     rf'u\s+koloni\s+ranjenika|(?:u|pri)\s+desantu|preko\s+(?:ceste|puta|pruge|druma)|'
     rf'u\s+\d+\.\s*(?:[\w-]+\s+){{0,2}}(?:brigad|divizij|korpus|bataljon|čet|odred)\w*)|\(\s*\d+\.\s*div\w*\s*\)', re.I)
+OPEN_SPAN_RE = re.compile(rf'(?P<place>[{U}][^\d;:]*?)?[,.\s]*(?P<born>1[89]\d\d)?\s*[—–-]+\s*(?P<died>19[0-4]\d)?')
 # what a month range leaves when its last month and the year are read as the date: "na Neretvi februar—mart 1943"
-TRAILING_MONTH_RE = re.compile(rf'(?:(?:[\s,]+|\s*[—–-]\s*)(?:{MONTHS}|juni|juli)\b)+\s*[—–-]?\s*$'
+TRAILING_MONTH_RE =re.compile(rf'(?:(?:[\s,]+|\s*[—–-]\s*)(?:{MONTHS}|juni|juli)\b)+\s*[—–-]?\s*$'
                                r'|\s+u\s+(?:januaru|februaru|martu|aprilu|maju|junu|julu|avgustu|septembru|oktobru|novembru|'
                                r'decembru)\b.*$')
 
@@ -1457,6 +1458,16 @@ class Extractor:
         text = re.sub(r'\s+', ' ', text)
         if not text or len(text) < 3:
             return {}
+        # a list's span of years, an end of it often lost, and nothing else ("Kanižarica —1944", "Sela, 1927—", the
+        # Slovene lists of the fallen, whose parser reads only a whole span)
+        span = OPEN_SPAN_RE.fullmatch(text)
+        if span and (span['born'] or span['died']):
+            out = {}
+            if span['place']:
+                out['birth_place'] = span['place'].strip(' ,.')
+            if span['died']:
+                out['death_date'] = span['died']
+            return out
         # a dash between a village and its municipality, or between the villages of one heading (Hrvatsko zagorje's
         # "rođen 1917. u Kostel Bregu—Pregrada", the Karlovac lists' "Pavlovac—Vrebac—Zavode, općina Medak: 1904,
         # Vrebac"): a comma, so the village is read in the nominative and the entry's own village wins

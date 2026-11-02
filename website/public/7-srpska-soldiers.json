@@ -3018,7 +3018,7 @@
     "first_name": "Boško",
     "fathers_name": "D",
     "full_name": "Dimić D Boško",
-    "additional_info": "(1919. u Crnoj Travi, vlasotinački), borac od 1943, po^inuo 30. 6. 1944. kod Belog Potokaširi rejon Knjaževca.",
+    "additional_info": "(1919. u Crnoj Travi, vlasotinački), borac od 1943, poinuo 30. 6. 1944. kod Belog Potokaširi rejon Knjaževca.",
     "birth_year": "1919",
     "death_type": "poginuo",
     "pdf_page": 17,
@@ -4255,9 +4255,8 @@
     "first_name": "Milorad",
     "fathers_name": "",
     "full_name": "Glišić Milorad",
-    "additional_info": "(rođen na Vlas^ni) poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
+    "additional_info": "(rođen na Vlasni) poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
     "birth_year": "",
-    "death_type": "poginuo",
     "pdf_page": 16,
     "pdf_y": 353.0,
     "pdf_x": 66.6,
@@ -4265,8 +4264,9 @@
     "pdf_file": "7-srpska.pdf",
     "pdf_x_end": 341.3,
     "soldier_id": "0085000198",
-    "death_date": "23.04.1944",
-    "death_place": "na Rnjosu u borbama"
+    "death_place": "na Rnjosu u borbama",
+    "death_type": "poginuo",
+    "death_date": "23.04.1944"
   },
   {
     "last_name": "Glišić",
@@ -8362,11 +8362,11 @@
     "death_place": "na r. Uni"
   },
   {
-    "last_name": "Limić",
+    "last_name": "Dimić",
     "middle_name": "D",
     "first_name": "Grada",
     "fathers_name": "D",
-    "full_name": "Limić D Grada",
+    "full_name": "Dimić D Grada",
     "additional_info": "(1921. Crna Trava - Vlasotinački), borac od 1943, poginuo 21. 5. 1944. na Korubama kod Crne Trave, kao zamenik komandanta bataljona u borbi protiv bugarskih fašista.",
     "birth_year": "1921",
     "pdf_page": 17,
@@ -8383,11 +8383,11 @@
     "rank": "zamenik komandanta bataljona"
   },
   {
-    "last_name": "Linić",
+    "last_name": "Dinić",
     "middle_name": "M",
     "first_name": "Dragomir",
     "fathers_name": "M",
-    "full_name": "Linić M Dragomir",
+    "full_name": "Dinić M Dragomir",
     "additional_info": "(1924. s. Majur kod Svetozareva), borac od 15. 7. 1944. u 3/2. bataljonu, poginuo 24. 4. 1945. kod Doboja.",
     "birth_year": "1924",
     "death_type": "poginuo",
@@ -12747,7 +12747,7 @@
       {
         "soldier_id": "0090000215",
         "name": "Momčilović Stojana Živojin",
-        "additional_info": "1918, Crna Trava, građevinski radnik. U NOVJ od maja 1944, borac. Poginuo",
+        "additional_info": "1918, Crna Trava, građevinski radnik. U NOVJ od maja 1944, borac. Poginuo 9. septembra 1944. godine kod Gadžinog Hana.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 27,
         "pdf_x": 34.5,
@@ -12757,14 +12757,14 @@
         "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_date": "09.09.1944",
     "borrowed": [
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
-    "death_place": "Suva Plana"
+    "death_place": "kod Gadžinog Hana",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Mujadin",
@@ -13984,6 +13984,23 @@
     "unit_detail": "2. bataljon"
   },
   {
+    "soldier_id": "0085009002",
+    "last_name": "Pajkić",
+    "middle_name": "Dimitrija",
+    "first_name": "Đorđe",
+    "fathers_name": "Dimitrije",
+    "full_name": "Pajkić Dimitrija Đorđe",
+    "additional_info": "(1921. u s. Jabukovcu kod Negotina), u NOB od 27. 10. 1944, poginuo 15. februara 1945. kod Gračanice.",
+    "birth_year": "1921",
+    "pdf_file": "7-srpska.pdf",
+    "pdf_page": 34,
+    "pdf_y": 69.1,
+    "pdf_x": 86.3,
+    "death_type": "poginuo",
+    "death_date": "15.02.1945",
+    "death_place": "Gračanica"
+  },
+  {
     "last_name": "Pantelić",
     "middle_name": "V",
     "first_name": "Dušan",
@@ -14194,6 +14211,25 @@
     "soldier_id": "0085000678",
     "rank": "borac",
     "unit_detail": "2. bataljon"
+  },
+  {
+    "soldier_id": "0085009001",
+    "last_name": "Pavlović",
+    "middle_name": "V.",
+    "first_name": "Đorđe",
+    "fathers_name": "V.",
+    "full_name": "Pavlović V. Đorđe",
+    "additional_info": "(1926, s. D.Trešnjica, oraško), borac od 29. 4. 1945. u 3/3. bataljonu, poginuo 9. 5. 1945. u borbi protiv ustaša i Nemaca kod s. Svete Nedeljerejon Samobora.",
+    "birth_year": "1926",
+    "pdf_file": "7-srpska.pdf",
+    "pdf_page": 33,
+    "pdf_y": 226.4,
+    "pdf_x": 19.0,
+    "death_type": "poginuo",
+    "death_date": "09.05.1945",
+    "death_place": "kod s. Svete Nedeljerejon Samobora",
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Pavlović",
@@ -20932,6 +20968,22 @@
     "birth_year": "1923"
   },
   {
+    "soldier_id": "0085009003",
+    "last_name": "Slampelić",
+    "middle_name": "V.",
+    "first_name": "Dušan",
+    "fathers_name": "V.",
+    "full_name": "Slampelić V. Dušan",
+    "additional_info": "(1924, s. Trnjane), poginuo 23.3.1945.god.",
+    "birth_year": "1924",
+    "pdf_file": "7-srpska.pdf",
+    "pdf_page": 40,
+    "pdf_y": 200.4,
+    "pdf_x": 81.1,
+    "death_type": "poginuo",
+    "death_date": "23.03.1945"
+  },
+  {
     "last_name": "Stojičić",
     "middle_name": "M",
     "first_name": "Stojan",
@@ -24024,6 +24076,23 @@
     "borrowed": [
       "ethnicity"
     ]
+  },
+  {
+    "soldier_id": "0085009004",
+    "last_name": "Ćulak",
+    "middle_name": "J.",
+    "first_name": "Jura",
+    "fathers_name": "J.",
+    "full_name": "Ćulak J. Jura",
+    "additional_info": "(s. Jahorovac kod Doboja) poginuo 8. 5. 1945. u s. Ribarićima, u rejonu sela Horvata kod Samobora, u borbi protiv ustaša.",
+    "birth_year": "",
+    "pdf_file": "7-srpska.pdf",
+    "pdf_page": 42,
+    "pdf_y": 235.2,
+    "pdf_x": 83.6,
+    "death_type": "poginuo",
+    "death_date": "08.05.1945",
+    "death_place": "Ribarići, Horvati, Samobor"
   },
   {
     "last_name": "Ćosić",

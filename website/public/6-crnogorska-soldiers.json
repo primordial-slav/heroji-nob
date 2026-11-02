@@ -1621,7 +1621,7 @@
     "first_name": "Jela",
     "fathers_name": "",
     "full_name": "Drljević Jela",
-    "additional_info": "(rođena Radović), rođena 1913. u Barama — Donja Morača, domaćica,, borac 1. čet^ 1. bataljona, izvršila samoubistvo da ne bi pala u neprijateljske ruke, 29. aprila 1944. na Malom Garču — Danilovgrad.",
+    "additional_info": "(rođena Radović), rođena 1913. u Barama — Donja Morača, domaćica,, borac 1. čet, 1. bataljona, izvršila samoubistvo da ne bi pala u neprijateljske ruke, 29. aprila 1944. na Malom Garču — Danilovgrad.",
     "birth_year": "1913",
     "pdf_page": 5,
     "pdf_y": 295.7,
@@ -1630,10 +1630,10 @@
     "pdf_file": "6-crnogorska.pdf",
     "soldier_id": "0106000044",
     "birth_place": "Radović",
+    "pdf_x_end": 468.5,
     "occupation": "domaćica",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 468.5,
     "other_sources": [
       {
         "soldier_id": "9035005427",
@@ -4810,6 +4810,18 @@
         "pdf_x_end": 362.0,
         "pdf_y_end": 273.9,
         "ref_book": "niksicki-odred-pali-borci"
+      },
+      {
+        "soldier_id": "9035008265",
+        "name": "Mrvošević Mitrov Veljko",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Nikšić: godina rođenja 1921; mjesto rođenja Rubeža; godina smrti 1945; mjesto pogibije Foča",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 207,
+        "pdf_x": 95.8,
+        "pdf_y": 154.3,
+        "pdf_x_end": 475.6,
+        "pdf_y_end": 165.0,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
     "ethnicity": "Crnogorac",
@@ -5030,7 +5042,7 @@
     "first_name": "Ćiro",
     "fathers_name": "Miloš",
     "full_name": "Nikolić Miloša Ćiro",
-    "additional_info": "rođen 1926. u Štedimu — Nikšić, poginuo",
+    "additional_info": "rođen 1926. u Štedimu — Nikšić, poginuo 1944.",
     "birth_year": "1926",
     "pdf_page": 11,
     "pdf_y": 279.1,
@@ -5038,9 +5050,10 @@
     "pdf_y_end": 298.0,
     "pdf_file": "6-crnogorska.pdf",
     "soldier_id": "0106000126",
+    "pdf_x_end": 463.9,
     "birth_place": "Štedim, Nikšić",
     "death_type": "poginuo",
-    "pdf_x_end": 463.9,
+    "death_date": "1944",
     "other_sources": [
       {
         "soldier_id": "9080000770",
@@ -5055,12 +5068,10 @@
         "ref_book": "niksicki-odred-pali-borci"
       }
     ],
-    "death_date": "1944",
+    "death_place": "Podgorica",
     "borrowed": [
-      "death_date",
       "death_place"
-    ],
-    "death_place": "Podgorica"
+    ]
   },
   {
     "last_name": "Nikčević",
@@ -6856,7 +6867,7 @@
     "first_name": "Musa",
     "fathers_name": "Selim",
     "full_name": "Ramusović Selima Musa",
-    "additional_info": "rođen 1919. u Beranama, radnik, borac 3. čete 3. bataljona, poginz^o 11. decembra 1943. na Bijovu grobu.",
+    "additional_info": "rođen 1919. u Beranama, radnik, borac 3. čete 3. bataljona, poginzo 11. decembra 1943. na Bijovu grobu.",
     "birth_year": "1919",
     "pdf_page": 13,
     "pdf_y": 580.5,
@@ -6864,11 +6875,11 @@
     "pdf_y_end": 601.0,
     "pdf_file": "6-crnogorska.pdf",
     "soldier_id": "0106000171",
+    "pdf_x_end": 463.7,
     "birth_place": "Berane",
     "occupation": "radnik",
     "rank": "borac",
-    "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 463.7
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "last_name": "Rašović",

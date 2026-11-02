@@ -137,8 +137,8 @@ def read() -> list[dict]:
     for ln in lines:
         t, page = ln['text'], ln['page']
         region = REGIONS[max(i for i, s in enumerate(starts) if s <= page)]
-        if re.fullmatch(r'[\d\W]{1,5}', t):
-            continue                                                   # the page number
+        if re.fullmatch(r'[\d\W]{1,5}', t) and not re.match(r'\W*19\d\d', t):
+            continue                                                   # the page number; a year alone ends an entry
         if not re.search(rf'[{L}\d,;]', t):
             # a village (or region) heading, its letters spaced out ("B E L I K A M E N": the word gap is lost)
             village = re.sub(r'\s+', '', t) if re.fullmatch(rf'(?:[{U}]\s+)+[{U}]', t) else t

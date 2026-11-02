@@ -6138,7 +6138,7 @@
     "pdf_page": 54,
     "pdf_y": 225.8,
     "pdf_x": 80.9,
-    "pdf_y_end": 235.0,
+    "pdf_y_end": 485.8,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000235",
     "birth_place": "Glavičice",
@@ -10273,7 +10273,7 @@
     "pdf_page": 22,
     "pdf_y": 492.4,
     "pdf_x": 76.6,
-    "pdf_y_end": 509.8,
+    "pdf_y_end": 532.5,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000396",
     "birth_place": "Dokmir, Ub",
@@ -15231,7 +15231,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Mijoković Ivan",
-    "additional_info": "borac 2. bataljona, rođen u Tovarniku, Šid, Srbin, nestao 3. 12. 1944, Donja Trnova, Bijeljina. Mijaković_D.uro, delegat voda u 2. bataljonu, rođen 1. 5. 1920. u Šagovini, Nova Gradiška,. Srbin, zemljoradnik, član KPJ, poginuo 37~5. lM4, Zaile, Daruvar.",
+    "additional_info": "borac 2. bataljona, rođen u Tovarniku, Šid, Srbin, nestao 3. 12. 1944, Donja Trnova, Bijeljina. Mijaković D.uro, delegat voda u 2. bataljonu, rođen 1. 5. 1920. u Šagovini, Nova Gradiška,. Srbin, zemljoradnik, član KPJ, poginuo 37~5. lM4, Zaile, Daruvar.",
     "birth_year": "1920",
     "pdf_page": 30,
     "pdf_y": 339.2,
@@ -15239,15 +15239,15 @@
     "pdf_y_end": 381.8,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000590",
+    "pdf_x_end": 359.5,
+    "party": "KPJ",
     "birth_place": "Tovarnik, Šid",
     "ethnicity": "Srbin",
     "death_type": "nestao",
     "death_date": "03.12.1944",
     "death_place": "Donja Trnova, Bijeljina",
     "rank": "delegat voda",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 359.5,
-    "party": "KPJ"
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Milaković",
@@ -15616,7 +15616,7 @@
       {
         "soldier_id": "0037000646",
         "name": "Milić Đ Nenad",
-        "additional_info": "rođen 1926. u Negoslavcima kod Vukovara, poginuo",
+        "additional_info": "rođen 1926. u Negoslavcima kod Vukovara, poginuo 1943.",
         "pdf_file": "16-slavonska-omladinska.pdf",
         "pdf_page": 24,
         "pdf_x": 153.4,
@@ -17597,7 +17597,7 @@
     "pdf_page": 35,
     "pdf_y": 234.2,
     "pdf_x": 36.1,
-    "pdf_y_end": 268.4,
+    "pdf_y_end": 303.9,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000678",
     "birth_place": "Holandija, Holanđanin",
@@ -17606,8 +17606,9 @@
     "death_place": "Kula, Slavonska Požega",
     "rank": "vodnik, komandir voda",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 316.7,
-    "party": "KPJ"
+    "pdf_x_end": 318.1,
+    "party": "KPJ",
+    "pdf_x_left": 28.0
   },
   {
     "last_name": "Ozimec",
@@ -19238,7 +19239,7 @@
     "first_name": "Živorad",
     "fathers_name": "",
     "full_name": "Petrušević Živorad",
-    "additional_info": "borac 1. bataljona, rođen 1924. u Badovincima, Bogatić, Srbin, zemljoradnik, poginuo 17. 1. 1944, Kovanluk, Bijeljina. • Picek Stjepan, desetar čete za vezu, rođen 25. 5. 1924. u Zlataru, /Hrvat, zemljoradnik, član Skoja, poginuo 14. 5. 1944, Kloštar, Ivanić. 5» Pjevač Nikola, borac, rođen u Trnovi, Nova Gradiška, Srbin, zemljoradnik. član Skoja, poginuo 16. 10. 1944. u Beogradu.",
+    "additional_info": "borac 1. bataljona, rođen 1924. u Badovincima, Bogatić, Srbin, zemljoradnik, poginuo 17. 1. 1944, Kovanluk, Bijeljina. Picek Stjepan, desetar čete za vezu, rođen 25. 5. 1924. u Zlataru, /Hrvat, zemljoradnik, član Skoja, poginuo 14. 5. 1944, Kloštar, Ivanić. 5» Pjevač Nikola, borac, rođen u Trnovi, Nova Gradiška, Srbin, zemljoradnik. član Skoja, poginuo 16. 10. 1944. u Beogradu.",
     "birth_year": "1924",
     "pdf_page": 38,
     "pdf_y": 89.2,
@@ -19246,15 +19247,16 @@
     "pdf_y_end": 148.6,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000738",
+    "pdf_x_end": 361.2,
+    "pdf_x_left": 68.7,
     "birth_place": "Badovinci, Bogatić",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "17.01.1944",
+    "death_place": "Kovanluk, Bijeljina",
     "rank": "desetar",
-    "unit_detail": "1. bataljon, četa za vezu",
-    "pdf_x_end": 361.2,
-    "pdf_x_left": 68.7
+    "unit_detail": "1. bataljon, četa za vezu"
   },
   {
     "last_name": "Pezer",
@@ -23358,7 +23360,7 @@
     "first_name": "Milan",
     "fathers_name": "S",
     "full_name": "Stojčević S Milan",
-    "additional_info": "borac, rođen 1926. u Kapelni, Donji Miholjac, Srbin, zemljoradnik, poginuo 23. 1. 1944, Kula, Slavonska Požega. Stojčević Milka borac 2. bataljona rođena 1923. u Dobrljinu, Bosanski Novi, Srpkinja član KPJ, poginula 17. 6. 1944, Veliki Grđevac. Stojč^ig. Milan, borac 2. čete 2. bataljona, rođen 1925. u Kutovima, Bare, Našice, Srbin, zemljoradnik, član Skoja, poginuo 15. 2. 1944, Bresnica, Slavonska Požega.",
+    "additional_info": "borac, rođen 1926. u Kapelni, Donji Miholjac, Srbin, zemljoradnik, poginuo 23. 1. 1944, Kula, Slavonska Požega. Stojčević Milka borac 2. bataljona rođena 1923. u Dobrljinu, Bosanski Novi, Srpkinja član KPJ, poginula 17. 6. 1944, Veliki Grđevac. Stojčig. Milan, borac 2. čete 2. bataljona, rođen 1925. u Kutovima, Bare, Našice, Srbin, zemljoradnik, član Skoja, poginuo 15. 2. 1944, Bresnica, Slavonska Požega.",
     "birth_year": "1926",
     "pdf_page": 45,
     "pdf_y": 500.4,
@@ -23366,6 +23368,8 @@
     "pdf_y_end": 536.8,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000904",
+    "pdf_x_end": 320.6,
+    "party": "KPJ",
     "birth_place": "Kapelna, Donji Miholjac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -23373,9 +23377,7 @@
     "death_date": "23.01.1944",
     "death_place": "Kula, Slavonska Požega",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 320.6,
-    "party": "KPJ"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Stojčević",
@@ -24833,7 +24835,7 @@
     "first_name": "Marko",
     "fathers_name": "I",
     "full_name": "Veledinović I Marko",
-    "additional_info": "borac, rođen u Čovcu, Nova Gradiška, pogi4 nuo 1944. u Slavoniji, I Veledinović Milka, borac, rođena u Čovcu, Nova Gradiška, S^pki-j nja, ranjena kod Bijeljine, umrla u vojnoj bolnici 17. 2. 1945, sahranjena na vojnom groblju u Bukoviku, Šabac. i Velimirović Vaso, borac, rođen 1924. u Ledincirna, Karlovac, Srbin, poginuo 2. 10. 1944, Glogovac, Bijeljina.",
+    "additional_info": "borac, rođen u Čovcu, Nova Gradiška, pogi4 nuo 1944. u Slavoniji, I Veledinović Milka, borac, rođena u Čovcu, Nova Gradiška, Spki-j nja, ranjena kod Bijeljine, umrla u vojnoj bolnici 17. 2. 1945, sahranjena na vojnom groblju u Bukoviku, Šabac. i Velimirović Vaso, borac, rođen 1924. u Ledincirna, Karlovac, Srbin, poginuo 2. 10. 1944, Glogovac, Bijeljina.",
     "birth_year": "",
     "pdf_page": 50,
     "pdf_y": 177.5,
@@ -24841,11 +24843,11 @@
     "pdf_y_end": 237.6,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034000961",
+    "pdf_x_end": 359.4,
     "birth_place": "Čovac, Nova Gradiška",
     "death_type": "umro",
     "death_date": "17.02.1945",
-    "rank": "borac",
-    "pdf_x_end": 359.4
+    "rank": "borac"
   },
   {
     "last_name": "Velimirović",
@@ -26246,7 +26248,7 @@
     "first_name": "Lazo",
     "fathers_name": "P",
     "full_name": "Vučković P Lazo",
-    "additional_info": "borac 3. bataljona, rođen 1914. u Koturiću, Pakrac, Srbin, zemljoradnik, poginuo 6. 7. 1944, Ribnjak, Ludbreg. Vučetić Milutin^ potporučnik, rođen 1926. u Bobarama, Nova Gradiška, Srbin, zemljoradnik, član KPJ, poginuo 5. 5. 1945, Petrinja.",
+    "additional_info": "borac 3. bataljona, rođen 1914. u Koturiću, Pakrac, Srbin, zemljoradnik, poginuo 6. 7. 1944, Ribnjak, Ludbreg. Vučetić Milutin, potporučnik, rođen 1926. u Bobarama, Nova Gradiška, Srbin, zemljoradnik, član KPJ, poginuo 5. 5. 1945, Petrinja.",
     "birth_year": "1914",
     "pdf_page": 52,
     "pdf_y": 431.2,
@@ -26254,14 +26256,6 @@
     "pdf_y_end": 468.3,
     "pdf_file": "21-slavonska.pdf",
     "soldier_id": "0034001017",
-    "birth_place": "Koturić, Pakrac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "06.07.1944",
-    "death_place": "Ribnjak, Ludbreg",
-    "rank": "potporučnik",
-    "unit_detail": "3. bataljon",
     "pdf_x_end": 358.6,
     "other_sources": [
       {
@@ -26290,7 +26284,15 @@
         "unit_file": "17-slavonska-soldiers.json"
       }
     ],
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Koturić, Pakrac",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "06.07.1944",
+    "death_place": "Ribnjak, Ludbreg",
+    "rank": "potporučnik",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Vučković",

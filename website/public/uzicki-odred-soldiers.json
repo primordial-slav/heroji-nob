@@ -754,7 +754,7 @@
     "first_name": "Miodrag",
     "fathers_name": "M",
     "full_name": "Andrić M Miodrag",
-    "additional_info": "zvani Mića; borac 1. užičke čete »Radoje Marić«, zemljoradnik, rođen 21. avgusta 1921. u Krčagovu, kod Užica, zarobili ga četnici u Karanu 8. novembra 1941. i predali Nijemcima, koji su ga izveli na strijeljanje na Krušiku u Valjevu, ali je uspio da preživi strijeljanje i pobjegne; prikrivao se u okolini Obrenovca, ali je uhvaćen i Nijemci su ga strijeljali u Šapcu, u proljeće",
+    "additional_info": "zvani Mića; borac 1. užičke čete »Radoje Marić«, zemljoradnik, rođen 21. avgusta 1921. u Krčagovu, kod Užica, zarobili ga četnici u Karanu 8. novembra 1941. i predali Nijemcima, koji su ga izveli na strijeljanje na Krušiku u Valjevu, ali je uspio da preživi strijeljanje i pobjegne; prikrivao se u okolini Obrenovca, ali je uhvaćen i Nijemci su ga strijeljali u Šapcu, u proljeće 1942.",
     "birth_year": "1921",
     "pdf_page": 2,
     "pdf_y": 605.4,
@@ -765,10 +765,10 @@
     "pdf_x_end": 469.2,
     "birth_place": "Krčagovo",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "1. užička četa",
     "death_type": "streljan",
-    "death_place": "Šabac"
+    "death_date": "proljeće 1942",
+    "rank": "borac",
+    "unit_detail": "1. užička četa"
   },
   {
     "last_name": "Andrić",
@@ -1450,7 +1450,7 @@
     "first_name": "Nikola",
     "fathers_name": "A",
     "full_name": "Baktović A Nikola",
-    "additional_info": "zvani Muki; borac, krojački radnik, rođen 28. septembra 1923. u Kovačima, kod Kraljeva, a živio u Užicu, zarobljen i otjeran u koncentracioni logor na Banjicu, a zatim u Norvešku; umro prilikom povratka iz logora",
+    "additional_info": "zvani Muki; borac, krojački radnik, rođen 28. septembra 1923. u Kovačima, kod Kraljeva, a živio u Užicu, zarobljen i otjeran u koncentracioni logor na Banjicu, a zatim u Norvešku; umro prilikom povratka iz logora 1945.",
     "birth_year": "1923",
     "pdf_page": 4,
     "pdf_y": 373.8,
@@ -1462,6 +1462,7 @@
     "birth_place": "Kovači",
     "occupation": "krojački radnik",
     "death_type": "umro",
+    "death_date": "1945",
     "rank": "borac",
     "birth_date": "28.09.1923"
   },
@@ -1940,7 +1941,7 @@
     "first_name": "Milan",
     "fathers_name": "",
     "full_name": "Bobić Milan",
-    "additional_info": "borac 1. račanske čete, zarobili ga Nijemci i strijeljali krajem",
+    "additional_info": "borac 1. račanske čete, zarobili ga Nijemci i strijeljali krajem 1941.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 280.2,
@@ -1948,10 +1949,11 @@
     "pdf_y_end": 297.5,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000057",
-    "rank": "borac",
     "pdf_x_end": 472.5,
-    "unit_detail": "1. račanska četa",
-    "death_type": "streljan"
+    "death_type": "streljan",
+    "death_date": "krajem 1941",
+    "rank": "borac",
+    "unit_detail": "1. račanska četa"
   },
   {
     "last_name": "Bogićević",
@@ -5878,6 +5880,14 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       },
       {
+        "soldier_id": "9114001044",
+        "name": "Dragić 'B. Branko",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 44. Dra1ić 'B. Branko, štamparski radnik, rođen je 5. marta 1926. godine u Jasenici kod Ogulina. Poginuo je u borbi protiv Nemaca kod Berana (Ivangrad) 26. jula 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=306",
+        "source_page": 303,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
         "soldier_id": "0039100169",
         "name": "Dragić B Branko",
         "additional_info": "borac 1. čete 4. bataljona, rođen 1926, Lička Jasenica, Ogulin, radnik, Srbin, u NOB od 1941, član SKOJ-a, poginuo u Crnoj Gori, kod Berana, 27. jula 1944. godine.",
@@ -8322,7 +8332,7 @@
         "pdf_x": 132.6,
         "pdf_y": 629.2,
         "pdf_x_end": 301.6,
-        "pdf_y_end": 670.8,
+        "pdf_y_end": 684.3,
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ]
@@ -11779,7 +11789,7 @@
         "pdf_x": 103.4,
         "pdf_y": 178.6,
         "pdf_x_end": 274.5,
-        "pdf_y_end": 229.1,
+        "pdf_y_end": 544.0,
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -14136,7 +14146,7 @@
     "first_name": "Dragan",
     "fathers_name": "Radomir",
     "full_name": "Korać Radomira Dragan",
-    "additional_info": "borac 2. požeške čete, zemljoradnik, rođen 1909. u Rasnoj, kod Požege, uhvatili ga četnici i strijeljali u Drenovi, kod Arilja,4. jula",
+    "additional_info": "borac 2. požeške čete, zemljoradnik, rođen 1909. u Rasnoj, kod Požege, uhvatili ga četnici i strijeljali u Drenovi, kod Arilja,4. jula 1942.",
     "birth_year": "1909",
     "pdf_page": 35,
     "pdf_y": 311.6,
@@ -14144,11 +14154,7 @@
     "pdf_y_end": 339.2,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000412",
-    "birth_place": "Rasno",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "pdf_x_end": 461.9,
-    "unit_detail": "2. požeška četa",
     "other_sources": [
       {
         "soldier_id": "0026010148",
@@ -14175,8 +14181,13 @@
         "ref_book": "pozega-pali"
       }
     ],
+    "birth_place": "Rasno",
+    "occupation": "zemljoradnik",
     "death_type": "streljan",
+    "death_date": "04.07.1942",
     "death_place": "Drenova, Arilje",
+    "rank": "borac",
+    "unit_detail": "2. požeška četa",
     "birth_date": "04.01.1909"
   },
   {
@@ -19109,7 +19120,7 @@
     "first_name": "Nedeljko",
     "fathers_name": "B",
     "full_name": "Marković B Nedeljko",
-    "additional_info": "zvani Neđo; borac, ugostiteljski radnik, rođen 1911. u Ponikovici, kod Užica, a n^ivio u Užicu, poginuo kao komandir voda u 1. četi 4. bataljona 2. proleterske brigade u borbi protiv ustaša kod Bugojna 23. juna 1942.",
+    "additional_info": "zvani Neđo; borac, ugostiteljski radnik, rođen 1911. u Ponikovici, kod Užica, a nivio u Užicu, poginuo kao komandir voda u 1. četi 4. bataljona 2. proleterske brigade u borbi protiv ustaša kod Bugojna 23. juna 1942.",
     "birth_year": "1911",
     "pdf_page": 42,
     "pdf_y": 485.1,
@@ -21505,7 +21516,7 @@
     "first_name": "Mileta",
     "fathers_name": "T",
     "full_name": "Milanović T Mileta",
-    "additional_info": "borac 3. užičke čete, učenik učiteljske škole, rođen 8. oktobra 1922. u Krčagovu, kod Užica, uhvaćen i otjeran u koncentracioni lo-• gor na Banjicu; strijeljali ga Nijemci u logoru 9. jula 1944.",
+    "additional_info": "borac 3. užičke čete, učenik učiteljske škole, rođen 8. oktobra 1922. u Krčagovu, kod Užica, uhvaćen i otjeran u koncentracioni lo-gor na Banjicu; strijeljali ga Nijemci u logoru 9. jula 1944.",
     "birth_year": "1922",
     "pdf_page": 45,
     "pdf_y": 283.2,
@@ -21513,13 +21524,13 @@
     "pdf_y_end": 310.8,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000596",
+    "pdf_x_end": 463.9,
     "birth_place": "Krčagovo",
     "occupation": "učenik učiteljske škole",
-    "rank": "borac",
-    "pdf_x_end": 463.9,
-    "unit_detail": "3. užička četa",
     "death_type": "streljan",
     "death_date": "09.07.1944",
+    "rank": "borac",
+    "unit_detail": "3. užička četa",
     "other_sources": [
       {
         "soldier_id": "9114001137",
@@ -24942,7 +24953,7 @@
       },
       {
         "soldier_id": "0039010029",
-        "name": "Nedeljković Slobodanka",
+        "name": "Nedeljković Dragomira Slobodanka",
         "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Godovik: Nedeljković Slobodanka, umrla u Poljima Kolašiiskim 30. maja 1944. posle duže bolesti",
         "pdf_file": "pozega-cete.pdf",
         "pdf_page": 25,
@@ -27373,7 +27384,7 @@
     "first_name": "Milorad",
     "fathers_name": "Č",
     "full_name": "Pantić Č Milorad",
-    "additional_info": "zvani Kosjer; komandir čete u Radničkom bataljonu, mašinski bravar, rođen 2. novembra 1906. u Kosjeriću, a živio u Užicu; poginuo prilikom eksplozije u partizanskoj fabrici oružja i municije u Užicu 22.novembra",
+    "additional_info": "zvani Kosjer; komandir čete u Radničkom bataljonu, mašinski bravar, rođen 2. novembra 1906. u Kosjeriću, a živio u Užicu; poginuo prilikom eksplozije u partizanskoj fabrici oružja i municije u Užicu 22.novembra 1941.",
     "birth_year": "1906",
     "pdf_page": 56,
     "pdf_y": 236.3,
@@ -27385,6 +27396,7 @@
     "birth_place": "Kosjerić",
     "occupation": "mašinski bravar",
     "death_type": "poginuo",
+    "death_date": "22.11.1941",
     "rank": "komandir čete"
   },
   {
@@ -28230,7 +28242,7 @@
     "first_name": "Stanoje",
     "fathers_name": "C",
     "full_name": "Pavlović C Stanoje",
-    "additional_info": "borac Crnogorske čete, zemljoradnik, rođen 1920. u Pološnici, kod Kosjerića, ranjen kao politički komesar 2. čete 4. bataljona 2. proleterske brigade u borbi protiv ustaša kod Livna 15. decembra 1942; umro od zadobijenih rana u Centralnoj bolnici NOVJ za vrijeme bitke na Sutjesci",
+    "additional_info": "borac Crnogorske čete, zemljoradnik, rođen 1920. u Pološnici, kod Kosjerića, ranjen kao politički komesar 2. čete 4. bataljona 2. proleterske brigade u borbi protiv ustaša kod Livna 15. decembra 1942; umro od zadobijenih rana u Centralnoj bolnici NOVJ za vrijeme bitke na Sutjesci 1943.",
     "birth_year": "1920",
     "pdf_page": 55,
     "pdf_y": 437.1,
@@ -28238,13 +28250,14 @@
     "pdf_y_end": 485.4,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000770",
+    "death_place": "u Centralnoj bolnici NOVJ za vrijeme bitke na Sutjesci",
+    "rank": "politički komesar",
+    "pdf_x_end": 460.7,
     "birth_place": "Pološnica",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "death_place": "u Centralnoj bolnici NOVJ za vrijeme bitke na Sutjesci",
-    "rank": "politički komesar",
+    "death_date": "1943",
     "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 460.7,
     "other_sources": [
       {
         "soldier_id": "9025013889",
@@ -28257,10 +28270,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1943"
+    ]
   },
   {
     "last_name": "Pavlović",
@@ -28987,8 +28998,8 @@
         "pdf_page": 47,
         "pdf_x": 40.4,
         "pdf_y": 504.2,
-        "pdf_x_end": 347.7,
-        "pdf_y_end": 525.0,
+        "pdf_x_end": 348.8,
+        "pdf_y_end": 546.6,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -30970,7 +30981,7 @@
     "first_name": "Miodrag",
     "fathers_name": "",
     "full_name": "Radojević Miodrag",
-    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 1910. u Severovu, kod Arilja, strijeljali ga četnici u Bjeluši, kod Arilja, 13. novembr?",
+    "additional_info": "borac Ariljskog bataljona, zemljoradnik, rođen 1910. u Severovu, kod Arilja, strijeljali ga četnici u Bjeluši, kod Arilja, 13. novembr 1943.",
     "birth_year": "1910",
     "pdf_page": 61,
     "pdf_y": 531.6,
@@ -30978,11 +30989,12 @@
     "pdf_y_end": 559.2,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026000848",
+    "pdf_x_end": 462.2,
     "birth_place": "Severovo",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 462.2,
-    "death_type": "streljan"
+    "death_type": "streljan",
+    "death_date": "1943",
+    "rank": "borac"
   },
   {
     "last_name": "Radojević",
@@ -42854,7 +42866,7 @@
     "first_name": "Božidar",
     "fathers_name": "Budimir",
     "full_name": "Zarić Budimira Božidar",
-    "additional_info": "borac 2. račanske čete, zemljoradnik, rođen 1924. u Solotuši, kod Bajine Bašte, poginuo kao borac NOVJ u borbi protiv četnika",
+    "additional_info": "borac 2. račanske čete, zemljoradnik, rođen 1924. u Solotuši, kod Bajine Bašte, poginuo kao borac NOVJ u borbi protiv četnika 1945.",
     "birth_year": "1924",
     "pdf_page": 23,
     "pdf_y": 260.2,
@@ -42862,11 +42874,12 @@
     "pdf_y_end": 287.9,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001177",
+    "pdf_x_end": 469.4,
     "birth_place": "Solotuša",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_date": "1945",
     "rank": "borac",
-    "pdf_x_end": 469.4,
     "unit_detail": "2. račanska četa",
     "other_sources": [
       {
@@ -42880,11 +42893,9 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
     "death_place": "Ovčinja"
   },
   {
@@ -43936,7 +43947,7 @@
     "first_name": "Miodrag",
     "fathers_name": "Danilo",
     "full_name": "Ćurčić Danila Miodrag",
-    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1918. u Gleđici, kod Ivanjice, zarobili ga četnici i strijeljali u Ivanjici, krajem",
+    "additional_info": "borac Moravičke čete, zemljoradnik, rođen 1918. u Gleđici, kod Ivanjice, zarobili ga četnici i strijeljali u Ivanjici, krajem 1941.",
     "birth_year": "1918",
     "pdf_page": 76,
     "pdf_y": 590.7,
@@ -43944,12 +43955,13 @@
     "pdf_y_end": 617.9,
     "pdf_file": "uzicki-odred.pdf",
     "soldier_id": "0026001202",
+    "pdf_x_end": 481.5,
     "birth_place": "Gleđica",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 481.5,
     "death_type": "streljan",
-    "death_place": "Ivanjica"
+    "death_date": "krajem 1941",
+    "death_place": "Ivanjica",
+    "rank": "borac"
   },
   {
     "last_name": "Čekerevac",
@@ -46219,7 +46231,7 @@
     "first_name": "Milivoje",
     "fathers_name": "S",
     "full_name": "Štulović S Milivoje",
-    "additional_info": "zvani Mile Štule; učenik, rođen 25. jula 1920. u Beogradu, a živio u Užicu, nestao kao borac 3. čete 4. bataljona 2. proleterske brigade",
+    "additional_info": "zvani Mile Štule; učenik, rođen 25. jula 1920. u Beogradu, a živio u Užicu, nestao kao borac 3. čete 4. bataljona 2. proleterske brigade 1943.",
     "birth_year": "1920",
     "pdf_page": 80,
     "pdf_y": 347.6,
@@ -46231,6 +46243,7 @@
     "birth_place": "Beograd",
     "occupation": "učenik",
     "death_type": "nestao",
+    "death_date": "1943",
     "rank": "borac",
     "unit_detail": "3. četa, 4. bataljon",
     "birth_date": "25.07.1920"

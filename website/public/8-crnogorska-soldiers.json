@@ -350,7 +350,7 @@
     "first_name": "Branko",
     "fathers_name": "Milan",
     "full_name": "Alvirović Milana Branko",
-    "additional_info": "rođen 1928. u Beogradu, učenik, zastavnik, delegat voda, u brigadi od oktobr 1944, poginuo 26. januara 1945. kod Trumićevog",
+    "additional_info": "rođen 1928. u Beogradu, učenik, zastavnik, delegat voda, u brigadi od oktobr 1944, poginuo 26. januara 1945. kod Trumićevog salaša.",
     "birth_year": "1928",
     "pdf_page": 2,
     "pdf_y": 296.3,
@@ -358,13 +358,13 @@
     "pdf_y_end": 321.5,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000011",
+    "pdf_x_end": 401.2,
     "birth_place": "Beograd",
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "26.01.1945",
-    "death_place": "kod Trumićevog",
+    "death_place": "kod Trumićevog salaša",
     "rank": "zastavnik, delegat voda",
-    "pdf_x_end": 401.2,
     "other_sources": [
       {
         "soldier_id": "9014002247",
@@ -909,7 +909,7 @@
     "first_name": "Živko",
     "fathers_name": "Živorad",
     "full_name": "Arsenijević Živorada Živko",
-    "additional_info": "rođen 1926. u Vrhovinama, stolar, u brigadi o^oktobra 1944, poginuo 17. januara 1945. na Grabovu.",
+    "additional_info": "rođen 1926. u Vrhovinama, stolar, u brigadi ooktobra 1944, poginuo 17. januara 1945. na Grabovu.",
     "birth_year": "1926",
     "pdf_page": 3,
     "pdf_y": 278.5,
@@ -917,12 +917,12 @@
     "pdf_y_end": 295.6,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000023",
+    "pdf_x_end": 453.4,
     "birth_place": "Vrhovine",
     "occupation": "stolar",
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "death_place": "Grabovo",
-    "pdf_x_end": 453.4,
     "other_sources": [
       {
         "soldier_id": "9014002257",
@@ -1282,18 +1282,18 @@
     "first_name": "Božin",
     "fathers_name": "Uroš",
     "full_name": "Aksentijević Uroša Božin",
-    "additional_info": "rođen 1921. u Maloj Kruševici, zemljoradnik, u brigadi od novembra 1944, poginuo 20. Dprila 1945_u Burićima",
+    "additional_info": "rođen 1921. u Maloj Kruševici, zemljoradnik, u brigadi od novembra 1944, poginuo 20. Dprila 1945 u Burićima",
     "birth_year": "1921",
     "pdf_file": "8-crnogorska.pdf",
     "pdf_page": 2,
     "pdf_y": 275.0,
     "pdf_x": 29.3,
+    "pdf_x_end": 401.4,
+    "pdf_y_end": 291.8,
     "birth_place": "Mala Kruševica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 401.4,
-    "pdf_y_end": 291.8,
     "other_sources": [
       {
         "soldier_id": "9014002242",
@@ -2045,7 +2045,7 @@
     "first_name": "Jevrem",
     "fathers_name": "Nikodije",
     "full_name": "Bilmanac Nikodija Jevrem",
-    "additional_info": "rođ. 1925. godine u Vrhovini, u brigadi od oktobra 1944. godine, poginuo 3. decembra 1944. godine na Sremskom. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1925. godine u Vrhovini, u brigadi od oktobra 1944. godine, poginuo 3. decembra 1944. godine na Sremskom frontu. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1925",
     "pdf_page": 33,
     "pdf_y": 565.0,
@@ -2053,10 +2053,10 @@
     "pdf_y_end": 591.8,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000050",
+    "pdf_x_end": 363.8,
     "death_type": "poginuo",
     "death_date": "03.12.1944",
-    "death_place": "na Sremskom",
-    "pdf_x_end": 363.8
+    "death_place": "Sremski front"
   },
   {
     "last_name": "Birtašević",
@@ -2064,7 +2064,7 @@
     "first_name": "Dragić",
     "fathers_name": "Milisav",
     "full_name": "Birtašević Milisava Dragić",
-    "additional_info": "rođen 1920. u Koceljevu, zemljoradnik, u brigadi od oktobra 1944, poginuo 5. decembra 1944. kod^Stajze Bingule.",
+    "additional_info": "rođen 1920. u Koceljevu, zemljoradnik, u brigadi od oktobra 1944, poginuo 5. decembra 1944. kodStajze Bingule.",
     "birth_year": "1920",
     "pdf_page": 4,
     "pdf_y": 427.1,
@@ -2072,12 +2072,12 @@
     "pdf_y_end": 444.1,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000051",
+    "pdf_x_end": 494.6,
+    "pdf_x_left": 138.8,
     "birth_place": "Koceljevo",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_date": "05.12.1944",
-    "pdf_x_end": 494.6,
-    "pdf_x_left": 138.8
+    "death_date": "05.12.1944"
   },
   {
     "last_name": "Birčanin",
@@ -2910,6 +2910,18 @@
         "pdf_x_end": 463.0,
         "pdf_y_end": 602.5,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "9035000622",
+        "name": "Bulatović Stojana Branko",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Bar: godina rođenja 1923; mjesto rođenja Stari Bar; godina smrti 1944; mjesto pogibije Erdevik - Srem",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 18,
+        "pdf_x": 97.2,
+        "pdf_y": 293.2,
+        "pdf_x_end": 524.1,
+        "pdf_y_end": 303.4,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ]
   },
@@ -4317,7 +4329,7 @@
     "pdf_page": 10,
     "pdf_y": 666.3,
     "pdf_x": 133.3,
-    "pdf_y_end": 695.7,
+    "pdf_y_end": 683.5,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000102",
     "birth_place": "Beograd",
@@ -4325,7 +4337,7 @@
     "death_type": "poginuo",
     "death_date": "14.12.1944",
     "death_place": "Grabovo",
-    "pdf_x_end": 507.1
+    "pdf_x_end": 489.9
   },
   {
     "last_name": "Erić",
@@ -4938,7 +4950,7 @@
     "first_name": "Milan",
     "fathers_name": "Boško",
     "full_name": "Gnjatić Boška Milan",
-    "additional_info": "rođen 1923. u Zemunu, mehaničar, u brigadi od oktobra 1944, poginuo JO^aprid^ 1945. kod Burića.",
+    "additional_info": "rođen 1923. u Zemunu, mehaničar, u brigadi od oktobra 1944, poginuo JOaprid, 1945. kod Burića.",
     "birth_year": "1923",
     "pdf_page": 7,
     "pdf_y": 647.2,
@@ -4946,12 +4958,11 @@
     "pdf_y_end": 664.4,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000116",
+    "pdf_x_end": 452.5,
     "birth_place": "Zemun",
     "occupation": "mehaničar",
     "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "JO^aprid^ ., Burići",
-    "pdf_x_end": 452.5
+    "death_date": "1945"
   },
   {
     "last_name": "Gojić",
@@ -7371,7 +7382,7 @@
     "first_name": "Milivoje",
     "fathers_name": "Sima",
     "full_name": "Jovanović Sime Milivoje",
-    "additional_info": "iz^Parcana, zemljoradnik, poginuo u Sremu.",
+    "additional_info": "iz Parcana, zemljoradnik, poginuo u Sremu.",
     "birth_year": "",
     "pdf_page": 13,
     "pdf_y": 467.4,
@@ -7379,10 +7390,10 @@
     "pdf_y_end": 475.9,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000181",
+    "pdf_x_end": 441.4,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_place": "Srem",
-    "pdf_x_end": 441.4,
     "other_sources": [
       {
         "soldier_id": "9014002424",
@@ -8218,18 +8229,18 @@
     "first_name": "Blažo",
     "fathers_name": "",
     "full_name": "Kilibarda Blažo",
-    "additional_info": "rođen u Banjanima, poginuo 28. jula 1944. kod Bijelog",
+    "additional_info": "rođen u Banjanima, poginuo 28. jula 1944. kod Bijelog Polja.",
     "pdf_page": 14,
     "pdf_y": 289.8,
     "pdf_x": 136.6,
     "pdf_y_end": 307.0,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000201",
+    "death_place": "kod Bijelog",
+    "pdf_x_end": 493.1,
     "birth_place": "Banjani",
     "death_type": "poginuo",
     "death_date": "28.07.1944",
-    "death_place": "kod Bijelog",
-    "pdf_x_end": 493.1,
     "other_sources": [
       {
         "soldier_id": "9035007708",
@@ -8345,7 +8356,7 @@
     "first_name": "Stojan",
     "fathers_name": "Ostoja",
     "full_name": "Klarić Ostoje Stojan",
-    "additional_info": "sa Korduna poginuo 29. novembra 1944. kod Matore",
+    "additional_info": "sa Korduna poginuo 29. novembra 1944. kod Matore šume.",
     "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 353.7,
@@ -8353,10 +8364,10 @@
     "pdf_y_end": 371.1,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000204",
+    "pdf_x_end": 493.6,
     "death_type": "poginuo",
     "death_date": "29.11.1944",
-    "death_place": "kod Matore",
-    "pdf_x_end": 493.6,
+    "death_place": "Matora šuma",
     "other_sources": [
       {
         "soldier_id": "9019000790",
@@ -9323,7 +9334,7 @@
     "first_name": "Miodrag",
     "fathers_name": "Stevan",
     "full_name": "Krnjajić Stevana Miodrag",
-    "additional_info": "zvani Lola; rođen 1928. u Koceljevu, referent saniteta čete, u brigadi od seitembra 1944, poginuo 23. aprila 1945. kod Slavonske",
+    "additional_info": "zvani Lola; rođen 1928. u Koceljevu, referent saniteta čete, u brigadi od seitembra 1944, poginuo 23. aprila 1945. kod Slavonske Požege.",
     "birth_year": "1928",
     "pdf_page": 15,
     "pdf_y": 246.5,
@@ -9331,12 +9342,12 @@
     "pdf_y_end": 272.3,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000223",
+    "pdf_x_end": 450.4,
     "birth_place": "Koceljevo",
     "death_type": "poginuo",
     "death_date": "23.04.1945",
-    "death_place": "kod Slavonske",
-    "rank": "referent saniteta čete",
-    "pdf_x_end": 450.4
+    "death_place": "Slavonska Požega",
+    "rank": "referent saniteta čete"
   },
   {
     "last_name": "Krnjajić",
@@ -10841,7 +10852,7 @@
     "first_name": "Marko",
     "fathers_name": "Mihailo",
     "full_name": "Lukačević Mihaila Marko",
-    "additional_info": "rođen 1928. u Beogradu, radnik, zastavnik, politički delegat voda, u brigadi od novembra 1944, poginuo 18. aprila 1945. na Vrčii",
+    "additional_info": "rođen 1928. u Beogradu, radnik, zastavnik, politički delegat voda, u brigadi od novembra 1944, poginuo 18. aprila 1945. na Vrčii Dolu.",
     "birth_year": "1928",
     "pdf_page": 16,
     "pdf_y": 425.0,
@@ -10849,13 +10860,13 @@
     "pdf_y_end": 450.8,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000259",
+    "pdf_x_end": 483.5,
     "birth_place": "Beograd",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "18.04.1945",
-    "death_place": "na Vrčii",
-    "rank": "zastavnik, politički delegat voda",
-    "pdf_x_end": 483.5
+    "death_place": "na Vrčii Dolu",
+    "rank": "zastavnik, politički delegat voda"
   },
   {
     "last_name": "Lukin",
@@ -12349,7 +12360,7 @@
     "first_name": "Radoš",
     "fathers_name": "Radovan",
     "full_name": "Marković Radovana Radoš",
-    "additional_info": "rođen 1909. u Rijeci Piperskoj, zemljoradnik, zamenik komandira čete, u brigadi od kraja 1944, poginuo 1944. na Fruškoj",
+    "additional_info": "rođen 1909. u Rijeci Piperskoj, zemljoradnik, zamenik komandira čete, u brigadi od kraja 1944, poginuo 1944. na Fruškoj Gori.",
     "birth_year": "1909",
     "pdf_page": 18,
     "pdf_y": 226.5,
@@ -12357,13 +12368,13 @@
     "pdf_y_end": 252.2,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000296",
+    "pdf_x_end": 485.0,
     "birth_place": "Rijeka Piperska",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "na Fruškoj",
+    "death_place": "Fruška Gora",
     "rank": "zamenik komandira čete",
-    "pdf_x_end": 485.0,
     "other_sources": [
       {
         "soldier_id": "9014002533",
@@ -13321,7 +13332,7 @@
     "first_name": "Borivoje",
     "fathers_name": "Ljubomir",
     "full_name": "Mihailović Ljubomira Borivoje",
-    "additional_info": "rođen 1912. u Velikoj Kamenici, zemljoradnik, u brigadi od oktobra 1944, poginuo 14. decembra 1944. na Burgerovo.m",
+    "additional_info": "rođen 1912. u Velikoj Kamenici, zemljoradnik, u brigadi od oktobra 1944, poginuo 14. decembra 1944. na Burgerovo.m salašu.",
     "birth_year": "1912",
     "pdf_page": 21,
     "pdf_y": 336.9,
@@ -13329,12 +13340,12 @@
     "pdf_y_end": 362.7,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000319",
+    "pdf_x_end": 460.0,
     "birth_place": "Velika Kamenica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "14.12.1944",
-    "death_place": "na Burgerovo.m",
-    "pdf_x_end": 460.0,
+    "death_place": "na Burgerovo.m salašu",
     "other_sources": [
       {
         "soldier_id": "9014002554",
@@ -15253,7 +15264,7 @@
     "pdf_page": 20,
     "pdf_y": 285.3,
     "pdf_x": 126.6,
-    "pdf_y_end": 304.0,
+    "pdf_y_end": 333.7,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000365",
     "birth_place": "Stijena Piperska",
@@ -16381,7 +16392,7 @@
     "first_name": "Predrag",
     "fathers_name": "Ljubisav",
     "full_name": "Nenadović Ljubisava Predrag",
-    "additional_info": "rođ. 1922. godine u Crvenoj Jabuci, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine u. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1922. godine u Crvenoj Jabuci, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine u Sremu. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1922",
     "pdf_page": 33,
     "pdf_y": 297.4,
@@ -16389,10 +16400,11 @@
     "pdf_y_end": 324.2,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000391",
+    "pdf_x_end": 366.4,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 366.4,
+    "death_place": "Srem",
     "other_sources": [
       {
         "soldier_id": "9025033784",
@@ -16406,11 +16418,9 @@
     "birth_place": "Crvena Jabuka, Ub",
     "borrowed": [
       "birth_place",
-      "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
-    "death_place": "Srem"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Nešić",
@@ -16469,7 +16479,7 @@
     "first_name": "Ljubo",
     "fathers_name": "Jovo",
     "full_name": "Nikitović Jova Ljubo",
-    "additional_info": "rođen 1915. u Komarnici, zemljoradnik, vodnik, u brigadi od februara 1944, umro od rana dobijenih 3. decembra 1944. na Matoroj",
+    "additional_info": "rođen 1915. u Komarnici, zemljoradnik, vodnik, u brigadi od februara 1944, umro od rana dobijenih 3. decembra 1944. na Matoroj šumi.",
     "birth_year": "1915",
     "pdf_page": 22,
     "pdf_y": 188.3,
@@ -16477,13 +16487,13 @@
     "pdf_y_end": 213.7,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000394",
+    "pdf_x_end": 485.9,
     "birth_place": "Komarnica",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "03.12.1944",
-    "death_place": "na Matoroj",
+    "death_place": "Matora šuma",
     "rank": "vodnik",
-    "pdf_x_end": 485.9,
     "other_sources": [
       {
         "soldier_id": "9014002620",
@@ -19313,7 +19323,7 @@
     "first_name": "Radomir",
     "fathers_name": "Živorad",
     "full_name": "Petrović Živorada Radomir",
-    "additional_info": "rođ. 1924. godine u Takovu, zemljoradnik, u brigadi od 1944. godine, poginuo 1945. godine u Bereku Sremski. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1924. godine u Takovu, zemljoradnik, u brigadi od 1944. godine, poginuo 1945. godine u Bereku Sremski front. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1924",
     "pdf_page": 33,
     "pdf_y": 222.3,
@@ -19321,11 +19331,11 @@
     "pdf_y_end": 249.1,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000463",
+    "pdf_x_end": 365.8,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "u Bereku Sremski",
-    "pdf_x_end": 365.8,
+    "death_place": "u Bereku Sremski front",
     "other_sources": [
       {
         "soldier_id": "9014002695",
@@ -19361,7 +19371,7 @@
     "first_name": "Slavko",
     "fathers_name": "Rafailo",
     "full_name": "Petrović Rafaila Slavko",
-    "additional_info": "rođ. 1919. godine u Milorcima, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 20. X 1944. godine u. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1919. godine u Milorcima, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 20. X 1944. godine u Sremu. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1919",
     "pdf_page": 33,
     "pdf_y": 408.1,
@@ -19369,10 +19379,11 @@
     "pdf_y_end": 434.8,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000464",
+    "pdf_x_end": 366.5,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "20.10.1944",
-    "pdf_x_end": 366.5
+    "death_place": "Srem"
   },
   {
     "last_name": "Petrović",
@@ -19832,7 +19843,7 @@
     "first_name": "Božidar",
     "fathers_name": "Miljan",
     "full_name": "Popović Miljana Božidar",
-    "additional_info": "rođen 1922. u Doljanima, student, politički komesar čete, u brigadi od februara 1944, poginuo 24. aprila 1944. kod Slijepač",
+    "additional_info": "rođen 1922. u Doljanima, student, politički komesar čete, u brigadi od februara 1944, poginuo 24. aprila 1944. kod Slijepač lista.",
     "birth_year": "1922",
     "pdf_page": 25,
     "pdf_y": 214.2,
@@ -19845,7 +19856,7 @@
     "occupation": "student",
     "death_type": "poginuo",
     "death_date": "24.04.1944",
-    "death_place": "kod Slijepač",
+    "death_place": "kod Slijepač lista",
     "rank": "politički komesar čete",
     "other_sources": [
       {
@@ -20940,7 +20951,7 @@
     "first_name": "Mihailo",
     "fathers_name": "Milan",
     "full_name": "Radosavljević Milana Mihailo",
-    "additional_info": "rođ. 1924. godine, u Bogdanovici, radnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine na Sremskom. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1924. godine, u Bogdanovici, radnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine na Sremskom frontu. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1924",
     "pdf_page": 32,
     "pdf_y": 224.7,
@@ -20948,11 +20959,11 @@
     "pdf_y_end": 252.8,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000501",
+    "pdf_x_end": 370.8,
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "na Sremskom",
-    "pdf_x_end": 370.8
+    "death_place": "Sremski front"
   },
   {
     "last_name": "Radosavljević",
@@ -21547,17 +21558,17 @@
     "first_name": "Sekula",
     "fathers_name": "Svetozar",
     "full_name": "Raletić Svetozara Sekula",
-    "additional_info": "iz Valjeva, poginuo 31. januara 1945. na Grčića",
+    "additional_info": "iz Valjeva, poginuo 31. januara 1945. na Grčića salašu.",
     "pdf_page": 26,
     "pdf_y": 541.1,
     "pdf_x": 129.7,
     "pdf_y_end": 558.6,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000515",
+    "pdf_x_end": 486.2,
     "death_type": "poginuo",
     "death_date": "31.01.1945",
-    "death_place": "na Grčića",
-    "pdf_x_end": 486.2,
+    "death_place": "Grčića salaš",
     "other_sources": [
       {
         "soldier_id": "9014002739",
@@ -21786,7 +21797,7 @@
     "first_name": "Ljubiša",
     "fathers_name": "Milutin",
     "full_name": "Ranković Milutina Ljubiša",
-    "additional_info": "rođ. 1921. godine, u Šarbanima, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine na Sremskom. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1921. godine, u Šarbanima, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine na Sremskom frontu. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1921",
     "pdf_page": 33,
     "pdf_y": 380.2,
@@ -21794,11 +21805,11 @@
     "pdf_y_end": 407.0,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000520",
+    "pdf_x_end": 366.3,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "na Sremskom",
-    "pdf_x_end": 366.3
+    "death_place": "Sremski front"
   },
   {
     "last_name": "Ranković",
@@ -22499,7 +22510,7 @@
     "first_name": "Momčilo",
     "fathers_name": "Milorad",
     "full_name": "Simeunović Milorada Momčilo",
-    "additional_info": "rođ. 1923. godine u Takovu, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine u. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
+    "additional_info": "rođ. 1923. godine u Takovu, zemljoradnik, u brigadi od oktobra 1944. godine, poginuo 1945. godine u Sremu. Iz dopunskog spiska Opštinskog odbora SUBNOR-a Ub.",
     "birth_year": "1923",
     "pdf_page": 33,
     "pdf_y": 269.6,
@@ -22507,10 +22518,11 @@
     "pdf_y_end": 296.3,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000539",
+    "pdf_x_end": 365.8,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 365.8,
+    "death_place": "Srem",
     "other_sources": [
       {
         "soldier_id": "9025034241",
@@ -22524,11 +22536,9 @@
     "birth_place": "Takovo, Ub",
     "borrowed": [
       "birth_place",
-      "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
-    "death_place": "Šid"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Simić",
@@ -24947,7 +24957,7 @@
     "first_name": "Marko",
     "fathers_name": "Petar",
     "full_name": "Todorović Petra Marko",
-    "additional_info": "rođen 1923. u Mrkama, vodnik, politički delegag voda, u brigadi od februara 1944, poginuo 18. januara 1945. na Burgerovom",
+    "additional_info": "rođen 1923. u Mrkama, vodnik, politički delegag voda, u brigadi od februara 1944, poginuo 18. januara 1945. na Burgerovom salašu.",
     "birth_year": "1923",
     "pdf_page": 30,
     "pdf_y": 267.9,
@@ -24955,12 +24965,12 @@
     "pdf_y_end": 293.6,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000599",
+    "pdf_x_end": 496.6,
     "birth_place": "Mrke",
     "death_type": "poginuo",
     "death_date": "18.01.1945",
-    "death_place": "na Burgerovom",
+    "death_place": "na Burgerovom salašu",
     "rank": "vodnik",
-    "pdf_x_end": 496.6,
     "other_sources": [
       {
         "soldier_id": "9014002823",
@@ -25691,7 +25701,7 @@
     "first_name": "Milovan",
     "fathers_name": "Đorđe",
     "full_name": "Vasić Đorđa Milovan",
-    "additional_info": "rođen u Babi, zemljoradnik, ioginuo na sremskom",
+    "additional_info": "rođen u Babi, zemljoradnik, ioginuo na sremskom frontu.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 559.1,
@@ -25699,9 +25709,9 @@
     "pdf_y_end": 576.0,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000617",
+    "pdf_x_end": 453.6,
     "birth_place": "Babe",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 453.6,
     "other_sources": [
       {
         "soldier_id": "9014002840",
@@ -25888,7 +25898,7 @@
     "first_name": "Miomir",
     "fathers_name": "Radovan",
     "full_name": "Vasović Radovana Miomir",
-    "additional_info": "rođen u Vrhovinama, zemljoradnik, u brigadn od no.vembra 1944, poginuo 17. januara 1945. kod Grabova. VIŽNITIN Ivada^SAVO, rođen u Savadiji, maturant, popgnuo 12. decembra 1944. kod Čakovaca.",
+    "additional_info": "rođen u Vrhovinama, zemljoradnik, u brigadn od no.vembra 1944, poginuo 17. januara 1945. kod Grabova. VIŽNITIN IvadaSAVO, rođen u Savadiji, maturant, popgnuo 12. decembra 1944. kod Čakovaca.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 622.4,
@@ -25896,12 +25906,12 @@
     "pdf_y_end": 660.0,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000622",
+    "pdf_x_end": 453.4,
     "birth_place": "Vrhovine",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "17.01.1945",
-    "death_place": "Grabovo",
-    "pdf_x_end": 453.4
+    "death_place": "Grabovo"
   },
   {
     "last_name": "Vasović",
@@ -26385,7 +26395,7 @@
     "first_name": "Mirko",
     "fathers_name": "Vukota",
     "full_name": "Vlahović Vukote Mirko",
-    "additional_info": "rođen 1925. u Rovcima, zemljoradnik, zastavnik„ deLegat voda, u brigadi od februara 1944, pogiiuo 27. aprila 194z. kod Velike",
+    "additional_info": "rođen 1925. u Rovcima, zemljoradnik, zastavnik„ deLegat voda, u brigadi od februara 1944, pogiiuo 27. aprila 194z. kod Velike Barne.",
     "birth_year": "1925",
     "pdf_page": 6,
     "pdf_y": 426.6,
@@ -26393,10 +26403,10 @@
     "pdf_y_end": 452.4,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000635",
+    "pdf_x_end": 495.8,
     "birth_place": "Rovci",
     "occupation": "zemljoradnik",
-    "rank": "zastavnik, delegat voda",
-    "pdf_x_end": 495.8
+    "rank": "zastavnik, delegat voda"
   },
   {
     "last_name": "Vlahović",
@@ -26711,7 +26721,7 @@
     "first_name": "Mile",
     "fathers_name": "Blagoje",
     "full_name": "Vrakević Blagoja Mile",
-    "additional_info": "rođen u Zminjaku, zemljoradnik, poginuo 1944. kod",
+    "additional_info": "rođen u Zminjaku, zemljoradnik, poginuo 1944. kod Šida.",
     "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 604.2,
@@ -26719,11 +26729,12 @@
     "pdf_y_end": 621.8,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000644",
+    "pdf_x_end": 493.6,
     "birth_place": "Zminjak",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "pdf_x_end": 493.6
+    "death_place": "Šid"
   },
   {
     "last_name": "Vranković",
@@ -26973,7 +26984,7 @@
     "first_name": "Božidar",
     "fathers_name": "Đorđije",
     "full_name": "Vukanić Đorđija Božidar",
-    "additional_info": "rođen 1928. u Ržanici, zemljoradnik, mlaći vodnik, u brigadi od februara 1944, poginuo 14. decembra 1944. kod Burgerovog",
+    "additional_info": "rođen 1928. u Ržanici, zemljoradnik, mlaći vodnik, u brigadi od februara 1944, poginuo 14. decembra 1944. kod Burgerovog salaša.",
     "birth_year": "1928",
     "pdf_page": 7,
     "pdf_y": 192.4,
@@ -26981,13 +26992,13 @@
     "pdf_y_end": 218.7,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000652",
+    "pdf_x_end": 451.9,
     "birth_place": "Ržanica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "14.12.1944",
-    "death_place": "kod Burgerovog",
+    "death_place": "kod Burgerovog salaša",
     "rank": "vodnik",
-    "pdf_x_end": 451.9,
     "other_sources": [
       {
         "soldier_id": "9014002869",
@@ -28039,7 +28050,7 @@
     "first_name": "Gavrilo",
     "fathers_name": "Pero",
     "full_name": "Čavor Pera Gavrilo",
-    "additional_info": "rođen 1920. u Čavorima, zanatlija, pručnik, politički komesar čete, u brigadi od februara 1944, poginuo 27. aprila 1944. na Borića",
+    "additional_info": "rođen 1920. u Čavorima, zanatlija, pručnik, politički komesar čete, u brigadi od februara 1944, poginuo 27. aprila 1944. na Borića brdu.",
     "birth_year": "1920",
     "pdf_page": 31,
     "pdf_y": 399.5,
@@ -28047,13 +28058,13 @@
     "pdf_y_end": 425.3,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000677",
+    "pdf_x_end": 451.5,
     "birth_place": "Čavori",
     "occupation": "zanatlija",
     "death_type": "poginuo",
     "death_date": "27.04.1944",
-    "death_place": "Borić",
+    "death_place": "na Borića brdu",
     "rank": "politički komesar čete",
-    "pdf_x_end": 451.5,
     "other_sources": [
       {
         "soldier_id": "9035006467",
@@ -28109,7 +28120,7 @@
     "first_name": "Vuko",
     "fathers_name": "",
     "full_name": "Đaković Vuko",
-    "additional_info": "rođen 1924. na Cetinju, zemljoradnik, zastavnik, politički delegat voda, u brigadi od februara 1944, poginuo 3. decembra 1944! na Matoroj",
+    "additional_info": "rođen 1924. na Cetinju, zemljoradnik, zastavnik, politički delegat voda, u brigadi od februara 1944, poginuo 3. decembra 1944! na Matoroj šumi.",
     "birth_year": "1924",
     "pdf_page": 9,
     "pdf_y": 477.9,
@@ -28117,11 +28128,11 @@
     "pdf_y_end": 503.2,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000679",
+    "pdf_x_end": 454.1,
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "03.12.1944",
     "rank": "zastavnik, politički delegat voda",
-    "pdf_x_end": 454.1,
     "other_sources": [
       {
         "soldier_id": "9014002323",
@@ -30125,7 +30136,7 @@
     "first_name": "Đorđe",
     "fathers_name": "Dragutin",
     "full_name": "Živanović Dragutina Đorđe",
-    "additional_info": "rođen 1924. u Stublenici, zemljoradnpk, u brigadi od oktobra 1944, poginuo 4. januara 1945._kod Čakovaca.",
+    "additional_info": "rođen 1924. u Stublenici, zemljoradnpk, u brigadi od oktobra 1944, poginuo 4. januara 1945. kod Čakovaca.",
     "birth_year": "1924",
     "pdf_page": 11,
     "pdf_y": 234.9,
@@ -30133,10 +30144,11 @@
     "pdf_y_end": 251.9,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000729",
+    "pdf_x_end": 453.9,
     "birth_place": "Stublenica",
     "death_type": "poginuo",
     "death_date": "04.01.1945",
-    "pdf_x_end": 453.9,
+    "death_place": "Čakovci",
     "other_sources": [
       {
         "soldier_id": "9014002879",

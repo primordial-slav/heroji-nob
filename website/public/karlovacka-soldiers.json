@@ -243,16 +243,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2",
         "source_page": 2,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0097000036",
+        "name": "Bahtijarević Alije Ibrahim",
+        "additional_info": "borac, UKB, 1924. Banja Luka, u NOB 1944, poginuo Primišlje, 14.04.45",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 2,
+        "pdf_x": 22.8,
+        "pdf_y": 264.40799999999973,
+        "pdf_x_end": 351.1,
+        "pdf_y_end": 272.4,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ],
-    "ethnicity": "Musliman",
+    "death_date": "14.04.1945",
     "borrowed": [
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
-    "death_place": "Voj. bol. hvar"
+    "death_place": "Primišlje",
+    "ethnicity": "Musliman"
   },
   {
     "last_name": "Bajić",
@@ -6328,7 +6340,7 @@
       {
         "soldier_id": "0094000196",
         "name": "Frketić F Janko",
-        "additional_info": "1907, Mračin, Netretić. Stupio u NOV 10. 2. 1944, borac brig. Poginuo kod Rečice 4. 3",
+        "additional_info": "1907, Mračin, Netretić. Stupio u NOV 10. 2. 1944, borac brig. Poginuo kod Rečice 4. 3 1945.",
         "pdf_file": "karlovacka.pdf",
         "pdf_page": 5,
         "pdf_x": 306.4,
@@ -10806,18 +10818,14 @@
     "first_name": "Vjekoslav",
     "fathers_name": "B",
     "full_name": "Kalanja B Vjekoslav",
-    "additional_info": "1920, Biograd na moru. Stupio u NOV 3. 10. 1944, borac 2. bat. Poginuo kod Sv. Martina na Zumberku 9.. 11.",
+    "additional_info": "1920, Biograd na moru. Stupio u NOV 3. 10. 1944, borac 2. bat. Poginuo kod Sv. Martina na Zumberku 9.. 11. 1944.",
     "birth_year": "1920",
-    "birth_place": "Biograd na moru",
-    "death_type": "poginuo",
     "pdf_page": 27,
     "pdf_y": 652.0,
     "pdf_x": 311.0,
     "pdf_y_end": 695.0,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000332",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
     "pdf_x_end": 477.3,
     "death_date": "09.11.1944",
     "death_place": "Sv. Martin",
@@ -10845,7 +10853,11 @@
         "pdf_y_end": 319.0,
         "unit_file": "34-divizija-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Biograd na moru",
+    "death_type": "poginuo",
+    "rank": "borac",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Karaš",
@@ -19449,19 +19461,19 @@
     "first_name": "Marko",
     "fathers_name": "Mato",
     "full_name": "Pereško Mate Marko",
-    "additional_info": "1912, Goli Vrh, Ribnik. Stupio u NOV kolovoza 1944, borac brig. Poginuo u jesen",
+    "additional_info": "1912, Goli Vrh, Ribnik. Stupio u NOV kolovoza 1944, borac brig. Poginuo u jesen 1944.",
     "birth_year": "1912",
-    "birth_place": "Goli Vrh, Ribnik",
-    "death_type": "poginuo",
     "pdf_page": 31,
     "pdf_y": 275.6,
     "pdf_x": 323.3,
     "pdf_y_end": 310.0,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000603",
-    "rank": "borac",
     "pdf_x_end": 490.7,
     "death_date": "jesen 1944",
+    "birth_place": "Goli Vrh, Ribnik",
+    "death_type": "poginuo",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0097000878",
@@ -27931,7 +27943,7 @@
     "pdf_page": 4,
     "pdf_y": 158.8,
     "pdf_x": 83.8,
-    "pdf_y_end": 167.3,
+    "pdf_y_end": 184.6,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000885",
     "rank": "borac",
@@ -30739,13 +30751,13 @@
     "pdf_page": 36,
     "pdf_y": 211.4,
     "pdf_x": 279.5,
-    "pdf_y_end": 245.8,
+    "pdf_y_end": 298.6,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000976",
     "death_date": "07.03.1945",
     "rank": "komandir čete",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 449.2,
+    "pdf_x_end": 450.5,
     "other_sources": [
       {
         "soldier_id": "0094010428",
@@ -30790,7 +30802,8 @@
         "pdf_y_end": 342.6,
         "ref_book": "hak-15-duga-resa"
       }
-    ]
+    ],
+    "pdf_x_left": 266.8
   },
   {
     "last_name": "Žužić",
@@ -30805,14 +30818,15 @@
     "pdf_page": 36,
     "pdf_y": 203.7,
     "pdf_x": 95.4,
-    "pdf_y_end": 238.2,
+    "pdf_y_end": 307.5,
     "pdf_file": "karlovacka.pdf",
     "soldier_id": "0094000977",
     "death_date": "27.12.1944",
     "death_place": "Donja Kupčina",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 246.6,
+    "pdf_x_end": 274.3,
+    "pdf_x_left": 94.0,
     "other_sources": [
       {
         "soldier_id": "0097001414",

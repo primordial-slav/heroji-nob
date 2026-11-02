@@ -8342,7 +8342,7 @@
         "pdf_x": 132.6,
         "pdf_y": 629.2,
         "pdf_x_end": 301.6,
-        "pdf_y_end": 670.8
+        "pdf_y_end": 684.3
       },
       {
         "soldier_id": "0026000230",
@@ -14950,7 +14950,7 @@
         "pdf_x": 314.8,
         "pdf_y": 194.2,
         "pdf_x_end": 484.1,
-        "pdf_y_end": 256.2
+        "pdf_y_end": 545.7
       }
     ],
     "birth_place": "Dutine, Ćustendil, EŠugarska",
@@ -15200,24 +15200,30 @@
     "birth_place": "Obrenovac",
     "occupation": "službenik",
     "rank": "borac",
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "ethnicity",
-      "party"
-    ],
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "0039100453",
         "name": "Kostić Ljubiša",
-        "additional_info": "zvani Krivi; komandir voda u 2. četi 2. bataljona, rođen u • Obrenovcu, železničar, Srbin, u NOB od 1941, član KPJ, poginuo u Istočnoj Bosni, kod Omerovih Voda, na planini Ozren, 22. jula 1943. godine.",
+        "additional_info": "zvani Krivi; komandir voda u 2. četi 2. bataljona, rođen u Obrenovcu, železničar, Srbin, u NOB od 1941, član KPJ, poginuo u Istočnoj Bosni, kod Omerovih Voda, na planini Ozren, 22. jula 1943. godine.",
         "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
         "pdf_page": 30,
         "pdf_x": 99.9,
         "pdf_y": 616.8,
         "pdf_x_end": 271.0,
-        "pdf_y_end": 637.0,
-        "unit_file": "druga-proleterska-soldiers.json"
+        "pdf_y_end": 681.2
+      },
+      {
+        "soldier_id": "9016004311",
+        "name": "Kostić Ljubiša — Krivi",
+        "additional_info": "službenik na železnici, rođen 1920. u Obrenovcu, živeo u Čačku; borac Čačanskog NOP odreda i Druge proleterske brigade; poginuo u borbi u Šekovićima u Bosni jula 1943.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 292,
+        "pdf_x": 84.0,
+        "pdf_y": 317.0,
+        "pdf_x_end": 409.3,
+        "pdf_y_end": 358.8,
+        "pdf_x_left": 51.6,
+        "ref_book": "cacanski-kraj-pali"
       },
       {
         "soldier_id": "0126000384",
@@ -15232,7 +15238,10 @@
         "pdf_x_left": 27.4,
         "unit_file": "cacanski-odred-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "unit_detail": "2. četa, 2. bataljon",
+    "party": "KPJ"
   },
   {
     "last_name": "Kovačević",
@@ -17362,10 +17371,10 @@
   },
   {
     "last_name": "Ljuboja",
-    "middle_name": "",
+    "middle_name": "Pane",
     "first_name": "Ilija",
-    "fathers_name": "",
-    "full_name": "Ljuboja Ilija",
+    "fathers_name": "Pane",
+    "full_name": "Ljuboja Pane Ilija",
     "additional_info": "poginuo 4. decembra 1943, Prijepolje (nepoznato mesto pogibije); Pljevlja, Prijepolje (27. septembar — 5. decembar 1943)",
     "death_place": "Prijepolje",
     "death_date": "04.12.1943",
@@ -17379,6 +17388,17 @@
     "soldier_id": "0039000419",
     "other_sources": [
       {
+        "soldier_id": "0039100276",
+        "name": "Ljuboja Pane Ilija",
+        "additional_info": "borac 1. čete 2. bataljona, rođen 1911, Crni Lug, Bosansko Grahovo, zemljoradnik, Srbin, u NOB od 1942, poginuo u Prijepolju 4. decembra 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 310.5,
+        "pdf_y": 363.7,
+        "pdf_x_end": 480.4,
+        "pdf_y_end": 417.0
+      },
+      {
         "soldier_id": "9022011435",
         "name": "Ljuboja (Pane) Ilija",
         "additional_info": "rođen 1908, Crni Lug (Bosansko Grahovo). Srbin, poginuo 1943. u NOBu, Prijepolje",
@@ -17387,14 +17407,12 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
+    "birth_year": "1911",
     "birth_place": "Crni Lug, Bosansko Grahovo",
-    "borrowed": [
-      "birth_place",
-      "birth_year",
-      "ethnicity"
-    ],
     "ethnicity": "Srbin",
-    "birth_year": "1908"
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "last_name": "Ljuboja",
@@ -17415,6 +17433,17 @@
     "soldier_id": "0039000420",
     "other_sources": [
       {
+        "soldier_id": "0039100277",
+        "name": "Ljuboja Rada Janko",
+        "additional_info": "borac 5. bataljona, rođen 1924, Bastasi, Bosansko Grahovo, zemljoradnik, Srbin, u NOB od januara 1943, poginuo na Vučevu krajem maja 1943. godine.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 310.2,
+        "pdf_y": 418.9,
+        "pdf_x_end": 480.0,
+        "pdf_y_end": 472.2
+      },
+      {
         "soldier_id": "9022011375",
         "name": "Ljuboja (Rade) Janko",
         "additional_info": "rođen 1923, Bastasi (Bosansko Grahovo). Srbin, poginuo 1943. u NOBu, Na sutjesci",
@@ -17431,14 +17460,12 @@
         "ref_book": "bosansko-grahovo"
       }
     ],
+    "birth_year": "1924",
     "birth_place": "Bastasi, Bosansko Grahovo",
-    "borrowed": [
-      "birth_place",
-      "birth_year",
-      "ethnicity"
-    ],
     "ethnicity": "Srbin",
-    "birth_year": "1923"
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "5. bataljon"
   },
   {
     "last_name": "Ljuboja",
@@ -18177,8 +18204,8 @@
         "pdf_page": 36,
         "pdf_x": 292.0,
         "pdf_y": 528.6,
-        "pdf_x_end": 462.0,
-        "pdf_y_end": 548.6
+        "pdf_x_end": 462.4,
+        "pdf_y_end": 591.8
       },
       {
         "soldier_id": "9062000729",
@@ -21589,8 +21616,8 @@
         "pdf_page": 42,
         "pdf_x": 97.8,
         "pdf_y": 469.7,
-        "pdf_x_end": 267.7,
-        "pdf_y_end": 511.3
+        "pdf_x_end": 268.6,
+        "pdf_y_end": 543.7
       },
       {
         "soldier_id": "0126000615",
@@ -24059,8 +24086,8 @@
         "pdf_page": 44,
         "pdf_x": 100.8,
         "pdf_y": 603.1,
-        "pdf_x_end": 270.9,
-        "pdf_y_end": 633.9
+        "pdf_x_end": 271.2,
+        "pdf_y_end": 667.2
       },
       {
         "soldier_id": "0039010030",
@@ -25484,8 +25511,8 @@
         "pdf_page": 43,
         "pdf_x": 50.8,
         "pdf_y": 496.1,
-        "pdf_x_end": 356.4,
-        "pdf_y_end": 521.9,
+        "pdf_x_end": 356.8,
+        "pdf_y_end": 540.1,
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
@@ -41439,8 +41466,8 @@
         "pdf_page": 14,
         "pdf_x": 97.8,
         "pdf_y": 552.5,
-        "pdf_x_end": 268.2,
-        "pdf_y_end": 561.7
+        "pdf_x_end": 269.1,
+        "pdf_y_end": 616.2
       },
       {
         "soldier_id": "9016002536",
@@ -42651,7 +42678,7 @@
         "pdf_x": 133.3,
         "pdf_y": 594.8,
         "pdf_x_end": 302.7,
-        "pdf_y_end": 647.2
+        "pdf_y_end": 658.9
       },
       {
         "soldier_id": "9022011835",
@@ -43711,7 +43738,7 @@
         "pdf_x": 132.0,
         "pdf_y": 520.8,
         "pdf_x_end": 300.4,
-        "pdf_y_end": 573.2
+        "pdf_y_end": 581.9
       },
       {
         "soldier_id": "9021055575",
@@ -43820,6 +43847,19 @@
         "pdf_x_end": 210.7,
         "pdf_y_end": 242.6,
         "unit_file": "vrhovni-stab-soldiers.json"
+      },
+      {
+        "soldier_id": "0126009003",
+        "name": "Živković Dragoslava Radiša",
+        "additional_info": "stolar, rođen 1922. u Prislonici; član KPJ; borac Ljubićkog bataljona i Druge proleterske brigade; poginuo kao borac Pratećeg bataljona Vrhovnog štaba u borbi protiv neprijatelja u selu Podgrabu pod Jahorini 17. juna 1943.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 30,
+        "pdf_x": 41.5,
+        "pdf_y": 453.9,
+        "pdf_x_end": 375.2,
+        "pdf_y_end": 488.8,
+        "pdf_x_left": 15.9,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
     ],
     "party": "KPJ"
@@ -46313,7 +46353,7 @@
     "pdf_page": 9,
     "pdf_y": 602.0,
     "pdf_x": 134.1,
-    "pdf_y_end": 633.1,
+    "pdf_y_end": 645.6,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100120",
     "pdf_x_end": 303.5,
@@ -47254,6 +47294,14 @@
         "ref_book": "zrtve-rata-1964-hrv"
       },
       {
+        "soldier_id": "9114001044",
+        "name": "Dragić 'B. Branko",
+        "additional_info": "Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine, Učenici i bivši učenici Gimnazije poginuli u NOB: 44. Dra1ić 'B. Branko, štamparski radnik, rođen je 5. marta 1926. godine u Jasenici kod Ogulina. Poginuo je u borbi protiv Nemaca kod Berana (Ivangrad) 26. jula 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=961e23a3-6026-49b1-9716-5ea2ff7b8ea7/00000001/00000001/00008615&pg_seq=306",
+        "source_page": 303,
+        "ref_book": "uzicka-gimnazija"
+      },
+      {
         "soldier_id": "0026000165",
         "name": "Dragić B Branko",
         "additional_info": "borac, štamparski radnik, rođen 5. marta 1926. u Jasenici, kod Ogulina, a živio u Užicu, poginuo kao borac 4. bataljona 2. proleterske brigade u borbi protiv Nijemaca kod Berena (sada Ivangrad) 26. jula 1944.",
@@ -47281,7 +47329,7 @@
     "first_name": "Dragomir",
     "fathers_name": "Jovan",
     "full_name": "Dražević Jovana Dragomir",
-    "additional_info": "borac 3. čete 2. bataljona, rođen 1882, Drenova, Gornji Milanovac, krojački radnik, Srbin, u NOB od 1941, član KPJ od 1919, delegat na Vukovarskom kongresu 1920; u partizane pošao sa tri sina: Mišo i Duško poginuli su u Srbiji 1941, a Branko kod Foče aprila 1943; poginuo u Omerovim Vodama, na planini Ozren, u Istočnoj Bosni 22. jula 1943. Odlikovan Ordenom narodnog^ heroja.",
+    "additional_info": "borac 3. čete 2. bataljona, rođen 1882, Drenova, Gornji Milanovac, krojački radnik, Srbin, u NOB od 1941, član KPJ od 1919, delegat na Vukovarskom kongresu 1920; u partizane pošao sa tri sina: Mišo i Duško poginuli su u Srbiji 1941, a Branko kod Foče aprila 1943; poginuo u Omerovim Vodama, na planini Ozren, u Istočnoj Bosni 22. jula 1943. Odlikovan Ordenom narodnog, heroja.",
     "birth_year": "1882",
     "pdf_page": 12,
     "pdf_y": 362.6,
@@ -47290,14 +47338,6 @@
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100171",
     "pdf_x_end": 456.1,
-    "birth_place": "Drenova, Gornji Milanovac",
-    "ethnicity": "Srbin",
-    "occupation": "krojački radnik",
-    "death_type": "poginuo",
-    "death_date": "22.07.1943",
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon",
-    "death_place": "u Omerovim Vodama, na planini Ozren, u Istočnoj Bosni",
     "party": "KPJ 1919",
     "other_sources": [
       {
@@ -47322,6 +47362,14 @@
         "unit_file": "cacanski-odred-soldiers.json"
       }
     ],
+    "birth_place": "Drenova, Gornji Milanovac",
+    "ethnicity": "Srbin",
+    "occupation": "krojački radnik",
+    "death_type": "poginuo",
+    "death_date": "22.07.1943",
+    "death_place": "u Omerovim Vodama, na planini Ozren, u Istočnoj Bosni",
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon",
     "birth_date": "14.11.1882",
     "variants": {
       "born": [
@@ -48019,10 +48067,10 @@
     "pdf_page": 17,
     "pdf_y": 165.6,
     "pdf_x": 131.4,
-    "pdf_y_end": 174.8,
+    "pdf_y_end": 218.0,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100201",
-    "pdf_x_end": 299.8,
+    "pdf_x_end": 300.6,
     "birth_place": "Vrbica, Livno",
     "ethnicity": "Srbin",
     "occupation": "đak",
@@ -49422,54 +49470,6 @@
     "rank": "borac"
   },
   {
-    "last_name": "Ijuboja",
-    "middle_name": "Pane",
-    "first_name": "Ilija",
-    "fathers_name": "Pane",
-    "full_name": "Ijuboja Pane Ilija",
-    "additional_info": "borac 1. čete 2. bataljona, rođen 1911, Crni Lug, Bosansko Grahovo, zemljoradnik, Srbin, u NOB od 1942, poginuo u Prijepolju 4. decembra 1943. godine.",
-    "birth_year": "1911",
-    "pdf_page": 35,
-    "pdf_y": 363.7,
-    "pdf_x": 310.5,
-    "pdf_y_end": 417.0,
-    "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
-    "soldier_id": "0039100276",
-    "pdf_x_end": 480.4,
-    "birth_place": "Crni Lug, Bosansko Grahovo",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "04.12.1943",
-    "death_place": "Prijepolje",
-    "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon"
-  },
-  {
-    "last_name": "Ijuboja",
-    "middle_name": "Rada",
-    "first_name": "Janko",
-    "fathers_name": "Rade",
-    "full_name": "Ijuboja Rada Janko",
-    "additional_info": "borac 5. bataljona, rođen 1924, Bastasi, Bosansko Grahovo, zemljoradnik, Srbin, u NOB od januara 1943, poginuo na Vučevu krajem maja 1943. godine.",
-    "birth_year": "1924",
-    "pdf_page": 35,
-    "pdf_y": 418.9,
-    "pdf_x": 310.2,
-    "pdf_y_end": 472.2,
-    "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
-    "soldier_id": "0039100277",
-    "pdf_x_end": 480.0,
-    "birth_place": "Bastasi, Bosansko Grahovo",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "krajem maja 1943",
-    "death_place": "Vučevo",
-    "rank": "borac",
-    "unit_detail": "5. bataljon"
-  },
-  {
     "last_name": "Ilić",
     "middle_name": "",
     "first_name": "Dušan",
@@ -50777,7 +50777,7 @@
     "pdf_page": 24,
     "pdf_y": 178.6,
     "pdf_x": 103.4,
-    "pdf_y_end": 229.1,
+    "pdf_y_end": 544.0,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100344",
     "pdf_x_end": 274.5,
@@ -52969,90 +52969,6 @@
     "party": "SKOJ 1941"
   },
   {
-    "last_name": "Kostić",
-    "middle_name": "",
-    "first_name": "Ljubiša",
-    "fathers_name": "",
-    "full_name": "Kostić Ljubiša",
-    "additional_info": "zvani Krivi; komandir voda u 2. četi 2. bataljona, rođen u • Obrenovcu, železničar, Srbin, u NOB od 1941, član KPJ, poginuo u Istočnoj Bosni, kod Omerovih Voda, na planini Ozren, 22. jula 1943. godine.",
-    "pdf_page": 30,
-    "pdf_y": 616.8,
-    "pdf_x": 99.9,
-    "pdf_y_end": 637.0,
-    "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
-    "soldier_id": "0039100453",
-    "pdf_x_end": 271.0,
-    "ethnicity": "Srbin",
-    "occupation": "železničar",
-    "death_type": "poginuo",
-    "death_date": "22.07.1943",
-    "rank": "komandir voda",
-    "unit_detail": "2. četa, 2. bataljon",
-    "death_place": "u Istočnoj Bosni, kod Omerovih Voda, na planini Ozren",
-    "party": "KPJ",
-    "other_sources": [
-      {
-        "soldier_id": "9016004311",
-        "name": "Kostić Ljubiša — Krivi",
-        "additional_info": "službenik na železnici, rođen 1920. u Obrenovcu, živeo u Čačku; borac Čačanskog NOP odreda i Druge proleterske brigade; poginuo u borbi u Šekovićima u Bosni jula 1943.",
-        "pdf_file": "cacanski-kraj-pali.pdf",
-        "pdf_page": 292,
-        "pdf_x": 84.0,
-        "pdf_y": 317.0,
-        "pdf_x_end": 409.3,
-        "pdf_y_end": 358.8,
-        "pdf_x_left": 51.6,
-        "ref_book": "cacanski-kraj-pali"
-      },
-      {
-        "soldier_id": "0039000368",
-        "name": "Kostić Ljubiša",
-        "additional_info": "zvani Krivi; poginuo jula 1943, Šekovići (poginuli u bolnici ispod Majevice); Istočna Bosna (24. jun — 31. avgust 1943)",
-        "pdf_file": "druga-proleterska.pdf",
-        "pdf_page": 2,
-        "pdf_x": 681.6,
-        "pdf_y": 947.2,
-        "pdf_x_end": 700.9,
-        "pdf_y_end": 967.7,
-        "pdf_x_left": 523.4,
-        "pdf_rects": [
-          [
-            681.6,
-            947.2,
-            700.9,
-            956.9
-          ],
-          [
-            523.4,
-            958.0,
-            616.9,
-            967.7
-          ]
-        ],
-        "unit_file": "druga-proleterska-soldiers.json"
-      },
-      {
-        "soldier_id": "0126000384",
-        "name": "Kostić Ljubiša",
-        "additional_info": "zvani Krivi; službenik, rođen 1920. u Obrenovcu, živeo u Čačku; borac Čačanskog NOP odreda i Druge proleterske brigade; poginuo u borbi u Šekovićima u Bosni jula 1943.",
-        "pdf_file": "cacanski-odred.pdf",
-        "pdf_page": 72,
-        "pdf_x": 52.9,
-        "pdf_y": 437.7,
-        "pdf_x_end": 386.5,
-        "pdf_y_end": 463.8,
-        "pdf_x_left": 27.4,
-        "unit_file": "cacanski-odred-soldiers.json"
-      }
-    ],
-    "birth_year": "1920",
-    "borrowed": [
-      "birth_place",
-      "birth_year"
-    ],
-    "birth_place": "Obrenovac"
-  },
-  {
     "last_name": "Kotur",
     "middle_name": "Adama",
     "first_name": "Pavle",
@@ -54429,7 +54345,7 @@
     "pdf_page": 33,
     "pdf_y": 163.5,
     "pdf_x": 314.1,
-    "pdf_y_end": 194.3,
+    "pdf_y_end": 655.1,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100517",
     "pdf_x_end": 483.4,
@@ -57490,7 +57406,7 @@
     "pdf_page": 41,
     "pdf_y": 180.4,
     "pdf_x": 317.9,
-    "pdf_y_end": 231.8,
+    "pdf_y_end": 407.5,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100656",
     "pdf_x_end": 487.3,
@@ -59436,20 +59352,21 @@
     "first_name": "Milorad",
     "fathers_name": "Milan",
     "full_name": "Pavlović Milana Milorad",
-    "additional_info": "borac 2. čete 2. bataljona, rođen 1921, Čačak, ^ đak, Srbin, u NOB od 1941, član KPJ.",
+    "additional_info": "borac 2. čete 2. bataljona, rođen 1921, Čačak, đak, Srbin, u NOB od 1941, član KPJ.",
     "birth_year": "1921",
     "pdf_page": 47,
     "pdf_y": 604.9,
     "pdf_x": 134.8,
-    "pdf_y_end": 625.1,
+    "pdf_y_end": 636.2,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100756",
     "pdf_x_end": 303.9,
+    "party": "KPJ",
     "birth_place": "Čačak",
     "ethnicity": "Srbin",
+    "occupation": "đak",
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "9016001423",
@@ -59805,12 +59722,12 @@
     "first_name": "Nikola",
     "fathers_name": "Đuro",
     "full_name": "Perić Đure Nikola",
-    "additional_info": "borac 4. bataljona, rođen 1907, Plavno, Knin, radnik, Srbin, u NOB od 1942. godine. Košur je većinom bio pod nišanom, a iz te magle stalno očekujemo juriše i smrt. Svakodnevno gledamo raskvašene obale i tmurne borce na položaju. Leže nepomični... Noć je bila kišna kao i sve dotadašnje^ noći. Na borce je sipalo kao iz tuša. Culi su se i pojačani šumovi Sutjeske koja, nabrekla od kišurine, juri prema Drini. Mirko, Ciganin iz Bagrdana, tuži se: - Ovde ništa ne smeš, sem da se boriš. Ne smeš da govoriš, ne smeš da stojiš, samo lezi na zemlji natopljenoj kišom i pusti da te i dalje šiba i kupaj se... Jevrem Popović",
+    "additional_info": "borac 4. bataljona, rođen 1907, Plavno, Knin, radnik, Srbin, u NOB od 1942. godine. Košur je većinom bio pod nišanom, a iz te magle stalno očekujemo juriše i smrt. Svakodnevno gledamo raskvašene obale i tmurne borce na položaju. Leže nepomični... Noć je bila kišna kao i sve dotadašnje, noći. Na borce je sipalo kao iz tuša. Culi su se i pojačani šumovi Sutjeske koja, nabrekla od kišurine, juri prema Drini. Mirko, Ciganin iz Bagrdana, tuži se: - Ovde ništa ne smeš, sem da se boriš. Ne smeš da govoriš, ne smeš da stojiš, samo lezi na zemlji natopljenoj kišom i pusti da te i dalje šiba i kupaj se... Jevrem Popović",
     "birth_year": "1907",
     "pdf_page": 48,
     "pdf_y": 229.7,
     "pdf_x": 99.0,
-    "pdf_y_end": 260.0,
+    "pdf_y_end": 430.2,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100767",
     "pdf_x_end": 268.4,
@@ -61926,7 +61843,7 @@
     "pdf_page": 54,
     "pdf_y": 179.2,
     "pdf_x": 107.4,
-    "pdf_y_end": 209.6,
+    "pdf_y_end": 518.4,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100879",
     "pdf_x_end": 277.6,
@@ -62457,7 +62374,7 @@
     "first_name": "Milija",
     "fathers_name": "Milovan",
     "full_name": "Ristović Milovana Milija",
-    "additional_info": "zvani Plaćo; intendant u brigadnoj^ intendanturi, rođen 1913, Preljina, Čačak, zemljoradnik, Srbin, u NOB od 1941, član KPJ od marta 1942, krajem rata intendant 7. srpske brigade.",
+    "additional_info": "zvani Plaćo; intendant u brigadnoj, intendanturi, rođen 1913, Preljina, Čačak, zemljoradnik, Srbin, u NOB od 1941, član KPJ od marta 1942, krajem rata intendant 7. srpske brigade.",
     "birth_year": "1913",
     "pdf_page": 55,
     "pdf_y": 398.3,
@@ -62466,12 +62383,12 @@
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100909",
     "pdf_x_end": 488.2,
+    "party": "KPJ 1942",
     "birth_place": "Preljina, Čačak",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "intendant",
-    "unit_detail": "intendantura",
-    "party": "KPJ 1942"
+    "unit_detail": "intendantura"
   },
   {
     "last_name": "Ristović",
@@ -63538,7 +63455,7 @@
     "pdf_page": 58,
     "pdf_y": 198.2,
     "pdf_x": 103.4,
-    "pdf_y_end": 228.1,
+    "pdf_y_end": 553.5,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039100955",
     "pdf_x_end": 273.4,
@@ -63609,10 +63526,10 @@
   },
   {
     "last_name": "Spasić",
-    "middle_name": "",
+    "middle_name": "Petra",
     "first_name": "Momčilo",
-    "fathers_name": "",
-    "full_name": "Spasić Momčilo",
+    "fathers_name": "Petar",
+    "full_name": "Spasić Petra Momčilo",
     "additional_info": "borac 2. čete 2. bataljona, rođen 1924, Čačak, đak, Srbin, u NOB od 1941, član SKOJ-a, poginuo u Savovu, na reci Ibar, 17. aprila 1944. kao komandir čete.",
     "birth_year": "1924",
     "pdf_page": 58,
@@ -63652,6 +63569,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=361",
         "source_page": 361,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0126009028",
+        "name": "Spasić Petra Momčilo",
+        "additional_info": "učenik gimnazije, rođen 1924. u Čačku; član KPJ; radio u komesarijatu na železničkoj stanici u Čačku; komandir Druge čačanske čete, a zatim borac Druge proleterske brigade; poginuo u borbi u selu Savovu kod Ušća kao komandir čete 17. aprila 1944.",
+        "pdf_file": "cacanski-odred.pdf",
+        "pdf_page": 78,
+        "pdf_x": 52.1,
+        "pdf_y": 7.4,
+        "pdf_x_end": 384.9,
+        "pdf_y_end": 42.0,
+        "pdf_x_left": 26.2,
+        "unit_file": "cacanski-odred-soldiers.json"
       }
     ]
   },
@@ -64516,7 +64446,7 @@
     "pdf_page": 61,
     "pdf_y": 195.9,
     "pdf_x": 135.6,
-    "pdf_y_end": 237.5,
+    "pdf_y_end": 487.6,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101008",
     "pdf_x_end": 305.9,
@@ -66757,7 +66687,7 @@
     "first_name": "Bosiljka",
     "fathers_name": "Nikola",
     "full_name": "Vidaković-Krčmar Nikole Bosiljka",
-    "additional_info": "politički delegat voda u 2. četi 2. bataljona, rođena 1925, Donja Suvaja, Bosanska Krupa, učenica, Jugoslovenka, u NOB od 1941, član KPJ od januara 1942, krajem rata sekretar Šreskog^komiteta SKOJ-a.",
+    "additional_info": "politički delegat voda u 2. četi 2. bataljona, rođena 1925, Donja Suvaja, Bosanska Krupa, učenica, Jugoslovenka, u NOB od 1941, član KPJ od januara 1942, krajem rata sekretar Šreskogkomiteta SKOJ-a.",
     "birth_year": "1925",
     "pdf_page": 68,
     "pdf_y": 394.3,
@@ -66766,11 +66696,11 @@
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101103",
     "pdf_x_end": 459.8,
+    "party": "KPJ 1942",
     "birth_place": "Donja Suvaja, Bosanska Krupa",
     "occupation": "učenica",
     "rank": "politički delegat voda",
-    "unit_detail": "2. četa, 2. bataljon",
-    "party": "KPJ 1942"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Vidović",
@@ -67948,7 +67878,7 @@
     "pdf_page": 71,
     "pdf_y": 210.6,
     "pdf_x": 324.0,
-    "pdf_y_end": 240.4,
+    "pdf_y_end": 545.7,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101159",
     "pdf_x_end": 494.4,
@@ -68443,8 +68373,8 @@
     "pdf_page": 73,
     "pdf_y": 185.3,
     "pdf_x": 133.4,
-    "pdf_x_end": 301.4,
-    "pdf_y_end": 194.5,
+    "pdf_x_end": 302.6,
+    "pdf_y_end": 227.6,
     "birth_place": "Užice",
     "ethnicity": "Srbin",
     "occupation": "radnik",
@@ -68529,7 +68459,7 @@
     "pdf_page": 73,
     "pdf_y": 456.0,
     "pdf_x": 131.8,
-    "pdf_y_end": 476.0,
+    "pdf_y_end": 487.5,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101193",
     "pdf_x_end": 300.6,
@@ -68685,21 +68615,21 @@
     "first_name": "Stojan",
     "fathers_name": "Ljubomir",
     "full_name": "Ćora Ljubomira Stojan",
-    "additional_info": "borac 2. čete 2. bataljona, rođen 1924, Ćore, Dvor, zemljoradnik, Srbin, u NOB od ^ 1942. godine, član SKOJ-a.",
+    "additional_info": "borac 2. čete 2. bataljona, rođen 1924, Ćore, Dvor, zemljoradnik, Srbin, u NOB od 1942. godine, član SKOJ-a.",
     "birth_year": "1924",
     "pdf_page": 10,
     "pdf_y": 572.8,
     "pdf_x": 103.1,
-    "pdf_y_end": 603.6,
+    "pdf_y_end": 615.3,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101202",
     "pdf_x_end": 273.4,
+    "party": "SKOJ",
     "birth_place": "Ćore, Dvor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "party": "SKOJ"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Ćorić",
@@ -68857,7 +68787,7 @@
     "first_name": "Radivoje",
     "fathers_name": "Vasilije",
     "full_name": "Ćuslović Vasilija Radivoje",
-    "additional_info": "obaveštajni oficir 3. bataljona, rođen 1916, Frislonica, Čačak, zemljoradnik, Srbin^ u NOB od 1941, član KPJ. Umro u Beogradu 20. aprila 1989. godine.",
+    "additional_info": "obaveštajni oficir 3. bataljona, rođen 1916, Frislonica, Čačak, zemljoradnik, Srbin, u NOB od 1941, član KPJ. Umro u Beogradu 20. aprila 1989. godine.",
     "birth_year": "1916",
     "pdf_page": 10,
     "pdf_y": 682.4,
@@ -68868,13 +68798,13 @@
     "pdf_x_end": 457.7,
     "birth_place": "Prislonica, Čačak",
     "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
     "rank": "zamenik komandanta brigade, komandir voda, obaveštajni oficir brigade",
+    "party": "KPJ",
+    "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "20.04.1989",
     "death_place": "Beograd",
     "unit_detail": "3. bataljon",
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "0080001332",
@@ -68982,7 +68912,7 @@
     "pdf_page": 8,
     "pdf_y": 589.4,
     "pdf_x": 285.4,
-    "pdf_y_end": 609.7,
+    "pdf_y_end": 622.8,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101219",
     "pdf_x_end": 455.3,
@@ -69071,7 +69001,7 @@
     "pdf_page": 9,
     "pdf_y": 494.0,
     "pdf_x": 134.6,
-    "pdf_y_end": 524.8,
+    "pdf_y_end": 536.3,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101224",
     "pdf_x_end": 303.5,
@@ -69095,7 +69025,7 @@
     "pdf_page": 9,
     "pdf_y": 569.6,
     "pdf_x": 134.3,
-    "pdf_y_end": 589.6,
+    "pdf_y_end": 601.1,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101225",
     "pdf_x_end": 303.1,
@@ -69115,7 +69045,7 @@
     "pdf_page": 9,
     "pdf_y": 537.2,
     "pdf_x": 134.6,
-    "pdf_y_end": 557.2,
+    "pdf_y_end": 568.7,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101226",
     "pdf_x_end": 303.0,
@@ -70187,7 +70117,7 @@
     "pdf_page": 15,
     "pdf_y": 163.4,
     "pdf_x": 313.8,
-    "pdf_y_end": 194.2,
+    "pdf_y_end": 634.9,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101270",
     "pdf_x_end": 484.2,
@@ -70318,7 +70248,7 @@
     "pdf_page": 61,
     "pdf_y": 630.6,
     "pdf_x": 316.8,
-    "pdf_y_end": 650.8,
+    "pdf_y_end": 661.8,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101279",
     "pdf_x_end": 487.3,
@@ -71006,7 +70936,7 @@
     "pdf_page": 63,
     "pdf_y": 464.0,
     "pdf_x": 133.3,
-    "pdf_y_end": 505.6,
+    "pdf_y_end": 517.1,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101308",
     "pdf_x_end": 302.5,
@@ -71028,7 +70958,7 @@
     "pdf_page": 63,
     "pdf_y": 518.0,
     "pdf_x": 133.3,
-    "pdf_y_end": 548.8,
+    "pdf_y_end": 559.6,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101309",
     "pdf_x_end": 302.3,
@@ -71085,7 +71015,7 @@
     "pdf_page": 63,
     "pdf_y": 561.5,
     "pdf_x": 133.6,
-    "pdf_y_end": 581.5,
+    "pdf_y_end": 592.8,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101312",
     "pdf_x_end": 302.3,
@@ -71149,7 +71079,7 @@
     "pdf_page": 63,
     "pdf_y": 421.6,
     "pdf_x": 316.2,
-    "pdf_y_end": 452.4,
+    "pdf_y_end": 463.8,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101317",
     "pdf_x_end": 486.2,
@@ -71448,7 +71378,7 @@
     "pdf_page": 73,
     "pdf_y": 488.4,
     "pdf_x": 132.0,
-    "pdf_y_end": 508.4,
+    "pdf_y_end": 519.9,
     "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
     "soldier_id": "0039101336",
     "pdf_x_end": 300.6,
@@ -73335,7 +73265,6 @@
     "fathers_name": "Dragomir",
     "full_name": "Nedeljković Dragomira Slobodanka",
     "additional_info": "Spisak poginulih i umrlih boraca Požeške čete 2. proleterske brigade, Godovik: Nedeljković Slobodanka, umrla u Poljima Kolašiiskim 30. maja 1944. posle duže bolesti",
-    "birth_year": "1922",
     "birth_place": "Godovik",
     "unit_detail": "",
     "pdf_file": "pozega-cete.pdf",
@@ -73363,6 +73292,7 @@
     "death_type": "umro",
     "death_date": "30.05.1944",
     "death_place": "u Poljima Kolašiiskim",
+    "birth_year": "1922",
     "borrowed": [
       "birth_year"
     ],

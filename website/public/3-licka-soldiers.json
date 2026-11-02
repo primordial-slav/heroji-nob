@@ -2315,7 +2315,7 @@
     "first_name": "Spase",
     "fathers_name": "",
     "full_name": "Brkljač Spase",
-    "additional_info": "iz Tomingaja, Bruvno, Gračac, poginuo 28. III 1944. u Dragujiću – Livno. Sahranjen u Grojskoj Dragi _ Livno.",
+    "additional_info": "iz Tomingaja, Bruvno, Gračac, poginuo 28. III 1944. u Dragujiću – Livno. Sahranjen u Grojskoj Dragi Livno.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=368",
     "source_page": 363,
@@ -3618,13 +3618,14 @@
     "first_name": "Milan",
     "fathers_name": "I",
     "full_name": "Dimić I Milan",
-    "additional_info": "iz Ostrovice, L. Osik, Gospić, poginuo 12. IX _ 1944. u Mionici. Sahranjen u Mionici.",
+    "additional_info": "iz Ostrovice, L. Osik, Gospić, poginuo 12. IX 1944. u Mionici. Sahranjen u Mionici.",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=373",
     "source_page": 368,
     "soldier_id": "0118000122",
     "birth_place": "Ostrovica, L. Osik, Gospić",
     "death_type": "poginuo",
-    "death_date": "1944",
+    "death_date": "12.09.1944",
+    "death_place": "Mionica",
     "other_sources": [
       {
         "soldier_id": "9021013680",
@@ -3638,10 +3639,8 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "Valjevo",
     "birth_year": "1926"
   },
   {
@@ -11397,14 +11396,14 @@
     "first_name": "Radoje",
     "fathers_name": "Lj",
     "full_name": "Mandić Lj Radoje",
-    "additional_info": "iz Srnje, Jasika, poginuo 7. IV 1945. u Vrbanji. _",
+    "additional_info": "iz Srnje, Jasika, poginuo 7. IV 1945. u Vrbanji.",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=390",
     "source_page": 385,
     "soldier_id": "0118000385",
     "birth_place": "Srnje, Jasika",
     "death_type": "poginuo",
     "death_date": "07.04.1945",
-    "death_place": "u Vrbanji. _",
+    "death_place": "Vrbanja",
     "other_sources": [
       {
         "soldier_id": "9013003947",
@@ -14938,15 +14937,11 @@
     "first_name": "Jovo",
     "fathers_name": "Dujo",
     "full_name": "Narančić Duje Jovo",
-    "additional_info": "iz Turjanskog, Vrhovina, Otočac, poginuo 15. I 1944. u Variću – Glavice kod Pecke. _",
+    "additional_info": "iz Turjanskog, Vrhovina, Otočac, poginuo 15. I 1944. u Variću – Glavice kod Pecke.",
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=393",
     "source_page": 388,
     "soldier_id": "0118000501",
-    "birth_place": "Turjanski, Vrhovina, Otočac",
-    "death_type": "poginuo",
-    "death_date": "15.01.1944",
-    "death_place": "u Variću – Glavice kod Pecke. _",
     "other_sources": [
       {
         "soldier_id": "9064000316",
@@ -14969,11 +14964,15 @@
         "unit_file": "soldiers.json"
       }
     ],
+    "birth_place": "Turjanski, Vrhovina, Otočac",
+    "death_type": "poginuo",
+    "death_date": "15.01.1944",
+    "death_place": "u Variću – Glavice kod Pecke",
     "variants": {
       "death": [
         {
           "date": "01.06.1944",
-          "place": "u Variću – Glavice kod Pecke. _"
+          "place": "u Variću – Glavice kod Pecke"
         }
       ]
     }
@@ -21319,11 +21318,12 @@
     "first_name": "Dragoljub",
     "fathers_name": "A",
     "full_name": "Radovanović A Dragoljub",
-    "additional_info": "_iz Gor. Šatornje, orašački, poginuo 10. IV 1945. u Soljanima.",
+    "additional_info": "iz Gor. Šatornje, orašački, poginuo 10. IV 1945. u Soljanima.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=403",
     "source_page": 398,
     "soldier_id": "0118000699",
+    "birth_place": "Gor. Šatornje",
     "death_type": "poginuo",
     "death_date": "10.04.1945",
     "death_place": "Soljani",
@@ -25089,13 +25089,14 @@
     "first_name": "Milosav",
     "fathers_name": "M",
     "full_name": "Tanasić M Milosav",
-    "additional_info": "iz Baljevca, Konatica, Umka, poginuo 7._IV 1945. u Vrbanji.",
+    "additional_info": "iz Baljevca, Konatica, Umka, poginuo 7. IV 1945. u Vrbanji.",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=410",
     "source_page": 405,
     "soldier_id": "0118000810",
     "birth_place": "Baljevac, Konatica, Umka",
     "death_type": "poginuo",
-    "death_date": "1945",
+    "death_date": "07.04.1945",
+    "death_place": "Vrbanja",
     "other_sources": [
       {
         "soldier_id": "9013003970",
@@ -25136,10 +25137,8 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "Vrbanja",
     "birth_year": "1926"
   },
   {
@@ -27116,7 +27115,7 @@
     "first_name": "Ilija",
     "fathers_name": "",
     "full_name": "Vojinović Ilija",
-    "additional_info": "iz Mazina, Graćac, poginuo 17. II 1943. u Zu-1eševici, Donji Lapac. Sahranjen u Orahovcu – Donji Lapac. VOJINOVIC M. JOV_O, iz Mazina, Graćac, poginuo 27. III 1943. u Brušanima.",
+    "additional_info": "iz Mazina, Graćac, poginuo 17. II 1943. u Zu-1eševici, Donji Lapac. Sahranjen u Orahovcu – Donji Lapac. VOJINOVIC M. JOV O, iz Mazina, Graćac, poginuo 27. III 1943. u Brušanima.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=411",
     "source_page": 406,
@@ -27186,12 +27185,12 @@
     "first_name": "Iso",
     "fathers_name": "",
     "full_name": "Vojvodić Iso",
-    "additional_info": "iz Cig_elja, poginuo 23. X 1942. u Cigelju.",
+    "additional_info": "iz Cigelja, poginuo 23. X 1942. u Cigelju.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=413",
     "source_page": 408,
     "soldier_id": "0118000873",
-    "birth_place": "Cig_elja",
+    "birth_place": "Cigelja",
     "death_type": "poginuo",
     "death_date": "23.10.1942",
     "death_place": "Cigelja"
@@ -27939,13 +27938,12 @@
     "first_name": "Dmitar",
     "fathers_name": "Jovan",
     "full_name": "Zaklan Jovana Dmitar",
-    "additional_info": "narodni heroj; Rođen je 11. juna 1915. godine u selu Šalamuniću, opština Titova Korenica. Po zanimanju obućarski radnik. Za člana KPJ primljen je 28. avgusta 1941. godine. Iste godine stupio je i u NOB._ Sada je general—major JNA. Za narodnog heroja proglašen je 27. novembra 1953. godine. Već u početku ustanka bio je među prvima koji su se isticali borbenošću i odanošću politici KPJ i kao takav postao je komesar“ čete, a docnije komandant bataljona »Božidar Adžija<<. Novembra 1943. godine postavljen je za zamenika komandanta 3. ličke brigade. Na toj dužnosti dva puta je ranjen u neposrednoj borbi sa neprijateljem. Posle toga nalazio se na raznim dužnostima u drugim jedinicama 6. divizije do kraja rata.",
+    "additional_info": "narodni heroj; Rođen je 11. juna 1915. godine u selu Šalamuniću, opština Titova Korenica. Po zanimanju obućarski radnik. Za člana KPJ primljen je 28. avgusta 1941. godine. Iste godine stupio je i u NOB. Sada je general—major JNA. Za narodnog heroja proglašen je 27. novembra 1953. godine. Već u početku ustanka bio je među prvima koji su se isticali borbenošću i odanošću politici KPJ i kao takav postao je komesar“ čete, a docnije komandant bataljona »Božidar Adžija<<. Novembra 1943. godine postavljen je za zamenika komandanta 3. ličke brigade. Na toj dužnosti dva puta je ranjen u neposrednoj borbi sa neprijateljem. Posle toga nalazio se na raznim dužnostima u drugim jedinicama 6. divizije do kraja rata.",
     "birth_year": "1915",
     "birth_place": "Šalamunić, Titova Korenica",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=415",
     "source_page": 410,
     "soldier_id": "0118000895",
-    "rank": "komandant bataljona",
     "occupation": "radnik",
     "other_sources": [
       {
@@ -27977,6 +27975,7 @@
         "unit_file": "soldiers.json"
       }
     ],
+    "rank": "komandant bataljona",
     "birth_date": "11.06.1915"
   },
   {
@@ -29479,14 +29478,14 @@
     "first_name": "Sreten",
     "fathers_name": "V",
     "full_name": "Đorđević V Sreten",
-    "additional_info": "iz Leskovca, poginuo 2. V 1945. u Kajgani. Sahranjen u Kajgani. _",
+    "additional_info": "iz Leskovca, poginuo 2. V 1945. u Kajgani. Sahranjen u Kajgani.",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=376",
     "source_page": 371,
     "soldier_id": "0118000946",
+    "death_place": "u Kajgani",
     "birth_place": "Leskovac",
     "death_type": "poginuo",
     "death_date": "02.05.1945",
-    "death_place": "u Kajgani",
     "other_sources": [
       {
         "soldier_id": "9025017601",
@@ -29779,13 +29778,14 @@
     "first_name": "Milan",
     "fathers_name": "",
     "full_name": "Đukić Milan",
-    "additional_info": "iz Kurjaka, Udbina, poginuo 25. VIII 1944. _u Jasikovcu.",
+    "additional_info": "iz Kurjaka, Udbina, poginuo 25. VIII 1944. u Jasikovcu.",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=375",
     "source_page": 370,
     "soldier_id": "0118000956",
     "birth_place": "Kurjak, Udbina",
     "death_type": "poginuo",
     "death_date": "25.08.1944",
+    "death_place": "Jasikovac",
     "other_sources": [
       {
         "soldier_id": "9021048007",
@@ -29799,10 +29799,8 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "Crna gora",
     "birth_year": "1912"
   },
   {
@@ -31104,7 +31102,7 @@
     "first_name": "Vlastimir",
     "fathers_name": "M",
     "full_name": "Živković M Vlastimir",
-    "additional_info": "iz Leskovca, poginuo 8. IV 1945. u _Duboviku.",
+    "additional_info": "iz Leskovca, poginuo 8. IV 1945. u Duboviku.",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=414",
     "source_page": 409,
@@ -31112,6 +31110,7 @@
     "birth_place": "Leskovac",
     "death_type": "poginuo",
     "death_date": "08.04.1945",
+    "death_place": "Dubovik",
     "other_sources": [
       {
         "soldier_id": "9014007815",
@@ -31136,10 +31135,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Slavonski brod"
+    ]
   },
   {
     "last_name": "Živojinović",
@@ -31291,13 +31288,14 @@
     "first_name": "Kosta",
     "fathers_name": "",
     "full_name": "Žužić Kosta",
-    "additional_info": "iz Široke Kule, L. Osik, Gospić, poginuo 5. VI _1943. u Brušanima. '",
+    "additional_info": "iz Široke Kule, L. Osik, Gospić, poginuo 5. VI 1943. u Brušanima. '",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=413",
     "source_page": 408,
     "soldier_id": "0118001002",
     "birth_place": "Široka Kula, L. Osik, Gospić",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "05.06.1943",
+    "death_place": "Brušani",
     "other_sources": [
       {
         "soldier_id": "9007000461",
@@ -31331,10 +31329,8 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "Brušani",
     "birth_year": "1904"
   }
 ]

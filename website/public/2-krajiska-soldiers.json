@@ -898,7 +898,7 @@
     "first_name": "Slobodan",
     "fathers_name": "Stanimir",
     "full_name": "Antonijević Stanimira Slobodan",
-    "additional_info": "rođen 1921., u Zagorici, Topola, Srbin, zemljoradnik, u NOB od septembra 1944., u brigadi od 2. 09. 1944., 3. četa, 3. bataljon, zamjenik komandira čete, poginuo _5. 05. 1945. u Kovačevcu križevačkom (Bjelovar);",
+    "additional_info": "rođen 1921., u Zagorici, Topola, Srbin, zemljoradnik, u NOB od septembra 1944., u brigadi od 2. 09. 1944., 3. četa, 3. bataljon, zamjenik komandira čete, poginuo 5. 05. 1945. u Kovačevcu križevačkom (Bjelovar);",
     "birth_year": "1921",
     "pdf_page": 4,
     "pdf_y": 268.0,
@@ -906,13 +906,14 @@
     "pdf_y_end": 290.4,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000036",
+    "pdf_x_end": 362.7,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "05.05.1945",
+    "death_place": "u Kovačevcu križevačkom (Bjelovar)",
     "rank": "zamjenik komandira čete",
-    "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 362.7
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "last_name": "Antonijević",
@@ -1197,7 +1198,7 @@
     "first_name": "Sadi",
     "fathers_name": "Meho",
     "full_name": "Arifović Mehe Sadi",
-    "additional_info": "'JA, rođen 1910., u Brčkom, Brčko, Musliman, u NOB od aprila 1945., u brigadi • 7. 04. 1945., borac, poginuo 19. 04. 1945. u Gornjoj Vrbi (Slavonski Brod);",
+    "additional_info": "'JA, rođen 1910., u Brčkom, Brčko, Musliman, u NOB od aprila 1945., u brigadi 7. 04. 1945., borac, poginuo 19. 04. 1945. u Gornjoj Vrbi (Slavonski Brod);",
     "birth_year": "1910",
     "pdf_page": 4,
     "pdf_y": 327.5,
@@ -1205,12 +1206,12 @@
     "pdf_y_end": 342.5,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000046",
+    "death_place": "u Gornjoj Vrbi (Slavonski Brod)",
+    "pdf_x_end": 362.6,
     "ethnicity": "Musliman",
     "death_type": "poginuo",
     "death_date": "19.04.1945",
-    "death_place": "u Gornjoj Vrbi (Slavonski Brod)",
-    "rank": "borac",
-    "pdf_x_end": 362.6
+    "rank": "borac"
   },
   {
     "last_name": "Žarković",
@@ -2320,7 +2321,7 @@
     "first_name": "Jovo",
     "fathers_name": "",
     "full_name": "Bjelić Jovo",
-    "additional_info": "rodom od Bosanske Dubice, Srbin, zemljoradnik, u NOB òd 1941., u brigadi od 2. 08. 1942., 1. bataljon, borac, poginuo krajem novembra 1942. prilikom napada na Bosanski Novi; _",
+    "additional_info": "rodom od Bosanske Dubice, Srbin, zemljoradnik, u NOB òd 1941., u brigadi od 2. 08. 1942., 1. bataljon, borac, poginuo krajem novembra 1942. prilikom napada na Bosanski Novi;",
     "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 458.4,
@@ -2328,14 +2329,14 @@
     "pdf_y_end": 480.8,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000088",
+    "pdf_x_end": 366.8,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "krajem novembra 1942",
+    "death_place": "Bosanski Novi",
     "rank": "borac",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 366.8,
-    "death_place": "Bosanski Novi"
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Beljić",
@@ -5702,7 +5703,7 @@
     "first_name": "Marko",
     "fathers_name": "Stevan",
     "full_name": "Davidović Stevana Marko",
-    "additional_info": "rođen 1920., u Gornjem Lipniku, Sanski Most, Srbin, zemljoradnik, u NOB od 1942., u brigadi od 1942., 2. četa, 2. bataljon, zamjenik komandira čete, poginuo",
+    "additional_info": "rođen 1920., u Gornjem Lipniku, Sanski Most, Srbin, zemljoradnik, u NOB od 1942., u brigadi od 1942., 2. četa, 2. bataljon, zamjenik komandira čete, poginuo 1944.",
     "birth_year": "1920",
     "pdf_page": 11,
     "pdf_y": 531.3,
@@ -5710,12 +5711,13 @@
     "pdf_y_end": 554.7,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000203",
+    "pdf_x_end": 393.5,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_date": "1944",
     "rank": "zamjenik komandira čete",
     "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 393.5,
     "other_sources": [
       {
         "soldier_id": "9022028237",
@@ -5728,12 +5730,8 @@
     ],
     "birth_place": "Donji Lipnik, Sanski Most",
     "borrowed": [
-      "birth_place",
-      "death_date",
-      "death_place"
-    ],
-    "death_date": "1945",
-    "death_place": "Kod tuzle"
+      "birth_place"
+    ]
   },
   {
     "last_name": "Davidović",
@@ -15587,7 +15585,7 @@
     "first_name": "Obrad",
     "fathers_name": "Ilija",
     "full_name": "Knežević Ilije Obrad",
-    "additional_info": "rođen 1923, u Jelašinovcima, Sanski Most, Srbin, zemljoradnik, u MOBod početka 1942, u brigadi od 2. 08. 1942, 1. četa, 2. bataljon, poginuo krajem septembr~a 1943, prilikom napada na Tuzlu;",
+    "additional_info": "rođen 1923, u Jelašinovcima, Sanski Most, Srbin, zemljoradnik, u MOBod početka 1942, u brigadi od 2. 08. 1942, 1. četa, 2. bataljon, poginuo krajem septembr-a 1943, prilikom napada na Tuzlu;",
     "birth_year": "1923",
     "pdf_page": 25,
     "pdf_y": 272.0,
@@ -15595,13 +15593,13 @@
     "pdf_y_end": 295.1,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000536",
+    "pdf_x_end": 395.7,
     "birth_place": "Jelašinovci, Sanski Most",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
     "unit_detail": "1. četa, 2. bataljon",
-    "pdf_x_end": 395.7,
     "other_sources": [
       {
         "soldier_id": "9022028592",
@@ -15658,7 +15656,7 @@
     "first_name": "Žarko",
     "fathers_name": "",
     "full_name": "Knežević Žarko",
-    "additional_info": "pomoćnik političkog komesara čete, poginuo 6. 05. 1945. prilikom nap^adana Križevce (Križevci);",
+    "additional_info": "pomoćnik političkog komesara čete, poginuo 6. 05. 1945. prilikom napadana Križevce (Križevci);",
     "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 295.1,
@@ -15666,10 +15664,10 @@
     "pdf_y_end": 310.4,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000538",
+    "pdf_x_end": 393.7,
     "death_type": "poginuo",
     "death_date": "06.05.1945",
-    "rank": "pomoćnik političkog komesara čete",
-    "pdf_x_end": 393.7
+    "rank": "pomoćnik političkog komesara čete"
   },
   {
     "last_name": "Koleta",
@@ -32612,8 +32610,8 @@
         "pdf_page": 170,
         "pdf_x": 292.5,
         "pdf_y": 507.9,
-        "pdf_x_end": 459.8,
-        "pdf_y_end": 552.8,
+        "pdf_x_end": 460.1,
+        "pdf_y_end": 601.1,
         "unit_file": "7-krajiska-soldiers.json"
       }
     ],
@@ -38525,7 +38523,7 @@
     "first_name": "Stanko",
     "fathers_name": "Risto",
     "full_name": "Talić Riste Stanko",
-    "additional_info": "rođen 1922, u Piskavici, Banja Luka, Srbin, zemljoradnik, u NOB od l^j u brigadi od 2.08. 1942, 3. četa, 3. bataljon, borac-puškomitraljezac, poginuo polovinom IS^'' u Klupama, Borija (Teslić);",
+    "additional_info": "rođen 1922, u Piskavici, Banja Luka, Srbin, zemljoradnik, u NOB od lj u brigadi od 2.08. 1942, 3. četa, 3. bataljon, borac-puškomitraljezac, poginuo polovinom IS^'' u Klupama, Borija (Teslić);",
     "birth_year": "1922",
     "pdf_page": 57,
     "pdf_y": 77.7,
@@ -38533,13 +38531,13 @@
     "pdf_y_end": 100.5,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001300",
+    "pdf_x_end": 392.6,
     "birth_place": "Piskavica, Banja Luka",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 392.6,
-    "rank": "puškomitraljezac"
+    "rank": "puškomitraljezac",
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "last_name": "Talić",
@@ -38547,7 +38545,7 @@
     "first_name": "Đurađ",
     "fathers_name": "Vaskrsije",
     "full_name": "Talić Vaskrsije Đurađ",
-    "additional_info": "rođen 1912, u Piskavici, Banja Luka, Srbin, zemlioradnik, u NOB od l^j u brigadi od 2.08. 1942, 3. četa, 3. bataljon, desetar, poginuo novembra 1942. kod Ljubije jedor);",
+    "additional_info": "rođen 1912, u Piskavici, Banja Luka, Srbin, zemlioradnik, u NOB od lj u brigadi od 2.08. 1942, 3. četa, 3. bataljon, desetar, poginuo novembra 1942. kod Ljubije jedor);",
     "birth_year": "1912",
     "pdf_page": 57,
     "pdf_y": 54.4,
@@ -38555,15 +38553,15 @@
     "pdf_y_end": 77.3,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001301",
+    "death_place": "kod Ljubije jedor",
+    "pdf_x_end": 386.7,
     "birth_place": "Piskavica, Banja Luka",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "11.1942",
-    "death_place": "kod Ljubije jedor",
     "rank": "desetar",
     "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 386.7,
     "other_sources": [
       {
         "soldier_id": "9022000729",
@@ -39125,19 +39123,13 @@
     "first_name": "Srđan",
     "fathers_name": "Pera",
     "full_name": "Todić Pere Srđan",
-    "additional_info": "rođen u Pištalinama, Bosanska Krupa, Srbin, zemljoradnik, u NOB od 19^ u brigadi od 1942, poginuo krajem januara 1943. u Benakovcu (Bosanska Krupa); 2. čet^ £ bataljon, borac;",
+    "additional_info": "rođen u Pištalinama, Bosanska Krupa, Srbin, zemljoradnik, u NOB od 19^ u brigadi od 1942, poginuo krajem januara 1943. u Benakovcu (Bosanska Krupa); 2. čet, £ bataljon, borac;",
     "pdf_page": 57,
     "pdf_y": 336.6,
     "pdf_x": 35.6,
     "pdf_y_end": 359.5,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001317",
-    "birth_place": "Pištaline, Bosanska Krupa",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "krajem januara 1943",
-    "rank": "borac",
     "pdf_x_end": 390.0,
     "death_place": "u Benakovcu (Bosanska Krupa)",
     "other_sources": [
@@ -39186,6 +39178,12 @@
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
+    "birth_place": "Pištaline, Bosanska Krupa",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "krajem januara 1943",
+    "rank": "borac",
     "birth_year": "1926",
     "borrowed": [
       "birth_year"
@@ -39325,7 +39323,7 @@
     "first_name": "Miloš",
     "fathers_name": "Kosta",
     "full_name": "Todorović Koste Miloš",
-    "additional_info": "rođen 1922, u Donjem Ribniku, Ključ, Srbin, šumski radnik, u N°®od početka 1942, u brigadi od 1942. 3. četa, 3. bataljon, vodnik voda, poginuo 5. 01. 1944- ulCunosićima (Vareš);",
+    "additional_info": "rođen 1922, u Donjem Ribniku, Ključ, Srbin, šumski radnik, u NOBod početka 1942, u brigadi od 1942. 3. četa, 3. bataljon, vodnik voda, poginuo 5. 01. 1944- ulCunosićima (Vareš);",
     "birth_year": "1922",
     "pdf_page": 57,
     "pdf_y": 440.1,
@@ -39333,6 +39331,7 @@
     "pdf_y_end": 462.9,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001322",
+    "pdf_x_end": 388.9,
     "birth_place": "Donji Ribnik, Ključ",
     "ethnicity": "Srbin",
     "occupation": "šumski radnik",
@@ -39340,7 +39339,6 @@
     "death_date": "05.01.1944",
     "rank": "vodnik",
     "unit_detail": "3. četa, 3. bataljon",
-    "pdf_x_end": 388.9,
     "other_sources": [
       {
         "soldier_id": "9022019310",
@@ -39422,7 +39420,7 @@
     "first_name": "Aleksandar",
     "fathers_name": "Radomir",
     "full_name": "Tolić Radomira Aleksandar",
-    "additional_info": "rođen 1927, u Pranjanima, Gornji Milanovac, Srbin, zemljo/f^' u NOB od novembra 1944, u brigadi od 6. 11. 1944, 1. četa, 1. bataljon, borac, poginu^ \" 1945. prilikom napada na Bijeljinu (Bijeljina);",
+    "additional_info": "rođen 1927, u Pranjanima, Gornji Milanovac, Srbin, zemljo/f^' u NOB od novembra 1944, u brigadi od 6. 11. 1944, 1. četa, 1. bataljon, borac, poginu, \" 1945. prilikom napada na Bijeljinu (Bijeljina);",
     "birth_year": "1927",
     "pdf_page": 57,
     "pdf_y": 509.9,
@@ -39430,11 +39428,11 @@
     "pdf_y_end": 534.2,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001325",
+    "pdf_x_end": 387.0,
     "birth_place": "Pranjani, Gornji Milanovac",
     "ethnicity": "Srbin",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 387.0,
     "other_sources": [
       {
         "soldier_id": "9016003227",
@@ -41643,7 +41641,7 @@
     "first_name": "Đorđina",
     "fathers_name": "Lazo",
     "full_name": "Vrbica Laze Đorđina",
-    "additional_info": "zvana Dina; rođen 1913, u Titogradu, Crnogorka, student Visoke ekonomskekomercijalne škole, u NOB od 1941, u brigadi od početka maja 1943, Štab brigade, član Politodjela, poginula 29. 05. 1943, u Blatnici (Teslić). Za narodnog heroja proglašena 24. 07.",
+    "additional_info": "zvana Dina; rođen 1913, u Titogradu, Crnogorka, student Visoke ekonomskekomercijalne škole, u NOB od 1941, u brigadi od početka maja 1943, Štab brigade, član Politodjela, poginula 29. 05. 1943, u Blatnici (Teslić). Za narodnog heroja proglašena 24. 07. 1953.",
     "birth_year": "1913",
     "pdf_page": 62,
     "pdf_y": 282.9,
@@ -41651,12 +41649,12 @@
     "pdf_y_end": 314.1,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001400",
+    "death_place": "u Blatnici (Teslić)",
+    "pdf_x_end": 361.7,
     "birth_place": "Titograd",
     "ethnicity": "Crnogorka",
     "death_type": "poginuo",
     "death_date": "29.05.1943",
-    "death_place": "u Blatnici (Teslić)",
-    "pdf_x_end": 361.7,
     "other_sources": [
       {
         "soldier_id": "9002001242",
@@ -42061,7 +42059,7 @@
     "first_name": "Branko",
     "fathers_name": "Dušan",
     "full_name": "Vukojević Dušana Branko",
-    "additional_info": "rođen 1920, u Lušci Palanci, Sanski Most, Srbin, zemljoradnik, u NOB od 1941, u brigadi od 2. 08. 1942, Prateća četa, poginuo u Centralnoj bolnici polovinom",
+    "additional_info": "rođen 1920, u Lušci Palanci, Sanski Most, Srbin, zemljoradnik, u NOB od 1941, u brigadi od 2. 08. 1942, Prateća četa, poginuo u Centralnoj bolnici polovinom 1943.",
     "birth_year": "1920",
     "pdf_page": 63,
     "pdf_y": 155.0,
@@ -42069,11 +42067,12 @@
     "pdf_y_end": 177.9,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001416",
+    "pdf_x_end": 394.1,
     "birth_place": "Lušci Palanka, Sanski Most",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "pdf_x_end": 394.1,
+    "death_date": "polovinom 1943",
     "unit_detail": "prateća četa",
     "other_sources": [
       {
@@ -42096,13 +42095,7 @@
         "pdf_y_end": 356.2,
         "ref_book": "sanski-most-borci"
       }
-    ],
-    "death_date": "1941",
-    "borrowed": [
-      "death_date",
-      "death_place"
-    ],
-    "death_place": "Nikšić-c.gora"
+    ]
   },
   {
     "last_name": "Vukojević",
@@ -42855,11 +42848,11 @@
     "pdf_x_end": 397.5
   },
   {
-    "last_name": "Ćekić",
+    "last_name": "Čekić",
     "middle_name": "",
     "first_name": "Pero",
     "fathers_name": "",
-    "full_name": "Ćekić Pero",
+    "full_name": "Čekić Pero",
     "additional_info": "rođen u Johovi, Bosanska Dubica, Srbin, zemljoradnik, u NOB od 1941., u brigadi od 2. 08. 1942., 1. bataljon, vodnik voda, poginuo oktobra 1942. prilikom napada na Staru Rijeku (Sanski Most);",
     "pdf_page": 9,
     "pdf_y": 431.5,
@@ -43395,7 +43388,7 @@
     "first_name": "Pavle",
     "fathers_name": "",
     "full_name": "Čekić Pavle",
-    "additional_info": "rodom od Bosanske Dubice, u NOB od 1941., u brigadi od 2.08. 1942., borac, poginuo",
+    "additional_info": "rodom od Bosanske Dubice, u NOB od 1941., u brigadi od 2.08. 1942., borac, poginuo 1943.",
     "birth_year": "",
     "pdf_page": 9,
     "pdf_y": 415.6,
@@ -43403,9 +43396,10 @@
     "pdf_y_end": 431.0,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001462",
+    "pdf_x_end": 397.6,
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 397.6
+    "death_date": "1943",
+    "rank": "borac"
   },
   {
     "last_name": "Čelić",
@@ -45332,7 +45326,7 @@
     "first_name": "Bećir",
     "fathers_name": "Salko",
     "full_name": "Šišić Salke Bećir",
-    "additional_info": "rođen 1926, u Gornjim Živinicama, Živinice, Musliman, zemljoradnik, u NOB od oktobra 1943, u brigadi od 10. 10. 1943, poginuo početkom decembra 1943. na Ćrvenim _ . Stijenama kod Sarajeva;",
+    "additional_info": "rođen 1926, u Gornjim Živinicama, Živinice, Musliman, zemljoradnik, u NOB od oktobra 1943, u brigadi od 10. 10. 1943, poginuo početkom decembra 1943. na Ćrvenim . Stijenama kod Sarajeva;",
     "birth_year": "1926",
     "pdf_page": 55,
     "pdf_y": 486.2,
@@ -45341,12 +45335,12 @@
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024001531",
     "birth_place": "Gornje Živinice, Živinice",
+    "pdf_x_end": 391.2,
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "početkom decembra 1943",
-    "death_place": "na Ćrvenim _ . Stijenama kod Sarajeva",
-    "pdf_x_end": 391.2,
+    "death_place": "na Ćrvenim . Stijenama kod Sarajeva",
     "other_sources": [
       {
         "soldier_id": "0023001948",
@@ -45365,7 +45359,7 @@
       "death": [
         {
           "date": "1945",
-          "place": "na Ćrvenim _ . Stijenama kod Sarajeva"
+          "place": "na Ćrvenim . Stijenama kod Sarajeva"
         }
       ]
     }

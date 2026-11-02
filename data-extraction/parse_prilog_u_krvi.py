@@ -76,8 +76,8 @@ def read() -> list[dict]:
                 t = cyrillic_to_latin(' '.join(w['text'] for w in ws)).strip()
                 t = t.replace('J1', 'L').replace('j1', 'l')             # the OCR's Л: "J1EOVAC" = LEOVAC, "PJ1ISKA"
                 x0 = ws[0]['x0']
-                if re.fullmatch(r'[\d\W]{1,5}', t):
-                    continue                                             # the page number
+                if re.fullmatch(r'[\d\W]{1,5}', t) and not re.match(r'\W*19\d\d', t):
+                    continue                                             # the page number; a year alone ends an entry
                 indented = x0 > text_x + 12                              # an entry's first line is indented
                 m = START.match(re.sub(r"^[.'•·*\"„]+\s*", '', t)) if indented else None   # ".147.", "'176.", "•323."
                 if m:

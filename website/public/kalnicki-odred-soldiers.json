@@ -780,7 +780,7 @@
     "first_name": "Miloš",
     "fathers_name": "",
     "full_name": "Badovinac Miloš",
-    "additional_info": "u KPO od jeseni",
+    "additional_info": "u KPO od jeseni 1942.",
     "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 156.0,
@@ -903,7 +903,7 @@
     "first_name": "Zrinka",
     "fathers_name": "Alojz",
     "full_name": "Bajza Alojza Zrinka",
-    "additional_info": "r.1925; Rasinja, Koprivnica; član KP; u KPO od",
+    "additional_info": "r.1925; Rasinja, Koprivnica; član KP; u KPO od 1943.",
     "birth_year": "1925",
     "pdf_page": 3,
     "pdf_y": 375.1,
@@ -912,10 +912,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000038",
     "pdf_x_end": 281.2,
-    "birth_place": "Rasinja, Koprivnica",
     "ethnicity": "Hrvatica",
     "occupation": "domaćica",
     "party": "KPJ",
+    "birth_place": "Rasinja, Koprivnica",
     "other_sources": [
       {
         "soldier_id": "0035100229",
@@ -3066,7 +3066,7 @@
     "first_name": "Dragutin",
     "fathers_name": "",
     "full_name": "Bel Dragutin",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 563.8,
@@ -3244,7 +3244,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Belec Ivan",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 263.0,
@@ -3373,7 +3373,30 @@
     "soldier_id": "0058000144",
     "pdf_x_end": 458.6,
     "birth_place": "Mali Otok, Koprivnica",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035100613",
+        "name": "Belković-Jovićin Jelka",
+        "additional_info": "r. 1926, s. Mali Otok, Koprivnica, Hrvatica, čl. SKOJ-a, NOV 1943.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 91,
+        "pdf_x": 114.0,
+        "pdf_y": 595.8,
+        "pdf_x_end": 265.3,
+        "pdf_y_end": 622.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Belović",
@@ -5099,7 +5122,7 @@
     "first_name": "Slavko",
     "fathers_name": "",
     "full_name": "Blažinec Slavko",
-    "additional_info": "Bedenika, r. 1926; Gornja Poljana; Novi Marof; član SKOJ-a i KP; u KPO od proleća",
+    "additional_info": "Bedenika, r. 1926; Gornja Poljana; Novi Marof; član SKOJ-a i KP; u KPO od proleća 1943.",
     "birth_year": "1926",
     "pdf_page": 7,
     "pdf_y": 636.0,
@@ -5108,8 +5131,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000206",
     "pdf_x_end": 458.6,
-    "birth_place": "Bedenika",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "birth_place": "Bedenika"
   },
   {
     "last_name": "Blažinović",
@@ -6982,7 +7005,7 @@
     "middle_name": "Marije",
     "first_name": "Franjo",
     "full_name": "Bregović Marije Franjo",
-    "additional_info": "r. 1920; Slanje, Ludbreg; član KP ; u KPO od",
+    "additional_info": "r. 1920; Slanje, Ludbreg; član KP ; u KPO od 1943.",
     "birth_year": "1920",
     "pdf_page": 9,
     "pdf_y": 291.1,
@@ -6991,11 +7014,11 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000285",
     "pdf_x_end": 458.7,
-    "birth_place": "Slanje, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "KPJ",
     "mothers_name": "Marija",
+    "birth_place": "Slanje, Ludbreg",
     "fathers_name": "Marij",
     "other_sources": [
       {
@@ -7053,7 +7076,7 @@
     "first_name": "Josip",
     "fathers_name": "Juraj",
     "full_name": "Bregović Juraja Josip",
-    "additional_info": "r. 1916; Ivanec, Varaždin ; član KP ; u KPO od",
+    "additional_info": "r. 1916; Ivanec, Varaždin ; član KP ; u KPO od 1943.",
     "birth_year": "1916",
     "pdf_page": 9,
     "pdf_y": 355.7,
@@ -7062,8 +7085,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000287",
     "pdf_x_end": 458.6,
-    "birth_place": "Ivanec, Varaždin",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ivanec, Varaždin"
   },
   {
     "last_name": "Bregović",
@@ -8525,7 +8548,7 @@
     "first_name": "Joso",
     "fathers_name": "Mijo",
     "full_name": "Cetušić Mije Joso",
-    "additional_info": "r.1906; Osijek Vojakovački, Križevci; u KPO od",
+    "additional_info": "r.1906; Osijek Vojakovački, Križevci; u KPO od 1942.",
     "birth_year": "1906",
     "pdf_page": 11,
     "pdf_y": 488.6,
@@ -8578,7 +8601,7 @@
     "first_name": "Veselin",
     "fathers_name": "Gajo",
     "full_name": "Cetušić Gaje Veselin",
-    "additional_info": "r. 1927; Osijek Vojakovački, Križevci; u KPO od",
+    "additional_info": "r. 1927; Osijek Vojakovački, Križevci; u KPO od 1943.",
     "birth_year": "1927",
     "pdf_page": 11,
     "pdf_y": 594.5,
@@ -8940,7 +8963,7 @@
     "first_name": "Marija",
     "fathers_name": "Josip",
     "full_name": "Copak-Kolenko Josipa Marija",
-    "additional_info": "r.1923; Lepoglava, Ivanec ; u KPO od",
+    "additional_info": "r.1923; Lepoglava, Ivanec ; u KPO od 1943.",
     "birth_year": "1923",
     "pdf_page": 11,
     "pdf_y": 509.0,
@@ -10006,7 +10029,7 @@
     "first_name": "Milovan",
     "fathers_name": "",
     "full_name": "Dević Milovan",
-    "additional_info": "zvani Javor; iz Velike Branjske, Koprivnica; borac KPO od",
+    "additional_info": "zvani Javor; iz Velike Branjske, Koprivnica; borac KPO od 1942.",
     "birth_year": "",
     "pdf_page": 14,
     "pdf_y": 133.9,
@@ -10506,6 +10529,18 @@
         "pdf_x_end": 392.0,
         "pdf_y_end": 204.0,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "0147000185",
+        "name": "Domišljanović Juraja Janko",
+        "additional_info": "Tugonica, Donja Stubica, poginuo na Kalniku svibnja 1944.",
+        "pdf_file": "zagrebacki-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 310.8,
+        "pdf_y": 877.0670000000005,
+        "pdf_x_end": 545.6,
+        "pdf_y_end": 898.4,
+        "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -10776,7 +10811,7 @@
     "first_name": "Milan",
     "fathers_name": "Jovo",
     "full_name": "Dragašević Jove Milan",
-    "additional_info": "iz Osijeka Vojakovačkog, Križevci; u KPO od",
+    "additional_info": "iz Osijeka Vojakovačkog, Križevci; u KPO od 1942.",
     "pdf_page": 15,
     "pdf_y": 375.1,
     "pdf_x": 126.6,
@@ -11635,7 +11670,7 @@
     "first_name": "Josip",
     "fathers_name": "Franjo",
     "full_name": "Drvar Franje Josip",
-    "additional_info": "r.1912; Lipovac, Zlatar-Bistrica; član KP; u KPO od",
+    "additional_info": "r.1912; Lipovac, Zlatar-Bistrica; član KP; u KPO od 1942.",
     "birth_year": "1912",
     "pdf_page": 15,
     "pdf_y": 637.2,
@@ -11644,8 +11679,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000462",
     "pdf_x_end": 458.6,
-    "birth_place": "Lipovac, Zlatar-Bistrica",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Lipovac, Zlatar-Bistrica"
   },
   {
     "last_name": "Drvoderić",
@@ -13388,7 +13423,7 @@
     "first_name": "Dragutin",
     "fathers_name": "Tomo",
     "full_name": "Frančić Tome Dragutin",
-    "additional_info": "r.1919; Marija na Muri, Čakovec; u KPO od",
+    "additional_info": "r.1919; Marija na Muri, Čakovec; u KPO od 1944.",
     "birth_year": "1919",
     "pdf_page": 18,
     "pdf_y": 312.0,
@@ -14640,7 +14675,7 @@
     "first_name": "Pavle",
     "fathers_name": "",
     "full_name": "Gaži Pavle",
-    "additional_info": "Tomina, r. 1927; Hlebine, Koprivnica; član SKOJ-a; u KPO od",
+    "additional_info": "Tomina, r. 1927; Hlebine, Koprivnica; član SKOJ-a; u KPO od 1943.",
     "birth_year": "1927",
     "pdf_page": 19,
     "pdf_y": 541.7,
@@ -14649,9 +14684,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000579",
     "pdf_x_end": 281.6,
-    "birth_place": "Tomina",
     "ethnicity": "Hrvat",
     "party": "SKOJ",
+    "birth_place": "Tomina",
     "other_sources": [
       {
         "soldier_id": "0035102697",
@@ -14871,7 +14906,7 @@
     "first_name": "Stanko",
     "fathers_name": "Đuro",
     "full_name": "Gerić Đure Stanko",
-    "additional_info": "r. 1926; Hrženica, Ludbreg; član SKOJ-a; u KPO od",
+    "additional_info": "r. 1926; Hrženica, Ludbreg; član SKOJ-a; u KPO od 1943.",
     "birth_year": "1926",
     "pdf_page": 19,
     "pdf_y": 188.4,
@@ -14880,10 +14915,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000586",
     "pdf_x_end": 457.8,
-    "birth_place": "Hrženica, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "party": "SKOJ",
+    "birth_place": "Hrženica, Ludbreg",
     "other_sources": [
       {
         "soldier_id": "0035102723",
@@ -16547,7 +16582,7 @@
     "first_name": "Šimun",
     "fathers_name": "",
     "full_name": "Grabar Šimun",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 21,
     "pdf_y": 508.6,
@@ -16864,7 +16899,7 @@
     "first_name": "Katica",
     "fathers_name": "Josip",
     "full_name": "Gregurek Josipa Katica",
-    "additional_info": "r. 1925; Đelekovec, Koprivnica; u KPO od",
+    "additional_info": "r. 1925; Đelekovec, Koprivnica; u KPO od 1943.",
     "birth_year": "1925",
     "pdf_page": 21,
     "pdf_y": 379.4,
@@ -16873,9 +16908,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000668",
     "pdf_x_end": 458.7,
-    "birth_place": "Đelekovec, Koprivnica",
     "ethnicity": "Hrvatica",
     "occupation": "poljoprivrednica",
+    "birth_place": "Đelekovec, Koprivnica",
     "other_sources": [
       {
         "soldier_id": "0035102990",
@@ -16976,7 +17011,7 @@
     "middle_name": "Marije",
     "first_name": "Franjo",
     "full_name": "Gregurić Marije Franjo",
-    "additional_info": "r. 1920; Slanje, Ludbreg, član KP; u KPO od",
+    "additional_info": "r. 1920; Slanje, Ludbreg, član KP; u KPO od 1943.",
     "birth_year": "1920",
     "pdf_page": 21,
     "pdf_y": 433.4,
@@ -16985,9 +17020,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000673",
     "pdf_x_end": 458.7,
-    "birth_place": "Slanje, Ludbreg",
     "party": "KPJ",
-    "mothers_name": "Marija"
+    "mothers_name": "Marija",
+    "birth_place": "Slanje, Ludbreg"
   },
   {
     "last_name": "Gretić",
@@ -17684,7 +17719,7 @@
     "first_name": "Božo",
     "fathers_name": "Oskar",
     "full_name": "Gvozdenović Oskara Božo",
-    "additional_info": "r.1921; Krapina; član KP; u KPO od",
+    "additional_info": "r.1921; Krapina; član KP; u KPO od 1943.",
     "birth_year": "1921",
     "pdf_page": 22,
     "pdf_y": 166.6,
@@ -17693,10 +17728,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000699",
     "pdf_x_end": 467.0,
-    "birth_place": "Krapina",
     "ethnicity": "Hrvat",
     "occupation": "student",
     "party": "KPJ",
+    "birth_place": "Krapina",
     "other_sources": [
       {
         "soldier_id": "0035103149",
@@ -18024,7 +18059,7 @@
     "first_name": "Viktor",
     "fathers_name": "Josip",
     "full_name": "Habuš Josipa Viktor",
-    "additional_info": "r. 1915; Marija na Muri, Čakovec; član KP; u KPO od",
+    "additional_info": "r. 1915; Marija na Muri, Čakovec; član KP; u KPO od 1942.",
     "birth_year": "1915",
     "pdf_page": 22,
     "pdf_y": 616.8,
@@ -18033,8 +18068,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000713",
     "pdf_x_end": 467.5,
-    "birth_place": "Marija na Muri, Čakovec",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Marija na Muri, Čakovec"
   },
   {
     "last_name": "Hacek",
@@ -18352,7 +18387,7 @@
     "first_name": "Janko",
     "fathers_name": "Kazimir",
     "full_name": "Halapir Kazimira Janko",
-    "additional_info": "r. 1906; Klokovec, Zabok; član KP; u KPO od",
+    "additional_info": "r. 1906; Klokovec, Zabok; član KP; u KPO od 1942.",
     "birth_year": "1906",
     "pdf_page": 23,
     "pdf_y": 427.7,
@@ -18361,8 +18396,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000726",
     "pdf_x_end": 281.7,
-    "birth_place": "Klokovec, Zabok",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Klokovec, Zabok"
   },
   {
     "last_name": "Halen",
@@ -19464,7 +19499,7 @@
     "first_name": "Dragutin",
     "fathers_name": "Bartol",
     "full_name": "Hercigonja Bartola Dragutin",
-    "additional_info": "r. 1925; Pristava, Klanjec; u KPO od",
+    "additional_info": "r. 1925; Pristava, Klanjec; u KPO od 1944.",
     "birth_year": "1925",
     "pdf_page": 24,
     "pdf_y": 573.1,
@@ -19473,9 +19508,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000770",
     "pdf_x_end": 289.9,
-    "birth_place": "Pristava, Klanjec",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "birth_place": "Pristava, Klanjec",
     "other_sources": [
       {
         "soldier_id": "0035103429",
@@ -21020,7 +21055,7 @@
     "first_name": "Pavao",
     "fathers_name": "August",
     "full_name": "Horvat Augusta Pavao",
-    "additional_info": "r. 1926; Poljanec, Ludbreg; u KPO od sredine ljeta",
+    "additional_info": "r. 1926; Poljanec, Ludbreg; u KPO od sredine ljeta 1943.",
     "birth_year": "1926",
     "pdf_page": 26,
     "pdf_y": 304.8,
@@ -21029,9 +21064,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000835",
     "pdf_x_end": 289.4,
-    "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "birth_place": "Poljanec, Ludbreg",
     "other_sources": [
       {
         "soldier_id": "0035103631",
@@ -22304,7 +22339,7 @@
     "pdf_page": 27,
     "pdf_y": 133.7,
     "pdf_x": 303.2,
-    "pdf_y_end": 162.3,
+    "pdf_y_end": 184.2,
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000890",
     "pdf_x_end": 457.6,
@@ -22997,7 +23032,7 @@
     "first_name": "Stanko",
     "fathers_name": "Ivan",
     "full_name": "Huzjak Ivana Stanko",
-    "additional_info": "r. 1915; Donja Poljana, Novi Marof; u KPO od",
+    "additional_info": "r. 1915; Donja Poljana, Novi Marof; u KPO od 1943.",
     "birth_year": "1915",
     "pdf_page": 28,
     "pdf_y": 448.6,
@@ -23800,7 +23835,7 @@
     "first_name": "Dorica",
     "fathers_name": "Nikola",
     "full_name": "Ivančić-Furlić Nikole Dorica",
-    "additional_info": "r. 1913; Lepoglava, Ivanec; u KPO od",
+    "additional_info": "r. 1913; Lepoglava, Ivanec; u KPO od 1943.",
     "birth_year": "1913",
     "pdf_page": 28,
     "pdf_y": 354.5,
@@ -25974,7 +26009,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Jelenić Josip",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 31,
     "pdf_y": 291.8,
@@ -26909,7 +26944,27 @@
     "soldier_id": "0058001067",
     "pdf_x_end": 289.9,
     "birth_place": "Zagreb",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "službenik",
+    "other_sources": [
+      {
+        "soldier_id": "0035104464",
+        "name": "Jureković Stjepana Stjepan",
+        "additional_info": "zvani Pišta; r. 1921, Zagreb, Hrvat, službenik, čl. KPJ, NOV 1941.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 41,
+        "pdf_x": 300.6,
+        "pdf_y": 389.7,
+        "pdf_x_end": 451.7,
+        "pdf_y_end": 415.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jurin",
@@ -27954,7 +28009,7 @@
     "first_name": "Josip",
     "fathers_name": "Vinko",
     "full_name": "Kanižaj Vinka Josip",
-    "additional_info": "r.1912; Marija na Muri, Čakovec; član KP; u KPO od",
+    "additional_info": "r.1912; Marija na Muri, Čakovec; član KP; u KPO od 1942.",
     "birth_year": "1912",
     "pdf_page": 33,
     "pdf_y": 394.6,
@@ -27963,8 +28018,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001113",
     "pdf_x_end": 458.6,
-    "birth_place": "Marija na Muri, Čakovec",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Marija na Muri, Čakovec"
   },
   {
     "last_name": "Kanižaj",
@@ -28024,7 +28079,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Rudolf",
     "full_name": "Kantura Rudolfa Stjepan",
-    "additional_info": "r. 1923; Tuheljske Toplice, Klanjec; u KPO od",
+    "additional_info": "r. 1923; Tuheljske Toplice, Klanjec; u KPO od 1943.",
     "birth_year": "1923",
     "pdf_page": 33,
     "pdf_y": 457.7,
@@ -28033,9 +28088,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001117",
     "pdf_x_end": 458.7,
-    "birth_place": "Tuheljske Toplice, Klanjec",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
+    "birth_place": "Tuheljske Toplice, Klanjec",
     "other_sources": [
       {
         "soldier_id": "0035113724",
@@ -28707,7 +28762,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Mato",
     "full_name": "Katanović Mate Stjepan",
-    "additional_info": "r. 1923; Dropkovec, Križevci; u KPO od jeseni",
+    "additional_info": "r. 1923; Dropkovec, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1923",
     "pdf_page": 34,
     "pdf_y": 594.2,
@@ -29513,7 +29568,7 @@
     "first_name": "Rudolf",
     "fathers_name": "Vinko",
     "full_name": "Kipček Vinka Rudolf",
-    "additional_info": "iz Vinograda Ludbreških, Ludbreg; u KPO od srpnja 1943; ranjen u Šemovcu 3. listopada 1943; kao borac u brigadi \"Braća Radić\"; od posljedica ranjavanja umro",
+    "additional_info": "iz Vinograda Ludbreških, Ludbreg; u KPO od srpnja 1943; ranjen u Šemovcu 3. listopada 1943; kao borac u brigadi \"Braća Radić\"; od posljedica ranjavanja umro 1946.",
     "birth_year": "",
     "pdf_page": 35,
     "pdf_y": 473.8,
@@ -29524,6 +29579,7 @@
     "pdf_x_end": 281.5,
     "birth_place": "Vinogradi Ludbreški, Ludbreg",
     "death_type": "umro",
+    "death_date": "1946",
     "rank": "borac"
   },
   {
@@ -29816,7 +29872,7 @@
     "first_name": "Barica",
     "fathers_name": "Valent",
     "full_name": "Klarić Valenta Barica",
-    "additional_info": "r. 1923; Široko Selo, Koprivnica; u KPO od",
+    "additional_info": "r. 1923; Široko Selo, Koprivnica; u KPO od 1944.",
     "birth_year": "1923",
     "pdf_page": 35,
     "pdf_y": 275.8,
@@ -30241,7 +30297,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Ignac",
     "full_name": "Klemenčić Ignaca Stjepan",
-    "additional_info": "r. 1925; Turčišće, Čakovec; u KPO od",
+    "additional_info": "r. 1925; Turčišće, Čakovec; u KPO od 1944.",
     "birth_year": "1925",
     "pdf_page": 36,
     "pdf_y": 273.6,
@@ -30250,9 +30306,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001201",
     "pdf_x_end": 289.9,
-    "birth_place": "Turčišće, Čakovec",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "birth_place": "Turčišće, Čakovec",
     "other_sources": [
       {
         "soldier_id": "0035104913",
@@ -31592,7 +31648,7 @@
     "first_name": "Ivan",
     "fathers_name": "Mijo",
     "full_name": "Kolarić Mije Ivan",
-    "additional_info": "r. 1918; Gardinovec, Čakovec; član KP; u KPO od",
+    "additional_info": "r. 1918; Gardinovec, Čakovec; član KP; u KPO od 1944.",
     "birth_year": "1918",
     "pdf_page": 37,
     "pdf_y": 328.3,
@@ -31601,8 +31657,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001248",
     "pdf_x_end": 458.6,
-    "birth_place": "Gardinovec, Čakovec",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Gardinovec, Čakovec"
   },
   {
     "last_name": "Kolarić",
@@ -31615,10 +31671,10 @@
     "pdf_page": 37,
     "pdf_y": 360.7,
     "pdf_x": 304.0,
-    "pdf_y_end": 428.8,
+    "pdf_y_end": 399.2,
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001249",
-    "pdf_x_end": 458.7,
+    "pdf_x_end": 458.4,
     "birth_place": "Sudovčina, Ludbreg",
     "death_type": "poginuo",
     "death_date": "1944",
@@ -32480,7 +32536,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Vinko",
     "full_name": "Koren Vinka Stjepan",
-    "additional_info": "r.1925; Jalžabet, Varaždin; član KP; u KPO od",
+    "additional_info": "r.1925; Jalžabet, Varaždin; član KP; u KPO od 1943.",
     "birth_year": "1925",
     "pdf_page": 38,
     "pdf_y": 313.9,
@@ -32489,10 +32545,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001282",
     "pdf_x_end": 466.8,
-    "birth_place": "Jalžabet, Varaždin",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "party": "KPJ",
+    "birth_place": "Jalžabet, Varaždin",
     "other_sources": [
       {
         "soldier_id": "0035105200",
@@ -32514,7 +32570,7 @@
     "first_name": "Ivan",
     "fathers_name": "Đuro",
     "full_name": "Koritić Đure Ivan",
-    "additional_info": "r. 1924; Donja Rijeka, Križevci; u KPO od jeseni",
+    "additional_info": "r. 1924; Donja Rijeka, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1924",
     "pdf_page": 38,
     "pdf_y": 345.4,
@@ -36284,7 +36340,7 @@
     "first_name": "Mihovil",
     "fathers_name": "Đuro",
     "full_name": "Križnik Đure Mihovil",
-    "additional_info": "r. 1910; Trnovec, Čakovec; član KP; u KPO od",
+    "additional_info": "r. 1910; Trnovec, Čakovec; član KP; u KPO od 1944.",
     "birth_year": "1910",
     "pdf_page": 42,
     "pdf_y": 252.0,
@@ -36293,8 +36349,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001429",
     "pdf_x_end": 467.1,
-    "birth_place": "Trnovec, Čakovec",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Trnovec, Čakovec"
   },
   {
     "last_name": "Krkalo",
@@ -39307,7 +39363,7 @@
     "first_name": "Franjo",
     "fathers_name": "Leonard",
     "full_name": "Leskovar Leonarda Franjo",
-    "additional_info": "r. 1928; Mala Erpenja, Zabok; u KPO od",
+    "additional_info": "r. 1928; Mala Erpenja, Zabok; u KPO od 1943.",
     "birth_year": "1928",
     "pdf_page": 45,
     "pdf_y": 355.9,
@@ -39316,9 +39372,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001549",
     "pdf_x_end": 458.4,
-    "birth_place": "Mala Erpenja, Zabok",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "birth_place": "Mala Erpenja, Zabok",
     "other_sources": [
       {
         "soldier_id": "0035106317",
@@ -40595,7 +40651,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Mirko",
     "full_name": "Lončarić Mirka Stjepan",
-    "additional_info": "r. 1911; Ljubeščica, Novi Marof; u KPO od",
+    "additional_info": "r. 1911; Ljubeščica, Novi Marof; u KPO od 1943.",
     "birth_year": "1911",
     "pdf_page": 46,
     "pdf_y": 600.5,
@@ -43547,7 +43603,7 @@
     "first_name": "Mijo",
     "fathers_name": "",
     "full_name": "Maček Mijo",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 47,
     "pdf_y": 617.5,
@@ -43609,7 +43665,7 @@
     "first_name": "Vlado",
     "fathers_name": "Viktor",
     "full_name": "Mađarić Viktora Vlado",
-    "additional_info": "r. 1915; Ludbreg; čan SKOJ-a i KP; u KPO od",
+    "additional_info": "r. 1915; Ludbreg; čan SKOJ-a i KP; u KPO od 1943.",
     "birth_year": "1915",
     "pdf_page": 47,
     "pdf_y": 134.6,
@@ -43618,10 +43674,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001726",
     "pdf_x_end": 458.7,
-    "birth_place": "Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "KPJ",
+    "birth_place": "Ludbreg",
     "other_sources": [
       {
         "soldier_id": "0035107147",
@@ -44640,7 +44696,7 @@
     "pdf_page": 51,
     "pdf_y": 515.8,
     "pdf_x": 127.6,
-    "pdf_y_end": 534.6,
+    "pdf_y_end": 556.9,
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001763",
     "pdf_x_end": 282.0,
@@ -45056,7 +45112,7 @@
     "first_name": "Nikola",
     "fathers_name": "Đuro",
     "full_name": "Mikec Đure Nikola",
-    "additional_info": "r. 1904; Draškovec, Čakovec; u KPO od jeseni",
+    "additional_info": "r. 1904; Draškovec, Čakovec; u KPO od jeseni 1944.",
     "birth_year": "1904",
     "pdf_page": 51,
     "pdf_y": 580.8,
@@ -45073,7 +45129,7 @@
     "first_name": "Mihajlo",
     "fathers_name": "Vinko",
     "full_name": "Miketek Vinka Mihajlo",
-    "additional_info": "r. 1925; Grana, Novi Marof; u KPO od jeseni",
+    "additional_info": "r. 1925; Grana, Novi Marof; u KPO od jeseni 1943.",
     "birth_year": "1925",
     "pdf_page": 51,
     "pdf_y": 634.6,
@@ -46400,10 +46456,10 @@
     "pdf_page": 53,
     "pdf_y": 207.1,
     "pdf_x": 126.6,
-    "pdf_y_end": 235.8,
+    "pdf_y_end": 267.0,
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001825",
-    "pdf_x_end": 281.4,
+    "pdf_x_end": 281.5,
     "birth_place": "Šemovci, Varaždin",
     "rank": "borac",
     "party": "SKOJ, KPJ"
@@ -48274,7 +48330,7 @@
     "first_name": "Benko",
     "fathers_name": "Viktor",
     "full_name": "Namjesnik Viktora Benko",
-    "additional_info": "r. 1910; Poljanec, Ludbreg; član KP; u KPO od",
+    "additional_info": "r. 1910; Poljanec, Ludbreg; član KP; u KPO od 1942.",
     "birth_year": "1910",
     "pdf_page": 55,
     "pdf_y": 365.0,
@@ -48283,10 +48339,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001893",
     "pdf_x_end": 281.3,
-    "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "KPJ",
+    "birth_place": "Poljanec, Ludbreg",
     "other_sources": [
       {
         "soldier_id": "0035107777",
@@ -48411,7 +48467,7 @@
     "first_name": "Dragutin",
     "fathers_name": "Andro",
     "full_name": "Napast Andre Dragutin",
-    "additional_info": "r. 1912; Vinkovec, Vrbovec; u KPO od",
+    "additional_info": "r. 1912; Vinkovec, Vrbovec; u KPO od 1943.",
     "birth_year": "1912",
     "pdf_page": 55,
     "pdf_y": 512.4,
@@ -48420,9 +48476,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001900",
     "pdf_x_end": 281.5,
-    "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "birth_place": "Vinkovec, Vrbovec",
     "other_sources": [
       {
         "soldier_id": "0035107783",
@@ -49086,7 +49142,7 @@
     "first_name": "Franjo",
     "fathers_name": "",
     "full_name": "Novak Franjo",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 55,
     "pdf_y": 667.9,
@@ -49172,7 +49228,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Novak Ivan",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 56,
     "pdf_y": 208.1,
@@ -49328,7 +49384,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Novak Josip",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 56,
     "pdf_y": 316.1,
@@ -49475,7 +49531,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Imbro",
     "full_name": "Novak Imbre Stjepan",
-    "additional_info": "r. 1909; Poljanec, Ludbreg; član KP; u KPO od",
+    "additional_info": "r. 1909; Poljanec, Ludbreg; član KP; u KPO od 1943.",
     "birth_year": "1909",
     "pdf_page": 56,
     "pdf_y": 520.1,
@@ -49484,10 +49540,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001947",
     "pdf_x_end": 290.3,
-    "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "učitelj",
     "party": "KPJ",
+    "birth_place": "Poljanec, Ludbreg",
     "other_sources": [
       {
         "soldier_id": "0035107900",
@@ -50429,7 +50485,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Tomo",
     "full_name": "Orak Tome Stjepan",
-    "additional_info": "r. 1918; Donja Rijeka, Križevci; u KPO od jeseni",
+    "additional_info": "r. 1918; Donja Rijeka, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1918",
     "pdf_page": 57,
     "pdf_y": 594.0,
@@ -50438,10 +50494,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058001987",
     "pdf_x_end": 282.2,
-    "birth_place": "Donja Rijeka, Križevci",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "party": "KPJ",
+    "birth_place": "Donja Rijeka, Križevci",
     "other_sources": [
       {
         "soldier_id": "0035108009",
@@ -50463,7 +50519,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Tomo",
     "full_name": "Orak Tome Stjepan",
-    "additional_info": "r. 1921; Donja Rijeka, Križevci; u KPO od jeseni",
+    "additional_info": "r. 1921; Donja Rijeka, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1921",
     "pdf_page": 57,
     "pdf_y": 626.2,
@@ -51849,13 +51905,27 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1073",
         "source_page": 1073,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0035108280",
+        "name": "Patafta Ignaca Brigita",
+        "additional_info": "zvana Gita; r. 1926, s. Hrženica, Ludbreg, Hrvatica, učenica, čl. SKOJ-a, NOV 1943, poginula 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 121,
+        "pdf_x": 297.4,
+        "pdf_y": 329.2,
+        "pdf_x_end": 448.9,
+        "pdf_y_end": 355.0,
+        "unit_file": "32-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Hrvatica",
     "borrowed": [
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
+    "occupation": "učenica",
     "death_place": "Koprivnica"
   },
   {
@@ -52226,7 +52296,7 @@
     "first_name": "Slavko",
     "fathers_name": "Milan",
     "full_name": "Pavić Milana Slavko",
-    "additional_info": "r. 1926; Lukovčak, Krapina; član SKOJ-a; u KPO",
+    "additional_info": "r. 1926; Lukovčak, Krapina; član SKOJ-a; u KPO 1944.",
     "birth_year": "1926",
     "pdf_page": 59,
     "pdf_y": 523.2,
@@ -52235,10 +52305,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002057",
     "pdf_x_end": 281.1,
-    "birth_place": "Lukovčak, Krapina",
     "ethnicity": "Hrvat",
     "occupation": "učenik",
     "party": "SKOJ",
+    "birth_place": "Lukovčak, Krapina",
     "other_sources": [
       {
         "soldier_id": "0035108333",
@@ -53138,7 +53208,7 @@
     "first_name": "Franjo",
     "fathers_name": "Stjepan",
     "full_name": "Pepek Stjepana Franjo",
-    "additional_info": "r. 1923; Ludbreg; član SKOJ-a; u KPO od",
+    "additional_info": "r. 1923; Ludbreg; član SKOJ-a; u KPO od 1943.",
     "birth_year": "1923",
     "pdf_page": 60,
     "pdf_y": 321.6,
@@ -53147,8 +53217,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002090",
     "pdf_x_end": 289.6,
-    "birth_place": "Ludbreg",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Ludbreg"
   },
   {
     "last_name": "Pepelko",
@@ -54566,7 +54636,7 @@
     "first_name": "Franjo",
     "fathers_name": "Izidor",
     "full_name": "Petrušanec Izidora Franjo",
-    "additional_info": "r.1922; Poljanec, Ludbreg; u KPO od",
+    "additional_info": "r.1922; Poljanec, Ludbreg; u KPO od 1943.",
     "birth_year": "1922",
     "pdf_page": 61,
     "pdf_y": 187.4,
@@ -56110,7 +56180,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Poljak Ivan",
-    "additional_info": "iz Novog Marofa, u KPO",
+    "additional_info": "iz Novog Marofa, u KPO 1943.",
     "birth_year": "",
     "pdf_page": 62,
     "pdf_y": 601.9,
@@ -57009,7 +57079,7 @@
     "first_name": "Valent",
     "fathers_name": "Antun",
     "full_name": "Posavec Antuna Valent",
-    "additional_info": "r. 1927; Gornji Kućan, Varaždin; član SKOJ-a; u KPO od 1943; poginuo na Kalniku",
+    "additional_info": "r. 1927; Gornji Kućan, Varaždin; član SKOJ-a; u KPO od 1943; poginuo na Kalniku 1944.",
     "birth_year": "1927",
     "pdf_page": 64,
     "pdf_y": 308.9,
@@ -57018,10 +57088,11 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002241",
     "pdf_x_end": 290.3,
+    "party": "SKOJ",
     "birth_place": "Gornji Kućan, Varaždin",
     "death_type": "poginuo",
+    "death_date": "1944",
     "death_place": "Kalnik",
-    "party": "SKOJ",
     "other_sources": [
       {
         "soldier_id": "9021049746",
@@ -57034,10 +57105,8 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1945"
+    ]
   },
   {
     "last_name": "Posavec",
@@ -57299,7 +57368,7 @@
     "middle_name": "Ane",
     "first_name": "Ivan",
     "full_name": "Potočnik Ane Ivan",
-    "additional_info": "r.1918; Vinogradi Ludbreški, Ludbreg; u KPO od",
+    "additional_info": "r.1918; Vinogradi Ludbreški, Ludbreg; u KPO od 1944.",
     "birth_year": "1918",
     "pdf_page": 64,
     "pdf_y": 574.6,
@@ -57308,10 +57377,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002252",
     "pdf_x_end": 289.9,
-    "birth_place": "Vinogradi Ludbreški, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "mothers_name": "Ana",
+    "birth_place": "Vinogradi Ludbreški, Ludbreg",
     "fathers_name": "An",
     "other_sources": [
       {
@@ -60960,7 +61029,7 @@
     "first_name": "Katica",
     "fathers_name": "Franjo",
     "full_name": "Rogin Franje Katica",
-    "additional_info": "r.1923; Vinkovec, Vrbovec; član SKOJ-a; u KPO od",
+    "additional_info": "r.1923; Vinkovec, Vrbovec; član SKOJ-a; u KPO od 1943.",
     "birth_year": "1923",
     "pdf_page": 68,
     "pdf_y": 388.3,
@@ -60969,10 +61038,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002395",
     "pdf_x_end": 289.8,
-    "birth_place": "Vinkovec, Vrbovec",
     "ethnicity": "Hrvatica",
     "occupation": "poljoprivrednica",
     "party": "SKOJ",
+    "birth_place": "Vinkovec, Vrbovec",
     "other_sources": [
       {
         "soldier_id": "0035109646",
@@ -63592,7 +63661,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Tomo",
     "full_name": "Sikač Tome Stjepan",
-    "additional_info": "r.1922; Donja Rijeka, Križevci; u KPO od jeseni",
+    "additional_info": "r.1922; Donja Rijeka, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1922",
     "pdf_page": 75,
     "pdf_y": 658.6,
@@ -63969,11 +64038,11 @@
     ]
   },
   {
-    "last_name": "Skrlec",
+    "last_name": "Škrlec",
     "middle_name": "Pavla",
     "first_name": "Ivan",
     "fathers_name": "Pavle",
-    "full_name": "Skrlec Pavla Ivan",
+    "full_name": "Škrlec Pavla Ivan",
     "additional_info": "r.1926; Krušljevec, Vrbovec; u KPO od veljače 1943.",
     "birth_year": "1926",
     "pdf_page": 76,
@@ -64105,7 +64174,27 @@
     "pdf_x_end": 281.6,
     "birth_place": "Trnovec -Zbelava, Varaždin",
     "rank": "zamjenik komesara čete, sekretar SKOJ-a bataljona",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "učenik",
+    "other_sources": [
+      {
+        "soldier_id": "0035110179",
+        "name": "Skupnjak Ćirila Josip",
+        "additional_info": "zvani Vlado; r.1925, s. Trnovec, Varaždin, Hrvat, učenik, čl. KPJ, NOV 1943, ranjen",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 128,
+        "pdf_x": 291.0,
+        "pdf_y": 294.0,
+        "pdf_x_end": 442.6,
+        "pdf_y_end": 319.7,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Skupnjak",
@@ -64371,7 +64460,7 @@
     "first_name": "Jelka",
     "fathers_name": "Josip",
     "full_name": "Slukan-Jurec Josipa Jelka",
-    "additional_info": "r.1920; Varaždin; član KP; u KPO od",
+    "additional_info": "r.1920; Varaždin; član KP; u KPO od 1943.",
     "birth_year": "1920",
     "pdf_page": 71,
     "pdf_y": 276.2,
@@ -64380,8 +64469,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002522",
     "pdf_x_end": 458.6,
-    "birth_place": "Varaždin",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Varaždin"
   },
   {
     "last_name": "Smeh",
@@ -64857,7 +64946,7 @@
     "first_name": "Ivan",
     "fathers_name": "Andrija",
     "full_name": "Sokolić Andrije Ivan",
-    "additional_info": "r.1905; Hudovo, Vrbovec; član KP; u KPO od",
+    "additional_info": "r.1905; Hudovo, Vrbovec; član KP; u KPO od 1943.",
     "birth_year": "1905",
     "pdf_page": 72,
     "pdf_y": 375.6,
@@ -64866,9 +64955,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002540",
     "pdf_x_end": 289.6,
-    "birth_place": "Hudovo, Vrbovec",
     "ethnicity": "Hrvat",
     "party": "KPJ",
+    "birth_place": "Hudovo, Vrbovec",
     "other_sources": [
       {
         "soldier_id": "0035110330",
@@ -64990,7 +65079,7 @@
     "first_name": "Šuro",
     "fathers_name": "",
     "full_name": "Soković Šuro",
-    "additional_info": "Križevci; u KPO od",
+    "additional_info": "Križevci; u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 72,
     "pdf_y": 448.3,
@@ -66141,7 +66230,7 @@
         "pdf_x": 291.0,
         "pdf_y": 181.8,
         "pdf_x_end": 442.7,
-        "pdf_y_end": 207.5,
+        "pdf_y_end": 240.2,
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -68716,7 +68805,7 @@
     "first_name": "Antun",
     "fathers_name": "Josip",
     "full_name": "Trubelja Josipa Antun",
-    "additional_info": "r. 1915; Ključ, Novi Marof; član KP; u KPO od",
+    "additional_info": "r. 1915; Ključ, Novi Marof; član KP; u KPO od 1943.",
     "birth_year": "1915",
     "pdf_page": 80,
     "pdf_y": 437.5,
@@ -68725,8 +68814,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002693",
     "pdf_x_end": 467.8,
-    "birth_place": "Ključ, Novi Marof",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ključ, Novi Marof"
   },
   {
     "last_name": "Trubelja",
@@ -68865,7 +68954,7 @@
     "first_name": "Sveto",
     "fathers_name": "",
     "full_name": "Trušćak Sveto",
-    "additional_info": "u KPO od Jeseni",
+    "additional_info": "u KPO od Jeseni 1942.",
     "birth_year": "",
     "pdf_page": 80,
     "pdf_y": 604.1,
@@ -69619,7 +69708,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Vabec Josip",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 81,
     "pdf_y": 188.6,
@@ -70046,7 +70135,7 @@
     "first_name": "Antun",
     "fathers_name": "",
     "full_name": "Varga Antun",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 336.7,
@@ -70094,7 +70183,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Varga Ivan",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1945.",
     "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 389.5,
@@ -70740,7 +70829,7 @@
     "first_name": "Stjepan",
     "fathers_name": "",
     "full_name": "Vegi Stjepan",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 359.3,
@@ -70792,7 +70881,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Vereš Ivan",
-    "additional_info": "iz Križevaca, u KPO od",
+    "additional_info": "iz Križevaca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 82,
     "pdf_y": 429.1,
@@ -71502,7 +71591,7 @@
     "first_name": "Mijo",
     "fathers_name": "Josip",
     "full_name": "Vidović Josipa Mijo",
-    "additional_info": "r. 1911; Kućan Gornji, Varaždin; poginuo u travnju",
+    "additional_info": "r. 1911; Kućan Gornji, Varaždin; poginuo u travnju 1945.",
     "birth_year": "1911",
     "pdf_page": 83,
     "pdf_y": 238.3,
@@ -71513,6 +71602,7 @@
     "pdf_x_end": 458.1,
     "birth_place": "Kućan Gornji, Varaždin",
     "death_type": "poginuo",
+    "death_date": "1945",
     "other_sources": [
       {
         "soldier_id": "9021049747",
@@ -71525,10 +71615,8 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1945"
+    ]
   },
   {
     "last_name": "Vidović",
@@ -72374,7 +72462,7 @@
     "first_name": "Miloš",
     "fathers_name": "Milenko",
     "full_name": "Vitanović Milenka Miloš",
-    "additional_info": "r. 1922; Osijek Vojakovački, Križevci; član SKOJ-a i KP; borac Osječko-kalničke oružane grupe od 1941; u KPO od",
+    "additional_info": "r. 1922; Osijek Vojakovački, Križevci; član SKOJ-a i KP; borac Osječko-kalničke oružane grupe od 1941; u KPO od 1942.",
     "birth_year": "1922",
     "pdf_page": 84,
     "pdf_y": 250.3,
@@ -72383,9 +72471,9 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002827",
     "pdf_x_end": 467.1,
+    "party": "SKOJ, KPJ",
     "birth_place": "Osijek Vojakovački, Križevci",
-    "rank": "borac",
-    "party": "SKOJ, KPJ"
+    "rank": "borac"
   },
   {
     "last_name": "Vitanović",
@@ -72822,7 +72910,7 @@
     "first_name": "Marijan",
     "fathers_name": "Stjepan",
     "full_name": "Vlašić Stjepana Marijan",
-    "additional_info": "r. 1927; Sisak; član SKOJ-a i KP; u KPO od",
+    "additional_info": "r. 1927; Sisak; član SKOJ-a i KP; u KPO od 1943.",
     "birth_year": "1927",
     "pdf_page": 84,
     "pdf_y": 658.8,
@@ -72831,10 +72919,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002846",
     "pdf_x_end": 467.1,
-    "birth_place": "Sisak",
     "ethnicity": "Hrvat",
     "occupation": "učenik",
     "party": "SKOJ, KPJ",
+    "birth_place": "Sisak",
     "other_sources": [
       {
         "soldier_id": "0035111666",
@@ -73006,10 +73094,10 @@
     "pdf_page": 85,
     "pdf_y": 331.0,
     "pdf_x": 126.9,
-    "pdf_y_end": 349.8,
+    "pdf_y_end": 401.6,
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002853",
-    "pdf_x_end": 281.6,
+    "pdf_x_end": 281.9,
     "birth_place": "Pribislavec, Čakovec",
     "death_type": "poginuo",
     "rank": "borac",
@@ -73531,7 +73619,7 @@
     "first_name": "Mato",
     "fathers_name": "Mirko",
     "full_name": "Vrhovec Mirka Mato",
-    "additional_info": "r. 1922; Donja Rijeka, Križevci; u KPO od jeseni",
+    "additional_info": "r. 1922; Donja Rijeka, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1922",
     "pdf_page": 85,
     "pdf_y": 360.5,
@@ -74088,12 +74176,12 @@
     "birth_place": "Mrkonjić Grad, BiH"
   },
   {
-    "last_name": "Vujasinović",
+    "last_name": "Vujasinović-Mirković",
     "middle_name": "",
-    "first_name": "",
+    "first_name": "Branko",
     "fathers_name": "",
-    "full_name": "Vujasinović",
-    "additional_info": "MIRKOVIĆ; BRANKO, r.1925; Nježići, Požega; borac BPČ; u KPO od listopadal942.",
+    "full_name": "Vujasinović-Mirković Branko",
+    "additional_info": "r.1925; Nježići, Požega; borac BPČ; u KPO od listopadal942.",
     "birth_year": "",
     "pdf_page": 86,
     "pdf_y": 175.9,
@@ -74102,7 +74190,7 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002890",
     "pdf_x_end": 466.3,
-    "birth_place": "MIRKOVIĆ, BRANKO",
+    "birth_place": "Nježići, Požega",
     "rank": "borac"
   },
   {
@@ -74255,7 +74343,7 @@
     "first_name": "Đuro",
     "fathers_name": "Stevo",
     "full_name": "Vujčetić Steve Đuro",
-    "additional_info": "r. 1922; Kovačevac, Bjelovar; član KP; u KPO od",
+    "additional_info": "r. 1922; Kovačevac, Bjelovar; član KP; u KPO od 1942.",
     "birth_year": "1922",
     "pdf_page": 86,
     "pdf_y": 239.0,
@@ -74264,10 +74352,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058002896",
     "pdf_x_end": 466.5,
-    "birth_place": "Kovačevac, Bjelovar",
     "ethnicity": "Srbin",
     "occupation": "učenik",
     "party": "KPJ",
+    "birth_place": "Kovačevac, Bjelovar",
     "other_sources": [
       {
         "soldier_id": "0035111862",
@@ -74866,7 +74954,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Vurušić Josip",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 87,
     "pdf_y": 498.2,
@@ -75326,7 +75414,7 @@
     "first_name": "Jelena",
     "fathers_name": "Stjepan",
     "full_name": "Zadravec Stjepana Jelena",
-    "additional_info": "iz Svetog Juraja u Trnju, Čakovec; u KPO od",
+    "additional_info": "iz Svetog Juraja u Trnju, Čakovec; u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 87,
     "pdf_y": 179.5,
@@ -75587,7 +75675,7 @@
     "first_name": "Melko",
     "fathers_name": "Blaž",
     "full_name": "Zelenić Blaža Melko",
-    "additional_info": "r. 1918; Donji Pustakovec, Čakovec; u KPO od",
+    "additional_info": "r. 1918; Donji Pustakovec, Čakovec; u KPO od 1943.",
     "birth_year": "1918",
     "pdf_page": 87,
     "pdf_y": 569.8,
@@ -76061,7 +76149,7 @@
     "first_name": "Branko",
     "fathers_name": "Rade",
     "full_name": "Zoretić Rade Branko",
-    "additional_info": "r. 1915; Belanovo Sela, Koprivnica; u KPO od",
+    "additional_info": "r. 1915; Belanovo Sela, Koprivnica; u KPO od 1942.",
     "birth_year": "1915",
     "pdf_page": 88,
     "pdf_y": 549.8,
@@ -77093,7 +77181,7 @@
     "first_name": "Rudolf",
     "fathers_name": "Blaž",
     "full_name": "Čikulin Blaža Rudolf",
-    "additional_info": "r. 1925; Mađarevo, Novi Marof; u KPO od",
+    "additional_info": "r. 1925; Mađarevo, Novi Marof; u KPO od 1943.",
     "birth_year": "1925",
     "pdf_page": 12,
     "pdf_y": 593.8,
@@ -77752,7 +77840,7 @@
     "first_name": "Stjepan",
     "fathers_name": "",
     "full_name": "Črep Stjepan",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 13,
     "pdf_y": 605.5,
@@ -77806,7 +77894,7 @@
     "first_name": "Gojko",
     "fathers_name": "Petar",
     "full_name": "Čubrla Petra Gojko",
-    "additional_info": "r.1926; Kraljevec, Bjelovar;član SKOJ-a ; u KPO od",
+    "additional_info": "r.1926; Kraljevec, Bjelovar;član SKOJ-a ; u KPO od 1943.",
     "birth_year": "1926",
     "pdf_page": 13,
     "pdf_y": 133.7,
@@ -77815,8 +77903,8 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058003034",
     "pdf_x_end": 457.8,
-    "birth_place": "Kraljevec, Bjelovar",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kraljevec, Bjelovar"
   },
   {
     "last_name": "Čukanić",
@@ -78391,7 +78479,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Šalamon Ivan",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 443.0,
@@ -78653,7 +78741,7 @@
     "first_name": "Franjo",
     "fathers_name": "",
     "full_name": "Šarić Franjo",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1945.",
     "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 272.6,
@@ -78670,7 +78758,7 @@
     "first_name": "Ignac",
     "fathers_name": "",
     "full_name": "Šarić Ignac",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 294.2,
@@ -78738,7 +78826,7 @@
     "first_name": "Mijo",
     "fathers_name": "",
     "full_name": "Šarić Mijo",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 371.5,
@@ -78755,7 +78843,7 @@
     "first_name": "Petar",
     "fathers_name": "",
     "full_name": "Šarić Petar",
-    "additional_info": "iz Čakovca, u KPO od",
+    "additional_info": "iz Čakovca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 74,
     "pdf_y": 393.1,
@@ -78822,7 +78910,7 @@
     "first_name": "Đuro",
     "fathers_name": "Ivan",
     "full_name": "Šavor Ivana Đuro",
-    "additional_info": "r.1923; Ključ, Novi Marof; član SKOJ-a; u KPO od",
+    "additional_info": "r.1923; Ključ, Novi Marof; član SKOJ-a; u KPO od 1942.",
     "birth_year": "1923",
     "pdf_page": 74,
     "pdf_y": 487.9,
@@ -78831,10 +78919,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058003084",
     "pdf_x_end": 466.9,
-    "birth_place": "Ključ, Novi Marof",
     "ethnicity": "Jugoslaven",
     "occupation": "poljoprivrednik",
     "party": "SKOJ",
+    "birth_place": "Ključ, Novi Marof",
     "other_sources": [
       {
         "soldier_id": "0035114139",
@@ -79044,7 +79132,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Šegvić Ivan",
-    "additional_info": "iz Križevaca, u KPO od",
+    "additional_info": "iz Križevaca, u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 75,
     "pdf_y": 166.1,
@@ -79417,7 +79505,7 @@
     "first_name": "Fabijan",
     "fathers_name": "Mato",
     "full_name": "Šikač Mate Fabijan",
-    "additional_info": "r.1919; Donja Rijeka, Križevci; u KPO od jeseni",
+    "additional_info": "r.1919; Donja Rijeka, Križevci; u KPO od jeseni 1943.",
     "birth_year": "1919",
     "pdf_page": 75,
     "pdf_y": 626.6,
@@ -79485,7 +79573,7 @@
     "first_name": "Antun",
     "fathers_name": "Ivan",
     "full_name": "Šimunić Ivana Antun",
-    "additional_info": "r.1926; Poljanec, Ludbreg; član SKOJ-a; u KPO od",
+    "additional_info": "r.1926; Poljanec, Ludbreg; član SKOJ-a; u KPO od 1943.",
     "birth_year": "1926",
     "pdf_page": 75,
     "pdf_y": 209.5,
@@ -79494,10 +79582,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058003109",
     "pdf_x_end": 458.0,
-    "birth_place": "Poljanec, Ludbreg",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "party": "SKOJ",
+    "birth_place": "Poljanec, Ludbreg",
     "other_sources": [
       {
         "soldier_id": "0035112794",
@@ -80414,8 +80502,8 @@
         "pdf_page": 77,
         "pdf_x": 295.0,
         "pdf_y": 348.8,
-        "pdf_x_end": 446.2,
-        "pdf_y_end": 355.8,
+        "pdf_x_end": 446.5,
+        "pdf_y_end": 376.9,
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -80577,7 +80665,7 @@
       {
         "soldier_id": "0035113012",
         "name": "Šoštarić Franje Alojz",
-        "additional_info": "r. 1928, s. Mala Er- • penja, Zabok, Hrvat, poljopriv., čl. SKOJ-a, NOV 1943.",
+        "additional_info": "r. 1928, s. Mala Er-penja, Zabok, Hrvat, poljopriv., čl. SKOJ-a, NOV 1943.",
         "pdf_file": "32-divizija-borci.pdf",
         "pdf_page": 215,
         "pdf_x": 300.0,
@@ -81112,7 +81200,7 @@
     "first_name": "Ćiro",
     "fathers_name": "",
     "full_name": "Štajninger Ćiro",
-    "additional_info": "u KPO od jeseni",
+    "additional_info": "u KPO od jeseni 1942.",
     "birth_year": "",
     "pdf_page": 77,
     "pdf_y": 460.5,
@@ -81174,13 +81262,13 @@
       {
         "soldier_id": "0035113127",
         "name": "Štefanić Dragutina Marko",
-        "additional_info": "r. 1925, s. Zagora Krapinska, Krapina, Hrvat, radnik, _ čl. SKOJ-a, NOV 1942. ranjen 1943.",
+        "additional_info": "r. 1925, s. Zagora Krapinska, Krapina, Hrvat, radnik, čl. SKOJ-a, NOV 1942. ranjen 1943.",
         "pdf_file": "32-divizija-borci.pdf",
         "pdf_page": 133,
         "pdf_x": 128.0,
         "pdf_y": 458.0,
         "pdf_x_end": 279.4,
-        "pdf_y_end": 474.4,
+        "pdf_y_end": 483.8,
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -82050,7 +82138,7 @@
     "first_name": "Martin",
     "fathers_name": "",
     "full_name": "Šuket Martin",
-    "additional_info": "Križevci; u KPO od",
+    "additional_info": "Križevci; u KPO od 1944.",
     "birth_year": "",
     "pdf_page": 78,
     "pdf_y": 303.6,
@@ -82889,7 +82977,7 @@
     "first_name": "Dragutin",
     "fathers_name": "Franjo",
     "full_name": "Žeželić Franje Dragutin",
-    "additional_info": "r.1922; Ljubeščica, Novi Marof; u KPO od",
+    "additional_info": "r.1922; Ljubeščica, Novi Marof; u KPO od 1943.",
     "birth_year": "1922",
     "pdf_page": 89,
     "pdf_y": 299.3,
@@ -83529,7 +83617,7 @@
       {
         "soldier_id": "0035113460",
         "name": "Županić Josipa Alojz",
-        "additional_info": "r. 1908, s. Tuhelj, Klanjec, Hrvat, radnik, čl. KPJ, NOV _ 1943.",
+        "additional_info": "r. 1908, s. Tuhelj, Klanjec, Hrvat, radnik, čl. KPJ, NOV 1943.",
         "pdf_file": "32-divizija-borci.pdf",
         "pdf_page": 88,
         "pdf_x": 114.1,

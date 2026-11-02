@@ -3298,11 +3298,11 @@
     "death_place": "Pakrac"
   },
   {
-    "last_name": "Colić",
+    "last_name": "Čolić",
     "middle_name": "",
     "first_name": "Marko",
     "fathers_name": "",
-    "full_name": "Colić Marko",
+    "full_name": "Čolić Marko",
     "additional_info": "rođen 1920. u Osijeku, borac, poginuo 2. prosinca 1944.",
     "birth_year": "1920",
     "pdf_page": 7,
@@ -3686,7 +3686,7 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Delajlija Nikola",
-    "additional_info": "rođen u Velikim Bastajima, Daruvar, poginuo",
+    "additional_info": "rođen u Velikim Bastajima, Daruvar, poginuo 1943.",
     "birth_year": "",
     "pdf_page": 9,
     "pdf_y": 331.5,
@@ -3696,7 +3696,6 @@
     "soldier_id": "0037000170",
     "pdf_x_end": 407.2,
     "birth_place": "Veliki Bastaji, Daruvar",
-    "death_type": "poginuo",
     "other_sources": [
       {
         "soldier_id": "0037010029",
@@ -3710,7 +3709,9 @@
         "pdf_x_end": 369.4
       }
     ],
-    "rank": "komandir čete"
+    "rank": "komandir čete",
+    "death_type": "poginuo",
+    "death_date": "1943"
   },
   {
     "last_name": "Delajlija",
@@ -4313,7 +4314,7 @@
     "pdf_page": 8,
     "pdf_y": 446.0,
     "pdf_x": 155.8,
-    "pdf_y_end": 454.5,
+    "pdf_y_end": 471.8,
     "pdf_file": "16-slavonska-omladinska.pdf",
     "soldier_id": "0037000198",
     "pdf_x_end": 436.8,
@@ -12758,7 +12759,7 @@
     "first_name": "Stjepan",
     "fathers_name": "",
     "full_name": "Lacković Stjepan",
-    "additional_info": "rođen 1916. u Brođancima, Valpovo, poginuo",
+    "additional_info": "rođen 1916. u Brođancima, Valpovo, poginuo 1944.",
     "birth_year": "1916",
     "pdf_page": 21,
     "pdf_y": 438.3,
@@ -12769,6 +12770,7 @@
     "pdf_x_end": 410.4,
     "birth_place": "Brođanci, Valpovo",
     "death_type": "poginuo",
+    "death_date": "1944",
     "other_sources": [
       {
         "soldier_id": "9021049651",
@@ -12781,11 +12783,9 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
     "death_place": "Nova jošava"
   },
   {
@@ -14056,7 +14056,7 @@
     "first_name": "Marko",
     "fathers_name": "",
     "full_name": "Marinović Marko",
-    "additional_info": "rođen u Stupnom, Sisak, poginuo proljeća. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
+    "additional_info": "rođen u Stupnom, Sisak, poginuo proljeća 1944. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
     "birth_year": "",
     "pdf_page": 36,
     "pdf_y": 229.2,
@@ -14066,7 +14066,22 @@
     "soldier_id": "0037000615",
     "pdf_x_end": 440.2,
     "birth_place": "Stupno, Sisak",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "death_date": "proljeća 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0097000701",
+        "name": "Marinović Marko",
+        "additional_info": "borac, OBJV, Stupno, Sisak, prolj. 44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 15,
+        "pdf_x": 41.5,
+        "pdf_y": 323.44400000000013,
+        "pdf_x_end": 369.8,
+        "pdf_y_end": 332.4,
+        "unit_file": "34-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marinovčić",
@@ -14823,7 +14838,7 @@
     "first_name": "Nenad",
     "fathers_name": "Đ",
     "full_name": "Milić Đ Nenad",
-    "additional_info": "rođen 1926. u Negoslavcima kod Vukovara, poginuo",
+    "additional_info": "rođen 1926. u Negoslavcima kod Vukovara, poginuo 1943.",
     "birth_year": "1926",
     "pdf_page": 24,
     "pdf_y": 410.9,
@@ -14834,15 +14849,14 @@
     "pdf_x_end": 434.9,
     "birth_place": "Negoslavci, Vukovar",
     "death_type": "poginuo",
+    "death_date": "1943",
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity",
       "occupation"
     ],
     "occupation": "zemljoradnik",
-    "death_date": "28.11.1943",
     "death_place": "Štefanje, Bjelovar",
     "other_sources": [
       {
@@ -14884,7 +14898,7 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Milovanovič Nikola",
-    "additional_info": "rođen 1908. u Trpinji, Vukovar, poginuo",
+    "additional_info": "rođen 1908. u Trpinji, Vukovar, poginuo 1944.",
     "birth_year": "1908",
     "pdf_page": 24,
     "pdf_y": 428.2,
@@ -14894,7 +14908,8 @@
     "soldier_id": "0037000648",
     "pdf_x_end": 434.6,
     "birth_place": "Trpinje, Vukovar",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "death_date": "1944"
   },
   {
     "last_name": "Minarek",

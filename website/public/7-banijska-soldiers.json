@@ -2857,7 +2857,7 @@
     "first_name": "Teodor",
     "fathers_name": "Dmitar",
     "full_name": "Bogojević Dmitra Teodor",
-    "additional_info": "borac 1. čete 1. bataljona, rođen 1919, Veliki Šušnjar, Petrinja, zemljoradnik, Srbin, u NOB od 1942, zarobljen na Sutjesci i odveden u logor u Nemačk°j, gde ga je zatekao kraj rata.",
+    "additional_info": "borac 1. čete 1. bataljona, rođen 1919, Veliki Šušnjar, Petrinja, zemljoradnik, Srbin, u NOB od 1942, zarobljen na Sutjesci i odveden u logor u Nemačkoj, gde ga je zatekao kraj rata.",
     "birth_year": "1919",
     "pdf_page": 5,
     "pdf_y": 363.6,
@@ -4451,7 +4451,7 @@
     "first_name": "Stevo",
     "fathers_name": "Pero",
     "full_name": "Dabić Pere Stevo",
-    "additional_info": "kurir štaba brigade, rođen 1924, Drenovac, Glina, zemljoradnik, Srbin, u NOB od 1942, član SKOJ-a, poginuo na brdu Metla, kod Petrinje^ 1944. godine.",
+    "additional_info": "kurir štaba brigade, rođen 1924, Drenovac, Glina, zemljoradnik, Srbin, u NOB od 1942, član SKOJ-a, poginuo na brdu Metla, kod Petrinje, 1944. godine.",
     "birth_year": "1924",
     "pdf_page": 9,
     "pdf_y": 154.4,
@@ -4460,14 +4460,14 @@
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000140",
     "pdf_x_end": 210.4,
+    "party": "SKOJ",
     "birth_place": "Drenovac, Glina",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "kurir",
-    "death_place": "na brdu Metla, kod Petrinje^",
-    "party": "SKOJ"
+    "death_place": "na brdu Metla, kod Petrinje",
+    "rank": "kurir"
   },
   {
     "last_name": "Dabić",
@@ -4694,11 +4694,11 @@
     "party": "SKOJ 1942, KPJ 1943"
   },
   {
-    "last_name": "Dgulja",
+    "last_name": "Rogulja",
     "middle_name": "Bože",
     "first_name": "Đuro",
     "fathers_name": "Božo",
-    "full_name": "Dgulja Bože Đuro",
+    "full_name": "Rogulja Bože Đuro",
     "additional_info": "borac u štabu brigade, rođen 1917, Rogulje, Dvor, zemljoradnik, Srbin, u NOB od maja 1942, član KPJ, poginuo na Mrkaljkladama, istočno od Sutjeske, 9. juna 1943.",
     "birth_year": "1917",
     "pdf_page": 32,
@@ -4715,7 +4715,28 @@
     "death_date": "09.06.1943",
     "death_place": "na Mrkaljkladama, istočno od Sutjeske",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0044010825",
+        "name": "Rogulja Bože Đuro",
+        "additional_info": "rođen 1917, Rogulje — Dvor, Srbin, zemljoradnik, u NOVJ od 1942, član KPJ, borac pri štabu brigade. Poginuo 1943. kod Mrkalj klada u toku bitke na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 55,
+        "pdf_x": 67.2,
+        "pdf_y": 397.0,
+        "pdf_x_end": 349.0,
+        "pdf_y_end": 423.7
+      },
+      {
+        "soldier_id": "9021010713",
+        "name": "Rogulja (Božo) Đuro",
+        "additional_info": "rođen 1917, Rogulje (Dvor). Srbin, ubijen 1943. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=451",
+        "source_page": 451,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Didoš",
@@ -4728,14 +4749,15 @@
     "pdf_page": 10,
     "pdf_y": 336.6,
     "pdf_x": 6.5,
-    "pdf_y_end": 367.4,
+    "pdf_y_end": 378.6,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000150",
     "pdf_x_end": 173.1,
     "birth_place": "Dodoši, Petrinja",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "pdf_x_left": 3.8
   },
   {
     "last_name": "Didulica",
@@ -6631,7 +6653,7 @@
     "pdf_page": 12,
     "pdf_y": 50.2,
     "pdf_x": 183.6,
-    "pdf_y_end": 91.8,
+    "pdf_y_end": 204.6,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000208",
     "pdf_x_end": 353.5,
@@ -6793,7 +6815,7 @@
     "pdf_page": 38,
     "pdf_y": 288.3,
     "pdf_x": 8.2,
-    "pdf_y_end": 319.1,
+    "pdf_y_end": 329.9,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000214",
     "pdf_x_end": 171.0,
@@ -6803,7 +6825,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "I . u bici na Sutjesci",
-    "rank": "borac"
+    "rank": "borac",
+    "pdf_x_left": 5.5
   },
   {
     "last_name": "Elebit",
@@ -7852,8 +7875,8 @@
     "death_date": "06.1943",
     "rank": "bolničarka",
     "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 171.3,
-    "pdf_y_end": 197.9,
+    "pdf_x_end": 171.8,
+    "pdf_y_end": 262.7,
     "other_sources": [
       {
         "soldier_id": "0044010265",
@@ -7913,20 +7936,22 @@
     "first_name": "Dragan",
     "fathers_name": "Đuro",
     "full_name": "Grubić Đure Dragan",
-    "additional_info": "politički komesar 1. čete 1. bataljona, rođen 1913, Moštanica, Petrinja, zemljoradnik^ Srbin, u NOB od 1941, član KPJ od oktobra 1941, krajem rata komesar narodne milicije za srez Petrinju. Umro 1993. godine.",
+    "additional_info": "politički komesar 1. čete 1. bataljona, rođen 1913, Moštanica, Petrinja, zemljoradnik, Srbin, u NOB od 1941, član KPJ od oktobra 1941, krajem rata komesar narodne milicije za srez Petrinju. Umro 1993. godine.",
     "birth_year": "1913",
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "pdf_page": 14,
     "pdf_y": 26.7,
     "pdf_x": 3.9,
-    "birth_place": "Moštanica, Petrinja",
-    "death_type": "umro",
-    "death_date": "1993",
     "rank": "politički komesar",
-    "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 171.6,
     "pdf_y_end": 100.7,
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "birth_place": "Moštanica, Petrinja",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "death_date": "1993",
+    "unit_detail": "1. četa, 1. bataljon"
   },
   {
     "last_name": "Gruborović",
@@ -10612,7 +10637,7 @@
     "pdf_page": 18,
     "pdf_y": 62.7,
     "pdf_x": 2.6,
-    "pdf_y_end": 124.7,
+    "pdf_y_end": 306.1,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000341",
     "pdf_x_end": 170.9,
@@ -14703,10 +14728,10 @@
     "pdf_page": 24,
     "pdf_y": 440.2,
     "pdf_x": 17.2,
-    "pdf_y_end": 449.4,
+    "pdf_y_end": 514.2,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000469",
-    "pdf_x_end": 180.8,
+    "pdf_x_end": 182.8,
     "birth_place": "Čela, Prijedor",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
@@ -14845,10 +14870,10 @@
     "pdf_page": 24,
     "pdf_y": 518.4,
     "pdf_x": 18.4,
-    "pdf_y_end": 527.6,
+    "pdf_y_end": 570.8,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000474",
-    "pdf_x_end": 182.6,
+    "pdf_x_end": 183.1,
     "birth_place": "Majske Poljane, Glina",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -18314,8 +18339,8 @@
         "pdf_page": 48,
         "pdf_x": 59.7,
         "pdf_y": 315.2,
-        "pdf_y_end": 324.1,
-        "pdf_x_end": 341.1
+        "pdf_y_end": 341.7,
+        "pdf_x_end": 341.2
       },
       {
         "soldier_id": "9021012545",
@@ -25000,8 +25025,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "01.06.1943",
-    "pdf_x_end": 173.0,
-    "pdf_y_end": 322.0,
+    "pdf_x_end": 174.4,
+    "pdf_y_end": 364.2,
     "other_sources": [
       {
         "soldier_id": "0044010971",
@@ -27497,7 +27522,7 @@
     "pdf_page": 35,
     "pdf_y": 419.2,
     "pdf_x": 40.8,
-    "pdf_y_end": 449.5,
+    "pdf_y_end": 462.6,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000859",
     "pdf_x_end": 210.2,
@@ -27953,22 +27978,15 @@
     "first_name": "Dušan",
     "fathers_name": "Jovan",
     "full_name": "Žarković Jovana Dušan",
-    "additional_info": "borac 1. bataljona, rođen 1924, Majski Trtnik, Glina, zemljoradnik, Srbin, u NOB od ^ 1942, poginuo 1943. u bici na Sutjesci.",
+    "additional_info": "borac 1. bataljona, rođen 1924, Majski Trtnik, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo 1943. u bici na Sutjesci.",
     "birth_year": "1924",
     "pdf_page": 41,
     "pdf_y": 395.6,
     "pdf_x": 40.6,
-    "pdf_y_end": 425.9,
+    "pdf_y_end": 436.5,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000875",
-    "pdf_x_end": 210.6,
-    "birth_place": "Majski Trtnik, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "unit_detail": "1. bataljon",
+    "pdf_x_end": 210.7,
     "other_sources": [
       {
         "soldier_id": "0044011071",
@@ -27990,7 +28008,14 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "Sutjeska"
+    "birth_place": "Majski Trtnik, Glina",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Sutjeska",
+    "rank": "borac",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Žarković",
@@ -28003,7 +28028,7 @@
     "pdf_page": 41,
     "pdf_y": 437.8,
     "pdf_x": 40.6,
-    "pdf_y_end": 468.2,
+    "pdf_y_end": 479.3,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000876",
     "pdf_x_end": 210.6,
@@ -28047,7 +28072,7 @@
     "pdf_page": 41,
     "pdf_y": 480.1,
     "pdf_x": 40.3,
-    "pdf_y_end": 510.4,
+    "pdf_y_end": 521.6,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000877",
     "pdf_x_end": 210.7,
@@ -28268,10 +28293,10 @@
     "pdf_page": 41,
     "pdf_y": 144.3,
     "pdf_x": 224.6,
-    "pdf_y_end": 185.2,
+    "pdf_y_end": 196.4,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000882",
-    "pdf_x_end": 394.6,
+    "pdf_x_end": 394.7,
     "birth_place": "Velika Gradusa, Sisak",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -28671,7 +28696,7 @@
     "pdf_page": 1,
     "pdf_y": 393.7,
     "pdf_x": 55.4,
-    "pdf_y_end": 419.5,
+    "pdf_y_end": 531.1,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010009",
     "birth_place": "Martinovići, Glina",
@@ -28680,7 +28705,7 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 336.3,
+    "pdf_x_end": 336.5,
     "other_sources": [
       {
         "soldier_id": "9021012465",
@@ -42548,7 +42573,7 @@
     "first_name": "Lazo",
     "fathers_name": "",
     "full_name": "Ranić Lazo",
-    "additional_info": "rođen 1921, Jošavica — Petrinja, Srbin^ zemljoradnik, u NOVJ od 1941, borac. Poginuo.",
+    "additional_info": "rođen 1921, Jošavica — Petrinja, Srbin, zemljoradnik, u NOVJ od 1941, borac. Poginuo.",
     "birth_year": "1921",
     "pdf_page": 54,
     "pdf_y": 311.5,
@@ -42557,9 +42582,11 @@
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010801",
     "birth_place": "Jošavica, Petrinja",
+    "pdf_x_end": 332.1,
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 332.1
+    "rank": "borac"
   },
   {
     "last_name": "Ranićsdam",
@@ -42704,7 +42731,7 @@
       {
         "soldier_id": "0045000164",
         "name": "Rebrača Adama Đuro",
-        "additional_info": "borac, rođen 1902, Majske Poljane, Glina^ zemljoradnik, Srbin, u NOB od 1942, poginuo 1943. u bici na Sutjesci.",
+        "additional_info": "borac, rođen 1902, Majske Poljane, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo 1943. u bici na Sutjesci.",
         "pdf_file": "borci-sutjeske-8-banijska.pdf",
         "pdf_page": 30,
         "pdf_x": 7.5,
@@ -42962,40 +42989,6 @@
     "rank": "borac",
     "pdf_x_end": 348.7,
     "party": "KPJ"
-  },
-  {
-    "last_name": "Rogulja",
-    "middle_name": "Bože",
-    "first_name": "Đuro",
-    "fathers_name": "Bože",
-    "full_name": "Rogulja Bože Đuro",
-    "additional_info": "rođen 1917, Rogulje — Dvor, Srbin, zemljoradnik, u NOVJ od 1942, član KPJ, borac pri štabu brigade. Poginuo 1943. kod Mrkalj klada u toku bitke na Sutjesci.",
-    "birth_year": "1917",
-    "pdf_page": 55,
-    "pdf_y": 397.0,
-    "pdf_x": 67.2,
-    "pdf_y_end": 423.7,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010825",
-    "birth_place": "Rogulje, Dvor",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "kod Mrkalj klada u toku bitke na Sutjesci",
-    "rank": "borac",
-    "pdf_x_end": 349.0,
-    "party": "KPJ",
-    "other_sources": [
-      {
-        "soldier_id": "9021010713",
-        "name": "Rogulja (Božo) Đuro",
-        "additional_info": "rođen 1917, Rogulje (Dvor). Srbin, ubijen 1943. u NOBu, Nepoznato",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=451",
-        "source_page": 451,
-        "ref_book": "zrtve-rata-1964-hrv"
-      }
-    ]
   },
   {
     "last_name": "Roksandić",
@@ -43367,7 +43360,7 @@
     "pdf_page": 57,
     "pdf_y": 88.5,
     "pdf_x": 61.2,
-    "pdf_y_end": 114.8,
+    "pdf_y_end": 140.7,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010840",
     "birth_place": "Blinja, Petrinja",
@@ -44185,7 +44178,7 @@
         "pdf_x": 5.3,
         "pdf_y": 354.3,
         "pdf_x_end": 171.1,
-        "pdf_y_end": 385.1,
+        "pdf_y_end": 406.7,
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -45886,11 +45879,11 @@
   },
   {
     "last_name": "Ćupović",
-    "middle_name": "",
-    "first_name": "S",
-    "fathers_name": "",
-    "full_name": "Ćupović S",
-    "additional_info": "PETAK, rođen 1908, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1941, borac. Poginuo 1943. kod M. Poljana.",
+    "middle_name": "S.",
+    "first_name": "Petak",
+    "fathers_name": "S.",
+    "full_name": "Ćupović S. Petak",
+    "additional_info": "rođen 1908, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1941, borac. Poginuo 1943. kod M. Poljana.",
     "birth_year": "1908",
     "pdf_page": 13,
     "pdf_y": 111.4,
@@ -45898,14 +45891,14 @@
     "pdf_y_end": 129.2,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010997",
+    "death_place": "kod M. Poljana",
+    "pdf_x_end": 336.3,
     "birth_place": "M. Poljane, Glina",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "kod M. Poljana",
-    "rank": "borac",
-    "pdf_x_end": 336.3
+    "rank": "borac"
   },
   {
     "last_name": "Ćurčija",
@@ -46231,7 +46224,7 @@
     "pdf_page": 12,
     "pdf_y": 148.4,
     "pdf_x": 60.4,
-    "pdf_y_end": 174.9,
+    "pdf_y_end": 202.9,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044011020",
     "birth_place": "Klasnić, Glina",
@@ -46241,7 +46234,7 @@
     "death_date": "1943",
     "death_place": "Bosna",
     "rank": "borac",
-    "pdf_x_end": 341.9
+    "pdf_x_end": 342.2
   },
   {
     "last_name": "Čučković",

@@ -610,7 +610,7 @@
     "pdf_page": 8,
     "pdf_y": 250.8,
     "pdf_x": 29.1,
-    "pdf_y_end": 265.2,
+    "pdf_y_end": 272.9,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000019",
     "pdf_x_end": 117.6,
@@ -802,7 +802,7 @@
         "pdf_x": 37.2,
         "pdf_y": 336.3,
         "pdf_x_end": 84.0,
-        "pdf_y_end": 348.5,
+        "pdf_y_end": 355.4,
         "unit_file": "deveta-soldiers.json"
       }
     ]
@@ -878,7 +878,7 @@
     "first_name": "Jože",
     "fathers_name": "",
     "full_name": "Bevc Jože",
-    "additional_info": "Moravška gora,",
+    "additional_info": "Moravška gora, 1914-",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
@@ -1626,8 +1626,8 @@
         "pdf_page": 3,
         "pdf_x": 156.3,
         "pdf_y": 615.5,
-        "pdf_x_end": 244.9,
-        "pdf_y_end": 631.7,
+        "pdf_x_end": 251.3,
+        "pdf_y_end": 647.9,
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -2178,7 +2178,7 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Dečman Franc",
-    "additional_info": "Hambom,",
+    "additional_info": "Hambom, -1944",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
@@ -3311,10 +3311,10 @@
     "pdf_page": 8,
     "pdf_y": 363.3,
     "pdf_x": 136.8,
-    "pdf_y_end": 369.8,
+    "pdf_y_end": 377.7,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000117",
-    "pdf_x_end": 191.3,
+    "pdf_x_end": 205.1,
     "birth_place": "Krka Francka, V išnja gora"
   },
   {
@@ -4388,12 +4388,13 @@
     "pdf_page": 2,
     "pdf_y": 201.1,
     "pdf_x": 127.7,
-    "pdf_y_end": 215.8,
+    "pdf_y_end": 231.6,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000154",
     "pdf_x_end": 218.4,
     "death_type": "umro",
-    "death_date": "1980"
+    "death_date": "1980",
+    "pdf_x_left": 125.1
   },
   {
     "last_name": "Grbec",
@@ -4950,7 +4951,7 @@
     "first_name": "Anton",
     "fathers_name": "",
     "full_name": "Hočevar Anton",
-    "additional_info": "Vinji vrh,",
+    "additional_info": "Vinji vrh, -1943",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
@@ -5411,7 +5412,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Intihar Ivan",
-    "additional_info": "Spodnje Vodale,",
+    "additional_info": "Spodnje Vodale, -1942",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
@@ -5680,7 +5681,7 @@
       {
         "soldier_id": "0062000836",
         "name": "Jakopin Jože",
-        "additional_info": "zvani Ježek; 1926, Gorenja vas —• Mirna",
+        "additional_info": "zvani Ježek; 1926, Gorenja vas — Mirna",
         "pdf_file": "gubceva.pdf",
         "pdf_page": 11,
         "pdf_x": 184.5,
@@ -5961,7 +5962,7 @@
     "first_name": "Janez",
     "fathers_name": "",
     "full_name": "Jamšek Janez",
-    "additional_info": "zvani Jure; Polje,",
+    "additional_info": "zvani Jure; Polje, 1923-",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 332.8,
@@ -5970,7 +5971,6 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000210",
     "pdf_x_end": 323.7,
-    "birth_place": "Polje",
     "other_sources": [
       {
         "soldier_id": "9020006525",
@@ -5981,13 +5981,15 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "ethnicity": "Slovenac",
+    "birth_place": "Polje, Ljubljana-Moste-Polje",
     "borrowed": [
+      "birth_place",
       "birth_year",
       "death_date",
       "death_place",
       "ethnicity"
     ],
+    "ethnicity": "Slovenac",
     "death_date": "1944",
     "death_place": "Grosuplje",
     "birth_year": "1925"
@@ -7206,7 +7208,7 @@
       {
         "soldier_id": "0062001045",
         "name": "Keržič Ciril",
-        "additional_info": "zvani Metod; Ljubljana,",
+        "additional_info": "zvani Metod; Ljubljana, 1944",
         "pdf_file": "gubceva.pdf",
         "pdf_page": 42,
         "pdf_x": 19.5,
@@ -8404,7 +8406,7 @@
     "first_name": "Ciril",
     "fathers_name": "",
     "full_name": "Košak Ciril",
-    "additional_info": "Družinska vas,",
+    "additional_info": "Družinska vas, 1918-",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
@@ -9371,7 +9373,7 @@
     "first_name": "Anton",
     "fathers_name": "",
     "full_name": "Kukman Anton",
-    "additional_info": "zvani Žorž; Otočec,",
+    "additional_info": "zvani Žorž; Otočec, 1914-",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 185.0,
@@ -9380,11 +9382,12 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000328",
     "pdf_x_end": 127.6,
-    "birth_place": "Otočec",
     "birth_year": "1914",
     "borrowed": [
+      "birth_place",
       "birth_year"
     ],
+    "birth_place": "Otočec",
     "other_sources": [
       {
         "soldier_id": "0070000688",
@@ -9776,8 +9779,8 @@
         "pdf_page": 116,
         "pdf_x": 295.6,
         "pdf_y": 299.3,
-        "pdf_x_end": 463.0,
-        "pdf_y_end": 367.1,
+        "pdf_x_end": 463.3,
+        "pdf_y_end": 436.2,
         "unit_file": "7-krajiska-soldiers.json"
       },
       {
@@ -10448,7 +10451,7 @@
     "first_name": "Janez",
     "fathers_name": "",
     "full_name": "Longar Janez",
-    "additional_info": "Stranska vas,",
+    "additional_info": "Stranska vas, 1913-",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
@@ -10855,7 +10858,7 @@
         "pdf_x": 244.5,
         "pdf_y": 298.0,
         "pdf_x_end": 304.4,
-        "pdf_y_end": 310.6,
+        "pdf_y_end": 317.1,
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -11026,7 +11029,7 @@
     "pdf_page": 4,
     "pdf_y": 412.3,
     "pdf_x": 25.7,
-    "pdf_y_end": 426.9,
+    "pdf_y_end": 434.9,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000378",
     "pdf_x_end": 123.2
@@ -13301,7 +13304,7 @@
     "first_name": "Avgust",
     "fathers_name": "",
     "full_name": "Obersnel Avgust",
-    "additional_info": "zvani Zdenko",
+    "additional_info": "zvani Zdenko 1915",
     "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 469.4,
@@ -14841,7 +14844,7 @@
     "first_name": "Viktor",
     "fathers_name": "",
     "full_name": "Picelj Viktor",
-    "additional_info": "Gorenje Polje,",
+    "additional_info": "Gorenje Polje, -1942",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 422.4,
@@ -15018,7 +15021,7 @@
         "pdf_x": 163.9,
         "pdf_y": 328.0,
         "pdf_x_end": 270.2,
-        "pdf_y_end": 336.5,
+        "pdf_y_end": 345.1,
         "unit_file": "gubceva-soldiers.json"
       }
     ]
@@ -16407,7 +16410,7 @@
     "first_name": "Adolf",
     "fathers_name": "",
     "full_name": "Rački Adolf",
-    "additional_info": "Dolnja Briga,",
+    "additional_info": "Dolnja Briga, -1944",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
@@ -16428,7 +16431,7 @@
         "pdf_x": 37.0,
         "pdf_y": 172.9,
         "pdf_x_end": 85.5,
-        "pdf_y_end": 184.7,
+        "pdf_y_end": 197.3,
         "unit_file": "deveta-soldiers.json"
       }
     ]
@@ -16515,7 +16518,7 @@
     "first_name": "Vinko",
     "fathers_name": "",
     "full_name": "Rehar Vinko",
-    "additional_info": "zvani Cene; Mirna,",
+    "additional_info": "zvani Cene; Mirna, -1943",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
@@ -17337,7 +17340,7 @@
     "first_name": "Tone",
     "fathers_name": "",
     "full_name": "Sadar Tone",
-    "additional_info": "zvani Škupnikov; Krka,",
+    "additional_info": "zvani Škupnikov; Krka, -1942",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
@@ -17991,7 +17994,7 @@
     "first_name": "Milan",
     "fathers_name": "",
     "full_name": "Slogar Milan",
-    "additional_info": "Žužemberk,",
+    "additional_info": "Žužemberk, 1921-",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
@@ -18000,8 +18003,7 @@
     "pdf_y_end": 499.9,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000631",
-    "pdf_x_end": 337.6,
-    "birth_place": "Žužemberk"
+    "pdf_x_end": 337.6
   },
   {
     "last_name": "Sluga",
@@ -19222,7 +19224,7 @@
     "first_name": "Julij",
     "fathers_name": "",
     "full_name": "Tratar Julij",
-    "additional_info": "zvani Julče; Pavla vas,",
+    "additional_info": "zvani Julče; Pavla vas, -1944",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 116.4,
@@ -19257,7 +19259,7 @@
     "first_name": "Vinko",
     "fathers_name": "",
     "full_name": "Tratnik Vinko",
-    "additional_info": "Lutrško selo,",
+    "additional_info": "Lutrško selo, 1923-",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 132.4,
@@ -19266,7 +19268,6 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000678",
     "pdf_x_end": 226.8,
-    "birth_place": "Lutrško selo",
     "other_sources": [
       {
         "soldier_id": "9020010483",
@@ -19289,6 +19290,7 @@
         "unit_file": "deveta-soldiers.json"
       }
     ],
+    "birth_place": "Lutrško selo",
     "birth_year": "1923",
     "borrowed": [
       "birth_year",
@@ -19752,7 +19754,7 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Urigelj Franc",
-    "additional_info": "Malkovec,",
+    "additional_info": "Malkovec, -1942",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
@@ -21496,7 +21498,7 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Zupančič Franc",
-    "additional_info": "Ševnica,",
+    "additional_info": "Ševnica, -1945",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
@@ -22062,7 +22064,7 @@
       {
         "soldier_id": "0062002269",
         "name": "Senica Viktor",
-        "additional_info": "zvani Joco; 1910, Obrh —• Dolenjsikie Toplice",
+        "additional_info": "zvani Joco; 1910, Obrh — Dolenjsikie Toplice",
         "pdf_file": "gubceva.pdf",
         "pdf_page": 30,
         "pdf_x": 163.4,
@@ -22916,7 +22918,7 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Štefančič Franc",
-    "additional_info": "Gornji Vrh,",
+    "additional_info": "Gornji Vrh, -1943",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
@@ -23336,7 +23338,7 @@
     "first_name": "Albin",
     "fathers_name": "",
     "full_name": "Železnik Albin",
-    "additional_info": "Mirna vas, _ 1921-1942",
+    "additional_info": "Mirna vas, 1921-1942",
     "birth_year": "1921",
     "death_type": "poginuo",
     "death_date": "1942",
@@ -23344,7 +23346,7 @@
     "pdf_page": 10,
     "pdf_y": 239.7,
     "pdf_x": 242.9,
-    "pdf_y_end": 246.2,
+    "pdf_y_end": 254.1,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000822",
     "pdf_x_end": 338.4
@@ -23425,17 +23427,17 @@
     "first_name": "Stane",
     "fathers_name": "",
     "full_name": "Žigon Stane",
-    "additional_info": "Novo mesto, Napisal po evidenčni kartoteki:",
+    "additional_info": "Novo mesto 1918-, Napisal po evidenčni kartoteki:",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 255.8,
     "pdf_x": 243.1,
-    "pdf_y_end": 270.2,
+    "pdf_y_end": 303.3,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000824",
-    "pdf_x_end": 323.7,
-    "birth_place": "Novo mesto, Napisal po evidenčni kartoteki"
+    "pdf_x_end": 335.2,
+    "birth_place": "Napisal po evidenčni kartoteki"
   },
   {
     "last_name": "Žirovnik",

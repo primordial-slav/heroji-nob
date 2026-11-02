@@ -610,6 +610,66 @@ def entry_lines(col: list[dict], li: int, starts: set, layout: dict, one_line: b
     return lines, 'end'
 
 
+_LAT = dict(zip('абвгдђежзијклмнопрстћуфхцчш', 'abvgdđežzijklmnoprstćufhcčš'))
+_LAT.update({'љ': 'lj', 'њ': 'nj', 'џ': 'dž'})
+_CARONS = str.maketrans('čćžšđ', 'cczsd')
+_LONE_NUMBER = re.compile(r'\W*(?!19\d\d)\d{1,4}\W*')
+_OPENS_ENTRY = re.compile(r'\W*(?:\d{1,4}\W+)?[A-ZČĆŽŠĐА-ШЂЉЊЋЏЈ]{3,}')
+
+
+# tables and lists whose text the parser puts together: their boxes aren't read against the text
+FIXED_LAYOUT = {'kozjanski-odred.pdf', '53-srednjobosanska-divizija.pdf', '18-slavonska.pdf', '7-crnogorska-omladinska.pdf', '4-brigada-slavonije.pdf',
+                '1-zagorska.pdf', '34-divizija.pdf', '22-divizija.pdf', 'zene-1-dalmatinska.pdf', 'zene-11-dalmatinska.pdf', 'osjecka-zene.pdf',
+                'turopoljsko-posavski-odred.pdf', '9-srpska.pdf', '1-2-prekomorska.pdf', '5-prekomorska.pdf', '4-prekomorska.pdf', 'artilerija-9-korpusa.pdf',
+                '32-divizija.pdf', 'prva-proleterska-garibaldi.pdf', 'prva-vojvodjanska.pdf'}
+
+
+def _fold(text: str) -> str:
+    return re.sub(r'[^a-z0-9]', '', ''.join(_LAT.get(c, c) for c in text.lower()).translate(_CARONS))
+
+
+def fit_to_text(s: dict, lines: list[dict], col: list[dict], col_starts: set) -> list[dict]:
+    """The entry's own text says where its box ends, where the page's layout can't: a man left out of the list (a
+    deserter, a scan's repeated page) has no known start, so the box before him runs over him; a lone page number stands
+    under a column; and an indented line can carry an entry on. Lines past what the text holds go where they open an
+    entry or are a page number; the next lines come in where the text goes on in them."""
+    while len(lines) > 1 and _LONE_NUMBER.fullmatch(lines[-1]['text']):
+        lines = lines[:-1]
+    E = _fold(s.get('additional_info') or '')
+    if len(E) < 8:
+        return lines
+    folded = [_fold(ln['text']) for ln in lines]
+    B = ''.join(folded)
+    tail = E[-12:]
+    long_box = len(B) > len(E) + len(_fold(s.get('full_name') or s.get('name') or '')) + 25
+    if not long_box and tail in B:
+        return lines
+    from difflib import SequenceMatcher
+    blocks = [b for b in SequenceMatcher(None, B, E, autojunk=False).get_matching_blocks() if b.size >= 4]
+    if not blocks:
+        return lines
+    if long_box:
+        end = blocks[-1].a + blocks[-1].size
+        at, keep = 0, len(lines)
+        for i, f in enumerate(folded):
+            if at >= end and _OPENS_ENTRY.match(lines[i]['text']):
+                keep = i
+                break
+            at += len(f)
+        lines = lines[:max(keep, 1)]
+    rest = E[blocks[-1].b + blocks[-1].size:]
+    if len(rest) >= 6 and id(lines[-1]) in (ids := {id(ln): i for i, ln in enumerate(col)}):
+        j = ids[id(lines[-1])] + 1
+        while len(rest) >= 3 and j < len(col) and j not in col_starts and j - ids[id(lines[-1])] <= 8:
+            f = _fold(col[j]['text'])
+            if not f or SequenceMatcher(None, f, rest[:len(f) + 2], autojunk=False).ratio() < 0.75:
+                break
+            lines = lines + [col[j]]
+            rest = rest[len(f):]
+            j += 1
+    return lines
+
+
 def _set_box(s: dict, page: dict | None, x0: float, x1: float, y1: float):
     # text past the edge of a cropped scan (a start off the page is a bad position; leave it be)
     if page and x0 < page['width']:
@@ -634,17 +694,20 @@ def entries(soldiers: list[dict]):
         yield from (o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book'))
 
 
-def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
+def fill_boxes(soldiers: list[dict], cache: PageCache | None = None, keep_given: bool = False) -> dict:
     """Set pdf_x_end / pdf_y_end (and pdf_x_left) on every entry with a position (a record's own, and
     those in its other_sources), in place. Returns counts: boxed, unmatched (no text line at the stored start;
     given a one-line box), cleared (no position; stale box fields removed), what
-    ended the boxed entries (see entry_lines), and the layout measured for each PDF."""
+    ended the boxed entries (see entry_lines), and the layout measured for each PDF. keep_given: an entry that has a
+    box keeps it (Borci drugih jedinica: its book's parser drew them knowing every entry of the page, and most of
+    those entries are other units' men, whom this file doesn't hold, so a box drawn here would run over them)."""
     own_cache = cache is None
     cache = cache or PageCache()
     stats = {'boxed': 0, 'unmatched': 0, 'cleared': 0, 'stops': Counter(), 'layouts': {}}
     by_page: dict[str, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
     for s in entries(soldiers):
         inline = s.get('pdf_file') in INLINE_ENTRIES or s.get('pdf_page') in INLINE_PAGES.get(s.get('pdf_file'), ())
+        inline = inline or (keep_given and s.get('pdf_x_end') is not None)
         if inline and s.get('pdf_y') is not None:
             stats['inline'] = stats.get('inline', 0) + 1
         elif s.get('pdf_file') and s.get('pdf_page') and s.get('pdf_y') is not None:
@@ -716,6 +779,8 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None) -> dict:
                         elif len(shifts) >= 3 and median(shifts) < 0.75 * layout['indent']:
                             entry_layout = dict(layout, col_indent=median(shifts))
                 lines, why = entry_lines(col, li, col_starts, entry_layout, pno in one_line_pages)
+                if pdf_file not in FIXED_LAYOUT and pno not in one_line_pages:
+                    lines = fit_to_text(s, lines, col, col_starts)
                 _set_box(s, page, min(ln['x0'] for ln in lines), max(ln['x1'] for ln in lines),
                          max(ln['bottom'] for ln in lines))
                 stats['boxed'] += 1

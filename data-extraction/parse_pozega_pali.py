@@ -74,8 +74,8 @@ def read() -> list[dict]:
     entries, village, note = [], '', False
     for ln in lines:
         t, page = ln['text'], ln['page']
-        if re.fullmatch(r'[\d\W]{1,5}', t):
-            continue                                                   # the page number
+        if re.fullmatch(r'[\d\W]{1,5}', t) and not re.match(r'\W*19\d\d', t):
+            continue                                                   # the page number; a year alone ends an entry
         if not re.search(rf'[{L}\d,;]', t):
             village, note = t, False                                   # a village heading
             continue

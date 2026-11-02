@@ -828,7 +828,7 @@
       {
         "soldier_id": "0019000103",
         "name": "Dinić Najdan",
-        "additional_info": "SIMA, komandant 4. bataljona 19. srpske brigade, rođen 1918. god. u selu Baličevcu kod Merošine (Niš), poginuo 8. februara 1945. god. kod sela Grbavaca blizu Zvornika u borbi protiv Nemaca; sahranjen u selu Šetićima kod Zvornika.",
+        "additional_info": "zvani Sima; komandant 4. bataljona 19. srpske brigade, rođen 1918. god. u selu Baličevcu kod Merošine (Niš), poginuo 8. februara 1945. god. kod sela Grbavaca blizu Zvornika u borbi protiv Nemaca; sahranjen u selu Šetićima kod Zvornika.",
         "pdf_file": "25-srpska-divizija.pdf",
         "pdf_page": 30,
         "pdf_x": 76.4,
@@ -1951,13 +1951,14 @@
       {
         "soldier_id": "0089000123",
         "name": "Jovanović Radoša Trajko",
-        "additional_info": "imao partizanski nadimak Josif. Rođen 1922. v godine u selu Trbunje, Blace. Svršeni učenik Državne trgovačke akademije u Nišu, 1941. godine. Član SKOJ-a od 1940. godine u Nišu, član KPJ od 1941. godine. Borac Topličkog NOP odreda od 1941, a član Ok-,/ • ružnog povereništva KPJ za toplički okrug od jeseni 1943. godine. i. Politički komesar 23. NO brigade od decembra 1944. i sekretar divizijskog komiteta KPJ 45. divizije od februara 1945. Poginuo 7. februara 1945. kod Tuzle, na drumu, od mine, Sahranjen u Tuzli.",
+        "additional_info": "imao partizanski nadimak Josif. Rođen 1922. v godine u selu Trbunje, Blace. Svršeni učenik Državne trgovačke akademije u Nišu, 1941. godine. Član SKOJ-a od 1940. godine u Nišu, član KPJ od 1941. godine. Borac Topličkog NOP odreda od 1941, a član Ok-,/ ružnog povereništva KPJ za toplički okrug od jeseni 1943. godine. i. Politički komesar 23. NO brigade od decembra 1944. i sekretar divizijskog komiteta KPJ 45. divizije od februara 1945. Poginuo 7. februara 1945. kod Tuzle, na drumu, od mine, Sahranjen u Tuzli.",
         "pdf_file": "23-srpska.pdf",
         "pdf_page": 13,
         "pdf_x": 76.6,
         "pdf_y": 433.1,
         "pdf_x_end": 382.6,
-        "pdf_y_end": 469.9,
+        "pdf_y_end": 508.3,
+        "pdf_x_left": 74.9,
         "unit_file": "23-srpska-soldiers.json"
       },
       {
@@ -6182,7 +6183,29 @@
     "rank": "zamenik komesara bataljona",
     "pdf_x_end": 395.7,
     "death_place": "Kulina",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0127000745",
+        "name": "Stojanović Dragoljub",
+        "additional_info": "zvani Dolia; 1911, Gornja Trnava, Prokuplje, zemoljoradnik. Saradnik NOP od 1941. Bio borac Topličkog odreda. Kandidat za člana KPJ od 1942. a član KŠ od leta 1943. godine. Bio politički radnik na terenu. U 5. brigadi od njenog osnivanja, politički komesar čete. Poginuo jula 1944. godine kod Kuline, u borbi protiv Bugara.",
+        "pdf_file": "5-srpska.pdf",
+        "pdf_page": 73,
+        "pdf_x": 60.1,
+        "pdf_y": 153.5,
+        "pdf_x_end": 365.0,
+        "pdf_y_end": 205.9,
+        "unit_file": "5-srpska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "07.1944",
+          "place": "Kulina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojanović",

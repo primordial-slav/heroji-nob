@@ -1438,7 +1438,7 @@
       {
         "soldier_id": "0147000123",
         "name": "Bunčić Vinka Dragutin",
-        "additional_info": "Žitomir, Zelina, poginuo u pro­ sincu 1944. u sastavu Zagorske brigade",
+        "additional_info": "Žitomir, Zelina, poginuo u prosincu 1944. u sastavu Zagorske brigade",
         "pdf_file": "zagrebacki-odred.pdf",
         "pdf_page": 2,
         "pdf_x": 299.4,
@@ -6827,9 +6827,33 @@
         "ref_book": "hrvatsko-zagorje-1981"
       },
       {
+        "soldier_id": "0035108019",
+        "name": "Orešić Fabijan",
+        "additional_info": "zvani Haba; r. 1919, s. Dobri Zdenci, Donja Stubica, Hrvat, radnik, čl. KPJ, NOV 1943, poginuo 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 203,
+        "pdf_x": 299.4,
+        "pdf_y": 580.2,
+        "pdf_x_end": 451.0,
+        "pdf_y_end": 605.9,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035006048",
+        "name": "Orešić Fabijan",
+        "additional_info": "poginuo u NOB",
+        "pdf_file": "32-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 205.2,
+        "pdf_y": 217.6,
+        "pdf_x_end": 282.0,
+        "pdf_y_end": 227.1,
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0147000735",
         "name": "Orešić Fabijan",
-        "additional_info": "zvani Haba; Dobri Zdenci, Donja Stubica, poginuo 1945. u Podravini kod Bereka kao komandant bata­ ljona u Zagorskoj brigadi",
+        "additional_info": "zvani Haba; Dobri Zdenci, Donja Stubica, poginuo 1945. u Podravini kod Bereka kao komandant bataljona u Zagorskoj brigadi",
         "pdf_file": "zagrebacki-odred.pdf",
         "pdf_page": 8,
         "pdf_x": 298.8,
@@ -6839,6 +6863,14 @@
         "unit_file": "zagrebacki-odred-soldiers.json"
       }
     ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "radnik",
+    "party": "KPJ",
     "birth_date": "02.03.1919"
   },
   {

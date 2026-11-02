@@ -734,7 +734,7 @@ def main():
             print(f"    Count: {original_count} -> {new_count} ({new_count - original_count:+d})")
 
         if json_path.name in live_files:
-            box_stats = entry_boxes.fill_boxes(soldiers, box_cache)
+            box_stats = entry_boxes.fill_boxes(soldiers, box_cache, keep_given=brigade_code == 122)
             changed = sum(1 for sid, box in entry_boxes.box_snapshot(soldiers).items()
                           if original_boxes.get(sid) != box)
             print(f"    Entry boxes: {entry_boxes.describe(box_stats, changed)}")

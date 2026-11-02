@@ -3333,7 +3333,7 @@
     "first_name": "Najdan",
     "fathers_name": "",
     "full_name": "Dinić Najdan",
-    "additional_info": "SIMA, komandant 4. bataljona 19. srpske brigade, rođen 1918. god. u selu Baličevcu kod Merošine (Niš), poginuo 8. februara 1945. god. kod sela Grbavaca blizu Zvornika u borbi protiv Nemaca; sahranjen u selu Šetićima kod Zvornika.",
+    "additional_info": "zvani Sima; komandant 4. bataljona 19. srpske brigade, rođen 1918. god. u selu Baličevcu kod Merošine (Niš), poginuo 8. februara 1945. god. kod sela Grbavaca blizu Zvornika u borbi protiv Nemaca; sahranjen u selu Šetićima kod Zvornika.",
     "birth_year": "1918",
     "pdf_page": 30,
     "pdf_y": 395.9,
@@ -3341,15 +3341,15 @@
     "pdf_y_end": 438.9,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000103",
-    "birth_place": "Baličevac, Merošine (Niš)",
-    "death_type": "poginuo",
-    "death_date": "08.02.1945",
     "pdf_x_end": 335.9,
     "pdf_x_left": 55.5,
     "occupation": "zemljoradnik",
     "rank": "puškomitraljezac, desetar, komandir voda",
     "death_place": "Zvornik",
     "party": "KPJ 1942",
+    "birth_place": "Baličevac, Merošine (Niš)",
+    "death_type": "poginuo",
+    "death_date": "08.02.1945",
     "unit_detail": "4. bataljon, 19. srpska brigada",
     "other_sources": [
       {
@@ -5720,7 +5720,7 @@
     "first_name": "Stole",
     "fathers_name": "",
     "full_name": "Janićijević Stole",
-    "additional_info": "borac 3. bataljona 19. srpske brigade, rođen 1922. god. u selu Zlatovu kod Despotovca, ranjen 8. februara 1945. god. kod Zvornika u borbi protiv Nemaca; podlegao ranama na g^utu za bolnicu.",
+    "additional_info": "borac 3. bataljona 19. srpske brigade, rođen 1922. god. u selu Zlatovu kod Despotovca, ranjen 8. februara 1945. god. kod Zvornika u borbi protiv Nemaca; podlegao ranama na gutu za bolnicu.",
     "birth_year": "1922",
     "pdf_page": 34,
     "pdf_y": 387.0,
@@ -5728,11 +5728,11 @@
     "pdf_y_end": 422.1,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000170",
+    "pdf_x_end": 340.1,
+    "pdf_x_left": 60.1,
     "birth_place": "Zlatovo, Despotovac",
     "death_type": "umro",
     "rank": "borac",
-    "pdf_x_end": 340.1,
-    "pdf_x_left": 60.1,
     "unit_detail": "3. bataljon, 19. srpska brigada",
     "other_sources": [
       {
@@ -10056,7 +10056,7 @@
       {
         "soldier_id": "0073001139",
         "name": "Lazarević V Jovan",
-        "additional_info": "borac 1. čete 4. bataljona, rođen 1925. god. u selu Crnajki kod Majdanpeka, umro 6. aprila 1945. god. u selu A°njem Srebreniku kod Tuzle od zadobijenih rana; sahranjen u A°njem Srebreniku.",
+        "additional_info": "borac 1. čete 4. bataljona, rođen 1925. god. u selu Crnajki kod Majdanpeka, umro 6. aprila 1945. god. u selu Aonjem Srebreniku kod Tuzle od zadobijenih rana; sahranjen u Aonjem Srebreniku.",
         "pdf_file": "19-srpska.pdf",
         "pdf_page": 40,
         "pdf_x": 79.5,
@@ -10770,7 +10770,7 @@
     "pdf_page": 74,
     "pdf_y": 461.1,
     "pdf_x": 85.0,
-    "pdf_y_end": 495.5,
+    "pdf_y_end": 517.4,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000320",
     "birth_place": "Bosanska Krupa",
@@ -12197,7 +12197,7 @@
     "pdf_page": 12,
     "pdf_y": 446.3,
     "pdf_x": 81.7,
-    "pdf_y_end": 503.3,
+    "pdf_y_end": 489.3,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000360",
     "birth_place": "Makci, Veliko Gradište",
@@ -12714,7 +12714,7 @@
       {
         "soldier_id": "0073001486",
         "name": "Milenković Ljubisav",
-        "additional_info": "borac 1. čete 3. bataljona^ rođen 1924. u Dobriču (južna Srbija), poginuo 8. februara 1945. kod Zvornika u borbi protiv Nemaca.",
+        "additional_info": "borac 1. čete 3. bataljona, rođen 1924. u Dobriču (južna Srbija), poginuo 8. februara 1945. kod Zvornika u borbi protiv Nemaca.",
         "pdf_file": "19-srpska.pdf",
         "pdf_page": 27,
         "pdf_x": 48.9,
@@ -14712,7 +14712,6 @@
     "fathers_name": "",
     "full_name": "Mitrović Miodrag",
     "additional_info": "vodnik voda u 2. četi 3. bataljona 19. srpske brigade, poginuo 18. januara 1945. god. na Bojištu kod sela Tugova blizu Vlasenice u borbi protiv Nemaca.",
-    "birth_year": "1927",
     "pdf_page": 37,
     "pdf_y": 99.0,
     "pdf_x": 107.6,
@@ -14762,7 +14761,8 @@
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin"
+    "ethnicity": "Srbin",
+    "birth_year": "1927"
   },
   {
     "last_name": "Mišić",
@@ -16694,7 +16694,7 @@
     "first_name": "Svetozar",
     "fathers_name": "",
     "full_name": "Obradović Svetozar",
-    "additional_info": "borac 3. čete 4. bataljona 18. srpske brigade, rođen 1922. god. u selu Crn>enac (nije se moglo utvrditi o kome se mestu radi — prim. red.), poginuo 22. novembra 1944. god. kod sela Cvetke blizu Kraljeva u borbi protiv Nemaca.",
+    "additional_info": "borac 3. čete 4. bataljona 18. srpske brigade, rođen 1922. god. u selu Crnjenac (nije se moglo utvrditi o kome se mestu radi — prim. red.), poginuo 22. novembra 1944. god. kod sela Cvetke blizu Kraljeva u borbi protiv Nemaca.",
     "birth_year": "1922",
     "pdf_page": 13,
     "pdf_y": 318.7,
@@ -16702,12 +16702,12 @@
     "pdf_y_end": 361.8,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000491",
-    "death_type": "poginuo",
-    "death_date": "22.11.1944",
-    "rank": "borac",
     "pdf_x_end": 379.9,
     "pdf_x_left": 99.4,
+    "death_type": "poginuo",
+    "death_date": "22.11.1944",
     "death_place": "Cvetke, Kraljevo",
+    "rank": "borac",
     "unit_detail": "3. četa, 4. bataljon, 18. srpska brigada"
   },
   {
@@ -18080,13 +18080,13 @@
     "pdf_page": 10,
     "pdf_y": 451.6,
     "pdf_x": 77.8,
-    "pdf_y_end": 494.6,
+    "pdf_y_end": 517.5,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000532",
     "death_type": "poginuo",
     "death_date": "18.11.1944",
     "rank": "borac",
-    "pdf_x_end": 336.4,
+    "pdf_x_end": 337.8,
     "pdf_x_left": 56.4,
     "unit_detail": "3. četa, 4. bataljon, 18. srpska brigada"
   },
@@ -19966,7 +19966,7 @@
     "first_name": "Rade",
     "fathers_name": "",
     "full_name": "Radenkovšu Rade",
-    "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade (verovatno rođen u selu Golešnici kod Alekreg. br. 1/1 sačuvan je nepotpuni ratni spisak poginulih boraca i rukovodilaca 25. srpske NOU divizije, i to u originalu onako kako je tada vođen. Ocenili smo da je ovaj spisak potrebno objaviti iz poštovanja prema životima ovih nama uvek dragih drugova i drugarica čija će imena krasiti ovu monografiju i podsećati na žrtve i napore sve one koji je budu čitali i koristili, a posebno njihovu najbližu rodbinu i saborce. Uvereni smo da su izostala još mnoga slavna imena poginulih boraca koja nisu ušla u ovaj spisak, jer je rat, po svojoj surovosti, bio jači od naših želja i tehničke opremljenosti. Zbog toga nije moglo da se ubeleži svako ime onih koji padoše na bojnom polju. Sigurno da i neki podaci u spisku nisu tačni. Pokušavali smo da ih, koliko je bilo moguće, dopunimo, proverimo i ispravimo. Ali, pored svog nastojanja ostao je još poneki podatak nepotpun ili pogrešan. Zato ćemo biti zahvalni svima koji budu pomogli da upotpunimo podatke i spisak poginulih boraca ove divizije. sinca — prim. red.), ranjen 23. jula 1944. god. u selu Vlasovu kod Pr°kuplja u borbi protiv četnika; 25. jula 1944. podlegao ranama.",
+    "additional_info": "borac 3. čete 2. bataljona 16. srpske brigade (verovatno rođen u selu Golešnici kod Alekreg. br. 1/1 sačuvan je nepotpuni ratni spisak poginulih boraca i rukovodilaca 25. srpske NOU divizije, i to u originalu onako kako je tada vođen. Ocenili smo da je ovaj spisak potrebno objaviti iz poštovanja prema životima ovih nama uvek dragih drugova i drugarica čija će imena krasiti ovu monografiju i podsećati na žrtve i napore sve one koji je budu čitali i koristili, a posebno njihovu najbližu rodbinu i saborce. Uvereni smo da su izostala još mnoga slavna imena poginulih boraca koja nisu ušla u ovaj spisak, jer je rat, po svojoj surovosti, bio jači od naših želja i tehničke opremljenosti. Zbog toga nije moglo da se ubeleži svako ime onih koji padoše na bojnom polju. Sigurno da i neki podaci u spisku nisu tačni. Pokušavali smo da ih, koliko je bilo moguće, dopunimo, proverimo i ispravimo. Ali, pored svog nastojanja ostao je još poneki podatak nepotpun ili pogrešan. Zato ćemo biti zahvalni svima koji budu pomogli da upotpunimo podatke i spisak poginulih boraca ove divizije. sinca — prim. red.), ranjen 23. jula 1944. god. u selu Vlasovu kod Prokuplja u borbi protiv četnika; 25. jula 1944. podlegao ranama.",
     "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 301.4,
@@ -19974,12 +19974,12 @@
     "pdf_y_end": 318.8,
     "pdf_file": "25-srpska-divizija.pdf",
     "soldier_id": "0019000588",
-    "death_type": "umro",
-    "rank": "borac",
     "pdf_x_end": 382.4,
     "pdf_x_left": 101.6,
-    "unit_detail": "3. četa, 2. bataljon, 16. srpska brigada",
-    "death_date": "25.07.1944"
+    "death_type": "umro",
+    "death_date": "25.07.1944",
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon, 16. srpska brigada"
   },
   {
     "last_name": "Radisavljević",
@@ -26492,8 +26492,8 @@
         "pdf_page": 48,
         "pdf_x": 77.9,
         "pdf_y": 34.8,
-        "pdf_x_end": 382.8,
-        "pdf_y_end": 60.8,
+        "pdf_x_end": 383.3,
+        "pdf_y_end": 91.0,
         "unit_file": "19-srpska-soldiers.json"
       }
     ]
@@ -27612,7 +27612,7 @@
         "pdf_x": 55.0,
         "pdf_y": 419.9,
         "pdf_x_end": 360.4,
-        "pdf_y_end": 445.8,
+        "pdf_y_end": 475.3,
         "unit_file": "19-srpska-soldiers.json"
       }
     ],
@@ -27865,7 +27865,7 @@
         "pdf_x": 73.9,
         "pdf_y": 421.7,
         "pdf_x_end": 223.8,
-        "pdf_y_end": 448.9,
+        "pdf_y_end": 471.5,
         "unit_file": "18-srpska-soldiers.json"
       }
     ],

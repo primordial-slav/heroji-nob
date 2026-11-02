@@ -403,11 +403,12 @@
     "pdf_page": 1,
     "pdf_y": 418.9,
     "pdf_x": 226.4,
-    "pdf_y_end": 445.6,
+    "pdf_y_end": 499.6,
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Kaljani",
     "soldier_id": "0103000016",
-    "pdf_x_end": 353.2
+    "pdf_x_end": 353.4,
+    "pdf_x_left": 218.1
   },
   {
     "last_name": "Barić",
@@ -1050,6 +1051,25 @@
     "death_date": "25.11.1944"
   },
   {
+    "soldier_id": "0103009004",
+    "last_name": "Binić",
+    "middle_name": "",
+    "first_name": "Boža",
+    "fathers_name": "",
+    "full_name": "Binić Boža",
+    "additional_info": "iz Velikog Iža, poginuo u borbi za Očestovo 1. XI 1944. god.",
+    "birth_year": "",
+    "pdf_file": "6-dalmatinska.pdf",
+    "pdf_page": 2,
+    "pdf_y": 346.1,
+    "pdf_x": 63.4,
+    "death_type": "poginuo",
+    "death_date": "01.11.1944",
+    "death_place": "Očestovo",
+    "pdf_x_end": 190.0,
+    "pdf_y_end": 371.9
+  },
+  {
     "last_name": "Brkljača",
     "middle_name": "J",
     "first_name": "Ilija",
@@ -1487,7 +1507,7 @@
       {
         "soldier_id": "0079001282",
         "name": "Ćoša Ivan",
-        "additional_info": "iz Benkovca, u borbi kod Markoševih stanova, 18. XI",
+        "additional_info": "iz Benkovca, u borbi kod Markoševih stanova, 18. XI 1944-",
         "pdf_file": "19-sjevernodalmatinska.pdf",
         "pdf_page": 11,
         "pdf_x": 308.9,
@@ -3473,6 +3493,42 @@
     "unit_detail": "štab 1. bataljona"
   },
   {
+    "soldier_id": "0103009005",
+    "last_name": "Krivić",
+    "middle_name": "F.",
+    "first_name": "Filip",
+    "fathers_name": "F.",
+    "full_name": "Krivić F. Filip",
+    "additional_info": "iz Biograda, poginuo u borbi kod Palanke 6. XI 1944. god.",
+    "pdf_file": "6-dalmatinska.pdf",
+    "pdf_page": 7,
+    "pdf_y": 65.4,
+    "pdf_x": 74.2,
+    "death_type": "poginuo",
+    "death_date": "06.11.1944",
+    "death_place": "Palanka",
+    "pdf_x_end": 200.7,
+    "pdf_y_end": 92.2,
+    "birth_year": "1922",
+    "other_sources": [
+      {
+        "soldier_id": "9021001094",
+        "name": "Krivić (Frane) Filip",
+        "additional_info": "rođen 1922, Kraj (Biograd). Hrvat, poginuo 1944. u NOBu, Knin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=29",
+        "source_page": 29,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Kraj, Biograd",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat"
+  },
+  {
     "last_name": "Kocan",
     "middle_name": "",
     "first_name": "Mate",
@@ -3709,7 +3765,7 @@
     "pdf_page": 6,
     "pdf_y": 357.7,
     "pdf_x": 213.3,
-    "pdf_y_end": 384.5,
+    "pdf_y_end": 402.0,
     "pdf_file": "6-dalmatinska.pdf",
     "birth_place": "Oranje",
     "soldier_id": "0103000151",

@@ -1371,7 +1371,7 @@
     "first_name": "Dušan",
     "fathers_name": "M",
     "full_name": "Atanacković M Dušan",
-    "additional_info": "1924, Deliblato, borac, pog. 30.11",
+    "additional_info": "1924, Deliblato, borac, pog. 30.11 1944.",
     "birth_year": "1924",
     "pdf_page": 5,
     "pdf_y": 184.8,
@@ -1379,8 +1379,6 @@
     "pdf_y_end": 203.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000072",
-    "birth_place": "Deliblato",
-    "rank": "borac",
     "pdf_x_end": 355.4,
     "death_type": "poginuo",
     "death_place": "Bezdan",
@@ -1406,6 +1404,8 @@
         "unit_file": "12-vojvodjanska-soldiers.json"
       }
     ],
+    "birth_place": "Deliblato",
+    "rank": "borac",
     "ethnicity": "Srbin",
     "borrowed": [
       "death_date",
@@ -5216,7 +5216,7 @@
     "first_name": "Jano",
     "fathers_name": "T",
     "full_name": "Bibo T Jano",
-    "additional_info": "1920, Mali Taraš, borac 2. bataljona, pog. 27.04.",
+    "additional_info": "1920, Mali Taraš, borac 2. bataljona, pog. 27.04. 1945.",
     "birth_year": "1920",
     "pdf_page": 12,
     "pdf_y": 100.7,
@@ -5224,10 +5224,10 @@
     "pdf_y_end": 119.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000258",
+    "pdf_x_end": 367.9,
     "birth_place": "Mali Taraš",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 367.9,
     "death_type": "poginuo",
     "borrowed": [
       "death_date",
@@ -5368,7 +5368,7 @@
     "first_name": "Steva",
     "fathers_name": "",
     "full_name": "Bilner Steva",
-    "additional_info": "1920, Vukovar, borac, pog. kod Bekleža 29.08.",
+    "additional_info": "1920, Vukovar, borac, pog. kod Bekleža 29.08. 1944.",
     "birth_year": "1920",
     "pdf_page": 12,
     "pdf_y": 244.1,
@@ -5376,9 +5376,9 @@
     "pdf_y_end": 262.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000264",
+    "pdf_x_end": 367.6,
     "birth_place": "Vukovar",
-    "rank": "borac",
-    "pdf_x_end": 367.6
+    "rank": "borac"
   },
   {
     "last_name": "Bilobabin",
@@ -6319,13 +6319,13 @@
     "pdf_page": 13,
     "pdf_y": 481.6,
     "pdf_x": 66.6,
-    "pdf_y_end": 491.6,
+    "pdf_y_end": 519.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000309",
     "birth_place": "Torjanci",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 332.2
+    "pdf_x_end": 348.7
   },
   {
     "last_name": "Bogojev",
@@ -7555,7 +7555,7 @@
     "first_name": "Milan",
     "fathers_name": "I",
     "full_name": "Božić I Milan",
-    "additional_info": "1917, Novi Sad, 23.10.1944, borac, umro",
+    "additional_info": "1917, Novi Sad, 23.10.1944, borac, umro 1966.",
     "birth_year": "1917",
     "pdf_page": 14,
     "pdf_y": 188.5,
@@ -7563,10 +7563,11 @@
     "pdf_y_end": 207.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000363",
+    "pdf_x_end": 364.6,
     "birth_place": "Novi Sad",
     "death_type": "umro",
-    "rank": "borac",
-    "pdf_x_end": 364.6
+    "death_date": "1966",
+    "rank": "borac"
   },
   {
     "last_name": "Božić",
@@ -10229,12 +10230,12 @@
     "pdf_page": 141,
     "pdf_y": 477.4,
     "pdf_x": 67.8,
-    "pdf_y_end": 487.4,
+    "pdf_y_end": 513.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000505",
     "birth_place": "Bala",
     "rank": "borac",
-    "pdf_x_end": 232.3
+    "pdf_x_end": 349.7
   },
   {
     "last_name": "Cvetković",
@@ -14469,7 +14470,7 @@
     "first_name": "Milan",
     "fathers_name": "",
     "full_name": "Filipović Milan",
-    "additional_info": "1921, Novi Karlovci, vodnik, 2.07—9.09.",
+    "additional_info": "1921, Novi Karlovci, vodnik, 2.07—9.09. 1944.",
     "birth_year": "1921",
     "pdf_page": 137,
     "pdf_y": 354.6,
@@ -14477,9 +14478,9 @@
     "pdf_y_end": 374.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000713",
+    "pdf_x_end": 348.2,
     "birth_place": "Novi Karlovci",
-    "rank": "vodnik",
-    "pdf_x_end": 348.2
+    "rank": "vodnik"
   },
   {
     "last_name": "Filipović",
@@ -14989,7 +14990,7 @@
     "first_name": "Bojka",
     "fathers_name": "",
     "full_name": "Gajdaš Bojka",
-    "additional_info": "1925, Ležimir, zamenik komesara čete, 2.07.",
+    "additional_info": "1925, Ležimir, zamenik komesara čete, 2.07. 1944.",
     "birth_year": "1925",
     "pdf_page": 28,
     "pdf_y": 330.6,
@@ -14997,9 +14998,9 @@
     "pdf_y_end": 349.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000737",
+    "pdf_x_end": 361.3,
     "birth_place": "Ležimir",
-    "rank": "zamenik komesara čete",
-    "pdf_x_end": 361.3
+    "rank": "zamenik komesara čete"
   },
   {
     "last_name": "Gajer",
@@ -15592,7 +15593,7 @@
     "pdf_page": 29,
     "pdf_y": 470.7,
     "pdf_x": 59.5,
-    "pdf_y_end": 488.7,
+    "pdf_y_end": 518.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000769",
     "birth_place": "Žabalj",
@@ -17002,7 +17003,7 @@
     "first_name": "Stevan",
     "fathers_name": "",
     "full_name": "Grbić Stevan",
-    "additional_info": "1907, Žabalj, 25.10.1944, stariji vodnik, umro",
+    "additional_info": "1907, Žabalj, 25.10.1944, stariji vodnik, umro 1979.",
     "birth_year": "1907",
     "pdf_page": 33,
     "pdf_y": 355.6,
@@ -17010,10 +17011,11 @@
     "pdf_y_end": 374.5,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000842",
+    "pdf_x_end": 344.8,
     "birth_place": "Žabalj",
     "death_type": "umro",
-    "rank": "stariji vodnik",
-    "pdf_x_end": 344.8
+    "death_date": "1979",
+    "rank": "stariji vodnik"
   },
   {
     "last_name": "Grbić",
@@ -17657,7 +17659,7 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Gršić Nikola",
-    "additional_info": "1926, ... ^ 20.10.1944, borac.",
+    "additional_info": "1926, ... 20.10.1944, borac.",
     "birth_year": "1926",
     "pdf_page": 33,
     "pdf_y": 440.8,
@@ -17665,8 +17667,8 @@
     "pdf_y_end": 450.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000875",
-    "rank": "borac",
-    "pdf_x_end": 274.4
+    "pdf_x_end": 274.4,
+    "rank": "borac"
   },
   {
     "last_name": "Gubaš",
@@ -18153,7 +18155,7 @@
     "first_name": "Ibrahim",
     "fathers_name": "",
     "full_name": "Halibašić Ibrahim",
-    "additional_info": "1924, Bosanska Gradiška, borac, 9.09.",
+    "additional_info": "1924, Bosanska Gradiška, borac, 9.09. 1944.",
     "birth_year": "1924",
     "pdf_page": 138,
     "pdf_y": 316.1,
@@ -18161,9 +18163,9 @@
     "pdf_y_end": 334.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022000899",
+    "pdf_x_end": 359.4,
     "birth_place": "Bosanska Gradiška",
-    "rank": "borac",
-    "pdf_x_end": 359.4
+    "rank": "borac"
   },
   {
     "last_name": "Halilbegović",
@@ -24421,7 +24423,7 @@
     "first_name": "Jovan",
     "fathers_name": "",
     "full_name": "Jovičić Jovan",
-    "additional_info": "1926, Vrdnik, sekretar SKOJ-a, 2.07—9.09.",
+    "additional_info": "1926, Vrdnik, sekretar SKOJ-a, 2.07—9.09. 1944.",
     "birth_year": "1926",
     "pdf_page": 54,
     "pdf_y": 278.2,
@@ -24429,10 +24431,10 @@
     "pdf_y_end": 297.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001182",
-    "birth_place": "Vrdnik",
-    "rank": "sekretar SKOJ-a",
     "pdf_x_end": 362.8,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Vrdnik",
+    "rank": "sekretar SKOJ-a"
   },
   {
     "last_name": "Jovičić",
@@ -24633,7 +24635,7 @@
     "first_name": "Borivoj",
     "fathers_name": "",
     "full_name": "Jugović Borivoj",
-    "additional_info": "1924, Prhovo, komesar čete, 2.07—9.09.",
+    "additional_info": "1924, Prhovo, komesar čete, 2.07—9.09. 1944.",
     "birth_year": "1924",
     "pdf_page": 55,
     "pdf_y": 337.8,
@@ -24641,9 +24643,9 @@
     "pdf_y_end": 356.9,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001191",
+    "pdf_x_end": 349.5,
     "birth_place": "Prhovo",
-    "rank": "komesar čete",
-    "pdf_x_end": 349.5
+    "rank": "komesar čete"
   },
   {
     "last_name": "Juhas",
@@ -26743,7 +26745,7 @@
     "pdf_page": 59,
     "pdf_y": 428.9,
     "pdf_x": 76.9,
-    "pdf_y_end": 438.9,
+    "pdf_y_end": 447.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001291",
     "birth_place": "Bačinci",
@@ -28861,7 +28863,7 @@
     "first_name": "Rada",
     "fathers_name": "",
     "full_name": "Kosanović Rada",
-    "additional_info": "1911, ..., zam. komandira čete, 2.07—9.09.",
+    "additional_info": "1911, ..., zam. komandira čete, 2.07—9.09. 1944.",
     "birth_year": "1911",
     "pdf_page": 66,
     "pdf_y": 167.2,
@@ -29578,7 +29580,7 @@
     "first_name": "Milenko",
     "fathers_name": "",
     "full_name": "Kovačević Milenko",
-    "additional_info": "1925, Golubinci, desetar, 2.07—9.09.",
+    "additional_info": "1925, Golubinci, desetar, 2.07—9.09. 1944.",
     "birth_year": "1925",
     "pdf_page": 62,
     "pdf_y": 128.2,
@@ -29586,9 +29588,9 @@
     "pdf_y_end": 147.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001423",
+    "pdf_x_end": 369.1,
     "birth_place": "Golubinci",
-    "rank": "desetar",
-    "pdf_x_end": 369.1
+    "rank": "desetar"
   },
   {
     "last_name": "Kovačević",
@@ -29821,12 +29823,12 @@
     "pdf_page": 61,
     "pdf_y": 482.2,
     "pdf_x": 64.8,
-    "pdf_y_end": 492.2,
+    "pdf_y_end": 518.7,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001433",
     "birth_place": "Sisak",
     "rank": "borac",
-    "pdf_x_end": 316.9
+    "pdf_x_end": 346.6
   },
   {
     "last_name": "Kovačić",
@@ -30846,7 +30848,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Krklec Josip",
-    "additional_info": "1919, Vrdnik, pom. komesara čete, 2.07—9.09.",
+    "additional_info": "1919, Vrdnik, pom. komesara čete, 2.07—9.09. 1944.",
     "birth_year": "1919",
     "pdf_page": 67,
     "pdf_y": 476.3,
@@ -30854,8 +30856,8 @@
     "pdf_y_end": 495.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001484",
-    "birth_place": "Vrdnik",
-    "pdf_x_end": 350.8
+    "pdf_x_end": 350.8,
+    "birth_place": "Vrdnik"
   },
   {
     "last_name": "Krklec",
@@ -36198,7 +36200,7 @@
     "pdf_page": 77,
     "pdf_y": 474.2,
     "pdf_x": 72.1,
-    "pdf_y_end": 493.0,
+    "pdf_y_end": 519.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001737",
     "birth_place": "Vukovar",
@@ -42940,12 +42942,12 @@
     "pdf_page": 93,
     "pdf_y": 482.9,
     "pdf_x": 64.8,
-    "pdf_y_end": 492.9,
+    "pdf_y_end": 520.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002054",
     "birth_place": "Padina",
     "rank": "borac",
-    "pdf_x_end": 306.4
+    "pdf_x_end": 347.3
   },
   {
     "last_name": "Nemet",
@@ -52229,7 +52231,7 @@
     "first_name": "Radovan",
     "fathers_name": "",
     "full_name": "Radivojević Radovan",
-    "additional_info": "1919, Mala Vašica, borac, pog. 29.08.",
+    "additional_info": "1919, Mala Vašica, borac, pog. 29.08. 1944.",
     "birth_year": "1919",
     "pdf_page": 109,
     "pdf_y": 356.2,
@@ -52237,9 +52239,9 @@
     "pdf_y_end": 374.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002503",
+    "pdf_x_end": 348.6,
     "birth_place": "Mala Vašica",
     "rank": "borac",
-    "pdf_x_end": 348.6,
     "other_sources": [
       {
         "soldier_id": "9027007369",
@@ -52378,7 +52380,7 @@
     "pdf_page": 109,
     "pdf_y": 484.0,
     "pdf_x": 66.2,
-    "pdf_y_end": 494.0,
+    "pdf_y_end": 521.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002508",
     "birth_place": "Karlovčić",
@@ -53236,7 +53238,7 @@
     "first_name": "Smiljka",
     "fathers_name": "",
     "full_name": "Rajinac Smiljka",
-    "additional_info": "1928, Neštin, bolničarka, ioginula 5.07.",
+    "additional_info": "1928, Neštin, bolničarka, ioginula 5.07. 1944.",
     "birth_year": "1928",
     "pdf_page": 111,
     "pdf_y": 51.7,
@@ -53244,9 +53246,9 @@
     "pdf_y_end": 70.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002551",
+    "pdf_x_end": 352.2,
     "birth_place": "Neštin",
-    "rank": "bolničarka",
-    "pdf_x_end": 352.2
+    "rank": "bolničarka"
   },
   {
     "last_name": "Rajić",
@@ -57719,7 +57721,7 @@
     "first_name": "Žarko",
     "fathers_name": "",
     "full_name": "Simić Žarko",
-    "additional_info": "1921, Nadalj, zamenik komesara čete, 17.08.",
+    "additional_info": "1921, Nadalj, zamenik komesara čete, 17.08. 1944.",
     "birth_year": "1921",
     "pdf_page": 121,
     "pdf_y": 234.0,
@@ -57727,9 +57729,9 @@
     "pdf_y_end": 258.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002762",
+    "pdf_x_end": 348.4,
     "birth_place": "Nadalj",
-    "rank": "zamenik komesara čete",
-    "pdf_x_end": 348.4
+    "rank": "zamenik komesara čete"
   },
   {
     "last_name": "Simonović",
@@ -58691,7 +58693,7 @@
     "first_name": "Paja",
     "fathers_name": "",
     "full_name": "Srenkov Paja",
-    "additional_info": "1920, Gospođinci, 24.10.1944, vodnik, umro",
+    "additional_info": "1920, Gospođinci, 24.10.1944, vodnik, umro 1981.",
     "birth_year": "1920",
     "pdf_page": 123,
     "pdf_y": 156.3,
@@ -58699,10 +58701,11 @@
     "pdf_y_end": 175.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002808",
+    "pdf_x_end": 347.1,
     "birth_place": "Gospođinci",
     "death_type": "umro",
-    "rank": "vodnik",
-    "pdf_x_end": 347.1
+    "death_date": "1981",
+    "rank": "vodnik"
   },
   {
     "last_name": "Srenkov",
@@ -59759,7 +59762,7 @@
     "pdf_page": 125,
     "pdf_y": 403.3,
     "pdf_x": 61.6,
-    "pdf_y_end": 413.3,
+    "pdf_y_end": 422.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002855",
     "birth_place": "St. Bečej",
@@ -60028,7 +60031,7 @@
     "pdf_page": 125,
     "pdf_y": 475.5,
     "pdf_x": 62.0,
-    "pdf_y_end": 494.4,
+    "pdf_y_end": 520.6,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002870",
     "birth_place": "Kotor Varoš",
@@ -61847,7 +61850,7 @@
     "first_name": "Ilija",
     "fathers_name": "",
     "full_name": "Svilokos Ilija",
-    "additional_info": "1922, Sremski Laze, komandir čete, 2.07.",
+    "additional_info": "1922, Sremski Laze, komandir čete, 2.07. 1944.",
     "birth_year": "1922",
     "pdf_page": 119,
     "pdf_y": 53.9,
@@ -61855,9 +61858,9 @@
     "pdf_y_end": 72.8,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022002958",
+    "pdf_x_end": 346.6,
     "birth_place": "Sremski Laze",
-    "rank": "komandir čete",
-    "pdf_x_end": 346.6
+    "rank": "komandir čete"
   },
   {
     "last_name": "Svilokos",
@@ -63126,7 +63129,7 @@
     "first_name": "Cveta",
     "fathers_name": "",
     "full_name": "Todorović Cveta",
-    "additional_info": "1919, Pavliš, borac, teže ranjena 30.04.",
+    "additional_info": "1919, Pavliš, borac, teže ranjena 30.04. 1945.",
     "birth_year": "1919",
     "pdf_page": 131,
     "pdf_y": 280.9,
@@ -63134,9 +63137,9 @@
     "pdf_y_end": 300.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003019",
+    "pdf_x_end": 357.0,
     "birth_place": "Pavliš",
-    "rank": "borac",
-    "pdf_x_end": 357.0
+    "rank": "borac"
   },
   {
     "last_name": "Todorović",
@@ -64167,7 +64170,7 @@
     "first_name": "Rade",
     "fathers_name": "",
     "full_name": "Trbojević Rade",
-    "additional_info": "1918, Gornja Močila, stariji vodnik, 3.07.",
+    "additional_info": "1918, Gornja Močila, stariji vodnik, 3.07. 1944.",
     "birth_year": "1918",
     "pdf_page": 133,
     "pdf_y": 251.3,
@@ -64175,9 +64178,9 @@
     "pdf_y_end": 270.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003072",
+    "pdf_x_end": 343.7,
     "birth_place": "Gornja Močila",
-    "rank": "stariji vodnik",
-    "pdf_x_end": 343.7
+    "rank": "stariji vodnik"
   },
   {
     "last_name": "Trbović",
@@ -64247,12 +64250,12 @@
     "pdf_page": 133,
     "pdf_y": 489.4,
     "pdf_x": 63.9,
-    "pdf_y_end": 515.4,
+    "pdf_y_end": 499.4,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003076",
     "birth_place": "Jagodnjak",
     "rank": "borac",
-    "pdf_x_end": 345.8
+    "pdf_x_end": 281.5
   },
   {
     "last_name": "Trifunac",
@@ -65222,7 +65225,7 @@
     "first_name": "Mišo",
     "fathers_name": "",
     "full_name": "Valennik Mišo",
-    "additional_info": "1926, Kulpin, borac 3. bataljona, pog. 13.04.",
+    "additional_info": "1926, Kulpin, borac 3. bataljona, pog. 13.04. 1945.",
     "birth_year": "1926",
     "pdf_page": 20,
     "pdf_y": 343.3,
@@ -65230,10 +65233,10 @@
     "pdf_y_end": 362.3,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003125",
+    "pdf_x_end": 361.3,
     "birth_place": "Kulpin",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 361.3
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Valenta",
@@ -68418,7 +68421,7 @@
     "first_name": "Luka",
     "fathers_name": "",
     "full_name": "Vukašinović Luka",
-    "additional_info": "1916, Voćin, komandir čete, 2.07—9. 09.",
+    "additional_info": "1916, Voćin, komandir čete, 2.07—9. 09. 1944.",
     "birth_year": "1916",
     "pdf_page": 26,
     "pdf_y": 323.3,
@@ -68426,9 +68429,9 @@
     "pdf_y_end": 342.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003276",
+    "pdf_x_end": 366.1,
     "birth_place": "Voćin",
-    "rank": "komandir čete",
-    "pdf_x_end": 366.1
+    "rank": "komandir čete"
   },
   {
     "last_name": "Vukinac",
@@ -69491,7 +69494,7 @@
     "first_name": "Franja",
     "fathers_name": "",
     "full_name": "Zdunin Franja",
-    "additional_info": "1925, Zemun, pom. komesara čete, 2.07—9.09.",
+    "additional_info": "1925, Zemun, pom. komesara čete, 2.07—9.09. 1944.",
     "birth_year": "1925",
     "pdf_page": 45,
     "pdf_y": 434.3,
@@ -69499,8 +69502,8 @@
     "pdf_y_end": 453.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003323",
-    "birth_place": "Zemun",
-    "pdf_x_end": 349.0
+    "pdf_x_end": 349.0,
+    "birth_place": "Zemun"
   },
   {
     "last_name": "Zeba",
@@ -69532,7 +69535,7 @@
     "pdf_page": 45,
     "pdf_y": 472.4,
     "pdf_x": 67.0,
-    "pdf_y_end": 491.0,
+    "pdf_y_end": 518.0,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003325",
     "birth_place": "Kotor Varoš",
@@ -71484,7 +71487,7 @@
     "first_name": "Đorđe",
     "fathers_name": "",
     "full_name": "Čizmić Đorđe",
-    "additional_info": "1922, Dobanovci, komesar čete, 2.07—9.09.",
+    "additional_info": "1922, Dobanovci, komesar čete, 2.07—9.09. 1944.",
     "birth_year": "1922",
     "pdf_page": 144,
     "pdf_y": 223.1,
@@ -71492,9 +71495,9 @@
     "pdf_y_end": 242.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003422",
+    "pdf_x_end": 377.0,
     "birth_place": "Dobanovci",
     "rank": "komesar čete",
-    "pdf_x_end": 377.0,
     "other_sources": [
       {
         "soldier_id": "0057003861",
@@ -73261,7 +73264,7 @@
     "first_name": "Đuro",
     "fathers_name": "",
     "full_name": "Šmit Đuro",
-    "additional_info": "1927, Bukin, borac, teže ranjen kod Iloka, 29.09.",
+    "additional_info": "1927, Bukin, borac, teže ranjen kod Iloka, 29.09. 1944.",
     "birth_year": "1927",
     "pdf_page": 147,
     "pdf_y": 408.0,
@@ -73269,9 +73272,9 @@
     "pdf_y_end": 427.1,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022003502",
+    "pdf_x_end": 353.2,
     "birth_place": "Bukin",
-    "rank": "borac",
-    "pdf_x_end": 353.2
+    "rank": "borac"
   },
   {
     "last_name": "Šnare",
