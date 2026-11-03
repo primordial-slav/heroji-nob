@@ -879,7 +879,7 @@
     "fathers_name": "",
     "full_name": "Bevc Jože",
     "additional_info": "Moravška gora, 1914-",
-    "birth_year": "",
+    "birth_year": "1914",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 290.1,
@@ -888,7 +888,25 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000028",
     "pdf_x_end": 112.6,
-    "birth_place": "Moravška gora"
+    "birth_place": "Moravška gora",
+    "other_sources": [
+      {
+        "soldier_id": "9020005686",
+        "name": "Bevc (Alojz) Jože",
+        "additional_info": "rođen 1914, Moravška Gora (Litija). Slovenac, poginuo 1944. u NOBu, Mirna Peč",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=203",
+        "source_page": 203,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Mirna Peč"
   },
   {
     "last_name": "Bevk",
@@ -3237,7 +3255,7 @@
     "fathers_name": "",
     "full_name": "Ferkulj Vinko",
     "additional_info": "Lipa, 1923-",
-    "birth_year": "",
+    "birth_year": "1923",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 347.2,
@@ -6531,7 +6549,7 @@
     "fathers_name": "",
     "full_name": "Jerman Tone",
     "additional_info": "Troščine, 1918—",
-    "birth_year": "",
+    "birth_year": "1918",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 412.5,
@@ -8460,7 +8478,7 @@
     "fathers_name": "",
     "full_name": "Košak Ciril",
     "additional_info": "Družinska vas, 1918-",
-    "birth_year": "",
+    "birth_year": "1918",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 105.1,
@@ -8469,7 +8487,37 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000293",
     "pdf_x_end": 122.3,
-    "birth_place": "Družinska vas"
+    "birth_place": "Družinska vas",
+    "other_sources": [
+      {
+        "soldier_id": "9020010283",
+        "name": "Košak (Jože) Ciril",
+        "additional_info": "rođen 1918, Družinska Vas (Novo Mesto). Slovenac, poginuo 1943. u NOBu, Ilirska bistric",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=365",
+        "source_page": 365,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0167000911",
+        "name": "Košak Ciril",
+        "additional_info": "1918, Družinska vas, p. 1943 Ilirska Bistrica",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 8,
+        "pdf_x": 245.0,
+        "pdf_y": 472.1,
+        "pdf_x_end": 329.6,
+        "pdf_y_end": 490.9,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ilirska Bistrica",
+    "ethnicity": "Slovenac"
   },
   {
     "last_name": "Košir",
@@ -10504,7 +10552,7 @@
     "fathers_name": "",
     "full_name": "Longar Janez",
     "additional_info": "Stranska vas, 1913-",
-    "birth_year": "",
+    "birth_year": "1913",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 351.8,
@@ -14201,7 +14249,7 @@
     "fathers_name": "",
     "full_name": "Per Cveto",
     "additional_info": "Novo mesto, 1925-",
-    "birth_year": "",
+    "birth_year": "1925",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 350.6,
@@ -14210,7 +14258,37 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000492",
     "pdf_x_end": 231.9,
-    "birth_place": "Novo mesto"
+    "birth_place": "Novo mesto",
+    "other_sources": [
+      {
+        "soldier_id": "9020010583",
+        "name": "Per (Franc) Cveto",
+        "additional_info": "rođen 1925, Novo Mesto. Slovenac, poginuo 1943. u NOBu, Nova gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=375",
+        "source_page": 375,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0063001031",
+        "name": "Per Cveto",
+        "additional_info": "Novo mesto, 1925—1943",
+        "pdf_file": "dvanajsta.pdf",
+        "pdf_page": 3,
+        "pdf_x": 56.2,
+        "pdf_y": 285.1,
+        "pdf_x_end": 181.3,
+        "pdf_y_end": 292.1,
+        "unit_file": "dvanajsta-soldiers.json"
+      }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "death_place": "Nova gora"
   },
   {
     "last_name": "Perger",
@@ -18094,7 +18172,7 @@
     "fathers_name": "",
     "full_name": "Slogar Milan",
     "additional_info": "Žužemberk, 1921-",
-    "birth_year": "",
+    "birth_year": "1921",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 485.0,

@@ -38,6 +38,34 @@ def years(t):
     return t
 
 
+# a speck the text layer read beside a text's end or start ("... 1943. '", "Osijek, -", "godine. i", "' rođen 1920"), and a dot or an apostrophe
+# inside a word ("do.maćica", "Savino.m Laktu"), where the word without it is one the entries print often (2026-11-03)
+SPECK = r"""'"`’‘\\/^•™■·~=*|!?<>_()\-—–"""
+
+
+def strays(t, vocab=None, sid=''):
+    # the dots of the 4. Splitska's rows are what it prints for what isn't known, and the "*" that opens a text in the Slovene lists is its sign for born ("* Sodražica, Ribnica"): neither is a speck
+    if sid.startswith('0008'):
+        return t
+    new = re.sub(rf'(?<=\S)(?:\s+[{SPECK}]+)+\s*$', '', t)
+    new = re.sub(r'(?<=[.;,])\s+i$', '', new)
+    new = re.sub(r'\s+\.\s*\.$', '.', new)
+    new = re.sub(r'\.\s+\.$', '.', new)
+    new = re.sub(r'\s+\.$', '.', new)
+    if new != t and not re.fullmatch(r'zvan[ia] [^;]+;', new):
+        new = re.sub(r'\s*[,;]$', '', new)                               # what the speck stood after
+    new = re.sub(rf'^[\s.,;:{SPECK.replace("()", "").replace("*", "")}]+(?=[^\d\s(])', '', new)
+    if vocab is not None:
+        def inner(m):
+            w = m.group(0)
+            if m.group(2) in ('i', 'u', 'a', 'o', 's', 'k', 'v', 'z', 'te', 'na', 'je', 'od', 'do', 'za'):
+                return w
+            j = m.group(1) + m.group(2)
+            return j if len(j) >= 5 and vocab[j.lower()] >= 20 and vocab[m.group(1).lower()] < vocab[j.lower()] else w
+        new = re.sub(rf"(?<![\w.])([A-ZČĆŽŠĐ{LOW}]+)[.'’`]([{LOW}]+)(?![\w])", inner, new)
+    return new
+
+
 # a mark inside a word had been taken out, where it stood for a lost letter or a lost space ("vodnik^u", "T^entište"), or the word was past the rule: read from the page's words
 MARKS_BACK = {
     '0046000123': [("boc'", 'borac')], '0021002982': [('btaljon', 'bataljon')], '0036000904': [('bolničara', 'bolničarka')], '0038000023': [('ooktobra', 'od oktobra')],
@@ -146,6 +174,10 @@ def main():
                 pending[c['soldier_id']] = c['fields']['additional_info']
     edits = []
     cnt = collections.Counter()
+    vocab = collections.Counter()
+    for data in units.values():
+        for x in data:
+            vocab.update(w.lower() for w in re.findall(rf"[A-ZČĆŽŠĐ{LOW}]+", x.get('additional_info') or ''))
     samples = collections.defaultdict(list)
     for code, data in units.items():
         for s in data:
@@ -161,10 +193,18 @@ def main():
                 for old, new in ALSO:
                     t = t.replace(old, new)
                 back = t != printed
-                if e['soldier_id'] in MARKS_BACK and not back:
+                if e['soldier_id'] in MARKS_BACK and not back and not since:
                     print('NOT FOUND', e['soldier_id'], MARKS_BACK[e['soldier_id']], repr(printed[:80]))
                 a = years(t)
                 b = apply_words(a, table)
+                c = strays(b, vocab, e['soldier_id'])
+                if c != b:
+                    cnt['specks'] += 1
+                    if len(samples['specks']) < 60:
+                        samples['specks'].append((e['soldier_id'], b[-55:] if c[-20:] != b[-20:] else b[:55], c[-55:] if c[-20:] != b[-20:] else c[:55]))
+                    b, specks = c, True
+                else:
+                    specks = False
                 if b != printed:
                     why = []
                     if back:
@@ -175,12 +215,14 @@ def main():
                         cnt['years'] += 1
                         if len(samples['years']) < 25:
                             samples['years'].append((e['soldier_id'], t[-70:], a[-70:]))
-                    if b != a:
+                    if specks:
+                        why.append('a speck the text layer read')
+                    elif b != a:
                         why.append('a word the scan misread')
                         cnt['words'] += 1
                     edits.append((e['soldier_id'], b, why))
     print(cnt, 'edits', len(edits))
-    for x in samples['years']:
+    for x in samples['years'] + samples['specks']:
         print('  ', x)
     if '--write' in sys.argv:
         start = int(sys.argv[sys.argv.index('--write') + 1])
@@ -197,7 +239,7 @@ def main():
                     n = 0
                     for e in data:
                         t = e.get('additional_info') or ''
-                        new = apply_words(years(t), table)
+                        new = strays(apply_words(years(t), table), vocab)
                         if new != t:
                             e['additional_info'] = new
                             n += 1

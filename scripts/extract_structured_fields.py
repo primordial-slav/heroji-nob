@@ -884,7 +884,11 @@ class Extractor:
             m = None
         head = t[:m.start()] if m else ''
         heading = None
+        late_heading = None
         if m:
+            # a list's heading before an entry whose birth names no place ("Borci poginuli u NOB, Usorci: VUJKOVIĆ Stevana
+            # MILICA, rođena 1904, domaćica"): its village below, as for the scan's "roden" (2026-11-03)
+            late_heading = self.heading(t) if m.start() else None
             t = t[m.start():]
         elif code in (15, 119):
             t = ''                                                        # 1. šumadijska always says "Rođen ..."
@@ -984,6 +988,8 @@ class Extractor:
             place.append(s)
             if len(place) == 3:
                 break
+        if not place and late_heading and late_heading[0] and ':' in text[:m.start() if m else 0]:
+            heading = late_heading
         if not place and heading and heading[0] and len(heading[0]) > 1 and group_heading:
             # a heading of several villages joined by dashes, "Pavlovac—Vrebac—Zavode", where the entry names none of
             # them: the heading as printed, which says he is of one of them
@@ -1117,6 +1123,8 @@ class Extractor:
             pre = before_verb_date(text[:verb_at.start()], text[verb_at.end():])
             if pre:
                 out['death_date'] = pre
+        # how he was killed, before the place: "ubijen vješanjem u Rasinji", "ubijen nožem kod Pakraca"
+        clause = re.sub(r'^\s*,?\s*(?:vješanjem|vešanjem|klanjem|nožem|kamom|batinama|maljem|sjekirom|sekirom)\b', ' ', clause)
         # "poginuo kao ranjenik u Centralnoj bolnici na Sutjesci": the words go, not the place
         clause = re.sub(r'\bkao\s+(?:teški\s+|teško\s+)?(?:ranjenik|ranjenica|bolesnik|bolesnica|ranjen[a-z]*)\b', ' ', clause)
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"

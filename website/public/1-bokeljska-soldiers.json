@@ -4132,9 +4132,8 @@
     "first_name": "Đorđe",
     "fathers_name": "S",
     "full_name": "Marić S Đorđe",
-    "additional_info": "3. bataljon, rođen u Đenoviću — Herceg-Novi, umro 22. 1. 1945. godine u ?",
+    "additional_info": "3. bataljon, rođen u Đenoviću — Herceg-Novi, umro 22. 1. 1945. godine u",
     "birth_year": "",
-    "death_type": "umro",
     "pdf_page": 4,
     "pdf_y": 402.5,
     "pdf_x": 111.4,
@@ -4142,8 +4141,6 @@
     "pdf_file": "1-bokeljska.pdf",
     "birth_place": "Herceg-Novi",
     "soldier_id": "0102000086",
-    "death_date": "22.01.1945",
-    "unit_detail": "3. bataljon",
     "pdf_x_end": 466.8,
     "other_sources": [
       {
@@ -4158,7 +4155,10 @@
         "pdf_y_end": 636.8
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "death_type": "umro",
+    "death_date": "22.01.1945",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Marković",
@@ -4718,17 +4718,14 @@
     "first_name": "Zrinko",
     "fathers_name": "S",
     "full_name": "Medvid S Zrinko",
-    "additional_info": "4. bataljon, rođen u Perastu — Kotor, poginuo ?",
+    "additional_info": "4. bataljon, rođen u Perastu — Kotor, poginuo",
     "birth_year": "",
-    "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 590.9,
     "pdf_x": 111.4,
     "pdf_y_end": 598.6,
     "pdf_file": "1-bokeljska.pdf",
-    "birth_place": "Perast, Kotor",
     "soldier_id": "0102000098",
-    "unit_detail": "4. bataljon",
     "pdf_x_end": 410.7,
     "other_sources": [
       {
@@ -4743,7 +4740,10 @@
         "pdf_y_end": 583.7
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Perast, Kotor",
+    "death_type": "poginuo",
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Mihailović",
@@ -5879,9 +5879,8 @@
     "first_name": "Adam",
     "fathers_name": "B",
     "full_name": "Pavlović B Adam",
-    "additional_info": "1. bataljon, rođen u Kruševicama — Herceg-Novi, upućen kući na bolovanje i umro ?",
+    "additional_info": "1. bataljon, rođen u Kruševicama — Herceg-Novi, upućen kući na bolovanje i umro",
     "birth_year": "",
-    "death_type": "umro",
     "pdf_page": 5,
     "pdf_y": 467.0,
     "pdf_x": 126.8,
@@ -5889,7 +5888,6 @@
     "pdf_file": "1-bokeljska.pdf",
     "birth_place": "Herceg-Novi",
     "soldier_id": "0102000123",
-    "unit_detail": "1. bataljon",
     "pdf_x_end": 481.9,
     "other_sources": [
       {
@@ -5917,7 +5915,9 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "death_type": "umro",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Pavlović",
@@ -7150,20 +7150,20 @@
     "first_name": "Milan",
     "fathers_name": "U",
     "full_name": "Ratković U Milan",
-    "additional_info": "3. bataljon, rođen u Orahovcu — Kotor, poginuo u Istoku 7. 2. 1945. godine (?)",
+    "additional_info": "3. bataljon, rođen u Orahovcu — Kotor, poginuo u Istoku 7. 2. 1945. godine",
     "birth_year": "",
-    "death_type": "poginuo",
     "pdf_page": 6,
     "pdf_y": 285.9,
     "pdf_x": 113.3,
     "pdf_y_end": 302.2,
     "pdf_file": "1-bokeljska.pdf",
-    "birth_place": "Orahovac, Kotor",
     "soldier_id": "0102000146",
+    "pdf_x_end": 469.2,
+    "birth_place": "Orahovac, Kotor",
+    "death_type": "poginuo",
     "death_date": "07.02.1945",
-    "death_place": "u Istoku (?)",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 469.2
+    "death_place": "Istok",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Rautović",
@@ -12468,7 +12468,7 @@
     "last_name": "Bašević",
     "middle_name": "Miljka",
     "first_name": "Ako",
-    "fathers_name": "Miljka",
+    "fathers_name": "Miljko",
     "full_name": "Bašević Miljka Ako",
     "additional_info": "1. bataljon: borac",
     "birth_year": "",
@@ -17496,7 +17496,7 @@
     "last_name": "Datić",
     "middle_name": "Rustema",
     "first_name": "Jašar",
-    "fathers_name": "Rustema",
+    "fathers_name": "Rustem",
     "full_name": "Datić Rustema Jašar",
     "additional_info": "3. bataljon: borac",
     "birth_year": "",
@@ -25889,7 +25889,7 @@
     "last_name": "Kocić",
     "middle_name": "Zafira",
     "first_name": "Hajadin",
-    "fathers_name": "Zafira",
+    "fathers_name": "Zafir",
     "full_name": "Kocić Zafira Hajadin",
     "additional_info": "3. bataljon: borac",
     "birth_year": "",
@@ -26492,7 +26492,7 @@
     "last_name": "Konversano",
     "middle_name": "Leonarda",
     "first_name": "Leonardo",
-    "fathers_name": "Leonarda",
+    "fathers_name": "Leonardo",
     "full_name": "Konversano Leonarda Leonardo",
     "additional_info": "2. bataljon: borac",
     "birth_year": "",
@@ -31892,7 +31892,7 @@
     "last_name": "Maldo",
     "middle_name": "Domenika",
     "first_name": "Oliver",
-    "fathers_name": "Domenika",
+    "fathers_name": "Domeniko",
     "full_name": "Maldo Domenika Oliver",
     "additional_info": "1. bataljon: borac",
     "birth_year": "",
@@ -33049,7 +33049,7 @@
     "last_name": "Markišić",
     "middle_name": "Miljka",
     "first_name": "Miljo",
-    "fathers_name": "Miljka",
+    "fathers_name": "Miljko",
     "full_name": "Markišić Miljka Miljo",
     "additional_info": "1. bataljon: borac",
     "birth_year": "",
@@ -34670,7 +34670,7 @@
     "last_name": "Mauro",
     "middle_name": "Domenika",
     "first_name": "Mikele",
-    "fathers_name": "Domenika",
+    "fathers_name": "Domeniko",
     "full_name": "Mauro Domenika Mikele",
     "additional_info": "2. bataljon: borac",
     "birth_year": "",
@@ -51816,7 +51816,7 @@
     "last_name": "Sirnik",
     "middle_name": "Lovra",
     "first_name": "Ivan",
-    "fathers_name": "Lovra",
+    "fathers_name": "Lovro",
     "full_name": "Sirnik Lovra Ivan",
     "additional_info": "3. bataljon: borac",
     "birth_year": "",
@@ -57074,7 +57074,7 @@
     "last_name": "Vilov",
     "middle_name": "Đurov",
     "first_name": "Velimir",
-    "fathers_name": "Đurov",
+    "fathers_name": "Đuro",
     "full_name": "Vilov Đurov Velimir",
     "additional_info": "1. bataljon: borac",
     "birth_year": "",

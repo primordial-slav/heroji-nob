@@ -9044,7 +9044,7 @@
     "fathers_name": "",
     "full_name": "Janežič Jože",
     "additional_info": "zvani Šinkovec; Poljane, 1912—",
-    "birth_year": "",
+    "birth_year": "1912",
     "death_type": "poginuo",
     "pdf_page": 2,
     "pdf_y": 200.8,
@@ -9880,7 +9880,7 @@
     "fathers_name": "",
     "full_name": "Jerman Lazar",
     "additional_info": "Marezige, 1904—",
-    "birth_year": "",
+    "birth_year": "1904",
     "death_type": "poginuo",
     "pdf_page": 2,
     "pdf_y": 250.0,
@@ -19826,7 +19826,7 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Pavli Franc",
-    "additional_info": "Krtina /",
+    "additional_info": "Krtina",
     "birth_year": "",
     "pdf_page": 27,
     "pdf_y": 85.1,
@@ -19835,7 +19835,7 @@
     "pdf_file": "dvanajsta.pdf",
     "soldier_id": "0063001025",
     "pdf_x_end": 128.0,
-    "birth_place": "Krtina /"
+    "birth_place": "Krtina"
   },
   {
     "last_name": "Pavlič",
@@ -19945,6 +19945,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=375",
         "source_page": 375,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0068000492",
+        "name": "Per Cveto",
+        "additional_info": "Novo mesto, 1925-",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 9,
+        "pdf_x": 138.3,
+        "pdf_y": 350.6,
+        "pdf_x_end": 231.9,
+        "pdf_y_end": 357.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       }
     ],
     "ethnicity": "Slovenac",
@@ -23645,7 +23657,7 @@
     "fathers_name": "",
     "full_name": "Rožič Leopold",
     "additional_info": "Račiča, Litija, 1924—",
-    "birth_year": "",
+    "birth_year": "1924",
     "death_type": "poginuo",
     "pdf_page": 3,
     "pdf_y": 443.9,
@@ -23654,7 +23666,25 @@
     "pdf_file": "dvanajsta.pdf",
     "soldier_id": "0063001224",
     "pdf_x_end": 187.1,
-    "birth_place": "Račiča, Litija"
+    "birth_place": "Račiča, Litija",
+    "other_sources": [
+      {
+        "soldier_id": "9020005715",
+        "name": "Rožič (Leopold) Leopold",
+        "additional_info": "rođen 1924, Račica (Litija). Slovenac, poginuo 1944. u NOBu, Poljanci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=204",
+        "source_page": 204,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Poljanci"
   },
   {
     "last_name": "Rugole",
@@ -25377,7 +25407,7 @@
     "first_name": "Alojz",
     "fathers_name": "",
     "full_name": "Slatinšek Alojz",
-    "additional_info": "1927, Ravne na Koroškem •",
+    "additional_info": "1927, Ravne na Koroškem",
     "birth_year": "1927",
     "pdf_page": 32,
     "pdf_y": 350.8,
@@ -25386,7 +25416,7 @@
     "pdf_file": "dvanajsta.pdf",
     "soldier_id": "0063001316",
     "pdf_x_end": 187.7,
-    "birth_place": "Ravne na Koroškem •"
+    "birth_place": "Ravne na Koroškem"
   },
   {
     "last_name": "Slatinšek",
@@ -29616,7 +29646,7 @@
     "fathers_name": "",
     "full_name": "Zajc Anton",
     "additional_info": "Pšata, Cerklje, 1919—",
-    "birth_year": "",
+    "birth_year": "1919",
     "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 268.7,
@@ -29625,7 +29655,25 @@
     "pdf_file": "dvanajsta.pdf",
     "soldier_id": "0063001534",
     "pdf_x_end": 154.9,
-    "birth_place": "Pšata, Cerklje"
+    "birth_place": "Pšata, Cerklje",
+    "other_sources": [
+      {
+        "soldier_id": "9020002021",
+        "name": "Zajc (Janez) Anton",
+        "additional_info": "rođen 1919, Pšata (Domžale). Slovenac, poginuo 1944. u NOBu, Lese krka",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=78",
+        "source_page": 78,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Lese krka"
   },
   {
     "last_name": "Zajc",
@@ -30123,7 +30171,7 @@
     "fathers_name": "",
     "full_name": "Zidar Marija",
     "additional_info": "Dolge njive, Šentlovrenc, 1915—",
-    "birth_year": "",
+    "birth_year": "1915",
     "death_type": "poginuo",
     "pdf_page": 4,
     "pdf_y": 278.6,

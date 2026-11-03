@@ -16582,7 +16582,7 @@
       {
         "soldier_id": "0036010439",
         "name": "Delipetar A Zdenka",
-        "additional_info": "rođena u Vrgovcu, zamjenik političkog komesara će IV bat., poginula u V ofanzivi. AÓ 4G3. Delonga J. Jakov, rođen u Sinju, borac IV bat., poginuo na Braču septembra 1944. godine.",
+        "additional_info": "rođena u Vrgovcu, zamjenik političkog komesara će IV bat., poginula u V ofanzivi.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 55,
         "pdf_x": 84.6,
@@ -17004,7 +17004,21 @@
     "death_date": "09.1944",
     "death_place": "Brač",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036019014",
+        "name": "Delonga J. Jakov",
+        "additional_info": "rođen u Sinju, borac IV bat., poginuo na Braču septembra 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 56,
+        "pdf_x": 49.1,
+        "pdf_y": 24.8,
+        "pdf_x_end": 385.7,
+        "pdf_y_end": 41.2,
+        "pdf_x_left": 28.5
+      }
+    ]
   },
   {
     "last_name": "Delonga",
@@ -21700,18 +21714,15 @@
     "first_name": "Luka",
     "fathers_name": "J",
     "full_name": "Ećim J Luka",
-    "additional_info": "rođen 1921. godine u Stino Gornje — Split, vodni delegat, poginuo u V ofanzivi .",
+    "additional_info": "rođen 1921. godine u Stino Gornje — Split, vodni delegat, poginuo u V ofanzivi.",
     "birth_year": "1921",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036000526",
-    "birth_place": "Stino Gornje, Split",
-    "death_type": "poginuo",
-    "rank": "vodni delegat",
     "other_sources": [
       {
         "soldier_id": "0036010572",
         "name": "Ećim J Luka",
-        "additional_info": "rođen 1921. godine u Stlno Gornje — Split, vodni delegat, poginuo u V ofanzivi .",
+        "additional_info": "rođen 1921. godine u Stlno Gornje — Split, vodni delegat, poginuo u V ofanzivi.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 58,
         "pdf_x": 49.4,
@@ -21729,6 +21740,9 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
+    "birth_place": "Stino Gornje, Split",
+    "death_type": "poginuo",
+    "rank": "vodni delegat",
     "ethnicity": "Hrvat",
     "borrowed": [
       "death_date",
@@ -30158,13 +30172,10 @@
     "first_name": "Luka",
     "fathers_name": "A",
     "full_name": "Jareb A Luka",
-    "additional_info": "rođen 1913. godine u Tribunju — Šibenik, borac II bat, pogin.uo u IV ofanzivi 1943. godine.",
+    "additional_info": "rođen 1913. godine u Tribunju — Šibenik, borac II bat, poginuo u IV ofanzivi 1943. godine.",
     "birth_year": "1913",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036000742",
-    "birth_place": "Tribunj, Šibenik",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036010807",
@@ -30189,6 +30200,9 @@
     ],
     "death_type": "poginuo",
     "death_date": "1943",
+    "birth_place": "Tribunj, Šibenik",
+    "rank": "borac",
+    "unit_detail": "2. bataljon",
     "ethnicity": "Hrvat",
     "borrowed": [
       "death_place",
@@ -33087,15 +33101,11 @@
     "first_name": "Stjepan",
     "fathers_name": "J",
     "full_name": "Jurjak J Stjepan",
-    "additional_info": "rođen 1916. godine u G. Trgovišću — Zlatar, bore.c IV bat, poginuo u Širokom Brijegu februara 1945. godine.",
+    "additional_info": "rođen 1916. godine u G. Trgovišću — Zlatar, borec IV bat, poginuo u Širokom Brijegu februara 1945. godine.",
     "birth_year": "1916",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036000814",
     "birth_place": "G. Trgovišće",
-    "death_type": "poginuo",
-    "death_date": "02.1945",
-    "death_place": "Široki Brijeg",
-    "unit_detail": "4. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036010885",
@@ -33109,7 +33119,12 @@
         "pdf_x_end": 411.3,
         "pdf_x_left": 55.0
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "02.1945",
+    "death_place": "Široki Brijeg",
+    "rank": "borec",
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Jurkić",
@@ -38268,19 +38283,15 @@
     "first_name": "Miro",
     "fathers_name": "J",
     "full_name": "Kostanić J Miro",
-    "additional_info": "rođen 1923. godine u Drveniku — Makarska, borac III bat, poginuo u V ofanzivi .",
+    "additional_info": "rođen 1923. godine u Drveniku — Makarska, borac III bat, poginuo u V ofanzivi.",
     "birth_year": "1923",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036000934",
-    "birth_place": "Drvenik, Makarska",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "unit_detail": "3. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036011008",
         "name": "Kostanić J Miro",
-        "additional_info": "rođen 1923. godine u Drveniku — Makarska, borac III bat., poginuo u V ofanzivi .",
+        "additional_info": "rođen 1923. godine u Drveniku — Makarska, borac III bat., poginuo u V ofanzivi.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 72,
         "pdf_x": 48.4,
@@ -38289,7 +38300,11 @@
         "pdf_x_end": 385.3,
         "pdf_x_left": 27.6
       }
-    ]
+    ],
+    "birth_place": "Drvenik, Makarska",
+    "death_type": "poginuo",
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Kostanić",
@@ -41941,20 +41956,15 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Lasić Nikola",
-    "additional_info": "rođen na Benkovcu, borac IV bataljona, poginuo kod Gac aprila 1943. godine .",
+    "additional_info": "rođen na Benkovcu, borac IV bataljona, poginuo kod Gac aprila 1943. godine.",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036001022",
-    "death_type": "poginuo",
-    "death_date": "04.1943",
-    "death_place": "kod Gac",
-    "rank": "borac",
-    "unit_detail": "4. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036011106",
         "name": "Lasić Nikola",
-        "additional_info": "rođen na Benkovcu, borac II bataljona, poginuo kod Gac' aprila 1943. godine .",
+        "additional_info": "rođen na Benkovcu, borac II bataljona, poginuo kod Gac' aprila 1943. godine.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 75,
         "pdf_x": 84.0,
@@ -41963,7 +41973,12 @@
         "pdf_x_end": 412.6,
         "pdf_x_left": 62.4
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "04.1943",
+    "death_place": "kod Gac",
+    "rank": "borac",
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Lasičić",
@@ -42603,6 +42618,18 @@
         "pdf_y": 33.5,
         "pdf_x_end": 176.7,
         "pdf_y_end": 84.9
+      },
+      {
+        "soldier_id": "0036019015",
+        "name": "Letica A. Petar",
+        "additional_info": "rođen 1923. godine u Podgori — Makarska, borac III bataljona, poginuo kod Posušja, jula 1943. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 76,
+        "pdf_x": 45.0,
+        "pdf_y": 38.4,
+        "pdf_x_end": 381.1,
+        "pdf_y_end": 54.8,
+        "pdf_x_left": 23.0
       }
     ],
     "party": "SKOJ"
@@ -42839,14 +42866,14 @@
       {
         "soldier_id": "0036011125",
         "name": "Letunović V Vicko",
-        "additional_info": "rođen 1913. godine na Visu, borac III bat., poginuo na Hvaru februara 1944. godine. 109G. Letica A. Petar, rođen 1923. godine u Podgori — Makarska, borac III bataljona, poginuo kod Posušja, jula 1943. godine.",
+        "additional_info": "rođen 1913. godine na Visu, borac III bat., poginuo na Hvaru februara 1944. godine.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 76,
         "pdf_x": 45.8,
         "pdf_y": 21.33000000000004,
-        "pdf_y_end": 54.8,
+        "pdf_y_end": 37.7,
         "pdf_x_end": 382.1,
-        "pdf_x_left": 23.0
+        "pdf_x_left": 23.4
       },
       {
         "soldier_id": "9021051668",
@@ -44257,15 +44284,10 @@
     "first_name": "Oskar",
     "fathers_name": "A",
     "full_name": "Lučev A Oskar",
-    "additional_info": "zvani Saša; rođen 1913. godine u Prviću — Šibenik, komesar čete 2. bat, poginuo u istočno.j Bosni avgusta 1943. godine.",
+    "additional_info": "zvani Saša; rođen 1913. godine u Prviću — Šibenik, komesar čete 2. bat, poginuo u istočnoj Bosni avgusta 1943. godine.",
     "birth_year": "1913",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036001077",
-    "birth_place": "Prvić, Šibenik",
-    "death_type": "poginuo",
-    "death_date": "08.1943",
-    "rank": "komesar čete",
-    "unit_detail": "2. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036100669",
@@ -44349,7 +44371,12 @@
     "ethnicity": "Hrvat",
     "occupation": "pomorac",
     "death_place": "kod Olova u Istočnoj Bosni",
-    "party": "KPJ 1936"
+    "party": "KPJ 1936",
+    "birth_place": "Prvić, Šibenik",
+    "death_type": "poginuo",
+    "death_date": "08.1943",
+    "rank": "komesar čete",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Lučev",
@@ -49120,12 +49147,12 @@
       {
         "soldier_id": "0036011280",
         "name": "Matijaš J Jakov",
-        "additional_info": "rođen 1914. godine u Vrsini — Trogir, kom. čete III bat poginuo kod Knina decembra 1944. godine. , 1256. Matijaš J. Marko, rođen 1914. godine u Pozorcu — Trogir, borac IV bat poginuo u V ofanzivi.",
+        "additional_info": "rođen 1914. godine u Vrsini — Trogir, kom. čete III bat poginuo kod Knina decembra 1944. godine.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 81,
         "pdf_x": 78.6,
         "pdf_y": 56.129999999999995,
-        "pdf_y_end": 89.6,
+        "pdf_y_end": 72.5,
         "pdf_x_end": 410.6,
         "pdf_x_left": 56.8
       },
@@ -49157,7 +49184,21 @@
     "birth_place": "Pozorac, Trogir",
     "death_type": "poginuo",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036019016",
+        "name": "Matijaš J. Marko",
+        "additional_info": "rođen 1914. godine u Pozorcu — Trogir, borac IV bat poginuo u V ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 81,
+        "pdf_x": 60.4,
+        "pdf_y": 73.2,
+        "pdf_x_end": 410.6,
+        "pdf_y_end": 89.6,
+        "pdf_x_left": 56.8
+      }
+    ]
   },
   {
     "last_name": "Matijaš",
@@ -51940,13 +51981,10 @@
     "first_name": "Antun",
     "fathers_name": "P",
     "full_name": "Milat P Antun",
-    "additional_info": "\"Hrastovac\", rođen 1926. godine u Blatu — Korčula, borackurir III bat, poginuo u V ofanzivi.",
+    "additional_info": "Hrastovac\", rođen 1926. godine u Blatu — Korčula, borackurir III bat, poginuo u V ofanzivi.",
     "birth_year": "1926",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036001263",
-    "birth_place": "Blato, Korčula",
-    "death_type": "poginuo",
-    "unit_detail": "3. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036011358",
@@ -51970,6 +52008,9 @@
       }
     ],
     "rank": "kurir",
+    "birth_place": "Blato, Korčula",
+    "death_type": "poginuo",
+    "unit_detail": "3. bataljon",
     "ethnicity": "Hrvat",
     "borrowed": [
       "death_date",
@@ -54362,7 +54403,7 @@
       {
         "soldier_id": "0036011424",
         "name": "Morožin L Ivo",
-        "additional_info": "rođen 1924. godine u Biogradu, borac II bat., poginut u V ofanzivi. 138Ö. Morožin L. Marko, rođen 1924. godine u Biogradu, borac II bat., poginut u V ofanzivi.",
+        "additional_info": "rođen 1924. godine u Biogradu, borac II bat., poginut u V ofanzivi.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 85,
         "pdf_x": 79.3,
@@ -54385,7 +54426,21 @@
     "soldier_id": "0036001326",
     "birth_place": "Biograd",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036019017",
+        "name": "Morožin L. Marko",
+        "additional_info": "rođen 1924. godine u Biogradu, borac II bat., poginut u V ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 85,
+        "pdf_x": 79.5,
+        "pdf_y": 108.4,
+        "pdf_x_end": 413.1,
+        "pdf_y_end": 124.8,
+        "pdf_x_left": 57.4
+      }
+    ]
   },
   {
     "last_name": "Morožin",
@@ -55262,14 +55317,10 @@
     "first_name": "Ivan",
     "fathers_name": "J",
     "full_name": "Nadilo J Ivan",
-    "additional_info": "\"Buran\", rođen 1923. godine u Blatu, Korčula, borac I bat, poginuo u V ofanzivi.",
+    "additional_info": "Buran\", rođen 1923. godine u Blatu, Korčula, borac I bat, poginuo u V ofanzivi.",
     "birth_year": "1923",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036001348",
-    "birth_place": "Blato, Korčula",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "unit_detail": "1. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036100810",
@@ -55299,7 +55350,11 @@
     "occupation": "zemljoradnik",
     "death_date": "11.06.1943",
     "death_place": "Sutjeska, Tjentište",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Blato, Korčula",
+    "death_type": "poginuo",
+    "rank": "borac",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Nadilo",
@@ -55942,6 +55997,18 @@
     "unit_detail": "4. bataljon",
     "other_sources": [
       {
+        "soldier_id": "0036019018",
+        "name": "Novak Đ. Tomo",
+        "additional_info": "rođen u Hašani — Kutina, borac IV bat., poginuo p? Širokom Brijegu februara 1945. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 86,
+        "pdf_x": 49.4,
+        "pdf_y": 144.3,
+        "pdf_x_end": 385.3,
+        "pdf_y_end": 160.7,
+        "pdf_x_left": 28.0
+      },
+      {
         "soldier_id": "9021022015",
         "name": "Novak (Đuro) Tomo",
         "additional_info": "rođen 1921, Husajin (Kutina). Hrvat, poginuo 1945. u NOBu, Široki brijeg",
@@ -55974,12 +56041,12 @@
       {
         "soldier_id": "0036011462",
         "name": "Novak Vinko",
-        "additional_info": "rođen u Trogiru, borac IV bat., poginuo u Grude (Hercegovina) 1943. godine 14.,,n. Novak Đ. Tomo, rođen u Hašani — Kutina, borac IV bat., poginuo p? Širokom Brijegu februara 1945. godine.",
+        "additional_info": "rođen u Trogiru, borac IV bat., poginuo u Grude (Hercegovina) 1943. godine",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 86,
         "pdf_x": 49.9,
         "pdf_y": 127.05000000000001,
-        "pdf_y_end": 160.7,
+        "pdf_y_end": 143.4,
         "pdf_x_end": 385.9,
         "pdf_x_left": 28.0
       }
@@ -56883,13 +56950,13 @@
       {
         "soldier_id": "0036011486",
         "name": "Ostojić J Jozo",
-        "additional_info": "rođen 1916. godine u Plini — Ploče, delegat voda III bat poginuo u V ofanzivi. ' 1447. Oštrlć M. Marko, rođen 1916. godine u Blizni — Trogir, borac II bat poginuo kod Knina, novembra 1944. godine.",
+        "additional_info": "rođen 1916. godine u Plini — Ploče, delegat voda III bat poginuo u V ofanzivi.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 87,
         "pdf_x": 80.1,
         "pdf_y": 61.289999999999964,
-        "pdf_y_end": 95.0,
-        "pdf_x_end": 412.6,
+        "pdf_y_end": 77.7,
+        "pdf_x_end": 411.9,
         "pdf_x_left": 58.2
       },
       {
@@ -57002,6 +57069,18 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "other_sources": [
+      {
+        "soldier_id": "0036019019",
+        "name": "Oštrić M. Marko",
+        "additional_info": "rođen 1916. godine u Blizni — Trogir, borac II bat poginuo kod Knina, novembra 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 87,
+        "pdf_x": 61.6,
+        "pdf_y": 78.6,
+        "pdf_x_end": 412.6,
+        "pdf_y_end": 95.0,
+        "pdf_x_left": 58.2
+      },
       {
         "soldier_id": "9021048929",
         "name": "Oštrić (Mijo) Marko",
@@ -70605,7 +70684,7 @@
       {
         "soldier_id": "0036019013",
         "name": "Sarić Ivan",
-        "additional_info": "rođen u Kistanji — Knin, borac I bat., poginuo kod Visa, maja 1944. godine na »Marin 2«. 1889b. Sarić I. Jure, rođen na Visu, borac IV bat., poginuo na Šolti maja 1944. godine.",
+        "additional_info": "rođen u Kistanji — Knin, borac I bat., poginuo kod Visa, maja 1944. godine na »Marin 2«.",
         "pdf_file": "1-dalmatinska-monografija.pdf",
         "pdf_page": 101,
         "pdf_x": 77.6,
@@ -70629,7 +70708,24 @@
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036001735",
     "rank": "borac",
-    "unit_detail": "4. bataljon"
+    "unit_detail": "4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0036019020",
+        "name": "Sarić I. Jure",
+        "additional_info": "rođen na Visu, borac IV bat., poginuo na Šolti maja 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 101,
+        "pdf_x": 77.6,
+        "pdf_y": 56.3,
+        "pdf_x_end": 414.7,
+        "pdf_y_end": 73.7,
+        "pdf_x_left": 55.7
+      }
+    ],
+    "death_type": "poginuo",
+    "death_date": "05.1944",
+    "death_place": "Šolta"
   },
   {
     "last_name": "Sarolić",
@@ -74671,6 +74767,22 @@
         "pdf_x_end": 386.5,
         "pdf_y_end": 566.1,
         "pdf_x_left": 27.2
+      },
+      {
+        "soldier_id": "9002001070",
+        "name": "Staničić Nikole Mate",
+        "additional_info": "Rođen je 6. decembra 1920. u Šibeniku, Hrvatska. … Narodnim herojem proglašen je 24. jula 1953. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=215",
+        "source_page": 211,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000971",
+        "name": "Staničić Nikin Mate",
+        "additional_info": "Rođen 6-XII-1920 u Šibeniku. Hrvatska. Podoficir. Član KPJ od 23-V-1942. U NOB stupio 1941. Danas: pukovnik JNA. Za narodnog heroja proglašen 24-VII-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=751",
+        "source_page": 729,
+        "ref_book": "zbornik-heroja-1957"
       }
     ],
     "ethnicity": "Hrvat",
@@ -84721,13 +84833,10 @@
     "first_name": "Luka",
     "fathers_name": "I",
     "full_name": "Čović I Luka",
-    "additional_info": "rođen 1912. godine u Tučepima — Makarska, borac III bat, pogin.uo kod Nevesinja marta 1943. godine.",
+    "additional_info": "rođen 1912. godine u Tučepima — Makarska, borac III bat, poginuo kod Nevesinja marta 1943. godine.",
     "birth_year": "1912",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036002078",
-    "birth_place": "Tučepi, Makarska",
-    "rank": "borac",
-    "unit_detail": "3. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036012195",
@@ -84744,7 +84853,10 @@
     ],
     "death_type": "poginuo",
     "death_date": "03.1943",
-    "death_place": "Nevesinje"
+    "death_place": "Nevesinje",
+    "birth_place": "Tučepi, Makarska",
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Čović",
@@ -87010,7 +87122,7 @@
       {
         "soldier_id": "0036101334",
         "name": "Žarko Mate Šimun",
-        "additional_info": "'borac 2. čete 4. bataljona, rođen 1914, Bitelić, Sinj, radnik, Hrvat, u NOB od 1942, član KPJ, poginuo na Klisu, kod Splita, septembra 1943, politički komesar čete.",
+        "additional_info": "borac 2. čete 4. bataljona, rođen 1914, Bitelić, Sinj, radnik, Hrvat, u NOB od 1942, član KPJ, poginuo na Klisu, kod Splita, septembra 1943, politički komesar čete.",
         "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
         "pdf_page": 66,
         "pdf_x": 181.8,
@@ -88231,13 +88343,10 @@
     "first_name": "Frane",
     "fathers_name": "",
     "full_name": "Žuvić Frane",
-    "additional_info": "rođen u Skripu — Brač, borac 1 bat, pogmuo u V ofan .",
+    "additional_info": "rođen u Skripu — Brač, borac 1 bat, pogmuo u V ofan.",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036002164",
-    "birth_place": "Skrip, Brač",
-    "rank": "borac",
-    "unit_detail": "1. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036101351",
@@ -88266,7 +88375,10 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "birth_place": "Skrip, Brač",
+    "rank": "borac",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Žuvić",
@@ -88415,7 +88527,7 @@
     "last_name": "Adić",
     "middle_name": "Antin",
     "first_name": "Ante",
-    "fathers_name": "Antin",
+    "fathers_name": "Ante",
     "full_name": "Adić Antin Ante",
     "additional_info": "komandir voda u 2. četi 4. bataljona, rođen 1916, Vis, zemljoradnik, Hrvat, u NOB od 1942. Umro posle rata u Splitu.",
     "birth_year": "1916",
@@ -89102,7 +89214,7 @@
     "first_name": "Vicko",
     "fathers_name": "",
     "full_name": "Atijaš Vicko",
-    "additional_info": "'borac 4. bataljona, rođen 1925, Pozorac, Trogir, zemljoradnik, Hrvat, u NOB od 1942, poginuo u bici na Sutjesci.",
+    "additional_info": "borac 4. bataljona, rođen 1925, Pozorac, Trogir, zemljoradnik, Hrvat, u NOB od 1942, poginuo u bici na Sutjesci.",
     "birth_year": "1925",
     "pdf_page": 38,
     "pdf_y": 260.0,
@@ -89110,14 +89222,14 @@
     "pdf_y_end": 300.9,
     "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
     "soldier_id": "0036100063",
+    "pdf_x_end": 172.4,
     "birth_place": "Pozorac, Trogir",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
+    "death_place": "Sutjeska",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 172.4,
-    "death_place": "Sutjeska"
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Atković",
@@ -91846,7 +91958,7 @@
     "last_name": "Butužin",
     "middle_name": "Šimin",
     "first_name": "Šime",
-    "fathers_name": "Šimin",
+    "fathers_name": "Šime",
     "full_name": "Butužin Šimin Šime",
     "additional_info": "ekonom 1. čete 1. bataljona, rođen 1914, Drniš, stolar, Hrvat, u NOB od 1941, član KPJ od 1943, krajem rata politički delegat voda.",
     "birth_year": "1914",
@@ -91868,7 +91980,7 @@
     "last_name": "Caš",
     "middle_name": "Matin",
     "first_name": "Mate",
-    "fathers_name": "Matin",
+    "fathers_name": "Mate",
     "full_name": "Caš Matin Mate",
     "additional_info": "borac 1. čete 3. bataljona, rođen 1923, Staševica, Ploče, zemljoradnik, Hrvat, u NOB od 1942, član KPJ, poginuo na Zelengori juna 1943. godine.",
     "birth_year": "1923",
@@ -94952,7 +95064,7 @@
     "last_name": "Ivanković",
     "middle_name": "Antin",
     "first_name": "Ante",
-    "fathers_name": "Antin",
+    "fathers_name": "Ante",
     "full_name": "Ivanković Antin Ante",
     "additional_info": "zvani Bojo; borac-sekretar četnog aktiva SKOJ-a u 3. bataljonu, rođen 1921, Vrisnik, Hvar, službenik, Hrvat, u NOB od 1941, član SKOJ-a od 1941, član KPJ od februara 1943, krajem rata šef OZN-e za srednjedalmatinsko područje.",
     "birth_year": "1921",
@@ -96360,7 +96472,7 @@
     "first_name": "Serđenko",
     "fathers_name": "Albert",
     "full_name": "Jurdana Alberta Serđenko",
-    "additional_info": "zvani Daša; politički delegat voda u 2. četi 4. bataljona, rođen 1924, Špiljčići, Rijeka, đak, Jugosloven, u NOB od maja 1942, član SKOJ-a od 1942. godine. '",
+    "additional_info": "zvani Daša; politički delegat voda u 2. četi 4. bataljona, rođen 1924, Špiljčići, Rijeka, đak, Jugosloven, u NOB od maja 1942, član SKOJ-a od 1942. godine.",
     "birth_year": "1924",
     "pdf_page": 27,
     "pdf_y": 394.8,
@@ -96368,13 +96480,13 @@
     "pdf_y_end": 447.2,
     "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
     "soldier_id": "0036100515",
+    "pdf_x_end": 197.8,
+    "party": "SKOJ 1942",
     "birth_place": "Špiljčići, Rijeka",
     "ethnicity": "Jugosloven",
     "occupation": "đak",
     "rank": "politički delegat voda",
-    "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 197.8,
-    "party": "SKOJ 1942"
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "last_name": "Jurić",
@@ -99087,7 +99199,7 @@
     "first_name": "Šime",
     "fathers_name": "Jakov",
     "full_name": "Marić Jakova Šime",
-    "additional_info": "' desetar u 4. bataljonu, rođen 1924, Podstrana, Split, zemljoradnik, Hrvat, u NOB od 1942. godine. Umro posle rata.",
+    "additional_info": "desetar u 4. bataljonu, rođen 1924, Podstrana, Split, zemljoradnik, Hrvat, u NOB od 1942. godine. Umro posle rata.",
     "birth_year": "1924",
     "pdf_page": 35,
     "pdf_y": 440.0,
@@ -99095,14 +99207,14 @@
     "pdf_y_end": 482.4,
     "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
     "soldier_id": "0036100701",
+    "pdf_x_end": 392.2,
+    "death_date": "1960",
     "birth_place": "Podstrana, Split",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "rank": "desetar",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 392.2,
-    "death_date": "1960",
     "other_sources": [
       {
         "soldier_id": "0148001638",
@@ -100572,7 +100684,7 @@
     "last_name": "Muleta",
     "middle_name": "Antin",
     "first_name": "Ante",
-    "fathers_name": "Antin",
+    "fathers_name": "Ante",
     "full_name": "Muleta Antin Ante",
     "additional_info": "zvani Crni; borac u brigadnoj muzici, rođen 1921, Rogoznica, Šibenik, trgovački pomoćnik, Hrvat, u NOB od 1941, član SKOJ-a od 1939, član KPJ od jula 1943, krajem rata zamenik komandira čete.",
     "birth_year": "1921",
@@ -100996,7 +101108,7 @@
     "last_name": "Njegovan",
     "middle_name": "Antin",
     "first_name": "Ante",
-    "fathers_name": "Antin",
+    "fathers_name": "Ante",
     "full_name": "Njegovan Antin Ante",
     "additional_info": "desetar u 1. četi 4. bataljona, rođen 1920, Split, radnik, Jugosloven, u NOB od juna 1942, član SKOJ-a od 1941, član KP.T od jula 1944. godine, krajem rata politički komesar bataljona u 2. dalmatinskoj brigadi.",
     "birth_year": "1920",
@@ -102435,7 +102547,7 @@
     "last_name": "Pirić",
     "middle_name": "Matin",
     "first_name": "Mate",
-    "fathers_name": "Matin",
+    "fathers_name": "Mate",
     "full_name": "Pirić Matin Mate",
     "additional_info": "borac 2. čete 4. bataljona, rođen 1911, Naklice, Omiš, zemljoradnik, Hrvat, u NOB od 1942 član KPJ od 1944. Umro 1978.",
     "birth_year": "1911",
@@ -110524,7 +110636,7 @@
     "last_name": "Živković",
     "middle_name": "Antin",
     "first_name": "Ante",
-    "fathers_name": "Antin",
+    "fathers_name": "Ante",
     "full_name": "Živković Antin Ante",
     "additional_info": "borac 3. čete 3. bataljona, rođen 1920, Kotelje, Šibenik, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a od novembra 1942.",
     "birth_year": "1920",
@@ -114023,7 +114135,7 @@
     "first_name": "Dinka",
     "fathers_name": "",
     "full_name": "Bogić Dinka",
-    "additional_info": "bol.; rođena 11. XII. 1920. Trogir; u NOV od 2 8, X . 1 9 44 .",
+    "additional_info": "bol.; rođena 11. XII. 1920. Trogir; u NOV od 2 8, X . 1 9 44.",
     "birth_year": "1920",
     "pdf_page": 1,
     "pdf_y": 618.6122,
@@ -114031,8 +114143,8 @@
     "pdf_y_end": 633.7,
     "pdf_file": "zene-1-dalmatinska.pdf",
     "soldier_id": "0036020009",
-    "birth_place": "Trogir",
     "pdf_x_end": 501.5,
+    "birth_place": "Trogir",
     "birth_date": "11.12.1920"
   },
   {
@@ -115267,7 +115379,7 @@
     "first_name": "Milka",
     "fathers_name": "",
     "full_name": "Čaleta Milka",
-    "additional_info": "čet. bol. st. vod.; rođena 15. VI. 1928. Bilice Šibenik; u NOV od 9. IX. 1942.; odlikovana medaljom za hrabrost; Kao bolničar'ka vrlo dobra",
+    "additional_info": "čet. bol. st. vod.; rođena 15. VI. 1928. Bilice Šibenik; u NOV od 9. IX. 1942.; odlikovana medaljom za hrabrost; Kao bolničarka vrlo dobra",
     "birth_year": "1928",
     "pdf_page": 1,
     "pdf_y": 781.5722000000001,
@@ -115275,9 +115387,9 @@
     "pdf_y_end": 788.5,
     "pdf_file": "zene-1-dalmatinska.pdf",
     "soldier_id": "0036020073",
-    "birth_place": "Bilice Šibenik",
-    "rank": "bolničar",
     "pdf_x_end": 673.7,
+    "birth_place": "Bilice Šibenik",
+    "rank": "bolničarka",
     "birth_date": "15.06.1928"
   },
   {

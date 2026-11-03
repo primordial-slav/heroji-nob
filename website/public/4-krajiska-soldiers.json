@@ -890,7 +890,7 @@
     "first_name": "Dušan",
     "fathers_name": "Dragutin",
     "full_name": "Andrić Dragutina Dušan",
-    "additional_info": "borac, rođen 1921, Marginovci, Sr. Mitrovica, Srbin, zemljoradnik, u NOB od 5. X 1944, poginuo 15. XII 1944. kod sela Sotina, Vukovar. .",
+    "additional_info": "borac, rođen 1921, Marginovci, Sr. Mitrovica, Srbin, zemljoradnik, u NOB od 5. X 1944, poginuo 15. XII 1944. kod sela Sotina, Vukovar.",
     "birth_year": "1921",
     "pdf_page": 4,
     "pdf_y": 153.6,
@@ -898,14 +898,14 @@
     "pdf_y_end": 180.4,
     "pdf_file": "4-krajiska.pdf",
     "soldier_id": "0011000025",
+    "pdf_x_end": 344.2,
     "birth_place": "Marginovci, Sr. Mitrovica",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "15.12.1944",
-    "rank": "borac",
-    "pdf_x_end": 344.2,
     "death_place": "Sotin, Vukovar",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9013000987",
@@ -4958,7 +4958,7 @@
     "first_name": "Luka",
     "fathers_name": "Todor",
     "full_name": "Bojinović Todora Luka",
-    "additional_info": "komandir čete, rođen 1918, Stekerovci, Glamoč, Srbin, z'emljoradnik, u NOB od 1941, član KPJ, poginuo decembra 1943. kod Bijelog Brda, Priboj.",
+    "additional_info": "komandir čete, rođen 1918, Stekerovci, Glamoč, Srbin, zemljoradnik, u NOB od 1941, član KPJ, poginuo decembra 1943. kod Bijelog Brda, Priboj.",
     "birth_year": "1918",
     "pdf_page": 11,
     "pdf_y": 82.1,
@@ -4966,14 +4966,15 @@
     "pdf_y_end": 108.9,
     "pdf_file": "4-krajiska.pdf",
     "soldier_id": "0011000150",
+    "death_place": "kod Bijelog Brda, Priboj",
+    "pdf_x_end": 386.6,
+    "party": "KPJ",
     "birth_place": "Stekerovci, Glamoč",
     "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "12.1943",
-    "death_place": "kod Bijelog Brda, Priboj",
-    "rank": "komandir čete",
-    "pdf_x_end": 386.6,
-    "party": "KPJ"
+    "rank": "komandir čete"
   },
   {
     "last_name": "Bojović",
@@ -10149,7 +10150,7 @@
       {
         "soldier_id": "9062000302",
         "name": "Galić Tanasije Zorka",
-        "additional_info": "Galić Tanasije Zorka, rođena 1924., domaćica. Kao omladinka radila na terenu od početka 1942. u IV krajišku brigadu stupila 1943. Poginula 1943. na Šatoru, kao bolničarka. . Galić Mile Stojan, rođen 1894., zemljoradnik. Stupio u ustaničku četu sela Maleševci 1941., zatim radio kao pozadinski radnik – kurir na terenu. Uhvatili ga četnici i premlatili, umro 1943. u Simin Brijegu.",
+        "additional_info": "Galić Tanasije Zorka, rođena 1924., domaćica. Kao omladinka radila na terenu od početka 1942. u IV krajišku brigadu stupila 1943. Poginula 1943. na Šatoru, kao bolničarka.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010313&pg_seq=694",
         "source_page": 665,
         "ref_book": "bosansko-grahovo"
@@ -11247,7 +11248,7 @@
     "first_name": "Andrija",
     "fathers_name": "Šandor",
     "full_name": "Grenač Šandora Andrija",
-    "additional_info": "borac, rođen 1927, Stari Sivac, So.mbor, Mađar, poginuo 13. IV 1945. kod sela Gradišta, Županja.",
+    "additional_info": "borac, rođen 1927, Stari Sivac, Sombor, Mađar, poginuo 13. IV 1945. kod sela Gradišta, Županja.",
     "birth_year": "1927",
     "pdf_page": 27,
     "pdf_y": 114.9,
@@ -11255,13 +11256,13 @@
     "pdf_y_end": 141.2,
     "pdf_file": "4-krajiska.pdf",
     "soldier_id": "0011000340",
-    "birth_place": "Stari Sivac, So.mbor",
+    "pdf_x_end": 374.0,
+    "birth_place": "Stari Sivac, Sombor",
     "ethnicity": "Mađar",
     "death_type": "poginuo",
     "death_date": "13.04.1945",
-    "rank": "borac",
-    "pdf_x_end": 374.0,
-    "death_place": "Gradište, Županja"
+    "death_place": "Gradište, Županja",
+    "rank": "borac"
   },
   {
     "last_name": "Grmuša",
@@ -12982,7 +12983,17 @@
     "death_date": "1943",
     "death_place": "Sanski Most",
     "rank": "borac",
-    "pdf_x_end": 378.2
+    "pdf_x_end": 378.2,
+    "other_sources": [
+      {
+        "soldier_id": "9062000735",
+        "name": "Injac Steve Krsto",
+        "additional_info": "Injac Steve Krsto, rođei 1923., zemljoradnik. Stupio avgusta 1942. u bataljon „Starac Vujadin\". Poginuo 1943. na Sanskom Mostu, kao borac IV Kraj iške brigade.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010313&pg_seq=724",
+        "source_page": 695,
+        "ref_book": "bosansko-grahovo"
+      }
+    ]
   },
   {
     "last_name": "Injac",
@@ -23055,7 +23066,7 @@
     "first_name": "Petar",
     "fathers_name": "Petar",
     "full_name": "Lukač Petra Petar",
-    "additional_info": "zam. ko.mandira čete, rođen 1914, Ljeskovica, Drvar, Srbin, u NOB od 1941, član KPJ, poginuo 25. IV 1943. kod Glamoča.",
+    "additional_info": "zam. komandira čete, rođen 1914, Ljeskovica, Drvar, Srbin, u NOB od 1941, član KPJ, poginuo 25. IV 1943. kod Glamoča.",
     "birth_year": "1914",
     "pdf_page": 47,
     "pdf_y": 438.4,
@@ -23063,13 +23074,13 @@
     "pdf_y_end": 465.2,
     "pdf_file": "4-krajiska.pdf",
     "soldier_id": "0011000686",
+    "pdf_x_end": 395.3,
+    "party": "KPJ",
     "birth_place": "Ljeskovica, Drvar",
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "25.04.1943",
     "death_place": "Glamoč",
-    "pdf_x_end": 395.3,
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "9022015264",
@@ -24109,7 +24120,7 @@
     "last_name": "Marijanović",
     "middle_name": "Đurin",
     "first_name": "Đuro",
-    "fathers_name": "Đurin",
+    "fathers_name": "Đuro",
     "full_name": "Marijanović Đurin Đuro",
     "additional_info": "zvani Buka; poručnik, politički komesar čete, rođen 1924, Rašinovac, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 20. II 1943, član KPJ, ranjen 15. XII kod sela Sotina, umro 17. XII 1944. u selu Tovarniku, Šid.",
     "birth_year": "1924",
@@ -25608,7 +25619,7 @@
     "last_name": "Martinović",
     "middle_name": "Vukov",
     "first_name": "Mijo",
-    "fathers_name": "Vukov",
+    "fathers_name": "Vuk",
     "full_name": "Martinović Vukov Mijo",
     "additional_info": "borac, rođen 1921, Bistrica, poginuo 17. X 1944. Beograd (Mali Mokri Lug).",
     "birth_year": "1921",
@@ -27168,7 +27179,7 @@
     "last_name": "Milenković",
     "middle_name": "Srete",
     "first_name": "Stanimir",
-    "fathers_name": "Srete",
+    "fathers_name": "Sreto",
     "full_name": "Milenković Srete Stanimir",
     "additional_info": "borac 1. čete 3. bataljona, rođen 1920, Pozlata, Sušica, Kruševac, Srbin, zemljoradnik, u NOB od 19. XII 1944, poginuo 25. XII 1944. kod sela Otoka, Županja.",
     "birth_year": "1920",
@@ -28533,7 +28544,7 @@
     "last_name": "Milošević",
     "middle_name": "Radin",
     "first_name": "Dobrivoj",
-    "fathers_name": "Radin",
+    "fathers_name": "Rade",
     "full_name": "Milošević Radin Dobrivoj",
     "additional_info": "borac, rođen 1920, Mrmoš, Kruševac, Srbin, zemljoradnik, u NOB od 20. XII 1944, poginuo 17. I 1945. kod sela Tompojevaca, Vukovar.",
     "birth_year": "1920",
@@ -29010,7 +29021,7 @@
       {
         "soldier_id": "9062000290",
         "name": "Mirčić Ostoje Dušan",
-        "additional_info": "Mirčić Ostoje Dušan,rođen 1920., radnik. Stupio 1941. u ustaničku četu sela Maleševci, zatim u bataljon „Gavrilo Princip\" i IV krajišku brigadu. Poginuo aprila 1943. na Glamoču, kao komesar čete. Član KPJ .",
+        "additional_info": "Mirčić Ostoje Dušan,rođen 1920., radnik. Stupio 1941. u ustaničku četu sela Maleševci, zatim u bataljon „Gavrilo Princip\" i IV krajišku brigadu. Poginuo aprila 1943. na Glamoču, kao komesar čete. Član KPJ.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010313&pg_seq=693",
         "source_page": 664,
         "ref_book": "bosansko-grahovo"
@@ -44656,7 +44667,7 @@
     "first_name": "Zdravko",
     "fathers_name": "",
     "full_name": "Stakić Zdravko",
-    "additional_info": "rođ. Stokib; borac 2. čete 2. bataljona, umro 9. IV 1945. u Bijeljini. /",
+    "additional_info": "rođ. Stokib; borac 2. čete 2. bataljona, umro 9. IV 1945. u Bijeljini.",
     "birth_year": "",
     "pdf_page": 85,
     "pdf_y": 272.8,
@@ -44664,12 +44675,12 @@
     "pdf_y_end": 290.7,
     "pdf_file": "4-krajiska.pdf",
     "soldier_id": "0011001282",
+    "pdf_x_end": 395.8,
     "death_type": "umro",
     "death_date": "09.04.1945",
-    "death_place": "u Bijeljini. /",
+    "death_place": "Bijeljina",
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 395.8,
     "other_sources": [
       {
         "soldier_id": "9014005290",
@@ -47656,7 +47667,7 @@
       {
         "soldier_id": "9062000412",
         "name": "Tica Miloša Gojko",
-        "additional_info": "Tica Miloša Gojko, rođen 1924., zemljoradnik. Stupio 9. septembra 1942. u IV Krajišku brigadu. Poginuo 30.„aprila 1944. u Janju .— Mrkonjić Grad. '",
+        "additional_info": "Tica Miloša Gojko, rođen 1924., zemljoradnik. Stupio 9. septembra 1942. u IV Krajišku brigadu. Poginuo 30.„aprila 1944. u Janju .— Mrkonjić Grad.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010313&pg_seq=703",
         "source_page": 674,
         "ref_book": "bosansko-grahovo"

@@ -116,6 +116,14 @@ def infant(e: dict) -> bool:
     book that names the same child still makes his record"""
     year = str(e.get('birth_year') or '')
     return e.get('_book') == 'spomenica-crnogorskim-antifasistima' and year.isdigit() and 1942 <= int(year) <= 1945
+def born_year(e: dict, year) -> str:
+    """The year of birth the lead entry gives, where someone of this war can have it: the Spomenica's old people and
+    children stay (1853, 1938), the scans' "Rođen je 1997" and "1814" are none, and the normalizer then reads the text
+    and the man's other entries (2026-11-03)"""
+    y = year(e, 'birth_year')
+    return str(y) if y and 1850 <= int(y) <= 1941 else ''
+
+
 # entries checked by hand to be one man, where an OCR slip in the father hides it from same_man, or where the Spomenica
 # prints him in two chapters with two villages
 ONE_MAN = [
@@ -728,7 +736,7 @@ def main():
                                     if fsrc['_book'] in POSSESSIVE_FATHERS else
                                     father if nominative else ''),
                    'full_name': '', 'additional_info': text,
-                   'birth_year': str(year(first, 'birth_year') or '')}
+                   'birth_year': born_year(first, year)}
             if fsrc is not first and given(first, 0) and (nominative or fsrc['_book'] in POSSESSIVE_FATHERS):
                 rec['middle_name'] = first['fathers_name']     # the lead's initial stays in the name ("Zec B. Drago"),
                 #                                                his father in full from the census beside it (Bojan)

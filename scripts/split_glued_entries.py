@@ -337,10 +337,48 @@ SPLITS_2026_11_02.setdefault('22-srpska-soldiers.json', {})['0074001298'] = [('j
 SPLITS_2026_11_02.setdefault('osjecka-soldiers.json', {})['0104001049'] = [('MISANUK MIJO', 'Mišanuk', '', '', 'Mijo', '')]
 CUT_2026_11_02 = {'0001400252': 'GRUBIĆIŠ Ante LJUBO', '0001400706': 'POPOVIĆ Milivoja MAR', '0001400813': 'SLADOLJEV Ante KAR', '0103000151': 'KOVACEVIC F. VJEKO',
                   '0060002000': 'SA VIC Nikole SAVO', '0126001199': 'BOKOVIĆ. Živorada SLAVKO', '0128003566': 'ADULOVIE DRAGUTIN', '0001400236': 'GRLIĆ J. ANKA'}
+# the same on 2026-11-03: men in the small letters of their lists, after a sentence's end; python scripts/split_glued_entries.py --batch=2026-11-03 --range=LO-HI [--write]
+SPLITS_2026_11_03 = {
+    '1-dalmatinska-soldiers.json': {
+        '0036010439': [('Delonga J. Jakov', 'Delonga', 'J.', 'J.', 'Jakov', '')],
+        '0036011125': [('Letica A. Petar', 'Letica', 'A.', 'A.', 'Petar', '')],
+        '0036011280': [('Matijaš J. Marko', 'Matijaš', 'J.', 'J.', 'Marko', '')],
+        '0036011424': [('Morožin L. Marko', 'Morožin', 'L.', 'L.', 'Marko', '')],
+        '0036011462': [('Novak Đ. Tomo', 'Novak', 'Đ.', 'Đ.', 'Tomo', '')],
+        '0036011486': [('Oštrlć M. Marko', 'Oštrić', 'M.', 'M.', 'Marko', '')],
+        '0036019013': [('Sarić I. Jure', 'Sarić', 'I.', 'I.', 'Jure', '')],
+    },
+    '6-istocnobosanska-soldiers.json': {
+        '0042010107': [('Njevdić R. Srećko', 'Njevdić', 'R.', 'R.', 'Srećko', '')],
+        '0042019004': [('Čolić Milosava Dragomir', 'Čolić', 'Milosava', 'Milosav', 'Dragomir', ''), ('Bokić Milovana Dobrosav', 'Đokić', 'Milovana', 'Milovan', 'Dobrosav', ''),
+                       ('Desivojević Petlja Ljubiša', 'Desivojević', 'Petlja', 'Petlja', 'Ljubiša', ''), ('Ivanović Jovana Živadin', 'Ivanović', 'Jovana', 'Jovan', 'Živadin', ''),
+                       ('Jakovljević Dušana Dragan', 'Jakovljević', 'Dušana', 'Dušan', 'Dragan', ''), ('Jakovljević Radoja Miroslav', 'Jakovljević', 'Radoja', 'Radoje', 'Miroslav', ''),
+                       ('Jakovljević Jovana Božidar', 'Jakovljević', 'Jovana', 'Jovan', 'Božidar', ''), ('Joksimović Živana Radosav', 'Joksimović', 'Živana', 'Živan', 'Radosav', ''),
+                       ('Karić Radojka Milovan', 'Karić', 'Radojka', 'Radojko', 'Milovan', ''), ('Mitrovnć Živote Vukosav', 'Mitrović', 'Živote', 'Života', 'Vukosav', ''),
+                       ('Nektorijević Dragoljuba Branko', 'Nektorijević', 'Dragoljuba', 'Dragoljub', 'Branko', ''), ('Nešović Žika Radojica', 'Nešović', 'Žika', 'Žika', 'Radojica', ''),
+                       ('Pantelić Živojina Dragoljub', 'Pantelić', 'Živojina', 'Živojin', 'Dragoljub', ''), ('Savović Radojice Stojan', 'Savović', 'Radojice', 'Radojica', 'Stojan', ''),
+                       ('Savović Mihajla Dušan', 'Savović', 'Mihajla', 'Mihajlo', 'Dušan', ''), ('Slavković Mijodraga Rajko', 'Slavković', 'Mijodraga', 'Mijodrag', 'Rajko', ''),
+                       ('Zorić Vojislava Mihajilo', 'Zorić', 'Vojislava', 'Vojislav', 'Mihajilo', ''), ('Katanić Milana Branko', 'Katanić', 'Milana', 'Milan', 'Branko', ''),
+                       ('Milutinović Milana Živomir', 'Milutinović', 'Milana', 'Milan', 'Živomir', ''), ('Ristović Riste Radiša', 'Ristović', 'Riste', 'Rista', 'Radiša', '')],
+    },
+    '19-srpska-soldiers.json': {
+        '0073001928': [('ćuguz Nikola', 'Ćuguz', '', '', 'Nikola', ''), ('ćuguz Miloš', 'Ćuguz', '', '', 'Miloš', '')],
+        '0073003127': [('ćirkić K. Živorad', 'Ćirkić', 'K.', 'K.', 'Živorad', '')],
+    },
+    '6-vojvodjanska-soldiers.json': {
+        '0083000167': [('Milaš Aleksandar', 'Milaš', '', '', 'Aleksandar', '')],
+    },
+    '14-primorsko-goranska-soldiers.json': {
+        '0095000082': [('Cenčić A. Zivko', 'Cenčić', 'A.', 'A.', 'Živko', '')],
+        '0095000086': [('Crljenko Jadra Jadre', 'Crljenko', 'Jadra', 'Jadre', 'Jadre', ''), ('Grljenko Pavo', 'Crljenko', '', '', 'Pavo', '')],
+        '0095000092': [('Cvitković F. Stjepan', 'Cvitković', 'F.', 'F.', 'Stjepan', '')],
+    },
+}
+
 # what a heading's own words leave in the man's text: the name's rest up to the bio
 NAME_TAIL = re.compile(r'^\s*(?:\((?:VESIN|Rajšić)\)\s*)?(?:MILKA\s*)?')
 # page furniture glued in between: a list's title, an entry's number, a speck
-JUNK = [r'\s*AESTE DALMATINSKE BRIGADE LI BORCI$', r'\s*PREŽIVJELI BO \(na dan 15\.$', r'\s*[:•«■]\s*\d{1,3}\.$',
+JUNK = [r'\s*A VODE SE U EVIDENCIJI:\.?$', r"\s*[,']?\s*(?:AÓ 4G3|109G|1256|138Ö|14\.,,n|1447|1889b)\.$", r'\s*AESTE DALMATINSKE BRIGADE LI BORCI$', r'\s*PREŽIVJELI BO \(na dan 15\.$', r'\s*[:•«■]\s*\d{1,3}\.$',
         r'\s*-i\.$', r'\s*I$', r'\s*N E M C I :$']
 
 
@@ -412,8 +450,9 @@ def _find(host: dict, first: str, after: tuple):
             after = (after[0], after[1] > mid, after[2] + 3)            # below the host's own heading, in its column
         cands = []
         for w in ws:
-            t = cyrillic_to_latin(w['text']).rstrip(',.').replace('l', 'I')   # "ĐAPlC": the scan's l for I in capitals
-            if t == first or (t.isupper() and len(t) > 2 and fold(t) == fold(first)):
+            plain = cyrillic_to_latin(w['text']).rstrip(',.')
+            t = plain.replace('l', 'I')                                 # "ĐAPlC": the scan's l for I in capitals
+            if plain == first or t == first or (t.isupper() and len(t) > 2 and fold(t) == fold(first)):
                 order = (p, w['x0'] > mid, w['top'])
                 if order > after:
                     cands.append((order, w))
@@ -436,10 +475,13 @@ def main():
     corr = json.load(open(ROOT / 'corrections.json', encoding='utf-8'))
     nid = max([c['id'] for c in corr if lo <= c['id'] <= hi] + [lo - 1]) + 1
     taken = {c.get('new_id') for c in corr if c['action'] == 'add'}
+    taken |= {c['merge_id'] for c in corr if c['action'] == 'merge'} | {c['soldier_id'] for c in corr if c['action'] == 'delete'}    # an id an older correction names, though no record holds it now
+    table = next((a.split('=', 1)[1] for a in sys.argv if a.startswith('--table=')), None)                                   # {unit file: {host: [heading, surname, father as printed, father, given name, nick]}}
     new = []
     third = '--batch=2026-11-02' in sys.argv
-    second = '--batch=2026-10-31' in sys.argv or third
-    reason = R.replace('2026-10-17', '2026-11-02' if third else '2026-10-31') if second else R
+    fourth = '--batch=2026-11-03' in sys.argv
+    second = '--batch=2026-10-31' in sys.argv or third or fourth
+    reason = R.replace('2026-10-17', '2026-11-03' if fourth else '2026-11-02' if third else '2026-10-31') if second else R
     if third:
         for hid, tail in CUT_2026_11_02.items():
             for s in json.load(open(ROOT / 'website' / 'public' / _unit_file(hid), encoding='utf-8')):
@@ -447,7 +489,7 @@ def main():
                     if e.get('soldier_id') == hid and tail in (e.get('additional_info') or ''):
                         new.append({'action': 'edit', 'soldier_id': hid, 'fields': {'additional_info': cleaned(e['additional_info'][:e['additional_info'].index(tail)])},
                                     'reason': f"{e.get('full_name') or e.get('name')}: the next man's heading glued into its text, his own record stands; {reason}"})
-    for unit_file, hosts in (SPLITS_2026_11_02 if third else SPLITS_2026_10_31 if second else SPLITS).items():
+    for unit_file, hosts in (json.load(open(table, encoding='utf-8')) if table else SPLITS_2026_11_03 if fourth else SPLITS_2026_11_02 if third else SPLITS_2026_10_31 if second else SPLITS).items():
         recs = json.load(open(ROOT / 'website' / 'public' / unit_file, encoding='utf-8'))
         code = recs[0]['soldier_id'][:4]
         used = {s['soldier_id'] for s in recs} | {o.get('soldier_id') for s in recs for o in s.get('other_sources', ())} | taken
@@ -476,9 +518,22 @@ def main():
                     body = re.sub(r'^Matije,\s*', '', body)
                 if nick:
                     body = f'{nick}; {body}' if nick.startswith('rođ.') else f'zvani {nick}; {body}'
+                if table:
+                    # the list holds him already, under a name its parser read, or a row marked no one of ours: the host is only cut
+                    held = next((r for r in recs if r is not host and len(body) >= 25 and cleaned(r.get('additional_info') or '').lstrip(' ,.').startswith(body[:40])), None)
+                    if held or not last:
+                        print('   HELD', heading, '|', held.get('full_name') if held else 'no record', '|', body[:60])
+                        continue
                 rec = {'last_name': last, 'middle_name': fgen, 'fathers_name': fnom, 'first_name': given, 'additional_info': body}
                 if host.get('pdf_file'):
-                    order, x, y = find(host, heading, after, body)
+                    try:
+                        order, x, y = find(host, heading, after, body)
+                    except SystemExit:
+                        if not table:
+                            raise
+                        print('   NO PLACE', heading, 'after', after, host['pdf_file'])
+                        order = (after[0], False, after[2] + 11) if len(after) == 3 else (after[0], after[1] > 280, after[2] + 11)
+                        x, y = host['pdf_x'], round(order[2], 1)
                     after = order
                     rec.update(pdf_file=host['pdf_file'], pdf_page=order[0], pdf_x=x, pdf_y=y)
                 else:
