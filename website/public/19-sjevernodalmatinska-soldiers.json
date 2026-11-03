@@ -2020,7 +2020,7 @@
     ],
     "ethnicity": "Hrvat",
     "death_date": "1944",
-    "death_place": "Rijeka-katarina"
+    "death_place": "Rijeka, Katarina"
   },
   {
     "last_name": "Berber",
@@ -2339,7 +2339,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Široka kula",
+    "death_place": "Široka Kula",
     "birth_year": "1925"
   },
   {
@@ -2415,7 +2415,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Pristeg-budok",
+    "death_place": "Pristeg, Budok",
     "birth_year": "1925"
   },
   {
@@ -7805,7 +7805,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Bela glava",
+    "death_place": "Bela Glava",
     "variants": {
       "death": [
         {
@@ -9091,7 +9091,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Novi vinodol",
+    "death_place": "Novi Vinodol",
     "birth_year": "1923"
   },
   {
@@ -9284,7 +9284,21 @@
     "death_place": "Pađeni",
     "soldier_id": "0079000408",
     "birth_place": "Ražanac",
-    "pdf_x_end": 276.9
+    "pdf_x_end": 276.9,
+    "other_sources": [
+      {
+        "soldier_id": "0103000123",
+        "name": "Juričić Pave",
+        "additional_info": "iz Ražanca, poginuo u borbi kod Pađena 13. XI 1944. god.",
+        "pdf_file": "6-dalmatinska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 229.2,
+        "pdf_y": 456.5,
+        "pdf_x_end": 356.0,
+        "pdf_y_end": 481.8,
+        "unit_file": "6-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jurišić",
@@ -12595,7 +12609,29 @@
     "death_place": "Oćestovo",
     "soldier_id": "0079000559",
     "birth_place": "Kistanje",
-    "pdf_x_end": 453.2
+    "pdf_x_end": 453.2,
+    "other_sources": [
+      {
+        "soldier_id": "0103000166",
+        "name": "Kuzet Nikola",
+        "additional_info": "iz Dobropo-Ija, poginuo u borbi na Kninu 1. XII 1944. god. LACMANOVIC DM1TAR, iz Karina. poginuo u borbi kod Kule Atlagića 11. VII 1944. god.",
+        "pdf_file": "6-dalmatinska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 73.5,
+        "pdf_y": 483.5,
+        "pdf_x_end": 200.0,
+        "pdf_y_end": 510.2,
+        "unit_file": "6-dalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "01.12.1944",
+          "place": "Knin"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lavanja",
@@ -18528,7 +18564,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Katarina-rijeka",
+    "death_place": "Katarina, Rijeka",
     "birth_year": "1913"
   },
   {
@@ -24246,7 +24282,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Rijeka-katarina",
+    "death_place": "Rijeka, Katarina",
     "birth_year": "1925"
   },
   {
@@ -25360,7 +25396,25 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079001110",
     "birth_place": "Benkovac",
-    "pdf_x_end": 264.7
+    "pdf_x_end": 264.7,
+    "death_place": "Padene",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0103000330",
+        "name": "Tintar S Đuro",
+        "additional_info": "iz Benkovca, poginuo u borbi kod Padena 16. XI 1944. god.",
+        "pdf_file": "6-dalmatinska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 225.1,
+        "pdf_y": 139.1,
+        "pdf_x_end": 351.9,
+        "pdf_y_end": 165.8,
+        "unit_file": "6-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tišina",
@@ -27982,7 +28036,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Katarina-rijeka",
+    "death_place": "Katarina, Rijeka",
     "birth_year": "1914"
   },
   {
@@ -30264,7 +30318,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Petrovo selo",
+    "death_place": "Petrovo Selo",
     "birth_year": "1920"
   },
   {

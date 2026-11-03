@@ -149,6 +149,12 @@ def scanned_names(e: dict) -> None:
         new = re.sub(r'(?<=[a-zčćžšđ])\s*[—–]\s*(?=[A-ZČĆŽŠĐ])', '-', new)
         new = re.sub(r"^['’\s]*[-—–'’]\s*(?=\w)", '', new)
         new = re.sub(r"(?<=[a-zčćžšđ])\s*[-—–]+$", '', new)
+        new = re.sub(r'\s*[(?]\s*$', '', new)                               # "Vida (", "Peleš ?"
+        if k == 'fathers_name' and re.match(r'^(?:R|Rođ)\.', new):        # the census's maiden name in the father's bracket: "Rođ.šisul", "R.cuculić"
+            new = ''
+        new = re.sub(r'(?<=[a-zčćžšđ])\.(?=[a-zčćžšđ]{3})', '-', new) if k == 'last_name' else new      # "Martinko.kramar"
+        if '-' in new and k == 'last_name':
+            new = '-'.join(p[:1].upper() + p[1:] for p in new.split('-'))
         if new[:1].islower() and new[1:2].islower() and v[:1] in "'’":
             new = new.capitalize()
         if k == 'last_name':

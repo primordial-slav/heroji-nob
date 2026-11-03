@@ -6571,7 +6571,7 @@
       }
     ],
     "party": "SKOJ",
-    "death_place": "Pod.slatina",
+    "death_place": "Pod. Slatina",
     "borrowed": [
       "death_place"
     ]
@@ -13091,11 +13091,11 @@
     ]
   },
   {
-    "last_name": "Fintar",
+    "last_name": "Pintar",
     "middle_name": "Baltazara",
     "first_name": "Baltazar",
     "fathers_name": "Baltazar",
-    "full_name": "Fintar Baltazara Baltazar",
+    "full_name": "Pintar Baltazara Baltazar",
     "additional_info": "r.1928; Subotica, Vojvodina; u KPO od rujna 1943.",
     "birth_year": "1928",
     "pdf_page": 61,
@@ -13122,7 +13122,33 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000521",
     "pdf_x_end": 459.5,
-    "birth_place": "Lonjica, Vrbovec"
+    "birth_place": "Lonjica, Vrbovec",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_type",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "učenik",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "party": "SKOJ, KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0035102394",
+        "name": "Fintić Ivana Petar",
+        "additional_info": "r. 1928, s. Lonjica, Vrbovec, Hrvat, učenik, član SKOJ-a, čl. KPJ, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 99,
+        "pdf_x": 301.5,
+        "pdf_y": 360.6,
+        "pdf_x_end": 452.9,
+        "pdf_y_end": 386.3,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Fistrić",
@@ -18256,7 +18282,7 @@
     "first_name": "Ivan",
     "fathers_name": "Ivan",
     "full_name": "Hadrović Ivana Ivan",
-    "additional_info": "r. 1919; Brckovčina, Križevci; član KP; u KPO od svibnja 1944..",
+    "additional_info": "r. 1919; Brckovčina, Križevci; član KP; u KPO od svibnja 1944.",
     "birth_year": "1919",
     "pdf_page": 23,
     "pdf_y": 193.4,
@@ -18265,10 +18291,10 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000717",
     "pdf_x_end": 281.6,
-    "birth_place": "Brckovčina, Križevci",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "party": "KPJ",
+    "birth_place": "Brckovčina, Križevci",
     "other_sources": [
       {
         "soldier_id": "0035103224",
@@ -18365,7 +18391,7 @@
     "first_name": "Ivan",
     "fathers_name": "Andrija",
     "full_name": "Hajduk Andrije Ivan",
-    "additional_info": "r. 1915; Strmec Remetinečki, Novi Marof; u KPO od 1943..",
+    "additional_info": "r. 1915; Strmec Remetinečki, Novi Marof; u KPO od 1943.",
     "birth_year": "1915",
     "pdf_page": 23,
     "pdf_y": 301.7,
@@ -19212,7 +19238,27 @@
     "soldier_id": "0058000752",
     "pdf_x_end": 458.7,
     "birth_place": "Bobovec, Klanjec",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "poljoprivrednik",
+    "other_sources": [
+      {
+        "soldier_id": "0035103151",
+        "name": "Haverla Franje Franjo",
+        "additional_info": "r. 1922, s. Bobovec, Klanjec, Hrvat, poljopriv., čl. SKOJ-a, NOV 1943, ranjen 1945.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 184,
+        "pdf_x": 282.6,
+        "pdf_y": 490.3,
+        "pdf_x_end": 434.1,
+        "pdf_y_end": 516.5,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hegedušić",
@@ -23183,7 +23229,7 @@
     "first_name": "Josip",
     "fathers_name": "Stjepan",
     "full_name": "Hušnjak Stjepana Josip",
-    "additional_info": "r. 1928; Selnica Podravska, Koprivnica; u KPO od rujna 1943; poginuo kao borac u brigadi \"Braća Radić\"; kada i gdje, nije utvrđeno..",
+    "additional_info": "r. 1928; Selnica Podravska, Koprivnica; u KPO od rujna 1943; poginuo kao borac u brigadi \"Braća Radić\"; kada i gdje, nije utvrđeno.",
     "birth_year": "1928",
     "pdf_page": 28,
     "pdf_y": 291.4,
@@ -23192,9 +23238,6 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000919",
     "pdf_x_end": 290.0,
-    "birth_place": "Selnica Podravska, Koprivnica",
-    "death_type": "poginuo",
-    "rank": "borac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "other_sources": [
@@ -23219,6 +23262,9 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
+    "birth_place": "Selnica Podravska, Koprivnica",
+    "death_type": "poginuo",
+    "rank": "borac",
     "death_date": "1943",
     "borrowed": [
       "death_date"
@@ -31605,7 +31651,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Zdelice-bjelova"
+    "death_place": "Zdelice, Bjelovar"
   },
   {
     "last_name": "Kolar",
@@ -35848,8 +35894,26 @@
         "pdf_x_end": 368.1,
         "pdf_y_end": 353.0,
         "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "0035105864",
+        "name": "Kračun Ljudevita Ljudevit",
+        "additional_info": "r. 1924.,s. Zbilj Donji, Pregrada, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 47,
+        "pdf_x": 115.0,
+        "pdf_y": 649.4,
+        "pdf_x_end": 266.5,
+        "pdf_y_end": 675.1,
+        "unit_file": "32-divizija-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "poljoprivrednik"
   },
   {
     "last_name": "Kreber",
@@ -38993,7 +39057,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Veliko trojstvo"
+    "death_place": "Veliko Trojstvo"
   },
   {
     "last_name": "Lazić",
@@ -41144,7 +41208,7 @@
     "first_name": "Dušan",
     "fathers_name": "",
     "full_name": "Macakanja Dušan",
-    "additional_info": "r. 1916; Šašava, Glina; borac BPČ; u KPO od listopada 1942; poginuo 10. siječnja 1943. u Popovcu (kraj Vočina), kao komandir čete u 17. slavonskoj brigadi..",
+    "additional_info": "r. 1916; Šašava, Glina; borac BPČ; u KPO od listopada 1942; poginuo 10. siječnja 1943. u Popovcu (kraj Vočina), kao komandir čete u 17. slavonskoj brigadi.",
     "birth_year": "1916",
     "pdf_page": 47,
     "pdf_y": 513.8,
@@ -52474,7 +52538,7 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "death_place": "V.trešnjevica",
+    "death_place": "V. Trešnjevica",
     "borrowed": [
       "death_place"
     ]
@@ -53371,11 +53435,11 @@
     "birth_place": "Zagreb"
   },
   {
-    "last_name": "Peil",
+    "last_name": "Peti",
     "middle_name": "Andrije",
     "first_name": "Dragutin",
     "fathers_name": "Andrija",
-    "full_name": "Peil Andrije Dragutin",
+    "full_name": "Peti Andrije Dragutin",
     "additional_info": "r. 1915; Drnje, Koprivnica; u KPO od 1943; poginuo 1944. kao borac u brigadi \"Braća Radić\".",
     "birth_year": "1915",
     "pdf_page": 60,
@@ -56610,7 +56674,27 @@
     "soldier_id": "0058002208",
     "pdf_x_end": 281.3,
     "birth_place": "Krapina",
-    "party": "KPJ"
+    "party": "KPJ",
+    "ethnicity": "Hrvatica",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnica",
+    "other_sources": [
+      {
+        "soldier_id": "0035109043",
+        "name": "Poljugan Josipa Barica",
+        "additional_info": "r. 1922, s. Kocjan, Krapina, Hrvatica, radnica, čl. SKOJ-a, NOV 1943, ranjena",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 207,
+        "pdf_x": 120.6,
+        "pdf_y": 296.3,
+        "pdf_x_end": 272.1,
+        "pdf_y_end": 322.5,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pondeljak",
@@ -59730,11 +59814,11 @@
     "birth_place": "Gornji Kneginec, Varaždin"
   },
   {
-    "last_name": "Ragman",
+    "last_name": "Radman",
     "middle_name": "Đure",
     "first_name": "Mijo",
     "fathers_name": "Đuro",
-    "full_name": "Ragman Đure Mijo",
+    "full_name": "Radman Đure Mijo",
     "additional_info": "r. 1910; Veliki Poganac, Koprivnica, u KPO od siječnja 1943; zbog nepopravljivog nedoličnog ponašanja osuđen na smrt i strijeljan; pokopan na groblju u Velikom Pogancu.",
     "birth_year": "1910",
     "pdf_page": 65,
@@ -62092,7 +62176,7 @@
     "first_name": "Florijan",
     "fathers_name": "Roko",
     "full_name": "Sabolić Roka Florijan",
-    "additional_info": "r. 1915; Kotoriba, Čakovec; u KPO od studenog 1943; poginuo u ožujku 1944; gdje, nije utvrđeno..",
+    "additional_info": "r. 1915; Kotoriba, Čakovec; u KPO od studenog 1943; poginuo u ožujku 1944; gdje, nije utvrđeno.",
     "birth_year": "1915",
     "pdf_page": 69,
     "pdf_y": 180.2,
@@ -62166,7 +62250,7 @@
       }
     ],
     "party": "KPJ",
-    "death_place": "Kaln.apatovac",
+    "death_place": "Kaln. Apatovac",
     "borrowed": [
       "death_place"
     ]
@@ -64588,7 +64672,7 @@
     "birth_place": "Varaždin",
     "death_type": "umro",
     "rank": "bolničarka",
-    "death_place": "Duga rjeka-kaln",
+    "death_place": "Duga rjeka, Kaln",
     "borrowed": [
       "death_place"
     ]
@@ -73580,7 +73664,7 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "death_place": "Gornja rijeka",
+    "death_place": "Gornja Rijeka",
     "borrowed": [
       "death_place"
     ]
@@ -73851,7 +73935,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Kalnik-drenovac",
+    "death_place": "Kalnik, Drenovac",
     "birth_year": "1913"
   },
   {
@@ -75790,7 +75874,7 @@
     "first_name": "Franjo",
     "fathers_name": "",
     "full_name": "Zagorec Franjo",
-    "additional_info": "iz Vidovca, Varaždin; poginuo; kada i gdje, nije utvrđeno..",
+    "additional_info": "iz Vidovca, Varaždin; poginuo; kada i gdje, nije utvrđeno.",
     "birth_year": "",
     "pdf_page": 87,
     "pdf_y": 310.6,
@@ -77449,11 +77533,11 @@
     "death_type": "poginuo"
   },
   {
-    "last_name": "Čeček",
+    "last_name": "Čićek",
     "middle_name": "Stjepana",
     "first_name": "Stjepan",
     "fathers_name": "Stjepan",
-    "full_name": "Čeček Stjepana Stjepan",
+    "full_name": "Čićek Stjepana Stjepan",
     "additional_info": "r. 1927; Husinec, Zlatar-Bistrica; u KPO od 1943; poginuo na Kalniku 1944. kao borac u brigadi „Braća Radić\".",
     "birth_year": "1927",
     "pdf_page": 12,
@@ -77467,7 +77551,39 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Kalnik",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9036000237",
+        "name": "Čiček (Stjepana) Stjepan",
+        "additional_info": "rođen 1927. u Husincu—Konjščina. poginuo u kolovozu 1944. na Kalniku kao borac Zagorske brigade.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 11,
+        "pdf_x": 33.6,
+        "pdf_y": 283.8,
+        "pdf_x_end": 388.9,
+        "pdf_y_end": 301.8,
+        "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "0035112354",
+        "name": "Čićek Stjepana Stjepan",
+        "additional_info": "r. 1927, s. Husinec, Zlatar Bistrica, Hrvat, poljopriv., NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 25,
+        "pdf_x": 302.2,
+        "pdf_y": 282.2,
+        "pdf_x_end": 453.6,
+        "pdf_y_end": 312.0,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "poljoprivrednik"
   },
   {
     "last_name": "Čikan",
@@ -84639,17 +84755,17 @@
     "first_name": "Matko",
     "fathers_name": "",
     "full_name": "Radelić Matko",
-    "additional_info": "Rukovodioci Kalničkoga partizanskog odreda: komandant 1. bataljona, od 2. 12. 1943 do 27. 12. 1943, v.d..",
+    "additional_info": "Rukovodioci Kalničkoga partizanskog odreda: komandant 1. bataljona, od 2. 12. 1943 do 27. 12. 1943, v.d.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 310.5,
     "pdf_x": 243.0,
     "pdf_y_end": 322.0,
     "pdf_file": "kalnicki-odred-kadar.pdf",
-    "unit_detail": "1. bataljon",
     "pdf_x_end": 363.8,
     "soldier_id": "0058010148",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Vungert",

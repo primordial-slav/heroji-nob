@@ -675,7 +675,7 @@
       {
         "soldier_id": "0052000045",
         "name": "Andrić Marka Jakov",
-        "additional_info": "rođen 1925. godine u selu Garevac, Modriča, SRBiH, Hrvat, zemljoradnik, stupio u NOB-u januara 1944. godine, a u Brigadu u 2. bataljon maja 1944. godine, borac, poginuo septembra 1944. godine u Turiću kod Gradačca. »",
+        "additional_info": "rođen 1925. godine u selu Garevac, Modriča, SRBiH, Hrvat, zemljoradnik, stupio u NOB-u januara 1944. godine, a u Brigadu u 2. bataljon maja 1944. godine, borac, poginuo septembra 1944. godine u Turiću kod Gradačca.",
         "pdf_file": "18-hrvatska.pdf",
         "pdf_page": 4,
         "pdf_x": 154.2,
@@ -17403,7 +17403,7 @@
       }
     ],
     "party": "KPJ",
-    "death_place": "Gornji žabar",
+    "death_place": "Gornji Žabar",
     "borrowed": [
       "death_place"
     ]
@@ -22287,7 +22287,7 @@
     "first_name": "Jovo",
     "fathers_name": "Blagoje",
     "full_name": "Marković Blagoje Jovo",
-    "additional_info": "1916, D. Žabar, Srbin, zemljoradnik, u odredu od 10. 3. 1945, borac.,",
+    "additional_info": "1916, D. Žabar, Srbin, zemljoradnik, u odredu od 10. 3. 1945, borac.",
     "birth_year": "1916",
     "pdf_page": 75,
     "pdf_y": 422.5,
@@ -22295,11 +22295,11 @@
     "pdf_y_end": 438.4,
     "pdf_file": "posavsko-trebavski-odred.pdf",
     "soldier_id": "0059000916",
+    "pdf_x_end": 345.5,
     "birth_place": "D. Žabar",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 345.5
+    "rank": "borac"
   },
   {
     "last_name": "Marković",
@@ -26664,11 +26664,11 @@
     "pdf_x_end": 337.4
   },
   {
-    "last_name": "Muezinović",
+    "last_name": "Mujezinović",
     "middle_name": "Rahmana",
     "first_name": "Alija",
     "fathers_name": "Rahman",
-    "full_name": "Muezinović Rahmana Alija",
+    "full_name": "Mujezinović Rahmana Alija",
     "additional_info": "1920, Gornji Srebrenik, Musliman, zemljoradnik, u NOB od 27. 8. 1943, u odredu od 20. 11. 1944, borac.",
     "birth_year": "1920",
     "pdf_page": 85,
@@ -36305,7 +36305,7 @@
       "death_type"
     ],
     "death_date": "1944",
-    "death_place": "Srnice d.-grada"
+    "death_place": "Srnice d., Grada"
   },
   {
     "last_name": "Sekulić",
@@ -40873,7 +40873,7 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Caparde-zvornik",
+    "death_place": "Caparde, Zvornik",
     "borrowed": [
       "death_place"
     ]
@@ -41995,7 +41995,7 @@
       "death_type"
     ],
     "death_date": "1944",
-    "death_place": "Donji žabar"
+    "death_place": "Donji Žabar"
   },
   {
     "last_name": "Tomić",
@@ -42093,7 +42093,7 @@
       "death_type"
     ],
     "death_date": "1945",
-    "death_place": "Donji žabar"
+    "death_place": "Donji Žabar"
   },
   {
     "last_name": "Topalović",
@@ -46468,7 +46468,43 @@
     "death_date": "1945",
     "rank": "zamjenik komandira čete",
     "pdf_x_end": 340.0,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Snagovo, Zvornik",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0052000280",
+        "name": "Đokić Todora Đokan",
+        "additional_info": "rođen 1912. godine u Skugriću Gornjem, Modriča, SRBiH, Srbin, zemljoradnik. U NOB-u stupio septembra 1943. godine, a u Brigadu 1944. godine, zamjenik komandira 2. čete 4. bataljona. Poginuo na Snagovu kod Zvornika, 10. 2. 1945. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 154.3,
+        "pdf_y": 220.6,
+        "pdf_x_end": 478.5,
+        "pdf_y_end": 260.7,
+        "pdf_x_left": 124.0,
+        "unit_file": "18-hrvatska-soldiers.json"
+      },
+      {
+        "soldier_id": "0052010335",
+        "name": "Đokić Đokan",
+        "additional_info": "Spisak starješinskog sastava 18. hrvatske brigade: IV bataljon, 2. četa, zamjenici komandira",
+        "pdf_file": "18-hrvatska-starjesine.pdf",
+        "pdf_page": 9,
+        "pdf_x": 120.6,
+        "pdf_y": 173.2,
+        "pdf_x_end": 180.6,
+        "pdf_y_end": 181.7,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Đonlić",

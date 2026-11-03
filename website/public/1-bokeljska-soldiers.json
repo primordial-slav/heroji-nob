@@ -2998,23 +2998,23 @@
   {
     "last_name": "Kuštro",
     "middle_name": "",
-    "first_name": "(tako",
+    "first_name": "",
     "fathers_name": "",
-    "full_name": "Kuštro (tako",
-    "additional_info": "zvani smo ga zvali); 4. bataljon, rođen u Titogradu, umro kod Đakovice od posljedica ranjavanja marta 1945. godine.",
+    "full_name": "Kuštro",
+    "additional_info": "(tako smo ga zvali); 4. bataljon, rođen u Titogradu, umro kod Đakovice od posljedica ranjavanja marta 1945. godine.",
     "birth_year": "",
-    "death_type": "umro",
     "pdf_page": 3,
     "pdf_y": 558.9,
     "pdf_x": 121.8,
     "pdf_y_end": 574.8,
     "pdf_file": "1-bokeljska.pdf",
-    "birth_place": "Titograd",
     "soldier_id": "0102000062",
+    "pdf_x_end": 473.8,
+    "birth_place": "Titograd",
+    "death_type": "umro",
     "death_date": "03.1945",
     "death_place": "Đakovica",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 473.8
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Lacić",
@@ -28687,7 +28687,7 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Jaz-budva",
+    "death_place": "Jaz, Budva",
     "birth_year": "1921"
   },
   {
@@ -48669,7 +48669,7 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Kos.mitrovica"
+    "death_place": "Kos. Mitrovica"
   },
   {
     "last_name": "Rašo",
@@ -57425,7 +57425,7 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Glogovac-drenic"
+    "death_place": "Glogovac, Drenica"
   },
   {
     "last_name": "Vlahović",
@@ -64844,7 +64844,6 @@
     "fathers_name": "Obren",
     "full_name": "Šiljegović Obrena Milutin",
     "additional_info": "3. bataljon: pom. politkom. čete",
-    "birth_year": "",
     "pdf_page": 11,
     "pdf_y": 500.4,
     "pdf_x": 319.0,
@@ -64852,7 +64851,33 @@
     "pdf_file": "1-bokeljska-spisak.pdf",
     "pdf_x_end": 475.2,
     "soldier_id": "0102013186",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Kutika, Zelenika, Herceg Novi",
+    "ethnicity": "Crnogorac",
+    "occupation": "radnik",
+    "party": "SKOJ, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0041001529",
+        "name": "Šiljegović Obrena Milutin",
+        "additional_info": "zvani Mimo; puškomitraljezac 2. čete 2. bataljona, rođen 1922, Kutika, Zelenika, Herceg Novi, radnik, Crnogorac, u NOB od 1941, član SKOJ-a, član KPJ od 1943, krajem rata zamenik političkog komesara čete.",
+        "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+        "pdf_page": 71,
+        "pdf_x": 39.8,
+        "pdf_y": 481.5,
+        "pdf_x_end": 210.0,
+        "pdf_y_end": 555.5,
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šiljegović",

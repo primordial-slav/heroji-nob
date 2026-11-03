@@ -2264,7 +2264,7 @@ HEROES_1982 = [
     ('0068000189', '9002000381', '977', 296, (27.8, 201.5, 114.2, 312.9), 'by hand: Hrovat Franca Žan, born 1915 in Cleveland; the birth year, the birthplace and the name Žan agree; the photo by the rules'),
     ('0150000112', '9002000381', '977', 296, (27.8, 201.5, 114.2, 312.9), 'by hand: Hrovat Franca Žan, born 1915 in Cleveland; the birth year, the birthplace and the name Žan agree; the photo by the rules'),
     ('0040000291', '9002000422', '977', 327, (111.3, 32.6, 194.8, 140.1), 'by hand: Jelić Milovana Mašo, born 1909; the father, the birthplace agree; the photo read from the page'),
-    ('0039100554', '9002000694', '977', 522, (214.0, 314.8, 296.5, 423.2), 'by hand: Matić Vukašina Nada, born 1924; the father, the birth year agree; the photo read from the page'),
+    ('0039000481', '9002000694', '977', 522, (214.0, 314.8, 296.5, 423.2), 'by hand: Matić Vukašina Nada, born 1924; the father, the birth year agree; the photo read from the page'),
     ('0026000558', '9002000694', '977', 522, (214.0, 314.8, 296.5, 423.2), 'by hand: Matić Vukašina Nada, born 1924; the birth year, the birthplace agree; the photo read from the page'),
     ('0001013483', '9002001274', '978', 353, (107.5, 121.9, 190.0, 230.3), 'the record holds the entry: Vukašinović Riste Stanko, born 1923; read from the page'),
     ('0026000042', '9002000058', '977', 67, (112.3, 33.6, 180.4, 134.4), 'by hand: Baruh Ilije Isidor, born 1910 in Belgrade; the father’s initial and the birthplace agree; the photo read from the page'),

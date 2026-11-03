@@ -28826,6 +28826,14 @@
         "pdf_x_end": 507.0,
         "pdf_y_end": 566.5,
         "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023000806",
+        "name": "Drljević (Đorđe) Milosava",
+        "additional_info": "rođena 1924, Tomaševo (Bijelo Polje). Crnogorka, poginula 1942. u NOBu, Kod sarajeva",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=29",
+        "source_page": 29,
+        "ref_book": "zrtve-rata-1964-crg"
       }
     ],
     "unit_detail": "3. bataljon",
@@ -28834,7 +28842,11 @@
     "death_type": "poginuo",
     "death_date": "08.1942",
     "death_place": "Zelengora",
-    "rank": "borac"
+    "rank": "borac",
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "soldier_id": "0005000530",
@@ -35630,12 +35642,12 @@
   },
   {
     "soldier_id": "0005000650",
-    "last_name": "Eogavac",
+    "last_name": "Bogavac",
     "middle_name": "",
     "first_name": "Panto",
     "additional_info": "komandir, rođen 1904, Zari, Bijelo Polje, zemljoradnik; član KPJ od 1942.",
     "fathers_name": "",
-    "full_name": "Eogavac Panto",
+    "full_name": "Bogavac Panto",
     "birth_year": "1904",
     "pdf_page": 428,
     "pdf_y": 460.8,
@@ -35656,9 +35668,23 @@
         "pdf_y": 349.6,
         "pdf_y_end": 375.8,
         "pdf_x_end": 363.8
+      },
+      {
+        "soldier_id": "0005100057",
+        "name": "Bogavac Panto",
+        "additional_info": "komandir 2. čete 4. bataljona, rođen 1904, Žari, Mojkovac, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1942. godine.",
+        "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 13.4,
+        "pdf_y": 309.3,
+        "pdf_x_end": 183.8,
+        "pdf_y_end": 350.9
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "ethnicity": "Crnogorac",
+    "rank": "komandir čete",
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "soldier_id": "0005000651",
@@ -36094,7 +36120,7 @@
       {
         "soldier_id": "9095000014",
         "name": "Vidaković Neđeljka Branko",
-        "additional_info": "Nosioci Partizanske spomenice 1941.: 14. Vidaković (Neđeljka) Branko, rođen 1922, Mojkovac, srez bjelopoljski, zemljoradnik. Član SKOJ-a od 1939, član KPJ od 1941. Borac Bjelopoljskog NOP odreda. Borac 4. bataljona 3. proleterske (sandžačke) brigade, borac 4. proleterske (crnogorske) brigade, rukovodilac kulturne ekipe ZAVNOS–a, oficir bezbjednosti.\"",
+        "additional_info": "Nosioci Partizanske spomenice 1941.: 14. Vidaković (Neđeljka) Branko, rođen 1922, Mojkovac, srez bjelopoljski, zemljoradnik. Član SKOJ-a od 1939, član KPJ od 1941. Borac Bjelopoljskog NOP odreda. Borac 4. bataljona 3. proleterske (sandžačke) brigade, borac 4. proleterske (crnogorske) brigade, rukovodilac kulturne ekipe ZAVNOS–a, oficir bezbjednosti.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00008716&pg_seq=738",
         "source_page": 735,
         "ref_book": "bijelo-polje"
@@ -47565,11 +47591,11 @@
     "pdf_x_end": 354.2
   },
   {
-    "last_name": "Anbušić",
+    "last_name": "Anđušić",
     "middle_name": "Mihajila",
     "first_name": "Vukoman",
     "fathers_name": "Mihajilo",
-    "full_name": "Anbušić Mihajila Vukoman",
+    "full_name": "Anđušić Mihajila Vukoman",
     "additional_info": "borac 1. bataljona, 1919, Lađana, Pljevlja, zemljoradnik. U NOB od septembra 1944, borac 3. brigade od 2. februara 1945. Poginuo u borbi protiv Nijemaca 14. marta 1945, Bemanovići, sahranjen u Carevim Vodama, Pale, kod Sarajeva.",
     "birth_year": "1919",
     "pdf_page": 87,
@@ -47584,7 +47610,48 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 332.5,
-    "death_place": "Bemanovići"
+    "death_place": "Bemanovići",
+    "other_sources": [
+      {
+        "soldier_id": "9060000017",
+        "name": "Anđušić Mihaila Vukoman",
+        "additional_info": "Pali borci NOR-a pljevaljskog sreza: rođen 1919, Lađana, Pljevlja, zemljoradnik. U NOB-u od septembra 1944. Borac 2. bataljona 3. proleterske (sandžačke) brigade. Poginuo u borbi protiv Nijemaca u Palama, kod Sarajeva, 28. marta 1945.",
+        "pdf_file": "prilog-u-krvi-pali-borci.pdf",
+        "pdf_page": 6,
+        "pdf_x": 63.5,
+        "pdf_y": 263.5,
+        "pdf_x_end": 344.9,
+        "pdf_y_end": 305.1,
+        "pdf_x_left": 39.0,
+        "ref_book": "prilog-u-krvi-pali-borci"
+      },
+      {
+        "soldier_id": "9035011230",
+        "name": "Anđušić M. Vukoman",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Pljevlja: godina rođenja 1919; mjesto rođenja Lađani; godina smrti 1945; mjesto pogibije Pale",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 279,
+        "pdf_x": 103.4,
+        "pdf_y": 222.2,
+        "pdf_x_end": 482.0,
+        "pdf_y_end": 232.4,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023005080",
+        "name": "Anđušić (Mikailo) Vukoman",
+        "additional_info": "rođen 1919, Lađana (Pljevlja). Crnogorac, poginuo 1945. u NOBu, Romanija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=160",
+        "source_page": 160,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ],
+    "birth_place": "Lađani, Pljevlja",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Andrejić",
@@ -55228,7 +55295,7 @@
       "ethnicity"
     ],
     "ethnicity": "Crnogorac",
-    "death_place": "Nova varoš"
+    "death_place": "Nova Varoš"
   },
   {
     "last_name": "Golubović",
@@ -58531,7 +58598,7 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_place": "Priboj na limu",
+    "death_place": "Priboj na Limu",
     "birth_year": "1921"
   },
   {
@@ -64329,7 +64396,7 @@
     "first_name": "Vlastimir",
     "fathers_name": "Blaž",
     "full_name": "Medojević Blaža Vlastimir",
-    "additional_info": "borac, 1926, Stevanovac, Mojkovac, zemljoradnik, član SKOJ-a. Borac 3. brigade od septembra Poginuo u borbi protiv Nijemaca i četnika, u Trnovicama, Pljevlja, 1944..",
+    "additional_info": "borac, 1926, Stevanovac, Mojkovac, zemljoradnik, član SKOJ-a. Borac 3. brigade od septembra Poginuo u borbi protiv Nijemaca i četnika, u Trnovicama, Pljevlja, 1944.",
     "birth_year": "1926",
     "pdf_page": 72,
     "pdf_y": 442.6,
@@ -64337,13 +64404,13 @@
     "pdf_y_end": 476.5,
     "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
     "soldier_id": "0005010649",
+    "pdf_x_end": 358.0,
+    "party": "SKOJ",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
-    "pdf_x_end": 358.0,
     "death_place": "Trnovice, Pljevlja",
-    "party": "SKOJ",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9023003682",
@@ -73427,7 +73494,7 @@
     ],
     "ethnicity": "Srbin",
     "death_date": "1944",
-    "death_place": "Bijelo brdo"
+    "death_place": "Bijelo Brdo"
   },
   {
     "last_name": "Rovčanin",
@@ -80158,7 +80225,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Kamena gora",
+    "death_place": "Kamena Gora",
     "birth_year": "1928"
   },
   {
@@ -82042,11 +82109,11 @@
     "unit_detail": "3. bataljon"
   },
   {
-    "last_name": "Škekić",
+    "last_name": "Šćekić",
     "middle_name": "Radivoja",
     "first_name": "Petar",
     "fathers_name": "Radivoje",
-    "full_name": "Škekić Radivoja Petar",
+    "full_name": "Šćekić Radivoja Petar",
     "additional_info": "desetar 4. bat„ 1924, Pape, Bijelo Polje, borac 3. brigade od 1943. Poginuo u borbi protiv Nijemaca, 14. novembra 1944, u Dumnjanima, Prijepolje, sahranjen u Kašicama.",
     "birth_year": "1924",
     "pdf_page": 80,
@@ -82060,7 +82127,25 @@
     "rank": "desetar",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 359.6,
-    "death_place": "u Dumnjanima, Prijepolje"
+    "death_place": "u Dumnjanima, Prijepolje",
+    "other_sources": [
+      {
+        "soldier_id": "9035003129",
+        "name": "Šćekić Radivojev Petar",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Bijelo Polje: godina rođenja 1924; mjesto rođenja Potkrajci; godina smrti 1944; mjesto pogibije Prijepolje",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 78,
+        "pdf_x": 65.7,
+        "pdf_y": 611.5,
+        "pdf_x_end": 470.9,
+        "pdf_y_end": 621.5,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      }
+    ],
+    "birth_place": "Potkrajci, Bijelo Polje",
+    "borrowed": [
+      "birth_place"
+    ]
   },
   {
     "last_name": "Škević",
@@ -84562,28 +84647,6 @@
   },
   {
     "last_name": "Bogavac",
-    "middle_name": "",
-    "first_name": "Panto",
-    "fathers_name": "",
-    "full_name": "Bogavac Panto",
-    "additional_info": "komandir 2. čete 4. bataljona, rođen 1904, Žari, Mojkovac, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1942. godine.",
-    "birth_year": "1904",
-    "pdf_page": 4,
-    "pdf_y": 309.3,
-    "pdf_x": 13.4,
-    "pdf_y_end": 350.9,
-    "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
-    "soldier_id": "0005100057",
-    "birth_place": "Žari, Mojkovac",
-    "ethnicity": "Crnogorac",
-    "occupation": "zemljoradnik",
-    "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 183.8,
-    "rank": "komandir čete",
-    "party": "KPJ 1942"
-  },
-  {
-    "last_name": "Bogavac",
     "middle_name": "Pante",
     "first_name": "Radosav",
     "fathers_name": "Panta",
@@ -87072,11 +87135,11 @@
     "pdf_x_end": 188.8
   },
   {
-    "last_name": "Goiubović",
+    "last_name": "Golubović",
     "middle_name": "Marinka",
     "first_name": "Luka",
     "fathers_name": "Marinko",
-    "full_name": "Goiubović Marinka Luka",
+    "full_name": "Golubović Marinka Luka",
     "additional_info": "borac ' topovskog voda brigade, rođen 1925. godine, Maoče, Pljevlja, zemljoradnik, Crnogorac.",
     "birth_year": "1925",
     "pdf_page": 17,
@@ -98020,11 +98083,11 @@
     "pdf_x_end": 192.1
   },
   {
-    "last_name": "Veahović",
+    "last_name": "Vlahović",
     "middle_name": "R",
     "first_name": "Jagoš",
     "fathers_name": "R",
-    "full_name": "Veahović R Jagoš",
+    "full_name": "Vlahović R Jagoš",
     "additional_info": "borac 4. bataljona, rođen 1890, Kolašin, zemljoradnik, Crnojgorac.",
     "birth_year": "1890",
     "pdf_page": 59,
@@ -98040,11 +98103,11 @@
     "pdf_x_end": 211.5
   },
   {
-    "last_name": "Veeiić",
+    "last_name": "Vesić",
     "middle_name": "Dragoja",
     "first_name": "Ljubomir",
     "fathers_name": "Dragoje",
-    "full_name": "Veeiić Dragoja Ljubomir",
+    "full_name": "Vesić Dragoja Ljubomir",
     "additional_info": "zvani Ljubo; zamenik komandira prateće čete 4. bataljona, rođen 1915, Berane, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od septembra 1941, krajem rata komandant 7. srpske brigade.",
     "birth_year": "1915",
     "pdf_page": 58,
@@ -98112,7 +98175,7 @@
     "first_name": "Dušan",
     "fathers_name": "Luka",
     "full_name": "Velimir Luke Dušan",
-    "additional_info": "borac 2. bataljona, rođen 1923, Rilić, Kupres, zemljoradnik, Srbin, u NOB od jula 1942, član SKOJ-a od marta 1943.'",
+    "additional_info": "borac 2. bataljona, rođen 1923, Rilić, Kupres, zemljoradnik, Srbin, u NOB od jula 1942, član SKOJ-a od marta 1943.",
     "birth_year": "1923",
     "pdf_page": 58,
     "pdf_y": 300.9,
@@ -98120,13 +98183,13 @@
     "pdf_y_end": 343.2,
     "pdf_file": "borci-sutjeske-treca-proleterska.pdf",
     "soldier_id": "0005100976",
+    "pdf_x_end": 375.3,
+    "party": "SKOJ 1943",
     "birth_place": "Rilić, Kupres",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 375.3,
-    "party": "SKOJ 1943"
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Vidaković",

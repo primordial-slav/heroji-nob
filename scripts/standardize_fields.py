@@ -665,6 +665,11 @@ PLACE_READ = {
 }
 
 
+# the census's place column in one form ("Doboj-tuzla" Doboj, Tuzla; "Banja luka" Banja Luka; "D.lapac" D. Lapac; a value cut at its 15 characters): make_census_forms.py
+_forms_path = Path(__file__).resolve().parent.parent / 'data-extraction' / 'places' / 'census_forms.json'
+CENSUS_FORMS = json.loads(_forms_path.read_text(encoding='utf-8')) if _forms_path.exists() else {}
+
+
 def birth_place_form(value: str) -> str:
     v = PLACE_READ.get(value.strip(), value)
     v = scan_marks(LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], PART_OF.sub('', v)).strip(), birth=True)
@@ -684,6 +689,7 @@ def place_form(value: str) -> str | None:
     v = YEAR_WORD_TAIL.sub('', v).strip(' ,.')
     v = scan_marks(v)
     v = PLACE_READ.get(v, v)
+    v = CENSUS_FORMS.get(v, v)
     if UNKNOWN_PLACE.match(v) or UNIT_COLUMN.match(v) or not v:
         return None
     m = COMMA_GLUED.match(v)

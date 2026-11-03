@@ -3002,11 +3002,11 @@
     "pdf_x_end": 356.1
   },
   {
-    "last_name": "Juicić",
+    "last_name": "Juričić",
     "middle_name": "",
     "first_name": "Pave",
     "fathers_name": "",
-    "full_name": "Juicić Pave",
+    "full_name": "Juričić Pave",
     "additional_info": "iz Ražanca, poginuo u borbi kod Pađena 13. XI 1944. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -3019,7 +3019,21 @@
     "death_place": "Pađene",
     "birth_place": "Ražanac",
     "soldier_id": "0103000123",
-    "pdf_x_end": 356.0
+    "pdf_x_end": 356.0,
+    "other_sources": [
+      {
+        "soldier_id": "0079000408",
+        "name": "Juričić Pave",
+        "additional_info": "iz Ražanca, u borbi na Pađenima, 13. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 125.0,
+        "pdf_y": 242.0,
+        "pdf_x_end": 276.9,
+        "pdf_y_end": 262.5,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jurcev",
@@ -4140,11 +4154,11 @@
     "pdf_x_end": 200.0
   },
   {
-    "last_name": "Kusit",
+    "last_name": "Kuzet",
     "middle_name": "",
     "first_name": "Nikola",
     "fathers_name": "",
-    "full_name": "Kusit Nikola",
+    "full_name": "Kuzet Nikola",
     "additional_info": "iz Dobropo-Ija, poginuo u borbi na Kninu 1. XII 1944. god. LACMANOVIC DM1TAR, iz Karina. poginuo u borbi kod Kule Atlagića 11. VII 1944. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -4156,7 +4170,33 @@
     "pdf_file": "6-dalmatinska.pdf",
     "death_place": "Knin",
     "soldier_id": "0103000166",
-    "pdf_x_end": 200.0
+    "pdf_x_end": 200.0,
+    "birth_place": "Kistanje",
+    "borrowed": [
+      "birth_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0079000559",
+        "name": "Kuzet Nikola",
+        "additional_info": "iz Kistanja, u borbi za Oćestovo, 3. XII 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 301.3,
+        "pdf_y": 485.9,
+        "pdf_x_end": 453.2,
+        "pdf_y_end": 506.2,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.12.1944",
+          "place": "Oćestovo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kutle",
@@ -5395,11 +5435,11 @@
     "pdf_x_end": 339.4
   },
   {
-    "last_name": "Mtkin",
+    "last_name": "Mikin",
     "middle_name": "",
     "first_name": "Pero",
     "fathers_name": "",
-    "full_name": "Mtkin Pero",
+    "full_name": "Mikin Pero",
     "additional_info": "iz Betine. poginuo u borbi za Knin 3. XII 1944. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -6946,9 +6986,8 @@
     "first_name": "Stjepan",
     "fathers_name": "",
     "full_name": "Rucić Stjepan",
-    "additional_info": "iz Novigrada, poginuo u borbi za Prevjes Ž. XI 1944. god..",
+    "additional_info": "iz Novigrada, poginuo u borbi za Prevjes Ž. XI 1944. god.",
     "birth_year": "",
-    "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 166.8,
     "pdf_x": 73.2,
@@ -6957,6 +6996,7 @@
     "birth_place": "Novigrad",
     "soldier_id": "0103000273",
     "pdf_x_end": 199.7,
+    "death_type": "poginuo",
     "death_date": "02.11.1944",
     "death_place": "Prevjes"
   },
@@ -8371,11 +8411,11 @@
     "pdf_x_end": 352.1
   },
   {
-    "last_name": "Tentar",
-    "middle_name": "",
+    "last_name": "Tintar",
+    "middle_name": "S",
     "first_name": "Đuro",
-    "fathers_name": "",
-    "full_name": "Tentar Đuro",
+    "fathers_name": "S",
+    "full_name": "Tintar S Đuro",
     "additional_info": "iz Benkovca, poginuo u borbi kod Padena 16. XI 1944. god.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -8388,7 +8428,21 @@
     "death_place": "Padene",
     "birth_place": "Benkovac",
     "soldier_id": "0103000330",
-    "pdf_x_end": 351.9
+    "pdf_x_end": 351.9,
+    "other_sources": [
+      {
+        "soldier_id": "0079001110",
+        "name": "Tintar S Đuro",
+        "additional_info": "iz Benkovca, u borbi na Padenima, 16. XI 1944.",
+        "pdf_file": "19-sjevernodalmatinska.pdf",
+        "pdf_page": 42,
+        "pdf_x": 111.4,
+        "pdf_y": 241.6,
+        "pdf_x_end": 264.7,
+        "pdf_y_end": 262.7,
+        "unit_file": "19-sjevernodalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ticina",

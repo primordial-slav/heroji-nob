@@ -294,7 +294,7 @@
     "first_name": "Aleksandar",
     "fathers_name": "",
     "full_name": "Andrić Aleksandar",
-    "additional_info": "Bogatić (Mačvanski srez): r. 1916, Crna Bara, osnovna škola, mesarski radnik, siromašan; porodica: roditelji i dva brata; stupio pol. avgusta 1941, kurir Štaba Odreda; uhvaćen 27/28. 12. 1941. u Beloj Reci; streljan 30. I. 1942. u š. logoru „radi učešća u pobuni.\"",
+    "additional_info": "Bogatić (Mačvanski srez): r. 1916, Crna Bara, osnovna škola, mesarski radnik, siromašan; porodica: roditelji i dva brata; stupio pol. avgusta 1941, kurir Štaba Odreda; uhvaćen 27/28. 12. 1941. u Beloj Reci; streljan 30. I. 1942. u š. logoru „radi učešća u pobuni.",
     "birth_year": "1916",
     "occupation": "mesarski radnik",
     "birth_place": "Crna Bara",
@@ -302,8 +302,8 @@
     "soldier_id": "0109000018",
     "death_type": "streljan",
     "death_date": "30.01.1942",
-    "rank": "kurir",
-    "death_place": "u š. logoru"
+    "death_place": "u š. logoru",
+    "rank": "kurir"
   },
   {
     "last_name": "Andrić",
@@ -6115,18 +6115,36 @@
     "party": "KPJ"
   },
   {
-    "last_name": "Ivanksvić",
+    "last_name": "Ivanković",
     "middle_name": "",
     "first_name": "Radovan",
     "fathers_name": "",
-    "full_name": "Ivanksvić Radovan",
+    "full_name": "Ivanković Radovan",
     "additional_info": "Zasavica (Mačvanski srez): r. 1920, osnovna škola, zemljoradnik, siromašan; iorodica: roditelji, 2 brata i sestra; stupio poč. septembra 1941, Bombaška četa; bio do 28. 9. 1941, uhvaćen, streljan u š. logoru.",
     "birth_year": "1920",
     "occupation": "zemljoradnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000389",
     "death_type": "streljan",
-    "death_place": "Šabac"
+    "death_place": "Šabac",
+    "other_sources": [
+      {
+        "soldier_id": "9027003144",
+        "name": "Ivanković (Stanisav) Radovan",
+        "additional_info": "rođen 1920, Zasavica (Mačvanska Mitrovica). Srbin, poginuo 1941. u NOBu, Šabac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=148",
+        "source_page": 148,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "birth_place": "Zasavica, Mačvanska Mitrovica",
+    "borrowed": [
+      "birth_place",
+      "death_date",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_date": "1941"
   },
   {
     "last_name": "Ivanović",
@@ -6410,7 +6428,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Bijeljina-dragaljevac"
+    "death_place": "Bijeljina, Dragaljevac"
   },
   {
     "last_name": "Janjić",
@@ -7657,7 +7675,7 @@
     "first_name": "Slobodan",
     "fathers_name": "",
     "full_name": "Jovanović Slobodan",
-    "additional_info": "Semberijska četa: zvani (vidi Lešnica).; ",
+    "additional_info": "Semberijska četa: zvani (vidi Lešnica).;",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000484"
@@ -12645,7 +12663,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Duge njive-bos"
+    "death_place": "Duge Njive, Bosna"
   },
   {
     "last_name": "Mirković",
@@ -13030,7 +13048,7 @@
     "first_name": "Živorad",
     "fathers_name": "",
     "full_name": "Mitrović Živorad",
-    "additional_info": "Zasavica (Mačvanski srez): r. 1920, osnovna škola, radnik, siromašan; porodica: roditelji, brat i seotra..,",
+    "additional_info": "Zasavica (Mačvanski srez): r. 1920, osnovna škola, radnik, siromašan; porodica: roditelji, brat i seotra.",
     "birth_year": "1920",
     "occupation": "radnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
@@ -14039,7 +14057,7 @@
     "first_name": "Aleksa",
     "fathers_name": "",
     "full_name": "Osatović Aleksa",
-    "additional_info": "Crna Bara (Mačvanski srez): iz Jarebica (Jadar), žandarm. podnarednik; stupio 10. 8. 1941; iapustio Odred,..",
+    "additional_info": "Crna Bara (Mačvanski srez): iz Jarebica (Jadar), žandarm. podnarednik; stupio 10. 8. 1941; iapustio Odred,.",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000911",
@@ -16520,7 +16538,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Prevoj-čačak"
+    "death_place": "Prevoj, Čačak"
   },
   {
     "last_name": "Prljić",
@@ -21916,7 +21934,7 @@
     "first_name": "Vladimir",
     "fathers_name": "",
     "full_name": "Vesić Vladimir",
-    "additional_info": "Glogovac (Mačvanski srez): zvani Lasin -.. stupio 8. 9. 1941 pozadinski delovi u Petkovici; pred napad na Šabac otac ga vratio kući sa dozvolom Štaba Odreda.; ",
+    "additional_info": "Glogovac (Mačvanski srez): zvani Lasin -.. stupio 8. 9. 1941 pozadinski delovi u Petkovici; pred napad na Šabac otac ga vratio kući sa dozvolom Štaba Odreda.;",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109001412"
@@ -24136,7 +24154,7 @@
     "first_name": "Dragutin",
     "fathers_name": "",
     "full_name": "Đukanović Dragutin",
-    "additional_info": "Šabac (Pocerski srez): zvani Pinda; r. u Beogradu. učenik učiteljske škole; stuiio 12. 8. 1941; član Sko ja,..",
+    "additional_info": "Šabac (Pocerski srez): zvani Pinda; r. u Beogradu. učenik učiteljske škole; stuiio 12. 8. 1941; član Sko ja,.",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109001556"

@@ -2719,11 +2719,11 @@
     ]
   },
   {
-    "last_name": "Čirkovič",
+    "last_name": "Čurković",
     "first_name": "Petar",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Čirkovič Petar",
+    "full_name": "Čurković Petar",
     "additional_info": "..., Split, 4. bat., borac, poginuo 6. 11. 1943, Ugljani, Trilj",
     "birth_year": "",
     "soldier_id": "0008000106",
@@ -8427,7 +8427,7 @@
       "ethnicity"
     ],
     "death_date": "1943",
-    "death_place": "Kamen.split"
+    "death_place": "Kamen. Split"
   },
   {
     "last_name": "Milanović",
@@ -15944,11 +15944,11 @@
     "unit_detail": "2. bataljon"
   },
   {
-    "last_name": "Bakač",
+    "last_name": "Barac",
     "first_name": "Ivan",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Bakač Ivan",
+    "full_name": "Barac Ivan",
     "additional_info": ". .., . . . , . . . , borac",
     "birth_year": "",
     "soldier_id": "0008000624",
@@ -20983,11 +20983,11 @@
     "unit_detail": "3. četa, 3. bataljon"
   },
   {
-    "last_name": "Brecić",
+    "last_name": "Brčić",
     "first_name": "Osman",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Brecić Osman",
+    "full_name": "Brčić Osman",
     "additional_info": ". . ., . . ., 2. bat., borac",
     "birth_year": "",
     "soldier_id": "0008000881",
@@ -26327,11 +26327,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "Dupe",
+    "last_name": "Dude",
     "first_name": "Petar",
     "middle_name": "Luke",
     "fathers_name": "Luka",
-    "full_name": "Dupe Luke Petar",
+    "full_name": "Dude Luke Petar",
     "additional_info": "1914, Solin, Split, . . ., borac, ranjen 5. 12. .-£944, Zrmanja",
     "birth_year": "1914",
     "soldier_id": "0008001154",
@@ -31320,11 +31320,11 @@
   },
   {
     "last_name": "Hrpoštan",
-    "first_name": "Dr",
+    "first_name": "",
     "middle_name": "",
     "fathers_name": "",
-    "full_name": "Hrpoštan Dr",
-    "additional_info": "..,..,.. , borac",
+    "full_name": "Hrpoštan",
+    "additional_info": "dr; ..,..,.. , borac",
     "birth_year": "",
     "soldier_id": "0008001409",
     "pdf_page": 42,
@@ -37031,13 +37031,12 @@
     "pdf_x_end": 206.9
   },
   {
-    "last_name": "Kacatović",
+    "last_name": "Krcatović",
     "first_name": "Luka",
     "middle_name": "Ivana",
     "fathers_name": "Ivan",
-    "full_name": "Kacatović Ivana Luka",
+    "full_name": "Krcatović Ivana Luka",
     "additional_info": ".., .., borac, nestao 17. 11. 1944. kod Gornjeg Brišnika",
-    "birth_year": "",
     "soldier_id": "0008001698",
     "pdf_page": 49,
     "pdf_y": 137.6,
@@ -37048,7 +37047,32 @@
     "death_type": "nestao",
     "death_date": "17.11.1944",
     "death_place": "Gornji Brišnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_year": "1903",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "birth_place": "Ostrvica, Omiš",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0148001341",
+        "name": "Krcatović Ivana Luka",
+        "additional_info": "borac Mosorskog PO. Rođen 1903, Ostrvica, Omiš, zemljoradnik, Hrvat. U Mosorski PO stupio 24. kolovoza 1944. i u listopadu prekomandiran u 4. dalmatinsku (splitsku) brigadu.",
+        "pdf_file": "mosorski-odred.pdf",
+        "pdf_page": 89,
+        "pdf_x": 279.8,
+        "pdf_y": 567.5,
+        "pdf_x_end": 620.4,
+        "pdf_y_end": 592.3,
+        "pdf_x_left": 263.0,
+        "unit_file": "mosorski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Krcatović",
@@ -49668,7 +49692,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Čitluk-mostar"
+    "death_place": "Čitluk, Mostar"
   },
   {
     "soldier_id": "0008003120",
@@ -53392,7 +53416,41 @@
     "pdf_x_end": 378.6,
     "birth_place": "Split",
     "rank": "pomoćnik komesara bataljona",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "radnik",
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0036101035",
+        "name": "Rosandić Petra Ante",
+        "additional_info": "zamenik političkog komesara 2. čete 1. bataljona, ođen 1918, Split, radnik, Hrvat, u NOB )d 1941, član KPJ od aprila 1942, kraem rata član politodela 19. divizije.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 54,
+        "pdf_x": 10.5,
+        "pdf_y": 455.6,
+        "pdf_x_end": 169.0,
+        "pdf_y_end": 508.9,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036030111",
+        "name": "Rosandić Ante",
+        "additional_info": "Promjene u komandnom sastavu 1. dalmatinske brigade: zamjenik političkog komesara 1. bataljona »Ante Jonić«, od jula do novembra 1943. godine.",
+        "pdf_file": "1-dalmatinska-komandni-sastav.pdf",
+        "pdf_page": 4,
+        "pdf_x": 58.1,
+        "pdf_y": 67.4,
+        "pdf_x_end": 147.0,
+        "pdf_y_end": 77.4,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rosandić",
@@ -55170,11 +55228,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "Sogol",
+    "last_name": "Sokol",
     "first_name": "Ilija",
     "middle_name": "Ivana",
     "fathers_name": "Ivan",
-    "full_name": "Sogol Ivana Ilija",
+    "full_name": "Sokol Ivana Ilija",
     "additional_info": ". . , K. Sućurac, Split, .., borac; 2090. -SÖKOL (GRGE) STIPE, r. . . , K. Sućurac, Split, 3. bat, borac",
     "birth_year": "",
     "soldier_id": "0008002597",
