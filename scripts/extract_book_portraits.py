@@ -1213,7 +1213,7 @@ DALMATINCI = [
     ('0001004320', 89, (92.3, 147.6, 206.4, 273.6), 'the photo set in the entry "JERKOVIĆ Jure MIJO MIJUTINA" (its text runs above and below it); born 1915 in Kula, as the record'),
     ('0001004321', 89, (220.2, 283.9, 329.0, 408.1), 'the photo set in the entry "JERKOVIĆ Vlade MLADENKO" (its text runs above and below it); born 1925 in Bogomo, as the record'),
     ('0001004325', 89, (340.2, 433.4, 453.3, 558.7), 'the photo set in the entry "JERKOVIĆ Marka TOMO" (its text runs above and below it)'),
-    ('0001100506', 90, (136.4, 560.4, 244.8, 686.4), 'the photo set in the entry "JOŠIĆ Todora ĐURO" (its text runs above and below it)'),
+    ('0001004456', 90, (136.4, 560.4, 244.8, 686.4), 'the photo set in the entry "JOŠIĆ Todora ĐURO" (its text runs above and below it)'),
     ('0001004815', 91, (222.8, 141.6, 337.3, 268.7), 'the photo set in the entry "JUNAKOVIĆ Martina MILE" (its text runs above and below it); born 1922 in Dubrava, as the record'),
     ('0001004820', 92, (248.2, 360.6, 360.8, 481.9), 'the photo set in the entry "JURAN Krste ANTE (Toni Bukarin)" (its text runs above and below it)'),
     ('0001004827', 93, (219.7, 260.4, 332.4, 377.4), 'the photo set in the entry "JURAT Gušte MATE" (its text runs above and below it)'),

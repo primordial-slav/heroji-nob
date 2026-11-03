@@ -520,7 +520,8 @@ def main():
                     body = f'{nick}; {body}' if nick.startswith('rođ.') else f'zvani {nick}; {body}'
                 if table:
                     # the list holds him already, under a name its parser read, or a row marked no one of ours: the host is only cut
-                    held = next((r for r in recs if r is not host and len(body) >= 25 and cleaned(r.get('additional_info') or '').lstrip(' ,.').startswith(body[:40])), None)
+                    held = next((r for r in recs if r is not host and len(body) >= 25 and fold(r.get('last_name') or '')[:4] == fold(last)[:4] and fold(r.get('first_name') or '') == fold(given)
+                                 and cleaned(r.get('additional_info') or '').lstrip(' ,.').startswith(body[:40])), None)
                     if held or not last:
                         print('   HELD', heading, '|', held.get('full_name') if held else 'no record', '|', body[:60])
                         continue

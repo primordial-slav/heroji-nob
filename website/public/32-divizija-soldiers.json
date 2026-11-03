@@ -14269,7 +14269,8 @@
         "pdf_x": 432.8,
         "pdf_y": 818.0,
         "pdf_x_end": 597.9,
-        "pdf_y_end": 874.2,
+        "pdf_y_end": 874.5,
+        "pdf_x_left": 240.1,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -19140,7 +19141,22 @@
     "pdf_file": "32-divizija.pdf",
     "soldier_id": "0035002608",
     "death_type": "poginuo",
-    "pdf_x_end": 562.2
+    "pdf_x_end": 562.2,
+    "other_sources": [
+      {
+        "soldier_id": "0035103297",
+        "name": "Hanak S Josip",
+        "additional_info": "Hrvat, poginuo",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 34,
+        "pdf_x": 302.4,
+        "pdf_y": 279.1,
+        "pdf_x_end": 412.2,
+        "pdf_y_end": 286.1
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "unit_detail": "udarna brigada Braća Radić"
   },
   {
     "last_name": "Hanić",
@@ -42404,7 +42420,22 @@
     "pdf_y_end": 494.1,
     "pdf_file": "32-divizija.pdf",
     "soldier_id": "0035005584",
-    "pdf_x_end": 444.1
+    "pdf_x_end": 444.1,
+    "other_sources": [
+      {
+        "soldier_id": "0035107412",
+        "name": "Milacki D Đuro",
+        "additional_info": "Hrvat",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 118,
+        "pdf_x": 118.0,
+        "pdf_y": 642.4,
+        "pdf_x_end": 203.4,
+        "pdf_y_end": 649.4
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "unit_detail": "brigada Matija Gubec"
   },
   {
     "last_name": "Milak",
@@ -43364,11 +43395,11 @@
     "pdf_x_end": 141.0
   },
   {
-    "last_name": "Molinovi",
+    "last_name": "Molinović",
     "middle_name": "",
     "first_name": "Mato",
     "fathers_name": "",
-    "full_name": "Molinovi Mato",
+    "full_name": "Molinović Mato",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 27,
@@ -67844,9 +67875,9 @@
   {
     "last_name": "Šogorec",
     "middle_name": "",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "",
-    "full_name": "Šogorec Dura",
+    "full_name": "Šogorec Đura",
     "additional_info": "poginuo u NOB",
     "birth_year": "",
     "pdf_page": 36,
@@ -73645,7 +73676,7 @@
     "first_name": "Jovo",
     "fathers_name": "M",
     "full_name": "Amišić M Jovo",
-    "additional_info": "M., Srbin",
+    "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 16,
@@ -73667,9 +73698,9 @@
         "pdf_y_end": 773.5
       }
     ],
-    "ethnicity": "Srbin",
     "pdf_x_end": 376.4,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Andanović",
@@ -74020,11 +74051,11 @@
   },
   {
     "last_name": "Andrijašević",
-    "middle_name": "",
+    "middle_name": "I",
     "first_name": "Mato",
-    "fathers_name": "",
-    "full_name": "Andrijašević Mato",
-    "additional_info": "I., Hrvat",
+    "fathers_name": "I",
+    "full_name": "Andrijašević I Mato",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 170,
@@ -74046,9 +74077,9 @@
         "pdf_y_end": 492.7
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 210.0,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Andrić",
@@ -76860,9 +76891,9 @@
     "first_name": "Ivan",
     "fathers_name": "Luka",
     "full_name": "Babec Luke Ivan",
-    "additional_info": "r. 1922, s. Podravske Sesvete, Đurđevac, Hrvat, poljoprivrednik, NOV 1944. BABIC: ANTE, r. 1923, s. Voštanec, Sinj, Hrvat, radnik, čl. KPJ, NOV 1943.",
+    "additional_info": "r. 1922, s. Podravske Sesvete, Đurđevac, Hrvat, poljoprivrednik, NOV 1944.",
     "birth_year": "1922",
-    "unit_detail": "prištapske jedinice",
+    "unit_detail": "",
     "pdf_page": 4,
     "pdf_y": 657.3,
     "pdf_x": 118.2,
@@ -76870,10 +76901,30 @@
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035100157",
     "pdf_x_end": 270.0,
+    "party": "",
     "birth_place": "Podravske Sesvete, Đurđevac",
     "ethnicity": "Hrvat",
-    "occupation": "poljoprivrednik",
-    "party": "KPJ"
+    "occupation": "poljoprivrednik"
+  },
+  {
+    "soldier_id": "0035114249",
+    "last_name": "Babić",
+    "middle_name": "",
+    "first_name": "Ante",
+    "fathers_name": "",
+    "full_name": "Babić Ante",
+    "additional_info": "r. 1923, s. Voštanec, Sinj, Hrvat, radnik, čl. KPJ, NOV 1943.",
+    "birth_year": "",
+    "pdf_file": "32-divizija-borci.pdf",
+    "pdf_page": 4,
+    "pdf_x": 301.3,
+    "pdf_y": 133.1,
+    "birth_place": "Voštanec, Sinj",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "party": "KPJ",
+    "pdf_x_end": 452.5,
+    "pdf_y_end": 147.8
   },
   {
     "soldier_id": "0035113491",
@@ -77809,7 +77860,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 458.5,
-    "birth_place": "Krušlje-' vac, Vrbovec"
+    "birth_place": "Krušljevac, Vrbovec"
   },
   {
     "last_name": "Badijan",
@@ -78334,7 +78385,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "pdf_x_end": 450.1,
-    "birth_place": "Hra- t stovsko, Ludbreg",
+    "birth_place": "Hrastovsko, Ludbreg",
     "party": "SKOJ",
     "occupation": "domaćica",
     "other_sources": [
@@ -79357,11 +79408,11 @@
   },
   {
     "last_name": "Balala",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Martin",
-    "fathers_name": "",
-    "full_name": "Balala Martin",
-    "additional_info": "M. Hrvat, poginuo",
+    "fathers_name": "M",
+    "full_name": "Balala M Martin",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "pdf_page": 223,
     "pdf_y": 484.9,
@@ -79369,10 +79420,10 @@
     "pdf_y_end": 491.9,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035100248",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 416.9,
-    "birth_place": "M."
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Balan",
@@ -80085,7 +80136,7 @@
     "first_name": "Slavko",
     "fathers_name": "I",
     "full_name": "Baljan I Slavko",
-    "additional_info": "I., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "pdf_page": 223,
     "pdf_y": 513.0,
@@ -80106,10 +80157,10 @@
         "pdf_y_end": 711.6
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 412.7,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Baloh",
@@ -80198,7 +80249,7 @@
     "first_name": "Josip",
     "fathers_name": "A",
     "full_name": "Baltić A Josip",
-    "additional_info": "A., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 140,
@@ -80220,10 +80271,10 @@
         "pdf_y_end": 294.2
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 400.3,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Baltić",
@@ -83596,7 +83647,7 @@
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "pdf_x_end": 263.0,
-    "birth_place": "Ravnice-- Vel. Trgovišće, Zabok",
+    "birth_place": "Ravnice-Vel. Trgovišće, Zabok",
     "other_sources": [
       {
         "soldier_id": "0058000080",
@@ -85828,21 +85879,18 @@
   {
     "soldier_id": "0035113505",
     "last_name": "Balić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Lovro",
-    "fathers_name": "",
-    "full_name": "Balić Lovro",
-    "additional_info": "M., Hrvat, poljopriv., poginuo",
+    "fathers_name": "M",
+    "full_name": "Balić M Lovro",
+    "additional_info": "Hrvat, poljopriv., poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 90,
     "pdf_y": 164.3,
     "pdf_x": 106.3,
-    "birth_place": "M",
-    "ethnicity": "Hrvat",
-    "occupation": "poljoprivrednik",
-    "death_type": "poginuo",
+    "birth_place": "",
     "pdf_x_end": 257.5,
     "pdf_y_end": 171.3,
     "other_sources": [
@@ -85857,7 +85905,10 @@
         "pdf_x_end": 444.7,
         "pdf_y_end": 147.8
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0035113504",
@@ -88476,13 +88527,13 @@
       {
         "soldier_id": "9036000050",
         "name": "Bednjanec Ivanka",
-        "additional_info": "rođena 1913. u Tabor-Gradu, poginula u Lepoglavi kao borac NOV. BEDNJANEC rod. GORUP (Karla) IVKA, rođena 19. 2. 1924. u Klenovcu, poginula 26. 3. 1944. u Kalniku kao borac Kalničkog odreda.",
+        "additional_info": "rođena 1913. u Tabor-Gradu, poginula u Lepoglavi kao borac NOV.",
         "pdf_file": "hrvatsko-zagorje-1981.pdf",
         "pdf_page": 3,
         "pdf_x": 27.9,
         "pdf_y": 232.5,
-        "pdf_x_end": 383.4,
-        "pdf_y_end": 277.0,
+        "pdf_x_end": 382.9,
+        "pdf_y_end": 251.1,
         "ref_book": "hrvatsko-zagorje-1981"
       }
     ]
@@ -88507,7 +88558,21 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "pdf_x_end": 271.0,
-    "birth_place": "Klenovec, Ivanec"
+    "birth_place": "Klenovec, Ivanec",
+    "other_sources": [
+      {
+        "soldier_id": "9036002321",
+        "name": "Bednjanec Karla Ivka",
+        "additional_info": "rođena 19. 2. 1924. u Klenovcu, poginula 26. 3. 1944. u Kalniku kao borac Kalničkog odreda.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 3,
+        "pdf_x": 28.3,
+        "pdf_y": 259.4,
+        "pdf_x_end": 383.4,
+        "pdf_y_end": 277.0,
+        "ref_book": "hrvatsko-zagorje-1981"
+      }
+    ]
   },
   {
     "last_name": "Bednjanec",
@@ -90179,7 +90244,7 @@
     "first_name": "Mijo",
     "fathers_name": "M",
     "full_name": "Belobrk M Mijo",
-    "additional_info": "M., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 141,
@@ -90201,10 +90266,10 @@
         "pdf_y_end": 267.7
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 417.9,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Belokov",
@@ -94078,7 +94143,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "pdf_x_end": 443.9,
-    "birth_place": "Ravnice--Vel. Trgovišće, Zabok",
+    "birth_place": "Ravnice-Vel. Trgovišće, Zabok",
     "other_sources": [
       {
         "soldier_id": "9036000073",
@@ -104322,10 +104387,10 @@
   },
   {
     "last_name": "Bosek",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Đuro",
-    "fathers_name": "Duro",
-    "full_name": "Bosek Dure Đuro",
+    "fathers_name": "Đuro",
+    "full_name": "Bosek Đure Đuro",
     "additional_info": "r. 1923, s. Kalnik, Križevci, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
     "birth_year": "1923",
     "unit_detail": "udarna brigada Braća Radić",
@@ -107933,7 +107998,7 @@
     "first_name": "Franjo",
     "fathers_name": "M",
     "full_name": "Brdar M Franjo",
-    "additional_info": "M., r. 1909, Vukosavljevica, Hrvat, NOV 1944, poginuo 1945.",
+    "additional_info": "r. 1909, Vukosavljevica, Hrvat, NOV 1944, poginuo 1945.",
     "birth_year": "1909",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 175,
@@ -107953,13 +108018,29 @@
         "pdf_y": 351.7,
         "pdf_x_end": 280.2,
         "pdf_y_end": 361.2
+      },
+      {
+        "soldier_id": "0105000028",
+        "name": "Brdar M Franjo",
+        "additional_info": "1909, Vukosavljevica, poginuo 23. 4. 1945, Suho Polje - Borovo",
+        "pdf_file": "1-zagorska.pdf",
+        "pdf_page": 3,
+        "pdf_x": 23.0,
+        "pdf_y": 293.799,
+        "pdf_x_end": 301.4,
+        "pdf_y_end": 309.2,
+        "unit_file": "1-zagorska-soldiers.json"
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
-    "death_date": "1945",
     "pdf_x_end": 269.7,
-    "birth_place": "M"
+    "birth_place": "Vukosavljevica",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Suho Polje - Borovo",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Brdov",
@@ -108056,11 +108137,11 @@
   },
   {
     "last_name": "Brdovčak",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Vlado",
-    "fathers_name": "",
-    "full_name": "Brdovčak Vlado",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Brdovčak J Vlado",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 175,
@@ -108069,10 +108150,10 @@
     "pdf_y_end": 331.1,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035101215",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 244.5,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Brdovšćak",
@@ -111163,11 +111244,11 @@
   },
   {
     "last_name": "Bronec",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Rudolf",
-    "fathers_name": "",
-    "full_name": "Bronec Rudolf",
-    "additional_info": "M., r. 1922, s. Vrapče, Zagreb, Hrvat, čl. KPJ, NOV 1942, poginuo 1944.",
+    "fathers_name": "M",
+    "full_name": "Bronec M Rudolf",
+    "additional_info": "r. 1922, s. Vrapče, Zagreb, Hrvat, čl. KPJ, NOV 1942, poginuo 1944.",
     "birth_year": "1922",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 94,
@@ -111176,12 +111257,12 @@
     "pdf_y_end": 478.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035101321",
+    "pdf_x_end": 257.4,
+    "birth_place": "Vrapče, Zagreb",
+    "party": "KPJ",
     "ethnicity": "Hrvat",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_x_end": 257.4,
-    "birth_place": "M",
-    "party": "KPJ"
+    "death_date": "1944"
   },
   {
     "last_name": "Broz",
@@ -112064,13 +112145,13 @@
       {
         "soldier_id": "9036000138",
         "name": "Brčko Ivan",
-        "additional_info": "rođen 25. 11. 1919. u Jakovlju, poginuo 2. 12. 1944. u Gudovcu kao vodnik NOV. BRF.BER (Mirka) ANĐELKO, 19. godina star. rođen u Gornjoj Stubici, poginuo 15. 5. 1944. u Mateju kao borac Zagrebačkog odreda.",
+        "additional_info": "rođen 25. 11. 1919. u Jakovlju, poginuo 2. 12. 1944. u Gudovcu kao vodnik NOV.",
         "pdf_file": "hrvatsko-zagorje-1981.pdf",
         "pdf_page": 7,
         "pdf_x": 26.4,
         "pdf_y": 148.2,
-        "pdf_x_end": 381.5,
-        "pdf_y_end": 189.7,
+        "pdf_x_end": 380.9,
+        "pdf_y_end": 166.2,
         "ref_book": "hrvatsko-zagorje-1981"
       },
       {
@@ -112937,7 +113018,7 @@
     "first_name": "Dragan",
     "fathers_name": "M",
     "full_name": "Budimir M Dragan",
-    "additional_info": "M., Srbin",
+    "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 142,
@@ -112959,9 +113040,9 @@
         "pdf_y_end": 677.5
       }
     ],
-    "ethnicity": "Srbin",
     "pdf_x_end": 386.0,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Budorović",
@@ -114478,11 +114559,11 @@
   },
   {
     "last_name": "Bulka",
-    "middle_name": "",
+    "middle_name": "I",
     "first_name": "Rudolf",
-    "fathers_name": "",
-    "full_name": "Bulka Rudolf",
-    "additional_info": "I., Hrvat, poginuo",
+    "fathers_name": "I",
+    "full_name": "Bulka I Rudolf",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 142,
@@ -114491,10 +114572,10 @@
     "pdf_y_end": 616.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035101422",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 409.5,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Bulovec",
@@ -115052,7 +115133,7 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 265.2,
-    "birth_place": "Ravnice--Vel. Trgovišće, Zabok"
+    "birth_place": "Ravnice-Vel. Trgovišće, Zabok"
   },
   {
     "last_name": "Burilović",
@@ -117902,7 +117983,7 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 444.8,
-    "birth_place": "Čučerje--Dubrava, Zagreb"
+    "birth_place": "Čučerje-Dubrava, Zagreb"
   },
   {
     "last_name": "Celinger",
@@ -118030,9 +118111,9 @@
   {
     "last_name": "Cenkorećanin",
     "middle_name": "Tome",
-    "first_name": "Duro",
+    "first_name": "Đuro",
     "fathers_name": "Tomo",
-    "full_name": "Cenkorećanin Tome Duro",
+    "full_name": "Cenkorećanin Tome Đuro",
     "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "pdf_page": 224,
@@ -126660,7 +126741,7 @@
     "death_type": "poginuo",
     "death_date": "1946",
     "pdf_x_end": 441.5,
-    "birth_place": "Topličica--Budinš, Zabok",
+    "birth_place": "Topličica-Budinš, Zabok",
     "other_sources": [
       {
         "soldier_id": "9036000268",
@@ -126804,11 +126885,11 @@
   },
   {
     "last_name": "Deskar",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Deskar Ivan",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Deskar J Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 97,
@@ -126817,18 +126898,18 @@
     "pdf_y_end": 269.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035101870",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 407.8,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Deskar",
-    "middle_name": "",
+    "middle_name": "T",
     "first_name": "Mato",
-    "fathers_name": "",
-    "full_name": "Deskar Mato",
-    "additional_info": "T., Hrvat, poginuo",
+    "fathers_name": "T",
+    "full_name": "Deskar T Mato",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 97,
@@ -126837,10 +126918,10 @@
     "pdf_y_end": 278.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035101871",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 413.6,
-    "birth_place": "T"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Deskar",
@@ -130041,7 +130122,7 @@
     "first_name": "Mato",
     "fathers_name": "Fr",
     "full_name": "Domčević Fr Mato",
-    "additional_info": "FR. Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "pdf_page": 225,
     "pdf_y": 567.9,
@@ -130062,9 +130143,9 @@
         "pdf_y_end": 690.0
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 204.7,
-    "birth_place": "FR."
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Domšić",
@@ -135181,11 +135262,11 @@
     "birth_place": "Veliki Bukovec, Ludbreg"
   },
   {
-    "last_name": "Duraš",
+    "last_name": "Đuraš",
     "middle_name": "Martina",
     "first_name": "Ivan",
     "fathers_name": "Martin",
-    "full_name": "Duraš Martina Ivan",
+    "full_name": "Đuraš Martina Ivan",
     "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
@@ -135220,10 +135301,10 @@
   },
   {
     "last_name": "Duričič",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Valent",
-    "fathers_name": "Duro",
-    "full_name": "Duričič Dure Valent",
+    "fathers_name": "Đuro",
+    "full_name": "Duričič Đure Valent",
     "additional_info": "r. 1922, s. Zdenčac, Garešnica, Hrvat, čl. SKOJ-a, NOV 1943, ranjen",
     "birth_year": "1922",
     "unit_detail": "udarna brigada Braća Radić",
@@ -136717,11 +136798,11 @@
   },
   {
     "last_name": "Faget",
-    "middle_name": "",
+    "middle_name": "D",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Faget Ivan",
-    "additional_info": "D., Hrvat, poginuo",
+    "fathers_name": "D",
+    "full_name": "Faget D Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 145,
@@ -136730,10 +136811,10 @@
     "pdf_y_end": 223.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035102232",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 232.7,
-    "birth_place": "D"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Faget",
@@ -145684,19 +145765,19 @@
   {
     "soldier_id": "0035113605",
     "last_name": "Gabaj",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Stjepan",
-    "fathers_name": "",
-    "full_name": "Gabaj Stjepan",
-    "additional_info": "S. Hrvat",
+    "fathers_name": "S",
+    "full_name": "Gabaj S Stjepan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 226,
     "pdf_y": 241.6,
     "pdf_x": 120.4,
-    "ethnicity": "Hrvat",
     "pdf_x_end": 201.0,
-    "pdf_y_end": 248.6
+    "pdf_y_end": 248.6,
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Fusić",
@@ -146168,11 +146249,11 @@
   },
   {
     "last_name": "Fuček",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Fuček Petar",
-    "additional_info": "P., Hrvat, poginuo",
+    "fathers_name": "P",
+    "full_name": "Fuček P Petar",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 100,
@@ -146181,10 +146262,10 @@
     "pdf_y_end": 459.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035102551",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 230.7,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Fuček",
@@ -146981,11 +147062,11 @@
   },
   {
     "last_name": "Gadžo",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Petra",
-    "fathers_name": "",
-    "full_name": "Gadžo Petra",
-    "additional_info": "A., Hrvatica",
+    "fathers_name": "A",
+    "full_name": "Gadžo A Petra",
+    "additional_info": "Hrvatica",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 146,
@@ -146994,9 +147075,9 @@
     "pdf_y_end": 179.3,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035102582",
-    "ethnicity": "Hrvatica",
     "pdf_x_end": 207.5,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Hrvatica"
   },
   {
     "last_name": "Gaić",
@@ -147800,11 +147881,11 @@
   },
   {
     "last_name": "Galjer",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Galjer Milan",
-    "additional_info": "J., r. 1924, s. Stari Gradac, Đurđevac, Hrvat, poljopriv., čl. SKOJ-a, NOV 1944, poginuo 1944.",
+    "fathers_name": "J",
+    "full_name": "Galjer J Milan",
+    "additional_info": "r. 1924, s. Stari Gradac, Đurđevac, Hrvat, poljopriv., čl. SKOJ-a, NOV 1944, poginuo 1944.",
     "birth_year": "1924",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 146,
@@ -147813,13 +147894,13 @@
     "pdf_y_end": 246.5,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035102614",
-    "ethnicity": "Hrvat",
-    "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
     "pdf_x_end": 265.1,
-    "birth_place": "J",
-    "party": "SKOJ"
+    "birth_place": "Stari Gradac, Đurđevac",
+    "party": "SKOJ",
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik"
   },
   {
     "last_name": "Galović",
@@ -148608,7 +148689,6 @@
     "soldier_id": "0035102644",
     "ethnicity": "Hrvat",
     "death_type": "poginuo",
-    "death_place": "T",
     "pdf_x_end": 399.5
   },
   {
@@ -148766,9 +148846,9 @@
   {
     "last_name": "Gašpar",
     "middle_name": "Franje",
-    "first_name": "Duro",
+    "first_name": "Đuro",
     "fathers_name": "Franjo",
-    "full_name": "Gašpar Franje Duro",
+    "full_name": "Gašpar Franje Đuro",
     "additional_info": "r. 1913, Grubišno Polje, Hrvat, službenik, čl. KPJ, NOV 1942.",
     "birth_year": "1913",
     "unit_detail": "udarna brigada Braća Radić",
@@ -150707,10 +150787,10 @@
   },
   {
     "last_name": "Gerič",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Stanko",
-    "fathers_name": "Duro",
-    "full_name": "Gerič Dure Stanko",
+    "fathers_name": "Đuro",
+    "full_name": "Gerič Đure Stanko",
     "additional_info": "r. 1926, s. Hrženica, Ludbreg, Hrvat, poljopriv., čl. SKOJ-a NOV 1943, ranjen 1944.",
     "birth_year": "1926",
     "unit_detail": "udarna brigada Braća Radić",
@@ -150829,7 +150909,7 @@
     "first_name": "Dragutin",
     "fathers_name": "J",
     "full_name": "Gerovac J Dragutin",
-    "additional_info": "J., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 181,
@@ -150851,9 +150931,9 @@
         "pdf_y_end": 280.9
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 404.1,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Gertič",
@@ -156806,11 +156886,11 @@
   },
   {
     "last_name": "Grabrovečki",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Dragutin",
-    "fathers_name": "",
-    "full_name": "Grabrovečki Dragutin",
-    "additional_info": "J., r. 1926, Zabok, Krapina, Hrvat, radnik, čl. SKOJ-a, NOV 1944.",
+    "fathers_name": "J",
+    "full_name": "Grabrovečki J Dragutin",
+    "additional_info": "r. 1926, Zabok, Krapina, Hrvat, radnik, čl. SKOJ-a, NOV 1944.",
     "birth_year": "1926",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 182,
@@ -156819,11 +156899,11 @@
     "pdf_y_end": 583.4,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035102924",
-    "ethnicity": "Hrvat",
-    "occupation": "radnik",
     "pdf_x_end": 434.8,
-    "birth_place": "J",
-    "party": "SKOJ"
+    "birth_place": "Zabok, Krapina",
+    "party": "SKOJ",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik"
   },
   {
     "last_name": "Grabrovečki",
@@ -157002,7 +157082,7 @@
     "first_name": "Tomo",
     "fathers_name": "T",
     "full_name": "Gradićek T Tomo",
-    "additional_info": "T. Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "pdf_page": 226,
     "pdf_y": 564.4,
@@ -157023,9 +157103,9 @@
         "pdf_y_end": 307.4
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 203.6,
-    "birth_place": "T."
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Gradičak",
@@ -157504,7 +157584,7 @@
     "first_name": "Stjepan",
     "fathers_name": "Val",
     "full_name": "Granaša Val Stjepan",
-    "additional_info": "V., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 146,
@@ -157526,9 +157606,9 @@
         "pdf_y_end": 466.5
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 386.0,
-    "birth_place": "V"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Grandić",
@@ -159411,7 +159491,7 @@
     "first_name": "Vinko",
     "fathers_name": "M",
     "full_name": "Grgan M Vinko",
-    "additional_info": "M., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 146,
@@ -159433,10 +159513,10 @@
         "pdf_y_end": 385.9
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 409.3,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Grgetić",
@@ -159965,7 +160045,7 @@
     "ethnicity": "Hrvatica",
     "occupation": "radnica",
     "pdf_x_end": 282.3,
-    "birth_place": "Ivanić--Kloštar, Kutina"
+    "birth_place": "Ivanić-Kloštar, Kutina"
   },
   {
     "last_name": "Grgurić",
@@ -160517,7 +160597,7 @@
     "first_name": "Petar",
     "fathers_name": "Đ",
     "full_name": "Grkanović Đ Petar",
-    "additional_info": "Đ., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 102,
@@ -160539,9 +160619,9 @@
         "pdf_y_end": 682.3
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 210.5,
-    "birth_place": "Đ"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Grkovec",
@@ -160933,7 +161013,7 @@
     "first_name": "Mario",
     "fathers_name": "J",
     "full_name": "Grozdanović J Mario",
-    "additional_info": "J., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 102,
@@ -160955,9 +161035,9 @@
         "pdf_y_end": 611.5
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 217.0,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Groš",
@@ -165198,7 +165278,7 @@
     "first_name": "Ivan",
     "fathers_name": "J",
     "full_name": "Hadić J Ivan",
-    "additional_info": "J., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 103,
@@ -165220,10 +165300,10 @@
         "pdf_y_end": 256.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 233.7,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Hadić",
@@ -167303,31 +167383,11 @@
   },
   {
     "last_name": "Hanak",
-    "middle_name": "",
-    "first_name": "Josip",
-    "fathers_name": "",
-    "full_name": "Hanak Josip",
-    "additional_info": "S., Hrvat, poginuo",
-    "birth_year": "",
-    "unit_detail": "udarna brigada Braća Radić",
-    "pdf_page": 34,
-    "pdf_y": 279.1,
-    "pdf_x": 302.4,
-    "pdf_y_end": 286.1,
-    "pdf_file": "32-divizija-borci.pdf",
-    "soldier_id": "0035103297",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "pdf_x_end": 412.2,
-    "birth_place": "S"
-  },
-  {
-    "last_name": "Hanak",
-    "middle_name": "",
+    "middle_name": "F",
     "first_name": "Jozef",
-    "fathers_name": "",
-    "full_name": "Hanak Jozef",
-    "additional_info": "F., r. 1923, Mađar, poljopriv., NOV 1944, poginuo 1944.",
+    "fathers_name": "F",
+    "full_name": "Hanak F Jozef",
+    "additional_info": "r. 1923, Mađar, poljopriv., NOV 1944, poginuo 1944.",
     "birth_year": "1923",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 147,
@@ -167336,12 +167396,12 @@
     "pdf_y_end": 595.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103298",
+    "pdf_x_end": 260.1,
+    "birth_place": "",
     "ethnicity": "Mađar",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_x_end": 260.1,
-    "birth_place": "F"
+    "death_date": "1944"
   },
   {
     "last_name": "Handek",
@@ -167438,11 +167498,11 @@
   },
   {
     "last_name": "Hanić",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Franjo",
-    "fathers_name": "",
-    "full_name": "Hanić Franjo",
-    "additional_info": "P., Hrvat, poginuo",
+    "fathers_name": "P",
+    "full_name": "Hanić P Franjo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 103,
@@ -167451,10 +167511,10 @@
     "pdf_y_end": 676.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103303",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 241.3,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Hanković",
@@ -167796,11 +167856,11 @@
   },
   {
     "last_name": "Hanžeković",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Jakob",
-    "fathers_name": "",
-    "full_name": "Hanžeković Jakob",
-    "additional_info": "J. Hrvat",
+    "fathers_name": "J",
+    "full_name": "Hanžeković J Jakob",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 34,
@@ -167809,9 +167869,9 @@
     "pdf_y_end": 440.9,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103315",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 395.1,
-    "birth_place": "J."
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Hanžeković",
@@ -168859,7 +168919,7 @@
     "first_name": "Ivan",
     "fathers_name": "S",
     "full_name": "Harmana S Ivan",
-    "additional_info": "S., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 147,
@@ -168881,10 +168941,10 @@
         "pdf_y_end": 466.8
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 227.7,
-    "birth_place": "S"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Harćek",
@@ -175157,11 +175217,11 @@
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Horvat Ivan",
-    "additional_info": "J., r. 1918, s. Šemovci, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
+    "fathers_name": "J",
+    "full_name": "Horvat J Ivan",
+    "additional_info": "r. 1918, s. Šemovci, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
     "birth_year": "1918",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 36,
@@ -175170,20 +175230,20 @@
     "pdf_y_end": 626.5,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103587",
+    "pdf_x_end": 268.9,
+    "birth_place": "Šemovci, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_x_end": 268.9,
-    "birth_place": "J"
+    "death_date": "1944"
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Horvat Ivan",
-    "additional_info": "S. Hrvat, poginuo",
+    "fathers_name": "S",
+    "full_name": "Horvat S Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 36,
@@ -175192,10 +175252,10 @@
     "pdf_y_end": 636.3,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103588",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 227.4,
-    "birth_place": "S."
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Horvat",
@@ -175220,11 +175280,11 @@
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Horvat Ivan",
-    "additional_info": "M., Hrvat, poginuo",
+    "fathers_name": "M",
+    "full_name": "Horvat M Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 104,
@@ -175233,10 +175293,10 @@
     "pdf_y_end": 141.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103590",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 413.2,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Horvat",
@@ -175260,11 +175320,11 @@
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "L",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Horvat Ivan",
-    "additional_info": "L., Hrvat, poginuo",
+    "fathers_name": "L",
+    "full_name": "Horvat L Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 148,
@@ -175273,10 +175333,10 @@
     "pdf_y_end": 202.4,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103592",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 230.9,
-    "birth_place": "L"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Horvat",
@@ -176078,11 +176138,11 @@
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "Š",
     "first_name": "Mato",
-    "fathers_name": "",
-    "full_name": "Horvat Mato",
-    "additional_info": "Š., Hrvat, poginuo",
+    "fathers_name": "Š",
+    "full_name": "Horvat Š Mato",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 104,
@@ -176091,10 +176151,10 @@
     "pdf_y_end": 266.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103620",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 413.5,
-    "birth_place": "Š"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Horvat",
@@ -176432,11 +176492,11 @@
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Horvat Petar",
-    "additional_info": "M., Hrvat, poginuo",
+    "fathers_name": "M",
+    "full_name": "Horvat M Petar",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 36,
@@ -176445,10 +176505,10 @@
     "pdf_y_end": 453.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103634",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 417.7,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Horvat",
@@ -176765,11 +176825,11 @@
   },
   {
     "last_name": "Horvat",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Valent",
-    "fathers_name": "",
-    "full_name": "Horvat Valent",
-    "additional_info": "P., Hrvat, poginuo",
+    "fathers_name": "P",
+    "full_name": "Horvat P Valent",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 104,
@@ -176778,10 +176838,10 @@
     "pdf_y_end": 305.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035103648",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 419.2,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Horvat",
@@ -177649,7 +177709,7 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 447.5,
-    "birth_place": "Vidovec--Maksimir, Zagreb",
+    "birth_place": "Vidovec-Maksimir, Zagreb",
     "party": "KPJ"
   },
   {
@@ -179267,21 +179327,21 @@
   {
     "soldier_id": "0035113659",
     "last_name": "Hrloč",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Hrloč Ivan",
-    "additional_info": "M., Hrvat",
+    "fathers_name": "M",
+    "full_name": "Hrloč M Ivan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 186,
     "pdf_y": 272.0,
     "pdf_x": 286.2,
-    "birth_place": "M",
-    "ethnicity": "Hrvat",
+    "birth_place": "",
     "pdf_x_end": 364.9,
-    "pdf_y_end": 279.0
+    "pdf_y_end": 279.0,
+    "ethnicity": "Hrvat"
   },
   {
     "soldier_id": "0035113658",
@@ -179532,7 +179592,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 282.2,
-    "birth_place": "Kostel--Bregi, Pregrada"
+    "birth_place": "Kostel-Bregi, Pregrada"
   },
   {
     "last_name": "Hrenović",
@@ -181221,7 +181281,7 @@
     "first_name": "Josip",
     "fathers_name": "S",
     "full_name": "Hrženjak S Josip",
-    "additional_info": "S., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 105,
@@ -181243,10 +181303,10 @@
         "pdf_y_end": 256.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 250.1,
-    "birth_place": "S"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Hrženjak",
@@ -181313,11 +181373,11 @@
   },
   {
     "last_name": "Hrženjak",
-    "middle_name": "",
+    "middle_name": "F",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Hrženjak Petar",
-    "additional_info": "F., Hrvat, poginuo",
+    "fathers_name": "F",
+    "full_name": "Hrženjak F Petar",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 148,
@@ -181339,10 +181399,10 @@
         "pdf_y_end": 287.5
       }
     ],
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 238.8,
-    "birth_place": "F"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Hrženjak",
@@ -182147,10 +182207,10 @@
   },
   {
     "last_name": "Humuak",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Rudolf",
-    "fathers_name": "Duro",
-    "full_name": "Humuak Dure Rudolf",
+    "fathers_name": "Đuro",
+    "full_name": "Humuak Đure Rudolf",
     "additional_info": "Hrvat, NOV 1943.",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
@@ -183128,7 +183188,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 270.0,
-    "birth_place": "Oratje--Krap",
+    "birth_place": "Oratje, Krapinske Toplice, Zabok",
     "party": "SKOJ"
   },
   {
@@ -192441,11 +192501,11 @@
   },
   {
     "last_name": "Jakuš",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Rudolf",
-    "fathers_name": "",
-    "full_name": "Jakuš Rudolf",
-    "additional_info": "M., r. 1919, s. Lug Poznanovec, Zabok, Hrvat, radnik, čl. KPJ, NOV 1943.",
+    "fathers_name": "M",
+    "full_name": "Jakuš M Rudolf",
+    "additional_info": "r. 1919, s. Lug Poznanovec, Zabok, Hrvat, radnik, čl. KPJ, NOV 1943.",
     "birth_year": "1919",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 39,
@@ -192454,11 +192514,11 @@
     "pdf_y_end": 622.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035104167",
-    "ethnicity": "Hrvat",
-    "occupation": "radnik",
     "pdf_x_end": 443.8,
-    "birth_place": "M",
-    "party": "KPJ"
+    "birth_place": "Lug Poznanovec, Zabok",
+    "party": "KPJ",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik"
   },
   {
     "last_name": "Jakuš",
@@ -193541,9 +193601,9 @@
     "soldier_id": "0035113705",
     "last_name": "Janći",
     "middle_name": "Valenta",
-    "first_name": "Duro",
+    "first_name": "Đuro",
     "fathers_name": "Valent",
-    "full_name": "Janći Valenta Duro",
+    "full_name": "Janći Valenta Đuro",
     "additional_info": "r. 1913, s. Bočaki, Zlatar Bistrica, Hrvat, radnik, NOV 1943.",
     "birth_year": "1913",
     "unit_detail": "I udarna zagorska brigada",
@@ -195195,7 +195255,7 @@
     "first_name": "Antun",
     "fathers_name": "A",
     "full_name": "Janković A Antun",
-    "additional_info": "A., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 149,
@@ -195217,10 +195277,10 @@
         "pdf_y_end": 205.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 423.7,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Janković",
@@ -196557,7 +196617,7 @@
     "ethnicity": "Srbin",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 257.1,
-    "birth_place": "Vlajislav--Novigrad, Koprivnica"
+    "birth_place": "Vlajislav-Novigrad, Koprivnica"
   },
   {
     "last_name": "Jančič",
@@ -202737,7 +202797,7 @@
     "full_name": "Jus Adalberta Alba",
     "additional_info": "r. 1926, s. Strmec, Pregrada, Hrvat, učenik, NOV 1944, poginuo 1944.",
     "birth_year": "1926",
-    "unit_detail": "brigada Matija Gubec",
+    "unit_detail": "",
     "pdf_page": 107,
     "pdf_y": 531.0,
     "pdf_x": 295.8,
@@ -202754,13 +202814,13 @@
       {
         "soldier_id": "9036000652",
         "name": "Jus (Adalberta) Alba",
-        "additional_info": "rođen 1926. u Trnovcu—Pregrada, poginuo 17. 4. 1944. u Vrapcu kao borac Zagorskog odreda. JUTRIŠA (Mate) JOSIP, rođen 18. 2. 1920. u Martiša Vesi, poginuo 30. 12. 1944. kod Tri Kralja kao komandant omladinskog bataljona u Zagorskoj brigadi. Posmrtno proglašen Narodnim herojem.",
+        "additional_info": "rođen 1926. u Trnovcu—Pregrada, poginuo 17. 4. 1944. u Vrapcu kao borac Zagorskog odreda.",
         "pdf_file": "hrvatsko-zagorje-1981.pdf",
         "pdf_page": 30,
         "pdf_x": 12.0,
         "pdf_y": 18.9,
-        "pdf_x_end": 366.9,
-        "pdf_y_end": 69.9,
+        "pdf_x_end": 366.5,
+        "pdf_y_end": 36.8,
         "ref_book": "hrvatsko-zagorje-1981"
       }
     ]
@@ -203936,11 +203996,11 @@
   },
   {
     "last_name": "Kaličak",
-    "middle_name": "",
+    "middle_name": "F",
     "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Kaličak Branko",
-    "additional_info": "F., Hrvat, poginuo",
+    "fathers_name": "F",
+    "full_name": "Kaličak F Branko",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 108,
@@ -203949,10 +204009,10 @@
     "pdf_y_end": 163.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035104572",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 246.2,
-    "birth_place": "F"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kaličanac",
@@ -203972,7 +204032,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 258.6,
-    "birth_place": "Virje--Miholjevac, Đurđevac",
+    "birth_place": "Virje-Miholjevac, Đurđevac",
     "party": "KPJ"
   },
   {
@@ -204477,7 +204537,7 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 443.6,
-    "birth_place": "Ravnice--Vel. Trgovišće, Zabok"
+    "birth_place": "Ravnice-Vel. Trgovišće, Zabok"
   },
   {
     "last_name": "Kanceuak",
@@ -204999,20 +205059,18 @@
   {
     "soldier_id": "0035113731",
     "last_name": "Karačič",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Alojz",
-    "fathers_name": "",
-    "full_name": "Karačič Alojz",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Karačič J Alojz",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 42,
     "pdf_y": 226.7,
     "pdf_x": 286.7,
-    "birth_place": "J",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
+    "birth_place": "",
     "pdf_x_end": 405.8,
     "pdf_y_end": 233.7,
     "other_sources": [
@@ -205027,7 +205085,9 @@
         "pdf_x_end": 141.4,
         "pdf_y_end": 804.2
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0035113730",
@@ -206079,11 +206139,11 @@
   },
   {
     "last_name": "Karan",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Đuro",
-    "fathers_name": "",
-    "full_name": "Karan Đuro",
-    "additional_info": "S., r. 1918, s. Ferdinandovac, Đurđevac, Hrvat, poljoprivr., NOV 1944, poginuo 1945.",
+    "fathers_name": "S",
+    "full_name": "Karan S Đuro",
+    "additional_info": "r. 1918, s. Ferdinandovac, Đurđevac, Hrvat, poljoprivr., NOV 1944, poginuo 1945.",
     "birth_year": "1918",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 108,
@@ -206105,12 +206165,12 @@
         "pdf_y_end": 113.7
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
-    "death_date": "1945",
     "pdf_x_end": 270.6,
-    "birth_place": "S"
+    "birth_place": "Ferdinandovac, Đurđevac",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1945"
   },
   {
     "last_name": "Karapetuan",
@@ -208419,7 +208479,7 @@
     "first_name": "Jakob",
     "fathers_name": "Đ",
     "full_name": "Kašier Đ Jakob",
-    "additional_info": "Đ., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 150,
@@ -208441,9 +208501,9 @@
         "pdf_y_end": 607.2
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 375.7,
-    "birth_place": "Đ"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Kašir",
@@ -210429,11 +210489,11 @@
   },
   {
     "last_name": "Kečkeš",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Franjo",
-    "fathers_name": "",
-    "full_name": "Kečkeš Franjo",
-    "additional_info": "S., r. 1914, s. Miholjaci, Zdjelice, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
+    "fathers_name": "S",
+    "full_name": "Kečkeš S Franjo",
+    "additional_info": "r. 1914, s. Miholjaci, Zdjelice, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
     "birth_year": "1914",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 150,
@@ -210442,12 +210502,12 @@
     "pdf_y_end": 668.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035104808",
+    "pdf_x_end": 443.9,
+    "birth_place": "Miholjaci, Zdjelice, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_x_end": 443.9,
-    "birth_place": "S"
+    "death_date": "1944"
   },
   {
     "last_name": "Kečkeš",
@@ -212143,10 +212203,10 @@
   },
   {
     "last_name": "Klarić",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Ivan",
-    "fathers_name": "Duro",
-    "full_name": "Klarić Dure Ivan",
+    "fathers_name": "Đuro",
+    "full_name": "Klarić Đure Ivan",
     "additional_info": "r. 1913, s. Donja Dubrava, Đurđevac, Hrvat, radnik, NOV 1944.",
     "birth_year": "1913",
     "unit_detail": "brigada Matija Gubec",
@@ -212664,7 +212724,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 271.6,
-    "birth_place": "Pesenje--Đurmanec, Krapina",
+    "birth_place": "Pesenje-Đurmanec, Krapina",
     "party": "SKOJ, KPJ"
   },
   {
@@ -213267,11 +213327,11 @@
   },
   {
     "last_name": "Klemen",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Sreto",
-    "fathers_name": "",
-    "full_name": "Klemen Sreto",
-    "additional_info": "S., r. 1918, s. Velika Trešnjevica, Đurđevac, Srbin, poljopriv., NOV 1943. poginuo 1945.",
+    "fathers_name": "S",
+    "full_name": "Klemen S Sreto",
+    "additional_info": "r. 1918, s. Velika Trešnjevica, Đurđevac, Srbin, poljopriv., NOV 1943. poginuo 1945.",
     "birth_year": "1918",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 151,
@@ -213280,12 +213340,12 @@
     "pdf_y_end": 433.1,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035104910",
+    "pdf_x_end": 278.3,
+    "birth_place": "Velika Trešnjevica, Đurđevac",
     "ethnicity": "Srbin",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
-    "death_date": "1945",
-    "pdf_x_end": 278.3,
-    "birth_place": "S"
+    "death_date": "1945"
   },
   {
     "last_name": "Klemenc",
@@ -214027,11 +214087,11 @@
   },
   {
     "last_name": "Klišanič",
-    "middle_name": "",
+    "middle_name": "D",
     "first_name": "Tomo",
-    "fathers_name": "",
-    "full_name": "Klišanič Tomo",
-    "additional_info": "D., Hrvat",
+    "fathers_name": "D",
+    "full_name": "Klišanič D Tomo",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 109,
@@ -214040,9 +214100,9 @@
     "pdf_y_end": 634.1,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035104935",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 207.1,
-    "birth_place": "D"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Ključan",
@@ -215643,7 +215703,7 @@
       {
         "soldier_id": "9036000716",
         "name": "Kobilar (Josipa) Josip",
-        "additional_info": "rođen 1923. u Klenicama—Pregrada, poginuo u logoru Jasenovac kao zarobljeni borac NOV. KOC rođ. KUNSTEK (Josipa) MARIJA, rođena 1916. u Klenovcu, poginula 1944, u Rusnici kao aktivista AFŽ-a.",
+        "additional_info": "rođen 1923. u Klenicama—Pregrada, poginuo u logoru Jasenovac kao zarobljeni borac NOV.",
         "pdf_file": "hrvatsko-zagorje-1981.pdf",
         "pdf_page": 32,
         "pdf_x": 15.1,
@@ -216240,7 +216300,7 @@
     "first_name": "Milan",
     "fathers_name": "N",
     "full_name": "Kocu N Milan",
-    "additional_info": "N.",
+    "additional_info": "",
     "birth_year": "",
     "pdf_page": 227,
     "pdf_y": 690.4,
@@ -216669,7 +216729,7 @@
     "first_name": "Ivan",
     "fathers_name": "L",
     "full_name": "Kojić L Ivan",
-    "additional_info": "L., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 151,
@@ -216691,10 +216751,10 @@
         "pdf_y_end": 394.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 233.0,
-    "birth_place": "L"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kojić",
@@ -217919,11 +217979,11 @@
   },
   {
     "last_name": "Kolarević",
-    "middle_name": "",
+    "middle_name": "K",
     "first_name": "Josip",
-    "fathers_name": "",
-    "full_name": "Kolarević Josip",
-    "additional_info": "K., Hrvat, poginuo",
+    "fathers_name": "K",
+    "full_name": "Kolarević K Josip",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 151,
@@ -217932,10 +217992,10 @@
     "pdf_y_end": 221.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105066",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 430.2,
-    "birth_place": "K"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kolarević",
@@ -225441,11 +225501,11 @@
   },
   {
     "last_name": "Kovauevski",
-    "middle_name": "",
+    "middle_name": "Đ",
     "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Kovauevski Milan",
-    "additional_info": "Đ. Srbin",
+    "fathers_name": "Đ",
+    "full_name": "Kovauevski Đ Milan",
+    "additional_info": "Srbin",
     "birth_year": "",
     "pdf_page": 227,
     "pdf_y": 376.5,
@@ -225453,9 +225513,9 @@
     "pdf_y_end": 383.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105340",
-    "ethnicity": "Srbin",
     "pdf_x_end": 397.7,
-    "birth_place": "Đ."
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Kovaćević",
@@ -225649,11 +225709,11 @@
   },
   {
     "last_name": "Kovaćić",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Lovro",
-    "fathers_name": "",
-    "full_name": "Kovaćić Lovro",
-    "additional_info": "P., Hrvat, poginuo",
+    "fathers_name": "P",
+    "full_name": "Kovaćić P Lovro",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 152,
@@ -225662,10 +225722,10 @@
     "pdf_y_end": 582.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105349",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 236.9,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kovaćić",
@@ -226149,11 +226209,11 @@
   },
   {
     "last_name": "Kovač",
-    "middle_name": "",
+    "middle_name": "F",
     "first_name": "Mato",
-    "fathers_name": "",
-    "full_name": "Kovač Mato",
-    "additional_info": "F. Hrvat",
+    "fathers_name": "F",
+    "full_name": "Kovač F Mato",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "prištapske jedinice",
     "pdf_page": 9,
@@ -226162,9 +226222,9 @@
     "pdf_y_end": 291.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105369",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 373.9,
-    "birth_place": "F."
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Kovač",
@@ -226210,10 +226270,10 @@
   },
   {
     "last_name": "Kovač",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Pavao",
-    "fathers_name": "Duro",
-    "full_name": "Kovač Dure Pavao",
+    "fathers_name": "Đuro",
+    "full_name": "Kovač Đure Pavao",
     "additional_info": "r. 1924, s. Donja Dubrava, Čakovec, Hrvat, radnik, NOV 1945.",
     "birth_year": "1924",
     "unit_detail": "udarna brigada Braća Radić",
@@ -226230,7 +226290,7 @@
     "other_sources": [
       {
         "soldier_id": "0058001320",
-        "name": "Kovač Dure Pavao",
+        "name": "Kovač Đure Pavao",
         "additional_info": "iz Donje Dubrave, Čakovec; od lipnja 1943. u KPO komandir Obrazovne čete.",
         "pdf_file": "kalnicki-odred.pdf",
         "pdf_page": 39,
@@ -227162,11 +227222,11 @@
   },
   {
     "last_name": "Kovačev",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Muo",
-    "fathers_name": "",
-    "full_name": "Kovačev Muo",
-    "additional_info": "S., Hrvat",
+    "fathers_name": "S",
+    "full_name": "Kovačev S Muo",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 193,
@@ -227175,17 +227235,17 @@
     "pdf_y_end": 277.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105409",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 387.9,
-    "birth_place": "S"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Kovačev",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Stjepan",
-    "fathers_name": "",
-    "full_name": "Kovačev Stjepan",
-    "additional_info": "S., Hrvat, poginuo",
+    "fathers_name": "S",
+    "full_name": "Kovačev S Stjepan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 111,
@@ -227194,10 +227254,10 @@
     "pdf_y_end": 343.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105410",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 250.2,
-    "birth_place": "S"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kovačev",
@@ -227219,11 +227279,11 @@
   },
   {
     "last_name": "Kovačev",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Vinko",
-    "fathers_name": "",
-    "full_name": "Kovačev Vinko",
-    "additional_info": "V., Hrvat",
+    "fathers_name": "V",
+    "full_name": "Kovačev V Vinko",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 111,
@@ -227232,9 +227292,9 @@
     "pdf_y_end": 353.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105412",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 213.8,
-    "birth_place": "V"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Kovačev",
@@ -227606,7 +227666,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 447.3,
-    "birth_place": "StjÄpana"
+    "birth_place": "Kozarevac, Nova Rača, Bjelovar"
   },
   {
     "last_name": "Kovačevič",
@@ -228367,11 +228427,11 @@
   },
   {
     "last_name": "Kovačić",
-    "middle_name": "",
+    "middle_name": "L",
     "first_name": "Luka",
-    "fathers_name": "",
-    "full_name": "Kovačić Luka",
-    "additional_info": "L., Hrvat, poginuo",
+    "fathers_name": "L",
+    "full_name": "Kovačić L Luka",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 111,
@@ -228380,10 +228440,10 @@
     "pdf_y_end": 529.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105454",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 241.8,
-    "birth_place": "L"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kovačić",
@@ -229162,7 +229222,7 @@
     "first_name": "Mirko",
     "fathers_name": "I",
     "full_name": "Kovačič I Mirko",
-    "additional_info": "I., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 47,
@@ -229184,10 +229244,10 @@
         "pdf_y_end": 221.1
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 234.1,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kovačič",
@@ -229211,11 +229271,11 @@
   },
   {
     "last_name": "Kovačič",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Tomo",
-    "fathers_name": "",
-    "full_name": "Kovačič Tomo",
-    "additional_info": "P., Hrvat, poginuo",
+    "fathers_name": "P",
+    "full_name": "Kovačič P Tomo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 47,
@@ -229224,10 +229284,10 @@
     "pdf_y_end": 266.9,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105482",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 233.1,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kovačič",
@@ -229321,7 +229381,7 @@
     "first_name": "Josip",
     "fathers_name": "J",
     "full_name": "Kovažile J Josip",
-    "additional_info": "J. Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "pdf_page": 227,
     "pdf_y": 385.8,
@@ -229342,9 +229402,9 @@
         "pdf_y_end": 419.3
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 381.7,
-    "birth_place": "J."
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Kovjanović",
@@ -229415,7 +229475,7 @@
     "first_name": "Ivan",
     "fathers_name": "I",
     "full_name": "Kozarić I Ivan",
-    "additional_info": "T., Hrvat, NOV 1944, poginuo 1944.",
+    "additional_info": "Hrvat, NOV 1944, poginuo 1944.",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 47,
     "pdf_y": 339.6,
@@ -229444,16 +229504,17 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
-    "death_date": "1944",
     "pdf_x_end": 266.5,
-    "birth_place": "T",
-    "death_place": "Žarkovo n r s",
+    "birth_place": "Pitomača, Djurdjevac",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1944",
     "borrowed": [
+      "birth_place",
       "birth_year",
       "death_place"
     ],
+    "death_place": "Žarkovo n r s",
     "birth_year": "1924"
   },
   {
@@ -229943,10 +230004,10 @@
   },
   {
     "last_name": "Košier",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Jakob",
-    "fathers_name": "Duro",
-    "full_name": "Košier Dure Jakob",
+    "fathers_name": "Đuro",
+    "full_name": "Košier Đure Jakob",
     "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
@@ -230959,11 +231020,11 @@
   },
   {
     "last_name": "Kožar",
-    "middle_name": "",
+    "middle_name": "T",
     "first_name": "Valent",
-    "fathers_name": "",
-    "full_name": "Kožar Valent",
-    "additional_info": "T., Hrvat, poginuo",
+    "fathers_name": "T",
+    "full_name": "Kožar T Valent",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 194,
@@ -230972,10 +231033,10 @@
     "pdf_y_end": 326.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105544",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 232.3,
-    "birth_place": "T"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kožina",
@@ -231259,7 +231320,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Krajačić Josip",
-    "additional_info": "zvani Prika; Hrvat, čl. KPJ, NOV 1942.",
+    "additional_info": "zvani Prika; zvani Prika; Hrvat, čl. KPJ, NOV 1942.",
     "birth_year": "",
     "unit_detail": "štab divizije",
     "pdf_page": 3,
@@ -231364,11 +231425,11 @@
   },
   {
     "last_name": "Krajačić",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Krajačić Branko",
-    "additional_info": "P., Hrvat, poginuo",
+    "fathers_name": "P",
+    "full_name": "Krajačić P Branko",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 47,
@@ -231377,10 +231438,10 @@
     "pdf_y_end": 187.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035105561",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 422.5,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Krajačić",
@@ -232783,11 +232844,11 @@
     ]
   },
   {
-    "last_name": "Kranjec-",
+    "last_name": "Kranjec",
     "middle_name": "Josipa",
     "first_name": "Antun",
     "fathers_name": "Josip",
-    "full_name": "Kranjec- Josipa Antun",
+    "full_name": "Kranjec Josipa Antun",
     "additional_info": "r. 1926, s. Donja Dubrava, Čakovec, Hrvat, poljopriv., čl. SKOJ-a, NOV 1945.",
     "birth_year": "1926",
     "unit_detail": "udarna brigada Braća Radić",
@@ -233090,13 +233151,13 @@
       {
         "soldier_id": "9036000817",
         "name": "Kranjćec (Alojza) Mirko",
-        "additional_info": "rođen 2. 2. 1921. u Radobojskim Bregima. poginuo 1944. kod Varaždinskih Toplica kao borac Zagorske brigade. KRAPINEC (Marka) MILIVOJ, rođen 1923. u Velikom Trgovišću, poginuo 1945. kao komandir voda u KNOJ-u.",
+        "additional_info": "rođen 2. 2. 1921. u Radobojskim Bregima. poginuo 1944. kod Varaždinskih Toplica kao borac Zagorske brigade.",
         "pdf_file": "hrvatsko-zagorje-1981.pdf",
         "pdf_page": 37,
         "pdf_x": 27.6,
         "pdf_y": 227.0,
         "pdf_x_end": 382.3,
-        "pdf_y_end": 268.6,
+        "pdf_y_end": 244.8,
         "ref_book": "hrvatsko-zagorje-1981"
       }
     ],
@@ -241140,10 +241201,10 @@
   },
   {
     "last_name": "Kucel",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Ivan",
-    "fathers_name": "Duro",
-    "full_name": "Kucel Dure Ivan",
+    "fathers_name": "Đuro",
+    "full_name": "Kucel Đure Ivan",
     "additional_info": "r. 1926, s. Ferdinandovac, Đurđevac, Hrvat, poljopriv., NOV 1944.",
     "birth_year": "1926",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
@@ -241298,7 +241359,7 @@
     "first_name": "Ivan",
     "fathers_name": "P",
     "full_name": "Kucelj P Ivan",
-    "additional_info": "P., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 153,
@@ -241321,10 +241382,10 @@
         "pdf_x_left": 355.4
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 235.6,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kucelj",
@@ -241332,7 +241393,7 @@
     "first_name": "Mijo",
     "fathers_name": "G",
     "full_name": "Kucelj G Mijo",
-    "additional_info": "G., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 153,
@@ -241354,10 +241415,10 @@
         "pdf_y_end": 290.4
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 238.3,
-    "birth_place": "G"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Kucelj",
@@ -245075,7 +245136,7 @@
     "first_name": "Jovan",
     "fathers_name": "J",
     "full_name": "Kurekaš J Jovan",
-    "additional_info": "J., Srbin",
+    "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 50,
@@ -245097,9 +245158,9 @@
         "pdf_y_end": 771.6
       }
     ],
-    "ethnicity": "Srbin",
     "pdf_x_end": 205.4,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Kuren",
@@ -251427,7 +251488,7 @@
     "first_name": "Martin",
     "fathers_name": "M",
     "full_name": "Legradić M Martin",
-    "additional_info": "M., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 154,
@@ -251449,10 +251510,10 @@
         "pdf_y_end": 300.2
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 242.7,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Legvart",
@@ -255659,7 +255720,7 @@
     "first_name": "Munib",
     "fathers_name": "Miie",
     "full_name": "Lisac Miie Munib",
-    "additional_info": "M. Musliman",
+    "additional_info": "Musliman",
     "birth_year": "",
     "pdf_page": 228,
     "pdf_y": 490.4,
@@ -255680,9 +255741,9 @@
         "pdf_y_end": 487.6
       }
     ],
-    "ethnicity": "Musliman",
     "pdf_x_end": 208.0,
-    "birth_place": "M."
+    "birth_place": "",
+    "ethnicity": "Musliman"
   },
   {
     "last_name": "Lisak",
@@ -255967,10 +256028,10 @@
   },
   {
     "last_name": "Lisjak",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Marko",
-    "fathers_name": "Duro",
-    "full_name": "Lisjak Dure Marko",
+    "fathers_name": "Đuro",
+    "full_name": "Lisjak Đure Marko",
     "additional_info": "r. 1927, s. Zaistovec, Križevci, Hrvat, poljopriv., NOV 1944, ranjen 1944.",
     "birth_year": "1927",
     "unit_detail": "brigada Matija Gubec",
@@ -257235,11 +257296,11 @@
   },
   {
     "soldier_id": "0035113833",
-    "last_name": "Ilonćar",
+    "last_name": "Lončar",
     "middle_name": "",
     "first_name": "Adam",
     "fathers_name": "",
-    "full_name": "Ilonćar Adam",
+    "full_name": "Lončar Adam",
     "additional_info": "r. 1921, Ivanec, Hrvat, poljopriv., NOV 1944.",
     "birth_year": "1921",
     "unit_detail": "I udarna zagorska brigada",
@@ -258832,11 +258893,11 @@
   },
   {
     "last_name": "Lovrenčević",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Lovrenčević Ivan",
-    "additional_info": "J., Hrvat",
+    "fathers_name": "J",
+    "full_name": "Lovrenčević J Ivan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 114,
@@ -258845,9 +258906,9 @@
     "pdf_y_end": 571.9,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035106510",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 386.0,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Lovrenčić",
@@ -259522,7 +259583,7 @@
     "pdf_page": 198,
     "pdf_y": 212.8,
     "pdf_x": 283.8,
-    "birth_place": "Pöljanica, Zaprešić",
+    "birth_place": "Poljanica, Zaprešić",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "pdf_x_end": 435.4,
@@ -263868,7 +263929,7 @@
     "first_name": "Vilim",
     "fathers_name": "J",
     "full_name": "Malen J Vilim",
-    "additional_info": "J., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 155,
@@ -263890,18 +263951,18 @@
         "pdf_y_end": 174.4
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 234.9,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Maletić",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Maletić Ivan",
-    "additional_info": "J., r. 1923, s. Ferdinandovac, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
+    "fathers_name": "J",
+    "full_name": "Maletić J Ivan",
+    "additional_info": "r. 1923, s. Ferdinandovac, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
     "birth_year": "1923",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 155,
@@ -263910,12 +263971,12 @@
     "pdf_y_end": 435.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035106706",
+    "pdf_x_end": 273.7,
+    "birth_place": "Ferdinandovac, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 273.7,
-    "birth_place": "J",
     "other_sources": [
       {
         "soldier_id": "9021005932",
@@ -266653,7 +266714,7 @@
     "first_name": "Martin",
     "fathers_name": "N",
     "full_name": "Maraga N Martin",
-    "additional_info": "M., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 155,
@@ -266675,9 +266736,9 @@
         "pdf_y_end": 802.0
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 216.8,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Marasek",
@@ -267467,7 +267528,7 @@
     "first_name": "Josip",
     "fathers_name": "K",
     "full_name": "Margalić K Josip",
-    "additional_info": "K., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 155,
@@ -267489,10 +267550,10 @@
         "pdf_y_end": 335.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 424.0,
-    "birth_place": "K"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Margarić",
@@ -268384,7 +268445,7 @@
     "first_name": "Martin",
     "fathers_name": "S",
     "full_name": "Marić S Martin",
-    "additional_info": "S., r. 1921, s. Molve, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
+    "additional_info": "r. 1921, s. Molve, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
     "birth_year": "1921",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 155,
@@ -268414,12 +268475,12 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_type": "poginuo",
+    "pdf_x_end": 452.6,
+    "birth_place": "Molve, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 452.6,
-    "birth_place": "S",
     "death_place": "Đurđevci šumari",
     "borrowed": [
       "death_place"
@@ -271381,7 +271442,7 @@
     "first_name": "Mihajlo",
     "fathers_name": "P",
     "full_name": "Martin P Mihajlo",
-    "additional_info": "P., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 200,
@@ -271403,9 +271464,9 @@
         "pdf_y_end": 804.4
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 198.1,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Martin",
@@ -271684,7 +271745,7 @@
     "first_name": "Mihajlo",
     "fathers_name": "P",
     "full_name": "Martini P Mihajlo",
-    "additional_info": "P. Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 55,
@@ -271706,10 +271767,10 @@
         "pdf_y_end": 185.5
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 428.7,
-    "birth_place": "P."
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Martinić",
@@ -276802,7 +276863,7 @@
     "first_name": "Drago",
     "fathers_name": "N",
     "full_name": "Mađarić N Drago",
-    "additional_info": "N., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 115,
@@ -276824,9 +276885,9 @@
         "pdf_y_end": 666.9
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 208.3,
-    "birth_place": "N"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Mađarić",
@@ -277354,7 +277415,7 @@
     "first_name": "Stjepan",
     "fathers_name": "S",
     "full_name": "Mađor S Stjepan",
-    "additional_info": "S., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 155,
@@ -277376,10 +277437,10 @@
         "pdf_y_end": 80.4
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 242.8,
-    "birth_place": "S"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Mašić",
@@ -281387,11 +281448,11 @@
   },
   {
     "last_name": "Mihouica",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Mihouica Branko",
-    "additional_info": "A. Hrvat, poginuo",
+    "fathers_name": "A",
+    "full_name": "Mihouica A Branko",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 57,
@@ -281400,10 +281461,10 @@
     "pdf_y_end": 151.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035107307",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 256.3,
-    "birth_place": "A."
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Mihouić",
@@ -282289,9 +282350,9 @@
   {
     "last_name": "Miklečič",
     "middle_name": "",
-    "first_name": "Duro",
+    "first_name": "Đuro",
     "fathers_name": "",
-    "full_name": "Miklečič Duro",
+    "full_name": "Miklečič Đuro",
     "additional_info": "S. Gornji Fodorovac, Križevci, Hrvat, poljopriv., NOV 1944.",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
@@ -284297,25 +284358,6 @@
     "pdf_x_end": 219.7
   },
   {
-    "last_name": "Milacki",
-    "middle_name": "",
-    "first_name": "Duro",
-    "fathers_name": "",
-    "full_name": "Milacki Duro",
-    "additional_info": "D., Hrvat",
-    "birth_year": "",
-    "unit_detail": "brigada Matija Gubec",
-    "pdf_page": 118,
-    "pdf_y": 642.4,
-    "pdf_x": 118.0,
-    "pdf_y_end": 649.4,
-    "pdf_file": "32-divizija-borci.pdf",
-    "soldier_id": "0035107412",
-    "ethnicity": "Hrvat",
-    "pdf_x_end": 203.4,
-    "birth_place": "D"
-  },
-  {
     "last_name": "Milak",
     "middle_name": "Jove",
     "first_name": "Božo",
@@ -284419,7 +284461,7 @@
     "first_name": "Petar",
     "fathers_name": "S",
     "full_name": "Milak S Petar",
-    "additional_info": "S., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 157,
@@ -284441,10 +284483,10 @@
         "pdf_y_end": 536.1
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 228.5,
-    "birth_place": "S"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Milaković",
@@ -286095,11 +286137,11 @@
   },
   {
     "last_name": "Miloš",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Anton",
-    "fathers_name": "",
-    "full_name": "Miloš Anton",
-    "additional_info": "A., Hrvat, poginuo",
+    "fathers_name": "A",
+    "full_name": "Miloš A Anton",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 57,
@@ -286108,10 +286150,10 @@
     "pdf_y_end": 439.3,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035107479",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 421.1,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Miloš",
@@ -286819,22 +286861,22 @@
   {
     "soldier_id": "0035113875",
     "last_name": "Miščenić",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Miščenić Branko",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Miščenić J Branko",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 58,
     "pdf_y": 306.9,
     "pdf_x": 111.7,
-    "birth_place": "J",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
+    "birth_place": "",
     "pdf_x_end": 236.7,
-    "pdf_y_end": 313.9
+    "pdf_y_end": 313.9,
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0035113874",
@@ -287159,11 +287201,11 @@
   },
   {
     "last_name": "Mirić",
-    "middle_name": "",
+    "middle_name": "I",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Mirić Ivan",
-    "additional_info": "I., Hrvat",
+    "fathers_name": "I",
+    "full_name": "Mirić I Ivan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 157,
@@ -287172,9 +287214,9 @@
     "pdf_y_end": 463.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035107508",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 186.9,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Mirić",
@@ -287544,7 +287586,7 @@
     "first_name": "Milan",
     "fathers_name": "Dj",
     "full_name": "Misirača Dj Milan",
-    "additional_info": "Đ., r. 1929, s. Bolč Farkaševac, Bjelovar, Srbin, poljopriv., čl. SKOJ-a, NOV 1943, poginuo",
+    "additional_info": "r. 1929, s. Bolč Farkaševac, Bjelovar, Srbin, poljopriv., čl. SKOJ-a, NOV 1943, poginuo",
     "birth_year": "1929",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 118,
@@ -287575,11 +287617,11 @@
       }
     ],
     "death_type": "poginuo",
+    "pdf_x_end": 448.8,
+    "birth_place": "Bolč Farkaševac, Bjelovar",
+    "party": "SKOJ",
     "ethnicity": "Srbin",
     "occupation": "poljoprivrednik",
-    "pdf_x_end": 448.8,
-    "birth_place": "Đ",
-    "party": "SKOJ",
     "death_date": "1945",
     "borrowed": [
       "death_date",
@@ -288228,11 +288270,11 @@
   },
   {
     "last_name": "Mišulin",
-    "middle_name": "",
+    "middle_name": "Đ",
     "first_name": "Andrija",
-    "fathers_name": "",
-    "full_name": "Mišulin Andrija",
-    "additional_info": "Đ., Hrvat, poginuo",
+    "fathers_name": "Đ",
+    "full_name": "Mišulin Đ Andrija",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 118,
@@ -288241,10 +288283,10 @@
     "pdf_y_end": 515.5,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035107545",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 423.3,
-    "birth_place": "Đ"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Mišulin",
@@ -288694,7 +288736,7 @@
     "first_name": "Martin",
     "fathers_name": "M",
     "full_name": "Mlinarić M Martin",
-    "additional_info": "M., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 58,
@@ -288716,9 +288758,9 @@
         "pdf_y_end": 335.2
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 206.0,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Mlinarić",
@@ -291994,10 +292036,10 @@
   },
   {
     "last_name": "Mudifaj",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Blaž",
-    "fathers_name": "Duro",
-    "full_name": "Mudifaj Dure Blaž",
+    "fathers_name": "Đuro",
+    "full_name": "Mudifaj Đure Blaž",
     "additional_info": "r. 1926, s. Jalševec, Hrvat, poljopriv., NOV 1944.",
     "birth_year": "1926",
     "unit_detail": "I udarna zagorska brigada",
@@ -292950,7 +292992,7 @@
     "ethnicity": "Hrvat",
     "occupation": "službenik",
     "pdf_x_end": 275.7,
-    "birth_place": "Muričevac--Očura, Ivanec",
+    "birth_place": "Muričevac-Očura, Ivanec",
     "rank": "zamjenik komandanta",
     "party": "KPJ"
   },
@@ -295089,10 +295131,10 @@
   },
   {
     "last_name": "Navoj",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Valent",
-    "fathers_name": "Dura",
-    "full_name": "Navoj Dure Valent",
+    "fathers_name": "Đura",
+    "full_name": "Navoj Đure Valent",
     "additional_info": "r. 1909, s. Obrež, Križevci, Hrvat, poljopriv., NOV 1944.",
     "birth_year": "1909",
     "unit_detail": "udarna brigada Braća Radić",
@@ -295526,10 +295568,10 @@
   },
   {
     "last_name": "Nemet",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Mato",
-    "fathers_name": "Duro",
-    "full_name": "Nemet Dure Mato",
+    "fathers_name": "Đuro",
+    "full_name": "Nemet Đure Mato",
     "additional_info": "r. 1926, s. Bedenička, Bjelovar, Mađar, poljopriv., NOV 1944.",
     "birth_year": "1926",
     "unit_detail": "udarna brigada Braća Radić",
@@ -297120,10 +297162,10 @@
   },
   {
     "last_name": "Novak",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Albert",
-    "fathers_name": "Duro",
-    "full_name": "Novak Dure Albert",
+    "fathers_name": "Đuro",
+    "full_name": "Novak Đure Albert",
     "additional_info": "r. 1911, s. Hodošan, Hrvat, radnik, čl. KPJ, NOV 1941, ranjen 1942.",
     "birth_year": "1911",
     "unit_detail": "udarna brigada Braća Radić",
@@ -303416,10 +303458,10 @@
   },
   {
     "last_name": "Osman",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Luka",
-    "fathers_name": "Duro",
-    "full_name": "Osman Dure Luka",
+    "fathers_name": "Đuro",
+    "full_name": "Osman Đure Luka",
     "additional_info": "r. 1922, s. Kozarevac, Đurđevac, Hrvat, poljopriv., čl. KPJ, NOV 1944, poginuo 1944.",
     "birth_year": "1922",
     "unit_detail": "udarna brigada Braća Radić",
@@ -305450,12 +305492,12 @@
     "pdf_x_end": 253.5
   },
   {
-    "last_name": "Ožboltivan",
+    "last_name": "Ožbolt",
     "middle_name": "Filipa",
-    "first_name": "-Sokol",
+    "first_name": "Ivan",
     "fathers_name": "Filip",
-    "full_name": "Ožboltivan Filipa -Sokol",
-    "additional_info": "r. 1915, s. Gerovo, Čabar, Hrvat, radnik, čl. KPJ, NOV 1941, ranjen",
+    "full_name": "Ožbolt Filipa Ivan",
+    "additional_info": "zvani Sokol; r. 1915, s. Gerovo, Čabar, Hrvat, radnik, čl. KPJ, NOV 1941, ranjen",
     "birth_year": "1915",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 121,
@@ -305464,11 +305506,11 @@
     "pdf_y_end": 319.4,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035108129",
-    "ethnicity": "Hrvat",
-    "occupation": "radnik",
     "pdf_x_end": 271.2,
+    "party": "KPJ",
     "birth_place": "Gerovo, Čabar",
-    "party": "KPJ"
+    "ethnicity": "Hrvat",
+    "occupation": "radnik"
   },
   {
     "last_name": "Ožeg",
@@ -307804,11 +307846,11 @@
   },
   {
     "last_name": "Panjkota",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Ante",
-    "fathers_name": "",
-    "full_name": "Panjkota Ante",
-    "additional_info": "A., r. 1926, Hrvat, učenik, čl. SKOJ-a, NOV 1943.",
+    "fathers_name": "A",
+    "full_name": "Panjkota A Ante",
+    "additional_info": "r. 1926, Hrvat, učenik, čl. SKOJ-a, NOV 1943.",
     "birth_year": "1926",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 61,
@@ -307817,10 +307859,8 @@
     "pdf_y_end": 260.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035108215",
-    "ethnicity": "Hrvat",
-    "occupation": "učenik",
     "pdf_x_end": 451.4,
-    "birth_place": "A",
+    "birth_place": "",
     "other_sources": [
       {
         "soldier_id": "0035200383",
@@ -307849,7 +307889,9 @@
       }
     ],
     "rank": "politički komesar",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "ethnicity": "Hrvat",
+    "occupation": "učenik"
   },
   {
     "last_name": "Panjković",
@@ -308410,7 +308452,7 @@
     "first_name": "Martin",
     "fathers_name": "M",
     "full_name": "Papeć M Martin",
-    "additional_info": "M., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 158,
@@ -308432,10 +308474,10 @@
         "pdf_y_end": 247.9
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 414.1,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Papić",
@@ -313510,11 +313552,11 @@
   },
   {
     "last_name": "Pavlović",
-    "middle_name": "",
+    "middle_name": "T",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Pavlović Petar",
-    "additional_info": "T., Hrvat, poginuo",
+    "fathers_name": "T",
+    "full_name": "Pavlović T Petar",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 122,
@@ -313523,10 +313565,10 @@
     "pdf_y_end": 409.1,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035108414",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 231.5,
-    "birth_place": "T"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Pavlović",
@@ -317567,20 +317609,18 @@
   {
     "soldier_id": "0035113929",
     "last_name": "Petrakov",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Petrakov Ivan",
-    "additional_info": "S., Hrvat, poginuo",
+    "fathers_name": "S",
+    "full_name": "Petrakov S Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 159,
     "pdf_y": 190.3,
     "pdf_x": 298.8,
-    "birth_place": "S",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
+    "birth_place": "",
     "pdf_x_end": 418.1,
     "pdf_y_end": 197.3,
     "other_sources": [
@@ -317595,7 +317635,9 @@
         "pdf_x_end": 560.2,
         "pdf_y_end": 101.7
       }
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "soldier_id": "0035113928",
@@ -325492,7 +325534,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 266.4,
-    "birth_place": "Losovac--Nova Rača, Bjelovar"
+    "birth_place": "Losovac-Nova Rača, Bjelovar"
   },
   {
     "last_name": "Podboj",
@@ -325771,11 +325813,11 @@
   },
   {
     "last_name": "Podravac",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Vinko",
-    "fathers_name": "",
-    "full_name": "Podravac Vinko",
-    "additional_info": "M., Hrvat, poginuo",
+    "fathers_name": "M",
+    "full_name": "Podravac M Vinko",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 160,
@@ -325784,10 +325826,10 @@
     "pdf_y_end": 159.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035108837",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 239.4,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Podravec",
@@ -328783,7 +328825,7 @@
     "first_name": "Pero",
     "fathers_name": "I",
     "full_name": "Popović I Pero",
-    "additional_info": "I., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 160,
@@ -328805,9 +328847,9 @@
         "pdf_y_end": 154.5
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 188.7,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Popović",
@@ -328944,7 +328986,7 @@
     "first_name": "Stevo",
     "fathers_name": "P",
     "full_name": "Popovič P Stevo",
-    "additional_info": "P., Srbin",
+    "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 65,
@@ -328966,9 +329008,9 @@
         "pdf_y_end": 185.4
       }
     ],
-    "ethnicity": "Srbin",
     "pdf_x_end": 384.1,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Popovič",
@@ -329289,10 +329331,10 @@
   },
   {
     "last_name": "Porkulabič",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Josip",
-    "fathers_name": "Duro",
-    "full_name": "Porkulabič Dure Josip",
+    "fathers_name": "Đuro",
+    "full_name": "Porkulabič Đure Josip",
     "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
@@ -329861,7 +329903,7 @@
     "full_name": "Posavec Ivana Petar",
     "additional_info": "r. 1926, s. Semovci, Đurđevac, Hrvat, poljopriv., NOV 1944, ranjen",
     "birth_year": "1926",
-    "unit_detail": "udarna brigada Braća Radić",
+    "unit_detail": "",
     "pdf_page": 65,
     "pdf_y": 661.0,
     "pdf_x": 301.3,
@@ -329882,7 +329924,7 @@
       }
     ],
     "pdf_x_end": 452.8,
-    "party": "KPJ",
+    "party": "",
     "birth_place": "Semovci, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik"
@@ -332207,10 +332249,10 @@
   },
   {
     "last_name": "Požgaj",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Josip",
-    "fathers_name": "Duro",
-    "full_name": "Požgaj Dure Josip",
+    "fathers_name": "Đuro",
+    "full_name": "Požgaj Đure Josip",
     "additional_info": "r. 1928, s. Gornja Selnica, Zlatar Bistrica, Hrvat, poljopriv., čl. SKOJ-a, NOV 1944.",
     "birth_year": "1928",
     "unit_detail": "I udarna zagorska brigada",
@@ -338166,10 +338208,10 @@
   },
   {
     "last_name": "Punčikar",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Tomo",
-    "fathers_name": "Duro",
-    "full_name": "Punčikar Dure Tomo",
+    "fathers_name": "Đuro",
+    "full_name": "Punčikar Đure Tomo",
     "additional_info": "r. 1927, s. Donja Dubrava, Čakovec, Hrvat, radnik, NOV 1945.",
     "birth_year": "1927",
     "unit_detail": "udarna brigada Braća Radić",
@@ -339717,12 +339759,11 @@
   },
   {
     "last_name": "Rabadija",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Valent",
-    "fathers_name": "",
-    "full_name": "Rabadija Valent",
-    "additional_info": "J. r. 1928, s. Kalinovac, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
-    "birth_year": "",
+    "fathers_name": "J",
+    "full_name": "Rabadija J Valent",
+    "additional_info": "r. 1928, s. Kalinovac, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 67,
     "pdf_y": 315.1,
@@ -339730,11 +339771,28 @@
     "pdf_y_end": 341.3,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035109322",
+    "pdf_x_end": 449.1,
+    "birth_place": "Kalinovac, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 449.1
+    "other_sources": [
+      {
+        "soldier_id": "9021005958",
+        "name": "Rabađija (Jpsip) Valent",
+        "additional_info": "rođen 1928, Kalinovac (Djurdjevac). Hrvat, poginuo 1945. u NOBu, Vel barna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=271",
+        "source_page": 271,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "death_place": "Vel barna",
+    "borrowed": [
+      "birth_year",
+      "death_place"
+    ],
+    "birth_year": "1928"
   },
   {
     "last_name": "Rabadija",
@@ -341772,19 +341830,18 @@
   {
     "soldier_id": "0035113957",
     "last_name": "Radičević",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Radičević Ivan",
-    "additional_info": "P., Hrvat",
+    "fathers_name": "P",
+    "full_name": "Radičević P Ivan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_file": "32-divizija-borci.pdf",
     "pdf_page": 68,
     "pdf_y": 232.7,
     "pdf_x": 123.5,
-    "birth_place": "P",
-    "ethnicity": "Hrvat",
+    "birth_place": "",
     "pdf_x_end": 210.8,
     "pdf_y_end": 239.7,
     "other_sources": [
@@ -341799,7 +341856,8 @@
         "pdf_x_end": 437.6,
         "pdf_y_end": 407.5
       }
-    ]
+    ],
+    "ethnicity": "Hrvat"
   },
   {
     "soldier_id": "0035113956",
@@ -344040,7 +344098,7 @@
     "first_name": "Stevo",
     "fathers_name": "I",
     "full_name": "Rakiota I Stevo",
-    "additional_info": "I., Srbin, poginuo",
+    "additional_info": "Srbin, poginuo",
     "birth_year": "",
     "pdf_page": 229,
     "pdf_y": 368.5,
@@ -344061,10 +344119,10 @@
         "pdf_y_end": 438.9
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Srbin",
     "pdf_x_end": 421.5,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Rakitnian",
@@ -345400,7 +345458,7 @@
       }
     ],
     "pdf_x_end": 372.7,
-    "birth_place": "Hrvat <",
+    "birth_place": "",
     "ethnicity": "Hrvat"
   },
   {
@@ -346342,11 +346400,11 @@
   },
   {
     "last_name": "Relin",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Novica",
-    "fathers_name": "",
-    "full_name": "Relin Novica",
-    "additional_info": "A., Srbin, poginuo",
+    "fathers_name": "A",
+    "full_name": "Relin A Novica",
+    "additional_info": "Srbin, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 69,
@@ -346355,10 +346413,10 @@
     "pdf_y_end": 169.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035109539",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
     "pdf_x_end": 242.4,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Relić",
@@ -348176,7 +348234,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 441.4,
-    "birth_place": "Potok--Popovača, Kutina"
+    "birth_place": "Potok-Popovača, Kutina"
   },
   {
     "last_name": "Rićković",
@@ -350506,11 +350564,11 @@
   },
   {
     "last_name": "Roštan",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Martin",
-    "fathers_name": "",
-    "full_name": "Roštan Martin",
-    "additional_info": "A., r. 1922, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
+    "fathers_name": "A",
+    "full_name": "Roštan A Martin",
+    "additional_info": "r. 1922, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
     "birth_year": "1922",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 162,
@@ -350519,12 +350577,26 @@
     "pdf_y_end": 192.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035109696",
+    "pdf_x_end": 257.8,
+    "birth_place": "Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 257.8,
-    "birth_place": "A"
+    "other_sources": [
+      {
+        "soldier_id": "9021005908",
+        "name": "Roštan (Antun) Martin",
+        "additional_info": "rođen 1922, Đurđevac (Djurdjevac). Hrvat, poginuo 1945. u NOBu, Šuplja lipa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=270",
+        "source_page": 270,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "death_place": "Šuplja lipa",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Roštovac",
@@ -352184,7 +352256,7 @@
     "first_name": "Dragutin",
     "fathers_name": "I",
     "full_name": "Rupčić I Dragutin",
-    "additional_info": "I., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 127,
@@ -352206,9 +352278,9 @@
         "pdf_y_end": 249.3
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 217.2,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Rupčić",
@@ -352232,11 +352304,11 @@
   },
   {
     "last_name": "Rupčić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Rupčić Ivan",
-    "additional_info": "M., Hrvat",
+    "fathers_name": "M",
+    "full_name": "Rupčić M Ivan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 162,
@@ -352245,9 +352317,9 @@
     "pdf_y_end": 420.4,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035109759",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 185.3,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Rupčić",
@@ -352969,11 +353041,11 @@
   },
   {
     "last_name": "Rušak",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Josip",
-    "fathers_name": "",
-    "full_name": "Rušak Josip",
-    "additional_info": "V., Hrvat, poginuo",
+    "fathers_name": "V",
+    "full_name": "Rušak V Josip",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 127,
@@ -352982,10 +353054,10 @@
     "pdf_y_end": 437.0,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035109787",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 234.8,
-    "birth_place": "V"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Rušec",
@@ -353142,7 +353214,7 @@
     "first_name": "Andrija",
     "fathers_name": "I",
     "full_name": "Ružić I Andrija",
-    "additional_info": "I., r. 1920, s. Ferdinandovac, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
+    "additional_info": "r. 1920, s. Ferdinandovac, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
     "birth_year": "1920",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 162,
@@ -353172,12 +353244,12 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_type": "poginuo",
+    "pdf_x_end": 257.5,
+    "birth_place": "Ferdinandovac, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "death_type": "poginuo",
     "death_date": "1944",
-    "pdf_x_end": 257.5,
-    "birth_place": "I",
     "death_place": "Radetić brdo",
     "borrowed": [
       "death_place"
@@ -353251,7 +353323,7 @@
     "first_name": "Nikola",
     "fathers_name": "P",
     "full_name": "Ružićić P Nikola",
-    "additional_info": "P., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 127,
@@ -353273,9 +353345,9 @@
         "pdf_y_end": 531.6
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 212.7,
-    "birth_place": "P"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Ružič",
@@ -360281,11 +360353,11 @@
   },
   {
     "last_name": "Sever",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Slavko",
-    "fathers_name": "",
-    "full_name": "Sever Slavko",
-    "additional_info": "J., r. 1920, Ivanec, Hrvat, poljopriv., NOV 1944.",
+    "fathers_name": "J",
+    "full_name": "Sever J Slavko",
+    "additional_info": "r. 1920, Ivanec, Hrvat, poljopriv., NOV 1944.",
     "birth_year": "1920",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 71,
@@ -360294,10 +360366,10 @@
     "pdf_y_end": 517.6,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035110051",
-    "ethnicity": "Hrvat",
-    "occupation": "poljoprivrednik",
     "pdf_x_end": 454.4,
-    "birth_place": "J"
+    "birth_place": "Ivanec",
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik"
   },
   {
     "last_name": "Sever",
@@ -362363,7 +362435,7 @@
     "first_name": "Florijan",
     "fathers_name": "A",
     "full_name": "Sitek A Florijan",
-    "additional_info": "A., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 163,
@@ -362385,10 +362457,10 @@
         "pdf_y_end": 564.5
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 238.3,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Sivonjec",
@@ -362641,11 +362713,11 @@
   },
   {
     "last_name": "Skafec",
-    "middle_name": "",
+    "middle_name": "B",
     "first_name": "",
-    "fathers_name": "",
-    "full_name": "Skafec",
-    "additional_info": "B., Hrvat",
+    "fathers_name": "B",
+    "full_name": "Skafec B",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "pdf_page": 230,
     "pdf_y": 556.7,
@@ -362653,9 +362725,9 @@
     "pdf_y_end": 563.7,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035110138",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 166.4,
-    "birth_place": "B"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Skak",
@@ -367245,11 +367317,11 @@
   },
   {
     "last_name": "Sobota",
-    "middle_name": "",
+    "middle_name": "I",
     "first_name": "Martin",
-    "fathers_name": "",
-    "full_name": "Sobota Martin",
-    "additional_info": "I., r. 1910, s. Kalinovac, Đurđevac, Hrvat, obrtnik trgovac, NOV 1944, poginuo 1944.",
+    "fathers_name": "I",
+    "full_name": "Sobota I Martin",
+    "additional_info": "r. 1910, s. Kalinovac, Đurđevac, Hrvat, obrtnik trgovac, NOV 1944, poginuo 1944.",
     "birth_year": "1910",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 163,
@@ -367258,12 +367330,12 @@
     "pdf_y_end": 592.7,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035110301",
+    "pdf_x_end": 269.5,
+    "birth_place": "Kalinovac, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "obrtnik trgovac",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_x_end": 269.5,
-    "birth_place": "I"
+    "death_date": "1944"
   },
   {
     "last_name": "Sobota",
@@ -373636,11 +373708,11 @@
   },
   {
     "last_name": "Stjepanović",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Stjepanović Ivan",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Stjepanović J Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 129,
@@ -373649,10 +373721,10 @@
     "pdf_y_end": 521.8,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035110518",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 421.3,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Stjepanović",
@@ -373823,10 +373895,10 @@
   },
   {
     "last_name": "Stojkov",
-    "middle_name": "Doke",
+    "middle_name": "Đoke",
     "first_name": "Milan",
-    "fathers_name": "Doka",
-    "full_name": "Stojkov Doke Milan",
+    "fathers_name": "Đoka",
+    "full_name": "Stojkov Đoke Milan",
     "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
@@ -378758,10 +378830,10 @@
   {
     "soldier_id": "0035114039",
     "last_name": "Šafran",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Ivan",
-    "fathers_name": "Duro",
-    "full_name": "Šafran Dure Ivan",
+    "fathers_name": "Đuro",
+    "full_name": "Šafran Đure Ivan",
     "additional_info": "r. 1925, s. Dubrovčak Lijevi, Ivanić Grad, Hrvat, učenik, čl. SKOJ-a, NOV 1943.",
     "birth_year": "1925",
     "unit_detail": "brigada Matija Gubec",
@@ -383741,11 +383813,11 @@
   },
   {
     "last_name": "Tomac",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Tomac Ivan",
-    "additional_info": "J., Hrvat",
+    "fathers_name": "J",
+    "full_name": "Tomac J Ivan",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 134,
@@ -383754,9 +383826,9 @@
     "pdf_y_end": 186.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035110845",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 368.0,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Tomac",
@@ -385974,11 +386046,11 @@
   },
   {
     "last_name": "Topolovćan",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Martin",
-    "fathers_name": "",
-    "full_name": "Topolovćan Martin",
-    "additional_info": "J., r. 1919, s. Kloštar Podravski, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
+    "fathers_name": "J",
+    "full_name": "Topolovćan J Martin",
+    "additional_info": "r. 1919, s. Kloštar Podravski, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1945.",
     "birth_year": "1919",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 166,
@@ -386008,12 +386080,12 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_type": "poginuo",
+    "pdf_x_end": 438.9,
+    "birth_place": "Kloštar Podravski, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "death_type": "poginuo",
     "death_date": "1945",
-    "pdf_x_end": 438.9,
-    "birth_place": "J",
     "death_place": "Mala barna",
     "borrowed": [
       "death_place"
@@ -386195,7 +386267,7 @@
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 444.1,
-    "birth_place": "Mirlović--Zagora, Drniš",
+    "birth_place": "Mirlović-Zagora, Drniš",
     "party": "SKOJ"
   },
   {
@@ -386372,7 +386444,7 @@
     "first_name": "Dragutin",
     "fathers_name": "I",
     "full_name": "Tot I Dragutin",
-    "additional_info": "I., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 166,
@@ -386394,9 +386466,9 @@
         "pdf_y_end": 306.2
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 369.8,
-    "birth_place": "I"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Tot",
@@ -386431,11 +386503,11 @@
   },
   {
     "last_name": "Tot",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Lovro",
-    "fathers_name": "",
-    "full_name": "Tot Lovro",
-    "additional_info": "S., r. 1921, s. Prugovac, Đurđevac, Mađar, poljopriv., NOV 1944, poginuo 1945.",
+    "fathers_name": "S",
+    "full_name": "Tot S Lovro",
+    "additional_info": "r. 1921, s. Prugovac, Đurđevac, Mađar, poljopriv., NOV 1944, poginuo 1945.",
     "birth_year": "1921",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 166,
@@ -386457,12 +386529,12 @@
         "pdf_y_end": 348.0
       }
     ],
-    "death_type": "poginuo",
+    "pdf_x_end": 439.0,
+    "birth_place": "Prugovac, Đurđevac",
     "ethnicity": "Mađar",
     "occupation": "poljoprivrednik",
-    "death_date": "1945",
-    "pdf_x_end": 439.0,
-    "birth_place": "S"
+    "death_type": "poginuo",
+    "death_date": "1945"
   },
   {
     "last_name": "Tot",
@@ -387844,11 +387916,11 @@
   },
   {
     "last_name": "Trkunić",
-    "middle_name": "",
+    "middle_name": "R",
     "first_name": "Rado",
-    "fathers_name": "",
-    "full_name": "Trkunić Rado",
-    "additional_info": "R., Srbin, poginuo",
+    "fathers_name": "R",
+    "full_name": "Trkunić R Rado",
+    "additional_info": "Srbin, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 166,
@@ -387857,10 +387929,10 @@
     "pdf_y_end": 533.7,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035110994",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
     "pdf_x_end": 405.7,
-    "birth_place": "R"
+    "birth_place": "",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Trkuu",
@@ -389430,7 +389502,7 @@
     "first_name": "Đuro",
     "fathers_name": "I",
     "full_name": "Tuba I Đuro",
-    "additional_info": "I., r. 1911, s. Molve, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
+    "additional_info": "r. 1911, s. Molve, Đurđevac, Hrvat, poljopriv., NOV 1944, poginuo 1944.",
     "birth_year": "1911",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 167,
@@ -389460,12 +389532,12 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_type": "poginuo",
+    "pdf_x_end": 271.5,
+    "birth_place": "Molve, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
+    "death_type": "poginuo",
     "death_date": "1944",
-    "pdf_x_end": 271.5,
-    "birth_place": "I",
     "death_place": "Pod kloštren",
     "borrowed": [
       "death_place"
@@ -389962,11 +390034,11 @@
   },
   {
     "last_name": "Tudić",
-    "middle_name": "",
+    "middle_name": "N",
     "first_name": "Slavko",
-    "fathers_name": "",
-    "full_name": "Tudić Slavko",
-    "additional_info": "N. r. 1929, s. Prugovac, Đurđevac, Hrvat, poljopriv., NOV 1943, poginuo 1944.",
+    "fathers_name": "N",
+    "full_name": "Tudić N Slavko",
+    "additional_info": "r. 1929, s. Prugovac, Đurđevac, Hrvat, poljopriv., NOV 1943, poginuo 1944.",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 81,
     "pdf_y": 428.5,
@@ -389974,11 +390046,12 @@
     "pdf_y_end": 454.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035111065",
+    "pdf_x_end": 277.6,
+    "birth_place": "Prugovac, Đurđevac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "pdf_x_end": 277.6,
     "other_sources": [
       {
         "soldier_id": "9021006097",
@@ -389989,13 +390062,11 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "birth_place": "Prugovac, Djurdjevac",
+    "death_place": "Jakojovac",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "death_place"
     ],
-    "death_place": "Jakojovac",
     "birth_year": "1929"
   },
   {
@@ -390021,11 +390092,11 @@
   },
   {
     "last_name": "Tudić",
-    "middle_name": "",
+    "middle_name": "M",
     "first_name": "Slavko",
-    "fathers_name": "",
-    "full_name": "Tudić Slavko",
-    "additional_info": "M., Hrvat, poginuo",
+    "fathers_name": "M",
+    "full_name": "Tudić M Slavko",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 167,
@@ -390034,10 +390105,10 @@
     "pdf_y_end": 198.4,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035111067",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 238.9,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Tudić",
@@ -398054,11 +398125,11 @@
   },
   {
     "last_name": "Varović",
-    "middle_name": "",
+    "middle_name": "S",
     "first_name": "Stjepan",
-    "fathers_name": "",
-    "full_name": "Varović Stjepan",
-    "additional_info": "zvani Dako; S., Hrvat, čl. KPJ, poginuo",
+    "fathers_name": "S",
+    "full_name": "Varović S Stjepan",
+    "additional_info": "zvani Dako; Hrvat, čl. KPJ, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 136,
@@ -398069,7 +398140,7 @@
     "soldier_id": "0035111356",
     "pdf_x_end": 265.4,
     "party": "KPJ",
-    "birth_place": "S",
+    "birth_place": "",
     "ethnicity": "Hrvat",
     "death_type": "poginuo"
   },
@@ -401652,7 +401723,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "pdf_x_end": 269.8,
-    "birth_place": "Lug--Poznanovec, Zabok",
+    "birth_place": "Lug-Poznanovec, Zabok",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -401685,7 +401756,7 @@
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035111485",
     "pdf_x_end": 269.5,
-    "birth_place": "Lug--Poznanovec, Zabok",
+    "birth_place": "Lug-Poznanovec, Zabok",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
     "death_type": "poginuo",
@@ -407421,7 +407492,7 @@
     "first_name": "Stevo",
     "fathers_name": "J",
     "full_name": "Vodopija J Stevo",
-    "additional_info": "J., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 137,
@@ -407443,9 +407514,9 @@
         "pdf_y_end": 753.6
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 392.1,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Vodopijeć",
@@ -409220,11 +409291,11 @@
   },
   {
     "last_name": "Vranešević",
-    "middle_name": "",
+    "middle_name": "T",
     "first_name": "Svetozar",
-    "fathers_name": "",
-    "full_name": "Vranešević Svetozar",
-    "additional_info": "T., Srbin",
+    "fathers_name": "T",
+    "full_name": "Vranešević T Svetozar",
+    "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 137,
@@ -409233,9 +409304,9 @@
     "pdf_y_end": 433.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035111739",
-    "ethnicity": "Srbin",
     "pdf_x_end": 411.1,
-    "birth_place": "T"
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vranić",
@@ -409716,13 +409787,13 @@
       {
         "soldier_id": "9036001652",
         "name": "Vražić (Mije) Edo",
-        "additional_info": "rođen 1924. u Humu na Sutli, poginuo 1944. na putu za pilotsku školu. VRAŽIĆ (Alojza) MAKS, rođen 1918. u Brezovoj Gori, poginuo 23. 12. 1944. kao član KPJ i aktivist NOB-a.",
+        "additional_info": "rođen 1924. u Humu na Sutli, poginuo 1944. na putu za pilotsku školu.",
         "pdf_file": "hrvatsko-zagorje-1981.pdf",
         "pdf_page": 74,
         "pdf_x": 19.0,
         "pdf_y": 458.1,
-        "pdf_x_end": 376.1,
-        "pdf_y_end": 494.4,
+        "pdf_x_end": 374.1,
+        "pdf_y_end": 474.5,
         "role": "activist",
         "ref_book": "hrvatsko-zagorje-1981"
       }
@@ -412037,7 +412108,7 @@
     "first_name": "Đuro",
     "fathers_name": "N",
     "full_name": "Vugrinović N Đuro",
-    "additional_info": "N., Srbin",
+    "additional_info": "Srbin",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 168,
@@ -412059,9 +412130,9 @@
         "pdf_y_end": 795.3
       }
     ],
-    "ethnicity": "Srbin",
     "pdf_x_end": 380.5,
-    "birth_place": "N"
+    "birth_place": "",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vugrinćić",
@@ -412595,7 +412666,7 @@
     "first_name": "Nikola",
     "fathers_name": "G",
     "full_name": "Vujčić G Nikola",
-    "additional_info": "Đ., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 85,
@@ -412617,10 +412688,10 @@
         "pdf_y_end": 154.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 417.7,
-    "birth_place": "Đ"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Vujčetić",
@@ -414163,11 +414234,11 @@
   },
   {
     "last_name": "Vuković",
-    "middle_name": "",
+    "middle_name": "T",
     "first_name": "Adam",
-    "fathers_name": "",
-    "full_name": "Vuković Adam",
-    "additional_info": "T., Hrvat",
+    "fathers_name": "T",
+    "full_name": "Vuković T Adam",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 138,
@@ -414176,9 +414247,9 @@
     "pdf_y_end": 640.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035111919",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 198.3,
-    "birth_place": "T"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Vuković",
@@ -416419,7 +416490,7 @@
     "first_name": "Josip",
     "fathers_name": "E",
     "full_name": "Weiss E Josip",
-    "additional_info": "E.,Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 88,
@@ -416441,10 +416512,10 @@
         "pdf_y_end": 321.1
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 218.9,
-    "birth_place": "E"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Winter",
@@ -421137,10 +421208,10 @@
   },
   {
     "last_name": "Zormanič",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Andrija",
-    "fathers_name": "Duro",
-    "full_name": "Zormanič Dure Andrija",
+    "fathers_name": "Đuro",
+    "full_name": "Zormanič Đure Andrija",
     "additional_info": "r. 1920, s. Svibovec, Novi Marof, Hrvat, radnik, čl. KPJ, NOV 1944.",
     "birth_year": "1920",
     "unit_detail": "I udarna zagorska brigada",
@@ -423658,7 +423729,7 @@
     "first_name": "Marko",
     "fathers_name": "M",
     "full_name": "Čanković M Marko",
-    "additional_info": "M., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 96,
@@ -423680,10 +423751,10 @@
         "pdf_y_end": 115.2
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 238.4,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Čanković",
@@ -423691,7 +423762,7 @@
     "first_name": "Milan",
     "fathers_name": "M",
     "full_name": "Čanković M Milan",
-    "additional_info": "M., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 96,
@@ -423713,10 +423784,10 @@
         "pdf_y_end": 126.0
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 235.6,
-    "birth_place": "M"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Čanković",
@@ -426120,11 +426191,11 @@
   },
   {
     "last_name": "Černeli",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Černeli Ivan",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Černeli J Ivan",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
     "pdf_page": 143,
@@ -426133,10 +426204,10 @@
     "pdf_y_end": 445.4,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035112323",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 410.9,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Černeli",
@@ -429262,10 +429333,10 @@
   },
   {
     "last_name": "Čurčič",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Anđelko",
-    "fathers_name": "Duro",
-    "full_name": "Čurčič Dure Anđelko",
+    "fathers_name": "Đuro",
+    "full_name": "Čurčič Đure Anđelko",
     "additional_info": "r. 1922, s. Banoštar, Beočin, Srbin, poljopriv., NOV 1944, ranjen 1944.",
     "birth_year": "1922",
     "unit_detail": "I udarna zagorska brigada",
@@ -430460,7 +430531,7 @@
     "first_name": "Šaćir",
     "fathers_name": "A",
     "full_name": "Đipa A Šaćir",
-    "additional_info": "A., Musliman",
+    "additional_info": "Musliman",
     "birth_year": "",
     "pdf_page": 225,
     "pdf_y": 264.9,
@@ -430481,9 +430552,9 @@
         "pdf_y_end": 628.8
       }
     ],
-    "ethnicity": "Musliman",
     "pdf_x_end": 382.9,
-    "birth_place": "A"
+    "birth_place": "",
+    "ethnicity": "Musliman"
   },
   {
     "last_name": "Đipalo",
@@ -434351,7 +434422,7 @@
     "first_name": "Stjepan",
     "fathers_name": "R",
     "full_name": "Šanteković R Stjepan",
-    "additional_info": "R., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 213,
@@ -434373,9 +434444,9 @@
         "pdf_y_end": 164.4
       }
     ],
-    "ethnicity": "Hrvat",
     "pdf_x_end": 408.0,
-    "birth_place": "R"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Šanteković",
@@ -447219,11 +447290,11 @@
   },
   {
     "last_name": "Špegeu",
-    "middle_name": "",
+    "middle_name": "V",
     "first_name": "Simo",
-    "fathers_name": "",
-    "full_name": "Špegeu Simo",
-    "additional_info": "V., Hrvat",
+    "fathers_name": "V",
+    "full_name": "Špegeu V Simo",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 133,
@@ -447232,9 +447303,9 @@
     "pdf_y_end": 367.1,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035113052",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 210.0,
-    "birth_place": "V"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Špeljak",
@@ -450289,11 +450360,11 @@
   },
   {
     "last_name": "Štefanovič",
-    "middle_name": "",
+    "middle_name": "D",
     "first_name": "Antun",
-    "fathers_name": "",
-    "full_name": "Štefanovič Antun",
-    "additional_info": "D., Hrvat, poginuo",
+    "fathers_name": "D",
+    "full_name": "Štefanovič D Antun",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 216,
@@ -450302,10 +450373,10 @@
     "pdf_y_end": 484.5,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035113135",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 418.1,
-    "birth_place": "D"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Štefanovič",
@@ -455275,11 +455346,11 @@
     "pdf_x_end": 415.2
   },
   {
-    "last_name": "Žagovi",
+    "last_name": "Žagović",
     "middle_name": "",
     "first_name": "Drago",
     "fathers_name": "",
-    "full_name": "Žagovi Drago",
+    "full_name": "Žagović Drago",
     "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "brigada Mihovil Pavlek Miškina",
@@ -456009,7 +456080,7 @@
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035113350",
     "pdf_x_end": 449.9,
-    "birth_place": "Konjščina, Zabok, Hrvati- ca"
+    "birth_place": "Konjščina, Zabok"
   },
   {
     "last_name": "Žežeu",
@@ -457317,10 +457388,10 @@
   {
     "soldier_id": "0035114195",
     "last_name": "Živko",
-    "middle_name": "Dure",
+    "middle_name": "Đure",
     "first_name": "Zlatko",
-    "fathers_name": "Duro",
-    "full_name": "Živko Dure Zlatko",
+    "fathers_name": "Đuro",
+    "full_name": "Živko Đure Zlatko",
     "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
@@ -458740,11 +458811,11 @@
   },
   {
     "last_name": "Žukić",
-    "middle_name": "",
+    "middle_name": "J",
     "first_name": "Adam",
-    "fathers_name": "",
-    "full_name": "Žukić Adam",
-    "additional_info": "J., Hrvat, poginuo",
+    "fathers_name": "J",
+    "full_name": "Žukić J Adam",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 140,
@@ -458753,10 +458824,10 @@
     "pdf_y_end": 245.2,
     "pdf_file": "32-divizija-borci.pdf",
     "soldier_id": "0035113441",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
     "pdf_x_end": 223.2,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Žukčić",
@@ -458764,7 +458835,7 @@
     "first_name": "Josip",
     "fathers_name": "J",
     "full_name": "Žukčić J Josip",
-    "additional_info": "J., Hrvat, poginuo",
+    "additional_info": "Hrvat, poginuo",
     "birth_year": "",
     "unit_detail": "I udarna zagorska brigada",
     "pdf_page": 223,
@@ -458786,10 +458857,10 @@
         "pdf_y_end": 185.3
       }
     ],
-    "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 226.4,
-    "birth_place": "J"
+    "birth_place": "",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Žukčić",
@@ -459213,7 +459284,7 @@
     "first_name": "Ivan",
     "fathers_name": "B",
     "full_name": "Županec B Ivan",
-    "additional_info": "B., Hrvat",
+    "additional_info": "Hrvat",
     "birth_year": "",
     "unit_detail": "udarna brigada Braća Radić",
     "pdf_page": 88,
@@ -459236,9 +459307,9 @@
       }
     ],
     "death_type": "poginuo",
-    "ethnicity": "Hrvat",
     "pdf_x_end": 197.2,
-    "birth_place": "B"
+    "birth_place": "",
+    "ethnicity": "Hrvat"
   },
   {
     "last_name": "Županić",

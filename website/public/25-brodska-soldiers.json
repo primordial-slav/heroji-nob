@@ -1606,11 +1606,11 @@
     "pdf_x_end": 351.6
   },
   {
-    "last_name": "Biklić",
+    "last_name": "Diklić",
     "middle_name": "",
     "first_name": "Miloje",
     "fathers_name": "",
-    "full_name": "Biklić Miloje",
+    "full_name": "Diklić Miloje",
     "additional_info": "rođen 1910, Provo, Vladimirci, Bogatić, 1. četa 1. bataljon, poginuo 23. IV 1945. u Bosanskoj Gradiški",
     "birth_year": "1910",
     "pdf_page": 6,
@@ -7786,12 +7786,12 @@
     "pdf_x_end": 331.9
   },
   {
-    "last_name": "Kovacevič",
+    "last_name": "Kovačević",
     "middle_name": "",
-    "first_name": "Milivo",
+    "first_name": "Milivoj",
     "fathers_name": "",
-    "full_name": "Kovacevič Milivo",
-    "additional_info": "T, borac, Srbin, rođen u s. Bobota (Vukovar), kraj rata dočekao kao komesar čete, živi u Beogradu.",
+    "full_name": "Kovačević Milivoj",
+    "additional_info": "borac, Srbin, rođen u s. Bobota (Vukovar), kraj rata dočekao kao komesar čete, živi u Beogradu.",
     "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 450.9,
@@ -7799,10 +7799,10 @@
     "pdf_y_end": 467.3,
     "pdf_file": "25-brodska-sastav.pdf",
     "soldier_id": "0030000360",
+    "pdf_x_end": 355.7,
     "birth_place": "Bobota (Vukovar)",
     "ethnicity": "Srbin",
-    "rank": "komesar čete",
-    "pdf_x_end": 355.7
+    "rank": "komesar čete"
   },
   {
     "last_name": "Kovač",
@@ -9490,10 +9490,10 @@
   },
   {
     "last_name": "Marinković",
-    "middle_name": "",
+    "middle_name": "S.",
     "first_name": "Ljubomir",
-    "fathers_name": "",
-    "full_name": "Marinković Ljubomir",
+    "fathers_name": "S.",
+    "full_name": "Marinković S. Ljubomir",
     "additional_info": "rođen 1926, Obrenovac, 1. četa 4. bataljon, poginuo 19. I 1945. u Bijeljini",
     "birth_year": "1926",
     "pdf_page": 14,
@@ -9507,7 +9507,27 @@
     "death_date": "19.01.1945",
     "death_place": "Bijeljina",
     "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 356.9
+    "pdf_x_end": 356.9,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "other_sources": [
+      {
+        "soldier_id": "0034009009",
+        "name": "Marinković S. Ljubomir",
+        "additional_info": "borac 4. bataljona, rođen 1926. u Obrovcu, Srbin, zemljoradnik, poginuo 19. 1. 1945, Kovaluk, Bijeljina.",
+        "pdf_file": "21-slavonska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 37.3,
+        "pdf_y": 184.0,
+        "pdf_x_end": 318.0,
+        "pdf_y_end": 201.6,
+        "unit_file": "21-slavonska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marić",

@@ -14390,7 +14390,21 @@
     "death_type": "nestao",
     "death_place": "Batina",
     "rank": "borac",
-    "pdf_x_end": 305.8
+    "pdf_x_end": 305.8,
+    "other_sources": [
+      {
+        "soldier_id": "0111000135",
+        "name": "Fes Đura",
+        "additional_info": "rođ. 1907, Ćačinci, borac, nestao u Batini.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 25,
+        "pdf_x": 248.8,
+        "pdf_y": 580.4,
+        "pdf_x_end": 505.6,
+        "pdf_y_end": 588.4,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Filakov",
@@ -16089,11 +16103,11 @@
     "pdf_x_end": 371.9
   },
   {
-    "last_name": "Gleičin",
+    "last_name": "Pejčin",
     "middle_name": "",
     "first_name": "Vlada",
     "fathers_name": "",
-    "full_name": "Gleičin Vlada",
+    "full_name": "Pejčin Vlada",
     "additional_info": "1904, Ilinci, 1944, borac.",
     "birth_year": "1904",
     "pdf_page": 101,
@@ -16190,13 +16204,11 @@
     "ethnicity": "Slovak",
     "borrowed": [
       "death_date",
-      "death_place",
       "death_type",
       "ethnicity"
     ],
     "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "7 vojvođanska br"
+    "death_date": "1945"
   },
   {
     "last_name": "Gložanski",
@@ -21647,7 +21659,49 @@
     "soldier_id": "0022001060",
     "birth_place": "Stari Sivac",
     "rank": "borac",
-    "pdf_x_end": 294.4
+    "pdf_x_end": 294.4,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "16.11.1944",
+    "death_place": "Batina",
+    "other_sources": [
+      {
+        "soldier_id": "0111000192",
+        "name": "Jandrić Milorad",
+        "additional_info": "rođ. 1924, St. Sivac, borac, pog. 16. 11. 1944, Batina.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 8,
+        "pdf_x": 294.9,
+        "pdf_y": 648.9,
+        "pdf_x_end": 571.6,
+        "pdf_y_end": 667.9,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0111010507",
+        "name": "Jandrić Milorad",
+        "additional_info": "1924, St. Lisa, Sombor, borac, poginuo 15. 11. 1944. u s. Batina.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 9,
+        "pdf_x": 76.7,
+        "pdf_y": 396.1,
+        "pdf_y_end": 413.4,
+        "pdf_x_end": 358.0,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "15.11.1944",
+          "place": "Batina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janić",
@@ -22206,11 +22260,11 @@
     ]
   },
   {
-    "last_name": "Jasal",
+    "last_name": "Nasal",
     "middle_name": "",
     "first_name": "Jano",
     "fathers_name": "",
-    "full_name": "Jasal Jano",
+    "full_name": "Nasal Jano",
     "additional_info": "1920, Belo Blato, borac, pog. 7.03.1945, Bolman.",
     "birth_year": "1920",
     "pdf_page": 91,
@@ -22221,7 +22275,29 @@
     "soldier_id": "0022001087",
     "birth_place": "Belo Blato",
     "rank": "borac",
-    "pdf_x_end": 352.6
+    "pdf_x_end": 352.6,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "07.03.1945",
+    "death_place": "Bolman",
+    "other_sources": [
+      {
+        "soldier_id": "0111010950",
+        "name": "Nasal Jano",
+        "additional_info": "1920, Belo Blato, Petrovgrad, borac, poginuo 7. 3. 1945. u s. Bolman.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 15,
+        "pdf_x": 66.6,
+        "pdf_y": 165.6,
+        "pdf_x_end": 347.8,
+        "pdf_y_end": 182.7,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jasenski",
@@ -22821,7 +22897,29 @@
     "birth_place": "Ljupkova",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 366.3
+    "pdf_x_end": 366.3,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "13.04.1945",
+    "death_place": "Josipovac",
+    "other_sources": [
+      {
+        "soldier_id": "0111010527",
+        "name": "Jeremić Đoka",
+        "additional_info": "1922, Ljubkova, Karoš, borac, poginuo 13. 4. 1945. u s. Josipovac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 8,
+        "pdf_x": 78.1,
+        "pdf_y": 422.1,
+        "pdf_x_end": 359.0,
+        "pdf_y_end": 439.3,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jerkin",
@@ -25135,7 +25233,7 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Kafol Franc",
-    "additional_info": "»PERA SLOVENAC«, ..., komandant 2. bataljona od marta 1944.",
+    "additional_info": "zvani Pera Slovenac; komandant 2. bataljona od marta 1944.",
     "birth_year": "",
     "pdf_page": 58,
     "pdf_y": 279.4,
@@ -25143,10 +25241,9 @@
     "pdf_y_end": 298.2,
     "pdf_file": "7-vojvodjanska.pdf",
     "soldier_id": "0022001212",
-    "birth_place": "PERA SLOVENAC",
-    "unit_detail": "2. bataljon",
     "pdf_x_end": 371.0,
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Kahriman",
@@ -33370,11 +33467,11 @@
     "pdf_x_end": 279.4
   },
   {
-    "last_name": "Lejčin",
+    "last_name": "Pejčin",
     "middle_name": "",
     "first_name": "Svetislav",
     "fathers_name": "",
-    "full_name": "Lejčin Svetislav",
+    "full_name": "Pejčin Svetislav",
     "additional_info": "1927, Grabovci, borac, 2.07—9.09.1944.",
     "birth_year": "1927",
     "pdf_page": 101,
@@ -59426,7 +59523,21 @@
     "death_date": "13.04.1945",
     "death_place": "Josipovac",
     "rank": "borac",
-    "pdf_x_end": 360.7
+    "pdf_x_end": 360.7,
+    "other_sources": [
+      {
+        "soldier_id": "0111011283",
+        "name": "Stanković Đoka",
+        "additional_info": "1924, Obrež, Zemun, borac, poginuo 13. 4. 1945. u Josipovcu.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 18,
+        "pdf_x": 88.3,
+        "pdf_y": 324.7,
+        "pdf_x_end": 368.3,
+        "pdf_y_end": 342.1,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stanković",
@@ -74144,7 +74255,7 @@
     "birth_place": "Bačko Petrovo Selo",
     "death_type": "nestao",
     "death_date": "11.12.1944",
-    "death_place": "u Bi~ strincima",
+    "death_place": "Bistrinci",
     "rank": "borac",
     "pdf_x_end": 351.1
   },

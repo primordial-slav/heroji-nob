@@ -108,8 +108,8 @@
         "pdf_page": 3,
         "pdf_x": 250.2,
         "pdf_y": 397.9,
-        "pdf_x_end": 412.5,
-        "pdf_y_end": 463.5,
+        "pdf_x_end": 585.3,
+        "pdf_y_end": 423.2,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -6173,7 +6173,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "15.04.1945",
-    "death_place": "u s. Gorjani kod Đa-..ova",
+    "death_place": "u s. Gorjani kod Đaova",
     "rank": "borac"
   },
   {
@@ -6217,7 +6217,7 @@
     "soldier_id": "0148000204",
     "pdf_x_end": 581.7,
     "pdf_x_left": 223.6,
-    "birth_place": "Klis--Kosa, Split",
+    "birth_place": "Klis-Kosa, Split",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "death_type": "poginuo",
@@ -13299,7 +13299,7 @@
     "first_name": "Frane",
     "fathers_name": "Ante",
     "full_name": "Bubić Ante Frane",
-    "additional_info": "zvani Francuska; borac Letećeg mosorskog voda. Rođen 1926,",
+    "additional_info": "zvani Francuska; borac Letećeg mosorskog voda. Rođen 1926, Klis-Kosa, Split, zemljoradnik, Hrvat, član SKOJ-a 1941, član KPJ. Do stupanja u",
     "birth_year": "1926",
     "pdf_page": 28,
     "pdf_y": 567.9,
@@ -13309,7 +13309,11 @@
     "soldier_id": "0148000456",
     "pdf_x_end": 574.6,
     "pdf_x_left": 217.2,
+    "birth_place": "Klis-Kosa, Split",
+    "ethnicity": "Hrvat",
+    "occupation": "zemljoradnik",
     "rank": "borac",
+    "party": "SKOJ 1941, KPJ",
     "other_sources": [
       {
         "soldier_id": "9021045043",
@@ -13318,20 +13322,65 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2190",
         "source_page": 2190,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0036000311",
+        "name": "Bubić A Frane",
+        "additional_info": "rođen 1925. godine u Klis Kosi — Split, komand. čete 1 bat, poginuo u Kninu decembra 1944. godine.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036100215",
+        "name": "Bubić Frane",
+        "additional_info": "borac prištapskih jedinica brigade, rođen 1925, Klis, Split, zemljoradnik, Hrvat, u NOB od 1942, poginuo kod Knina decembra 1944. godine, komandir čete.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 49.0,
+        "pdf_y": 80.1,
+        "pdf_x_end": 219.4,
+        "pdf_y_end": 131.5,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010343",
+        "name": "Bubić A Frane",
+        "additional_info": "rođen 1925. godine u Klis Kosi — Split, komand. čete I bat., poginuo u Kninu decembra 1944. godine.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 50,
+        "pdf_x": 50.4,
+        "pdf_y": 534.2825,
+        "pdf_y_end": 551.2,
+        "pdf_x_end": 387.7,
+        "pdf_x_left": 29.8,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010342",
+        "name": "Bubić Frane",
+        "additional_info": "Komandir čete, 1. bataljon.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 1,
+        "pdf_x": 28.3,
+        "pdf_y": 311.79,
+        "pdf_x_end": 103.3,
+        "pdf_y_end": 321.8,
+        "unit_file": "1-dalmatinska-soldiers.json"
       }
     ],
-    "birth_place": "Klis, Split",
+    "death_type": "poginuo",
     "borrowed": [
-      "birth_place",
       "death_date",
       "death_place",
-      "death_type",
-      "ethnicity"
+      "death_type"
     ],
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Knin"
+    "death_date": "12.1944",
+    "death_place": "Knin",
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Bubić",
@@ -14179,7 +14228,7 @@
     "soldier_id": "0148000486",
     "pdf_x_end": 581.9,
     "pdf_x_left": 224.5,
-    "birth_place": "Lokva--Rogoznica, Omiš",
+    "birth_place": "Lokva-Rogoznica, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
@@ -15997,7 +16046,7 @@
     "soldier_id": "0148000546",
     "pdf_x_end": 605.4,
     "pdf_x_left": 248.8,
-    "birth_place": "P»essude, Sardinia",
+    "birth_place": "Pessude, Sardinia",
     "ethnicity": "Talijan",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
@@ -18750,7 +18799,7 @@
     "soldier_id": "0148000639",
     "pdf_x_end": 613.6,
     "pdf_x_left": 256.5,
-    "birth_place": "Du-?.opolje, Split",
+    "birth_place": "Duopolje, Split",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
@@ -19423,7 +19472,7 @@
     "occupation": "stolar",
     "death_type": "poginuo",
     "death_date": "26.09.1943",
-    "death_place": "kod Kučina (teško ranjen) i",
+    "death_place": "kod Kučina",
     "rank": "borac",
     "birth_date": "25.03.1925"
   },
@@ -20381,7 +20430,7 @@
         "pdf_y_end": 633.0
       }
     ],
-    "rank": "politički komesar bataljona, politički komesara",
+    "rank": "politički komesar bataljona, politički komesar",
     "party": "SKOJ 1940, KPJ 1942"
   },
   {
@@ -21726,7 +21775,7 @@
     "soldier_id": "0148000725",
     "pdf_x_end": 588.1,
     "pdf_x_left": 230.5,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "rank": "borac",
@@ -23156,7 +23205,6 @@
     "birth_place": "Vrisnik, Hvar",
     "ethnicity": "Hrvat",
     "death_type": "poginuo",
-    "death_place": "u NOV",
     "rank": "kurir",
     "unit_detail": "1. bataljon",
     "party": "SKOJ 1942"
@@ -23302,7 +23350,7 @@
         "pdf_y_end": 643.8
       }
     ],
-    "rank": "politički komesar bataljona, politički komesara",
+    "rank": "politički komesar bataljona, politički komesar",
     "party": "SKOJ 1938, KPJ 1940",
     "birth_date": "07.05.1920"
   },
@@ -24501,8 +24549,8 @@
         "pdf_page": 108,
         "pdf_x": 222.2,
         "pdf_y": 530.0,
-        "pdf_x_end": 388.2,
-        "pdf_y_end": 587.2,
+        "pdf_x_end": 580.2,
+        "pdf_y_end": 555.5,
         "ref_book": "imotska-krajina-pali-borci"
       }
     ]
@@ -26173,7 +26221,7 @@
     "soldier_id": "0148000870",
     "pdf_x_end": 617.4,
     "pdf_x_left": 260.8,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "rank": "borac"
   },
   {
@@ -26438,11 +26486,9 @@
     "borrowed": [
       "birth_year",
       "death_date",
-      "death_place",
       "ethnicity"
     ],
     "death_date": "1942",
-    "death_place": "U jedinici n.o.v.-a",
     "birth_year": "1921"
   },
   {
@@ -27450,7 +27496,7 @@
     "soldier_id": "0148000911",
     "pdf_x_end": 603.2,
     "pdf_x_left": 247.0,
-    "birth_place": "Klis--Kosa, Split",
+    "birth_place": "Klis-Kosa, Split",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "borac",
@@ -32662,10 +32708,10 @@
   {
     "last_name": "Jurišić",
     "middle_name": "Ivana",
-    "first_name": "Miće -Zingin'«",
+    "first_name": "Miće",
     "fathers_name": "Ivan",
-    "full_name": "Jurišić Ivana Miće -Zingin'«",
-    "additional_info": "borac Mosorskog PO. Rođen 1926, Tugare, Omiš, zemljoradnik, Hrvat. U Mosorski PO stupio listopada 1944. i rasformiranjem Odreda ušao u sastav 20. dalmatinske divizije. Umro.",
+    "full_name": "Jurišić Ivana Miće",
+    "additional_info": "zvani Zingin; borac Mosorskog PO. Rođen 1926, Tugare, Omiš, zemljoradnik, Hrvat. U Mosorski PO stupio listopada 1944. i rasformiranjem Odreda ušao u sastav 20. dalmatinske divizije. Umro.",
     "birth_year": "1926",
     "pdf_page": 73,
     "pdf_y": 405.2,
@@ -33357,7 +33403,7 @@
     "soldier_id": "0148001093",
     "pdf_x_end": 578.8,
     "pdf_x_left": 221.7,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
@@ -33382,7 +33428,7 @@
     "soldier_id": "0148001094",
     "pdf_x_end": 578.5,
     "pdf_x_left": 221.7,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "rank": "borac"
   },
   {
@@ -33438,7 +33484,7 @@
     "soldier_id": "0148001096",
     "pdf_x_end": 613.8,
     "pdf_x_left": 256.4,
-    "birth_place": "Knlo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "student",
     "death_type": "poginuo",
@@ -33752,7 +33798,7 @@
     "soldier_id": "0148001107",
     "pdf_x_end": 612.4,
     "pdf_x_left": 258.5,
-    "birth_place": "Krilo-- Jeseni ce, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvatica",
     "occupation": "domaćica",
     "death_type": "poginuo",
@@ -34116,7 +34162,7 @@
         "pdf_y_end": 746.0
       }
     ],
-    "rank": "zamjenik političkog komesara, politički komesara brigade",
+    "rank": "zamjenik političkog komesara, politički komesar brigade",
     "party": "KPJ"
   },
   {
@@ -34225,7 +34271,7 @@
     "soldier_id": "0148001123",
     "pdf_x_end": 557.1,
     "pdf_x_left": 220.2,
-    "birth_place": "Krilo-- Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "death_type": "poginuo",
@@ -37012,7 +37058,7 @@
     "soldier_id": "0148001212",
     "pdf_x_end": 612.0,
     "pdf_x_left": 256.3,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "komandir čete",
@@ -38123,7 +38169,7 @@
         "pdf_y_end": 697.0
       }
     ],
-    "rank": "politički komesar, politički komesara",
+    "rank": "politički komesar, politički komesar",
     "party": "KPJ 1939",
     "birth_date": "25.11.1917"
   },
@@ -44628,7 +44674,7 @@
     "occupation": "mehaničar",
     "death_type": "poginuo",
     "death_date": "22.02.1943",
-    "death_place": "na Kapini--Klobuku, kod Ljubuškog",
+    "death_place": "na Kapini-Klobuku, kod Ljubuškog",
     "unit_detail": "3. bataljon",
     "other_sources": [
       {
@@ -46451,7 +46497,7 @@
     "soldier_id": "0148001525",
     "pdf_x_end": 581.3,
     "pdf_x_left": 224.4,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "mornar",
     "death_type": "poginuo",
@@ -46597,7 +46643,7 @@
     "soldier_id": "0148001531",
     "pdf_x_end": 581.3,
     "pdf_x_left": 224.4,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "death_type": "umro",
     "death_date": "1984",
     "rank": "borac"
@@ -47085,7 +47131,8 @@
         "pdf_x": 439.3,
         "pdf_y": 658.8,
         "pdf_x_end": 604.9,
-        "pdf_y_end": 715.2,
+        "pdf_y_end": 724.1,
+        "pdf_x_left": 247.8,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -48795,7 +48842,7 @@
     "pdf_x_end": 613.3,
     "pdf_x_left": 256.2,
     "party": "SKOJ",
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "student",
     "death_type": "poginuo",
@@ -50098,7 +50145,7 @@
         "pdf_y_end": 714.9
       }
     ],
-    "rank": "zamjenik političkog komesara čete, politički komesara, zamjenik političkog komesara bataljona",
+    "rank": "zamjenik političkog komesara čete, politički komesar, zamjenik političkog komesara bataljona",
     "party": "KPJ 1941"
   },
   {
@@ -58094,7 +58141,7 @@
         "pdf_y_end": 601.4
       }
     ],
-    "rank": "politički komesar bataljona, politički komesara",
+    "rank": "politički komesar bataljona, politički komesar",
     "party": "SKOJ, KPH, KPJ",
     "birth_date": "01.04.1920"
   },
@@ -68564,7 +68611,7 @@
     "birth_place": "Zrnovnica, Split",
     "ethnicity": "Hrvat",
     "occupation": "zidar",
-    "rank": "politički komesara bataljona",
+    "rank": "politički komesar bataljona",
     "unit_detail": "2. bataljon",
     "birth_date": "20.03.1914"
   },
@@ -68772,7 +68819,21 @@
     "occupation": "trgovački pomoćnik",
     "rank": "borac",
     "unit_detail": "1. četa",
-    "party": "SKOJ 1942, KPJ 1944"
+    "party": "SKOJ 1942, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "9061004511",
+        "name": "Pesah Jude Josip",
+        "additional_info": "Jevreji Jugoslavije, učesnici NOR: Pesah Jude Josip, trgovački pomoćnik iz Dervente, rođen 1924. Po dolasku ustaša na vlast prebegao u Split, odakle je stupio septembra 1943. u NOV Borac u Mosorskom partizanskom odredu; Split skoj brigadi; rukovodilac kulturno-prosvetnog sektora u 1. četi Beogradskog bataljona 1. prolet brigade.",
+        "pdf_file": "jevreji-jugoslavije-ucesnici-nor.pdf",
+        "pdf_page": 153,
+        "pdf_x": 331.8,
+        "pdf_y": 600.4,
+        "pdf_x_end": 500.5,
+        "pdf_y_end": 644.5,
+        "ref_book": "jevreji-jugoslavije-ucesnici-nor"
+      }
+    ]
   },
   {
     "last_name": "Petrić",
@@ -72596,7 +72657,7 @@
     "soldier_id": "0148002354",
     "pdf_x_end": 582.9,
     "pdf_x_left": 225.1,
-    "birth_place": "Ldska--Kotlenice, Split",
+    "birth_place": "Kotlenice, Split",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "umro",
@@ -74127,7 +74188,7 @@
         "pdf_y_end": 697.0
       }
     ],
-    "rank": "politički komesar štaba, politički komesara štaba",
+    "rank": "politički komesar štaba, politički komesar štaba",
     "party": "SKOJ, KPJ 1924"
   },
   {
@@ -75921,10 +75982,6 @@
         "source_page": 1328,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ],
-    "death_place": "10.hercegovačka",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -79547,13 +79604,13 @@
       {
         "soldier_id": "9061003790",
         "name": "Singer Ervina Tomislav",
-        "additional_info": "Jevreji Jugoslavije, učesnici NOR: Singer Ervina Tomislav, učenik iz Splita. Rođen 1923 u Beču. U NOV od juna 1942. Borac u Mosorskom partizanskom odredu, a zatim u drugim dalmatii skim partizanskim jedinicama. Singer-štajn Valika, domaćica iz Zagreba, rođen? 1904. Po dolasku ustaša na vlast prebegla u Dubrovnik, odakle je internirana od Italijana počet kom novembra 1942. u logor u Kuparima, a počet kom juna 1943. odvedena u logor na Rabu. Po oslobođenju iz logora stupila septembra 1943. u NOP. Član Komisije za evakuaciju logoraša sa Raba na oslobođenu teritoriju Like, Korduna i Ba nije.",
+        "additional_info": "Jevreji Jugoslavije, učesnici NOR: Singer Ervina Tomislav, učenik iz Splita. Rođen 1923 u Beču. U NOV od juna 1942. Borac u Mosorskom partizanskom odredu, a zatim u drugim dalmatii skim partizanskim jedinicama.",
         "pdf_file": "jevreji-jugoslavije-ucesnici-nor.pdf",
         "pdf_page": 176,
         "pdf_x": 105.2,
         "pdf_y": 415.7,
-        "pdf_x_end": 273.1,
-        "pdf_y_end": 497.2,
+        "pdf_x_end": 271.8,
+        "pdf_y_end": 440.4,
         "ref_book": "jevreji-jugoslavije-ucesnici-nor"
       }
     ]
@@ -80336,7 +80393,7 @@
         "pdf_y_end": 683.0
       }
     ],
-    "rank": "politički komesara čete",
+    "rank": "politički komesar čete",
     "birth_date": "07.08.1912"
   },
   {
@@ -85820,7 +85877,7 @@
     "soldier_id": "0148002799",
     "pdf_x_end": 615.8,
     "pdf_x_left": 257.5,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "death_type": "umro",
@@ -88647,7 +88704,7 @@
     "death_type": "poginuo",
     "death_date": "koncem lipnja 1942",
     "death_place": "Miočić, Drniš od četničke patrole",
-    "rank": "politički komesar, politički komesara",
+    "rank": "politički komesar, politički komesar",
     "party": "SKOJ, KPJ 1941",
     "birth_date": "03.05.1920"
   },
@@ -91090,6 +91147,19 @@
         "pdf_y": 120.3,
         "pdf_x_end": 215.3,
         "pdf_y_end": 161.9,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010209025",
+        "name": "Vlašić Stipe Ante",
+        "additional_info": "rođ. 1922, Podstrane, Split, zemljoradnik, Hrvat, u NOB od 4. 9. 1942, u brigadi od marta 1943, borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 450,
+        "pdf_x": 87.5,
+        "pdf_y": 480.4,
+        "pdf_x_end": 352.2,
+        "pdf_y_end": 506.6,
+        "pdf_x_left": 70.7,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ]
@@ -93592,7 +93662,7 @@
     "soldier_id": "0148003075",
     "pdf_x_end": 584.5,
     "pdf_x_left": 226.0,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
@@ -95529,7 +95599,7 @@
     "soldier_id": "0148003142",
     "pdf_x_end": 581.2,
     "pdf_x_left": 223.1,
-    "birth_place": "Krilo--Jesenice, Omiš",
+    "birth_place": "Krilo-Jesenice, Omiš",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "rank": "kurir",
@@ -99357,10 +99427,10 @@
   {
     "last_name": "Čulin",
     "middle_name": "Petra",
-    "first_name": "Mil",
+    "first_name": "Milan",
     "fathers_name": "Petar",
-    "full_name": "Čulin Petra Mil",
-    "additional_info": "AN, borac Mosorskog PO. Rođen 1910, Dugopolje, Split, zemljoradnik, Hrvat. U Mosorski PO stupio u srpnju 1944. Poginuo 4. studenog 1944. na Crnom vrhu kod Vrlike, kao borac 3. čete 3. bataljona Mosorskog PO.",
+    "full_name": "Čulin Petra Milan",
+    "additional_info": "borac Mosorskog PO. Rođen 1910, Dugopolje, Split, zemljoradnik, Hrvat. U Mosorski PO stupio u srpnju 1944. Poginuo 4. studenog 1944. na Crnom vrhu kod Vrlike, kao borac 3. čete 3. bataljona Mosorskog PO.",
     "birth_year": "1910",
     "pdf_page": 38,
     "pdf_y": 802.2,
@@ -101044,9 +101114,9 @@
   {
     "last_name": "Šarić",
     "middle_name": "Stipe",
-    "first_name": "Ljubomir--Ljubo",
+    "first_name": "Ljubomir-Ljubo",
     "fathers_name": "Stipe",
-    "full_name": "Šarić Stipe Ljubomir--Ljubo",
+    "full_name": "Šarić Stipe Ljubomir-Ljubo",
     "additional_info": "borac Mosorskog PO. Rođen 1922, Blato na Cetini, Omiš, zemljoradnik, Hrvat. U Mosorski PO stupio 1944. Umro 1980.",
     "birth_year": "1922",
     "pdf_page": 175,
@@ -102912,10 +102982,6 @@
         "source_page": 2235,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ],
-    "death_place": "5 dalmatinska bri",
-    "borrowed": [
-      "death_place"
     ],
     "birth_date": "14.10.1921"
   },
@@ -108701,7 +108767,7 @@
     "pdf_file": "mosorski-odred-kader.pdf",
     "pdf_x_end": 307.5,
     "soldier_id": "0148020006",
-    "rank": "politički komesara"
+    "rank": "politički komesar"
   },
   {
     "last_name": "Amižić",

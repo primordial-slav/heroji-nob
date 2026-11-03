@@ -46,6 +46,7 @@ Correction actions:
              entries in other_sources (marked with unit_file) and the fields
              it lacks (apply_links; `link_name` guards like merge_name).
 """
+import time
 import sys
 import os
 import json
@@ -784,8 +785,16 @@ def main():
         soldiers[:] = [fix_names(s) for s in soldiers]
         new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
         if args.apply and new_text != original_text:
-            with open(json_path, 'w', encoding='utf-8') as f:
-                f.write(new_text)
+            # the dev server's data watcher may hold the file a moment (Windows: "Invalid argument"); an hour's run shouldn't die of it
+            for attempt in range(6):
+                try:
+                    with open(json_path, 'w', encoding='utf-8') as f:
+                        f.write(new_text)
+                    break
+                except OSError:
+                    if attempt == 5:
+                        raise
+                    time.sleep(5)
             print(f"    Written: {json_path}")
 
     # The dated steps of each soldier's life for the dialog's line (website/data/life-events/), from the final

@@ -3738,7 +3738,7 @@
     "birth_place": "Todorovo, Velika Kladuša",
     "death_type": "poginuo",
     "death_date": "23.04.1945",
-    "death_place": "kod Poloj a",
+    "death_place": "kod Poloja",
     "rank": "borac",
     "pdf_x_end": 441.1
   },
@@ -17334,7 +17334,7 @@
     "birth_place": "Vojnička Poljana",
     "death_type": "poginuo",
     "death_date": "14.03.1944",
-    "death_place": "kod Tounj a",
+    "death_place": "kod Tounja",
     "rank": "borac",
     "pdf_x_end": 263.8,
     "other_sources": [
@@ -17934,7 +17934,7 @@
     "first_name": "Milorad",
     "fathers_name": "Petar",
     "full_name": "Duduković Petra Milorad",
-    "additional_info": "VLADO«, 1926, Točak, Slunj, stupio u NOV 5. 5. 1942, vodnik 2. brig. 8. div, poginuo 15. 6. 1944. kod Buševca",
+    "additional_info": "zvani Vlado; 1926, Točak, Slunj, stupio u NOV 5. 5. 1942, vodnik 2. brig. 8. div, poginuo 15. 6. 1944. kod Buševca",
     "unit_detail": "2. brigada",
     "pdf_page": 23,
     "pdf_y": 184.0,
@@ -17942,12 +17942,13 @@
     "pdf_y_end": 217.7,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060000486",
-    "birth_place": "VLADO",
+    "pdf_x_end": 258.7,
+    "birth_year": "1926",
+    "birth_place": "Točak, Slunj",
     "death_type": "poginuo",
     "death_date": "15.06.1944",
     "death_place": "Buševec",
     "rank": "vodnik",
-    "pdf_x_end": 258.7,
     "other_sources": [
       {
         "soldier_id": "9019001301",
@@ -17972,10 +17973,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "birth_year",
       "ethnicity"
-    ],
-    "birth_year": "1926"
+    ]
   },
   {
     "last_name": "Duduković",
@@ -29979,7 +29978,21 @@
     "death_type": "poginuo",
     "death_date": "20.10.1944",
     "death_place": "Perjasica",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9018001281",
+        "name": "Karan Vida Svetozar",
+        "additional_info": "Jurga, općina Vojnić: 1912, kovač, Srbin. Stupio u NOV 1. 8. 1941. Borac 3. brig. 8. div. Poginuo kod Perjasice 20. 10. 1944.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 46,
+        "pdf_x": 196.9,
+        "pdf_y": 260.3,
+        "pdf_x_end": 374.2,
+        "pdf_y_end": 295.2,
+        "ref_book": "hak-19-vojnic"
+      }
+    ]
   },
   {
     "last_name": "Karan",
@@ -42396,7 +42409,7 @@
     ],
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Lika- plaški"
+    "death_place": "Lika, Plaški"
   },
   {
     "last_name": "Lukešić",
@@ -85157,7 +85170,7 @@
     "birth_place": "Vorkapić Selo",
     "death_type": "poginuo",
     "death_date": "02.10.1944",
-    "death_place": "u Zi va j i kod Sunje",
+    "death_place": "u Živaji kod Sunje",
     "rank": "vodnik",
     "pdf_x_end": 266.9,
     "other_sources": [
@@ -86304,13 +86317,13 @@
       {
         "soldier_id": "9018001277",
         "name": "Vujić Dušana Mile",
-        "additional_info": "Živkovič Kosa, općina Vojnić: 1925, seljak, Srbin. Stupio u NOV 10. 10. 1942. Borac 3. brig. 8. div. Poginuo kod Velike Kladuše 22. 6. 1943. 2IVKOVIĆ Mihajla MARKO, 1914, trgovac, Srbin. Stupio u NOV 1. 9. 1941. Borac 16. brig. 7. div. Poginuo kod Sutjeske juna 1943.",
+        "additional_info": "Živkovič Kosa, općina Vojnić: 1925, seljak, Srbin. Stupio u NOV 10. 10. 1942. Borac 3. brig. 8. div. Poginuo kod Velike Kladuše 22. 6. 1943.",
         "pdf_file": "hak-19-vojnic.pdf",
         "pdf_page": 55,
         "pdf_x": 80.4,
         "pdf_y": 40.2,
-        "pdf_x_end": 236.3,
-        "pdf_y_end": 115.4,
+        "pdf_x_end": 235.6,
+        "pdf_y_end": 75.8,
         "ref_book": "hak-19-vojnic"
       }
     ],
@@ -87923,14 +87936,26 @@
         "pdf_x_end": 376.3,
         "pdf_y_end": 413.9,
         "ref_book": "hak-19-vojnic"
+      },
+      {
+        "soldier_id": "0020001881",
+        "name": "Vukić Miloša Đorđe",
+        "additional_info": "rođen u Cerovcu (Karlovac), poginuo 1945. u Brekovici.",
+        "pdf_file": "4-banijska.pdf",
+        "pdf_page": 49,
+        "pdf_x": 51.7,
+        "pdf_y": 48.9,
+        "pdf_x_end": 359.4,
+        "pdf_y_end": 56.9,
+        "unit_file": "4-banijska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_place": "Brekovica",
     "borrowed": [
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Bihać"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vukmanović",
@@ -99347,13 +99372,13 @@
       {
         "soldier_id": "9018001278",
         "name": "Živković Đurđa Stanko",
-        "additional_info": "Živkovič Kosa, općina Vojnić: 1924, seljak, Srbin. Stupio u NOV 10. io! 1942. Borac 2. brig. 8. div. Poginuo kod Ličkog Petrovog Sela 1. 3. 1945. 19. 2IVKOVIC Mihajla STANKO, 1910, postolar, Srbin. Stupio u NOV 1943. Borac 8. kordun. divizije. Umro od tifusa u selu 1943.",
+        "additional_info": "Živkovič Kosa, općina Vojnić: 1924, seljak, Srbin. Stupio u NOV 10. io! 1942. Borac 2. brig. 8. div. Poginuo kod Ličkog Petrovog Sela 1. 3. 1945.",
         "pdf_file": "hak-19-vojnic.pdf",
         "pdf_page": 55,
         "pdf_x": 249.4,
         "pdf_y": 40.2,
         "pdf_x_end": 421.9,
-        "pdf_y_end": 114.7,
+        "pdf_y_end": 75.6,
         "ref_book": "hak-19-vojnic"
       }
     ],
@@ -99430,7 +99455,33 @@
     "death_date": "20.04.1945",
     "death_place": "na Raletini kod Primišlja",
     "rank": "borac",
-    "pdf_x_end": 275.7
+    "pdf_x_end": 275.7,
+    "other_sources": [
+      {
+        "soldier_id": "9018001280",
+        "name": "Živković Miloša Tanasija",
+        "additional_info": "Krnjačko Podgorje, općina Krnjak: 1911, seljak, Srbin. Stupio u NOV 20. 1. 1943. Borac 1. brig. 8. div. Poginuo na Raletini kod Primišlja 20. 4.1945.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 9,
+        "pdf_x": 205.4,
+        "pdf_y": 415.2,
+        "pdf_x_end": 378.1,
+        "pdf_y_end": 449.9,
+        "ref_book": "hak-19-vojnic"
+      },
+      {
+        "soldier_id": "9021017684",
+        "name": "Živković (Miloš) Tanasija",
+        "additional_info": "rođen 1911, Podgorje Krnjačko (Karlovac). Srbin, poginuo 1944. u NOBu, Primišlje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=858",
+        "source_page": 858,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Živković",

@@ -4776,11 +4776,11 @@
     "death_place": "Pakrac"
   },
   {
-    "last_name": "Durđević",
+    "last_name": "Đurđević",
     "middle_name": "",
     "first_name": "Danica",
     "fathers_name": "",
-    "full_name": "Durđević Danica",
+    "full_name": "Đurđević Danica",
     "additional_info": "rođena 1925. u Sokolovcu, Koprivnica, poginula ožujka 1944. u selu Radatovići, gdje je i sahranjena. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
     "birth_year": "1925",
     "pdf_page": 35,
@@ -4802,12 +4802,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=933",
         "source_page": 933,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0058003055",
+        "name": "Đurđević Danica",
+        "additional_info": "r.1926; Sokolovac, Koprivnica; u KPO borac u 1. bataljonu; od ožujka 1943. u 16. slavonskoj brigadi; poginula; kada i gdje, nije utvrđeno.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 16,
+        "pdf_x": 312.2,
+        "pdf_y": 478.1,
+        "pdf_x_end": 466.9,
+        "pdf_y_end": 526.4,
+        "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
     "ethnicity": "Srpkinja",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Edelinski",
@@ -8260,11 +8277,11 @@
     "death_place": "Koprivnica"
   },
   {
-    "last_name": "Iirubenja",
+    "last_name": "Hrubenja",
     "middle_name": "",
     "first_name": "Mihajlo",
     "fathers_name": "",
-    "full_name": "Iirubenja Mihajlo",
+    "full_name": "Hrubenja Mihajlo",
     "additional_info": "rođen u Petrovcima, Vukovar, poginuo 27. srpnja 1944. u Čačincima.",
     "birth_year": "",
     "pdf_page": 14,
@@ -13803,7 +13820,7 @@
     "first_name": "Josip",
     "fathers_name": "",
     "full_name": "Malner Josip",
-    "additional_info": "rođen 1914. u Velikoj Pisanici, Bjelovar, poginuo II. travnja 1945.",
+    "additional_info": "rođen 1914. u Velikoj Pisanici, Bjelovar, poginuo 11. travnja 1945.",
     "birth_year": "1914",
     "pdf_page": 22,
     "pdf_y": 636.6,
@@ -13812,10 +13829,10 @@
     "pdf_file": "16-slavonska-omladinska.pdf",
     "soldier_id": "0037000605",
     "pdf_x_end": 439.8,
+    "death_date": "11.04.1945",
+    "death_place": "Podravska slat",
     "birth_place": "Velika Pisanica, Bjelovar",
     "death_type": "poginuo",
-    "death_date": "04.1945",
-    "death_place": "II",
     "other_sources": [
       {
         "soldier_id": "9021001794",
@@ -13828,6 +13845,7 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
+      "death_place",
       "ethnicity"
     ]
   },
@@ -18252,9 +18270,9 @@
   {
     "last_name": "Savić",
     "middle_name": "",
-    "first_name": "Dorđe",
+    "first_name": "Đorđe",
     "fathers_name": "",
-    "full_name": "Savić Dorđe",
+    "full_name": "Savić Đorđe",
     "additional_info": "intendant bataljona. Iz spiska poginulih boraca i rukovodilaca brigade u Pokuplju i na Žumberku.",
     "birth_year": "",
     "pdf_page": 36,
@@ -21176,9 +21194,9 @@
   {
     "last_name": "Zjalić",
     "middle_name": "",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "",
-    "full_name": "Zjalić Dura",
+    "full_name": "Zjalić Đura",
     "additional_info": "rođen 1909. u Podgariću, Garešnica, poginuo 28. siječnja 1943. u Slavoniji.",
     "birth_year": "1909",
     "pdf_page": 33,
@@ -25113,11 +25131,11 @@
     "pdf_x_left": 157.2
   },
   {
-    "last_name": "Zamdzić",
+    "last_name": "Čamdžić",
     "middle_name": "",
     "first_name": "Zijad",
     "fathers_name": "",
-    "full_name": "Zamdzić Zijad",
+    "full_name": "Čamdžić Zijad",
     "additional_info": "Komandant bataljona.",
     "birth_year": "",
     "rank": "komandant bataljona",

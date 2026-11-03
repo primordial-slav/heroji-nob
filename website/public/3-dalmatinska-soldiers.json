@@ -38,8 +38,8 @@
         "pdf_page": 3,
         "pdf_x": 250.2,
         "pdf_y": 397.9,
-        "pdf_x_end": 412.5,
-        "pdf_y_end": 463.5,
+        "pdf_x_end": 585.3,
+        "pdf_y_end": 423.2,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -1645,7 +1645,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "06.1943",
-    "death_place": "na Suìsci",
+    "death_place": "Sutjeska",
     "rank": "borac",
     "unit_detail": "3. bataljon"
   },
@@ -1896,11 +1896,11 @@
     "party": "SKOJ"
   },
   {
-    "last_name": "Arinov",
+    "last_name": "Marinov",
     "middle_name": "Bože",
     "first_name": "Svetin",
     "fathers_name": "Božo",
-    "full_name": "Arinov Bože Svetin",
+    "full_name": "Marinov Bože Svetin",
     "additional_info": "politički komesar čete, rođen 1917, Stavor, Šibenik, zemljoradnik, Hrvat, u NOB od 1941, član KPJ, poginuo na Sutjesci.",
     "birth_year": "1917",
     "pdf_page": 36,
@@ -1916,7 +1916,21 @@
     "death_type": "poginuo",
     "death_place": "Sutjeska",
     "rank": "politički komesar čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9021038296",
+        "name": "Marinov (Božo) Svetin",
+        "additional_info": "rođen 1917, Vezac (Šibenik). Hrvat, poginuo 1942. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1834",
+        "source_page": 1834,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "death_date": "1942",
+    "borrowed": [
+      "death_date"
+    ]
   },
   {
     "last_name": "Marinović",
@@ -2354,11 +2368,11 @@
     ]
   },
   {
-    "last_name": "Aunović-Ašanin",
+    "last_name": "Paunović-Ašanin",
     "middle_name": "Josipa",
     "first_name": "Katica",
     "fathers_name": "Josip",
-    "full_name": "Aunović-Ašanin Josipa Katica",
+    "full_name": "Paunović-Ašanin Josipa Katica",
     "additional_info": "bolničarka u 3. četi 2. bataljona, rođena 1924, Makarska, učenica, Hrvatica, u NOB od 1941, član SKOJ-a od 1942, član KIM od februara 1943, krajem rata referent saniteta art. diviziona 28. slavonske divizije. Umrla f 991. godine u Novom Sadu.",
     "birth_year": "1924",
     "pdf_page": 46,
@@ -2374,7 +2388,21 @@
     "death_type": "umro",
     "rank": "bolničarka",
     "unit_detail": "3. četa, 2. bataljon",
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0001014104",
+        "name": "Paunović-Ašanin Josipa Katica",
+        "additional_info": "1924, Makarska, Hrvatska, Hrvatica, radnica-domaćica, član SKOJ-a od 1942, član KPJ od 1943, u NOB od juna 1942, u brigadi od juna 1943, IV bataljon, šef saniteta art. brigade",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 16,
+        "pdf_x": 61.2,
+        "pdf_y": 264.4,
+        "pdf_x_end": 368.6,
+        "pdf_y_end": 306.8,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Avica",
@@ -2416,11 +2444,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "Avlšić",
+    "last_name": "Pavišić",
     "middle_name": "Ivana",
     "first_name": "Ante",
     "fathers_name": "Ivan",
-    "full_name": "Avlšić Ivana Ante",
+    "full_name": "Pavišić Ivana Ante",
     "additional_info": "komandir voda, rođen 1911, Nerežišće, Brač, zemljoradnik, Hrvat, u NOB od 1942. godine, poginuo u bici na Sutjesci.",
     "birth_year": "1911",
     "pdf_page": 46,
@@ -2477,7 +2505,7 @@
         "pdf_page": 15,
         "pdf_x": 425.1,
         "pdf_y": 427.0,
-        "pdf_x_end": 590.8,
+        "pdf_x_end": 590.9,
         "pdf_y_end": 501.0,
         "ref_book": "imotska-krajina-pali-borci"
       },
@@ -2574,7 +2602,7 @@
         "pdf_page": 106,
         "pdf_x": 229.3,
         "pdf_y": 657.0,
-        "pdf_x_end": 395.1,
+        "pdf_x_end": 587.2,
         "pdf_y_end": 748.1,
         "ref_book": "imotska-krajina-pali-borci"
       },
@@ -4408,7 +4436,7 @@
     "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
     "soldier_id": "0046000123",
     "pdf_x_end": 389.1,
-    "birth_place": "Brštanovo, Split, zerolJ°radnik' c",
+    "birth_place": "Brštanovo, Split",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_place": "Duvno",
@@ -6043,6 +6071,18 @@
             566.0
           ]
         ],
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001509024",
+        "name": "Bralić Špire Ante",
+        "additional_info": "rođen 1915. Klis, Split, SRH, radnik, član KPJ, u NOB od 1941. godine.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 14,
+        "pdf_x": 95.4,
+        "pdf_y": 226.5,
+        "pdf_x_end": 452.8,
+        "pdf_y_end": 242.9,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -9730,7 +9770,7 @@
     "occupation": "domaćica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "kod Livna /",
+    "death_place": "kod Livna",
     "rank": "borac"
   },
   {
@@ -10593,11 +10633,11 @@
     ]
   },
   {
-    "last_name": "Etričević",
+    "last_name": "Petričević",
     "middle_name": "Jovana",
     "first_name": "Branko",
     "fathers_name": "Jovan",
-    "full_name": "Etričević Jovana Branko",
+    "full_name": "Petričević Jovana Branko",
     "additional_info": "zvani Kada; rukovodilac politodela brigade, rođen 1914, Cetinje, student, Crnogorac, u NOB od 1941, član KPJ od 1933. godine, krajem rata politički komesar 3. armije.",
     "birth_year": "1914",
     "pdf_page": 48,
@@ -10610,7 +10650,21 @@
     "birth_place": "Cetinje",
     "ethnicity": "Crnogorac",
     "occupation": "student",
-    "party": "KPJ 1933"
+    "party": "KPJ 1933",
+    "other_sources": [
+      {
+        "soldier_id": "0040020604",
+        "name": "Petričević Jovana Branko",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Cetinje, 1914, student, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 29,
+        "pdf_x": 157.1,
+        "pdf_y": 360.2,
+        "pdf_x_end": 439.0,
+        "pdf_y_end": 369.2,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ševerdija",
@@ -13549,11 +13603,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "Hnđić",
+    "last_name": "Đinđić",
     "middle_name": "",
     "first_name": "Mirko",
     "fathers_name": "",
-    "full_name": "Hnđić Mirko",
+    "full_name": "Đinđić Mirko",
     "additional_info": "borac, rođen 1921, Biograd, zemljoradnik, Hrvat, u NOB od 1942, poginuo kod sela Mosko, Bileća, 2. juna 1944. godine u sastavu 2. dalmatinske brigade.",
     "birth_year": "1921",
     "pdf_page": 16,
@@ -13569,7 +13623,21 @@
     "death_type": "poginuo",
     "death_date": "02.06.1944",
     "rank": "borac",
-    "death_place": "Mosko, Bileća"
+    "death_place": "Mosko, Bileća",
+    "other_sources": [
+      {
+        "soldier_id": "0007001443",
+        "name": "Đinđič Mirko",
+        "additional_info": "1921. Biograd na moru. Hrvat, U NOV od 1942. u 3 dalm. brig. U 2. dalm. od 9. 6. 1943. Poginuo 2. 6. 1944. kod s. Mosko, Bileća.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 49,
+        "pdf_x": 136.6,
+        "pdf_y": 612.7,
+        "pdf_x_end": 460.8,
+        "pdf_y_end": 628.7,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Hodzić",
@@ -14287,7 +14355,7 @@
     "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
     "soldier_id": "0046000382",
     "pdf_x_end": 167.1,
-    "birth_place": "Stankovci, Benko-'ac",
+    "birth_place": "Stankovci, Benkovac",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "rank": "kurir",
@@ -14313,7 +14381,6 @@
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_place": "Xìsle bitke na Sutjesci",
     "rank": "borac"
   },
   {
@@ -15576,11 +15643,11 @@
     "death_place": "Sutjeska"
   },
   {
-    "last_name": "Jkolj",
+    "last_name": "Kukolj",
     "middle_name": "Todora",
     "first_name": "Špiro",
     "fathers_name": "Todor",
-    "full_name": "Jkolj Todora Špiro",
+    "full_name": "Kukolj Todora Špiro",
     "additional_info": "borac, rođen 1910, Vrpolje, Knin, pekar, Srbin, u NOB od jula 1942, član KPJ od juna 1943. godine.",
     "birth_year": "1910",
     "pdf_page": 32,
@@ -16169,7 +16236,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "leto 1943",
-    "death_place": "u Hercegovini na pl. Velež u",
+    "death_place": "u Hercegovini na pl. Velež",
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "party": "KPJ",
@@ -16185,11 +16252,11 @@
     ]
   },
   {
-    "last_name": "Jrsar",
+    "last_name": "Kursar",
     "middle_name": "Markijela",
     "first_name": "Frane",
     "fathers_name": "Markijela",
-    "full_name": "Jrsar Markijela Frane",
+    "full_name": "Kursar Markijela Frane",
     "additional_info": "politički komesar 5. bataljona, rođen 1912, Prvić Šepurine, Šibenik, radnik, FIrvat, u NOB od 1941, član KPJ od 1942, poginuo na Majevici aprila 1944. godine, politički komesar bolnice pri Glavnom štabu Vojvodine.",
     "birth_year": "1912",
     "pdf_page": 32,
@@ -16206,7 +16273,76 @@
     "death_place": "Majevica",
     "rank": "politički komesar",
     "unit_detail": "5. bataljon",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0036000987",
+        "name": "Kursar M Frane",
+        "additional_info": "rođen 1912. godine u Prviću — Šibenik, zamjenik komesara N bat, poginuo u istočnoj Bosni.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036011067",
+        "name": "Kursar M Frane",
+        "additional_info": "rođen 1912. godine u Prviću — 9ibenik, zamjenik komesara II bat., poginuo u istočnoj Bosni.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 74,
+        "pdf_x": 49.4,
+        "pdf_y": 350.09000000000003,
+        "pdf_y_end": 366.5,
+        "pdf_x_end": 385.6,
+        "pdf_x_left": 27.5,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036030062",
+        "name": "Kursar Frane",
+        "additional_info": "Promjene u komandnom sastavu 1. dalmatinske brigade: politički komesar 2. bataljona »Bude Borjan«, od decembra 1942. do marta 1943. godine; zamjenik političkog komesara 2. bataljona »Bude Borjan«, od 6. septembra do decembra 1942. godine.",
+        "pdf_file": "1-dalmatinska-komandni-sastav.pdf",
+        "pdf_page": 4,
+        "pdf_x": 60.2,
+        "pdf_y": 545.7,
+        "pdf_x_end": 144.2,
+        "pdf_y_end": 555.7,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036040026",
+        "name": "Kursar Frane",
+        "additional_info": "Starješinski sastav 1. dalmatinske brigade na dan formiranja 6. IX 1942.: zamjenik političkog komesara 2. bataljona »Bude Borjan«, rođen 1913. godine, Hrvat, radnik.",
+        "pdf_file": "1-dalmatinska-formiranje.pdf",
+        "pdf_page": 3,
+        "pdf_x": 232.7,
+        "pdf_y": 229.9,
+        "pdf_x_end": 412.7,
+        "pdf_y_end": 239.9,
+        "pdf_rects": [
+          [
+            232.7,
+            229.9,
+            412.7,
+            239.9
+          ],
+          [
+            54.5,
+            240.5,
+            264.9,
+            250.5
+          ]
+        ],
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1913"
+      ]
+    }
   },
   {
     "last_name": "Kurtin",
@@ -17381,7 +17517,7 @@
     "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
     "soldier_id": "0046000468",
     "pdf_x_end": 213.8,
-    "birth_place": "Lozovac, Šibe-' nik",
+    "birth_place": "Lozovac, Šibenik",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "death_type": "poginuo",
@@ -19386,7 +19522,7 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "death_place": "na Zelengori ìa"
+    "death_place": "na Zelengori"
   },
   {
     "last_name": "Kovljević",
@@ -21079,7 +21215,7 @@
     "ethnicity": "Hrvat",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "na Sutjesci na",
+    "death_place": "Sutjeska",
     "unit_detail": "3. bataljon",
     "party": "KPJ"
   },
@@ -27698,8 +27834,8 @@
         "pdf_page": 126,
         "pdf_x": 242.3,
         "pdf_y": 791.0,
-        "pdf_x_end": 601.9,
-        "pdf_y_end": 871.9,
+        "pdf_x_end": 540.9,
+        "pdf_y_end": 872.0,
         "ref_book": "imotska-krajina-pali-borci"
       }
     ],
@@ -29244,7 +29380,7 @@
         "pdf_page": 49,
         "pdf_x": 223.9,
         "pdf_y": 603.0,
-        "pdf_x_end": 389.3,
+        "pdf_x_end": 389.2,
         "pdf_y_end": 667.9,
         "ref_book": "imotska-krajina-pali-borci"
       },
@@ -29875,11 +30011,11 @@
     "birth_date": "14.11.1921"
   },
   {
-    "last_name": "Orijan",
+    "last_name": "Korijan",
     "middle_name": "Rade",
     "first_name": "Ante",
     "fathers_name": "Rade",
-    "full_name": "Orijan Rade Ante",
+    "full_name": "Korijan Rade Ante",
     "additional_info": "komandir voda u pratećoj četi brigade, rođen 1913, Gradac, Ploče, zemljoradnik, Hrvat, u NOB od 1941, član KPJ od 1936, od jula 1944. na lečenju u Italiji.",
     "birth_year": "1913",
     "pdf_page": 30,
@@ -30086,13 +30222,12 @@
     "party": "KPJ 1937"
   },
   {
-    "last_name": "Osić",
+    "last_name": "Stošić",
     "middle_name": "Nike",
     "first_name": "Ivo",
     "fathers_name": "Niko",
-    "full_name": "Osić Nike Ivo",
+    "full_name": "Stošić Nike Ivo",
     "additional_info": "borac 2. bataljona, odcn 1923, Šibenik, zemljoradnik, Hrvat, u NOB od 1941, član KPJ od 1942, poginuo na Zelengori juna 1943.",
-    "birth_year": "",
     "pdf_page": 58,
     "pdf_y": 543.9,
     "pdf_x": 12.7,
@@ -30107,7 +30242,23 @@
     "death_place": "Zelengora",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "9021037903",
+        "name": "Stošić (Niko) Ivo",
+        "additional_info": "rođen 1920, Šibenik. Hrvat, poginuo 1943. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1826",
+        "source_page": 1826,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Šibenik",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_year": "1920"
   },
   {
     "last_name": "Ostojić",
@@ -30225,11 +30376,11 @@
     ]
   },
   {
-    "last_name": "Ošić",
+    "last_name": "Bošić",
     "middle_name": "Mate",
     "first_name": "Stipe",
     "fathers_name": "Mate",
-    "full_name": "Ošić Mate Stipe",
+    "full_name": "Bošić Mate Stipe",
     "additional_info": "borac, rođen 1920, Zmijavci, Imotski, zemljoradnik, Hrval, u NOB od februara 1943. godine.",
     "birth_year": "1920",
     "pdf_page": 6,
@@ -33850,8 +34001,9 @@
         "pdf_page": 123,
         "pdf_x": 412.0,
         "pdf_y": 455.2,
-        "pdf_x_end": 577.6,
-        "pdf_y_end": 572.1,
+        "pdf_x_end": 576.2,
+        "pdf_y_end": 480.5,
+        "pdf_x_left": 220.0,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -33954,13 +34106,13 @@
       {
         "soldier_id": "0001301448",
         "name": "Puharić Grge Josip",
-        "additional_info": "zvani Butić; Zemljoradnik, rođen 1914, Puharići, Makarska; član KPJ od 1940. U NOB od 1941. Poginuo 14. juna 1943. u borbi na Sutjesci, Miljevina, Foča. RADOJKOVIć Stipe MILOŠ Zemljoradnik, rođen 1923, Podgora, Makarska; član SKOJ-a i KPJ od 1941. U NOB od 1942. Poginuo februara 1944. u borbi za Travnik.",
+        "additional_info": "zvani Butić; Zemljoradnik, rođen 1914, Puharići, Makarska; član KPJ od 1940. U NOB od 1941. Poginuo 14. juna 1943. u borbi na Sutjesci, Miljevina, Foča.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 28,
         "pdf_x": 384.0,
         "pdf_y": 466.4,
-        "pdf_y_end": 570.9,
-        "pdf_x_end": 534.8,
+        "pdf_y_end": 518.1,
+        "pdf_x_end": 534.3,
         "pdf_x_left": 380.0,
         "unit_file": "prva-proleterska-soldiers.json"
       },
@@ -34851,6 +35003,18 @@
         "pdf_y": 369.1,
         "pdf_x_end": 463.3,
         "pdf_y_end": 684.1,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001309017",
+        "name": "Radojković Stipe Miloš",
+        "additional_info": "Zemljoradnik, rođen 1923, Podgora, Makarska; član SKOJ-a i KPJ od 1941. U NOB od 1942. Poginuo februara 1944. u borbi za Travnik.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 28,
+        "pdf_x": 380.5,
+        "pdf_y": 526.9,
+        "pdf_x_end": 534.8,
+        "pdf_y_end": 570.9,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -35823,11 +35987,11 @@
     }
   },
   {
-    "last_name": "Rdić",
+    "last_name": "Prdić",
     "middle_name": "Duje",
     "first_name": "Ivan",
     "fathers_name": "Duje",
-    "full_name": "Rdić Duje Ivan",
+    "full_name": "Prdić Duje Ivan",
     "additional_info": "borac, rođen 1917, Fečevica, Split, zemljoradnik, Hrvat, u NOB od februara 1943, poginuo na Donjim Barama 8. juna 1943. u sastavu 2. dalmatinske brigade.",
     "birth_year": "1917",
     "pdf_page": 50,
@@ -35962,11 +36126,11 @@
     "death_place": "Sutjeska"
   },
   {
-    "last_name": "Ribičević",
+    "last_name": "Pribićević",
     "middle_name": "Ivana",
     "first_name": "Ante",
     "fathers_name": "Ivan",
-    "full_name": "Ribičević Ivana Ante",
+    "full_name": "Pribićević Ivana Ante",
     "additional_info": "borac 1. čete 1. bataljona, rođen 1913, Podaca, Ploče, zemljoradnik, Hrvat, u NOB od 1942, član KPJ, poginuo na Zelengori 10. juna 1943. godine.",
     "birth_year": "1913",
     "pdf_page": 50,
@@ -35984,7 +36148,17 @@
     "death_place": "Zelengora",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9021023926",
+        "name": "Pribićević (Ivan) Ante",
+        "additional_info": "rođen 1913, Podaca (Metković). Hrvat, poginuo 1943. u NOBu, 1.dalmat.br.",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1103",
+        "source_page": 1103,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Pribičević",
@@ -36426,11 +36600,11 @@
     }
   },
   {
-    "last_name": "Roskoi",
+    "last_name": "Troskot",
     "middle_name": "Ive",
     "first_name": "Nikola",
     "fathers_name": "Ivo",
-    "full_name": "Roskoi Ive Nikola",
+    "full_name": "Troskot Ive Nikola",
     "additional_info": "zvani Mićo; borac 3. bataljona, rođen 1904, Kašić, Šibenik, zemljoradnik, Hrvat, u NOB od 1942, član KPJ od oktobra 1942. godine, krajem rata komandir voda u 1. proleterskoj brigadi.",
     "birth_year": "1904",
     "pdf_page": 66,
@@ -36445,7 +36619,47 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0001012770",
+        "name": "Troskot Ive Nikola",
+        "additional_info": "zvani Mićo; 1904, Kašici, Šibenik, Hrvatska, Hrvat, zemljoradnik, član KPJ od 1943, u NOB od oktobra 1942, u brigadi od juna 1943, IV bataljon, vodnik",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 302,
+        "pdf_x": 58.3,
+        "pdf_y": 203.8,
+        "pdf_x_end": 365.8,
+        "pdf_y_end": 233.9,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001403296",
+        "name": "Troskot Ive Nikola",
+        "additional_info": "zvani Mićo; rođen 1904, Kašići, Šibenik, zemljoradnik. Potiče iz siromašne seljačke obitelji. Za NOP radi od 1942. U 3. dalmatinsku brigadu stupa studenog 1942. Već u prvim borbama iako stariji po godinama, ističe se kao hrabar borac, a posebno na trnovitom putu ove brigade kroz IV i V neprijateljsku ofanzivu, u teškim bitkama kod Prozora, Jablanici, zatim kod Nevesinja, Uloga, Kalinovika, Zavajita i na Ljubišnju, Sandžaka, do Vučeva, kada je početkom lipnja 1943. rasformirana ova brigada i dolazi u sastav 4. bataljona 1. proleterske NOU brigade, s kojim nastavlja borbe, preko Miljevine, Jahorine, r. Prače, Han-Pijeska, Vlasenice, Zvornika, potom preko Nemile i srednje Bosne do Dalmacije, i natrag. Član KPJ postao je listopada 1943. kod Travnika, da bi zatim nastavio borbe, oko Jajca, Mrkonjić-Grada, Sipova, na Mliništima, za vreme drvarske operacije, potom u nadiranju na istok i po prelasku u Srbiju, oko Valjeva, Uba, Avale, Beograda, Srijema i Slavonije do Zaf reba, gdje i dočekuje kraj rata, ao komandir desetine u vodu za vezu bataljona u činu vodnika. Poslije rata demobiliziranje iz JNA, kao starije godište. Penzioner.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 258,
+        "pdf_x": 267.7,
+        "pdf_y": 404.7,
+        "pdf_x_end": 375.6,
+        "pdf_y_end": 546.8,
+        "pdf_rects": [
+          [
+            259.8,
+            403.7,
+            375.6,
+            546.8
+          ],
+          [
+            379.7,
+            139.2,
+            497.2,
+            306.8
+          ]
+        ],
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Rovina",
@@ -40234,7 +40448,8 @@
         "pdf_x": 433.1,
         "pdf_y": 335.8,
         "pdf_x_end": 600.5,
-        "pdf_y_end": 409.8,
+        "pdf_y_end": 361.1,
+        "pdf_x_left": 240.4,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -42057,7 +42272,7 @@
     "ethnicity": "Hrvat",
     "death_type": "poginuo",
     "death_date": "krajem maja 1943",
-    "death_place": "na Dur-. mitoru",
+    "death_place": "Durmitor",
     "rank": "borac",
     "party": "SKOJ"
   },
@@ -42305,11 +42520,11 @@
     "party": "KPJ"
   },
   {
-    "last_name": "Učemilo",
+    "last_name": "Vučemilo",
     "middle_name": "Mate",
     "first_name": "Ante",
     "fathers_name": "Mate",
-    "full_name": "Učemilo Mate Ante",
+    "full_name": "Vučemilo Mate Ante",
     "additional_info": "borac, rođen 1925, Radošić, Sinj, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a od 1942, krajem rata politički komesar čete u 10. dalmatinskoj brigadi.",
     "birth_year": "1925",
     "pdf_page": 70,
@@ -43971,7 +44186,7 @@
     "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
     "soldier_id": "0046001159",
     "pdf_x_end": 213.6,
-    "birth_place": "Er-. cegovci, Sinj",
+    "birth_place": "Ercegovci, Sinj",
     "ethnicity": "Hrvatica",
     "occupation": "domaćica",
     "death_type": "poginuo",
@@ -44089,11 +44304,11 @@
     "birth_date": "25.05.1915"
   },
   {
-    "last_name": "Vleta-Car",
+    "last_name": "Čaleta-Car",
     "middle_name": "Jure",
     "first_name": "Frane",
     "fathers_name": "Jure",
-    "full_name": "Vleta-Car Jure Frane",
+    "full_name": "Čaleta-Car Jure Frane",
     "additional_info": "borac, rođen 1919, Bilice, Šibenik, zemljoradnik, Hrvat, u NOB od oktobra 1942, poginuo kod Andrijevice 18. novembra 1943. godine, komandir vola u 4. proleterskoj brigadi.",
     "birth_year": "1919",
     "pdf_page": 12,
@@ -44109,7 +44324,31 @@
     "death_type": "poginuo",
     "death_date": "18.11.1943",
     "death_place": "Andrijevica",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0040011851",
+        "name": "Ćaleta-Car Jure Frane",
+        "additional_info": "rođen 1920. u Bilicama, zemljoradnik, borac, poginuo marta 1943. u borbama vođenim od Neretve do Nevesinja.",
+        "pdf_file": "4-proleterska-poginuli.pdf",
+        "pdf_page": 21,
+        "pdf_x": 49.7,
+        "pdf_y": 85.9,
+        "pdf_x_end": 355.1,
+        "pdf_y_end": 111.2,
+        "unit_file": "4-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "03.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Vojvodić",
@@ -45210,7 +45449,7 @@
       },
       {
         "soldier_id": "0001013566",
-        "name": "Vuković Dure Milan",
+        "name": "Vuković Đure Milan",
         "additional_info": "1922, Cetina, Knin, Hrvatska, Srbin, zemljoradnik, član SKOJ-a od 1942, u NOB od juna 1942, u brigadi od juna 1943, II bataljon, borac, poginuo 05. 07. 1943, kod Zvornika",
         "pdf_file": "prva-proleterska-3.pdf",
         "pdf_page": 362,
@@ -45922,8 +46161,8 @@
         "pdf_page": 51,
         "pdf_x": 431.1,
         "pdf_y": 672.0,
-        "pdf_x_end": 601.2,
-        "pdf_y_end": 755.1,
+        "pdf_x_end": 569.9,
+        "pdf_y_end": 680.0,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -46181,26 +46420,47 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Zić",
+    "last_name": "Nežić",
     "middle_name": "Nikole",
     "first_name": "Mate",
     "fathers_name": "Nikola",
-    "full_name": "Zić Nikole Mate",
-    "additional_info": "borac 1. čete 2. bataljona, rođen 1920, Kljenak, Vr-;orac, radnik, Hrvat, u NOB od 1941, lan SKOJ-a od 1941, član KPJ od 943, krajem rata politički komesar ete u 9. krajiškoj brigadi. '.) 1 K Mate ANTE, borac 1. čete 4. »ataljona, rođen 1919, Selca, Brač, emljoradnik, Hrvat, u NOB od apriti 1942, član KPJ od oktobra 1942, rajem rata politički komesar čete u . dalmatinskoj brigadi.",
+    "full_name": "Nežić Nikole Mate",
+    "additional_info": "borac 1. čete 2. bataljona, rođen 1920, Kljenak, Vr-;orac, radnik, Hrvat, u NOB od 1941, lan SKOJ-a od 1941, član KPJ od 943, krajem rata politički komesar ete u 9. krajiškoj brigadi. '.) 1",
     "birth_year": "1920",
     "pdf_page": 44,
     "pdf_y": 297.2,
     "pdf_x": 8.4,
-    "pdf_y_end": 425.2,
+    "pdf_y_end": 360.4,
     "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
     "soldier_id": "0046001212",
-    "pdf_x_end": 165.9,
+    "pdf_x_end": 165.7,
     "party": "KPJ 1942",
     "birth_place": "Kljenak, Vr",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon"
+  },
+  {
+    "soldier_id": "0046009001",
+    "last_name": "Žić",
+    "middle_name": "Mate",
+    "first_name": "Ante",
+    "fathers_name": "Mate",
+    "full_name": "Žić Mate Ante",
+    "additional_info": "borac 1. čete 4. »ataljona, rođen 1919, Selca, Brač, emljoradnik, Hrvat, u NOB od apriti 1942, član KPJ od oktobra 1942, rajem rata politički komesar čete u . dalmatinskoj brigadi.",
+    "birth_year": "1919",
+    "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+    "pdf_page": 44,
+    "pdf_x": 9.4,
+    "pdf_y": 362.0,
+    "birth_place": "Selca, Brač",
+    "ethnicity": "Hrvat",
+    "rank": "politički komesar čete",
+    "unit_detail": "1. četa",
+    "party": "KPJ 1942",
+    "pdf_x_end": 165.9,
+    "pdf_y_end": 425.2
   },
   {
     "last_name": "Zjalić",
@@ -46538,6 +46798,7 @@
         "pdf_y": 546.6,
         "pdf_x_end": 599.6,
         "pdf_y_end": 637.4,
+        "pdf_x_left": 240.8,
         "ref_book": "imotska-krajina-pali-borci"
       }
     ]
@@ -48101,8 +48362,8 @@
         "pdf_page": 19,
         "pdf_x": 431.3,
         "pdf_y": 443.7,
-        "pdf_x_end": 597.0,
-        "pdf_y_end": 517.9,
+        "pdf_x_end": 596.7,
+        "pdf_y_end": 492.4,
         "ref_book": "imotska-krajina-pali-borci"
       }
     ]
@@ -48479,8 +48740,8 @@
         "pdf_page": 51,
         "pdf_x": 238.5,
         "pdf_y": 678.3,
-        "pdf_x_end": 404.4,
-        "pdf_y_end": 744.0,
+        "pdf_x_end": 601.2,
+        "pdf_y_end": 755.1,
         "ref_book": "imotska-krajina-pali-borci"
       },
       {
@@ -49087,7 +49348,7 @@
         "pdf_x": 241.1,
         "pdf_y": 671.1,
         "pdf_x_end": 406.2,
-        "pdf_y_end": 737.7,
+        "pdf_y_end": 687.5,
         "ref_book": "imotska-krajina-pali-borci"
       }
     ]
@@ -52173,8 +52434,8 @@
         "pdf_page": 55,
         "pdf_x": 240.5,
         "pdf_y": 611.3,
-        "pdf_x_end": 406.1,
-        "pdf_y_end": 700.6,
+        "pdf_x_end": 597.8,
+        "pdf_y_end": 635.8,
         "role": "activist",
         "ref_book": "imotska-krajina-pali-borci"
       }

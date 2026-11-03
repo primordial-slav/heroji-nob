@@ -1287,6 +1287,18 @@
         "pdf_y_end": 646.3,
         "pdf_x_left": 242.6,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001309016",
+        "name": "Andrić Branko",
+        "additional_info": "politički delegat voda Pekarski radnik, rođen 1912. Noćaj, Sremska Mitrovica; član KPJ od pre ustanka 1941. Poginuo juna 1943. u borbi na Sutjesci, kod\" Suhe, na dužnosti političkog delegata voda.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 12,
+        "pdf_x": 71.3,
+        "pdf_y": 527.8,
+        "pdf_x_end": 225.2,
+        "pdf_y_end": 596.9,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "variants": {
@@ -2772,12 +2784,12 @@
       {
         "soldier_id": "0001300075",
         "name": "Balaban Dušan",
-        "additional_info": "Metalski radnik, rođen 1915. Banjaluka; član KPJ od maja 1943. Poginuo juna 1943. u borbi na Sutjesci kod Suhe. BANOVIć DOBRIVOJE Automehaničar, rođen 1907. Barajevo; član KPJ od septembra 1943. Danas penzioner.",
+        "additional_info": "Metalski radnik, rođen 1915. Banjaluka; član KPJ od maja 1943. Poginuo juna 1943. u borbi na Sutjesci kod Suhe.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 12,
         "pdf_x": 76.3,
         "pdf_y": 604.9,
-        "pdf_y_end": 691.2,
+        "pdf_y_end": 648.9,
         "pdf_x_end": 225.8,
         "pdf_x_left": 71.3,
         "unit_file": "prva-proleterska-soldiers.json"
@@ -2890,6 +2902,18 @@
         "pdf_x_end": 575.9,
         "pdf_y_end": 689.5,
         "pdf_x_left": 243.1,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001309004",
+        "name": "Banović Dobrivoje",
+        "additional_info": "Automehaničar, rođen 1907. Barajevo; član KPJ od septembra 1943. Danas penzioner.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 12,
+        "pdf_x": 72.0,
+        "pdf_y": 656.5,
+        "pdf_x_end": 225.8,
+        "pdf_y_end": 691.2,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -3825,14 +3849,13 @@
       {
         "soldier_id": "0001300131",
         "name": "Blagojević Milivoja Paun",
-        "additional_info": "Zemljoradnik, rođen 1907, Skela, Obrenovac. Poginuo 29. novembra 1941. na Kadinjači. BOGDANOVIć Mihaila IVAN — VANJKA Radnik, rođen 1919, Zabrežje, Obrenovac; član KPJ pre ustanka 1941. Poginuo krajem 1941. godine.",
+        "additional_info": "Zemljoradnik, rođen 1907, Skela, Obrenovac. Poginuo 29. novembra 1941. na Kadinjači.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 6,
         "pdf_x": 385.7,
         "pdf_y": 416.6,
         "pdf_x_end": 538.3,
-        "pdf_y_end": 506.7,
-        "pdf_x_left": 384.2,
+        "pdf_y_end": 454.2,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
@@ -3916,10 +3939,10 @@
   },
   {
     "last_name": "Bogdanović",
-    "middle_name": "",
+    "middle_name": "Mihaila",
     "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Bogdanović Ivan",
+    "fathers_name": "Mihailo",
+    "full_name": "Bogdanović Mihaila Ivan",
     "additional_info": "zvani Vanjka; rođen 1919, Zabrežje, Obrenovac, radnik. Član KPJ pre ustanka 1941, sekretar ćelije KPJ u Zabrežju. Poginuo decembra 1941, na r. Ubača kao politički komesar čete u Posavo-tamnavskom NOP odredu.",
     "birth_year": "1919",
     "birth_place": "Zabrežje, Obrenovac",
@@ -3936,7 +3959,21 @@
     "rank": "politički komesar čete",
     "pdf_x_end": 344.9,
     "death_place": "na r. Ubača",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0001309005",
+        "name": "Bogdanović Mihaila Ivan",
+        "additional_info": "zvani Vanjka; Radnik, rođen 1919, Zabrežje, Obrenovac; član KPJ pre ustanka 1941. Poginuo krajem 1941. godine.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 6,
+        "pdf_x": 384.2,
+        "pdf_y": 462.0,
+        "pdf_x_end": 538.2,
+        "pdf_y_end": 506.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bogdanović",
@@ -5501,23 +5538,23 @@
     "first_name": "Milorad",
     "fathers_name": "Ivan",
     "full_name": "Brkić Ivana Milorad",
-    "additional_info": "zvani Icin; rođen 1920. Baćevac, Barajevo, Beograd, zemljoradnik. Kandidat za člana KPJ od oktobra 1939. Član KPJ od 18. juna 1942. Bio borac i starešina u 6. beogradskom bataljonu 1. proleterske brigade i drugim jedinicama NOVJ. Ranjavan 6 puta, najteže na sremskom frontu, kao komandir čete i ostao težak RVI - 100%. Umro 16. 6. 1981. godine. VARNIČIĆ ... SLABA, rođen u Maloj Moštanici, Obrenovac, abadžija, i puškar. U bataljonu bio do kraja novembra 1941.",
+    "additional_info": "zvani Icin; rođen 1920. Baćevac, Barajevo, Beograd, zemljoradnik. Kandidat za člana KPJ od oktobra 1939. Član KPJ od 18. juna 1942. Bio borac i starešina u 6. beogradskom bataljonu 1. proleterske brigade i drugim jedinicama NOVJ. Ranjavan 6 puta, najteže na sremskom frontu, kao komandir čete i ostao težak RVI - 100%. Umro 16. 6. 1981. godine.",
     "birth_year": "1920",
     "unit_detail": "2. posavski (beogradski) bataljon",
     "pdf_page": 50,
     "pdf_y": 223.0,
     "pdf_x": 97.1,
-    "pdf_y_end": 298.9,
+    "pdf_y_end": 275.4,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110000212",
+    "pdf_x_end": 379.1,
+    "ethnicity": "Srbin",
+    "party": "KPJ 1942",
     "birth_place": "Baćevac, Barajevo, Beograd",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "16.06.1981",
     "rank": "komandir čete",
-    "pdf_x_end": 379.1,
-    "ethnicity": "Srbin",
-    "party": "KPJ 1942",
     "other_sources": [
       {
         "soldier_id": "0001001220",
@@ -5570,6 +5607,24 @@
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
+  },
+  {
+    "soldier_id": "0110009006",
+    "last_name": "Varničić",
+    "middle_name": "",
+    "first_name": "Slaba",
+    "fathers_name": "",
+    "full_name": "Varničić Slaba",
+    "additional_info": "rođen u Maloj Moštanici, Obrenovac, abadžija, i puškar. U bataljonu bio do kraja novembra 1941.",
+    "birth_year": "",
+    "pdf_file": "posavski-odred.pdf",
+    "pdf_page": 50,
+    "pdf_x": 97.3,
+    "pdf_y": 281.8,
+    "birth_place": "Mala Moštanica, Obrenovac",
+    "occupation": "abadžija",
+    "pdf_x_end": 378.6,
+    "pdf_y_end": 298.9
   },
   {
     "last_name": "Brkić",
@@ -6778,10 +6833,10 @@
   {
     "last_name": "Damnjanović",
     "middle_name": "",
-    "first_name": "Slavol",
+    "first_name": "Slavoljub",
     "fathers_name": "",
-    "full_name": "Damnjanović Slavol",
-    "additional_info": "UB, rođen 1925, Crvena Jabuka, Ub. Borac 4. bataljona do 28. 2. 1942. Ponovo stupio u NOVJ oktobra 1944. Major JNA u rezervi.",
+    "full_name": "Damnjanović Slavoljub",
+    "additional_info": "rođen 1925, Crvena Jabuka, Ub. Borac 4. bataljona do 28. 2. 1942. Ponovo stupio u NOVJ oktobra 1944. Major JNA u rezervi.",
     "birth_year": "1925",
     "birth_place": "Crvena Jabuka, Ub",
     "unit_detail": "3. tamnavski i 4. posavotamnavski bataljon",
@@ -6791,8 +6846,8 @@
     "pdf_y_end": 106.0,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110000264",
-    "rank": "major",
-    "pdf_x_end": 334.5
+    "pdf_x_end": 334.5,
+    "rank": "major"
   },
   {
     "last_name": "Damnjanović",
@@ -7082,8 +7137,8 @@
         "pdf_page": 5,
         "pdf_x": 211.9,
         "pdf_y": 426.1,
-        "pdf_x_end": 366.0,
-        "pdf_y_end": 511.5,
+        "pdf_x_end": 365.3,
+        "pdf_y_end": 444.1,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -8204,6 +8259,18 @@
         "pdf_x_end": 362.6,
         "pdf_x_left": 208.2,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100729",
+        "name": "Dujić Bogdana Vladimir",
+        "additional_info": "borac 3. cetc 6. bataljona, rođen 1920, Beograd, radnik,'Srbin, u NOB od 1941, dan SKOJ-a od 1940, član KIM od novembra 1942, krajem rata politički komesar brigade.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 21,
+        "pdf_x": 44.6,
+        "pdf_y": 514.2,
+        "pdf_x_end": 212.7,
+        "pdf_y_end": 577.4,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
   },
@@ -8471,11 +8538,11 @@
     "party": "KPJ 1935"
   },
   {
-    "last_name": "Eatić",
+    "last_name": "Vatić",
     "middle_name": "",
     "first_name": "Živan",
     "fathers_name": "",
-    "full_name": "Eatić Živan",
+    "full_name": "Vatić Živan",
     "additional_info": "rođen 1915, Jabučje, Lajkovac, zemljoradnik. Borac bataljona do 28. 11. 1941. Ponovo stupio u NOVJ 13. 12. 1944. Poručnik JNA u rezervi. Umro posle rata.",
     "birth_year": "1915",
     "birth_place": "Jabučje, Lajkovac",
@@ -10682,13 +10749,13 @@
       {
         "soldier_id": "0001300388",
         "name": "Govedarica Bogdan",
-        "additional_info": "Podoficir BJV, rođen 1921, Neteče, Virovitica. Poginuo 29. novembra 1941. na Kadinjači. JAKOVLJEVIć Mihaila MILENTI- JE Zemljoradnik, rođen Vukićevica, Obrenovac. Poginuo 10. novembra 1941, Oglađenovac, Valjevo.",
+        "additional_info": "Podoficir BJV, rođen 1921, Neteče, Virovitica. Poginuo 29. novembra 1941. na Kadinjači.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 7,
         "pdf_x": 56.9,
         "pdf_y": 677.3,
-        "pdf_x_end": 206.8,
-        "pdf_y_end": 730.0,
+        "pdf_x_end": 206.6,
+        "pdf_y_end": 712.7,
         "pdf_x_left": 52.9,
         "unit_file": "prva-proleterska-soldiers.json"
       }
@@ -13587,15 +13654,15 @@
     "full_name": "Ivković Jovan",
     "additional_info": "Radljevo, Ub, radnik. Borac do 15. 12. 1941.",
     "birth_year": "1917",
-    "unit_detail": "3. tamnavski i 4. posavotamnavski bataljon",
+    "unit_detail": "",
     "pdf_page": 117,
     "pdf_y": 67.8,
     "pdf_x": 62.8,
     "pdf_y_end": 75.8,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110000527",
-    "death_type": "umro",
-    "death_date": "1984",
+    "death_type": "",
+    "death_date": "",
     "pdf_x_end": 318.8,
     "birth_place": "Radljevo, Ub",
     "occupation": "radnik",
@@ -26033,7 +26100,7 @@
     "death_date": "21.01.1942",
     "rank": "borac",
     "pdf_x_end": 338.8,
-    "death_place": "Pjenovac, Han--Pijesak",
+    "death_place": "Pjenovac, Han-Pijesak",
     "occupation": "trgovački pomoćnik",
     "other_sources": [
       {
@@ -28644,16 +28711,15 @@
     "party": "KPJ 1940",
     "other_sources": [
       {
-        "soldier_id": "0001200506",
-        "name": "Marković Živka Nadežda",
-        "additional_info": "zvana Nada; bolničarka, rođena 1914. u Aleksandrovu, Niš, SRS, tekstilna radnica, član KPJ od 1940.",
-        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
-        "pdf_page": 58,
-        "pdf_x": 288.3,
-        "pdf_y": 358.8,
-        "pdf_x_end": 597.1,
-        "pdf_y_end": 379.9,
-        "pdf_x_left": 264.5,
+        "soldier_id": "0001006704",
+        "name": "Marković Ž Nadežda",
+        "additional_info": "zvana Nada; 1914, Aleksandrovo, Merošina, Srbija, Srpkinja, radnica, član KPJ od 1940., u NOB od 1941, u brigadi od decembra 1941, VI bataljon, četna bolničarka",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 206,
+        "pdf_x": 64.5,
+        "pdf_y": 283.2,
+        "pdf_x_end": 371.5,
+        "pdf_y_end": 315.8,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -28667,6 +28733,19 @@
         "pdf_y_end": 422.2,
         "pdf_x_end": 370.1,
         "pdf_x_left": 216.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200506",
+        "name": "Marković Živka Nadežda",
+        "additional_info": "zvana Nada; bolničarka, rođena 1914. u Aleksandrovu, Niš, SRS, tekstilna radnica, član KPJ od 1940.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 58,
+        "pdf_x": 288.3,
+        "pdf_y": 358.8,
+        "pdf_x_end": 597.1,
+        "pdf_y_end": 379.9,
+        "pdf_x_left": 264.5,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -31926,7 +32005,7 @@
     "pdf_y_end": 67.6,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110001213",
-    "birth_place": "Sovl.ak, Ub",
+    "birth_place": "Sovljak, Ub",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "12.1941",
@@ -34053,13 +34132,13 @@
       {
         "soldier_id": "0001301074",
         "name": "Milovanović Života",
-        "additional_info": "vodnik; Zemljoradnik, rođen 1914. Ljubinić, Obrenovac; član KPJ od septembra 1941. Danas major JNA u rezervi. MILJEVIć PAJA Kolarski radnik, rođen Obrenovac; kandidat za člana KPJ od januara 1942. Poginuo krajem 1943. kod Vlasenice, u 6. Istočno-bosanskoj brigadi.",
+        "additional_info": "vodnik; Zemljoradnik, rođen 1914. Ljubinić, Obrenovac; član KPJ od septembra 1941. Danas major JNA u rezervi.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 14,
         "pdf_x": 221.0,
         "pdf_y": 562.2,
         "pdf_x_end": 370.7,
-        "pdf_y_end": 663.1,
+        "pdf_y_end": 600.7,
         "pdf_x_left": 216.0,
         "unit_file": "prva-proleterska-soldiers.json"
       }
@@ -34589,6 +34668,19 @@
         "pdf_x_end": 192.3,
         "pdf_y_end": 62.9,
         "unit_file": "3-krajiska-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0010209019",
+        "name": "Milutinović Dragića Branko",
+        "additional_info": "rođ. 1918, Zvizdar, Ub, zemljoradnik, Srbin, u NOB i brigadi od 7. 9. 1944, borac, poginuo 23. 1. 1945. Koziji Salaš — Sid.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 264,
+        "pdf_x": 80.4,
+        "pdf_y": 202.9,
+        "pdf_x_end": 345.7,
+        "pdf_y_end": 230.6,
+        "pdf_x_left": 63.8,
+        "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
     "variants": {
@@ -34786,14 +34878,14 @@
       {
         "soldier_id": "0001301096",
         "name": "Minderović Čedomir",
-        "additional_info": "zvani Čeda; politički komesar; (od 4. 1. 1942) Književnik, rođen 1912, Beograd; član KPJ 1941. Umro 15. januara 1966. godine. ŽIVKOVIć LJUBOMIR — LJUPČE ŠPANAC, politički komesar, od 4. januara 1942. intendant Obućarski radnik, rođen 1918, Crveni Breg, Bela Palanka; član KPJ 1935. Borac španskog građanskog rata. Teže ranjen 20. novembra 1942, u borbi za Sitnicu, Ključ kao zamenik komandanta bataljona i posle dva dana umro u Bos. Petrovcu. Proglašen za narodnog heroja.",
+        "additional_info": "zvani Čeda; politički komesar; (od 4. 1. 1942) Književnik, rođen 1912, Beograd; član KPJ 1941. Umro 15. januara 1966. godine.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 9,
         "pdf_x": 49.2,
         "pdf_y": 527.0,
-        "pdf_y_end": 699.3,
-        "pdf_x_end": 201.0,
-        "pdf_x_left": 45.5,
+        "pdf_y_end": 581.7,
+        "pdf_x_end": 200.4,
+        "pdf_x_left": 46.2,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -35269,11 +35361,11 @@
     }
   },
   {
-    "last_name": "Mitrovie A-",
-    "middle_name": "",
+    "last_name": "Mitrović",
+    "middle_name": "A",
     "first_name": "Jovan",
-    "fathers_name": "",
-    "full_name": "Mitrovie A- Jovan",
+    "fathers_name": "A",
+    "full_name": "Mitrović A Jovan",
     "additional_info": "rođen 1920, Novaci, Ub, zemljoradnik. Borac bataljona do decembra 1941. Zarobljen u s. Gvozdenović, Ub, i deportovan u Norvešku.",
     "birth_year": "1920",
     "birth_place": "Novaci, Ub",
@@ -40068,22 +40160,44 @@
     "first_name": "Radosav",
     "fathers_name": "",
     "full_name": "Pantić Radosav",
-    "additional_info": "zvani Raša; rođen 1921, Šiljakovac, Barajevo, zemljoradnik. U bataljonu bio do 26. 11. 1941. Januara 1945. mobilisan u NOVJ. Umro 1980. PAUNIĆ LjUBIŠA, rođen 1921. Stepojevac, Lazarevac, zemljoradnik. Član SKOJ-a od marta 1942. Bio borac 6. beogradskog bataljona 1. proleterske brigade. Poginuo 20. 11. 1942. u borbi za Sitnicu, Ključ.",
+    "additional_info": "zvani Raša; rođen 1921, Šiljakovac, Barajevo, zemljoradnik. U bataljonu bio do 26. 11. 1941. Januara 1945. mobilisan u NOVJ. Umro 1980.",
     "birth_year": "1921",
     "unit_detail": "2. posavski (beogradski) bataljon",
     "pdf_page": 78,
     "pdf_y": 257.1,
     "pdf_x": 95.8,
-    "pdf_y_end": 324.9,
+    "pdf_y_end": 283.4,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110001530",
     "pdf_x_end": 377.3,
-    "party": "SKOJ 1942",
+    "party": "",
     "birth_place": "Šiljakovac, Barajevo",
     "occupation": "zemljoradnik",
     "death_type": "umro",
-    "death_date": "1980",
-    "rank": "borac"
+    "death_date": "1980"
+  },
+  {
+    "soldier_id": "0110009007",
+    "last_name": "Paunić",
+    "middle_name": "",
+    "first_name": "Ljubiša",
+    "fathers_name": "",
+    "full_name": "Paunić Ljubiša",
+    "additional_info": "rođen 1921. Stepojevac, Lazarevac, zemljoradnik. Član SKOJ-a od marta 1942. Bio borac 6. beogradskog bataljona 1. proleterske brigade. Poginuo 20. 11. 1942. u borbi za Sitnicu, Ključ.",
+    "birth_year": "1921",
+    "pdf_file": "posavski-odred.pdf",
+    "pdf_page": 78,
+    "pdf_x": 95.8,
+    "pdf_y": 289.5,
+    "birth_place": "Stepojevac, Lazarevac",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "20.11.1942",
+    "death_place": "Sitnica, Ključ",
+    "rank": "borac",
+    "party": "SKOJ 1942",
+    "pdf_x_end": 376.9,
+    "pdf_y_end": 324.9
   },
   {
     "last_name": "Pantić",
@@ -43697,13 +43811,13 @@
       {
         "soldier_id": "0001301392",
         "name": "Pešić Dobrivoje",
-        "additional_info": "politički ko-; mesar Metalski radnik, rođen 1915. Pečani, Umka, Čukarica, Beograd; član KPJ od maja 1941. Danas general major JNA u rezervi. ANDRIć BRANKO, politički delegat voda Pekarski radnik, rođen 1912. Noćaj, Sremska Mitrovica; član KPJ od pre ustanka 1941. Poginuo juna 1943. u borbi na Sutjesci, kod\" Suhe, na dužnosti političkog delegata voda.",
+        "additional_info": "politički ko-; mesar Metalski radnik, rođen 1915. Pečani, Umka, Čukarica, Beograd; član KPJ od maja 1941. Danas general major JNA u rezervi.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 12,
         "pdf_x": 75.8,
         "pdf_y": 467.6,
-        "pdf_y_end": 596.9,
-        "pdf_x_end": 225.2,
+        "pdf_y_end": 519.8,
+        "pdf_x_end": 224.9,
         "pdf_x_left": 70.8,
         "unit_file": "prva-proleterska-soldiers.json"
       }
@@ -50720,6 +50834,18 @@
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
+        "soldier_id": "0001309019",
+        "name": "Sinđelić Slobodan",
+        "additional_info": "Trgovački pomoćnik, rođen 1914, Grabovac, Obrenovac; član KPJ od maja 1941. Poginuo jula 1943. Šekovići, kao politički komesar čete u 6. Istočno-bosanskoj brigadi.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 15,
+        "pdf_x": 75.1,
+        "pdf_y": 191.0,
+        "pdf_x_end": 229.3,
+        "pdf_y_end": 247.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0042000590",
         "name": "Sinđelić Ivana Slobodan",
         "additional_info": "politički komesar čete, rođen 1919, Grabovac, Obrenovac, trgovački pomoćnik, Srbin, u NOB od 1941, član KPJ od maja 1941, poginuo u bolnici u Šekovićima 14. jula 1943. godine.",
@@ -51194,12 +51320,12 @@
       {
         "soldier_id": "0001301609",
         "name": "Sovilj Ilija",
-        "additional_info": "Fizički radnik, rođen 1922. Kijani, Gračac; član SKOJ-a od oktobra 1941. član KPJ od 10. marta 1942. Danas kapetan I kl. JNA ti rezervi. STANKOVIć MILAN — MILANČE Muzičar, rođen 1923. Meljak, Barajevo; član KPJ od novembra 1942. Umro 2. juna 1981. godine.",
+        "additional_info": "Fizički radnik, rođen 1922. Kijani, Gračac; član SKOJ-a od oktobra 1941. član KPJ od 10. marta 1942. Danas kapetan I kl. JNA ti rezervi.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 11,
         "pdf_x": 374.4,
         "pdf_y": 298.5,
-        "pdf_y_end": 386.3,
+        "pdf_y_end": 343.1,
         "pdf_x_end": 527.2,
         "pdf_x_left": 372.4,
         "unit_file": "prva-proleterska-soldiers.json"
@@ -51262,7 +51388,7 @@
     "pdf_y_end": 94.7,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110001961",
-    "birth_place": "Ba\\",
+    "birth_place": "Baljevac, Obrenovac",
     "occupation": "zemljoradnik",
     "pdf_x_end": 344.9
   },
@@ -52198,11 +52324,28 @@
         "pdf_y_end": 771.1,
         "pdf_x_left": 255.9,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001309021",
+        "name": "Stanković Milan",
+        "additional_info": "zvani Milanče; Muzičar, rođen 1923. Meljak, Barajevo; član KPJ od novembra 1942. Umro 2. juna 1981. godine.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 11,
+        "pdf_x": 373.4,
+        "pdf_y": 350.8,
+        "pdf_x_end": 527.2,
+        "pdf_y_end": 386.3,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "variants": {
       "born": [
         "1923"
+      ],
+      "death": [
+        {
+          "date": "02.06.1981"
+        }
       ]
     }
   },
@@ -54573,22 +54716,22 @@
     "first_name": "Stevan",
     "fathers_name": "",
     "full_name": "Stublinčević Stevan",
-    "additional_info": "zvani Aeroplan; vodnik, rođen 1909. Draževac, Obrenovac, kolar. Poginuo 22. 12. 1941. u borbi za Sjenicu. SUBOTIĆ ... RIBA, rođen u Senti, radiotehničar. Došao u Beograd maja 1941. Nestao u borbama sa četnicima novembra 1941. na planini Rudnik.",
+    "additional_info": "zvani Aeroplan; vodnik, rođen 1909. Draževac, Obrenovac, kolar. Poginuo 22. 12. 1941. u borbi za Sjenicu.",
     "birth_year": "1909",
     "unit_detail": "2. posavski (beogradski) bataljon",
     "pdf_page": 88,
     "pdf_y": 441.1,
     "pdf_x": 91.4,
-    "pdf_y_end": 489.9,
+    "pdf_y_end": 458.2,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110002097",
+    "pdf_x_end": 372.5,
     "birth_place": "Draževac, Obrenovac",
     "occupation": "kolar",
     "death_type": "poginuo",
     "death_date": "22.12.1941",
     "death_place": "Sjenica",
     "rank": "vodnik",
-    "pdf_x_end": 373.0,
     "other_sources": [
       {
         "soldier_id": "0001200936",
@@ -54609,6 +54752,26 @@
         "1908"
       ]
     }
+  },
+  {
+    "soldier_id": "0110009008",
+    "last_name": "Subotić",
+    "middle_name": "",
+    "first_name": "Riba",
+    "fathers_name": "",
+    "full_name": "Subotić Riba",
+    "additional_info": "rođen u Senti, radiotehničar. Došao u Beograd maja 1941. Nestao u borbama sa četnicima novembra 1941. na planini Rudnik.",
+    "birth_year": "",
+    "pdf_file": "posavski-odred.pdf",
+    "pdf_page": 88,
+    "pdf_x": 91.6,
+    "pdf_y": 463.7,
+    "birth_place": "Senta",
+    "death_type": "nestao",
+    "death_date": "11.1941",
+    "death_place": "Rudnik",
+    "pdf_x_end": 373.0,
+    "pdf_y_end": 489.9
   },
   {
     "last_name": "Sujić",
@@ -58353,20 +58516,40 @@
     "first_name": "Života",
     "fathers_name": "",
     "full_name": "Vasić Života",
-    "additional_info": "rođen 1920, Dren, Obrenovac, zemljoradnik. U bataljonu ostao do decembra 1941. Zarobljen i sproveden u logor Šabac, odakle je 24. 4. 1942. deportovan u logor u Norvešku, gde je streljan 16. 2. 1943. VASIĆ LjUBOMIR, rođen 1906, Dren, Obrenovac, zemljoradnik. U bataljonu bio do 20. 10. 1941. Umro posle rata.",
+    "additional_info": "rođen 1920, Dren, Obrenovac, zemljoradnik. U bataljonu ostao do decembra 1941. Zarobljen i sproveden u logor Šabac, odakle je 24. 4. 1942. deportovan u logor u Norvešku, gde je streljan 16. 2. 1943.",
     "birth_year": "1920",
     "unit_detail": "1. posavski bataljon",
     "pdf_page": 8,
     "pdf_y": 373.8,
     "pdf_x": 94.8,
-    "pdf_y_end": 433.9,
+    "pdf_y_end": 408.7,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110002249",
-    "pdf_x_end": 376.4,
+    "pdf_x_end": 376.3,
     "birth_place": "Dren, Obrenovac",
     "occupation": "zemljoradnik",
     "death_type": "streljan",
     "death_date": "16.02.1943"
+  },
+  {
+    "soldier_id": "0110009009",
+    "last_name": "Vasić",
+    "middle_name": "",
+    "first_name": "Ljubomir",
+    "fathers_name": "",
+    "full_name": "Vasić Ljubomir",
+    "additional_info": "rođen 1906, Dren, Obrenovac, zemljoradnik. U bataljonu bio do 20. 10. 1941. Umro posle rata.",
+    "birth_year": "1906",
+    "pdf_file": "posavski-odred.pdf",
+    "pdf_page": 8,
+    "pdf_x": 94.6,
+    "pdf_y": 416.5,
+    "birth_place": "Dren, Obrenovac",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "death_after_war": true,
+    "pdf_x_end": 376.4,
+    "pdf_y_end": 433.9
   },
   {
     "last_name": "Vasković",
@@ -58447,11 +58630,11 @@
     "pdf_x_end": 339.8
   },
   {
-    "last_name": "Vativ",
+    "last_name": "Vatić",
     "middle_name": "",
     "first_name": "Miladin",
     "fathers_name": "",
-    "full_name": "Vativ Miladin",
+    "full_name": "Vatić Miladin",
     "additional_info": "rođen 1901, Jabučje, Lajkovac, zemljoradnik. Borac 3. bataljona do kraja novembra 1941. Umro 1976.",
     "birth_year": "1901",
     "birth_place": "Jabučje, Lajkovac",
@@ -61702,21 +61885,53 @@
     "first_name": "Predrag",
     "fathers_name": "",
     "full_name": "Čolić Predrag",
-    "additional_info": "rođen 1916, Grabovac, Obrenovac, zemljoradnik. Zarobljen 4. 12. 1941, i streljan u logoru na Banjici 1. avgusta 1942. DŽEVADŽIB. MILORAD, rođen 1921, Skela, Obrenovac, zemljoradnik. U bataljonu bio do kraja novembra 1941. Oktobra 1944. ionovo stupio u NOVJ.",
+    "additional_info": "rođen 1916, Grabovac, Obrenovac, zemljoradnik. Zarobljen 4. 12. 1941, i streljan u logoru na Banjici 1. avgusta 1942.",
     "birth_year": "1916",
-    "birth_place": "Grabovac, Obrenovac",
-    "unit_detail": "1. posavski bataljon",
+    "unit_detail": "",
     "pdf_page": 45,
     "pdf_y": 470.9,
     "pdf_x": 58.0,
     "pdf_y_end": 487.8,
     "pdf_file": "posavski-odred.pdf",
     "soldier_id": "0110002376",
+    "pdf_x_end": 340.4,
+    "birth_place": "Grabovac, Obrenovac",
     "occupation": "zemljoradnik",
     "death_type": "streljan",
     "death_date": "01.08.1942",
-    "death_place": "Banjica",
-    "pdf_x_end": 340.4
+    "death_place": "Banjica"
+  },
+  {
+    "soldier_id": "0110009010",
+    "last_name": "Dževadžić",
+    "middle_name": "Ž",
+    "first_name": "Milorad",
+    "fathers_name": "Ž",
+    "full_name": "Dževadžić Ž Milorad",
+    "additional_info": "rođen 1921, Skela, Obrenovac, zemljoradnik. U bataljonu bio do kraja novembra 1941. Oktobra 1944. ionovo stupio u NOVJ.",
+    "birth_year": "1921",
+    "pdf_file": "posavski-odred.pdf",
+    "pdf_page": 46,
+    "pdf_x": 102.5,
+    "pdf_y": 43.2,
+    "birth_place": "Skela, Obrenovac",
+    "occupation": "zemljoradnik",
+    "pdf_x_end": 384.9,
+    "pdf_y_end": 69.0,
+    "other_sources": [
+      {
+        "soldier_id": "0054000500",
+        "name": "Dževadžić Ž Milorad",
+        "additional_info": "1921, Skela, Obrenovac",
+        "pdf_file": "12-krajiska-prezivjeli.pdf",
+        "pdf_page": 69,
+        "pdf_x": 67.7,
+        "pdf_y": 258.3,
+        "pdf_x_end": 274.2,
+        "pdf_y_end": 267.3,
+        "unit_file": "12-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Čolić",
@@ -64967,14 +65182,14 @@
       {
         "soldier_id": "0001302138",
         "name": "Živanović Živojina Živan",
-        "additional_info": "Zemljoradnik, rođen 1900, Dren, O- brenovac. Poginuo 20. novembra 1941. kod Pecke, Osečina. ŽIVKOVIć Radomira DRAGOSLAV — DRAGI Tapetarski radnik, rođen 1915, O- brenovac; član KPJ pre ustanka 1941. Poginuo krajem 1941. između čačka i Užica.",
+        "additional_info": "Zemljoradnik, rođen 1900, Dren, O- brenovac. Poginuo 20. novembra 1941. kod Pecke, Osečina.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 9,
         "pdf_x": 49.9,
         "pdf_y": 245.0,
-        "pdf_x_end": 201.5,
-        "pdf_y_end": 342.4,
-        "pdf_x_left": 46.4,
+        "pdf_x_end": 201.2,
+        "pdf_y_end": 281.2,
+        "pdf_x_left": 46.9,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -65414,6 +65629,19 @@
         "pdf_x_end": 559.6,
         "pdf_y_end": 706.3,
         "pdf_x_left": 226.2,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001309013",
+        "name": "Živković Nikole Ljubomir",
+        "additional_info": "zvani Ljupče Španac; politički komesar, od 4. januara 1942. intendant Obućarski radnik, rođen 1918, Crveni Breg, Bela Palanka; član KPJ 1935. Borac španskog građanskog rata. Teže ranjen 20. novembra 1942, u borbi za Sitnicu, Ključ kao zamenik komandanta bataljona i posle dva dana umro u Bos. Petrovcu. Proglašen za narodnog heroja.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 9,
+        "pdf_x": 46.7,
+        "pdf_y": 589.4,
+        "pdf_x_end": 201.0,
+        "pdf_y_end": 699.3,
+        "pdf_x_left": 45.5,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],

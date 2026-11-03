@@ -489,7 +489,118 @@ IN_REGION = re.compile(r'\b((?i:u|na|po)) (' + REGION_WORDS + r')$')
 # a Cyrillic list's scan sets for Љ: "Bol,anići" is Boljanići)
 COMMA_GLUED = re.compile(r'^([A-ZČĆŽŠĐ][\w .-]*?(?<![lL])),([a-zčćžšđ])([a-zčćžšđ]{3,}(?:[ -][a-zčćžšđ]+)?)$')
 UNKNOWN_PLACE = re.compile(r'^(?:nepoznat[aoi]?|nepoznate|nepoznata jedin\w*\.?(?: \w+)?|nepoznate jedinice|'
-                           r'nepoznato[-\s]\w+|nepoznata \w+|nije poznato|nn\.?)$', re.I)
+                           r'nepoznato[-\s]\w+|nepoznata \w+|nije poznato|nn\.?|u nob-?u|u nov-?u|n\.\s?o\.\s?[vb]\.?|'
+                           r'u jedinici n\.\s?o\.\s?v\.?-?a?|[A-ZČĆŽŠĐ]\.?)$', re.I)
+# the census's column naming his unit where it names no brigade by the word ("6 lička", "2.dalmatinska", "17 majevička",
+# "1.četa 2.bat."): no place (a unit's record lent it before the rule; in the census's parts build_ostali_borci makes it
+# the record's sub-unit)
+UNIT_COLUMN = re.compile(r'^\s*\d+\s*\.?\s*(?:prolet|dalm|lič|kraj|kraišk|majev|moslav|slavon|vojv|vovođ|banij|banin|kordun|udarn|'
+                         r'primorsk|hercegov|bosan|crnog|sandž|srps|jugosl|goran|makedon|muslim|omlad|virovit|romanij|južnomor|'
+                         r'srednjebos|srednjobos|armij|čet|bat\b|bat\.|batalj|voj\.)', re.I)
+# what the scan left in a place (2026-11-03): a mark or a Cyrillic look-alike after it ("na Sutjesci .^", "u Zelengori . „да",
+# "kod Pecke. _", "kod Suhe^ó"), a word's last letter cut off after a stray "i" or "u" of the bio ("kod Bakova i"), accents no
+# name of these lands has ("Kalesijä", "Danìlovgrad", "kod Benderà"; foreign names keep theirs), letters spaced out ("Gaber j e",
+# "G. Badanj a"), a stray mark for a comma ("Srba„ D. Lapac", "Pinosavi ~ Beograd"), a mark in a word ("Doljani· ma")
+CYRILLIC_TAIL = re.compile(r'[\s.]+[^\s]*[Ѐ-ӿ][^\s]*$')
+MARKS_TAIL = re.compile(r'(?:\s+[^\w\s()]+)+(?:\s*[^\W\d]?)$|\^\S{0,2}$')
+STRAY_WORD = re.compile(r'\s+(?:[iuao]|[ÌÍ])$')
+ACCENTS = str.maketrans('àèìòùäáéíüöÀÈÌÒÙÄÖÜ', 'aeiouaaeiuoAEIOUAOU')       # not ó, the scan's ć ("Suóuraj")
+ACCENT_WORD = re.compile(r'\S*[àèìòùäáéíüöÀÈÌÒÙÄÖÜ]\S*')
+# Љ and Њ a Cyrillic scan read so: "Pljevl>a", "Zren»anin", "A>uša" (Ljuša), "L>. nahija"
+LJ_MARK = [(re.compile(r'(?<=[a-zčćžšđ])l[>»](?=[a-zčćžšđ])'), 'lj'), (re.compile(r'(?<=lj)[>»](?=[a-zčćžšđ])'), ''), (re.compile(r'(?<=[a-zčćžšđ])n[>»](?=[a-zčćžšđ])'), 'nj'),
+           (re.compile(r'\bA[>»](?=[a-zčćžšđ])'), 'Lj'), (re.compile(r'\bL[>»](?=[.a-zčćžšđ])'), 'Lj'),
+           (re.compile(r'(?<=[a-zčćžšđ])l[>»]$'), 'lj')]
+# the bio's words the reader took along, what is left of them at a place's end
+AFTER_PLACE = re.compile(r',?\s+(?:u kome je|u kojoj je|na čijem je groblju|gdje je|gde je|krajem|početkom|sredinom|polovinom|kod|u|na|tu)$')
+# a place of death's other words: the grave, the wound, what he was, the month of the date (in small letters: "u Maju" is a village's)
+DEATH_PHRASE = re.compile(r',?\s+(?:odnesen kući|tu je|prenijet|(?:na|u) (?:čijem|kome|kojoj|kojem) je\b.*|gdje je\b.*|gde je\b.*|\(teško ranjen\)|kao bombaš|kao sekretar\b.*|'
+                          r'prilikom zloglasne\b.*|za vrijeme ofanzive\b.*|radi učešća\b.*|od muslimanskog\b.*|u bolma|'
+                          r'(?:januar|februar|mart|april|jun|jul|avgust|septemb[a]?r|oktob[a]?r|novemb[a]?r|decemb[a]?r)a?\.?)$')
+FOREIGN_ACCENTED = {'Lucerà', 'Köln', 'Schönau', 'Köflach', 'Nürnberg', 'Mörs', 'Römengrund', 'Hühnerkogel', 'Göns', 'Czurgö', 'Muhovë'}
+# a word's end set apart by the scan: "Gaber j e", "Litij i", "Doboj a", "Austrij a", "Postoj na", "Liv na"
+SPACED = [(re.compile(r'(?<=\w)\s+j\s+([aei])\b'), r'j\1'), (re.compile(r'(?<=[nl]j)\s+a\b'), 'a'),
+          (re.compile(r'(?<=[oi]j)\s+([ai])$'), r'\1'), (re.compile(r'\b(Postoj|Liv|Bar) na$'), r'\1na'), (re.compile(r'\bPia na$'), 'Plana')]
+# a place's end in the scan's "^" for a lost letter, a Cyrillic list's Љ read "l." (the census's "Sl.orahovica", "Vel.ivanec" are abbreviations)
+CARET_WORDS = {'Kr^ljevo': 'Kraljevo', 'Kral^evo': 'Kraljevo', 'Koso^o': 'Kosovo', 'Valjev^': 'Valjevu', 'Grab^': 'Grabu',
+               'Kl.uč': 'Ključ', 'Pol.ana': 'Poljana', 'Pol.a': 'Polja', 'Pljevl.a': 'Pljevlja', 'Sovl.ak': 'Sovljak', 'Trebal.evo': 'Trebaljevo', 'Pel.iešc': 'Pelješac', '1 [l.evl.a': 'Pljevlja'}
+# a place's bracket the text ended before closing: a note ("(teško ranjen", "(nepoznato", "(man") goes, a place is closed
+BRACKET_NOTE = re.compile(r'^(?:teško|javno|nepoznato|nije\b|man$|po kazivanjima|vjerovatno$|verovatno$|[A-Za-zČĆŽŠĐčćžšđ]$|$|[^A-Za-zČĆŽŠĐčćžšđ])', re.I)
+# an abbreviation at a place's end keeps its full stop: "Lovrenc na Poh.", "Otočec pri N. m.", "Fužine Lj."
+ABBREVIATED_END = re.compile(r'(?:\b(?:na|pri|ob) (?:Gor|Dol|Poh|Štaj|Kor|Kr|Pr)|\bpri N\. m|\bFužine Lj|, Rom|\bReggio C)$')
+# the census's column, cut at its width: a region's name it lost the end of ("Durmitor crna g", "Kasuni-gorski k", "Soko b")
+CUT_REGION = [(re.compile(p, re.I), r) for p, r in (
+    (r'^skopska crna g\.?$', 'Skopska Crna Gora'),
+    (r'[-\s,]+(?:crna g|c\.\s?g)\.?$', ', Crna Gora'), (r'^crna g\.?$', 'Crna Gora'),
+    (r'[-\s,]+bi?\s?i?\s?h$', ', BiH'), (r'^b\s?i\s?h$', 'BiH'),
+    (r'\bsoko b\.?$', 'Sokobanja'), (r'[-\s,.]+(?:banja l|b\.l)\.?$', ', Banja Luka'),
+    (r'[-\s,]+gorski k\.?$', ', Gorski Kotar'), (r'\bvišnja g\.?$', 'Višnja Gora'), (r'\bkulen v\.?$', 'Kulen Vakuf'),
+    (r'[-\s,]+sl\.\s?p\.?$', ', Slavonska Požega'), (r'[-\s,]+sl\.\s?b\.?$', ', Slavonski Brod'),
+    (r'\bpetrovo s\.?$', 'Petrovo Selo'))]
+
+
+def scan_marks(value: str, birth: bool = False) -> str:
+    """a place of birth or death without what the scan left in it"""
+    v = value
+    for word, new in CARET_WORDS.items():
+        v = v.replace(word, new)
+    if re.search(r'[A-Za-z]', v):
+        v = CYRILLIC_TAIL.sub('', v)
+    v = MARKS_TAIL.sub('', v)
+    v = re.sub(r',?\s+nosilac\b.*$', '', v)
+    for pattern, new in LJ_MARK:
+        v = pattern.sub(new, v)
+    v = re.sub(r'(?<=[a-zčćžšđ])\\/?(?=[a-zčćžšđ])', 'u', v)                         # "Zem\\n", "V\\/kovar"
+    v = re.sub(r'(?<=\w)-{2,}\s*(?=\w)', '-', v)                                      # "Krilo--Jesenice", "Han--Pijesak"
+    v = re.sub(r'\bSI\.(?=\s*[A-ZČĆŽŠĐ])', 'Sl.', v)                                     # "SI. Brod", "SI. Požega": the scan's I for l
+    # a word broken at a line's end with the scan's specks after the hyphen: "Ko-\" lašin", "Ra-! stuša", "Pu~ lac"
+    v = re.sub(r'(?<=[a-zčćžšđ])[-–—~_]\s*[^\w\s()\-–—]+\s*(?=\w)', '', v)
+    if birth or re.match(r'(?:kod|na|u|kraj|pri|s\.|sela|selu)\s', v, re.I):
+        # a word broken at a line's end: "Trboü- nje", "Budin- šćina", "kod Ko- sovske Mitrovice" (the census's column names no preposition)
+        v = re.sub(r'(?<=[a-zčćžšđ])[-–—~_]\s+(?=[a-zčćžšđ])', '', v)
+    else:
+        # the census's column: the place and its općina, "Račić- bihać", "Hum- buzet"
+        v = re.sub(r'\bZelen-\s+gora\b', 'Zelengora', v)
+        v = re.sub(r'\bIvan-\s+(planin|sedl)', r'Ivan-\1', v)
+        v = re.sub(r'(?<=[a-zčćžšđ])-\s+(?!u\b|na\b|kod\b)([a-zčćžšđ])(?=[a-zčćžšđ]{2})', lambda m: ', ' + m.group(1).upper(), v)
+    # a ship ("Brod \"Cetinje\"", "brod „Drava\"", the Cetinje of Boka's fallen): one form
+    v = re.sub(r'''^[Bb]rod\s*[„"»]\s*(\w+)\s*[“”"'«\\]*$''', r'Brod »\1«', v)
+    # a quote with no other side
+    if sum(v.count(q) for q in '"“”„') == 1:
+        v = re.sub('["“”„]', '', v)
+    if v.count('»') != v.count('«'):
+        v = v.replace('»', '').replace('«', '')
+    v = re.sub(r'[*>_|]+$', '', v)
+    v = re.sub(r'\s{2,}', ' ', v).strip()
+    v = re.sub(r'\s+\)', ')', v)
+    v = re.sub(r'(?<=\w)·\s*', '', v)
+    v = re.sub(r'(?<=\w)„(?=\s)', ',', v)
+    v = re.sub(r'\s+~\s+', ', ', v)
+    v = re.sub(r'\b([A-ZČĆŽŠĐ])!\s', r'\1. ', v)
+    for pattern, new in SPACED:
+        v = pattern.sub(new, v)
+    v = ACCENT_WORD.sub(lambda m: m.group(0) if m.group(0).strip(',.') in FOREIGN_ACCENTED else m.group(0).translate(ACCENTS), v)
+    if not re.match(r'između\b', v, re.I):
+        for _ in range(2):
+            v = STRAY_WORD.sub('', v).strip(' ,;.!')
+            v = AFTER_PLACE.sub('', v)
+            if not birth:
+                v = DEATH_PHRASE.sub('', v)
+    v = v.strip(' ,;.!')
+    if v.count('(') == v.count(')') + 1:
+        head, _, inner = v.rpartition('(')
+        inner = inner.strip(' \\,;.')
+        v = head.rstrip(' ,;') if BRACKET_NOTE.match(inner) else f'{head.rstrip()} ({inner})'
+    if ABBREVIATED_END.search(v):
+        v += '.'
+    if re.search(r'\bBiH$', v) and not re.search(r'[,-]\s*BIH$', v):
+        return v
+    v = re.sub(r'\bkod bih$', 'kod Bihaća', v)
+    for pattern, new in CUT_REGION:
+        v2 = pattern.sub(new, v)
+        if v2 != v:
+            v = v2
+            break
+    return v
 
 
 # a Cyrillic list's scan read Љ as "l," (the Spomenica crnogorskim antifašistima, Prilog u krvi): the places it spoiled so
@@ -502,8 +613,62 @@ YEAR_WORD_TAIL = re.compile(r"[\s,.^'?!-]*(?:iste\s+)?godine\.?$")
 PART_OF = re.compile(r'\s*\((?:del|dio|deo)\)')
 
 
+# places read from the page or the entry where no rule tells them (2026-11-03), as they stand after the rules or as printed; '' is no place
+PLACE_READ = {
+    # birth
+    'Borovak pri Litij': 'Borovak pri Litiji', 'Gradec pri Litij': 'Gradec pri Litiji',
+    'Matenja vas, Postoj': 'Matenja vas, Postojna', 'Rakitnik, Postoj': 'Rakitnik, Postojna', 'Trnje, Postoj': 'Trnje, Postojna',
+    'V. Bar': 'V. Barna', 'Trnovče, Velika Pia': 'Trnovče, Velika Plana', 'Gor. Majur, Badlj evina, Pakrac': 'Gor. Majur, Badljevina, Pakrac',
+    'Krilo-Jeseni ce, Omiš': 'Krilo-Jesenice, Omiš', 'Knlo-Jesenice, Omiš': 'Krilo-Jesenice, Omiš', 'Dežanovac, Trojef glava, Daruvar': 'Dežanovac, Trojeglava, Daruvar',
+    'Hrat stovsko, Ludbreg': 'Hrastovsko, Ludbreg', 'Kaštei Novi, Split': 'Kaštel Novi, Split', 'Kotoi Varoš, Kotor-Varoš': 'Kotor-Varoš',
+    'Botoš, Zre-njanin': 'Botoš, Zrenjanin', 'Ranilović, Aranđe-lovac': 'Ranilović, Aranđelovac', 'BravsJ-Bos. Petrovac': 'Bravsko, Bos. Petrovac',
+    'Jadriei, Ribnik': 'Jadrići, Ribnik', 'Jasenica, Bosansea Krupa': 'Jasenica, Bosanska Krupa', 'Mrkotie, Tešanj, Doboj': 'Mrkotić, Tešanj, Doboj',
+    'Kraljevoi, Ruma': 'Kraljevci, Ruma', 'Prvanselo, Perušić': 'Prvan Selo, Perušić', 'Doljani Žumbcracki Ozalj': 'Doljani Žumberački, Ozalj',
+    'Stepojevac, Lazarcvac': 'Stepojevac, Lazarevac', 'Čibutkovica LaZarcvac': 'Čibutkovica, Lazarevac', 'Grčac, Smeđercvska Palanka': 'Grčac, Smederevska Palanka',
+    'Bašin, Smeđerevska Palanka': 'Bašin, Smederevska Palanka', 'Schvage, Malme, Svcdska': 'Schvage, Malme, Švedska', 'Slope, Sczana': 'Slope, Sežana',
+    'Gračanica, SRÉiH': 'Gračanica', 'Gračanica, SReiH': 'Gračanica', 'GDrugovac, Smederevo': 'Drugovac, Smederevo', 'Koceljevo, Vladimir': 'Koceljevo, Vladimirci',
+    'Donji Vakuf, BiH, Musliman': 'Donji Vakuf, BiH', 'Konjščina, Zabok, Hrvatica': 'Konjščina, Zabok', 'Ašanja (nema drugih podataka)': 'Ašanja',
+    'Hrvat': '', 'Srpkinja': '', 'Trbovlje Zakelj Alojz': 'Trbovlje', 'TrbovUe': 'Trbovlje', 'Trbov-. Ue': 'Trbovlje', 'Tuzla. u Beogradu od 1938': 'Tuzla', 'Rijeka, moler': 'Rijeka',
+    'Dal': 'Dalj', 'Rosulje, Dvor na UHII': 'Rosulje, Dvor na Uni', 'Srpske Moravice, Del': 'Srpske Moravice, Delnice', 'Stanišićima %, De': 'Stanišići, Budva',
+    'Ščedna, Trst. italij': 'Ščedna, Trst, Italija', 'Ščedna, Trst. italija': 'Ščedna, Trst, Italija', 'Sto-Borci Sutjeske lac': 'Stolac', 'Stankovci, Benkoac': 'Stankovci, Benkovac',
+    'Stašeica, Ploče': 'Stašević, Ploče', 'Medenom Polju Bosanski Petrovac': 'Medeno Polje, Bosanski Petrovac', 'Donjoj Gorev-NICR': 'Donja Gorevnica', 'Gornjoj VrbavR': 'Gornja Vrbava',
+    'Gornja s Kupinovica, Leskovac': 'Gornja Kupinovica, Leskovac', 'Progar, Zemuln': 'Progar, Zemun', 'Vitez g': 'Vitez', "Trnjaci, Bijeljina'": 'Trnjaci, Bijeljina',
+    'Stanislav (SZ': 'Stanislav (SSSR?)', 'Stanislav (SZ)': 'Stanislav (SSSR?)', 'Stanislav (SZ ?)': 'Stanislav (SSSR?)', 'Čelebić (Liva': 'Čelebić (Livno?)', 'Čelebić (Liva)': 'Čelebić (Livno?)',
+    'Čelebić (Liva. ..?)': 'Čelebić (Livno?)', 'Češnjice (na Dolenjskem': 'Češnjice (na Dolenjskem?)', 'Češnjice (na Dolenjskem)': 'Češnjice (na Dolenjskem?)', 'Češnjice (na Dolenjskem ?)': 'Češnjice (na Dolenjskem?)',
+    'Srem-( ska Mitrovica': 'Sremska Mitrovica', 'Gornji (avoranj, Dvor': 'Gornji Javoranj, Dvor', 'Gornji (avoranj), Dvor': 'Gornji Javoranj, Dvor', 'Veliko Laole v(i!.:<xi': 'Veliko Laole', 'Veliko Laole v(i!.:<xi)': 'Veliko Laole',
+    'Podgorici (TitogradJ': 'Podgorica (Titograd)', 'Podgorici (TitogradJ)': 'Podgorica (Titograd)', 'Naglušicama (BosnaJ': 'Naglušice (Bosna)', 'Naglušicama (BosnaJ)': 'Naglušice (Bosna)', 'Donja Gorica (Lješ': 'Donja Gorica', 'Donja Gorica (Lješ)': 'Donja Gorica',
+    'LJupten': 'Ljupten', 'LSSOVAC': 'Lasovac, Bjelovar', 'Tppnipp': '', 'StjApana': 'Kozarevac, Nova Rača, Bjelovar', 'X3ahec,Travarsko': 'Kravarsko', 'Oratje-Krap': 'Oratje, Krapinske Toplice, Zabok',
+    'Ldska-Kotlenice, Split': 'Kotlenice, Split', 'Prisloici': 'Prislonica', 'Ljuiću': 'Ljubić', 'Berčinovcu. zešoradnik': 'Berčinovac', 'Šipćonu, Rijeka Crpojsvića, Eta': 'Šipčanik, Rijeka Crnojevića',
+    'Prvoj Čađavici, Bosanski Novi, Bosna iHercegovina': 'Prva Čađavica, Bosanski Novi', 'I vanji grad': 'Ivanji grad', 'I van j i grad': 'Ivanji grad',
+    # death
+    'Obješen u, Desinec': 'Desinec', 'u Istoku (?)': 'Istok (?)', 'u Badovincima (?)': 'Badovinci (?)', 'na -drumu (?)': 'na drumu (?)', 'Zelen gord': 'Zelengora',
+    'u Zi vaji kod Sunje': 'u Živaji kod Sunje', 'u Zi va j i kod Sunje': 'u Živaji kod Sunje', 'kod Ko, Sovske Mitrovice': 'kod Kosovske Mitrovice', 'kod Jas, Trepca, Vlasotince': 'kod Jastrepca, Vlasotince', 'kod Li, Povca na Sremskom frontu': 'kod Lipovca na Sremskom frontu',
+    'kod sela Čo, Kotina, Oruglica, Jablanica': 'kod sela Čokotina, Oruglica, Jablanica', 'Postoj': 'Postojna', 'kod Liv': 'kod Livna', 'kod Poloj': 'kod Poloja',
+    'kod Vila Vrhovski kod Doboj': 'kod Vila Vrhovski kod Doboja', 'na Becnju kod Doboj': 'na Becnju kod Doboja', 'na Bender': 'na Benderu', 'u Novom Marof': 'u Novom Marofu', 'u Počitelj': 'u Počitelju',
+    'u Staroj Krši j': 'u Staroj Kršlji', 'u Staroj Kršiji': 'u Staroj Kršlji', 'M athauzen-Austrij': 'Mauthausen, Austrija', 'M athauzen-Austrija': 'Mauthausen, Austrija',
+    'TrnovecN abnežina': 'Trnovec, Nabrežina', 'Trnovec—<N abnežina': 'Trnovec, Nabrežina', 'Vraboe': 'Vrabče', 'Vraböe': 'Vrabče', 'u Beograeu': 'u Beogradu', 'u CerovR': 'u Cerovi', 'u s. Bujavica kod PakraCa': 'u s. Bujavica kod Pakraca',
+    'kod Nove Kapc lc': 'kod Nove Kapele', 'kod PitOKLaCG': 'kod Pitomače', "kod RaKOB'a": 'kod Rakova', 'na Suisci': 'Sutjeska', 'Xisle bitke na Sutjesci': '', 'na Zelengori ia': 'na Zelengori',
+    'na Neretvi februar— —- član SKOJ': 'na Neretvi', 'na Kozari u bolma': 'na Kozari', 'u Rošcima pecemboa': 'u Rošcima', 'u Prekornici N Ljubotinskoj Kao sekretar MjesHor komiteta KPJ Bar': 'u Prekornici Ljubotinskoj',
+    'na Dučinskoj kooi Leska': 'na Dučinskoj kosi Leska', 'u Zelengorikod Foče': 'u Zelengori kod Foče', 'u Topčić-polju,centralna Bosna': 'u Topčić-polju, centralna Bosna',
+    'Odreda negde u Slepčeviću (podaci iz Hronike Grušića)': 'Slepčević', 'u NOV. Mesto i vreme pogibije nepoznato (verovatno poginula)': '', 'u NOV. (nepoznato': '', 'u NOV. (nepoznato)': '', 'u NOV': '',
+    'Tu je': '', 'Obješen': '', 'Centralne bolnice': '', 'V. korpusa': '', 'u Jajincima . gom/me': 'u Jajincima', 'u Istočnoj Bosni . na području Ireštenica - Banovići': 'u Istočnoj Bosni, na području Treštenica - Banovići',
+    'u kanjonu Tare . kod sela Tepca': 'u kanjonu Tare, kod sela Tepca', 'Ugljevik, Biljeljina': 'Ugljevik, Bijeljina', 'Inkuša, Otrić Gracsc': 'Inkuša, Otrić, Gračac', 'D. Caglio': 'D. Čaglić',
+    'kod Tovartnika': 'kod Tovarnika', 'Sremski front, kod lovarnika': 'Sremski front, kod Tovarnika', 'na Batinskoj Skeli, kod Beiog Manastira': 'na Batinskoj Skeli, kod Belog Manastira',
+    'u Konjevićima (Cacak)': 'u Konjevićima (Čačak)', 'u Mojsinju (Cacak)': 'u Mojsinju (Čačak)', 'u Brzeću, na Kopaonihi (Brus)': 'u Brzeću, na Kopaoniku (Brus)', 'žužcmbc1k': 'Žužemberk', 'žužcmbc1·k': 'Žužemberk',
+    'Gračanica, Tuzl': 'Gračanica, Tuzla', 'Miljakovac, Prijedor, puskomuraljezac': 'Miljakovac, Prijedor', 'Oštrelj, Bosanski Petrovac, komandu Voda': 'Oštrelj, Bosanski Petrovac',
+    'Orežnik kod, BiH': 'Orežnik kod Bihaća', 'Zavalje kod, BiH': 'Zavalje kod Bihaća', 'Tromeđa bih, Crna Gora': 'Tromeđa BiH, Crna Gora', 'kod Sjetline, na pruzi Sarajevo-Višegrad, IS': 'kod Sjetline, na pruzi Sarajevo-Višegrad',
+    'kod Šib( nika': 'kod Šibenika', 'kod Šib( nika)': 'kod Šibenika', 'Strahovi D(': 'Strahovi', 'Strahovi D': 'Strahovi', 'Gornjane bor(ru': 'Gornjane, Bor', 'Gornjane bor(ru)': 'Gornjane, Bor', 'Stričići, na Manjači (Klju': 'Stričići, na Manjači (Ključ)',
+    'Stričići, na Manjači (Klju)': 'Stričići, na Manjači (Ključ)', 'Stričići, na Manjači (Klju^': 'Stričići, na Manjači (Ključ)', 'u Donjim Magnojevićima (Bij': 'u Donjim Magnojevićima (Bijeljina)', 'u Donjim Magnojevićima (Bij)': 'u Donjim Magnojevićima (Bijeljina)',
+    "u Donjim Magnojevićima (Bij^'tó": 'u Donjim Magnojevićima (Bijeljina)', 'u Brčelima (Crmni': 'u Brčelima (Crmnica)', 'u Brčelima (Crmni)': 'u Brčelima (Crmnica)', 'u Celini (Sjetlini': 'u Celini (Sjetlini?)', 'u Celini (Sjetlini)': 'u Celini (Sjetlini?)',
+    'u Celini (Sjetlini ?)': 'u Celini (Sjetlini?)', 'kod Vlasotinca. (Po kazivanjima njegovih seljana poginuo': 'kod Vlasotinca', 'kod Ratkovog potoka (nije moglo da se utvrdi': 'kod Ratkovog potoka', 'u Bosni (vjerovatno': 'u Bosni',
+    'u Bosni (vjerovatno)': 'u Bosni', 'u Samoboru (javno strijeljan': 'u Samoboru', 'na Lupcu kod Zenice (teško ranjen i umro': 'na Lupcu kod Zenice', 'na Lupcu kod Zenice (teško ranjen i umro)': 'na Lupcu kod Zenice',
+}
+
+
 def birth_place_form(value: str) -> str:
-    return LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], PART_OF.sub('', value)).strip()
+    v = PLACE_READ.get(value.strip(), value)
+    v = scan_marks(LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], PART_OF.sub('', v)).strip(), birth=True)
+    return PLACE_READ.get(v, v)
 
 
 def birth_place_forms(s: dict) -> dict | None:
@@ -514,9 +679,12 @@ def birth_place_forms(s: dict) -> dict | None:
 
 def place_form(value: str) -> str | None:
     v = re.sub('­\\s*', '', value).strip()
+    v = PLACE_READ.get(v, v)
     v = LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], v)
     v = YEAR_WORD_TAIL.sub('', v).strip(' ,.')
-    if UNKNOWN_PLACE.match(v) or not v:
+    v = scan_marks(v)
+    v = PLACE_READ.get(v, v)
+    if UNKNOWN_PLACE.match(v) or UNIT_COLUMN.match(v) or not v:
         return None
     m = COMMA_GLUED.match(v)
     if m:
@@ -592,11 +760,28 @@ def parents(s: dict) -> dict | None:
     return None
 
 
+# a duty the reader took with its case or the scan's slip ("politički komesara čete", "bortac", "komandirvoda"), 2026-11-03
+DUTY_SLIPS = [(re.compile(r'\b(zamjenik|zamenik|pomoćnik) politički komesara?\b'), r'\1 političkog komesara'),
+              (re.compile(r'\bpolitički komesara\b'), 'politički komesar'), (re.compile(r'\b(?:bortac|borace)\b'), 'borac'),
+              (re.compile(r'\bkomandirvoda\b'), 'komandir voda'), (re.compile(r'\bstriji vodnik\b'), 'stariji vodnik')]
+
+
+def duty_slips(s: dict) -> dict | None:
+    value = s.get('rank')
+    if not value:
+        return None
+    new = value
+    for pattern, right in DUTY_SLIPS:
+        new = pattern.sub(right, new)
+    return {'rank': new} if new != value else None
+
+
 RULES = [
     ('captured', captured),
     ('after_war', after_war),
     ('death_date', death_date),
     ('albanian', albanian),
+    ('duty_slips', duty_slips),
     ('unit_numbers', unit_numbers),
     ('unit_case', unit_case),
     ('trade', trade),
@@ -609,7 +794,7 @@ RULES = [
 ]
 # the rules that change only a field's form: they apply to a field corrections set too
 FORM_ONLY = {'after_war', 'death_date', 'albanian', 'unit_numbers', 'unit_case', 'ethnicity_gender', 'death_place_form',
-             'trade_gender', 'birth_place_form'}
+             'trade_gender', 'birth_place_form', 'duty_slips'}
 
 
 def standard(field: str, value):

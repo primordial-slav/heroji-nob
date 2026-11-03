@@ -118,7 +118,7 @@
     "full_name": "Alimanov M Nikolai",
     "additional_info": "izviđač, ŽB, 1917. Gusja, Ivanovskaja.SSSR„, u NOB 1944, 27.02.45",
     "birth_year": "1917",
-    "birth_place": "Gusja, Ivanovskaja.SSSR„",
+    "birth_place": "Gusja, Ivanovskaja, SSSR",
     "death_date": "27.02.1945",
     "death_type": "poginuo",
     "unit_detail": "Žumberačka brigada",
@@ -273,7 +273,7 @@
     "full_name": "Antolović Josip",
     "additional_info": "FOS, X3ahec,Trävärsko, poginuo Kraljev.sela, 06.03.44",
     "birth_year": "",
-    "birth_place": "X3ahec,Trävärsko",
+    "birth_place": "Kravarsko",
     "death_date": "06.03.1944",
     "death_type": "poginuo",
     "death_place": "Kraljev.sela",
@@ -1067,7 +1067,7 @@
     "first_name": "Ibrahim",
     "fathers_name": "Alija",
     "full_name": "Bahtijarević Alije Ibrahim",
-    "additional_info": "borac, UKB, 1924. Banja Luka, u NOB 1944, poginuo Primišlje, 14.04.45",
+    "additional_info": "borac, borac, UKB, 1924. Banja Luka, u NOB 1944, poginuo Primišlje, 14.04.45",
     "birth_year": "1924",
     "birth_place": "Banja Luka",
     "death_place": "Primišlje",
@@ -1079,9 +1079,6 @@
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000036",
     "pdf_x_end": 351.1,
-    "death_type": "poginuo",
-    "death_date": "14.04.1945",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9022000021",
@@ -1104,6 +1101,9 @@
         "unit_file": "karlovacka-soldiers.json"
       }
     ],
+    "death_type": "poginuo",
+    "death_date": "14.04.1945",
+    "rank": "borac",
     "ethnicity": "Musliman",
     "borrowed": [
       "ethnicity"
@@ -11735,7 +11735,7 @@
     "full_name": "Grubić A Josip",
     "additional_info": "borac, FOS, 1908. RecIcaTKaflbvac“-^, u NOB 1944, poginuo Odra, 25.02.45",
     "birth_year": "1908",
-    "birth_place": "RecIcaTKaflbvac“-",
+    "birth_place": "Rečica, Karlovac",
     "death_date": "25.02.1945",
     "death_type": "poginuo",
     "death_place": "Odra",
@@ -11926,7 +11926,6 @@
     "birth_year": "1923",
     "birth_place": "Beter, Jastrebarsko",
     "death_type": "poginuo",
-    "death_place": "Obješen u",
     "unit_detail": "Žumberačka brigada",
     "rank": "borac",
     "pdf_page": 8,
@@ -11935,7 +11934,8 @@
     "pdf_y_end": 517.7,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000349",
-    "pdf_x_end": 334.9
+    "pdf_x_end": 334.9,
+    "death_place": "Desinec"
   },
   {
     "last_name": "Gvozdanović",
@@ -13160,7 +13160,7 @@
     "full_name": "Hrebac M Josip",
     "additional_info": "borac, KPO, 1910. *Brodàrd; Karlovac, poginuo Netretić, 05.12.44",
     "birth_year": "1910",
-    "birth_place": "Brodàrd; Karlovac",
+    "birth_place": "Brodarci, Karlovac",
     "death_date": "05.12.1944",
     "death_type": "poginuo",
     "death_place": "Netretić",
@@ -14493,7 +14493,7 @@
     "full_name": "Jadrič I Josip",
     "additional_info": "borac, KB, 1925. Jadriéi, Ribnik, u NOB 1944, poginuo D. Kupćina, 29.12.44",
     "birth_year": "1925",
-    "birth_place": "Jadriéi, Ribnik",
+    "birth_place": "Jadrići, Ribnik",
     "death_date": "29.12.1944",
     "death_type": "poginuo",
     "death_place": "D. Kupćina",
@@ -21405,9 +21405,9 @@
   {
     "last_name": "Latković",
     "middle_name": "N",
-    "first_name": "Vjekoslavoper.ofic",
+    "first_name": "Vjekoslav",
     "fathers_name": "N",
-    "full_name": "Latković N Vjekoslavoper.ofic",
+    "full_name": "Latković N Vjekoslav",
     "additional_info": "KB, 1923. Karlovac, u NOB 1942, poginuo D. Kupčina, 07.03.45",
     "birth_year": "1923",
     "birth_place": "Karlovac",
@@ -21421,7 +21421,83 @@
     "pdf_y_end": 566.5,
     "pdf_file": "34-divizija.pdf",
     "soldier_id": "0097000634",
-    "pdf_x_end": 346.9
+    "pdf_x_end": 346.9,
+    "rank": "operativni oficir",
+    "other_sources": [
+      {
+        "soldier_id": "0097010206",
+        "name": "Latković Vjekoslav",
+        "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: operativni oficir Karlovačke brigade; informativni oficir Karlovačke brigade; komandant 1. bataljona Karlovačke brigade.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 5,
+        "pdf_x": 375.3,
+        "pdf_y": 773.2,
+        "pdf_x_end": 477.1,
+        "pdf_y_end": 783.7,
+        "pdf_rects": [
+          [
+            375.3,
+            773.2,
+            477.1,
+            783.7
+          ],
+          [
+            375.3,
+            798.4,
+            476.8,
+            808.9
+          ]
+        ]
+      },
+      {
+        "soldier_id": "9021017442",
+        "name": "Latković (Nn) Vjekoslav",
+        "additional_info": "rođen 1923, Karlovac. Hrvat, poginuo 1945. u NOBu, Kupčina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=842",
+        "source_page": 842,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000428",
+        "name": "Latković Nikole Vjekoslav",
+        "additional_info": "1923, Karlovac. Stupio u NOV 9. 7. 1942, operativni oficir brig. Poginuo kod Donje Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 29,
+        "pdf_x": 136.7,
+        "pdf_y": 543.7,
+        "pdf_x_end": 300.2,
+        "pdf_y_end": 578.1,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000427",
+        "name": "Latković N Vjekoslav",
+        "additional_info": "1923, Karlovac. Stupio u NOV 9. 7. 1942, informativni oficir brig. Poginuo kao operativni oficir brig, kod Kupčine 7. 3. 1945.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 10,
+        "pdf_x": 92.5,
+        "pdf_y": 534.0,
+        "pdf_y_end": 577.0,
+        "pdf_x_end": 262.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094010190",
+        "name": "Latković Vjekoslav",
+        "additional_info": "Pregled komandnog kadra Karlovačke udarne brigade: operativni oficir brigade, od 25. 1. do 7. 3. 1945, poginuo kod Donje Kupčine, kao operativni oficir brigade 7. 3. 1945; informativni oficir brigade, od 5. 3. do 25. 3. 1944; komandant 1. bataljona, od 25. 3. do 15. 8. 1944; komandant 1. bataljona, od 15. 9. do 27. 12. 1944.",
+        "pdf_file": "karlovacka-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 141.2,
+        "pdf_y": 639.7,
+        "pdf_x_end": 248.6,
+        "pdf_y_end": 648.2,
+        "unit_file": "karlovacka-soldiers.json"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Lazarević",
@@ -28608,7 +28684,7 @@
     "full_name": "Pančenko Nikolaj",
     "additional_info": "k-dir voda, FOS, 1915. SSSR , u NOB 1944, poginuo Mart. Ves, 08.08.44",
     "birth_year": "1915",
-    "birth_place": "SSSR ____",
+    "birth_place": "SSSR",
     "death_type": "poginuo",
     "death_place": "Mart. Ves",
     "unit_detail": "brigada „Franjo Ogulinac Seljo“",
@@ -32614,11 +32690,11 @@
     "death_date": "1944"
   },
   {
-    "last_name": "Radatovi",
-    "middle_name": "",
-    "first_name": "Ćd. Slavko",
-    "fathers_name": "",
-    "full_name": "Radatovi Ćd. Slavko",
+    "last_name": "Radatović",
+    "middle_name": "D",
+    "first_name": "Slavko",
+    "fathers_name": "D",
+    "full_name": "Radatović D Slavko",
     "additional_info": "borac, FOS, Jazavac, Bjelovar, poginuo Zdenčina, 06.01.45",
     "birth_year": "",
     "birth_place": "Jazavac, Bjelovar",
@@ -34113,9 +34189,9 @@
   {
     "last_name": "Romanović",
     "middle_name": "M",
-    "first_name": "Milanborac",
+    "first_name": "Milan",
     "fathers_name": "M",
-    "full_name": "Romanović M Milanborac",
+    "full_name": "Romanović M Milan",
     "additional_info": "ŽB, 1917. Prehod, Jastrebarsko, poginuo Horvati, 1943",
     "birth_year": "1917",
     "birth_place": "Prehod, Jastrebarsko",
@@ -36099,10 +36175,10 @@
   },
   {
     "last_name": "Slatkov",
-    "middle_name": "",
-    "first_name": "Ig. Oleg",
-    "fathers_name": "",
-    "full_name": "Slatkov Ig. Oleg",
+    "middle_name": "Ig",
+    "first_name": "Oleg",
+    "fathers_name": "Ig",
+    "full_name": "Slatkov Ig Oleg",
     "additional_info": "k-sar č., KB, 192.1 Plaški, poginuo Rečica, 04.03.45",
     "birth_year": "",
     "birth_place": "Plaški",
@@ -37836,9 +37912,9 @@
   {
     "last_name": "Stupljanec",
     "middle_name": "S",
-    "first_name": "Stjepanborac",
+    "first_name": "Stjepan",
     "fathers_name": "S",
-    "full_name": "Stupljanec S Stjepanborac",
+    "full_name": "Stupljanec S Stjepan",
     "additional_info": "KB, 1925. Kupčina, poginuo Mavračići, 23.10.44",
     "birth_year": "1925",
     "birth_place": "Kupčina",
@@ -40617,7 +40693,7 @@
     "birth_year": "",
     "death_type": "poginuo",
     "unit_detail": "omladinska brigada „Joža Vlahović“",
-    "rank": "borace",
+    "rank": "borac",
     "pdf_page": 29,
     "pdf_y": 186.14400000000012,
     "pdf_x": 31.9,
@@ -41866,12 +41942,13 @@
         "unit_file": "turopoljsko-posavski-odred-soldiers.json"
       }
     ],
-    "death_place": "X",
     "ethnicity": "Hrvat",
     "borrowed": [
       "birth_year",
+      "death_place",
       "ethnicity"
     ],
+    "death_place": "Kraversko",
     "birth_year": "1923"
   },
   {
@@ -45407,7 +45484,7 @@
     "death_type": "poginuo",
     "death_place": "Hrastovac",
     "unit_detail": "brigada „Franjo Ogulinac Seljo“",
-    "rank": "bortac",
+    "rank": "borac",
     "pdf_page": 25,
     "pdf_y": 470.544,
     "pdf_x": 39.4,
@@ -50127,38 +50204,6 @@
     "pdf_x_end": 536.0,
     "soldier_id": "0097010205",
     "rank": "komesar bataljona"
-  },
-  {
-    "last_name": "Latković",
-    "middle_name": "",
-    "first_name": "Vjekoslav",
-    "fathers_name": "",
-    "full_name": "Latković Vjekoslav",
-    "additional_info": "Vojno i političko-partijsko rukovodstvo 34. udarne divizije: operativni oficir Karlovačke brigade; informativni oficir Karlovačke brigade; komandant 1. bataljona Karlovačke brigade.",
-    "birth_year": "",
-    "pdf_page": 5,
-    "pdf_y": 773.2,
-    "pdf_x": 375.3,
-    "pdf_y_end": 783.7,
-    "pdf_file": "34-divizija-kadar.pdf",
-    "unit_detail": "Karlovačka brigada",
-    "pdf_x_end": 477.1,
-    "pdf_rects": [
-      [
-        375.3,
-        773.2,
-        477.1,
-        783.7
-      ],
-      [
-        375.3,
-        798.4,
-        476.8,
-        808.9
-      ]
-    ],
-    "soldier_id": "0097010206",
-    "rank": "komandant bataljona"
   },
   {
     "last_name": "Laćan",

@@ -897,16 +897,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=203",
         "source_page": 203,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0167000133",
+        "name": "Bevc Jože",
+        "additional_info": "1914, Moravška Gora, p. 1944 Jordanka!",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 2,
+        "pdf_x": 138.5,
+        "pdf_y": 84.2,
+        "pdf_x_end": 231.4,
+        "pdf_y_end": 96.0,
+        "unit_file": "deveta-soldiers.json"
       }
     ],
-    "ethnicity": "Slovenac",
+    "death_date": "1944",
     "borrowed": [
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
-    "death_place": "Mirna Peč"
+    "death_place": "Jordankal",
+    "ethnicity": "Slovenac"
   },
   {
     "last_name": "Bevk",
@@ -9874,13 +9886,13 @@
       {
         "soldier_id": "0048011794",
         "name": "Lah Milana Milan",
-        "additional_info": "rođen 1913. Lož, Rakek, Crknica. Slovenac, poručnik jugoslovenske vojske. U NOB-i od 1941. Načelnik štaba brigade. Učesnik bitke na Neretvi i Sutjesci. U ratu zamjenik načelnika Glavnog štaba Slovenije. LEVI dr SALAMON-MONI, rođen 1896. u Travniku. Jevrej, ljekar. U NOB-i od 1941. Član KPJ od 1922. Referent saniteta brigade. Učesnik bitke na Neretvi i Sutjesci. U ratu referent saniteta 3. udarnog korpusa.",
+        "additional_info": "rođen 1913. Lož, Rakek, Crknica. Slovenac, poručnik jugoslovenske vojske. U NOB-i od 1941. Načelnik štaba brigade. Učesnik bitke na Neretvi i Sutjesci. U ratu zamjenik načelnika Glavnog štaba Slovenije.",
         "pdf_file": "7-krajiska-spisak.pdf",
         "pdf_page": 116,
         "pdf_x": 295.6,
         "pdf_y": 299.3,
-        "pdf_x_end": 463.3,
-        "pdf_y_end": 436.2,
+        "pdf_x_end": 463.0,
+        "pdf_y_end": 367.1,
         "unit_file": "7-krajiska-soldiers.json"
       },
       {
@@ -15850,7 +15862,21 @@
     "pdf_y_end": 94.5,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000549",
-    "pdf_x_end": 329.6
+    "pdf_x_end": 329.6,
+    "other_sources": [
+      {
+        "soldier_id": "0167001550",
+        "name": "Potočar Viktor",
+        "additional_info": "1920, Trška Gora, p, ubit, kot talec 1943",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 14,
+        "pdf_x": 241.0,
+        "pdf_y": 58.1,
+        "pdf_x_end": 294.7,
+        "pdf_y_end": 76.6,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Potrbin",
@@ -19832,11 +19858,11 @@
     "pdf_x_end": 226.2
   },
   {
-    "last_name": "Ujaš",
+    "last_name": "Ilaš",
     "middle_name": "",
     "first_name": "Janez",
     "fathers_name": "",
-    "full_name": "Ujaš Janez",
+    "full_name": "Ilaš Janez",
     "additional_info": "1923, Dole",
     "birth_year": "1923",
     "pdf_page": 2,
@@ -23576,7 +23602,7 @@
     "birth_year": "1921",
     "death_type": "poginuo",
     "death_date": "1942",
-    "birth_place": "Mirna vas, _",
+    "birth_place": "Mirna vas",
     "pdf_page": 10,
     "pdf_y": 239.7,
     "pdf_x": 242.9,
@@ -23688,7 +23714,7 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000825",
     "pdf_x_end": 335.9,
-    "birth_place": "Trbov-. Ue",
+    "birth_place": "Trbovlje",
     "other_sources": [
       {
         "soldier_id": "0062002850",

@@ -2683,15 +2683,45 @@
     "first_name": "Jože",
     "fathers_name": "",
     "full_name": "Bevc Jože",
-    "additional_info": "1914,",
+    "additional_info": "1914, Moravška Gora, p. 1944 Jordanka!",
     "birth_year": "1914",
     "pdf_page": 2,
     "pdf_y": 84.2,
     "pdf_x": 138.5,
-    "pdf_y_end": 89.8,
+    "pdf_y_end": 96.0,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000133",
-    "pdf_x_end": 176.8
+    "pdf_x_end": 231.4,
+    "birth_place": "Moravška Gora",
+    "death_place": "Jordankal",
+    "death_date": "1944",
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "9020005686",
+        "name": "Bevc (Alojz) Jože",
+        "additional_info": "rođen 1914, Moravška Gora (Litija). Slovenac, poginuo 1944. u NOBu, Mirna Peč",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=203",
+        "source_page": 203,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0068000028",
+        "name": "Bevc Jože",
+        "additional_info": "Moravška gora, 1914-",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 28.6,
+        "pdf_y": 290.1,
+        "pdf_x_end": 112.6,
+        "pdf_y_end": 304.5,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Bevc",
@@ -2699,15 +2729,19 @@
     "first_name": "Jože",
     "fathers_name": "",
     "full_name": "Bevc Jože",
-    "additional_info": "1912,",
+    "additional_info": "1912, Moravška Gora, p. 1944 Mirna Peč",
     "birth_year": "1912",
     "pdf_page": 2,
     "pdf_y": 97.1,
     "pdf_x": 138.5,
-    "pdf_y_end": 102.7,
+    "pdf_y_end": 109.0,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000134",
-    "pdf_x_end": 176.9
+    "pdf_x_end": 232.1,
+    "birth_place": "Moravška Gora",
+    "death_place": "Mirna Peč",
+    "death_date": "1944",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Bevc",
@@ -9493,7 +9527,7 @@
     "first_name": "Ivan",
     "fathers_name": "",
     "full_name": "Grom Ivan",
-    "additional_info": "1911, Stara Vrhnika, p. 1944",
+    "additional_info": "1911, Stara Vrhnika, p. 1944 Pijava Gorica",
     "birth_year": "1911",
     "death_type": "poginuo",
     "death_date": "1944",
@@ -9501,10 +9535,11 @@
     "pdf_page": 5,
     "pdf_y": 372.7,
     "pdf_x": 136.0,
-    "pdf_y_end": 385.0,
+    "pdf_y_end": 391.5,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000488",
-    "pdf_x_end": 198.7
+    "pdf_x_end": 198.7,
+    "death_place": "Pijava Gorica"
   },
   {
     "last_name": "Grom",
@@ -9674,11 +9709,11 @@
     ]
   },
   {
-    "last_name": "Gspanov",
+    "last_name": "Ospanov",
     "middle_name": "",
     "first_name": "Kolja",
     "fathers_name": "",
-    "full_name": "Gspanov Kolja",
+    "full_name": "Ospanov Kolja",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 13,
@@ -14915,25 +14950,6 @@
     "birth_place": "Kostanjek"
   },
   {
-    "last_name": "Kitni",
-    "middle_name": "",
-    "first_name": "Vrh",
-    "fathers_name": "",
-    "full_name": "Kitni Vrh",
-    "additional_info": "p. 1944, Luče pri Grosupljem",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Luče pri Grosupljem",
-    "pdf_page": 15,
-    "pdf_y": 134.0,
-    "pdf_x": 247.2,
-    "pdf_y_end": 146.2,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167000765",
-    "pdf_x_end": 299.1
-  },
-  {
     "last_name": "Kišek",
     "middle_name": "",
     "first_name": "Ivan",
@@ -18416,15 +18432,19 @@
     "first_name": "Dušan",
     "fathers_name": "",
     "full_name": "Kraševec Dušan",
-    "additional_info": "1923,",
+    "additional_info": "1923, Svetli Potok",
     "birth_year": "1923",
     "pdf_page": 9,
     "pdf_y": 250.4,
     "pdf_x": 142.8,
-    "pdf_y_end": 256.1,
+    "pdf_y_end": 262.1,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000943",
-    "pdf_x_end": 197.7
+    "pdf_x_end": 197.7,
+    "birth_place": "Svetli Potok",
+    "death_place": "",
+    "death_date": "",
+    "death_type": ""
   },
   {
     "last_name": "Kraševec",
@@ -20823,11 +20843,11 @@
     "birth_place": "Budina, Ptuj"
   },
   {
-    "last_name": "Liberna",
+    "last_name": "Žiberna",
     "middle_name": "",
     "first_name": "Jože",
     "fathers_name": "",
-    "full_name": "Liberna Jože",
+    "full_name": "Žiberna Jože",
     "additional_info": "1926, Velike Brusnice, p. 1944 Kočevje",
     "birth_year": "1926",
     "death_type": "poginuo",
@@ -25324,44 +25344,6 @@
     "birth_place": "Ljubljana"
   },
   {
-    "last_name": "Moravška",
-    "middle_name": "",
-    "first_name": "Gora",
-    "fathers_name": "",
-    "full_name": "Moravška Gora",
-    "additional_info": "p. 1944 Jordanka!,",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Jordanka!",
-    "pdf_page": 2,
-    "pdf_y": 90.4,
-    "pdf_x": 144.5,
-    "pdf_y_end": 96.0,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167001277",
-    "pdf_x_end": 231.4
-  },
-  {
-    "last_name": "Moravška",
-    "middle_name": "",
-    "first_name": "Gora",
-    "fathers_name": "",
-    "full_name": "Moravška Gora",
-    "additional_info": "p. 1944 Mirna Peč,",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Mirna Peč",
-    "pdf_page": 2,
-    "pdf_y": 103.1,
-    "pdf_x": 144.5,
-    "pdf_y_end": 109.0,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167001278",
-    "pdf_x_end": 232.1
-  },
-  {
     "last_name": "Močnik",
     "middle_name": "",
     "first_name": "Anton",
@@ -27752,15 +27734,19 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Ožbolt Franc",
-    "additional_info": "1922,",
+    "additional_info": "1922, Črni Potok, Osilnica, p 1944, Ortnek",
     "birth_year": "1922",
     "pdf_page": 13,
     "pdf_y": 106.3,
     "pdf_x": 136.7,
-    "pdf_y_end": 112.2,
+    "pdf_y_end": 125.4,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001404",
-    "pdf_x_end": 183.6
+    "pdf_x_end": 215.0,
+    "birth_place": "Črni Potok, Osilnica",
+    "death_place": "Ortnek",
+    "death_date": "1944",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Ožbolt",
@@ -28770,15 +28756,34 @@
     "first_name": "Srečko",
     "fathers_name": "",
     "full_name": "Perko Srečko",
-    "additional_info": "1909,",
+    "additional_info": "1909, Višnja Gora, padel 1945",
     "birth_year": "1909",
     "pdf_page": 13,
     "pdf_y": 268.5,
     "pdf_x": 238.1,
-    "pdf_y_end": 274.4,
+    "pdf_y_end": 280.9,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001455",
-    "pdf_x_end": 285.1
+    "pdf_x_end": 305.0,
+    "birth_place": "Višnja Gora",
+    "death_place": "Crni vvrh-idrij",
+    "death_date": "1945",
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "9020002603",
+        "name": "Perko (Anton) Srečko",
+        "additional_info": "rođen 1909, Višnja Gora (Grosuplje). Slovenac, poginuo 1945. u NOBu, Crni vvrh-idrij",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=99",
+        "source_page": 99,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Pernek",
@@ -29352,22 +29357,6 @@
     "soldier_id": "0167001485",
     "pdf_x_end": 92.2,
     "birth_place": "Gradišče, Ljubljana"
-  },
-  {
-    "last_name": "Pijava",
-    "middle_name": "",
-    "first_name": "Gorica",
-    "fathers_name": "",
-    "full_name": "Pijava Gorica",
-    "additional_info": "",
-    "birth_year": "",
-    "pdf_page": 5,
-    "pdf_y": 385.7,
-    "pdf_x": 136.1,
-    "pdf_y_end": 391.5,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167001486",
-    "pdf_x_end": 170.0
   },
   {
     "last_name": "Pilojčič",
@@ -30541,15 +30530,33 @@
     "first_name": "Viktor",
     "fathers_name": "",
     "full_name": "Potočar Viktor",
-    "additional_info": "1920,",
+    "additional_info": "1920, Trška Gora, p, ubit, kot talec 1943",
     "birth_year": "1920",
     "pdf_page": 14,
     "pdf_y": 58.1,
     "pdf_x": 241.0,
-    "pdf_y_end": 63.9,
+    "pdf_y_end": 76.6,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001550",
-    "pdf_x_end": 291.8
+    "pdf_x_end": 294.7,
+    "birth_place": "Trška Gora",
+    "death_place": "",
+    "death_date": "1943",
+    "death_type": "ubijen",
+    "other_sources": [
+      {
+        "soldier_id": "0068000549",
+        "name": "Potočar Viktor",
+        "additional_info": "Trška gora, 1920-1943",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 9,
+        "pdf_x": 244.1,
+        "pdf_y": 79.9,
+        "pdf_x_end": 329.6,
+        "pdf_y_end": 94.5,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Potočnik",
@@ -33094,15 +33101,33 @@
     "first_name": "Franc",
     "fathers_name": "",
     "full_name": "Rošelj Franc",
-    "additional_info": "1908,",
+    "additional_info": "1908, Kitni Vrh, p. 1944, Luče pri Grosupljem",
     "birth_year": "1908",
     "pdf_page": 15,
     "pdf_y": 127.3,
     "pdf_x": 241.2,
-    "pdf_y_end": 133.0,
+    "pdf_y_end": 146.2,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001684",
-    "pdf_x_end": 286.3
+    "pdf_x_end": 299.1,
+    "birth_place": "Kitni Vrh",
+    "death_place": "Luče pri Grosupljem",
+    "death_date": "1944",
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "9020002360",
+        "name": "Rošelj (Franc) Franc",
+        "additional_info": "rođen 1908, Kitni Vrh (Grosuplje). Slovenac, poginuo 1944. u NOBu, Žolna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=91",
+        "source_page": 91,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rožanc",
@@ -35575,25 +35600,6 @@
     "birth_place": "Preloka pri Črnomlju"
   },
   {
-    "last_name": "Stari",
-    "middle_name": "",
-    "first_name": "Abone",
-    "fathers_name": "",
-    "full_name": "Stari Abone",
-    "additional_info": "p. 1944 Ribnica,",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Ribnica",
-    "pdf_page": 19,
-    "pdf_y": 289.2,
-    "pdf_x": 43.6,
-    "pdf_y_end": 295.0,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167001822",
-    "pdf_x_end": 116.7
-  },
-  {
     "last_name": "Starif",
     "middle_name": "",
     "first_name": "Janez",
@@ -36564,22 +36570,6 @@
     "pdf_x_end": 175.7
   },
   {
-    "last_name": "Svetli",
-    "middle_name": "",
-    "first_name": "Potok",
-    "fathers_name": "",
-    "full_name": "Svetli Potok",
-    "additional_info": "",
-    "birth_year": "",
-    "pdf_page": 9,
-    "pdf_y": 256.4,
-    "pdf_x": 148.9,
-    "pdf_y_end": 262.1,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167001876",
-    "pdf_x_end": 181.0
-  },
-  {
     "last_name": "Tabatadži",
     "middle_name": "",
     "first_name": "Ivan",
@@ -37512,22 +37502,6 @@
     "pdf_x_end": 91.3
   },
   {
-    "last_name": "Trška",
-    "middle_name": "",
-    "first_name": "Gora",
-    "fathers_name": "",
-    "full_name": "Trška Gora",
-    "additional_info": "p, ubit, kot talec 1943",
-    "birth_year": "",
-    "pdf_page": 14,
-    "pdf_y": 64.6,
-    "pdf_x": 246.7,
-    "pdf_y_end": 76.6,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167001928",
-    "pdf_x_end": 294.7
-  },
-  {
     "last_name": "Tul",
     "middle_name": "",
     "first_name": "Ivan",
@@ -37788,15 +37762,19 @@
     "first_name": "Sabro",
     "fathers_name": "",
     "full_name": "Tursije Sabro",
-    "additional_info": "1907,",
+    "additional_info": "1907, Stari Abone, p. 1944 Ribnica",
     "birth_year": "1907",
     "pdf_page": 19,
     "pdf_y": 282.7,
     "pdf_x": 37.6,
-    "pdf_y_end": 288.5,
+    "pdf_y_end": 295.0,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001943",
-    "pdf_x_end": 85.4
+    "pdf_x_end": 116.7,
+    "birth_place": "Stari Abone",
+    "death_place": "Ribnica",
+    "death_date": "1944",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Turšič",
@@ -38283,15 +38261,19 @@
     "first_name": "Maks",
     "fathers_name": "",
     "full_name": "Urh Maks",
-    "additional_info": "1926,",
+    "additional_info": "1926, Črni Potok, p. 1944",
     "birth_year": "1926",
     "pdf_page": 19,
     "pdf_y": 152.4,
     "pdf_x": 139.0,
-    "pdf_y_end": 158.2,
+    "pdf_y_end": 164.5,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001970",
-    "pdf_x_end": 177.3
+    "pdf_x_end": 191.7,
+    "birth_place": "Črni Potok",
+    "death_place": "",
+    "death_date": "1944",
+    "death_type": "poginuo"
   },
   {
     "last_name": "Uršej",
@@ -39526,24 +39508,6 @@
     "birth_place": "Dolnji Zemon"
   },
   {
-    "last_name": "Višnja",
-    "middle_name": "",
-    "first_name": "Gora",
-    "fathers_name": "",
-    "full_name": "Višnja Gora",
-    "additional_info": "padel 1945,",
-    "birth_year": "",
-    "pdf_page": 13,
-    "pdf_y": 275.0,
-    "pdf_x": 243.8,
-    "pdf_y_end": 280.9,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167002035",
-    "pdf_x_end": 305.0,
-    "death_type": "poginuo",
-    "death_date": "1945"
-  },
-  {
     "last_name": "Vlašič",
     "middle_name": "",
     "first_name": "Anton",
@@ -39578,11 +39542,11 @@
     "birth_place": "Črnomelj"
   },
   {
-    "last_name": "Vlašič",
+    "last_name": "Ulašič",
     "middle_name": "",
     "first_name": "Vilijam",
     "fathers_name": "",
-    "full_name": "Vlašič Vilijam",
+    "full_name": "Ulašič Vilijam",
     "additional_info": "1912, Pavičiči",
     "birth_year": "1912",
     "pdf_page": 19,
@@ -40226,11 +40190,11 @@
     "birth_place": "Črnomelj"
   },
   {
-    "last_name": "Wolrnut",
+    "last_name": "Wolmut",
     "middle_name": "",
     "first_name": "Jože",
     "fathers_name": "",
-    "full_name": "Wolrnut Jože",
+    "full_name": "Wolmut Jože",
     "additional_info": "1904, Ljubljana",
     "birth_year": "1904",
     "pdf_page": 20,
@@ -40724,7 +40688,7 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167002096",
     "pdf_x_end": 193.5,
-    "birth_place": "Torviskoza ~ Italija"
+    "birth_place": "Torviskoza, Italija"
   },
   {
     "last_name": "Zamik",
@@ -41421,11 +41385,11 @@
     "pdf_x_end": 319.6
   },
   {
-    "last_name": "Zunič",
+    "last_name": "Žunič",
     "middle_name": "",
     "first_name": "Peter",
     "fathers_name": "",
-    "full_name": "Zunič Peter",
+    "full_name": "Žunič Peter",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 21,
@@ -42255,41 +42219,6 @@
     "soldier_id": "0167002172",
     "pdf_x_end": 290.9,
     "birth_place": "Kot pri Semiču"
-  },
-  {
-    "last_name": "Črni",
-    "middle_name": "",
-    "first_name": "Potok",
-    "fathers_name": "",
-    "full_name": "Črni Potok",
-    "additional_info": "Osilnica, p 1944, Ortnek",
-    "birth_year": "",
-    "pdf_page": 13,
-    "pdf_y": 112.7,
-    "pdf_x": 142.8,
-    "pdf_y_end": 125.4,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167002173",
-    "pdf_x_end": 215.0,
-    "birth_place": "Osilnica"
-  },
-  {
-    "last_name": "Črni",
-    "middle_name": "",
-    "first_name": "Potok",
-    "fathers_name": "",
-    "full_name": "Črni Potok",
-    "additional_info": "p. 1944,",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_page": 19,
-    "pdf_y": 158.7,
-    "pdf_x": 144.7,
-    "pdf_y_end": 164.5,
-    "pdf_file": "deveta.pdf",
-    "soldier_id": "0167002174",
-    "pdf_x_end": 191.7
   },
   {
     "last_name": "Črnič",
@@ -45594,7 +45523,7 @@
     "additional_info": "p. t 944 Stehanja vas",
     "birth_year": "",
     "death_type": "poginuo",
-    "birth_place": "_",
+    "birth_place": "",
     "pdf_page": 21,
     "pdf_y": 94.6,
     "pdf_x": 39.8,

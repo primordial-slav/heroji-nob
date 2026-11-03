@@ -1531,9 +1531,9 @@
   {
     "last_name": "Bogosavac",
     "middle_name": "",
-    "first_name": "Dorđe",
+    "first_name": "Đorđe",
     "fathers_name": "",
-    "full_name": "Bogosavac Dorđe",
+    "full_name": "Bogosavac Đorđe",
     "additional_info": "rođen 1923, Kaoci Srbac Prnjavor, desetar u 18. brigadi, poginuo",
     "birth_year": "1923",
     "pdf_page": 8,
@@ -3206,7 +3206,7 @@
     "first_name": "Mihajlo",
     "fathers_name": "Ostoja",
     "full_name": "Dević Ostoje Mihajlo",
-    "additional_info": "rođen 1907, Štrbci Prnjavor, 1. batalj. 14. brig., poginuo, 27. I 1944, sahranjen: Medveđe Brdo (Sanica",
+    "additional_info": "rođen 1907, Štrbci Prnjavor, 1. batalj. 14. brig., poginuo, 27. I 1944, sahranjen: Medveđe Brdo (Sanica )",
     "birth_year": "1907",
     "pdf_page": 16,
     "pdf_y": 185.0,
@@ -3780,7 +3780,7 @@
     "pdf_y_end": 318.4,
     "pdf_file": "53-srednjobosanska-divizija.pdf",
     "soldier_id": "0033000123",
-    "birth_place": "Kunovä",
+    "birth_place": "Kunova",
     "death_type": "poginuo",
     "death_date": "19.07.1944",
     "death_place": "Kotor Varoš",
@@ -5035,7 +5035,7 @@
     "birth_place": "Lepenica",
     "death_type": "poginuo",
     "death_date": "17.04.1945",
-    "death_place": "Putnükovo Brdo",
+    "death_place": "Putnukovo Brdo",
     "pdf_x_end": 657.9,
     "unit_detail": "14. brigada",
     "other_sources": [
@@ -7367,7 +7367,21 @@
     "death_date": "08.05.1945",
     "death_place": "D. Dubica",
     "pdf_x_end": 651.0,
-    "unit_detail": "14. brigada"
+    "unit_detail": "14. brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0056000815",
+        "name": "Jozevčić M Tadija",
+        "additional_info": "rođen 1929, Ivčani, Jajce, borac 1. bat. poginuo 8. maja 1945. god. Donja Dubica, Odžak.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 125.2,
+        "pdf_y": 224.0,
+        "pdf_x_end": 484.3,
+        "pdf_y_end": 244.3,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jukić",
@@ -10638,7 +10652,7 @@
     "birth_place": "Karajzovci B. Gradiška",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Lišnja septembar",
+    "death_place": "Lišnja",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 536.2
   },
@@ -13407,11 +13421,11 @@
     "unit_detail": "1. bataljon, 14. brigada"
   },
   {
-    "last_name": "Odalovi",
+    "last_name": "Odalović",
     "middle_name": "",
     "first_name": "Dragica",
     "fathers_name": "",
-    "full_name": "Odalovi Dragica",
+    "full_name": "Odalović Dragica",
     "additional_info": "rođen 1925, Derventa, 3. č. 3. bat. 14. brigade, poginuo, 18. I 1944, Prnjavor, sahranjen: Vijačani",
     "birth_year": "1925",
     "pdf_page": 42,
@@ -13425,7 +13439,33 @@
     "death_date": "18.01.1944",
     "death_place": "Prnjavor",
     "pdf_x_end": 624.5,
-    "unit_detail": "3. četa, 3. bataljon, 14. brigada"
+    "unit_detail": "3. četa, 3. bataljon, 14. brigada",
+    "other_sources": [
+      {
+        "soldier_id": "9041000171",
+        "name": "Odalović Dragica",
+        "additional_info": "Pali borci narodnooslobodilačkog rata sa područja opštine Derventa: Odalović Dragica rođ. 1926. u Derventi borac 14. srednjo bosanske brigade poginula u Prnjavoru.",
+        "pdf_file": "derventa-pali-borci.pdf",
+        "pdf_page": 7,
+        "pdf_x": 43.4,
+        "pdf_y": 180.3,
+        "pdf_x_end": 298.6,
+        "pdf_y_end": 196.2,
+        "ref_book": "derventa-pali-borci"
+      },
+      {
+        "soldier_id": "0056001497",
+        "name": "Odalović Dragica",
+        "additional_info": "rođena 1925, Derventa, borac-bolničarka 3. č. 3. bat. poginula 18. januara 1944. god. Prnjavor.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 94.6,
+        "pdf_y": 507.0,
+        "pdf_x_end": 453.3,
+        "pdf_y_end": 527.8,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Omerćehajić",
@@ -17017,7 +17057,7 @@
     "birth_place": "Tabak Ilova",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Javorani april",
+    "death_place": "Javorani",
     "pdf_x_end": 646.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -17067,7 +17107,7 @@
       "death": [
         {
           "date": "18.04.1944",
-          "place": "Javorani april"
+          "place": "Javorani"
         }
       ]
     }

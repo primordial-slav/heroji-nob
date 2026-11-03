@@ -87,7 +87,8 @@ def fill_from(s: dict, book: str, e: dict) -> list[str]:
     vals = reference_fields(book, e)
     # the census's column of the place of death often holds his unit, no place ("Cankarjeva brigada", "1 brigada 1
     # divizija", "11.brigada 26.div.", "Pogrešan od 9.1944"): nothing to lend (2026-10-30, check_fields.py's list)
-    if UNIT_NO_PLACE.search(vals.get('death_place') or ''):
+    from standardize_fields import UNIT_COLUMN
+    if UNIT_NO_PLACE.search(vals.get('death_place') or '') or UNIT_COLUMN.match(vals.get('death_place') or ''):
         vals.pop('death_place')
     elif vals.get('death_place'):
         # written as the site writes the census's places ("Otok-srem" Otok, Srem; standardize_fields.py runs before this)

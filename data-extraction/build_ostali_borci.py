@@ -116,6 +116,54 @@ def infant(e: dict) -> bool:
     book that names the same child still makes his record"""
     year = str(e.get('birth_year') or '')
     return e.get('_book') == 'spomenica-crnogorskim-antifasistima' and year.isdigit() and 1942 <= int(year) <= 1945
+# names the rules below can't read
+SCANNED = {'Sal.ih': 'Salih', 'Ves.elin': 'Veselin', 'Mi.nša': 'Minša', 'Mi.nžac': 'Minžac', 'Vl.jko': 'Veljko', 'Mil.apov': 'Miljanov',
+           'Minjanov': 'Miljanov', 'Lli.jin': 'Ilijin', 'Ve.vov': 'Vešov', 'Ve.vović': 'Vešović', '.Njuba': 'Ljuba', '.Tandre': 'Jandre', 'Mi.jo': 'Mijo',
+           "Teol'ilovski": 'Teofilovski', "Kornelij'a": 'Kornelija', 'Al»ova': 'Aljova', 'S.-': 'S.', 'Lipice—glibodol': ''}
+# Đ a scan read as D, in names that have no D (the census and the rosters: "Duro", "Dure", "Dorđe", "Doka"); Duka, Dujo, Duran
+# and Durak are names as they stand, Dukić and Dokić surnames
+LOST_STROKE = {'Duro': 'Đuro', 'Dura': 'Đura', 'Dure': 'Đure', 'Dorđe': 'Đorđe', 'Dorde': 'Đorđe', 'Dordje': 'Đorđe', 'Doka': 'Đoka',
+               'Doke': 'Đoke', 'Doko': 'Đoko', 'Durđa': 'Đurđa', 'Durda': 'Đurđa', 'Durađ': 'Đurađ', 'Durad': 'Đurađ', 'Dukan': 'Đukan',
+               'Dukana': 'Đukana', 'Dokana': 'Đokana', 'Dorđija': 'Đorđija', 'Dorđije': 'Đorđije'}
+LOST_STROKE_SURNAME = {'Durić': 'Đurić', 'Durković': 'Đurković', 'Durović': 'Đurović', 'Durđević': 'Đurđević', 'Dordevič': 'Đorđević',
+                       'Dordevic': 'Đorđević', 'Dordević': 'Đorđević', 'Durdevič': 'Đurđević', 'Durašinovič': 'Đurašinović', 'Duraš': 'Đuraš',
+                       'Dordić': 'Đorđić', 'Durdov': 'Đurđov', 'Durković-Andrić': 'Đurković-Andrić'}
+DURIC_MUSLIM = {'Latif', 'Muhamed', 'Šerif', 'Ekrem', 'Pašo'}          # Durić is their own name
+
+
+def scanned_names(e: dict) -> None:
+    """The scans' marks in a name (2026-11-03): the Spomenica's Љ and Њ read as "l»", "l," or "l.", "n.", "L»ubo" Ljubo,
+    "Vel,ko" Veljko, "Drl.ević" Drljević, "Buban.a" Bubanja; the census's footnote digit after a given name, "Milan1",
+    "Ivan+"; its comma in "M,irko"; a dash in two surnames ("Popović—Mitić"), or before or after a name ("Velimir-",
+    "-Mijušković"); a quote before one ("'Gerzić"); a surname's Ć read as t ("Bulatovit"); the lost stroke of Đ. The
+    entry's text keeps them."""
+    changed = False
+    for k in ('last_name', 'first_name', 'fathers_name'):
+        v = e.get(k) or ''
+        new = SCANNED.get(v, v)
+        new = re.sub(r'(?<=[a-zčćžšđ])l[,».](?=[a-zčćžšđ])', 'lj', new)
+        new = re.sub(r'(?<=[a-zčćžšđ])n\.(?=[a-zčćžšđ])', 'nj', new)
+        new = re.sub(r'^L[,»](?=[a-zčćžšđ])', 'Lj', new)
+        new = re.sub(r'(?<=[a-zčćžšđ])[\d+]+$', '', new)
+        new = re.sub(r'^([A-ZČĆŽŠĐ]),(?=[a-zčćžšđ])', r'\1', new)
+        new = re.sub(r'(?<=[a-zčćžšđ])\s*[—–]\s*(?=[A-ZČĆŽŠĐ])', '-', new)
+        new = re.sub(r"^['’\s]*[-—–'’]\s*(?=\w)", '', new)
+        new = re.sub(r"(?<=[a-zčćžšđ])\s*[-—–]+$", '', new)
+        if new[:1].islower() and new[1:2].islower() and v[:1] in "'’":
+            new = new.capitalize()
+        if k == 'last_name':
+            new = re.sub(r'(?<=[a-zčćžšđ]ov)it$', 'ić', new)
+            if not (new == 'Durić' and (e.get('first_name') or '') in DURIC_MUSLIM):
+                new = LOST_STROKE_SURNAME.get(new, new)
+        else:
+            new = LOST_STROKE.get(new, new)
+        if new != v:
+            e[k] = new
+            changed = True
+    if changed:
+        e['name'] = ' '.join(x for x in (e.get('last_name'), e.get('fathers_name'), e.get('first_name')) if x)
+
+
 def born_year(e: dict, year) -> str:
     """The year of birth the lead entry gives, where someone of this war can have it: the Spomenica's old people and
     children stay (1853, 1938), the scans' "Rođen je 1997" and "1814" are none, and the normalizer then reads the text
@@ -162,6 +210,13 @@ ONE_MAN = [
     ('9070000013', '9061004420', 'Volner Zdenko-Sanjo of Virovitica, a spomenica holder, and the Jewish student of '
                                  'Virovitica in the NOV from 1941 (born 1922 and 1921)'),
     ('9070000003', '9002000320', 'Fiket Mirko-Mesarić, proclaimed a narodni heroj on 24 July 1953 in both books'),
+    # the chronicles of Medak and of Prigrevica are one book here, and Prigrevica's settlers came from these villages
+    ('9005001963', '9005001987', 'Zaklan M. Milan of Mogorić, delegat voda of the 6. divizija, fell in Mogorić in 1943'),
+    ('9005000654', '9005001998', 'Njegomir Dane Jovan of Zavođe, born 1914, a spomenica holder in both chronicles'),
+    ('9005002010', '9005000996', 'Radaković Milanka Janko of Mogorić, born 1920, in both chronicles'),
+    ('9005002014', '9005001202', 'Maljković Mile Miloš of Mogorić, a spomenica holder in both chronicles'),
+    ('9005000343', '9005001992', 'Radaković Đuro of Mogorić, Paje or Pavla, fell at Korenica in 1942'),
+    ('9035001457', '9035002190', 'Bubanja Miljanov Milonja of Bubanje, born 1912, fell at Kolašin: under Berane and under Bijelo Polje, the scan reading "Minjanov"'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
@@ -178,7 +233,11 @@ NO_FATHER = re.compile(r'^(?:nema|nepoznat[aoi]?|nn\.?|n\.\s?n\.?)$', re.I)
 # the census's column of the place of death often names his unit, no place ("7 banijska divizija", "18 brigada",
 # "Prešernova brigada", "Kozjanski odred"): the record's sub-unit, its number written "7. " (2026-10-30), shown on the
 # card as "U jedinici"; "Pogrešan od 9.1944" (missing) is neither
-UNIT_IN_COLUMN = re.compile(r'brig|\bdiv\b|\bdiv\.|diviz|odred|bataljon|korpus', re.I)
+UNIT_IN_COLUMN = re.compile(r'brig|\bdiv\b|\bdiv\.|diviz|odred|bataljon|korpus|'
+                            # a number and his unit's word, no "brigada" ("6 lička", "2.dalmatinska", "17 majevička"; 2026-11-03)
+                            r'^\s*\d+\s*\.?\s*(?:prolet|dalm|lič|kraj|kraišk|majev|moslav|slavon|vojv|vovođ|banij|banin|kordun|udarn|'
+                            r'primorsk|hercegov|bosan|crnog|sandž|srps|jugosl|goran|makedon|muslim|omlad|virovit|romanij|južnomor|'
+                            r'srednjebos|srednjobos|armij|čet|bat\b|bat\.|batalj)', re.I)
 MISSING_COLUMN = re.compile(r'^pogrešan\b', re.I)
 
 
@@ -583,6 +642,7 @@ def main():
             # the census's "Ćurković (Nema) Jure", "Feljan (Nepoznat) Franjo": no father, no word in his name
             if NO_FATHER.match(e.get('fathers_name') or ''):
                 e['fathers_name'] = ''
+            scanned_names(e)
             # a man the book names by one name is still its man (Romano's "Ašer (prezime nepoznato)", Oborovo's "Ivica
             # ...", Gončin's "Janković"; the user's decision of 2026-10-14); one it could not name ("Nepoznati borac"),
             # or a number its parser keeps with no one, is no one a search can find

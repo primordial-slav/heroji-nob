@@ -2877,7 +2877,7 @@
     "full_name": "Bošnjaković Antun",
     "additional_info": "rođ. 1926, Podrinje, SI. Brod, poginuo u Mikleušu 7. II 1945.",
     "birth_year": "1926",
-    "birth_place": "Podrinje, SI. Brod",
+    "birth_place": "Podrinje, Sl. Brod",
     "death_type": "poginuo",
     "pdf_page": 5,
     "pdf_y": 417.8,
@@ -4572,9 +4572,9 @@
   {
     "last_name": "Cvetkov",
     "middle_name": "Laze",
-    "first_name": "Doka",
+    "first_name": "Đoka",
     "fathers_name": "Lazo",
-    "full_name": "Cvetkov Laze Doka",
+    "full_name": "Cvetkov Laze Đoka",
     "additional_info": "rođ. 1920, Begeč, poginuo kod Aleksandrovca 7. II 1945.",
     "birth_year": "1920",
     "birth_place": "Begeč",
@@ -4599,7 +4599,7 @@
       },
       {
         "soldier_id": "0111010259",
-        "name": "Cvetkov Laze Doka",
+        "name": "Cvetkov Laze Đoka",
         "additional_info": "1920, Begeč, Novi Sad, borac, poginuo 2. 5. 1945. u mestu Đurđevac.",
         "pdf_file": "51-divizija-savic.pdf",
         "pdf_page": 26,
@@ -5098,7 +5098,7 @@
     "pdf_y_end": 381.0,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000186",
-    "death_place": "u Baranji marta",
+    "death_place": "u Baranji",
     "pdf_x_end": 342.1,
     "death_type": "poginuo",
     "death_date": "03.1945",
@@ -5238,19 +5238,19 @@
     "first_name": "Stevan",
     "fathers_name": "",
     "full_name": "Dinga Stevan",
-    "additional_info": "rođ. 1923, Pivnice, Odžaci, poginuo u s. čačinci 1945. DIMIĆ Mladen, rođ. 1905, Bačka Palanka, nestao kod Dravograda 13. V 1945.",
+    "additional_info": "rođ. 1923, Pivnice, Odžaci, poginuo u s. čačinci 1945.",
     "birth_year": "1923",
     "birth_place": "Pivnice, Odžaci",
-    "death_type": "nestao",
+    "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 449.2,
     "pdf_x": 50.6,
-    "pdf_y_end": 478.2,
+    "pdf_y_end": 458.7,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000192",
-    "death_date": "1945",
     "pdf_x_end": 343.7,
     "death_place": "Cačinci",
+    "death_date": "1945",
     "other_sources": [
       {
         "soldier_id": "0111010284",
@@ -5265,6 +5265,25 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ]
+  },
+  {
+    "soldier_id": "0078009001",
+    "last_name": "Dimić",
+    "middle_name": "",
+    "first_name": "Mladen",
+    "fathers_name": "",
+    "full_name": "Dimić Mladen",
+    "additional_info": "rođ. 1905, Bačka Palanka, nestao kod Dravograda 13. V 1945.",
+    "birth_year": "",
+    "pdf_file": "8-vojvodjanska.pdf",
+    "pdf_page": 9,
+    "pdf_x": 50.2,
+    "pdf_y": 459.1,
+    "death_type": "nestao",
+    "death_date": "13.05.1945",
+    "death_place": "Dravograd",
+    "pdf_x_end": 342.2,
+    "pdf_y_end": 478.2
   },
   {
     "last_name": "Dir",
@@ -5535,7 +5554,7 @@
     "pdf_y_end": 253.1,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000202",
-    "death_place": "kod Petlovca mart",
+    "death_place": "kod Petlovca",
     "pdf_x_end": 346.5,
     "death_type": "poginuo",
     "death_date": "03.1945"
@@ -5955,18 +5974,16 @@
     "first_name": "Mirko",
     "fathers_name": "Mate",
     "full_name": "Fijala Mate Mirko",
-    "additional_info": "rođ. 1924, Novi Slankamen, poginuo u Baranjskom Petrovom Selu 9. III 1945. FILIPOVIC Vlajko, rođ. 1914, Bavanište, nestao kod Cabuna 8. II",
+    "additional_info": "rođ. 1924, Novi Slankamen, poginuo u Baranjskom Petrovom Selu 9. III 1945.",
     "birth_year": "1924",
     "birth_place": "Novi Slankamen",
-    "death_type": "nestao",
+    "death_type": "poginuo",
     "pdf_page": 11,
     "pdf_y": 423.4,
     "pdf_x": 48.2,
-    "pdf_y_end": 452.1,
+    "pdf_y_end": 442.5,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000219",
-    "death_date": "09.03.1945",
-    "death_place": "Baranjsko Petrovo Selo",
     "pdf_x_end": 341.2,
     "other_sources": [
       {
@@ -5990,10 +6007,31 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ],
+    "death_date": "09.03.1945",
+    "death_place": "Baranjsko Petrovo Selo",
     "ethnicity": "Hrvat",
     "borrowed": [
       "ethnicity"
     ]
+  },
+  {
+    "soldier_id": "0078009002",
+    "last_name": "Filipović",
+    "middle_name": "",
+    "first_name": "Vlajko",
+    "fathers_name": "",
+    "full_name": "Filipović Vlajko",
+    "additional_info": "rođ. 1914, Bavanište, nestao kod Cabuna 8. I 1945.",
+    "birth_year": "",
+    "pdf_file": "8-vojvodjanska.pdf",
+    "pdf_page": 11,
+    "pdf_x": 48.2,
+    "pdf_y": 442.6,
+    "pdf_x_end": 340.3,
+    "pdf_y_end": 461.7,
+    "death_type": "nestao",
+    "death_date": "08.01.1945",
+    "death_place": "Cabuna"
   },
   {
     "last_name": "Francišković",
@@ -7964,7 +8002,7 @@
     "full_name": "Hausek Ilija",
     "additional_info": "rođ. 1913, Slatina, SI. Brod, poginuo u šaševu 20. I 1945.",
     "birth_year": "1913",
-    "birth_place": "Slatina, SI. Brod",
+    "birth_place": "Slatina, Sl. Brod",
     "death_type": "poginuo",
     "pdf_page": 14,
     "pdf_y": 439.2,
@@ -8188,9 +8226,9 @@
   {
     "last_name": "Horti",
     "middle_name": "Stevana",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "Stevan",
-    "full_name": "Horti Stevana Dura",
+    "full_name": "Horti Stevana Đura",
     "additional_info": "rođ. 1926, Jermenovci, Vršac, poginuo u s. Đurđevac (Kalinovac) 2. V 1945.",
     "birth_year": "1926",
     "birth_place": "Jermenovci, Vršac",
@@ -8203,7 +8241,21 @@
     "soldier_id": "0078000297",
     "death_date": "02.05.1945",
     "death_place": "u s. Đurđevac (Kalinovac)",
-    "pdf_x_end": 345.9
+    "pdf_x_end": 345.9,
+    "other_sources": [
+      {
+        "soldier_id": "0111010433",
+        "name": "Horti Stevana Đura",
+        "additional_info": "1926, Jermenovci, Vršac, poginuo 2. 5. 1945. u mestu Đurđevac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 29,
+        "pdf_x": 65.6,
+        "pdf_y": 347.3,
+        "pdf_x_end": 344.9,
+        "pdf_y_end": 364.5,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Horvat",
@@ -8569,7 +8621,7 @@
     "full_name": "Hrčan Miše Mišo",
     "additional_info": "rođ. 1925, SI. Aleksandrovac, Alibunar, poginuo kod Dobrovića 19. IV 1945.",
     "birth_year": "1925",
-    "birth_place": "SI. Aleksandrovac, Alibunar",
+    "birth_place": "Sl. Aleksandrovac, Alibunar",
     "death_type": "poginuo",
     "pdf_page": 15,
     "pdf_y": 412.4,
@@ -9597,9 +9649,9 @@
   {
     "last_name": "Ivošević",
     "middle_name": "",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "",
-    "full_name": "Ivošević Dura",
+    "full_name": "Ivošević Đura",
     "additional_info": "rođ. 1925, Subotica, poginuo kod Mikleuša 8. II 1945.",
     "birth_year": "1925",
     "birth_place": "Subotica",
@@ -14195,7 +14247,7 @@
     "pdf_y_end": 102.1,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000501",
-    "death_place": "u Petlovcu marta",
+    "death_place": "u Petlovcu",
     "pdf_x_end": 348.2,
     "death_type": "poginuo",
     "death_date": "03.1945"
@@ -17003,9 +17055,9 @@
   {
     "last_name": "Miler",
     "middle_name": "",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "",
-    "full_name": "Miler Dura",
+    "full_name": "Miler Đura",
     "additional_info": "rođ. 1921, Laćarak, Sr. Mitrovica, zamenik komandanta bataljona, ranjen na Bolmanu, umro u vojnoj bolnici u Somborn 18. III 1945.",
     "birth_year": "1921",
     "birth_place": "Laćarak, Sr. Mitrovica",
@@ -18722,7 +18774,7 @@
     "other_sources": [
       {
         "soldier_id": "0111000371",
-        "name": "Pajić Jul.Ijana",
+        "name": "Pajić Julijana",
         "additional_info": "rođ. 1929, Subotica, borac, nestala 20. 11. 1944, Kazuk.",
         "pdf_file": "51-divizija.pdf",
         "pdf_page": 28,
@@ -19711,10 +19763,10 @@
   },
   {
     "last_name": "Petaković",
-    "middle_name": "",
-    "first_name": "Doka",
-    "fathers_name": "",
-    "full_name": "Petaković Doka",
+    "middle_name": "V",
+    "first_name": "Đoka",
+    "fathers_name": "V",
+    "full_name": "Petaković V Đoka",
     "additional_info": "rođ. 1926, Jazak, Irig, poginuo u Slavoniji 1945.",
     "birth_year": "1926",
     "birth_place": "Jazak, Irig",
@@ -19727,7 +19779,26 @@
     "soldier_id": "0078000703",
     "death_date": "1945",
     "death_place": "Slavonija",
-    "pdf_x_end": 352.6
+    "pdf_x_end": 352.6,
+    "other_sources": [
+      {
+        "soldier_id": "0057002568",
+        "name": "Petaković V Đoka",
+        "additional_info": "rođen 1927. Jazak, Irig, borac, nepaž* njom ranjen 31. 12. 1944. u s. Dravapolkanj, Mađarska.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 135,
+        "pdf_x": 55.2,
+        "pdf_y": 159.8,
+        "pdf_x_end": 336.1,
+        "pdf_y_end": 177.9,
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1927"
+      ]
+    }
   },
   {
     "last_name": "Peternel",
@@ -20159,11 +20230,11 @@
     }
   },
   {
-    "last_name": "Pf.Trić",
+    "last_name": "Petrić",
     "middle_name": "",
     "first_name": "Đurica",
     "fathers_name": "",
-    "full_name": "Pf.Trić Đurica",
+    "full_name": "Petrić Đurica",
     "additional_info": "rođ. 1908, Rudno, poginuo kod M. Darde 30. XI 1944.",
     "birth_year": "",
     "pdf_page": 32,
@@ -23291,10 +23362,10 @@
     "first_name": "Šandor",
     "fathers_name": "Lajčo",
     "full_name": "Simin Lajča Šandor",
-    "additional_info": "rođ. 1915, Subotica, poginuo u Baranji marta SINAKOVIĆ Lajčo, rođ. 1926, Subotica, nestao iz Beremenda 14. III 1945.",
+    "additional_info": "rođ. 1915, Subotica, poginuo u Baranji marta 1945.",
     "birth_year": "1915",
     "birth_place": "Subotica",
-    "death_type": "nestao",
+    "death_type": "poginuo",
     "pdf_page": 37,
     "pdf_y": 440.6,
     "pdf_x": 49.7,
@@ -23318,6 +23389,25 @@
         "unit_file": "51-divizija-soldiers.json"
       }
     ]
+  },
+  {
+    "soldier_id": "0078009003",
+    "last_name": "Sinaković",
+    "middle_name": "",
+    "first_name": "Lajčo",
+    "fathers_name": "",
+    "full_name": "Sinaković Lajčo",
+    "additional_info": "rođ. 1926, Subotica, nestao iz Beremenda 14. III 1945.",
+    "birth_year": "",
+    "pdf_file": "8-vojvodjanska.pdf",
+    "pdf_page": 37,
+    "pdf_x": 49.7,
+    "pdf_y": 460.3,
+    "death_type": "nestao",
+    "death_date": "14.03.1945",
+    "death_place": "Beremend",
+    "pdf_x_end": 342.8,
+    "pdf_y_end": 479.4
   },
   {
     "last_name": "Siojaković",
@@ -23703,6 +23793,18 @@
     "death_place": "Kazuk",
     "other_sources": [
       {
+        "soldier_id": "0111000488",
+        "name": "Smiljanić Đuro",
+        "additional_info": "rođ. 1926, Udbina, desetar, pog. 20. 11. 1944, Kazuk.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 18,
+        "pdf_x": 298.2,
+        "pdf_y": 746.7,
+        "pdf_x_end": 574.9,
+        "pdf_y_end": 765.5,
+        "unit_file": "51-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0111011262",
         "name": "Smiljanić Đuro",
         "additional_info": "1926, Udbina, Lika, poginuo 19. 11. 1944. na Kazuku.",
@@ -23714,7 +23816,15 @@
         "pdf_y_end": 127.0,
         "unit_file": "51-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.11.1944",
+          "place": "Kazuk"
+        }
+      ]
+    }
   },
   {
     "last_name": "Smukov",
@@ -24103,7 +24213,7 @@
     "full_name": "Stanojević-Šijak Lazar",
     "additional_info": "rođ. 1923, Sv ,ck, Ilok, pom. komesara čete, poginuo u Baranjskom P.-trovjm Selu 10. III 1045.",
     "birth_year": "1923",
-    "birth_place": "Sv",
+    "birth_place": "Ilok",
     "death_type": "poginuo",
     "pdf_page": 38,
     "pdf_y": 501.4,
@@ -24798,19 +24908,37 @@
     "first_name": "Nica",
     "fathers_name": "",
     "full_name": "Subicin Nica",
-    "additional_info": "rođ. 1923, Melenci, poginuo kod Mikleuša 7. II 1945. SIJDAREVIć I. Josip, rođ. 1926, (Subotica), Tavankut, nestao iz jedinice kod Budakovca 9. II 1945.",
+    "additional_info": "rođ. 1923, Melenci, poginuo kod Mikleuša 7. II 1945.",
     "birth_year": "1923",
     "birth_place": "Melenci",
-    "death_type": "nestao",
+    "death_type": "poginuo",
     "pdf_page": 39,
     "pdf_y": 509.1,
     "pdf_x": 49.6,
     "pdf_y_end": 518.6,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078000879",
+    "pdf_x_end": 342.7,
     "death_date": "07.02.1945",
-    "death_place": "Mikleuš",
-    "pdf_x_end": 342.7
+    "death_place": "Mikleuš"
+  },
+  {
+    "soldier_id": "0078009004",
+    "last_name": "Sudarević",
+    "middle_name": "I.",
+    "first_name": "Josip",
+    "fathers_name": "I.",
+    "full_name": "Sudarević I. Josip",
+    "additional_info": "rođ. 1926, (Subotica), Tavankut, nestao iz jedinice kod Budakovca 9. II 1945.",
+    "birth_year": "",
+    "pdf_file": "8-vojvodjanska.pdf",
+    "pdf_page": 40,
+    "pdf_x": 55.7,
+    "pdf_y": 76.6,
+    "death_type": "nestao",
+    "death_date": "09.02.1945",
+    "pdf_x_end": 348.0,
+    "pdf_y_end": 95.7
   },
   {
     "last_name": "Sudarević",
@@ -27462,9 +27590,9 @@
   },
   {
     "last_name": "Vojnić",
-    "middle_name": "",
-    "first_name": "P. J. Mirko",
-    "fathers_name": "",
+    "middle_name": "P. J.",
+    "first_name": "Mirko",
+    "fathers_name": "P. J.",
     "full_name": "Vojnić P. J. Mirko",
     "additional_info": "rođ. 1925, Žednik, poginuo kod Čađavice 25. I 1945.",
     "birth_year": "",
@@ -28163,10 +28291,10 @@
   },
   {
     "last_name": "Vukobradić",
-    "middle_name": "Rada",
-    "first_name": "Si.",
-    "fathers_name": "Rade",
-    "full_name": "Vukobradić Rada Si.",
+    "middle_name": "Si",
+    "first_name": "Rada",
+    "fathers_name": "Si",
+    "full_name": "Vukobradić Si Rada",
     "additional_info": "rođ. 1920, Golubinci, St. Pazova, nestao kod Varaždina 7. V 1945.",
     "birth_year": "",
     "pdf_page": 47,
@@ -29383,7 +29511,7 @@
     "pdf_x_end": 347.0,
     "death_date": "26.11.1944",
     "death_type": "poginuo",
-    "death_place": "u Lugu !",
+    "death_place": "Lug",
     "rank": "borac",
     "other_sources": [
       {
@@ -29973,9 +30101,9 @@
   {
     "last_name": "Đurić",
     "middle_name": "",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "",
-    "full_name": "Đurić Dura",
+    "full_name": "Đurić Đura",
     "additional_info": "rođ. 1922, Ruma, poginuo na Iriškom vencu 25. VIII 1944.",
     "birth_year": "1922",
     "birth_place": "Ruma",
@@ -30545,18 +30673,56 @@
     "first_name": "Stipe",
     "fathers_name": "",
     "full_name": "Ševarac Stipe",
-    "additional_info": "rođ. 1919, Subotica, nestao na putu od Stapara (izostao iz kolone) 30. III 1945. ŠIJAN Milan, rođ. 1924, Subotica, poginuo kod Dobrovića 21. IV",
+    "additional_info": "rođ. 1919, Subotica, nestao na putu od Stapara (izostao iz kolone) 30. III 1945.",
     "birth_year": "1919",
     "birth_place": "Subotica",
-    "death_type": "nestao",
     "pdf_page": 41,
     "pdf_y": 147.9,
     "pdf_x": 52.0,
-    "pdf_y_end": 176.8,
+    "pdf_y_end": 167.0,
     "pdf_file": "8-vojvodjanska.pdf",
     "soldier_id": "0078001083",
-    "death_date": "30.03.1945",
-    "pdf_x_end": 344.0
+    "pdf_x_end": 343.6,
+    "death_type": "nestao",
+    "death_date": "30.03.1945"
+  },
+  {
+    "soldier_id": "0078009005",
+    "last_name": "Šijan",
+    "middle_name": "",
+    "first_name": "Milan",
+    "fathers_name": "",
+    "full_name": "Šijan Milan",
+    "additional_info": "rođ. 1924, Subotica, poginuo kod Dobrovića 21. IV 1945.",
+    "pdf_file": "8-vojvodjanska.pdf",
+    "pdf_page": 41,
+    "pdf_x": 52.0,
+    "pdf_y": 167.3,
+    "pdf_x_end": 344.0,
+    "pdf_y_end": 186.4,
+    "death_type": "poginuo",
+    "death_date": "21.04.1945",
+    "death_place": "Dobrović",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Subotica",
+    "other_sources": [
+      {
+        "soldier_id": "0111011593",
+        "name": "Šijan Milan",
+        "additional_info": "1924, Subotica, desetar, poginuo 21. 4. 1945. kod Dobrovića.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 40,
+        "pdf_x": 83.3,
+        "pdf_y": 238.9,
+        "pdf_x_end": 363.9,
+        "pdf_y_end": 255.8,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šimoković",
@@ -30795,9 +30961,9 @@
   {
     "last_name": "Šljuka",
     "middle_name": "Đ",
-    "first_name": "Dura",
+    "first_name": "Đura",
     "fathers_name": "Đ",
-    "full_name": "Šljuka Đ Dura",
+    "full_name": "Šljuka Đ Đura",
     "additional_info": "rođ. 1925, Silbaš, nestao kod s. Bačevci 25. IV 1945.",
     "birth_year": "1925",
     "birth_place": "Silbaš",

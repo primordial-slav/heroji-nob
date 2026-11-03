@@ -400,7 +400,7 @@
     "birth_place": "Strp, Kotor",
     "soldier_id": "0102000011",
     "death_date": "proljeće 1945",
-    "death_place": "u Peći u",
+    "death_place": "Peć",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 452.6,
     "other_sources": [
@@ -4132,7 +4132,7 @@
     "first_name": "Đorđe",
     "fathers_name": "S",
     "full_name": "Marić S Đorđe",
-    "additional_info": "3. bataljon, rođen u Đenoviću — Herceg-Novi, umro 22. 1. 1945. godine u",
+    "additional_info": "3. bataljon, rođen u Đenoviću — Herceg-Novi, umro 22. 1. 1945. godine u ?",
     "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 402.5,
@@ -4718,7 +4718,7 @@
     "first_name": "Zrinko",
     "fathers_name": "S",
     "full_name": "Medvid S Zrinko",
-    "additional_info": "4. bataljon, rođen u Perastu — Kotor, poginuo",
+    "additional_info": "4. bataljon, rođen u Perastu — Kotor, poginuo ?",
     "birth_year": "",
     "pdf_page": 4,
     "pdf_y": 590.9,
@@ -4796,7 +4796,7 @@
     "pdf_file": "1-bokeljska.pdf",
     "birth_place": "Rab",
     "soldier_id": "0102000100",
-    "death_place": "u Nikšiću ?",
+    "death_place": "u Nikšiću",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 470.0,
     "other_sources": [
@@ -5805,7 +5805,7 @@
     ],
     "rank": "borac",
     "unit_detail": "komanda pozadine",
-    "death_place": "Brod \"Cetinje\"",
+    "death_place": "Brod »Cetinje«",
     "borrowed": [
       "birth_year",
       "death_place"
@@ -5879,7 +5879,7 @@
     "first_name": "Adam",
     "fathers_name": "B",
     "full_name": "Pavlović B Adam",
-    "additional_info": "1. bataljon, rođen u Kruševicama — Herceg-Novi, upućen kući na bolovanje i umro",
+    "additional_info": "1. bataljon, rođen u Kruševicama — Herceg-Novi, upućen kući na bolovanje i umro ?",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 467.0,
@@ -7150,7 +7150,7 @@
     "first_name": "Milan",
     "fathers_name": "U",
     "full_name": "Ratković U Milan",
-    "additional_info": "3. bataljon, rođen u Orahovcu — Kotor, poginuo u Istoku 7. 2. 1945. godine",
+    "additional_info": "3. bataljon, rođen u Orahovcu — Kotor, poginuo u Istoku 7. 2. 1945. godine (?)",
     "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 285.9,
@@ -7162,7 +7162,7 @@
     "birth_place": "Orahovac, Kotor",
     "death_type": "poginuo",
     "death_date": "07.02.1945",
-    "death_place": "Istok",
+    "death_place": "Istok (?)",
     "unit_detail": "3. bataljon"
   },
   {
@@ -9022,7 +9022,6 @@
     "fathers_name": "M",
     "full_name": "Đaković M Đuro",
     "additional_info": "1. bataljon, rođen u Orahovcu — Kotor, umro u bolnici u Dubrovniku 28. 1. 1945. godine.",
-    "birth_year": "",
     "death_type": "umro",
     "pdf_page": 2,
     "pdf_y": 490.2,
@@ -9034,7 +9033,25 @@
     "death_date": "28.01.1945",
     "death_place": "Dubrovnik",
     "unit_detail": "1. bataljon",
-    "pdf_x_end": 465.0
+    "pdf_x_end": 465.0,
+    "other_sources": [
+      {
+        "soldier_id": "9035006097",
+        "name": "Daković Markov Đuro",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Kotor: godina rođenja 1920; mjesto rođenja Orahovac; godina smrti 1945; mjesto pogibije Dubrovnik",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 154,
+        "pdf_x": 103.0,
+        "pdf_y": 226.7,
+        "pdf_x_end": 507.5,
+        "pdf_y_end": 236.2,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      }
+    ],
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
+    ]
   },
   {
     "last_name": "Đinović",
@@ -28644,6 +28661,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=102",
         "source_page": 102,
         "ref_book": "zrtve-rata-1964-crg"
+      },
+      {
+        "soldier_id": "9035006207",
+        "name": "Kunjić Stevov Đuro",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Kotor: godina rođenja 1921; mjesto rođenja Grbalj; godina smrti 1945; mjesto pogibije Jaz",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 156,
+        "pdf_x": 102.0,
+        "pdf_y": 556.7,
+        "pdf_x_end": 474.5,
+        "pdf_y_end": 566.0,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
     "birth_place": "Krimovica, Kotor",
@@ -57731,7 +57760,7 @@
     "soldier_id": "0102012772",
     "rank": "komandir čete",
     "unit_detail": "4. bataljon",
-    "birth_place": "Brđani, Dvor na Uni.",
+    "birth_place": "Brđani, Dvor na Uni",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "party": "SKOJ 1942, KPJ 1943",

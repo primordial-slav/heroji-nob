@@ -145,6 +145,7 @@ FIGHTERS_AND_ACTIVISTS = {'hrvatsko-zagorje-1981-entries.json', 'imotska-krajina
                           'cacanski-kraj-pali-entries.json', 'pozega-pali-entries.json', 'revolucionarno-grahovo-entries.json', 'bijelo-polje-entries.json'}
 # these count everyone in the war: what no word tells apart is a participant
 FIGHTERS_AND_OTHERS = {'kolasin-entries.json', 'milesevski-entries.json', 'kotor-varos-entries.json', 'mosorski-odred-2-aktivisti-entries.json'}
+READ_AS_ACTIVIST = {'IVF.KOVIĆ (Stjepana) KRSTO', 'DINKA PAUT'}      # the head of a district's intelligence centre; a member of the AFŽ's board the OCR spells AF2
 VICTIM = re.compile(r'\bkao ŽFT\b|\bžrtv')
 DEATH = re.compile(r'\b(?:pogin|umr|nesta|stri?jelj|ubijen|pal[ai]?\b|zaklan|obješen|umor)\w*[^;]{0,70}?\b(19[34]\d)\b', re.I)
 DEATH_VERB = re.compile(r'\b(?:pogin|umr|nesta|stri?jelj|ubijen|pal[ai]?\b|zaklan|obješen|umor)', re.I)
@@ -158,8 +159,10 @@ def fold(s: str) -> str:
 def split_prefix(text: str) -> tuple[str, str]:
     """The list's heading before the entry, up to its first colon, and the rest"""
     at = text.find(': ')
-    if 0 < at < 140 and not re.search(r'\bro[dđ]en|\d{4}', text[:at]):
-        return text[:at + 2], text[at + 2:]
+    if 0 < at < 170:
+        head = text[:at]
+        if not re.search(r'\bro[dđ]en', head) and (not re.search(r'\d{4}', head) or re.search(r'^(?:Borci|Nosioci|Spisak|Poginuli|Pali|Preživjeli|Živi|Umrli|Učesnici|Svoja|Jevreji|Spomenica)\b', head)):
+            return text[:at + 2], text[at + 2:]
     return '', text
 
 
@@ -181,6 +184,7 @@ def main():
         by = {e['soldier_id']: i for i, e in enumerate(data)}
         next_id = max(int(e['soldier_id']) for e in data) + 1
         added = {}
+        printing = sum(fold(split_prefix(e.get('additional_info') or '')[1])[:4] == fold(e.get('last_name'))[:4] for e in data) > len(data) / 2
         for hid, men in hosts.items():
             host = data[by[hid]]
             info = host['additional_info']
@@ -191,9 +195,7 @@ def main():
                 pos.append(i)
                 at = i + 1
             prefix, own = split_prefix(info)
-            keeps = fold(own)[:4] == fold(host.get('last_name'))[:4]        # the book prints the name in the entry's text
-            if keeps and not own.startswith(host.get('last_name', '')[:1]):
-                keeps = fold(own).startswith(fold(host.get('last_name'))[:4])
+            keeps = printing or fold(own)[:4] == fold(host.get('last_name'))[:4]        # the book prints the name in the entry's text
             after = (host['pdf_page'], host['pdf_x'], host['pdf_y'], 'host') if host.get('pdf_file') else None
             new_host = host_end(info[:pos[0]])
             print(f"{hid} {host.get('name')}: ...{new_host[-70:]!r}")
@@ -214,7 +216,7 @@ def main():
                 by_birth = re.search(r'\b(1[89]\d\d)\b', rest[:verb.start() if verb else 60][:60])
                 died = DEATH.search(rest)
                 born_in = ''
-                bm = re.search(r'\b[Rr]o[dđ](?:en|ei)[a]?[ ~,]*(?:\d[\d. ]*(?:godine)?,?\s*)?(?:u\s+(?:selu\s+)?)((?:[A-ZČĆŽŠĐ]\.\s*)?[A-ZČĆŽŠĐ][^,.;]*?)(?=\s+(?:pogin|umr|nesta)|[,.;]|$)', rest)
+                bm = re.search(r'\b[Rr]o[dđ](?:en|ei)[a]?[ ~,]*(?:\d[\d. ]*(?:godine)?,?\s*)?(?:u\s+(?:selu\s+)?)((?:[A-ZČĆŽŠĐ]\.\s*)*[A-ZČĆŽŠĐ][^,.;]*?)(?=\s+(?:pogin|umr|nesta)|[,.;]|$)', rest)
                 if bm:
                     born_in = bm.group(1).strip()
                 elif prefix and fold(host.get('born_in', '').split(',')[0]) and fold(host['born_in'].split(',')[0]) in fold(prefix):
@@ -240,21 +242,22 @@ def main():
                 if name in MIXED and MIXED[name](host) and not soldier:
                     e['role'] = 'activist'
                 elif name in FIGHTERS_AND_ACTIVISTS and not soldier:
-                    if VICTIM.search(rest) or not mos.activist(e):
-                        print('   CUT, no one of ours:', cut, '|', rest[:90])
+                    if cut not in READ_AS_ACTIVIST and (VICTIM.search(rest) or not mos.activist(e)):
+                        print('   CUT, no one of ours:', cut, '|', rest[:400])
                         next_id -= 1
                         continue
                     e['role'] = 'activist'
                 elif name in FIGHTERS_AND_OTHERS and not soldier:
                     e['role'] = 'activist' if mos.activist(e) else 'participant'
-                held = next((o for o in data if o is not host and len(rest) >= 25 and rest[:40] in (o.get('additional_info') or '')), None)
+                held = next((o for o in data if o is not host and len(rest) >= 25 and rest[:40] in (o.get('additional_info') or '')
+                             and fold(o.get('first_name')) == fold(given) and (fold(o.get('last_name'))[:4] == fold(last)[:4] or fold(o.get('fathers_name')) == fold(father))), None)
                 if held:
                     print('   HELD by', held.get('name'), '|', cut, '|', rest[:60])
                     next_id -= 1
                     continue
                 if host.get('pdf_file'):
                     try:
-                        order, x, y = find(host, printed, after, rest)
+                        order, x, y = find(host, re.sub(r'^\S*\d\S*\s+', '', cut).lstrip(" .'\"") or printed, after, rest)
                         after = order
                         e.update(pdf_page=order[0], pdf_x=x, pdf_y=y)
                     except SystemExit as ex:

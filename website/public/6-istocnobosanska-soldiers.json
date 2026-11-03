@@ -579,6 +579,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1021",
         "source_page": 1021,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0048019022",
+        "name": "Atlagić Sime Đuro",
+        "additional_info": "rođen 1921. Vrtoče, Bosanski Petrovac. Srbin, zemljoradnik. U NOB-i od 1941. Član KPJ. Borac radnog voda 1. bataljona. POGINUO na Javorku 3. juna 1943.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 9,
+        "pdf_x": 304.2,
+        "pdf_y": 385.3,
+        "pdf_x_end": 471.5,
+        "pdf_y_end": 432.1,
+        "unit_file": "7-krajiska-soldiers.json"
       }
     ]
   },
@@ -4671,7 +4683,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "leto 1943",
-    "death_place": "Romanija, Mokro, u",
+    "death_place": "Romanija, Mokro",
     "rank": "borac",
     "other_sources": [
       {
@@ -11181,7 +11193,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "proleće 1945",
-    "death_place": "Novi Grad, Odžak, u",
+    "death_place": "Novi Grad, Odžak",
     "rank": "borac",
     "unit_detail": "prištapske jedinice",
     "party": "KPJ"
@@ -11363,14 +11375,14 @@
       {
         "soldier_id": "0001301096",
         "name": "Minderović Čedomir",
-        "additional_info": "zvani Čeda; politički komesar; (od 4. 1. 1942) Književnik, rođen 1912, Beograd; član KPJ 1941. Umro 15. januara 1966. godine. ŽIVKOVIć LJUBOMIR — LJUPČE ŠPANAC, politički komesar, od 4. januara 1942. intendant Obućarski radnik, rođen 1918, Crveni Breg, Bela Palanka; član KPJ 1935. Borac španskog građanskog rata. Teže ranjen 20. novembra 1942, u borbi za Sitnicu, Ključ kao zamenik komandanta bataljona i posle dva dana umro u Bos. Petrovcu. Proglašen za narodnog heroja.",
+        "additional_info": "zvani Čeda; politički komesar; (od 4. 1. 1942) Književnik, rođen 1912, Beograd; član KPJ 1941. Umro 15. januara 1966. godine.",
         "pdf_file": "beogradski-bataljon.pdf",
         "pdf_page": 9,
         "pdf_x": 49.2,
         "pdf_y": 527.0,
-        "pdf_y_end": 699.3,
-        "pdf_x_end": 201.0,
-        "pdf_x_left": 45.5,
+        "pdf_y_end": 581.7,
+        "pdf_x_end": 200.4,
+        "pdf_x_left": 46.2,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -13289,7 +13301,7 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "leto 1943",
-    "death_place": "u Lovnici u",
+    "death_place": "Lovnica",
     "rank": "borac",
     "other_sources": [
       {
@@ -13522,7 +13534,21 @@
     "death_place": "kod Polumira, Kraljevo",
     "rank": "intendant bataljona",
     "unit_detail": "1. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9061003230",
+        "name": "Papo Izidora Leon",
+        "additional_info": "Jevreji Jugoslavije, učesnici NOR: Papo Izidora Leon-»Dušan crni«, krojački radnik iz Sarajeva, rođen 1920. Učesnik u revolucionarnom radničkom pokretu i 1941. primljen u članstvo KPJ. U NOV od jula 1941. Borac u Romanijskom partizanskom odredu; intendant bataljona u 6. prolet. istočno-bosanskoj brigadi. Poginuo 10. IX 1944. kod sela Polumir na Ibru. U vreme pogibije imao je čin kapetana.",
+        "pdf_file": "jevreji-jugoslavije-ucesnici-nor.pdf",
+        "pdf_page": 149,
+        "pdf_x": 142.6,
+        "pdf_y": 561.4,
+        "pdf_x_end": 310.9,
+        "pdf_y_end": 611.5,
+        "ref_book": "jevreji-jugoslavije-ucesnici-nor"
+      }
+    ]
   },
   {
     "last_name": "Paređina",
@@ -13617,7 +13643,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "proleće 1945",
-    "death_place": "na Majevici u",
+    "death_place": "Majevica",
     "rank": "borac"
   },
   {
@@ -14085,7 +14111,7 @@
     "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
     "soldier_id": "0042000498",
     "pdf_x_end": 215.1,
-    "birth_place": "Šeher, Kalesijä",
+    "birth_place": "Šeher, Kalesija",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
@@ -14872,11 +14898,11 @@
   },
   {
     "soldier_id": "0042000809",
-    "last_name": "Maninčić",
+    "last_name": "Planinčić",
     "middle_name": "Pavla",
     "first_name": "Milan",
     "fathers_name": "Pavle",
-    "full_name": "Maninčić Pavla Milan",
+    "full_name": "Planinčić Pavla Milan",
     "additional_info": "zvani Mile; borac 2. čete 2. bataljona, rođen 1919, Gučevo, Rogatica, zemljoradnik, Srbin, u NOB od januara 1943, krajem rata komandir voda. Umro 1982.",
     "birth_year": "1919",
     "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
@@ -16548,7 +16574,7 @@
     "occupation": "radnik",
     "death_type": "umro",
     "death_date": "leto 1943",
-    "death_place": "Donji Brodac, kod Bijeljine, u",
+    "death_place": "Donji Brodac, kod Bijeljine",
     "rank": "borac"
   },
   {
@@ -16724,6 +16750,18 @@
         "pdf_x_end": 587.9,
         "pdf_y_end": 352.9,
         "pdf_x_left": 254.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001309019",
+        "name": "Sinđelić Slobodan",
+        "additional_info": "Trgovački pomoćnik, rođen 1914, Grabovac, Obrenovac; član KPJ od maja 1941. Poginuo jula 1943. Šekovići, kao politički komesar čete u 6. Istočno-bosanskoj brigadi.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 15,
+        "pdf_x": 75.1,
+        "pdf_y": 191.0,
+        "pdf_x_end": 229.3,
+        "pdf_y_end": 247.3,
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -18998,7 +19036,7 @@
     "unit_detail": "3. četa, 3. bataljon",
     "death_type": "umro",
     "death_date": "1985",
-    "death_place": "Bratunac, nosilac »Spomenice",
+    "death_place": "Bratunac",
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
@@ -22313,10 +22351,10 @@
   },
   {
     "last_name": "Škerović",
-    "middle_name": "Doka",
+    "middle_name": "Đoka",
     "first_name": "Zarija",
-    "fathers_name": "Doka",
-    "full_name": "Škerović Doka Zarija",
+    "fathers_name": "Đoka",
+    "full_name": "Škerović Đoka Zarija",
     "additional_info": "rukovodilac politodela brigade, rođen 1914, Poljice, Danilovgrad, službenik, Crnogorac, u NOB od 1941, član KPJ od novembra 1939, krajem rata politički komesar 27. divizije.",
     "birth_year": "1914",
     "pdf_page": 38,
@@ -27719,7 +27757,7 @@
     "soldier_id": "0042010210",
     "pdf_x_end": 431.7,
     "pdf_x_left": 150.1,
-    "party": "SKOJ",
+    "party": "",
     "death_type": "poginuo",
     "death_date": "14.05.1944",
     "death_place": "Slovenjgradec",
