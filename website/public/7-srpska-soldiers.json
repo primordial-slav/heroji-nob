@@ -136,11 +136,11 @@
     "unit_detail": "2. bataljon"
   },
   {
-    "last_name": "Aiostolović",
+    "last_name": "Apostolović",
     "middle_name": "J",
     "first_name": "Mika",
     "fathers_name": "J",
-    "full_name": "Aiostolović J Mika",
+    "full_name": "Apostolović J Mika",
     "additional_info": "iz Crna Trava",
     "birth_year": "",
     "pdf_page": 10,
@@ -150,7 +150,22 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Crna Trava",
     "pdf_x_end": 185.5,
-    "soldier_id": "0085000007"
+    "soldier_id": "0085000007",
+    "other_sources": [
+      {
+        "soldier_id": "0085000030",
+        "name": "Apostolović J Mika",
+        "additional_info": "(Crna Trava) poginuo 1945. godine.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 80.4,
+        "pdf_y": 291.1,
+        "pdf_x_end": 359.8,
+        "pdf_y_end": 299.1
+      }
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945"
   },
   {
     "last_name": "Aićelković",
@@ -420,7 +435,7 @@
     "first_name": "Dinka",
     "fathers_name": "S",
     "full_name": "Anćelković S Dinka",
-    "additional_info": "(1924. u s. Kalni), domaćica, borac 3/4. bataljona, umrda od tifusa 27.2.1945. utuzlanskojbolnici.",
+    "additional_info": "(1924. u s. Kalni), domaćica, borac 3/4. bataljona, umrla od tifusa 27.2.1945. utuzlanskojbolnici.",
     "birth_year": "1924",
     "death_type": "umro",
     "pdf_page": 13,
@@ -432,6 +447,7 @@
     "pdf_x_end": 318.3,
     "soldier_id": "0085000021",
     "occupation": "domaćica",
+    "death_date": "27.02.1945",
     "rank": "borac",
     "unit_detail": "4. bataljon"
   },
@@ -570,25 +586,6 @@
     "birth_place": "Kalna",
     "pdf_x_end": 155.0,
     "soldier_id": "0085000029"
-  },
-  {
-    "last_name": "Apostolović",
-    "middle_name": "J",
-    "first_name": "Mika",
-    "fathers_name": "J",
-    "full_name": "Apostolović J Mika",
-    "additional_info": "(Crna Trava) poginuo 1945. godine.",
-    "birth_year": "",
-    "death_type": "poginuo",
-    "pdf_page": 12,
-    "pdf_y": 291.1,
-    "pdf_x": 80.4,
-    "pdf_y_end": 299.1,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Crna Trava",
-    "pdf_x_end": 359.8,
-    "soldier_id": "0085000030",
-    "death_date": "1945"
   },
   {
     "last_name": "Apostolović",
@@ -1519,9 +1516,8 @@
     "first_name": "Stanko",
     "fathers_name": "T",
     "full_name": "Bogdanović T Stanko",
-    "additional_info": "(1911, s. Crvena Jabuka, lužnički srez), borac od 1943, za vreme formiranja brigale bio u Trećem bataljonu, poginuo 30. 7. 1944. na Javorskim padinama u borbi protiv četnika.",
+    "additional_info": "(1911, s. Crvena Jabuka, lužnički srez), borac od 1943, za vreme formiranja brigade bio u Trećem bataljonu, poginuo 30. 7. 1944. na Javorskim padinama u borbi protiv četnika.",
     "birth_year": "1911",
-    "death_type": "poginuo",
     "pdf_page": 14,
     "pdf_y": 252.2,
     "pdf_x": 66.6,
@@ -1551,6 +1547,7 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
+    "death_type": "poginuo",
     "death_date": "30.07.1944",
     "death_place": "na Javorskim padinama",
     "rank": "borac",
@@ -3018,9 +3015,8 @@
     "first_name": "Boško",
     "fathers_name": "D",
     "full_name": "Dimić D Boško",
-    "additional_info": "(1919. u Crnoj Travi, vlasotinački), borac od 1943, poinuo 30. 6. 1944. kod Belog Potokaširi rejon Knjaževca.",
+    "additional_info": "(1919. u Crnoj Travi, vlasotinački), borac od 1943, poginuo 30. 6. 1944. kod Belog Potokaširi rejon Knjaževca.",
     "birth_year": "1919",
-    "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 381.1,
     "pdf_x": 31.0,
@@ -3029,6 +3025,9 @@
     "birth_place": "Crna Trava",
     "pdf_x_end": 309.0,
     "soldier_id": "0085000143",
+    "death_type": "poginuo",
+    "death_date": "30.06.1944",
+    "death_place": "kod Belog Potokaširi rejon Knjaževca",
     "rank": "borac"
   },
   {
@@ -3212,9 +3211,8 @@
     "first_name": "Aleksandar",
     "fathers_name": "N",
     "full_name": "Dinić N Aleksandar",
-    "additional_info": "(1909, Požarevac), borac od 10. 7. 1944. V 3/2. bagaljonu, poginuo 20. 4. 1945. kod Bosanskog Broda.",
+    "additional_info": "(1909, Požarevac), borac od 10. 7. 1944. V 3/2. bataljonu, poginuo 20. 4. 1945. kod Bosanskog Broda.",
     "birth_year": "1909",
-    "death_type": "poginuo",
     "pdf_page": 17,
     "pdf_y": 462.5,
     "pdf_x": 30.7,
@@ -3223,9 +3221,11 @@
     "birth_place": "Požarevac",
     "pdf_x_end": 308.9,
     "soldier_id": "0085000150",
+    "death_type": "poginuo",
     "death_date": "20.04.1945",
     "death_place": "Bosanski Brod",
-    "rank": "borac"
+    "rank": "borac",
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Dinić",
@@ -3284,7 +3284,7 @@
     "first_name": "Vitomir",
     "fathers_name": "",
     "full_name": "Dinić Vitomir",
-    "additional_info": "(iz s. Darkovca Crna Trava) zbog sitne krađe u s. Babičkom sgreljan 17. 5. 1944. godine naSuvoj planini.",
+    "additional_info": "(iz s. Darkovca Crna Trava) zbog sitne krađe u s. Babičkom streljan 17. 5. 1944. godine naSuvoj planini.",
     "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 17,
@@ -3307,7 +3307,8 @@
         "pdf_x_end": 123.3,
         "pdf_y_end": 156.3
       }
-    ]
+    ],
+    "death_date": "17.05.1944"
   },
   {
     "last_name": "Dinić",
@@ -4255,7 +4256,7 @@
     "first_name": "Milorad",
     "fathers_name": "",
     "full_name": "Glišić Milorad",
-    "additional_info": "(rođen na Vlasni) poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
+    "additional_info": "(rođen na Vlasini) poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
     "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 353.0,
@@ -4518,7 +4519,7 @@
     "first_name": "Velimir",
     "fathers_name": "S",
     "full_name": "Golubović S Velimir",
-    "additional_info": "(1907. Crna Trava vlasotinački) ranjen 22. 6. 1944. u borbi protiv četnika kao politički komesar Prvog bataljona. Za vreme lečenja u s. Seselcu otkriven u skloništu i sgreljan zajedno sa još nekoliko ranjenika i dvojicom bolničara.",
+    "additional_info": "(1907. Crna Trava vlasotinački) ranjen 22. 6. 1944. u borbi protiv četnika kao politički komesar Prvog bataljona. Za vreme lečenja u s. Seselcu otkriven u skloništu i streljan zajedno sa još nekoliko ranjenika i dvojicom bolničara.",
     "birth_year": "1907",
     "death_type": "poginuo",
     "pdf_page": 16,
@@ -7400,13 +7401,13 @@
     "soldier_id": "0085000353"
   },
   {
-    "last_name": "Kosmadinović",
+    "last_name": "Kostadinović",
     "middle_name": "R",
     "first_name": "Milan",
     "fathers_name": "R",
-    "full_name": "Kosmadinović R Milan",
+    "full_name": "Kostadinović R Milan",
     "additional_info": "iz Ruplje",
-    "birth_year": "",
+    "birth_year": "1923",
     "pdf_page": 8,
     "pdf_y": 72.3,
     "pdf_x": 88.2,
@@ -7414,7 +7415,37 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Ruplje",
     "pdf_x_end": 194.3,
-    "soldier_id": "0085000354"
+    "soldier_id": "0085000354",
+    "other_sources": [
+      {
+        "soldier_id": "0085000357",
+        "name": "Kostadinović R Milan",
+        "additional_info": "(1923. s. Ruplje, Crna Trava), građevinski radnik, borac od 5. 5. 1944, poginuo 1. 11. 1944. u s. Rakova kod Čačka kao komandant voda Trećeg bataljona u borbi protiv Nemaca.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 69.9,
+        "pdf_y": 498.0,
+        "pdf_x_end": 352.7,
+        "pdf_y_end": 556.4
+      },
+      {
+        "soldier_id": "9025009749",
+        "name": "Kostadinović (Ranđel) Milan",
+        "additional_info": "rođen 1922, Rajčetine (Crna Trava). Srbin, poginuo od Nemaca 1944. u NOBu, Čačak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=387",
+        "source_page": 387,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "occupation": "građevinski radnik",
+    "rank": "komandant voda",
+    "death_type": "poginuo",
+    "death_date": "01.11.1944",
+    "death_place": "Rakova, Čačak",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Kostadinović",
@@ -7454,42 +7485,6 @@
     "death_place": "u rejonu Srebrenika, u dolini r. Tinje",
     "rank": "borac",
     "unit_detail": "2. bataljon"
-  },
-  {
-    "last_name": "Kostadinović",
-    "middle_name": "R",
-    "first_name": "Milan",
-    "fathers_name": "R",
-    "full_name": "Kostadinović R Milan",
-    "additional_info": "(1923. s. Ruplje, Crna Trava), građevinski radnik, borac od 5. 5. 1944, poginuo 1. 11. 1944. u s. Rakova kod Čačka kao komandant voda Trećeg bataljona u borbi protiv Nemaca.",
-    "birth_year": "1923",
-    "death_type": "poginuo",
-    "pdf_page": 24,
-    "pdf_y": 498.0,
-    "pdf_x": 69.9,
-    "pdf_y_end": 556.4,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Ruplje, Crna Trava",
-    "pdf_x_end": 352.7,
-    "soldier_id": "0085000357",
-    "occupation": "građevinski radnik",
-    "death_date": "01.11.1944",
-    "death_place": "Rakova, Čačak",
-    "rank": "komandant voda",
-    "other_sources": [
-      {
-        "soldier_id": "9025009749",
-        "name": "Kostadinović (Ranđel) Milan",
-        "additional_info": "rođen 1922, Rajčetine (Crna Trava). Srbin, poginuo od Nemaca 1944. u NOBu, Čačak",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=387",
-        "source_page": 387,
-        "ref_book": "zrtve-rata-1964-srb"
-      }
-    ],
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "ethnicity"
-    ]
   },
   {
     "last_name": "Kostadinović",
@@ -8067,13 +8062,13 @@
     ]
   },
   {
-    "last_name": "Lenojević",
+    "last_name": "Lepojević",
     "middle_name": "R",
     "first_name": "Stojan",
     "fathers_name": "R",
-    "full_name": "Lenojević R Stojan",
+    "full_name": "Lepojević R Stojan",
     "additional_info": "iz Crvena Jabuka",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 9,
     "pdf_y": 516.6,
     "pdf_x": 41.4,
@@ -8081,7 +8076,25 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Crvena Jabuka",
     "pdf_x_end": 132.2,
-    "soldier_id": "0085000387"
+    "soldier_id": "0085000387",
+    "other_sources": [
+      {
+        "soldier_id": "0085000397",
+        "name": "Lepojević R Stojan",
+        "additional_info": "(1919, s. Crvena Jabuka - lužnički), borac od 21. 2. 1944. u 3/2. bataljonu. Kao komesar čete poginuo 10. 12. 1944. u borbama protiv Nemaca na reci Drini.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 29.8,
+        "pdf_y": 437.5,
+        "pdf_x_end": 310.0,
+        "pdf_y_end": 463.5
+      }
+    ],
+    "rank": "komesar čete",
+    "unit_detail": "2. bataljon",
+    "death_type": "poginuo",
+    "death_date": "10.12.1944",
+    "death_place": "Drina"
   },
   {
     "last_name": "Lepojević",
@@ -8277,28 +8290,6 @@
     "soldier_id": "0085000396"
   },
   {
-    "last_name": "Lepojević",
-    "middle_name": "R",
-    "first_name": "Stojan",
-    "fathers_name": "R",
-    "full_name": "Lepojević R Stojan",
-    "additional_info": "(1919, s. Crvena Jabuka - lužnički), borac od 21. 2. 1944. u 3/2. bataljonu. Kao komesar čete poginuo 10. 12. 1944. u borbama protiv Nemaca na reci Drini.",
-    "birth_year": "1919",
-    "death_type": "poginuo",
-    "pdf_page": 25,
-    "pdf_y": 437.5,
-    "pdf_x": 29.8,
-    "pdf_y_end": 463.5,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Crvena Jabuka - lužnički",
-    "pdf_x_end": 310.0,
-    "soldier_id": "0085000397",
-    "death_date": "10.12.1944",
-    "rank": "komesar čete",
-    "unit_detail": "2. bataljon",
-    "death_place": "Drina"
-  },
-  {
     "last_name": "Lidić",
     "middle_name": "Vojislava",
     "first_name": "Stanoje",
@@ -8482,9 +8473,8 @@
     "first_name": "Mika",
     "fathers_name": "J",
     "full_name": "Ljubić J Mika",
-    "additional_info": "(Crna Trava) poginuo 16. 4. 45. na Ciganištu. 248. L.UBENOVIĆ R. JOCA (1922, s. Darkovac, Crna Trava), zemljoradnik, borac od 1943. u Prvom bataljonu, poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
+    "additional_info": "(Crna Trava) poginuo 16. 4. 45. na Ciganištu.",
     "birth_year": "1922",
-    "death_type": "poginuo",
     "pdf_page": 26,
     "pdf_y": 154.5,
     "pdf_x": 75.8,
@@ -8493,6 +8483,25 @@
     "birth_place": "Crna Trava",
     "pdf_x_end": 355.5,
     "soldier_id": "0085000407",
+    "death_type": "poginuo"
+  },
+  {
+    "soldier_id": "0085009005",
+    "last_name": "Ljubenović",
+    "middle_name": "R.",
+    "first_name": "Joca",
+    "fathers_name": "R.",
+    "full_name": "Ljubenović R. Joca",
+    "additional_info": "(1922, s. Darkovac, Crna Trava), zemljoradnik, borac od 1943. u Prvom bataljonu, poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
+    "birth_year": "",
+    "pdf_file": "7-srpska.pdf",
+    "pdf_page": 26,
+    "pdf_x": 75.3,
+    "pdf_y": 163.9,
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "23.04.1944",
+    "death_place": "na Rnjosu",
     "rank": "borac"
   },
   {
@@ -8618,7 +8627,7 @@
     "first_name": "Petar",
     "fathers_name": "P",
     "full_name": "Lučenović P Petar",
-    "additional_info": "(1908, s. Krivelj «>d Bora), zemljoradnik. borac od 28. 9. 1944, nesgao 1. 5. 1945. u borbama na reci Uni.",
+    "additional_info": "(1908, s. Krivelj «>d Bora), zemljoradnik. borac od 28. 9. 1944, nestao 1. 5. 1945. u borbama na reci Uni.",
     "birth_year": "1908",
     "death_type": "poginuo",
     "pdf_page": 26,
@@ -8630,6 +8639,8 @@
     "pdf_x_end": 355.6,
     "soldier_id": "0085000414",
     "occupation": "zemljoradnik",
+    "death_date": "01.05.1945",
+    "death_place": "na reci Uni",
     "rank": "borac"
   },
   {
@@ -9071,9 +9082,8 @@
     "first_name": "Mileta",
     "fathers_name": "N",
     "full_name": "Marković N Mileta",
-    "additional_info": "(1925, s. Brđani kod Čačka), borac od 6. 11. 1944. u 1/1. bagaljonu, poginuo 2. 5. 1945. kod Bosanskog Novog.",
+    "additional_info": "(1925, s. Brđani kod Čačka), borac od 6. 11. 1944. u 1/1. bataljonu, poginuo 2. 5. 1945. kod Bosanskog Novog.",
     "birth_year": "1925",
-    "death_type": "poginuo",
     "pdf_page": 27,
     "pdf_y": 97.2,
     "pdf_x": 47.5,
@@ -9082,9 +9092,11 @@
     "birth_place": "Brđani, Čačak",
     "pdf_x_end": 327.8,
     "soldier_id": "0085000435",
+    "death_type": "poginuo",
     "death_date": "02.05.1945",
     "death_place": "Bosanski Novi",
     "rank": "borac",
+    "unit_detail": "1. bataljon",
     "other_sources": [
       {
         "soldier_id": "9025011070",
@@ -9611,11 +9623,11 @@
     "death_place": "Bosna"
   },
   {
-    "last_name": "Mihdjlović",
+    "last_name": "Mihajlović",
     "middle_name": "Đ",
     "first_name": "Stavra",
     "fathers_name": "Đ",
-    "full_name": "Mihdjlović Đ Stavra",
+    "full_name": "Mihajlović Đ Stavra",
     "additional_info": "iz Crna Trava",
     "birth_year": "",
     "pdf_page": 11,
@@ -9944,27 +9956,6 @@
   },
   {
     "last_name": "Miladinović",
-    "middle_name": "V",
-    "first_name": "Stojan",
-    "fathers_name": "V",
-    "full_name": "Miladinović V Stojan",
-    "additional_info": "zvani Tabak; (1921. Pirot), borac od 1943. u brigadi, komandir čete u Trećem bataljonu, poginuo 23. 4. 1944. na Rnjosu, u Lužnici-u borbi protiv bugarskih fašista.",
-    "birth_year": "1921",
-    "pdf_page": 27,
-    "pdf_y": 380.6,
-    "pdf_x": 48.4,
-    "pdf_y_end": 415.3,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Pirot",
-    "pdf_x_end": 329.1,
-    "soldier_id": "0085000475",
-    "death_type": "poginuo",
-    "death_date": "23.04.1944",
-    "death_place": "na Rnjosu, u Lužnici-protiv bugarskih fašista",
-    "rank": "komandir čete"
-  },
-  {
-    "last_name": "Miladinović",
     "middle_name": "M",
     "first_name": "Svetislav",
     "fathers_name": "M",
@@ -10017,13 +10008,13 @@
     "soldier_id": "0085000477"
   },
   {
-    "last_name": "Milalinović",
+    "last_name": "Miladinović",
     "middle_name": "V",
     "first_name": "Stojan",
     "fathers_name": "V",
-    "full_name": "Milalinović V Stojan",
+    "full_name": "Miladinović V Stojan",
     "additional_info": "iz Pirot",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 6,
     "pdf_y": 266.6,
     "pdf_x": 222.3,
@@ -10031,7 +10022,24 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Pirot",
     "pdf_x_end": 323.8,
-    "soldier_id": "0085000478"
+    "soldier_id": "0085000478",
+    "other_sources": [
+      {
+        "soldier_id": "0085000475",
+        "name": "Miladinović V Stojan",
+        "additional_info": "zvani Tabak; (1921. Pirot), borac od 1943. u brigadi, komandir čete u Trećem bataljonu, poginuo 23. 4. 1944. na Rnjosu, u Lužnici-u borbi protiv bugarskih fašista.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 27,
+        "pdf_x": 48.4,
+        "pdf_y": 380.6,
+        "pdf_x_end": 329.1,
+        "pdf_y_end": 415.3
+      }
+    ],
+    "rank": "komandir čete",
+    "death_type": "poginuo",
+    "death_date": "23.04.1944",
+    "death_place": "na Rnjosu, u Lužnici-protiv bugarskih fašista"
   },
   {
     "last_name": "Milanović",
@@ -13859,13 +13867,13 @@
     "soldier_id": "0085000663"
   },
   {
-    "last_name": "Oamenković",
+    "last_name": "Stamenković",
     "middle_name": "R",
     "first_name": "Stojan",
     "fathers_name": "R",
-    "full_name": "Oamenković R Stojan",
+    "full_name": "Stamenković R Stojan",
     "additional_info": "iz Crvena Jabuka",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 9,
     "pdf_y": 290.7,
     "pdf_x": 191.7,
@@ -13873,7 +13881,38 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Crvena Jabuka",
     "pdf_x_end": 294.1,
-    "soldier_id": "0085000664"
+    "soldier_id": "0085000664",
+    "other_sources": [
+      {
+        "soldier_id": "0085000895",
+        "name": "Stamenković R Stojan",
+        "additional_info": "(1919, s Crvena Jabuka, lužnički), zemljoradnik, borac od 4. 2. 1944, u Drugom bataljonu, poginuo 11. 12. 1944. na položajus. Rosuljevo u dolini reke Drine-u borbi protiv ustaša i Nemaca.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 37,
+        "pdf_x": 42.7,
+        "pdf_y": 435.1,
+        "pdf_x_end": 322.8,
+        "pdf_y_end": 469.8
+      },
+      {
+        "soldier_id": "9025001867",
+        "name": "Stamenković (Raša) Stojan",
+        "additional_info": "rođen 1919, Crvena Jabuka (Babušnica). Srbin, poginuo 1944. u NOBu, Na drini",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=50",
+        "source_page": 50,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "11.12.1944",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Na drini"
   },
   {
     "last_name": "Obradović",
@@ -14198,7 +14237,7 @@
     "first_name": "Dragutin",
     "fathers_name": "S",
     "full_name": "Pavlović S Dragutin",
-    "additional_info": "ili Prvulović; (1921. s. Boljetin kod D. Milanovca), borac od 25. 9. 1944. u 2/2. bataljonu, nesgao 30. 4. 45. u borbi protiv Nemaca i ustaša na reci Uni.",
+    "additional_info": "ili Prvulović; (1921. s. Boljetin kod D. Milanovca), borac od 25. 9. 1944. u 2/2. bataljonu, nestao 30. 4. 45. u borbi protiv Nemaca i ustaša na reci Uni.",
     "birth_year": "1921",
     "death_type": "poginuo",
     "pdf_page": 33,
@@ -15548,9 +15587,8 @@
     "first_name": "Dragić",
     "fathers_name": "M",
     "full_name": "Popović M Dragić",
-    "additional_info": "(1911, Peć), borac od 16. 11. 1944. u 3/1. bataljonu, nestao 30. 4. 1945. u borbama protivu Nemaca i ustaša na reci Uni - udavio se. 404. G10P0VIĆ D. MILUTIN (1925, s. B. Polje kod Čačka), borac od 11. 11. 1944. u 1/3. bataljonu, poginuo 16. 4. 45. na Ciganištuu prodoru prema reci Bosni i Doboju u borbi protiv Nemaca i ustaša.",
+    "additional_info": "(1911, Peć), borac od 16. 11. 1944. u 3/1. bataljonu, nestao 30. 4. 1945. u borbama protivu Nemaca i ustaša na reci Uni - udavio se.",
     "birth_year": "1911",
-    "death_type": "nestao",
     "pdf_page": 35,
     "pdf_y": 341.7,
     "pdf_x": 50.9,
@@ -15559,6 +15597,7 @@
     "birth_place": "Peć",
     "pdf_x_end": 331.1,
     "soldier_id": "0085000740",
+    "death_type": "nestao",
     "death_date": "30.04.1945",
     "rank": "borac",
     "unit_detail": "1. bataljon",
@@ -15578,6 +15617,23 @@
       "ethnicity"
     ],
     "death_place": "Una-bihać"
+  },
+  {
+    "soldier_id": "0085009006",
+    "last_name": "Popović",
+    "middle_name": "D.",
+    "first_name": "Milutin",
+    "fathers_name": "D.",
+    "full_name": "Popović D. Milutin",
+    "additional_info": "(1925, s. B. Polje kod Čačka), borac od 11. 11. 1944. u 1/3. bataljonu, poginuo 16. 4. 45. na Ciganištuu prodoru prema reci Bosni i Doboju u borbi protiv Nemaca i ustaša.",
+    "birth_year": "",
+    "pdf_file": "7-srpska.pdf",
+    "pdf_page": 35,
+    "pdf_x": 50.9,
+    "pdf_y": 368.6,
+    "death_type": "poginuo",
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Popović",
@@ -15926,28 +15982,6 @@
     "borrowed": [
       "ethnicity"
     ]
-  },
-  {
-    "last_name": "Radivojević",
-    "middle_name": "Č",
-    "first_name": "Radisav",
-    "fathers_name": "Č",
-    "full_name": "Radivojević Č Radisav",
-    "additional_info": "(1928, s. Kalna, Crna Trava), graćevinski radnik, borac od 1944, zaklan 28. 5. 1944. od četnika na Oruglici - Gornja Jablanica.",
-    "birth_year": "1928",
-    "death_type": "poginuo",
-    "pdf_page": 35,
-    "pdf_y": 431.7,
-    "pdf_x": 50.9,
-    "pdf_y_end": 457.3,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Kalna, Crna Trava",
-    "pdf_x_end": 331.4,
-    "soldier_id": "0085000759",
-    "death_date": "28.05.1944",
-    "rank": "borac",
-    "death_place": "Oruglica, Gornja Jablanica",
-    "occupation": "građevinski radnik"
   },
   {
     "last_name": "Radivojević",
@@ -16997,13 +17031,13 @@
     "soldier_id": "0085000812"
   },
   {
-    "last_name": "Ralivojević",
+    "last_name": "Radivojević",
     "middle_name": "Č",
     "first_name": "Radisav",
     "fathers_name": "Č",
-    "full_name": "Ralivojević Č Radisav",
+    "full_name": "Radivojević Č Radisav",
     "additional_info": "iz Kalna",
-    "birth_year": "",
+    "birth_year": "1928",
     "pdf_page": 5,
     "pdf_y": 90.0,
     "pdf_x": 46.0,
@@ -17011,7 +17045,25 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Kalna",
     "pdf_x_end": 151.9,
-    "soldier_id": "0085000813"
+    "soldier_id": "0085000813",
+    "other_sources": [
+      {
+        "soldier_id": "0085000759",
+        "name": "Radivojević Č Radisav",
+        "additional_info": "(1928, s. Kalna, Crna Trava), graćevinski radnik, borac od 1944, zaklan 28. 5. 1944. od četnika na Oruglici - Gornja Jablanica.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 50.9,
+        "pdf_y": 431.7,
+        "pdf_x_end": 331.4,
+        "pdf_y_end": 457.3
+      }
+    ],
+    "occupation": "građevinski radnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "28.05.1944",
+    "death_place": "Oruglica, Gornja Jablanica"
   },
   {
     "last_name": "Ranćelović",
@@ -18596,43 +18648,6 @@
     "birth_place": "Crvena Jabuka",
     "pdf_x_end": 298.7,
     "soldier_id": "0085000894"
-  },
-  {
-    "last_name": "Stamenković",
-    "middle_name": "R",
-    "first_name": "Stojan",
-    "fathers_name": "R",
-    "full_name": "Stamenković R Stojan",
-    "additional_info": "(1919, s Crvena Jabuka, lužnički), zemljoradnik, borac od 4. 2. 1944, u Drugom bataljonu, poginuo 11. 12. 1944. na položajus. Rosuljevo u dolini reke Drine-u borbi protiv ustaša i Nemaca.",
-    "birth_year": "1919",
-    "death_type": "poginuo",
-    "pdf_page": 37,
-    "pdf_y": 435.1,
-    "pdf_x": 42.7,
-    "pdf_y_end": 469.8,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Crvena Jabuka",
-    "pdf_x_end": 322.8,
-    "soldier_id": "0085000895",
-    "occupation": "zemljoradnik",
-    "death_date": "11.12.1944",
-    "rank": "borac",
-    "other_sources": [
-      {
-        "soldier_id": "9025001867",
-        "name": "Stamenković (Raša) Stojan",
-        "additional_info": "rođen 1919, Crvena Jabuka (Babušnica). Srbin, poginuo 1944. u NOBu, Na drini",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=50",
-        "source_page": 50,
-        "ref_book": "zrtve-rata-1964-srb"
-      }
-    ],
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "death_place",
-      "ethnicity"
-    ],
-    "death_place": "Na drini"
   },
   {
     "last_name": "Stamenković",
@@ -22636,13 +22651,13 @@
     "rank": "borac"
   },
   {
-    "last_name": "Vidaiović",
+    "last_name": "Vidanović",
     "middle_name": "M",
     "first_name": "Vitomir",
     "fathers_name": "M",
-    "full_name": "Vidaiović M Vitomir",
+    "full_name": "Vidanović M Vitomir",
     "additional_info": "iz Kijevac",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 5,
     "pdf_y": 318.5,
     "pdf_x": 46.0,
@@ -22650,7 +22665,37 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Kijevac",
     "pdf_x_end": 145.1,
-    "soldier_id": "0085001101"
+    "soldier_id": "0085001101",
+    "other_sources": [
+      {
+        "soldier_id": "0085001107",
+        "name": "Vidanović M Vitomir",
+        "additional_info": "(1925. u s. Kijevcu, lužnički), građevinski radnik, borac od 1943, poginuo 10. 5. 1944. na Golubinjku u borbi protiv bugarskih fašista - policije.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 30.8,
+        "pdf_y": 210.4,
+        "pdf_x_end": 306.7,
+        "pdf_y_end": 236.2
+      },
+      {
+        "soldier_id": "9025001941",
+        "name": "Vidanović (Mihailo) Vitomir",
+        "additional_info": "rođen 1925, Kijevac (Babušnica). Srbin, poginuo 1944. u NOBu, Talambas",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=52",
+        "source_page": 52,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "occupation": "građevinski radnik",
+    "rank": "borac",
+    "death_type": "poginuo",
+    "death_date": "10.05.1944",
+    "death_place": "na Golubinjku",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vidajić",
@@ -22738,42 +22783,6 @@
     "soldier_id": "0085001106",
     "death_type": "poginuo",
     "death_date": "23.03.1945"
-  },
-  {
-    "last_name": "Vidanović",
-    "middle_name": "M",
-    "first_name": "Vitomir",
-    "fathers_name": "M",
-    "full_name": "Vidanović M Vitomir",
-    "additional_info": "(1925. u s. Kijevcu, lužnički), građevinski radnik, borac od 1943, poginuo 10. 5. 1944. na Golubinjku u borbi protiv bugarskih fašista - policije.",
-    "birth_year": "1925",
-    "death_type": "poginuo",
-    "pdf_page": 15,
-    "pdf_y": 210.4,
-    "pdf_x": 30.8,
-    "pdf_y_end": 236.2,
-    "pdf_file": "7-srpska.pdf",
-    "birth_place": "Kijevac",
-    "pdf_x_end": 306.7,
-    "soldier_id": "0085001107",
-    "occupation": "građevinski radnik",
-    "death_date": "10.05.1944",
-    "death_place": "na Golubinjku",
-    "rank": "borac",
-    "other_sources": [
-      {
-        "soldier_id": "9025001941",
-        "name": "Vidanović (Mihailo) Vitomir",
-        "additional_info": "rođen 1925, Kijevac (Babušnica). Srbin, poginuo 1944. u NOBu, Talambas",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=52",
-        "source_page": 52,
-        "ref_book": "zrtve-rata-1964-srb"
-      }
-    ],
-    "ethnicity": "Srbin",
-    "borrowed": [
-      "ethnicity"
-    ]
   },
   {
     "last_name": "Vidanović",

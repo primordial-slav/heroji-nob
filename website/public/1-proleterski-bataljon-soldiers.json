@@ -1675,7 +1675,7 @@
       {
         "soldier_id": "0006000770",
         "name": "Bubica Ante Mladen",
-        "additional_info": "1922. Luka, Zadar. Pofinuo 20.1. 1943. kod Novog Sela na Žumberu, sahranjen u Gravcu.",
+        "additional_info": "1922. Luka, Zadar. Poginuo 20.1. 1943. kod Novog Sela na Žumberu, sahranjen u Gravcu.",
         "pdf_file": "13-proleterska-spisak.pdf",
         "pdf_page": 14,
         "pdf_x": 108.9,
@@ -1688,7 +1688,15 @@
     "ethnicity": "Hrvat",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "20.01.1943",
+          "place": "kod Novog Sela na Žumberu"
+        }
+      ]
+    }
   },
   {
     "last_name": "Buca",
@@ -5600,17 +5608,39 @@
     "birth_place": "Grižane, Crikvenica"
   },
   {
-    "last_name": "Maljeković",
+    "last_name": "Maljković",
     "middle_name": "Đure",
     "first_name": "Dušan",
     "fathers_name": "Đuro",
-    "full_name": "Maljeković Đure Dušan",
+    "full_name": "Maljković Đure Dušan",
     "additional_info": "1916, Vodoteč, Otočac.",
     "birth_year": "1916",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=293",
     "source_page": 269,
     "soldier_id": "0120000215",
-    "birth_place": "Vodoteč, Otočac"
+    "birth_place": "Vodoteč, Otočac",
+    "other_sources": [
+      {
+        "soldier_id": "9064010582",
+        "name": "Maljković Dure Dušan",
+        "additional_info": "Preživjeli borci i aktivni učesnici NOP, Gornji Kraj: Maljković Dure Dušan, rođen 1916. godine u Vodoteču, stupio u NOB 1942. godine, komandant bataljona u NOV.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=480",
+        "source_page": 476,
+        "ref_book": "otocac-brinje"
+      },
+      {
+        "soldier_id": "0006003659",
+        "name": "Maljković Đure Dušan",
+        "additional_info": "1916. Vodoteč, Brinje.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 51,
+        "pdf_x": 126.6,
+        "pdf_y": 404.9,
+        "pdf_x_end": 298.5,
+        "pdf_y_end": 421.2,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Maljković",
@@ -6045,7 +6075,21 @@
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=294",
     "source_page": 270,
     "soldier_id": "0120000232",
-    "birth_place": "Rijeka"
+    "birth_place": "Rijeka",
+    "other_sources": [
+      {
+        "soldier_id": "0006003701",
+        "name": "Marčelja Andrije Josip",
+        "additional_info": "1915. Rijeka.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 51,
+        "pdf_x": 311.2,
+        "pdf_y": 428.3,
+        "pdf_x_end": 458.0,
+        "pdf_y_end": 436.8,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marčić",
@@ -6877,6 +6921,18 @@
     "death_place": "u Tušiloviću (Kordun)",
     "other_sources": [
       {
+        "soldier_id": "0003000831",
+        "name": "Ognjenović Steve Jovo",
+        "additional_info": "rođen 1924. u s. Grabušić. Borac 4. bataljona. Poginuo u Tušiloviću (Kordun) 24. 10. 1942. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 31,
+        "pdf_x": 114.5,
+        "pdf_y": 411.7,
+        "pdf_x_end": 473.3,
+        "pdf_y_end": 429.1,
+        "unit_file": "druga-licka-soldiers.json"
+      },
+      {
         "soldier_id": "0003021434",
         "name": "Ognjenović Steve Jovo",
         "additional_info": "rođen u Grabušiću - T. Korenica. U NOB-1942. Borac brigade. Poginuo u Tušiloviću (Kordun) 24. 10. 1942. godine.",
@@ -7005,17 +7061,31 @@
     "birth_place": "Ledenice, Crikvenica"
   },
   {
-    "last_name": "Padan",
+    "last_name": "Pađen",
     "middle_name": "Mile",
     "first_name": "Zdravko",
     "fathers_name": "Mile",
-    "full_name": "Padan Mile Zdravko",
+    "full_name": "Pađen Mile Zdravko",
     "additional_info": "1922, Ledenice, Crikvenica.",
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=295",
     "source_page": 271,
     "soldier_id": "0120000277",
-    "birth_place": "Ledenice, Crikvenica"
+    "birth_place": "Ledenice, Crikvenica",
+    "other_sources": [
+      {
+        "soldier_id": "0006004920",
+        "name": "Pađen Milana Zdravko",
+        "additional_info": "1922. Ledenice, Crikvenica.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 68,
+        "pdf_x": 122.7,
+        "pdf_y": 523.9,
+        "pdf_x_end": 292.3,
+        "pdf_y_end": 540.2,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pajić",
@@ -8991,6 +9061,18 @@
         "pdf_x_end": 440.0,
         "pdf_y_end": 462.9,
         "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007100683",
+        "name": "Sladojev Blaža Tomislav",
+        "additional_info": "borac 1. čete 2. bataljona, rođen 1921 Vodice, Šibenik, zemljoradnik, Hrvat' u NOB od 1941, član SKOJ-a od 1940, član KPJ od 1942, zarobljen na Zelengori i odveden u logor u Nemačkoj, gde je dočekao kraj rata.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 70,
+        "pdf_x": 7.4,
+        "pdf_y": 26.2,
+        "pdf_x_end": 173.2,
+        "pdf_y_end": 98.8,
+        "unit_file": "2-dalmatinska-soldiers.json"
       }
     ],
     "birth_date": "14.08.1921"
@@ -9604,17 +9686,31 @@
     ]
   },
   {
-    "last_name": "Taubuk",
+    "last_name": "Tarbuk",
     "middle_name": "Petra",
     "first_name": "Ljuban",
     "fathers_name": "Petar",
-    "full_name": "Taubuk Petra Ljuban",
+    "full_name": "Tarbuk Petra Ljuban",
     "additional_info": "1917, Pecka, Vrginmost.",
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=299",
     "source_page": 275,
     "soldier_id": "0120000371",
-    "birth_place": "Pecka, Vrginmost"
+    "birth_place": "Pecka, Vrginmost",
+    "other_sources": [
+      {
+        "soldier_id": "0006006918",
+        "name": "Tarbuk Petra Ljuban",
+        "additional_info": "1917. Pecka, Vrginmost.",
+        "pdf_file": "13-proleterska-spisak.pdf",
+        "pdf_page": 95,
+        "pdf_x": 125.6,
+        "pdf_y": 450.8,
+        "pdf_x_end": 297.1,
+        "pdf_y_end": 467.2,
+        "unit_file": "13-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tepšić",
@@ -9966,17 +10062,52 @@
     ]
   },
   {
-    "last_name": "Tomjenović",
+    "last_name": "Tomljenović",
     "middle_name": "Jure",
     "first_name": "Tomo",
     "fathers_name": "Jure",
-    "full_name": "Tomjenović Jure Tomo",
+    "full_name": "Tomljenović Jure Tomo",
     "additional_info": "1924, Smiljan, Gospić.",
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=299",
     "source_page": 275,
     "soldier_id": "0120000385",
-    "birth_place": "Smiljan, Gospić"
+    "birth_place": "Smiljan, Gospić",
+    "other_sources": [
+      {
+        "soldier_id": "9007001906",
+        "name": "Tomljenović Jure Tomo",
+        "additional_info": "Nosioci partizanske spomenice 1941. godine, općina Smiljan: 1924, seljak, Hrvat.",
+        "pdf_file": "hak-20-gospic-perusic.pdf",
+        "pdf_page": 74,
+        "pdf_x": 52.3,
+        "pdf_y": 490.2,
+        "pdf_x_end": 277.1,
+        "pdf_y_end": 498.7,
+        "ref_book": "hak-20-gospic-perusic"
+      },
+      {
+        "soldier_id": "0002008862",
+        "name": "Tomljenović Jurin Tomo",
+        "additional_info": "zvani Bikan; 1923, Smiljan, Gospić, đak, u NOB od 1941, zamjenik komesara čete i rukovodilac SKOJ-a u 4. bataljonu",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 884,
+        "pdf_x": 138.2,
+        "pdf_y": 451.3,
+        "pdf_x_end": 473.4,
+        "pdf_y_end": 470.9,
+        "unit_file": "soldiers.json"
+      }
+    ],
+    "occupation": "đak",
+    "borrowed": [
+      "occupation"
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Tonković",
@@ -11093,12 +11224,12 @@
     "birth_place": "Šibenik"
   },
   {
-    "last_name": "Zj",
+    "last_name": "Zjaca",
     "middle_name": "",
-    "first_name": "Aca",
+    "first_name": "Dušan",
     "fathers_name": "",
-    "full_name": "Zj Aca",
-    "additional_info": "zvani Dušan; ",
+    "full_name": "Zjaca Dušan",
+    "additional_info": "",
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=301",
     "source_page": 277,
@@ -11564,6 +11695,18 @@
         "pdf_x_end": 371.9,
         "pdf_y_end": 201.8,
         "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "0003000222",
+        "name": "Čortan Jovana Dušan",
+        "additional_info": "rođen 1923. u s. Debelo Brdo-T. Korenica. Komandir odeljenja u 1. bataljonu. Poginuo u koloni ranjenika na Zelengori 1943. godine",
+        "pdf_file": "druga-licka-spisak.pdf",
+        "pdf_page": 9,
+        "pdf_x": 122.3,
+        "pdf_y": 351.0,
+        "pdf_x_end": 481.3,
+        "pdf_y_end": 368.4,
+        "unit_file": "druga-licka-soldiers.json"
       },
       {
         "soldier_id": "0003022629",

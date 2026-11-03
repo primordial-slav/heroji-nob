@@ -43648,9 +43648,23 @@
     "party": "SKOJ 1943",
     "birth_year": "1923",
     "borrowed": [
-      "birth_year"
+      "birth_year",
+      "ethnicity"
     ],
+    "ethnicity": "Hrvat",
     "other_sources": [
+      {
+        "soldier_id": "0007003426",
+        "name": "Milas Ante Ivan",
+        "additional_info": "5. 6. 1923. Zmijavci, Imotski. Hrvat, zemljoradnik. Član SKOJ-a od 15. 3. 1943. U NOV od 1943. u Imotskom PO i 4. splitskoj brigadi. U 2. dalm. od travnja 1945.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 116,
+        "pdf_x": 122.5,
+        "pdf_y": 445.5,
+        "pdf_x_end": 447.0,
+        "pdf_y_end": 469.0,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
       {
         "soldier_id": "0053001928",
         "name": "Milas Ante Ivan",
@@ -43664,7 +43678,7 @@
         "unit_file": "11-dalmatinska-soldiers.json"
       }
     ],
-    "birth_date": "29.06.1923"
+    "birth_date": "05.06.1923"
   },
   {
     "last_name": "Milas",
@@ -43846,7 +43860,6 @@
     "fathers_name": "Luka",
     "full_name": "Mileta Luke Boško",
     "additional_info": ".. , Siverić, Drniš, 4. bat, komesar bataljona, oficir OZN-e brigade",
-    "birth_year": "",
     "soldier_id": "0008002036",
     "pdf_page": 56,
     "pdf_y": 320.0,
@@ -43856,7 +43869,45 @@
     "birth_place": "Siverić, Drniš",
     "rank": "komesar bataljona",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 366.0
+    "pdf_x_end": 366.0,
+    "birth_year": "1911",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "party"
+    ],
+    "ethnicity": "Srbin",
+    "death_type": "umro",
+    "death_place": "Split",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0036100763",
+        "name": "Mileta Luke Boško",
+        "additional_info": "politički komesar čete u 1. bataljonu, rođen 1911, Siverić, Drniš, rudarski tehničar, Srbin, u NOB od 1941. godine, član KPJ. Umro posle rata u Splitu.",
+        "pdf_file": "borci-sutjeske-1-dalmatinska.pdf",
+        "pdf_page": 40,
+        "pdf_x": 4.9,
+        "pdf_y": 561.4,
+        "pdf_x_end": 172.5,
+        "pdf_y_end": 581.2,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036011364",
+        "name": "Mileta Boško",
+        "additional_info": "Politički komesar čete, 1. bataljon.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 1,
+        "pdf_x": 209.0,
+        "pdf_y": 453.39,
+        "pdf_x_end": 290.9,
+        "pdf_y_end": 463.4,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mileta-Katič",
@@ -63263,6 +63314,18 @@
         "pdf_y": 374.4,
         "pdf_x_end": 247.1,
         "pdf_y_end": 384.4,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007101434",
+        "name": "Vuletić Petra Bruno",
+        "additional_info": "komandant 3. bataljona, rođen 1924, Sinj, dak, Hrvat, u NOB od 1941, član SKOJ-a od septembra 1941, član KPJ od marta 1942. godine, krajem rata komandant 4. splitske brigade.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 82,
+        "pdf_x": 6.7,
+        "pdf_y": 29.2,
+        "pdf_x_end": 177.0,
+        "pdf_y_end": 91.2,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
     ],

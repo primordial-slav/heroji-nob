@@ -157,19 +157,19 @@ SPLITS_2026_10_31 = {
 # sentence's end, read from the record and the page; python scripts/split_glued_entries.py --batch=2026-11-02 --range=LO-HI [--write]
 SPLITS_2026_11_02 = {
     'prva-proleterska-soldiers.json': {
-        '0001500154': [('BLAGOJEVIĆ— MIĆIĆ Vidoja MILIJANA', 'Blagojević-Mićić', 'Vidoja', 'Vidoje', 'Milijana', '')],
+        '0001500154': [('BLAGOJEVIĆ—MIĆIĆ Vidoja MILIJANA', 'Blagojević-Mićić', 'Vidoja', 'Vidoje', 'Milijana', '')],
         '0001500163': [('BOGDANOVIĆ DRAGUHIN', 'Bogdanović', '', '', 'Dragutin', '')],
         '0001400963': [('ĆERIĆ M. MILE', 'Ćerić', 'M.', 'M.', 'Mile', '')],
         '0001500333': [('DIMITRIJEVIĆ TODOR', 'Dimitrijević', '', '', 'Todor', '')],
         '0001600008': [('15.. ĐUROVIC MILAN ŠABAN', 'Đurović', '', '', 'Milan', 'Šaban')],
         '0001502741': [('ĐUROVIĆ MITRA RADOVAN', 'Đurović', 'Mitra', 'Mitar', 'Radovan', '')],
-        '0001500434': [('f ILOŠEVIĆ ZDENKO', 'Filošević', '', '', 'Zdenko', '')],
+        '0001500434': [('fILOŠEVIĆ ZDENKO', 'Filošević', '', '', 'Zdenko', '')],
         '0001500656': [('JAŠIĆ ŽIVORAD', 'Jašić', '', '', 'Živorad', '')],
         '0001500752': [('JOVANOVIĆ VASA JOVAN', 'Jovanović', 'Vasa', 'Vasa', 'Jovan', '')],
         '0001500812': [('JOVOVIĆ MILAN', 'Jovović', '', '', 'Milan', '')],
-        '0001500976': [('KRILIĆ— MARINOVIĆ Mije MANDA', 'Krilić-Marinović', 'Mije', 'Mijo', 'Manda', '')],
-        '0001501126': [('LOVRETA— JAKIĆ Marjana DANICA', 'Lovreta-Jakić', 'Marjana', 'Marjan', 'Danica', '')],
-        '0001300999': [('MILp NKOVIĆ DRAGOSLAV', 'Milenković', '', '', 'Dragoslav', '')],
+        '0001500976': [('KRILIĆ—MARINOVIĆ Mije MANDA', 'Krilić-Marinović', 'Mije', 'Mijo', 'Manda', '')],
+        '0001501126': [('LOVRETA—JAKIĆ Marjana DANICA', 'Lovreta-Jakić', 'Marjana', 'Marjan', 'Danica', '')],
+        '0001300999': [('MILpNKOVIĆ DRAGOSLAV', 'Milenković', '', '', 'Dragoslav', '')],
         '0001501472': [('MIRKOVIĆ BAJA VOJIN', 'Mirković', 'Baja', 'Baja', 'Vojin', '')],
         '0001501597': [('NIKOLIĆ RADOMIR', 'Nikolić', '', '', 'Radomir', '')],
         '0001502078': [('SAVIĆ-PERUNIČIĆ MILA', 'Savić-Peruničić', '', '', 'Mila', '')],
@@ -177,16 +177,16 @@ SPLITS_2026_11_02 = {
         '0001300628': [('KA.ČIĆ Rudolfa IVAN', 'Kačić', 'Rudolfa', 'Rudolf', 'Ivan', '')],
         '0001400345': [('KARDUN S. JOZO', 'Kardun', 'S.', 'S.', 'Jozo', '')],
         '0001500208': [('BRAJ1IĆ ŠPIRE ANTE', 'Brajlić', 'Špire', 'Špiro', 'Ante', '')],
-        '0001501018': [('KULIĆ— SINKO Rista RADOJKA', 'Kulić-Sinko', 'Rista', 'Risto', 'Radojka', '')],
+        '0001501018': [('KULIĆ—SINKO Rista RADOJKA', 'Kulić-Sinko', 'Rista', 'Risto', 'Radojka', '')],
         '0001501887': [('Š ŠAK MARKO', 'Šišak', '', '', 'Marko', '')],
-        '0001502795': [('ŠEVIĆ— ERCEG Ivana MARIJA', 'Šević-Erceg', 'Ivana', 'Ivan', 'Marija', '')],
+        '0001502795': [('ŠEVIĆ—ERCEG Ivana MARIJA', 'Šević-Erceg', 'Ivana', 'Ivan', 'Marija', '')],
     },
-    '2-dalmatinska-soldiers.json': {'0007100468': [('j ULIĆ Srđana MILE', 'Julić', 'Srđana', 'Srđan', 'Mile', '')]},
+    '2-dalmatinska-soldiers.json': {'0007100468': [('jULIĆ Srđana MILE', 'Julić', 'Srđana', 'Srđan', 'Mile', '')]},
     '3-krajiska-proleterska-soldiers.json': {
-        '0010202467': [('LATINO ViC- PERKOVI C Sime MILKA', 'Latinović-Perković', 'Sime', 'Simo', 'Milka', '')],
-        '0010202056': [('KERKEZ - DE JANO VIĆ Nikole MILKA', 'Kerkez-Dejanović', 'Nikole', 'Nikola', 'Milka', '')],
+        '0010202467': [('LATINO ViC-PERKOVI C Sime MILKA', 'Latinović-Perković', 'Sime', 'Simo', 'Milka', '')],
+        '0010202056': [('KERKEZ -DE JANO VIĆ Nikole MILKA', 'Kerkez-Dejanović', 'Nikole', 'Nikola', 'Milka', '')],
         '0010202221': [('KOSPIĆ Luke SMILJA', 'Kospić', 'Luke', 'Luka', 'Smilja', '')],
-        '0010202213': [('KORDIĆ—( BUKVIC Blagoje ANĐA', 'Kordić-Bukvić', 'Blagoje', 'Blagoje', 'Anđa', '')],
+        '0010202213': [('KORDIĆ—(BUKVIC Blagoje ANĐA', 'Kordić-Bukvić', 'Blagoje', 'Blagoje', 'Anđa', '')],
         '0010203458': [('NINIĆ Jose ANTE', 'Ninić', 'Jose', 'Joso', 'Ante', '')],
         '0010204102': [('R AD OSA VL JEVIĆ R. BOZIDAR', 'Radosavljević', 'R.', 'R.', 'Božidar', '')],
     },
@@ -194,7 +194,7 @@ SPLITS_2026_11_02 = {
         '0016000419': [('CICVAR A I. IVO', 'Cicvara', 'I.', 'I.', 'Ivo', '')],
         '0016003149': [('VLAISAVLJEVI C M. SAVO', 'Vlaisavljević', 'M.', 'M.', 'Savo', '')],
     },
-    '4-srpska-soldiers.json': {'0021000566': [('I [ VNTANOVIĆ Dragoljuba ALEKSANDAR', 'Cvetanović', 'Dragoljuba', 'Dragoljub', 'Aleksandar', '')]},
+    '4-srpska-soldiers.json': {'0021000566': [('I [VNTANOVIĆ Dragoljuba ALEKSANDAR', 'Cvetanović', 'Dragoljuba', 'Dragoljub', 'Aleksandar', '')]},
     '7-crnogorska-soldiers.json': {
         '0028010090': [('GOJ1UBOVIĆ Boškov MARKO', 'Golubović', 'Boškov', 'Boško', 'Marko', '')],
         '0028010305': [('1TOPOVIĆ Radev ĐORĐIJE', 'Popović', 'Radev', 'Rade', 'Đorđije', '')],
@@ -209,7 +209,7 @@ SPLITS_2026_11_02 = {
         '0036019010': [('STANICIĆ Nikole MATE', 'Staničić', 'Nikole', 'Nikola', 'Mate', '')],
         '0036011845': [('1889a. Sarić Ivan', 'Sarić', '', '', 'Ivan', '')],
     },
-    '8-crnogorska-soldiers.json': {'0038000365': [('MI/\\ UTINOVIK Jagoša SAVO', 'Milutinović', 'Jagoša', 'Jagoš', 'Savo', '')]},
+    '8-crnogorska-soldiers.json': {'0038000365': [('MI/\\UTINOVIK Jagoša SAVO', 'Milutinović', 'Jagoša', 'Jagoš', 'Savo', '')]},
     '4-proleterska-soldiers.json': {'0040012067': [('31- ZEKOVIĆ. Tomov VASO', 'Zeković', 'Tomov', 'Tomo', 'Vaso', '')]},
     '6-istocnobosanska-soldiers.json': {
         '0042010012': [('Branković Slobodan', 'Branković', '', '', 'Slobodan', '')],
@@ -269,13 +269,13 @@ SPLITS_2026_11_02 = {
     '10-srpska-soldiers.json': {
         '0088000032': [('CVETANOVIĆ Alekse STANKO', 'Cvetanović', 'Alekse', 'Aleksa', 'Stanko', '')],
         '0088000076': [('d ILIĆ Milana NOVICA', 'Ilić', 'Milana', 'Milan', 'Novica', '')],
-        '0088000111': [('1 SOSTIĆ Ranđela VIDEN', 'Kostić', 'Ranđela', 'Ranđel', 'Viden', '')],
+        '0088000111': [('1SOSTIĆ Ranđela VIDEN', 'Kostić', 'Ranđela', 'Ranđel', 'Viden', '')],
         '0088000130': [('S MANIĆ Vukadina STANKO', 'Manić', 'Vukadina', 'Vukadin', 'Stanko', '')],
         '0088000190': [('L1.LAPKNOVIĆ STANKO', 'Mladenović', '', '', 'Stanko', '')],
     },
     '23-srpska-soldiers.json': {
         '0089000097': [('JAnUNIJNR Ilije MILEVA', 'Japundžić', 'Ilije', 'Ilija', 'Mileva', '')],
-        '0089000144': [('Jj EOŽAKOVIN Božidara ŽIVOTA', 'Kožaković', 'Božidara', 'Božidar', 'Života', '')],
+        '0089000144': [('JjEOŽAKOVIN Božidara ŽIVOTA', 'Kožaković', 'Božidara', 'Božidar', 'Života', '')],
         '0089000255': [('NVdEAzKOVIK BORIVOJE', 'Nedeljković', '', '', 'Borivoje', '')],
         '0089000347': [('CnACNR Božidara DUŠAN', 'Spasić', 'Božidara', 'Božidar', 'Dušan', '')],
     },
@@ -284,7 +284,7 @@ SPLITS_2026_11_02 = {
         '0095000079': [('Car Milan', 'Car', '', '', 'Milan', '')],
         '0095000082': [('Cetinski Ivan', 'Cetinski', '', '', 'Ivan', '')],
     },
-    '6-dalmatinska-soldiers.json': {'0103000153': [('KR1VIC FILIP', 'Krivić', '', '', 'Filip', '')]},
+    '6-dalmatinska-soldiers.json': {'0103000153': [('KR1VIC FILIP', 'Krivić', '', '', 'Filip', ''), ('KRIV1C F. FILIP', 'Krivić', 'F.', 'F.', 'Filip', '')]},
     'osjecka-soldiers.json': {
         '0104000016': [('ALEKSIC rođena LEKŠAN KATA', 'Aleksić', '', '', 'Kata', 'rođ. Lekšan')],
         '0104001049': [('MISANUK MIJO', 'Misanuk', '', '', 'Mijo', '')],
@@ -307,7 +307,7 @@ SPLITS_2026_11_02 = {
     '5-srpska-soldiers.json': {
         '0127000123': [('TA4HR Milorada MILETA', 'Tačić', 'Milorada', 'Milorad', 'Mileta', '')],
         '0127000281': [('KY3MAH0BHR STEVAN', 'Kuzmanović', '', '', 'Stevan', '')],
-        '0127000838': [('BY4KOBHR Tome BOŽIDAR', 'Vučković', 'Tome', 'Toma', 'Božidar', ''), ('BY4KOBHR BLAGOJE', 'Vučković', '', '', 'Blagoje', '')],
+        '0127000838': [('BY4KOBHR BLAGOJE', 'Vučković', '', '', 'Blagoje', ''), ('BY4KOBHR Tome BOŽIDAR', 'Vučković', 'Tome', 'Toma', 'Božidar', '')],
         '0127000849': [('B0KOVIB ALEKSANDAR', 'Đoković', '', '', 'Aleksandar', '')],
     },
     '18-srpska-soldiers.json': {
@@ -327,10 +327,14 @@ SPLITS_2026_11_02 = {
     '42-vazduhoplovna-soldiers.json': {'0140001140': [('BABIĆ N. DUŠAN', 'Babić', 'N.', 'N.', 'Dušan', '')]},
     'mosorski-odred-soldiers.json': {
         '0148000095': [('ARMAND A Jure MARKO', 'Armanda', 'Jure', 'Jure', 'Marko', '')],
-        '0148003314': [('d UKIC Petra LOVRE', 'Đukić', 'Petra', 'Petar', 'Lovre', '')],
+        '0148003314': [('dUKIC Petra LOVRE', 'Đukić', 'Petra', 'Petar', 'Lovre', '')],
     },
 }
 # a man's heading at the end of another's text, whose own record stands already: the host's text is only cut there
+SPLITS_2026_11_02.setdefault('21-slavonska-soldiers.json', {})['0034000904'] = [('Stojčević Milka', 'Stojčević', '', '', 'Milka', ''), ('Stojčig. Milan', 'Stojčić', 'G.', 'G.', 'Milan', '')]
+SPLITS_2026_11_02.setdefault('8-crnogorska-soldiers.json', {})['0038000622'] = [('VIŽNITIN IvadaSAVO', 'Vižnitin', 'Ivada', 'Ivan', 'Savo', '')]
+SPLITS_2026_11_02.setdefault('22-srpska-soldiers.json', {})['0074001298'] = [('jUNIĆ ZORICA', 'Žunić', '', '', 'Zorica', '')]
+SPLITS_2026_11_02.setdefault('osjecka-soldiers.json', {})['0104001049'] = [('MISANUK MIJO', 'Mišanuk', '', '', 'Mijo', '')]
 CUT_2026_11_02 = {'0001400252': 'GRUBIĆIŠ Ante LJUBO', '0001400706': 'POPOVIĆ Milivoja MAR', '0001400813': 'SLADOLJEV Ante KAR', '0103000151': 'KOVACEVIC F. VJEKO',
                   '0060002000': 'SA VIC Nikole SAVO', '0126001199': 'BOKOVIĆ. Živorada SLAVKO', '0128003566': 'ADULOVIE DRAGUTIN', '0001400236': 'GRLIĆ J. ANKA'}
 # what a heading's own words leave in the man's text: the name's rest up to the bio
@@ -462,7 +466,7 @@ def main():
                 pos.append(i)
             new.append({'action': 'edit', 'soldier_id': hid, 'fields': {'additional_info': cleaned(info[:pos[0]])},
                         'reason': f"{host.get('full_name') or host.get('name')}: the next entries were glued into its text; {reason}"})
-            after = (host['pdf_page'], host['pdf_x'], host['pdf_y'], 'host')
+            after = (host['pdf_page'], host['pdf_x'], host['pdf_y'], 'host') if host.get('pdf_file') else None    # a list on a web page has no place on a page
             # the glued men take ids in the host's list's block, from 9001 (0053000195 -> 0053009001-)
             block = int(hid[4:]) // 10000 * 10000
             for k, (heading, last, fgen, fnom, given, nick) in enumerate(men):
@@ -471,11 +475,15 @@ def main():
                 if heading == 'STIMEC FRANJO':
                     body = re.sub(r'^Matije,\s*', '', body)
                 if nick:
-                    body = f'zvani {nick}; {body}'
-                order, x, y = find(host, heading, after, body)
-                after = order
-                rec = {'last_name': last, 'middle_name': fgen, 'fathers_name': fnom, 'first_name': given,
-                       'additional_info': body, 'pdf_file': host['pdf_file'], 'pdf_page': order[0], 'pdf_x': x, 'pdf_y': y}
+                    body = f'{nick}; {body}' if nick.startswith('rođ.') else f'zvani {nick}; {body}'
+                rec = {'last_name': last, 'middle_name': fgen, 'fathers_name': fnom, 'first_name': given, 'additional_info': body}
+                if host.get('pdf_file'):
+                    order, x, y = find(host, heading, after, body)
+                    after = order
+                    rec.update(pdf_file=host['pdf_file'], pdf_page=order[0], pdf_x=x, pdf_y=y)
+                else:
+                    order, x, y = (0,), 0, 0
+                    rec.update({k: host[k] for k in ('source_url', 'source_page') if host.get(k)})
                 seq = block + 9001
                 while f'{code}{seq:06d}' in used:
                     seq += 1

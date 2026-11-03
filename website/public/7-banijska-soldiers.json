@@ -1695,9 +1695,9 @@
   {
     "last_name": "Bamburać",
     "middle_name": "Mirka",
-    "first_name": "Ueposava",
+    "first_name": "Ljeposava",
     "fathers_name": "Mirko",
-    "full_name": "Bamburać Mirka Ueposava",
+    "full_name": "Bamburać Mirka Ljeposava",
     "additional_info": "borac 2. bataljona, rođena 1926, Vukoševac, Sisak, domaćica, Srpkinja, u NOB od 1942, poginula u kanjonu Pive, kod Čokove Luke, 7. juna 1943.",
     "birth_year": "1926",
     "pdf_page": 3,
@@ -1725,6 +1725,14 @@
         "pdf_y": 502.0,
         "pdf_y_end": 530.0,
         "pdf_x_end": 344.6
+      },
+      {
+        "soldier_id": "9021041209",
+        "name": "Bamburač (Mirko) Ljeposava",
+        "additional_info": "rođena 1927, Vukoševac (Sisak). Srpkinja, poginula 1943. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1968",
+        "source_page": 1968,
+        "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
     "death_place": "u kanjonu Pive, kod Čokove Luke"
@@ -3475,7 +3483,20 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0044010124",
+        "name": "Budić Petra Miloš",
+        "additional_info": "rođen 1905, Drenovac — Glina, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 64.5,
+        "pdf_y": 146.2,
+        "pdf_x_end": 345.8,
+        "pdf_y_end": 172.2
+      }
+    ]
   },
   {
     "last_name": "Budić",
@@ -4739,11 +4760,11 @@
     ]
   },
   {
-    "last_name": "Didoš",
+    "last_name": "Dodoš",
     "middle_name": "Stojana",
     "first_name": "Mara",
     "fathers_name": "Stojan",
-    "full_name": "Didoš Stojana Mara",
+    "full_name": "Dodoš Stojana Mara",
     "additional_info": "borac, rođena 1924, Dodoši, Petrinja, domaćica, Srpkinja, u NOB od januara 1943, pogi-I nula u kanjonu Pive juna 1943.",
     "birth_year": "1924",
     "pdf_page": 10,
@@ -4757,7 +4778,35 @@
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
     "rank": "borac",
-    "pdf_x_left": 3.8
+    "pdf_x_left": 3.8,
+    "other_sources": [
+      {
+        "soldier_id": "0044010172",
+        "name": "Dodoš Stojana Mara",
+        "additional_info": "rođena 1924, Dodoši — Petrinja, Srpkinja, domaćica, u NOVJ od 1943, borac. Poginula 1943. u kanjonu Pive tokom bitke na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 14,
+        "pdf_x": 56.6,
+        "pdf_y": 92.8,
+        "pdf_x_end": 338.1,
+        "pdf_y_end": 119.1
+      },
+      {
+        "soldier_id": "0045010179",
+        "name": "Dodoš Stojana Mara",
+        "additional_info": "1924, Dodoši, kotar Petrinja, domaćica, Srpkinja. Borac od januara 1943. godine iz banijskog zbjega za Bosnu, poginula 6. 3. 1943. pri prijelazu Neretve u Jablanici.",
+        "pdf_file": "8-banijska-poginuli.pdf",
+        "pdf_page": 15,
+        "pdf_x": 295.9,
+        "pdf_y": 554.7,
+        "pdf_x_end": 455.1,
+        "pdf_y_end": 618.9,
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "u kanjonu Pive tokom bitke na Sutjesci"
   },
   {
     "last_name": "Didulica",
@@ -5471,11 +5520,11 @@
     ]
   },
   {
-    "last_name": "Dos",
+    "last_name": "Dodoš",
     "middle_name": "Vasilija",
     "first_name": "Stojan",
     "fathers_name": "Vasilije",
-    "full_name": "Dos Vasilija Stojan",
+    "full_name": "Dodoš Vasilija Stojan",
     "additional_info": "borac, rođen 1900, Dodoši, Petrinja, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Dragoš Sedla, povrh Sutjeske, 10. juna 1943. godine.",
     "birth_year": "1900",
     "pdf_page": 10,
@@ -5491,7 +5540,20 @@
     "death_type": "poginuo",
     "death_date": "10.06.1943",
     "death_place": "Dragoš Sedlo, povrh Sutjeske",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0044010175",
+        "name": "Dodoš Vasilja Stojan",
+        "additional_info": "rođen 1900, Dodoši — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. na Dragaš Sedlu tokom bitke na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 14,
+        "pdf_x": 56.5,
+        "pdf_y": 151.0,
+        "pdf_x_end": 338.4,
+        "pdf_y_end": 177.3
+      }
+    ]
   },
   {
     "last_name": "Dragaš",
@@ -6699,7 +6761,20 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Zelengora",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0044019001",
+        "name": "Džakula Mile Jovo",
+        "additional_info": "rođen 1920, Bijele Vode — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 59.5,
+        "pdf_y": 93.0,
+        "pdf_x_end": 341.0,
+        "pdf_y_end": 119.5
+      }
+    ]
   },
   {
     "last_name": "Đedović",
@@ -6805,11 +6880,11 @@
     "party": "KPJ"
   },
   {
-    "last_name": "Elebit",
+    "last_name": "Velebit",
     "middle_name": "Dragana",
     "first_name": "Lazo",
     "fathers_name": "Dragan",
-    "full_name": "Elebit Dragana Lazo",
+    "full_name": "Velebit Dragana Lazo",
     "additional_info": "borac, rođen 1911, Hajtić, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo I 1943. u bici na Sutjesci.",
     "birth_year": "1911",
     "pdf_page": 38,
@@ -6826,14 +6901,27 @@
     "death_date": "1943",
     "death_place": "I . u bici na Sutjesci",
     "rank": "borac",
-    "pdf_x_left": 5.5
+    "pdf_x_left": 5.5,
+    "other_sources": [
+      {
+        "soldier_id": "0044010921",
+        "name": "Velebit Dragana Lazo",
+        "additional_info": "rođen 1911, Hajtić — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 63,
+        "pdf_x": 62.3,
+        "pdf_y": 502.9,
+        "pdf_x_end": 343.9,
+        "pdf_y_end": 529.2
+      }
+    ]
   },
   {
-    "last_name": "Elebit",
+    "last_name": "Velebit",
     "middle_name": "Vuje",
     "first_name": "Ljuban",
     "fathers_name": "Vujo",
-    "full_name": "Elebit Vuje Ljuban",
+    "full_name": "Velebit Vuje Ljuban",
     "additional_info": "borac, rođen 1923, Hajtić, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo 1943. godine u bici na Sutjesci.",
     "birth_year": "1923",
     "pdf_page": 38,
@@ -6849,7 +6937,20 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0044010922",
+        "name": "Velebit Vuje Ljuban",
+        "additional_info": "rođen 1923, Hajtić — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943, u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 64,
+        "pdf_x": 62.8,
+        "pdf_y": 91.1,
+        "pdf_x_end": 344.5,
+        "pdf_y_end": 117.3
+      }
+    ]
   },
   {
     "last_name": "Elebit",
@@ -7237,11 +7338,11 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Esanović",
+    "last_name": "Resanović",
     "middle_name": "Mane",
     "first_name": "Milan",
     "fathers_name": "Mane",
-    "full_name": "Esanović Mane Milan",
+    "full_name": "Resanović Mane Milan",
     "additional_info": "politički delegat voda, rođen 1913, Zakopa, Dvor, radnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo 1943. godine u bici na Sutjesci.",
     "birth_year": "1913",
     "pdf_page": 32,
@@ -7258,7 +7359,28 @@
     "death_date": "1943",
     "rank": "politički delegat voda",
     "death_place": "Sutjeska",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0044010818",
+        "name": "Resanović Mane Milan",
+        "additional_info": "rođen 1913, Zakopa — Dvor, Srbin, radnik, u NOVJ od 1941, član KPJ, delegat voda. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 55,
+        "pdf_x": 67.4,
+        "pdf_y": 316.4,
+        "pdf_x_end": 350.1,
+        "pdf_y_end": 342.9
+      },
+      {
+        "soldier_id": "9021010965",
+        "name": "Resanović (Mane) Milan",
+        "additional_info": "rođen 1913, Zakopa (Dvor). Srbin, poginuo 1943. u NOBu, Izgora-gacko",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=461",
+        "source_page": 461,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
     "last_name": "Esanović",
@@ -7283,11 +7405,11 @@
     "party": "SKOJ 1942, KPJ 1945"
   },
   {
-    "last_name": "Esanović",
+    "last_name": "Resanović",
     "middle_name": "Stojše",
     "first_name": "Stojan",
     "fathers_name": "Stojša",
-    "full_name": "Esanović Stojše Stojan",
+    "full_name": "Resanović Stojše Stojan",
     "additional_info": "zvani Stole; zamenik komandira čete u 2. bataljonu, rođen 1921, Grmušani, Dvor, zemljoradnik, Srbin, u NOB od 1941, član KPJ, umro 1944. godine u bolnici na Petrovoj Gori.",
     "birth_year": "1921",
     "pdf_page": 32,
@@ -7862,21 +7984,14 @@
     "first_name": "Nikola",
     "fathers_name": "Jovan",
     "full_name": "Grubić Jovana Nikola",
-    "additional_info": "borac, rođen 1923, Majske Poljane, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo na Sutjesci juna 1943. iRUBJEŠIĆ-BOGDANOVIĆ Nikole DANICA, bolničarka 2. čete 2. bataljona, rođena 1925, Jošavica, Petrinja, domaćica, Srpkinja, u NOB od 1942. godine, krajem rata bolničarka u sanitetu 7. divizije.",
+    "additional_info": "borac, rođen 1923, Majske Poljane, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo na Sutjesci juna 1943. i",
     "birth_year": "1923",
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "pdf_page": 14,
     "pdf_y": 156.3,
     "pdf_x": 5.3,
-    "birth_place": "Majske Poljane, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "06.1943",
-    "rank": "bolničarka",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 171.8,
-    "pdf_y_end": 262.7,
+    "pdf_x_end": 171.3,
+    "pdf_y_end": 197.9,
     "other_sources": [
       {
         "soldier_id": "0044010265",
@@ -7890,7 +8005,34 @@
         "pdf_x_end": 345.8
       }
     ],
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "birth_place": "Majske Poljane, Glina",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "06.1943",
+    "rank": "borac"
+  },
+  {
+    "soldier_id": "0044009001",
+    "last_name": "Grubješić-Bogdanović",
+    "middle_name": "Nikole",
+    "first_name": "Danica",
+    "fathers_name": "Nikola",
+    "full_name": "Grubješić-Bogdanović Nikole Danica",
+    "additional_info": "bolničarka 2. čete 2. bataljona, rođena 1925, Jošavica, Petrinja, domaćica, Srpkinja, u NOB od 1942. godine, krajem rata bolničarka u sanitetu 7. divizije.",
+    "birth_year": "1925",
+    "pdf_file": "borci-sutjeske-7-banijska.pdf",
+    "pdf_page": 14,
+    "pdf_x": 10.8,
+    "pdf_y": 210.3,
+    "birth_place": "Jošavica, Petrinja",
+    "ethnicity": "Srpkinja",
+    "occupation": "domaćica",
+    "rank": "bolničarka",
+    "unit_detail": "2. četa, 2. bataljon",
+    "pdf_x_end": 171.8,
+    "pdf_y_end": 262.7
   },
   {
     "soldier_id": "0044000895",
@@ -8450,11 +8592,11 @@
     "death_after_war": true
   },
   {
-    "last_name": "Idra",
+    "last_name": "Vidra",
     "middle_name": "Pavla",
     "first_name": "Milan",
     "fathers_name": "Pavle",
-    "full_name": "Idra Pavla Milan",
+    "full_name": "Vidra Pavla Milan",
     "additional_info": "borac, rođen 1922, Bijele Vode, Glina, radnik, Srbin, u NOB od januara 1943, poginuo 1943. u bici na Šutjesci.",
     "birth_year": "1922",
     "pdf_page": 38,
@@ -8470,7 +8612,20 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "death_place": "na Šutjesci"
+    "death_place": "na Šutjesci",
+    "other_sources": [
+      {
+        "soldier_id": "0044010923",
+        "name": "Vidra Pavla Milan",
+        "additional_info": "rođen 1922, Bijele Vode — Glina, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 64,
+        "pdf_x": 62.4,
+        "pdf_y": 138.5,
+        "pdf_x_end": 344.4,
+        "pdf_y_end": 164.5
+      }
+    ]
   },
   {
     "last_name": "Ielar",
@@ -8496,11 +8651,11 @@
     "death_after_war": true
   },
   {
-    "last_name": "Ijača",
+    "last_name": "Oljača",
     "middle_name": "G",
     "first_name": "Nikola",
     "fathers_name": "G",
-    "full_name": "Ijača G Nikola",
+    "full_name": "Oljača G Nikola",
     "additional_info": "borac, rođen 1910, Dodoši, Petrinja, zemljoradnik, Srbin, u NOB od 1942, poginuo u Sandžaku maja 1943. godine.",
     "birth_year": "1910",
     "pdf_page": 28,
@@ -8516,7 +8671,20 @@
     "death_type": "poginuo",
     "death_date": "05.1943",
     "death_place": "Sandžak",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0044010696",
+        "name": "Oljača G Nikola",
+        "additional_info": "rođen 1910, Dodoši — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u Sandžaku početkom V ofanzive.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 47,
+        "pdf_x": 59.2,
+        "pdf_y": 444.0,
+        "pdf_x_end": 340.2,
+        "pdf_y_end": 470.5
+      }
+    ]
   },
   {
     "last_name": "Ikšić",
@@ -9900,11 +10068,11 @@
     "party": "SKOJ 1942"
   },
   {
-    "last_name": "Jubicić",
+    "last_name": "Ljubičić",
     "middle_name": "Mile",
     "first_name": "Dušan",
     "fathers_name": "Mile",
-    "full_name": "Jubicić Mile Dušan",
+    "full_name": "Ljubičić Mile Dušan",
     "additional_info": "borac prištapskih jedinica brigade, rođen 1927, Bukovica, Vrginmost, zemljoradnik, Srbin, u NOB od 1942, poginuo u bici na Sutjescijuna 1943. godine.",
     "birth_year": "1927",
     "pdf_page": 22,
@@ -9921,7 +10089,20 @@
     "death_date": "06.1943",
     "rank": "borac",
     "unit_detail": "prištapske jedinice",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0044010459",
+        "name": "Ljubičić Mile Dušan",
+        "additional_info": "rođen 1927, Bukovica — Vrginmost, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 35,
+        "pdf_x": 60.4,
+        "pdf_y": 274.4,
+        "pdf_x_end": 341.1,
+        "pdf_y_end": 300.4
+      }
+    ]
   },
   {
     "last_name": "Jubičić",
@@ -10450,8 +10631,8 @@
     "first_name": "Danica",
     "fathers_name": "Stojan",
     "full_name": "Kić Stojana Danica",
-    "additional_info": "borac, rođela 1924, Grabovac, Petrinja, doma-Sica, Srpkinja, u NOB od 1942, pogiuila u proboju sa Zelengore kod sela ^ataj, 13. juna 1943. godine.",
-    "birth_year": "",
+    "additional_info": "borac, rođena 1924, Grabovac, Petrinja, doma-Sica, Srpkinja, u NOB od 1942, pogiuila u proboju sa Zelengore kod sela ^ataj, 13. juna 1943. godine.",
+    "birth_year": "1924",
     "pdf_page": 16,
     "pdf_y": 402.5,
     "pdf_x": 10.3,
@@ -10459,6 +10640,7 @@
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000333",
     "pdf_x_end": 169.2,
+    "birth_place": "Grabovac, Petrinja",
     "ethnicity": "Srpkinja",
     "rank": "borac"
   },
@@ -10490,7 +10672,7 @@
     "first_name": "Dragan",
     "fathers_name": "Mile",
     "full_name": "Kič Mile Dragan",
-    "additional_info": "borac, rođen 904, Grabovac, Petrinja, zemljoradlik, Srbin, u NOB od 1942, poginuo u »roboju sa Zelengore, kod sela Rataj, 3. juna 1943. godine.",
+    "additional_info": "borac, rođen 904, Grabovac, Petrinja, zemljoradnik, Srbin, u NOB od 1942, poginuo u »roboju sa Zelengore, kod sela Rataj, 3. juna 1943. godine.",
     "birth_year": "",
     "pdf_page": 16,
     "pdf_y": 456.5,
@@ -10500,6 +10682,7 @@
     "soldier_id": "0044000335",
     "pdf_x_end": 169.4,
     "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "03.06.1943",
     "rank": "borac"
@@ -13537,11 +13720,11 @@
     "death_place": "Sutjeska"
   },
   {
-    "last_name": "Lus",
+    "last_name": "Vilus",
     "middle_name": "Ostoje",
     "first_name": "Jovan",
     "fathers_name": "Ostoja",
-    "full_name": "Lus Ostoje Jovan",
+    "full_name": "Vilus Ostoje Jovan",
     "additional_info": "politički delegat voda u 2. bataljonu, rođen 1919, Luščani, Petrinja, zemljoradnik, Srbin, u NOB od 1942, član KPJ, poginuo u Miljevini 14. juna 1943. godine.",
     "birth_year": "1919",
     "pdf_page": 38,
@@ -13559,7 +13742,20 @@
     "death_place": "Miljevina",
     "rank": "politički delegat voda",
     "unit_detail": "2. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0044010926",
+        "name": "Vilus Ostoje Jovan",
+        "additional_info": "rođen 1919, Luščani — Petrina, Srbin, zemljoradnik, u NOVJ od 1942, član KPJ, delegat voda. Poginuo 1943. kod Miljevine u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 64,
+        "pdf_x": 62.4,
+        "pdf_y": 214.7,
+        "pdf_x_end": 344.3,
+        "pdf_y_end": 240.7
+      }
+    ]
   },
   {
     "last_name": "Macakanja",
@@ -17141,11 +17337,11 @@
     "death_place": "Sutjeska"
   },
   {
-    "last_name": "Njić",
+    "last_name": "Janjić",
     "middle_name": "Julike",
     "first_name": "Jovan",
     "fathers_name": "Julika",
-    "full_name": "Njić Julike Jovan",
+    "full_name": "Janjić Julike Jovan",
     "additional_info": "borac, rođen 1908, Begovići, Petrinja, zemljoradnik, Srbin, u NOB od 1942, poginuo na Zelengori juna 1943. godine.",
     "birth_year": "1908",
     "pdf_page": 16,
@@ -17161,7 +17357,20 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "death_place": "Zelengora",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0044010313",
+        "name": "Janjić Julike Jovan",
+        "additional_info": "rođen 1908, Begovići — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac voda za vezu. Poginuo 1943. na Zelengori.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 24,
+        "pdf_x": 57.4,
+        "pdf_y": 88.8,
+        "pdf_x_end": 338.0,
+        "pdf_y_end": 115.5
+      }
+    ]
   },
   {
     "last_name": "Novaković",
@@ -17540,11 +17749,11 @@
     "party": "SKOJ 1942, KPJ 1943"
   },
   {
-    "last_name": "Otkozarac",
+    "last_name": "Potkozarac",
     "middle_name": "Marka",
     "first_name": "Simo",
     "fathers_name": "Marko",
-    "full_name": "Otkozarac Marka Simo",
+    "full_name": "Potkozarac Marka Simo",
     "additional_info": "borac, rođen 1921, Ivanjska, Bosanska Krupa, zemljoradnik, Srbin, u NOB od 1942, član SKOJ-a, poginuo 1943. godine u bici na Sutjesci.",
     "birth_year": "1921",
     "pdf_page": 30,
@@ -17561,7 +17770,20 @@
     "death_date": "1943",
     "rank": "borac",
     "death_place": "Sutjeska",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0044010759",
+        "name": "Potkozarac Marka Simo",
+        "additional_info": "rođen 1921, Ivanjska — Bos. Krupa, Srbin, zemljoradnik, u NOVJ od 1942, član SKOJ-a. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 51,
+        "pdf_x": 63.3,
+        "pdf_y": 418.7,
+        "pdf_x_end": 344.8,
+        "pdf_y_end": 444.5
+      }
+    ]
   },
   {
     "last_name": "Ovuka",
@@ -23786,11 +24008,11 @@
   },
   {
     "soldier_id": "0044000903",
-    "last_name": "Miomić",
+    "last_name": "Momić",
     "middle_name": "Đure",
     "first_name": "Stevo",
     "fathers_name": "Đuro",
-    "full_name": "Miomić Đure Stevo",
+    "full_name": "Momić Đure Stevo",
     "additional_info": "borac, rođen 1914, Šaševa, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo 1943. godineu bici na Sutjesci.",
     "birth_year": "1914",
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
@@ -26988,7 +27210,20 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "0044019003",
+        "name": "Čučković Dure Svetozar",
+        "additional_info": "rođen 1924, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "7-banijska-poginuli.pdf",
+        "pdf_page": 12,
+        "pdf_x": 60.4,
+        "pdf_y": 176.4,
+        "pdf_x_end": 342.2,
+        "pdf_y_end": 202.9
+      }
+    ]
   },
   {
     "last_name": "Čučković",
@@ -27699,9 +27934,9 @@
   {
     "last_name": "Šteković",
     "middle_name": "Vasilija Mil",
-    "first_name": "Jkan",
+    "first_name": "Janko",
     "fathers_name": "Vasilija Mil",
-    "full_name": "Šteković Vasilija Mil Jkan",
+    "full_name": "Šteković Vasilija Mil Janko",
     "additional_info": "borac, rođen 1914, Grabovac, Petrinja, zemljoradnik, Srbin, u NOB od 1942, poginuo na Sutjesci, kod Tjentišta, 10. juna 1943. godine kao ranjenik u Centralnoj bolnici.",
     "birth_year": "1914",
     "pdf_page": 35,
@@ -30542,29 +30777,6 @@
     "death_place": "Sutjeska"
   },
   {
-    "last_name": "Budio",
-    "middle_name": "Petra",
-    "first_name": "Miloš",
-    "fathers_name": "Petar",
-    "full_name": "Budio Petra Miloš",
-    "additional_info": "rođen 1905, Drenovac — Glina, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u bici na Sutjesci.",
-    "birth_year": "1905",
-    "pdf_page": 9,
-    "pdf_y": 146.2,
-    "pdf_x": 64.5,
-    "pdf_y_end": 172.2,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010124",
-    "birth_place": "Drenovac, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 345.8,
-    "death_place": "Sutjeska"
-  },
-  {
     "last_name": "Bulat",
     "middle_name": "Adama",
     "first_name": "Miloš",
@@ -31246,66 +31458,6 @@
         "1925"
       ]
     }
-  },
-  {
-    "last_name": "Dodoš",
-    "middle_name": "Stojana",
-    "first_name": "Mara",
-    "fathers_name": "Stojan",
-    "full_name": "Dodoš Stojana Mara",
-    "additional_info": "rođena 1924, Dodoši — Petrinja, Srpkinja, domaćica, u NOVJ od 1943, borac. Poginula 1943. u kanjonu Pive tokom bitke na Sutjesci.",
-    "birth_year": "1924",
-    "pdf_page": 14,
-    "pdf_y": 92.8,
-    "pdf_x": 56.6,
-    "pdf_y_end": 119.1,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010172",
-    "birth_place": "Dodoši, Petrinja",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 338.1,
-    "death_place": "u kanjonu Pive tokom bitke na Sutjesci",
-    "other_sources": [
-      {
-        "soldier_id": "0045010179",
-        "name": "Dodoš Stojana Mara",
-        "additional_info": "1924, Dodoši, kotar Petrinja, domaćica, Srpkinja. Borac od januara 1943. godine iz banijskog zbjega za Bosnu, poginula 6. 3. 1943. pri prijelazu Neretve u Jablanici.",
-        "pdf_file": "8-banijska-poginuli.pdf",
-        "pdf_page": 15,
-        "pdf_x": 295.9,
-        "pdf_y": 554.7,
-        "pdf_x_end": 455.1,
-        "pdf_y_end": 618.9,
-        "unit_file": "8-banijska-soldiers.json"
-      }
-    ]
-  },
-  {
-    "last_name": "Dodoš",
-    "middle_name": "Vasilja",
-    "first_name": "Stojan",
-    "fathers_name": "Vasilj",
-    "full_name": "Dodoš Vasilja Stojan",
-    "additional_info": "rođen 1900, Dodoši — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. na Dragaš Sedlu tokom bitke na Sutjesci.",
-    "birth_year": "1900",
-    "pdf_page": 14,
-    "pdf_y": 151.0,
-    "pdf_x": 56.5,
-    "pdf_y_end": 177.3,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010175",
-    "birth_place": "Dodoši, Petrinja",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "na Dragaš Sedlu tokom bitke na Sutjesci",
-    "rank": "borac",
-    "pdf_x_end": 338.4
   },
   {
     "last_name": "Dodoš",
@@ -32170,7 +32322,7 @@
     "first_name": "Dragan",
     "fathers_name": "",
     "full_name": "Džaić Dragan",
-    "additional_info": "rođen 1913, Ljeskovac — Dvor, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943, u toku IV ofanzive u Bosni. D2AKULA Mile JOVO, rođen 1920, Bijele Vode — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
+    "additional_info": "rođen 1913, Ljeskovac — Dvor, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943, u toku IV ofanzive u Bosni.",
     "birth_year": "1913",
     "pdf_page": 18,
     "pdf_y": 504.8,
@@ -32178,6 +32330,7 @@
     "pdf_y_end": 531.5,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010231",
+    "pdf_x_end": 336.1,
     "birth_place": "Ljeskovac, Dvor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -32185,7 +32338,6 @@
     "death_date": "1943",
     "death_place": "Bosna",
     "rank": "borac",
-    "pdf_x_end": 336.1,
     "other_sources": [
       {
         "soldier_id": "9021010465",
@@ -32564,11 +32716,11 @@
     "pdf_x_end": 341.8
   },
   {
-    "last_name": "Grabio",
+    "last_name": "Grabić",
     "middle_name": "Đure",
     "first_name": "Stevo",
     "fathers_name": "Đuro",
-    "full_name": "Grabio Đure Stevo",
+    "full_name": "Grabić Đure Stevo",
     "additional_info": "rođen 1921, Jasenovčani — Sisak, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
     "birth_year": "1921",
     "pdf_page": 20,
@@ -32584,7 +32736,29 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 339.6,
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "other_sources": [
+      {
+        "soldier_id": "9021040463",
+        "name": "Grabić (Đuro) Stevo",
+        "additional_info": "rođen 1921, Jasenovčani (Sisak). Srbin, poginuo 1943. u NOBu, Prozor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1921",
+        "source_page": 1921,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0047000145",
+        "name": "Grabić Đure Stevo",
+        "additional_info": "borac 1. bataljona, rođen 1921, Jasenovčani, Sisak, zemljoradnik, Srbin, u NOB od 1942, poginuo u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-16-banijska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 215.8,
+        "pdf_y": 536.8,
+        "pdf_x_end": 386.2,
+        "pdf_y_end": 579.1,
+        "unit_file": "16-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grabundžija",
@@ -33464,29 +33638,6 @@
         "1911"
       ]
     }
-  },
-  {
-    "last_name": "Janjić",
-    "middle_name": "Julike",
-    "first_name": "Jovan",
-    "fathers_name": "Julika",
-    "full_name": "Janjić Julike Jovan",
-    "additional_info": "rođen 1908, Begovići — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac voda za vezu. Poginuo 1943. na Zelengori.",
-    "birth_year": "1908",
-    "pdf_page": 24,
-    "pdf_y": 88.8,
-    "pdf_x": 57.4,
-    "pdf_y_end": 115.5,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010313",
-    "birth_place": "Begovići, Petrinja",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Zelengora",
-    "rank": "borac",
-    "pdf_x_end": 338.0
   },
   {
     "last_name": "Janutovič",
@@ -34726,7 +34877,7 @@
     "last_name": "Kalanja",
     "middle_name": "Jocana",
     "first_name": "Mile",
-    "fathers_name": "Jocana",
+    "fathers_name": "Jovan",
     "full_name": "Kalanja Jocana Mile",
     "additional_info": "rođen 1921, Zakopa — Dvor, Srbin, zemljoradnik, u NOVJ od 1941, borac. Poginuo 1943. kod Cazina.",
     "birth_year": "1921",
@@ -34934,11 +35085,11 @@
     "pdf_x_end": 338.5
   },
   {
-    "last_name": "Khbavac",
+    "last_name": "Krbavac",
     "middle_name": "Todora",
     "first_name": "Stojša",
     "fathers_name": "Todor",
-    "full_name": "Khbavac Todora Stojša",
+    "full_name": "Krbavac Todora Stojša",
     "additional_info": "rođen 1924, Vrpolje — Dvor, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
     "birth_year": "1924",
     "pdf_page": 30,
@@ -34954,7 +35105,21 @@
     "death_date": "1943",
     "death_place": "Bosna",
     "rank": "borac",
-    "pdf_x_end": 337.1
+    "pdf_x_end": 337.1,
+    "party": "SKOJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0047010187",
+        "name": "Krbavac Todora Stojsa",
+        "additional_info": "vodnik voda u 2. bataljonu, rođen 1924. godine, Vrpolje, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 1942. godine, član SKOJ —a, poginuo u bici na Sutjesci maj—juni 1943. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=230",
+        "source_page": 218,
+        "unit_file": "16-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Klepić",
@@ -36393,29 +36558,6 @@
     "death_place": "Bosna",
     "rank": "borac",
     "pdf_x_end": 340.9
-  },
-  {
-    "last_name": "Ljubičić",
-    "middle_name": "Mile",
-    "first_name": "Dušan",
-    "fathers_name": "Mile",
-    "full_name": "Ljubičić Mile Dušan",
-    "additional_info": "rođen 1927, Bukovica — Vrginmost, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u bici na Sutjesci.",
-    "birth_year": "1927",
-    "pdf_page": 35,
-    "pdf_y": 274.4,
-    "pdf_x": 60.4,
-    "pdf_y_end": 300.4,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010459",
-    "birth_place": "Bukovica, Vrginmost",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 341.1,
-    "death_place": "Sutjeska"
   },
   {
     "last_name": "Ljubičić",
@@ -40844,29 +40986,6 @@
   },
   {
     "last_name": "Oljača",
-    "middle_name": "G",
-    "first_name": "Nikola",
-    "fathers_name": "G",
-    "full_name": "Oljača G Nikola",
-    "additional_info": "rođen 1910, Dodoši — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u Sandžaku početkom V ofanzive.",
-    "birth_year": "1910",
-    "pdf_page": 47,
-    "pdf_y": 444.0,
-    "pdf_x": 59.2,
-    "pdf_y_end": 470.5,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010696",
-    "birth_place": "Dodoši, Petrinja",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "u Sandžaku početkom",
-    "rank": "borac",
-    "pdf_x_end": 340.2
-  },
-  {
-    "last_name": "Oljača",
     "middle_name": "I",
     "first_name": "Nikola",
     "fathers_name": "I",
@@ -41833,29 +41952,6 @@
     "pdf_x_end": 344.4
   },
   {
-    "last_name": "Potkozarac",
-    "middle_name": "Marka",
-    "first_name": "Simo",
-    "fathers_name": "Marko",
-    "full_name": "Potkozarac Marka Simo",
-    "additional_info": "rođen 1921, Ivanjska — Bos. Krupa, Srbin, zemljoradnik, u NOVJ od 1942, član SKOJ-a. Poginuo 1943. u bici na Sutjesci.",
-    "birth_year": "1921",
-    "pdf_page": 51,
-    "pdf_y": 418.7,
-    "pdf_x": 63.3,
-    "pdf_y_end": 444.5,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010759",
-    "birth_place": "Ivanjska, Bos. Krupa",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "pdf_x_end": 344.8,
-    "death_place": "Sutjeska",
-    "party": "SKOJ"
-  },
-  {
     "last_name": "Pribičević",
     "middle_name": "Stojana",
     "first_name": "Aleksa",
@@ -42432,7 +42528,7 @@
     "last_name": "Radošević",
     "middle_name": "Pavlfa",
     "first_name": "Ljuban",
-    "fathers_name": "Pavlfa",
+    "fathers_name": "Pavle",
     "full_name": "Radošević Pavlfa Ljuban",
     "additional_info": "rođen 1921, Svinica — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942. (1. bataljon). Poginuo 1942. kod Gline.",
     "birth_year": "1921",
@@ -42669,6 +42765,18 @@
     "pdf_x_end": 332.6,
     "other_sources": [
       {
+        "soldier_id": "0045000163",
+        "name": "Rebrača Stojana Mile",
+        "additional_info": "borac, rođen 1926, Majske Poljane, Glina, zemljoradnik, Srbin, u NOB od januara 1943, poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 8.0,
+        "pdf_y": 162.3,
+        "pdf_x_end": 171.0,
+        "pdf_y_end": 203.9,
+        "unit_file": "8-banijska-soldiers.json"
+      },
+      {
         "soldier_id": "0045010722",
         "name": "Rebrača Stojana Mile",
         "additional_info": "1926, Majske Poljane, kotar Glina, zemljoradnik, Srbin. Borac od januara 1943. godine iz banijskog zbjega za Bosnu, poginuo juna 1943. u bici na Sutjesci.",
@@ -42806,40 +42914,6 @@
         "additional_info": "rođen 1914, Vukoševac (Sisak). Srbin, poginuo 1943. u NOBu, U hercegovini",
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1968",
         "source_page": 1968,
-        "ref_book": "zrtve-rata-1964-hrv"
-      }
-    ]
-  },
-  {
-    "last_name": "Resanović",
-    "middle_name": "Mane",
-    "first_name": "Milan",
-    "fathers_name": "Mane",
-    "full_name": "Resanović Mane Milan",
-    "additional_info": "rođen 1913, Zakopa — Dvor, Srbin, radnik, u NOVJ od 1941, član KPJ, delegat voda. Poginuo 1943. u bici na Sutjesci.",
-    "birth_year": "1913",
-    "pdf_page": 55,
-    "pdf_y": 316.4,
-    "pdf_x": 67.4,
-    "pdf_y_end": 342.9,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010818",
-    "birth_place": "Zakopa, Dvor",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "delegat voda",
-    "pdf_x_end": 350.1,
-    "death_place": "Sutjeska",
-    "party": "KPJ",
-    "other_sources": [
-      {
-        "soldier_id": "9021010965",
-        "name": "Resanović (Mane) Milan",
-        "additional_info": "rođen 1913, Zakopa (Dvor). Srbin, poginuo 1943. u NOBu, Izgora-gacko",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=461",
-        "source_page": 461,
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ]
@@ -43341,6 +43415,18 @@
         "ref_book": "zrtve-rata-1964-hrv"
       },
       {
+        "soldier_id": "0047000404",
+        "name": "Sarapa Nikole Ilija",
+        "additional_info": "borac 3. bataljona, rođen 1901, Ravno Rašće, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-16-banijska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 220.3,
+        "pdf_y": 96.3,
+        "pdf_x_end": 390.6,
+        "pdf_y_end": 138.9,
+        "unit_file": "16-banijska-soldiers.json"
+      },
+      {
         "soldier_id": "0047010391",
         "name": "Sarapa Nikole Ilija",
         "additional_info": "borac 3. bataljona 1901. godine, Ravno Rašće, Glina, zemljoradnik, Srbin, u NOVJ od 1943. godine, poginuo u bici na Sutjesci maj—juni. 1943. godine.",
@@ -43356,21 +43442,21 @@
     "first_name": "Branko",
     "fathers_name": "N",
     "full_name": "Sekulić N Branko",
-    "additional_info": "rođen u Blinji — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni — Hercegovini. SEKÜLIC I. MILAN, rođen 1914, Blinja — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1942. Blinja — Dejanovići.",
+    "additional_info": "rođen u Blinji — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni — Hercegovini.",
     "pdf_page": 57,
     "pdf_y": 88.5,
     "pdf_x": 61.2,
-    "pdf_y_end": 140.7,
+    "pdf_y_end": 114.8,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010840",
+    "death_place": "u Bosni — Hercegovini",
+    "pdf_x_end": 342.5,
     "birth_place": "Blinja, Petrinja",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "u Bosni — Hercegovini",
     "rank": "borac",
-    "pdf_x_end": 342.5,
     "other_sources": [
       {
         "soldier_id": "9021030708",
@@ -43385,6 +43471,28 @@
     "borrowed": [
       "birth_year"
     ]
+  },
+  {
+    "soldier_id": "0044019002",
+    "last_name": "Sekulić",
+    "middle_name": "I.",
+    "first_name": "Milan",
+    "fathers_name": "I.",
+    "full_name": "Sekulić I. Milan",
+    "additional_info": "rođen 1914, Blinja — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1942. Blinja — Dejanovići.",
+    "birth_year": "1914",
+    "pdf_file": "7-banijska-poginuli.pdf",
+    "pdf_page": 57,
+    "pdf_x": 61.5,
+    "pdf_y": 114.4,
+    "birth_place": "Blinja, Petrinja",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "rank": "borac",
+    "pdf_x_end": 342.5,
+    "pdf_y_end": 140.7
   },
   {
     "last_name": "Sekulić",
@@ -44583,75 +44691,6 @@
     "pdf_x_end": 344.4
   },
   {
-    "last_name": "Velebit",
-    "middle_name": "Dragana",
-    "first_name": "Lazo",
-    "fathers_name": "Dragan",
-    "full_name": "Velebit Dragana Lazo",
-    "additional_info": "rođen 1911, Hajtić — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
-    "birth_year": "1911",
-    "pdf_page": 63,
-    "pdf_y": 502.9,
-    "pdf_x": 62.3,
-    "pdf_y_end": 529.2,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010921",
-    "birth_place": "Hajtić, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 343.9,
-    "death_place": "Sutjeska"
-  },
-  {
-    "last_name": "Velebit",
-    "middle_name": "Vuje",
-    "first_name": "Ljuban",
-    "fathers_name": "Vujo",
-    "full_name": "Velebit Vuje Ljuban",
-    "additional_info": "rođen 1923, Hajtić — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943, u bici na Sutjesci.",
-    "birth_year": "1923",
-    "pdf_page": 64,
-    "pdf_y": 91.1,
-    "pdf_x": 62.8,
-    "pdf_y_end": 117.3,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010922",
-    "birth_place": "Hajtić, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 344.5,
-    "death_place": "Sutjeska"
-  },
-  {
-    "last_name": "Vidra",
-    "middle_name": "Pavla",
-    "first_name": "Milan",
-    "fathers_name": "Pavle",
-    "full_name": "Vidra Pavla Milan",
-    "additional_info": "rođen 1922, Bijele Vode — Glina, Srbin, zemljoradnik, u NOVJ od 1943, borac. Poginuo 1943. u bici na Sutjesci.",
-    "birth_year": "1922",
-    "pdf_page": 64,
-    "pdf_y": 138.5,
-    "pdf_x": 62.4,
-    "pdf_y_end": 164.5,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010923",
-    "birth_place": "Bijele Vode, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 344.4,
-    "death_place": "Sutjeska"
-  },
-  {
     "last_name": "Vilić",
     "middle_name": "Jovana",
     "first_name": "Ljubomir",
@@ -44696,30 +44735,6 @@
     "death_place": "Mošćenica",
     "rank": "borac",
     "pdf_x_end": 344.7,
-    "party": "KPJ"
-  },
-  {
-    "last_name": "Vilus",
-    "middle_name": "Ostoje",
-    "first_name": "Jovan",
-    "fathers_name": "Ostoja",
-    "full_name": "Vilus Ostoje Jovan",
-    "additional_info": "rođen 1919, Luščani — Petrina, Srbin, zemljoradnik, u NOVJ od 1942, član KPJ, delegat voda. Poginuo 1943. kod Miljevine u bici na Sutjesci.",
-    "birth_year": "1919",
-    "pdf_page": 64,
-    "pdf_y": 214.7,
-    "pdf_x": 62.4,
-    "pdf_y_end": 240.7,
-    "pdf_file": "7-banijska-poginuli.pdf",
-    "soldier_id": "0044010926",
-    "birth_place": "Luščani, Petrina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "kod Miljevine u bici na Sutjesci",
-    "rank": "delegat voda",
-    "pdf_x_end": 344.3,
     "party": "KPJ"
   },
   {
@@ -46209,6 +46224,18 @@
         "pdf_x_end": 463.6,
         "pdf_y_end": 438.8,
         "unit_file": "8-banijska-soldiers.json"
+      },
+      {
+        "soldier_id": "0047000454",
+        "name": "Čugalj Ilije Milan",
+        "additional_info": "borac, rođen 1911, Gornji Žirovac, Dvor, zemljoradnik, Srbin, u NOB od novembra 1942, član KPJ, poginuo u dolini Spreče kod Tuzle 29. jula 1943. godine u sastavu 8. banijske brigade.",
+        "pdf_file": "borci-sutjeske-16-banijska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 8.6,
+        "pdf_y": 187.0,
+        "pdf_x_end": 174.4,
+        "pdf_y_end": 250.2,
+        "unit_file": "16-banijska-soldiers.json"
       }
     ],
     "party": "KPJ"
@@ -46219,22 +46246,22 @@
     "first_name": "Ilija",
     "fathers_name": "",
     "full_name": "Čučković Ilija",
-    "additional_info": "rođen u Klasniću — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni. CUÖKOVIC Dure SVETOZAR, rođen 1924, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
+    "additional_info": "rođen u Klasniću — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
     "birth_year": "",
     "pdf_page": 12,
     "pdf_y": 148.4,
     "pdf_x": 60.4,
-    "pdf_y_end": 202.9,
+    "pdf_y_end": 174.9,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044011020",
+    "pdf_x_end": 341.9,
     "birth_place": "Klasnić, Glina",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Bosna",
-    "rank": "borac",
-    "pdf_x_end": 342.2
+    "rank": "borac"
   },
   {
     "last_name": "Čučković",
@@ -46298,7 +46325,7 @@
     "first_name": "Petar",
     "fathers_name": "I",
     "full_name": "Đaković I Petar",
-    "additional_info": "rođen 1910, Šibine — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. kod Bugojna, u bici za ranjenike. D AKO VIC N. STEVO, rođen 1923, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+    "additional_info": "rođen 1910, Šibine — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. kod Bugojna, u bici za ranjenike.",
     "birth_year": "1910",
     "pdf_page": 17,
     "pdf_y": 504.6,
@@ -46306,14 +46333,38 @@
     "pdf_y_end": 531.1,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044011027",
+    "pdf_x_end": 339.2,
     "birth_place": "Šibine, Glina",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
+    "death_place": "Bugojno",
+    "rank": "borac"
+  },
+  {
+    "soldier_id": "0044019004",
+    "last_name": "Đaković",
+    "middle_name": "N.",
+    "first_name": "Stevo",
+    "fathers_name": "N.",
+    "full_name": "Đaković N. Stevo",
+    "additional_info": "rođen 1923, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
+    "birth_year": "1923",
+    "pdf_file": "7-banijska-poginuli.pdf",
+    "pdf_page": 17,
+    "pdf_x": 214.0,
+    "pdf_y": 204.9,
+    "birth_place": "M. Poljane, Glina",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Bosna",
     "rank": "borac",
-    "pdf_x_end": 339.2,
-    "death_place": "Bugojno"
+    "pdf_x_end": 338.6,
+    "pdf_y_end": 231.2,
+    "pdf_x_left": 57.0
   },
   {
     "last_name": "Đaković",

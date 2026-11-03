@@ -13436,7 +13436,7 @@
     "first_name": "Danilo",
     "fathers_name": "",
     "full_name": "Nešković Danilo",
-    "additional_info": "(1911, Rakinac, Veliko Orašje). U NOVJ od iovembra 1944, poginuo 12. XII 1944. na Lazinom visu, Ljubovija, kao borac 1/2. bataljona.",
+    "additional_info": "(1911, Rakinac, Veliko Orašje). U NOVJ od novembra 1944, poginuo 12. XII 1944. na Lazinom visu, Ljubovija, kao borac 1/2. bataljona.",
     "birth_year": "1911",
     "pdf_page": 53,
     "pdf_y": 344.4,
@@ -13444,12 +13444,12 @@
     "pdf_y_end": 370.9,
     "pdf_file": "14-srpska.pdf",
     "soldier_id": "0027000552",
+    "pdf_x_end": 342.0,
     "death_type": "poginuo",
     "death_date": "12.12.1944",
     "death_place": "na Lazinom visu, Ljubovija",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 342.0,
     "other_sources": [
       {
         "soldier_id": "9025035752",
@@ -16309,7 +16309,7 @@
     "first_name": "Milovan",
     "fathers_name": "S",
     "full_name": "Pešić S Milovan",
-    "additional_info": "(1909, Sipanj, Vršac). U NOVJ od sredine 1944, poglnuo 24. XI 1944. na brdu Oraovica, Užička Požega, kao borac 3/3. bataljona.",
+    "additional_info": "(1909, Sipanj, Vršac). U NOVJ od sredine 1944, poginuo 24. XI 1944. na brdu Oraovica, Užička Požega, kao borac 3/3. bataljona.",
     "birth_year": "1909",
     "pdf_page": 61,
     "pdf_y": 251.8,
@@ -16317,9 +16317,12 @@
     "pdf_y_end": 278.3,
     "pdf_file": "14-srpska.pdf",
     "soldier_id": "0027000656",
+    "pdf_x_end": 348.4,
+    "death_type": "poginuo",
+    "death_date": "24.11.1944",
+    "death_place": "Oraovica, Užička Požega",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 348.4
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Pešić",
@@ -18359,12 +18362,12 @@
     "death_place": "Tutnjevac, Gradačac"
   },
   {
-    "last_name": "Simić",
-    "middle_name": "",
-    "first_name": "Sopić",
-    "fathers_name": "",
-    "full_name": "Simić Sopić",
-    "additional_info": "Dragoljuba ŽIVOTA, (1926, Trubarevac kod Sokobanje). U NOVJ od avgusta 1944, poginuo decembra 1944. u istočnoj Bosni.",
+    "last_name": "Simić-Sopić",
+    "middle_name": "Dragoljuba",
+    "first_name": "Života",
+    "fathers_name": "Dragoljub",
+    "full_name": "Simić-Sopić Dragoljuba Života",
+    "additional_info": "(1926, Trubarevac kod Sokobanje). U NOVJ od avgusta 1944, poginuo decembra 1944. u istočnoj Bosni.",
     "birth_year": "",
     "pdf_page": 68,
     "pdf_y": 422.4,
@@ -18372,10 +18375,9 @@
     "pdf_y_end": 449.2,
     "pdf_file": "14-srpska.pdf",
     "soldier_id": "0027000742",
-    "birth_place": "Dragoljuba ŽIVOTA",
+    "pdf_x_end": 345.7,
     "death_type": "poginuo",
     "death_date": "12.1944",
-    "pdf_x_end": 345.7,
     "death_place": "Istočna Bosna"
   },
   {
@@ -18467,7 +18469,7 @@
     "first_name": "Branislava",
     "fathers_name": "N",
     "full_name": "Simović N Branislava",
-    "additional_info": "zvana Gorica; (1924, Niš). U NOVJ od 14. IV 1944, pogiiula 13. VI iste godine kod sela Kravlje — Niš, kao borac Niškog NOP odreda i član SKOJ-a.",
+    "additional_info": "zvana Gorica; (1924, Niš). U NOVJ od 14. IV 1944, poginula 13. VI iste godine kod sela Kravlje — Niš, kao borac Niškog NOP odreda i član SKOJ-a.",
     "birth_year": "1924",
     "pdf_page": 69,
     "pdf_y": 77.9,
@@ -18475,9 +18477,11 @@
     "pdf_y_end": 104.4,
     "pdf_file": "14-srpska.pdf",
     "soldier_id": "0027000747",
-    "rank": "borac",
     "pdf_x_end": 341.6,
     "party": "SKOJ",
+    "death_type": "poginuo",
+    "death_place": "Kravlje, Niš",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025022192",
@@ -18492,14 +18496,10 @@
     "borrowed": [
       "birth_place",
       "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
     ],
     "ethnicity": "Srpkinja",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Krovilje"
+    "death_date": "1944"
   },
   {
     "last_name": "Simović",

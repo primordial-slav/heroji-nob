@@ -909,7 +909,7 @@
     "first_name": "Živko",
     "fathers_name": "Živorad",
     "full_name": "Arsenijević Živorada Živko",
-    "additional_info": "rođen 1926. u Vrhovinama, stolar, u brigadi ooktobra 1944, poginuo 17. januara 1945. na Grabovu.",
+    "additional_info": "rođen 1926. u Vrhovinama, stolar, u brigadi od oktobra 1944, poginuo 17. januara 1945. na Grabovu.",
     "birth_year": "1926",
     "pdf_page": 3,
     "pdf_y": 278.5,
@@ -1282,7 +1282,7 @@
     "first_name": "Božin",
     "fathers_name": "Uroš",
     "full_name": "Aksentijević Uroša Božin",
-    "additional_info": "rođen 1921. u Maloj Kruševici, zemljoradnik, u brigadi od novembra 1944, poginuo 20. Dprila 1945 u Burićima",
+    "additional_info": "rođen 1921. u Maloj Kruševici, zemljoradnik, u brigadi od novembra 1944, poginuo 20. Aprila 1945 u Burićima",
     "birth_year": "1921",
     "pdf_file": "8-crnogorska.pdf",
     "pdf_page": 2,
@@ -1294,6 +1294,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
+    "death_place": "Burići",
     "other_sources": [
       {
         "soldier_id": "9014002242",
@@ -1318,10 +1319,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Kod djurića"
+    ]
   },
   {
     "last_name": "Babević",
@@ -2064,7 +2063,7 @@
     "first_name": "Dragić",
     "fathers_name": "Milisav",
     "full_name": "Birtašević Milisava Dragić",
-    "additional_info": "rođen 1920. u Koceljevu, zemljoradnik, u brigadi od oktobra 1944, poginuo 5. decembra 1944. kodStajze Bingule.",
+    "additional_info": "rođen 1920. u Koceljevu, zemljoradnik, u brigadi od oktobra 1944, poginuo 5. decembra 1944. kod Stajze Bingule.",
     "birth_year": "1920",
     "pdf_page": 4,
     "pdf_y": 427.1,
@@ -2077,7 +2076,8 @@
     "birth_place": "Koceljevo",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_date": "05.12.1944"
+    "death_date": "05.12.1944",
+    "death_place": "kod Stajze Bingule"
   },
   {
     "last_name": "Birčanin",
@@ -2597,7 +2597,7 @@
     "first_name": "Danica",
     "fathers_name": "Radosav",
     "full_name": "Brajušković Radosava Danica",
-    "additional_info": "rođena 1922. u Gostilju, zastavnik, ioginula 4. decembra 1944. na Matoroj šumi.",
+    "additional_info": "rođena 1922. u Gostilju, zastavnik, poginula 4. decembra 1944. na Matoroj šumi.",
     "birth_year": "1922",
     "pdf_page": 5,
     "pdf_y": 146.0,
@@ -2606,8 +2606,11 @@
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000065",
     "birth_place": "Gostilj",
-    "rank": "zastavnik",
     "pdf_x_end": 454.7,
+    "death_type": "poginuo",
+    "death_date": "04.12.1944",
+    "death_place": "Matora šuma",
+    "rank": "zastavnik",
     "other_sources": [
       {
         "soldier_id": "9014002282",
@@ -3314,7 +3317,7 @@
     "first_name": "Marko",
     "fathers_name": "Kosta",
     "full_name": "Cvetić Koste Marko",
-    "additional_info": "rođen 1922. u Sinju, u brigadi od novembrć 1944, poginuo 18. januara 1945. na Burgerovom salašu.",
+    "additional_info": "rođen 1922. u Sinju, u brigadi od novembra 1944, poginuo 18. januara 1945. na Burgerovom salašu.",
     "birth_year": "1922",
     "pdf_page": 31,
     "pdf_y": 181.8,
@@ -3322,11 +3325,11 @@
     "pdf_y_end": 199.2,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000079",
+    "pdf_x_end": 451.5,
     "birth_place": "Sinj",
     "death_type": "poginuo",
     "death_date": "18.01.1945",
     "death_place": "na Burgerovom salašu",
-    "pdf_x_end": 451.5,
     "other_sources": [
       {
         "soldier_id": "9014002300",
@@ -4950,7 +4953,7 @@
     "first_name": "Milan",
     "fathers_name": "Boško",
     "full_name": "Gnjatić Boška Milan",
-    "additional_info": "rođen 1923. u Zemunu, mehaničar, u brigadi od oktobra 1944, poginuo JOaprid, 1945. kod Burića.",
+    "additional_info": "rođen 1923. u Zemunu, mehaničar, u brigadi od oktobra 1944, poginuo 10. aprila 1945. kod Burića.",
     "birth_year": "1923",
     "pdf_page": 7,
     "pdf_y": 647.2,
@@ -4962,7 +4965,8 @@
     "birth_place": "Zemun",
     "occupation": "mehaničar",
     "death_type": "poginuo",
-    "death_date": "1945"
+    "death_date": "10.04.1945",
+    "death_place": "Burići"
   },
   {
     "last_name": "Gojić",
@@ -5421,11 +5425,11 @@
     "birth_year": "1924"
   },
   {
-    "last_name": "Ikonović",
+    "last_name": "Ikanović",
     "middle_name": "Dragića",
     "first_name": "Danilo",
     "fathers_name": "Dragić",
-    "full_name": "Ikonović Dragića Danilo",
+    "full_name": "Ikanović Dragića Danilo",
     "additional_info": "rođen 1921. u Batalagama, zemljoradnik, mitraljezac, u brigadi od oktobra 1944, poginuo aprila 1945. kod Vrbanje.",
     "birth_year": "1921",
     "pdf_page": 11,
@@ -5453,7 +5457,19 @@
         "pdf_x_end": 512.7,
         "pdf_y_end": 470.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025013221",
+        "name": "Ikanović (Dragić) Danilo",
+        "additional_info": "rođen 1921, Batalage (Koceljevo). Srbin, poginuo 1945. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=487",
+        "source_page": 487,
+        "ref_book": "zrtve-rata-1964-srb"
       }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
     ]
   },
   {
@@ -7482,7 +7498,7 @@
     "first_name": "Milutin",
     "fathers_name": "Miloš",
     "full_name": "Jovanović Miloša Milutin",
-    "additional_info": "rođen 1910. u Komanima, poručnik, komandpr čete, u brigadi od februara 1944, poginuo aprila 1944. kod Bijelog Polja.",
+    "additional_info": "rođen 1910. u Komanima, poručnik, komandir čete, u brigadi od februara 1944, poginuo aprila 1944. kod Bijelog Polja.",
     "birth_year": "1910",
     "pdf_page": 13,
     "pdf_y": 501.5,
@@ -7490,12 +7506,12 @@
     "pdf_y_end": 518.6,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000184",
+    "pdf_x_end": 457.4,
     "birth_place": "Komani",
     "death_type": "poginuo",
     "death_date": "04.1944",
     "death_place": "Bijelo Polje",
-    "rank": "poručnik",
-    "pdf_x_end": 457.4,
+    "rank": "poručnik, komandir čete",
     "other_sources": [
       {
         "soldier_id": "9035003874",
@@ -9334,7 +9350,7 @@
     "first_name": "Miodrag",
     "fathers_name": "Stevan",
     "full_name": "Krnjajić Stevana Miodrag",
-    "additional_info": "zvani Lola; rođen 1928. u Koceljevu, referent saniteta čete, u brigadi od seitembra 1944, poginuo 23. aprila 1945. kod Slavonske Požege.",
+    "additional_info": "zvani Lola; rođen 1928. u Koceljevu, referent saniteta čete, u brigadi od septembra 1944, poginuo 23. aprila 1945. kod Slavonske Požege.",
     "birth_year": "1928",
     "pdf_page": 15,
     "pdf_y": 246.5,
@@ -11388,7 +11404,7 @@
     "first_name": "Mirko",
     "fathers_name": "Jovan",
     "full_name": "Manitašević Jovana Mirko",
-    "additional_info": "rođen 1914. u Foči, ze.mljoradnik, desegar, u brigadi od oktobra 1944, poginuo 7. aprila 1945. kod Račinovaca.",
+    "additional_info": "rođen 1914. u Foči, ze.mljoradnik, desetar, u brigadi od oktobra 1944, poginuo 7. aprila 1945. kod Račinovaca.",
     "birth_year": "1914",
     "pdf_page": 17,
     "pdf_y": 275.3,
@@ -11396,11 +11412,12 @@
     "pdf_y_end": 292.2,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000275",
+    "pdf_x_end": 457.5,
     "birth_place": "Foča",
     "death_type": "poginuo",
     "death_date": "07.04.1945",
     "death_place": "Račinovci",
-    "pdf_x_end": 457.5,
+    "rank": "desetar",
     "other_sources": [
       {
         "soldier_id": "9014002506",
@@ -12190,7 +12207,7 @@
     "first_name": "Milorad",
     "fathers_name": "Budimir",
     "full_name": "Marković Budimira Milorad",
-    "additional_info": "rođen 1925, u Petlovači, zemljoradnik, u brigadi od iovembra 1944, poginuo 17. januara 1945. kod Čakovaca.",
+    "additional_info": "rođen 1925, u Petlovači, zemljoradnik, u brigadi od novembra 1944, poginuo 17. januara 1945. kod Čakovaca.",
     "birth_year": "1925",
     "pdf_page": 18,
     "pdf_y": 162.6,
@@ -12198,12 +12215,12 @@
     "pdf_y_end": 179.5,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000291",
+    "pdf_x_end": 485.1,
     "birth_place": "Petlovača",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "death_place": "Čakovci",
-    "pdf_x_end": 485.1,
     "other_sources": [
       {
         "soldier_id": "9014002526",
@@ -12589,7 +12606,7 @@
     "first_name": "Živan",
     "fathers_name": "Ljubisav",
     "full_name": "Marković Ljubisava Živan",
-    "additional_info": "rođen 1925. u Rušnju, zemljoradnik, vodnnk, voća odeljenja, u brigadi od novembra 1944, poginuo 18. januara 1945. na Berkasovu.",
+    "additional_info": "rođen 1925. u Rušnju, zemljoradnik, vodnik, voća odeljenja, u brigadi od novembra 1944, poginuo 18. januara 1945. na Berkasovu.",
     "birth_year": "1925",
     "pdf_page": 17,
     "pdf_y": 644.4,
@@ -12597,12 +12614,13 @@
     "pdf_y_end": 661.3,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000302",
+    "pdf_x_end": 461.0,
     "birth_place": "Rušanj",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "18.01.1945",
     "death_place": "Berkasovo",
-    "pdf_x_end": 461.0,
+    "rank": "vodnik",
     "other_sources": [
       {
         "soldier_id": "9013004911",
@@ -14653,7 +14671,7 @@
     "first_name": "Dragan",
     "fathers_name": "Vladimir",
     "full_name": "Milojević Vladimira Dragan",
-    "additional_info": "rođen 1924. u Balinovićima, zemloradnik, mlaći vodnik, voća odeljenja, u brigadi od oktobra 1944, poginuo 9. aprila 194z. kod Burića.",
+    "additional_info": "rođen 1924. u Balinovićima, zemloradnik, mlaći vodnik, voća odeljenja, u brigadi od oktobra 1944, poginuo 9. aprila 1942. kod Burića.",
     "birth_year": "1924",
     "pdf_page": 19,
     "pdf_y": 384.2,
@@ -14661,11 +14679,13 @@
     "pdf_y_end": 409.5,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000353",
+    "pdf_x_end": 454.1,
     "birth_place": "Balinovići",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "rank": "vodnik",
-    "pdf_x_end": 454.1
+    "death_date": "09.04.1942",
+    "death_place": "Burići",
+    "rank": "vodnik"
   },
   {
     "last_name": "Milojević",
@@ -15259,21 +15279,56 @@
     "first_name": "Radomir",
     "fathers_name": "Radovan",
     "full_name": "Milutinović Radovana Radomir",
-    "additional_info": "rođen 1922. u Stijeni Piperskoj, zemljoradnik, u brigadi od februara 1944, poginuo septembra 1944. kod Uvca. MI/\\UTINOVIK Jagoša SAVO, rođen 1921. u Stijeni Piperskoj, maturant, poručnik, politički komesar čete, u brigadi od februara 1944, poginuo 5/6. aprila 1945. kod Račinovaca.",
+    "additional_info": "rođen 1922. u Stijeni Piperskoj, zemljoradnik, u brigadi od februara 1944, poginuo septembra 1944. kod Uvca.",
     "birth_year": "1922",
     "pdf_page": 20,
     "pdf_y": 285.3,
     "pdf_x": 126.6,
-    "pdf_y_end": 333.7,
+    "pdf_y_end": 304.0,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000365",
+    "pdf_x_end": 484.8,
     "birth_place": "Stijena Piperska",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.1944",
-    "death_place": "Uvac",
+    "death_place": "Uvac"
+  },
+  {
+    "soldier_id": "0038009001",
+    "last_name": "Milutinović",
+    "middle_name": "Jagoša",
+    "first_name": "Savo",
+    "fathers_name": "Jagoš",
+    "full_name": "Milutinović Jagoša Savo",
+    "additional_info": "rođen 1921. u Stijeni Piperskoj, maturant, poručnik, politički komesar čete, u brigadi od februara 1944, poginuo 5/6. aprila 1945. kod Račinovaca.",
+    "birth_year": "1921",
+    "pdf_file": "8-crnogorska.pdf",
+    "pdf_page": 20,
+    "pdf_x": 126.8,
+    "pdf_y": 306.9,
+    "birth_place": "Stijena Piperska",
+    "occupation": "maturant",
+    "death_type": "poginuo",
+    "death_date": "06.04.1945",
+    "death_place": "Račinovci",
     "rank": "poručnik, politički komesar čete",
-    "pdf_x_end": 484.8
+    "pdf_x_end": 484.5,
+    "pdf_y_end": 333.7,
+    "other_sources": [
+      {
+        "soldier_id": "9023006680",
+        "name": "Milutinović (Jagoš) Savo",
+        "additional_info": "rođen 1921, Stijena (Titograd). Crnogorac, poginuo 1945. u NOBu, Sremska mitrovica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=227",
+        "source_page": 227,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Miranović",
@@ -16115,7 +16170,23 @@
         "pdf_x_end": 352.1,
         "pdf_y_end": 201.8,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001501546",
+        "name": "Mrvaljević Marka Božidar",
+        "additional_info": "u bataljon stupio 1944. godine; rođen 1922, Cetinje, SRCG, učenik gimnazije, član SKOJ-a, u NOB od 1941, poginuo 15. oktobra 1944. u Rakovici — Beograd.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 48,
+        "pdf_x": 180.9,
+        "pdf_y": 426.0,
+        "pdf_x_end": 541.0,
+        "pdf_y_end": 450.8,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
+    ],
+    "party": "SKOJ",
+    "borrowed": [
+      "party"
     ],
     "variants": {
       "death": [
@@ -17114,7 +17185,7 @@
       {
         "soldier_id": "0021003428",
         "name": "Nikolić Viđena Vojislav",
-        "additional_info": "rođen 1919, Krčimir, Gadžin Han, zemljoradnik. U Brigadi od26. decembra 1944.2. bataljon.",
+        "additional_info": "rođen 1919, Krčimir, Gadžin Han, zemljoradnik. U Brigadi od 26. decembra 1944.2. bataljon.",
         "pdf_file": "4-srpska.pdf",
         "pdf_page": 256,
         "pdf_x": 58.0,
@@ -18039,7 +18110,7 @@
     "first_name": "Dragomir",
     "fathers_name": "Radoje",
     "full_name": "Pavićević Radoja Dragomir",
-    "additional_info": "rođen 1923. na Pelevom Brijegu, zemljoralnik, u brigadi od februara 1944, poginuo 1944.",
+    "additional_info": "rođen 1923. na Pelevom Brijegu, zemljoradnik, u brigadi od februara 1944, poginuo 1944.",
     "birth_year": "1923",
     "pdf_page": 23,
     "pdf_y": 259.1,
@@ -18047,9 +18118,10 @@
     "pdf_y_end": 276.5,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000430",
+    "pdf_x_end": 460.1,
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_x_end": 460.1
+    "death_date": "1944"
   },
   {
     "last_name": "Pavićević",
@@ -19939,7 +20011,7 @@
     "first_name": "Mihailo",
     "fathers_name": "Vaso",
     "full_name": "Popović Vasa Mihailo",
-    "additional_info": "rođen 1920. u Podgorici (Titograd), student, poligički komesar čete, u brigadi od februara 1944, poginuo 12. aprila 1944. na Gabučini, kod Bijelog Polja.",
+    "additional_info": "rođen 1920. u Podgorici (Titograd), student, politički komesar čete, u brigadi od februara 1944, poginuo 12. aprila 1944. na Gabučini, kod Bijelog Polja.",
     "birth_year": "1920",
     "pdf_page": 25,
     "pdf_y": 409.6,
@@ -19947,13 +20019,13 @@
     "pdf_y_end": 435.4,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000475",
+    "pdf_x_end": 447.1,
     "birth_place": "Podgorica (Titograd)",
     "occupation": "student",
     "death_type": "poginuo",
     "death_date": "12.04.1944",
     "death_place": "na Gabučini, kod Bijelog Polja",
-    "rank": "komesar čete",
-    "pdf_x_end": 447.1,
+    "rank": "politički komesar čete",
     "other_sources": [
       {
         "soldier_id": "9023006815",
@@ -22018,7 +22090,7 @@
     "first_name": "Blagota",
     "fathers_name": "Jovan",
     "full_name": "Raonić Jovana Blagota",
-    "additional_info": "rođen 1923. u Negobuđi, učenik, poručnik, političkp komesar čete, u brigadi od februara 1944, poginuo 2. maja 1944. na Grabu.",
+    "additional_info": "rođen 1923. u Negobuđi, učenik, poručnik, politički komesar čete, u brigadi od februara 1944, poginuo 2. maja 1944. na Grabu.",
     "birth_year": "1923",
     "pdf_page": 27,
     "pdf_y": 192.0,
@@ -22026,13 +22098,13 @@
     "pdf_y_end": 209.1,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000526",
+    "pdf_x_end": 450.1,
     "birth_place": "Negobuđa",
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "02.05.1944",
     "death_place": "Grab",
-    "rank": "poručnik, komesar čete",
-    "pdf_x_end": 450.1
+    "rank": "poručnik, politički komesar čete"
   },
   {
     "last_name": "Raosavljević",
@@ -22428,7 +22500,7 @@
     "first_name": "Mirko",
     "fathers_name": "Obrad",
     "full_name": "Simeunović Obrada Mirko",
-    "additional_info": "rođen 1912, radnnk, mlađi vodnik, komandpr voda, u brigadi od novembra 1944, poginuo 25. aprila 1945. kod Velike Barne.",
+    "additional_info": "rođen 1912, radnik, mlađi vodnik, komandir voda, u brigadi od novembra 1944, poginuo 25. aprila 1945. kod Velike Barne.",
     "birth_year": "1912",
     "pdf_page": 27,
     "pdf_y": 422.9,
@@ -22436,11 +22508,12 @@
     "pdf_y_end": 439.8,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000537",
+    "pdf_x_end": 451.0,
+    "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "25.04.1945",
     "death_place": "Velika Barna",
-    "rank": "mlađi vodnik",
-    "pdf_x_end": 451.0
+    "rank": "mlađi vodnik, komandir voda"
   },
   {
     "last_name": "Simeunović",
@@ -25591,7 +25664,7 @@
     "first_name": "Momčilo",
     "fathers_name": "Vaso",
     "full_name": "Vasiljević Vase Momčilo",
-    "additional_info": "rođen 1923. u Stublenici, zemljoradnik, vodnnk, komandir voda, u brigadi od oktobra 1944, poginuo 6. januara 1945. kod Grabova.",
+    "additional_info": "rođen 1923. u Stublenici, zemljoradnik, vodnik, komandir voda, u brigadi od oktobra 1944, poginuo 6. januara 1945. kod Grabova.",
     "birth_year": "1923",
     "pdf_page": 5,
     "pdf_y": 452.7,
@@ -25599,13 +25672,13 @@
     "pdf_y_end": 469.9,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000615",
+    "pdf_x_end": 454.8,
     "birth_place": "Stublenica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "06.01.1945",
     "death_place": "Grabovo",
-    "rank": "komandir voda",
-    "pdf_x_end": 454.8,
+    "rank": "vodnik, komandir voda",
     "other_sources": [
       {
         "soldier_id": "9014002846",
@@ -25898,12 +25971,12 @@
     "first_name": "Miomir",
     "fathers_name": "Radovan",
     "full_name": "Vasović Radovana Miomir",
-    "additional_info": "rođen u Vrhovinama, zemljoradnik, u brigadn od no.vembra 1944, poginuo 17. januara 1945. kod Grabova. VIŽNITIN IvadaSAVO, rođen u Savadiji, maturant, popgnuo 12. decembra 1944. kod Čakovaca.",
+    "additional_info": "rođen u Vrhovinama, zemljoradnik, u brigadn od no.vembra 1944, poginuo 17. januara 1945. kod Grabova.",
     "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 622.4,
     "pdf_x": 96.8,
-    "pdf_y_end": 660.0,
+    "pdf_y_end": 639.3,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000622",
     "pdf_x_end": 453.4,
@@ -25912,6 +25985,50 @@
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "death_place": "Grabovo"
+  },
+  {
+    "soldier_id": "0038009002",
+    "last_name": "Vižnitin",
+    "middle_name": "Ivada",
+    "first_name": "Savo",
+    "fathers_name": "Ivan",
+    "full_name": "Vižnitin Ivada Savo",
+    "additional_info": "rođen u Savadiji, maturant, popgnuo 12. decembra 1944. kod Čakovaca.",
+    "birth_year": "",
+    "pdf_file": "8-crnogorska.pdf",
+    "pdf_page": 5,
+    "pdf_x": 96.8,
+    "pdf_y": 643.5,
+    "birth_place": "Savadiji",
+    "occupation": "maturant",
+    "pdf_x_end": 453.0,
+    "pdf_y_end": 660.0,
+    "other_sources": [
+      {
+        "soldier_id": "9014002857",
+        "name": "Vižnitin Savo",
+        "additional_info": "Poginuli borci Osme crnogorske narodnooslobodilačke udarne brigade: 617. Vižnitin Savo.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 258.1,
+        "pdf_y": 853.3,
+        "pdf_x_end": 330.1,
+        "pdf_y_end": 862.8,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013004801",
+        "name": "Vižnitin Savo",
+        "additional_info": "Osma crnogorska udarna brigada, Cakovci: Savo Vižnitin.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 33,
+        "pdf_x": 102.5,
+        "pdf_y": 258.0,
+        "pdf_x_end": 165.6,
+        "pdf_y_end": 267.7,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Vasović",
@@ -26395,7 +26512,7 @@
     "first_name": "Mirko",
     "fathers_name": "Vukota",
     "full_name": "Vlahović Vukote Mirko",
-    "additional_info": "rođen 1925. u Rovcima, zemljoradnik, zastavnik„ deLegat voda, u brigadi od februara 1944, pogiiuo 27. aprila 194z. kod Velike Barne.",
+    "additional_info": "rođen 1925. u Rovcima, zemljoradnik, zastavnik„ deLegat voda, u brigadi od februara 1944, pogiiuo 27. aprila 1942. kod Velike Barne.",
     "birth_year": "1925",
     "pdf_page": 6,
     "pdf_y": 426.6,
@@ -28033,7 +28150,7 @@
     "first_name": "Poazka",
     "fathers_name": "",
     "full_name": "Ćulafić Poazka",
-    "additional_info": "rođena 1925. u Lugama, Ivangrad, sanitet čete, u brigadi od februara 1944, pogiiula 3. decembra 1944. na Matoroj šumi.",
+    "additional_info": "rođena 1925. u Lugama, Ivangrad, sanitet čete, u brigadi od februara 1944, poginula 3. decembra 1944. na Matoroj šumi.",
     "birth_year": "1925",
     "pdf_page": 31,
     "pdf_y": 365.2,
@@ -28041,8 +28158,11 @@
     "pdf_y_end": 382.3,
     "pdf_file": "8-crnogorska.pdf",
     "soldier_id": "0038000676",
+    "pdf_x_end": 451.9,
     "birth_place": "Luge, Ivangrad",
-    "pdf_x_end": 451.9
+    "death_type": "poginuo",
+    "death_date": "03.12.1944",
+    "death_place": "Matora šuma"
   },
   {
     "last_name": "Čavor",
@@ -29716,8 +29836,33 @@
         "pdf_x_end": 287.4,
         "pdf_y_end": 529.6,
         "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "0040001646",
+        "name": "Šljivančanin Savića Miloš",
+        "additional_info": "borac 2. bataljona, rođen 1918, Šljivansko, Žabljak, zemljoradnik, Crnogorac, u NOB od aprila 1943, član KPJ od 1943, poginuo na Sremskom frontu kod Tovarnika 6. aprila 1945, komandir čete u 8. crnogorskoj brigadi.",
+        "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+        "pdf_page": 85,
+        "pdf_x": 317.6,
+        "pdf_y": 517.6,
+        "pdf_x_end": 487.9,
+        "pdf_y_end": 593.0,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "death_place": "Sremski front, Tovarnik",
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1918"
+      ]
+    }
   },
   {
     "last_name": "Šujdović",

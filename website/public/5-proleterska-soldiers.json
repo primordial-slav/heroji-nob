@@ -821,11 +821,11 @@
     ]
   },
   {
-    "last_name": "Anionić",
+    "last_name": "Antonić",
     "middle_name": "Đorđa",
     "first_name": "Niko",
     "fathers_name": "Đorđe",
-    "full_name": "Anionić Đorđa Niko",
+    "full_name": "Antonić Đorđa Niko",
     "additional_info": "desetar u 3. četi 4. bataljona, rođen 1921, Ponjavići, Donji Vakuf, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a, poginuo na Krnovu, kod Šavnika, krajem maja 1943. godine.",
     "birth_year": "1921",
     "pdf_page": 2,
@@ -843,7 +843,17 @@
     "death_place": "Krnovo, kod Šavnika",
     "rank": "desetar",
     "unit_detail": "3. četa, 4. bataljon",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "9022014723",
+        "name": "Antonić (Đorđe) Niko",
+        "additional_info": "rođen 1920, Ponjavići (Donji Vakuf). Srbin, poginuo 1943. u NOBu, Zelengora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1268",
+        "source_page": 1268,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Anović",
@@ -7089,7 +7099,7 @@
     "first_name": "Novak",
     "fathers_name": "Milan",
     "full_name": "Dubljević Milana Novak",
-    "additional_info": "borac 2. čete 2. bataljona, rođen 1922, Izgori, Gacko, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a od 1941, član KPJ od 1943godine krajem rata zamenik komandira čete u 10. hercegovačkoj brigadi.",
+    "additional_info": "borac 2. čete 2. bataljona, rođen 1922, Izgori, Gacko, zemljoradnik, Srbin, u NOB od 1941, član SKOJ-a od 1941, član KPJ od 1943 godine krajem rata zamenik komandira čete u 10. hercegovačkoj brigadi.",
     "birth_year": "1922",
     "pdf_page": 15,
     "pdf_y": 182.0,
@@ -7098,12 +7108,12 @@
     "pdf_file": "borci-sutjeske-5-proleterska.pdf",
     "soldier_id": "0041000238",
     "pdf_x_end": 397.1,
+    "party": "SKOJ 1941, KPJ",
     "birth_place": "Izgori, Gacko",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "party": "SKOJ 1941, KPJ"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Dujmović",
@@ -11954,7 +11964,7 @@
       {
         "soldier_id": "0148000922",
         "name": "Javorčić Blaža Ivan",
-        "additional_info": "zvani Motić; borac I mosorskog PO. Rođen 1919, Zrnovnica, Split, zemljoradnik, Hrvat, član SKOJ-a 1937, KPJ od 1941. U NOB-u stupio 1941. U I mosorski PO došao 24. ožujka 1942. i polovinom lipnja ušao u sastav 2. baialjona Srednjedalmatinskog PO. Poginuo 13. lipnja 1943. na Vučevu, kao borac 3. bataljona 5. crnogorske brigade.",
+        "additional_info": "zvani Motić; borac I mosorskog PO. Rođen 1919, Zrnovnica, Split, zemljoradnik, Hrvat, član SKOJ-a 1937, KPJ od 1941. U NOB-u stupio 1941. U I mosorski PO došao 24. ožujka 1942. i polovinom lipnja ušao u sastav 2. bataljona Srednjedalmatinskog PO. Poginuo 13. lipnja 1943. na Vučevu, kao borac 3. bataljona 5. crnogorske brigade.",
         "pdf_file": "mosorski-odred.pdf",
         "pdf_page": 64,
         "pdf_x": 243.7,
@@ -14516,11 +14526,11 @@
     "party": "KPJ 1943"
   },
   {
-    "last_name": "Kcovijanić",
+    "last_name": "Kovijanić",
     "middle_name": "Milivoja",
     "first_name": "Boško",
     "fathers_name": "Milivoje",
-    "full_name": "Kcovijanić Milivoja Boško",
+    "full_name": "Kovijanić Milivoja Boško",
     "additional_info": "puškomitraljezac 3. čete 4. bataljona, rođen 1914, Pošćenje, Šavnik, zemljoradnik, Crnogorac, u NOB od aprila 1943, poginuo na Sutjesci juna 1943. godine.",
     "birth_year": "1914",
     "pdf_page": 36,
@@ -15901,11 +15911,11 @@
     "party": "SKOJ, KPJ 1943"
   },
   {
-    "last_name": "Kosiić",
+    "last_name": "Kostić",
     "middle_name": "Zaje",
     "first_name": "Jelena",
     "fathers_name": "Zaje",
-    "full_name": "Kosiić Zaje Jelena",
+    "full_name": "Kostić Zaje Jelena",
     "additional_info": "bolničarka u 3. četi 1. bataljona, rođena 1924, Dučice, Nikšić, domaćica, Crnogorka, u NOB od 1941, član SKOJ-a od 1941, član KPJ od 1942. godine, krajem rata referent saniteta bataljona.",
     "birth_year": "1924",
     "pdf_page": 33,
@@ -15915,15 +15925,25 @@
     "pdf_file": "borci-sutjeske-5-proleterska.pdf",
     "soldier_id": "0041000542",
     "pdf_x_end": 400.4,
-    "death_type": "",
-    "death_date": "",
+    "death_type": "umro",
+    "death_date": "krajem 1947",
     "death_place": "",
     "birth_place": "Dučice, Nikšić",
     "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "rank": "bolničarka",
     "unit_detail": "3. četa, 1. bataljon",
-    "party": "SKOJ 1941, KPJ 1942"
+    "party": "SKOJ 1941, KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0041010158",
+        "name": "Kostić Zajova Jelena",
+        "additional_info": "Rođena 14. 5. 1924. godine u selu Dučice, opština Nikšić; domaćica; Crnogorka. U prvim ustaničkim danima pristupa NOB—u i aktivno izvršava razne zadatke. Pripada terenskoj par-tizanskoj četi ,sve do proljeća 1942, kada se priključuje Omladinskom bataljonu Nikšićkog NOP odreda. U 5. proletersku crnogorsku brigadu stupa na dan njenog formiranja 12. juna 1942. g. u 2. četu 2. bataljona, gdje ostaje do maja 1943. i učestvuje u velikim borbama i poduhvatima brigade. Od maja do septembra 1943. na terenu radi ilegalno. Od septembra 1943. do januara 1944. omladinski je rukovodilac pri Komandi mjesta u župi nikšićkoj. Od januara do aprila 1944. nalazi se na sanitetskom krusu pri štabu Nikšićkog NOP odreda. Poslije završenog kursa raspoređena je za referenta saniteta 2. bataljona 5. proleterske crnogorske brigade, gdje ostaje do marta 1946. godine. I kao lborac i kao sanitetski radnik u jedinicama NOVJ i kao politički radnik na terenu, svuda je ispoljavala hrabrost i odvažnost ne žaleći truda i napora da predano i disciplinovano izvršava sve povjerene zadatke. Marta 1946. upućena je na liječenje, na Golnik. Umrla je krajem 1947. godine. Clan SKOJ-a od 1942, a član KPJ od aprila 1943. Nosilac je „Partizanske spomenice 1941.”. Odlikovana Ordenom za hrabrost, Ordenom zasluga za narod sa srebrnim zracima i Ordenom bratstva i jedinstva sa srebrnim vijencem. Imala je čin potporučnika JNA.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=137",
+        "source_page": 133
+      }
+    ],
+    "birth_date": "14.05.1924"
   },
   {
     "soldier_id": "0041001584",
@@ -17884,11 +17904,11 @@
     "party": "SKOJ"
   },
   {
-    "last_name": "Kuakić",
+    "last_name": "Kljakić",
     "middle_name": "Đorđija",
     "first_name": "Slobodan",
     "fathers_name": "Đorđije",
-    "full_name": "Kuakić Đorđija Slobodan",
+    "full_name": "Kljakić Đorđija Slobodan",
     "additional_info": "borac 3. čete 1. bataljona, rođen 1926, Nikšić, đak, Crnogorac, u NOB od početka 1943, član KPJ, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943.",
     "birth_year": "1926",
     "pdf_page": 31,
@@ -17906,7 +17926,41 @@
     "death_place": "Sutjeska, Tjentište",
     "rank": "borac",
     "unit_detail": "3. četa, 1. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9080000472",
+        "name": "Kljakić Đorđije Slobodan",
+        "additional_info": "Imena palih boraca u toku NOR-a, iz sreza nikšićkog: rođen 1926, Nikšić; poginuo 1943, Sutjeska",
+        "pdf_file": "niksicki-odred-pali-borci.pdf",
+        "pdf_page": 10,
+        "pdf_x": 17.5,
+        "pdf_y": 433.6,
+        "pdf_x_end": 365.3,
+        "pdf_y_end": 444.3,
+        "ref_book": "niksicki-odred-pali-borci"
+      },
+      {
+        "soldier_id": "9035007729",
+        "name": "Kljakić Đorđijev Slobodan",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Nikšić: godina rođenja 1926; mjesto rođenja Nikšić; godina smrti 1943; mjesto pogibije Sutjeska",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 195,
+        "pdf_x": 93.4,
+        "pdf_y": 157.6,
+        "pdf_x_end": 488.7,
+        "pdf_y_end": 166.8,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023004274",
+        "name": "Kljakić (Đorđe) Slobodan",
+        "additional_info": "rođen 1926, Nikšić. Srbin, poginuo 1943. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=125",
+        "source_page": 125,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ]
   },
   {
     "last_name": "Kuka",
@@ -22425,7 +22479,7 @@
     "first_name": "Miloje",
     "fathers_name": "Đorđe",
     "full_name": "Matijašević Đorđa Miloje",
-    "additional_info": "borac 2. bataljona, rođen 1907, Orah, Nikšić, zemljoradnik, Crnogorac, u NOB od'l941. Umro 1947. godine.",
+    "additional_info": "borac 2. bataljona, rođen 1907, Orah, Nikšić, zemljoradnik, Crnogorac, u NOB od'1941. Umro 1947. godine.",
     "birth_year": "1907",
     "pdf_page": 45,
     "pdf_y": 82.3,
@@ -24283,7 +24337,7 @@
     "first_name": "Blažo",
     "fathers_name": "Simo",
     "full_name": "Milić Sime Blažo",
-    "additional_info": "boray 3. čete 3. bataljona, rođen 1922. godine, Duge, Prozor, zemljoradnik, Srbin.",
+    "additional_info": "borac 3. čete 3. bataljona, rođen 1922. godine, Duge, Prozor, zemljoradnik, Srbin.",
     "birth_year": "1922",
     "pdf_page": 48,
     "pdf_y": 56.0,
@@ -24295,6 +24349,7 @@
     "birth_place": "Duge, Prozor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon"
   },
   {
@@ -32023,10 +32078,10 @@
   {
     "last_name": "Radović",
     "middle_name": "Mihaila",
-    "first_name": "Vid",
+    "first_name": "Vidak",
     "fathers_name": "Mihailo",
-    "full_name": "Radović Mihaila Vid",
-    "additional_info": "zvani Ak Kića; borac 2. čete 2. bataljona, rođen 1926, Trbušće, Foča, radnik, Jugosloven, u NOB od 1941, član SKOJ-a od 1944, krajem rata komandir voda.",
+    "full_name": "Radović Mihaila Vidak",
+    "additional_info": "zvani Kića; borac 2. čete 2. bataljona, rođen 1926, Trbušće, Foča, radnik, Jugosloven, u NOB od 1941, član SKOJ-a od 1944, krajem rata komandir voda.",
     "birth_year": "1926",
     "pdf_page": 62,
     "pdf_y": 106.4,
@@ -32035,12 +32090,12 @@
     "pdf_file": "borci-sutjeske-5-proleterska.pdf",
     "soldier_id": "0041001080",
     "pdf_x_end": 366.4,
+    "party": "SKOJ 1944",
     "birth_place": "Trbušće, Foča",
     "ethnicity": "Jugosloven",
     "occupation": "radnik",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "party": "SKOJ 1944"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Radović",
@@ -34399,11 +34454,11 @@
     "unit_detail": "5. bataljon"
   },
   {
-    "last_name": "Seeerović",
+    "last_name": "Seferović",
     "middle_name": "Muharema",
     "first_name": "Mujo",
     "fathers_name": "Muharem",
-    "full_name": "Seeerović Muharema Mujo",
+    "full_name": "Seferović Muharema Mujo",
     "additional_info": "borac 2. čete 3. bataljona, rođen 1926, Oplećani, Duvno, zemljoradnik, Musliman, u NOB od avgusta 1942, član SKOJ-a, poginuo na Sutjesci juna 1943. Borci Sutjeske",
     "birth_year": "1926",
     "pdf_page": 66,
@@ -34421,7 +34476,17 @@
     "death_place": "Sutjeska",
     "rank": "borac",
     "unit_detail": "2. četa, 3. bataljon",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "9022016172",
+        "name": "Seferović (Muharem) Mujo",
+        "additional_info": "rođen 1927, Oplećani (Duvno). Musliman, poginuo 1943. u NOBu, Zelengora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1317",
+        "source_page": 1317,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Seferović",
@@ -35238,11 +35303,11 @@
     "party": "KPJ 1944"
   },
   {
-    "last_name": "Srzentjć",
+    "last_name": "Srzentić",
     "middle_name": "Ivana",
     "first_name": "Ante",
     "fathers_name": "Ivan",
-    "full_name": "Srzentjć Ivana Ante",
+    "full_name": "Srzentić Ivana Ante",
     "additional_info": "desetar u 2. bataljonu, rođen 1922, Gdinj, Hvar, zemljoradnik, Hrvat, u NOB od oktobra 1942, član SKOJ-a, zarobljen na Sutjesci 13. juna 1943. i odveden u nemački logor Aušvic, gde je ubijen.",
     "birth_year": "1922",
     "pdf_page": 67,
@@ -35258,7 +35323,23 @@
     "death_type": "ubijen",
     "rank": "desetar",
     "unit_detail": "2. bataljon",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "9021015476",
+        "name": "Srzentić (Ivan) Ante",
+        "additional_info": "rođen 1922, Gdinj (Hvar). Hrvat, umro 1943. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=760",
+        "source_page": 760,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Stamatović",
@@ -39170,7 +39251,7 @@
     "first_name": "Dušan",
     "fathers_name": "Risto",
     "full_name": "Vujičić Riste Dušan",
-    "additional_info": "komandir 1. čete 3. bataljona, rođen 1912, Dolovi, Nikšić, podoficir Jugoslovenske vojske, Crnogorac, u NOB od 1941, član KPJ od 1939, poginuo na Sutjesci, kod Tjentišta, l3. juna 1943. godine.",
+    "additional_info": "komandir 1. čete 3. bataljona, rođen 1912, Dolovi, Nikšić, podoficir Jugoslovenske vojske, Crnogorac, u NOB od 1941, član KPJ od 1939, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943. godine.",
     "birth_year": "1912",
     "pdf_page": 78,
     "pdf_y": 39.4,
@@ -39179,14 +39260,14 @@
     "pdf_file": "borci-sutjeske-5-proleterska.pdf",
     "soldier_id": "0041001333",
     "pdf_x_end": 182.2,
+    "death_place": "Sutjeska, Tjentište, l",
+    "party": "KPJ 1939",
     "birth_place": "Dolovi, Nikšić",
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
-    "death_date": "03.06.1943",
-    "death_place": "Sutjeska, Tjentište, l",
-    "unit_detail": "1. četa, 3. bataljon",
+    "death_date": "13.06.1943",
     "rank": "komandir čete",
-    "party": "KPJ 1939",
+    "unit_detail": "1. četa, 3. bataljon",
     "other_sources": [
       {
         "soldier_id": "9023004617",
@@ -40974,7 +41055,7 @@
       {
         "soldier_id": "0041010454",
         "name": "Vučinić Vučine Anka",
-        "additional_info": "udata Matijašević; Rođena 24. 10. 1927. godine, u selu Rogami, opština Titograd; đak; Crnogorka. Potiče iz porodice čiji su svi članovi pristupili NOP-u od prvog dana ustanka. Učesnik je trinaestojulskog ustanka 1941. i nosilac „Partizanske spomenice 1941.\" С1ап SKOJ—a je od maja 1942, a član KPJ od avgusta 1943. godine. Do formiranja 5. brigade bila je borac Zetskog odreda. Pripadnik je 5. proleterske crnogorske brigade od njenog formiranja, 12. juna 1942. godine, u 4. bataljonu. U brigadi je bila borac i kurir do juna 1943. godine. Borci brigade su njena braća Luka i Spaso i roditelji Ljubica i Vučina. Od juna 1943. godine do decembra iste godine bila je ilegalac na terenu opštine Titograd, Danilovgrad i Cetinje. Formiranjem 7. omladinske crnogorske brigade „Budo Tomović” raspoređena је u njen 3. bataljon, na dužnost političkog delegata voda, a od avgusta 1944. rukovodilac je SKOJ-a prištapskih jedinica 3. udarne divizije. Od januara da apnila 1945. sekretar je Obaveštajnog odeljenja II udarnog korpusa u II jugoslovenskoj armiji. Učestvujući u prvim redovima borbe, naročito do slavne bitke na Sutjesci, gdje je pokazala izvanrednu hrabrost i odvažnost, Anka je za sve vrijeme rata, iako gotovo dijete, svojim primjerom pokazivala kako se treba boriti za ideje socijalizma. Poslije oslobođenja završila je srednju partijsku školu „Euro Baković” u Beogradu i bila na raznim dužnostima u JNA. Penzionisana je 31. decembra 1973. u činu potpukovnika. Odlikovana Ordenom za hrabrost, Medaljom za hrabrost, Medaljom za hrabrost strane države, Ordenom bratstva i jedinstva sa srebrnim vijencem, Ordenom zasluge za narod sa srebrnim vijencem, Ordenom za vojne zasluge sa srebrnom zvijezdom, Ordenom za vojne zasluge sa zlatnim mačevima, Ordenom narodne armije sa srebrnom zvijezdom i dobitnik Plakete VKOS druga Tita. Danas živi u Beogradu i aktivno radi u društveno—političkim organizacijama.",
+        "additional_info": "udata Matijašević; Rođena 24. 10. 1927. godine, u selu Rogami, opština Titograd; đak; Crnogorka. Potiče iz porodice čiji su svi članovi pristupili NOP-u od prvog dana ustanka. Učesnik je trinaestojulskog ustanka 1941. i nosilac „Partizanske spomenice 1941.\" С1ап SKOJ—a je od maja 1942, a član KPJ od avgusta 1943. godine. Do formiranja 5. brigade bila je borac Zetskog odreda. Pripadnik je 5. proleterske crnogorske brigade od njenog formiranja, 12. juna 1942. godine, u 4. bataljonu. U brigadi je bila borac i kurir do juna 1943. godine. Borci brigade su njena braća Luka i Spaso i roditelji Ljubica i Vučina. Od juna 1943. godine do decembra iste godine bila je ilegalac na terenu opštine Titograd, Danilovgrad i Cetinje. Formiranjem 7. omladinske crnogorske brigade „Budo Tomović” raspoređena је u njen 3. bataljon, na dužnost političkog delegata voda, a od avgusta 1944. rukovodilac je SKOJ-a prištapskih jedinica 3. udarne divizije. Od januara da aprila 1945. sekretar je Obaveštajnog odeljenja II udarnog korpusa u II jugoslovenskoj armiji. Učestvujući u prvim redovima borbe, naročito do slavne bitke na Sutjesci, gdje je pokazala izvanrednu hrabrost i odvažnost, Anka je za sve vrijeme rata, iako gotovo dijete, svojim primjerom pokazivala kako se treba boriti za ideje socijalizma. Poslije oslobođenja završila je srednju partijsku školu „Euro Baković” u Beogradu i bila na raznim dužnostima u JNA. Penzionisana je 31. decembra 1973. u činu potpukovnika. Odlikovana Ordenom za hrabrost, Medaljom za hrabrost, Medaljom za hrabrost strane države, Ordenom bratstva i jedinstva sa srebrnim vijencem, Ordenom zasluge za narod sa srebrnim vijencem, Ordenom za vojne zasluge sa srebrnom zvijezdom, Ordenom za vojne zasluge sa zlatnim mačevima, Ordenom narodne armije sa srebrnom zvijezdom i dobitnik Plakete VKOS druga Tita. Danas živi u Beogradu i aktivno radi u društveno—političkim organizacijama.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=269",
         "source_page": 265
       }
@@ -45960,7 +46041,7 @@
     "first_name": "Gospava",
     "fathers_name": "Gligo",
     "full_name": "Bajić Glige Gospava",
-    "additional_info": "rođena Milinović; Rođena 1920. godine u selu Donje Vukovsko, opština Kupres, domaćica; Srpkinja. Rano se opredijelila za NOP. Zajedno sa svojim mužem Milom Oranom pristupila je aktivno i organizovano radu na pomaganju NOP-a. Pripadali su terenskoj partizanskoj četi sve do novembra 1942. godine. U 5. proletersku crnogorsku brigadu stupila novembra 1942. Sa svojom jedinicom učestvovala u svim akcijama i borbama protiv okupatora i domaćih izdajnika, počev od Livna, Prozora, Konjica, Nevesinja, Pive, Vučeva i Sutjeske (iz koje je uspjela izaći sa glavninom partizanskih snaga) i istočne Bosne. U brigadi ostaje do septembra 1943, kada prelazi u krajiške jedinice inastavlja borbu sve do konačnog oslobođenja zemlje. Demobilisana poslije oslobođenja, vratila se u svoje Vukovsko, gdje i danas živi i aktivno radi u društveno-–političkim organizacijama.",
+    "additional_info": "rođena Milinović; Rođena 1920. godine u selu Donje Vukovsko, opština Kupres, domaćica; Srpkinja. Rano se opredijelila za NOP. Zajedno sa svojim mužem Milom Oranom pristupila je aktivno i organizovano radu na pomaganju NOP-a. Pripadali su terenskoj partizanskoj četi sve do novembra 1942. godine. U 5. proletersku crnogorsku brigadu stupila novembra 1942. Sa svojom jedinicom učestvovala u svim akcijama i borbama protiv okupatora i domaćih izdajnika, počev od Livna, Prozora, Konjica, Nevesinja, Pive, Vučeva i Sutjeske (iz koje je uspjela izaći sa glavninom partizanskih snaga) i istočne Bosne. U brigadi ostaje do septembra 1943, kada prelazi u krajiške jedinice i nastavlja borbu sve do konačnog oslobođenja zemlje. Demobilisana poslije oslobođenja, vratila se u svoje Vukovsko, gdje i danas živi i aktivno radi u društveno-–političkim organizacijama.",
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=49",
     "source_page": 45,
@@ -46256,7 +46337,7 @@
     "first_name": "Gospava",
     "fathers_name": "Jakov",
     "full_name": "Bjelica Jakova Gospava",
-    "additional_info": "rođena Koprivica; Rođena je 1920. godine u selu Cerovo Brdo, opština Banjani, u siromašnoj seljačkoj porodici. Po završetku osnovne škole ostaje kod roditelja sve do udaje 1940; bavi se raznim poljoprivrednim i domaćinskvim poslovima; Crnogorka. Pod uticajem svoga muža i opšte plime ustanka u Crnoj Gori Gospava se već od 1941. opredjeljuje za NOP, učestvujući u raznim aktivnostima u svom selu i bližoj okolini. Njen muž Blažo Bjelica, od početka ustanka stupa u partizanške jedinice, a 12. juna 1942. u stroju je 5. crnogorske brigade, pri njenom formiranju u kojoj se bori do svoje junačke pogibije 23. maja 1943, na Orah-u komandujući četom. Kada je dio 5. proleterske brigade došao u Crnu Goru poslije teških okršaja na Sutjesci, Gospava se avgusta 1943. priključuje ovoj proslavljean brigadi, nastavljajući u njenim uslovima borbu koju je od formiranja brigade započeo njen suprug Blažo. Učestvujući, zatim, u akcijama i bojevima Brigade, najprije kao borac, a zatim kao četna bolničarka, Gospava je, pokazujući u svim prilikama hrabrost, disciplinovanost i druželjublje, veoma savjesno izvršavala sve dobijene zadatke, posebno se ističući u pružanju pomoći ranjenim drugovima. Na jednom ta·kvom zadatku hrabro je poginula 1945. kod Skofja Loke, dajući svoj život u danima teških borbi za konačno oslobođenje zemlje.",
+    "additional_info": "rođena Koprivica; Rođena je 1920. godine u selu Cerovo Brdo, opština Banjani, u siromašnoj seljačkoj porodici. Po završetku osnovne škole ostaje kod roditelja sve do udaje 1940; bavi se raznim poljoprivrednim i domaćinskvim poslovima; Crnogorka. Pod uticajem svoga muža i opšte plime ustanka u Crnoj Gori Gospava se već od 1941. opredjeljuje za NOP, učestvujući u raznim aktivnostima u svom selu i bližoj okolini. Njen muž Blažo Bjelica, od početka ustanka stupa u partizanske jedinice, a 12. juna 1942. u stroju je 5. crnogorske brigade, pri njenom formiranju u kojoj se bori do svoje junačke pogibije 23. maja 1943, na Orah-u komandujući četom. Kada je dio 5. proleterske brigade došao u Crnu Goru poslije teških okršaja na Sutjesci, Gospava se avgusta 1943. priključuje ovoj proslavljean brigadi, nastavljajući u njenim uslovima borbu koju je od formiranja brigade započeo njen suprug Blažo. Učestvujući, zatim, u akcijama i bojevima Brigade, najprije kao borac, a zatim kao četna bolničarka, Gospava je, pokazujući u svim prilikama hrabrost, disciplinovanost i druželjublje, veoma savjesno izvršavala sve dobijene zadatke, posebno se ističući u pružanju pomoći ranjenim drugovima. Na jednom ta·kvom zadatku hrabro je poginula 1945. kod Skofja Loke, dajući svoj život u danima teških borbi za konačno oslobođenje zemlje.",
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=60",
     "source_page": 56,
@@ -47840,18 +47921,18 @@
     "first_name": "Jovanka",
     "fathers_name": "Radonja",
     "full_name": "Jovanović Radonje Jovanka",
-    "additional_info": "udata Savić; Rođena 1920. godine u selu Lutovo, opština Titograd; domaćica; Crnogorka. Ostala je rano bez roditelja (majka joj je umrla, a otac pošao u svijet trbuhom za kruhom), te je živjela uglavnom sa svojom bakom, rasla uz nju i ·bavila se poljskim i drugim domaćim poslovima. Uspijela je da završi samo nekoliko razreda osnovne škole. Po prirodi bistra i vrlo radoznala, pod uticajem naprednih ideja omladine, koje su zahvatile i njen kraj, rano se opredijelila za njih 1 u oči rata primljena je u SKOJ. Još u prvim ustaničkim danima u svom mjestu pristupila NOB—u i ostaje stalno aktivna i za vrijeme četničke strahovlade. Oktobra 1943. postala je borac 2. bataljona 5. proleterske brigare. Obavljala je razne dužnosti, a bila je i referent saniteta u bataljonu. Sa svojom jedinicom učestvuje u svim borbama počev od Crne Gore preko Bosne sve do Zidanog Mosta (Mojkovac, Jadovnik, Sarajevo, Karlovac i dr.). U borbi se isticala svojom hrabrošću i junaštvom. Evo šta je o njenoj hrabrosti zapisano u 3—knjizi Zbornika sjećanja 5. ·brigade: „Aprila 1944. godine pred napad na Mojkovac 2. četa 2. bataljona dobila je zadatak da likvidira četničku posadu u bunkerima, koja je obezbeđivala most na rijeci Tari ispred Mojkovca. Bilo nam je jasno da će neprijatelj uporno braniti most. Ko će u bombaše, tiho je upitao komandir Madžo? Tajac je prva prekinula Jovanka Jovanović, Lutovac, hrabra djevojka iz Bratonožića. Za njom se potom javila cijela četa. Sve je teklo po planu i most je zauzet, a potom su naše jedinice zauzele i oslobodile Mojkovac...” Clan KPJ je od 1944. godine. Demobilisana je iz JNA 1945; udala se i kao kolonist živjela u selu Ravno, u Vojvodini, sve do 1974. godine, kada je umrla.",
+    "additional_info": "udata Savić; Rođena 1920. godine u selu Lutovo, opština Titograd; domaćica; Crnogorka. Ostala je rano bez roditelja (majka joj je umrla, a otac pošao u svijet trbuhom za kruhom), te je živjela uglavnom sa svojom bakom, rasla uz nju i ·bavila se poljskim i drugim domaćim poslovima. Uspijela je da završi samo nekoliko razreda osnovne škole. Po prirodi bistra i vrlo radoznala, pod uticajem naprednih ideja omladine, koje su zahvatile i njen kraj, rano se opredijelila za njih 1 u oči rata primljena je u SKOJ. Još u prvim ustaničkim danima u svom mjestu pristupila NOB—u i ostaje stalno aktivna i za vrijeme četničke strahovlade. Oktobra 1943. postala je borac 2. bataljona 5. proleterske brigade. Obavljala je razne dužnosti, a bila je i referent saniteta u bataljonu. Sa svojom jedinicom učestvuje u svim borbama počev od Crne Gore preko Bosne sve do Zidanog Mosta (Mojkovac, Jadovnik, Sarajevo, Karlovac i dr.). U borbi se isticala svojom hrabrošću i junaštvom. Evo šta je o njenoj hrabrosti zapisano u 3—knjizi Zbornika sjećanja 5. ·brigade: „Aprila 1944. godine pred napad na Mojkovac 2. četa 2. bataljona dobila je zadatak da likvidira četničku posadu u bunkerima, koja je obezbeđivala most na rijeci Tari ispred Mojkovca. Bilo nam je jasno da će neprijatelj uporno braniti most. Ko će u bombaše, tiho je upitao komandir Madžo? Tajac je prva prekinula Jovanka Jovanović, Lutovac, hrabra djevojka iz Bratonožića. Za njom se potom javila cijela četa. Sve je teklo po planu i most je zauzet, a potom su naše jedinice zauzele i oslobodile Mojkovac...” Clan KPJ je od 1944. godine. Demobilisana je iz JNA 1945; udala se i kao kolonist živjela u selu Ravno, u Vojvodini, sve do 1974. godine, kada je umrla.",
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=116",
     "source_page": 112,
     "soldier_id": "0041010127",
+    "party": "KPJ",
     "birth_place": "Lutovo",
     "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "death_type": "umro",
     "rank": "referent saniteta",
-    "unit_detail": "2. četa, 2. bataljon",
-    "party": "KPJ"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Jovanović",
@@ -48302,26 +48383,6 @@
     "death_date": "08.1966",
     "rank": "bolničarka, skojevski rukovodilac",
     "party": "SKOJ"
-  },
-  {
-    "last_name": "Kostić",
-    "middle_name": "Zajova",
-    "first_name": "Jelena",
-    "fathers_name": "Zajova",
-    "full_name": "Kostić Zajova Jelena",
-    "additional_info": "Rođena 14. 5. 1924. godine u selu Dučice, opština Nikšić; domaćica; Crnogorka. U prvim ustaničkim danima pristupa NOB—u i aktivno izvršava razne zadatke. Pripada terenskoj par-tizanskoj četi ,sve do proljeća 1942, kada se priključuje Omladinskom bataljonu Nikšićkog NOP odreda. U 5. proletersku crnogorsku brigadu stupa na dan njenog formiranja 12. juna 1942. g. u 2. četu 2. bataljona, gdje ostaje do maja 1943. i učestvuje u velikim borbama i poduhvatima brigade. Od maja do septembra 1943. na terenu radi ilegalno. Od septembra 1943. do januara 1944. omladinski je rukovodilac pri Komandi mjesta u župi nikšićkoj. Od januara do aprila 1944. nalazi se na sanitetskom krusu pri štabu Nikšićkog NOP odreda. Poslije završenog kursa raspoređena je za referenta saniteta 2. bataljona 5. proleterske crnogorske brigade, gdje ostaje do marta 1946. godine. I kao lborac i kao sanitetski radnik u jedinicama NOVJ i kao politički radnik na terenu, svuda je ispoljavala hrabrost i odvažnost ne žaleći truda i napora da predano i disciplinovano izvršava sve povjerene zadatke. Marta 1946. upućena je na liječenje, na Golnik. Umrla je krajem 1947. godine. Clan SKOJ-a od 1942, a član KPJ od aprila 1943. Nosilac je „Partizanske spomenice 1941.”. Odlikovana Ordenom za hrabrost, Ordenom zasluga za narod sa srebrnim zracima i Ordenom bratstva i jedinstva sa srebrnim vijencem. Imala je čin potporučnika JNA.",
-    "birth_year": "1924",
-    "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=137",
-    "source_page": 133,
-    "soldier_id": "0041010158",
-    "birth_place": "Dučice",
-    "ethnicity": "Crnogorka",
-    "occupation": "domaćica",
-    "death_type": "umro",
-    "death_date": "krajem 1947",
-    "unit_detail": "2. bataljon",
-    "party": "SKOJ 1942, KPJ 1943",
-    "birth_date": "14.05.1924"
   },
   {
     "last_name": "Kovačević",
@@ -48828,7 +48889,7 @@
     "first_name": "Spasenija",
     "fathers_name": "Radoje",
     "full_name": "Lješković Radoja Spasenija",
-    "additional_info": "Rođena 28. maja 1883. godine u selu Starač (Morača); domaćica; Crnogorka. U prvom svjetskom ratu ostala je bez tri sina, poginuli kao djeca. Spasenija je jedna od onih majki koje su sa svim članovima svojih porodica otiš— ·u narodnooslobodilački rat i na tome putu ostajale bez svoje djece ili i same ginule. U NOP je stupila prvih dana ustanka u Crnoj Gori zajedno sa mužom Mašanom, kćeri Gospavom i sinovima: Ilijom, Radosavom, Blažom i Nikolom, koji je proglašen za narodnog heroja Jugoslavije. Svi oni latiše se oružja i krenuše u borbu. Do formiranja 5. brigade pripadala je Pješivačkom partizanskom bataljonu. Воrac 5. proleterske crnogorske brigade je od njenog formiranja, 12. juna 1942. godine, u 2. četi 2. bataljona, a kasnije u ešalomu Centralne bolnice. Prešla je čuveni put ove brigade od Vrbnice do Prozora. U IV neprijateljskoj ofanzivi sa Centralnom bolnicom povlači se za Crnu Goru, a u V neprijateljskoj ofanzivi opet nazad za Bosnu. Na Sutjeski joj ginu: muž i sin Nikola. Spasenija je tom prilikom teško ranjena u nogu, ali uspijeva da se izvuče sa Sutjeske i priključi Majevičkoj brigadi. Ponovo je ranjena kod Brčkog, decembra 1943. godine. Po oslobođenju Nikšića, septembra 1944. godine, vraća se u Crnu Goru. Približavajući se oslobodenom Nikšiću u kamionu punom boraca, prva je zapjevala: „Naša borba zahtijeva, kad se gine da se pjeva . . .” Nastanila se u Nikšiću i živjela sve do svoje smrti, 1973. godine. U ratu je izgubila tri sina, a četvrti je poginuo u avionskoj nesreći 1946. godine. Majka Spasenija je bila živi primjer majke-heroine koja nije žalila ništa kada je bila u pitanju sloboda njenog naroda. Nosilac je „Partizanske spomenice 194l.\". Odlikovana je sa više ratnih i mirnodopskih odlikovanja: Ordenom za hrabrost, Ordenom bratstva i jedinstva, Ordenom zasluga za narod. Ratni je vojni invalid. O Spaseniji, majci—heroju i partizanskom borcu, velikom stradalniku i „nepresušivom izvoru koji sve pobjeđuje\", trebalo bi napisati posebnu spomen—knjigu, jer njeno držanje u NOR—u i revoluciji i njeno ponašanje u poslijeratnom periodu pokazuje i dokazuje da narod koji ima takve žene i majke-–gorostase zaslužuje istinsku slobodu i dostojanstvo.",
+    "additional_info": "Rođena 28. maja 1883. godine u selu Starač (Morača); domaćica; Crnogorka. U prvom svjetskom ratu ostala je bez tri sina, poginuli kao djeca. Spasenija je jedna od onih majki koje su sa svim članovima svojih porodica otiš— ·u narodnooslobodilački rat i na tome putu ostajale bez svoje djece ili i same ginule. U NOP je stupila prvih dana ustanka u Crnoj Gori zajedno sa mužom Mašanom, kćeri Gospavom i sinovima: Ilijom, Radosavom, Blažom i Nikolom, koji je proglašen za narodnog heroja Jugoslavije. Svi oni latiše se oružja i krenuše u borbu. Do formiranja 5. brigade pripadala je Pješivačkom partizanskom bataljonu. Воrac 5. proleterske crnogorske brigade je od njenog formiranja, 12. juna 1942. godine, u 2. četi 2. bataljona, a kasnije u ešalomu Centralne bolnice. Prešla je čuveni put ove brigade od Vrbnice do Prozora. U IV neprijateljskoj ofanzivi sa Centralnom bolnicom povlači se za Crnu Goru, a u V neprijateljskoj ofanzivi opet nazad za Bosnu. Na Sutjeski joj ginu: muž i sin Nikola. Spasenija je tom prilikom teško ranjena u nogu, ali uspijeva da se izvuče sa Sutjeske i priključi Majevičkoj brigadi. Ponovo je ranjena kod Brčkog, decembra 1943. godine. Po oslobođenju Nikšića, septembra 1944. godine, vraća se u Crnu Goru. Približavajući se oslobodenom Nikšiću u kamionu punom boraca, prva je zapjevala: „Naša borba zahtijeva, kad se gine da se pjeva . . .” Nastanila se u Nikšiću i živjela sve do svoje smrti, 1973. godine. U ratu je izgubila tri sina, a četvrti je poginuo u avionskoj nesreći 1946. godine. Majka Spasenija je bila živi primjer majke-heroine koja nije žalila ništa kada je bila u pitanju sloboda njenog naroda. Nosilac je „Partizanske spomenice 1941.\". Odlikovana je sa više ratnih i mirnodopskih odlikovanja: Ordenom za hrabrost, Ordenom bratstva i jedinstva, Ordenom zasluga za narod. Ratni je vojni invalid. O Spaseniji, majci—heroju i partizanskom borcu, velikom stradalniku i „nepresušivom izvoru koji sve pobjeđuje\", trebalo bi napisati posebnu spomen—knjigu, jer njeno držanje u NOR—u i revoluciji i njeno ponašanje u poslijeratnom periodu pokazuje i dokazuje da narod koji ima takve žene i majke-–gorostase zaslužuje istinsku slobodu i dostojanstvo.",
     "birth_year": "1883",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=147",
     "source_page": 143,
@@ -50069,16 +50130,17 @@
     "first_name": "Vojislava",
     "fathers_name": "Arsa",
     "full_name": "Nikezić Arsa Vojislava",
-    "additional_info": "udata Malešev; Rođena 1920. godine u selu Bezjovo (Kuči), opština Titograd; domaćica; Ornogorka. Do okupacije, aprila 1941, završila je osnovnu školu i bavila se domaćinstvom. Mada nije bila organizovana, pod uticajem okoline i zahvaljujući radu partijske organizacije, bila je pristalica naprednog revolucionarnog ро– kreta. Odmah poslije ustanka uključuje se u omladinski ·pokret i po direktivama omladinske organizacije učestvuje u izvršavanju raznih zadataka: prikupljanju hrane, sanitetskog materijala, brizi oko ranjenih i lbolesnih pairtizana, sakupljanju i prenošenju obavještenja itd. Zbog aktivnosti u NOP—u ona i cijela njena porodica bile su progonjene i maltretirane od strane četnika, a decembra 1942. ·ona je uhapšena predata Italijanima, koji su je sproveli u logor u Zabjelu ·u Podgorici, a potom je internirana u koncentracioni logor u Baru, gdje ostaje sve do oktobra 1943. godine, kada je logor ra·sformiran. Ponovo na slobodi vraća se u svoje selo i nastavlja da radi za NOP. Po dolasku 5. ibrigade na teritoriju Kuća, u jesen 1943. godine, stupa u redove brigade i to kao lborac, a zatim kao četna bolničarka u 2. četi 3. bataljona. Sa 5. prigadom učestvuje u mnogim borbama kroz Crnu Goru, zatim Bosnu i sve do Slovenije i oslobođenja zemlje; isticala se h·raibrošću, požrtvovanjem i humanošću, zbog čega je bila cijenjena i voljena. Član KPJ od kraja 1944 (u kojoj ostaje do 1952. godine). Za hrabrost i-spoljenu u borbi odlikovana je Ordenom i Medaljom za hrabrost. Poslije demobilizacije, 6. februara 1946., dolazi u svoje selo, a zatim se septembra iste godine, kao kolonist, naseljava u Vojvodini, u selu Zmajevo, gdje se zapošljava u SRZ „Budućnost\" i tamo radi do 1966. godine, kada odlazi u penziju. Iste godine, iz zdravstvenih razloga, prelazi u Barr, gdje se kao penzioner uključuje u rad masovnih onganizacija.",
+    "additional_info": "udata Malešev; Rođena 1920. godine u selu Bezjovo (Kuči), opština Titograd; domaćica; Crnogorka. Do okupacije, aprila 1941, završila je osnovnu školu i bavila se domaćinstvom. Mada nije bila organizovana, pod uticajem okoline i zahvaljujući radu partijske organizacije, bila je pristalica naprednog revolucionarnog ро– kreta. Odmah poslije ustanka uključuje se u omladinski ·pokret i po direktivama omladinske organizacije učestvuje u izvršavanju raznih zadataka: prikupljanju hrane, sanitetskog materijala, brizi oko ranjenih i lbolesnih pairtizana, sakupljanju i prenošenju obavještenja itd. Zbog aktivnosti u NOP—u ona i cijela njena porodica bile su progonjene i maltretirane od strane četnika, a decembra 1942. ·ona je uhapšena predata Italijanima, koji su je sproveli u logor u Zabjelu ·u Podgorici, a potom je internirana u koncentracioni logor u Baru, gdje ostaje sve do oktobra 1943. godine, kada je logor ra·sformiran. Ponovo na slobodi vraća se u svoje selo i nastavlja da radi za NOP. Po dolasku 5. ibrigade na teritoriju Kuća, u jesen 1943. godine, stupa u redove brigade i to kao lborac, a zatim kao četna bolničarka u 2. četi 3. bataljona. Sa 5. prigadom učestvuje u mnogim borbama kroz Crnu Goru, zatim Bosnu i sve do Slovenije i oslobođenja zemlje; isticala se h·raibrošću, požrtvovanjem i humanošću, zbog čega je bila cijenjena i voljena. Član KPJ od kraja 1944 (u kojoj ostaje do 1952. godine). Za hrabrost i-spoljenu u borbi odlikovana je Ordenom i Medaljom za hrabrost. Poslije demobilizacije, 6. februara 1946., dolazi u svoje selo, a zatim se septembra iste godine, kao kolonist, naseljava u Vojvodini, u selu Zmajevo, gdje se zapošljava u SRZ „Budućnost\" i tamo radi do 1966. godine, kada odlazi u penziju. Iste godine, iz zdravstvenih razloga, prelazi u Barr, gdje se kao penzioner uključuje u rad masovnih onganizacija.",
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=179",
     "source_page": 175,
     "soldier_id": "0041010265",
+    "party": "KPJ 1944",
     "birth_place": "Bezjovo (Kuči)",
+    "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "rank": "bolničarka",
-    "unit_detail": "2. četa, 3. bataljon",
-    "party": "KPJ 1944"
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "last_name": "Nikezić",
@@ -50153,17 +50215,18 @@
     "first_name": "Jelisaveta",
     "fathers_name": "Staniša",
     "full_name": "Novović Staniše Jelisaveta",
-    "additional_info": "Rođena 2. 4. 1924. godine u selu Trepča, opština Andrijevica; domaćica; Ornogorka. Odrasla je u siromašnoj seljačkoj porodici, u bratstvu Novovića koje se od početka ustanka opredijelilo za NOR i revoluciju. Njen otac i stričevi aktivno su učestvovali u NOP—u. Jelisaveta je kao omladinka pripadala naprednom omladinskom pokretu još od julskih dana 1941. godine. Radila je u omladinskoj organizaciji obavljajući mnoge zadatke na terenu (prikupljanje dobrovoljnih priloga za partizane i izvršavanje kurirskih i drugih zadataka. U jesen 1943. primljena je u SKOJ 1 još je a-ktivnija. U aprilu 1944. stupila je u 5. proletersku crnogorsku brigadu. Kao borac 4. bataljona ističe se odvažnošću 1 požrtvovanjem i dosljednim isv – njavanjem zadataka, pa je u decembru 1944. primljena u KPJ. U borbama za Sarajevo, aprila 1945, posebno je zapažena njena odlučnost i hrabrost. Isto tako isticala se kao primjerna bolničarka u borbi za spasavanje ranjenika. U žestokim borbama koje je vodila 5. proleterska brigada na Generalskom stolu (Hrvatska) maja 1945. godine, Jelisaveta je junački poginula kao sanitetski referent čete, dajući tako svoj mladi život za bratstvo i jedinstvo naših naroda.",
+    "additional_info": "Rođena 2. 4. 1924. godine u selu Trepča, opština Andrijevica; domaćica; Crnogorka. Odrasla je u siromašnoj seljačkoj porodici, u bratstvu Novovića koje se od početka ustanka opredijelilo za NOR i revoluciju. Njen otac i stričevi aktivno su učestvovali u NOP—u. Jelisaveta je kao omladinka pripadala naprednom omladinskom pokretu još od julskih dana 1941. godine. Radila je u omladinskoj organizaciji obavljajući mnoge zadatke na terenu (prikupljanje dobrovoljnih priloga za partizane i izvršavanje kurirskih i drugih zadataka. U jesen 1943. primljena je u SKOJ 1 još je a-ktivnija. U aprilu 1944. stupila je u 5. proletersku crnogorsku brigadu. Kao borac 4. bataljona ističe se odvažnošću 1 požrtvovanjem i dosljednim isv – njavanjem zadataka, pa je u decembru 1944. primljena u KPJ. U borbama za Sarajevo, aprila 1945, posebno je zapažena njena odlučnost i hrabrost. Isto tako isticala se kao primjerna bolničarka u borbi za spasavanje ranjenika. U žestokim borbama koje je vodila 5. proleterska brigada na Generalskom stolu (Hrvatska) maja 1945. godine, Jelisaveta je junački poginula kao sanitetski referent čete, dajući tako svoj mladi život za bratstvo i jedinstvo naših naroda.",
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=181",
     "source_page": 177,
     "soldier_id": "0041010271",
+    "party": "KPJ",
     "birth_place": "Trepča",
+    "ethnicity": "Crnogorka",
     "occupation": "domaćica",
     "death_type": "poginuo",
     "rank": "bolničarka, sanitetski referent čete",
     "unit_detail": "4. bataljon",
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "9035000383",
@@ -51628,7 +51691,7 @@
     "first_name": "Zora",
     "fathers_name": "Radule",
     "full_name": "Radulović Radula Zora",
-    "additional_info": "udata Đurović; Rođena 8. 5. 1922. godine u selu Tunjevo, opština Nikšić; domaćica; Crnogorka. Potiče iz porodice koja je od prvog dana ustanka aktivno učestvovala u borbi (roditelji, dva brata i dvije sestre). Jedan brat i sestra su joj strijeljani 1943. godine. Učesnik je NOR-a od jula 1944. godine, kao borac 1. čete 2. bataljona 5. proleterske crnogorske brigade. Sa brigadom je učestvovala u borbama oko Bijelog Polja, Kolašina, Berana, Andrijevice i dalje do Sarajeva. Po završenom sanitetskom kursu pri brigađi raspoređena je u akorpusnu ·bolnicu kao bolničarka. Poslije oslobođenja upućena je u Srednju medicinsku školu, 5. 10. 1945., koju je uspješno završila koncem 1947. godine. Unaprijeđena je u čin zastavnika i raspoređena u 33. diviziju. U JNA je ostala do penzionisanja, 1956. godine u činu kapetana. Savjesno i odgovorno je izvršavala postavljene zadatke. Član je KPJ od 28. jula 1945. godine. Odlikovana je Ordenom zasluga za narod sa srebrnom zvijezdom. Danas živi u Beogradu sa porodicom i, prema svojim mogućnostima aktivno radi u društveno-političkim organizacijama.",
+    "additional_info": "udata Đurović; Rođena 8. 5. 1922. godine u selu Tunjevo, opština Nikšić; domaćica; Crnogorka. Potiče iz porodice koja je od prvog dana ustanka aktivno učestvovala u borbi (roditelji, dva brata i dvije sestre). Jedan brat i sestra su joj strijeljani 1943. godine. Učesnik je NOR-a od jula 1944. godine, kao borac 1. čete 2. bataljona 5. proleterske crnogorske brigade. Sa brigadom je učestvovala u borbama oko Bijelog Polja, Kolašina, Berana, Andrijevice i dalje do Sarajeva. Po završenom sanitetskom kursu pri brigadi raspoređena je u akorpusnu ·bolnicu kao bolničarka. Poslije oslobođenja upućena je u Srednju medicinsku školu, 5. 10. 1945., koju je uspješno završila koncem 1947. godine. Unaprijeđena je u čin zastavnika i raspoređena u 33. diviziju. U JNA je ostala do penzionisanja, 1956. godine u činu kapetana. Savjesno i odgovorno je izvršavala postavljene zadatke. Član je KPJ od 28. jula 1945. godine. Odlikovana je Ordenom zasluga za narod sa srebrnom zvijezdom. Danas živi u Beogradu sa porodicom i, prema svojim mogućnostima aktivno radi u društveno-političkim organizacijama.",
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=216",
     "source_page": 212,
@@ -51837,7 +51900,23 @@
         "pdf_x_end": 502.8,
         "pdf_y_end": 396.1,
         "ref_book": "jevreji-jugoslavije-ucesnici-nor"
+      },
+      {
+        "soldier_id": "0043001046",
+        "name": "Romano Alberta Tinka",
+        "additional_info": "član politodela brigade, rođena 1922, Sarajevo, učenica, Jevrejka, u NOB od 1941, član KPJ od 1941, poginula u Donjoj Trnovi kod Ugljevika aprila 1944.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 59,
+        "pdf_x": 130.3,
+        "pdf_y": 181.8,
+        "pdf_x_end": 300.5,
+        "pdf_y_end": 235.2,
+        "unit_file": "10-hercegovacka-soldiers.json"
       }
+    ],
+    "death_place": "Donja Trnova, Ugljevik",
+    "borrowed": [
+      "death_place"
     ],
     "birth_date": "15.12.1922"
   },
@@ -53748,12 +53827,13 @@
     "first_name": "Danica",
     "fathers_name": "Lazar",
     "full_name": "Đurović Lazara Danica",
-    "additional_info": "udata Ivanović; Rođena 15. 5. 1925. godine u selu Orasi, opština Cetinje. Do okupacije zemlje završila je osnovnu školu, a zatim se u svojoj porodici bavila raznim domaćinskim poslovima; Grnogorka. Prije stupanja u jedinice NOVJ sarađivala je sa NOP--om, pomažući ga u skladu sa svojim mogućnostima. U 5. proletersku crnogorsku brigadu stupa septembra 1943, u 2. četu 2. bataljona. U brigadi ostaje do decembra 1944. kao borac i bolničarka. Uslijed promrzlina stečenih u borbama po zimi iz brigade је upućena u bolnicu kod Andrijevice i kako su је ljekari proglasili nesposobnom za operativne jedinice, upućena је na dalje liječenje na Cetinju, odakle je poslije ozdravljenja raspoređena u Komandu mjesta na Njegušima. Sa Njeguša je upućena na rad u ambulanti na Rijeci Crnojevića, gdje ostaje do jula 1946. Zatim je raspoređena kao medicinska sestra u ambulantu u Ulcinju, gdje ostaje do 1949. godine. Od svog stupanja u 5. proletersku, pa za sve vrijeme do oslobođenja zemlje hrabro i disciplinovano je izvršavala sve postavljene joj zadatke, često se javljajući kao dobrovoljac – bombaš. Ranjavana je nekoliko puta i pohvaljivana. U članstvo KPJ primljena je 1944. godine. Odlikovana je Medaljom za hrabrost i Ordenom zasluga za narod sa srebrnom zvijezdom. Danas. zivi u Lazarevcu. kao penzioner.",
+    "additional_info": "udata Ivanović; Rođena 15. 5. 1925. godine u selu Orasi, opština Cetinje. Do okupacije zemlje završila je osnovnu školu, a zatim se u svojoj porodici bavila raznim domaćinskim poslovima; Crnogorka. Prije stupanja u jedinice NOVJ sarađivala je sa NOP--om, pomažući ga u skladu sa svojim mogućnostima. U 5. proletersku crnogorsku brigadu stupa septembra 1943, u 2. četu 2. bataljona. U brigadi ostaje do decembra 1944. kao borac i bolničarka. Uslijed promrzlina stečenih u borbama po zimi iz brigade је upućena u bolnicu kod Andrijevice i kako su је ljekari proglasili nesposobnom za operativne jedinice, upućena је na dalje liječenje na Cetinju, odakle je poslije ozdravljenja raspoređena u Komandu mjesta na Njegušima. Sa Njeguša je upućena na rad u ambulanti na Rijeci Crnojevića, gdje ostaje do jula 1946. Zatim je raspoređena kao medicinska sestra u ambulantu u Ulcinju, gdje ostaje do 1949. godine. Od svog stupanja u 5. proletersku, pa za sve vrijeme do oslobođenja zemlje hrabro i disciplinovano je izvršavala sve postavljene joj zadatke, često se javljajući kao dobrovoljac – bombaš. Ranjavana je nekoliko puta i pohvaljivana. U članstvo KPJ primljena je 1944. godine. Odlikovana je Medaljom za hrabrost i Ordenom zasluga za narod sa srebrnom zvijezdom. Danas. zivi u Lazarevcu. kao penzioner.",
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=90",
     "source_page": 86,
     "soldier_id": "0041010497",
     "birth_place": "Orasi",
+    "ethnicity": "Crnogorka",
     "rank": "bolničarka, bombaš",
     "unit_detail": "2. bataljon",
     "birth_date": "15.05.1925"
@@ -54151,7 +54231,7 @@
     "first_name": "Ljubica",
     "fathers_name": "Raka",
     "full_name": "Škuletić Raka Ljubica",
-    "additional_info": "rođena Milošević; Rođena 1892. godine u selu Vitasojevići. opština Nikšić; domaćica: Crnogorka. Zajedno sa sinovima 1 muže Mitrom učestvuje od prvog dana u ustanku. Borac 5. proleterske crnogorske brigade je od njenog formiranja, 12. juna 1942. godine. Prilikom povlačenja 5. ibrigade za Bosnu, juna 1942, u 'borbama kod sela Zabrda, ispod obronaka planine Bitovnje, teško je ranjena 1 ostala je na položaju. Sedam dana kasnije pronašli su je čobani. obavijestili ustašlke vlasti () njoj, a ovi je predali Nijemcima. Smještena je u \\'ojnu (bolnicu u Sarajevu pod stražom. Tu joj je amputirana desa noga iznad koljena. Veliku pomoć joj je tom prilikom pružio dr Blagoje Kovačević. poznati hirurg i aktivist NOP-a. Igrom slučaja umjesto da !bude deportovana za Njemačku uibačena je u voz za Nikšić. Uspjela je da side na železničkoj stanici Kuside, pred Nikšićem. Uhvatila je vezu sa svojim rođacima u selu Miločani 1 partizanskim vezama se prebacila u rodni kraj. Dalje su se o njoj 'brinule partizanske jedinice i partizanske vlasti na terenu. Tako je ova ponosna i hra'bra partizanka majka i borac revolucije časno doživjela i oslo— {bodenje zemlje. U ratu su joj kao «borci 5. brigade rpoginuli mruž i kćer Zorka. Još su joj tri sina učestvovala u NOR-u. Ratni je vojni invalid. Nosilac je ,Partizanske spomenice 194l.\". Odlilkovana je sa po dva ordena Bratstva i jedinstva .sa srebrnim vijencem, Ordenom zasluga za narod sa srebrn-im zracima i Ordenom za hrabrost.",
+    "additional_info": "rođena Milošević; Rođena 1892. godine u selu Vitasojevići. opština Nikšić; domaćica: Crnogorka. Zajedno sa sinovima 1 muže Mitrom učestvuje od prvog dana u ustanku. Borac 5. proleterske crnogorske brigade je od njenog formiranja, 12. juna 1942. godine. Prilikom povlačenja 5. ibrigade za Bosnu, juna 1942, u 'borbama kod sela Zabrda, ispod obronaka planine Bitovnje, teško je ranjena 1 ostala je na položaju. Sedam dana kasnije pronašli su je čobani. obavijestili ustašlke vlasti () njoj, a ovi je predali Nijemcima. Smještena je u \\'ojnu (bolnicu u Sarajevu pod stražom. Tu joj je amputirana desa noga iznad koljena. Veliku pomoć joj je tom prilikom pružio dr Blagoje Kovačević. poznati hirurg i aktivist NOP-a. Igrom slučaja umjesto da !bude deportovana za Njemačku uibačena je u voz za Nikšić. Uspjela je da side na železničkoj stanici Kuside, pred Nikšićem. Uhvatila je vezu sa svojim rođacima u selu Miločani 1 partizanskim vezama se prebacila u rodni kraj. Dalje su se o njoj 'brinule partizanske jedinice i partizanske vlasti na terenu. Tako je ova ponosna i hra'bra partizanka majka i borac revolucije časno doživjela i oslo— {bodenje zemlje. U ratu su joj kao «borci 5. brigade rpoginuli mruž i kćer Zorka. Još su joj tri sina učestvovala u NOR-u. Ratni je vojni invalid. Nosilac je ,Partizanske spomenice 1941.\". Odlilkovana je sa po dva ordena Bratstva i jedinstva .sa srebrnim vijencem, Ordenom zasluga za narod sa srebrn-im zracima i Ordenom za hrabrost.",
     "birth_year": "1892",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00005897&pg_seq=240",
     "source_page": 236,

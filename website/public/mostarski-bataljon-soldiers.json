@@ -380,7 +380,21 @@
     "birth_place": "Mostar",
     "occupation": "učitelj",
     "rank": "načelnik štaba bataljona",
-    "pdf_x_end": 292.2
+    "pdf_x_end": 292.2,
+    "other_sources": [
+      {
+        "soldier_id": "0081000013",
+        "name": "Alikalfić H Husein",
+        "additional_info": "rođen 1915. Mostar",
+        "pdf_file": "14-hercegovacka.pdf",
+        "pdf_page": 1,
+        "pdf_x": 29.3,
+        "pdf_y": 282.4,
+        "pdf_x_end": 229.1,
+        "pdf_y_end": 292.4,
+        "unit_file": "14-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Alikalfić",
@@ -2733,7 +2747,7 @@
       {
         "soldier_id": "0043000163",
         "name": "Bošnjić A Šefik",
-        "additional_info": "komandir voda u 3. bataljonu, rođen 1914, Mostar, radnik, Musliman, u NOB od 1941, član KPJ od 1941, poginuo kod Krekova, Tentište, 13. juna 1943. godine.",
+        "additional_info": "komandir voda u 3. bataljonu, rođen 1914, Mostar, radnik, Musliman, u NOB od 1941, član KPJ od 1941, poginuo kod Krekova, Tjentište, 13. juna 1943. godine.",
         "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
         "pdf_page": 8,
         "pdf_x": 280.7,
@@ -5423,8 +5437,8 @@
     "first_name": "Aziz",
     "fathers_name": "S",
     "full_name": "Fazlinović S Aziz",
-    "additional_info": "rođem 1921, Ljubuški, bravar, član SKOJ-a od 1939. i KPJ od 1943, u Bataljonu od decembra 1941, borac.",
-    "birth_year": "",
+    "additional_info": "rođen 1921, Ljubuški, bravar, član SKOJ-a od 1939. i KPJ od 1943, u Bataljonu od decembra 1941, borac.",
+    "birth_year": "1921",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 12,
     "pdf_y": 296.7,
@@ -5432,10 +5446,11 @@
     "pdf_y_end": 355.6,
     "pdf_file": "mostarski-bataljon.pdf",
     "soldier_id": "0125000199",
-    "occupation": "bravar",
-    "rank": "borac",
     "pdf_x_end": 280.1,
-    "party": "SKOJ 1939"
+    "party": "SKOJ 1939",
+    "birth_place": "Ljubuški",
+    "occupation": "bravar",
+    "rank": "borac"
   },
   {
     "last_name": "Fejić",
@@ -11172,12 +11187,12 @@
     "party": "KPJ 1941"
   },
   {
-    "last_name": "Krvav",
+    "last_name": "Krvavac",
     "middle_name": "M",
     "first_name": "Hamdija",
     "fathers_name": "M",
-    "full_name": "Krvav M Hamdija",
-    "additional_info": "zvani Ac; rođen 1926, Konjic, radnik, u Bataljonu od jula 1942, borac, poginuo kod Konjica marta 1945.",
+    "full_name": "Krvavac M Hamdija",
+    "additional_info": "rođen 1926, Konjic, radnik, u Bataljonu od jula 1942, borac, poginuo kod Konjica marta 1945.",
     "birth_year": "1926",
     "unit_detail": "Mostarski bataljon (juni 1942 — juni 1943)",
     "pdf_page": 42,
@@ -11192,7 +11207,21 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "03.1945",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9022019986",
+        "name": "Krvavac (Mujo) Hamdija",
+        "additional_info": "rođen 1926, Konjic. Musliman, poginuo 1945. u NOBu, Konjic",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1673",
+        "source_page": 1673,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Musliman",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Kudra",
@@ -13093,12 +13122,12 @@
     ]
   },
   {
-    "last_name": "Mila",
+    "last_name": "Milavić",
     "middle_name": "S",
     "first_name": "Salko",
     "fathers_name": "S",
-    "full_name": "Mila S Salko",
-    "additional_info": "zvani Vic; rođen 1920, Mostar, đak, član SKOJ-a od 1941, u Bataljonu od početka 1942, borac, zarobljen u Bijelom polju kod Mostara juna 1942, interniran u logor Mamula, poginuo u slovenačkim partizanima u jesen 1943.",
+    "full_name": "Milavić S Salko",
+    "additional_info": "rođen 1920, Mostar, đak, član SKOJ-a od 1941, u Bataljonu od početka 1942, borac, zarobljen u Bijelom polju kod Mostara juna 1942, interniran u logor Mamula, poginuo u slovenačkim partizanima u jesen 1943.",
     "birth_year": "1920",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 22,
@@ -13107,13 +13136,13 @@
     "pdf_y_end": 288.9,
     "pdf_file": "mostarski-bataljon.pdf",
     "soldier_id": "0125000450",
+    "pdf_x_end": 459.1,
+    "party": "SKOJ 1941",
     "birth_place": "Mostar",
     "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "jesen 1943",
-    "rank": "borac",
-    "pdf_x_end": 459.1,
-    "party": "SKOJ 1941"
+    "rank": "borac"
   },
   {
     "last_name": "Milanović",
@@ -15585,7 +15614,7 @@
     "first_name": "Mustafa",
     "fathers_name": "I",
     "full_name": "Pašić I Mustafa",
-    "additional_info": "zvani Muja; rođen 1906, Mostar, bravar, čln KPJ od 1929. i sekretar Oblasnog komiteta za Hercegovinu, u Bataljonu od decembra 1941, komesar čete, poginuo u Ribarima kod Konjica juna 1942.",
+    "additional_info": "zvani Muja; rođen 1906, Mostar, bravar, član KPJ od 1929. i sekretar Oblasnog komiteta za Hercegovinu, u Bataljonu od decembra 1941, komesar čete, poginuo u Ribarima kod Konjica juna 1942.",
     "birth_year": "1906",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 25,
@@ -15595,6 +15624,7 @@
     "pdf_file": "mostarski-bataljon.pdf",
     "soldier_id": "0125000533",
     "pdf_x_end": 287.1,
+    "party": "KPJ 1929",
     "birth_place": "Mostar",
     "occupation": "bravar",
     "death_type": "poginuo",
@@ -17364,7 +17394,7 @@
     "first_name": "Nebojša",
     "fathers_name": "S",
     "full_name": "Sain S Nebojša",
-    "additional_info": "zvani Bućo; rođen 1924, Mostar, đak, član SKOJ-a od 1941, u Bataljonu od maja 1942, borac, zbog bolesti jula 1942. vraćen iz jedinice, umro u Beogradu MILAN SAKOTIĆ, rođen 1910, Gornji Davidovići, Bileća, zemljoradnik, u Bataljonu od januara 194 1944; 2, borac.",
+    "additional_info": "zvani Bućo; rođen 1924, Mostar, đak, član SKOJ-a od 1941, u Bataljonu od maja 1942, borac, zbog bolesti jula 1942. vraćen iz jedinice, umro u Beogradu",
     "birth_year": "1924",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 29,
@@ -17378,7 +17408,27 @@
     "birth_place": "Mostar",
     "occupation": "đak",
     "death_type": "umro",
+    "death_place": "Beograd",
     "rank": "borac"
+  },
+  {
+    "soldier_id": "0125009004",
+    "last_name": "Šakotić",
+    "middle_name": "",
+    "first_name": "Milan",
+    "fathers_name": "",
+    "full_name": "Šakotić Milan",
+    "additional_info": "rođen 1910, Gornji Davidovići, Bileća, zemljoradnik, u Bataljonu od januara 194 1944; 2, borac.",
+    "birth_year": "1910",
+    "pdf_file": "mostarski-bataljon.pdf",
+    "pdf_page": 29,
+    "pdf_x": 107.1,
+    "pdf_y": 538.8,
+    "birth_place": "Gornji Davidovići, Bileća",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "pdf_x_end": 276.3,
+    "pdf_y_end": 586.0
   },
   {
     "last_name": "Šakotić",
@@ -20124,7 +20174,7 @@
       {
         "soldier_id": "0043001214",
         "name": "Velagić Derve Ramo",
-        "additional_info": "borac 3. čete 3. bataljona, rođen 1926, Slatina, Jablanica, radnik, Musliman, u NOB od lebruara 1943. godine.",
+        "additional_info": "borac 3. čete 3. bataljona, rođen 1926, Slatina, Jablanica, radnik, Musliman, u NOB od februara 1943. godine.",
         "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
         "pdf_page": 71,
         "pdf_x": 130.5,
@@ -20216,7 +20266,38 @@
     "death_place": "u Kpnjicu",
     "rank": "borac",
     "pdf_x_end": 272.7,
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0081001178",
+        "name": "Veledar H Ibro",
+        "additional_info": "rođen 1925. Počitelj",
+        "pdf_file": "14-hercegovacka.pdf",
+        "pdf_page": 5,
+        "pdf_x": 36.1,
+        "pdf_y": 239.4,
+        "pdf_x_end": 233.3,
+        "pdf_y_end": 249.4,
+        "unit_file": "14-hercegovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0081001176",
+        "name": "Veleder H Ibro",
+        "additional_info": "rođen u Počitelju (Čapljina). Borac 2. bataljona. Poginuo u borbi za oslobođenje Konjica, marta 1945.",
+        "pdf_file": "14-hercegovacka.pdf",
+        "pdf_page": 35,
+        "pdf_x": 33.4,
+        "pdf_y": 127.2,
+        "pdf_x_end": 368.2,
+        "pdf_y_end": 148.2,
+        "unit_file": "14-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Veledar",
@@ -20309,7 +20390,7 @@
       {
         "soldier_id": "0043001220",
         "name": "Velić Smaje Salko",
-        "additional_info": "borac 3. čete 3. bataljona, rođen 1926, Slatina, Jablanica, zemljoradnik, Musliman, u NOB od lebruara 1943, poginuo na Vučevu 11. juna 1943. godine.",
+        "additional_info": "borac 3. čete 3. bataljona, rođen 1926, Slatina, Jablanica, zemljoradnik, Musliman, u NOB od februara 1943, poginuo na Vučevu 11. juna 1943. godine.",
         "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
         "pdf_page": 71,
         "pdf_x": 314.1,
@@ -23163,12 +23244,12 @@
     "party": "SKOJ 1941"
   },
   {
-    "last_name": "Šaren",
+    "last_name": "Šarenac",
     "middle_name": "P",
     "first_name": "Lazar",
     "fathers_name": "P",
-    "full_name": "Šaren P Lazar",
-    "additional_info": "zvani Ac Pop; rođen 1920, Bijeljani, Bileća, zemljoradnik, član SKOJ-a od 1941, u Bataljonu od januara 1942, borac, poginuo na Sutjesci.",
+    "full_name": "Šarenac P Lazar",
+    "additional_info": "zvani Pop; rođen 1920, Bijeljani, Bileća, zemljoradnik, član SKOJ-a od 1941, u Bataljonu od januara 1942, borac, poginuo na Sutjesci.",
     "birth_year": "1920",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 29,
@@ -23177,21 +23258,41 @@
     "pdf_y_end": 326.1,
     "pdf_file": "mostarski-bataljon.pdf",
     "soldier_id": "0125000798",
+    "pdf_x_end": 466.7,
+    "party": "SKOJ 1941",
     "birth_place": "Bijeljani, Bileća",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 466.7,
-    "party": "SKOJ 1941"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "početkom juna 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0043001421",
+        "name": "Šarenac Petra Lazar",
+        "additional_info": "zvani Pop; komandir voda u 2. bataljonu, rođen 1920, Bijeljani, Bileća, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, umro kao ranjenik u Centralnoj bolnici na Pivskoj planini kod Rudina početkom juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 65,
+        "pdf_x": 321.8,
+        "pdf_y": 239.3,
+        "pdf_x_end": 491.7,
+        "pdf_y_end": 314.7,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
-    "last_name": "Šaren",
+    "last_name": "Šarenac",
     "middle_name": "",
     "first_name": "Rade",
     "fathers_name": "",
-    "full_name": "Šaren Rade",
-    "additional_info": "zvani Ac; rođen 1915, Donji Davidovići, Bileća, zemljoradnik, član KPJ od 1941* u Bataljonu od januara 1942, borac.",
+    "full_name": "Šarenac Rade",
+    "additional_info": "rođen 1915, Donji Davidovići, Bileća, zemljoradnik, član KPJ od 1941* u Bataljonu od januara 1942, borac.",
     "birth_year": "1915",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 29,
@@ -23200,19 +23301,19 @@
     "pdf_y_end": 393.8,
     "pdf_file": "mostarski-bataljon.pdf",
     "soldier_id": "0125000799",
+    "pdf_x_end": 470.2,
+    "party": "KPJ 1941",
     "birth_place": "Donji Davidovići, Bileća",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 470.2,
-    "party": "KPJ 1941"
+    "rank": "borac"
   },
   {
-    "last_name": "Šaren",
-    "middle_name": "",
+    "last_name": "Šarenac",
+    "middle_name": "Đure",
     "first_name": "Špiro",
-    "fathers_name": "",
-    "full_name": "Šaren Špiro",
-    "additional_info": "zvani Ac; rođen 1918, Donji Davidovići, Bileća, zemljoradnik, član KPJ od 1941, u Bataljonu od januara 1942, borac.",
+    "fathers_name": "Đuro",
+    "full_name": "Šarenac Đure Špiro",
+    "additional_info": "rođen 1918, Donji Davidovići, Bileća, zemljoradnik, član KPJ od 1941, u Bataljonu od januara 1942, borac.",
     "birth_year": "1918",
     "unit_detail": "Konjički bataljon (septembar 1941 — juni 1942)",
     "pdf_page": 29,
@@ -23221,11 +23322,34 @@
     "pdf_y_end": 461.4,
     "pdf_file": "mostarski-bataljon.pdf",
     "soldier_id": "0125000800",
+    "pdf_x_end": 467.6,
+    "party": "KPJ 1941",
     "birth_place": "Donji Davidovići, Bileća",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 467.6,
-    "party": "KPJ 1941"
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0043001426",
+        "name": "Šarenac Đure Špiro",
+        "additional_info": "borac 2. čete 6. bataljona, rođen 1917, Davidovići, Bileća, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1943, krajem rata politički komesar čete.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 65,
+        "pdf_x": 321.3,
+        "pdf_y": 360.7,
+        "pdf_x_end": 491.3,
+        "pdf_y_end": 414.1,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Šator",

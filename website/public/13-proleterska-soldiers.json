@@ -258,7 +258,7 @@
     "middle_name": "Dragoljuba",
     "first_name": "Bogoljub",
     "fathers_name": "Dragoljub",
-    "additional_info": "1912. Rudovci Läzrcväc",
+    "additional_info": "1912. Rudovci Lazarevac",
     "soldier_id": "0006000014",
     "full_name": "Adamović Dragoljuba Bogoljub",
     "birth_year": "1912",
@@ -268,7 +268,7 @@
     "pdf_y_end": 385.6,
     "pdf_file": "13-proleterska-spisak.pdf",
     "pdf_x_end": 288.4,
-    "birth_place": "Rudovci Läzrcväc"
+    "birth_place": "Rudovci Lazarevac"
   },
   {
     "last_name": "Adamović",
@@ -11988,7 +11988,7 @@
     "middle_name": "",
     "first_name": "Budimir",
     "fathers_name": "",
-    "additional_info": "Prvić Šepurine, Šibenik. Pofinuo 19. XI. 1942. kod Novog Sela u Žumberu i tu sahranjen.",
+    "additional_info": "Prvić Šepurine, Šibenik. Poginuo 19. XI. 1942. kod Novog Sela u Žumberu i tu sahranjen.",
     "soldier_id": "0006000580",
     "full_name": "Bodul Budimir",
     "pdf_page": 11,
@@ -11996,8 +11996,11 @@
     "pdf_x": 126.9,
     "pdf_y_end": 605.3,
     "pdf_file": "13-proleterska-spisak.pdf",
+    "pdf_x_end": 299.0,
     "birth_place": "Prvić Šepurine, Šibenik",
-    "pdf_x_end": 299.0
+    "death_type": "poginuo",
+    "death_date": "19.11.1942",
+    "death_place": "kod Novog Sela u Žumberu"
   },
   {
     "last_name": "Bogadin",
@@ -16607,7 +16610,7 @@
     "middle_name": "Ante",
     "first_name": "Mladen",
     "fathers_name": "Ante",
-    "additional_info": "1922. Luka, Zadar. Pofinuo 20.1. 1943. kod Novog Sela na Žumberu, sahranjen u Gravcu.",
+    "additional_info": "1922. Luka, Zadar. Poginuo 20.1. 1943. kod Novog Sela na Žumberu, sahranjen u Gravcu.",
     "soldier_id": "0006000770",
     "full_name": "Bubica Ante Mladen",
     "birth_year": "1922",
@@ -16616,7 +16619,6 @@
     "pdf_x": 108.9,
     "pdf_y_end": 249.2,
     "pdf_file": "13-proleterska-spisak.pdf",
-    "birth_place": "Luka, Zadar",
     "pdf_x_end": 280.6,
     "other_sources": [
       {
@@ -16636,16 +16638,22 @@
         "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
     ],
+    "birth_place": "Luka, Zadar",
     "death_type": "poginuo",
+    "death_date": "20.01.1943",
+    "death_place": "kod Novog Sela na Žumberu",
+    "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
     ],
-    "death_date": "22.11.1942",
-    "death_place": "Novo Selo",
-    "ethnicity": "Hrvat"
+    "variants": {
+      "death": [
+        {
+          "date": "22.11.1942",
+          "place": "Novo Selo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bubić",
@@ -25609,21 +25617,21 @@
     "pdf_x_end": 490.1
   },
   {
-    "last_name": "Dijanović",
-    "middle_name": "",
-    "first_name": "Gradišar",
-    "fathers_name": "",
-    "additional_info": "Ivana DRAGICA, 1919. Jablanac, Senj.",
+    "last_name": "Dijanović-Gradišar",
+    "middle_name": "Ivana",
+    "first_name": "Dragica",
+    "fathers_name": "Ivan",
+    "additional_info": "1919. Jablanac, Senj.",
     "soldier_id": "0006001178",
-    "full_name": "Dijanović Gradišar",
+    "full_name": "Dijanović-Gradišar Ivana Dragica",
     "pdf_page": 19,
     "pdf_y": 504.7,
     "pdf_x": 317.9,
     "pdf_y_end": 521.0,
     "pdf_file": "13-proleterska-spisak.pdf",
-    "birth_place": "Ivana DRAGICA",
     "birth_year": "1919",
-    "pdf_x_end": 490.5
+    "pdf_x_end": 490.5,
+    "birth_place": "Jablanac, Senj"
   },
   {
     "last_name": "Dijanović",
@@ -27333,7 +27341,7 @@
     "middle_name": "",
     "first_name": "Dragutin",
     "fathers_name": "",
-    "additional_info": "ostali nodaci nepoznati.",
+    "additional_info": "ostali podaci nepoznati.",
     "soldier_id": "0006001266",
     "full_name": "Dragičević Dragutin",
     "pdf_page": 21,
@@ -28865,21 +28873,21 @@
     "pdf_x_end": 482.3
   },
   {
-    "last_name": "Dumić",
-    "middle_name": "",
-    "first_name": "Žafran",
-    "fathers_name": "",
-    "additional_info": "Tome ANKICA, 1923. Sinac, Otočac.",
+    "last_name": "Dumić-Žafran",
+    "middle_name": "Tome",
+    "first_name": "Ankica",
+    "fathers_name": "Tomo",
+    "additional_info": "1923. Sinac, Otočac.",
     "soldier_id": "0006001339",
-    "full_name": "Dumić Žafran",
+    "full_name": "Dumić-Žafran Tome Ankica",
     "pdf_page": 21,
     "pdf_y": 597.1,
     "pdf_x": 310.4,
     "pdf_y_end": 613.4,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_year": "1923",
-    "birth_place": "Tome ANKICA",
-    "pdf_x_end": 483.1
+    "pdf_x_end": 483.1,
+    "birth_place": "Sinac, Otočac"
   },
   {
     "last_name": "Dumić",
@@ -51887,7 +51895,7 @@
     "middle_name": "Branislava",
     "first_name": "Spasoje",
     "fathers_name": "Branislav",
-    "additional_info": "1924. Azanja, Sm. Pnlnk^",
+    "additional_info": "1924. Azanja, Sm. Palanka",
     "soldier_id": "0006002423",
     "full_name": "Jelić Branislava Spasoje",
     "birth_year": "1924",
@@ -53456,13 +53464,13 @@
     "pdf_x_end": 284.6
   },
   {
-    "last_name": "Jokić",
-    "middle_name": "",
-    "first_name": "Mirko",
-    "fathers_name": "",
-    "additional_info": "Gaje GOŠA, 1921. Ilidža, Sarajevo.",
+    "last_name": "Jokić-Mirković",
+    "middle_name": "Gaje",
+    "first_name": "Goša",
+    "fathers_name": "Gajo",
+    "additional_info": "1921. Ilidža, Sarajevo.",
     "soldier_id": "0006002507",
-    "full_name": "Jokić Mirko",
+    "full_name": "Jokić-Mirković Gaje Goša",
     "birth_year": "1921",
     "pdf_page": 37,
     "pdf_y": 217.1,
@@ -53486,7 +53494,7 @@
       },
       {
         "soldier_id": "0001004412",
-        "name": "Jokić Mirko",
+        "name": "Jokić Gaje Mirko",
         "additional_info": "1921, Ilidža, Sarajevo, BiH, Srbin, radmk-4utomehaničar, u NOB od 1941, u brigadi od februara 1942, V bataljon, borac, poginuo 11. 06. 1942, Gat-Gacko",
         "pdf_file": "prva-proleterska-2.pdf",
         "pdf_page": 32,
@@ -56045,13 +56053,13 @@
     "pdf_x_end": 464.8
   },
   {
-    "last_name": "Jova",
-    "middle_name": "Vić Anton",
-    "first_name": "Šino",
-    "fathers_name": "Vić Anton",
+    "last_name": "Jovašinović",
+    "middle_name": "",
+    "first_name": "Anton",
+    "fathers_name": "",
     "additional_info": "ostali podaci nepoznati.",
     "soldier_id": "0006002627",
-    "full_name": "Jova Vić Anton Šino",
+    "full_name": "Jovašinović Anton",
     "pdf_page": 38,
     "pdf_y": 193.0,
     "pdf_x": 303.1,
@@ -67170,7 +67178,7 @@
       {
         "soldier_id": "0001500976",
         "name": "Krilić Luke Ivan",
-        "additional_info": "u bataljon stupio 1942. godine; rođen 1923, Bačina, Ploče, SRH, zemljoradnik, član SKOJ-a, u NOB od 1942. godine. KRILIĆ—MARINOVIĆ Mije MANDA, rođena 1922, E-ačuka, Ploče, SRH U NOB od 1942. godine.",
+        "additional_info": "u bataljon stupio 1942. godine; rođen 1923, Bačina, Ploče, SRH, zemljoradnik, član SKOJ-a, u NOB od 1942. godine.",
         "pdf_file": "crnogorski-bataljon.pdf",
         "pdf_page": 5,
         "pdf_x": 142.3,
@@ -78102,6 +78110,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=480",
         "source_page": 476,
         "ref_book": "otocac-brinje"
+      },
+      {
+        "soldier_id": "0120000215",
+        "name": "Maljković Đure Dušan",
+        "additional_info": "1916, Vodoteč, Otočac.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=293",
+        "source_page": 269,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
     ]
   },
@@ -79075,13 +79091,13 @@
     "pdf_x_end": 483.3
   },
   {
-    "last_name": "Marceua",
+    "last_name": "Marčelja",
     "middle_name": "Andrije",
     "first_name": "Josip",
     "fathers_name": "Andrija",
     "additional_info": "1915. Rijeka.",
     "soldier_id": "0006003701",
-    "full_name": "Marceua Andrije Josip",
+    "full_name": "Marčelja Andrije Josip",
     "birth_year": "1915",
     "pdf_page": 51,
     "pdf_y": 428.3,
@@ -79089,7 +79105,17 @@
     "pdf_y_end": 436.8,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Rijeka",
-    "pdf_x_end": 458.0
+    "pdf_x_end": 458.0,
+    "other_sources": [
+      {
+        "soldier_id": "0120000232",
+        "name": "Marčelja Andrije Josip",
+        "additional_info": "1915, Rijeka.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=294",
+        "source_page": 270,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Marčetić",
@@ -80924,13 +80950,13 @@
     "pdf_x_end": 475.5
   },
   {
-    "last_name": "Mari",
-    "middle_name": "Zvonko",
-    "first_name": "Jančić",
-    "fathers_name": "Zvonko",
+    "last_name": "Marijančić",
+    "middle_name": "",
+    "first_name": "Zvonko",
+    "fathers_name": "",
     "additional_info": "1921. Zagreb.",
     "soldier_id": "0006003791",
-    "full_name": "Mari Zvonko Jančić",
+    "full_name": "Marijančić Zvonko",
     "birth_year": "1921",
     "pdf_page": 52,
     "pdf_y": 664.1,
@@ -86296,7 +86322,7 @@
     "middle_name": "",
     "first_name": "Janko",
     "fathers_name": "",
-    "additional_info": "1922. Karlovac. Poeinuo 10. VI1943. u Žumberku, sahranjen u selu Kašt kod Ozlja.",
+    "additional_info": "1922. Karlovac. Poginuo 10. VI1943. u Žumberku, sahranjen u selu Kašt kod Ozlja.",
     "soldier_id": "0006004033",
     "full_name": "Mendinković Janko",
     "birth_year": "1922",
@@ -86305,8 +86331,11 @@
     "pdf_x": 114.4,
     "pdf_y_end": 388.9,
     "pdf_file": "13-proleterska-spisak.pdf",
+    "pdf_x_end": 284.6,
     "birth_place": "Karlovac",
-    "pdf_x_end": 284.6
+    "death_type": "poginuo",
+    "death_date": "10.06.1943",
+    "death_place": "Žumberak"
   },
   {
     "last_name": "Menges",
@@ -90936,11 +90965,11 @@
   {
     "last_name": "Milenović",
     "middle_name": "Petra",
-    "first_name": "Nestar",
+    "first_name": "Nestor",
     "fathers_name": "Petar",
     "additional_info": "1922. Jelašnica, Niš. Poginuo 18. IV. 1945. kod Pleternice.",
     "soldier_id": "0006004248",
-    "full_name": "Milenović Petra Nestar",
+    "full_name": "Milenović Petra Nestor",
     "birth_year": "1922",
     "pdf_page": 59,
     "pdf_y": 252.9,
@@ -96359,13 +96388,13 @@
     "pdf_x_end": 272.5
   },
   {
-    "last_name": "Miorović",
+    "last_name": "Mitrović",
     "middle_name": "Miluna",
     "first_name": "Miodrag",
     "fathers_name": "Milun",
     "additional_info": "1926. Mozgovo, Aleksinac. Poginuo 17. IV. 1945. kod Pleternice.",
     "soldier_id": "0006004498",
-    "full_name": "Miorović Miluna Miodrag",
+    "full_name": "Mitrović Miluna Miodrag",
     "birth_year": "1926",
     "pdf_page": 62,
     "pdf_y": 635.7,
@@ -104099,7 +104128,7 @@
     "middle_name": "Ivana",
     "first_name": "Zvonko",
     "fathers_name": "Ivan",
-    "additional_info": "1925. Vrapče, Zagreb. Ppginuo 27. IX 1943. na Geri kod Popovića u Žumberku.",
+    "additional_info": "1925. Vrapče, Zagreb. Poginuo 27. IX 1943. na Geri kod Popovića u Žumberku.",
     "soldier_id": "0006004830",
     "full_name": "Novosel Ivana Zvonko",
     "birth_year": "1925",
@@ -104108,8 +104137,11 @@
     "pdf_x": 119.6,
     "pdf_y_end": 334.8,
     "pdf_file": "13-proleterska-spisak.pdf",
-    "birth_place": "Vrapče, Zagreb",
     "pdf_x_end": 291.0,
+    "birth_place": "Vrapče, Zagreb",
+    "death_type": "poginuo",
+    "death_date": "27.09.1943",
+    "death_place": "na Geri kod Popovića u Žumberku",
     "other_sources": [
       {
         "soldier_id": "9021004116",
@@ -104122,14 +104154,8 @@
     ],
     "ethnicity": "Hrvat",
     "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
-    ],
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Žumberak"
+    ]
   },
   {
     "last_name": "Novoselec",
@@ -105947,7 +105973,17 @@
     "pdf_y_end": 540.2,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Ledenice, Crikvenica",
-    "pdf_x_end": 292.3
+    "pdf_x_end": 292.3,
+    "other_sources": [
+      {
+        "soldier_id": "0120000277",
+        "name": "Pađen Mile Zdravko",
+        "additional_info": "1922, Ledenice, Crikvenica.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=295",
+        "source_page": 271,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pagon",
@@ -107824,13 +107860,13 @@
     "pdf_x_end": 303.3
   },
   {
-    "last_name": "Parković",
+    "last_name": "Pavlović",
     "middle_name": "Mate",
     "first_name": "Leopold",
     "fathers_name": "Mato",
     "additional_info": "1917. Derventa.",
     "soldier_id": "0006005018",
-    "full_name": "Parković Mate Leopold",
+    "full_name": "Pavlović Mate Leopold",
     "birth_year": "1917",
     "pdf_page": 69,
     "pdf_y": 609.3,
@@ -110465,13 +110501,13 @@
     "pdf_x_end": 268.8
   },
   {
-    "last_name": "Pažar",
+    "last_name": "Požar",
     "middle_name": "Matevža",
     "first_name": "Albin",
     "fathers_name": "Matevža",
     "additional_info": "1922. Pivka, Postojna.",
     "soldier_id": "0006005125",
-    "full_name": "Pažar Matevža Albin",
+    "full_name": "Požar Matevža Albin",
     "birth_year": "1922",
     "pdf_page": 71,
     "pdf_y": 285.7,
@@ -110820,7 +110856,7 @@
     "last_name": "Pelčič",
     "middle_name": "Čirila",
     "first_name": "Romano",
-    "fathers_name": "Čirila",
+    "fathers_name": "Ciril",
     "additional_info": "1924. Zastenice, Rijeka.",
     "soldier_id": "0006005144",
     "full_name": "Pelčič Čirila Romano",
@@ -111429,7 +111465,27 @@
     "pdf_y_end": 347.7,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Kalenić, Ub",
-    "pdf_x_end": 487.3
+    "pdf_x_end": 487.3,
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "death_type",
+      "occupation"
+    ],
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "0110001577",
+        "name": "Perić Miladina Miodrag",
+        "additional_info": "rođen 1924, Kalenić, Ub, zemljoradnik. Borac 3. bataljona do kraja 1941. Ponovo stupio u NOVJ oktobra 1944. Umro posle rata.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 155,
+        "pdf_x": 57.4,
+        "pdf_y": 177.6,
+        "pdf_x_end": 339.0,
+        "pdf_y_end": 203.4,
+        "unit_file": "posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Perič",
@@ -114212,7 +114268,7 @@
     "middle_name": "Dušana",
     "first_name": "Miladin",
     "fathers_name": "Dušan",
-    "additional_info": "1923. Donja Omašnica, Trstenik. Ppginuo 18. III 1945. kod Bapske. Sahranjen u Žabištu.",
+    "additional_info": "1923. Donja Omašnica, Trstenik. Poginuo 18. III 1945. kod Bapske. Sahranjen u Žabištu.",
     "soldier_id": "0006005306",
     "full_name": "Petrović Dušana Miladin",
     "birth_year": "1923",
@@ -114221,8 +114277,11 @@
     "pdf_x": 124.8,
     "pdf_y_end": 516.3,
     "pdf_file": "13-proleterska-spisak.pdf",
-    "birth_place": "Donja Omašnica, Trstenik",
     "pdf_x_end": 295.8,
+    "birth_place": "Donja Omašnica, Trstenik",
+    "death_type": "poginuo",
+    "death_date": "18.03.1945",
+    "death_place": "Bapska",
     "other_sources": [
       {
         "soldier_id": "9014002063",
@@ -119028,11 +119087,6 @@
     "pdf_y_end": 239.4,
     "pdf_file": "13-proleterska-spisak.pdf",
     "pdf_x_end": 275.5,
-    "birth_year": "1927",
-    "birth_place": "Brusnica, Brus",
-    "death_type": "poginuo",
-    "death_date": "06.05.1945",
-    "death_place": "Vrbovec",
     "other_sources": [
       {
         "soldier_id": "9016002346",
@@ -119054,13 +119108,30 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=420",
         "source_page": 420,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0021000917",
+        "name": "Popović Dušana Radoslav",
+        "additional_info": "rođen 1927, Brusnica, Gornji Mnjtanovac. Ranjen 8. maja 1945. kod sela Vrbavske.",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 302,
+        "pdf_x": 59.7,
+        "pdf_y": 259.6,
+        "pdf_x_end": 363.7,
+        "pdf_y_end": 281.6,
+        "unit_file": "4-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1927",
+    "birth_place": "Brusnica, Brus",
+    "death_type": "poginuo",
+    "death_date": "06.05.1945",
+    "death_place": "Vrbovec",
     "borrowed": [
       "birth_year",
       "ethnicity"
-    ]
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Popović",
@@ -119180,7 +119251,7 @@
     "last_name": "Popović",
     "middle_name": "Zivka",
     "first_name": "Sreten",
-    "fathers_name": "Zivka",
+    "fathers_name": "Živko",
     "additional_info": "1927. Lugavčina, Smederevo. Poginuo 16. IV 1945. u selu Ruševo kod Slavonske Požege.",
     "soldier_id": "0006005527",
     "full_name": "Popović Zivka Sreten",
@@ -119201,7 +119272,7 @@
       {
         "soldier_id": "0001009816",
         "name": "Popović Zivka Sreten",
-        "additional_info": "1927, Lugavčina, Smederevo, Srbija, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944,1 bataljon, borac, poginjo 21. 04.1945, u Đakovu",
+        "additional_info": "1927, Lugavčina, Smederevo, Srbija, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od novembra 1944,1 bataljon, borac, poginuo 21. 04.1945, u Đakovu",
         "pdf_file": "prva-proleterska-3.pdf",
         "pdf_page": 81,
         "pdf_x": 45.3,
@@ -121058,7 +121129,21 @@
     "pdf_y_end": 570.4,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Selnica Sesvetska, Sesvete",
-    "pdf_x_end": 305.4
+    "pdf_x_end": 305.4,
+    "other_sources": [
+      {
+        "soldier_id": "0147000881",
+        "name": "Pudjak Alojz",
+        "additional_info": "Sesvetska Sela, Sesvete",
+        "pdf_file": "zagrebacki-odred.pdf",
+        "pdf_page": 9,
+        "pdf_x": 617.1,
+        "pdf_y": 862.3519999999996,
+        "pdf_x_end": 782.1,
+        "pdf_y_end": 871.9,
+        "unit_file": "zagrebacki-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Puđak",
@@ -126724,7 +126809,7 @@
     "middle_name": "Mihajila",
     "first_name": "Slavoljub",
     "fathers_name": "Mihajilo",
-    "additional_info": "1925. Trbušnica, Lzrcvc",
+    "additional_info": "1925. Trbušnica, Lazarevac",
     "soldier_id": "0006005843",
     "full_name": "Ranđić Mihajila Slavoljub",
     "birth_year": "1925",
@@ -126733,8 +126818,8 @@
     "pdf_x": 129.0,
     "pdf_y_end": 272.3,
     "pdf_file": "13-proleterska-spisak.pdf",
-    "birth_place": "Trbušnica, Lzrcvc",
-    "pdf_x_end": 300.8
+    "pdf_x_end": 300.8,
+    "birth_place": "Trbušnica, Lazarevac"
   },
   {
     "last_name": "Ranisavuević",
@@ -131262,13 +131347,13 @@
     "pdf_x_end": 477.2
   },
   {
-    "last_name": "Sab",
-    "middle_name": "Slavko",
-    "first_name": "Nik",
-    "fathers_name": "Slavko",
+    "last_name": "Sabnik",
+    "middle_name": "",
+    "first_name": "Slavko",
+    "fathers_name": "",
     "additional_info": "1919. Kranj. Poginuo 5. XII 1944. kod Tovarnika.",
     "soldier_id": "0006006026",
-    "full_name": "Sab Slavko Nik",
+    "full_name": "Sabnik Slavko",
     "birth_year": "1919",
     "pdf_page": 84,
     "pdf_y": 116.4,
@@ -131279,7 +131364,21 @@
     "death_type": "poginuo",
     "death_date": "05.12.1944",
     "death_place": "Tovarnik",
-    "pdf_x_end": 278.0
+    "pdf_x_end": 278.0,
+    "other_sources": [
+      {
+        "soldier_id": "9014002125",
+        "name": "Sabnik Slavko",
+        "additional_info": "Poginuli borci Trinaeste proleterske narodnooslobodilačke udarne brigade »Rade Končar«: 427. Sabnik Slavko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 16,
+        "pdf_x": 444.7,
+        "pdf_y": 553.7,
+        "pdf_x_end": 511.6,
+        "pdf_y_end": 563.2,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Sabolić",
@@ -135204,6 +135303,18 @@
         "pdf_y": 430.8,
         "pdf_x_end": 440.0,
         "pdf_y_end": 462.9,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007100683",
+        "name": "Sladojev Blaža Tomislav",
+        "additional_info": "borac 1. čete 2. bataljona, rođen 1921 Vodice, Šibenik, zemljoradnik, Hrvat' u NOB od 1941, član SKOJ-a od 1940, član KPJ od 1942, zarobljen na Zelengori i odveden u logor u Nemačkoj, gde je dočekao kraj rata.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 70,
+        "pdf_x": 7.4,
+        "pdf_y": 26.2,
+        "pdf_x_end": 173.2,
+        "pdf_y_end": 98.8,
         "unit_file": "2-dalmatinska-soldiers.json"
       },
       {
@@ -140460,13 +140571,13 @@
     "pdf_x_end": 481.1
   },
   {
-    "last_name": "Ste",
-    "middle_name": "Momćilo",
-    "first_name": "Vić",
-    "fathers_name": "Momćilo",
+    "last_name": "Stević",
+    "middle_name": "",
+    "first_name": "Momčilo",
+    "fathers_name": "",
     "additional_info": "ostali podaci nepoznati.",
     "soldier_id": "0006006485",
-    "full_name": "Ste Momćilo Vić",
+    "full_name": "Stević Momčilo",
     "pdf_page": 89,
     "pdf_y": 161.3,
     "pdf_x": 309.6,
@@ -142147,15 +142258,15 @@
     "first_name": "Kristodar",
     "fathers_name": "",
     "full_name": "Stojiljković Kristodar",
-    "additional_info": "1910. Mrštane, Lcslcovc",
+    "additional_info": "1910. Mrštane, Leskovac",
     "birth_year": "1910",
     "pdf_file": "13-proleterska-spisak.pdf",
     "pdf_page": 90,
     "pdf_y": 171.6,
     "pdf_x": 284.0,
     "pdf_y_end": 187.9,
-    "birth_place": "Mrštane, Lcslcovc",
-    "pdf_x_end": 455.6
+    "pdf_x_end": 455.6,
+    "birth_place": "Mrštane, Leskovac"
   },
   {
     "soldier_id": "0006008202",
@@ -143377,13 +143488,13 @@
     ]
   },
   {
-    "last_name": "Sultar",
+    "last_name": "Sutlar",
     "middle_name": "Stjepana",
     "first_name": "Stjepan",
     "fathers_name": "Stjepan",
     "additional_info": "1913. Marija Gorica, Zaprešić.",
     "soldier_id": "0006006585",
-    "full_name": "Sultar Stjepana Stjepan",
+    "full_name": "Sutlar Stjepana Stjepan",
     "birth_year": "1913",
     "pdf_page": 91,
     "pdf_y": 440.4,
@@ -145439,7 +145550,7 @@
     "middle_name": "Antona",
     "first_name": "Stanko",
     "fathers_name": "Anton",
-    "additional_info": "1908. Tomaševica, Scžn^",
+    "additional_info": "1908. Tomaševica, Sežana",
     "soldier_id": "0006006687",
     "full_name": "Šibelja Antona Stanko",
     "birth_year": "1908",
@@ -146418,7 +146529,7 @@
     "last_name": "Škalin",
     "middle_name": "Kate",
     "first_name": "Mirko",
-    "additional_info": "1924. Vrapče, Zagreb. Pofinuo maja 1945. u rodnom mjestu Vrapče od Zagreba.",
+    "additional_info": "1924. Vrapče, Zagreb. Poginuo maja 1945. u rodnom mjestu Vrapče od Zagreba.",
     "soldier_id": "0006006737",
     "full_name": "Škalin Kate Mirko",
     "birth_year": "1924",
@@ -146427,9 +146538,11 @@
     "pdf_x": 129.3,
     "pdf_y_end": 182.4,
     "pdf_file": "13-proleterska-spisak.pdf",
-    "birth_place": "Vrapče, Zagreb",
     "pdf_x_end": 300.8,
-    "mothers_name": "Kata"
+    "mothers_name": "Kata",
+    "birth_place": "Vrapče, Zagreb",
+    "death_type": "poginuo",
+    "death_date": "05.1945"
   },
   {
     "last_name": "Škalin",
@@ -147216,13 +147329,13 @@
     ]
   },
   {
-    "last_name": "Šlivić",
+    "last_name": "Šljivić",
     "middle_name": "Živka",
     "first_name": "Dragoslav",
     "fathers_name": "Živko",
     "additional_info": "1921. Golubovac, Trstenik. Poginuo 18. IV 1945. kod Pleternice.",
     "soldier_id": "0006006775",
-    "full_name": "Šlivić Živka Dragoslav",
+    "full_name": "Šljivić Živka Dragoslav",
     "birth_year": "1921",
     "pdf_page": 93,
     "pdf_y": 170.1,
@@ -147233,7 +147346,21 @@
     "death_type": "poginuo",
     "death_date": "18.04.1945",
     "death_place": "Pleternica",
-    "pdf_x_end": 484.5
+    "pdf_x_end": 484.5,
+    "other_sources": [
+      {
+        "soldier_id": "9025033412",
+        "name": "Šljivić (Živko) Dragoslav",
+        "additional_info": "rođen 1922, Golubovac (Trstenik). Srbin, poginuo 1945. u NOBu, Pleternica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1255",
+        "source_page": 1255,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Šmidleher",
@@ -150045,7 +150172,17 @@
     "pdf_y_end": 467.2,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Pecka, Vrginmost",
-    "pdf_x_end": 297.1
+    "pdf_x_end": 297.1,
+    "other_sources": [
+      {
+        "soldier_id": "0120000371",
+        "name": "Tarbuk Petra Ljuban",
+        "additional_info": "1917, Pecka, Vrginmost.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=299",
+        "source_page": 275,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tarčević",
@@ -151510,6 +151647,18 @@
         "pdf_y": 356.7,
         "pdf_x_end": 441.0,
         "pdf_y_end": 388.1,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007101291",
+        "name": "Tikulin Ante Vojislav",
+        "additional_info": "borac, rođen 1925, Prvić Šepurine, Šibenik, radnik, Hrvat, u NOB od 1941, predratni član SKOJ-a, član KPJ, poginuo na Barama povrh Sutjeske 7. juna 1943.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 75,
+        "pdf_x": 42.5,
+        "pdf_y": 55.0,
+        "pdf_x_end": 213.4,
+        "pdf_y_end": 107.4,
         "unit_file": "2-dalmatinska-soldiers.json"
       }
     ],
@@ -168612,13 +168761,13 @@
     "birth_place": "Tinjan, Koper"
   },
   {
-    "last_name": "Zukovac",
+    "last_name": "Lukovac",
     "middle_name": "Marka",
     "first_name": "Marko",
     "fathers_name": "Marko",
     "additional_info": "1919. Tepljuh, Drniš.",
     "soldier_id": "0006007796",
-    "full_name": "Zukovac Marka Marko",
+    "full_name": "Lukovac Marka Marko",
     "birth_year": "1919",
     "pdf_page": 107,
     "pdf_y": 419.5,

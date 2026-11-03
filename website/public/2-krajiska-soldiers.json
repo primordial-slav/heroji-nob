@@ -23,11 +23,11 @@
     "death_place": "Stari Majdan, Sanski Most"
   },
   {
-    "last_name": "Ac",
+    "last_name": "Kovač",
     "middle_name": "Stevana",
     "first_name": "Tomaš",
     "fathers_name": "Stevan",
-    "full_name": "Ac Stevana Tomaš",
+    "full_name": "Kovač Stevana Tomaš",
     "additional_info": "rođen 1926, u Ašanji, Pećinci, u NOB od 1944, u brigadi od 14. 08. 1944, 3. bataljon, poginuo krajem 1944. u istočnoj Bosni;",
     "birth_year": "1926",
     "pdf_page": 26,
@@ -1569,7 +1569,7 @@
     "first_name": "Vukašin",
     "fathers_name": "Božo",
     "full_name": "Babić Bože Vukašin",
-    "additional_info": "rođen 1923., u Glamoću, Glamoč, Srbin, zemljoradnik, u NOB od maja 1943., u brigadi od maja 1943., 4. bataljon, borac, poainuo 13. 01. 1944. u Budoželju (Vareš);",
+    "additional_info": "rođen 1923., u Glamoću, Glamoč, Srbin, zemljoradnik, u NOB od maja 1943., u brigadi od maja 1943., 4. bataljon, borac, poginuo 13. 01. 1944. u Budoželju (Vareš);",
     "birth_year": "1923",
     "pdf_page": 5,
     "pdf_y": 74.8,
@@ -1577,11 +1577,14 @@
     "pdf_y_end": 90.0,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000060",
+    "pdf_x_end": 398.3,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "13.01.1944",
+    "death_place": "Budoželja, Vareš",
     "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 398.3
+    "unit_detail": "4. bataljon"
   },
   {
     "last_name": "Babunović",
@@ -3302,6 +3305,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1824",
         "source_page": 1824,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0029000071",
+        "name": "Bojkić Amret Šahbaz",
+        "additional_info": "rođen 1926. godine u Zagorju - Lukavac. U NOB-u od 1943. godine. Poginuo februara 1944. godine kod Sokolca u borbi sa ustašama.",
+        "pdf_file": "17-majevicka.pdf",
+        "pdf_page": 6,
+        "pdf_x": 143.5,
+        "pdf_y": 525.4,
+        "pdf_x_end": 455.8,
+        "pdf_y_end": 556.1,
+        "pdf_x_left": 124.3,
+        "unit_file": "17-majevicka-soldiers.json"
       }
     ],
     "birth_place": "Zagorje, Lukavac",
@@ -3310,12 +3326,12 @@
     ]
   },
   {
-    "last_name": "Borisa",
-    "middle_name": "",
-    "first_name": "Vuević",
-    "fathers_name": "",
-    "full_name": "Borisa Vuević",
-    "additional_info": "Borisava MIHAILO, rođen 1926., u Donjoj Trnavi, Topola, Srbin, zemljoradnik, u NOB od oktobra 1944., u brigadi od 15. 10. 1944., 3. bataljon, borac, poginuo 2. 02. 1945. prolikom napada na Bijeljinu (Bijeljina);",
+    "last_name": "Borisavljević",
+    "middle_name": "Borisava",
+    "first_name": "Mihailo",
+    "fathers_name": "Borisav",
+    "full_name": "Borisavljević Borisava Mihailo",
+    "additional_info": "rođen 1926., u Donjoj Trnavi, Topola, Srbin, zemljoradnik, u NOB od oktobra 1944., u brigadi od 15. 10. 1944., 3. bataljon, borac, poginuo 2. 02. 1945. prolikom napada na Bijeljinu (Bijeljina);",
     "birth_year": "1926",
     "pdf_page": 7,
     "pdf_y": 197.1,
@@ -3323,13 +3339,29 @@
     "pdf_y_end": 219.5,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000122",
+    "pdf_x_end": 390.9,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "02.02.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 390.9
+    "other_sources": [
+      {
+        "soldier_id": "9025032870",
+        "name": "Borisavljević (Borisav) Mihailo",
+        "additional_info": "rođen 1926, Donja Trnava (Titovo Užice). Srbin, poginuo 1945. u NOBu, Bjeljina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1239",
+        "source_page": 1239,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Donja Trnava, Titovo Užice",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Bjeljina"
   },
   {
     "last_name": "Borisavuević",
@@ -11679,9 +11711,9 @@
   {
     "last_name": "Janićijević",
     "middle_name": "Avrama",
-    "first_name": "Milwoje",
+    "first_name": "Milivoje",
     "fathers_name": "Avram",
-    "full_name": "Janićijević Avrama Milwoje",
+    "full_name": "Janićijević Avrama Milivoje",
     "additional_info": "rođen 1919, u Donjoj Sabanti, Kragujevac, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od 11. 11.1944, Mitraljeska četa, 2. bataljon, borac, umro početkom 1945. od posledica ranjavanja;",
     "birth_year": "1919",
     "pdf_page": 20,
@@ -11697,7 +11729,21 @@
     "death_date": "početkom 1945",
     "rank": "borac",
     "unit_detail": "2. bataljon, mitraljeska četa",
-    "pdf_x_end": 360.6
+    "pdf_x_end": 360.6,
+    "other_sources": [
+      {
+        "soldier_id": "9025014095",
+        "name": "Janićijević (Avram) Milivoje",
+        "additional_info": "rođen 1918, Donja Sabanta (Kragujevac). Srbin, umro od ranjavanja 1945. u NOBu, Čačak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=508",
+        "source_page": 508,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "death_place": "Čačak",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Janićijević",
@@ -15451,7 +15497,7 @@
     "first_name": "Đerđ",
     "fathers_name": "Terzije",
     "full_name": "Kiš Terzije Đerđ",
-    "additional_info": "rođen 1927, u Subotici, Subotica, Mađar, u NOB od maja 1945, u brigaci' od3. 05. 1945, 1. bataljon, poginuo 6. 05. 1945. prilikom napada na Križevce (Križevci);",
+    "additional_info": "rođen 1927, u Subotici, Subotica, Mađar, u NOB od maja 1945, u brigadi' od3. 05. 1945, 1. bataljon, poginuo 6. 05. 1945. prilikom napada na Križevce (Križevci);",
     "birth_year": "1927",
     "pdf_page": 25,
     "pdf_y": 145.8,
@@ -15459,13 +15505,13 @@
     "pdf_y_end": 161.6,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000530",
+    "pdf_x_end": 394.9,
     "birth_place": "Subotica, Subotica",
     "ethnicity": "Mađar",
     "death_type": "poginuo",
     "death_date": "06.05.1945",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 394.9,
-    "death_place": "Križevci"
+    "death_place": "Križevci",
+    "unit_detail": "1. bataljon"
   },
   {
     "last_name": "Kladnicanin",
@@ -15656,7 +15702,7 @@
     "first_name": "Žarko",
     "fathers_name": "",
     "full_name": "Knežević Žarko",
-    "additional_info": "pomoćnik političkog komesara čete, poginuo 6. 05. 1945. prilikom napadana Križevce (Križevci);",
+    "additional_info": "pomoćnik političkog komesara čete, poginuo 6. 05. 1945. prilikom napada na Križevce (Križevci);",
     "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 295.1,
@@ -15667,6 +15713,7 @@
     "pdf_x_end": 393.7,
     "death_type": "poginuo",
     "death_date": "06.05.1945",
+    "death_place": "Križevci",
     "rank": "pomoćnik političkog komesara čete"
   },
   {
@@ -23413,12 +23460,12 @@
     "pdf_x_end": 392.2
   },
   {
-    "last_name": "Milenko",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Milenko Vić",
-    "additional_info": "Miluna KOSTADIN, rođen 1924, u Pranjanima, Gornji Milanovac, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od 6. 11. 1944, 2. četa, 2. bataljon, borac, poginuo 6. 05. 1945. prilikom napada na Križevce (Križevci);",
+    "last_name": "Milenković",
+    "middle_name": "Miluna",
+    "first_name": "Kostadin",
+    "fathers_name": "Milun",
+    "full_name": "Milenković Miluna Kostadin",
+    "additional_info": "rođen 1924, u Pranjanima, Gornji Milanovac, Srbin, zemljoradnik, u NOB od novembra 1944, u brigadi od 6. 11. 1944, 2. četa, 2. bataljon, borac, poginuo 6. 05. 1945. prilikom napada na Križevce (Križevci);",
     "birth_year": "1924",
     "pdf_page": 35,
     "pdf_y": 426.5,
@@ -23426,15 +23473,15 @@
     "pdf_y_end": 448.8,
     "pdf_file": "2-krajiska.pdf",
     "soldier_id": "0024000802",
+    "pdf_x_end": 391.4,
     "birth_place": "Pranjani, Gornji Milanovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "06.05.1945",
+    "death_place": "Križevci",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
-    "pdf_x_end": 391.4,
-    "death_place": "Križevci"
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "last_name": "Milinković",
@@ -32605,13 +32652,13 @@
       {
         "soldier_id": "0048012829",
         "name": "Radulj Branko",
-        "additional_info": "roćen 1918. Ivanjska, Prijedor. Srbin, zemljoradnik. U NOB-i od 1942. Borac brigadnog saniteta. POGINUO 8. juna 1943. na Sutjesci. RADUAa ICA Mile BRANKO, rođen 1929. Pribeljci, Šipovo. Srbin, zemljoradnik. U NOB-i od marta 1943. Borac 2. čete 1. bataljona.",
+        "additional_info": "roćen 1918. Ivanjska, Prijedor. Srbin, zemljoradnik. U NOB-i od 1942. Borac brigadnog saniteta. POGINUO 8. juna 1943. na Sutjesci.",
         "pdf_file": "7-krajiska-spisak.pdf",
         "pdf_page": 170,
         "pdf_x": 292.5,
         "pdf_y": 507.9,
-        "pdf_x_end": 460.1,
-        "pdf_y_end": 601.1,
+        "pdf_x_end": 459.8,
+        "pdf_y_end": 552.8,
         "unit_file": "7-krajiska-soldiers.json"
       }
     ],
@@ -35511,11 +35558,11 @@
     ]
   },
   {
-    "last_name": "Skiuević",
+    "last_name": "Škiljević",
     "middle_name": "Todora",
     "first_name": "Jovan",
     "fathers_name": "Todor",
-    "full_name": "Skiuević Todora Jovan",
+    "full_name": "Škiljević Todora Jovan",
     "additional_info": "rođen 1925, u Prijanovićima, Kladanj, u NOB od marta 1943, u brigadi od oktobra 1943, 3. četa, 2. bataljon, poginuo decembra 1943. kod Rogatice (Rogatica);",
     "birth_year": "1925",
     "pdf_page": 55,
@@ -39254,7 +39301,7 @@
       {
         "soldier_id": "9063000083",
         "name": "Todorović Dragica",
-        "additional_info": "Borci poginuli u NOR-u, Koprivna: TODOROVIĆ Miroslava DRAGICA, bolničarka, rođena 1926. godine, stupila u NOB početkom1942. godine, poginula kod Rogatice početkom 1944. godine",
+        "additional_info": "Borci poginuli u NOR-u, Koprivna: TODOROVIĆ Miroslava DRAGICA, bolničarka, rođena 1926. godine, stupila u NOB početkom 1942. godine, poginula kod Rogatice početkom 1944. godine",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00002581&pg_seq=197",
         "source_page": 197,
         "ref_book": "staromajdansko"

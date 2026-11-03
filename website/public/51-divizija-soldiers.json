@@ -14128,7 +14128,7 @@
       {
         "soldier_id": "0022002318",
         "name": "Perić Todor",
-        "additional_info": "1923, Žabalj, borac, neetao kod Batine 17.11. 1944.",
+        "additional_info": "1923, Žabalj, borac, nestao kod Batine 17.11. 1944.",
         "pdf_file": "7-vojvodjanska.pdf",
         "pdf_page": 102,
         "pdf_x": 78.0,
@@ -17103,7 +17103,7 @@
       {
         "soldier_id": "0022002828",
         "name": "Stankov Todor",
-        "additional_info": "Novi Sad, iestao 18. oktobra 1944. godine kod Batine.",
+        "additional_info": "Novi Sad, nestao 18. oktobra 1944. godine kod Batine.",
         "pdf_file": "7-vojvodjanska.pdf",
         "pdf_page": 124,
         "pdf_x": 78.3,
@@ -17112,7 +17112,15 @@
         "pdf_y_end": 101.2,
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.10.1944",
+          "place": "Batina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -21985,7 +21993,7 @@
       {
         "soldier_id": "0022003523",
         "name": "Šovljanski Radivoj",
-        "additional_info": "1922, Žabalj, boraz, pog. 20.11.1944, Batina.",
+        "additional_info": "1922, Žabalj, borac, pog. 20.11.1944, Batina.",
         "pdf_file": "7-vojvodjanska.pdf",
         "pdf_page": 148,
         "pdf_x": 74.7,
@@ -23012,7 +23020,21 @@
     "death_date": "21.01.1945",
     "death_place": "Crnac",
     "rank": "borac",
-    "pdf_x_end": 368.8
+    "pdf_x_end": 368.8,
+    "other_sources": [
+      {
+        "soldier_id": "0078000019",
+        "name": "Aradski Pavla Milivoj",
+        "additional_info": "rođ. 1928, Bečej, poginuo u Crncu 21. I 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 2,
+        "pdf_x": 55.6,
+        "pdf_y": 120.2,
+        "pdf_x_end": 349.2,
+        "pdf_y_end": 140.1,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Aranđelović",
@@ -28063,11 +28085,11 @@
     ]
   },
   {
-    "last_name": "Buljović",
+    "last_name": "Buljovčić",
     "middle_name": "Antona",
     "first_name": "Miško",
     "fathers_name": "Anton",
-    "full_name": "Buljović Antona Miško",
+    "full_name": "Buljovčić Antona Miško",
     "additional_info": "1929, Subotica, poginuo 24. 4. 1945. u mestu Bušetina.",
     "birth_year": "1929",
     "unit_detail": "8. vojvođanska brigada",
@@ -28081,7 +28103,21 @@
     "death_type": "poginuo",
     "death_date": "24.04.1945",
     "death_place": "Bušetini",
-    "pdf_x_end": 369.1
+    "pdf_x_end": 369.1,
+    "other_sources": [
+      {
+        "soldier_id": "0078000139",
+        "name": "Buljovčić Antuna Miško",
+        "additional_info": "rođ. 1929, Subotica, poginuo kod Bušetina 24. IV 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 51.3,
+        "pdf_y": 79.2,
+        "pdf_x_end": 344.3,
+        "pdf_y_end": 98.3,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Buljovčić",
@@ -38065,7 +38101,7 @@
     "first_name": "Bruno",
     "fathers_name": "",
     "full_name": "Jugovac Bruno",
-    "additional_info": "1925, Novi Sad, borac, poginuo oprila 1945. u Baranji.",
+    "additional_info": "1925, Novi Sad, borac, poginuo aprila 1945. u Baranji.",
     "birth_year": "1925",
     "unit_detail": "7. vojvođanska brigada",
     "pdf_page": 8,
@@ -38074,10 +38110,6 @@
     "pdf_y_end": 367.8,
     "pdf_file": "51-divizija-savic.pdf",
     "soldier_id": "0111010562",
-    "birth_place": "Novi Sad",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "rank": "borac",
     "pdf_x_end": 357.8,
     "death_place": "Beli Manastir",
     "other_sources": [
@@ -38102,6 +38134,10 @@
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ],
+    "birth_place": "Novi Sad",
+    "death_type": "poginuo",
+    "death_date": "04.1945",
+    "rank": "borac",
     "ethnicity": "Hrvat",
     "borrowed": [
       "ethnicity"
@@ -46508,7 +46544,7 @@
       {
         "soldier_id": "0022001774",
         "name": "Martić Marko",
-        "additional_info": "1908, Kuružani, komeear čete, pog. 19.04.1945, Kučanci.",
+        "additional_info": "1908, Kuružani, komesar čete, pog. 19.04.1945, Kučanci.",
         "pdf_file": "7-vojvodjanska.pdf",
         "pdf_page": 79,
         "pdf_x": 60.7,
@@ -50242,7 +50278,7 @@
       {
         "soldier_id": "0022002067",
         "name": "Nestorović Rada",
-        "additional_info": "1925, Opovci, zameiik komandira čete, pog. 20.01.1945, Bazija.",
+        "additional_info": "1925, Opovci, zamenik komandira čete, pog. 20.01.1945, Bazija.",
         "pdf_file": "7-vojvodjanska.pdf",
         "pdf_page": 94,
         "pdf_x": 73.4,
@@ -60160,7 +60196,7 @@
       {
         "soldier_id": "0022002874",
         "name": "Stojaković Stevan",
-        "additional_info": "1923, Bolman, deeetar 2. čete 2. bataljona, pog. 10.03.1945, Bolman.",
+        "additional_info": "1923, Bolman, desetar 2. čete 2. bataljona, pog. 10.03.1945, Bolman.",
         "pdf_file": "7-vojvodjanska.pdf",
         "pdf_page": 126,
         "pdf_x": 86.2,
@@ -63306,11 +63342,11 @@
     ]
   },
   {
-    "last_name": "Vasilije",
+    "last_name": "Vasiljev",
     "middle_name": "Jovana",
     "first_name": "Stevan",
     "fathers_name": "Jovan",
-    "full_name": "Vasilije Jovana Stevan",
+    "full_name": "Vasiljev Jovana Stevan",
     "additional_info": "1915, Curug, Zabalj, ml. vodnik, vođa odeljenja, poginuo 11. 2. 1945. u mestu Harkanj Sikloš.",
     "birth_year": "1915",
     "unit_detail": "artiljerijska brigada",
@@ -63325,7 +63361,21 @@
     "death_date": "11.02.1945",
     "death_place": "Harkanj Sikloš",
     "rank": "mlađi vodnik",
-    "pdf_x_end": 356.1
+    "pdf_x_end": 356.1,
+    "other_sources": [
+      {
+        "soldier_id": "9027010694",
+        "name": "Vasiljev (Jovan) Stevan",
+        "additional_info": "rođen 1915, Čurug (Žabalj). Srbin, poginuo od Mađara 1945. u NOBu, Šelje i šikaoš mađarska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=588",
+        "source_page": 588,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Vasiljević",
@@ -67966,7 +68016,7 @@
     "first_name": "Franjo",
     "fathers_name": "",
     "full_name": "Šahić Franjo",
-    "additional_info": "1924, Subotica, borac, poginuo aprila 194b. na reci Karašici.",
+    "additional_info": "1924, Subotica, borac, poginuo aprila 1946. na reci Karašici.",
     "birth_year": "1924",
     "unit_detail": "8. vojvođanska brigada",
     "pdf_page": 40,
@@ -67975,10 +68025,12 @@
     "pdf_y_end": 346.1,
     "pdf_file": "51-divizija-savic.pdf",
     "soldier_id": "0111011579",
+    "pdf_x_end": 364.0,
     "birth_place": "Subotica",
     "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 364.0
+    "death_date": "04.1946",
+    "death_place": "Karašica",
+    "rank": "borac"
   },
   {
     "last_name": "Šampor",
@@ -68862,11 +68914,11 @@
     "pdf_x_end": 346.0
   },
   {
-    "last_name": "Šlajner",
+    "last_name": "Štajner",
     "middle_name": "Albina",
     "first_name": "Jovan",
     "fathers_name": "Albin",
-    "full_name": "Šlajner Albina Jovan",
+    "full_name": "Štajner Albina Jovan",
     "additional_info": "1922, Subotica, poginuo 8. 5. 1945. kod Varaždina.",
     "birth_year": "1922",
     "unit_detail": "8. vojvođanska brigada",
@@ -68880,7 +68932,21 @@
     "death_type": "poginuo",
     "death_date": "08.05.1945",
     "death_place": "Varaždin",
-    "pdf_x_end": 364.1
+    "pdf_x_end": 364.1,
+    "other_sources": [
+      {
+        "soldier_id": "0078001096",
+        "name": "Štajner Albina Jovan",
+        "additional_info": "rođ. 1922, Subotica, pogi-nuo kod Varaždina 8. V 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 41,
+        "pdf_x": 51.8,
+        "pdf_y": 332.7,
+        "pdf_x_end": 344.1,
+        "pdf_y_end": 351.8,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šmare",

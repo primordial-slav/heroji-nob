@@ -2705,9 +2705,9 @@
   {
     "last_name": "Balaban",
     "middle_name": "M",
-    "first_name": "Midan",
+    "first_name": "Milan",
     "fathers_name": "M",
-    "full_name": "Balaban M Midan",
+    "full_name": "Balaban M Milan",
     "additional_info": "komandir čete, rođen 1920. u s. Seferovcl, Bosanska Gradiška, poginuo 20. 4. 1945. kod s. Andrijevci. Slavonija",
     "birth_year": "1920",
     "pdf_page": 2,
@@ -2721,7 +2721,21 @@
     "death_date": "20.04.1945",
     "death_place": "Andrijevci",
     "rank": "komandir čete",
-    "pdf_x_end": 356.6
+    "pdf_x_end": 356.6,
+    "other_sources": [
+      {
+        "soldier_id": "9022006193",
+        "name": "Balaban (M.) Milan",
+        "additional_info": "rođen 1920, Seferovci (Bosanska Gradiška). Srbin, poginuo 1945. u NOBu, Kozara",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=629",
+        "source_page": 629,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Balanesković",
@@ -6558,6 +6572,18 @@
         "pdf_x_end": 353.1,
         "pdf_y_end": 156.5,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100188",
+        "name": "Bučuk Alije Aziz",
+        "additional_info": "borac 3. bataljona, rođen 1927, Foča, radnik, Musliman, u NOB od februara 1942.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 16.5,
+        "pdf_y": 66.7,
+        "pdf_x_end": 186.2,
+        "pdf_y_end": 97.5,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
   },
@@ -7306,7 +7332,21 @@
     "pdf_file": "12-krajiska-prezivjeli.pdf",
     "soldier_id": "0054000340",
     "birth_place": "Ljeskove Vode, Doboj",
-    "pdf_x_end": 285.6
+    "pdf_x_end": 285.6,
+    "other_sources": [
+      {
+        "soldier_id": "0056000348",
+        "name": "Danilović M Savo",
+        "additional_info": "1927, Jelanjska (opština Doboj)",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 91.9,
+        "pdf_y": 681.5,
+        "pdf_x_end": 257.6,
+        "pdf_y_end": 701.4,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Danilović",
@@ -10827,7 +10867,7 @@
       {
         "soldier_id": "9001000280",
         "name": "Egić Tome Milan",
-        "additional_info": "Rođen 1913 u Brezičani/na, Prijedor, Bosna i Hei'c-egovina_ Sezonski radnik. Član KPJ od oktobra 1941. U NOB stupio 1941. Poainuo avgusta 1943 kod Koror Varoši. Za narodnog heroja proglašen 24-1/11-1953.",
+        "additional_info": "Rođen 1913 u Brezičani/na, Prijedor, Bosna i Hei'c-egovina_ Sezonski radnik. Član KPJ od oktobra 1941. U NOB stupio 1941. Poginuo avgusta 1943 kod Koror Varoši. Za narodnog heroja proglašen 24-1/11-1953.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=235",
         "source_page": 213,
         "ref_book": "zbornik-heroja-1957"
@@ -34808,7 +34848,7 @@
     "first_name": "Slobodan",
     "fathers_name": "Ž",
     "full_name": "Marković Ž Slobodan",
-    "additional_info": "boruc, rođen 1923. u s. Desić, Šabac, prgenuo 15. 3. 1945. kod s. Tovarnik, Srem",
+    "additional_info": "borac, rođen 1923. u s. Desić, Šabac, prgenuo 15. 3. 1945. kod s. Tovarnik, Srem",
     "birth_year": "1923",
     "pdf_page": 21,
     "pdf_y": 384.4,
@@ -34816,8 +34856,9 @@
     "pdf_y_end": 402.9,
     "pdf_file": "12-krajiska-poginuli.pdf",
     "soldier_id": "0054001635",
-    "birth_place": "Desić, Šabac",
     "pdf_x_end": 352.1,
+    "birth_place": "Desić, Šabac",
+    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "9025037436",
@@ -38690,6 +38731,18 @@
         "pdf_y": 445.4,
         "pdf_x_end": 373.7,
         "pdf_y_end": 476.6,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001301030",
+        "name": "Miljković Živana Radovan",
+        "additional_info": "vodnik Zemljoradnik, rođen 1917, Železnik, Čukarica, Beograd. Član KPJ od 1945. U NOB od 13. novembra 1944. Danas penzioner SUP-a.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 48,
+        "pdf_x": 52.6,
+        "pdf_y": 407.7,
+        "pdf_x_end": 206.9,
+        "pdf_y_end": 460.6,
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -43072,7 +43125,7 @@
     "first_name": "Borisav",
     "fathers_name": "",
     "full_name": "Nikolić Borisav",
-    "additional_info": "borac (poginuo u 1944. godini, ostali podacm nisu utvrđeni)",
+    "additional_info": "borac (poginuo u 1944. godini, ostali podaci nisu utvrđeni)",
     "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 237.8,
@@ -43080,10 +43133,10 @@
     "pdf_y_end": 256.4,
     "pdf_file": "12-krajiska-poginuli.pdf",
     "soldier_id": "0054002041",
+    "pdf_x_end": 348.2,
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
-    "pdf_x_end": 348.2
+    "rank": "borac"
   },
   {
     "last_name": "Nikolić",
@@ -51502,7 +51555,7 @@
     "first_name": "Dragiša",
     "fathers_name": "A",
     "full_name": "Popović A Dragiša",
-    "additional_info": "borac, rođen 1925. u s. Kamenica, Koceljevo, pogino 15. 11. 1944. kod s. Čalma, Srem",
+    "additional_info": "borac, rođen 1925. u s. Kamenica, Koceljevo, poginuo 15. 11. 1944. kod s. Čalma, Srem",
     "birth_year": "1925",
     "pdf_page": 29,
     "pdf_y": 138.5,
@@ -51512,6 +51565,9 @@
     "soldier_id": "0054002438",
     "pdf_x_end": 320.6,
     "birth_place": "Kamenica, Koceljevo",
+    "death_type": "poginuo",
+    "death_date": "15.11.1944",
+    "death_place": "Čalma, Srem",
     "rank": "borac",
     "other_sources": [
       {
@@ -51552,14 +51608,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
-    ],
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Stara Pazova"
+    ]
   },
   {
     "last_name": "Popović",
@@ -53746,7 +53796,7 @@
       {
         "soldier_id": "9092000012",
         "name": "Radivojević Gosto",
-        "additional_info": "Spisak poginulih, umrlih ili nestalih učesnika NOR-a 1941-1945, Grabovica: Radivojević Gosto, rođen 1923godine u Grabovici. U NOVJ od 1943. godine kao borac Dvanaeste krajiške udarne brigade. Poginuo 1943. godine na Poniru kod Banjaluke.",
+        "additional_info": "Spisak poginulih, umrlih ili nestalih učesnika NOR-a 1941-1945, Grabovica: Radivojević Gosto, rođen 1923 godine u Grabovici. U NOVJ od 1943. godine kao borac Dvanaeste krajiške udarne brigade. Poginuo 1943. godine na Poniru kod Banjaluke.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=334",
         "source_page": 334,
         "ref_book": "kotor-varos"
@@ -56522,7 +56572,7 @@
     "first_name": "Vuk",
     "fathers_name": "R",
     "full_name": "Reljić R Vuk",
-    "additional_info": "vodnnk voda, rođen 1900. u s. Omarska, Prijedor. poginuo 16. 8. 1944. kod s. Banovići, Tuzla",
+    "additional_info": "vodnik voda, rođen 1900. u s. Omarska, Prijedor. poginuo 16. 8. 1944. kod s. Banovići, Tuzla",
     "birth_year": "1900",
     "pdf_page": 31,
     "pdf_y": 223.0,
@@ -56530,11 +56580,12 @@
     "pdf_y_end": 243.0,
     "pdf_file": "12-krajiska-poginuli.pdf",
     "soldier_id": "0054002684",
+    "pdf_x_end": 323.5,
     "birth_place": "Omarska, Prijedor",
     "death_type": "poginuo",
     "death_date": "16.08.1944",
     "death_place": "Banovići, Tuzla",
-    "pdf_x_end": 323.5
+    "rank": "vodnik"
   },
   {
     "last_name": "Renić",
@@ -62879,11 +62930,11 @@
     ]
   },
   {
-    "last_name": "Stelić",
+    "last_name": "Stolić",
     "middle_name": "S",
     "first_name": "Stevo",
     "fathers_name": "S",
-    "full_name": "Stelić S Stevo",
+    "full_name": "Stolić S Stevo",
     "additional_info": "1909, Bud. Japra, Sanskp Most",
     "birth_year": "1909",
     "pdf_page": 62,
@@ -64432,7 +64483,7 @@
     "first_name": "Halil",
     "fathers_name": "S",
     "full_name": "Subašić S Halil",
-    "additional_info": "1926, Maklenovac, Doboj",
+    "additional_info": "1926, Makljenovac, Doboj",
     "birth_year": "1926",
     "pdf_page": 63,
     "pdf_y": 184.9,
@@ -64440,8 +64491,8 @@
     "pdf_y_end": 193.9,
     "pdf_file": "12-krajiska-prezivjeli.pdf",
     "soldier_id": "0054003055",
-    "birth_place": "Maklenovac, Doboj",
-    "pdf_x_end": 265.5
+    "pdf_x_end": 265.5,
+    "birth_place": "Makljenovac, Doboj"
   },
   {
     "last_name": "Subašić",
@@ -65270,6 +65321,18 @@
         "pdf_y": 197.2,
         "pdf_x_end": 382.1,
         "pdf_y_end": 239.6,
+        "unit_file": "7-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0048013328",
+        "name": "Tendžerić Ljube Mile",
+        "additional_info": "rođen 1926. Gornji Podgraci, Bosanska Gradiška. Srbin, zemljoradnik. U NOB-i od 1942. Borac 1. čete 1. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 195,
+        "pdf_x": 120.9,
+        "pdf_y": 195.4,
+        "pdf_x_end": 288.1,
+        "pdf_y_end": 243.2,
         "unit_file": "7-krajiska-soldiers.json"
       }
     ],
@@ -74906,7 +74969,7 @@
     "first_name": "Pero",
     "fathers_name": "R",
     "full_name": "Ćazić R Pero",
-    "additional_info": "1927, Lusina, Bosanska Krupa",
+    "additional_info": "1927, Ljusina, Bosanska Krupa",
     "birth_year": "1927",
     "pdf_page": 66,
     "pdf_y": 171.4,
@@ -74914,8 +74977,8 @@
     "pdf_y_end": 180.4,
     "pdf_file": "12-krajiska-prezivjeli.pdf",
     "soldier_id": "0054003546",
-    "birth_place": "Lusina, Bosanska Krupa",
-    "pdf_x_end": 284.6
+    "pdf_x_end": 284.6,
+    "birth_place": "Ljusina, Bosanska Krupa"
   },
   {
     "last_name": "Ćehajić",

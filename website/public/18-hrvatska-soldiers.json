@@ -953,7 +953,7 @@
     "first_name": "Meho",
     "fathers_name": "Paše",
     "full_name": "Aljič Paše Meho",
-    "additional_info": "rođen 1925. godine u Modriči, SRBiH, Musliman, radnik, stupio u NOB-u septembra 1943.godine,au Brigadu martal944. godine, borac.",
+    "additional_info": "rođen 1925. godine u Modriči, SRBiH, Musliman, radnik, stupio u NOB-u septembra 1943.godine,au Brigadu marta 1944. godine, borac.",
     "birth_year": "1925",
     "pdf_page": 3,
     "pdf_y": 477.1,
@@ -2291,7 +2291,32 @@
     "death_place": "Garevac, Modriča",
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0059000071",
+        "name": "Babić Alekse Ljubiša",
+        "additional_info": "1922, Tišina, Srbin, zemljoradnik, u odredu od marta 1944, borac, poginuo 14. avgusta 1944, Garevac.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 95.6,
+        "pdf_y": 153.3,
+        "pdf_x_end": 376.1,
+        "pdf_y_end": 169.3,
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ],
+      "death": [
+        {
+          "date": "14.08.1944",
+          "place": "Garevac, Modriča"
+        }
+      ]
+    }
   },
   {
     "last_name": "Babić",
@@ -5480,7 +5505,7 @@
     "first_name": "Momčilo",
     "fathers_name": "Bogdan",
     "full_name": "Božić Bogdana Momčilo",
-    "additional_info": "rođen 1927. godide u selu Ostojićevo, Svinjarevac, SRBiH, Srbin, zemljoradnik. Stupio u Brigadu 7. 5. 1945. godine. Umro 1982. godine. Bio je borac 2. čete 4. bataljona.",
+    "additional_info": "rođen 1927. godine u selu Ostojićevo, Svinjarevac, SRBiH, Srbin, zemljoradnik. Stupio u Brigadu 7. 5. 1945. godine. Umro 1982. godine. Bio je borac 2. čete 4. bataljona.",
     "birth_year": "1927",
     "pdf_page": 13,
     "pdf_y": 260.6,
@@ -5490,6 +5515,7 @@
     "soldier_id": "0052000188",
     "pdf_x_end": 457.9,
     "pdf_x_left": 104.4,
+    "birth_place": "Ostojićevo, Svinjarevac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "umro",
@@ -19426,11 +19452,11 @@
     "unit_detail": "2. četa, 2. bataljon"
   },
   {
-    "last_name": "Korde",
+    "last_name": "Kodre",
     "middle_name": "Viktora",
     "first_name": "Jurije",
     "fathers_name": "Viktor",
-    "full_name": "Korde Viktora Jurije",
+    "full_name": "Kodre Viktora Jurije",
     "additional_info": "rođen 1930. god. u Mariboru, SR Slovenija, Slovenac, đak. U NOB-u stupio oktobra 1943. godine, a u Brigadu marta 1944. godine, borac, vodni delegat. Poginuo 14. 4. 1944. godine u Obudovcu, Bos. Šamac.",
     "birth_year": "1930",
     "pdf_page": 49,
@@ -22546,7 +22572,21 @@
     "occupation": "zemljoradnik",
     "rank": "vodnik",
     "unit_detail": "2. četa, 2. bataljon",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0059000860",
+        "name": "Lušničkić Džefra Zahid",
+        "additional_info": "1924, Vućkovci, Musliman, u NOB od 1943, u odredu od oktobra 1943, komandir čete.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 61,
+        "pdf_x": 61.5,
+        "pdf_y": 151.2,
+        "pdf_x_end": 341.6,
+        "pdf_y_end": 167.4,
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Madžarević",
@@ -27841,8 +27881,8 @@
     "first_name": "Novak",
     "fathers_name": "Simo",
     "full_name": "Mićić Sime Novak",
-    "additional_info": "rodn 1930. godine u Kožuhama, Doboj, SRBiH. Srbin, đak. U NOB-u stupio 22. 12. 1943. godine, a u Brigadu juna 1944. godine, borac 1. bataljona. ratni vojni invalid.",
-    "birth_year": "",
+    "additional_info": "rođen 1930. godine u Kožuhama, Doboj, SRBiH. Srbin, đak. U NOB-u stupio 22. 12. 1943. godine, a u Brigadu juna 1944. godine, borac 1. bataljona. ratni vojni invalid.",
+    "birth_year": "1930",
     "pdf_page": 64,
     "pdf_y": 134.6,
     "pdf_x": 152.8,
@@ -27851,6 +27891,7 @@
     "soldier_id": "0052000962",
     "pdf_x_end": 477.1,
     "pdf_x_left": 122.8,
+    "birth_place": "Kožuhe, Doboj",
     "ethnicity": "Srbin",
     "occupation": "đak",
     "rank": "borac",
@@ -33033,7 +33074,7 @@
     "first_name": "Ivo",
     "fathers_name": "Bono",
     "full_name": "Pejić Bone Ivo",
-    "additional_info": "rođen 1918. godine u Husinu, Tuzla, SRBiH, Hrvat radnik. U Brigadu stupio 10. 10. 1943. godine, politički komesar 3. čete 3. Lataljona do 28. 12. 1943. godine kada je zarobljen i sproveden u Njemačku u zarobljeništvo gdje je ostao do kraja rata.",
+    "additional_info": "rođen 1918. godine u Husinu, Tuzla, SRBiH, Hrvat radnik. U Brigadu stupio 10. 10. 1943. godine, politički komesar 3. čete 3. Bataljona do 28. 12. 1943. godine kada je zarobljen i sproveden u Njemačku u zarobljeništvo gdje je ostao do kraja rata.",
     "birth_year": "1918",
     "pdf_page": 79,
     "pdf_y": 602.4,
@@ -33045,7 +33086,6 @@
     "pdf_x_left": 107.6,
     "birth_place": "Husino, Tuzla",
     "rank": "politički komesar",
-    "unit_detail": "3. četa",
     "other_sources": [
       {
         "soldier_id": "0052010227",
@@ -33058,7 +33098,8 @@
         "pdf_x_end": 163.9,
         "pdf_y_end": 324.2
       }
-    ]
+    ],
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "last_name": "Pejić",
@@ -36854,11 +36895,11 @@
     ]
   },
   {
-    "last_name": "Ristovojević",
+    "last_name": "Ristivojević",
     "middle_name": "Vlastimira",
     "first_name": "Mileta",
     "fathers_name": "Vlastimir",
-    "full_name": "Ristovojević Vlastimira Mileta",
+    "full_name": "Ristivojević Vlastimira Mileta",
     "additional_info": "rođen 1927. godine u Kusadaku. Despotovac, SR Srbija, Srbin, zemljoradnik. U Brigadu stupio 27. 11. 1944. godine, borac 2. čete 2. bataljona. Poginuo 15. 2. 1945. godine kod Vlasenice.",
     "birth_year": "1927",
     "pdf_page": 87,
@@ -36876,7 +36917,17 @@
     "death_date": "15.02.1945",
     "death_place": "Vlasenica",
     "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon"
+    "unit_detail": "2. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9025029617",
+        "name": "Ristivojević (Vladimir) Mileta",
+        "additional_info": "rođen 1927, Kusadak (Smederevska Palanka). Srbin, poginuo 1945. u NOBu, Vlasenica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1147",
+        "source_page": 1147,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Rokić",
@@ -38987,7 +39038,7 @@
       {
         "soldier_id": "0049011432",
         "name": "Simić Marka Nikola",
-        "additional_info": "1914, Lončari, Brčko, SRBiH, Srbin, učitelj, u NOB od 1941, nosilac »Spomenice 1941«, u brigadi od jula 1943, komandant odreda i načelnik štsbs brisdc",
+        "additional_info": "1914, Lončari, Brčko, SRBiH, Srbin, učitelj, u NOB od 1941, nosilac »Spomenice 1941«, u brigadi od jula 1943, komandant odreda i načelnik štaba brigade",
         "pdf_file": "15-majevicka-spisak.pdf",
         "pdf_page": 54,
         "pdf_x": 4.6,
@@ -42714,8 +42765,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1029",
         "source_page": 1029,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0059001698",
+        "name": "Tihić Muje Pašaga",
+        "additional_info": "1923, Bosanski Samac, Musliman, radnik, u odredu od 10. 3. 1944, borac, poginuo 10. avgusta 1944, Monj.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 16,
+        "pdf_x": 99.5,
+        "pdf_y": 460.4,
+        "pdf_x_end": 379.4,
+        "pdf_y_end": 476.3,
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Tihić",
@@ -43067,12 +43135,12 @@
     "birth_place": "Krnjevo"
   },
   {
-    "last_name": "To",
-    "middle_name": "",
-    "first_name": "Palovići",
-    "fathers_name": "",
-    "full_name": "To Palovići",
-    "additional_info": "vana MARICA, rođena 1921. godine u Kreki, Tuzla, SR-BiH, Hrvatica, radnica. U Brigadu stupila 10. 10. 1943. godine, borac 3. čete 1. bataljona. Marta 1944. godine upućena na liječenje.",
+    "last_name": "Topalović",
+    "middle_name": "Ivana",
+    "first_name": "Marica",
+    "fathers_name": "Ivan",
+    "full_name": "Topalović Ivana Marica",
+    "additional_info": "rođena 1921. godine u Kreki, Tuzla, SR-BiH, Hrvatica, radnica. U Brigadu stupila 10. 10. 1943. godine, borac 3. čete 1. bataljona. Marta 1944. godine upućena na liječenje.",
     "birth_year": "1921",
     "pdf_page": 105,
     "pdf_y": 484.8,
@@ -45315,7 +45383,7 @@
     "first_name": "Dragoljub",
     "fathers_name": "Đorde",
     "full_name": "Veljković Đorda Dragoljub",
-    "additional_info": "rođen 1919. godine u Donjem Vidovu. Paraćin. SR Srbija, Srbin, zemljoradnik. U NOB-u stupio 14. 12. 1944. godine, a u Brigadu januara 1945. godine, četni starješina, borac 2. čete 1. bataljona. 44 18. hrvatska brigada v iijrtiw v ooze JUÄU, roaen 1»13. godine u Urašju, Tuzla, SRBiH, Hr vat, radnik. U Brigadu stupio 10. 10. 1943. godine, borac 2. čete 1. bataljona. Član SKOJ-a od 1942. godine. Umro u Orašju, Tuzla, 1981. godine.",
+    "additional_info": "rođen 1919. godine u Donjem Vidovu. Paraćin. SR Srbija, Srbin, zemljoradnik. U NOB-u stupio 14. 12. 1944. godine, a u Brigadu januara 1945. godine, četni starješina, borac 2. čete 1. bataljona. 44 18. hrvatska brigada v iijrtiw v ooze JUÄU, rođen 1»13. godine u Urašju, Tuzla, SRBiH, Hr vat, radnik. U Brigadu stupio 10. 10. 1943. godine, borac 2. čete 1. bataljona. Član SKOJ-a od 1942. godine. Umro u Orašju, Tuzla, 1981. godine.",
     "birth_year": "1919",
     "pdf_page": 108,
     "pdf_y": 628.8,
@@ -45325,6 +45393,7 @@
     "soldier_id": "0052001538",
     "pdf_x_end": 475.5,
     "pdf_x_left": 119.1,
+    "party": "SKOJ 1942",
     "birth_place": "Donje Vidovo",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -45332,8 +45401,7 @@
     "death_date": "1981",
     "death_place": "Orašje, Tuzla",
     "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon",
-    "party": "SKOJ 1942"
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "last_name": "Vidaković",
@@ -46720,7 +46788,21 @@
     "death_date": "1985",
     "death_place": "Bosanski Šamac",
     "rank": "borac",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0059001825",
+        "name": "Zaimović Husnije Hasan",
+        "additional_info": "1893, Bosanski Samac, Musliman, kafedžija, u NOB, od januara 1942, u odredu od marta 1944, komandant mjesta, član KPJ.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 18,
+        "pdf_x": 96.0,
+        "pdf_y": 232.4,
+        "pdf_x_end": 377.6,
+        "pdf_y_end": 256.7,
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zaimović",
@@ -49676,7 +49758,7 @@
     "last_name": "Šehić",
     "middle_name": "Saćira",
     "first_name": "Omer",
-    "fathers_name": "Saćira",
+    "fathers_name": "Šaćir",
     "full_name": "Šehić Saćira Omer",
     "additional_info": "rođen 1913. godine u Poljani, Tuzla, Musliman, zemljoradnik. U Brigadu stupio 10. 10. 1943. godine, borac 3. čete 3. bataljona. Poginuo na Ozrenu, 20. 1. 1944. godine.",
     "birth_year": "1913",

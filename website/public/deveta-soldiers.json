@@ -10054,11 +10054,11 @@
     "pdf_x_end": 291.4
   },
   {
-    "last_name": "Hc",
+    "last_name": "Ilc",
     "middle_name": "",
     "first_name": "Kostja",
     "fathers_name": "",
-    "full_name": "Hc Kostja",
+    "full_name": "Ilc Kostja",
     "additional_info": "Ribnica",
     "birth_year": "",
     "pdf_page": 6,
@@ -31779,7 +31779,7 @@
     "first_name": "Adolf",
     "fathers_name": "",
     "full_name": "Rački Adolf",
-    "additional_info": "Briga, Kočevje, p Rdčki lvan 192b Grgelj, Kočevje",
+    "additional_info": "Briga, Kočevje, p Rdčki lvan 1926 Grgelj, Kočevje",
     "birth_year": "",
     "pdf_page": 15,
     "pdf_y": 172.9,
@@ -31791,8 +31791,10 @@
     "birth_place": "Briga, Kočevje",
     "death_type": "poginuo",
     "borrowed": [
+      "death_date",
       "death_type"
     ],
+    "death_date": "1944",
     "other_sources": [
       {
         "soldier_id": "0068000574",
@@ -32527,15 +32529,27 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=169",
         "source_page": 169,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0068000593",
+        "name": "Rojc Slavko",
+        "additional_info": "Praproče, 1925-",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 9,
+        "pdf_x": 243.9,
+        "pdf_y": 246.0,
+        "pdf_x_end": 335.7,
+        "pdf_y_end": 252.5,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
       }
     ],
-    "ethnicity": "Slovenac",
+    "death_type": "poginuo",
     "borrowed": [
       "death_date",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
+    "ethnicity": "Slovenac",
     "death_date": "1944"
   },
   {
@@ -37191,6 +37205,10 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167001913",
     "pdf_x_end": 310.4,
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
+    ],
     "other_sources": [
       {
         "soldier_id": "0068000677",
@@ -39814,7 +39832,21 @@
     "pdf_y_end": 218.7,
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167002051",
-    "pdf_x_end": 88.4
+    "pdf_x_end": 88.4,
+    "other_sources": [
+      {
+        "soldier_id": "0068000727",
+        "name": "Vovko Jože",
+        "additional_info": "Žaloviče, 1912—",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 10,
+        "pdf_x": 243.6,
+        "pdf_y": 103.6,
+        "pdf_x_end": 335.5,
+        "pdf_y_end": 110.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vozel",

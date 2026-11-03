@@ -4045,27 +4045,48 @@
     "first_name": "Nikola",
     "fathers_name": "",
     "full_name": "Fajhr Nikola",
-    "additional_info": "1925, Klenje, Bogattić, borac 2. bataljona. Poginuo 20. januara 1945. godine kod jasengrada na Sremskom frontu gde je i sahranjen. TA4HR Milorada MILETA, 1921. godine, Lozanj, Gornji Milanovac, zemljo radnik. U NOVJ od oktobra 1944. godine, borac 3. čete 2. bataljona. Kod Karlovčića u Sremu 1. novembra 1944. godine ranjen u obe noge. Umro i sahranjen u istom selu.",
+    "additional_info": "1925, Klenje, Bogattić, borac 2. bataljona. Poginuo 20. januara 1945. godine kod jasengrada na Sremskom frontu gde je i sahranjen.",
     "birth_year": "1925",
     "pdf_page": 26,
     "pdf_y": 441.1,
     "pdf_x": 78.2,
-    "pdf_y_end": 507.0,
+    "pdf_y_end": 467.4,
     "pdf_file": "5-srpska.pdf",
     "soldier_id": "0127000123",
-    "pdf_x_end": 383.1,
+    "pdf_x_end": 382.9,
     "birth_place": "Klenje, Bogattić",
     "death_type": "poginuo",
     "death_date": "20.01.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon"
+    "unit_detail": "2. bataljon"
   },
   {
-    "last_name": "Filigtović",
+    "soldier_id": "0127009013",
+    "last_name": "Tačić",
+    "middle_name": "Milorada",
+    "first_name": "Mileta",
+    "fathers_name": "Milorad",
+    "full_name": "Tačić Milorada Mileta",
+    "additional_info": "1921. godine, Lozanj, Gornji Milanovac, zemljo radnik. U NOVJ od oktobra 1944. godine, borac 3. čete 2. bataljona. Kod Karlovčića u Sremu 1. novembra 1944. godine ranjen u obe noge. Umro i sahranjen u istom selu.",
+    "birth_year": "1921",
+    "pdf_file": "5-srpska.pdf",
+    "pdf_page": 26,
+    "pdf_x": 78.0,
+    "pdf_y": 471.6,
+    "birth_place": "Lozanj, Gornji Milanovac",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon",
+    "pdf_x_end": 383.1,
+    "pdf_y_end": 507.0
+  },
+  {
+    "last_name": "Filipović",
     "middle_name": "Ljubomira",
     "first_name": "Jovan",
     "fathers_name": "Ljubomir",
-    "full_name": "Filigtović Ljubomira Jovan",
+    "full_name": "Filipović Ljubomira Jovan",
     "additional_info": "1928, Gornje Kordince, Džigolj, Prokuplje, zemljoradnik. U NOVJ od jula 1944. godine, bio zamenik komandira 2. čete 3. bataljona. Ranjen u borbama za Šarengrad, prenesen u Medikosanitetski bataljona i tamo podlegao ranama. Sahranjen u Iloku. Kasnije prenesen u rodno selo.",
     "birth_year": "1928",
     "pdf_page": 77,
@@ -4080,7 +4101,35 @@
     "death_type": "umro",
     "rank": "zamenik komandira",
     "unit_detail": "2. četa, 3. bataljon",
-    "death_place": "Sahranjen u Iloku"
+    "death_place": "Sahranjen u Iloku",
+    "other_sources": [
+      {
+        "soldier_id": "9014009693",
+        "name": "Filipović Jovan",
+        "additional_info": "Poginuli borci Pete srpske narodnooslobodilačke udarne brigade: 421. Filipović Jovan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 75,
+        "pdf_x": 371.8,
+        "pdf_y": 757.2,
+        "pdf_x_end": 449.0,
+        "pdf_y_end": 766.7,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025026847",
+        "name": "Filipović (Ljubomir) Jovan",
+        "additional_info": "rođen 1929, Gornje Kordince (Prokuplje). Srbin, poginuo 1945. u NOBu, Šarengrad-srem",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1057",
+        "source_page": 1057,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Filipović",
@@ -4243,7 +4292,7 @@
       {
         "soldier_id": "0126000169",
         "name": "Filipović Svetislava Radiša",
-        "additional_info": "zemljoracnik, rođen 1926. u Svračkovcima; borac Takovskog bataljona, a kasnije 21. udarne divizije NOVJ; poginuo u borbi protiv neprijatelja kod Kapele u Hrvatskoj aprila 1945.",
+        "additional_info": "zemljoradnik, rođen 1926. u Svračkovcima; borac Takovskog bataljona, a kasnije 21. udarne divizije NOVJ; poginuo u borbi protiv neprijatelja kod Kapele u Hrvatskoj aprila 1945.",
         "pdf_file": "cacanski-odred.pdf",
         "pdf_page": 52,
         "pdf_x": 60.1,
@@ -4257,8 +4306,10 @@
     "birth_year": "1926",
     "borrowed": [
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
+    "occupation": "zemljoradnik",
     "ethnicity": "Srbin"
   },
   {
@@ -4353,7 +4404,7 @@
     "first_name": "Dragiša",
     "fathers_name": "Jezdimir",
     "full_name": "Glišović Jezdimira Dragiša",
-    "additional_info": "1924, Gornji Branetići, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944, borac 3. bataljona. Poginjo 21. januara 1945. godine u borbi protiv Nemaca i ustaša, kod mesta Šarengrada, Vinkovci, na Sremskom frontu.",
+    "additional_info": "1924, Gornji Branetići, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944, borac 3. bataljona. Poginuo 21. januara 1945. godine u borbi protiv Nemaca i ustaša, kod mesta Šarengrada, Vinkovci, na Sremskom frontu.",
     "birth_year": "1924",
     "pdf_page": 27,
     "pdf_y": 130.1,
@@ -4364,6 +4415,9 @@
     "pdf_x_end": 357.4,
     "birth_place": "Gornji Branetići, Gornji Milanovac",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "21.01.1945",
+    "death_place": "Šarengrad, Vinkovci, Sremski front",
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "other_sources": [
@@ -6913,7 +6967,7 @@
       {
         "soldier_id": "9016002800",
         "name": "Jevtić Dragića Milutin",
-        "additional_info": "učenik gimnazije, rođen 1920. u Zagrađu; borac Pete udarne brigade NOVJ; poginuo u borbi protiz neprijatelja u Boleču kod Beograda 18. oktobra 1944.",
+        "additional_info": "učenik gimnazije, rođen 1920. u Zagrađu; borac Pete udarne brigade NOVJ; poginuo u borbi protiv neprijatelja u Boleču kod Beograda 18. oktobra 1944.",
         "pdf_file": "cacanski-kraj-pali.pdf",
         "pdf_page": 187,
         "pdf_x": 60.0,
@@ -7125,7 +7179,7 @@
     "first_name": "Milomir",
     "fathers_name": "",
     "full_name": "Josipović Milomir",
-    "additional_info": "1920, Strnovo, borac 1. bataljona. Teško ranjen u borbi za selo Martince, 2. dedembra 1944. godine, prenesen u divizijsku bolnicu u Sremskoj Mitrovici, gde je umro i sahranjen posle nekoliko dana.",
+    "additional_info": "1920, Strnovo, borac 1. bataljona. Teško ranjen u borbi za selo Martince, 2. decembra 1944. godine, prenesen u divizijsku bolnicu u Sremskoj Mitrovici, gde je umro i sahranjen posle nekoliko dana.",
     "birth_year": "1920",
     "pdf_page": 40,
     "pdf_y": 469.1,
@@ -8112,11 +8166,11 @@
     "unit_detail": "1. bataljon"
   },
   {
-    "last_name": "Kandin",
+    "last_name": "Kandić",
     "middle_name": "Boška",
     "first_name": "Radiša",
     "fathers_name": "Boško",
-    "full_name": "Kandin Boška Radiša",
+    "full_name": "Kandić Boška Radiša",
     "additional_info": "1924, Reljinci, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. godine, komnandir voda u 1. bataljonu. Poginuo 3. januara 1945. godine u borbi protiv Nemaca, kod Otoka, na SreJiskom frontu.",
     "birth_year": "1924",
     "pdf_page": 41,
@@ -8131,7 +8185,34 @@
     "death_type": "poginuo",
     "death_date": "03.01.1945",
     "unit_detail": "1. bataljon",
-    "death_place": "kod Otoka, na SreJiskom frontu"
+    "death_place": "kod Otoka, na SreJiskom frontu",
+    "other_sources": [
+      {
+        "soldier_id": "9016003257",
+        "name": "Kandić Boška Radiša",
+        "additional_info": "zemljoradnik, rođen 1924. u Reljincima; borac 21. udarne divizije NOVJ; poginuo u borbi protiv neprijatelja u Makovu na sremskom frontu 7. januara 1945.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 218,
+        "pdf_x": 49.5,
+        "pdf_y": 278.9,
+        "pdf_x_end": 375.4,
+        "pdf_y_end": 309.7,
+        "pdf_x_left": 17.3,
+        "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025011407",
+        "name": "Kandić (Boško) Radiša",
+        "additional_info": "rođen 1924, Reljinci (Gornji Milanovac). Srbin, poginuo 1945. u NOBu, Šarengrad",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=430",
+        "source_page": 430,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Karapandžin",
@@ -8899,7 +8980,7 @@
     "first_name": "Dragoljub",
     "fathers_name": "",
     "full_name": "Kozin Dragoljub",
-    "additional_info": "zvani Boka; Pljevl.a, Crna Gora, gimnazista u Prištini. Predratni član SKOJ-a. Početkom rata se sa porodicom doselio u selo Mala Draguša, Blace. Od septembra 1942. godine borac Jastrebačkog NOP odreda, zatim borac 2. južnomoravskog NOP odreda. Početkom marta 1943. godine dobio jako zapaljenje pluća, po ozdravljenju bio neko vreme terenski partijsko-politički rukovodilac u jastrebačkom srezu, a jula 1943. godine ponovo odlazi u Jastrebački NOP odred. Prilikom formiranja 5. brigade određen za političkog komesara (ili zamenik) 3. čete 1. bataljona. U borbi protiv četnika i Bugara jula 1944. godine teško ranjen, prenesen u bolnicu 21. divizije i posle tri dana podlegao ranama u selu Kljajići. Po kazivanjima nekih drugova iz brigade ubili su ga četnici na putu za bolnicu.",
+    "additional_info": "zvani Boka; Pljevlja, Crna Gora, gimnazista u Prištini. Predratni član SKOJ-a. Početkom rata se sa porodicom doselio u selo Mala Draguša, Blace. Od septembra 1942. godine borac Jastrebačkog NOP odreda, zatim borac 2. južnomoravskog NOP odreda. Početkom marta 1943. godine dobio jako zapaljenje pluća, po ozdravljenju bio neko vreme terenski partijsko-politički rukovodilac u jastrebačkom srezu, a jula 1943. godine ponovo odlazi u Jastrebački NOP odred. Prilikom formiranja 5. brigade određen za političkog komesara (ili zamenik) 3. čete 1. bataljona. U borbi protiv četnika i Bugara jula 1944. godine teško ranjen, prenesen u bolnicu 21. divizije i posle tri dana podlegao ranama u selu Kljajići. Po kazivanjima nekih drugova iz brigade ubili su ga četnici na putu za bolnicu.",
     "birth_year": "",
     "pdf_page": 42,
     "pdf_y": 443.9,
@@ -8909,7 +8990,7 @@
     "soldier_id": "0127000272",
     "pdf_x_end": 381.7,
     "party": "SKOJ",
-    "birth_place": "Pljevl.a, Crna Gora",
+    "birth_place": "Pljevlja, Crna Gora",
     "death_type": "umro",
     "death_place": "u selu Kljajići",
     "rank": "borac",
@@ -9130,21 +9211,44 @@
     "first_name": "Stevan",
     "fathers_name": "",
     "full_name": "Kuzmanović Stevan",
-    "additional_info": "1924, Skupljen, Obrenovac, borac 3. bataljona. Poginuo 16. aprila 1945. godine, kod Bakova i tu sahranjen u zajedničkoj grobnici. KY3MAH0BHR STEVAN, 1910, Markovci, Kruševac, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 3. bataljona. Poginuo 12. aprila 1945. godine, na Sremskom frontu, kod s. Opatovca, pri desantu na Dunavu.",
+    "additional_info": "1924, Skupljen, Obrenovac, borac 3. bataljona. Poginuo 16. aprila 1945. godine, kod Bakova i tu sahranjen u zajedničkoj grobnici.",
     "birth_year": "1924",
     "pdf_page": 44,
     "pdf_y": 141.9,
     "pdf_x": 74.8,
-    "pdf_y_end": 197.9,
+    "pdf_y_end": 167.7,
     "pdf_file": "5-srpska.pdf",
     "soldier_id": "0127000281",
-    "pdf_x_end": 380.5,
+    "pdf_x_end": 380.0,
     "birth_place": "Skupljen, Obrenovac",
     "death_type": "poginuo",
     "death_date": "16.04.1945",
     "death_place": "Bakovo",
     "rank": "borac",
     "unit_detail": "3. bataljon"
+  },
+  {
+    "soldier_id": "0127009014",
+    "last_name": "Kuzmanović",
+    "middle_name": "",
+    "first_name": "Stevan",
+    "fathers_name": "",
+    "full_name": "Kuzmanović Stevan",
+    "additional_info": "1910, Markovci, Kruševac, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 3. bataljona. Poginuo 12. aprila 1945. godine, na Sremskom frontu, kod s. Opatovca, pri desantu na Dunavu.",
+    "birth_year": "1910",
+    "pdf_file": "5-srpska.pdf",
+    "pdf_page": 44,
+    "pdf_x": 75.0,
+    "pdf_y": 172.2,
+    "birth_place": "Markovci, Kruševac",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "12.04.1945",
+    "death_place": "Sremski front, Opatovac, Dunav",
+    "rank": "borac",
+    "unit_detail": "3. bataljon",
+    "pdf_x_end": 380.5,
+    "pdf_y_end": 197.9
   },
   {
     "last_name": "Lacković",
@@ -13462,7 +13566,7 @@
     "last_name": "Miletić",
     "middle_name": "Sdavka",
     "first_name": "Milovan",
-    "fathers_name": "Sdavka",
+    "fathers_name": "Slavko",
     "full_name": "Miletić Sdavka Milovan",
     "additional_info": "1922, Gornja Draguša, Blace, zemljoradnik. U NOVJ od 14. januara 1944. godine, borac a zatim politički komesar 2. čete 3. bataljona. Član KPJ od 1944. godine. Poginuo 20. marta 1944. godine u borbi protiv četnika kod Kuline. Sahranjen u rodnom selu.",
     "birth_year": "1922",
@@ -20496,7 +20600,7 @@
     "first_name": "Dragin",
     "fathers_name": "Božidar",
     "full_name": "Popović Božidara Dragin",
-    "additional_info": "1917, Lozalj, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. borac 2. bataljona. Poginuo 24. dedembra 1944. godine na Sremskom frontu, kod Donjeg Novog Sela.",
+    "additional_info": "1917, Lozalj, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. borac 2. bataljona. Poginuo 24. decembra 1944. godine na Sremskom frontu, kod Donjeg Novog Sela.",
     "birth_year": "1917",
     "pdf_page": 64,
     "pdf_y": 376.2,
@@ -20505,10 +20609,11 @@
     "pdf_file": "5-srpska.pdf",
     "soldier_id": "0127000606",
     "pdf_x_end": 389.2,
+    "death_place": "Sremski front, kod Donjeg Novog Sela",
     "birth_place": "Lozalj, Gornji Milanovac",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_date": "1944",
+    "death_date": "24.12.1944",
     "rank": "borac",
     "unit_detail": "2. bataljon"
   },
@@ -20886,11 +20991,11 @@
     ]
   },
   {
-    "last_name": "Protin",
+    "last_name": "Protić",
     "middle_name": "Petka",
     "first_name": "Dobrivoje",
     "fathers_name": "Petko",
-    "full_name": "Protin Petka Dobrivoje",
+    "full_name": "Protić Petka Dobrivoje",
     "additional_info": "1923, Gornja Draguša, Blace zemljoradnik. U NOVJ od 14. januara 1944. godine, borac a zatim obaveštajni oficir. Teško anjen u grudi kod Šarengrada, 23. januara 1944. godine, umro u Medikosanitetskom bataljonu i sahranjen u Iloku. Kasnije prenesen u rodno selo.",
     "birth_year": "1923",
     "pdf_page": 65,
@@ -20903,7 +21008,21 @@
     "birth_place": "Gornja Draguša, Blace",
     "death_type": "umro",
     "death_place": "teško ranjen kod Šarengrada, preminuo u bolnici",
-    "rank": "obaveštajni oficir"
+    "rank": "obaveštajni oficir",
+    "other_sources": [
+      {
+        "soldier_id": "9014009601",
+        "name": "Protić Dobrivoje",
+        "additional_info": "Poginuli borci Pete srpske narodnooslobodilačke udarne brigade: 330. Protić Dobrivoje.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 75,
+        "pdf_x": 448.2,
+        "pdf_y": 487.2,
+        "pdf_x_end": 529.0,
+        "pdf_y_end": 496.7,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Protić",
@@ -20973,7 +21092,7 @@
     "first_name": "Golub",
     "fathers_name": "",
     "full_name": "Prvović Golub",
-    "additional_info": "borac 1. bataljona. U borbama kod Šarengrada, 22. januara 1945. godive teško ranjen u stomak, prenesen u Medikosanitetski bataljon divizije i tamo podlegao ranama posle nekoliko dana. Sahranjen u selu Susak.",
+    "additional_info": "borac 1. bataljona. U borbama kod Šarengrada, 22. januara 1945. godine teško ranjen u stomak, prenesen u Medikosanitetski bataljon divizije i tamo podlegao ranama posle nekoliko dana. Sahranjen u selu Susak.",
     "birth_year": "",
     "pdf_page": 65,
     "pdf_y": 141.9,
@@ -22117,7 +22236,7 @@
     "first_name": "Borivoje",
     "fathers_name": "Sava",
     "full_name": "Ranđelović Save Borivoje",
-    "additional_info": "1914, Trnjane, Žitkovac, zemljoradnik. U NOVJ stupio maja 1944. godine, bio borac, vodnik voda, a zatim zamenik komandira čete u 2. bataljonu. Poginuo u borbi protiv Nemaca 3. januara1945. godine kod sela Komletinci, na Sremskom frontu.",
+    "additional_info": "1914, Trnjane, Žitkovac, zemljoradnik. U NOVJ stupio maja 1944. godine, bio borac, vodnik voda, a zatim zamenik komandira čete u 2. bataljonu. Poginuo u borbi protiv Nemaca 3. januara 1945. godine kod sela Komletinci, na Sremskom frontu.",
     "birth_year": "1914",
     "pdf_page": 67,
     "pdf_y": 348.6,
@@ -22157,7 +22276,7 @@
     "death_type": "umro",
     "death_place": "Komletinci",
     "occupation": "zemljoradnik",
-    "death_date": "1945",
+    "death_date": "03.01.1945",
     "unit_detail": "2. bataljon"
   },
   {
@@ -22267,11 +22386,11 @@
     "unit_detail": "1. bataljon"
   },
   {
-    "last_name": "Reljil",
+    "last_name": "Reljić",
     "middle_name": "Dušana",
     "first_name": "Jovan",
     "fathers_name": "Dušan",
-    "full_name": "Reljil Dušana Jovan",
+    "full_name": "Reljić Dušana Jovan",
     "additional_info": "1924, Boljkovci, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 2. čete 3. bataljona. Pošnuo 18. oktobra 1944. godine, u borbi protiv Nemaca za oslobađanje Beograda.",
     "birth_year": "1924",
     "pdf_page": 68,
@@ -22284,7 +22403,40 @@
     "birth_place": "Boljkovci, Gornji Milanovac",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon"
+    "unit_detail": "2. četa, 3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9016002260",
+        "name": "Reljić Dušana Jovan",
+        "additional_info": "zemljoradnik, rođen 1924. u Boljkovcima; borac 21. divizije NOVJ; poginuo u borbi protiv neprijatelja kod Beograda 15. oktobra 1944.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 150,
+        "pdf_x": 48.5,
+        "pdf_y": 347.7,
+        "pdf_x_end": 374.4,
+        "pdf_y_end": 378.3,
+        "pdf_x_left": 16.8,
+        "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9025011051",
+        "name": "Reljić (Dušan) Jovan",
+        "additional_info": "rođen 1925, Boljkovci (Golubac). Srbin, poginuo 1944. u NOBu, Pakrac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=418",
+        "source_page": 418,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Pakrac"
   },
   {
     "last_name": "Reljić",
@@ -23051,7 +23203,7 @@
     "first_name": "Lazar",
     "fathers_name": "",
     "full_name": "Savić Lazar",
-    "additional_info": "1923, Žarkovo, Beograd, borac 3. bataljona. Poginuo 27. aprila 1945. godine kod sela Livađani i tu je i sahraljen.",
+    "additional_info": "1923, Žarkovo, Beograd, borac 3. bataljona. Poginuo 27. aprila 1945. godine kod sela Livađani i tu je i sahranjen.",
     "birth_year": "1923",
     "pdf_page": 69,
     "pdf_y": 254.6,
@@ -23063,9 +23215,9 @@
     "birth_place": "Žarkovo, Beograd",
     "death_type": "poginuo",
     "death_date": "27.04.1945",
+    "death_place": "Livađani",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "death_place": "Livađani"
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Savić",
@@ -23759,7 +23911,7 @@
     "first_name": "Živorad",
     "fathers_name": "",
     "full_name": "Spasić Živorad",
-    "additional_info": "(Živomir), 1919 Kusadak, Smederevska Palanka, zemljoradnik. U NOVJ od oktobra 1944. godine borac 2. bataljona. Poginuo 24. dedembra 1944. godine kod Donjeg Novog Sela na Sremskom frontu.",
+    "additional_info": "(Živomir), 1919 Kusadak, Smederevska Palanka, zemljoradnik. U NOVJ od oktobra 1944. godine borac 2. bataljona. Poginuo 24. decembra 1944. godine kod Donjeg Novog Sela na Sremskom frontu.",
     "birth_year": "",
     "pdf_page": 70,
     "pdf_y": 397.1,
@@ -23771,7 +23923,8 @@
     "birth_place": "(Živomir)",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_date": "1944",
+    "death_date": "24.12.1944",
+    "death_place": "kod Donjeg Novog Sela na Sremskom frontu",
     "rank": "borac",
     "unit_detail": "2. bataljon"
   },
@@ -24370,11 +24523,11 @@
     ]
   },
   {
-    "last_name": "Stavanović",
+    "last_name": "Stefanović",
     "middle_name": "Obrada",
     "first_name": "Miodrag",
     "fathers_name": "Obrad",
-    "full_name": "Stavanović Obrada Miodrag",
+    "full_name": "Stefanović Obrada Miodrag",
     "additional_info": "1912, Donje Suhotno, Žitkovac, zemljoradnik. U NOVJ stupio 10. juna 1944. godine, borac 2. bataljona. Poginuo 26. jula 1944. godine u borbi protiv balista, na planini Kitki, na tzv. kosovskoj demarkacionoj liniji.",
     "birth_year": "1912",
     "pdf_page": 72,
@@ -24389,7 +24542,23 @@
     "death_type": "poginuo",
     "death_date": "26.07.1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9025000354",
+        "name": "Stefanović (Obrad) Miodrag",
+        "additional_info": "rođen 1912, Donje Suhotno (Aleksinac). ostalo, poginuo 1944. u NOBu, Kuršumlija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=10",
+        "source_page": 10,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kuršumlija"
   },
   {
     "last_name": "Stefanečki",
@@ -25152,7 +25321,7 @@
     "first_name": "Miodrag",
     "fathers_name": "",
     "full_name": "Stojanović Miodrag",
-    "additional_info": "1924, Stupica, borac 2. bataljona. Poginuo 12. aprila 1945. godine, na Sremskom frontu, kod Sotina, na Dunavu, gde je i sahraljen.",
+    "additional_info": "1924, Stupica, borac 2. bataljona. Poginuo 12. aprila 1945. godine, na Sremskom frontu, kod Sotina, na Dunavu, gde je i sahranjen.",
     "birth_year": "1924",
     "pdf_page": 73,
     "pdf_y": 252.4,
@@ -25314,12 +25483,12 @@
     ]
   },
   {
-    "last_name": "Stojanović",
+    "last_name": "Stojanović-Stojković",
     "middle_name": "",
-    "first_name": "Stojković",
+    "first_name": "Đuro",
     "fathers_name": "",
-    "full_name": "Stojanović Stojković",
-    "additional_info": "zvani Rypo; 1925, Škare, Otočac, borac 2. bataljona. Poginuo 8. maja 1945. godine kod sela Kraljevec, na prilazima Zagrebu.",
+    "full_name": "Stojanović-Stojković Đuro",
+    "additional_info": "1925, Škare, Otočac, borac 2. bataljona. Poginuo 8. maja 1945. godine kod sela Kraljevec, na prilazima Zagrebu.",
     "birth_year": "1925",
     "pdf_page": 73,
     "pdf_y": 210.1,
@@ -27500,11 +27669,11 @@
     "unit_detail": "3. bataljon"
   },
   {
-    "last_name": "Verebić",
+    "last_name": "Verbić",
     "middle_name": "Dragoslava",
     "first_name": "Milijan",
     "fathers_name": "Dragoslav",
-    "full_name": "Verebić Dragoslava Milijan",
+    "full_name": "Verbić Dragoslava Milijan",
     "additional_info": "1923, Boljkovac, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. godine, borac i puškomitraljezac u 4. bataljonu. Poginuo 3. januara 1945. godine u borbi protiv Nemaca kod sela Otok na Sremskom frontu.",
     "birth_year": "1923",
     "pdf_page": 24,
@@ -27520,7 +27689,34 @@
     "death_date": "03.01.1945",
     "rank": "puškomitraljezac",
     "unit_detail": "4. bataljon",
-    "death_place": "kod sela Otok na Sremskom frontu"
+    "death_place": "kod sela Otok na Sremskom frontu",
+    "other_sources": [
+      {
+        "soldier_id": "9016002242",
+        "name": "Verbić Dragoslava Milijan",
+        "additional_info": "zemljoradnik, rođen 1923. u Boljkovcima; borac 21. divizije NOVJ; poginuo u borbi protiv neprijatelja kod sela Otok na sremskom frontu februara 1945.",
+        "pdf_file": "cacanski-kraj-pali.pdf",
+        "pdf_page": 149,
+        "pdf_x": 86.2,
+        "pdf_y": 255.5,
+        "pdf_x_end": 411.9,
+        "pdf_y_end": 286.1,
+        "pdf_x_left": 54.0,
+        "ref_book": "cacanski-kraj-pali"
+      },
+      {
+        "soldier_id": "9014009308",
+        "name": "Verbić Milijan",
+        "additional_info": "Poginuli borci Pete srpske narodnooslobodilačke udarne brigade: 37. Verbić Milijan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 73,
+        "pdf_x": 323.8,
+        "pdf_y": 679.7,
+        "pdf_x_end": 397.0,
+        "pdf_y_end": 689.2,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Veselinović",
@@ -28501,7 +28697,7 @@
     "first_name": "Žarko",
     "fathers_name": "Dragiša",
     "full_name": "Vulović Dragiše Žarko",
-    "additional_info": "1925, Šilopaj, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 4. bataljona. Poginuo 7. decembra 1944. godine, u borbama protiv Nemaca kod sela Otok, Vinkovci na Sremskom frontu. BY4KOBHR BLAGOJE, 1923, Ražine, Osečina, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 4. bataljona. Poginuo 3. januara 1945. godine, kod mesta Donje Novo Selo na Sremskom frontu. BY4KOBHR BOŽIDAR, 1923, Ražine, Osečina. Borac 4. bataljona. Poginuo 3. januara 1945. godine kod Donjeg Novog Sela, na Sremskom frontu, gde je i sahranjen. BY4KOBHR Tome BOŽIDAR, 1921, Brest, Merošina, zemljoradnik. U NOVJ stupio maja 1944. godine, borac 2. bataljona. Poginuo 16. juna 1944. godine kod Blaca u borbi protiv Bugara. BY4KOBHR MLADEN, poginuo na Sremskom frontu.",
+    "additional_info": "1925, Šilopaj, Gornji Milanovac, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 4. bataljona. Poginuo 7. decembra 1944. godine, u borbama protiv Nemaca kod sela Otok, Vinkovci na Sremskom frontu.",
     "birth_year": "1925",
     "pdf_page": 26,
     "pdf_y": 265.9,
@@ -28514,9 +28710,9 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "07.12.1944",
+    "death_place": "Otok, Vinkovci na Sremskom frontu",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "death_place": "Otok, Vinkovci na Sremskom frontu",
     "other_sources": [
       {
         "soldier_id": "9014009322",
@@ -28555,6 +28751,78 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
+    ]
+  },
+  {
+    "soldier_id": "0127009016",
+    "last_name": "Vučković",
+    "middle_name": "Tome",
+    "first_name": "Božidar",
+    "fathers_name": "Toma",
+    "full_name": "Vučković Tome Božidar",
+    "additional_info": "1921, Brest, Merošina, zemljoradnik. U NOVJ stupio maja 1944. godine, borac 2. bataljona. Poginuo 16. juna 1944. godine kod Blaca u borbi protiv Bugara. BY4KOBHR MLADEN, poginuo na Sremskom frontu.",
+    "birth_year": "1921",
+    "pdf_file": "5-srpska.pdf",
+    "pdf_page": 26,
+    "pdf_x": 78.2,
+    "pdf_y": 335.8,
+    "birth_place": "Brest, Merošina",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "16.06.1944",
+    "death_place": "Blace",
+    "rank": "borac",
+    "unit_detail": "2. bataljon",
+    "pdf_x_end": 383.0,
+    "pdf_y_end": 362.0
+  },
+  {
+    "soldier_id": "0127009015",
+    "last_name": "Vučković",
+    "middle_name": "",
+    "first_name": "Blagoje",
+    "fathers_name": "",
+    "full_name": "Vučković Blagoje",
+    "additional_info": "1923, Ražine, Osečina, zemljoradnik. U NOVJ od oktobra 1944. godine, borac 4. bataljona. Poginuo 3. januara 1945. godine, kod mesta Donje Novo Selo na Sremskom frontu. BY4KOBHR BOŽIDAR, 1923, Ražine, Osečina. Borac 4. bataljona. Poginuo 3. januara 1945. godine kod Donjeg Novog Sela, na Sremskom frontu, gde je i sahranjen.",
+    "birth_year": "1923",
+    "pdf_file": "5-srpska.pdf",
+    "pdf_page": 26,
+    "pdf_x": 78.2,
+    "pdf_y": 305.3,
+    "birth_place": "Ražine, Osečina",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "03.01.1945",
+    "death_place": "kod mesta Donje Novo Selo na Sremskom frontu",
+    "rank": "borac",
+    "unit_detail": "4. bataljon",
+    "pdf_x_end": 382.9,
+    "pdf_y_end": 331.5,
+    "other_sources": [
+      {
+        "soldier_id": "9014009323",
+        "name": "Vučković Blagoje",
+        "additional_info": "Poginuli borci Pete srpske narodnooslobodilačke udarne brigade: 52. Vučković Blagoje.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 73,
+        "pdf_x": 406.1,
+        "pdf_y": 718.3,
+        "pdf_x_end": 483.1,
+        "pdf_y_end": 727.8,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013002597",
+        "name": "Vučković Blagoje",
+        "additional_info": "Peta srpska udarna brigada, Donje Novo Selo: Blagoje Vučković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 18,
+        "pdf_x": 187.5,
+        "pdf_y": 695.9,
+        "pdf_x_end": 268.8,
+        "pdf_y_end": 705.6,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
     ]
   },
   {
@@ -28952,19 +29220,17 @@
     "first_name": "Marinko",
     "fathers_name": "",
     "full_name": "Đokić Marinko",
-    "additional_info": "poginuo na Sremskom frontu. B0KOVIB ALEKSANDAR, 1922, borac 2. bataljona. Poginuo 23. januara 1945. godine kod Šarengrada, Vukovar, gde je i sahranjen.",
+    "additional_info": "poginuo na Sremskom frontu.",
     "birth_year": "",
     "pdf_page": 30,
     "pdf_y": 121.0,
     "pdf_x": 75.6,
-    "pdf_y_end": 152.8,
+    "pdf_y_end": 129.0,
     "pdf_file": "5-srpska.pdf",
     "soldier_id": "0127000849",
-    "pdf_x_end": 380.8,
+    "pdf_x_end": 277.8,
     "death_type": "poginuo",
     "death_place": "Sremski front",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
     "other_sources": [
       {
         "soldier_id": "9014009345",
@@ -28992,6 +29258,68 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      }
+    ]
+  },
+  {
+    "soldier_id": "0127009017",
+    "last_name": "Đoković",
+    "middle_name": "",
+    "first_name": "Aleksandar",
+    "fathers_name": "",
+    "full_name": "Đoković Aleksandar",
+    "additional_info": "1922, borac 2. bataljona. Poginuo 23. januara 1945. godine kod Šarengrada, Vukovar, gde je i sahranjen.",
+    "birth_year": "1922",
+    "pdf_file": "5-srpska.pdf",
+    "pdf_page": 30,
+    "pdf_x": 75.6,
+    "pdf_y": 135.9,
+    "death_type": "poginuo",
+    "death_date": "23.01.1945",
+    "death_place": "Šarengrad, Vukovar",
+    "rank": "borac",
+    "unit_detail": "2. bataljon",
+    "pdf_x_end": 380.8,
+    "pdf_y_end": 152.8,
+    "other_sources": [
+      {
+        "soldier_id": "9014009346",
+        "name": "Đoković Aleksandar",
+        "additional_info": "Poginuli borci Pete srpske narodnooslobodilačke udarne brigade: 75. Đoković Aleksandar.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 73,
+        "pdf_x": 255.8,
+        "pdf_y": 785.5,
+        "pdf_x_end": 343.9,
+        "pdf_y_end": 795.0,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013002634",
+        "name": "Đoković Aleksandar",
+        "additional_info": "Peta srpska udarna brigada, Šarengrad: Aleksandar Đoković.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 424.6,
+        "pdf_y": 274.2,
+        "pdf_x_end": 461.5,
+        "pdf_y_end": 294.5,
+        "pdf_x_left": 102.7,
+        "pdf_rects": [
+          [
+            424.6,
+            274.2,
+            461.5,
+            283.9
+          ],
+          [
+            102.7,
+            284.8,
+            160.1,
+            294.5
+          ]
+        ],
+        "ref_book": "u-rovovima-srema-poginuli"
       }
     ]
   },
@@ -29139,7 +29467,7 @@
     "first_name": "Dragutin",
     "fathers_name": "Milan",
     "full_name": "Đorđević Milana Dragutin",
-    "additional_info": "1928, Držanovac, Žitoradđa, Srbija, zemljoradnik. U NOVJ od jeseni 1943. godine, borac Jastrebačkog NOP odreda. U 5. brigadi bio od njenog formiranja. Pohađao vojnički kurs za komandire četa. Poginuo avgusta 1944. godine na planini Kitka, u borbi protib balista.",
+    "additional_info": "1928, Držanovac, Žitoradđa, Srbija, zemljoradnik. U NOVJ od jeseni 1943. godine, borac Jastrebačkog NOP odreda. U 5. brigadi bio od njenog formiranja. Pohađao vojnički kurs za komandire četa. Poginuo avgusta 1944. godine na planini Kitka, u borbi protiv balista.",
     "birth_year": "1928",
     "pdf_page": 30,
     "pdf_y": 333.9,
@@ -29152,6 +29480,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "08.1944",
+    "death_place": "na planini Kitka",
     "rank": "borac",
     "other_sources": [
       {
@@ -30284,7 +30613,7 @@
     "first_name": "Radivoje",
     "fathers_name": "Petar",
     "full_name": "Živković Petra Radivoje",
-    "additional_info": "1921, Kare, Dubovo, Žitorađa, zemljoradnik. Pripadnik mesne partizaiske desetina od 1941. godine. U Pasjačku partizansku četu stupio krajem novembra 1941. godine, ali se ubrzo vratio kući. Od 22. aprila 1943. godine ponovo je u odredu, a zatim u Omladinskom bataljonu »Ratko Pavlović«. Uveče 11. aprila 1945. godine primio je dužnost komandira 4. (mitraljeske) čete 4. bataljona, a već 12. aprila iste godine poginuo je u borbi protiv Nemaca, kod Opatovca, prilikom desanta preko Dunava.",
+    "additional_info": "1921, Kare, Dubovo, Žitorađa, zemljoradnik. Pripadnik mesne partizanske desetina od 1941. godine. U Pasjačku partizansku četu stupio krajem novembra 1941. godine, ali se ubrzo vratio kući. Od 22. aprila 1943. godine ponovo je u odredu, a zatim u Omladinskom bataljonu »Ratko Pavlović«. Uveče 11. aprila 1945. godine primio je dužnost komandira 4. (mitraljeske) čete 4. bataljona, a već 12. aprila iste godine poginuo je u borbi protiv Nemaca, kod Opatovca, prilikom desanta preko Dunava.",
     "birth_year": "1921",
     "pdf_page": 32,
     "pdf_y": 464.9,

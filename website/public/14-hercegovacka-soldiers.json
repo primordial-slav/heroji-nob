@@ -287,11 +287,11 @@
     "unit_detail": "3. četa, 1. bataljon"
   },
   {
-    "last_name": "Alikafić",
+    "last_name": "Alikalfić",
     "middle_name": "H",
     "first_name": "Husein",
     "fathers_name": "H",
-    "full_name": "Alikafić H Husein",
+    "full_name": "Alikalfić H Husein",
     "additional_info": "rođen 1915. Mostar",
     "birth_year": "1915",
     "pdf_page": 1,
@@ -301,7 +301,25 @@
     "pdf_file": "14-hercegovacka.pdf",
     "birth_place": "Mostar",
     "soldier_id": "0081000013",
-    "pdf_x_end": 229.1
+    "pdf_x_end": 229.1,
+    "occupation": "učitelj",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0125000014",
+        "name": "Alikalfić H Husein",
+        "additional_info": "rođen 1915, Mostar, učitelj, u Bataljonu od oktobra 1943, načelnik Štaba Bataljona.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 49,
+        "pdf_x": 126.4,
+        "pdf_y": 592.4,
+        "pdf_x_end": 292.2,
+        "pdf_y_end": 638.9,
+        "unit_file": "mostarski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Alisić",
@@ -13772,7 +13790,7 @@
       {
         "soldier_id": "9003000398",
         "name": "Mehaković Salko",
-        "additional_info": "Husov, rođen 1914. godine u Trebinju; radnik. borac u 2. četi 4. bataljona XIV hercegovačke brigade. Poginuo u borbi protnv njemačkih snaga i ustaške milicije na položajima kod Trnova, Kalinovik, 25. XII 1944. godine.",
+        "additional_info": "Husov, rođen 1914. godine u Trebinju; radnik. borac u 2. četi 4. bataljona XIV hercegovačke brigade. Poginuo u borbi protiv njemačkih snaga i ustaške milicije na položajima kod Trnova, Kalinovik, 25. XII 1944. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=60",
         "source_page": 55,
         "ref_book": "trebinjci-pali"
@@ -24507,11 +24525,11 @@
     ]
   },
   {
-    "last_name": "Velendar",
+    "last_name": "Veledar",
     "middle_name": "H",
     "first_name": "Ibro",
     "fathers_name": "H",
-    "full_name": "Velendar H Ibro",
+    "full_name": "Veledar H Ibro",
     "additional_info": "rođen 1925. Počitelj",
     "birth_year": "1925",
     "pdf_page": 5,
@@ -24533,12 +24551,45 @@
         "pdf_y": 127.2,
         "pdf_x_end": 368.2,
         "pdf_y_end": 148.2
+      },
+      {
+        "soldier_id": "9022012990",
+        "name": "Veledar (Hasan) Ibro",
+        "additional_info": "rođen 1925, Počitelj (Čapljina). Musliman, poginuo 1945. u NOBu, Zašljivlje konj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1144",
+        "source_page": 1144,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0125000693",
+        "name": "Veledar H Ibro",
+        "additional_info": "zvani Ibrica; rođen 1923, Počitelj, Čapljina, član SKOJ-a od 1942. i KPJ od 1944, u Bataljonu od aprila 1943, borac, poginuo u Kpnjicu marta 1945.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 48,
+        "pdf_x": 106.4,
+        "pdf_y": 601.6,
+        "pdf_x_end": 272.7,
+        "pdf_y_end": 673.0,
+        "unit_file": "mostarski-bataljon-soldiers.json"
       }
     ],
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "death_type": "poginuo",
-    "death_date": "03.1945"
+    "death_date": "03.1945",
+    "death_place": "u Kpnjicu",
+    "borrowed": [
+      "death_place",
+      "ethnicity",
+      "party"
+    ],
+    "party": "SKOJ 1942",
+    "ethnicity": "Musliman",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Vežić",

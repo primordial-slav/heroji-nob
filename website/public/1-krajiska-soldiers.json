@@ -3031,6 +3031,18 @@
         "pdf_x_end": 353.6,
         "pdf_y_end": 277.2,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001100042",
+        "name": "Barać Trila Granica",
+        "additional_info": "bolničarka, rođena 1923, Grab, Bijelo Polje, domaćica, Crnogorka, u NOB od maja 1943, poginula na Sremskom frontu marta 1945. godine.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 4,
+        "pdf_x": 205.1,
+        "pdf_y": 231.2,
+        "pdf_x_end": 375.1,
+        "pdf_y_end": 283.6,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "variants": {
@@ -6628,7 +6640,7 @@
     "first_name": "Jovo",
     "fathers_name": "Pero",
     "full_name": "Brkljać Pera Jovo",
-    "additional_info": "rođen 1924. u Risovcu, Bosanski Petrovac, Srbin, zemljoradnik, u brigadi od 10. 8. 1942, 2. četa, 1. bataljon, borac, piginuo 22. 5. 1943. kod Lađevaca (Prnjavor), gdje je i sahranjen",
+    "additional_info": "rođen 1924. u Risovcu, Bosanski Petrovac, Srbin, zemljoradnik, u brigadi od 10. 8. 1942, 2. četa, 1. bataljon, borac, poginuo 22. 5. 1943. kod Lađevaca (Prnjavor), gdje je i sahranjen",
     "birth_year": "1924",
     "pdf_page": 11,
     "pdf_y": 656.7,
@@ -6640,6 +6652,9 @@
     "birth_place": "Risovac, Bosanski Petrovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "22.05.1943",
+    "death_place": "Lađevci, Prnjavor",
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon"
   },
@@ -7278,7 +7293,7 @@
     "first_name": "Đuro",
     "fathers_name": "Miloš",
     "full_name": "Bundalo Miloša Đuro",
-    "additional_info": "rođen 1915. u Slatini, Sanski Most, Srbin, zemljoradnik, u NOB od 11. 10. 1941, u brigadi od 21. 5. 1942, borac, piginuo 11. 11. 1943. u Mokroj Gori (Titovo Užice) sahranjen u Vardištu",
+    "additional_info": "rođen 1915. u Slatini, Sanski Most, Srbin, zemljoradnik, u NOB od 11. 10. 1941, u brigadi od 21. 5. 1942, borac, poginuo 11. 11. 1943. u Mokroj Gori (Titovo Užice) sahranjen u Vardištu",
     "birth_year": "1915",
     "pdf_page": 12,
     "pdf_y": 610.8,
@@ -7290,6 +7305,9 @@
     "birth_place": "Slatina, Sanski Most",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "11.11.1943",
+    "death_place": "Mokra Gora, Titovo Užice",
     "rank": "borac"
   },
   {
@@ -7331,7 +7349,7 @@
     "first_name": "Branko",
     "fathers_name": "Stanko",
     "full_name": "Burazer Stanka Branko",
-    "additional_info": "rođen 1915. u Međuvođi, Bosanska Dubica, Srbin, obućarski radnik, u NOB od 1941, u brigadi od 21. 5. 1942, 1. četa, 2. bataljon, zamjenik političkog komesara čete, piginuo 6. 6. 1943. u okolini Dubrave (Jajce), gdje je i sahranjen",
+    "additional_info": "rođen 1915. u Međuvođi, Bosanska Dubica, Srbin, obućarski radnik, u NOB od 1941, u brigadi od 21. 5. 1942, 1. četa, 2. bataljon, zamjenik političkog komesara čete, poginuo 6. 6. 1943. u okolini Dubrave (Jajce), gdje je i sahranjen",
     "birth_year": "1915",
     "pdf_page": 12,
     "pdf_y": 664.5,
@@ -7343,6 +7361,9 @@
     "birth_place": "Međuvođe, Bosanska Dubica",
     "ethnicity": "Srbin",
     "occupation": "obućarski radnik",
+    "death_type": "poginuo",
+    "death_date": "06.06.1943",
+    "death_place": "Dubrava, Jajce",
     "rank": "zamjenik političkog komesara čete",
     "unit_detail": "1. četa, 2. bataljon"
   },
@@ -7940,11 +7961,11 @@
     ]
   },
   {
-    "last_name": "Cubilo",
+    "last_name": "Čubrilo",
     "middle_name": "Sime",
     "first_name": "Đuro",
     "fathers_name": "Simo",
-    "full_name": "Cubilo Sime Đuro",
+    "full_name": "Čubrilo Sime Đuro",
     "additional_info": "rođen 1925. u Prkosima, Bosanski Petrovac, Srbin, zemljoradnik, u brigadi od 1. 1. 1943, desetar, čin mlađeg vodnika, poginuo 26. 3. 1944. kod Šarenika (Ivanjica), nije sahranjen",
     "birth_year": "1925",
     "pdf_page": 15,
@@ -8784,7 +8805,7 @@
     "first_name": "Jovo",
     "fathers_name": "Stevan",
     "full_name": "Damjanić Stevana Jovo",
-    "additional_info": "rođen 1914. u Gornjim Rakanima, Bos. Novi, Srbin, pograničar u bivšoj vojsci, u NOB od 27. 7. 194I, u brigadi od 21. 5. 1942, 1. četa, 2. bataljon, zamjenik komandira čete, poginuo 11. 12. 1942. pri napadu na Sanski Most, gdje je i sahranjen",
+    "additional_info": "rođen 1914. u Gornjim Rakanima, Bos. Novi, Srbin, pograničar u bivšoj vojsci, u NOB od 27. 7. 1941, u brigadi od 21. 5. 1942, 1. četa, 2. bataljon, zamjenik komandira čete, poginuo 11. 12. 1942. pri napadu na Sanski Most, gdje je i sahranjen",
     "birth_year": "1914",
     "pdf_page": 17,
     "pdf_y": 303.3,
@@ -8797,9 +8818,9 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "11.12.1942",
+    "death_place": "Sanski Most",
     "rank": "zamjenik komandira čete",
-    "unit_detail": "1. četa, 2. bataljon",
-    "death_place": "Sanski Most"
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "last_name": "Damjanić",
@@ -13750,7 +13771,7 @@
     "last_name": "Gligorijević",
     "middle_name": "Gajov",
     "first_name": "Milivoje",
-    "fathers_name": "Gajov",
+    "fathers_name": "Gajo",
     "full_name": "Gligorijević Gajov Milivoje",
     "additional_info": "rođen 1922. u Brajkovićima, Kosjerić, Srbin, zemljoradnik, u NOB od 28. 11. 1944, u brigadi od decembra 1944, borac, umro 15. 2. 1945. u vojnoj bolnici u Beogradu poslije težeg ranjavanja, sahranjen na Novom groblju",
     "birth_year": "1922",
@@ -20765,7 +20786,28 @@
     "death_type": "poginuo",
     "death_date": "07.05.1945",
     "death_place": "kod Cugovca (Vrbovec)",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "0011000463",
+        "name": "Jovanović Dragića Veselin",
+        "additional_info": "borac, rođen 1927, Tijovac, Svrljig, Srbin, zemljoradnik, u NOB od 25. XII 1944, poginuo 9. V 1945. kod sela Berislavaca, Zagreb.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 63.1,
+        "pdf_y": 173.6,
+        "pdf_x_end": 346.4,
+        "pdf_y_end": 200.2,
+        "unit_file": "4-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.05.1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jovanović",
@@ -22719,7 +22761,7 @@
     "first_name": "Pero",
     "fathers_name": "Pero",
     "full_name": "Kaurin Pere Pero",
-    "additional_info": "rođen 1923. u Bijelom Bučju, Travnik, Srbin, zemljoradnik, u brigadi od 1. 10. 1943, borac, poginuo 5. 1. 1944. kod Komorana (Pale), nije sahrapjen",
+    "additional_info": "rođen 1923. u Bijelom Bučju, Travnik, Srbin, zemljoradnik, u brigadi od 1. 10. 1943, borac, poginuo 5. 1. 1944. kod Komorana (Pale), nije sahranjen",
     "birth_year": "1923",
     "pdf_page": 40,
     "pdf_y": 222.3,
@@ -22733,6 +22775,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "05.01.1944",
+    "death_place": "Komorani, Pale",
     "rank": "borac"
   },
   {
@@ -24042,7 +24085,7 @@
     "first_name": "Petar",
     "fathers_name": "Mile",
     "full_name": "Kesar Mile Petar",
-    "additional_info": "rođen 1919. u Marinima, Prijedor, Srbin, zemljoradnik, u NOB od 27.7.1941, u brigadi od 21.5.1942,3. četa, 3. bataljon, zamjenik političkog komesara čete, piginuo 2. 6. 1942. kod Goleša (Banja Luka), gdje je i sahranjen",
+    "additional_info": "rođen 1919. u Marinima, Prijedor, Srbin, zemljoradnik, u NOB od 27.7.1941, u brigadi od 21.5.1942,3. četa, 3. bataljon, zamjenik političkog komesara čete, poginuo 2. 6. 1942. kod Goleša (Banja Luka), gdje je i sahranjen",
     "birth_year": "1919",
     "pdf_page": 41,
     "pdf_y": 653.3,
@@ -24054,6 +24097,9 @@
     "birth_place": "Marini, Prijedor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "02.06.1942",
+    "death_place": "Goleš, Banja Luka",
     "rank": "zamjenik političkog komesara čete",
     "unit_detail": "3. četa, 3. bataljon",
     "other_sources": [
@@ -24065,15 +24111,7 @@
         "source_page": 2065,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_type": "poginuo",
-    "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type"
-    ],
-    "death_date": "1942",
-    "death_place": "Piskavica"
+    ]
   },
   {
     "last_name": "Kesar",
@@ -36457,11 +36495,11 @@
     ]
   },
   {
-    "last_name": "Meseldžjija",
+    "last_name": "Meseldžija",
     "middle_name": "Save",
     "first_name": "Vlado",
     "fathers_name": "Sava",
-    "full_name": "Meseldžjija Save Vlado",
+    "full_name": "Meseldžija Save Vlado",
     "additional_info": "rođen 1925. u Blagaju, Kupres, Srbin, zemljoradnik, u brigadi od avgusta 1942, borac, poginuo 27. 7. 1944. na Čakoru (Andrijevica), gdje je i sahranjen",
     "birth_year": "1925",
     "pdf_page": 60,
@@ -37726,7 +37764,7 @@
       {
         "soldier_id": "0011000801",
         "name": "Milenković Milenka Momčilo",
-        "additional_info": "desegar, rođen 1921, Sirča, Kraljevo, Srbin, zemljoradnik, u NOB od 28. VIII 1944, nestao 17. I 1945. kod sela Sotina, Vukovar.",
+        "additional_info": "desetar, rođen 1921, Sirča, Kraljevo, Srbin, zemljoradnik, u NOB od 28. VIII 1944, nestao 17. I 1945. kod sela Sotina, Vukovar.",
         "pdf_file": "4-krajiska.pdf",
         "pdf_page": 55,
         "pdf_x": 101.2,
@@ -42051,7 +42089,7 @@
       {
         "soldier_id": "0021003264",
         "name": "Nađ Andraša Šandor",
-        "additional_info": "rođen 1924. Feketić. Mali Iđoš, radnik. U Brigadi od26. februara 1945,1. četa 1. bataljon. Poginuo 15. aprila 1945. godine u Đakovu.",
+        "additional_info": "rođen 1924. Feketić. Mali Iđoš, radnik. U Brigadi od 26. februara 1945,1. četa 1. bataljon. Poginuo 15. aprila 1945. godine u Đakovu.",
         "pdf_file": "4-srpska.pdf",
         "pdf_page": 250,
         "pdf_x": 59.6,
@@ -61156,7 +61194,7 @@
     "first_name": "Mirko",
     "fathers_name": "Ostoja",
     "full_name": "Tomić Ostoje Mirko",
-    "additional_info": "rođen 1910. u Jelićkoj, Prijedor, Srbin, zemljoradnik, u NOB od fabruara 1942, u brigadi od 21. 5. 1942, borac, poginuo 26. 8. 1944. kod Vitkovca (Aleksinac), gdje je i sahranjen",
+    "additional_info": "rođen 1910. u Jelićkoj, Prijedor, Srbin, zemljoradnik, u NOB od februara 1942, u brigadi od 21. 5. 1942, borac, poginuo 26. 8. 1944. kod Vitkovca (Aleksinac), gdje je i sahranjen",
     "birth_year": "1910",
     "pdf_page": 99,
     "pdf_y": 224.4,
@@ -61165,12 +61203,12 @@
     "pdf_file": "1-krajiska.pdf",
     "soldier_id": "0123001735",
     "pdf_x_end": 479.6,
+    "death_place": "kod Vitkovca (Aleksinac)",
     "birth_place": "Jelićka, Prijedor",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "26.08.1944",
-    "death_place": "kod Vitkovca (Aleksinac)",
     "rank": "borac"
   },
   {
@@ -66441,7 +66479,7 @@
       {
         "soldier_id": "0010205585",
         "name": "Vučković Đure Ostoja",
-        "additional_info": "rođ. 1918, Dabar, Sanski Most, zemljoradnik, Srbin, u brigadi od 1942, borac, poginuo u Sandžaku druge polovine maja 1943. VUCKOVIC Bož. STANKO, rođ. 1922, Koštunici, G. Milanovac, zemljoradnik, Srbin, u NOB i brigadi od 15. 10. 1944, borac.",
+        "additional_info": "rođ. 1918, Dabar, Sanski Most, zemljoradnik, Srbin, u brigadi od 1942, borac, poginuo u Sandžaku druge polovine maja 1943.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 456,
         "pdf_x": 75.0,
@@ -69126,6 +69164,18 @@
         "pdf_x_end": 440.8,
         "pdf_y_end": 530.0,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0011000646",
+        "name": "Ćurguz Đure Nikola",
+        "additional_info": "borac, rođen 1917, Risovac, Bos. Petrovac, poginuo 17. I 1945. kod sela Opatovca, Vukovar.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 100.1,
+        "pdf_y": 387.7,
+        "pdf_x_end": 383.3,
+        "pdf_y_end": 405.9,
+        "unit_file": "4-krajiska-soldiers.json"
       }
     ]
   },

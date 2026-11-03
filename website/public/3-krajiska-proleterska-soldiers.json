@@ -4790,10 +4790,22 @@
         "name": "Banjac Mihaila Obrad",
         "additional_info": "3. četa 1. bataljona: borac, rođen 1915, Trninića Breg, Drvar, Srbin, radnik, u NOB od 1941, poginuo 1944.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010100017",
+        "name": "Banjac Mihaila Obrad",
+        "additional_info": "obaveštajni oficir brigade, rođen 1915, Trninić Breg, Drvar, radnik, Srbin, u NOB od 1941, član KPJ, poginuo 1944. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 9.6,
+        "pdf_y": 394.3,
+        "pdf_x_end": 173.9,
+        "pdf_y_end": 442.6
       }
     ],
     "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon"
+    "unit_detail": "3. četa, 1. bataljon",
+    "party": "KPJ"
   },
   {
     "last_name": "Banjac",
@@ -4829,6 +4841,17 @@
         "pdf_x_end": 354.0,
         "pdf_y_end": 540.5,
         "pdf_x_left": 71.4
+      },
+      {
+        "soldier_id": "0010100018",
+        "name": "Banjac Jovana Radojka",
+        "additional_info": "bolničarka, rođena 1923, Drinić, Bosanski Petrovac, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a od 1942, poginula u bici na Sutjesci juna 1943.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 10.3,
+        "pdf_y": 444.5,
+        "pdf_x_end": 173.9,
+        "pdf_y_end": 497.8
       }
     ],
     "party": "SKOJ 1942"
@@ -7456,6 +7479,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1252",
         "source_page": 1252,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0011000146",
+        "name": "Bogićević Tome Milenko",
+        "additional_info": "borac, rođen 1927, Brezovica, Trstenik, nestao 23. XII 1944. kod sela Otoka, Županja.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 69.5,
+        "pdf_y": 436.6,
+        "pdf_x_end": 351.9,
+        "pdf_y_end": 454.8,
+        "unit_file": "4-krajiska-soldiers.json"
       }
     ]
   },
@@ -8281,7 +8316,21 @@
     "death_date": "22.04.1945",
     "death_place": "Dragovcu",
     "rank": "bolničar",
-    "pdf_x_end": 358.1
+    "pdf_x_end": 358.1,
+    "other_sources": [
+      {
+        "soldier_id": "0010200475",
+        "name": "Bosanac Dane Radosav",
+        "additional_info": "rođ. 1918, Ribničko, Bjelovar, zemljoradnik, Srbin, u NOB i brigadi od 28. U. 1944, borac, poginuo 22. 4. 1945. u Dragovcu.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 38,
+        "pdf_x": 74.4,
+        "pdf_y": 317.5,
+        "pdf_x_end": 339.1,
+        "pdf_y_end": 344.7,
+        "pdf_x_left": 57.3
+      }
+    ]
   },
   {
     "last_name": "Bosiočić",
@@ -9776,7 +9825,7 @@
       {
         "soldier_id": "0010200557",
         "name": "Brzić Ivan",
-        "additional_info": "rod. Biograd, Zadar, zsmljoradnik, Hrvat, borac, poginuo 2. 1. 1944. kod B. Luke.",
+        "additional_info": "rod. Biograd, Zadar, zemljoradnik, Hrvat, borac, poginuo 2. 1. 1944. kod B. Luke.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 44,
         "pdf_x": 70.8,
@@ -13935,9 +13984,9 @@
     ]
   },
   {
-    "last_name": "Di",
+    "last_name": "Di Magio",
     "middle_name": "",
-    "first_name": "Magio Cosimo",
+    "first_name": "Cosimo",
     "fathers_name": "",
     "full_name": "Di Magio Cosimo",
     "additional_info": "rođen u Castellaneta, Taranto, Italijan, u NOB i u Brigadi od 1943, borac, poginuo na Sremskom frontu",
@@ -13953,7 +14002,21 @@
     "death_type": "poginuo",
     "death_place": "Sremski front",
     "rank": "borac",
-    "pdf_x_end": 370.6
+    "pdf_x_end": 370.6,
+    "other_sources": [
+      {
+        "soldier_id": "0010200900",
+        "name": "Di Magio Cosimo",
+        "additional_info": "rod. Castellaneta, Taranto, Italijan, borac, u NOB i brigadi od 1943, poginuo u Sremu.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 76,
+        "pdf_x": 89.2,
+        "pdf_y": 225.9,
+        "pdf_x_end": 353.3,
+        "pdf_y_end": 243.6,
+        "pdf_x_left": 71.5
+      }
+    ]
   },
   {
     "last_name": "Dilber",
@@ -14483,12 +14546,12 @@
     "party": "SKOJ 1941, KPJ"
   },
   {
-    "last_name": "Dogato",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Dogato Vić",
-    "additional_info": "Riste DUŠAN, rođen 1906, Kruševica, Bugojno, zemljoradnik, Srbin, u NOB od 10. 1. 1942, u Brigadi od 22. 2. 1943, borac, poginuo 15. 6. 1943. kod s. Jabuka, Foča",
+    "last_name": "Dogatović",
+    "middle_name": "Riste",
+    "first_name": "Dušan",
+    "fathers_name": "Risto",
+    "full_name": "Dogatović Riste Dušan",
+    "additional_info": "rođen 1906, Kruševica, Bugojno, zemljoradnik, Srbin, u NOB od 10. 1. 1942, u Brigadi od 22. 2. 1943, borac, poginuo 15. 6. 1943. kod s. Jabuka, Foča",
     "birth_year": "1906",
     "pdf_page": 26,
     "pdf_y": 1.1,
@@ -14496,6 +14559,7 @@
     "pdf_y_end": 48.7,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010000315",
+    "pdf_x_end": 192.8,
     "birth_place": "Kruševica, Bugojno",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -14503,15 +14567,39 @@
     "death_date": "15.06.1943",
     "death_place": "Jabuka, Foča",
     "rank": "borac",
-    "pdf_x_end": 192.8
+    "other_sources": [
+      {
+        "soldier_id": "0010200947",
+        "name": "Dogatović Riiste Dušan",
+        "additional_info": "rođ. 1906., Kruševica, Bugojno, radnik, Srbin, u NOB od 10. 1. 1942., u brigadi od 22. 2. 1943., borac, poginuo 15. 6. 1943. kod Jabuke na Jahorini, zarobljen i streljan.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 89,
+        "pdf_x": 39.4,
+        "pdf_y": 233.7,
+        "pdf_x_end": 304.5,
+        "pdf_y_end": 271.3,
+        "pdf_x_left": 23.1
+      },
+      {
+        "soldier_id": "0010100209",
+        "name": "Dogatović Riste Dušan",
+        "additional_info": "borac, rođen 1906, Kruševica, Bugojno, zemljoradnik, Srbin, u NOB od 1942, poginuo kod sela Jabuka na Jahorini 15. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 18,
+        "pdf_x": 7.2,
+        "pdf_y": 175.0,
+        "pdf_x_end": 178.5,
+        "pdf_y_end": 228.4
+      }
+    ]
   },
   {
-    "last_name": "Dogato",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Dogato Vić",
-    "additional_info": "Luke STANA, rođena 1921, Gornje Vukovsko, Kupres, domaćica, Srpkinja, u NOB od maja 1942, u Brigadi od septembra 1943, četna bolničarka, poginula 5. 1. 1944, s. Cvetići kod Banje Luke",
+    "last_name": "Dogatović",
+    "middle_name": "Luke",
+    "first_name": "Stana",
+    "fathers_name": "Luka",
+    "full_name": "Dogatović Luke Stana",
+    "additional_info": "rođena 1921, Gornje Vukovsko, Kupres, domaćica, Srpkinja, u NOB od maja 1942, u Brigadi od septembra 1943, četna bolničarka, poginula 5. 1. 1944, s. Cvetići kod Banje Luke",
     "birth_year": "1921",
     "pdf_page": 26,
     "pdf_y": 60.1,
@@ -14519,14 +14607,14 @@
     "pdf_y_end": 118.7,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010000316",
+    "pdf_x_end": 193.0,
     "birth_place": "Gornje Vukovsko, Kupres",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
     "death_type": "poginuo",
     "death_date": "05.01.1944",
     "death_place": "Cvetići, Banja Luka",
-    "rank": "bolničarka",
-    "pdf_x_end": 193.0
+    "rank": "bolničarka"
   },
   {
     "last_name": "Dojmušić",
@@ -15026,10 +15114,23 @@
         "pdf_x_end": 292.5,
         "pdf_y_end": 303.8,
         "pdf_x_left": 11.5
+      },
+      {
+        "soldier_id": "0010300183",
+        "name": "Dragić Marka Savo",
+        "additional_info": "2. četa 3. bataljona: borac, rođen 1921, Lastve, Krnjeuša, Bos. Petrovac, Srbin, zemljoradnik, borac od 1941, član KPJ od 1943, poginuo kao desetar 3. 1 1943. u Han-Kolima, Manjača.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
       }
     ],
     "unit_detail": "2. četa, 3. bataljon",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "death": [
+        {
+          "date": "03.01.1943"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dragić",
@@ -16561,6 +16662,12 @@
         "pdf_y_end": 572.3
       },
       {
+        "soldier_id": "0010300218",
+        "name": "Egelja Nikole Miladin",
+        "additional_info": "2. četa 4. bataljona: rođen 1922, Oraško Brdo, Srbin, zemljoradnik, u NOB od 1941, član SKOJ-a od 1942, poginuo 1943. na Zečevom brdu.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
         "soldier_id": "9022010524",
         "name": "Egelja (Nikola) Miladin",
         "additional_info": "rođen 1919, Prkosi (Bosanski Petrovac). Srbin, poginuo 1943. u NOBu, Sutjeska",
@@ -16570,7 +16677,12 @@
       }
     ],
     "unit_detail": "2. četa, 4. bataljon",
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Egelja",
@@ -16921,7 +17033,7 @@
     "last_name": "Farkaš",
     "middle_name": "Joiefa",
     "first_name": "Gustav",
-    "fathers_name": "Joiefa",
+    "fathers_name": "Jožef",
     "full_name": "Farkaš Joiefa Gustav",
     "additional_info": "rođen 1926, Kikinda, radnik, Mađar, u NOB i u Brigadi od 27. 12. 1944, borac, poginuo 5. 4. 1945. kod Novak-Bapske, gdje je i sahranjen",
     "birth_year": "1926",
@@ -17847,6 +17959,18 @@
     "party": "KPJ",
     "other_sources": [
       {
+        "soldier_id": "0010201120",
+        "name": "Franićević Ante Juraj",
+        "additional_info": "rođ. 1923., Hvar, SR Hrvatska, ribar, Hrvat, u NOB i brigadi od 21. 7. 1943., delegat voda, poginuo 12. 4. 1945. kod Sotina.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 106,
+        "pdf_x": 80.5,
+        "pdf_y": 99.3,
+        "pdf_x_end": 344.7,
+        "pdf_y_end": 126.5,
+        "pdf_x_left": 63.5
+      },
+      {
         "soldier_id": "9014001124",
         "name": "Franičević Juraj",
         "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 134. Franičević Juraj.",
@@ -17941,11 +18065,11 @@
     "pdf_x_end": 368.2
   },
   {
-    "last_name": "Ga",
-    "middle_name": "Vanga",
+    "last_name": "Gavanga",
+    "middle_name": "",
     "first_name": "Francesco",
-    "fathers_name": "Vanga",
-    "full_name": "Ga Vanga Francesco",
+    "fathers_name": "",
+    "full_name": "Gavanga Francesco",
     "additional_info": "rođen u Madelani, Ferrara, Italijan, u NOB i u Brigadi od 1943, borac, poginuo 18. 4. 1944. kod Livna",
     "birth_year": "",
     "pdf_page": 31,
@@ -17960,7 +18084,21 @@
     "death_date": "18.04.1944",
     "death_place": "Livno",
     "rank": "borac",
-    "pdf_x_end": 185.4
+    "pdf_x_end": 185.4,
+    "other_sources": [
+      {
+        "soldier_id": "0010201171",
+        "name": "Gavanga Francesco",
+        "additional_info": "Madelana, Ferrara, Italija, Italijan, u NOB i brigadi od 1943., borac, poginuo 18. 4. 1944. u Bosni.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 110,
+        "pdf_x": 78.2,
+        "pdf_y": 97.8,
+        "pdf_x_end": 343.1,
+        "pdf_y_end": 115.2,
+        "pdf_x_left": 61.1
+      }
+    ]
   },
   {
     "last_name": "Gaboardi",
@@ -19552,12 +19690,12 @@
     "party": "KPJ"
   },
   {
-    "last_name": "Grabo",
-    "middle_name": "",
-    "first_name": "Vac",
-    "fathers_name": "",
-    "full_name": "Grabo Vac",
-    "additional_info": "Vice PETAR, rođen 1922, Proložac, Imotski, zemljoradnik, Hrvat, u NOB i u Brigadi od 19. 9. 1943, desetar, poginuo 6. 5. 1945. u s. Topolovac, kod Vrboveca",
+    "last_name": "Grabovac",
+    "middle_name": "Vice",
+    "first_name": "Petar",
+    "fathers_name": "Vice",
+    "full_name": "Grabovac Vice Petar",
+    "additional_info": "rođen 1922, Proložac, Imotski, zemljoradnik, Hrvat, u NOB i u Brigadi od 19. 9. 1943, desetar, poginuo 6. 5. 1945. u s. Topolovac, kod Vrboveca",
     "birth_year": "1922",
     "pdf_page": 32,
     "pdf_y": 530.9,
@@ -19565,6 +19703,7 @@
     "pdf_y_end": 548.9,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010000429",
+    "pdf_x_end": 197.3,
     "birth_place": "Proložac, Imotski",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
@@ -19572,7 +19711,20 @@
     "death_date": "06.05.1945",
     "death_place": "Topolovac, Vrbovec",
     "rank": "desetar",
-    "pdf_x_end": 197.3
+    "other_sources": [
+      {
+        "soldier_id": "0010201244",
+        "name": "Grabovac Vice Petar",
+        "additional_info": "rod. 1922., Proležac, Imotski, Hrvat, u NOB i brigadi od 19. 9. 1943., komandir odeljenja, poginuo 6. 5. 1945. Topolovac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 114,
+        "pdf_x": 86.6,
+        "pdf_y": 303.5,
+        "pdf_x_end": 350.6,
+        "pdf_y_end": 329.3,
+        "pdf_x_left": 68.6
+      }
+    ]
   },
   {
     "last_name": "Gradina",
@@ -21085,6 +21237,17 @@
         "name": "Grubiša Jandrije Đuro",
         "additional_info": "2. četa 1. bataljona: rođen 1924, Vedro Polje, Bos. Petrovac, Srbin, zemljoradnik. U NOB od 1942, poginuo 1943. kod Prače kao član KPJ i puškomitraljezac.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010101099",
+        "name": "Grubiša Jandrije Đuro",
+        "additional_info": "borac 2. čete 1. bataljona, rođen 1924, Vedro Polje, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1942, član KPJ, poginuo kod Prače, na pruzi Sarajevo -Višegrad, 17. jula 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 22,
+        "pdf_x": 6.2,
+        "pdf_y": 231.2,
+        "pdf_x_end": 168.0,
+        "pdf_y_end": 295.6
       }
     ],
     "unit_detail": "2. četa, 1. bataljon",
@@ -22147,6 +22310,18 @@
     "party": "KPJ",
     "other_sources": [
       {
+        "soldier_id": "0010201372",
+        "name": "Gulan Ante Vice",
+        "additional_info": "rod. 1920, Pirovac, Šibenik, zemljoradnik, Hrvat, u NOB od 15. 9. 1943, u brigadi oktobra 1943, poručnik u II bataljonu, poginuo u Sremu 6. 12. 1944.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 125,
+        "pdf_x": 53.9,
+        "pdf_y": 94.7,
+        "pdf_x_end": 318.2,
+        "pdf_y_end": 122.4,
+        "pdf_x_left": 36.8
+      },
+      {
         "soldier_id": "9014001140",
         "name": "Gulan Vice",
         "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 150. Gulan Vice.",
@@ -22166,7 +22341,8 @@
         "source_page": 1804,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ]
+    ],
+    "unit_detail": "2. bataljon"
   },
   {
     "last_name": "Gulijan",
@@ -23951,7 +24127,7 @@
       {
         "soldier_id": "0010201494",
         "name": "Ivanić Petra Mile",
-        "additional_info": "rod. 1922, Busije, Bos. Petrovac, zemljoladnik, Srbin, u NOB od 27. 7. 1941, član SKOJ-a od 1942, u brigadi od 22. 8. 1942, borac, poginuo 14. 6. 1943. kod Miljevine.",
+        "additional_info": "rod. 1922, Busije, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 27. 7. 1941, član SKOJ-a od 1942, u brigadi od 22. 8. 1942, borac, poginuo 14. 6. 1943. kod Miljevine.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 134,
         "pdf_x": 85.3,
@@ -25072,6 +25248,17 @@
         "pdf_x_end": 323.8,
         "pdf_y_end": 529.1,
         "pdf_x_left": 40.6
+      },
+      {
+        "soldier_id": "0010100680",
+        "name": "Jankelić Nikole Desa",
+        "additional_info": "bolničarka, rođena 1924, Vrtoče, Drvar, domaćica, Srpkinja, u NOB od aprila 1942, član SKOJ-a od 1942, poginula u Drvaru 25. maja 1944. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 12.5,
+        "pdf_y": 538.8,
+        "pdf_x_end": 174.3,
+        "pdf_y_end": 569.6
       },
       {
         "soldier_id": "9022015992",
@@ -29068,9 +29255,9 @@
   {
     "last_name": "Jovanović",
     "middle_name": "Ranđela",
-    "first_name": "Vasiuko",
+    "first_name": "Vasiljko",
     "fathers_name": "Ranđel",
-    "full_name": "Jovanović Ranđela Vasiuko",
+    "full_name": "Jovanović Ranđela Vasiljko",
     "additional_info": "rođen 1925, Brzi Brod, Niš, zemljoradnik, Srbin, u NOB i u Brigadi od 18. 11. 1944, borac, poginuo aprila 1945. u Novoj Gradiški, gdje je i sahranjen",
     "birth_year": "1925",
     "pdf_page": 43,
@@ -29086,7 +29273,41 @@
     "death_date": "04.1945",
     "death_place": "Nova Gradiška",
     "rank": "borac",
-    "pdf_x_end": 189.8
+    "pdf_x_end": 189.8,
+    "other_sources": [
+      {
+        "soldier_id": "0010201804",
+        "name": "Jovanović Ranđela Vasiljko",
+        "additional_info": "rođ. 1925, Brzi Brod, Niš, zemljoradnik, Srbin, u NOB i brigadi od 18. 11. 1944, borac, poginuo aprila 1945. na Sremskom frontu.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 156,
+        "pdf_x": 76.8,
+        "pdf_y": 506.9,
+        "pdf_x_end": 341.4,
+        "pdf_y_end": 534.1,
+        "pdf_x_left": 60.3
+      },
+      {
+        "soldier_id": "9014001195",
+        "name": "Jovanović Vasiljko",
+        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 205. Jovanović Vasiljko.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 375.2,
+        "pdf_y": 679.1,
+        "pdf_x_end": 460.8,
+        "pdf_y_end": 688.6,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025021568",
+        "name": "Jovanović (Ranđel) Vasiljko",
+        "additional_info": "rođen 1925, Brzi Brod (Nepoznata). Srbin, poginuo 1945. u NOBu, Vinjegovci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=853",
+        "source_page": 853,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -29944,12 +30165,12 @@
     "pdf_x_end": 198.3
   },
   {
-    "last_name": "Kala",
-    "middle_name": "",
-    "first_name": "Ver",
-    "fathers_name": "",
-    "full_name": "Kala Ver",
-    "additional_info": "Jo je CEDO, rođen 1926, Jakir, Glamoč, zemljoradnik, Srbin, u NOB od 1943, u Brigadi od januara 1944, član KPJ, poginuo aprila 1945. kod Fojnice kao delegat voda u 9. krajiškoj brigadi",
+    "last_name": "Kalaver",
+    "middle_name": "Joje",
+    "first_name": "Čedo",
+    "fathers_name": "Jojo",
+    "full_name": "Kalaver Joje Čedo",
+    "additional_info": "rođen 1926, Jakir, Glamoč, zemljoradnik, Srbin, u NOB od 1943, u Brigadi od januara 1944, član KPJ, poginuo aprila 1945. kod Fojnice kao delegat voda u 9. krajiškoj brigadi",
     "birth_year": "1926",
     "pdf_page": 44,
     "pdf_y": 376.7,
@@ -29957,6 +30178,8 @@
     "pdf_y_end": 435.3,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010000639",
+    "pdf_x_end": 198.8,
+    "party": "KPJ",
     "birth_place": "Jakir, Glamoč",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -29964,8 +30187,20 @@
     "death_date": "04.1945",
     "death_place": "Fojnica",
     "rank": "delegat voda",
-    "pdf_x_end": 198.8,
-    "party": "KPJ"
+    "other_sources": [
+      {
+        "soldier_id": "0010201878",
+        "name": "Kalaver Joje Čedo",
+        "additional_info": "rod. 1926, Jaker, Glamoč, zemljoradnik, Srbin, u NOB od 1943, u brigadi od januara do juna 1944, vodni delegat, poginuo aprila 1945. kod Fojnice.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 207,
+        "pdf_x": 46.0,
+        "pdf_y": 466.7,
+        "pdf_x_end": 311.4,
+        "pdf_y_end": 493.9,
+        "pdf_x_left": 29.2
+      }
+    ]
   },
   {
     "last_name": "Kalagarić",
@@ -34594,10 +34829,22 @@
         "pdf_x_end": 314.7,
         "pdf_y_end": 129.6,
         "pdf_x_left": 33.5
+      },
+      {
+        "soldier_id": "0010100510",
+        "name": "Kesić Jove Božo",
+        "additional_info": "borac u intendanturi brigade, rođen 1912, Kolunić, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KP.T od 1941, bio predsednik Opštinskog NOO Bosanski Petrovac, poginuo u proboju Zelengore kod sela Govza 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 36.2,
+        "pdf_y": 537.0,
+        "pdf_x_end": 206.5,
+        "pdf_y_end": 579.3
       }
     ],
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "unit_detail": "intendantura"
   },
   {
     "last_name": "Kesić",
@@ -35288,6 +35535,17 @@
         "name": "Kljajić Ilije Uroš",
         "additional_info": "3. četa 2. bataljona: borac, rođen 1920, B. Osredci, Drvar, Srbin, radnik, u NOB od 1941, član KPJ od 1942, poginuo 1943. na Zelengori.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010100524",
+        "name": "Kljajić Ilije Uroš",
+        "additional_info": "borac 3. čete 2. bataljona, rođen 1920, Bosanski Osredci, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo na Zelengori 8. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 33,
+        "pdf_x": 220.0,
+        "pdf_y": 439.3,
+        "pdf_x_end": 390.2,
+        "pdf_y_end": 491.7
       }
     ],
     "unit_detail": "3. četa, 2. bataljon",
@@ -37043,6 +37301,17 @@
         "source_url": "https://znaci.org/00001/31_263.htm"
       },
       {
+        "soldier_id": "0010101319",
+        "name": "Knežević Stevana Stevo",
+        "additional_info": "zvani Cejin; borac 3. čete 2. bataljona, rođen 1923, Mali Cvjetnić, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1943, poginuo kod Lučkih Koliba na Zelengori 9. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 36,
+        "pdf_x": 13.0,
+        "pdf_y": 513.9,
+        "pdf_x_end": 174.5,
+        "pdf_y_end": 577.1
+      },
+      {
         "soldier_id": "9022015294",
         "name": "Knežević (Stevan) Stevo",
         "additional_info": "rođen 1923, Mali Cvijetnić (Drvar). Srbin, poginuo 1943. u NOBu, Crna gora",
@@ -37051,7 +37320,8 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "unit_detail": "3. četa, 2. bataljon"
+    "unit_detail": "3. četa, 2. bataljon",
+    "party": "KPJ 1943"
   },
   {
     "last_name": "Knežević",
@@ -38333,6 +38603,18 @@
     "party": "KPJ",
     "other_sources": [
       {
+        "soldier_id": "0010202244",
+        "name": "Koturović S Prodan",
+        "additional_info": "Ub, Srbin, u NOB i brigadi od septembra 1944, borac, poginuo januara 1945. Sid.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 192,
+        "pdf_x": 97.0,
+        "pdf_y": 363.3,
+        "pdf_x_end": 360.6,
+        "pdf_y_end": 379.9,
+        "pdf_x_left": 79.0
+      },
+      {
         "soldier_id": "9014001236",
         "name": "Koturović Prodan",
         "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 246. Koturović Prodan.",
@@ -38351,8 +38633,25 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1280",
         "source_page": 1280,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0001005735",
+        "name": "Koturović S Prodan",
+        "additional_info": "1922, Ub, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, borac, poginuo 22. 01. 1945, Tovarnik, Vukovar",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 133,
+        "pdf_x": 47.4,
+        "pdf_y": 211.7,
+        "pdf_x_end": 354.4,
+        "pdf_y_end": 241.6,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Kovacević",
@@ -38942,6 +39241,17 @@
         "pdf_x_left": 30.8
       },
       {
+        "soldier_id": "0010100403",
+        "name": "Kovačević Đure Mićo",
+        "additional_info": "borac 2. bataljona, rođen 1922, Prkosi, Bosanski Petrovac, zemljoradnik, Srbin, u NOB lod 1941, član KPJ od 1943, poginuo na Sremskom frontu kod Berkasova 21. januara 1945. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 13.2,
+        "pdf_y": 530.2,
+        "pdf_x_end": 173.7,
+        "pdf_y_end": 571.8
+      },
+      {
         "soldier_id": "9013000796",
         "name": "Kovačević Mićo",
         "additional_info": "Treća krajiška proleterska brigada, Kozjakov Salaš: Mićo Kovačević.",
@@ -38989,7 +39299,16 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "unit_detail": "2. bataljon",
+    "variants": {
+      "death": [
+        {
+          "date": "21.01.1945",
+          "place": "Sremski front, Berkasovo"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kovacević",
@@ -39671,6 +39990,17 @@
         "name": "Kovačević Koje Đuro",
         "additional_info": "1. četa 4. bataljona: borac, rođen 1924, Smoljana, Bos. Petrovac, Srbin, zemljoradnik.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010100840",
+        "name": "Kovačević Koje Đuro",
+        "additional_info": "borac 4. bataljona, rođen 1924, Prkosi, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, poginuo na Zelengori juna 1943.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 38,
+        "pdf_x": 10.3,
+        "pdf_y": 379.0,
+        "pdf_x_end": 174.1,
+        "pdf_y_end": 420.6
       }
     ],
     "unit_detail": "1. četa, 4. bataljon"
@@ -39846,12 +40176,12 @@
     }
   },
   {
-    "last_name": "Krajino",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Krajino Vić",
-    "additional_info": "Dane ILIJA, rođen 1920, Suvaja, Bosanski Petrovac, zemljoradnik, Srbin, u NOB d 27. 7. 1941, u Brigadi od 22. 8. 1942, član KPJ, obavještajni oficir Brigade, poginuo 8. 9. 1944, na Jelovoj gori kod Kosjerića, sahranjen u s. Trnavi, Užice",
+    "last_name": "Krajinović",
+    "middle_name": "Dane",
+    "first_name": "Ilija",
+    "fathers_name": "Dane",
+    "full_name": "Krajinović Dane Ilija",
+    "additional_info": "rođen 1920, Suvaja, Bosanski Petrovac, zemljoradnik, Srbin, u NOB d 27. 7. 1941, u Brigadi od 22. 8. 1942, član KPJ, obavještajni oficir Brigade, poginuo 8. 9. 1944, na Jelovoj gori kod Kosjerića, sahranjen u s. Trnavi, Užice",
     "birth_year": "1920",
     "pdf_page": 54,
     "pdf_y": 270.1,
@@ -39859,15 +40189,62 @@
     "pdf_y_end": 334.5,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010000831",
+    "death_place": "na Jelovoj gori kod Kosjerića",
+    "pdf_x_end": 370.8,
+    "party": "KPJ",
     "birth_place": "Suvaja, Bosanski Petrovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "08.09.1944",
-    "death_place": "na Jelovoj gori kod Kosjerića",
     "rank": "obavještajni oficir brigade",
-    "pdf_x_end": 370.8,
-    "party": "KPJ"
+    "other_sources": [
+      {
+        "soldier_id": "0010202308",
+        "name": "Krajinović Dane Ilija",
+        "additional_info": "rođ. 1920, Suvaja, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 27. 7. 1941., u brigadi od 22. 8. 1942, član KPJ 1942, obaveštajni oficir brigade, poginuo 8. 9. 1944. Jelova Gora — Titovo Užice.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 197,
+        "pdf_x": 43.2,
+        "pdf_y": 503.7,
+        "pdf_x_end": 309.0,
+        "pdf_y_end": 539.1,
+        "pdf_x_left": 26.8
+      },
+      {
+        "soldier_id": "0010300513",
+        "name": "Krajinović Dane Ilija",
+        "additional_info": "2. četa 1. bataljona: rođen 1920, Suvaja, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1941, poginuo 1944, kod Kosjerića kao član KPJ i obaveštajni oficir brigade.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010100594",
+        "name": "Krajinović Dane Ilija",
+        "additional_info": "obaveštajni oficir 1. bataljona, rođen 1920, Suvaja, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo u Srbiji na Jelovoj Gori kod Tometinog Polja 9. septembra 1944, obaveštajni oficir brigade.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 39,
+        "pdf_x": 41.0,
+        "pdf_y": 124.4,
+        "pdf_x_end": 211.2,
+        "pdf_y_end": 199.9
+      },
+      {
+        "soldier_id": "9022010896",
+        "name": "Krajinović (Dane) Ilija",
+        "additional_info": "rođen 1920, Suvaja (Bosanski Petrovac). Srbin, poginuo 1944. u NOBu, Knin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1015",
+        "source_page": 1015,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "unit_detail": "1. bataljon",
+    "variants": {
+      "death": [
+        {
+          "date": "09.09.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krajinović",
@@ -40018,11 +40395,11 @@
     ]
   },
   {
-    "last_name": "Kritić",
+    "last_name": "Krstić",
     "middle_name": "Petra",
     "first_name": "Andrija",
     "fathers_name": "Petar",
-    "full_name": "Kritić Petra Andrija",
+    "full_name": "Krstić Petra Andrija",
     "additional_info": "rođen 1911, Beograd, službenik, Srbin, u NOB i u Brigadi od oktobra 1944, borac, poginuo 19. 4. 1945. na Pleternici, gdje je i sahranjen",
     "birth_year": "1911",
     "pdf_page": 55,
@@ -40040,6 +40417,18 @@
     "rank": "borac",
     "pdf_x_end": 184.9,
     "other_sources": [
+      {
+        "soldier_id": "0010202347",
+        "name": "Krstić Petra Andrija",
+        "additional_info": "rođ. 1911, Beograd, službenik, Srbin, u NOB od oktobra 1944, u brigadi od oktobra 1944, poginuo 19. 4. 1945. Pleternica.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 201,
+        "pdf_x": 52.1,
+        "pdf_y": 280.4,
+        "pdf_x_end": 316.8,
+        "pdf_y_end": 308.5,
+        "pdf_x_left": 35.3
+      },
       {
         "soldier_id": "9025005054",
         "name": "Kritić (Petar) Andrija",
@@ -40613,12 +41002,12 @@
     "party": "SKOJ 1942"
   },
   {
-    "last_name": "Kuno",
-    "middle_name": "",
-    "first_name": "Vac",
-    "fathers_name": "",
-    "full_name": "Kuno Vac",
-    "additional_info": "Todora SAVO, rođen 1920, Kutanja, Donji Vakuf, zemljoradnik, Srbin, u NOB od decembra 1941, u Brigadi od 20. 8. 1943, borac, umro u bolnici 1. proleterske divizije oktobra 1943, sahranjen u s. Kutanja",
+    "last_name": "Kunovac",
+    "middle_name": "Todora",
+    "first_name": "Savo",
+    "fathers_name": "Todor",
+    "full_name": "Kunovac Todora Savo",
+    "additional_info": "rođen 1920, Kutanja, Donji Vakuf, zemljoradnik, Srbin, u NOB od decembra 1941, u Brigadi od 20. 8. 1943, borac, umro u bolnici 1. proleterske divizije oktobra 1943, sahranjen u s. Kutanja",
     "birth_year": "1920",
     "pdf_page": 55,
     "pdf_y": 268.7,
@@ -40626,13 +41015,27 @@
     "pdf_y_end": 327.3,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010000849",
+    "pdf_x_end": 358.2,
     "birth_place": "Kutanja, Donji Vakuf",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "10.1943",
     "rank": "borac",
-    "pdf_x_end": 358.2
+    "other_sources": [
+      {
+        "soldier_id": "0010202396",
+        "name": "Kunovac Todora Savo",
+        "additional_info": "rođ. 1920, Kutanja, Donji Vakuf, zemljoradnik, Srbin, u NOB od 1942, u brigadi od 20. avgusta do oktobra 1943, borac, umro 1943. posle ranjavanja.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 205,
+        "pdf_x": 59.3,
+        "pdf_y": 132.0,
+        "pdf_x_end": 324.2,
+        "pdf_y_end": 159.2,
+        "pdf_x_left": 42.5
+      }
+    ]
   },
   {
     "last_name": "Kurunci",
@@ -41856,7 +42259,7 @@
       {
         "soldier_id": "0010202467",
         "name": "Latinović Koje Mile",
-        "additional_info": "rođ. 1919, Bravsko, Bos. Petrovac, rađilik, Srbin, ü NÖB od 27. 7. 1941, NARODNI HEROJ, u brigadi od oktobrà 1942s elan KPJ-1943,- komandant bataljona, poginuo 7. 12. 1944. Tovarnik. LATINO ViC-PERKOVI C Sime MILKA, rođ. 1924, Kapljuvi, Bos. Petrovac, domaćica, Srpkinja, u NOB od 2. 9. 1942, u brigadi od 4. 7. 1943, do 9. 12. 1944, član KPJ 1943, četna bolničarka.",
+        "additional_info": "rođ. 1919, Bravsko, Bos. Petrovac, rađilik, Srbin, ü NÖB od 27. 7. 1941, NARODNI HEROJ, u brigadi od oktobrà 1942s elan KPJ-1943,- komandant bataljona, poginuo 7. 12. 1944. Tovarnik.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 212,
         "pdf_x": 72.8,
@@ -42192,10 +42595,21 @@
         "pdf_x_end": 316.4,
         "pdf_y_end": 372.1,
         "pdf_x_left": 33.9
+      },
+      {
+        "soldier_id": "0010300557",
+        "name": "Latinović Petra Rade",
+        "additional_info": "2. četa 1. bataljona: borac, rođen 1925, Vrtoče, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1942, poginuo 1943. na Zelengori kao član SKOJ-a.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
       }
     ],
     "unit_detail": "2. četa, 1. bataljon",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Latinović",
@@ -43229,6 +43643,17 @@
         "name": "Letić Todora Pero",
         "additional_info": "1. četa 1. bataljona: rođen 1921, Drvar, Srbin, radnik. U NOB od 1941, član KPJ od 1942, poginuo 1945. na sremskom frontu kao zamenik politkomesara čete 5. bataljona.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010100673",
+        "name": "Letić Todora Pero",
+        "additional_info": "borac 1. čete 1. bataljona, rođen 1920, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo na Sremskom frontu kod sela Berak 9. decembra 1944, zamenik političkog komesara čete.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 43,
+        "pdf_x": 225.3,
+        "pdf_y": 208.0,
+        "pdf_x_end": 395.8,
+        "pdf_y_end": 271.2
       },
       {
         "soldier_id": "9014001260",
@@ -44941,6 +45366,17 @@
         "pdf_x_end": 318.8,
         "pdf_y_end": 230.9,
         "pdf_x_left": 37.4
+      },
+      {
+        "soldier_id": "0010100760",
+        "name": "Majkić Sime Branko",
+        "additional_info": "borac, rođen 1923, Majkić Japra, Sanski Most, Srbin, u NOB od 1942, poginuo na Sutjesci juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 44,
+        "pdf_x": 7.2,
+        "pdf_y": 501.9,
+        "pdf_x_end": 177.3,
+        "pdf_y_end": 543.5
       },
       {
         "soldier_id": "9022028999",
@@ -47615,7 +48051,7 @@
     "last_name": "Marinković",
     "middle_name": "Sranimira",
     "first_name": "Nikola",
-    "fathers_name": "Sranimira",
+    "fathers_name": "Stanimir",
     "full_name": "Marinković Sranimira Nikola",
     "additional_info": "rođen 1924, Naupare, Kruševac, zemljoradnik, Srbin, borac, poginuo 1945. godine na Sremskom frontu",
     "birth_year": "1924",
@@ -52379,11 +52815,11 @@
     ]
   },
   {
-    "last_name": "Miliević",
+    "last_name": "Miljević",
     "middle_name": "Mile",
     "first_name": "Desa",
     "fathers_name": "Mile",
-    "full_name": "Miliević Mile Desa",
+    "full_name": "Miljević Mile Desa",
     "additional_info": "rođena 1925, Podlug, Sanski Most, domaćica, Srpkinja, u NOB od 6. 3. 1942, u Brigadi od 1942, borac, poginula juna 1943. na Sutjesci",
     "birth_year": "1925",
     "pdf_page": 71,
@@ -52399,7 +52835,33 @@
     "death_date": "06.1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 192.0
+    "pdf_x_end": 192.0,
+    "other_sources": [
+      {
+        "soldier_id": "0010203073",
+        "name": "Miljević Mile Desa",
+        "additional_info": "rođ. 1925, Podlug, Sanski Most, domaćica, Srpkinja, u NOB od 6. 3. 1942, u brigadi od 1942. do juna 1943, bila član SKOJ-a, bolničarka, poginula juna 1943. na Sutjesci.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 264,
+        "pdf_x": 78.9,
+        "pdf_y": 420.4,
+        "pdf_x_end": 344.1,
+        "pdf_y_end": 457.2,
+        "pdf_x_left": 62.1
+      },
+      {
+        "soldier_id": "0010100777",
+        "name": "Miljević Mile Desa",
+        "additional_info": "bolničarka, rođena 1925, Podlug, Sanski Most, domaćica, Srpkinja, u NOB od januara 1943, član SKOJ-a, poginula u bici na Sutjesci juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 49,
+        "pdf_x": 39.7,
+        "pdf_y": 102.5,
+        "pdf_x_end": 209.7,
+        "pdf_y_end": 155.8
+      }
+    ],
+    "party": "SKOJ"
   },
   {
     "last_name": "Milijanović",
@@ -56024,6 +56486,18 @@
     "pdf_x_end": 202.3,
     "other_sources": [
       {
+        "soldier_id": "0010203229",
+        "name": "Mitrić Sredoje Ljubiša",
+        "additional_info": "rod. 1924, Čičkovo, Arilje, zemljoradnik, Srbin, u NOB i brigadi od avgusta 1944, borac, poginuo januara 1945. kod Sida.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 270,
+        "pdf_x": 79.5,
+        "pdf_y": 96.7,
+        "pdf_x_end": 343.2,
+        "pdf_y_end": 124.3,
+        "pdf_x_left": 62.7
+      },
+      {
         "soldier_id": "9014001374",
         "name": "Mitrić Ljubiša",
         "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 384. Mitrić Ljubiša.",
@@ -56706,8 +57180,20 @@
         "pdf_x_end": 354.2,
         "pdf_y_end": 160.1,
         "pdf_x_left": 71.4
+      },
+      {
+        "soldier_id": "0010100826",
+        "name": "Modrinić Rada Milka",
+        "additional_info": "zvana Mala Milkica; četna bolničarka u 2. bataljonu, rođena 1924, Vidari, Bihać, domaćica, Srpkinja, u NOB od januara 1943, od zadobijenih rana umrla u Beogradu 15. oktobra 1944. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 50,
+        "pdf_x": 16.1,
+        "pdf_y": 532.6,
+        "pdf_x_end": 177.6,
+        "pdf_y_end": 575.0
       }
-    ]
+    ],
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0010002284",
@@ -57606,7 +58092,7 @@
     "first_name": "Uutiktalav",
     "fathers_name": "Kadomira",
     "full_name": "Musić Kadomira Uutiktalav",
-    "additional_info": "roaen 1925, Pružatovac, Mladenovac, zemljoradnik, Srbin, u NOB i u Brigadi od 8. 10. 1944, borac, poginuo 7. 12. 1944. kod Tovarnika",
+    "additional_info": "rođen 1925, Pružatovac, Mladenovac, zemljoradnik, Srbin, u NOB i u Brigadi od 8. 10. 1944, borac, poginuo 7. 12. 1944. kod Tovarnika",
     "birth_year": "1925",
     "pdf_page": 73,
     "pdf_y": 0.3,
@@ -57614,13 +58100,14 @@
     "pdf_y_end": 47.9,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010001190",
+    "pdf_x_end": 360.7,
+    "birth_place": "Pružatovac, Mladenovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "07.12.1944",
     "death_place": "Tovarnik",
-    "rank": "borac",
-    "pdf_x_end": 360.7
+    "rank": "borac"
   },
   {
     "last_name": "Nastić",
@@ -58177,7 +58664,7 @@
     "last_name": "Nikolić",
     "middle_name": "Boiidara",
     "first_name": "Branko",
-    "fathers_name": "Boiidara",
+    "fathers_name": "Božidar",
     "full_name": "Nikolić Boiidara Branko",
     "additional_info": "rođen 1920, Udovice, Smederevo, zemljoradnik, Srbin, u NOB i u Brigadi od 20. 10. 1944, borac, poginuo 16. 4. 1945. kod s. Ruševa, Slavonija",
     "birth_year": "1920",
@@ -60571,7 +61058,7 @@
       {
         "soldier_id": "0010300705",
         "name": "Obradović Petra Stojan",
-        "additional_info": "1. četa 4. bataljona: borac, rođen 1926, Risovac, Krnjeuša, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1942, član SKOJ-a od 1942, poginuo avgusta1943. u napadu na Bugojno.",
+        "additional_info": "1. četa 4. bataljona: borac, rođen 1926, Risovac, Krnjeuša, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1942, član SKOJ-a od 1942, poginuo avgusta 1943. u napadu na Bugojno.",
         "source_url": "https://znaci.org/00001/31_263.htm"
       },
       {
@@ -61540,11 +62027,11 @@
     ]
   },
   {
-    "last_name": "Pa",
+    "last_name": "Pavino",
     "middle_name": "",
-    "first_name": "Vino Teodore",
+    "first_name": "Teodore",
     "fathers_name": "",
-    "full_name": "Pa Vino Teodore",
+    "full_name": "Pavino Teodore",
     "additional_info": "rođen u Albanesi, Palermo, Italija, u NOB i u Brigadi od 1943, borac, poginuo 23. 6. 1944. na Crnom vrhu kod Travnika",
     "birth_year": "",
     "pdf_page": 79,
@@ -61558,7 +62045,22 @@
     "death_date": "23.06.1944",
     "death_place": "Crni vrh, Travnik",
     "rank": "borac",
-    "pdf_x_end": 361.4
+    "pdf_x_end": 361.4,
+    "other_sources": [
+      {
+        "soldier_id": "0010203614",
+        "name": "Pavino Teodore",
+        "additional_info": "Albanesi, Palermo, Italijan, u NOB i brigadi od 1943, borac, poginuo 23. 6. 1944. Crni Vrh — Travnik.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 301,
+        "pdf_x": 58.0,
+        "pdf_y": 163.8,
+        "pdf_x_end": 322.8,
+        "pdf_y_end": 191.5,
+        "pdf_x_left": 41.0
+      }
+    ],
+    "ethnicity": "Italijan"
   },
   {
     "last_name": "Pavić",
@@ -63050,8 +63552,29 @@
         "pdf_x_end": 417.2,
         "pdf_y_end": 595.9,
         "unit_file": "22-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0080000872",
+        "name": "Pavlović Živomira Slavoljub",
+        "additional_info": "majka Kosana; borac, rođen 1927, u Velikoj Ivanči, Mladenovac, zemljoradnik, Srbin, u brigadi od 28. 9. 1944. do 13. 1. 1945, poginuo 23. 1. 1945. ispred Šarengrada u 21. diviziji.",
+        "pdf_file": "21-srpska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 32.4,
+        "pdf_y": 69.0,
+        "pdf_x_end": 368.3,
+        "pdf_y_end": 94.8,
+        "pdf_x_left": 11.3,
+        "unit_file": "21-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "23.01.1945",
+          "place": "Šarengrad"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -65826,7 +66349,7 @@
       {
         "soldier_id": "0001501816",
         "name": "Petrović Petra Živko",
-        "additional_info": "u bataljon stupio 1944. godine; rođen 1908, Bijeli Potok, Beograd, SRS, u NOB od 9. oktobra 1944, voginuo 12. aprila 1945. kod Nove Babske — Srem.",
+        "additional_info": "u bataljon stupio 1944. godine; rođen 1908, Bijeli Potok, Beograd, SRS, u NOB od 9. oktobra 1944, poginuo 12. aprila 1945. kod Nove Babske — Srem.",
         "pdf_file": "crnogorski-bataljon.pdf",
         "pdf_page": 52,
         "pdf_x": 182.7,
@@ -79028,12 +79551,12 @@
     ]
   },
   {
-    "last_name": "Sa",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Sa Vić",
-    "additional_info": "Ivana RUŽA, rođena 1925. Banjevci, Benkovac, domaćica, Hrvatica, u NOB i u Brigadi od 1943, član KPJ, četna bolničarka, poginula 6. 12. 1944. kod Tovarnika",
+    "last_name": "Savić",
+    "middle_name": "Ivana",
+    "first_name": "Ruža",
+    "fathers_name": "Ivan",
+    "full_name": "Savić Ivana Ruža",
+    "additional_info": "rođena 1925. Banjevci, Benkovac, domaćica, Hrvatica, u NOB i u Brigadi od 1943, član KPJ, četna bolničarka, poginula 6. 12. 1944. kod Tovarnika",
     "birth_year": "1925",
     "pdf_page": 99,
     "pdf_y": 199.3,
@@ -79041,15 +79564,15 @@
     "pdf_y_end": 246.9,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010001627",
+    "pdf_x_end": 183.3,
+    "party": "KPJ",
     "birth_place": "Banjevci, Benkovac",
     "ethnicity": "Hrvatica",
     "occupation": "domaćica",
     "death_type": "poginuo",
     "death_date": "06.12.1944",
     "death_place": "Tovarnik",
-    "rank": "bolničarka",
-    "pdf_x_end": 183.3,
-    "party": "KPJ"
+    "rank": "bolničarka"
   },
   {
     "last_name": "Savić",
@@ -79384,7 +79907,21 @@
     "death_date": "08.1943",
     "death_place": "Bugojno",
     "rank": "borac",
-    "pdf_x_end": 201.0
+    "pdf_x_end": 201.0,
+    "other_sources": [
+      {
+        "soldier_id": "0010204458",
+        "name": "Sakradžija Toše Mihailo",
+        "additional_info": "rod. 1910, Gornji Lipik, Sanski Most, BiH, zemljoradnik, Srbin, u NOB od 1941, u brigadi od 22. 8. 1942, borac, poginuo u Bugojnu 1943.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 368,
+        "pdf_x": 83.7,
+        "pdf_y": 127.3,
+        "pdf_x_end": 347.8,
+        "pdf_y_end": 155.0,
+        "pdf_x_left": 65.9
+      }
+    ]
   },
   {
     "last_name": "Salapura",
@@ -81206,6 +81743,18 @@
     "rank": "borac",
     "pdf_x_end": 184.6,
     "other_sources": [
+      {
+        "soldier_id": "0010204607",
+        "name": "Sinđelić Svetomira Predrag",
+        "additional_info": "rođ. 1926, Zvizdar, Ub, Srbija, zemljoradnik, Rom, u NOB i brigadi od 7. 10. 1944, borac poginuo 9. 12. 1944. Berak.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 377,
+        "pdf_x": 58.5,
+        "pdf_y": 340.9,
+        "pdf_x_end": 323.3,
+        "pdf_y_end": 368.1,
+        "pdf_x_left": 41.9
+      },
       {
         "soldier_id": "9013000604",
         "name": "Sinđelić Predrag",
@@ -87654,7 +88203,7 @@
       {
         "soldier_id": "0010301031",
         "name": "Stupar Pere Nikola",
-        "additional_info": "zvani Nina; 1. četa 3. bataljona: borae, rođen 1910, Vođenica, Bos. Petrovac, Srbin, Zemljoradnik, borac od 1941, član KPJ od 1943, poginuo jula 1943. kod Popovog Mosta, Sutjeska.",
+        "additional_info": "zvani Nina; 1. četa 3. bataljona: borac, rođen 1910, Vođenica, Bos. Petrovac, Srbin, Zemljoradnik, borac od 1941, član KPJ od 1943, poginuo jula 1943. kod Popovog Mosta, Sutjeska.",
         "source_url": "https://znaci.org/00001/31_263.htm"
       },
       {
@@ -87977,7 +88526,7 @@
       {
         "soldier_id": "0010301039",
         "name": "Stupar Staniše Stevo",
-        "additional_info": "1. četa 3. bataljona: borac, rođen 1921 god. Skakavac, Bos. Petrovac, Srbin, zemljoradnik. Paginuo 1943. god. na Zelengori.",
+        "additional_info": "1. četa 3. bataljona: borac, rođen 1921 god. Skakavac, Bos. Petrovac, Srbin, zemljoradnik. Poginuo 1943. god. na Zelengori.",
         "source_url": "https://znaci.org/00001/31_263.htm"
       },
       {
@@ -89435,12 +89984,12 @@
     }
   },
   {
-    "last_name": "Taso",
-    "middle_name": "",
-    "first_name": "Vac",
-    "fathers_name": "",
-    "full_name": "Taso Vac",
-    "additional_info": "Boška LUKA, rođen 1925. Trebinje, radnik, Srbin, član KPJ, delegat voda, poginuo 9. 12. 1944. kod s. Berka, Srem",
+    "last_name": "Tasovac",
+    "middle_name": "Boška",
+    "first_name": "Luka",
+    "fathers_name": "Boško",
+    "full_name": "Tasovac Boška Luka",
+    "additional_info": "rođen 1925. Trebinje, radnik, Srbin, član KPJ, delegat voda, poginuo 9. 12. 1944. kod s. Berka, Srem",
     "birth_year": "1925",
     "pdf_page": 112,
     "pdf_y": 387.9,
@@ -89448,6 +89997,8 @@
     "pdf_y_end": 424.9,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010001844",
+    "pdf_x_end": 369.2,
+    "party": "KPJ",
     "birth_place": "Trebinje",
     "ethnicity": "Srbin",
     "occupation": "radnik",
@@ -89455,8 +90006,44 @@
     "death_date": "09.12.1944",
     "death_place": "Berak, Srem",
     "rank": "delegat voda",
-    "pdf_x_end": 369.2,
-    "party": "KPJ"
+    "other_sources": [
+      {
+        "soldier_id": "0010205074",
+        "name": "Tasovac Boška Luka",
+        "additional_info": "rod. 1925, Trebinje, delegat voda, poginuo 9. 12. 1944. kod Berka.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 424,
+        "pdf_x": 80.8,
+        "pdf_y": 160.0,
+        "pdf_x_end": 345.5,
+        "pdf_y_end": 177.8,
+        "pdf_x_left": 64.0
+      },
+      {
+        "soldier_id": "9013000609",
+        "name": "Tasovac Luka",
+        "additional_info": "Treća krajiška proleterska brigada, Berak: Luka Tasovac, delegat.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 6,
+        "pdf_x": 331.6,
+        "pdf_y": 218.0,
+        "pdf_x_end": 439.4,
+        "pdf_y_end": 227.7,
+        "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "9014001613",
+        "name": "Tasovac Luka",
+        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 623. Tasovac Luka.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 12,
+        "pdf_x": 423.2,
+        "pdf_y": 865.3,
+        "pdf_x_end": 483.7,
+        "pdf_y_end": 874.8,
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Tatar",
@@ -93139,12 +93726,12 @@
     ]
   },
   {
-    "last_name": "Ug",
-    "middle_name": "",
-    "first_name": "Reno Vić",
-    "fathers_name": "",
-    "full_name": "Ug Reno Vić",
-    "additional_info": "Todora MIĆO, rođen 1922. Hašani, Bosanska Krupa, zemljoradnik, Srbin, u NOB i u Brigadi od oktobra 1942. desetar, poginuo juna 1943. na Sutjesci",
+    "last_name": "Ugrenović",
+    "middle_name": "Todora",
+    "first_name": "Mićo",
+    "fathers_name": "Todor",
+    "full_name": "Ugrenović Todora Mićo",
+    "additional_info": "rođen 1922. Hašani, Bosanska Krupa, zemljoradnik, Srbin, u NOB i u Brigadi od oktobra 1942. desetar, poginuo juna 1943. na Sutjesci",
     "birth_year": "1922",
     "pdf_page": 116,
     "pdf_y": 498.4,
@@ -93152,6 +93739,7 @@
     "pdf_y_end": 545.9,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010001923",
+    "pdf_x_end": 368.3,
     "birth_place": "Hašani, Bosanska Krupa",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
@@ -93159,7 +93747,31 @@
     "death_date": "06.1943",
     "death_place": "Sutjeska",
     "rank": "desetar",
-    "pdf_x_end": 368.3
+    "other_sources": [
+      {
+        "soldier_id": "0010205287",
+        "name": "Ugrenović Tođora Mićo",
+        "additional_info": "rođ. 1922, Hašani, Bos. Krupa, zemljoradnik, Srbin, u NOB i brigadi od oktobra 1942, komandir odeljenja, poginuo juna 1943. na Sutjesci.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 439,
+        "pdf_x": 54.0,
+        "pdf_y": 441.5,
+        "pdf_x_end": 318.9,
+        "pdf_y_end": 468.7,
+        "pdf_x_left": 37.2
+      },
+      {
+        "soldier_id": "0010101293",
+        "name": "Ugrenović Todora Mićo",
+        "additional_info": "desetar, rođen 1922, Hašani, Bosanska Krupa, zemljoradnik, Srbin, u NOB od oktobra 1942, poginuo u bici na Sutjesci juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 81,
+        "pdf_x": 213.0,
+        "pdf_y": 211.0,
+        "pdf_x_end": 383.2,
+        "pdf_y_end": 263.4
+      }
+    ]
   },
   {
     "last_name": "Ugrica",
@@ -95964,12 +96576,12 @@
     "party": "SKOJ"
   },
   {
-    "last_name": "Vojno",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Vojno Vić",
-    "additional_info": "Ilije NIKOLA, rođen 1919. Rajinovci, Bihać, radnik, Srbin, u NOB od 1941, u Brigadi od 22. 8. 1942, borac, poginuo 2. 3. 1943. na pl. Raduši kod Prozora",
+    "last_name": "Vojnović",
+    "middle_name": "Ilije",
+    "first_name": "Nikola",
+    "fathers_name": "Ilija",
+    "full_name": "Vojnović Ilije Nikola",
+    "additional_info": "rođen 1919. Rajinovci, Bihać, radnik, Srbin, u NOB od 1941, u Brigadi od 22. 8. 1942, borac, poginuo 2. 3. 1943. na pl. Raduši kod Prozora",
     "birth_year": "1919",
     "pdf_page": 120,
     "pdf_y": 139.9,
@@ -95977,13 +96589,27 @@
     "pdf_y_end": 187.5,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010001981",
+    "pdf_x_end": 194.4,
     "birth_place": "Rajinovci, Bihać",
     "ethnicity": "Srbin",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "02.03.1943",
     "rank": "borac",
-    "pdf_x_end": 194.4
+    "other_sources": [
+      {
+        "soldier_id": "0010205472",
+        "name": "Vojnović Ilije Nikola",
+        "additional_info": "rođ. 1919, Rajinovci, Bihać, radnik, Srbin, u NOB 1941, u brigadi od 22. 8. 1942, borac, poginuo 2. 3. 1943. Kobilja Glava, Gornji Vakuf.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 452,
+        "pdf_x": 85.9,
+        "pdf_y": 432.9,
+        "pdf_x_end": 350.6,
+        "pdf_y_end": 460.1,
+        "pdf_x_left": 69.1
+      }
+    ]
   },
   {
     "last_name": "Vojvodić",
@@ -98438,7 +99064,7 @@
       {
         "soldier_id": "0010205585",
         "name": "Vučković Đure Ostoja",
-        "additional_info": "rođ. 1918, Dabar, Sanski Most, zemljoradnik, Srbin, u brigadi od 1942, borac, poginuo u Sandžaku druge polovine maja 1943. VUCKOVIC Bož. STANKO, rođ. 1922, Koštunici, G. Milanovac, zemljoradnik, Srbin, u NOB i brigadi od 15. 10. 1944, borac.",
+        "additional_info": "rođ. 1918, Dabar, Sanski Most, zemljoradnik, Srbin, u brigadi od 1942, borac, poginuo u Sandžaku druge polovine maja 1943.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 456,
         "pdf_x": 75.0,
@@ -104457,7 +105083,7 @@
     "last_name": "Đorđević",
     "middle_name": "Dohrosava",
     "first_name": "Živko",
-    "fathers_name": "Dohrosava",
+    "fathers_name": "Dobrosav",
     "full_name": "Đorđević Dohrosava Živko",
     "additional_info": "rođen 1925, Izvor, Svrljig, zemljoradnik, Srbin, u NOB i u Brigadi od 28. 11. 1944, borac, poginuo 17. 1. 1945. kod Tovarnika",
     "birth_year": "1925",
@@ -105571,12 +106197,12 @@
     ]
   },
   {
-    "last_name": "Đuro",
-    "middle_name": "",
-    "first_name": "Vić",
-    "fathers_name": "",
-    "full_name": "Đuro Vić",
-    "additional_info": "Perov SAVO, rođen 1907, Draževa-Jabuka, Foča, zemljoradnik, Srbin, u NOB i u Brigadi od jula 1943, borac, poginuo avgusta 1943. kod Konjica DŽ",
+    "last_name": "Đurović",
+    "middle_name": "Perov",
+    "first_name": "Savo",
+    "fathers_name": "Pero",
+    "full_name": "Đurović Perov Savo",
+    "additional_info": "rođen 1907, Draževa-Jabuka, Foča, zemljoradnik, Srbin, u NOB i u Brigadi od jula 1943, borac, poginuo avgusta 1943. kod Konjica DŽ",
     "birth_year": "1907",
     "pdf_page": 28,
     "pdf_y": 71.9,
@@ -105584,14 +106210,14 @@
     "pdf_y_end": 120.4,
     "pdf_file": "3-krajiska-proleterska.pdf",
     "soldier_id": "0010002175",
+    "pdf_x_end": 365.6,
     "birth_place": "Draževa-Jabuka, Foča",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "08.1943",
     "death_place": "kod Konjica DŽ",
-    "rank": "borac",
-    "pdf_x_end": 365.6
+    "rank": "borac"
   },
   {
     "last_name": "Đurđević",
@@ -106041,7 +106667,21 @@
     "death_date": "23.06.1944",
     "death_place": "Crni vrh, Travnik",
     "rank": "borac",
-    "pdf_x_end": 185.8
+    "pdf_x_end": 185.8,
+    "other_sources": [
+      {
+        "soldier_id": "0010206038",
+        "name": "Šebez Marka Obrad",
+        "additional_info": "rođ. 1927, Blagaj, Kupres, zemljoradnik, Sirbin, u NOB od 1942, borac, poginuo 1944. na Busovači.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 410,
+        "pdf_x": 79.2,
+        "pdf_y": 210.4,
+        "pdf_x_end": 344.4,
+        "pdf_y_end": 228.2,
+        "pdf_x_left": 63.1
+      }
+    ]
   },
   {
     "last_name": "Šegrt",
@@ -110300,53 +110940,6 @@
     "pdf_x_end": 168.2
   },
   {
-    "last_name": "Anjac",
-    "middle_name": "Mihaila",
-    "first_name": "Obrad",
-    "fathers_name": "Mihailo",
-    "full_name": "Anjac Mihaila Obrad",
-    "additional_info": "obaveštajni oficir brigade, rođen 1915, Trninić Breg, Drvar, radnik, Srbin, u NOB od 1941, član KPJ, poginuo 1944. godine.",
-    "birth_year": "1915",
-    "pdf_page": 6,
-    "pdf_y": 394.3,
-    "pdf_x": 9.6,
-    "pdf_y_end": 442.6,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100017",
-    "birth_place": "Trninić Breg, Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "rank": "obaveštajni oficir brigade",
-    "pdf_x_end": 173.9,
-    "party": "KPJ"
-  },
-  {
-    "last_name": "Anjac",
-    "middle_name": "Jovana",
-    "first_name": "Radojka",
-    "fathers_name": "Jovan",
-    "full_name": "Anjac Jovana Radojka",
-    "additional_info": "bolničarka, rođena 1923, Drinić, Bosanski Petrovac, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a od 1942, poginula u bici na Sutjesci juna 1943.",
-    "birth_year": "1923",
-    "pdf_page": 6,
-    "pdf_y": 444.5,
-    "pdf_x": 10.3,
-    "pdf_y_end": 497.8,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100018",
-    "pdf_x_end": 173.9,
-    "birth_place": "Drinić, Bosanski Petrovac",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "death_type": "poginuo",
-    "death_date": "06.1943",
-    "rank": "bolničarka",
-    "death_place": "Sutjeska",
-    "party": "SKOJ 1942"
-  },
-  {
     "soldier_id": "0010101529",
     "last_name": "Banjac-Sadžak",
     "middle_name": "Branka",
@@ -111975,7 +112568,7 @@
       {
         "soldier_id": "0010200207",
         "name": "Balaban Koje Milan",
-        "additional_info": "rod. 1908, Suvaja, B. Petrovac, zemljoradnik, Srbin, u NOB od'l941, u brigadi od 22. 8. 1942, borac.",
+        "additional_info": "rod. 1908, Suvaja, B. Petrovac, zemljoradnik, Srbin, u NOB od'1941, u brigadi od 22. 8. 1942, borac.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 19,
         "pdf_x": 25.7,
@@ -112352,11 +112945,11 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Batez",
+    "last_name": "Bates",
     "middle_name": "Bože",
     "first_name": "Milan",
     "fathers_name": "Božo",
-    "full_name": "Batez Bože Milan",
+    "full_name": "Bates Bože Milan",
     "additional_info": "zvani Mića; borac 1. čete 2. bataljona, rođen 1923, Vrtoče, Bosanski Petrovac, radnik, Jugosloven, u NOB od 1941, član SKOJ-a od 1942, član KPJ od 1944, krajem rata politički komesar čete.",
     "birth_year": "1923",
     "pdf_page": 6,
@@ -112371,7 +112964,32 @@
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 357.5,
-    "party": "SKOJ 1942, KPJ 1944"
+    "party": "SKOJ 1942, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0010300091",
+        "name": "Bates Bože Milan",
+        "additional_info": "1. četa 4. bataljona: borac, rođen 1921, Vrtoče, Bos. Petrovac, Srbin, radnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010200279",
+        "name": "Bates Bože Milan",
+        "additional_info": "rođ. 1923, Vrtoče, B. Petrovac, radnik, Jugosloven, u NOB od 27. 7. 1941, u brigadi od 22. 8. 1942, član KPJ od 1944, borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 25,
+        "pdf_x": 55.5,
+        "pdf_y": 355.2,
+        "pdf_x_end": 319.1,
+        "pdf_y_end": 381.5,
+        "pdf_x_left": 37.8
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Bauk",
@@ -112549,11 +113167,11 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Bjeijć",
+    "last_name": "Bjelić",
     "middle_name": "Alekse",
     "first_name": "Bogdan",
     "fathers_name": "Aleksa",
-    "full_name": "Bjeijć Alekse Bogdan",
+    "full_name": "Bjelić Alekse Bogdan",
     "additional_info": "zvani Bobota; desetar u 3. čete 3. bataljona, rođen 1922, Bravsko, Bosanski Petrovac, ugostitelj, Srbin, u NOB od 1941, član SKOJ-a od 1942, član KPJ od 1943, krajem rata komandir čete.",
     "birth_year": "1922",
     "pdf_page": 6,
@@ -112568,7 +113186,32 @@
     "rank": "desetar",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 357.5,
-    "party": "SKOJ 1942, KPJ 1943"
+    "party": "SKOJ 1942, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010300099",
+        "name": "Bjelić Alekse Bogdan",
+        "additional_info": "zvani Bobota; 3. četa 3. bataljona: borac, rođen 1921, Bravsko, Bos. Petrovac, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010200359",
+        "name": "Bjelić Alekse Bogdan",
+        "additional_info": "rođ. 1922, Bravsko, B. Petrovac, zemljoradnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942. do 23. 1. 45, član KPJ od 1943, komandant bataljona.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 30,
+        "pdf_x": 79.8,
+        "pdf_y": 215.0,
+        "pdf_x_end": 344.2,
+        "pdf_y_end": 251.1,
+        "pdf_x_left": 63.0
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ]
+    }
   },
   {
     "last_name": "Bjelić",
@@ -113990,11 +114633,11 @@
     }
   },
   {
-    "last_name": "Bulatić",
+    "last_name": "Bulajić",
     "middle_name": "Jovana",
     "first_name": "Mile",
     "fathers_name": "Jovan",
-    "full_name": "Bulatić Jovana Mile",
+    "full_name": "Bulajić Jovana Mile",
     "additional_info": "zamenik komandira 2. čete 4. bataljona, rođen 1919, Brestovac, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ od 1942, tragično izgubio život 1945. godine kao zamenik komandanta brigade.",
     "birth_year": "1919",
     "pdf_page": 10,
@@ -114009,7 +114652,41 @@
     "rank": "zamenik komandira, zamenik komandanta brigade",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 177.6,
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0010300142",
+        "name": "Bulajić Jovana Mile",
+        "additional_info": "2. četa 4. bataljona: komandir voda, rođen 1919, Brestovac, Vođenica, Bos. Petrovac, Srbin, radnik, u NOB od 1941, član KPJ od 1942; kao zamenik komandanta brigade-major, tragično nastradao 1945.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010200584",
+        "name": "Bulajić Jovana Mile",
+        "additional_info": "rođ. 1919, Brestovac, B. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 28. 8. 1942, član KPJ od 1942, zamenik komandanta brigade, poginuo 1945.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 46,
+        "pdf_x": 75.9,
+        "pdf_y": 198.7,
+        "pdf_x_end": 341.1,
+        "pdf_y_end": 234.7,
+        "pdf_x_left": 59.8
+      },
+      {
+        "soldier_id": "9022009848",
+        "name": "Bulajić (Jovo) Mile",
+        "additional_info": "rođen 1919, Brestovac (Bosanski Petrovac). Srbin, poginuo 1945. u NOBu, Ajdovščina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=974",
+        "source_page": 974,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Ajdovščina",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Bulatović",
@@ -114495,11 +115172,11 @@
     }
   },
   {
-    "last_name": "Celecević",
+    "last_name": "Kelečević",
     "middle_name": "Vice",
     "first_name": "Milan",
     "fathers_name": "Vice",
-    "full_name": "Celecević Vice Milan",
+    "full_name": "Kelečević Vice Milan",
     "additional_info": "borac 3. čete 1. bataljona, rođen 1920, Vrtoče, Drvar, radnik, Srbin, u NOB od 1941.",
     "birth_year": "1920",
     "pdf_page": 32,
@@ -114513,7 +115190,27 @@
     "occupation": "radnik",
     "rank": "borac",
     "unit_detail": "3. četa, 1. bataljon",
-    "pdf_x_end": 181.5
+    "pdf_x_end": 181.5,
+    "other_sources": [
+      {
+        "soldier_id": "0010300399",
+        "name": "Kelečević Vice Milan",
+        "additional_info": "3. četa 1. bataljona: borac, rođen 1920, Vrtoče, Drvar, Srbin, radnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010202038",
+        "name": "Kelečević Vice Milan",
+        "additional_info": "rod. 1920, Vrtoče, Titov Drvar, radnik, Srbin, u NOB od 1941, u brigadi od 22. 8. 1942.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 176,
+        "pdf_x": 81.8,
+        "pdf_y": 322.5,
+        "pdf_x_end": 346.9,
+        "pdf_y_end": 340.1,
+        "pdf_x_left": 65.5
+      }
+    ]
   },
   {
     "last_name": "Ciganović",
@@ -114594,11 +115291,11 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Cnezević",
+    "last_name": "Knežević",
     "middle_name": "Stevana",
     "first_name": "Savo",
     "fathers_name": "Stevan",
-    "full_name": "Cnezević Stevana Savo",
+    "full_name": "Knežević Stevana Savo",
     "additional_info": "borac 3. čete 2. bataljona, rođen 1901, Mali Cvjetnić, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1944. Umro 1968. godine u Bačkoj Palanci.",
     "birth_year": "1901",
     "pdf_page": 36,
@@ -114616,7 +115313,27 @@
     "rank": "borac",
     "unit_detail": "3. četa, 2. bataljon",
     "pdf_x_end": 173.3,
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0010300470",
+        "name": "Knežević Stevana Sava",
+        "additional_info": "3. četa 2. bataljona: borac, rođen 1901, M. Cvetnić, Drvar, Srbin, radnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010202166",
+        "name": "Knežević Stevana Savo",
+        "additional_info": "rod. 1901, Mali Cvjetnić, Titov Drvar, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942, član KPJ 1944, ekonom bataljona.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 187,
+        "pdf_x": 50.2,
+        "pdf_y": 366.5,
+        "pdf_x_end": 315.0,
+        "pdf_y_end": 403.3,
+        "pdf_x_left": 33.2
+      }
+    ]
   },
   {
     "last_name": "Knežević",
@@ -115023,7 +115740,27 @@
     "death_date": "1980",
     "rank": "borac",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 202.7
+    "pdf_x_end": 202.7,
+    "other_sources": [
+      {
+        "soldier_id": "0010300170",
+        "name": "Despanić Ile Savo",
+        "additional_info": "2. četa 1. bataljona: borac, rođen 1913. Gubin kod Livna, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010200883",
+        "name": "Despenić Ile Savo",
+        "additional_info": "rođ. 1913, Gubin, Livno, zemljoradnik, Srbin, u NOB i brigadi od 1942, borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 75,
+        "pdf_x": 34.4,
+        "pdf_y": 188.7,
+        "pdf_x_end": 299.1,
+        "pdf_y_end": 206.4,
+        "pdf_x_left": 17.2
+      }
+    ]
   },
   {
     "last_name": "Despot-Malić",
@@ -115247,43 +115984,6 @@
       }
     ],
     "party": "KPJ 1942"
-  },
-  {
-    "last_name": "Dogatović",
-    "middle_name": "Riste",
-    "first_name": "Dušan",
-    "fathers_name": "Risto",
-    "full_name": "Dogatović Riste Dušan",
-    "additional_info": "borac, rođen 1906, Kruševica, Bugojno, zemljoradnik, Srbin, u NOB od 1942, poginuo kod sela Jabuka na Jahorini 15. juna 1943. godine.",
-    "birth_year": "1906",
-    "pdf_page": 18,
-    "pdf_y": 175.0,
-    "pdf_x": 7.2,
-    "pdf_y_end": 228.4,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100209",
-    "birth_place": "Kruševica, Bugojno",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "15.06.1943",
-    "rank": "borac",
-    "pdf_x_end": 178.5,
-    "other_sources": [
-      {
-        "soldier_id": "0010200947",
-        "name": "Dogatović Riiste Dušan",
-        "additional_info": "rođ. 1906., Kruševica, Bugojno, radnik, Srbin, u NOB od 10. 1. 1942., u brigadi od 22. 2. 1943., borac, poginuo 15. 6. 1943. kod Jabuke na Jahorini, zarobljen i streljan.",
-        "pdf_file": "3-krajiska-spisak-boraca.pdf",
-        "pdf_page": 89,
-        "pdf_x": 39.4,
-        "pdf_y": 233.7,
-        "pdf_x_end": 304.5,
-        "pdf_y_end": 271.3,
-        "pdf_x_left": 23.1
-      }
-    ],
-    "death_place": "kod Jabuke na Jahorini, zarobljen i streljan"
   },
   {
     "last_name": "Dosenović-Stojanović",
@@ -115600,6 +116300,12 @@
         "pdf_x_end": 358.4,
         "pdf_y_end": 170.8,
         "pdf_x_left": 75.8
+      },
+      {
+        "soldier_id": "0010300191",
+        "name": "Dragosavac Gaje Mile",
+        "additional_info": "1. četa 2. bataljona: borac, rođen 1919, Oraško Brdo, Bos. Petrovac, Srbin, zemljoradnik, NOB od 1941, umro 1949.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
       }
     ]
   },
@@ -116183,11 +116889,11 @@
     "party": "SKOJ 1943"
   },
   {
-    "last_name": "Dvačević",
+    "last_name": "Kovačević",
     "middle_name": "Koje",
     "first_name": "Đurađ",
     "fathers_name": "Kojo",
-    "full_name": "Dvačević Koje Đurađ",
+    "full_name": "Kovačević Koje Đurađ",
     "additional_info": "borac 4. bataljona, rođen 1924, Smoljana, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od oktobra 1942. godine.",
     "birth_year": "1924",
     "pdf_page": 38,
@@ -116201,7 +116907,22 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 173.3
+    "pdf_x_end": 173.3,
+    "other_sources": [
+      {
+        "soldier_id": "0010202290",
+        "name": "Kovačević Koje Đurađ",
+        "additional_info": "rod. 1924, Smoljana, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 15. 10. 1942, u brigadi od januara 1943. do marta 1944, član KPJ 1945, borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 194,
+        "pdf_x": 93.6,
+        "pdf_y": 276.4,
+        "pdf_x_end": 358.1,
+        "pdf_y_end": 303.6,
+        "pdf_x_left": 76.3
+      }
+    ],
+    "party": "KPJ 1945"
   },
   {
     "last_name": "Džakula",
@@ -118778,11 +119499,11 @@
     }
   },
   {
-    "last_name": "Ikšić",
+    "last_name": "Jakšić",
     "middle_name": "Rade",
     "first_name": "Dušan",
     "fathers_name": "Rade",
-    "full_name": "Ikšić Rade Dušan",
+    "full_name": "Jakšić Rade Dušan",
     "additional_info": "zvani Relja; borac 1. bataljona, rođen 1924, Vrtoče, Bosanski Petrovac, zemljoradnik, Srbin, ju NOB od 1941, član KPJ od 1945, krajem rata komandir voda.",
     "birth_year": "1924",
     "pdf_page": 24,
@@ -118797,7 +119518,27 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 174.4,
-    "party": "KPJ 1945"
+    "party": "KPJ 1945",
+    "other_sources": [
+      {
+        "soldier_id": "0010300297",
+        "name": "Jakšić Rade Dušan",
+        "additional_info": "Prateći vod 1. bataljona: borac, rođen 1924, Vrtoče, Bos. Petrovac, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010201553",
+        "name": "Jaksić Rade Dušan",
+        "additional_info": "rođ. 1924, Vrtoče, Bos. Petrovac, zemljoradnik, Srbin, u JNA od 1941, a u brigadi od 22. 8. 1942, nosilac »Partizanske spomenice 1941«, član KPJ — 1945, komandir voda.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 139,
+        "pdf_x": 57.0,
+        "pdf_y": 120.0,
+        "pdf_x_end": 323.2,
+        "pdf_y_end": 158.6,
+        "pdf_x_left": 39.9
+      }
+    ]
   },
   {
     "last_name": "Ilić",
@@ -120339,31 +121080,6 @@
         "pdf_y_end": 283.9
       }
     ]
-  },
-  {
-    "last_name": "Jvačević",
-    "middle_name": "Đure",
-    "first_name": "Mićo",
-    "fathers_name": "Đuro",
-    "full_name": "Jvačević Đure Mićo",
-    "additional_info": "borac 2. bataljona, rođen 1922, Prkosi, Bosanski Petrovac, zemljoradnik, Srbin, u NOB lod 1941, član KPJ od 1943, poginuo na Sremskom frontu kod Berkasova 21. januara 1945. godine.",
-    "birth_year": "1922",
-    "pdf_page": 38,
-    "pdf_y": 530.2,
-    "pdf_x": 13.2,
-    "pdf_y_end": 571.8,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100403",
-    "birth_place": "Prkosi, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "21.01.1945",
-    "death_place": "Sremski front, Berkasova",
-    "rank": "borac",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 173.7,
-    "party": "KPJ 1943"
   },
   {
     "last_name": "Jčković",
@@ -122504,16 +123220,35 @@
       {
         "soldier_id": "0010202056",
         "name": "Kerkez Jove Mile",
-        "additional_info": "rod. 1920, Prkosi, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 1942, u brigadi od avgusta 1942, borac. KERKEZ -DE JANO VIĆ Nikole MILKA, rod. 1926, selo Drvar, Titov Drvar, omladinka Srpkinja, u NOB od 27. 7. 1941, u brigadi od 25. 5. 1944, član KPJ 1944, higijeničar u brigadnom sanitetu.",
+        "additional_info": "rod. 1920, Prkosi, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 1942, u brigadi od avgusta 1942, borac.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 178,
         "pdf_x": 83.2,
         "pdf_y": 217.9,
         "pdf_x_end": 348.1,
-        "pdf_y_end": 283.9,
-        "pdf_x_left": 65.9
+        "pdf_y_end": 235.5,
+        "pdf_x_left": 66.6
       }
     ]
+  },
+  {
+    "soldier_id": "0010209004",
+    "last_name": "Kerkez-Dejanović",
+    "middle_name": "Nikole",
+    "first_name": "Milka",
+    "fathers_name": "Nikola",
+    "full_name": "Kerkez-Dejanović Nikole Milka",
+    "additional_info": "rod. 1926, selo Drvar, Titov Drvar, omladinka Srpkinja, u NOB od 27. 7. 1941, u brigadi od 25. 5. 1944, član KPJ 1944, higijeničar u brigadnom sanitetu.",
+    "birth_year": "1926",
+    "pdf_file": "3-krajiska-spisak-boraca.pdf",
+    "pdf_page": 178,
+    "pdf_x": 82.9,
+    "pdf_y": 247.1,
+    "birth_place": "Drvar, Titov Drvar",
+    "party": "KPJ 1944",
+    "pdf_x_end": 347.5,
+    "pdf_y_end": 283.9,
+    "pdf_x_left": 65.9
   },
   {
     "last_name": "Kerkez",
@@ -122856,30 +123591,6 @@
     "party": "SKOJ"
   },
   {
-    "last_name": "Kesio",
-    "middle_name": "Jove",
-    "first_name": "Božo",
-    "fathers_name": "Jovo",
-    "full_name": "Kesio Jove Božo",
-    "additional_info": "borac u intendanturi brigade, rođen 1912, Kolunić, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KP.T od 1941, bio predsednik Opštinskog NOO Bosanski Petrovac, poginuo u proboju Zelengore kod sela Govza 13. juna 1943.",
-    "birth_year": "1912",
-    "pdf_page": 33,
-    "pdf_y": 537.0,
-    "pdf_x": 36.2,
-    "pdf_y_end": 579.3,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100510",
-    "birth_place": "Kolunić, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "13.06.1943",
-    "rank": "borac",
-    "unit_detail": "intendantura",
-    "pdf_x_end": 206.5,
-    "party": "KPJ"
-  },
-  {
     "last_name": "Kesić",
     "middle_name": "Nikole",
     "first_name": "Jovo",
@@ -123157,31 +123868,6 @@
       }
     ],
     "party": "KPJ 1943"
-  },
-  {
-    "last_name": "Kljatić",
-    "middle_name": "Ilije",
-    "first_name": "Uroš",
-    "fathers_name": "Ilija",
-    "full_name": "Kljatić Ilije Uroš",
-    "additional_info": "borac 3. čete 2. bataljona, rođen 1920, Bosanski Osredci, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo na Zelengori 8. juna 1943. godine.",
-    "birth_year": "1920",
-    "pdf_page": 33,
-    "pdf_y": 439.3,
-    "pdf_x": 220.0,
-    "pdf_y_end": 491.7,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100524",
-    "birth_place": "Bosanski Osredci, Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "08.06.1943",
-    "death_place": "Zelengora",
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon",
-    "pdf_x_end": 390.2,
-    "party": "KPJ 1942"
   },
   {
     "last_name": "Knežević",
@@ -124674,7 +125360,7 @@
       {
         "soldier_id": "0010202221",
         "name": "Kospić Luke Đuro",
-        "additional_info": "rod. 1918, Sipovljani, Titov Drvar, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942, do 20. 10. 1944, član KPJ 1942, komandant bataljona. KOŠPIC Pa je MARA, rod. 1918, Sipovljani, Titov Drvar, domaćica, Srpkinja, u NOB od 1941, u brigadi od maja 1943. do septembra 1944, član KPJ 1942, zamenik referenta saniteta pratećeg bataljona VS. iKOSPIĆ Luke SMILJA, rod. 1922, Sipovljani, Titov Drvar, domaćica, Srpkinja, u NOB i brigadi od avgusta 1942, borac.",
+        "additional_info": "rod. 1918, Sipovljani, Titov Drvar, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942, do 20. 10. 1944, član KPJ 1942, komandant bataljona. KOŠPIC Pa je MARA, rod. 1918, Sipovljani, Titov Drvar, domaćica, Srpkinja, u NOB od 1941, u brigadi od maja 1943. do septembra 1944, član KPJ 1942, zamenik referenta saniteta pratećeg bataljona VS. i",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 192,
         "pdf_x": 95.3,
@@ -124691,6 +125377,36 @@
       }
     ],
     "party": "KPJ 1942"
+  },
+  {
+    "soldier_id": "0010209005",
+    "last_name": "Kospić",
+    "middle_name": "Luke",
+    "first_name": "Smilja",
+    "fathers_name": "Luka",
+    "full_name": "Kospić Luke Smilja",
+    "additional_info": "rod. 1922, Sipovljani, Titov Drvar, domaćica, Srpkinja, u NOB i brigadi od avgusta 1942, borac.",
+    "birth_year": "1922",
+    "pdf_file": "3-krajiska-spisak-boraca.pdf",
+    "pdf_page": 193,
+    "pdf_x": 51.6,
+    "pdf_y": 105.1,
+    "birth_place": "Sipovljani, Titov Drvar",
+    "ethnicity": "Srpkinja",
+    "occupation": "domaćica",
+    "rank": "borac",
+    "pdf_x_end": 316.0,
+    "pdf_y_end": 141.9,
+    "pdf_x_left": 34.6,
+    "other_sources": [
+      {
+        "soldier_id": "0010300492",
+        "name": "Kospić Luke Smilja",
+        "additional_info": "1. četa 1. bataljona: borac, rođena 1922, Šipovljani, Drvar, Srpkinja, domaćica.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      }
+    ],
+    "unit_detail": "1. četa, 1. bataljon"
   },
   {
     "last_name": "Košpić-Milić",
@@ -124779,66 +125495,6 @@
     ],
     "birth_place": "Brekinje, Bosanska Bubica",
     "party": "SKOJ 1942, KPJ 1944"
-  },
-  {
-    "last_name": "Krajinović",
-    "middle_name": "Dane",
-    "first_name": "Ilija",
-    "fathers_name": "Dane",
-    "full_name": "Krajinović Dane Ilija",
-    "additional_info": "obaveštajni oficir 1. bataljona, rođen 1920, Suvaja, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo u Srbiji na Jelovoj Gori kod Tometinog Polja 9. septembra 1944, obaveštajni oficir brigade.",
-    "birth_year": "1920",
-    "pdf_page": 39,
-    "pdf_y": 124.4,
-    "pdf_x": 41.0,
-    "pdf_y_end": 199.9,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100594",
-    "birth_place": "Suvaja, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "09.09.1944",
-    "rank": "obaveštajni oficir brigade",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 211.2,
-    "other_sources": [
-      {
-        "soldier_id": "0010202308",
-        "name": "Krajinović Dane Ilija",
-        "additional_info": "rođ. 1920, Suvaja, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 27. 7. 1941., u brigadi od 22. 8. 1942, član KPJ 1942, obaveštajni oficir brigade, poginuo 8. 9. 1944. Jelova Gora — Titovo Užice.",
-        "pdf_file": "3-krajiska-spisak-boraca.pdf",
-        "pdf_page": 197,
-        "pdf_x": 43.2,
-        "pdf_y": 503.7,
-        "pdf_x_end": 309.0,
-        "pdf_y_end": 539.1,
-        "pdf_x_left": 26.8
-      },
-      {
-        "soldier_id": "0010300513",
-        "name": "Krajinović Dane Ilija",
-        "additional_info": "2. četa 1. bataljona: rođen 1920, Suvaja, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1941, poginuo 1944, kod Kosjerića kao član KPJ i obaveštajni oficir brigade.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      },
-      {
-        "soldier_id": "9022010896",
-        "name": "Krajinović (Dane) Ilija",
-        "additional_info": "rođen 1920, Suvaja (Bosanski Petrovac). Srbin, poginuo 1944. u NOBu, Knin",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1015",
-        "source_page": 1015,
-        "ref_book": "zrtve-rata-1964-bih"
-      }
-    ],
-    "death_place": "Kosjerić",
-    "party": "KPJ 1942",
-    "variants": {
-      "death": [
-        {
-          "date": "08.09.1944"
-        }
-      ]
-    }
   },
   {
     "last_name": "Kravić",
@@ -125708,11 +126364,11 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Lajinović",
+    "last_name": "Latinović",
     "middle_name": "Đurađa",
     "first_name": "Bogdan",
     "fathers_name": "Đurađ",
-    "full_name": "Lajinović Đurađa Bogdan",
+    "full_name": "Latinović Đurađa Bogdan",
     "additional_info": "komandir voda u 3. četi 3. bataljona, rođen 1920, Bravsko, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ od septembra 1943, krajem rata komandir čete.",
     "birth_year": "1920",
     "pdf_page": 41,
@@ -125727,7 +126383,32 @@
     "rank": "komandir voda",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 208.2,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010300542",
+        "name": "Latinović Đurađa Bogdan",
+        "additional_info": "3. četa 3. bataljona: desetar, rođen 1919, Bravsko, Bos. Petrovac, Srbin, radnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010202439",
+        "name": "Latinović Đurđa Bogdan",
+        "additional_info": "rođ. 1920, Bravsko, Bos. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942. do marta 1943, član KPJ 1943, komandir voda. LATINOV3Č Mile BOGDAN, rođ. 1921., Rašinovac, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 6. 5. 1942, u brigadi od oktobra 1942, član KPJ 1943, komandir čete.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 209,
+        "pdf_x": 50.2,
+        "pdf_y": 506.3,
+        "pdf_x_end": 315.1,
+        "pdf_y_end": 543.1,
+        "pdf_x_left": 33.4
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Lajić",
@@ -126689,7 +127370,21 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 392.2,
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0010202448",
+        "name": "Latinović Koje Đuro",
+        "additional_info": "rođ. 1909, Bravsko, Bos. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »-Partizanske Spomenice 1941«, u brigadi od 22. 8. 1944, član KPJ 1944, ekonom bataljona.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 211,
+        "pdf_x": 45.8,
+        "pdf_y": 138.6,
+        "pdf_x_end": 311.4,
+        "pdf_y_end": 176.1,
+        "pdf_x_left": 29.2
+      }
+    ]
   },
   {
     "last_name": "Latinović",
@@ -126746,7 +127441,21 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 361.3,
-    "party": "SKOJ, KPJ 1943"
+    "party": "SKOJ, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010209003",
+        "name": "Latinović-Perković Sime Milka",
+        "additional_info": "rođ. 1924, Kapljuvi, Bos. Petrovac, domaćica, Srpkinja, u NOB od 2. 9. 1942, u brigadi od 4. 7. 1943, do 9. 12. 1944, član KPJ 1943, četna bolničarka.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 213,
+        "pdf_x": 50.2,
+        "pdf_y": 94.1,
+        "pdf_x_end": 315.3,
+        "pdf_y_end": 121.3,
+        "pdf_x_left": 33.7
+      }
+    ]
   },
   {
     "last_name": "Latić",
@@ -127010,31 +127719,6 @@
     "party": "KPJ 1943"
   },
   {
-    "last_name": "Letjć",
-    "middle_name": "Todora",
-    "first_name": "Pero",
-    "fathers_name": "Todor",
-    "full_name": "Letjć Todora Pero",
-    "additional_info": "borac 1. čete 1. bataljona, rođen 1920, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1942, poginuo na Sremskom frontu kod sela Berak 9. decembra 1944, zamenik političkog komesara čete.",
-    "birth_year": "1920",
-    "pdf_page": 43,
-    "pdf_y": 208.0,
-    "pdf_x": 225.3,
-    "pdf_y_end": 271.2,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100673",
-    "birth_place": "Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "09.12.1944",
-    "death_place": "na Sremskom frontu kod sela Berak",
-    "rank": "zamenik političkog komesara čete",
-    "unit_detail": "1. četa, 1. bataljon",
-    "pdf_x_end": 395.8,
-    "party": "KPJ 1942"
-  },
-  {
     "last_name": "Ličina",
     "middle_name": "Petra",
     "first_name": "Đuro",
@@ -127233,30 +127917,6 @@
     "party": "SKOJ 1942, KPJ 1943"
   },
   {
-    "last_name": "Lnkelić",
-    "middle_name": "Nikole",
-    "first_name": "Desa",
-    "fathers_name": "Nikola",
-    "full_name": "Lnkelić Nikole Desa",
-    "additional_info": "bolničarka, rođena 1924, Vrtoče, Drvar, domaćica, Srpkinja, u NOB od aprila 1942, član SKOJ-a od 1942, poginula u Drvaru 25. maja 1944. godine.",
-    "birth_year": "1924",
-    "pdf_page": 24,
-    "pdf_y": 538.8,
-    "pdf_x": 12.5,
-    "pdf_y_end": 569.6,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100680",
-    "birth_place": "Vrtoče, Drvar",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "death_type": "poginuo",
-    "death_date": "25.05.1944",
-    "death_place": "Drvar",
-    "rank": "bolničarka",
-    "pdf_x_end": 174.3,
-    "party": "SKOJ 1942"
-  },
-  {
     "last_name": "Lojić",
     "middle_name": "Rada",
     "first_name": "Savo",
@@ -127417,11 +128077,11 @@
     }
   },
   {
-    "last_name": "Lubor",
+    "last_name": "Grubor",
     "middle_name": "Sime",
     "first_name": "Đuro",
     "fathers_name": "Simo",
-    "full_name": "Lubor Sime Đuro",
+    "full_name": "Grubor Sime Đuro",
     "additional_info": "kurir štaba brigade, rođen 1919, Drvar, radnik, Srbin, NOB od 1941, član KPJ od 1943.",
     "birth_year": "1919",
     "pdf_page": 22,
@@ -127435,7 +128095,33 @@
     "occupation": "radnik",
     "rank": "kurir",
     "pdf_x_end": 169.1,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010300281",
+        "name": "Grubor Sime Đuro",
+        "additional_info": "Zaštitni vod (kurirski): kurir, rođen 1922, Drvar, Srbin, radnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010201357",
+        "name": "Grubor Sime Đuro",
+        "additional_info": "rođ. 1919, Drvar, radnik, Srbin, u NOB od 27. 7. 1942, nosilac »Partizanske spomenice 1941«, a u brigadi od 22. 8. 1942. do 9. 6. 1943, kurir u štabu brigade.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 122,
+        "pdf_x": 77.1,
+        "pdf_y": 313.6,
+        "pdf_x_end": 341.3,
+        "pdf_y_end": 340.8,
+        "pdf_x_left": 60.3
+      }
+    ],
+    "unit_detail": "zaštitni vod",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Lugonja",
@@ -128141,7 +128827,7 @@
       {
         "soldier_id": "0010202668",
         "name": "Malešević Nikole Stanko",
-        "additional_info": "rođ. 1922, Veliki Stjenjani, Bos. Petrovac, u NOB od 1941, u brigadi od 22. 8. 1942, član KPJ 1944, komesar bataljoma.",
+        "additional_info": "rođ. 1922, Veliki Stjenjani, Bos. Petrovac, u NOB od 1941, u brigadi od 22. 8. 1942, član KPJ 1944, komesar bataljona.",
         "pdf_file": "3-krajiska-spisak-boraca.pdf",
         "pdf_page": 229,
         "pdf_x": 40.2,
@@ -129292,28 +129978,6 @@
     "party": "KPJ 1942"
   },
   {
-    "last_name": "Matkić",
-    "middle_name": "Sime",
-    "first_name": "Branko",
-    "fathers_name": "Simo",
-    "full_name": "Matkić Sime Branko",
-    "additional_info": "borac, rođen 1923, Majkić Japra, Sanski Most, Srbin, u NOB od 1942, poginuo na Sutjesci juna 1943. godine.",
-    "birth_year": "1923",
-    "pdf_page": 44,
-    "pdf_y": 501.9,
-    "pdf_x": 7.2,
-    "pdf_y_end": 543.5,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100760",
-    "birth_place": "Majkić Japra, Sanski Most",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "06.1943",
-    "death_place": "Sutjeska",
-    "rank": "borac",
-    "pdf_x_end": 177.3
-  },
-  {
     "last_name": "Medaković",
     "middle_name": "Mile",
     "first_name": "Bogdan",
@@ -129776,44 +130440,6 @@
       }
     ],
     "party": "KPJ 1945"
-  },
-  {
-    "last_name": "Miljević",
-    "middle_name": "Mile",
-    "first_name": "Desa",
-    "fathers_name": "Mile",
-    "full_name": "Miljević Mile Desa",
-    "additional_info": "bolničarka, rođena 1925, Podlug, Sanski Most, domaćica, Srpkinja, u NOB od januara 1943, član SKOJ-a, poginula u bici na Sutjesci juna 1943. godine.",
-    "birth_year": "1925",
-    "pdf_page": 49,
-    "pdf_y": 102.5,
-    "pdf_x": 39.7,
-    "pdf_y_end": 155.8,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100777",
-    "birth_place": "Podlug, Sanski Most",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "death_type": "poginuo",
-    "death_date": "06.1943",
-    "rank": "bolničarka",
-    "pdf_x_end": 209.7,
-    "other_sources": [
-      {
-        "soldier_id": "0010203073",
-        "name": "Miljević Mile Desa",
-        "additional_info": "rođ. 1925, Podlug, Sanski Most, domaćica, Srpkinja, u NOB od 6. 3. 1942, u brigadi od 1942. do juna 1943, bila član SKOJ-a, bolničarka, poginula juna 1943. na Sutjesci.",
-        "pdf_file": "3-krajiska-spisak-boraca.pdf",
-        "pdf_page": 264,
-        "pdf_x": 78.9,
-        "pdf_y": 420.4,
-        "pdf_x_end": 344.1,
-        "pdf_y_end": 457.2,
-        "pdf_x_left": 62.1
-      }
-    ],
-    "death_place": "Sutjeska",
-    "party": "SKOJ"
   },
   {
     "last_name": "Miljević",
@@ -131262,30 +131888,6 @@
     "party": "KPJ 1943"
   },
   {
-    "last_name": "Odrinić",
-    "middle_name": "Rada",
-    "first_name": "Milka",
-    "fathers_name": "Rade",
-    "full_name": "Odrinić Rada Milka",
-    "additional_info": "zvana Mala Milkica; četna bolničarka u 2. bataljonu, rođena 1924, Vidari, Bihać, domaćica, Srpkinja, u NOB od januara 1943, od zadobijenih rana umrla u Beogradu 15. oktobra 1944. godine.",
-    "birth_year": "1924",
-    "pdf_page": 50,
-    "pdf_y": 532.6,
-    "pdf_x": 16.1,
-    "pdf_y_end": 575.0,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100826",
-    "birth_place": "Vidari, Bihać",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "death_type": "umro",
-    "death_date": "15.10.1944",
-    "death_place": "Beograd",
-    "rank": "bolničarka",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 177.6
-  },
-  {
     "last_name": "Ojkolj",
     "middle_name": "Milana",
     "first_name": "Aleksandar",
@@ -131627,11 +132229,11 @@
     }
   },
   {
-    "last_name": "Ovačević",
+    "last_name": "Kovačević",
     "middle_name": "Mila",
     "first_name": "Đuran",
     "fathers_name": "Mile",
-    "full_name": "Ovačević Mila Đuran",
+    "full_name": "Kovačević Mila Đuran",
     "additional_info": "zamenik komandira 1. čete 3. bataljona, rođen 1916, Bukovača, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, član KPJ od 1942, pred kraj rata komandant bataljona. Odlikovan Ordenom narodnog heroja.",
     "birth_year": "1916",
     "pdf_page": 38,
@@ -131647,30 +132249,6 @@
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 173.7,
     "party": "KPJ 1942"
-  },
-  {
-    "last_name": "Ovačević",
-    "middle_name": "Koje",
-    "first_name": "Đuro",
-    "fathers_name": "Kojo",
-    "full_name": "Ovačević Koje Đuro",
-    "additional_info": "borac 4. bataljona, rođen 1924, Prkosi, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1941, poginuo na Zelengori juna 1943.",
-    "birth_year": "1924",
-    "pdf_page": 38,
-    "pdf_y": 379.0,
-    "pdf_x": 10.3,
-    "pdf_y_end": 420.6,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010100840",
-    "birth_place": "Prkosi, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "06.1943",
-    "death_place": "Zelengora",
-    "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 174.1
   },
   {
     "last_name": "Ovković",
@@ -131695,11 +132273,11 @@
     "party": "SKOJ 1942, KPJ 1944"
   },
   {
-    "last_name": "Ovković",
+    "last_name": "Novković",
     "middle_name": "Obrada",
     "first_name": "Savo",
     "fathers_name": "Obrad",
-    "full_name": "Ovković Obrada Savo",
+    "full_name": "Novković Obrada Savo",
     "additional_info": "intendant 3. bataljona, rođen 1911, Bravsko, Bosanski Petrovac, šumski radnik, Srbin, u NOB od 1941, član KPJ od 1943, krajem rata intendant brigade.",
     "birth_year": "1911",
     "pdf_page": 52,
@@ -131714,7 +132292,21 @@
     "rank": "intendant",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 169.9,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010203497",
+        "name": "Novković Obrada Savo",
+        "additional_info": "rođ. 1911, Bravsko, Bos. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942, član KPJ 1943, intendant brigade.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 291,
+        "pdf_x": 50.9,
+        "pdf_y": 506.1,
+        "pdf_x_end": 315.6,
+        "pdf_y_end": 542.9,
+        "pdf_x_left": 34.1
+      }
+    ]
   },
   {
     "last_name": "Ovuka",
@@ -133701,6 +134293,18 @@
         "name": "Poznić Luke Jovo",
         "additional_info": "Brigadna intendantura: rođen 1925, Risovac, Krnjeuša, Bos. Petrovac, Srbin, zemljoradnik.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010203968",
+        "name": "Poznić Luke Jovo",
+        "additional_info": "rođ. 1925, Risovac, Bos. Petrovac, radnik, Srbin, u NOB od 8. 12. 1941, u brigadi od 22. 8. 1942, član KPJ 1944, komandir voda.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 326,
+        "pdf_x": 82.7,
+        "pdf_y": 99.3,
+        "pdf_x_end": 347.4,
+        "pdf_y_end": 127.0,
+        "pdf_x_left": 66.1
       }
     ],
     "party": "SKOJ 1941, KPJ 1944"
@@ -136580,11 +137184,11 @@
     "party": "KPJ 1944"
   },
   {
-    "last_name": "Rgić",
+    "last_name": "Grgić",
     "middle_name": "Đure",
     "first_name": "Dušan",
     "fathers_name": "Đuro",
-    "full_name": "Rgić Đure Dušan",
+    "full_name": "Grgić Đure Dušan",
     "additional_info": "borac, rođen 1929, Rakovica, Bosanska Dubica, đak, Srbin, u NOB od avgusta 1942, član SKOJ-a od 1944. godine.",
     "birth_year": "1929",
     "pdf_page": 22,
@@ -136598,7 +137202,21 @@
     "occupation": "đak",
     "rank": "borac",
     "pdf_x_end": 168.1,
-    "party": "SKOJ 1944"
+    "party": "SKOJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0010201314",
+        "name": "Grgić Đure Dušan",
+        "additional_info": "rođ. 1929., Rakovica, Bos. Dubica, BiH učenik, Srbin, u NOB od avgusta 1942., a u brigadi od novembra 1942., član SKOJ-a od 1944., komandir odeljenja.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 120,
+        "pdf_x": 58.4,
+        "pdf_y": 366.7,
+        "pdf_x_end": 321.8,
+        "pdf_y_end": 392.4,
+        "pdf_x_left": 39.9
+      }
+    ]
   },
   {
     "last_name": "Rikić",
@@ -137948,31 +138566,6 @@
     "party": "KPJ"
   },
   {
-    "last_name": "Rubiša",
-    "middle_name": "Jandrije",
-    "first_name": "Đuro",
-    "fathers_name": "Jandrija",
-    "full_name": "Rubiša Jandrije Đuro",
-    "additional_info": "borac 2. čete 1. bataljona, rođen 1924, Vedro Polje, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1942, član KPJ, poginuo kod Prače, na pruzi Sarajevo -Višegrad, 17. jula 1943. godine.",
-    "birth_year": "1924",
-    "pdf_page": 22,
-    "pdf_y": 231.2,
-    "pdf_x": 6.2,
-    "pdf_y_end": 295.6,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010101099",
-    "birth_place": "Vedro Polje, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "17.07.1943",
-    "death_place": "kod Prače, na pruzi Sarajevo -Višegrad",
-    "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon",
-    "pdf_x_end": 168.0,
-    "party": "KPJ"
-  },
-  {
     "last_name": "Rudić",
     "middle_name": "Đorđa",
     "first_name": "Manojlo-Maniša",
@@ -138068,11 +138661,11 @@
     "pdf_x_end": 399.3
   },
   {
-    "last_name": "Ržina",
+    "last_name": "Vržina",
     "middle_name": "Nikole",
     "first_name": "Simo",
     "fathers_name": "Nikola",
-    "full_name": "Ržina Nikole Simo",
+    "full_name": "Vržina Nikole Simo",
     "additional_info": "komandir voda u 2. četi 1. bataljona, rođen 1913, Bjelaj, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ od jula 1943, krajem rata zamenik komandira čete.",
     "birth_year": "1913",
     "pdf_page": 84,
@@ -138087,7 +138680,32 @@
     "rank": "komandir voda",
     "unit_detail": "2. četa, 1. bataljon",
     "pdf_x_end": 168.0,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010301145",
+        "name": "Vržina Nikole Simo",
+        "additional_info": "2. četa 1. bataljona: vodnik, rođen 1915, Bjelaj, Bos. Petrovac, Srbin, radnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010205500",
+        "name": "Vržina Nikole Simo",
+        "additional_info": "rod. 1913., Bjelaj, Bos. Petrovac, radnik, Srbin, u NOB 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942, član KPJ od jula 1943, zamenik komandira čete.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 454,
+        "pdf_x": 82.4,
+        "pdf_y": 430.3,
+        "pdf_x_end": 347.0,
+        "pdf_y_end": 466.3,
+        "pdf_x_left": 65.1
+      }
+    ],
+    "variants": {
+      "born": [
+        "1915"
+      ]
+    }
   },
   {
     "last_name": "Ržina",
@@ -138644,7 +139262,21 @@
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 359.7,
-    "party": "SKOJ 1943, KPJ 1943"
+    "party": "SKOJ 1943, KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010204505",
+        "name": "Sarajlić Tanasije Đurađ",
+        "additional_info": "rod. 1923, Gornji Gorivci, Prijedor, BiH, u NOB od 1941, nosilac »partizanske spomenice 1941«, a u brigadi od februara 1943, član KPJ od 1943, zamenik komandanta bataljona.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 371,
+        "pdf_x": 51.9,
+        "pdf_y": 338.5,
+        "pdf_x_end": 317.0,
+        "pdf_y_end": 375.3,
+        "pdf_x_left": 35.3
+      }
+    ]
   },
   {
     "last_name": "Savič",
@@ -141467,11 +142099,11 @@
     "party": "KPJ 1943"
   },
   {
-    "last_name": "Toninić",
+    "last_name": "Trninić",
     "middle_name": "Gaje",
     "first_name": "Mile",
     "fathers_name": "Gajo",
-    "full_name": "Toninić Gaje Mile",
+    "full_name": "Trninić Gaje Mile",
     "additional_info": "borac 2. čete 4. bataljona, rođen 1921, Trninić Breg, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1943, poginuo kod Sinja 22. septembra 1943. godine.",
     "birth_year": "1921",
     "pdf_page": 80,
@@ -141489,7 +142121,35 @@
     "rank": "borac",
     "unit_detail": "2. četa, 4. bataljon",
     "pdf_x_end": 360.3,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0010301099",
+        "name": "Trninic Gaje Mile",
+        "additional_info": "2. četa 4. bataljona: borac, rođen 1921, Trninića-Breg, Drvar, Srbin, radnik, u NOB od 1941, poginuo 1943. kod Sinja kao član KPJ.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010205247",
+        "name": "Trninić Gaje Mile",
+        "additional_info": "rođ. 192,1, Trninić Brijeg, T. Drvar, radnik, Srbin, u NOB 1941., poginuo 1943. kod Sinja, član KPJ.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 436,
+        "pdf_x": 82.0,
+        "pdf_y": 104.8,
+        "pdf_x_end": 346.7,
+        "pdf_y_end": 122.6,
+        "pdf_x_left": 65.7
+      },
+      {
+        "soldier_id": "9022015769",
+        "name": "Trninić (Gajo) Mile",
+        "additional_info": "rođen 1920, Trninić Brijeg (Drvar). Srbin, poginuo 1943. u NOBu, Sinj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1301",
+        "source_page": 1301,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Torbica",
@@ -142544,43 +143204,6 @@
     "party": "SKOJ 1942"
   },
   {
-    "last_name": "Ugrenović",
-    "middle_name": "Todora",
-    "first_name": "Mićo",
-    "fathers_name": "Todor",
-    "full_name": "Ugrenović Todora Mićo",
-    "additional_info": "desetar, rođen 1922, Hašani, Bosanska Krupa, zemljoradnik, Srbin, u NOB od oktobra 1942, poginuo u bici na Sutjesci juna 1943. godine.",
-    "birth_year": "1922",
-    "pdf_page": 81,
-    "pdf_y": 211.0,
-    "pdf_x": 213.0,
-    "pdf_y_end": 263.4,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010101293",
-    "birth_place": "Hašani, Bosanska Krupa",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "06.1943",
-    "rank": "desetar",
-    "pdf_x_end": 383.2,
-    "other_sources": [
-      {
-        "soldier_id": "0010205287",
-        "name": "Ugrenović Tođora Mićo",
-        "additional_info": "rođ. 1922, Hašani, Bos. Krupa, zemljoradnik, Srbin, u NOB i brigadi od oktobra 1942, komandir odeljenja, poginuo juna 1943. na Sutjesci.",
-        "pdf_file": "3-krajiska-spisak-boraca.pdf",
-        "pdf_page": 439,
-        "pdf_x": 54.0,
-        "pdf_y": 441.5,
-        "pdf_x_end": 318.9,
-        "pdf_y_end": 468.7,
-        "pdf_x_left": 37.2
-      }
-    ],
-    "death_place": "Sutjeska"
-  },
-  {
     "last_name": "Ugrica",
     "middle_name": "Vlade",
     "first_name": "Bogdan",
@@ -143284,36 +143907,11 @@
     "party": "SKOJ 1942, KPJ 1943"
   },
   {
-    "last_name": "Vežević",
-    "middle_name": "Stevana",
-    "first_name": "Stevo",
-    "fathers_name": "Stevan",
-    "full_name": "Vežević Stevana Stevo",
-    "additional_info": "zvani Cejin; borac 3. čete 2. bataljona, rođen 1923, Mali Cvjetnić, Drvar, radnik, Srbin, u NOB od 1941, član KPJ od 1943, poginuo kod Lučkih Koliba na Zelengori 9. juna 1943. godine.",
-    "birth_year": "1923",
-    "pdf_page": 36,
-    "pdf_y": 513.9,
-    "pdf_x": 13.0,
-    "pdf_y_end": 577.1,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010101319",
-    "birth_place": "Mali Cvjetnić, Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "09.06.1943",
-    "death_place": "kod Lučkih Koliba na Zelengori",
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon",
-    "pdf_x_end": 174.5,
-    "party": "KPJ 1943"
-  },
-  {
-    "last_name": "Viandić",
+    "last_name": "Mandić",
     "middle_name": "Nikole",
     "first_name": "Milka",
     "fathers_name": "Nikola",
-    "full_name": "Viandić Nikole Milka",
+    "full_name": "Mandić Nikole Milka",
     "additional_info": "borac 1. čete 1. bataljona, rođena 1922, Vodenica, Bosanski Petrovac, domaćica, Srpkinja, u NOB od 1942, član SKOJ-a od 1942. Umrla 1983. u Banatskom Velikom Selu.",
     "birth_year": "1922",
     "pdf_page": 46,
@@ -143331,7 +143929,21 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 185.8,
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0010202687",
+        "name": "Mandić Nikole Milka",
+        "additional_info": "rođ. 1922, Vodenica, Bos. Petrovac, omladinka, Srpkinja, u NOB od 1943, u brigadi od avgusta 1943, član SKOJ-a 1942.. borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 230,
+        "pdf_x": 78.7,
+        "pdf_y": 509.5,
+        "pdf_x_end": 343.3,
+        "pdf_y_end": 535.7,
+        "pdf_x_left": 61.9
+      }
+    ]
   },
   {
     "last_name": "Vidljinović",
@@ -145056,9 +145668,20 @@
         "pdf_x_end": 347.5,
         "pdf_y_end": 432.0,
         "pdf_x_left": 65.6
+      },
+      {
+        "soldier_id": "0010301174",
+        "name": "Zrilić Bogdana Dragan",
+        "additional_info": "1. četa 2. bataljona: borac, rođen 1923, Prkosi, Bos. Petrovac, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
       }
     ],
-    "party": "SKOJ 1942, KPJ 1945"
+    "party": "SKOJ 1942, KPJ 1945",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Zrilić",
@@ -147133,7 +147756,7 @@
       {
         "soldier_id": "0010301270",
         "name": "Đurica Mile Đuro",
-        "additional_info": "Prateći vod 1. bataljona: borae, rođen 1923, Palučci, Drvar, Srbin, radnik.",
+        "additional_info": "Prateći vod 1. bataljona: borac, rođen 1923, Palučci, Drvar, Srbin, radnik.",
         "source_url": "https://znaci.org/00001/31_263.htm"
       }
     ],
@@ -151570,42 +152193,6 @@
     "pdf_x_end": 300.5
   },
   {
-    "last_name": "Bates",
-    "middle_name": "Bože",
-    "first_name": "Milan",
-    "fathers_name": "Božo",
-    "full_name": "Bates Bože Milan",
-    "additional_info": "rođ. 1923, Vrtoče, B. Petrovac, radnik, Jugosloven, u NOB od 27. 7. 1941, u brigadi od 22. 8. 1942, član KPJ od 1944, borac.",
-    "birth_year": "1923",
-    "pdf_page": 25,
-    "pdf_y": 355.2,
-    "pdf_x": 55.5,
-    "pdf_y_end": 381.5,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200279",
-    "birth_place": "Vrtoče, B. Petrovac",
-    "ethnicity": "Jugosloven",
-    "occupation": "radnik",
-    "rank": "borac",
-    "pdf_x_end": 319.1,
-    "pdf_x_left": 37.8,
-    "other_sources": [
-      {
-        "soldier_id": "0010300091",
-        "name": "Bates Bože Milan",
-        "additional_info": "1. četa 4. bataljona: borac, rođen 1921, Vrtoče, Bos. Petrovac, Srbin, radnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "1. četa, 4. bataljon",
-    "party": "KPJ 1944",
-    "variants": {
-      "born": [
-        "1921"
-      ]
-    }
-  },
-  {
     "last_name": "Batinić",
     "middle_name": "",
     "first_name": "Miladin",
@@ -152961,42 +153548,6 @@
     "pdf_x_end": 345.1,
     "pdf_x_left": 63.2,
     "party": "KPJ 1943"
-  },
-  {
-    "last_name": "Bjelić",
-    "middle_name": "Alekse",
-    "first_name": "Bogdan",
-    "fathers_name": "Aleksa",
-    "full_name": "Bjelić Alekse Bogdan",
-    "additional_info": "rođ. 1922, Bravsko, B. Petrovac, zemljoradnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942. do 23. 1. 45, član KPJ od 1943, komandant bataljona.",
-    "birth_year": "1922",
-    "pdf_page": 30,
-    "pdf_y": 215.0,
-    "pdf_x": 79.8,
-    "pdf_y_end": 251.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200359",
-    "birth_place": "Bravsko, B. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "komandant bataljona",
-    "pdf_x_end": 344.2,
-    "pdf_x_left": 63.0,
-    "other_sources": [
-      {
-        "soldier_id": "0010300099",
-        "name": "Bjelić Alekse Bogdan",
-        "additional_info": "zvani Bobota; 3. četa 3. bataljona: borac, rođen 1921, Bravsko, Bos. Petrovac, Srbin, zemljoradnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "3. četa, 3. bataljon",
-    "party": "KPJ 1943",
-    "variants": {
-      "born": [
-        "1921"
-      ]
-    }
   },
   {
     "last_name": "Bjelić",
@@ -154627,30 +155178,6 @@
     "party": "KPJ 1945"
   },
   {
-    "last_name": "Bosanav",
-    "middle_name": "Dane",
-    "first_name": "Radosav",
-    "fathers_name": "Dane",
-    "full_name": "Bosanav Dane Radosav",
-    "additional_info": "rođ. 1918, Ribničko, Bjelovar, zemljoradnik, Srbin, u NOB i brigadi od 28. U. 1944, borac, poginuo 22. 4. 1945. u Dragovcu.",
-    "birth_year": "1918",
-    "pdf_page": 38,
-    "pdf_y": 317.5,
-    "pdf_x": 74.4,
-    "pdf_y_end": 344.7,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200475",
-    "birth_place": "Ribničko, Bjelovar",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "22.04.1945",
-    "death_place": "Dragovcu",
-    "rank": "borac",
-    "pdf_x_end": 339.1,
-    "pdf_x_left": 57.3
-  },
-  {
     "last_name": "Bosiljčić",
     "middle_name": "Ilije",
     "first_name": "Milka",
@@ -155961,51 +156488,6 @@
     "pdf_x_end": 305.9,
     "pdf_x_left": 24.4,
     "party": "SKOJ 1942"
-  },
-  {
-    "last_name": "Bulajić",
-    "middle_name": "Jovana",
-    "first_name": "Mile",
-    "fathers_name": "Jovan",
-    "full_name": "Bulajić Jovana Mile",
-    "additional_info": "rođ. 1919, Brestovac, B. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 28. 8. 1942, član KPJ od 1942, zamenik komandanta brigade, poginuo 1945.",
-    "birth_year": "1919",
-    "pdf_page": 46,
-    "pdf_y": 198.7,
-    "pdf_x": 75.9,
-    "pdf_y_end": 234.7,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200584",
-    "birth_place": "Brestovac, B. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "rank": "zamenik komandanta brigade",
-    "pdf_x_end": 341.1,
-    "pdf_x_left": 59.8,
-    "other_sources": [
-      {
-        "soldier_id": "0010300142",
-        "name": "Bulajić Jovana Mile",
-        "additional_info": "2. četa 4. bataljona: komandir voda, rođen 1919, Brestovac, Vođenica, Bos. Petrovac, Srbin, radnik, u NOB od 1941, član KPJ od 1942; kao zamenik komandanta brigade-major, tragično nastradao 1945.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      },
-      {
-        "soldier_id": "9022009848",
-        "name": "Bulajić (Jovo) Mile",
-        "additional_info": "rođen 1919, Brestovac (Bosanski Petrovac). Srbin, poginuo 1945. u NOBu, Ajdovščina",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=974",
-        "source_page": 974,
-        "ref_book": "zrtve-rata-1964-bih"
-      }
-    ],
-    "unit_detail": "2. četa, 4. bataljon",
-    "party": "KPJ 1942",
-    "death_place": "Ajdovščina",
-    "borrowed": [
-      "death_place"
-    ]
   },
   {
     "last_name": "Bulajić",
@@ -160446,36 +160928,6 @@
     "pdf_x_end": 261.4
   },
   {
-    "last_name": "Despanić",
-    "middle_name": "Ile",
-    "first_name": "Savo",
-    "fathers_name": "Ile",
-    "full_name": "Despanić Ile Savo",
-    "additional_info": "rođ. 1913, Gubin, Livno, zemljoradnik, Srbin, u NOB i brigadi od 1942, borac.",
-    "birth_year": "1913",
-    "pdf_page": 75,
-    "pdf_y": 188.7,
-    "pdf_x": 34.4,
-    "pdf_y_end": 206.4,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200883",
-    "birth_place": "Gubin, Livno",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 299.1,
-    "pdf_x_left": 17.2,
-    "other_sources": [
-      {
-        "soldier_id": "0010300170",
-        "name": "Despanić Ile Savo",
-        "additional_info": "2. četa 1. bataljona: borac, rođen 1913. Gubin kod Livna, Srbin, zemljoradnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "2. četa, 1. bataljon"
-  },
-  {
     "last_name": "Despot",
     "middle_name": "Pere",
     "first_name": "Milan",
@@ -160685,28 +161137,6 @@
     "ethnicity": "Italijan",
     "pdf_x_end": 353.3,
     "pdf_x_left": 71.2
-  },
-  {
-    "last_name": "Di Magio",
-    "middle_name": "",
-    "first_name": "Cosimo",
-    "fathers_name": "",
-    "full_name": "Di Magio Cosimo",
-    "additional_info": "rod. Castellaneta, Taranto, Italijan, borac, u NOB i brigadi od 1943, poginuo u Sremu.",
-    "birth_year": "",
-    "pdf_page": 76,
-    "pdf_y": 225.9,
-    "pdf_x": 89.2,
-    "pdf_y_end": 243.6,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200900",
-    "birth_place": "Castellaneta, Taranto",
-    "ethnicity": "Italijan",
-    "death_type": "poginuo",
-    "death_place": "Srem",
-    "rank": "borac",
-    "pdf_x_end": 353.3,
-    "pdf_x_left": 71.5
   },
   {
     "last_name": "Dikanović",
@@ -161214,7 +161644,16 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 341.5,
-    "pdf_x_left": 60.5
+    "pdf_x_left": 60.5,
+    "other_sources": [
+      {
+        "soldier_id": "0010300220",
+        "name": "Dizija Ilije Ilija",
+        "additional_info": "3. četa 4. bataljona: borac, rođen 1922, Zlopolje, Bihać, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      }
+    ],
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "last_name": "Dizija",
@@ -163406,7 +163845,7 @@
     "first_name": "Nikola",
     "fathers_name": "Toma",
     "full_name": "Fistanić Tome Nikola",
-    "additional_info": "rođ. 1924., Zastražišće, Hvar, učenik, Hrvat, u NOB od 1942., u brigadi od 1943., do 1944., član SKJ od 1944., borac. FISTANIC Juraja Tomislav, rod. 1925., Zastražišće, Hvar, učenik, Hrvat, u NOB i brigadi od 20. 9. 1943., borac, poginuo.",
+    "additional_info": "rođ. 1924., Zastražišće, Hvar, učenik, Hrvat, u NOB od 1942., u brigadi od 1943., do 1944., član SKJ od 1944., borac.",
     "birth_year": "1924",
     "pdf_page": 104,
     "pdf_y": 508.3,
@@ -163414,13 +163853,13 @@
     "pdf_y_end": 535.0,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010201107",
+    "death_type": "poginuo",
+    "pdf_x_end": 347.2,
+    "pdf_x_left": 64.6,
     "birth_place": "Zastražišće, Hvar",
     "ethnicity": "Hrvat",
     "occupation": "učenik",
-    "death_type": "poginuo",
-    "rank": "borac",
-    "pdf_x_end": 347.2,
-    "pdf_x_left": 64.6
+    "rank": "borac"
   },
   {
     "last_name": "Fišić",
@@ -163560,11 +163999,11 @@
     "pdf_x_left": 38.8
   },
   {
-    "last_name": "Fr",
+    "last_name": "Frassetto",
     "middle_name": "",
-    "first_name": "Assetto",
+    "first_name": "",
     "fathers_name": "",
-    "full_name": "Fr Assetto",
+    "full_name": "Frassetto",
     "additional_info": "Italija, Italijan, u NOB i brigadi od 1943.",
     "birth_year": "",
     "pdf_page": 106,
@@ -163594,30 +164033,6 @@
     "ethnicity": "Slovenac",
     "rank": "borac",
     "pdf_x_end": 321.1
-  },
-  {
-    "last_name": "Francević",
-    "middle_name": "Ante",
-    "first_name": "Juraj",
-    "fathers_name": "Ante",
-    "full_name": "Francević Ante Juraj",
-    "additional_info": "rođ. 1923., Hvar, SR Hrvatska, ribar, Hrvat, u NOB i brigadi od 21. 7. 1943., delegat voda, poginuo 12. 4. 1945. kod Sotina.",
-    "birth_year": "1923",
-    "pdf_page": 106,
-    "pdf_y": 99.3,
-    "pdf_x": 80.5,
-    "pdf_y_end": 126.5,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201120",
-    "birth_place": "Hvar",
-    "ethnicity": "Hrvat",
-    "occupation": "ribar",
-    "death_type": "poginuo",
-    "death_date": "12.04.1945",
-    "death_place": "Sotin",
-    "rank": "delegat voda",
-    "pdf_x_end": 344.7,
-    "pdf_x_left": 63.5
   },
   {
     "last_name": "Franchi",
@@ -164524,29 +164939,6 @@
     "rank": "borac",
     "pdf_x_end": 342.0,
     "pdf_x_left": 60.0
-  },
-  {
-    "last_name": "Gavanga",
-    "middle_name": "",
-    "first_name": "Francesco",
-    "fathers_name": "",
-    "full_name": "Gavanga Francesco",
-    "additional_info": "Madelana, Ferrara, Italija, Italijan, u NOB i brigadi od 1943., borac, poginuo 18. 4. 1944. u Bosni.",
-    "birth_year": "",
-    "pdf_page": 110,
-    "pdf_y": 97.8,
-    "pdf_x": 78.2,
-    "pdf_y_end": 115.2,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201171",
-    "birth_place": "Madelana, Ferrara, Italija",
-    "ethnicity": "Italijan",
-    "death_type": "poginuo",
-    "death_date": "18.04.1944",
-    "death_place": "Bosna",
-    "rank": "borac",
-    "pdf_x_end": 343.1,
-    "pdf_x_left": 61.1
   },
   {
     "last_name": "Gavrilović",
@@ -165590,28 +165982,6 @@
     "death_place": "Bijeljina, Bosna"
   },
   {
-    "last_name": "Grabovac",
-    "middle_name": "Vice",
-    "first_name": "Petar",
-    "fathers_name": "Vice",
-    "full_name": "Grabovac Vice Petar",
-    "additional_info": "rod. 1922., Proležac, Imotski, Hrvat, u NOB i brigadi od 19. 9. 1943., komandir odeljenja, poginuo 6. 5. 1945. Topolovac.",
-    "birth_year": "1922",
-    "pdf_page": 114,
-    "pdf_y": 303.5,
-    "pdf_x": 86.6,
-    "pdf_y_end": 329.3,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201244",
-    "birth_place": "Proležac, Imotski",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "06.05.1945",
-    "rank": "komandir odeljenja",
-    "pdf_x_end": 350.6,
-    "pdf_x_left": 68.6
-  },
-  {
     "last_name": "Gradina",
     "middle_name": "Makse",
     "first_name": "Makso",
@@ -166204,27 +166574,6 @@
     "pdf_x_left": 39.7
   },
   {
-    "last_name": "Grgić",
-    "middle_name": "Đure",
-    "first_name": "Dušan",
-    "fathers_name": "Đuro",
-    "full_name": "Grgić Đure Dušan",
-    "additional_info": "rođ. 1929., Rakovica, Bos. Dubica, BiH učenik, Srbin, u NOB od avgusta 1942., a u brigadi od novembra 1942., član SKOJ-a od 1944., komandir odeljenja.",
-    "birth_year": "1929",
-    "pdf_page": 120,
-    "pdf_y": 366.7,
-    "pdf_x": 58.4,
-    "pdf_y_end": 392.4,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201314",
-    "birth_place": "Rakovica, Bos. Dubica, BiH",
-    "ethnicity": "Srbin",
-    "rank": "komandir odeljenja",
-    "pdf_x_end": 321.8,
-    "pdf_x_left": 39.9,
-    "party": "SKOJ 1944"
-  },
-  {
     "last_name": "Grimaldo",
     "middle_name": "Domenico",
     "first_name": "Vincenzo",
@@ -166687,41 +167036,6 @@
     "unit_detail": "2. četa, 2. bataljon"
   },
   {
-    "last_name": "Grubor",
-    "middle_name": "Sime",
-    "first_name": "Đuro",
-    "fathers_name": "Simo",
-    "full_name": "Grubor Sime Đuro",
-    "additional_info": "rođ. 1919, Drvar, radnik, Srbin, u NOB od 27. 7. 1942, nosilac »Partizanske spomenice 1941«, a u brigadi od 22. 8. 1942. do 9. 6. 1943, kurir u štabu brigade.",
-    "birth_year": "1919",
-    "pdf_page": 122,
-    "pdf_y": 313.6,
-    "pdf_x": 77.1,
-    "pdf_y_end": 340.8,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201357",
-    "birth_place": "Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "kurir",
-    "pdf_x_end": 341.3,
-    "pdf_x_left": 60.3,
-    "other_sources": [
-      {
-        "soldier_id": "0010300281",
-        "name": "Grubor Sime Đuro",
-        "additional_info": "Zaštitni vod (kurirski): kurir, rođen 1922, Drvar, Srbin, radnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "zaštitni vod",
-    "variants": {
-      "born": [
-        "1922"
-      ]
-    }
-  },
-  {
     "last_name": "Grujić",
     "middle_name": "Dragutina",
     "first_name": "Dragan",
@@ -166929,31 +167243,6 @@
     "rank": "borac",
     "pdf_x_end": 347.5,
     "pdf_x_left": 67.9
-  },
-  {
-    "last_name": "Gulam",
-    "middle_name": "Ante",
-    "first_name": "Vice",
-    "fathers_name": "Ante",
-    "full_name": "Gulam Ante Vice",
-    "additional_info": "rod. 1920, Pirovac, Šibenik, zemljoradnik, Hrvat, u NOB od 15. 9. 1943, u brigadi oktobra 1943, poručnik u II bataljonu, poginuo u Sremu 6. 12. 1944.",
-    "birth_year": "1920",
-    "pdf_page": 125,
-    "pdf_y": 94.7,
-    "pdf_x": 53.9,
-    "pdf_y_end": 122.4,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201372",
-    "birth_place": "Pirovac, Šibenik",
-    "ethnicity": "Hrvat",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "06.12.1944",
-    "death_place": "Srem",
-    "rank": "poručnik",
-    "unit_detail": "2. bataljon",
-    "pdf_x_end": 318.2,
-    "pdf_x_left": 36.8
   },
   {
     "last_name": "Gulin",
@@ -168172,7 +168461,7 @@
     "first_name": "Rade",
     "fathers_name": "Nikša",
     "full_name": "Ilić Nikše Rade",
-    "additional_info": "rođ. 1917, Risovac, Bos. Petrovac, zemljoladnik, Srbin, u brigadi od 22. 8. 1942, komandir odeljenja.",
+    "additional_info": "rođ. 1917, Risovac, Bos. Petrovac, zemljoradnik, Srbin, u brigadi od 22. 8. 1942, komandir odeljenja.",
     "birth_year": "1917",
     "pdf_page": 131,
     "pdf_y": 440.5,
@@ -168180,11 +168469,12 @@
     "pdf_y_end": 459.1,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010201459",
+    "pdf_x_end": 318.4,
+    "pdf_x_left": 36.2,
     "birth_place": "Risovac, Bos. Petrovac",
     "ethnicity": "Srbin",
-    "rank": "komandir odeljenja",
-    "pdf_x_end": 318.4,
-    "pdf_x_left": 36.2
+    "occupation": "zemljoradnik",
+    "rank": "komandir odeljenja"
   },
   {
     "last_name": "Ilić",
@@ -169838,37 +170128,6 @@
     "rank": "borac",
     "pdf_x_end": 321.6,
     "pdf_x_left": 40.2
-  },
-  {
-    "last_name": "Jaksić",
-    "middle_name": "Rade",
-    "first_name": "Dušan",
-    "fathers_name": "Rade",
-    "full_name": "Jaksić Rade Dušan",
-    "additional_info": "rođ. 1924, Vrtoče, Bos. Petrovac, zemljoradnik, Srbin, u JNA od 1941, a u brigadi od 22. 8. 1942, nosilac »Partizanske spomenice 1941«, član KPJ — 1945, komandir voda.",
-    "birth_year": "1924",
-    "pdf_page": 139,
-    "pdf_y": 120.0,
-    "pdf_x": 57.0,
-    "pdf_y_end": 158.6,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201553",
-    "pdf_x_end": 323.2,
-    "pdf_x_left": 39.9,
-    "birth_place": "Vrtoče, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "komandir voda",
-    "other_sources": [
-      {
-        "soldier_id": "0010300297",
-        "name": "Jakšić Rade Dušan",
-        "additional_info": "Prateći vod 1. bataljona: borac, rođen 1924, Vrtoče, Bos. Petrovac, Srbin, zemljoradnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "prateći vod, 1. bataljon",
-    "party": "KPJ"
   },
   {
     "last_name": "Janaculias",
@@ -173464,52 +173723,6 @@
   },
   {
     "last_name": "Jovanović",
-    "middle_name": "Ranđela",
-    "first_name": "Vasiljko",
-    "fathers_name": "Ranđel",
-    "full_name": "Jovanović Ranđela Vasiljko",
-    "additional_info": "rođ. 1925, Brzi Brod, Niš, zemljoradnik, Srbin, u NOB i brigadi od 18. 11. 1944, borac, poginuo aprila 1945. na Sremskom frontu.",
-    "birth_year": "1925",
-    "pdf_page": 156,
-    "pdf_y": 506.9,
-    "pdf_x": 76.8,
-    "pdf_y_end": 534.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201804",
-    "birth_place": "Brzi Brod, Niš",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "04.1945",
-    "death_place": "Sremski front",
-    "rank": "borac",
-    "pdf_x_end": 341.4,
-    "pdf_x_left": 60.3,
-    "other_sources": [
-      {
-        "soldier_id": "9014001195",
-        "name": "Jovanović Vasiljko",
-        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 205. Jovanović Vasiljko.",
-        "pdf_file": "sremski-front-poginuli.pdf",
-        "pdf_page": 10,
-        "pdf_x": 375.2,
-        "pdf_y": 679.1,
-        "pdf_x_end": 460.8,
-        "pdf_y_end": 688.6,
-        "ref_book": "sremski-front-poginuli"
-      },
-      {
-        "soldier_id": "9025021568",
-        "name": "Jovanović (Ranđel) Vasiljko",
-        "additional_info": "rođen 1925, Brzi Brod (Nepoznata). Srbin, poginuo 1945. u NOBu, Vinjegovci",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=853",
-        "source_page": 853,
-        "ref_book": "zrtve-rata-1964-srb"
-      }
-    ]
-  },
-  {
-    "last_name": "Jovanović",
     "middle_name": "Borivoja",
     "first_name": "Velja",
     "fathers_name": "Borivoje",
@@ -174729,30 +174942,6 @@
     "pdf_x_end": 248.4
   },
   {
-    "last_name": "Kalaver",
-    "middle_name": "Joje",
-    "first_name": "Čedo",
-    "fathers_name": "Joja",
-    "full_name": "Kalaver Joje Čedo",
-    "additional_info": "rod. 1926, Jaker, Glamoč, zemljoradnik, Srbin, u NOB od 1943, u brigadi od januara do juna 1944, vodni delegat, poginuo aprila 1945. kod Fojnice.",
-    "birth_year": "1926",
-    "pdf_page": 207,
-    "pdf_y": 466.7,
-    "pdf_x": 46.0,
-    "pdf_y_end": 493.9,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010201878",
-    "birth_place": "Jaker, Glamoč",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "04.1945",
-    "death_place": "Fojnica",
-    "rank": "vodni delegat",
-    "pdf_x_end": 311.4,
-    "pdf_x_left": 29.2
-  },
-  {
     "last_name": "Kalember",
     "middle_name": "Nikole",
     "first_name": "Đuro",
@@ -175887,7 +176076,7 @@
     "first_name": "Milan",
     "fathers_name": "Drago",
     "full_name": "Kecman Drage Milan",
-    "additional_info": "rod. 1921, Tlitov Drvar, radnik, Srbin, u NOB od 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942. do 22. 11. il942, član KPJ 1942, borac.",
+    "additional_info": "rod. 1921, Tlitov Drvar, radnik, Srbin, u NOB od 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942. do 22. 11. 1942, član KPJ 1942, borac.",
     "birth_year": "1921",
     "pdf_page": 173,
     "pdf_y": 218.1,
@@ -175895,10 +176084,6 @@
     "pdf_y_end": 244.4,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010202003",
-    "birth_place": "Tlitov Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "borac",
     "pdf_x_end": 309.8,
     "pdf_x_left": 28.1,
     "other_sources": [
@@ -175911,6 +176096,10 @@
     ],
     "unit_detail": "1. četa, 1. bataljon",
     "party": "KPJ 1942",
+    "birth_place": "Tlitov Drvar",
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "rank": "borac",
     "variants": {
       "born": [
         "1922"
@@ -176154,36 +176343,6 @@
     "birth_place": "Sombor",
     "rank": "borac",
     "pdf_x_end": 231.3
-  },
-  {
-    "last_name": "Kelečević",
-    "middle_name": "Vice",
-    "first_name": "Milan",
-    "fathers_name": "Vice",
-    "full_name": "Kelečević Vice Milan",
-    "additional_info": "rod. 1920, Vrtoče, Titov Drvar, radnik, Srbin, u NOB od 1941, u brigadi od 22. 8. 1942.",
-    "birth_year": "1920",
-    "pdf_page": 176,
-    "pdf_y": 322.5,
-    "pdf_x": 81.8,
-    "pdf_y_end": 340.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202038",
-    "birth_place": "Vrtoče, Titov Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "pdf_x_end": 346.9,
-    "pdf_x_left": 65.5,
-    "other_sources": [
-      {
-        "soldier_id": "0010300399",
-        "name": "Kelečević Vice Milan",
-        "additional_info": "3. četa 1. bataljona: borac, rođen 1920, Vrtoče, Drvar, Srbin, radnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon"
   },
   {
     "last_name": "Kenjvasi",
@@ -177103,7 +177262,25 @@
     "death_place": "Zelengora",
     "rank": "pomoćnik komesara čete",
     "pdf_x_end": 344.8,
-    "pdf_x_left": 62.6
+    "pdf_x_left": 62.6,
+    "party": "KPJ 1942",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0112000186",
+        "name": "Knežević Milana Mihailo",
+        "additional_info": "borac 1, čete Pratećeg bataljona VŠ, rođen 1922, Veliki Cvjetnić, Drvar, fotografski radnik, Srbin, u NOB od 1941, član KPJ od januara 1942, poginuo na Sutjesci juna 1943. godine kao ranjenik u Centralnoj bolnici.",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 12,
+        "pdf_x": 46.5,
+        "pdf_y": 334.7,
+        "pdf_x_end": 216.1,
+        "pdf_y_end": 407.2,
+        "unit_file": "vrhovni-stab-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Knežević",
@@ -177464,37 +177641,6 @@
   },
   {
     "last_name": "Knežević",
-    "middle_name": "Stevana",
-    "first_name": "Savo",
-    "fathers_name": "Stevan",
-    "full_name": "Knežević Stevana Savo",
-    "additional_info": "rod. 1901, Mali Cvjetnić, Titov Drvar, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942, član KPJ 1944, ekonom bataljona.",
-    "birth_year": "1901",
-    "pdf_page": 187,
-    "pdf_y": 366.5,
-    "pdf_x": 50.2,
-    "pdf_y_end": 403.3,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202166",
-    "birth_place": "Mali Cvjetnić, Titov Drvar",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "ekonom bataljona",
-    "pdf_x_end": 315.0,
-    "pdf_x_left": 33.2,
-    "other_sources": [
-      {
-        "soldier_id": "0010300470",
-        "name": "Knežević Stevana Sava",
-        "additional_info": "3. četa 2. bataljona: borac, rođen 1901, M. Cvetnić, Drvar, Srbin, radnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "3. četa, 2. bataljon",
-    "party": "KPJ 1944"
-  },
-  {
-    "last_name": "Knežević",
     "middle_name": "Marka",
     "first_name": "Slavko",
     "fathers_name": "Marko",
@@ -177596,7 +177742,7 @@
     "first_name": "Đuro",
     "fathers_name": "Obrad",
     "full_name": "Knežević Obrada Đuro",
-    "additional_info": "rođ. 1912, Titov Drvar, zemljoradnik, Srbin, u NOB od 1941, u brigadi od 22. 8. 1942, člam KPJ 1944.",
+    "additional_info": "rođ. 1912, Titov Drvar, zemljoradnik, Srbin, u NOB od 1941, u brigadi od 22. 8. 1942, član KPJ 1944.",
     "birth_year": "1912",
     "pdf_page": 182,
     "pdf_y": 299.7,
@@ -177604,11 +177750,12 @@
     "pdf_y_end": 326.6,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010202181",
+    "pdf_x_end": 333.8,
+    "pdf_x_left": 53.2,
     "birth_place": "Titov Drvar",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 333.8,
-    "pdf_x_left": 53.2
+    "party": "KPJ 1944"
   },
   {
     "last_name": "Kojić",
@@ -177940,20 +178087,16 @@
     "first_name": "Drago",
     "fathers_name": "Mile",
     "full_name": "Korda Mile Drago",
-    "additional_info": "rod. 1920, Bos. Petrovac, radnik, Srbin, u NOB od 1941, u brigadi od avgusta 1942. KORDIĆ—(BUKVIC Blagoje ANĐA, rođ. 1926, Ravno, Kupres, domaćica, Srpkinja, u NOB od februara 1942, u brigadi od maja 1943. do januara 1944, član SKOJ-a 1943, četna bolničarka.",
+    "additional_info": "rod. 1920, Bos. Petrovac, radnik, Srbin, u NOB od 1941, u brigadi od avgusta 1942.",
     "birth_year": "1920",
     "pdf_page": 190,
     "pdf_y": 402.4,
     "pdf_x": 86.3,
-    "pdf_y_end": 460.5,
+    "pdf_y_end": 420.2,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010202213",
-    "birth_place": "Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "bolničarka",
     "pdf_x_end": 350.8,
-    "pdf_x_left": 69.2,
+    "pdf_x_left": 69.7,
     "other_sources": [
       {
         "soldier_id": "0010300486",
@@ -177963,7 +178106,33 @@
       }
     ],
     "unit_detail": "1. četa, 1. bataljon",
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "birth_place": "Bos. Petrovac",
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "rank": "borac"
+  },
+  {
+    "soldier_id": "0010209006",
+    "last_name": "Kordić-Bukvić",
+    "middle_name": "Blagoje",
+    "first_name": "Anđa",
+    "fathers_name": "Blagoje",
+    "full_name": "Kordić-Bukvić Blagoje Anđa",
+    "additional_info": "rođ. 1926, Ravno, Kupres, domaćica, Srpkinja, u NOB od februara 1942, u brigadi od maja 1943. do januara 1944, član SKOJ-a 1943, četna bolničarka.",
+    "birth_year": "",
+    "pdf_file": "3-krajiska-spisak-boraca.pdf",
+    "pdf_page": 190,
+    "pdf_x": 86.0,
+    "pdf_y": 433.3,
+    "birth_place": "Ravno, Kupres",
+    "ethnicity": "Srpkinja",
+    "occupation": "domaćica",
+    "rank": "bolničarka",
+    "party": "SKOJ 1943",
+    "pdf_x_end": 350.7,
+    "pdf_y_end": 460.5,
+    "pdf_x_left": 69.2
   },
   {
     "last_name": "Kosanić",
@@ -178074,6 +178243,18 @@
         "pdf_y": 466.9,
         "pdf_x_end": 190.2,
         "pdf_y_end": 520.0,
+        "unit_file": "7-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0048011673",
+        "name": "Košpić Luke Branko",
+        "additional_info": "rođen 1917. Šipovljani, Titov Drvar. Srbin, radnik. U NOB-i od 1942. Komandir 1. čete 3. bataljona. Učesnik bitke na Neretvi i Sutjesci. POGINUO 25. juna 1943. na Romaniji kod Rogatice.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 108,
+        "pdf_x": 97.4,
+        "pdf_y": 140.2,
+        "pdf_x_end": 264.5,
+        "pdf_y_end": 196.9,
         "unit_file": "7-krajiska-soldiers.json"
       },
       {
@@ -178473,28 +178654,6 @@
     "rank": "borac",
     "pdf_x_end": 310.6,
     "pdf_x_left": 29.4
-  },
-  {
-    "last_name": "Kosturović",
-    "middle_name": "S",
-    "first_name": "Prodan",
-    "fathers_name": "S",
-    "full_name": "Kosturović S Prodan",
-    "additional_info": "Ub, Srbin, u NOB i brigadi od septembra 1944, borac, poginuo januara 1945. Sid.",
-    "birth_year": "",
-    "pdf_page": 192,
-    "pdf_y": 363.3,
-    "pdf_x": 97.0,
-    "pdf_y_end": 379.9,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202244",
-    "birth_place": "Ub",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "01.1945",
-    "rank": "borac",
-    "pdf_x_end": 360.6,
-    "pdf_x_left": 79.0
   },
   {
     "last_name": "Kotur",
@@ -178947,28 +179106,6 @@
     "unit_detail": "1. četa, 3. bataljon",
     "party": "KPJ 1942",
     "birth_date": "18.04.1916"
-  },
-  {
-    "last_name": "Kovačević",
-    "middle_name": "Koje",
-    "first_name": "Đurađ",
-    "fathers_name": "Kojo",
-    "full_name": "Kovačević Koje Đurađ",
-    "additional_info": "rod. 1924, Smoljana, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 15. 10. 1942, u brigadi od januara 1943. do marta 1944, član KPJ 1945, borac.",
-    "birth_year": "1924",
-    "pdf_page": 194,
-    "pdf_y": 276.4,
-    "pdf_x": 93.6,
-    "pdf_y_end": 303.6,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202290",
-    "birth_place": "Smoljana, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 358.1,
-    "pdf_x_left": 76.3,
-    "party": "KPJ 1945"
   },
   {
     "last_name": "Kovačević-Popović",
@@ -179794,28 +179931,6 @@
   },
   {
     "last_name": "Krstić",
-    "middle_name": "Petra",
-    "first_name": "Andrija",
-    "fathers_name": "Petar",
-    "full_name": "Krstić Petra Andrija",
-    "additional_info": "rođ. 1911, Beograd, službenik, Srbin, u NOB od oktobra 1944, u brigadi od oktobra 1944, poginuo 19. 4. 1945. Pleternica.",
-    "birth_year": "1911",
-    "pdf_page": 201,
-    "pdf_y": 280.4,
-    "pdf_x": 52.1,
-    "pdf_y_end": 308.5,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202347",
-    "birth_place": "Beograd",
-    "ethnicity": "Srbin",
-    "occupation": "službenik",
-    "death_type": "poginuo",
-    "death_date": "19.04.1945",
-    "pdf_x_end": 316.8,
-    "pdf_x_left": 35.3
-  },
-  {
-    "last_name": "Krstić",
     "middle_name": "Jovana",
     "first_name": "Borivoje",
     "fathers_name": "Jovan",
@@ -180568,29 +180683,6 @@
     "party": "SKOJ 1943"
   },
   {
-    "last_name": "Kunovac",
-    "middle_name": "Todora",
-    "first_name": "Savo",
-    "fathers_name": "Todor",
-    "full_name": "Kunovac Todora Savo",
-    "additional_info": "rođ. 1920, Kutanja, Donji Vakuf, zemljoradnik, Srbin, u NOB od 1942, u brigadi od 20. avgusta do oktobra 1943, borac, umro 1943. posle ranjavanja.",
-    "birth_year": "1920",
-    "pdf_page": 205,
-    "pdf_y": 132.0,
-    "pdf_x": 59.3,
-    "pdf_y_end": 159.2,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202396",
-    "birth_place": "Kutanja, Donji Vakuf",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "umro",
-    "death_date": "1943",
-    "rank": "borac",
-    "pdf_x_end": 324.2,
-    "pdf_x_left": 42.5
-  },
-  {
     "last_name": "Kunovac-Dogatović",
     "middle_name": "Riste",
     "first_name": "Gospava",
@@ -180835,7 +180927,7 @@
     "first_name": "Vojimir",
     "fathers_name": "Ante",
     "full_name": "Kuzmanović Ante Vojimir",
-    "additional_info": "rod. 1918., Kaštela, Split, student tehnike, Hrvat, u NOB od 27. 7. 1941, u brigadi od 22. 8. 1942, član KPJ 1941, pomoćnik komesara bataljoma, poginuo 1. 7. 1943, Orahovica — Prača.",
+    "additional_info": "rod. 1918., Kaštela, Split, student tehnike, Hrvat, u NOB od 27. 7. 1941, u brigadi od 22. 8. 1942, član KPJ 1941, pomoćnik komesara bataljona, poginuo 1. 7. 1943, Orahovica — Prača.",
     "birth_year": "1918",
     "pdf_page": 206,
     "pdf_y": 96.4,
@@ -180843,13 +180935,7 @@
     "pdf_y_end": 131.8,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010202410",
-    "birth_place": "Kaštela, Split",
-    "ethnicity": "Hrvat",
-    "occupation": "student tehnike",
-    "death_type": "poginuo",
-    "death_date": "01.07.1943",
     "death_place": "Orahovica — Prača",
-    "rank": "pomoćnik komesara",
     "pdf_x_end": 347.8,
     "pdf_x_left": 65.7,
     "other_sources": [
@@ -180861,7 +180947,13 @@
       }
     ],
     "unit_detail": "2. bataljon",
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "birth_place": "Kaštela, Split",
+    "ethnicity": "Hrvat",
+    "occupation": "student tehnike",
+    "death_type": "poginuo",
+    "death_date": "01.07.1943",
+    "rank": "pomoćnik komesara bataljona"
   },
   {
     "last_name": "Kuzmić",
@@ -181386,42 +181478,6 @@
   },
   {
     "last_name": "Latinović",
-    "middle_name": "Đurđa",
-    "first_name": "Bogdan",
-    "fathers_name": "Đurađ",
-    "full_name": "Latinović Đurđa Bogdan",
-    "additional_info": "rođ. 1920, Bravsko, Bos. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942. do marta 1943, član KPJ 1943, komandir voda. LATINOV3Č Mile BOGDAN, rođ. 1921., Rašinovac, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 6. 5. 1942, u brigadi od oktobra 1942, član KPJ 1943, komandir čete.",
-    "birth_year": "1920",
-    "pdf_page": 209,
-    "pdf_y": 506.3,
-    "pdf_x": 50.2,
-    "pdf_y_end": 543.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202439",
-    "birth_place": "Bravsko, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "komandir voda, komandir čete",
-    "pdf_x_end": 315.1,
-    "pdf_x_left": 33.4,
-    "other_sources": [
-      {
-        "soldier_id": "0010300542",
-        "name": "Latinović Đurađa Bogdan",
-        "additional_info": "3. četa 3. bataljona: desetar, rođen 1919, Bravsko, Bos. Petrovac, Srbin, radnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "3. četa, 3. bataljon",
-    "party": "KPJ 1943",
-    "variants": {
-      "born": [
-        "1919"
-      ]
-    }
-  },
-  {
-    "last_name": "Latinović",
     "middle_name": "Đure",
     "first_name": "Branko",
     "fathers_name": "Đuro",
@@ -181441,28 +181497,6 @@
     "pdf_x_end": 350.6,
     "pdf_x_left": 68.9,
     "party": "SKOJ 1944"
-  },
-  {
-    "last_name": "Latinović",
-    "middle_name": "Koje",
-    "first_name": "Dudo",
-    "fathers_name": "Kojo",
-    "full_name": "Latinović Koje Dudo",
-    "additional_info": "rođ. 1909, Bravsko, Bos. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »-Partizanske Spomenice 1941«, u brigadi od 22. 8. 1944, član KPJ 1944, ekonom bataljona.",
-    "birth_year": "1909",
-    "pdf_page": 211,
-    "pdf_y": 138.6,
-    "pdf_x": 45.8,
-    "pdf_y_end": 176.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202448",
-    "birth_place": "Bravsko, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "ekonom bataljona",
-    "pdf_x_end": 311.4,
-    "pdf_x_left": 29.2,
-    "party": "KPJ 1944"
   },
   {
     "last_name": "Latinović",
@@ -183309,7 +183343,7 @@
     "first_name": "Milorad",
     "fathers_name": "",
     "full_name": "Lukić Milorad",
-    "additional_info": "rođ. 1923, Trnjaci, Ub, zemljođnik, Srbin, u NOB i brigadi od septembra 1944, komandir voda.",
+    "additional_info": "rođ. 1923, Trnjaci, Ub, zemljoradnik, Srbin, u NOB i brigadi od septembra 1944, komandir voda.",
     "birth_year": "1923",
     "pdf_page": 221,
     "pdf_y": 339.5,
@@ -183321,6 +183355,7 @@
     "pdf_x_left": 35.3,
     "birth_place": "Trnjaci, Ub",
     "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "rank": "komandir voda"
   },
   {
@@ -183329,7 +183364,7 @@
     "first_name": "Milutin",
     "fathers_name": "Budimir",
     "full_name": "Lukić Budimira Milutin",
-    "additional_info": "rođ. 1915, Koraca. Mladenovac, zemljoradnik, Srbin, u NOB i brigadi od 12, V- 1944, borac.",
+    "additional_info": "rođ. 1915, Koraćica, Mladenovac, zemljoradnik, Srbin, u NOB i brigadi od 12, V- 1944, borac.",
     "birth_year": "1915",
     "pdf_page": 221,
     "pdf_y": 370.7,
@@ -184245,11 +184280,11 @@
     "pdf_x_left": 25.0
   },
   {
-    "last_name": "Mandica",
+    "last_name": "Mandić",
     "middle_name": "Todora",
     "first_name": "Savo",
     "fathers_name": "Todor",
-    "full_name": "Mandica Todora Savo",
+    "full_name": "Mandić Todora Savo",
     "additional_info": "rod. 1919, Bjelaj, Bos. Petrovac, zemljoradnik, Srbin, u NOB od 1941, u brigadi od avgusta 1942, kurir.",
     "birth_year": "1919",
     "pdf_page": 231,
@@ -184263,7 +184298,16 @@
     "occupation": "zemljoradnik",
     "rank": "kurir",
     "pdf_x_end": 314.7,
-    "pdf_x_left": 32.5
+    "pdf_x_left": 32.5,
+    "other_sources": [
+      {
+        "soldier_id": "0010300618",
+        "name": "Mandić Todora Savo",
+        "additional_info": "Štab 3. bataljona: kurir, rođen 1919, Bjelaj, Bos. Petrovac, Srbin, zemljoradnik.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      }
+    ],
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Mandić",
@@ -184284,27 +184328,6 @@
     "rank": "borac",
     "pdf_x_end": 343.9,
     "pdf_x_left": 62.4
-  },
-  {
-    "last_name": "Mandić",
-    "middle_name": "Nikole",
-    "first_name": "Milka",
-    "fathers_name": "Nikola",
-    "full_name": "Mandić Nikole Milka",
-    "additional_info": "rođ. 1922, Vodenica, Bos. Petrovac, omladinka, Srpkinja, u NOB od 1943, u brigadi od avgusta 1943, član SKOJ-a 1942.. borac.",
-    "birth_year": "1922",
-    "pdf_page": 230,
-    "pdf_y": 509.5,
-    "pdf_x": 78.7,
-    "pdf_y_end": 535.7,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010202687",
-    "birth_place": "Vodenica, Bos. Petrovac",
-    "ethnicity": "Srpkinja",
-    "rank": "borac",
-    "pdf_x_end": 343.3,
-    "pdf_x_left": 61.9,
-    "party": "SKOJ 1942"
   },
   {
     "last_name": "Mandić",
@@ -192089,19 +192112,20 @@
     "first_name": "Mane",
     "fathers_name": "Nikola",
     "full_name": "Milošević Nikole Mane",
-    "additional_info": "Crnoje, Raštela, Cazin, zemljoladnik, Srbin, u NOB od 1941, u brigadi od avgusta 1942, komandir odelenja, poginuo 18. 6. 1944. Vitreuša — Zec planina.",
+    "additional_info": "Crnoje, Raštela, Cazin, zemljoradnik, Srbin, u NOB od 1941, u brigadi od avgusta 1942, komandir odelenja, poginuo 18. 6. 1944. Vitreuša — Zec planina.",
     "pdf_page": 261,
     "pdf_y": 375.4,
     "pdf_x": 54.6,
     "pdf_y_end": 402.6,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010203177",
-    "birth_place": "Crnoje, Raštela, Cazin",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "18.06.1944",
     "pdf_x_end": 319.5,
     "pdf_x_left": 37.8,
+    "birth_place": "Crnoje, Raštela, Cazin",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "18.06.1944",
     "rank": "komandir odelenja",
     "other_sources": [
       {
@@ -192799,30 +192823,6 @@
     "pdf_x_left": 38.6
   },
   {
-    "last_name": "Mitrig",
-    "middle_name": "Sredoje",
-    "first_name": "Ljubiša",
-    "fathers_name": "Sredoje",
-    "full_name": "Mitrig Sredoje Ljubiša",
-    "additional_info": "rod. 1924, Čičkovo, Arilje, zemljoradnik, Srbin, u NOB i brigadi od avgusta 1944, borac, poginuo januara 1945. kod Sida.",
-    "birth_year": "1924",
-    "pdf_page": 270,
-    "pdf_y": 96.7,
-    "pdf_x": 79.5,
-    "pdf_y_end": 124.3,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010203229",
-    "birth_place": "Čičkovo, Arilje",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "01.1945",
-    "death_place": "Sid",
-    "rank": "borac",
-    "pdf_x_end": 343.2,
-    "pdf_x_left": 62.7
-  },
-  {
     "last_name": "Mitrić",
     "middle_name": "Radisava",
     "first_name": "Ljubomir",
@@ -193434,7 +193434,7 @@
     "first_name": "Blagoje",
     "fathers_name": "Jovo",
     "full_name": "Mladenović Jove Blagoje",
-    "additional_info": "rođ. 1926, Manastir, Niš, bravar, Srbin, u NOB i brigadi od 4. 9. 1944, borac. MLADENOVIC A. Dimitrije, rod. 1912, Veliki Mokri Lug, Beograd, zemljoradnik, Srbin, u NOB i brigadi od 25. 12. 1944., borac.",
+    "additional_info": "rođ. 1926, Manastir, Niš, bravar, Srbin, u NOB i brigadi od 4. 9. 1944, borac.",
     "birth_year": "1926",
     "pdf_page": 271,
     "pdf_y": 338.6,
@@ -193442,12 +193442,12 @@
     "pdf_y_end": 356.2,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010203262",
+    "pdf_x_end": 313.2,
+    "pdf_x_left": 31.3,
     "birth_place": "Manastir, Niš",
     "ethnicity": "Srbin",
     "occupation": "bravar",
-    "rank": "borac",
-    "pdf_x_end": 313.2,
-    "pdf_x_left": 31.3
+    "rank": "borac"
   },
   {
     "soldier_id": "0010009003",
@@ -196612,21 +196612,43 @@
     "first_name": "Živorad",
     "fathers_name": "Radovan",
     "full_name": "Nikolić Radovana Živorad",
-    "additional_info": "rođ. 1927, Pružatovac, Mladenovac, bravar, Srbin, u -NOB i brigadi od 9. 10. 1944, borac. iNINIĆ Jose ANTE, rođ. 1925, Šibenik, radnik, Hrvat, u NOB od 5. 1. 1942, u brigadi od oktobra 1943, član KPJ 1944, delegat voda.",
+    "additional_info": "rođ. 1927, Pružatovac, Mladenovac, bravar, Srbin, u -NOB i brigadi od 9. 10. 1944, borac. i",
     "birth_year": "1927",
     "pdf_page": 289,
     "pdf_y": 219.3,
     "pdf_x": 54.9,
-    "pdf_y_end": 275.7,
+    "pdf_y_end": 236.9,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010203458",
+    "pdf_x_end": 319.6,
+    "pdf_x_left": 38.4,
+    "party": "KPJ 1944",
     "birth_place": "Pružatovac, Mladenovac",
     "ethnicity": "Srbin",
     "occupation": "bravar",
+    "rank": "borac"
+  },
+  {
+    "soldier_id": "0010209007",
+    "last_name": "Ninić",
+    "middle_name": "Jose",
+    "first_name": "Ante",
+    "fathers_name": "Joso",
+    "full_name": "Ninić Jose Ante",
+    "additional_info": "rođ. 1925, Šibenik, radnik, Hrvat, u NOB od 5. 1. 1942, u brigadi od oktobra 1943, član KPJ 1944, delegat voda.",
+    "birth_year": "",
+    "pdf_file": "3-krajiska-spisak-boraca.pdf",
+    "pdf_page": 289,
+    "pdf_x": 54.0,
+    "pdf_y": 248.1,
+    "birth_place": "Šibenik",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
     "rank": "delegat voda",
-    "pdf_x_end": 319.6,
-    "pdf_x_left": 38.1,
-    "party": "KPJ 1944"
+    "party": "KPJ 1944",
+    "pdf_x_end": 319.4,
+    "pdf_y_end": 275.7,
+    "pdf_x_left": 38.1
   },
   {
     "last_name": "Nikolić",
@@ -197168,28 +197190,6 @@
     "pdf_x_end": 315.8,
     "pdf_x_left": 33.9,
     "party": "KPJ 1944"
-  },
-  {
-    "last_name": "Novković",
-    "middle_name": "Obrada",
-    "first_name": "Savo",
-    "fathers_name": "Obrad",
-    "full_name": "Novković Obrada Savo",
-    "additional_info": "rođ. 1911, Bravsko, Bos. Petrovac, radnik, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske Spomenice 1941«, u brigadi od 22. 8. 1942, član KPJ 1943, intendant brigade.",
-    "birth_year": "1911",
-    "pdf_page": 291,
-    "pdf_y": 506.1,
-    "pdf_x": 50.9,
-    "pdf_y_end": 542.9,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010203497",
-    "birth_place": "Bravsko, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "intendant brigade",
-    "pdf_x_end": 315.6,
-    "pdf_x_left": 34.1,
-    "party": "KPJ 1943"
   },
   {
     "last_name": "Novković-Stanimirović",
@@ -198934,28 +198934,6 @@
     "rank": "borac",
     "pdf_x_end": 306.2,
     "pdf_x_left": 40.3
-  },
-  {
-    "last_name": "Pavino",
-    "middle_name": "",
-    "first_name": "Teodore",
-    "fathers_name": "",
-    "full_name": "Pavino Teodore",
-    "additional_info": "Albanesi, Palermo, Italijan, u NOB i brigadi od 1943, borac, poginuo 23. 6. 1944. Crni Vrh — Travnik.",
-    "birth_year": "",
-    "pdf_page": 301,
-    "pdf_y": 163.8,
-    "pdf_x": 58.0,
-    "pdf_y_end": 191.5,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010203614",
-    "birth_place": "Albanesi, Palermo",
-    "ethnicity": "Italijan",
-    "death_type": "poginuo",
-    "death_date": "23.06.1944",
-    "rank": "borac",
-    "pdf_x_end": 322.8,
-    "pdf_x_left": 41.0
   },
   {
     "last_name": "Pavić",
@@ -201946,7 +201924,7 @@
       {
         "soldier_id": "0113000115",
         "name": "Pećanac Sime Nikola",
-        "additional_info": "borac u hirurškoj ekipi divizije, rođen 1922, Donje Vrtoče, Drvar, radnik, Srbin, u NOB od 1942, član SKOJ-a od juna 1942, član KPJ od decembia 1943. godine, krajem rata referent saniteta artiljerijske brigade.",
+        "additional_info": "borac u hirurškoj ekipi divizije, rođen 1922, Donje Vrtoče, Drvar, radnik, Srbin, u NOB od 1942, član SKOJ-a od juna 1942, član KPJ od decembra 1943. godine, krajem rata referent saniteta artiljerijske brigade.",
         "pdf_file": "borci-sutjeske-1-proleterska-divizija.pdf",
         "pdf_page": 9,
         "pdf_x": 229.0,
@@ -203854,28 +203832,6 @@
     "pdf_x_left": 35.7
   },
   {
-    "last_name": "Pozniić",
-    "middle_name": "Luke",
-    "first_name": "Jovo",
-    "fathers_name": "Luka",
-    "full_name": "Pozniić Luke Jovo",
-    "additional_info": "rođ. 1925, Risovac, Bos. Petrovac, radnik, Srbin, u NOB od 8. 12. 1941, u brigadi od 22. 8. 1942, član KPJ 1944, komandir voda.",
-    "birth_year": "1925",
-    "pdf_page": 326,
-    "pdf_y": 99.3,
-    "pdf_x": 82.7,
-    "pdf_y_end": 127.0,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010203968",
-    "birth_place": "Risovac, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "komandir voda",
-    "pdf_x_end": 347.4,
-    "pdf_x_left": 66.1,
-    "party": "KPJ 1944"
-  },
-  {
     "last_name": "Počkaj",
     "middle_name": "",
     "first_name": "Jože",
@@ -204331,11 +204287,11 @@
     "death_place": "Sutjeska foča"
   },
   {
-    "last_name": "Punković",
+    "last_name": "Paunović",
     "middle_name": "Aleksandra",
     "first_name": "Luka",
     "fathers_name": "Aleksandar",
-    "full_name": "Punković Aleksandra Luka",
+    "full_name": "Paunović Aleksandra Luka",
     "additional_info": "rod. 1925, Gornji Stupanj, Aleksandrovac, zemljoradnik, Srbin, u NOB od 24. 11. 1944, u brigadi od aprila 1945, borac.",
     "birth_year": "1925",
     "pdf_page": 328,
@@ -205660,20 +205616,41 @@
     "first_name": "Janko",
     "fathers_name": "Milan",
     "full_name": "Radonjić Milana Janko",
-    "additional_info": "rođ. 1914, Bogovina, Baljevac, zemljoradnik, Srbin, u NOB i brigadi od 10. 11. 1944, komandir odelenja. R AD OSA VL JEVIĆ R. BOZIDAR, rođ. 1920, Rajkovac, Mladenovac, radnik, Srbin, u NOB i brigadi od 10. 10. 1944, borac.",
+    "additional_info": "rođ. 1914, Bogovina, Baljevac, zemljoradnik, Srbin, u NOB i brigadi od 10. 11. 1944, komandir odelenja.",
     "birth_year": "1914",
     "pdf_page": 338,
     "pdf_y": 402.1,
     "pdf_x": 81.3,
-    "pdf_y_end": 462.0,
+    "pdf_y_end": 429.8,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010204102",
-    "birth_place": "Bogovina, Baljevac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 346.3,
-    "pdf_x_left": 64.2
+    "pdf_x_left": 64.2,
+    "birth_place": "Bogovina, Baljevac",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik"
+  },
+  {
+    "soldier_id": "0010209008",
+    "last_name": "Radosavljević",
+    "middle_name": "R.",
+    "first_name": "Božidar",
+    "fathers_name": "R.",
+    "full_name": "Radosavljević R. Božidar",
+    "additional_info": "rođ. 1920, Rajkovac, Mladenovac, radnik, Srbin, u NOB i brigadi od 10. 10. 1944, borac.",
+    "birth_year": "",
+    "pdf_file": "3-krajiska-spisak-boraca.pdf",
+    "pdf_page": 338,
+    "pdf_x": 81.3,
+    "pdf_y": 443.9,
+    "birth_place": "Rajkovac, Mladenovac",
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "rank": "borac",
+    "pdf_x_end": 343.8,
+    "pdf_y_end": 462.0,
+    "pdf_x_left": 64.5
   },
   {
     "last_name": "Radonjić",
@@ -210387,30 +210364,6 @@
     "pdf_x_end": 308.0
   },
   {
-    "last_name": "Sakardžija",
-    "middle_name": "Toše",
-    "first_name": "Mihailo",
-    "fathers_name": "Toše",
-    "full_name": "Sakardžija Toše Mihailo",
-    "additional_info": "rod. 1910, Gornji Lipik, Sanski Most, BiH, zemljoradnik, Srbin, u NOB od 1941, u brigadi od 22. 8. 1942, borac, poginuo u Bugojnu 1943.",
-    "birth_year": "1910",
-    "pdf_page": 368,
-    "pdf_y": 127.3,
-    "pdf_x": 83.7,
-    "pdf_y_end": 155.0,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010204458",
-    "birth_place": "Gornji Lipik, Sanski Most, BiH",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Bugojno",
-    "rank": "borac",
-    "pdf_x_end": 347.8,
-    "pdf_x_left": 65.9
-  },
-  {
     "last_name": "Sakić",
     "middle_name": "",
     "first_name": "Jova",
@@ -210537,7 +210490,26 @@
     "rank": "komandir voda",
     "pdf_x_end": 316.7,
     "pdf_x_left": 34.8,
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0048013000",
+        "name": "Salkica Salke Muharem",
+        "additional_info": "rođen 1925. Vlahovići, Travnik. Musliman, zemljoradnik. U NOB-i od 1944. Borac 3. čete 4. bataljona.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 181,
+        "pdf_x": 310.0,
+        "pdf_y": 582.1,
+        "pdf_x_end": 477.4,
+        "pdf_y_end": 621.2,
+        "unit_file": "7-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Salvalaio",
@@ -210847,26 +210819,6 @@
     ],
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon"
-  },
-  {
-    "last_name": "Sarajlić",
-    "middle_name": "Tanasije",
-    "first_name": "Đijrađ",
-    "fathers_name": "Tanasije",
-    "full_name": "Sarajlić Tanasije Đijrađ",
-    "additional_info": "rod. 1923, Gornji Gorivci, Prijedor, BiH, u NOB od 1941, nosilac »partizanske spomenice 1941«, a u brigadi od februara 1943, član KPJ od 1943, zamenik komandanta bataljona.",
-    "birth_year": "1923",
-    "pdf_page": 371,
-    "pdf_y": 338.5,
-    "pdf_x": 51.9,
-    "pdf_y_end": 375.3,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010204505",
-    "birth_place": "Gornji Gorivci, Prijedor, BiH",
-    "rank": "zamenik komandanta bataljona",
-    "pdf_x_end": 317.0,
-    "pdf_x_left": 35.3,
-    "party": "KPJ 1943"
   },
   {
     "last_name": "Sarajlić-Stanarević",
@@ -212633,43 +212585,6 @@
     "birth_place": "D. Vrbova, G. Milanovac, Srbija",
     "pdf_x_end": 322.8,
     "pdf_x_left": 41.9
-  },
-  {
-    "last_name": "Sindelić",
-    "middle_name": "Svetomira",
-    "first_name": "Predrag",
-    "fathers_name": "Svetomir",
-    "full_name": "Sindelić Svetomira Predrag",
-    "additional_info": "rođ. 1926, Zvizdar, Ub, Srbija, zemljoradnik, Rom, u NOB i brigadi od 7. 10. 1944, borac poginuo 9. 12. 1944. Berak.",
-    "birth_year": "1926",
-    "pdf_page": 377,
-    "pdf_y": 340.9,
-    "pdf_x": 58.5,
-    "pdf_y_end": 368.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010204607",
-    "birth_place": "Zvizdar, Ub, Srbija",
-    "ethnicity": "Rom",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "09.12.1944",
-    "rank": "borac",
-    "pdf_x_end": 323.3,
-    "pdf_x_left": 41.9,
-    "other_sources": [
-      {
-        "soldier_id": "9013000604",
-        "name": "Sinđelić Predrag",
-        "additional_info": "Treća krajiška proleterska brigada, Berak: Predrag Sinđelić.",
-        "pdf_file": "u-rovovima-srema-poginuli.pdf",
-        "pdf_page": 6,
-        "pdf_x": 244.0,
-        "pdf_y": 207.5,
-        "pdf_x_end": 323.7,
-        "pdf_y_end": 217.2,
-        "ref_book": "u-rovovima-srema-poginuli"
-      }
-    ]
   },
   {
     "last_name": "Sindelić",
@@ -219227,54 +219142,6 @@
     ]
   },
   {
-    "last_name": "Tasovac",
-    "middle_name": "Boška",
-    "first_name": "Luka",
-    "fathers_name": "Boško",
-    "full_name": "Tasovac Boška Luka",
-    "additional_info": "rod. 1925, Trebinje, delegat voda, poginuo 9. 12. 1944. kod Berka.",
-    "birth_year": "1925",
-    "pdf_page": 424,
-    "pdf_y": 160.0,
-    "pdf_x": 80.8,
-    "pdf_y_end": 177.8,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010205074",
-    "birth_place": "Trebinje",
-    "death_type": "poginuo",
-    "death_date": "09.12.1944",
-    "death_place": "Berak",
-    "rank": "delegat voda",
-    "pdf_x_end": 345.5,
-    "pdf_x_left": 64.0,
-    "other_sources": [
-      {
-        "soldier_id": "9013000609",
-        "name": "Tasovac Luka",
-        "additional_info": "Treća krajiška proleterska brigada, Berak: Luka Tasovac, delegat.",
-        "pdf_file": "u-rovovima-srema-poginuli.pdf",
-        "pdf_page": 6,
-        "pdf_x": 331.6,
-        "pdf_y": 218.0,
-        "pdf_x_end": 439.4,
-        "pdf_y_end": 227.7,
-        "ref_book": "u-rovovima-srema-poginuli"
-      },
-      {
-        "soldier_id": "9014001613",
-        "name": "Tasovac Luka",
-        "additional_info": "Poginuli borci Treće krajiške proleterske narodnooslobodilačke udarne brigade: 623. Tasovac Luka.",
-        "pdf_file": "sremski-front-poginuli.pdf",
-        "pdf_page": 12,
-        "pdf_x": 423.2,
-        "pdf_y": 865.3,
-        "pdf_x_end": 483.7,
-        "pdf_y_end": 874.8,
-        "ref_book": "sremski-front-poginuli"
-      }
-    ]
-  },
-  {
     "last_name": "Tatalović",
     "middle_name": "",
     "first_name": "Milan",
@@ -221294,48 +221161,6 @@
     "rank": "borac",
     "pdf_x_end": 317.7,
     "pdf_x_left": 36.4
-  },
-  {
-    "last_name": "Trninić",
-    "middle_name": "Gaje",
-    "first_name": "Mile",
-    "fathers_name": "Gajo",
-    "full_name": "Trninić Gaje Mile",
-    "additional_info": "rođ. 192,1, Trninić Brijeg, T. Drvar, radnik, Srbin, u NOB 1941., poginuo 1943. kod Sinja, član KPJ.",
-    "birth_year": "1921",
-    "pdf_page": 436,
-    "pdf_y": 104.8,
-    "pdf_x": 82.0,
-    "pdf_y_end": 122.6,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010205247",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Sinj, član KPJ",
-    "pdf_x_end": 346.7,
-    "pdf_x_left": 65.7,
-    "other_sources": [
-      {
-        "soldier_id": "0010301099",
-        "name": "Trninic Gaje Mile",
-        "additional_info": "2. četa 4. bataljona: borac, rođen 1921, Trninića-Breg, Drvar, Srbin, radnik, u NOB od 1941, poginuo 1943. kod Sinja kao član KPJ.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      },
-      {
-        "soldier_id": "9022015769",
-        "name": "Trninić (Gajo) Mile",
-        "additional_info": "rođen 1920, Trninić Brijeg (Drvar). Srbin, poginuo 1943. u NOBu, Sinj",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1301",
-        "source_page": 1301,
-        "ref_book": "zrtve-rata-1964-bih"
-      }
-    ],
-    "birth_place": "Trninića-Breg, Drvar",
-    "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon",
-    "party": "KPJ"
   },
   {
     "last_name": "Trninić",
@@ -224457,29 +224282,6 @@
   },
   {
     "last_name": "Vojnović",
-    "middle_name": "Ilije",
-    "first_name": "Nikola",
-    "fathers_name": "Ilija",
-    "full_name": "Vojnović Ilije Nikola",
-    "additional_info": "rođ. 1919, Rajinovci, Bihać, radnik, Srbin, u NOB 1941, u brigadi od 22. 8. 1942, borac, poginuo 2. 3. 1943. Kobilja Glava, Gornji Vakuf.",
-    "birth_year": "1919",
-    "pdf_page": 452,
-    "pdf_y": 432.9,
-    "pdf_x": 85.9,
-    "pdf_y_end": 460.1,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010205472",
-    "birth_place": "Rajinovci, Bihać",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "02.03.1943",
-    "rank": "borac",
-    "pdf_x_end": 350.6,
-    "pdf_x_left": 69.1
-  },
-  {
-    "last_name": "Vojnović",
     "middle_name": "Jovana",
     "first_name": "Đorđe",
     "fathers_name": "Jovan",
@@ -224716,7 +224518,7 @@
     "first_name": "Miloš",
     "fathers_name": "Stevan",
     "full_name": "Vrcelj Stevana Miloš",
-    "additional_info": "rođ. 1902, Benkovac, Srbin, u NOB i brigadi od novembra 1944, ađutant u bataljomu.",
+    "additional_info": "rođ. 1902, Benkovac, Srbin, u NOB i brigadi od novembra 1944, ađutant u bataljonu.",
     "birth_year": "1902",
     "pdf_page": 454,
     "pdf_y": 177.3,
@@ -224724,10 +224526,10 @@
     "pdf_y_end": 195.1,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010205493",
-    "birth_place": "Benkovac",
-    "ethnicity": "Srbin",
     "pdf_x_end": 349.0,
-    "pdf_x_left": 68.5
+    "pdf_x_left": 68.5,
+    "birth_place": "Benkovac",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vrcun",
@@ -224806,42 +224608,6 @@
         "ref_book": "sanski-most-borci"
       }
     ]
-  },
-  {
-    "last_name": "Vržina",
-    "middle_name": "Nikole",
-    "first_name": "Simo",
-    "fathers_name": "Nikola",
-    "full_name": "Vržina Nikole Simo",
-    "additional_info": "rod. 1913., Bjelaj, Bos. Petrovac, radnik, Srbin, u NOB 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942, član KPJ od jula 1943, zamenik komandira čete.",
-    "birth_year": "1913",
-    "pdf_page": 454,
-    "pdf_y": 430.3,
-    "pdf_x": 82.4,
-    "pdf_y_end": 466.3,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010205500",
-    "birth_place": "Bjelaj, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "rank": "zamenik komandira čete",
-    "pdf_x_end": 347.0,
-    "pdf_x_left": 65.1,
-    "other_sources": [
-      {
-        "soldier_id": "0010301145",
-        "name": "Vržina Nikole Simo",
-        "additional_info": "2. četa 1. bataljona: vodnik, rođen 1915, Bjelaj, Bos. Petrovac, Srbin, radnik.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ],
-    "unit_detail": "2. četa, 1. bataljon",
-    "party": "KPJ 1943",
-    "variants": {
-      "born": [
-        "1915"
-      ]
-    }
   },
   {
     "last_name": "Vucelja",
@@ -232294,29 +232060,6 @@
     "party": "KPJ 1944"
   },
   {
-    "last_name": "Šebez",
-    "middle_name": "Marka",
-    "first_name": "Obradi",
-    "fathers_name": "Marko",
-    "full_name": "Šebez Marka Obradi",
-    "additional_info": "rođ. 1927, Blagaj, Kupres, zemljoradnik, Sirbin, u NOB od 1942, borac, poginuo 1944. na Busovači.",
-    "birth_year": "1927",
-    "pdf_page": 410,
-    "pdf_y": 210.4,
-    "pdf_x": 79.2,
-    "pdf_y_end": 228.2,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010206038",
-    "birth_place": "Blagaj, Kupres",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Busovača",
-    "rank": "borac",
-    "pdf_x_end": 344.4,
-    "pdf_x_left": 63.1
-  },
-  {
     "last_name": "Šekić",
     "middle_name": "Dede",
     "first_name": "Hasan",
@@ -234046,17 +233789,18 @@
     "first_name": "Dušan",
     "fathers_name": "",
     "full_name": "Babić Dušan",
-    "additional_info": "1. četa 1. bataljona: borac, rođen 1923, Trubar, Drvar, Srbin, radnlk. U NOB-i od 1941. Poginuo 1944. u Slavoniji.",
+    "additional_info": "1. četa 1. bataljona: borac, rođen 1923, Trubar, Drvar, Srbin, radnik. U NOB-i od 1941. Poginuo 1944. u Slavoniji.",
     "birth_year": "1923",
-    "unit_detail": "1. četa, 1. bataljon",
     "source_url": "https://znaci.org/00001/31_263.htm",
     "soldier_id": "0010300036",
     "birth_place": "Trubar, Drvar",
     "ethnicity": "Srbin",
+    "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Slavonija",
-    "rank": "borac"
+    "rank": "borac",
+    "unit_detail": "1. četa, 1. bataljon"
   },
   {
     "last_name": "Babić",
@@ -234136,14 +233880,15 @@
     "first_name": "Vida",
     "fathers_name": "Branko",
     "full_name": "Banjac Branka Vida",
-    "additional_info": "3. četa 3. bataljona: bolnićarka, rođena 1924, Bravsko, Bos. Petrovac, Srpkinja, domaćica.",
+    "additional_info": "3. četa 3. bataljona: bolničarka, rođena 1924, Bravsko, Bos. Petrovac, Srpkinja, domaćica.",
     "birth_year": "1924",
-    "unit_detail": "3. četa, 3. bataljon",
     "source_url": "https://znaci.org/00001/31_263.htm",
     "soldier_id": "0010300086",
     "birth_place": "Bravsko, Bos. Petrovac",
     "ethnicity": "Srpkinja",
-    "occupation": "domaćica"
+    "occupation": "domaćica",
+    "rank": "bolničarka",
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "last_name": "Bauk",
@@ -234423,25 +234168,6 @@
     "rank": "kurir"
   },
   {
-    "last_name": "Dragicć",
-    "middle_name": "Marka",
-    "first_name": "Savo",
-    "fathers_name": "Marko",
-    "full_name": "Dragicć Marka Savo",
-    "additional_info": "2. četa 3. bataljona: borac, rođen 1921, Lastve, Krnjeuša, Bos. Petrovac, Srbin, zemljoradnik, borac od 1941, član KPJ od 1943, poginuo kao desetar 3. 1 1943. u Han-Kolima, Manjača.",
-    "birth_year": "1921",
-    "unit_detail": "2. četa, 3. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300183",
-    "birth_place": "Lastve, Krnjeuša, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "03.01.1943",
-    "rank": "desetar",
-    "party": "KPJ 1943"
-  },
-  {
     "last_name": "Dragosavac",
     "middle_name": "Mile",
     "first_name": "Filip",
@@ -234458,24 +234184,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Kobilja Glava"
-  },
-  {
-    "last_name": "Dragoslavac",
-    "middle_name": "Gaje",
-    "first_name": "Mile",
-    "fathers_name": "Gajo",
-    "full_name": "Dragoslavac Gaje Mile",
-    "additional_info": "1. četa 2. bataljona: borac, rođen 1919, Oraško Brdo, Bos. Petrovac, Srbin, zemljoradnik, NOB od 1941, umro 1949.",
-    "birth_year": "1919",
-    "unit_detail": "1. četa, 2. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300191",
-    "birth_place": "Oraško Brdo, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "umro",
-    "death_date": "1949",
-    "rank": "borac"
   },
   {
     "last_name": "Dukić",
@@ -234525,25 +234233,6 @@
     "occupation": "domaćica"
   },
   {
-    "last_name": "Gelja",
-    "middle_name": "Nikole",
-    "first_name": "Miladin",
-    "fathers_name": "Nikola",
-    "full_name": "Gelja Nikole Miladin",
-    "additional_info": "2. četa 4. bataljona: rođen 1922, Oraško Brdo, Srbin, zemljoradnik, u NOB od 1941, član SKOJ-a od 1942, poginuo 1943. na Zečevom brdu.",
-    "birth_year": "1922",
-    "unit_detail": "2. četa, 4. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300218",
-    "birth_place": "Oraško Brdo",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "na Zečevom brdu",
-    "party": "SKOJ 1942"
-  },
-  {
     "last_name": "Gizdić",
     "middle_name": "Lovre",
     "first_name": "Jozo",
@@ -234558,22 +234247,6 @@
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "politički komesar"
-  },
-  {
-    "last_name": "Gizija",
-    "middle_name": "Ilije",
-    "first_name": "Ilija",
-    "fathers_name": "Ilija",
-    "full_name": "Gizija Ilije Ilija",
-    "additional_info": "3. četa 4. bataljona: borac, rođen 1922, Zlopolje, Bihać, Srbin, zemljoradnik.",
-    "birth_year": "1922",
-    "unit_detail": "3. četa, 4. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300220",
-    "birth_place": "Zlopolje, Bihać",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "borac"
   },
   {
     "last_name": "Glušica",
@@ -235212,18 +234885,18 @@
     "first_name": "Milan",
     "fathers_name": "Lazo",
     "full_name": "Kerkez Laze Milan",
-    "additional_info": "zvani Ujko; 2. četa 3. bataljona: tomandir, rođen 1914, Prkosi, Kulen Vakuf, Srbin, radnik, u NOB od 1941, član KPJ od 1942, poginuo 23. 1 1943. u s. G. Ranković kod Teslića.",
+    "additional_info": "zvani Ujko; 2. četa 3. bataljona: komandir, rođen 1914, Prkosi, Kulen Vakuf, Srbin, radnik, u NOB od 1941, član KPJ od 1942, poginuo 23. 1 1943. u s. G. Ranković kod Teslića.",
     "birth_year": "1914",
-    "unit_detail": "2. četa, 3. bataljon",
     "source_url": "https://znaci.org/00001/31_263.htm",
     "soldier_id": "0010300410",
+    "party": "KPJ 1942",
     "birth_place": "Prkosi, Kulen Vakuf",
     "ethnicity": "Srbin",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "23.01.1943",
     "death_place": "u s. G. Ranković kod Teslića",
-    "party": "KPJ 1942"
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "last_name": "Kerkez",
@@ -235277,11 +234950,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "Knezevig",
+    "last_name": "Knežević",
     "middle_name": "Ilije",
     "first_name": "Dušan",
     "fathers_name": "Ilija",
-    "full_name": "Knezevig Ilije Dušan",
+    "full_name": "Knežević Ilije Dušan",
     "additional_info": "3. četa 1. bataljona: borac, rođen 1921, Kamenica, Drvar, Srbin, radnik.",
     "birth_year": "1921",
     "unit_detail": "3. četa, 1. bataljon",
@@ -235451,22 +235124,6 @@
     "unit_detail": "1. četa, 1. bataljon",
     "source_url": "https://znaci.org/00001/31_263.htm",
     "soldier_id": "0010300491",
-    "birth_place": "Šipovljani, Drvar",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "rank": "borac"
-  },
-  {
-    "last_name": "Kospić",
-    "middle_name": "Luke",
-    "first_name": "Smilja",
-    "fathers_name": "Luka",
-    "full_name": "Kospić Luke Smilja",
-    "additional_info": "1. četa 1. bataljona: borac, rođena 1922, Šipovljani, Drvar, Srpkinja, domaćica.",
-    "birth_year": "1922",
-    "unit_detail": "1. četa, 1. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300492",
     "birth_place": "Šipovljani, Drvar",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
@@ -235665,26 +235322,6 @@
   },
   {
     "last_name": "Latinović",
-    "middle_name": "Petra",
-    "first_name": "Kade",
-    "fathers_name": "Petar",
-    "full_name": "Latinović Petra Kade",
-    "additional_info": "2. četa 1. bataljona: borac, rođen 1925, Vrtoče, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1942, poginuo 1943. na Zelengori kao član SKOJ-a.",
-    "birth_year": "1925",
-    "unit_detail": "2. četa, 1. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300557",
-    "birth_place": "Vrtoče, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Zelengora",
-    "rank": "borac",
-    "party": "SKOJ"
-  },
-  {
-    "last_name": "Latinović",
     "middle_name": "Laze",
     "first_name": "Milanko",
     "fathers_name": "Lazo",
@@ -235832,22 +235469,6 @@
     "soldier_id": "0010300616",
     "birth_place": "Lipe, Bihać",
     "rank": "borac"
-  },
-  {
-    "last_name": "Mandić",
-    "middle_name": "Todora",
-    "first_name": "Savo",
-    "fathers_name": "Todor",
-    "full_name": "Mandić Todora Savo",
-    "additional_info": "Štab 3. bataljona: kurir, rođen 1919, Bjelaj, Bos. Petrovac, Srbin, zemljoradnik.",
-    "birth_year": "1919",
-    "unit_detail": "3. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010300618",
-    "birth_place": "Bjelaj, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "rank": "kurir"
   },
   {
     "last_name": "Mandić",
@@ -237642,22 +237263,6 @@
     "soldier_id": "0010301167",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "rank": "borac"
-  },
-  {
-    "last_name": "Zorilić",
-    "middle_name": "Bogdana",
-    "first_name": "Dragan",
-    "fathers_name": "Bogdan",
-    "full_name": "Zorilić Bogdana Dragan",
-    "additional_info": "1. četa 2. bataljona: borac, rođen 1923, Prkosi, Bos. Petrovac, Srbin, zemljoradnik.",
-    "birth_year": "1923",
-    "unit_detail": "1. četa, 2. bataljon",
-    "source_url": "https://znaci.org/00001/31_263.htm",
-    "soldier_id": "0010301174",
-    "birth_place": "Prkosi, Bos. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
     "rank": "borac"
   },
   {

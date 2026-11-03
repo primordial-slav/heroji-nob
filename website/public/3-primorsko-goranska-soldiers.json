@@ -6661,35 +6661,14 @@
     "unit_detail": "štab brigade"
   },
   {
-    "last_name": "Kinkel",
+    "last_name": "Kinkela",
     "middle_name": "Andrije",
     "first_name": "Alojz",
     "fathers_name": "Andrija",
-    "full_name": "Kinkel Andrije Alojz",
-    "additional_info": "referent saniteta bataljona, rođen u Matuljama kod Rijeke, poginuo 10. maja 1944. godine na Živulji kod Trnovca",
-    "birth_year": "",
-    "pdf_page": 15,
-    "pdf_y": 297.2,
-    "pdf_x": 57.2,
-    "pdf_y_end": 338.6,
-    "pdf_file": "3-primorsko-goranska.pdf",
-    "birth_place": "Matulje, Rijeka",
-    "soldier_id": "0099000281",
-    "pdf_x_end": 216.8,
-    "death_type": "poginuo",
-    "death_date": "10.05.1944",
-    "death_place": "na Živulji kod Trnovca",
-    "rank": "referent saniteta bataljona"
-  },
-  {
-    "last_name": "Kinkela",
-    "middle_name": "",
-    "first_name": "Alojz",
-    "fathers_name": "",
-    "full_name": "Kinkela Alojz",
+    "full_name": "Kinkela Andrije Alojz",
     "additional_info": "referent saniteta bataljona",
     "birth_year": "",
-    "death_type": "",
+    "death_type": "poginuo",
     "pdf_page": 3,
     "pdf_y": 225.1,
     "pdf_x": 221.8,
@@ -6710,9 +6689,23 @@
         "pdf_x_end": 385.0,
         "pdf_y_end": 363.2,
         "pdf_x_left": 52.7
+      },
+      {
+        "soldier_id": "0099000281",
+        "name": "Kinkela Andrije Alojz",
+        "additional_info": "referent saniteta bataljona, rođen u Matuljama kod Rijeke, poginuo 10. maja 1944. godine na Živulji kod Trnovca",
+        "pdf_file": "3-primorsko-goranska.pdf",
+        "pdf_page": 15,
+        "pdf_x": 57.2,
+        "pdf_y": 297.2,
+        "pdf_x_end": 216.8,
+        "pdf_y_end": 338.6
       }
     ],
-    "unit_detail": "drugi bataljon"
+    "unit_detail": "drugi bataljon",
+    "birth_place": "Matulje, Rijeka",
+    "death_date": "10.05.1944",
+    "death_place": "na Živulji kod Trnovca"
   },
   {
     "last_name": "Klarić",
@@ -10640,13 +10633,12 @@
     "unit_detail": "štab brigade"
   },
   {
-    "last_name": "Miculunić",
+    "last_name": "Miculinić",
     "middle_name": "Jakova",
     "first_name": "Blaž",
     "fathers_name": "Jakov",
-    "full_name": "Miculunić Jakova Blaž",
+    "full_name": "Miculinić Jakova Blaž",
     "additional_info": "borac, rođen u Cerniku kod Rijeke, poginuo 10. marta 1945. godine na Sertić Poljani kod Plitvičkih jezera",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 18,
     "pdf_y": 526.5,
@@ -10658,7 +10650,23 @@
     "death_date": "10.03.1945",
     "death_place": "na Sertić Poljani kod Plitvičkih jezera",
     "rank": "borac",
-    "pdf_x_end": 214.7
+    "pdf_x_end": 214.7,
+    "other_sources": [
+      {
+        "soldier_id": "9021033764",
+        "name": "Miculinić (Jakov) Blaž",
+        "additional_info": "rođen 1910, Cernik Primorski (Rijeka). Hrvat, poginuo 1945. u NOBu, Sertić Poljana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1709",
+        "source_page": 1709,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1910"
   },
   {
     "last_name": "Mihaić",

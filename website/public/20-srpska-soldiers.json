@@ -207,9 +207,8 @@
     "first_name": "Petar",
     "fathers_name": "A",
     "full_name": "Anbejžović A Petar",
-    "additional_info": "1906, Valakonje, Boljevac, zemljoradnik, bio i rudarski radnik u Bogovini. U NOVJ od seitembra 1944, borac 2. čete 3. bataljona. Ranjen 7. oktobra iste godine u borbi protiv Nemaca kod sela Lukova. Prenesen u vojnu bolnicu na Ozrenu i idućeg dana podlegao ranama. Sahranjen na groblju u Sokobanji.",
+    "additional_info": "1906, Valakonje, Boljevac, zemljoradnik, bio i rudarski radnik u Bogovini. U NOVJ od septembra 1944, borac 2. čete 3. bataljona. Ranjen 7. oktobra iste godine u borbi protiv Nemaca kod sela Lukova. Prenesen u vojnu bolnicu na Ozrenu i idućeg dana podlegao ranama. Sahranjen na groblju u Sokobanji.",
     "birth_year": "1906",
-    "birth_place": "Valakonje, Boljevac",
     "death_type": "poginuo",
     "pdf_page": 3,
     "pdf_y": 51.5,
@@ -217,12 +216,13 @@
     "pdf_y_end": 108.3,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000007",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 338.6,
     "pdf_x_left": 55.9,
-    "death_place": "Sahranjen na groblju u Sokobanji"
+    "death_place": "Sahranjen na groblju u Sokobanji",
+    "birth_place": "Valakonje, Boljevac",
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "last_name": "Andrejević",
@@ -1007,19 +1007,19 @@
     "first_name": "Lazar",
     "fathers_name": "",
     "full_name": "Bosić Lazar",
-    "additional_info": "1921, Glamoč, Bosna, radnik. U NOVJ od 12. avgusta 1944, komandir Izviđačkog voda Štaba 20. brigade. Poginuo 20. decembra kod sela Čengića, Zvornik, u borbi protiv Nemaca iz 7. SS brdske divizije »Princ Eugen«. Sahranjep na seoskom groblju u Čengićima.",
+    "additional_info": "1921, Glamoč, Bosna, radnik. U NOVJ od 12. avgusta 1944, komandir Izviđačkog voda Štaba 20. brigade. Poginuo 20. decembra kod sela Čengića, Zvornik, u borbi protiv Nemaca iz 7. SS brdske divizije »Princ Eugen«. Sahranjen na seoskom groblju u Čengićima.",
     "birth_year": "1921",
-    "birth_place": "Glamoč, Bosna",
-    "death_type": "poginuo",
     "pdf_page": 64,
     "pdf_y": 52.5,
     "pdf_x": 59.8,
     "pdf_y_end": 95.6,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000034",
-    "occupation": "radnik",
     "pdf_x_end": 324.5,
     "pdf_x_left": 42.7,
+    "birth_place": "Glamoč, Bosna",
+    "occupation": "radnik",
+    "death_type": "poginuo",
     "death_place": "Čengić, Zvornik"
   },
   {
@@ -2110,11 +2110,11 @@
     "pdf_x_left": 49.0
   },
   {
-    "last_name": "Ilig",
+    "last_name": "Ilić",
     "middle_name": "Save",
     "first_name": "Janko",
     "fathers_name": "Sava",
-    "full_name": "Ilig Save Janko",
+    "full_name": "Ilić Save Janko",
     "additional_info": "1916, Batinac, Buprija, zemljoradnik. U NOVJ od 4. novembra 1944, borac 3. čete 2. bataljona. Poginuo 24. februara 1945. godine na kosi Straževac, Gračanica, u borbi protiv Nemaca i ustaša. Sahranjen u selu Pribavi, kasnije ga rodbina prenela u rodno selo.",
     "birth_year": "1916",
     "birth_place": "Batinac, Buprija",
@@ -2131,7 +2131,21 @@
     "unit_detail": "3. četa, 2. bataljon",
     "pdf_x_end": 352.3,
     "pdf_x_left": 70.5,
-    "death_place": "na kosi Straževac, Gračanica"
+    "death_place": "na kosi Straževac, Gračanica",
+    "other_sources": [
+      {
+        "soldier_id": "9025009762",
+        "name": "Ilić (Savo) Janko",
+        "additional_info": "rođen 1916, Batinac (Ćuprija). Srbin, poginuo 1945. u NOBu, Gračanica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=387",
+        "source_page": 387,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ilić",
@@ -4155,7 +4169,7 @@
     "last_name": "Jovanović",
     "middle_name": "Pegra",
     "first_name": "Živomir",
-    "fathers_name": "Pegar",
+    "fathers_name": "Petar",
     "full_name": "Jovanović Pegra Živomir",
     "additional_info": "1923, Aleksinac, krojački radnik. U NOVJ od septembra 1944. godine, bio član SKOJ-a. Ranjen 16. februara 1945. godine kod Drinjače, u borbi protiv Nemaca iz 22. pešadijske divizije. Umro u bolnici u Nišu, marta 1945. godine.",
     "birth_year": "1923",
@@ -7131,9 +7145,8 @@
     "first_name": "Radivoje",
     "fathers_name": "M",
     "full_name": "Milić M Radivoje",
-    "additional_info": "1922, Nićevac, Kruševac, zemljorad nik. U NOVJ od oktobra 1944, borac 1. čete 3. bataljona. Izviđač. Udavio se u Uni, kod Bosanske Dubice, 1. maja 1945. goding, pri pokušaju izviđačke grupe da pređe reku.",
+    "additional_info": "1922, Nićevac, Kruševac, zemljorad nik. U NOVJ od oktobra 1944, borac 1. čete 3. bataljona. Izviđač. Udavio se u Uni, kod Bosanske Dubice, 1. maja 1945. godine, pri pokušaju izviđačke grupe da pređe reku.",
     "birth_year": "1922",
-    "birth_place": "Nićevac, Kruševac",
     "death_type": "poginuo",
     "pdf_page": 32,
     "pdf_y": 191.2,
@@ -7141,10 +7154,11 @@
     "pdf_y_end": 225.9,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000250",
-    "rank": "izviđač",
-    "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 328.8,
-    "pdf_x_left": 47.0
+    "pdf_x_left": 47.0,
+    "birth_place": "Nićevac, Kruševac",
+    "rank": "izviđač",
+    "unit_detail": "1. četa, 3. bataljon"
   },
   {
     "last_name": "Milićević",
@@ -9463,9 +9477,9 @@
   {
     "last_name": "Nikodijević",
     "middle_name": "Živojina",
-    "first_name": "Radbel",
+    "first_name": "Ranđel",
     "fathers_name": "Živojin",
-    "full_name": "Nikodijević Živojina Radbel",
+    "full_name": "Nikodijević Živojina Ranđel",
     "additional_info": "1924, Dugo Polje, Sokobanja, zemljoradnik. U NOVJ od oktobra 1944, borac 3. čete 4. bataljona. Poginuo 27. januara 1945. godine na brdu Liješanj, Drinjača, u borbi protiv Nemaca iz 22. pešadijske divizije. Sahranjen više škole u Liješnju.",
     "birth_year": "1924",
     "birth_place": "Dugo Polje, Sokobanja",
@@ -9482,7 +9496,21 @@
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 302.1,
     "pdf_x_left": 20.4,
-    "death_place": "Liješanj, Drinjača"
+    "death_place": "Liješanj, Drinjača",
+    "other_sources": [
+      {
+        "soldier_id": "9025029796",
+        "name": "Nikodijević (Živojin) Ranđel",
+        "additional_info": "rođen 1924, Dugo Polje (Soko Banja). Srbin, poginuo 1945. u NOBu, Drinjači",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1151",
+        "source_page": 1151,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Nikodijević",
@@ -10475,20 +10503,20 @@
     "first_name": "Milorad",
     "fathers_name": "Milka",
     "full_name": "Pavličić Milke Milorad",
-    "additional_info": "1928, Gorica, Danilovgrad, Crna Gora, živeo u Vitomirici, ćak Poljoprivredne škole u Peći. Izbeglica, živeo u Jagodini. U NOVJ od septembra 1944, borac 1. čete 3. bataljona, a zatim desetar brigadne protivtenkovske čete. Junački poginuo u jednoj kući u borbi protnv Nemaca iz 7. SS brdske divizije »Princ Eugen« u Čengićima. Nemci ga spalili sa njegovim drugovima.",
+    "additional_info": "1928, Gorica, Danilovgrad, Crna Gora, živeo u Vitomirici, ćak Poljoprivredne škole u Peći. Izbeglica, živeo u Jagodini. U NOVJ od septembra 1944, borac 1. čete 3. bataljona, a zatim desetar brigadne protivtenkovske čete. Junački poginuo u jednoj kući u borbi protiv Nemaca iz 7. SS brdske divizije »Princ Eugen« u Čengićima. Nemci ga spalili sa njegovim drugovima.",
     "birth_year": "1928",
     "birth_place": "Gorica, Crna Gora",
-    "death_type": "poginuo",
     "pdf_page": 44,
     "pdf_y": 128.6,
     "pdf_x": 65.3,
     "pdf_y_end": 188.9,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000362",
-    "rank": "desetar",
-    "unit_detail": "3. bataljon, protivtenkovska četa",
     "pdf_x_end": 328.3,
     "pdf_x_left": 48.0,
+    "death_type": "poginuo",
+    "rank": "desetar",
+    "unit_detail": "3. bataljon, protivtenkovska četa",
     "other_sources": [
       {
         "soldier_id": "9035004278",
@@ -10873,22 +10901,22 @@
     "first_name": "Vladimir",
     "fathers_name": "Dragomir",
     "full_name": "Petković Dragomira Vladimir",
-    "additional_info": "1925, Sesalac, Sokobanja, zemljoradnik. U NOVJ od 1. novembra 1944, borac 3. bataljona. Poginuo 1. decembra iste godine u borbi protiv Nemaca, na brdu Loret, Požega. Sahraljen u selu Zaselje.",
+    "additional_info": "1925, Sesalac, Sokobanja, zemljoradnik. U NOVJ od 1. novembra 1944, borac 3. bataljona. Poginuo 1. decembra iste godine u borbi protiv Nemaca, na brdu Loret, Požega. Sahranjen u selu Zaselje.",
     "birth_year": "1925",
-    "birth_place": "Sesalac, Sokobanja",
-    "death_type": "poginuo",
     "pdf_page": 46,
     "pdf_y": 110.8,
     "pdf_x": 63.6,
     "pdf_y_end": 145.5,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000375",
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "3. bataljon",
     "pdf_x_end": 328.1,
     "pdf_x_left": 45.8,
-    "death_place": "Loret, Požega"
+    "birth_place": "Sesalac, Sokobanja",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_place": "Loret, Požega",
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Petković",
@@ -10979,21 +11007,22 @@
     "first_name": "Borisav",
     "fathers_name": "Stojan",
     "full_name": "Petrović Stojana Borisav",
-    "additional_info": "1927, Vitoševac, Ražanj, zemljoradnik. U NOVJ od oktobra 1944, desetar u 3. bataljonu. Poginuo 20. decembra kod Čengića, Zvornik, u borbi protpv Nemaca iz 7. SS brdske divizije »Princ Eugen«. Nemci ga mrtvog zapalili.",
+    "additional_info": "1927, Vitoševac, Ražanj, zemljoradnik. U NOVJ od oktobra 1944, desetar u 3. bataljonu. Poginuo 20. decembra kod Čengića, Zvornik, u borbi protiv Nemaca iz 7. SS brdske divizije »Princ Eugen«. Nemci ga mrtvog zapalili.",
     "birth_year": "1927",
-    "birth_place": "Vitoševac, Ražanj",
-    "death_type": "poginuo",
     "pdf_page": 46,
     "pdf_y": 299.2,
     "pdf_x": 62.1,
     "pdf_y_end": 342.1,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000379",
-    "occupation": "zemljoradnik",
-    "rank": "desetar",
-    "unit_detail": "3. bataljon",
     "pdf_x_end": 327.1,
-    "pdf_x_left": 45.1
+    "pdf_x_left": 45.1,
+    "birth_place": "Vitoševac, Ražanj",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_place": "Čengić, Zvornik",
+    "rank": "desetar",
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Petrović",
@@ -11314,22 +11343,23 @@
     "first_name": "Živadin",
     "fathers_name": "Miladin",
     "full_name": "Petrović Miladina Živadin",
-    "additional_info": "1924, Batinac, Nuprija, .čemljoradnik. U NOVJ od 4. novembra 1944, borac 2. čete 2. bataljona. Poginuo 5. aprila 1945. godine na kosi Straževac, Gračanica, u borbi protiv Nemaca i ustaša. Sahranjen na mestu pogibije.",
+    "additional_info": "1924, Batinac, Nuprija, .zemljoradnik. U NOVJ od 4. novembra 1944, borac 2. čete 2. bataljona. Poginuo 5. aprila 1945. godine na kosi Straževac, Gračanica, u borbi protiv Nemaca i ustaša. Sahranjen na mestu pogibije.",
     "birth_year": "1924",
-    "birth_place": "Batinac, Nuprija",
-    "death_type": "poginuo",
     "pdf_page": 47,
     "pdf_y": 39.1,
     "pdf_x": 28.8,
     "pdf_y_end": 82.4,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000389",
-    "death_date": "05.04.1945",
-    "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 293.3,
     "pdf_x_left": 11.8,
     "death_place": "na kosi Straževac, Gračanica",
+    "birth_place": "Batinac, Nuprija",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "05.04.1945",
+    "rank": "borac",
+    "unit_detail": "2. četa, 2. bataljon",
     "other_sources": [
       {
         "soldier_id": "9025009773",
@@ -12043,11 +12073,11 @@
     ]
   },
   {
-    "last_name": "Radosavljevjb",
+    "last_name": "Radisavljević",
     "middle_name": "Sofronija",
     "first_name": "Slavko",
     "fathers_name": "Sofronije",
-    "full_name": "Radosavljevjb Sofronija Slavko",
+    "full_name": "Radisavljević Sofronija Slavko",
     "additional_info": "1920, Aleksinac, đak srednje tehničke škole. U NOVJ od septembra 1944, borac 2. bataljona. Poginuo 7. januara 1945. godine kod Vlasenice, u borbi protiv Nemaca iz 963. tvrđavske pešadijske brigade.",
     "birth_year": "1920",
     "birth_place": "Aleksinac",
@@ -13898,16 +13928,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1151",
         "source_page": 1151,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0089000365",
+        "name": "Stanković Dobrosava Čedomir",
+        "additional_info": "1924, Dugo Polje, Sokobanja, zemljoradnik. U NOVJ od avgusta 1944, borac 20. NOU brigade, a zatim brigadne minerske čete 23. NO brigade. Poginuo 10. februara 1945. kod Kakmu-<<j.»i-, ža, Gračanica. Sahranjen na mestu pogibije.",
+        "pdf_file": "23-srpska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 78.1,
+        "pdf_y": 471.6,
+        "pdf_x_end": 383.3,
+        "pdf_y_end": 507.0,
+        "unit_file": "23-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_date": "10.02.1945",
     "borrowed": [
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
-    "death_place": "Kod ozrena"
+    "death_place": "kod Kakmu-<<j.»i-, ža, Gračanica",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Stankulić-Stankuljević",
@@ -15032,9 +15074,8 @@
     "first_name": "Svetolik",
     "fathers_name": "Milija",
     "full_name": "Stojiljković-Cvetanović Milije Svetolik",
-    "additional_info": "1921, Donji Krupac, Aleksinac, zemljoradnik. U NOVJ od 13. oktobra 1944. godine. Coginuo 1. maja 1945. godine kod Hrvatske Dubice, u borbi protiv Nemaca i ustaša.",
+    "additional_info": "1921, Donji Krupac, Aleksinac, zemljoradnik. U NOVJ od 13. oktobra 1944. godine. Poginuo 1. maja 1945. godine kod Hrvatske Dubice, u borbi protiv Nemaca i ustaša.",
     "birth_year": "1921",
-    "birth_place": "Donji Krupac, Aleksinac",
     "death_type": "poginuo",
     "pdf_page": 61,
     "pdf_y": 257.0,
@@ -15042,9 +15083,12 @@
     "pdf_y_end": 291.9,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000519",
-    "occupation": "zemljoradnik",
     "pdf_x_end": 310.6,
-    "pdf_x_left": 28.8
+    "pdf_x_left": 28.8,
+    "birth_place": "Donji Krupac, Aleksinac",
+    "occupation": "zemljoradnik",
+    "death_date": "01.05.1945",
+    "death_place": "Hrvatska Dubica"
   },
   {
     "last_name": "Stojković",
@@ -15343,19 +15387,19 @@
     "first_name": "Dušan",
     "fathers_name": "Čedomir",
     "full_name": "Tomić Čedomira Dušan",
-    "additional_info": "1923, Šetka, Ražanj, zemljoradpik. U NOVJ od 15. septembra 1944. godine. Poginuo 20. decembra u selu Čengići, Zvornik, u borbi protiv Nemaca iz 7. SS brdske divizije »Princ Eugen«. Sahranjen u Bjeloševcu.",
+    "additional_info": "1923, Šetka, Ražanj, zemljoradnik. U NOVJ od 15. septembra 1944. godine. Poginuo 20. decembra u selu Čengići, Zvornik, u borbi protiv Nemaca iz 7. SS brdske divizije »Princ Eugen«. Sahranjen u Bjeloševcu.",
     "birth_year": "1923",
-    "birth_place": "Šetka, Ražanj",
-    "death_type": "poginuo",
     "pdf_page": 63,
     "pdf_y": 32.3,
     "pdf_x": 37.2,
     "pdf_y_end": 67.5,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000531",
-    "occupation": "zemljoradnik",
     "pdf_x_end": 301.5,
     "pdf_x_left": 19.9,
+    "birth_place": "Šetka, Ražanj",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
     "death_place": "Čengići, Zvornik",
     "other_sources": [
       {
@@ -17107,9 +17151,8 @@
     "first_name": "Dragomir",
     "fathers_name": "Sava",
     "full_name": "Živković Save Dragomir",
-    "additional_info": "1921, Bradarac, Aleksinac, zemljoradnik. U NOVJ od 9. septembra 1944. godpne. U borbp protiv Nemaca kod Batara, Bosna, 19. decembra 1944. bio teško ranjen i podlegao ranama.",
+    "additional_info": "1921, Bradarac, Aleksinac, zemljoradnik. U NOVJ od 9. septembra 1944. godine. U borbp protiv Nemaca kod Batara, Bosna, 19. decembra 1944. bio teško ranjen i podlegao ranama.",
     "birth_year": "1921",
-    "birth_place": "Bradarac, Aleksinac",
     "death_type": "poginuo",
     "pdf_page": 13,
     "pdf_y": 54.4,
@@ -17117,9 +17160,10 @@
     "pdf_y_end": 89.1,
     "pdf_file": "20-srpska.pdf",
     "soldier_id": "0091000595",
-    "occupation": "zemljoradnik",
     "pdf_x_end": 327.1,
     "pdf_x_left": 44.9,
+    "birth_place": "Bradarac, Aleksinac",
+    "occupation": "zemljoradnik",
     "other_sources": [
       {
         "soldier_id": "9025000293",

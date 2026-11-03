@@ -27161,11 +27161,11 @@
     "soldier_id": "0168001532"
   },
   {
-    "last_name": "Jogović",
+    "last_name": "Jugović",
     "middle_name": "Bartula",
     "first_name": "Petar",
     "fathers_name": "Bartul",
-    "full_name": "Jogović Bartula Petar",
+    "full_name": "Jugović Bartula Petar",
     "additional_info": "Bol, o. Brač",
     "birth_year": "",
     "birth_place": "Bol, Brač",
@@ -46472,13 +46472,12 @@
     "soldier_id": "0168002646"
   },
   {
-    "last_name": "Mirosaljević",
+    "last_name": "Mirosavljević",
     "middle_name": "Petra",
     "first_name": "Rade",
     "fathers_name": "Petar",
-    "full_name": "Mirosaljević Petra Rade",
+    "full_name": "Mirosavljević Petra Rade",
     "additional_info": "Dragović, Pakrac",
-    "birth_year": "",
     "birth_place": "Dragović, Pakrac",
     "pdf_page": 33,
     "pdf_y": 26.0,
@@ -46486,7 +46485,30 @@
     "pdf_y_end": 46.0,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 176.2,
-    "soldier_id": "0168002647"
+    "soldier_id": "0168002647",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "kolar",
+    "other_sources": [
+      {
+        "soldier_id": "0018001037",
+        "name": "Mirosavljević Petra Rade",
+        "additional_info": "rođen 1924, Dragović — Pakrac, Srbin, kolar, stupio u NOVJ 1942, komesar čete.",
+        "pdf_file": "2-vojvodjanska.pdf",
+        "pdf_page": 78,
+        "pdf_x": 115.0,
+        "pdf_y": 458.4,
+        "pdf_x_end": 375.7,
+        "pdf_y_end": 474.7,
+        "pdf_x_left": 108.1,
+        "unit_file": "2-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mirošević",
@@ -65192,6 +65214,18 @@
           ]
         ],
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0046001046",
+        "name": "Stanojević Josipa Ante",
+        "additional_info": "zvani Lovac; zamenik intendanta 1. bataljona, rođen 1917, Komiža, Vis, zemljoradnik, Hrvat, u NOB od 1941, član KPJ od 1940, krajem rata politički komesar bataljona u KNOJ-u.",
+        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 4.6,
+        "pdf_y": 119.6,
+        "pdf_x_end": 169.8,
+        "pdf_y_end": 181.6,
+        "unit_file": "3-dalmatinska-soldiers.json"
       }
     ]
   },

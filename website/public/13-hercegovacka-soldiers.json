@@ -10667,11 +10667,11 @@
     "pdf_x_end": 157.7
   },
   {
-    "last_name": "Helebić",
+    "last_name": "Halebić",
     "middle_name": "Bećira",
     "first_name": "Salko",
     "fathers_name": "Bećir",
-    "full_name": "Helebić Bećira Salko",
+    "full_name": "Halebić Bećira Salko",
     "additional_info": "1923, s. Lug, Jablanica, 23. 2. 1945, Ostrožac, 3. bat.",
     "birth_year": "1923",
     "birth_place": "Lug, Jablanica",
@@ -26780,7 +26780,29 @@
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100001370",
     "unit_detail": "4. bataljon",
-    "pdf_x_end": 348.3
+    "pdf_x_end": 348.3,
+    "ethnicity": "Srpkinja",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "domaćica",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0043001029",
+        "name": "Remetić Mate Ljubica",
+        "additional_info": "bolničarka u 4. bataljonu, rođena 1923, Biograd, i Nevesinje, domaćica, Srpkinja, u NOB od marta 1942, član KPJ, poginula na Ivan Sedlu kod Konjica 6. marta 1945. godine.",
+        "pdf_file": "borci-sutjeske-10-hercegovacka.pdf",
+        "pdf_page": 58,
+        "pdf_x": 97.2,
+        "pdf_y": 511.1,
+        "pdf_x_end": 268.6,
+        "pdf_y_end": 575.5,
+        "unit_file": "10-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Remetić",

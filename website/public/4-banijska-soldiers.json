@@ -3950,13 +3950,12 @@
     "pdf_x_end": 306.2
   },
   {
-    "last_name": "Bomežtar",
+    "last_name": "Bomeštar",
     "middle_name": "Petra",
     "first_name": "Milan",
     "fathers_name": "Petar",
-    "full_name": "Bomežtar Petra Milan",
+    "full_name": "Bomeštar Petra Milan",
     "additional_info": "rođen u Banjanima (Otoka), poginuo",
-    "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 171.3,
     "pdf_x": 70.4,
@@ -3965,7 +3964,39 @@
     "soldier_id": "0020000188",
     "birth_place": "Banjani (Otoka)",
     "death_type": "poginuo",
-    "pdf_x_end": 346.9
+    "pdf_x_end": 346.9,
+    "other_sources": [
+      {
+        "soldier_id": "9040000495",
+        "name": "Bomeštar Petar Milan",
+        "additional_info": "Spisak palih boraca u Cazinskoj krajini, Banjani, opština Bosanska Krupa: Bomeštar Petar Milan, 1923–1943",
+        "pdf_file": "cazinska-krajina-pali-borci.pdf",
+        "pdf_page": 7,
+        "pdf_x": 224.4,
+        "pdf_y": 531.8,
+        "pdf_x_end": 345.7,
+        "pdf_y_end": 540.8,
+        "ref_book": "cazinska-krajina-pali-borci"
+      },
+      {
+        "soldier_id": "9022006417",
+        "name": "Bomeštar (Petar) Milan",
+        "additional_info": "rođen 1923, Banjani (Bosanska Gradiška). Srbin, poginuo 1943. u NOBu, Bučica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=686",
+        "source_page": 686,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "death_date": "1943",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "birth_year": "1923",
+    "ethnicity": "Srbin",
+    "death_place": "Bučica"
   },
   {
     "last_name": "Borić",
@@ -15534,7 +15565,23 @@
     "death_type": "poginuo",
     "death_date": "18.06.1943",
     "party": "SKOJ",
+    "death_place": "kod Prače, na komunikaciji Sarajevo-Višegrad",
+    "borrowed": [
+      "death_place"
+    ],
     "other_sources": [
+      {
+        "soldier_id": "0045000546",
+        "name": "Kepcija Miloša Đuro",
+        "additional_info": "borac 2. bataljona, rođen 1924, Kepčije, Dvor, zemljoradnik, Srbin, u NOB od 1942, poginuo kod Prače, na komunikaciji Sarajevo-Višegrad, 17. juna 1943.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 8.9,
+        "pdf_y": 150.8,
+        "pdf_x_end": 170.3,
+        "pdf_y_end": 203.2,
+        "unit_file": "8-banijska-soldiers.json"
+      },
       {
         "soldier_id": "0045010353",
         "name": "Kepcija Miloša Đuro",
@@ -15551,6 +15598,12 @@
     "variants": {
       "born": [
         "1924"
+      ],
+      "death": [
+        {
+          "date": "17.06.1943",
+          "place": "kod Prače, na komunikaciji Sarajevo-Višegrad"
+        }
       ]
     }
   },
@@ -16073,6 +16126,18 @@
     "death_date": "06.1943",
     "death_place": "na Stujesci",
     "other_sources": [
+      {
+        "soldier_id": "0045000461",
+        "name": "Klobučar Steve Nikola",
+        "additional_info": "borac, rođen 1925, Donje Selište, Glina, zemljoradnik, Srbin, u NOB od 1942, poginuo 1943. u bici na Sutjesci.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 9.4,
+        "pdf_y": 248.0,
+        "pdf_x_end": 170.3,
+        "pdf_y_end": 289.6,
+        "unit_file": "8-banijska-soldiers.json"
+      },
       {
         "soldier_id": "0045010357",
         "name": "Klobučar Steve Nikola",

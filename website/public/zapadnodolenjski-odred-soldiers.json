@@ -1427,7 +1427,6 @@
     "fathers_name": "",
     "full_name": "Boštjančič Marija",
     "additional_info": "zvana Olga; Ljubljana, 1921—",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 394.0,
@@ -1435,7 +1434,40 @@
     "pdf_y_end": 408.7,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000049",
-    "pdf_x_end": 123.0
+    "pdf_x_end": 123.0,
+    "birth_place": "Ljubljana",
+    "other_sources": [
+      {
+        "soldier_id": "9020007282",
+        "name": "Boštjančič (Joža) Marija",
+        "additional_info": "rođena 1921, Ljubljana Del (Ljubljana-Vič-Rudnik). Slovenka, poginula 1944. u NOBu, Vel. cerovec",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=255",
+        "source_page": 255,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0062000219",
+        "name": "Boštjančič Marija",
+        "additional_info": "zvana Olga; Ljubljana, 1921—",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 39,
+        "pdf_x": 44.7,
+        "pdf_y": 136.2,
+        "pdf_x_end": 137.6,
+        "pdf_y_end": 153.4,
+        "unit_file": "gubceva-soldiers.json"
+      }
+    ],
+    "ethnicity": "Slovenka",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Vel. cerovec",
+    "birth_year": "1921"
   },
   {
     "last_name": "Božič",
@@ -2188,7 +2220,8 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000078",
     "pdf_x_end": 217.2,
-    "birth_place": "Hambom"
+    "birth_place": "Hambom",
+    "death_date": "1944"
   },
   {
     "last_name": "Dobravc",
@@ -3212,7 +3245,8 @@
     "pdf_y_end": 353.7,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000112",
-    "pdf_x_end": 220.8
+    "pdf_x_end": 220.8,
+    "birth_place": "Lipa"
   },
   {
     "last_name": "Ferlež",
@@ -4961,7 +4995,8 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000176",
     "pdf_x_end": 319.4,
-    "birth_place": "Vinji vrh"
+    "birth_place": "Vinji vrh",
+    "death_date": "1943"
   },
   {
     "last_name": "Hočevar",
@@ -5413,7 +5448,6 @@
     "fathers_name": "",
     "full_name": "Intihar Ivan",
     "additional_info": "Spodnje Vodale, -1942",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 8,
     "pdf_y": 247.6,
@@ -5422,7 +5456,26 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000194",
     "pdf_x_end": 332.3,
-    "birth_place": "Spodnje Vodale"
+    "birth_place": "Spodnje Vodale",
+    "death_date": "1942",
+    "other_sources": [
+      {
+        "soldier_id": "9020012802",
+        "name": "Intihar (Ivan) Ivan",
+        "additional_info": "rođen 1921, Spodnje Vodale (Sevnica). Slovenac, poginuo 1942. u NOBu, Ajdovec-žužemb.",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=455",
+        "source_page": 455,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ajdovec-žužemb",
+    "birth_year": "1921"
   },
   {
     "last_name": "Iskra",
@@ -5971,6 +6024,7 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000210",
     "pdf_x_end": 323.7,
+    "birth_place": "Polje",
     "other_sources": [
       {
         "soldier_id": "9020006525",
@@ -5981,15 +6035,13 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Polje, Ljubljana-Moste-Polje",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Slovenac",
     "death_date": "1944",
     "death_place": "Grosuplje",
     "birth_year": "1925"
@@ -6487,7 +6539,8 @@
     "pdf_y_end": 419.0,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000229",
-    "pdf_x_end": 340.3
+    "pdf_x_end": 340.3,
+    "birth_place": "Troščine"
   },
   {
     "last_name": "Jerman",
@@ -9382,12 +9435,11 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000328",
     "pdf_x_end": 127.6,
+    "birth_place": "Otočec",
     "birth_year": "1914",
     "borrowed": [
-      "birth_place",
       "birth_year"
     ],
-    "birth_place": "Otočec",
     "other_sources": [
       {
         "soldier_id": "0070000688",
@@ -14854,6 +14906,7 @@
     "soldier_id": "0068000519",
     "pdf_x_end": 224.5,
     "birth_place": "Gorenje Polje",
+    "death_date": "1942",
     "other_sources": [
       {
         "soldier_id": "9020010369",
@@ -14867,12 +14920,8 @@
     "ethnicity": "Slovenac",
     "borrowed": [
       "birth_year",
-      "death_date",
-      "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
-    "death_place": "Varta vas",
     "birth_year": "1921"
   },
   {
@@ -16421,11 +16470,12 @@
     "soldier_id": "0068000574",
     "pdf_x_end": 325.9,
     "birth_place": "Dolnja Briga",
+    "death_date": "1944",
     "other_sources": [
       {
         "soldier_id": "0167001620",
         "name": "Rački Adolf",
-        "additional_info": "Briga, Kočevje, p Rdčki lvan 192b Grgelj, Kočevje",
+        "additional_info": "Briga, Kočevje, p Rdčki lvan 1926 Grgelj, Kočevje",
         "pdf_file": "deveta.pdf",
         "pdf_page": 15,
         "pdf_x": 37.0,
@@ -16519,7 +16569,6 @@
     "fathers_name": "",
     "full_name": "Rehar Vinko",
     "additional_info": "zvani Cene; Mirna, -1943",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 151.9,
@@ -16528,7 +16577,26 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000577",
     "pdf_x_end": 326.7,
-    "birth_place": "Mirna"
+    "birth_place": "Mirna",
+    "death_date": "1943",
+    "other_sources": [
+      {
+        "soldier_id": "9020015684",
+        "name": "Rehar (Franc) Vinko",
+        "additional_info": "rođen 1912, Mirna (Trebnje). Slovenac, poginuo 1943. u NOBu, Kočevje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=546",
+        "source_page": 546,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kočevje",
+    "birth_year": "1912"
   },
   {
     "last_name": "Remih",
@@ -17004,7 +17072,6 @@
     "fathers_name": "",
     "full_name": "Rojc Slavko",
     "additional_info": "Praproče, 1925-",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 9,
     "pdf_y": 246.0,
@@ -17012,7 +17079,38 @@
     "pdf_y_end": 252.5,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000593",
-    "pdf_x_end": 335.7
+    "pdf_x_end": 335.7,
+    "birth_place": "Praproče",
+    "other_sources": [
+      {
+        "soldier_id": "9020004737",
+        "name": "Rojc (Anton) Slavko",
+        "additional_info": "rođen 1925, Praproče (Koper). Slovenac, poginuo 1944. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=169",
+        "source_page": 169,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0167001656",
+        "name": "Rojc Slavko",
+        "additional_info": "1925, Praproče",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 15,
+        "pdf_x": 138.5,
+        "pdf_y": 418.2,
+        "pdf_x_end": 182.4,
+        "pdf_y_end": 430.1,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ],
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "death_date": "1944"
   },
   {
     "last_name": "Romih",
@@ -17350,7 +17448,8 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000605",
     "pdf_x_end": 338.3,
-    "birth_place": "Krka"
+    "birth_place": "Krka",
+    "death_date": "1942"
   },
   {
     "last_name": "Saje",
@@ -18003,7 +18102,8 @@
     "pdf_y_end": 499.9,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000631",
-    "pdf_x_end": 337.6
+    "pdf_x_end": 337.6,
+    "birth_place": "Žužemberk"
   },
   {
     "last_name": "Sluga",
@@ -19234,6 +19334,7 @@
     "soldier_id": "0068000677",
     "pdf_x_end": 229.2,
     "birth_place": "Pavla vas",
+    "death_date": "1944",
     "birth_year": "1917",
     "borrowed": [
       "birth_year"
@@ -19764,7 +19865,8 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000696",
     "pdf_x_end": 230.6,
-    "birth_place": "Malkovec"
+    "birth_place": "Malkovec",
+    "death_date": "1942"
   },
   {
     "last_name": "Ursyner",
@@ -20560,7 +20662,6 @@
     "fathers_name": "",
     "full_name": "Vovko Alojz",
     "additional_info": "Žaloviče, 1908-",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 79.6,
@@ -20568,7 +20669,28 @@
     "pdf_y_end": 86.1,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000725",
-    "pdf_x_end": 332.4
+    "pdf_x_end": 332.4,
+    "birth_place": "Žaloviče",
+    "birth_year": "1908",
+    "borrowed": [
+      "birth_year",
+      "death_date"
+    ],
+    "death_date": "1943",
+    "other_sources": [
+      {
+        "soldier_id": "0062002736",
+        "name": "Vovko Alojz",
+        "additional_info": "Žalovče, 1908—1943",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 49,
+        "pdf_x": 45.3,
+        "pdf_y": 95.9,
+        "pdf_x_end": 128.1,
+        "pdf_y_end": 113.0,
+        "unit_file": "gubceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vovko",
@@ -20659,7 +20781,6 @@
     "fathers_name": "",
     "full_name": "Vovko Jože",
     "additional_info": "Žaloviče, 1912—",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 10,
     "pdf_y": 103.6,
@@ -20667,7 +20788,40 @@
     "pdf_y_end": 110.1,
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000727",
-    "pdf_x_end": 335.5
+    "pdf_x_end": 335.5,
+    "birth_place": "Žaloviče",
+    "other_sources": [
+      {
+        "soldier_id": "9020010864",
+        "name": "Vovko (Franc) Jože",
+        "additional_info": "rođen 1912, Žaloviče (Novo Mesto). Slovenac, poginuo 1942. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=386",
+        "source_page": 386,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0167002051",
+        "name": "Vovko Jože",
+        "additional_info": "1912, Žaloviče, p. 1943 Jelenje pri Sušaku",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 20,
+        "pdf_x": 35.8,
+        "pdf_y": 199.9,
+        "pdf_x_end": 88.4,
+        "pdf_y_end": 218.7,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ],
+    "birth_year": "1912",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Jelenje pri Sušaku",
+    "ethnicity": "Slovenac"
   },
   {
     "last_name": "Vošnjak",
@@ -21508,7 +21662,8 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000757",
     "pdf_x_end": 324.2,
-    "birth_place": "Ševnica"
+    "birth_place": "Ševnica",
+    "death_date": "1945"
   },
   {
     "last_name": "Zupančič",
@@ -22928,7 +23083,8 @@
     "pdf_file": "zapadnodolenjski-odred.pdf",
     "soldier_id": "0068000809",
     "pdf_x_end": 227.7,
-    "birth_place": "Gornji Vrh"
+    "birth_place": "Gornji Vrh",
+    "death_date": "1943"
   },
   {
     "last_name": "Štefančič",

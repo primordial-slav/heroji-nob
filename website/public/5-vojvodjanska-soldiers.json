@@ -12045,11 +12045,11 @@
   },
   {
     "soldier_id": "0082009013",
-    "last_name": "Dabrić",
+    "last_name": "Dobrić",
     "middle_name": "Dušana",
     "first_name": "Ivan",
     "fathers_name": "Dušan",
-    "full_name": "Dabrić Dušana Ivan",
+    "full_name": "Dobrić Dušana Ivan",
     "additional_info": "1927, Batajnica, Zemun, zemljoradnik, borac.",
     "birth_year": "1927",
     "pdf_file": "5-vojvodjanska.pdf",
@@ -12063,11 +12063,11 @@
     "pdf_y_end": 239.2
   },
   {
-    "last_name": "Dabrilović",
+    "last_name": "Dobrilović",
     "middle_name": "Paje",
     "first_name": "Zvonimir",
     "fathers_name": "Paja",
-    "full_name": "Dabrilović Paje Zvonimir",
+    "full_name": "Dobrilović Paje Zvonimir",
     "additional_info": "1918, Prhovo, Ruma, zemljoradnik, borac.",
     "birth_year": "1918",
     "pdf_page": 24,
@@ -18812,17 +18812,18 @@
     "first_name": "Đorđe",
     "fathers_name": "",
     "full_name": "Gmizić Đorđe",
-    "additional_info": "1916, Dobrinci, Ruma, zemljoradnik, boiac.",
+    "additional_info": "1916, Dobrinci, Ruma, zemljoradnik, borac.",
     "birth_year": "1916",
     "pdf_page": 38,
     "pdf_y": 323.5,
     "pdf_x": 105.9,
     "pdf_y_end": 333.5,
     "pdf_file": "5-vojvodjanska.pdf",
-    "birth_place": "Dobrinci, Ruma",
     "soldier_id": "0082000830",
+    "pdf_x_end": 367.7,
+    "birth_place": "Dobrinci, Ruma",
     "occupation": "zemljoradnik",
-    "pdf_x_end": 367.7
+    "rank": "borac"
   },
   {
     "last_name": "Godoš",
@@ -26437,7 +26438,7 @@
     "first_name": "Milenko",
     "fathers_name": "",
     "full_name": "Jovanov Milenko",
-    "additional_info": "1923, Taraš, Novi Bečej, trgovački pomoćnik, orc",
+    "additional_info": "1923, Taraš, Novi Bečej, trgovački pomoćnik, borac",
     "birth_year": "1923",
     "pdf_page": 51,
     "pdf_y": 80.6,
@@ -26447,7 +26448,8 @@
     "soldier_id": "0082001170",
     "pdf_x_end": 352.3,
     "birth_place": "Taraš, Novi Bečej",
-    "occupation": "trgovački pomoćnik"
+    "occupation": "trgovački pomoćnik",
+    "rank": "borac"
   },
   {
     "last_name": "Jovanov",
@@ -43164,7 +43166,7 @@
       {
         "soldier_id": "0057001835",
         "name": "Marinković Svetozara Branko",
-        "additional_info": "rođen 1922. Krnješevci, komandvoda. ranjen 8. 6. 1944. Bare, istočna Bosna.",
+        "additional_info": "rođen 1922. Krnješevci, komandir voda. ranjen 8. 6. 1944. Bare, istočna Bosna.",
         "pdf_file": "3-vojvodjanska.pdf",
         "pdf_page": 116,
         "pdf_x": 68.1,
@@ -54230,18 +54232,21 @@
     "first_name": "Rajko",
     "fathers_name": "",
     "full_name": "Nikolić Rajko",
-    "additional_info": "1924, Porebrica, Brčko, zemljoradnik, zamenik komandira čete, poainuo 9. XII 1944. u Vukovaru.",
+    "additional_info": "1924, Porebrica, Brčko, zemljoradnik, zamenik komandira čete, poginuo 9. XII 1944. u Vukovaru.",
     "birth_year": "1924",
     "pdf_page": 95,
     "pdf_y": 401.9,
     "pdf_x": 70.3,
     "pdf_y_end": 420.5,
     "pdf_file": "5-vojvodjanska.pdf",
-    "birth_place": "Porebrica, Brčko",
     "soldier_id": "0082002391",
-    "occupation": "zemljoradnik",
-    "rank": "zamenik komandira čete",
     "pdf_x_end": 351.9,
+    "birth_place": "Porebrica, Brčko",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "09.12.1944",
+    "death_place": "Vukovar",
+    "rank": "zamenik komandira čete",
     "other_sources": [
       {
         "soldier_id": "9014011214",
@@ -59062,11 +59067,15 @@
     "rank": "komesar čete",
     "pdf_x_end": 359.2,
     "ethnicity": "Srbin",
+    "death_place": "kod Kalinovika u Bosni",
+    "borrowed": [
+      "death_place"
+    ],
     "other_sources": [
       {
         "soldier_id": "0018001243",
         "name": "Pepin V Slobodan",
-        "additional_info": "rođen 1920, Novi Karlovci, Srbin, zemljoradnik, stupio u NOVJ 1942, komandir čete, popinuo 1944. kod Kalinovika u Bosni.",
+        "additional_info": "rođen 1920, Novi Karlovci, Srbin, zemljoradnik, stupio u NOVJ 1942, komandir čete, poginuo 1944. kod Kalinovika u Bosni.",
         "pdf_file": "2-vojvodjanska.pdf",
         "pdf_page": 92,
         "pdf_x": 112.4,
@@ -82303,7 +82312,7 @@
     "first_name": "Dušan",
     "fathers_name": "",
     "full_name": "Velisavljević Dušan",
-    "additional_info": "1923. Prosar, Ruma. zemljoradnik. komesar čete. ooginuo krajem septembra 1944. kod Lešnice.",
+    "additional_info": "1923. Prosar, Ruma. zemljoradnik. komesar čete. poginuo krajem septembra 1944. kod Lešnice.",
     "birth_year": "1923",
     "pdf_page": 144,
     "pdf_y": 422.1,
@@ -82314,6 +82323,9 @@
     "soldier_id": "0082003660",
     "pdf_x_end": 377.0,
     "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "krajem septembra 1944",
+    "death_place": "Lešnica",
     "rank": "komesar čete"
   },
   {

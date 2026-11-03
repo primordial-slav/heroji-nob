@@ -1888,7 +1888,7 @@
     "first_name": "Dafina",
     "fathers_name": "",
     "full_name": "Bogdanović-Mihajlović Dafina",
-    "additional_info": "učenica, rođena 1928. u Zemunu, član SKOJ-a. u NOB od 1943. vodna bolničaoka",
+    "additional_info": "učenica, rođena 1928. u Zemunu, član SKOJ-a. u NOB od 1943. vodna bolničarka",
     "birth_year": "1928",
     "pdf_page": 3,
     "pdf_y": 255.8,
@@ -1896,10 +1896,11 @@
     "pdf_y_end": 270.7,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076000080",
+    "pdf_x_end": 363.1,
+    "party": "SKOJ",
     "birth_place": "Zemun",
     "occupation": "učenica",
-    "pdf_x_end": 363.1,
-    "party": "SKOJ"
+    "rank": "bolničarka"
   },
   {
     "last_name": "Bogić",
@@ -5464,7 +5465,7 @@
     "first_name": "Teša",
     "fathers_name": "",
     "full_name": "Gradin Teša",
-    "additional_info": "ratar, rođen 1923, Mokrin — Banat, mitraljezac, popinuo 24. IV 1945. u Rizovačke krčevine",
+    "additional_info": "ratar, rođen 1923, Mokrin — Banat, mitraljezac, poginuo 24. IV 1945. u Rizovačke krčevine",
     "birth_year": "1923",
     "death_type": "poginuo",
     "pdf_page": 37,
@@ -5473,9 +5474,11 @@
     "pdf_y_end": 115.9,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076000235",
+    "pdf_x_end": 355.7,
     "birth_place": "Mokrin, Banat",
-    "rank": "mitraljezac",
-    "pdf_x_end": 355.7
+    "death_date": "24.04.1945",
+    "death_place": "u Rizovačke krčevine",
+    "rank": "mitraljezac"
   },
   {
     "last_name": "Grbić",
@@ -6636,7 +6639,7 @@
     "first_name": "Radovan",
     "fathers_name": "",
     "full_name": "Ilić Radovan",
-    "additional_info": "ratar, rođen 1923, Vlasenica — Bosna, popinuo 8. II 1945. u s. Lisičina",
+    "additional_info": "ratar, rođen 1923, Vlasenica — Bosna, poginuo 8. II 1945. u s. Lisičina",
     "birth_year": "1923",
     "death_type": "poginuo",
     "pdf_page": 37,
@@ -6645,8 +6648,10 @@
     "pdf_y_end": 470.4,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076000285",
-    "birth_place": "Vlasenica, Bosna",
     "pdf_x_end": 357.3,
+    "birth_place": "Vlasenica, Bosna",
+    "death_date": "08.02.1945",
+    "death_place": "Lisičine",
     "other_sources": [
       {
         "soldier_id": "9025037102",
@@ -6659,12 +6664,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
-      "death_place",
       "ethnicity"
-    ],
-    "death_date": "1944",
-    "death_place": "Mitrovica"
+    ]
   },
   {
     "last_name": "Ilić",
@@ -13568,7 +13569,7 @@
     "first_name": "Drenka",
     "fathers_name": "",
     "full_name": "Maričić Drenka",
-    "additional_info": "domaćica, rođena 1925. u Sanici (BiH), u NOB od 1943, bolničaoka",
+    "additional_info": "domaćica, rođena 1925. u Sanici (BiH), u NOB od 1943, bolničarka",
     "birth_year": "1925",
     "pdf_page": 16,
     "pdf_y": 438.2,
@@ -13577,8 +13578,9 @@
     "pdf_file": "4-vojvodjanska.pdf",
     "birth_place": "Sanica, BiH",
     "soldier_id": "0076000574",
+    "pdf_x_end": 333.4,
     "occupation": "domaćica",
-    "pdf_x_end": 333.4
+    "rank": "bolničarka"
   },
   {
     "last_name": "Marjanović",
@@ -16509,7 +16511,7 @@
     "first_name": "Branko",
     "fathers_name": "",
     "full_name": "Nikolić Branko",
-    "additional_info": "zemljoradnik rođen 1919. U Ugrinovcima (Srem), u NOB od 1943, desetao",
+    "additional_info": "zemljoradnik rođen 1919. U Ugrinovcima (Srem), u NOB od 1943, desetar",
     "birth_year": "1919",
     "pdf_page": 19,
     "pdf_y": 458.0,
@@ -16531,11 +16533,12 @@
       }
     ],
     "death_type": "poginuo",
-    "birth_place": "U Ugrinovcima (Srem)",
     "death_date": "18.05.1944",
     "death_place": "u S. Stublići",
     "pdf_x_end": 362.9,
-    "occupation": "zemljoradnik"
+    "birth_place": "U Ugrinovcima (Srem)",
+    "occupation": "zemljoradnik",
+    "rank": "desetar"
   },
   {
     "last_name": "Nikolić",
@@ -16737,7 +16740,7 @@
     "first_name": "Stevan",
     "fathers_name": "",
     "full_name": "Nikolić Stevan",
-    "additional_info": "zemljoradnik. roćen 1920. U Jakovu (Srem), u NOB od 1943, booac, POGINUO 29. 11. 1943 — Vitčica",
+    "additional_info": "zemljoradnik. roćen 1920. U Jakovu (Srem), u NOB od 1943, borac, POGINUO 29. 11. 1943 — Vitčica",
     "birth_year": "1920",
     "pdf_page": 19,
     "pdf_y": 405.6,
@@ -16745,12 +16748,13 @@
     "pdf_y_end": 420.5,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076000715",
+    "pdf_x_end": 363.9,
+    "birth_place": "U Jakovu (Srem)",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "29.11.1943",
     "death_place": "Vitčica",
-    "pdf_x_end": 363.9,
-    "birth_place": "U Jakovu (Srem)"
+    "rank": "borac"
   },
   {
     "last_name": "Nikolić",
@@ -22385,7 +22389,7 @@
     "first_name": "Lela",
     "fathers_name": "",
     "full_name": "Stanković Lela",
-    "additional_info": "domaćica. rođena 1922, Vitojevci — Srem, bolničarka, poginulg; 20. V 1944. u s. Martinovići",
+    "additional_info": "domaćica. rođena 1922, Vitojevci — Srem, bolničarka, poginula; 20. V 1944. u s. Martinovići",
     "birth_year": "1922",
     "death_type": "poginuo",
     "pdf_page": 49,
@@ -22394,10 +22398,10 @@
     "pdf_y_end": 414.7,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076000962",
+    "pdf_x_end": 370.9,
     "birth_place": "Vitojevci, Srem",
     "occupation": "domaćica",
-    "rank": "bolničarka",
-    "pdf_x_end": 370.9
+    "rank": "bolničarka"
   },
   {
     "last_name": "Stanković",
@@ -22709,7 +22713,7 @@
     "first_name": "Smilja",
     "fathers_name": "",
     "full_name": "Stepanović Smilja",
-    "additional_info": "domaćica, rođena u Pećincima (Srem), u NOB od 1943. član SKOJ-a od 1943, booac",
+    "additional_info": "domaćica, rođena u Pećincima (Srem), u NOB od 1943. član SKOJ-a od 1943, borac",
     "birth_year": "",
     "pdf_page": 25,
     "pdf_y": 290.2,
@@ -22718,9 +22722,10 @@
     "pdf_file": "4-vojvodjanska.pdf",
     "birth_place": "Pećinci, Srem",
     "soldier_id": "0076000977",
-    "occupation": "domaćica",
     "pdf_x_end": 351.7,
-    "party": "SKOJ 1943"
+    "party": "SKOJ 1943",
+    "occupation": "domaćica",
+    "rank": "borac"
   },
   {
     "last_name": "Stepanović",
@@ -24502,7 +24507,7 @@
     "first_name": "Mile",
     "fathers_name": "",
     "full_name": "Verenac Mile",
-    "additional_info": "u NOB od 1942, član KPJ od 1942, zamenik komandanta bataljopa",
+    "additional_info": "u NOB od 1942, član KPJ od 1942, zamenik komandanta bataljona",
     "birth_year": "",
     "pdf_page": 28,
     "pdf_y": 364.8,
@@ -24510,9 +24515,9 @@
     "pdf_y_end": 379.7,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076001063",
-    "rank": "zamenik komandanta",
     "pdf_x_end": 345.3,
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "rank": "zamenik komandanta bataljona"
   },
   {
     "last_name": "Večerinac",
@@ -26904,8 +26909,8 @@
     "first_name": "Živka",
     "fathers_name": "",
     "full_name": "Čisarov Živka",
-    "additional_info": "domaćica, rođsna 1923, Čurug — Bačka, bolničarka, ioginula 21. III 1945. u s. Beremend",
-    "birth_year": "",
+    "additional_info": "domaćica, rođena 1923, Čurug — Bačka, bolničarka, poginula 21. III 1945. u s. Beremend",
+    "birth_year": "1923",
     "death_type": "poginuo",
     "pdf_page": 35,
     "pdf_y": 65.1,
@@ -26913,9 +26918,12 @@
     "pdf_y_end": 80.2,
     "pdf_file": "4-vojvodjanska.pdf",
     "soldier_id": "0076001169",
+    "pdf_x_end": 360.9,
+    "birth_place": "Čurug, Bačka",
     "occupation": "domaćica",
-    "rank": "bolničarka",
-    "pdf_x_end": 360.9
+    "death_date": "21.03.1945",
+    "death_place": "Beremend",
+    "rank": "bolničarka"
   },
   {
     "last_name": "Čitać",

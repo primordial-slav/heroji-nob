@@ -190,7 +190,7 @@
       {
         "soldier_id": "9105000122",
         "name": "Adžibaba Rade Mihajlo",
-        "additional_info": "Pali borci općine Primišlje 1941—1945., Donje Primišlje: 1. Adžibaba Rade Mihajlo, rođen 1910, stupio u NOV 1943, borac dopunskog bat. 8. divizije, poginuo od mine na Tržičkom mostu l944.",
+        "additional_info": "Pali borci općine Primišlje 1941—1945., Donje Primišlje: 1. Adžibaba Rade Mihajlo, rođen 1910, stupio u NOV 1943, borac dopunskog bat. 8. divizije, poginuo od mine na Tržičkom mostu 1944.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071&pg_seq=182",
         "source_page": 182,
         "ref_book": "kordunski-rekvijem"
@@ -10854,7 +10854,7 @@
     "first_name": "Đuro",
     "fathers_name": "Gligorije",
     "full_name": "Bućan Gligorije Đuro",
-    "additional_info": "1908, Cremušnica, stupio u NOV 1. 9. 1942, borac 1. brig. 8. div, poginuo 23. 11- l944- ko<* Josipdola",
+    "additional_info": "1908, Cremušnica, stupio u NOV 1. 9. 1942, borac 1. brig. 8. div, poginuo 23. 11- 1944- ko<* Josipdola",
     "birth_year": "1908",
     "unit_detail": "1. brigada",
     "pdf_page": 12,
@@ -10863,10 +10863,11 @@
     "pdf_y_end": 205.3,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060000298",
+    "pdf_x_end": 265.8,
     "birth_place": "Cremušnica",
     "death_type": "poginuo",
+    "death_date": "1944",
     "rank": "borac",
-    "pdf_x_end": 265.8,
     "other_sources": [
       {
         "soldier_id": "9021053778",
@@ -10879,11 +10880,9 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1944",
     "death_place": "Trojrer, Lika"
   },
   {
@@ -31233,11 +31232,11 @@
     ]
   },
   {
-    "last_name": "Kijuriča",
+    "last_name": "Kijurina",
     "middle_name": "Miloša",
     "first_name": "Marko",
     "fathers_name": "Miloš",
-    "full_name": "Kijuriča Miloša Marko",
+    "full_name": "Kijurina Miloša Marko",
     "additional_info": "1911, Gejkovac, stupio u NOV 1. 10. 1942, borac 1. brig. 8. div, poginuo 5. 3. 1944. kod Zdenčine",
     "birth_year": "1911",
     "unit_detail": "1. brigada",
@@ -31252,7 +31251,21 @@
     "death_date": "05.03.1944",
     "death_place": "Zdenčina",
     "rank": "borac",
-    "pdf_x_end": 453.1
+    "pdf_x_end": 453.1,
+    "other_sources": [
+      {
+        "soldier_id": "9018000394",
+        "name": "Kijurina Miloša Marko",
+        "additional_info": "Gejkovac, općina Krstinja: 1911, seljak, Srbin. Stupio u NOV 1. 10. 1942. Borac 1. brig. 8. div. Poginuo kod Zdenčine 5. 3. 1944.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 18,
+        "pdf_x": 22.5,
+        "pdf_y": 247.8,
+        "pdf_x_end": 191.1,
+        "pdf_y_end": 282.4,
+        "ref_book": "hak-19-vojnic"
+      }
+    ]
   },
   {
     "last_name": "Kireta",
@@ -63530,11 +63543,11 @@
     ]
   },
   {
-    "last_name": "Pežut",
+    "last_name": "Pešut",
     "middle_name": "Petra",
     "first_name": "Manojlo",
     "fathers_name": "Petar",
-    "full_name": "Pežut Petra Manojlo",
+    "full_name": "Pešut Petra Manojlo",
     "additional_info": "1926, Janja Gora, Plaški, stupio u NOV 1943, borac 1. brig. 8. div, poginuo 8. 4. 1945. kod Primišlja",
     "birth_year": "1926",
     "unit_detail": "1. brigada",
@@ -63549,7 +63562,21 @@
     "death_date": "08.04.1945",
     "death_place": "Primišlje",
     "rank": "borac",
-    "pdf_x_end": 258.3
+    "pdf_x_end": 258.3,
+    "other_sources": [
+      {
+        "soldier_id": "9011000080",
+        "name": "Pešut Petra Manojlo",
+        "additional_info": "Janja Gora, općina Plaški: 1926, seljakJSrbin, stupio u NOV 1943, borac 1. brig.\"8. div., poginuo 8. aprila 1945. na Raletini kod Primišlja",
+        "pdf_file": "hak-7-plascanska-dolina.pdf",
+        "pdf_page": 4,
+        "pdf_x": 297.4,
+        "pdf_y": 423.1,
+        "pdf_x_end": 451.9,
+        "pdf_y_end": 464.2,
+        "ref_book": "hak-7-plascanska-dolina"
+      }
+    ]
   },
   {
     "last_name": "Pilipović",
@@ -70260,6 +70287,18 @@
         "pdf_x_end": 381.4,
         "pdf_y_end": 135.3,
         "unit_file": "8-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0014010748",
+        "name": "Rajak Milan",
+        "additional_info": "rođen 1921, s. Gata, Cazin, poginuo maja 1945, Karlovac. *",
+        "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
+        "pdf_page": 19,
+        "pdf_x": 123.4,
+        "pdf_y": 103.4,
+        "pdf_x_end": 405.7,
+        "pdf_y_end": 120.5,
+        "unit_file": "8-krajiska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -73878,11 +73917,11 @@
     "pdf_x_end": 255.5
   },
   {
-    "last_name": "Sadardžija",
+    "last_name": "Samardžija",
     "middle_name": "Matije",
     "first_name": "Đuro",
     "fathers_name": "Matija",
-    "full_name": "Sadardžija Matije Đuro",
+    "full_name": "Samardžija Matije Đuro",
     "additional_info": "1926, Slavsko Polje, stupio u NOV 1. 9. 1942, komesar čete 2. brig. 8. div, poginuo 21. 5. 1944. kod Primišlja",
     "birth_year": "1926",
     "unit_detail": "2. brigada",
@@ -73897,7 +73936,21 @@
     "death_date": "21.05.1944",
     "death_place": "Primišlje",
     "rank": "komesar čete",
-    "pdf_x_end": 262.8
+    "pdf_x_end": 262.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021054853",
+        "name": "Samardžija (Matija) Đuro",
+        "additional_info": "rođen 1926, Slavsko Polje (Vrginmost). Srbin, poginuo 1944. u NOBu, Primilje-lika",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2674",
+        "source_page": 2674,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Sagradžija",
@@ -74606,7 +74659,7 @@
     "first_name": "Petar",
     "fathers_name": "Simo",
     "full_name": "Savić Sime Petar",
-    "additional_info": "1922, Komesarac, stupio u NOV decembra 1941. u odred »Široka Rijeka«, komesar čete 2. brig. 8. div, ranjen 25. 3. 1945. kod Bihaća i podlegao ranama 8. 5. 1945. u Maljevcu SA VIC Nikole SAVO, 1914, Primišljanski Tržić, stupio u NOV 10. 4. 1942, borac 2. brig. 8. div, poginuo 15. 2. 1943. u Kalatima kod Lapca SA VIC Marka STANKO, 1905, Komesarac, stupio u NOV novembra 1941. u odred »Široka Rijeka«, borac 1. brig. 8. div, umro 13. 4. 1943. u VPB Zbjeg",
+    "additional_info": "1922, Komesarac, stupio u NOV decembra 1941. u odred »Široka Rijeka«, komesar čete 2. brig. 8. div, ranjen 25. 3. 1945. kod Bihaća i podlegao ranama 8. 5. 1945. u Maljevcu",
     "birth_year": "1922",
     "unit_detail": "2. brigada",
     "pdf_page": 83,
@@ -74615,11 +74668,12 @@
     "pdf_y_end": 666.9,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060002000",
+    "pdf_x_end": 444.6,
     "birth_place": "Komesarac",
     "death_type": "umro",
     "death_date": "08.05.1945",
+    "death_place": "Maljevac",
     "rank": "komesar čete",
-    "pdf_x_end": 444.6,
     "other_sources": [
       {
         "soldier_id": "9019000099",
@@ -77338,7 +77392,7 @@
       {
         "soldier_id": "9019000382",
         "name": "Stojaković Milica Petar",
-        "additional_info": "Donje Primišlje, općina Primišlje: 1911, seljak, Srbin. Stupio u NOV 12. 2. 1942. Poainuo kao borac 2. brig. 8. div. kod Plaškog 27. 4. 1943.",
+        "additional_info": "Donje Primišlje, općina Primišlje: 1911, seljak, Srbin. Stupio u NOV 12. 2. 1942. Poginuo kao borac 2. brig. 8. div. kod Plaškog 27. 4. 1943.",
         "pdf_file": "hak-18-slunj-veljun.pdf",
         "pdf_page": 17,
         "pdf_x": 126.9,
@@ -85508,7 +85562,7 @@
     "first_name": "Stanko",
     "fathers_name": "Srđan",
     "full_name": "Vrcić Srđana Stanko",
-    "additional_info": "1922, D. Cemernica, stupio u NOV 1. 7. 194Z r desetar 1. brig. 8. div, poginuo 17. 9. 1943. kod Dabra",
+    "additional_info": "1922, D. Cemernica, stupio u NOV 1. 7. 1942 r desetar 1. brig. 8. div, poginuo 17. 9. 1943. kod Dabra",
     "birth_year": "1922",
     "unit_detail": "1. brigada",
     "pdf_page": 98,
@@ -85517,12 +85571,12 @@
     "pdf_y_end": 553.6,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060002297",
+    "pdf_x_end": 456.0,
     "birth_place": "D. Cemernica",
     "death_type": "poginuo",
     "death_date": "17.09.1943",
     "death_place": "Dabar",
-    "rank": "desetar",
-    "pdf_x_end": 456.0
+    "rank": "desetar"
   },
   {
     "last_name": "Vrga",
@@ -88282,6 +88336,42 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=408",
         "source_page": 408,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0094000849",
+        "name": "Vuković Nikole Franjo",
+        "additional_info": "1920, Vukova Gorica, Netretić. Stupio u NOV 25. 8. 1943, borac 2. bat. Poginuo kod Bosanaca 12. 3. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 35,
+        "pdf_x": 140.8,
+        "pdf_y": 547.7,
+        "pdf_x_end": 298.5,
+        "pdf_y_end": 582.2,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0094000848",
+        "name": "Vukavić N Franjo",
+        "additional_info": "1920, Vukova Gorica, Netretić. Stupio u NOV 25. 8. 1943, borac 2. bat. Poginuo kod Bosanaca 12. 3. 1944.",
+        "pdf_file": "karlovacka.pdf",
+        "pdf_page": 20,
+        "pdf_x": 278.1,
+        "pdf_y": 655.1,
+        "pdf_y_end": 688.9,
+        "pdf_x_end": 435.6,
+        "unit_file": "karlovacka-soldiers.json"
+      },
+      {
+        "soldier_id": "0097001243",
+        "name": "Vukavić N Franjo",
+        "additional_info": "borac, KB, 1920. Vukova Gorica, Netretić, u NOB 1943, poginuo Bosanci, 12.03.44",
+        "pdf_file": "34-divizija.pdf",
+        "pdf_page": 28,
+        "pdf_x": 16.1,
+        "pdf_y": 298.64400000000006,
+        "pdf_x_end": 343.9,
+        "pdf_y_end": 307.6,
+        "unit_file": "34-divizija-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -92765,11 +92855,11 @@
     "death_date": "1943"
   },
   {
-    "last_name": "Zubenica",
+    "last_name": "Zobenica",
     "middle_name": "Marka",
     "first_name": "Rade",
     "fathers_name": "Marko",
-    "full_name": "Zubenica Marka Rade",
+    "full_name": "Zobenica Marka Rade",
     "additional_info": "1914, Rajić Brdo, stupio u NOV 7. 6. 1942, borac 2. brig. 8. div, umro 15. 4. 1943. u svom selu",
     "birth_year": "1914",
     "unit_detail": "2. brigada",
@@ -92783,7 +92873,21 @@
     "death_type": "umro",
     "death_date": "15.04.1943",
     "rank": "borac",
-    "pdf_x_end": 440.7
+    "pdf_x_end": 440.7,
+    "other_sources": [
+      {
+        "soldier_id": "9018000658",
+        "name": "Zobenica Marka Rade",
+        "additional_info": "Rajić Brdo, općina Krstinja: 1914, seljak, Srbin. Stupio u NOV 7. 6. 1942. Borac 2. brig. 8. div. Umro od tifusa kod kuće 15. 4. 1943.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 28,
+        "pdf_x": 197.5,
+        "pdf_y": 541.2,
+        "pdf_x_end": 369.3,
+        "pdf_y_end": 575.7,
+        "ref_book": "hak-19-vojnic"
+      }
+    ]
   },
   {
     "last_name": "Zunac",
@@ -96203,20 +96307,21 @@
     "first_name": "Đuro",
     "fathers_name": "Đuro",
     "full_name": "Šaula Đure Đuro",
-    "additional_info": "1927, Lisine, Vojnić, stupio u NOV 17. 10. 1942, borac 2. brig. 8. div, poginuo 13. 7. 1944. u Zumberku SAUL A Mihajla JOVAN, 1925, Lisine, stupio u NOV 2. 10. 1942, borac 2. brig. 8. div, poginuo 7. 11. 1944. kod Cazina SAUL A Petra SIMO, 1909, Dugi Dol, Krnjak, stupio u NOV 10. 7. 1942, borac 2. brig. 8. div, poginuo 7. 6. 1943. kod Josipdola",
+    "additional_info": "1927, Lisine, Vojnić, stupio u NOV 17. 10. 1942, borac 2. brig. 8. div, poginuo 13. 7. 1944. u Zumberku",
     "birth_year": "1927",
     "unit_detail": "2. brigada",
     "pdf_page": 88,
     "pdf_y": 331.5,
     "pdf_x": 101.5,
-    "pdf_y_end": 433.8,
+    "pdf_y_end": 365.7,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060002585",
+    "pdf_x_end": 240.4,
     "birth_place": "Lisine, Vojnić",
     "death_type": "poginuo",
     "death_date": "13.07.1944",
+    "death_place": "Zumberak",
     "rank": "borac",
-    "pdf_x_end": 259.0,
     "other_sources": [
       {
         "soldier_id": "9021052470",
@@ -96241,10 +96346,56 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
+      "ethnicity"
+    ]
+  },
+  {
+    "soldier_id": "0060009003",
+    "last_name": "Šaula",
+    "middle_name": "Mihajla",
+    "first_name": "Jovan",
+    "fathers_name": "Mihajlo",
+    "full_name": "Šaula Mihajla Jovan",
+    "additional_info": "1925, Lisine, stupio u NOV 2. 10. 1942, borac 2. brig. 8. div, poginuo 7. 11. 1944. kod Cazina SAUL A Petra SIMO, 1909, Dugi Dol, Krnjak, stupio u NOV 10. 7. 1942, borac 2. brig. 8. div, poginuo 7. 6. 1943. kod Josipdola",
+    "birth_year": "1925",
+    "pdf_file": "8-kordunaska-divizija.pdf",
+    "pdf_page": 88,
+    "pdf_x": 102.0,
+    "pdf_y": 370.1,
+    "birth_place": "Lisine",
+    "death_type": "poginuo",
+    "death_date": "07.11.1944",
+    "rank": "borac",
+    "pdf_x_end": 259.0,
+    "pdf_y_end": 433.8,
+    "other_sources": [
+      {
+        "soldier_id": "9018000565",
+        "name": "Šaula Mihajla Jovan",
+        "additional_info": "Lisine, općina Krstinja: 1925, seljak, Srbin. Stupio u NOV 2. 10. 1942. Borac 2. brig. 8. div. Poginuo u Cazinu 7. 11. 1944.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 25,
+        "pdf_x": 21.6,
+        "pdf_y": 104.7,
+        "pdf_x_end": 189.8,
+        "pdf_y_end": 139.6,
+        "ref_book": "hak-19-vojnic"
+      },
+      {
+        "soldier_id": "9021052475",
+        "name": "Šaula (Mihajlo) Jovan",
+        "additional_info": "rođen 1924, Lisine (Vonjić). Srbin, poginuo 1944. u NOBu, Cazin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2525",
+        "source_page": 2525,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Žumberad sloven"
+    "death_place": "Cazin"
   },
   {
     "last_name": "Šaša",
@@ -97553,7 +97704,7 @@
     "first_name": "Dušan",
     "fathers_name": "Milovan",
     "full_name": "Šupica Milovana Dušan",
-    "additional_info": "1925, Jezero, stupio u NOV 1944, borac 3. brig. 8. div, poginuo januara 1945. kod Dabra 5TJPICA Damjana ILIJA, 1921, Janja Gora, Plaški, stupio u NOV 1942, borac 3. brig. 8. div, poginuo 27. 6. 1944. u Janja Gori gUPICA Sime MIHAJLO, 1925, Podhum, Plaški, stupio u NOV 1941, borac 1. brig. 8. div, poginuo marta 1943. u Vojnovcu kod Plaškog",
+    "additional_info": "1925, Jezero, stupio u NOV 1944, borac 3. brig. 8. div, poginuo januara 1945. kod Dabra",
     "birth_year": "1925",
     "unit_detail": "3. brigada",
     "pdf_page": 89,
@@ -97562,11 +97713,12 @@
     "pdf_y_end": 663.4,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060002627",
+    "pdf_x_end": 435.4,
     "birth_place": "Jezero",
     "death_type": "poginuo",
     "death_date": "01.1945",
+    "death_place": "Dabar",
     "rank": "borac",
-    "pdf_x_end": 435.4,
     "other_sources": [
       {
         "soldier_id": "9011000121",
@@ -97578,6 +97730,40 @@
         "pdf_y": 278.9,
         "pdf_x_end": 438.1,
         "pdf_y_end": 311.6,
+        "ref_book": "hak-7-plascanska-dolina"
+      }
+    ]
+  },
+  {
+    "soldier_id": "0060009004",
+    "last_name": "Šupica",
+    "middle_name": "Damjana",
+    "first_name": "Ilija",
+    "fathers_name": "Damjan",
+    "full_name": "Šupica Damjana Ilija",
+    "additional_info": "1921, Janja Gora, Plaški, stupio u NOV 1942, borac 3. brig. 8. div, poginuo 27. 6. 1944. u Janja Gori gUPICA Sime MIHAJLO, 1925, Podhum, Plaški, stupio u NOV 1941, borac 1. brig. 8. div, poginuo marta 1943. u Vojnovcu kod Plaškog",
+    "birth_year": "1921",
+    "pdf_file": "8-kordunaska-divizija.pdf",
+    "pdf_page": 90,
+    "pdf_x": 102.2,
+    "pdf_y": 162.3,
+    "birth_place": "Janja Gora, Plaški",
+    "death_type": "poginuo",
+    "death_date": "27.06.1944",
+    "rank": "borac",
+    "pdf_x_end": 262.6,
+    "pdf_y_end": 235.8,
+    "other_sources": [
+      {
+        "soldier_id": "9011000091",
+        "name": "Šupica Damjana Ilija",
+        "additional_info": "Janja Gora, općina Plaški: 1921, seljak, Srbin, stupio u NOV 1942, borac 3. brig. 8. div., poginuo 27. 6. 1944. u Janja Gori",
+        "pdf_file": "hak-7-plascanska-dolina.pdf",
+        "pdf_page": 5,
+        "pdf_x": 137.9,
+        "pdf_y": 437.0,
+        "pdf_x_end": 299.8,
+        "pdf_y_end": 470.2,
         "ref_book": "hak-7-plascanska-dolina"
       }
     ]
@@ -99259,21 +99445,21 @@
     "first_name": "Đoko",
     "fathers_name": "Damjan",
     "full_name": "Živković Damjana Đoko",
-    "additional_info": "1926, Bović, stupio u NOV 16. 9. 1942, komandir voda 1. brig. 8. div, poginuo 13. 4. 1945. kod Primišlja 2IVKOVIĆ Marka GLIŠO, 1915, Međeđak, stupio u NOV augusta 1941. u odred »Gaćeša Selo«, komandir čete 3. brig. 8. div, poginuo 26. 11. 1943. kod Hrastovice",
+    "additional_info": "1926, Bović, stupio u NOV 16. 9. 1942, komandir voda 1. brig. 8. div, poginuo 13. 4. 1945. kod Primišlja",
     "birth_year": "1926",
     "unit_detail": "1. brigada",
     "pdf_page": 107,
     "pdf_y": 327.3,
     "pdf_x": 123.7,
-    "pdf_y_end": 409.9,
+    "pdf_y_end": 361.6,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060002669",
+    "pdf_x_end": 278.4,
     "birth_place": "Bović",
     "death_type": "poginuo",
     "death_date": "13.04.1945",
-    "rank": "komandir voda, komandir čete",
-    "pdf_x_end": 278.4,
-    "pdf_x_left": 122.5,
+    "death_place": "Primišlje",
+    "rank": "komandir voda",
     "other_sources": [
       {
         "soldier_id": "9021053719",
@@ -99286,10 +99472,48 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
+    ]
+  },
+  {
+    "soldier_id": "0060009005",
+    "last_name": "Živković",
+    "middle_name": "Marka",
+    "first_name": "Glišo",
+    "fathers_name": "Marko",
+    "full_name": "Živković Marka Glišo",
+    "additional_info": "1915, Međeđak, stupio u NOV augusta 1941. u odred »Gaćeša Selo«, komandir čete 3. brig. 8. div, poginuo 26. 11. 1943. kod Hrastovice",
+    "birth_year": "1915",
+    "pdf_file": "8-kordunaska-divizija.pdf",
+    "pdf_page": 107,
+    "pdf_x": 123.0,
+    "pdf_y": 366.9,
+    "birth_place": "Međeđak",
+    "death_type": "poginuo",
+    "death_date": "26.11.1943",
+    "death_place": "kod Hrastovice",
+    "rank": "komandir čete",
+    "pdf_x_end": 277.5,
+    "pdf_y_end": 409.9,
+    "other_sources": [
+      {
+        "soldier_id": "0002009742",
+        "name": "Živković Marka Gligorije Glišo",
+        "additional_info": "1916, Međeđak, Vojnić, 3. kordunaški bataljon, desetar, poginuo 26. 11. 1943. (8. divizija)",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 917,
+        "pdf_x": 121.9,
+        "pdf_y": 439.6,
+        "pdf_x_end": 457.0,
+        "pdf_y_end": 459.2,
+        "unit_file": "soldiers.json"
+      }
     ],
-    "death_place": "3.omladinska"
+    "variants": {
+      "born": [
+        "1916"
+      ]
+    }
   },
   {
     "last_name": "Živčić",
@@ -99297,20 +99521,21 @@
     "first_name": "Slavko",
     "fathers_name": "Petar",
     "full_name": "Živčić Petra Slavko",
-    "additional_info": "1918, postolar, Gorinjci, D. Resa, stupio u NOV 20. 6. 1942, borac 1. brig. 8. div, poginuo 22. 6. 1944. kod Sv. Jane 2IVKOVIĆ Mile DUŠAN, 1910, Bović, stupio u NOV 27. 10. 1942, borac 2. brig. 8. div, poginuo 10. 2. 1944. kod Plaškog",
+    "additional_info": "1918, postolar, Gorinjci, D. Resa, stupio u NOV 20. 6. 1942, borac 1. brig. 8. div, poginuo 22. 6. 1944. kod Sv. Jane",
     "birth_year": "1918",
     "unit_detail": "1. brigada",
     "pdf_page": 107,
     "pdf_y": 246.2,
     "pdf_x": 125.2,
-    "pdf_y_end": 321.1,
+    "pdf_y_end": 280.5,
     "pdf_file": "8-kordunaska-divizija.pdf",
     "soldier_id": "0060002670",
+    "pdf_x_end": 273.0,
     "occupation": "postolar",
     "death_type": "poginuo",
     "death_date": "22.06.1944",
+    "death_place": "Sv. Jana",
     "rank": "borac",
-    "pdf_x_end": 273.0,
     "other_sources": [
       {
         "soldier_id": "9028000087",
@@ -99325,6 +99550,27 @@
         "ref_book": "hak-15-duga-resa"
       }
     ]
+  },
+  {
+    "soldier_id": "0060009006",
+    "last_name": "Živković",
+    "middle_name": "Mile",
+    "first_name": "Dušan",
+    "fathers_name": "Mile",
+    "full_name": "Živković Mile Dušan",
+    "additional_info": "1910, Bović, stupio u NOV 27. 10. 1942, borac 2. brig. 8. div, poginuo 10. 2. 1944. kod Plaškog",
+    "birth_year": "1910",
+    "pdf_file": "8-kordunaska-divizija.pdf",
+    "pdf_page": 107,
+    "pdf_x": 124.4,
+    "pdf_y": 286.7,
+    "birth_place": "Bović",
+    "death_type": "poginuo",
+    "death_date": "10.02.1944",
+    "death_place": "Plaški",
+    "rank": "borac",
+    "pdf_x_end": 257.1,
+    "pdf_y_end": 321.1
   },
   {
     "last_name": "Žunić",

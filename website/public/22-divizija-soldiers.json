@@ -1827,11 +1827,15 @@
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000050",
     "pdf_x_end": 341.2,
+    "occupation": "građevinski radnik",
+    "borrowed": [
+      "occupation"
+    ],
     "other_sources": [
       {
         "soldier_id": "0090000011",
         "name": "Apostolović Milana Denča",
-        "additional_info": "1907, Crna Trava, građevinski radnnk. U NOVJ od februara 1944, bio borac, a zatim intendant 1. bataljona. Bio teško ranjei 25. avgusta 1944. kod Predejana i istoga dana podlegao ranama.",
+        "additional_info": "1907, Crna Trava, građevinski radnik. U NOVJ od februara 1944, bio borac, a zatim intendant 1. bataljona. Bio teško ranjei 25. avgusta 1944. kod Predejana i istoga dana podlegao ranama.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 3,
         "pdf_x": 35.3,
@@ -3643,14 +3647,29 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=699",
         "source_page": 699,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0088009001",
+        "name": "Cvetanović Alekse Stanko",
+        "additional_info": "rođen 8. 5. 1923. u selu Gornja s \"Kupinovica, Leskovac, Srbin, zemljoradnik, u NOB od prve polovine oktobra 1944, u Brigadi od 10. 10. 1944, borac 3. čete 2. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "pdf_file": "10-srpska.pdf",
+        "pdf_page": 52,
+        "pdf_x": 91.0,
+        "pdf_y": 511.9,
+        "pdf_x_end": 425.6,
+        "pdf_y_end": 573.2,
+        "unit_file": "10-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1923",
     "borrowed": [
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
-    "birth_year": "1923"
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "birth_date": "08.05.1923"
   },
   {
     "last_name": "Cvetanović",
@@ -6348,11 +6367,11 @@
     ]
   },
   {
-    "last_name": "Grazdanović",
+    "last_name": "Grozdanović",
     "middle_name": "T",
     "first_name": "Dušan",
     "fathers_name": "T",
-    "full_name": "Grazdanović T Dušan",
+    "full_name": "Grozdanović T Dušan",
     "additional_info": "Banski Do, 18. XI 1944, Oštro Koplje",
     "birth_year": "",
     "birth_place": "Banski Do",
@@ -7628,14 +7647,13 @@
       {
         "soldier_id": "0088000076",
         "name": "Ilić R Živan",
-        "additional_info": "rođen 1920. u selu Borin Dol, Vlasotince, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 10. 9. 1944, borac 3. čete 1. bataljona, poginuo 18. 11. 1944. prilikom napada na kotu 1577, kosa Ustarika (Kopaonik), Kosovska Mitrovica. Sahranjen u zajedničkoj grobnici pod kotom 1577, kosa Ustarika (Kopaonik), Kosovska Mitrovica. d ILIĆ Milana NOVICA, rođen 1. 3. 1925. u Leskovcu, Srbin, zemljoradnik, u NOB od prve polovine oktobra 1944, u Brigadi od 15. 10. 1944, komandir voda u 1. četi 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "additional_info": "rođen 1920. u selu Borin Dol, Vlasotince, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 10. 9. 1944, borac 3. čete 1. bataljona, poginuo 18. 11. 1944. prilikom napada na kotu 1577, kosa Ustarika (Kopaonik), Kosovska Mitrovica. Sahranjen u zajedničkoj grobnici pod kotom 1577, kosa Ustarika (Kopaonik), Kosovska Mitrovica.",
         "pdf_file": "10-srpska.pdf",
         "pdf_page": 16,
         "pdf_x": 109.3,
         "pdf_y": 245.6,
         "pdf_x_end": 414.9,
-        "pdf_y_end": 375.1,
-        "pdf_x_left": 98.8,
+        "pdf_y_end": 307.4,
         "unit_file": "10-srpska-soldiers.json"
       }
     ],
@@ -11091,14 +11109,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=437",
         "source_page": 437,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0090009002",
+        "name": "Kocić I. Aleksandar",
+        "additional_info": "1921 Guberevac, Leskovac, zemljoradnik. U NOVJ od marta 1944, bio borac. Poginuo",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 19,
+        "pdf_x": 15.6,
+        "pdf_y": 31.2,
+        "pdf_x_end": 321.1,
+        "pdf_y_end": 61.4,
+        "unit_file": "12-srpska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1921",
     "borrowed": [
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
-    "birth_year": "1924"
+    "occupation": "zemljoradnik",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Kocić",
@@ -11812,14 +11844,13 @@
       {
         "soldier_id": "0088000111",
         "name": "Kostić Radovana Branko",
-        "additional_info": "rođen 10. 10. 1919. u selu Petrovac, Pirot, Srbin, pekarski radnik, u NOB od prve polovine septembra 1944, u Brigadi od 23. 10. 1944, borac protivtenkovske čete Brigade, poginuo 16. 11. 1944. prilikom eksplozije sopstvenih mina u selu Smailjaviću, Podujevo. Sahranjen u selu Smailjaviću, Podujevo. 1SOSTIĆ Ranđela VIDEN, rođen 25. 6. 1925. u selu Dobri Do, Pirot, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 16. 9. 1944, borac 3. čete 3. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "additional_info": "rođen 10. 10. 1919. u selu Petrovac, Pirot, Srbin, pekarski radnik, u NOB od prve polovine septembra 1944, u Brigadi od 23. 10. 1944, borac protivtenkovske čete Brigade, poginuo 16. 11. 1944. prilikom eksplozije sopstvenih mina u selu Smailjaviću, Podujevo. Sahranjen u selu Smailjaviću, Podujevo.",
         "pdf_file": "10-srpska.pdf",
         "pdf_page": 20,
         "pdf_x": 116.7,
         "pdf_y": 490.3,
         "pdf_x_end": 422.7,
-        "pdf_y_end": 617.4,
-        "pdf_x_left": 114.3,
+        "pdf_y_end": 551.6,
         "unit_file": "10-srpska-soldiers.json"
       }
     ],
@@ -12211,7 +12242,6 @@
     "fathers_name": "R",
     "full_name": "Kostić R Viden",
     "additional_info": "Dobri Do, 12. IV 1944, Spačva (Srem)",
-    "birth_year": "",
     "birth_place": "Dobri Do",
     "death_date": "12.04.1944",
     "death_type": "poginuo",
@@ -12248,8 +12278,36 @@
         "pdf_x_end": 389.7,
         "pdf_y_end": 521.5,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0088009003",
+        "name": "Kostić Ranđela Viden",
+        "additional_info": "rođen 25. 6. 1925. u selu Dobri Do, Pirot, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 16. 9. 1944, borac 3. čete 3. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "pdf_file": "10-srpska.pdf",
+        "pdf_page": 20,
+        "pdf_x": 114.3,
+        "pdf_y": 554.7,
+        "pdf_x_end": 422.7,
+        "pdf_y_end": 617.4,
+        "unit_file": "10-srpska-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "birth_date": "25.06.1925",
+    "variants": {
+      "death": [
+        {
+          "date": "12.04.1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kostić",
@@ -13411,11 +13469,11 @@
   },
   {
     "last_name": "Lefik",
-    "middle_name": "",
-    "first_name": "Dimitrijević",
+    "middle_name": "Dimitrijević",
+    "first_name": "Aleksej",
     "fathers_name": "",
-    "full_name": "Lefik Dimitrijević",
-    "additional_info": "Kislovac, |",
+    "full_name": "Lefik Dimitrijević Aleksej",
+    "additional_info": "Kislovac, SSSR",
     "birth_year": "",
     "birth_place": "Kislovac",
     "death_type": "poginuo",
@@ -18712,7 +18770,7 @@
       {
         "soldier_id": "0090000190",
         "name": "Mišić M Lazar",
-        "additional_info": "1923, Vlasotince. U NOVJ od seitembra 1944, borac. Poginuo 9. februara 1945. godine kod Trešnjevice, Zvornik.",
+        "additional_info": "1923, Vlasotince. U NOVJ od septembra 1944, borac. Poginuo 9. februara 1945. godine kod Trešnjevice, Zvornik.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 25,
         "pdf_x": 42.3,
@@ -36686,7 +36744,21 @@
     "pdf_y_end": 309.8,
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000924",
-    "pdf_x_end": 317.9
+    "pdf_x_end": 317.9,
+    "other_sources": [
+      {
+        "soldier_id": "0090000395",
+        "name": "Vučurović M Ilija",
+        "additional_info": "Trebinje, izbeglica. Poginuo 17. decembra 1944. godine kod Sjenice.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 45.1,
+        "pdf_y": 171.0,
+        "pdf_x_end": 309.2,
+        "pdf_y_end": 191.8,
+        "unit_file": "12-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zdravković",
@@ -37051,7 +37123,7 @@
       {
         "soldier_id": "0090000401",
         "name": "Zlatanović D Ljubomir",
-        "additional_info": "1920, Brod, Grna Trava, građevinski radnik. U NOVJ od oktobra 1944, borac. Psginuo 12. aprila 1945. kod Lipovca, Sremski front.",
+        "additional_info": "1920, Brod, Grna Trava, građevinski radnik. U NOVJ od oktobra 1944, borac. Poginuo 12. aprila 1945. kod Lipovca, Sremski front.",
         "pdf_file": "12-srpska.pdf",
         "pdf_page": 12,
         "pdf_x": 35.3,
@@ -38002,7 +38074,7 @@
       {
         "soldier_id": "0088000355",
         "name": "Đorić Milorada Milan",
-        "additional_info": "rođen 1924. u selu Darkovac, Crna \"Trava, Srbin, zemljoradnik, u NOB od prve polovine septembrg 1944, u Brigadi od 15. 9. 1944, borac 1. čete 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "additional_info": "rođen 1924. u selu Darkovac, Crna \"Trava, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 15. 9. 1944, borac 1. čete 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
         "pdf_file": "10-srpska.pdf",
         "pdf_page": 11,
         "pdf_x": 157.8,
@@ -38073,7 +38145,7 @@
       {
         "soldier_id": "0088000355",
         "name": "Đorić Milorada Milan",
-        "additional_info": "rođen 1924. u selu Darkovac, Crna \"Trava, Srbin, zemljoradnik, u NOB od prve polovine septembrg 1944, u Brigadi od 15. 9. 1944, borac 1. čete 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
+        "additional_info": "rođen 1924. u selu Darkovac, Crna \"Trava, Srbin, zemljoradnik, u NOB od prve polovine septembra 1944, u Brigadi od 15. 9. 1944, borac 1. čete 1. bataljona, poginuo 12. 4. 1945. prilikom forsiranja reke Spačve u šumi Narači (Sremski front). Sahranjen u zajedničkoj grobnici u šumi Narači, Vinkovci.",
         "pdf_file": "10-srpska.pdf",
         "pdf_page": 11,
         "pdf_x": 157.8,

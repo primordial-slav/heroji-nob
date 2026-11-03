@@ -4574,7 +4574,6 @@
     "fathers_name": "",
     "full_name": "Boštjančič Marija",
     "additional_info": "zvana Olga; Ljubljana, 1921—",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 39,
     "pdf_y": 136.2,
@@ -4582,7 +4581,40 @@
     "pdf_y_end": 153.4,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000219",
-    "pdf_x_end": 137.6
+    "pdf_x_end": 137.6,
+    "birth_place": "Ljubljana",
+    "other_sources": [
+      {
+        "soldier_id": "9020007282",
+        "name": "Boštjančič (Joža) Marija",
+        "additional_info": "rođena 1921, Ljubljana Del (Ljubljana-Vič-Rudnik). Slovenka, poginula 1944. u NOBu, Vel. cerovec",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=255",
+        "source_page": 255,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0068000049",
+        "name": "Boštjančič Marija",
+        "additional_info": "zvana Olga; Ljubljana, 1921—",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 29.5,
+        "pdf_y": 394.0,
+        "pdf_x_end": 123.0,
+        "pdf_y_end": 408.7,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ],
+    "ethnicity": "Slovenka",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Vel. cerovec",
+    "birth_year": "1921"
   },
   {
     "last_name": "Božič",
@@ -7985,7 +8017,8 @@
     "pdf_y_end": 413.0,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000384",
-    "pdf_x_end": 141.8
+    "pdf_x_end": 141.8,
+    "birth_place": "Sela"
   },
   {
     "last_name": "Cvenkelj",
@@ -13526,7 +13559,8 @@
     "pdf_y_end": 159.6,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000646",
-    "pdf_x_end": 277.2
+    "pdf_x_end": 277.2,
+    "birth_place": "Vrtojba"
   },
   {
     "last_name": "Gorše",
@@ -14962,7 +14996,8 @@
     "pdf_y_end": 211.2,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062000715",
-    "pdf_x_end": 266.2
+    "pdf_x_end": 266.2,
+    "birth_place": "Rovce"
   },
   {
     "last_name": "Grčman",
@@ -32749,7 +32784,8 @@
     "pdf_y_end": 391.9,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001533",
-    "pdf_x_end": 144.2
+    "pdf_x_end": 144.2,
+    "birth_place": "Krmelj"
   },
   {
     "last_name": "Marjanović",
@@ -42571,7 +42607,8 @@
     "pdf_y_end": 333.4,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001986",
-    "pdf_x_end": 133.9
+    "pdf_x_end": 133.9,
+    "birth_place": "Straža"
   },
   {
     "last_name": "Plut",
@@ -45472,15 +45509,14 @@
         "unit_file": "tomsiceva-soldiers.json"
       }
     ],
+    "birth_place": "Gaberje",
     "birth_year": "1922",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "birth_place": "Gabrje",
     "death_date": "1942",
     "death_place": "Popovski hrib",
     "ethnicity": "Slovenac"
@@ -58302,7 +58338,21 @@
     "pdf_y_end": 113.0,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002736",
-    "pdf_x_end": 128.1
+    "pdf_x_end": 128.1,
+    "other_sources": [
+      {
+        "soldier_id": "0068000725",
+        "name": "Vovko Alojz",
+        "additional_info": "Žaloviče, 1908-",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 10,
+        "pdf_x": 243.3,
+        "pdf_y": 79.6,
+        "pdf_x_end": 332.4,
+        "pdf_y_end": 86.1,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vovko",
@@ -61417,7 +61467,8 @@
     "pdf_y_end": 176.9,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002877",
-    "pdf_x_end": 306.4
+    "pdf_x_end": 306.4,
+    "birth_place": "Koper"
   },
   {
     "last_name": "Zupančič",
@@ -62636,7 +62687,8 @@
     "pdf_y_end": 162.2,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002936",
-    "pdf_x_end": 114.0
+    "pdf_x_end": 114.0,
+    "birth_place": "Pragersko"
   },
   {
     "last_name": "Špelič",

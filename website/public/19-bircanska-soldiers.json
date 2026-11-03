@@ -6053,11 +6053,11 @@
   },
   {
     "last_name": "Dragić",
-    "middle_name": "",
-    "first_name": "Petra",
-    "fathers_name": "",
-    "full_name": "Dragić Petra",
-    "additional_info": "Dr. KORKE, rođen 1910. godine u Tuzli, Srbin, ljekar, u NOB i Brigadu stupio 1943. godine, referent saniteta Brigade.",
+    "middle_name": "Petra",
+    "first_name": "Korke",
+    "fathers_name": "Petar",
+    "full_name": "Dragić Petra Korke",
+    "additional_info": "dr, rođen 1910. godine u Tuzli, Srbin, ljekar, u NOB i Brigadu stupio 1943. godine, referent saniteta Brigade.",
     "birth_year": "1910",
     "pdf_page": 24,
     "pdf_y": 611.5,
@@ -6065,11 +6065,11 @@
     "pdf_y_end": 649.0,
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023000272",
+    "pdf_x_end": 444.1,
     "birth_place": "Tuzla",
     "ethnicity": "Srbin",
-    "rank": "referent saniteta brigade",
-    "pdf_x_end": 444.1,
-    "occupation": "ljekar"
+    "occupation": "ljekar",
+    "rank": "referent saniteta brigade"
   },
   {
     "last_name": "Dragić",
@@ -8198,7 +8198,7 @@
     "first_name": "Šaban",
     "fathers_name": "Sadrija",
     "full_name": "Gaši Sadrije Šaban",
-    "additional_info": "rođen u Businju - Priština, SAP Kosovo, Albanac, zemljoradpik, u Brigadu stupio decembra 1944. godine, borac, poginuo 1945. godine na Romaniji.",
+    "additional_info": "rođen u Businju - Priština, SAP Kosovo, Albanac, zemljoradnik, u Brigadu stupio decembra 1944. godine, borac, poginuo 1945. godine na Romaniji.",
     "birth_year": "",
     "pdf_page": 21,
     "pdf_y": 144.2,
@@ -8207,13 +8207,13 @@
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023000365",
     "birth_place": "Businje, Priština",
+    "pdf_x_end": 441.4,
     "ethnicity": "Albanac",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Romanija",
-    "rank": "borac",
-    "pdf_x_end": 441.4
+    "rank": "borac"
   },
   {
     "last_name": "Gelić",
@@ -8357,7 +8357,7 @@
     "first_name": "Arslan",
     "fathers_name": "Salko",
     "full_name": "Gotovušić Salke Arslan",
-    "additional_info": "rođen 1916. godine u Pljevljima, SR CG, Muslima, radnik, u NOB stupio 1941. godine, a u Brigadu juna 1944. godine, komandant bataljona, nosilac »Partizanske siomenice 1941«, umro.",
+    "additional_info": "rođen 1916. godine u Pljevljima, SR CG, Muslima, radnik, u NOB stupio 1941. godine, a u Brigadu juna 1944. godine, komandant bataljona, nosilac »Partizanske spomenice 1941«, umro.",
     "birth_year": "1916",
     "pdf_page": 21,
     "pdf_y": 637.6,
@@ -8365,13 +8365,13 @@
     "pdf_y_end": 685.0,
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023000372",
+    "pdf_x_end": 441.9,
+    "ethnicity": "Musliman",
+    "party": "KPJ",
     "birth_place": "Pljevlja, SR CG",
     "occupation": "radnik",
     "death_type": "umro",
     "rank": "komandant bataljona",
-    "pdf_x_end": 441.9,
-    "ethnicity": "Musliman",
-    "party": "KPJ",
     "other_sources": [
       {
         "soldier_id": "0042000156",
@@ -12616,9 +12616,9 @@
   {
     "last_name": "Jerković",
     "middle_name": "Boška",
-    "first_name": "Slobodna",
+    "first_name": "Slobodan",
     "fathers_name": "Boško",
-    "full_name": "Jerković Boška Slobodna",
+    "full_name": "Jerković Boška Slobodan",
     "additional_info": "rođen 1925. godine u Raškovićima - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1941. godine, a u Brigadu 1943. godine, borac, nosilac, »Spomenice«.",
     "birth_year": "1925",
     "pdf_page": 39,
@@ -12631,7 +12631,21 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 265.2
+    "pdf_x_end": 265.2,
+    "other_sources": [
+      {
+        "soldier_id": "0042000124",
+        "name": "Jerković Boška Slobodan",
+        "additional_info": "borac 2. čete 1. bataljona, rođen 1925, Raškovići, Vlasenica, zemljoradnik, Srbin, u NOB od 1941, krajem rata oficir OZN-e bataljona.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 16.6,
+        "pdf_y": 468.1,
+        "pdf_x_end": 183.1,
+        "pdf_y_end": 521.5,
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jerković",
@@ -13463,7 +13477,7 @@
     "first_name": "Živko",
     "fathers_name": "Petar",
     "full_name": "Jovetić Petra Živko",
-    "additional_info": "rođen 1921. godine u Azanji - SRS, Srbin, zemljoradpik, u Brigadu stupio 10. 12. 1944. godine, borac.",
+    "additional_info": "rođen 1921. godine u Azanji - SRS, Srbin, zemljoradnik, u Brigadu stupio 10. 12. 1944. godine, borac.",
     "birth_year": "1921",
     "pdf_page": 40,
     "pdf_y": 665.6,
@@ -13472,10 +13486,10 @@
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023000602",
     "birth_place": "Azanja",
+    "pdf_x_end": 269.4,
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "pdf_x_end": 269.4
+    "rank": "borac"
   },
   {
     "last_name": "Jović",
@@ -14683,11 +14697,11 @@
   },
   {
     "last_name": "Kalajdžić",
-    "middle_name": "",
-    "first_name": "Mil",
-    "fathers_name": "",
-    "full_name": "Kalajdžić Mil",
-    "additional_info": "E SRETKO, rođen 1925. godine u Osmacima - Kalesija, Srbin, zemljoradnik, u NOB stupio jula 1943. g. a u Brigadu 24. 10. 1943. godine, komesar čete.",
+    "middle_name": "Mile",
+    "first_name": "Sretko",
+    "fathers_name": "Mile",
+    "full_name": "Kalajdžić Mile Sretko",
+    "additional_info": "rođen 1925. godine u Osmacima - Kalesija, Srbin, zemljoradnik, u NOB stupio jula 1943. g. a u Brigadu 24. 10. 1943. godine, komesar čete.",
     "birth_year": "1925",
     "pdf_page": 44,
     "pdf_y": 561.1,
@@ -14695,11 +14709,11 @@
     "pdf_y_end": 606.6,
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023000656",
+    "pdf_x_end": 271.7,
     "birth_place": "Osmaci, Kalesija",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "komesar čete",
-    "pdf_x_end": 271.7
+    "rank": "komesar čete"
   },
   {
     "last_name": "Kalajdžić",
@@ -21498,9 +21512,9 @@
   {
     "last_name": "Mešić",
     "middle_name": "Jusufa",
-    "first_name": "Muradig",
+    "first_name": "Muradif",
     "fathers_name": "Jusuf",
-    "full_name": "Mešić Jusufa Muradig",
+    "full_name": "Mešić Jusufa Muradif",
     "additional_info": "rođen 1914. godine u Tuzli, Musliman, radni, u Brigadu stupio septembra 1944. godine, borac, poginuo novembra 1944. godne na Crvenim Stjenama - Romanija.",
     "birth_year": "1914",
     "pdf_page": 61,
@@ -21515,7 +21529,21 @@
     "death_type": "poginuo",
     "death_date": "11.1944",
     "rank": "borac",
-    "pdf_x_end": 266.4
+    "pdf_x_end": 266.4,
+    "other_sources": [
+      {
+        "soldier_id": "9022034142",
+        "name": "Mešić (Jusuf) Muradif",
+        "additional_info": "rođen 1915, Tuzla. Musliman, poginuo 1944. u NOBu, Mokro-romanija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2679",
+        "source_page": 2679,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "death_place": "Mokro, Romanija",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Meškić",
@@ -23553,11 +23581,11 @@
   },
   {
     "last_name": "Milutinović",
-    "middle_name": "",
-    "first_name": "Mirka",
-    "fathers_name": "",
-    "full_name": "Milutinović Mirka",
-    "additional_info": "Dr. SLOBODAN, rođen 1925. godine u Beogradu, Srbin - đak, u NOB i Brigadu stupio 1944. godine, referent saniteta u bataljonu.",
+    "middle_name": "Mirka",
+    "first_name": "Slobodan",
+    "fathers_name": "Mirko",
+    "full_name": "Milutinović Mirka Slobodan",
+    "additional_info": "dr, rođen 1925. godine u Beogradu, Srbin - đak, u NOB i Brigadu stupio 1944. godine, referent saniteta u bataljonu.",
     "birth_year": "1925",
     "pdf_page": 65,
     "pdf_y": 368.0,
@@ -23565,9 +23593,9 @@
     "pdf_y_end": 416.3,
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023001060",
+    "pdf_x_end": 260.6,
     "birth_place": "Beograd",
-    "rank": "referent saniteta",
-    "pdf_x_end": 260.6
+    "rank": "referent saniteta"
   },
   {
     "last_name": "Milutinović",
@@ -33207,7 +33235,7 @@
     "first_name": "Dušan",
     "fathers_name": "Jerko",
     "full_name": "Savić Jerka Dušan",
-    "additional_info": "rođen 1926. godine u Gojčiiu - Kalesija, Srbin, zemoljaranik, u NOB stupio 1941. godine, a u Brigadu 24. 10. 1943. godine, komandant bataljona, nosilac »Partizanske siomenice",
+    "additional_info": "rođen 1926. godine u Gojčiiu - Kalesija, Srbin, zemoljaranik, u NOB stupio 1941. godine, a u Brigadu 24. 10. 1943. godine, komandant bataljona, nosilac »Partizanske spomenice",
     "birth_year": "1926",
     "pdf_page": 90,
     "pdf_y": 635.4,
@@ -33215,10 +33243,10 @@
     "pdf_y_end": 682.3,
     "pdf_file": "19-bircanska.pdf",
     "soldier_id": "0023001490",
+    "pdf_x_end": 452.0,
     "birth_place": "Gojčiiu, Kalesija",
     "ethnicity": "Srbin",
-    "rank": "komandant bataljona",
-    "pdf_x_end": 452.0
+    "rank": "komandant bataljona"
   },
   {
     "last_name": "Savić",
